@@ -7,7 +7,7 @@ contributors:
 
   
 Parent page: [Democracy Analysis
-Project](Democracy_Analysis_Project "wikilink")
+Project](/Democracy_Analysis_Project "wikilink")
 
 These links mention other websites which have to be looked at and
 analyzed. We need to add more links to this list and find all the links

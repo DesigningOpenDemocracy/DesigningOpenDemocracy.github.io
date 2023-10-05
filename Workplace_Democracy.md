@@ -197,10 +197,10 @@ Employee ownership is most prevalent in the United States, its forms
 include:
 
 - [Employee Stock Ownership
-  Plans](Employee_Stock_Ownership_Plans "wikilink") (ESOPs).
-- [Equity Compensation Plans](Equity_Compensation_Plans "wikilink").
-- [Worker Cooperatives](Worker_Cooperatives "wikilink").
-- [Employee Ownership Trusts](Employee_Ownership_Trusts "wikilink").
+  Plans](/Employee_Stock_Ownership_Plans "wikilink") (ESOPs).
+- [Equity Compensation Plans](/Equity_Compensation_Plans "wikilink").
+- [Worker Cooperatives](/Worker_Cooperatives "wikilink").
+- [Employee Ownership Trusts](/Employee_Ownership_Trusts "wikilink").
 
 Employee ownership plans are most frequently used as a vehicle for
 business transition in closely held businesses. Employee ownership is

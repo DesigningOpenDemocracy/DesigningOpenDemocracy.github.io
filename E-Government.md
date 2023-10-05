@@ -318,7 +318,7 @@ endowment.\[26\]
 A diverse group of 100 researchers online volunteers from across the
 globe engaged with the United Nations Department of Economic Affairs (UN
 DESA) to process 386 research surveys carried out across 193 [UN Member
-States](UN_Member_States "wikilink") for the 2016 UN E-Government
+States](/UN_Member_States "wikilink") for the 2016 UN E-Government
 Survey.\[27\]more than 65 languages, 15 nationalities, of which half are
 from developing countries—mirrors perfectly the mission of the survey.
 
