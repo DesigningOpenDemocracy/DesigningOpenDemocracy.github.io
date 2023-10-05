@@ -13,14 +13,13 @@ Editing basics
 - Making a hyper link to an external website: \[https://www.google.com/
   Text of the link\] ---(outputs)---\> [Text of the
   link](https://www.google.com/)
-- Making a link to another page on this wiki:
-  \[\[DigiPol.md\|DigiPol\]\] ---(outputs)---\>
-  [DigiPol](DigiPol.md "wikilink")
+- Making a link to another page on this wiki: \[\[DigiPol\|DigiPol\]\]
+  ---(outputs)---\> [DigiPol](DigiPol "wikilink")
 - Headings: ==Heading 1==, ===Sub Heading 1=== and so on
 - Bullets: \* --\> Outputs a bullet
 - Other editing tools are available in the Edit toolbar
 - Editing the menu on the left:
-  [MediaWiki:Sidebar](MediaWiki:Sidebar.md "wikilink") (needs admin
+  [MediaWiki:Sidebar](MediaWiki:Sidebar "wikilink") (needs admin
   permissions)
 - More help on **Formatting text** -
   <https://www.mediawiki.org/wiki/Help:Formatting>
@@ -32,7 +31,7 @@ summaries.
 
 - **User rights:**
   <https://wiki.designingopendemocracy.com/Special:UserRights>
-- [MediaWiki:Sidebar](MediaWiki:Sidebar.md "wikilink") - editing the
+- [MediaWiki:Sidebar](MediaWiki:Sidebar "wikilink") - editing the
   Sidebar
 
 ## Getting started

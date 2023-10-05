@@ -5,8 +5,8 @@ contributors:
   - Usmaan
 ---
 
-Root pages: [Links](Democracy_Analysis_Project_-_Links.md "wikilink") \|
-[Project Home](Democracy_Analysis_Project.md "wikilink")
+Root pages: [Links](Democracy_Analysis_Project_-_Links "wikilink") \|
+[Project Home](Democracy_Analysis_Project "wikilink")
 
 ## Plan B
 

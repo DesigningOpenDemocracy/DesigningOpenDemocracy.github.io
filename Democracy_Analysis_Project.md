@@ -26,7 +26,7 @@ unique/interesting aspect.
 We can have different types of reports:
 
 - [Software Related to
-  Government](Software_Related_to_Government.md "wikilink")
+  Government](Software_Related_to_Government "wikilink")
 - List of Organizations or Groups (sometimes a group may or may not have
   software that they are working on)
   - List important/notable organizations first
@@ -51,7 +51,7 @@ Software or Organization etc)
 1.  PLANNING. Initial plans on what kinds of reports to have. Discuss
     with the team these things:
     - Scan the
-      [**Links**](Democracy_Analysis_Project_-_Links.md "wikilink") page
+      [**Links**](Democracy_Analysis_Project_-_Links "wikilink") page
       and gain an overall understanding of what kinds of reports or
       pages could be created for this Analysis project
     - Scan the Javul.org

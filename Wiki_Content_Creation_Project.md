@@ -58,11 +58,11 @@ Here are some initial ideas for content (open to suggestions):
 
 Created articles:  
 
-- [Citizens’ Assembly](Citizens’_Assembly.md "wikilink")
-- [Workplace Democracy](Workplace_Democracy.md "wikilink")
+- [Citizens’ Assembly](Citizens’_Assembly "wikilink")
+- [Workplace Democracy](Workplace_Democracy "wikilink")
 - [Decentralized autonomous
-  organization](Decentralized_autonomous_organization.md "wikilink")
-- [Community Business](Community_Business.md "wikilink")
+  organization](Decentralized_autonomous_organization "wikilink")
+- [Community Business](Community_Business "wikilink")
 - --
 
 ## Previous topics (we'll will look at this later)
