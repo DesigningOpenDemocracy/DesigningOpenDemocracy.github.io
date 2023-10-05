@@ -1,6 +1,5 @@
 ---
 title: Employee Stock Ownership Plans
-permalink: /Employee_Stock_Ownership_Plans/
 contributors:
   - Aya.elfadil
 ---

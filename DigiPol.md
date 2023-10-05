@@ -1,6 +1,5 @@
 ---
 title: DigiPol
-permalink: /DigiPol/
 contributors:
   - BrianKhuu
 ---

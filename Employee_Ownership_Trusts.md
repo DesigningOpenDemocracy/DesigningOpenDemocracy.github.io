@@ -1,6 +1,5 @@
 ---
 title: Employee Ownership Trusts
-permalink: /Employee_Ownership_Trusts/
 contributors:
   - Aya.elfadil
 ---

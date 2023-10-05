@@ -1,6 +1,5 @@
 ---
 title: Sources of Funding and Grants
-permalink: /Sources_of_Funding_and_Grants/
 contributors:
   - Usmaan
 ---

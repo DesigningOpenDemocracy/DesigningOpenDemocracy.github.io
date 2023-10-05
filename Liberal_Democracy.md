@@ -1,6 +1,5 @@
 ---
 title: Liberal Democracy
-permalink: /Liberal_Democracy/
 contributors:
   - Aya.elfadil
 ---

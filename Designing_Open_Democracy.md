@@ -1,6 +1,5 @@
 ---
 title: Designing Open Democracy
-permalink: /Designing_Open_Democracy/
 contributors:
   - Charlie
 ---

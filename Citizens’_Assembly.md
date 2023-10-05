@@ -1,6 +1,5 @@
 ---
 title: Citizens’ Assembly
-permalink: /Citizens’_Assembly/
 contributors:
   - Charlie
   - Usmaan

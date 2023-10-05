@@ -1,6 +1,5 @@
 ---
 title: ElectionDates.org
-permalink: /ElectionDates.org/
 contributors:
   - BrianKhuu
   - Usmaan

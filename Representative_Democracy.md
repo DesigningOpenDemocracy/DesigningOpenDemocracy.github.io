@@ -1,6 +1,5 @@
 ---
 title: Representative Democracy
-permalink: /Representative_Democracy/
 contributors:
   - Aya.elfadil
 ---

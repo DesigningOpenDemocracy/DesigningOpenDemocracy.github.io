@@ -1,6 +1,5 @@
 ---
 title: Editing and Administration Guide
-permalink: /Editing_and_Administration_Guide/
 contributors:
   - Usmaan
 ---

@@ -1,6 +1,5 @@
 ---
 title: Flux Party
-permalink: /Flux_Party/
 contributors:
   - Charlie
 ---

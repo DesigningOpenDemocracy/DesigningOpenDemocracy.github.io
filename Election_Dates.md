@@ -1,6 +1,5 @@
 ---
 title: Election Dates
-permalink: /Election_Dates/
 contributors:
   - Usmaan
 ---

@@ -1,6 +1,5 @@
 ---
 title: Current Known Efforts In Australia Regarding Democracy Related Organisations
-permalink: /Current_Known_Efforts_In_Australia_Regarding_Democracy_Related_Organisations/
 contributors:
   - BrianKhuu
 ---

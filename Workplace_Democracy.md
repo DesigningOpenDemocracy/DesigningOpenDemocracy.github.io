@@ -1,6 +1,5 @@
 ---
 title: Workplace Democracy
-permalink: /Workplace_Democracy/
 contributors:
   - Aya.elfadil
 ---

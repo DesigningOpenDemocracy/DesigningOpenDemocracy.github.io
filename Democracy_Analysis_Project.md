@@ -1,6 +1,5 @@
 ---
 title: Democracy Analysis Project
-permalink: /Democracy_Analysis_Project/
 contributors:
   - Usmaan
 ---

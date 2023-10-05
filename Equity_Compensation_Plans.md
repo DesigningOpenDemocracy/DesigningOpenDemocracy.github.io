@@ -1,6 +1,5 @@
 ---
 title: Equity Compensation Plans
-permalink: /Equity_Compensation_Plans/
 contributors:
   - Aya.elfadil
 ---

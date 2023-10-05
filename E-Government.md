@@ -1,6 +1,5 @@
 ---
 title: E-Government
-permalink: /E-Government/
 contributors:
   - Charlie
 ---

@@ -1,6 +1,5 @@
 ---
 title: Articles by Aya Elfadil
-permalink: /Articles_by_Aya_Elfadil/
 contributors:
   - Aya.elfadil
 ---

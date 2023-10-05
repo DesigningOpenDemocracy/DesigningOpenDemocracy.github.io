@@ -1,6 +1,5 @@
 ---
 title: Democracy
-permalink: /Democracy/
 contributors:
   - Aya.elfadil
 ---

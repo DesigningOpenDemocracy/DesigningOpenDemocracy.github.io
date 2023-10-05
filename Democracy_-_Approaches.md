@@ -1,6 +1,5 @@
 ---
 title: Democracy - Approaches
-permalink: /Democracy_-_Approaches/
 contributors:
   - Nick em
 ---

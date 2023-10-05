@@ -1,6 +1,5 @@
 ---
 title: Worker Cooperatives
-permalink: /Worker_Cooperatives/
 contributors:
   - Aya.elfadil
 ---

@@ -1,6 +1,5 @@
 ---
 title: Democracy Analysis Project - Classification Task
-permalink: /Democracy_Analysis_Project_-_Classification_Task/
 contributors:
   - Usmaan
 ---

@@ -1,6 +1,5 @@
 ---
 title: Direct Democracy
-permalink: /Direct_Democracy/
 contributors:
   - Aya.elfadil
 ---

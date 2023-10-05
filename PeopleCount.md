@@ -1,6 +1,5 @@
 ---
 title: PeopleCount
-permalink: /PeopleCount/
 contributors:
   - RandStrauss
   - Usmaan

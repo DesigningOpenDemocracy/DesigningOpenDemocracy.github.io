@@ -1,6 +1,5 @@
 ---
 title: Links
-permalink: /Links/
 contributors:
   - Usmaan
   - BrianKhuu

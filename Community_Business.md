@@ -1,6 +1,5 @@
 ---
 title: Community Business
-permalink: /Community_Business/
 contributors:
   - Aya.elfadil
 ---

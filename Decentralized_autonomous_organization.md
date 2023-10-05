@@ -1,6 +1,5 @@
 ---
 title: Decentralized autonomous organization
-permalink: /Decentralized_autonomous_organization/
 contributors:
   - Usmaan
   - Aya.elfadil

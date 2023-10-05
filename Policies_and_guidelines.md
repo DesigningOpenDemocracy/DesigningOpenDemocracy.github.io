@@ -1,6 +1,5 @@
 ---
 title: Policies and guidelines
-permalink: /Policies_and_guidelines/
 contributors:
   - Usmaan
 ---

@@ -1,6 +1,5 @@
 ---
 title: Current Known Efforts World Wide Regarding Democracy Related Organisations
-permalink: /Current_Known_Efforts_World_Wide_Regarding_Democracy_Related_Organisations/
 contributors:
   - BrianKhuu
   - RandStrauss

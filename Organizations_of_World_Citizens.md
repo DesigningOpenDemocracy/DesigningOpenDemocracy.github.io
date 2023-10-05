@@ -1,6 +1,5 @@
 ---
 title: Organizations of World Citizens
-permalink: /Organizations_of_World_Citizens/
 contributors:
   - Usmaan
 ---

@@ -1,6 +1,5 @@
 ---
 title: End to End Verifiable Voting System
-permalink: /End_to_End_Verifiable_Voting_System/
 contributors:
   - BrianKhuu
   - Usmaan

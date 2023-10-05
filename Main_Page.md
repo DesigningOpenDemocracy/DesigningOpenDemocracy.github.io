@@ -1,6 +1,5 @@
 ---
 title: Main Page
-permalink: /Main_Page/
 contributors:
   - MediaWiki default
   - Usmaan

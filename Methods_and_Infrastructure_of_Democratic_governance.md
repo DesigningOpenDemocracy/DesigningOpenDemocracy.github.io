@@ -1,6 +1,5 @@
 ---
 title: Methods and Infrastructure of Democratic governance
-permalink: /Methods_and_Infrastructure_of_Democratic_governance/
 contributors:
   - Nick em
 ---

@@ -1,6 +1,5 @@
 ---
 title: Cooperative
-permalink: /Cooperative/
 contributors:
   - Aya.elfadil
 ---

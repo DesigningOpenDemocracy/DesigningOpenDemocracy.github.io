@@ -1,6 +1,5 @@
 ---
 title: Content Guidelines
-permalink: /Content_Guidelines/
 contributors:
   - Usmaan
 ---

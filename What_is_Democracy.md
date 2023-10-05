@@ -1,6 +1,5 @@
 ---
 title: What is Democracy?
-permalink: /What_is_Democracy/
 contributors:
   - Nick em
 ---

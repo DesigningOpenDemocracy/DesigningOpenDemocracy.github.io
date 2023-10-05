@@ -1,6 +1,5 @@
 ---
 title: Mixed-member proportional representation
-permalink: /Mixed-member_proportional_representation/
 contributors:
   - BrianKhuu
 ---

@@ -1,6 +1,5 @@
 ---
 title: Constitutional Democracy
-permalink: /Constitutional_Democracy/
 contributors:
   - Aya.elfadil
 ---

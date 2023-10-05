@@ -1,6 +1,5 @@
 ---
 title: Software Related to Government
-permalink: /Software_Related_to_Government/
 contributors:
   - Usmaan
 ---

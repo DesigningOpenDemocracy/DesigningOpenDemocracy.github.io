@@ -1,6 +1,5 @@
 ---
 title: Events and Conferences
-permalink: /Events_and_Conferences/
 contributors:
   - Usmaan
 ---

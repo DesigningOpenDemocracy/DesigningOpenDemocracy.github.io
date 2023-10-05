@@ -1,6 +1,5 @@
 ---
 title: Wiki Content Creation Project
-permalink: /Wiki_Content_Creation_Project/
 contributors:
   - Usmaan
   - Aya.elfadil
