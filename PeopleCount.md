@@ -8,7 +8,7 @@ contributors:
 
   
 *NOTE: This article written by the website's owner may not abide by our
-[Policies and guidelines](/Policies_and_guidelines "wikilink") (needs to
+[Policies and guidelines](Policies_and_guidelines "wikilink") (needs to
 be non-promotional, have neutral point of view; notability also needs to
 be considered. Recommend replacing with a short summary and moving that
 to another page to align with the expectations of the analysis project)*

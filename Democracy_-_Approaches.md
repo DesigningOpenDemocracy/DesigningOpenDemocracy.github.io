@@ -6,15 +6,15 @@ contributors:
 ---
 
 There are basic categories that I would consider "traditional" of how to
-approach [Democratic Decision Making](/What_is_Democracy "wikilink")
+approach [Democratic Decision Making](What_is_Democracy "wikilink")
 
 These include:
 
-[Direct Democracy](/Direct_Democracy "wikilink")
+[Direct Democracy](Direct_Democracy "wikilink")
 
-[Representative Democracy](/Representative_Democracy "wikilink")
+[Representative Democracy](Representative_Democracy "wikilink")
 
-[Sortition](/Sortition "wikilink")
+[Sortition](Sortition "wikilink")
 
 Direct Democracy means that citizens can vote directly on a policy.
 
@@ -59,6 +59,6 @@ best possible expected policy outcome. This could also come into
 resources are allocated based off these bets
 
 Other things: [Methods and Infrastructure of Democratic
-governance](/Methods_and_Infrastructure_of_Democratic_governance "wikilink"):
+governance](Methods_and_Infrastructure_of_Democratic_governance "wikilink"):
 Participation ("Ladder of participation"), consultation, information,
 Legal system, Separation of Powers

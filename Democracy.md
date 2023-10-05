@@ -34,11 +34,11 @@ original form of democracy.
 
 There are different forms of democracy such as:
 
-- [Direct Democracy](/Direct_Democracy "wikilink").
-- [Representative Democracy](/Representative_Democracy "wikilink").
-- [Constitutional Democracy](/Constitutional_Democracy "wikilink").
+- [Direct Democracy](Direct_Democracy "wikilink").
+- [Representative Democracy](Representative_Democracy "wikilink").
+- [Constitutional Democracy](Constitutional_Democracy "wikilink").
 - Participatory Democracy.
-- [Liberal Democracy](/Liberal_Democracy "wikilink").
+- [Liberal Democracy](Liberal_Democracy "wikilink").
 - Economic Democracy.
 - Social Democracy.
 - Elite Democracy.
