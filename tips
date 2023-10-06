@@ -1,1 +1,0 @@
-find ./  -printf "%f\n"
