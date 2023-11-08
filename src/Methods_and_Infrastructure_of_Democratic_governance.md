@@ -4,7 +4,7 @@ contributors:
   - Nick em
 ---
 
-[Democracy](What_is_Democracy "wikilink") does not happen without
+[Democracy](What_is_Democracy.md) does not happen without
 various infrastructure in place to support it. Currently the processes,
 tools and objects associated with democracy are:
 

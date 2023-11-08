@@ -10,19 +10,19 @@ This is a repository of information on Democracy
 
 ## Current List of Pages
 
-- [Designing Open Democracy](/Designing_Open_Democracy "wikilink")
-- [Democracy](/Democracy "wikilink")
-- [What is Democracy?](/What_is_Democracy? "wikilink")
-- [Approaches to Democracy](/Democracy_-_Approaches "wikilink")
+- [Designing Open Democracy](/Designing_Open_Democracy.md)
+- [Democracy](/Democracy.md)
+- [What is Democracy?](/What_is_Democracy?.md)
+- [Approaches to Democracy](/Democracy_-_Approaches.md)
 - [Methods and Infrastructure of Democratic
   governance](/Methods_and_Infrastructure_of_Democratic_governance "wikilink")
 - [Mixed-member proportional
   representation](/Mixed-member_proportional_representation "wikilink")
-- [Links](/Links "wikilink")
-- [Events and Conferences](/Events_and_Conferences "wikilink")
+- [Links](/Links.md)
+- [Events and Conferences](/Events_and_Conferences.md)
 - [Sources of Funding and
   Grants](/Sources_of_Funding_and_Grants "wikilink")
-- [Democracy Analysis Project](/Democracy_Analysis_Project "wikilink")
+- [Democracy Analysis Project](/Democracy_Analysis_Project.md)
   - [Current Known Efforts World Wide Regarding Democracy Related
     Organisations](/Current_Known_Efforts_World_Wide_Regarding_Democracy_Related_Organisations "wikilink")
   - [Current Known Efforts In Australia Regarding Democracy Related
@@ -30,14 +30,14 @@ This is a repository of information on Democracy
   - [Software Related to
     Government](/Software_Related_to_Government "wikilink")
   - [Politics Startups](https://angel.co/politics)
-- [Community Business](/Community_Business "wikilink")
-- [Cooperative](/Cooperative "wikilink")
+- [Community Business](/Community_Business.md)
+- [Cooperative](/Cooperative.md)
 - [Decentralized autonomous
   organization](/Decentralized_autonomous_organization "wikilink")
-- [Workplace Democracy](/Workplace_Democracy "wikilink")
+- [Workplace Democracy](/Workplace_Democracy.md)
 - [Editing and Administration
   Guide](/Editing_and_Administration_Guide "wikilink")
-- [All Pages](/Special:AllPages "wikilink") (system generated)
+- [All Pages](/Special:AllPages.md) (system generated)
 
 ## Idea to improve this wiki
 

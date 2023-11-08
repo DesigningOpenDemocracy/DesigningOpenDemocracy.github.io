@@ -5,15 +5,15 @@ contributors:
 ---
 
 There are basic categories that I would consider "traditional" of how to
-approach [Democratic Decision Making](What_is_Democracy "wikilink")
+approach [Democratic Decision Making](What_is_Democracy.md)
 
 These include:
 
-[Direct Democracy](Direct_Democracy "wikilink")
+[Direct Democracy](Direct_Democracy.md)
 
-[Representative Democracy](Representative_Democracy "wikilink")
+[Representative Democracy](Representative_Democracy.md)
 
-[Sortition](Sortition "wikilink")
+[Sortition](Sortition.md)
 
 Direct Democracy means that citizens can vote directly on a policy.
 
