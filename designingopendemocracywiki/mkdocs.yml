@@ -1,8 +1,0 @@
-site_name: My Docs
-site_url: http://wiki.designingopendemocracy.com
-nav:
-  - Home: index.md
-  - About: Designing_Open_Democracy.md
-theme: mkdocs
-plugins:
-  - markmap
