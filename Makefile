@@ -2,15 +2,16 @@
 
 # Serve the book and open it in the default web browser
 serve: # Serve the book locally and automatically open it in the browser
-	mdbook serve --open
+	xdg-open http://127.0.0.1:8000/
+	mkdocs serve
 
 # Build the book without serving
 build: # Compile the markdown files into HTML format
-	mdbook build
+	mkdocs build
 
 # Clean the directory of generated book
 clean: # Remove generated book files
-	mdbook clean
+	rm -rf site
 
 # Display available commands
 help: # Show this help
