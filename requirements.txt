@@ -1,1 +1,2 @@
-pygal==3.0.0
+mkdocs-literate-nav==0.6.1
+mkdocs-ezlinks-plugin==0.1.14
