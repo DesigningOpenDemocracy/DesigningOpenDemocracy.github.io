@@ -2,6 +2,7 @@ site_name: Designing Open Democracy
 site_url: http://wiki.designingopendemocracy.com
 theme:
   name: material
+  logo: assets/dodlogo_transparent.png
   features:
     - navigation.tabs
     - navigation.sections
