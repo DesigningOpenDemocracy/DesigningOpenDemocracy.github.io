@@ -32,7 +32,7 @@ jobs:
           echo "Contents of the Repository:"
           find ${{ github.workspace }} -maxdepth 3
       - name: Build Virtualenv
-        description: Build a virtualenv, but only if it doesn't already exist
+        # Build a virtualenv, but only if it doesn't already exist
         run: python -m venv ./.venv && . ./.venv/bin/activate && python -m pip install --upgrade pip && pip install -r requirements.txt
         if: steps.cache-venv.outputs.cache-hit !='true'
 
