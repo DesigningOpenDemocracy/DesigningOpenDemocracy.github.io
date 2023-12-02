@@ -1,6 +1,5 @@
 site_name: Designing Open Democracy
 site_url: http://wiki.designingopendemocracy.com
-theme: mkdocs
 plugins:
   - search
   - literate-nav:
