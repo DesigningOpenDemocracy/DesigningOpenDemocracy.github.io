@@ -1,48 +1,32 @@
 # Designing Open Democracy Wiki
 
-This book is a collection of concepts and events that Designing Open Democracy would like to compile for reference.
+This is a collection of concepts and events that Designing Open Democracy would like to compile for reference.
 
-This book is using [mdBook](https://github.com/rust-lang/mdBook), a utility to create modern online books from markdown files.
-
-## Prerequisites
-
-Before you can use `mdBook`, you must ensure you have the following:
-
-- [Rust](https://www.rust-lang.org/tools/install) programming language
-- Cargo, which is included with Rust by default
-
-After installing Rust and Cargo, you can install `mdBook` with the following command:
-
-```shell
-cargo install mdbook
-```
+This is using [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/getting-started/), a utility to create documentation website from markdown files.
 
 ## Quick Start
 
-Here's how you can get started:
+Here's how you can get started locally by first running these commands
 
-1. **Build the book:**
+1. **Build the website:**
 
-   Run `make build` to compile the book into HTML files that you can view in your web browser.
+   Run `make build` to compile the website into HTML files that you can view in your web browser.
 
-2. **Serve the book:**
+2. **Serve the website:**
 
-   Run `make serve` to start a local web server and open the book in your default browser.
+   Run `make serve` to start a local web server and open the website in your default browser.
 
 3. **Clean build artifacts:**
 
-   Run `make clean` to remove any generated files from the `book` directory.
+   Run `make clean` to remove any generated files from the `website` directory.
 
-## Contributing
+### Dev Note
 
-To contribute to this book:
+The make script internally also setup a virtual enviroment which would install the required mkdocs and mkdocs-material plugins plus a few other useful plugins for this website. 
 
-1. Clone the repository.
-2. Create a branch for your changes.
-3. Make your changes to the markdown files.
-4. Build and test your changes locally using the Makefile commands.
-5. Commit your changes and open a pull request.
-
-## Further Information
-
-For comprehensive documentation on `mdBook`, please refer to the official [mdBook User Guide](https://rust-lang.github.io/mdBook/).
+```bash
+pip install virtualenv
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
