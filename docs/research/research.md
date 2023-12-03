@@ -1,14 +1,18 @@
 ---
-title: Links
+title: Research
 contributors:
   - Usmaan
   - BrianKhuu
 ---
 
+This section contains various research efforts. This might be eventally moved to a proper place later.
+
+Plus is useful for others doing extra research as well.
+
+## Links Of Interest
+
 - [Simulating alternate voting
   systems](https://www.youtube.com/watch?v=yhO6jfHPFQU)
-
-<!-- -->
 
 - Extra Credits Youtube Channel
   - [The Rules of Society - Rules, Part 1 - Extra Politics -

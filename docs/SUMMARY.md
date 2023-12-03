@@ -1,15 +1,14 @@
 # Summary
 
 - [Home](index.md)
-- Concepts
+- [About](about.md)
+- [Concepts](concepts/concepts.md)
     - concepts/*.md
-- Community
+- [Community](community/community.md)
     - community/*.md
-- Organisations
+- [Organisations](organisations/organisations.md)
     - organisations/*.md
-- Projects
+- [Projects](projects/projects.md)
     - projects/*.md
-- Research
+- [Research](research/research.md)
     - research/*.md
-- References
-    - references/*.md

@@ -5,6 +5,16 @@ contributors:
   - Usmaan
 ---
 
+# Election Dates
+
+[ElectionDates.org](https://www.electiondates.org/)
+
+Election Dates is a project that aim to make it easy to find and share the next election date for a country.
+
+Currently a basic proof of concept website is now running and will be cleaned up further before being opensourced for public contributions and improvements.
+
+If any dates is missing then you can submit suggestions.
+
 This website electiondates.org has a singular purpose of making it
 easier for the public to find out when the next election is on.
 

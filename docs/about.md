@@ -39,6 +39,11 @@ You can subscribe to the podcast in your podcast app of choice, or on
 [Apple
 Podcasts](https://podcasts.apple.com/au/podcast/designing-open-democracy/id1492656241).
 
+### Youtube Channel
+
+We have a youtube channel where we post any videos recordings of meetings and events [Click here to browse our video list at YouTube](https://www.youtube.com/channel/UCqIo0VC_zHyPjzNKIafGJpg/featured)
+
+
 ### Join the Discussion
 
 #### Meetup
@@ -46,22 +51,9 @@ Podcasts](https://podcasts.apple.com/au/podcast/designing-open-democracy/id14926
 Check out our [Meetup page](https://www.designingopendemocracy.com) for
 events taking place online and in person in Melbourne, Australia.
 
-#### Forum
-
-We have an [online discussion
-board](https://discuss.designingopendemocracy.com) to talk about
-democracy, ideas, events, and our latest podcast episodes.
-
 #### Telegram
 
 If you have the messaging app Telegram you can join our instant
 messaging chatroom. Click
 [here](https://t.me/joinchat/HNk_UBX8A7jBPJPbAZU5Zg) for an invite to
 our Telegram channel.
-
-#### Email
-
-If you have any questions directly related to us that cannot be answered
-in our online discussion forum or you would like to give us a tip or a
-request for an interview on our podcast then you can reach us at:
-contact\[at\]designingopendemocracy.com
