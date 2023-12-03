@@ -1,6 +1,7 @@
 ---
 title: Main Page
 permalink: /Main_Page/
+template: home.html
 ---
 
 Welcome to the [Designing Open

@@ -1,5 +1,6 @@
 # Summary
 
+- [Home](index.md)
 - Concepts
     - concepts/*.md
 - Community

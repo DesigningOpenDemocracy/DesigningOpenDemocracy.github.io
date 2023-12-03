@@ -4,7 +4,7 @@ contributors:
   - Charlie
 ---
 
-![](Flux-mark.svg "Flux-mark.svg")
+![](flux-mark.svg "Flux-mark.svg")
 
 Flux is a political party that internally uses issue-based direct
 democracy (IBDD) to help shape what issues to vote on. Ultimately they
