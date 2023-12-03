@@ -87,6 +87,8 @@ This website is also a static site wiki, where you can contribute information of
 
 Contact us if you want to add any particular information to it.
 
+If you got some git skills, then feel free to make a pull request directly on our [repository at github](https://github.com/DesigningOpenDemocracy/DesigningOpenDemocracy.github.io)
+
 Please read [[Policies and guidelines]] to understand what we
 seek and what we allow in this wiki.
 
