@@ -1,8 +1,22 @@
 ---
-title: Citizens’ Assembly
+authors:
+- Charlie
+- Usmaan
+categories:
+- Politics
+- Society
 contributors:
-  - Charlie
-  - Usmaan
+- Charlie
+- Usmaan
+date: 2023-10-11 00:00:00
+summary: A Citizens’ Assembly is a representative group of citizens who are selected
+  at random from the population to discuss a topic or issue and make recommendations.
+tags:
+- citizenship
+- participation
+- government
+- policy
+title: Citizens’ Assembly
 ---
 
 A Citizens’ Assembly (also known as a Citizen Jury) is a representative

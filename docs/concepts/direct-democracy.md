@@ -1,7 +1,11 @@
 ---
-title: Direct Democracy
+authors:
+- Aya.elfadil
 contributors:
-  - Aya.elfadil
+- Aya.elfadil
+summary: Direct democracy allows citizens to vote directly on rules and procedures
+  affecting the country, giving them more power than in a representative democracy.
+title: Direct Democracy
 ---
 
 ### Definition

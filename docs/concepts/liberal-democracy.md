@@ -1,7 +1,17 @@
 ---
-title: Liberal Democracy
+authors:
+- Aya.elfadil
 contributors:
-  - Aya.elfadil
+- Aya.elfadil
+summary: Liberal democracy is a form of democratic rule that maintains a balance between
+  the principle of limited government and the ideal of popular consent, enabling citizens
+  to participate directly in the governance of their society and state. It can take
+  on various forms, such as monarchy or republic, and operate under parliamentary,
+  presidential, or semi-presidential systems, typically with universal suffrage. Its
+  characteristics include power separation, an independent judiciary, a system of
+  checks and balances, and regular competitive elections based on universal suffrage
+  and political equality.
+title: Liberal Democracy
 ---
 
 ### Definition

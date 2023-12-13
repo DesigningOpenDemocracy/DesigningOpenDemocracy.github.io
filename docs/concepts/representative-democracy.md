@@ -1,7 +1,11 @@
 ---
-title: Representative Democracy
+authors:
+- Aya.elfadil
 contributors:
-  - Aya.elfadil
+- Aya.elfadil
+summary: Representative democracy, alternatively referred to as indirect democracy,
+  is a form of government in which elected officials represent a group of people.
+title: Representative Democracy
 ---
 
 ### Definition

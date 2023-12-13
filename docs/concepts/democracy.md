@@ -1,7 +1,22 @@
 ---
-title: Democracy
+authors:
+- name: Aya Elfadil
+categories:
+- Political Science
+- Government
+- History
 contributors:
-  - Aya.elfadil
+- Aya.elfadil
+date: 2022-10-08 00:00:00
+summary: An overview of the concept of democracy, its origins, forms, defining principles,
+  and significance in political systems.
+tags:
+- democracy
+- government
+- citizens
+- rule
+- authority
+title: Democracy
 ---
 
 Democracy brings together the views and interests of all citizens so

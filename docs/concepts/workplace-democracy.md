@@ -1,7 +1,23 @@
 ---
-title: Workplace Democracy
+authors:
+- Aya.elfadil
+categories:
+- business
+- management
 contributors:
-  - Aya.elfadil
+- Aya.elfadil
+summary: Workplace democracy applies democratic principles to the workplace, involving
+  voting, referendums, and public debate. It can take various forms and has several
+  arguments such as economic, citizenship, ethical, and employee power and representation.
+  Research has shown potential positive impacts on organizational effectiveness, productivity,
+  and citizenship skills.
+tags:
+- workplace democracy
+- democratic principles
+- employee power
+- organizational effectiveness
+- citizenship
+title: Workplace Democracy
 ---
 
 ## Definition

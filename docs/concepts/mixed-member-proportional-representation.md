@@ -1,7 +1,21 @@
 ---
-title: Mixed-member proportional representation
+authors:
+- BrianKhuu
+categories:
+- Politics
+- Electoral Systems
 contributors:
-  - BrianKhuu
+- BrianKhuu
+summary: 'Mixed-member proportional representation (MMP or MMPR) is a mixed electoral
+  system where voters have two votes: one for a single-seat constituency representative
+  and one for a political party. This metadata enriches the information on mixed-member
+  proportional representation.'
+tags:
+- MMP
+- MMPR
+- Voting System
+- Electoral Reform
+title: Mixed-member proportional representation
 ---
 
 **Stub Page! You are encouraged to add more content here!**

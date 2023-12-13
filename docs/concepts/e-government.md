@@ -1,7 +1,22 @@
 ---
-title: E-Government
+authors:
+- Charlie
 contributors:
-  - Charlie
+- Charlie
+date: 2022-10-04 00:00:00
+summary: E-government (short for electronic government) is the use of technology,
+  such as computers and the internet, to provide public services to citizens and other
+  persons in a country or region. E-government is also known as e-gov, electronic
+  government, internet governance, digital government, online government, or connected
+  government. Examples of e-government services can include using the internet for
+  applying for government issued identification documents (such as a birth certificate),
+  updating government records (for example, changing a residential address), or completing
+  a tax return. E-government should enable anyone visiting a city website to communicate
+  and interact with city employees via the Internet with graphical user interfaces
+  (GUI), instant-messaging (IM), learn about government issues through audio/video
+  presentations, and in any way more sophisticated than a simple email letter to the
+  address provided at the site
+title: E-Government
 ---
 
 ## Summary

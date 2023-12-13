@@ -1,7 +1,22 @@
 ---
-title: Cooperative
+authors:
+- Aya.elfadil
+categories:
+- Business
+- Economics
 contributors:
-  - Aya.elfadil
+- Aya.elfadil
+date: 2022-09-20 00:00:00
+summary: A cooperative is a democratic enterprise where members have equal ownership
+  and control, and they work together to achieve economic, social, and cultural needs
+  and aspirations. This article explores the definition, establishment, principles,
+  and cooperative capital.
+tags:
+- cooperative
+- co-op
+- business model
+- Rochdale Principles
+title: Cooperative
 ---
 
 ### Definition

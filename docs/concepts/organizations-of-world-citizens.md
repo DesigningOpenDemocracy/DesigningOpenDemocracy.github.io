@@ -1,7 +1,19 @@
 ---
-title: Organizations of World Citizens
+authors:
+- Usmaan
+categories:
+- Advocacy
 contributors:
-  - Usmaan
+- Usmaan
+summary: This page lists some organizations advocating the concept of a World Citizen.
+  A short analysis provides a summary of what each organization is currently doing,
+  the measurable objectives they have achieved (if any), or if they're just an advocacy
+  group.
+tags:
+- World Citizen
+- Global Citizenship
+- Organizations
+title: Organizations of World Citizens
 ---
 
 This page lists some organizations advocating the concept of a World

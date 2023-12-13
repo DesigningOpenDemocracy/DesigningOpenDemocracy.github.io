@@ -1,7 +1,18 @@
 ---
-title: Constitutional Democracy
+authors:
+- Aya.elfadil
 contributors:
-  - Aya.elfadil
+- Aya.elfadil
+summary: Constitutional democracy is a form of government in which the majority wields
+  power within the framework of the constitution, ensuring the protection of the majority's
+  interests. This form of democracy is characterized by popular sovereignty, majority
+  rule, and institutional limitations on powers.
+tags:
+- democracy
+- constitution
+- government
+- politics
+title: Constitutional Democracy
 ---
 
 ### Definition

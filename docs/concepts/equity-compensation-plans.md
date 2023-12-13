@@ -1,7 +1,12 @@
 ---
-title: Equity Compensation Plans
+authors:
+- Aya.elfadil
 contributors:
-  - Aya.elfadil
+- Aya.elfadil
+date: 2022-09-14 00:00:00
+summary: Overview of equity compensation plans in the United States, including stock
+  options, ESPPs, restricted stock, phantom stock, and SARs.
+title: Equity Compensation Plans
 ---
 
 The other important example of employee ownership in the United States

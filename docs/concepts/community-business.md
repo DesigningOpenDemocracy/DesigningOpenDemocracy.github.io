@@ -1,7 +1,19 @@
 ---
-title: Community Business
+authors:
+- Aya.elfadil
+categories:
+- Community
+- Business
 contributors:
-  - Aya.elfadil
+- Aya.elfadil
+date: 2022-03-14 00:00:00
+summary: Community businesses are locally owned and operated enterprises that are
+  accountable to and beneficial for their communities, reinvesting profits locally
+  and aiming to improve the local economy and quality of life.
+tags:
+- community businesses
+- local commerce
+title: Community Business
 ---
 
 ## Community Business

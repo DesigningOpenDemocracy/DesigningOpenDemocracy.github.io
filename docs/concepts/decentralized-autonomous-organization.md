@@ -1,8 +1,19 @@
 ---
-title: Decentralized autonomous organization
+authors:
+- Usmaan
+- Aya.elfadil
 contributors:
-  - Usmaan
-  - Aya.elfadil
+- Usmaan
+- Aya.elfadil
+date: 2022-10-26 12:00:00+00:00
+summary: A blockchain-based system that allows people to coordinate and self-govern
+  themselves through a set of self-executing rules deployed on a public blockchain,
+  and whose governance is decentralized, that is, independent of central control.
+tags:
+- blockchain
+- decentralized organization
+- autonomous corporation
+title: Decentralized autonomous organization
 ---
 
 ## Definition

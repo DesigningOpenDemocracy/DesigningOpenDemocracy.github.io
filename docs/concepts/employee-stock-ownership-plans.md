@@ -1,7 +1,23 @@
 ---
-title: Employee Stock Ownership Plans
+authors:
+- Aya.elfadil
+categories:
+- Business
+- Finance
 contributors:
-  - Aya.elfadil
+- Aya.elfadil
+date: 2021-09-15 00:00:00
+summary: Employee Stock Ownership Plans (ESOPs) are frequently used for broad-based
+  employee ownership and as a vehicle for business transition. This type of retirement
+  plan primarily invests in company stock and places its assets in a trust for employees.
+  ESOPs are utilized to attract and retain employees, build long-term wealth, and
+  foster a high-engagement work culture. They also provide significant tax benefits
+  and can be formed during the process of selling a business.
+tags:
+- ESOP
+- Employee Ownership
+- Retirement Plan
+title: Employee Stock Ownership Plans
 ---
 
 The *employee stock ownership plan* is the most frequently used

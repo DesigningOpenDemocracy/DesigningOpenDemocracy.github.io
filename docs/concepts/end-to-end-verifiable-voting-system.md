@@ -1,11 +1,15 @@
 ---
-title: End to End Verifiable Voting System
+authors:
+- BrianKhuu
+- Usmaan
 contributors:
-  - BrianKhuu
-  - Usmaan
+- BrianKhuu
+- Usmaan
+summary: 'Proposed solutions to the problem: EVIV An end-to-end verifiable Internet
+  voting system, and related documents.'
+title: End to End Verifiable Voting System
 ---
 
-  
 *Stub page*
 
 There are a couple of proposed solutions to the problem already:
