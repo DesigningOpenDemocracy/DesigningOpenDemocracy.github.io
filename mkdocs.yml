@@ -30,6 +30,7 @@ plugins:
       wikilinks: true
   - blog:
       post_excerpt: required
+      archive: true
   - rss:
       match_path: blog/posts/.* 
       date_from_meta:
