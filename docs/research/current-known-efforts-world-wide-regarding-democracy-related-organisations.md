@@ -76,3 +76,17 @@ more civilised discourse.
 ## Further Links By Rand Strauss from peoplecount.org
 
 <https://docs.google.com/document/d/1Jz_X1ZVCtX2W3etsgjX5iCBylsMBPyUKD7I05ZF0FuI/edit#>
+
+
+# Possible addition?
+
+* The Democratic Federation of Northern Syria (also known as Rojava but the term is avoided by the Kurds even though it is a Kurdish word, meaning west, because the DFNS is seeking to establish and promote a pluralistic, multi-ethnic system). DFNS achieves ‘governance-without-a-state’ according to the principles of ‘Democratic Confederalism 1’ - a ‘bottom-up’, decentralised, direct democratic model.
+  - Heads up on this model by Chris Feigl
+* Not on democracy-related organizations per se, but there are a lot of links about reforming politics on http://bit.ly/political-sites (RandStrauss)
+
+# Other Resources
+
+* https://sites.google.com/view/worldwide-direct-democracy/home
+  - A map of the world in google maps showing organisations and individuals working toward Direct or Liquid Democracy - currently active and updating - also available as Google Earth File (votedave)
+* https://en.wikipedia.org/wiki/Civic_technology#Civic_hacking
+  - Suggested by Nick Merange

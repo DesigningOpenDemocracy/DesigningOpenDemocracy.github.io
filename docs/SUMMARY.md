@@ -7,8 +7,6 @@
     - community/*.md
     - [Projects](projects/projects.md)
         - projects/*.md
-    - [Podcast](podcast/podcast.md)
-        - podcast/*.md
 - [Concepts](concepts/concepts.md)
     - concepts/*.md
 - [Organisations](organisations/organisations.md)
