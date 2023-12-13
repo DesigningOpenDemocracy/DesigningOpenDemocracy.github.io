@@ -17,7 +17,7 @@ Designing Open Democracy had a podcast episode with Ben Ballingall, Victoria rep
 
 #### Podcast Episode
 
-[[Designing Open Democracy]] had a
+Designing Open Democracy had a
 podcast episode with Ben Ballingall, Victoria representative of the Flux
 Party recoded on 2020-02-11. [Click here to listen to the
 podcast](https://podcasts.apple.com/au/podcast/talk-ben-ballingall-about-flux-party-issue-based-direct/id1492656241?i=1000465446730)

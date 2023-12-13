@@ -5,7 +5,7 @@ contributors:
 ---
 
 There are basic categories that I would consider "traditional" of how to
-approach [[Democratic Decision Making]]
+approach Democratic Decision Making
 
 These include:
 

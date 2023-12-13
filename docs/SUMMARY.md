@@ -2,7 +2,7 @@
 
 - [Home](index.md)
 - [About](about.md)
-- [Blog](/blog)
+- [Blog](/blog/)
 - [Community](community/community.md)
     - community/*.md
     - [Projects](projects/projects.md)

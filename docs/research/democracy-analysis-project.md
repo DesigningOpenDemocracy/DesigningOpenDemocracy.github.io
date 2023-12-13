@@ -48,7 +48,7 @@ Software or Organization etc)
 
 1.  PLANNING. Initial plans on what kinds of reports to have. Discuss
     with the team these things:
-    - Scan the [[Democracy Analysis Project - Links | Links]] page
+    - Scan the [[Democracy Analysis Project - Links| Links]] page
       and gain an overall understanding of what kinds of reports or
       pages could be created for this Analysis project
     - Scan the Javul.org

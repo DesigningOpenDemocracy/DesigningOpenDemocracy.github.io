@@ -4,7 +4,7 @@ contributors:
   - Usmaan
 ---
 
-Root pages: [[Democracy Analysis Project - Links | Links]] \|
+Root pages: [[Democracy Analysis Project - Links| Links]] \|
 [[Democracy Analysis Project|Project Home]]
 
 ## Plan B
