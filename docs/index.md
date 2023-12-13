@@ -44,6 +44,9 @@ If you have telegram you can also join our instant messaging chatroom:
 
 [**Click for an invite link to our telegram chatroom**](https://t.me/joinchat/HNk_UBX8A7jBPJPbAZU5Zg)
 
+If you have discord you can also join our instant messaging chatroom:
+
+[**Click for an invite into our discord chatroom**](https://discord.gg/cHWGyMk)
 
 ## Contact Us
 

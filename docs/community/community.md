@@ -1,1 +1,1 @@
-This will contain various information on events and ways to contribute
+This will contain various information on events and ways to contribute and follow activities within this group

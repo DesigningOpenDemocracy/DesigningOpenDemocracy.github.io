@@ -1,5 +1,5 @@
 site_name: Designing Open Democracy
-site_url: http://wiki.designingopendemocracy.com
+site_url: http://designingopendemocracy.com
 theme:
   name: material
   logo: assets/dodlogo_transparent.png
@@ -28,3 +28,14 @@ plugins:
       nav_file: SUMMARY.md
   - ezlinks:
       wikilinks: true
+  - blog:
+      post_excerpt: required
+  - rss:
+      match_path: blog/posts/.* 
+      date_from_meta:
+        as_creation: date
+      categories:
+        - categories
+        - tags 
+
+
