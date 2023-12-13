@@ -38,5 +38,5 @@ plugins:
       categories:
         - categories
         - tags 
-
+  - tags
 
