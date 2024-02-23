@@ -11,11 +11,19 @@ title: "Israel-Gaza: how opinion polls used in Northern Ireland could pave a way
 
 # Israel-Gaza: how opinion polls used in Northern Ireland could pave a way to peace
 
-Published: February 22, 2024 10.10pm AEDT
-
-Source: https://theconversation.com/israel-gaza-how-opinion-polls-used-in-northern-ireland-could-pave-a-way-to-peace-224085
+Sharing this podcast episode which details the application of peace polls, initially inspired by Inuit consensus practices, to facilitate peace in Northern Ireland and proposes their potential in addressing the Israel-Palestine conflict. Despite challenges in engaging all parties, notably an unresponsive Israeli leadership, the methodology's success in inclusively gauging public opinion on contentious issues highlights its relevance for promoting democratic dialogues and reform efforts globally, resonating with our focus on exploring innovative democratic processes
 
 <!-- more -->
+
+## Source
+
+Israel-Gaza: how opinion polls used in Northern Ireland could pave a way to peace
+
+Published: February 22, 2024 10.10pm AEDT
+
+Source: <https://theconversation.com/israel-gaza-how-opinion-polls-used-in-northern-ireland-could-pave-a-way-to-peace-224085>
+
+> Amid the death and suffering unleashed by Israel’s war on Gaza and the Hamas attack on Israel on October 7, prospects for lasting peace between Israelis and Palestinians appear ever more elusive. But when the war eventually ends, pressure will mount for negotiations to begin for a deal. When that day comes, how can opposing sides in such an intractable conflict find enough common ground to reach an agreement?
 
 ## Podcast Summary (AI)
 
