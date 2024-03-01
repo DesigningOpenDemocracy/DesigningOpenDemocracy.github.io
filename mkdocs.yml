@@ -22,6 +22,7 @@ theme:
     accent: indigo
 extra_css:
   - assets/css/customizations.css
+  - https://unpkg.com/leaflet@1.3.1/dist/leaflet.css
 plugins:
   - search
   - literate-nav:
@@ -39,4 +40,5 @@ plugins:
         - categories
         - tags 
   - tags
-
+extra_javascript:
+  - https://unpkg.com/leaflet@1.9.4/dist/leaflet.js
