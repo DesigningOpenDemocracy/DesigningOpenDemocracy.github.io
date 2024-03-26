@@ -1,0 +1,69 @@
+{% extends "main.html" %}
+{% block tabs %}
+{{ super() }}
+<section id="hero-container" class="mdx-container">
+    <div id="hero-card" class="mdx-hero md-typeset">
+      <!-- Hero Image -->
+      <div id="hero-logo" class="mdx-hero__image">
+        <img src="assets/dodlogo_transparent.png" alt="Designing Open Democracy Logo">
+      </div>
+
+      <!-- Hero Title -->
+      <div class="mdx-hero__content">
+        <h1 id="hero-title">Designing Open Democracy</h1>
+        <p id="hero-subtitle">Think Outside The Ballot Box</p>
+      </div>
+  </div>
+</section>
+<!-- Activity Map (The idea is we cover the last few years of activities) (And potentially the future?) -->
+<section id="activity-map-container" class="mdx-container">
+  <div id="activity-map-card" class="mdx-hero md-typeset">
+    <h1 id="activity-map-title">Activity Map</h1>
+    <p id="activity-map-subtitle">Map of recent activities</p>
+    <div class="leaflet-container" id="map" style="width: 800px; height: 700px; margin: 0;"></div>
+  </div>
+</section>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const map = L.map('map').setView([-27.41, 134.77], 3);
+  const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+  }).addTo(map);
+
+  // Function to calculate fade based on post date
+  function getFadeRatioBasedOnTime(postDateStr) {
+    const postDate = new Date(postDateStr);
+    const currentDate = new Date();
+    const oneYear = 365 * 24 * 60 * 60 * 1000; // milliseconds in one year
+    const timeDiff = currentDate - postDate;
+    const fadeRatio = Math.min(timeDiff / oneYear, 1); // Ensure it doesn't exceed 1
+    return fadeRatio;
+  }
+
+  // Add blog activity map
+	var  myFGMarker = new L.FeatureGroup();
+{%- for file in pages %}
+  {%- if file.page.meta.location %}
+    {
+      var marker = L.marker([{{file.page.meta.location.latitude}}, {{file.page.meta.location.longitude}}], {opacity: 1.0-getFadeRatioBasedOnTime('{{ file.page.meta.date }}')/2})
+        .bindPopup(`
+            <a style="font-weight:bold" href="{{ file.page.url }}">{{ file.page.title }}</a> 
+						<br/> <i>{{ file.page.meta.date }}</i>
+            <br/> {{file.page.meta.location.name}} 
+					{%- if file.page.meta.location.description %}
+						<br/> {{file.page.meta.location.description}}
+					{%- endif %}
+					{%- if file.page.meta.location.address %}
+						<br/> <a target="_new" href="https://www.openstreetmap.org/?mlat={{file.page.meta.location.latitude}}&mlon={{file.page.meta.location.longitude}}">{{file.page.meta.location.address}}</a> 
+					{%- endif %}
+						`);
+      myFGMarker.addLayer(marker);
+    }
+  {%- endif %}
+{%- endfor %}
+	map.addLayer(myFGMarker);
+	map.fitBounds(myFGMarker.getBounds(), {padding: [50, 50]});
+});
+</script>
+{% endblock %}
