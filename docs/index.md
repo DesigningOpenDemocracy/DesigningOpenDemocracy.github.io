@@ -26,19 +26,7 @@ TL;DR: We are an nonpartisan and agnostic democracy advocacy group for promoting
 
 We have a youtube channel where we post any videos recordings of meetings and events [Click here to browse our video list at YouTube](https://www.youtube.com/channel/UCqIo0VC_zHyPjzNKIafGJpg/featured)
 
-## Discuss
-
-If you are in Melbourne Australia, you can join us in person via our meetup:
-
-[**Click to view next meetup events**](https://www.meetup.com/DesigningOpenDemocracy/)
-
-- [Time Zone
-  converter](https://www.timeanddate.com/worldclock/converter.html?iso=20210515T020000&p1=70&p2=tz_aet)
-  (for timezones choose AET and your local timezone)
-
-We also have an online discussion board to talk about latest podcast episodes and other democracy related events:
-
-[**Click to open our online discussion forum**](https://discuss.designingopendemocracy.com/)
+## World Wide Channels
 
 If you have telegram you can also join our instant messaging chatroom:
 
@@ -48,13 +36,17 @@ If you have discord you can also join our instant messaging chatroom:
 
 [**Click for an invite into our discord chatroom**](https://discord.gg/cHWGyMk)
 
-## Contact Us
+## Australia Meets
 
-If you have any questions directly related to us that cannot be answered in our [online discussion forum](https://discuss.designingopendemocracy.com/) or you would like to give us a tip or a request for an interview on our podcast then you can reach us at:
+If you are in Melbourne Australia, you can join us in person via our meetup:
 
-* Telegram: [Designing Open Democracy Telegram Instant Messaging Room Invite Link](https://t.me/joinchat/HNk_UBX8A7jBPJPbAZU5Zg)
+[**Click to view next eventbright events**](https://www.eventbrite.com.au/o/designing-open-democracy-37465353433)
 
-<!-- * Email: [contact@designingopendemocracy.com](mailto:contact+website@designingopendemocracy.com?subject=Website) -->
+[**Click to view next meetup events**](https://www.meetup.com/DesigningOpenDemocracy/)
+
+- [Time Zone
+  converter](https://www.timeanddate.com/worldclock/converter.html?iso=20210515T020000&p1=70&p2=tz_aet)
+  (for timezones choose AET and your local timezone)
 
 
 <!--
