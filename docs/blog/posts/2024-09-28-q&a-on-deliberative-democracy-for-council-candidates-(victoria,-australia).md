@@ -16,7 +16,7 @@ published: true
 
 This event in victoria is of interest to us so passing around the telegram chat and to various other Designing Open Democracy members in Victoria, because it's about open governance but via [Citizen Assemblies](https://www.designingopendemocracy.com/concepts/citizens-assembly/).
 
----
+<!-- more -->
 
 <https://actionnetwork.org/events/qa-on-deliberative-democracy-for-council-candidates>
 
