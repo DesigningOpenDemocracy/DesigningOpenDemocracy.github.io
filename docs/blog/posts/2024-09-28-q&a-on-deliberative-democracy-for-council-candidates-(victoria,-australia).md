@@ -12,6 +12,10 @@ summary: "Interesting upcoming event on deliberative democracy in council contex
 created_at: 2024-09-28T09:06:35.831Z
 layout: post
 published: true
+location:
+  latitude: -37.81453053995718
+  longitude: 144.9628829956055
+  name: "Melbourne (Online)"
 ---
 
 This event in victoria is of interest to us so passing around the telegram chat and to various other Designing Open Democracy members in Victoria, because it's about open governance but via [Citizen Assemblies](https://www.designingopendemocracy.com/concepts/citizens-assembly/).
@@ -26,6 +30,4 @@ The Local Government Act Victoria (2020) requires councils to use deliberative e
 
 Citizens’ Assemblies (also known as Citizens’ Juries or Citizens’ Panels) are a useful approach to tackling complex, values-based policy problems. These harness the good sense of ordinary people and circumvent the influence of powerful vested interests. Public authorities convene groups of people representing a wide cross-section of society for at least one full day – and often much longer – to learn, deliberate, and develop collective recommendations that consider the complexities and compromises required for solving multifaceted public issues. They are advised by independent experts and aided in their deliberations by skilled facilitators.
 Such processes are increasingly used to help break political stalemates and generate options for solving complex values-based problems – particularly those for which there is a need to consider the greater good, and/or future generations.
-
-
 
