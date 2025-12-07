@@ -18,8 +18,7 @@ Glad to see a political party in UK exploring this idea of sortition.
 
 ![](https://www.yourparty.uk/wp-content/uploads/2025/11/Sortition-Square.png)
 
----
-
+<!-- more -->
 
 Click the link below to read up about it.
 
