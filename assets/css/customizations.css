@@ -1,0 +1,68 @@
+.center {
+    display: block;
+    margin: 0 auto;
+}
+
+.text-blue {
+    color: #49a7e9;
+}
+
+.text-black {
+    color: #000000;
+}
+
+/****************************************/
+
+#hero-container {
+    min-height:100vh; 
+    background-color: rgba(255, 255, 255, 0.90);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-card {
+    text-align: center;
+}
+
+#hero-logo {
+    padding: 1em;
+}
+
+#hero-title {
+    color: #49a7e9;
+    font-size: 46px;
+}
+
+#hero-subtitle {
+    color: #000000b0;
+}
+
+#activity-map-container {
+    min-height:100vh; 
+    background-color: rgba(255, 255, 255, 0.646);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#activity-map-card {
+    text-align: center;
+}
+
+#activity-map-title {
+    color: #d24f2e;
+    font-size: 46px;
+}
+
+#activity-map-subtitle {
+    color: #000000b0;
+}
+
+.leaflet-container {
+	height: 400px;
+	width: 600px;
+	max-width: 100%;
+	max-height: 100%;
+}
+
