@@ -36,34 +36,41 @@ document.addEventListener("DOMContentLoaded", function() {
     const postDate = new Date(postDateStr);
     const currentDate = new Date();
     const oneYear = 365 * 24 * 60 * 60 * 1000; // milliseconds in one year
+    const fadeDuration = oneYear * 2;
     const timeDiff = currentDate - postDate;
-    const fadeRatio = Math.min(timeDiff / oneYear, 1); // Ensure it doesn't exceed 1
+    const fadeRatio = Math.min(timeDiff / fadeDuration, 1); // Ensure it doesn't exceed 1
     return fadeRatio;
   }
 
   // Add blog activity map
-	var  myFGMarker = new L.FeatureGroup();
-{%- for file in pages %}
-  {%- if file.page.meta.location %}
-    {
-      var marker = L.marker([{{file.page.meta.location.latitude}}, {{file.page.meta.location.longitude}}], {opacity: 1.0-getFadeRatioBasedOnTime('{{ file.page.meta.date }}')/2})
-        .bindPopup(`
+  var myFGMarker = new L.FeatureGroup();
+
+  {%- for file in pages %}
+    {%- if file.page.meta.location and file.page.meta.location.latitude and file.page.meta.location.longitude %}
+      {
+        var marker = L.marker([{{ file.page.meta.location.latitude }}, {{ file.page.meta.location.longitude }}], {
+            opacity: 1.0 - getFadeRatioBasedOnTime('{{ file.page.meta.date }}') / 2
+          })
+          .bindPopup(`
             <a style="font-weight:bold" href="{{ file.page.url }}">{{ file.page.title }}</a> 
-						<br/> <i>{{ file.page.meta.date }}</i>
-            <br/> {{file.page.meta.location.name}} 
-					{%- if file.page.meta.location.description %}
-						<br/> {{file.page.meta.location.description}}
-					{%- endif %}
-					{%- if file.page.meta.location.address %}
-						<br/> <a target="_new" href="https://www.openstreetmap.org/?mlat={{file.page.meta.location.latitude}}&mlon={{file.page.meta.location.longitude}}">{{file.page.meta.location.address}}</a> 
-					{%- endif %}
-						`);
-      myFGMarker.addLayer(marker);
-    }
-  {%- endif %}
-{%- endfor %}
-	map.addLayer(myFGMarker);
-	map.fitBounds(myFGMarker.getBounds(), {padding: [50, 50]});
+            <br/> <i>{{ file.page.meta.date }}</i>
+            <br/> {{ file.page.meta.location.name }}
+            {%- if file.page.meta.location.description %}
+              <br/> {{ file.page.meta.location.description }}
+            {%- endif %}
+            {%- if file.page.meta.location.address %}
+              <br/> <a target="_new" href="https://www.openstreetmap.org/?mlat={{ lat }}&mlon={{ lon }}">{{ file.page.meta.location.address }}</a> 
+            {%- endif %}
+          `);
+        myFGMarker.addLayer(marker);
+      }
+    {%- endif %}
+  {%- endfor %}
+
+  map.addLayer(myFGMarker);
+  if (myFGMarker.getLayers().length > 0) {
+    map.fitBounds(myFGMarker.getBounds(), {padding: [50, 50]});
+  }
 });
 </script>
 {% endblock %}

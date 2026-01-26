@@ -1,6 +1,7 @@
 ---
 authors:
-- Nick Merange, Brian Khuu
+- Nick Merange
+- Brian Khuu
 categories:
   - election
   - discussion
@@ -29,6 +30,8 @@ location:
 Do you want to address society's biggest issues but not sure where you'd start? Or, perhaps you're idealistic but struggle with concrete planning? Or maybe you just want to make a positive difference with others who also want the same?
 
 In this event, our special guest, Usha (with support from Nick) will use her expertise to guide participants in a workshop on how we can use Design Thinking to address an issue in society.
+
+<!-- more -->
 
 Attendees will be stepped through the process and come up with their own plan they could realistically implement to make their communities or the world a better place.
 
