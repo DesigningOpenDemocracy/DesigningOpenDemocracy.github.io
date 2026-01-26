@@ -8,10 +8,10 @@ created_at: 2025-12-07T13:41:03.675Z
 layout: post
 published: true
 location:
-  address: ""
-  latitude: 51.565005908877716
-  longitude: -360.15380859375006
-  name: ""
+  address: "London"
+  latitude: 51.52416337926387
+  longitude: -0.12081726547466985
+  name: "United Kingdom"
 ---
 
 Glad to see a political party in UK exploring this idea of sortition.
