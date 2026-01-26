@@ -41,6 +41,6 @@ There is also potential here for attendees to form a committed group to address 
 
 We have allowed 4 hours, but we will still half way for snacks (BYO) and a break.
 
-* RSVP via Eventbrite: https://www.eventbrite.com.au/e/workshop-using-design-thinking-to-improve-society-and-democracy-tickets-1981556009366?aff=oddtdtcreator
-* RSVP via Humanitix: https://events.humanitix.com/workshop-using-design-thinking-to-improve-society-and-democracy
-* RSVP via Meetup: https://www.meetup.com/designingopendemocracy/events/312969895/
+* [RSVP via Eventbrite](https://www.eventbrite.com.au/e/workshop-using-design-thinking-to-improve-society-and-democracy-tickets-1981556009366?aff=oddtdtcreator)
+* [RSVP via Humanitix](https://events.humanitix.com/workshop-using-design-thinking-to-improve-society-and-democracy)
+* [RSVP via Meetup](https://www.meetup.com/designingopendemocracy/events/312969895/)
