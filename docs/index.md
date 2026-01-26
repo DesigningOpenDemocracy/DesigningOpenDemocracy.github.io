@@ -40,9 +40,11 @@ If you have telegram you can also join our instant messaging chatroom:
 
 If you are in Melbourne Australia, you can join us in person via our meetup:
 
-[**Click to view next eventbright events**](https://www.eventbrite.com.au/o/designing-open-democracy-37465353433)
+[**Click to view next Humanitix events**](https://events.humanitix.com/host/designing-open-democracy)
 
-[**Click to view next meetup events**](https://www.meetup.com/DesigningOpenDemocracy/)
+[**Click to view next Eventbright events**](https://www.eventbrite.com.au/o/designing-open-democracy-37465353433)
+
+[**Click to view next Meetup events**](https://www.meetup.com/DesigningOpenDemocracy/)
 
 - [Time Zone
   converter](https://www.timeanddate.com/worldclock/converter.html?iso=20210515T020000&p1=70&p2=tz_aet)
