@@ -15,7 +15,7 @@ tags:
 title: Workshop - Using Design Thinking to Improve Society and Democracy
 location:
   name: 'Kensington Neighbourhood House'
-  description: 'https://www.kensingtonneighbourhoodhouse.com/'
+  description: 'Kensington Neighbourhood House is a community-managed charity, located at 89 McCracken St, Kensington.  https://www.kensingtonneighbourhoodhouse.com/'
   address: 89 McCracken St, Kensington, VIC 3000
   latitude: -37.793141642115636
   longitude: 144.9279294157909
