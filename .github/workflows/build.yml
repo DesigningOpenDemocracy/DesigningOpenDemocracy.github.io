@@ -7,11 +7,14 @@ on:
 jobs:
   build:
     name: build
+
     runs-on: ubuntu-latest
+
     steps:
     - uses: actions/checkout@v4
       with:
         submodules: true
+
     - name: Deploy docs
       uses: mhausenblas/mkdocs-deploy-gh-pages@master
       # Or use mhausenblas/mkdocs-deploy-gh-pages@nomaterial to build without the mkdocs-material theme
@@ -22,8 +25,16 @@ jobs:
         #EXTRA_PACKAGES: build-base
         # GITHUB_DOMAIN: github.myenterprise.com
         REQUIREMENTS: requirements.txt
+
     # share between different jobs
     - uses: actions/upload-artifact@v4
       with:
         name: site
         path: site/
+
+    # Display error log if npm build fails
+    - name: Print the latest npm log file
+      if: failure()
+      run: cat $(ls -t /home/runner/.npm/_logs/ | head -n 1)
+      working-directory: /home/runner/.npm/_logs/
+        
