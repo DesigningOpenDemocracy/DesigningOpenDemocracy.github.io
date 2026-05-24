@@ -1,5 +1,14 @@
 {% extends "main.html" %}
 {% block site_nav %}{% endblock %}
+{% block extrahead %}
+{{ super() }}
+<style>
+  /* No sidebar on homepage — suppress the drawer toggle so clicking the menu
+     button doesn't just gray out the page with nothing to show. */
+  .md-header__button[for="__drawer"],
+  .md-overlay { display: none !important; }
+</style>
+{% endblock %}
 {% block tabs %}
 {{ super() }}
 <section id="hero-container" class="mdx-container">

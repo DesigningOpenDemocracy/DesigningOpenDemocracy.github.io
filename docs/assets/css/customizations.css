@@ -269,3 +269,43 @@
     }
 }
 
+/*
+ * Lower the primary nav sidebar from Material's 76.25em (1220px) to 60em (960px).
+ * Material keeps the sidebar in drawer/overlay mode below 76.25em; these rules
+ * override the fixed-position drawer styles so the sidebar is sticky-inline
+ * on screens most users would consider "desktop width".
+ */
+@media screen and (min-width: 60em) {
+  [dir=ltr] .md-sidebar--primary { left: 0 !important; }
+  [dir=rtl] .md-sidebar--primary { right: 0 !important; }
+  .md-sidebar--primary {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    height: auto !important;
+    overflow: visible !important;
+    position: sticky !important;
+    top: 2.4rem !important;
+    transform: none !important;
+    z-index: 2 !important;
+  }
+  .md-sidebar--primary .md-sidebar__scrollwrap {
+    bottom: auto !important;
+    left: auto !important;
+    margin: 0 !important;
+    max-height: calc(100vh - 5rem);
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    position: relative !important;
+    right: auto !important;
+    top: auto !important;
+  }
+  [dir=ltr] .md-sidebar--primary:not([hidden]) ~ .md-content > .md-content__inner {
+    margin-left: 1.2rem !important;
+  }
+  [dir=rtl] .md-sidebar--primary:not([hidden]) ~ .md-content > .md-content__inner {
+    margin-right: 1.2rem !important;
+  }
+  .md-header__button[for="__drawer"] { display: none !important; }
+  .md-overlay { display: none !important; }
+}
+
