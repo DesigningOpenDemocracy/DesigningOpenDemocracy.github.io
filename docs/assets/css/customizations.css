@@ -39,15 +39,17 @@
 }
 
 #activity-map-container {
-    min-height:100vh; 
     background-color: rgba(255, 255, 255, 0.646);
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 3rem 1rem;
+    isolation: isolate; /* scope Leaflet z-indices so they don't bleed above the nav bar */
 }
 
 #activity-map-card {
     text-align: center;
+    width: 100%;
 }
 
 #activity-map-title {
@@ -60,7 +62,17 @@
 }
 
 .leaflet-container {
-	height: min(700px, 70vh);
-	width: min(900px, 100%);
+    height: min(600px, 60vh);
+    width: min(900px, 100%);
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    #activity-map-container {
+        padding: 1.5rem 0.5rem;
+    }
+    .leaflet-container {
+        height: 320px;
+    }
 }
 
