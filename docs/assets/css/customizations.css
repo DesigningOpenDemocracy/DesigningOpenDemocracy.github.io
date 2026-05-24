@@ -276,6 +276,17 @@
  * These overrides lower both thresholds to 60em (960px) so the top-bar tabs
  * and the inline sidebar both appear at normal desktop widths.
  */
+/* Organisation markers on the activity map */
+.org-map-icon {
+  background: none !important;
+  border: none !important;
+  font-size: 22px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @media screen and (min-width: 60em) {
   /* Show the top-bar tab navigation (Material hides it below 76.25em) */
   .md-tabs { display: block !important; }

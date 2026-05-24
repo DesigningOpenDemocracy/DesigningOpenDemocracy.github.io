@@ -23,6 +23,10 @@ Trustworthy public information is a precondition for informed democratic partici
 - Open source investigators (OSINT)
 - Computer programmers documenting technical decisions
 
+## Get involved
+
+If you're a journalist, researcher, or investigator and want to trial Stone, reach out to Austin via the [DOD Telegram](https://t.me/joinchat/HNk_UBX8A7jBPJPbAZU5Zg) or via Instagram below.
+
 ## Links
 
 - Website: [writeinstone.com](https://www.writeinstone.com)
