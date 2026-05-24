@@ -28,11 +28,6 @@
           {%- if file.page.meta.summary %}
           <p>{{ file.page.meta.summary }}</p>
           {%- endif %}
-          {%- if file.page.meta.contributors %}
-          <p class="project-card-contributors">
-            {%- for c in file.page.meta.contributors %}{{ c }}{% if not loop.last %}, {% endif %}{%- endfor %}
-          </p>
-          {%- endif %}
         </a>
         {%- endif %}
       {%- endfor %}
