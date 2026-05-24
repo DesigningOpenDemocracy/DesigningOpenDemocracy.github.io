@@ -9,15 +9,15 @@ def ask(question):
 
 # Generate front matter for the document
 def generate_front_matter(title, authors, summary, tags, date):
+    authors_list = "\n".join([f"- {a.strip()}" for a in authors.split(',')])
     tags_list = "\n".join([f"- {tag.strip()}" for tag in tags.split(',')])
-    # Escape double quotes in summary
     summary_escaped = summary.replace('"', '\\"')
     front_matter = (f"---\n"
                     f"authors:\n"
-                    f"- {authors}\n"
+                    f"{authors_list}\n"
                     f"categories: []\n"
                     f"date: {date} 00:00:00\n"
-                    f'summary: "{summary_escaped}"\n'  # Uses double quotes and escapes them in summary
+                    f'summary: "{summary_escaped}"\n'
                     f"tags:\n"
                     f"{tags_list}\n"
                     f"title: {title}\n"
