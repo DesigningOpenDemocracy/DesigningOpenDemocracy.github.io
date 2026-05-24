@@ -3,38 +3,51 @@ name: Mkdoc build
 on:
   push:
     branches: ["main"]
+  pull_request:
 
 jobs:
   build:
     name: build
-
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v4
-      with:
-        submodules: true
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
 
-    - name: Deploy docs
-      uses: mhausenblas/mkdocs-deploy-gh-pages@master
-      # Or use mhausenblas/mkdocs-deploy-gh-pages@nomaterial to build without the mkdocs-material theme
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        #CUSTOM_DOMAIN: optionaldomain.com
-        #CONFIG_FILE: mkdocs.yml
-        #EXTRA_PACKAGES: build-base
-        # GITHUB_DOMAIN: github.myenterprise.com
-        REQUIREMENTS: requirements.txt
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
 
-    # share between different jobs
-    - uses: actions/upload-artifact@v4
-      with:
-        name: site
-        path: site/
+      - name: Install dependencies
+        run: pip install -r requirements.txt
 
-    # Display error log if npm build fails
-    - name: Print the latest npm log file
-      if: failure()
-      run: cat $(ls -t /home/runner/.npm/_logs/ | head -n 1)
-      working-directory: /home/runner/.npm/_logs/
-        
+      - name: Build docs
+        run: mkdocs build
+
+      - uses: actions/upload-artifact@v4
+        if: github.ref == 'refs/heads/main'
+        with:
+          name: site
+          path: site/
+
+  deploy:
+    name: deploy
+    needs: build
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Deploy to GitHub Pages
+        run: mkdocs gh-deploy --force
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
