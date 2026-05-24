@@ -1,59 +1,25 @@
 ---
-title: Designing Open Democracy
+title: About
 contributors:
   - Charlie
 ---
 
-## About Designing Open Democracy
+Designing Open Democracy is an Australian-operated forum of process engineers, social architects, and philosophers exploring how technology, engineering, and the design of social systems can be applied to democracy at every level of society.
 
-[Designing Open Democracy](https://www.designingopendemocracy.com) is an
-Australian operated forum of process engineers, social architects and
-philosophers aiming to explore the ways that technology, engineering and
-design of social systems can be applied to every levels of society.
+We are **nonpartisan and agnostic** to any particular democratic approach. Our aim is to foster tighter consensus and collaboration between political parties, organisations, and individuals working toward a stronger, healthier democracy — without presuming any one system to be superior.
 
-We are nonpartisan and also agnostic to any particular democratic
-innovative approach, aiming to help foster tighter consensus and
-collaboration between all political parties and organisation towards a
-stronger and healthier democracy.
+→ *To get involved, see the [Community](community/community.md) page.*
 
-Designing Open Democracy will not presume any form of democratic system
-to be superior, but is a forum for discussion and practical planning on
-how such system may be implemented. In addition, this meetup will not be
-exclusive to any political party, but be a forum for members of various
-parties, groups and individuals to come together to trade ideas related
-to open democracy and evaluate their strengths and weaknesses.
+## Podcast
 
-### Podcast
+In-depth discussions on opportunities for reforming democratic institutions — from local organisations to national governments — through technology and other practices.
 
-In our podcast you will find detailed discussions in potential
-opportunities for reforming of existing democratic institutions; from
-local organisations to national governments around the world through
-technology or other practices. Our aim is to improve democracy: we think
-this can best be done by providing a forum for discussing democracy
-proposals, ideas, and to foster collaboration between people who would
-like to participate in democracy reform.
+Subscribe in your podcast app or find us on:
 
-You can subscribe to the podcast in your podcast app of choice, or on
-[Anchor.fm](https://anchor.fm/designingopendemocracy),
-[Spotify](https://open.spotify.com/show/4aOBVMKFEfgf03P6mNNZdw) or
-[Apple
-Podcasts](https://podcasts.apple.com/au/podcast/designing-open-democracy/id1492656241).
+- [Apple Podcasts](https://podcasts.apple.com/au/podcast/designing-open-democracy/id1492656241)
+- [Spotify](https://open.spotify.com/show/4aOBVMKFEfgf03P6mNNZdw)
+- [Anchor.fm](https://anchor.fm/designingopendemocracy)
 
-### Youtube Channel
+## YouTube
 
-We have a youtube channel where we post any videos recordings of meetings and events [Click here to browse our video list at YouTube](https://www.youtube.com/channel/UCqIo0VC_zHyPjzNKIafGJpg/featured)
-
-
-### Join the Discussion
-
-#### Meetup
-
-Check out our [Meetup page](https://www.designingopendemocracy.com) for
-events taking place online and in person in Melbourne, Australia.
-
-#### Telegram
-
-If you have the messaging app Telegram you can join our instant
-messaging chatroom. Click
-[here](https://t.me/joinchat/HNk_UBX8A7jBPJPbAZU5Zg) for an invite to
-our Telegram channel.
+Recorded meetups, talks, and events: [Designing Open Democracy on YouTube](https://www.youtube.com/channel/UCqIo0VC_zHyPjzNKIafGJpg/featured)
