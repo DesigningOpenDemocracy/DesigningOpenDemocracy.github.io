@@ -1,6 +1,7 @@
 ---
 title: DigiPol
 type: platform
+status: inactive
 country: AU
 website: https://digipol.app/
 summary: "An open-source Australian app that lets citizens browse, read, and vote on bills before the Federal Parliament."

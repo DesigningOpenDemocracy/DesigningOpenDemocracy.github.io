@@ -1,6 +1,7 @@
 ---
 title: PeopleCount
 type: platform
+status: inactive
 country: US
 website: https://peoplecount.org/
 summary: "A US civic technology project focused on restoring political accountability through structured many-to-many communication between citizens and representatives."

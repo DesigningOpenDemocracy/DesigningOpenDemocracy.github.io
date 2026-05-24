@@ -1,6 +1,7 @@
 ---
 title: Flux Party
 type: political-party
+status: deregistered
 country: AU
 website: https://voteflux.org/
 summary: "An Australian political party that uses Issue-Based Direct Democracy (IBDD) to let constituents direct how elected representatives vote in parliament."

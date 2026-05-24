@@ -1,6 +1,7 @@
 ---
 title: MiVote
 type: platform
+status: deregistered
 country: AU
 website: https://www.mivote.org.au/
 summary: "An Australian civic technology platform that provides citizens with balanced policy information and lets them register their preferences on issues before their representatives vote."
