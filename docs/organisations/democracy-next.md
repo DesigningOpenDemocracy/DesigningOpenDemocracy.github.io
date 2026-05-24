@@ -11,11 +11,11 @@ location:
   name: Copenhagen, Denmark
 ---
 
-DemocracyNext (demnext.org) is a research institute that takes a more radical position than most deliberative democracy organisations: it argues not just that citizens' assemblies are a useful complement to elected government, but that sortition should *replace* elections as the central mechanism of democratic governance.
+DemocracyNext (demnext.org) is a research institute whose position is that sortition should *replace* elections as the central mechanism of democratic governance — not merely complement them. This distinguishes it from organisations that treat citizens' assemblies as an add-on to existing representative systems.
 
-The institute publishes research, convenes practitioners and theorists, and develops the intellectual case for sortition-based democracy — drawing on ancient Athenian practice, modern complexity theory, and the accumulated evidence from contemporary citizens' assemblies. It engages seriously with both the theory (why sortition would be more legitimate and effective than elections) and the design questions (how you actually build stable institutions around random selection).
+The institute publishes research, convenes practitioners and theorists, and develops the intellectual case for sortition-based democracy — drawing on ancient Athenian practice, modern complexity theory, and the accumulated evidence from contemporary citizens' assemblies. It engages with both the theoretical questions (legitimacy, representation, deliberation quality) and the design questions (how to build stable institutions around random selection).
 
-For anyone thinking seriously about structural democratic alternatives rather than just incremental reform, DemocracyNext is a key reference.
+DemocracyNext is a useful reference for understanding the strongest case for sortition as a primary governance mechanism, as distinct from its use as a supplementary or advisory tool.
 
 ## Links
 
