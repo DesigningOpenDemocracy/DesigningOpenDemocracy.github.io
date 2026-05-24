@@ -3,7 +3,7 @@ title: DigiPol
 type: platform
 status: inactive
 country: AU
-website: https://digipol.app/
+website: https://web.archive.org/web/*/https://digipol.app/
 summary: "An open-source Australian app that lets citizens browse, read, and vote on bills before the Federal Parliament."
 contributors:
   - BrianKhuu
@@ -29,4 +29,4 @@ Source code: [github.com/voteflux](https://github.com/voteflux)
 
 ## Links
 
-- Website: [digipol.app](https://digipol.app/)
+- Website: [digipol.app](https://web.archive.org/web/*/https://digipol.app/) *(archived)*

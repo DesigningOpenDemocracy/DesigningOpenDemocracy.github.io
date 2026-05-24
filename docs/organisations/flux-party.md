@@ -3,7 +3,7 @@ title: Flux Party
 type: political-party
 status: deregistered
 country: AU
-website: https://voteflux.org/
+website: https://web.archive.org/web/*/https://voteflux.org/
 summary: "An Australian political party that uses Issue-Based Direct Democracy (IBDD) to let constituents direct how elected representatives vote in parliament."
 contributors:
   - Charlie
@@ -21,7 +21,7 @@ Constituents use the Flux app to vote on policy issues. Each user is allocated a
 
 ## Links
 
-- Website: [voteflux.org](https://voteflux.org/)
+- Website: [voteflux.org](https://web.archive.org/web/*/https://voteflux.org/) *(archived)*
 - Wikipedia: [Flux (political party)](https://en.wikipedia.org/wiki/Flux_(political_party))
 
 ## Podcast

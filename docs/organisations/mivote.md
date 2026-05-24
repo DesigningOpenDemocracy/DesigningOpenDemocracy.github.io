@@ -3,7 +3,7 @@ title: MiVote
 type: platform
 status: deregistered
 country: AU
-website: https://www.mivote.org.au/
+website: https://web.archive.org/web/*/https://www.mivote.org.au/
 summary: "An Australian civic technology platform that provides citizens with balanced policy information and lets them register their preferences on issues before their representatives vote."
 contributors:
   - BrianKhuu
@@ -19,4 +19,4 @@ Presenting multiple perspectives before asking for a vote addresses a genuine we
 
 ## Links
 
-- Website: [mivote.org.au](https://www.mivote.org.au/)
+- Website: [mivote.org.au](https://web.archive.org/web/*/https://www.mivote.org.au/) *(archived)*
