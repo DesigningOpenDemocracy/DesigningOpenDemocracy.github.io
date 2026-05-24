@@ -23,3 +23,7 @@ It is intended to evolve over time as the ideas are tested and refined.
 **v1.2** — May 2026
 
 See the [full toolkit](https://www.designingopendemocracy.com/Civics-Ecosystem-Toolkit/01-civics-ecosystem-toolkit-index.html) for the complete set of documents.
+
+## Get involved
+
+Read the toolkit and share feedback — the ideas here are meant to be stress-tested. Reach out to Brian via the [DOD Telegram](https://t.me/joinchat/HNk_UBX8A7jBPJPbAZU5Zg) if you want to discuss or collaborate.

@@ -8,13 +8,16 @@ contributors:
   - Aya.elfadil
 ---
 
-The goal of the Content Creation Project is to have short/summarized
-articles on important/core topics. Articles should be factual in nature
-and provide references when possible. Where possible, a section telling
-people how they can get involved should be present. Any website can be
-used to get information (doesn't have to be just Wikipedia)'
+The goal is to build short, factual articles on core democracy topics — accessible to anyone, not just specialists. Articles should provide references where possible.
 
-Charlie's Trello: <https://trello.com/b/P5xdCf43/open-democracy-wiki>
+## Get involved
+
+Pick a topic below that interests you and write a short article (a few paragraphs with references is enough to start). Then either:
+
+- [Open a pull request](https://github.com/DesigningOpenDemocracy/DesigningOpenDemocracy.github.io) directly on the wiki, or
+- Post a draft in the [DOD Telegram](https://t.me/joinchat/HNk_UBX8A7jBPJPbAZU5Zg) and someone can help you publish it
+
+Topic tracking: <https://trello.com/b/P5xdCf43/open-democracy-wiki>
 
 Here are some initial ideas for content (open to suggestions):
 
