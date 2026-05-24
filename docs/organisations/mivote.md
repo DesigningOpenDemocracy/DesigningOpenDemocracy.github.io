@@ -8,7 +8,7 @@ contributors:
   - BrianKhuu
 ---
 
-MiVote is an Australian civic technology initiative founded by Thomas Ivey. The platform is designed to sit between citizens and their elected representatives — giving people a structured way to engage with policy issues rather than waiting for the next election cycle.
+MiVote was an Australian civic technology initiative founded by Thomas Ivey. The platform was designed to sit between citizens and their elected representatives — giving people a structured way to engage with policy issues rather than waiting for the next election cycle. The organisation has since deregistered.
 
 ## How It Works
 
