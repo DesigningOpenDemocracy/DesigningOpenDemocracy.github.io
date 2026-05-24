@@ -1,7 +1,7 @@
 ---
 title: ElectionDates.org
-status: active
-summary: "A crowdsourced website to make it easy to find and share the next election date for any country."
+status: mothballed
+summary: "A crowdsourced website to make it easy to find and share the next election date for any country. The project is currently mothballed."
 contributors:
   - BrianKhuu
   - Usmaan
