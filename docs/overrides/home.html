@@ -15,6 +15,30 @@
       </div>
   </div>
 </section>
+<!-- Active Projects -->
+<section id="projects-container" class="mdx-container">
+  <div id="projects-card" class="mdx-hero md-typeset">
+    <h1 id="projects-title">Active Projects</h1>
+    <p id="projects-subtitle">What our members are building</p>
+    <div id="projects-grid">
+      {%- for file in pages %}
+        {%- if file.page and file.page.meta.status == 'active' %}
+        <a class="project-card" href="{{ file.page.url }}">
+          <h3>{{ file.page.title }}</h3>
+          {%- if file.page.meta.summary %}
+          <p>{{ file.page.meta.summary }}</p>
+          {%- endif %}
+          {%- if file.page.meta.contributors %}
+          <p class="project-card-contributors">
+            {%- for c in file.page.meta.contributors %}{{ c }}{% if not loop.last %}, {% endif %}{%- endfor %}
+          </p>
+          {%- endif %}
+        </a>
+        {%- endif %}
+      {%- endfor %}
+    </div>
+  </div>
+</section>
 <!-- Activity Map (The idea is we cover the last few years of activities) (And potentially the future?) -->
 <section id="activity-map-container" class="mdx-container">
   <div id="activity-map-card" class="mdx-hero md-typeset">

@@ -38,6 +38,69 @@
     color: #000000b0;
 }
 
+#projects-container {
+    background-color: rgba(245, 245, 255, 0.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 1rem;
+}
+
+#projects-card {
+    text-align: center;
+    width: 100%;
+    max-width: 1100px;
+}
+
+#projects-title {
+    color: #3949ab;
+    font-size: 46px;
+}
+
+#projects-subtitle {
+    color: #000000b0;
+}
+
+#projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    text-align: left;
+}
+
+.project-card {
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.project-card:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    transform: translateY(-2px);
+}
+
+.project-card h3 {
+    color: #3949ab;
+    margin-top: 0;
+}
+
+.project-card p {
+    flex: 1;
+}
+
+.project-card-contributors {
+    margin-top: 1rem;
+    font-size: 0.8em;
+    color: #888;
+}
+
 #activity-map-container {
     background-color: rgba(255, 255, 255, 0.646);
     display: flex;
