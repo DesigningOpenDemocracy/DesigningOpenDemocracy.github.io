@@ -5,6 +5,10 @@ status: active
 country: UK
 website: https://www.sortitionfoundation.org
 summary: "A UK-based organisation advocating for the use of random selection (sortition) in democratic institutions, most prominently campaigning to replace the House of Lords with a randomly selected citizens' chamber."
+location:
+  latitude: 55.9533
+  longitude: -3.1883
+  name: Edinburgh, United Kingdom
 ---
 
 The Sortition Foundation is the UK's leading organisation specifically dedicated to sortition — the selection of decision-makers by random lot rather than election. Their flagship campaign is the **House of Citizens**: replacing the appointed House of Lords with a chamber of randomly selected citizens who serve fixed, non-renewable terms.

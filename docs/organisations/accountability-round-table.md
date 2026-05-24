@@ -5,6 +5,10 @@ status: active
 country: AU
 website: http://accountabilityrt.org
 summary: "A non-partisan Australian group of citizens — academics, lawyers, politicians, journalists — working to improve standards of accountability, transparency, and democratic integrity in Australian governments."
+location:
+  latitude: -37.8136
+  longitude: 144.9631
+  name: Melbourne, Australia
 ---
 
 The Accountability Round Table is a non-partisan coalition of professionals with backgrounds across academia, law, politics, and journalism. Its focus is on the structural conditions that allow democratic accountability to function: transparency laws, integrity commissions, ministerial conduct standards, and parliamentary oversight.

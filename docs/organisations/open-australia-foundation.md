@@ -5,6 +5,10 @@ status: active
 country: AU
 website: https://www.openaustraliafoundation.org.au
 summary: "An Australian civic technology charity building tools that help citizens understand and engage with their parliament and government."
+location:
+  latitude: -33.8688
+  longitude: 151.2093
+  name: Sydney, Australia
 ---
 
 The OpenAustralia Foundation is a non-partisan charity whose work centres on making Australian parliamentary and government information accessible and usable. They build and maintain several well-known tools:

@@ -5,6 +5,10 @@ status: active
 country: US
 website: https://healthydemocracy.org
 summary: "A US non-profit that designs and runs Citizens' Initiative Reviews — structured deliberative processes where randomly selected citizens evaluate ballot measures and publish findings for the wider electorate."
+location:
+  latitude: 45.5231
+  longitude: -122.6765
+  name: Portland, Oregon, USA
 ---
 
 Healthy Democracy developed and institutionalised the **Citizens' Initiative Review** (CIR) — a process in which a randomly selected, representative panel of citizens spends several days intensively studying a ballot measure: hearing from proponents and opponents, questioning experts, and deliberating together. The panel's findings — a balanced statement of key arguments and evidence — are then published in the official voter's guide sent to all voters before the election.

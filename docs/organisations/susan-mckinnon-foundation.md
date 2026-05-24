@@ -5,6 +5,10 @@ status: active
 country: AU
 website: https://www.susanmckinnon.org.au
 summary: "A non-partisan Australian foundation working across all sides of politics to find common ground and practical pathways on major national challenges, with a focus on democratic and public sector reform."
+location:
+  latitude: -37.8136
+  longitude: 144.9631
+  name: Melbourne, Australia
 ---
 
 The Susan McKinnon Foundation is a private philanthropic foundation focused on strengthening Australian democracy and governance. It funds and supports work on electoral reform, parliamentary integrity, public sector capability, and cross-party collaboration.

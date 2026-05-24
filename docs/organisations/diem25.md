@@ -5,6 +5,10 @@ status: active
 country: EU
 website: https://diem25.org
 summary: "A pan-European political movement founded by Yanis Varoufakis in 2016, calling for radical democratisation of EU institutions through transparency, a transnational constitutional assembly, and coordinated progressive politics across member states."
+location:
+  latitude: 50.8503
+  longitude: 4.3517
+  name: Brussels, Belgium
 ---
 
 DiEM25 (Democracy in Europe Movement 2025) was founded by economist and former Greek Finance Minister Yanis Varoufakis in 2016, with the stated goal of democratising the European Union before it disintegrated — the "2025" being an original deadline, since passed. The movement has since evolved into a sustained transnational political organisation with chapters across Europe and affiliated national parties (MERA25 in Greece, and others).

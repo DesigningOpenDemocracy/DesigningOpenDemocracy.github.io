@@ -113,8 +113,43 @@ document.addEventListener("DOMContentLoaded", function() {
   {%- endfor %}
 
   map.addLayer(myFGMarker);
-  if (myFGMarker.getLayers().length > 0) {
-    map.fitBounds(myFGMarker.getBounds(), {padding: [50, 50]});
+
+  // Organisation markers — active orgs with location data
+  var orgIcon = L.divIcon({
+    html: '🏛️',
+    className: 'org-map-icon',
+    iconSize: [28, 28],
+    iconAnchor: [14, 14],
+    popupAnchor: [0, -14]
+  });
+  var orgMarkers = new L.FeatureGroup();
+
+  {%- for file in pages %}
+    {%- if file.page and file.page.meta.location and file.page.meta.location.latitude and file.page.meta.location.longitude and file.page.meta.type and file.page.meta.status == 'active' %}
+      {
+        var marker = L.marker(
+          [{{ file.page.meta.location.latitude }}, {{ file.page.meta.location.longitude }}],
+          { icon: orgIcon }
+        ).bindPopup(`
+          <a style="font-weight:bold" href="{{ file.page.url }}">{{ file.page.title }}</a>
+          <br/><i>{{ file.page.meta.type }}{% if file.page.meta.country %} · {{ file.page.meta.country }}{% endif %}</i>
+          {%- if file.page.meta.location.name %}
+            <br/>{{ file.page.meta.location.name }}
+          {%- endif %}
+          {%- if file.page.meta.website %}
+            <br/><a target="_blank" href="{{ file.page.meta.website }}">Website ↗</a>
+          {%- endif %}
+        `);
+        orgMarkers.addLayer(marker);
+      }
+    {%- endif %}
+  {%- endfor %}
+
+  map.addLayer(orgMarkers);
+
+  var allLayers = myFGMarker.getLayers().concat(orgMarkers.getLayers());
+  if (allLayers.length > 0) {
+    map.fitBounds(L.featureGroup(allLayers).getBounds(), {padding: [50, 50]});
   }
 });
 </script>

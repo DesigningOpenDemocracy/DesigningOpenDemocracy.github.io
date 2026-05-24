@@ -5,6 +5,10 @@ status: active
 country: AU
 website: https://www.newdemocracy.com.au
 summary: "An independent, non-partisan Australian research and development organisation that designs and runs real-world deliberative democracy trials using randomly selected citizens."
+location:
+  latitude: -33.8688
+  longitude: 151.2093
+  name: Sydney, Australia
 ---
 
 newDemocracy is one of Australia's most active organisations in the deliberative democracy space. It conducts real-world trials using random selection and deliberation — the jury model — to show that citizens, given good information and time to deliberate, can reach considered decisions on complex public issues.

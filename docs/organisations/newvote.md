@@ -5,6 +5,10 @@ status: active
 country: AU
 website: https://newvote.org
 summary: "An Australian civic technology institute combining direct, deliberative, and representative democracy — empowering people on specific issues and surfacing the informed 'will of the people' to elected governments."
+location:
+  latitude: -27.4698
+  longitude: 153.0251
+  name: Brisbane, Australia
 ---
 
 NewVote is built on a simple philosophy: the world is better when everyone is empowered. The institute uses technology to operate across three democratic modes simultaneously:

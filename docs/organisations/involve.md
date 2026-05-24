@@ -5,6 +5,10 @@ status: active
 country: UK
 website: https://www.involve.org.uk
 summary: "A UK charity that develops and promotes public participation and deliberative democracy, advising governments on how to design and run genuine engagement processes."
+location:
+  latitude: 51.5074
+  longitude: -0.1278
+  name: London, United Kingdom
 ---
 
 Involve is a UK charity at the intersection of research and practice in public participation. They work with governments, public institutions, and communities to design participation processes that actually influence decisions — as opposed to the tokenistic consultation that often passes for engagement.
