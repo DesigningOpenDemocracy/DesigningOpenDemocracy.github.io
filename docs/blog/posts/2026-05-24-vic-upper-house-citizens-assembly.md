@@ -11,18 +11,20 @@ tags:
   - Victoria
   - Australia
   - Proportional Representation
-title: "Victorian Democrats propose a citizens' assembly to reform the Upper House"
-summary: "The AES 2025 found only 32% of Australians trust government — and 48% now support a citizens' assembly. A new Victorian Democrats policy takes that seriously."
+title: "Victoria's Upper House inquiry: the case for a citizens' assembly"
+summary: "A recent Victorian parliamentary inquiry recommended using a citizens' assembly to decide Upper House electoral reform. The AES 2025 shows 48% of Australians now support the idea."
 ---
 
-The 2025 Australian Election Study found that only 32% of Australians trust government. When asked about reform options, the most popular was a **citizens' assembly** — a body of randomly selected citizens who deliberate on important policy issues. 48% of respondents supported the idea, with only 20% opposed.
+In December 2025 the Victorian parliament completed an inquiry into the state's Upper House electoral system. Among its findings: it recommended that any reform process should involve either an expert panel, a **citizens' assembly**, or a constitutional convention before putting changes to a referendum.
 
 <!-- more -->
 
-The Victorian Democrats have put forward a policy that takes this seriously: use a citizens' assembly of 50–100 Victorians to decide how the state's Upper House should be reformed, before putting the outcome to a referendum.
+The backdrop is a significant decline in public trust. The 2025 Australian Election Study found only 32% of Australians trust government. When surveyed on reform options, the most popular was a citizens' assembly — a body of randomly selected citizens who deliberate on policy issues — with 48% support and only 20% opposed.
 
-The Victorian parliament recently completed an inquiry into Upper House electoral reform. The most supported option among inquiry respondents was moving to statewide proportional representation (rather than the current eight regional seats), which would lower the election quota from 16.7% to around 2.4% — making it easier for minor parties and independents to win seats.
+The inquiry itself considered two main electoral options, both involving moving to statewide proportional representation rather than the current eight regional seats. The most supported option among inquiry respondents would lower the election quota from 16.7% to 2.4%, making it substantially easier for minor parties and independents to win seats.
 
-The proposal is notable not just for what it advocates (PR), but for *how* it proposes to get there — using a citizens' assembly as the decision-making process itself.
+What's notable here is the *process* question as much as the *outcome* question: the inquiry explicitly recommended a citizens' assembly as a legitimate mechanism for deciding how to reform elections. That's a meaningful shift in how deliberative democracy is being discussed at the institutional level in Australia.
 
-Full policy: [Make Victoria's Upper House the Citizens' House of Review](https://vic.democrats.org.au/manifesto/1sVFDKLAfCkso1djRdablw/make-victoria-s-upper-house-the-citizens-house-of-review)
+**Further reading:**
+- [Victorian Upper House Electoral System Inquiry](https://www.parliament.vic.gov.au/lc-ec/inquiry-into-victorias-upper-house-electoral-system/) — Parliament of Victoria, December 2025
+- [Victorian Democrats policy position](https://vic.democrats.org.au/manifesto/1sVFDKLAfCkso1djRdablw/make-victoria-s-upper-house-the-citizens-house-of-review) — one of the party submissions citing the same evidence
