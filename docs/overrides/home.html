@@ -20,7 +20,7 @@
   <div id="activity-map-card" class="mdx-hero md-typeset">
     <h1 id="activity-map-title">Activity Map</h1>
     <p id="activity-map-subtitle">Map of recent activities</p>
-    <div class="leaflet-container" id="map" style="width: 800px; height: 700px; margin: 0;"></div>
+    <div class="leaflet-container" id="map"></div>
   </div>
 </section>
 <script>
@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <br/> {{ file.page.meta.location.description }}
             {%- endif %}
             {%- if file.page.meta.location.address %}
-              <br/> <a target="_new" href="https://www.openstreetmap.org/?mlat={{ lat }}&mlon={{ lon }}">{{ file.page.meta.location.address }}</a> 
+              <br/> <a target="_new" href="https://www.openstreetmap.org/?mlat={{ file.page.meta.location.latitude }}&mlon={{ file.page.meta.location.longitude }}">{{ file.page.meta.location.address }}</a>
             {%- endif %}
           `);
         myFGMarker.addLayer(marker);
