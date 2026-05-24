@@ -1,0 +1,271 @@
+.center {
+    display: block;
+    margin: 0 auto;
+}
+
+.text-blue {
+    color: #49a7e9;
+}
+
+.text-black {
+    color: #000000;
+}
+
+/****************************************/
+/* Project status badges */
+
+.project-status-badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.75em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+}
+
+.project-status-badge.status-active     { background: #e6f4ea; color: #2e7d32; }
+.project-status-badge.status-mothballed { background: #fff3e0; color: #e65100; }
+.project-status-badge.status-cancelled  { background: #f5f5f5; color: #757575; }
+
+/* Projects index page */
+
+.projects-index-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.project-index-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    text-decoration: none;
+    color: inherit;
+    transition: box-shadow 0.2s;
+}
+
+.project-index-card:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-index-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.project-index-card-title {
+    font-weight: 600;
+}
+
+.project-index-card p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* Individual project page metadata box */
+
+.project-meta-box {
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1.5rem;
+    background: rgba(0, 0, 0, 0.02);
+}
+
+.project-meta-box table {
+    margin: 0;
+}
+
+.project-meta-box th {
+    width: 7em;
+    font-weight: 600;
+    color: #555;
+    padding: 0.2rem 0.75rem 0.2rem 0;
+}
+
+/****************************************/
+
+#hero-container {
+    min-height:100vh; 
+    background-color: rgba(255, 255, 255, 0.90);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-card {
+    text-align: center;
+}
+
+#hero-logo {
+    padding: 1em;
+}
+
+#hero-title {
+    color: #49a7e9;
+    font-size: 46px;
+}
+
+#hero-subtitle {
+    color: #000000b0;
+}
+
+#projects-container {
+    background-color: rgba(245, 245, 255, 0.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 1rem;
+}
+
+#projects-card {
+    text-align: center;
+    width: 100%;
+    max-width: 1100px;
+}
+
+#projects-title {
+    color: #3949ab;
+    font-size: 46px;
+}
+
+#projects-subtitle {
+    color: #000000b0;
+}
+
+#projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    text-align: left;
+}
+
+.project-card {
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.project-card:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    transform: translateY(-2px);
+}
+
+.project-card h3 {
+    color: #3949ab;
+    margin-top: 0;
+}
+
+.project-card p {
+    flex: 1;
+}
+
+.project-card-contributors {
+    margin-top: 1rem;
+    font-size: 0.8em;
+    color: #888;
+}
+
+#activity-map-container {
+    background-color: rgba(255, 255, 255, 0.646);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 1rem;
+    isolation: isolate; /* scope Leaflet z-indices so they don't bleed above the nav bar */
+}
+
+#activity-map-card {
+    text-align: center;
+    width: 100%;
+}
+
+#activity-map-title {
+    color: #d24f2e;
+    font-size: 46px;
+}
+
+#activity-map-subtitle {
+    color: #000000b0;
+}
+
+#map-wrapper {
+    position: relative;
+    width: min(900px, 100%);
+    margin: 0 auto;
+}
+
+.leaflet-container {
+    height: min(600px, 60vh);
+    width: 100%;
+}
+
+#map-expand-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 500;
+    background: white;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 1;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#map-wrapper.is-expanded {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9000;
+    margin: 0;
+    background: #fff;
+}
+
+#map-wrapper.is-expanded .leaflet-container {
+    height: 100vh;
+    width: 100vw;
+}
+
+@media (min-width: 1400px) {
+    #map-wrapper {
+        width: 100%;
+        max-width: 1400px;
+    }
+    .leaflet-container {
+        height: min(750px, 70vh);
+    }
+}
+
+@media (max-width: 768px) {
+    #activity-map-container {
+        padding: 1.5rem 0.5rem;
+    }
+    .leaflet-container {
+        height: 320px;
+    }
+}
+
