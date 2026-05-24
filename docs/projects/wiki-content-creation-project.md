@@ -1,5 +1,6 @@
 ---
 title: Wiki Content Creation Project
+template: project.html
 status: active
 summary: "Building short, factual articles on core democracy topics so the wiki is accessible to everyone."
 contributors:
