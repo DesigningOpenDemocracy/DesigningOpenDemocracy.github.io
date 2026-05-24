@@ -5,6 +5,12 @@ title: Concepts
 
 A reference collection of concepts relevant to open democracy — from foundational ideas to specific mechanisms and organisational forms.
 
+## Democratic theory and critique
+
+| Article | Summary |
+|---|---|
+| [Accountability Sink](accountability-sink.md) | Structural feature of organisations that absorbs consequences so no one can be held responsible — and why it matters for democratic design |
+
 ## Core democracy concepts
 
 | Article | Summary |
