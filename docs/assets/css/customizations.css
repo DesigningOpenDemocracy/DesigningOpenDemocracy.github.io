@@ -67,6 +67,14 @@
     margin: 0 auto;
 }
 
+@media (min-width: 1400px) {
+    .leaflet-container {
+        height: min(750px, 70vh);
+        width: 100%;
+        max-width: 1400px;
+    }
+}
+
 @media (max-width: 768px) {
     #activity-map-container {
         padding: 1.5rem 0.5rem;
