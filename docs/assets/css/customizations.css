@@ -269,3 +269,49 @@
     }
 }
 
+/*
+ * Material for MkDocs treats anything below 76.25em (1220px) as "mobile":
+ * the tab bar disappears and navigation collapses into a hamburger drawer.
+ * That breakpoint is far too wide — most laptops are 1024–1280px.
+ * These overrides lower both thresholds to 60em (960px) so the top-bar tabs
+ * and the inline sidebar both appear at normal desktop widths.
+ */
+@media screen and (min-width: 60em) {
+  /* Show the top-bar tab navigation (Material hides it below 76.25em) */
+  .md-tabs { display: block !important; }
+
+  /* Reset the primary sidebar from fixed-position drawer to sticky-inline */
+  [dir=ltr] .md-sidebar--primary { left: 0 !important; }
+  [dir=rtl] .md-sidebar--primary { right: 0 !important; }
+  .md-sidebar--primary {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    height: auto !important;
+    overflow: visible !important;
+    position: sticky !important;
+    top: 2.4rem !important;
+    transform: none !important;
+    z-index: 2 !important;
+  }
+  .md-sidebar--primary .md-sidebar__scrollwrap {
+    bottom: auto !important;
+    left: auto !important;
+    margin: 0 !important;
+    max-height: calc(100vh - 5rem);
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    position: relative !important;
+    right: auto !important;
+    top: auto !important;
+  }
+  [dir=ltr] .md-sidebar--primary:not([hidden]) ~ .md-content > .md-content__inner {
+    margin-left: 1.2rem !important;
+  }
+  [dir=rtl] .md-sidebar--primary:not([hidden]) ~ .md-content > .md-content__inner {
+    margin-right: 1.2rem !important;
+  }
+  /* Hamburger no longer needed at desktop widths */
+  .md-header__button[for="__drawer"] { display: none !important; }
+  .md-overlay { display: none !important; }
+}
+
