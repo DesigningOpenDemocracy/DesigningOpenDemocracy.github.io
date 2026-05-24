@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", function() {
   var myFGMarker = new L.FeatureGroup();
 
   {%- for file in pages %}
-    {%- if file.page.meta.location and file.page.meta.location.latitude and file.page.meta.location.longitude %}
+    {%- if file.page and file.page.url.startswith('blog/') and file.page.meta.location and file.page.meta.location.latitude and file.page.meta.location.longitude %}
       {
         var marker = L.marker([{{ file.page.meta.location.latitude }}, {{ file.page.meta.location.longitude }}], {
             opacity: 1.0 - getFadeRatioBasedOnTime('{{ file.page.meta.date }}') / 2
