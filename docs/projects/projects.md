@@ -1,7 +1,8 @@
+---
+title: Projects
+template: projects.html
+---
+
 # Projects
 
-Within Designing Open Democracy, members may work on various different democracy related projects.
-
-Some of the active projects are shown below in addition to how you can participate in it.
-
-If interested in any of these projects then join our telegram channel shown in our discussion page to learn how you can work on it.
+Members of Designing Open Democracy work on various democracy-related projects. Below is a full record of projects past and present — join our [Telegram channel](https://t.me/joinchat/HNk_UBX8A7jBPJPbAZU5Zg) if you'd like to get involved in any active ones.
