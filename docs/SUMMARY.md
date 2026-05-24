@@ -9,7 +9,7 @@
         - projects/*.md
 - [Concepts](concepts/concepts.md)
     - concepts/*.md
-- [Organisations](organisations/organisations.md)
+- [Democracy Landscape](organisations/organisations.md)
     - organisations/*.md
 - [Research](research/research.md)
     - research/*.md
