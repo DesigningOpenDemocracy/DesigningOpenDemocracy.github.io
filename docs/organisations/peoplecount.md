@@ -13,7 +13,7 @@ PeopleCount is a civic technology project created by Rand Strauss, focused on US
 
 The proposed solution is a web-based communication system designed for many-to-many interaction between citizens and elected officials, as opposed to the one-to-many broadcast model of media or the one-to-few model of petitions and letters.
 
-As of late 2020 the system was still in development, maintained as a solo volunteer project. The project has an entry on [Participedia.net](https://participedia.net/organization/7126).
+The project represents years of independent research and development by Rand Strauss into the structural requirements for democratic accountability. It has an entry on [Participedia.net](https://participedia.net/organization/7126).
 
 ## Links
 

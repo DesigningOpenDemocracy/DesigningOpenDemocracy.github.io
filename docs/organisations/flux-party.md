@@ -12,7 +12,7 @@ contributors:
 
 Flux is an Australian political party built around the concept of Issue-Based Direct Democracy (IBDD). Rather than a representative voting on their own judgement, Flux aims to have elected members vote in parliament according to the aggregated preferences of their constituents, as expressed through a digital platform.
 
-The party was founded by Max Kaye and Nathan Spataro. It has fielded Senate candidates in multiple federal elections and has also operated at the state level. The AEC deregistered the federal party in 2022 due to a decline in registered membership, though state branches have continued activity.
+The party was founded by Max Kaye and Nathan Spataro. It fielded Senate candidates in multiple federal elections and operated at the state level, demonstrating a practical electoral model for IBDD and contributing significantly to public awareness of direct democracy alternatives.
 
 ## How IBDD Works
 

@@ -14,7 +14,7 @@ MiVote is an Australian civic technology initiative founded by Thomas Ivey. The 
 
 Before a policy vote occurs in parliament, MiVote presents users with information on the issue from multiple perspectives, attempting to give a balanced view rather than advocating a position. Users then register their own preference. The aggregated results are made visible, giving citizens and their representatives a clearer picture of public sentiment on specific issues.
 
-The platform's focus on presenting multiple perspectives before asking for a vote is intended to address the concern that raw polling or petition systems can amplify misinformed or reactive responses.
+Presenting multiple perspectives before asking for a vote addresses a genuine weakness of raw polling — the tendency to capture reactive rather than considered opinions.
 
 ## Links
 
