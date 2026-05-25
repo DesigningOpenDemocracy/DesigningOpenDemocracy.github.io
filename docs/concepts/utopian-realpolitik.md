@@ -2,18 +2,15 @@
 title: Utopian Realpolitik
 ---
 
-A working disposition for democracy practitioners who engage across political systems with fundamentally different conceptions of what democracy is — holding idealistic long-term goals while operating pragmatically and in good faith with the systems that actually exist.
+The disposition of continuing to push for idealistic goals even when conventional game theory says the odds are against you — because history shows that the odds can be wrong.
 
-The tension is real: if you only engage with systems that already share your democratic values, you are not doing much. But if you engage uncritically with systems that instrumentalise democratic language to legitimise control, you risk lending credibility to something you don't endorse. *Utopian realpolitik* is the attempt to navigate this — finding genuine areas of common ground (anti-corruption, transparency, civic participation, institutional competence) without pretending that fundamental differences don't exist.
+This is not a concept owned by the democracy space. It describes a recurring pattern in social change movements more broadly: activists sustaining pressure toward goals that contemporaries consider impossible or impractical, and occasionally being proven right on a civilisational scale. The abolition of slavery is the clearest example — by any contemporaneous rational calculation, abolitionists were pushing against entrenched economic interests, legal structures, and political majorities. The conventional game-theoretic answer was to accommodate or incrementalise. History vindicated the idealists. The same pattern appears in universal suffrage, decolonisation, the end of apartheid, and other transformations once considered structurally impossible.
 
-This is distinct from both naive universalism (assuming all systems want the same thing and just need help getting there) and cynical realpolitik (accepting that power is power and democratic values are just rhetoric). It requires:
+The lesson is not that idealism always wins — it often doesn't, and the cost is borne by the people who push hardest. The lesson is that game theory assumes fixed preferences and stable power structures, and social movements can *change* what is valued and what is structurally possible. The long game is real, and writing it off prematurely is itself a political choice.
 
-- **Good faith engagement** — treating interlocutors in other systems as genuinely believing in their own model, not just performing it
-- **Identifying real overlap** — areas where goals converge regardless of ideological framing (e.g., reducing corruption benefits citizens under most systems)
-- **Honest disagreement** — being clear about where your model and theirs diverge, rather than papering over it
-- **Long-horizon thinking** — accepting that change across systems is slow, non-linear, and often indirect
+In the context of **democracy work specifically**, this shapes how practitioners engage across political systems with fundamentally different conceptions of what democracy means. The tension: if you only engage with systems that already share your values, you achieve little. But if you engage uncritically with systems that use democratic language to legitimise control, you risk lending credibility to something you don't endorse. Utopian realpolitik is the attempt to navigate this — finding genuine areas of common ground (anti-corruption, transparency, civic participation) without pretending that fundamental disagreements don't exist, and without abandoning the long-horizon goal.
 
-The concept is relevant wherever democracy workers, researchers, or civic technologists engage across the liberal-democratic / authoritarian / hybrid-regime spectrum — international election monitoring, civic tech transfer, deliberative democracy facilitation in non-democratic contexts, or simply documenting organisations like the [CPPCC](../organisations/cppcc.md) and [China Democratic League](../organisations/china-democratic-league.md) honestly as part of a global democracy landscape.
+This is distinct from naive universalism (assuming all systems want the same thing) and cynical realpolitik (accepting that power is just power). It requires good faith, honest disagreement, and a long enough time horizon to stay oriented when short-term results are poor.
 
 *DOD is non-partisan and agnostic to any specific democratic model; inclusion here is not an endorsement of any particular system.*
 
