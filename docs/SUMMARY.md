@@ -2,6 +2,7 @@
 
 - [Home](index.md)
 - [About](about.md)
+- [Philosophy](philosophy.md)
 - [Blog](/blog/)
 - [Community](community/community.md)
     - community/*.md

@@ -8,6 +8,8 @@ Designing Open Democracy is an Australian-operated forum of process engineers, s
 
 We are **nonpartisan and agnostic** to any particular democratic approach. Our aim is to foster tighter consensus and collaboration between political parties, organisations, and individuals working toward a stronger, healthier democracy — without presuming any one system to be superior.
 
+→ *For how we think about and assess democratic systems and organisations — including unconventional ones — see the [Philosophy](philosophy.md) page.*
+
 → *To get involved, see the [Community](community/community.md) page.*
 
 ## Podcast
