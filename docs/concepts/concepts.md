@@ -16,6 +16,8 @@ These pages are discovery aids — brief orientations to help you find better so
 | [Cybernetic Governance](cybernetic-governance.md) | Applying Stafford Beer's Viable System Model to diagnose and redesign governance — feedback loops, complexity, and adaptation |
 | [Isegoria](isegoria.md) | Ancient Greek principle of equal political voice — and why elections undermine it while citizens' juries restore it |
 | [Tribal Epistemology](tribal-epistemology.md) | When group identity determines what people believe rather than evidence — and the implications for democratic deliberation |
+| [Vanguardism and Consultative Democracy](vanguardism.md) | The theory that a disciplined party can represent collective interests better than unmediated popular will — and how this produces a distinct model of democratic legitimacy |
+| [Utopian Realpolitik](utopian-realpolitik.md) | A working disposition for democracy practitioners engaging across systems — holding idealistic goals while finding genuine common ground in good faith with systems that hold very different democratic values |
 
 ## Core democracy concepts
 
