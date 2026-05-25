@@ -5,25 +5,48 @@ status: active
 contributors:
   - Craig Lambie
 website: https://deliberativesuper.com.au
-summary: "A proposal to apply deliberative democracy to Australian superannuation — giving fund members structured, genuine voice in how their collective capital is invested, with a focus on climate, biodiversity, and wellbeing outcomes."
+summary: "A proxy advisory service that replaces opaque corporate governance recommendations with decisions made by randomly selected pension fund members — giving members real democratic power over how their retirement savings vote at company AGMs."
 ---
 
-Deliberative Super is a project by DOD member Craig Lambie exploring how deliberative democracy can be applied to Australian superannuation fund governance.
+Deliberative Super is a project by DOD member Craig Lambie that applies sortition and deliberative democracy to corporate governance — specifically, to the proxy advisory industry.
 
-## The idea
+## The problem it solves
 
-Australia's superannuation system holds over $3 trillion in assets on behalf of working Australians. Fund members are the nominal owners of this capital, but in practice they have minimal say in how it is invested — decisions are made by boards and fund managers operating at a significant remove from members' values and preferences.
+When pension funds hold shares in companies, they must vote on corporate decisions at Annual General Meetings (AGMs): board appointments, executive pay, environmental policies, and more. In practice, these votes are guided by **proxy advisors** — specialist firms like ISS and Glass Lewis — who make voting recommendations on behalf of institutional investors.
 
-Deliberative Super proposes using structured deliberative processes — citizens' juries, deliberative panels, or similar mechanisms — to surface the *considered* preferences of fund members on how their capital should be deployed. The focus is on directing super capital toward climate-positive, biodiversity-supporting, and general wellbeing outcomes, grounded in what members actually want when they have the time and information to think it through.
+The problem: proxy advisors consult no one. A small number of firms make high-stakes recommendations affecting millions of pension members' retirement savings, with no accountability to those members and no mechanism for their values to shape the decisions. Money flows from members through funds to companies — but decision power never flows back.
 
-## Why it's relevant to democracy reform
+## The solution
 
-This project sits at an underexplored intersection:
+Deliberative Super replaces proxy advisor recommendations with recommendations produced by **randomly selected pension fund members** using structured deliberative processes:
 
-- **Economic democracy** — superannuation is a form of collective capital ownership; deliberative governance of it extends democratic principles into finance
-- **Deliberative democracy in practice** — applying citizens' assembly methods to an institutional context (super fund boards) rather than a government one
-- **Capital allocation as democratic question** — where collective savings go shapes the economy and environment; this is a decision members could meaningfully participate in if the process existed
+- **Sortition**: 40 pension fund members selected by random lot, representative across demographics
+- **Compensation**: participants paid professionally (£85/hour or £250–450/day, with travel and accommodation) — recognising their contribution as genuine democratic labour
+- **6–12 month process**: cohorts meet 3–8 times across accessible locations, hearing from diverse experts — lobby groups, think tanks, community organisations, indigenous groups
+- **Structured deliberation**: balanced information, facilitated discussion, vote on AGM proposals
+- **Recommendations with backing**: outputs go to pension fund trustees with the full weight of member democratic legitimacy behind them
+
+Fresh cohorts address different companies and issues, preventing institutional capture. Continuous feedback loops between cohorts allow the process to improve over time.
+
+## Why it matters
+
+This addresses several problems at once:
+
+- **Democratic legitimacy** for corporate governance — recommendations carry member mandate, not just consultant opinion
+- **Values alignment** — community and corporate values begin to converge when members have genuine influence over governance votes
+- **Beyond the squeaky wheel** — sortition hears from quiet voices, not just the loudest stakeholders or most engaged members
+- **Long-term perspective** — freed from political cycles and competitive pressures, deliberative panels tend toward more sustainable thinking
+
+The sortition model also addresses a known failure mode of direct member voting: low participation rates and domination by vocal minorities. Random selection ensures representation across all demographics, not just those who opt in.
+
+## Academic backing
+
+The model has been tested and studied by economists in the Netherlands and presented at Oxford.
 
 ## Status
 
-The project is in early development. Craig is actively seeking a co-founder to help build it out. If you're interested in contributing, reach out via the [DOD community channels](../community/community.md) or at [craiglambie.com/links](https://craiglambie.com/links).
+Early development — Craig is actively seeking a co-founder to help build this out. If you're interested in contributing or learning more:
+
+- Website: [deliberativesuper.com.au](https://deliberativesuper.com.au)
+- Contact: [craiglambie.com/links](https://craiglambie.com/links)
+- Raise it in the [DOD community channels](../community/community.md)
