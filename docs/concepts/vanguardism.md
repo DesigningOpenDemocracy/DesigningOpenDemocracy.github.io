@@ -12,7 +12,7 @@ This produces a distinctive theory of democracy with three interlocking features
 2. **Distrust of populism** — not unique to vanguardism; concern that unguided popular will can be manipulated, factionalist, or reflect short-term interests over collective ones. (This concern also appears in Madison's *Federalist No. 10*, deliberative democracy theory, and the sortition tradition.)
 3. **Performance legitimacy** — the claim that a system earns democratic legitimacy through what it delivers — poverty reduction, stability, long-term investment — rather than through electoral procedure alone.
 
-A genuine internal tension in vanguard theory is what might be called *utopian realpolitik*: the model points toward an idealistic long-term goal (collective emancipation, common good) while managing the present through pragmatic institutional control. Critics note that without independent correction mechanisms, a vanguard that makes serious errors has limited means of being held accountable.
+A genuine internal tension in vanguard theory is between ends and means: the model points toward an idealistic long-term goal (collective emancipation, common good) while managing the present through pragmatic institutional control. Critics note that without independent correction mechanisms, a vanguard that makes serious errors has limited means of being held accountable.
 
 The Chinese Communist Party's contemporary formulation is **whole-process people's democracy** (全过程人民民主) — presenting Chinese governance as continuous, multi-level consultation rather than periodic competitive elections. The [CPPCC](../organisations/cppcc.md) and [eight democratic parties](../organisations/china-democratic-league.md) are institutional expressions of this model.
 
