@@ -1,0 +1,44 @@
+{% extends "main.html" %}
+{% block content %}
+{{ super() }}
+<div class="md-typeset">
+{% set status_groups = [
+  ('active',       'Active'),
+  ('inactive',     'Inactive'),
+  ('deregistered', 'Deregistered')
+] %}
+{% for status_key, status_label in status_groups %}
+  {%- set ns = namespace(has_items=false) %}
+  {%- for file in pages %}
+    {%- if file.page and file.page.url and file.page.url.startswith('organisations/') and file.page.url != page.url and file.page.meta.get('status') == status_key %}
+      {%- set ns.has_items = true %}
+    {%- endif %}
+  {%- endfor %}
+  {%- if ns.has_items %}
+  <h2>{{ status_label }}</h2>
+  <div class="projects-index-grid">
+    {%- for file in pages %}
+      {%- if file.page and file.page.url and file.page.url.startswith('organisations/') and file.page.url != page.url and file.page.meta.get('status') == status_key %}
+      <a class="project-index-card" href="{{ file.page.url }}">
+        <div class="project-index-card-header">
+          <span class="project-index-card-title">{{ file.page.title }}</span>
+          <span class="project-status-badge status-{{ status_key }}">{{ status_label }}</span>
+        </div>
+        {%- if file.page.meta.get('type') or file.page.meta.get('country') %}
+        <p class="org-index-card-meta">
+          {%- if file.page.meta.get('type') %}{{ file.page.meta.type }}{%- endif %}
+          {%- if file.page.meta.get('type') and file.page.meta.get('country') %} · {%- endif %}
+          {%- if file.page.meta.get('country') %}{{ file.page.meta.country }}{%- endif %}
+        </p>
+        {%- endif %}
+        {%- if file.page.meta.get('summary') %}
+        <p>{{ file.page.meta.summary }}</p>
+        {%- endif %}
+      </a>
+      {%- endif %}
+    {%- endfor %}
+  </div>
+  {%- endif %}
+{%- endfor %}
+</div>
+{% endblock %}
