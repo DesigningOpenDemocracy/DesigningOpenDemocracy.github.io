@@ -40,7 +40,21 @@ Reference: https://fpgmaas.com/blog/collapse-of-mkdocs/
 - `status` values: `active` | `inactive` | `deregistered`
 - For defunct orgs, point `website` to the Wayback Machine calendar URL: `https://web.archive.org/web/*/https://originalurl.com/`
 
-### Utility scripts (`util/`)
+### Blog posts (`docs/blog/posts/`)
+
+- Blog posts are **human-authored**. A human must take primary responsibility for the content, accuracy, and framing of every post.
+- Claude may assist with drafting, editing, or structuring a post, but should not create and publish a blog post autonomously — especially for factual or politically sensitive content (legislation, election results, organisational positions).
+- When a topic warrants a blog post but no human has written one, note the gap rather than filling it unilaterally. Do not let "the information exists" be sufficient reason to publish.
+- Concept and organisation pages are appropriate for AI-assisted content (with sourcing discipline); blog posts are not.
+
+### Concept pages (`docs/concepts/`)
+
+- These are **discovery aids** — brief orientations pointing to better sources, not authoritative explanations.
+- Content should come from DOD member discussions/events (linked back to blog posts) or point to external sources.
+- Do not write extended explanations from general knowledge. If depth is needed, link outward.
+- DOD is nonpartisan and agnostic to any specific democratic model; inclusion of a concept is not an endorsement.
+
+
 
 - `createPost.py` — interactive CLI to create a new blog post with frontmatter
 - `frontmatter_updator.py` — uses OpenAI API to auto-fill frontmatter; requires `util/requirements.txt`
