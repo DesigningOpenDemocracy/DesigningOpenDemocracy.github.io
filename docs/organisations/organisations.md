@@ -46,6 +46,13 @@ These are not affiliated or partner organisations. Individuals from some of thes
 | [Healthy Democracy](healthy-democracy.md) | Practice | Active |
 | [PeopleCount](peoplecount.md) | Platform | Inactive |
 
+## Taiwan
+
+| Organisation | Type | Status |
+|---|---|---|
+| [g0v (gov zero)](g0v.md) | Civic tech | Active |
+| [vTaiwan](vtaiwan.md) | Platform | Active |
+
 ## Global
 
 | Organisation | Type | Status |
