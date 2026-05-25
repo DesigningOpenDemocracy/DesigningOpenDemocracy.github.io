@@ -10,6 +10,7 @@ A reference collection of concepts relevant to open democracy — from foundatio
 | Article | Summary |
 |---|---|
 | [Accountability Sink](accountability-sink.md) | Structural feature of organisations that absorbs consequences so no one can be held responsible — and why it matters for democratic design |
+| [Cybernetic Governance](cybernetic-governance.md) | Applying Stafford Beer's Viable System Model to diagnose and redesign governance — feedback loops, complexity, and adaptation |
 | [Isegoria](isegoria.md) | Ancient Greek principle of equal political voice — and why elections undermine it while citizens' juries restore it |
 
 ## Core democracy concepts
@@ -28,6 +29,9 @@ A reference collection of concepts relevant to open democracy — from foundatio
 | Article | Summary |
 |---|---|
 | [Citizens' Assembly](citizens-assembly.md) | Randomly selected citizens deliberate on policy questions |
+| [Issue-Based Direct Democracy](issue-based-direct-democracy.md) | The Flux Party's mechanism — voting on individual bills with delegable votes and political capital for abstaining |
+| [Liquid Democracy](liquid-democracy.md) | Voting system combining direct participation with transitive, revocable delegation |
+| [Prediction Markets](prediction-markets.md) | Markets where participants bet on policy outcomes to aggregate dispersed knowledge — applied to democratic deliberation |
 | [Sortition](sortition.md) | Selection of officials or jurors by random lot |
 | [Mixed-Member Proportional Representation](mixed-member-proportional-representation.md) | Electoral system combining constituency seats with proportional top-up seats |
 | [End-to-End Verifiable Voting System](end-to-end-verifiable-voting-system.md) | Voting systems where voters can verify their vote was counted correctly |

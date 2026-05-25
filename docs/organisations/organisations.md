@@ -14,13 +14,21 @@ These are not affiliated or partner organisations. Individuals from some of thes
 |---|---|---|
 | [Accountability Round Table](accountability-round-table.md) | Advocacy | Active |
 | [Australian Democrats](australian-democrats.md) | Party | Active |
+| [Build a Ballot](build-a-ballot.md) | Civic tech | Active |
+| [Coalition of Everyone](coalition-of-everyone.md) | Advocacy | Inactive |
+| [Code for Australia](code-for-australia.md) | Civic tech | Active |
 | [DigiPol](digipol.md) | Platform | Inactive |
 | [Flux Party](flux-party.md) | Party | Deregistered |
+| [Horizon State](horizon-state.md) | Platform | Inactive |
+| [Lateral Economics](lateral-economics.md) | Research | Active |
 | [MiVote](mivote.md) | Platform | Deregistered |
+| [MosaicLab](mosaiclab.md) | Practice | Active |
 | [newDemocracy Foundation](newdemocracy.md) | Research | Active |
 | [NewVote](newvote.md) | Platform | Active |
 | [OpenAustralia Foundation](open-australia-foundation.md) | Civic tech | Active |
 | [Pirate Party Australia](pirate-party-australia.md) | Party | Active |
+| [Proportional Representation Society of Australia](prsa.md) | Advocacy | Active |
+| [SecureVote](securevote.md) | Platform | Active |
 | [Susan McKinnon Foundation](susan-mckinnon-foundation.md) | Philanthropy | Active |
 
 ## United Kingdom
@@ -37,6 +45,7 @@ These are not affiliated or partner organisations. Individuals from some of thes
 |---|---|---|---|
 | [DemocracyNext](democracy-next.md) | EU | Research | Active |
 | [DiEM25](diem25.md) | EU | Political movement | Active |
+| [G!LT (Offene Demokratie)](gilt.md) | Austria | Party | Active |
 | [G1000](g1000.md) | Belgium | Research | Active |
 | [Prediki](prediki.md) | Austria | Platform | Active |
 
@@ -46,6 +55,13 @@ These are not affiliated or partner organisations. Individuals from some of thes
 |---|---|---|
 | [Healthy Democracy](healthy-democracy.md) | Practice | Active |
 | [PeopleCount](peoplecount.md) | Platform | Inactive |
+| [Pol.is](polis.md) | Platform | Active |
+
+## Brazil
+
+| Organisation | Type | Status |
+|---|---|---|
+| [br/acc (World Transparency Graph)](br-acc.md) | Civic tech | Active |
 
 ## Taiwan
 

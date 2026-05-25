@@ -16,3 +16,7 @@ The party operates as an explicitly political actor with positions across a rang
 ## Links
 
 - Website: [pirateparty.org.au](https://pirateparty.org.au)
+
+## Member resources
+
+- [Electoral Reform — The Wolf of Auspol](https://wolfofauspol.me/electoral-reform) — a detailed breakdown of electoral reform options for Australia by Drew Wolfendale, a PPAU/Fusion Party member, covering multi-member electorate models and proportional systems
