@@ -44,6 +44,18 @@ DOD does not reflexively exclude systems because they are communist, socialist, 
 
 What we do exclude — clearly and without apology — are systems and organisations that are performing democracy without practising it: where the gap between the claim and the structure is so large and so entrenched that good faith is no longer a credible description of what is happening.
 
+## The standard applies to everyone
+
+For this framework to be trustworthy — including to systems operating under very different democratic theories — it has to be applied consistently. A relative epistemology that only scrutinises non-Western systems is not relative epistemology. It is Western liberal democracy promotion with better optics, and any serious interlocutor from outside that tradition will recognise it immediately.
+
+The three disqualifiers apply equally to Australia, the United States, the United Kingdom, and the European Union as they do to China or Russia.
+
+Elite capture of a consultative process is bad faith whether it happens in Canberra or Beijing. A two-party system structurally entrenched against challengers fails the same structural inflexibility test as a vanguard system that suppresses internal reform. Campaign finance arrangements that systematically translate wealth into political access are a form of hypocrisy — claiming to represent the people while the structure serves a narrower interest.
+
+DOD exists in Australia and most of its members operate within liberal democratic systems. We are not neutral about those systems. We think they have serious structural problems, and much of the work in our landscape is specifically about reforming them. The point is not that liberal democracies are fine and others are not. The point is that the same question applies everywhere: *where are the mechanisms by which the people can tell power when it is wrong, and does power actually respond?*
+
+Not being a pushover about this — including toward systems we are culturally close to — is what makes genuine engagement across different democratic traditions possible. Trust is earned by consistency, not by being agreeable.
+
 ## A note on Russia and China
 
 These two cases illustrate the standard clearly.
