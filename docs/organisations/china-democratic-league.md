@@ -4,14 +4,14 @@ type: political_party
 status: active
 country: CN
 website: https://www.mmzy.org.cn
-summary: "The largest of China's eight officially recognised 'democratic parties' — ~357,000 members, primarily intellectuals in education, science, and culture. Operates within the CPC-led multi-party cooperation system as a consultative body, not an opposition party."
+summary: "The largest of China's eight officially recognised 'democratic parties' — ~357,000 members, primarily intellectuals in education, science, and culture. Operates within the CPC-led multi-party cooperation system under 'bounded articulation': advisory on sectoral matters, structurally incapable of challenging CPC authority."
 location:
   latitude: 39.9042
   longitude: 116.4074
   name: Beijing, China
 ---
 
-> **Note:** The China Democratic League and the other seven "democratic parties" are not opposition parties. They operate under CPC leadership within a system explicitly framed as non-competitive. Their constitutions affirm commitment to CCP guidance. They are included here for comparative understanding of managed political pluralism within a single-party framework.
+> **Note:** The CDL and the other seven "democratic parties" are not opposition parties and do not push for structural democratic reform. Their constitutions affirm commitment to CCP guidance; membership is pre-approved by the United Front Work Department. Scholars describe their role as "bounded articulation" — they express sectoral interests within approved channels and cannot challenge the structure of CPC authority. They are included here as a documented example of managed pluralism, and where it falls short of genuine accountability to its own stated ideals.
 
 The China Democratic League (中国民主同盟, CDL) was founded in 1941 and is the second-largest of China's eight officially recognised minor parties, with approximately 357,000 members. Its membership is drawn predominantly from mid- and senior-level professionals in education, culture, natural sciences, and the arts.
 
