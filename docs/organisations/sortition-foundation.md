@@ -20,3 +20,7 @@ The foundation has become a key reference point for anyone working on democratic
 ## Links
 
 - Website: [sortitionfoundation.org](https://www.sortitionfoundation.org)
+
+## See also
+
+- [Your Party is using sortition](../../blog/posts/2025-12-07-your-party-is-using-sortition.md) — DOD blog post on a UK party adopting sortition in practice

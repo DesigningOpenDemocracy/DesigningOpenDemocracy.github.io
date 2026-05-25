@@ -38,6 +38,7 @@ These are not affiliated or partner organisations. Individuals from some of thes
 | [DemocracyNext](democracy-next.md) | EU | Research | Active |
 | [DiEM25](diem25.md) | EU | Political movement | Active |
 | [G1000](g1000.md) | Belgium | Research | Active |
+| [Prediki](prediki.md) | Austria | Platform | Active |
 
 ## United States
 
@@ -45,6 +46,13 @@ These are not affiliated or partner organisations. Individuals from some of thes
 |---|---|---|
 | [Healthy Democracy](healthy-democracy.md) | Practice | Active |
 | [PeopleCount](peoplecount.md) | Platform | Inactive |
+
+## Taiwan
+
+| Organisation | Type | Status |
+|---|---|---|
+| [g0v (gov zero)](g0v.md) | Civic tech | Active |
+| [vTaiwan](vtaiwan.md) | Platform | Active |
 
 ## Global
 
