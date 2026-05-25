@@ -10,6 +10,7 @@ A reference collection of concepts relevant to open democracy — from foundatio
 | Article | Summary |
 |---|---|
 | [Accountability Sink](accountability-sink.md) | Structural feature of organisations that absorbs consequences so no one can be held responsible — and why it matters for democratic design |
+| [Isegoria](isegoria.md) | Ancient Greek principle of equal political voice — and why elections undermine it while citizens' juries restore it |
 
 ## Core democracy concepts
 
