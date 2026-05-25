@@ -34,11 +34,11 @@
     </div>
   </div>
 </section>
-<!-- Activity Map (The idea is we cover the last few years of activities) (And potentially the future?) -->
+<!-- Democracy Map: blog activity markers + organisation landscape markers -->
 <section id="activity-map-container" class="mdx-container">
   <div id="activity-map-card" class="mdx-hero md-typeset">
-    <h1 id="activity-map-title">Activity Map</h1>
-    <p id="activity-map-subtitle">Map of recent activities</p>
+    <h1 id="activity-map-title">Democracy Map</h1>
+    <p id="activity-map-subtitle">Activities and organisations</p>
     <div id="map-wrapper">
       <div class="leaflet-container" id="map"></div>
       <button id="map-expand-btn" aria-label="Expand map">⛶</button>
@@ -146,6 +146,11 @@ document.addEventListener("DOMContentLoaded", function() {
   {%- endfor %}
 
   map.addLayer(orgMarkers);
+
+  L.control.layers(null, {
+    "Activities": myFGMarker,
+    "Organisations": orgMarkers
+  }, { collapsed: false, position: 'topleft' }).addTo(map);
 
   var allLayers = myFGMarker.getLayers().concat(orgMarkers.getLayers());
   if (allLayers.length > 0) {
