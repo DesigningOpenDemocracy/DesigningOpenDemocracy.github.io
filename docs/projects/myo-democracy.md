@@ -37,6 +37,6 @@ The project appears to have gone quiet after 2021. The website (`myodemocracy.or
 
 ## Links
 
-- [Original 2019 DOD presentation](../blog/posts/2019-05-15.md) (includes YouTube recording)
+- [Original 2019 DOD presentation](../blog/posts/2019-05-15.md) — [YouTube recording](https://youtu.be/HbL5uZMqTqQ)
 - [Danny Johnson on Medium](https://medium.com/@danny.johnson)
 - [MYO Democracy Meetup group](https://www.meetup.com/MYODemocracy/)

@@ -20,7 +20,7 @@ Glad to see a political party in UK exploring this idea of sortition.
 
 <!-- more -->
 
-Click the link below to read up about it.
+Click the link below to read up about it, or see the [Your Party entry](../../organisations/your-party.md) in the Democracy Landscape.
 
 [https://www.yourparty.uk/sortition/](https://www.yourparty.uk/sortition/)
 
