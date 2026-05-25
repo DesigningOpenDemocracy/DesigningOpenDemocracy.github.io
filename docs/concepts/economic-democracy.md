@@ -32,12 +32,6 @@ McMullen's argument: the failure was structural, not just behavioural. Customer-
 
 McMullen co-founded **Co-operative Bonds** (a cooperative development consultancy), **888 Co-operative Causeway** (a Melbourne cooperative network), and the **Co-op Incubator**.
 
-## Connection to political democracy
-
-Economic democracy and political democracy are not separate domains. Economic inequality affects political participation: those with greater economic resources have greater capacity to influence political processes, fund campaigns, and shape public discourse. Concentrated corporate power creates interests capable of dominating regulatory agencies, lobbying legislatures, and setting the terms of policy debate.
-
-From this perspective, extending democratic governance into economic institutions is not a separate project from democratic reform — it is part of the same project. Cooperatives and mutuals are, among other things, institutions that distribute economic power more widely, which tends to distribute political power more widely too.
-
 ## See also
 
 - [Worker Cooperatives](worker-cooperatives.md)

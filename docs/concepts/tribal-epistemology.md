@@ -4,7 +4,7 @@ title: Tribal Epistemology
 
 Tribal epistemology is the condition in which group membership determines what people believe — where the truth of a claim is assessed not by evidence or reasoning but by whether it is endorsed by one's political or social tribe.
 
-The term, popularised in US political commentary (particularly by journalist David Roberts), describes a situation where the normal epistemic tools — evidence, argument, expert consensus — are effectively bypassed by identity. What "we" believe is true; what "they" believe is false; and any evidence that contradicts tribal belief is suspect by definition.
+The term describes a situation where the normal epistemic tools — evidence, argument, expert consensus — are effectively bypassed by identity. What "we" believe is true; what "they" believe is false; and any evidence that contradicts tribal belief is suspect by definition.
 
 ## How it develops
 

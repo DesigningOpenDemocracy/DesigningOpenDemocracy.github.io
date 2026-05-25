@@ -14,7 +14,7 @@ The result is that decision-makers receive a distorted picture of public opinion
 
 The most widely used implementation is **[Pol.is](../organisations/polis.md)**, an open-source opinion-mapping tool developed in the US and used extensively in Taiwan's [vTaiwan](../organisations/vtaiwan.md) process.
 
-Rather than open-ended comment threads, Pol.is shows participants a series of statements and asks them to agree, disagree, or pass. As responses accumulate, a dimensionality-reduction algorithm (PCA) clusters participants into groups with similar response patterns. The visualisation reveals:
+Rather than open-ended comment threads, Pol.is shows participants a series of statements and asks them to agree, disagree, or pass. As responses accumulate, a clustering algorithm groups participants with similar response patterns. The visualisation reveals:
 
 - Which positions command broad agreement across all clusters
 - Which positions are contested between clusters

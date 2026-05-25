@@ -42,4 +42,4 @@ The division is not about expertise vs. the public — it is about which *instit
 ## Further reading
 
 - Nicolas Gruen's 2017 DOD presentation: [recording and notes](../blog/posts/2017-08-21-podcast.md)
-- Joseph Schumpeter, *Capitalism, Socialism and Democracy* (1943), Part IV
+- Joseph Schumpeter, *Capitalism, Socialism and Democracy* (1943)

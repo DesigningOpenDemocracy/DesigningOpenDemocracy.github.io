@@ -8,7 +8,7 @@ The term distinguishes this approach from ordinary transparency (publishing docu
 
 ## The Taiwan example
 
-The clearest contemporary example is Taiwan under digital minister Audrey Tang (2016–2024). Key practices:
+The clearest contemporary example is Taiwan under former digital minister Audrey Tang. Key practices:
 
 - **Cabinet meetings live-streamed** in full, available to anyone in real time
 - **Verbatim transcripts published** — not edited summaries but the actual words spoken
@@ -17,7 +17,7 @@ The clearest contemporary example is Taiwan under digital minister Audrey Tang (
 
 The effect is to change what participants are willing to say and do. When every word of a meeting is published verbatim, officials cannot later misrepresent what was decided or why. Stakeholders who participate in consultation processes cannot claim privately to government that they hold different positions than they stated publicly.
 
-Tang described this as "sunlight as disinfectant" — the exposure itself changes behaviour, not just the availability of information after the fact.
+The exposure itself changes behaviour, not just the availability of information after the fact.
 
 ## Why it matters
 
