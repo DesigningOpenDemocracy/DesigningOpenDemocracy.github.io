@@ -5,7 +5,7 @@ title: Concepts
 
 A reference collection of concepts relevant to open democracy — from foundational ideas to specific mechanisms and organisational forms.
 
-These pages aim to describe and explain concepts discussed in the democracy reform space. They do not represent DOD endorsement of any particular approach. DOD is nonpartisan and agnostic to any specific democratic model. Some pages draw on secondary sources beyond DOD's own discussions; in those cases, content reflects editorial summaries rather than DOD positions.
+These pages are discovery aids — brief orientations to help you find better sources, not authoritative explanations. Content comes from DOD member discussions and events where noted, and points outward to external sources for depth. DOD is nonpartisan and agnostic to any specific democratic model; inclusion of a concept here is not an endorsement.
 
 ## Democratic theory and critique
 
