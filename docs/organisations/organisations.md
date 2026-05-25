@@ -14,6 +14,7 @@ These are not affiliated or partner organisations. Individuals from some of thes
 |---|---|---|
 | [Accountability Round Table](accountability-round-table.md) | Advocacy | Active |
 | [Australian Democrats](australian-democrats.md) | Party | Active |
+| [Build a Ballot](build-a-ballot.md) | Civic tech | Active |
 | [Coalition of Everyone](coalition-of-everyone.md) | Advocacy | Inactive |
 | [Code for Australia](code-for-australia.md) | Civic tech | Active |
 | [DigiPol](digipol.md) | Platform | Inactive |
@@ -54,6 +55,13 @@ These are not affiliated or partner organisations. Individuals from some of thes
 |---|---|---|
 | [Healthy Democracy](healthy-democracy.md) | Practice | Active |
 | [PeopleCount](peoplecount.md) | Platform | Inactive |
+| [Pol.is](polis.md) | Platform | Active |
+
+## Brazil
+
+| Organisation | Type | Status |
+|---|---|---|
+| [br/acc (World Transparency Graph)](br-acc.md) | Civic tech | Active |
 
 ## Taiwan
 
