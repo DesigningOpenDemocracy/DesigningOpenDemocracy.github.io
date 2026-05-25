@@ -28,4 +28,3 @@ Hofkirchner is also an executive board member of **Meine Stimme GILT** ("My Voic
 ## Links
 
 - Website: [prediki.com](https://www.prediki.com)
-- See also: [Prediki member project page](../projects/prediki.md)
