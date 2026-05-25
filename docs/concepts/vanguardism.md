@@ -8,7 +8,7 @@ Originating in Lenin's concept of the **vanguard party**, the core argument is t
 
 This produces a distinctive theory of democracy with three interlocking features:
 
-1. **Democratic centralism** — open deliberation before decisions are made; binding unity once they are. The "democracy" is the consultation process; the "centralism" is the coherence of execution.
+1. **Democratic centralism** — open deliberation before decisions are made; binding unity once they are. The "democracy" is the consultation process; the "centralism" is the coherence of execution. In practice, the balance between these two has varied enormously across different periods and leaderships — the deliberative element was more substantive during the Soviet early years and China's collective leadership era (roughly post-Deng to early Xi), and has contracted significantly under more centralised leadership where internal dissent is suppressed.
 2. **Distrust of populism** — not unique to vanguardism; concern that unguided popular will can be manipulated, factionalist, or reflect short-term interests over collective ones. (This concern also appears in Madison's *Federalist No. 10*, deliberative democracy theory, and the sortition tradition.)
 3. **Performance legitimacy** — the claim that a system earns democratic legitimacy through what it delivers — poverty reduction, stability, long-term investment — rather than through electoral procedure alone.
 
