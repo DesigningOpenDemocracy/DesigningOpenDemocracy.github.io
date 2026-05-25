@@ -2,13 +2,13 @@
 title: Philosophy
 ---
 
-This page sets out how Designing Open Democracy thinks about democratic systems, organisations, and reform — particularly when engaging with systems that look different from standard Western liberal democracy.
+The [About](about.md) page says DOD is non-partisan and agnostic about which democratic model is superior. This page explains what that means in practice — and what it doesn't mean.
 
 ## Non-partisan is not the same as neutral
 
-DOD is non-partisan: we do not take sides between political parties, and we do not presume any single democratic model to be the correct one. But non-partisan does not mean we have no values, or that all systems are equally valid.
+Being agnostic about models is not the same as having no values. DOD does not take sides between political parties, and we do not presume any single democratic system to be the correct one for all contexts. But we do have a standard — one that applies to every system equally, including the liberal democracies most of our members live in.
 
-We have a standard. It is not "does this look like Australian or European democracy." It is simpler and more demanding: **is this system genuinely trying to govern for and with its people, in good faith?**
+The standard is not "does this look like Australian or European democracy." It is simpler and more demanding: **is this system genuinely trying to govern for and with its people, in good faith?**
 
 ## The assessment standard
 
