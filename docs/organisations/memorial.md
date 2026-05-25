@@ -21,6 +21,10 @@ Memorial won the **Nobel Peace Prize in 2022** (jointly with Ukrainian and Belar
 
 Memorial continues operating through its international chapters. The largest active chapter is **Memorial Germany** (memorial.de), based in Berlin. The Russian domestic organisation is formally liquidated and the extremist designation makes associated activity inside Russia a serious criminal risk.
 
+## Note on scope
+
+Memorial's Russian domestic organisations have been formally liquidated and its work inside Russia criminalised. It is listed here under Russia because that was the origin and primary focus of its work. International chapters — particularly Memorial Germany — continue operating and are accessible via the link below.
+
 ## Links
 
 - Memorial Germany: [memorial.de](https://www.memorial.de)

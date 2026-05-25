@@ -19,6 +19,10 @@ Golos was designated a "foreign agent" by the Russian government and faced repea
 
 Golos was the most prominent example of domestic election monitoring in Russia and an internationally recognised reference point for understanding Russian electoral processes. Its closure marked the end of independent domestic election observation inside Russia.
 
+## Note on scope
+
+Golos no longer exists as an operating organisation. It is listed here under Russia because it was the most significant domestic democracy monitoring organisation in that country, and its closure in 2025 is a marker of the contraction of independent civil society space in Russia.
+
 ## Links
 
 - Archived website: [web.archive.org](https://web.archive.org/web/*/https://www.golos.org/)
