@@ -5,6 +5,10 @@ status: active
 country: RU
 website: https://fbk.info
 summary: "An anti-corruption and pro-democracy organisation founded by Alexei Navalny — producing high-profile investigations of Kremlin-linked corruption, now operating in exile after being designated 'extremist' (2021) and 'terrorist' (November 2025) by Russian authorities. Led by Yulia Navalnaya following Navalny's death in prison in February 2024."
+location:
+  latitude: 55.7558
+  longitude: 37.6176
+  name: Moscow, Russia (origin; operates in exile)
 ---
 
 The Anti-Corruption Foundation (Фонд борьбы с коррупцией, FBK) was founded by Alexei Navalny and became Russia's most prominent anti-corruption investigative and advocacy organisation. Its video investigations into the wealth of senior Russian officials — including widely-viewed exposés on Prime Minister Medvedev and others — reached tens of millions of viewers inside Russia.

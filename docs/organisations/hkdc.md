@@ -5,6 +5,10 @@ status: active
 country: CN
 website: https://www.hkdc.us
 summary: "A Washington DC-based organisation advocating for the restoration of democratic governance in Hong Kong — specifically the election-based accountability system promised under One Country, Two Systems, which was effectively dismantled following the 2020 National Security Law."
+location:
+  latitude: 22.3193
+  longitude: 114.1694
+  name: Hong Kong (origin; operates in diaspora)
 ---
 
 > **Note:** HKDC operates from diaspora in Washington DC. It is included here because its work is specifically about a particular governance system — the accountability structures promised to Hong Kong under One Country, Two Systems — rather than general human rights documentation.

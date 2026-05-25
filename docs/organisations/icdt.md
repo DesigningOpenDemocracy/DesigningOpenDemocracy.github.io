@@ -5,6 +5,10 @@ status: active
 country: CN
 website: https://chinademocrats.org/en
 summary: "A diaspora research institute focused specifically on constitutional frameworks and transition planning for democratic governance in China — studying separation of powers, institutional design, and comparative lessons from democratic transitions elsewhere."
+location:
+  latitude: 39.9042
+  longitude: 116.4074
+  name: Beijing, China (origin; operates in diaspora)
 ---
 
 > **Note:** ICDT operates in diaspora — its focus is China, but its researchers work from outside mainland China where this kind of work cannot be done freely. It is included here because its work is specifically about governance system design, not human rights documentation.
