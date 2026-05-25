@@ -2,6 +2,10 @@
 title: Utopian Realpolitik
 ---
 
+The disposition of continuing to push for idealistic goals against unfavourable odds — because history repeatedly shows that what looks structurally impossible from inside the current equilibrium sometimes isn't. Relevant wherever activists, democracy workers, or reformers operate across systems that don't yet share their values.
+
+---
+
 Conventional game theory is a description of the world as it is — who holds power, what incentives they face, what moves are available. It is very good at explaining why nothing changes. It is nearly useless at predicting when everything does.
 
 The abolition of slavery looked, from inside the game, like an impossible ask. The economic interests were vast, the legal structures entrenched, the political majorities absent. Every rational cost-benefit analysis pointed the same direction: this is not the hill. And yet abolitionists kept pushing — for decades, across generations, at enormous personal cost — and they won. Not because the game theory was wrong about the odds. Because they were playing a different game.
