@@ -30,6 +30,8 @@ Utopian realpolitik offers a third path: engage, in good faith, with the systems
 
 This is harder than either the idealist or the realist position. It requires holding two things at once: *this is how it is*, and *this is not how it has to stay*.
 
+In practice, a community operating from this disposition will contain different emphases. Some will lean toward engaging power structures directly — working with the systems that exist, finding leverage points, building relationships across difference. Others will focus on building and testing what actually works — prototyping mechanisms, generating evidence, demonstrating alternatives. These are sometimes called *utopic pragmatism* in emphasis: less concerned with the power calculation, more with what moves the ideal forward in practice. Both are expressions of the same underlying refusal to treat the current equilibrium as permanent. The tension between them is productive, not a contradiction.
+
 ---
 
 *DOD is non-partisan and agnostic to any specific democratic model; inclusion here is not an endorsement of any particular system or movement.*
