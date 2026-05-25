@@ -66,6 +66,14 @@ China's case is more genuinely complex. The CPC's vanguard theory is a real theo
 
 Both cases are included in the DOD landscape because understanding how they work, and where they succeed or fail their own standards, is part of understanding the full range of democratic possibility.
 
+## Why bother
+
+Engaging seriously across democratic traditions — including with systems that may not reciprocate, or may be far from where we would like them to be — requires a reason to keep going when the short-term results are poor.
+
+Ours is historical: the record of social change shows repeatedly that what looks structurally impossible from inside a current equilibrium sometimes isn't. Abolitionists were told the odds were against them. So were suffragists, anti-apartheid activists, and independence movements across the colonised world. Standard game theory, which assumes fixed preferences and stable power, would have written most of them off. History didn't.
+
+This disposition — holding idealistic long-term goals while engaging pragmatically and in good faith with the systems that actually exist — is what we call [utopian realpolitik](concepts/utopian-realpolitik.md). It is not naivety. It is a considered bet, informed by history, that the structural constraints people point to are less permanent than they appear — and that engagement across difference is more likely to move things than withdrawal from it.
+
 ---
 
 *This philosophy informs the [Democracy Landscape](organisations/organisations.md), the [Concepts](concepts/concepts.md) section, and the curation decisions reflected throughout the site.*
