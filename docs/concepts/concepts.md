@@ -5,13 +5,17 @@ title: Concepts
 
 A reference collection of concepts relevant to open democracy — from foundational ideas to specific mechanisms and organisational forms.
 
+These pages aim to describe and explain concepts discussed in the democracy reform space. They do not represent DOD endorsement of any particular approach. DOD is nonpartisan and agnostic to any specific democratic model. Some pages draw on secondary sources beyond DOD's own discussions; in those cases, content reflects editorial summaries rather than DOD positions.
+
 ## Democratic theory and critique
 
 | Article | Summary |
 |---|---|
 | [Accountability Sink](accountability-sink.md) | Structural feature of organisations that absorbs consequences so no one can be held responsible — and why it matters for democratic design |
+| [Cognitive Division of Labour](cognitive-division-of-labour.md) | Schumpeter and Gruen's concept: not everyone can have views on everything — democratic systems need mechanisms for navigating who decides what |
 | [Cybernetic Governance](cybernetic-governance.md) | Applying Stafford Beer's Viable System Model to diagnose and redesign governance — feedback loops, complexity, and adaptation |
 | [Isegoria](isegoria.md) | Ancient Greek principle of equal political voice — and why elections undermine it while citizens' juries restore it |
+| [Tribal Epistemology](tribal-epistemology.md) | When group identity determines what people believe rather than evidence — and the implications for democratic deliberation |
 
 ## Core democracy concepts
 
@@ -29,7 +33,9 @@ A reference collection of concepts relevant to open democracy — from foundatio
 | Article | Summary |
 |---|---|
 | [Citizens' Assembly](citizens-assembly.md) | Randomly selected citizens deliberate on policy questions |
+| [Consensus Mapping](consensus-mapping.md) | Surfacing areas of public agreement at scale rather than amplifying disagreement — used in Taiwan's vTaiwan process |
 | [Issue-Based Direct Democracy](issue-based-direct-democracy.md) | The Flux Party's mechanism — voting on individual bills with delegable votes and political capital for abstaining |
+| [Radical Transparency](radical-transparency.md) | Governance practice of making all processes and decisions public by default and in real time |
 | [Liquid Democracy](liquid-democracy.md) | Voting system combining direct participation with transitive, revocable delegation |
 | [Prediction Markets](prediction-markets.md) | Markets where participants bet on policy outcomes to aggregate dispersed knowledge — applied to democratic deliberation |
 | [Sortition](sortition.md) | Selection of officials or jurors by random lot |
@@ -42,6 +48,7 @@ A reference collection of concepts relevant to open democracy — from foundatio
 
 | Article | Summary |
 |---|---|
+| [Economic Democracy](economic-democracy.md) | Extending democratic principles into economic institutions — cooperative and mutual forms vs. shareholder-primacy structures |
 | [Workplace Democracy](workplace-democracy.md) | Democratic decision-making structures within organisations |
 | [Worker Cooperatives](worker-cooperatives.md) | Businesses owned and governed by their workers |
 | [Community Business](community-business.md) | Enterprises owned and run by local communities |

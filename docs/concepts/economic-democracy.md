@@ -28,7 +28,7 @@ Related forms include **mutuals** (member-owned financial institutions), **emplo
 
 Melbourne-based cooperative entrepreneur Antony McMullen presented this framing at a [2020 Designing Open Democracy podcast](../blog/posts/2020-06-20-podcast.md), in the context of the Australian banking royal commission — which had exposed misconduct at major banks driven by the shareholder-primacy model.
 
-McMullen's argument: the failure was structural, not just behavioural. Customer-owned banks (mutuals) and cooperatives did not exhibit the same misconduct because their governance structure aligned decision-making authority with member interests rather than investor returns.
+McMullen's argument was that the failure was structural, not just behavioural — that governance structures aligned to investor returns create different incentives than member-owned structures.
 
 McMullen co-founded **Co-operative Bonds** (a cooperative development consultancy), **888 Co-operative Causeway** (a Melbourne cooperative network), and the **Co-op Incubator**.
 

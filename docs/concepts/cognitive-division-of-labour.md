@@ -14,11 +14,11 @@ The problem is that electoral democracy, as it evolved, did not design a good an
 
 ## The electoral shortcut and its costs
 
-Elections, Gruen argued, are a competitive and aristocratic mechanism — they select people who are good at winning elections, which is a distinct skill from being good at governing or deliberating. Because voting is individually irrational (the chance of casting the decisive vote is infinitesimal), political engagement is driven almost entirely by emotion: solidarity, identity, outrage, aspiration.
+Elections, Gruen argued, are a competitive and aristocratic mechanism — they tend to select people who are good at winning elections, a distinct skill from governing or deliberating. Because voting is individually irrational (the chance of casting the decisive vote is infinitesimal), political engagement is driven almost entirely by emotion: solidarity, identity, outrage, aspiration.
 
-The result: politics is run by *emotive force*, and the cognitive content of democratic deliberation is low. Soundbites get through; complex arguments don't. Cultural war strengthens because it plays on emotions that politics can reliably activate.
+In Gruen's framing, politics is run by *emotive force* rather than considered judgement — soundbites get through, complex arguments don't, and cultural conflict strengthens because it reliably activates the emotions that drive political engagement.
 
-This is not because politicians are villains — it is because the system optimises for emotional mobilisation rather than considered judgement. "The magic trick," Gruen observed, "is that the reason for current troubles is because the pollies are the bad guys. But we are getting exactly what we're asking for."
+As he put it at the [2017 DOD event](../blog/posts/2017-08-21-podcast.md): "The magic trick is that the reason for current troubles is because the pollies are the bad guys. But we are getting exactly what we're asking for."
 
 ## Citizen juries as a response
 
