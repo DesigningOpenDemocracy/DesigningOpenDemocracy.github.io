@@ -54,7 +54,7 @@ Elite capture of a consultative process is bad faith whether it happens in Canbe
 
 DOD exists in Australia and most of its members operate within liberal democratic systems. Much of the work in our landscape is specifically about reforming them. The point is not that liberal democracies are bad, or that other systems are better. The point is that the same question applies everywhere: *where are the mechanisms by which the people can tell power when it is wrong, and does power actually respond?*
 
-Not being a pushover about this — including toward systems we are culturally close to — is what makes genuine engagement across different democratic traditions possible. Trust is earned by consistency, not by being agreeable.
+Holding this standard consistently — including toward systems we are culturally close to — is what makes genuine engagement across different democratic traditions possible. Trust is earned by consistency, not by selective restraint.
 
 ## A note on Russia and China
 
