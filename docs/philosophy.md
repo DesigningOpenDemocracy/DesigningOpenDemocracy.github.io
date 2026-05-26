@@ -40,11 +40,15 @@ This is also more respectful. Telling a vanguard state it must become a multi-pa
 
 The scope of that question, however, is not relative. Relative epistemology applies to *how* accountability is organised — the structures of participation, the theory of representation, the mechanisms of correction. It does not determine *who* falls within the accountability obligation. That is set by the reach of governance power, not by the system's own designation. A system can be judged by its own values; it cannot set its own scope.
 
+This framework is itself a working hypothesis, not a settled verdict. DOD expects the standard to be refined through the same kind of engaged critical dialogue it asks of the systems it evaluates.
+
 ## What this means in practice
 
 DOD is not a human rights observatory. Human rights work is important and we respect it, but documenting abuses is different from designing governance systems. An organisation belongs in our landscape if it is working on *how* people participate in governance — mechanisms, structures, reforms, accountability systems — not just whether rights are being violated.
 
-DOD is not a democracy promotion organisation in the traditional sense. We are not trying to export a particular model. We are interested in the full range of ways humans have organised collective self-governance, and in how those systems can be made more accountable, more participatory, and more responsive — on their own terms.
+DOD is not a democracy promotion organisation in the traditional sense. We are not trying to export a particular model. We do not advocate for sanctions, regime change, or the external imposition of governance models. Our engagement is analytical and design-oriented. Analysis and coercive interference are not the same thing — and the distinction matters, because the history of "democracy promotion" as cover for external pressure is real and has eroded exactly the trust that cross-traditional engagement requires.
+
+We are interested in the full range of ways humans have organised collective self-governance, and in how those systems can be made more accountable, more participatory, and more responsive — on their own terms.
 
 DOD does not reflexively exclude systems because they are communist, socialist, authoritarian-adjacent, or non-Western. A Chinese think tank investigating sortition as a mechanism for making vanguard governance more accountable to workers is doing exactly the kind of work we are interested in. A Western liberal democracy that has structurally entrenched elite capture of its electoral system is, by our standard, failing the same test.
 
@@ -66,6 +70,8 @@ DOD exists in Australia and most of its members operate within liberal democrati
 
 Holding this standard consistently — including toward systems we are culturally close to — is what makes genuine engagement across different democratic traditions possible. Trust is earned by consistency, not by selective restraint.
 
+This exchange runs both ways. The DOD framework has been challenged and sharpened by dialogue with thinkers working in governance traditions — vanguard, consensus-based, communal — that are not well-represented in standard liberal democratic theory. That kind of engagement is what the framework is designed to enable, and DOD does not presume the direction of learning is one way.
+
 ## A note on Russia and China
 
 These two cases illustrate the standard clearly.
@@ -83,6 +89,8 @@ Engaging seriously across democratic traditions — including with systems that 
 Ours is historical: the record of social change shows repeatedly that what looks structurally impossible from inside a current equilibrium sometimes isn't. Abolitionists were told the odds were against them. So were suffragists, anti-apartheid activists, and independence movements across the colonised world. Standard game theory, which assumes fixed preferences and stable power, would have written most of them off. History didn't.
 
 This disposition — holding idealistic long-term goals while engaging pragmatically and in good faith with the systems that actually exist — is what we call [utopian realpolitik](concepts/utopian-realpolitik.md). It is not naivety. It is a considered bet, informed by history, that the structural constraints people point to are less permanent than they appear — and that engagement across difference is more likely to move things than withdrawal from it.
+
+The aspiration is not a world in which every system looks the same. It is a world in which more people have more genuine say in the decisions that govern them — however that is organised, and whatever form accountability takes.
 
 ---
 
