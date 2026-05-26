@@ -14,9 +14,13 @@ The standard is not "does this look like Australian or European democracy." It i
 
 When evaluating whether an organisation or system belongs in the DOD landscape, we ask:
 
-> *Is this a system of governance for and with the people — however that country or community defines "the people" — pursued in good faith?*
+> *Is this a system of governance for and with the people — however that country or community structures participation and representation — pursued in good faith?*
 
-The "however the country defines it" part is intentional. A vanguard party that genuinely believes it represents working-class interests and builds consultative structures to test that claim is operating within a different theory of democracy than a liberal pluralist system — but it may still be operating in good faith within its own framework. We are interested in both. We do not require systems to share our ideological starting point before we will engage with them.
+The "however they structure participation and representation" part is intentional. A vanguard party that genuinely believes it represents working-class interests and builds consultative structures to test that claim is operating within a different theory of democracy than a liberal pluralist system — but it may still be operating in good faith within its own framework. We are interested in both. We do not require systems to share our ideological starting point before we will engage with them.
+
+What is not variable is scope. **The 'people' in this question means everyone subject to a governance system's power — not just those the system designates as its constituency.** A system that governs well for a defined group while exercising power over an excluded population is answerable to the accountability question for both. Governance power creates accountability obligations; a system cannot choose who those obligations extend to by narrowing its own definition.
+
+Athens is the clarifying historical case. Its democratic institutions produced genuine civic participation, deliberation, and accountability among citizens — sophisticated governance by any measure, and largely passing the good-faith test within its own citizen class. But Athens governed a society in which slaves and resident aliens were subject to Athenian authority while excluded from the demos. The governance innovation was real. So was the exclusion. The latitude DOD offers concerns how accountability is structured for the people — not who counts as the people in the first place.
 
 ## Three disqualifiers
 
@@ -33,6 +37,8 @@ Good faith is the operative test. Three things break it:
 This approach is sometimes called relative epistemology in political philosophy: judging a system against its own stated values rather than an external universal standard. It is not relativism — we are not saying all systems are equally good. We are saying the most honest and most useful question is *"is this system living up to what it claims to be?"*
 
 This is also more respectful. Telling a vanguard state it must become a multi-party liberal democracy before it counts as democratic is not engagement — it is a demand for conversion. Asking instead: *"you say you govern for the people — where are the mechanisms by which the people can tell you when you're wrong?"* — that is a question any system can engage with honestly, and it is a question whose answer is genuinely informative.
+
+The scope of that question, however, is not relative. Relative epistemology applies to *how* accountability is organised — the structures of participation, the theory of representation, the mechanisms of correction. It does not determine *who* falls within the accountability obligation. That is set by the reach of governance power, not by the system's own designation. A system can be judged by its own values; it cannot set its own scope.
 
 ## What this means in practice
 
@@ -51,6 +57,8 @@ For this framework to be trustworthy — including to systems operating under ve
 The three disqualifiers apply equally to Australia, the United States, the United Kingdom, and the European Union as they do to China or Russia.
 
 Elite capture of a consultative process is bad faith whether it happens in Canberra or Beijing. A two-party system structurally entrenched against challengers fails the same structural inflexibility test as a vanguard system that suppresses internal reform. Campaign finance arrangements that systematically translate wealth into political access are a form of hypocrisy — claiming to represent the people while the structure serves a narrower interest. The same logic extends to foreign policy: a government that invokes democratic values and international law selectively — applying different standards to allies than to adversaries — is running the hypocrisy disqualifier against its own stated position.
+
+It also extends to governance scope. A system that conducts genuine democratic processes for one population while exercising power over another without accountability is not applying democratic standards consistently — it is applying them selectively by designation. The excluded population is within the accountability question whether the system acknowledges it or not. This is the same test Athens failed, and it applies equally to any contemporary system that draws its democratic boundary short of the people it actually governs.
 
 DOD exists in Australia and most of its members operate within liberal democratic systems. Much of the work in our landscape is specifically about reforming them. The point is not that liberal democracies are bad, or that other systems are better. The point is that the same question applies everywhere: *where are the mechanisms by which the people can tell power when it is wrong, and does power actually respond?*
 
