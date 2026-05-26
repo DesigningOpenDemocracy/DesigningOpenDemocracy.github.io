@@ -63,7 +63,21 @@ This suggests two things for evaluating democratic systems today.
 
 **Second**, the line between "the people we govern democratically" and "the people we govern without accountability" does not have to follow citizenship law. It follows governance power. Wherever a democratic system exercises authority over people — through military occupation, colonial administration, economic control, or legal jurisdiction — those people are within the scope of the accountability question, regardless of their formal status. Athens did not need to call slaves citizens to owe them something. The question was whether it could hold itself accountable for how it treated them, and whether there were mechanisms by which they could contest that treatment.
 
-Those are the same questions today.
+Those are the same questions today. The historical distance makes the pattern easier to see. Nobody defends the exclusion of slaves from the Athenian demos. Nobody defends apartheid. The argument is settled in those cases. It is not settled everywhere.
+
+## The contemporary case
+
+> **Note for human reviewer:** The following section names Israel/Palestine explicitly as a contemporary application of the historical pattern. This is the most politically sensitive part of the post and should be reviewed and signed off by a human author before publication. The framing is analytic — it applies the same governance scope question used throughout — but the editorial decision to publish it should rest with a human.
+
+The most contested contemporary application of this question is Israel and Palestine.
+
+Israel has functioning democratic institutions — elections, a free press, genuine political competition, an active civil society. Israeli organisations including the [Israel Democracy Institute](../../organisations/israel-democracy-institute.md), [Movement for Quality Government](../../organisations/mqg.md), and [Darkenu](../../organisations/darkenu.md) work on democratic accountability, anti-corruption, and rule of law from inside Israeli democratic discourse. The 2023–2024 judicial reform crisis, which drew mass civic mobilisation, was a live argument within Israeli democracy about where the limits of executive power should sit. That argument is real, and DOD's landscape includes the organisations making it.
+
+The governance exercised over Palestinians in the occupied West Bank and Gaza operates under different rules. Palestinians there have no vote in Israeli elections, no recourse to Israeli courts on equal terms, and no mechanism to contest the military administration governing significant aspects of their lives. The occupation has now lasted more than five decades. The governance boundary between Israeli citizens and Palestinians under occupation is not citizenship in the conventional sense — it is a line determining who has democratic recourse and who does not, drawn across people subject to the same governing power.
+
+This is not a novel framing. It is the framework applied by Israeli human rights organisations — B'Tselem used it explicitly in their 2021 report — and reflected in the 2024 International Court of Justice advisory opinion on the legal status of the occupation. The argument about where Israeli democratic accountability extends is being made, actively and at cost, by organisations on both sides of the line. [AMAN Palestine](../../organisations/aman-palestine.md) — the Palestinian anti-corruption and governance integrity coalition — is in the DOD landscape for the same reason the Israeli organisations are: it is doing the work of holding governance accountable to its own stated standards, under conditions where that work is difficult.
+
+The question DOD's framework asks is the same it asks everywhere: where are the mechanisms by which the people — all the people subject to this governance — can contest decisions made about them, and does power actually respond?
 
 ## A note on the direction of history
 
