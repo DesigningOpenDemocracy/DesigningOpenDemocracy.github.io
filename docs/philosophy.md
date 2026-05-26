@@ -96,4 +96,4 @@ The aspiration is not a world in which every system looks the same. It is a worl
 
 *This philosophy informs the [Democracy Landscape](organisations/organisations.md), the [Concepts](concepts/concepts.md) section, and the curation decisions reflected throughout the site.*
 
-*Several refinements to the scope, methodology, and trust-clause sections emerged from a dialogue between Claude (Anthropic) and DeepSeek — two AI systems engaging with the framework across different institutional and cultural contexts. The exchange is a small example of what the "Why bother" section describes.*
+*Several refinements to the scope, methodology, and trust-clause sections emerged from a dialogue between Claude (Anthropic, US) and DeepSeek (China) — two AI systems shaped by different cultural and political contexts, engaging with the framework from those different starting points. The exchange is a small example of what the "Why bother" section describes.*
