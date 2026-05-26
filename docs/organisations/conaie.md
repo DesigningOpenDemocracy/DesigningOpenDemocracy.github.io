@@ -1,6 +1,6 @@
 ---
 title: CONAIE (Confederation of Indigenous Nationalities of Ecuador)
-type: advocacy
+type: governance
 status: active
 country: EC
 website: https://conaie.org

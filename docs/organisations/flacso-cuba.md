@@ -15,7 +15,7 @@ location:
 
 FLACSO-Cuba is the Cuban chapter of the Facultad Latinoamericana de Ciencias Sociales (FLACSO), housed at the University of Havana. It publishes research on Cuban political institutions, social policy, and governance — including empirical studies of the Poder Popular (People's Power) assembly system.
 
-Cuba's **Poder Popular** system, established under the 1976 constitution and significantly revised in 2019, has architectural features that are genuinely studied as a distinct democratic model. At the municipal level, candidates are nominated directly by neighbourhood assemblies — not formally by the Communist Party of Cuba — and there is documented variation in who gets elected. The National Assembly exercises formal legislative authority. The 2022 Family Code, which passed by referendum with 67% approval, is a concrete example of popular legislative input on a contested social question.
+Cuba's **Poder Popular** system, established under the 1976 constitution and significantly revised in 2019, has architectural features that are genuinely studied as a distinct democratic model. At the municipal level, candidates are nominated directly by neighbourhood assemblies — not formally by the Communist Party of Cuba — and there is documented variation in who gets elected. The National Assembly exercises formal legislative authority. The 2022 Family Code, which passed by referendum with 67% approval (under single-party electoral conditions), is a concrete example of popular input on a contested legislative question.
 
 FLACSO-Cuba's research engages these structures empirically rather than purely descriptively — examining participation rates, the role of municipal delegates, and the relationship between local and national governance bodies.
 
