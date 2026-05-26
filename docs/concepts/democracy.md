@@ -184,6 +184,8 @@ following:
 - Good Governance.
 - Peace.
 
+> **DOD note:** The characteristics described here reflect the liberal-democratic and representative tradition. Other theories of democratic accountability — consultative systems, sortition-based selection, vanguard governance — answer the same underlying question (*how does a society govern for and with its people?*) through different mechanisms. DOD engages the full range; see [Philosophy](../philosophy.md).
+
 ## Sources:
 
 - <https://www.britannica.com/topic/democracy/>

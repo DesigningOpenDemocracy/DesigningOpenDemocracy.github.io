@@ -11,6 +11,8 @@ location:
   name: New Delhi, India
 ---
 
+> **Note on scope:** IFF's work sits at the edge of DOD's landscape. Its focus is on defending the digital conditions for democratic participation — internet access, freedom from surveillance — rather than designing governance mechanisms directly. It is included because those conditions are a direct prerequisite for how citizens engage with governance in an increasingly digital public sphere.
+
 The Internet Freedom Foundation (IFF) was founded on 15 August 2016 (India's Independence Day), growing out of the SaveTheInternet.in movement that successfully defended net neutrality in India. IFF is domestically funded and focused specifically on civil liberties and democratic participation in the digital sphere.
 
 IFF's work combines strategic litigation, policy submissions, and public-facing research. It has been a petitioner or intervener in cases spanning online privacy, surveillance reform, free expression, and internet access.
