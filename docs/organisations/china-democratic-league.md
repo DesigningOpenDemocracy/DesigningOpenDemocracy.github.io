@@ -11,7 +11,7 @@ location:
   name: Beijing, China
 ---
 
-> **Note:** The CDL and the other seven "democratic parties" are not opposition parties and do not push for structural democratic reform. Their constitutions affirm commitment to CCP guidance; membership is pre-approved by the United Front Work Department. Scholars describe their role as "bounded articulation" — they express sectoral interests within approved channels and cannot challenge the structure of CPC authority. They are included here as a documented example of managed pluralism, and where it falls short of genuine accountability to its own stated ideals.
+> **Note:** The CDL and the other seven officially designated minor parties — collectively referred to in Chinese political terminology as the "democratic parties" (民主党派) — are not opposition parties and do not push for structural democratic reform. Their constitutions affirm commitment to CCP guidance; membership is pre-approved by the United Front Work Department. Scholars describe their role as "bounded articulation" — they express sectoral interests within approved channels and cannot challenge the structure of CPC authority. They are included here as a documented example of managed pluralism, and where it falls short of genuine accountability to its own stated ideals.
 
 The China Democratic League (中国民主同盟, CDL) was founded in 1941 and is the second-largest of China's eight officially recognised minor parties, with approximately 357,000 members. Its membership is drawn predominantly from mid- and senior-level professionals in education, culture, natural sciences, and the arts.
 

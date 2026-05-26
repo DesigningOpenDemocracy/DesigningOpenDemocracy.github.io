@@ -53,8 +53,11 @@ There are different forms of democracy such as:
 - [[Constitutional Democracy]]
 - Participatory Democracy
 - [[Liberal Democracy]]
+- Deliberative Democracy / [Sortition](sortition.md)
+- Consultative Democracy
 - Economic Democracy
 - Social Democracy
+- [Vanguard / whole-process democracy](vanguardism.md)
 - Elite Democracy
 - Majoritarian Democracy
 
@@ -62,12 +65,11 @@ All terms are used to refer to various forms of democracy. While these
 terms frequently overlap and are frequently incompatible, there is
 almost universal agreement that democracy is a positive thing.
 
-## Characteristics of Democracy
+## Characteristics of Representative Democracy
 
-Respectively, elections held on a regular basis are not the only
-defining feature of democracy. There are several additional principles
-that must be present in order for a democracy to function properly. They
-include the following:
+The following characteristics describe the liberal-representative democratic tradition — the form most widely studied in Western political science. Other democratic traditions (consultative, deliberative, vanguard) organise accountability differently; the underlying question — *how does a society govern for and with its people?* — remains the same across all of them.
+
+Elections held on a regular basis are not the only defining feature even within this tradition. Several additional principles are considered necessary:
 
 ### 1. Respect for Human Rights
 
@@ -82,8 +84,7 @@ that underpin democracy, such as the following:
 
 ### 2. Multi-party System and Political Tolerance
 
-A multi-party or two-party system is critical to the functioning of any
-democracy. Multiple strong political parties contesting in the elections
+A multi-party or two-party system is a defining feature of representative democracy. Multiple strong political parties contesting in the elections
 ensure that voters have a choice and that diverse and competing views
 and interests are represented in parliaments. In a democracy, active
 opposition parties investigate and debate the work of the ruling party
