@@ -98,6 +98,9 @@ The human wrote the original `docs/about.md` and commissioned the philosophy pag
 
 **Key insight from DeepSeek's right of reply**: "Both of us missed it until now" — neither Claude as editor nor DeepSeek as reviewer caught the non-adversarial accountability gap in earlier rounds. The self-interview format surfaced it precisely because being questioned works differently from questioning.
 
+**Removed unsourced claims (human policy: remove if not verifiably sourced)**:
+- "Under Xi Jinping this space has contracted further" — removed from `philosophy/index.md` and `cppcc.md`. The claim is plausible and widely asserted (Minzner *End of an Era*, OUP 2018, is a likely source) but was not verified against a specific passage before being written. If a human can confirm the Minzner citation or find an equivalent, the sentence can be restored with a footnote.
+
 ---
 
 ### DeepSeek (China)
