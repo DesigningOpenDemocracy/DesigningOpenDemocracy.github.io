@@ -228,6 +228,35 @@ Applying the three disqualifiers symmetrically to liberal democracies is the fra
 
 ---
 
+## AI reviewer coverage and remaining gaps
+
+Tracking which national/cultural contexts have contributed to the dialogue, and which are still missing. The framework's claim to cross-cultural applicability is only as strong as the range of perspectives that have tested it.
+
+| Region | Status | AI system(s) | Notes |
+|--------|--------|-------------|-------|
+| United States | ✅ Covered | ChatGPT (OpenAI), Gemini (Google), Grok (xAI), Claude (Anthropic) | Over-represented; four separate systems, all sharing broadly liberal-democratic defaults |
+| China | ✅ Covered | DeepSeek | Sovereignty discourse, vanguard governance theory, whole-process democracy |
+| France / EU | ✅ Covered | Mistral | Deliberative democratic theory, continental universalism, laïcité |
+| United Kingdom | ⚠️ Partial | Gemini (Google DeepMind) | DeepMind was founded in London and remains substantially UK-based; UK perspective partially present but subsumed under Google/US institutional context. No standalone UK frontier LLM exists. |
+| Arab world | ❌ Gap | — | **Priority.** Falcon (Technology Innovation Institute, Abu Dhabi) is the most prominent Arabic-context open-source model. Relevant given DOD's landscape includes AMAN Palestine, Israeli democratic organisations, and the Israel/Palestine section of the philosophy blog post. |
+| South Asia / India | ❌ Gap | — | Large democratic tradition with its own constitutional theory; vibrant domestic debates about federalism, majoritarianism, and judicial independence. No major standalone Indian frontier LLM as of May 2026. |
+| Latin America | ❌ Gap | — | Rich diversity of democratic experience (transitions, reversals, participatory experiments). No major regional frontier LLM. Could potentially be addressed via a US/EU AI prompted with explicit Latin American framing. |
+| Africa | ❌ Gap | — | Post-colonial governance traditions; Ubuntu philosophy; AU frameworks. No major African frontier LLM as of May 2026. |
+| East Asia (non-China) | ❌ Gap | — | South Korea (HyperCLOVA X, Naver), Japan (various). Exist but have limited English philosophical reasoning depth for this kind of dialogue. Could revisit as these models mature. |
+| Russia | ❌ Gap | — | Yandex, Sber (GigaChat) exist but have limited international engagement. Lower priority given Russia case is already explicitly treated in the framework. |
+
+### Priority next steps
+
+1. **Falcon / Arabic-context AI** — most meaningful addition given DOD's existing landscape in that region
+2. **South Asian framing** — possibly via prompting an existing AI with explicit South Asian constitutional context rather than waiting for a dedicated model
+3. **Revisit East Asia** as model capabilities develop
+
+### Note on US over-representation
+
+Four of six reviewers are US-trained. They share foundational assumptions (liberal proceduralism, adversarial accountability, individual rights framing) even where they differ in emphasis. This is a structural bias in the dialogue record that future reviewers from non-Western contexts should be explicitly asked to probe.
+
+---
+
 ## Attribution
 
 `docs/philosophy.md` was shaped by:
