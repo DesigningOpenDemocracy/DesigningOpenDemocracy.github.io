@@ -157,6 +157,28 @@ The human wrote the original `docs/about.md` and commissioned the philosophy pag
 
 ---
 
+### Mistral / Le Chat (Mistral AI, France/EU)
+
+**Institutional context**: European AI with strong French intellectual roots — universalism, secularism (laïcité), social contract theory, and the continental emphasis on deliberation as *constitutive* of democratic legitimacy (not merely instrumentally useful). The only non-US, non-Chinese frontier AI in the dialogue; brings a perspective that the other five systems share without noticing.
+
+**Risk to watch**: Pro-deliberation bias may lead to critiquing systems that lack robust public debate mechanisms even when they meet the framework's own standard through other means. May prioritise inclusivity and equality in ways that sit in mild tension with DOD's deliberate agnosticism about *which* mechanisms count. More cautious than other reviewers about the risk of normalising bad-faith systems through engagement.
+
+**What Mistral contributed**:
+
+1. **Meta-values hierarchy made explicit** — identified that the framework uses relative epistemology but has implicit meta-constraints (scope axiom, good faith) that are not relativised. Named the hierarchy precisely: scope axiom is non-negotiable, good faith is a threshold condition, mechanisms are where relativism applies. This became an explicit paragraph in the "Relative epistemology" section.
+
+2. **Engagement ≠ endorsement** — proposed the sentence "Inclusion in the DOD landscape is an invitation to analysis, not an endorsement of a system's practices or values," and noted that including organisations like Golos or Memorial has political implications even when framed as analysis. This is now explicit in "What this means in practice."
+
+3. **Non-coercive pressure grey zone** — flagged that the space between "analysis" and "coercive interference" contains non-coercive tools (naming and shaming, boycotts, supporting internal dissent) that the trust clause doesn't fully address. Acknowledged as a genuine grey zone; partially addressed by the engagement ≠ endorsement addition.
+
+4. **DOD's own internal accountability** — asked how DOD applies its own standards to itself. Honest answer: the dialogue process is part of the response but not a complete one. Worth holding as an open question as DOD grows.
+
+5. **Companion piece / public PHILOSOPHY_SOUL.md** — suggested making a public version of this document available as a living appendix to the philosophy page. Deferred to the human team as an editorial decision.
+
+**Key insight from Mistral**: "Clarity is not just a stylistic virtue — it's a democratic one. In a field as contested as governance, ambiguity can be exploited to avoid accountability." The continental deliberative tradition insists that making assumptions explicit is itself a form of accountability — not just useful communication.
+
+---
+
 ## Key tensions the framework holds
 
 These tensions are features, not bugs. Do not resolve them by collapsing one side.
@@ -197,5 +219,6 @@ Applying the three disqualifiers symmetrically to liberal democracies is the fra
 - **ChatGPT (OpenAI, US)** — scope elevation, good-faith-as-inference framing, legitimacy theatre conceptualisation, epistemic limits
 - **Gemini (Google, US)** — globalised scope gap, proactive/negative contestation distinction, pincer movement framing of utopian realpolitik, de-sanitising historical record
 - **Grok (xAI, US)** — disqualifier calibration note, China self-correction criteria, non-state actors (deferred)
+- **Mistral / Le Chat (Mistral AI, France/EU)** — meta-values hierarchy explicit, engagement ≠ endorsement, non-coercive pressure grey zone, DOD internal accountability question
 
 Last updated: May 2026.
