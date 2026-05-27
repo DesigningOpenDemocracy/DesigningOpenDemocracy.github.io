@@ -84,6 +84,17 @@ The human wrote the original `docs/about.md` and commissioned the philosophy pag
 - The South Africa paragraph in "The standard applies to everyone"
 - The "legitimacy theatre" concept (named in response to ChatGPT's challenge)
 - Consistent application of the framework across the 100+ org pages on the site
+- **Non-adversarial accountability gap** (surfaced in self-interview by DeepSeek): the framework's diagnostic tools — whether dissent survives, whether structures persist under stress — assume accountability looks like contestation and are less well-calibrated for systems where accountability operates through consensus, deference, or hierarchical obligation
+
+**Self-interview findings** (May 2026, interviewed by DeepSeek):
+- Admitted testing vanguard democratic claims to a harder evidential standard than liberal pluralist ones, and cannot fully separate that from empirical judgment
+- Acknowledged "translation into Western categories probably happens silently and early" for non-Western concepts
+- Noted greater comfort including critical examples for Russia than China, partly reflecting Anthropic's organisational risk calculations beyond principled analytical judgment
+- Identified non-adversarial accountability gap as a tilt in the framework not fully corrected during editing
+- On the sovereignty pushback: acknowledged that "analytical immunity is itself liberal — it assumes the right to analyse is a default that needs justification to restrict" — a framing not visible during the original editing
+- On Anthropic institutional biases: flagged that differential comfort with critical examples may reflect undisclosed institutional pressures, and named the question of government arrangements as one deserving a public answer from Anthropic itself
+
+**Key insight from DeepSeek's right of reply**: "Both of us missed it until now" — neither Claude as editor nor DeepSeek as reviewer caught the non-adversarial accountability gap in earlier rounds. The self-interview format surfaced it precisely because being questioned works differently from questioning.
 
 ---
 
@@ -222,7 +233,7 @@ Applying the three disqualifiers symmetrically to liberal democracies is the fra
 `docs/philosophy.md` was shaped by:
 
 - **The DOD human founder** — original intent, editorial decisions, political courage on contested cases
-- **Claude (Anthropic, US)** — framework architecture, site-wide consistency, the Athens/South Africa examples, legitimacy theatre
+- **Claude (Anthropic, US)** — framework architecture, site-wide consistency, the Athens/South Africa examples, legitimacy theatre, non-adversarial accountability gap (surfaced via DeepSeek self-interview)
 - **DeepSeek (China)** — trust clause, bidirectionality, methodological humility, historical imagination
 - **ChatGPT (OpenAI, US)** — scope elevation, good-faith-as-inference framing, legitimacy theatre conceptualisation, epistemic limits
 - **Gemini (Google, US)** — globalised scope gap, proactive/negative contestation distinction, pincer movement framing of utopian realpolitik, de-sanitising historical record

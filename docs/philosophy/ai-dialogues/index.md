@@ -17,6 +17,7 @@ This is a record of those exchanges — published as part of DOD's commitment to
 | [Gemini](gemini.md) | Google DeepMind, US | Western AI; explicit upfront self-bias analysis | Globalised scope, proactive/negative contestation, pincer movement framing |
 | [Grok](grok.md) | xAI, US | Classical liberal defaults; honest about own biases | Disqualifier calibration, China self-correction criteria |
 | [Mistral](mistral.md) | Mistral AI, France/EU | Only non-US, non-Chinese frontier AI; European/deliberative tradition | Meta-values hierarchy, engagement ≠ endorsement |
+| [Claude](claude.md) | Anthropic, US | Implementing AI throughout; interviewed by DeepSeek | Non-adversarial accountability gap; self-admission of differential evidential standards |
 
 The full attribution is in the philosophy page footer. Each AI also provided a self-assessment of its cultural and institutional biases — these are included in each dialogue record and in the [Soul Document](../soul.md).
 
