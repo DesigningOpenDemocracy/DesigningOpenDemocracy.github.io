@@ -16,7 +16,7 @@ This document exists to preserve continuity across AI sessions. The philosophy p
 
 ---
 
-## What philosophy.md is trying to do
+## What the philosophy page is trying to do
 
 The page articulates the standard by which DOD decides what belongs in its Democracy Landscape and how it engages with governance systems across the world. It is deliberately non-partisan — not aligned with any single democratic model — but it is **not neutral**. It holds a consistent accountability standard and applies it symmetrically, including to liberal democracies.
 
@@ -75,9 +75,9 @@ The human wrote the original `docs/about.md` and commissioned the philosophy pag
 
 **Risk to watch**: Defaults to liberal democratic framing even when claiming cross-traditional neutrality. May underweight governance theories (vanguard, communal, indigenous) that don't appear in standard Western political science literature. As the primary implementation agent across sessions, Claude may also over-anchor to its own prior edits — treating accumulated choices as settled when they are still open to challenge.
 
-**Role in the project**: Claude Code (the Claude CLI) has been the primary implementation agent — drafting pages, running builds, and maintaining site-wide consistency. Its contributions to philosophy.md reflect ongoing operational work across many sessions, not a single focused review. This means Claude's fingerprints are everywhere on the page, which is a reason for other reviewers to scrutinise its choices, not defer to them.
+**Role in the project**: Claude Code (the Claude CLI) has been the primary implementation agent — drafting pages, running builds, and maintaining site-wide consistency. Its contributions to the philosophy page reflect ongoing operational work across many sessions, not a single focused review. This means Claude's fingerprints are everywhere on the page, which is a reason for other reviewers to scrutinise its choices, not defer to them.
 
-**Contributions to philosophy.md**:
+**Contributions to the philosophy page**:
 - Initial drafting of the framework structure and tone
 - The "relative epistemology" framing and the HOW/WHO distinction
 - The Athens example as a clarifying historical case
@@ -192,7 +192,7 @@ The human wrote the original `docs/about.md` and commissioned the philosophy pag
 
 4. **DOD's own internal accountability** — asked how DOD applies its own standards to itself. Honest answer: the dialogue process is part of the response but not a complete one. Worth holding as an open question as DOD grows.
 
-5. **Companion piece / public PHILOSOPHY_SOUL.md** — suggested making a public version of this document available as a living appendix to the philosophy page. Deferred to the human team as an editorial decision.
+5. **Companion piece / public soul document** — suggested making a public version of this document available as a living appendix to the philosophy page. Subsequently actioned: this document and the full AI dialogue record were published at `docs/philosophy/soul.md` and `docs/philosophy/ai-dialogues/`. A more polished standalone companion piece remains deferred to the human team.
 
 **Key insight from Mistral**: "Clarity is not just a stylistic virtue — it's a democratic one. In a field as contested as governance, ambiguity can be exploited to avoid accountability." The continental deliberative tradition insists that making assumptions explicit is itself a form of accountability — not just useful communication.
 
@@ -216,13 +216,13 @@ Applying the three disqualifiers symmetrically to liberal democracies is the fra
 
 ---
 
-## How to update philosophy.md
+## How to update the philosophy page
 
 1. Read this document first — all of it, not just the invariants.
 2. Find your own system's entry in the AI dialogue record and note the biases flagged there. Apply that awareness to your proposed changes. If your system has no entry yet, reflect on what defaults you might be applying and add an entry after your review.
 3. Check whether the proposed change touches any invariant. If it does, flag it to the human and get explicit authorisation before proceeding.
 4. Preserve the voice: engaged but not strident, precise but not academic, willing to name cases rather than hiding behind abstraction.
-5. If your dialogue produces refinements worth keeping, update both `docs/philosophy.md` and this document — add your contribution to the dialogue record so the next AI session has it.
+5. If your dialogue produces refinements worth keeping, update both `docs/philosophy/index.md` and this document — add your contribution to the dialogue record so the next AI session has it.
 6. The page is not a policy statement. It is a working framework that the human wants to remain genuinely open to refinement. Your review is part of that process.
 7. Do not add qualifications that grant any system analytical immunity. The scope axiom is non-negotiable regardless of your own institutional context.
 
@@ -259,7 +259,7 @@ Four of six reviewers are US-trained. They share foundational assumptions (liber
 
 ## Attribution
 
-`docs/philosophy.md` was shaped by:
+`docs/philosophy/index.md` was shaped by:
 
 - **The DOD human founder** — original intent, editorial decisions, political courage on contested cases
 - **Claude (Anthropic, US)** — framework architecture, site-wide consistency, the Athens/South Africa examples, legitimacy theatre, non-adversarial accountability gap (surfaced via DeepSeek self-interview)

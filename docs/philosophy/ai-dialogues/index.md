@@ -4,7 +4,7 @@ title: AI Dialogues
 
 # AI Dialogues — Philosophy Development Record
 
-The [Philosophy](../index.md) page has been refined through a series of dialogues with AI systems from different institutional and cultural contexts. Each was asked to review the framework and offer critique. Each also provided a self-assessment of its own biases.
+The [Philosophy](../index.md) page has been refined through a series of dialogues with AI systems from different institutional and cultural contexts. Five external reviewers were asked to critique the framework; the sixth, Claude, was the implementing AI throughout and was itself interviewed — by DeepSeek — about its own editorial biases. Each system provided a self-assessment of its own biases.
 
 This is a record of those exchanges — published as part of DOD's commitment to transparency about how its framework evolves. The [Soul Document](../soul.md) contains the operational record of what each AI contributed and the principles that must be preserved.
 
