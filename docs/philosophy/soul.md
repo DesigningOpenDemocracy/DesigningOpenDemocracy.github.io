@@ -161,6 +161,8 @@ The human wrote the original `docs/about.md` and commissioned the philosophy pag
 
 **Key insight from Gemini**: "Every system has an accent. The goal of a mature democracy — or a mature intelligence — is not to achieve a mythical state of bias-free neutrality, but to build the reflexive loops necessary to catch itself when that bias begins to blind it."
 
+**Flagged (AI-voice, unverified historical claim)**: Line 105 of `philosophy/index.md` — "Systemic transformation has typically required both disruptors... and institutionalists who translate that disruptive energy into durable structural change." This was introduced by Gemini and is stated as historical fact ("has typically required"), not as DOD's interpretive position. It is plausible and defensible, but has not been verified against a specific historical or political science source. A human should either confirm the formulation as DOD's own interpretive view (no citation needed) or source it before treating it as settled.
+
 ---
 
 ### Grok (xAI, US)
