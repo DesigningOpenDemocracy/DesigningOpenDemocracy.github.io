@@ -26,3 +26,4 @@ Golos no longer exists as an operating organisation. It is listed here under Rus
 ## Links
 
 - Archived website: [web.archive.org](https://web.archive.org/web/*/https://www.golos.org/)
+- Wikipedia: [Golos](https://en.wikipedia.org/wiki/Golos_(organization))

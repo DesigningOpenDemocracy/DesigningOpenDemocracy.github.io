@@ -39,3 +39,4 @@ Liquid democracy has been implemented in several contexts:
 - [Issue-Based Direct Democracy](issue-based-direct-democracy.md) — Flux's specific implementation
 - [Direct Democracy](direct-democracy.md)
 - [Sortition](sortition.md) — an alternative approach to the representation problem
+- Wikipedia: [Liquid democracy](https://en.wikipedia.org/wiki/Liquid_democracy)

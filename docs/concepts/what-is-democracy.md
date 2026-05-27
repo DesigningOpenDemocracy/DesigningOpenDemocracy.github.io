@@ -11,3 +11,7 @@ title: What is Democracy?
 Democracy is a form of governance in which all citizens of adult age are
 in charge of what a given polity, such as a state, country, or city
 does.
+
+## Further reading
+
+- Wikipedia: [Democracy](https://en.wikipedia.org/wiki/Democracy)

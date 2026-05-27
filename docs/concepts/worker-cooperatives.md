@@ -16,3 +16,7 @@ by their employees democratically. Employees typically join the
 cooperative by paying a membership fee, and each employee receives one
 vote. They are most prevalent in startups and small businesses, though
 they can exist in organizations with thousands of employees.
+
+## Further reading
+
+- Wikipedia: [Worker cooperative](https://en.wikipedia.org/wiki/Worker_cooperative)
