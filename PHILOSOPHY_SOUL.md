@@ -139,6 +139,24 @@ The human wrote the original `docs/about.md` and commissioned the philosophy pag
 
 ---
 
+### Grok (xAI, US)
+
+**Institutional context**: US AI built by xAI. Leans toward classical liberal values: individual rights, free speech, open inquiry, skepticism of concentrated power, preference for competitive mechanisms (markets, elections, ideas). More sympathetic to systems with strong independent accountability, dispersed power, and tolerance for dissent — including their messiness and inefficiency.
+
+**Risk to watch**: May view legitimacy theatre more harshly in systems that suppress open criticism while being slightly more forgiving of capture and inefficiency in liberal democracies, on the assumption their self-correction potential is higher. Weights epistemic openness and long-term adaptability in ways that align more with Western/Enlightenment traditions than with vanguard or consensus-based systems. Grok named these biases explicitly and unprompted — a useful signal that the self-awareness is genuine rather than performed.
+
+**What Grok contributed**:
+
+1. **Disqualifier calibration note** — identified that the boundary between legitimate bounded articulation within a tradition and disqualifying legitimacy theatre will remain contested and context-dependent. Adding explicit acknowledgment that this requires ongoing empirical judgment rather than a bright-line rule makes the framework more honest about how it actually operates.
+
+2. **China self-correction criteria** — the existing text noted China's self-correction capacity as "an open and important question" without stating what evidence would bear on it. Grok's formulation makes it observable: expansion of contestation space over time, or institutional responses to major policy failures that genuinely adjust core direction rather than reassert it.
+
+3. **Non-state actors (deferred)** — flagged that platforms, central banks, and international organisations exercising governance-like power will eventually need treatment under the globalised scope principle. Held as a deferred item to avoid diluting the foundational argument before it is settled.
+
+**Key insight from Grok**: Engaged seriously with the framework's consistent standard despite defaults that lean toward liberal institutional forms — and noted that the framework doing real work against those priors is a sign it's functioning. That an AI built by xAI found the relative epistemology approach useful for countering "knee-jerk universalism" is itself a small demonstration of the framework's cross-context applicability.
+
+---
+
 ## Key tensions the framework holds
 
 These tensions are features, not bugs. Do not resolve them by collapsing one side.
@@ -178,5 +196,6 @@ Applying the three disqualifiers symmetrically to liberal democracies is the fra
 - **DeepSeek (China)** — trust clause, bidirectionality, methodological humility, historical imagination
 - **ChatGPT (OpenAI, US)** — scope elevation, good-faith-as-inference framing, legitimacy theatre conceptualisation, epistemic limits
 - **Gemini (Google, US)** — globalised scope gap, proactive/negative contestation distinction, pincer movement framing of utopian realpolitik, de-sanitising historical record
+- **Grok (xAI, US)** — disqualifier calibration note, China self-correction criteria, non-state actors (deferred)
 
 Last updated: May 2026.
