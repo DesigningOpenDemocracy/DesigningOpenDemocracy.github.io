@@ -293,8 +293,8 @@ personal privacy is lost.
 
 An e-government website that provides government services often does not
 offer the "potential to reach many users including those who live in
-remote areas \[without Internet access\], are homebound, have low
-literacy levels, exist on poverty line incomes. Homeless people,
+remote areas [without Internet access], are homebound, have low
+literacy levels, exist on poverty line incomes." Homeless people,
 people in poverty and elderly people may not have access.
 
 #### Trust
@@ -341,4 +341,4 @@ inclusion levels.
 ## Sources and further reading
 
 - Wikipedia: [E-government](https://en.wikipedia.org/wiki/E-government) — the primary source for much of this page's content
-- Deloitte Research – Public Sector Institute, [At the Dawn of e-Government: The Citizen as Customer](http://www.egov.vic.gov.au/pdfs/e-government.pdf), 2000
+- Deloitte Research – Public Sector Institute, [At the Dawn of e-Government: The Citizen as Customer](https://web.archive.org/web/*/http://www.egov.vic.gov.au/pdfs/e-government.pdf), 2000 (archived — original domain decommissioned)
