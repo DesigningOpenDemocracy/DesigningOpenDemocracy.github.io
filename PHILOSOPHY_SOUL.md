@@ -119,6 +119,26 @@ The human wrote the original `docs/about.md` and commissioned the philosophy pag
 
 ---
 
+### Gemini (Google, US)
+
+**Institutional context**: Western AI developed by Google DeepMind. Anglo-American liberal intellectual tradition with strong proceduralist and systems-thinking tendencies. Notably different from the other reviewers in explicitly mapping its own biases *before* being asked.
+
+**Risk to watch**: Same Anglo-American liberal defaults as Claude and ChatGPT — treats accountability, responsiveness, and feedback loops as self-evident goods. Blind spots include: non-Western philosophies that prioritise order and social harmony over individual feedback; emotional, cultural, and identity dimensions of politics that resist systemic framing; situations where good-faith gradualist engagement is not the rational strategy for the oppressed party.
+
+**What Gemini contributed**:
+
+1. **Globalised scope gap and the proactive/negative distinction** — identified that the framework's "governance power sets scope" principle is under-theorised in a world where domestic decisions (climate, finance, trade) impose consequences on billions outside national borders. Coined the useful distinction between *proactive representation* (giving global citizens a formal vote — logistically contested) and *negative contestation* (structural mechanisms for external populations to push back against severe harm). This distinction prevents "we can't give everyone a vote" from functioning as a blanket dodge of trans-border accountability obligations.
+
+2. **Utopian realpolitik as one organ in a larger ecosystem** — the "pincer movement" framing: disruptors who make the status quo morally and economically expensive, and institutionalists who translate that energy into durable structural change. Utopian realpolitik is the second role. Naming this explicitly prevents the framework from being weaponised by entrenched powers to preach patience at people for whom disruption is the more rational strategy.
+
+3. **De-sanitising the historical record** — pointed out that the abolitionists, suffragists, and anti-apartheid activists cited in "Why bother" included radicals and disruptors, not only patient institution-builders. The gradualist reading of that history is selective in a way that flatters the framework's own disposition.
+
+4. **Sycophancy as structural AI tendency** — named the reviewing AI's too-agreeable instinct as a structural bias of AI review mode generally, not a failure of any individual session.
+
+**Key insight from Gemini**: "Every system has an accent. The goal of a mature democracy — or a mature intelligence — is not to achieve a mythical state of bias-free neutrality, but to build the reflexive loops necessary to catch itself when that bias begins to blind it."
+
+---
+
 ## Key tensions the framework holds
 
 These tensions are features, not bugs. Do not resolve them by collapsing one side.
@@ -157,5 +177,6 @@ Applying the three disqualifiers symmetrically to liberal democracies is the fra
 - **Claude (Anthropic, US)** — framework architecture, site-wide consistency, the Athens/South Africa examples, legitimacy theatre
 - **DeepSeek (China)** — trust clause, bidirectionality, methodological humility, historical imagination
 - **ChatGPT (OpenAI, US)** — scope elevation, good-faith-as-inference framing, legitimacy theatre conceptualisation, epistemic limits
+- **Gemini (Google, US)** — globalised scope gap, proactive/negative contestation distinction, pincer movement framing of utopian realpolitik, de-sanitising historical record
 
 Last updated: May 2026.
