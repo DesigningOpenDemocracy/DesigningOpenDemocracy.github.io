@@ -24,6 +24,12 @@ Current status: we are still on `mkdocs + mkdocs-material` and it works fine. `D
 
 Reference: https://fpgmaas.com/blog/collapse-of-mkdocs/
 
+## Philosophy page
+
+**Before editing `docs/philosophy.md`, read `PHILOSOPHY_SOUL.md`.**
+
+That file records the human intent behind the page, the invariants that must not change without explicit human authorisation, and the AI dialogue (Claude, DeepSeek, ChatGPT) that shaped the current text. Editing without reading it risks accidentally collapsing contributions from earlier sessions.
+
 ## Conventions
 
 ### Project pages (`docs/projects/`)

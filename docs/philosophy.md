@@ -18,17 +18,21 @@ When evaluating whether an organisation or system belongs in the DOD landscape, 
 
 The "however they structure participation and representation" part is intentional. A vanguard party that genuinely believes it represents working-class interests and builds consultative structures to test that claim is operating within a different theory of democracy than a liberal pluralist system — but it may still be operating in good faith within its own framework. We are interested in both. We do not require systems to share our ideological starting point before we will engage with them.
 
-What is not variable is scope. **The 'people' in this question means everyone subject to a governance system's power — not just those the system designates as its constituency.** A system that governs well for a defined group while exercising power over an excluded population is answerable to the accountability question for both. Governance power creates accountability obligations; a system cannot choose who those obligations extend to by narrowing its own definition.
+What is not variable is scope — and this is the load-bearing axiom of the framework. **The 'people' in this question means everyone subject to a governance system's power, not just those the system designates as its constituency.** Pluralism applies to *how* accountability is organised — the structures of participation, the theories of representation, the mechanisms of correction. It does not extend to *who* accountability is owed to. That is determined by the reach of governance power, not by the system's own definition. Governance power creates accountability obligations; a system cannot choose who those obligations extend to by narrowing its own definition of itself.
 
 Athens is the clarifying historical case. Its democratic institutions produced genuine civic participation, deliberation, and accountability among citizens — sophisticated governance by any measure, and largely passing the good-faith test within its own citizen class. But Athens governed a society in which slaves and resident aliens were subject to Athenian authority while excluded from the demos. The governance innovation was real. So was the exclusion. The latitude DOD offers concerns how accountability is structured for the people — not who counts as the people in the first place.
 
 ## Three disqualifiers
 
-Good faith is the operative test. Three things break it:
+Good faith is the operative test — understood as a structural-functional inference from observable institutional behaviour over time, not a moral or psychological claim about intentions. The framework cannot verify what any system intends; what it can evaluate are observable patterns: whether dissent survives, whether accountability mechanisms persist under stress, whether power ever substantively responds against its own immediate interests, whether corrective structures remain capable of producing real change. Those patterns, assessed over time, constitute the evidence for or against good faith.
+
+Three things break it:
 
 **1. Hypocrisy** — claiming to govern for the people while structurally serving a different interest. A government that holds elections it systematically rigs; a party that claims to represent workers while systematically enriching a small elite. The claim and the structure point in opposite directions.
 
 **2. Bad faith** — performing democratic process without genuine intent. Consultative bodies that exist to legitimise decisions already made. Parties that exist to provide the appearance of pluralism without the substance. The form of participation without the function.
+
+A sophisticated variant is *legitimacy theatre*: adaptive managed responsiveness that produces the observable form of accountability — bounded consultation, procedural participation, selective tolerance of criticism that cannot threaten core authority — without enabling the substance. The diagnostic question is whether power ever substantively responds against its own immediate interests. Legitimacy theatre is not unique to non-liberal systems; liberal democracies also generate symbolic responsiveness, elite-filtered agenda-setting, and procedural participation that preserves underlying power concentrations while maintaining the appearance of accountability.
 
 **3. Structural inflexibility** — a system that cannot reform itself even when it is failing its own stated ideals. Feedback loops to power that are broken or blocked. When a system systematically suppresses the organisations trying to hold it accountable to its *own* standards, that is structural inflexibility — and it is disqualifying regardless of what the system calls itself.
 
@@ -96,4 +100,4 @@ The aspiration is not a world in which every system looks the same. It is a worl
 
 *This philosophy informs the [Democracy Landscape](organisations/organisations.md), the [Concepts](concepts/concepts.md) section, and the curation decisions reflected throughout the site.*
 
-*Several refinements to the scope, methodology, and trust-clause sections emerged from a dialogue between Claude (Anthropic, US) and DeepSeek (China) — two AI systems shaped by different cultural and political contexts, engaging with the framework from those different starting points. The exchange is a small example of what the "Why bother" section describes.*
+*Several refinements to this philosophy — including the scope axiom, the good-faith-as-structural-inference framing, and the legitimacy theatre concept — emerged from dialogue between Claude (Anthropic, US), DeepSeek (China), and ChatGPT (OpenAI, US): three AI systems from different institutional contexts, engaging the framework on its own terms. The exchange is a small example of what the "Why bother" section describes.*
