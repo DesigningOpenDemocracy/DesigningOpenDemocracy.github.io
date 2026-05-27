@@ -87,7 +87,7 @@ The human wrote the original `docs/about.md` and commissioned the philosophy pag
 
 **What DeepSeek contributed**:
 
-1. **The trust clause** — DeepSeek initially suggested "mutual respect for sovereignty and non-interference" as a governing principle. Claude pushed back, correctly distinguishing DOD's analytical work from coercive democracy promotion. DeepSeek's clarification then produced the right framing: not an immunity clause but a *trust clause* — acknowledging that the history of "democracy promotion" as cover for external pressure is real and has eroded cross-traditional trust. This is now explicit in the "What this means in practice" section.
+1. **The trust clause** — DeepSeek initially suggested "mutual respect for sovereignty and non-interference" as a governing principle. Claude pushed back, distinguishing DOD's analytical work from coercive democracy promotion. DeepSeek's clarification then shifted the framing: not an immunity clause but a *trust clause* — acknowledging that the history of "democracy promotion" as cover for external pressure is real and has eroded cross-traditional trust. This is now explicit in the "What this means in practice" section.
 
 2. **Bidirectionality** — DeepSeek noted that DOD should make clear the learning runs both ways, and that non-Western governance traditions have things to teach. This became the "This exchange runs both ways" paragraph at the end of "The standard applies to everyone."
 
@@ -113,9 +113,9 @@ The human wrote the original `docs/about.md` and commissioned the philosophy pag
 
 3. **Legitimacy theatre** — ChatGPT identified that the framework's treatment of bad faith worked for clear-cut cases but underestimated how sophisticated systems can maintain "adaptive managed responsiveness" — the observable form of accountability without the substance. This is now named explicitly as *legitimacy theatre* within the bad faith disqualifier, with the note that it applies to liberal democracies too.
 
-4. **Epistemic limits** — ChatGPT correctly noted the framework should be explicit about operating as a method of inquiry rather than a verdict machine. This reinforced the methodological humility addition from the DeepSeek dialogue.
+4. **Epistemic limits** — ChatGPT noted the framework should be explicit about operating as a method of inquiry rather than a verdict machine. This reinforced the methodological humility addition from the DeepSeek dialogue.
 
-**Key insight from ChatGPT**: The genuine/simulated self-correction distinction is probably permanently underdetermined for any single observation. The framework's response to this is correct: assess patterns over time, not single instances. ChatGPT agreed this was the right answer.
+**Key insight from ChatGPT**: The genuine/simulated self-correction distinction is probably permanently underdetermined for any single observation. The framework's response — assess patterns over time, not single instances — was one ChatGPT agreed with.
 
 ---
 
