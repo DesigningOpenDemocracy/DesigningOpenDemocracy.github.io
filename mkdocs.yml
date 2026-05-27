@@ -25,6 +25,8 @@ theme:
 extra_css:
   - assets/css/customizations.css
   - https://unpkg.com/leaflet@1.9.4/dist/leaflet.css
+markdown_extensions:
+  - footnotes
 plugins:
   - search
   - literate-nav:
