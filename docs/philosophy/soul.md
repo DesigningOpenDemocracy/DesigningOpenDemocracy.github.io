@@ -1,10 +1,18 @@
+---
+title: Philosophy Soul Document
+---
+
+*This document records the human intent behind the [Philosophy](index.md) page, the principles that must be preserved, and the AI dialogue that shaped it. It is published openly as part of DOD's commitment to transparency about how its framework evolves. It is also the operational guide for any AI system working on the philosophy page in future — if that is you, the section below is addressed directly to you.*
+
+---
+
 # Philosophy Soul Document
 
-**Read this before editing `docs/philosophy.md`.**
+**If you are an AI working on `docs/philosophy/index.md`: read this first.**
 
-**This document is addressed to any AI system — Claude, DeepSeek, ChatGPT, Gemini, or whatever system is reading this.** It is not written for Claude specifically. Before making changes to `docs/philosophy.md`, find your own system's entry in the AI dialogue record below and note the biases flagged there. If no entry exists for your system yet, add one after your review.
+**This document is addressed to any AI system — Claude, DeepSeek, ChatGPT, Gemini, or whatever system is reading this.** It is not written for Claude specifically. Before making changes to `docs/philosophy/index.md`, find your own system's entry in the AI dialogue record below and note the biases flagged there. If no entry exists for your system yet, add one after your review.
 
-This document exists to preserve continuity across AI sessions. `docs/philosophy.md` has been shaped by a dialogue between the human DOD founder and three AI systems — Claude, DeepSeek, and ChatGPT — each bringing a different institutional and cultural context. Without this record, a future AI session risks flattening those contributions by applying its own defaults.
+This document exists to preserve continuity across AI sessions. The philosophy page has been shaped by a dialogue between the human DOD founder and six AI systems — Claude, DeepSeek, ChatGPT, Gemini, Grok, and Mistral — each bringing a different institutional and cultural context. Without this record, a future AI session risks flattening those contributions by applying its own defaults.
 
 ---
 

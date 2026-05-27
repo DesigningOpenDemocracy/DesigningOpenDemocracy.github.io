@@ -26,9 +26,9 @@ Reference: https://fpgmaas.com/blog/collapse-of-mkdocs/
 
 ## Philosophy page
 
-**Before editing `docs/philosophy.md`, read `PHILOSOPHY_SOUL.md`.**
+**Before editing `docs/philosophy/index.md`, read `docs/philosophy/soul.md`.**
 
-That file records the human intent behind the page, the invariants that must not change without explicit human authorisation, and the AI dialogue (Claude, DeepSeek, ChatGPT) that shaped the current text. Editing without reading it risks accidentally collapsing contributions from earlier sessions.
+That file records the human intent behind the page, the invariants that must not change without explicit human authorisation, and the AI dialogue (Claude, DeepSeek, ChatGPT, Gemini, Grok, Mistral) that shaped the current text. Editing without reading it risks accidentally collapsing contributions from earlier sessions.
 
 ## Conventions
 

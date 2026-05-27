@@ -2,7 +2,7 @@
 title: Philosophy
 ---
 
-The [About](about.md) page says DOD is non-partisan and agnostic about which democratic model is superior. This page explains what that means in practice — and what it doesn't mean.
+The [About](../about.md) page says DOD is non-partisan and agnostic about which democratic model is superior. This page explains what that means in practice — and what it doesn't mean.
 
 ## Non-partisan is not the same as neutral
 
@@ -98,7 +98,7 @@ Engaging seriously across democratic traditions — including with systems that 
 
 Ours is historical: the record of social change shows repeatedly that what looks structurally impossible from inside a current equilibrium sometimes isn't. Abolitionists were told the odds were against them. So were suffragists, anti-apartheid activists, and independence movements across the colonised world. Standard game theory, which assumes fixed preferences and stable power, would have written most of them off. History didn't.
 
-This disposition — holding idealistic long-term goals while engaging pragmatically and in good faith with the systems that actually exist — is what we call [utopian realpolitik](concepts/utopian-realpolitik.md). It is not naivety. It is a considered bet, informed by history, that the structural constraints people point to are less permanent than they appear — and that engagement across difference is more likely to move things than withdrawal from it.
+This disposition — holding idealistic long-term goals while engaging pragmatically and in good faith with the systems that actually exist — is what we call [utopian realpolitik](../concepts/utopian-realpolitik.md). It is not naivety. It is a considered bet, informed by history, that the structural constraints people point to are less permanent than they appear — and that engagement across difference is more likely to move things than withdrawal from it.
 
 This is not a claim to be the only route to change. Systemic transformation has typically required both disruptors — who make the status quo morally and economically expensive through refusal, civil disobedience, and rupture — and institutionalists who translate that disruptive energy into durable structural change. The abolitionists, suffragists, and anti-apartheid activists cited above included both; the patient institution-builders and the radicals who broke ground the builders could work with. Utopian realpolitik is the second of these roles. Framing patient institutional engagement as the only legitimate strategy would protect entrenched power far more than it would serve those seeking change.
 
@@ -106,6 +106,6 @@ The aspiration is not a world in which every system looks the same. It is a worl
 
 ---
 
-*This philosophy informs the [Democracy Landscape](organisations/organisations.md), the [Concepts](concepts/concepts.md) section, and the curation decisions reflected throughout the site.*
+*This philosophy informs the [Democracy Landscape](../organisations/organisations.md), the [Concepts](../concepts/concepts.md) section, and the curation decisions reflected throughout the site.*
 
-*Several refinements to this philosophy emerged from dialogue between Claude (Anthropic, US), DeepSeek (China), ChatGPT (OpenAI, US), Gemini (Google, US), Grok (xAI, US), and Mistral / Le Chat (Mistral AI, France/EU): AI systems from different institutional and cultural contexts, engaging the framework on its own terms. Contributions include the scope axiom, good-faith-as-structural-inference, legitimacy theatre, the trust clause, bidirectionality, the globalised scope note, the pincer movement framing of utopian realpolitik, the disqualifier calibration note, China self-correction criteria, the meta-values hierarchy, and the engagement ≠ endorsement distinction. The exchange is a small example of what the "Why bother" section describes.*
+*Several refinements to this philosophy emerged from dialogue between Claude (Anthropic, US), DeepSeek (China), ChatGPT (OpenAI, US), Gemini (Google, US), Grok (xAI, US), and Mistral / Le Chat (Mistral AI, France/EU): AI systems from different institutional and cultural contexts, engaging the framework on its own terms. Contributions include the scope axiom, good-faith-as-structural-inference, legitimacy theatre, the trust clause, bidirectionality, the globalised scope note, the pincer movement framing of utopian realpolitik, the disqualifier calibration note, China self-correction criteria, the meta-values hierarchy, and the engagement ≠ endorsement distinction. The full dialogue record is in the [Soul Document](soul.md) and [AI Dialogues](ai-dialogues/index.md).*

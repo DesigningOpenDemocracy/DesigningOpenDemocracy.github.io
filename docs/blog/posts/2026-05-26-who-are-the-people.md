@@ -89,4 +89,4 @@ That is, in some ways, what DOD's landscape is about: the ongoing argument, acro
 
 ---
 
-*This post relates to the framework described in [Philosophy](../../philosophy.md). The historical examples here — Athens, the American founding, apartheid South Africa — are the same cases that shaped how DOD approaches the question of who 'the people' are in any governance system.*
+*This post relates to the framework described in [Philosophy](../../philosophy/index.md). The historical examples here — Athens, the American founding, apartheid South Africa — are the same cases that shaped how DOD approaches the question of who 'the people' are in any governance system.*
