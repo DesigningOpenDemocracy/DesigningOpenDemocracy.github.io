@@ -23,3 +23,7 @@ RDs can function well as components of two governing systems:
 
 1.  parliamentary.
 2.  presidential.
+
+## Further reading
+
+- Wikipedia: [Representative democracy](https://en.wikipedia.org/wiki/Representative_democracy)

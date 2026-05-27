@@ -48,3 +48,7 @@ enabling them to purchase more shares than they could otherwise. ESOP
 transactions that are not leveraged are typically smaller and have lower
 transaction costs. Additionally, businesses can use ESOPs to reward and
 engage employees even if there is no selling owner.
+
+## Further reading
+
+- Wikipedia: [Employee stock ownership plan](https://en.wikipedia.org/wiki/Employee_stock_ownership_plan)

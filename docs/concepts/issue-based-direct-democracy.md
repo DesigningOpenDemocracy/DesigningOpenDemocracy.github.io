@@ -32,3 +32,4 @@ The system attempts to solve two problems with direct democracy:
 
 - [Liquid Democracy](liquid-democracy.md) — the broader category
 - [Flux Party](../organisations/flux-party.md) — the party that developed and ran on IBDD
+- Wikipedia: [Flux (political party)](https://en.wikipedia.org/wiki/Flux_(political_party))

@@ -17,3 +17,7 @@ business's stock. Typically, trusts have governance documents that
 safeguard the company's character and the interests of its employees.
 Employees typically receive financial benefits as a result of annual
 profit sharing.
+
+## Further reading
+
+- Wikipedia: [Employee ownership trust](https://en.wikipedia.org/wiki/Employee_ownership_trust)

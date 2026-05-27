@@ -31,7 +31,7 @@ The AI systems we engaged:
 
 - **DeepSeek** (China) — the first non-Western reviewer, shaped by sovereignty discourse and familiarity with vanguard governance theory
 - **ChatGPT** (OpenAI, US) — analytical and philosophical in focus, steeped in Anglophone political theory
-- **Gemini** (Google, US) — notable for explicitly mapping its own biases before being asked
+- **Gemini** (Google DeepMind, US) — notable for explicitly mapping its own biases before being asked
 - **Grok** (xAI, US) — classical liberal defaults, candid about its own preferences
 - **Mistral / Le Chat** (Mistral AI, France/EU) — the only European frontier AI, carrying deliberative democratic theory and continental universalism
 - **Claude** (Anthropic, US) — the implementing AI that had been making all the changes throughout, and the last to submit to scrutiny

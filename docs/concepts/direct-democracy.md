@@ -28,3 +28,7 @@ representative democracy.
 - Citizen assembly.
 - Referendums.
 - Initiatives.
+
+## Further reading
+
+- Wikipedia: [Direct democracy](https://en.wikipedia.org/wiki/Direct_democracy)

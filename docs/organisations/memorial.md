@@ -28,3 +28,4 @@ Memorial's Russian domestic organisations have been formally liquidated and its 
 ## Links
 
 - Memorial Germany: [memorial.de](https://www.memorial.de)
+- Wikipedia: [Memorial](https://en.wikipedia.org/wiki/Memorial_(Russia))

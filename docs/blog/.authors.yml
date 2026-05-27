@@ -1,4 +1,8 @@
 authors:
+  DOD:
+    name: Designing Open Democracy
+    description: The DOD editorial team
+    avatar: https://github.com/DesigningOpenDemocracy.png
   Max Kaye:
     name: Max Kaye
     description: Cofounder of Flux Party

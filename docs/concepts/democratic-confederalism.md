@@ -32,6 +32,7 @@ What distinguishes AANES as a case study is scale and adversity. It governs a po
 
 ## Further reading
 
+- Wikipedia: [Democratic confederalism](https://en.wikipedia.org/wiki/Democratic_confederalism)
 - Murray Bookchin, *The Ecology of Freedom* (1982) and *Libertarian Municipalism* (1992)
 - Abdullah Öcalan, *Democratic Confederalism* (2011) — short pamphlet, available in translation; the fuller philosophical argument is in *The Sociology of Freedom* (2020)
 - Joost Jongerden and Ahmet Hamdi Akkaya, "Democratic Confederalism as a Kurdish Spring" (2012, *The Kurdish Spring*)

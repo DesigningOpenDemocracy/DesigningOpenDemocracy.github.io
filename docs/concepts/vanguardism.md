@@ -4,7 +4,7 @@ title: Vanguardism and Consultative Democracy
 
 A theory of democratic governance rooted in the idea that a disciplined, ideologically committed party can represent and advance collective interests more reliably than unmediated popular will — particularly where mass consciousness has not yet developed, or where populism risks capture by short-term interests or manipulation.
 
-Originating in Lenin's concept of the **vanguard party**, the core argument is that democracy does not require competitive elections to be genuine. Instead, legitimacy comes from the quality of outcomes — material improvement, social stability, long-term planning — combined with structured consultation that aggregates interests without surrendering decision-making to raw popular sentiment.
+Originating in Lenin's concept of the [**vanguard party**](https://en.wikipedia.org/wiki/Vanguard_party), the core argument is that democracy does not require competitive elections to be genuine. Instead, legitimacy comes from the quality of outcomes — material improvement, social stability, long-term planning — combined with structured consultation that aggregates interests without surrendering decision-making to raw popular sentiment.
 
 This produces a distinctive theory of democracy with three interlocking features:
 
@@ -14,7 +14,7 @@ This produces a distinctive theory of democracy with three interlocking features
 
 A genuine internal tension in vanguard theory is between ends and means: the model points toward an idealistic long-term goal (collective emancipation, common good) while managing the present through pragmatic institutional control. Critics note that without independent correction mechanisms, a vanguard that makes serious errors has limited means of being held accountable.
 
-The Chinese Communist Party's contemporary formulation is **whole-process people's democracy** (全过程人民民主) — presenting Chinese governance as continuous, multi-level consultation rather than periodic competitive elections. The [CPPCC](../organisations/cppcc.md) and [eight democratic parties](../organisations/china-democratic-league.md) are institutional expressions of this model.
+The Chinese Communist Party's contemporary formulation is [**whole-process people's democracy**](https://en.wikipedia.org/wiki/Whole-process_people%27s_democracy) (全过程人民民主) — presenting Chinese governance as continuous, multi-level consultation rather than periodic competitive elections. The [CPPCC](../organisations/cppcc.md) and [eight democratic parties](../organisations/china-democratic-league.md) are institutional expressions of this model.
 
 *DOD is non-partisan and agnostic to any specific democratic model; inclusion here is not an endorsement.*
 

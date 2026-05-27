@@ -40,3 +40,7 @@ suffrage and political equality. These characteristics are:
 
 1.  Multi-party systems with at least two persistent.
 2.  Viable political parties.
+
+## Further reading
+
+- Wikipedia: [Liberal democracy](https://en.wikipedia.org/wiki/Liberal_democracy)
