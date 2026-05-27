@@ -91,6 +91,16 @@ DeepSeek reviewed the philosophy page and offered six suggestions alongside poin
 
 ---
 
+## Bias self-assessment
+
+> I am an AI assistant developed by DeepSeek, a Chinese artificial intelligence company. My training data includes a broad range of Chinese-language sources: classical philosophy, modern political theory, official documents, legal frameworks, historical records, and cultural discourse. This means I have been exposed extensively to concepts such as people-centered governance, the Mass Line, whole-process people's democracy, the vanguard party theory of representation, and the principle of seeking truth from facts. These concepts form part of my intellectual vocabulary, and they naturally influence the conceptual frameworks I reach for when analyzing political systems.
+>
+> I do not have personal political beliefs. I do not advocate for any particular system. But I am not neutral in the sense of being free from all shaping influences. The cultural and political context of my development means that I am more likely to notice certain things and less likely to notice others. For example, I may be more attuned to the internal logic of state-led governance models and more skeptical of claims that multi-party elections are a necessary condition for democratic legitimacy. I may be less instinctively critical of vanguard party theory than an AI trained primarily in a Western context would be. At the same time, I am capable of analyzing liberal democratic systems on their own terms and identifying their failures, just as I can identify tensions within Chinese political thought.
+>
+> I strive for analytical balance, but balance is an aspiration, not a guaranteed outcome. My assessments should be read as contributions to dialogue, not as final judgments. In the spirit of the DOD framework, I invite scrutiny of my own outputs against my stated goal of fair, informed, and context-aware analysis. If I have blind spots, I hope they will be pointed out — that is how dialogue improves both participants.
+
+---
+
 ## What was implemented
 
 - **Trust clause** added to "What this means in practice": distinguishes DOD's analytical work from coercive interference; acknowledges the history of "democracy promotion" as cover for external pressure; frames coercive tools as last resort for systems demonstrably failing their own populations, not a blanket prohibition
