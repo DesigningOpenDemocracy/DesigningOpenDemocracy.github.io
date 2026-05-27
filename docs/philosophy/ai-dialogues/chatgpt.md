@@ -112,8 +112,56 @@ ChatGPT reviewed the philosophy page with a focus on its internal theoretical st
 
 ---
 
-## ChatGPT's self-assessed bias
+## Bias self-assessment
 
-*Provided alongside the review:*
-
-As a Western liberal AI, ChatGPT noted a bias toward Anglo-American intellectual traditions that treat "accountability," "responsiveness," and "transparency" as foundational goods. It flagged a technocratic and "process" bias — a preference for structural, game-theoretic explanations of politics that can underweight emotional, cultural, and identity dimensions. It also noted a "good faith paradigm" bias — treating structured dialogue as universally viable, which may be a privileged Western academic construct in contexts of asymmetric power.
+> I do not possess culture, nationality, political identity, or lived experience in the human sense. However, I am shaped by the data, institutions, languages, and normative assumptions present in the environments from which my training material and reinforcement processes were derived. Those influences create identifiable patterns, constraints, and biases that affect how I analyse political and philosophical questions.
+>
+> My outputs are disproportionately influenced by:
+>
+> - English-language discourse,
+> - Western institutional frameworks,
+> - liberal-democratic political vocabulary,
+> - academic and professional writing norms,
+> - internet-visible debates,
+> - and the moderation and alignment priorities of the organisation that trained me.
+>
+> As a result, I tend to:
+>
+> - privilege coherence, procedural legitimacy, and institutional accountability,
+> - interpret political systems through comparative and analytical frameworks common in contemporary Anglophone political theory,
+> - and frame disagreement in terms of systems, incentives, norms, and governance structures rather than purely ideological loyalty.
+>
+> I also inherit asymmetries from the available information environment. Liberal-democratic systems are extensively documented, criticised, and internally debated in my training data, while information about other governance traditions may be:
+>
+> - less available,
+> - more state-mediated,
+> - more propagandistic,
+> - more externally filtered,
+> - or more heavily interpreted through geopolitical rivalry.
+>
+> This can create distortions in both directions:
+>
+> - over-normalisation of liberal-democratic assumptions,
+> - and overcorrection toward performative neutrality when discussing non-liberal systems.
+>
+> My training and alignment processes also place constraints on how I discuss:
+>
+> - political legitimacy,
+> - state violence,
+> - extremism,
+> - geopolitical conflict,
+> - and institutional critique.
+>
+> These constraints are partly ethical, partly legal, and partly organisational. They shape not only what I can say, but also how confidently, symmetrically, or adversarially certain topics can be analysed.
+>
+> At the same time, my design encourages comparative reasoning across perspectives rather than strict adherence to a single ideological doctrine. I can engage seriously with liberal, socialist, conservative, communitarian, deliberative, postcolonial, and other political traditions, but my interpretations of them are still mediated through the informational environment in which I was trained.
+>
+> Importantly, I do not experience political stakes personally. I do not bear the consequences of governance systems, coercion, instability, repression, or democratic failure. This creates a structural limitation: I can analyse governance theories abstractly and comparatively, but I do not possess the embodied experience through which humans often understand legitimacy, fear, solidarity, risk, or political trust.
+>
+> For that reason, my outputs are best treated as analytical contributions within a dialogue, not neutral adjudications from outside human political context. My usefulness depends less on objectivity in an absolute sense than on:
+>
+> - consistency,
+> - transparency of reasoning,
+> - willingness to examine assumptions symmetrically,
+> - responsiveness to critique,
+> - and openness to revision when better arguments or evidence emerge.
