@@ -55,6 +55,8 @@ Coercive external tools (sanctions, regime change, imposed models) are not DOD's
 **6. Relative epistemology on HOW, not on WHO**
 The relative epistemology section applies pluralism to the *structures* of accountability, not to its *scope*. The last paragraph of that section makes this explicit and must be preserved.
 
+Note: "relative epistemology" is DOD's own label for this method, not an established term of art in political philosophy (verified May 2026 — the literature has "political epistemology" and "epistemic relativism," but not "relative epistemology" as a named framework for evaluating political systems). Earlier text claimed the approach was "sometimes called relative epistemology in political philosophy"; that overclaimed a scholarly pedigree and was corrected to present it as DOD's own framing. Do not reintroduce the claim that it is an established term.
+
 ---
 
 ## The AI dialogue record

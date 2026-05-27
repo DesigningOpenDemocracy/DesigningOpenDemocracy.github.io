@@ -34,7 +34,7 @@ Three things break it:
 
 **2. Bad faith** — performing democratic process without genuine intent. Consultative bodies that exist to legitimise decisions already made. Parties that exist to provide the appearance of pluralism without the substance. The form of participation without the function.
 
-A sophisticated variant is *legitimacy theatre*: adaptive managed responsiveness that produces the observable form of accountability — bounded consultation, procedural participation, selective tolerance of criticism that cannot threaten core authority — without enabling the substance. The diagnostic question is whether power ever substantively responds against its own immediate interests. Legitimacy theatre is not unique to non-liberal systems; liberal democracies also generate symbolic responsiveness, elite-filtered agenda-setting, and procedural participation that preserves underlying power concentrations while maintaining the appearance of accountability.
+A sophisticated variant is *legitimacy theatre*: adaptive managed responsiveness that produces the observable form of accountability — bounded consultation, procedural participation, selective tolerance of criticism that cannot threaten core authority — without enabling the substance. The diagnostic question is whether power ever substantively responds against its own immediate interests. Legitimacy theatre is not unique to non-liberal systems; liberal democracies also generate symbolic responsiveness, elite-filtered agenda-setting, and procedural participation that preserves underlying power concentrations while maintaining the appearance of accountability.[^theatre]
 
 The boundary between legitimate bounded articulation within a governance tradition and disqualifying legitimacy theatre is contested and context-dependent. Identifying it requires ongoing empirical judgment rather than the application of a bright-line rule.
 
@@ -44,7 +44,7 @@ A related methodological limit: the framework's primary diagnostic tools — whe
 
 ## Relative epistemology
 
-This approach is sometimes called relative epistemology in political philosophy: judging a system against its own stated values rather than an external universal standard. It is not relativism — we are not saying all systems are equally good. We are saying the most honest and most useful question is *"is this system living up to what it claims to be?"*
+We call this approach a relative epistemology: judging a system against its own stated values rather than an external universal standard. It is not relativism — we are not saying all systems are equally good. We are saying the most honest and most useful question is *"is this system living up to what it claims to be?"*
 
 This is also more respectful. Telling a vanguard state it must become a multi-party liberal democracy before it counts as democratic is not engagement — it is a demand for conversion. Asking instead: *"you say you govern for the people — where are the mechanisms by which the people can tell you when you're wrong?"* — that is a question any system can engage with honestly, and it is a question whose answer is genuinely informative.
 
@@ -88,7 +88,7 @@ This exchange runs both ways. The DOD framework has been challenged and sharpene
 
 These two cases illustrate the standard clearly.
 
-Russia's government claims to operate democratic processes. Independent election monitors (Golos), civil society organisations (Memorial), and anti-corruption investigators (FBK) were all doing the work of holding Russia accountable to *Russia's own* democratic claims — not imposing an external standard. They were suppressed and eliminated. That suppression is itself the evidence: a system that destroys the organisations checking it against its own standards is demonstrating structural inflexibility and bad faith simultaneously.
+Russia's government claims to operate democratic processes. Independent election monitors (Golos), civil society organisations (Memorial), and anti-corruption investigators (FBK) were all doing the work of holding Russia accountable to *Russia's own* democratic claims — not imposing an external standard. They were suppressed and eliminated.[^russia] That suppression is itself the evidence: a system that destroys the organisations checking it against its own standards is demonstrating structural inflexibility and bad faith simultaneously.
 
 China's case is more genuinely complex. The CPC's vanguard theory is a real theory of democracy with internal logic — it is not simply authoritarianism with a democratic label. But the consultative bodies (CPPCC, the eight democratic parties) have been characterised by scholars as operating under ["bounded articulation"](https://link.springer.com/article/10.1007/s11366-015-9329-3): they can suggest things within preset limits but cannot challenge the structure of authority.[^china] Under Xi Jinping this space has contracted further. Whether the system retains genuine capacity for self-correction against its own ideals is an open and important question — not a settled one. Meaningful self-correction in a vanguard system would be observable: expansion of contestation space over time, or institutional responses to major policy failures that genuinely adjust core direction rather than reassert it.
 
@@ -109,6 +109,10 @@ The aspiration is not a world in which every system looks the same. It is a worl
 ---
 
 [^china]: Yu, B. (2015). "Bounded Articulation: An Analysis of CPPCC Proposals, 2008–12." *Journal of Chinese Political Science*, 20, 425–449. On the broader pattern of constrained participation in Chinese institutions, see also Jessica C. Teets, *Civil Society under Authoritarianism: The China Model* (Cambridge University Press, 2014) on "consultative authoritarianism," and Rory Truex, *Making Autocracy Work: Representation and Responsiveness in Modern China* (Cambridge University Press, 2016) on "representation within bounds."
+
+[^russia]: Golos, Russia's main independent election-monitoring movement, was designated a ["foreign agent" in August 2021](https://www.rferl.org/a/russia-golos-foreign-agent/31417215.html). Memorial, the country's most prominent human-rights and historical-memory organisation, was ordered liquidated by the Russian Supreme Court in December 2021 and was awarded the 2022 Nobel Peace Prize months later. Alexei Navalny's Anti-Corruption Foundation (FBK) was [declared "extremist" and liquidated by a Moscow court in June 2021](https://www.amnesty.org/en/latest/press-release/2021/06/russia-aleksei-navalnys-ngos-banned-as-extremist-depriving-thousands-of-their-rights/).
+
+[^theatre]: "Legitimacy theatre" is DOD's own term, but it resonates with established scholarship on how states perform responsiveness. Iza Ding's *The Performative State: Public Scrutiny and Environmental Governance in China* (Cornell University Press, 2022) develops the concept of ["performative governance"](https://www.cambridge.org/core/journals/world-politics/article/abs/performative-governance/AAC558378BEA651DB7E2480ECFFB4E10) and finds that states democratic and authoritarian alike engage in it. Baogang He and Mark E. Warren, "Authoritarian Deliberation: The Deliberative Turn in Chinese Political Development" (*Perspectives on Politics*, 2011), examine deliberative practices that can strengthen authoritarian rule rather than constrain it.
 
 *This philosophy informs the [Democracy Landscape](../organisations/organisations.md), the [Concepts](../concepts/concepts.md) section, and the curation decisions reflected throughout the site.*
 
