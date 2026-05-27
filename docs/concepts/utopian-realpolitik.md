@@ -40,6 +40,7 @@ In practice, a community operating from this disposition will contain different 
 
 ## Further reading
 
+- Wikipedia: [Realpolitik](https://en.wikipedia.org/wiki/Realpolitik) — the tradition this concept deliberately complicates
 - Timur Kuran, *Private Truths, Public Lies: The Social Consequences of Preference Falsification* (1995)
 - Antonio Gramsci, *Prison Notebooks* (1929–1935) — on pessimism of the intellect and optimism of the will
 - Adam Hochschild, *Bury the Chains: Prophets and Rebels in the Fight to Free an Empire's Slaves* (2005) — a detailed account of how abolitionism actually worked as a movement

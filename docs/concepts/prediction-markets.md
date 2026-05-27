@@ -33,3 +33,4 @@ This makes prediction markets a potential tool for **surfacing considered collec
 
 - [Prediki](../organisations/prediki.md) — Austrian prediction market platform applied to democratic contexts
 - [Isegoria](isegoria.md) — related framing on considered vs. unconsidered collective voice
+- Wikipedia: [Prediction market](https://en.wikipedia.org/wiki/Prediction_market)
