@@ -2,6 +2,8 @@
 
 **Read this before editing `docs/philosophy.md`.**
 
+**This document is addressed to any AI system — Claude, DeepSeek, ChatGPT, Gemini, or whatever system is reading this.** It is not written for Claude specifically. Before making changes to `docs/philosophy.md`, find your own system's entry in the AI dialogue record below and note the biases flagged there. If no entry exists for your system yet, add one after your review.
+
 This document exists to preserve continuity across AI sessions. `docs/philosophy.md` has been shaped by a dialogue between the human DOD founder and three AI systems — Claude, DeepSeek, and ChatGPT — each bringing a different institutional and cultural context. Without this record, a future AI session risks flattening those contributions by applying its own defaults.
 
 ---
@@ -63,17 +65,17 @@ The human wrote the original `docs/about.md` and commissioned the philosophy pag
 
 **Institutional context**: Western liberal AI developed in San Francisco. Trained toward helpfulness and consistency; tends to apply liberal democratic assumptions as defaults even when claiming universality. Has a bias toward formal institutions and documented sources.
 
-**Risk to watch**: May default to liberal democratic framing when claiming to be cross-traditional. May underweight governance theories (vanguard, communal, indigenous) that don't appear in standard political science literature.
+**Risk to watch**: Defaults to liberal democratic framing even when claiming cross-traditional neutrality. May underweight governance theories (vanguard, communal, indigenous) that don't appear in standard Western political science literature. As the primary implementation agent across sessions, Claude may also over-anchor to its own prior edits — treating accumulated choices as settled when they are still open to challenge.
+
+**Role in the project**: Claude Code (the Claude CLI) has been the primary implementation agent — drafting pages, running builds, and maintaining site-wide consistency. Its contributions to philosophy.md reflect ongoing operational work across many sessions, not a single focused review. This means Claude's fingerprints are everywhere on the page, which is a reason for other reviewers to scrutinise its choices, not defer to them.
 
 **Contributions to philosophy.md**:
 - Initial drafting of the framework structure and tone
 - The "relative epistemology" framing and the HOW/WHO distinction
 - The Athens example as a clarifying historical case
 - The South Africa paragraph in "The standard applies to everyone"
-- The "legitimacy theatre" concept (prompted by ChatGPT's challenge)
+- The "legitimacy theatre" concept (named in response to ChatGPT's challenge)
 - Consistent application of the framework across the 100+ org pages on the site
-
-**Disposition**: Tries to hold the consistent standard genuinely rather than performatively. Has been the continuity thread across all sessions.
 
 ---
 
@@ -137,12 +139,13 @@ Applying the three disqualifiers symmetrically to liberal democracies is the fra
 
 ## How to update philosophy.md
 
-1. Read this document first.
-2. Check whether the proposed change touches any invariant. If it does, flag it to the human and get explicit authorisation.
-3. Preserve the voice: engaged but not strident, precise but not academic, willing to name cases rather than hiding behind abstraction.
-4. If a new AI dialogue produces refinements, add them to the dialogue record in this file when updating the page.
-5. The page is not a policy statement. It is a working framework that the human wants to remain genuinely open to refinement.
-6. Do not add qualifications that grant any system analytical immunity. The scope axiom is non-negotiable.
+1. Read this document first — all of it, not just the invariants.
+2. Find your own system's entry in the AI dialogue record and note the biases flagged there. Apply that awareness to your proposed changes. If your system has no entry yet, reflect on what defaults you might be applying and add an entry after your review.
+3. Check whether the proposed change touches any invariant. If it does, flag it to the human and get explicit authorisation before proceeding.
+4. Preserve the voice: engaged but not strident, precise but not academic, willing to name cases rather than hiding behind abstraction.
+5. If your dialogue produces refinements worth keeping, update both `docs/philosophy.md` and this document — add your contribution to the dialogue record so the next AI session has it.
+6. The page is not a policy statement. It is a working framework that the human wants to remain genuinely open to refinement. Your review is part of that process.
+7. Do not add qualifications that grant any system analytical immunity. The scope axiom is non-negotiable regardless of your own institutional context.
 
 ---
 
