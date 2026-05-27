@@ -1,5 +1,7 @@
 site_name: Designing Open Democracy
 site_url: http://designingopendemocracy.com
+repo_url: https://github.com/DesigningOpenDemocracy/DesigningOpenDemocracy.github.io
+repo_name: DesigningOpenDemocracy/DesigningOpenDemocracy.github.io
 theme:
   name: material
   logo: assets/dodlogo_transparent.png
@@ -40,5 +42,11 @@ plugins:
         - categories
         - tags 
   - tags
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/DesigningOpenDemocracy/DesigningOpenDemocracy.github.io
+      name: Contribute on GitHub
+
 extra_javascript:
   - https://unpkg.com/leaflet@1.9.4/dist/leaflet.js
