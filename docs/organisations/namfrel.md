@@ -25,3 +25,9 @@ NAMFREL is accredited by the Commission on Elections (COMELEC) as the official "
 ## Links
 
 - Archive: [namfrel.com.ph (Wayback Machine)](https://web.archive.org/web/*/https://namfrel.com.ph) — `.com.ph` currently unreachable; `namfrel.com` is a different Philippine democracy advocacy site unrelated to NAMFREL
+
+## See also
+
+- [Representative Democracy](../concepts/representative-democracy.md)
+- [Accountability Sink](../concepts/accountability-sink.md)
+- [Radical Transparency](../concepts/radical-transparency.md)

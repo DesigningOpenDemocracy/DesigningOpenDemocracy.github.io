@@ -28,3 +28,10 @@ Hofkirchner is also an executive board member of **Meine Stimme GILT** ("My Voic
 ## Links
 
 - Website: [prediki.com](https://www.prediki.com)
+
+## See also
+
+- [Prediction Markets](../concepts/prediction-markets.md)
+- [Cognitive Division of Labour](../concepts/cognitive-division-of-labour.md)
+- [Isegoria](../concepts/isegoria.md)
+- [GILT](gilt.md)

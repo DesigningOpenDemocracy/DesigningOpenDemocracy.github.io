@@ -20,3 +20,9 @@ The project represents years of independent research and development by Rand Str
 
 - Website: [peoplecount.org](https://peoplecount.org/)
 - Blog: [blog.peoplecount.org](https://blog.peoplecount.org/)
+
+## See also
+
+- [Direct Democracy](../concepts/direct-democracy.md)
+- [Accountability Sink](../concepts/accountability-sink.md)
+- [Consensus Mapping](../concepts/consensus-mapping.md)

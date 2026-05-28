@@ -25,3 +25,9 @@ MEMO 98 is a member of the **European Platform for Democratic Elections (EPDE)**
 ## Links
 
 - Website: [memo98.sk](https://memo98.sk)
+
+## See also
+
+- [Representative Democracy](../concepts/representative-democracy.md)
+- [Accountability Sink](../concepts/accountability-sink.md)
+- [Radical Transparency](../concepts/radical-transparency.md)

@@ -25,3 +25,9 @@ They are also engaged in building the evidence base for deliberation: what condi
 
 - Website: [mosaiclab.com.au](https://mosaiclab.com.au)
 - See also: [newDemocracy Foundation](newdemocracy.md) — frequent collaborator in the Australian deliberative democracy space
+
+## See also
+
+- [Citizens' Assembly](../concepts/citizens-assembly.md)
+- [Consensus Mapping](../concepts/consensus-mapping.md)
+- [DemocracyCo](democracyco.md)

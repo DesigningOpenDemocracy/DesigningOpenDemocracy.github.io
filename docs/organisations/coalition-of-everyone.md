@@ -16,3 +16,9 @@ After six years of operation, CoE held a final AGM and wound up — "composted" 
 ## Significance
 
 CoE represented an attempt to operationalise deliberative democracy at the grassroots level — outside the formal government commissioning model used by organisations like [MosaicLab](mosaiclab.md) and [newDemocracy](newdemocracy.md). Its winding-up is itself a data point: the sustainability challenge of doing this work without a reliable institutional client base.
+
+## See also
+
+- [Citizens' Assembly](../concepts/citizens-assembly.md)
+- [Consensus Mapping](../concepts/consensus-mapping.md)
+- [Direct Democracy](../concepts/direct-democracy.md)

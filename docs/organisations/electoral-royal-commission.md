@@ -18,3 +18,9 @@ The dedicated site (electionroyalcommission.org.au) is no longer active and redi
 ## Links
 
 - Pirate Party Australia: [pirateparty.org.au](https://pirateparty.org.au)
+
+## See also
+
+- [Representative Democracy](../concepts/representative-democracy.md)
+- [Mixed-Member Proportional Representation](../concepts/mixed-member-proportional-representation.md)
+- [Pirate Party Australia](pirate-party-australia.md)

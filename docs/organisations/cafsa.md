@@ -32,3 +32,10 @@ CAfSA's advisory board is notably cross-partisan:
 ## Links
 
 - Website: [cafsa.org.au](https://cafsa.org.au)
+
+## See also
+
+- [Citizens' Assembly](../concepts/citizens-assembly.md)
+- [Sortition](../concepts/sortition.md)
+- [Sortition Foundation Australia](sortition-foundation-australia.md)
+- [newDemocracy Foundation](newdemocracy.md)

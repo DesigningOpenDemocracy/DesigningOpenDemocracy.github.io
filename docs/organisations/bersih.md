@@ -25,3 +25,9 @@ BERSIH's work includes independent election observation (with trained observer t
 ## Links
 
 - Website: [bersih.org](https://bersih.org)
+
+## See also
+
+- [Representative Democracy](../concepts/representative-democracy.md)
+- [Accountability Sink](../concepts/accountability-sink.md)
+- [Constitutional Democracy](../concepts/constitutional-democracy.md)

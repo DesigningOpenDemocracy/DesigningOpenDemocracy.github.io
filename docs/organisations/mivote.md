@@ -20,3 +20,10 @@ Presenting multiple perspectives before asking for a vote addresses a genuine we
 ## Links
 
 - Website: [mivote.org.au](https://web.archive.org/web/*/https://www.mivote.org.au/) *(archived)*
+
+## See also
+
+- [Direct Democracy](../concepts/direct-democracy.md)
+- [E-Government](../concepts/e-government.md)
+- [Liquid Democracy](../concepts/liquid-democracy.md)
+- [Digipol](digipol.md)

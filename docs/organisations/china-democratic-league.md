@@ -34,3 +34,9 @@ Together they represent a model of managed pluralism where distinct social and p
 ## Links
 
 - Website: [mmzy.org.cn](https://www.mmzy.org.cn)
+
+## See also
+
+- [Vanguardism and Consultative Democracy](../concepts/vanguardism.md)
+- [Democracy](../concepts/democracy.md)
+- [CPPCC](cppcc.md)

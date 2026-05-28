@@ -20,3 +20,10 @@ DemocracyNext is a useful reference for understanding the strongest case for sor
 ## Links
 
 - Website: [demnext.org](https://www.demnext.org)
+
+## See also
+
+- [Citizens' Assembly](../concepts/citizens-assembly.md)
+- [Sortition](../concepts/sortition.md)
+- [Isegoria](../concepts/isegoria.md)
+- [newDemocracy Foundation](newdemocracy.md)

@@ -27,3 +27,10 @@ The practice does not advocate a single methodology; it selects approaches suite
 
 - [newDemocracy Foundation](newdemocracy.md) — Sydney-based research and practice organisation in the same space
 - [MosaicLab](mosaiclab.md) — Melbourne-based deliberative practice
+
+## See also
+
+- [Citizens' Assembly](../concepts/citizens-assembly.md)
+- [Consensus Mapping](../concepts/consensus-mapping.md)
+- [Deliberative democracy](../concepts/citizens-assembly.md)
+- [Mosaic Lab](mosaiclab.md)

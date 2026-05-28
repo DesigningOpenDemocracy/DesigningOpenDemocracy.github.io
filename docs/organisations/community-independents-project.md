@@ -29,3 +29,9 @@ The "teal independents" label was applied by media to a subset of community-back
 
 - Website: [communityindependentsproject.org](https://www.communityindependentsproject.org)
 - [Voices movement — Wikipedia](https://en.wikipedia.org/wiki/Voices_movement_(Australia))
+
+## See also
+
+- [Representative Democracy](../concepts/representative-democracy.md)
+- [Accountability Sink](../concepts/accountability-sink.md)
+- [Australian Democrats](australian-democrats.md)

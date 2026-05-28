@@ -30,3 +30,9 @@ Democracy in Colour's work is distinct from electoral or procedural reform organ
 ## Links
 
 - Website: [democracyincolour.org](https://democracyincolour.org)
+
+## See also
+
+- [Democracy](../concepts/democracy.md)
+- [Representative Democracy](../concepts/representative-democracy.md)
+- [Isegoria](../concepts/isegoria.md)

@@ -24,3 +24,9 @@ ICDT fits DOD's landscape because it is doing system design work — asking spec
 ## Links
 
 - Website: [chinademocrats.org/en](https://chinademocrats.org/en)
+
+## See also
+
+- [Constitutional Democracy](../concepts/constitutional-democracy.md)
+- [Democracy](../concepts/democracy.md)
+- [Liberal Democracy](../concepts/liberal-democracy.md)

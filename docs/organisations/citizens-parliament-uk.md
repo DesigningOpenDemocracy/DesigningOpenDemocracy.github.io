@@ -18,3 +18,9 @@ The proposal is notable for its institutional specificity. Rather than calling f
 ## Links
 
 - Archive: [citizensparliament.uk (Wayback Machine)](https://web.archive.org/web/*/https://www.citizensparliament.uk)
+
+## See also
+
+- [Citizens' Assembly](../concepts/citizens-assembly.md)
+- [Sortition](../concepts/sortition.md)
+- [Sortition Foundation](sortition-foundation.md)

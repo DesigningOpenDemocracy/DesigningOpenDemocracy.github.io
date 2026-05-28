@@ -24,3 +24,9 @@ Rwanda has two governance innovations that are extensively studied international
 ## Links
 
 - Website: [rgb.rw](https://www.rgb.rw)
+
+## See also
+
+- [Vanguardism and Consultative Democracy](../concepts/vanguardism.md)
+- [Democracy](../concepts/democracy.md)
+- [Citizens' Assembly](../concepts/citizens-assembly.md)

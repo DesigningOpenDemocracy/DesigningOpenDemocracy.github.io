@@ -24,3 +24,9 @@ Survey topics cover 21 areas including democratic attitudes, governance responsi
 ## Links
 
 - Website: [afrobarometer.org](https://www.afrobarometer.org)
+
+## See also
+
+- [Democracy](../concepts/democracy.md)
+- [Representative Democracy](../concepts/representative-democracy.md)
+- [Liberal Democracy](../concepts/liberal-democracy.md)

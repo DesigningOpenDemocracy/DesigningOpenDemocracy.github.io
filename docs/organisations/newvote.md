@@ -22,3 +22,10 @@ Rather than replacing existing democratic institutions, NewVote positions itself
 ## Links
 
 - Website: [newvote.org](https://newvote.org)
+
+## See also
+
+- [Direct Democracy](../concepts/direct-democracy.md)
+- [Liquid Democracy](../concepts/liquid-democracy.md)
+- [E-Government](../concepts/e-government.md)
+- [MiVote](mivote.md)

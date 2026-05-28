@@ -26,3 +26,9 @@ DiEM25 has explicit left-progressive political positions — anti-austerity, pro
 ## Links
 
 - Website: [diem25.org](https://diem25.org)
+
+## See also
+
+- [Direct Democracy](../concepts/direct-democracy.md)
+- [Democracy](../concepts/democracy.md)
+- [Liberal Democracy](../concepts/liberal-democracy.md)

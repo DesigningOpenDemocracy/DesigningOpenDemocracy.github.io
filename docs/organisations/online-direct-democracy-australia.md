@@ -18,3 +18,9 @@ The organisation argued that digital technology made it practical for citizens t
 ## Links
 
 - Archive: [onlinedirectdemocracy.org (Wayback Machine)](https://web.archive.org/web/*/https://www.onlinedirectdemocracy.org) — domain now squatted
+
+## See also
+
+- [Direct Democracy](../concepts/direct-democracy.md)
+- [E-Government](../concepts/e-government.md)
+- [Liquid Democracy](../concepts/liquid-democracy.md)

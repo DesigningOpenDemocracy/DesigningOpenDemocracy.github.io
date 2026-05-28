@@ -30,3 +30,9 @@ The CPPCC is central to the official concept of [**whole-process people's democr
 - Yu, B. (2015). ["Bounded Articulation: An Analysis of CPPCC Proposals, 2008–12."](https://link.springer.com/article/10.1007/s11366-015-9329-3) *Journal of Chinese Political Science*, 20, 425–449. — the source of the "bounded articulation" characterisation, based on analysis of 648 delegate proposals.
 - Jessica C. Teets (2014). *Civil Society under Authoritarianism: The China Model*. Cambridge University Press. — on "consultative authoritarianism."
 - Rory Truex (2016). *Making Autocracy Work: Representation and Responsiveness in Modern China*. Cambridge University Press. — on "representation within bounds" in the National People's Congress.
+
+## See also
+
+- [Vanguardism and Consultative Democracy](../concepts/vanguardism.md)
+- [Democracy](../concepts/democracy.md)
+- [China Democratic League](china-democratic-league.md)

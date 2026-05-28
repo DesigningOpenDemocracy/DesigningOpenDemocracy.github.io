@@ -20,3 +20,10 @@ This is a practically important design: it shows how deliberative democracy meth
 ## Links
 
 - Website: [healthydemocracy.org](https://healthydemocracy.org)
+
+## See also
+
+- [Citizens' Assembly](../concepts/citizens-assembly.md)
+- [Sortition](../concepts/sortition.md)
+- [Direct Democracy](../concepts/direct-democracy.md)
+- [newDemocracy Foundation](newdemocracy.md)

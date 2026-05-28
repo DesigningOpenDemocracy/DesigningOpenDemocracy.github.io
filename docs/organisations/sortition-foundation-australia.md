@@ -27,3 +27,10 @@ The UK Sortition Foundation already has a [landscape entry](sortition-foundation
 
 - Australian chapter: [sortitionfoundation.org/become_a_member_australia](https://www.sortitionfoundation.org/become_a_member_australia)
 - Parent organisation: [Sortition Foundation (UK)](sortition-foundation.md)
+
+## See also
+
+- [Sortition](../concepts/sortition.md)
+- [Citizens' Assembly](../concepts/citizens-assembly.md)
+- [Sortition Foundation](sortition-foundation.md)
+- [newDemocracy Foundation](newdemocracy.md)

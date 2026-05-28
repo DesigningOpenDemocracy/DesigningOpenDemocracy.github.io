@@ -26,3 +26,9 @@ For the October 2024 ACT election, CAPaD ran three deliberative forums using six
 ## Links
 
 - Website: [canberra-alliance.org.au](https://canberra-alliance.org.au)
+
+## See also
+
+- [Direct Democracy](../concepts/direct-democracy.md)
+- [Citizens' Assembly](../concepts/citizens-assembly.md)
+- [Cooperative](../concepts/cooperative.md)

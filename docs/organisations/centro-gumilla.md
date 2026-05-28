@@ -30,3 +30,9 @@ Venezuela's national political system under Maduro now clearly fails DOD's good-
 ## Links
 
 - Website: [gumilla.org](https://gumilla.org)
+
+## See also
+
+- [Democracy](../concepts/democracy.md)
+- [Representative Democracy](../concepts/representative-democracy.md)
+- [Accountability Sink](../concepts/accountability-sink.md)

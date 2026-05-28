@@ -27,3 +27,9 @@ Golos no longer exists as an operating organisation. It is listed here under Rus
 
 - Archived website: [web.archive.org](https://web.archive.org/web/*/https://www.golos.org/)
 - Wikipedia: [Golos](https://en.wikipedia.org/wiki/Golos_(organization))
+
+## See also
+
+- [Representative Democracy](../concepts/representative-democracy.md)
+- [Accountability Sink](../concepts/accountability-sink.md)
+- [Radical Transparency](../concepts/radical-transparency.md)

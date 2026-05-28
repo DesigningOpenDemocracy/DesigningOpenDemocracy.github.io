@@ -41,3 +41,9 @@ The party has one declared MP (Sultana) in the House of Commons, with Corbyn and
 - Website: [yourparty.uk](https://www.yourparty.uk)
 - Sortition approach: [yourparty.uk/sortition](https://www.yourparty.uk/sortition/)
 - Sortition Foundation: [sortitionfoundation.org](https://www.sortitionfoundation.org)
+
+## See also
+
+- [Sortition](../concepts/sortition.md)
+- [Citizens' Assembly](../concepts/citizens-assembly.md)
+- [Sortition Foundation](sortition-foundation.md)

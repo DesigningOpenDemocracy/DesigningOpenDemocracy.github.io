@@ -31,3 +31,10 @@ Co-founders include **John Dryzek** (Distinguished Professor) and **Simon Niemey
 - [newDemocracy Foundation](newdemocracy.md)
 - [MosaicLab](mosaiclab.md)
 - [DemocracyCo](democracyco.md)
+
+## See also
+
+- [Citizens' Assembly](../concepts/citizens-assembly.md)
+- [Sortition](../concepts/sortition.md)
+- [Deliberative Democracy](../concepts/citizens-assembly.md)
+- [newDemocracy Foundation](newdemocracy.md)

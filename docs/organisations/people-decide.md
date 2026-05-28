@@ -18,3 +18,9 @@ The model combined a civic technology platform with electoral participation: cit
 ## Links
 
 - Archive: [peopledecide.org.au (Wayback Machine)](https://web.archive.org/web/*/https://www.peopledecide.org.au)
+
+## See also
+
+- [Direct Democracy](../concepts/direct-democracy.md)
+- [E-Government](../concepts/e-government.md)
+- [Liquid Democracy](../concepts/liquid-democracy.md)

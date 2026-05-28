@@ -22,3 +22,9 @@ SecureVote operated in similar territory to the now-defunct [Horizon State](hori
 ## Links
 
 - Archive: [secure.vote (Wayback Machine)](https://web.archive.org/web/*/https://secure.vote)
+
+## See also
+
+- [End-to-End Verifiable Voting System](../concepts/end-to-end-verifiable-voting-system.md)
+- [E-Government](../concepts/e-government.md)
+- [Horizon State](horizon-state.md)

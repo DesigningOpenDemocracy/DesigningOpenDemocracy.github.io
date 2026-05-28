@@ -31,3 +31,10 @@ The Democrats are a political party with a full platform across many issues. We 
 
 - Website: [democrats.org.au](https://democrats.org.au)
 - Victorian branch: [vic.democrats.org.au](https://vic.democrats.org.au)
+
+## See also
+
+- [Citizens' Assembly](../concepts/citizens-assembly.md)
+- [Mixed-Member Proportional Representation](../concepts/mixed-member-proportional-representation.md)
+- [Sortition](../concepts/sortition.md)
+- [PRSA](prsa.md)

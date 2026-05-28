@@ -20,3 +20,9 @@ HKDC's case is specifically about holding China to its own stated commitments â€
 ## Links
 
 - Website: [hkdc.us](https://www.hkdc.us)
+
+## See also
+
+- [Democracy](../concepts/democracy.md)
+- [Liberal Democracy](../concepts/liberal-democracy.md)
+- [Constitutional Democracy](../concepts/constitutional-democracy.md)

@@ -24,3 +24,9 @@ PRS Legislative Research was founded in September 2005 and is housed within the 
 ## Links
 
 - Website: [prsindia.org](https://prsindia.org)
+
+## See also
+
+- [Representative Democracy](../concepts/representative-democracy.md)
+- [Radical Transparency](../concepts/radical-transparency.md)
+- [Accountability Sink](../concepts/accountability-sink.md)

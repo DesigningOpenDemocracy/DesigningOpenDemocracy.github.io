@@ -18,3 +18,9 @@ The NOTA model is a hybrid: party infrastructure is used to run candidates and r
 ## Links
 
 - Website: [nota.ca](https://nota.ca)
+
+## See also
+
+- [Direct Democracy](../concepts/direct-democracy.md)
+- [Representative Democracy](../concepts/representative-democracy.md)
+- [Liquid Democracy](../concepts/liquid-democracy.md)

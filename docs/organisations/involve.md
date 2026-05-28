@@ -20,3 +20,10 @@ Involve occupies a thoughtful position in the field: supportive of participatory
 ## Links
 
 - Website: [involve.org.uk](https://www.involve.org.uk)
+
+## See also
+
+- [Citizens' Assembly](../concepts/citizens-assembly.md)
+- [Direct Democracy](../concepts/direct-democracy.md)
+- [Deliberative Democracy](../concepts/citizens-assembly.md)
+- [Mosaic Lab](mosaiclab.md)

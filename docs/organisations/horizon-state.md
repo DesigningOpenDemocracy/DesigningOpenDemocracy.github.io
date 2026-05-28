@@ -18,3 +18,9 @@ Horizon State is a useful reference point for the blockchain-in-democracy discus
 The core lesson: technical feasibility is not the binding constraint for digital voting adoption. The challenges are political, institutional, and trust-related — blockchain's verifiability properties don't automatically translate into public confidence, and governments move slowly on changes to electoral infrastructure regardless of the technology's merits.
 
 Horizon State operated in the same ecosystem as [SecureVote](securevote.md) and in the broader orbit of the [Flux Party](flux-party.md), which also used blockchain in its voting architecture.
+
+## See also
+
+- [End-to-End Verifiable Voting System](../concepts/end-to-end-verifiable-voting-system.md)
+- [E-Government](../concepts/e-government.md)
+- [SecureVote](securevote.md)

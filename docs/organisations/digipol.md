@@ -30,3 +30,10 @@ Source code: [github.com/voteflux](https://github.com/voteflux)
 ## Links
 
 - Website: [digipol.app](https://web.archive.org/web/*/https://digipol.app/) *(archived)*
+
+## See also
+
+- [Direct Democracy](../concepts/direct-democracy.md)
+- [E-Government](../concepts/e-government.md)
+- [Liquid Democracy](../concepts/liquid-democracy.md)
+- [MiVote](mivote.md)

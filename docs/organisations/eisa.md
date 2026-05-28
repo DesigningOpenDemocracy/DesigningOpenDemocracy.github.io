@@ -25,3 +25,9 @@ EISA has supported and observed over 100 electoral and political processes acros
 ## Links
 
 - Website: [eisa.org](https://www.eisa.org)
+
+## See also
+
+- [Representative Democracy](../concepts/representative-democracy.md)
+- [Democracy](../concepts/democracy.md)
+- [Accountability Sink](../concepts/accountability-sink.md)

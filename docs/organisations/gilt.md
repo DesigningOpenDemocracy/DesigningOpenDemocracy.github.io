@@ -24,3 +24,10 @@ The party is connected to the broader Austrian civic tech and open democracy com
 ## Links
 
 - Website: [gilt.at](https://www.gilt.at)
+
+## See also
+
+- [Liquid Democracy](../concepts/liquid-democracy.md)
+- [Direct Democracy](../concepts/direct-democracy.md)
+- [Sortition](../concepts/sortition.md)
+- [Prediki](prediki.md)

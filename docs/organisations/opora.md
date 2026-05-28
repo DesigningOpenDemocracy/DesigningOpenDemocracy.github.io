@@ -26,3 +26,9 @@ OPORA co-founded the **European Platform for Democratic Elections (EPDE)** in 20
 ## Links
 
 - Website: [oporaua.org/en](https://oporaua.org/en)
+
+## See also
+
+- [Representative Democracy](../concepts/representative-democracy.md)
+- [Accountability Sink](../concepts/accountability-sink.md)
+- [Radical Transparency](../concepts/radical-transparency.md)

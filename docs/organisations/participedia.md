@@ -20,3 +20,10 @@ The platform is open-access and contributions are welcome, making it a useful pl
 ## Links
 
 - Website: [participedia.net](https://participedia.net)
+
+## See also
+
+- [Citizens' Assembly](../concepts/citizens-assembly.md)
+- [Direct Democracy](../concepts/direct-democracy.md)
+- [Deliberative democracy](../concepts/citizens-assembly.md)
+- [Democracy](../concepts/democracy.md)

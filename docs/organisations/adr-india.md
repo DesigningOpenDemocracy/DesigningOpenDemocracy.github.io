@@ -25,3 +25,9 @@ ADR's landmark contribution was a Public Interest Litigation that led to Supreme
 
 - Website: [adrindia.org](https://adrindia.org)
 - Candidate data: [myneta.info](https://www.myneta.info)
+
+## See also
+
+- [Representative Democracy](../concepts/representative-democracy.md)
+- [Accountability Sink](../concepts/accountability-sink.md)
+- [Radical Transparency](../concepts/radical-transparency.md)

@@ -24,3 +24,9 @@ With 1.7k GitHub stars and 463 forks, it has significant traction in the Brazili
 ## Links
 
 - GitHub: [brunoclz/br-acc](https://github.com/brunoclz/br-acc)
+
+## See also
+
+- [E-Government](../concepts/e-government.md)
+- [Radical Transparency](../concepts/radical-transparency.md)
+- [Accountability Sink](../concepts/accountability-sink.md)

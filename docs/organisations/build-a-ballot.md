@@ -26,3 +26,9 @@ Voter advice applications are a form of civic technology that lowers the barrier
 ## Links
 
 - Website: [buildaballot.org.au](https://www.buildaballot.org.au)
+
+## See also
+
+- [Representative Democracy](../concepts/representative-democracy.md)
+- [E-Government](../concepts/e-government.md)
+- [Open Australia Foundation](open-australia-foundation.md)

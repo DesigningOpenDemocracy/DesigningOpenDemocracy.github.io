@@ -21,3 +21,10 @@ He has advocated for a philanthropically funded standing citizens' jury that wou
 
 - Website: [lateraleconomics.com.au](https://lateraleconomics.com.au)
 - Nicholas Gruen's Substack: [nicholasgruen.substack.com](https://nicholasgruen.substack.com)
+
+## See also
+
+- [Isegoria](../concepts/isegoria.md)
+- [Cognitive Division of Labour](../concepts/cognitive-division-of-labour.md)
+- [Prediction Markets](../concepts/prediction-markets.md)
+- [Citizens' Assembly](../concepts/citizens-assembly.md)
