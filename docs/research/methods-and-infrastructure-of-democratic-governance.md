@@ -4,9 +4,9 @@ contributors:
   - Nick em
 ---
 
-([What is Democracy]] does not happen without
-various infrastructure in place to support it. Currently the processes,
-tools and objects associated with democracy are:
+Democracy does not happen without various infrastructure in place to
+support it. Currently the processes, tools and objects associated with
+democracy are:
 
 - People
 - Voting

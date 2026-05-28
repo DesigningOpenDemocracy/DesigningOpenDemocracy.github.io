@@ -5,9 +5,12 @@ contributors:
   - BrianKhuu
 ---
 
-Working research notes and reference material compiled by DOD members.
+This is an **archive of members' raw working notes** — unpolished material kept for reference and continuity. It is not a maintained, reader-facing section.
 
-**Note:** Organisation listings that originated here have been migrated to the [Democracy Landscape](../organisations/organisations.md), which is the maintained reference for orgs we monitor. The files below are retained as raw working notes.
+**If you're new, start elsewhere:**
+
+- For short orientations on democracy topics, see [Concepts](../concepts/concepts.md).
+- For organisations we track, see the [Democracy Landscape](../organisations/organisations.md) — this is now the maintained reference. The two org link-lists below originated here and are superseded by it.
 
 ## Files in this section
 
