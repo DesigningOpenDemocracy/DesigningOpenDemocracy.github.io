@@ -301,6 +301,7 @@
 /* Organisation type legend */
 .map-legend {
   background: white;
+  color: #333;
   padding: 8px 12px;
   border-radius: 4px;
   border: 1px solid rgba(0, 0, 0, 0.3);
@@ -310,14 +311,20 @@
 .map-legend strong {
   display: block;
   margin-bottom: 2px;
+  color: #333;
 }
 
-/* Left-align the layer toggle labels in the map control */
+/* Layer toggle control — readable colours and left-aligned labels */
+.leaflet-control-layers {
+  background: white;
+  color: #333;
+}
 .leaflet-control-layers-overlays label {
   display: flex;
-  flex-direction: row-reverse;
-  justify-content: flex-end;
+  align-items: center;
+  justify-content: flex-start;
   gap: 4px;
+  color: #333;
 }
 
 /* Organisation markers on the activity map */
