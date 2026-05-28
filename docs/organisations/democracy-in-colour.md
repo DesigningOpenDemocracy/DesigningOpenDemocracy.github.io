@@ -5,6 +5,10 @@ status: active
 country: AU
 website: https://democracyincolour.org
 summary: "Australia's first national racial justice advocacy organisation led by people of colour, campaigning to address structural racism in Australian political, media, and civic institutions and to build the political power of communities of colour."
+location:
+  latitude: -37.8136
+  longitude: 144.9631
+  name: Melbourne, Australia
 ---
 
 Democracy in Colour is a registered charity and advocacy organisation focused on racial justice in Australian democracy. Its focus is on *who* participates in democracy — addressing the structural barriers and systemic racism that shape whose voices are heard in political, media, and civic life — rather than procedural democratic reform.

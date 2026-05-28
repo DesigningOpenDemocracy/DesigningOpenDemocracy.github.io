@@ -5,6 +5,10 @@ status: active
 country: AU
 website: https://www.communityindependentsproject.org
 summary: "The national support and capacity-building body for Australia's community independent candidate movement — a decentralised network of locally organised, non-partisan groups that support community-driven independent candidates for parliament."
+location:
+  latitude: -37.8136
+  longitude: 144.9631
+  name: Melbourne, Australia
 ---
 
 The Community Independents Project (CIP) is the coordinating body for Australia's community independent candidate movement — a network of locally organised, non-partisan groups that support community-driven independent candidates at federal, state, and local elections.

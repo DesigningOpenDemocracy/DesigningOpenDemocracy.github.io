@@ -5,6 +5,10 @@ status: active
 country: AU
 website: https://australiainstitute.org.au/about/structure/democracy-accountability/
 summary: "A dedicated research and advocacy program within The Australia Institute focused on diagnosing and addressing Australia's democratic deficit — covering truth in political advertising, parliamentary reform, anti-corruption institutions, and campaign finance."
+location:
+  latitude: -35.2809
+  longitude: 149.13
+  name: Canberra, Australia
 ---
 
 The Democracy & Accountability Program is a dedicated research and advocacy program within [The Australia Institute](https://australiainstitute.org.au), a Canberra-based progressive think tank. Established in 2021, it builds on the Institute's longer history of democracy-related research.

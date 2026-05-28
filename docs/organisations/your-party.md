@@ -5,6 +5,10 @@ status: active
 country: GB
 website: https://www.yourparty.uk
 summary: "A UK political party founded in 2025, notable for using sortition (via the Sortition Foundation) to select delegates to its founding conference — producing a statistically representative membership sample balanced by gender, region, age, ethnicity, and other characteristics."
+location:
+  latitude: 51.5074
+  longitude: -0.1278
+  name: London, United Kingdom
 ---
 
 Your Party is a UK political party ([Wikipedia](https://en.wikipedia.org/wiki/Your_Party_(UK))) registered with the Electoral Commission in September 2025. It was announced by Jeremy Corbyn and Zarah Sultana following their departures from Labour, reaching 55,000 members by December 2025.
