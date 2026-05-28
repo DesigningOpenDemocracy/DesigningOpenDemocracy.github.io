@@ -284,6 +284,14 @@
  * These overrides lower both thresholds to 60em (960px) so the top-bar tabs
  * and the inline sidebar both appear at normal desktop widths.
  */
+/* Map usage hint below the map */
+#map-hint {
+  font-size: 0.78rem;
+  color: #0000008a;
+  margin-top: 0.4rem;
+  text-align: center;
+}
+
 /* Left-align the layer toggle labels in the map control */
 .leaflet-control-layers-overlays label {
   display: flex;
