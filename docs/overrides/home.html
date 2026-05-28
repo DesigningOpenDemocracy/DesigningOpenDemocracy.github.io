@@ -122,13 +122,23 @@ document.addEventListener("DOMContentLoaded", function() {
   map.addLayer(myFGMarker);
 
   // Organisation markers — active orgs with location data
-  var orgIcon = L.divIcon({
-    html: '🏛️',
-    className: 'org-map-icon',
-    iconSize: [28, 28],
-    iconAnchor: [14, 14],
-    popupAnchor: [0, -14]
-  });
+  var orgTypeIcons = {
+    research: '🔬', education: '🔬',
+    advocacy: '📢',
+    platform: '💻', civic_tech: '💻',
+    practice: '🤝', philanthropy: '🤝', cooperative: '🤝',
+    party: '🗳️', political_party: '🗳️', 'political-party': '🗳️', political_movement: '🗳️',
+    governance: '⚖️', government: '⚖️',
+  };
+  function makeOrgIcon(type) {
+    return L.divIcon({
+      html: orgTypeIcons[type] || '🏛️',
+      className: 'org-map-icon',
+      iconSize: [28, 28],
+      iconAnchor: [14, 14],
+      popupAnchor: [0, -14]
+    });
+  }
   var orgMarkers = new L.MarkerClusterGroup();
 
   {%- for file in pages %}
@@ -136,7 +146,7 @@ document.addEventListener("DOMContentLoaded", function() {
       {
         var marker = L.marker(
           [{{ file.page.meta.location.latitude }}, {{ file.page.meta.location.longitude }}],
-          { icon: orgIcon }
+          { icon: makeOrgIcon('{{ file.page.meta.type }}') }
         ).bindPopup(`
           <a style="font-weight:bold" href="{{ file.page.url }}">{{ file.page.title }}</a>
           <br/><i>{{ file.page.meta.type }}{% if file.page.meta.country %} · {{ file.page.meta.country }}{% endif %}</i>
@@ -158,6 +168,19 @@ document.addEventListener("DOMContentLoaded", function() {
     "Activities": myFGMarker,
     "Organisations": orgMarkers
   }, { collapsed: false, position: 'topleft' }).addTo(map);
+
+  // Organisation type legend
+  var legend = L.control({ position: 'bottomright' });
+  legend.onAdd = function() {
+    var div = L.DomUtil.create('div', 'map-legend');
+    div.innerHTML =
+      '<strong>Organisation type</strong>' +
+      [['🔬','Research'],['📢','Advocacy'],['💻','Technology'],
+       ['🤝','Practice'],['🗳️','Political'],['⚖️','Governance']]
+      .map(function(c){ return '<div>' + c[0] + ' ' + c[1] + '</div>'; }).join('');
+    return div;
+  };
+  legend.addTo(map);
 
   var allLayers = myFGMarker.getLayers().concat(orgMarkers.getLayers());
   if (allLayers.length > 0) {

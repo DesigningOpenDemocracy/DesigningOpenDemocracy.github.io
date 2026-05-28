@@ -298,6 +298,20 @@
   font-size: 0.9rem;
 }
 
+/* Organisation type legend */
+.map-legend {
+  background: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  font-size: 0.78rem;
+  line-height: 1.8;
+}
+.map-legend strong {
+  display: block;
+  margin-bottom: 2px;
+}
+
 /* Left-align the layer toggle labels in the map control */
 .leaflet-control-layers-overlays label {
   display: flex;
