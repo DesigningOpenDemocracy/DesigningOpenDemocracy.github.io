@@ -9,6 +9,10 @@ location:
   latitude: 28.6315
   longitude: 77.2167
   name: New Delhi, India
+concepts:
+  - representative-democracy
+  - radical-transparency
+  - accountability-sink
 ---
 
 PRS Legislative Research was founded in September 2005 and is housed within the Centre for Policy Research in New Delhi. It provides non-partisan research support to Members of Parliament and state legislators, and makes India's legislative process more accessible to citizens through open tracking tools.
@@ -24,3 +28,9 @@ PRS Legislative Research was founded in September 2005 and is housed within the 
 ## Links
 
 - Website: [prsindia.org](https://prsindia.org)
+
+## See also
+
+- [Representative Democracy](../concepts/representative-democracy.md)
+- [Radical Transparency](../concepts/radical-transparency.md)
+- [Accountability Sink](../concepts/accountability-sink.md)

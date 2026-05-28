@@ -5,6 +5,14 @@ status: active
 country: AU
 website: https://democrats.org.au
 summary: "A re-established Australian centrist political party with a strong focus on democratic reform, electoral integrity, and evidence-based policy — including explicit support for citizens' assemblies and proportional representation."
+location:
+  latitude: -37.8136
+  longitude: 144.9631
+  name: Melbourne, Australia
+concepts:
+  - citizens-assembly
+  - mixed-member-proportional-representation
+  - sortition
 ---
 
 The Australian Democrats were originally founded in 1977 by Don Chipp with the stated aim to "keep the bastards honest" — a positioning as a principled centrist force holding the major parties accountable. The party held the balance of power in the Senate for many years before collapsing around 2008. It has since been re-established and is rebuilding a presence at state and federal levels.
@@ -27,3 +35,10 @@ The Democrats are a political party with a full platform across many issues. We 
 
 - Website: [democrats.org.au](https://democrats.org.au)
 - Victorian branch: [vic.democrats.org.au](https://vic.democrats.org.au)
+
+## See also
+
+- [Citizens' Assembly](../concepts/citizens-assembly.md)
+- [Mixed-Member Proportional Representation](../concepts/mixed-member-proportional-representation.md)
+- [Sortition](../concepts/sortition.md)
+- [PRSA](prsa.md)

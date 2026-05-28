@@ -53,3 +53,10 @@ The platform is at an early version (0.0.1) and primarily seeking contributors a
 - Raise it in the [DOD community channels](../community/community.md)
 
 See also the [original introduction post from September 2023](../blog/posts/2023-09-10.md).
+
+## See also
+
+- [Direct Democracy](../concepts/direct-democracy.md)
+- [E-Government](../concepts/e-government.md)
+- [Prediction Markets](../concepts/prediction-markets.md)
+- [Issue-Based Direct Democracy](../concepts/issue-based-direct-democracy.md)

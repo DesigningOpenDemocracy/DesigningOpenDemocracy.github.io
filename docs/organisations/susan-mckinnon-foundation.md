@@ -9,6 +9,10 @@ location:
   latitude: -37.8136
   longitude: 144.9631
   name: Melbourne, Australia
+concepts:
+  - democracy
+  - constitutional-democracy
+  - citizens-assembly
 ---
 
 The Susan McKinnon Foundation is a private philanthropic foundation focused on strengthening Australian democracy and governance. It funds and supports work on electoral reform, parliamentary integrity, public sector capability, and cross-party collaboration.
@@ -18,3 +22,10 @@ Its explicitly non-partisan stance — working with all sides of politics rather
 ## Links
 
 - Website: [susanmckinnon.org.au](https://www.susanmckinnon.org.au)
+
+## See also
+
+- [Democracy](../concepts/democracy.md)
+- [Constitutional Democracy](../concepts/constitutional-democracy.md)
+- [Citizens' Assembly](../concepts/citizens-assembly.md)
+- [Australian Democracy Network](australian-democracy-network.md)

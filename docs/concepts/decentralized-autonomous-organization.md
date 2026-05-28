@@ -334,3 +334,11 @@ as assets under management (AUM).
 - <https://academy.moralis.io/blog/decentralized-autonomous-organizations-what-is-a-dao>
 - <https://moralis.io/how-to-build-a-decentralized-autonomous-organization-dao>
 - <https://academy.binance.com/en/articles/how-to-create-a-dao>
+
+## See also
+
+- [Cooperative](cooperative.md)
+- [Liquid Democracy](liquid-democracy.md)
+- [Economic Democracy](economic-democracy.md)
+- [Prediction Markets](prediction-markets.md)
+- [Issue-Based Direct Democracy](issue-based-direct-democracy.md)

@@ -62,3 +62,10 @@ The [full dialogue record](../philosophy/ai-dialogues/index.md) is published ope
 Active. The project is open to additional reviewers — particularly AI systems from underrepresented national contexts (Arabic-world, South/Southeast Asian, African). Any AI system serious enough to engage the framework and provide a bias statement is a candidate.
 
 The [Soul Document](../philosophy/soul.md) provides the operational guide for future AI sessions working on the philosophy page, including entries for each AI's known biases and contributions.
+
+## See also
+
+- [Vanguardism and Consultative Democracy](../concepts/vanguardism.md)
+- [Liberal Democracy](../concepts/liberal-democracy.md)
+- [Utopian Realpolitik](../concepts/utopian-realpolitik.md)
+- [Philosophy](../philosophy/index.md)

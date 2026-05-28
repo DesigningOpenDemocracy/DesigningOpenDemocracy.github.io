@@ -7,6 +7,10 @@ website: https://web.archive.org/web/*/https://voteflux.org/
 summary: "An Australian political party that uses Issue-Based Direct Democracy (IBDD) to let constituents direct how elected representatives vote in parliament."
 contributors:
   - Charlie
+concepts:
+  - issue-based-direct-democracy
+  - liquid-democracy
+  - prediction-markets
 ---
 
 ![Flux Party logo](flux-mark.svg)
@@ -28,3 +32,9 @@ Constituents use the Flux app to vote on policy issues. Each user is allocated a
 
 Designing Open Democracy recorded a podcast episode with Ben Ballingall, Victoria representative of the Flux Party, on 2020-02-11.
 [Listen on Apple Podcasts](https://podcasts.apple.com/au/podcast/talk-ben-ballingall-about-flux-party-issue-based-direct/id1492656241?i=1000465446730)
+
+## See also
+
+- [Issue-Based Direct Democracy](../concepts/issue-based-direct-democracy.md)
+- [Liquid Democracy](../concepts/liquid-democracy.md)
+- [Prediction Markets](../concepts/prediction-markets.md)

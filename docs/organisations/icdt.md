@@ -9,6 +9,10 @@ location:
   latitude: 39.9042
   longitude: 116.4074
   name: Beijing, China (origin; operates in diaspora)
+concepts:
+  - constitutional-democracy
+  - democracy
+  - liberal-democracy
 ---
 
 > **Note:** ICDT operates in diaspora — its focus is China, but its researchers work from outside mainland China where this kind of work cannot be done freely. It is included here because its work is specifically about governance system design, not human rights documentation.
@@ -24,3 +28,9 @@ ICDT fits DOD's landscape because it is doing system design work — asking spec
 ## Links
 
 - Website: [chinademocrats.org/en](https://chinademocrats.org/en)
+
+## See also
+
+- [Constitutional Democracy](../concepts/constitutional-democracy.md)
+- [Democracy](../concepts/democracy.md)
+- [Liberal Democracy](../concepts/liberal-democracy.md)

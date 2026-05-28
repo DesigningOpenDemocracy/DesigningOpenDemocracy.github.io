@@ -24,7 +24,7 @@ unique/interesting aspect.
 
 We can have different types of reports:
 
-- [[Software Related to Government]]
+- Software related to government
 - List of Organizations or Groups (sometimes a group may or may not have
   software that they are working on)
   - List important/notable organizations first

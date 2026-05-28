@@ -9,6 +9,10 @@ location:
   latitude: 25.0330
   longitude: 121.5654
   name: Taipei, Taiwan
+concepts:
+  - radical-transparency
+  - e-government
+  - consensus-mapping
 ---
 
 g0v (pronounced "gov zero") is a decentralised, volunteer-driven civic tech community founded in Taiwan in 2012. The name is a pun: replacing the "o" in "gov" with "0" (zero) to create an alternative domain — `g0v.tw` versus `gov.tw` — signalling a parallel, open, citizen-built version of government infrastructure.
@@ -35,3 +39,10 @@ g0v is one of the most studied examples of civic tech that has achieved genuine 
 
 - Website: [g0v.tw](https://g0v.tw)
 - Related: [vTaiwan](vtaiwan.md)
+
+## See also
+
+- [Radical Transparency](../concepts/radical-transparency.md)
+- [E-Government](../concepts/e-government.md)
+- [Consensus Mapping](../concepts/consensus-mapping.md)
+- [vTaiwan](vtaiwan.md)

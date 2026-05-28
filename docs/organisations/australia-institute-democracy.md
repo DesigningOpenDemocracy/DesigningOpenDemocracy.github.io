@@ -5,6 +5,14 @@ status: active
 country: AU
 website: https://australiainstitute.org.au/about/structure/democracy-accountability/
 summary: "A dedicated research and advocacy program within The Australia Institute focused on diagnosing and addressing Australia's democratic deficit — covering truth in political advertising, parliamentary reform, anti-corruption institutions, and campaign finance."
+location:
+  latitude: -35.2809
+  longitude: 149.13
+  name: Canberra, Australia
+concepts:
+  - accountability-sink
+  - constitutional-democracy
+  - representative-democracy
 ---
 
 The Democracy & Accountability Program is a dedicated research and advocacy program within [The Australia Institute](https://australiainstitute.org.au), a Canberra-based progressive think tank. Established in 2021, it builds on the Institute's longer history of democracy-related research.
@@ -23,3 +31,10 @@ The program is directed by **Bill Browne** and focuses on practical reforms to i
 
 - Website: [australiainstitute.org.au](https://australiainstitute.org.au/about/structure/democracy-accountability/)
 - Annual review: [Australian Democracy in 2025](https://australiainstitute.org.au/report/australian-democracy-in-2025/)
+
+## See also
+
+- [Accountability Sink](../concepts/accountability-sink.md)
+- [Constitutional Democracy](../concepts/constitutional-democracy.md)
+- [Representative Democracy](../concepts/representative-democracy.md)
+- [Australian Democracy Network](australian-democracy-network.md)

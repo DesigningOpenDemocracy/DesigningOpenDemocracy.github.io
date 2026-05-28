@@ -50,3 +50,12 @@ Early development — Craig is actively seeking a co-founder to help build this 
 - Website: [deliberativesuper.com.au](https://deliberativesuper.com.au)
 - Contact: [craiglambie.com/links](https://craiglambie.com/links)
 - Raise it in the [DOD community channels](../community/community.md)
+
+## See also
+
+- [Citizens' Assembly](../concepts/citizens-assembly.md)
+- [Sortition](../concepts/sortition.md)
+- [Prediction Markets](../concepts/prediction-markets.md)
+- [Economic Democracy](../concepts/economic-democracy.md)
+- [newDemocracy Foundation](../organisations/newdemocracy.md)
+- [Sortition Foundation](../organisations/sortition-foundation.md)

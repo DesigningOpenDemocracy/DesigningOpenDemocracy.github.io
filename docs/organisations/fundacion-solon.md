@@ -9,6 +9,8 @@ location:
   latitude: -16.5000
   longitude: -68.1500
   name: La Paz, Bolivia
+concepts:
+  - buen-vivir
 ---
 
 Fundación Solón is a Bolivian research and advocacy foundation established by Pablo Solón, who served as Bolivia's Ambassador to the United Nations under President Evo Morales and as a lead negotiator on climate and trade agreements. After leaving government, Solón founded the organisation to develop and critically examine **Vivir Bien** (Buen Vivir) as a governance theory — assessing both its constitutional articulation and how it functions (or fails to function) in practice.

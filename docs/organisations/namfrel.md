@@ -3,12 +3,16 @@ title: NAMFREL (National Citizens' Movement for Free Elections)
 type: advocacy
 status: active
 country: PH
-website: https://namfrel.com.ph
+website: https://web.archive.org/web/*/https://namfrel.com.ph
 summary: "The Philippines' independent citizen election watchdog — founded in 1983, widely regarded as the world's first citizen-led election monitoring organisation, with 250,000+ volunteers conducting parallel vote counts and election observation."
 location:
   latitude: 14.5995
   longitude: 120.9842
   name: Manila, Philippines
+concepts:
+  - representative-democracy
+  - accountability-sink
+  - radical-transparency
 ---
 
 NAMFREL (National Citizens' Movement for Free Elections) was founded in October 1983 and is widely regarded as the world's first citizen-led election monitoring organisation. It draws on a volunteer base of over 250,000 members from religious, civic, business, professional, labour, and youth organisations across the Philippines.
@@ -24,4 +28,10 @@ NAMFREL is accredited by the Commission on Elections (COMELEC) as the official "
 
 ## Links
 
-- Website: [namfrel.com.ph](https://namfrel.com.ph)
+- Archive: [namfrel.com.ph (Wayback Machine)](https://web.archive.org/web/*/https://namfrel.com.ph) — `.com.ph` currently unreachable; `namfrel.com` is a different Philippine democracy advocacy site unrelated to NAMFREL
+
+## See also
+
+- [Representative Democracy](../concepts/representative-democracy.md)
+- [Accountability Sink](../concepts/accountability-sink.md)
+- [Radical Transparency](../concepts/radical-transparency.md)

@@ -64,9 +64,9 @@ Here are some initial ideas for content (open to suggestions):
 Created articles:  
 
 - [[Citizens’ Assembly]]
-- [[Workplace Democracy]]
-- [[Decentralized Autonomous Organization]]
-- [[Community Business]]
+- [Workplace Democracy](../concepts/workplace-democracy.md)
+- [Decentralized Autonomous Organization](../concepts/decentralized-autonomous-organization.md)
+- [Community Business](../concepts/community-business.md)
 
 ---
 
@@ -81,3 +81,8 @@ Created articles:
   frames etc (suggested by Nick)
 - Community owned businesses (definition, types of these businesses, how
   they're created, existing examples of these businesses)
+
+## See also
+
+- [Democracy](../concepts/democracy.md)
+- [Concepts](../concepts/concepts.md)

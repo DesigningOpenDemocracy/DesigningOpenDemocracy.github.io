@@ -5,9 +5,12 @@ contributors:
   - BrianKhuu
 ---
 
-Working research notes and reference material compiled by DOD members.
+This is an **archive of members' raw working notes** — unpolished material kept for reference and continuity. It is not a maintained, reader-facing section.
 
-**Note:** Organisation listings that originated here have been migrated to the [Democracy Landscape](../organisations/organisations.md), which is the maintained reference for orgs we monitor. The files below are retained as raw working notes.
+**If you're new, start elsewhere:**
+
+- For short orientations on democracy topics, see [Concepts](../concepts/concepts.md).
+- For organisations we track, see the [Democracy Landscape](../organisations/organisations.md) — this is now the maintained reference. The two org link-lists below originated here and are gradually being migrated into it; they still contain entries not yet moved across.
 
 ## Files in this section
 
@@ -17,7 +20,6 @@ Working research notes and reference material compiled by DOD members.
 | [Worldwide orgs list](current-known-efforts-world-wide-regarding-democracy-related-organisations.md) | Original link-list — see Landscape for current entries |
 | [Democracy approaches](democracy-approaches.md) | Overview of different democratic approaches and models |
 | [Methods and infrastructure](methods-and-infrastructure-of-democratic-governance.md) | Notes on democratic governance methods and infrastructure |
-| [Software related to government](software-related-to-government.md) | Catalogue of civic technology and government software |
 | [Sources of funding and grants](sources-of-funding-and-grants.md) | Funding sources relevant to democracy projects |
 | [Discussion topics](discussion-topics.md) | Topics raised for discussion at DOD meetups |
 | [Democracy Analysis Project](democracy-analysis-project.md) | Member project to classify and analyse democracy approaches |

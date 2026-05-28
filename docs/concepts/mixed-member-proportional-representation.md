@@ -38,3 +38,10 @@ for the latest encyclopaedic explanation of the MMP voting system.
 
 - <https://www.youtube.com/watch?v=egYorzy1Ofg> : How Jacinda Ardern
   turned 49% into 53% -- By Soliloquy (Relevance on 29 Oct 2020)
+
+## See also
+
+- [Representative Democracy](representative-democracy.md)
+- [Direct Democracy](direct-democracy.md)
+- [Sortition](sortition.md)
+- [PRSA — Proportional Representation Society of Australia](../organisations/prsa.md)

@@ -9,6 +9,10 @@ location:
   latitude: 33.8938
   longitude: 35.5018
   name: Beirut, Lebanon
+concepts:
+  - democracy
+  - constitutional-democracy
+  - accountability-sink
 ---
 
 The Lebanese Center for Policy Studies (LCPS) is an independent, non-partisan think tank founded in 1989 in Beirut. It produces research and advocates for policies aimed at improving governance in Lebanon and the broader Arab region. Its priority areas include political representation, decentralisation, transparency in natural resource governance, job creation, and youth empowerment.
@@ -25,3 +29,9 @@ LCPS has published over 66 books and 100+ policy papers and briefs covering elec
 ## Links
 
 - Website: [lcps-lebanon.org](https://www.lcps-lebanon.org)
+
+## See also
+
+- [Democracy](../concepts/democracy.md)
+- [Constitutional Democracy](../concepts/constitutional-democracy.md)
+- [Accountability Sink](../concepts/accountability-sink.md)

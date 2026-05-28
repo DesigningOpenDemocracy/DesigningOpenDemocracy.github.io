@@ -9,6 +9,10 @@ location:
   latitude: 55.9533
   longitude: -3.1883
   name: Edinburgh, United Kingdom
+concepts:
+  - sortition
+  - citizens-assembly
+  - representative-democracy
 ---
 
 The Sortition Foundation is the UK's leading organisation specifically dedicated to sortition — the selection of decision-makers by random lot rather than election. Their flagship campaign is the **House of Citizens**: replacing the appointed House of Lords with a chamber of randomly selected citizens who serve fixed, non-renewable terms.

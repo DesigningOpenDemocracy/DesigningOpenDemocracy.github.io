@@ -9,6 +9,10 @@ location:
   latitude: 31.9026
   longitude: 35.2034
   name: Ramallah, Palestine
+concepts:
+  - accountability-sink
+  - democracy
+  - radical-transparency
 ---
 
 AMAN (Coalition for Accountability and Integrity) is a Palestinian civil society coalition established in 2000 to promote integrity, transparency, and accountability in Palestinian society. In 2006, AMAN was accredited as Transparency International's official Palestinian national chapter.
@@ -27,3 +31,9 @@ AMAN functions as both a civil society coalition and a specialised knowledge cen
 ## Links
 
 - Website: [aman-palestine.org/en](https://www.aman-palestine.org/en)
+
+## See also
+
+- [Accountability Sink](../concepts/accountability-sink.md)
+- [Democracy](../concepts/democracy.md)
+- [Radical Transparency](../concepts/radical-transparency.md)

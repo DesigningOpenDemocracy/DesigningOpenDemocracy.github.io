@@ -9,6 +9,10 @@ location:
   latitude: 28.5494
   longitude: 77.2001
   name: New Delhi, India
+concepts:
+  - representative-democracy
+  - accountability-sink
+  - radical-transparency
 ---
 
 The Association for Democratic Reforms (ADR) was founded in 1999 by professors from IIM Ahmedabad and the National Institute of Design. It focuses on electoral transparency, political party accountability, and civic engagement, combining litigation, research, and citizen mobilisation.
@@ -25,3 +29,9 @@ ADR's landmark contribution was a Public Interest Litigation that led to Supreme
 
 - Website: [adrindia.org](https://adrindia.org)
 - Candidate data: [myneta.info](https://www.myneta.info)
+
+## See also
+
+- [Representative Democracy](../concepts/representative-democracy.md)
+- [Accountability Sink](../concepts/accountability-sink.md)
+- [Radical Transparency](../concepts/radical-transparency.md)

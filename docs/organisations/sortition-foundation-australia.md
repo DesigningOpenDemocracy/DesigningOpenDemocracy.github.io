@@ -9,6 +9,9 @@ location:
   latitude: -37.7749
   longitude: 144.9934
   name: Preston, Victoria
+concepts:
+  - sortition
+  - citizens-assembly
 ---
 
 The Sortition Foundation is a UK-based organisation that campaigns for the use of stratified random selection (sortition) in government, primarily through citizens' assemblies. The Australian chapter operates within that global structure and is established by **Dr Sonia Randhawa**, based in Preston, Victoria, who works as a Project Manager at the Foundation.
@@ -27,3 +30,10 @@ The UK Sortition Foundation already has a [landscape entry](sortition-foundation
 
 - Australian chapter: [sortitionfoundation.org/become_a_member_australia](https://www.sortitionfoundation.org/become_a_member_australia)
 - Parent organisation: [Sortition Foundation (UK)](sortition-foundation.md)
+
+## See also
+
+- [Sortition](../concepts/sortition.md)
+- [Citizens' Assembly](../concepts/citizens-assembly.md)
+- [Sortition Foundation](sortition-foundation.md)
+- [newDemocracy Foundation](newdemocracy.md)

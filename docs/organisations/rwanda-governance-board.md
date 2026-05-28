@@ -3,12 +3,16 @@ title: Rwanda Governance Board (RGB)
 type: research
 status: active
 country: RW
-website: https://rgb.gov.rw
+website: https://www.rgb.rw
 summary: "Rwanda's government body for governance research and oversight — publishing annual governance scorecards, studying decentralisation and citizen participation, and administering the Ubudehe community classification system. Included for its governance design research, not as an independent watchdog of the Kagame government."
 location:
   latitude: -1.9441
   longitude: 30.0619
   name: Kigali, Rwanda
+concepts:
+  - vanguardism
+  - democracy
+  - citizens-assembly
 ---
 
 > **Note on scope:** The RGB is a government body, not an independent civil society organisation. It is included here because it publishes substantive governance research — on decentralisation, citizen participation mechanisms, and Rwanda's distinctive governance innovations — rather than as a source of critical accountability. Rwanda's national political system under President Kagame does not meet DOD's accountability standard at the top level; elections are not genuinely competitive. The governance mechanisms documented by RGB are analytically interesting and separable from an overall assessment of the Rwandan political system.
@@ -23,4 +27,10 @@ Rwanda has two governance innovations that are extensively studied international
 
 ## Links
 
-- Website: [rgb.gov.rw](https://rgb.gov.rw)
+- Website: [rgb.rw](https://www.rgb.rw)
+
+## See also
+
+- [Vanguardism and Consultative Democracy](../concepts/vanguardism.md)
+- [Democracy](../concepts/democracy.md)
+- [Citizens' Assembly](../concepts/citizens-assembly.md)

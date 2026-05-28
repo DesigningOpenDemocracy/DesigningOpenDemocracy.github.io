@@ -21,3 +21,12 @@ profit sharing.
 ## Further reading
 
 - Wikipedia: [Employee ownership trust](https://en.wikipedia.org/wiki/Employee_ownership_trust)
+
+## See also
+
+- [Employee Stock Ownership Plans](employee-stock-ownership-plans.md)
+- [Worker Cooperatives](worker-cooperatives.md)
+- [Workplace Democracy](workplace-democracy.md)
+- [Economic Democracy](economic-democracy.md)
+- [888 Cooperative Causeway](../organisations/888-cooperative-causeway.md)
+- [Co-operative Bonds](../organisations/cooperative-bonds.md)

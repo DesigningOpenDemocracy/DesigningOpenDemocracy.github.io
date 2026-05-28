@@ -9,6 +9,9 @@ location:
   latitude: -34.9285
   longitude: 138.6007
   name: Adelaide, Australia
+concepts:
+  - citizens-assembly
+  - sortition
 ---
 
 CAfSA is an incorporated association founded in Adelaide in 2023, advocating for randomly selected, broadly representative citizens' assemblies as a policy-making tool in South Australia. The organisation distinguishes citizens' assemblies from traditional consultation, positioning them as particularly suited to contested issues that are difficult for elected politicians to handle directly.
@@ -32,3 +35,10 @@ CAfSA's advisory board is notably cross-partisan:
 ## Links
 
 - Website: [cafsa.org.au](https://cafsa.org.au)
+
+## See also
+
+- [Citizens' Assembly](../concepts/citizens-assembly.md)
+- [Sortition](../concepts/sortition.md)
+- [Sortition Foundation Australia](sortition-foundation-australia.md)
+- [newDemocracy Foundation](newdemocracy.md)

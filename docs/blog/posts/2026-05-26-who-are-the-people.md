@@ -21,6 +21,8 @@ summary: "Every democratic system makes a claim to govern for 'the people.' The 
 
 Democracy means rule of the people. It says so in the etymology: *demos* (people) + *kratos* (rule). But who counts as the people has never been self-evident. It has been the central contested question of democratic politics across every era — and the history of how that question has been answered, and repeatedly re-answered, is both clarifying and humbling.
 
+<!-- more -->
+
 ## Athens: where democracy was invented, and where it was first bounded
 
 Athens in the fifth century BCE is the canonical origin of democratic governance. And it was remarkable. The Athenian assembly (*ekklesia*) gave citizens direct participation in legislation and decision-making. Accountability mechanisms — ostracism, the rotation of offices, scrutiny of magistrates — were institutionally sophisticated. Democratic practice was not ceremonial; it was the way ordinary Athenians governed their city.

@@ -9,6 +9,9 @@ location:
   latitude: -34.9285
   longitude: 138.6007
   name: Adelaide, Australia
+concepts:
+  - citizens-assembly
+  - consensus-mapping
 ---
 
 DemocracyCo is one of Australia's most established deliberative democracy practices, providing end-to-end design, facilitation, and project management for citizens' juries, panels, and assemblies. It was co-founded by Emily Jenke and Emma Fletcher — both with backgrounds in SA public service and community engagement — out of a frustration that governments were not achieving quality reform commensurate with the scale of problems faced by communities.
@@ -27,3 +30,10 @@ The practice does not advocate a single methodology; it selects approaches suite
 
 - [newDemocracy Foundation](newdemocracy.md) — Sydney-based research and practice organisation in the same space
 - [MosaicLab](mosaiclab.md) — Melbourne-based deliberative practice
+
+## See also
+
+- [Citizens' Assembly](../concepts/citizens-assembly.md)
+- [Consensus Mapping](../concepts/consensus-mapping.md)
+- [Deliberative democracy](../concepts/citizens-assembly.md)
+- [Mosaic Lab](mosaiclab.md)

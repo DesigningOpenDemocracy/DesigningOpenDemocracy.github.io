@@ -9,6 +9,10 @@ location:
   latitude: 55.7558
   longitude: 37.6176
   name: Moscow, Russia (origin; operates in exile)
+concepts:
+  - accountability-sink
+  - radical-transparency
+  - democracy
 ---
 
 The Anti-Corruption Foundation (Фонд борьбы с коррупцией, FBK) was founded by Alexei Navalny and became Russia's most prominent anti-corruption investigative and advocacy organisation. Its video investigations into the wealth of senior Russian officials — including widely-viewed exposés on Prime Minister Medvedev and others — reached tens of millions of viewers inside Russia.
@@ -23,3 +27,9 @@ FBK is included here as a significant organisation in the Russian democratic opp
 
 - Website: [fbk.info](https://fbk.info)
 - Wikipedia: [Anti-Corruption Foundation](https://en.wikipedia.org/wiki/Anti-Corruption_Foundation)
+
+## See also
+
+- [Accountability Sink](../concepts/accountability-sink.md)
+- [Radical Transparency](../concepts/radical-transparency.md)
+- [Democracy](../concepts/democracy.md)

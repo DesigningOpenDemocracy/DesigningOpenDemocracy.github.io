@@ -9,6 +9,10 @@ location:
   latitude: 25.0330
   longitude: 121.5654
   name: Taipei, Taiwan
+concepts:
+  - consensus-mapping
+  - radical-transparency
+  - e-government
 ---
 
 vTaiwan is a civic technology platform developed collaboratively by the Taiwanese government's digital ministry and the g0v civic tech community. It runs structured public consultations on contested policy questions — such as the regulation of ride-sharing platforms (Uber), online alcohol sales, and fintech — using a combination of online deliberation tools and in-person open meetings.
@@ -40,3 +44,9 @@ vTaiwan's usage has been uneven: it has been applied to some policy areas and no
 
 - Website: [vtaiwan.tw](https://vtaiwan.tw)
 - Related: [g0v (gov zero)](g0v.md) — the civic tech community that co-developed vTaiwan
+
+## See also
+
+- [Consensus Mapping](../concepts/consensus-mapping.md)
+- [Radical Transparency](../concepts/radical-transparency.md)
+- [E-Government](../concepts/e-government.md)

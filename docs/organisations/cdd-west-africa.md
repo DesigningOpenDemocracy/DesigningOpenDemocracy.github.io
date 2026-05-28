@@ -9,6 +9,10 @@ location:
   latitude: 9.0579
   longitude: 7.4951
   name: Abuja, Nigeria
+concepts:
+  - democracy
+  - representative-democracy
+  - accountability-sink
 ---
 
 The Centre for Democracy and Development (CDD West Africa) is an independent, non-profit research and advocacy organisation founded in 1997 (and registered in Nigeria in 1999) to support democratic governance and people-centred development across West Africa. It was established during Nigeria's transition from military to civilian rule and has since grown into a regional institution.
@@ -26,3 +30,9 @@ CDD operates offices in Abuja, Lagos, Maiduguri, and London. Its work spans poli
 ## Links
 
 - Website: [cddwestafrica.org](https://www.cddwestafrica.org)
+
+## See also
+
+- [Democracy](../concepts/democracy.md)
+- [Representative Democracy](../concepts/representative-democracy.md)
+- [Accountability Sink](../concepts/accountability-sink.md)

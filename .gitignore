@@ -2,3 +2,5 @@ book
 site
 venv
 .venv
+__pycache__/
+*.pyc

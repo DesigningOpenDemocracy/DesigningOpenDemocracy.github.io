@@ -9,6 +9,10 @@ location:
   latitude: 55.7558
   longitude: 37.6176
   name: Moscow, Russia
+concepts:
+  - representative-democracy
+  - accountability-sink
+  - radical-transparency
 ---
 
 Golos (Russian: Голос, meaning "Voice" or "Vote") was Russia's leading independent election monitoring organisation, founded in 2000. Over 25 years, it trained volunteer observers, documented thousands of alleged electoral violations, and operated a publicly accessible "Map of Violations" platform that aggregated citizen reports during election periods.
@@ -27,3 +31,9 @@ Golos no longer exists as an operating organisation. It is listed here under Rus
 
 - Archived website: [web.archive.org](https://web.archive.org/web/*/https://www.golos.org/)
 - Wikipedia: [Golos](https://en.wikipedia.org/wiki/Golos_(organization))
+
+## See also
+
+- [Representative Democracy](../concepts/representative-democracy.md)
+- [Accountability Sink](../concepts/accountability-sink.md)
+- [Radical Transparency](../concepts/radical-transparency.md)

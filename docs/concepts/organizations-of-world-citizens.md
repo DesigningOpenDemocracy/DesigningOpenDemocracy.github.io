@@ -68,3 +68,10 @@ they have achieved (if any), or if they're just an advocacy group.
 
 - <https://en.wikipedia.org/wiki/Global_citizenship> (Wikipedia article
   on the topic)
+
+## See also
+
+- [Democracy](democracy.md)
+- [Liberal Democracy](liberal-democracy.md)
+- [Democratic Confederalism](democratic-confederalism.md)
+- [Buen Vivir](buen-vivir.md)

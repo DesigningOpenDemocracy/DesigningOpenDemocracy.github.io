@@ -20,3 +20,15 @@ treatment. The most prevalent types are as follows:
 - Restricted stock
 - Phantom stock
 - Stock appreciation rights (SARs)
+
+## Further reading
+
+- [Equity compensation — Wikipedia](https://en.wikipedia.org/wiki/Equity_compensation)
+- [Employee stock ownership — Wikipedia](https://en.wikipedia.org/wiki/Employee_stock_ownership)
+
+## See also
+
+- [Employee Stock Ownership Plans (ESOPs)](employee-stock-ownership-plans.md)
+- [Employee Ownership Trusts](employee-ownership-trusts.md)
+- [Worker Cooperatives](worker-cooperatives.md)
+- [Economic Democracy](economic-democracy.md)

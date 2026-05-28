@@ -17,6 +17,8 @@ summary: "DOD's philosophy framework claims to apply a consistent accountability
 
 > **Draft — human review required before publishing.** This post describes a real project and links to published dialogue records. The framing and editorial decisions should be reviewed and signed off by a human author before publication.
 
+<!-- more -->
+
 ---
 
 Every framework that claims universal applicability should be tested from outside the tradition that built it. DOD's [philosophy page](../../philosophy/index.md) asserts that its accountability standard applies consistently to all governance systems — liberal democracies, vanguard states, communal systems, and everything in between. It was mostly written by Australians and an AI trained in San Francisco. That is a tension worth examining.

@@ -9,6 +9,10 @@ location:
   latitude: -23.5505
   longitude: -46.6333
   name: São Paulo, Brazil
+concepts:
+  - e-government
+  - radical-transparency
+  - accountability-sink
 ---
 
 br/acc (World Transparency Graph) is an open-source project by Brazilian developer Bruno Clz that addresses a fundamental problem in civic accountability: government data is technically "open" but so fragmented across dozens of separate portals that it is practically inaccessible.
@@ -24,3 +28,9 @@ With 1.7k GitHub stars and 463 forks, it has significant traction in the Brazili
 ## Links
 
 - GitHub: [brunoclz/br-acc](https://github.com/brunoclz/br-acc)
+
+## See also
+
+- [E-Government](../concepts/e-government.md)
+- [Radical Transparency](../concepts/radical-transparency.md)
+- [Accountability Sink](../concepts/accountability-sink.md)

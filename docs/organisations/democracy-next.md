@@ -9,6 +9,10 @@ location:
   latitude: 55.6761
   longitude: 12.5683
   name: Copenhagen, Denmark
+concepts:
+  - citizens-assembly
+  - sortition
+  - isegoria
 ---
 
 DemocracyNext (demnext.org) is a research institute whose position is that sortition should *replace* elections as the central mechanism of democratic governance — not merely complement them. This distinguishes it from organisations that treat citizens' assemblies as an add-on to existing representative systems.
@@ -20,3 +24,10 @@ DemocracyNext is a useful reference for understanding the strongest case for sor
 ## Links
 
 - Website: [demnext.org](https://www.demnext.org)
+
+## See also
+
+- [Citizens' Assembly](../concepts/citizens-assembly.md)
+- [Sortition](../concepts/sortition.md)
+- [Isegoria](../concepts/isegoria.md)
+- [newDemocracy Foundation](newdemocracy.md)

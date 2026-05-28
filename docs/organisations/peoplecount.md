@@ -8,6 +8,10 @@ summary: "A US civic technology project focused on restoring political accountab
 contributors:
   - RandStrauss
   - Usmaan
+concepts:
+  - direct-democracy
+  - accountability-sink
+  - consensus-mapping
 ---
 
 PeopleCount is a civic technology project created by Rand Strauss, focused on US national politics. Its central argument is that a lack of accountability — a structured, ongoing relationship between citizens and their representatives — is the root cause of most democratic dysfunction.
@@ -20,3 +24,9 @@ The project represents years of independent research and development by Rand Str
 
 - Website: [peoplecount.org](https://peoplecount.org/)
 - Blog: [blog.peoplecount.org](https://blog.peoplecount.org/)
+
+## See also
+
+- [Direct Democracy](../concepts/direct-democracy.md)
+- [Accountability Sink](../concepts/accountability-sink.md)
+- [Consensus Mapping](../concepts/consensus-mapping.md)

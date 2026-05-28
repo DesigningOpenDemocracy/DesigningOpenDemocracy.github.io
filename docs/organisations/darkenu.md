@@ -9,6 +9,10 @@ location:
   latitude: 32.0853
   longitude: 34.7818
   name: Tel Aviv, Israel
+concepts:
+  - democracy
+  - constitutional-democracy
+  - accountability-sink
 ---
 
 Darkenu (דרכנו — "Our Path") is Israel's largest civic movement, with over 400,000 supporters, focused on defending democratic governance, rule of law, and fighting corruption. It operates as a grassroots civic organisation rather than a think tank — mobilising citizens, running campaigns, and building civic infrastructure for democratic participation.

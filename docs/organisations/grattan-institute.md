@@ -9,6 +9,10 @@ location:
   latitude: -37.8136
   longitude: 144.9631
   name: Melbourne, Australia
+concepts:
+  - democracy
+  - constitutional-democracy
+  - accountability-sink
 ---
 
 The Grattan Institute is a Melbourne-based public policy think tank covering a broad range of policy areas including energy, housing, education, health, and governance. It is independent of government, political parties, and industry.
@@ -25,3 +29,10 @@ Grattan has a dedicated democracy and governance program, led by CEO **Dr Aruna 
 
 - Website: [grattan.edu.au](https://grattan.edu.au)
 - Democracy program: [grattan.edu.au/policy/democracy](https://grattan.edu.au/policy/democracy/)
+
+## See also
+
+- [Democracy](../concepts/democracy.md)
+- [Constitutional Democracy](../concepts/constitutional-democracy.md)
+- [Accountability Sink](../concepts/accountability-sink.md)
+- [Lateral Economics](lateral-economics.md)

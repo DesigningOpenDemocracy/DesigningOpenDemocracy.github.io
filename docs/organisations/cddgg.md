@@ -9,6 +9,9 @@ location:
   latitude: -35.2457
   longitude: 149.0745
   name: Canberra, Australia
+concepts:
+  - citizens-assembly
+  - sortition
 ---
 
 The Centre for Deliberative Democracy and Global Governance (CDDGG) is a research centre within the University of Canberra's Faculty of Business, Government and Law. Founded in 2014 (with earlier roots at ANU), it is one of the leading academic centres for deliberative democracy research globally.
@@ -31,3 +34,10 @@ Co-founders include **John Dryzek** (Distinguished Professor) and **Simon Niemey
 - [newDemocracy Foundation](newdemocracy.md)
 - [MosaicLab](mosaiclab.md)
 - [DemocracyCo](democracyco.md)
+
+## See also
+
+- [Citizens' Assembly](../concepts/citizens-assembly.md)
+- [Sortition](../concepts/sortition.md)
+- [Deliberative Democracy](../concepts/citizens-assembly.md)
+- [newDemocracy Foundation](newdemocracy.md)

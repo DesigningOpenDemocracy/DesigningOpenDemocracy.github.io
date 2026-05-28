@@ -1,0 +1,37 @@
+{% extends "main.html" %}
+{% block content %}
+{{ super() }}
+<div class="md-typeset">
+
+<h2>Active projects</h2>
+<p>Things members are currently building. Reach out via Telegram or contact the contributor listed on the project page.</p>
+<div class="projects-index-grid">
+  {%- for file in pages %}
+    {%- if file.page and file.page.url and file.page.url.startswith('projects/') and file.page.meta.get('status') == 'active' %}
+    <a class="project-index-card" href="/{{ file.page.url }}">
+      <div class="project-index-card-header">
+        <span class="project-index-card-title">{{ file.page.title }}</span>
+      </div>
+      {%- if file.page.meta.get('contributors') %}
+      <p class="org-index-card-meta">{{ file.page.meta.contributors | join(', ') }}</p>
+      {%- endif %}
+      {%- if file.page.meta.get('summary') %}
+      <p>{{ file.page.meta.summary }}</p>
+      {%- endif %}
+    </a>
+    {%- endif %}
+  {%- endfor %}
+</div>
+
+<h2>Contribute to this wiki</h2>
+<p>The wiki is a <a href="https://github.com/DesigningOpenDemocracy/DesigningOpenDemocracy.github.io">public GitHub repository</a>. Anyone can contribute:</p>
+<ul>
+  <li><strong>Edit or add a page</strong> — fork the repo, make changes in Markdown, open a pull request</li>
+  <li><strong>Add a blog post</strong> — document a meetup, event, or piece of relevant news</li>
+  <li><strong>Add an organisation</strong> — if you know of a democracy-related org worth tracking, add it to the <a href="/organisations/organisations/">Democracy Landscape</a></li>
+  <li><strong>Flag an issue</strong> — open a <a href="https://github.com/DesigningOpenDemocracy/DesigningOpenDemocracy.github.io/issues">GitHub issue</a> if something is wrong or missing</li>
+</ul>
+<p>If you're not comfortable with Git, post in Telegram and someone can help or do it for you.</p>
+
+</div>
+{% endblock %}

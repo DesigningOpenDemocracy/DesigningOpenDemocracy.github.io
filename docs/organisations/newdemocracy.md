@@ -9,6 +9,11 @@ location:
   latitude: -33.8688
   longitude: 151.2093
   name: Sydney, Australia
+concepts:
+  - citizens-assembly
+  - sortition
+  - isegoria
+  - cognitive-division-of-labour
 ---
 
 newDemocracy is one of Australia's most active organisations in the deliberative democracy space. It conducts real-world trials using random selection and deliberation — the jury model — to show that citizens, given good information and time to deliberate, can reach considered decisions on complex public issues.
@@ -22,3 +27,10 @@ newDemocracy's core argument is that the adversarial, partisan nature of represe
 ## Links
 
 - Website: [newdemocracy.com.au](https://www.newdemocracy.com.au)
+
+## See also
+
+- [Citizens' Assembly](../concepts/citizens-assembly.md)
+- [Sortition](../concepts/sortition.md)
+- [Isegoria](../concepts/isegoria.md)
+- [Cognitive Division of Labour](../concepts/cognitive-division-of-labour.md)

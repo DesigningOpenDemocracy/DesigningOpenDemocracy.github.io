@@ -9,6 +9,10 @@ location:
   latitude: 48.1486
   longitude: 17.1077
   name: Bratislava, Slovakia
+concepts:
+  - representative-democracy
+  - accountability-sink
+  - radical-transparency
 ---
 
 MEMO 98 is a Slovak organisation founded in 1998 focused on media integrity and democratic civic engagement. It is best known for its election media monitoring work — assessing whether voters have access to quality, balanced information during electoral periods — and has applied this methodology across multiple countries.
@@ -25,3 +29,9 @@ MEMO 98 is a member of the **European Platform for Democratic Elections (EPDE)**
 ## Links
 
 - Website: [memo98.sk](https://memo98.sk)
+
+## See also
+
+- [Representative Democracy](../concepts/representative-democracy.md)
+- [Accountability Sink](../concepts/accountability-sink.md)
+- [Radical Transparency](../concepts/radical-transparency.md)

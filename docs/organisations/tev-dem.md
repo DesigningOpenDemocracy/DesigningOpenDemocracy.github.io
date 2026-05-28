@@ -8,6 +8,8 @@ location:
   latitude: 37.0527
   longitude: 41.2270
   name: Qamishli, North and East Syria (AANES)
+concepts:
+  - democratic-confederalism
 ---
 
 > **Note on context:** AANES is not internationally recognised as a state. It operates as a de facto autonomous region in northern Syria under ongoing military pressure, primarily from Turkey. TEV-DEM is the civilian governance arm — distinct from the military structures (YPG/YPJ/SDF). It is included here because the governance design it implements is one of the most extensively documented non-statist democratic experiments currently operating.

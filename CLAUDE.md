@@ -46,6 +46,9 @@ That file records the human intent behind the page, the invariants that must not
 - `status` values: `active` | `inactive` | `deregistered`
 - For defunct orgs, point `website` to the Wayback Machine calendar URL: `https://web.archive.org/web/*/https://originalurl.com/`
 - **Curation standard**: An org belongs here if it works on systems of governance for/with the people, in good faith — regardless of ideological label. See `docs/philosophy/index.md` for the full framework, including the three disqualifiers (hypocrisy, bad faith, structural inflexibility). DOD is not a human rights observatory; orgs focused purely on documenting abuses without engaging governance design do not fit.
+- `concepts: [slug, slug]` — list of concept slugs this org relates to. Used to populate concept chips in the metadata box and org index table. Slugs match filenames in `docs/concepts/` without the `.md` extension.
+- `location: {latitude, longitude, name}` — required for the org to appear on the interactive map. Only `status: active` orgs are shown on the map.
+- The `organisation.html` template is **auto-applied** to all org pages via `hooks/org_template.py` — no need to set `template:` in frontmatter unless overriding.
 
 ### Blog posts (`docs/blog/posts/`)
 
@@ -65,3 +68,39 @@ That file records the human intent behind the page, the invariants that must not
 
 - `createPost.py` — interactive CLI to create a new blog post with frontmatter
 - `frontmatter_updator.py` — uses OpenAI API to auto-fill frontmatter; requires `util/requirements.txt`
+
+## Architecture (as of May 2026)
+
+### Template system
+
+| Template | Location | Applied to |
+|---|---|---|
+| `organisation.html` | `docs/overrides/` | All org pages — auto-applied by hook, no frontmatter needed |
+| `organisations.html` | `docs/overrides/` | `docs/organisations/organisations.md` — sortable table index |
+| `community.html` | `docs/overrides/` | `docs/community/community.md` — auto-generates active projects grid |
+| `project.html` | `docs/overrides/` | Project pages — must set `template: project.html` in frontmatter |
+| `home.html` | `docs/overrides/` | Home page — hero pitch, CTA buttons, active projects, map |
+
+### Hooks
+
+- `hooks/org_template.py` — fires on `on_page_markdown`; sets `template: organisation.html` on any page under `organisations/` that doesn't already have a template. Registered in `mkdocs.yml` under `hooks:`.
+
+### Frontmatter — active gates
+
+- `status: active` on a **project** page → appears in the home page projects grid and community page
+- `status: active` on an **org** page + `location:` coordinates → appears on the interactive map
+
+### CSS conventions (`docs/assets/css/customizations.css`)
+
+- `.project-status-badge.status-<value>` — coloured status pill (active/inactive/deregistered/mothballed/cancelled)
+- `.concept-tag` — indigo chip linking a concept slug to its concept page; used in org metadata box and org index table
+- `.org-sortable-table` / `.org-search-input` — org index table and filter input
+- `.hero-cta-btn` / `.hero-cta-primary` — home page call-to-action buttons
+
+### URL gotcha
+
+`file.page.url` in MkDocs Jinja2 templates is **root-relative without a leading `/`**. Always prefix with `/` in `href` attributes: `href="/{{ file.page.url }}"`. Omitting the slash causes triple-nested 404s when navigating from deep pages.
+
+### Pending work (separate PRs)
+
+- **Knowledge graph visualisation** — build hook extracts `concepts:` frontmatter + See Also links → `graph.json`; rendered with Cytoscape.js as a dedicated page. The structured `concepts:` frontmatter on org pages is the intended data source.

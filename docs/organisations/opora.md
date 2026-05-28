@@ -9,6 +9,10 @@ location:
   latitude: 50.4501
   longitude: 30.5234
   name: Kyiv, Ukraine
+concepts:
+  - representative-democracy
+  - accountability-sink
+  - radical-transparency
 ---
 
 Civil Network OPORA is Ukraine's primary independent election observation and civic oversight organisation, founded in 2006. It conducts comprehensive long-term and short-term election observation for presidential, parliamentary, and local elections, and publishes detailed analytical reports on each electoral cycle.
@@ -26,3 +30,9 @@ OPORA co-founded the **European Platform for Democratic Elections (EPDE)** in 20
 ## Links
 
 - Website: [oporaua.org/en](https://oporaua.org/en)
+
+## See also
+
+- [Representative Democracy](../concepts/representative-democracy.md)
+- [Accountability Sink](../concepts/accountability-sink.md)
+- [Radical Transparency](../concepts/radical-transparency.md)

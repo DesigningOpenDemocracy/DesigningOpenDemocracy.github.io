@@ -9,6 +9,10 @@ location:
   latitude: 12.9716
   longitude: 77.5946
   name: Bangalore, India
+concepts:
+  - e-government
+  - direct-democracy
+  - accountability-sink
 ---
 
 Janaagraha Centre for Citizenship and Democracy was founded in December 2001 by Swati and Ramesh Ramanathan in Bangalore. It works to strengthen the relationship between urban citizens and local government, with a focus on ward-level democratic participation and municipal transparency.
@@ -23,3 +27,9 @@ Janaagraha Centre for Citizenship and Democracy was founded in December 2001 by 
 ## Links
 
 - Website: [janaagraha.org](https://www.janaagraha.org)
+
+## See also
+
+- [E-Government](../concepts/e-government.md)
+- [Direct Democracy](../concepts/direct-democracy.md)
+- [Accountability Sink](../concepts/accountability-sink.md)

@@ -9,6 +9,10 @@ location:
   latitude: 48.2082
   longitude: 16.3738
   name: Vienna, Austria
+concepts:
+  - liquid-democracy
+  - direct-democracy
+  - sortition
 ---
 
 G!LT (stylised from the German *"Meine Stimme G!LT"* — "My Vote Counts") is an Austrian political party founded in 2016 by Roland Düringer, an actor, cabaret artist, and political commentator. The party's starting point is a critique of representative democracy as actually practiced in Austria: that elections every five years give citizens minimal real influence, and that the current system serves party machinery more than citizens.
@@ -24,3 +28,10 @@ The party is connected to the broader Austrian civic tech and open democracy com
 ## Links
 
 - Website: [gilt.at](https://www.gilt.at)
+
+## See also
+
+- [Liquid Democracy](../concepts/liquid-democracy.md)
+- [Direct Democracy](../concepts/direct-democracy.md)
+- [Sortition](../concepts/sortition.md)
+- [Prediki](prediki.md)

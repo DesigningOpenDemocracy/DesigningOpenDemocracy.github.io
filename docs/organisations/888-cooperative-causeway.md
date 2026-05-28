@@ -9,6 +9,10 @@ location:
   latitude: -37.8156
   longitude: 144.9648
   name: Melbourne, Australia
+concepts:
+  - cooperative
+  - worker-cooperatives
+  - economic-democracy
 ---
 
 888 Co-operative Causeway is a not-for-profit member-run co-working space at Level 5, 306 Little Collins Street, Melbourne — the first registered co-operative co-working space in Victoria, founded in 2018. It describes itself as "a network of micro-organisations and freelancers active in the social economy."
@@ -33,3 +37,10 @@ McMullen also co-founded the **Co-op Incubator** (incubator.coop) in 2017, an on
 - Podcast: [The Co-operative Way](https://www.888causeway.coop/podcast/)
 - Fediverse: [@888coop@social.coop](https://social.coop/@888coop)
 - Related: [Co-operative Bonds](cooperative-bonds.md)
+
+## See also
+
+- [Cooperative](../concepts/cooperative.md)
+- [Worker Cooperatives](../concepts/worker-cooperatives.md)
+- [Economic Democracy](../concepts/economic-democracy.md)
+- [Co-operative Bonds](cooperative-bonds.md)

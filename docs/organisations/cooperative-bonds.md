@@ -5,6 +5,15 @@ status: active
 country: AU
 website: https://bonds.coop
 summary: "A Melbourne-based cooperative of cooperative developers, providing governance, business model, and development support to co-operatives, mutuals, social enterprises, and member-based organisations across Australia."
+location:
+  latitude: -37.8136
+  longitude: 144.9631
+  name: Melbourne, Australia
+concepts:
+  - cooperative
+  - economic-democracy
+  - workplace-democracy
+  - community-business
 ---
 
 Co-operative Bonds is a cooperative development consultancy structured as a cooperative itself. Founded by Antony McMullen, Clare Fountain, and Paul Saeki, it provides education and development services to help purpose-driven member-based organisations build financially viable and sustainable models.
@@ -36,3 +45,10 @@ Antony McMullen is a Fellow of the Governance Institute of Australia (FGIA) and 
 ## Links
 
 - Website: [bonds.coop](https://bonds.coop)
+
+## See also
+
+- [Cooperative](../concepts/cooperative.md)
+- [Economic Democracy](../concepts/economic-democracy.md)
+- [Workplace Democracy](../concepts/workplace-democracy.md)
+- [Community Business](../concepts/community-business.md)

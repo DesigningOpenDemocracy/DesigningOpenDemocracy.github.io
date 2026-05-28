@@ -5,6 +5,13 @@ status: active
 country: AU
 website: https://www.communityindependentsproject.org
 summary: "The national support and capacity-building body for Australia's community independent candidate movement — a decentralised network of locally organised, non-partisan groups that support community-driven independent candidates for parliament."
+location:
+  latitude: -37.8136
+  longitude: 144.9631
+  name: Melbourne, Australia
+concepts:
+  - representative-democracy
+  - accountability-sink
 ---
 
 The Community Independents Project (CIP) is the coordinating body for Australia's community independent candidate movement — a network of locally organised, non-partisan groups that support community-driven independent candidates at federal, state, and local elections.
@@ -25,3 +32,9 @@ The "teal independents" label was applied by media to a subset of community-back
 
 - Website: [communityindependentsproject.org](https://www.communityindependentsproject.org)
 - [Voices movement — Wikipedia](https://en.wikipedia.org/wiki/Voices_movement_(Australia))
+
+## See also
+
+- [Representative Democracy](../concepts/representative-democracy.md)
+- [Accountability Sink](../concepts/accountability-sink.md)
+- [Australian Democrats](australian-democrats.md)

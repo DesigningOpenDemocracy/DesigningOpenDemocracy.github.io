@@ -20,7 +20,6 @@ Subscribe in your podcast app or find us on:
 
 - [Apple Podcasts](https://podcasts.apple.com/au/podcast/designing-open-democracy/id1492656241)
 - [Spotify](https://open.spotify.com/show/4aOBVMKFEfgf03P6mNNZdw)
-- [Anchor.fm](https://anchor.fm/designingopendemocracy)
 
 ## YouTube
 

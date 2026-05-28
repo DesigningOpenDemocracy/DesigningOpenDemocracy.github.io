@@ -9,6 +9,10 @@ location:
   latitude: 50.8503
   longitude: 4.3517
   name: Brussels, Belgium
+concepts:
+  - direct-democracy
+  - democracy
+  - liberal-democracy
 ---
 
 DiEM25 (Democracy in Europe Movement 2025) was founded by economist and former Greek Finance Minister Yanis Varoufakis in 2016, with the stated goal of democratising the European Union before it disintegrated — the "2025" being an original deadline, since passed. The movement has since evolved into a sustained transnational political organisation with chapters across Europe and affiliated national parties (MERA25 in Greece, and others).
@@ -26,3 +30,9 @@ DiEM25 has explicit left-progressive political positions — anti-austerity, pro
 ## Links
 
 - Website: [diem25.org](https://diem25.org)
+
+## See also
+
+- [Direct Democracy](../concepts/direct-democracy.md)
+- [Democracy](../concepts/democracy.md)
+- [Liberal Democracy](../concepts/liberal-democracy.md)

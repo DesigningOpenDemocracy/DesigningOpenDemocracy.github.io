@@ -52,3 +52,12 @@ engage employees even if there is no selling owner.
 ## Further reading
 
 - Wikipedia: [Employee stock ownership plan](https://en.wikipedia.org/wiki/Employee_stock_ownership_plan)
+
+## See also
+
+- [Employee Ownership Trusts](employee-ownership-trusts.md)
+- [Worker Cooperatives](worker-cooperatives.md)
+- [Workplace Democracy](workplace-democracy.md)
+- [Economic Democracy](economic-democracy.md)
+- [888 Cooperative Causeway](../organisations/888-cooperative-causeway.md)
+- [Co-operative Bonds](../organisations/cooperative-bonds.md)

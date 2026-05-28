@@ -12,6 +12,12 @@
       <div class="mdx-hero__content">
         <h1 id="hero-title">Designing Open Democracy</h1>
         <p id="hero-subtitle">Think Outside The Ballot Box</p>
+        <p id="hero-pitch">A nonpartisan community of engineers, social architects, and philosophers asking how design and technology can make democracy work better — from local cooperatives to national governments.</p>
+        <div id="hero-cta">
+          <a class="hero-cta-btn hero-cta-primary" href="/community/community/">Get involved</a>
+          <a class="hero-cta-btn" href="/organisations/organisations/">Democracy Landscape</a>
+          <a class="hero-cta-btn" href="/philosophy/">Our philosophy</a>
+        </div>
       </div>
   </div>
 </section>
@@ -23,7 +29,7 @@
     <div id="projects-grid">
       {%- for file in pages %}
         {%- if file.page and file.page.meta.status == 'active' and file.page.url.startswith('projects/') %}
-        <a class="project-card" href="{{ file.page.url }}">
+        <a class="project-card" href="/{{ file.page.url }}">
           <h3>{{ file.page.title }}</h3>
           {%- if file.page.meta.summary %}
           <p>{{ file.page.meta.summary }}</p>
@@ -43,15 +49,18 @@
       <div class="leaflet-container" id="map"></div>
       <button id="map-expand-btn" aria-label="Expand map">⛶</button>
     </div>
+    <p id="map-hint">Click a marker for details · Scroll to zoom · ⛶ to expand</p>
+    <p id="map-footer"><a href="/organisations/organisations/">View all organisations →</a></p>
   </div>
 </section>
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-  const map = L.map('map', { scrollWheelZoom: false }).setView([-27.41, 134.77], 3);
+  const map = L.map('map', { scrollWheelZoom: true }).setView([-27.41, 134.77], 3);
 
   const mapWrapper = document.getElementById('map-wrapper');
   const mapSection = document.getElementById('activity-map-container');
   const expandBtn = document.getElementById('map-expand-btn');
+  const mapHint = document.getElementById('map-hint');
 
   function setExpanded(expand) {
     mapWrapper.classList.toggle('is-expanded', expand);
@@ -59,6 +68,9 @@ document.addEventListener("DOMContentLoaded", function() {
     mapSection.style.isolation = expand ? 'auto' : '';
     expandBtn.textContent = expand ? '✕' : '⛶';
     expandBtn.setAttribute('aria-label', expand ? 'Collapse map' : 'Expand map');
+    mapHint.textContent = expand
+      ? 'Scroll to zoom · Esc to close'
+      : 'Click a marker for details · Scroll to zoom · ⛶ to expand';
     setTimeout(() => map.invalidateSize(), 50);
   }
 
@@ -88,7 +100,7 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   // Add blog activity map
-  var myFGMarker = new L.FeatureGroup();
+  var myFGMarker = new L.MarkerClusterGroup();
 
   {%- for file in pages %}
     {%- if file.page and file.page.url.startswith('blog/') and file.page.meta.location and file.page.meta.location.latitude and file.page.meta.location.longitude %}
@@ -97,7 +109,7 @@ document.addEventListener("DOMContentLoaded", function() {
             opacity: 1.0 - getFadeRatioBasedOnTime('{{ file.page.meta.date }}') / 2
           })
           .bindPopup(`
-            <a style="font-weight:bold" href="{{ file.page.url }}">{{ file.page.title }}</a> 
+            <a style="font-weight:bold" href="/{{ file.page.url }}">{{ file.page.title }}</a>
             <br/> <i>{{ file.page.meta.date }}</i>
             <br/> {{ file.page.meta.location.name }}
             {%- if file.page.meta.location.description %}
@@ -115,23 +127,33 @@ document.addEventListener("DOMContentLoaded", function() {
   map.addLayer(myFGMarker);
 
   // Organisation markers — active orgs with location data
-  var orgIcon = L.divIcon({
-    html: '🏛️',
-    className: 'org-map-icon',
-    iconSize: [28, 28],
-    iconAnchor: [14, 14],
-    popupAnchor: [0, -14]
-  });
-  var orgMarkers = new L.FeatureGroup();
+  var orgTypeIcons = {
+    research: '🔬', education: '🔬',
+    advocacy: '📢',
+    platform: '💻', civic_tech: '💻',
+    practice: '🤝', philanthropy: '🤝', cooperative: '🤝',
+    party: '🗳️', political_party: '🗳️', 'political-party': '🗳️', political_movement: '🗳️',
+    governance: '⚖️', government: '⚖️',
+  };
+  function makeOrgIcon(type) {
+    return L.divIcon({
+      html: orgTypeIcons[type] || '🏛️',
+      className: 'org-map-icon',
+      iconSize: [28, 28],
+      iconAnchor: [14, 14],
+      popupAnchor: [0, -14]
+    });
+  }
+  var orgMarkers = new L.MarkerClusterGroup();
 
   {%- for file in pages %}
     {%- if file.page and file.page.meta.location and file.page.meta.location.latitude and file.page.meta.location.longitude and file.page.url.startswith('organisations/') and file.page.meta.status == 'active' %}
       {
         var marker = L.marker(
           [{{ file.page.meta.location.latitude }}, {{ file.page.meta.location.longitude }}],
-          { icon: orgIcon }
+          { icon: makeOrgIcon('{{ file.page.meta.type }}') }
         ).bindPopup(`
-          <a style="font-weight:bold" href="{{ file.page.url }}">{{ file.page.title }}</a>
+          <a style="font-weight:bold" href="/{{ file.page.url }}">{{ file.page.title }}</a>
           <br/><i>{{ file.page.meta.type }}{% if file.page.meta.country %} · {{ file.page.meta.country }}{% endif %}</i>
           {%- if file.page.meta.location.name %}
             <br/>{{ file.page.meta.location.name }}
@@ -151,6 +173,19 @@ document.addEventListener("DOMContentLoaded", function() {
     "Activities": myFGMarker,
     "Organisations": orgMarkers
   }, { collapsed: false, position: 'topleft' }).addTo(map);
+
+  // Organisation type legend
+  var legend = L.control({ position: 'bottomright' });
+  legend.onAdd = function() {
+    var div = L.DomUtil.create('div', 'map-legend');
+    div.innerHTML =
+      '<strong>Organisation type</strong>' +
+      [['🔬','Research'],['📢','Advocacy'],['💻','Technology'],
+       ['🤝','Practice'],['🗳️','Political'],['⚖️','Governance']]
+      .map(function(c){ return '<div>' + c[0] + ' ' + c[1] + '</div>'; }).join('');
+    return div;
+  };
+  legend.addTo(map);
 
   var allLayers = myFGMarker.getLayers().concat(orgMarkers.getLayers());
   if (allLayers.length > 0) {

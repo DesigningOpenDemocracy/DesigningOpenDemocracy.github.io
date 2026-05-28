@@ -1,0 +1,60 @@
+{% extends "main.html" %}
+{% set type_icons = {
+  'research': '🔬', 'education': '🔬',
+  'advocacy': '📢',
+  'platform': '💻', 'civic_tech': '💻',
+  'practice': '🤝', 'philanthropy': '🤝', 'cooperative': '🤝',
+  'party': '🗳️', 'political_party': '🗳️', 'political-party': '🗳️', 'political_movement': '🗳️',
+  'governance': '⚖️', 'government': '⚖️'
+} %}
+{% block content %}
+{%- if page.meta.status or page.meta.type or page.meta.country or page.meta.website %}
+<div class="project-meta-box md-typeset">
+  <table>
+    <tbody>
+      {%- if page.meta.status %}
+      <tr>
+        <th>Status</th>
+        <td><span class="project-status-badge status-{{ page.meta.status }}">{{ page.meta.status }}</span></td>
+      </tr>
+      {%- endif %}
+      {%- if page.meta.type %}
+      <tr>
+        <th>Type</th>
+        <td>{{ type_icons.get(page.meta.type, '🏛️') }} {{ page.meta.type }}</td>
+      </tr>
+      {%- endif %}
+      {%- if page.meta.country %}
+      <tr>
+        <th>Country</th>
+        <td>{{ page.meta.country }}</td>
+      </tr>
+      {%- endif %}
+      {%- if page.meta.website %}
+      <tr>
+        <th>Website</th>
+        <td>
+          {%- if 'web.archive.org' in page.meta.website %}
+          <a href="{{ page.meta.website }}">Archive ↗</a>
+          {%- else %}
+          <a href="{{ page.meta.website }}">{{ page.meta.website | replace('https://', '') | replace('http://', '') }}</a>
+          {%- endif %}
+        </td>
+      </tr>
+      {%- endif %}
+      {%- if page.meta.concepts %}
+      <tr>
+        <th>Concepts</th>
+        <td>
+          {%- for c in page.meta.concepts %}
+          <a href="/concepts/{{ c }}/" class="concept-tag">{{ c | replace('-', ' ') | title }}</a>
+          {%- endfor %}
+        </td>
+      </tr>
+      {%- endif %}
+    </tbody>
+  </table>
+</div>
+{%- endif %}
+{{ super() }}
+{% endblock %}

@@ -9,6 +9,10 @@ location:
   latitude: -35.2809
   longitude: 149.1300
   name: Canberra, Australia
+concepts:
+  - direct-democracy
+  - citizens-assembly
+  - cooperative
 ---
 
 CAPaD is an ACT-based community organisation founded in 2015, focused on making elected representatives more accountable and democratic participation more meaningful for Canberra residents. It is independently funded — not by political parties, government, or corporations — and run by a voluntary committee.
@@ -26,3 +30,9 @@ For the October 2024 ACT election, CAPaD ran three deliberative forums using six
 ## Links
 
 - Website: [canberra-alliance.org.au](https://canberra-alliance.org.au)
+
+## See also
+
+- [Direct Democracy](../concepts/direct-democracy.md)
+- [Citizens' Assembly](../concepts/citizens-assembly.md)
+- [Cooperative](../concepts/cooperative.md)
