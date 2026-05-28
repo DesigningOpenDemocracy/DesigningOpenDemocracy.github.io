@@ -284,12 +284,18 @@
  * These overrides lower both thresholds to 60em (960px) so the top-bar tabs
  * and the inline sidebar both appear at normal desktop widths.
  */
-/* Map usage hint below the map */
+/* Map usage hint and footer link below the map */
 #map-hint {
   font-size: 0.78rem;
   color: #0000008a;
   margin-top: 0.4rem;
   text-align: center;
+}
+
+#map-footer {
+  margin-top: 0.5rem;
+  text-align: center;
+  font-size: 0.9rem;
 }
 
 /* Left-align the layer toggle labels in the map control */

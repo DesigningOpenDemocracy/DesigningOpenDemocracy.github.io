@@ -44,6 +44,7 @@
       <button id="map-expand-btn" aria-label="Expand map">⛶</button>
     </div>
     <p id="map-hint">Click a marker for details · ⛶ to expand · scroll to zoom when expanded</p>
+    <p id="map-footer"><a href="organisations/">View all organisations →</a></p>
   </div>
 </section>
 <script>
@@ -53,6 +54,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const mapWrapper = document.getElementById('map-wrapper');
   const mapSection = document.getElementById('activity-map-container');
   const expandBtn = document.getElementById('map-expand-btn');
+  const mapHint = document.getElementById('map-hint');
 
   function setExpanded(expand) {
     mapWrapper.classList.toggle('is-expanded', expand);
@@ -60,6 +62,9 @@ document.addEventListener("DOMContentLoaded", function() {
     mapSection.style.isolation = expand ? 'auto' : '';
     expandBtn.textContent = expand ? '✕' : '⛶';
     expandBtn.setAttribute('aria-label', expand ? 'Collapse map' : 'Expand map');
+    mapHint.textContent = expand
+      ? 'Scroll to zoom · Esc to close'
+      : 'Click a marker for details · ⛶ to expand · scroll to zoom when expanded';
     expand ? map.scrollWheelZoom.enable() : map.scrollWheelZoom.disable();
     setTimeout(() => map.invalidateSize(), 50);
   }
@@ -90,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   // Add blog activity map
-  var myFGMarker = new L.FeatureGroup();
+  var myFGMarker = new L.MarkerClusterGroup();
 
   {%- for file in pages %}
     {%- if file.page and file.page.url.startswith('blog/') and file.page.meta.location and file.page.meta.location.latitude and file.page.meta.location.longitude %}
@@ -124,7 +129,7 @@ document.addEventListener("DOMContentLoaded", function() {
     iconAnchor: [14, 14],
     popupAnchor: [0, -14]
   });
-  var orgMarkers = new L.FeatureGroup();
+  var orgMarkers = new L.MarkerClusterGroup();
 
   {%- for file in pages %}
     {%- if file.page and file.page.meta.location and file.page.meta.location.latitude and file.page.meta.location.longitude and file.page.url.startswith('organisations/') and file.page.meta.status == 'active' %}
