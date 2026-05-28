@@ -3,7 +3,7 @@ title: Vietnam Fatherland Front (VFF)
 type: governance
 status: active
 country: VN
-website: https://mattrantoquoc.org.vn
+website: http://www.mattran.org.vn
 summary: "Vietnam's constitutionally mandated consultative umbrella body — 50+ member organisations representing professional, religious, ethnic, and social groups — structurally analogous to China's CPPCC, operating under the Vietnamese Communist Party's single-party framework."
 location:
   latitude: 21.0285
@@ -26,7 +26,7 @@ The VFF occupies a formally more active role than its Chinese counterpart in one
 
 ## Links
 
-- Website: [mattrantoquoc.org.vn](https://mattrantoquoc.org.vn)
+- Website: [mattran.org.vn](http://www.mattran.org.vn)
 
 ## See also
 
