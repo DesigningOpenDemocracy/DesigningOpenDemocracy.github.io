@@ -2,43 +2,67 @@
 {% block content %}
 {{ super() }}
 <div class="md-typeset">
-{% set status_groups = [
-  ('active',       'Active'),
-  ('inactive',     'Inactive'),
-  ('deregistered', 'Deregistered')
-] %}
-{% for status_key, status_label in status_groups %}
-  {%- set ns = namespace(has_items=false) %}
-  {%- for file in pages %}
-    {%- if file.page and file.page.url and file.page.url.startswith('organisations/') and file.page.url != page.url and file.page.meta.get('status') == status_key %}
-      {%- set ns.has_items = true %}
-    {%- endif %}
-  {%- endfor %}
-  {%- if ns.has_items %}
-  <h2>{{ status_label }}</h2>
-  <div class="projects-index-grid">
+<input type="search" id="org-search" placeholder="Filter organisations…" class="org-search-input" aria-label="Filter organisations">
+<table id="org-table" class="org-sortable-table">
+  <thead>
+    <tr>
+      <th class="sortable" data-col="0">Name <span class="sort-icon">↕</span></th>
+      <th class="sortable" data-col="1">Type <span class="sort-icon">↕</span></th>
+      <th class="sortable" data-col="2">Country <span class="sort-icon">↕</span></th>
+      <th class="sortable" data-col="3">Status <span class="sort-icon">↕</span></th>
+    </tr>
+  </thead>
+  <tbody>
     {%- for file in pages %}
-      {%- if file.page and file.page.url and file.page.url.startswith('organisations/') and file.page.url != page.url and file.page.meta.get('status') == status_key %}
-      <a class="project-index-card" href="/{{ file.page.url }}">
-        <div class="project-index-card-header">
-          <span class="project-index-card-title">{{ file.page.title }}</span>
-          <span class="project-status-badge status-{{ status_key }}">{{ status_label }}</span>
-        </div>
-        {%- if file.page.meta.get('type') or file.page.meta.get('country') %}
-        <p class="org-index-card-meta">
-          {%- if file.page.meta.get('type') %}{{ file.page.meta.type }}{%- endif %}
-          {%- if file.page.meta.get('type') and file.page.meta.get('country') %} · {%- endif %}
-          {%- if file.page.meta.get('country') %}{{ file.page.meta.country }}{%- endif %}
-        </p>
-        {%- endif %}
-        {%- if file.page.meta.get('summary') %}
-        <p>{{ file.page.meta.summary }}</p>
-        {%- endif %}
-      </a>
+      {%- if file.page and file.page.url and file.page.url.startswith('organisations/') and file.page.url != page.url %}
+      <tr data-status="{{ file.page.meta.get('status', '') }}">
+        <td><a href="/{{ file.page.url }}">{{ file.page.title }}</a></td>
+        <td>{{ file.page.meta.get('type', '') }}</td>
+        <td>{{ file.page.meta.get('country', '') }}</td>
+        <td><span class="project-status-badge status-{{ file.page.meta.get('status', '') }}">{{ file.page.meta.get('status', '') }}</span></td>
+      </tr>
       {%- endif %}
     {%- endfor %}
-  </div>
-  {%- endif %}
-{%- endfor %}
+  </tbody>
+</table>
 </div>
+<script>
+(function () {
+  var table  = document.getElementById('org-table');
+  var tbody  = table.querySelector('tbody');
+  var headers = Array.from(table.querySelectorAll('th.sortable'));
+  var search  = document.getElementById('org-search');
+  var sortCol = -1, sortAsc = true;
+
+  function rows() { return Array.from(tbody.querySelectorAll('tr')); }
+
+  function applySort(col, asc) {
+    var sorted = rows().sort(function (a, b) {
+      var av = a.cells[col].textContent.trim().toLowerCase();
+      var bv = b.cells[col].textContent.trim().toLowerCase();
+      return asc ? av.localeCompare(bv) : bv.localeCompare(av);
+    });
+    sorted.forEach(function (r) { tbody.appendChild(r); });
+  }
+
+  headers.forEach(function (th) {
+    th.addEventListener('click', function () {
+      var col = parseInt(th.dataset.col, 10);
+      sortAsc = (sortCol === col) ? !sortAsc : true;
+      sortCol = col;
+      headers.forEach(function (h) { h.querySelector('.sort-icon').textContent = '↕'; });
+      th.querySelector('.sort-icon').textContent = sortAsc ? '↑' : '↓';
+      applySort(col, sortAsc);
+    });
+    th.style.cursor = 'pointer';
+  });
+
+  search.addEventListener('input', function () {
+    var q = search.value.toLowerCase();
+    rows().forEach(function (r) {
+      r.hidden = q && !r.textContent.toLowerCase().includes(q);
+    });
+  });
+})();
+</script>
 {% endblock %}
