@@ -3,7 +3,7 @@ title: NAMFREL (National Citizens' Movement for Free Elections)
 type: advocacy
 status: active
 country: PH
-website: https://namfrel.com.ph
+website: https://web.archive.org/web/*/https://namfrel.com.ph
 summary: "The Philippines' independent citizen election watchdog — founded in 1983, widely regarded as the world's first citizen-led election monitoring organisation, with 250,000+ volunteers conducting parallel vote counts and election observation."
 location:
   latitude: 14.5995
@@ -24,4 +24,4 @@ NAMFREL is accredited by the Commission on Elections (COMELEC) as the official "
 
 ## Links
 
-- Website: [namfrel.com.ph](https://namfrel.com.ph)
+- Archive: [namfrel.com.ph (Wayback Machine)](https://web.archive.org/web/*/https://namfrel.com.ph) — `.com` domain squatted by unrelated site
