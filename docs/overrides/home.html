@@ -23,7 +23,7 @@
     <div id="projects-grid">
       {%- for file in pages %}
         {%- if file.page and file.page.meta.status == 'active' and file.page.url.startswith('projects/') %}
-        <a class="project-card" href="{{ file.page.url }}">
+        <a class="project-card" href="/{{ file.page.url }}">
           <h3>{{ file.page.title }}</h3>
           {%- if file.page.meta.summary %}
           <p>{{ file.page.meta.summary }}</p>
@@ -44,7 +44,7 @@
       <button id="map-expand-btn" aria-label="Expand map">⛶</button>
     </div>
     <p id="map-hint">Click a marker for details · Scroll to zoom · ⛶ to expand</p>
-    <p id="map-footer"><a href="organisations/">View all organisations →</a></p>
+    <p id="map-footer"><a href="/organisations/organisations/">View all organisations →</a></p>
   </div>
 </section>
 <script>
@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", function() {
             opacity: 1.0 - getFadeRatioBasedOnTime('{{ file.page.meta.date }}') / 2
           })
           .bindPopup(`
-            <a style="font-weight:bold" href="{{ file.page.url }}">{{ file.page.title }}</a> 
+            <a style="font-weight:bold" href="/{{ file.page.url }}">{{ file.page.title }}</a>
             <br/> <i>{{ file.page.meta.date }}</i>
             <br/> {{ file.page.meta.location.name }}
             {%- if file.page.meta.location.description %}
@@ -147,7 +147,7 @@ document.addEventListener("DOMContentLoaded", function() {
           [{{ file.page.meta.location.latitude }}, {{ file.page.meta.location.longitude }}],
           { icon: makeOrgIcon('{{ file.page.meta.type }}') }
         ).bindPopup(`
-          <a style="font-weight:bold" href="{{ file.page.url }}">{{ file.page.title }}</a>
+          <a style="font-weight:bold" href="/{{ file.page.url }}">{{ file.page.title }}</a>
           <br/><i>{{ file.page.meta.type }}{% if file.page.meta.country %} · {{ file.page.meta.country }}{% endif %}</i>
           {%- if file.page.meta.location.name %}
             <br/>{{ file.page.meta.location.name }}
