@@ -4,6 +4,8 @@ contributors:
   - BrianKhuu
 ---
 
+> **Mostly migrated.** The organisations listed here have been reviewed against the [Democracy Landscape](../organisations/organisations.md). Most now have Landscape entries; this file is retained as the original raw list. Do not treat it as the current reference — use the Landscape instead.
+
 In no particular order these are known so far to us:
 
 ## Designing Open Democracy

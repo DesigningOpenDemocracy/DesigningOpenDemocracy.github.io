@@ -5,6 +5,8 @@ contributors:
   - RandStrauss
 ---
 
+> **Mostly migrated.** The organisations listed here have been reviewed against the [Democracy Landscape](../organisations/organisations.md). Most now have Landscape entries; the remaining entries (Discourse, hypothes.is, Nation Builder) are software tools outside the Landscape's scope. This file is retained as the original raw list.
+
 ## Citizen Parliament (UK)
 
 <https://www.citizensparliament.uk/>
