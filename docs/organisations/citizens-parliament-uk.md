@@ -1,9 +1,9 @@
 ---
 title: Citizens Parliament (UK)
 type: advocacy
-status: active
+status: inactive
 country: UK
-website: https://www.citizensparliament.uk
+website: https://web.archive.org/web/*/https://www.citizensparliament.uk
 summary: "A UK campaign to replace the House of Lords with a randomly selected citizens' chamber — a permanent sortition-based upper house."
 location:
   latitude: 51.5074
@@ -17,4 +17,4 @@ The proposal is notable for its institutional specificity. Rather than calling f
 
 ## Links
 
-- Website: [citizensparliament.uk](https://www.citizensparliament.uk)
+- Archive: [citizensparliament.uk (Wayback Machine)](https://web.archive.org/web/*/https://www.citizensparliament.uk)
