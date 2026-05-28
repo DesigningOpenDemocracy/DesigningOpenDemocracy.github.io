@@ -3,7 +3,7 @@ title: Kongra Star (Women's Congress)
 type: governance
 status: active
 country: SY
-website: https://kongra-star.com
+website: https://web.archive.org/web/20210916150431/https://eng.kongra-star.org/
 summary: "The women's governance organisation of the Autonomous Administration of North and East Syria — maintaining parallel governance structures at every level of the AANES system, from commune to canton, as a structural check on all decision-making."
 location:
   latitude: 37.0527
@@ -29,7 +29,7 @@ The organisation grew out of earlier Kurdish women's organising and was shaped b
 
 ## Links
 
-- Website: [kongra-star.com](https://kongra-star.com)
+- Archive: [eng.kongra-star.org (Wayback Machine)](https://web.archive.org/web/20210916150431/https://eng.kongra-star.org/)
 
 ## See also
 
