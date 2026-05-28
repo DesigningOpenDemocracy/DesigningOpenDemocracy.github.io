@@ -84,3 +84,8 @@ This is from the perspective of an incoming web user
   <https://stackoverflow.com/questions/50840168/how-to-detect-if-the-os-is-in-dark-mode-in-browsers>
 - Microformats compatible for ease of use in social media:
   <http://microformats.org/>
+
+## See also
+
+- [E-Government](../concepts/e-government.md)
+- [Representative Democracy](../concepts/representative-democracy.md)

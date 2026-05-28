@@ -13,3 +13,11 @@ Prediki is a peer-to-peer platform for opinion research and collective intellige
 The two presentations are complementary: Gruen's argument concerns *who* should decide (randomly selected citizens), while Prediki addresses *how* to aggregate and surface considered opinion at scale.
 
 See the [Democracy Landscape entry](../organisations/prediki.md) for a full description of how the platform works.
+
+## See also
+
+- [Prediction Markets](../concepts/prediction-markets.md)
+- [Cognitive Division of Labour](../concepts/cognitive-division-of-labour.md)
+- [Isegoria](../concepts/isegoria.md)
+- [Consensus Mapping](../concepts/consensus-mapping.md)
+- [Prediki](../organisations/prediki.md)

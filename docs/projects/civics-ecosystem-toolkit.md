@@ -27,3 +27,11 @@ See the [full toolkit](https://www.designingopendemocracy.com/Civics-Ecosystem-T
 ## Get involved
 
 Read the toolkit and share feedback — the ideas here are meant to be stress-tested. Reach out to Brian via the [DOD Telegram](https://t.me/joinchat/HNk_UBX8A7jBPJPbAZU5Zg) if you want to discuss or collaborate.
+
+## See also
+
+- [Cooperative](../concepts/cooperative.md)
+- [Community Business](../concepts/community-business.md)
+- [Economic Democracy](../concepts/economic-democracy.md)
+- [CAPAD](../organisations/capad.md)
+- [Co-operative Bonds](../organisations/cooperative-bonds.md)

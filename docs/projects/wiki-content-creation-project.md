@@ -81,3 +81,8 @@ Created articles:
   frames etc (suggested by Nick)
 - Community owned businesses (definition, types of these businesses, how
   they're created, existing examples of these businesses)
+
+## See also
+
+- [Democracy](../concepts/democracy.md)
+- [Concepts](../concepts/concepts.md)
