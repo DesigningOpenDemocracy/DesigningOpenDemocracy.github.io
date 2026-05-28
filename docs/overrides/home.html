@@ -43,13 +43,13 @@
       <div class="leaflet-container" id="map"></div>
       <button id="map-expand-btn" aria-label="Expand map">⛶</button>
     </div>
-    <p id="map-hint">Click a marker for details · ⛶ to expand · scroll to zoom when expanded</p>
+    <p id="map-hint">Click a marker for details · Scroll to zoom · ⛶ to expand</p>
     <p id="map-footer"><a href="organisations/">View all organisations →</a></p>
   </div>
 </section>
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-  const map = L.map('map', { scrollWheelZoom: false }).setView([-27.41, 134.77], 3);
+  const map = L.map('map', { scrollWheelZoom: true }).setView([-27.41, 134.77], 3);
 
   const mapWrapper = document.getElementById('map-wrapper');
   const mapSection = document.getElementById('activity-map-container');
@@ -64,8 +64,7 @@ document.addEventListener("DOMContentLoaded", function() {
     expandBtn.setAttribute('aria-label', expand ? 'Collapse map' : 'Expand map');
     mapHint.textContent = expand
       ? 'Scroll to zoom · Esc to close'
-      : 'Click a marker for details · ⛶ to expand · scroll to zoom when expanded';
-    expand ? map.scrollWheelZoom.enable() : map.scrollWheelZoom.disable();
+      : 'Click a marker for details · Scroll to zoom · ⛶ to expand';
     setTimeout(() => map.invalidateSize(), 50);
   }
 
