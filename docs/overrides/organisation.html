@@ -1,4 +1,12 @@
 {% extends "main.html" %}
+{% set type_icons = {
+  'research': '🔬', 'education': '🔬',
+  'advocacy': '📢',
+  'platform': '💻', 'civic_tech': '💻',
+  'practice': '🤝', 'philanthropy': '🤝', 'cooperative': '🤝',
+  'party': '🗳️', 'political_party': '🗳️', 'political-party': '🗳️', 'political_movement': '🗳️',
+  'governance': '⚖️', 'government': '⚖️'
+} %}
 {% block content %}
 {%- if page.meta.status or page.meta.type or page.meta.country or page.meta.website %}
 <div class="project-meta-box md-typeset">
@@ -13,7 +21,7 @@
       {%- if page.meta.type %}
       <tr>
         <th>Type</th>
-        <td>{{ page.meta.type }}</td>
+        <td>{{ type_icons.get(page.meta.type, '🏛️') }} {{ page.meta.type }}</td>
       </tr>
       {%- endif %}
       {%- if page.meta.country %}

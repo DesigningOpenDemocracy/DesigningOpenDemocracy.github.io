@@ -1,4 +1,12 @@
 {% extends "main.html" %}
+{% set type_icons = {
+  'research': '🔬', 'education': '🔬',
+  'advocacy': '📢',
+  'platform': '💻', 'civic_tech': '💻',
+  'practice': '🤝', 'philanthropy': '🤝', 'cooperative': '🤝',
+  'party': '🗳️', 'political_party': '🗳️', 'political-party': '🗳️', 'political_movement': '🗳️',
+  'governance': '⚖️', 'government': '⚖️'
+} %}
 {% block content %}
 {{ super() }}
 <div class="md-typeset">
@@ -17,7 +25,8 @@
       {%- if file.page and file.page.url and file.page.url.startswith('organisations/') and file.page.url != page.url %}
       <tr data-status="{{ file.page.meta.get('status', '') }}">
         <td><a href="/{{ file.page.url }}">{{ file.page.title }}</a></td>
-        <td>{{ file.page.meta.get('type', '') }}</td>
+        {%- set t = file.page.meta.get('type', '') %}
+        <td data-sort="{{ t }}">{{ type_icons.get(t, '🏛️') }} {{ t }}</td>
         <td>{{ file.page.meta.get('country', '') }}</td>
         <td><span class="project-status-badge status-{{ file.page.meta.get('status', '') }}">{{ file.page.meta.get('status', '') }}</span></td>
       </tr>
