@@ -9,6 +9,10 @@ location:
   latitude: 32.0853
   longitude: 34.7818
   name: Tel Aviv, Israel
+concepts:
+  - constitutional-democracy
+  - accountability-sink
+  - radical-transparency
 ---
 
 The Movement for Quality Government in Israel (MQG) has operated since 1990 as Israel's primary watchdog organisation for government accountability, anti-corruption, and rule of law. Its approach combines strategic litigation, Supreme Court petitions, investigative research, and civic education — holding the Israeli government accountable to its own stated legal and democratic standards.

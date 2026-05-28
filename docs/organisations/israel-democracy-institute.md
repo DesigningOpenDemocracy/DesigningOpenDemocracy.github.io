@@ -9,6 +9,10 @@ location:
   latitude: 31.7683
   longitude: 35.2137
   name: Jerusalem, Israel
+concepts:
+  - democracy
+  - constitutional-democracy
+  - mixed-member-proportional-representation
 ---
 
 The Israel Democracy Institute (IDI) is an independent, nonpartisan research and policy institute founded in 1991. It is the primary academic body studying Israeli democratic governance, producing rigorous empirical research on institutional design, electoral systems, rule of law, and civic participation.
