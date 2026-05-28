@@ -12,4 +12,3 @@ that work on issues related to improving government and society:
   Society Foundations award grants, scholarships, and fellowships
   throughout the year to organizations and individuals who share Open
   Society values.")
-- 
