@@ -24,4 +24,4 @@ NAMFREL is accredited by the Commission on Elections (COMELEC) as the official "
 
 ## Links
 
-- Archive: [namfrel.com.ph (Wayback Machine)](https://web.archive.org/web/*/https://namfrel.com.ph) — `.com` domain squatted by unrelated site
+- Archive: [namfrel.com.ph (Wayback Machine)](https://web.archive.org/web/*/https://namfrel.com.ph) — `.com.ph` currently unreachable; `namfrel.com` is a different Philippine democracy advocacy site unrelated to NAMFREL
