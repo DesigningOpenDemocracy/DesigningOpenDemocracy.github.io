@@ -191,3 +191,14 @@ following:
 - <https://www.merriam-webster.com/dictionary/democracy/>
 - <https://en.wikipedia.org/wiki/Democracy/>
 - <https://civicsacademy.co.za/what-are-the-key-features-of-a-democracy/>
+
+## See also
+
+- [Direct Democracy](direct-democracy.md)
+- [Representative Democracy](representative-democracy.md)
+- [Liberal Democracy](liberal-democracy.md)
+- [Constitutional Democracy](constitutional-democracy.md)
+- [Deliberative democracy — Citizens' Assembly](citizens-assembly.md)
+- [Sortition](sortition.md)
+- [Democratic Confederalism](democratic-confederalism.md)
+- [Vanguardism and Consultative Democracy](vanguardism.md)

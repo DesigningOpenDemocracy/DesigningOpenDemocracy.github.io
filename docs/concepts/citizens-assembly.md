@@ -146,3 +146,15 @@ Wikipedia: <https://en.wikipedia.org/wiki/Citizens%27_assembly>
 Electoral Reform Society, ‘What is a Citizens’ Assembly’,
 <https://www.electoral-reform.org.uk/what-is-a-citizens-assembly/>. The
 organisation has helped run Citizens’ Assemblies in the UK.
+
+## See also
+
+- [Sortition](sortition.md)
+- [Isegoria](isegoria.md)
+- [Cognitive Division of Labour](cognitive-division-of-labour.md)
+- [Liquid Democracy](liquid-democracy.md)
+- [Consensus Mapping](consensus-mapping.md)
+- [newDemocracy Foundation](../organisations/newdemocracy.md)
+- [Sortition Foundation](../organisations/sortition-foundation.md)
+- [Healthy Democracy](../organisations/healthy-democracy.md)
+- [G1000](../organisations/g1000.md)

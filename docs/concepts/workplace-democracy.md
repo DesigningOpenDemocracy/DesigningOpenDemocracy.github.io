@@ -211,10 +211,10 @@ structured plans.
 Employee ownership is most prevalent in the United States, its forms
 include:
 
-- [[Employee Stock Ownership Plans]] (ESOPs)
-- [[Equity Compensation Plans]]
-- [[Worker Cooperatives]]
-- [[Employee Ownership Trusts]]
+- [Employee Stock Ownership Plans](employee-stock-ownership-plans.md) (ESOPs)
+- [Equity Compensation Plans](equity-compensation-plans.md)
+- [Worker Cooperatives](worker-cooperatives.md)
+- [Employee Ownership Trusts](employee-ownership-trusts.md)
 
 Employee ownership plans are most frequently used as a vehicle for
 business transition in closely held businesses. Employee ownership is
@@ -229,3 +229,14 @@ employees are encouraged to think and act like owners.
 - <https://learning-in-action.williams.edu/breaking-the-mold/what-is-workplace-democracy/>
 - <https://en.wikipedia.org/wiki/Workplace_democracy/>
 - <https://www.nceo.org/what-is-employee-ownership>
+
+## See also
+
+- [Cooperative](cooperative.md)
+- [Worker Cooperatives](worker-cooperatives.md)
+- [Economic Democracy](economic-democracy.md)
+- [Community Business](community-business.md)
+- [Employee Stock Ownership Plans](employee-stock-ownership-plans.md)
+- [Employee Ownership Trusts](employee-ownership-trusts.md)
+- [Co-operative Bonds](../organisations/cooperative-bonds.md)
+- [CAPAD](../organisations/capad.md)

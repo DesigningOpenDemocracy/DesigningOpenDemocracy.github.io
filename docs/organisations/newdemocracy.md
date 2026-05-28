@@ -22,3 +22,10 @@ newDemocracy's core argument is that the adversarial, partisan nature of represe
 ## Links
 
 - Website: [newdemocracy.com.au](https://www.newdemocracy.com.au)
+
+## See also
+
+- [Citizens' Assembly](../concepts/citizens-assembly.md)
+- [Sortition](../concepts/sortition.md)
+- [Isegoria](../concepts/isegoria.md)
+- [Cognitive Division of Labour](../concepts/cognitive-division-of-labour.md)

@@ -39,3 +39,9 @@ Pol.is is the technical backbone of [vTaiwan](vtaiwan.md) — the most-cited exa
 - Website: [pol.is](https://pol.is)
 - Computational Democracy Project: [compdemocracy.org](https://compdemocracy.org)
 - Guardian article: [Taiwan's civic hackers and Pol.is](https://www.theguardian.com/world/2020/sep/27/taiwan-civic-hackers-polis-consensus-social-media-platform)
+
+## See also
+
+- [Consensus Mapping](../concepts/consensus-mapping.md)
+- [Citizens' Assembly](../concepts/citizens-assembly.md)
+- [vTaiwan](vtaiwan.md)

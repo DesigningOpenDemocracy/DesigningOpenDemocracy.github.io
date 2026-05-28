@@ -24,3 +24,9 @@ PR-STV is distinct from party-list proportional representation (used in most of 
 ## Links
 
 - Website: [prsa.org.au](https://www.prsa.org.au)
+
+## See also
+
+- [Mixed-Member Proportional Representation](../concepts/mixed-member-proportional-representation.md)
+- [Representative Democracy](../concepts/representative-democracy.md)
+- [Direct Democracy](../concepts/direct-democracy.md)
