@@ -3,7 +3,7 @@ title: Rwanda Governance Board (RGB)
 type: research
 status: active
 country: RW
-website: https://rgb.gov.rw
+website: https://www.rgb.rw
 summary: "Rwanda's government body for governance research and oversight — publishing annual governance scorecards, studying decentralisation and citizen participation, and administering the Ubudehe community classification system. Included for its governance design research, not as an independent watchdog of the Kagame government."
 location:
   latitude: -1.9441
@@ -23,4 +23,4 @@ Rwanda has two governance innovations that are extensively studied international
 
 ## Links
 
-- Website: [rgb.gov.rw](https://rgb.gov.rw)
+- Website: [rgb.rw](https://www.rgb.rw)
