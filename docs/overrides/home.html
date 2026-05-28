@@ -59,6 +59,7 @@ document.addEventListener("DOMContentLoaded", function() {
     mapSection.style.isolation = expand ? 'auto' : '';
     expandBtn.textContent = expand ? '✕' : '⛶';
     expandBtn.setAttribute('aria-label', expand ? 'Collapse map' : 'Expand map');
+    expand ? map.scrollWheelZoom.enable() : map.scrollWheelZoom.disable();
     setTimeout(() => map.invalidateSize(), 50);
   }
 

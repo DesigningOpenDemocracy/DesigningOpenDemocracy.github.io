@@ -284,6 +284,14 @@
  * These overrides lower both thresholds to 60em (960px) so the top-bar tabs
  * and the inline sidebar both appear at normal desktop widths.
  */
+/* Left-align the layer toggle labels in the map control */
+.leaflet-control-layers-overlays label {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  gap: 4px;
+}
+
 /* Organisation markers on the activity map */
 .org-map-icon {
   background: none !important;
