@@ -15,11 +15,14 @@ Citizens' juries and sortition-based processes restore isegoria by a different m
 
 The argument is not just procedural. Gruen also draws on the observation that vox-pop democracy — where public opinion is sampled through rapid, unconsidered reactions — produces systematically worse outcomes than deliberative processes, because human cognition works differently under the two conditions. Electoral politics, by rewarding emotional salience over considered reasoning, actively degrades the quality of collective decision-making.
 
-## Relation to other concepts
+## See also
 
-- [Sortition](sortition.md) — the mechanism most associated with restoring isegoria in modern contexts
-- [Citizens' Assembly](citizens-assembly.md) — the institutional form most commonly used to operationalise it
-- [Representative Democracy](representative-democracy.md) — the system Gruen argues structurally undermines isegoria despite its democratic framing
+- [Sortition](sortition.md)
+- [Citizens' Assembly](citizens-assembly.md)
+- [Representative Democracy](representative-democracy.md)
+- [Lateral Economics](../organisations/lateral-economics.md)
+- [newDemocracy Foundation](../organisations/newdemocracy.md)
+- [Sortition Foundation Australia](../organisations/sortition-foundation-australia.md)
 
 ## Sources and further reading
 

@@ -17,3 +17,10 @@ For a more comprehensive overview, see the [Democracy](democracy.md) page.
 ## Further reading
 
 - Wikipedia: [Democracy](https://en.wikipedia.org/wiki/Democracy)
+
+## See also
+
+- [Democracy](democracy.md)
+- [Direct Democracy](direct-democracy.md)
+- [Representative Democracy](representative-democracy.md)
+- [Liberal Democracy](liberal-democracy.md)

@@ -44,3 +44,12 @@ suffrage and political equality. These characteristics are:
 ## Further reading
 
 - Wikipedia: [Liberal democracy](https://en.wikipedia.org/wiki/Liberal_democracy)
+
+## See also
+
+- [Democracy](democracy.md)
+- [Representative Democracy](representative-democracy.md)
+- [Constitutional Democracy](constitutional-democracy.md)
+- [Direct Democracy](direct-democracy.md)
+- [Grattan Institute](../organisations/grattan-institute.md)
+- [newDemocracy Foundation](../organisations/newdemocracy.md)

@@ -32,3 +32,14 @@ representative democracy.
 ## Further reading
 
 - Wikipedia: [Direct democracy](https://en.wikipedia.org/wiki/Direct_democracy)
+
+## See also
+
+- [Liquid Democracy](liquid-democracy.md)
+- [Sortition](sortition.md)
+- [Citizens' Assembly](citizens-assembly.md)
+- [Representative Democracy](representative-democracy.md)
+- [Flux Party](../organisations/flux-party.md)
+- [None of the Above Party (Canada)](../organisations/nota-canada.md)
+- [MiVote](../organisations/mivote.md)
+- [NewVote](../organisations/newvote.md)

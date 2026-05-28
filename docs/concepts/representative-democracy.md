@@ -27,3 +27,12 @@ RDs can function well as components of two governing systems:
 ## Further reading
 
 - Wikipedia: [Representative democracy](https://en.wikipedia.org/wiki/Representative_democracy)
+
+## See also
+
+- [Democracy](democracy.md)
+- [Direct Democracy](direct-democracy.md)
+- [Liquid Democracy](liquid-democracy.md)
+- [Constitutional Democracy](constitutional-democracy.md)
+- [Flux Party](../organisations/flux-party.md)
+- [None of the Above Party (Canada)](../organisations/nota-canada.md)
