@@ -9,6 +9,9 @@ location:
   latitude: -33.8688
   longitude: 151.2093
   name: Australia
+concepts:
+  - representative-democracy
+  - mixed-member-proportional-representation
 ---
 
 The Electoral Royal Commission campaign was an initiative started by [Pirate Party Australia](pirate-party-australia.md) to advocate for a formal Royal Commission into Australia's electoral system and voting reform options. The campaign sought to place electoral reform on the national political agenda through the established Royal Commission mechanism.

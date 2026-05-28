@@ -9,6 +9,10 @@ location:
   latitude: -33.8688
   longitude: 151.2093
   name: Sydney, Australia
+concepts:
+  - radical-transparency
+  - e-government
+  - accountability-sink
 ---
 
 The OpenAustralia Foundation is a non-partisan charity whose work centres on making Australian parliamentary and government information accessible and usable. They build and maintain several well-known tools:

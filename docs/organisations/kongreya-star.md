@@ -9,6 +9,8 @@ location:
   latitude: 37.0527
   longitude: 41.2270
   name: Qamishli, North and East Syria (AANES)
+concepts:
+  - democratic-confederalism
 ---
 
 > **Note on context:** Kongra Star operates within the AANES, which is not internationally recognised. See the [TEV-DEM](tev-dem.md) entry for context on the broader governance framework.

@@ -9,6 +9,10 @@ location:
   latitude: -35.2809
   longitude: 149.1300
   name: Canberra, Australia
+concepts:
+  - citizens-assembly
+  - constitutional-democracy
+  - democracy
 ---
 
 The Referendum Council was a joint advisory body established by Prime Minister Malcolm Turnbull and Opposition Leader Bill Shorten in December 2016. Co-chaired by Pat Anderson AO and Mark Leibler AC, it was tasked with consulting broadly on options for constitutional recognition of Aboriginal and Torres Strait Islander peoples and reporting back with recommendations.

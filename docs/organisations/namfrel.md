@@ -9,6 +9,10 @@ location:
   latitude: 14.5995
   longitude: 120.9842
   name: Manila, Philippines
+concepts:
+  - representative-democracy
+  - accountability-sink
+  - radical-transparency
 ---
 
 NAMFREL (National Citizens' Movement for Free Elections) was founded in October 1983 and is widely regarded as the world's first citizen-led election monitoring organisation. It draws on a volunteer base of over 250,000 members from religious, civic, business, professional, labour, and youth organisations across the Philippines.

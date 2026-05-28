@@ -9,6 +9,10 @@ location:
   latitude: 48.2082
   longitude: 16.3738
   name: Vienna, Austria
+concepts:
+  - prediction-markets
+  - cognitive-division-of-labour
+  - isegoria
 ---
 
 Prediki (Prediki Prediction Markets GmbH) is a peer-to-peer platform for opinion research and collective intelligence, built around prediction market methodology. Rather than simple polling, participants make structured predictions about outcomes, stake a position, and provide reasons — the system aggregates these into probability estimates while tracking the quality of each contributor's predictions over time.

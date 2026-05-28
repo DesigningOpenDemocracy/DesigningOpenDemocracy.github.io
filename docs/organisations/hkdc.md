@@ -9,6 +9,10 @@ location:
   latitude: 22.3193
   longitude: 114.1694
   name: Hong Kong (origin; operates in diaspora)
+concepts:
+  - democracy
+  - liberal-democracy
+  - constitutional-democracy
 ---
 
 > **Note:** HKDC operates from diaspora in Washington DC. It is included here because its work is specifically about a particular governance system — the accountability structures promised to Hong Kong under One Country, Two Systems — rather than general human rights documentation.

@@ -9,6 +9,10 @@ location:
   latitude: -35.2809
   longitude: 149.1300
   name: Canberra, Australia
+concepts:
+  - mixed-member-proportional-representation
+  - representative-democracy
+  - direct-democracy
 ---
 
 The Proportional Representation Society of Australia (PRSA) is one of Australia's oldest electoral reform organisations, with roots in the 19th century — Catherine Helen Spence was among its founding members. The current national constitution dates from 1982.

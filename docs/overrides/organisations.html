@@ -18,6 +18,7 @@
       <th class="sortable" data-col="1">Type <span class="sort-icon">↕</span></th>
       <th class="sortable" data-col="2">Country <span class="sort-icon">↕</span></th>
       <th class="sortable" data-col="3">Status <span class="sort-icon">↕</span></th>
+      <th>Concepts</th>
     </tr>
   </thead>
   <tbody>
@@ -29,6 +30,11 @@
         <td data-sort="{{ t }}">{{ type_icons.get(t, '🏛️') }} {{ t }}</td>
         <td>{{ file.page.meta.get('country', '') }}</td>
         <td><span class="project-status-badge status-{{ file.page.meta.get('status', '') }}">{{ file.page.meta.get('status', '') }}</span></td>
+        <td>
+          {%- for c in file.page.meta.get('concepts', []) %}
+          <a href="/concepts/{{ c }}/" class="concept-tag">{{ c | replace('-', ' ') | title }}</a>
+          {%- endfor %}
+        </td>
       </tr>
       {%- endif %}
     {%- endfor %}

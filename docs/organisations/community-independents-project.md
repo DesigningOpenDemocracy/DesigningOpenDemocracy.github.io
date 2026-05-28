@@ -9,6 +9,9 @@ location:
   latitude: -37.8136
   longitude: 144.9631
   name: Melbourne, Australia
+concepts:
+  - representative-democracy
+  - accountability-sink
 ---
 
 The Community Independents Project (CIP) is the coordinating body for Australia's community independent candidate movement — a network of locally organised, non-partisan groups that support community-driven independent candidates at federal, state, and local elections.

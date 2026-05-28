@@ -9,6 +9,9 @@ location:
   latitude: 51.5074
   longitude: -0.1278
   name: London, United Kingdom
+concepts:
+  - citizens-assembly
+  - direct-democracy
 ---
 
 Involve is a UK charity at the intersection of research and practice in public participation. They work with governments, public institutions, and communities to design participation processes that actually influence decisions — as opposed to the tokenistic consultation that often passes for engagement.

@@ -9,6 +9,10 @@ location:
   latitude: -26.2041
   longitude: 28.0473
   name: Johannesburg, South Africa
+concepts:
+  - representative-democracy
+  - democracy
+  - accountability-sink
 ---
 
 EISA (Electoral Institute for Sustainable Democracy in Africa) is an independent, non-partisan organisation founded in 1996, headquartered in Johannesburg with a regional office in Abidjan, Côte d'Ivoire. It works across sub-Saharan Africa supporting electoral processes and democratic institution-building.

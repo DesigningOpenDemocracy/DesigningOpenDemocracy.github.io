@@ -7,6 +7,10 @@ website: https://web.archive.org/web/*/https://digipol.app/
 summary: "An open-source Australian app that lets citizens browse, read, and vote on bills before the Federal Parliament."
 contributors:
   - BrianKhuu
+concepts:
+  - direct-democracy
+  - e-government
+  - liquid-democracy
 ---
 
 DigiPol is an application developed by the Flux team to enable citizen participation in the legislative processes of the Australian Federal Parliament. It is open source, built by volunteer developers across Australia.

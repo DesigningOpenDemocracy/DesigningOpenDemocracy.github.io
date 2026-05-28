@@ -9,6 +9,10 @@ location:
   latitude: -35.2809
   longitude: 149.13
   name: Canberra, Australia
+concepts:
+  - accountability-sink
+  - constitutional-democracy
+  - representative-democracy
 ---
 
 The Democracy & Accountability Program is a dedicated research and advocacy program within [The Australia Institute](https://australiainstitute.org.au), a Canberra-based progressive think tank. Established in 2021, it builds on the Institute's longer history of democracy-related research.

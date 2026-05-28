@@ -9,6 +9,9 @@ location:
   latitude: -33.8688
   longitude: 151.2093
   name: Sydney, Australia
+concepts:
+  - end-to-end-verifiable-voting-system
+  - e-government
 ---
 
 SecureVote is a Sydney-based company providing blockchain-based voting infrastructure. Their platform uses a proprietary Blockchain Agnostic Scalability Layer (BASL) to enable decentralised, anonymous, and auditable elections at scale — stress-tested to 1.5 billion transactions in 24 hours.

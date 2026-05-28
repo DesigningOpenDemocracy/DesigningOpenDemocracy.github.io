@@ -9,6 +9,10 @@ location:
   latitude: -35.2809
   longitude: 149.1300
   name: Canberra, Australia
+concepts:
+  - radical-transparency
+  - e-government
+  - constitutional-democracy
 ---
 
 Australia participated in the [Open Government Partnership](https://www.opengovpartnership.org/) (OGP) — an international multilateral initiative in which governments commit to concrete reforms on transparency, civic participation, and accountability. Australia's first National Action Plan (2016–18) comprised 15 commitments across four themes: transparency, citizen empowerment, anti-corruption, and technology to strengthen governance.

@@ -9,6 +9,9 @@ location:
   latitude: -37.8136
   longitude: 144.9631
   name: Melbourne, Australia
+concepts:
+  - e-government
+  - radical-transparency
 ---
 
 Code for Australia (CfA) is a civic tech organisation founded in 2014, modelled on Code for America. Its primary program is a **fellowship**: placing technologists (developers, designers, data scientists) inside government agencies and non-profits for short-term engagements to help solve civic problems through digital tools.

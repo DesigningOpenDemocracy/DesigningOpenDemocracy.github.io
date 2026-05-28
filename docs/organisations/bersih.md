@@ -9,6 +9,10 @@ location:
   latitude: 3.1569
   longitude: 101.7123
   name: Petaling Jaya, Malaysia
+concepts:
+  - representative-democracy
+  - accountability-sink
+  - constitutional-democracy
 ---
 
 BERSIH 2.0 (Coalition for Clean and Fair Elections) is a non-partisan coalition of over 90 Malaysian civil society organisations, formally launched in April 2010 as a continuation of the original BERSIH coalition formed in 2007. It is Malaysia's most prominent electoral reform movement.

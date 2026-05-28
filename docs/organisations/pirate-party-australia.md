@@ -9,6 +9,10 @@ location:
   latitude: -33.8688
   longitude: 151.2093
   name: Sydney, Australia
+concepts:
+  - liquid-democracy
+  - issue-based-direct-democracy
+  - radical-transparency
 ---
 
 Pirate Party Australia is the Australian branch of the international Pirate Party movement, which originated in Sweden in 2006 around issues of copyright reform and internet freedom. The Australian chapter has broadened its platform to include democratic reform, government transparency, and civil liberties.

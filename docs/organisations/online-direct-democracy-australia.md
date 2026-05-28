@@ -9,6 +9,10 @@ location:
   latitude: -33.8688
   longitude: 151.2093
   name: Australia
+concepts:
+  - direct-democracy
+  - e-government
+  - liquid-democracy
 ---
 
 Online Direct Democracy Australia was a direct democracy advocacy and electoral organisation that promoted online citizen voting as a structural replacement for representative democracy. It stood candidates at Australian elections.

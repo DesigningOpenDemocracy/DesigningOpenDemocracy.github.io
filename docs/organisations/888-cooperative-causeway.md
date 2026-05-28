@@ -9,6 +9,10 @@ location:
   latitude: -37.8156
   longitude: 144.9648
   name: Melbourne, Australia
+concepts:
+  - cooperative
+  - worker-cooperatives
+  - economic-democracy
 ---
 
 888 Co-operative Causeway is a not-for-profit member-run co-working space at Level 5, 306 Little Collins Street, Melbourne — the first registered co-operative co-working space in Victoria, founded in 2018. It describes itself as "a network of micro-organisations and freelancers active in the social economy."

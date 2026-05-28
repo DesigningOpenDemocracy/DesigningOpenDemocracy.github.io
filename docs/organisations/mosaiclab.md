@@ -9,6 +9,9 @@ location:
   latitude: -37.8136
   longitude: 144.9631
   name: Melbourne, Australia
+concepts:
+  - citizens-assembly
+  - consensus-mapping
 ---
 
 MosaicLab is a professional practice specialising in public deliberation. Founded by Kimbra White, Nicole Hunter, and Keith Greaves, it designs and runs deliberative engagement processes: citizens' juries, standing panels, deliberative polls, and citizens' assemblies for government clients across Australia.

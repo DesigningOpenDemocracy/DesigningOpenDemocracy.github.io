@@ -9,6 +9,9 @@ location:
   latitude: 51.5074
   longitude: -0.1278
   name: London, United Kingdom
+concepts:
+  - sortition
+  - citizens-assembly
 ---
 
 Your Party is a UK political party ([Wikipedia](https://en.wikipedia.org/wiki/Your_Party_(UK))) registered with the Electoral Commission in September 2025. It was announced by Jeremy Corbyn and Zarah Sultana following their departures from Labour, reaching 55,000 members by December 2025.

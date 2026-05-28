@@ -9,6 +9,9 @@ location:
   latitude: 51.5074
   longitude: -0.1278
   name: London, United Kingdom
+concepts:
+  - citizens-assembly
+  - sortition
 ---
 
 Citizens Parliament is a UK advocacy organisation with a specific and concrete goal: abolish the appointed House of Lords and replace it with a representative chamber selected by sortition — a random sample of everyday people, similar to a jury, serving as a permanent upper house of review.

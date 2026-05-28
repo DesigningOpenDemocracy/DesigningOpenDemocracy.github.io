@@ -9,6 +9,10 @@ location:
   latitude: -27.4698
   longitude: 153.0251
   name: Brisbane, Australia
+concepts:
+  - direct-democracy
+  - liquid-democracy
+  - e-government
 ---
 
 NewVote is built on a simple philosophy: the world is better when everyone is empowered. The institute uses technology to operate across three democratic modes simultaneously:

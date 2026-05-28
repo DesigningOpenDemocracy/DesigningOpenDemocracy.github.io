@@ -9,6 +9,10 @@ location:
   latitude: -37.8136
   longitude: 144.9631
   name: Melbourne, Australia
+concepts:
+  - accountability-sink
+  - constitutional-democracy
+  - liberal-democracy
 ---
 
 The Accountability Round Table is a non-partisan coalition of professionals with backgrounds across academia, law, politics, and journalism. Its focus is on the structural conditions that allow democratic accountability to function: transparency laws, integrity commissions, ministerial conduct standards, and parliamentary oversight.

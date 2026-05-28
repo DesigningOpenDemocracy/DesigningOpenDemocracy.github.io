@@ -5,6 +5,9 @@ status: inactive
 country: AU
 website: https://web.archive.org/web/*/https://horizonstate.com/
 summary: "An Australian blockchain voting platform that aimed to bring secure, transparent digital voting to governments and organisations. Wound down after initial pilots."
+concepts:
+  - end-to-end-verifiable-voting-system
+  - e-government
 ---
 
 Horizon State was an Australian company that built a blockchain-based voting and decision-making platform. The system used distributed ledger technology to record votes on a permanent, publicly auditable record — aiming to solve problems of vote integrity, transparency, and accessibility.

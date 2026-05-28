@@ -9,6 +9,10 @@ location:
   latitude: -33.8688
   longitude: 151.2093
   name: Australia
+concepts:
+  - direct-democracy
+  - e-government
+  - liquid-democracy
 ---
 
 People Decide (PD) was an Australian participatory democracy platform and associated political party. It aimed to give citizens a direct role in national legislation and local government decisions through an online voting platform.

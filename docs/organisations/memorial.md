@@ -9,6 +9,10 @@ location:
   latitude: 55.7558
   longitude: 37.6176
   name: Moscow, Russia (liquidated; international chapters active)
+concepts:
+  - accountability-sink
+  - democracy
+  - radical-transparency
 ---
 
 Memorial (Мемориал) was founded in the late 1980s during the Glasnost era to document and preserve memory of Soviet political repression — labour camps, executions, and mass deportations. It became one of Russia's most prominent civil society organisations, documenting abuses in Chechnya and other conflict zones, maintaining databases of political prisoners, and providing legal support to victims of state violence.

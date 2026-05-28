@@ -9,6 +9,8 @@ location:
   latitude: 21.0285
   longitude: 105.8542
   name: Hanoi, Vietnam
+concepts:
+  - vanguardism
 ---
 
 > **Note:** The VFF operates within Vietnam's single-party system under Vietnamese Communist Party (VCP) guidance. Its role is constitutionally defined as consultative — representing organised social interests within approved channels, not as an independent political actor. Scholars describe its function as similar to China's [CPPCC](cppcc.md): genuine aggregation of sectoral interests within structurally bounded limits. It is included here as a documented example of managed consultation and as a comparative case alongside the Chinese model.

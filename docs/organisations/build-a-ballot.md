@@ -9,6 +9,9 @@ location:
   latitude: -33.8688
   longitude: 151.2093
   name: Sydney, Australia
+concepts:
+  - representative-democracy
+  - e-government
 ---
 
 Build a Ballot is a voter advice application (VAA) built and maintained by Project Planet Inc., an Australian charity focused on climate change. The tool launches a few weeks before each state and federal election, presenting voters with a short series of policy questions and calculating a "match score" with candidates and parties in their electorate.

@@ -7,6 +7,10 @@ website: https://web.archive.org/web/*/https://voteflux.org/
 summary: "An Australian political party that uses Issue-Based Direct Democracy (IBDD) to let constituents direct how elected representatives vote in parliament."
 contributors:
   - Charlie
+concepts:
+  - issue-based-direct-democracy
+  - liquid-democracy
+  - prediction-markets
 ---
 
 ![Flux Party logo](flux-mark.svg)

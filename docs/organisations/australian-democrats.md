@@ -9,6 +9,10 @@ location:
   latitude: -37.8136
   longitude: 144.9631
   name: Melbourne, Australia
+concepts:
+  - citizens-assembly
+  - mixed-member-proportional-representation
+  - sortition
 ---
 
 The Australian Democrats were originally founded in 1977 by Don Chipp with the stated aim to "keep the bastards honest" — a positioning as a principled centrist force holding the major parties accountable. The party held the balance of power in the Senate for many years before collapsing around 2008. It has since been re-established and is rebuilding a presence at state and federal levels.

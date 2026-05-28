@@ -9,6 +9,10 @@ location:
   latitude: 45.5231
   longitude: -122.6765
   name: Portland, Oregon, USA
+concepts:
+  - citizens-assembly
+  - sortition
+  - direct-democracy
 ---
 
 Healthy Democracy developed and institutionalised the **Citizens' Initiative Review** (CIR) — a process in which a randomly selected, representative panel of citizens spends several days intensively studying a ballot measure: hearing from proponents and opponents, questioning experts, and deliberating together. The panel's findings — a balanced statement of key arguments and evidence — are then published in the official voter's guide sent to all voters before the election.
