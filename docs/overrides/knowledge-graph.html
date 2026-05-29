@@ -157,8 +157,35 @@
       wheelSensitivity: 0.3,
     });
 
-    // Apply active-only filter before layout so inactive nodes don't
-    // compete for space and distort active node positions.
+    // ── positioning (no layout algorithm) ────────────────────────────────
+    // 1. Concepts evenly spaced on a ring.
+    var conceptNodes = cy.nodes('[type = "concept"]');
+    var R = 500;
+    conceptNodes.forEach(function(node, i) {
+      var angle = (2 * Math.PI * i) / conceptNodes.length - Math.PI / 2;
+      node.position({ x: R * Math.cos(angle), y: R * Math.sin(angle) });
+    });
+
+    // 2. Orgs/projects placed at the centroid of their connected concept
+    //    positions, scaled 0.7× toward centre so they sit inside the ring.
+    //    Golden-angle jitter by index spreads nodes that share a centroid.
+    var GOLDEN = 2.39996; // ≈137.5°, avoids repeating radial lines
+    cy.nodes('[type != "concept"]').forEach(function(node, i) {
+      var linked = node.connectedEdges().connectedNodes('[type = "concept"]');
+      var tx = 0, ty = 0;
+      if (linked.length > 0) {
+        linked.forEach(function(c) { tx += c.position('x'); ty += c.position('y'); });
+        tx = (tx / linked.length) * 0.7;
+        ty = (ty / linked.length) * 0.7;
+      }
+      var r = 30 + (i % 7) * 18;
+      node.position({
+        x: tx + r * Math.cos(i * GOLDEN),
+        y: ty + r * Math.sin(i * GOLDEN),
+      });
+    });
+
+    // 3. Apply active-only filter, then fit.
     cy.nodes().forEach(function(node) {
       var d = node.data();
       if (d.type !== 'concept' && d.status !== 'active') node.addClass('hidden');
@@ -168,48 +195,6 @@
           cy.getElementById(edge.data('target')).hasClass('hidden'))
         edge.addClass('hidden');
     });
-
-    // Spread concept nodes evenly around a circle so they act as
-    // visible hubs, then lock them before running cose so the layout
-    // arranges orgs/projects around them rather than clustering concepts.
-    var concepts = cy.nodes('[type = "concept"]');
-    var R = 500;
-    concepts.forEach(function(node, i) {
-      var angle = (2 * Math.PI * i) / concepts.length - Math.PI / 2;
-      node.position({ x: R * Math.cos(angle), y: R * Math.sin(angle) });
-      node.lock();
-    });
-
-    // Pre-position each org/project near the centroid of its connected
-    // concepts so cose starts with reasonable positions and edge springs
-    // can pull nodes to the right part of the ring.
-    cy.nodes('[type != "concept"]:visible').forEach(function(node) {
-      var linked = node.connectedEdges().connectedNodes('[type = "concept"]');
-      var tx = 0, ty = 0;
-      if (linked.length > 0) {
-        linked.forEach(function(c) { tx += c.position('x'); ty += c.position('y'); });
-        tx /= linked.length;
-        ty /= linked.length;
-      }
-      var jitter = 60;
-      node.position({
-        x: tx + (Math.random() - 0.5) * jitter,
-        y: ty + (Math.random() - 0.5) * jitter,
-      });
-    });
-
-    cy.layout({
-      name:            'cose',
-      animate:         false,
-      randomize:       false,
-      nodeRepulsion:   function() { return 6000; },
-      idealEdgeLength: function() { return 60; },
-      edgeElasticity:  function() { return 0.8; },
-      gravity:         0.05,
-      numIter:         1500,
-    }).run();
-
-    concepts.unlock();
 
     cy.fit();
 
