@@ -151,20 +151,35 @@
       container: container,
       elements:  elements,
       style:     STYLE,
-      layout: {
-        name:         'cose',
-        animate:      false,
-        nodeRepulsion: function() { return 8000; },
-        idealEdgeLength: function() { return 60; },
-        edgeElasticity:  function() { return 0.45; },
-        gravity:      0.3,
-        numIter:      1000,
-        randomize:    true,
-      },
+      // Layout runs manually below so we can pre-position concept nodes first
       minZoom: 0.05,
       maxZoom: 5,
       wheelSensitivity: 0.3,
     });
+
+    // Spread concept nodes evenly around a circle so they act as
+    // visible hubs, then lock them before running cose so the layout
+    // arranges orgs/projects around them rather than clustering concepts.
+    var concepts = cy.nodes('[type = "concept"]');
+    var R = 500;
+    concepts.forEach(function(node, i) {
+      var angle = (2 * Math.PI * i) / concepts.length - Math.PI / 2;
+      node.position({ x: R * Math.cos(angle), y: R * Math.sin(angle) });
+      node.lock();
+    });
+
+    cy.layout({
+      name:            'cose',
+      animate:         false,
+      nodeRepulsion:   function() { return 8000; },
+      idealEdgeLength: function() { return 60; },
+      edgeElasticity:  function() { return 0.45; },
+      gravity:         0.3,
+      numIter:         1000,
+      randomize:       false,
+    }).run();
+
+    concepts.unlock();
 
     // Default: active nodes only
     cy.nodes().forEach(function(node) {
