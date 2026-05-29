@@ -6,6 +6,7 @@ summary: "A Windows desktop app that creates a verifiable, auditable record of r
 contributors:
   - Austin
 website: https://www.writeinstone.com
+concepts: [radical-transparency, accountability-sink, e-government]
 ---
 
 Write in Stone (Stone) is a Windows 10/11 desktop application built by DOD member Austin. It captures and preserves a verifiable record of research work — sources consulted, evidence gathered, editorial decisions made — so that the provenance of any piece of reporting or analysis can be traced and trusted.

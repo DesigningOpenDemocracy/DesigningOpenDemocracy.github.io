@@ -6,6 +6,7 @@ summary: "A crowdsourced website to make it easy to find and share the next elec
 contributors:
   - BrianKhuu
   - Usmaan
+concepts: [e-government]
 ---
 
 # Election Dates

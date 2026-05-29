@@ -6,6 +6,7 @@ contributors:
   - Craig Lambie
 website: https://deliberativesuper.com.au
 summary: "A proxy advisory service that replaces opaque corporate governance recommendations with decisions made by randomly selected pension fund members — giving members real democratic power over how their retirement savings vote at company AGMs."
+concepts: [sortition, citizens-assembly, workplace-democracy]
 ---
 
 Deliberative Super is a project by DOD member Craig Lambie that applies sortition and deliberative democracy to corporate governance — specifically, to the proxy advisory industry.

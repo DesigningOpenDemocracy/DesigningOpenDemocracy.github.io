@@ -6,6 +6,7 @@ contributors:
   - Hubertus Hofkirchner
 website: https://www.prediki.com
 summary: "A prediction market platform that aggregates collective intelligence on policy questions — users stake structured predictions with reasons, and the system surfaces the informed consensus."
+concepts: [prediction-markets, cognitive-division-of-labour, isegoria, consensus-mapping]
 ---
 
 Prediki is a peer-to-peer platform for opinion research and collective intelligence built on prediction market methodology. Developed by DOD member Hubertus Hofkirchner, it was presented at the [2017 Designing Open Democracy event](../blog/posts/2017-08-21-podcast.md) alongside Nicolas Gruen's talk on isegoria and citizens' juries.
