@@ -2,7 +2,8 @@
 
 - [Home](index.md)
 - [About](about.md)
-    - [Philosophy](philosophy/index.md)
+    - [Philosophy](philosophy/summary.md)
+        - [Full Framework](philosophy/index.md)
         - [Soul Document](philosophy/soul.md)
         - [AI Dialogues](philosophy/ai-dialogues/index.md)
             - philosophy/ai-dialogues/*.md
