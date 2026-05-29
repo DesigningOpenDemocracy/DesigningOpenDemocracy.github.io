@@ -205,8 +205,17 @@
       });
     }
 
-    // Run once after the plugin has had a frame to render its divs
-    requestAnimationFrame(syncLabels);
+    // Wait for the plugin to render its divs before syncing hidden state.
+    // rAF alone isn't enough on slow machines; 200 ms covers layout + paint.
+    setTimeout(syncLabels, 200);
+
+    // Re-sync on every viewport change — the plugin updates label positions
+    // on pan/zoom and could reset display properties we set manually.
+    let _syncTimer = null;
+    cy.on('viewport', () => {
+      if (_syncTimer) clearTimeout(_syncTimer);
+      _syncTimer = setTimeout(syncLabels, 50);
+    });
 
     // ── info panel ────────────────────────────────────────────────────────
     const infoEl    = document.getElementById('kg-info');
