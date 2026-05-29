@@ -157,6 +157,18 @@
       wheelSensitivity: 0.3,
     });
 
+    // Apply active-only filter before layout so inactive nodes don't
+    // compete for space and distort active node positions.
+    cy.nodes().forEach(function(node) {
+      var d = node.data();
+      if (d.type !== 'concept' && d.status !== 'active') node.addClass('hidden');
+    });
+    cy.edges().forEach(function(edge) {
+      if (cy.getElementById(edge.data('source')).hasClass('hidden') ||
+          cy.getElementById(edge.data('target')).hasClass('hidden'))
+        edge.addClass('hidden');
+    });
+
     // Spread concept nodes evenly around a circle so they act as
     // visible hubs, then lock them before running cose so the layout
     // arranges orgs/projects around them rather than clustering concepts.
@@ -171,7 +183,7 @@
     // Pre-position each org/project near the centroid of its connected
     // concepts so cose starts with reasonable positions and edge springs
     // can pull nodes to the right part of the ring.
-    cy.nodes('[type != "concept"]').forEach(function(node) {
+    cy.nodes('[type != "concept"]:visible').forEach(function(node) {
       var linked = node.connectedEdges().connectedNodes('[type = "concept"]');
       var tx = 0, ty = 0;
       if (linked.length > 0) {
@@ -179,7 +191,6 @@
         tx /= linked.length;
         ty /= linked.length;
       }
-      // scatter slightly so they don't all pile on the same spot
       var jitter = 60;
       node.position({
         x: tx + (Math.random() - 0.5) * jitter,
@@ -190,7 +201,7 @@
     cy.layout({
       name:            'cose',
       animate:         false,
-      randomize:       false,   // use our pre-set starting positions
+      randomize:       false,
       nodeRepulsion:   function() { return 6000; },
       idealEdgeLength: function() { return 60; },
       edgeElasticity:  function() { return 0.8; },
@@ -199,17 +210,6 @@
     }).run();
 
     concepts.unlock();
-
-    // Default: active nodes only
-    cy.nodes().forEach(function(node) {
-      var d = node.data();
-      if (d.type !== 'concept' && d.status !== 'active') node.addClass('hidden');
-    });
-    cy.edges().forEach(function(edge) {
-      if (cy.getElementById(edge.data('source')).hasClass('hidden') ||
-          cy.getElementById(edge.data('target')).hasClass('hidden'))
-        edge.addClass('hidden');
-    });
 
     cy.fit();
 
