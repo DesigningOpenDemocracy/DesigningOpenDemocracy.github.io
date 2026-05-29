@@ -11,6 +11,7 @@ location:
   name: Sydney, Australia
 concepts:
   - isegoria
+  - deliberative-democracy
   - cognitive-division-of-labour
   - prediction-markets
   - citizens-assembly

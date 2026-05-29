@@ -11,6 +11,7 @@ location:
   name: Preston, Victoria
 concepts:
   - sortition
+  - deliberative-democracy
   - citizens-assembly
 ---
 

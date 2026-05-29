@@ -7,6 +7,7 @@ website: https://democracy.foundation
 summary: "An internet project dedicated to research and design of innovative decision-making methods, best known for a curated list of e-democracy and e-voting projects that remains maintained."
 concepts:
   - direct-democracy
+  - deliberative-democracy
   - e-government
 ---
 

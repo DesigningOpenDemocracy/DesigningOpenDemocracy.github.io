@@ -7,6 +7,7 @@ website: https://www.kialo.com
 summary: "The world's largest argument-mapping and structured deliberation platform — uses a debate-tree format to organise pros, cons, and sub-arguments. Proprietary and free to use, with a separate education product."
 concepts:
   - consensus-mapping
+  - deliberative-democracy
 location:
   latitude: 40.7128
   longitude: -74.0060

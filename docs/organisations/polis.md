@@ -11,6 +11,7 @@ location:
   name: Seattle, USA
 concepts:
   - consensus-mapping
+  - deliberative-democracy
   - citizens-assembly
 ---
 

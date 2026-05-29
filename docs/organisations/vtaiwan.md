@@ -11,6 +11,7 @@ location:
   name: Taipei, Taiwan
 concepts:
   - consensus-mapping
+  - deliberative-democracy
   - radical-transparency
   - e-government
 ---
