@@ -241,6 +241,18 @@
 
     cy.fit();
 
+    // ── zoom-invariant font sizes ──────────────────────────────────────────
+    function updateFontSizes() {
+      const z = cy.zoom();
+      cy.batch(() => {
+        cy.nodes('[type = "concept"]').style('font-size',      (11 / z) + 'px');
+        cy.nodes('[type = "project"]').style('font-size',      ( 9 / z) + 'px');
+        cy.nodes('[type = "organisation"]').style('font-size', ( 9 / z) + 'px');
+      });
+    }
+    cy.on('zoom', updateFontSizes);
+    updateFontSizes();
+
     // ── info panel ─────────────────────────────────────────────────────────
     const infoEl    = document.getElementById('kg-info');
     const infoBadge = document.getElementById('kg-info-badge');
