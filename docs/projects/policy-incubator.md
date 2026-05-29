@@ -6,6 +6,7 @@ contributors:
   - Guy Kennedy
 website: https://web.archive.org/web/*/https://policyincubator.com/
 summary: "A Melbourne-based policy development platform intended to help the public, institutions, and politicians make better policies — presented at a Designing Open Democracy event in 2019."
+concepts: [e-government]
 ---
 
 Policy Incubator was a project by Melbourne-based DOD member Guy Kennedy. The platform was described as a policy development tool intended to assist the public, institutions, and politicians in making better policies.

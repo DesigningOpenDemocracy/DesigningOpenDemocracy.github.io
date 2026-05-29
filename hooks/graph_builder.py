@@ -1,8 +1,9 @@
 """
 Build hook: extracts concept/org/project relationships → graph.json
 
-  - Org → Concept edges from `concepts:` frontmatter on org (and project) pages
+  - Org/Project → Concept edges from `concepts:` frontmatter
   - Concept → Concept edges from "See also" sections in concept page markdown
+  - Project → Org edges from "../organisations/" links in project page "See also" sections
   - Writes {site_dir}/graph.json after every build (compatible with `mkdocs serve`)
 """
 import json
@@ -25,26 +26,38 @@ def on_pre_build(config):
 
 def on_page_markdown(markdown, *, page, config, files):
     src = page.file.src_path
-    if not src.startswith('concepts/') or src == 'concepts/concepts.md':
-        return markdown
-
-    slug = src[len('concepts/'):].replace('.md', '')
     m = _SEE_ALSO_RE.search(markdown)
-    if not m:
-        return markdown
 
-    for link_m in _MD_LINK_RE.finditer(m.group(1)):
-        href = link_m.group(1)
-        # Local concept-to-concept links only — skip ../ org links and http URLs
-        if href.startswith('..') or href.startswith('http') or '/' in href:
-            continue
-        target_slug = href.replace('.md', '')
-        if target_slug:
-            _edges.append({
-                'source': f'concept:{slug}',
-                'target': f'concept:{target_slug}',
-                'type': 'see_also',
-            })
+    if src.startswith('concepts/') and src != 'concepts/concepts.md':
+        slug = src[len('concepts/'):].replace('.md', '')
+        if m:
+            for link_m in _MD_LINK_RE.finditer(m.group(1)):
+                href = link_m.group(1)
+                # Local concept-to-concept links only
+                if href.startswith('..') or href.startswith('http') or '/' in href:
+                    continue
+                target_slug = href.replace('.md', '')
+                if target_slug:
+                    _edges.append({
+                        'source': f'concept:{slug}',
+                        'target': f'concept:{target_slug}',
+                        'type': 'see_also',
+                    })
+
+    elif src.startswith('projects/') and src != 'projects/projects.md':
+        slug = src[len('projects/'):].replace('.md', '')
+        if m:
+            for link_m in _MD_LINK_RE.finditer(m.group(1)):
+                href = link_m.group(1)
+                if href.startswith('../organisations/') and not href.startswith('http'):
+                    target_slug = href[len('../organisations/'):].replace('.md', '')
+                    if target_slug:
+                        _edges.append({
+                            'source': f'project:{slug}',
+                            'target': f'org:{target_slug}',
+                            'type': 'relates_to',
+                        })
+
     return markdown
 
 

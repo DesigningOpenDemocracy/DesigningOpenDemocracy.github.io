@@ -6,6 +6,7 @@ summary: "Building short, factual articles on core democracy topics so the wiki 
 contributors:
   - Usmaan
   - Aya.elfadil
+concepts: [democracy, decentralized-autonomous-organization, community-business, cooperative, workplace-democracy]
 ---
 
 The goal is to build short, factual articles on core democracy topics — accessible to anyone, not just specialists. Articles should provide references where possible.

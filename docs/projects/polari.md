@@ -6,6 +6,7 @@ contributors:
   - Dausume
 website: https://github.com/dausume/Polari-Framework
 summary: "A self-hosted, modular research framework with a built-in policy scoring system — allowing communities to directly rate and analyse policies, politicians, and special interest groups using a participatory democratic methodology."
+concepts: [direct-democracy, issue-based-direct-democracy, e-government]
 ---
 
 Polari is a project by DOD member Dustin ("Dausume"), a Full Stack Engineer based in the US. It consists of two interconnected open-source platforms: a general-purpose research framework and a democracy/policy scoring application built on top of it.

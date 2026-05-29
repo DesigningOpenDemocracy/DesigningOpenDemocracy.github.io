@@ -6,6 +6,7 @@ contributors:
   - Danny Johnson
 website: https://web.archive.org/web/*/https://myodemocracy.org/
 summary: "A Melbourne-based platform for collaborative democratic decision-making — citizens raise issues, propose options, review research, vote on solutions, and track outcomes. Non-partisan and designed to complement rather than replace existing government."
+concepts: [direct-democracy, issue-based-direct-democracy, e-government]
 ---
 
 MYO Democracy (Make Your Own Democracy) was a project by Melbourne-based civic technologist Danny Johnson, presented at a [joint Designing Open Democracy / Melbourne Geek Night event in May 2019](../blog/posts/2019-05-15.md).

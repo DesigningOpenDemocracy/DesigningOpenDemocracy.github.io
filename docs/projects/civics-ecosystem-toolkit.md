@@ -6,6 +6,7 @@ summary: "A practical toolkit for building participatory civics structures in Au
 contributors:
   - Brian Khuu
 website: https://www.designingopendemocracy.com/Civics-Ecosystem-Toolkit/01-civics-ecosystem-toolkit-index.html
+concepts: [cooperative, community-business, economic-democracy]
 ---
 
 The Civics Ecosystem Toolkit is a versioned reference document exploring how to design and sustain participatory civic structures within the Australian context.
