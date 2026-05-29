@@ -24,4 +24,5 @@ Several open-source platforms have been built specifically for participatory bud
 - [Decidim](../organisations/decidim.md)
 - [Consul Democracy](../organisations/consul-democracy.md)
 - [Ethelo](../organisations/ethelo.md)
+- [Participatory Budgeting Project](../organisations/participatory-budgeting-project.md)
 - Wikipedia: [Participatory budgeting](https://en.wikipedia.org/wiki/Participatory_budgeting)

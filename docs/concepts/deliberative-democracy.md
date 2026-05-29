@@ -22,6 +22,7 @@ In practice, deliberative democracy is implemented through mechanisms like **cit
 - [Isegoria](isegoria.md)
 - [Cognitive Division of Labour](cognitive-division-of-labour.md)
 - [newDemocracy Foundation](../organisations/newdemocracy.md)
+- [MASS LBP](../organisations/mass-lbp.md)
 - [Sortition Foundation](../organisations/sortition-foundation.md)
 - [Healthy Democracy](../organisations/healthy-democracy.md)
 - [G1000](../organisations/g1000.md)

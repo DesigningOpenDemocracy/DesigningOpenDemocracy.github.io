@@ -202,3 +202,4 @@ following:
 - [Sortition](sortition.md)
 - [Democratic Confederalism](democratic-confederalism.md)
 - [Vanguardism and Consultative Democracy](vanguardism.md)
+- [International IDEA](../organisations/international-idea.md)

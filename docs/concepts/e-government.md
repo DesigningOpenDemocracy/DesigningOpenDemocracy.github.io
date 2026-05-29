@@ -352,3 +352,7 @@ inclusion levels.
 - [vTaiwan](../organisations/vtaiwan.md)
 - [Code for Australia](../organisations/code-for-australia.md)
 - [NewVote](../organisations/newvote.md)
+- [mySociety](../organisations/mysociety.md)
+- [Decidim](../organisations/decidim.md)
+- [Liquid Democracy e.V.](../organisations/liquid-democracy-ev.md)
+- [Citizen OS](../organisations/citizen-os.md)

@@ -155,6 +155,7 @@ organisation has helped run Citizens’ Assemblies in the UK.
 - [Liquid Democracy](liquid-democracy.md)
 - [Consensus Mapping](consensus-mapping.md)
 - [newDemocracy Foundation](../organisations/newdemocracy.md)
+- [MASS LBP](../organisations/mass-lbp.md)
 - [Sortition Foundation](../organisations/sortition-foundation.md)
 - [Healthy Democracy](../organisations/healthy-democracy.md)
 - [G1000](../organisations/g1000.md)
