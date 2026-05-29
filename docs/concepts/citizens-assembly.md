@@ -158,3 +158,5 @@ organisation has helped run Citizens’ Assemblies in the UK.
 - [Sortition Foundation](../organisations/sortition-foundation.md)
 - [Healthy Democracy](../organisations/healthy-democracy.md)
 - [G1000](../organisations/g1000.md)
+- [Victoria's Upper House inquiry: the case for a citizens' assembly](../../blog/posts/2026-05-24-vic-upper-house-citizens-assembly.md)
+- [Q&A on deliberative democracy for council candidates (Victoria, Australia)](../../blog/posts/2024-09-28-q&a-on-deliberative-democracy-for-council-candidates-(victoria,-australia).md)

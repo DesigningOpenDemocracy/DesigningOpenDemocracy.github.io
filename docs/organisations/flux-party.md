@@ -85,6 +85,8 @@ By Kaye's account, IBDD has several properties that existing democratic systems 
 Designing Open Democracy recorded a podcast episode with Ben Ballingall, Victoria representative of the Flux Party, on 2020-02-11.
 [Listen on Apple Podcasts](https://podcasts.apple.com/au/podcast/talk-ben-ballingall-about-flux-party-issue-based-direct/id1492656241?i=1000465446730)
 
+Extended notes and transcript: [Bonus content with Ben Ballingall](../../blog/posts/2020-02-29-podcast.md)
+
 ## See also
 
 - [Issue-Based Direct Democracy](../concepts/issue-based-direct-democracy.md)
@@ -93,3 +95,4 @@ Designing Open Democracy recorded a podcast episode with Ben Ballingall, Victori
 - [MiVote](mivote.md)
 - [Evaluating Democracy Reform Proposals](../../blog/posts/2018-05-03.md) — Nick Merange's comparative scoring of Flux, MiVote, Online Direct Democracy, and Citizens' Juries
 - [Max Kaye's response to the evaluation](../../blog/posts/2018-05-03-Max.md)
+- [Deregistration of Flux Party by the Australian Electoral Commission](../../blog/posts/2022-08-22.md) — Nick Merange, August 2022

@@ -37,3 +37,5 @@ The UK Sortition Foundation already has a [landscape entry](sortition-foundation
 - [Citizens' Assembly](../concepts/citizens-assembly.md)
 - [Sortition Foundation](sortition-foundation.md)
 - [newDemocracy Foundation](newdemocracy.md)
+- [What if we replaced politicians with randomly selected people?](../../blog/posts/2018-06-18.md) — Brett Hennig TED talk, discussed at DOD 2018
+- [Your Party is using sortition](../../blog/posts/2025-12-07-your-party-is-using-sortition.md) — UK case study, 2025

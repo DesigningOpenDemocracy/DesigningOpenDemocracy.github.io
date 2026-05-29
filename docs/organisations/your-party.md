@@ -50,3 +50,4 @@ The party has one declared MP (Sultana) in the House of Commons, with Corbyn and
 - [Sortition](../concepts/sortition.md)
 - [Citizens' Assembly](../concepts/citizens-assembly.md)
 - [Sortition Foundation](sortition-foundation.md)
+- [Your Party is using sortition](../../blog/posts/2025-12-07-your-party-is-using-sortition.md) — DOD coverage, December 2025
