@@ -11,6 +11,7 @@ location:
   name: Adelaide, Australia
 concepts:
   - citizens-assembly
+  - deliberative-democracy
   - consensus-mapping
 ---
 
@@ -35,5 +36,5 @@ The practice does not advocate a single methodology; it selects approaches suite
 
 - [Citizens' Assembly](../concepts/citizens-assembly.md)
 - [Consensus Mapping](../concepts/consensus-mapping.md)
-- [Deliberative democracy](../concepts/citizens-assembly.md)
+- [Deliberative Democracy](../concepts/deliberative-democracy.md)
 - [Mosaic Lab](mosaiclab.md)

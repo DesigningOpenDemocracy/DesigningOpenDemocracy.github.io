@@ -11,6 +11,8 @@ location:
   name: Vancouver, Canada
 concepts:
   - citizens-assembly
+  - deliberative-democracy
+  - participatory-budgeting
   - direct-democracy
   - democracy
 ---
@@ -29,5 +31,6 @@ The platform is open-access and contributions are welcome, making it a useful pl
 
 - [Citizens' Assembly](../concepts/citizens-assembly.md)
 - [Direct Democracy](../concepts/direct-democracy.md)
-- [Deliberative democracy](../concepts/citizens-assembly.md)
+- [Deliberative Democracy](../concepts/deliberative-democracy.md)
+- [Participatory Budgeting](../concepts/participatory-budgeting.md)
 - [Democracy](../concepts/democracy.md)

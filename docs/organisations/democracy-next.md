@@ -11,6 +11,7 @@ location:
   name: Copenhagen, Denmark
 concepts:
   - citizens-assembly
+  - deliberative-democracy
   - sortition
   - isegoria
 ---

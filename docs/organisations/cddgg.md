@@ -39,5 +39,5 @@ Co-founders include **John Dryzek** (Distinguished Professor) and **Simon Niemey
 
 - [Citizens' Assembly](../concepts/citizens-assembly.md)
 - [Sortition](../concepts/sortition.md)
-- [Deliberative Democracy](../concepts/citizens-assembly.md)
+- [Deliberative Democracy](../concepts/deliberative-democracy.md)
 - [newDemocracy Foundation](newdemocracy.md)
