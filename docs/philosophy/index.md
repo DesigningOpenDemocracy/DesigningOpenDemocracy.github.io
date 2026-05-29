@@ -1,6 +1,8 @@
 ---
-title: Philosophy
+title: Philosophy — Full Framework
 ---
+
+*Looking for the short version? See [Philosophy in Brief](summary.md).*
 
 The [About](../about.md) page says DOD is non-partisan and agnostic about which democratic model is superior. This page explains what that means in practice — and what it doesn't mean.
 
