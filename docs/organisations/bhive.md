@@ -9,6 +9,7 @@ concepts:
   - cooperative
   - worker-cooperatives
   - economic-democracy
+last_checked: "2026-05-29"
 ---
 
 **bHive has since closed.** Confirmed inactive as of 2026.

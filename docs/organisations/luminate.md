@@ -13,6 +13,7 @@ location:
   latitude: 51.5074
   longitude: -0.1278
   name: London, UK
+last_checked: "2026-05-29"
 ---
 
 Luminate is a global philanthropic organisation established in 2018, spun out from the Omidyar Network (founded by eBay co-founder Pierre Omidyar) to focus specifically on civic empowerment and open governance. It operates globally with offices in London, Washington DC, Nairobi, São Paulo, and other cities.

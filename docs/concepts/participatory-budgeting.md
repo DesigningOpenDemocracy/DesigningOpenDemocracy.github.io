@@ -1,5 +1,6 @@
 ---
 title: Participatory Budgeting
+last_checked: "2026-05-29"
 ---
 
 A democratic process in which community members directly decide how to allocate part of a public budget — most commonly used by local governments, but also applied in schools, housing authorities, and other institutions.

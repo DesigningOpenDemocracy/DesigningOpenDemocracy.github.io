@@ -1,5 +1,6 @@
 ---
 title: Deliberative Democracy
+last_checked: "2026-05-29"
 ---
 
 An approach to democracy that emphasises informed reasoning and structured discussion among citizens — not just aggregating existing preferences through voting, but creating conditions where preferences can be formed, tested, and revised through encounter with other perspectives and evidence.
