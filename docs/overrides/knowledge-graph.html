@@ -49,7 +49,8 @@
 (function () {
   'use strict';
 
-  cytoscape.use(cytoscapeFcose);
+  // Both cytoscape-fcose and cytoscape-node-html-label auto-register
+  // when loaded as script tags after cytoscape. No cytoscape.use() needed.
 
   // ── node colours ──────────────────────────────────────────────────────────
   function nodeBg(data) {
