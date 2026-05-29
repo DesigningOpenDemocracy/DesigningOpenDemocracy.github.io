@@ -28,12 +28,14 @@ location:
 
 <!-- more -->
 
+*This is an external event organised by Beyond Billionaires — not a DOD event. We're flagging it because the topic and speakers are directly relevant to our work, and DOD member Craig Lambie is one of the speakers.*
+
 Beyond Billionaires is hosting a public forum on practical ways to give ordinary people more power in democratic decisions. The lineup is strong for anyone interested in how deliberative democracy actually works in practice:
 
 - **Sonia Randhawa** from the [Sortition Foundation](https://www.sortitionfoundation.org/) on citizens assemblies around the world — including how they've broken political deadlocks that elected representatives couldn't
 - **Andrew George** from Remake the World on the People's Assembly of Lismore — a real-world example set up after the 2022 floods when normal governance failed the community
 - **Eddie Kowalski** from Conversations at the Crossroads on a large-scale deliberation on nuclear energy using a Stanford method — he also co-organised the recent Reclaiming Democracy event at Melbourne Town Hall
-- **Craig Lambie** from Deliberative Super on using local deliberative processes to select and hold accountable independent candidates
+- **Craig Lambie** from [Deliberative Super](/projects/deliberative-super/) on using local deliberative processes to select and hold accountable independent candidates
 - **Jane Morton** from Beyond Billionaires on their wealth redistribution campaign
 
 Plenty of Q&A and discussion time built in.
