@@ -55,9 +55,11 @@ The key mechanism is **opportunity cost between issues**. Because political capi
 
 Political capital is also required to **propose new legislation**, creating a tradeoff between proposing and voting.
 
-**Redistribution:** Political capital is continuously redistributed via an inflation mechanism — a percentage is taken from existing holdings and returned to all participants equally. This prevents accumulation of political dominance over time and rewards acting earlier rather than hoarding. Participants who disengage for a period accumulate a reserve of political capital for when they return, rather than simply being excluded.
+**Political capital is acquired in three ways**: a signup bonus on joining; a basic income distribution (~30% inflation rate on the PC token supply, distributed equally to all voters); and by opting out of issues — unused votes go into an auction market, with proceeds distributed proportionally to those who chose not to vote on that issue.
 
-**Delegation** is available for efficiency: participants can delegate some or all of their political capital to a community leader, organisation, or specialist they trust on a particular issue domain — and can revoke that delegation at any time.
+**Redistribution:** The inflation mechanism prevents long-term accumulation. Participants who disengage for a period accumulate a reserve of political capital for when they return, rather than simply being excluded.
+
+**Delegation** works proportionally: participants can split their resources across multiple delegates (provided the total does not exceed 100%), with any remainder returned to the delegator. Delegation can be revoked at any time.
 
 ## Properties and predictions
 
@@ -69,11 +71,14 @@ By Kaye's account, IBDD has several properties that existing democratic systems 
 - **Incentivises specialisation.** It is worth becoming genuinely expert on an issue because that expertise translates to effective political capital use — unlike in representative democracy, where a single citizen's knowledge has near-zero electoral impact.
 - **Scales without dilution.** As population grows, so does specialisation; there is no fixed number of representatives being divided among more people.
 
+> *"IBDD has never been put forward as 'the answer' or a panacea. Rather, it's the seed that can flower into a system that continuously improves without need for massive social organisation."* — Max Kaye
+
 ## Links
 
 - Website: [voteflux.org](https://web.archive.org/web/*/https://voteflux.org/) *(archived)*
 - Wikipedia: [Flux (political party)](https://en.wikipedia.org/wiki/Flux_(political_party))
 - Video: [The Case for Flux — Max Kaye, June 2017](https://www.youtube.com/watch?v=Zq25UXc_ONg) *(primary source for the philosophical sections above; transcript is AI-generated and may contain transcription errors)*
+- Essay: [IBDD and Popper's Criterion — Max Kaye, May 2017](http://xk.io/2017/05/27/ibdd-and-poppers-criterion/) *(Max Kaye's written account of the epistemological argument)*
 
 ## Podcast
 
@@ -86,3 +91,5 @@ Designing Open Democracy recorded a podcast episode with Ben Ballingall, Victori
 - [Liquid Democracy](../concepts/liquid-democracy.md)
 - [Prediction Markets](../concepts/prediction-markets.md)
 - [MiVote](mivote.md)
+- [Evaluating Democracy Reform Proposals](../../blog/posts/2018-05-03.md) — Nick Merange's comparative scoring of Flux, MiVote, Online Direct Democracy, and Citizens' Juries
+- [Max Kaye's response to the evaluation](../../blog/posts/2018-05-03-Max.md)

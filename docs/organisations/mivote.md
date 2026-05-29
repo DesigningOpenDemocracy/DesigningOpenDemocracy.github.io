@@ -62,3 +62,4 @@ At the December 2016 Future Assembly presentation, MiVote set public targets for
 - [Representative Democracy](../concepts/representative-democracy.md)
 - [Flux Party](flux-party.md)
 - [Digipol](digipol.md)
+- [Evaluating Democracy Reform Proposals](../../blog/posts/2018-05-03.md) — Nick Merange's comparative scoring of Flux, MiVote, Online Direct Democracy, and Citizens' Juries
