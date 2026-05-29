@@ -17,5 +17,6 @@
     - organisations/*.md
 - [Research](research/research.md)
     - research/*.md
+- [Knowledge Graph](knowledge-graph.md)
 
 
