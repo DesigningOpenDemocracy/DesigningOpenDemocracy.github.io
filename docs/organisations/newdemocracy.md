@@ -37,3 +37,6 @@ newDemocracy's core argument is that the adversarial, partisan nature of represe
 - [Cognitive Division of Labour](../concepts/cognitive-division-of-labour.md)
 - [Citizens' Democracy: Presentations and Q&A](../../blog/posts/2017-08-21-podcast.md) — Nicholas Gruen and Hubertus Hofkirchner present to DOD, 2017
 - [Isegoria: The Way Citizens' Juries Deliver It, How Elections Destroy It](../../blog/posts/2020-03-20.md) — Nicholas Gruen in conversation with DOD, 2020
+- [G1000](g1000.md)
+- [MASS LBP](mass-lbp.md)
+- [DemocracyNext](democracy-next.md)
