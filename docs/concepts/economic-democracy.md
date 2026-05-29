@@ -22,3 +22,5 @@ Presented at a [2020 Designing Open Democracy podcast](../blog/posts/2020-06-20-
 - [Cooperative](cooperative.md)
 - [Workplace Democracy](workplace-democracy.md)
 - [888 Co-operative Causeway](../organisations/888-cooperative-causeway.md)
+- [Earthworker Cooperative](../organisations/earthworker-cooperative.md)
+- [bHive](../organisations/bhive.md)

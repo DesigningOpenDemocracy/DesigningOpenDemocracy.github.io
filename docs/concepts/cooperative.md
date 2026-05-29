@@ -468,3 +468,6 @@ acquire supplies and services, or advertise their products and services.
 - [Co-operative Bonds](../organisations/cooperative-bonds.md)
 - [888 Causeway Cooperative](../organisations/888-cooperative-causeway.md)
 - [CAPAD](../organisations/capad.md)
+- [bHive](../organisations/bhive.md)
+- [Earthworker Cooperative](../organisations/earthworker-cooperative.md)
+- [Loomio](../organisations/loomio.md)
