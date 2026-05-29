@@ -31,3 +31,4 @@ For organisations working in the democracy design and civic tech space, OSF is o
 - [Democracy](../concepts/democracy.md)
 - [Radical Transparency](../concepts/radical-transparency.md)
 - [Susan McKinnon Foundation](susan-mckinnon-foundation.md)
+- [Luminate](luminate.md)

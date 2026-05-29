@@ -29,3 +29,5 @@ Its explicitly non-partisan stance — working with all sides of politics rather
 - [Constitutional Democracy](../concepts/constitutional-democracy.md)
 - [Citizens' Assembly](../concepts/citizens-assembly.md)
 - [Australian Democracy Network](australian-democracy-network.md)
+- [Open Society Foundations](open-society-foundations.md)
+- [Luminate](luminate.md)
