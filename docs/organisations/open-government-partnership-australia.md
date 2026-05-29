@@ -29,3 +29,4 @@ The dedicated OGP Australia site (ogpau.pmc.gov.au) was hosted by the Department
 - [Radical Transparency](../concepts/radical-transparency.md)
 - [E-Government](../concepts/e-government.md)
 - [Constitutional Democracy](../concepts/constitutional-democracy.md)
+- [Open Government Partnership Australia](../../blog/posts/2018-02-22.md) — DOD meetup report, 2018

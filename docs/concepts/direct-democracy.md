@@ -43,3 +43,5 @@ representative democracy.
 - [None of the Above Party (Canada)](../organisations/nota-canada.md)
 - [MiVote](../organisations/mivote.md)
 - [NewVote](../organisations/newvote.md)
+- [Democracy International](../organisations/democracy-international.md)
+- [Participatory Budgeting Project](../organisations/participatory-budgeting-project.md)

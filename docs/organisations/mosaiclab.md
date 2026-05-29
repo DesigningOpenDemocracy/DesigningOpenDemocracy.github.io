@@ -11,6 +11,7 @@ location:
   name: Melbourne, Australia
 concepts:
   - citizens-assembly
+  - deliberative-democracy
   - consensus-mapping
 ---
 
@@ -32,5 +33,7 @@ They are also engaged in building the evidence base for deliberation: what condi
 ## See also
 
 - [Citizens' Assembly](../concepts/citizens-assembly.md)
+- [Deliberative Democracy](../concepts/deliberative-democracy.md)
 - [Consensus Mapping](../concepts/consensus-mapping.md)
 - [DemocracyCo](democracyco.md)
+- [Designing Open Democracy 2020 Primer](../../blog/posts/2022-02-24-podcast.md) — Kimbra White from MosaicLab appeared at this DOD meetup

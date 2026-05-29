@@ -11,6 +11,7 @@ location:
   name: Taipei, Taiwan
 concepts:
   - consensus-mapping
+  - deliberative-democracy
   - radical-transparency
   - e-government
 ---
@@ -50,3 +51,4 @@ vTaiwan's usage has been uneven: it has been applied to some policy areas and no
 - [Consensus Mapping](../concepts/consensus-mapping.md)
 - [Radical Transparency](../concepts/radical-transparency.md)
 - [E-Government](../concepts/e-government.md)
+- [Taiwan's digital democracy experiment: vTaiwan and g0v](../../blog/posts/2026-05-25-taiwan-digital-democracy.md)

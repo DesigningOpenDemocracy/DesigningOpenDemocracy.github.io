@@ -11,6 +11,7 @@ location:
   name: Edinburgh, United Kingdom
 concepts:
   - sortition
+  - deliberative-democracy
   - citizens-assembly
   - representative-democracy
 ---

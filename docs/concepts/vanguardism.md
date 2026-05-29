@@ -30,5 +30,5 @@ The Chinese Communist Party's contemporary formulation is [**whole-process peopl
 
 - [CPPCC](../organisations/cppcc.md)
 - [China Democratic League](../organisations/china-democratic-league.md)
-- [Deliberative Democracy](citizens-assembly.md)
+- [Deliberative Democracy](deliberative-democracy.md)
 - [Cognitive Division of Labour](cognitive-division-of-labour.md)

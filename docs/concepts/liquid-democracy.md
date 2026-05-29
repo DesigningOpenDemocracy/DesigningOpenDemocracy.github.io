@@ -39,4 +39,6 @@ Liquid democracy has been implemented in several contexts:
 - [Issue-Based Direct Democracy](issue-based-direct-democracy.md) — Flux's specific implementation
 - [Direct Democracy](direct-democracy.md)
 - [Sortition](sortition.md) — an alternative approach to the representation problem
+- [Loomio](../organisations/loomio.md) — worker cooperative building deliberative decision-making tools
+- [Liquid Democracy e.V.](../organisations/liquid-democracy-ev.md) — Berlin non-profit developing Adhocracy+ and meinBerlin
 - Wikipedia: [Liquid democracy](https://en.wikipedia.org/wiki/Liquid_democracy)

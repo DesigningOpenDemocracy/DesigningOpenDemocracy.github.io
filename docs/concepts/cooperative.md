@@ -458,6 +458,10 @@ acquire supplies and services, or advertise their products and services.
 - <https://en.wikipedia.org/wiki/ACE_Hardware>
 - <https://en.wikipedia.org/wiki/CCA_Global_Partners>
 
+## DOD coverage
+
+- [Civics Ecosystem Toolkit v1.2](../../blog/posts/2026-05-20-civics-ecosystem-toolkit.md) — a practical guide to cooperative governance in the Australian civic context
+
 ## See also
 
 - [Worker Cooperatives](worker-cooperatives.md)
@@ -468,3 +472,6 @@ acquire supplies and services, or advertise their products and services.
 - [Co-operative Bonds](../organisations/cooperative-bonds.md)
 - [888 Causeway Cooperative](../organisations/888-cooperative-causeway.md)
 - [CAPAD](../organisations/capad.md)
+- [bHive](../organisations/bhive.md)
+- [Earthworker Cooperative](../organisations/earthworker-cooperative.md)
+- [Loomio](../organisations/loomio.md)

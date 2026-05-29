@@ -29,3 +29,6 @@ For a more comprehensive overview of the cooperative model, see the [Cooperative
 - [Community Business](community-business.md)
 - [Economic Democracy](economic-democracy.md)
 - [Workplace Democracy](workplace-democracy.md)
+- [Earthworker Cooperative](../organisations/earthworker-cooperative.md)
+- [bHive](../organisations/bhive.md)
+- [Loomio](../organisations/loomio.md)

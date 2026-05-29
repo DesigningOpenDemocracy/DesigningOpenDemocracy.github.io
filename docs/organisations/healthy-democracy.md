@@ -11,6 +11,7 @@ location:
   name: Portland, Oregon, USA
 concepts:
   - citizens-assembly
+  - deliberative-democracy
   - sortition
   - direct-democracy
 ---

@@ -11,6 +11,8 @@ location:
   name: London, United Kingdom
 concepts:
   - citizens-assembly
+  - deliberative-democracy
+  - participatory-budgeting
   - direct-democracy
 ---
 
@@ -28,5 +30,5 @@ Involve occupies a thoughtful position in the field: supportive of participatory
 
 - [Citizens' Assembly](../concepts/citizens-assembly.md)
 - [Direct Democracy](../concepts/direct-democracy.md)
-- [Deliberative Democracy](../concepts/citizens-assembly.md)
+- [Deliberative Democracy](../concepts/deliberative-democracy.md)
 - [Mosaic Lab](mosaiclab.md)

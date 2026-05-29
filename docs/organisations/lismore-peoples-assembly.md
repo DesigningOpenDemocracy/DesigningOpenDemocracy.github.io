@@ -7,6 +7,7 @@ website: https://reclaim.org.au/lpa-home/
 summary: "A grassroots deliberative assembly in Lismore, NSW, set up in the aftermath of the 2022 floods to give residents a direct voice in decisions shaping the city's future."
 concepts:
   - citizens-assembly
+  - deliberative-democracy
   - direct-democracy
   - democracy
 location:
@@ -22,3 +23,9 @@ The assembly is notable as a real-world example of citizens establishing their o
 ## Links
 
 - Website: [reclaim.org.au/lpa-home](https://reclaim.org.au/lpa-home/)
+
+## See also
+
+- [Citizens' Assembly](../concepts/citizens-assembly.md)
+- [Direct Democracy](../concepts/direct-democracy.md)
+- [People Powered Democracy Forum](../../blog/posts/2026-05-29-people-powered-democracy-forum.md) — event featuring the Lismore People's Assembly, May 2026
