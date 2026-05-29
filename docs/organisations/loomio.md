@@ -7,6 +7,7 @@ website: https://www.loomio.com
 summary: "A New Zealand worker cooperative building open-source collaborative decision-making software — used by cooperatives, NGOs, and local governments to run structured discussions, proposals, and votes."
 concepts:
   - liquid-democracy
+  - deliberative-democracy
   - cooperative
   - consensus-mapping
 location:

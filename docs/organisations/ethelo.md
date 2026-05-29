@@ -8,6 +8,7 @@ summary: "A Canadian collective intelligence platform used by 100+ municipalitie
 concepts:
   - e-government
   - direct-democracy
+  - participatory-budgeting
   - consensus-mapping
 location:
   latitude: 49.2827

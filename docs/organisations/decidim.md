@@ -7,6 +7,8 @@ website: https://decidim.org
 summary: "An open-source participatory democracy framework used by 400+ governments and organisations worldwide — citizen proposals, participatory budgeting, consultations, and collaborative legislation."
 concepts:
   - direct-democracy
+  - deliberative-democracy
+  - participatory-budgeting
   - e-government
   - citizens-assembly
 location:

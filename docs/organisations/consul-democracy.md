@@ -7,6 +7,8 @@ website: https://consuldemocracy.org
 summary: "An open-source e-participation platform originally developed by Madrid City Council, now stewarded by an independent foundation and used by ~350 governments worldwide."
 concepts:
   - direct-democracy
+  - deliberative-democracy
+  - participatory-budgeting
   - e-government
   - citizens-assembly
 location:

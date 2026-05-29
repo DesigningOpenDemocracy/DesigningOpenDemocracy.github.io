@@ -11,6 +11,7 @@ location:
   name: Sydney, Australia
 concepts:
   - citizens-assembly
+  - deliberative-democracy
   - sortition
   - isegoria
   - cognitive-division-of-labour

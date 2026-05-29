@@ -7,6 +7,8 @@ website: https://www.democracy-international.org
 summary: "A Cologne-based NGO advocating for direct democracy and citizen participation globally — organises the Global Forum on Modern Direct Democracy and supports reform campaigns worldwide."
 concepts:
   - direct-democracy
+  - deliberative-democracy
+  - participatory-budgeting
   - citizens-assembly
   - sortition
 location:

@@ -7,6 +7,7 @@ website: https://citizenos.com
 summary: "An Estonian open-source civic technology platform for collaborative decision-making, public consultations, and online petitions — deployed in 50+ countries, with binding e-ID vote support in Estonia."
 concepts:
   - direct-democracy
+  - deliberative-democracy
   - e-government
   - radical-transparency
 location:
