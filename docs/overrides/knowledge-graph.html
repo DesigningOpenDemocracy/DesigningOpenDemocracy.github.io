@@ -168,15 +168,34 @@
       node.lock();
     });
 
+    // Pre-position each org/project near the centroid of its connected
+    // concepts so cose starts with reasonable positions and edge springs
+    // can pull nodes to the right part of the ring.
+    cy.nodes('[type != "concept"]').forEach(function(node) {
+      var linked = node.connectedEdges().connectedNodes('[type = "concept"]');
+      var tx = 0, ty = 0;
+      if (linked.length > 0) {
+        linked.forEach(function(c) { tx += c.position('x'); ty += c.position('y'); });
+        tx /= linked.length;
+        ty /= linked.length;
+      }
+      // scatter slightly so they don't all pile on the same spot
+      var jitter = 60;
+      node.position({
+        x: tx + (Math.random() - 0.5) * jitter,
+        y: ty + (Math.random() - 0.5) * jitter,
+      });
+    });
+
     cy.layout({
       name:            'cose',
       animate:         false,
-      nodeRepulsion:   function() { return 8000; },
+      randomize:       false,   // use our pre-set starting positions
+      nodeRepulsion:   function() { return 6000; },
       idealEdgeLength: function() { return 60; },
-      edgeElasticity:  function() { return 0.45; },
-      gravity:         0.3,
-      numIter:         1000,
-      randomize:       false,
+      edgeElasticity:  function() { return 0.8; },
+      gravity:         0.05,
+      numIter:         1500,
     }).run();
 
     concepts.unlock();
