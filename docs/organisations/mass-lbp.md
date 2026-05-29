@@ -40,3 +40,5 @@ MASS LBP's methodology draws heavily on sortition — random selection to create
 - [newDemocracy Foundation](newdemocracy.md)
 - [Sortition Foundation](sortition-foundation.md)
 - [Healthy Democracy](healthy-democracy.md)
+- [MosaicLab](mosaiclab.md)
+- [DemocracyCo](democracyco.md)

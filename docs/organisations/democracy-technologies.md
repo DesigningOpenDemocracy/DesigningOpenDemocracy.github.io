@@ -43,3 +43,4 @@ For researchers, practitioners, and funders working in democratic innovation, De
 - [Consul Democracy](consul-democracy.md)
 - [Loomio](loomio.md)
 - [DemocracyLab](democracylab.md)
+- [Participedia](participedia.md)

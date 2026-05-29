@@ -43,3 +43,4 @@ For organisations working on democratic reform or civic tech, IDEA's comparative
 - [E-Government](../concepts/e-government.md)
 - [newDemocracy Foundation](newdemocracy.md)
 - [Democracy International](democracy-international.md)
+- [Participedia](participedia.md)
