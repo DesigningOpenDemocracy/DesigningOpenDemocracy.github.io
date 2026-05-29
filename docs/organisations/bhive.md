@@ -1,29 +1,27 @@
 ---
 title: bHive
 type: cooperative
-status: active
+status: inactive
 country: AU
-website: https://bhive.coop
-summary: "A place-based platform cooperative in Bendigo, Victoria — the first of its kind globally, providing a member-owned sharing platform for local neighbourhoods to exchange skills, goods, and mutual aid."
+website: https://web.archive.org/web/*/https://bhive.coop
+summary: "A place-based platform cooperative in Bendigo, Victoria that has since closed — was the first of its kind globally, providing a member-owned sharing platform for local neighbourhoods to exchange skills, goods, and mutual aid."
 concepts:
   - cooperative
   - worker-cooperatives
   - economic-democracy
-location:
-  latitude: -36.7570
-  longitude: 144.2794
-  name: Bendigo, Victoria, Australia
 ---
 
-bHive is a Bendigo-based cooperative founded on the premise that sharing economy platforms should be owned by the communities that use them, not by distant technology companies. Members are equal owners with no advertising, no data sales, and profits retained locally.
+**bHive has since closed.** Confirmed inactive as of 2026.
 
-Its main product, **bHive Villages**, is an online neighbourhood sharing platform where residents can share tools, skills, food, time, and organise events and mutual aid. It is structured as a platform cooperative — a model that applies cooperative principles (member ownership, democratic control, local reinvestment) to digital infrastructure.
+bHive was a Bendigo-based cooperative founded on the premise that sharing economy platforms should be owned by the communities that use them, not by distant technology companies. Members were equal owners with no advertising, no data sales, and profits retained locally.
 
-The broader bHive ecosystem includes a marketplace for local cooperatives across energy, food, transport, and finance — positioning it as economic infrastructure for a local democratic economy rather than just a tool.
+Its main product, **bHive Villages**, was an online neighbourhood sharing platform where residents could share tools, skills, food, time, and organise events and mutual aid. It was structured as a platform cooperative — a model that applies cooperative principles (member ownership, democratic control, local reinvestment) to digital infrastructure.
+
+The broader bHive ecosystem included a marketplace for local cooperatives across energy, food, transport, and finance — positioning it as economic infrastructure for a local democratic economy rather than just a tool.
 
 ## Links
 
-- Website: [bhive.coop](https://bhive.coop)
+- Archive: [bhive.coop (Wayback Machine)](https://web.archive.org/web/*/https://bhive.coop)
 
 ## See also
 
