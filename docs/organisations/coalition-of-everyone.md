@@ -7,6 +7,7 @@ website: https://web.archive.org/web/*/https://coalitionofeveryone.com/
 summary: "An Australian organisation that ran participatory and deliberative democracy processes in communities — aimed at repairing and building democracy into everyday life. Wound up after six years of operation."
 concepts:
   - citizens-assembly
+  - deliberative-democracy
   - consensus-mapping
   - direct-democracy
 ---
@@ -26,3 +27,4 @@ CoE represented an attempt to operationalise deliberative democracy at the grass
 - [Citizens' Assembly](../concepts/citizens-assembly.md)
 - [Consensus Mapping](../concepts/consensus-mapping.md)
 - [Direct Democracy](../concepts/direct-democracy.md)
+- [Designing Open Democracy 2020 Primer](../../blog/posts/2022-02-24-podcast.md) — Willow Berzin from CoE appeared at this DOD meetup
