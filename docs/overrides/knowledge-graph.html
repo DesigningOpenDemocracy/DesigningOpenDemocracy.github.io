@@ -1,4 +1,22 @@
 {% extends "main.html" %}
+{% block styles %}
+{{ super() }}
+<style>
+  /* Full-width layout for the knowledge graph page only */
+  .md-content        { max-width: 100% !important; }
+  .md-content__inner { max-width: 100% !important; margin: 0 !important; padding: 0 1.2rem !important; }
+  #kg-container      { height: 82vh; min-height: 560px; }
+
+  /* Fullscreen mode */
+  #kg-container:fullscreen,
+  #kg-container:-webkit-full-screen {
+    width: 100vw !important;
+    height: 100vh !important;
+    background: var(--md-code-bg-color);
+    border-radius: 0;
+  }
+</style>
+{% endblock %}
 {% block content %}
 <div class="kg-page md-typeset">
   {{ super() }}
@@ -28,6 +46,7 @@
     <div class="kg-action-group">
       <button id="kg-fit" class="kg-btn">Fit</button>
       <button id="kg-reset" class="kg-btn">Reset</button>
+      <button id="kg-fullscreen" class="kg-btn">⛶ Fullscreen</button>
     </div>
   </div>
 
@@ -301,6 +320,22 @@
       applyFilters();
       cy.fit();
       hideInfo();
+    });
+
+    // ── fullscreen ────────────────────────────────────────────────────────
+    document.getElementById('kg-fullscreen').addEventListener('click', function() {
+      var el = document.getElementById('kg-container');
+      if (!document.fullscreenElement) {
+        (el.requestFullscreen || el.webkitRequestFullscreen).call(el);
+      } else {
+        (document.exitFullscreen || document.webkitExitFullscreen).call(document);
+      }
+    });
+
+    document.addEventListener('fullscreenchange', function() {
+      document.getElementById('kg-fullscreen').textContent =
+        document.fullscreenElement ? '✕ Exit fullscreen' : '⛶ Fullscreen';
+      cy.fit();
     });
   }
 
