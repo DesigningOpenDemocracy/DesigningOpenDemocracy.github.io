@@ -43,134 +43,73 @@
 </div>
 
 <script src="https://unpkg.com/cytoscape@3.30.4/dist/cytoscape.min.js"></script>
+<script src="https://unpkg.com/cytoscape-fcose@2.2.0/cytoscape-fcose.js"></script>
+<script src="https://unpkg.com/cytoscape-node-html-label@1.2.1/dist/cytoscape-node-html-label.min.js"></script>
 <script>
 (function () {
   'use strict';
 
-  // ── colour palette ────────────────────────────────────────────────────────
-  function nodeStyle(data) {
-    if (data.type === 'concept') {
-      return { bg: '#3949ab', fg: '#fff', border: '#1a237e' };
-    }
+  cytoscape.use(cytoscapeFcose);
+
+  // ── node colours ──────────────────────────────────────────────────────────
+  function nodeBg(data) {
+    if (data.type === 'concept') return '#3949ab';
     if (data.type === 'organisation') {
-      if (data.status === 'active')       return { bg: '#1565c0', fg: '#fff', border: '#0d47a1' };
-      if (data.status === 'deregistered') return { bg: '#78909c', fg: '#fff', border: '#546e7a' };
-      return { bg: '#607d8b', fg: '#fff', border: '#455a64' };   // inactive
+      if (data.status === 'active')       return '#1565c0';
+      if (data.status === 'deregistered') return '#78909c';
+      return '#607d8b';
     }
     if (data.type === 'project') {
-      return data.status === 'active'
-        ? { bg: '#2e7d32', fg: '#fff', border: '#1b5e20' }
-        : { bg: '#66bb6a', fg: '#fff', border: '#388e3c' };
+      return data.status === 'active' ? '#2e7d32' : '#66bb6a';
     }
-    return { bg: '#9e9e9e', fg: '#fff', border: '#616161' };
+    return '#9e9e9e';
   }
 
-  // ── build Cytoscape element list ─────────────────────────────────────────
-  function buildElements(graphData) {
-    const nodes = graphData.nodes.map(n => ({ data: { ...n } }));
-    const edges = graphData.edges.map((e, i) => ({
-      data: { id: `e${i}`, source: e.source, target: e.target, type: e.type || 'relates_to' }
-    }));
-    return [...nodes, ...edges];
+  function nodeBorder(data) {
+    if (data.type === 'concept') return '#1a237e';
+    if (data.type === 'organisation') {
+      if (data.status === 'active')       return '#0d47a1';
+      if (data.status === 'deregistered') return '#546e7a';
+      return '#455a64';
+    }
+    if (data.type === 'project') {
+      return data.status === 'active' ? '#1b5e20' : '#388e3c';
+    }
+    return '#616161';
   }
 
-  // ── Cytoscape stylesheet ─────────────────────────────────────────────────
+  // ── Cytoscape stylesheet (dots only — labels are HTML) ────────────────────
+  const NODE_SIZE = { concept: 22, project: 14, organisation: 10 };
+
   const CYTO_STYLE = [
-    // Base: all nodes are small unlabelled dots
     {
       selector: 'node',
       style: {
         'label': '',
-        'background-color': function (ele) { return nodeStyle(ele.data()).bg; },
-        'border-color':     function (ele) { return nodeStyle(ele.data()).border; },
-        'border-width': '1.5px',
+        'background-color': ele => nodeBg(ele.data()),
+        'border-color':     ele => nodeBorder(ele.data()),
+        'border-width': '2px',
         'shape': 'ellipse',
-        'width': '12px',
-        'height': '12px',
+        'width':  ele => (NODE_SIZE[ele.data().type] || 10) + 'px',
+        'height': ele => (NODE_SIZE[ele.data().type] || 10) + 'px',
         'cursor': 'pointer',
-      }
-    },
-    // Concepts: larger, always labelled — they are the hubs
-    {
-      selector: 'node[type = "concept"]',
-      style: {
-        'label': 'data(label)',
-        'font-size': '10px',
-        'font-weight': 'bold',
-        'font-family': 'var(--md-text-font, sans-serif)',
-        'color': function (ele) { return nodeStyle(ele.data()).fg; },
-        'text-valign': 'center',
-        'text-halign': 'center',
-        'text-wrap': 'wrap',
-        'text-max-width': '90px',
-        'shape': 'round-rectangle',
-        'padding': '6px',
-        'width': 'label',
-        'height': 'label',
-        'min-width': '44px',
-        'min-height': '22px',
-      }
-    },
-    // Projects: medium dot with label
-    {
-      selector: 'node[type = "project"]',
-      style: {
-        'label': 'data(label)',
-        'font-size': '9px',
-        'font-family': 'var(--md-text-font, sans-serif)',
-        'color': function (ele) { return nodeStyle(ele.data()).fg; },
-        'text-valign': 'center',
-        'text-halign': 'center',
-        'text-wrap': 'wrap',
-        'text-max-width': '80px',
-        'shape': 'round-rectangle',
-        'padding': '5px',
-        'width': 'label',
-        'height': 'label',
-        'min-width': '30px',
-        'min-height': '18px',
-      }
-    },
-    // Org label geometry — applied when JS sets an inline label
-    {
-      selector: 'node[type = "organisation"]',
-      style: {
-        'text-valign': 'center',
-        'text-halign': 'center',
-        'text-wrap': 'wrap',
-        'text-max-width': '100px',
-        'font-family': 'var(--md-text-font, sans-serif)',
-        'color': '#fff',
-      }
-    },
-    {
-      selector: 'edge',
-      style: {
-        'width': 1,
-        'line-color': '#90a4ae',
-        'opacity': 0.45,
-        'curve-style': 'bezier',
-      }
-    },
-    {
-      selector: 'edge[type = "see_also"]',
-      style: {
-        'line-color': '#9c27b0',
-        'line-style': 'dashed',
-        'opacity': 0.35,
       }
     },
     {
       selector: 'node.highlighted',
-      style: {
-        'border-width': '3px',
-        'border-color': '#ffeb3b',
-        'z-index': 10,
-      }
+      style: { 'border-width': '3px', 'border-color': '#ffeb3b', 'z-index': 10 }
     },
     {
       selector: 'node.faded',
-      style: { 'opacity': 0.1 }
+      style: { 'opacity': 0.15 }
+    },
+    {
+      selector: 'edge',
+      style: { 'width': 1, 'line-color': '#90a4ae', 'opacity': 0.45, 'curve-style': 'bezier' }
+    },
+    {
+      selector: 'edge[type = "see_also"]',
+      style: { 'line-color': '#9c27b0', 'line-style': 'dashed', 'opacity': 0.35 }
     },
     {
       selector: 'edge.faded',
@@ -182,7 +121,7 @@
     },
   ];
 
-  // ── main ─────────────────────────────────────────────────────────────────
+  // ── main ──────────────────────────────────────────────────────────────────
   async function init() {
     const container = document.getElementById('kg-container');
 
@@ -199,124 +138,77 @@
 
     const cy = cytoscape({
       container,
-      elements: buildElements(graphData),
+      elements: [
+        ...graphData.nodes.map(n => ({ data: { ...n } })),
+        ...graphData.edges.map((e, i) => ({
+          data: { id: `e${i}`, source: e.source, target: e.target, type: e.type || 'relates_to' }
+        })),
+      ],
       style: CYTO_STYLE,
       layout: {
-        name: 'cose',
+        name: 'fcose',
         animate: false,
-        nodeRepulsion: () => 10000,
-        idealEdgeLength: () => 70,
-        edgeElasticity: () => 0.45,
-        gravity: 0.35,
-        numIter: 1000,
-        initialTemp: 200,
-        coolingFactor: 0.95,
-        minTemp: 1.0,
+        quality: 'default',
         randomize: true,
+        nodeRepulsion: 6500,
+        idealEdgeLength: 80,
+        edgeElasticity: 0.45,
+        gravity: 0.25,
+        numIter: 2500,
+        tile: true,
+        tilingPaddingVertical: 12,
+        tilingPaddingHorizontal: 12,
       },
       minZoom: 0.05,
       maxZoom: 5,
       wheelSensitivity: 0.3,
     });
 
-    // Apply default active-only filter before first render
+    // Default filter: active only
     cy.nodes().forEach(node => {
       const d = node.data();
       if (d.type !== 'concept' && d.status !== 'active') node.addClass('hidden');
     });
     cy.edges().forEach(edge => {
       if (cy.getElementById(edge.data('source')).hasClass('hidden') ||
-          cy.getElementById(edge.data('target')).hasClass('hidden')) {
+          cy.getElementById(edge.data('target')).hasClass('hidden'))
         edge.addClass('hidden');
-      }
     });
 
     cy.fit();
 
-    // ── label visibility: zoom thresholds + collision detection ───────────
-    //   Concepts  — always labelled (set in stylesheet, font-size overridden inline)
-    //   Projects  — label appears at zoom ≥ 0.5
-    //   Orgs      — label appears at zoom ≥ 0.9
-    //   Any node  — label is always forced when it has .highlighted
-    const ZOOM_PROJECT = 0.5;
-    const ZOOM_ORG     = 0.9;
-
-    function collides(bb, boxes) {
-      const PAD = 3;
-      for (const b of boxes) {
-        if (bb.x1 - PAD < b.x2 && bb.x2 + PAD > b.x1 &&
-            bb.y1 - PAD < b.y2 && bb.y2 + PAD > b.y1) return true;
+    // ── HTML labels via plugin ─────────────────────────────────────────────
+    // Labels are DOM elements in screen space — zoom-invariant by nature.
+    // The plugin positions one div per node; we embed a data-kg-id so we
+    // can sync faded/hidden state without knowing the plugin's internals.
+    cy.nodeHtmlLabel([{
+      query: 'node',
+      halign: 'center',
+      valign: 'bottom',
+      halignBox: 'center',
+      valignBox: 'top',
+      tpl: function (data) {
+        const statusCls = data.status ? ` kg-label--${data.status}` : '';
+        return `<span class="kg-label kg-label--${data.type}${statusCls}" data-kg-id="${data.id}">${data.label}</span>`;
       }
-      return false;
-    }
+    }]);
 
-    function updateLabels() {
-      const z   = cy.zoom();
-      const hl  = cy.$('.highlighted');
-
-      // Phase 1 — zoom-invariant font sizes + threshold-based label toggle
-      cy.batch(() => {
-        cy.nodes('[type = "concept"]').style('font-size',      (11 / z) + 'px');
-        cy.nodes('[type = "project"]').style('font-size',      ( 9 / z) + 'px');
-        cy.nodes('[type = "organisation"]').style('font-size', ( 9 / z) + 'px');
-
-        cy.nodes('[type = "project"]').not(hl).style(
-          'label', z >= ZOOM_PROJECT ? node => node.data('label') : ''
-        );
-        cy.nodes('[type = "organisation"]').not(hl).style(
-          'label', z >= ZOOM_ORG ? node => node.data('label') : ''
-        );
-
-        // highlighted node always shows its label, regardless of type/zoom
-        if (hl.length) {
-          hl.style('label', node => node.data('label'));
-        }
+    // Sync faded / hidden state to the HTML label elements.
+    // The plugin owns the wrapper div; we set opacity/display on it.
+    function syncLabels() {
+      cy.nodes().forEach(node => {
+        const inner = document.querySelector(`[data-kg-id="${node.id()}"]`);
+        if (!inner) return;
+        const wrap = inner.parentElement;
+        if (wrap) wrap.style.display = node.hasClass('hidden') ? 'none' : '';
+        inner.style.opacity = node.hasClass('faded') ? '0.15' : '';
       });
-
-      // Phase 2 — collision detection (uses rendered state, outside batch)
-      if (z >= ZOOM_PROJECT) {
-        const occupied = [];
-
-        // Concepts win unconditionally — seed occupied list
-        cy.nodes('[type = "concept"]').not('.hidden').forEach(n => {
-          try {
-            const bb = n.renderedBoundingBox({ includeLabels: true });
-            if (bb.w > 0) occupied.push(bb);
-          } catch (_) {}
-        });
-
-        // Projects: second priority
-        cy.nodes('[type = "project"]').not('.hidden').not(hl).forEach(n => {
-          if (!n.style('label')) return;
-          try {
-            const bb = n.renderedBoundingBox({ includeLabels: true });
-            if (collides(bb, occupied)) n.style('label', '');
-            else if (bb.w > 0) occupied.push(bb);
-          } catch (_) {}
-        });
-
-        // Orgs: lowest priority
-        cy.nodes('[type = "organisation"]').not('.hidden').not(hl).forEach(n => {
-          if (!n.style('label')) return;
-          try {
-            const bb = n.renderedBoundingBox({ includeLabels: true });
-            if (collides(bb, occupied)) n.style('label', '');
-            else if (bb.w > 0) occupied.push(bb);
-          } catch (_) {}
-        });
-      }
     }
 
-    let _labelTimer = null;
-    function scheduleUpdate() {
-      if (_labelTimer) clearTimeout(_labelTimer);
-      _labelTimer = setTimeout(updateLabels, 80);
-    }
+    // Run once after the plugin has had a frame to render its divs
+    requestAnimationFrame(syncLabels);
 
-    cy.on('zoom', scheduleUpdate);
-    updateLabels(); // initial pass
-
-    // ── info panel ─────────────────────────────────────────────────────────
+    // ── info panel ────────────────────────────────────────────────────────
     const infoEl    = document.getElementById('kg-info');
     const infoBadge = document.getElementById('kg-info-badge');
     const infoTitle = document.getElementById('kg-info-title');
@@ -326,18 +218,16 @@
     function showInfo(data) {
       infoTitle.textContent = data.label;
       infoBadge.textContent = data.type + (data.status ? ` · ${data.status}` : '');
-      infoBadge.className = `kg-info__badge kg-info__badge--${data.type}`;
-      const meta = [];
-      if (data.org_type) meta.push(data.org_type);
-      infoMeta.textContent = meta.join(' · ');
-      infoLink.href = data.url;
+      infoBadge.className   = `kg-info__badge kg-info__badge--${data.type}`;
+      infoMeta.textContent  = data.org_type || '';
+      infoLink.href         = data.url;
       infoEl.classList.remove('kg-info--hidden');
     }
 
     function hideInfo() {
       infoEl.classList.add('kg-info--hidden');
       cy.elements().removeClass('faded highlighted');
-      scheduleUpdate(); // restore label state after deselection
+      syncLabels();
     }
 
     document.getElementById('kg-info-close').addEventListener('click', hideInfo);
@@ -347,21 +237,20 @@
       showInfo(node.data());
       cy.elements().addClass('faded').removeClass('highlighted');
       node.removeClass('faded').addClass('highlighted');
-      node.style('label', node.data('label')); // force label on clicked node
       node.connectedEdges().removeClass('faded').connectedNodes().removeClass('faded');
+      syncLabels();
     });
 
     cy.on('tap', function (evt) {
       if (evt.target === cy) hideInfo();
     });
 
-    // double-click / double-tap → navigate
     cy.on('dblclick dbltap', 'node', function (evt) {
       const url = evt.target.data('url');
       if (url) window.location.href = url;
     });
 
-    // ── filter controls ────────────────────────────────────────────────────
+    // ── filters ───────────────────────────────────────────────────────────
     function applyFilters() {
       const showConcepts = document.getElementById('kg-show-concepts').checked;
       const showOrgs     = document.getElementById('kg-show-orgs').checked;
@@ -370,43 +259,41 @@
 
       cy.nodes().forEach(node => {
         const d = node.data();
-        let hide = false;
-        if (d.type === 'concept'      && !showConcepts) hide = true;
-        if (d.type === 'organisation' && !showOrgs)     hide = true;
-        if (d.type === 'project'      && !showProjects) hide = true;
-        if (activeOnly && d.type !== 'concept' && d.status !== 'active') hide = true;
+        const hide =
+          (d.type === 'concept'      && !showConcepts) ||
+          (d.type === 'organisation' && !showOrgs)     ||
+          (d.type === 'project'      && !showProjects) ||
+          (activeOnly && d.type !== 'concept' && d.status !== 'active');
         node.toggleClass('hidden', hide);
       });
 
       cy.edges().forEach(edge => {
-        const hidden =
+        edge.toggleClass('hidden',
           cy.getElementById(edge.data('source')).hasClass('hidden') ||
-          cy.getElementById(edge.data('target')).hasClass('hidden');
-        edge.toggleClass('hidden', hidden);
+          cy.getElementById(edge.data('target')).hasClass('hidden'));
       });
+
+      syncLabels();
     }
 
     ['kg-show-concepts', 'kg-show-orgs', 'kg-show-projects', 'kg-active-only']
-      .forEach(id => document.getElementById(id).addEventListener('change', () => {
-        applyFilters();
-        scheduleUpdate();
-      }));
+      .forEach(id => document.getElementById(id).addEventListener('change', applyFilters));
 
-    // ── search ─────────────────────────────────────────────────────────────
+    // ── search ────────────────────────────────────────────────────────────
     document.getElementById('kg-search').addEventListener('input', function () {
       const q = this.value.trim().toLowerCase();
-      if (!q) {
-        cy.elements().removeClass('faded highlighted');
-        return;
+      cy.elements().removeClass('faded highlighted');
+      if (q) {
+        cy.elements().addClass('faded').removeClass('highlighted');
+        cy.nodes()
+          .filter(n => n.data('label').toLowerCase().includes(q))
+          .removeClass('faded').addClass('highlighted')
+          .connectedEdges().removeClass('faded');
       }
-      cy.elements().addClass('faded').removeClass('highlighted');
-      cy.nodes()
-        .filter(n => n.data('label').toLowerCase().includes(q))
-        .removeClass('faded').addClass('highlighted')
-        .connectedEdges().removeClass('faded');
+      syncLabels();
     });
 
-    // ── fit / reset ────────────────────────────────────────────────────────
+    // ── fit / reset ───────────────────────────────────────────────────────
     document.getElementById('kg-fit').addEventListener('click', () => cy.fit());
 
     document.getElementById('kg-reset').addEventListener('click', () => {
