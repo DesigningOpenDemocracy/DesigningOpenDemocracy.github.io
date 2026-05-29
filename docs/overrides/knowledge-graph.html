@@ -18,7 +18,7 @@
         <span class="kg-swatch kg-swatch--project"></span> Projects
       </label>
       <label class="kg-toggle">
-        <input type="checkbox" id="kg-active-only">
+        <input type="checkbox" id="kg-active-only" checked>
         Active&nbsp;only
       </label>
     </div>
@@ -76,16 +76,29 @@
 
   // ── Cytoscape stylesheet ─────────────────────────────────────────────────
   const CYTO_STYLE = [
+    // Base: all nodes are small unlabelled dots
     {
       selector: 'node',
       style: {
+        'label': '',
+        'background-color': function (ele) { return nodeStyle(ele.data()).bg; },
+        'border-color':     function (ele) { return nodeStyle(ele.data()).border; },
+        'border-width': '1.5px',
+        'shape': 'ellipse',
+        'width': '12px',
+        'height': '12px',
+        'cursor': 'pointer',
+      }
+    },
+    // Concepts: larger, always labelled — they are the hubs
+    {
+      selector: 'node[type = "concept"]',
+      style: {
         'label': 'data(label)',
-        'font-size': '9px',
+        'font-size': '10px',
+        'font-weight': 'bold',
         'font-family': 'var(--md-text-font, sans-serif)',
         'color': function (ele) { return nodeStyle(ele.data()).fg; },
-        'background-color': function (ele) { return nodeStyle(ele.data()).bg; },
-        'border-color': function (ele) { return nodeStyle(ele.data()).border; },
-        'border-width': '1.5px',
         'text-valign': 'center',
         'text-halign': 'center',
         'text-wrap': 'wrap',
@@ -94,17 +107,48 @@
         'padding': '6px',
         'width': 'label',
         'height': 'label',
-        'min-width': '30px',
-        'min-height': '20px',
-        'cursor': 'pointer',
+        'min-width': '44px',
+        'min-height': '22px',
       }
     },
+    // Projects: medium dot with label
     {
-      selector: 'node[type = "concept"]',
+      selector: 'node[type = "project"]',
       style: {
-        'font-size': '10px',
-        'font-weight': 'bold',
-        'min-width': '40px',
+        'label': 'data(label)',
+        'font-size': '9px',
+        'font-family': 'var(--md-text-font, sans-serif)',
+        'color': function (ele) { return nodeStyle(ele.data()).fg; },
+        'text-valign': 'center',
+        'text-halign': 'center',
+        'text-wrap': 'wrap',
+        'text-max-width': '80px',
+        'shape': 'round-rectangle',
+        'padding': '5px',
+        'width': 'label',
+        'height': 'label',
+        'min-width': '30px',
+        'min-height': '18px',
+      }
+    },
+    // Org nodes show label only when hovered or highlighted
+    {
+      selector: 'node[type = "organisation"]:active, node[type = "organisation"].highlighted',
+      style: {
+        'label': 'data(label)',
+        'font-size': '9px',
+        'font-family': 'var(--md-text-font, sans-serif)',
+        'color': '#fff',
+        'text-valign': 'center',
+        'text-halign': 'center',
+        'text-wrap': 'wrap',
+        'text-max-width': '100px',
+        'shape': 'round-rectangle',
+        'padding': '5px',
+        'width': 'label',
+        'height': 'label',
+        'min-width': '30px',
+        'min-height': '18px',
       }
     },
     {
@@ -112,7 +156,7 @@
       style: {
         'width': 1,
         'line-color': '#90a4ae',
-        'opacity': 0.55,
+        'opacity': 0.45,
         'curve-style': 'bezier',
       }
     },
@@ -121,7 +165,7 @@
       style: {
         'line-color': '#9c27b0',
         'line-style': 'dashed',
-        'opacity': 0.45,
+        'opacity': 0.35,
       }
     },
     {
@@ -129,17 +173,16 @@
       style: {
         'border-width': '3px',
         'border-color': '#ffeb3b',
-        'font-size': '11px',
         'z-index': 10,
       }
     },
     {
       selector: 'node.faded',
-      style: { 'opacity': 0.12 }
+      style: { 'opacity': 0.1 }
     },
     {
       selector: 'edge.faded',
-      style: { 'opacity': 0.05 }
+      style: { 'opacity': 0.04 }
     },
     {
       selector: '.hidden',
@@ -182,6 +225,18 @@
       minZoom: 0.05,
       maxZoom: 5,
       wheelSensitivity: 0.3,
+    });
+
+    // Apply default active-only filter before first render
+    cy.nodes().forEach(node => {
+      const d = node.data();
+      if (d.type !== 'concept' && d.status !== 'active') node.addClass('hidden');
+    });
+    cy.edges().forEach(edge => {
+      if (cy.getElementById(edge.data('source')).hasClass('hidden') ||
+          cy.getElementById(edge.data('target')).hasClass('hidden')) {
+        edge.addClass('hidden');
+      }
     });
 
     cy.fit();
@@ -278,9 +333,10 @@
       document.getElementById('kg-show-concepts').checked = true;
       document.getElementById('kg-show-orgs').checked     = true;
       document.getElementById('kg-show-projects').checked = true;
-      document.getElementById('kg-active-only').checked   = false;
+      document.getElementById('kg-active-only').checked   = true;
       document.getElementById('kg-search').value          = '';
       cy.elements().removeClass('faded highlighted hidden');
+      applyFilters();
       cy.fit();
       hideInfo();
     });
