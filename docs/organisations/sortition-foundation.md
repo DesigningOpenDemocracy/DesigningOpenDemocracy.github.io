@@ -22,6 +22,10 @@ Beyond the Lords campaign, the foundation promotes sortition more broadly: in lo
 
 The foundation has become a key reference point for anyone working on democratic innovation in the UK and internationally.
 
+## Key people
+
+- **Brett Hennig** — co-founder and author of *The End of Politicians: Democratic Alternatives to Them* (Scribe Publications, 2017), which makes the systematic case for replacing elected legislatures with sortition-selected assemblies. The foundation's principal public voice internationally.[^hennig]
+
 ## Links
 
 - Website: [sortitionfoundation.org](https://www.sortitionfoundation.org)
@@ -29,3 +33,5 @@ The foundation has become a key reference point for anyone working on democratic
 ## See also
 
 - [Your Party is using sortition](../../blog/posts/2025-12-07-your-party-is-using-sortition.md) — DOD blog post on a UK party adopting sortition in practice
+
+[^hennig]: Brett Hennig, *The End of Politicians: Democratic Alternatives to Them*, Scribe Publications, 2017.

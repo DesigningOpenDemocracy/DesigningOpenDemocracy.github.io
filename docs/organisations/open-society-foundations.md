@@ -22,6 +22,10 @@ OSF operates through a network of national and regional foundations and awards g
 
 For organisations working in the democracy design and civic tech space, OSF is one of the primary international funders to be aware of, alongside foundations like Luminate (Omidyar Network's democracy and civic tech arm) and the William and Flora Hewlett Foundation.
 
+## Key people
+
+- **[George Soros](https://en.wikipedia.org/wiki/George_Soros)** — founder. Hungarian-American investor and philanthropist who established OSF in 1979, drawing on philosopher Karl Popper's concept of the "open society" as a framework for pluralist, rights-respecting governance. One of the largest private funders of democracy, civil society, and human rights work globally.
+
 ## Links
 
 - Website: [opensocietyfoundations.org](https://www.opensocietyfoundations.org)
