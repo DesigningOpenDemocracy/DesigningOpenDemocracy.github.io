@@ -20,6 +20,32 @@ The Landscape is a living reference, not a snapshot. Orgs close, URLs rot, conce
 
 ## Scripts
 
+### `stamp.py` — Set last_checked: today
+
+Updates `last_checked` in-place on one or more pages without reordering other keys. Use immediately after verifying a page.
+
+```bash
+python util/stamp.py namfrel                        # by slug
+python util/stamp.py docs/organisations/namfrel.md  # by path
+python util/stamp.py namfrel flacso-cuba            # multiple at once
+python util/stamp.py --all-active                   # every active org
+```
+
+Slugs resolve against `docs/organisations/` first, then `docs/concepts/`. Running twice is safe — already-current pages are skipped. No dependencies beyond stdlib.
+
+---
+
+### `stats.py` — Landscape snapshot
+
+Situational overview: org counts by status, geographic spread, type breakdown, `last_checked` freshness, and concept coverage. Run at the start of a session.
+
+```bash
+python util/stats.py
+python util/stats.py --concepts   # also list orphaned concept pages
+```
+
+---
+
 ### `check_orgs.py` — Staleness report
 
 Who to re-verify next. Orders active orgs by: no `last_checked` date first, then oldest first.
@@ -106,15 +132,20 @@ The `*` gives a calendar of all captures rather than a single snapshot. `lint_or
 ### AI-assisted recheck pass
 
 ```bash
-# 1. See what needs attention
+# 1. Situational overview
+python util/stats.py
+
+# 2. See what needs attention
 python util/check_orgs.py --days 365 --active
 
-# 2. Pick the oldest N pages, verify each one (check website, status, content)
-# 3. Update last_checked in frontmatter after verifying
-# 4. Run lint to catch anything structural
+# 3. Pick the oldest N pages, verify each one (check website, status, content)
+# 4. Stamp verified pages
+python util/stamp.py slug1 slug2 slug3
+
+# 5. Run lint to catch anything structural
 python util/lint_orgs.py --fix-hints
 
-# 5. Run concept and link checks
+# 6. Run concept and link checks
 python util/check_concepts.py --all
 python util/check_links.py --all
 ```
@@ -131,7 +162,7 @@ python util/check_links.py --all       # all links
 
 ## Requirements
 
-All scripts use `python-frontmatter`, `python-dateutil` — both in `util/requirements.txt`.
+`stamp.py` and `stats.py` use stdlib only. All other scripts use `python-frontmatter`, `python-dateutil` — both in `util/requirements.txt`.
 
 ```bash
 pip install -r util/requirements.txt
