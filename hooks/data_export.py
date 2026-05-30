@@ -1,10 +1,11 @@
 """
-data_export.py — MkDocs hook: export org data as CSV, JSON, GeoJSON at build time
+data_export.py — MkDocs hook: export org data as CSV, JSON, GeoJSON, KML at build time
 
 Generates docs/data/ during on_pre_build so files are served as static assets:
   /data/organisations.csv      — flat table, all orgs
   /data/organisations.json     — structured, concepts as arrays
-  /data/organisations.geojson  — active orgs with coordinates (FeatureCollection)
+  /data/organisations.geojson  — orgs with coordinates (FeatureCollection)
+  /data/organisations.kml      — orgs with coordinates, colour-coded by status
   /data/org-concepts.csv       — edge list for network / graph analysis
 """
 
@@ -129,6 +130,74 @@ def write_orgs_geojson(orgs, meta):
         json.dump(fc, f, ensure_ascii=False, indent=2)
 
 
+def _kml_escape(s):
+    return (s.replace("&", "&amp;").replace("<", "&lt;")
+             .replace(">", "&gt;").replace('"', "&quot;"))
+
+
+# KML colours: AABBGGRR (alpha, blue, green, red)
+KML_STYLES = {
+    "active":       ("ff00bb00", "Active"),
+    "inactive":     ("ff888888", "Inactive"),
+    "deregistered": ("ff0000cc", "Deregistered"),
+}
+KML_ICON = "http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png"
+
+
+def write_orgs_kml(orgs, meta):
+    path = os.path.join(OUT_DIR, "organisations.kml")
+    lines = [
+        '<?xml version="1.0" encoding="UTF-8"?>',
+        '<kml xmlns="http://www.opengis.net/kml/2.2">',
+        '<Document>',
+        '  <name>Democracy Landscape</name>',
+        f'  <description>Designing Open Democracy — {meta["org_count"]} organisations'
+        f' — generated {meta["generated_at"]}</description>',
+    ]
+
+    for status, (colour, label) in KML_STYLES.items():
+        lines += [
+            f'  <Style id="{status}">',
+            '    <IconStyle>',
+            f'      <color>{colour}</color>',
+            '      <scale>1.0</scale>',
+            f'      <Icon><href>{KML_ICON}</href></Icon>',
+            '    </IconStyle>',
+            '  </Style>',
+        ]
+
+    for o in orgs:
+        if o["latitude"] == "" or o["longitude"] == "":
+            continue
+        status = o["status"] if o["status"] in KML_STYLES else "inactive"
+        concepts_str = _kml_escape(", ".join(o["concepts"])) if o["concepts"] else "—"
+        website = o["website"]
+        website_html = (f'<a href="{_kml_escape(website)}">{_kml_escape(website)}</a>'
+                        if website else "—")
+        description = (
+            f"<b>Status:</b> {_kml_escape(o['status'])}<br>"
+            f"<b>Country:</b> {_kml_escape(o['country'])}<br>"
+            f"<b>Type:</b> {_kml_escape(o['type'])}<br>"
+            f"<b>Website:</b> {website_html}<br>"
+            f"<b>Concepts:</b> {concepts_str}<br><br>"
+            f"{_kml_escape(o['summary'])}"
+        )
+        lines += [
+            '  <Placemark>',
+            f'    <name>{_kml_escape(o["title"])}</name>',
+            f'    <description><![CDATA[{description}]]></description>',
+            f'    <styleUrl>#{status}</styleUrl>',
+            '    <Point>',
+            f'      <coordinates>{o["longitude"]},{o["latitude"]},0</coordinates>',
+            '    </Point>',
+            '  </Placemark>',
+        ]
+
+    lines += ['</Document>', '</kml>']
+    with open(path, "w", encoding="utf-8") as f:
+        f.write("\n".join(lines))
+
+
 def on_pre_build(config):
     if frontmatter is None:
         return
@@ -144,3 +213,4 @@ def on_pre_build(config):
     write_edge_list_csv(orgs)
     write_orgs_json(orgs, meta)
     write_orgs_geojson(orgs, meta)
+    write_orgs_kml(orgs, meta)
