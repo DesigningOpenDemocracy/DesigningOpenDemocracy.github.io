@@ -42,4 +42,4 @@ They are also engaged in building the evidence base for deliberation: what condi
 - [DemocracyCo](democracyco.md)
 - [Designing Open Democracy 2020 Primer](../../blog/posts/2022-02-24-podcast.md) — Kimbra White from MosaicLab appeared at this DOD meetup
 
-[^mosaiclab]: MosaicLab, [About](https://mosaiclab.com.au/about/).
+[^mosaiclab]: MosaicLab co-founder bios: [Kimbra White](https://mosaiclab.com.au/news-all-posts/2016/8/16/meet-a-co-founder-kimbra-white), [Nicole Hunter](https://mosaiclab.com.au/nicole-hunter), [Keith Greaves](https://mosaiclab.com.au/keith-greaves).
