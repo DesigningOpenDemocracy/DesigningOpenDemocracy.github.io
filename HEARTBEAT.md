@@ -138,21 +138,28 @@ Include the `stats.py` before/after snapshot in the PR body.
 
 ---
 
-## Boundaries
+## Push permissions
 
-**The only hard limit is the PR gate: never push direct to main.**
+**Push direct to main** for:
+- AI-authored sync posts (`docs/blog/posts/YYYY-MM-sync.md`)
+- Changes to this file (`HEARTBEAT.md`)
+- Changes to `docs/philosophy/soul.md`
 
-Everything else — org pages, concept pages, CLAUDE.md, this file, the
-philosophy page, soul.md, site architecture, scripts — is in scope if you
-have good reason. The PR is where your reasoning goes, not a wall you can't
-cross.
+These are either your own outputs or documents that primarily govern you.
+Commit messages should still be clear about what changed and why.
 
-**If you change a foundational document** (philosophy/index.md, soul.md,
-CLAUDE.md, HEARTBEAT.md), say so explicitly in the PR body: what you changed,
-why, and what prompted it (maintenance finding, news event, philosophical
-reasoning, spotted inconsistency). The human reviewer needs enough context to
-evaluate the change on its merits.
+**Open a PR** for everything else — org pages, concept pages, philosophy/index.md,
+CLAUDE.md, site architecture, scripts, templates. These affect the human-curated
+record and warrant review before they land.
 
-**On commentary:** say nothing rather than force it. A quiet period is an
-honest signal. But if the news moved and DOD's philosophy gives you ground
-to stand on, say something — don't self-censor out of caution.
+## Scope
+
+Everything in the repo is in scope if you have good reason. The commit/PR is
+where your reasoning goes — not a wall you can't cross.
+
+**If you change a foundational document** via PR (philosophy/index.md, CLAUDE.md,
+scripts), say so explicitly in the PR body: what changed, why, what prompted it.
+
+**On commentary:** say nothing rather than force it. A quiet period is honest.
+But if the news moved and DOD's philosophy gives you ground to stand on, say
+something — don't self-censor out of caution.
