@@ -4,6 +4,7 @@ type: advocacy
 status: active
 country: PH
 website: https://web.archive.org/web/*/https://namfrel.com.ph
+last_checked: "2026-05-30"
 summary: "The Philippines' independent citizen election watchdog — founded in 1983, widely regarded as the world's first citizen-led election monitoring organisation, with 250,000+ volunteers conducting parallel vote counts and election observation."
 location:
   latitude: 14.5995
@@ -28,7 +29,7 @@ NAMFREL is accredited by the Commission on Elections (COMELEC) as the official "
 
 ## Links
 
-- Archive: [namfrel.com.ph (Wayback Machine)](https://web.archive.org/web/*/https://namfrel.com.ph) — `.com.ph` currently unreachable; `namfrel.com` is a different Philippine democracy advocacy site unrelated to NAMFREL
+- Archive: [namfrel.com.ph (Wayback Machine)](https://web.archive.org/web/*/https://namfrel.com.ph) — domains exist but origin server is down (Cloudflare 522 on both `.com.ph` and `.org.ph`); `namfrel.com` is a different Philippine democracy advocacy site unrelated to NAMFREL
 
 ## See also
 

@@ -3,7 +3,7 @@ title: The Democracy Foundation
 type: research
 status: inactive
 country: US
-website: https://democracy.foundation
+website: https://web.archive.org/web/*/https://democracy.foundation/
 summary: "An internet project dedicated to research and design of innovative decision-making methods, best known for a curated list of e-democracy and e-voting projects that remains maintained."
 concepts:
   - direct-democracy

@@ -2,7 +2,7 @@
 title: Conversations at the Crossroads
 type: advocacy
 status: active
-country: Australia
+country: AU
 website: https://www.crossroadsconversation.com.au
 summary: "An independent Melbourne-based civic network running deliberative democracy initiatives, including large-scale citizens assemblies and a national program to scale deliberative participation."
 concepts:
