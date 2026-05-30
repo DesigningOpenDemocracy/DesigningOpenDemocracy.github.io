@@ -105,6 +105,17 @@ def write_orgs_geojson(orgs, meta):
                  if k not in ("latitude", "longitude", "location_name", "title")}
         props["name"] = o["title"]
         props["location_name"] = o["location_name"]
+        concepts_str = ", ".join(o["concepts"]) if o["concepts"] else "—"
+        website = o["website"]
+        website_html = f'<a href="{website}">{website}</a>' if website else "—"
+        props["description"] = (
+            f"<b>Status:</b> {o['status']}<br>"
+            f"<b>Country:</b> {o['country']}<br>"
+            f"<b>Type:</b> {o['type']}<br>"
+            f"<b>Website:</b> {website_html}<br>"
+            f"<b>Concepts:</b> {concepts_str}<br><br>"
+            f"{o['summary']}"
+        )
         features.append({
             "type": "Feature",
             "geometry": {
