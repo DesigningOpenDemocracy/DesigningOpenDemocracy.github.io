@@ -144,6 +144,7 @@ def build_llms_txt(site_url):
         f"- Knowledge graph (org↔concept relationships): {site_url}/graph/",
         f"- Blog (event posts, meetup summaries): {site_url}/blog/",
         f"- About / philosophy: {site_url}/about/",
+        f"- DOD's own projects (wiki, tools, research): {site_url}/community/",
         "",
     ]
 
