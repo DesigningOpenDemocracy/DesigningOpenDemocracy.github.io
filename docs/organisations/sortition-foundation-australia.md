@@ -19,6 +19,10 @@ The Sortition Foundation is a UK-based organisation that campaigns for the use o
 
 The UK Sortition Foundation already has a [landscape entry](sortition-foundation.md). The Australian chapter is noted separately because of its distinct operational activity in Australian democratic processes.
 
+## Key people
+
+- **Dr Sonia Randhawa** — established and leads the Australian chapter, based in Preston, Victoria. Works as a Project Manager at the Sortition Foundation and has driven its operational presence in Australian local and federal democratic processes.[^sfau]
+
 ## What the Australian chapter does
 
 - **Monthly online meetings** — second Thursday evening of each month, open to anyone interested
@@ -38,5 +42,7 @@ The UK Sortition Foundation already has a [landscape entry](sortition-foundation
 - [Citizens' Assembly](../concepts/citizens-assembly.md)
 - [Sortition Foundation](sortition-foundation.md)
 - [newDemocracy Foundation](newdemocracy.md)
+
+[^sfau]: Sortition Foundation, [Australia chapter](https://www.sortitionfoundation.org/become_a_member_australia).
 - [What if we replaced politicians with randomly selected people?](../../blog/posts/2018-06-18.md) — Brett Hennig TED talk, discussed at DOD 2018
 - [Your Party is using sortition](../../blog/posts/2025-12-07-your-party-is-using-sortition.md) — UK case study, 2025

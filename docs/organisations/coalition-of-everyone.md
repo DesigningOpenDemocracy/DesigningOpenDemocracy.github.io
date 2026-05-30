@@ -16,7 +16,11 @@ The Coalition of Everyone (CoE) was founded by Willow Berzin with the aim of mak
 
 Their stated vision: a world where people are welcomed to engage actively with political and economic systems, from small-scale community budgeting to large-scale randomly selected assemblies setting policy.
 
-After six years of operation, CoE held a final AGM and wound up — "composted" in their language. Willow Berzin went on to found the Bioregional Institute, continuing related work on regenerative community governance.
+## Key people
+
+- **Willow Berzin** — founder. Built CoE over six years as a grassroots deliberative democracy practice before winding it up intentionally. Subsequently founded the Bioregional Institute, continuing related work on regenerative community governance. Appeared at a [DOD meetup in 2022](../../blog/posts/2022-02-24-podcast.md).[^coe]
+
+After six years of operation, CoE held a final AGM and wound up — "composted" in their language.
 
 ## Significance
 
@@ -28,3 +32,5 @@ CoE represented an attempt to operationalise deliberative democracy at the grass
 - [Consensus Mapping](../concepts/consensus-mapping.md)
 - [Direct Democracy](../concepts/direct-democracy.md)
 - [Designing Open Democracy 2020 Primer](../../blog/posts/2022-02-24-podcast.md) — Willow Berzin from CoE appeared at this DOD meetup
+
+[^coe]: Coalition of Everyone, archived at [Wayback Machine](https://web.archive.org/web/*/https://coalitionofeveryone.com/).

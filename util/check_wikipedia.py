@@ -34,6 +34,16 @@ CANDIDATES = [
     ("Ben Knight",           "Ben_Knight_(Loomio)"),
     ("Luca Belgiorno-Nettis","Luca_Belgiorno-Nettis"),
     ("Nicholas Gruen",       "Nicholas_Gruen"),
+    # Australian democracy practitioners
+    ("Kimbra White",         "Kimbra_White"),
+    ("Nicole Hunter",        "Nicole_Hunter_(facilitator)"),
+    ("Keith Greaves",        "Keith_Greaves"),
+    ("Emily Jenke",          "Emily_Jenke"),
+    ("Emma Fletcher",        "Emma_Fletcher_(DemocracyCo)"),
+    ("Neha Madhok",          "Neha_Madhok"),
+    ("Noura Mansour",        "Noura_Mansour"),
+    ("Sonia Randhawa",       "Sonia_Randhawa"),
+    ("Willow Berzin",        "Willow_Berzin"),
 ]
 
 API_BASE = "https://en.wikipedia.org/api/rest_v1/page/summary/"

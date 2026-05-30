@@ -19,6 +19,10 @@ DemocracyCo is one of Australia's most established deliberative democracy practi
 
 The practice does not advocate a single methodology; it selects approaches suited to each process. Its core principle is that giving citizens genuine influence means committing at the outset to implementing some or all of what they decide.
 
+## Key people
+
+- **Emily Jenke and Emma Fletcher** — co-founders, both with backgrounds in South Australian public service and community engagement. Jenke facilitated the 2014 SA Citizens' Jury on road sharing; the practice grew from their shared frustration that governments were not achieving quality reform commensurate with the scale of problems faced.[^democracyco]
+
 ## Notable processes
 
 - **SA Nuclear Fuel Cycle Citizens' Juries (2016)** — A two-stage process involving 50 then 350 South Australians deliberating on whether SA should store international nuclear waste; described at the time as the world's largest citizens' jury on nuclear waste storage
@@ -38,3 +42,5 @@ The practice does not advocate a single methodology; it selects approaches suite
 - [Consensus Mapping](../concepts/consensus-mapping.md)
 - [Deliberative Democracy](../concepts/deliberative-democracy.md)
 - [Mosaic Lab](mosaiclab.md)
+
+[^democracyco]: DemocracyCo, [About](https://www.democracyco.com.au/about/).

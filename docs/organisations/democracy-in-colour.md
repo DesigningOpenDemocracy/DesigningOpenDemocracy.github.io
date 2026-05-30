@@ -17,7 +17,10 @@ concepts:
 
 Democracy in Colour is a registered charity and advocacy organisation focused on racial justice in Australian democracy. Its focus is on *who* participates in democracy — addressing the structural barriers and systemic racism that shape whose voices are heard in political, media, and civic life — rather than procedural democratic reform.
 
-It was founded with Neha Madhok as National Director (approximately 2017–2024); the current National Director is Noura Mansour.
+## Key people
+
+- **Neha Madhok** — founding National Director (approximately 2017–2024); built the organisation from its inception into a nationally recognised advocacy body.[^dic]
+- **Noura Mansour** — current National Director (from 2024).[^dic]
 
 ## Campaigns and programs
 
@@ -40,3 +43,5 @@ Democracy in Colour's work is distinct from electoral or procedural reform organ
 - [Democracy](../concepts/democracy.md)
 - [Representative Democracy](../concepts/representative-democracy.md)
 - [Isegoria](../concepts/isegoria.md)
+
+[^dic]: Democracy in Colour, [About](https://democracyincolour.org/about/).
