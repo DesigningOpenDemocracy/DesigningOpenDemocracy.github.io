@@ -51,6 +51,7 @@ CONCEPTS_DIR = os.path.join(DOCS_DIR, "concepts")
 SKIP_FILES = {"organisations.md"}
 WAYBACK_PREFIX = "https://web.archive.org"
 ALLOWED_STATUSES = {"active", "inactive", "deregistered"}
+ISO2_RE = __import__("re").compile(r'^[A-Z]{2}$')
 
 
 def parse_date(val):
@@ -105,6 +106,11 @@ def check_org(meta, valid_slugs):
     if bad_slugs:
         issues.append(("concepts", f"Unknown concept slug(s): {bad_slugs}"))
 
+    # Rule 6: country not an ISO 3166-1 alpha-2 code
+    country = meta.get("country", "") or ""
+    if country and not ISO2_RE.match(country):
+        issues.append(("country", f"country: '{country}' is not a 2-letter ISO code (e.g. AU, GB, US)"))
+
     return issues
 
 
@@ -124,6 +130,7 @@ def main():
         "location": "Add location:\\n  latitude: XX.XXXX\\n  longitude: XX.XXXX\\n  name: City, Country",
         "concepts": "Fix the concept slug(s) to match filenames in docs/concepts/ (without .md).",
         "status": "Set status: to one of: active | inactive | deregistered",
+        "country": "Set country: to a 2-letter ISO 3166-1 alpha-2 code (AU, GB, US, DE…)",
     }
 
     pages_checked = pages_skipped = 0

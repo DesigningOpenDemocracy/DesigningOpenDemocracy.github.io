@@ -102,6 +102,7 @@ Enforces conventions from CLAUDE.md that are easy to get wrong when marking orgs
 | `location` | Active org missing `location:` coordinates — won't appear on the interactive map |
 | `concepts` | Concept slugs not matching any `docs/concepts/` file (also in `check_concepts.py`) |
 | `status` | Status value outside `active \| inactive \| deregistered` |
+| `country` | Country field is not a 2-letter ISO 3166-1 alpha-2 code |
 
 Structural rules don't go stale — a wrong URL is still wrong regardless of `last_checked`. So `--days` defaults to 0 (check all). Use `--days N` to suppress noise during rapid-edit sessions.
 

@@ -2,7 +2,7 @@
 title: Lismore People's Assembly
 type: practice
 status: active
-country: Australia
+country: AU
 website: https://reclaim.org.au/lpa-home/
 summary: "A grassroots deliberative assembly in Lismore, NSW, set up in the aftermath of the 2022 floods to give residents a direct voice in decisions shaping the city's future."
 concepts:
