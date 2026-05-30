@@ -55,6 +55,10 @@ extra:
 hooks:
   - hooks/org_template.py
   - hooks/graph_builder.py
+  - hooks/llms_txt.py
+
+not_in_nav: |
+  llms.txt
 
 extra_javascript:
   - https://unpkg.com/leaflet@1.9.4/dist/leaflet.js
