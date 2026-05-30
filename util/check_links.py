@@ -177,6 +177,7 @@ def main():
     else:
         print(f"Total: {total_broken} broken link(s) across {total_files} file(s)")
     print()
+    sys.exit(1 if total_broken > 0 else 0)
 
 
 if __name__ == "__main__":

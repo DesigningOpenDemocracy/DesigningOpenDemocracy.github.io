@@ -143,6 +143,7 @@ def main():
 
     print(f"Known concept slugs: {len(valid_slugs)}")
     print(f"Org pages checked: {checked}  |  skipped (recently verified): {skipped}\n")
+    sys.exit(1 if bad_found else 0)
 
 
 if __name__ == "__main__":

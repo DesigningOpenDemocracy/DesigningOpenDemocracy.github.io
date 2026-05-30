@@ -20,6 +20,57 @@ The Landscape is a living reference, not a snapshot. Orgs close, URLs rot, conce
 
 ## Scripts
 
+### `suggest_tags.py` — Suggest concept tags for org pages
+
+Given a concept slug, finds org pages that don't have it tagged but mention
+related keywords in their body. Keywords are derived from the concept slug
+and its page; overly common words (appearing in >40% of orgs) are dropped
+automatically. Extend with `--keywords` for better recall on niche concepts.
+
+```bash
+python util/suggest_tags.py deliberative-democracy
+python util/suggest_tags.py citizens-assembly --keywords "mini-public" "citizen panel"
+python util/suggest_tags.py sortition --threshold 2
+```
+
+Useful after adding a new concept page to surface which existing orgs should
+be back-tagged, and after adding a batch of org pages to catch missed tags.
+
+---
+
+### `new_concept.py` — Scaffold a new concept page
+
+Interactive CLI that creates `docs/concepts/<slug>.md` with the standard
+discovery-aid structure: title, summary, Wikipedia link, See also.
+
+```bash
+python util/new_concept.py
+```
+
+Per CLAUDE.md conventions: concept pages are brief orientations pointing to
+better sources, not authoritative explanations. The scaffolder reminds you.
+
+---
+
+### `pre_commit_check.py` — Run all checks in one pass
+
+Runs `lint_orgs`, `check_concepts`, and `check_links` in sequence. Exits
+non-zero if any hard check fails. Safe to install as a git pre-commit hook.
+
+```bash
+python util/pre_commit_check.py
+python util/pre_commit_check.py --fix-hints
+
+# Install as git hook:
+echo 'python util/pre_commit_check.py' > .git/hooks/pre-commit
+chmod +x .git/hooks/pre-commit
+```
+
+Hard failures: broken internal links, invalid concept slugs.
+Informational only: `lint_orgs` (4 known Wayback exceptions always appear).
+
+---
+
 ### `add_org.py` — Scaffold a new org page
 
 Interactive CLI that prompts for all standard frontmatter fields and validates
