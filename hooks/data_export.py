@@ -103,6 +103,7 @@ def write_orgs_geojson(orgs, meta):
             continue
         props = {k: v for k, v in o.items()
                  if k not in ("latitude", "longitude", "location_name")}
+        props["name"] = o["title"]
         props["location_name"] = o["location_name"]
         features.append({
             "type": "Feature",
