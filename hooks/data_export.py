@@ -9,8 +9,8 @@ Generates docs/data/ during on_pre_build so files are served as static assets:
 """
 
 import csv
+import datetime
 import glob
-import io
 import json
 import os
 
@@ -75,14 +75,13 @@ def write_edge_list_csv(orgs):
                 w.writerow([o["slug"], c])
 
 
-def write_orgs_json(orgs):
+def write_orgs_json(orgs, meta):
     path = os.path.join(OUT_DIR, "organisations.json")
     records = []
     for o in orgs:
         r = {k: v for k, v in o.items()
              if k not in ("latitude", "longitude", "location_name")}
-        loc = o.get("latitude")
-        if loc != "":
+        if o["latitude"] != "":
             r["location"] = {
                 "latitude": o["latitude"],
                 "longitude": o["longitude"],
@@ -92,10 +91,11 @@ def write_orgs_json(orgs):
             r["location"] = None
         records.append(r)
     with open(path, "w", encoding="utf-8") as f:
-        json.dump(records, f, ensure_ascii=False, indent=2)
+        json.dump({"metadata": meta, "organisations": records}, f,
+                  ensure_ascii=False, indent=2)
 
 
-def write_orgs_geojson(orgs):
+def write_orgs_geojson(orgs, meta):
     path = os.path.join(OUT_DIR, "organisations.geojson")
     features = []
     for o in orgs:
@@ -104,7 +104,6 @@ def write_orgs_geojson(orgs):
         props = {k: v for k, v in o.items()
                  if k not in ("latitude", "longitude", "location_name")}
         props["location_name"] = o["location_name"]
-        props["concepts"] = o["concepts"]
         features.append({
             "type": "Feature",
             "geometry": {
@@ -113,7 +112,7 @@ def write_orgs_geojson(orgs):
             },
             "properties": props,
         })
-    fc = {"type": "FeatureCollection", "features": features}
+    fc = {"type": "FeatureCollection", "metadata": meta, "features": features}
     with open(path, "w", encoding="utf-8") as f:
         json.dump(fc, f, ensure_ascii=False, indent=2)
 
@@ -123,7 +122,13 @@ def on_pre_build(config):
         return
     os.makedirs(OUT_DIR, exist_ok=True)
     orgs = load_orgs()
+    site_url = (config.get("site_url") or "").rstrip("/")
+    meta = {
+        "generated_at": datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "source": site_url or "https://designingopendemocracy.com",
+        "org_count": len(orgs),
+    }
     write_orgs_csv(orgs)
     write_edge_list_csv(orgs)
-    write_orgs_json(orgs)
-    write_orgs_geojson(orgs)
+    write_orgs_json(orgs, meta)
+    write_orgs_geojson(orgs, meta)
