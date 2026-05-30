@@ -3,7 +3,7 @@ title: Electoral Royal Commission (Australia)
 type: advocacy
 status: inactive
 country: AU
-website: https://pirateparty.org.au
+website: https://web.archive.org/web/*/https://electionroyalcommission.org.au/
 summary: "An Australian campaign initiated by Pirate Party Australia calling for a formal Royal Commission into electoral and voting reform — the dedicated site now redirects to the Pirate Party."
 location:
   latitude: -33.8688
