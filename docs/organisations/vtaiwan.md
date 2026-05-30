@@ -38,10 +38,10 @@ The most-documented example is ride-sharing. When Uber sought to enter the Taiwa
 
 ## Key people
 
-- **Audrey Tang** — a g0v contributor and figure in the Sunflower Movement; appointed minister in 2016 and later Taiwan's first Minister of Digital Affairs. The driving champion of vTaiwan inside government.
-- **Jaclyn Tsai** — Minister without Portfolio who attended a g0v hackathon in 2014 and invited the community to build the platform; the catalyst for vTaiwan.
+- **[Audrey Tang](https://en.wikipedia.org/wiki/Audrey_Tang)** — a g0v contributor and figure in the Sunflower Movement; appointed minister in 2016 and later Taiwan's first Minister of Digital Affairs. The driving champion of vTaiwan inside government.
+- **[Jaclyn Tsai](https://en.wikipedia.org/wiki/Jaclyn_Tsai)** — Minister without Portfolio who attended a g0v hackathon in 2014 and invited the community to build the platform; the catalyst for vTaiwan.
 - **Jason Hsu** — co-creator, a former activist who later became a legislator. Source of two of the most-quoted critiques: that vTaiwan is "a tiger without teeth" and that "legislators don't take it seriously."[^demtech][^noveck]
-- **Colin Megill, Christopher Small, Michael Bjorkegren** — founders of Pol.is, the consensus-mapping tool at vTaiwan's core, built in Seattle after the Occupy and Arab Spring movements.
+- **Colin Megill, Christopher Small, Michael Bjorkegren** — founders of [Pol.is](https://en.wikipedia.org/wiki/Pol.is), the consensus-mapping tool at vTaiwan's core, built in Seattle after the Occupy and Arab Spring movements.
 - **g0v (gov zero)** — the decentralised civic-tech community (founded 2012 by Chia-liang Kao and others) that co-developed vTaiwan. See [g0v](g0v.md).
 - **Peter Jia Wei Cui** — program coordinator of the current volunteer-driven vTaiwan community. Quoted in 2025 describing its mission as providing "digital toolboxes and serving as a laboratory for deliberative discussion in Taiwan."[^peoplepowered]
 
