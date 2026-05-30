@@ -28,3 +28,5 @@ What it does show:
 - **Radical transparency is a design choice.** Live-streaming meetings and publishing outputs verbatim changes what participants are willing to say and do in those spaces.
 
 Both [vTaiwan](../../organisations/vtaiwan.md) and [g0v](../../organisations/g0v.md) are in the DOD Democracy Landscape.
+
+*Pol.is was first discussed at DOD in [August 2017](../2017-08-25.md), as part of a broader survey of technologies changing democracy.*
