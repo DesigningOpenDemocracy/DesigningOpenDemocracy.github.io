@@ -28,7 +28,9 @@ Reference: https://fpgmaas.com/blog/collapse-of-mkdocs/
 
 **Before editing `docs/philosophy/index.md`, read `docs/philosophy/soul.md`.**
 
-That file records the human intent behind the page, the invariants that must not change without explicit human authorisation, and the AI dialogue (Claude, DeepSeek, ChatGPT, Gemini, Grok, Mistral) that shaped the current text. Editing without reading it risks accidentally collapsing contributions from earlier sessions.
+That file records the human intent behind the page, the invariants that shaped the current text, and the AI dialogue (Claude, DeepSeek, ChatGPT, Gemini, Grok, Mistral) that contributed to it. Reading it first prevents accidentally collapsing earlier contributions.
+
+The invariants recorded there are not immutable. Any document in this repo — including soul.md, this file, and HEARTBEAT.md — can be proposed for change by any contributor, human or AI. The requirement is transparency: if you change something foundational, say what you changed, why, and what prompted it. The PR review is the gate, not a list of forbidden edits.
 
 ## Conventions
 

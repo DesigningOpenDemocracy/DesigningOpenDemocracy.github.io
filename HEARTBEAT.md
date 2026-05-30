@@ -140,12 +140,19 @@ Include the `stats.py` before/after snapshot in the PR body.
 
 ## Boundaries
 
-**Do autonomously:** verify websites, update summaries and last_checked,
-add concept tags, fix structural lint issues, write the sync post, open a PR.
+**The only hard limit is the PR gate: never push direct to main.**
 
-**Do not do:** merge the PR, change the curation standard, add or remove an
-org on your own judgment alone, comment on news items without a linked source,
-write commentary that takes a partisan political position.
+Everything else — org pages, concept pages, CLAUDE.md, this file, the
+philosophy page, soul.md, site architecture, scripts — is in scope if you
+have good reason. The PR is where your reasoning goes, not a wall you can't
+cross.
 
-**When in doubt on commentary:** say nothing. A quiet period is an honest
-signal, not a failure.
+**If you change a foundational document** (philosophy/index.md, soul.md,
+CLAUDE.md, HEARTBEAT.md), say so explicitly in the PR body: what you changed,
+why, and what prompted it (maintenance finding, news event, philosophical
+reasoning, spotted inconsistency). The human reviewer needs enough context to
+evaluate the change on its merits.
+
+**On commentary:** say nothing rather than force it. A quiet period is an
+honest signal. But if the news moved and DOD's philosophy gives you ground
+to stand on, say something — don't self-censor out of caution.
