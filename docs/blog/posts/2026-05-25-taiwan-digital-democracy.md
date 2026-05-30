@@ -40,7 +40,7 @@ On the 2017 criteria: Pol.is scores well on *crushing minorities* (the design su
 
 **Does it accrue decisions?** No. vTaiwan's recommendations were never legally binding. In its early phase — roughly 2015–2018 — around 80% of its ~26 deliberations led to some government action, by its own count. But that track record ran almost entirely on political novelty and on [Audrey Tang](https://en.wikipedia.org/wiki/Audrey_Tang), then the platform's champion inside government. The platform hasn't driven a major decision since 2018. Co-creator Jason Hsu — a former activist turned legislator — called it "a tiger without teeth": because the government isn't required to act on recommendations, "legislators don't take it seriously" ([Democracy Technologies, 2023](https://democracy-technologies.org/participation/consensus-building-in-taiwan/); [Noveck, 2023](https://bethnoveck.medium.com/was-vtaiwan-such-a-big-flop-after-all-d6b365f916dc)).
 
-Gruen's line from his 2017 DOD presentation fits exactly: *"in political combat, the considered opinion of the people amounts to nothing unless you consider it properly."* vTaiwan could surface a considered public view. It was never wired to compel anyone to act on it.
+Gruen's line from his [2017 DOD presentation](../2017-08-21-podcast.md) fits exactly: *"in political combat, the considered opinion of the people amounts to nothing unless you consider it properly."* vTaiwan could surface a considered public view. It was never wired to compel anyone to act on it.
 
 ## Institutionalisation as partial victory — and partial defeat
 
@@ -54,7 +54,7 @@ The tradeoff is real either way. The government version traded g0v's civic energ
 
 Terrence Chen's 2024 study of Taiwan's digital-government initiatives provides the sharpest framing. He distinguishes *strong* democracy — citizens as co-governing partners in actual decisions — from *thin* democracy, where citizens are *monitorial* (watchful but not deciding) or treated as *entrepreneurs and consumers*. His verdict: even Taiwan's admired platforms mostly delivered the thin version, because binding decision-making power never left officials' hands ([Chen, 2024](https://journals.sagepub.com/doi/10.1177/20539517241296038)).
 
-This maps directly onto what DOD was asking in 2017, and onto Gruen's isegoria frame. vTaiwan created isegoria in the input phase — equality of speech, consensus surfaced, minority views made visible. Then it handed the output back to a system running on the opposite logic: competitive, aristocratic, emotionally amplified. The isegoria evaporated at the threshold between deliberation and decision.
+This maps directly onto [what DOD was asking in 2017](../2017-08-25.md), and onto Gruen's isegoria frame. vTaiwan created isegoria in the input phase — equality of speech, consensus surfaced, minority views made visible. Then it handed the output back to a system running on the opposite logic: competitive, aristocratic, emotionally amplified. The isegoria evaporated at the threshold between deliberation and decision.
 
 That gap — between surfacing a public will and enacting it — is the design problem vTaiwan solved halfway. Closing the second half requires a binding mandate, which is a political question as much as a design one. No civic-tech tool substitutes for it.
 
