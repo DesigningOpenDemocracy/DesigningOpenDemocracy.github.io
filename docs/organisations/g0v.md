@@ -35,7 +35,7 @@ g0v operates without a formal leadership structure. Projects are proposed on an 
 ## Key people
 
 - **Chia-liang Kao** — one of g0v's founding contributors in 2012; instrumental in establishing the decentralised civic-tech community that would later co-produce vTaiwan.[^demtech]
-- **Audrey Tang** — g0v contributor from an early stage; later became Taiwan's first Minister of Digital Affairs (2016) and the driving government champion for vTaiwan. The most internationally prominent figure associated with both g0v and Taiwan's digital democracy project.
+- **Audrey Tang** — g0v contributor from an early stage; later became Taiwan's first Minister of Digital Affairs (2016) and the driving government champion for vTaiwan. The most internationally prominent figure associated with both g0v and Taiwan's digital democracy project.[^demtech]
 - **Jason Hsu** — g0v contributor and co-creator of vTaiwan; later became a legislator. Subsequently a critic of the platform's structural limits, famously calling it "a tiger without teeth" and noting that "legislators don't take it seriously."[^demtech][^noveck]
 
 ## International influence

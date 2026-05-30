@@ -43,6 +43,7 @@ The most-documented example is ride-sharing. When Uber sought to enter the Taiwa
 - **Jason Hsu** — co-creator, a former activist who later became a legislator. Source of two of the most-quoted critiques: that vTaiwan is "a tiger without teeth" and that "legislators don't take it seriously."[^demtech][^noveck]
 - **Colin Megill, Christopher Small, Michael Bjorkegren** — founders of Pol.is, the consensus-mapping tool at vTaiwan's core, built in Seattle after the Occupy and Arab Spring movements.
 - **g0v (gov zero)** — the decentralised civic-tech community (founded 2012 by Chia-liang Kao and others) that co-developed vTaiwan. See [g0v](g0v.md).
+- **Peter Jia Wei Cui** — program coordinator of the current volunteer-driven vTaiwan community. Quoted in 2025 describing its mission as providing "digital toolboxes and serving as a laboratory for deliberative discussion in Taiwan."[^peoplepowered]
 
 ## Significance and limits
 
@@ -52,7 +53,7 @@ But its recommendations were never legally binding, and that proved a structural
 
 ## What came after
 
-The government's appetite for participatory deliberation shifted rather than disappeared. The Digital Affairs Ministry built **Join** (join.gov.tw), a government-run consultation platform that reached a broader, older, less tech-savvy public and ranged well beyond vTaiwan's digital-policy remit into areas like drunk-driving, sexual assault, and child abuse. In 2023 the ministry also partnered with the Collective Intelligence Project on **Alignment Assemblies**, a Pol.is-based process for public consultation on AI governance.[^demtech] vTaiwan itself continues as a volunteer-driven civic laboratory rather than an official channel, more recently experimenting with AI-assisted deliberation and feeding into processes like the National Human Rights Commission's 2025 consultation on a draft AI Basic Act.[^peoplepowered]
+The government's appetite for participatory deliberation shifted rather than disappeared. The Digital Affairs Ministry built **Join** (join.gov.tw), a government-run consultation platform that reached a broader, older, less tech-savvy public and ranged well beyond vTaiwan's digital-policy remit into areas like drunk-driving, sexual assault, and child abuse. In 2023 the ministry also partnered with the Collective Intelligence Project on **Alignment Assemblies**, a Pol.is-based process for public consultation on AI governance.[^demtech] vTaiwan itself continues as a volunteer-driven civic laboratory — fully decoupled from direct government support — run by five to seven active contributors. Since 2024 it has organised a series of "Social Issue Meetups": hybrid events combining deliberative discussion with digital tools (Pol.is, Mentimeter, AI-assisted analysis), averaging around 50 participants per event.[^peoplepowered] Recent topics include the Fraud Crime Hazard Prevention Act (December 2024) and a March 2025 consultation with the National Human Rights Commission on a draft AI Basic Act.[^peoplepowered]
 
 ## Links
 
