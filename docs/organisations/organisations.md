@@ -13,4 +13,4 @@ These are not affiliated or partner organisations. Individuals from some of thes
 
 ---
 
-**Download the data:** [CSV](/data/organisations.csv) · [JSON](/data/organisations.json) · [GeoJSON](/data/organisations.geojson) · [Org–concept edge list](/data/org-concepts.csv)
+**Download the data:** [CSV](/data/organisations.csv) · [JSON](/data/organisations.json) · [GeoJSON](/data/organisations.geojson) · [KML](/data/organisations.kml) · [Org–concept edge list](/data/org-concepts.csv)

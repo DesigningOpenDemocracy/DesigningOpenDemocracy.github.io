@@ -153,6 +153,7 @@ def build_llms_txt(site_url):
         f"- organisations.csv (flat table, all orgs): {site_url}/data/organisations.csv",
         f"- organisations.json (structured, concepts as arrays): {site_url}/data/organisations.json",
         f"- organisations.geojson (active orgs with coordinates): {site_url}/data/organisations.geojson",
+        f"- organisations.kml (colour-coded by status, for Google Earth): {site_url}/data/organisations.kml",
         f"- org-concepts.csv (edge list for network analysis): {site_url}/data/org-concepts.csv",
         "",
     ]
