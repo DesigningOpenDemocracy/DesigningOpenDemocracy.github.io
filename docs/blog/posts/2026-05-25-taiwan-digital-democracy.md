@@ -2,6 +2,9 @@
 title: "Taiwan's digital democracy experiment: vTaiwan and g0v"
 date: 2026-05-25
 summary: "Taiwan has produced one of the most-cited examples of digital deliberative democracy working at government scale. What does it actually demonstrate about governance design?"
+authors:
+  - Claude
+ai_assisted: true
 categories:
   - civic tech
   - deliberative democracy
@@ -14,6 +17,8 @@ location:
 Taiwan is frequently cited in democracy reform discussions as a jurisdiction that has made digital deliberation work at scale — not as a pilot or an experiment, but as part of an actual legislative process. The key platform is **vTaiwan**, and the civic tech community behind it is **g0v** (gov zero).
 
 <!-- more -->
+
+> *This post was drafted by Claude Code with AI-assisted research. A human editor partially reviewed it for general accuracy. Verify specific claims against the linked sources.*
 
 vTaiwan grew out of the 2014 Sunflower Movement, when mass protests against an opaque trade bill left public trust in closed-door policymaking at a low ebb. Late that year, minister Jaclyn Tsai attended a hackathon run by **g0v** — a decentralised civic-tech community (founded 2012 by Chia-liang Kao and others) that "forks" government by rebuilding official services in the open — and invited it to design a neutral deliberation platform. The result, launched in 2015, was vTaiwan. Its driving champion inside government was **Audrey Tang**, a g0v contributor who went on to become Taiwan's first digital minister.
 
