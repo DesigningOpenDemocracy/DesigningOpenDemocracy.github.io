@@ -2,7 +2,24 @@
 
 Read **CLAUDE.md** first for site conventions and curation standards.
 Read **util/SOUL.md** for script usage and the `last_checked` convention.
-Everything produced by a heartbeat run lands in a PR — never push direct to main.
+
+---
+
+## Setup requirements
+
+For a full run the agent needs:
+
+| Requirement | Used for |
+|---|---|
+| Git write access to `main` | Direct-push items (sync post, stamps, mechanical fixes) |
+| Outbound network access | `check_urls.py` (org website reachability), web search for world commentary |
+| Python deps installed | `pip install -r util/requirements.txt` |
+
+**Without network access:** skip step 2 (URL verification) and step 5 (commentary research). Run the maintenance scripts and produce a stats-only post. Note the limitation in the post.
+
+**Without write access to `main`:** fall back to opening a PR for everything.
+
+---
 
 ---
 
@@ -142,15 +159,18 @@ Include the `stats.py` before/after snapshot in the PR body.
 
 **Push direct to main** for:
 - AI-authored sync posts (`docs/blog/posts/YYYY-MM-sync.md`)
+- `last_checked` stamp updates (pure record-keeping after verification)
+- Mechanical lint fixes: country codes, Wayback URL corrections on inactive orgs,
+  broken internal links — changes where the correct value is unambiguous
 - Changes to this file (`HEARTBEAT.md`)
 - Changes to `docs/philosophy/soul.md`
 
-These are either your own outputs or documents that primarily govern you.
-Commit messages should still be clear about what changed and why.
+Commit messages are the audit trail for direct pushes — be specific about what
+changed and why.
 
-**Open a PR** for everything else — org pages, concept pages, philosophy/index.md,
-CLAUDE.md, site architecture, scripts, templates. These affect the human-curated
-record and warrant review before they land.
+**Open a PR** for everything else — org page content, concept pages,
+philosophy/index.md, CLAUDE.md, site architecture, scripts, templates.
+These affect the human-curated record and warrant review before they land.
 
 ## Scope
 
