@@ -20,6 +20,56 @@ The Landscape is a living reference, not a snapshot. Orgs close, URLs rot, conce
 
 ## Scripts
 
+### `add_org.py` — Scaffold a new org page
+
+Interactive CLI that prompts for all standard frontmatter fields and validates
+them inline: ISO country code, concept slugs against known list, Wayback URL
+convention for inactive/deregistered orgs, location prompt for active orgs.
+Writes `docs/organisations/<slug>.md` ready to fill in.
+
+```bash
+python util/add_org.py
+```
+
+No dependencies beyond stdlib.
+
+---
+
+### `find.py` — Full-text search
+
+Searches title, summary (frontmatter), and body across org and concept pages.
+Use before adding a new org to check for existing coverage, or to find pages
+that mention a topic without explicitly tagging it.
+
+```bash
+python util/find.py "participatory budgeting"
+python util/find.py "stafford beer" --concepts
+python util/find.py "liquid" --orgs --context 2
+```
+
+No dependencies beyond stdlib.
+
+---
+
+### `check_urls.py` — External URL reachability
+
+HTTP-checks the `website:` field on org pages. Active orgs with Wayback URLs
+(known exceptions) are skipped. Inactive orgs skipped by default. Reports
+OK, REDIRECT (with final URL), CLIENT_ERROR, SERVER_ERROR, TIMEOUT,
+SSL_ERROR, CONNECTION_ERROR.
+
+```bash
+python util/check_urls.py              # active orgs not checked in 365 days
+python util/check_urls.py --all        # ignore last_checked
+python util/check_urls.py --inactive   # also check inactive orgs
+python util/check_urls.py --timeout 15 --delay 1
+```
+
+Requires `requests` (`util/requirements.txt`). Slow — run periodically, not
+on every maintenance pass.
+
+---
+
 ### `stamp.py` — Set last_checked: today
 
 Updates `last_checked` in-place on one or more pages without reordering other keys. Use immediately after verifying a page.
@@ -163,7 +213,7 @@ python util/check_links.py --all       # all links
 
 ## Requirements
 
-`stamp.py` and `stats.py` use stdlib only. All other scripts use `python-frontmatter`, `python-dateutil` — both in `util/requirements.txt`.
+`add_org.py`, `find.py`, `stamp.py`, and `stats.py` use stdlib only. All other scripts use `python-frontmatter`, `python-dateutil`, and `requests` (for `check_urls.py`) — all in `util/requirements.txt`.
 
 ```bash
 pip install -r util/requirements.txt
