@@ -1,7 +1,7 @@
 ---
 title: "Taiwan's digital democracy experiment: vTaiwan and g0v"
 date: 2026-05-25
-summary: "Taiwan has produced one of the most-cited examples of digital deliberative democracy actually working at government scale. Here's what vTaiwan is, how it works, and what the rest of the world has taken from it."
+summary: "Taiwan has produced one of the most-cited examples of digital deliberative democracy working at government scale. What does it actually demonstrate about governance design?"
 categories:
   - civic tech
   - deliberative democracy
@@ -15,41 +15,16 @@ Taiwan is frequently cited in democracy reform discussions as a jurisdiction tha
 
 <!-- more -->
 
-## What is vTaiwan?
+vTaiwan runs structured public deliberations on contested policy questions using **Pol.is** — an opinion-mapping tool designed to surface consensus rather than amplify disagreement. Instead of open comment threads, participants vote on each other's statements and Pol.is clusters them visually, revealing where broad agreement exists across otherwise opposing groups. Outputs feed into the relevant ministry for decision. The platform was built collaboratively between Taiwan's digital ministry and g0v, a decentralised civic tech community that "forks" government: rebuilding official datasets and services in the open, run by volunteers without formal leadership.
 
-vTaiwan is an open consultation platform developed collaboratively by Taiwan's digital ministry and the g0v civic tech community. It was used to run structured public deliberations on contested policy questions — including the regulation of Uber, online alcohol sales, and fintech — with outputs fed into the relevant ministry for decision.
+## What it demonstrates about governance design
 
-The core tool is **Pol.is**, an opinion-mapping platform designed to surface consensus rather than amplify disagreement. Rather than open-ended comment threads (which tend to polarise and generate noise), Pol.is shows participants where clusters of agreement and disagreement exist across a large population. The visualisation makes it possible to see, at a glance, which positions command broad support and which are contested — including positions that cut across conventional political lines.
+This is not a template to copy wholesale. vTaiwan's usage has been uneven — applied to some policy areas and not others — and Taiwan's specific context (a young democracy with high civic tech literacy and a government willing to experiment) doesn't transfer automatically.
 
-A vTaiwan process typically runs through:
+What it does show:
 
-1. Written submissions from government, industry, and civil society
-2. An open Pol.is consultation — any citizen can participate
-3. Live-streamed open meetings where stakeholders and government discuss the results
-4. A consensus summary passed to the relevant ministry
+- **Consensus mapping works differently from polling or petitions.** Pol.is surfaces agreement that comment-based consultation misses — particularly positions that cut across conventional political lines.
+- **Civic tech communities can be genuine partners**, not just service providers, when government creates the conditions for it. g0v's ethos ("don't ask why nobody is doing this — you are nobody") produced tools that a procurement process wouldn't have.
+- **Radical transparency is a design choice.** Live-streaming meetings and publishing outputs verbatim changes what participants are willing to say and do in those spaces.
 
-## The Uber case
-
-The most-documented example is ride-sharing regulation. Uber's arrival in Taiwan was controversial: incumbent taxi operators objected; consumers and drivers had mixed views; existing transport law was ambiguous. Rather than deciding behind closed doors or running a simple public comment process, the government used vTaiwan to surface what people actually agreed on.
-
-The Pol.is results showed that most participants — across the pro-Uber and pro-taxi clusters — agreed on safety requirements, insurance obligations, and the principle that gig workers shouldn't be exploited. The areas of genuine disagreement were narrower than the noise suggested. The subsequent regulation drew on those consensus points.
-
-## g0v: the community behind the tools
-
-vTaiwan didn't emerge from government alone. It was co-built with **g0v**, a decentralised civic tech community that has been active since 2012. g0v's model is to "fork" government: rebuild official datasets, services, and information tools in the open, with better usability and transparency. The name is a pun — replacing the "o" in "gov" with "0" to create a parallel domain (`g0v.tw` versus `gov.tw`).
-
-g0v operates without formal leadership. Projects are proposed at regular hackathons and worked on by whoever finds them interesting. The ethos is captured in a phrase from their documentation: "don't ask why nobody is doing this — you are nobody."
-
-The collaboration between g0v volunteers and the digital ministry (under Audrey Tang, Taiwan's former digital minister and now a public figure in international digital governance discussions) produced vTaiwan and a broader culture of radical transparency in government — cabinet meetings live-streamed and published verbatim, among other things.
-
-## What to take from it
-
-vTaiwan is not a template to copy wholesale. Its usage has been uneven — applied to some policy areas and not others, with varying formal status in the legislative process. And Taiwan's specific political context (a young democracy with high civic tech literacy and a government willing to experiment) doesn't transfer automatically.
-
-What it demonstrates:
-
-- **Consensus mapping works differently from polling or petitions.** Pol.is's approach surfaces agreement that comment-based consultation misses.
-- **Civic tech communities can be genuine partners**, not just service providers, when government creates the conditions for it.
-- **Radical transparency is a design choice.** Live-streaming meetings and publishing outputs verbatim changes what participants are willing to say and do.
-
-Both [vTaiwan](../../organisations/vtaiwan.md) and [g0v](../../organisations/g0v.md) are now in the DOD Democracy Landscape.
+Both [vTaiwan](../../organisations/vtaiwan.md) and [g0v](../../organisations/g0v.md) are in the DOD Democracy Landscape.
