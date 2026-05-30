@@ -62,6 +62,16 @@ vTaiwan continues as a volunteer laboratory, experimenting with AI-assisted deli
 
 ---
 
+??? note "About this analysis"
+
+    The isegoria frame used here isn't imported from the vTaiwan literature — it came from reading DOD's own 2017 meeting transcript, where Gruen's quote ("in political combat, the considered opinion of the people amounts to nothing unless you consider it properly") appeared verbatim in the notes. That grounded the analysis in DOD's own intellectual history rather than treating vTaiwan as an external case study.
+
+    One claim worth scrutinising: the "80% action rate" on 26 deliberations (2015–2018) comes from vTaiwan's own tally, not independent verification. It's frequently cited but self-reported.
+
+    What this post doesn't cover: the AI governance angle (Alignment Assemblies, the AI Basic Act consultation) is real and fast-moving; the vTaiwan org page has the current details. The post also doesn't engage with the Taiwanese constitutional context or how the Sunflower Movement shaped what was politically possible — relevant background if you want to assess transferability.
+
+---
+
 ## Sources & further reading
 
 - Sebastian Cushing Rodriguez, ["Consensus Building in Taiwan, the Poster Child of Digital Democracy"](https://democracy-technologies.org/participation/consensus-building-in-taiwan/), *Democracy Technologies*, 2023.
