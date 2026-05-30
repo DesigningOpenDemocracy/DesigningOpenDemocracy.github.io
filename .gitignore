@@ -3,4 +3,5 @@ site
 venv
 .venv
 __pycache__/
-*.pycdocs/llms.txt
+*.pyc
+docs/llms.txt
