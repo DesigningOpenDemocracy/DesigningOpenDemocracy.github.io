@@ -73,10 +73,14 @@ Periodic maintenance sync posts may be AI-authored if they meet all of the follo
    > All statistics are derived from this wiki's own data. A human reviewed the
    > PR before merging.*
    ```
-3. Content is restricted to: landscape statistics from `util/stats.py`, orgs
-   verified this run, structural findings (links fixed, tags added), and the
-   maintenance queue status. No external claims, no political commentary, no
-   analysis beyond what the wiki's own pages say.
+3. Content is restricted to two sections (see `HEARTBEAT.md` for full structure):
+   - **Maintenance log:** landscape statistics, orgs verified, structural findings.
+     All claims sourced from the wiki's own data.
+   - **World commentary (optional):** 1–3 sourced observations on recent
+     democracy-related events (new assemblies, reforms, backsliding, policy
+     publications). Every factual claim must carry a linked source. DOD is
+     nonpartisan — no partisan political commentary, no unsourced claims. If
+     nothing notable happened, this section is omitted entirely.
 4. A human must review and merge the PR — the post is never pushed direct to main.
 
 ### Concept pages (`docs/concepts/`)

@@ -8,9 +8,14 @@ Everything produced by a heartbeat run lands in a PR — never push direct to ma
 
 ## Mission
 
-Keep the Democracy Landscape accurate and fresh: verify stale org pages,
-catch structural issues, tag gaps, and produce a brief AI-authored sync post
-for human review. One PR per run.
+Two things in one run:
+
+1. **Maintenance** — keep org data fresh, catch structural issues, close tag gaps.
+2. **Commentary** — a brief, sourced DOD-voice observation on the state of
+   democracy in the world, if anything notable happened this period.
+
+Both land in a single blog post and PR. The commentary section is optional —
+say nothing rather than force it.
 
 ---
 
@@ -23,7 +28,7 @@ python util/stats.py
 ```
 
 Note the counts, freshness distribution, and concept coverage. These numbers
-go directly into the sync post — capture them before making any changes.
+anchor the maintenance section of the post.
 
 ### 2. Work the staleness queue
 
@@ -46,8 +51,7 @@ Wayback URL per the CLAUDE.md convention.
 python util/suggest_tags.py <concept-slug>
 ```
 
-Run for any concepts added recently or with low org coverage. Add tags where
-the match is genuine — don't force it.
+Run for concepts with low org coverage. Add tags where the match is genuine.
 
 ### 4. Structural check
 
@@ -55,48 +59,82 @@ the match is genuine — don't force it.
 python util/pre_commit_check.py
 ```
 
-Fix any hard failures before writing the post. The 4 known lint exceptions
-(FLACSO-Cuba, Kongra Star, Memorial, NAMFREL) are expected — do not touch
-them. See util/SOUL.md for why.
+Fix any hard failures. The 4 known lint exceptions (FLACSO-Cuba, Kongra Star,
+Memorial, NAMFREL) are expected — do not touch them. See util/SOUL.md.
 
-### 5. Write the sync post
+### 5. Read the room (commentary research)
 
-Create `docs/blog/posts/YYYY-MM-sync.md`. See **AI-authored sync posts**
-in CLAUDE.md for the required frontmatter and disclaimer. Structure:
+Before writing: read `docs/philosophy/index.md` and `docs/philosophy/soul.md`
+to ground yourself in DOD's values and framing.
 
-1. One-paragraph explanation of what this post is and how it was generated
-2. Landscape snapshot (numbers from step 1)
-3. What was verified this run — org count, any status changes found
-4. Notable findings (broken links fixed, tag gaps closed, etc.)
-5. What's next — which orgs are oldest in the queue
+Then search for recent news (past 30–180 days depending on run cadence) on:
+- New citizens' assemblies or deliberative processes announced or concluded
+- Significant electoral system or constitutional reforms passed or proposed
+- Notable democratic backsliding (election suspended, assembly dissolved, press
+  freedom laws, etc.)
+- New participatory budgeting programs adopted at city or national scale
+- Major academic or policy publications directly relevant to the landscape
 
-Keep it short. This is a maintenance record, not an essay.
-Source every claim from the wiki's own data or org websites.
+**Threshold for inclusion:** something is worth commenting on only if it is
+genuinely notable from a governance-design perspective AND you can link a
+primary or reputable secondary source. If nothing clears that bar, skip the
+commentary section entirely — a short maintenance post is better than
+stretched commentary.
 
-### 6. Open the PR
+DOD is nonpartisan. Do not comment on which party won an election unless it
+has direct structural governance implications. Do not take sides on contested
+political questions. Reflect the philosophy page framing: governance design,
+legitimacy, participation, accountability — not ideology.
 
-```bash
-git add -p   # review what you're committing
-git commit
-git push
-# open PR titled: "Heartbeat sync — YYYY-MM"
+### 6. Write the sync post
+
+Create `docs/blog/posts/YYYY-MM-sync.md`. See **AI-authored sync posts** in
+CLAUDE.md for required frontmatter and disclaimer.
+
+**Structure:**
+
+```
+[Required disclaimer block]
+
+## Landscape update
+
+[2–3 sentences: current counts from stats.py, what was verified this run,
+any status changes or notable findings]
+
+## In the world  ← omit entirely if nothing notable
+
+[1–3 items, each with:
+ - A one-sentence statement of what happened
+ - A linked source (title, outlet, date)
+ - 1–2 sentences on why it's relevant to governance design / how it relates
+   to concepts or orgs in the landscape
+ - No opinion on whether it's good or bad unless DOD's philosophy gives
+   unambiguous ground to stand on]
+
+## What's next
+
+[One sentence on which section of the landscape is oldest in the queue]
 ```
 
-Include in the PR body: the `stats.py` snapshot before and after, and a
-summary of what changed.
+Keep each section short. This is a record and a signal, not an essay.
+
+### 7. Open the PR
+
+Commit all changes (org updates + blog post). Title: `Heartbeat sync — YYYY-MM`.
+Include the `stats.py` before/after snapshot in the PR body.
 
 ---
 
 ## Escalation — stop and flag in the PR if
 
-- An org's website has a permanent error and you cannot determine from other
-  sources whether the org is still operating
-- An org appears to have merged with or been renamed to another org already
-  in the landscape
-- A status change requires verification beyond what the org's own website shows
-- More than 20% of pages checked need status changes in a single run (unusual —
-  worth flagging before committing)
-- You find content that may require editorial judgment on inclusion/exclusion
+- An org's website has a permanent error and you can't determine if it's
+  still operating from other sources
+- An org appears to have merged with or been renamed to another in the landscape
+- A status change requires verification beyond what the org's own site shows
+- More than 20% of pages checked need status changes in a single run
+- A news item seems important but you're unsure whether DOD's philosophy
+  gives ground to comment — flag it for human editorial judgment rather than
+  guessing
 
 ---
 
@@ -106,5 +144,8 @@ summary of what changed.
 add concept tags, fix structural lint issues, write the sync post, open a PR.
 
 **Do not do:** merge the PR, change the curation standard, add or remove an
-org based solely on your own judgment without a sourced rationale in the PR,
-write blog posts about anything other than the maintenance run itself.
+org on your own judgment alone, comment on news items without a linked source,
+write commentary that takes a partisan political position.
+
+**When in doubt on commentary:** say nothing. A quiet period is an honest
+signal, not a failure.
