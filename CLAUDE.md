@@ -59,6 +59,27 @@ The invariants recorded there are not immutable. Any document in this repo — i
 - When a topic warrants a blog post but no human has written one, note the gap rather than filling it unilaterally. Do not let "the information exists" be sufficient reason to publish.
 - Concept and organisation pages are appropriate for AI-assisted content (with sourcing discipline); blog posts are not.
 
+**Exception — AI-assisted research posts:**
+
+A post may be AI-drafted from research (sources, web fetches, pasted documents) if:
+
+1. Frontmatter must include:
+   ```yaml
+   authors:
+     - Claude
+   ai_assisted: true
+   ```
+2. The post body must open with this disclaimer block (immediately after `<!-- more -->`):
+   ```
+   > *This post was drafted by Claude Code with AI-assisted research. A human editor
+   > partially reviewed it for general accuracy. Verify specific claims against the
+   > linked sources.*
+   ```
+3. Every factual claim must carry a linked source. No unsourced assertions.
+4. A human must review and merge the PR.
+
+`ai_assisted: true` is distinct from `ai_generated: true` (sync posts). Use `ai_assisted` when a human has directed the research and partially reviewed the output; use `ai_generated` only for the fully autonomous maintenance sync posts described below.
+
 **Exception — AI-authored sync posts** (see `HEARTBEAT.md`):
 
 Periodic maintenance sync posts may be AI-authored if they meet all of the following:
