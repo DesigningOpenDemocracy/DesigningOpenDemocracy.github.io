@@ -56,6 +56,7 @@ hooks:
   - hooks/org_template.py
   - hooks/graph_builder.py
   - hooks/llms_txt.py
+  - hooks/data_export.py
 
 not_in_nav: |
   llms.txt
