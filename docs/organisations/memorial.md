@@ -24,7 +24,7 @@ Memorial won the **Nobel Peace Prize in 2022** (jointly with Ukrainian and Belar
 ## Key people
 
 - **[Oleg Orlov](https://en.wikipedia.org/wiki/Oleg_Orlov)** — co-chair of Memorial's human rights centre and one of Russia's most prominent human rights defenders. Convicted in Russia in April 2024 and sentenced to two and a half years in prison for publicly calling the war in Ukraine a crime — a widely followed case in international human rights circles.
-- **[Natalia Estemirova](https://en.wikipedia.org/wiki/Natalia_Estemirova)** — Memorial researcher who spent years documenting human rights abuses in Chechnya. Murdered in July 2009; her killing became one of the most prominent cases of violence against Russian civil society workers.
+- **[Natalia Estemirova](https://en.wikipedia.org/wiki/Natalya_Estemirova)** — Memorial researcher who spent years documenting human rights abuses in Chechnya. Murdered in July 2009; her killing became one of the most prominent cases of violence against Russian civil society workers.
 
 ## Current status
 

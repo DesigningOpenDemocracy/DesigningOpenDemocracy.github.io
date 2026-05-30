@@ -28,7 +28,7 @@ newDemocracy's core argument is that the adversarial, partisan nature of represe
 ## Key people
 
 - **Luca Belgiorno-Nettis** — founder and principal funder of the newDemocracy Foundation. A Sydney-based infrastructure developer and philanthropist who became a significant advocate for deliberative democracy in Australia after growing disillusioned with conventional politics.[^newdem]
-- **Nicholas Gruen** — prominent economist and longstanding collaborator, who has presented to DOD on deliberative democracy and the concept of isegoria. One of newDemocracy's most visible intellectual contributors. [See 2017 presentation](../../blog/posts/2017-08-21-podcast.md)
+- **[Nicholas Gruen](https://en.wikipedia.org/wiki/Nicholas_Gruen)** — prominent economist and longstanding collaborator, who has presented to DOD on deliberative democracy and the concept of isegoria. One of newDemocracy's most visible intellectual contributors. [See 2017 presentation](../../blog/posts/2017-08-21-podcast.md)
 
 ## Links
 

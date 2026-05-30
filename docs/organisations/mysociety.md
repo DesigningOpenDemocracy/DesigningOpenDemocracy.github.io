@@ -32,7 +32,7 @@ The open-source Alaveteli software (powering WhatDoTheyKnow variants globally) i
 
 ## Key people
 
-- **Tom Steinberg** — founder (2003). Previously worked in No. 10 Downing Street and helped shape the digital government agenda in the UK before founding mySociety as a charity focused on civic technology. Under his direction it grew from a single project into the international platform it is today.[^mysociety]
+- **[Tom Steinberg](https://en.wikipedia.org/wiki/Tom_Steinberg)** — founder (2003). Previously worked in No. 10 Downing Street and helped shape the digital government agenda in the UK before founding mySociety as a charity focused on civic technology. Under his direction it grew from a single project into the international platform it is today.[^mysociety]
 
 ## Links
 
