@@ -10,3 +10,7 @@ These are not affiliated or partner organisations. Individuals from some of thes
 ---
 
 *To add an organisation, [open a pull request](https://github.com/DesigningOpenDemocracy/DesigningOpenDemocracy.github.io) or raise it in the [Telegram channel](https://t.me/joinchat/HNk_UBX8A7jBPJPbAZU5Zg).*
+
+---
+
+**Download the data:** [CSV](/data/organisations.csv) · [JSON](/data/organisations.json) · [GeoJSON](/data/organisations.geojson) · [Org–concept edge list](/data/org-concepts.csv)

@@ -146,6 +146,15 @@ def build_llms_txt(site_url):
         f"- About / philosophy: {site_url}/about/",
         f"- DOD's own projects (wiki, tools, research): {site_url}/community/",
         "",
+        "## Data downloads",
+        "",
+        "Org data is exported at build time in multiple formats:",
+        "",
+        f"- organisations.csv (flat table, all orgs): {site_url}/data/organisations.csv",
+        f"- organisations.json (structured, concepts as arrays): {site_url}/data/organisations.json",
+        f"- organisations.geojson (active orgs with coordinates): {site_url}/data/organisations.geojson",
+        f"- org-concepts.csv (edge list for network analysis): {site_url}/data/org-concepts.csv",
+        "",
     ]
 
     return "\n".join(lines)
