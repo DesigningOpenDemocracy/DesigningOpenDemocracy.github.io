@@ -22,6 +22,10 @@ The institute publishes research, convenes practitioners and theorists, and deve
 
 DemocracyNext is a useful reference for understanding the strongest case for sortition as a primary governance mechanism, as distinct from its use as a supplementary or advisory tool.
 
+## Key people
+
+- **Claudia Chwalisz** — founder. Previously led the OECD's work on innovative citizen participation, building the international evidence base for deliberative processes in public governance before founding DemocracyNext in 2022 to develop the full institutional case for sortition-based democracy.[^demnext]
+
 ## Links
 
 - Website: [demnext.org](https://www.demnext.org)
@@ -32,3 +36,5 @@ DemocracyNext is a useful reference for understanding the strongest case for sor
 - [Sortition](../concepts/sortition.md)
 - [Isegoria](../concepts/isegoria.md)
 - [newDemocracy Foundation](newdemocracy.md)
+
+[^demnext]: DemocracyNext, [About](https://www.demnext.org/about).

@@ -4,6 +4,7 @@ type: platform
 status: active
 country: US
 website: https://pol.is
+last_checked: "2026-05-30"
 summary: "An open-source consensus mapping platform used in large-scale public deliberations — participants rate statements rather than debating, and machine learning surfaces the points of genuine agreement across thousands of respondents."
 location:
   latitude: 47.6062
@@ -33,6 +34,10 @@ Machine learning clusters participants by their response patterns, then surfaces
 ## Open source
 
 Pol.is is fully open source (GitHub: [compdemocracy/polis](https://github.com/compdemocracy/polis)), meaning it can be self-hosted by any government or organisation. This distinguishes it from proprietary consultation platforms and makes it a genuine civic commons tool.
+
+## Key people
+
+- **Colin Megill, Christopher Small, Michael Bjorkegren** — co-founders, built Pol.is in Seattle around 2012 after the Occupy Wall Street and Arab Spring movements as an attempt to create civic infrastructure for large-scale public disagreement. See [Pol.is on Wikipedia](https://en.wikipedia.org/wiki/Pol.is) for further background.
 
 ## Relation to DOD interests
 

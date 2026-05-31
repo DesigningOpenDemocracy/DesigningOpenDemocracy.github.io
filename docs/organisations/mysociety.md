@@ -30,6 +30,10 @@ mySociety also conducts research on democratic participation, civic technology e
 
 The open-source Alaveteli software (powering WhatDoTheyKnow variants globally) is one of the most widely deployed civic transparency tools in the world.
 
+## Key people
+
+- **[Tom Steinberg](https://en.wikipedia.org/wiki/Tom_Steinberg)** — founder (2003). Previously worked in No. 10 Downing Street and helped shape the digital government agenda in the UK before founding mySociety as a charity focused on civic technology. Under his direction it grew from a single project into the international platform it is today.[^mysociety]
+
 ## Links
 
 - Website: [mysociety.org](https://www.mysociety.org)
@@ -46,3 +50,5 @@ The open-source Alaveteli software (powering WhatDoTheyKnow variants globally) i
 - [DemocracyLab](democracylab.md)
 - [Open Australia Foundation](open-australia-foundation.md)
 - [Liquid Democracy e.V.](liquid-democracy-ev.md)
+
+[^mysociety]: mySociety, [About](https://www.mysociety.org/about/).

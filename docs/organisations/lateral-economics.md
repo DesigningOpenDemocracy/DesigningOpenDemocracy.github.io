@@ -23,6 +23,10 @@ Gruen's democracy-relevant argument (developed extensively in talks, articles, a
 
 He has advocated for a philanthropically funded standing citizens' jury that would shadow parliament — operating without formal power initially, but providing an evidence base for the model.
 
+## Key people
+
+- **[Nicholas Gruen](https://en.wikipedia.org/wiki/Nicholas_Gruen)** — founder and principal. Australian economist, commentator, and one of the most consistent Australian voices for sortition and citizens' juries as mechanisms for improving democratic deliberation. Has presented to DOD multiple times. [2020 DOD episode](../../blog/posts/2020-03-20.md)
+
 ## Links
 
 - Website: [lateraleconomics.com.au](https://lateraleconomics.com.au)

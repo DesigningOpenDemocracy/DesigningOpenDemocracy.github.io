@@ -22,6 +22,10 @@ The software supports threaded discussions, proposals, polls, ranked choices, an
 
 Loomio is widely used by cooperatives, local councils, NGOs, and community organisations across New Zealand, Australia, and internationally.
 
+## Key people
+
+- **Richard D. Bartlett and Ben Knight** — co-founders (2012), growing out of the Enspiral network of social enterprises and the Occupy movement's need for better collective decision-making tools. Bartlett went on to write and speak widely on self-organising, sociocracy, and open-source governance.[^loomio-wiki]
+
 ## Links
 
 - Website: [loomio.com](https://www.loomio.com)
@@ -34,3 +38,5 @@ Loomio is widely used by cooperatives, local councils, NGOs, and community organ
 - [Cooperative](../concepts/cooperative.md)
 - [Consensus Mapping](../concepts/consensus-mapping.md)
 - [Worker Cooperatives](../concepts/worker-cooperatives.md)
+
+[^loomio-wiki]: Wikipedia, [Loomio](https://en.wikipedia.org/wiki/Loomio).

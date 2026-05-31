@@ -25,6 +25,11 @@ The foundation is non-partisan and works across government, community, and insti
 
 newDemocracy's core argument is that the adversarial, partisan nature of representative democracy produces poor decisions on long-term or complex issues, and that randomly selected citizens' assemblies and juries consistently outperform what elected bodies produce when given the same brief. Their work is empirical — they run trials, document outcomes, and publish findings.
 
+## Key people
+
+- **Luca Belgiorno-Nettis** — founder and principal funder of the newDemocracy Foundation. A Sydney-based infrastructure developer and philanthropist who became a significant advocate for deliberative democracy in Australia after growing disillusioned with conventional politics.[^newdem]
+- **[Nicholas Gruen](https://en.wikipedia.org/wiki/Nicholas_Gruen)** — prominent economist and longstanding collaborator, who has presented to DOD on deliberative democracy and the concept of isegoria. One of newDemocracy's most visible intellectual contributors. [See 2017 presentation](../../blog/posts/2017-08-21-podcast.md)
+
 ## Links
 
 - Website: [newdemocracy.com.au](https://www.newdemocracy.com.au)
@@ -40,3 +45,5 @@ newDemocracy's core argument is that the adversarial, partisan nature of represe
 - [G1000](g1000.md)
 - [MASS LBP](mass-lbp.md)
 - [DemocracyNext](democracy-next.md)
+
+[^newdem]: newDemocracy Foundation, [About](https://www.newdemocracy.com.au/about/).
