@@ -45,3 +45,4 @@ McMullen also co-founded the **Co-op Incubator** (incubator.coop) in 2017, an on
 - [Economic Democracy](../concepts/economic-democracy.md)
 - [Co-operative Bonds](cooperative-bonds.md)
 - [Basil's Table: Banking On The Future In A Climate Of Change](../../blog/posts/2020-02-20-podcast.md) — DOD podcast with 888 Co-operative Causeway, 2020
+- [Basil's Table: Building Co-operative Futures in the Tech Bros Era](../../blog/posts/2023-01-21-podcast.md) — the final Basil's Table panel, December 2022: cooperative futures, the billionaire problem, AI vs collective intelligence
