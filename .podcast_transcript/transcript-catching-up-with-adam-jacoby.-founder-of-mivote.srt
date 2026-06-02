@@ -1,0 +1,1247 @@
+1
+00:00:00,980 --> 00:00:03,440
+Hey, Adam, how are you doing today?
+
+2
+00:00:03,440 --> 00:00:06,100
+I'm well, thanks for having me.
+
+3
+00:00:06,100 --> 00:00:06,840
+That's good.
+
+4
+00:00:06,840 --> 00:00:09,340
+So how have you been?
+
+5
+00:00:09,340 --> 00:00:13,800
+If I recall, a few years ago, you were working on this project called MiVote.
+
+6
+00:00:13,800 --> 00:00:19,280
+For those who are not familiar, can you do a recap about what MiVote is?
+
+7
+00:00:19,700 --> 00:00:26,600
+MiVote is a new model of democracy effectively.
+
+8
+00:00:26,600 --> 00:00:34,240
+It started from an examination of the philosophical ideas of what democracy was meant to deliver.
+
+9
+00:00:34,240 --> 00:00:44,900
+It then worked through the erosion points that we've endured over time, and then looked at the interventions that could be made to create a purer version of democracy.
+
+10
+00:00:44,900 --> 00:01:18,500
+And then it spun itself into a technical solution that enables governments, candidates, individual citizens to engage in a genuine conversation that forms policy and sort of takes a frame of reference that the equality of the democracy is not determined by an election, but rather it's determined by the way citizens outline and then decide what policy decisions should be made by their government.
+
+11
+00:01:18,500 --> 00:01:19,660
+Thanks for the quick rundown.
+
+12
+00:01:19,920 --> 00:01:26,940
+I think it's also important for me to also talk a bit about designing Open Democracy and its history with MiVote.
+
+13
+00:01:26,940 --> 00:01:34,120
+The idea behind designing Open Democracy is that it's about bringing people together who are trying to innovate in democracies.
+
+14
+00:01:34,420 --> 00:01:43,920
+And back then, one of our first gathering in VOTE bring members to your office where you explained about what MiVote is.
+
+15
+00:01:43,920 --> 00:01:52,920
+So definitely, I would like to know a bit more about your role in this organization as well, as part of MiVote.
+
+16
+00:01:52,920 --> 00:01:55,440
+Yeah, so I'm the founder of MiVote.
+
+17
+00:01:57,760 --> 00:02:01,920
+I guess I would describe myself as a democracy activist.
+
+18
+00:02:03,220 --> 00:02:13,120
+I've been fortunate to be able to talk about the new versions and genuine versions of democracy on four continents with governments all over the world.
+
+19
+00:02:13,120 --> 00:02:22,120
+I was able to talk about it at Davos, at Stanford, March for Our lives, all over the place.
+
+20
+00:02:22,440 --> 00:02:24,500
+We started a movement here in Melbourne.
+
+21
+00:02:24,500 --> 00:02:30,840
+What became clear quickly was that there was international scope for what we were doing.
+
+22
+00:02:31,680 --> 00:02:41,520
+That was really a lesson that we learned at the Singularity University Grand Global Challenge Awards, where we were finalists in their first ever Grand Global Challenge Awards.
+
+23
+00:02:41,520 --> 00:02:59,560
+But when we presented and we were talking about a local idea in Melbourne for Australia, not really thinking that anybody else in the world would be interested and we got off the stage and literally were just inundated by nations who wanted to see if they could use our technology and start a chapter in their part of the world.
+
+24
+00:02:59,960 --> 00:03:07,720
+I think we probably in hindsight grew faster than we should have and tried to do more than we should have with the resource that we had.
+
+25
+00:03:07,720 --> 00:03:12,880
+But quickly we then had some fairly substantial philanthropic support because we were not for profit.
+
+26
+00:03:12,880 --> 00:03:14,800
+I see that's quite interesting.
+
+27
+00:03:14,800 --> 00:03:23,740
+So can you elaborate further on this journey by MiVote as well as the success and the pains that you encountered along the way?
+
+28
+00:03:23,740 --> 00:03:27,780
+I've also heard that you're also branched along to India and UK as well.
+
+29
+00:03:28,480 --> 00:03:30,880
+How did this all start it?
+
+30
+00:03:30,880 --> 00:03:41,840
+If you're going right back to the very, very beginning, I had started thinking about this problem in my last startup business.
+
+31
+00:03:41,840 --> 00:03:44,680
+So I had several startup businesses.
+
+32
+00:03:44,680 --> 00:03:49,220
+I was at the point where actually none of them were particularly exciting for me anymore.
+
+33
+00:03:49,220 --> 00:03:53,840
+I was really becoming increasingly more concerned and aware and engaged with the democracy question.
+
+34
+00:03:55,400 --> 00:04:03,600
+I made the decision that I was going to leave that business and take some time off, and I wanted to focus thinking about democracy.
+
+35
+00:04:03,600 --> 00:04:29,820
+So I started interviewing people and talking to religious leaders and political leaders and business leaders and average everyday citizens, first here in Australia and then around the world where I had contacts, just to see whether or not the things that I was identifying as erosion points to democracy were unique to Australia or if they were kind of a more global problem.
+
+36
+00:04:29,820 --> 00:04:36,320
+At that point, I, by coincidence, met for the first time my co-founder of MiVote.
+
+37
+00:04:36,320 --> 00:04:44,720
+So we were both at a Cambridge alumni event in Melbourne and as coincidence would have it, I wasn't actually intending to go there because I'm pretty antisocial in general.
+
+38
+00:04:44,720 --> 00:04:47,700
+I like to be private and kind of keep to myself.
+
+39
+00:04:47,700 --> 00:04:53,100
+And I was in a meeting around the corner from where that Cambridge event was meant to take place.
+
+40
+00:04:53,100 --> 00:04:57,300
+And I got a text reminder that said, oh, you know, the thing's on in 15 minutes.
+
+41
+00:04:57,300 --> 00:04:59,140
+And I thought, oh, fuck, look, I'm here.
+
+42
+00:04:59,140 --> 00:05:01,060
+It's literally around the corner.
+
+43
+00:05:01,060 --> 00:05:04,120
+Maybe I'll just stick my head in and see what's going on.
+
+44
+00:05:04,120 --> 00:05:14,380
+So I walked around the corner and everybody there was about 75 years old, except for one other guy who it turns out was Hamish hughes, my co-founder at MiVote.
+
+45
+00:05:14,380 --> 00:05:18,940
+And so we spoke to each other primarily because we were the only people of the same age.
+
+46
+00:05:18,940 --> 00:05:27,720
+And very, very quickly, we learned that we had the same interest and passion for politics and democracy and the way the system worked and leadership.
+
+47
+00:05:27,720 --> 00:05:30,900
+And then we decided that we would build this thing together.
+
+48
+00:05:30,900 --> 00:05:36,320
+From there, it became a whole lot of just very grassroots conversations.
+
+49
+00:05:36,320 --> 00:05:41,260
+So I had said to my wife, I want to hire a couple of cafes in Melbourne.
+
+50
+00:05:41,260 --> 00:05:44,320
+So my office at that point was in South Melbourne.
+
+51
+00:05:44,320 --> 00:05:48,620
+It was a very famous coffee shop around the corner, and I was friend of the owner.
+
+52
+00:05:48,620 --> 00:05:58,020
+I said to him, look, do you mind if before you open the mornings, I open it up for half an hour and just go on social media and invite people to come and have this conversation.
+
+53
+00:05:58,020 --> 00:06:04,380
+And so I had a few morning coffee sessions where I'd pay for everybody's coffee and they could come in and we could talk about democracy.
+
+54
+00:06:04,380 --> 00:06:09,600
+And I was sort of at that point, there was no master plan, MiVote wasn't a brand yet.
+
+55
+00:06:09,800 --> 00:06:11,880
+I didn't have a solution.
+
+56
+00:06:11,880 --> 00:06:29,100
+What I had done was just recognized that there was some significant erosions to democracy, that I thought that there were interventions for and I wanted to see whether or not I was the only person who was interested in these conversations, or whether or not Hamish and I were kind of sitting on an island on our own.
+
+57
+00:06:29,100 --> 00:06:33,540
+It turned out pretty quickly, you know, I think the first one we did, we had five or six people turned up.
+
+58
+00:06:33,540 --> 00:06:37,580
+A couple of weeks later, we had 20 people, and a couple of weeks after that, we had 50 people.
+
+59
+00:06:37,920 --> 00:06:40,900
+And then we started to think, you know what, we might have something here.
+
+60
+00:06:40,900 --> 00:06:43,540
+There might be something to this.
+
+61
+00:06:43,540 --> 00:06:49,860
+Shortly thereafter, a lot of those people became volunteers to start building what would become MiVote.
+
+62
+00:06:49,860 --> 00:06:52,480
+So at that time, it wasn't called MiVote.
+
+63
+00:06:52,480 --> 00:06:55,060
+It was originally called Frame Democracy.
+
+64
+00:06:56,100 --> 00:07:01,460
+And then after Frame Democracy, it became OB4, which was of the people, by the people, for the people.
+
+65
+00:07:01,460 --> 00:07:12,580
+And then about a year after that, it became MiVote as a brand and as a not-for-profit registered, and you know, it was taking donations and actually building products.
+
+66
+00:07:12,580 --> 00:07:16,840
+In terms of MiVote, what is the general structure of this group?
+
+67
+00:07:16,840 --> 00:07:18,200
+How will it work?
+
+68
+00:07:18,200 --> 00:07:29,760
+I remembered a while ago when you presented in our discussion group, you showed us a visual diagram about how MiVote is intended to operate.
+
+69
+00:07:29,760 --> 00:07:33,940
+Yeah, I won't go into all the intricacies because it will take the entire hour that we have.
+
+70
+00:07:34,640 --> 00:07:52,940
+But in essence, what we do is we provide an opportunity for representatives to engage with their citizenry on policy issues, because ultimately democracy is about enacting the will of the people, and you can't enact the people's will if you don't ask the people what they want.
+
+71
+00:07:52,940 --> 00:07:53,820
+It's not possible.
+
+72
+00:07:53,820 --> 00:08:01,920
+So if that's the starting premise that says, for me to represent you well, I need to actually know what you want.
+
+73
+00:08:01,920 --> 00:08:07,540
+What are the tools that we can provide candidates and parties to have that conversation?
+
+74
+00:08:07,540 --> 00:08:22,180
+Not around elections, not around how can I buy your support, but rather when it comes to climate change, or when it comes to tax reform, or when it comes to domestic violence, or when it comes to putting a fucking tram stop in, what do you want?
+
+75
+00:08:22,180 --> 00:08:26,240
+What do my constituents want from me, so that I can actually enact your will?
+
+76
+00:08:26,240 --> 00:08:34,059
+So if you start from that point, which is what we did, you then start to realize that there are influences on being able to do that.
+
+77
+00:08:34,059 --> 00:08:41,200
+So it's one thing to go out and ask the constituency, then you have to realize that people can buy their way into those outcomes.
+
+78
+00:08:41,200 --> 00:08:45,160
+So then the influence of money in politics becomes a conversation.
+
+79
+00:08:45,160 --> 00:08:48,020
+Then the tenure of politicians becomes a conversation.
+
+80
+00:08:48,420 --> 00:08:57,720
+Then how do you make sure people have an informed voice and an informed vote, rather than they're just voting on the color that they normally vote for, a person that looks nicer to them.
+
+81
+00:08:57,720 --> 00:09:00,200
+But they actually understand the ramifications of all that.
+
+82
+00:09:00,200 --> 00:09:04,200
+So anyway, we designed a system that caters for all of that.
+
+83
+00:09:04,200 --> 00:09:09,080
+The structure of the organization in its early days was fairly kind of fluid.
+
+84
+00:09:09,080 --> 00:09:13,540
+There was no, it wasn't particularly hierarchical because there was no need for hierarchy.
+
+85
+00:09:13,540 --> 00:09:16,260
+And in fact, I would say that it's not really hierarchical today, to be honest.
+
+86
+00:09:17,320 --> 00:09:23,860
+The mistakes that we made were we were probably too open about how everything worked.
+
+87
+00:09:23,860 --> 00:09:33,040
+And so because we wanted everybody to feel a sense of ownership all the time, it made it very difficult to make decisions because everybody had an opinion and everybody wanted to be heard all the time.
+
+88
+00:09:33,040 --> 00:09:36,260
+So what is this difficulty you're referring to?
+
+89
+00:09:36,260 --> 00:09:38,920
+After all, it's been a few years since we caught up.
+
+90
+00:09:38,920 --> 00:09:43,220
+It's clear you've been trying to open this model up to UK and India as well.
+
+91
+00:09:43,600 --> 00:09:46,320
+So can you elaborate more on this?
+
+92
+00:09:46,960 --> 00:09:48,920
+I've spoken about it publicly several times.
+
+93
+00:09:48,920 --> 00:09:49,740
+It's not a secret.
+
+94
+00:09:49,960 --> 00:09:52,780
+We decided to spin out the technology company.
+
+95
+00:09:52,780 --> 00:09:56,920
+So we had originally built the first technology platform in-house.
+
+96
+00:09:56,920 --> 00:10:06,020
+So in particular, Jamie Skeller worked on building and architecting the first blockchain voting platform in the world, which MiVote created.
+
+97
+00:10:07,000 --> 00:10:08,680
+And so we tested it.
+
+98
+00:10:09,660 --> 00:10:11,100
+We trialed it in Australia.
+
+99
+00:10:11,100 --> 00:10:12,760
+We had six votes.
+
+100
+00:10:12,760 --> 00:10:18,120
+We didn't spend a lot of money to promote them, but by the last vote, we were having four or five thousand people voting on it.
+
+101
+00:10:18,120 --> 00:10:19,440
+And they were on policy issues.
+
+102
+00:10:19,440 --> 00:10:22,420
+And the way that we do it is we offer four different choices.
+
+103
+00:10:22,420 --> 00:10:24,800
+They're not aligned to political party positions.
+
+104
+00:10:24,800 --> 00:10:33,260
+We take what's called a destinational approach, which means that we ask questions kind of at a higher order than, you know, do you want this piece of legislation or not?
+
+105
+00:10:33,360 --> 00:10:37,800
+We're kind of sort of talking about which path would you like your government to take?
+
+106
+00:10:37,800 --> 00:10:42,100
+We provided information packs for each of the four choices for all of those votes.
+
+107
+00:10:42,100 --> 00:11:05,600
+And what we argued, our contention at the beginning, was that if you offer people multiple choices rather than just the binary, Labour, Liberal, Left, Right, Democrats, Republicans, and you give them four different opportunities, you don't align them to party, you provide them information to understand why all of them, those options, are legitimate and what it means to vote for one of those options.
+
+108
+00:11:05,600 --> 00:11:15,360
+And then, you don't say to them you can only choose one, you say you can choose as many or as few as you think are in the best interests of your country.
+
+109
+00:11:15,360 --> 00:11:18,440
+Our argument was, what you'll find is consensus.
+
+110
+00:11:18,440 --> 00:11:22,580
+You'll be able to build consensus in a highly binary tribal environment.
+
+111
+00:11:22,580 --> 00:11:28,400
+And everybody that we spoke to said it wasn't possible to do it, and you could never get any significant percentages of support.
+
+112
+00:11:28,900 --> 00:11:41,580
+We contended in the MiVote model that our constitution requires, that no vote can become policy unless there's 60% voter approval for a particular direction.
+
+113
+00:11:41,580 --> 00:11:43,240
+And everybody said it wasn't possible to do it.
+
+114
+00:11:43,240 --> 00:11:44,780
+We ran five or six votes.
+
+115
+00:11:44,780 --> 00:11:46,680
+We never, ever had less than 60%.
+
+116
+00:11:46,920 --> 00:11:50,780
+Every vote we ever ran got to a 60% consensus.
+
+117
+00:11:50,780 --> 00:11:59,560
+And so what we then did was wanted to build a robust technology platform that would allow us to grow significantly.
+
+118
+00:11:59,560 --> 00:12:11,040
+The mistake that we made that you've asked about was we decided at that point that to build that platform meant MiVote, the political movement would have to become a technology company.
+
+119
+00:12:11,040 --> 00:12:13,940
+And the board decided we didn't want to do that.
+
+120
+00:12:13,940 --> 00:12:20,900
+So at that point, we decided to spin out the technology company, which everybody now knows as Horizon State.
+
+121
+00:12:20,900 --> 00:12:27,280
+We handpicked the three people, one of which was Jamie Skeller, to go and run that technology business.
+
+122
+00:12:27,280 --> 00:12:29,060
+We didn't own any of it, not 1%.
+
+123
+00:12:29,860 --> 00:12:30,980
+We didn't sit on the board.
+
+124
+00:12:30,980 --> 00:12:32,800
+We didn't have a say in how we operate.
+
+125
+00:12:32,800 --> 00:12:39,260
+However, we did have an agreement that said, we would have to be the primary clients.
+
+126
+00:12:39,260 --> 00:12:44,680
+So they always had to build for us first, and then for whoever came afterwards.
+
+127
+00:12:44,680 --> 00:12:58,080
+And a percentage of whatever revenue they earned from the IP that we gave them and the technology that we provided from our first votes had to come back to us as a donation so that we could continue to grow.
+
+128
+00:12:58,080 --> 00:13:03,160
+They could go out and monetise into the corporate market, into the sports industry, do whatever they want.
+
+129
+00:13:03,160 --> 00:13:08,040
+As it turned out, it was the single worst commercial decision I've ever made in my life.
+
+130
+00:13:08,040 --> 00:13:13,520
+So we ended up in a position where they didn't do any of the things that they promised us.
+
+131
+00:13:13,520 --> 00:13:17,280
+We had very little recourse because we didn't own shares and we weren't on the board.
+
+132
+00:13:17,280 --> 00:13:27,060
+So we couldn't change what they were doing, but what they were doing ultimately cost MiVote probably five years and hundreds of thousands of dollars in making that mistake.
+
+133
+00:13:27,060 --> 00:13:37,940
+And where we are now, last four several years, is we have now rebuilt MiVote and included a separate area, which is MiVote technologies.
+
+134
+00:13:37,940 --> 00:13:41,640
+So rather than spitting it out, we're now building it in-house again.
+
+135
+00:13:41,640 --> 00:13:43,100
+So it's now integrated?
+
+136
+00:13:43,100 --> 00:13:47,960
+Yeah, but unlike last time where it was a not-for-profit, MiVote technologies is for-profit.
+
+137
+00:13:48,540 --> 00:13:56,500
+MiVote, the movement, is not-for-profit, so it remains not-for-profit, but they are effectively part of the same umbrella.
+
+138
+00:13:56,520 --> 00:14:00,560
+And the whole thing is housed in the United Kingdom, where it's being built.
+
+139
+00:14:00,560 --> 00:14:02,860
+It's being built in the UK and in England.
+
+140
+00:14:02,860 --> 00:14:05,700
+We're part of the PEG program out of the UK government.
+
+141
+00:14:05,700 --> 00:14:13,020
+I don't know if you've heard of it, but we're the first not-for-profit ever to be invited into a place in the PEG program out of the Department of Prime Minister and Cabinet.
+
+142
+00:14:13,540 --> 00:14:26,380
+And that PEG program invests in international technologies that they see benefit for the UK, and they incentivise them to domicile in the United Kingdom, which is what we do.
+
+143
+00:14:26,380 --> 00:14:28,980
+Can you elaborate what is PEG?
+
+144
+00:14:30,120 --> 00:14:32,080
+Like, is that Prime Minister?
+
+145
+00:14:32,080 --> 00:14:34,980
+No, it's the Entrepreneurs Program out of the UK government.
+
+146
+00:14:34,980 --> 00:14:39,000
+It's run out of Department of Prime Minister and Cabinet out of the Innovation Council.
+
+147
+00:14:39,000 --> 00:14:46,620
+And what they try and do is incentivise technologies from other countries to move their headquarters to London.
+
+148
+00:14:46,620 --> 00:14:48,780
+And they give them a whole lot of incentives to do that.
+
+149
+00:14:48,780 --> 00:14:49,660
+So we did that.
+
+150
+00:14:49,660 --> 00:14:51,140
+We moved to London.
+
+151
+00:14:51,140 --> 00:15:00,480
+And Joydeep Mondal, who you might know, Joydeep used to run our Indian office, is now the CEO of MiVote globally, and he runs MiVote Technology.
+
+152
+00:15:00,480 --> 00:15:04,160
+Is there anything that this whole experience has taught you?
+
+153
+00:15:04,160 --> 00:15:13,600
+After all, this is 2021 and has been quite an interesting experience for everyone last year as well as this year.
+
+154
+00:15:13,600 --> 00:15:30,520
+As you can tell, this has been an online interview, even though we planned making this an in-person interview, due to the ongoing lockdown here in Australia as part of the ongoing worldwide pandemic.
+
+155
+00:15:30,520 --> 00:15:34,840
+So, I imagine this got in you a little bit more introspective.
+
+156
+00:15:34,840 --> 00:15:41,060
+Has the pandemic influenced your thought on the direction that MiVote should head towards?
+
+157
+00:15:41,060 --> 00:15:42,720
+I don't think it's the pandemic, actually, Brian.
+
+158
+00:15:43,040 --> 00:15:50,680
+I think for us Trump's reign was probably the tipping point for us, to be honest.
+
+159
+00:15:50,680 --> 00:15:54,580
+Because up until that point, we had been talking all over the world.
+
+160
+00:15:54,580 --> 00:15:58,060
+I think I've been in 100 media interviews on four continents.
+
+161
+00:15:58,060 --> 00:16:05,800
+And I kept saying, we're edging closer and closer to something that looks like fascism, because people have forgotten what democracy actually means.
+
+162
+00:16:06,360 --> 00:16:10,540
+And we're measuring the quality of our democracy by the wrong metrics.
+
+163
+00:16:11,860 --> 00:16:14,700
+And everybody thought I was fucking crazy, right?
+
+164
+00:16:14,700 --> 00:16:16,080
+And it was all hyperbole.
+
+165
+00:16:16,080 --> 00:16:26,620
+But then all of a sudden, Trump comes along and a whole lot of critical conventions about the relationship between the governing and the governed started to be peeled away.
+
+166
+00:16:26,620 --> 00:16:35,200
+And a whole lot of people around the world started going, hey, maybe he's not quite so crazy, because it seems like the things he was saying might be happening here in the US.
+
+167
+00:16:35,940 --> 00:16:46,960
+And so Trump was the biggest gift to MiVote ever, because a lot of people that were on the fence about whether or not they talked to us came back and started saying, yeah, actually, you know what?
+
+168
+00:16:46,960 --> 00:16:53,100
+Let's talk about how to make democracy better and stronger and more vibrant and more accountable and more transparent.
+
+169
+00:16:53,100 --> 00:17:01,620
+And so now, what I can tell you is that MiVote out of the UK is running a series of tests on its new technology.
+
+170
+00:17:01,620 --> 00:17:03,020
+So the technology is built.
+
+171
+00:17:03,020 --> 00:17:04,140
+We're testing at the moment.
+
+172
+00:17:04,640 --> 00:17:06,800
+We'll make an announcement in the not too distant future.
+
+173
+00:17:06,800 --> 00:17:23,960
+I'm not allowed to say the name yet, but the contract is signed with a member of Federal Parliament in Australia who will be testing and running a series of votes in Australia, in his electorate, over the next six months, as a test and a trial to actually go out to the people and ask them about policy.
+
+174
+00:17:23,960 --> 00:17:25,780
+But that's one of the ends of the limit.
+
+175
+00:17:25,780 --> 00:17:28,800
+We're doing the same exact thing with the EU.
+
+176
+00:17:28,800 --> 00:17:31,240
+We're doing it with some union movements across Europe.
+
+177
+00:17:31,720 --> 00:17:35,800
+We're doing it with candidates in India.
+
+178
+00:17:35,800 --> 00:17:38,560
+So we're running a series of trials now.
+
+179
+00:17:38,560 --> 00:17:46,060
+Those trials will lead us to an IEO, where we're going to offer the product to the market, probably in about six months' time.
+
+180
+00:17:46,340 --> 00:17:53,560
+And then we'll be open to actually start having a significant effect on government thereafter.
+
+181
+00:17:53,560 --> 00:17:54,760
+But it's been a long road.
+
+182
+00:17:54,760 --> 00:17:56,360
+It's been nearly a decade.
+
+183
+00:17:57,400 --> 00:18:01,420
+In terms of the lessons, there's a tonne of lessons, mate.
+
+184
+00:18:01,420 --> 00:18:18,200
+You know, walking before you can run, trialling the product at times, having an integrated approach to the relationship between the technology and the charity that works, having people that you can trust who run parts of the business, the movement.
+
+185
+00:18:18,200 --> 00:18:19,240
+There's so many lessons.
+
+186
+00:18:19,440 --> 00:18:20,860
+It's been life changing.
+
+187
+00:18:20,860 --> 00:18:23,960
+Have you seen any other similar projects out there?
+
+188
+00:18:23,960 --> 00:18:26,260
+And if so, what's your thoughts about it?
+
+189
+00:18:26,940 --> 00:18:34,520
+Because in this space compared to a couple of years ago, there's a lot more democracy projects propping out these days.
+
+190
+00:18:34,520 --> 00:18:47,820
+For example, citizen juries, as well as flux party, and voter verifiable paper electronic trails, and voting machines, et cetera, et cetera.
+
+191
+00:18:47,820 --> 00:18:51,920
+Perhaps there's other projects out there that is of interest to you as well.
+
+192
+00:18:53,080 --> 00:18:56,320
+To me, the best example of...
+
+193
+00:18:56,320 --> 00:18:59,000
+Like even though they're not what you agree with specifically.
+
+194
+00:18:59,000 --> 00:19:04,000
+Yeah, well, so look, it's no surprise, and again, it's no secret that I'm not a big fan of flux.
+
+195
+00:19:05,160 --> 00:19:11,780
+But what's happening in Taiwan, I think, is probably the best example of citizen-based policy making in the world.
+
+196
+00:19:11,780 --> 00:19:12,640
+Taiwan.
+
+197
+00:19:12,640 --> 00:19:13,140
+Yeah.
+
+198
+00:19:13,140 --> 00:19:19,920
+Although, I would say, even though I think they're doing it best, I still think there are significant flaws with their model.
+
+199
+00:19:20,760 --> 00:19:23,540
+What is Taiwan doing?
+
+200
+00:19:23,540 --> 00:19:27,120
+So Taiwan, it's quite extraordinary, actually, what they've been doing.
+
+201
+00:19:27,120 --> 00:19:36,740
+So they've been going out and building, I would call them citizen assemblies, but they're slightly different, to create new policies.
+
+202
+00:19:36,740 --> 00:19:50,740
+So the government effectively opens the doors and says, look, for the next month, we're going to focus on a policy related to X, whatever X is, and anyone is welcome to come in and help shape that policy and craft what we're going to do.
+
+203
+00:19:50,740 --> 00:19:56,680
+And there's a lot of dialogue and there's a lot of two and four between the government and the citizens.
+
+204
+00:19:56,680 --> 00:20:01,300
+And then they go in and they enact what the citizens design effectively.
+
+205
+00:20:01,300 --> 00:20:09,280
+What's magnificent about that is that they've already enacted about 150 pieces of legislation that have been crafted by the citizens.
+
+206
+00:20:09,280 --> 00:20:12,760
+The problem is that it is only the citizens who show up.
+
+207
+00:20:12,760 --> 00:20:24,860
+And so you're still in the exact same problem that a lot of these models have, which is you're not finding a way to engage the citizenry in any meaningful way in terms of volume, that you can say this is genuinely representative.
+
+208
+00:20:24,860 --> 00:20:32,620
+So I still think the taiwanese model is flawed, but the design of it is really fantastic, and their outcomes are fabulous.
+
+209
+00:20:32,620 --> 00:20:35,120
+That's really interesting what Taiwan did.
+
+210
+00:20:35,120 --> 00:20:45,320
+So I imagine there's a lot we could learn from it, but if they did Composer and Voting like how we did it, what if have helped them model more, in your opinions?
+
+211
+00:20:45,320 --> 00:20:47,020
+But either way, this is really cool.
+
+212
+00:20:47,020 --> 00:20:48,520
+Yeah, and I think they might get there.
+
+213
+00:20:48,520 --> 00:20:51,820
+I mean, again, for them, it's still a trial how it's all working.
+
+214
+00:20:51,920 --> 00:21:01,440
+I think the opportunity is now to import a whole variety of technological elements, to A, spread the opportunity.
+
+215
+00:21:01,440 --> 00:21:18,580
+And then, you know, I still have a problem just in general with citizen related votes or conversations that A, relate directly to legislation, because I think most citizens don't understand legislation, nor should they have to understand legislation.
+
+216
+00:21:18,580 --> 00:21:21,700
+And the other thing is that they are binary conversations.
+
+217
+00:21:21,700 --> 00:21:27,200
+And I think that's a really dangerous, flawed way to talk about democracy.
+
+218
+00:21:27,200 --> 00:21:38,580
+And I also think that if we're talking about less tribal outcomes, building more trust, I think we have to increase the threshold dramatically of what constitutes a community decision.
+
+219
+00:21:38,580 --> 00:21:49,920
+So if you're in a binary conversation, and all you need is 50% plus one person, it's very easy to sway the results of that conversation, that vote.
+
+220
+00:21:50,720 --> 00:22:10,520
+If all of a sudden you're in a binary, so there's more than two choices, you can vote for as many or as few as you want, and the threshold is now 60%, you can't have policy without 60 or 65 or 70, then all of a sudden, what you're finding is that the community is coming together to say, that's the direction we want to go.
+
+221
+00:22:10,520 --> 00:22:15,960
+To me, that's a much safer way of building community buy-in.
+
+222
+00:22:15,960 --> 00:22:17,800
+It builds trust with the representatives.
+
+223
+00:22:18,080 --> 00:22:21,720
+It becomes much easier to hold people to account.
+
+224
+00:22:21,720 --> 00:22:26,500
+Everybody can be involved in the conversation, and it's not based upon party ideology.
+
+225
+00:22:26,500 --> 00:22:34,160
+Right now, we're just stuck in this two-party tribal bullshit situation, because that's what we're used to.
+
+226
+00:22:34,160 --> 00:22:37,100
+And it's actually making the world worse.
+
+227
+00:22:37,100 --> 00:22:40,040
+We're not getting any better, we're getting worse.
+
+228
+00:22:40,040 --> 00:22:45,740
+We have worse climate outcomes, worse domestic violence outcomes, worse immigration outcomes, worse asylum seeker outcomes.
+
+229
+00:22:46,200 --> 00:22:53,480
+All of the problems that are happening in the world are because of this binary view of the way we look at policy.
+
+230
+00:22:53,480 --> 00:22:54,540
+I see.
+
+231
+00:22:54,540 --> 00:22:57,140
+So, what's your current role as well?
+
+232
+00:22:57,140 --> 00:23:05,480
+Because, like, I remember you're now also working at Spinburn in this new department for innovation.
+
+233
+00:23:05,480 --> 00:23:11,020
+Is this related to MiVote, or is there a particularly separate role?
+
+234
+00:23:11,020 --> 00:23:12,620
+No, it's completely unrelated to MiVote.
+
+235
+00:23:12,620 --> 00:23:14,860
+So my roles at the moment, I wear several hats.
+
+236
+00:23:15,060 --> 00:23:18,640
+So I'm the global chairman of MiVote and MiVote technologies.
+
+237
+00:23:19,780 --> 00:23:24,120
+I'm the Director of Global and Strategic Innovation at Spinburn University.
+
+238
+00:23:24,140 --> 00:23:28,840
+I'm a non-executive director of a technology company called Capsula Tech.
+
+239
+00:23:28,840 --> 00:23:37,000
+I'm a co-founder and director of a technology skunkworks called Travneer, and I'm an advisor to a whole lot of startups.
+
+240
+00:23:37,420 --> 00:23:40,020
+So, and, you know, obviously I have five kids as well.
+
+241
+00:23:40,020 --> 00:23:41,640
+So that's my most important job.
+
+242
+00:23:41,640 --> 00:23:42,620
+So I've got a few things up.
+
+243
+00:23:44,280 --> 00:23:45,940
+That's all I've got to do.
+
+244
+00:23:46,100 --> 00:23:49,160
+I'm really getting there on my book, which is about democracy.
+
+245
+00:23:49,160 --> 00:23:52,940
+Oh, are you writing a book or reading a book?
+
+246
+00:23:52,940 --> 00:23:56,320
+You know, I'm writing a book called Mythocracy.
+
+247
+00:23:56,320 --> 00:24:09,300
+And Mythocracy, the contention is effectively that democracy and politics are mutually exclusive in both philosophy and practice, which is to say that if you are engaged in politics, you will never deliver democracy.
+
+248
+00:24:09,820 --> 00:24:13,520
+And if you are engaged in democracy, you have no need for politics.
+
+249
+00:24:13,520 --> 00:24:19,820
+Do you have any particular thoughts on China, America in terms of their political systems?
+
+250
+00:24:19,820 --> 00:24:28,980
+It seems to me that they're trying to compete in terms of ideology as well as, like, social and culturally, et cetera.
+
+251
+00:24:28,980 --> 00:24:31,400
+Look, I don't think they're different to any other country.
+
+252
+00:24:31,400 --> 00:24:36,920
+I mean, I think every country's leaders would argue that their model is, is the model that works for them.
+
+253
+00:24:38,860 --> 00:24:45,920
+I think, you know, the US are experts at calling themselves a democracy, but they're not a democracy.
+
+254
+00:24:45,920 --> 00:24:47,920
+In fact, they're a long way from a democracy.
+
+255
+00:24:47,920 --> 00:24:49,440
+They're a republic.
+
+256
+00:24:49,440 --> 00:24:50,420
+They don't listen to the people.
+
+257
+00:24:50,420 --> 00:24:52,020
+The will of the people is irrelevant.
+
+258
+00:24:52,020 --> 00:24:58,980
+It costs $2 billion to become the president, which is about as undemocratic a proposition as you could find.
+
+259
+00:24:58,980 --> 00:25:01,400
+The checks and balances don't work.
+
+260
+00:25:01,400 --> 00:25:03,920
+Very rarely is policy related to what the people want.
+
+261
+00:25:03,920 --> 00:25:06,840
+So they're not a democracy, but they like to call themselves that.
+
+262
+00:25:06,960 --> 00:25:11,460
+I think China is in equal measure flawed.
+
+263
+00:25:11,460 --> 00:25:20,340
+Well, I think it has some concerns about the way that it oppresses minorities and its humanitarian streak.
+
+264
+00:25:20,340 --> 00:25:25,740
+But at the same time, you can't argue that China has lifted more people out of poverty than any country in history.
+
+265
+00:25:25,740 --> 00:25:29,680
+So I think all systems have good and bad.
+
+266
+00:25:29,680 --> 00:25:30,960
+America has good and bad.
+
+267
+00:25:30,960 --> 00:25:31,960
+China has good and bad.
+
+268
+00:25:31,960 --> 00:25:33,440
+Everything does.
+
+269
+00:25:33,440 --> 00:25:35,420
+The problem for me is that none of them are democracy.
+
+270
+00:25:35,980 --> 00:25:47,020
+And so until we actually enact something that is real in terms of democratic outcomes and democratic process, then we'll never know if democracy is the system that we all need.
+
+271
+00:25:47,020 --> 00:25:51,220
+But we keep calling what we do democracy and it's not something else.
+
+272
+00:25:51,220 --> 00:25:55,720
+So how close is Australia to an ideal democracy?
+
+273
+00:25:55,720 --> 00:26:00,460
+In my own personal opinion, there's still a lot wrong with Australia's democracy.
+
+274
+00:26:00,460 --> 00:26:05,540
+But in some ways, we're still comparatively better than many other countries out there as well.
+
+275
+00:26:05,540 --> 00:26:07,020
+In certain aspects.
+
+276
+00:26:07,220 --> 00:26:13,580
+I think, look, I think Australia has better outcomes because ultimately we have a smaller population to deal with it.
+
+277
+00:26:13,580 --> 00:26:15,420
+So it's more manageable.
+
+278
+00:26:15,540 --> 00:26:20,080
+I think our success is by default, not by design, to be honest.
+
+279
+00:26:20,220 --> 00:26:20,700
+I would argue...
+
+280
+00:26:20,700 --> 00:26:22,420
+The lucky country?
+
+281
+00:26:22,420 --> 00:26:24,120
+Yeah, well, maybe.
+
+282
+00:26:24,120 --> 00:26:26,060
+I think our luck might be running out.
+
+283
+00:26:26,240 --> 00:26:33,260
+I would argue that the Morrison government is basically a fascist government.
+
+284
+00:26:33,260 --> 00:26:37,340
+And so it has no interest in listening to the citizens.
+
+285
+00:26:37,340 --> 00:26:38,920
+It's controlled by media interests.
+
+286
+00:26:38,920 --> 00:26:41,000
+It's controlled by the Minerals Council.
+
+287
+00:26:42,780 --> 00:26:50,920
+It has a neoliberal approach to every problem, which is why Sydney wouldn't lock down for ages because business always has to win.
+
+288
+00:26:50,920 --> 00:26:51,600
+It's...
+
+289
+00:26:51,600 --> 00:27:02,840
+You know, if you look at the last election alone, you have a situation where you had somebody who spent $87 million to try and swing the outcome of an election in Queensland.
+
+290
+00:27:02,840 --> 00:27:13,420
+You had a situation where the Australian Electoral Commission themselves identified over 70 breaches of electoral law, but they don't have any power to do anything about those breaches.
+
+291
+00:27:13,420 --> 00:27:16,560
+Yeah, I mean, we have fundamental problems in this country.
+
+292
+00:27:16,700 --> 00:27:26,200
+And yes, we're the lucky country because most of the time the weather is good and most of the time the lifestyle is good and we've got great coffee and people feel like they have some freedom, but it's not a democracy.
+
+293
+00:27:26,320 --> 00:27:28,720
+It's a bloody long way from a democracy.
+
+294
+00:27:28,720 --> 00:27:36,520
+Thank you very much for your thoughts and views about the current state of the run and pathways towards democracy.
+
+295
+00:27:36,520 --> 00:27:39,260
+At this point, we should probably start wrapping up.
+
+296
+00:27:39,260 --> 00:27:44,900
+And I really appreciate your time taken to spend your time to be interviewed.
+
+297
+00:27:44,900 --> 00:27:47,060
+We should start closing up this interview.
+
+298
+00:27:47,060 --> 00:27:51,560
+So how can people help you after MiVote is still going?
+
+299
+00:27:51,560 --> 00:27:57,320
+And I'm sure you're still growing the organizations and want to bring it further.
+
+300
+00:27:57,320 --> 00:27:57,800
+Yeah, it is.
+
+301
+00:27:57,800 --> 00:28:03,960
+Look, you can go to myvote.tech, which is the website, and you can sort of look at what we're doing there and keep involved.
+
+302
+00:28:03,960 --> 00:28:10,800
+Reach out to the team in the UK and India if you want to get involved, if you want to learn more, if you want to be part of what we're doing there.
+
+303
+00:28:10,800 --> 00:28:13,420
+We're doing some really interesting work here with the tests.
+
+304
+00:28:13,420 --> 00:28:17,460
+We're doing some really interesting work in the EU.
+
+305
+00:28:17,460 --> 00:28:22,300
+You know, for people who are committed to this space, as you are, Brian, I know you are and I am as well.
+
+306
+00:28:22,580 --> 00:28:26,180
+There's lots of stuff to get you to roll your sleeves up and get your hands dirty with.
+
+307
+00:28:26,180 --> 00:28:27,180
+But thanks for having me.
+
+308
+00:28:27,180 --> 00:28:28,680
+I appreciated the opportunity.
+
+309
+00:28:28,680 --> 00:28:29,560
+Not a problem.
+
+310
+00:28:29,560 --> 00:28:32,340
+Thanks so long for coming along to this interview.
+
+311
+00:28:32,340 --> 00:28:33,240
+Cheers.
+
+312
+00:28:33,240 --> 00:28:33,460
+Thanks.

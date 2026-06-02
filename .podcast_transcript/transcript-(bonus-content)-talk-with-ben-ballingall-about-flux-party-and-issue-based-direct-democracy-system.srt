@@ -1,0 +1,575 @@
+1
+00:00:00,760 --> 00:00:04,840
+Hi, and welcome to a bonus content from Designing Open Democracy.
+
+2
+00:00:04,840 --> 00:00:18,320
+We previously held a recording on the 11th of March 2020 for a warm up with Ben Ballingall on the talk about his party and how it implements Issues Based Direct Democracy system.
+
+3
+00:00:18,320 --> 00:00:21,860
+Being that this is a warm up, it is a bit more free-flowing.
+
+4
+00:00:21,860 --> 00:00:37,940
+However, it explores a bit more into how Flux Party itself works, so you may be finding this to be quite an interesting talk that goes into more details in some aspects of Flux Party that the original talk did not go into.
+
+5
+00:00:37,940 --> 00:00:40,800
+Hi, and welcome to Designing Open Democracy.
+
+6
+00:00:40,820 --> 00:00:45,300
+And who we have here is Ben Ballingall from Flux Party.
+
+7
+00:00:45,300 --> 00:00:45,820
+Hey, Brian.
+
+8
+00:00:45,820 --> 00:00:47,820
+Thanks for letting me on.
+
+9
+00:00:47,820 --> 00:00:49,100
+Yes.
+
+10
+00:00:49,100 --> 00:00:53,460
+So tell me a bit more about Flux Party and what is it?
+
+11
+00:00:53,460 --> 00:00:54,300
+Ah, cool.
+
+12
+00:00:54,300 --> 00:00:56,540
+So yeah, I'm with the Flux Party.
+
+13
+00:00:56,800 --> 00:01:03,920
+We're a political party registered in Australia and also throughout various states throughout Australia.
+
+14
+00:01:03,920 --> 00:01:10,240
+We're a political party that believes in or proposes issue based direct democracy.
+
+15
+00:01:10,240 --> 00:01:22,680
+So that's a way for all the citizens or all the citizenry to vote on the issues that come up in parliament and have those results aggregated and shown to a representative.
+
+16
+00:01:23,080 --> 00:01:28,220
+And our representatives will do what their community votes in parliament.
+
+17
+00:01:28,220 --> 00:01:38,100
+So if I understand correctly, what you're saying is that it's going to be a system where people will get to do a bit more direct democracy in their government.
+
+18
+00:01:38,100 --> 00:01:39,260
+Is that correct?
+
+19
+00:01:39,260 --> 00:01:40,060
+Yeah, truly.
+
+20
+00:01:40,980 --> 00:01:45,720
+It's a very straight up and down democracy, the people voting on every single issue.
+
+21
+00:01:45,720 --> 00:01:46,620
+I see.
+
+22
+00:01:46,620 --> 00:01:49,060
+So tell me a bit more about the history of Flux.
+
+23
+00:01:49,260 --> 00:01:54,380
+Like you mentioned, Max Kane was a big part of Flux.
+
+24
+00:01:54,380 --> 00:01:54,760
+Yeah.
+
+25
+00:01:54,760 --> 00:01:57,200
+So, was it 2000?
+
+26
+00:01:57,200 --> 00:02:00,420
+Middle of 2015, I believe it was.
+
+27
+00:02:00,420 --> 00:02:16,280
+Max Kane and Nathan Spataro, who are the co-founders, came together because they had both an idea for this new form of democracy, but most importantly, or perhaps secondly, most importantly, they had the ability and the code behind being able to develop the app.
+
+28
+00:02:16,760 --> 00:02:28,120
+So, they developed a prototype of the app and then used, I guess, that to generate enough buzz to get the party registered before the 2016 federal election.
+
+29
+00:02:28,120 --> 00:02:33,780
+So, yeah, late 2015 would have been the true start of vote Flux for just the two of them.
+
+30
+00:02:33,780 --> 00:02:34,960
+Late 2016?
+
+31
+00:02:34,960 --> 00:02:35,660
+Yep.
+
+32
+00:02:36,100 --> 00:02:36,920
+Okay.
+
+33
+00:02:36,920 --> 00:02:47,440
+Why did we choose to start with, say, electronic voting, rather than, say, like, um, what can I say?
+
+34
+00:02:47,440 --> 00:02:50,180
+Why is there a need to switch?
+
+35
+00:02:50,180 --> 00:02:53,320
+Um, I think, well, we've...
+
+36
+00:02:53,320 --> 00:03:22,720
+Depends on your views of representative government, is one way I'll start that, but for at least a lot of us in Flux, yeah, we see the flaws in representative democracy and the governmental systems we have right now, and that, frankly, a lot of the flaws that we face politically, as, you know, the people, if we can call that, come from a lack of representation, a lack of transparency, and a lack of accountability of our representatives.
+
+37
+00:03:22,720 --> 00:03:28,140
+So, you know, generating some sort of system, especially one that's democratic and gives...
+
+38
+00:03:28,140 --> 00:03:30,920
+empowers everybody, you know, it's, it's, I...
+
+39
+00:03:30,920 --> 00:03:34,860
+personally, I think it's something people have been doing for the entirety of history.
+
+40
+00:03:34,900 --> 00:03:39,460
+Ours just happens to be based on blockchain tech and the internet.
+
+41
+00:03:39,460 --> 00:03:44,440
+But, you know, technological innovation has sort of always progressed some sort of political change.
+
+42
+00:03:44,440 --> 00:03:44,880
+Yeah, I see.
+
+43
+00:03:44,880 --> 00:03:46,940
+It's just something that everybody sort of felt.
+
+44
+00:03:46,940 --> 00:03:49,420
+And this is how it manifested more than anything.
+
+45
+00:03:49,920 --> 00:03:59,660
+I guess it can come out where we're designing open democracy, or at least what I understand of what you're doing, because I'm not fully across designing open democracy.
+
+46
+00:03:59,660 --> 00:04:01,580
+But it's certainly like, yeah, for sure.
+
+47
+00:04:01,580 --> 00:04:12,860
+So I see this as like, Flux is one element, if I can, of designing an open democracy, in that Flux posits a true democratic form.
+
+48
+00:04:12,860 --> 00:04:15,040
+It allows everybody to vote on issues.
+
+49
+00:04:15,040 --> 00:04:20,620
+Right now, it's contingent on parliament, what is put up in parliament primarily.
+
+50
+00:04:20,620 --> 00:04:23,240
+So like three-year electoral cycle.
+
+51
+00:04:23,240 --> 00:04:23,680
+Exactly.
+
+52
+00:04:23,680 --> 00:04:28,240
+Three-year electoral cycle, we need to get this person in to do this thing.
+
+53
+00:04:28,240 --> 00:04:37,000
+But what it doesn't sort of, or what will grow, hopefully, symbiotically is how are people going to be informed about these decisions they're going to make?
+
+54
+00:04:37,920 --> 00:04:51,820
+You know, how do we decide once we've released all these old political parties of leading us, how do we decide what facets of their ideology were good and what were bad?
+
+55
+00:04:52,040 --> 00:04:53,960
+And how do we actually have these discussions?
+
+56
+00:04:56,060 --> 00:04:57,600
+That's something that needs to grow.
+
+57
+00:04:57,600 --> 00:05:05,900
+That's a societal, the people need to develop this thing in tandem with the ability to vote on issues and control their MP.
+
+58
+00:05:06,420 --> 00:05:11,680
+So, what you're saying is that is Flux only one component of what is needed in the society?
+
+59
+00:05:11,680 --> 00:05:13,680
+There's a cultural element, is that correct?
+
+60
+00:05:13,680 --> 00:05:13,920
+Yeah.
+
+61
+00:05:13,920 --> 00:05:25,200
+because like I think maybe what some people might have a concern is that you could try to fix the way people vote, but is that going to really fundamentally change this conflict we have?
+
+62
+00:05:25,200 --> 00:05:31,940
+because there's also issue of like say media representation or cultural representation and et cetera.
+
+63
+00:05:31,940 --> 00:05:37,460
+I think that's the million, billion, trillion dollar question.
+
+64
+00:05:38,680 --> 00:05:39,960
+And you know, we don't know.
+
+65
+00:05:39,960 --> 00:05:46,240
+Like when we think of voting, especially nowadays, we think of this voting for a team, voting for a team that has...
+
+66
+00:05:46,240 --> 00:05:46,860
+Tribalism.
+
+67
+00:05:46,860 --> 00:05:51,320
+Yeah, this tribal team that's always been this way.
+
+68
+00:05:51,320 --> 00:05:55,500
+They've always held this ideology that comes with these 50 points.
+
+69
+00:05:56,240 --> 00:06:07,260
+So, really changing how culture and society looks at politics, looks at it via every issue and how those issues actually relate individually.
+
+70
+00:06:07,260 --> 00:06:09,660
+Yeah, you know, that's a huge cultural change.
+
+71
+00:06:09,660 --> 00:06:12,800
+So, it's a huge cultural shift and mentality.
+
+72
+00:06:13,220 --> 00:06:21,900
+For sure, yeah, the actual mentality, you know, it's totally acceptable to only like one initiative that the Greens put forward.
+
+73
+00:06:21,900 --> 00:06:29,200
+And then the next week to like a One Nation initiative, people could not even comprehend how that could ever work.
+
+74
+00:06:29,200 --> 00:06:34,420
+But when you look at individual issues, you know, that Greens issue could be a great environmental issue.
+
+75
+00:06:34,420 --> 00:06:39,180
+And the One Nation issue is something to do with rural infrastructure.
+
+76
+00:06:39,180 --> 00:06:40,940
+Like, they can both be right.
+
+77
+00:06:41,400 --> 00:06:46,240
+And in today's politics, you can't, that's completely, you know, absurd.
+
+78
+00:06:46,660 --> 00:06:52,200
+So that's a huge change that isn't solved by people being able to vote.
+
+79
+00:06:52,200 --> 00:06:53,540
+That's not what will come.
+
+80
+00:06:53,540 --> 00:07:04,640
+So I have this device that you're talking about, like how would the ordinary voter and the Australian public participate in your system?
+
+81
+00:07:04,640 --> 00:07:05,280
+Yeah, for sure.
+
+82
+00:07:05,820 --> 00:07:07,440
+I mean, real bad one.
+
+83
+00:07:07,440 --> 00:07:17,680
+I think a great way to ask this question would be like, could you give me a rundown as to how this system will work in typical use case of the public?
+
+84
+00:07:17,680 --> 00:07:18,580
+Yeah, for sure.
+
+85
+00:07:18,580 --> 00:07:24,720
+So, you know, it takes a little bit of a, the things we have to suspend our disbelief.
+
+86
+00:07:24,720 --> 00:07:28,140
+First, a Flux MP has been voted in in your electorate.
+
+87
+00:07:28,140 --> 00:07:30,100
+So that's important.
+
+88
+00:07:30,100 --> 00:07:35,300
+But, you know, you're sitting on your couch, in your NICs, and an issue comes up.
+
+89
+00:07:35,300 --> 00:07:39,380
+You're scrolling through your Facebook feed, and an issue comes up that's being debated.
+
+90
+00:07:39,380 --> 00:07:46,280
+You would go to the App Store, or you can go to the website, either or, but specifically the App Store, and you download an app.
+
+91
+00:07:46,280 --> 00:07:54,420
+The app allows you to login, create a user, or create a password, create an account, and you login using your federal electoral role details.
+
+92
+00:07:54,420 --> 00:07:58,420
+So these are all verified by the government that you are one person.
+
+93
+00:07:58,420 --> 00:08:06,040
+Then it would tell you, you know, obviously you're electorates, state level, federal level, and then the upcoming bills in parliament.
+
+94
+00:08:06,040 --> 00:08:15,440
+So this is going to be voted on in four days, this is going to be voted in three days, and it would allow you to vote, yes, no, or choose not to vote on those ones.
+
+95
+00:08:15,440 --> 00:08:19,220
+Then obviously say you really like an issue, click on it.
+
+96
+00:08:19,220 --> 00:08:31,800
+It'll give you the synopsis of the bill, maybe give you some links to the parties, like the proposing party's information, maybe some counter information proposed by other political parties.
+
+97
+00:08:31,800 --> 00:08:40,059
+This is definitely a level where we don't want to be proposing any information, so you won't find information from Flux, but you might be able to find the information that the other parties have put up.
+
+98
+00:08:40,059 --> 00:08:43,059
+And then, yeah, you would vote yes or no if you wanted to.
+
+99
+00:08:43,059 --> 00:08:51,380
+You'd be given the results of your entire electorate, and then a little button down the bottom to post to Twitter, post to Facebook, email my representative.
+
+100
+00:08:51,380 --> 00:08:56,840
+That'd be a really basic being hit by a bill that you really cared about and acting on that bill.
+
+101
+00:08:58,120 --> 00:09:02,220
+So, I am kind of curious as to one key aspects.
+
+102
+00:09:02,220 --> 00:09:16,640
+Your system relies on the use of technology and smartphones, and there will be concerns from the public about the security and viability of technology-based electoral system.
+
+103
+00:09:16,640 --> 00:09:17,440
+Yeah, for sure.
+
+104
+00:09:17,440 --> 00:09:18,460
+It's a big tech one.
+
+105
+00:09:18,460 --> 00:09:28,760
+Tech security is something that I guess is initially very scary, and especially if you're not in that industry, you know, even I am, quote unquote, in the industry, but I can't read the code.
+
+106
+00:09:28,760 --> 00:09:32,900
+We could tie it to, say, like the Iowa election scandal.
+
+107
+00:09:32,900 --> 00:09:34,000
+Is it scandal?
+
+108
+00:09:34,000 --> 00:09:35,680
+Or kerfuffle in America?
+
+109
+00:09:35,680 --> 00:09:37,080
+Kerfuffle, good term.
+
+110
+00:09:37,080 --> 00:09:43,980
+Yeah, that's pretty perfect, because that exact fault was an actual fault in the code.
+
+111
+00:09:43,980 --> 00:09:46,020
+Like it had been coded poorly.
+
+112
+00:09:46,020 --> 00:09:51,800
+But it'll still, in people's psyche, just be an app broke and it screwed up the vote.
+
+113
+00:09:52,140 --> 00:09:56,220
+You know, the tech gets reduced down so quickly.
+
+114
+00:09:56,220 --> 00:09:59,440
+On a tech forefront, it is blockchain based voting.
+
+115
+00:09:59,440 --> 00:10:02,040
+So you know the ledger is immutable.
+
+116
+00:10:02,040 --> 00:10:06,800
+We do have the strongest security and anonymization in industry.
+
+117
+00:10:06,800 --> 00:10:08,260
+You know, there is no other way.
+
+118
+00:10:08,260 --> 00:10:13,640
+It's the same stuff that protects your bank, gets your banking and all your online communication.
+
+119
+00:10:15,720 --> 00:10:18,980
+There is a level where it's open source.
+
+120
+00:10:18,980 --> 00:10:19,720
+You can read it.
+
+121
+00:10:21,000 --> 00:10:24,840
+If it's got a flaw, people will find it.
+
+122
+00:10:24,840 --> 00:10:27,980
+And right now, we are telling you, there are no flaws.
+
+123
+00:10:27,980 --> 00:10:34,180
+And you got to understand that, like most people are probably not technologically literate in the idea of the blockchain.
+
+124
+00:10:34,180 --> 00:10:51,340
+And so I imagine part of the aspects to getting your story out there and getting traction in the public about your Flux system is you probably need to have a bit more acceptance in the idea of relying in blockchain.
+
+125
+00:10:51,340 --> 00:10:57,060
+Yeah, it's funny, even in just three years, I've been with Flux.
+
+126
+00:10:57,060 --> 00:11:04,340
+It's even how much we have to explain blockchain now compared to back three years ago is markedly less.
+
+127
+00:11:04,340 --> 00:11:05,720
+We definitely still have to.
+
+128
+00:11:05,720 --> 00:11:09,140
+There is a certain, it is still freaky new technology.
+
+129
+00:11:09,140 --> 00:11:10,460
+But I think there's at least enough acceptance.
+
+130
+00:11:10,720 --> 00:11:17,840
+People understand crypto, blockchain, it's something to do with saving and storing money and being anonymous.
+
+131
+00:11:17,840 --> 00:11:20,840
+People at least have this rough idea of how it works now.
+
+132
+00:11:20,840 --> 00:11:27,700
+Yeah, and with that acceptance, it's a lot easier to be like, so you can see how that could be used for voting, yes?
+
+133
+00:11:27,700 --> 00:11:33,940
+As opposed to having to really explain how the vote worked, and how the security works, and how the works.
+
+134
+00:11:33,940 --> 00:11:35,340
+It's getting there.
+
+135
+00:11:35,560 --> 00:11:42,160
+It's one of those ones you really just have to put up and be like, it works, and you can't prove us wrong.
+
+136
+00:11:42,160 --> 00:11:44,840
+And the people that can prove us wrong agree with us.
+
+137
+00:11:44,840 --> 00:11:47,480
+So what do you want?
+
+138
+00:11:47,480 --> 00:11:54,660
+Hi, and thanks for listening to this bonus content of Designing Open Democracy, talk with Ben Ballingall.
+
+139
+00:11:54,660 --> 00:12:02,700
+If you are interested in this talk and you haven't heard the original talk, I recommend you to check out the last episode and give it a listen.
+
+140
+00:12:02,700 --> 00:12:06,940
+Oh, and if you are in Melbourne, Australia, don't forget to check out our physical meetup.
+
+141
+00:12:06,940 --> 00:12:11,780
+Each month, we cover a different topic on relating to democracy.
+
+142
+00:12:11,780 --> 00:12:17,020
+Our next meetup will be likely to be about cooperatives, so I hope to see you then.
+
+143
+00:12:17,040 --> 00:12:20,020
+Else, see you in the next podcast episode.
+
+144
+00:12:20,020 --> 00:12:20,320
+Cheers.

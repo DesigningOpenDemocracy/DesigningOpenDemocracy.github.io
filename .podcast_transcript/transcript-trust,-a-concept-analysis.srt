@@ -1,0 +1,3271 @@
+1
+00:00:00,660 --> 00:00:04,740
+Hi, and welcome to the first of a two-part series on Trust.
+
+2
+00:00:04,740 --> 00:00:09,500
+For Designing Open Democracy podcast, I'll be your host, Brian Koo.
+
+3
+00:00:09,500 --> 00:00:11,760
+A quick introduction to who we are.
+
+4
+00:00:11,760 --> 00:00:16,100
+We are a team of process engineers, social architects and philosophers.
+
+5
+00:00:16,100 --> 00:00:25,100
+What we aim to do is to help spur discussion as to the technology, engineering and design of social systems from every levels of society.
+
+6
+00:00:25,100 --> 00:00:31,120
+On December 11th of 2019, we held an event called TRUST, a concept analysis.
+
+7
+00:00:31,120 --> 00:00:39,340
+And the main speaker for this event was Alexar Pendashteh, who was previously the director of Open Source Industries Australia.
+
+8
+00:00:39,340 --> 00:00:52,000
+Being a technologist, he's interested in the nature of TRUST, as well as how do you improve open source governance and coordination between developers and users of open source solutions.
+
+9
+00:00:52,000 --> 00:01:01,720
+And this is what got him thinking about maybe creating a talk on analysis, amusing on the nature of TRUST, and how society conceptualizes and acts upon it.
+
+10
+00:01:01,720 --> 00:01:08,600
+He will also be joined by guest speaker Andrew Kay, who runs a YouTube commentary channel called Angry Aussie.
+
+11
+00:01:08,600 --> 00:01:16,140
+And just to make this channel a democracy channel, there will also be a audience participation component as well.
+
+12
+00:01:16,140 --> 00:01:22,900
+For example, part of the audience includes cooperative policy experts, language experts, and a few others.
+
+13
+00:01:22,900 --> 00:01:25,900
+You'll definitely find the contributions to be quite interesting.
+
+14
+00:01:26,560 --> 00:01:33,980
+We would like to also thank melbournebusinesscentre.com.au, who without their help, we wouldn't be able to make this podcast.
+
+15
+00:01:33,980 --> 00:01:41,320
+What they allow you to have in Melbourne is to have a physical office space as well as a virtual desk presence.
+
+16
+00:01:41,320 --> 00:01:43,540
+So you may want to check them out as well.
+
+17
+00:01:43,540 --> 00:02:02,320
+And some of the interesting topics you may want to pay attention to during this podcast is how tribal identity is still a big part of how we relate to society as well as the danger of fake news and how we could have other tentative models of trust in organizations like cooperatives.
+
+18
+00:02:02,320 --> 00:02:05,960
+As this is a new podcast, we would be interested in hearing your feedback.
+
+19
+00:02:05,960 --> 00:02:11,940
+Maybe there's somebody you want us to interview or maybe there's other topics that you want us to cover.
+
+20
+00:02:11,940 --> 00:02:15,060
+Either way, we hope you enjoy this discussion.
+
+21
+00:02:15,060 --> 00:02:19,700
+So without further ado, let's get started and remember to always think outside the ballot box.
+
+22
+00:02:20,420 --> 00:02:25,860
+We shall generally guide you to the start of the conversation on why should we care about this topic.
+
+23
+00:02:25,860 --> 00:02:32,600
+Alexar will tell you about what he felt when he was walking towards the recording studio.
+
+24
+00:02:32,600 --> 00:02:43,360
+So approaching to the event, I was thinking, all right, this is a very abstract concept and we're gonna have people who care about democracy here and probably a bit of philosophy.
+
+25
+00:02:43,360 --> 00:02:51,060
+I was thinking, why do I actually care about this particular topic and why is it a point of interest for me?
+
+26
+00:02:51,060 --> 00:02:57,460
+So I'll just tell you a bit about that before I actually talk about, start the conversation about the topic personally.
+
+27
+00:02:59,060 --> 00:03:24,060
+So when we learn about science, one of the things we learn is how from the quantum layer, the classic physics has emerged and how from the classic physics, like the physics, chemistry emerges, and then from chemistry, biology emerges, and how the interaction in a layer, when they are in a certain floor, they allow for emergence of the next layer.
+
+28
+00:03:24,060 --> 00:03:35,440
+At biology, we have psychology, and now we are a big society of people, and we have societal phenomenon, which has emerged again from our individual beings.
+
+29
+00:03:36,200 --> 00:03:44,100
+So what interests me is what kind of things can actually emerge from this layer?
+
+30
+00:03:44,100 --> 00:03:51,900
+What are the things that we collectively can achieve or can experience that currently at the moment we're not?
+
+31
+00:03:51,900 --> 00:03:55,320
+Because we're not yet in enough harmony.
+
+32
+00:03:55,320 --> 00:04:23,540
+And the reason I am interested in these topics, even though I'm more of a technologist, and I'm in IT and a bit of a business, is I'm trying to understand the mechanics and physics of collective potential that we have, basically, to experience new realms, intellectual realms and spiritual realms that was brought up in conversations that we had a bit earlier before the event.
+
+33
+00:04:25,060 --> 00:04:29,580
+So we're gonna talk about trust, and it's a concept.
+
+34
+00:04:29,580 --> 00:04:32,220
+When I think about a concept, we can approach it in different ways.
+
+35
+00:04:33,000 --> 00:04:35,020
+We start with defining it.
+
+36
+00:04:35,020 --> 00:04:36,740
+This is what I'm gonna do.
+
+37
+00:04:36,740 --> 00:04:40,320
+Start with defining it, and then think about why does it even exist?
+
+38
+00:04:40,320 --> 00:04:41,580
+Why bother?
+
+39
+00:04:41,580 --> 00:04:42,680
+Why do we need it?
+
+40
+00:04:42,680 --> 00:04:44,020
+Where does it come from?
+
+41
+00:04:44,020 --> 00:04:50,580
+And then we can think about what causes it, and what does it cause, or what does it influence, and what influences it.
+
+42
+00:04:50,580 --> 00:04:58,600
+I think one of the aspects we recovered was where we were trying to figure out, like, how does trust get transferred?
+
+43
+00:04:58,600 --> 00:05:18,140
+And I was thinking, like, maybe you could just simply tell a person that you trust this person, but that does not quite work that way, because there's an inherent, what do you say, like, inherent idea of who other people are that you cannot necessarily transfer as easily as, say, money.
+
+44
+00:05:18,140 --> 00:05:21,740
+Yeah, basically, I don't know if that was what you meant.
+
+45
+00:05:22,640 --> 00:05:27,060
+What is underlying trust is the perception, basically.
+
+46
+00:05:27,060 --> 00:05:33,980
+So the whole trust is a perception game, and that's what makes it tricky, because you have to perceive the perception of the other person.
+
+47
+00:05:33,980 --> 00:05:57,220
+So if we go back to where the trust comes from, as we understand, we are the dominant species at the moment on Earth, and what we understand is the key factor that has helped us get to this point is the fact that we could cooperate in a larger scale.
+
+48
+00:05:59,540 --> 00:06:03,020
+And the reason for that is that we could form an alliance.
+
+49
+00:06:04,860 --> 00:06:07,420
+And is that, does it make sense?
+
+50
+00:06:07,420 --> 00:06:18,040
+Yes, yes, like are you referring to, say, like the difference between the nomadic tribes as under transition towards the farming civilization?
+
+51
+00:06:18,120 --> 00:06:25,980
+Even far before that, the effective alliance where you can actually act as a group.
+
+52
+00:06:26,780 --> 00:06:29,120
+Did that arise from language?
+
+53
+00:06:29,120 --> 00:06:30,760
+That can be a very important factor.
+
+54
+00:06:30,760 --> 00:06:39,360
+So, yes, I believe that's very important to communicate that and create abstract concept that you can anchor on.
+
+55
+00:06:39,360 --> 00:07:02,280
+So let's say when you look at a pack of wolves, for example, if they have their own mechanisms to establish trust or even other social creatures, we have the ability to leveraging our language and the ability to understand abstract concepts and make it visible to both of us.
+
+56
+00:07:02,280 --> 00:07:08,340
+So both of us can actually understand we both share a certain value or both we belong to the certain group.
+
+57
+00:07:08,880 --> 00:07:20,860
+The tribe, all this, the ability to perceive and comprehend abstract concepts and communicate that it allows and has allowed us to form alliance.
+
+58
+00:07:20,860 --> 00:07:26,940
+And that is a very strong force.
+
+59
+00:07:27,100 --> 00:07:30,480
+We will protect the tribe rather than ourselves.
+
+60
+00:07:30,520 --> 00:07:31,560
+Yeah.
+
+61
+00:07:31,560 --> 00:07:35,280
+I think that's the evolution of trust.
+
+62
+00:07:35,280 --> 00:07:36,060
+Perfect, exactly.
+
+63
+00:07:36,360 --> 00:07:39,680
+So, we're talking about the forces and the leverage.
+
+64
+00:07:40,200 --> 00:07:50,780
+If you are just two or three, if you are 15 of you, and you can actually, all 15 of you can act as one entity, coordinate it, that's extremely powerful.
+
+65
+00:07:50,780 --> 00:07:54,200
+This is, again, goes back to emergence that I was talking about.
+
+66
+00:07:54,200 --> 00:08:01,480
+When in one layer, things are harmonic, they can create magnificent forces in the other layer.
+
+67
+00:08:01,480 --> 00:08:08,960
+When a group of waves can create a tide, if they are in sync with each other, and in engineering, we learn about resonance, basically.
+
+68
+00:08:08,960 --> 00:08:15,060
+When you sync up a few waves or a group of events, you can amplify the force.
+
+69
+00:08:15,060 --> 00:08:27,460
+That's where the age for trust has come, because we have built institutes or mechanisms, layer on layer on layer, on this core, which is the alliance, which is the trust.
+
+70
+00:08:27,460 --> 00:08:31,580
+And that's why we, that's why trust matters, and that's where the trust comes from.
+
+71
+00:08:31,800 --> 00:08:32,600
+If you have anything to add.
+
+72
+00:08:32,820 --> 00:08:38,900
+Yeah, it made me think, I think I was always busy looking up while you were talking, because I wanted to get the terminology right.
+
+73
+00:08:38,900 --> 00:08:55,400
+There's a concept called Dunbar's Number, proposed by British anthropologist, Robin Dunbar, who basically thinks there's the optimum or maximum number of people you can form a stable social relationship with.
+
+74
+00:08:55,400 --> 00:09:02,620
+And it's about 150 people, and that's a self-organizing, self-sustaining number.
+
+75
+00:09:02,620 --> 00:09:06,800
+Beyond that, you need something to strengthen the trust.
+
+76
+00:09:06,800 --> 00:09:10,280
+You need rules or evidence or something.
+
+77
+00:09:10,280 --> 00:09:22,620
+But there is that number that humans, and they've had evidence to support it, that humans sort of self-organize into groups of about that number, between 100 and 250.
+
+78
+00:09:22,620 --> 00:09:31,880
+And once you start getting beyond about 150, you need something besides the one-on-one relationship for the trust to still be there.
+
+79
+00:09:31,880 --> 00:09:33,180
+You need rules.
+
+80
+00:09:33,180 --> 00:09:35,800
+You need some evidence that backs up.
+
+81
+00:09:35,800 --> 00:09:41,360
+This is why I should trust, because we put something in place that gives me a reason to trust.
+
+82
+00:09:41,360 --> 00:09:41,640
+Yes.
+
+83
+00:09:41,640 --> 00:09:45,860
+So you're referring to, in common terms, an abstraction.
+
+84
+00:09:45,860 --> 00:09:46,560
+Yeah, yeah.
+
+85
+00:09:46,780 --> 00:10:05,500
+It goes from, I know these people and I trust them, through to, okay, this is too big a group for me to know everyone, but we've abstracted the concept of trust, and there are some rules and evidence-based things that's saying, okay, if it conforms to this, I still trust this group of 500 people.
+
+86
+00:10:05,500 --> 00:10:06,420
+Bigger tribe.
+
+87
+00:10:06,420 --> 00:10:09,260
+Yeah, yeah, it's a bigger tribe, and we agreed on the rules.
+
+88
+00:10:09,260 --> 00:10:11,720
+And yeah, the bigger it gets, the more rules you get.
+
+89
+00:10:11,720 --> 00:10:12,200
+Yeah.
+
+90
+00:10:12,200 --> 00:10:14,300
+And that's where we are today.
+
+91
+00:10:14,300 --> 00:10:15,560
+That's exactly right.
+
+92
+00:10:15,560 --> 00:10:22,720
+And that's where we have to substitute trust with some other mechanisms, basically to hold the organization together.
+
+93
+00:10:22,720 --> 00:10:29,520
+And that's where my interest comes in, because I find trust one of the most powerful tools.
+
+94
+00:10:29,520 --> 00:10:31,340
+If you think of a company, right?
+
+95
+00:10:31,340 --> 00:10:37,880
+In a company, when employees come together, normally trust is not what is actually fundamentally holding it.
+
+96
+00:10:37,900 --> 00:10:40,320
+It is the law.
+
+97
+00:10:40,320 --> 00:10:44,280
+And Noam Chomsky has a very interesting take on this.
+
+98
+00:10:44,520 --> 00:10:49,000
+It calls organizations later dictatorship bubbles.
+
+99
+00:10:49,000 --> 00:11:04,820
+When you think about it, Noam Chomsky, yeah, describes organizations like a corporates, dictatorship bubbles, like a bubble of dictatorship, kind of in a membrane of an organization.
+
+100
+00:11:05,220 --> 00:11:08,640
+And when you think about it, what if I interrupt?
+
+101
+00:11:08,640 --> 00:11:12,860
+Do you refer to like bubble of dictatorship?
+
+102
+00:11:12,860 --> 00:11:19,740
+Could that include like say a company itself being like an item of a society in some ways?
+
+103
+00:11:19,740 --> 00:11:28,740
+And like you could say that, god damn, my boss is a dictator, or like my boss actually listens to his group and tries to form consensus.
+
+104
+00:11:28,740 --> 00:11:29,300
+Is that?
+
+105
+00:11:29,300 --> 00:11:31,260
+It's not necessarily a bad word in this case.
+
+106
+00:11:31,900 --> 00:11:33,260
+I'm using it actually very loosely.
+
+107
+00:11:33,360 --> 00:11:48,700
+But the way a group of people, let's say a hundred people in a company, who belong to the company, go over there and all their efforts are coordinated to deliver a result, is not a result of them trusting each other or necessarily.
+
+108
+00:11:48,700 --> 00:11:50,540
+There are other forces that has replaced this.
+
+109
+00:11:50,540 --> 00:11:55,180
+And what I'm arguing is those are artificial and arbitrary.
+
+110
+00:11:55,180 --> 00:11:58,500
+And of course, there has been good reason for those things that exist.
+
+111
+00:11:58,500 --> 00:12:17,460
+But if we can replace those things, if those relationships can be based on trust and the cooperation emerges from the relationship with amongst the people, the result would be much, much different and more harmonic internally and with the external organization.
+
+112
+00:12:17,460 --> 00:12:52,780
+And you can also see this with teams of startups, for example, when they can sometimes work much harder with much less certainty around what they get, but what allows them to deliver this result, whereas a team with a manager is very hard time, the manager would have to get the same, even 10 percent of that result from a group of employees, is the fact that what brings them together is not enforced by laws or their need, that they know what they want and also they trust each other.
+
+113
+00:12:52,780 --> 00:13:01,400
+That's where the word trust becomes a bit abstract because I see trust as the perception of the other person's perception.
+
+114
+00:13:01,400 --> 00:13:18,240
+If three of us are working on the same group, I perceive your perception of what do you think about me, and the stronger I believe, you also believe that I'm also going to stick to this project, I'm going to back you, you would back me, and then that reinforces itself.
+
+115
+00:13:18,240 --> 00:13:22,340
+That's why trust is a bidirectional phenomenon.
+
+116
+00:13:22,340 --> 00:13:37,280
+I think it sort of takes advantage of the concept that a lot of the problems in the world is not a zero-sum game, and that if everybody contributes, then everybody actually gains more than what they put in as long as everybody contributes.
+
+117
+00:13:37,280 --> 00:13:52,780
+And in some ways, that also reminds me of how people try to subvert the game's show where you actually try to backstab each other by saying, I'm going to definitely try to screw you over.
+
+118
+00:13:53,180 --> 00:13:55,540
+I think, I can't remember what's the game's name, what it's called.
+
+119
+00:13:56,680 --> 00:13:57,620
+There's one of them.
+
+120
+00:13:57,620 --> 00:13:58,240
+Survival.
+
+121
+00:13:58,240 --> 00:13:58,980
+Yes, yes, yes.
+
+122
+00:13:58,980 --> 00:14:16,020
+So, the prisoner's dilemma is a very, very common university topic that is covered in psychology and I think it's very pertinent to what we're trying to speak here as well because it forms the basis that a lot of people already know and we could explain more about.
+
+123
+00:14:16,020 --> 00:14:16,460
+Yeah.
+
+124
+00:14:16,460 --> 00:14:17,460
+No, you're sure.
+
+125
+00:14:17,460 --> 00:14:18,160
+Yeah, we can.
+
+126
+00:14:18,160 --> 00:14:21,200
+Actually, anyone familiar with that prisoner's dilemma?
+
+127
+00:14:22,280 --> 00:14:24,740
+The prisoner's dilemma.
+
+128
+00:14:24,740 --> 00:14:25,840
+Now we're into psychology.
+
+129
+00:14:25,840 --> 00:14:29,820
+We've moved on from reality shows to psychology.
+
+130
+00:14:29,820 --> 00:14:46,320
+Talking about survivors, one where a group of people are put in an environment usually in Ireland and it's like now survive and form an alliance and because at a certain point you have to vote one person is getting kicked off and the last person wins a million dollars.
+
+131
+00:14:46,320 --> 00:14:58,140
+So, you form alliances and people sometimes rightly trust their alliance and sometimes are completely fooled by someone in their alliance, who's just doing machinations behind the scene.
+
+132
+00:14:58,140 --> 00:15:05,800
+And at a critical moment, they basically metaphorically stabbed someone in the back who thought they could trust them.
+
+133
+00:15:05,800 --> 00:15:12,820
+And as Brian pointed out, it plays into a common sort of philosophical discussion called the Prisoner's Dilemma.
+
+134
+00:15:12,820 --> 00:15:13,820
+Yeah.
+
+135
+00:15:13,820 --> 00:15:14,400
+That's very interesting.
+
+136
+00:15:14,520 --> 00:15:22,280
+I like since we were talking about the way organizations work, I had three use cases to discuss this topic.
+
+137
+00:15:22,280 --> 00:15:26,720
+That was one of them, and I thought I'd bring it up now as we on it.
+
+138
+00:15:26,720 --> 00:15:36,980
+One of the things that I noticed, it can be explored through the lens of trust is we work, we come together in terms of companies.
+
+139
+00:15:36,980 --> 00:15:51,780
+When you think about like a standard work agreement where you come and you feel in a certain time and then that's how much you get paid, and the way everyone's kind of coordinated, our work is coordinated in companies.
+
+140
+00:15:51,780 --> 00:16:05,320
+I trace it back to the whole design, even though it's not framed that way, even though you don't see it, I trace it to lack of trust, to the intention of people or to the desire of people.
+
+141
+00:16:06,480 --> 00:16:20,260
+And I want to explain this more because this makes it very clear for me, a lot of issues that we already see in the workforce because we have moved in the whole entire workforce.
+
+142
+00:16:20,260 --> 00:16:27,000
+The majority of it has moved from the type of work that we used to be doing when we put this structure in place.
+
+143
+00:16:27,000 --> 00:16:36,720
+We're still keeping these structures and mechanisms and terminologies and rules, even though the nature of our work has changed and what we do.
+
+144
+00:16:36,720 --> 00:16:52,160
+So the way I see it, the whole work structure is designed based on the assumption that when I go to work, I resent it, I don't like it, and any opportunity I get, I would choose it not to go to work.
+
+145
+00:16:52,160 --> 00:16:58,480
+And every process is put in place to make sure I deliver enough for the business before I run away.
+
+146
+00:16:58,480 --> 00:17:05,300
+I'm exaggerating a lot here, but you can trace this in all terminologies, the language, the rules.
+
+147
+00:17:05,300 --> 00:17:25,400
+So this is a fundamental problem because we are undermining what can allow us to come together and to help us tap into our collective intelligence or collective potential with designing our workforce in an entirely different way based on the lack of trust.
+
+148
+00:17:25,400 --> 00:17:28,240
+Andrew, what do you think about this observation?
+
+149
+00:17:28,240 --> 00:17:32,480
+Because this is just an observation that I've had about the design of the way we work.
+
+150
+00:17:33,320 --> 00:17:48,620
+Yeah, I mean, I think trust in a workplace is we collectivise action often because it's like if I act alone, I have to just trust everyone acts in my interest.
+
+151
+00:17:48,620 --> 00:17:56,200
+But if I get everyone to work as a collective, then we have more power and I don't have to trust as much.
+
+152
+00:17:56,200 --> 00:18:05,580
+Like, you know, bosses trust workers are going to do work and workers trust that bosses are going to give them decent conditions and decent remuneration.
+
+153
+00:18:06,720 --> 00:18:10,060
+And in a significant number of cases, that all holds true.
+
+154
+00:18:10,060 --> 00:18:20,420
+But yeah, then you get the case that when that trust breaks down, when someone breaks that trust, how much does the other party involved react?
+
+155
+00:18:21,860 --> 00:18:28,160
+And, you know, do you still continue to cooperate and trust and go, well, maybe it'll be better next time?
+
+156
+00:18:28,160 --> 00:18:31,380
+Or do you go for payback on the person that you feel broke your trust?
+
+157
+00:18:33,220 --> 00:18:53,720
+And also, the other thing about the trust, that also it works here, because you see that there's a lot of process and elements to kind of respond to you when you are not acting trustworthy, in a trustworthy way, automatically it makes you not trusting back.
+
+158
+00:18:53,720 --> 00:18:56,620
+And it makes you want basically to contribute less.
+
+159
+00:18:57,280 --> 00:19:05,980
+And the more organization, the more the bigger the organization becomes, the more trust is substituted by more arbitrary and artificial forces.
+
+160
+00:19:05,980 --> 00:19:09,620
+And that's where a lot of issues come from.
+
+161
+00:19:09,620 --> 00:19:17,320
+That's the reason I'm very interested in this particular topic, is that there are alternative ways to coordinate workforce.
+
+162
+00:19:17,320 --> 00:19:18,280
+Hi, this is your host.
+
+163
+00:19:18,280 --> 00:19:20,800
+I hope you're enjoying the talk so far.
+
+164
+00:19:20,800 --> 00:19:24,080
+Some of the interesting corporate structures out there are corruptives.
+
+165
+00:19:24,080 --> 00:19:32,260
+And as luck would have it, we have Anthony Magmulley in the audience, who is an expert when it comes to corruptives, as we will find out soon enough.
+
+166
+00:19:33,520 --> 00:19:35,560
+I suppose when you have...
+
+167
+00:19:35,560 --> 00:19:37,760
+There's two forms of employee ownership.
+
+168
+00:19:37,760 --> 00:19:39,080
+So there's a...
+
+169
+00:19:39,080 --> 00:19:48,660
+You can be in a company where they have broad-based employee ownership, so usually through shares.
+
+170
+00:19:49,900 --> 00:19:55,640
+And often that acts as a real incentive for people because they haven't just got a sense of ownership.
+
+171
+00:19:55,640 --> 00:20:00,640
+They do actually have an ownership stake in the business that they're working in.
+
+172
+00:20:00,640 --> 00:20:02,580
+So that's sort of one level.
+
+173
+00:20:02,580 --> 00:20:07,220
+And then with worker cooperatives, this is sort of the spectrum.
+
+174
+00:20:07,220 --> 00:20:19,560
+With worker cooperatives, you generally have that ownership stake, but you also have a set of principles that are around people working together democratically.
+
+175
+00:20:19,560 --> 00:20:26,880
+So then you have to figure out those sorts of issues that you mentioned before about the dumb bars or one of those sorts of things, you know.
+
+176
+00:20:26,880 --> 00:20:32,880
+Because you can't have everyone in the room making decisions for absolutely everything all the time.
+
+177
+00:20:32,880 --> 00:20:40,880
+So how do you actually structure teams and groups and people to have responsibility and then being democratically accountable?
+
+178
+00:20:41,800 --> 00:20:51,760
+So I suppose one of the key things that interests me is the relationship between shared ownership and democracy.
+
+179
+00:20:51,760 --> 00:21:05,600
+You know, because you could have a regular company that has a regular ownership structure by external shareholders with the board, the CEO having an actual ownership, the state having its shares and the rest don't.
+
+180
+00:21:05,600 --> 00:21:19,160
+You can have democracy within that, but if you don't match the democracy with the ownership, like that to me presents some problems.
+
+181
+00:21:19,160 --> 00:21:23,620
+So that's where economic democracy, I think, comes into it.
+
+182
+00:21:25,000 --> 00:21:26,940
+Not just formal democracy.
+
+183
+00:21:26,940 --> 00:21:32,560
+When you're talking about the governance, right, when you talk about democracy, the governance aspect of the organization.
+
+184
+00:21:32,960 --> 00:21:33,980
+Yeah, there's the governance.
+
+185
+00:21:33,980 --> 00:21:38,780
+So you could have a regular company, though, where everyone has more of a say.
+
+186
+00:21:38,780 --> 00:21:54,220
+But if you've still got a small group of owners, and most of the owners who are external to the business have nothing to do with the business, don't work in the business, their interests are to that this business is as profitable as possible, so they get a return on their investment.
+
+187
+00:21:54,220 --> 00:21:58,860
+Whereas in a worker cooperative, generally speaking, it flips it.
+
+188
+00:21:58,860 --> 00:22:04,360
+So the people who are working in the business have an ownership stake in the business.
+
+189
+00:22:04,360 --> 00:22:20,800
+And so they want to be able to work together, make decisions together, but they also know that, for example, if there's a profit share arrangement that's equitable, if this company goes really well, we're going to all do well on an equitable basis.
+
+190
+00:22:20,800 --> 00:22:38,040
+So I think the sort of the, like, we sometimes move democracy, we kind of think of it as something apart from things like ownership rights, whereas I think we need to think about those two things in tandem.
+
+191
+00:22:38,040 --> 00:22:40,140
+That's what interests me about working for one reason.
+
+192
+00:22:40,140 --> 00:22:43,400
+There's some good examples of them globally, but it's not a widespread thing.
+
+193
+00:22:43,900 --> 00:22:47,800
+Well, that's the approach that we're taking within our democracy, actually.
+
+194
+00:22:47,800 --> 00:22:49,660
+We're going to have the working court.
+
+195
+00:22:49,660 --> 00:23:05,060
+So the idea is that every, technically speaking, every single person in the plan would potentially have an equal financial share, one share only non-saleable, so it's not volatile in that sense.
+
+196
+00:23:05,060 --> 00:23:13,400
+But take that true democratic approach where we've all got equal say, where we've all got equal financial responsibility involved.
+
+197
+00:23:15,020 --> 00:23:26,620
+As you were saying before, when you've got a board of directors, that potentially undermines the democratic system that you may have sitting within the organisation itself.
+
+198
+00:23:26,620 --> 00:23:27,460
+Yeah.
+
+199
+00:23:27,460 --> 00:23:29,120
+So essentially, it's all third-carrying.
+
+200
+00:23:29,340 --> 00:23:29,780
+Yeah.
+
+201
+00:23:29,780 --> 00:23:36,000
+In a workers' cooperative, the members' workers will elect the board.
+
+202
+00:23:36,000 --> 00:23:40,620
+The issue you have, though, if you just have one share per person, it's not transferable.
+
+203
+00:23:42,820 --> 00:23:46,080
+And you do have that within co-ops as well, but you can...
+
+204
+00:23:46,080 --> 00:23:51,580
+Someone could get more, purchase more shares, and you can have some...
+
+205
+00:23:51,580 --> 00:23:59,200
+Like, you've got investment in a business or an enterprise is always a tricky thing, and that's a real issue for the co-op movement as well.
+
+206
+00:23:59,200 --> 00:24:02,460
+So, I hope that helps the conversation that you're having at the front.
+
+207
+00:24:02,460 --> 00:24:11,960
+Sorry, can I just ask you, so are there co-ops in Australia, or somewhere where some members have more shares than others?
+
+208
+00:24:11,960 --> 00:24:19,740
+Yeah, so, I mean, look, I'm a bit techy with this stuff, but in a co-op structure, you can't have more than 20%.
+
+209
+00:24:20,540 --> 00:24:31,060
+No individual member can have more than 20% of the issued share capital, but the thing with a co-op is that no matter what, it's one member, one vote.
+
+210
+00:24:31,060 --> 00:24:42,860
+The difference between a co-op and a company is that the more shares that you own in a company, generally speaking, the more votes that you have.
+
+211
+00:24:43,960 --> 00:24:50,620
+So it's really more of a device, within a corporate, generally speaking, is investment from the people that work there.
+
+212
+00:24:50,620 --> 00:25:04,740
+If they've invested more, then in proportion to the effort that they've made, the value that they've created, on an equitable, agreed basis, they may get some extra financial compensation.
+
+213
+00:25:04,740 --> 00:25:11,260
+And a business does need investment, and often it's gonna need external investors as well, which is a real challenge for co-ops.
+
+214
+00:25:11,260 --> 00:25:17,920
+Because you wanna keep the external investors away from the decision-making process.
+
+215
+00:25:17,920 --> 00:25:18,960
+So anyway.
+
+216
+00:25:18,960 --> 00:25:29,020
+I hope Anthony McMillan's explanation about co-opters was enlightening, as well as the complexity that comes in terms of maintaining its own integrity.
+
+217
+00:25:30,140 --> 00:25:40,580
+We then switched topics from co-opters towards how do parties maintain their own integrity, especially political parties.
+
+218
+00:25:40,580 --> 00:25:48,320
+So one of the things we were talking about was especially about this event called the American Southern Strategy.
+
+219
+00:25:51,400 --> 00:25:55,680
+That also reminds me of what makes a party a party.
+
+220
+00:25:55,680 --> 00:26:04,360
+If somebody goes into floods, a particular party with their own members and essentially takes over, then is that really the same party?
+
+221
+00:26:04,360 --> 00:26:10,740
+The key things I would mention in terms of the event is in America, there's this thing called the Southern Strategy.
+
+222
+00:26:10,880 --> 00:26:20,300
+If I remembered where all the great big swap, where the parties of the Republicans and the Democrats essentially swapped ideology.
+
+223
+00:26:20,320 --> 00:26:22,960
+And it's really weird.
+
+224
+00:26:22,960 --> 00:26:25,300
+I'm not sure how to elaborate on it.
+
+225
+00:26:25,300 --> 00:26:29,500
+Broadly, like civil war, the Southern States were Democrat.
+
+226
+00:26:29,500 --> 00:26:33,100
+They, Lincoln was a Republican.
+
+227
+00:26:33,100 --> 00:26:37,120
+The Republicans were the Northern elite, the intelligentsia.
+
+228
+00:26:37,420 --> 00:26:41,280
+The working class South were Democrat, racist as hell.
+
+229
+00:26:41,280 --> 00:26:46,160
+The North was racist as hell too, but they kind of started to draw the line at actual slavery.
+
+230
+00:26:46,160 --> 00:26:50,260
+And so that was until the 20th century.
+
+231
+00:26:50,260 --> 00:26:58,640
+And Democrat policy started to shift more towards progressive social justice things.
+
+232
+00:26:58,640 --> 00:27:01,120
+And the Republicans saw themselves losing power.
+
+233
+00:27:01,120 --> 00:27:02,220
+And they went, hey, you know what?
+
+234
+00:27:02,220 --> 00:27:04,920
+There's a bunch of angry white people in the South.
+
+235
+00:27:05,840 --> 00:27:13,800
+If we went down and panned it to them, we'd win all these previously Democrat states.
+
+236
+00:27:13,820 --> 00:27:15,860
+And it worked.
+
+237
+00:27:15,860 --> 00:27:25,360
+And in fact, the president, Lyndon Johnson, when he signed the Civil Rights Act, he was reported to have said, that's it, we've lost the South for two generations.
+
+238
+00:27:26,960 --> 00:27:36,240
+He did it because it was the right thing to do, but he said, that Republican Southern strategy is going to kick into high gear now, and it will take us ages to make the ground back.
+
+239
+00:27:36,240 --> 00:27:38,320
+But yeah, it is literally weird.
+
+240
+00:27:38,320 --> 00:27:44,680
+At one point, Democrats were the South, and were very popular with the racists.
+
+241
+00:27:44,680 --> 00:27:48,580
+The Republicans were the North, and were most against slavery.
+
+242
+00:27:48,580 --> 00:27:52,560
+Somewhere in the 20th century, it just went, and it's swapped.
+
+243
+00:27:52,600 --> 00:27:55,240
+You're quite knowledgeable about the Republican Party.
+
+244
+00:27:55,240 --> 00:27:59,240
+Yeah, so you're quite knowledgeable about the US and the Republican Party.
+
+245
+00:27:59,240 --> 00:28:01,140
+I'm a little bit obsessive about it, yes.
+
+246
+00:28:01,140 --> 00:28:04,400
+Because I'm the oldest person here.
+
+247
+00:28:05,540 --> 00:28:16,160
+And so I do know that maybe 20 or 30 years ago, there was at least a small group of people within the Republican Party who were quite left-wing.
+
+248
+00:28:16,160 --> 00:28:17,040
+Are they still there?
+
+249
+00:28:17,720 --> 00:28:22,260
+Well, there are certainly people in the US.
+
+250
+00:28:22,260 --> 00:28:29,060
+Republican Party who I would regard as thoroughly decent people and care about those less well off than them.
+
+251
+00:28:29,060 --> 00:28:32,740
+And you could argue they're progressive on a number of things.
+
+252
+00:28:32,740 --> 00:28:37,360
+They just probably are economically a bit conservative.
+
+253
+00:28:38,040 --> 00:28:42,500
+They don't agree with massive welfare programs, necessarily or not.
+
+254
+00:28:42,500 --> 00:28:45,920
+They're just not dictating policy and haven't for a couple of decades now.
+
+255
+00:28:46,760 --> 00:28:49,880
+I think the group that I'm thinking on is probably just at the end.
+
+256
+00:28:50,220 --> 00:28:54,000
+I think there's definitely reasonable people in the Republican Party.
+
+257
+00:28:54,000 --> 00:28:56,800
+I'm talking about people who are quite strongly at that point.
+
+258
+00:28:56,800 --> 00:29:03,820
+Well, look, for instance, one of the Democratic presidential nominees, Elizabeth Warren, started off as a Republican.
+
+259
+00:29:03,820 --> 00:29:13,140
+She thought she believed Republican ideology more, but as they shifted further and further to reactionary policy, she just went, I'm not on board with this anymore.
+
+260
+00:29:13,260 --> 00:29:15,700
+And she actually fit to the Democratic Party.
+
+261
+00:29:18,320 --> 00:29:32,700
+I suppose in our own country, we could reflect on the history of the White Australia Policy and how that was not always a so-called right-wing conservative cause.
+
+262
+00:29:32,700 --> 00:29:53,640
+There's very deep relationship between the labour movement and protectionism, and some of that kind of economically-driven policy in that area, which just makes the whole thing very interesting and complex.
+
+263
+00:29:53,640 --> 00:30:00,140
+But it's also back to your point, sort of around the tribalism stuff, you know?
+
+264
+00:30:00,140 --> 00:30:10,720
+Like I was reflecting today, I saw a Twitter thing where some racist people were tweeting out about a fire at one of the stations, one of the train stations.
+
+265
+00:30:10,720 --> 00:30:18,820
+And all the comments were, well, of course, they're those lovely African people and really horrible kind of comments.
+
+266
+00:30:18,820 --> 00:30:23,460
+You sort of wonder, you know, what's the tribal things that is?
+
+267
+00:30:23,460 --> 00:30:26,360
+Because there's this good tribal trust thing.
+
+268
+00:30:26,360 --> 00:30:30,560
+And then there's this other thing where they're kind of different from us.
+
+269
+00:30:31,880 --> 00:30:32,520
+Yeah.
+
+270
+00:30:32,520 --> 00:30:34,480
+I love it.
+
+271
+00:30:34,480 --> 00:30:35,300
+You love tribalism?
+
+272
+00:30:35,360 --> 00:30:55,260
+No, I love it when there's, I think the term is cognitive dissonance, when people get an acute sharp moment in their understanding, their beliefs, which is flipped, yeah, flipped upside down in an instant.
+
+273
+00:30:55,260 --> 00:31:10,040
+And you can actually, I watched Lee Sayles one time when she was interviewing a liberal party politician discussing immigration.
+
+274
+00:31:10,060 --> 00:31:27,560
+And the current discourse was that anyone who was against immigration is a racist, or wants lower levels of immigration is a racist.
+
+275
+00:31:27,760 --> 00:31:43,440
+And you could see, and I forget who her guest was, which politician, but he very eloquently phrased his arguments in different terms.
+
+276
+00:31:43,440 --> 00:31:55,080
+And you could see that moment where she went, fuck, it's like, and her whole world, as she knew it, was flipped in that millisecond.
+
+277
+00:31:55,180 --> 00:32:09,500
+And it's fascinating how it can, what you were saying before about racism and the blacks getting votes.
+
+278
+00:32:09,500 --> 00:32:28,200
+I'll bet you there were millions of people around Australia who had their moment, their split, their awakening moment, which is, you know, when they realized that, oh, blacks weren't lazy, violent drunks, that they actually had a brain.
+
+279
+00:32:28,220 --> 00:32:44,220
+And, you know, and then I find that, you know, that's profound and, you know, we've sort of gone off on a tangent here, talking about conceptualizing and philosophy in a way.
+
+280
+00:32:44,220 --> 00:32:52,820
+But, you know, that's really, like getting to the heart of the polarity in US politics.
+
+281
+00:32:53,000 --> 00:32:59,380
+And you were talking about there are Republicans that are very left-leaning, broadly.
+
+282
+00:32:59,380 --> 00:33:06,180
+Yeah, I mean, you get those moments, and politicians flipping sides.
+
+283
+00:33:06,180 --> 00:33:11,060
+But, you know, we need to remove sides.
+
+284
+00:33:11,060 --> 00:33:13,920
+Like, sides are stupid.
+
+285
+00:33:13,920 --> 00:33:14,640
+They really are.
+
+286
+00:33:15,380 --> 00:33:45,620
+Like, but calling yourself left or right is so ludicrous, because there are a million issues that make up someone's reference, and who they are, and you could get a so-called lefty and a so-called righty agreeing on ten things out of fifty, that they were, you know, but it's all maybe on five hundred things out of ten thousand things.
+
+287
+00:33:45,920 --> 00:33:47,340
+It's much more complex than that.
+
+288
+00:33:47,340 --> 00:33:50,260
+You're calling yourself a lefty or a righty.
+
+289
+00:33:52,060 --> 00:33:57,040
+This is, this gets into topic of identity, group identities.
+
+290
+00:33:57,040 --> 00:33:57,980
+So it's not that easy.
+
+291
+00:33:57,980 --> 00:33:59,260
+Tribalism and tribalism.
+
+292
+00:33:59,300 --> 00:34:15,860
+Yeah, but it's not, it's a very, it's also a natural thing because we, to form alliance and to be able to act as a bigger group of people, to have influence, you need to be able to identify as a group.
+
+293
+00:34:15,860 --> 00:34:18,739
+You need anchors, you need words.
+
+294
+00:34:18,739 --> 00:34:23,360
+You need to be able to, in the past, traditions or religions would serve that purpose.
+
+295
+00:34:23,360 --> 00:34:24,360
+So you would say, I'm Jewish.
+
+296
+00:34:24,360 --> 00:34:25,480
+You're Jewish, that's it.
+
+297
+00:34:25,480 --> 00:34:26,600
+So I know I can back you.
+
+298
+00:34:26,600 --> 00:34:40,139
+I know what kind of things you are, what kind of, I mean, as an entity, what kind of, I can build my perceptions about your values, your reactions, interactions, and what I can expect happens.
+
+299
+00:34:40,139 --> 00:34:42,300
+It's reliable, right?
+
+300
+00:34:43,480 --> 00:34:56,940
+So as we're losing that, we are subconsciously, I believe, in this society, we're trying to find those identities that we can grasp on, right?
+
+301
+00:34:57,080 --> 00:34:59,160
+And identify as.
+
+302
+00:34:59,160 --> 00:35:08,940
+And that's true, if we could all talk about complex topics all the time, that would be perfect, but it's not how things actually happen.
+
+303
+00:35:08,940 --> 00:35:10,660
+This is the challenge, I would say.
+
+304
+00:35:10,660 --> 00:35:11,940
+This is the challenge, because...
+
+305
+00:35:11,940 --> 00:35:27,780
+Social media, I believe, and technology, and the information age, I believe, has played a big part in the shift towards polarizing in belief.
+
+306
+00:35:27,780 --> 00:35:32,920
+And you're saying that we've...
+
+307
+00:35:32,920 --> 00:35:44,020
+I totally agree with you that we're floundering, and people in the information age are looking for a new structure, but they haven't realized it yet.
+
+308
+00:35:45,960 --> 00:35:55,900
+I'm not suggesting, looking from outside, what I'm seeing is that people would need to identify as a group, and this is their way by leveraging on words.
+
+309
+00:35:55,900 --> 00:35:57,540
+And then it's flawed, right?
+
+310
+00:35:58,500 --> 00:36:02,420
+And this is where the actual issues come from.
+
+311
+00:36:02,420 --> 00:36:10,660
+When we were talking about Republicans, it just was very interestingly related, you know, as like the whole impeachment is happening.
+
+312
+00:36:11,300 --> 00:36:17,000
+The fact that Republicans have managed to stay united, right, regardless of what the topic is, right?
+
+313
+00:36:17,120 --> 00:36:23,440
+They're around one thing, that we're all Republicans, we're gonna stick together, regardless of what the argument is, right?
+
+314
+00:36:23,440 --> 00:36:25,020
+That's their approach.
+
+315
+00:36:25,020 --> 00:36:28,320
+And this is what I'm talking about.
+
+316
+00:36:29,100 --> 00:36:41,080
+This is now, again, trust is playing out because they all need to trust the fact that none of them is gonna kind of split, because at any point, the whole thing may collapse.
+
+317
+00:36:41,080 --> 00:36:43,560
+And the sooner you leave the camp, the better it is.
+
+318
+00:36:44,580 --> 00:36:54,840
+But if all of you trust each other, you can actually stick and fight back, regardless of the arguments, and regardless of how bad the evidence is against you.
+
+319
+00:36:54,840 --> 00:37:00,900
+So can I ask you, do you think that the Republicans have trust in each other?
+
+320
+00:37:01,200 --> 00:37:02,660
+I'm just looking from outside.
+
+321
+00:37:02,660 --> 00:37:04,600
+I think they don't trust each other.
+
+322
+00:37:04,600 --> 00:37:12,960
+When I see there is no vote from Republicans, zero vote from Republicans, to me, it means and there is no argument again.
+
+323
+00:37:12,960 --> 00:37:15,340
+Yeah, it's very, very cohesive, basically.
+
+324
+00:37:15,340 --> 00:37:17,120
+This is what I see.
+
+325
+00:37:17,120 --> 00:37:37,980
+And I'm not suggesting it's good or bad, but what I'm seeing, the group dynamic that I'm observing, relating it back to this topic, that it's also, I also want to relate this to other situations where there's a perception, the whole trust is perception, I think we all agree on this.
+
+326
+00:37:38,560 --> 00:37:42,240
+The perception starts breaking, and all of a sudden the whole thing flips.
+
+327
+00:37:42,240 --> 00:37:45,680
+This can also happen here, and we probably may see it.
+
+328
+00:37:45,680 --> 00:38:20,560
+An example that I remember was when in the financial market around 10 years ago, when there was a rumor about Greece getting loaned from the EU, which wasn't true, but that caused the whole euro to fall very badly because of the rumor, because that was an example where the whole alliances were built on some fundamental assumptions or perception that when that gets shattered, then everything starts collapsing.
+
+329
+00:38:20,560 --> 00:38:24,500
+And with this left and right, we also see that.
+
+330
+00:38:24,500 --> 00:38:30,060
+And the trouble with that is the recovery is not that easy.
+
+331
+00:38:30,060 --> 00:38:42,160
+So once a concept like left or right gets, once you have always been kind of identifying as a group, and then when you lose it, it's not easy to just go to a different camp.
+
+332
+00:38:42,160 --> 00:38:48,760
+I'm not too sure if this is relevant directly to the point, but it reminds me of Penny Rong.
+
+333
+00:38:48,760 --> 00:38:54,740
+And the fact that, you know, Penny Rong is known as being a pro-LGBT.
+
+334
+00:38:55,500 --> 00:39:08,920
+But like when she was in politics at that time, before the gay marriage debate, like she was pretty much saying that she was following the Labour Party line of no gay marriage.
+
+335
+00:39:08,920 --> 00:39:19,320
+And I think during a Q&amp;A session, there were one of the person was saying, we know you're not this person, like Labour knows you're not this person and et cetera.
+
+336
+00:39:19,320 --> 00:39:20,540
+So what's going on here?
+
+337
+00:39:21,180 --> 00:39:30,740
+And so there's this aspects of a party is not really a one dimensional kind of ideology, but actually made up of lots of different kind of ideology.
+
+338
+00:39:30,740 --> 00:39:41,120
+But then this need of presenting a unity, because otherwise other party may try to attack you and break the trust in that sense.
+
+339
+00:39:41,120 --> 00:39:42,200
+So is that important?
+
+340
+00:39:42,500 --> 00:39:44,760
+I would say what I, cause people often bring that up.
+
+341
+00:39:44,760 --> 00:39:47,200
+They say ridiculous things about Penny Wong.
+
+342
+00:39:47,320 --> 00:39:49,640
+She's a lesbian and the same.
+
+343
+00:39:49,640 --> 00:39:54,220
+She was anti LGBT rights because she towed the party line.
+
+344
+00:39:54,220 --> 00:39:58,280
+What I honestly think was happening there, that's when Julia Gillard was prime minister.
+
+345
+00:39:58,280 --> 00:40:02,240
+She was under attack on a hundred different fronts.
+
+346
+00:40:02,240 --> 00:40:03,940
+Most of them quite unreasonable.
+
+347
+00:40:03,940 --> 00:40:05,780
+Some of them were probably quite reasonable.
+
+348
+00:40:05,780 --> 00:40:11,360
+And there was the bubbling up of, should we be pushing for marriage equality?
+
+349
+00:40:11,360 --> 00:40:14,320
+I honestly, and Julia Gillard was an atheist.
+
+350
+00:40:14,680 --> 00:40:18,700
+Julia Gillard has no objection to gay people or gay marriage.
+
+351
+00:40:18,700 --> 00:40:19,840
+She just doesn't.
+
+352
+00:40:19,840 --> 00:40:26,460
+But I honestly believe she just pulled Penny Wong into a room and said, I can't have another cultural battle.
+
+353
+00:40:26,460 --> 00:40:27,440
+It'll destroy us.
+
+354
+00:40:27,440 --> 00:40:29,100
+I'm barely holding on.
+
+355
+00:40:29,100 --> 00:40:30,820
+I've got a minority government.
+
+356
+00:40:30,820 --> 00:40:32,440
+I just can't do it.
+
+357
+00:40:32,440 --> 00:40:37,840
+I need you to basically support policy that says you're less than human.
+
+358
+00:40:37,840 --> 00:40:45,820
+And Penny Wong, my god, she must be the most loyal person on the planet, because she said, I'll support the party line.
+
+359
+00:40:46,420 --> 00:40:47,640
+I think it's obvious.
+
+360
+00:40:47,640 --> 00:40:53,260
+It's the opposite of what she wanted, but it was just a really harsh political environment.
+
+361
+00:40:53,260 --> 00:40:59,220
+And she put party needs above her own, which is wild, but she did.
+
+362
+00:40:59,740 --> 00:41:01,320
+Why is it a strange thing?
+
+363
+00:41:02,980 --> 00:41:05,580
+Because it's just a matter of timing.
+
+364
+00:41:10,260 --> 00:41:13,300
+Gay and lesbian marriage was coming.
+
+365
+00:41:13,300 --> 00:41:14,660
+It was just a matter of time.
+
+366
+00:41:14,760 --> 00:41:28,020
+True, but it put, for many years, put Penny Wong in the position of having to repeatedly say, I support a policy that by definition regards me as less than other people.
+
+367
+00:41:28,020 --> 00:41:29,660
+And she never blinked.
+
+368
+00:41:29,660 --> 00:41:39,140
+That's a degree of loyalty that I, I, I, whoa, it's just literally that the policy that say you don't have the right to do this.
+
+369
+00:41:39,140 --> 00:41:41,880
+It's saying you deserve less human rights than other people.
+
+370
+00:41:41,880 --> 00:41:44,120
+That's pure, pure tribalism.
+
+371
+00:41:44,120 --> 00:41:45,680
+Yeah, that's hardcore.
+
+372
+00:41:45,680 --> 00:41:49,760
+I am going with the tribe over my own short-term needs.
+
+373
+00:41:49,760 --> 00:41:51,760
+And that, that was amazing.
+
+374
+00:41:52,480 --> 00:41:53,780
+I don't think it's the sort of thing I can do.
+
+375
+00:41:53,780 --> 00:42:02,520
+That's a really interesting thing here, because like I think initially the tone of our conversation initially was that tribalism is bad.
+
+376
+00:42:02,520 --> 00:42:11,240
+Well, yeah, it's, as you say, I think in almost any system, the good points and the bad points are the same thing.
+
+377
+00:42:11,240 --> 00:42:12,700
+It just depends how they go.
+
+378
+00:42:12,700 --> 00:42:15,580
+A tribe is loyal to each other.
+
+379
+00:42:15,580 --> 00:42:16,860
+That is good.
+
+380
+00:42:16,860 --> 00:42:25,220
+A tribe can end up being loyal to each other in a way that flies in the face of logic or decency that is bad.
+
+381
+00:42:25,220 --> 00:42:28,860
+I looked something up because I wanted to get it right because it was reasonably complicated.
+
+382
+00:42:28,860 --> 00:42:31,760
+And someone talked about it.
+
+383
+00:42:31,760 --> 00:42:33,060
+And they're talking about America.
+
+384
+00:42:33,060 --> 00:42:39,220
+They're an American talking about the rise of tribal epistemology and epistemology is a branch.
+
+385
+00:42:39,220 --> 00:42:40,760
+We're back into philosophy.
+
+386
+00:42:42,120 --> 00:42:48,720
+It has to do with knowing reality, coming to know reality and accepting things as true and reality.
+
+387
+00:42:49,360 --> 00:43:05,700
+And what this person is saying that their view, tribal epistemology is when the tribal bond rejects actual epistemological principles.
+
+388
+00:43:05,700 --> 00:43:11,620
+In fact, you stop trying to find an objective truth because it could weaken the tribe.
+
+389
+00:43:11,620 --> 00:43:13,080
+And that's where you see the thing.
+
+390
+00:43:13,080 --> 00:43:16,260
+It's not limited to the right and the extreme right.
+
+391
+00:43:16,260 --> 00:43:21,720
+It's not limited to the US, but you really see it in the right and the extreme right, in the US.
+
+392
+00:43:21,720 --> 00:43:23,520
+The actual rejection of&#8230;
+
+393
+00:43:23,520 --> 00:43:24,640
+Oh, I love that.
+
+394
+00:43:24,660 --> 00:43:25,560
+Oh, yeah, no, no, no.
+
+395
+00:43:25,560 --> 00:43:26,380
+That's what I was saying.
+
+396
+00:43:26,500 --> 00:43:27,600
+It's not limited to&#8230;
+
+397
+00:43:27,600 --> 00:43:36,560
+But you see it in a really pronounced way in the US, in the extreme right, an aggressive rejection of facts.
+
+398
+00:43:36,560 --> 00:43:38,080
+Or what about the impeachment?
+
+399
+00:43:38,080 --> 00:43:40,380
+Support of the impeachment process.
+
+400
+00:43:40,380 --> 00:43:41,180
+I mean, that's a&#8230;
+
+401
+00:43:41,180 --> 00:43:43,220
+Well, that was actually the trigger of this.
+
+402
+00:43:43,420 --> 00:43:43,560
+Yeah.
+
+403
+00:43:44,020 --> 00:44:01,580
+It's a pure example of the left being blindly supporting something that's wasting so much national time, and possibly, and so many other US issues should be being debated in Congress at the moment.
+
+404
+00:44:01,800 --> 00:44:03,960
+And they're just devoting so much time.
+
+405
+00:44:03,960 --> 00:44:06,780
+Like, that's, you know, where I sit.
+
+406
+00:44:06,960 --> 00:44:12,680
+But, I mean, but everyone else, you know, so many things is being swept under the...
+
+407
+00:44:12,680 --> 00:44:27,760
+I mean, Trump, I don't like Trump, but, but, you know, the, basically, the entire political system in the US is dysfunctional, and it's the same with the British system with three years of Brexit debate.
+
+408
+00:44:27,760 --> 00:44:31,000
+I mean, basically nothing else was debated for three years.
+
+409
+00:44:31,000 --> 00:44:31,400
+Yeah.
+
+410
+00:44:31,400 --> 00:44:33,780
+I think this all makes good sense, because...
+
+411
+00:44:35,820 --> 00:44:37,560
+Well, let's not get it all.
+
+412
+00:44:39,020 --> 00:44:58,160
+Vladimir Putin saw the largest country in the world being smashed to pieces by a tiny handful of people, backed by foreigners, and his thinking is, well, if you're going to smash my country, I'll smash yours.
+
+413
+00:44:58,160 --> 00:44:59,320
+And he's doing a damn good job.
+
+414
+00:45:01,400 --> 00:45:04,100
+And in the US is he?
+
+415
+00:45:04,100 --> 00:45:14,480
+Well, you found those, your sort of fake Facebook pages, but they were both extreme left and extreme right because the people behind them said, if I start a fight, it doesn't matter who wins.
+
+416
+00:45:14,480 --> 00:45:17,520
+The fight weakens the people who are fighting.
+
+417
+00:45:17,520 --> 00:45:20,760
+And that to me was the most fascinating thing in that.
+
+418
+00:45:20,760 --> 00:45:26,060
+But I mean, you're not wrong about the time-wasting in US politics.
+
+419
+00:45:26,060 --> 00:45:30,380
+I'd argue they'd still be wasting time if impeachment wasn't up to the point.
+
+420
+00:45:30,380 --> 00:45:32,300
+Well, it's a huge failing in the system, then.
+
+421
+00:45:32,860 --> 00:45:39,480
+If politicians are spending so much time fighting in an adversarial political system.
+
+422
+00:45:39,480 --> 00:45:42,660
+So what I'm, like, this is, I'm observing all this.
+
+423
+00:45:42,660 --> 00:45:43,500
+It's very interesting.
+
+424
+00:45:43,500 --> 00:45:52,180
+Now, the question for me is, I can see to be effective, the bit of a tribalism sounds like it's working, whether it's good or bad, right?
+
+425
+00:45:52,180 --> 00:45:53,760
+Depends on what you're looking at.
+
+426
+00:45:53,760 --> 00:45:55,300
+But you need to make compromises.
+
+427
+00:45:55,400 --> 00:45:58,380
+The examples that you made, they're compromises.
+
+428
+00:45:58,380 --> 00:46:03,120
+And so there would be a big group of people paying the cost for those compromises.
+
+429
+00:46:03,120 --> 00:46:14,120
+And because those are those compromises, those whom their principle is against those compromises may choose not to form alliance or contribute, which weakens them, basically.
+
+430
+00:46:14,120 --> 00:46:20,580
+This means, let's say, collectively, let's say in Australia, there are complex subjects.
+
+431
+00:46:20,580 --> 00:46:32,660
+And but because there's all these differences, and we don't necessarily want to compromise on any to form alliance, make a big group, there's no big group that is effective.
+
+432
+00:46:32,660 --> 00:46:40,020
+And we're left with smaller groups that make all the compromises, but they're effective because they're tribal, right?
+
+433
+00:46:40,020 --> 00:46:45,840
+So the question is, or the challenge is, how can we kind of get out of this situation?
+
+434
+00:46:45,940 --> 00:46:48,560
+Or what kind of approaches we can have?
+
+435
+00:46:48,560 --> 00:47:02,280
+So that there wouldn't be no compromise, or less compromise needed to be made, to allow a larger group of people to lift an issue off.
+
+436
+00:47:02,280 --> 00:47:02,960
+You know what I'm saying?
+
+437
+00:47:02,960 --> 00:47:05,480
+Well, I think you need a different structure.
+
+438
+00:47:05,480 --> 00:47:06,060
+What would that help?
+
+439
+00:47:06,060 --> 00:47:10,840
+Because at the moment, I may agree with you on something, but not agree on the other thing.
+
+440
+00:47:10,840 --> 00:47:16,180
+And because we can't find any board, I wouldn't identify with you in a certain group.
+
+441
+00:47:16,180 --> 00:47:18,260
+And both of us get disempowered.
+
+442
+00:47:18,260 --> 00:47:22,840
+So we had an example of different groups, if you can bring it back, if you may.
+
+443
+00:47:22,840 --> 00:47:23,460
+Oh, yes.
+
+444
+00:47:23,460 --> 00:47:26,020
+Different groups are working on democracy.
+
+445
+00:47:27,120 --> 00:47:34,800
+These groups are collectively, in a way, in a minority of those who are actively trying to change things in a good way.
+
+446
+00:47:34,800 --> 00:47:41,660
+So logically, they all need to be together, have one voice, to push this big stone, right?
+
+447
+00:47:41,660 --> 00:47:52,320
+But what actually we see happens is that they get into internal arguments, because at the moment there is no one big word that everyone can strongly identify.
+
+448
+00:47:52,320 --> 00:47:54,700
+This is just an observation.
+
+449
+00:47:54,700 --> 00:48:09,740
+Whereas those with much less, let's say, valuable principles or honorable principles, because they are, they choose to identify, they choose to make compromises, and they identify under one banner, that gives them power.
+
+450
+00:48:09,740 --> 00:48:12,160
+So the question is, Power, power.
+
+451
+00:48:12,160 --> 00:48:12,460
+Power.
+
+452
+00:48:12,460 --> 00:48:14,220
+It's all about power, because that's the-
+
+453
+00:48:14,220 --> 00:48:14,940
+Just a note for the-
+
+454
+00:48:14,940 --> 00:48:16,880
+Tribalism is about power.
+
+455
+00:48:16,880 --> 00:48:19,380
+Just a note for the audio.
+
+456
+00:48:19,380 --> 00:48:29,920
+What is referring to by the group is groups such as Secure Vote Horizon State, Neel Vote Policy and Comparative Flux, My Vote, Neel Democracy, and us, Designing Open Democracy.
+
+457
+00:48:30,200 --> 00:48:31,820
+So this is the challenge basically.
+
+458
+00:48:32,460 --> 00:48:47,060
+How can we, without needing to identify as one thing, even though there are different approaches, find one thing that brings all of us, in this case, together, and act as one entity and still be effective.
+
+459
+00:48:47,060 --> 00:48:50,520
+Why not needing to compromise on any of your values?
+
+460
+00:48:50,520 --> 00:48:52,260
+To me, that's the huge challenge.
+
+461
+00:48:52,260 --> 00:48:52,980
+This is the challenge.
+
+462
+00:48:54,140 --> 00:49:01,580
+So this is, okay, I'm getting excited now because this is where philosophy becomes very interesting for me, because by understanding...
+
+463
+00:49:01,580 --> 00:49:25,060
+So I may not be able to express myself very well, especially in one too many settings, but when you actually analyze how a concept like trust comes to be and influence and gets influenced, then you can actually find those triggers in the system that you can influence, and you can solve these issues in a systematic way.
+
+464
+00:49:25,060 --> 00:49:32,260
+Or set up the environment for the solution to emerge, right?
+
+465
+00:49:32,260 --> 00:49:32,980
+It can be.
+
+466
+00:49:32,980 --> 00:49:49,160
+Once we understand philosophically how things come about, because we did that in science, so we discovered electromagnetic fields, then we had a technology, let's say wireless Wi-Fi, and now we have the actual appliances that we're actually using it.
+
+467
+00:49:49,160 --> 00:49:55,940
+Step by step by understanding, then we manage now to capture that power and use it for ourselves, basically.
+
+468
+00:49:56,940 --> 00:49:59,300
+This is the flow that I like to see.
+
+469
+00:49:59,700 --> 00:50:08,480
+If I may, I just thought of an example that I think would resonate with this group, of the way the philosophy kind of helped.
+
+470
+00:50:08,480 --> 00:50:12,920
+Cooperatives, I think we have two people in cooperatives.
+
+471
+00:50:12,920 --> 00:50:16,480
+Farmers cooperatives apparently are not that successful.
+
+472
+00:50:16,480 --> 00:50:23,440
+My grandfather was a farmer, so I'm a bit familiar with the concepts, but then I was not into any of these things.
+
+473
+00:50:23,440 --> 00:50:25,020
+But I'm a bit familiar with these concepts.
+
+474
+00:50:25,820 --> 00:50:33,800
+And I looked at it once, and there are a lot of research and books about why cooperatives fail.
+
+475
+00:50:33,800 --> 00:50:44,520
+Because like a very, very quick background, the supply chain of food agriculture is huge potential to exploit farmers, right?
+
+476
+00:50:44,520 --> 00:50:53,040
+Because they're desperate, they're very uncertain industry, they're desperate for cash flow, and you can buy a head with low money, right?
+
+477
+00:50:53,120 --> 00:50:57,620
+And you can exploit it by misinformation and them being separate from each other.
+
+478
+00:50:57,620 --> 00:51:01,320
+Cooperative sounds like a perfect match to fix the problem.
+
+479
+00:51:01,320 --> 00:51:06,420
+That reminds me of the $1 milk, real worths and coals competition.
+
+480
+00:51:06,420 --> 00:51:19,240
+Yeah, there was this competition between real worths and like coals and other super market, but I understand to try to like beat each other in terms of milk prices, and it's impacted a lot of like our milk farmers.
+
+481
+00:51:19,240 --> 00:51:19,880
+Impacted them.
+
+482
+00:51:20,280 --> 00:51:21,340
+Yes, right.
+
+483
+00:51:21,340 --> 00:51:28,660
+Drove the prices right down to basically half, in real terms, half what they used to be, like a dollar a litre.
+
+484
+00:51:28,660 --> 00:51:31,220
+So the pressure was put on the farmers, as I was saying.
+
+485
+00:51:31,220 --> 00:51:37,460
+You need to, and it was the big two, because they're the only ones with the market power to do it.
+
+486
+00:51:37,460 --> 00:51:42,920
+And they basically said to suppliers, sell it to us for cheaper, sell it to us for cheaper.
+
+487
+00:51:44,380 --> 00:51:48,660
+And basically all of the smaller dairies said, we can't stay in business.
+
+488
+00:51:49,200 --> 00:51:54,840
+I think there's a couple of mega dairies that are supplying the supermarkets.
+
+489
+00:51:54,840 --> 00:51:59,760
+But in this case, milk in Australia used to essentially be a cooperative.
+
+490
+00:51:59,760 --> 00:52:01,140
+It's communism, basically.
+
+491
+00:52:01,140 --> 00:52:02,880
+The government controlled the market.
+
+492
+00:52:02,880 --> 00:52:08,820
+Dairy farmers were paid a set amount, no matter how much or how little they produced.
+
+493
+00:52:08,820 --> 00:52:10,260
+That's most of the 20th century.
+
+494
+00:52:10,260 --> 00:52:15,240
+Australian agriculture was virtually a cooperative in as much as everyone.
+
+495
+00:52:15,300 --> 00:52:17,420
+I think wool worked the same way.
+
+496
+00:52:18,440 --> 00:52:25,620
+The government would buy all the wool from the wool producers, and they would stockpile it, and they would guarantee a certain price.
+
+497
+00:52:25,620 --> 00:52:30,600
+And if the overseas demand for the wool wasn't high enough to pay the price, they would just stockpile it.
+
+498
+00:52:30,600 --> 00:52:33,340
+There would be warehouses full of wool.
+
+499
+00:52:33,680 --> 00:52:35,320
+That would be the wool board.
+
+500
+00:52:35,320 --> 00:52:36,340
+The wool board, yeah.
+
+501
+00:52:36,340 --> 00:52:38,700
+And it got too volatile.
+
+502
+00:52:38,700 --> 00:52:47,920
+They said, oh my god, we've got like 20 years of wool stored up, and we're having to use taxes to pay the wool producers to keep producing.
+
+503
+00:52:47,920 --> 00:52:50,520
+But economically, it makes no sense for them to do that.
+
+504
+00:52:50,520 --> 00:52:53,100
+Because the market forces are not playing out naturally.
+
+505
+00:52:53,100 --> 00:52:55,120
+And that's it all started to fall.
+
+506
+00:52:55,120 --> 00:52:57,140
+And it was the conservatives who did it.
+
+507
+00:52:57,140 --> 00:53:03,180
+The conservatives pushed to break this up and just broke capitalism.
+
+508
+00:53:03,180 --> 00:53:09,760
+Whereas, you know, most of the farmers vote conservative, but it was the conservative parties who broke up these.
+
+509
+00:53:09,760 --> 00:53:12,220
+They were really cooperatives, but they kind of sort of were.
+
+510
+00:53:12,360 --> 00:53:15,140
+They were certainly really large cooperatives.
+
+511
+00:53:15,140 --> 00:53:23,620
+And if we look in Victoria with milk, and there was a fixed price for milk.
+
+512
+00:53:23,620 --> 00:53:27,600
+So once you remove that, there was a fixed price for milk.
+
+513
+00:53:28,140 --> 00:53:28,760
+Yeah.
+
+514
+00:53:28,860 --> 00:53:30,400
+The government, then the cooperative.
+
+515
+00:53:31,020 --> 00:53:36,300
+They just said, dairy farmers will be paid this set amount, no matter what.
+
+516
+00:53:36,300 --> 00:53:38,180
+And so dairy farmers are like, yay.
+
+517
+00:53:38,180 --> 00:53:42,640
+That also worked in terms of having this really large cooperative for the most part.
+
+518
+00:53:42,640 --> 00:53:49,440
+And so you had that fixed price, and then that went, and then you had this sort of price war.
+
+519
+00:53:49,440 --> 00:53:57,380
+It's interesting when you look at all of us, West Farmers was originally a cooperative, so before it was sort of sold off.
+
+520
+00:53:57,380 --> 00:54:01,640
+So you would have had the farmer's interests more at heart.
+
+521
+00:54:01,640 --> 00:54:16,920
+So that goes, and then that particular cooperative, Murray Goldwyn, took on a lot of external investment that wasn't members, and they wanted to return on investment, and they made some risks.
+
+522
+00:54:16,920 --> 00:54:22,300
+They took some risks internationally, and so you had a whole bunch of problems there.
+
+523
+00:54:22,300 --> 00:54:38,860
+But I think one of the really interesting things that I think, well, this sort of conversation and something like, is back to that prisoners dilemma question, because you've got a whole bunch of people that do business together for the common good.
+
+524
+00:54:39,260 --> 00:54:52,000
+That means at different times, you'll have winners and losers living in that group, and you've got to feel comfortable with losing short term, having a long term gain for everyone.
+
+525
+00:54:52,000 --> 00:55:00,700
+That doesn't really sit well with the rest of our economy, and it also doesn't always sit well with our human nature either.
+
+526
+00:55:00,700 --> 00:55:12,540
+Like, I think the scientific experiment of getting monkeys to choose, like Gamble, found that essentially monkeys hate losing more than they like winning it.
+
+527
+00:55:12,540 --> 00:55:28,660
+But with the Prisoner's Elimination, correct me if I'm wrong, is that you've got two prisoners, that if they stick together in this difficult situation, they'll both get a sentence, but it will be really low.
+
+528
+00:55:28,660 --> 00:55:39,480
+If one breaks ranks, there's a chance that that person may get off scot-free, and the other person will get a much higher sentence, and vice versa.
+
+529
+00:55:39,480 --> 00:55:45,520
+But they can also rat each other out, where they'll both get a really high sentence anyway.
+
+530
+00:55:45,520 --> 00:55:54,620
+Whereas if they'd agreed to cooperate, they would, you know, they'd get a slightly bad deal, but it's kind of this median basis.
+
+531
+00:55:54,620 --> 00:55:56,280
+Yeah, that is basically it.
+
+532
+00:55:56,280 --> 00:56:10,460
+On a larger scale, like in a cooperative, people are going like, okay, if I trust that everyone, and this is coming back to trust, if I trust that everyone is working in my best interest, the reward won't be up here, but it'll be here.
+
+533
+00:56:10,460 --> 00:56:14,260
+But if I turn on them, my reward will go here.
+
+534
+00:56:14,260 --> 00:56:19,240
+But they might turn on me too, and then we both lose.
+
+535
+00:56:19,240 --> 00:56:29,920
+And so, but a lot of studies on the prisoner's dilemma has shown that humans, you could argue that rationally, you should screw over other people, because it's the best chance or the most reward for you.
+
+536
+00:56:29,920 --> 00:56:34,440
+But in practical terms, most people actually act cooperatively.
+
+537
+00:56:34,440 --> 00:56:35,560
+Yeah.
+
+538
+00:56:35,560 --> 00:56:41,060
+Well, that, that, well, when you bring it in a case, you may have that trust.
+
+539
+00:56:41,060 --> 00:56:46,680
+So it's not objective mathematical problem anymore, because if you have that trust, that's what the reward is.
+
+540
+00:56:46,680 --> 00:56:47,500
+Yeah.
+
+541
+00:56:47,500 --> 00:56:54,700
+And the more, the more people trust, the more they act against what could be regarded as their own self-interest.
+
+542
+00:56:54,700 --> 00:56:58,380
+Because they're not maximizing the return, they're just going, no, no, I trust the other person.
+
+543
+00:56:58,380 --> 00:57:02,900
+But you get burned a few times, trust goes away and everything falls apart.
+
+544
+00:57:02,900 --> 00:57:10,300
+And then, and then the, the, in theory, very good solution, which is cooperatives for farmers, is not in practice working the way it's supposed to be.
+
+545
+00:57:10,300 --> 00:57:15,260
+And the example that occurred to me was how, in this case, technology actually solves this.
+
+546
+00:57:15,260 --> 00:57:21,140
+So there's a, there was a startup out of Brisbane, Australia, basically, which is international.
+
+547
+00:57:21,140 --> 00:57:31,480
+So what they did, they came up with a solution for cooperatives, for farmers, to do what they were doing in the cooperatives with a phone that they gave it to them.
+
+548
+00:57:31,480 --> 00:57:34,480
+So instead of putting it in a paper, they would put it in the phone.
+
+549
+00:57:34,480 --> 00:57:39,660
+The phone was actually running a ledger, let's call it blockchain, data integrity.
+
+550
+00:57:39,660 --> 00:57:55,000
+And the farmers, without needing to understand the tech, understood that they can trust in what's being put, so they don't need to trust any of their own management, or even you may tell me something and you may tell others otherwise.
+
+551
+00:57:55,000 --> 00:58:01,320
+They just understood that what we agree on locally, between you and I, will be established and settled.
+
+552
+00:58:01,320 --> 00:58:06,760
+And I don't necessarily need to trust you, basically I need to trust the system.
+
+553
+00:58:06,760 --> 00:58:17,220
+And what was interesting, apparently according to the founders, is that in some particular cases, some particular corpse apparently works better, like coffee, I believe, in Kenya.
+
+554
+00:58:18,320 --> 00:58:29,360
+In some cases, the farmer's income was increased to three times more, 300%, which was fascinating for the farmers.
+
+555
+00:58:29,360 --> 00:58:42,460
+And now they had to solve the problem of excess of cash flow, they didn't know how to manage, and they had to kind of give them other ways that they can actually spend their money on right now, that they have more money than they used to be having.
+
+556
+00:58:42,460 --> 00:58:49,940
+But in this case, in theory the system was correct, but the human element was kind of breaking the system.
+
+557
+00:58:49,940 --> 00:58:57,020
+And an intervention of technology allowed for humans to reestablish trust.
+
+558
+00:58:58,040 --> 00:59:06,400
+And once that layer is in there, that would be interesting case to, I would say study in those cooperatives, to see what kind of layers is built on top of it.
+
+559
+00:59:06,400 --> 00:59:28,260
+Because once you have a strong layer infrastructure, could be this blockchain thing, could be Orthodox Judaism, anything that you strongly can rely on, there could be other layers, I can imagine, that would emerge on other relationships, other types of activities, that makes a very strong and resilient community.
+
+560
+00:59:28,260 --> 01:00:00,700
+Because now, instead of looking internally to protect yourself individually, you can lose self in a way, like a cell in a body, and become part of a much larger entity, like the colony of ants, as we understand, how with performing simple tasks, they can actually act like an entity, that can attack other actual animals and other entities, and can actually survive for hundreds of years, without being very, very small, tiny, fragile things.
+
+561
+01:00:00,700 --> 01:00:02,980
+But trusting the mechanism.
+
+562
+01:00:02,980 --> 01:00:04,320
+A super organism.
+
+563
+01:00:04,320 --> 01:00:08,280
+Super organism, which requires that structure to build on.
+
+564
+01:00:08,520 --> 01:00:09,300
+Yes, sir.
+
+565
+01:00:09,300 --> 01:00:20,680
+I would like to bring the conversation briefly back to where we were talking about government's attempts to control prices of wool and milk.
+
+566
+01:00:21,960 --> 01:00:26,980
+So, you two gentlemen know far more about economic history than I do.
+
+567
+01:00:26,980 --> 01:00:28,220
+I know nothing.
+
+568
+01:00:28,220 --> 01:00:32,040
+But I know a bit about constitutional history.
+
+569
+01:00:32,040 --> 01:00:36,260
+And I would say that governments can try to control prices.
+
+570
+01:00:36,900 --> 01:00:39,600
+But they may fail.
+
+571
+01:00:39,600 --> 01:00:42,900
+And the reason they will fail is as follows.
+
+572
+01:00:44,400 --> 01:00:55,380
+Under the phrase government, there was a referendum to give the Commonwealth government the power to control prices.
+
+573
+01:00:57,660 --> 01:00:59,920
+Labour opposed it.
+
+574
+01:00:59,920 --> 01:01:01,280
+It failed.
+
+575
+01:01:01,280 --> 01:01:05,420
+So government had no power to control prices.
+
+576
+01:01:05,420 --> 01:01:09,100
+Then the Labour Party took power under Bob Hawke.
+
+577
+01:01:09,100 --> 01:01:15,180
+Labour Party wanted government to have the power to control prices.
+
+578
+01:01:16,420 --> 01:01:19,300
+So they had a referendum again.
+
+579
+01:01:19,300 --> 01:01:20,920
+Liberals were opposed to this.
+
+580
+01:01:24,060 --> 01:01:26,860
+Yeah, that's politics, that's politics.
+
+581
+01:01:26,860 --> 01:01:36,220
+So the government certainly could have had total control over the price of fresh milk.
+
+582
+01:01:39,240 --> 01:01:40,240
+I don't know.
+
+583
+01:01:40,280 --> 01:01:41,820
+It's the reason why.
+
+584
+01:01:42,160 --> 01:01:45,060
+It was like when they floated the dollar as well.
+
+585
+01:01:45,060 --> 01:01:49,520
+The government used to declare, no, one Australian dollar is worse.
+
+586
+01:01:50,520 --> 01:01:54,140
+I forget what it was pinned to, where there was one US dollar.
+
+587
+01:01:54,140 --> 01:01:59,480
+But a lot of overseas economies essentially didn't share that belief.
+
+588
+01:01:59,480 --> 01:02:02,620
+And they would find ways to exploit it.
+
+589
+01:02:02,620 --> 01:02:11,460
+Okay, you're saying it's worth one US dollar, and it's not, and I can find a way to exploit the market that you have to pay me money now.
+
+590
+01:02:11,460 --> 01:02:15,700
+And so eventually, was it Keating who floated the dollar?
+
+591
+01:02:15,700 --> 01:02:17,020
+I don't remember if it was Harold or Keating.
+
+592
+01:02:17,100 --> 01:02:20,240
+Yeah, and it's going, because then we'll have a true market value.
+
+593
+01:02:20,240 --> 01:02:36,880
+But then of course, people gain the markets all the time, and you can end up, just in the time since Keating floated it, compared to the US dollar, it's gone from, I think at some point it was over one US dollar, and it's gone as low as almost 50 cents.
+
+594
+01:02:37,400 --> 01:02:40,640
+It's so volatile when in a completely open mind.
+
+595
+01:02:40,640 --> 01:02:43,360
+But there are different ways to exploit a fixed market.
+
+596
+01:02:43,440 --> 01:02:47,620
+Was there computerized finance bot at that time?
+
+597
+01:02:49,040 --> 01:02:51,340
+Not so much.
+
+598
+01:02:51,340 --> 01:02:57,100
+And yeah, there's been various share disasters that have been caused by computerized systems.
+
+599
+01:02:57,100 --> 01:03:02,680
+But the big fluctuations we've seen have just been by commodity traders.
+
+600
+01:03:02,680 --> 01:03:03,960
+Or currency traders.
+
+601
+01:03:03,960 --> 01:03:04,760
+Oh, sorry, yes.
+
+602
+01:03:04,760 --> 01:03:05,780
+You're right, it's currency traders now.
+
+603
+01:03:05,900 --> 01:03:08,460
+I was actually gambling with a lot of this stuff, isn't it?
+
+604
+01:03:09,100 --> 01:03:20,380
+I mean, this is where I think if ownership is actually meant to say, and participation is something, then I think there's some good arguments for markets within that.
+
+605
+01:03:20,380 --> 01:03:45,360
+But as soon as you've got a group of people that are buying into a form of investment, and their only motivation is to maximize profit, and then those investments can be packaged up in certain ways and sold, and global financial crisis is with those debt mortgages being packaged into some other kind of investment class that can be...
+
+606
+01:03:45,360 --> 01:03:52,540
+That's what it becomes very abstract, it becomes very far from our actual...
+
+607
+01:03:52,540 --> 01:03:59,140
+Like the money is to do stuff, rather than doing stuff to make the money, you know, as a friend of mine often says.
+
+608
+01:03:59,140 --> 01:04:02,220
+That somehow reminds me of the topic of how do we...
+
+609
+01:04:02,220 --> 01:04:05,920
+Going back to trust on the concept analysis, how do you trust robots?
+
+610
+01:04:05,920 --> 01:04:18,160
+And you tell robots, here are the set of rules, say the Isaac Asimov 3 laws, but then it does something totally different, because it doesn't really have a sense of context of what humans value.
+
+611
+01:04:18,160 --> 01:04:21,200
+But then at the same time, some humans act like that as well.
+
+612
+01:04:21,200 --> 01:04:25,440
+You give them a set of rules, and they optimize themselves to actually claim the system.
+
+613
+01:04:25,460 --> 01:04:29,340
+So in some ways, it's something much more fundamental.
+
+614
+01:04:29,340 --> 01:04:30,320
+Should we?
+
+615
+01:04:30,320 --> 01:04:43,380
+So if a cooperative can actually be effective and actually leverage on their internal trust to be effective as an entity, that problem will be solved, because now the majority is influencing what happens.
+
+616
+01:04:44,680 --> 01:04:46,560
+I would say that solves it.
+
+617
+01:04:46,560 --> 01:04:56,600
+At the moment, those who are influencing the whole economy, you can argue they're not necessarily the representatives of the interests of the majority.
+
+618
+01:04:56,600 --> 01:05:05,140
+And that may come down to the inability of us to act in larger groups and be cohesive, basically.
+
+619
+01:05:05,140 --> 01:05:20,600
+Well, yeah, it plays into central banking and fiat currencies and the concept of means of exchange and the fundamental role of a means of exchange in society.
+
+620
+01:05:21,720 --> 01:05:33,360
+It's extremely interwoven into our political system and our economic system and our legal system.
+
+621
+01:05:33,360 --> 01:05:42,540
+So the whole concept of exchange is actually like a social agreement, because in the past, if you just want to exchange in sundries, somebody screws you over, you just shoot them.
+
+622
+01:05:42,540 --> 01:05:44,280
+Actually, there wasn't even guns.
+
+623
+01:05:44,280 --> 01:05:46,080
+It was more like spears or just fist.
+
+624
+01:05:46,240 --> 01:05:52,800
+Well, that's right, someone said they were going to give you three shells, and they only gave you two shells, you just speared them.
+
+625
+01:05:52,940 --> 01:05:59,700
+Or if someone creates fear currency and says, this is a promissory no, this is where money was originally...
+
+626
+01:06:00,800 --> 01:06:08,460
+So I love seeing old historical things like British Bounds with these bloody documents because it was a whole agreement that this is worth...
+
+627
+01:06:08,460 --> 01:06:11,860
+Silver, silver in gold.
+
+628
+01:06:11,860 --> 01:06:18,560
+This can be redeemed, the bank agrees this can be redeemed, and they just kept making money.
+
+629
+01:06:18,560 --> 01:06:22,800
+And I trust that you would defend my right to claim to gold.
+
+630
+01:06:22,800 --> 01:06:31,340
+And at a certain point, the government said, it's not going to be based on gold or silver anymore, it's going to be based on you trust the government.
+
+631
+01:06:31,340 --> 01:06:36,120
+It's a very good example because at one point, there had been a conscious trust, right?
+
+632
+01:06:36,120 --> 01:06:45,960
+But over time, that has gone in the culture or in the system, and you're not consciously trusting anything, you just accept the fact that this is valuable.
+
+633
+01:06:45,960 --> 01:06:46,220
+Yes.
+
+634
+01:06:46,760 --> 01:06:55,720
+Whereas because now you're not consciously interacting with a trust dynamic, it can be removed without you noticing it, and you can be exploited now.
+
+635
+01:06:56,120 --> 01:06:56,840
+Yes.
+
+636
+01:06:56,840 --> 01:07:05,760
+But even before then, cash in the common human perception was seen as physical.
+
+637
+01:07:05,760 --> 01:07:10,940
+Like the government said, here's our cash, and it's physical, you use it to trade.
+
+638
+01:07:10,940 --> 01:07:19,820
+And so the common parent would say to the child, every time they act like little, is money does not grow on trees.
+
+639
+01:07:20,640 --> 01:07:30,100
+But nowadays, these days, like with the coming of digital currency, even that kind of concept of trusting physical is kind of gone already.
+
+640
+01:07:30,100 --> 01:07:33,920
+Well, as it gets out of control, you get hyperinflation in Germany after World War II.
+
+641
+01:07:33,920 --> 01:07:38,320
+It's happened to a few South American countries, Zimbabwe most recently springs to mind.
+
+642
+01:07:38,320 --> 01:07:45,140
+They printed $100 trillion notes that were worth less than one US dollar.
+
+643
+01:07:45,140 --> 01:07:50,820
+And when the system breaks down, it breaks down in a big way.
+
+644
+01:07:50,820 --> 01:07:55,260
+And trust is where it starts, when the trust is misplaced.
+
+645
+01:07:55,260 --> 01:08:01,960
+Because the bank or the government is lying to you, and people realize, ah, it's not worth anything.
+
+646
+01:08:01,960 --> 01:08:09,200
+But now Australian currency is a feared currency, and it's based wholly and solely on trust and nothing else.
+
+647
+01:08:09,200 --> 01:08:14,880
+Yeah, I don't think there's any sort of gold, silver-backed currency left in the world.
+
+648
+01:08:14,880 --> 01:08:16,300
+I think it's all feared currency, is there?
+
+649
+01:08:16,460 --> 01:08:25,700
+And with the digital crypto currency, the whole point of the trust is that it's now, we are trusting, like trust hasn't gone, all right?
+
+650
+01:08:25,700 --> 01:08:33,680
+It's just relegated from a human institution to essentially an algorithm of some sort.
+
+651
+01:08:33,680 --> 01:08:45,279
+And even then, within this algorithm itself, in a lot of these, like Bitcoin and all sorts, have some sort of mechanism, if I understand, to allow people to change it by voting.
+
+652
+01:08:45,779 --> 01:09:07,160
+So, the original proponent of Bitcoin, the founder, the Japanese gentleman, He was an economic philosopher, and he was also a gifted coder program.
+
+653
+01:09:07,160 --> 01:09:20,300
+And his philosophy was, he wanted to experiment with restoring trust and in a means of exchange.
+
+654
+01:09:20,439 --> 01:09:24,040
+And so, purely, it's exactly what we're talking about.
+
+655
+01:09:25,180 --> 01:09:35,859
+And he designed a code that would create the means of exchange with a limited supply which could not be adopted or corrupted.
+
+656
+01:09:35,859 --> 01:09:40,060
+And that's the basic principle behind Bitcoin.
+
+657
+01:09:40,080 --> 01:10:01,800
+And basically, all other cryptocurrencies is about limited supply or a trusted set of strict, non-corruptible laws, which are readily accessible to everybody, which controls the supply of that means of exchange.
+
+658
+01:10:01,800 --> 01:10:05,720
+This is called the economics money theory.
+
+659
+01:10:05,720 --> 01:10:06,520
+Yeah, yeah.
+
+660
+01:10:06,520 --> 01:10:13,660
+And I was told about this once, and I was told a lot of economists don't understand money theory.
+
+661
+01:10:15,000 --> 01:10:17,280
+They said, I either get it or you don't get it.
+
+662
+01:10:17,280 --> 01:10:18,780
+When it comes, it comes suddenly.
+
+663
+01:10:18,780 --> 01:10:19,620
+Oh, now I get it.
+
+664
+01:10:20,340 --> 01:10:23,520
+So I haven't, I haven't got it.
+
+665
+01:10:23,520 --> 01:10:31,600
+And again, the cryptocurrency stuff, I understand the basics of it, but the really complex elements, is a bit of a black box to me.
+
+666
+01:10:31,600 --> 01:10:35,660
+I'm a big fan of trust in terms of technology, working technology.
+
+667
+01:10:35,660 --> 01:10:49,940
+I'm a fan of trust, but verify any system that asks me to trust something, better have some very convincing testing functions that let me test that my trust is well placed.
+
+668
+01:10:49,940 --> 01:11:00,500
+Because if you want to give me nightmares, start talking about digital voting, electronic voting machines, or worse still, internet-based voting.
+
+669
+01:11:00,860 --> 01:11:02,220
+That's a nightmare.
+
+670
+01:11:02,220 --> 01:11:04,600
+That's the worst thing I can think of.
+
+671
+01:11:04,600 --> 01:11:09,820
+But you could build a system that has a trust, but verify the content.
+
+672
+01:11:09,820 --> 01:11:12,780
+Isn't that a Russian quote for some reason?
+
+673
+01:11:12,820 --> 01:11:18,340
+It popped in my head that trust but verify must be some Russian quote.
+
+674
+01:11:18,340 --> 01:11:21,800
+Look, okay, I'm going to use technology to tell me where it comes from.
+
+675
+01:11:21,800 --> 01:11:26,820
+And you're familiar with blockchain conversations, checking?
+
+676
+01:11:28,160 --> 01:11:28,700
+I've heard the word.
+
+677
+01:11:28,700 --> 01:11:30,780
+I don't know what it means.
+
+678
+01:11:31,820 --> 01:11:35,880
+But there's two comments I would make about Bitcoin and similar things.
+
+679
+01:11:36,680 --> 01:11:48,620
+First of all, under the Australian Criminal Code, to create a new currency lands you in jail for about 10 years, I think.
+
+680
+01:11:48,620 --> 01:11:49,740
+That's the first thing.
+
+681
+01:11:49,740 --> 01:11:59,640
+And secondly, I heard on Radio France International, they said that Bitcoin is using the power of four nuclear reactors.
+
+682
+01:11:59,840 --> 01:12:02,400
+Oh yeah, apparently it burns up a lot of electricity.
+
+683
+01:12:02,440 --> 01:12:05,340
+Well, why their nuclear reactors are not cold?
+
+684
+01:12:06,740 --> 01:12:10,460
+Yeah, it sounds more dramatic, I think, if you say nuclear.
+
+685
+01:12:10,460 --> 01:12:12,360
+Yeah, I looked it up.
+
+686
+01:12:12,360 --> 01:12:21,420
+Trust but Verify is a Russian proverb, rhymes when it's said in Russian, and apparently got into popular use.
+
+687
+01:12:21,420 --> 01:12:26,920
+Ronald Reagan liked to use it when talking about disarmament treaties with the Soviet Union.
+
+688
+01:12:27,660 --> 01:12:30,120
+That's trust, that's about the trust.
+
+689
+01:12:30,120 --> 01:12:34,780
+And so was that someone telling us we had to wrap up?
+
+690
+01:12:34,780 --> 01:12:41,600
+No, like he's just letting us know that how to wrap up the broom, like to close the door, everything.
+
+691
+01:12:41,600 --> 01:12:42,800
+So it's all good.
+
+692
+01:12:42,800 --> 01:12:45,020
+But yes, that's a pretty neat thing.
+
+693
+01:12:45,020 --> 01:12:54,640
+I mean, trust but verify, if you can't verify your trust, you're in a religion if you're just trusting blindly.
+
+694
+01:12:55,020 --> 01:12:58,580
+That's what I'm going to go for when you go on one of those platforms, isn't it?
+
+695
+01:12:58,580 --> 01:13:00,120
+Yes.
+
+696
+01:13:00,740 --> 01:13:14,160
+Like you could set up a platform where people were selling stuff, but what the consumer wants or the buyer wants is a lot of other people have said, I've had a good experience with this person.
+
+697
+01:13:14,520 --> 01:13:17,860
+That's why you feel okay about them taking the card, isn't it?
+
+698
+01:13:17,860 --> 01:13:18,040
+Yeah.
+
+699
+01:13:23,660 --> 01:13:32,840
+I'm just trying to find the time, but basically even the whole like, well, not religion, but science itself can be seen as an ideology.
+
+700
+01:13:32,840 --> 01:13:49,160
+If you look at the fact that at the basis, there are certain fundamental assumptions of the universe that we are trusting exist, that we could actually experiment, and that when we repeat it again, it will still be consistent.
+
+701
+01:13:49,160 --> 01:13:54,780
+Like if I roll the ball and somebody rolls the ball, they're able to verify that it happens.
+
+702
+01:13:54,780 --> 01:13:59,900
+So there is that sort of like a fundamental assumption about how the universe works.
+
+703
+01:13:59,900 --> 01:14:06,600
+If we lived in a digital universe where God could just flick a switch and everybody smashed into the ceiling.
+
+704
+01:14:07,580 --> 01:14:14,380
+Relating to that about Bitcoin is that they put, they grounded it on rules of mathematics.
+
+705
+01:14:14,380 --> 01:14:16,240
+So that's what you needed to trust.
+
+706
+01:14:16,240 --> 01:14:20,900
+Basically, it came down all the way to trusting mathematics, which is okay.
+
+707
+01:14:20,900 --> 01:14:24,480
+That's what was the success of Bitcoin.
+
+708
+01:14:24,480 --> 01:14:26,780
+Two quick notes that might help.
+
+709
+01:14:26,780 --> 01:14:32,340
+The white paper was published under a name that looks Japanese, but no one knows.
+
+710
+01:14:32,340 --> 01:14:33,720
+It might be a group of people.
+
+711
+01:14:33,720 --> 01:14:36,220
+It's argued it's a group of people.
+
+712
+01:14:36,220 --> 01:14:37,340
+That's one.
+
+713
+01:14:37,340 --> 01:14:45,240
+And also the Bitcoin was cleverly released without knowing who has released this.
+
+714
+01:14:45,240 --> 01:14:50,420
+And it's a system that you don't need any authority to operate it.
+
+715
+01:14:50,420 --> 01:15:03,180
+So it's actually a beautiful experiment where without needing anyone to trust anybody, collectively, you can have consensus on how much everyone has.
+
+716
+01:15:04,740 --> 01:15:07,000
+Grounded on rules of mathematics.
+
+717
+01:15:07,000 --> 01:15:11,800
+That's why no one can go, no one needs to go to jail because no one has created it.
+
+718
+01:15:11,800 --> 01:15:13,940
+No one knows who has created it.
+
+719
+01:15:13,940 --> 01:15:23,700
+It's just an article that was published on the Internet, and people started actually doing what the article said, and it started working.
+
+720
+01:15:23,700 --> 01:15:29,840
+And for that to work, no one needed to trust anybody else for that to work.
+
+721
+01:15:29,840 --> 01:15:52,220
+That was the elegance of that article, that white paper, which was Bitcoin, which has started the whole new chapter in IT, which has just very briefly, which has shifted the focus from what we do with information before blockchain.
+
+722
+01:15:52,220 --> 01:15:55,060
+All IT was about what we do with information.
+
+723
+01:15:55,060 --> 01:16:01,800
+After blockchain, people have started thinking about who does thing with information, which was about more governance.
+
+724
+01:16:01,800 --> 01:16:11,160
+So the birth of Bitcoin, which was 10 years ago, was the moment, in my opinion, where two groups of people came together.
+
+725
+01:16:11,500 --> 01:16:33,060
+The IT people, technologists, information technologists, and philosophers, economists, and social change makers, that always had ideas about ways we can do things, but they would always have this human issue when we can't trust each other necessarily.
+
+726
+01:16:33,060 --> 01:16:38,200
+And that would be something that proposals would not necessarily work in reality.
+
+727
+01:16:39,200 --> 01:16:45,740
+Now, all of a sudden, we had a technology that deals with governance instead of what happens with the technology.
+
+728
+01:16:45,740 --> 01:16:47,440
+It's not about what you sense.
+
+729
+01:16:47,440 --> 01:16:48,540
+It's not about where you store it.
+
+730
+01:16:48,540 --> 01:16:51,960
+It's not about what insight you get out of information.
+
+731
+01:16:51,960 --> 01:16:53,560
+That's always been the case.
+
+732
+01:16:53,560 --> 01:17:09,680
+This time, it was about a basic information, that what the type of information, let's say, Bitcoin deals with, is as primary as a ledger, that this account transferred this number to this account.
+
+733
+01:17:09,680 --> 01:17:11,040
+It's not even a number.
+
+734
+01:17:11,040 --> 01:17:12,120
+It's a bulb of information.
+
+735
+01:17:12,120 --> 01:17:13,900
+You can put anything in there.
+
+736
+01:17:13,900 --> 01:17:16,020
+The information itself is very basic.
+
+737
+01:17:16,020 --> 01:17:20,260
+The whole technology is around the governance.
+
+738
+01:17:20,260 --> 01:17:21,540
+Who claims this?
+
+739
+01:17:21,540 --> 01:17:23,020
+How I can verify this?
+
+740
+01:17:23,020 --> 01:17:25,760
+Again, verifiable claims, which is again a thing in IT.
+
+741
+01:17:27,340 --> 01:17:43,140
+And this has made it a whole new chapter, which there's a lot of conversations also about trust and blockchain is referred as a trustless system for that reason, because it doesn't require trust to operate.
+
+742
+01:17:43,140 --> 01:17:45,160
+For the first time, a group of people can operate.
+
+743
+01:17:46,640 --> 01:17:53,420
+While we're there, also bring up a, if you hear about Facebook New Coin, Libra.
+
+744
+01:17:53,640 --> 01:17:54,200
+Oh, yes.
+
+745
+01:17:54,200 --> 01:17:55,080
+Have you had that?
+
+746
+01:17:56,100 --> 01:18:16,860
+Very briefly, what has enabled a few corporates to trust each other, to form alliance, to oppose and take over something that fundamentally, traditionally belonged to another institute in the society, which was the government, issuance of money in this case.
+
+747
+01:18:16,860 --> 01:18:22,520
+It almost strikes me as like they were trying to create a sort of like a corporate sovereignty.
+
+748
+01:18:22,520 --> 01:18:23,220
+In a way.
+
+749
+01:18:23,220 --> 01:18:28,340
+But yes, that's also a very interesting thing to talk about at one point.
+
+750
+01:18:28,340 --> 01:18:40,720
+But my point here was that what has allowed these corporates that would obviously have conflict of interest in many ways, to work with each other on a shared same goal, which is no value in that thing.
+
+751
+01:18:40,720 --> 01:18:42,980
+It's just literally take over.
+
+752
+01:18:42,980 --> 01:18:46,380
+Is technology, information technology?
+
+753
+01:18:46,380 --> 01:18:52,680
+But this Facebook guy, he's not going to get away with this, is he?
+
+754
+01:18:52,680 --> 01:18:54,080
+He won't succeed.
+
+755
+01:18:54,200 --> 01:18:55,420
+He's being stopped, isn't he?
+
+756
+01:18:55,420 --> 01:18:58,480
+I think there's a lot of resistance against-
+
+757
+01:18:58,480 --> 01:18:59,940
+I mean, we know who he is.
+
+758
+01:19:00,460 --> 01:19:01,580
+We don't know who's behind the-
+
+759
+01:19:01,600 --> 01:19:05,980
+I mean, we don't know how the history of milk goes, but definitely there is resistance against the idea.
+
+760
+01:19:05,980 --> 01:19:11,760
+There's plenty of companies that will just go out, the former company, they'll act illegally, and then the laws change.
+
+761
+01:19:11,760 --> 01:19:12,960
+Look at Uber.
+
+762
+01:19:13,460 --> 01:19:15,080
+Look at taxis.
+
+763
+01:19:15,160 --> 01:19:23,640
+You know, like they were operating for a long time, and then in the end, the government had them, they're popular with consumers.
+
+764
+01:19:23,640 --> 01:19:28,040
+And so the government goes, these guys have been operating illegally.
+
+765
+01:19:28,700 --> 01:19:29,820
+Is that Uber?
+
+766
+01:19:29,820 --> 01:19:30,420
+Yeah, Uber.
+
+767
+01:19:30,420 --> 01:19:41,420
+And also you could argue to a certain extent with accommodation and things like that.
+
+768
+01:19:41,420 --> 01:19:43,840
+But this is corruption, and then government, surely?
+
+769
+01:19:46,740 --> 01:19:49,540
+Well, what it is, is it's changed, isn't it?
+
+770
+01:19:49,540 --> 01:19:53,800
+So, like for me, I think it's important who owns these platforms.
+
+771
+01:19:53,800 --> 01:20:02,520
+So if the drivers themselves are owning the platform, not some external party that's extracting Bayou, then I'm kind of OK with it.
+
+772
+01:20:02,520 --> 01:20:06,840
+And I actually think the drivers will be better off in the long term.
+
+773
+01:20:06,840 --> 01:20:24,060
+Whereas the problem we've got is that over time, a system like Uber or Uber Eats, like now all the small businesses or the restaurants, like I think it's something like there's a 30% that they lose, right?
+
+774
+01:20:24,060 --> 01:20:26,380
+But if they don't go in, they're going to lose.
+
+775
+01:20:26,380 --> 01:20:30,620
+So a system is put in place of dubious legality.
+
+776
+01:20:32,020 --> 01:20:39,660
+Now the government could be being paid or getting donations and then maybe there's a corruption bit, but there's also this popular opinion thing.
+
+777
+01:20:39,660 --> 01:20:53,460
+You know, if enough people reckon they're happier with an Uber driver than a regular taxi, then government will change the law because it will be too unpopular for them to take on.
+
+778
+01:20:53,460 --> 01:20:59,040
+Unless they can make a case, like in London, I believe, there's been a bit of bargy bargy around Uber and things like that.
+
+779
+01:20:59,040 --> 01:21:08,040
+But unless they can make a case that this is worse for consumers than it's worse for others, and then we might even think about the drivers, you know, people's livelihoods.
+
+780
+01:21:10,020 --> 01:21:26,040
+Can I suggest there's an error in your logic here because you said something about the system or something, but the system here is not just cars and drivers and passengers, it's roadways and governments that pay to build the roads and so on.
+
+781
+01:21:27,040 --> 01:21:34,200
+So maybe I find even people my age don't know the word flea car.
+
+782
+01:21:34,200 --> 01:21:43,920
+Flea car was an unlicensed taxi, and to drive a flea car was a very serious offense.
+
+783
+01:21:46,080 --> 01:21:49,720
+And Uber is actually cars as far as I can see.
+
+784
+01:21:49,720 --> 01:21:54,020
+And what's something like Airbnb doing to the housing market?
+
+785
+01:21:54,020 --> 01:22:06,220
+Like in Tasmania, there are a lot of people arguing that there's been so many people that are wanting to make money out of the Airbnb, that it's really driven up housing prices and it's had some impact on the level of homelessness.
+
+786
+01:22:06,220 --> 01:22:11,440
+So you kind of got to think, what are the broader implications of these technologies?
+
+787
+01:22:11,440 --> 01:22:12,500
+But I'll go back to the other point.
+
+788
+01:22:12,640 --> 01:22:19,440
+As I just don't know, it's difficult for governments because these technologies are also popular with a lot of people.
+
+789
+01:22:19,440 --> 01:22:22,940
+So that's real cowardice.
+
+790
+01:22:22,940 --> 01:22:25,040
+That's real political cowardice.
+
+791
+01:22:25,040 --> 01:22:25,740
+Oh hell yeah.
+
+792
+01:22:25,740 --> 01:22:28,120
+Can I just augment your conversation?
+
+793
+01:22:28,120 --> 01:22:32,340
+I think the key word you're looking for is like the network effect.
+
+794
+01:22:32,340 --> 01:22:44,060
+Like how if there's enough people in a, like say Facebook, it's very hard to not use Facebook because you're just essentially shut up from a major, a big part of society.
+
+795
+01:22:44,060 --> 01:22:46,280
+The trouble is with control and influence.
+
+796
+01:22:46,280 --> 01:22:50,460
+Like who is influenced is not who is influencing it.
+
+797
+01:22:50,460 --> 01:22:53,900
+So in terms of Uber, network ability allows for that.
+
+798
+01:22:53,900 --> 01:22:57,260
+Of course, the current system is very inefficient, right?
+
+799
+01:22:57,260 --> 01:23:00,740
+And then you leverage on technology, people are happy.
+
+800
+01:23:00,740 --> 01:23:13,360
+But at one point, because the person, the team behind Uber, Facebook, any other platform is different from those who are, they are influencing the platform by decisions they make.
+
+801
+01:23:13,360 --> 01:23:23,160
+But an entirely different group of people are influenced by the platform, which are people on the ground, the homelessness issue, and Facebook is also the host of all sort of issues.
+
+802
+01:23:23,160 --> 01:23:29,140
+And this disconnect is the root cause of issues, which is something like cooperatives would solve.
+
+803
+01:23:29,140 --> 01:23:36,180
+A concept of commons, managing public resources as commons would also solve that.
+
+804
+01:23:36,180 --> 01:23:46,760
+When you close this loop, if someone is influencing something, they also need to be influenced the same degree, or there has to be a connection.
+
+805
+01:23:46,760 --> 01:23:51,380
+In engineering, that's called feedback loop.
+
+806
+01:23:51,380 --> 01:23:53,740
+In the lack of a feedback loop, a system goes...
+
+807
+01:23:55,220 --> 01:23:55,980
+De-stabilize?
+
+808
+01:23:56,100 --> 01:23:57,000
+Yeah, de-stabilize.
+
+809
+01:23:57,000 --> 01:23:57,640
+Yeah, it goes...
+
+810
+01:23:57,640 --> 01:23:59,380
+Yeah, it de-stabilize.
+
+811
+01:23:59,380 --> 01:24:00,720
+And that's what we're seeing here.
+
+812
+01:24:00,720 --> 01:24:02,000
+The feedback loop is not there.
+
+813
+01:24:02,000 --> 01:24:08,100
+But as cooperative can, it's a vehicle to kind of close that loop.
+
+814
+01:24:08,100 --> 01:24:09,560
+Let's close the loop.
+
+815
+01:24:09,560 --> 01:24:10,080
+Yeah.
+
+816
+01:24:10,080 --> 01:24:24,180
+I hope you enjoyed this podcast, and thanks to Alexar and Andrew Kay as well as the audience for this interesting and insightful discussion about the nature of trust and how it applies to society.
+
+817
+01:24:24,180 --> 01:24:35,580
+So, as always, before we close this podcast, don't forget to send us your feedbacks, because we will suddenly be making a lot more of these things over the next few months.
+
+818
+01:24:35,580 --> 01:24:35,880
+Cheers.

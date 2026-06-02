@@ -1,0 +1,2967 @@
+1
+00:00:00,300 --> 00:00:05,340
+Hi, this is Brian, and welcome to the Designing Open Democracy Podcast.
+
+2
+00:00:05,340 --> 00:00:11,660
+We are an Australian-based forum, keeping track of democracy, innovation in Australia and around the world.
+
+3
+00:00:11,660 --> 00:00:23,080
+For this episode recorded on the 3rd of March 2020, I visited a prominent Australian economist named Nicholas Gruen, CEO of Lateral Economics.
+
+4
+00:00:23,080 --> 00:00:35,900
+As frequent commentator on economic reforms as well as innovation, he will be joining us for this episode to explore the concept of citizen juries and how it could be implemented in Australia and other countries.
+
+5
+00:00:35,900 --> 00:00:42,420
+So let's start with a short introduction of Nicholas Gruen, as well as a summary of the whole talk we will cover.
+
+6
+00:00:42,420 --> 00:00:47,180
+So Nicholas, can you give me a quick rundown of who you are and what you do?
+
+7
+00:00:47,180 --> 00:00:49,120
+Yeah, so my name is Nicholas Gruen.
+
+8
+00:00:49,120 --> 00:00:52,380
+I run an economic consultancy called Lateral Economics.
+
+9
+00:00:52,500 --> 00:00:57,960
+I've had a long history in policymaking and have been an advisor to politicians.
+
+10
+00:00:57,960 --> 00:01:01,500
+So I've seen politics up close for about 30 years.
+
+11
+00:01:01,540 --> 00:01:18,460
+And I'm pretty concerned, have been concerned for at least 20 years with how shallow and what I call fast foodified and divisive and polarizing politics is at the moment, democratic politics is at the moment.
+
+12
+00:01:19,060 --> 00:01:28,400
+And I think there is a big and simple thing that we can do to make fairly substantial change and improvement.
+
+13
+00:01:28,400 --> 00:01:39,080
+And definitely in the talk, we will talk a bit more about the origin of the concept of Isagora and how ancient Athens used to do their democracy.
+
+14
+00:01:39,080 --> 00:01:45,540
+And from there, we're going to be going into this concept, which are talk about of a citizen juries.
+
+15
+00:01:45,540 --> 00:01:47,080
+So can you talk more about that?
+
+16
+00:01:47,080 --> 00:01:47,460
+Sure.
+
+17
+00:01:47,460 --> 00:01:56,140
+So the way in which we have representatives of the public in politics is we, they're the winners of elections.
+
+18
+00:01:56,160 --> 00:02:02,600
+And we actually have another mechanism for having representatives of the public.
+
+19
+00:02:02,600 --> 00:02:05,420
+And we do that in our legal system with juries.
+
+20
+00:02:05,420 --> 00:02:09,100
+And the way we have representatives of the public is very different.
+
+21
+00:02:09,100 --> 00:02:21,280
+We don't really think of any individual as a representative of the public, but we think of the jury, particularly when it can come to consensus, as a consensus which represents the community.
+
+22
+00:02:21,300 --> 00:02:32,420
+And for a whole host of reasons that I hope we'll explore, this represents a very different way to represent democratic views.
+
+23
+00:02:32,660 --> 00:02:34,620
+It's more considered.
+
+24
+00:02:34,620 --> 00:02:48,980
+The psychology of it's different, because people aren't trying to beat each other, they're trying to get to, they're trying to understand each other, and then to compromise to get to some kind of solution.
+
+25
+00:02:48,980 --> 00:02:55,720
+For that and a range of other reasons that we can discuss, I think we need to inject that into our democracy.
+
+26
+00:02:55,720 --> 00:02:59,120
+So we don't talk about getting rid of anything we have.
+
+27
+00:02:59,120 --> 00:03:19,100
+I would like to say, so if you want to know what this means in terms of a concrete plan, I would like in 10 years, 20 years time for there to be a House of Parliament, whether it replaces the Senate or is in addition to the Senate, which represents the Australian people in the way the jury represents the Australian people.
+
+28
+00:03:19,100 --> 00:03:25,820
+That is, its members are chosen randomly from the community to be reflective of the community.
+
+29
+00:03:26,680 --> 00:03:39,180
+And I would like that body to be treated just like a House of Parliament so that legislation and motions and so on need to go through it as well as the House of Parliament we have now.
+
+30
+00:03:39,180 --> 00:03:45,780
+Now, that won't be government funded and built into our Constitution any time soon.
+
+31
+00:03:45,780 --> 00:04:00,380
+The exciting thing is that if we can crowd source the funding for that, we can set up the governance quite separately from Parliament, quite separately from any existing government, and we can have that sitting there.
+
+32
+00:04:00,380 --> 00:04:25,380
+And what it would do is while the Democrats, while the Houses of Parliament tell us what the parties want and what their backers want, while opinion polls tell us what the opinion of the people is on numerous things, this Citizens' Assembly, a Standing Citizens' Assembly, would show us what the considered opinion of the Australian people is.
+
+33
+00:04:25,380 --> 00:04:35,480
+And over time, I think, as people saw how well that worked, they would start saying, we want that as part of our political system, and it would be brought into the political system.
+
+34
+00:04:35,480 --> 00:04:38,580
+So that's the trajectory that I would like to see.
+
+35
+00:04:38,580 --> 00:04:51,000
+And what's exciting about it is that it's quite a radical, or it's a pretty strong idea for reform, but it isn't something that we have to go and get permission from anyone to start.
+
+36
+00:04:51,000 --> 00:04:54,640
+We can raise the money ourselves and start doing it now.
+
+37
+00:04:54,640 --> 00:05:01,440
+So it sounds like you explained what the Citizen Juries is, and also in some ways how you could implement it.
+
+38
+00:05:01,440 --> 00:05:06,660
+Before we go into potentially the main talk, how will people join you?
+
+39
+00:05:06,660 --> 00:05:09,540
+Well, they can, at the moment, they should just email me.
+
+40
+00:05:09,540 --> 00:05:11,480
+I'll give you my email on this podcast.
+
+41
+00:05:11,580 --> 00:05:25,800
+It's ngruen, six letters, n for Nicholas, g-r-u-e-n, g-r for Richard, u-e-n at gmail.com, and I'll put your name on a mailing list, and you'll just get updates.
+
+42
+00:05:25,800 --> 00:05:29,220
+But I'm hoping to have some news about this.
+
+43
+00:05:29,220 --> 00:05:44,300
+I'm constantly trying to bring this vision about in different ways, with different demonstration projects in different parts of the world, actually, and happy to put you on a mailing list and keep you up to date.
+
+44
+00:05:44,300 --> 00:05:45,320
+Thank you very much.
+
+45
+00:05:45,320 --> 00:05:53,660
+And of course, if people are interested in the general workings of improvement designing open democracy, they could always join us, designingopendemocracy.com.
+
+46
+00:05:55,040 --> 00:06:04,940
+So this is the end of the overall summary of this talk, which will help provide the context to what Nicholas Gruen will be elaborating over the following hour-long talk.
+
+47
+00:06:05,800 --> 00:06:11,940
+Our first topic was about Isagoria and how it relates to the idea of citizen juries.
+
+48
+00:06:11,940 --> 00:06:20,640
+So, a while ago, I was having a chat with Nicholas Gruen about some of his efforts, and we will talk a bit about ancient Athens.
+
+49
+00:06:20,640 --> 00:06:28,680
+And the thing he wanted me to know more about was the concept of Isagora, but I didn't really quite understand Isagora.
+
+50
+00:06:28,680 --> 00:06:30,840
+So this is why we have him here today.
+
+51
+00:06:31,280 --> 00:06:38,680
+And of course, we will talk a little bit more about what he really wants to push forward, which is this idea of citizen juries.
+
+52
+00:06:38,680 --> 00:06:43,680
+Would you like to take it from here and explain what's this idea of Isagora from ancient Athens?
+
+53
+00:06:43,680 --> 00:06:49,920
+So, the ancient Athenians had a number of, they thought about their politics.
+
+54
+00:06:51,140 --> 00:06:57,880
+Ancient Athens is the first democracy of any scale recorded in history.
+
+55
+00:06:58,720 --> 00:07:01,700
+And they had two concepts.
+
+56
+00:07:02,760 --> 00:07:14,100
+They probably had plenty of others, but one of them, they used the ancient Greek word parhessia, and that is often translated as freedom of speech.
+
+57
+00:07:14,100 --> 00:07:18,840
+In fact, it means the duty to speak truth to power.
+
+58
+00:07:20,040 --> 00:07:27,200
+But that's just for a bit of relief against this other concept.
+
+59
+00:07:27,740 --> 00:07:36,000
+At least we have a concept in our democracy of freedom of speech, which is a little similar to that ancient Athenian concept.
+
+60
+00:07:36,000 --> 00:07:44,200
+The other concept in ancient Athenian democracy, which was known by the word issegoria.
+
+61
+00:07:45,260 --> 00:07:47,420
+I don't know whether that's a great way to pronounce it.
+
+62
+00:07:47,420 --> 00:07:55,400
+My wife is Greek, but then she's modern Greek, and I don't know whether she's a good guide either, but I pronounce it issegoria.
+
+63
+00:07:56,180 --> 00:08:17,600
+And what it means is something which we don't really think about in our politics, but it struck me that it's a fantastically good description of something which is absent from our politics, and our lack of a word for it, our lack of a concept of it means that we don't think about it very much.
+
+64
+00:08:18,120 --> 00:08:22,180
+And the concept of issegoria means equality of speech.
+
+65
+00:08:23,140 --> 00:08:28,640
+So why don't we have equality of speech in our democracy?
+
+66
+00:08:28,640 --> 00:08:37,059
+Because, for instance, all those people who aren't particularly well educated, they're not really represented that well.
+
+67
+00:08:37,059 --> 00:08:53,260
+Their way of thinking and speaking isn't represented in parliament because of something like 95% of members of parliament are highly educated, if you take as highly educated someone who has a university degree or more.
+
+68
+00:08:53,260 --> 00:09:18,020
+That means that the whole way our political discourse is conducted is conducted in a way that alienates a large, you know, something like 40, 50% of our population, or at least leaves them with a feeling that things are being discussed in a way that is different to the way they think about those things.
+
+69
+00:09:18,020 --> 00:09:28,880
+And in fact, it's got worse than that because in the last 10, 15 years, there has been a huge ramping up of political correctness.
+
+70
+00:09:29,080 --> 00:09:35,320
+And therefore, certain ways of speaking are simply proscribed.
+
+71
+00:09:35,400 --> 00:09:39,360
+They're simply prohibited if you use those forms of speech.
+
+72
+00:09:39,360 --> 00:09:47,820
+People come after you and call you a racist and a sexist and a transphobic and Islamophobic and all the rest of it.
+
+73
+00:09:47,820 --> 00:10:01,180
+And so the issues that people care a lot about, a lot of people care about immigration or used to, I think they're a bit less concerned about it now.
+
+74
+00:10:01,320 --> 00:10:06,020
+And I don't say this is someone who is all that sympathetic to that concern.
+
+75
+00:10:06,020 --> 00:10:08,980
+I am sympathetic to it if people care about it.
+
+76
+00:10:08,980 --> 00:10:16,880
+This is supposed to be a democracy and they're supposed to be able to express their view and that is supposed to be discussed in our democracy.
+
+77
+00:10:16,880 --> 00:10:22,700
+But if you say, and again, I repeat, I don't agree with this.
+
+78
+00:10:22,700 --> 00:10:29,140
+But if you say, I don't think we should have, I think we should have lower immigration.
+
+79
+00:10:29,140 --> 00:10:41,700
+If you say pretty much anything about immigration, God forbid, you say we should have certain kinds of immigrants and not other kinds of immigrants, then that is regarded as outrageous, beyond the pale and all the rest of it.
+
+80
+00:10:41,700 --> 00:10:44,160
+Well, okay.
+
+81
+00:10:44,160 --> 00:10:58,380
+But that's going to leave a lot of people feeling that they're not actually part of a functioning democracy there in some other game, in which the way they think is actually being actively suppressed and attacked.
+
+82
+00:10:59,560 --> 00:11:04,520
+So, you feel that our current system of proportional representation doesn't capture the...
+
+83
+00:11:04,520 --> 00:11:06,780
+Well, we don't have proportional representation.
+
+84
+00:11:06,780 --> 00:11:20,060
+We have, in the House of Representatives, we have single member electorates, and we elect the party or the member who has the highest two-party preferred vote.
+
+85
+00:11:20,060 --> 00:11:23,000
+And we have some proportional representation in the Senate.
+
+86
+00:11:23,000 --> 00:11:31,120
+I think we should remind the audience, if they're not from Australia, that what we're referring to is the Australian political system at the moment.
+
+87
+00:11:31,120 --> 00:11:40,300
+Yeah, but what I'm talking about is the idea that, and here's a shocking thought, you can have a democracy without elections.
+
+88
+00:11:40,300 --> 00:11:44,600
+Now, I'm not actually proposing a democracy without elections, but that's a shocking thought.
+
+89
+00:11:44,600 --> 00:11:50,560
+There's one obvious way you can have a democracy without elections, and some people are quite fond of it, but I'm not.
+
+90
+00:11:50,560 --> 00:11:55,140
+And then there's this other way of having a democracy without elections.
+
+91
+00:11:55,740 --> 00:12:01,840
+The way many people can relate to is the idea of direct democracy, which is that everybody gets a vote about everything.
+
+92
+00:12:01,840 --> 00:12:07,620
+And that's sort of what they had in ancient Athens, or it was a bit more structured than that.
+
+93
+00:12:07,620 --> 00:12:13,120
+Yes, we were talking about ancient Athens, so I would definitely like to learn a bit more about it.
+
+94
+00:12:13,120 --> 00:12:17,120
+And I remember you say that there's Isagora, and it is part of ancient Athens.
+
+95
+00:12:17,120 --> 00:12:21,820
+So is it like, what's the direct link between Isagora and ancient Athens?
+
+96
+00:12:21,880 --> 00:12:24,440
+Well, I said that.
+
+97
+00:12:24,440 --> 00:12:32,460
+Like freedom of speech is important in our democracy, equality of speech was a fundamental part of ancient Athens.
+
+98
+00:12:32,460 --> 00:12:38,600
+And the two institutions that delivered equality of speech was Direct Democracy, which I don't greatly support.
+
+99
+00:12:38,600 --> 00:12:42,960
+But that was a monthly meeting of a thing called the Ecclesia.
+
+100
+00:12:42,960 --> 00:13:01,700
+And the Ecclesia is a council, is all citizens now, as people always remind you, citizens didn't include slaves, it didn't include women, and it didn't include people who might be permanent residents in Athens, but were foreigners.
+
+101
+00:13:01,700 --> 00:13:05,080
+That's obviously not something I'm saying is a good idea.
+
+102
+00:13:05,080 --> 00:13:09,940
+Anyway, that was how, that was their form of Direct Democracy.
+
+103
+00:13:09,940 --> 00:13:11,580
+They would meet once a month.
+
+104
+00:13:11,580 --> 00:13:23,820
+However, all the nitty gritty matters, including what the Ecclesia, the Assembly, what they discussed was set up for them.
+
+105
+00:13:23,820 --> 00:13:27,700
+Their agenda was set up for, but by I think all the Boulay.
+
+106
+00:13:27,700 --> 00:13:35,740
+And the Boulay was 500 people, citizens chosen at random and rotated every year.
+
+107
+00:13:35,740 --> 00:13:42,660
+Every year, there'd be 500 different people chosen at random from the community in the way that we choose juries.
+
+108
+00:13:42,660 --> 00:13:52,380
+And that was the body that ran the city, maintained the buildings, collected rubbish, if there was any government collecting of rubbish, I don't know.
+
+109
+00:13:52,380 --> 00:13:57,640
+And was very important in setting up the agenda for the assembly.
+
+110
+00:13:57,640 --> 00:14:06,540
+And both of those institutions are very much into isegory or equality of speech.
+
+111
+00:14:06,540 --> 00:14:12,000
+In other words, you don't have to win an election to be a part of any of this.
+
+112
+00:14:12,000 --> 00:14:16,320
+If you want to win an election, you have to have to be articulate.
+
+113
+00:14:16,600 --> 00:14:18,900
+You likely have to be well-educated.
+
+114
+00:14:18,900 --> 00:14:23,300
+You have to have some money or have some friends with money.
+
+115
+00:14:25,760 --> 00:14:33,580
+And that produces a perversion of democracy in a range of ways that we're becoming more and more familiar.
+
+116
+00:14:34,020 --> 00:14:36,220
+We kind of experience more and more.
+
+117
+00:14:36,220 --> 00:14:43,940
+So these two institutions that ran Athenian democracy, didn't have elections and so were much more...
+
+118
+00:14:43,940 --> 00:14:46,900
+there was much more equality of speech in that system.
+
+119
+00:14:46,900 --> 00:14:48,740
+I see.
+
+120
+00:14:48,740 --> 00:14:53,480
+So that is definitely an interesting look into ancient Athens.
+
+121
+00:14:53,480 --> 00:14:57,100
+And it's something that I imagine a lot of people are not super familiar.
+
+122
+00:14:57,100 --> 00:15:01,640
+But what most people would already be familiar is our current system.
+
+123
+00:15:01,640 --> 00:15:08,660
+And it seems like there's a problem with democracy that it doesn't quite seem to work for them.
+
+124
+00:15:09,440 --> 00:15:18,880
+And I remember a while ago, you mentioned something about how the current system is based on the opinion of the people, not the considered opinion of the people.
+
+125
+00:15:18,880 --> 00:15:25,520
+And this sounds like it relates to what you're seeing as going wrong with our current society.
+
+126
+00:15:25,520 --> 00:15:26,780
+That's right.
+
+127
+00:15:29,960 --> 00:15:39,780
+So the other way to represent the people, one way is having elections and everybody can say, oh, well, they represent me because I got a vote as to who that person should be.
+
+128
+00:15:39,780 --> 00:15:44,920
+I might have lost the vote, but at least I know in my area, the majority of people voted for that person.
+
+129
+00:15:44,920 --> 00:15:51,860
+And that guarantees me there is some sense, there is some democratic legitimacy to that.
+
+130
+00:15:51,860 --> 00:15:57,240
+There's now the problem is we purchase that legitimacy at the expense of equality of speech.
+
+131
+00:15:57,240 --> 00:16:02,440
+There is a certain kind of person who overwhelmingly wins that contest.
+
+132
+00:16:03,280 --> 00:16:07,220
+The alternative we have in our courts of law.
+
+133
+00:16:07,220 --> 00:16:23,980
+So if you want to find out if somebody is guilty of something, we have a democratic institution there, so that at the end of a court case, we can say not just that the court found this person guilty, but that the community found them guilty.
+
+134
+00:16:23,980 --> 00:16:26,200
+And that's what we have with the jury.
+
+135
+00:16:26,200 --> 00:16:26,540
+So we...
+
+136
+00:16:27,120 --> 00:16:28,140
+I'm sorry, you want to say something?
+
+137
+00:16:28,140 --> 00:16:41,720
+No, I'd like to continue your one, but I've found this really interesting in the sense that when you're saying the court system, like it hasn't always run that way, if I remember, back in the medieval time, is it before the Magna Carta?
+
+138
+00:16:41,720 --> 00:16:46,120
+Well, Magna Carta is 1215, I think, so it's a long time ago.
+
+139
+00:16:46,120 --> 00:16:51,820
+So medieval is after that, really, but in the sort of dark ages before that, it's a much murkier story.
+
+140
+00:16:51,820 --> 00:17:04,920
+Yeah, if I remember back then, before our current justice system, it was actually more based on like inquisitorial kind of justice, where the judge does both the investigation and the prosecution.
+
+141
+00:17:04,920 --> 00:17:21,579
+But if I understand about our new modern justice system, it's more of a separation of the prosecutorial element of the judge, to make the judge a more impartial figure, so that you have a competition between the defense and the prosecution.
+
+142
+00:17:21,579 --> 00:17:29,100
+Well, that's true, and I've also written about that, but the element that I think is relevant here is the jury.
+
+143
+00:17:29,100 --> 00:17:55,440
+And the jury, the significance of the jury, from my point of view, is that just as I was saying there is some legitimacy in Parliament, because we voted for Parliament, there is some legitimacy if 12 ordinary people chosen at random all say, or say 10 out of the 12 say, that an accused is guilty on the facts as presented to them.
+
+144
+00:17:55,440 --> 00:18:06,460
+They've been through the trial, they've looked at the evidence, they've had it all presented to them, they've had as much time as they wanted to, to deliberate and consider their verdict, and they come up with a verdict.
+
+145
+00:18:06,460 --> 00:18:15,340
+So what that does is that it produces another way to determine what the people's view is.
+
+146
+00:18:15,340 --> 00:18:28,320
+But it does it not by way of a competition, which has a bunch of problems with it, but by simply sampling from the community, a random sample of the community.
+
+147
+00:18:28,320 --> 00:18:41,400
+And then what we get out of that is we get the considered opinion of the community, because we don't have the time, all of us, to learn all about a particular court case.
+
+148
+00:18:41,400 --> 00:18:43,280
+And there are lots of court cases going on.
+
+149
+00:18:43,280 --> 00:18:47,460
+So if we want to learn about one court case, there are hundreds of court cases to be settled.
+
+150
+00:18:47,920 --> 00:18:51,100
+So the way we deal with that is through juries.
+
+151
+00:18:51,100 --> 00:18:55,820
+And we could do a lot more of that in our political system.
+
+152
+00:18:55,820 --> 00:19:02,860
+And if we did that, that would address questions like the lack of a quality of speech.
+
+153
+00:19:02,860 --> 00:19:09,960
+It would also address questions like the difference between the opinion of the people and the considered opinion of the people.
+
+154
+00:19:09,960 --> 00:19:27,100
+Because for instance, when Tony Abbott campaigned in Australia to abolish the carbon pricing of the previous government, he knew that if a radio interviewer wanted to talk about it, he'd have to talk about it for a minute or two, and then that would be the end of it.
+
+155
+00:19:27,100 --> 00:19:32,520
+So he was able to bring to government a policy that really didn't make any sense.
+
+156
+00:19:32,520 --> 00:19:40,300
+And if a jury had considered that policy, they would have said, well, here's the policy you object to, which is carbon pricing.
+
+157
+00:19:40,640 --> 00:19:41,700
+We've looked at your...
+
+158
+00:19:41,700 --> 00:19:44,120
+And now, okay, you've got some objections to carbon pricing.
+
+159
+00:19:44,120 --> 00:19:44,840
+That's fair enough.
+
+160
+00:19:46,000 --> 00:19:48,740
+We've looked at your policy, and it doesn't really make any sense.
+
+161
+00:19:48,740 --> 00:19:49,460
+It's not...
+
+162
+00:19:49,460 --> 00:19:54,700
+You're claiming that it will do the same thing at a lower cost, and it won't do anything of the kind.
+
+163
+00:19:54,700 --> 00:19:56,940
+It simply isn't a policy.
+
+164
+00:19:56,940 --> 00:20:00,160
+So that's why it's important to...
+
+165
+00:20:01,020 --> 00:20:13,560
+So by involving juries in politics more, I'm not talking about abandoning elections, but involving juries more, we can solve a number of problems.
+
+166
+00:20:13,660 --> 00:20:22,220
+And one is the problem of a quality of speech, and the other is the problem that we want the considered opinion of the people involved, not just the opinion of the people.
+
+167
+00:20:22,220 --> 00:20:33,380
+So in some ways, what you're saying is you want to also implement a way of providing closer scrutiny of the policies that has been put forward to the people.
+
+168
+00:20:33,660 --> 00:20:34,480
+Sure, sure.
+
+169
+00:20:34,480 --> 00:20:44,840
+And I want it to be less about a media circus, and more about groups of people trying to figure out what the right answer is, and not really whose side they're on.
+
+170
+00:20:44,840 --> 00:20:55,680
+So so much of modern politics involves people self-identifying with one side or the other, which is fine, but we want to work these problems out.
+
+171
+00:20:55,680 --> 00:21:03,640
+And usually both sides have something to say, and various people who aren't in parliament at all have something to say.
+
+172
+00:21:03,640 --> 00:21:15,220
+If you're making the argument of using the court system as an analogy in some ways, wouldn't you say that you have to defend under prosecution, and obviously you want both of them to make the strongest case?
+
+173
+00:21:15,220 --> 00:21:18,620
+Yes, sure, that's one way to, that's one analogy.
+
+174
+00:21:18,620 --> 00:21:35,940
+But yeah, you don't necessarily, there will be times when the two party, the two major parties fighting with each other, won't actually give you the answer you want, because both of them are, you've heard of this expression, certainly in Australia, we have the expression of small target strategy.
+
+175
+00:21:35,940 --> 00:21:48,100
+Now, a small target strategy is a strategy that a major party, typically a major party has, and the idea is that they can get through an election without any people attacking them.
+
+176
+00:21:50,100 --> 00:22:08,440
+So, they know each of them go into the election with about 40% of the vote, and they're just trying to make sure that nobody gets too upset about with them, so that they can stay on message during the election campaign and keep saying what they want to say rather than just defending one policy after another.
+
+177
+00:22:08,440 --> 00:22:11,060
+So they adopt a small target strategy.
+
+178
+00:22:11,060 --> 00:22:16,060
+And there are lots of areas where we've got a rough idea what to do.
+
+179
+00:22:16,320 --> 00:22:21,660
+So to give you an example, gun control is an example in the United States.
+
+180
+00:22:21,660 --> 00:22:25,240
+Mass incarceration is an example in the United States.
+
+181
+00:22:25,240 --> 00:22:34,760
+Treating drug problems more for harm minimization and as a medical issue rather than as a criminal issue is an issue around the world.
+
+182
+00:22:34,760 --> 00:22:51,800
+And politicians are just scared to do what the people who are experts in the field think ought to be done because they're afraid that they will be presented as not tough enough on crime and all that sort of stuff.
+
+183
+00:22:51,800 --> 00:22:53,820
+I see.
+
+184
+00:22:53,820 --> 00:23:02,640
+Well, going to current affairs, like if you remember, there's America, election going on, there's Bill Sanders, there's Bloomberg and all sorts.
+
+185
+00:23:02,640 --> 00:23:07,340
+And if I remember, Bloomberg approached to, as a mayor, was stop and frisk.
+
+186
+00:23:07,340 --> 00:23:15,980
+And it was very much on the idea of providing a very strong kind of like image to the population that just tough on crime.
+
+187
+00:23:15,980 --> 00:23:16,640
+That's right.
+
+188
+00:23:16,640 --> 00:23:20,140
+And it sounds like it almost relates to what you were talking about.
+
+189
+00:23:20,140 --> 00:23:21,100
+I think it does, actually.
+
+190
+00:23:21,100 --> 00:23:22,580
+I think that's rather a good example.
+
+191
+00:23:22,580 --> 00:23:28,140
+I think if there were citizens, so what happened with stop and frisk?
+
+192
+00:23:28,960 --> 00:23:32,680
+And I'm no expert on this, so I may need to be corrected.
+
+193
+00:23:32,680 --> 00:23:42,400
+But as I understand it, Mayor Bloomberg was able to sell the idea of stop and frisk as him being tough on crime, and people wanted to be tough on crime.
+
+194
+00:23:42,400 --> 00:24:00,760
+And that morphed into a process of policing that the black community experienced as deeply racist, because in many ways, because the way the police policed was more or less to assume they were guilty until they proved...
+
+195
+00:24:00,760 --> 00:24:03,880
+Black people were guilty until they proved otherwise.
+
+196
+00:24:03,880 --> 00:24:06,860
+So there's lots of evidence that if you were...
+
+197
+00:24:06,860 --> 00:24:11,900
+There's a nice line where someone was found guilty of driving while black.
+
+198
+00:24:14,140 --> 00:24:27,160
+So the idea was if you were black and driving a decent looking car, you'd be stopped and frisked and people would assume you were a drug dealer and all this kind of stuff.
+
+199
+00:24:27,160 --> 00:24:41,920
+Now, I think that if the black community came to a citizen jury and said, we feel this is deeply wrong and we want to take you to look at what happens.
+
+200
+00:24:41,920 --> 00:24:44,120
+And we think you'll understand this.
+
+201
+00:24:44,120 --> 00:24:46,900
+I think a lot of people would have reacted well to that.
+
+202
+00:24:47,520 --> 00:24:48,360
+I may be wrong.
+
+203
+00:24:48,360 --> 00:24:57,480
+Certainly in the South in the 1950s and 60s, white juries used to acquit white people of raping black women.
+
+204
+00:24:57,480 --> 00:25:02,300
+So, you know, it's possible that I'm not suggesting this mechanism is perfect.
+
+205
+00:25:02,300 --> 00:25:10,820
+If there's enough vicious racism around, then democracy works as you would expect democracy to work.
+
+206
+00:25:10,880 --> 00:25:23,780
+I would be very curious in following that line of thought later on when we start comparing your concepts against other competing democracy concepts like flux, my vote, as well as proportion of representation.
+
+207
+00:25:23,780 --> 00:25:25,320
+Yeah.
+
+208
+00:25:25,320 --> 00:25:27,340
+Well, look, I'm no expert on these things.
+
+209
+00:25:27,340 --> 00:25:29,220
+I've had a look at them all.
+
+210
+00:25:30,480 --> 00:25:32,500
+I kind of wish them well, obviously.
+
+211
+00:25:33,140 --> 00:25:34,840
+Oh, well, should we provide context?
+
+212
+00:25:34,900 --> 00:25:38,500
+Yeah, you explain one model and I'll comment on.
+
+213
+00:25:38,500 --> 00:25:48,400
+If I remembered, the concept of flux and my vote is about providing a representation that is controlled through digital direct democracy.
+
+214
+00:25:48,400 --> 00:25:48,700
+Yeah.
+
+215
+00:25:48,700 --> 00:25:55,180
+But in some ways, if I understand the flux, it's based on issue-based direct democracy.
+
+216
+00:25:55,180 --> 00:25:56,700
+That's how they name it.
+
+217
+00:25:56,820 --> 00:25:57,400
+I understand.
+
+218
+00:25:57,400 --> 00:26:12,660
+And the idea is for every issue, you get to choose which issue you want to vote for, and if you don't trust yourself, that's a direct democracy approach, but you don't trust yourself, you could delegate to another person.
+
+219
+00:26:12,660 --> 00:26:13,240
+That's right.
+
+220
+00:26:13,240 --> 00:26:17,400
+And there's a bit more complication to it as well, in terms of being able to save up.
+
+221
+00:26:17,400 --> 00:26:24,140
+But if you're interested in this, you might as well listen to the other talk I have with Ben Bellingle on the flux system.
+
+222
+00:26:24,540 --> 00:26:25,180
+Yeah.
+
+223
+00:26:25,640 --> 00:26:33,680
+So my reaction to this is firstly, I wish them well and I think it's an interesting experiment.
+
+224
+00:26:33,680 --> 00:26:44,420
+They have to, as I understand what they're doing, they have to campaign as a party because they want to get into parliament with flux candidates.
+
+225
+00:26:44,440 --> 00:26:56,180
+And so in campaigning, they will need to adopt some of the kinds of compromises that candidates do.
+
+226
+00:26:56,180 --> 00:26:59,580
+So they'll have to explain themselves in under eight seconds.
+
+227
+00:26:59,580 --> 00:27:00,980
+They will simplify.
+
+228
+00:27:00,980 --> 00:27:09,940
+They will find ways of expressing themselves that are highly emotive and so on.
+
+229
+00:27:09,940 --> 00:27:10,580
+Good luck to them.
+
+230
+00:27:10,580 --> 00:27:12,300
+I'm not saying that's a terrible thing.
+
+231
+00:27:12,300 --> 00:27:26,340
+I'm simply saying they're drawn into the existing system and the existing system exerts forces on people because politicians are the way they are, not because they're bad people, but because they're trying to win elections.
+
+232
+00:27:26,340 --> 00:27:28,500
+They're trying to win our vote.
+
+233
+00:27:28,500 --> 00:27:35,620
+And one of my big points here is that we're every bit as much of the problem of politics as the politicians are.
+
+234
+00:27:35,620 --> 00:27:47,660
+And a lot of activism, a lot of people saying they're going to fix democracy, are suckers for a view that we're the good guys and the politicians are the bad guys.
+
+235
+00:27:47,660 --> 00:27:55,420
+We're all part of a system, and the politicians don't act the way they do because they're bad people.
+
+236
+00:27:55,420 --> 00:28:00,740
+They act the way they do because we reward them for acting in that way.
+
+237
+00:28:00,740 --> 00:28:10,400
+So the clear word you would probably say is that there's a perverse incentive baked into our current system, which means that when you try to work to it, it's much harder to actually do it.
+
+238
+00:28:10,400 --> 00:28:12,580
+Yes, but let's be more frank about it.
+
+239
+00:28:12,580 --> 00:28:17,520
+We vote for, we complain about lack of leadership.
+
+240
+00:28:17,520 --> 00:28:21,880
+We complain about politicians' scare campaigns.
+
+241
+00:28:21,880 --> 00:28:24,700
+And why do you think they run scare campaigns?
+
+242
+00:28:24,700 --> 00:28:28,860
+Because they sort of temperamentally like scare campaigns?
+
+243
+00:28:28,860 --> 00:28:32,080
+Of course not, because scare campaigns work.
+
+244
+00:28:32,080 --> 00:28:39,040
+Scare campaigns influence our votes, and everyone knows who is a political operative.
+
+245
+00:28:39,040 --> 00:28:44,360
+So don't come, so don't tell us how evil the politicians are.
+
+246
+00:28:44,360 --> 00:28:47,280
+We are the people who make the votes.
+
+247
+00:28:47,280 --> 00:28:50,400
+This is a complete system.
+
+248
+00:28:50,420 --> 00:29:02,380
+And so my concern about direct democracy is that it, we're still thinking of ourselves as the good guys.
+
+249
+00:29:04,940 --> 00:29:28,920
+And all of the ways in which I see the current system as perverse and very bad and inadequate are likely to be similar in direct democracy, maybe a bit better, but it's entirely possible that it works.
+
+250
+00:29:29,460 --> 00:29:33,560
+So, let's take the example that I just gave you.
+
+251
+00:29:33,560 --> 00:29:37,940
+Politicians use scare campaigns because they work.
+
+252
+00:29:37,940 --> 00:29:53,900
+So, if we have a direct vote on a carbon tax or franking credits or any other damn thing, the political system will seek to manipulate people, to scare people, to win their votes.
+
+253
+00:29:55,400 --> 00:30:28,680
+If we then ask, what would happen if we had a chamber of parliament in which a hundred people were chosen at random from the Australian community, and they got to talk about stuff and call experts, just as the other two houses of parliament can, and commission reports, then I think you have a chance to stand against the circus, the carry-on that we have in our current system.
+
+254
+00:30:28,680 --> 00:30:43,460
+And the idea that we can reform the current system and build into a direct, but by making the democracy more direct, I think is quite likely not to solve the problem and might make things worse.
+
+255
+00:30:43,480 --> 00:30:44,320
+I see.
+
+256
+00:30:44,320 --> 00:30:44,820
+I see.
+
+257
+00:30:47,100 --> 00:30:51,940
+There's also MyVote, and there's definitely a difference.
+
+258
+00:30:51,940 --> 00:30:55,380
+But one of the things I could say about MyVote is their approach.
+
+259
+00:30:55,380 --> 00:31:18,100
+At the moment, from what I understand, is to not be a party, but to provide a system for candidates that want to adopt the MyVote system, to be able to allow their own members in their own party to vote for and decide and help inform the representative on what the members want you to vote as.
+
+260
+00:31:18,100 --> 00:31:33,460
+And part of the things I think that MyVote does want to address in a similar method about the considered opinion of the people is the idea of creating information package that is accompanied with the voting system.
+
+261
+00:31:33,460 --> 00:31:42,980
+It sounds like you're not too convinced about that approach because even if it's similar to the idea of trying to tackle the considered opinion of the people problem.
+
+262
+00:31:42,980 --> 00:31:43,520
+Yeah.
+
+263
+00:31:43,520 --> 00:31:52,400
+Well, I think that they're trying to think of the problems and they've come to similar conclusions to me about what the problems are.
+
+264
+00:31:52,400 --> 00:32:02,780
+I think that they're pretty keen on the idea of there being a technological solution and the technological solution is an app is an important part of it.
+
+265
+00:32:02,780 --> 00:32:06,920
+And I'm the less optimistic that they can do that.
+
+266
+00:32:07,380 --> 00:32:12,880
+Let me make a few observations that are not necessarily very systematic.
+
+267
+00:32:15,280 --> 00:32:19,800
+Firstly, intuitively, I don't like the idea of packaging up.
+
+268
+00:32:19,800 --> 00:32:31,320
+I mean, this is what parties do, but they package up bunches of issues and say, well, here are four or ten alternatives and you can vote for one of those alternatives.
+
+269
+00:32:31,320 --> 00:32:40,600
+Decisions are made on specific, our political system will make decisions on thousands of very specific things.
+
+270
+00:32:40,600 --> 00:32:46,180
+And I'm not, I've never been myself comfortable with saying, oh, I'm here on the political spectrum.
+
+271
+00:32:46,180 --> 00:32:50,200
+I want to try, I want to work things out for myself.
+
+272
+00:32:50,200 --> 00:33:02,700
+Now, that's just me as a voter, but what I want is I want a political system that I can trust to work stuff out on its own, rather than me telling it what the conclusion that it should come to.
+
+273
+00:33:03,440 --> 00:33:05,840
+So, that's what we do with juries.
+
+274
+00:33:05,840 --> 00:33:08,320
+We say, we don't know whether this person is guilty or not.
+
+275
+00:33:08,320 --> 00:33:09,280
+It's up to you.
+
+276
+00:33:09,280 --> 00:33:10,540
+You do your best.
+
+277
+00:33:10,540 --> 00:33:14,760
+You learn a lot, you deliberate a lot, and you decide.
+
+278
+00:33:14,760 --> 00:33:24,220
+And if you can come to a strong consensus, if a jury of 12 splits 7-5, no one cares very much.
+
+279
+00:33:24,220 --> 00:33:30,660
+I mean, I wouldn't necessarily say that's a basis on which to find someone guilty or not.
+
+280
+00:33:30,660 --> 00:33:44,040
+But if they split 10-2, then I think that that's strong evidence to say, we're making a decision on behalf of the community, the community thinks you're guilty or your community thinks you're not guilty.
+
+281
+00:33:44,040 --> 00:33:49,180
+So that's a way to get at the considered opinion of the people.
+
+282
+00:33:49,180 --> 00:33:52,740
+So anyway, those are a couple of things.
+
+283
+00:33:52,740 --> 00:33:55,700
+But I wish them well and maybe they'll do some good.
+
+284
+00:33:56,320 --> 00:34:14,440
+I think the thing I've noticed is that essentially, the difference sounds like there's a communication between the people in a jury room, while within, say, the MyVote, it's a bit more like everybody makes their own decision after reading.
+
+285
+00:34:14,900 --> 00:34:20,380
+And one of the things we know is that if you put people in, I call it the road rage effect.
+
+286
+00:34:20,380 --> 00:34:38,440
+I don't know how many people who are listening to this have had an experience where you're driving somewhere, let's say driving home from work or you're driving back home from somewhere, and somebody does something on the road and it really annoys you, and you might even blow your horn and you go into a bit of a road rage story.
+
+287
+00:34:38,440 --> 00:34:40,159
+And you might be right, you might be wrong.
+
+288
+00:34:40,159 --> 00:34:44,020
+They might have done something silly or you might have missed a road sign or something.
+
+289
+00:34:44,020 --> 00:34:46,000
+Now, I've had this experience once or twice.
+
+290
+00:34:46,000 --> 00:34:48,300
+I don't think I blew my horn by a nail.
+
+291
+00:34:48,300 --> 00:34:55,560
+And then I realized that the person next to me is my next door neighbor, and we're both driving to the same place, and we're both going to get out of the car.
+
+292
+00:34:55,560 --> 00:34:59,880
+And then the road rage me has to present myself to my next door neighbor.
+
+293
+00:34:59,880 --> 00:35:09,500
+And I'm immediately ashamed about the road rage me, because that's not my neighborly me, and it's not the way I relate to people when I meet them.
+
+294
+00:35:09,500 --> 00:35:11,140
+And so the whole reason...
+
+295
+00:35:11,140 --> 00:35:16,340
+It's kind of also because you know that your neighbor intention isn't to cause problems.
+
+296
+00:35:16,500 --> 00:35:18,060
+Exactly, exactly.
+
+297
+00:35:18,060 --> 00:35:23,020
+And most people on the road are like that, and they might go, Oh, yeah, I'm sorry about that.
+
+298
+00:35:23,020 --> 00:35:28,680
+But they get really annoyed with you because you've sat on the horn and been really horrible to them.
+
+299
+00:35:28,680 --> 00:35:30,360
+And that's the...
+
+300
+00:35:30,360 --> 00:35:36,740
+And I think of elections and the way we cover media as the politics of road rage.
+
+301
+00:35:36,740 --> 00:35:42,980
+And if you listen to Alan Jones or we've got sort of slightly more demure versions of that.
+
+302
+00:35:43,420 --> 00:35:47,420
+And now Alan Jones is a shock job for people who don't know who he is.
+
+303
+00:35:47,420 --> 00:35:49,060
+Rush Limbaugh, if you like.
+
+304
+00:35:49,060 --> 00:35:52,240
+If you listen to these people, they crank everyone up.
+
+305
+00:35:52,240 --> 00:35:54,160
+They're incredibly self-righteous.
+
+306
+00:35:54,160 --> 00:36:02,760
+Anyone who doesn't agree with them is a fool and a dreadful person and a social justice warrior or a communist or whatever they are.
+
+307
+00:36:02,760 --> 00:36:09,100
+It almost reminds me of a comment saying that people describe politics like a football or a war.
+
+308
+00:36:09,100 --> 00:36:09,720
+Sure.
+
+309
+00:36:10,080 --> 00:36:21,480
+And one of the things, so if you hold a citizen jury, I'll tell you what happens, what goes through people's minds, because I've seen this in the literature and talked to some people who are involved.
+
+310
+00:36:21,480 --> 00:36:33,080
+Some people get a letter in the post and it says, you've been selected at random, we would like you to represent the people in a citizen jury, and we're going to talk about nuclear waste or something or other.
+
+311
+00:36:33,080 --> 00:36:39,720
+And they get this thing and they think, oh, gee, that's exciting, that's good, I'm going to be involved in something.
+
+312
+00:36:39,720 --> 00:36:41,220
+And they agree to do it.
+
+313
+00:36:41,220 --> 00:36:44,280
+And then as they go along, they think, oh god, this is politics.
+
+314
+00:36:44,280 --> 00:36:48,200
+There'll be people outside demonstrating, everyone's going to yell at me.
+
+315
+00:36:48,200 --> 00:36:52,740
+I don't really know, I can't defend myself that well because I don't know the issue very well.
+
+316
+00:36:52,740 --> 00:36:57,340
+There'll be all these people, self-righteous, yelling.
+
+317
+00:36:57,340 --> 00:36:59,000
+Political apathy in some ways.
+
+318
+00:36:59,000 --> 00:36:59,900
+Yeah, exactly.
+
+319
+00:36:59,900 --> 00:37:01,160
+It's a good, exactly.
+
+320
+00:37:01,160 --> 00:37:08,780
+And then they go into the room and they sort of they're sort of a bit let down because nobody's like that.
+
+321
+00:37:08,780 --> 00:37:13,660
+Or maybe one or two people have got sort of funny looking hair or something, but usually nobody's like that.
+
+322
+00:37:13,660 --> 00:37:19,440
+And then as they get talking to people, including people who they don't agree with, they go, oh, I get it.
+
+323
+00:37:19,440 --> 00:37:21,180
+These people are just like me.
+
+324
+00:37:21,180 --> 00:37:24,820
+Yeah, these are all the other people who don't like politics, most of them.
+
+325
+00:37:24,820 --> 00:37:27,300
+And most people who don't like politics, they've got political views.
+
+326
+00:37:27,300 --> 00:37:34,300
+They're sort of quite interested in politics or have or interested in political issues, but they've tuned out of this Punch and Judy show.
+
+327
+00:37:34,300 --> 00:37:43,360
+And they get right into it, and they will go out of their way to say, well, look, I think this is important, but I realize you think that's important.
+
+328
+00:37:43,360 --> 00:37:46,660
+So surely we can work away through this.
+
+329
+00:37:46,660 --> 00:37:52,060
+That is not the sort of spirit that is inhabiting the politics as we know it.
+
+330
+00:37:52,100 --> 00:37:57,060
+So it's like a codependent, empathetic relationship with a fellow citizen in some race.
+
+331
+00:37:57,220 --> 00:37:58,100
+Absolutely.
+
+332
+00:37:58,100 --> 00:38:16,400
+And what it does is it makes the, it makes manifest in the physical situation that you're in, the real nature of politics, which is that you can make it about you or you can make it about them.
+
+333
+00:38:16,400 --> 00:38:19,520
+But most people would prefer to make it about both of those things.
+
+334
+00:38:20,040 --> 00:38:29,440
+Most people realize that they're just a, you know, they have a view and they want that view to be acknowledged and listened to and taken account of.
+
+335
+00:38:29,460 --> 00:38:32,460
+And they know they're just an ordinary person.
+
+336
+00:38:32,460 --> 00:38:47,440
+Machiavelli, who you may have heard of, wrote in the 16th century about the fact that it's only well, it's only the wealthy, it's only the oligarchs, it's only the powerful who want more and more power.
+
+337
+00:38:47,960 --> 00:39:01,020
+The ordinary people and the spirit of democracy is, look, we want our government to work properly, we want to be left alone, we want to lead our lives, and we don't want to pick fights with people.
+
+338
+00:39:01,020 --> 00:39:08,300
+Well, that's not the spirit of democracy that inhabits our democratic system.
+
+339
+00:39:09,360 --> 00:39:20,100
+And it's within grasp because you just have to get ordinary people, this is what Isegaria means, this is one of the things that's comprehended in Isegaria.
+
+340
+00:39:20,100 --> 00:39:21,020
+The quality of speech.
+
+341
+00:39:21,020 --> 00:39:35,300
+Ordinary people, equality of speech, just ordinary people don't want trouble, they want to lead a decent life, get on with their business, and acknowledge others' concerns and try and accommodate them.
+
+342
+00:39:35,300 --> 00:39:36,000
+Okay.
+
+343
+00:39:36,000 --> 00:39:37,440
+Thank you very much, definitely.
+
+344
+00:39:38,140 --> 00:39:46,180
+In terms of Flux and MyVote, what we were talking about in the jury or the Citizen Jury concept was the idea of people talking to each other.
+
+345
+00:39:46,180 --> 00:39:56,980
+But perhaps if you look at New Democracy and how the, if I remember New Democracy is trying to create an app where you can learn more and discuss amongst each other, isn't the key?
+
+346
+00:39:56,980 --> 00:39:58,540
+No, I'm unaware of that.
+
+347
+00:39:58,540 --> 00:40:00,200
+New Democracy mostly puts on the citizen.
+
+348
+00:40:00,200 --> 00:40:01,100
+Or is it New Vote?
+
+349
+00:40:01,100 --> 00:40:02,300
+I think it's maybe New Vote.
+
+350
+00:40:02,300 --> 00:40:03,240
+I have to remember it.
+
+351
+00:40:03,960 --> 00:40:05,360
+I will put in the description.
+
+352
+00:40:05,360 --> 00:40:05,720
+Okay.
+
+353
+00:40:05,720 --> 00:40:18,580
+Well, New Democracy is an NGO, an organization in Sydney which tries to organize lots of citizen juries and the sort of thing that I'm talking about.
+
+354
+00:40:18,580 --> 00:40:19,320
+Yes.
+
+355
+00:40:19,320 --> 00:40:21,720
+So perhaps it's New Vote, but let me just describe it.
+
+356
+00:40:21,720 --> 00:40:30,060
+But basically the idea is there's a website where you could discuss with other people about different issues and provide like a little straw poll.
+
+357
+00:40:30,220 --> 00:40:34,360
+Is it like a little polling mechanism so you know in general what they are?
+
+358
+00:40:34,360 --> 00:40:34,640
+Yeah.
+
+359
+00:40:34,640 --> 00:40:36,180
+Are you talking about your view?
+
+360
+00:40:36,180 --> 00:40:39,820
+I think you're talking about something I talked about in speech.
+
+361
+00:40:39,820 --> 00:40:40,740
+Yeah, I think so.
+
+362
+00:40:40,740 --> 00:40:54,860
+Which way you have, you can look at how many, which way people vote and then you can ask who are the, who, which way, if we give more weight to people who have made the best contribution to the debate.
+
+363
+00:40:54,860 --> 00:40:55,080
+Yeah.
+
+364
+00:40:55,080 --> 00:41:16,960
+So this was like the thing here is if you could do that online, why not like just integrated with say MyVoteFlux and like just not have to do citizen juries of random selection, just get the opinion of everybody, but have to discuss amongst themselves, do you think say the structure of the programs you're talking about?
+
+365
+00:41:16,960 --> 00:41:17,260
+Yeah.
+
+366
+00:41:17,260 --> 00:41:24,260
+Well, we haven't yet mastered the art of stopping trolls driving everybody crazy.
+
+367
+00:41:24,260 --> 00:41:31,700
+Like you know what I'm referring to, because like some of the objection to citizen juries is that it's a very small sample.
+
+368
+00:41:31,700 --> 00:41:40,920
+It's not the whole sample and with Flux and MyVote, if it's applied to the whole population, that's the everybody been deciding on it rather than say a random selection.
+
+369
+00:41:40,920 --> 00:41:42,680
+If that makes sense.
+
+370
+00:41:42,680 --> 00:41:43,580
+Well, it does make sense.
+
+371
+00:41:43,580 --> 00:42:02,940
+But if I told you that 60, 65 percent of randomly selected Australians, of a group of 150 randomly selected Australians wanted to do something, I, you know, that's good evidence that that's what the considered opinion people is.
+
+372
+00:42:03,340 --> 00:42:06,420
+If it was 51 percent, that's not the case.
+
+373
+00:42:06,420 --> 00:42:14,100
+So, so, so that's how I respond to this idea that the it's a small sample.
+
+374
+00:42:15,420 --> 00:42:29,400
+Now there is the question of how you try to use new technologies to scale up the capacity of our democracy to take on board diverse perspectives.
+
+375
+00:42:29,800 --> 00:42:54,280
+We are, we have not made much progress, not that we've really tried to tragically with this has not been something that, you know, I mean, vast amounts of commercial money have gone into Facebook and Twitter, and they're not only not trying to solve this problem, they're probably making the problem worse by just trying to maximize clicks and rev everybody up.
+
+376
+00:42:55,360 --> 00:43:09,380
+How we build online tools which amp down the aggro and help to qualify who's making the best contribution, I've written a little bit about that.
+
+377
+00:43:09,380 --> 00:43:12,300
+If people want to go to my, I can send you a link to it.
+
+378
+00:43:12,300 --> 00:43:12,800
+Thank you.
+
+379
+00:43:12,800 --> 00:43:15,820
+But it's not something that we've developed very much.
+
+380
+00:43:15,820 --> 00:43:26,300
+And I think my vote is sort of trying to come up with a system in which there would be responsible discussion.
+
+381
+00:43:26,300 --> 00:43:30,180
+It's pretty hard, though, to stop irresponsible discussion.
+
+382
+00:43:30,180 --> 00:43:50,000
+So if anyone wants to read a book by Peter Rushen, who lives in England, Peter Pomerantsev, called This Is Not Propaganda, he documents how Russian trolls, how important Twitter trolls, Facebook trolls, and so on have been to Putin.
+
+383
+00:43:50,000 --> 00:43:57,760
+He doesn't talk that much about Trump, probably Duarte in the Philippines, who seems like a maniac.
+
+384
+00:43:57,760 --> 00:44:01,940
+He's done extremely well out of trolling.
+
+385
+00:44:01,940 --> 00:44:04,480
+Like a not very democratic person, is that what you're saying?
+
+386
+00:44:04,480 --> 00:44:05,960
+Like an authoritarian kind of person.
+
+387
+00:44:05,960 --> 00:44:16,960
+Well, he's an authoritarian kind of person who has led a pogrom, a kind of massacre against alleged drug dealers.
+
+388
+00:44:16,960 --> 00:44:22,160
+Now, some of them will have been drug dealers, and people go out at night, and they assassinate them.
+
+389
+00:44:22,160 --> 00:44:23,000
+Oh, yeah, yeah.
+
+390
+00:44:23,000 --> 00:44:35,420
+Now, so there is this undercurrent of around the world of an increase in rise in authoritarianism, more perceptibly over the last like five years or so.
+
+391
+00:44:35,420 --> 00:44:54,500
+And yeah, well, well, what's now an important part of what's going on there from my reading, which is, you know, I'm not claiming to be an expert, but an important part of what's going on there is that you have, and I recommend if people want to put Peter Pomerantsev into Google and have a look at some of his articles.
+
+392
+00:44:54,500 --> 00:45:08,880
+Essentially, what happens is that trolls go online and they undermine people's ability to know what's real and what's not real, and who's saying what and why.
+
+393
+00:45:08,880 --> 00:45:15,920
+So that's something that my vote and all these organizations have to try and deal with.
+
+394
+00:45:16,720 --> 00:45:20,900
+And I'm not really up on how they're going, but this is...
+
+395
+00:45:20,900 --> 00:45:26,260
+Facebook, if I remember, and Twitter also, they're trying to tackle this kind of thing as well.
+
+396
+00:45:26,260 --> 00:45:28,620
+Well, Facebook cannot...
+
+397
+00:45:28,620 --> 00:45:32,020
+Facebook's comments can't be taken seriously.
+
+398
+00:45:32,020 --> 00:45:34,160
+They're basically just trying to make money.
+
+399
+00:45:34,160 --> 00:45:36,980
+Twitter is trying to do things, but it's very hard.
+
+400
+00:45:36,980 --> 00:45:38,840
+It's very hard.
+
+401
+00:45:39,660 --> 00:45:48,260
+Any of your listeners can right now go on Twitter and just upset people, just turn up and start abusing them.
+
+402
+00:45:48,260 --> 00:45:50,280
+And that's how you get more followers.
+
+403
+00:45:50,280 --> 00:45:52,740
+That's how you join a tribe.
+
+404
+00:45:52,740 --> 00:46:00,280
+Yeah, like the current issue these days, like in the beginning of the year, has been about bushfire and the coronavirus in Australia.
+
+405
+00:46:00,280 --> 00:46:01,000
+Yeah.
+
+406
+00:46:01,000 --> 00:46:08,500
+And if you remember some of the rumors going on with coronavirus, like drinking beer will help cure coronavirus.
+
+407
+00:46:08,500 --> 00:46:11,120
+It's probably not something you should trust.
+
+408
+00:46:11,120 --> 00:46:11,320
+Yeah.
+
+409
+00:46:11,320 --> 00:46:13,840
+Well, that's just disinformation.
+
+410
+00:46:13,940 --> 00:46:33,740
+But when you have disinformation about who you are talking to, and what their motives are, and whether they're bots, and whether they're funded by the Kremlin, or by Duarte in the Philippines, or by some oligarch somewhere.
+
+411
+00:46:33,940 --> 00:46:36,500
+And this, you know, like that's what's going on.
+
+412
+00:46:37,300 --> 00:46:43,840
+And again, I mention those things because they're very much on my mind, and they should be on everybody's minds who's thinking about democracy.
+
+413
+00:46:44,600 --> 00:46:54,020
+But a Citizen Jury does create a, does a lot of things to make it hard to infiltrate by the trolls.
+
+414
+00:46:54,020 --> 00:47:00,340
+You know who these people are, they're on the electoral rolls, they're all talking to each other, they get plenty of time.
+
+415
+00:47:00,340 --> 00:47:08,540
+If people turn up with a conspiracy theory or two, they can tell it to other people, the other people, then the group can say, let's get some research done on that.
+
+416
+00:47:08,540 --> 00:47:19,240
+And so, with a Citizen Jury, like in practice, if you're saying you're implementing Citizen Juries in the government, would it be like all recorded, the discussion and?
+
+417
+00:47:19,440 --> 00:47:33,640
+I mean, that's a detail, but there are some people who think that the identities of these people, someone might be able to, you might give someone the option to participate without their identity being known.
+
+418
+00:47:33,640 --> 00:47:37,880
+But they're not trolls, in the sense that they happen to have been somebody who's randomly selected.
+
+419
+00:47:37,980 --> 00:47:41,120
+And in that sense, they have an entitlement to be there.
+
+420
+00:47:41,120 --> 00:47:44,140
+A certain accountability mechanism in that sense.
+
+421
+00:47:44,140 --> 00:47:45,160
+Well, yes.
+
+422
+00:47:45,160 --> 00:47:46,080
+Well, there is not.
+
+423
+00:47:46,260 --> 00:47:55,640
+But remember, one of the beauties of a jury is that the accountability to the people is being of the people, not in reporting back to the people.
+
+424
+00:47:55,640 --> 00:47:56,400
+I see.
+
+425
+00:47:56,400 --> 00:48:00,400
+So if, because you're not accountable for your vote, OK?
+
+426
+00:48:00,400 --> 00:48:02,040
+You just have your vote.
+
+427
+00:48:02,040 --> 00:48:05,020
+You are sovereign and you vote, and that is accepted.
+
+428
+00:48:05,360 --> 00:48:09,200
+No one turns up and says justify why you voted, OK?
+
+429
+00:48:09,200 --> 00:48:10,460
+That's an interesting way of looking at it.
+
+430
+00:48:10,460 --> 00:48:12,740
+Well, that's a good way of looking at it.
+
+431
+00:48:12,740 --> 00:48:16,300
+Now, that's why we say our representatives are accountable.
+
+432
+00:48:16,300 --> 00:48:21,380
+We have a mechanism, it's called an election, which makes them accountable to us.
+
+433
+00:48:21,380 --> 00:48:28,140
+The mechanism of a jury is not a mechanism of accountability in the same way.
+
+434
+00:48:29,420 --> 00:48:38,560
+A juror is accountable to themself and their conscience and their sense that, well, they're also accountable to the law.
+
+435
+00:48:38,980 --> 00:48:41,640
+There are things they are not permitted to do in the jury.
+
+436
+00:48:41,640 --> 00:48:46,760
+They can't hand out money and try and induce people to come to a different view.
+
+437
+00:48:48,700 --> 00:48:51,820
+So in that, so they're accountable to the law.
+
+438
+00:48:51,820 --> 00:48:58,240
+But we don't imagine that somebody can look inside a conscience or that someone can hold them accountable.
+
+439
+00:48:58,240 --> 00:49:07,420
+We say, if there is an overwhelming consensus of this randomly selected group, we'll take that to be the considered opinion of the people.
+
+440
+00:49:07,440 --> 00:49:08,480
+I see.
+
+441
+00:49:08,480 --> 00:49:19,160
+And the problem with existing mechanisms of accountability is, accountability is a nice name, but like transparency, it's got its limitations.
+
+442
+00:49:20,300 --> 00:49:29,740
+And it always produces its own perversities, because people try and get around accountability, just like they try and get around transparency.
+
+443
+00:49:29,740 --> 00:49:31,680
+Nice.
+
+444
+00:49:31,680 --> 00:49:44,520
+So I think we've been talking a bit about citizen juries, and I'd be interested to know, like, what are you aware of so far about citizen juries in Australia, and maybe around the ground, what organization exist?
+
+445
+00:49:44,520 --> 00:49:49,160
+Well, I think there have been something like 14 citizen juries in Australia.
+
+446
+00:49:49,160 --> 00:49:51,760
+Virtually all of them have been very successful now.
+
+447
+00:49:51,760 --> 00:50:03,560
+People who know something will go for and say, the South Australian citizen jury on nuclear waste didn't give the government what it wanted, but it did surface the considered opinion of the people.
+
+448
+00:50:03,560 --> 00:50:09,060
+It wasn't a brilliantly run citizen jury, and it produced some frustration.
+
+449
+00:50:09,300 --> 00:50:18,520
+Almost all of the others have been highly successful in that they have arrived at conclusions, and those conclusions have been handed to government.
+
+450
+00:50:18,520 --> 00:50:24,400
+And when they've been easy to implement, governments have implemented them, and when they've not been easy to implement, guess what happens.
+
+451
+00:50:24,400 --> 00:50:31,720
+Now, that's why I want to go further than these often government commissioned citizen juries.
+
+452
+00:50:31,720 --> 00:50:38,220
+If a government is going to commission a citizen jury, you can be pretty sure that it will do so in an area that is pretty tame.
+
+453
+00:50:39,740 --> 00:50:44,240
+And so they've got a good chance of taking the recommendations and implementing them.
+
+454
+00:50:44,240 --> 00:50:54,040
+So, for instance, two I know of were in Adelaide, and one was on making Adelaide's nightlife more vibrant but safe.
+
+455
+00:50:54,040 --> 00:50:58,160
+That's a nice tame issue for politicians, and not one they were doing very well on.
+
+456
+00:50:58,160 --> 00:51:00,920
+So why is it important that it be a tame kind of issue?
+
+457
+00:51:00,920 --> 00:51:09,860
+Well, because politicians spend most of their time trying to keep things under control, and their bureaucrats are even more terrified about things not being under control.
+
+458
+00:51:09,860 --> 00:51:11,960
+So they wouldn't do it on tax.
+
+459
+00:51:11,960 --> 00:51:16,120
+They wouldn't do it on something which would then just give them a big political headache.
+
+460
+00:51:16,120 --> 00:51:18,460
+Extremely contagious issues.
+
+461
+00:51:18,460 --> 00:51:20,440
+Exactly.
+
+462
+00:51:20,440 --> 00:51:27,100
+And some of the best uses of a citizen jury would be on those kinds of things, precisely for that reason.
+
+463
+00:51:29,500 --> 00:51:37,140
+So maybe we'll, like, I remember I definitely will be interested in going into more about the efforts that you're personally going through.
+
+464
+00:51:37,140 --> 00:51:42,820
+But I have recovered through all the things so far before, or is there anything else extra we need to?
+
+465
+00:51:42,820 --> 00:51:45,900
+Well, you asked about what was happening offshore with citizen juries.
+
+466
+00:51:45,900 --> 00:51:46,080
+Yes, yes.
+
+467
+00:51:46,080 --> 00:51:46,820
+And quite a lot.
+
+468
+00:51:46,820 --> 00:51:53,780
+So in the US state of Oregon, citizen juries have been built into their constitution.
+
+469
+00:51:53,780 --> 00:52:07,600
+I don't mean they've actually been written into the constitution document, but the way the government works is that there is an entitlement, if you manage to get enough signatures to have a citizen-initiated referendum.
+
+470
+00:52:07,600 --> 00:52:12,280
+Now, they know, and this has been in the constitution for over 100 years, I think.
+
+471
+00:52:12,280 --> 00:52:27,820
+Now, people became very unhappy about that because the citizen's initiated referendum was used by well-funded lobbies to put laws in place precisely to serve vested interests.
+
+472
+00:52:27,820 --> 00:52:41,080
+And as a result, what they've done is they've established a process in which if you have a citizen's initiated referendum, you also have a citizen's review.
+
+473
+00:52:41,080 --> 00:52:48,440
+And a citizen's review involves a four-day citizen jury with 24 randomly selected jurors.
+
+474
+00:52:48,900 --> 00:52:59,100
+And often those jurors come to different conclusions to the conclusions that are demonstrated in opinion polls.
+
+475
+00:52:59,100 --> 00:53:16,660
+And those people then advise the rest of the people so that when you get your paper to vote, it has either on the paper or in the package that you receive 300 words for and against and tells you how many people voted for and how many people voted against.
+
+476
+00:53:17,000 --> 00:53:20,240
+So that's an example in Oregon, in the United States.
+
+477
+00:53:20,720 --> 00:53:34,260
+In a province of Belgium now, the Germans speaking, two provinces of Belgium, they have a citizen assembly or a citizen council, a council, I think it's of 50 people chosen at random.
+
+478
+00:53:34,260 --> 00:53:44,820
+And they perform a role quite like, in some respects, quite like the Athenian Bulle, which is that they're randomly selected and they provide an agenda.
+
+479
+00:53:46,380 --> 00:53:56,860
+They can say to the legislature, we want you to address these issues, and they can also say, we want you to do this thing.
+
+480
+00:53:56,860 --> 00:54:02,040
+And they can also commission other citizen juries about specific issues.
+
+481
+00:54:02,040 --> 00:54:11,820
+Now, also Madrid, the city of Madrid has a randomly selected council, and I'm not entirely sure of it.
+
+482
+00:54:11,820 --> 00:54:15,200
+It has a different structure, so this is starting to happen.
+
+483
+00:54:15,200 --> 00:54:23,540
+And of course, there's been large citizen assemblies in France on climate change and in the UK on climate change.
+
+484
+00:54:23,540 --> 00:54:24,540
+Nice.
+
+485
+00:54:24,540 --> 00:54:28,560
+Well, that covers pretty much everything from the current situation.
+
+486
+00:54:28,560 --> 00:54:28,820
+Okay.
+
+487
+00:54:28,820 --> 00:54:37,260
+So tell me a bit more about how are you going to tackle citizen juries and giving this kind of idea to Australia?
+
+488
+00:54:37,260 --> 00:54:37,720
+Sure.
+
+489
+00:54:37,720 --> 00:54:50,200
+So I think everything I've said, it is possible to do the thing that I think is really important is that we don't have to go to the political system and ask for permission to do any of this.
+
+490
+00:54:50,200 --> 00:55:45,480
+If we can get funding, and that is if people want to crowd fund, but also if I can get some funding from some philanthropic sources, we could set up a standing citizens chamber that could simply be what I want it to be, which is a chamber in which we see the political business of the nation hashed over by ordinary people coming to views, getting to votes, and we would know, for instance, when Tony Abbott is trying to abolish carbon pricing in 2012, sorry, 2014, if he got rid of it then, if it wasn't earlier, 2013, we would know what a citizen council thought of that, and my very strong hunch is they wouldn't have been impressed.
+
+491
+00:55:45,480 --> 00:55:49,800
+And it wasn't that easy for Tony Abbott to get that through the Senate.
+
+492
+00:55:49,800 --> 00:56:02,200
+So I think we could have a big impact right now if we could fund a standing citizen chamber and then we could see what the considered opinion of the people was.
+
+493
+00:56:02,200 --> 00:56:04,400
+And I think it would make it harder.
+
+494
+00:56:04,400 --> 00:56:11,420
+I mean, the current government has a very small majority in the House of Representatives and needs to talk its way through the Senate.
+
+495
+00:56:11,420 --> 00:56:30,140
+And I think that doing this would help infuse Australia's party political democracy with Isegaria, with the quality of speech, with the considered opinion of the people, and would have a big influence on the system as it is right now.
+
+496
+00:56:30,140 --> 00:56:33,660
+We don't have to get anyone's permission to do that.
+
+497
+00:56:33,660 --> 00:56:35,240
+I see.
+
+498
+00:56:35,240 --> 00:56:45,240
+So in terms of the citizen jury implementation, like is this, so you're saying this is officially part of the government or is it like a separate?
+
+499
+00:56:45,760 --> 00:56:53,160
+No, I just said it's privately funded, and it has no official standing, but it would have a lot of political standing.
+
+500
+00:56:53,160 --> 00:57:18,120
+Because if we can show that these people are ordinary people, and we can show them, and we can show that on this particular matter, for instance, when Scott Morrison said that we should spend less money on bushfire readiness a few months before the bushfires, we would see what the considered opinion of people was.
+
+501
+00:57:18,120 --> 00:57:22,620
+And we would see what the considered opinion people was on Adani.
+
+502
+00:57:22,620 --> 00:57:24,440
+Maybe they think it's a good idea.
+
+503
+00:57:24,440 --> 00:57:31,500
+I think the people, and Adani is a huge coal mine that's proposed for Queensland.
+
+504
+00:57:32,140 --> 00:57:37,540
+And maybe people in central Queensland would have a different view than other people, and that's good.
+
+505
+00:57:37,540 --> 00:57:38,520
+We need to know that.
+
+506
+00:57:38,520 --> 00:57:40,080
+But who knows?
+
+507
+00:57:40,080 --> 00:57:59,940
+Pardon me for skipping back to a bit before on the beginning of the talk, but what this sort of reminds me of was Penny Rong and many other cases where you have people who are meant to be representative of their people, but at the same time, they have to balance political realities of sticking to party.
+
+508
+00:58:00,540 --> 00:58:01,120
+That's right.
+
+509
+00:58:01,120 --> 00:58:03,620
+Well, you're thinking of the same-sex marriage stuff.
+
+510
+00:58:03,620 --> 00:58:06,440
+Not just that, but there's many other cases as well.
+
+511
+00:58:06,440 --> 00:58:17,440
+But the idea is that this disjoint between the idea of being a good representative versus the political reality of also being a representative of your ideological party.
+
+512
+00:58:17,440 --> 00:58:18,540
+Correct.
+
+513
+00:58:18,540 --> 00:58:24,160
+Well, often it's not an ideological party, it's a party that has debts to vested interests.
+
+514
+00:58:24,760 --> 00:58:27,000
+So, you know, to survive.
+
+515
+00:58:27,000 --> 00:58:27,580
+Exactly.
+
+516
+00:58:28,320 --> 00:58:31,620
+So, I mean, I should make some unpleasant comments about the Labour Party, I suppose.
+
+517
+00:58:31,620 --> 00:58:34,800
+But for balance, I'm not a huge fan of the Labour Party.
+
+518
+00:58:35,880 --> 00:58:45,120
+But to take the Liberal Party, I mean, the Liberal Party's and the National Party's views on coal are not particularly rational.
+
+519
+00:58:45,800 --> 00:58:47,740
+They have two sources, I think.
+
+520
+00:58:47,760 --> 00:58:52,540
+One is they're funded by the coal lobby, and so that's worth a lot of money to them.
+
+521
+00:58:53,000 --> 00:59:09,600
+And the second thing is that they've turned it into a kind of culture war thing, where they can play off the views of communities where coal mining takes place against the views of others.
+
+522
+00:59:09,600 --> 00:59:31,740
+And what doesn't happen, and this is sort of true on both sides, what doesn't happen is no one gets down to try to take the issues as serious as they can, including the issues, the local issues of adjustment, and then say, all right, what do we, how do we all get to a situation where we're a bit happier about what's going on in the situation we have at the moment.
+
+523
+00:59:31,740 --> 00:59:33,340
+I see.
+
+524
+00:59:33,340 --> 00:59:36,700
+So back to the implementation of the citizen juries.
+
+525
+00:59:36,700 --> 00:59:51,360
+So given that this is a privately run citizen jury organization as the concept, some things I think you may also need to try to get is some ways of being able to find the electoral role to be able to run the select.
+
+526
+00:59:51,360 --> 00:59:55,000
+Well, I think the electoral role is public document.
+
+527
+00:59:55,000 --> 00:59:55,800
+Public document.
+
+528
+00:59:55,800 --> 00:59:56,480
+Okay.
+
+529
+00:59:56,480 --> 00:59:57,100
+I see.
+
+530
+00:59:57,100 --> 01:00:06,560
+So in that sense, is there much barrier to like in terms of implementation of implementing this organization or technical barriers?
+
+531
+01:00:06,560 --> 01:00:06,920
+No, no.
+
+532
+01:00:06,920 --> 01:00:12,780
+I mean, there are privately, people have the ability to run these things privately.
+
+533
+01:00:12,780 --> 01:00:14,820
+If you need some funding, it's not the right chief to do it.
+
+534
+01:00:14,820 --> 01:00:23,220
+So it's kind of like Roy Morgan in some ways, like a statistical organization, but with a lot more deliberation, but that's exactly right.
+
+535
+01:00:23,220 --> 01:00:26,040
+It's a form of polling, but it's deliberative polling.
+
+536
+01:00:26,040 --> 01:00:26,820
+Deliberative polling.
+
+537
+01:00:26,820 --> 01:00:27,060
+Yeah.
+
+538
+01:00:27,060 --> 01:00:28,040
+That's another way to do it.
+
+539
+01:00:28,040 --> 01:00:31,640
+I remember like when Fishkin is the guy who's written a lot about this.
+
+540
+01:00:31,640 --> 01:00:35,560
+Like a lot of things, I remember why a guy used to have to do surveys.
+
+541
+01:00:36,120 --> 01:00:48,220
+And often I sit down and talk to the person, but often the key thing that I was told in the training of doing door-to-door surveys is are meant to be as transparent as possible.
+
+542
+01:00:48,220 --> 01:00:49,620
+Do not influence the...
+
+543
+01:00:49,620 --> 01:00:50,320
+Correct.
+
+544
+01:00:50,780 --> 01:00:54,320
+But the point is that an opinion poll is just that.
+
+545
+01:00:54,320 --> 01:00:58,880
+It's an opinion poll, and it doesn't tell you anything.
+
+546
+01:00:58,880 --> 01:01:02,600
+It tells you, often people will say, well, I don't know, and you sort of press them.
+
+547
+01:01:02,600 --> 01:01:04,800
+Well, if you have to vote tomorrow, who would you vote for?
+
+548
+01:01:05,540 --> 01:01:13,400
+And the fact is that what you say, you record the opinion of the people, but you have no idea how well-informed it is.
+
+549
+01:01:13,400 --> 01:01:38,440
+You have no idea how it would hold up under scrutiny or under, you know, or even if you're just interested in this person's state of mind, you don't know whether in a room of 10 people, half of whom disagreed with them and came up with good arguments, whether they change or whether they just feel very strongly that this is a, you know, so if you ask a person about abortion, it's hard to argue one way or the other on abortion.
+
+550
+01:01:38,440 --> 01:01:44,540
+You happen to have views and they depend on the way you look at human life and maybe religious commitments and so on.
+
+551
+01:01:44,540 --> 01:01:49,860
+Whereas with other things, you, as people learn more, they can change their minds.
+
+552
+01:01:49,860 --> 01:01:52,040
+And polling doesn't tell you anything about that.
+
+553
+01:01:53,020 --> 01:01:57,300
+But this kind of searching for the considered opinion of the people does.
+
+554
+01:01:57,300 --> 01:02:09,720
+Isn't that kind of the reason is because the purpose of an opinion survey is often tied to business interests of you're trying to sell a product to the population.
+
+555
+01:02:09,720 --> 01:02:10,240
+Exactly.
+
+556
+01:02:10,240 --> 01:02:14,520
+And you're trying to, if there are prejudices there, you go with that.
+
+557
+01:02:14,520 --> 01:02:18,080
+If people think, I don't mean racial prejudice or anything like that.
+
+558
+01:02:18,260 --> 01:02:22,680
+I was talking about selling furbies, like selling more furbies.
+
+559
+01:02:22,680 --> 01:02:23,140
+Exactly.
+
+560
+01:02:23,180 --> 01:02:27,140
+So people have a kind of, and this is the same with focus groups.
+
+561
+01:02:27,140 --> 01:02:28,740
+They're not deliberative processes.
+
+562
+01:02:28,740 --> 01:02:29,860
+You're not trying to push people.
+
+563
+01:02:29,860 --> 01:02:33,860
+You say things like, what's your impression of Australia?
+
+564
+01:02:33,860 --> 01:02:38,660
+And they'll say, well, rugged individualism and popping a prawn on the barbie or something.
+
+565
+01:02:38,660 --> 01:02:41,920
+And you'll go away and make an ad out of that.
+
+566
+01:02:41,920 --> 01:02:44,440
+And you'll just go with whatever's on the surface.
+
+567
+01:02:44,820 --> 01:02:50,620
+I think I like that, because you remember a few years ago you did a talk with us.
+
+568
+01:02:50,620 --> 01:02:57,400
+And I think one of the key words you mentioned was Big Mac politics or fast food politics?
+
+569
+01:02:57,400 --> 01:02:58,980
+Fast foodification of politics.
+
+570
+01:02:58,980 --> 01:03:00,240
+That's exactly right.
+
+571
+01:03:00,240 --> 01:03:12,200
+And so what we have, and perhaps that was the term I should have used when I was saying that an organization like Flux will have to do some fast food politics, because they've got to sell the product.
+
+572
+01:03:12,200 --> 01:03:13,560
+They're trying to get votes.
+
+573
+01:03:14,280 --> 01:03:17,640
+Otherwise, their whole idea doesn't go anywhere.
+
+574
+01:03:17,640 --> 01:03:40,620
+And so our whole, everything about our political discourse is very like fast food advertising and fast food food, which is instant gratification, nice stuff that tastes yummy, at least for a while, and stuff that's actually not very good for you.
+
+575
+01:03:40,620 --> 01:03:41,900
+It doesn't encourage you to think.
+
+576
+01:03:41,960 --> 01:03:43,780
+You're a bit of a heart attack.
+
+577
+01:03:43,780 --> 01:03:45,220
+Yeah, yeah, yeah, yeah, that's right.
+
+578
+01:03:45,220 --> 01:03:52,000
+So if I say, I mean, there are lots of things, there are lots of, and I was also talking about political correctness.
+
+579
+01:03:52,000 --> 01:04:00,720
+There are a whole range of things that you can't say because they give an opportunity to an opponent to misrepresent you, okay?
+
+580
+01:04:00,720 --> 01:04:04,300
+So if I said, let me just say something that's unacceptable.
+
+581
+01:04:04,300 --> 01:04:27,200
+If I said, if I was advising a 14 year old girl going out on the town to discos on Friday night, if I said she might like to consider not dressing too provocatively because it might make her more likely to encounter violence, it's easy.
+
+582
+01:04:27,200 --> 01:04:28,680
+I can be made mincemeat of it.
+
+583
+01:04:28,680 --> 01:04:29,100
+Oh yeah.
+
+584
+01:04:29,100 --> 01:04:33,300
+Because then someone will say, you're saying that it's her fault that she's raped.
+
+585
+01:04:33,300 --> 01:04:34,980
+Well, no, I'm not saying that at all.
+
+586
+01:04:34,980 --> 01:04:37,420
+I'm not addressing myself to that question.
+
+587
+01:04:37,460 --> 01:04:43,860
+There are only dedicated teams and political parties who are meant to search for, like, Of course, they are.
+
+588
+01:04:43,860 --> 01:04:44,300
+There are.
+
+589
+01:04:44,300 --> 01:04:48,680
+They're just after ways to misrepresent you.
+
+590
+01:04:48,680 --> 01:04:50,640
+Oh, you remember the American election.
+
+591
+01:04:50,640 --> 01:04:56,640
+If you look at some of the documentary about all of the political parties, they talk about dedicated war rooms.
+
+592
+01:04:56,640 --> 01:04:57,540
+Of course.
+
+593
+01:04:58,000 --> 01:04:59,260
+Well, I know about these things.
+
+594
+01:05:01,240 --> 01:05:16,300
+I've worked for some labor ministers and the party had, both parties have these things, and they pour over all the speeches, all the transcripts, and they try and make trouble for the other side.
+
+595
+01:05:16,840 --> 01:05:18,120
+This ties in.
+
+596
+01:05:18,120 --> 01:05:19,540
+And they're trolls of a sort.
+
+597
+01:05:19,600 --> 01:05:20,580
+Yeah.
+
+598
+01:05:20,580 --> 01:05:25,800
+This is probably ties into why politicians' speech are so stereotypical.
+
+599
+01:05:25,800 --> 01:05:26,480
+Of course it is.
+
+600
+01:05:26,480 --> 01:05:28,080
+They're trying not to be tripped up.
+
+601
+01:05:29,080 --> 01:05:34,600
+They've got to have battle-ready, battle-hardened language.
+
+602
+01:05:34,600 --> 01:05:42,780
+And battle-hardened language is language without color, without much commitment, which is, it's fast food language.
+
+603
+01:05:43,420 --> 01:05:45,260
+This is a great hamburger.
+
+604
+01:05:46,140 --> 01:05:48,740
+It feels like without substance.
+
+605
+01:05:48,760 --> 01:05:54,320
+It's similar to how when I eat a burger, it tastes great, but then I feel terrible afterwards.
+
+606
+01:05:54,580 --> 01:05:56,040
+So let me give you an example.
+
+607
+01:05:56,440 --> 01:05:58,020
+I'm going to give you an example from the other.
+
+608
+01:05:58,440 --> 01:06:00,320
+Just to make sure that we are keeping on track.
+
+609
+01:06:00,320 --> 01:06:08,160
+I think we were meant to try to talk about the organizations that you want to try to implement, and having people on it, but keep going.
+
+610
+01:06:08,160 --> 01:06:13,940
+Well, let me give you an example from, I'm not a supporter, as people might have gathered, I'm not a supporter of Donald Trump.
+
+611
+01:06:13,940 --> 01:06:24,420
+But almost any, you know, these famous, you know how politicians or people in politics become famous for certain expressions.
+
+612
+01:06:24,420 --> 01:06:27,480
+So Margaret Thatcher said there was no such thing as society.
+
+613
+01:06:27,840 --> 01:06:28,600
+Ah, yes, yes.
+
+614
+01:06:28,600 --> 01:06:34,200
+Now, that is a complete misrepresentation of what she was trying to say.
+
+615
+01:06:34,200 --> 01:06:34,840
+Okay.
+
+616
+01:06:34,840 --> 01:06:45,160
+Another one is Kellyanne Conway, the slightly crack-addled, brilliant Donald Trump apologist.
+
+617
+01:06:45,160 --> 01:06:46,700
+She goes and talks to the media.
+
+618
+01:06:46,700 --> 01:06:49,880
+Oh, wait, was this the one that like, got her script?
+
+619
+01:06:49,880 --> 01:06:51,060
+Alternative facts.
+
+620
+01:06:51,060 --> 01:06:53,240
+She said there are alternative facts.
+
+621
+01:06:53,240 --> 01:06:53,640
+Okay.
+
+622
+01:06:53,640 --> 01:06:54,500
+Oh, is this something else?
+
+623
+01:06:54,500 --> 01:06:55,680
+So I'm referring to that.
+
+624
+01:06:55,680 --> 01:06:57,320
+Is that Australian or something else?
+
+625
+01:06:57,440 --> 01:06:58,540
+She works for Donald Trump.
+
+626
+01:06:59,140 --> 01:07:00,240
+She works in Washington.
+
+627
+01:07:00,240 --> 01:07:01,500
+Her name is Kellyanne Conway.
+
+628
+01:07:01,500 --> 01:07:02,580
+Kellyanne Conway.
+
+629
+01:07:02,580 --> 01:07:05,980
+I'm no fan of, well, I am a kind of a fan of Kellyanne Conway.
+
+630
+01:07:05,980 --> 01:07:10,580
+She's quite a clever person, but she's awful in many, many ways.
+
+631
+01:07:10,580 --> 01:07:24,440
+She's part of a, she's talking about various, so the interviewer says that Donald Trump is manipulating reality and all, you know, basically lying, which is true.
+
+632
+01:07:25,340 --> 01:07:27,880
+And then he says, well, these are the facts.
+
+633
+01:07:27,880 --> 01:07:31,180
+And Kellyanne Conway says, yes, and there are alternative facts.
+
+634
+01:07:31,180 --> 01:07:44,620
+She's not saying we've made, I mean, in fact, the reason it's a famous saying is that her boss really does deal in alternative facts or deals in facts that aren't facts.
+
+635
+01:07:44,620 --> 01:07:46,540
+But that's not what she was saying in the argument.
+
+636
+01:07:46,540 --> 01:07:48,680
+She was saying, yes, you quote those facts.
+
+637
+01:07:48,680 --> 01:07:51,620
+And there are a bunch of other facts and you don't quote those facts.
+
+638
+01:07:51,960 --> 01:07:58,880
+So you, the media, are pumping out a line and we're trying to pump out another line.
+
+639
+01:07:58,880 --> 01:07:59,960
+Okay?
+
+640
+01:08:01,460 --> 01:08:11,260
+So, I mean, I don't feel particularly sorry for her because she's defending a person who is a serial fantasist and maybe one herself.
+
+641
+01:08:11,260 --> 01:08:18,740
+But what the actual words she's using, alternative facts, are not a reference to, oh, we can make facts up.
+
+642
+01:08:19,359 --> 01:08:22,740
+She's saying there are other facts that you're not quoting.
+
+643
+01:08:22,740 --> 01:08:25,979
+Like, you're misrepresenting or your omission.
+
+644
+01:08:25,979 --> 01:08:26,880
+Yeah, your omission.
+
+645
+01:08:26,880 --> 01:08:27,560
+Exactly.
+
+646
+01:08:27,560 --> 01:08:28,600
+That's what she's saying.
+
+647
+01:08:28,660 --> 01:08:31,899
+That's what she's saying when she's saying that.
+
+648
+01:08:31,899 --> 01:08:37,260
+So, we then make that a symbol of her saying something else.
+
+649
+01:08:37,600 --> 01:08:56,720
+And so, if you're a politician and you're in a press conference, or not that they have press conferences very often, but you're doing a doorstop or you're pumping out some words, you spend your time trying to make them bland but positive, and everyone leaves you alone.
+
+650
+01:08:56,720 --> 01:09:13,700
+So, and what I'm talking about would be a way to reduce those incentives, and allow people to hear people speak, and try and work out what they mean, and then try and work out what they think in response to those things.
+
+651
+01:09:15,840 --> 01:09:19,399
+Okay, that explains definitely a lot of things.
+
+652
+01:09:19,399 --> 01:09:28,800
+So, maybe we'll go back into your proposal of the private citizen juries as a way of showing the public that there is something.
+
+653
+01:09:28,800 --> 01:09:34,399
+Exactly, and so what I would like to do, so I would like to do this as a form of activism.
+
+654
+01:09:34,399 --> 01:09:41,859
+So it's not a pilot project or a demonstration project, it is a form of activism.
+
+655
+01:09:42,520 --> 01:09:50,200
+And over time, as people saw this, they would say, hey, that's a good way for our democracy to work.
+
+656
+01:09:50,200 --> 01:10:06,440
+About 90 odd percent of the people participating in these citizen juries, about 90 percent or 95 percent of them say this was really good, and about half of those think it's just life-changingly good.
+
+657
+01:10:06,760 --> 01:10:12,720
+They have an epiphany that, yes, this is what a political system should be like.
+
+658
+01:10:12,720 --> 01:10:26,140
+And in fact, Aristotle, the great ancient Greek philosopher, described democracy as a system in which people take turns in governing and being governed.
+
+659
+01:10:26,140 --> 01:10:28,300
+And that isn't the system we have at the moment.
+
+660
+01:10:28,300 --> 01:10:32,900
+The system we have at the moment is that people vote for people to govern.
+
+661
+01:10:34,440 --> 01:10:35,540
+I like that quote.
+
+662
+01:10:35,540 --> 01:10:38,620
+So yeah, thank you very much.
+
+663
+01:10:38,620 --> 01:10:44,320
+Is there, to get the system going, is there any particular people that you'll need to run this?
+
+664
+01:10:44,320 --> 01:10:46,340
+Like how, say I'm interested.
+
+665
+01:10:46,340 --> 01:10:46,740
+Yeah.
+
+666
+01:10:46,740 --> 01:10:48,360
+How can I help?
+
+667
+01:10:48,520 --> 01:10:50,360
+You can email me.
+
+668
+01:10:50,360 --> 01:10:52,320
+I've got a bunch of things written out.
+
+669
+01:10:52,320 --> 01:10:56,680
+I can, but if you want to email me, I'll put you on a mailing list.
+
+670
+01:10:56,680 --> 01:11:05,340
+And I'm constantly speaking to people around the world trying to grab hold of enough money to run something like this somewhere.
+
+671
+01:11:05,340 --> 01:11:06,680
+Pilot project?
+
+672
+01:11:06,680 --> 01:11:10,580
+Well, yeah, pilot project or start off, start if we can get enough.
+
+673
+01:11:10,580 --> 01:11:20,800
+I mean, so Jeff Bezos has just said he wants to give $10 billion to the climate change cause.
+
+674
+01:11:20,800 --> 01:11:27,780
+So I'm trying to make contact with Jeff Bezos, and I'm kind of shaking various trees because you can't just write a Jeff email.
+
+675
+01:11:28,300 --> 01:12:21,760
+But I've been talking to people I know, quite senior people I know in politics in America, here, and in, that's Australia, and in the UK to try and find a way to represent to whoever's looking after that $10 billion and say, give us, I mean, for instance, one proposal is that in countries like Australia and the United Kingdom, sorry, Australia and the United States, who are tremendous laggards on climate change, that the money is used to hold a citizen jury on that subject, and that we send a delegation from the Citizens' Assembly or the Citizen's Jury to Glasgow for the Conference of the Parties 25 in November, which is on climate change, for instance.
+
+676
+01:12:21,760 --> 01:12:24,180
+Have you heard about the Coalition of Everyone?
+
+677
+01:12:24,180 --> 01:12:27,720
+I remember I was contacted by them not too long ago.
+
+678
+01:12:27,720 --> 01:12:39,340
+And I think they might have started recently, but what they're trying to do is sort of like a citizen jury, a mock citizen jury to try to get people to talk about climate change.
+
+679
+01:12:39,340 --> 01:12:41,340
+So maybe I'll try to get them in touch with you.
+
+680
+01:12:41,520 --> 01:12:42,720
+Yeah, well, you do that.
+
+681
+01:12:42,720 --> 01:12:50,940
+But most people who are working in this area are activists themselves, and they're trying to bring about a particular result.
+
+682
+01:12:50,940 --> 01:12:57,000
+And that's fine, good on them, but that's not what I'm talking about, because I'm not talking about trying to...
+
+683
+01:12:57,000 --> 01:12:58,520
+Specific issues, not specific...
+
+684
+01:12:58,520 --> 01:13:00,980
+No, no, nothing to do with specific issues.
+
+685
+01:13:00,980 --> 01:13:05,520
+Setting this body up is not setting it up to come to any conclusion.
+
+686
+01:13:05,520 --> 01:13:07,500
+It comes to its own conclusion.
+
+687
+01:13:08,200 --> 01:13:22,040
+So, for instance, I was quite active in trying to get some money to run citizen juries on Brexit before Boris Johnson won the Prime Ministership and has now proceeded as far as he has.
+
+688
+01:13:22,040 --> 01:13:22,700
+I didn't...
+
+689
+01:13:22,700 --> 01:13:23,300
+I wasn't...
+
+690
+01:13:23,300 --> 01:13:32,380
+Now, in fact, I was strongly anti-Brexit, and the money I got would have been pretty strongly anti-Brexit, because why would you give money to it if it wasn't?
+
+691
+01:13:33,580 --> 01:13:36,800
+If you're pro-Brexit, you do nothing and you get Brexit.
+
+692
+01:13:37,400 --> 01:13:43,240
+But the point was not to produce a citizen jury that would decide Brexit was a bad idea.
+
+693
+01:13:43,240 --> 01:13:52,120
+The point was to run a proper independent citizen jury and then say, we want to know what the considered opinion of the people is.
+
+694
+01:13:52,120 --> 01:14:03,620
+And to go further, while I thought then and think now that Brexit is a minor disaster for the United Kingdom and for its politics, I might add.
+
+695
+01:14:03,620 --> 01:14:08,240
+If it represented the considered opinion of the British people, I'd think good on them.
+
+696
+01:14:08,240 --> 01:14:09,300
+I think go for it.
+
+697
+01:14:09,300 --> 01:14:13,840
+I mean, I happen to think you'll get a smaller economy, but there's much more to life than an economy.
+
+698
+01:14:13,840 --> 01:14:18,340
+And if you really believe in national sovereignty like that, go for it.
+
+699
+01:14:18,340 --> 01:14:19,680
+But that's not really what's happened.
+
+700
+01:14:19,680 --> 01:14:36,220
+What's happened is some clever campaigning, some trolling, some fast food politics, saying idiotic things like take back control, and you'll get 350 million pounds a week more in the national health system.
+
+701
+01:14:36,220 --> 01:14:37,380
+The big red bus.
+
+702
+01:14:37,380 --> 01:14:38,680
+The big red bus.
+
+703
+01:14:38,680 --> 01:14:45,540
+So that was clever campaigning, was highly misleading, and they managed to get out of the line 5248.
+
+704
+01:14:45,540 --> 01:14:47,300
+And it will divide Britain.
+
+705
+01:14:47,300 --> 01:14:51,820
+It will go on dividing Britain because it's not, it was the vote of the people.
+
+706
+01:14:51,820 --> 01:14:54,660
+The people, if they were asked to vote again, would probably vote the other way.
+
+707
+01:14:54,800 --> 01:14:57,780
+That's no way to build political legitimacy.
+
+708
+01:14:57,780 --> 01:15:05,700
+And they, I have very little doubt that they, if the EU survives, because the EU is nothing to get too excited about.
+
+709
+01:15:05,700 --> 01:15:10,500
+I mean, it's a pretty awful organization in certain respects, and it may disintegrate.
+
+710
+01:15:10,500 --> 01:15:14,880
+If the EU survives, Britain will be backing within 20 years.
+
+711
+01:15:14,880 --> 01:15:20,040
+There already is a majority of probably 55% of Britons who want to be in the EU.
+
+712
+01:15:20,040 --> 01:15:20,520
+All right.
+
+713
+01:15:20,520 --> 01:15:21,660
+Well, thank you very much.
+
+714
+01:15:22,220 --> 01:15:32,420
+I think people would now know more about your proposal for such like citizen juries activism as well as how to reach you.
+
+715
+01:15:32,420 --> 01:15:34,000
+So thank you very much.
+
+716
+01:15:34,000 --> 01:15:37,640
+And I think we shall end this talk from now on.
+
+717
+01:15:37,660 --> 01:15:55,220
+And I'll just tie in with the last thought that I remembered is I remembered a while ago in terms of the Brexit system about this concept of maybe a that a nation probably would want to have a department for like a state philosopher.
+
+718
+01:15:55,220 --> 01:16:05,080
+And the idea behind the problem of the Brexit issue is that it was the problem wasn't the choices made of yes and no, but the question behind it.
+
+719
+01:16:05,380 --> 01:16:05,680
+Absolutely.
+
+720
+01:16:05,680 --> 01:16:11,980
+And so would a state philosopher be an interesting approach to tackling this?
+
+721
+01:16:11,980 --> 01:16:14,880
+Completely stupid idea as far as I'm concerned.
+
+722
+01:16:14,880 --> 01:16:29,880
+But certainly it's true that the question was a stupid question, because what it did is it pitted a completely non-specific option not to be in the EU with a very specific option, which is we are now in the EU and everybody knows what it looks like.
+
+723
+01:16:29,880 --> 01:16:43,960
+And what happened in Brexit contrasts very unfavorably with what John Howard insisted on regarding the Republic, which is he said, I don't want to go to an election in which is, do we want a Republic or a monarchy?
+
+724
+01:16:43,960 --> 01:16:51,660
+I want to go to an election in which we have a concrete model of a monarchy and the Republicans can work out what their model of a Republic is.
+
+725
+01:16:51,660 --> 01:17:04,480
+Now, there are arguments the other way, but your philosopher or maybe it needs to be a mathematician, can explain that there is no perfect way through that three-cornered contest.
+
+726
+01:17:04,480 --> 01:17:08,520
+If you run it in one particular way, you can come up with one answer.
+
+727
+01:17:08,520 --> 01:17:12,740
+If you run it in another way, you will get another answer and both answers.
+
+728
+01:17:12,740 --> 01:17:16,400
+You can tell a story in which each of these pathways is legitimate.
+
+729
+01:17:16,400 --> 01:17:17,520
+It's like gerrymandering.
+
+730
+01:17:18,660 --> 01:17:19,240
+Well, exactly.
+
+731
+01:17:19,240 --> 01:17:31,920
+I mean, John Howard was trying to gerrymander the system in his own favor, but at least it put Australians in a position where they got asked, what I call the Spice Girls question, which is tell me what you want, what you really, really want.
+
+732
+01:17:31,920 --> 01:17:42,140
+Because the Republicans were so split, the monarchists made hay and won the vote.
+
+733
+01:17:42,140 --> 01:17:54,880
+So it is a reasonable, it's not the only position, but it is a reasonable position for someone to say, if you want to change things, you be specific about what the change is, and then we'll have a voter palette.
+
+734
+01:17:54,880 --> 01:17:58,420
+And that's what we did in Australia, and the result was we didn't change.
+
+735
+01:17:58,420 --> 01:18:01,920
+It's not what they did in the United Kingdom.
+
+736
+01:18:01,920 --> 01:18:09,980
+And they got a change, and it's a catastrophic change, not a catastrophic change, a minor disaster of a change.
+
+737
+01:18:09,980 --> 01:18:10,740
+Thank you very much.
+
+738
+01:18:11,000 --> 01:18:11,780
+Thanks, Brian.
+
+739
+01:18:11,780 --> 01:18:18,640
+And of course, thanks to you, the listeners, for taking your time to listen to Nicholas Gruen talk.
+
+740
+01:18:18,640 --> 01:18:37,280
+I hope you learned a few new things about ancient Athens, especially on the concept of Isagoria and how this concept of equality of speech is a feature of citizen juries, as well as the context it has as a potential pathway to our current electoral and representative method of governance around the modern world.
+
+741
+01:18:38,480 --> 01:18:42,020
+Thanks for listening and see you in the next episode.
+
+742
+01:18:42,020 --> 01:18:42,340
+Cheers.

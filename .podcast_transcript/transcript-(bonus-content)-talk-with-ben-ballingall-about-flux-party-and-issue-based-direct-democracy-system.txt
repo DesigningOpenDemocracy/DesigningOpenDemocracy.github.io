@@ -1,0 +1,111 @@
+Hi, and welcome to a bonus content from Designing Open Democracy. We previously held a recording on the 11th of March 2020 for a warm up with Ben Ballingall on the talk about his party and how it implements Issues Based Direct Democracy system. Being that this is a warm up, it is a bit more free-flowing.
+
+However, it explores a bit more into how Flux Party itself works, so you may be finding this to be quite an interesting talk that goes into more details in some aspects of Flux Party that the original talk did not go into.
+
+Hi, and welcome to Designing Open Democracy. And who we have here is Ben Ballingall from Flux Party. Hey, Brian.
+
+Thanks for letting me on. Yes. So tell me a bit more about Flux Party and what is it?
+
+Ah, cool. So yeah, I'm with the Flux Party. We're a political party registered in Australia and also throughout various states throughout Australia.
+
+We're a political party that believes in or proposes issue based direct democracy. So that's a way for all the citizens or all the citizenry to vote on the issues that come up in parliament and have those results aggregated and shown to a representative. And our representatives will do what their community votes in parliament.
+
+So if I understand correctly, what you're saying is that it's going to be a system where people will get to do a bit more direct democracy in their government. Is that correct?
+
+Yeah, truly. It's a very straight up and down democracy, the people voting on every single issue. I see.
+
+So tell me a bit more about the history of Flux. Like you mentioned, Max Kane was a big part of Flux. Yeah.
+
+So, was it 2000?
+
+Middle of 2015, I believe it was. Max Kane and Nathan Spataro, who are the co-founders, came together because they had both an idea for this new form of democracy, but most importantly, or perhaps secondly, most importantly, they had the ability and the code behind being able to develop the app. So, they developed a prototype of the app and then used, I guess, that to generate enough buzz to get the party registered before the 2016 federal election.
+
+So, yeah, late 2015 would have been the true start of vote Flux for just the two of them. Late 2016?
+
+Yep. Okay. Why did we choose to start with, say, electronic voting, rather than, say, like, um, what can I say?
+
+Why is there a need to switch?
+
+Um, I think, well, we've... Depends on your views of representative government, is one way I'll start that, but for at least a lot of us in Flux, yeah, we see the flaws in representative democracy and the governmental systems we have right now, and that, frankly, a lot of the flaws that we face politically, as, you know, the people, if we can call that, come from a lack of representation, a lack of transparency, and a lack of accountability of our representatives. So, you know, generating some sort of system, especially one that's democratic and gives...
+
+empowers everybody, you know, it's, it's, I... personally, I think it's something people have been doing for the entirety of history. Ours just happens to be based on blockchain tech and the internet.
+
+But, you know, technological innovation has sort of always progressed some sort of political change. Yeah, I see. It's just something that everybody sort of felt.
+
+And this is how it manifested more than anything. I guess it can come out where we're designing open democracy, or at least what I understand of what you're doing, because I'm not fully across designing open democracy. But it's certainly like, yeah, for sure.
+
+So I see this as like, Flux is one element, if I can, of designing an open democracy, in that Flux posits a true democratic form. It allows everybody to vote on issues. Right now, it's contingent on parliament, what is put up in parliament primarily.
+
+So like three-year electoral cycle. Exactly. Three-year electoral cycle, we need to get this person in to do this thing.
+
+But what it doesn't sort of, or what will grow, hopefully, symbiotically is how are people going to be informed about these decisions they're going to make?
+
+You know, how do we decide once we've released all these old political parties of leading us, how do we decide what facets of their ideology were good and what were bad?
+
+And how do we actually have these discussions?
+
+That's something that needs to grow. That's a societal, the people need to develop this thing in tandem with the ability to vote on issues and control their MP. So, what you're saying is that is Flux only one component of what is needed in the society?
+
+There's a cultural element, is that correct?
+
+Yeah. because like I think maybe what some people might have a concern is that you could try to fix the way people vote, but is that going to really fundamentally change this conflict we have?
+
+because there's also issue of like say media representation or cultural representation and et cetera. I think that's the million, billion, trillion dollar question. And you know, we don't know.
+
+Like when we think of voting, especially nowadays, we think of this voting for a team, voting for a team that has... Tribalism. Yeah, this tribal team that's always been this way.
+
+They've always held this ideology that comes with these 50 points. So, really changing how culture and society looks at politics, looks at it via every issue and how those issues actually relate individually. Yeah, you know, that's a huge cultural change.
+
+So, it's a huge cultural shift and mentality. For sure, yeah, the actual mentality, you know, it's totally acceptable to only like one initiative that the Greens put forward. And then the next week to like a One Nation initiative, people could not even comprehend how that could ever work.
+
+But when you look at individual issues, you know, that Greens issue could be a great environmental issue. And the One Nation issue is something to do with rural infrastructure. Like, they can both be right.
+
+And in today's politics, you can't, that's completely, you know, absurd. So that's a huge change that isn't solved by people being able to vote. That's not what will come.
+
+So I have this device that you're talking about, like how would the ordinary voter and the Australian public participate in your system?
+
+Yeah, for sure. I mean, real bad one. I think a great way to ask this question would be like, could you give me a rundown as to how this system will work in typical use case of the public?
+
+Yeah, for sure. So, you know, it takes a little bit of a, the things we have to suspend our disbelief. First, a Flux MP has been voted in in your electorate.
+
+So that's important. But, you know, you're sitting on your couch, in your NICs, and an issue comes up. You're scrolling through your Facebook feed, and an issue comes up that's being debated.
+
+You would go to the App Store, or you can go to the website, either or, but specifically the App Store, and you download an app. The app allows you to login, create a user, or create a password, create an account, and you login using your federal electoral role details. So these are all verified by the government that you are one person.
+
+Then it would tell you, you know, obviously you're electorates, state level, federal level, and then the upcoming bills in parliament. So this is going to be voted on in four days, this is going to be voted in three days, and it would allow you to vote, yes, no, or choose not to vote on those ones. Then obviously say you really like an issue, click on it.
+
+It'll give you the synopsis of the bill, maybe give you some links to the parties, like the proposing party's information, maybe some counter information proposed by other political parties. This is definitely a level where we don't want to be proposing any information, so you won't find information from Flux, but you might be able to find the information that the other parties have put up. And then, yeah, you would vote yes or no if you wanted to.
+
+You'd be given the results of your entire electorate, and then a little button down the bottom to post to Twitter, post to Facebook, email my representative. That'd be a really basic being hit by a bill that you really cared about and acting on that bill. So, I am kind of curious as to one key aspects.
+
+Your system relies on the use of technology and smartphones, and there will be concerns from the public about the security and viability of technology-based electoral system. Yeah, for sure. It's a big tech one.
+
+Tech security is something that I guess is initially very scary, and especially if you're not in that industry, you know, even I am, quote unquote, in the industry, but I can't read the code. We could tie it to, say, like the Iowa election scandal. Is it scandal?
+
+Or kerfuffle in America?
+
+Kerfuffle, good term. Yeah, that's pretty perfect, because that exact fault was an actual fault in the code. Like it had been coded poorly.
+
+But it'll still, in people's psyche, just be an app broke and it screwed up the vote. You know, the tech gets reduced down so quickly. On a tech forefront, it is blockchain based voting.
+
+So you know the ledger is immutable. We do have the strongest security and anonymization in industry. You know, there is no other way.
+
+It's the same stuff that protects your bank, gets your banking and all your online communication. There is a level where it's open source. You can read it.
+
+If it's got a flaw, people will find it. And right now, we are telling you, there are no flaws. And you got to understand that, like most people are probably not technologically literate in the idea of the blockchain.
+
+And so I imagine part of the aspects to getting your story out there and getting traction in the public about your Flux system is you probably need to have a bit more acceptance in the idea of relying in blockchain. Yeah, it's funny, even in just three years, I've been with Flux. It's even how much we have to explain blockchain now compared to back three years ago is markedly less.
+
+We definitely still have to. There is a certain, it is still freaky new technology. But I think there's at least enough acceptance.
+
+People understand crypto, blockchain, it's something to do with saving and storing money and being anonymous. People at least have this rough idea of how it works now. Yeah, and with that acceptance, it's a lot easier to be like, so you can see how that could be used for voting, yes?
+
+As opposed to having to really explain how the vote worked, and how the security works, and how the works. It's getting there. It's one of those ones you really just have to put up and be like, it works, and you can't prove us wrong.
+
+And the people that can prove us wrong agree with us. So what do you want?
+
+Hi, and thanks for listening to this bonus content of Designing Open Democracy, talk with Ben Ballingall. If you are interested in this talk and you haven't heard the original talk, I recommend you to check out the last episode and give it a listen. Oh, and if you are in Melbourne, Australia, don't forget to check out our physical meetup.
+
+Each month, we cover a different topic on relating to democracy. Our next meetup will be likely to be about cooperatives, so I hope to see you then. Else, see you in the next podcast episode.
+
+Cheers.

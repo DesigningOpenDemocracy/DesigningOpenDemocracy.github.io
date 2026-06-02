@@ -1,0 +1,865 @@
+WEBVTT
+
+1
+00:00:02.160 --> 00:00:08.039
+Hi, and welcome to another Designing Open Democracy podcast retrospective.
+
+2
+00:00:08.039 --> 00:00:16.540
+This is an old recording that was held on the 21st of October 2017, as part of an event called Citizens' Democracy.
+
+3
+00:00:16.540 --> 00:00:31.240
+We actually also released a previous podcast recording on this same event, on behalf of another speaker called Nicholas Gruen, who was talking about his own take on Citizens Juries and Deliberative Democracy.
+
+4
+00:00:31.240 --> 00:00:42.260
+As like before, this event was sponsored by the York Butter Factory, a co-working space in Melbourne, as well as been hosted by Brian Koo and Nicholas Moran.
+
+5
+00:00:42.260 --> 00:00:49.060
+The speaker today will be Hubertus Hofkirchner, who is the Austrian Chief Filters and CEO of Prediki.
+
+6
+00:00:49.060 --> 00:00:57.320
+He also started a political party called Austrian GILT to try and push through his new system of Citizens Juries.
+
+7
+00:00:57.340 --> 00:01:11.860
+And through this talk, you will learn about how Prediki was started, as well as this notion of a deliberative model and how technologies can be such a sentiment analysis can be used to help enhance such a model.
+
+8
+00:01:11.860 --> 00:01:24.200
+What he will also talk about is how through allowing for specialization, what you allow is to increase the political bandwidth that Citizen Juries can provide to the political system.
+
+9
+00:01:24.200 --> 00:01:31.420
+Just so you know, this audio was taken over a scout recording, so the audio may not be as good as it could be.
+
+10
+00:01:31.420 --> 00:01:36.800
+However, hopefully you will be able to get the most important points across from his presentation.
+
+11
+00:01:36.800 --> 00:01:38.140
+Enjoy the speech.
+
+12
+00:01:38.140 --> 00:01:42.440
+We shall start with a quick background introduction by Hubertus Hofkirchner himself.
+
+13
+00:01:43.660 --> 00:01:50.100
+So before I start with that story maybe shortly, why am I doing that?
+
+14
+00:01:50.100 --> 00:02:16.880
+Just from my background, I used to be an investment banker in last millennium in the IT space, high tech space, and then founded the first online brokerage in Austria, which then expanded to southeastern Europe and which got overtaken later by an Austrian bank, and became then luckily the CEO of one of the Austrian telecom companies.
+
+15
+00:02:16.880 --> 00:02:28.420
+Not the largest one, actually, the smallest of four, but still it was an interesting job because it was almost bankrupt when I had to take the job, so it was not easy.
+
+16
+00:02:28.420 --> 00:02:39.560
+But the team and I, we effectively structured it with over some like three years, and in the end it got bought by Deutsche Telekom for about one and a half billion euros.
+
+17
+00:02:39.560 --> 00:02:45.360
+So it was a nice deal, and I've been a serial entrepreneur ever since.
+
+18
+00:02:45.380 --> 00:02:56.880
+One of the project which I'm currently called Prediki, effectively the idea of it originated in the time of when I was running the online broker because the world was truly mad at that moment.
+
+19
+00:02:57.940 --> 00:03:09.140
+It was the time of the Internet bubble, and some of you may remember that the stock exchange valuations for some of these new Internet companies just went completely haywire.
+
+20
+00:03:11.620 --> 00:03:27.800
+Little Internet companies which were co-founded by media companies, all of a sudden were worth more than media companies which had been around for dozens of years, and then had a huge market valuation.
+
+21
+00:03:28.860 --> 00:03:38.320
+And I think what's important to know is, I at the time looked at some of these things and thought, okay, these valuations are completely crazy.
+
+22
+00:03:38.320 --> 00:03:48.980
+And still, while knowing that, I found the trap of believing this general madness and acting according to it.
+
+23
+00:03:48.980 --> 00:03:55.620
+So I made a couple of good investments, but I also made a couple of bad investments, where I had known that I shouldn't do that.
+
+24
+00:03:55.620 --> 00:04:08.740
+And Nick mentioned before the problem of, in surveys, people sometimes say what they think before they think, and it's a big problem, which you can realize everywhere.
+
+25
+00:04:08.740 --> 00:04:15.680
+We see it in the stock exchange, when there are hype-sites, we see it regularly before elections.
+
+26
+00:04:15.680 --> 00:04:16.860
+I'm gonna talk about that.
+
+27
+00:04:16.959 --> 00:04:28.080
+So we know how parties and the leadership acts to get our votes, that they do dirty campaigning, that they're lying, that they're making promises which they're never gonna keep.
+
+28
+00:04:28.080 --> 00:04:30.080
+And still, people don't change.
+
+29
+00:04:30.080 --> 00:04:33.280
+They vote for these people, they vote for these practices.
+
+30
+00:04:36.120 --> 00:05:01.600
+And Prediki is a project which seems to be succeeding now to stop the collective maleness, to not produce a crowd which is mad, like Sigmund Freud would have us know, because Sigmund Freud, the Austrian psychologist, thought that crowds, once they cluster, they become stupid, irrational, violent.
+
+31
+00:05:02.200 --> 00:05:15.380
+Whereas later, the Austrian School of Economics, of which Schumpeter, which Nick already mentioned, is one, thought that if you put them in proper processes, there's something evolving which we call collective intelligence.
+
+32
+00:05:15.380 --> 00:05:25.400
+So the trick to make people think is to give them tools which don't produce madness, but which raise collective intelligence.
+
+33
+00:05:25.400 --> 00:05:36.800
+And as Nick also explained already, that most of the tools, all of the tools which we have right now on the internet, Twitter, Facebook particularly, they do not do that.
+
+34
+00:05:36.800 --> 00:05:46.540
+They rather help with mobbing, creating mobs, as you can see in this comment section.
+
+35
+00:05:46.540 --> 00:05:50.280
+It's not designed to make people think.
+
+36
+00:05:50.280 --> 00:06:07.980
+So that said, one of the spin-offs which we have from, I'm also part of the Hayek Institute, which is an institute which keeps up Austrian economics like the tradition of the more scientific economists like Schumpeter, Mises and Hayek.
+
+37
+00:06:07.980 --> 00:06:30.420
+And about a year and a half ago, we did a spin-off called New Dermatology, which essentially thinks that we should not have party democracy anymore, because you have an agency problem in parties, which has been recognized 30 hundred years ago, actually, by somebody who called it the Iron Law of Oligarchy.
+
+38
+00:06:30.420 --> 00:06:46.360
+Essentially meaning that if there's an organization, a party, in the end, after a little while, that party will serve not its original mission, but it will serve the people running it, which pretty much, I think, describes what parties do.
+
+39
+00:06:46.360 --> 00:06:53.200
+And here in Europe, we already had a very bad experience after the discovery of this Iron Law of Oligarchy.
+
+40
+00:06:53.820 --> 00:06:55.180
+That was in 1910.
+
+41
+00:06:55.180 --> 00:07:03.660
+And by 1934, 1938, half of Europe had reacted according to this Law of Oligarchy.
+
+42
+00:07:03.660 --> 00:07:10.340
+We had people like Hitler in, you heard about him already, there was Mussolini in Italy, there was Franco in spain.
+
+43
+00:07:10.340 --> 00:07:14.880
+So this theory turned out to be a rather robust theory.
+
+44
+00:07:14.880 --> 00:07:23.840
+And so to say, my fear is if it happens again, and these people will fall, ultimately, but while they fall, then now they're atom bombs at this position.
+
+45
+00:07:23.840 --> 00:07:30.320
+So I'm not particularly looking forward to the next instance of the Law of Oligarchy striking.
+
+46
+00:07:30.320 --> 00:07:33.560
+And we believe it will strike.
+
+47
+00:07:33.560 --> 00:07:42.000
+Because, for instance, in Austria, you know, the same in, let me just share my screen with you for a moment.
+
+48
+00:07:42.000 --> 00:07:52.020
+I don't know whether it's the same in Australia, but like Australia, Austria is one of the probably most wealth countries in the world.
+
+49
+00:07:52.020 --> 00:08:01.160
+And still when we ask the people, sorry, this is in German, unfortunately, I'll translate it to you, how happy are the Austrians are gonna be with the next elected government?
+
+50
+00:08:01.160 --> 00:08:06.520
+You could see that they were actually expecting to be quite dissatisfied.
+
+51
+00:08:07.920 --> 00:08:11.080
+And still, everybody elected the same.
+
+52
+00:08:11.080 --> 00:08:28.640
+And Prediki, which is this platform I built over the last couple of years, which fosters this thinking, effectively, they recognize that if we ask them in a normal poll, they think after the election, it's all gonna be better, which is really, really weird.
+
+53
+00:08:28.640 --> 00:08:32.980
+So if you ask them, one year after the elections, do you think things will be better?
+
+54
+00:08:32.980 --> 00:08:34.720
+The answer is here, green.
+
+55
+00:08:34.720 --> 00:08:38.340
+Once you make them think, they say, no, it's not gonna be better.
+
+56
+00:08:38.340 --> 00:08:47.420
+And with Prediki, we have a deliberative format where people essentially have to first bet what it's gonna be.
+
+57
+00:08:47.420 --> 00:09:01.160
+So they don't just say it, they don't just tick a box, they have to bet, which is when the brain starts to switch into a different type of thinking, a slower type of thinking, but a more deliberative type of thinking.
+
+58
+00:09:01.160 --> 00:09:06.140
+And we ask them after this bet, which they do, just show you this here.
+
+59
+00:09:06.140 --> 00:09:15.820
+And so they have to essentially put little bets here with virtual currency, whether they think the Austrians are going to be a little more happy or more unhappy.
+
+60
+00:09:15.820 --> 00:09:23.960
+And then once they've done that, they are prompted to put the reason to why this is being done so.
+
+61
+00:09:23.960 --> 00:09:36.320
+And this is again something, going back to Siegmund Freud, once you've done something which is very simple and you need to justify it after what you start thinking, it's called post-rationalization.
+
+62
+00:09:36.320 --> 00:09:38.040
+It's a very important principle.
+
+63
+00:09:38.560 --> 00:10:01.180
+So whatever you did, your brain afterwards will tell you, okay, you did it intentional because of some fantastic reason, or if it went wrong, your brain will work out a reason why it should have been a fantastic thing, and just some silly idea prevented you a fantastic thought, fantastic immediate action to be true post-rationalization.
+
+64
+00:10:01.180 --> 00:10:23.740
+Anyway, and what the system does with that, by the way, it then texts, so you can see down here how people argue more and more why they're going to be, so to say, dissatisfied, and you can see people write about the language comments on the system now, because it's able to do that and engages people in the conversation.
+
+65
+00:10:23.760 --> 00:10:31.420
+One of the algorithms we wrote in the background then discloses this conversation into a sentiment analysis.
+
+66
+00:10:32.000 --> 00:10:50.800
+So you can see down here in the rated comments that people mostly thought that we're rather dissatisfied, quite a few thought that we're very dissatisfied, and only very few people thought we would be satisfied, and then the system effectively dissects all the arguments in why this will be like that.
+
+67
+00:10:50.800 --> 00:11:00.360
+You can see the overall reason why people thought they were dissatisfied after thinking about it, to say everything will remain as it was.
+
+68
+00:11:01.240 --> 00:11:04.420
+As you can see, this is the very deep red bar.
+
+69
+00:11:04.420 --> 00:11:10.120
+It caused a lot of dissatisfaction, and a lot of the others dissatisfied.
+
+70
+00:11:10.120 --> 00:11:13.240
+And anything else, I think it didn't even matter so much.
+
+71
+00:11:13.240 --> 00:11:25.720
+So it didn't matter that the Austrian administration is so slow, that the people are frustrated about the election choices, that the election promises are not being kept.
+
+72
+00:11:26.880 --> 00:11:33.580
+The issue is, people are most dissatisfied that everything will remain the same.
+
+73
+00:11:33.580 --> 00:11:54.220
+So we decided, in our Austrian Economics economist group, that we wanted to start an initiative, which we called New Demoky, which essentially tries to introduce, instead of the representative democracy system, which is iron law of oligarchy, which will result in the next atom war, I think, a system.
+
+74
+00:11:54.220 --> 00:12:03.060
+And we were very aware that it couldn't just be any old democratic system, because we had observed, like Nick, the Brexit.
+
+75
+00:12:03.060 --> 00:12:15.760
+And do you know, guys, after the day after the people in the UK decided that they wanted to exit the EU, Google announced the most frequent search of the day after.
+
+76
+00:12:15.760 --> 00:12:16.920
+Do you know what it was?
+
+77
+00:12:16.920 --> 00:12:18.500
+What is the EU?
+
+78
+00:12:19.940 --> 00:12:21.260
+What is the EU?
+
+79
+00:12:21.260 --> 00:12:21.980
+Exactly.
+
+80
+00:12:22.700 --> 00:12:31.500
+The British people predominantly asked, what is the EU after the day that the majority voted to leave it?
+
+81
+00:12:31.500 --> 00:12:46.580
+There was another example just at the time when we thought about it, which was the Greek referendum on the EU savings package, where the EU wanted austerity measures in Greece to essentially save the economy.
+
+82
+00:12:46.580 --> 00:12:51.060
+The people, with 62 percent, voted against it.
+
+83
+00:12:51.060 --> 00:12:57.340
+Two weeks later, Tsipras, the Prime Minister, simply went, yeah, okay, people are here, you voted against it.
+
+84
+00:12:57.340 --> 00:12:59.820
+We changed this little by-sense, and now we're doing it.
+
+85
+00:12:59.820 --> 00:13:01.340
+We agree.
+
+86
+00:13:01.340 --> 00:13:20.200
+So the worst thing about this Greek referendum was actually that, and I was in Greece at the time, on a holiday when the ATM stopped working, actually just stopped working for me because I had demagnetized my card, but it was already switched off.
+
+87
+00:13:20.200 --> 00:13:33.600
+Anyway, there were some interviews in the national television, and one of the ladies who was interviewed, Kari Kamevout, about this Greek, she said, should we do the saving package, should we not do it?
+
+88
+00:13:33.600 --> 00:13:37.400
+In the open, the lady started to cry and said, I have no clue.
+
+89
+00:13:37.400 --> 00:13:39.200
+I don't know what it means if I say yes.
+
+90
+00:13:39.200 --> 00:13:41.480
+I don't know what will happen if I say no.
+
+91
+00:13:41.480 --> 00:13:48.440
+So there's a certain amount of limited capacity to ask everybody.
+
+92
+00:13:48.440 --> 00:14:01.620
+So we knew we needed something else, and we decided in the end that the best tool we could find so far was again Citizens Juries, like Nick already mentioned.
+
+93
+00:14:01.620 --> 00:14:21.580
+However, we added to the recipe an open phase of surveying, of inquiry, which would give everybody the possibility to chip in there to sense, to say what they mean, but again in the deliverative format, which I've shown you before.
+
+94
+00:14:21.580 --> 00:14:22.840
+So that was our recipe.
+
+95
+00:14:22.840 --> 00:14:26.680
+And then we thought, okay, but how are we going to get people to participate?
+
+96
+00:14:26.820 --> 00:14:35.380
+I guess the question is, and some of you may know that already, what is the biggest motivator for people to participate in democracy?
+
+97
+00:14:37.800 --> 00:14:39.480
+In Australia, we make them.
+
+98
+00:14:41.720 --> 00:14:44.220
+In Australia, we find them, if they don't, but...
+
+99
+00:14:44.220 --> 00:14:46.820
+Yeah, you got it all, I know.
+
+100
+00:14:46.820 --> 00:14:47.820
+No, but what...
+
+101
+00:14:47.820 --> 00:14:57.180
+absence of force and violence, what's the best way to motivate people to participate in democracy?
+
+102
+00:15:01.140 --> 00:15:02.900
+Someone said economic incentive.
+
+103
+00:15:04.080 --> 00:15:13.180
+Well, I believe what they found out, that the overriding requirement is that what people say, what they decide, actually matters.
+
+104
+00:15:13.780 --> 00:15:17.880
+Yeah, that these decisions are being implemented.
+
+105
+00:15:18.360 --> 00:15:20.260
+That's the one big motivator.
+
+106
+00:15:20.260 --> 00:15:30.720
+And ever since I knew about that, I've been observing all kinds of votes and things, and I'm just amazed how many never go to action and are being ignored.
+
+107
+00:15:31.300 --> 00:15:37.120
+Because essentially, politicians think that people are too stupid to decide anything.
+
+108
+00:15:37.120 --> 00:15:42.580
+If you ask the politician if people should get more say, the one answer we get is not that they're too stupid.
+
+109
+00:15:42.580 --> 00:15:43.240
+They have no idea.
+
+110
+00:15:43.240 --> 00:15:45.560
+They're all psychopaths still.
+
+111
+00:15:45.560 --> 00:15:47.600
+Yeah.
+
+112
+00:15:47.600 --> 00:15:49.060
+And we don't think it's true.
+
+113
+00:15:49.060 --> 00:16:00.240
+And I think particularly in Australia, you guys have done a lot of experimentation, which is extremely well-documented, and there have been other things in Ireland and in the UK.
+
+114
+00:16:00.240 --> 00:16:03.300
+And we've just done two in Austria.
+
+115
+00:16:03.300 --> 00:16:10.680
+So we decided we need to implement it in such a way that whatever happens out of these Citizens Juries actually matter.
+
+116
+00:16:10.680 --> 00:16:21.140
+So we started to look to working with the party to make them use the Citizens Juries, which we called B&#252;rgerparlament, so Citizen Parliaments.
+
+117
+00:16:21.480 --> 00:16:27.500
+And it seemed that they would have liked that, because, okay, I mean, then they know what the people really want.
+
+118
+00:16:28.360 --> 00:16:34.860
+They can put forward their program and know that the Austrians will be very happy doing what the Citizen Parliaments.
+
+119
+00:16:34.860 --> 00:16:43.840
+But no, we approached three parties, and all of them declined to use that tool, partly because people are stupid.
+
+120
+00:16:44.680 --> 00:16:58.640
+And I think, in reality, because the leading people there, they all have cushy, well-paying jobs, and they were kind of fearing that they would put themselves out of work, which frankly, I think they would.
+
+121
+00:16:58.640 --> 00:17:06.660
+So it was a rational fear for them, who are the decision makers, but it's not a good solution for Austria.
+
+122
+00:17:06.660 --> 00:17:13.640
+Luckily, I ran into a man called Roland D&#252;rner, who was just about to found their party.
+
+123
+00:17:13.740 --> 00:17:16.079
+So he had not yet a position of power.
+
+124
+00:17:16.079 --> 00:17:20.780
+And this was this guilt thing which Nick just mentioned.
+
+125
+00:17:20.780 --> 00:17:36.240
+So far too late in July this year, no, it was June this year, we finally decided, okay, guilt is gonna adopt this model, which was the election that last Sunday, so which was three months ago.
+
+126
+00:17:36.240 --> 00:18:04.520
+So we had three months to work out the idea to communicate it to the people, which was a bit of a problem, because Hubertus Hofkirchner was before I, running around more with the concept like Beppe Grillo in Italy, which means telling people, okay, this system is shit, just protest against it, put your vote here that you hate the system, La fanculo, let me have a wash, or kiss my back sides, that was the title of the party.
+
+127
+00:18:04.520 --> 00:18:12.640
+So we had only three months to change that into something a little bit more productive, which I'm going to show you now, one second.
+
+128
+00:18:12.640 --> 00:18:20.060
+So this is the concept which we, effectively, is happening today.
+
+129
+00:18:20.060 --> 00:18:51.680
+So in general, you vote every five years, which gives you about 10 to 12 votes in your whole lifetime, and probably one or two months in front of each of these election dates where politicians care at least what you think is a mob, because all they do in the election campaigns is they're trying to emotionalize us with one nine-second sound bit, as Nick already said, and then they're in parliament, and then for five years, they effectively couldn't really care less of what you want.
+
+130
+00:18:51.680 --> 00:18:53.700
+Of course, there's a lot of happening behind the scenes.
+
+131
+00:18:53.700 --> 00:19:07.340
+So what we propose as the following is that essentially, everybody can participate in an open ideation phase of solutions, to exist to such solutions as the citizens come up with.
+
+132
+00:19:07.340 --> 00:19:27.060
+And the key behind it is a kind of voting system, where every problem is rated, whether it's an important problem or not, not an important problem, whether a solution is a good solution, another solution, or whether an objection to a solution is a good objection or an irrelevant objection.
+
+133
+00:19:27.380 --> 00:19:50.560
+And out of that, you can actually calculate an index, which will automatically, from all the thousands of ideas and problems which people report, always give you a couple which are on top because of the importance of the problems or the quality of the solution and the little objections which exist.
+
+134
+00:19:50.560 --> 00:20:12.500
+There's a second open phase where then each of these proposal, proposed solution ideas is meeting an opening fire where everybody can participate, which will be part of a traditional questionnaire, which has a lot of problems as we know, but people are pretty good in responding to diagnostics.
+
+135
+00:20:12.500 --> 00:20:15.260
+So if you ask four questions, are you a man, are you a woman?
+
+136
+00:20:15.260 --> 00:20:16.400
+People typically know.
+
+137
+00:20:17.980 --> 00:20:25.560
+But even if you ask, okay, what will the coin toss result in five minutes, there will be a huge bias.
+
+138
+00:20:25.560 --> 00:20:40.960
+If asked now, and the survey people, Hubertus is tossing a coin, will it be heads or tails, or will it be tails or heads, to randomize it, you will get a response of 68 percent of people, that my coin toss will result in heads.
+
+139
+00:20:41.940 --> 00:20:44.320
+Because of a very simple bias.
+
+140
+00:20:44.320 --> 00:20:51.600
+So anybody following the survey would think that coins have three sides, and two of them are heads, which is of course rubbish.
+
+141
+00:20:51.600 --> 00:21:01.180
+So we use it in a very limited way, and then for prognostics, we use the prediction market, which I just showed you, which is a much more deliberative format.
+
+142
+00:21:01.180 --> 00:21:23.080
+Now the other problem we had to solve was this preconception, which not only politicians have, by the way, not only politicians think that the people are too stupid to decide, even people think that 90% of the other people are less competent in any area of topic than themselves.
+
+143
+00:21:23.080 --> 00:21:24.340
+It's a huge issue.
+
+144
+00:21:24.340 --> 00:21:32.500
+Of course, it can't be true, because intelligence and knowledge is normally distributed, it follows a nice Gauss curve, but it's a problem.
+
+145
+00:21:32.500 --> 00:21:44.440
+Anyway, so we're using Prediki also to find out, so to say, who is knowledgeable in a topic or not.
+
+146
+00:21:44.440 --> 00:21:51.600
+And we do that by effectively comparing the prediction of people with what actually happened.
+
+147
+00:21:51.600 --> 00:22:01.380
+Because there's quite a lot of scientific evidence meanwhile, that people who are better in predicting what will happen, are actually also much better decision makers.
+
+148
+00:22:01.380 --> 00:22:09.280
+There's a highly recommendable book issued in 2015 by a professor from the US called Philip Tetlock.
+
+149
+00:22:09.280 --> 00:22:11.620
+It's called Super Forecasting.
+
+150
+00:22:11.620 --> 00:22:23.080
+And it effectively shows how people who are tainted by ideology, by one big idea, get it all wrong when they have to say what will happen.
+
+151
+00:22:23.080 --> 00:22:30.220
+Like me, maybe I'm getting it completely all wrong if I think that the world will be atom-bombed after the next round of dictators.
+
+152
+00:22:31.220 --> 00:22:32.340
+Maybe even that will happen.
+
+153
+00:22:32.340 --> 00:22:37.940
+Anyway, so if you are a socialist, you think you have to look at the world.
+
+154
+00:22:37.940 --> 00:22:44.000
+If you are too much capitalist, you're generally wrong.
+
+155
+00:22:44.000 --> 00:22:49.660
+Tetlock calls these guys hedgehogs because they just take a position and then they don't move.
+
+156
+00:22:49.660 --> 00:22:54.880
+Whereas he calls the more intelligent people who are flexible, he calls them the foxes.
+
+157
+00:22:54.880 --> 00:22:56.820
+So the fox knows many tricks.
+
+158
+00:22:56.820 --> 00:22:58.920
+And these foxes also make better decisions.
+
+159
+00:22:59.620 --> 00:23:07.540
+And the mechanism can actually rank people according to how good their predictions are.
+
+160
+00:23:07.540 --> 00:23:14.060
+And if you're negative over a series, then we know most likely you're not such a good decision maker.
+
+161
+00:23:14.060 --> 00:23:18.440
+So that's, where was I?
+
+162
+00:23:18.440 --> 00:23:22.080
+Yeah, that's this principle of expert identification.
+
+163
+00:23:22.080 --> 00:23:24.700
+And on the other hand, we don't want to restrict people.
+
+164
+00:23:24.700 --> 00:23:26.640
+Everybody is good at something.
+
+165
+00:23:26.820 --> 00:23:29.660
+It's like Andy Warhol's 15 Minutes of Fame.
+
+166
+00:23:29.660 --> 00:23:38.020
+But each of us, while probably not being the best in anything, each of us is very good in one or two particular things.
+
+167
+00:23:38.020 --> 00:23:48.060
+And which effectively means that we don't need to exclude even anybody from participating in the Citizens Juries, because there's no need to restrict the capacity.
+
+168
+00:23:48.060 --> 00:23:51.940
+We can have hundreds and thousands of those things in parallel.
+
+169
+00:23:51.940 --> 00:24:01.320
+And as long as we make sure that the right people go into the right parliament, where they will decide the right things, we could have an enormous bandwidth.
+
+170
+00:24:01.320 --> 00:24:03.720
+Like in Austria, we have 8 million of us.
+
+171
+00:24:03.720 --> 00:24:10.860
+So if only 1% of people participated, because everybody is busy, but 1%, that's 80,000 people.
+
+172
+00:24:10.860 --> 00:24:19.300
+And if we just replicate our parliament, which is just under 200 people, we could have 400 parliaments in parallel.
+
+173
+00:24:19.300 --> 00:24:29.380
+Now imagine the speed which you can have and how you can actually drive the old parliament to more speed and get things done.
+
+174
+00:24:29.380 --> 00:24:31.800
+So that's roughly the idea.
+
+175
+00:24:31.820 --> 00:24:34.500
+And we tested that already.
+
+176
+00:24:34.500 --> 00:24:40.440
+We tested our own idea according to the same principles with an open survey.
+
+177
+00:24:40.440 --> 00:24:43.260
+And that was the outcome in the prediction market.
+
+178
+00:24:43.260 --> 00:24:45.460
+Let me just see here where it works.
+
+179
+00:24:54.820 --> 00:24:56.280
+Yeah, no.
+
+180
+00:24:56.280 --> 00:24:58.240
+Let me just get it here.
+
+181
+00:24:59.580 --> 00:25:02.640
+All right, can we wrap this up in like a couple of minutes?
+
+182
+00:25:02.640 --> 00:25:03.980
+Is that too?
+
+183
+00:25:05.000 --> 00:25:05.620
+Okay, sorry.
+
+184
+00:25:05.620 --> 00:25:06.600
+Yeah.
+
+185
+00:25:06.600 --> 00:25:08.220
+Sorry, how many minutes we have?
+
+186
+00:25:08.220 --> 00:25:09.880
+Two minutes.
+
+187
+00:25:09.900 --> 00:25:11.920
+Is that?
+
+188
+00:25:11.920 --> 00:25:13.600
+Okay, then I'll go faster.
+
+189
+00:25:13.600 --> 00:25:14.320
+No, that's okay.
+
+190
+00:25:16.720 --> 00:25:24.240
+We had the people decide which democratic concepts, so to say, will win.
+
+191
+00:25:24.240 --> 00:25:31.420
+And then we had the first Citizens Juries about which topic the party should actually do, which also came out quite well.
+
+192
+00:25:31.420 --> 00:25:43.140
+We had one day where people decided it's not this whole immigration issue which people really want to have resolved, because it's just an emotionalized topic of the parties who want to get into people's heads.
+
+193
+00:25:43.140 --> 00:25:47.900
+But in reality, it was the education system which made rather big fixings.
+
+194
+00:25:48.160 --> 00:25:59.440
+Anyway, to cut a long story short, we did beat about five of the, so to say, we were the largest of the small parties who were not yet in parliament.
+
+195
+00:25:59.440 --> 00:26:08.620
+We beat the communists with a budget of just about 20,000, excuse me, 120,000 euros.
+
+196
+00:26:08.620 --> 00:26:12.360
+We got about 1% and about double as much as the communist party.
+
+197
+00:26:12.360 --> 00:26:19.000
+The elections were very difficult because everybody was emotional at the immigration, that the Greens even fell out of parliament.
+
+198
+00:26:19.000 --> 00:26:25.880
+It came from 12% and they got only 3.8%, so they didn't make the 4% hurdle.
+
+199
+00:26:25.880 --> 00:26:33.180
+And well, we're actually quite happy with our 1%, also because the learning experience was huge.
+
+200
+00:26:33.180 --> 00:26:37.880
+So for the next election, which we're going to participate, we know what we're going to do differently.
+
+201
+00:26:37.880 --> 00:26:43.060
+We will make sure that we beforehand get a sufficient budget, which we now have a number for.
+
+202
+00:26:44.180 --> 00:26:56.380
+We will do a process, not by random, but we'll actually do a competitive process to find a couple of activists who are able to present the idea in the national media.
+
+203
+00:26:56.380 --> 00:27:07.200
+We will hold at least five Citizens Juries before, so that we can go into the election campaign with a couple of topical ideas, instead of just the idea of exchange democracy.
+
+204
+00:27:07.200 --> 00:27:13.920
+Let's face it, nobody is interested in democracy, funnily enough, everybody assumes that it works.
+
+205
+00:27:13.920 --> 00:27:19.840
+This technicality which I've just shown is of interest, maybe to one or one and a half percent of people in your country.
+
+206
+00:27:19.840 --> 00:27:25.480
+As you can see, because your room is very small, you're just a couple of people.
+
+207
+00:27:25.480 --> 00:27:30.120
+But what is about, I don't know, taxes, their room would possibly be overflowing.
+
+208
+00:27:30.120 --> 00:27:42.500
+So anyway, we need to have already have five Citizens Juries ready, by which we can tell the population what this new party, this deliberative party, actually wants.
+
+209
+00:27:42.500 --> 00:27:45.460
+Yeah, and I think that's about it.
+
+210
+00:27:45.460 --> 00:27:51.860
+A bit more money, the right candidates and three topics, and I think next time we're going to make the hurdle.
+
+211
+00:27:51.900 --> 00:27:52.780
+Anyway, thanks guys.
+
+212
+00:27:57.420 --> 00:28:14.580
+So I hope you enjoyed the speech and that you learned something new about Hubertus Hofkirchner and his group, and that most importantly, that you learned that democracy is not just an effort that is only in Australia, but is a worldwide effort as well.
+
+213
+00:28:14.580 --> 00:28:17.660
+So that being said, I hope to hear your feedback.
+
+214
+00:28:17.660 --> 00:28:20.580
+You can reach us at contact at designingopendemocracy.com.
+
+215
+00:28:21.840 --> 00:28:24.820
+Thank you very much and hope to hear from you next time.
+
+216
+00:28:24.820 --> 00:28:25.100
+Cheers.

@@ -1,0 +1,3239 @@
+1
+00:00:15,050 --> 00:00:19,470
+Right.
+
+2
+00:00:19,470 --> 00:00:22,970
+Hello, yep, good, thank you.
+
+3
+00:00:22,970 --> 00:00:29,170
+Well, greetings all, and it's wonderful to see all of you here.
+
+4
+00:00:29,190 --> 00:00:33,430
+And this is our last Basil's Table.
+
+5
+00:00:33,430 --> 00:00:38,010
+Now, I want to point out, this sounds rather self-centered when I say Basil's Table.
+
+6
+00:00:38,010 --> 00:00:39,370
+The title was not mine.
+
+7
+00:00:39,370 --> 00:00:43,050
+It was actually done by Triple 8, and they thought it would be a good idea to have Basil's Table.
+
+8
+00:00:43,570 --> 00:00:47,310
+So, this is an extension of a number of series that we have had.
+
+9
+00:00:47,330 --> 00:00:49,690
+And I'd like to welcome you all.
+
+10
+00:00:49,690 --> 00:01:07,770
+But before we start the welcome, I think it's important that we acknowledge that the First Nations people, as the traditional owners of the land, which we are here for this discussion taking place, the Wurundjeri people of the Kulin Nation, and I pay respects to all elders, past, present and emerging.
+
+11
+00:01:09,690 --> 00:01:13,110
+My job is going to be actually very, very wonderful.
+
+12
+00:01:13,110 --> 00:01:27,250
+All I have to do is to actually introduce the speakers, who are, as you can see, the array there, and they are all very interesting people, and they've done some very interesting work.
+
+13
+00:01:27,270 --> 00:01:34,690
+And the first one is Elena, whom I've met before, who is an architect and is doing a Ph.D.
+
+14
+00:01:34,690 --> 00:01:50,730
+at Deakin University, and she specializes in substantial, or sustainable, sorry, urban systems, regenerative development, participative planning, co-design, and collaborative housing.
+
+15
+00:01:50,730 --> 00:01:52,870
+Now, that's amazing, isn't it?
+
+16
+00:01:52,870 --> 00:02:13,290
+To think that an architect is going to do all that, or lead that, with experience across public buildings, including international aquariums, local education projects, apartments, and private residential, the focus has moved from environmental and socially sustainable design.
+
+17
+00:02:14,990 --> 00:02:28,210
+Jose, who is the writer of the end, whom I also had the pleasure of meeting, who is also a very interesting man, who is sort of from the States originally, and now in Australia.
+
+18
+00:02:28,210 --> 00:02:38,570
+He holds a doctorate from the Queensland University of Technology in critical globalization studies, winning their award for the outstanding doctoral thesis.
+
+19
+00:02:38,570 --> 00:02:41,730
+So we are honored to have you, Jose.
+
+20
+00:02:41,750 --> 00:02:57,450
+And amazingly that he sort of has published over 70 articles, chapters and papers and focuses his research on the experience and prefigurative innovations we need to navigate the epic times we live in.
+
+21
+00:02:58,850 --> 00:03:12,130
+And talking about the epic times we live in, that is really, we would like you to think about and ponder about that because we are living what an old Chinese curse is to be in very interesting times.
+
+22
+00:03:12,130 --> 00:03:17,270
+Because for the first time, I think, we have to be, we have used that.
+
+23
+00:03:17,270 --> 00:03:18,470
+I think, where is Jacques?
+
+24
+00:03:20,670 --> 00:03:21,490
+There is Jacques?
+
+25
+00:03:21,490 --> 00:03:22,670
+Jacques, yes.
+
+26
+00:03:22,670 --> 00:03:33,170
+But Jacques and I go back decades, where we used to talk about the importance of justice in terms of thinking locally and thinking globally.
+
+27
+00:03:33,170 --> 00:03:40,170
+And now we actually know, because of the world that we are in, we have to be thinking locally.
+
+28
+00:03:40,170 --> 00:03:47,170
+First, I used to say globally before, but now I think it's thinking locally and think what are the ramifications of that globally.
+
+29
+00:03:49,190 --> 00:03:55,310
+Then, the next person is Bridgette, who is a professional futurist.
+
+30
+00:03:55,310 --> 00:03:56,830
+My word, futurist.
+
+31
+00:03:56,850 --> 00:03:59,310
+That's awesome, awesome.
+
+32
+00:04:00,890 --> 00:04:02,170
+Because who can tell on the future?
+
+33
+00:04:02,170 --> 00:04:13,910
+But anyway, she's a professional futurist and para-academic who is curious about post-growth innovation and design in crisis.
+
+34
+00:04:13,910 --> 00:04:20,310
+She teaches strategic foresight, innovation and entrepreneurship at Swinburne.
+
+35
+00:04:20,310 --> 00:04:35,090
+Bridgette asks a lot of questions and doesn't play golf, which I think is a tragedy, and enjoys more than the odd glass of wine, I'm glad.
+
+36
+00:04:37,270 --> 00:04:40,590
+So, welcome.
+
+37
+00:04:40,590 --> 00:04:45,390
+And then we have Alexa Pantitichan.
+
+38
+00:04:45,390 --> 00:04:55,010
+He's a technologist and social entrepreneur with a focus on distributed technologies and large scale cooperation.
+
+39
+00:04:55,010 --> 00:05:07,690
+Trained as an engineer, Alexa has the vision of technologically advanced Australia with active regional hubs and is currently the acting president of Linux.
+
+40
+00:05:07,690 --> 00:05:09,550
+Is that how you pronounce it?
+
+41
+00:05:09,550 --> 00:05:09,950
+Yeah.
+
+42
+00:05:12,110 --> 00:05:21,130
+Linux, users of Victoria, it's interesting, and an organizer designing open democracy and blockchain for social impact.
+
+43
+00:05:22,450 --> 00:05:30,070
+And I'm supposed to introduce myself according to Antony, our wonderful chair.
+
+44
+00:05:30,070 --> 00:05:31,930
+Well, my name is Basil Varghese.
+
+45
+00:05:31,930 --> 00:05:43,110
+I am sometimes, I suppose, one of these ancient people who have been involved with social justice issues for over 50 years.
+
+46
+00:05:43,110 --> 00:05:52,550
+I think the time that drew my passion was really to do with the Vietnam War, black rights, the anti-apartheid movement.
+
+47
+00:05:54,050 --> 00:05:59,850
+And I've been involved with those issues, at least when it comes to racism and gender.
+
+48
+00:05:59,850 --> 00:06:02,950
+And now I'm involved with 888 as their patron.
+
+49
+00:06:02,950 --> 00:06:10,310
+And also I'm involved with The Voice, which I think is a crucial thing for Australia to face.
+
+50
+00:06:10,310 --> 00:06:16,630
+And I don't think I'll, I don't like talking about myself, but anyway, I've gone, done work with lots of, lots of people.
+
+51
+00:06:16,830 --> 00:06:22,290
+Also with, there's here Jeannie from the Brotherhood of St. Lawrence, where I spent a lot of time there.
+
+52
+00:06:22,290 --> 00:06:25,710
+And so it's been, for me, it's been a wonderful time.
+
+53
+00:06:25,710 --> 00:06:32,250
+And now my role is to affirm and support young talent.
+
+54
+00:06:32,250 --> 00:06:34,850
+I believe we need to support and affirm them.
+
+55
+00:06:34,850 --> 00:06:40,010
+So, and I hope you get all the affirmation to do your work.
+
+56
+00:06:41,910 --> 00:06:52,630
+And now I'd like to introduce our chair, Antony, who has put a lot of work into this with Sonja, where is she?
+
+57
+00:06:52,630 --> 00:06:53,710
+There.
+
+58
+00:06:53,710 --> 00:06:54,650
+And again, thank you.
+
+59
+00:07:05,550 --> 00:07:08,390
+Yeah, yeah, yeah, thank you.
+
+60
+00:07:08,390 --> 00:07:10,970
+Well, look, welcome, everybody.
+
+61
+00:07:11,350 --> 00:07:12,910
+It's December, isn't it?
+
+62
+00:07:14,650 --> 00:07:19,690
+And sometimes events are a bit, you know, up and down, you're not quite sure how many people come along.
+
+63
+00:07:19,690 --> 00:07:23,210
+It's crazy, we have people saying, oh yeah, I'm coming.
+
+64
+00:07:24,530 --> 00:07:27,130
+Oh, yeah, but I'm coming, yeah, we'll book.
+
+65
+00:07:27,130 --> 00:07:29,610
+And then someone says, oh no, I'm not coming, but I'm coming.
+
+66
+00:07:29,610 --> 00:07:39,290
+And then all of these last minutes, and they just go, we were going to have a long table, and then we weren't, but then a long table stayed.
+
+67
+00:07:39,290 --> 00:07:46,070
+So it's just December, things go really strangely, but it's lovely to see you all here.
+
+68
+00:07:46,070 --> 00:07:51,190
+My name is Antony McMullen, I'm the chair of the 888 Co-operative Causeway.
+
+69
+00:07:51,190 --> 00:07:52,810
+So we're a cooperative.
+
+70
+00:07:53,290 --> 00:07:55,070
+I just have your assistance there.
+
+71
+00:07:55,610 --> 00:07:57,750
+Oh, okay.
+
+72
+00:07:57,750 --> 00:07:58,590
+Yeah, no worries.
+
+73
+00:07:58,590 --> 00:07:59,390
+How's that?
+
+74
+00:07:59,390 --> 00:08:01,730
+Is that really loud, isn't it?
+
+75
+00:08:01,730 --> 00:08:02,790
+Yeah, yeah.
+
+76
+00:08:02,790 --> 00:08:05,130
+I'm sure you can hear me.
+
+77
+00:08:05,950 --> 00:08:07,990
+Yeah, cool, cool.
+
+78
+00:08:07,990 --> 00:08:12,570
+Yeah, so we're a little cooperative co-working space in the middle of the city.
+
+79
+00:08:12,570 --> 00:08:20,830
+Basil, who's our patron, is also our landlord and has been very supportive of our cooperative and running these events.
+
+80
+00:08:21,530 --> 00:08:42,250
+So we not only provide co-working space for our members, we also want to contribute to discussions about the social economy and thinking about new ways of being, new ways of doing business, new ways of being in the world.
+
+81
+00:08:42,270 --> 00:09:01,550
+And we thought we'd end the year on something a little bit more kind of speculative, a little bit more big picture, because we've had some quite sort of practical discussions and things like that, but we thought, yeah, we would like to sort of think about the future a little bit.
+
+82
+00:09:01,550 --> 00:09:04,530
+And we're in a really difficult time.
+
+83
+00:09:04,770 --> 00:09:12,370
+We're looking at parts of Australia that will be already uninsurable because of climate change.
+
+84
+00:09:13,530 --> 00:09:20,030
+We have got a lot of the institutions that we've trusted over many years are starting to break down.
+
+85
+00:09:20,030 --> 00:09:24,450
+We're concerned about corruption at different levels.
+
+86
+00:09:24,450 --> 00:09:27,110
+There's a polarisation between people.
+
+87
+00:09:27,110 --> 00:09:34,570
+So what people could agree to disagree on previously, now they can really come at loggerheads.
+
+88
+00:09:34,570 --> 00:09:45,230
+So cooperation, is it something that is going to become, it's going to become something that is more important for us in communities?
+
+89
+00:09:45,230 --> 00:09:47,230
+So how can we work together?
+
+90
+00:09:47,430 --> 00:09:49,270
+If we can't get insurance, are we going to stay here?
+
+91
+00:09:49,270 --> 00:09:51,450
+What are we going to do?
+
+92
+00:09:51,450 --> 00:10:00,050
+How are we going to build local institutions in a way that sustains us in very difficult economic times?
+
+93
+00:10:00,050 --> 00:10:03,830
+So we've got the sort of global dislocation there.
+
+94
+00:10:03,830 --> 00:10:15,830
+So we are, as Basil mentioned, living in quite interesting times, as they say, but we have a very interesting panel, which have all been introduced and welcomed.
+
+95
+00:10:16,010 --> 00:10:21,070
+And it's such a pleasure to have you all here as part of this discussion.
+
+96
+00:10:21,070 --> 00:10:28,090
+And I thought we would start the discussion with really what drives you.
+
+97
+00:10:28,090 --> 00:10:35,250
+So you've come, you've given your time this evening to talk about the future, to talk about technology.
+
+98
+00:10:35,250 --> 00:10:38,290
+We're going to have a discussion about those really important things.
+
+99
+00:10:38,290 --> 00:10:45,010
+But before we do that, I'm interested in what drives you, why you do what you do.
+
+100
+00:10:45,030 --> 00:10:51,690
+And yeah, just talk a little bit maybe about where you come from, bit of your story and where you'd like to go.
+
+101
+00:10:51,690 --> 00:10:55,270
+So there's no particular order here.
+
+102
+00:10:55,270 --> 00:10:58,750
+And Alexei, you are holding the microphone.
+
+103
+00:10:58,750 --> 00:11:02,290
+So you can go first if you like.
+
+104
+00:11:07,950 --> 00:11:09,150
+Thank you.
+
+105
+00:11:09,150 --> 00:11:13,890
+Was worried you were going to pass it on to me, but then the word came to me.
+
+106
+00:11:13,890 --> 00:11:18,750
+The drive for me is, I think, I can say it in one word, is potential.
+
+107
+00:11:18,750 --> 00:11:21,130
+I was trained as an electrical engineer.
+
+108
+00:11:21,130 --> 00:11:29,550
+And electrical grids are the largest one-piece system that the mankind has made.
+
+109
+00:11:29,550 --> 00:11:32,930
+It's a very interesting piece because it can just fail and you have to black out.
+
+110
+00:11:32,930 --> 00:11:41,150
+So when you deal with electrical engineering systems and software, you realize how big systems are like and really influence my thinking.
+
+111
+00:11:41,150 --> 00:11:50,870
+And you grow up and you build up an understanding of policies and how society works and economic and everything.
+
+112
+00:11:50,870 --> 00:11:58,730
+And I saw the very same principles that we were learning in electrical engineering and engineering as a whole.
+
+113
+00:11:59,610 --> 00:12:02,730
+I can use the same to understand social systems.
+
+114
+00:12:02,730 --> 00:12:10,590
+And then I could see the huge potential that we can have as humans when the information flows differently.
+
+115
+00:12:11,730 --> 00:12:22,490
+It's a bit hard to explain, but as again, it was being reflected in the things that I was doing as I switched to IT.
+
+116
+00:12:22,490 --> 00:12:24,610
+And in IT, we have a lot of very interesting things.
+
+117
+00:12:24,890 --> 00:12:30,770
+One of them is hackathons, is events where people come together.
+
+118
+00:12:30,770 --> 00:12:33,330
+Normally, over a weekend, they form teams.
+
+119
+00:12:33,330 --> 00:12:37,470
+Sometimes they don't even know each other before they come to the venue.
+
+120
+00:12:37,470 --> 00:12:39,310
+They form teams two hours later.
+
+121
+00:12:39,310 --> 00:12:46,290
+They're starting ideating and one and a half day later, they're in front of judges and presenting the work that they've done together.
+
+122
+00:12:46,290 --> 00:12:55,290
+And it's amazing to see when things are facilitated and trust is established between people through some mechanisms.
+
+123
+00:12:55,290 --> 00:12:57,290
+How much people can achieve together.
+
+124
+00:12:57,290 --> 00:12:58,910
+It almost looks like magic.
+
+125
+00:12:58,910 --> 00:13:00,950
+And I've seen a lot of these cases.
+
+126
+00:13:02,690 --> 00:13:14,490
+And I was lucky to be a contractor in having short contracts in different types of organizations and universities and governments and smaller startups.
+
+127
+00:13:14,490 --> 00:13:25,390
+And I saw where people are organized, workforce are organized in a way that they can't really express themselves and all sorts of things.
+
+128
+00:13:25,390 --> 00:13:28,250
+How the whole organization is very slow and has a lot of problems.
+
+129
+00:13:28,250 --> 00:13:39,470
+But when the information flows between people and there's dignity and respect, how small teams can carry really heavy weights and countless examples of that in tech that I can name.
+
+130
+00:13:39,550 --> 00:13:50,330
+So that's what drives me, like the potential that we can achieve if we can basically work out to how to work together.
+
+131
+00:13:50,330 --> 00:13:54,730
+And there needs to be no compromise as far as I've come to believe.
+
+132
+00:13:57,050 --> 00:13:58,170
+Thank you, Alexa.
+
+133
+00:13:58,170 --> 00:13:59,570
+I didn't want to stop you talking.
+
+134
+00:13:59,570 --> 00:14:01,730
+I think I'll go for four minutes.
+
+135
+00:14:01,730 --> 00:14:02,290
+Okay.
+
+136
+00:14:03,170 --> 00:14:04,110
+Oh.
+
+137
+00:14:04,110 --> 00:14:04,770
+Do you want another minute?
+
+138
+00:14:05,350 --> 00:14:05,710
+No, no, no.
+
+139
+00:14:05,710 --> 00:14:07,170
+It's okay.
+
+140
+00:14:07,170 --> 00:14:09,550
+I normally go over time at this time.
+
+141
+00:14:11,090 --> 00:14:13,150
+Elena, I was watching the TV.
+
+142
+00:14:13,150 --> 00:14:21,030
+I was watching the election and I saw someone's face pop up and I went, I know this person and she's running informal politics.
+
+143
+00:14:21,030 --> 00:14:24,410
+And I went, oh my goodness, it's amazing.
+
+144
+00:14:24,410 --> 00:14:26,370
+So many facets to you.
+
+145
+00:14:26,390 --> 00:14:29,610
+And yeah, I'm sure you've got a story to tell.
+
+146
+00:14:29,610 --> 00:14:31,850
+How did you end up there and doing what you do?
+
+147
+00:14:34,610 --> 00:14:35,350
+Oh, I don't know.
+
+148
+00:14:35,350 --> 00:14:37,770
+I mean, how do I end up anywhere?
+
+149
+00:14:37,770 --> 00:14:51,750
+A combination of kind of accident and also sort of just relentless stubbornness that means I continue to pursue things even though the odds are very much against me, I guess.
+
+150
+00:14:52,350 --> 00:15:01,470
+And Footscray, I guess, is another classic example of that, where we really, I was running for the Greens, we really had no shot in a safe labor seat.
+
+151
+00:15:01,470 --> 00:15:17,430
+But we, at the last minute, we got the liberal preferences and it just kind of changed the game and suddenly I was on TV and getting a lot more of Footscray in the coverage than we ever anticipated.
+
+152
+00:15:17,430 --> 00:15:24,930
+And prior to that, my background is in architecture, but I've always been passionate about environmental sustainability.
+
+153
+00:15:25,730 --> 00:15:42,950
+And then, through my career, I've become more and more interested in social sustainability and social collaboration as a real means of achieving environmental sustainability and environmental justice.
+
+154
+00:15:42,950 --> 00:16:08,810
+And Jacques here and one of the stories that he told when I spoke on a panel here previously is actually one that I've used quite recently, and it was around, I think, your children and your daughter suddenly being able to tie her shoelaces and a huge amount of celebration about that happening.
+
+155
+00:16:08,810 --> 00:16:22,750
+But your reflection, I think, that there had been many weeks and months and years of your son helping her to tie her shoes, and that that had gone by with not much of a remark.
+
+156
+00:16:22,750 --> 00:16:36,650
+And so I'm very passionate about what it is that we can do together, and not necessarily just the idea that we need to be able to do everything apart and as individuals.
+
+157
+00:16:36,650 --> 00:16:40,710
+And that is similar to my experience through architecture.
+
+158
+00:16:40,710 --> 00:16:53,750
+I was working in housing, and I was seeing what we were doing at a high res, kind of high density, and also at urban sprawl and en masse.
+
+159
+00:16:53,750 --> 00:16:56,330
+And it just wasn't working.
+
+160
+00:16:56,330 --> 00:16:57,770
+It wasn't working socially.
+
+161
+00:16:57,770 --> 00:17:00,830
+It wasn't working from an environmental perspective.
+
+162
+00:17:00,830 --> 00:17:03,390
+And it was all highly individualized.
+
+163
+00:17:03,390 --> 00:17:16,650
+And as an architect, you either work in that space or you work for individual clients, but there was never an opportunity to kind of capture that collective potential, I suppose.
+
+164
+00:17:16,650 --> 00:17:23,089
+And so that led me to become interested in Co-Housing and collaborative approaches to housing.
+
+165
+00:17:23,089 --> 00:17:32,570
+And that's been my real focus for a long time about people being able to come together and co-design where and how they want to live.
+
+166
+00:17:32,570 --> 00:17:36,150
+And I think that that how bit is really important.
+
+167
+00:17:36,150 --> 00:17:44,830
+And also to be able to collaboratively govern those spaces and to decide together what it is that they want to achieve.
+
+168
+00:17:44,830 --> 00:17:55,190
+And not to always having to be battling, I guess, against the system that requires them to do everything on their own.
+
+169
+00:17:55,190 --> 00:18:02,470
+And I think at some point, around your 18th birthday, you're suddenly told that you don't need to share your toys anymore.
+
+170
+00:18:02,470 --> 00:18:07,770
+That actually you should go out and get your own car and your own house and all of those sorts of things.
+
+171
+00:18:08,990 --> 00:18:12,270
+And everything becomes a competition.
+
+172
+00:18:12,290 --> 00:18:14,850
+And I don't think it has to be that way.
+
+173
+00:18:14,850 --> 00:18:19,330
+So I'm really interested in how housing can help shift that narrative.
+
+174
+00:18:27,140 --> 00:18:29,040
+Thank you.
+
+175
+00:18:29,040 --> 00:18:31,960
+I'm worried that it's gonna pull everything down.
+
+176
+00:18:33,140 --> 00:18:34,360
+That's me being the fatalist.
+
+177
+00:18:41,900 --> 00:18:43,580
+Hi, I'm Bridgette.
+
+178
+00:18:45,440 --> 00:18:53,360
+I get out of bed in the morning in order to hope that we have hope for generations to come.
+
+179
+00:18:53,360 --> 00:18:56,260
+That's the reason I do what I do.
+
+180
+00:18:56,260 --> 00:19:04,520
+I don't have children, but I'm surrounded by kids, and I worry a lot about what their world is gonna be like in 30 years.
+
+181
+00:19:04,520 --> 00:19:11,560
+I think it's about as good as it's gonna get for them right now, which is unfortunate, so just a bit of dystopian in me.
+
+182
+00:19:13,340 --> 00:19:32,490
+I came to this position after working in design and brand strategy for probably long enough to find my way to a foresight course, and I was fed up, basically, with working on things that lasted 60 seconds, or maybe six months in the market, and that there's gotta be something different.
+
+183
+00:19:32,490 --> 00:19:36,470
+And I, yeah, found my way to a foresight degree.
+
+184
+00:19:36,470 --> 00:19:37,960
+So yeah, this is a good place to be.
+
+185
+00:19:38,080 --> 00:19:39,800
+This is a good space to be in.
+
+186
+00:19:39,800 --> 00:19:46,680
+And then I had, I think, the good fortune, or a little bit of erratic kind of planning serendipity.
+
+187
+00:19:46,680 --> 00:19:49,420
+Like, oh, good, this feels right.
+
+188
+00:19:49,420 --> 00:19:55,900
+I now torment mostly MBA students at Swinburne University who are doing postgraduate studies.
+
+189
+00:19:55,900 --> 00:20:02,490
+I used to torment design students, and the business will say, can you come do a bit more of that for us over here?
+
+190
+00:20:02,490 --> 00:20:03,600
+So that's what I do.
+
+191
+00:20:03,600 --> 00:20:11,540
+And it's great because I just get to ask questions and don't necessarily have answers because we don't always have to have the answers.
+
+192
+00:20:11,540 --> 00:20:20,400
+And I think that's the thing that I grapple with all the time, that we live within this perception that we need certainty, which is absolute nonsense.
+
+193
+00:20:20,400 --> 00:20:24,780
+We can't have certainty in a complex adaptive system, end of story.
+
+194
+00:20:24,780 --> 00:20:30,100
+And yet we constantly pursue this sense of certainty.
+
+195
+00:20:30,100 --> 00:20:31,470
+And I'm not saying that that's bad.
+
+196
+00:20:31,580 --> 00:20:40,040
+I'm simply saying that it leaves us with a lack of awareness of all those opportunities that are out there.
+
+197
+00:20:40,040 --> 00:20:51,160
+And so my interest in what I refer to, and I'm not the only one, as post-growth innovation, is what can we do when what we're doing just has to stop?
+
+198
+00:20:51,160 --> 00:20:59,490
+And my love is tormenting those students and getting them to ask better questions.
+
+199
+00:20:59,490 --> 00:21:02,020
+That's really my job.
+
+200
+00:21:02,020 --> 00:21:11,970
+And I've just come off day two of running a three-day innovation lab with 260 year seven and eight students, which has been amazing.
+
+201
+00:21:11,970 --> 00:21:13,440
+Yeah, it's really cool.
+
+202
+00:21:13,440 --> 00:21:16,520
+And we started with futures literacy, so tick.
+
+203
+00:21:16,520 --> 00:21:34,460
+But that is where I think, that's what gets me out of bed in the morning, knowing that not me making a difference, but helping people ask better questions might help shape a better world in 150 years.
+
+204
+00:21:35,900 --> 00:21:37,260
+Yeah.
+
+205
+00:21:37,260 --> 00:21:37,940
+Yeah.
+
+206
+00:21:37,940 --> 00:21:39,340
+Not the immediate future.
+
+207
+00:21:39,340 --> 00:21:40,380
+No.
+
+208
+00:21:40,380 --> 00:21:43,120
+You've written that one off.
+
+209
+00:21:43,200 --> 00:21:43,820
+Sorry, guys.
+
+210
+00:21:48,860 --> 00:21:52,120
+Different futurists will give you different takes.
+
+211
+00:21:53,820 --> 00:21:55,340
+When do you want your positivity?
+
+212
+00:21:55,340 --> 00:21:58,720
+When do you want your pessimism?
+
+213
+00:21:58,720 --> 00:21:59,780
+Like a sliding scale.
+
+214
+00:22:01,140 --> 00:22:03,160
+Okay.
+
+215
+00:22:03,160 --> 00:22:07,440
+When I was thinking about the question of what drives me, a couple of things came up.
+
+216
+00:22:07,440 --> 00:22:12,460
+The first is that not a lot drives me because I'm pretty burnt out these days.
+
+217
+00:22:14,900 --> 00:22:22,040
+Two years of a pandemic, kids in the house locked up and feeling overworked.
+
+218
+00:22:22,040 --> 00:22:23,000
+I've been getting a lot of rest.
+
+219
+00:22:23,000 --> 00:22:28,080
+I've been doing a lot of yoga, Nidra, which is a sleep meditation.
+
+220
+00:22:28,980 --> 00:22:33,760
+My experience is it's a practice that enlivens.
+
+221
+00:22:33,760 --> 00:22:35,640
+It's like, what can drive me?
+
+222
+00:22:35,640 --> 00:22:37,140
+Well, a sense of rest.
+
+223
+00:22:38,980 --> 00:22:51,360
+So, you know, I think, and then I think, okay, when I go back to, you know, where I came from, I think there's this kind of, you know, if we're lucky, we have good childhoods.
+
+224
+00:22:51,360 --> 00:22:53,060
+We get shown a lot of love.
+
+225
+00:22:53,060 --> 00:22:54,600
+I was given a lot of love.
+
+226
+00:22:54,600 --> 00:22:58,140
+I was given unconditional love by both my parents.
+
+227
+00:22:59,960 --> 00:23:01,220
+And I got a lot of rest, you know.
+
+228
+00:23:01,220 --> 00:23:03,200
+I wasn't, you know, they didn't put me to work right away.
+
+229
+00:23:03,440 --> 00:23:07,620
+And, you know, I got to enjoy my childhood.
+
+230
+00:23:07,620 --> 00:23:09,860
+Unlike them, they had very difficult childhood.
+
+231
+00:23:09,860 --> 00:23:12,500
+They're abusive, you know, environments.
+
+232
+00:23:12,500 --> 00:23:22,860
+So I think that that kind of bosom, the bosom of love, the bosom of spaciousness of rest is powerful.
+
+233
+00:23:23,780 --> 00:23:31,260
+And, you know, I think a lot of my ability to operate in the world comes from, from the love that, you know, my parents and other people have given me.
+
+234
+00:23:31,260 --> 00:23:35,060
+So I think what drives me, well, that's one answer.
+
+235
+00:23:35,060 --> 00:23:40,520
+I think for me, the other one is, is I grew up amid a lot of contradictions.
+
+236
+00:23:40,520 --> 00:23:46,960
+So my dad was a history professor, a Chicano rights activist.
+
+237
+00:23:46,960 --> 00:23:52,740
+My mom, you know, was a community development practitioner.
+
+238
+00:23:52,740 --> 00:24:03,400
+And they were part of the civil rights movement in the United States, the Chicano power movement, alongside the, you know, African Americans, blacks, Asians, Jews.
+
+239
+00:24:03,400 --> 00:24:12,300
+It was really a rainbow coalition of different ethnic groups that fought together for rights in the United States.
+
+240
+00:24:12,300 --> 00:24:25,700
+And so, you know, I got taught a narrative in my high schools that the United States civilized North America and is bringing democracy to the world.
+
+241
+00:24:25,700 --> 00:24:28,100
+That was the narrative you got in high school.
+
+242
+00:24:28,100 --> 00:24:38,280
+And then at home, the narrative I got was that the United States committed genocide in North America and it's spreading neocolonialism around the world.
+
+243
+00:24:38,280 --> 00:24:40,660
+Very different narratives.
+
+244
+00:24:40,660 --> 00:24:46,380
+And so, I grew up with these very quite, quite different narratives of the world.
+
+245
+00:24:46,380 --> 00:24:51,140
+And when you grow up like that, you ask yourself who's right, you know?
+
+246
+00:24:51,140 --> 00:24:52,520
+What's going on here?
+
+247
+00:24:52,520 --> 00:25:02,980
+And I think, you know, the way I describe it is I grew up in the cracks between these different views of the world, and asking these questions, what's going on here?
+
+248
+00:25:02,980 --> 00:25:09,720
+You know, why was my best friend circle Japanese American, Guatemalan, Hungarian, and Korean?
+
+249
+00:25:09,720 --> 00:25:11,300
+Somewhere in Los Angeles, why?
+
+250
+00:25:11,300 --> 00:25:17,780
+You know, so I think that other thing is just that curiosity born of these contradictions.
+
+251
+00:25:17,780 --> 00:25:23,180
+And I think that the epic times that we live in today are a time of great contradiction.
+
+252
+00:25:23,180 --> 00:25:33,520
+And I think that's, you know, it's a challenge, but it's also helps us to think about what the world that we're in and how do we what do we do?
+
+253
+00:25:40,090 --> 00:25:52,730
+I'm passing the baton back, and I'm gonna pass it right back over in a moment, because the first question that I'd like to pose is to you, Jose, and you've already sort of touched on this.
+
+254
+00:25:52,730 --> 00:26:00,030
+We're in a period of global, political and climate uncertainty.
+
+255
+00:26:01,090 --> 00:26:09,010
+There are populist solutions being put forward by both the left, the right, and everyone in between.
+
+256
+00:26:10,770 --> 00:26:27,510
+We're living in a time where they're just competing solutions, competing ideas, and it's very difficult to map out a future that looks maybe more cooperative, more cohesive.
+
+257
+00:26:27,510 --> 00:26:45,730
+So I'm just wondering, we're sort of moving from a big picture, and we're gonna drill down a little bit through the conversation, but just to start with, you know, what are the alternatives to where we're at at the moment in terms of this polarization?
+
+258
+00:26:45,730 --> 00:26:47,390
+Are there alternatives?
+
+259
+00:26:47,390 --> 00:26:50,430
+How can we build a better future together?
+
+260
+00:26:57,680 --> 00:27:11,220
+Yeah, okay, so I think the starting point of left-right, so I began sort of thinking left-right, that's how kind of conventional politics is framed.
+
+261
+00:27:11,220 --> 00:27:17,100
+And that, when I thought about it, I thought, okay, there's some truth in there, but it obscures a lot.
+
+262
+00:27:17,100 --> 00:27:21,260
+So the truth for me is that we have a billionaire problem.
+
+263
+00:27:21,260 --> 00:27:23,320
+We got way too many billionaires.
+
+264
+00:27:23,320 --> 00:27:29,900
+That's very, very simple, clear for me, for me, you know, I'm a socialist.
+
+265
+00:27:29,920 --> 00:27:34,280
+I voted, you know, I wanted Bernie Sanders to win in the United States, right?
+
+266
+00:27:34,280 --> 00:27:37,460
+So you know where I sit on the spectrum.
+
+267
+00:27:37,460 --> 00:27:40,940
+But for me, there's a clear billionaire problem.
+
+268
+00:27:40,940 --> 00:27:51,060
+And then, according to my colleague, Barat Dahia, we also have a billion people in slums problem, right?
+
+269
+00:27:51,480 --> 00:28:01,380
+So we're living in a time of absolute extreme inequality, and that is generated by a political economy, by a global political economy.
+
+270
+00:28:01,380 --> 00:28:03,920
+You know, you can call it a number of different things.
+
+271
+00:28:05,280 --> 00:28:23,040
+So the truth to left and right is that there is a side that is squarely for equity and for greater equivocality, for greater participation.
+
+272
+00:28:23,180 --> 00:28:26,240
+And I don't think you can argue against that.
+
+273
+00:28:26,240 --> 00:28:29,120
+And I don't think you could actually say that that problem doesn't exist.
+
+274
+00:28:29,120 --> 00:28:33,440
+We've seen it grow and grow and grow and grow for decades and decades and decades.
+
+275
+00:28:33,440 --> 00:28:47,640
+So from that point of view, I think what gets talked about from the left right point of view, at least in economic terms, to me is fairly, it makes sense.
+
+276
+00:28:47,640 --> 00:28:53,500
+But where the left right break down is on a couple of other lines.
+
+277
+00:28:53,500 --> 00:29:03,360
+So for example, if you go historically, the labor in Australia were anti-immigration.
+
+278
+00:29:08,600 --> 00:29:10,340
+What was the policy in Australia?
+
+279
+00:29:10,340 --> 00:29:12,420
+Yeah, what Australia policy?
+
+280
+00:29:12,420 --> 00:29:14,780
+Supported by unions.
+
+281
+00:29:14,780 --> 00:29:20,400
+The unions in the United States also supported anti-immigration in the United States.
+
+282
+00:29:20,900 --> 00:29:24,000
+So it's thematically, it's a pattern, right?
+
+283
+00:29:24,000 --> 00:29:25,680
+It isn't just anecdotal.
+
+284
+00:29:27,800 --> 00:29:29,640
+So you have these crossovers.
+
+285
+00:29:31,260 --> 00:29:32,540
+You have the teal here.
+
+286
+00:29:32,540 --> 00:29:35,880
+So we're talking, the teal, the recent election, right?
+
+287
+00:29:35,880 --> 00:29:51,180
+And they're supposed to be liberal kind of suburbs, but now they're worried about climate change and they have LGBTQ kind of affiliations or empathies, okay?
+
+288
+00:29:51,180 --> 00:29:52,660
+So they're moving in that direction.
+
+289
+00:29:52,660 --> 00:29:54,760
+So there's some crossovers there.
+
+290
+00:29:56,080 --> 00:30:02,080
+But for me, it really breaks down when you begin looking at the bigger historical changes.
+
+291
+00:30:02,080 --> 00:30:22,860
+So when I really started thinking about left, right, one of the interesting things that we've seen over the last several centuries is the two primary choices that we had, socialism, capitalism.
+
+292
+00:30:25,320 --> 00:30:27,960
+They're both products of the Enlightenment.
+
+293
+00:30:29,140 --> 00:30:34,920
+And they are both what we might call modernizing ideologies.
+
+294
+00:30:35,700 --> 00:30:46,680
+They're ideologies that, they're humanist, so they saw humans as imposing, you know, our will on the world.
+
+295
+00:30:46,680 --> 00:30:51,400
+Rationalist, we can figure things out using our minds, right?
+
+296
+00:30:51,780 --> 00:30:54,440
+We can apply order to the world.
+
+297
+00:30:55,620 --> 00:31:09,440
+But when you look at the results of these ideologies, both left and right, in the Soviet Union, in socialist countries, and in the United States, it's absolute disaster over the last several centuries.
+
+298
+00:31:09,440 --> 00:31:16,540
+And so this is why people like Bov and Duda de Jesus Santos talk about left-right as Western constructs.
+
+299
+00:31:16,540 --> 00:31:27,260
+Say, they are products of the Enlightenment and Western modernity, and they both alienated fundamentally from the living systems that we're in.
+
+300
+00:31:27,280 --> 00:31:31,460
+Or, in other terms, they're imperial formations that are extractive.
+
+301
+00:31:32,120 --> 00:31:41,580
+They're about using the resources and people within whatever periphery as much as possible.
+
+302
+00:31:42,760 --> 00:31:46,740
+And they do not have a living systems view of the world.
+
+303
+00:31:46,740 --> 00:32:12,460
+So from that point of view, left-right begins to become much more of a, both a Western construct, it looks much more as a rupture from kind of these pre, these sort of indigenous ways of thinking or ways of thinking that were more connected to the land, or an understanding of how living systems actually work.
+
+304
+00:32:12,460 --> 00:32:16,820
+So then from that point of view, you can begin saying, well, what comes after, right?
+
+305
+00:32:16,820 --> 00:32:21,100
+And so for me, what comes after are, I mean, there's a lot of things that are going to come after.
+
+306
+00:32:22,240 --> 00:32:31,960
+These ways of thinking, thinking that are divorced from our living systems, they can't survive because we won't survive if they survive, right?
+
+307
+00:32:31,960 --> 00:32:33,280
+So new forms of thinking.
+
+308
+00:32:33,280 --> 00:32:41,280
+So I've been watching the peripheral, William Gibson story on prime.
+
+309
+00:32:42,860 --> 00:32:48,620
+And there's a term called, in the future, this is like a futuristic kind of scenario.
+
+310
+00:32:50,140 --> 00:32:53,140
+The revolutionaries are called neoprims.
+
+311
+00:32:53,140 --> 00:32:56,360
+Neoprims just stands for neoprimitives, right?
+
+312
+00:32:56,360 --> 00:33:01,800
+And the neoprimitives are basically saying we have to get, we have to go back to square one, right?
+
+313
+00:33:01,800 --> 00:33:03,600
+Technology is out of control.
+
+314
+00:33:03,600 --> 00:33:06,560
+We've completely destroyed ourselves and the world through technology.
+
+315
+00:33:06,560 --> 00:33:11,060
+So there's this, kind of this radical anti-technological view, right?
+
+316
+00:33:11,060 --> 00:33:14,880
+So that's, I'm not saying that's not the alternative I want, right?
+
+317
+00:33:15,360 --> 00:33:20,600
+But that begins to see the rupture out of that left-right modernity.
+
+318
+00:33:22,780 --> 00:33:32,140
+For me, the core concept that I want to put forward about, you know, sort of future thinking is the commons.
+
+319
+00:33:32,140 --> 00:33:40,760
+And I see the commons as that which we all mutually depend on for our survival and well-being, right?
+
+320
+00:33:40,960 --> 00:33:44,880
+What is it that we mutually depend on for our survival and well-being?
+
+321
+00:33:45,820 --> 00:33:59,040
+And if you look at that concept of what we mutually depend on our survival and well-being, there's a logic that I call implication.
+
+322
+00:33:59,040 --> 00:34:05,540
+And what that means is that people are implicated into shared concern.
+
+323
+00:34:07,000 --> 00:34:30,780
+So, you know, wind back to early 19th century and unions here, white male unionists are worried about losing their jobs to these foreigners, and they mutually implicate themselves into, well, we have to protect our jobs.
+
+324
+00:34:31,880 --> 00:34:37,300
+But of course, they've excluded a whole number of other groups at the same time, right?
+
+325
+00:34:37,300 --> 00:34:50,139
+So this logic of implication can be an exclusivist logic of implication, but it can also be a logic of implication that draws a larger group of people in.
+
+326
+00:34:50,139 --> 00:34:54,179
+So we know that without a safe climate, we're all stuffed.
+
+327
+00:34:54,179 --> 00:34:56,380
+We're all just completely stuffed.
+
+328
+00:34:56,380 --> 00:35:05,100
+And so a safe climate is a commons, it's an atmospheric commons that we all mutually depend on for our survival and well-being.
+
+329
+00:35:05,100 --> 00:35:06,520
+And that implicates all of us.
+
+330
+00:35:06,520 --> 00:35:10,700
+And it doesn't matter if you're a white unionist or, you know, someone else.
+
+331
+00:35:10,700 --> 00:35:12,320
+It doesn't matter.
+
+332
+00:35:12,320 --> 00:35:17,500
+And so this is when the exclusivist implication begins to break down.
+
+333
+00:35:17,500 --> 00:35:23,120
+So somewhere in there, I see the future of political ideology.
+
+334
+00:35:23,120 --> 00:35:38,140
+In the breakdown of the exclusivity, and the opening and the implication into larger forms of thinking about how we're part of commons, how we need to fight for those commons, how we need to mobilize together for those commons.
+
+335
+00:35:49,960 --> 00:35:59,640
+Yeah, I was just reflecting the other day when, you know, there's this whole thing with woke, you're woke, and it came out of the US, that sort of thing.
+
+336
+00:35:59,640 --> 00:36:08,920
+And then I was thinking about, I was watching, you know, Trump stuff, and I was talking about the great awakening.
+
+337
+00:36:08,920 --> 00:36:22,620
+And so one's woke, one's awakening, and they're almost sort of, it's strange that they're saying very sort of, on one level, quite, I've woken up, but they've woken up either way.
+
+338
+00:36:22,620 --> 00:36:45,900
+And it's still that sort of same kind of thing that's come from the same sort of lineage that you're talking about, rather than talking about something new altogether, which is why we've come together, and why we have Brigitte, who, I'm just sort of thinking you might be able to reflect a little bit on what Jose's been talking about.
+
+339
+00:36:46,720 --> 00:36:55,240
+And maybe get a little bit more practical about what we can do at the grassroots level.
+
+340
+00:37:02,060 --> 00:37:06,880
+Moving from the bigger picture to the local level, what we can do.
+
+341
+00:37:13,980 --> 00:37:33,300
+Oh, so I'll start actually by reflecting on the day, the two days that I've just spent with these students, because what has completely, what's kept me enthralled and also blown me away is their capacity for imagination.
+
+342
+00:37:33,300 --> 00:37:42,000
+So I've got students who are imagining incredibly powerful and equitable uses of technology.
+
+343
+00:37:44,500 --> 00:37:49,340
+And ideas for better futures, because that was part of my question.
+
+344
+00:37:50,520 --> 00:37:55,820
+But there was no one better future shared amongst those 260 students.
+
+345
+00:37:57,980 --> 00:38:09,340
+So this notion that 260 people can come together, they've been working in groups of four, five, six, depending on how engaged they were or not, is wonderful.
+
+346
+00:38:10,860 --> 00:38:20,020
+But the first part of yesterday was spent negotiating differences in what they would conceive to be a better future.
+
+347
+00:38:20,020 --> 00:38:21,960
+So they're all at the same school.
+
+348
+00:38:21,960 --> 00:38:33,080
+They, I won't say they come from similar walks of life, but they are in a school where there's a set of values and beliefs that are professed by the school and espoused by the students.
+
+349
+00:38:33,080 --> 00:38:36,820
+And that's great, but there's still no one shared vision.
+
+350
+00:38:36,820 --> 00:38:38,420
+So it goes to your point about Commons.
+
+351
+00:38:39,740 --> 00:38:52,000
+That they share their existence within the school, but beyond that, they have attention to gender and gender equity, respectful of difference and diversity.
+
+352
+00:38:53,240 --> 00:39:08,920
+But when I see that as a community and think you're all in the same school, you're kind of being taught the same stuff, and I'll use the word catechism quite deliberately, that there is a set of beliefs that's being taught, and there is a great deal of difference.
+
+353
+00:39:08,920 --> 00:39:19,600
+So in terms of local, the things that immediately come to mind are particularly your question about we wanting or wanting a better future.
+
+354
+00:39:19,600 --> 00:39:20,980
+Who's the we?
+
+355
+00:39:22,140 --> 00:39:28,240
+What's better, depending on who you are and your positionality and situation in the world, and your situatedness?
+
+356
+00:39:29,880 --> 00:39:34,640
+And when we talk about local communities, how is that defined?
+
+357
+00:39:34,760 --> 00:39:42,200
+So reflecting on your school friends, local community, but very diverse backgrounds.
+
+358
+00:39:42,200 --> 00:39:49,540
+Until I moved to Ballarat, my best mate, well, one of my best mates lived in Ballarat, one in Canberra and one in London.
+
+359
+00:39:49,540 --> 00:39:51,940
+They were my community.
+
+360
+00:39:51,940 --> 00:39:58,560
+And I think part of the challenge here is understand what we define as local, what we define as community.
+
+361
+00:39:58,560 --> 00:40:03,580
+And I'm particularly intrigued about building better social and economic relationships.
+
+362
+00:40:04,700 --> 00:40:11,220
+Because we tend to bundle social and economic together all the time.
+
+363
+00:40:11,220 --> 00:40:19,260
+And it seems that economics drives a lot of the capturing of what we define as relationships or how we want to build those relationships.
+
+364
+00:40:20,400 --> 00:40:25,680
+So to go to your real question, how do we creatively and practically do it?
+
+365
+00:40:27,200 --> 00:40:48,300
+There's been a lot of attention to, and I'm speaking at this from the perspective of a foresight practitioner who works around innovation, there's been a lot of attention to design-led innovation and practices that are design-centric and human-centric with little regard to anything beyond the human centricity.
+
+366
+00:40:48,300 --> 00:40:53,600
+Design is complicit in material consumption and not always in a good way.
+
+367
+00:40:56,140 --> 00:41:11,340
+Because design can do great things, but the way we do stuff, the way we operate, particularly in those community and economic and social structures, is building on exactly what you've just talked about.
+
+368
+00:41:11,340 --> 00:41:17,640
+So that continuation of the business as usual around the ideologies.
+
+369
+00:41:19,040 --> 00:41:21,560
+Even left and right, I've just become so tired of the term.
+
+370
+00:41:22,460 --> 00:41:25,800
+And I've always questioned it, like why is it left and right?
+
+371
+00:41:25,800 --> 00:41:26,640
+Where did that come from?
+
+372
+00:41:26,640 --> 00:41:30,740
+Because left in some cultures means something different from other cultures.
+
+373
+00:41:30,960 --> 00:41:34,660
+Why do we have them as completely polar opposites?
+
+374
+00:41:34,660 --> 00:41:44,540
+I was working on a project a few months ago, and we did some research which suggested that survey design could be improved in terms of responsiveness.
+
+375
+00:41:44,540 --> 00:41:56,420
+So not just the survey design itself, but the redesign of a survey so that there was not the automatic placement of multiple-choice answers ranging left to right.
+
+376
+00:41:56,420 --> 00:42:17,640
+So when you have a scale and you have an options left to right, stop doing that because for someone who reads right to left and has low language capability, even if they're looking at the survey and bother to continue it, they're not necessarily going to respond according to the mechanics that you've used to set up survey because their disposition is to read another way.
+
+377
+00:42:18,980 --> 00:42:20,820
+Long lists of stuff doesn't work either.
+
+378
+00:42:20,820 --> 00:42:22,240
+So why am I saying this?
+
+379
+00:42:22,240 --> 00:42:26,860
+Because we continue to work with systems that propagate the systems that we're in.
+
+380
+00:42:26,860 --> 00:42:48,500
+And that for me is the challenge around the community, that the practical application within communities, that we talk about practices that are grounded in beliefs and value sets that are not necessarily shared and are complicit in continuing what it is that they have already established.
+
+381
+00:42:48,500 --> 00:42:58,340
+I've also been doing some work with Victorian Parliament, helping them through a co-design activity so that we can teach them co-design.
+
+382
+00:42:58,340 --> 00:43:19,100
+And that for me is still a really difficult position because we're kind of imposing, even though we believe that our approach to co-design is based on community practices, has been informed by different cultural approaches, including Indigenous, Australian, including other ethnic practices.
+
+383
+00:43:19,100 --> 00:43:21,600
+I think that's the term we agreed on using.
+
+384
+00:43:23,140 --> 00:43:33,240
+But that has been difficult because we're still imposing a system developed by practitioners, and that it feels like there is this kind of recolonization of stuff.
+
+385
+00:43:33,240 --> 00:43:47,660
+So even when we think about building new communities, is it coming from a deeper foundation and starting again, breaking it down, and starting with something not new for the sake of newness, but different?
+
+386
+00:43:47,660 --> 00:43:52,020
+Or are we still basing it on foundations that we are surrounded by?
+
+387
+00:43:52,020 --> 00:44:00,220
+And that's the tension for me, which is why I'm definitely in that dark corner, because my dystopia might be your utopia.
+
+388
+00:44:01,320 --> 00:44:05,580
+And that is one of the challenges within local communities.
+
+389
+00:44:05,580 --> 00:44:26,840
+It was just made evident to me today with these students that even when the group of four, passionately working towards that, one of the groups wants to build, wants to convert churches into places where women fleeing domestic violence with their kids can go, because they're connected with the word sanctuary.
+
+390
+00:44:29,260 --> 00:44:33,400
+And the immediate response within the school was, oh, you couldn't do that with churches.
+
+391
+00:44:36,120 --> 00:44:51,880
+And the students were really quite taken aback by this, because they felt that their understanding of what a church is and around sanctuary was at odds with what they were being told was, this is what the church does and this is how it operates and you could never do that.
+
+392
+00:44:51,880 --> 00:44:52,200
+Anyway.
+
+393
+00:44:57,840 --> 00:44:59,380
+Well, I love that.
+
+394
+00:44:59,380 --> 00:45:04,320
+Going back to the roots of a sanctuary that was, yeah, it's beautiful.
+
+395
+00:45:04,320 --> 00:45:07,080
+Yeah, yeah.
+
+396
+00:45:07,080 --> 00:45:18,360
+Well, we've gone from big picture, little bit more local, and now I'm gonna ask a technologist a really, isn't there an app for that?
+
+397
+00:45:19,500 --> 00:45:23,300
+You know, there seems to be an app for everything.
+
+398
+00:45:23,300 --> 00:45:33,980
+So silicon Valley, they'll find, you know, sometimes it's almost like they'll just grab a problem, figure out a solution, and we'll all be better off.
+
+399
+00:45:33,980 --> 00:45:39,120
+But is that the case, and is there an app for that?
+
+400
+00:45:40,400 --> 00:45:42,140
+That's a question for me.
+
+401
+00:45:43,260 --> 00:45:44,660
+Not for me.
+
+402
+00:45:47,840 --> 00:46:05,020
+Well, different groups have different answers, and unfortunately, the group who started building the whole tech, they think there could be an app for everything, and they can figure it out, and that answer, what they believe, is unfortunately affecting our lives.
+
+403
+00:46:05,020 --> 00:46:16,140
+One of the things I noticed, I was a programmer, and very soon I realized there's a dynamic, this is how I put it.
+
+404
+00:46:16,140 --> 00:46:26,740
+Other people may not put it this way, but I realized that programmers are just finding themselves, there's a whole new technology that no one knows how to, it's not regulated.
+
+405
+00:46:27,000 --> 00:46:41,180
+I did electrical engineering, heavily regulated, it's all different level certifications, all hierarchies, but while I was studying electrical engineering, second year, I started my company in IT, and I was getting contracts.
+
+406
+00:46:41,180 --> 00:46:59,560
+So it was new, and nobody knew about it, and obviously those who have nothing to do, like first, second year students, they explore and they learn very quickly, and in the absence of any certificate, regulation, law, anything, they learn how to do it, and they end up becoming the ones who can't do it.
+
+407
+00:46:59,560 --> 00:47:31,600
+So this started becoming a problem that later in life, I can articulate what the problem is, which you can see in the startup boom that happened in San francisco, and later we saw in blockchain movement, if you call it a thing, that people who find themselves in a position of a particular ability that others don't have, they think they know better, and others have to listen, unfortunately, to what they think.
+
+408
+00:47:31,600 --> 00:47:47,540
+So people who could code, they found themselves in a position of coming up with solutions, and imposing those solutions, rolling those things out, and because they were employing computers, they didn't need to consult with anybody, basically.
+
+409
+00:47:47,540 --> 00:48:04,980
+Rolling out, and I think it, I may be wrong here, like those who know history better, that was followed by the whole globalization movement, and there were already treaties and infrastructure in place for imposing your solutions to a greater scale.
+
+410
+00:48:04,980 --> 00:48:16,020
+And so all of a sudden, you find people in the, like sometimes teenagers or early 20s, now running companies and coming up with solutions, and everybody is basically listening to them.
+
+411
+00:48:18,040 --> 00:48:48,440
+And so this is, the main problem is, I'll cut it short now, point I'm trying to make is that just premium laborers, as technology says, or those who can't code have found themselves in a position of doing the solutions, and there is those who have been scholars, or have been academia, or the problem owners, those in the community building, who needs to be in forefront and basically hire these laborers.
+
+412
+00:48:48,440 --> 00:49:04,400
+Unfortunately, they're those who just have to chase after like the new feature on Twitter, on Facebook, and what we can do now, what we can't do, and so I don't know if I didn't answer your question, I think I just made the whole thing more.
+
+413
+00:49:05,840 --> 00:49:15,100
+So I can go on about this, but I would like to hear reflections from other people to know how much this resonates with other people, and I can build on that.
+
+414
+00:49:16,160 --> 00:49:21,460
+I mean, it's as much about asking good questions and laying out the table.
+
+415
+00:49:21,460 --> 00:49:24,860
+We've literally got a table in the middle there.
+
+416
+00:49:24,860 --> 00:49:26,680
+And then we're gonna open it up for a discussion.
+
+417
+00:49:26,740 --> 00:49:33,860
+But there's one last question, Elena, before we open it up to everybody else.
+
+418
+00:49:33,860 --> 00:49:36,580
+And you mentioned housing.
+
+419
+00:49:36,580 --> 00:49:40,460
+And we've talked about, you know, the kind of future we want.
+
+420
+00:49:40,460 --> 00:49:42,120
+And there could be an app for that.
+
+421
+00:49:42,120 --> 00:49:48,980
+And there's a very famous app, which is Airbnb, which initially started out, you know, fantastic.
+
+422
+00:49:48,980 --> 00:49:50,300
+Got a spare room.
+
+423
+00:49:50,300 --> 00:49:51,540
+There's a traveler.
+
+424
+00:49:51,540 --> 00:49:53,980
+They need a spare place to stay.
+
+425
+00:49:53,980 --> 00:49:54,700
+Fantastic.
+
+426
+00:49:54,800 --> 00:49:57,140
+Let's set up a platform.
+
+427
+00:49:57,140 --> 00:50:00,100
+You know, it's going to be about a sort of a sharing economy.
+
+428
+00:50:00,100 --> 00:50:05,180
+And but then there was some maybe other consequences down the track.
+
+429
+00:50:05,180 --> 00:50:10,140
+So I'm just wondering if you have any kind of comments on that.
+
+430
+00:50:10,140 --> 00:50:16,200
+And yeah, maybe if there are some alternatives out there.
+
+431
+00:50:17,840 --> 00:50:20,180
+I have many comments about it.
+
+432
+00:50:22,460 --> 00:50:37,180
+I think part of the whole Airbnb situation is just that it's a demonstration about a lack of sophistication and diversity in the way that we conceive of planning and the economics of housing.
+
+433
+00:50:37,180 --> 00:50:56,480
+And I think Airbnb kind of the roots came, I think, from a really good place, which was sort of couchsurfing and help ex and kind of this peer to peer kind of exchange, where it was very relational.
+
+434
+00:50:56,480 --> 00:51:03,440
+You connected directly with the person, you negotiated the terms of use, and all of those sorts of things.
+
+435
+00:51:03,440 --> 00:51:19,500
+You met with those people and exchanged stories, they got local knowledge, you got stories of their travels, and you exchanged room for some laborer and woofers and all of those sorts of things.
+
+436
+00:51:20,520 --> 00:51:27,180
+And then somewhere along the line, someone thought, I can extract money out of this.
+
+437
+00:51:27,180 --> 00:51:41,080
+And so you got this whole sharing economy where these intermediaries don't have to have any assets like Uber and Airbnb.
+
+438
+00:51:41,080 --> 00:51:49,420
+The people have the assets and the other people have the money that they're going to spend to use them.
+
+439
+00:51:49,420 --> 00:51:56,120
+And there's a complete breakdown in the personal relationship.
+
+440
+00:51:56,120 --> 00:52:00,460
+And I feel that that is where the challenge is.
+
+441
+00:52:00,460 --> 00:52:06,800
+And that's what we have to try and bring back into the idea of the Commons.
+
+442
+00:52:07,760 --> 00:52:14,860
+And it's kind of similarly the problem with the way that we conceive of governance in general.
+
+443
+00:52:14,860 --> 00:52:23,160
+It's sort of too big and we need to go down to maybe bioregional governance at that level.
+
+444
+00:52:23,160 --> 00:52:28,800
+And that's one of the reasons that I'm so interested in Co-Housing and collaborative housing.
+
+445
+00:52:28,800 --> 00:52:38,540
+Because I feel like it's a good size for people to actually practice working together again.
+
+446
+00:52:38,540 --> 00:52:48,340
+And we've been conditioned socially to not talk about money, not talk about religion, not talk about politics.
+
+447
+00:52:48,340 --> 00:52:51,000
+And where does that lead us?
+
+448
+00:52:51,000 --> 00:53:03,420
+It leads us to people losing their mind on social media, attacking each other rather than being able to have really insightful and sophisticated conversations.
+
+449
+00:53:04,620 --> 00:53:08,720
+So, my interest is how do we bring that back?
+
+450
+00:53:09,340 --> 00:53:13,180
+And I think it's kind of coming through in politics as well.
+
+451
+00:53:13,180 --> 00:53:20,420
+If you don't have the diversity and sophistication between labour and liberal, you get the Greens.
+
+452
+00:53:20,420 --> 00:53:25,760
+And if you don't have sophistication between Greens and the Liberal Party, you get the Teals.
+
+453
+00:53:25,760 --> 00:53:33,420
+And if you don't have sophistication and conversation and discussion between the Greens and Labour, you get the Socialists.
+
+454
+00:53:33,420 --> 00:53:41,900
+So, I think in a lot of places, we are seeing that diversity trying to emerge.
+
+455
+00:53:41,900 --> 00:53:45,880
+And I think we need to do the same thing in housing.
+
+456
+00:53:45,880 --> 00:53:55,040
+And we could have people who have an attic or a basement, and they can rent it out long term to people.
+
+457
+00:53:55,040 --> 00:53:59,100
+But our planning scheme doesn't really allow for that.
+
+458
+00:53:59,680 --> 00:54:04,520
+Our systems don't allow for co-ownership and other sorts of models.
+
+459
+00:54:04,520 --> 00:54:10,660
+So, we just have speculation and people accrue it.
+
+460
+00:54:11,340 --> 00:54:17,160
+And that's just the kind of framework that has been offered.
+
+461
+00:54:17,160 --> 00:54:23,900
+But it doesn't mean that it has to limit our imagination and what we can do in the future.
+
+462
+00:54:26,840 --> 00:54:29,660
+The kind of follow-on from Airbnb, I guess.
+
+463
+00:54:29,660 --> 00:54:52,900
+My fear is that that will lead us into things like co-living and build-to-rent, which will then be owned by huge corporations or even just big super companies whose, you know, their responsibility is to shareholders rather than to the tenants that they might be supporting.
+
+464
+00:54:53,160 --> 00:55:09,340
+And from a tech and app perspective, they will know when you swipe in and out of your building, when you have visitors, when you order food, when you use the gym or all of these sorts of things.
+
+465
+00:55:09,340 --> 00:55:18,040
+So there's a whole other level of surveillance that might be coming in the way that we manage these buildings.
+
+466
+00:55:18,160 --> 00:55:35,840
+And so I think it's really important that we conceive of a shared approach that is collaborative ownership and cooperative ownership, where the tenants are the landlords and it's not a monopoly kind of proposition.
+
+467
+00:55:37,680 --> 00:55:39,100
+I'll stop there.
+
+468
+00:55:40,640 --> 00:55:44,220
+Well, we have had a lot of insights from our panel.
+
+469
+00:55:44,900 --> 00:55:50,580
+And the idea is really to start to imagine different kinds of futures.
+
+470
+00:55:50,580 --> 00:55:56,940
+So I'm sure that there's a few questions that might be brewing.
+
+471
+00:55:56,940 --> 00:56:08,580
+Before I open it up, maybe just have a little chat to the person next to you about some of the things that you've listened to and have come up for you.
+
+472
+00:56:08,580 --> 00:56:14,700
+And then I will go hush again, and then we'll jump in to some questions.
+
+473
+00:56:14,700 --> 00:56:25,940
+So feel free to just have a chat to the person next to you, and just maybe talk about some of the questions that have come up for you through hearing our panel.
+
+474
+00:56:25,940 --> 00:56:33,640
+And I'll just do that for about a minute or two, and then we'll have a roving mic, and then we can throw it to the floor with the panel.
+
+475
+00:56:33,640 --> 00:56:36,500
+So over to you to have a quick chat with the person next to you.
+
+476
+00:56:39,760 --> 00:56:42,580
+All right, let's bring it back.
+
+477
+00:56:45,220 --> 00:56:55,280
+So Sonja down the back there has a roving microphone, and we've heard some fascinating things from our panel members, and you've just had a conversation about it.
+
+478
+00:56:55,280 --> 00:57:14,800
+And one of the great things about these sorts of events is you bring people together who get to meet each other, and you are able to sort of discuss these sorts of issues with people maybe that you've never met before, and that we can derive some really good questions from that.
+
+479
+00:57:14,800 --> 00:57:17,500
+So it's a good opportunity to have a chat.
+
+480
+00:57:17,500 --> 00:57:18,480
+Now it's over to you.
+
+481
+00:57:18,480 --> 00:57:19,740
+Sonja's got the roving mic.
+
+482
+00:57:19,740 --> 00:57:22,180
+Who would like to ask the first question?
+
+483
+00:57:22,180 --> 00:57:27,420
+And feel free to direct it to a panel member or just generally.
+
+484
+00:57:29,840 --> 00:57:33,480
+This is an old drum that I keep banging on.
+
+485
+00:57:33,480 --> 00:57:43,180
+I wish that something more could be done to make tiny housing acceptable and prevalent.
+
+486
+00:57:43,180 --> 00:57:45,900
+Everybody wants their own space.
+
+487
+00:57:45,900 --> 00:57:49,880
+And I agree with what you said about basements and attics.
+
+488
+00:57:49,900 --> 00:57:55,920
+And the problem there with, I think under the law, it's called tenants in common for ownership.
+
+489
+00:57:58,820 --> 00:58:02,880
+But tiny houses are a no-brainer.
+
+490
+00:58:02,880 --> 00:58:07,020
+I mean, even IKEA is selling flat-packed tiny houses.
+
+491
+00:58:08,040 --> 00:58:21,300
+So I'm wondering if the panel has any thoughts on what can be done to expedite some common sense at local, state and federal level around tiny houses.
+
+492
+00:58:21,300 --> 00:58:24,660
+Sorry, I've been banging on this drum for about 25 years now.
+
+493
+00:58:27,580 --> 00:58:30,420
+Yeah, no, and I'm happy to start there.
+
+494
+00:58:30,420 --> 00:58:38,920
+I think there are a couple of problems with tiny houses and that essentially a tiny house is the same as a car.
+
+495
+00:58:38,920 --> 00:58:45,180
+It's a depreciating asset and land is the thing that appreciates in value.
+
+496
+00:58:45,380 --> 00:58:58,440
+And so, even, and tiny houses per square meter are very expensive even though obviously they're much smaller, so on balance, they end up being an affordable housing option.
+
+497
+00:58:58,440 --> 00:59:16,500
+Because we have such an unsophisticated relationship between housing and land, they still usually leave people in very precarious situations because you're still reliant on some kind of land owner to be a landlord.
+
+498
+00:59:16,500 --> 00:59:20,780
+And so, there is still that power imbalance.
+
+499
+00:59:20,780 --> 00:59:28,840
+I feel though that, I mean, my approach is always the collaborative approach and the collective approach.
+
+500
+00:59:28,840 --> 01:00:01,320
+And I would be more than excited to see tiny houses being able to, and kind of not necessarily tiny houses on wheels, but small houses, micro houses that are accessible and adaptable, but being implemented in a place that is, where people can co-own the land, or there's some kind of tenure model for the land, in a community land trust or something like that.
+
+501
+01:00:01,320 --> 01:00:11,720
+And then a way that you can own the dwelling, maybe separately or as part of that in a co-operative fashion.
+
+502
+01:00:11,720 --> 01:00:23,800
+Tiny houses just on their own though, I fear that there are still structural barriers that would lead to greater inequality and precariousness.
+
+503
+01:00:36,400 --> 01:00:40,820
+We haven't used the word home because we cease to aim at homes.
+
+504
+01:00:41,340 --> 01:00:42,800
+We don't want homes.
+
+505
+01:00:42,800 --> 01:00:44,840
+We want investments.
+
+506
+01:00:45,300 --> 01:00:52,260
+And it's coming down so heavily, and it's seeping under the door and between the walls.
+
+507
+01:00:52,260 --> 01:00:54,280
+And we just, we don't want homes.
+
+508
+01:00:56,620 --> 01:00:58,680
+We want investments.
+
+509
+01:00:58,680 --> 01:01:05,980
+And investments mean a whole different range of aims and moves and results.
+
+510
+01:01:08,160 --> 01:01:10,920
+No, I mean, I couldn't agree more.
+
+511
+01:01:10,920 --> 01:01:13,840
+And I think that that is a huge problem.
+
+512
+01:01:13,840 --> 01:01:21,260
+And it's the, again, it's the unsophisticated way that we've established housing in relationship to the economy.
+
+513
+01:01:21,260 --> 01:01:28,540
+And no one wants to touch housing because it's the political economy is all structured around it.
+
+514
+01:01:28,540 --> 01:01:32,500
+And so is capitalism and consumption.
+
+515
+01:01:32,500 --> 01:01:43,260
+That's where the individual housing narrative emerged to begin with, so that people would get their box and fill it with stuff and they wouldn't talk to anybody else.
+
+516
+01:01:44,520 --> 01:01:47,340
+So we do have to go back to the notion of home.
+
+517
+01:01:47,340 --> 01:01:55,200
+And people don't look, think, they think about education and health as still kind of social infrastructure.
+
+518
+01:01:55,200 --> 01:01:59,420
+But somehow food and housing should be a commodity.
+
+519
+01:01:59,420 --> 01:02:03,300
+To me, they're even more primal than the other things.
+
+520
+01:02:03,300 --> 01:02:10,760
+And if you have housing and food, then you can conceive of improved health and improved education.
+
+521
+01:02:12,020 --> 01:02:15,300
+But that's not what the economy is set about.
+
+522
+01:02:17,120 --> 01:02:19,060
+I want to add something to that.
+
+523
+01:02:21,640 --> 01:02:25,060
+If I may, just add something to that.
+
+524
+01:02:25,060 --> 01:02:27,060
+I'm not talking as an economist.
+
+525
+01:02:27,240 --> 01:02:28,880
+It is about economy.
+
+526
+01:02:29,320 --> 01:02:32,060
+I see people who definitely know much better than me.
+
+527
+01:02:32,060 --> 01:02:35,980
+But I think it's important to bring this up without diving deeper.
+
+528
+01:02:36,620 --> 01:02:48,760
+When you learn about how money is created and different economies, what is the stable asset that the Reserve and Central Bank can use, Quantitative Easing and everything.
+
+529
+01:02:48,760 --> 01:03:06,100
+And in Australia, when you can control the supply of buyers for immigration, as an example, then you end up with a situation where that's actually being used as a mean for regulating the economy, and it's not being seen as home.
+
+530
+01:03:06,100 --> 01:03:12,600
+Whereas, for example, there's no conversation about just nature and parks and everything.
+
+531
+01:03:12,600 --> 01:03:20,780
+Whereas in some places, you have to actually travel to get to a place where you can see the sky, because it's all polluted.
+
+532
+01:03:20,780 --> 01:03:26,240
+And that's a privilege, and there's all sort of economy around it, and the price of lands and everything.
+
+533
+01:03:27,320 --> 01:03:36,680
+In fact, I've heard even like Q is very expensive, because there was a time where there was pollution in Melbourne, and a high area where...
+
+534
+01:03:38,140 --> 01:03:59,980
+But if we just come to our census and reset everything, if we could, and just understand that the technology and just basic economy allows everybody to have homes, then we can move on and find something else to use to regulate our economy, that doesn't end up with like leaving a lot of people suffering.
+
+535
+01:03:59,980 --> 01:04:15,100
+And I don't want to talk much longer, but when I see young people, professionals in their 20s, their goal is to buy a house, and basically they go on a mortgage, and they basically use their earnings to pay for the mortgage in the 20s.
+
+536
+01:04:15,100 --> 01:04:22,260
+Like that's really sad for me to see, where this is how we run the economy, whereas they should invest in themselves and what they're interested in.
+
+537
+01:04:22,260 --> 01:04:22,540
+Anyhow.
+
+538
+01:04:24,620 --> 01:04:26,580
+Oh, he knows I live in Q.
+
+539
+01:04:29,560 --> 01:04:31,740
+It is great, and it is lovely.
+
+540
+01:04:33,500 --> 01:04:37,140
+I always lose my left credit when I mention that I live in Q.
+
+541
+01:04:37,140 --> 01:04:40,020
+Let's throw it over to a question.
+
+542
+01:04:40,020 --> 01:04:52,040
+Probably for Jose and Bridget, but I think at the very start of the discussion, there was a bit of stuff around, I guess, this binary of whatever left, right, capitalist, socialist.
+
+543
+01:04:53,120 --> 01:05:02,160
+I mean, I think the title of the panel tonight was kind of in and around, like it hints at platform cooperativism and playing with some things.
+
+544
+01:05:02,160 --> 01:05:15,640
+In terms of the discourse and stuff going on around techno feudalism and this idea that maybe we're already in a post-capitalist period where we're all kind of becoming neo-servs to like the billionaires.
+
+545
+01:05:15,640 --> 01:05:37,640
+Like I guess in terms of framing that and actually, because I know a lot of people get like an ostrich effect where they want to stick their head in the sand when they think about these things, but it's kind of pretty hard to deny right now that whatever, if so-and-so over there gets a startup going and Jeff Bezos wants to buy it and they go, fuck you, Jeff Bezos, like I don't want to sell you my startup.
+
+546
+01:05:37,640 --> 01:05:42,140
+He can deploy so much capital and so much resource that he can just crush him.
+
+547
+01:05:42,360 --> 01:05:57,340
+So in terms of kind of just like getting that message into people's heads, do you think that that's like a constructive thing, like in terms of like, just again, doing away with this binary, like that this even is what we think it is?
+
+548
+01:06:03,300 --> 01:06:08,700
+Yeah, I mean, I guess that's why, I love all your comments and where you're coming from, by the way.
+
+549
+01:06:08,700 --> 01:06:18,500
+That's why I had that ambiguity in the beginning, because I do think we have a billionaire problem, and we have a billion people in slums.
+
+550
+01:06:18,500 --> 01:06:23,580
+And so the extreme inequality we have is real.
+
+551
+01:06:24,280 --> 01:06:28,900
+And so left traditionally is about the equity.
+
+552
+01:06:29,640 --> 01:06:36,220
+It's about the people that don't have enough and support for those people.
+
+553
+01:06:36,220 --> 01:06:39,860
+It's about access to universities, to schools.
+
+554
+01:06:40,660 --> 01:06:45,020
+If we really want to understand the left better, we actually need to go back in time.
+
+555
+01:06:45,020 --> 01:06:46,400
+We need to go to the 19th century.
+
+556
+01:06:46,400 --> 01:06:49,660
+We need to live in the United States during the time of the robber barons.
+
+557
+01:06:49,660 --> 01:07:07,720
+That will teach us what left is, because then we'll know what a public library means, what a hospital means, what education means, what decent trade union laws mean, associational laws.
+
+558
+01:07:07,720 --> 01:07:08,320
+To me.
+
+559
+01:07:13,460 --> 01:07:17,520
+We don't want to throw the baby out with a bath water.
+
+560
+01:07:17,520 --> 01:07:35,160
+I think that because we're living in a world of oligarchs, we're living in a world of tech oligarchs, extreme tech oligarchs, obnoxious tech oligarchs, and they've captured the medium.
+
+561
+01:07:35,160 --> 01:07:38,060
+They've captured the medium of the day.
+
+562
+01:07:38,060 --> 01:07:40,060
+Marx talked about superstructure.
+
+563
+01:07:40,640 --> 01:07:43,680
+We're in another version of Marx's superstructure.
+
+564
+01:07:44,800 --> 01:07:56,060
+I'm some brand of whatever neo-Marxist, B-grade Marxist, whatever, you know, but we can see that recursion.
+
+565
+01:07:56,060 --> 01:08:09,560
+And so, I don't think we can throw the baby out with a bath water and say, left, right is this kind of, at the same time, they are products of Western modernity.
+
+566
+01:08:10,620 --> 01:08:11,560
+And where is life?
+
+567
+01:08:11,560 --> 01:08:13,340
+Where is the web of life?
+
+568
+01:08:13,340 --> 01:08:20,899
+And also, the commons eats away at those categories, because it says we are all implicated in the survival of our planet.
+
+569
+01:08:20,899 --> 01:08:23,520
+It doesn't matter who the hell you are.
+
+570
+01:08:23,520 --> 01:08:33,040
+So, it transgresses the idea that somehow you can be rich and get away with the loot.
+
+571
+01:08:33,040 --> 01:08:39,240
+No, you can't be rich and get away with the loot if the planet is unlivable.
+
+572
+01:08:39,240 --> 01:08:41,840
+Right?
+
+573
+01:08:41,840 --> 01:08:42,779
+Yeah, that's right.
+
+574
+01:08:42,779 --> 01:08:43,840
+Let's get off to Mars.
+
+575
+01:08:43,840 --> 01:08:45,040
+Yeah, it's madness.
+
+576
+01:08:45,040 --> 01:08:46,460
+It's complete madness, you know.
+
+577
+01:08:47,920 --> 01:08:49,220
+So, I love all your comments.
+
+578
+01:08:49,220 --> 01:08:51,479
+I think they're spot on.
+
+579
+01:08:51,479 --> 01:08:54,840
+You know, that's why there's, for me, there's like, don't throw the baby out with the bath water.
+
+580
+01:08:54,840 --> 01:08:56,479
+There's ambiguity there.
+
+581
+01:08:56,479 --> 01:09:01,080
+And then, let's eat away at the, let's transgress some of those.
+
+582
+01:09:01,080 --> 01:09:22,220
+And we, and I think the question you asked is the big challenge, is how do we actually form some kind of coherent way of thinking that can bring this new form of this strength towards equity forward in the context of tech oligarchs that control the media?
+
+583
+01:09:22,220 --> 01:09:25,720
+You know, it's a phenomenal challenge that we have.
+
+584
+01:09:25,720 --> 01:09:30,180
+Yeah.
+
+585
+01:09:30,180 --> 01:09:34,899
+I'm gonna speak to this quickly from an education perspective.
+
+586
+01:09:34,899 --> 01:09:41,880
+Because one of the things I see a lot of within entrepreneurship and innovation is a solution looking for a problem to solve.
+
+587
+01:09:43,399 --> 01:09:47,540
+In the name of creating something that they can sell.
+
+588
+01:09:47,540 --> 01:09:52,460
+So about chasing success, chasing fame, chasing reputation.
+
+589
+01:09:53,640 --> 01:10:03,620
+And that is something that does not exist in every business school in the world, but it's the prevailing position of most business schools.
+
+590
+01:10:03,620 --> 01:10:10,840
+And it's sad to think that business schools are stuck within that modernist paradigm of what business is and how it works.
+
+591
+01:10:12,080 --> 01:10:22,060
+And that in trying to introduce what would be considered unconventional ways of approaching business models, and there's nothing wrong with having a business.
+
+592
+01:10:22,380 --> 01:10:23,060
+That's it.
+
+593
+01:10:23,060 --> 01:10:27,160
+And I'm saying that in all, there's nothing wrong with having a business.
+
+594
+01:10:27,160 --> 01:10:29,700
+It's what's the model of operation?
+
+595
+01:10:29,700 --> 01:10:32,560
+What's the model and infrastructure that underpins that?
+
+596
+01:10:32,560 --> 01:10:35,440
+Is it that extractive, exploitative model?
+
+597
+01:10:35,440 --> 01:10:38,520
+And those are terms that actually get taught as part of a model of growth.
+
+598
+01:10:39,860 --> 01:11:00,040
+There's a particular model that gets taught in a unit that I won't teach anymore unless they have to read the limits to growth before they get to that model of growth and innovation because the model has been disproven by 2020 and 2021, and yet it still prevails as the dominant paradigm and mode of thinking.
+
+599
+01:11:00,040 --> 01:11:17,960
+So some of this is down to how people, not about the way they're brought up, but how they are introduced to that business context and what business means, what is the role of business in a functioning society, within a commons and a different way of practising life, what does business mean?
+
+600
+01:11:17,960 --> 01:11:21,760
+And does the word business have to shift along the way, potentially?
+
+601
+01:11:21,760 --> 01:11:28,860
+Because we are caught, some of the stuff I'm seeing, that I perceive is this shift, we're in a transition state with a lot of stuff.
+
+602
+01:11:28,860 --> 01:11:30,560
+And that's a messy place to be.
+
+603
+01:11:31,340 --> 01:11:42,720
+And it's the students coming through high school, so early secondary students at the moment, the ones that I perceive are going to galvanise that change.
+
+604
+01:11:42,720 --> 01:11:47,240
+But they're hammering, it's kind of the equivalent of the glass ceiling for women.
+
+605
+01:11:47,240 --> 01:11:50,280
+They're hammering this stuff and they're chipping away on it.
+
+606
+01:11:50,280 --> 01:11:52,340
+It's concrete, it's not shifting.
+
+607
+01:11:52,340 --> 01:11:59,360
+And whilst the prevailing system, the prevailing infrastructure they're exposed to, does not model differently, they have nothing else to follow.
+
+608
+01:12:00,160 --> 01:12:02,320
+So it's not an answer, it's just a comment.
+
+609
+01:12:02,320 --> 01:12:04,620
+Because I live and breathe this every day.
+
+610
+01:12:04,620 --> 01:12:08,600
+And I get absolutely fed up with when I ask students, so what do you want to do?
+
+611
+01:12:08,600 --> 01:12:11,340
+I want to build this thing and I'm going to sell it for $5 million.
+
+612
+01:12:11,340 --> 01:12:13,540
+Only $5 million, okay.
+
+613
+01:12:13,540 --> 01:12:16,500
+By the time you finish your degree, you should be chasing $15 million.
+
+614
+01:12:16,500 --> 01:12:19,100
+Maybe I should, but you didn't get the sarcasm.
+
+615
+01:12:21,180 --> 01:12:24,300
+But that's what they're expecting.
+
+616
+01:12:24,300 --> 01:12:27,500
+That's what they're kind of brought up to do within the education system.
+
+617
+01:12:27,640 --> 01:12:29,340
+And don't get me started on the education system.
+
+618
+01:12:34,580 --> 01:12:36,280
+Okay, we've got a question.
+
+619
+01:12:39,780 --> 01:12:40,860
+Thank you very much.
+
+620
+01:12:40,860 --> 01:12:47,940
+A lot of what you said resonates a lot with some papers I've been reading recently, or radio programs I've been hearing.
+
+621
+01:12:47,940 --> 01:12:50,980
+And I can tell you about those later, or the names of them, some of you might want to read them.
+
+622
+01:12:52,040 --> 01:12:54,100
+But they merge into one another.
+
+623
+01:12:54,100 --> 01:13:18,320
+But whether it's collaborating with other people, or whether it's the polarization between people who strongly disagree, on one radio program, the person making the argument said, the two key things I think we need here is transparency, to be as transparent as possible, and to be as clear as possible in putting our positions as to why we believe what we believe, or why we want to do what we want to do.
+
+624
+01:13:18,320 --> 01:13:25,100
+Because without those, we don't really understand what's happening, or the power underneath of what's happening.
+
+625
+01:13:25,100 --> 01:13:34,100
+And if you don't give people as clear an idea as possible, as to why you think what you're proposing, all you can get is complaint, not a critic.
+
+626
+01:13:35,340 --> 01:13:55,860
+So and when it comes to mine, for example, I heard something on background briefing about how artificial intelligence, the algorithms, are creating type of dystopian, disfigured horror type woman coming up on the internet, who doesn't want to be like it, doesn't know where she's come from, doesn't know who's written the algorithm to make it be the way she is.
+
+627
+01:13:57,120 --> 01:14:08,460
+That there's just this murkiness and that links very much to who's controlling, you know, your monoliths and monopolies.
+
+628
+01:14:08,460 --> 01:14:24,860
+So I'm just wondering in terms of either values, being clear on our values, and how we try and put clarity and transparency into the platforms or into the social change we want.
+
+629
+01:14:28,820 --> 01:14:29,200
+Yeah?
+
+630
+01:14:29,200 --> 01:14:31,740
+Yeah, yeah, yeah.
+
+631
+01:14:31,740 --> 01:14:35,140
+I mean, I can just start briefly while they think.
+
+632
+01:14:39,280 --> 01:14:46,520
+From a housing perspective and from a commons perspective, some of the terms that I've been reading about is the idea of the prosumer.
+
+633
+01:14:46,820 --> 01:14:57,500
+So, making the user the kind of catalyst and the person who creates the solution and also is the one that then benefits from it.
+
+634
+01:14:57,500 --> 01:15:11,380
+And from a housing perspective, I think that that's really powerful because at the moment, we're getting dictated to by the speculative housing market, and people are just consumers in that relationship.
+
+635
+01:15:11,380 --> 01:15:29,980
+The other thing that I feel is a huge opportunity from a co-housing perspective is that people, they come together, even once they've moved in, they come together at least every month to have meetings with everybody.
+
+636
+01:15:29,980 --> 01:15:45,620
+And they all have to be really clear and transparent about what it is that they value, what it is that they want, how they're going to share their resources and pull their money for spending within their community.
+
+637
+01:15:45,620 --> 01:15:53,380
+And you're not allowed to sit back and not participate in the decisions.
+
+638
+01:15:53,960 --> 01:15:57,180
+You have to be an active member.
+
+639
+01:15:57,180 --> 01:16:04,760
+And so that means that you are involved in the decision and you're involved in the outcome.
+
+640
+01:16:04,760 --> 01:16:08,060
+You don't get that everyone else doesn't make the decision.
+
+641
+01:16:08,060 --> 01:16:15,320
+And then when it gets implemented, you get to sit back and go, oh, well, I thought that was a shit idea from the start.
+
+642
+01:16:15,320 --> 01:16:17,400
+You know, you don't get to do that.
+
+643
+01:16:17,400 --> 01:16:22,380
+You get to say what you think up front and everyone gets to discuss that.
+
+644
+01:16:22,380 --> 01:16:27,340
+And together, you come up with the best possible solution.
+
+645
+01:16:28,020 --> 01:16:32,680
+And no one's allowed to sit back and kind of just be the dissenter.
+
+646
+01:16:32,680 --> 01:16:38,680
+And I think that that's really powerful because then you reach a more sophisticated answer.
+
+647
+01:16:40,660 --> 01:16:46,520
+But you're also all then invested in implementing it.
+
+648
+01:16:46,520 --> 01:16:50,900
+And then together, that implementation can only be stronger.
+
+649
+01:16:56,500 --> 01:17:05,040
+Gohm is the person you're talking about, the phantom that the AIs create.
+
+650
+01:17:05,040 --> 01:17:07,080
+If people don't know about this.
+
+651
+01:17:07,080 --> 01:17:13,600
+So there's some AI system that just generates this.
+
+652
+01:17:14,180 --> 01:17:20,620
+When you ask it to picture a woman, it comes up with these horrific images.
+
+653
+01:17:20,620 --> 01:17:24,840
+Dismembered babies, this woman that looks like she's out of a horror film.
+
+654
+01:17:26,840 --> 01:17:28,620
+And people don't know what to make of it.
+
+655
+01:17:28,620 --> 01:17:29,980
+Because it's like, what's going on here?
+
+656
+01:17:29,980 --> 01:17:31,860
+Is the AI evil?
+
+657
+01:17:31,860 --> 01:17:34,820
+Is there a demon in the AI?
+
+658
+01:17:34,820 --> 01:17:38,540
+I actually think it's really cool because it's disturbing.
+
+659
+01:17:38,540 --> 01:17:40,980
+I think we need to be disturbed.
+
+660
+01:17:40,980 --> 01:17:43,460
+We definitely need to be disturbed about AI.
+
+661
+01:17:43,460 --> 01:17:45,660
+We need to be disturbed enough to ask questions.
+
+662
+01:17:45,660 --> 01:17:50,680
+We need enough of those contradictions to begin to go, what the hell is going on here?
+
+663
+01:17:50,680 --> 01:18:00,240
+And of course, there's a lot of, if you go down the layers of AI, AI reflects the cesspool of human thinking on the internet.
+
+664
+01:18:00,240 --> 01:18:09,660
+It's going to regurgitate some combination of something between Putin, Trump and the Kardashians.
+
+665
+01:18:09,660 --> 01:18:11,240
+You know what I mean?
+
+666
+01:18:13,580 --> 01:18:15,780
+And that's why it's so damn intelligent.
+
+667
+01:18:17,280 --> 01:18:25,820
+So I actually think, but more to the point, I mean, we, human beings are, we are technological beings.
+
+668
+01:18:25,820 --> 01:18:27,060
+We are technological beings.
+
+669
+01:18:27,060 --> 01:18:30,100
+We are, we don't, we don't create technologies.
+
+670
+01:18:30,100 --> 01:18:31,280
+We don't do technology.
+
+671
+01:18:31,280 --> 01:18:33,060
+We are technology.
+
+672
+01:18:33,060 --> 01:18:37,040
+You know, it's, it's hardwired into, into who we are.
+
+673
+01:18:37,040 --> 01:18:41,760
+And until we fully grasp that, we're not going to be able to take responsibility for our technology.
+
+674
+01:18:41,760 --> 01:18:49,480
+We keep on cranking out these technologies, you know, nuclear bombs and, you know, ancient orange and this and this and that.
+
+675
+01:18:49,600 --> 01:18:53,520
+And like oops, no, it's not oops, right?
+
+676
+01:18:53,520 --> 01:18:56,860
+We've been doing this for a couple hundred thousand years, guys, right?
+
+677
+01:18:56,860 --> 01:18:59,900
+So let's, let's, we need to learn, like, we need to learn.
+
+678
+01:18:59,900 --> 01:19:05,120
+This is a big moment, human beings, to learn what it means to be a human being.
+
+679
+01:19:05,120 --> 01:19:09,440
+And to, and to re, we have to reinvent ourselves fundamentally.
+
+680
+01:19:09,440 --> 01:19:13,300
+We, we've been pyrotechnical beings for 200,000 years.
+
+681
+01:19:13,300 --> 01:19:16,440
+Pyrotechnical, for 200,000 years, we've been pyrotechnical.
+
+682
+01:19:17,080 --> 01:19:21,840
+And now, the age is telling us, hey, guess what?
+
+683
+01:19:21,840 --> 01:19:23,580
+You're gonna have to reinvent yourself.
+
+684
+01:19:23,580 --> 01:19:24,960
+You can't do that anymore.
+
+685
+01:19:24,960 --> 01:19:25,840
+That's remarkable.
+
+686
+01:19:32,960 --> 01:19:37,380
+Thank you, such a great question, and brings up a lot of enthusiasm.
+
+687
+01:19:41,820 --> 01:19:44,060
+So I'm suppressing mine.
+
+688
+01:19:44,060 --> 01:19:48,360
+So I would like to, yeah, detail to everything you said.
+
+689
+01:19:48,360 --> 01:19:52,900
+I would like to interest you to a term that is not really talked about at all.
+
+690
+01:19:52,900 --> 01:19:54,580
+You said AI.
+
+691
+01:19:54,580 --> 01:19:56,940
+The term I wanna bring up is CI.
+
+692
+01:19:56,940 --> 01:20:00,000
+And I'm very curious if anyone could even guess what it would stand for.
+
+693
+01:20:01,120 --> 01:20:03,480
+We don't even talk about it.
+
+694
+01:20:03,480 --> 01:20:06,280
+I'm actually curious, like, you have guesses?
+
+695
+01:20:08,240 --> 01:20:08,800
+No?
+
+696
+01:20:08,800 --> 01:20:10,180
+Well, it's not what I have in mind.
+
+697
+01:20:10,340 --> 01:20:12,480
+It might be a thing.
+
+698
+01:20:12,480 --> 01:20:14,580
+Community does, I like that.
+
+699
+01:20:15,980 --> 01:20:18,100
+No?
+
+700
+01:20:18,100 --> 01:20:19,720
+Collective, I've got one.
+
+701
+01:20:19,720 --> 01:20:21,500
+Yeah, collective intelligence.
+
+702
+01:20:21,500 --> 01:20:23,800
+So not a new concept, obviously.
+
+703
+01:20:24,840 --> 01:20:29,140
+We have countless examples, evolution, bacteria over millions of years.
+
+704
+01:20:29,440 --> 01:20:32,440
+Everything I say is factually incorrect, probably, but you get the idea.
+
+705
+01:20:32,440 --> 01:20:42,800
+Learned how to, like, through quorum sensing, they figure out how many of them are there, and then when it's enough, they just come out and take over.
+
+706
+01:20:42,800 --> 01:20:50,660
+Then we've got wolves learning how to, you know, leverage on each other's perceptions and signal to each other, and then be humans using our noises.
+
+707
+01:20:50,680 --> 01:20:53,760
+And myths learn to work.
+
+708
+01:20:53,760 --> 01:20:55,960
+But all these take time.
+
+709
+01:20:55,960 --> 01:20:57,060
+Now we have technology.
+
+710
+01:20:57,220 --> 01:21:01,160
+We have internet, which is fascinating to me.
+
+711
+01:21:01,160 --> 01:21:03,000
+It didn't have to be this way.
+
+712
+01:21:03,000 --> 01:21:08,040
+We have one layer, one information layer, which we call internet.
+
+713
+01:21:08,040 --> 01:21:13,320
+It's very, very, very unusual that all of us are connected to one another in one information layer.
+
+714
+01:21:13,320 --> 01:21:29,560
+And we have a few young people who can use Twitter to actually announce when there's an earthquake in a place, a few seconds before the local authority in that place, by just reading the tweets of people, oh, is it shaking?
+
+715
+01:21:29,560 --> 01:21:31,980
+So this is how connected we are.
+
+716
+01:21:31,980 --> 01:21:35,660
+And I'm also an information architect.
+
+717
+01:21:35,660 --> 01:21:39,340
+I have also Terry from Linux, he's from Victoria and some other people as well.
+
+718
+01:21:39,880 --> 01:21:51,080
+We can have very, very sophisticated architecture when it comes to service, in the way they talk to each other, IoT, Internet of Things, all that is done.
+
+719
+01:21:51,080 --> 01:21:59,340
+We can simply enable us humans kind of bounce information amongst each other, and tap into our collective intelligence.
+
+720
+01:21:59,340 --> 01:22:05,780
+But we're not doing because I think it doesn't translate into share and assets and things like that.
+
+721
+01:22:05,780 --> 01:22:09,240
+I think that is a problem, but it's 100% feasible.
+
+722
+01:22:09,240 --> 01:22:12,740
+It's just more than feasible, it's not even funny.
+
+723
+01:22:12,740 --> 01:22:14,980
+So that's what I wanted to build on.
+
+724
+01:22:19,080 --> 01:22:32,580
+I was not going to say collective intelligence, but I was going to comment on the AI and the fact that it is that consolidated perspective and some of it is that cesspool that is in our imaginations.
+
+725
+01:22:32,580 --> 01:22:46,260
+But it's also that it becomes normative and that those images are out there propagated and continually pervade as a particular response within technology or a technology capability.
+
+726
+01:22:47,820 --> 01:23:10,460
+And that, as humans, we often just want to see that continue and we become arrogant about that use of technology and we don't consider the unintended consequences, which was your point about, we've been there and we've done this and we should have thought it through and we haven't and we keep doing stuff because it's what we know and we think will get it better the next time.
+
+727
+01:23:10,460 --> 01:23:27,720
+And that's what concerns me, that the world does have people who just don't take notice of history, do not see that we are repeating our behaviorism past and AI is really good at capturing that.
+
+728
+01:23:27,720 --> 01:23:29,400
+And so I'm same as Jose.
+
+729
+01:23:29,400 --> 01:23:32,060
+That was absolutely horrific, but it was awesome.
+
+730
+01:23:32,060 --> 01:23:33,320
+Did we do anything about it?
+
+731
+01:23:33,320 --> 01:23:34,520
+Or we'll just get it off the internet.
+
+732
+01:23:34,520 --> 01:23:37,200
+Did anyone say, or do we need to invoke that?
+
+733
+01:23:37,200 --> 01:23:43,460
+scotland's just released a policy document on the use of AI and ethics in AI.
+
+734
+01:23:43,460 --> 01:23:45,320
+And do we have one in Australia?
+
+735
+01:23:52,210 --> 01:24:04,190
+Well, I feel like we've just gotten into it, but it's close to closing time, and it's been fascinating.
+
+736
+01:24:04,190 --> 01:24:15,310
+And the image that will stick with me is a cross between the Kardashians, Putin and Trump, and that's why we've got these horrific AI images around.
+
+737
+01:24:16,270 --> 01:24:18,350
+Yes, yes.
+
+738
+01:24:18,450 --> 01:24:22,710
+That will stay with me, so thanks Jose for that.
+
+739
+01:24:22,710 --> 01:24:39,690
+Look, I'd really like to thank our panel, and as you can sort of smell a little bit, there's some food over there, which is here, and we've got a bar available, and most of our speakers, I don't think, will be running away straight away.
+
+740
+01:24:39,690 --> 01:24:47,570
+So there's an opportunity to continue the conversation you had earlier, also with our speakers over a drink and some food.
+
+741
+01:24:47,570 --> 01:25:03,270
+But before we wrap up completely, I'd just like to hand it back over to Basil, the patron of our cooperative, to maybe close with a few brief reflections on a really multifaceted conversation that we've been having.
+
+742
+01:25:09,870 --> 01:25:12,450
+This one goes to recording.
+
+743
+01:25:16,510 --> 01:25:26,710
+But I don't know about, no, I just, it's actually been extraordinary inputs, is that what I can use, that people have used?
+
+744
+01:25:26,710 --> 01:25:33,930
+It's, so for me to give a reflection is extremely difficult, but I'm going to.
+
+745
+01:25:37,030 --> 01:25:51,070
+I think the issue is, and there's no straight answer for that, going back to my classical thinking, because we're all trained in classics, is what is.
+
+746
+01:25:53,050 --> 01:26:02,270
+And all the statements that we have, have come from a particular paradigm of understanding.
+
+747
+01:26:04,350 --> 01:26:09,110
+And the speakers obviously illustrated their expertise in that area.
+
+748
+01:26:09,110 --> 01:26:17,690
+But really, the two things they were tossing all the time, I felt, were saying is, what is and what ought to be.
+
+749
+01:26:18,890 --> 01:26:22,350
+All the left and rights are from what is and what ought to be.
+
+750
+01:26:22,350 --> 01:26:25,190
+And it comes from that Western paradigm.
+
+751
+01:26:25,190 --> 01:26:28,310
+But we somehow still have to understand the world that we are in.
+
+752
+01:26:30,290 --> 01:26:40,350
+And one way of understanding that is, I think firstly, we have to understand, and I like the way to say, Jose, we have to understand what is it to be human.
+
+753
+01:26:42,690 --> 01:26:46,110
+And that's at stake at the moment.
+
+754
+01:26:47,250 --> 01:26:55,290
+Because that sensibility and sensitivities have been hijacked by all the things that have been said this evening.
+
+755
+01:26:57,830 --> 01:27:01,410
+The question, then, is, how do we start restoring it?
+
+756
+01:27:02,770 --> 01:27:11,430
+And for that to happen, I believe we need to extend this conversation and come to, I like the word, we come to a CI.
+
+757
+01:27:13,070 --> 01:27:15,270
+We have to understand it.
+
+758
+01:27:15,270 --> 01:27:37,150
+I learned that when I was in a previous life working with indigenous people, and I used to go every year to the Pitinjaric country and meet the elders, because they used to send a whole cohort down, that's like I was in Adelaide, and their role was, we were trying, saying how do they actually deal with government.
+
+759
+01:27:37,150 --> 01:27:43,370
+And there was this old elder there who cold-shouldered me.
+
+760
+01:27:43,370 --> 01:27:45,490
+I was there almost every year for five years.
+
+761
+01:27:46,710 --> 01:27:52,330
+And I thought I had broken some protocols of courtesy with him.
+
+762
+01:27:53,490 --> 01:28:03,850
+And then in my fifth visit, he called out, and he said, Basil, which actually is a way to pronounce my name, not Basil, I get Basil, but I don't mind.
+
+763
+01:28:03,850 --> 01:28:08,050
+I say my acquaintances call me Basil, my friends call me Basil.
+
+764
+01:28:08,050 --> 01:28:15,710
+Anyway, he said Basil, and I went up to him a bit thinking to get a real admonition.
+
+765
+01:28:17,730 --> 01:28:21,910
+And what he actually said was, has affected me deeply.
+
+766
+01:28:21,910 --> 01:28:27,790
+And what he said to me was, just remember this, you're ready to hear this now.
+
+767
+01:28:27,790 --> 01:28:35,350
+Just remember, we all are connected to one another and connected to everything.
+
+768
+01:28:36,930 --> 01:28:41,670
+To the mountains, to the trees, to the rivers, and particularly we are connected to every human being.
+
+769
+01:28:42,810 --> 01:28:48,050
+Yes, we are human, but we have to practice to become human.
+
+770
+01:28:49,330 --> 01:28:56,450
+And we can only practice to become human if we know how we are going to connect.
+
+771
+01:28:56,450 --> 01:28:59,410
+And in that connectedness, we will learn.
+
+772
+01:28:59,410 --> 01:29:01,970
+We will make mistakes, but we will learn.
+
+773
+01:29:01,970 --> 01:29:07,630
+And that's what I liked about getting the CI, that we have to own what we do.
+
+774
+01:29:09,930 --> 01:29:11,490
+It's easy to blame.
+
+775
+01:29:13,430 --> 01:29:17,530
+And say that if we have stuffed it up, we have stuffed it up.
+
+776
+01:29:17,530 --> 01:29:22,010
+But at least have the courage, what I call a collective courage.
+
+777
+01:29:22,010 --> 01:29:24,450
+And we start here with ourselves.
+
+778
+01:29:24,450 --> 01:29:34,270
+And just another reflection, I always believe that the great issues of our time have always been articulated as individual attributions.
+
+779
+01:29:36,710 --> 01:29:40,130
+For example, the work that I did for years and years was on poverty.
+
+780
+01:29:40,130 --> 01:29:44,430
+There was a tendency to say people are poor because of their individual attribution.
+
+781
+01:29:44,430 --> 01:29:49,070
+So in Australian terms, they are a bludger or a slacker or not the full quid.
+
+782
+01:29:49,070 --> 01:29:53,210
+And if you're from the country, you've got a few loose kangaroos in the top paddock.
+
+783
+01:29:54,230 --> 01:30:00,530
+But in actual fact, we know that poverty is actually to do with the systemic and structural nature of our society.
+
+784
+01:30:01,830 --> 01:30:06,550
+We know that racism is also that.
+
+785
+01:30:06,550 --> 01:30:11,190
+We also know that the gender, sexism, is also that.
+
+786
+01:30:11,190 --> 01:30:16,670
+And the question then is how do we start progressing?
+
+787
+01:30:16,670 --> 01:30:27,610
+And we can only progress when we listen to one another and start thinking, yes, the truth then lies between us.
+
+788
+01:30:29,450 --> 01:30:37,170
+And let us unravel it together and come to a conclusion to act.
+
+789
+01:30:39,130 --> 01:30:41,870
+And then let us act together.
+
+790
+01:30:41,870 --> 01:30:48,990
+And that's why I think collaboration, cooperatives, quintessentially means that.
+
+791
+01:30:50,210 --> 01:31:08,750
+And once we have grasped that, I think, to quote Bolton in his famous play, you know, we can clamour like champions if we have the spit for it.
+
+792
+01:31:10,010 --> 01:31:15,650
+So my friends and the wonderful presenters, thank you so much.
+
+793
+01:31:15,650 --> 01:31:22,210
+And Antony and Sonja and everyone here that have come, and particularly the friends that I know, thank you for coming.
+
+794
+01:31:29,650 --> 01:31:33,010
+And then I'll hand it back to our esteemed Antony.
+
+795
+01:31:33,010 --> 01:31:34,150
+Thank you.
+
+796
+01:31:34,150 --> 01:31:38,310
+Well, that was a beautiful way of concluding this evening.
+
+797
+01:31:38,310 --> 01:31:52,430
+Before we finish up completely, I would just like to mention that we'll send you some information out about a really fantastic opportunity that our cooperative has created with RMIT Forward.
+
+798
+01:31:52,430 --> 01:32:00,070
+So I mentioned at the start of the conversation, we've got a cooperative co-working space, so a shared space in the middle of the city.
+
+799
+01:32:00,070 --> 01:32:05,430
+We come together, we corporate members here, so we can run events here.
+
+800
+01:32:05,430 --> 01:32:08,430
+There's a space in the city and there's a couple of bursaries available.
+
+801
+01:32:08,430 --> 01:32:14,710
+So free of charge co-working in the middle of the city for the whole of next year.
+
+802
+01:32:14,710 --> 01:32:18,690
+The focus areas are for these bursaries.
+
+803
+01:32:18,690 --> 01:32:25,850
+People in midlife looking to change career direction, so that might be you or it might be something that you would like to explore.
+
+804
+01:32:26,670 --> 01:32:31,870
+And we're also looking at the future of social care, the way we care for each other in communities.
+
+805
+01:32:31,870 --> 01:32:37,430
+So it's broader than just health or aged care or veteran care.
+
+806
+01:32:37,430 --> 01:32:45,650
+It's really about exploring how we want to work together in new ways, through the co-operative model and other ways.
+
+807
+01:32:45,650 --> 01:32:50,490
+But the other part of it is you just get a great little office space, self-directed learning.
+
+808
+01:32:50,490 --> 01:33:02,130
+You can go any which way you'd like with that topic, explore it, explore with friends at RMIT and other members of the co-operative to build a better future.
+
+809
+01:33:02,130 --> 01:33:09,130
+We've heard from some great futurists this evening, and we've also had the challenge to act.
+
+810
+01:33:09,130 --> 01:33:19,610
+So check out those bursaries, and I'd like to again thank our speakers and our patron, and we can finish the discussion together.

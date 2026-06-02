@@ -1,0 +1,233 @@
+Hi, and welcome to Designing Open Democracy. I'm your host, Brian Koo, and I have here Alexa Pendashtan. And what we will be telling you about is, who is Designing Open Democracy, and what is it that we're trying to do here.
+
+Designing Open Democracy is an Australian operator forum for engineers, social architects, as well as philosophers, who are aiming to explore the ways that democracy can be applied in the technology, engineering and design of social systems like governments and organizations. We are non-partisan and also agnostic to any particular democratic innovations that are out there, because like there are so many people with lots of different ideas out there, and we want to get their voice out to the public and to see it implemented. And to also have a forum so that people of different innovation background and thoughts are able to freely express their ideas.
+
+And the organization called team members would be Brian Koo, Simon Glissnell, Nick Merage and Alexa Pindash. The area of focus in general for this organization is governance, structure, technology, sociological and economics. And in terms of governance, there are things like transparency, accountability that you have to address, because whatever voting system you implement can be potentially hacked and subverted.
+
+You have to find ways to account for that. In terms of structural, that ties into the way you do your governance, because maybe you want to be able to get to granularity, like to be able to have a government system that accounts for the difference in philosophies and culture between, say, the city goers and the country people. In terms of economics, some of the things that we will also be very interested in covering is cooperatives and how companies don't have to be necessarily structured in what I would typically call an authoritarian structure.
+
+So I want to pause here, two quick ones. We have a very good mix here, people here, very interesting based on the conversation I've had so far. If you look at these five vectors, I'd like everyone to think about two of these that are most interesting for them, even though all of them are interesting for me.
+
+But if you all can pick two, and I want to kind of get a raise of hands to get a feel of the room and what everyone is kind of interested in. Is that all right?
+
+Okay. So the first one, governance, raise of hands, two. Structural, two.
+
+Technology, three. Sociological, seven. And economics, we have three.
+
+Okay. So one, two, three. We had 17 votes, which means 10 people.
+
+Yeah, it's almost, we had, yeah, good. Roughly two votes. This is really good.
+
+So votes very quickly, results of the votes. We had sociological and the very top priority and the technology and economics at the tie. Good.
+
+Thank you. Moving on. So now you get a generous sense of the areas that we're going to try to cover as part of Designing Open Democracy.
+
+But we always have limited time. So in general, what we're going to be aiming is a bimonthly topic kind of process. And the four topics that we have opted to cover, which is open for change depending on feedback, is co-operatives, which is about economic democracy.
+
+And in terms of the expert we have for this is Anthony MacMillan, who runs Co-operative Bonds. Before you go on, especially for the sake of those who are just listening, so there are one, two, three, four major areas. And for every area, we have one key speaker.
+
+And there's going to be a following month when we're running a workshop, right?
+
+So for co-operatives that Brian just mentioned, we're going to have the main event at March. That's more of a one-to-many. We all listen to what an expert has to say.
+
+And of course, hopefully an opportunity for people to talk. But the following ones in April would be a workshop around that topic, which is co-operatives in this case, where we actually bring our challenges and what we're going to work on or helping others who are already working on a project related to that topic. That's the structure.
+
+Now moving on to the second topic. The second topic that we will be covering is on building a general democracy and the role that technology can play in it. Adam A.
+
+Jacobi, our expert for this topic, is the founder of MiVote, which is a technological solution to having a voting system on your app, which allows you to vote on what topic or issues should be passed into law in the government. MiVote was a party that ran for government last year. And so, what I will be asking him is to understand more about what has worked, what didn't work and what are the impedence in terms of getting acceptance in society for this kind of solution that he's proposing.
+
+Before we move on, very quick correction, MiVote wasn't a party. Flux is a party and MiVote works with independent candidates. That's their motto.
+
+We're going to hear more from Adam. And the month for main talk will be May and the workshop around that is going to be in June. The next topic will be about citizen juries.
+
+And the expert for this is Nicholas Groen from Latro Economics. A few years ago, we actually had a presentation by Nicholas Groen on what citizen juries is. And he will be coming back to us to elaborate more about citizen juries and how it's going and its future for over the next decade or so.
+
+But in addition, we also have Kimbra White from Mosaiclab. He will also be potentially be able to help us in understanding more about citizen juries as well. Any comment?
+
+Because we're lucky to have Kimbra with us today. So we've been running citizen juries in Melbourne since 2014. Nicholas actually sat in on the first one we did for the 10-year financial plan for the city of Melbourne and wrote a lot about that one that we facilitated.
+
+We've probably now facilitated over 20 of them. We've got three running at the moment. So it's becoming very common in Melbourne.
+
+Thank you. How do you become a part of that process?
+
+How do you become a participant in a process?
+
+Yes, a participant. You are randomly sampled of a database. And then once people have expressed interest, so you might hope that you get three or four hundred people to express interest, and then they are selected again to match the demographics of the area in which you are.
+
+So it's actually random, stratified random. So you can express your interest?
+
+Only if you, well, there are a couple of different methods of, it's called sortition. There are a couple of different methods for doing it. One is where a physical invitation goes out.
+
+Only those people who got the invitation can express interest, and that will be checked. You know, your address is checked. There's a second method that some people are using where you go out and you let absolutely everyone, you know, you just put ads out, you do social media, but you need to get hundreds and hundreds of people under that method to make sure you get the randomness in the next step when you're selecting, because you've got to make sure you get randomness rather than just the usual people who turn up all the time.
+
+What is this database that you mentioned?
+
+The most typical one used is Australia Post. It's an Australia Post database. There are others used.
+
+So it depends on the sponsoring organisation, because like if it's a local council, they might have, they will may, I mean, a rate space is not good enough because you won't get the tenants. But they might have a lot of councils will have a full list of all addresses in their municipality. So you address to the householder.
+
+Yes, address to the householder. Yeah. You could use a rate space and then you can address to a person, but then you're missing tenants and you'd have to find some way of picking up tenants.
+
+But there are people who are specialised in doing this, doing that sortition part of it. So, as you hear, the aspects of citizen juries is definitely interesting because there's a lot of technical aspects that comes to making a citizen jury that can be trusted by the public. I believe we also have another person, Willow, who runs a group called Coalition of Everyone.
+
+I would like to hear your story. Sure. Thanks.
+
+Hi. So, yeah, we're really interested in trying to help reboot democracy for the climate emergency specifically, and we don't hold citizens juries or citizens assemblies, but we're trying to create more awareness and education for the need for them to help create policy-led change. Yes, you've just been running a series of, you've been involved in a series of events.
+
+Yeah. We've had six on at the Centre for Living Festival, so it really was a month, and our main event, headline event last week was called Democracy is Not a Spectator Sport, and that was an interactive panel with Adam, actually, and some other people and a bit of experiential learning about how to experience highly facilitated deep democracy tools, and we've actually got another event next week, which is like a mock citizens assembly. So it's a two-hour event for people to experience, but a mini version of it.
+
+No, and we've never got it on media, but we should, but I can- So you like more publicity?
+
+Would you like more publicity around it?
+
+Yeah, the last one was sold out. Last week was sold out, but next week's not sold out yet. It's Thursday night.
+
+Where will people find about it?
+
+On the website?
+
+What do you say?
+
+It's on Eventbrite, and it's on our website. On our website. So the website would be- everyone.com.
+
+coalitionofeveryone.com. That's where you can find information. Yeah.
+
+So this is basically to hold tactical subject meta type, mock citizens' jury's experiences for people who are, ah-ha, this is what it feels like, because it is a little bit of a learning process. But see it to believe it. Exactly.
+
+You have to do it, then you get it. So that's part of what we do. And then that's actually my co-founder Sonia mostly looks after that.
+
+And then the part that I work more deeply in is, is the idea of a people's assembly, which I suppose is the community bottom-up approach, a community led change rather than policy. And people's assemblies are really just healthy co-design workshops. But we use deep democracy tools to help people be in a safe psychological space, to be able to access their creative minds and problems solve.
+
+And obviously, the climate emergency is an enormously huge problem and a slightly fraught one, so this is a good way to use these tools, I suppose. And the combination of the two things is how we're trying to help systemic change, bottom-up and policy led change as well. It's amazing.
+
+It's a very good application of a process that already is practiced in the society for a different kind of context that I see. As Kimbra was explaining, if you can go back to the previous slide, because we're going to have a workshop in August for citizen juries, I was already thinking of applications for this process, and you're on marks for this. This is great.
+
+So we can, after this, talk about collaborating on either we divert all our leads towards one of your workshops, or if you can actually help us run the workshop in August around it, that would be great, given your experience on it. Thank you. The final topic we will be touching on is participatory budgeting.
+
+Admittedly, I'm not a very well-versed in the concept of participatory budgeting, but from my understanding, it's about having a sort of a process of deliberation or maybe electronic voting, which allows people to define the nation's budget to where which industry needs to be funded, or the health care system, or the hospitals. Do you want me to say more?
+
+I would love to have your input. Is Kimbra speaking, yeah?
+
+Yeah. So participatory budgeting is... It would be lovely if it was seen on a national scale.
+
+I have never seen anyone do it at that scale or for a whole budget. It's really... The take up of it has been...
+
+It is about spending public money, and it is about involving community citizens, people. Sometimes we don't use the word citizens, because there's an assumption that they have got the paperwork. Also, using ordinary people to make a decision about where a budget is spent.
+
+It came out of Brazil. It's been taken up quite widely in Europe, particularly in the UK. There's been very little proper take up of it.
+
+There's not a lot of take up of it in Australia. In the UK, there's a very strong, and probably in South America, that people need to turn up to a place that you come along and as a group of people together, you look at all the different ways people want to spend a budget, and then you talk about that and vote on that in a face-to-face process. There is a tech version of it where it's done online, and that has had a little bit of take-up in Australia.
+
+So the biggest project I know is the Victorian government's pick-my-project process that happened last year, where community groups could... There was a bucket of money. Community groups could seek to get some of that money, and everyone who was involved voted on where the money should go.
+
+But it was an online process. Melville Council in Western Australia has been doing a project, they call the Robin Hood Project, probably from the last five to six years. That's pretty fascinating.
+
+So it almost sounds like that participatory budgeting doesn't necessarily have to be for the nation, but it could even be for, say, a charity. Yes, it's far more typical for... Most local councils have a community grants program.
+
+It is much more focused on topics like that. I haven't seen anyone seriously talk about budgets. Some people would say that the City of Melbourne's 10-year financial plan deliberation was a participatory budgeting process because it was a deliberation around a budget.
+
+I would say it was a deliberation, not a PV process. But, you know, it's definitions. You know, what's a citizens assembly?
+
+What's a people's assembly?
+
+You know, there's a whole lot of definitional stuff around this because people who really believe in the, you know, the people that, you know, are out promoting deliberation would say that, you know, it's got to be five to six full days of deliberation, you know, and if it's not that, you don't follow the deliberation. This, thank you very much, Kimbra. This, this reminded me, especially when you started talking about PIKI project, which I was aware of.
+
+Yeah. Very similar to a project that's called SUP, all in capital, it started from Detroit and started in Melbourne as well. Chris initiated it and the idea is that you all get to the whole SUP event, you pay 10 bucks and at the end, there are four pitches of community projects and everyone gets a vote and all the money would go to the winner, which is in a way, it's a similar thing, isn't it?
+
+Yeah, so you are aware of it, that's brilliant. I'm not aware of that one, but the Social Enterprise Cafe near the Donkey Wheel, I forgot what it's called. Kinfolk.
+
+They give money to charity and they ask you to put a bean in four different spots that they'd like their charity money to go to. Amazing. For similar sort of places.
+
+So for those who are listening to this, the question I had, other people may have this, would this also be related to these conversations around the way we collect tax all the way to the top and redistributing it?
+
+Would this also be related into rethinking that whole process?
+
+What do you say?
+
+Would be wonderful. Would be wonderful. You just got to get someone in political power to be interested as well.
+
+If they can be demonstrated that it's actually effective compared to... So that's the role for technologies and data scientists maybe to find ways to demonstrate the impact. To help communicate these kinds of concepts.
+
+Backed by data. So if anyone in the audience has a passion for that, we have some techies here. I can see.
+
+Welcome back. And the workshop for that is going to be in October. And there's also another organization that I'm going to be investigating for participatory budgeting.
+
+And they're called Bank the Table. I am not 100% perfect in terms of understanding who they are, but that's where I want to be able to reach out to them and have a chat and understand more about Bank the Table and how it works. Yeah, and they have a participatory budgeting tool on there amongst their technology suite.
+
+Awesome. And it's very well known. Bank the Table is very well known amongst the community engagement world.
+
+OK, good to know. Awesome. Do you want me to take you?
+
+This bit is about the aim for 2020. I'll let you free flow it. This is what I remembered we were talking about.
+
+This is out of our conversation. So there's a slide I'm looking at for those who only have audio. I'm also because in technology, we have to make technology products accessible.
+
+I'm aware of what's the vision impaired people. In this case, it's only audio, but it's become a habit for me to also explain. We all see it, but sometimes there's person in the audience, it's a good habit.
+
+So this is like... OK, so being inspired by what Brian has been trying to do the past two, three, four years. Two, three years.
+
+One of the issues that also in our conversations, we found out that there are different groups in Australia, that they're all doing amazing work, they're putting a lot of work into this, trying to innovate, and they all have their own ideas and opinions, not necessarily complementing perfectly well. So they have their own communities and they're growing. But as a whole, this whole community is really disempowered because there's no direct source of income or it's not clear how you're going to monetize it.
+
+The business model is not clear even though we can't think of things for this because we have large organizations that are little societies in a way. So if a democracy solution works, those are avenues they're looking at. But generally as an industry, we can't even call it an industry.
+
+So it's not financially empowered. What we thought was we brought the idea of a few of them and it was well received. The idea is if we can set up a foundation, not an association for this because an association wasn't an idea that they were excited about because it adds more work.
+
+Now, another democracy thing of democracy. You don't want to get to that. Whereas a foundation is not attempting to bring everyone on the same page.
+
+In fact, it's the opposite. We want to empower everyone in what they're doing because as a whole, we all need to be more empowered. And we thought a foundation would facilitate making this whole community one like a interface for this whole community so that it can financially interact with the rest of the world and receive funds and donations and having the basic legal foundation as well in place if they need to be a financial agreement, a contract, or if one of these groups that are doing some sort of experiments wants to engage with the research or conduct some research with the foundation, all these things become much easier and actually possible.
+
+Interconnectedness between actors and activists as well as... That's also something that we're not pushing for the interconnectedness with the idea of foundation. But of course, if it happens, it's even better.
+
+So that was the idea of foundation that I just covered. If there is any question, because this is not our strong idea, this is something that we have thought so far that might actually help. And as we shared with more of the community, it's being received.
+
+So if any ideas you have or if you see any flaws in anything I said, please bring it up because this is the best time for iterating on the idea before we actually start implementing it. And also one last thing that I want to mention, having a foundation also enables all the community to interact with similar organizations or groups outside Australia. It makes it much easier because if one of these attempts in Australia wants to reach out to another big entity, let's say in Europe or South America, it might not necessarily be the same level, whereas with having a foundation, we can facilitate those connections to be made.
+
+And also we can interact with the state and governments as well, having a foundation. And so these are things we are hoping to get there. This year, we'd like to get more organized in terms of how we run the events and having more products of our events, like this podcast that we're just recording, so we can have as much impact as we can, so that next year we can have even more effective programs for next year.
+
+So this year, it's more about bringing people together and letting the different topics be discussed and promoted and published as much as possible to establish a strong foundation for the next year. And we'd like to commit, Brian, actually, we'd like to commit to get a podcast out every month. Yes.
+
+But as we discussed, it's not going to be an absolute hard target. It's going to be just something that we'll put out as we can. And as you'll see in our podcast, we actually been covering different organizations.
+
+One of the last one we covered is Flux. And the idea is that this also ties us in terms of our website of helping to have a list of all the democracy organizations that exist in Australia, and as well as having a rate for people who want to contribute to understand about the organizations that they would like to contribute towards. Did that cover all the things that we discussed?
+
+I think that covers everything. And also one last thing. This is not a thing that we're doing and you are just receiving it.
+
+This is collaborative and there's no company or organization even yet. It's just a group of people doing what they can. And I saw Brian putting a lot of work in this.
+
+I'm trying to help Brian if anyone had anything so far that they think they can contribute or make a connection or introduction, this is one community, it's a flat structure. So I would like to hear from you guys. So these are what's floating in my head and Alexa's head.
+
+Do you have any inputs that you would like in terms of steering our directions or providing things that we should think about?
+
+What about, like, say, in terms of Kimbra with the Mosaiclab, is there any ways that we could help collaborate more effectively that we should implement as well?
+
+Oh, I'm not sure. Yeah, I don't know enough. I'm sorry.
+
+If you can see the psychology and sociology a bit, given that it's recorded, right, no one would make any comment because it would be more of a contribution. Well, then, let's just skip this one here. This will be removed, section.
+
+We keep everything. Because then they can claim that we have kept everything. OK, I'm just going to stop.
+
+I don't know. So you have any things that you would like to contribute to us in terms of ideas that we should direct ourselves towards in our aim for this year?
+
+Please send us a message through our email or through our website, or even better, through our telegram. What was the website again?
+
+designingopendemocracy.com. That's our website. It's easy to find and that should contain all our contact information as well.
+
+That was a genuine question. So finally, I think this ties in quite well to the final covering of this meeting, which is, how do you contribute to Designing Open Democracy?
+
+So do you have a topic that you want to present, or an effort that you want us to promote or get the word out of?
+
+Then you can reach us through contact at designingopendemocracy.com. Or even better, if you want to help assist in organizing more events and presentations, please get in touch with us as well. Aside from that, is there any final words you would like to give to the audience, Alexa?
+
+What's the last slide, because if I see it, I can have better confidence in not repeating. Trust as a concept. We're going to move into today's.
+
+That was very good. I'm actually very impressed by what you did now. That's good.
+
+All right, let's go with that. This is the end of the Designing Open Democracy introduction and who we are. Hopefully not the end of the whole Open Democracy.
+
+It's about to progress. It's the beginning and this is the premiere, as you called it. Yeah.
+
+Well, it's a premiere, but it isn't. It is. Yeah, for 2020.
+
+So let's hope that it actually starts flourishing. Thanks for listening to the Designing Open Democracy Podcast. I hope you get a good introduction to who we are and what we are all about.
+
+If you want to find more information about Designing Open Democracy, you can find us at designingopendemocracy.com. See you on the next episode.

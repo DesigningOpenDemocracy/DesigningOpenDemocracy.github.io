@@ -1,0 +1,599 @@
+Hi, and welcome to the first of a two-part series on Trust. For Designing Open Democracy podcast, I'll be your host, Brian Koo. A quick introduction to who we are.
+
+We are a team of process engineers, social architects and philosophers. What we aim to do is to help spur discussion as to the technology, engineering and design of social systems from every levels of society. On December 11th of 2019, we held an event called TRUST, a concept analysis.
+
+And the main speaker for this event was Alexar Pendashteh, who was previously the director of Open Source Industries Australia. Being a technologist, he's interested in the nature of TRUST, as well as how do you improve open source governance and coordination between developers and users of open source solutions. And this is what got him thinking about maybe creating a talk on analysis, amusing on the nature of TRUST, and how society conceptualizes and acts upon it.
+
+He will also be joined by guest speaker Andrew Kay, who runs a YouTube commentary channel called Angry Aussie. And just to make this channel a democracy channel, there will also be a audience participation component as well. For example, part of the audience includes cooperative policy experts, language experts, and a few others.
+
+You'll definitely find the contributions to be quite interesting. We would like to also thank melbournebusinesscentre.com.au, who without their help, we wouldn't be able to make this podcast. What they allow you to have in Melbourne is to have a physical office space as well as a virtual desk presence.
+
+So you may want to check them out as well. And some of the interesting topics you may want to pay attention to during this podcast is how tribal identity is still a big part of how we relate to society as well as the danger of fake news and how we could have other tentative models of trust in organizations like cooperatives. As this is a new podcast, we would be interested in hearing your feedback.
+
+Maybe there's somebody you want us to interview or maybe there's other topics that you want us to cover. Either way, we hope you enjoy this discussion. So without further ado, let's get started and remember to always think outside the ballot box.
+
+We shall generally guide you to the start of the conversation on why should we care about this topic. Alexar will tell you about what he felt when he was walking towards the recording studio. So approaching to the event, I was thinking, all right, this is a very abstract concept and we're gonna have people who care about democracy here and probably a bit of philosophy.
+
+I was thinking, why do I actually care about this particular topic and why is it a point of interest for me?
+
+So I'll just tell you a bit about that before I actually talk about, start the conversation about the topic personally. So when we learn about science, one of the things we learn is how from the quantum layer, the classic physics has emerged and how from the classic physics, like the physics, chemistry emerges, and then from chemistry, biology emerges, and how the interaction in a layer, when they are in a certain floor, they allow for emergence of the next layer. At biology, we have psychology, and now we are a big society of people, and we have societal phenomenon, which has emerged again from our individual beings.
+
+So what interests me is what kind of things can actually emerge from this layer?
+
+What are the things that we collectively can achieve or can experience that currently at the moment we're not?
+
+Because we're not yet in enough harmony. And the reason I am interested in these topics, even though I'm more of a technologist, and I'm in IT and a bit of a business, is I'm trying to understand the mechanics and physics of collective potential that we have, basically, to experience new realms, intellectual realms and spiritual realms that was brought up in conversations that we had a bit earlier before the event. So we're gonna talk about trust, and it's a concept.
+
+When I think about a concept, we can approach it in different ways. We start with defining it. This is what I'm gonna do.
+
+Start with defining it, and then think about why does it even exist?
+
+Why bother?
+
+Why do we need it?
+
+Where does it come from?
+
+And then we can think about what causes it, and what does it cause, or what does it influence, and what influences it. I think one of the aspects we recovered was where we were trying to figure out, like, how does trust get transferred?
+
+And I was thinking, like, maybe you could just simply tell a person that you trust this person, but that does not quite work that way, because there's an inherent, what do you say, like, inherent idea of who other people are that you cannot necessarily transfer as easily as, say, money. Yeah, basically, I don't know if that was what you meant. What is underlying trust is the perception, basically.
+
+So the whole trust is a perception game, and that's what makes it tricky, because you have to perceive the perception of the other person. So if we go back to where the trust comes from, as we understand, we are the dominant species at the moment on Earth, and what we understand is the key factor that has helped us get to this point is the fact that we could cooperate in a larger scale. And the reason for that is that we could form an alliance.
+
+And is that, does it make sense?
+
+Yes, yes, like are you referring to, say, like the difference between the nomadic tribes as under transition towards the farming civilization?
+
+Even far before that, the effective alliance where you can actually act as a group. Did that arise from language?
+
+That can be a very important factor. So, yes, I believe that's very important to communicate that and create abstract concept that you can anchor on. So let's say when you look at a pack of wolves, for example, if they have their own mechanisms to establish trust or even other social creatures, we have the ability to leveraging our language and the ability to understand abstract concepts and make it visible to both of us.
+
+So both of us can actually understand we both share a certain value or both we belong to the certain group. The tribe, all this, the ability to perceive and comprehend abstract concepts and communicate that it allows and has allowed us to form alliance. And that is a very strong force.
+
+We will protect the tribe rather than ourselves. Yeah. I think that's the evolution of trust.
+
+Perfect, exactly. So, we're talking about the forces and the leverage. If you are just two or three, if you are 15 of you, and you can actually, all 15 of you can act as one entity, coordinate it, that's extremely powerful.
+
+This is, again, goes back to emergence that I was talking about. When in one layer, things are harmonic, they can create magnificent forces in the other layer. When a group of waves can create a tide, if they are in sync with each other, and in engineering, we learn about resonance, basically.
+
+When you sync up a few waves or a group of events, you can amplify the force. That's where the age for trust has come, because we have built institutes or mechanisms, layer on layer on layer, on this core, which is the alliance, which is the trust. And that's why we, that's why trust matters, and that's where the trust comes from.
+
+If you have anything to add. Yeah, it made me think, I think I was always busy looking up while you were talking, because I wanted to get the terminology right. There's a concept called Dunbar's Number, proposed by British anthropologist, Robin Dunbar, who basically thinks there's the optimum or maximum number of people you can form a stable social relationship with.
+
+And it's about 150 people, and that's a self-organizing, self-sustaining number. Beyond that, you need something to strengthen the trust. You need rules or evidence or something.
+
+But there is that number that humans, and they've had evidence to support it, that humans sort of self-organize into groups of about that number, between 100 and 250. And once you start getting beyond about 150, you need something besides the one-on-one relationship for the trust to still be there. You need rules.
+
+You need some evidence that backs up. This is why I should trust, because we put something in place that gives me a reason to trust. Yes.
+
+So you're referring to, in common terms, an abstraction. Yeah, yeah. It goes from, I know these people and I trust them, through to, okay, this is too big a group for me to know everyone, but we've abstracted the concept of trust, and there are some rules and evidence-based things that's saying, okay, if it conforms to this, I still trust this group of 500 people.
+
+Bigger tribe. Yeah, yeah, it's a bigger tribe, and we agreed on the rules. And yeah, the bigger it gets, the more rules you get.
+
+Yeah. And that's where we are today. That's exactly right.
+
+And that's where we have to substitute trust with some other mechanisms, basically to hold the organization together. And that's where my interest comes in, because I find trust one of the most powerful tools. If you think of a company, right?
+
+In a company, when employees come together, normally trust is not what is actually fundamentally holding it. It is the law. And Noam Chomsky has a very interesting take on this.
+
+It calls organizations later dictatorship bubbles. When you think about it, Noam Chomsky, yeah, describes organizations like a corporates, dictatorship bubbles, like a bubble of dictatorship, kind of in a membrane of an organization. And when you think about it, what if I interrupt?
+
+Do you refer to like bubble of dictatorship?
+
+Could that include like say a company itself being like an item of a society in some ways?
+
+And like you could say that, god damn, my boss is a dictator, or like my boss actually listens to his group and tries to form consensus. Is that?
+
+It's not necessarily a bad word in this case. I'm using it actually very loosely. But the way a group of people, let's say a hundred people in a company, who belong to the company, go over there and all their efforts are coordinated to deliver a result, is not a result of them trusting each other or necessarily.
+
+There are other forces that has replaced this. And what I'm arguing is those are artificial and arbitrary. And of course, there has been good reason for those things that exist.
+
+But if we can replace those things, if those relationships can be based on trust and the cooperation emerges from the relationship with amongst the people, the result would be much, much different and more harmonic internally and with the external organization. And you can also see this with teams of startups, for example, when they can sometimes work much harder with much less certainty around what they get, but what allows them to deliver this result, whereas a team with a manager is very hard time, the manager would have to get the same, even 10 percent of that result from a group of employees, is the fact that what brings them together is not enforced by laws or their need, that they know what they want and also they trust each other. That's where the word trust becomes a bit abstract because I see trust as the perception of the other person's perception.
+
+If three of us are working on the same group, I perceive your perception of what do you think about me, and the stronger I believe, you also believe that I'm also going to stick to this project, I'm going to back you, you would back me, and then that reinforces itself. That's why trust is a bidirectional phenomenon. I think it sort of takes advantage of the concept that a lot of the problems in the world is not a zero-sum game, and that if everybody contributes, then everybody actually gains more than what they put in as long as everybody contributes.
+
+And in some ways, that also reminds me of how people try to subvert the game's show where you actually try to backstab each other by saying, I'm going to definitely try to screw you over. I think, I can't remember what's the game's name, what it's called. There's one of them.
+
+Survival. Yes, yes, yes. So, the prisoner's dilemma is a very, very common university topic that is covered in psychology and I think it's very pertinent to what we're trying to speak here as well because it forms the basis that a lot of people already know and we could explain more about.
+
+Yeah. No, you're sure. Yeah, we can.
+
+Actually, anyone familiar with that prisoner's dilemma?
+
+The prisoner's dilemma. Now we're into psychology. We've moved on from reality shows to psychology.
+
+Talking about survivors, one where a group of people are put in an environment usually in Ireland and it's like now survive and form an alliance and because at a certain point you have to vote one person is getting kicked off and the last person wins a million dollars. So, you form alliances and people sometimes rightly trust their alliance and sometimes are completely fooled by someone in their alliance, who's just doing machinations behind the scene. And at a critical moment, they basically metaphorically stabbed someone in the back who thought they could trust them.
+
+And as Brian pointed out, it plays into a common sort of philosophical discussion called the Prisoner's Dilemma. Yeah. That's very interesting.
+
+I like since we were talking about the way organizations work, I had three use cases to discuss this topic. That was one of them, and I thought I'd bring it up now as we on it. One of the things that I noticed, it can be explored through the lens of trust is we work, we come together in terms of companies.
+
+When you think about like a standard work agreement where you come and you feel in a certain time and then that's how much you get paid, and the way everyone's kind of coordinated, our work is coordinated in companies. I trace it back to the whole design, even though it's not framed that way, even though you don't see it, I trace it to lack of trust, to the intention of people or to the desire of people. And I want to explain this more because this makes it very clear for me, a lot of issues that we already see in the workforce because we have moved in the whole entire workforce.
+
+The majority of it has moved from the type of work that we used to be doing when we put this structure in place. We're still keeping these structures and mechanisms and terminologies and rules, even though the nature of our work has changed and what we do. So the way I see it, the whole work structure is designed based on the assumption that when I go to work, I resent it, I don't like it, and any opportunity I get, I would choose it not to go to work.
+
+And every process is put in place to make sure I deliver enough for the business before I run away. I'm exaggerating a lot here, but you can trace this in all terminologies, the language, the rules. So this is a fundamental problem because we are undermining what can allow us to come together and to help us tap into our collective intelligence or collective potential with designing our workforce in an entirely different way based on the lack of trust.
+
+Andrew, what do you think about this observation?
+
+Because this is just an observation that I've had about the design of the way we work. Yeah, I mean, I think trust in a workplace is we collectivise action often because it's like if I act alone, I have to just trust everyone acts in my interest. But if I get everyone to work as a collective, then we have more power and I don't have to trust as much.
+
+Like, you know, bosses trust workers are going to do work and workers trust that bosses are going to give them decent conditions and decent remuneration. And in a significant number of cases, that all holds true. But yeah, then you get the case that when that trust breaks down, when someone breaks that trust, how much does the other party involved react?
+
+And, you know, do you still continue to cooperate and trust and go, well, maybe it'll be better next time?
+
+Or do you go for payback on the person that you feel broke your trust?
+
+And also, the other thing about the trust, that also it works here, because you see that there's a lot of process and elements to kind of respond to you when you are not acting trustworthy, in a trustworthy way, automatically it makes you not trusting back. And it makes you want basically to contribute less. And the more organization, the more the bigger the organization becomes, the more trust is substituted by more arbitrary and artificial forces.
+
+And that's where a lot of issues come from. That's the reason I'm very interested in this particular topic, is that there are alternative ways to coordinate workforce. Hi, this is your host.
+
+I hope you're enjoying the talk so far. Some of the interesting corporate structures out there are corruptives. And as luck would have it, we have Anthony Magmulley in the audience, who is an expert when it comes to corruptives, as we will find out soon enough.
+
+I suppose when you have... There's two forms of employee ownership. So there's a...
+
+You can be in a company where they have broad-based employee ownership, so usually through shares. And often that acts as a real incentive for people because they haven't just got a sense of ownership. They do actually have an ownership stake in the business that they're working in.
+
+So that's sort of one level. And then with worker cooperatives, this is sort of the spectrum. With worker cooperatives, you generally have that ownership stake, but you also have a set of principles that are around people working together democratically.
+
+So then you have to figure out those sorts of issues that you mentioned before about the dumb bars or one of those sorts of things, you know. Because you can't have everyone in the room making decisions for absolutely everything all the time. So how do you actually structure teams and groups and people to have responsibility and then being democratically accountable?
+
+So I suppose one of the key things that interests me is the relationship between shared ownership and democracy. You know, because you could have a regular company that has a regular ownership structure by external shareholders with the board, the CEO having an actual ownership, the state having its shares and the rest don't. You can have democracy within that, but if you don't match the democracy with the ownership, like that to me presents some problems.
+
+So that's where economic democracy, I think, comes into it. Not just formal democracy. When you're talking about the governance, right, when you talk about democracy, the governance aspect of the organization.
+
+Yeah, there's the governance. So you could have a regular company, though, where everyone has more of a say. But if you've still got a small group of owners, and most of the owners who are external to the business have nothing to do with the business, don't work in the business, their interests are to that this business is as profitable as possible, so they get a return on their investment.
+
+Whereas in a worker cooperative, generally speaking, it flips it. So the people who are working in the business have an ownership stake in the business. And so they want to be able to work together, make decisions together, but they also know that, for example, if there's a profit share arrangement that's equitable, if this company goes really well, we're going to all do well on an equitable basis.
+
+So I think the sort of the, like, we sometimes move democracy, we kind of think of it as something apart from things like ownership rights, whereas I think we need to think about those two things in tandem. That's what interests me about working for one reason. There's some good examples of them globally, but it's not a widespread thing.
+
+Well, that's the approach that we're taking within our democracy, actually. We're going to have the working court. So the idea is that every, technically speaking, every single person in the plan would potentially have an equal financial share, one share only non-saleable, so it's not volatile in that sense.
+
+But take that true democratic approach where we've all got equal say, where we've all got equal financial responsibility involved. As you were saying before, when you've got a board of directors, that potentially undermines the democratic system that you may have sitting within the organisation itself. Yeah.
+
+So essentially, it's all third-carrying. Yeah. In a workers' cooperative, the members' workers will elect the board.
+
+The issue you have, though, if you just have one share per person, it's not transferable. And you do have that within co-ops as well, but you can... Someone could get more, purchase more shares, and you can have some...
+
+Like, you've got investment in a business or an enterprise is always a tricky thing, and that's a real issue for the co-op movement as well. So, I hope that helps the conversation that you're having at the front. Sorry, can I just ask you, so are there co-ops in Australia, or somewhere where some members have more shares than others?
+
+Yeah, so, I mean, look, I'm a bit techy with this stuff, but in a co-op structure, you can't have more than 20%. No individual member can have more than 20% of the issued share capital, but the thing with a co-op is that no matter what, it's one member, one vote. The difference between a co-op and a company is that the more shares that you own in a company, generally speaking, the more votes that you have.
+
+So it's really more of a device, within a corporate, generally speaking, is investment from the people that work there. If they've invested more, then in proportion to the effort that they've made, the value that they've created, on an equitable, agreed basis, they may get some extra financial compensation. And a business does need investment, and often it's gonna need external investors as well, which is a real challenge for co-ops.
+
+Because you wanna keep the external investors away from the decision-making process. So anyway. I hope Anthony McMillan's explanation about co-opters was enlightening, as well as the complexity that comes in terms of maintaining its own integrity.
+
+We then switched topics from co-opters towards how do parties maintain their own integrity, especially political parties. So one of the things we were talking about was especially about this event called the American Southern Strategy. That also reminds me of what makes a party a party.
+
+If somebody goes into floods, a particular party with their own members and essentially takes over, then is that really the same party?
+
+The key things I would mention in terms of the event is in America, there's this thing called the Southern Strategy. If I remembered where all the great big swap, where the parties of the Republicans and the Democrats essentially swapped ideology. And it's really weird.
+
+I'm not sure how to elaborate on it. Broadly, like civil war, the Southern States were Democrat. They, Lincoln was a Republican.
+
+The Republicans were the Northern elite, the intelligentsia. The working class South were Democrat, racist as hell. The North was racist as hell too, but they kind of started to draw the line at actual slavery.
+
+And so that was until the 20th century. And Democrat policy started to shift more towards progressive social justice things. And the Republicans saw themselves losing power.
+
+And they went, hey, you know what?
+
+There's a bunch of angry white people in the South. If we went down and panned it to them, we'd win all these previously Democrat states. And it worked.
+
+And in fact, the president, Lyndon Johnson, when he signed the Civil Rights Act, he was reported to have said, that's it, we've lost the South for two generations. He did it because it was the right thing to do, but he said, that Republican Southern strategy is going to kick into high gear now, and it will take us ages to make the ground back. But yeah, it is literally weird.
+
+At one point, Democrats were the South, and were very popular with the racists. The Republicans were the North, and were most against slavery. Somewhere in the 20th century, it just went, and it's swapped.
+
+You're quite knowledgeable about the Republican Party. Yeah, so you're quite knowledgeable about the US and the Republican Party. I'm a little bit obsessive about it, yes.
+
+Because I'm the oldest person here. And so I do know that maybe 20 or 30 years ago, there was at least a small group of people within the Republican Party who were quite left-wing. Are they still there?
+
+Well, there are certainly people in the US. Republican Party who I would regard as thoroughly decent people and care about those less well off than them. And you could argue they're progressive on a number of things.
+
+They just probably are economically a bit conservative. They don't agree with massive welfare programs, necessarily or not. They're just not dictating policy and haven't for a couple of decades now.
+
+I think the group that I'm thinking on is probably just at the end. I think there's definitely reasonable people in the Republican Party. I'm talking about people who are quite strongly at that point.
+
+Well, look, for instance, one of the Democratic presidential nominees, Elizabeth Warren, started off as a Republican. She thought she believed Republican ideology more, but as they shifted further and further to reactionary policy, she just went, I'm not on board with this anymore. And she actually fit to the Democratic Party.
+
+I suppose in our own country, we could reflect on the history of the White Australia Policy and how that was not always a so-called right-wing conservative cause. There's very deep relationship between the labour movement and protectionism, and some of that kind of economically-driven policy in that area, which just makes the whole thing very interesting and complex. But it's also back to your point, sort of around the tribalism stuff, you know?
+
+Like I was reflecting today, I saw a Twitter thing where some racist people were tweeting out about a fire at one of the stations, one of the train stations. And all the comments were, well, of course, they're those lovely African people and really horrible kind of comments. You sort of wonder, you know, what's the tribal things that is?
+
+Because there's this good tribal trust thing. And then there's this other thing where they're kind of different from us. Yeah.
+
+I love it. You love tribalism?
+
+No, I love it when there's, I think the term is cognitive dissonance, when people get an acute sharp moment in their understanding, their beliefs, which is flipped, yeah, flipped upside down in an instant. And you can actually, I watched Lee Sayles one time when she was interviewing a liberal party politician discussing immigration. And the current discourse was that anyone who was against immigration is a racist, or wants lower levels of immigration is a racist.
+
+And you could see, and I forget who her guest was, which politician, but he very eloquently phrased his arguments in different terms. And you could see that moment where she went, fuck, it's like, and her whole world, as she knew it, was flipped in that millisecond. And it's fascinating how it can, what you were saying before about racism and the blacks getting votes.
+
+I'll bet you there were millions of people around Australia who had their moment, their split, their awakening moment, which is, you know, when they realized that, oh, blacks weren't lazy, violent drunks, that they actually had a brain. And, you know, and then I find that, you know, that's profound and, you know, we've sort of gone off on a tangent here, talking about conceptualizing and philosophy in a way. But, you know, that's really, like getting to the heart of the polarity in US politics.
+
+And you were talking about there are Republicans that are very left-leaning, broadly. Yeah, I mean, you get those moments, and politicians flipping sides. But, you know, we need to remove sides.
+
+Like, sides are stupid. They really are. Like, but calling yourself left or right is so ludicrous, because there are a million issues that make up someone's reference, and who they are, and you could get a so-called lefty and a so-called righty agreeing on ten things out of fifty, that they were, you know, but it's all maybe on five hundred things out of ten thousand things.
+
+It's much more complex than that. You're calling yourself a lefty or a righty. This is, this gets into topic of identity, group identities.
+
+So it's not that easy. Tribalism and tribalism. Yeah, but it's not, it's a very, it's also a natural thing because we, to form alliance and to be able to act as a bigger group of people, to have influence, you need to be able to identify as a group.
+
+You need anchors, you need words. You need to be able to, in the past, traditions or religions would serve that purpose. So you would say, I'm Jewish.
+
+You're Jewish, that's it. So I know I can back you. I know what kind of things you are, what kind of, I mean, as an entity, what kind of, I can build my perceptions about your values, your reactions, interactions, and what I can expect happens.
+
+It's reliable, right?
+
+So as we're losing that, we are subconsciously, I believe, in this society, we're trying to find those identities that we can grasp on, right?
+
+And identify as. And that's true, if we could all talk about complex topics all the time, that would be perfect, but it's not how things actually happen. This is the challenge, I would say.
+
+This is the challenge, because... Social media, I believe, and technology, and the information age, I believe, has played a big part in the shift towards polarizing in belief. And you're saying that we've...
+
+I totally agree with you that we're floundering, and people in the information age are looking for a new structure, but they haven't realized it yet. I'm not suggesting, looking from outside, what I'm seeing is that people would need to identify as a group, and this is their way by leveraging on words. And then it's flawed, right?
+
+And this is where the actual issues come from. When we were talking about Republicans, it just was very interestingly related, you know, as like the whole impeachment is happening. The fact that Republicans have managed to stay united, right, regardless of what the topic is, right?
+
+They're around one thing, that we're all Republicans, we're gonna stick together, regardless of what the argument is, right?
+
+That's their approach. And this is what I'm talking about. This is now, again, trust is playing out because they all need to trust the fact that none of them is gonna kind of split, because at any point, the whole thing may collapse.
+
+And the sooner you leave the camp, the better it is. But if all of you trust each other, you can actually stick and fight back, regardless of the arguments, and regardless of how bad the evidence is against you. So can I ask you, do you think that the Republicans have trust in each other?
+
+I'm just looking from outside. I think they don't trust each other. When I see there is no vote from Republicans, zero vote from Republicans, to me, it means and there is no argument again.
+
+Yeah, it's very, very cohesive, basically. This is what I see. And I'm not suggesting it's good or bad, but what I'm seeing, the group dynamic that I'm observing, relating it back to this topic, that it's also, I also want to relate this to other situations where there's a perception, the whole trust is perception, I think we all agree on this.
+
+The perception starts breaking, and all of a sudden the whole thing flips. This can also happen here, and we probably may see it. An example that I remember was when in the financial market around 10 years ago, when there was a rumor about Greece getting loaned from the EU, which wasn't true, but that caused the whole euro to fall very badly because of the rumor, because that was an example where the whole alliances were built on some fundamental assumptions or perception that when that gets shattered, then everything starts collapsing.
+
+And with this left and right, we also see that. And the trouble with that is the recovery is not that easy. So once a concept like left or right gets, once you have always been kind of identifying as a group, and then when you lose it, it's not easy to just go to a different camp.
+
+I'm not too sure if this is relevant directly to the point, but it reminds me of Penny Rong. And the fact that, you know, Penny Rong is known as being a pro-LGBT. But like when she was in politics at that time, before the gay marriage debate, like she was pretty much saying that she was following the Labour Party line of no gay marriage.
+
+And I think during a Q&amp;A session, there were one of the person was saying, we know you're not this person, like Labour knows you're not this person and et cetera. So what's going on here?
+
+And so there's this aspects of a party is not really a one dimensional kind of ideology, but actually made up of lots of different kind of ideology. But then this need of presenting a unity, because otherwise other party may try to attack you and break the trust in that sense. So is that important?
+
+I would say what I, cause people often bring that up. They say ridiculous things about Penny Wong. She's a lesbian and the same.
+
+She was anti LGBT rights because she towed the party line. What I honestly think was happening there, that's when Julia Gillard was prime minister. She was under attack on a hundred different fronts.
+
+Most of them quite unreasonable. Some of them were probably quite reasonable. And there was the bubbling up of, should we be pushing for marriage equality?
+
+I honestly, and Julia Gillard was an atheist. Julia Gillard has no objection to gay people or gay marriage. She just doesn't.
+
+But I honestly believe she just pulled Penny Wong into a room and said, I can't have another cultural battle. It'll destroy us. I'm barely holding on.
+
+I've got a minority government. I just can't do it. I need you to basically support policy that says you're less than human.
+
+And Penny Wong, my god, she must be the most loyal person on the planet, because she said, I'll support the party line. I think it's obvious. It's the opposite of what she wanted, but it was just a really harsh political environment.
+
+And she put party needs above her own, which is wild, but she did. Why is it a strange thing?
+
+Because it's just a matter of timing. Gay and lesbian marriage was coming. It was just a matter of time.
+
+True, but it put, for many years, put Penny Wong in the position of having to repeatedly say, I support a policy that by definition regards me as less than other people. And she never blinked. That's a degree of loyalty that I, I, I, whoa, it's just literally that the policy that say you don't have the right to do this.
+
+It's saying you deserve less human rights than other people. That's pure, pure tribalism. Yeah, that's hardcore.
+
+I am going with the tribe over my own short-term needs. And that, that was amazing. I don't think it's the sort of thing I can do.
+
+That's a really interesting thing here, because like I think initially the tone of our conversation initially was that tribalism is bad. Well, yeah, it's, as you say, I think in almost any system, the good points and the bad points are the same thing. It just depends how they go.
+
+A tribe is loyal to each other. That is good. A tribe can end up being loyal to each other in a way that flies in the face of logic or decency that is bad.
+
+I looked something up because I wanted to get it right because it was reasonably complicated. And someone talked about it. And they're talking about America.
+
+They're an American talking about the rise of tribal epistemology and epistemology is a branch. We're back into philosophy. It has to do with knowing reality, coming to know reality and accepting things as true and reality.
+
+And what this person is saying that their view, tribal epistemology is when the tribal bond rejects actual epistemological principles. In fact, you stop trying to find an objective truth because it could weaken the tribe. And that's where you see the thing.
+
+It's not limited to the right and the extreme right. It's not limited to the US, but you really see it in the right and the extreme right, in the US. The actual rejection of&#8230; Oh, I love that.
+
+Oh, yeah, no, no, no. That's what I was saying. It's not limited to&#8230; But you see it in a really pronounced way in the US, in the extreme right, an aggressive rejection of facts.
+
+Or what about the impeachment?
+
+Support of the impeachment process. I mean, that's a&#8230; Well, that was actually the trigger of this. Yeah.
+
+It's a pure example of the left being blindly supporting something that's wasting so much national time, and possibly, and so many other US issues should be being debated in Congress at the moment. And they're just devoting so much time. Like, that's, you know, where I sit.
+
+But, I mean, but everyone else, you know, so many things is being swept under the... I mean, Trump, I don't like Trump, but, but, you know, the, basically, the entire political system in the US is dysfunctional, and it's the same with the British system with three years of Brexit debate. I mean, basically nothing else was debated for three years.
+
+Yeah. I think this all makes good sense, because... Well, let's not get it all.
+
+Vladimir Putin saw the largest country in the world being smashed to pieces by a tiny handful of people, backed by foreigners, and his thinking is, well, if you're going to smash my country, I'll smash yours. And he's doing a damn good job. And in the US is he?
+
+Well, you found those, your sort of fake Facebook pages, but they were both extreme left and extreme right because the people behind them said, if I start a fight, it doesn't matter who wins. The fight weakens the people who are fighting. And that to me was the most fascinating thing in that.
+
+But I mean, you're not wrong about the time-wasting in US politics. I'd argue they'd still be wasting time if impeachment wasn't up to the point. Well, it's a huge failing in the system, then.
+
+If politicians are spending so much time fighting in an adversarial political system. So what I'm, like, this is, I'm observing all this. It's very interesting.
+
+Now, the question for me is, I can see to be effective, the bit of a tribalism sounds like it's working, whether it's good or bad, right?
+
+Depends on what you're looking at. But you need to make compromises. The examples that you made, they're compromises.
+
+And so there would be a big group of people paying the cost for those compromises. And because those are those compromises, those whom their principle is against those compromises may choose not to form alliance or contribute, which weakens them, basically. This means, let's say, collectively, let's say in Australia, there are complex subjects.
+
+And but because there's all these differences, and we don't necessarily want to compromise on any to form alliance, make a big group, there's no big group that is effective. And we're left with smaller groups that make all the compromises, but they're effective because they're tribal, right?
+
+So the question is, or the challenge is, how can we kind of get out of this situation?
+
+Or what kind of approaches we can have?
+
+So that there wouldn't be no compromise, or less compromise needed to be made, to allow a larger group of people to lift an issue off. You know what I'm saying?
+
+Well, I think you need a different structure. What would that help?
+
+Because at the moment, I may agree with you on something, but not agree on the other thing. And because we can't find any board, I wouldn't identify with you in a certain group. And both of us get disempowered.
+
+So we had an example of different groups, if you can bring it back, if you may. Oh, yes. Different groups are working on democracy.
+
+These groups are collectively, in a way, in a minority of those who are actively trying to change things in a good way. So logically, they all need to be together, have one voice, to push this big stone, right?
+
+But what actually we see happens is that they get into internal arguments, because at the moment there is no one big word that everyone can strongly identify. This is just an observation. Whereas those with much less, let's say, valuable principles or honorable principles, because they are, they choose to identify, they choose to make compromises, and they identify under one banner, that gives them power.
+
+So the question is, Power, power. Power. It's all about power, because that's the- Just a note for the- Tribalism is about power.
+
+Just a note for the audio. What is referring to by the group is groups such as Secure Vote Horizon State, Neel Vote Policy and Comparative Flux, My Vote, Neel Democracy, and us, Designing Open Democracy. So this is the challenge basically.
+
+How can we, without needing to identify as one thing, even though there are different approaches, find one thing that brings all of us, in this case, together, and act as one entity and still be effective. Why not needing to compromise on any of your values?
+
+To me, that's the huge challenge. This is the challenge. So this is, okay, I'm getting excited now because this is where philosophy becomes very interesting for me, because by understanding...
+
+So I may not be able to express myself very well, especially in one too many settings, but when you actually analyze how a concept like trust comes to be and influence and gets influenced, then you can actually find those triggers in the system that you can influence, and you can solve these issues in a systematic way. Or set up the environment for the solution to emerge, right?
+
+It can be. Once we understand philosophically how things come about, because we did that in science, so we discovered electromagnetic fields, then we had a technology, let's say wireless Wi-Fi, and now we have the actual appliances that we're actually using it. Step by step by understanding, then we manage now to capture that power and use it for ourselves, basically.
+
+This is the flow that I like to see. If I may, I just thought of an example that I think would resonate with this group, of the way the philosophy kind of helped. Cooperatives, I think we have two people in cooperatives.
+
+Farmers cooperatives apparently are not that successful. My grandfather was a farmer, so I'm a bit familiar with the concepts, but then I was not into any of these things. But I'm a bit familiar with these concepts.
+
+And I looked at it once, and there are a lot of research and books about why cooperatives fail. Because like a very, very quick background, the supply chain of food agriculture is huge potential to exploit farmers, right?
+
+Because they're desperate, they're very uncertain industry, they're desperate for cash flow, and you can buy a head with low money, right?
+
+And you can exploit it by misinformation and them being separate from each other. Cooperative sounds like a perfect match to fix the problem. That reminds me of the $1 milk, real worths and coals competition.
+
+Yeah, there was this competition between real worths and like coals and other super market, but I understand to try to like beat each other in terms of milk prices, and it's impacted a lot of like our milk farmers. Impacted them. Yes, right.
+
+Drove the prices right down to basically half, in real terms, half what they used to be, like a dollar a litre. So the pressure was put on the farmers, as I was saying. You need to, and it was the big two, because they're the only ones with the market power to do it.
+
+And they basically said to suppliers, sell it to us for cheaper, sell it to us for cheaper. And basically all of the smaller dairies said, we can't stay in business. I think there's a couple of mega dairies that are supplying the supermarkets.
+
+But in this case, milk in Australia used to essentially be a cooperative. It's communism, basically. The government controlled the market.
+
+Dairy farmers were paid a set amount, no matter how much or how little they produced. That's most of the 20th century. Australian agriculture was virtually a cooperative in as much as everyone.
+
+I think wool worked the same way. The government would buy all the wool from the wool producers, and they would stockpile it, and they would guarantee a certain price. And if the overseas demand for the wool wasn't high enough to pay the price, they would just stockpile it.
+
+There would be warehouses full of wool. That would be the wool board. The wool board, yeah.
+
+And it got too volatile. They said, oh my god, we've got like 20 years of wool stored up, and we're having to use taxes to pay the wool producers to keep producing. But economically, it makes no sense for them to do that.
+
+Because the market forces are not playing out naturally. And that's it all started to fall. And it was the conservatives who did it.
+
+The conservatives pushed to break this up and just broke capitalism. Whereas, you know, most of the farmers vote conservative, but it was the conservative parties who broke up these. They were really cooperatives, but they kind of sort of were.
+
+They were certainly really large cooperatives. And if we look in Victoria with milk, and there was a fixed price for milk. So once you remove that, there was a fixed price for milk.
+
+Yeah. The government, then the cooperative. They just said, dairy farmers will be paid this set amount, no matter what.
+
+And so dairy farmers are like, yay. That also worked in terms of having this really large cooperative for the most part. And so you had that fixed price, and then that went, and then you had this sort of price war.
+
+It's interesting when you look at all of us, West Farmers was originally a cooperative, so before it was sort of sold off. So you would have had the farmer's interests more at heart. So that goes, and then that particular cooperative, Murray Goldwyn, took on a lot of external investment that wasn't members, and they wanted to return on investment, and they made some risks.
+
+They took some risks internationally, and so you had a whole bunch of problems there. But I think one of the really interesting things that I think, well, this sort of conversation and something like, is back to that prisoners dilemma question, because you've got a whole bunch of people that do business together for the common good. That means at different times, you'll have winners and losers living in that group, and you've got to feel comfortable with losing short term, having a long term gain for everyone.
+
+That doesn't really sit well with the rest of our economy, and it also doesn't always sit well with our human nature either. Like, I think the scientific experiment of getting monkeys to choose, like Gamble, found that essentially monkeys hate losing more than they like winning it. But with the Prisoner's Elimination, correct me if I'm wrong, is that you've got two prisoners, that if they stick together in this difficult situation, they'll both get a sentence, but it will be really low.
+
+If one breaks ranks, there's a chance that that person may get off scot-free, and the other person will get a much higher sentence, and vice versa. But they can also rat each other out, where they'll both get a really high sentence anyway. Whereas if they'd agreed to cooperate, they would, you know, they'd get a slightly bad deal, but it's kind of this median basis.
+
+Yeah, that is basically it. On a larger scale, like in a cooperative, people are going like, okay, if I trust that everyone, and this is coming back to trust, if I trust that everyone is working in my best interest, the reward won't be up here, but it'll be here. But if I turn on them, my reward will go here.
+
+But they might turn on me too, and then we both lose. And so, but a lot of studies on the prisoner's dilemma has shown that humans, you could argue that rationally, you should screw over other people, because it's the best chance or the most reward for you. But in practical terms, most people actually act cooperatively.
+
+Yeah. Well, that, that, well, when you bring it in a case, you may have that trust. So it's not objective mathematical problem anymore, because if you have that trust, that's what the reward is.
+
+Yeah. And the more, the more people trust, the more they act against what could be regarded as their own self-interest. Because they're not maximizing the return, they're just going, no, no, I trust the other person.
+
+But you get burned a few times, trust goes away and everything falls apart. And then, and then the, the, in theory, very good solution, which is cooperatives for farmers, is not in practice working the way it's supposed to be. And the example that occurred to me was how, in this case, technology actually solves this.
+
+So there's a, there was a startup out of Brisbane, Australia, basically, which is international. So what they did, they came up with a solution for cooperatives, for farmers, to do what they were doing in the cooperatives with a phone that they gave it to them. So instead of putting it in a paper, they would put it in the phone.
+
+The phone was actually running a ledger, let's call it blockchain, data integrity. And the farmers, without needing to understand the tech, understood that they can trust in what's being put, so they don't need to trust any of their own management, or even you may tell me something and you may tell others otherwise. They just understood that what we agree on locally, between you and I, will be established and settled.
+
+And I don't necessarily need to trust you, basically I need to trust the system. And what was interesting, apparently according to the founders, is that in some particular cases, some particular corpse apparently works better, like coffee, I believe, in Kenya. In some cases, the farmer's income was increased to three times more, 300%, which was fascinating for the farmers.
+
+And now they had to solve the problem of excess of cash flow, they didn't know how to manage, and they had to kind of give them other ways that they can actually spend their money on right now, that they have more money than they used to be having. But in this case, in theory the system was correct, but the human element was kind of breaking the system. And an intervention of technology allowed for humans to reestablish trust.
+
+And once that layer is in there, that would be interesting case to, I would say study in those cooperatives, to see what kind of layers is built on top of it. Because once you have a strong layer infrastructure, could be this blockchain thing, could be Orthodox Judaism, anything that you strongly can rely on, there could be other layers, I can imagine, that would emerge on other relationships, other types of activities, that makes a very strong and resilient community. Because now, instead of looking internally to protect yourself individually, you can lose self in a way, like a cell in a body, and become part of a much larger entity, like the colony of ants, as we understand, how with performing simple tasks, they can actually act like an entity, that can attack other actual animals and other entities, and can actually survive for hundreds of years, without being very, very small, tiny, fragile things.
+
+But trusting the mechanism. A super organism. Super organism, which requires that structure to build on.
+
+Yes, sir. I would like to bring the conversation briefly back to where we were talking about government's attempts to control prices of wool and milk. So, you two gentlemen know far more about economic history than I do.
+
+I know nothing. But I know a bit about constitutional history. And I would say that governments can try to control prices.
+
+But they may fail. And the reason they will fail is as follows. Under the phrase government, there was a referendum to give the Commonwealth government the power to control prices.
+
+Labour opposed it. It failed. So government had no power to control prices.
+
+Then the Labour Party took power under Bob Hawke. Labour Party wanted government to have the power to control prices. So they had a referendum again.
+
+Liberals were opposed to this. Yeah, that's politics, that's politics. So the government certainly could have had total control over the price of fresh milk.
+
+I don't know. It's the reason why. It was like when they floated the dollar as well.
+
+The government used to declare, no, one Australian dollar is worse. I forget what it was pinned to, where there was one US dollar. But a lot of overseas economies essentially didn't share that belief.
+
+And they would find ways to exploit it. Okay, you're saying it's worth one US dollar, and it's not, and I can find a way to exploit the market that you have to pay me money now. And so eventually, was it Keating who floated the dollar?
+
+I don't remember if it was Harold or Keating. Yeah, and it's going, because then we'll have a true market value. But then of course, people gain the markets all the time, and you can end up, just in the time since Keating floated it, compared to the US dollar, it's gone from, I think at some point it was over one US dollar, and it's gone as low as almost 50 cents.
+
+It's so volatile when in a completely open mind. But there are different ways to exploit a fixed market. Was there computerized finance bot at that time?
+
+Not so much. And yeah, there's been various share disasters that have been caused by computerized systems. But the big fluctuations we've seen have just been by commodity traders.
+
+Or currency traders. Oh, sorry, yes. You're right, it's currency traders now.
+
+I was actually gambling with a lot of this stuff, isn't it?
+
+I mean, this is where I think if ownership is actually meant to say, and participation is something, then I think there's some good arguments for markets within that. But as soon as you've got a group of people that are buying into a form of investment, and their only motivation is to maximize profit, and then those investments can be packaged up in certain ways and sold, and global financial crisis is with those debt mortgages being packaged into some other kind of investment class that can be... That's what it becomes very abstract, it becomes very far from our actual...
+
+Like the money is to do stuff, rather than doing stuff to make the money, you know, as a friend of mine often says. That somehow reminds me of the topic of how do we... Going back to trust on the concept analysis, how do you trust robots?
+
+And you tell robots, here are the set of rules, say the Isaac Asimov 3 laws, but then it does something totally different, because it doesn't really have a sense of context of what humans value. But then at the same time, some humans act like that as well. You give them a set of rules, and they optimize themselves to actually claim the system.
+
+So in some ways, it's something much more fundamental. Should we?
+
+So if a cooperative can actually be effective and actually leverage on their internal trust to be effective as an entity, that problem will be solved, because now the majority is influencing what happens. I would say that solves it. At the moment, those who are influencing the whole economy, you can argue they're not necessarily the representatives of the interests of the majority.
+
+And that may come down to the inability of us to act in larger groups and be cohesive, basically. Well, yeah, it plays into central banking and fiat currencies and the concept of means of exchange and the fundamental role of a means of exchange in society. It's extremely interwoven into our political system and our economic system and our legal system.
+
+So the whole concept of exchange is actually like a social agreement, because in the past, if you just want to exchange in sundries, somebody screws you over, you just shoot them. Actually, there wasn't even guns. It was more like spears or just fist.
+
+Well, that's right, someone said they were going to give you three shells, and they only gave you two shells, you just speared them. Or if someone creates fear currency and says, this is a promissory no, this is where money was originally... So I love seeing old historical things like British Bounds with these bloody documents because it was a whole agreement that this is worth...
+
+Silver, silver in gold. This can be redeemed, the bank agrees this can be redeemed, and they just kept making money. And I trust that you would defend my right to claim to gold.
+
+And at a certain point, the government said, it's not going to be based on gold or silver anymore, it's going to be based on you trust the government. It's a very good example because at one point, there had been a conscious trust, right?
+
+But over time, that has gone in the culture or in the system, and you're not consciously trusting anything, you just accept the fact that this is valuable. Yes. Whereas because now you're not consciously interacting with a trust dynamic, it can be removed without you noticing it, and you can be exploited now.
+
+Yes. But even before then, cash in the common human perception was seen as physical. Like the government said, here's our cash, and it's physical, you use it to trade.
+
+And so the common parent would say to the child, every time they act like little, is money does not grow on trees. But nowadays, these days, like with the coming of digital currency, even that kind of concept of trusting physical is kind of gone already. Well, as it gets out of control, you get hyperinflation in Germany after World War II.
+
+It's happened to a few South American countries, Zimbabwe most recently springs to mind. They printed $100 trillion notes that were worth less than one US dollar. And when the system breaks down, it breaks down in a big way.
+
+And trust is where it starts, when the trust is misplaced. Because the bank or the government is lying to you, and people realize, ah, it's not worth anything. But now Australian currency is a feared currency, and it's based wholly and solely on trust and nothing else.
+
+Yeah, I don't think there's any sort of gold, silver-backed currency left in the world. I think it's all feared currency, is there?
+
+And with the digital crypto currency, the whole point of the trust is that it's now, we are trusting, like trust hasn't gone, all right?
+
+It's just relegated from a human institution to essentially an algorithm of some sort. And even then, within this algorithm itself, in a lot of these, like Bitcoin and all sorts, have some sort of mechanism, if I understand, to allow people to change it by voting. So, the original proponent of Bitcoin, the founder, the Japanese gentleman, He was an economic philosopher, and he was also a gifted coder program.
+
+And his philosophy was, he wanted to experiment with restoring trust and in a means of exchange. And so, purely, it's exactly what we're talking about. And he designed a code that would create the means of exchange with a limited supply which could not be adopted or corrupted.
+
+And that's the basic principle behind Bitcoin. And basically, all other cryptocurrencies is about limited supply or a trusted set of strict, non-corruptible laws, which are readily accessible to everybody, which controls the supply of that means of exchange. This is called the economics money theory.
+
+Yeah, yeah. And I was told about this once, and I was told a lot of economists don't understand money theory. They said, I either get it or you don't get it.
+
+When it comes, it comes suddenly. Oh, now I get it. So I haven't, I haven't got it.
+
+And again, the cryptocurrency stuff, I understand the basics of it, but the really complex elements, is a bit of a black box to me. I'm a big fan of trust in terms of technology, working technology. I'm a fan of trust, but verify any system that asks me to trust something, better have some very convincing testing functions that let me test that my trust is well placed.
+
+Because if you want to give me nightmares, start talking about digital voting, electronic voting machines, or worse still, internet-based voting. That's a nightmare. That's the worst thing I can think of.
+
+But you could build a system that has a trust, but verify the content. Isn't that a Russian quote for some reason?
+
+It popped in my head that trust but verify must be some Russian quote. Look, okay, I'm going to use technology to tell me where it comes from. And you're familiar with blockchain conversations, checking?
+
+I've heard the word. I don't know what it means. But there's two comments I would make about Bitcoin and similar things.
+
+First of all, under the Australian Criminal Code, to create a new currency lands you in jail for about 10 years, I think. That's the first thing. And secondly, I heard on Radio France International, they said that Bitcoin is using the power of four nuclear reactors.
+
+Oh yeah, apparently it burns up a lot of electricity. Well, why their nuclear reactors are not cold?
+
+Yeah, it sounds more dramatic, I think, if you say nuclear. Yeah, I looked it up. Trust but Verify is a Russian proverb, rhymes when it's said in Russian, and apparently got into popular use.
+
+Ronald Reagan liked to use it when talking about disarmament treaties with the Soviet Union. That's trust, that's about the trust. And so was that someone telling us we had to wrap up?
+
+No, like he's just letting us know that how to wrap up the broom, like to close the door, everything. So it's all good. But yes, that's a pretty neat thing.
+
+I mean, trust but verify, if you can't verify your trust, you're in a religion if you're just trusting blindly. That's what I'm going to go for when you go on one of those platforms, isn't it?
+
+Yes. Like you could set up a platform where people were selling stuff, but what the consumer wants or the buyer wants is a lot of other people have said, I've had a good experience with this person. That's why you feel okay about them taking the card, isn't it?
+
+Yeah. I'm just trying to find the time, but basically even the whole like, well, not religion, but science itself can be seen as an ideology. If you look at the fact that at the basis, there are certain fundamental assumptions of the universe that we are trusting exist, that we could actually experiment, and that when we repeat it again, it will still be consistent.
+
+Like if I roll the ball and somebody rolls the ball, they're able to verify that it happens. So there is that sort of like a fundamental assumption about how the universe works. If we lived in a digital universe where God could just flick a switch and everybody smashed into the ceiling.
+
+Relating to that about Bitcoin is that they put, they grounded it on rules of mathematics. So that's what you needed to trust. Basically, it came down all the way to trusting mathematics, which is okay.
+
+That's what was the success of Bitcoin. Two quick notes that might help. The white paper was published under a name that looks Japanese, but no one knows.
+
+It might be a group of people. It's argued it's a group of people. That's one.
+
+And also the Bitcoin was cleverly released without knowing who has released this. And it's a system that you don't need any authority to operate it. So it's actually a beautiful experiment where without needing anyone to trust anybody, collectively, you can have consensus on how much everyone has.
+
+Grounded on rules of mathematics. That's why no one can go, no one needs to go to jail because no one has created it. No one knows who has created it.
+
+It's just an article that was published on the Internet, and people started actually doing what the article said, and it started working. And for that to work, no one needed to trust anybody else for that to work. That was the elegance of that article, that white paper, which was Bitcoin, which has started the whole new chapter in IT, which has just very briefly, which has shifted the focus from what we do with information before blockchain.
+
+All IT was about what we do with information. After blockchain, people have started thinking about who does thing with information, which was about more governance. So the birth of Bitcoin, which was 10 years ago, was the moment, in my opinion, where two groups of people came together.
+
+The IT people, technologists, information technologists, and philosophers, economists, and social change makers, that always had ideas about ways we can do things, but they would always have this human issue when we can't trust each other necessarily. And that would be something that proposals would not necessarily work in reality. Now, all of a sudden, we had a technology that deals with governance instead of what happens with the technology.
+
+It's not about what you sense. It's not about where you store it. It's not about what insight you get out of information.
+
+That's always been the case. This time, it was about a basic information, that what the type of information, let's say, Bitcoin deals with, is as primary as a ledger, that this account transferred this number to this account. It's not even a number.
+
+It's a bulb of information. You can put anything in there. The information itself is very basic.
+
+The whole technology is around the governance. Who claims this?
+
+How I can verify this?
+
+Again, verifiable claims, which is again a thing in IT. And this has made it a whole new chapter, which there's a lot of conversations also about trust and blockchain is referred as a trustless system for that reason, because it doesn't require trust to operate. For the first time, a group of people can operate.
+
+While we're there, also bring up a, if you hear about Facebook New Coin, Libra. Oh, yes. Have you had that?
+
+Very briefly, what has enabled a few corporates to trust each other, to form alliance, to oppose and take over something that fundamentally, traditionally belonged to another institute in the society, which was the government, issuance of money in this case. It almost strikes me as like they were trying to create a sort of like a corporate sovereignty. In a way.
+
+But yes, that's also a very interesting thing to talk about at one point. But my point here was that what has allowed these corporates that would obviously have conflict of interest in many ways, to work with each other on a shared same goal, which is no value in that thing. It's just literally take over.
+
+Is technology, information technology?
+
+But this Facebook guy, he's not going to get away with this, is he?
+
+He won't succeed. He's being stopped, isn't he?
+
+I think there's a lot of resistance against- I mean, we know who he is. We don't know who's behind the- I mean, we don't know how the history of milk goes, but definitely there is resistance against the idea. There's plenty of companies that will just go out, the former company, they'll act illegally, and then the laws change.
+
+Look at Uber. Look at taxis. You know, like they were operating for a long time, and then in the end, the government had them, they're popular with consumers.
+
+And so the government goes, these guys have been operating illegally. Is that Uber?
+
+Yeah, Uber. And also you could argue to a certain extent with accommodation and things like that. But this is corruption, and then government, surely?
+
+Well, what it is, is it's changed, isn't it?
+
+So, like for me, I think it's important who owns these platforms. So if the drivers themselves are owning the platform, not some external party that's extracting Bayou, then I'm kind of OK with it. And I actually think the drivers will be better off in the long term.
+
+Whereas the problem we've got is that over time, a system like Uber or Uber Eats, like now all the small businesses or the restaurants, like I think it's something like there's a 30% that they lose, right?
+
+But if they don't go in, they're going to lose. So a system is put in place of dubious legality. Now the government could be being paid or getting donations and then maybe there's a corruption bit, but there's also this popular opinion thing.
+
+You know, if enough people reckon they're happier with an Uber driver than a regular taxi, then government will change the law because it will be too unpopular for them to take on. Unless they can make a case, like in London, I believe, there's been a bit of bargy bargy around Uber and things like that. But unless they can make a case that this is worse for consumers than it's worse for others, and then we might even think about the drivers, you know, people's livelihoods.
+
+Can I suggest there's an error in your logic here because you said something about the system or something, but the system here is not just cars and drivers and passengers, it's roadways and governments that pay to build the roads and so on. So maybe I find even people my age don't know the word flea car. Flea car was an unlicensed taxi, and to drive a flea car was a very serious offense.
+
+And Uber is actually cars as far as I can see. And what's something like Airbnb doing to the housing market?
+
+Like in Tasmania, there are a lot of people arguing that there's been so many people that are wanting to make money out of the Airbnb, that it's really driven up housing prices and it's had some impact on the level of homelessness. So you kind of got to think, what are the broader implications of these technologies?
+
+But I'll go back to the other point. As I just don't know, it's difficult for governments because these technologies are also popular with a lot of people. So that's real cowardice.
+
+That's real political cowardice. Oh hell yeah. Can I just augment your conversation?
+
+I think the key word you're looking for is like the network effect. Like how if there's enough people in a, like say Facebook, it's very hard to not use Facebook because you're just essentially shut up from a major, a big part of society. The trouble is with control and influence.
+
+Like who is influenced is not who is influencing it. So in terms of Uber, network ability allows for that. Of course, the current system is very inefficient, right?
+
+And then you leverage on technology, people are happy. But at one point, because the person, the team behind Uber, Facebook, any other platform is different from those who are, they are influencing the platform by decisions they make. But an entirely different group of people are influenced by the platform, which are people on the ground, the homelessness issue, and Facebook is also the host of all sort of issues.
+
+And this disconnect is the root cause of issues, which is something like cooperatives would solve. A concept of commons, managing public resources as commons would also solve that. When you close this loop, if someone is influencing something, they also need to be influenced the same degree, or there has to be a connection.
+
+In engineering, that's called feedback loop. In the lack of a feedback loop, a system goes... De-stabilize?
+
+Yeah, de-stabilize. Yeah, it goes... Yeah, it de-stabilize.
+
+And that's what we're seeing here. The feedback loop is not there. But as cooperative can, it's a vehicle to kind of close that loop.
+
+Let's close the loop. Yeah. I hope you enjoyed this podcast, and thanks to Alexar and Andrew Kay as well as the audience for this interesting and insightful discussion about the nature of trust and how it applies to society.
+
+So, as always, before we close this podcast, don't forget to send us your feedbacks, because we will suddenly be making a lot more of these things over the next few months. Cheers.

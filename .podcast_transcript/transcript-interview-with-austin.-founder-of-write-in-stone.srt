@@ -1,0 +1,2083 @@
+1
+00:00:00,140 --> 00:00:02,080
+Hi, Austin.
+
+2
+00:00:02,080 --> 00:00:03,400
+Hi, how are you?
+
+3
+00:00:03,400 --> 00:00:03,740
+Good.
+
+4
+00:00:03,740 --> 00:00:06,080
+So, how was the meeting yesterday?
+
+5
+00:00:06,080 --> 00:00:24,560
+This is part of Designing Open Democracy, and I'm curious to see your take on, like, meeting Herbidus Hopchock, who helped us a few years ago in presenting about his political efforts in building a better democracy.
+
+6
+00:00:24,560 --> 00:00:27,320
+So, how do you say this guy's name again?
+
+7
+00:00:27,600 --> 00:00:29,460
+I'm pretty sure I mispronounced it.
+
+8
+00:00:29,800 --> 00:00:33,500
+I've described it as Herbidus Hopchock.
+
+9
+00:00:33,500 --> 00:00:36,260
+Yeah, but the last name I can't pronounce.
+
+10
+00:00:36,260 --> 00:00:39,360
+And he's from the, it was the Gilt?
+
+11
+00:00:39,360 --> 00:00:41,060
+Yeah, Gilt Party, yes.
+
+12
+00:00:41,640 --> 00:00:47,780
+Of Austria, which tried to do this, which had this thing of open democracy versus liquid democracy.
+
+13
+00:00:47,780 --> 00:00:52,020
+And I thought, I was quite convinced by a lot of his arguments.
+
+14
+00:00:52,020 --> 00:00:54,700
+At least I liked the idea of he had a sort of a two-tiered system.
+
+15
+00:00:54,780 --> 00:01:00,020
+He had, they said, the open group, which anyone could join and vote in.
+
+16
+00:01:00,020 --> 00:01:04,099
+And then a representative group, which is like a citizen jury selected.
+
+17
+00:01:04,099 --> 00:01:07,040
+And I thought that was quite a graceful system, right?
+
+18
+00:01:07,040 --> 00:01:12,360
+And a part of me at first was like, no, well, we need leadership and we need people to sort of lead the discussion.
+
+19
+00:01:12,360 --> 00:01:15,820
+I feel that there's a role for people like that in society.
+
+20
+00:01:15,820 --> 00:01:21,360
+But that doesn't, maybe that doesn't have to be in the political system itself that happens over here.
+
+21
+00:01:21,360 --> 00:01:38,620
+There's a public forum debate, the media, et cetera, where we have those discussions, and that filters through to these representative groups, which are literally statistically representative in a mathematical sense, not in a rhetorical ideological sense.
+
+22
+00:01:38,620 --> 00:01:52,080
+Yeah, I think I remember making an analogy between proportional representation by using the sand analogy, where if you want to show a good mixing, what you need is you can't just take the scoop of sand on the top.
+
+23
+00:01:52,280 --> 00:02:04,560
+Otherwise, it may just be all blue sand, but instead you need to mix the whole jar together such that when you take a scoop of the top, it can be more accurately representing the whole jar.
+
+24
+00:02:04,560 --> 00:02:07,640
+So we were talking a bit about statistical representation.
+
+25
+00:02:07,640 --> 00:02:09,100
+That's...
+
+26
+00:02:09,120 --> 00:02:10,900
+I mean, it works extremely well, right?
+
+27
+00:02:10,900 --> 00:02:20,760
+Polling is, you know, people love to criticize polls and point out the errors, but, you know, it's very, very rare that polls are wrong by more than 5% or something like that, right?
+
+28
+00:02:20,840 --> 00:02:24,160
+And so when you have, and it's, and, you know, people say, well, 5% is an election.
+
+29
+00:02:24,160 --> 00:02:25,760
+It's like, yeah.
+
+30
+00:02:25,760 --> 00:02:31,300
+But it also means there's also polling, like there was polling done last year about a basic income, right?
+
+31
+00:02:31,300 --> 00:02:38,840
+And it came back with sort of, I think it was 60%, 59% support and 20% oppose or something like that, right?
+
+32
+00:02:38,840 --> 00:02:52,800
+And even with all the margins of error you like built in, that tells us something that changes our perception about whether there was action, you know, about what public perception is, like, that's one of the big things is otherwise we don't know what people think.
+
+33
+00:02:53,020 --> 00:03:04,400
+If we just sort of lick our thumb and stick it out the window and say, well, you know, my impression is that everyone's really conservative on this point, right?
+
+34
+00:03:04,400 --> 00:03:08,180
+When you actually ask people, they can surprise you.
+
+35
+00:03:08,180 --> 00:03:13,780
+Well, glad to see that you quite enjoyed yesterday's catch up with everybody.
+
+36
+00:03:13,780 --> 00:03:22,160
+Now, I'm really curious as to like, what's your background and what is this new project that you were telling us about yesterday?
+
+37
+00:03:22,160 --> 00:03:24,400
+Well, my background, how much detail do you want, right?
+
+38
+00:03:24,400 --> 00:03:29,900
+Like, should I start at childhood and go from there or no?
+
+39
+00:03:31,140 --> 00:03:35,800
+I think they've been more like interested in the like maybe the past few years.
+
+40
+00:03:35,800 --> 00:03:43,320
+And what led you up to creating this new project called the Write In Stone app, if I recall correctly.
+
+41
+00:03:43,500 --> 00:03:47,820
+Yeah, well, look, I would like to study university if that's okay, right?
+
+42
+00:03:48,120 --> 00:03:48,920
+That might make sense.
+
+43
+00:03:48,920 --> 00:03:50,860
+When I was in university, that's fine.
+
+44
+00:03:50,860 --> 00:03:53,520
+Yeah, when I was in university, I was studying philosophy.
+
+45
+00:03:53,520 --> 00:03:59,900
+And I remember the reason I started studying philosophy was I was really impressed on the open day.
+
+46
+00:03:59,920 --> 00:04:04,820
+One of the philosophy lecturers said, I'm the only person who's going to say this to you all day.
+
+47
+00:04:04,820 --> 00:04:08,660
+Philosophy, the subject that I teach is useless.
+
+48
+00:04:08,660 --> 00:04:10,660
+It does not have a direct application.
+
+49
+00:04:12,120 --> 00:04:15,540
+Or it might, but that's not why you do it, right?
+
+50
+00:04:15,540 --> 00:04:20,820
+You do philosophy because it's removed from direct application, right?
+
+51
+00:04:20,820 --> 00:04:30,140
+That you're not, you're not, it's the place where we say we're not going to game our intellectual system to get a particular result, right?
+
+52
+00:04:30,140 --> 00:04:33,360
+And it's sort of, you know, I thought that was really interesting.
+
+53
+00:04:33,360 --> 00:04:34,880
+So and I didn't know what I wanted to do.
+
+54
+00:04:34,880 --> 00:04:42,960
+So that got me involved in philosophy and I was studying that at Macquarie University and the most interesting thing in my degree was going on student exchange.
+
+55
+00:04:42,960 --> 00:04:54,540
+And I went to Lebanon in 2006 and, you know, I was also doing music and just having a, a real great philosophy college, you know, not too serious kind of time.
+
+56
+00:04:54,540 --> 00:05:00,320
+And then in 2006, while I was there, I planned to do a full year of student exchange.
+
+57
+00:05:00,320 --> 00:05:03,980
+And then the agreement between the universities dropped out.
+
+58
+00:05:03,980 --> 00:05:08,820
+So in the second six months of the year, which I'd been planning to stay, I didn't have anything to do.
+
+59
+00:05:08,820 --> 00:05:17,200
+And I wasn't sure what I wanted to do, but I decided to stay and just keep studying languages and, and, and stay and do a bit of other, you know, stuff outside of university.
+
+60
+00:05:17,200 --> 00:05:18,900
+I was considering maybe a teaching this or something.
+
+61
+00:05:18,900 --> 00:05:28,420
+And then just as soon, a few days after I would have flown home, but didn't, the war broke out in 2006 with Hezbollah in the south of Israel and the Israelis.
+
+62
+00:05:28,420 --> 00:05:31,980
+And I was, you know, I woke up hungover, you know.
+
+63
+00:05:31,980 --> 00:05:33,340
+Oh, what's your background?
+
+64
+00:05:33,460 --> 00:05:36,580
+Like, like where, where you at?
+
+65
+00:05:36,580 --> 00:05:38,020
+Where was I at?
+
+66
+00:05:38,020 --> 00:05:39,340
+I was in, I was in Beirut.
+
+67
+00:05:39,340 --> 00:05:48,880
+I was in a place called Hamra, which is like, you know, the place where all the foreigners and students and diplomats hang out, you know.
+
+68
+00:05:48,880 --> 00:05:56,100
+I was studying at the Lebanese American University, and where I was living was between that and this place called the American University of Beirut.
+
+69
+00:05:56,100 --> 00:05:58,680
+So this is, I mean, I don't want to this place.
+
+70
+00:05:58,680 --> 00:06:03,180
+It's not just, you know, a tourist trap or anything like that.
+
+71
+00:06:03,260 --> 00:06:13,300
+This was where all of the, you know, a lot of quite interesting and edgy Arab youth from around the world, from around the Arab region were in Beirut.
+
+72
+00:06:13,300 --> 00:06:21,520
+So a lot of the people I was hanging out would be like Jordanians or, you know, Emiratis or whatever, who'd come to study in Lebanon, often quite well off, et cetera, et cetera.
+
+73
+00:06:21,520 --> 00:06:34,920
+But they were connected to the, you know, this was, this is a place of, anyhow, it was an amazing place and I was having a great time experiencing it in a very personal way, not in as, you know, like going there to try and make a career out of it or anything like that.
+
+74
+00:06:34,920 --> 00:06:40,480
+Then the war broke out and I started writing a blog.
+
+75
+00:06:40,480 --> 00:06:46,240
+And through people in my network, you got picked up and put to, on the front page of the Canberra Times.
+
+76
+00:06:46,240 --> 00:06:55,100
+And I thought, well, maybe if I'm getting published on the front page, maybe that means I should consider journalism as a career, which was a terrible idea.
+
+77
+00:06:55,100 --> 00:07:01,460
+You know, going into journalism in 2006, as people were just being fired from the industry left, right, and center.
+
+78
+00:07:01,460 --> 00:07:12,440
+But anyhow, you know, like it was, so I spent a lot of time as a journalist, I sort of, I had an agency called Global radio News, and I would do some cable news reporting through them every now and again.
+
+79
+00:07:12,440 --> 00:07:18,200
+But it was always, you know, sometimes I'd get stuff published, but it was always freelance, always on the edge of stuff.
+
+80
+00:07:18,200 --> 00:07:23,300
+And probably by about 2010, I think I was actually ready to give up with journalism.
+
+81
+00:07:23,300 --> 00:07:37,540
+I was ready, you know, it wasn't, because honestly, it was something that I was doing as a sort of holding pattern until I could figure out what was something, a more in-depth, intense intellectual engagement, right?
+
+82
+00:07:37,540 --> 00:07:42,340
+Because journalism is not generally a place for big ideas.
+
+83
+00:07:42,720 --> 00:07:43,660
+That's not what it's for.
+
+84
+00:07:43,660 --> 00:07:44,860
+It's for what's happening right now.
+
+85
+00:07:45,500 --> 00:07:47,080
+And I was always interested in the big ideas.
+
+86
+00:07:47,080 --> 00:07:51,120
+But there's some space for that in journalism, but not as much as I'd like, right?
+
+87
+00:07:51,120 --> 00:07:55,660
+So, but then what I saw happening was the Arab Spring taking off in Cairo.
+
+88
+00:07:55,660 --> 00:07:58,300
+And I thought, well, this is the story of a lifetime.
+
+89
+00:07:58,300 --> 00:08:00,360
+This is something I would never have expected.
+
+90
+00:08:00,360 --> 00:08:01,180
+It took me by shock.
+
+91
+00:08:01,440 --> 00:08:06,620
+I had had a much more cynical and depressed out, you know, pessimistic outlook for the Arab world.
+
+92
+00:08:06,620 --> 00:08:08,500
+And some would say that that's been confirmed.
+
+93
+00:08:08,500 --> 00:08:11,880
+But I don't think, I think we actually learned something else.
+
+94
+00:08:11,880 --> 00:08:19,320
+And, you know, we're getting towards the app now because I think people learned the wrong lessons from the Arab Spring, right?
+
+95
+00:08:19,320 --> 00:08:20,840
+I think people learned all the wrong things.
+
+96
+00:08:20,960 --> 00:08:23,460
+I think people got it wrong at the time.
+
+97
+00:08:23,460 --> 00:08:24,120
+So there was this moment.
+
+98
+00:08:24,340 --> 00:08:32,140
+I mean, my background is that, you know, my mom was a public servant, my dad's a left-wing bookseller, and I grew up in the inner west of Sydney.
+
+99
+00:08:32,140 --> 00:08:36,020
+So right in the sort of SBS left-wing demographic, right?
+
+100
+00:08:36,020 --> 00:08:40,880
+So I grew up sort of on no Chomsky in media theory.
+
+101
+00:08:41,880 --> 00:08:50,280
+And I would now, I would describe the way I behaved back then is that I was what you would call a Chomsky and counter propagandist, right?
+
+102
+00:08:50,280 --> 00:09:01,980
+So you're hyper aware that there's this big machine that's spewing all this propaganda and the way you, what you see your role to do is to push back against that and to give a counter narrative.
+
+103
+00:09:01,980 --> 00:09:06,020
+And then, but that can devolve into this tactical kind of nothingness, right?
+
+104
+00:09:06,020 --> 00:09:18,960
+So when I was in Cairo in about 2012, after the revolution had happened, after Mubarak had fallen, after one, two, three, four, five elections had happened and the Brotherhood had won, all of those elections, right?
+
+105
+00:09:18,960 --> 00:09:27,400
+Then you had a situation where they were getting all of this flack from most, from the entire English-speaking media, right?
+
+106
+00:09:27,400 --> 00:09:32,420
+They were being predicted as like, you know, the bad guys, right?
+
+107
+00:09:32,420 --> 00:09:37,640
+And then I had a really interesting occasion where I was, I was drinking with a guy from a very right-wing publication.
+
+108
+00:09:37,640 --> 00:09:42,360
+I don't want to say which one, but this is like, you know, a financial press thing, right?
+
+109
+00:09:42,360 --> 00:09:46,980
+It writes about, their focus is on the business interests, but we were like absolutely agreeing.
+
+110
+00:09:46,980 --> 00:09:50,860
+It's like the Brotherhood in general have a strong mandate.
+
+111
+00:09:50,860 --> 00:09:52,400
+They're still quite popular.
+
+112
+00:09:52,400 --> 00:09:54,040
+They should be allowed to finish their term.
+
+113
+00:09:54,040 --> 00:09:58,380
+And if they don't finish their term, the military will take over and democracy is over.
+
+114
+00:09:58,380 --> 00:09:59,040
+That's it.
+
+115
+00:09:59,040 --> 00:10:10,000
+And this was one time when all of a sudden I'm not arguing with this person, where people who have my political ideology would agree with me.
+
+116
+00:10:10,000 --> 00:10:15,640
+And this person over here who I disagree with on political ideology agrees with me about what's actually happening.
+
+117
+00:10:15,640 --> 00:10:20,240
+And it's like events were overtaking our ideological lens.
+
+118
+00:10:20,240 --> 00:10:23,140
+And that was a unique, a new experience for me.
+
+119
+00:10:23,140 --> 00:10:26,700
+And it was this thing where it's like, well, what actually matters now is who knows their shit.
+
+120
+00:10:26,700 --> 00:10:27,860
+And that's about it.
+
+121
+00:10:27,860 --> 00:10:37,920
+Because it's actually all about who's been paying attention and who's been doing the work, and who has been basing their reporting on what's on Twitter and English.
+
+122
+00:10:37,920 --> 00:10:39,040
+Right?
+
+123
+00:10:39,040 --> 00:10:48,000
+And this guy was from the financial press, so I shouldn't have agreed with him about, and he was quite right-wing, sort of Ron Paul kind of guy, right?
+
+124
+00:10:48,000 --> 00:10:49,080
+So we wouldn't have agreed about anything.
+
+125
+00:10:49,080 --> 00:10:50,800
+And then I was like, I think that was the seed of it.
+
+126
+00:10:50,800 --> 00:11:08,140
+And then when the coup happened and it was just as bad as everything we thought it would be, it became inefficient and insufficient for me to keep just writing blogs and trying to do that, be this one little voice, shouting into this stadium of other people who were also shouting.
+
+127
+00:11:08,140 --> 00:11:09,920
+So the idea started building up.
+
+128
+00:11:10,440 --> 00:11:10,980
+Exactly.
+
+129
+00:11:10,980 --> 00:11:12,540
+And so this is the background.
+
+130
+00:11:12,540 --> 00:11:20,080
+This is when we decided, first thing we decided was we'll try and do transparent journalism by founding a new magazine, a new online magazine.
+
+131
+00:11:20,080 --> 00:11:24,720
+We teamed up with a bunch of other journalists to make this content and make the content transparent.
+
+132
+00:11:24,820 --> 00:11:28,400
+So we would show people how it had been created.
+
+133
+00:11:29,220 --> 00:11:29,980
+What are the steps?
+
+134
+00:11:29,980 --> 00:11:33,380
+And we thought we could do that with existing technology.
+
+135
+00:11:33,380 --> 00:11:36,220
+And that turned out to be a data management nightmare.
+
+136
+00:11:36,220 --> 00:11:50,480
+So then we decided, well, we tried to do it so that it was an NGO that was running the publication, and then we wanted to run in parallel to that in an open-source software project to develop the tools to make it better.
+
+137
+00:11:50,480 --> 00:11:51,620
+That was the next step.
+
+138
+00:11:51,620 --> 00:11:55,440
+And then we just didn't get tracked any engineers and no one worked on the thing.
+
+139
+00:11:55,440 --> 00:11:56,900
+So at some stage, I said, well, screw this.
+
+140
+00:11:56,900 --> 00:11:57,840
+I'm just going to make software.
+
+141
+00:11:57,840 --> 00:12:02,540
+I'll stop being creative about everything and just be creative about the product.
+
+142
+00:12:02,540 --> 00:12:15,200
+And set up, and in 2017, founded the company, which only just now, nearly four years later, has released a product that we think is almost ready for commercial applications.
+
+143
+00:12:15,200 --> 00:12:16,600
+So that's the story.
+
+144
+00:12:16,600 --> 00:12:18,720
+Pardon me for maybe longer than you wanted.
+
+145
+00:12:19,480 --> 00:12:24,740
+So this is this Write In Stone app you were talking about, definitely.
+
+146
+00:12:24,740 --> 00:12:25,500
+Yeah.
+
+147
+00:12:25,500 --> 00:12:26,540
+Yeah, that's Write In Stone.
+
+148
+00:12:26,540 --> 00:12:27,500
+I mean, I just call it Stone.
+
+149
+00:12:27,500 --> 00:12:33,780
+The company is called Write In Stone PTY Ltd, because Stone PTY Ltd was taken.
+
+150
+00:12:33,780 --> 00:12:36,980
+Of course, stone.com is taken, and Stone on Twitter.
+
+151
+00:12:36,980 --> 00:12:41,400
+So we have to call, so Write In Stone is the current general handle.
+
+152
+00:12:42,260 --> 00:12:47,460
+And try to name it as stoner.com probably doesn't quite work as well.
+
+153
+00:12:47,460 --> 00:12:48,040
+Yeah.
+
+154
+00:12:48,040 --> 00:12:53,880
+Maybe once we're really huge, we can afford to buy these domains and handles of people and we'll just be able to be stone.com.
+
+155
+00:12:53,880 --> 00:13:03,440
+So it's Write In Stone, as in writeinstone.com, if people want to go and download the beta.
+
+156
+00:13:04,320 --> 00:13:10,740
+And that is a, at the moment, it's an open beta, is what we're calling it, right?
+
+157
+00:13:10,740 --> 00:13:15,480
+So we're not commercializing it at the moment.
+
+158
+00:13:15,480 --> 00:13:18,220
+We're just letting people play with it and give us feedback.
+
+159
+00:13:18,220 --> 00:13:20,800
+So ultimately, what is this app?
+
+160
+00:13:20,800 --> 00:13:28,760
+Like we now got the general background of like, what got you interested and now you have a problem you need to solve.
+
+161
+00:13:28,760 --> 00:13:31,480
+What is this thing that you just developed?
+
+162
+00:13:32,200 --> 00:13:39,540
+Well, would you like me to show you, like on those cooking shows they do, here's one we prepared earlier.
+
+163
+00:13:39,540 --> 00:13:40,120
+That works.
+
+164
+00:13:40,120 --> 00:13:41,660
+If you could screen share.
+
+165
+00:13:41,660 --> 00:13:47,000
+But don't forget that I may be doing an audio recording, so you may also need to describe it as well.
+
+166
+00:13:47,000 --> 00:13:47,660
+Yeah, okay.
+
+167
+00:13:47,660 --> 00:13:50,920
+Well, screen share so you can see it and you can help me describe it.
+
+168
+00:13:50,920 --> 00:13:54,860
+Because sometimes it's easy, it's hard to describe it because you know it so well.
+
+169
+00:13:54,860 --> 00:13:57,700
+Here's a presentation about it, but we'll come back to that in a second.
+
+170
+00:13:58,260 --> 00:14:04,160
+And I'll show you an actual story that we've done with it at thebestdisinfectant.com.
+
+171
+00:14:04,160 --> 00:14:12,940
+Now, we set this up, we set up a blog called thebestdisinfectant.com, because our product can be a standalone deliverable.
+
+172
+00:14:12,940 --> 00:14:15,500
+You can just track the research and share that.
+
+173
+00:14:15,500 --> 00:14:24,740
+But what we're really interested in doing is integrating with existing journalism workflows to sort of provide what I call epistemological struts.
+
+174
+00:14:26,860 --> 00:14:32,380
+It's something to help bolster the credibility of existing content.
+
+175
+00:14:32,380 --> 00:14:34,820
+So here we've got a story, it's a fact check story.
+
+176
+00:14:34,820 --> 00:14:48,520
+And what we've done is we've got an off-the-shelf wordpress.com blog here, businessplanwordpress.comblog, and I've written a normal fact check here, or a fact check this video by Australian comedian Friendly Jordies.
+
+177
+00:14:48,520 --> 00:14:50,200
+So like a normal article?
+
+178
+00:14:50,200 --> 00:14:51,280
+Yeah, just like a normal article.
+
+179
+00:14:51,680 --> 00:14:57,320
+And down here, you can see the research portal is what we're calling it.
+
+180
+00:14:57,340 --> 00:15:00,560
+And here you can see information.
+
+181
+00:15:00,560 --> 00:15:13,020
+The research duration is 494 minutes, which is about eight hours, six events, which means six periods when I was recording my research process, and 59 highlights.
+
+182
+00:15:13,020 --> 00:15:14,740
+And you can click through and view that.
+
+183
+00:15:14,740 --> 00:15:19,480
+But first, just while you're in the article, we have to have what we call the highlights.
+
+184
+00:15:19,480 --> 00:15:33,420
+So as I'm doing my research process, at any point that I think is a key turning point, or if I think I found information that's going to be key to my story, I turn on my webcam and I add a little commentary.
+
+185
+00:15:33,420 --> 00:15:34,160
+So we've got one here.
+
+186
+00:15:36,400 --> 00:15:45,960
+So I'm going to fact check Friendly Jordy's today, not because I don't like the channel, but because I do.
+
+187
+00:15:45,960 --> 00:15:47,720
+And I can skip to the next.
+
+188
+00:15:50,080 --> 00:15:51,220
+vaccinations.
+
+189
+00:15:51,220 --> 00:15:52,400
+Now I'm no doctor.
+
+190
+00:15:52,520 --> 00:15:53,620
+I'm a doctor of beads.
+
+191
+00:15:54,660 --> 00:15:55,460
+Oh yeah.
+
+192
+00:15:55,460 --> 00:15:56,780
+But I'm not a medical doctor.
+
+193
+00:15:56,780 --> 00:16:05,620
+However, I think the reason that we have a 7% rollout might have something to do with the fact that Scott Borrissett seems to have bought our entire vaccination supply.
+
+194
+00:16:05,620 --> 00:16:09,000
+So that's him talking and has me identifying the fact that I'm going to check.
+
+195
+00:16:09,000 --> 00:16:13,860
+And you can go through all of these little highlights to see the bits where I'm talking.
+
+196
+00:16:13,860 --> 00:16:18,920
+Or you can click through here to the full research project, which opens in a separate page.
+
+197
+00:16:18,920 --> 00:16:23,400
+And you can turn on full research playback.
+
+198
+00:16:23,400 --> 00:16:29,080
+And so that means, for example, here is a session where I sat down and I did some more research.
+
+199
+00:16:30,440 --> 00:16:31,000
+Right.
+
+200
+00:16:31,000 --> 00:16:32,100
+But I didn't add a highlight.
+
+201
+00:16:32,380 --> 00:16:33,900
+So it's just me checking something out.
+
+202
+00:16:33,900 --> 00:16:35,900
+And this is what I've got.
+
+203
+00:16:35,900 --> 00:16:40,020
+This is now an audit trail of the claim that I make.
+
+204
+00:16:40,020 --> 00:16:43,900
+So it's not just video and this is kind of like a timeline.
+
+205
+00:16:44,480 --> 00:16:46,260
+For now, it's video.
+
+206
+00:16:46,260 --> 00:16:48,500
+Well, we're going to start adding other formats.
+
+207
+00:16:48,500 --> 00:16:53,060
+But the first thing we're starting with is video and within that screen capture.
+
+208
+00:16:53,060 --> 00:16:56,420
+But we're not a technology focused company, we're a mission focused company.
+
+209
+00:16:56,420 --> 00:17:00,100
+So whatever helps us capture research, that's what we're going to do.
+
+210
+00:17:00,340 --> 00:17:06,520
+And we've got a whole bunch of ideas for how this goes beyond any particular technology at the time.
+
+211
+00:17:06,520 --> 00:17:14,960
+But the point of this is that when I say it's an audit trail, what I mean is that the person, if someone wants to know how did I reach this conclusion, right?
+
+212
+00:17:14,960 --> 00:17:16,099
+They can go back and look through it.
+
+213
+00:17:16,099 --> 00:17:27,700
+And see, imagining what becomes apparent is not just a degree of diligence, are you doing your homework, but your intent becomes more apparent.
+
+214
+00:17:27,700 --> 00:17:30,620
+And if your intentions are good, then that's a good thing.
+
+215
+00:17:30,620 --> 00:17:33,220
+And then this becomes a force multiply for you.
+
+216
+00:17:33,220 --> 00:17:37,360
+Because, you know, it's a information-rich format, right?
+
+217
+00:17:37,360 --> 00:17:49,780
+There's a lot of information here, but it's also a social format because it's based on, you see the journalists face, you hear them talk, and they're explaining, these are the decision, this is how I'm making the research decisions I need to make as I go along, right?
+
+218
+00:17:49,780 --> 00:17:59,160
+And what I believe is even if people get it wrong, if you see that they've done it using, that they were acting in good faith, right?
+
+219
+00:17:59,160 --> 00:18:06,280
+And that they're making themselves accountable to you, you're going to be more forgiving about when they get it wrong, and there's going to be more of a sense of rapport and trust.
+
+220
+00:18:06,280 --> 00:18:12,920
+You know, it's actually an emotional problem at its core, a lot of what's going on.
+
+221
+00:18:12,920 --> 00:18:24,200
+I wonder if there's a certain similarity between this kind of philosophy you're talking about regarding what you want to bring to journalism to, like say, how people do investigation in the legal system.
+
+222
+00:18:26,040 --> 00:18:26,900
+Yeah, exactly.
+
+223
+00:18:26,900 --> 00:18:32,040
+And I mean, we've had interest from law enforcement for a version of this.
+
+224
+00:18:32,040 --> 00:18:39,220
+And now there's already products sort of focused on the law enforcement use case for this that what they'll do is index.
+
+225
+00:18:39,220 --> 00:18:41,020
+You know, Hunchley is the big one, right?
+
+226
+00:18:41,020 --> 00:18:44,560
+And some of the people that we would like to target are using Hunchley.
+
+227
+00:18:44,560 --> 00:18:50,400
+Hunchley is a Chrome browser extension, and it copies the web pages that you're using.
+
+228
+00:18:50,540 --> 00:19:00,680
+So that if, you know, and it's used, like, for example, a police officer might use it to make a copy of a website where someone says, hey, I'm going to, you know, f-ing kill you, right?
+
+229
+00:19:00,680 --> 00:19:01,240
+Or whatever.
+
+230
+00:19:01,240 --> 00:19:05,560
+And then while they're drunk, before they take it down the next morning, well, it doesn't matter.
+
+231
+00:19:05,560 --> 00:19:07,460
+I've got proof that they made that threat.
+
+232
+00:19:07,460 --> 00:19:08,000
+Right.
+
+233
+00:19:08,000 --> 00:19:09,880
+And that could be relevant for a lot.
+
+234
+00:19:10,200 --> 00:19:13,440
+And it's indexed with like a PGP key or something like that.
+
+235
+00:19:15,180 --> 00:19:19,440
+So the veracity of the records is vouched for by Hunchley, the company.
+
+236
+00:19:19,860 --> 00:19:20,760
+Right.
+
+237
+00:19:20,760 --> 00:19:21,380
+So that's what that is.
+
+238
+00:19:21,380 --> 00:19:24,040
+And that's the most similar product on the market.
+
+239
+00:19:24,040 --> 00:19:28,680
+Now, I don't think people who are using Hunchley should stop using Hunchley and use us.
+
+240
+00:19:28,680 --> 00:19:34,300
+I think they should keep using Hunchley and show everybody else how to use Hunchley using us.
+
+241
+00:19:34,300 --> 00:19:34,640
+Right.
+
+242
+00:19:34,640 --> 00:19:35,240
+That's what I want.
+
+243
+00:19:35,240 --> 00:19:52,700
+I want to be a force multiplier for all the existing tools, to be a delivery system so that people can show each other how to use these tools effectively, just as part of the ordinary workflow, rather than in separate tutorials or whatever.
+
+244
+00:19:52,700 --> 00:19:59,680
+Kind of curious, it sounds like there is something similar like Hunchley, but are journalists using these things as well?
+
+245
+00:19:59,680 --> 00:20:08,060
+Some people are using Hunchley, and some journalists are using Hunchley, some very sophisticated, technologically inclined journalists.
+
+246
+00:20:08,060 --> 00:20:16,160
+And we want to expand that kind of good information hygiene, and we see ourselves as a vector for that.
+
+247
+00:20:17,200 --> 00:20:20,080
+But that's not public-facing, that's for court.
+
+248
+00:20:20,080 --> 00:20:22,460
+And it doesn't solve any...
+
+249
+00:20:22,560 --> 00:20:23,520
+It's also something...
+
+250
+00:20:23,520 --> 00:20:27,540
+They also charge money for their product, and people pay to use it.
+
+251
+00:20:27,540 --> 00:20:30,360
+And because it's private, that's a good model.
+
+252
+00:20:30,360 --> 00:20:36,560
+But what we are hoping to do is once we start to build up a good volume of use, is we'll actually pay our users.
+
+253
+00:20:36,560 --> 00:20:47,820
+We'll put advertising content in the video as a pre-roll, and then that will be a way for journalists to monetize this work, which is at the moment a net cost.
+
+254
+00:20:47,820 --> 00:20:56,820
+So at the moment, if you're investing in research, you're doing it for this long-term goal of the prestige of your organization.
+
+255
+00:20:57,720 --> 00:21:22,340
+So what happens is someone at a premium tier journalistic outfit, one of the people who have a real sense of pride in what they're doing, they will invest 8 hours, 10 hours, 40 hours, 400 hours in deep dive investigative work, and then they publish it, and 25 minutes later, thousands of people have copied it if it's really good stuff.
+
+256
+00:21:22,340 --> 00:21:27,240
+And as a consumer, it's not immediately obvious who did the work and who didn't.
+
+257
+00:21:27,240 --> 00:21:30,960
+So that's why we say research is valuable, make it visible.
+
+258
+00:21:30,960 --> 00:21:37,580
+So A, you're going to have a stronger impact on your brand using this product, you're going to have a stronger impact.
+
+259
+00:21:38,360 --> 00:21:44,940
+People are going to associate the research work with your brand directly because they can see it on your website.
+
+260
+00:21:44,940 --> 00:21:52,100
+And two, you're going to have this video content, which is actually relevant, actually informative, and goes with the article.
+
+261
+00:21:52,100 --> 00:21:54,860
+And that's an increase in productivity.
+
+262
+00:21:55,760 --> 00:22:02,740
+That sort of reminds me of artists, basically live streaming their development of art in some ways.
+
+263
+00:22:02,740 --> 00:22:13,080
+And I have a feeling it's slightly related to how a lot of arts are being copied, and so the attribution gets lost very easily.
+
+264
+00:22:13,080 --> 00:22:27,200
+But if you have a live stream recording of you doing the art, not only is it just extra entertainment, but it also provides an immutable record that you did the work.
+
+265
+00:22:27,200 --> 00:22:28,360
+Yeah.
+
+266
+00:22:28,360 --> 00:22:29,020
+See, this is the thing.
+
+267
+00:22:29,020 --> 00:22:34,200
+It's like, why are guys in high-vis construction, workers on the road have to wear high-vis?
+
+268
+00:22:34,200 --> 00:22:37,960
+Because visibility is a kind of protection, right?
+
+269
+00:22:37,960 --> 00:22:51,600
+And if your evidence trail and your good faith efforts are visible, then that protects you from attacks in the sense of attacks on your character, right?
+
+270
+00:22:51,600 --> 00:23:03,920
+And if your process of creating original work is visible, that protects you from people disputing your ownership of the finished product, right?
+
+271
+00:23:03,920 --> 00:23:08,240
+And there's a kind of openness and reflexivity to it.
+
+272
+00:23:08,240 --> 00:23:14,940
+That is not what we're doing is actually bringing things that have happened in other places to journalism, right?
+
+273
+00:23:15,020 --> 00:23:20,960
+So, Twitch has already got screen capture, porn has already got webcams, right?
+
+274
+00:23:20,960 --> 00:23:25,120
+And that's what happens, and you're talking about in art, right?
+
+275
+00:23:25,120 --> 00:23:29,140
+This technology comes to journalism last normally.
+
+276
+00:23:30,340 --> 00:23:35,600
+So, one of our challenges is that the journalists are not early adopters of technology, right?
+
+277
+00:23:35,600 --> 00:23:42,280
+But they were eventually dragged onto the web, and they were eventually dragged onto social media, and they're being dragged into video, right?
+
+278
+00:23:43,420 --> 00:23:54,240
+And we're both part of that thing where they're being dragged into video, and that morphing into something else, where they're dragged into this kind of hyper-transparent accountability.
+
+279
+00:23:54,240 --> 00:23:55,880
+Not in every situation.
+
+280
+00:23:55,880 --> 00:23:57,460
+Sometimes you need secrecy.
+
+281
+00:23:57,460 --> 00:24:05,840
+But when you don't need secrecy, you shouldn't default to it if your job is to engage with the public and convince them of things.
+
+282
+00:24:05,840 --> 00:24:10,860
+Not just tell them things, but show them the respect of convincing them and presenting the evidence.
+
+283
+00:24:12,380 --> 00:24:20,640
+Is there a certain conservatism inherit in the industry which is causing them to lag behind in adoption or evolution?
+
+284
+00:24:20,640 --> 00:24:26,480
+Because in some ways, people feel like that media or journalism is a...
+
+285
+00:24:26,480 --> 00:24:28,760
+They're not really keeping up with the times.
+
+286
+00:24:28,780 --> 00:24:32,100
+And this is what you're probably trying to address.
+
+287
+00:24:32,340 --> 00:24:41,680
+But I'm kind of curious as to, like, have you been talking to your journalistic community, which you're part of, and have any insight as to why this is the case?
+
+288
+00:24:41,680 --> 00:24:50,220
+Yeah, I don't want to try and characterize the journalism community broadly, because it's a very complicated question.
+
+289
+00:24:50,220 --> 00:24:51,820
+And I'm not...
+
+290
+00:24:51,820 --> 00:24:56,040
+I haven't been that much in touch with the journalistic community for a while now, right?
+
+291
+00:24:56,200 --> 00:24:58,360
+So first, when we...
+
+292
+00:25:00,600 --> 00:25:02,420
+Well, one thing that happened is I left...
+
+293
+00:25:02,420 --> 00:25:06,760
+Most of my journalism work was either in the Middle East or, you know, New South Wales, right?
+
+294
+00:25:06,760 --> 00:25:10,920
+And then in 2013, when I left Egypt, I didn't come home.
+
+295
+00:25:10,920 --> 00:25:12,740
+I went to Ecuador.
+
+296
+00:25:12,740 --> 00:25:13,860
+And so...
+
+297
+00:25:13,860 --> 00:25:21,920
+And like everyone told me it was a bad idea as a journalist, because what happens is the world pages is 2% of coverage or something like that.
+
+298
+00:25:21,920 --> 00:25:28,220
+And then 80% of that's the Middle East and the rest is America, actually, or Europe, right?
+
+299
+00:25:28,240 --> 00:25:36,700
+And so it's really difficult to get stuff published from Latin America.
+
+300
+00:25:37,140 --> 00:25:38,700
+And so that was the beginning of it.
+
+301
+00:25:38,700 --> 00:25:49,680
+I mean, I was still sort of doing some work, but then we started on this project and I've kind of, I haven't really been in the loop with journalists for a long time, and it's a rapidly changing landscape.
+
+302
+00:25:49,680 --> 00:25:54,960
+My impression is that you've really got to think in generations, right?
+
+303
+00:25:55,400 --> 00:26:00,320
+And so there's this boomer generation who are quite conservative and the hardest to work with.
+
+304
+00:26:00,320 --> 00:26:05,720
+Then there's our generation, the 90s boomers is what the kids are calling us now.
+
+305
+00:26:05,720 --> 00:26:10,920
+And I think they're on to something, the more I pay attention.
+
+306
+00:26:10,920 --> 00:26:15,240
+But I'll show you another use case that we've got.
+
+307
+00:26:16,640 --> 00:26:17,640
+Do I have it here?
+
+308
+00:26:17,640 --> 00:26:19,180
+No, hold on a sec.
+
+309
+00:26:19,180 --> 00:26:25,620
+Let me see if I can pull it up because, yes, here we go.
+
+310
+00:26:26,680 --> 00:26:29,940
+Oh yeah, you have a new client.
+
+311
+00:26:29,940 --> 00:26:31,180
+Yeah.
+
+312
+00:26:31,180 --> 00:26:41,120
+Well, hopefully, this is patient zero, because we built a version, we had some journalists use it, and then it essentially wasn't quite good enough, right?
+
+313
+00:26:41,120 --> 00:26:46,860
+And there was technical sort of deep, boring code reasons for that, and we had to take it all apart and rebuild it.
+
+314
+00:26:46,860 --> 00:26:48,740
+And we've done that now.
+
+315
+00:26:48,740 --> 00:27:06,880
+So this is our open beta that's only been online a few weeks, and this is sort of the first person outside our sort of immediate clique of friends and people who are actually in the company to give it what I would call a load-bearing test, where they're actually trying to tell a story with it.
+
+316
+00:27:06,880 --> 00:27:17,160
+And this is Scott Stedman, who runs a place called the Forensic News, which shows, I'll pull them up actually, Forensic News.
+
+317
+00:27:20,780 --> 00:27:23,180
+And they've got this sort of these three principles.
+
+318
+00:27:24,200 --> 00:27:25,460
+Hold on.
+
+319
+00:27:25,480 --> 00:27:26,740
+It's struggling with Zoom.
+
+320
+00:27:26,740 --> 00:27:30,260
+Forensic News, Modern Investigative Journalism.
+
+321
+00:27:30,280 --> 00:27:32,360
+And let's go to about.
+
+322
+00:27:32,360 --> 00:27:37,820
+They have, there's evidence is key.
+
+323
+00:27:37,820 --> 00:27:38,780
+Articles are always free.
+
+324
+00:27:38,980 --> 00:27:41,180
+Clicks should not equal profit, right?
+
+325
+00:27:42,500 --> 00:27:45,840
+There's a free press dies behind paywalls.
+
+326
+00:27:45,840 --> 00:27:47,040
+But this evidence is key.
+
+327
+00:27:47,040 --> 00:27:55,440
+And this sort of emphasis on being public facing, it shows that there's a similar ethos that other people are thinking.
+
+328
+00:27:55,440 --> 00:27:57,980
+People are thinking along the same lines as us.
+
+329
+00:27:57,980 --> 00:27:59,400
+And they're younger people.
+
+330
+00:27:59,400 --> 00:28:04,960
+They're, you know, this guy's, I'm not sure how old he is, but he's definitely a lot younger than me.
+
+331
+00:28:06,420 --> 00:28:17,640
+And he's, you know, he's doing really well in terms of already doing great work, which is heavily research driven.
+
+332
+00:28:17,640 --> 00:28:26,700
+And we can unlock that and help him stand out and show that he, and help emphasize his points of difference.
+
+333
+00:28:26,700 --> 00:28:29,320
+Like I said before, the word is force multiplier.
+
+334
+00:28:29,320 --> 00:28:36,500
+And we're a force multiplier for this research work he's doing right here, which otherwise would have been 155 minutes of it.
+
+335
+00:28:36,500 --> 00:28:42,680
+So otherwise would have been only spoken of, not seen directly by the end user.
+
+336
+00:28:44,060 --> 00:28:51,520
+Well, we definitely need more people like asking the fundamental question of like can we trust what we see or read?
+
+337
+00:28:51,520 --> 00:28:57,200
+So I think people are asking that question, and that's a good thing.
+
+338
+00:28:57,900 --> 00:29:05,640
+And that it had the bad consequence because there's this transition to a new set of norms which hasn't happened yet.
+
+339
+00:29:05,640 --> 00:29:11,640
+And it's actually a good thing that the, because the New York Times said so is no longer good enough, right?
+
+340
+00:29:11,640 --> 00:29:15,480
+Or because Twitter said so is no longer good enough, right?
+
+341
+00:29:15,480 --> 00:29:20,780
+I mean, I don't know to what extent it ever was considered good enough.
+
+342
+00:29:20,780 --> 00:29:24,000
+But we shouldn't have this idealization of the old system.
+
+343
+00:29:24,080 --> 00:29:30,980
+But there's something I'll say about that is that, so the old system was described well by Chomsky.
+
+344
+00:29:30,980 --> 00:29:37,720
+He says, you know, you've got a sort of, it's sort of a goalposts system where you have someone on the, someone who marks the leftward boundary.
+
+345
+00:29:37,720 --> 00:29:42,960
+So say Bernie Sanders marks the leftward boundary of acceptable public discourse.
+
+346
+00:29:42,960 --> 00:29:45,540
+And that's further left than it was a little while ago.
+
+347
+00:29:45,540 --> 00:29:51,340
+And on the right, you've got, I don't know, somebody else who marks the furthest right point of public discourse.
+
+348
+00:29:51,460 --> 00:29:55,480
+And what's between those two points is reasonable debate.
+
+349
+00:29:55,480 --> 00:30:01,440
+And what's agreed on by the people between those two points is an established consensus.
+
+350
+00:30:01,440 --> 00:30:02,580
+Right?
+
+351
+00:30:02,580 --> 00:30:05,820
+And that was the model and there were a lot of problems with that model.
+
+352
+00:30:05,820 --> 00:30:11,100
+Now we've got a model where there are no goalposts and there is no consensus and everything's falling apart.
+
+353
+00:30:11,100 --> 00:30:13,300
+And that's not great either.
+
+354
+00:30:13,300 --> 00:30:13,580
+Right?
+
+355
+00:30:13,580 --> 00:30:23,260
+That's also, and that's actually very useful to bad actors, to authoritarians and criminals and, you know, cynical bad faith actors.
+
+356
+00:30:23,260 --> 00:30:27,400
+The more, you know, like little finger in Game of Thrones says, chaos is a ladder.
+
+357
+00:30:27,400 --> 00:30:29,180
+Right?
+
+358
+00:30:29,180 --> 00:30:42,160
+So this is the way to try and bring order to that chaos without re-establishing institutional control and without saying, okay, what we're going to do is we're going to have a bunch of experts say, this is real and that's not real.
+
+359
+00:30:42,160 --> 00:30:50,100
+And you, Joe Schmo at home, you listen to what you're told and you don't, you know, think, you know, better than you're betters, right?
+
+360
+00:30:50,100 --> 00:30:54,080
+That's, that's not, that's an intellectually bankrupt position.
+
+361
+00:30:54,080 --> 00:30:58,540
+So the answer is more openness and more engagement.
+
+362
+00:30:58,540 --> 00:31:00,680
+Actually, this is a great time to jump to my little presentation.
+
+363
+00:31:00,680 --> 00:31:02,180
+Do you mind?
+
+364
+00:31:02,180 --> 00:31:03,620
+Yeah, go ahead.
+
+365
+00:31:04,720 --> 00:31:07,900
+So this is a presentation I'm working on.
+
+366
+00:31:07,900 --> 00:31:10,400
+You can consider this a sneak preview, right?
+
+367
+00:31:10,820 --> 00:31:12,820
+We've got knowledge quality and the public sphere.
+
+368
+00:31:12,820 --> 00:31:21,160
+So you can imagine that this is the old way of doing things.
+
+369
+00:31:21,160 --> 00:31:29,180
+You have on the left here the subject matter, I beg your pardon, the subject matter, which is the actual story, the real world, right?
+
+370
+00:31:29,180 --> 00:31:33,260
+And you have a cone of information that extends away from that.
+
+371
+00:31:33,480 --> 00:31:36,920
+And the further you are from the events, the less information you have.
+
+372
+00:31:37,400 --> 00:31:41,060
+And at the other end is the general public, right?
+
+373
+00:31:41,060 --> 00:31:45,180
+And coming away from the general public is an attention cone.
+
+374
+00:31:46,200 --> 00:31:53,600
+So and where those two cones intersect, where attention and information meet, that's what I'm calling public knowledge, right?
+
+375
+00:31:53,600 --> 00:31:55,100
+And at the center of that is journalism.
+
+376
+00:31:55,100 --> 00:31:56,240
+This is the olden days.
+
+377
+00:31:56,240 --> 00:32:00,300
+This is how it worked in, you know, in 1989, right?
+
+378
+00:32:00,300 --> 00:32:02,120
+Or maybe even earlier, I don't care.
+
+379
+00:32:02,120 --> 00:32:08,620
+But look, now what would have happened is social media has come into the picture, and that's moved the center of gravity of the system.
+
+380
+00:32:08,620 --> 00:32:13,200
+It's moved the center of activity in the direction of the general public, right?
+
+381
+00:32:13,200 --> 00:32:15,660
+And that's probably mostly a good thing.
+
+382
+00:32:15,660 --> 00:32:19,160
+But there are issues with it, right?
+
+383
+00:32:19,160 --> 00:32:34,880
+One of the things that's happened, and there's been various attempts to fix the fake news problem which act in this side of the, which take place in this side of the map here, right?
+
+384
+00:32:34,880 --> 00:32:47,660
+They'll take a story after it's published and look at either using an algorithm or experts or whatever they'll try and then get between the story and the general public and act as a filter, right?
+
+385
+00:32:48,060 --> 00:32:51,760
+And that's not an approach we're saying shouldn't be tried at all.
+
+386
+00:32:51,760 --> 00:33:04,820
+We're saying what we also want to do, what we want to do is also have research content over here further from the general public closer to the actual subject matter, which then rebalances the system, right?
+
+387
+00:33:04,820 --> 00:33:12,380
+So and of course, you bring the general public, this more information reaches the general public in this model as well, right?
+
+388
+00:33:12,380 --> 00:33:19,700
+So this becomes visible, it becomes structured, it becomes something that you can look out and talk about.
+
+389
+00:33:19,720 --> 00:33:36,440
+And so where other places are on top of or in front of rather the, sorry, where other places are in top of or in front of this new story, we're behind and below.
+
+390
+00:33:36,440 --> 00:33:39,400
+So you want to show the iceberg, right?
+
+391
+00:33:41,700 --> 00:33:42,420
+Yeah, exactly.
+
+392
+00:33:43,820 --> 00:33:51,140
+Most of it's hidden, and there's the most information here, and the smallest number of people will look at it compared to the top layer.
+
+393
+00:33:51,140 --> 00:33:53,400
+Most people will look at the tweet.
+
+394
+00:33:53,400 --> 00:34:03,980
+Fewer people than that will look at the story, and the smallest number will look at this, but that will have the highest quality of engagement, because it will have the most detail, you know exactly where the information came from, right?
+
+395
+00:34:04,480 --> 00:34:17,580
+And then those people can feed back into their reviews, maybe have reviews or whatever, but even now they can just talk about the quality of the research that occurred on existing channels like Reddit or Twitter or whatever.
+
+396
+00:34:17,580 --> 00:34:23,040
+And that will begin a conversation about what's an acceptably checked fact.
+
+397
+00:34:23,040 --> 00:34:24,340
+What does that mean?
+
+398
+00:34:24,340 --> 00:34:24,920
+Right?
+
+399
+00:34:24,920 --> 00:34:27,179
+And we're going to get forensic about what that means.
+
+400
+00:34:27,179 --> 00:34:36,699
+So, you know, the other way to imagine it, there's a canoe and that's the original news article that actually transports the headline, right, the cargo.
+
+401
+00:34:36,699 --> 00:34:44,340
+And then social media is like a sail that's been reached, that transports it further and moves it faster, right?
+
+402
+00:34:44,340 --> 00:34:52,239
+But also makes it more prone to capsize, makes it more prone to getting blown around by powerful winds, right?
+
+403
+00:34:52,239 --> 00:34:54,000
+So what we are is the keel.
+
+404
+00:34:54,000 --> 00:35:04,700
+We're on the other side adding a small amount of friction, actually, and creating, you know, stability in the process and giving stability to the information ecosystem.
+
+405
+00:35:04,700 --> 00:35:08,580
+And that is, you know, this is the basic approach we want to take.
+
+406
+00:35:08,580 --> 00:35:12,540
+And, you know, you've seen the actual thing, you've seen the theoretical framework.
+
+407
+00:35:12,540 --> 00:35:13,520
+Any questions?
+
+408
+00:35:13,520 --> 00:35:16,100
+What you showed was pretty fascinating.
+
+409
+00:35:16,100 --> 00:35:19,600
+And this is another guy that you showed called Forensic Nils.
+
+410
+00:35:19,600 --> 00:35:24,000
+It poked my head about this other group called Forensic Architecture.
+
+411
+00:35:24,000 --> 00:35:34,380
+And what I like about Forensic Architecture is that they show a 3D space and how they are able to derive based on lots of different media articles.
+
+412
+00:35:34,380 --> 00:35:35,540
+What happened?
+
+413
+00:35:35,540 --> 00:35:39,620
+Like social media videos, for example, the Buried explosion.
+
+414
+00:35:39,620 --> 00:35:45,460
+But what I would also like to have known is the underlying research methodology.
+
+415
+00:35:45,460 --> 00:35:54,380
+And how did they piece all to get all these media videos from the public to create a cohesive snapshot of what actually happened on that day?
+
+416
+00:35:54,380 --> 00:35:57,920
+Yeah, look, I want that almost more.
+
+417
+00:35:58,000 --> 00:36:01,880
+You know, they're one of the people in the world I would most love to get using this tool.
+
+418
+00:36:01,880 --> 00:36:03,220
+Oh, you heard about these guys?
+
+419
+00:36:03,220 --> 00:36:04,560
+I've known about them.
+
+420
+00:36:04,560 --> 00:36:14,880
+I actually, first time I heard about them, I met a guy in Ecuador from the team who was visiting, and I've been fascinated by them ever since.
+
+421
+00:36:14,880 --> 00:36:22,380
+And I'm sure there's been some email exchanges with them, maybe with the last version or something like that.
+
+422
+00:36:22,380 --> 00:36:24,660
+But they're the kind of people we want to get using this.
+
+423
+00:36:26,640 --> 00:36:29,900
+Are you in touch with them by any chance?
+
+424
+00:36:29,900 --> 00:36:32,400
+Are you in touch with them by any chance?
+
+425
+00:36:32,400 --> 00:36:35,220
+Well, I'm in touch with them, and they're not that in touch with me back.
+
+426
+00:36:36,920 --> 00:36:37,740
+It's a bit like...
+
+427
+00:36:38,620 --> 00:36:41,960
+It's a big change that we're asking people to embrace here.
+
+428
+00:36:41,960 --> 00:36:44,560
+And it's about finding who's going to be that first person on the dance floor.
+
+429
+00:36:45,000 --> 00:36:53,220
+And it's literally just today with this new version, we've had Scott, our first person, get on the dance floor.
+
+430
+00:36:53,220 --> 00:37:05,480
+But I think he's an excellent first user, and which is important to us because the early users you get, they become part of your company's DNA because you build for them, right?
+
+431
+00:37:05,480 --> 00:37:06,840
+And so we've been very...
+
+432
+00:37:06,840 --> 00:37:12,900
+That's one of the reasons we're not advertising, and I'm basically going around bothering people who are very busy people, right?
+
+433
+00:37:13,840 --> 00:37:16,420
+Saying, hey, please look at my app.
+
+434
+00:37:16,420 --> 00:37:17,580
+I think it's going to change the world.
+
+435
+00:37:17,580 --> 00:37:19,660
+And they're like, yeah, cool story, bro, right?
+
+436
+00:37:19,660 --> 00:37:23,780
+But I think it's going to be like pushing a boulder off a hill, right?
+
+437
+00:37:23,800 --> 00:37:40,360
+Once it's hard to get it moving, but once it starts going, it's going to be unstoppable because originally it's a novelty where it's like, oh, wow, this person's making themselves accountable and they're explaining themselves in this really rigorous way, right?
+
+438
+00:37:40,360 --> 00:37:47,200
+And that'll be a novelty and then more people will use it and then slowly becomes, well, why aren't people doing this by default, right?
+
+439
+00:37:47,200 --> 00:37:54,040
+Like obviously there are times you have to protect someone's identity or something like that, but that's not most of journalism, right?
+
+440
+00:37:54,040 --> 00:37:56,780
+Like that's not most of knowledge production, right?
+
+441
+00:37:56,780 --> 00:38:01,760
+Like mostly knowledge is produced in a civic public space, right?
+
+442
+00:38:02,580 --> 00:38:11,600
+And very rarely do you have to put on a trench coat and go down to a dark alley to be handed a manila folder by a man, you know, smoking a cigarette.
+
+443
+00:38:11,600 --> 00:38:18,240
+So perhaps we're not actually creating something new, we're merely bringing it back to what it originally was.
+
+444
+00:38:18,240 --> 00:38:20,660
+Well, that's, I mean, it's old principles, right?
+
+445
+00:38:20,840 --> 00:38:29,180
+I have been saying that there's a fundamental enlightenment principle of strength through vulnerability, right?
+
+446
+00:38:29,180 --> 00:38:32,180
+Government should be electable, so they can be kicked out of office.
+
+447
+00:38:32,180 --> 00:38:34,920
+Their vulnerability makes the system...
+
+448
+00:38:34,940 --> 00:38:44,080
+I'm going to go ahead and start with the first one, which is, you know, the idea of falsifiability.
+
+449
+00:38:44,080 --> 00:38:52,600
+So, you know, if you get anything but the experiment results you predicted, your theory has been falsified, and it's not real, right?
+
+450
+00:38:52,600 --> 00:38:59,020
+But because of that extreme vulnerability, when it survives, there's the meaning of that is really strong.
+
+451
+00:38:59,020 --> 00:39:08,260
+And, you know, then we have bibliographies in academia that's not scientific, like in the humanities, and that's about making it easier to check if you're lying, right?
+
+452
+00:39:08,260 --> 00:39:15,760
+But I tell you what this was, I'm quoting this guy, and it's on this page of this year's edition of the book, right?
+
+453
+00:39:15,760 --> 00:39:18,340
+So you can go find the edition and look and say, no, he didn't, he didn't say that.
+
+454
+00:39:18,340 --> 00:39:20,660
+He said something else, or she, or whatever, right?
+
+455
+00:39:20,660 --> 00:39:25,100
+And that's again, strength through vulnerability, right?
+
+456
+00:39:25,100 --> 00:39:32,820
+And so that's what we're trying to bring to digital nonfiction, you know, day-to-day public knowledge creation.
+
+457
+00:39:32,820 --> 00:39:33,460
+I see.
+
+458
+00:39:33,460 --> 00:39:44,640
+Well, this also reminds me of you, have you remembered about a few years ago where the idea of putting cameras on police, body cameras were absolutely controversial?
+
+459
+00:39:44,640 --> 00:39:50,240
+And some of the arguments I've heard by the police is, what if I need to bring it to the toilet?
+
+460
+00:39:50,240 --> 00:39:52,140
+So you could go on from there.
+
+461
+00:39:52,140 --> 00:39:54,460
+Yeah, well, I mean, we have a pause button, right?
+
+462
+00:39:54,480 --> 00:39:57,620
+And we, it's not quite like a body cam on a cop.
+
+463
+00:39:58,840 --> 00:40:02,880
+Because it's not this sort of, it's not like an external surveillance system.
+
+464
+00:40:02,880 --> 00:40:09,780
+It's not like a camera that's watching a factory worker to make sure they don't, you know, pee in a bottle either, right?
+
+465
+00:40:09,780 --> 00:40:12,360
+You turn it on and you turn it off.
+
+466
+00:40:12,360 --> 00:40:22,480
+There may be, we're concerned, and we want to balance against this concern, that it might be used to overwork people, right?
+
+467
+00:40:22,480 --> 00:40:30,240
+To say, well, in 12 hours, you've got to produce, you know, 10 hours and 15, 11 hours and 59 minutes of research content.
+
+468
+00:40:30,240 --> 00:40:35,760
+And we want to, we're going to try and build in some ergonomic, you know, digital ergonomic.
+
+469
+00:40:35,780 --> 00:40:46,140
+Oh, did you remember about, like, was it New York Time where they wanted to put a, like a sensor under the desk to check for presence of journalists on the desk?
+
+470
+00:40:46,140 --> 00:40:46,920
+Wow.
+
+471
+00:40:46,920 --> 00:40:47,580
+Yeah, no, we're not.
+
+472
+00:40:47,900 --> 00:40:58,040
+I can't remember, I can't remember which, whether it was New York Time or, sorry, but it was like an outcry by the journalist, because like you could potentially use that data to figure out.
+
+473
+00:40:58,040 --> 00:40:58,200
+Yeah.
+
+474
+00:40:58,200 --> 00:41:04,260
+So, I mean, what we're, what we're trying to say, look, we are at the moment, one of the values we're calculating is the, is the time spent by the journalist.
+
+475
+00:41:04,260 --> 00:41:07,100
+That's basically the only value we're adding, right?
+
+476
+00:41:07,100 --> 00:41:12,720
+Next, we want to do ratings, and then we want to try and build slowly a sort of matrix of values.
+
+477
+00:41:12,720 --> 00:41:21,480
+Like you have all these values about the weather, you have the temperature and the humidity and the, you know, the barometer barometric pressure or whatever it is.
+
+478
+00:41:21,480 --> 00:41:29,500
+And once you have those multiple variables, you can start to make, you know, and then you've got this data, you can start to do all kinds of things, right?
+
+479
+00:41:29,500 --> 00:41:32,060
+And we've got to start somewhere, and this was the easiest one.
+
+480
+00:41:32,060 --> 00:41:35,060
+I mean, still quite, still becomes quite a challenge to define, okay?
+
+481
+00:41:35,060 --> 00:41:39,080
+So what counts as research, as time spent researching?
+
+482
+00:41:39,080 --> 00:41:45,600
+So for example, the highlights when someone's talking, we've recently decided that no, we're not going to count them as research time.
+
+483
+00:41:45,600 --> 00:41:48,300
+When your mouth's moving, you're not researching, right?
+
+484
+00:41:48,300 --> 00:41:49,280
+You're doing something else.
+
+485
+00:41:50,620 --> 00:41:56,600
+You're then on the side where you're outputting, and what we're measuring is the input of information that you took, right?
+
+486
+00:41:56,600 --> 00:42:02,640
+And of course, we're trying to streamline that inputting and outputting of information as well.
+
+487
+00:42:02,640 --> 00:42:11,120
+So as you're going, you can output these little research notes, which are like tabs in a binder.
+
+488
+00:42:12,300 --> 00:42:18,760
+But in terms of building that matrix of values, we don't even know what all of them are going to be yet.
+
+489
+00:42:18,760 --> 00:42:35,780
+As we start to do stuff, we'll have more of an observable community to see what is it that actually differentiates people, and what's something that's interesting and worth measuring.
+
+490
+00:42:37,240 --> 00:42:38,360
+Well, thank you very much.
+
+491
+00:42:38,580 --> 00:42:48,580
+I think we've covered practically the whole concert of Write In Stone, and it's really fascinating, and I certainly hope it gets explored more and catches on with its own merit as well.
+
+492
+00:42:48,580 --> 00:42:49,340
+Thank you very much.
+
+493
+00:42:49,340 --> 00:42:50,720
+It's been a pleasure.
+
+494
+00:42:50,720 --> 00:42:52,760
+Is there anything you would like to...
+
+495
+00:42:52,960 --> 00:42:58,560
+Well, I mean, you know, people should go to www.writeinstone.com and play with it.
+
+496
+00:42:58,560 --> 00:43:06,340
+If you're in the realm of trying to convince people of the facts, right?
+
+497
+00:43:06,820 --> 00:43:08,760
+You know, last, here's how I'll say it.
+
+498
+00:43:08,760 --> 00:43:11,700
+We're actually the anti Twitter and we're not against Twitter.
+
+499
+00:43:11,700 --> 00:43:13,600
+They've got a place in the ecosystem.
+
+500
+00:43:13,600 --> 00:43:18,700
+When you want to be, you know, fast and flippant and fun, you go to Twitter.
+
+501
+00:43:18,700 --> 00:43:22,800
+And when you want to take your time and get it right, you use Stone.
+
+502
+00:43:22,820 --> 00:43:28,800
+And it's a product that I think we've been hacking away at this for a while and our product has gotten better.
+
+503
+00:43:28,800 --> 00:43:31,420
+And, you know, the environment is evolving too.
+
+504
+00:43:31,420 --> 00:43:33,760
+And I think the market is ready for this tool now.
+
+505
+00:43:34,040 --> 00:43:44,800
+You know, after Trump and the coronavirus and it just keeps getting worse, we struggle as a society, as a global society, to agree on what's true.
+
+506
+00:43:44,800 --> 00:43:46,740
+And that's really dangerous.
+
+507
+00:43:46,740 --> 00:43:51,240
+And I think our approach, other people want to build walls, right?
+
+508
+00:43:51,240 --> 00:43:53,260
+They want to build walls and they want to build a fortress.
+
+509
+00:43:53,260 --> 00:43:58,300
+And inside that fortress, you know, legacy journalism can starve to death slowly, right?
+
+510
+00:43:58,300 --> 00:44:04,860
+Whereas what we want to do is build windows, not walls, and let people in, and let people see what's going on.
+
+511
+00:44:04,860 --> 00:44:05,280
+But you know what?
+
+512
+00:44:05,280 --> 00:44:06,900
+That's also going to let in some sunlight.
+
+513
+00:44:06,900 --> 00:44:13,100
+And that's going to have, you know, the people who are now subject to scrutiny, you're going to have to behave a little bit better.
+
+514
+00:44:13,100 --> 00:44:20,660
+And both that, you know, and that's how you can see people, you know, this rift between the audience and journalists can be healed.
+
+515
+00:44:20,660 --> 00:44:28,660
+And ultimately, rebuild the trust between the audience and the journalist, so that the journalists can trust the public and the public can trust the journalist.
+
+516
+00:44:29,160 --> 00:44:34,880
+Then we can hopefully start to have more intelligent conversations that don't just go in circles of rage, you know?
+
+517
+00:44:34,880 --> 00:44:35,980
+Thank you very much.
+
+518
+00:44:35,980 --> 00:44:45,200
+And also thanks a lot for showing your project to both Designing Open Democracy and this upcoming innovation Trademarked.
+
+519
+00:44:45,200 --> 00:44:46,080
+So, okay, yeah.
+
+520
+00:44:46,140 --> 00:44:47,180
+Thanks a lot.
+
+521
+00:44:47,180 --> 00:44:48,140
+All right, great to speak.

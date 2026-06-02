@@ -1,0 +1,613 @@
+Right. Hello, yep, good, thank you. Well, greetings all, and it's wonderful to see all of you here.
+
+And this is our last Basil's Table. Now, I want to point out, this sounds rather self-centered when I say Basil's Table. The title was not mine.
+
+It was actually done by Triple 8, and they thought it would be a good idea to have Basil's Table. So, this is an extension of a number of series that we have had. And I'd like to welcome you all.
+
+But before we start the welcome, I think it's important that we acknowledge that the First Nations people, as the traditional owners of the land, which we are here for this discussion taking place, the Wurundjeri people of the Kulin Nation, and I pay respects to all elders, past, present and emerging. My job is going to be actually very, very wonderful. All I have to do is to actually introduce the speakers, who are, as you can see, the array there, and they are all very interesting people, and they've done some very interesting work.
+
+And the first one is Elena, whom I've met before, who is an architect and is doing a Ph.D. at Deakin University, and she specializes in substantial, or sustainable, sorry, urban systems, regenerative development, participative planning, co-design, and collaborative housing. Now, that's amazing, isn't it?
+
+To think that an architect is going to do all that, or lead that, with experience across public buildings, including international aquariums, local education projects, apartments, and private residential, the focus has moved from environmental and socially sustainable design. Jose, who is the writer of the end, whom I also had the pleasure of meeting, who is also a very interesting man, who is sort of from the States originally, and now in Australia. He holds a doctorate from the Queensland University of Technology in critical globalization studies, winning their award for the outstanding doctoral thesis.
+
+So we are honored to have you, Jose. And amazingly that he sort of has published over 70 articles, chapters and papers and focuses his research on the experience and prefigurative innovations we need to navigate the epic times we live in. And talking about the epic times we live in, that is really, we would like you to think about and ponder about that because we are living what an old Chinese curse is to be in very interesting times.
+
+Because for the first time, I think, we have to be, we have used that. I think, where is Jacques?
+
+There is Jacques?
+
+Jacques, yes. But Jacques and I go back decades, where we used to talk about the importance of justice in terms of thinking locally and thinking globally. And now we actually know, because of the world that we are in, we have to be thinking locally.
+
+First, I used to say globally before, but now I think it's thinking locally and think what are the ramifications of that globally. Then, the next person is Bridgette, who is a professional futurist. My word, futurist.
+
+That's awesome, awesome. Because who can tell on the future?
+
+But anyway, she's a professional futurist and para-academic who is curious about post-growth innovation and design in crisis. She teaches strategic foresight, innovation and entrepreneurship at Swinburne. Bridgette asks a lot of questions and doesn't play golf, which I think is a tragedy, and enjoys more than the odd glass of wine, I'm glad.
+
+So, welcome. And then we have Alexa Pantitichan. He's a technologist and social entrepreneur with a focus on distributed technologies and large scale cooperation.
+
+Trained as an engineer, Alexa has the vision of technologically advanced Australia with active regional hubs and is currently the acting president of Linux. Is that how you pronounce it?
+
+Yeah. Linux, users of Victoria, it's interesting, and an organizer designing open democracy and blockchain for social impact. And I'm supposed to introduce myself according to Antony, our wonderful chair.
+
+Well, my name is Basil Varghese. I am sometimes, I suppose, one of these ancient people who have been involved with social justice issues for over 50 years. I think the time that drew my passion was really to do with the Vietnam War, black rights, the anti-apartheid movement.
+
+And I've been involved with those issues, at least when it comes to racism and gender. And now I'm involved with 888 as their patron. And also I'm involved with The Voice, which I think is a crucial thing for Australia to face.
+
+And I don't think I'll, I don't like talking about myself, but anyway, I've gone, done work with lots of, lots of people. Also with, there's here Jeannie from the Brotherhood of St. Lawrence, where I spent a lot of time there.
+
+And so it's been, for me, it's been a wonderful time. And now my role is to affirm and support young talent. I believe we need to support and affirm them.
+
+So, and I hope you get all the affirmation to do your work. And now I'd like to introduce our chair, Antony, who has put a lot of work into this with Sonja, where is she?
+
+There. And again, thank you. Yeah, yeah, yeah, thank you.
+
+Well, look, welcome, everybody. It's December, isn't it?
+
+And sometimes events are a bit, you know, up and down, you're not quite sure how many people come along. It's crazy, we have people saying, oh yeah, I'm coming. Oh, yeah, but I'm coming, yeah, we'll book.
+
+And then someone says, oh no, I'm not coming, but I'm coming. And then all of these last minutes, and they just go, we were going to have a long table, and then we weren't, but then a long table stayed. So it's just December, things go really strangely, but it's lovely to see you all here.
+
+My name is Antony McMullen, I'm the chair of the 888 Co-operative Causeway. So we're a cooperative. I just have your assistance there.
+
+Oh, okay. Yeah, no worries. How's that?
+
+Is that really loud, isn't it?
+
+Yeah, yeah. I'm sure you can hear me. Yeah, cool, cool.
+
+Yeah, so we're a little cooperative co-working space in the middle of the city. Basil, who's our patron, is also our landlord and has been very supportive of our cooperative and running these events. So we not only provide co-working space for our members, we also want to contribute to discussions about the social economy and thinking about new ways of being, new ways of doing business, new ways of being in the world.
+
+And we thought we'd end the year on something a little bit more kind of speculative, a little bit more big picture, because we've had some quite sort of practical discussions and things like that, but we thought, yeah, we would like to sort of think about the future a little bit. And we're in a really difficult time. We're looking at parts of Australia that will be already uninsurable because of climate change.
+
+We have got a lot of the institutions that we've trusted over many years are starting to break down. We're concerned about corruption at different levels. There's a polarisation between people.
+
+So what people could agree to disagree on previously, now they can really come at loggerheads. So cooperation, is it something that is going to become, it's going to become something that is more important for us in communities?
+
+So how can we work together?
+
+If we can't get insurance, are we going to stay here?
+
+What are we going to do?
+
+How are we going to build local institutions in a way that sustains us in very difficult economic times?
+
+So we've got the sort of global dislocation there. So we are, as Basil mentioned, living in quite interesting times, as they say, but we have a very interesting panel, which have all been introduced and welcomed. And it's such a pleasure to have you all here as part of this discussion.
+
+And I thought we would start the discussion with really what drives you. So you've come, you've given your time this evening to talk about the future, to talk about technology. We're going to have a discussion about those really important things.
+
+But before we do that, I'm interested in what drives you, why you do what you do. And yeah, just talk a little bit maybe about where you come from, bit of your story and where you'd like to go. So there's no particular order here.
+
+And Alexei, you are holding the microphone. So you can go first if you like. Thank you.
+
+Was worried you were going to pass it on to me, but then the word came to me. The drive for me is, I think, I can say it in one word, is potential. I was trained as an electrical engineer.
+
+And electrical grids are the largest one-piece system that the mankind has made. It's a very interesting piece because it can just fail and you have to black out. So when you deal with electrical engineering systems and software, you realize how big systems are like and really influence my thinking.
+
+And you grow up and you build up an understanding of policies and how society works and economic and everything. And I saw the very same principles that we were learning in electrical engineering and engineering as a whole. I can use the same to understand social systems.
+
+And then I could see the huge potential that we can have as humans when the information flows differently. It's a bit hard to explain, but as again, it was being reflected in the things that I was doing as I switched to IT. And in IT, we have a lot of very interesting things.
+
+One of them is hackathons, is events where people come together. Normally, over a weekend, they form teams. Sometimes they don't even know each other before they come to the venue.
+
+They form teams two hours later. They're starting ideating and one and a half day later, they're in front of judges and presenting the work that they've done together. And it's amazing to see when things are facilitated and trust is established between people through some mechanisms.
+
+How much people can achieve together. It almost looks like magic. And I've seen a lot of these cases.
+
+And I was lucky to be a contractor in having short contracts in different types of organizations and universities and governments and smaller startups. And I saw where people are organized, workforce are organized in a way that they can't really express themselves and all sorts of things. How the whole organization is very slow and has a lot of problems.
+
+But when the information flows between people and there's dignity and respect, how small teams can carry really heavy weights and countless examples of that in tech that I can name. So that's what drives me, like the potential that we can achieve if we can basically work out to how to work together. And there needs to be no compromise as far as I've come to believe.
+
+Thank you, Alexa. I didn't want to stop you talking. I think I'll go for four minutes.
+
+Okay. Oh. Do you want another minute?
+
+No, no, no. It's okay. I normally go over time at this time.
+
+Elena, I was watching the TV. I was watching the election and I saw someone's face pop up and I went, I know this person and she's running informal politics. And I went, oh my goodness, it's amazing.
+
+So many facets to you. And yeah, I'm sure you've got a story to tell. How did you end up there and doing what you do?
+
+Oh, I don't know. I mean, how do I end up anywhere?
+
+A combination of kind of accident and also sort of just relentless stubbornness that means I continue to pursue things even though the odds are very much against me, I guess. And Footscray, I guess, is another classic example of that, where we really, I was running for the Greens, we really had no shot in a safe labor seat. But we, at the last minute, we got the liberal preferences and it just kind of changed the game and suddenly I was on TV and getting a lot more of Footscray in the coverage than we ever anticipated.
+
+And prior to that, my background is in architecture, but I've always been passionate about environmental sustainability. And then, through my career, I've become more and more interested in social sustainability and social collaboration as a real means of achieving environmental sustainability and environmental justice. And Jacques here and one of the stories that he told when I spoke on a panel here previously is actually one that I've used quite recently, and it was around, I think, your children and your daughter suddenly being able to tie her shoelaces and a huge amount of celebration about that happening.
+
+But your reflection, I think, that there had been many weeks and months and years of your son helping her to tie her shoes, and that that had gone by with not much of a remark. And so I'm very passionate about what it is that we can do together, and not necessarily just the idea that we need to be able to do everything apart and as individuals. And that is similar to my experience through architecture.
+
+I was working in housing, and I was seeing what we were doing at a high res, kind of high density, and also at urban sprawl and en masse. And it just wasn't working. It wasn't working socially.
+
+It wasn't working from an environmental perspective. And it was all highly individualized. And as an architect, you either work in that space or you work for individual clients, but there was never an opportunity to kind of capture that collective potential, I suppose.
+
+And so that led me to become interested in Co-Housing and collaborative approaches to housing. And that's been my real focus for a long time about people being able to come together and co-design where and how they want to live. And I think that that how bit is really important.
+
+And also to be able to collaboratively govern those spaces and to decide together what it is that they want to achieve. And not to always having to be battling, I guess, against the system that requires them to do everything on their own. And I think at some point, around your 18th birthday, you're suddenly told that you don't need to share your toys anymore.
+
+That actually you should go out and get your own car and your own house and all of those sorts of things. And everything becomes a competition. And I don't think it has to be that way.
+
+So I'm really interested in how housing can help shift that narrative. Thank you. I'm worried that it's gonna pull everything down.
+
+That's me being the fatalist. Hi, I'm Bridgette. I get out of bed in the morning in order to hope that we have hope for generations to come.
+
+That's the reason I do what I do. I don't have children, but I'm surrounded by kids, and I worry a lot about what their world is gonna be like in 30 years. I think it's about as good as it's gonna get for them right now, which is unfortunate, so just a bit of dystopian in me.
+
+I came to this position after working in design and brand strategy for probably long enough to find my way to a foresight course, and I was fed up, basically, with working on things that lasted 60 seconds, or maybe six months in the market, and that there's gotta be something different. And I, yeah, found my way to a foresight degree. So yeah, this is a good place to be.
+
+This is a good space to be in. And then I had, I think, the good fortune, or a little bit of erratic kind of planning serendipity. Like, oh, good, this feels right.
+
+I now torment mostly MBA students at Swinburne University who are doing postgraduate studies. I used to torment design students, and the business will say, can you come do a bit more of that for us over here?
+
+So that's what I do. And it's great because I just get to ask questions and don't necessarily have answers because we don't always have to have the answers. And I think that's the thing that I grapple with all the time, that we live within this perception that we need certainty, which is absolute nonsense.
+
+We can't have certainty in a complex adaptive system, end of story. And yet we constantly pursue this sense of certainty. And I'm not saying that that's bad.
+
+I'm simply saying that it leaves us with a lack of awareness of all those opportunities that are out there. And so my interest in what I refer to, and I'm not the only one, as post-growth innovation, is what can we do when what we're doing just has to stop?
+
+And my love is tormenting those students and getting them to ask better questions. That's really my job. And I've just come off day two of running a three-day innovation lab with 260 year seven and eight students, which has been amazing.
+
+Yeah, it's really cool. And we started with futures literacy, so tick. But that is where I think, that's what gets me out of bed in the morning, knowing that not me making a difference, but helping people ask better questions might help shape a better world in 150 years.
+
+Yeah. Yeah. Not the immediate future.
+
+No. You've written that one off. Sorry, guys.
+
+Different futurists will give you different takes. When do you want your positivity?
+
+When do you want your pessimism?
+
+Like a sliding scale. Okay. When I was thinking about the question of what drives me, a couple of things came up.
+
+The first is that not a lot drives me because I'm pretty burnt out these days. Two years of a pandemic, kids in the house locked up and feeling overworked. I've been getting a lot of rest.
+
+I've been doing a lot of yoga, Nidra, which is a sleep meditation. My experience is it's a practice that enlivens. It's like, what can drive me?
+
+Well, a sense of rest. So, you know, I think, and then I think, okay, when I go back to, you know, where I came from, I think there's this kind of, you know, if we're lucky, we have good childhoods. We get shown a lot of love.
+
+I was given a lot of love. I was given unconditional love by both my parents. And I got a lot of rest, you know.
+
+I wasn't, you know, they didn't put me to work right away. And, you know, I got to enjoy my childhood. Unlike them, they had very difficult childhood.
+
+They're abusive, you know, environments. So I think that that kind of bosom, the bosom of love, the bosom of spaciousness of rest is powerful. And, you know, I think a lot of my ability to operate in the world comes from, from the love that, you know, my parents and other people have given me.
+
+So I think what drives me, well, that's one answer. I think for me, the other one is, is I grew up amid a lot of contradictions. So my dad was a history professor, a Chicano rights activist.
+
+My mom, you know, was a community development practitioner. And they were part of the civil rights movement in the United States, the Chicano power movement, alongside the, you know, African Americans, blacks, Asians, Jews. It was really a rainbow coalition of different ethnic groups that fought together for rights in the United States.
+
+And so, you know, I got taught a narrative in my high schools that the United States civilized North America and is bringing democracy to the world. That was the narrative you got in high school. And then at home, the narrative I got was that the United States committed genocide in North America and it's spreading neocolonialism around the world.
+
+Very different narratives. And so, I grew up with these very quite, quite different narratives of the world. And when you grow up like that, you ask yourself who's right, you know?
+
+What's going on here?
+
+And I think, you know, the way I describe it is I grew up in the cracks between these different views of the world, and asking these questions, what's going on here?
+
+You know, why was my best friend circle Japanese American, Guatemalan, Hungarian, and Korean?
+
+Somewhere in Los Angeles, why?
+
+You know, so I think that other thing is just that curiosity born of these contradictions. And I think that the epic times that we live in today are a time of great contradiction. And I think that's, you know, it's a challenge, but it's also helps us to think about what the world that we're in and how do we what do we do?
+
+I'm passing the baton back, and I'm gonna pass it right back over in a moment, because the first question that I'd like to pose is to you, Jose, and you've already sort of touched on this. We're in a period of global, political and climate uncertainty. There are populist solutions being put forward by both the left, the right, and everyone in between.
+
+We're living in a time where they're just competing solutions, competing ideas, and it's very difficult to map out a future that looks maybe more cooperative, more cohesive. So I'm just wondering, we're sort of moving from a big picture, and we're gonna drill down a little bit through the conversation, but just to start with, you know, what are the alternatives to where we're at at the moment in terms of this polarization?
+
+Are there alternatives?
+
+How can we build a better future together?
+
+Yeah, okay, so I think the starting point of left-right, so I began sort of thinking left-right, that's how kind of conventional politics is framed. And that, when I thought about it, I thought, okay, there's some truth in there, but it obscures a lot. So the truth for me is that we have a billionaire problem.
+
+We got way too many billionaires. That's very, very simple, clear for me, for me, you know, I'm a socialist. I voted, you know, I wanted Bernie Sanders to win in the United States, right?
+
+So you know where I sit on the spectrum. But for me, there's a clear billionaire problem. And then, according to my colleague, Barat Dahia, we also have a billion people in slums problem, right?
+
+So we're living in a time of absolute extreme inequality, and that is generated by a political economy, by a global political economy. You know, you can call it a number of different things. So the truth to left and right is that there is a side that is squarely for equity and for greater equivocality, for greater participation.
+
+And I don't think you can argue against that. And I don't think you could actually say that that problem doesn't exist. We've seen it grow and grow and grow and grow for decades and decades and decades.
+
+So from that point of view, I think what gets talked about from the left right point of view, at least in economic terms, to me is fairly, it makes sense. But where the left right break down is on a couple of other lines. So for example, if you go historically, the labor in Australia were anti-immigration.
+
+What was the policy in Australia?
+
+Yeah, what Australia policy?
+
+Supported by unions. The unions in the United States also supported anti-immigration in the United States. So it's thematically, it's a pattern, right?
+
+It isn't just anecdotal. So you have these crossovers. You have the teal here.
+
+So we're talking, the teal, the recent election, right?
+
+And they're supposed to be liberal kind of suburbs, but now they're worried about climate change and they have LGBTQ kind of affiliations or empathies, okay?
+
+So they're moving in that direction. So there's some crossovers there. But for me, it really breaks down when you begin looking at the bigger historical changes.
+
+So when I really started thinking about left, right, one of the interesting things that we've seen over the last several centuries is the two primary choices that we had, socialism, capitalism. They're both products of the Enlightenment. And they are both what we might call modernizing ideologies.
+
+They're ideologies that, they're humanist, so they saw humans as imposing, you know, our will on the world. Rationalist, we can figure things out using our minds, right?
+
+We can apply order to the world. But when you look at the results of these ideologies, both left and right, in the Soviet Union, in socialist countries, and in the United States, it's absolute disaster over the last several centuries. And so this is why people like Bov and Duda de Jesus Santos talk about left-right as Western constructs.
+
+Say, they are products of the Enlightenment and Western modernity, and they both alienated fundamentally from the living systems that we're in. Or, in other terms, they're imperial formations that are extractive. They're about using the resources and people within whatever periphery as much as possible.
+
+And they do not have a living systems view of the world. So from that point of view, left-right begins to become much more of a, both a Western construct, it looks much more as a rupture from kind of these pre, these sort of indigenous ways of thinking or ways of thinking that were more connected to the land, or an understanding of how living systems actually work. So then from that point of view, you can begin saying, well, what comes after, right?
+
+And so for me, what comes after are, I mean, there's a lot of things that are going to come after. These ways of thinking, thinking that are divorced from our living systems, they can't survive because we won't survive if they survive, right?
+
+So new forms of thinking. So I've been watching the peripheral, William Gibson story on prime. And there's a term called, in the future, this is like a futuristic kind of scenario.
+
+The revolutionaries are called neoprims. Neoprims just stands for neoprimitives, right?
+
+And the neoprimitives are basically saying we have to get, we have to go back to square one, right?
+
+Technology is out of control. We've completely destroyed ourselves and the world through technology. So there's this, kind of this radical anti-technological view, right?
+
+So that's, I'm not saying that's not the alternative I want, right?
+
+But that begins to see the rupture out of that left-right modernity. For me, the core concept that I want to put forward about, you know, sort of future thinking is the commons. And I see the commons as that which we all mutually depend on for our survival and well-being, right?
+
+What is it that we mutually depend on for our survival and well-being?
+
+And if you look at that concept of what we mutually depend on our survival and well-being, there's a logic that I call implication. And what that means is that people are implicated into shared concern. So, you know, wind back to early 19th century and unions here, white male unionists are worried about losing their jobs to these foreigners, and they mutually implicate themselves into, well, we have to protect our jobs.
+
+But of course, they've excluded a whole number of other groups at the same time, right?
+
+So this logic of implication can be an exclusivist logic of implication, but it can also be a logic of implication that draws a larger group of people in. So we know that without a safe climate, we're all stuffed. We're all just completely stuffed.
+
+And so a safe climate is a commons, it's an atmospheric commons that we all mutually depend on for our survival and well-being. And that implicates all of us. And it doesn't matter if you're a white unionist or, you know, someone else.
+
+It doesn't matter. And so this is when the exclusivist implication begins to break down. So somewhere in there, I see the future of political ideology.
+
+In the breakdown of the exclusivity, and the opening and the implication into larger forms of thinking about how we're part of commons, how we need to fight for those commons, how we need to mobilize together for those commons. Yeah, I was just reflecting the other day when, you know, there's this whole thing with woke, you're woke, and it came out of the US, that sort of thing. And then I was thinking about, I was watching, you know, Trump stuff, and I was talking about the great awakening.
+
+And so one's woke, one's awakening, and they're almost sort of, it's strange that they're saying very sort of, on one level, quite, I've woken up, but they've woken up either way. And it's still that sort of same kind of thing that's come from the same sort of lineage that you're talking about, rather than talking about something new altogether, which is why we've come together, and why we have Brigitte, who, I'm just sort of thinking you might be able to reflect a little bit on what Jose's been talking about. And maybe get a little bit more practical about what we can do at the grassroots level.
+
+Moving from the bigger picture to the local level, what we can do. Oh, so I'll start actually by reflecting on the day, the two days that I've just spent with these students, because what has completely, what's kept me enthralled and also blown me away is their capacity for imagination. So I've got students who are imagining incredibly powerful and equitable uses of technology.
+
+And ideas for better futures, because that was part of my question. But there was no one better future shared amongst those 260 students. So this notion that 260 people can come together, they've been working in groups of four, five, six, depending on how engaged they were or not, is wonderful.
+
+But the first part of yesterday was spent negotiating differences in what they would conceive to be a better future. So they're all at the same school. They, I won't say they come from similar walks of life, but they are in a school where there's a set of values and beliefs that are professed by the school and espoused by the students.
+
+And that's great, but there's still no one shared vision. So it goes to your point about Commons. That they share their existence within the school, but beyond that, they have attention to gender and gender equity, respectful of difference and diversity.
+
+But when I see that as a community and think you're all in the same school, you're kind of being taught the same stuff, and I'll use the word catechism quite deliberately, that there is a set of beliefs that's being taught, and there is a great deal of difference. So in terms of local, the things that immediately come to mind are particularly your question about we wanting or wanting a better future. Who's the we?
+
+What's better, depending on who you are and your positionality and situation in the world, and your situatedness?
+
+And when we talk about local communities, how is that defined?
+
+So reflecting on your school friends, local community, but very diverse backgrounds. Until I moved to Ballarat, my best mate, well, one of my best mates lived in Ballarat, one in Canberra and one in London. They were my community.
+
+And I think part of the challenge here is understand what we define as local, what we define as community. And I'm particularly intrigued about building better social and economic relationships. Because we tend to bundle social and economic together all the time.
+
+And it seems that economics drives a lot of the capturing of what we define as relationships or how we want to build those relationships. So to go to your real question, how do we creatively and practically do it?
+
+There's been a lot of attention to, and I'm speaking at this from the perspective of a foresight practitioner who works around innovation, there's been a lot of attention to design-led innovation and practices that are design-centric and human-centric with little regard to anything beyond the human centricity. Design is complicit in material consumption and not always in a good way. Because design can do great things, but the way we do stuff, the way we operate, particularly in those community and economic and social structures, is building on exactly what you've just talked about.
+
+So that continuation of the business as usual around the ideologies. Even left and right, I've just become so tired of the term. And I've always questioned it, like why is it left and right?
+
+Where did that come from?
+
+Because left in some cultures means something different from other cultures. Why do we have them as completely polar opposites?
+
+I was working on a project a few months ago, and we did some research which suggested that survey design could be improved in terms of responsiveness. So not just the survey design itself, but the redesign of a survey so that there was not the automatic placement of multiple-choice answers ranging left to right. So when you have a scale and you have an options left to right, stop doing that because for someone who reads right to left and has low language capability, even if they're looking at the survey and bother to continue it, they're not necessarily going to respond according to the mechanics that you've used to set up survey because their disposition is to read another way.
+
+Long lists of stuff doesn't work either. So why am I saying this?
+
+Because we continue to work with systems that propagate the systems that we're in. And that for me is the challenge around the community, that the practical application within communities, that we talk about practices that are grounded in beliefs and value sets that are not necessarily shared and are complicit in continuing what it is that they have already established. I've also been doing some work with Victorian Parliament, helping them through a co-design activity so that we can teach them co-design.
+
+And that for me is still a really difficult position because we're kind of imposing, even though we believe that our approach to co-design is based on community practices, has been informed by different cultural approaches, including Indigenous, Australian, including other ethnic practices. I think that's the term we agreed on using. But that has been difficult because we're still imposing a system developed by practitioners, and that it feels like there is this kind of recolonization of stuff.
+
+So even when we think about building new communities, is it coming from a deeper foundation and starting again, breaking it down, and starting with something not new for the sake of newness, but different?
+
+Or are we still basing it on foundations that we are surrounded by?
+
+And that's the tension for me, which is why I'm definitely in that dark corner, because my dystopia might be your utopia. And that is one of the challenges within local communities. It was just made evident to me today with these students that even when the group of four, passionately working towards that, one of the groups wants to build, wants to convert churches into places where women fleeing domestic violence with their kids can go, because they're connected with the word sanctuary.
+
+And the immediate response within the school was, oh, you couldn't do that with churches. And the students were really quite taken aback by this, because they felt that their understanding of what a church is and around sanctuary was at odds with what they were being told was, this is what the church does and this is how it operates and you could never do that. Anyway.
+
+Well, I love that. Going back to the roots of a sanctuary that was, yeah, it's beautiful. Yeah, yeah.
+
+Well, we've gone from big picture, little bit more local, and now I'm gonna ask a technologist a really, isn't there an app for that?
+
+You know, there seems to be an app for everything. So silicon Valley, they'll find, you know, sometimes it's almost like they'll just grab a problem, figure out a solution, and we'll all be better off. But is that the case, and is there an app for that?
+
+That's a question for me. Not for me. Well, different groups have different answers, and unfortunately, the group who started building the whole tech, they think there could be an app for everything, and they can figure it out, and that answer, what they believe, is unfortunately affecting our lives.
+
+One of the things I noticed, I was a programmer, and very soon I realized there's a dynamic, this is how I put it. Other people may not put it this way, but I realized that programmers are just finding themselves, there's a whole new technology that no one knows how to, it's not regulated. I did electrical engineering, heavily regulated, it's all different level certifications, all hierarchies, but while I was studying electrical engineering, second year, I started my company in IT, and I was getting contracts.
+
+So it was new, and nobody knew about it, and obviously those who have nothing to do, like first, second year students, they explore and they learn very quickly, and in the absence of any certificate, regulation, law, anything, they learn how to do it, and they end up becoming the ones who can't do it. So this started becoming a problem that later in life, I can articulate what the problem is, which you can see in the startup boom that happened in San francisco, and later we saw in blockchain movement, if you call it a thing, that people who find themselves in a position of a particular ability that others don't have, they think they know better, and others have to listen, unfortunately, to what they think. So people who could code, they found themselves in a position of coming up with solutions, and imposing those solutions, rolling those things out, and because they were employing computers, they didn't need to consult with anybody, basically.
+
+Rolling out, and I think it, I may be wrong here, like those who know history better, that was followed by the whole globalization movement, and there were already treaties and infrastructure in place for imposing your solutions to a greater scale. And so all of a sudden, you find people in the, like sometimes teenagers or early 20s, now running companies and coming up with solutions, and everybody is basically listening to them. And so this is, the main problem is, I'll cut it short now, point I'm trying to make is that just premium laborers, as technology says, or those who can't code have found themselves in a position of doing the solutions, and there is those who have been scholars, or have been academia, or the problem owners, those in the community building, who needs to be in forefront and basically hire these laborers.
+
+Unfortunately, they're those who just have to chase after like the new feature on Twitter, on Facebook, and what we can do now, what we can't do, and so I don't know if I didn't answer your question, I think I just made the whole thing more. So I can go on about this, but I would like to hear reflections from other people to know how much this resonates with other people, and I can build on that. I mean, it's as much about asking good questions and laying out the table.
+
+We've literally got a table in the middle there. And then we're gonna open it up for a discussion. But there's one last question, Elena, before we open it up to everybody else.
+
+And you mentioned housing. And we've talked about, you know, the kind of future we want. And there could be an app for that.
+
+And there's a very famous app, which is Airbnb, which initially started out, you know, fantastic. Got a spare room. There's a traveler.
+
+They need a spare place to stay. Fantastic. Let's set up a platform.
+
+You know, it's going to be about a sort of a sharing economy. And but then there was some maybe other consequences down the track. So I'm just wondering if you have any kind of comments on that.
+
+And yeah, maybe if there are some alternatives out there. I have many comments about it. I think part of the whole Airbnb situation is just that it's a demonstration about a lack of sophistication and diversity in the way that we conceive of planning and the economics of housing.
+
+And I think Airbnb kind of the roots came, I think, from a really good place, which was sort of couchsurfing and help ex and kind of this peer to peer kind of exchange, where it was very relational. You connected directly with the person, you negotiated the terms of use, and all of those sorts of things. You met with those people and exchanged stories, they got local knowledge, you got stories of their travels, and you exchanged room for some laborer and woofers and all of those sorts of things.
+
+And then somewhere along the line, someone thought, I can extract money out of this. And so you got this whole sharing economy where these intermediaries don't have to have any assets like Uber and Airbnb. The people have the assets and the other people have the money that they're going to spend to use them.
+
+And there's a complete breakdown in the personal relationship. And I feel that that is where the challenge is. And that's what we have to try and bring back into the idea of the Commons.
+
+And it's kind of similarly the problem with the way that we conceive of governance in general. It's sort of too big and we need to go down to maybe bioregional governance at that level. And that's one of the reasons that I'm so interested in Co-Housing and collaborative housing.
+
+Because I feel like it's a good size for people to actually practice working together again. And we've been conditioned socially to not talk about money, not talk about religion, not talk about politics. And where does that lead us?
+
+It leads us to people losing their mind on social media, attacking each other rather than being able to have really insightful and sophisticated conversations. So, my interest is how do we bring that back?
+
+And I think it's kind of coming through in politics as well. If you don't have the diversity and sophistication between labour and liberal, you get the Greens. And if you don't have sophistication between Greens and the Liberal Party, you get the Teals.
+
+And if you don't have sophistication and conversation and discussion between the Greens and Labour, you get the Socialists. So, I think in a lot of places, we are seeing that diversity trying to emerge. And I think we need to do the same thing in housing.
+
+And we could have people who have an attic or a basement, and they can rent it out long term to people. But our planning scheme doesn't really allow for that. Our systems don't allow for co-ownership and other sorts of models.
+
+So, we just have speculation and people accrue it. And that's just the kind of framework that has been offered. But it doesn't mean that it has to limit our imagination and what we can do in the future.
+
+The kind of follow-on from Airbnb, I guess. My fear is that that will lead us into things like co-living and build-to-rent, which will then be owned by huge corporations or even just big super companies whose, you know, their responsibility is to shareholders rather than to the tenants that they might be supporting. And from a tech and app perspective, they will know when you swipe in and out of your building, when you have visitors, when you order food, when you use the gym or all of these sorts of things.
+
+So there's a whole other level of surveillance that might be coming in the way that we manage these buildings. And so I think it's really important that we conceive of a shared approach that is collaborative ownership and cooperative ownership, where the tenants are the landlords and it's not a monopoly kind of proposition. I'll stop there.
+
+Well, we have had a lot of insights from our panel. And the idea is really to start to imagine different kinds of futures. So I'm sure that there's a few questions that might be brewing.
+
+Before I open it up, maybe just have a little chat to the person next to you about some of the things that you've listened to and have come up for you. And then I will go hush again, and then we'll jump in to some questions. So feel free to just have a chat to the person next to you, and just maybe talk about some of the questions that have come up for you through hearing our panel.
+
+And I'll just do that for about a minute or two, and then we'll have a roving mic, and then we can throw it to the floor with the panel. So over to you to have a quick chat with the person next to you. All right, let's bring it back.
+
+So Sonja down the back there has a roving microphone, and we've heard some fascinating things from our panel members, and you've just had a conversation about it. And one of the great things about these sorts of events is you bring people together who get to meet each other, and you are able to sort of discuss these sorts of issues with people maybe that you've never met before, and that we can derive some really good questions from that. So it's a good opportunity to have a chat.
+
+Now it's over to you. Sonja's got the roving mic. Who would like to ask the first question?
+
+And feel free to direct it to a panel member or just generally. This is an old drum that I keep banging on. I wish that something more could be done to make tiny housing acceptable and prevalent.
+
+Everybody wants their own space. And I agree with what you said about basements and attics. And the problem there with, I think under the law, it's called tenants in common for ownership.
+
+But tiny houses are a no-brainer. I mean, even IKEA is selling flat-packed tiny houses. So I'm wondering if the panel has any thoughts on what can be done to expedite some common sense at local, state and federal level around tiny houses.
+
+Sorry, I've been banging on this drum for about 25 years now. Yeah, no, and I'm happy to start there. I think there are a couple of problems with tiny houses and that essentially a tiny house is the same as a car.
+
+It's a depreciating asset and land is the thing that appreciates in value. And so, even, and tiny houses per square meter are very expensive even though obviously they're much smaller, so on balance, they end up being an affordable housing option. Because we have such an unsophisticated relationship between housing and land, they still usually leave people in very precarious situations because you're still reliant on some kind of land owner to be a landlord.
+
+And so, there is still that power imbalance. I feel though that, I mean, my approach is always the collaborative approach and the collective approach. And I would be more than excited to see tiny houses being able to, and kind of not necessarily tiny houses on wheels, but small houses, micro houses that are accessible and adaptable, but being implemented in a place that is, where people can co-own the land, or there's some kind of tenure model for the land, in a community land trust or something like that.
+
+And then a way that you can own the dwelling, maybe separately or as part of that in a co-operative fashion. Tiny houses just on their own though, I fear that there are still structural barriers that would lead to greater inequality and precariousness. We haven't used the word home because we cease to aim at homes.
+
+We don't want homes. We want investments. And it's coming down so heavily, and it's seeping under the door and between the walls.
+
+And we just, we don't want homes. We want investments. And investments mean a whole different range of aims and moves and results.
+
+No, I mean, I couldn't agree more. And I think that that is a huge problem. And it's the, again, it's the unsophisticated way that we've established housing in relationship to the economy.
+
+And no one wants to touch housing because it's the political economy is all structured around it. And so is capitalism and consumption. That's where the individual housing narrative emerged to begin with, so that people would get their box and fill it with stuff and they wouldn't talk to anybody else.
+
+So we do have to go back to the notion of home. And people don't look, think, they think about education and health as still kind of social infrastructure. But somehow food and housing should be a commodity.
+
+To me, they're even more primal than the other things. And if you have housing and food, then you can conceive of improved health and improved education. But that's not what the economy is set about.
+
+I want to add something to that. If I may, just add something to that. I'm not talking as an economist.
+
+It is about economy. I see people who definitely know much better than me. But I think it's important to bring this up without diving deeper.
+
+When you learn about how money is created and different economies, what is the stable asset that the Reserve and Central Bank can use, Quantitative Easing and everything. And in Australia, when you can control the supply of buyers for immigration, as an example, then you end up with a situation where that's actually being used as a mean for regulating the economy, and it's not being seen as home. Whereas, for example, there's no conversation about just nature and parks and everything.
+
+Whereas in some places, you have to actually travel to get to a place where you can see the sky, because it's all polluted. And that's a privilege, and there's all sort of economy around it, and the price of lands and everything. In fact, I've heard even like Q is very expensive, because there was a time where there was pollution in Melbourne, and a high area where...
+
+But if we just come to our census and reset everything, if we could, and just understand that the technology and just basic economy allows everybody to have homes, then we can move on and find something else to use to regulate our economy, that doesn't end up with like leaving a lot of people suffering. And I don't want to talk much longer, but when I see young people, professionals in their 20s, their goal is to buy a house, and basically they go on a mortgage, and they basically use their earnings to pay for the mortgage in the 20s. Like that's really sad for me to see, where this is how we run the economy, whereas they should invest in themselves and what they're interested in.
+
+Anyhow. Oh, he knows I live in Q. It is great, and it is lovely.
+
+I always lose my left credit when I mention that I live in Q. Let's throw it over to a question. Probably for Jose and Bridget, but I think at the very start of the discussion, there was a bit of stuff around, I guess, this binary of whatever left, right, capitalist, socialist.
+
+I mean, I think the title of the panel tonight was kind of in and around, like it hints at platform cooperativism and playing with some things. In terms of the discourse and stuff going on around techno feudalism and this idea that maybe we're already in a post-capitalist period where we're all kind of becoming neo-servs to like the billionaires. Like I guess in terms of framing that and actually, because I know a lot of people get like an ostrich effect where they want to stick their head in the sand when they think about these things, but it's kind of pretty hard to deny right now that whatever, if so-and-so over there gets a startup going and Jeff Bezos wants to buy it and they go, fuck you, Jeff Bezos, like I don't want to sell you my startup.
+
+He can deploy so much capital and so much resource that he can just crush him. So in terms of kind of just like getting that message into people's heads, do you think that that's like a constructive thing, like in terms of like, just again, doing away with this binary, like that this even is what we think it is?
+
+Yeah, I mean, I guess that's why, I love all your comments and where you're coming from, by the way. That's why I had that ambiguity in the beginning, because I do think we have a billionaire problem, and we have a billion people in slums. And so the extreme inequality we have is real.
+
+And so left traditionally is about the equity. It's about the people that don't have enough and support for those people. It's about access to universities, to schools.
+
+If we really want to understand the left better, we actually need to go back in time. We need to go to the 19th century. We need to live in the United States during the time of the robber barons.
+
+That will teach us what left is, because then we'll know what a public library means, what a hospital means, what education means, what decent trade union laws mean, associational laws. To me. We don't want to throw the baby out with a bath water.
+
+I think that because we're living in a world of oligarchs, we're living in a world of tech oligarchs, extreme tech oligarchs, obnoxious tech oligarchs, and they've captured the medium. They've captured the medium of the day. Marx talked about superstructure.
+
+We're in another version of Marx's superstructure. I'm some brand of whatever neo-Marxist, B-grade Marxist, whatever, you know, but we can see that recursion. And so, I don't think we can throw the baby out with a bath water and say, left, right is this kind of, at the same time, they are products of Western modernity.
+
+And where is life?
+
+Where is the web of life?
+
+And also, the commons eats away at those categories, because it says we are all implicated in the survival of our planet. It doesn't matter who the hell you are. So, it transgresses the idea that somehow you can be rich and get away with the loot.
+
+No, you can't be rich and get away with the loot if the planet is unlivable. Right?
+
+Yeah, that's right. Let's get off to Mars. Yeah, it's madness.
+
+It's complete madness, you know. So, I love all your comments. I think they're spot on.
+
+You know, that's why there's, for me, there's like, don't throw the baby out with the bath water. There's ambiguity there. And then, let's eat away at the, let's transgress some of those.
+
+And we, and I think the question you asked is the big challenge, is how do we actually form some kind of coherent way of thinking that can bring this new form of this strength towards equity forward in the context of tech oligarchs that control the media?
+
+You know, it's a phenomenal challenge that we have. Yeah. I'm gonna speak to this quickly from an education perspective.
+
+Because one of the things I see a lot of within entrepreneurship and innovation is a solution looking for a problem to solve. In the name of creating something that they can sell. So about chasing success, chasing fame, chasing reputation.
+
+And that is something that does not exist in every business school in the world, but it's the prevailing position of most business schools. And it's sad to think that business schools are stuck within that modernist paradigm of what business is and how it works. And that in trying to introduce what would be considered unconventional ways of approaching business models, and there's nothing wrong with having a business.
+
+That's it. And I'm saying that in all, there's nothing wrong with having a business. It's what's the model of operation?
+
+What's the model and infrastructure that underpins that?
+
+Is it that extractive, exploitative model?
+
+And those are terms that actually get taught as part of a model of growth. There's a particular model that gets taught in a unit that I won't teach anymore unless they have to read the limits to growth before they get to that model of growth and innovation because the model has been disproven by 2020 and 2021, and yet it still prevails as the dominant paradigm and mode of thinking. So some of this is down to how people, not about the way they're brought up, but how they are introduced to that business context and what business means, what is the role of business in a functioning society, within a commons and a different way of practising life, what does business mean?
+
+And does the word business have to shift along the way, potentially?
+
+Because we are caught, some of the stuff I'm seeing, that I perceive is this shift, we're in a transition state with a lot of stuff. And that's a messy place to be. And it's the students coming through high school, so early secondary students at the moment, the ones that I perceive are going to galvanise that change.
+
+But they're hammering, it's kind of the equivalent of the glass ceiling for women. They're hammering this stuff and they're chipping away on it. It's concrete, it's not shifting.
+
+And whilst the prevailing system, the prevailing infrastructure they're exposed to, does not model differently, they have nothing else to follow. So it's not an answer, it's just a comment. Because I live and breathe this every day.
+
+And I get absolutely fed up with when I ask students, so what do you want to do?
+
+I want to build this thing and I'm going to sell it for $5 million. Only $5 million, okay. By the time you finish your degree, you should be chasing $15 million.
+
+Maybe I should, but you didn't get the sarcasm. But that's what they're expecting. That's what they're kind of brought up to do within the education system.
+
+And don't get me started on the education system. Okay, we've got a question. Thank you very much.
+
+A lot of what you said resonates a lot with some papers I've been reading recently, or radio programs I've been hearing. And I can tell you about those later, or the names of them, some of you might want to read them. But they merge into one another.
+
+But whether it's collaborating with other people, or whether it's the polarization between people who strongly disagree, on one radio program, the person making the argument said, the two key things I think we need here is transparency, to be as transparent as possible, and to be as clear as possible in putting our positions as to why we believe what we believe, or why we want to do what we want to do. Because without those, we don't really understand what's happening, or the power underneath of what's happening. And if you don't give people as clear an idea as possible, as to why you think what you're proposing, all you can get is complaint, not a critic.
+
+So and when it comes to mine, for example, I heard something on background briefing about how artificial intelligence, the algorithms, are creating type of dystopian, disfigured horror type woman coming up on the internet, who doesn't want to be like it, doesn't know where she's come from, doesn't know who's written the algorithm to make it be the way she is. That there's just this murkiness and that links very much to who's controlling, you know, your monoliths and monopolies. So I'm just wondering in terms of either values, being clear on our values, and how we try and put clarity and transparency into the platforms or into the social change we want.
+
+Yeah?
+
+Yeah, yeah, yeah. I mean, I can just start briefly while they think. From a housing perspective and from a commons perspective, some of the terms that I've been reading about is the idea of the prosumer.
+
+So, making the user the kind of catalyst and the person who creates the solution and also is the one that then benefits from it. And from a housing perspective, I think that that's really powerful because at the moment, we're getting dictated to by the speculative housing market, and people are just consumers in that relationship. The other thing that I feel is a huge opportunity from a co-housing perspective is that people, they come together, even once they've moved in, they come together at least every month to have meetings with everybody.
+
+And they all have to be really clear and transparent about what it is that they value, what it is that they want, how they're going to share their resources and pull their money for spending within their community. And you're not allowed to sit back and not participate in the decisions. You have to be an active member.
+
+And so that means that you are involved in the decision and you're involved in the outcome. You don't get that everyone else doesn't make the decision. And then when it gets implemented, you get to sit back and go, oh, well, I thought that was a shit idea from the start.
+
+You know, you don't get to do that. You get to say what you think up front and everyone gets to discuss that. And together, you come up with the best possible solution.
+
+And no one's allowed to sit back and kind of just be the dissenter. And I think that that's really powerful because then you reach a more sophisticated answer. But you're also all then invested in implementing it.
+
+And then together, that implementation can only be stronger. Gohm is the person you're talking about, the phantom that the AIs create. If people don't know about this.
+
+So there's some AI system that just generates this. When you ask it to picture a woman, it comes up with these horrific images. Dismembered babies, this woman that looks like she's out of a horror film.
+
+And people don't know what to make of it. Because it's like, what's going on here?
+
+Is the AI evil?
+
+Is there a demon in the AI?
+
+I actually think it's really cool because it's disturbing. I think we need to be disturbed. We definitely need to be disturbed about AI.
+
+We need to be disturbed enough to ask questions. We need enough of those contradictions to begin to go, what the hell is going on here?
+
+And of course, there's a lot of, if you go down the layers of AI, AI reflects the cesspool of human thinking on the internet. It's going to regurgitate some combination of something between Putin, Trump and the Kardashians. You know what I mean?
+
+And that's why it's so damn intelligent. So I actually think, but more to the point, I mean, we, human beings are, we are technological beings. We are technological beings.
+
+We are, we don't, we don't create technologies. We don't do technology. We are technology.
+
+You know, it's, it's hardwired into, into who we are. And until we fully grasp that, we're not going to be able to take responsibility for our technology. We keep on cranking out these technologies, you know, nuclear bombs and, you know, ancient orange and this and this and that.
+
+And like oops, no, it's not oops, right?
+
+We've been doing this for a couple hundred thousand years, guys, right?
+
+So let's, let's, we need to learn, like, we need to learn. This is a big moment, human beings, to learn what it means to be a human being. And to, and to re, we have to reinvent ourselves fundamentally.
+
+We, we've been pyrotechnical beings for 200,000 years. Pyrotechnical, for 200,000 years, we've been pyrotechnical. And now, the age is telling us, hey, guess what?
+
+You're gonna have to reinvent yourself. You can't do that anymore. That's remarkable.
+
+Thank you, such a great question, and brings up a lot of enthusiasm. So I'm suppressing mine. So I would like to, yeah, detail to everything you said.
+
+I would like to interest you to a term that is not really talked about at all. You said AI. The term I wanna bring up is CI.
+
+And I'm very curious if anyone could even guess what it would stand for. We don't even talk about it. I'm actually curious, like, you have guesses?
+
+No?
+
+Well, it's not what I have in mind. It might be a thing. Community does, I like that.
+
+No?
+
+Collective, I've got one. Yeah, collective intelligence. So not a new concept, obviously.
+
+We have countless examples, evolution, bacteria over millions of years. Everything I say is factually incorrect, probably, but you get the idea. Learned how to, like, through quorum sensing, they figure out how many of them are there, and then when it's enough, they just come out and take over.
+
+Then we've got wolves learning how to, you know, leverage on each other's perceptions and signal to each other, and then be humans using our noises. And myths learn to work. But all these take time.
+
+Now we have technology. We have internet, which is fascinating to me. It didn't have to be this way.
+
+We have one layer, one information layer, which we call internet. It's very, very, very unusual that all of us are connected to one another in one information layer. And we have a few young people who can use Twitter to actually announce when there's an earthquake in a place, a few seconds before the local authority in that place, by just reading the tweets of people, oh, is it shaking?
+
+So this is how connected we are. And I'm also an information architect. I have also Terry from Linux, he's from Victoria and some other people as well.
+
+We can have very, very sophisticated architecture when it comes to service, in the way they talk to each other, IoT, Internet of Things, all that is done. We can simply enable us humans kind of bounce information amongst each other, and tap into our collective intelligence. But we're not doing because I think it doesn't translate into share and assets and things like that.
+
+I think that is a problem, but it's 100% feasible. It's just more than feasible, it's not even funny. So that's what I wanted to build on.
+
+I was not going to say collective intelligence, but I was going to comment on the AI and the fact that it is that consolidated perspective and some of it is that cesspool that is in our imaginations. But it's also that it becomes normative and that those images are out there propagated and continually pervade as a particular response within technology or a technology capability. And that, as humans, we often just want to see that continue and we become arrogant about that use of technology and we don't consider the unintended consequences, which was your point about, we've been there and we've done this and we should have thought it through and we haven't and we keep doing stuff because it's what we know and we think will get it better the next time.
+
+And that's what concerns me, that the world does have people who just don't take notice of history, do not see that we are repeating our behaviorism past and AI is really good at capturing that. And so I'm same as Jose. That was absolutely horrific, but it was awesome.
+
+Did we do anything about it?
+
+Or we'll just get it off the internet. Did anyone say, or do we need to invoke that?
+
+scotland's just released a policy document on the use of AI and ethics in AI. And do we have one in Australia?
+
+Well, I feel like we've just gotten into it, but it's close to closing time, and it's been fascinating. And the image that will stick with me is a cross between the Kardashians, Putin and Trump, and that's why we've got these horrific AI images around. Yes, yes.
+
+That will stay with me, so thanks Jose for that. Look, I'd really like to thank our panel, and as you can sort of smell a little bit, there's some food over there, which is here, and we've got a bar available, and most of our speakers, I don't think, will be running away straight away. So there's an opportunity to continue the conversation you had earlier, also with our speakers over a drink and some food.
+
+But before we wrap up completely, I'd just like to hand it back over to Basil, the patron of our cooperative, to maybe close with a few brief reflections on a really multifaceted conversation that we've been having. This one goes to recording. But I don't know about, no, I just, it's actually been extraordinary inputs, is that what I can use, that people have used?
+
+It's, so for me to give a reflection is extremely difficult, but I'm going to. I think the issue is, and there's no straight answer for that, going back to my classical thinking, because we're all trained in classics, is what is. And all the statements that we have, have come from a particular paradigm of understanding.
+
+And the speakers obviously illustrated their expertise in that area. But really, the two things they were tossing all the time, I felt, were saying is, what is and what ought to be. All the left and rights are from what is and what ought to be.
+
+And it comes from that Western paradigm. But we somehow still have to understand the world that we are in. And one way of understanding that is, I think firstly, we have to understand, and I like the way to say, Jose, we have to understand what is it to be human.
+
+And that's at stake at the moment. Because that sensibility and sensitivities have been hijacked by all the things that have been said this evening. The question, then, is, how do we start restoring it?
+
+And for that to happen, I believe we need to extend this conversation and come to, I like the word, we come to a CI. We have to understand it. I learned that when I was in a previous life working with indigenous people, and I used to go every year to the Pitinjaric country and meet the elders, because they used to send a whole cohort down, that's like I was in Adelaide, and their role was, we were trying, saying how do they actually deal with government.
+
+And there was this old elder there who cold-shouldered me. I was there almost every year for five years. And I thought I had broken some protocols of courtesy with him.
+
+And then in my fifth visit, he called out, and he said, Basil, which actually is a way to pronounce my name, not Basil, I get Basil, but I don't mind. I say my acquaintances call me Basil, my friends call me Basil. Anyway, he said Basil, and I went up to him a bit thinking to get a real admonition.
+
+And what he actually said was, has affected me deeply. And what he said to me was, just remember this, you're ready to hear this now. Just remember, we all are connected to one another and connected to everything.
+
+To the mountains, to the trees, to the rivers, and particularly we are connected to every human being. Yes, we are human, but we have to practice to become human. And we can only practice to become human if we know how we are going to connect.
+
+And in that connectedness, we will learn. We will make mistakes, but we will learn. And that's what I liked about getting the CI, that we have to own what we do.
+
+It's easy to blame. And say that if we have stuffed it up, we have stuffed it up. But at least have the courage, what I call a collective courage.
+
+And we start here with ourselves. And just another reflection, I always believe that the great issues of our time have always been articulated as individual attributions. For example, the work that I did for years and years was on poverty.
+
+There was a tendency to say people are poor because of their individual attribution. So in Australian terms, they are a bludger or a slacker or not the full quid. And if you're from the country, you've got a few loose kangaroos in the top paddock.
+
+But in actual fact, we know that poverty is actually to do with the systemic and structural nature of our society. We know that racism is also that. We also know that the gender, sexism, is also that.
+
+And the question then is how do we start progressing?
+
+And we can only progress when we listen to one another and start thinking, yes, the truth then lies between us. And let us unravel it together and come to a conclusion to act. And then let us act together.
+
+And that's why I think collaboration, cooperatives, quintessentially means that. And once we have grasped that, I think, to quote Bolton in his famous play, you know, we can clamour like champions if we have the spit for it. So my friends and the wonderful presenters, thank you so much.
+
+And Antony and Sonja and everyone here that have come, and particularly the friends that I know, thank you for coming. And then I'll hand it back to our esteemed Antony. Thank you.
+
+Well, that was a beautiful way of concluding this evening. Before we finish up completely, I would just like to mention that we'll send you some information out about a really fantastic opportunity that our cooperative has created with RMIT Forward. So I mentioned at the start of the conversation, we've got a cooperative co-working space, so a shared space in the middle of the city.
+
+We come together, we corporate members here, so we can run events here. There's a space in the city and there's a couple of bursaries available. So free of charge co-working in the middle of the city for the whole of next year.
+
+The focus areas are for these bursaries. People in midlife looking to change career direction, so that might be you or it might be something that you would like to explore. And we're also looking at the future of social care, the way we care for each other in communities.
+
+So it's broader than just health or aged care or veteran care. It's really about exploring how we want to work together in new ways, through the co-operative model and other ways. But the other part of it is you just get a great little office space, self-directed learning.
+
+You can go any which way you'd like with that topic, explore it, explore with friends at RMIT and other members of the co-operative to build a better future. We've heard from some great futurists this evening, and we've also had the challenge to act. So check out those bursaries, and I'd like to again thank our speakers and our patron, and we can finish the discussion together.

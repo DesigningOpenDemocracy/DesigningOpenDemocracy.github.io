@@ -1,0 +1,1257 @@
+WEBVTT
+
+1
+00:00:00.320 --> 00:00:02.960
+Hi, and welcome to Designing Open Democracy.
+
+2
+00:00:02.960 --> 00:00:07.820
+I'm your host, Brian Koo, and I have here Alexa Pendashtan.
+
+3
+00:00:07.820 --> 00:00:16.260
+And what we will be telling you about is, who is Designing Open Democracy, and what is it that we're trying to do here.
+
+4
+00:00:16.260 --> 00:00:32.840
+Designing Open Democracy is an Australian operator forum for engineers, social architects, as well as philosophers, who are aiming to explore the ways that democracy can be applied in the technology, engineering and design of social systems like governments and organizations.
+
+5
+00:00:33.960 --> 00:00:49.840
+We are non-partisan and also agnostic to any particular democratic innovations that are out there, because like there are so many people with lots of different ideas out there, and we want to get their voice out to the public and to see it implemented.
+
+6
+00:00:49.840 --> 00:00:58.220
+And to also have a forum so that people of different innovation background and thoughts are able to freely express their ideas.
+
+7
+00:00:58.220 --> 00:01:07.660
+And the organization called team members would be Brian Koo, Simon Glissnell, Nick Merage and Alexa Pindash.
+
+8
+00:01:07.660 --> 00:01:15.960
+The area of focus in general for this organization is governance, structure, technology, sociological and economics.
+
+9
+00:01:15.960 --> 00:01:27.780
+And in terms of governance, there are things like transparency, accountability that you have to address, because whatever voting system you implement can be potentially hacked and subverted.
+
+10
+00:01:27.780 --> 00:01:31.300
+You have to find ways to account for that.
+
+11
+00:01:31.300 --> 00:01:48.980
+In terms of structural, that ties into the way you do your governance, because maybe you want to be able to get to granularity, like to be able to have a government system that accounts for the difference in philosophies and culture between, say, the city goers and the country people.
+
+12
+00:01:49.460 --> 00:02:04.560
+In terms of economics, some of the things that we will also be very interested in covering is cooperatives and how companies don't have to be necessarily structured in what I would typically call an authoritarian structure.
+
+13
+00:02:04.560 --> 00:02:07.660
+So I want to pause here, two quick ones.
+
+14
+00:02:07.660 --> 00:02:12.800
+We have a very good mix here, people here, very interesting based on the conversation I've had so far.
+
+15
+00:02:13.300 --> 00:02:25.580
+If you look at these five vectors, I'd like everyone to think about two of these that are most interesting for them, even though all of them are interesting for me.
+
+16
+00:02:25.580 --> 00:02:36.400
+But if you all can pick two, and I want to kind of get a raise of hands to get a feel of the room and what everyone is kind of interested in.
+
+17
+00:02:36.400 --> 00:02:36.840
+Is that all right?
+
+18
+00:02:37.560 --> 00:02:38.140
+Okay.
+
+19
+00:02:39.160 --> 00:02:42.600
+So the first one, governance, raise of hands, two.
+
+20
+00:02:42.600 --> 00:02:44.100
+Structural, two.
+
+21
+00:02:44.100 --> 00:02:45.840
+Technology, three.
+
+22
+00:02:45.840 --> 00:02:47.560
+Sociological, seven.
+
+23
+00:02:47.560 --> 00:02:50.080
+And economics, we have three.
+
+24
+00:02:50.080 --> 00:02:51.540
+Okay.
+
+25
+00:02:51.540 --> 00:02:54.520
+So one, two, three.
+
+26
+00:02:54.520 --> 00:02:57.920
+We had 17 votes, which means 10 people.
+
+27
+00:02:57.920 --> 00:03:00.360
+Yeah, it's almost, we had, yeah, good.
+
+28
+00:03:00.360 --> 00:03:01.100
+Roughly two votes.
+
+29
+00:03:01.920 --> 00:03:02.440
+This is really good.
+
+30
+00:03:02.440 --> 00:03:04.700
+So votes very quickly, results of the votes.
+
+31
+00:03:04.700 --> 00:03:14.840
+We had sociological and the very top priority and the technology and economics at the tie.
+
+32
+00:03:14.840 --> 00:03:15.640
+Good.
+
+33
+00:03:15.640 --> 00:03:16.480
+Thank you.
+
+34
+00:03:16.620 --> 00:03:17.400
+Moving on.
+
+35
+00:03:17.400 --> 00:03:25.520
+So now you get a generous sense of the areas that we're going to try to cover as part of Designing Open Democracy.
+
+36
+00:03:25.520 --> 00:03:27.500
+But we always have limited time.
+
+37
+00:03:27.640 --> 00:03:33.620
+So in general, what we're going to be aiming is a bimonthly topic kind of process.
+
+38
+00:03:33.620 --> 00:03:45.560
+And the four topics that we have opted to cover, which is open for change depending on feedback, is co-operatives, which is about economic democracy.
+
+39
+00:03:45.560 --> 00:03:52.120
+And in terms of the expert we have for this is Anthony MacMillan, who runs Co-operative Bonds.
+
+40
+00:03:53.420 --> 00:04:00.840
+Before you go on, especially for the sake of those who are just listening, so there are one, two, three, four major areas.
+
+41
+00:04:00.840 --> 00:04:04.480
+And for every area, we have one key speaker.
+
+42
+00:04:04.500 --> 00:04:09.600
+And there's going to be a following month when we're running a workshop, right?
+
+43
+00:04:09.600 --> 00:04:15.260
+So for co-operatives that Brian just mentioned, we're going to have the main event at March.
+
+44
+00:04:15.260 --> 00:04:16.860
+That's more of a one-to-many.
+
+45
+00:04:16.860 --> 00:04:19.279
+We all listen to what an expert has to say.
+
+46
+00:04:19.279 --> 00:04:22.360
+And of course, hopefully an opportunity for people to talk.
+
+47
+00:04:22.900 --> 00:04:39.100
+But the following ones in April would be a workshop around that topic, which is co-operatives in this case, where we actually bring our challenges and what we're going to work on or helping others who are already working on a project related to that topic.
+
+48
+00:04:39.100 --> 00:04:40.940
+That's the structure.
+
+49
+00:04:40.940 --> 00:04:43.680
+Now moving on to the second topic.
+
+50
+00:04:45.600 --> 00:04:52.760
+The second topic that we will be covering is on building a general democracy and the role that technology can play in it.
+
+51
+00:04:52.760 --> 00:04:53.380
+Adam A.
+
+52
+00:04:53.380 --> 00:05:12.520
+Jacobi, our expert for this topic, is the founder of MiVote, which is a technological solution to having a voting system on your app, which allows you to vote on what topic or issues should be passed into law in the government.
+
+53
+00:05:12.520 --> 00:05:17.940
+MiVote was a party that ran for government last year.
+
+54
+00:05:18.460 --> 00:05:33.400
+And so, what I will be asking him is to understand more about what has worked, what didn't work and what are the impedence in terms of getting acceptance in society for this kind of solution that he's proposing.
+
+55
+00:05:33.400 --> 00:05:36.160
+Before we move on, very quick correction, MiVote wasn't a party.
+
+56
+00:05:36.160 --> 00:05:41.300
+Flux is a party and MiVote works with independent candidates.
+
+57
+00:05:41.300 --> 00:05:42.660
+That's their motto.
+
+58
+00:05:42.660 --> 00:05:43.960
+We're going to hear more from Adam.
+
+59
+00:05:44.420 --> 00:05:50.300
+And the month for main talk will be May and the workshop around that is going to be in June.
+
+60
+00:05:50.300 --> 00:05:53.280
+The next topic will be about citizen juries.
+
+61
+00:05:53.280 --> 00:05:57.860
+And the expert for this is Nicholas Groen from Latro Economics.
+
+62
+00:05:57.860 --> 00:06:05.860
+A few years ago, we actually had a presentation by Nicholas Groen on what citizen juries is.
+
+63
+00:06:05.880 --> 00:06:16.060
+And he will be coming back to us to elaborate more about citizen juries and how it's going and its future for over the next decade or so.
+
+64
+00:06:16.060 --> 00:06:21.760
+But in addition, we also have Kimbra White from Mosaiclab.
+
+65
+00:06:21.760 --> 00:06:27.900
+He will also be potentially be able to help us in understanding more about citizen juries as well.
+
+66
+00:06:28.400 --> 00:06:29.380
+Any comment?
+
+67
+00:06:29.380 --> 00:06:32.940
+Because we're lucky to have Kimbra with us today.
+
+68
+00:06:32.940 --> 00:06:40.100
+So we've been running citizen juries in Melbourne since 2014.
+
+69
+00:06:40.100 --> 00:06:48.600
+Nicholas actually sat in on the first one we did for the 10-year financial plan for the city of Melbourne and wrote a lot about that one that we facilitated.
+
+70
+00:06:48.600 --> 00:06:51.820
+We've probably now facilitated over 20 of them.
+
+71
+00:06:52.340 --> 00:06:54.060
+We've got three running at the moment.
+
+72
+00:06:54.840 --> 00:06:59.340
+So it's becoming very common in Melbourne.
+
+73
+00:06:59.340 --> 00:07:00.120
+Thank you.
+
+74
+00:07:00.120 --> 00:07:03.440
+How do you become a part of that process?
+
+75
+00:07:03.440 --> 00:07:05.960
+How do you become a participant in a process?
+
+76
+00:07:05.960 --> 00:07:07.160
+Yes, a participant.
+
+77
+00:07:08.340 --> 00:07:11.500
+You are randomly sampled of a database.
+
+78
+00:07:11.500 --> 00:07:23.400
+And then once people have expressed interest, so you might hope that you get three or four hundred people to express interest, and then they are selected again to match the demographics of the area in which you are.
+
+79
+00:07:23.400 --> 00:07:25.800
+So it's actually random, stratified random.
+
+80
+00:07:25.800 --> 00:07:27.920
+So you can express your interest?
+
+81
+00:07:27.920 --> 00:07:32.460
+Only if you, well, there are a couple of different methods of, it's called sortition.
+
+82
+00:07:32.460 --> 00:07:34.620
+There are a couple of different methods for doing it.
+
+83
+00:07:34.660 --> 00:07:37.740
+One is where a physical invitation goes out.
+
+84
+00:07:37.740 --> 00:07:42.120
+Only those people who got the invitation can express interest, and that will be checked.
+
+85
+00:07:42.120 --> 00:07:43.440
+You know, your address is checked.
+
+86
+00:07:43.860 --> 00:08:08.160
+There's a second method that some people are using where you go out and you let absolutely everyone, you know, you just put ads out, you do social media, but you need to get hundreds and hundreds of people under that method to make sure you get the randomness in the next step when you're selecting, because you've got to make sure you get randomness rather than just the usual people who turn up all the time.
+
+87
+00:08:08.160 --> 00:08:10.380
+What is this database that you mentioned?
+
+88
+00:08:10.900 --> 00:08:13.860
+The most typical one used is Australia Post.
+
+89
+00:08:13.860 --> 00:08:16.000
+It's an Australia Post database.
+
+90
+00:08:17.160 --> 00:08:18.380
+There are others used.
+
+91
+00:08:18.380 --> 00:08:30.040
+So it depends on the sponsoring organisation, because like if it's a local council, they might have, they will may, I mean, a rate space is not good enough because you won't get the tenants.
+
+92
+00:08:30.040 --> 00:08:35.780
+But they might have a lot of councils will have a full list of all addresses in their municipality.
+
+93
+00:08:37.220 --> 00:08:39.460
+So you address to the householder.
+
+94
+00:08:39.460 --> 00:08:40.880
+Yes, address to the householder.
+
+95
+00:08:41.620 --> 00:08:42.220
+Yeah.
+
+96
+00:08:42.220 --> 00:08:50.140
+You could use a rate space and then you can address to a person, but then you're missing tenants and you'd have to find some way of picking up tenants.
+
+97
+00:08:50.140 --> 00:08:55.160
+But there are people who are specialised in doing this, doing that sortition part of it.
+
+98
+00:08:55.640 --> 00:09:07.520
+So, as you hear, the aspects of citizen juries is definitely interesting because there's a lot of technical aspects that comes to making a citizen jury that can be trusted by the public.
+
+99
+00:09:07.540 --> 00:09:15.060
+I believe we also have another person, Willow, who runs a group called Coalition of Everyone.
+
+100
+00:09:15.060 --> 00:09:16.460
+I would like to hear your story.
+
+101
+00:09:17.200 --> 00:09:17.520
+Sure.
+
+102
+00:09:17.520 --> 00:09:17.820
+Thanks.
+
+103
+00:09:17.820 --> 00:09:18.180
+Hi.
+
+104
+00:09:18.180 --> 00:09:35.620
+So, yeah, we're really interested in trying to help reboot democracy for the climate emergency specifically, and we don't hold citizens juries or citizens assemblies, but we're trying to create more awareness and education for the need for them to help create policy-led change.
+
+105
+00:09:35.740 --> 00:09:39.100
+Yes, you've just been running a series of, you've been involved in a series of events.
+
+106
+00:09:39.100 --> 00:09:39.500
+Yeah.
+
+107
+00:09:39.520 --> 00:10:05.980
+We've had six on at the Centre for Living Festival, so it really was a month, and our main event, headline event last week was called Democracy is Not a Spectator Sport, and that was an interactive panel with Adam, actually, and some other people and a bit of experiential learning about how to experience highly facilitated deep democracy tools, and we've actually got another event next week, which is like a mock citizens assembly.
+
+108
+00:10:05.980 --> 00:10:10.860
+So it's a two-hour event for people to experience, but a mini version of it.
+
+109
+00:10:12.820 --> 00:10:15.860
+No, and we've never got it on media, but we should, but I can-
+
+110
+00:10:15.860 --> 00:10:17.980
+So you like more publicity?
+
+111
+00:10:17.980 --> 00:10:19.600
+Would you like more publicity around it?
+
+112
+00:10:19.640 --> 00:10:21.400
+Yeah, the last one was sold out.
+
+113
+00:10:21.400 --> 00:10:24.220
+Last week was sold out, but next week's not sold out yet.
+
+114
+00:10:24.320 --> 00:10:25.840
+It's Thursday night.
+
+115
+00:10:25.840 --> 00:10:26.860
+Where will people find about it?
+
+116
+00:10:26.860 --> 00:10:27.540
+On the website?
+
+117
+00:10:27.540 --> 00:10:28.060
+What do you say?
+
+118
+00:10:28.060 --> 00:10:29.940
+It's on Eventbrite, and it's on our website.
+
+119
+00:10:29.960 --> 00:10:30.640
+On our website.
+
+120
+00:10:30.640 --> 00:10:31.720
+So the website would be-
+
+121
+00:10:32.020 --> 00:10:33.020
+everyone.com.
+
+122
+00:10:33.020 --> 00:10:34.980
+coalitionofeveryone.com.
+
+123
+00:10:34.980 --> 00:10:37.600
+That's where you can find information.
+
+124
+00:10:37.600 --> 00:10:37.800
+Yeah.
+
+125
+00:10:38.440 --> 00:10:51.940
+So this is basically to hold tactical subject meta type, mock citizens' jury's experiences for people who are, ah-ha, this is what it feels like, because it is a little bit of a learning process.
+
+126
+00:10:51.940 --> 00:10:53.160
+But see it to believe it.
+
+127
+00:10:53.160 --> 00:10:53.620
+Exactly.
+
+128
+00:10:53.620 --> 00:10:55.980
+You have to do it, then you get it.
+
+129
+00:10:55.980 --> 00:10:57.220
+So that's part of what we do.
+
+130
+00:10:57.220 --> 00:11:00.880
+And then that's actually my co-founder Sonia mostly looks after that.
+
+131
+00:11:00.960 --> 00:11:13.380
+And then the part that I work more deeply in is, is the idea of a people's assembly, which I suppose is the community bottom-up approach, a community led change rather than policy.
+
+132
+00:11:13.380 --> 00:11:19.520
+And people's assemblies are really just healthy co-design workshops.
+
+133
+00:11:19.520 --> 00:11:27.440
+But we use deep democracy tools to help people be in a safe psychological space, to be able to access their creative minds and problems solve.
+
+134
+00:11:28.020 --> 00:11:38.940
+And obviously, the climate emergency is an enormously huge problem and a slightly fraught one, so this is a good way to use these tools, I suppose.
+
+135
+00:11:38.940 --> 00:11:48.240
+And the combination of the two things is how we're trying to help systemic change, bottom-up and policy led change as well.
+
+136
+00:11:48.240 --> 00:11:48.940
+It's amazing.
+
+137
+00:11:48.940 --> 00:11:55.880
+It's a very good application of a process that already is practiced in the society for a different kind of context that I see.
+
+138
+00:11:56.420 --> 00:12:08.960
+As Kimbra was explaining, if you can go back to the previous slide, because we're going to have a workshop in August for citizen juries, I was already thinking of applications for this process, and you're on marks for this.
+
+139
+00:12:08.960 --> 00:12:09.500
+This is great.
+
+140
+00:12:09.500 --> 00:12:24.300
+So we can, after this, talk about collaborating on either we divert all our leads towards one of your workshops, or if you can actually help us run the workshop in August around it, that would be great, given your experience on it.
+
+141
+00:12:24.300 --> 00:12:24.600
+Thank you.
+
+142
+00:12:26.000 --> 00:12:30.700
+The final topic we will be touching on is participatory budgeting.
+
+143
+00:12:30.700 --> 00:12:55.580
+Admittedly, I'm not a very well-versed in the concept of participatory budgeting, but from my understanding, it's about having a sort of a process of deliberation or maybe electronic voting, which allows people to define the nation's budget to where which industry needs to be funded, or the health care system, or the hospitals.
+
+144
+00:12:55.580 --> 00:12:57.380
+Do you want me to say more?
+
+145
+00:12:57.380 --> 00:12:59.760
+I would love to have your input.
+
+146
+00:12:59.780 --> 00:13:01.060
+Is Kimbra speaking, yeah?
+
+147
+00:13:01.060 --> 00:13:01.520
+Yeah.
+
+148
+00:13:01.520 --> 00:13:04.800
+So participatory budgeting is...
+
+149
+00:13:04.800 --> 00:13:07.740
+It would be lovely if it was seen on a national scale.
+
+150
+00:13:07.740 --> 00:13:12.020
+I have never seen anyone do it at that scale or for a whole budget.
+
+151
+00:13:12.120 --> 00:13:13.380
+It's really...
+
+152
+00:13:13.380 --> 00:13:15.420
+The take up of it has been...
+
+153
+00:13:15.420 --> 00:13:22.100
+It is about spending public money, and it is about involving community citizens, people.
+
+154
+00:13:22.100 --> 00:13:26.740
+Sometimes we don't use the word citizens, because there's an assumption that they have got the paperwork.
+
+155
+00:13:26.740 --> 00:13:32.380
+Also, using ordinary people to make a decision about where a budget is spent.
+
+156
+00:13:32.380 --> 00:13:34.240
+It came out of Brazil.
+
+157
+00:13:34.240 --> 00:13:38.240
+It's been taken up quite widely in Europe, particularly in the UK.
+
+158
+00:13:38.240 --> 00:13:40.720
+There's been very little proper take up of it.
+
+159
+00:13:41.000 --> 00:13:44.020
+There's not a lot of take up of it in Australia.
+
+160
+00:13:44.020 --> 00:14:03.580
+In the UK, there's a very strong, and probably in South America, that people need to turn up to a place that you come along and as a group of people together, you look at all the different ways people want to spend a budget, and then you talk about that and vote on that in a face-to-face process.
+
+161
+00:14:03.580 --> 00:14:12.680
+There is a tech version of it where it's done online, and that has had a little bit of take-up in Australia.
+
+162
+00:14:12.680 --> 00:14:20.780
+So the biggest project I know is the Victorian government's pick-my-project process that happened last year, where community groups could...
+
+163
+00:14:20.780 --> 00:14:22.460
+There was a bucket of money.
+
+164
+00:14:22.460 --> 00:14:30.940
+Community groups could seek to get some of that money, and everyone who was involved voted on where the money should go.
+
+165
+00:14:30.940 --> 00:14:33.100
+But it was an online process.
+
+166
+00:14:33.100 --> 00:14:40.700
+Melville Council in Western Australia has been doing a project, they call the Robin Hood Project, probably from the last five to six years.
+
+167
+00:14:40.700 --> 00:14:41.780
+That's pretty fascinating.
+
+168
+00:14:41.780 --> 00:14:49.940
+So it almost sounds like that participatory budgeting doesn't necessarily have to be for the nation, but it could even be for, say, a charity.
+
+169
+00:14:49.940 --> 00:14:52.560
+Yes, it's far more typical for...
+
+170
+00:14:53.120 --> 00:14:55.960
+Most local councils have a community grants program.
+
+171
+00:14:55.960 --> 00:14:59.560
+It is much more focused on topics like that.
+
+172
+00:14:59.560 --> 00:15:03.620
+I haven't seen anyone seriously talk about budgets.
+
+173
+00:15:03.860 --> 00:15:13.400
+Some people would say that the City of Melbourne's 10-year financial plan deliberation was a participatory budgeting process because it was a deliberation around a budget.
+
+174
+00:15:13.400 --> 00:15:17.040
+I would say it was a deliberation, not a PV process.
+
+175
+00:15:17.040 --> 00:15:18.660
+But, you know, it's definitions.
+
+176
+00:15:18.660 --> 00:15:20.400
+You know, what's a citizens assembly?
+
+177
+00:15:20.400 --> 00:15:22.660
+What's a people's assembly?
+
+178
+00:15:22.660 --> 00:15:39.000
+You know, there's a whole lot of definitional stuff around this because people who really believe in the, you know, the people that, you know, are out promoting deliberation would say that, you know, it's got to be five to six full days of deliberation, you know, and if it's not that, you don't follow the deliberation.
+
+179
+00:15:39.000 --> 00:15:41.800
+This, thank you very much, Kimbra.
+
+180
+00:15:41.800 --> 00:15:47.000
+This, this reminded me, especially when you started talking about PIKI project, which I was aware of.
+
+181
+00:15:47.000 --> 00:15:47.160
+Yeah.
+
+182
+00:15:48.360 --> 00:15:57.000
+Very similar to a project that's called SUP, all in capital, it started from Detroit and started in Melbourne as well.
+
+183
+00:15:57.000 --> 00:16:12.320
+Chris initiated it and the idea is that you all get to the whole SUP event, you pay 10 bucks and at the end, there are four pitches of community projects and everyone gets a vote and all the money would go to the winner, which is in a way, it's a similar thing, isn't it?
+
+184
+00:16:12.380 --> 00:16:13.900
+Yeah, so you are aware of it, that's brilliant.
+
+185
+00:16:13.900 --> 00:16:19.960
+I'm not aware of that one, but the Social Enterprise Cafe near the Donkey Wheel, I forgot what it's called.
+
+186
+00:16:20.320 --> 00:16:21.900
+Kinfolk.
+
+187
+00:16:21.900 --> 00:16:28.580
+They give money to charity and they ask you to put a bean in four different spots that they'd like their charity money to go to.
+
+188
+00:16:28.600 --> 00:16:29.400
+Amazing.
+
+189
+00:16:29.420 --> 00:16:30.900
+For similar sort of places.
+
+190
+00:16:30.900 --> 00:16:43.120
+So for those who are listening to this, the question I had, other people may have this, would this also be related to these conversations around the way we collect tax all the way to the top and redistributing it?
+
+191
+00:16:43.120 --> 00:16:46.780
+Would this also be related into rethinking that whole process?
+
+192
+00:16:46.780 --> 00:16:47.340
+What do you say?
+
+193
+00:16:47.340 --> 00:16:48.680
+Would be wonderful.
+
+194
+00:16:49.060 --> 00:16:49.840
+Would be wonderful.
+
+195
+00:16:49.920 --> 00:16:56.800
+You just got to get someone in political power to be interested as well.
+
+196
+00:16:56.800 --> 00:17:00.760
+If they can be demonstrated that it's actually effective compared to...
+
+197
+00:17:00.760 --> 00:17:05.160
+So that's the role for technologies and data scientists maybe to find ways to demonstrate the impact.
+
+198
+00:17:05.160 --> 00:17:07.700
+To help communicate these kinds of concepts.
+
+199
+00:17:07.700 --> 00:17:08.660
+Backed by data.
+
+200
+00:17:08.839 --> 00:17:13.680
+So if anyone in the audience has a passion for that, we have some techies here.
+
+201
+00:17:13.680 --> 00:17:14.560
+I can see.
+
+202
+00:17:14.560 --> 00:17:15.920
+Welcome back.
+
+203
+00:17:15.920 --> 00:17:19.380
+And the workshop for that is going to be in October.
+
+204
+00:17:19.380 --> 00:17:24.680
+And there's also another organization that I'm going to be investigating for participatory budgeting.
+
+205
+00:17:24.680 --> 00:17:26.960
+And they're called Bank the Table.
+
+206
+00:17:26.980 --> 00:17:39.420
+I am not 100% perfect in terms of understanding who they are, but that's where I want to be able to reach out to them and have a chat and understand more about Bank the Table and how it works.
+
+207
+00:17:39.420 --> 00:17:45.400
+Yeah, and they have a participatory budgeting tool on there amongst their technology suite.
+
+208
+00:17:45.400 --> 00:17:45.900
+Awesome.
+
+209
+00:17:45.900 --> 00:17:47.040
+And it's very well known.
+
+210
+00:17:47.040 --> 00:17:51.020
+Bank the Table is very well known amongst the community engagement world.
+
+211
+00:17:51.020 --> 00:17:52.320
+OK, good to know.
+
+212
+00:17:52.320 --> 00:17:53.460
+Awesome.
+
+213
+00:17:53.460 --> 00:17:54.320
+Do you want me to take you?
+
+214
+00:17:54.320 --> 00:17:56.460
+This bit is about the aim for 2020.
+
+215
+00:17:56.460 --> 00:17:58.420
+I'll let you free flow it.
+
+216
+00:17:58.420 --> 00:18:00.900
+This is what I remembered we were talking about.
+
+217
+00:18:00.900 --> 00:18:02.320
+This is out of our conversation.
+
+218
+00:18:02.320 --> 00:18:04.860
+So there's a slide I'm looking at for those who only have audio.
+
+219
+00:18:05.140 --> 00:18:09.400
+I'm also because in technology, we have to make technology products accessible.
+
+220
+00:18:09.400 --> 00:18:13.560
+I'm aware of what's the vision impaired people.
+
+221
+00:18:13.560 --> 00:18:18.600
+In this case, it's only audio, but it's become a habit for me to also explain.
+
+222
+00:18:18.600 --> 00:18:21.580
+We all see it, but sometimes there's person in the audience, it's a good habit.
+
+223
+00:18:21.580 --> 00:18:23.380
+So this is like...
+
+224
+00:18:23.380 --> 00:18:30.140
+OK, so being inspired by what Brian has been trying to do the past two, three, four years.
+
+225
+00:18:30.140 --> 00:18:30.800
+Two, three years.
+
+226
+00:18:31.480 --> 00:18:50.040
+One of the issues that also in our conversations, we found out that there are different groups in Australia, that they're all doing amazing work, they're putting a lot of work into this, trying to innovate, and they all have their own ideas and opinions, not necessarily complementing perfectly well.
+
+227
+00:18:50.040 --> 00:18:53.260
+So they have their own communities and they're growing.
+
+228
+00:18:53.260 --> 00:19:02.500
+But as a whole, this whole community is really disempowered because there's no direct source of income or it's not clear how you're going to monetize it.
+
+229
+00:19:02.500 --> 00:19:10.240
+The business model is not clear even though we can't think of things for this because we have large organizations that are little societies in a way.
+
+230
+00:19:10.240 --> 00:19:14.040
+So if a democracy solution works, those are avenues they're looking at.
+
+231
+00:19:14.040 --> 00:19:18.380
+But generally as an industry, we can't even call it an industry.
+
+232
+00:19:18.380 --> 00:19:20.700
+So it's not financially empowered.
+
+233
+00:19:20.700 --> 00:19:26.160
+What we thought was we brought the idea of a few of them and it was well received.
+
+234
+00:19:26.360 --> 00:19:40.420
+The idea is if we can set up a foundation, not an association for this because an association wasn't an idea that they were excited about because it adds more work.
+
+235
+00:19:40.440 --> 00:19:43.980
+Now, another democracy thing of democracy.
+
+236
+00:19:43.980 --> 00:19:45.520
+You don't want to get to that.
+
+237
+00:19:45.520 --> 00:19:50.120
+Whereas a foundation is not attempting to bring everyone on the same page.
+
+238
+00:19:50.120 --> 00:19:51.760
+In fact, it's the opposite.
+
+239
+00:19:51.760 --> 00:19:57.900
+We want to empower everyone in what they're doing because as a whole, we all need to be more empowered.
+
+240
+00:19:57.900 --> 00:20:35.060
+And we thought a foundation would facilitate making this whole community one like a interface for this whole community so that it can financially interact with the rest of the world and receive funds and donations and having the basic legal foundation as well in place if they need to be a financial agreement, a contract, or if one of these groups that are doing some sort of experiments wants to engage with the research or conduct some research with the foundation, all these things become much easier and actually possible.
+
+241
+00:20:35.060 --> 00:20:40.940
+Interconnectedness between actors and activists as well as...
+
+242
+00:20:40.940 --> 00:20:45.800
+That's also something that we're not pushing for the interconnectedness with the idea of foundation.
+
+243
+00:20:45.800 --> 00:20:48.600
+But of course, if it happens, it's even better.
+
+244
+00:20:48.600 --> 00:20:50.900
+So that was the idea of foundation that I just covered.
+
+245
+00:20:51.320 --> 00:21:00.200
+If there is any question, because this is not our strong idea, this is something that we have thought so far that might actually help.
+
+246
+00:21:00.200 --> 00:21:02.960
+And as we shared with more of the community, it's being received.
+
+247
+00:21:02.960 --> 00:21:12.520
+So if any ideas you have or if you see any flaws in anything I said, please bring it up because this is the best time for iterating on the idea before we actually start implementing it.
+
+248
+00:21:12.520 --> 00:21:22.480
+And also one last thing that I want to mention, having a foundation also enables all the community to interact with similar organizations or groups outside Australia.
+
+249
+00:21:22.480 --> 00:21:38.620
+It makes it much easier because if one of these attempts in Australia wants to reach out to another big entity, let's say in Europe or South America, it might not necessarily be the same level, whereas with having a foundation, we can facilitate those connections to be made.
+
+250
+00:21:38.620 --> 00:21:42.080
+And also we can interact with the state and governments as well, having a foundation.
+
+251
+00:21:42.080 --> 00:21:45.460
+And so these are things we are hoping to get there.
+
+252
+00:21:45.460 --> 00:22:03.620
+This year, we'd like to get more organized in terms of how we run the events and having more products of our events, like this podcast that we're just recording, so we can have as much impact as we can, so that next year we can have even more effective programs for next year.
+
+253
+00:22:03.620 --> 00:22:15.820
+So this year, it's more about bringing people together and letting the different topics be discussed and promoted and published as much as possible to establish a strong foundation for the next year.
+
+254
+00:22:15.820 --> 00:22:21.120
+And we'd like to commit, Brian, actually, we'd like to commit to get a podcast out every month.
+
+255
+00:22:21.120 --> 00:22:21.580
+Yes.
+
+256
+00:22:21.580 --> 00:22:26.240
+But as we discussed, it's not going to be an absolute hard target.
+
+257
+00:22:26.240 --> 00:22:29.960
+It's going to be just something that we'll put out as we can.
+
+258
+00:22:29.960 --> 00:22:34.940
+And as you'll see in our podcast, we actually been covering different organizations.
+
+259
+00:22:34.940 --> 00:22:37.800
+One of the last one we covered is Flux.
+
+260
+00:22:37.800 --> 00:22:54.940
+And the idea is that this also ties us in terms of our website of helping to have a list of all the democracy organizations that exist in Australia, and as well as having a rate for people who want to contribute to understand about the organizations that they would like to contribute towards.
+
+261
+00:22:54.940 --> 00:22:56.400
+Did that cover all the things that we discussed?
+
+262
+00:22:56.400 --> 00:22:58.560
+I think that covers everything.
+
+263
+00:22:58.560 --> 00:22:59.740
+And also one last thing.
+
+264
+00:22:59.740 --> 00:23:03.740
+This is not a thing that we're doing and you are just receiving it.
+
+265
+00:23:03.740 --> 00:23:10.480
+This is collaborative and there's no company or organization even yet.
+
+266
+00:23:10.480 --> 00:23:13.460
+It's just a group of people doing what they can.
+
+267
+00:23:13.460 --> 00:23:15.820
+And I saw Brian putting a lot of work in this.
+
+268
+00:23:16.300 --> 00:23:29.580
+I'm trying to help Brian if anyone had anything so far that they think they can contribute or make a connection or introduction, this is one community, it's a flat structure.
+
+269
+00:23:29.580 --> 00:23:31.480
+So I would like to hear from you guys.
+
+270
+00:23:31.480 --> 00:23:36.140
+So these are what's floating in my head and Alexa's head.
+
+271
+00:23:36.140 --> 00:23:43.280
+Do you have any inputs that you would like in terms of steering our directions or providing things that we should think about?
+
+272
+00:23:43.280 --> 00:23:53.720
+What about, like, say, in terms of Kimbra with the Mosaiclab, is there any ways that we could help collaborate more effectively that we should implement as well?
+
+273
+00:23:53.720 --> 00:23:56.200
+Oh, I'm not sure.
+
+274
+00:23:56.200 --> 00:23:57.600
+Yeah, I don't know enough.
+
+275
+00:23:57.600 --> 00:23:59.140
+I'm sorry.
+
+276
+00:23:59.140 --> 00:24:07.620
+If you can see the psychology and sociology a bit, given that it's recorded, right, no one would make any comment because it would be more of a contribution.
+
+277
+00:24:07.620 --> 00:24:09.620
+Well, then, let's just skip this one here.
+
+278
+00:24:09.620 --> 00:24:11.940
+This will be removed, section.
+
+279
+00:24:11.940 --> 00:24:14.060
+We keep everything.
+
+280
+00:24:14.060 --> 00:24:16.460
+Because then they can claim that we have kept everything.
+
+281
+00:24:16.460 --> 00:24:17.920
+OK, I'm just going to stop.
+
+282
+00:24:17.920 --> 00:24:19.500
+I don't know.
+
+283
+00:24:19.500 --> 00:24:28.480
+So you have any things that you would like to contribute to us in terms of ideas that we should direct ourselves towards in our aim for this year?
+
+284
+00:24:28.480 --> 00:24:35.380
+Please send us a message through our email or through our website, or even better, through our telegram.
+
+285
+00:24:36.180 --> 00:24:38.840
+What was the website again?
+
+286
+00:24:38.840 --> 00:24:41.120
+designingopendemocracy.com.
+
+287
+00:24:41.120 --> 00:24:42.220
+That's our website.
+
+288
+00:24:42.220 --> 00:24:47.140
+It's easy to find and that should contain all our contact information as well.
+
+289
+00:24:47.140 --> 00:24:49.560
+That was a genuine question.
+
+290
+00:24:49.560 --> 00:25:00.420
+So finally, I think this ties in quite well to the final covering of this meeting, which is, how do you contribute to Designing Open Democracy?
+
+291
+00:25:00.420 --> 00:25:09.840
+So do you have a topic that you want to present, or an effort that you want us to promote or get the word out of?
+
+292
+00:25:09.840 --> 00:25:13.740
+Then you can reach us through contact at designingopendemocracy.com.
+
+293
+00:25:15.800 --> 00:25:23.840
+Or even better, if you want to help assist in organizing more events and presentations, please get in touch with us as well.
+
+294
+00:25:23.840 --> 00:25:28.760
+Aside from that, is there any final words you would like to give to the audience, Alexa?
+
+295
+00:25:29.360 --> 00:25:36.160
+What's the last slide, because if I see it, I can have better confidence in not repeating.
+
+296
+00:25:36.160 --> 00:25:37.500
+Trust as a concept.
+
+297
+00:25:37.500 --> 00:25:39.340
+We're going to move into today's.
+
+298
+00:25:39.400 --> 00:25:40.280
+That was very good.
+
+299
+00:25:40.280 --> 00:25:45.560
+I'm actually very impressed by what you did now.
+
+300
+00:25:45.560 --> 00:25:46.840
+That's good.
+
+301
+00:25:46.840 --> 00:25:48.120
+All right, let's go with that.
+
+302
+00:25:48.120 --> 00:25:53.440
+This is the end of the Designing Open Democracy introduction and who we are.
+
+303
+00:25:53.440 --> 00:25:55.720
+Hopefully not the end of the whole Open Democracy.
+
+304
+00:25:56.520 --> 00:25:57.320
+It's about to progress.
+
+305
+00:25:57.320 --> 00:26:00.660
+It's the beginning and this is the premiere, as you called it.
+
+306
+00:26:00.940 --> 00:26:02.440
+Yeah.
+
+307
+00:26:02.440 --> 00:26:03.820
+Well, it's a premiere, but it isn't.
+
+308
+00:26:03.900 --> 00:26:04.160
+It is.
+
+309
+00:26:04.160 --> 00:26:05.360
+Yeah, for 2020.
+
+310
+00:26:05.360 --> 00:26:08.220
+So let's hope that it actually starts flourishing.
+
+311
+00:26:15.140 --> 00:26:18.520
+Thanks for listening to the Designing Open Democracy Podcast.
+
+312
+00:26:18.520 --> 00:26:24.740
+I hope you get a good introduction to who we are and what we are all about.
+
+313
+00:26:24.740 --> 00:26:30.400
+If you want to find more information about Designing Open Democracy, you can find us at designingopendemocracy.com.
+
+314
+00:26:31.900 --> 00:26:33.240
+See you on the next episode.

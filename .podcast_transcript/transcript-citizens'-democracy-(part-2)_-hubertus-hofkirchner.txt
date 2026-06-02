@@ -1,0 +1,159 @@
+Hi, and welcome to another Designing Open Democracy podcast retrospective. This is an old recording that was held on the 21st of October 2017, as part of an event called Citizens' Democracy. We actually also released a previous podcast recording on this same event, on behalf of another speaker called Nicholas Gruen, who was talking about his own take on Citizens Juries and Deliberative Democracy.
+
+As like before, this event was sponsored by the York Butter Factory, a co-working space in Melbourne, as well as been hosted by Brian Koo and Nicholas Moran. The speaker today will be Hubertus Hofkirchner, who is the Austrian Chief Filters and CEO of Prediki. He also started a political party called Austrian GILT to try and push through his new system of Citizens Juries.
+
+And through this talk, you will learn about how Prediki was started, as well as this notion of a deliberative model and how technologies can be such a sentiment analysis can be used to help enhance such a model. What he will also talk about is how through allowing for specialization, what you allow is to increase the political bandwidth that Citizen Juries can provide to the political system. Just so you know, this audio was taken over a scout recording, so the audio may not be as good as it could be.
+
+However, hopefully you will be able to get the most important points across from his presentation.
+
+Enjoy the speech. We shall start with a quick background introduction by Hubertus Hofkirchner himself. So before I start with that story maybe shortly, why am I doing that?
+
+Just from my background, I used to be an investment banker in last millennium in the IT space, high tech space, and then founded the first online brokerage in Austria, which then expanded to southeastern Europe and which got overtaken later by an Austrian bank, and became then luckily the CEO of one of the Austrian telecom companies. Not the largest one, actually, the smallest of four, but still it was an interesting job because it was almost bankrupt when I had to take the job, so it was not easy. But the team and I, we effectively structured it with over some like three years, and in the end it got bought by Deutsche Telekom for about one and a half billion euros.
+
+So it was a nice deal, and I've been a serial entrepreneur ever since. One of the project which I'm currently called Prediki, effectively the idea of it originated in the time of when I was running the online broker because the world was truly mad at that moment. It was the time of the Internet bubble, and some of you may remember that the stock exchange valuations for some of these new Internet companies just went completely haywire.
+
+Little Internet companies which were co-founded by media companies, all of a sudden were worth more than media companies which had been around for dozens of years, and then had a huge market valuation. And I think what's important to know is, I at the time looked at some of these things and thought, okay, these valuations are completely crazy. And still, while knowing that, I found the trap of believing this general madness and acting according to it.
+
+So I made a couple of good investments, but I also made a couple of bad investments, where I had known that I shouldn't do that. And Nick mentioned before the problem of, in surveys, people sometimes say what they think before they think, and it's a big problem, which you can realize everywhere. We see it in the stock exchange, when there are hype-sites, we see it regularly before elections.
+
+I'm gonna talk about that. So we know how parties and the leadership acts to get our votes, that they do dirty campaigning, that they're lying, that they're making promises which they're never gonna keep. And still, people don't change.
+
+They vote for these people, they vote for these practices. And Prediki is a project which seems to be succeeding now to stop the collective maleness, to not produce a crowd which is mad, like Sigmund Freud would have us know, because Sigmund Freud, the Austrian psychologist, thought that crowds, once they cluster, they become stupid, irrational, violent. Whereas later, the Austrian School of Economics, of which Schumpeter, which Nick already mentioned, is one, thought that if you put them in proper processes, there's something evolving which we call collective intelligence.
+
+So the trick to make people think is to give them tools which don't produce madness, but which raise collective intelligence. And as Nick also explained already, that most of the tools, all of the tools which we have right now on the internet, Twitter, Facebook particularly, they do not do that. They rather help with mobbing, creating mobs, as you can see in this comment section.
+
+It's not designed to make people think. So that said, one of the spin-offs which we have from, I'm also part of the Hayek Institute, which is an institute which keeps up Austrian economics like the tradition of the more scientific economists like Schumpeter, Mises and Hayek. And about a year and a half ago, we did a spin-off called New Dermatology, which essentially thinks that we should not have party democracy anymore, because you have an agency problem in parties, which has been recognized 30 hundred years ago, actually, by somebody who called it the Iron Law of Oligarchy.
+
+Essentially meaning that if there's an organization, a party, in the end, after a little while, that party will serve not its original mission, but it will serve the people running it, which pretty much, I think, describes what parties do. And here in Europe, we already had a very bad experience after the discovery of this Iron Law of Oligarchy. That was in 1910.
+
+And by 1934, 1938, half of Europe had reacted according to this Law of Oligarchy. We had people like Hitler in, you heard about him already, there was Mussolini in Italy, there was Franco in spain. So this theory turned out to be a rather robust theory.
+
+And so to say, my fear is if it happens again, and these people will fall, ultimately, but while they fall, then now they're atom bombs at this position. So I'm not particularly looking forward to the next instance of the Law of Oligarchy striking. And we believe it will strike.
+
+Because, for instance, in Austria, you know, the same in, let me just share my screen with you for a moment. I don't know whether it's the same in Australia, but like Australia, Austria is one of the probably most wealth countries in the world. And still when we ask the people, sorry, this is in German, unfortunately, I'll translate it to you, how happy are the Austrians are gonna be with the next elected government?
+
+You could see that they were actually expecting to be quite dissatisfied. And still, everybody elected the same. And Prediki, which is this platform I built over the last couple of years, which fosters this thinking, effectively, they recognize that if we ask them in a normal poll, they think after the election, it's all gonna be better, which is really, really weird.
+
+So if you ask them, one year after the elections, do you think things will be better?
+
+The answer is here, green. Once you make them think, they say, no, it's not gonna be better. And with Prediki, we have a deliberative format where people essentially have to first bet what it's gonna be.
+
+So they don't just say it, they don't just tick a box, they have to bet, which is when the brain starts to switch into a different type of thinking, a slower type of thinking, but a more deliberative type of thinking. And we ask them after this bet, which they do, just show you this here. And so they have to essentially put little bets here with virtual currency, whether they think the Austrians are going to be a little more happy or more unhappy.
+
+And then once they've done that, they are prompted to put the reason to why this is being done so. And this is again something, going back to Siegmund Freud, once you've done something which is very simple and you need to justify it after what you start thinking, it's called post-rationalization. It's a very important principle.
+
+So whatever you did, your brain afterwards will tell you, okay, you did it intentional because of some fantastic reason, or if it went wrong, your brain will work out a reason why it should have been a fantastic thing, and just some silly idea prevented you a fantastic thought, fantastic immediate action to be true post-rationalization. Anyway, and what the system does with that, by the way, it then texts, so you can see down here how people argue more and more why they're going to be, so to say, dissatisfied, and you can see people write about the language comments on the system now, because it's able to do that and engages people in the conversation. One of the algorithms we wrote in the background then discloses this conversation into a sentiment analysis.
+
+So you can see down here in the rated comments that people mostly thought that we're rather dissatisfied, quite a few thought that we're very dissatisfied, and only very few people thought we would be satisfied, and then the system effectively dissects all the arguments in why this will be like that. You can see the overall reason why people thought they were dissatisfied after thinking about it, to say everything will remain as it was. As you can see, this is the very deep red bar.
+
+It caused a lot of dissatisfaction, and a lot of the others dissatisfied. And anything else, I think it didn't even matter so much. So it didn't matter that the Austrian administration is so slow, that the people are frustrated about the election choices, that the election promises are not being kept.
+
+The issue is, people are most dissatisfied that everything will remain the same. So we decided, in our Austrian Economics economist group, that we wanted to start an initiative, which we called New Demoky, which essentially tries to introduce, instead of the representative democracy system, which is iron law of oligarchy, which will result in the next atom war, I think, a system. And we were very aware that it couldn't just be any old democratic system, because we had observed, like Nick, the Brexit.
+
+And do you know, guys, after the day after the people in the UK decided that they wanted to exit the EU, Google announced the most frequent search of the day after. Do you know what it was?
+
+What is the EU?
+
+What is the EU?
+
+Exactly. The British people predominantly asked, what is the EU after the day that the majority voted to leave it?
+
+There was another example just at the time when we thought about it, which was the Greek referendum on the EU savings package, where the EU wanted austerity measures in Greece to essentially save the economy. The people, with 62 percent, voted against it. Two weeks later, Tsipras, the Prime Minister, simply went, yeah, okay, people are here, you voted against it.
+
+We changed this little by-sense, and now we're doing it. We agree. So the worst thing about this Greek referendum was actually that, and I was in Greece at the time, on a holiday when the ATM stopped working, actually just stopped working for me because I had demagnetized my card, but it was already switched off.
+
+Anyway, there were some interviews in the national television, and one of the ladies who was interviewed, Kari Kamevout, about this Greek, she said, should we do the saving package, should we not do it?
+
+In the open, the lady started to cry and said, I have no clue. I don't know what it means if I say yes. I don't know what will happen if I say no.
+
+So there's a certain amount of limited capacity to ask everybody. So we knew we needed something else, and we decided in the end that the best tool we could find so far was again Citizens Juries, like Nick already mentioned. However, we added to the recipe an open phase of surveying, of inquiry, which would give everybody the possibility to chip in there to sense, to say what they mean, but again in the deliverative format, which I've shown you before.
+
+So that was our recipe. And then we thought, okay, but how are we going to get people to participate?
+
+I guess the question is, and some of you may know that already, what is the biggest motivator for people to participate in democracy?
+
+In Australia, we make them. In Australia, we find them, if they don't, but... Yeah, you got it all, I know.
+
+No, but what... absence of force and violence, what's the best way to motivate people to participate in democracy?
+
+Someone said economic incentive. Well, I believe what they found out, that the overriding requirement is that what people say, what they decide, actually matters. Yeah, that these decisions are being implemented.
+
+That's the one big motivator. And ever since I knew about that, I've been observing all kinds of votes and things, and I'm just amazed how many never go to action and are being ignored. Because essentially, politicians think that people are too stupid to decide anything.
+
+If you ask the politician if people should get more say, the one answer we get is not that they're too stupid. They have no idea. They're all psychopaths still.
+
+Yeah. And we don't think it's true. And I think particularly in Australia, you guys have done a lot of experimentation, which is extremely well-documented, and there have been other things in Ireland and in the UK.
+
+And we've just done two in Austria. So we decided we need to implement it in such a way that whatever happens out of these Citizens Juries actually matter. So we started to look to working with the party to make them use the Citizens Juries, which we called B&#252;rgerparlament, so Citizen Parliaments.
+
+And it seemed that they would have liked that, because, okay, I mean, then they know what the people really want. They can put forward their program and know that the Austrians will be very happy doing what the Citizen Parliaments. But no, we approached three parties, and all of them declined to use that tool, partly because people are stupid.
+
+And I think, in reality, because the leading people there, they all have cushy, well-paying jobs, and they were kind of fearing that they would put themselves out of work, which frankly, I think they would. So it was a rational fear for them, who are the decision makers, but it's not a good solution for Austria. Luckily, I ran into a man called Roland D&#252;rner, who was just about to found their party.
+
+So he had not yet a position of power. And this was this guilt thing which Nick just mentioned. So far too late in July this year, no, it was June this year, we finally decided, okay, guilt is gonna adopt this model, which was the election that last Sunday, so which was three months ago.
+
+So we had three months to work out the idea to communicate it to the people, which was a bit of a problem, because Hubertus Hofkirchner was before I, running around more with the concept like Beppe Grillo in Italy, which means telling people, okay, this system is shit, just protest against it, put your vote here that you hate the system, La fanculo, let me have a wash, or kiss my back sides, that was the title of the party. So we had only three months to change that into something a little bit more productive, which I'm going to show you now, one second. So this is the concept which we, effectively, is happening today.
+
+So in general, you vote every five years, which gives you about 10 to 12 votes in your whole lifetime, and probably one or two months in front of each of these election dates where politicians care at least what you think is a mob, because all they do in the election campaigns is they're trying to emotionalize us with one nine-second sound bit, as Nick already said, and then they're in parliament, and then for five years, they effectively couldn't really care less of what you want. Of course, there's a lot of happening behind the scenes. So what we propose as the following is that essentially, everybody can participate in an open ideation phase of solutions, to exist to such solutions as the citizens come up with.
+
+And the key behind it is a kind of voting system, where every problem is rated, whether it's an important problem or not, not an important problem, whether a solution is a good solution, another solution, or whether an objection to a solution is a good objection or an irrelevant objection. And out of that, you can actually calculate an index, which will automatically, from all the thousands of ideas and problems which people report, always give you a couple which are on top because of the importance of the problems or the quality of the solution and the little objections which exist. There's a second open phase where then each of these proposal, proposed solution ideas is meeting an opening fire where everybody can participate, which will be part of a traditional questionnaire, which has a lot of problems as we know, but people are pretty good in responding to diagnostics.
+
+So if you ask four questions, are you a man, are you a woman?
+
+People typically know. But even if you ask, okay, what will the coin toss result in five minutes, there will be a huge bias. If asked now, and the survey people, Hubertus is tossing a coin, will it be heads or tails, or will it be tails or heads, to randomize it, you will get a response of 68 percent of people, that my coin toss will result in heads.
+
+Because of a very simple bias. So anybody following the survey would think that coins have three sides, and two of them are heads, which is of course rubbish. So we use it in a very limited way, and then for prognostics, we use the prediction market, which I just showed you, which is a much more deliberative format.
+
+Now the other problem we had to solve was this preconception, which not only politicians have, by the way, not only politicians think that the people are too stupid to decide, even people think that 90% of the other people are less competent in any area of topic than themselves. It's a huge issue. Of course, it can't be true, because intelligence and knowledge is normally distributed, it follows a nice Gauss curve, but it's a problem.
+
+Anyway, so we're using Prediki also to find out, so to say, who is knowledgeable in a topic or not. And we do that by effectively comparing the prediction of people with what actually happened. Because there's quite a lot of scientific evidence meanwhile, that people who are better in predicting what will happen, are actually also much better decision makers.
+
+There's a highly recommendable book issued in 2015 by a professor from the US called Philip Tetlock. It's called Super Forecasting. And it effectively shows how people who are tainted by ideology, by one big idea, get it all wrong when they have to say what will happen.
+
+Like me, maybe I'm getting it completely all wrong if I think that the world will be atom-bombed after the next round of dictators. Maybe even that will happen. Anyway, so if you are a socialist, you think you have to look at the world.
+
+If you are too much capitalist, you're generally wrong. Tetlock calls these guys hedgehogs because they just take a position and then they don't move. Whereas he calls the more intelligent people who are flexible, he calls them the foxes.
+
+So the fox knows many tricks. And these foxes also make better decisions. And the mechanism can actually rank people according to how good their predictions are.
+
+And if you're negative over a series, then we know most likely you're not such a good decision maker. So that's, where was I?
+
+Yeah, that's this principle of expert identification. And on the other hand, we don't want to restrict people. Everybody is good at something.
+
+It's like Andy Warhol's 15 Minutes of Fame. But each of us, while probably not being the best in anything, each of us is very good in one or two particular things. And which effectively means that we don't need to exclude even anybody from participating in the Citizens Juries, because there's no need to restrict the capacity.
+
+We can have hundreds and thousands of those things in parallel. And as long as we make sure that the right people go into the right parliament, where they will decide the right things, we could have an enormous bandwidth. Like in Austria, we have 8 million of us.
+
+So if only 1% of people participated, because everybody is busy, but 1%, that's 80,000 people. And if we just replicate our parliament, which is just under 200 people, we could have 400 parliaments in parallel. Now imagine the speed which you can have and how you can actually drive the old parliament to more speed and get things done.
+
+So that's roughly the idea. And we tested that already. We tested our own idea according to the same principles with an open survey.
+
+And that was the outcome in the prediction market. Let me just see here where it works. Yeah, no.
+
+Let me just get it here. All right, can we wrap this up in like a couple of minutes?
+
+Is that too?
+
+Okay, sorry. Yeah. Sorry, how many minutes we have?
+
+Two minutes. Is that?
+
+Okay, then I'll go faster. No, that's okay. We had the people decide which democratic concepts, so to say, will win.
+
+And then we had the first Citizens Juries about which topic the party should actually do, which also came out quite well. We had one day where people decided it's not this whole immigration issue which people really want to have resolved, because it's just an emotionalized topic of the parties who want to get into people's heads. But in reality, it was the education system which made rather big fixings.
+
+Anyway, to cut a long story short, we did beat about five of the, so to say, we were the largest of the small parties who were not yet in parliament. We beat the communists with a budget of just about 20,000, excuse me, 120,000 euros. We got about 1% and about double as much as the communist party.
+
+The elections were very difficult because everybody was emotional at the immigration, that the Greens even fell out of parliament. It came from 12% and they got only 3.8%, so they didn't make the 4% hurdle. And well, we're actually quite happy with our 1%, also because the learning experience was huge.
+
+So for the next election, which we're going to participate, we know what we're going to do differently. We will make sure that we beforehand get a sufficient budget, which we now have a number for. We will do a process, not by random, but we'll actually do a competitive process to find a couple of activists who are able to present the idea in the national media.
+
+We will hold at least five Citizens Juries before, so that we can go into the election campaign with a couple of topical ideas, instead of just the idea of exchange democracy. Let's face it, nobody is interested in democracy, funnily enough, everybody assumes that it works. This technicality which I've just shown is of interest, maybe to one or one and a half percent of people in your country.
+
+As you can see, because your room is very small, you're just a couple of people. But what is about, I don't know, taxes, their room would possibly be overflowing. So anyway, we need to have already have five Citizens Juries ready, by which we can tell the population what this new party, this deliberative party, actually wants.
+
+Yeah, and I think that's about it. A bit more money, the right candidates and three topics, and I think next time we're going to make the hurdle. Anyway, thanks guys.
+
+So I hope you enjoyed the speech and that you learned something new about Hubertus Hofkirchner and his group, and that most importantly, that you learned that democracy is not just an effort that is only in Australia, but is a worldwide effort as well. So that being said, I hope to hear your feedback. You can reach us at contact at designingopendemocracy.com.
+
+Thank you very much and hope to hear from you next time. Cheers.
