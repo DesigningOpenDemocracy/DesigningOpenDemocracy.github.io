@@ -3,6 +3,8 @@ title: Collective Intelligence
 summary: "The capacity of a group — or society — to arrive at better decisions, knowledge, or coordination than any individual member could alone. Distinguished from artificial intelligence; studied as an emergent property of democratic and deliberative processes."
 ---
 
+> **⚠ This page is a stub and needs development.** It currently documents the concept primarily through DOD's own discussions, which are drawn from Western liberal-democratic reform contexts. It would benefit from: the wider academic literature on CI (Surowiecki, Lévy, Heylighen); examples of CI *failure* (how digital platforms can degrade collective reasoning through filter bubbles and tribal epistemology); and non-Western or indigenous collective knowledge traditions. Contributions welcome — see [how to get involved](../community/community.md).
+
 **Collective intelligence** (CI) is the capacity of a group to know, decide, or coordinate more effectively than any individual within it. It is distinct from artificial intelligence — a distinction explicitly argued in DOD discussions (see below). CI is an emergent property: it arises from the interactions between participants, not from any single participant's capability.
 
 ## Emergence and scale
