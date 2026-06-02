@@ -3,8 +3,9 @@ title: FLACSO-Cuba
 type: research
 status: active
 country: CU
-website: https://web.archive.org/web/*/https://flacso.uh.cu
+website: https://flacso.org/pa%C3%ADs/cuba
 summary: "The Cuban chapter of the Latin American Social Sciences Faculty (FLACSO), based at the University of Havana — one of the few academic bodies in Cuba publishing empirical research on Cuba's Poder Popular governance system, electoral participation, and local government reform."
+last_checked: "2026-06-02"
 location:
   latitude: 23.1136
   longitude: -82.3666
@@ -25,7 +26,8 @@ FLACSO-Cuba's research engages these structures empirically rather than purely d
 
 ## Links
 
-- Archive: [flacso.uh.cu (Wayback Machine)](https://web.archive.org/web/*/https://flacso.uh.cu)
+- FLACSO Cuba: [flacso.org/país/cuba](https://flacso.org/pa%C3%ADs/cuba)
+- Original site (archived): [flacso.uh.cu (Wayback Machine)](https://web.archive.org/web/*/https://flacso.uh.cu)
 
 ## See also
 

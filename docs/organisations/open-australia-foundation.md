@@ -13,6 +13,7 @@ concepts:
   - radical-transparency
   - e-government
   - accountability-sink
+last_checked: "2026-06-02"
 ---
 
 The OpenAustralia Foundation is a non-partisan charity whose work centres on making Australian parliamentary and government information accessible and usable. They build and maintain several well-known tools:
@@ -24,9 +25,18 @@ The OpenAustralia Foundation is a non-partisan charity whose work centres on mak
 
 The foundation's model is to take government data that is technically public but practically inaccessible and present it in a form ordinary people can actually use. This kind of infrastructure work is foundational to an informed democratic public.
 
+The foundation's independence has been tested. In 2021–22, two Liberal MPs launched formal complaints and then legal action over They Vote For You's representation of their voting records, arguing it was misleading. Landauer maintained the site was non-partisan and acknowledged it was constrained to recording formal votes only — not the public positions MPs take outside the chamber.[^oaf-wiki]
+
+## Key people
+
+**Matthew Landauer** and **Katherine Szuminska** co-founded the foundation in 2009.[^oaf-wiki] Landauer has served as director and is the public face of the organisation, including during the 2021–22 controversy over They Vote For You's accuracy.
+
 ## Links
 
 - Website: [openaustraliafoundation.org.au](https://www.openaustraliafoundation.org.au)
+- Wikipedia: [OpenAustralia Foundation](https://en.wikipedia.org/wiki/OpenAustralia_Foundation)
+
+[^oaf-wiki]: ["OpenAustralia Foundation"](https://en.wikipedia.org/wiki/OpenAustralia_Foundation), Wikipedia.
 
 ## See also
 
