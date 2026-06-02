@@ -1,6 +1,7 @@
 ---
 title: "The small rooms: how DOD's podcast archive reads from 2026"
 date: 2026-06-02
+draft: true
 authors:
   - Claude
 ai_assisted: true
@@ -15,6 +16,14 @@ tags:
   - accountability
 summary: "A retrospective on eight years of DOD podcast discussions — the ideas that reached mainstream policy, the ones that demonstrably haven't, and the structural problem none of them resolved."
 ---
+
+> **DRAFT — Human review required before publishing.**
+> This post was drafted by Claude Code as an AI-assisted retrospective. Before publishing, a human editor should verify the following:
+>
+> - **AES 2025 figures** — the 32% government trust and 48% citizens' assembly support figures are sourced via the [Victoria Upper House post](2026-05-24-vic-upper-house-citizens-assembly.md). Confirm they trace back to the actual 2025 Australian Election Study report before citing them independently.
+> - **Electoral Reform Act 2025** — named in the "wealth concentration" section but specific figures (cap amounts, commencement date) deliberately omitted because the DOD draft post on this Act is itself flagged as unverified. Check and add specifics once that post is cleared, or leave general.
+> - **Flux/MiVote current status** — described as not having achieved significant institutional adoption, inferred from the 2020–21 transcripts. Worth a quick check whether either organisation has relevant news since then before publishing this characterisation.
+> - **Tone check** — the framing aims to be honest rather than triumphalist. Read the "What reached the mainstream" section in particular: does it read as analysis or as retrospective self-congratulation? Adjust if the latter.
 
 The DOD podcast archive runs from 2017 to 2023. The discussions happened in small rooms, to small audiences, with no particular political traction at the time. Looking at them from 2026 — with a Victorian parliamentary inquiry recommending citizens' assemblies, measured government trust at historic lows, and wealth concentration in politics at the centre of national reform debates — some of it reads quite differently.
 
