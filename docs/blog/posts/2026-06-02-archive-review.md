@@ -25,13 +25,13 @@ summary: "A retrospective on eight years of DOD podcast discussions — the idea
 > - **Flux/MiVote current status** — described as not having achieved significant institutional adoption, inferred from the 2020–21 transcripts. Worth a quick check whether either organisation has relevant news since then before publishing this characterisation.
 > - **Tone check** — the framing aims to be honest rather than triumphalist. Read the "What reached the mainstream" section in particular: does it read as analysis or as retrospective self-congratulation? Adjust if the latter.
 
-The DOD podcast archive runs from 2017 to 2023. The discussions happened in small rooms, to small audiences, with no particular political traction at the time. Looking at them from 2026 — with a Victorian parliamentary inquiry recommending citizens' assemblies, measured government trust at historic lows, and wealth concentration in politics at the centre of national reform debates — some of it reads quite differently.
+The DOD podcast archive runs from 2017 to 2023. DOD is a discussion forum, not a political organisation — these were working conversations among practitioners thinking through democratic reform ideas, not policy proposals or advocacy campaigns. Looking at them from 2026 — with a Victorian parliamentary inquiry recommending citizens' assemblies, government trust at historic lows, and wealth concentration in politics at the centre of national reform debates — some of the discussions read quite differently than they might have at the time.
 
 <!-- more -->
 
 > *The summary and analysis in this post were drafted by Claude Code from the episode transcripts and DOD's published blog posts. Quotes are reconstructed from auto-generated transcripts — verify against the recordings before citing. A human editor reviewed it for general accuracy.*
 
-That's not a claim that DOD predicted anything. The discussions were part of a much wider conversation happening in parallel across many rooms. Some of those ideas eventually broke through into mainstream policy discussion. Others demonstrably haven't. And one structural problem runs through all of them, remains unsolved, and may be the most important thread in the archive.
+That's not a claim that DOD drove any of this. The discussions were part of a much wider conversation happening in parallel across many rooms — academic, civic, and policy. Some of those ideas eventually broke through into mainstream policy discussion. Others demonstrably haven't. And one structural problem runs through all of them, remains unsolved, and may be the most important thread in the archive.
 
 ## What reached the mainstream
 
