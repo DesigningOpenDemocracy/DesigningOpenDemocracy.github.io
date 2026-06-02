@@ -13,6 +13,7 @@ These pages are discovery aids — brief orientations to help you find better so
 |---|---|
 | [Accountability Sink](accountability-sink.md) | Structural feature of organisations that absorbs consequences so no one can be held responsible — and why it matters for democratic design |
 | [Cognitive Division of Labour](cognitive-division-of-labour.md) | Schumpeter and Gruen's concept: not everyone can have views on everything — democratic systems need mechanisms for navigating who decides what |
+| [Collective Intelligence](collective-intelligence.md) | The capacity of a group to know or decide better than any individual — emergent property of democratic and deliberative processes; distinct from artificial intelligence |
 | [Cybernetic Governance](cybernetic-governance.md) | Applying Stafford Beer's Viable System Model to diagnose and redesign governance — feedback loops, complexity, and adaptation |
 | [Isegoria](isegoria.md) | Ancient Greek principle of equal political voice — and why elections undermine it while citizens' juries restore it |
 | [Tribal Epistemology](tribal-epistemology.md) | When group identity determines what people believe rather than evidence — and the implications for democratic deliberation |
