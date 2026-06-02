@@ -19,7 +19,7 @@ This makes prediction markets a potential tool for **surfacing considered collec
 
 ## In practice
 
-- **Prediki** — built a platform combining prediction markets with argument capture and sentiment analysis, explicitly framed as a democratic tool. Presented at the [2017 DOD event](../../blog/posts/2017-08-21-podcast.md).
+- **Prediki** — built a platform combining prediction markets with argument capture and sentiment analysis, explicitly framed as a democratic tool. Presented at the [2017 DOD event](../../blog/posts/2017-08-21-podcast.md), where Hubertus Hofkirchner and Nicholas Gruen debated the boundary between *what will be* (a prediction-market question) and *what shall be* — a value question Gruen argued is better suited to a deliberating citizens' jury.
 - **Futarchy** — a governance model proposed by Robin Hanson in which policy is determined by prediction markets: "vote on values, bet on beliefs." Society decides what outcomes it wants (e.g. GDP per capita); prediction markets determine which policies are most likely to produce those outcomes.
 - **Iowa Electronic Markets** — long-running academic prediction market for US elections, consistently competitive with major polls.
 
