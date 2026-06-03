@@ -85,7 +85,8 @@ By Kaye's account, IBDD has several properties that existing democratic systems 
 Designing Open Democracy recorded a podcast episode with Ben Ballingall, Victoria representative of the Flux Party, on 2020-02-11.
 [Listen on Apple Podcasts](https://podcasts.apple.com/au/podcast/talk-ben-ballingall-about-flux-party-issue-based-direct/id1492656241?i=1000465446730)
 
-Extended notes and transcript: [Bonus content with Ben Ballingall](../../blog/posts/2020-02-29-podcast.md)
+- [Talk with Ben Ballingall about Flux Party and IBDD](../../blog/posts/2020-02-13-podcast.md) — the main conversation: Brexit as a failure case, IBDD vs citizen juries, corruption resistance, the electoral path
+- [Bonus content with Ben Ballingall](../../blog/posts/2020-02-29-podcast.md) — extended warm-up notes focused on how the Flux system works
 
 ## See also
 

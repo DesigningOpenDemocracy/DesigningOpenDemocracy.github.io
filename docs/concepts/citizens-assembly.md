@@ -161,3 +161,5 @@ organisation has helped run Citizens’ Assemblies in the UK.
 - [G1000](../organisations/g1000.md)
 - [Victoria's Upper House inquiry: the case for a citizens' assembly](../../blog/posts/2026-05-24-vic-upper-house-citizens-assembly.md)
 - [Q&A on deliberative democracy for council candidates (Victoria, Australia)](../../blog/posts/2024-09-28-q&a-on-deliberative-democracy-for-council-candidates-(victoria,-australia).md)
+- [Isegoria: how citizens' juries deliver it (Gruen, 2020)](../../blog/posts/2020-03-20.md) — Gruen's proposal for a standing, crowd-funded citizens' assembly
+- [Citizens' Democracy (Gruen & Hofkirchner, 2017)](../../blog/posts/2017-08-21-podcast.md)

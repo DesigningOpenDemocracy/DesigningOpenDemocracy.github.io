@@ -4,6 +4,7 @@ type: advocacy
 status: active
 country: AU
 website: http://accountabilityrt.org
+last_checked: "2026-06-02"
 summary: "A non-partisan Australian group of citizens — academics, lawyers, politicians, journalists — working to improve standards of accountability, transparency, and democratic integrity in Australian governments."
 location:
   latitude: -37.8136

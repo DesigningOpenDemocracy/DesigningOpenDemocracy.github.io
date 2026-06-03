@@ -9,6 +9,7 @@ Developed in the Australian context by economist Nicolas Gruen at the [2017 Desi
 ## Further reading
 
 - [Nicolas Gruen's 2017 DOD presentation](../blog/posts/2017-08-21-podcast.md) — recording and full notes
+- [Isegoria: how citizens' juries deliver it (Gruen, 2020)](../blog/posts/2020-03-20.md) — Gruen's developed version of the argument
 - Joseph Schumpeter, *Capitalism, Socialism and Democracy* (1943)
 - [Nicolas Gruen — Wikipedia](https://en.wikipedia.org/wiki/Nicholas_Gruen)
 

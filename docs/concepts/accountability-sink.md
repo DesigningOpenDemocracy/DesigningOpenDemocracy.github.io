@@ -35,3 +35,4 @@ Accountability sinks persist partly because they are invisible. Transparency mec
 - [Sortition](sortition.md)
 - [Radical Transparency](radical-transparency.md)
 - [Cognitive Division of Labour](cognitive-division-of-labour.md)
+- [Trust, a concept analysis (DOD, 2019)](../../blog/posts/2019-12-11-podcast.md) — the "feedback loop" discussion: *who is influenced is not who is influencing it*, and how cooperative ownership closes the loop

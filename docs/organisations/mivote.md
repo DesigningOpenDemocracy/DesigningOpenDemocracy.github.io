@@ -48,7 +48,11 @@ The intention was that by the time a voter saw the four destinations and their s
 
 ## 2018 goals
 
-At the December 2016 Future Assembly presentation, MiVote set public targets for the 2019 federal election: three senators elected, one million members, and 5,000 volunteers. For context, the combined formal membership of all major Australian parties at the time was approximately 81,000. These goals were not achieved. The organisation deregistered before the 2019 election.
+At the December 2016 Future Assembly presentation, MiVote set public targets for the 2019 federal election: three senators elected, one million members, and 5,000 volunteers. For context, the combined formal membership of all major Australian parties at the time was approximately 81,000. These goals were not achieved. The Australian party deregistered before the 2019 election.
+
+## What came after
+
+The movement and its technology did not end with the Australian party's deregistration. In a [2021 catch-up interview with DOD](../../blog/posts/2021-08-07-podcast.md), founder Adam Jacoby described spinning the in-house voting technology out as a separate company (Horizon State) — a decision he called "the single worst commercial decision I've ever made" — then rebuilding it in-house as MiVote Technologies and relocating to the UK under the government's Entrepreneurs Programme. He also reported that across five or six early Australian votes, the 60% consensus threshold was *always* reached, which he offers as evidence that multi-choice, well-informed voting can produce consensus even in a polarised environment.
 
 ## Links
 
@@ -63,3 +67,4 @@ At the December 2016 Future Assembly presentation, MiVote set public targets for
 - [Flux Party](flux-party.md)
 - [Digipol](digipol.md)
 - [Evaluating Democracy Reform Proposals](../../blog/posts/2018-05-03.md) — Nick Merange's comparative scoring of Flux, MiVote, Online Direct Democracy, and Citizens' Juries
+- [Catching up with Adam Jacoby (2021 podcast)](../../blog/posts/2021-08-07-podcast.md) — the later UK chapter, the Horizon State lesson, and the 60% consensus finding

@@ -8,7 +8,7 @@ Distinct from Corporate Social Responsibility (CSR): CSR asks corporations to be
 
 The main forms in practice are cooperatives (worker-owned, consumer-owned, or multi-stakeholder), mutuals, and employee ownership trusts.
 
-Presented at a [2020 Designing Open Democracy podcast](../blog/posts/2020-06-20-podcast.md) by Antony McMullen of [Co-operative Bonds](../organisations/cooperative-bonds.md), in the context of the Australian banking royal commission.
+Presented at a [2020 Designing Open Democracy podcast](../blog/posts/2020-06-20-podcast.md) by Antony McMullen of [Co-operative Bonds](../organisations/cooperative-bonds.md), in the context of the Australian banking royal commission. Revisited in the [2022 Basil's Table panel](../blog/posts/2023-01-21-podcast.md), which connected cooperative ownership to housing, post-growth foresight, and the "billionaire problem."
 
 ## Further reading
 

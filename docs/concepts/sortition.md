@@ -36,3 +36,5 @@ title: Sortition
 - [What if we replaced politicians with randomly selected people?](../../blog/posts/2018-06-18.md) — Brett Hennig TED talk, discussed at DOD 2018
 - [Your Party is using sortition](../../blog/posts/2025-12-07-your-party-is-using-sortition.md) — UK case study, 2025
 - [Victoria's Upper House inquiry: the case for a citizens' assembly](../../blog/posts/2026-05-24-vic-upper-house-citizens-assembly.md)
+- [Isegoria: how citizens' juries deliver it (Gruen, 2020)](../../blog/posts/2020-03-20.md) — the by-lot vs by-election argument, and the Athenian Boule
+- [Citizens' Democracy (Gruen & Hofkirchner, 2017)](../../blog/posts/2017-08-21-podcast.md)

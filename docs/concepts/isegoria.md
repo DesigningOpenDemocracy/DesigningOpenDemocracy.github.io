@@ -27,5 +27,6 @@ The argument is not just procedural. Gruen also draws on the observation that vo
 ## Sources and further reading
 
 - DOD Podcast: [Isegoria: The Way Citizens' Juries Deliver It, How Elections Destroy It](../../blog/posts/2020-03-20.md) — Nicholas Gruen in conversation with DOD, 2020
+- DOD Podcast: [Citizens' Democracy](../../blog/posts/2017-08-21-podcast.md) — Gruen's earlier (2017) presentation of the same isegoria / by-lot argument
 - Nicholas Gruen's Substack: [nicholasgruen.substack.com](https://nicholasgruen.substack.com) — ongoing writing on democracy reform and political economy
 - Centre for Public Impact: [Detoxing democracy: introducing citizens' juries](https://www.centreforpublicimpact.org/detoxing-democracy-citizens-juries/)
