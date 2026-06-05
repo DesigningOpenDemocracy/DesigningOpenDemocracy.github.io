@@ -191,17 +191,16 @@
     const elements = [
       ...graphData.nodes.map(function(n) {
         var data = Object.assign({}, n);
-        if (data.type === 'organisation' && data.org_type) {
-          var emoji = TYPE_EMOJI[data.org_type];
-          if (emoji) data.label = emoji + ' ' + data.label;
-        }
         var s = (data.type === 'organisation' || data.type === 'project')
           ? staleness(data.activity_date) : 0;
         data.stale_factor = s;
-        // Dormant orgs (stale ≥ ~6 months) show emoji-only when zoomed out
-        if (data.type === 'organisation' && s >= 0.5) {
-          data.full_label  = data.label;
-          data.short_label = TYPE_EMOJI[data.org_type] || '•';
+        // Each org gets a per-node reveal_zoom: recently active orgs show their
+        // name sooner (lower zoom), stale orgs only when zoomed in further.
+        if (data.type === 'organisation') {
+          var emoji = TYPE_EMOJI[data.org_type] || '';
+          data.full_label  = emoji ? emoji + ' ' + data.label : data.label;
+          data.short_label = emoji || '•';
+          data.reveal_zoom = 0.7 + Math.pow(s, 0.5) * 0.8;
           data.label       = data.short_label;
         }
         return { data: data };
@@ -260,16 +259,15 @@
         edge.addClass('hidden');
     });
 
-    // Zoom-invariant font + label switching (dormant orgs: emoji at low zoom, name when zoomed in)
-    var LABEL_ZOOM = 2.0;
-
+    // Zoom-invariant font + progressive label reveal (each org has its own reveal_zoom)
     function updateZoom() {
       var z = cy.zoom();
-      var showFull = z >= LABEL_ZOOM;
       cy.nodes().forEach(function(node) {
         var d = node.data();
         node.style('font-size', ((d.type === 'concept' ? 11 : 9) / z) + 'px');
-        if (d.short_label) node.data('label', showFull ? d.full_label : d.short_label);
+        if (d.reveal_zoom !== undefined) {
+          node.data('label', z >= d.reveal_zoom ? d.full_label : d.short_label);
+        }
       });
     }
 
