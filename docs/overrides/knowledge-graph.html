@@ -78,18 +78,10 @@
   }
 
   function bgColor(d) {
-    var base;
-    if (d.type === 'concept') return '#3949ab';
-    if (d.type === 'organisation') {
-      if (d.status === 'active')            base = '#1565c0';
-      else if (d.status === 'deregistered') base = '#78909c';
-      else                                  base = '#607d8b';
-    } else if (d.type === 'project') {
-      base = d.status === 'active' ? '#2e7d32' : '#66bb6a';
-    } else {
-      return '#9e9e9e';
-    }
-    return blendToGrey(base, (d.stale_factor || 0) * 0.6);
+    if (d.type === 'concept')      return '#3949ab';
+    if (d.type === 'organisation') return blendToGrey('#1565c0', (d.stale_rank || 0) * 0.8);
+    if (d.type === 'project')      return d.status === 'active' ? '#2e7d32' : '#66bb6a';
+    return '#9e9e9e';
   }
 
   var TYPE_EMOJI = {
