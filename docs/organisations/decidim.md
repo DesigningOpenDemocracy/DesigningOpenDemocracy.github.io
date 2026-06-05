@@ -17,9 +17,9 @@ location:
   name: Barcelona, Spain
 rss_feed: https://decidim.org/blog/feed.xml
 last_activity:
-  date: 2026-06-05
-  note: "RSS feed discovered"
-  url: https://decidim.org/blog/feed.xml
+  date: 2026-06-04
+  note: "Latest post: Nos infrastructures démocratiques ne peuvent pas être propriétaires : à propos d"
+  url: https://decidim.org/blog/2026-04-07-nos-infrastructures-democratiques-ne-peuvent
   method: rss
 ---
 

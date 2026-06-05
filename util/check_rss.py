@@ -12,6 +12,7 @@ Usage:
     python util/check_rss.py --slug loomio  # check one org by slug
     python util/check_rss.py --timeout 8    # per-request timeout in seconds
     python util/check_rss.py --output results.json  # write JSON output
+    python util/check_rss.py --update-activity      # fetch feeds and update last_activity
 
 Requirements: requests (util/requirements.txt)
 """
@@ -20,9 +21,13 @@ import argparse
 import glob
 import json
 import os
+import re
 import sys
 import time
+from datetime import datetime
+from email.utils import parsedate_to_datetime
 from urllib.parse import urljoin, urlparse
+from xml.etree import ElementTree as ET
 
 try:
     import frontmatter
@@ -41,6 +46,7 @@ DOCS_DIR = os.path.join(os.path.dirname(__file__), "..", "docs")
 ORGS_DIR = os.path.join(DOCS_DIR, "organisations")
 SKIP_FILES = {"organisations.md"}
 WAYBACK_PREFIX = "https://web.archive.org"
+TODAY = datetime.today().strftime("%Y-%m-%d")
 
 # Common feed URL paths to probe (tried in order, stop at first hit)
 FEED_PATHS = [
@@ -120,6 +126,116 @@ def probe_feeds(base_url, timeout=8, session=None):
     return None
 
 
+def parse_date(s):
+    """Parse RSS (RFC 2822) or Atom (ISO 8601) date strings robustly."""
+    if not s:
+        return None
+    s = s.strip()
+    # RFC 2822 (most RSS feeds)
+    try:
+        return parsedate_to_datetime(s).date()
+    except Exception:
+        pass
+    # ISO 8601 — strip sub-seconds, use fromisoformat for tz handling
+    try:
+        clean = re.sub(r"\.\d+", "", s)
+        return datetime.fromisoformat(clean).date()
+    except Exception:
+        pass
+    # bare date fallback
+    try:
+        return datetime.strptime(s[:10], "%Y-%m-%d").date()
+    except ValueError:
+        pass
+    return None
+
+
+def latest_from_feed(url, timeout=10, session=None):
+    """Fetch url and return (date, title, link) of the most recent item, or (None, None, None)."""
+    if session is None:
+        session = requests.Session()
+        session.headers["User-Agent"] = "DOD-RSS-Reader/1.0 (democracy wiki)"
+    try:
+        r = session.get(url, timeout=timeout)
+        r.raise_for_status()
+    except RequestException:
+        return None, None, None
+    try:
+        root = ET.fromstring(r.content)
+    except ET.ParseError:
+        return None, None, None
+
+    local = re.sub(r"\{[^}]*\}", "", root.tag).lower()
+    ns = root.tag.split("}")[0] + "}" if root.tag.startswith("{") else ""
+    entries = []
+
+    if local == "rss":
+        for item in root.findall(".//item"):
+            title = (item.findtext("title") or "").strip()
+            pubdate = (item.findtext("pubDate")
+                       or item.findtext("{http://purl.org/dc/elements/1.1/}date"))
+            link = item.findtext("link") or ""
+            d = parse_date(pubdate)
+            if d:
+                entries.append((d, title, link))
+    elif local == "feed":
+        for entry in root.findall(f"{ns}entry"):
+            title_el = entry.find(f"{ns}title")
+            title = (title_el.text or "").strip() if title_el is not None else ""
+            updated = (entry.findtext(f"{ns}updated")
+                       or entry.findtext(f"{ns}published"))
+            link_el = entry.find(f"{ns}link")
+            link = link_el.get("href", "") if link_el is not None else ""
+            if not link:
+                link = entry.findtext(f"{ns}id") or ""
+            d = parse_date(updated)
+            if d:
+                entries.append((d, title, link))
+
+    if not entries:
+        return None, None, None
+    entries.sort(key=lambda x: x[0], reverse=True)
+    return entries[0]
+
+
+def update_last_activity(path, date_str, note, feed_url, post_url=None):
+    """Replace or append last_activity block in org frontmatter."""
+    with open(path) as f:
+        content = f.read()
+    parts = content.split("---", 2)
+    if len(parts) < 3 or parts[0] != "":
+        return False
+    yaml_block, rest = parts[1], parts[2]
+
+    # Remove existing last_activity block if present
+    lines = yaml_block.split("\n")
+    new_lines = []
+    skip = False
+    for line in lines:
+        if re.match(r"^last_activity\s*:", line):
+            skip = True
+            continue
+        if skip:
+            if line.startswith("  "):
+                continue
+            skip = False
+        new_lines.append(line)
+    yaml_block = "\n".join(new_lines)
+
+    url_field = post_url or feed_url
+    new_block = [
+        "last_activity:",
+        f"  date: {date_str}",
+        f"  note: {json.dumps(note, ensure_ascii=False)}",
+        f"  url: {url_field}",
+        "  method: rss",
+    ]
+    yaml_block = yaml_block.rstrip("\n") + "\n" + "\n".join(new_block) + "\n"
+    with open(path, "w") as f:
+        f.write("---" + yaml_block + "---" + rest)
+    return True
+
+
 def load_orgs(slug_filter=None, include_inactive=False):
     orgs = []
     for path in sorted(glob.glob(os.path.join(ORGS_DIR, "*.md"))):
@@ -141,7 +257,7 @@ def load_orgs(slug_filter=None, include_inactive=False):
             "title": meta.get("title", slug),
             "website": website,
             "status": status,
-            "has_rss": bool(meta.get("rss_feed")),
+            "rss_feed": meta.get("rss_feed") or "",
             "path": path,
         })
     return orgs
@@ -154,6 +270,8 @@ def main():
     parser.add_argument("--timeout", type=int, default=8, metavar="N", help="Per-request timeout in seconds (default: 8)")
     parser.add_argument("--output", metavar="FILE", help="Write JSON results to FILE")
     parser.add_argument("--skip-existing", action="store_true", help="Skip orgs that already have rss_feed:")
+    parser.add_argument("--update-activity", action="store_true",
+                        help="Fetch each discovered (or existing) feed and update last_activity with latest post date/title")
     args = parser.parse_args()
 
     orgs = load_orgs(slug_filter=args.slug, include_inactive=args.all)
@@ -173,47 +291,49 @@ def main():
 
     for i, org in enumerate(orgs, 1):
         slug = org["slug"]
-        if args.skip_existing and org["has_rss"]:
+        if args.skip_existing and org["rss_feed"]:
             skipped.append(org)
             print(f"  [{i:3d}/{len(orgs)}] SKIP  {slug} (already has rss_feed)")
             continue
 
-        print(f"  [{i:3d}/{len(orgs)}] {slug} ({org['website']}) … ", end="", flush=True)
-        feed_url = probe_feeds(org["website"], timeout=args.timeout, session=session)
+        # Use existing rss_feed if present, otherwise probe
+        feed_url = org["rss_feed"] or probe_feeds(org["website"], timeout=args.timeout, session=session)
 
+        print(f"  [{i:3d}/{len(orgs)}] {slug} … ", end="", flush=True)
         result = {**org, "feed_url": feed_url}
-        results.append(result)
 
         if feed_url:
-            print(f"FOUND  {feed_url}")
+            if args.update_activity and not feed_url.endswith("sitemap.xml"):
+                d, title, link = latest_from_feed(feed_url, timeout=args.timeout, session=session)
+                if d:
+                    note = f"Latest post: {title[:80]}" if title else "RSS feed active"
+                    update_last_activity(org["path"], d.isoformat(), note, feed_url, link or None)
+                    print(f"UPDATED  {d}  {title[:50]}")
+                    result["latest_date"] = d.isoformat()
+                    result["latest_title"] = title
+                else:
+                    print(f"FOUND (no parseable posts)  {feed_url}")
+            else:
+                print(f"FOUND  {feed_url}")
             found.append(result)
         else:
             print("not found")
             not_found.append(result)
 
-        # Polite crawling: 0.3s between sites
+        results.append(result)
         time.sleep(0.3)
 
     print(f"\n{'='*60}")
     print(f"Found feeds for {len(found)} / {len(orgs) - len(skipped)} orgs checked")
     if skipped:
         print(f"Skipped {len(skipped)} orgs (already have rss_feed:)")
-    print()
-
-    if found:
-        print("=== Orgs with feeds ===")
-        for r in found:
-            print(f"  {r['slug']}")
-            print(f"    feed:    {r['feed_url']}")
-            print(f"    website: {r['website']}")
-            print()
 
     if args.output:
         with open(args.output, "w") as f:
-            json.dump(results, f, indent=2)
+            json.dump(results, f, indent=2, ensure_ascii=False)
         print(f"Results written to {args.output}")
 
-    return 0 if found else 0
+    return 0
 
 
 if __name__ == "__main__":
