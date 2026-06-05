@@ -197,8 +197,13 @@
         }
         var s = (data.type === 'organisation' || data.type === 'project')
           ? staleness(data.activity_date) : 0;
-        data.base_font    = data.type === 'concept' ? 11 : 9 - s * 2.5;
         data.stale_factor = s;
+        // Dormant orgs (stale ≥ ~6 months) show emoji-only when zoomed out
+        if (data.type === 'organisation' && s >= 0.5) {
+          data.full_label  = data.label;
+          data.short_label = TYPE_EMOJI[data.org_type] || '•';
+          data.label       = data.short_label;
+        }
         return { data: data };
       }),
       ...graphData.edges.map(function(e, i) {
@@ -255,15 +260,23 @@
         edge.addClass('hidden');
     });
 
-    cy.fit();
+    // Zoom-invariant font + label switching (dormant orgs: emoji at low zoom, name when zoomed in)
+    var LABEL_ZOOM = 0.6;
 
-    // Zoom-invariant font size (per-node base_font respects staleness scaling)
-    cy.on('zoom', function() {
+    function updateZoom() {
       var z = cy.zoom();
+      var showFull = z >= LABEL_ZOOM;
       cy.nodes().forEach(function(node) {
-        node.style('font-size', ((node.data('base_font') || 9) / z) + 'px');
+        var d = node.data();
+        node.style('font-size', ((d.type === 'concept' ? 11 : 9) / z) + 'px');
+        if (d.short_label) node.data('label', showFull ? d.full_label : d.short_label);
       });
-    });
+    }
+
+    cy.fit();
+    updateZoom();
+
+    cy.on('zoom', updateZoom);
 
     // Middle and right-click panning
     var _panning = false, _panAnchor = {x:0,y:0}, _panOrigin = {x:0,y:0};
