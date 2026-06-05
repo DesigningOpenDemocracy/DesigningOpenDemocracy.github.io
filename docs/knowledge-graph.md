@@ -8,7 +8,8 @@ Explore the connections between concepts, organisations, and projects tracked on
 - **Concepts** (indigo) — governance and democracy ideas
 - **Organisations** (blue → grey) — groups in the democracy landscape; vivid blue = recently active, fading to grey = dormant or inactive. All orgs start as emoji-only when zoomed out; zoom in to reveal names progressively — most recently active orgs appear first. Emoji key: 🔬 research · 📢 advocacy · 💻 platform · ⚙️ civic tech · 🤝 practice · 🗳️ party/political · 🏛️ governance · ♻️ cooperative · 🌱 philanthropy · 🎓 education
 - **Projects** (green) — Designing Open Democracy's own work
-- **Solid edges** — organisation or project relates to a concept (`concepts:` frontmatter)
+- **Solid grey edges** — organisation or project relates to a concept (`concepts:` frontmatter)
+- **Solid orange edges** — direct org-to-org link (`related_orgs:` frontmatter)
 - **Dashed purple edges** — concept links to another concept (from *See also* sections)
 
 Click a node to see details; double-click to navigate to its page. Left-click drag to pan, scroll to zoom, or use middle/right-click drag to pan. Use the toolbar to filter by type, show only active entries, search by name, or zoom to fit.
