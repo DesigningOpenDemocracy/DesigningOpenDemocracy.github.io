@@ -14,6 +14,10 @@ import datetime
 import glob
 import json
 import os
+import sys
+
+sys.path.insert(0, os.path.dirname(__file__))
+from activity_selector import PRIORITY, STALENESS_DAYS, _parse_date
 
 try:
     import frontmatter
@@ -48,21 +52,46 @@ def load_orgs():
             "longitude": loc.get("longitude", ""),
             "location_name": loc.get("name", ""),
             "last_checked": m.get("last_checked", ""),
+            "rss_feed": m.get("rss_feed", ""),
+            "activity": m.get("activity") or {},
         })
     return orgs
+
+
+def _best_activity(activity_dict):
+    """Return (date_str, method) of the best activity entry, mirroring activity_selector logic."""
+    today = datetime.date.today()
+    for source in PRIORITY:
+        entry = activity_dict.get(source)
+        if not entry:
+            continue
+        d = _parse_date(entry.get("date"))
+        if d and (today - d).days <= STALENESS_DAYS.get(source, 365):
+            return str(d), source
+    # fallback: most recent
+    best_date, best_source = None, None
+    for source in PRIORITY:
+        entry = activity_dict.get(source)
+        if not entry:
+            continue
+        d = _parse_date(entry.get("date"))
+        if d and (best_date is None or d > best_date):
+            best_date, best_source = d, source
+    return (str(best_date), best_source) if best_date else ("", "")
 
 
 def write_orgs_csv(orgs):
     path = os.path.join(OUT_DIR, "organisations.csv")
     fields = ["slug", "title", "status", "country", "type", "website",
               "summary", "concepts", "latitude", "longitude", "location_name",
-              "last_checked"]
+              "rss_feed", "activity_date", "activity_method", "last_checked"]
     with open(path, "w", newline="", encoding="utf-8") as f:
-        w = csv.DictWriter(f, fieldnames=fields)
+        w = csv.DictWriter(f, fieldnames=fields, extrasaction="ignore")
         w.writeheader()
         for o in orgs:
             row = dict(o)
             row["concepts"] = ",".join(o["concepts"])
+            row["activity_date"], row["activity_method"] = _best_activity(o["activity"])
             w.writerow(row)
 
 
@@ -90,6 +119,9 @@ def write_orgs_json(orgs, meta):
             }
         else:
             r["location"] = None
+        act_date, act_method = _best_activity(o["activity"])
+        r["activity_date"] = act_date
+        r["activity_method"] = act_method
         records.append(r)
     with open(path, "w", encoding="utf-8") as f:
         json.dump({"metadata": meta, "organisations": records}, f,
