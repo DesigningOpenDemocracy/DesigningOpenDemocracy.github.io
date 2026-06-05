@@ -14,8 +14,8 @@ location:
   name: Seattle, USA
 last_activity:
   date: 2026-06-05
-  note: "Site verified active (no RSS feed found)"
-  method: manual
+  note: "Site responding (sitemap detected)"
+  method: automated
 ---
 
 DemocracyLab is a Seattle-based 501(c)(3) non-profit that operates an online platform connecting skilled volunteers with civic technology projects. It functions as infrastructure for the broader civic tech movement, matching developers, designers, researchers, and communications professionals with tech-for-good initiatives that need their skills.

@@ -15,8 +15,8 @@ location:
   name: Melbourne, Australia
 last_activity:
   date: 2026-06-05
-  note: "Site verified active (no RSS feed found)"
-  method: manual
+  note: "Site responding (sitemap detected)"
+  method: automated
 ---
 
 Conversations at the Crossroads is an independent Australian civic network focused on democratic renewal through thoughtful, informed conversation. Founded around 2020 by Professor Joseph Camilleri (Professor Emeritus, La Trobe University) and colleagues, the network runs public events, citizens assemblies, educational series, and podcasts aimed at connecting progressive social movements and scaling deliberative participation.

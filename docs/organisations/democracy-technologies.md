@@ -17,8 +17,8 @@ location:
 last_checked: "2026-05-29"
 last_activity:
   date: 2026-06-05
-  note: "Site verified active (no RSS feed found)"
-  method: manual
+  note: "Site responding (sitemap detected)"
+  method: automated
 ---
 
 Democracy Technologies is a research initiative and curated database that maps the global landscape of digital tools and platforms for democratic participation. It is part of the **Innovation in Politics Institute**, based in Vienna and Berlin.
