@@ -18,9 +18,9 @@ last_checked: "2026-05-29"
 rss_feed: https://www.mysociety.org/feed
 activity:
   rss:
-    date: 2026-05-19
-    note: "Latest post: Welsh residents now have six MSs, and they all work for you"
-    url: "https://www.mysociety.org/2026/05/19/welsh-residents-now-have-six-mss-and-they-all-work-for-you/"
+    date: 2026-06-05
+    note: "Latest post: New report! Supporting Participation: Building an effective European civic tech "
+    url: https://www.mysociety.org/2026/06/05/new-report-supporting-participation-building-an-effective-european-civic-tech-hub/
 ---
 
 mySociety is a UK registered charity and social enterprise, founded in 2003, that builds digital tools to make it easier for citizens to participate in democracy, hold governments accountable, and access public services. It operates on the principle that well-designed technology can reduce the friction between citizens and the state.

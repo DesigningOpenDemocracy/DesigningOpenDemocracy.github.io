@@ -280,6 +280,8 @@ def update_activity_source(path, date_str, note, url, method="scrape"):
         if in_activity and method not in (meta.get("activity") or {}):
             new_lines.extend(source_lines)
         yaml_block = "\n".join(new_lines)
+        if not yaml_block.endswith("\n"):
+            yaml_block += "\n"
     else:
         new_block = ["activity:"] + source_lines
         yaml_block = yaml_block.rstrip("\n") + "\n" + "\n".join(new_block) + "\n"
