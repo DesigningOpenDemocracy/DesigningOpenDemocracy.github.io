@@ -1,6 +1,6 @@
 ---
 title: Flux Party
-type: political-party
+type: party
 status: deregistered
 country: AU
 website: https://web.archive.org/web/*/https://voteflux.org/

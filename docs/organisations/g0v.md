@@ -1,6 +1,6 @@
 ---
 title: g0v (gov zero)
-type: civic_tech
+type: civic tech
 status: active
 country: TW
 website: https://g0v.tw

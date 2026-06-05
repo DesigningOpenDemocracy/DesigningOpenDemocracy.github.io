@@ -1,6 +1,6 @@
 ---
 title: OpenAustralia Foundation
-type: civic_tech
+type: civic tech
 status: active
 country: AU
 website: https://www.openaustraliafoundation.org.au

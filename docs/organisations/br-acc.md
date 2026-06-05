@@ -1,6 +1,6 @@
 ---
 title: br/acc (World Transparency Graph)
-type: civic_tech
+type: civic tech
 status: active
 country: BR
 website: https://github.com/brunoclz/br-acc
