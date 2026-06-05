@@ -19,6 +19,12 @@ import sys
 sys.path.insert(0, os.path.dirname(__file__))
 from activity_selector import PRIORITY, STALENESS_DAYS, _parse_date
 
+
+def _json_default(obj):
+    if isinstance(obj, (datetime.date, datetime.datetime)):
+        return str(obj)
+    raise TypeError(f"Object of type {type(obj).__name__} is not JSON serializable")
+
 try:
     import frontmatter
 except ImportError:
@@ -125,7 +131,7 @@ def write_orgs_json(orgs, meta):
         records.append(r)
     with open(path, "w", encoding="utf-8") as f:
         json.dump({"metadata": meta, "organisations": records}, f,
-                  ensure_ascii=False, indent=2)
+                  ensure_ascii=False, indent=2, default=_json_default)
 
 
 def write_orgs_geojson(orgs, meta):
@@ -159,7 +165,7 @@ def write_orgs_geojson(orgs, meta):
         })
     fc = {"type": "FeatureCollection", "metadata": meta, "features": features}
     with open(path, "w", encoding="utf-8") as f:
-        json.dump(fc, f, ensure_ascii=False, indent=2)
+        json.dump(fc, f, ensure_ascii=False, indent=2, default=_json_default)
 
 
 def _kml_escape(s):
