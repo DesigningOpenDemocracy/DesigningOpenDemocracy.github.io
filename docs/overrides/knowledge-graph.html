@@ -78,18 +78,10 @@
   }
 
   function bgColor(d) {
-    var base;
-    if (d.type === 'concept') return '#3949ab';
-    if (d.type === 'organisation') {
-      if (d.status === 'active')            base = '#1565c0';
-      else if (d.status === 'deregistered') base = '#78909c';
-      else                                  base = '#607d8b';
-    } else if (d.type === 'project') {
-      base = d.status === 'active' ? '#2e7d32' : '#66bb6a';
-    } else {
-      return '#9e9e9e';
-    }
-    return blendToGrey(base, (d.stale_factor || 0) * 0.6);
+    if (d.type === 'concept')      return '#3949ab';
+    if (d.type === 'organisation') return blendToGrey('#1565c0', (d.stale_rank || 0) * 0.8);
+    if (d.type === 'project')      return d.status === 'active' ? '#2e7d32' : '#66bb6a';
+    return '#9e9e9e';
   }
 
   var TYPE_EMOJI = {
@@ -149,13 +141,18 @@
       style: {
         'width':       1,
         'line-color':  '#90a4ae',
-        'opacity':     0.5,
+        'opacity':     ele => Math.max(0.08, 0.5 - ele.data('stale_rank') * 0.4),
         'curve-style': 'bezier',
+        'events':      'no',
       }
     },
     {
       selector: 'edge[type = "see_also"]',
       style: { 'line-color': '#9c27b0', 'line-style': 'dashed', 'opacity': 0.4 }
+    },
+    {
+      selector: 'edge[type = "org_link"]',
+      style: { 'line-color': '#e65100', 'width': 2, 'opacity': ele => Math.max(0.1, 0.75 - ele.data('stale_rank') * 0.6) }
     },
     {
       selector: 'node.highlighted',
@@ -219,6 +216,17 @@
     orgEls.forEach(function(el, i) {
       var t = orgEls.length > 1 ? i / (orgEls.length - 1) : 0;
       el.data.reveal_zoom = 1.0 + t * 3.0;
+      el.data.stale_rank  = t;
+    });
+
+    // Propagate stale_rank to edges: use the stalest endpoint.
+    var nodeRank = {};
+    elements.forEach(function(el) {
+      if (el.data.stale_rank !== undefined) nodeRank[el.data.id] = el.data.stale_rank;
+    });
+    elements.forEach(function(el) {
+      if (el.data.source !== undefined)
+        el.data.stale_rank = Math.max(nodeRank[el.data.source] || 0, nodeRank[el.data.target] || 0);
     });
 
     var cy = cytoscape({
@@ -340,8 +348,8 @@
       showInfo(node.data());
       cy.elements().addClass('faded').removeClass('highlighted');
       node.removeClass('faded').addClass('highlighted');
-      var neighbours = node.connectedEdges().connectedNodes();
-      neighbours.removeClass('faded');
+      var connectedEdges = node.connectedEdges().removeClass('faded');
+      var neighbours = connectedEdges.connectedNodes().removeClass('faded');
       // Pin selected node + neighbours so they always show full label
       cy.nodes().removeClass('pinned');
       node.addClass('pinned');

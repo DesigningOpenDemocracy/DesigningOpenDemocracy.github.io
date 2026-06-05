@@ -97,6 +97,9 @@ def on_page_context(context, *, page, config, nav):
         }
         for c in (page.meta.get('concepts') or []):
             _edges.append({'source': node_id, 'target': f'concept:{c}', 'type': 'relates_to'})
+        for r in (page.meta.get('related_orgs') or []):
+            a, b = sorted([node_id, f'org:{r}'])
+            _edges.append({'source': a, 'target': b, 'type': 'org_link'})
 
     elif url.startswith('projects/') and url not in ('projects/', 'projects/projects/'):
         slug = url.replace('projects/', '').rstrip('/')

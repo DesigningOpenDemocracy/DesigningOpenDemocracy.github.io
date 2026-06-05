@@ -52,6 +52,7 @@ The invariants recorded there are not immutable. Any document in this repo — i
 - `location: {latitude, longitude, name}` — required for the org to appear on the interactive map. Only `status: active` orgs are shown on the map.
 - The `organisation.html` template is **auto-applied** to all org pages via `hooks/org_template.py` — no need to set `template:` in frontmatter unless overriding.
 - `rss_feed: <url>` — optional; the org's RSS or Atom feed URL. Populated by `util/check_rss.py`.
+- `related_orgs: [slug, slug]` — optional; list of org slugs with a direct relationship to this org. Rendered as orange edges in the knowledge graph. Declare on one side only — direction is normalised so duplicates are automatically suppressed.
 - `activity:` — optional dict of evidence sources, each keyed by method name. The build hook
   (`hooks/activity_selector.py`) picks the best entry for display using a priority order and
   per-source staleness thresholds.
