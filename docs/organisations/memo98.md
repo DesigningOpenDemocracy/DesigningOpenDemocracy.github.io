@@ -13,6 +13,10 @@ concepts:
   - representative-democracy
   - accountability-sink
   - radical-transparency
+activity:
+  sitemap:
+    date: 2025-12-15
+    note: Page last modified (from sitemap)
 ---
 
 MEMO 98 is a Slovak organisation founded in 1998 focused on media integrity and democratic civic engagement. It is best known for its election media monitoring work — assessing whether voters have access to quality, balanced information during electoral periods — and has applied this methodology across multiple countries.

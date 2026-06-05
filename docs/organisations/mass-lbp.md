@@ -14,6 +14,10 @@ location:
   longitude: -79.3832
   name: Toronto, Canada
 last_checked: "2026-05-29"
+activity:
+  sitemap:
+    date: 2026-05-22
+    note: Page last modified (from sitemap)
 ---
 
 MASS LBP is a Toronto-based civic design firm founded in 2007 that specialises in designing and running citizens' assemblies, civic lotteries, and deliberative public engagement processes. It takes its name from the French phrase *masse de manœuvre* — a reserve force held back for decisive deployment.

@@ -14,6 +14,16 @@ import datetime
 import glob
 import json
 import os
+import sys
+
+sys.path.insert(0, os.path.dirname(__file__))
+from activity_selector import PRIORITY, STALENESS_DAYS, _parse_date
+
+
+def _json_default(obj):
+    if isinstance(obj, (datetime.date, datetime.datetime)):
+        return str(obj)
+    raise TypeError(f"Object of type {type(obj).__name__} is not JSON serializable")
 
 try:
     import frontmatter
@@ -48,21 +58,46 @@ def load_orgs():
             "longitude": loc.get("longitude", ""),
             "location_name": loc.get("name", ""),
             "last_checked": m.get("last_checked", ""),
+            "rss_feed": m.get("rss_feed", ""),
+            "activity": m.get("activity") or {},
         })
     return orgs
+
+
+def _best_activity(activity_dict):
+    """Return (date_str, method) of the best activity entry, mirroring activity_selector logic."""
+    today = datetime.date.today()
+    for source in PRIORITY:
+        entry = activity_dict.get(source)
+        if not entry:
+            continue
+        d = _parse_date(entry.get("date"))
+        if d and (today - d).days <= STALENESS_DAYS.get(source, 365):
+            return str(d), source
+    # fallback: most recent
+    best_date, best_source = None, None
+    for source in PRIORITY:
+        entry = activity_dict.get(source)
+        if not entry:
+            continue
+        d = _parse_date(entry.get("date"))
+        if d and (best_date is None or d > best_date):
+            best_date, best_source = d, source
+    return (str(best_date), best_source) if best_date else ("", "")
 
 
 def write_orgs_csv(orgs):
     path = os.path.join(OUT_DIR, "organisations.csv")
     fields = ["slug", "title", "status", "country", "type", "website",
               "summary", "concepts", "latitude", "longitude", "location_name",
-              "last_checked"]
+              "rss_feed", "activity_date", "activity_method", "last_checked"]
     with open(path, "w", newline="", encoding="utf-8") as f:
-        w = csv.DictWriter(f, fieldnames=fields)
+        w = csv.DictWriter(f, fieldnames=fields, extrasaction="ignore")
         w.writeheader()
         for o in orgs:
             row = dict(o)
             row["concepts"] = ",".join(o["concepts"])
+            row["activity_date"], row["activity_method"] = _best_activity(o["activity"])
             w.writerow(row)
 
 
@@ -90,10 +125,13 @@ def write_orgs_json(orgs, meta):
             }
         else:
             r["location"] = None
+        act_date, act_method = _best_activity(o["activity"])
+        r["activity_date"] = act_date
+        r["activity_method"] = act_method
         records.append(r)
     with open(path, "w", encoding="utf-8") as f:
         json.dump({"metadata": meta, "organisations": records}, f,
-                  ensure_ascii=False, indent=2)
+                  ensure_ascii=False, indent=2, default=_json_default)
 
 
 def write_orgs_geojson(orgs, meta):
@@ -127,7 +165,7 @@ def write_orgs_geojson(orgs, meta):
         })
     fc = {"type": "FeatureCollection", "metadata": meta, "features": features}
     with open(path, "w", encoding="utf-8") as f:
-        json.dump(fc, f, ensure_ascii=False, indent=2)
+        json.dump(fc, f, ensure_ascii=False, indent=2, default=_json_default)
 
 
 def _kml_escape(s):
@@ -174,11 +212,14 @@ def write_orgs_kml(orgs, meta):
         website = o["website"]
         website_html = (f'<a href="{_kml_escape(website)}">{_kml_escape(website)}</a>'
                         if website else "—")
+        act_date, act_method = _best_activity(o["activity"])
+        activity_str = f"{act_date} ({act_method})" if act_date else "—"
         description = (
             f"<b>Status:</b> {_kml_escape(o['status'])}<br>"
             f"<b>Country:</b> {_kml_escape(o['country'])}<br>"
             f"<b>Type:</b> {_kml_escape(o['type'])}<br>"
             f"<b>Website:</b> {website_html}<br>"
+            f"<b>Last activity:</b> {_kml_escape(activity_str)}<br>"
             f"<b>Concepts:</b> {concepts_str}<br><br>"
             f"{_kml_escape(o['summary'])}"
         )

@@ -52,6 +52,21 @@
         </td>
       </tr>
       {%- endif %}
+      {%- if page.meta.computed_activity %}
+      {%- set ca = page.meta.computed_activity %}
+      <tr>
+        <th>Last activity</th>
+        <td>
+          <span class="activity-date">{{ ca.date }}</span>
+          <span class="activity-method-chip method-{{ ca.method }}">{{ ca.method }}</span>
+          {%- if ca.note %}
+          <br><span class="activity-note">
+            {%- if ca.url %}<a href="{{ ca.url }}">{{ ca.note }}</a>{%- else %}{{ ca.note }}{%- endif %}
+          </span>
+          {%- endif %}
+        </td>
+      </tr>
+      {%- endif %}
     </tbody>
   </table>
 </div>

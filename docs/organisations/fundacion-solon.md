@@ -11,6 +11,12 @@ location:
   name: La Paz, Bolivia
 concepts:
   - buen-vivir
+rss_feed: https://fundacionsolon.org/feed
+activity:
+  rss:
+    date: 2026-05-25
+    note: "Latest post: Organizaciones de la sociedad civil y la Defensoría del Pueblo, demandan la aper"
+    url: "https://fundacionsolon.org/2026/05/25/organizaciones-de-la-sociedad-civil-y-la-defensoria-del-pueblo-demandan-la-apertura-de-un-dialogo-estructurado-entre-el-gobierno-y-sectores-movilizados/"
 ---
 
 Fundación Solón is a Bolivian research and advocacy foundation established by Pablo Solón, who served as Bolivia's Ambassador to the United Nations under President Evo Morales and as a lead negotiator on climate and trade agreements. After leaving government, Solón founded the organisation to develop and critically examine **Vivir Bien** (Buen Vivir) as a governance theory — assessing both its constitutional articulation and how it functions (or fails to function) in practice.

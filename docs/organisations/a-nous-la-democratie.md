@@ -13,6 +13,12 @@ location:
   latitude: 48.8566
   longitude: 2.3522
   name: France
+rss_feed: https://anouslademocratie.fr/feed
+activity:
+  rss:
+    date: 2025-07-15
+    note: "Latest post: Pour la première Démocratie française : un entretien avec Baya Bellanger sur son"
+    url: "https://anouslademocratie.fr/2025/07/15/pour-la-premiere-democratie-francaise-un-entretien-avec-baya-bellanger-sur-son-nouveau-livre-gouvernons/"
 ---
 
 À Nous La Démocratie! is a French citizen movement founded in 2016 by eight citizens who wanted to fundamentally transform how the French political system functions. Non-partisan and citizen-led, it advocates for institutional reforms to shift political power toward citizens.

@@ -14,6 +14,10 @@ concepts:
   - deliberative-democracy
   - citizens-assembly
   - representative-democracy
+activity:
+  sitemap:
+    date: 2026-05-26
+    note: Page last modified (from sitemap)
 ---
 
 The Sortition Foundation is the UK's leading organisation specifically dedicated to sortition — the selection of decision-makers by random lot rather than election. Their flagship campaign is the **House of Citizens**: replacing the appointed House of Lords with a chamber of randomly selected citizens who serve fixed, non-renewable terms.

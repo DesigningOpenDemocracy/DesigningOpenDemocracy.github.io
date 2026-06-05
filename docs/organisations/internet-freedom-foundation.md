@@ -13,6 +13,12 @@ concepts:
   - radical-transparency
   - e-government
   - accountability-sink
+rss_feed: https://internetfreedom.in/rss
+activity:
+  rss:
+    date: 2026-05-29
+    note: "Latest post: RTI Response Reveals that the Viksit Bharat Sampark Whatsapp Initiative was Allo"
+    url: "https://internetfreedom.in/rti-response-reveals-that-the-viksit-bharat-sampark-whatsapp-initiative-was-allocated-funds-amounting-to-18-crores/"
 ---
 
 > **Note on scope:** IFF's work sits at the edge of DOD's landscape. Its focus is on defending the digital conditions for democratic participation — internet access, freedom from surveillance — rather than designing governance mechanisms directly. It is included because those conditions are a direct prerequisite for how citizens engage with governance in an increasingly digital public sphere.

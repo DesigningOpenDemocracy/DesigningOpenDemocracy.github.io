@@ -13,6 +13,12 @@ concepts:
   - cooperative
   - worker-cooperatives
   - economic-democracy
+rss_feed: https://www.888causeway.coop/feed
+activity:
+  rss:
+    date: 2019-06-26
+    note: "Latest post: Corner and connect"
+    url: "https://www.888causeway.coop/corner-and-connect/"
 ---
 
 888 Co-operative Causeway is a not-for-profit member-run co-working space at Level 5, 306 Little Collins Street, Melbourne — the first registered co-operative co-working space in Victoria, founded in 2018. It describes itself as "a network of micro-organisations and freelancers active in the social economy."

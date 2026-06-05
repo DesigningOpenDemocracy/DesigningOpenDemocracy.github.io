@@ -12,6 +12,10 @@ location:
 concepts:
   - representative-democracy
   - e-government
+activity:
+  sitemap:
+    date: 2026-06-05
+    note: "Server still up (sitemap detected)"
 ---
 
 Build a Ballot is a voter advice application (VAA) built and maintained by Project Planet Inc., an Australian charity focused on climate change. The tool launches a few weeks before each state and federal election, presenting voters with a short series of policy questions and calculating a "match score" with candidates and parties in their electorate.

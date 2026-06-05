@@ -13,6 +13,12 @@ concepts:
   - direct-democracy
   - democracy
   - liberal-democracy
+rss_feed: https://diem25.org/news/feed
+activity:
+  rss:
+    date: 2026-06-05
+    note: RSS feed discovered
+    url: "https://diem25.org/news/feed"
 ---
 
 DiEM25 (Democracy in Europe Movement 2025) was founded by economist and former Greek Finance Minister Yanis Varoufakis in 2016, with the stated goal of democratising the European Union before it disintegrated — the "2025" being an original deadline, since passed. The movement has since evolved into a sustained transnational political organisation with chapters across Europe and affiliated national parties (MERA25 in Greece, and others).

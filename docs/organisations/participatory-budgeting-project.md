@@ -14,6 +14,12 @@ location:
   longitude: -73.9442
   name: Brooklyn, New York, USA
 last_checked: "2026-05-29"
+rss_feed: https://www.participatorybudgeting.org/feed
+activity:
+  rss:
+    date: 2026-03-05
+    note: "Latest post: PB Grows in New Jersey"
+    url: "https://www.participatorybudgeting.org/pb-seeds-eval/"
 ---
 
 The Participatory Budgeting Project (PBP) is a nonprofit organisation founded in 2009 that has been the primary driver of participatory budgeting (PB) adoption in the United States and Canada. It works with governments, schools, housing authorities, and other institutions to design and run PB processes — where community members directly propose and vote on how to spend a portion of the public budget.

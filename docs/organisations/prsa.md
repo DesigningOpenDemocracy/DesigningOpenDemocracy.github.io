@@ -13,6 +13,12 @@ concepts:
   - mixed-member-proportional-representation
   - representative-democracy
   - direct-democracy
+rss_feed: https://www.prsa.org.au/feed
+activity:
+  rss:
+    date: 2020-07-09
+    note: "Latest post: Orders in Council gazetted for single-councillor wards have taken effect"
+    url: "https://prsa.org.au/news/2020/#2020-07b"
 ---
 
 The Proportional Representation Society of Australia (PRSA) is one of Australia's oldest electoral reform organisations, with roots in the 19th century — Catherine Helen Spence was among its founding members. The current national constitution dates from 1982.

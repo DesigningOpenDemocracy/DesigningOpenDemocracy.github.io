@@ -15,6 +15,10 @@ location:
   longitude: 16.3738
   name: Vienna, Austria
 last_checked: "2026-05-29"
+activity:
+  sitemap:
+    date: 2025-09-03
+    note: Page last modified (from sitemap)
 ---
 
 Democracy Technologies is a research initiative and curated database that maps the global landscape of digital tools and platforms for democratic participation. It is part of the **Innovation in Politics Institute**, based in Vienna and Berlin.
