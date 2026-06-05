@@ -511,12 +511,12 @@
     background: rgba(128, 128, 128, 0.08);
 }
 
-.org-sortable-table th:nth-child(1) { width: 28%; }
-.org-sortable-table th:nth-child(2) { width: 12%; }
-.org-sortable-table th:nth-child(3) { width: 10%; }
-.org-sortable-table th:nth-child(4) { width: 10%; }
+.org-sortable-table th:nth-child(1) { width: 35%; }
+.org-sortable-table th:nth-child(2) { width: 9%; }
+.org-sortable-table th:nth-child(3) { width: 9%; }
+.org-sortable-table th:nth-child(4) { width: 9%; }
 .org-sortable-table th:nth-child(5) { width: 14%; }
-.org-sortable-table th:nth-child(6) { width: 26%; }
+.org-sortable-table th:nth-child(6) { width: 24%; }
 
 .sort-icon {
     opacity: 0.45;

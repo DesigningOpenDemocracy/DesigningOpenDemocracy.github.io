@@ -1,6 +1,6 @@
 ---
 title: DiEM25
-type: political_movement
+type: movement
 status: active
 country: EU
 website: https://diem25.org

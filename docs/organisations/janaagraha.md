@@ -1,6 +1,6 @@
 ---
 title: Janaagraha Centre for Citizenship and Democracy
-type: civic_tech
+type: civic tech
 status: active
 country: IN
 website: https://www.janaagraha.org

@@ -1,6 +1,6 @@
 ---
 title: mySociety
-type: civic_tech
+type: civic tech
 status: active
 country: GB
 website: https://www.mysociety.org

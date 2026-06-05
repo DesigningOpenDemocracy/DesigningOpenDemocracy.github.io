@@ -1,6 +1,6 @@
 ---
 title: Code for Australia
-type: civic_tech
+type: civic tech
 status: active
 country: AU
 website: https://www.codeforaustralia.org

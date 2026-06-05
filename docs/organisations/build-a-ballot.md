@@ -1,6 +1,6 @@
 ---
 title: Build a Ballot
-type: civic_tech
+type: civic tech
 status: active
 country: AU
 website: https://www.buildaballot.org.au

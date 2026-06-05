@@ -1,6 +1,6 @@
 ---
 title: DemocracyLab
-type: civic_tech
+type: civic tech
 status: active
 country: US
 website: https://www.democracylab.org

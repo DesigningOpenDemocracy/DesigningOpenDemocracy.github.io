@@ -1,6 +1,6 @@
 ---
 title: China Democratic League (CDL)
-type: political_party
+type: party
 status: active
 country: CN
 website: https://www.mmzy.org.cn

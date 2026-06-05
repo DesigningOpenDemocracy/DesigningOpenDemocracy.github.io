@@ -1,6 +1,6 @@
 ---
 title: Liquid Democracy e.V.
-type: civic_tech
+type: civic tech
 status: active
 country: DE
 website: https://liqd.net/en/

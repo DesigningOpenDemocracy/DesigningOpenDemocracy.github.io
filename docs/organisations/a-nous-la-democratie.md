@@ -1,6 +1,6 @@
 ---
 title: À Nous La Démocratie!
-type: political_movement
+type: movement
 status: active
 country: FR
 website: https://anouslademocratie.fr/
