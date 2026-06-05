@@ -17,7 +17,7 @@ location:
 last_activity:
   date: 2026-06-05
   note: "Server still up (sitemap detected)"
-  method: automated
+  method: ping
 ---
 
 Liquid Democracy e.V. is a Berlin-based non-profit association founded in 2009 to develop free and open-source digital participation tools and support their deployment in governments, NGOs, and public institutions. The organisation combines software development with consulting, workshops, and policy research.

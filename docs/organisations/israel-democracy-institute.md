@@ -16,7 +16,7 @@ concepts:
 last_activity:
   date: 2026-06-05
   note: "Server still up (sitemap detected)"
-  method: automated
+  method: ping
 ---
 
 The Israel Democracy Institute (IDI) is an independent, nonpartisan research and policy institute founded in 1991. It is the primary academic body studying Israeli democratic governance, producing rigorous empirical research on institutional design, electoral systems, rule of law, and civic participation.

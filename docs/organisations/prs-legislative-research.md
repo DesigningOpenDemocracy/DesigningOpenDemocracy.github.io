@@ -16,7 +16,7 @@ concepts:
 last_activity:
   date: 2026-06-05
   note: "Server still up (sitemap detected)"
-  method: automated
+  method: ping
 ---
 
 PRS Legislative Research was founded in September 2005 and is housed within the Centre for Policy Research in New Delhi. It provides non-partisan research support to Members of Parliament and state legislators, and makes India's legislative process more accessible to citizens through open tracking tools.

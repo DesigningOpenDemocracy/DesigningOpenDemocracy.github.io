@@ -16,7 +16,7 @@ concepts:
 last_activity:
   date: 2026-06-05
   note: "Server still up (sitemap detected)"
-  method: automated
+  method: ping
 ---
 
 The Susan McKinnon Foundation is a private philanthropic foundation focused on strengthening Australian democracy and governance. It funds and supports work on electoral reform, parliamentary integrity, public sector capability, and cross-party collaboration.

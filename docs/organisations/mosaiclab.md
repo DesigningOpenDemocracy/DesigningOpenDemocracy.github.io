@@ -16,7 +16,7 @@ concepts:
 last_activity:
   date: 2026-06-05
   note: "Server still up (sitemap detected)"
-  method: automated
+  method: ping
 ---
 
 MosaicLab is a professional practice specialising in public deliberation. It designs and runs deliberative engagement processes: citizens' juries, standing panels, deliberative polls, and citizens' assemblies for government clients across Australia.

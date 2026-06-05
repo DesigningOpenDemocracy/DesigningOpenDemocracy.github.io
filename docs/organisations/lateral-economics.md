@@ -18,7 +18,7 @@ concepts:
 last_activity:
   date: 2026-06-05
   note: "Server still up (sitemap detected)"
-  method: automated
+  method: ping
 ---
 
 Lateral Economics is a policy consultancy founded and led by Nicholas Gruen, a widely published Australian economist and commentator. The firm works with government clients on economic reform, productivity, and innovation policy — but Gruen is perhaps best known publicly for his advocacy of democratic reform, particularly citizens' juries and sortition as mechanisms for improving the quality of collective decision-making.
