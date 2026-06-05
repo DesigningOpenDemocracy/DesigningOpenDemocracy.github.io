@@ -13,10 +13,10 @@ concepts:
   - democracy
   - constitutional-democracy
   - citizens-assembly
-last_activity:
-  date: 2026-06-04
-  note: "Page last modified (from sitemap)"
-  method: sitemap
+activity:
+  sitemap:
+    date: 2026-06-04
+    note: Page last modified (from sitemap)
 ---
 
 The Susan McKinnon Foundation is a private philanthropic foundation focused on strengthening Australian democracy and governance. It funds and supports work on electoral reform, parliamentary integrity, public sector capability, and cross-party collaboration.

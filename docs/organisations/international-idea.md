@@ -16,11 +16,11 @@ location:
   name: Stockholm, Sweden
 last_checked: "2026-05-29"
 rss_feed: https://www.idea.int/rss.xml
-last_activity:
-  date: 2026-06-03
-  note: "Latest post: Strengthening the Rule of Law: The Role of Courts and Lawyers in Constitutional "
-  url: https://www.idea.int/publications/catalogue/html/strengthening-rule-law-role-courts-and-lawyers
-  method: rss
+activity:
+  rss:
+    date: 2026-06-03
+    note: "Latest post: Strengthening the Rule of Law: The Role of Courts and Lawyers in Constitutional "
+    url: "https://www.idea.int/publications/catalogue/html/strengthening-rule-law-role-courts-and-lawyers"
 ---
 
 International IDEA (the International Institute for Democracy and Electoral Assistance) is an intergovernmental organisation founded in 1995 with a mandate to support sustainable democratic governance across the globe. It has 35 member states and is headquartered in Stockholm, with regional offices across Africa, Asia-Pacific, Latin America, the Middle East, and Europe.

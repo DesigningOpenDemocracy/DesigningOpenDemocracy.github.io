@@ -14,11 +14,11 @@ concepts:
   - constitutional-democracy
   - accountability-sink
 rss_feed: https://grattan.edu.au/feed
-last_activity:
-  date: 2026-05-31
-  note: "Latest post: Tough decisions needed on gas"
-  url: https://grattan.edu.au/tough-decisions-needed-on-gas/
-  method: rss
+activity:
+  rss:
+    date: 2026-05-31
+    note: "Latest post: Tough decisions needed on gas"
+    url: "https://grattan.edu.au/tough-decisions-needed-on-gas/"
 ---
 
 The Grattan Institute is a Melbourne-based public policy think tank covering a broad range of policy areas including energy, housing, education, health, and governance. It is independent of government, political parties, and industry.

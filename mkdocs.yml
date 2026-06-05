@@ -57,6 +57,7 @@ hooks:
   - hooks/graph_builder.py
   - hooks/llms_txt.py
   - hooks/data_export.py
+  - hooks/activity_selector.py
 
 not_in_nav: |
   llms.txt

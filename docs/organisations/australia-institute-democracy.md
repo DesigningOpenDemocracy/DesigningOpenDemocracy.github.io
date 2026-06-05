@@ -14,11 +14,11 @@ concepts:
   - constitutional-democracy
   - representative-democracy
 rss_feed: https://australiainstitute.org.au/feed
-last_activity:
-  date: 2026-06-04
-  note: "Latest post: Australians support stronger whistleblower laws, while Labor drags its feet"
-  url: https://australiainstitute.org.au/post/australians-support-stronger-whistleblower-laws-while-labor-drags-its-feet/?utm_source=rss&utm_medium=rss&utm_campaign=australians-support-stronger-whistleblower-laws-while-labor-drags-its-feet
-  method: rss
+activity:
+  rss:
+    date: 2026-06-04
+    note: "Latest post: Australians support stronger whistleblower laws, while Labor drags its feet"
+    url: "https://australiainstitute.org.au/post/australians-support-stronger-whistleblower-laws-while-labor-drags-its-feet/?utm_source=rss&utm_medium=rss&utm_campaign=australians-support-stronger-whistleblower-laws-while-labor-drags-its-feet"
 ---
 
 The Democracy & Accountability Program is a dedicated research and advocacy program within [The Australia Institute](https://australiainstitute.org.au), a Canberra-based progressive think tank. Established in 2021, it builds on the Institute's longer history of democracy-related research.

@@ -15,11 +15,11 @@ concepts:
   - constitutional-democracy
   - liberal-democracy
 rss_feed: http://accountabilityrt.org/feed
-last_activity:
-  date: 2026-06-01
-  note: "Latest post: GOVERNMENT MUST LEGISLATE IBAC REFORM NOW, NOT AFTER THE ELECTION"
-  url: https://www.accountabilityrt.org/government-must-legislate-ibac-reform-now-not-after-the-election/
-  method: rss
+activity:
+  rss:
+    date: 2026-06-01
+    note: "Latest post: GOVERNMENT MUST LEGISLATE IBAC REFORM NOW, NOT AFTER THE ELECTION"
+    url: "https://www.accountabilityrt.org/government-must-legislate-ibac-reform-now-not-after-the-election/"
 ---
 
 The Accountability Round Table is a non-partisan coalition of professionals with backgrounds across academia, law, politics, and journalism. Its focus is on the structural conditions that allow democratic accountability to function: transparency laws, integrity commissions, ministerial conduct standards, and parliamentary oversight.

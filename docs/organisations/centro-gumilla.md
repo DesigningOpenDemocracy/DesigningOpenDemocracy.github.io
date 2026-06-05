@@ -14,11 +14,11 @@ concepts:
   - representative-democracy
   - accountability-sink
 rss_feed: https://gumilla.org/feed
-last_activity:
-  date: 2026-05-29
-  note: "Latest post: RASI convoca al XVII Encuentro Constructores de Paz bajo el lema \u201cDemocratizaci\u00f3"
-  url: https://gumilla.org/xvii-encuentro-constructores-de-paz/
-  method: rss
+activity:
+  rss:
+    date: 2026-05-29
+    note: "Latest post: RASI convoca al XVII Encuentro Constructores de Paz bajo el lema “Democratizació"
+    url: "https://gumilla.org/xvii-encuentro-constructores-de-paz/"
 ---
 
 > **Note on scope:** Centro Gumilla meets DOD criteria as an independent research organisation studying governance mechanisms — not because Venezuela's national political system does. Maduro's Venezuela clearly fails the good-faith test; Centro Gumilla is included as a credible independent analyst operating inside that context.

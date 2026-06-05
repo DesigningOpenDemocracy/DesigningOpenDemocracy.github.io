@@ -15,11 +15,11 @@ location:
   longitude: -21.8954
   name: Reykjavík, Iceland
 rss_feed: https://citizens.is/feed
-last_activity:
-  date: 2023-10-01
-  note: "Latest post: The Power of Citizen Engagement: Why \u201cYour Priorities\u201d is the World\u2019s Leading Pl"
-  url: https://citizens.is/2023/10/01/the-power-of-citizen-engagement-why-your-priorities-is-the-worlds-leading-platform/
-  method: rss
+activity:
+  rss:
+    date: 2023-10-01
+    note: "Latest post: The Power of Citizen Engagement: Why “Your Priorities” is the World’s Leading Pl"
+    url: "https://citizens.is/2023/10/01/the-power-of-citizen-engagement-why-your-priorities-is-the-worlds-leading-platform/"
 ---
 
 The Citizens Foundation is an Icelandic non-profit founded in 2008 that develops **Your Priorities**, an open-source platform for idea generation, deliberation, and citizen–government engagement. The platform surfaces the most broadly supported ideas rather than amplifying the loudest voices — closer in spirit to consensus mapping than to open comment threads.

@@ -13,10 +13,10 @@ concepts:
   - citizens-assembly
   - deliberative-democracy
   - consensus-mapping
-last_activity:
-  date: 2026-06-03
-  note: "Page last modified (from sitemap)"
-  method: sitemap
+activity:
+  sitemap:
+    date: 2026-06-03
+    note: Page last modified (from sitemap)
 ---
 
 MosaicLab is a professional practice specialising in public deliberation. It designs and runs deliberative engagement processes: citizens' juries, standing panels, deliberative polls, and citizens' assemblies for government clients across Australia.

@@ -14,11 +14,11 @@ concepts:
   - liquid-democracy
   - e-government
 rss_feed: https://newvote.org/blog/rss.xml
-last_activity:
-  date: 2019-11-11
-  note: "Latest post: How's SpeakUp @ the University of Queensland going?"
-  url: https://newvote.org/blog/2019/11/10/hows-speakup-the-university-of-queensland-going
-  method: rss
+activity:
+  rss:
+    date: 2019-11-11
+    note: "Latest post: How's SpeakUp @ the University of Queensland going?"
+    url: "https://newvote.org/blog/2019/11/10/hows-speakup-the-university-of-queensland-going"
 ---
 
 NewVote is built on a simple philosophy: the world is better when everyone is empowered. The institute uses technology to operate across three democratic modes simultaneously:

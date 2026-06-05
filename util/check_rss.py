@@ -232,52 +232,93 @@ def latest_from_feed(url, timeout=10, session=None):
     return entries[0]
 
 
-def update_last_activity(path, date_str, note, feed_url, post_url=None, method="rss"):
-    """Replace or append last_activity block in org frontmatter.
+def update_activity_source(path, date_str, note, feed_url, post_url=None, method="rss"):
+    """Write or update a single source entry under activity.<method> in org frontmatter.
 
-    Skips the update if an existing last_activity date is already newer or
-    equal — so a manual or dod entry is never downgraded by an older RSS date.
+    Only updates if the new date is strictly newer than the existing entry for
+    that source — so a stale RSS scan never clobbers a fresher manual entry.
     """
-    with open(path) as f:
+    import yaml as _yaml
+
+    with open(path, encoding="utf-8") as f:
         content = f.read()
     parts = content.split("---", 2)
     if len(parts) < 3 or parts[0] != "":
         return False
     yaml_block, rest = parts[1], parts[2]
 
-    # Guard: don't overwrite a newer (or equal) existing date
-    import yaml as _yaml
-    existing = (_yaml.safe_load(yaml_block) or {}).get("last_activity") or {}
-    existing_date = parse_date(str(existing.get("date", "") or ""))
+    meta = _yaml.safe_load(yaml_block) or {}
+
+    # Guard: don't overwrite a newer or equal entry for this specific source
+    existing_source = (meta.get("activity") or {}).get(method) or {}
+    existing_date = parse_date(str(existing_source.get("date", "") or ""))
     new_date = parse_date(date_str)
     if existing_date and new_date and new_date <= existing_date:
-        return False  # existing entry is same age or newer — leave it alone
+        return False
 
-    # Remove existing last_activity block if present
-    lines = yaml_block.split("\n")
-    new_lines = []
-    skip = False
-    for line in lines:
-        if re.match(r"^last_activity\s*:", line):
-            skip = True
-            continue
-        if skip:
-            if line.startswith("  "):
-                continue
-            skip = False
-        new_lines.append(line)
-    yaml_block = "\n".join(new_lines)
-
+    # Build the new source sub-block lines
     url_field = post_url or feed_url
-    new_block = [
-        "last_activity:",
-        f"  date: {date_str}",
-        f"  note: {json.dumps(note, ensure_ascii=False)}",
-        f"  url: {url_field}",
-        f"  method: {method}",
+    source_lines = [
+        f"  {method}:",
+        f"    date: {date_str}",
+        f"    note: {json.dumps(note, ensure_ascii=False)}",
+        f"    url: {url_field}",
     ]
-    yaml_block = yaml_block.rstrip("\n") + "\n" + "\n".join(new_block) + "\n"
-    with open(path, "w") as f:
+
+    if meta.get("activity"):
+        # activity: block already exists — replace just this source's sub-block
+        lines = yaml_block.split("\n")
+        new_lines = []
+        in_activity = False
+        in_this_source = False
+        i = 0
+        while i < len(lines):
+            line = lines[i]
+            if re.match(r"^activity\s*:", line):
+                in_activity = True
+                new_lines.append(line)
+                i += 1
+                continue
+            if in_activity:
+                # Detect a top-level key (end of activity block)
+                if line and not line.startswith(" "):
+                    if in_this_source:
+                        # Insert the new source block before this top-level key
+                        new_lines.extend(source_lines)
+                    in_activity = False
+                    in_this_source = False
+                    new_lines.append(line)
+                    i += 1
+                    continue
+                # Detect this source's sub-block
+                if re.match(rf"^  {method}\s*:", line):
+                    in_this_source = True
+                    # Skip old sub-block lines
+                    i += 1
+                    while i < len(lines) and lines[i].startswith("    "):
+                        i += 1
+                    new_lines.extend(source_lines)
+                    continue
+                # Detect a different source (end of this source's sub-block)
+                if in_this_source and re.match(r"^  \w", line):
+                    in_this_source = False
+                new_lines.append(line)
+                i += 1
+                continue
+            new_lines.append(line)
+            i += 1
+
+        # If we never found this source, append it inside the activity block
+        if in_activity and method not in (meta.get("activity") or {}):
+            new_lines.extend(source_lines)
+
+        yaml_block = "\n".join(new_lines)
+    else:
+        # No activity: block yet — append a fresh one
+        new_block = ["activity:"] + source_lines
+        yaml_block = yaml_block.rstrip("\n") + "\n" + "\n".join(new_block) + "\n"
+
+    with open(path, "w", encoding="utf-8") as f:
         f.write("---" + yaml_block + "---" + rest)
     return True
 
@@ -353,7 +394,7 @@ def main():
                 if feed_url.endswith("sitemap.xml"):
                     d = latest_sitemap_lastmod(feed_url, timeout=args.timeout, session=session)
                     if d:
-                        update_last_activity(org["path"], d.isoformat(),
+                        update_activity_source(org["path"], d.isoformat(),
                                              "Page last modified (from sitemap)", feed_url,
                                              method="sitemap")
                         print(f"SITEMAP  {d}")
@@ -364,7 +405,7 @@ def main():
                     d, title, link = latest_from_feed(feed_url, timeout=args.timeout, session=session)
                     if d:
                         note = f"Latest post: {title[:80]}" if title else "RSS feed active"
-                        update_last_activity(org["path"], d.isoformat(), note, feed_url, link or None)
+                        update_activity_source(org["path"], d.isoformat(), note, feed_url, link or None)
                         print(f"UPDATED  {d}  {title[:50]}")
                         result["latest_date"] = d.isoformat()
                         result["latest_title"] = title

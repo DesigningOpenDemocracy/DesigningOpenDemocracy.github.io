@@ -14,11 +14,11 @@ concepts:
   - mixed-member-proportional-representation
   - sortition
 rss_feed: https://democrats.org.au/rss.xml
-last_activity:
-  date: 2026-05-24
-  note: "Latest post: We took part in a Facebook Q&A"
-  url: https://www.democrats.org.au/posts/6v15DUfhxyWNVoSqBBFje4/we-took-part-in-a-facebook-q-a
-  method: rss
+activity:
+  rss:
+    date: 2026-05-24
+    note: "Latest post: We took part in a Facebook Q&A"
+    url: "https://www.democrats.org.au/posts/6v15DUfhxyWNVoSqBBFje4/we-took-part-in-a-facebook-q-a"
 ---
 
 The Australian Democrats were originally founded in 1977 by Don Chipp with the stated aim to "keep the bastards honest" — a positioning as a principled centrist force holding the major parties accountable. The party held the balance of power in the Senate for many years before collapsing around 2008. It has since been re-established and is rebuilding a presence at state and federal levels.

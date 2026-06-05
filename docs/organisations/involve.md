@@ -15,11 +15,11 @@ concepts:
   - participatory-budgeting
   - direct-democracy
 rss_feed: https://www.involve.org.uk/rss.xml
-last_activity:
-  date: 2026-05-12
-  note: "Latest post: After the May elections: governing on thin mandates"
-  url: https://www.involve.org.uk/news-opinion/opinion/after-may-elections-governing-thin-mandates
-  method: rss
+activity:
+  rss:
+    date: 2026-05-12
+    note: "Latest post: After the May elections: governing on thin mandates"
+    url: "https://www.involve.org.uk/news-opinion/opinion/after-may-elections-governing-thin-mandates"
 ---
 
 Involve is a UK charity at the intersection of research and practice in public participation. They work with governments, public institutions, and communities to design participation processes that actually influence decisions — as opposed to the tokenistic consultation that often passes for engagement.

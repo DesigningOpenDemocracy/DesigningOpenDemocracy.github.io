@@ -52,11 +52,27 @@ The invariants recorded there are not immutable. Any document in this repo — i
 - `location: {latitude, longitude, name}` — required for the org to appear on the interactive map. Only `status: active` orgs are shown on the map.
 - The `organisation.html` template is **auto-applied** to all org pages via `hooks/org_template.py` — no need to set `template:` in frontmatter unless overriding.
 - `rss_feed: <url>` — optional; the org's RSS or Atom feed URL. Populated by `util/check_rss.py`.
-- `last_activity: {date, note, url, method}` — optional; most recent evidence of the org being active.
-  - `date`: ISO date (YYYY-MM-DD)
-  - `note`: short human-readable description of the evidence
-  - `url`: source URL (optional)
-  - `method` values: `manual` (human visited the site) | `rss` (latest post date from RSS/Atom feed) | `sitemap` (page last-modified date from sitemap.xml) | `dod` (referenced in a DOD blog post) | `social` (social media activity)
+- `activity:` — optional dict of evidence sources, each keyed by method name. The build hook
+  (`hooks/activity_selector.py`) picks the best entry for display using a priority order and
+  staleness threshold (prefer `rss` if < 1 year old, else fall back to `sitemap`).
+  ```yaml
+  activity:
+    rss:
+      date: 2026-03-04
+      note: "Latest post: Final report on Community Consultation"
+      url: https://...
+    sitemap:
+      date: 2026-06-04
+      note: "Page last modified (from sitemap)"
+      url: https://...
+    manual:
+      date: 2026-05-01
+      note: "Visited site, confirmed active"
+  ```
+  - `method` keys: `manual` | `rss` | `sitemap` | `dod` | `social`
+  - Priority order (highest first): `manual` > `dod` > `social` > `rss` > `sitemap`
+  - `rss` entries older than 365 days are skipped in favour of a fresher `sitemap` entry
+  - `util/check_rss.py --update-activity` populates `rss` and `sitemap` entries automatically
 - **Key people** is an optional section. Add it only when named individuals are central to understanding the org's story (founders, government champions, notable critics) and the information is sourced. Link names to Wikipedia where a confirmed article exists. Do not add it just to fill the template — most orgs are better served by institutional description.
 
 ### Blog posts (`docs/blog/posts/`)

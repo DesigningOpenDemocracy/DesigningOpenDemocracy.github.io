@@ -627,3 +627,28 @@
 }
 
 
+
+/* Activity row — method chips and note */
+.activity-date {
+  font-weight: 500;
+  margin-right: 0.4em;
+}
+.activity-method-chip {
+  display: inline-block;
+  font-size: 0.72em;
+  font-weight: 600;
+  padding: 0.1em 0.5em;
+  border-radius: 3px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  vertical-align: middle;
+}
+.method-rss      { background: #fff3e0; color: #e65100; }
+.method-sitemap  { background: #f3e5f5; color: #6a1b9a; }
+.method-manual   { background: #e8f5e9; color: #1b5e20; }
+.method-dod      { background: #e3f2fd; color: #0d47a1; }
+.method-social   { background: #fce4ec; color: #880e4f; }
+.activity-note {
+  font-size: 0.85em;
+  color: var(--md-default-fg-color--light);
+}

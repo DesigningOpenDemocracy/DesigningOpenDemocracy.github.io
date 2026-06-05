@@ -14,10 +14,10 @@ location:
   latitude: 52.5200
   longitude: 13.4050
   name: Berlin, Germany
-last_activity:
-  date: 2026-06-01
-  note: "Page last modified (from sitemap)"
-  method: sitemap
+activity:
+  sitemap:
+    date: 2026-06-01
+    note: Page last modified (from sitemap)
 ---
 
 Liquid Democracy e.V. is a Berlin-based non-profit association founded in 2009 to develop free and open-source digital participation tools and support their deployment in governments, NGOs, and public institutions. The organisation combines software development with consulting, workshops, and policy research.

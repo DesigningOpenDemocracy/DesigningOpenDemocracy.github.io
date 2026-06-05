@@ -13,11 +13,11 @@ location:
 concepts:
   - democratic-confederalism
 rss_feed: https://kongra-star.org/?feed=rss2
-last_activity:
-  date: 2026-06-04
-  note: "Latest post: Duyem\u00een Civ\u00een\u00ean jinan li Bajar\u00ea Koban\u00ee Hat Darxistin"
-  url: https://kongra-star.org/?p=31515
-  method: rss
+activity:
+  rss:
+    date: 2026-06-04
+    note: "Latest post: Duyemîn Civînên jinan li Bajarê Kobanî Hat Darxistin"
+    url: "https://kongra-star.org/?p=31515"
 ---
 
 > **Note on context:** Kongra Star operates within the AANES, which is not internationally recognised. See the [TEV-DEM](tev-dem.md) entry for context on the broader governance framework.
