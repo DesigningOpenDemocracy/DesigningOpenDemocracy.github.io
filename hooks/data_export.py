@@ -206,11 +206,14 @@ def write_orgs_kml(orgs, meta):
         website = o["website"]
         website_html = (f'<a href="{_kml_escape(website)}">{_kml_escape(website)}</a>'
                         if website else "—")
+        act_date, act_method = _best_activity(o["activity"])
+        activity_str = f"{act_date} ({act_method})" if act_date else "—"
         description = (
             f"<b>Status:</b> {_kml_escape(o['status'])}<br>"
             f"<b>Country:</b> {_kml_escape(o['country'])}<br>"
             f"<b>Type:</b> {_kml_escape(o['type'])}<br>"
             f"<b>Website:</b> {website_html}<br>"
+            f"<b>Last activity:</b> {_kml_escape(activity_str)}<br>"
             f"<b>Concepts:</b> {concepts_str}<br><br>"
             f"{_kml_escape(o['summary'])}"
         )
