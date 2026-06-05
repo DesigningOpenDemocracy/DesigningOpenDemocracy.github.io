@@ -199,13 +199,25 @@ def latest_from_feed(url, timeout=10, session=None):
 
 
 def update_last_activity(path, date_str, note, feed_url, post_url=None):
-    """Replace or append last_activity block in org frontmatter."""
+    """Replace or append last_activity block in org frontmatter.
+
+    Skips the update if an existing last_activity date is already newer or
+    equal — so a manual or dod entry is never downgraded by an older RSS date.
+    """
     with open(path) as f:
         content = f.read()
     parts = content.split("---", 2)
     if len(parts) < 3 or parts[0] != "":
         return False
     yaml_block, rest = parts[1], parts[2]
+
+    # Guard: don't overwrite a newer (or equal) existing date
+    import yaml as _yaml
+    existing = (_yaml.safe_load(yaml_block) or {}).get("last_activity") or {}
+    existing_date = parse_date(str(existing.get("date", "") or ""))
+    new_date = parse_date(date_str)
+    if existing_date and new_date and new_date <= existing_date:
+        return False  # existing entry is same age or newer — leave it alone
 
     # Remove existing last_activity block if present
     lines = yaml_block.split("\n")
