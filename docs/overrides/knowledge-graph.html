@@ -277,7 +277,7 @@
         var d = node.data();
         node.style('font-size', ((d.type === 'project' ? 9 : 11) / z) + 'px');
         if (d.reveal_zoom !== undefined) {
-          node.data('label', z >= d.reveal_zoom ? d.full_label : d.short_label);
+          node.data('label', (node.hasClass('pinned') || z >= d.reveal_zoom) ? d.full_label : d.short_label);
         }
       });
     }
@@ -315,7 +315,7 @@
     var infoLink  = document.getElementById('kg-info-link');
 
     function showInfo(d) {
-      infoTitle.textContent = d.label;
+      infoTitle.textContent = d.full_label || d.label;
       infoBadge.textContent = d.type + (d.status ? ' · ' + d.status : '');
       infoBadge.className   = 'kg-info__badge kg-info__badge--' + d.type;
       var meta = [];
@@ -329,6 +329,8 @@
     function hideInfo() {
       infoEl.classList.add('kg-info--hidden');
       cy.elements().removeClass('faded highlighted');
+      cy.nodes().removeClass('pinned');
+      updateZoom();
     }
 
     document.getElementById('kg-info-close').addEventListener('click', hideInfo);
@@ -338,7 +340,13 @@
       showInfo(node.data());
       cy.elements().addClass('faded').removeClass('highlighted');
       node.removeClass('faded').addClass('highlighted');
-      node.connectedEdges().removeClass('faded').connectedNodes().removeClass('faded');
+      var neighbours = node.connectedEdges().connectedNodes();
+      neighbours.removeClass('faded');
+      // Pin selected node + neighbours so they always show full label
+      cy.nodes().removeClass('pinned');
+      node.addClass('pinned');
+      neighbours.addClass('pinned');
+      updateZoom();
     });
 
     cy.on('tap', function(evt) {
