@@ -14,6 +14,7 @@ concepts:
   - democracy
   - radical-transparency
 rss_feed: https://www.aman-palestine.org/rss
+news_page: https://www.aman-palestine.org/en/activities/
 ---
 
 AMAN (Coalition for Accountability and Integrity) is a Palestinian civil society coalition established in 2000 to promote integrity, transparency, and accountability in Palestinian society. In 2006, AMAN was accredited as Transparency International's official Palestinian national chapter.
