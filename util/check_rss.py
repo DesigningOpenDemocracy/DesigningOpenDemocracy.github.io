@@ -185,7 +185,12 @@ def parse_date(s):
 
 
 def latest_from_feed(url, timeout=10, session=None):
-    """Fetch url and return (date, title, link) of the most recent item, or (None, None, None)."""
+    """Fetch url and return (date, title, link, http_ok) of the most recent item.
+
+    http_ok is True when the server returned 200 (feed is reachable), False on
+    network errors or non-200 responses.  date/title/link are None when no
+    parseable items were found even though the feed was reachable.
+    """
     if session is None:
         session = requests.Session()
         session.headers["User-Agent"] = "DOD-RSS-Reader/1.0 (democracy wiki)"
@@ -193,11 +198,11 @@ def latest_from_feed(url, timeout=10, session=None):
         r = session.get(url, timeout=timeout)
         r.raise_for_status()
     except RequestException:
-        return None, None, None
+        return None, None, None, False
     try:
         root = ET.fromstring(r.content)
     except ET.ParseError:
-        return None, None, None
+        return None, None, None, True
 
     local = re.sub(r"\{[^}]*\}", "", root.tag).lower()
     ns = root.tag.split("}")[0] + "}" if root.tag.startswith("{") else ""
@@ -227,9 +232,9 @@ def latest_from_feed(url, timeout=10, session=None):
                 entries.append((d, title, link))
 
     if not entries:
-        return None, None, None
+        return None, None, None, True
     entries.sort(key=lambda x: x[0], reverse=True)
-    return entries[0]
+    return (*entries[0], True)
 
 
 def update_activity_source(path, date_str, note, feed_url, post_url=None, method="rss"):
@@ -249,11 +254,20 @@ def update_activity_source(path, date_str, note, feed_url, post_url=None, method
 
     meta = _yaml.safe_load(yaml_block) or {}
 
-    # Guard: don't overwrite a newer or equal entry for this specific source
+    # Guard: don't overwrite a newer or equal entry for this specific source.
+    # Exception: placeholder notes from feed-discovery-only passes (no actual
+    # post data fetched yet) are always overwritten so --update-activity can
+    # replace them with real "Latest post: …" data.
+    _PLACEHOLDER_NOTES = {
+        "RSS feed discovered",
+        "RSS feed active",
+        "Server still up (sitemap detected)",
+    }
     existing_source = (meta.get("activity") or {}).get(method) or {}
+    existing_note = str(existing_source.get("note", "") or "")
     existing_date = parse_date(str(existing_source.get("date", "") or ""))
     new_date = parse_date(date_str)
-    if existing_date and new_date and new_date <= existing_date:
+    if existing_note not in _PLACEHOLDER_NOTES and existing_date and new_date and new_date <= existing_date:
         return False
 
     # Build the new source sub-block lines
@@ -402,15 +416,22 @@ def main():
                     else:
                         print(f"SITEMAP (no lastmod)  {feed_url}")
                 else:
-                    d, title, link = latest_from_feed(feed_url, timeout=args.timeout, session=session)
+                    d, title, link, http_ok = latest_from_feed(feed_url, timeout=args.timeout, session=session)
                     if d:
                         note = f"Latest post: {title[:80]}" if title else "RSS feed active"
                         update_activity_source(org["path"], d.isoformat(), note, feed_url, link or None)
                         print(f"UPDATED  {d}  {title[:50]}")
                         result["latest_date"] = d.isoformat()
                         result["latest_title"] = title
-                    else:
+                    elif http_ok:
+                        # Feed responded 200 but no parseable posts; upgrade any placeholder
+                        # note so the entry at least reads as "RSS feed active" rather than
+                        # "RSS feed discovered" (the old probe-only placeholder).
+                        update_activity_source(org["path"], TODAY, "RSS feed active",
+                                               feed_url, method="rss")
                         print(f"FOUND (no parseable posts)  {feed_url}")
+                    else:
+                        print(f"UNREACHABLE (keeping existing activity)  {feed_url}")
             else:
                 print(f"FOUND  {feed_url}")
             found.append(result)
