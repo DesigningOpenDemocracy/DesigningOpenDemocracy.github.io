@@ -149,7 +149,7 @@
       style: {
         'width':       1,
         'line-color':  '#90a4ae',
-        'opacity':     0.5,
+        'opacity':     ele => Math.max(0.08, 0.5 - ele.data('stale_rank') * 0.4),
         'curve-style': 'bezier',
       }
     },
@@ -159,7 +159,7 @@
     },
     {
       selector: 'edge[type = "org_link"]',
-      style: { 'line-color': '#e65100', 'width': 2, 'opacity': 0.75 }
+      style: { 'line-color': '#e65100', 'width': 2, 'opacity': ele => Math.max(0.1, 0.75 - ele.data('stale_rank') * 0.6) }
     },
     {
       selector: 'node.highlighted',
@@ -223,6 +223,17 @@
     orgEls.forEach(function(el, i) {
       var t = orgEls.length > 1 ? i / (orgEls.length - 1) : 0;
       el.data.reveal_zoom = 1.0 + t * 3.0;
+      el.data.stale_rank  = t;
+    });
+
+    // Propagate stale_rank to edges: use the stalest endpoint.
+    var nodeRank = {};
+    elements.forEach(function(el) {
+      if (el.data.stale_rank !== undefined) nodeRank[el.data.id] = el.data.stale_rank;
+    });
+    elements.forEach(function(el) {
+      if (el.data.source !== undefined)
+        el.data.stale_rank = Math.max(nodeRank[el.data.source] || 0, nodeRank[el.data.target] || 0);
     });
 
     var cy = cytoscape({
