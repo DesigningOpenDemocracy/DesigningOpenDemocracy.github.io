@@ -154,12 +154,14 @@ Periodic maintenance sync posts may be AI-authored if they meet all of the follo
 | `community.html` | `docs/overrides/` | `docs/community/community.md` — auto-generates active projects grid |
 | `project.html` | `docs/overrides/` | Project pages — must set `template: project.html` in frontmatter |
 | `home.html` | `docs/overrides/` | Home page — hero pitch, CTA buttons, active projects, map |
+| `knowledge-graph.html` | `docs/overrides/` | `docs/knowledge-graph.md` — interactive Cytoscape.js graph; set via `template:` frontmatter |
 
 ### Hooks
 
 - `hooks/org_template.py` — fires on `on_page_markdown`; sets `template: organisation.html` on any page under `organisations/` that doesn't already have a template. Registered in `mkdocs.yml` under `hooks:`.
 - `hooks/activity_selector.py` — fires on `on_page_context`; reads `page.meta.activity` and resolves it to a single `page.meta.computed_activity` dict using priority order and per-source staleness thresholds. Used by `organisation.html` to render the "Last activity" row. See priority/staleness table in the Organisation pages section.
 - `hooks/data_export.py` — fires on `on_pre_build`; generates static data files under `docs/data/` from all org frontmatter. See Data exports section below.
+- `hooks/graph_builder.py` — fires on `on_page_context` and `on_post_build`; collects concept/org/project nodes and edges (from `concepts:` frontmatter and "See also" sections) into `graph.json`. Org/project nodes include `activity_date` (best date across all `activity:` sources) used by the graph UI to fade dormant nodes.
 
 ### Frontmatter — active gates
 
@@ -225,6 +227,3 @@ Both the type and country dropdowns are auto-populated from row data at page loa
 
 The "Last active" column shows the best-date ISO string + a method chip. Best date is computed in Jinja2 directly from the raw `activity:` dict using ISO string comparison (no hook dependency) so it works on the index page where `computed_activity` may not yet be set.
 
-### Pending work (separate PRs)
-
-- **Knowledge graph visualisation** — build hook extracts `concepts:` frontmatter + See Also links → `graph.json`; rendered with Cytoscape.js as a dedicated page. The structured `concepts:` frontmatter on org pages is the intended data source.
