@@ -194,13 +194,10 @@
         var s = (data.type === 'organisation' || data.type === 'project')
           ? staleness(data.activity_date) : 0;
         data.stale_factor = s;
-        // Each org gets a per-node reveal_zoom: recently active orgs show their
-        // name sooner (lower zoom), stale orgs only when zoomed in further.
         if (data.type === 'organisation') {
           var emoji = TYPE_EMOJI[data.org_type] || '';
           data.full_label  = emoji ? emoji + ' ' + data.label : data.label;
           data.short_label = emoji || '•';
-          data.reveal_zoom = 0.7 + Math.pow(s, 0.5) * 0.8;
           data.label       = data.short_label;
         }
         return { data: data };
@@ -209,6 +206,17 @@
         return { data: { id: 'e' + i, source: e.source, target: e.target, type: e.type || 'relates_to' } };
       }),
     ];
+
+    // Assign reveal_zoom by activity rank so the spread is always even,
+    // regardless of how recently the activity dates were last updated.
+    var orgEls = elements.filter(function(el) { return el.data.type === 'organisation'; });
+    orgEls.sort(function(a, b) {
+      var da = a.data.activity_date || '', db = b.data.activity_date || '';
+      return da > db ? -1 : da < db ? 1 : 0;
+    });
+    orgEls.forEach(function(el, i) {
+      el.data.reveal_zoom = 0.7 + (orgEls.length > 1 ? i / (orgEls.length - 1) : 0) * 0.8;
+    });
 
     var cy = cytoscape({
       container: container,
