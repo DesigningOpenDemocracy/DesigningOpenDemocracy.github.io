@@ -4,6 +4,7 @@ type: research
 status: active
 country: LB
 website: https://www.lcps-lebanon.org
+news_page: https://www.lcps-lebanon.org/en/press
 summary: "An independent Beirut-based think tank founded in 1989 producing policy research and advocacy on governance, political representation, decentralisation, and electoral reform in Lebanon and the Arab region."
 location:
   latitude: 33.8938

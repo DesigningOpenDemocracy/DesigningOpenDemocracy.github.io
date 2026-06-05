@@ -4,6 +4,7 @@ type: civic tech
 status: active
 country: DE
 website: https://liqd.net/en/
+news_page: https://liqd.net/en/blog/
 summary: "A Berlin-based non-profit developing open-source digital participation software — creators of Adhocracy and Adhocracy+, and operators of meinBerlin, Berlin's official participatory platform."
 concepts:
   - liquid-democracy
