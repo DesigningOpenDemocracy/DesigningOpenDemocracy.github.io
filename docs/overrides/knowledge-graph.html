@@ -340,8 +340,8 @@
       showInfo(node.data());
       cy.elements().addClass('faded').removeClass('highlighted');
       node.removeClass('faded').addClass('highlighted');
-      var neighbours = node.connectedEdges().connectedNodes();
-      neighbours.removeClass('faded');
+      var connectedEdges = node.connectedEdges().removeClass('faded');
+      var neighbours = connectedEdges.connectedNodes().removeClass('faded');
       // Pin selected node + neighbours so they always show full label
       cy.nodes().removeClass('pinned');
       node.addClass('pinned');
