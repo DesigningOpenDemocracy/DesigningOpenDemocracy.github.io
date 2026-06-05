@@ -13,7 +13,7 @@ concepts:
   - democratic-confederalism
 last_activity:
   date: 2026-06-05
-  note: "Site responding (sitemap detected)"
+  note: "Server still up (sitemap detected)"
   method: automated
 ---
 
