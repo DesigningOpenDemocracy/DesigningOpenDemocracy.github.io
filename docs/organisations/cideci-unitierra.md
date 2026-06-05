@@ -12,8 +12,8 @@ location:
 concepts:
   - democratic-confederalism
 last_activity:
-  date: 2026-06-05
-  note: "Server still up (sitemap detected)"
+  date: 2024-05-21
+  note: "Page last modified (from sitemap)"
   method: ping
 ---
 

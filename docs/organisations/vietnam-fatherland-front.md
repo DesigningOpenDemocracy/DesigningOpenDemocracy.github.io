@@ -13,7 +13,7 @@ concepts:
   - vanguardism
 last_activity:
   date: 2026-06-05
-  note: "Server still up (sitemap detected)"
+  note: "Page last modified (from sitemap)"
   method: ping
 ---
 

@@ -14,8 +14,8 @@ concepts:
   - radical-transparency
   - accountability-sink
 last_activity:
-  date: 2026-06-05
-  note: "Server still up (sitemap detected)"
+  date: 2021-07-17
+  note: "Page last modified (from sitemap)"
   method: ping
 ---
 

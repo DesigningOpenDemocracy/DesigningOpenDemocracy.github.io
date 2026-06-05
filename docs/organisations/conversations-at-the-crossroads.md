@@ -14,8 +14,8 @@ location:
   longitude: 144.9631
   name: Melbourne, Australia
 last_activity:
-  date: 2026-06-05
-  note: "Server still up (sitemap detected)"
+  date: 2026-06-01
+  note: "Page last modified (from sitemap)"
   method: ping
 ---
 

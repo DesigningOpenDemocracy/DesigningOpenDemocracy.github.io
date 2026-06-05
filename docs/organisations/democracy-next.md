@@ -15,8 +15,8 @@ concepts:
   - sortition
   - isegoria
 last_activity:
-  date: 2026-06-05
-  note: "Server still up (sitemap detected)"
+  date: 2026-06-04
+  note: "Page last modified (from sitemap)"
   method: ping
 ---
 

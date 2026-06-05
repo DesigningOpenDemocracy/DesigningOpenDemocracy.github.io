@@ -126,6 +126,40 @@ def probe_feeds(base_url, timeout=8, session=None):
     return None
 
 
+def latest_sitemap_lastmod(sitemap_url, timeout=10, session=None):
+    """Return the most recent <lastmod> date from a sitemap, or None."""
+    if session is None:
+        session = requests.Session()
+        session.headers["User-Agent"] = "DOD-RSS-Reader/1.0 (democracy wiki)"
+    try:
+        r = session.get(sitemap_url, timeout=timeout)
+        r.raise_for_status()
+        root = ET.fromstring(r.content)
+    except Exception:
+        return None
+
+    ns = root.tag.split("}")[0] + "}" if root.tag.startswith("{") else ""
+    local = re.sub(r"\{[^}]*\}", "", root.tag).lower()
+    dates = []
+
+    if local == "sitemapindex":
+        for sitemap in root.findall(f"{ns}sitemap")[:5]:
+            lm = sitemap.findtext(f"{ns}lastmod")
+            if lm:
+                d = parse_date(lm.strip())
+                if d:
+                    dates.append(d)
+    elif local == "urlset":
+        for url in root.findall(f"{ns}url"):
+            lm = url.findtext(f"{ns}lastmod")
+            if lm:
+                d = parse_date(lm.strip())
+                if d:
+                    dates.append(d)
+
+    return max(dates) if dates else None
+
+
 def parse_date(s):
     """Parse RSS (RFC 2822) or Atom (ISO 8601) date strings robustly."""
     if not s:
@@ -315,16 +349,26 @@ def main():
         result = {**org, "feed_url": feed_url}
 
         if feed_url:
-            if args.update_activity and not feed_url.endswith("sitemap.xml"):
-                d, title, link = latest_from_feed(feed_url, timeout=args.timeout, session=session)
-                if d:
-                    note = f"Latest post: {title[:80]}" if title else "RSS feed active"
-                    update_last_activity(org["path"], d.isoformat(), note, feed_url, link or None)
-                    print(f"UPDATED  {d}  {title[:50]}")
-                    result["latest_date"] = d.isoformat()
-                    result["latest_title"] = title
+            if args.update_activity:
+                if feed_url.endswith("sitemap.xml"):
+                    d = latest_sitemap_lastmod(feed_url, timeout=args.timeout, session=session)
+                    if d:
+                        update_last_activity(org["path"], d.isoformat(),
+                                             "Page last modified (from sitemap)", feed_url)
+                        print(f"SITEMAP  {d}")
+                        result["latest_date"] = d.isoformat()
+                    else:
+                        print(f"SITEMAP (no lastmod)  {feed_url}")
                 else:
-                    print(f"FOUND (no parseable posts)  {feed_url}")
+                    d, title, link = latest_from_feed(feed_url, timeout=args.timeout, session=session)
+                    if d:
+                        note = f"Latest post: {title[:80]}" if title else "RSS feed active"
+                        update_last_activity(org["path"], d.isoformat(), note, feed_url, link or None)
+                        print(f"UPDATED  {d}  {title[:50]}")
+                        result["latest_date"] = d.isoformat()
+                        result["latest_title"] = title
+                    else:
+                        print(f"FOUND (no parseable posts)  {feed_url}")
             else:
                 print(f"FOUND  {feed_url}")
             found.append(result)

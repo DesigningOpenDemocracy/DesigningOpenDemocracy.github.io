@@ -14,8 +14,8 @@ concepts:
   - deliberative-democracy
   - consensus-mapping
 last_activity:
-  date: 2026-06-05
-  note: "Server still up (sitemap detected)"
+  date: 2026-06-03
+  note: "Page last modified (from sitemap)"
   method: ping
 ---
 

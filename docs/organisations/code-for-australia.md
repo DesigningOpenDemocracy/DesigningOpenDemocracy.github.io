@@ -13,8 +13,8 @@ concepts:
   - e-government
   - radical-transparency
 last_activity:
-  date: 2026-06-05
-  note: "Server still up (sitemap detected)"
+  date: 2024-06-28
+  note: "Page last modified (from sitemap)"
   method: ping
 ---
 

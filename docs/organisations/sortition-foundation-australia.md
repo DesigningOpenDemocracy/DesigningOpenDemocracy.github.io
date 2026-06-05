@@ -14,8 +14,8 @@ concepts:
   - deliberative-democracy
   - citizens-assembly
 last_activity:
-  date: 2026-06-05
-  note: "Server still up (sitemap detected)"
+  date: 2026-05-26
+  note: "Page last modified (from sitemap)"
   method: ping
 ---
 

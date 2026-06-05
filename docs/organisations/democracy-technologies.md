@@ -16,8 +16,8 @@ location:
   name: Vienna, Austria
 last_checked: "2026-05-29"
 last_activity:
-  date: 2026-06-05
-  note: "Server still up (sitemap detected)"
+  date: 2025-09-03
+  note: "Page last modified (from sitemap)"
   method: ping
 ---
 

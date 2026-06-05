@@ -15,8 +15,8 @@ location:
   name: Toronto, Canada
 last_checked: "2026-05-29"
 last_activity:
-  date: 2026-06-05
-  note: "Server still up (sitemap detected)"
+  date: 2026-05-22
+  note: "Page last modified (from sitemap)"
   method: ping
 ---
 
