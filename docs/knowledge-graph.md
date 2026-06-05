@@ -6,7 +6,7 @@ template: knowledge-graph.html
 Explore the connections between concepts, organisations, and projects tracked on this site.
 
 - **Concepts** (indigo) — governance and democracy ideas
-- **Organisations** (blue → grey) — groups in the democracy landscape; vivid blue = recently active, fading to grey = dormant or inactive. Dormant orgs show only their type emoji when zoomed out; zoom in to reveal names. Emoji key: 🔬 research · 📢 advocacy · 💻 platform · ⚙️ civic tech · 🤝 practice · 🗳️ party/political · 🏛️ governance · ♻️ cooperative · 🌱 philanthropy · 🎓 education
+- **Organisations** (blue → grey) — groups in the democracy landscape; vivid blue = recently active, fading to grey = dormant or inactive. All orgs start as emoji-only when zoomed out; zoom in to reveal names progressively — most recently active orgs appear first. Emoji key: 🔬 research · 📢 advocacy · 💻 platform · ⚙️ civic tech · 🤝 practice · 🗳️ party/political · 🏛️ governance · ♻️ cooperative · 🌱 philanthropy · 🎓 education
 - **Projects** (green) — Designing Open Democracy's own work
 - **Solid edges** — organisation or project relates to a concept (`concepts:` frontmatter)
 - **Dashed purple edges** — concept links to another concept (from *See also* sections)

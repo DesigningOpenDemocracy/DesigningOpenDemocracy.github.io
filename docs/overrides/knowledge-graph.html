@@ -191,17 +191,13 @@
     const elements = [
       ...graphData.nodes.map(function(n) {
         var data = Object.assign({}, n);
-        if (data.type === 'organisation' && data.org_type) {
-          var emoji = TYPE_EMOJI[data.org_type];
-          if (emoji) data.label = emoji + ' ' + data.label;
-        }
         var s = (data.type === 'organisation' || data.type === 'project')
           ? staleness(data.activity_date) : 0;
         data.stale_factor = s;
-        // Dormant orgs (stale ≥ ~6 months) show emoji-only when zoomed out
-        if (data.type === 'organisation' && s >= 0.5) {
-          data.full_label  = data.label;
-          data.short_label = TYPE_EMOJI[data.org_type] || '•';
+        if (data.type === 'organisation') {
+          var emoji = TYPE_EMOJI[data.org_type] || '';
+          data.full_label  = emoji ? emoji + ' ' + data.label : data.label;
+          data.short_label = emoji || '•';
           data.label       = data.short_label;
         }
         return { data: data };
@@ -210,6 +206,18 @@
         return { data: { id: 'e' + i, source: e.source, target: e.target, type: e.type || 'relates_to' } };
       }),
     ];
+
+    // Sort orgs by activity rank. Initial zoom is always 1.0: most active org
+    // reveals there, least active requires zoom 4.0.
+    var orgEls = elements.filter(function(el) { return el.data.type === 'organisation'; });
+    orgEls.sort(function(a, b) {
+      var da = a.data.activity_date || '', db = b.data.activity_date || '';
+      return da > db ? -1 : da < db ? 1 : 0;
+    });
+    orgEls.forEach(function(el, i) {
+      var t = orgEls.length > 1 ? i / (orgEls.length - 1) : 0;
+      el.data.reveal_zoom = 1.0 + t * 3.0;
+    });
 
     var cy = cytoscape({
       container: container,
@@ -260,22 +268,20 @@
         edge.addClass('hidden');
     });
 
-    // Zoom-invariant font + label switching (dormant orgs: emoji at low zoom, name when zoomed in)
-    var LABEL_ZOOM = 2.0;
-
+    // Zoom-invariant font + progressive label reveal (each org has its own reveal_zoom)
     function updateZoom() {
       var z = cy.zoom();
-      var showFull = z >= LABEL_ZOOM;
       cy.nodes().forEach(function(node) {
         var d = node.data();
         node.style('font-size', ((d.type === 'concept' ? 11 : 9) / z) + 'px');
-        if (d.short_label) node.data('label', showFull ? d.full_label : d.short_label);
+        if (d.reveal_zoom !== undefined) {
+          node.data('label', z >= d.reveal_zoom ? d.full_label : d.short_label);
+        }
       });
     }
 
     cy.fit();
     updateZoom();
-
     cy.on('zoom', updateZoom);
 
     // Middle and right-click panning
