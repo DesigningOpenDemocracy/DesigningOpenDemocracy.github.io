@@ -17,6 +17,10 @@ location:
 rss_feed: https://citizenos.com/feed
 news_page: https://citizenos.com/news/
 activity:
+  manual:
+    date: 2025-07-23
+    note: "Latest post: Big Tech & Small Tech: Is Profit Over People Shrinking Civic Space for Good?"
+    url: https://citizenos.com/news/
   rss:
     date: 2026-06-05
     note: "RSS feed active"

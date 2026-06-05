@@ -16,6 +16,10 @@ location:
   longitude: 13.4050
   name: Berlin, Germany
 activity:
+  manual:
+    date: 2026-05-28
+    note: "Latest post: Halbzeit – 6 Monate Freiwilligendienst bei Liquid Democracy e.V."
+    url: https://liqd.net/en/blog/
   sitemap:
     date: 2026-06-01
     note: Page last modified (from sitemap)

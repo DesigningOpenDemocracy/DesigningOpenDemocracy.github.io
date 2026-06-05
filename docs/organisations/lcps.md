@@ -5,6 +5,11 @@ status: active
 country: LB
 website: https://www.lcps-lebanon.org
 news_page: https://www.lcps-lebanon.org/en/press
+activity:
+  manual:
+    date: 2026-03-05
+    note: "Latest press item: القواعد الأميركيّة في مرمى النار (via Daraj Media)"
+    url: https://www.lcps-lebanon.org/en/press
 summary: "An independent Beirut-based think tank founded in 1989 producing policy research and advocacy on governance, political representation, decentralisation, and electoral reform in Lebanon and the Arab region."
 location:
   latitude: 33.8938

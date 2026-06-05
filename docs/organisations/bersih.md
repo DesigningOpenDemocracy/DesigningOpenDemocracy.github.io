@@ -5,6 +5,11 @@ status: active
 country: MY
 website: https://bersih.org
 news_page: https://bersih.org/news/
+activity:
+  manual:
+    date: 2025-03-06
+    note: "Latest post: Akta Perkhidmatan Parlimen — Bersih gesa kerajaan teruskan reformasi Parlimen"
+    url: https://bersih.org/news/
 summary: "Malaysia's largest non-partisan coalition for electoral reform — a network of 90+ civil society organisations conducting independent election observation, voter registration drives, and public campaigns for free and fair elections since 2007."
 location:
   latitude: 3.1569

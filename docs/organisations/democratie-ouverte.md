@@ -5,6 +5,11 @@ status: active
 country: FR
 website: https://www.democratieouverte.org
 news_page: https://www.democratieouverte.org/le-blog
+activity:
+  manual:
+    date: 2026-05-18
+    note: "Latest post: co-présidence engagée pour le renforcement de la démocratie"
+    url: https://www.democratieouverte.org/le-blog
 summary: "A French non-partisan association with over 10 years of democratic innovation work — experimenting with participatory tools, advising public bodies, and convening the French democratic innovation network."
 concepts:
   - citizens-assembly
