@@ -463,7 +463,38 @@
 .org-count {
     font-size: 0.82em;
     opacity: 0.6;
-    margin-top: 0.25rem;
+    margin: 0;
+}
+
+.org-table-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.org-export-links {
+    font-size: 0.82em;
+    opacity: 0.65;
+    margin: 0;
+}
+
+.org-export-links a {
+    opacity: 1;
+}
+
+.org-ext-link {
+    font-size: 0.72em;
+    margin-left: 0.3em;
+    opacity: 0.55;
+    text-decoration: none;
+    vertical-align: super;
+}
+
+.org-ext-link:hover {
+    opacity: 1;
 }
 
 .org-sortable-table {

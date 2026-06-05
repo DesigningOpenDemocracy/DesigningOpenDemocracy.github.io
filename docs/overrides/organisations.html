@@ -12,13 +12,22 @@
 <div class="md-typeset">
 
 <div class="org-filter-bar">
-  <input type="search" id="org-search" placeholder="Search…" class="org-search-input" aria-label="Search organisations">
+  <input type="search" id="org-search" placeholder="Search organisations…" class="org-search-input" aria-label="Search organisations">
+  <select id="org-type-filter" class="org-filter-select" aria-label="Filter by type">
+    <option value="">All types</option>
+  </select>
   <select id="org-country-filter" class="org-filter-select" aria-label="Filter by country">
     <option value="">All countries</option>
   </select>
+  <select id="org-status-filter" class="org-filter-select" aria-label="Filter by status">
+    <option value="active">Active only</option>
+    <option value="">All statuses</option>
+    <option value="inactive">Inactive</option>
+    <option value="deregistered">Deregistered</option>
+  </select>
   <span class="org-filter-label">Active within:</span>
-  <div class="org-activity-filters" role="group" aria-label="Filter by activity">
-    <button class="org-activity-btn active" data-days="0">All</button>
+  <div class="org-activity-filters" role="group" aria-label="Filter by recency">
+    <button class="org-activity-btn active" data-days="0">All time</button>
     <button class="org-activity-btn" data-days="180">6 months</button>
     <button class="org-activity-btn" data-days="365">1 year</button>
     <button class="org-activity-btn" data-days="730">2 years</button>
@@ -40,6 +49,8 @@
     {%- for file in pages %}
       {%- if file.page and file.page.url and file.page.url.startswith('organisations/') and file.page.url != page.url %}
       {%- set country = file.page.meta.get('country', '') %}
+      {%- set org_type = file.page.meta.get('type', '') %}
+      {%- set website = file.page.meta.get('website', '') %}
       {%- set activity = file.page.meta.get('activity') or {} %}
       {%- set ns = namespace(best_date='', best_method='') %}
       {%- for source, entry in activity.items() %}
@@ -50,10 +61,15 @@
       {%- endfor %}
       <tr data-status="{{ file.page.meta.get('status', '') }}"
           data-country="{{ country }}"
+          data-type="{{ org_type }}"
           data-activity="{{ ns.best_date }}">
-        <td><a href="/{{ file.page.url }}">{{ file.page.title }}</a></td>
-        {%- set t = file.page.meta.get('type', '') %}
-        <td data-sort="{{ t }}">{{ type_icons.get(t, '🏛️') }} {{ t }}</td>
+        <td>
+          <a href="/{{ file.page.url }}">{{ file.page.title }}</a>
+          {%- if website and not website.startswith('https://web.archive.org') %}
+          <a href="{{ website }}" class="org-ext-link" target="_blank" rel="noopener" title="{{ website }}">↗</a>
+          {%- endif %}
+        </td>
+        <td data-sort="{{ org_type }}">{{ type_icons.get(org_type, '🏛️') }} {{ org_type }}</td>
         <td>{{ country }}</td>
         <td><span class="project-status-badge status-{{ file.page.meta.get('status', '') }}">{{ file.page.meta.get('status', '') }}</span></td>
         <td data-sort="{{ ns.best_date }}">
@@ -71,23 +87,39 @@
     {%- endfor %}
   </tbody>
 </table>
-<p id="org-count" class="org-count"></p>
+<div class="org-table-footer">
+  <p id="org-count" class="org-count"></p>
+  <p class="org-export-links">Download full dataset:
+    <a href="/data/organisations.csv">CSV</a> ·
+    <a href="/data/organisations.json">JSON</a> ·
+    <a href="/data/organisations.geojson">GeoJSON</a>
+  </p>
+</div>
 </div>
 <script>
 (function () {
-  var table   = document.getElementById('org-table');
-  var tbody   = table.querySelector('tbody');
-  var headers = Array.from(table.querySelectorAll('th.sortable'));
-  var search  = document.getElementById('org-search');
+  var table        = document.getElementById('org-table');
+  var tbody        = table.querySelector('tbody');
+  var headers      = Array.from(table.querySelectorAll('th.sortable'));
+  var search       = document.getElementById('org-search');
+  var typeSelect   = document.getElementById('org-type-filter');
   var countrySelect = document.getElementById('org-country-filter');
-  var activityBtns  = Array.from(document.querySelectorAll('.org-activity-btn'));
-  var countEl = document.getElementById('org-count');
+  var statusSelect = document.getElementById('org-status-filter');
+  var activityBtns = Array.from(document.querySelectorAll('.org-activity-btn'));
+  var countEl      = document.getElementById('org-count');
   var sortCol = -1, sortAsc = true;
   var activeDays = 0;
 
   function rows() { return Array.from(tbody.querySelectorAll('tr')); }
 
-  // Populate country dropdown from row data
+  // Populate type and country dropdowns from row data
+  var types = [...new Set(rows().map(function(r){ return r.dataset.type; }).filter(Boolean))].sort();
+  types.forEach(function(t) {
+    var opt = document.createElement('option');
+    opt.value = t; opt.textContent = t;
+    typeSelect.appendChild(opt);
+  });
+
   var countries = [...new Set(rows().map(function(r){ return r.dataset.country; }).filter(Boolean))].sort();
   countries.forEach(function(c) {
     var opt = document.createElement('option');
@@ -103,13 +135,17 @@
 
   function applyFilters() {
     var q       = search.value.toLowerCase();
+    var type    = typeSelect.value;
     var country = countrySelect.value;
+    var status  = statusSelect.value;
     var visible = 0;
     rows().forEach(function(r) {
       var textOk     = !q || r.textContent.toLowerCase().includes(q);
+      var typeOk     = !type    || r.dataset.type    === type;
       var countryOk  = !country || r.dataset.country === country;
+      var statusOk   = !status  || r.dataset.status  === status;
       var activityOk = activeDays === 0 || daysSince(r.dataset.activity) <= activeDays;
-      var show = textOk && countryOk && activityOk;
+      var show = textOk && typeOk && countryOk && statusOk && activityOk;
       r.hidden = !show;
       if (show) visible++;
     });
@@ -138,7 +174,9 @@
   });
 
   search.addEventListener('input', applyFilters);
+  typeSelect.addEventListener('change', applyFilters);
   countrySelect.addEventListener('change', applyFilters);
+  statusSelect.addEventListener('change', applyFilters);
 
   activityBtns.forEach(function(btn) {
     btn.addEventListener('click', function() {
