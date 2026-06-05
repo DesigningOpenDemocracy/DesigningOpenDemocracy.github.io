@@ -112,22 +112,24 @@
     {
       selector: 'node',
       style: {
-        'label':          'data(label)',
-        'background-color': ele => bgColor(ele.data()),
-        'color':          '#fff',
-        'font-size':      '10px',
-        'font-family':    'var(--md-text-font, sans-serif)',
-        'text-valign':    'center',
-        'text-halign':    'center',
-        'text-wrap':      'wrap',
-        'text-max-width': '90px',
-        'shape':          'round-rectangle',
-        'padding':        '5px',
-        'width':          'label',
-        'height':         'label',
-        'border-width':   '1px',
-        'border-color':   'rgba(0,0,0,0.3)',
-        'cursor':         'pointer',
+        'label':               'data(label)',
+        'background-color':    ele => bgColor(ele.data()),
+        'color':               '#fff',
+        'font-size':           '10px',
+        'font-family':         'var(--md-text-font, sans-serif)',
+        'text-valign':         'center',
+        'text-halign':         'center',
+        'text-wrap':           'wrap',
+        'text-max-width':      '90px',
+        'shape':               'round-rectangle',
+        'padding':             '5px',
+        'width':               'label',
+        'height':              'label',
+        'border-width':        '1px',
+        'border-color':        'rgba(0,0,0,0.3)',
+        'cursor':              'pointer',
+        'transition-property': 'none',
+        'transition-duration': '0s',
       }
     },
     {
@@ -136,7 +138,7 @@
     },
     {
       selector: 'node[type = "organisation"]',
-      style: { 'font-size': '9px' }
+      style: { 'font-size': '11px', 'padding': '3px' }
     },
     {
       selector: 'node[type = "project"]',
@@ -225,7 +227,7 @@
       style:     STYLE,
       // Layout runs manually below so we can pre-position concept nodes first
       minZoom: 0.05,
-      maxZoom: 5,
+      maxZoom: 10,
       wheelSensitivity: 0.3,
     });
 
@@ -273,7 +275,7 @@
       var z = cy.zoom();
       cy.nodes().forEach(function(node) {
         var d = node.data();
-        node.style('font-size', ((d.type === 'concept' ? 11 : 9) / z) + 'px');
+        node.style('font-size', ((d.type === 'project' ? 9 : 11) / z) + 'px');
         if (d.reveal_zoom !== undefined) {
           node.data('label', z >= d.reveal_zoom ? d.full_label : d.short_label);
         }
