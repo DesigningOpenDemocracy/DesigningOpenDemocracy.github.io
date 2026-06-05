@@ -28,11 +28,11 @@ PRIORITY = ["manual", "dod", "social", "rss", "sitemap"]
 # How many days before a source is considered stale and skipped in favour of
 # a lower-priority but fresher source.
 STALENESS_DAYS = {
-    "manual":  10 * 365,   # human-verified — essentially never stale
-    "dod":     10 * 365,
-    "social":  10 * 365,
-    "rss":     365,         # prefer rss over sitemap if < 1 year old
-    "sitemap": 10 * 365,
+    "manual":  730,   # human visit — strong, but visits are infrequent
+    "dod":     730,   # same confidence as manual
+    "social":  365,   # social presence decays as a signal within a year
+    "rss":     365,   # actual content publication
+    "sitemap": 180,   # weak signal (CMS can touch lastmod for any reason)
 }
 
 

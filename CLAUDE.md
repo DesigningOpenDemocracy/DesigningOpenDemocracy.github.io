@@ -54,7 +54,7 @@ The invariants recorded there are not immutable. Any document in this repo — i
 - `rss_feed: <url>` — optional; the org's RSS or Atom feed URL. Populated by `util/check_rss.py`.
 - `activity:` — optional dict of evidence sources, each keyed by method name. The build hook
   (`hooks/activity_selector.py`) picks the best entry for display using a priority order and
-  staleness threshold (prefer `rss` if < 1 year old, else fall back to `sitemap`).
+  per-source staleness thresholds.
   ```yaml
   activity:
     rss:
@@ -71,7 +71,9 @@ The invariants recorded there are not immutable. Any document in this repo — i
   ```
   - `method` keys: `manual` | `rss` | `sitemap` | `dod` | `social`
   - Priority order (highest first): `manual` > `dod` > `social` > `rss` > `sitemap`
-  - `rss` entries older than 365 days are skipped in favour of a fresher `sitemap` entry
+  - Staleness thresholds: `manual`/`dod` 730 d · `social`/`rss` 365 d · `sitemap` 180 d
+  - A source is skipped if older than its threshold; the next-priority fresh source wins
+  - If all sources are stale, the most recent entry is shown regardless
   - `util/check_rss.py --update-activity` populates `rss` and `sitemap` entries automatically
 - **Key people** is an optional section. Add it only when named individuals are central to understanding the org's story (founders, government champions, notable critics) and the information is sourced. Link names to Wikipedia where a confirmed article exists. Do not add it just to fill the template — most orgs are better served by institutional description.
 
