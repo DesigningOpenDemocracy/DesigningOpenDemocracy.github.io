@@ -140,8 +140,8 @@ Periodic maintenance sync posts may be AI-authored if they meet all of the follo
 
 
 
-- `createPost.py` — interactive CLI to create a new blog post with frontmatter
-- `frontmatter_updator.py` — uses OpenAI API to auto-fill frontmatter; requires `util/requirements.txt`
+- `util/createPost.py` — interactive CLI to create a new blog post with frontmatter
+- `util/frontmatter_updator.py` — uses OpenAI API to auto-fill frontmatter; requires `util/requirements.txt`
 
 ## Architecture (as of May 2026)
 
@@ -158,6 +158,8 @@ Periodic maintenance sync posts may be AI-authored if they meet all of the follo
 ### Hooks
 
 - `hooks/org_template.py` — fires on `on_page_markdown`; sets `template: organisation.html` on any page under `organisations/` that doesn't already have a template. Registered in `mkdocs.yml` under `hooks:`.
+- `hooks/activity_selector.py` — fires on `on_page_context`; reads `page.meta.activity` and resolves it to a single `page.meta.computed_activity` dict using priority order and per-source staleness thresholds. Used by `organisation.html` to render the "Last activity" row. See priority/staleness table in the Organisation pages section.
+- `hooks/data_export.py` — fires on `on_pre_build`; generates static data files under `docs/data/` from all org frontmatter. See Data exports section below.
 
 ### Frontmatter — active gates
 
@@ -168,12 +170,60 @@ Periodic maintenance sync posts may be AI-authored if they meet all of the follo
 
 - `.project-status-badge.status-<value>` — coloured status pill (active/inactive/deregistered/mothballed/cancelled)
 - `.concept-tag` — indigo chip linking a concept slug to its concept page; used in org metadata box and org index table
-- `.org-sortable-table` / `.org-search-input` — org index table and filter input
+- `.org-filter-bar` — flex row wrapping all filter controls on the org index page
+- `.org-search-input` / `.org-filter-select` — text search input and dropdowns in the filter bar
+- `.org-activity-btn` / `.org-activity-btn.active` — pill buttons for the "Active within" recency filter
+- `.org-sortable-table` — sortable org index table
+- `.org-ext-link` — small superscript ↗ link on org names pointing to the org's website
+- `.org-export-links` — download links row below the table (CSV / JSON / GeoJSON)
+- `.activity-method-chip.method-<source>` — coloured chip showing the activity evidence source (rss=orange, sitemap=purple, manual=green, dod=blue, social=pink)
 - `.hero-cta-btn` / `.hero-cta-primary` — home page call-to-action buttons
 
 ### URL gotcha
 
 `file.page.url` in MkDocs Jinja2 templates is **root-relative without a leading `/`**. Always prefix with `/` in `href` attributes: `href="/{{ file.page.url }}"`. Omitting the slash causes triple-nested 404s when navigating from deep pages.
+
+### Data exports (`docs/data/`)
+
+Generated at build time by `hooks/data_export.py`. Served as static assets:
+
+| File | Description |
+|---|---|
+| `/data/organisations.csv` | Flat table — all orgs, one row each. Includes `activity_date`, `activity_method`, `rss_feed`. |
+| `/data/organisations.json` | Structured JSON — concepts as arrays, full `activity` dict, computed `activity_date`/`activity_method`. |
+| `/data/organisations.geojson` | FeatureCollection — orgs with lat/lon only. |
+| `/data/organisations.kml` | KML — orgs with lat/lon, colour-coded by status. |
+| `/data/org-concepts.csv` | Edge list (`org_slug`, `concept_slug`) for network/graph analysis. |
+
+These are linked from the bottom of the org index table for researcher download.
+
+### Utility scripts (`util/`)
+
+- `util/check_rss.py` — probes org websites for RSS/Atom feeds and optionally updates `activity.rss` / `activity.sitemap` in frontmatter.
+  ```
+  python util/check_rss.py                    # probe all active orgs
+  python util/check_rss.py --all              # include inactive orgs
+  python util/check_rss.py --slug loomio      # single org
+  python util/check_rss.py --update-activity  # write latest post date/title to frontmatter
+  python util/check_rss.py --skip-existing    # skip orgs already with rss_feed:
+  ```
+  Probes 23 common feed URL paths per site. For real feeds, writes `activity.rss` with latest post date and title. For sitemaps (fallback), writes `activity.sitemap` with `<lastmod>` date. Never overwrites a newer existing entry for the same source.
+
+### Org index table filters (`docs/overrides/organisations.html`)
+
+The `/organisations/` index table has four combinable filters:
+
+| Control | Default | What it filters |
+|---|---|---|
+| Text search | empty | Full row text (name, type, country, concepts) |
+| Type dropdown | All types | `type:` frontmatter value |
+| Country dropdown | All countries | `country:` frontmatter value |
+| Status dropdown | **Active only** | `status:` frontmatter value |
+| Activity recency | All time | Days since best activity date |
+
+Both the type and country dropdowns are auto-populated from row data at page load. Filters are AND-combined. A live count shows matching organisations below the table.
+
+The "Last active" column shows the best-date ISO string + a method chip. Best date is computed in Jinja2 directly from the raw `activity:` dict using ISO string comparison (no hook dependency) so it works on the index page where `computed_activity` may not yet be set.
 
 ### Pending work (separate PRs)
 

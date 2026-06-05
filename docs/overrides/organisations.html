@@ -10,7 +10,30 @@
 {% block content %}
 {{ super() }}
 <div class="md-typeset">
-<input type="search" id="org-search" placeholder="Filter organisations…" class="org-search-input" aria-label="Filter organisations">
+
+<div class="org-filter-bar">
+  <input type="search" id="org-search" placeholder="Search organisations…" class="org-search-input" aria-label="Search organisations">
+  <select id="org-type-filter" class="org-filter-select" aria-label="Filter by type">
+    <option value="">All types</option>
+  </select>
+  <select id="org-country-filter" class="org-filter-select" aria-label="Filter by country">
+    <option value="">All countries</option>
+  </select>
+  <select id="org-status-filter" class="org-filter-select" aria-label="Filter by status">
+    <option value="active">Active only</option>
+    <option value="">All statuses</option>
+    <option value="inactive">Inactive</option>
+    <option value="deregistered">Deregistered</option>
+  </select>
+  <span class="org-filter-label">Active within:</span>
+  <div class="org-activity-filters" role="group" aria-label="Filter by recency">
+    <button class="org-activity-btn active" data-days="0">All time</button>
+    <button class="org-activity-btn" data-days="180">6 months</button>
+    <button class="org-activity-btn" data-days="365">1 year</button>
+    <button class="org-activity-btn" data-days="730">2 years</button>
+  </div>
+</div>
+
 <table id="org-table" class="org-sortable-table">
   <thead>
     <tr>
@@ -18,18 +41,42 @@
       <th class="sortable" data-col="1">Type <span class="sort-icon">↕</span></th>
       <th class="sortable" data-col="2">Country <span class="sort-icon">↕</span></th>
       <th class="sortable" data-col="3">Status <span class="sort-icon">↕</span></th>
+      <th class="sortable" data-col="4">Last active <span class="sort-icon">↕</span></th>
       <th>Concepts</th>
     </tr>
   </thead>
   <tbody>
     {%- for file in pages %}
       {%- if file.page and file.page.url and file.page.url.startswith('organisations/') and file.page.url != page.url %}
-      <tr data-status="{{ file.page.meta.get('status', '') }}">
-        <td><a href="/{{ file.page.url }}">{{ file.page.title }}</a></td>
-        {%- set t = file.page.meta.get('type', '') %}
-        <td data-sort="{{ t }}">{{ type_icons.get(t, '🏛️') }} {{ t }}</td>
-        <td>{{ file.page.meta.get('country', '') }}</td>
+      {%- set country = file.page.meta.get('country', '') %}
+      {%- set org_type = file.page.meta.get('type', '') %}
+      {%- set website = file.page.meta.get('website', '') %}
+      {%- set activity = file.page.meta.get('activity') or {} %}
+      {%- set ns = namespace(best_date='', best_method='') %}
+      {%- for source, entry in activity.items() %}
+        {%- if entry is mapping and entry.date and (entry.date | string) > ns.best_date %}
+          {%- set ns.best_date = entry.date | string %}
+          {%- set ns.best_method = source %}
+        {%- endif %}
+      {%- endfor %}
+      <tr data-status="{{ file.page.meta.get('status', '') }}"
+          data-country="{{ country }}"
+          data-type="{{ org_type }}"
+          data-activity="{{ ns.best_date }}">
+        <td>
+          <a href="/{{ file.page.url }}">{{ file.page.title }}</a>
+          {%- if website and not website.startswith('https://web.archive.org') %}
+          <a href="{{ website }}" class="org-ext-link" target="_blank" rel="noopener" title="{{ website }}">↗</a>
+          {%- endif %}
+        </td>
+        <td data-sort="{{ org_type }}">{{ type_icons.get(org_type, '🏛️') }} {{ org_type }}</td>
+        <td>{{ country }}</td>
         <td><span class="project-status-badge status-{{ file.page.meta.get('status', '') }}">{{ file.page.meta.get('status', '') }}</span></td>
+        <td data-sort="{{ ns.best_date }}">
+          {%- if ns.best_date %}
+          {{ ns.best_date }}<span class="activity-method-chip method-{{ ns.best_method }}">{{ ns.best_method }}</span>
+          {%- else %}—{%- endif %}
+        </td>
         <td>
           {%- for c in file.page.meta.get('concepts', []) %}
           <a href="/concepts/{{ c }}/" class="concept-tag">{{ c | replace('-', ' ') | title }}</a>
@@ -40,44 +87,107 @@
     {%- endfor %}
   </tbody>
 </table>
+<div class="org-table-footer">
+  <p id="org-count" class="org-count"></p>
+  <p class="org-export-links">Download full dataset:
+    <a href="/data/organisations.csv">CSV</a> ·
+    <a href="/data/organisations.json">JSON</a> ·
+    <a href="/data/organisations.geojson">GeoJSON</a>
+  </p>
+</div>
 </div>
 <script>
 (function () {
-  var table  = document.getElementById('org-table');
-  var tbody  = table.querySelector('tbody');
-  var headers = Array.from(table.querySelectorAll('th.sortable'));
-  var search  = document.getElementById('org-search');
+  var table        = document.getElementById('org-table');
+  var tbody        = table.querySelector('tbody');
+  var headers      = Array.from(table.querySelectorAll('th.sortable'));
+  var search       = document.getElementById('org-search');
+  var typeSelect   = document.getElementById('org-type-filter');
+  var countrySelect = document.getElementById('org-country-filter');
+  var statusSelect = document.getElementById('org-status-filter');
+  var activityBtns = Array.from(document.querySelectorAll('.org-activity-btn'));
+  var countEl      = document.getElementById('org-count');
   var sortCol = -1, sortAsc = true;
+  var activeDays = 0;
 
   function rows() { return Array.from(tbody.querySelectorAll('tr')); }
 
-  function applySort(col, asc) {
-    var sorted = rows().sort(function (a, b) {
-      var av = a.cells[col].textContent.trim().toLowerCase();
-      var bv = b.cells[col].textContent.trim().toLowerCase();
-      return asc ? av.localeCompare(bv) : bv.localeCompare(av);
-    });
-    sorted.forEach(function (r) { tbody.appendChild(r); });
+  // Populate type and country dropdowns from row data
+  var types = [...new Set(rows().map(function(r){ return r.dataset.type; }).filter(Boolean))].sort();
+  types.forEach(function(t) {
+    var opt = document.createElement('option');
+    opt.value = t; opt.textContent = t;
+    typeSelect.appendChild(opt);
+  });
+
+  var countries = [...new Set(rows().map(function(r){ return r.dataset.country; }).filter(Boolean))].sort();
+  countries.forEach(function(c) {
+    var opt = document.createElement('option');
+    opt.value = c; opt.textContent = c;
+    countrySelect.appendChild(opt);
+  });
+
+  function daysSince(dateStr) {
+    if (!dateStr) return Infinity;
+    var d = new Date(dateStr);
+    return (Date.now() - d.getTime()) / 86400000;
   }
 
-  headers.forEach(function (th) {
-    th.addEventListener('click', function () {
+  function applyFilters() {
+    var q       = search.value.toLowerCase();
+    var type    = typeSelect.value;
+    var country = countrySelect.value;
+    var status  = statusSelect.value;
+    var visible = 0;
+    rows().forEach(function(r) {
+      var textOk     = !q || r.textContent.toLowerCase().includes(q);
+      var typeOk     = !type    || r.dataset.type    === type;
+      var countryOk  = !country || r.dataset.country === country;
+      var statusOk   = !status  || r.dataset.status  === status;
+      var activityOk = activeDays === 0 || daysSince(r.dataset.activity) <= activeDays;
+      var show = textOk && typeOk && countryOk && statusOk && activityOk;
+      r.hidden = !show;
+      if (show) visible++;
+    });
+    countEl.textContent = visible + ' organisation' + (visible !== 1 ? 's' : '');
+  }
+
+  function applySort(col, asc) {
+    var sorted = rows().sort(function(a, b) {
+      var av = (a.cells[col].dataset.sort || a.cells[col].textContent).trim().toLowerCase();
+      var bv = (b.cells[col].dataset.sort || b.cells[col].textContent).trim().toLowerCase();
+      return asc ? av.localeCompare(bv) : bv.localeCompare(av);
+    });
+    sorted.forEach(function(r) { tbody.appendChild(r); });
+  }
+
+  headers.forEach(function(th) {
+    th.addEventListener('click', function() {
       var col = parseInt(th.dataset.col, 10);
       sortAsc = (sortCol === col) ? !sortAsc : true;
       sortCol = col;
-      headers.forEach(function (h) { h.querySelector('.sort-icon').textContent = '↕'; });
+      headers.forEach(function(h) { h.querySelector('.sort-icon').textContent = '↕'; });
       th.querySelector('.sort-icon').textContent = sortAsc ? '↑' : '↓';
       applySort(col, sortAsc);
     });
     th.style.cursor = 'pointer';
   });
 
-  search.addEventListener('input', function () {
-    var q = search.value.toLowerCase();
-    rows().forEach(function (r) {
-      r.hidden = q && !r.textContent.toLowerCase().includes(q);
+  search.addEventListener('input', applyFilters);
+  typeSelect.addEventListener('change', applyFilters);
+  countrySelect.addEventListener('change', applyFilters);
+  statusSelect.addEventListener('change', applyFilters);
+
+  activityBtns.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      activityBtns.forEach(function(b) { b.classList.remove('active'); });
+      btn.classList.add('active');
+      activeDays = parseInt(btn.dataset.days, 10);
+      applyFilters();
     });
   });
+
+  applyFilters();
 })();
 </script>
 {% endblock %}
