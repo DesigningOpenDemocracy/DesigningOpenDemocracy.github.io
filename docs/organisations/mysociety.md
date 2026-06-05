@@ -17,9 +17,9 @@ location:
 last_checked: "2026-05-29"
 rss_feed: https://www.mysociety.org/feed
 last_activity:
-  date: 2026-06-05
-  note: "RSS feed discovered"
-  url: https://www.mysociety.org/feed
+  date: 2026-05-19
+  note: "Latest post: Welsh residents now have six MSs, and they all work for you"
+  url: https://www.mysociety.org/2026/05/19/welsh-residents-now-have-six-mss-and-they-all-work-for-you/
   method: rss
 ---
 

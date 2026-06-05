@@ -15,9 +15,9 @@ concepts:
   - accountability-sink
 rss_feed: https://gumilla.org/feed
 last_activity:
-  date: 2026-06-05
-  note: "RSS feed discovered"
-  url: https://gumilla.org/feed
+  date: 2026-05-29
+  note: "Latest post: RASI convoca al XVII Encuentro Constructores de Paz bajo el lema \u201cDemocratizaci\u00f3"
+  url: https://gumilla.org/xvii-encuentro-constructores-de-paz/
   method: rss
 ---
 

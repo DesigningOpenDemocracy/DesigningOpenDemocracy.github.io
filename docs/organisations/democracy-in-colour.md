@@ -15,9 +15,9 @@ concepts:
   - isegoria
 rss_feed: https://democracyincolour.org/feed
 last_activity:
-  date: 2026-06-05
-  note: "RSS feed discovered"
-  url: https://democracyincolour.org/feed
+  date: 2026-04-30
+  note: "Latest post: Government must act immediately to release all Australian citizens abducted by I"
+  url: https://democracyincolour.org/government-must-act-immediately-to-release-all-australian-citizens-abducted-by-israel/
   method: rss
 ---
 

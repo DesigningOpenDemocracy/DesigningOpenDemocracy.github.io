@@ -14,9 +14,9 @@ concepts:
   - sortition
 rss_feed: https://cafsa.org.au/feed
 last_activity:
-  date: 2026-06-05
-  note: "RSS feed discovered"
-  url: https://cafsa.org.au/feed
+  date: 2026-04-02
+  note: "Latest post: CAfSA News no. 7 April 2026"
+  url: https://cafsa.org.au/cafsa-news-no-7-april-2026/?utm_source=rss&utm_medium=rss&utm_campaign=cafsa-news-no-7-april-2026
   method: rss
 ---
 

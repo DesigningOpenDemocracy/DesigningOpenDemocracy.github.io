@@ -15,9 +15,9 @@ concepts:
   - sortition
 rss_feed: https://democrats.org.au/rss.xml
 last_activity:
-  date: 2026-06-05
-  note: "RSS feed discovered"
-  url: https://democrats.org.au/rss.xml
+  date: 2026-05-24
+  note: "Latest post: We took part in a Facebook Q&A"
+  url: https://www.democrats.org.au/posts/6v15DUfhxyWNVoSqBBFje4/we-took-part-in-a-facebook-q-a
   method: rss
 ---
 

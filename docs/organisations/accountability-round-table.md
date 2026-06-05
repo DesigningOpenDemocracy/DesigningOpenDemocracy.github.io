@@ -16,9 +16,9 @@ concepts:
   - liberal-democracy
 rss_feed: http://accountabilityrt.org/feed
 last_activity:
-  date: 2026-06-05
-  note: "RSS feed discovered"
-  url: http://accountabilityrt.org/feed
+  date: 2026-06-01
+  note: "Latest post: GOVERNMENT MUST LEGISLATE IBAC REFORM NOW, NOT AFTER THE ELECTION"
+  url: https://www.accountabilityrt.org/government-must-legislate-ibac-reform-now-not-after-the-election/
   method: rss
 ---
 

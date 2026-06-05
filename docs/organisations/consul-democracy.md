@@ -17,9 +17,9 @@ location:
   name: Madrid, Spain
 rss_feed: https://consuldemocracy.org/feed
 last_activity:
-  date: 2026-06-05
-  note: "RSS feed discovered"
-  url: https://consuldemocracy.org/feed
+  date: 2026-04-22
+  note: "Latest post: Version release 2.5.0! \ud83c\udf86"
+  url: https://consuldemocracy.org/2026/04/version-release-2-5-0/
   method: rss
 ---
 

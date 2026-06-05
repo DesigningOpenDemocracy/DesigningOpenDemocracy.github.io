@@ -15,9 +15,9 @@ concepts:
   - e-government
 rss_feed: https://newvote.org/blog/rss.xml
 last_activity:
-  date: 2026-06-05
-  note: "RSS feed discovered"
-  url: https://newvote.org/blog/rss.xml
+  date: 2019-11-11
+  note: "Latest post: How's SpeakUp @ the University of Queensland going?"
+  url: https://newvote.org/blog/2019/11/10/hows-speakup-the-university-of-queensland-going
   method: rss
 ---
 

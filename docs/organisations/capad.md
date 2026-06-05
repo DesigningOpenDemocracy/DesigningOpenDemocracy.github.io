@@ -15,9 +15,9 @@ concepts:
   - cooperative
 rss_feed: https://canberra-alliance.org.au/feed
 last_activity:
-  date: 2026-06-05
-  note: "RSS feed discovered"
-  url: https://canberra-alliance.org.au/feed
+  date: 2026-01-03
+  note: "Latest post: Redescribing Democracy: a Review"
+  url: https://canberra-alliance.org.au/redescribing-democracy-a-review/?utm_source=rss&utm_medium=rss&utm_campaign=redescribing-democracy-a-review
   method: rss
 ---
 

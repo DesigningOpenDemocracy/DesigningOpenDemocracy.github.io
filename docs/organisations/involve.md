@@ -16,9 +16,9 @@ concepts:
   - direct-democracy
 rss_feed: https://www.involve.org.uk/rss.xml
 last_activity:
-  date: 2026-06-05
-  note: "RSS feed discovered"
-  url: https://www.involve.org.uk/rss.xml
+  date: 2026-05-12
+  note: "Latest post: After the May elections: governing on thin mandates"
+  url: https://www.involve.org.uk/news-opinion/opinion/after-may-elections-governing-thin-mandates
   method: rss
 ---
 

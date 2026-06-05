@@ -15,9 +15,9 @@ concepts:
   - accountability-sink
 rss_feed: https://grattan.edu.au/feed
 last_activity:
-  date: 2026-06-05
-  note: "RSS feed discovered"
-  url: https://grattan.edu.au/feed
+  date: 2026-05-31
+  note: "Latest post: Tough decisions needed on gas"
+  url: https://grattan.edu.au/tough-decisions-needed-on-gas/
   method: rss
 ---
 

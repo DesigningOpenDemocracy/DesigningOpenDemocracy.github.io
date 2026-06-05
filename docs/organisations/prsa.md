@@ -15,9 +15,9 @@ concepts:
   - direct-democracy
 rss_feed: https://www.prsa.org.au/feed
 last_activity:
-  date: 2026-06-05
-  note: "RSS feed discovered"
-  url: https://www.prsa.org.au/feed
+  date: 2020-07-09
+  note: "Latest post: Orders in Council gazetted for single-councillor wards have taken effect"
+  url: https://prsa.org.au/news/2020/#2020-07b
   method: rss
 ---
 

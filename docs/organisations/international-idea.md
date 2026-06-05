@@ -17,9 +17,9 @@ location:
 last_checked: "2026-05-29"
 rss_feed: https://www.idea.int/rss.xml
 last_activity:
-  date: 2026-06-05
-  note: "RSS feed discovered"
-  url: https://www.idea.int/rss.xml
+  date: 2026-06-03
+  note: "Latest post: Strengthening the Rule of Law: The Role of Courts and Lawyers in Constitutional "
+  url: https://www.idea.int/publications/catalogue/html/strengthening-rule-law-role-courts-and-lawyers
   method: rss
 ---
 

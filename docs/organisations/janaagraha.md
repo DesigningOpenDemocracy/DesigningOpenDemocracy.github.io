@@ -15,9 +15,9 @@ concepts:
   - accountability-sink
 rss_feed: https://www.janaagraha.org/feed
 last_activity:
-  date: 2026-06-05
-  note: "RSS feed discovered"
-  url: https://www.janaagraha.org/feed
+  date: 2026-05-14
+  note: "Latest post: Too Many Cooks in the Urban\u00a0Services Kitchen"
+  url: https://www.janaagraha.org/too-many-cooks-in-the-urban-services-kitchen/
   method: rss
 ---
 

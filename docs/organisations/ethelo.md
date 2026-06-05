@@ -16,9 +16,9 @@ location:
   name: Vancouver, Canada
 rss_feed: https://ethelo.com/feed
 last_activity:
-  date: 2026-06-05
-  note: "RSS feed discovered"
-  url: https://ethelo.com/feed
+  date: 2026-03-30
+  note: "Latest post: Engaged California Program"
+  url: https://ethelo.com/case-study/engaged-california-program/
   method: rss
 ---
 

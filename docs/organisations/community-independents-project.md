@@ -14,9 +14,9 @@ concepts:
   - accountability-sink
 rss_feed: https://www.communityindependentsproject.org/blog/rss.xml
 last_activity:
-  date: 2026-06-05
-  note: "RSS feed discovered"
-  url: https://www.communityindependentsproject.org/blog/rss.xml
+  date: 2022-09-04
+  note: "Latest post: The second national Community Independents Convention, August 2022"
+  url: https://www.communityindependentsproject.org/blog/the-second-national-community-independents-convention-august-2022
   method: rss
 ---
 

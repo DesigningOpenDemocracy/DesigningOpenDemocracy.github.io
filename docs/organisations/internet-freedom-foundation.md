@@ -15,9 +15,9 @@ concepts:
   - accountability-sink
 rss_feed: https://internetfreedom.in/rss
 last_activity:
-  date: 2026-06-05
-  note: "RSS feed discovered"
-  url: https://internetfreedom.in/rss
+  date: 2026-05-29
+  note: "Latest post: RTI Response Reveals that the Viksit Bharat Sampark Whatsapp Initiative was Allo"
+  url: https://internetfreedom.in/rti-response-reveals-that-the-viksit-bharat-sampark-whatsapp-initiative-was-allocated-funds-amounting-to-18-crores/
   method: rss
 ---
 

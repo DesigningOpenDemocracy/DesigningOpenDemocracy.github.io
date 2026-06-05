@@ -16,9 +16,9 @@ location:
   name: Lismore, NSW, Australia
 rss_feed: https://reclaim.org.au/feed
 last_activity:
-  date: 2026-06-05
-  note: "RSS feed discovered"
-  url: https://reclaim.org.au/feed
+  date: 2026-02-09
+  note: "Latest post: Nearly four years after the NR Floods, the community is given a (small) chance t"
+  url: https://reclaim.org.au/nearly-four-years-after-the-nr-floods-the-community-is-given-a-small-chance-to-be-heard/
   method: rss
 ---
 

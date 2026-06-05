@@ -16,9 +16,9 @@ location:
 last_checked: "2026-05-29"
 rss_feed: https://earthworker.coop/feed
 last_activity:
-  date: 2026-06-05
-  note: "RSS feed discovered"
-  url: https://earthworker.coop/feed
+  date: 2025-08-08
+  note: "Latest post: Solidarity in action: Colin Long on a lifetime of co-operation, climate justice "
+  url: https://earthworker.coop/solidarity-in-action-colin-long-on-a-lifetime-of-co-operation-climate-justice-and-the-power-of-the-bunya-fund/
   method: rss
 ---
 

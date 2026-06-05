@@ -16,9 +16,9 @@ location:
 last_checked: "2026-05-29"
 rss_feed: https://www.participatorybudgeting.org/feed
 last_activity:
-  date: 2026-06-05
-  note: "RSS feed discovered"
-  url: https://www.participatorybudgeting.org/feed
+  date: 2026-03-05
+  note: "Latest post: PB Grows in New Jersey"
+  url: https://www.participatorybudgeting.org/pb-seeds-eval/
   method: rss
 ---
 

@@ -15,9 +15,9 @@ concepts:
   - economic-democracy
 rss_feed: https://www.888causeway.coop/feed
 last_activity:
-  date: 2026-06-05
-  note: "RSS feed discovered"
-  url: https://www.888causeway.coop/feed
+  date: 2019-06-26
+  note: "Latest post: Corner and connect"
+  url: https://www.888causeway.coop/corner-and-connect/
   method: rss
 ---
 

@@ -13,9 +13,9 @@ concepts:
   - buen-vivir
 rss_feed: https://fundacionsolon.org/feed
 last_activity:
-  date: 2026-06-05
-  note: "RSS feed discovered"
-  url: https://fundacionsolon.org/feed
+  date: 2026-05-25
+  note: "Latest post: Organizaciones de la sociedad civil y la Defensor\u00eda del Pueblo, demandan la aper"
+  url: https://fundacionsolon.org/2026/05/25/organizaciones-de-la-sociedad-civil-y-la-defensoria-del-pueblo-demandan-la-apertura-de-un-dialogo-estructurado-entre-el-gobierno-y-sectores-movilizados/
   method: rss
 ---
 

@@ -16,9 +16,9 @@ concepts:
   - direct-democracy
 rss_feed: https://healthydemocracy.org/feed
 last_activity:
-  date: 2026-06-05
-  note: "RSS feed discovered"
-  url: https://healthydemocracy.org/feed
+  date: 2026-02-17
+  note: "Latest post: Want residents, not politicians, to find answers to LA\u2019s thorniest problems? Try"
+  url: https://healthydemocracy.org/la-assembly-news/2026/02/16/want-residents-not-politicians-to-find-answers-to-las-thorniest-problems-try-a-civic-assembly/
   method: rss
 ---
 

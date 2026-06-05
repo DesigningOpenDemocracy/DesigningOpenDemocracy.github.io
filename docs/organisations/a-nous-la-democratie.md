@@ -15,9 +15,9 @@ location:
   name: France
 rss_feed: https://anouslademocratie.fr/feed
 last_activity:
-  date: 2026-06-05
-  note: "RSS feed discovered"
-  url: https://anouslademocratie.fr/feed
+  date: 2025-07-15
+  note: "Latest post: Pour la premi\u00e8re D\u00e9mocratie fran\u00e7aise : un entretien avec Baya Bellanger sur son"
+  url: https://anouslademocratie.fr/2025/07/15/pour-la-premiere-democratie-francaise-un-entretien-avec-baya-bellanger-sur-son-nouveau-livre-gouvernons/
   method: rss
 ---
 

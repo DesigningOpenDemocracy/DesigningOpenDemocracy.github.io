@@ -15,9 +15,9 @@ concepts:
   - liberal-democracy
 rss_feed: https://www.afrobarometer.org/feed
 last_activity:
-  date: 2026-06-05
-  note: "RSS feed discovered"
-  url: https://www.afrobarometer.org/feed
+  date: 2026-06-02
+  note: "Latest post: Many Africans see justice system as unequal, costly, and slow, Afrobarometer sur"
+  url: https://www.afrobarometer.org/articles/many-africans-see-justice-system-as-unequal-costly-and-slow-afrobarometer-survey-reveals/
   method: rss
 ---
 

@@ -17,9 +17,9 @@ concepts:
   - cognitive-division-of-labour
 rss_feed: https://www.newdemocracy.com.au/feed
 last_activity:
-  date: 2026-06-05
-  note: "RSS feed discovered"
-  url: https://www.newdemocracy.com.au/feed
+  date: 2026-03-04
+  note: "Latest post: Final report: Upper House Inquiry into Community Consultation Practices."
+  url: https://www.newdemocracy.com.au/2026/03/04/final-report-upper-house-inquiry-into-community-consultation-practices/?utm_source=rss&utm_medium=rss&utm_campaign=final-report-upper-house-inquiry-into-community-consultation-practices
   method: rss
 ---
 

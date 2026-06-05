@@ -15,9 +15,9 @@ concepts:
   - liquid-democracy
 rss_feed: https://nota.ca/feed
 last_activity:
-  date: 2026-06-05
-  note: "RSS feed discovered"
-  url: https://nota.ca/feed
+  date: 2025-01-28
+  note: "Latest post: None of the Above Party Calls for Referendum on Trump Tariffs, Strategic Voting "
+  url: https://nota.ca/none-of-the-above-party-calls-for-referendum-on-trump-tariffs/
   method: rss
 ---
 

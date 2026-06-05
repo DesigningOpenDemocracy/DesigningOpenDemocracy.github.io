@@ -15,9 +15,9 @@ concepts:
   - representative-democracy
 rss_feed: https://australiainstitute.org.au/feed
 last_activity:
-  date: 2026-06-05
-  note: "RSS feed discovered"
-  url: https://australiainstitute.org.au/feed
+  date: 2026-06-04
+  note: "Latest post: Australians support stronger whistleblower laws, while Labor drags its feet"
+  url: https://australiainstitute.org.au/post/australians-support-stronger-whistleblower-laws-while-labor-drags-its-feet/?utm_source=rss&utm_medium=rss&utm_campaign=australians-support-stronger-whistleblower-laws-while-labor-drags-its-feet
   method: rss
 ---
 

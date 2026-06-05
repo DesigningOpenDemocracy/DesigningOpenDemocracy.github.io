@@ -16,9 +16,9 @@ location:
   name: Reykjavík, Iceland
 rss_feed: https://citizens.is/feed
 last_activity:
-  date: 2026-06-05
-  note: "RSS feed discovered"
-  url: https://citizens.is/feed
+  date: 2023-10-01
+  note: "Latest post: The Power of Citizen Engagement: Why \u201cYour Priorities\u201d is the World\u2019s Leading Pl"
+  url: https://citizens.is/2023/10/01/the-power-of-citizen-engagement-why-your-priorities-is-the-worlds-leading-platform/
   method: rss
 ---
 

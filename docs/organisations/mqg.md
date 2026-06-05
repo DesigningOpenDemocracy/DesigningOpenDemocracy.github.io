@@ -15,9 +15,9 @@ concepts:
   - radical-transparency
 rss_feed: https://mqg.org.il/feed
 last_activity:
-  date: 2026-06-05
-  note: "RSS feed discovered"
-  url: https://mqg.org.il/feed
+  date: 2026-04-15
+  note: "Latest post: \u05d4\u05ea\u05e0\u05d5\u05e2\u05d4 \u05dc\u05d0\u05d9\u05db\u05d5\u05ea \u05d4\u05e9\u05dc\u05d8\u05d5\u05df \u05d3\u05d5\u05e8\u05e9\u05ea \u05de\u05d4\u05e8\u05de\u05d8\u05db\"\u05dc \u05dc\u05d4\u05e7\u05d9\u05dd \u05d5\u05e2\u05d3\u05ea \u05d1\u05d3\u05d9\u05e7\u05d4 \u05dc\u05e0\u05ea\u05d5\u05e0\u05d9 \u05d2\u05d9\u05d5\u05e1 \u05d4\u05d7\u05e8\u05d3\u05d9\u05dd \u05d4\u05e9\u05d2\u05d5\u05d9\u05d9\u05dd "
+  url: https://mqg.org.il/%d7%94%d7%aa%d7%a0%d7%95%d7%a2%d7%94-%d7%9c%d7%90%d7%99%d7%9b%d7%95%d7%aa-%d7%94%d7%a9%d7%9c%d7%98%d7%95%d7%9f-%d7%93%d7%95%d7%a8%d7%a9%d7%aa-%d7%9e%d7%94%d7%a8%d7%9e%d7%98%d7%9b%d7%9c-%d7%9c%d7%94/
   method: rss
 ---
 

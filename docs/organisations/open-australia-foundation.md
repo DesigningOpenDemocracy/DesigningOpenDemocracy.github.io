@@ -16,9 +16,9 @@ concepts:
 last_checked: "2026-06-02"
 rss_feed: https://www.openaustraliafoundation.org.au/feed
 last_activity:
-  date: 2026-06-05
-  note: "RSS feed discovered"
-  url: https://www.openaustraliafoundation.org.au/feed
+  date: 2026-02-17
+  note: "Latest post: Become a Fundraising Champion for Civic Tech"
+  url: https://oaf.org.au/2026/02/17/become-a-fundraising-champion-for-civic-tech/
   method: rss
 ---
 

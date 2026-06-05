@@ -15,9 +15,9 @@ concepts:
   - consensus-mapping
 rss_feed: https://www.democracyco.com.au/feed/
 last_activity:
-  date: 2026-06-05
-  note: "RSS feed discovered"
-  url: https://www.democracyco.com.au/feed/
+  date: 2026-05-02
+  note: "Latest post: Housing Amplifcation"
+  url: https://www.democracyco.com.au/housing-amplifcation/?utm_source=rss&utm_medium=rss&utm_campaign=housing-amplifcation
   method: rss
 ---
 

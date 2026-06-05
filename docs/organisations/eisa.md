@@ -15,9 +15,9 @@ concepts:
   - accountability-sink
 rss_feed: https://www.eisa.org/feed
 last_activity:
-  date: 2026-06-05
-  note: "RSS feed discovered"
-  url: https://www.eisa.org/feed
+  date: 2026-03-06
+  note: "Latest post: In the Upcoming Local Government Elections, Low Voter Turnout may be the Biggest"
+  url: https://www.eisa.org/in-the-upcoming-local-government-elections-low-voter-turnout-may-be-the-biggest-winner/
   method: rss
 ---
 
