@@ -13,6 +13,12 @@ concepts:
   - democracy
   - constitutional-democracy
   - accountability-sink
+rss_feed: https://grattan.edu.au/feed
+last_activity:
+  date: 2026-06-05
+  note: "RSS feed discovered"
+  url: https://grattan.edu.au/feed
+  method: rss
 ---
 
 The Grattan Institute is a Melbourne-based public policy think tank covering a broad range of policy areas including energy, housing, education, health, and governance. It is independent of government, political parties, and industry.

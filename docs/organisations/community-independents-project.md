@@ -12,6 +12,12 @@ location:
 concepts:
   - representative-democracy
   - accountability-sink
+rss_feed: https://www.communityindependentsproject.org/blog/rss.xml
+last_activity:
+  date: 2026-06-05
+  note: "RSS feed discovered"
+  url: https://www.communityindependentsproject.org/blog/rss.xml
+  method: rss
 ---
 
 The Community Independents Project (CIP) is the coordinating body for Australia's community independent candidate movement — a network of locally organised, non-partisan groups that support community-driven independent candidates at federal, state, and local elections.

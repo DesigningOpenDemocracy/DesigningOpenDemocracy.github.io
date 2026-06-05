@@ -12,6 +12,12 @@ location:
 concepts:
   - citizens-assembly
   - sortition
+rss_feed: https://cafsa.org.au/feed
+last_activity:
+  date: 2026-06-05
+  note: "RSS feed discovered"
+  url: https://cafsa.org.au/feed
+  method: rss
 ---
 
 CAfSA is an incorporated association founded in Adelaide in 2023, advocating for randomly selected, broadly representative citizens' assemblies as a policy-making tool in South Australia. The organisation distinguishes citizens' assemblies from traditional consultation, positioning them as particularly suited to contested issues that are difficult for elected politicians to handle directly.

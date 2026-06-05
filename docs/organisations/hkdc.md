@@ -13,6 +13,10 @@ concepts:
   - democracy
   - liberal-democracy
   - constitutional-democracy
+last_activity:
+  date: 2026-06-05
+  note: "Site verified active (no RSS feed found)"
+  method: manual
 ---
 
 > **Note:** HKDC operates from diaspora in Washington DC. It is included here because its work is specifically about a particular governance system — the accountability structures promised to Hong Kong under One Country, Two Systems — rather than general human rights documentation.

@@ -14,6 +14,12 @@ location:
   latitude: -28.8166
   longitude: 153.2803
   name: Lismore, NSW, Australia
+rss_feed: https://reclaim.org.au/feed
+last_activity:
+  date: 2026-06-05
+  note: "RSS feed discovered"
+  url: https://reclaim.org.au/feed
+  method: rss
 ---
 
 The Lismore People's Assembly emerged from the 2022 flood crisis, when conventional governance structures were seen as failing the community. It operates as a community-run deliberative body — a forum for residents to discuss, deliberate, and take action on local issues, grounded in inclusion, participation, and transparency.

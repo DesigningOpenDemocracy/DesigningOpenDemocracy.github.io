@@ -15,6 +15,12 @@ location:
   longitude: -0.1278
   name: London, UK
 last_checked: "2026-05-29"
+rss_feed: https://www.mysociety.org/feed
+last_activity:
+  date: 2026-06-05
+  note: "RSS feed discovered"
+  url: https://www.mysociety.org/feed
+  method: rss
 ---
 
 mySociety is a UK registered charity and social enterprise, founded in 2003, that builds digital tools to make it easier for citizens to participate in democracy, hold governments accountable, and access public services. It operates on the principle that well-designed technology can reduce the friction between citizens and the state.

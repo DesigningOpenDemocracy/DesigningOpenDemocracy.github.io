@@ -13,6 +13,12 @@ concepts:
   - direct-democracy
   - citizens-assembly
   - cooperative
+rss_feed: https://canberra-alliance.org.au/feed
+last_activity:
+  date: 2026-06-05
+  note: "RSS feed discovered"
+  url: https://canberra-alliance.org.au/feed
+  method: rss
 ---
 
 CAPaD is an ACT-based community organisation founded in 2015, focused on making elected representatives more accountable and democratic participation more meaningful for Canberra residents. It is independently funded — not by political parties, government, or corporations — and run by a voluntary committee.

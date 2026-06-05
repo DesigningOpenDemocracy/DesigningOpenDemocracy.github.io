@@ -14,6 +14,12 @@ location:
   latitude: 49.2827
   longitude: -123.1207
   name: Vancouver, Canada
+rss_feed: https://ethelo.com/feed
+last_activity:
+  date: 2026-06-05
+  note: "RSS feed discovered"
+  url: https://ethelo.com/feed
+  method: rss
 ---
 
 Ethelo is a Vancouver-based collective intelligence and digital engagement platform designed for governments and organisations running public consultations. Rather than simple majority polling, Ethelo uses preference aggregation algorithms to identify options with the broadest support across different stakeholder groups — the approach is designed to minimise polarisation rather than simply count the loudest majority.

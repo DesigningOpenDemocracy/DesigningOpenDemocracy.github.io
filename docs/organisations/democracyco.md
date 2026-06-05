@@ -13,6 +13,12 @@ concepts:
   - citizens-assembly
   - deliberative-democracy
   - consensus-mapping
+rss_feed: https://www.democracyco.com.au/feed/
+last_activity:
+  date: 2026-06-05
+  note: "RSS feed discovered"
+  url: https://www.democracyco.com.au/feed/
+  method: rss
 ---
 
 DemocracyCo is one of Australia's most established deliberative democracy practices, providing end-to-end design, facilitation, and project management for citizens' juries, panels, and assemblies. It was co-founded by Emily Jenke and Emma Fletcher — both with backgrounds in SA public service and community engagement — out of a frustration that governments were not achieving quality reform commensurate with the scale of problems faced by communities.

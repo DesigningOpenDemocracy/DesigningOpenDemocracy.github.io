@@ -14,6 +14,12 @@ concepts:
   - deliberative-democracy
   - sortition
   - direct-democracy
+rss_feed: https://healthydemocracy.org/feed
+last_activity:
+  date: 2026-06-05
+  note: "RSS feed discovered"
+  url: https://healthydemocracy.org/feed
+  method: rss
 ---
 
 Healthy Democracy developed and institutionalised the **Citizens' Initiative Review** (CIR) — a process in which a randomly selected, representative panel of citizens spends several days intensively studying a ballot measure: hearing from proponents and opponents, questioning experts, and deliberating together. The panel's findings — a balanced statement of key arguments and evidence — are then published in the official voter's guide sent to all voters before the election.

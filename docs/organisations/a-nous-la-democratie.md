@@ -13,6 +13,12 @@ location:
   latitude: 48.8566
   longitude: 2.3522
   name: France
+rss_feed: https://anouslademocratie.fr/feed
+last_activity:
+  date: 2026-06-05
+  note: "RSS feed discovered"
+  url: https://anouslademocratie.fr/feed
+  method: rss
 ---
 
 À Nous La Démocratie! is a French citizen movement founded in 2016 by eight citizens who wanted to fundamentally transform how the French political system functions. Non-partisan and citizen-led, it advocates for institutional reforms to shift political power toward citizens.

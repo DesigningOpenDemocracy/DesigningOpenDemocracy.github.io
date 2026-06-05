@@ -14,6 +14,10 @@ concepts:
   - accountability-sink
   - democracy
   - radical-transparency
+last_activity:
+  date: 2026-06-05
+  note: "Site verified active (no RSS feed found)"
+  method: manual
 ---
 
 Memorial (Мемориал) was founded in the late 1980s during the Glasnost era to document and preserve memory of Soviet political repression — labour camps, executions, and mass deportations. It became one of Russia's most prominent civil society organisations, documenting abuses in Chechnya and other conflict zones, maintaining databases of political prisoners, and providing legal support to victims of state violence.

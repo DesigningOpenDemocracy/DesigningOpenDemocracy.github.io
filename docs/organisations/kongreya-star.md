@@ -12,6 +12,12 @@ location:
   name: Qamishli, North and East Syria (AANES)
 concepts:
   - democratic-confederalism
+rss_feed: https://kongra-star.org/?feed=rss2
+last_activity:
+  date: 2026-06-05
+  note: "RSS feed discovered"
+  url: https://kongra-star.org/?feed=rss2
+  method: rss
 ---
 
 > **Note on context:** Kongra Star operates within the AANES, which is not internationally recognised. See the [TEV-DEM](tev-dem.md) entry for context on the broader governance framework.

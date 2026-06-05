@@ -14,6 +14,12 @@ location:
   latitude: 59.4370
   longitude: 24.7536
   name: Tallinn, Estonia
+rss_feed: https://citizenos.com/feed
+last_activity:
+  date: 2026-06-05
+  note: "RSS feed discovered"
+  url: https://citizenos.com/feed
+  method: rss
 ---
 
 Citizen OS is an Estonian open-source platform for civic participation — group discussions, co-creation of proposals, online petitions, and consultations. Built by a non-profit foundation, it integrates with Estonia's national e-ID infrastructure to support binding digital signatures in the Estonian context. The platform was relaunched with a new design in 2024.

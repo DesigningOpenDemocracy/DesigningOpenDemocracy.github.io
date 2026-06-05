@@ -13,6 +13,10 @@ concepts:
   - sortition
   - deliberative-democracy
   - citizens-assembly
+last_activity:
+  date: 2026-06-05
+  note: "Site verified active (no RSS feed found)"
+  method: manual
 ---
 
 The Sortition Foundation is a UK-based organisation that campaigns for the use of stratified random selection (sortition) in government, primarily through citizens' assemblies. The Australian chapter operates within that global structure and is established by **Dr Sonia Randhawa**, based in Preston, Victoria, who works as a Project Manager at the Foundation.

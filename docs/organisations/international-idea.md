@@ -15,6 +15,12 @@ location:
   longitude: 18.0686
   name: Stockholm, Sweden
 last_checked: "2026-05-29"
+rss_feed: https://www.idea.int/rss.xml
+last_activity:
+  date: 2026-06-05
+  note: "RSS feed discovered"
+  url: https://www.idea.int/rss.xml
+  method: rss
 ---
 
 International IDEA (the International Institute for Democracy and Electoral Assistance) is an intergovernmental organisation founded in 1995 with a mandate to support sustainable democratic governance across the globe. It has 35 member states and is headquartered in Stockholm, with regional offices across Africa, Asia-Pacific, Latin America, the Middle East, and Europe.

@@ -14,6 +14,12 @@ location:
   longitude: 146.4307
   name: Morwell, Victoria, Australia
 last_checked: "2026-05-29"
+rss_feed: https://earthworker.coop/feed
+last_activity:
+  date: 2026-06-05
+  note: "RSS feed discovered"
+  url: https://earthworker.coop/feed
+  method: rss
 ---
 
 Earthworker Cooperative is a grassroots network of worker-owned cooperatives based in Victoria, Australia. Founded as a response to both the climate crisis and economic inequality, its model is to build community wealth by structuring enterprises as worker cooperatives — where employees are co-owners with equal voice, and profits are distributed locally rather than extracted by external shareholders.

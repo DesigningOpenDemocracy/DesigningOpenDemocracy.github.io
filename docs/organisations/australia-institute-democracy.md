@@ -13,6 +13,12 @@ concepts:
   - accountability-sink
   - constitutional-democracy
   - representative-democracy
+rss_feed: https://australiainstitute.org.au/feed
+last_activity:
+  date: 2026-06-05
+  note: "RSS feed discovered"
+  url: https://australiainstitute.org.au/feed
+  method: rss
 ---
 
 The Democracy & Accountability Program is a dedicated research and advocacy program within [The Australia Institute](https://australiainstitute.org.au), a Canberra-based progressive think tank. Established in 2021, it builds on the Institute's longer history of democracy-related research.

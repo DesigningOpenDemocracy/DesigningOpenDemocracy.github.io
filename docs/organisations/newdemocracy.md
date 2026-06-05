@@ -15,6 +15,12 @@ concepts:
   - sortition
   - isegoria
   - cognitive-division-of-labour
+rss_feed: https://www.newdemocracy.com.au/feed
+last_activity:
+  date: 2026-06-05
+  note: "RSS feed discovered"
+  url: https://www.newdemocracy.com.au/feed
+  method: rss
 ---
 
 newDemocracy is one of Australia's most active organisations in the deliberative democracy space. It conducts real-world trials using random selection and deliberation — the jury model — to show that citizens, given good information and time to deliberate, can reach considered decisions on complex public issues.

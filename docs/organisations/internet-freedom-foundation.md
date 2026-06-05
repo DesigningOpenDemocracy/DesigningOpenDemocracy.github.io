@@ -13,6 +13,12 @@ concepts:
   - radical-transparency
   - e-government
   - accountability-sink
+rss_feed: https://internetfreedom.in/rss
+last_activity:
+  date: 2026-06-05
+  note: "RSS feed discovered"
+  url: https://internetfreedom.in/rss
+  method: rss
 ---
 
 > **Note on scope:** IFF's work sits at the edge of DOD's landscape. Its focus is on defending the digital conditions for democratic participation — internet access, freedom from surveillance — rather than designing governance mechanisms directly. It is included because those conditions are a direct prerequisite for how citizens engage with governance in an increasingly digital public sphere.

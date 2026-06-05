@@ -14,6 +14,12 @@ concepts:
   - deliberative-democracy
   - participatory-budgeting
   - direct-democracy
+rss_feed: https://www.involve.org.uk/rss.xml
+last_activity:
+  date: 2026-06-05
+  note: "RSS feed discovered"
+  url: https://www.involve.org.uk/rss.xml
+  method: rss
 ---
 
 Involve is a UK charity at the intersection of research and practice in public participation. They work with governments, public institutions, and communities to design participation processes that actually influence decisions — as opposed to the tokenistic consultation that often passes for engagement.

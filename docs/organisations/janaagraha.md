@@ -13,6 +13,12 @@ concepts:
   - e-government
   - direct-democracy
   - accountability-sink
+rss_feed: https://www.janaagraha.org/feed
+last_activity:
+  date: 2026-06-05
+  note: "RSS feed discovered"
+  url: https://www.janaagraha.org/feed
+  method: rss
 ---
 
 Janaagraha Centre for Citizenship and Democracy was founded in December 2001 by Swati and Ramesh Ramanathan in Bangalore. It works to strengthen the relationship between urban citizens and local government, with a focus on ward-level democratic participation and municipal transparency.

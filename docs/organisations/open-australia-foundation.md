@@ -14,6 +14,12 @@ concepts:
   - e-government
   - accountability-sink
 last_checked: "2026-06-02"
+rss_feed: https://www.openaustraliafoundation.org.au/feed
+last_activity:
+  date: 2026-06-05
+  note: "RSS feed discovered"
+  url: https://www.openaustraliafoundation.org.au/feed
+  method: rss
 ---
 
 The OpenAustralia Foundation is a non-partisan charity whose work centres on making Australian parliamentary and government information accessible and usable. They build and maintain several well-known tools:

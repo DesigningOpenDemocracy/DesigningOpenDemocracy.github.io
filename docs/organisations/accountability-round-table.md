@@ -14,6 +14,12 @@ concepts:
   - accountability-sink
   - constitutional-democracy
   - liberal-democracy
+rss_feed: http://accountabilityrt.org/feed
+last_activity:
+  date: 2026-06-05
+  note: "RSS feed discovered"
+  url: http://accountabilityrt.org/feed
+  method: rss
 ---
 
 The Accountability Round Table is a non-partisan coalition of professionals with backgrounds across academia, law, politics, and journalism. Its focus is on the structural conditions that allow democratic accountability to function: transparency laws, integrity commissions, ministerial conduct standards, and parliamentary oversight.

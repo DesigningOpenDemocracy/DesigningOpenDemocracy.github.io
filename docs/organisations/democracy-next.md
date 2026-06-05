@@ -14,6 +14,10 @@ concepts:
   - deliberative-democracy
   - sortition
   - isegoria
+last_activity:
+  date: 2026-06-05
+  note: "Site verified active (no RSS feed found)"
+  method: manual
 ---
 
 DemocracyNext (demnext.org) is a research institute whose position is that sortition should *replace* elections as the central mechanism of democratic governance — not merely complement them. This distinguishes it from organisations that treat citizens' assemblies as an add-on to existing representative systems.

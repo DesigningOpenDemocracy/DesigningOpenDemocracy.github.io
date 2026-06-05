@@ -13,6 +13,12 @@ concepts:
   - democracy
   - representative-democracy
   - isegoria
+rss_feed: https://democracyincolour.org/feed
+last_activity:
+  date: 2026-06-05
+  note: "RSS feed discovered"
+  url: https://democracyincolour.org/feed
+  method: rss
 ---
 
 Democracy in Colour is a registered charity and advocacy organisation focused on racial justice in Australian democracy. Its focus is on *who* participates in democracy — addressing the structural barriers and systemic racism that shape whose voices are heard in political, media, and civic life — rather than procedural democratic reform.

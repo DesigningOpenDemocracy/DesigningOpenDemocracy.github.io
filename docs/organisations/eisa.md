@@ -13,6 +13,12 @@ concepts:
   - representative-democracy
   - democracy
   - accountability-sink
+rss_feed: https://www.eisa.org/feed
+last_activity:
+  date: 2026-06-05
+  note: "RSS feed discovered"
+  url: https://www.eisa.org/feed
+  method: rss
 ---
 
 EISA (Electoral Institute for Sustainable Democracy in Africa) is an independent, non-partisan organisation founded in 1996, headquartered in Johannesburg with a regional office in Abidjan, Côte d'Ivoire. It works across sub-Saharan Africa supporting electoral processes and democratic institution-building.

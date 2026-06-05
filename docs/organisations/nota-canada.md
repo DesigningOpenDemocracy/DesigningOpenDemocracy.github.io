@@ -13,6 +13,12 @@ concepts:
   - direct-democracy
   - representative-democracy
   - liquid-democracy
+rss_feed: https://nota.ca/feed
+last_activity:
+  date: 2026-06-05
+  note: "RSS feed discovered"
+  url: https://nota.ca/feed
+  method: rss
 ---
 
 The None of the Above Party (NOTA) is a Canadian provincial party registered in Ontario. Its candidates run as independents committed to direct democracy reforms rather than party-line voting. The party's platform centres on what it calls the 3Rs: Referendum (citizens can initiate binding referendums), Recall (voters can remove elected members between elections), and Responsible Government (structural accountability reforms).

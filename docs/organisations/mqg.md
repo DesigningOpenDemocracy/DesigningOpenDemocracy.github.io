@@ -13,6 +13,12 @@ concepts:
   - constitutional-democracy
   - accountability-sink
   - radical-transparency
+rss_feed: https://mqg.org.il/feed
+last_activity:
+  date: 2026-06-05
+  note: "RSS feed discovered"
+  url: https://mqg.org.il/feed
+  method: rss
 ---
 
 The Movement for Quality Government in Israel (MQG) has operated since 1990 as Israel's primary watchdog organisation for government accountability, anti-corruption, and rule of law. Its approach combines strategic litigation, Supreme Court petitions, investigative research, and civic education — holding the Israeli government accountable to its own stated legal and democratic standards.

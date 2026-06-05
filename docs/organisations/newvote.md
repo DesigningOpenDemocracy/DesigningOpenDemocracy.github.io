@@ -13,6 +13,12 @@ concepts:
   - direct-democracy
   - liquid-democracy
   - e-government
+rss_feed: https://newvote.org/blog/rss.xml
+last_activity:
+  date: 2026-06-05
+  note: "RSS feed discovered"
+  url: https://newvote.org/blog/rss.xml
+  method: rss
 ---
 
 NewVote is built on a simple philosophy: the world is better when everyone is empowered. The institute uses technology to operate across three democratic modes simultaneously:

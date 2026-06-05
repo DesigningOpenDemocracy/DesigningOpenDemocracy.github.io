@@ -15,6 +15,12 @@ location:
   latitude: 41.3874
   longitude: 2.1686
   name: Barcelona, Spain
+rss_feed: https://decidim.org/blog/feed.xml
+last_activity:
+  date: 2026-06-05
+  note: "RSS feed discovered"
+  url: https://decidim.org/blog/feed.xml
+  method: rss
 ---
 
 Decidim ("we decide" in Catalan) is a free, open-source participatory democracy framework built in Ruby on Rails, originally developed by Barcelona City Council and first deployed in January 2016 for the city's participatory action plan. It is now governed by the Decidim Association, an independent body separate from the city.
