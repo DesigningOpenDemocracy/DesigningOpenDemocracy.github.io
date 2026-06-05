@@ -56,7 +56,7 @@ The invariants recorded there are not immutable. Any document in this repo — i
   - `date`: ISO date (YYYY-MM-DD)
   - `note`: short human-readable description of the evidence
   - `url`: source URL (optional)
-  - `method` values: `manual` (human visited the site) | `rss` (feed discovered by script) | `ping` (automated HTTP probe — server responded, no content assessed) | `dod` (referenced in a DOD blog post) | `social` (social media activity)
+  - `method` values: `manual` (human visited the site) | `rss` (latest post date from RSS/Atom feed) | `sitemap` (page last-modified date from sitemap.xml) | `dod` (referenced in a DOD blog post) | `social` (social media activity)
 - **Key people** is an optional section. Add it only when named individuals are central to understanding the org's story (founders, government champions, notable critics) and the information is sourced. Link names to Wikipedia where a confirmed article exists. Do not add it just to fill the template — most orgs are better served by institutional description.
 
 ### Blog posts (`docs/blog/posts/`)

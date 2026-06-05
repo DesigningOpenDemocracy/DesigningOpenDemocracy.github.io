@@ -17,7 +17,7 @@ location:
 last_activity:
   date: 2026-06-05
   note: "Server still up (sitemap detected)"
-  method: ping
+  method: sitemap
 ---
 
 Loomio is a Wellington-based worker cooperative that develops open-source collaborative decision-making software. Founded in 2012, it grew out of Enspiral — a New Zealand network of social-enterprise workers — and the Occupy movement's need for better collective decision-making tools. The cooperative ownership model is unusual in civic tech: the people building the platform are also its members.

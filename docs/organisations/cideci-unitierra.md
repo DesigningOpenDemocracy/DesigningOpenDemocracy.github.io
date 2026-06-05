@@ -14,7 +14,7 @@ concepts:
 last_activity:
   date: 2024-05-21
   note: "Page last modified (from sitemap)"
-  method: ping
+  method: sitemap
 ---
 
 The Centro Indígena de Capacitación Integral – Universidad de la Tierra (CIDECI-Unitierra) is an indigenous education and documentation centre based in San Cristóbal de las Casas, Chiapas. It operates in close alignment with the Zapatista autonomous communities and serves as the primary hub for the Zapatista *Escuelitas* (Little Schools) — structured learning exchanges in which participants live with Zapatista families and study the autonomous governance system directly.

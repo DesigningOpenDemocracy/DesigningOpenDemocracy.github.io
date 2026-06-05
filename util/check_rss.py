@@ -232,7 +232,7 @@ def latest_from_feed(url, timeout=10, session=None):
     return entries[0]
 
 
-def update_last_activity(path, date_str, note, feed_url, post_url=None):
+def update_last_activity(path, date_str, note, feed_url, post_url=None, method="rss"):
     """Replace or append last_activity block in org frontmatter.
 
     Skips the update if an existing last_activity date is already newer or
@@ -274,7 +274,7 @@ def update_last_activity(path, date_str, note, feed_url, post_url=None):
         f"  date: {date_str}",
         f"  note: {json.dumps(note, ensure_ascii=False)}",
         f"  url: {url_field}",
-        "  method: rss",
+        f"  method: {method}",
     ]
     yaml_block = yaml_block.rstrip("\n") + "\n" + "\n".join(new_block) + "\n"
     with open(path, "w") as f:
@@ -354,7 +354,8 @@ def main():
                     d = latest_sitemap_lastmod(feed_url, timeout=args.timeout, session=session)
                     if d:
                         update_last_activity(org["path"], d.isoformat(),
-                                             "Page last modified (from sitemap)", feed_url)
+                                             "Page last modified (from sitemap)", feed_url,
+                                             method="sitemap")
                         print(f"SITEMAP  {d}")
                         result["latest_date"] = d.isoformat()
                     else:
