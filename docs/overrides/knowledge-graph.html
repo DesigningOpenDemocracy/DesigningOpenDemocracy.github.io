@@ -207,16 +207,14 @@
       }),
     ];
 
-    // Assign reveal_zoom by activity rank so the spread is always even,
-    // regardless of how recently the activity dates were last updated.
+    // Sort orgs by activity rank; reveal_zoom is assigned after cy.fit() so
+    // thresholds are always expressed as multiples of the actual fit zoom.
     var orgEls = elements.filter(function(el) { return el.data.type === 'organisation'; });
     orgEls.sort(function(a, b) {
       var da = a.data.activity_date || '', db = b.data.activity_date || '';
       return da > db ? -1 : da < db ? 1 : 0;
     });
-    orgEls.forEach(function(el, i) {
-      el.data.reveal_zoom = 0.7 + (orgEls.length > 1 ? i / (orgEls.length - 1) : 0) * 0.8;
-    });
+    var sortedOrgIds = orgEls.map(function(el) { return el.data.id; });
 
     var cy = cytoscape({
       container: container,
@@ -280,8 +278,17 @@
     }
 
     cy.fit();
-    updateZoom();
 
+    // Assign reveal_zoom as a multiple of the fit zoom so names are always
+    // hidden at the default view regardless of graph density.
+    // Most active org: 3× fit zoom. Least active: 8× fit zoom.
+    var fitZoom = cy.zoom();
+    sortedOrgIds.forEach(function(id, i) {
+      var t = sortedOrgIds.length > 1 ? i / (sortedOrgIds.length - 1) : 0;
+      cy.getElementById(id).data('reveal_zoom', fitZoom * (3 + t * 5));
+    });
+
+    updateZoom();
     cy.on('zoom', updateZoom);
 
     // Middle and right-click panning
