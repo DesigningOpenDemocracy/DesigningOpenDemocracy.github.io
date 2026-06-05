@@ -13,6 +13,16 @@ import re
 _nodes: dict = {}
 _edges: list = []
 
+
+def _best_activity_date(activity):
+    """Return the most recent ISO date string across all activity sources."""
+    if not activity or not isinstance(activity, dict):
+        return ''
+    dates = [str(v['date']) for v in activity.values()
+             if isinstance(v, dict) and v.get('date')]
+    return max(dates) if dates else ''
+
+
 _SEE_ALSO_RE = re.compile(
     r'##\s+See\s+[Aa]lso\b[^\n]*\n([\s\S]*?)(?=\n##\s|\Z)',
 )
@@ -82,6 +92,7 @@ def on_page_context(context, *, page, config, nav):
             'type': 'organisation',
             'status': page.meta.get('status', ''),
             'org_type': page.meta.get('type', ''),
+            'activity_date': _best_activity_date(page.meta.get('activity')),
             'url': f'/{url}',
         }
         for c in (page.meta.get('concepts') or []):
@@ -95,6 +106,7 @@ def on_page_context(context, *, page, config, nav):
             'label': page.title or slug,
             'type': 'project',
             'status': page.meta.get('status', ''),
+            'activity_date': _best_activity_date(page.meta.get('activity')),
             'url': f'/{url}',
         }
         for c in (page.meta.get('concepts') or []):

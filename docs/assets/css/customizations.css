@@ -661,7 +661,7 @@
 
 /* info panel */
 .kg-info {
-  position: fixed;
+  position: absolute;
   bottom: 1.5rem;
   right: 1.5rem;
   width: 250px;

@@ -50,14 +50,14 @@
     </div>
   </div>
 
-  <div id="kg-container"></div>
-
-  <div id="kg-info" class="kg-info kg-info--hidden">
-    <button id="kg-info-close" class="kg-info__close" aria-label="Close">&times;</button>
-    <span id="kg-info-badge" class="kg-info__badge"></span>
-    <h3 id="kg-info-title" class="kg-info__title"></h3>
-    <p id="kg-info-meta" class="kg-info__meta"></p>
-    <a id="kg-info-link" class="kg-info__link" href="#">View page &rarr;</a>
+  <div id="kg-container">
+    <div id="kg-info" class="kg-info kg-info--hidden">
+      <button id="kg-info-close" class="kg-info__close" aria-label="Close">&times;</button>
+      <span id="kg-info-badge" class="kg-info__badge"></span>
+      <h3 id="kg-info-title" class="kg-info__title"></h3>
+      <p id="kg-info-meta" class="kg-info__meta"></p>
+      <a id="kg-info-link" class="kg-info__link" href="#">View page &rarr;</a>
+    </div>
   </div>
 </div>
 
@@ -66,16 +66,45 @@
 (function () {
   'use strict';
 
-  // ── colours ───────────────────────────────────────────────────────────────
+  // ── colours & helpers ────────────────────────────────────────────────────
+  function lerp(a, b, t) { return Math.round(a + (b - a) * t); }
+
+  function blendToGrey(hex, t) {
+    var r = parseInt(hex.slice(1,3), 16), g = parseInt(hex.slice(3,5), 16), b = parseInt(hex.slice(5,7), 16);
+    var gr = 0x90;
+    return '#' + [lerp(r,gr,t), lerp(g,gr,t), lerp(b,gr,t)].map(function(x) {
+      return x.toString(16).padStart(2,'0');
+    }).join('');
+  }
+
   function bgColor(d) {
+    var base;
     if (d.type === 'concept') return '#3949ab';
     if (d.type === 'organisation') {
-      if (d.status === 'active')       return '#1565c0';
-      if (d.status === 'deregistered') return '#78909c';
-      return '#607d8b';
+      if (d.status === 'active')            base = '#1565c0';
+      else if (d.status === 'deregistered') base = '#78909c';
+      else                                  base = '#607d8b';
+    } else if (d.type === 'project') {
+      base = d.status === 'active' ? '#2e7d32' : '#66bb6a';
+    } else {
+      return '#9e9e9e';
     }
-    if (d.type === 'project') return d.status === 'active' ? '#2e7d32' : '#66bb6a';
-    return '#9e9e9e';
+    return blendToGrey(base, (d.stale_factor || 0) * 0.6);
+  }
+
+  var TYPE_EMOJI = {
+    'research': '🔬', 'advocacy': '📢', 'platform': '💻',
+    'civic_tech': '⚙️', 'practice': '🤝',
+    'party': '🗳️', 'political_party': '🗳️', 'political-party': '🗳️',
+    'political_movement': '✊', 'governance': '🏛️',
+    'philanthropy': '🌱', 'cooperative': '♻️',
+    'government': '🏢', 'education': '🎓',
+  };
+
+  function staleness(activity_date) {
+    if (!activity_date) return 1;
+    var days = (Date.now() - new Date(activity_date).getTime()) / 86400000;
+    return Math.min(1, Math.max(0, days / 730));
   }
 
   // ── stylesheet ────────────────────────────────────────────────────────────
@@ -160,7 +189,18 @@
     }
 
     const elements = [
-      ...graphData.nodes.map(n => ({ data: Object.assign({}, n) })),
+      ...graphData.nodes.map(function(n) {
+        var data = Object.assign({}, n);
+        if (data.type === 'organisation' && data.org_type) {
+          var emoji = TYPE_EMOJI[data.org_type];
+          if (emoji) data.label = emoji + ' ' + data.label;
+        }
+        var s = (data.type === 'organisation' || data.type === 'project')
+          ? staleness(data.activity_date) : 0;
+        data.base_font    = data.type === 'concept' ? 11 : 9 - s * 2.5;
+        data.stale_factor = s;
+        return { data: data };
+      }),
       ...graphData.edges.map(function(e, i) {
         return { data: { id: 'e' + i, source: e.source, target: e.target, type: e.type || 'relates_to' } };
       }),
@@ -217,13 +257,34 @@
 
     cy.fit();
 
-    // Zoom-invariant font size
+    // Zoom-invariant font size (per-node base_font respects staleness scaling)
     cy.on('zoom', function() {
       var z = cy.zoom();
-      cy.nodes('[type = "concept"]').style('font-size',      (11 / z) + 'px');
-      cy.nodes('[type = "organisation"]').style('font-size', ( 9 / z) + 'px');
-      cy.nodes('[type = "project"]').style('font-size',      ( 9 / z) + 'px');
+      cy.nodes().forEach(function(node) {
+        node.style('font-size', ((node.data('base_font') || 9) / z) + 'px');
+      });
     });
+
+    // Middle and right-click panning
+    var _panning = false, _panAnchor = {x:0,y:0}, _panOrigin = {x:0,y:0};
+    container.addEventListener('mousedown', function(e) {
+      if (e.button === 1 || e.button === 2) {
+        _panning = true;
+        _panAnchor = { x: e.clientX, y: e.clientY };
+        _panOrigin = { x: cy.pan().x, y: cy.pan().y };
+        e.preventDefault();
+      }
+    });
+    container.addEventListener('mousemove', function(e) {
+      if (!_panning) return;
+      cy.pan({ x: _panOrigin.x + e.clientX - _panAnchor.x, y: _panOrigin.y + e.clientY - _panAnchor.y });
+    });
+    ['mouseup', 'mouseleave'].forEach(function(ev) {
+      container.addEventListener(ev, function(e) {
+        if (ev === 'mouseleave' || e.button === 1 || e.button === 2) _panning = false;
+      });
+    });
+    container.addEventListener('contextmenu', function(e) { e.preventDefault(); });
 
     // ── info panel ────────────────────────────────────────────────────────
     var infoEl    = document.getElementById('kg-info');
@@ -236,7 +297,10 @@
       infoTitle.textContent = d.label;
       infoBadge.textContent = d.type + (d.status ? ' · ' + d.status : '');
       infoBadge.className   = 'kg-info__badge kg-info__badge--' + d.type;
-      infoMeta.textContent  = d.org_type || '';
+      var meta = [];
+      if (d.org_type) meta.push(d.org_type);
+      if (d.activity_date) meta.push('Last active: ' + d.activity_date);
+      infoMeta.textContent  = meta.join(' · ');
       infoLink.href         = d.url;
       infoEl.classList.remove('kg-info--hidden');
     }
