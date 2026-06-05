@@ -16,6 +16,7 @@ location:
   longitude: 6.9500
   name: Cologne, Germany
 rss_feed: https://www.democracy-international.org/rss.xml
+news_page: https://www.democracy-international.org/news
 ---
 
 Democracy International is a Cologne-based NGO registered as a German e.V. (Eingetragener Verein), founded in 2011. It advocates for direct democracy and citizen participation at local, national, and global levels, combining policy advocacy, support for activists, published research, and international convening.
