@@ -15,6 +15,10 @@ location:
   name: Toronto, Canada
 last_checked: "2026-05-29"
 activity:
+  social:
+    date: 2025-07-21
+    note: "Latest video: What is MASS LBP?"
+    url: https://www.youtube.com/watch?v=x-WbnLvrBBc
   sitemap:
     date: 2026-05-22
     note: Page last modified (from sitemap)

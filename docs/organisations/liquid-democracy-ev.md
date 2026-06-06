@@ -4,6 +4,7 @@ type: civic tech
 status: active
 country: DE
 website: https://liqd.net/en/
+news_page: https://liqd.net/en/blog/
 summary: "A Berlin-based non-profit developing open-source digital participation software — creators of Adhocracy and Adhocracy+, and operators of meinBerlin, Berlin's official participatory platform."
 concepts:
   - liquid-democracy
@@ -15,6 +16,10 @@ location:
   longitude: 13.4050
   name: Berlin, Germany
 activity:
+  manual:
+    date: 2026-05-28
+    note: "Latest post: Halbzeit – 6 Monate Freiwilligendienst bei Liquid Democracy e.V."
+    url: https://liqd.net/en/blog/
   sitemap:
     date: 2026-06-01
     note: Page last modified (from sitemap)

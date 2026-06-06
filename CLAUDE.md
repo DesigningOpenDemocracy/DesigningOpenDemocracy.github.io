@@ -52,6 +52,7 @@ The invariants recorded there are not immutable. Any document in this repo — i
 - `location: {latitude, longitude, name}` — required for the org to appear on the interactive map. Only `status: active` orgs are shown on the map.
 - The `organisation.html` template is **auto-applied** to all org pages via `hooks/org_template.py` — no need to set `template:` in frontmatter unless overriding.
 - `rss_feed: <url>` — optional; the org's RSS or Atom feed URL. Populated by `util/check_rss.py`.
+- `news_page: <url>` — optional; URL of the org's news or blog index page. Opt-in for `util/scrape_news.py`.
 - `related_orgs: [slug, slug]` — optional; list of org slugs with a direct relationship to this org. Rendered as orange edges in the knowledge graph. Declare on one side only — direction is normalised so duplicates are automatically suppressed.
 - `activity:` — optional dict of evidence sources, each keyed by method name. The build hook
   (`hooks/activity_selector.py`) picks the best entry for display using a priority order and
@@ -62,6 +63,10 @@ The invariants recorded there are not immutable. Any document in this repo — i
       date: 2026-03-04
       note: "Latest post: Final report on Community Consultation"
       url: https://...
+    scrape:
+      date: 2026-05-10
+      note: "Latest post: Democracy Forum 2026 announced"
+      url: https://example.org/news
     sitemap:
       date: 2026-06-04
       note: "Page last modified (from sitemap)"
@@ -70,12 +75,13 @@ The invariants recorded there are not immutable. Any document in this repo — i
       date: 2026-05-01
       note: "Visited site, confirmed active"
   ```
-  - `method` keys: `manual` | `rss` | `sitemap` | `dod` | `social`
-  - Priority order (highest first): `manual` > `dod` > `social` > `rss` > `sitemap`
-  - Staleness thresholds: `manual`/`dod` 730 d · `social`/`rss` 365 d · `sitemap` 180 d
+  - `method` keys: `manual` | `rss` | `scrape` | `sitemap` | `dod` | `social`
+  - Priority order (highest first): `manual` > `dod` > `social` > `rss` > `scrape` > `sitemap`
+  - Staleness thresholds: `manual`/`dod` 730 d · `social`/`rss`/`scrape` 365 d · `sitemap` 180 d
   - A source is skipped if older than its threshold; the next-priority fresh source wins
   - If all sources are stale, the most recent entry is shown regardless
   - `util/check_rss.py --update-activity` populates `rss` and `sitemap` entries automatically
+  - `util/scrape_news.py` populates `scrape` entries for orgs with `news_page:` set
 - **Key people** is an optional section. Add it only when named individuals are central to understanding the org's story (founders, government champions, notable critics) and the information is sourced. Link names to Wikipedia where a confirmed article exists. Do not add it just to fill the template — most orgs are better served by institutional description.
 
 ### Blog posts (`docs/blog/posts/`)
@@ -179,7 +185,7 @@ Periodic maintenance sync posts may be AI-authored if they meet all of the follo
 - `.org-sortable-table` — sortable org index table
 - `.org-ext-link` — small superscript ↗ link on org names pointing to the org's website
 - `.org-export-links` — download links row below the table (CSV / JSON / GeoJSON)
-- `.activity-method-chip.method-<source>` — coloured chip showing the activity evidence source (rss=orange, sitemap=purple, manual=green, dod=blue, social=pink)
+- `.activity-method-chip.method-<source>` — coloured chip showing the activity evidence source (rss=orange, sitemap=purple, manual=green, dod=blue, social=pink, scrape=teal)
 - `.hero-cta-btn` / `.hero-cta-primary` — home page call-to-action buttons
 
 ### URL gotcha
@@ -211,6 +217,14 @@ These are linked from the bottom of the org index table for researcher download.
   python util/check_rss.py --skip-existing    # skip orgs already with rss_feed:
   ```
   Probes 23 common feed URL paths per site. For real feeds, writes `activity.rss` with latest post date and title. For sitemaps (fallback), writes `activity.sitemap` with `<lastmod>` date. Never overwrites a newer existing entry for the same source.
+
+- `util/scrape_news.py` — scrapes news/blog index pages for orgs that lack a usable RSS feed. Opt-in: only runs for orgs with `news_page:` set in frontmatter. Extracts dates from machine-readable signals only (JSON-LD, OpenGraph, `<time datetime>`). Respects robots.txt. Writes `activity.scrape`.
+  ```
+  python util/scrape_news.py                  # all active orgs with news_page:
+  python util/scrape_news.py --all            # include inactive orgs
+  python util/scrape_news.py --slug loomio    # single org
+  python util/scrape_news.py --dry-run        # print results without writing
+  ```
 
 ### Org index table filters (`docs/overrides/organisations.html`)
 

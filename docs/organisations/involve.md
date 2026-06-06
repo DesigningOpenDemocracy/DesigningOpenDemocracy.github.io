@@ -28,6 +28,10 @@ Their work spans deliberative mini-publics (citizens' assemblies, juries), parti
 
 Involve occupies a thoughtful position in the field: supportive of participatory innovation but rigorous about the conditions under which it works and the ways it can be co-opted or superficialised.
 
+## Key people
+
+- **Sue Tibballs OBE** — Chief Executive from April 2026. Previously CEO of the Sheila McKechnie Foundation and Women in Sport; former Chair of the Fawcett Society and 38 Degrees. OBE for services to sport (2014). ([source](https://www.involve.org.uk/news-opinion/news/sue-tibballs-obe-joins-involve-our-chief-executive))
+
 ## Links
 
 - Website: [involve.org.uk](https://www.involve.org.uk)

@@ -13,6 +13,16 @@ concepts:
   - sortition
   - citizens-assembly
 rss_feed: https://www.yourparty.uk/feed
+activity:
+  social:
+    date: 2026-06-05
+    note: "Latest tweet: police accountability post"
+    url: https://x.com/thisisyourparty
+
+  rss:
+    date: 2026-06-05
+    note: "RSS feed active"
+    url: https://www.yourparty.uk/feed
 ---
 
 Your Party is a UK political party ([Wikipedia](https://en.wikipedia.org/wiki/Your_Party_(UK))) registered with the Electoral Commission in September 2025. It was announced by Jeremy Corbyn and Zarah Sultana following their departures from Labour, reaching 55,000 members by December 2025.

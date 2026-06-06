@@ -327,6 +327,8 @@ def update_activity_source(path, date_str, note, feed_url, post_url=None, method
             new_lines.extend(source_lines)
 
         yaml_block = "\n".join(new_lines)
+        if not yaml_block.endswith("\n"):
+            yaml_block += "\n"
     else:
         # No activity: block yet — append a fresh one
         new_block = ["activity:"] + source_lines

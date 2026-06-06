@@ -13,6 +13,12 @@ location:
   latitude: 48.8566
   longitude: 2.3522
   name: France
+news_page: https://www.democratieouverte.org/le-blog
+activity:
+  manual:
+    date: 2026-05-18
+    note: "Latest post: co-présidence engagée pour le renforcement de la démocratie"
+    url: https://www.democratieouverte.org/le-blog
 ---
 
 Démocratie Ouverte is a French non-partisan association of general interest that has, for over ten years, tested tools and methods and made proposals to public decision-makers to make governance more transparent, cooperative, and participative. It combines practical experimentation with policy advocacy and network convening.
