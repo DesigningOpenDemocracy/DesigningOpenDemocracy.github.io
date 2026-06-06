@@ -4,12 +4,6 @@ type: research
 status: active
 country: LB
 website: https://www.lcps-lebanon.org
-news_page: https://www.lcps-lebanon.org/en/press
-activity:
-  manual:
-    date: 2026-03-05
-    note: "Latest press item: القواعد الأميركيّة في مرمى النار (via Daraj Media)"
-    url: https://www.lcps-lebanon.org/en/press
 summary: "An independent Beirut-based think tank founded in 1989 producing policy research and advocacy on governance, political representation, decentralisation, and electoral reform in Lebanon and the Arab region."
 location:
   latitude: 33.8938
@@ -19,6 +13,12 @@ concepts:
   - democracy
   - constitutional-democracy
   - accountability-sink
+news_page: https://www.lcps-lebanon.org/en/press
+activity:
+  manual:
+    date: 2026-03-05
+    note: "Latest press item: القواعد الأميركيّة في مرمى النار (via Daraj Media)"
+    url: https://www.lcps-lebanon.org/en/press
 ---
 
 The Lebanese Center for Policy Studies (LCPS) is an independent, non-partisan think tank founded in 1989 in Beirut. It produces research and advocates for policies aimed at improving governance in Lebanon and the broader Arab region. Its priority areas include political representation, decentralisation, transparency in natural resource governance, job creation, and youth empowerment.
