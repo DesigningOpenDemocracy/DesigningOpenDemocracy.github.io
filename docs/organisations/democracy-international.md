@@ -33,6 +33,8 @@ Democracy International is a Cologne-based NGO registered as a German e.V. (Eing
 
 The organisation organises the **Global Forum on Modern Direct Democracy**, a recurring international conference for practitioners and researchers. The 2026 Global Forum is scheduled for Gaborone, Botswana — the first time it will be held in sub-Saharan Africa. Democracy International also publishes research on referendum systems, citizen initiative mechanisms, and democratic reform globally.
 
+They also design and run Citizens' Panels at the European level. Their **EU for Global** project (closed April 2026) engaged 665 citizens across 16 Citizens' Panels in eight EU member states — Germany, Romania, Malta, Greece, Denmark, Spain, Latvia, and Bulgaria — on the question of the EU's role and responsibility in the world. The closing event, LichtLabor Demokratie, was held at the Kulturbunker Köln-Mülheim ([source](https://www.democracy-international.org/news)).
+
 ## Links
 
 - Website: [democracy-international.org](https://www.democracy-international.org)
