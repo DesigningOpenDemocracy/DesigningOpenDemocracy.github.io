@@ -4,6 +4,7 @@ type: research
 status: active
 country: SK
 website: https://memo98.sk
+news_page: https://memo98.sk/articles/blog
 summary: "A Bratislava-based media monitoring and democratic civic engagement organisation with 25+ years of experience — monitoring media integrity during elections, researching disinformation, and supporting democratic consolidation in post-authoritarian contexts."
 location:
   latitude: 48.1486

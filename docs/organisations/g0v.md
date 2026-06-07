@@ -4,6 +4,7 @@ type: civic tech
 status: active
 country: TW
 website: https://g0v.tw
+news_page: https://g0v.tw/intl/en/event/
 last_checked: "2026-05-30"
 summary: "A Taiwanese civic tech community that forks government websites and services to make them more open, usable, and participatory — best known internationally for co-developing the vTaiwan deliberation platform."
 location:

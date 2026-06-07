@@ -4,6 +4,7 @@ type: research
 status: active
 country: CA
 website: https://participedia.net
+news_page: https://participediaproject.medium.com/
 summary: "A global open-access database and research platform cataloguing thousands of participatory democracy cases, methods, and organisations from around the world."
 location:
   latitude: 49.2827

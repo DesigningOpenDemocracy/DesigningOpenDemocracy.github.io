@@ -4,6 +4,7 @@ type: advocacy
 status: active
 country: AU
 website: https://www.crossroadsconversation.com.au
+news_page: https://www.crossroadsconversation.com.au/events
 summary: "An independent Melbourne-based civic network running deliberative democracy initiatives, including large-scale citizens assemblies and a national program to scale deliberative participation."
 concepts:
   - citizens-assembly

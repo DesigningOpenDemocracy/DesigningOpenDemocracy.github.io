@@ -4,6 +4,7 @@ type: advocacy
 status: active
 country: UA
 website: https://oporaua.org/en
+news_page: https://oporaua.org/en/announce
 summary: "Ukraine's leading non-partisan election observation organisation — monitoring elections since 2006, conducting parliamentary oversight, and co-founding the European Platform for Democratic Elections (EPDE)."
 location:
   latitude: 50.4501

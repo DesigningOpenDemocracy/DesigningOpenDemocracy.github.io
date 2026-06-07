@@ -4,6 +4,7 @@ type: philanthropy
 status: active
 country: US
 website: https://www.opensocietyfoundations.org
+news_page: https://www.opensocietyfoundations.org/newsroom
 summary: "The world's largest private funder of independent groups working for rights, equity, and justice — founded by George Soros in 1979, with grants, fellowships, and national foundations active across 100+ countries."
 concepts:
   - democracy

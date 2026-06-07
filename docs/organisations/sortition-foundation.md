@@ -4,6 +4,7 @@ type: advocacy
 status: active
 country: UK
 website: https://www.sortitionfoundation.org
+news_page: https://www.sortitionfoundation.org/updates
 summary: "A UK-based organisation advocating for the use of random selection (sortition) in democratic institutions, most prominently campaigning to replace the House of Lords with a randomly selected citizens' chamber."
 location:
   latitude: 55.9533

@@ -4,6 +4,7 @@ type: philanthropy
 status: active
 country: AU
 website: https://mckinnon.co
+news_page: https://mckinnon.co/insights
 summary: "A non-partisan Australian foundation working across all sides of politics to find common ground and practical pathways on major national challenges, with a focus on democratic and public sector reform."
 location:
   latitude: -37.8136

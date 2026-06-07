@@ -4,6 +4,7 @@ type: philanthropy
 status: active
 country: GB
 website: https://www.luminategroup.com
+news_page: https://luminategroup.com/news-and-insights
 summary: "A global philanthropic organisation funding civic technology, digital rights, independent media, and government transparency — spun out of the Omidyar Network in 2018 with a focus on open and accountable governance."
 concepts:
   - democracy

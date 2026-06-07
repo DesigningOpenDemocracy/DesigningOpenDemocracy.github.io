@@ -4,6 +4,7 @@ type: research
 status: active
 country: EU
 website: https://www.demnext.org
+news_page: https://www.demnext.org/news
 summary: "An international research institute focused on the theory and practice of sortition-based democracy — replacing elections with randomly selected assemblies as the primary decision-making mechanism."
 location:
   latitude: 55.6761

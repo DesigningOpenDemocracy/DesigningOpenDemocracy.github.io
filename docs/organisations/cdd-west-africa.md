@@ -4,6 +4,7 @@ type: research
 status: active
 country: NG
 website: https://www.cddwestafrica.org
+news_page: https://www.cddwestafrica.org/blog/
 summary: "An Abuja-based independent research and advocacy organisation focused on democratic governance and human security in West Africa — founded in 1997 to support Nigeria's democratic transition, now a regional hub for policy analysis, electoral integrity, and civil society capacity-building."
 location:
   latitude: 9.0579

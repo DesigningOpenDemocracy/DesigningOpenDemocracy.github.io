@@ -4,6 +4,7 @@ type: platform
 status: active
 country: TW
 website: https://vtaiwan.tw
+news_page: https://www.vtaiwan.tw/newsletters
 last_checked: "2026-05-30"
 summary: "A Taiwanese open-consultation platform (launched 2015) that uses Pol.is-based deliberation to surface consensus on contested policy. Influential in its early phase but never legally mandated; now continues as a volunteer-driven civic lab as the state's participation efforts moved to other platforms."
 location:

@@ -4,6 +4,7 @@ type: advocacy
 status: active
 country: RU
 website: https://fbk.info/en
+news_page: https://fbk.info/en/news/
 summary: "An anti-corruption and pro-democracy organisation founded by Alexei Navalny — producing high-profile investigations of Kremlin-linked corruption, now operating in exile after being designated 'extremist' (2021) and 'terrorist' (November 2025) by Russian authorities. Led by Yulia Navalnaya following Navalny's death in prison in February 2024."
 location:
   latitude: 55.7558
