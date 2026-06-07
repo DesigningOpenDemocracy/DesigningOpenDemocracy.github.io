@@ -277,6 +277,7 @@ def update_activity_source(path, date_str, note, feed_url, post_url=None, method
         f"    date: {date_str}",
         f"    note: {json.dumps(note, ensure_ascii=False)}",
         f"    url: {url_field}",
+        f"    checked: {TODAY}",
     ]
 
     if meta.get("activity"):
@@ -339,6 +340,103 @@ def update_activity_source(path, date_str, note, feed_url, post_url=None, method
     return True
 
 
+def write_checked_only(path, method, note=None):
+    """Add/update checked: <TODAY> on an activity source entry.
+
+    If the source entry doesn't exist, creates a minimal entry with note and
+    checked (no date/url).  If it exists, adds/updates only the checked: field
+    without touching date, note, or url.
+    """
+    import yaml as _yaml
+
+    with open(path, encoding="utf-8") as f:
+        content = f.read()
+    parts = content.split("---", 2)
+    if len(parts) < 3 or parts[0] != "":
+        return False
+    yaml_block, rest = parts[1], parts[2]
+    meta = _yaml.safe_load(yaml_block) or {}
+    activity = meta.get("activity") or {}
+
+    minimal = [f"  {method}:"]
+    if note:
+        minimal.append(f"    note: {json.dumps(note, ensure_ascii=False)}")
+    minimal.append(f"    checked: {TODAY}")
+
+    if not activity:
+        yaml_block = yaml_block.rstrip("\n") + "\nactivity:\n" + "\n".join(minimal) + "\n"
+
+    elif method not in activity:
+        # Append minimal entry into existing activity: block
+        lines = yaml_block.split("\n")
+        new_lines = []
+        in_activity = False
+        inserted = False
+        i = 0
+        while i < len(lines):
+            line = lines[i]
+            if re.match(r"^activity\s*:", line):
+                in_activity = True
+                new_lines.append(line)
+                i += 1
+                continue
+            if in_activity and line and not line.startswith(" "):
+                if not inserted:
+                    new_lines.extend(minimal)
+                    inserted = True
+                in_activity = False
+                new_lines.append(line)
+                i += 1
+                continue
+            new_lines.append(line)
+            i += 1
+        if in_activity and not inserted:
+            while new_lines and new_lines[-1] == "":
+                new_lines.pop()
+            new_lines.extend(minimal)
+        yaml_block = "\n".join(new_lines)
+
+    else:
+        # Source exists — update or insert the checked: line in its sub-block
+        lines = yaml_block.split("\n")
+        new_lines = []
+        in_this_source = False
+        checked_written = False
+        i = 0
+        while i < len(lines):
+            line = lines[i]
+            if re.match(rf"^  {method}\s*:", line):
+                in_this_source = True
+                new_lines.append(line)
+                i += 1
+                continue
+            if in_this_source:
+                # Another source block or top-level key ends this sub-block
+                if re.match(r"^  \w", line) or (line and not line.startswith("    ")):
+                    if not checked_written:
+                        new_lines.append(f"    checked: {TODAY}")
+                        checked_written = True
+                    in_this_source = False
+                elif re.match(r"^    checked\s*:", line):
+                    new_lines.append(f"    checked: {TODAY}")
+                    checked_written = True
+                    i += 1
+                    continue
+            new_lines.append(line)
+            i += 1
+        if in_this_source and not checked_written:
+            while new_lines and new_lines[-1] == "":
+                new_lines.pop()
+            new_lines.append(f"    checked: {TODAY}")
+        yaml_block = "\n".join(new_lines)
+
+    if not yaml_block.endswith("\n"):
+        yaml_block += "\n"
+    with open(path, "w", encoding="utf-8") as f:
+        f.write("---" + yaml_block + "---" + rest)
+    return True
+
+
 def load_orgs(slug_filter=None, include_inactive=False):
     orgs = []
     for path in sorted(glob.glob(os.path.join(ORGS_DIR, "*.md"))):
@@ -362,6 +460,7 @@ def load_orgs(slug_filter=None, include_inactive=False):
             "status": status,
             "rss_feed": meta.get("rss_feed") or "",
             "path": path,
+            "activity": meta.get("activity") or {},
         })
     return orgs
 
@@ -375,6 +474,8 @@ def main():
     parser.add_argument("--skip-existing", action="store_true", help="Skip orgs that already have rss_feed:")
     parser.add_argument("--update-activity", action="store_true",
                         help="Fetch each discovered (or existing) feed and update last_activity with latest post date/title")
+    parser.add_argument("--force", action="store_true",
+                        help="Probe all orgs even if recently checked (ignores activity.*.checked)")
     args = parser.parse_args()
 
     orgs = load_orgs(slug_filter=args.slug, include_inactive=args.all)
@@ -399,6 +500,24 @@ def main():
             print(f"  [{i:3d}/{len(orgs)}] SKIP  {slug} (already has rss_feed)")
             continue
 
+        # Skip orgs checked recently unless --force
+        if not args.force and args.update_activity:
+            activity = org.get("activity", {})
+            recent_age = None
+            for chk_method in ("rss", "sitemap"):
+                entry = activity.get(chk_method) or {}
+                chk_date = parse_date(str(entry.get("checked", "") or ""))
+                if chk_date:
+                    age = (datetime.today().date() - chk_date).days
+                    if age <= 7:
+                        recent_age = age
+                        break
+            if recent_age is not None:
+                print(f"  [{i:3d}/{len(orgs)}] {slug} … SKIPPED (checked {recent_age}d ago)")
+                skipped.append(org)
+                results.append({**org, "feed_url": None, "skipped_checked": True})
+                continue
+
         # Use existing rss_feed if present, otherwise probe
         feed_url = org["rss_feed"] or probe_feeds(org["website"], timeout=args.timeout, session=session)
 
@@ -416,6 +535,7 @@ def main():
                         print(f"SITEMAP  {d}")
                         result["latest_date"] = d.isoformat()
                     else:
+                        write_checked_only(org["path"], "sitemap", "Sitemap found, no lastmod")
                         print(f"SITEMAP (no lastmod)  {feed_url}")
                 else:
                     d, title, link, http_ok = latest_from_feed(feed_url, timeout=args.timeout, session=session)
@@ -438,6 +558,8 @@ def main():
                 print(f"FOUND  {feed_url}")
             found.append(result)
         else:
+            if args.update_activity:
+                write_checked_only(org["path"], "rss", "No feed found")
             print("not found")
             not_found.append(result)
 

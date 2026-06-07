@@ -63,25 +63,30 @@ The invariants recorded there are not immutable. Any document in this repo — i
       date: 2026-03-04
       note: "Latest post: Final report on Community Consultation"
       url: https://...
+      checked: 2026-06-07       # last probe date (written automatically by check_rss.py)
     scrape:
       date: 2026-05-10
       note: "Latest post: Democracy Forum 2026 announced"
       url: https://example.org/news
+      checked: 2026-06-07
     sitemap:
       date: 2026-06-04
       note: "Page last modified (from sitemap)"
       url: https://...
+      checked: 2026-06-07
     manual:
       date: 2026-05-01
       note: "Visited site, confirmed active"
+      checked: 2026-05-01       # same as date for manual reviews
   ```
   - `method` keys: `manual` | `rss` | `scrape` | `sitemap` | `dod` | `social`
+  - `checked:` — optional; the date the source was last probed, regardless of whether new content was found. Written automatically by `check_rss.py`, `scrape_news.py`, and `review_orgs.py`. Entries with no `date` but a `checked` date mean the source was probed but found nothing.
   - Priority order (highest first): `manual` > `dod` > `social` > `rss` > `scrape` > `sitemap`
   - Staleness thresholds: `manual`/`dod` 730 d · `social`/`rss`/`scrape` 365 d · `sitemap` 180 d
   - A source is skipped if older than its threshold; the next-priority fresh source wins
   - If all sources are stale, the most recent entry is shown regardless
-  - `util/check_rss.py --update-activity` populates `rss` and `sitemap` entries automatically
-  - `util/scrape_news.py` populates `scrape` entries for orgs with `news_page:` set
+  - `util/check_rss.py --update-activity` populates `rss` and `sitemap` entries automatically; re-runs skip orgs checked within 7 days (use `--force` to override)
+  - `util/scrape_news.py` populates `scrape` entries for orgs with `news_page:` set; same skip behaviour
 - **Key people** is an optional section. Add it only when named individuals are central to understanding the org's story (founders, government champions, notable critics) and the information is sourced. Link names to Wikipedia where a confirmed article exists. Do not add it just to fill the template — most orgs are better served by institutional description.
 
 ### Blog posts (`docs/blog/posts/`)
