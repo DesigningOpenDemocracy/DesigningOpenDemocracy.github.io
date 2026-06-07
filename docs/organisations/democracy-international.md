@@ -27,6 +27,7 @@ activity:
     date: 2026-06-05
     note: "RSS feed active"
     url: https://www.democracy-international.org/rss.xml
+    checked: 2026-06-07
 ---
 
 Democracy International is a Cologne-based NGO registered as a German e.V. (Eingetragener Verein), founded in 2011. It advocates for direct democracy and citizen participation at local, national, and global levels, combining policy advocacy, support for activists, published research, and international convening.

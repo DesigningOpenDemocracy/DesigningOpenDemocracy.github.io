@@ -19,6 +19,7 @@ activity:
     date: 2026-01-03
     note: "Latest post: Redescribing Democracy: a Review"
     url: "https://canberra-alliance.org.au/redescribing-democracy-a-review/?utm_source=rss&utm_medium=rss&utm_campaign=redescribing-democracy-a-review"
+    checked: 2026-06-07
 ---
 
 CAPaD is an ACT-based community organisation founded in 2015, focused on making elected representatives more accountable and democratic participation more meaningful for Canberra residents. It is independently funded — not by political parties, government, or corporations — and run by a voluntary committee.

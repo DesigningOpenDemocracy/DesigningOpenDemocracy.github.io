@@ -12,6 +12,10 @@ location:
 concepts:
   - citizens-assembly
   - sortition
+activity:
+  rss:
+    note: "No feed found"
+    checked: 2026-06-07
 ---
 
 The Centre for Deliberative Democracy and Global Governance (CDDGG) is a research centre within the University of Canberra's Faculty of Business, Government and Law. Founded in 2014 (with earlier roots at ANU), it is one of the leading academic centres for deliberative democracy research globally.

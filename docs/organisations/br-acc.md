@@ -13,6 +13,10 @@ concepts:
   - e-government
   - radical-transparency
   - accountability-sink
+activity:
+  rss:
+    note: "No feed found"
+    checked: 2026-06-07
 ---
 
 br/acc (World Transparency Graph) is an open-source project by Brazilian developer Bruno Clz that addresses a fundamental problem in civic accountability: government data is technically "open" but so fragmented across dozens of separate portals that it is practically inaccessible.

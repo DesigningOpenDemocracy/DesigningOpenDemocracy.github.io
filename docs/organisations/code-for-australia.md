@@ -16,6 +16,7 @@ activity:
   sitemap:
     date: 2024-06-28
     note: "Page last modified (from sitemap)"
+    checked: 2026-06-07
 ---
 
 Code for Australia (CfA) is a civic tech organisation founded in 2014, modelled on Code for America. Its primary program is a **fellowship**: placing technologists (developers, designers, data scientists) inside government agencies and non-profits for short-term engagements to help solve civic problems through digital tools.

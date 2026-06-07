@@ -17,6 +17,7 @@ activity:
   sitemap:
     date: 2026-06-05
     note: "Server still up (sitemap detected)"
+    checked: 2026-06-07
 ---
 
 The Centre for Democracy and Development (CDD West Africa) is an independent, non-profit research and advocacy organisation founded in 1997 (and registered in Nigeria in 1999) to support democratic governance and people-centred development across West Africa. It was established during Nigeria's transition from military to civilian rule and has since grown into a regional institution.
