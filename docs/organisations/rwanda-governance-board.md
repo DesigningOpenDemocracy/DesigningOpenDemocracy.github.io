@@ -4,6 +4,7 @@ type: research
 status: active
 country: RW
 website: https://www.rgb.rw
+news_page: https://www.rgb.rw/updates/news
 summary: "Rwanda's government body for governance research and oversight — publishing annual governance scorecards, studying decentralisation and citizen participation, and administering the Ubudehe community classification system. Included for its governance design research, not as an independent watchdog of the Kagame government."
 location:
   latitude: -1.9441
@@ -18,8 +19,15 @@ activity:
     note: "No feed found"
     checked: 2026-06-07
   manual:
-    date: 2026-06-07
+    date: 2026-05-29
     note: "website loaded. News page at https://www.rgb.rw/updates/news . Latest news  Friday, 29 May, 2026  'Former Ethipia Prime Minister H.E. Hailemariam visits RGB'"
+    url: https://www.rgb.rw/updates/news
+    checked: 2026-06-07
+
+  scrape:
+    date: 2026-05-29
+    note: "Latest news page scraped"
+    url: https://www.rgb.rw/updates/news
     checked: 2026-06-07
 ---
 

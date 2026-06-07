@@ -24,6 +24,7 @@ activity:
   manual:
     date: 2026-06-07
     note: "Unsure how to read the blog section for year last posted. However https://github.com/CitizensFoundation/your-priorities-app has activity 3 weeks ago."
+    url: https://github.com/CitizensFoundation/your-priorities-app
     checked: 2026-06-07
 ---
 

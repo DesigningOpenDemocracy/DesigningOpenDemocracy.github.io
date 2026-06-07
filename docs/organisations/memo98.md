@@ -4,6 +4,7 @@ type: research
 status: active
 country: SK
 website: https://memo98.sk
+news_page: https://memo98.sk/articles/blog
 summary: "A Bratislava-based media monitoring and democratic civic engagement organisation with 25+ years of experience — monitoring media integrity during elections, researching disinformation, and supporting democratic consolidation in post-authoritarian contexts."
 location:
   latitude: 48.1486
@@ -18,8 +19,15 @@ activity:
     date: 2025-12-15
     note: Page last modified (from sitemap)
   manual:
-    date: 2026-06-07
+    date: 2025-12-20
     note: "website loaded. Blog at https://memo98.sk/articles/blog  20. December 2025 ' Moldova Story: How a Small Republic Resisted Hybrid War '"
+    url: https://memo98.sk/articles/blog
+    checked: 2026-06-07
+
+  scrape:
+    date: 2025-12-20
+    note: "Latest news page scraped"
+    url: https://memo98.sk/articles/blog
     checked: 2026-06-07
 ---
 

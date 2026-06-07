@@ -20,8 +20,9 @@ activity:
     url: https://en.idi.org.il/sitemap.xml
     checked: 2026-06-07
   manual:
-    date: 2026-06-07
+    date: 2026-06-03
     note: "Website loaded. News in mainpage. https://en.idi.org.il/hurvitz/2026/ June 2-3, 2026 which points to https://www.youtube.com/watch?v=bkYhEo0j54w ' The Israel Democracy Institute's annual Eli Hurvitz Conference on Economy and Society 2026 | Recap '"
+    url: https://en.idi.org.il/hurvitz/2026/
     checked: 2026-06-07
 ---
 

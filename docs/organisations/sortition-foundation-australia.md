@@ -4,6 +4,7 @@ type: advocacy
 status: active
 country: AU
 website: https://www.sortitionfoundation.org/become_a_member_australia
+news_page: https://www.sortitionfoundation.org/updates
 summary: "The Australian chapter of the UK-based Sortition Foundation, running monthly community meetings and providing sortition recruitment services for Australian democratic processes — including Victorian council deliberations, federal electorate pilots, and national citizen assemblies."
 location:
   latitude: -37.7749
@@ -21,8 +22,9 @@ activity:
     note: "No feed found"
     checked: 2026-06-07
   manual:
-    date: 2026-06-07
+    date: 2026-02-26
     note: "website loaded. News page at https://www.sortitionfoundation.org/updates 26 February, 2026 'Frontiers of Democratic Lotteries Workshop'"
+    url: https://www.sortitionfoundation.org/updates
     checked: 2026-06-07
 ---
 

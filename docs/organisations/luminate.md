@@ -4,6 +4,7 @@ type: philanthropy
 status: active
 country: GB
 website: https://www.luminategroup.com
+news_page: https://luminategroup.com/news-and-insights
 summary: "A global philanthropic organisation funding civic technology, digital rights, independent media, and government transparency — spun out of the Omidyar Network in 2018 with a focus on open and accountable governance."
 concepts:
   - democracy
@@ -19,8 +20,12 @@ activity:
     note: "No feed found"
     checked: 2026-06-07
   manual:
-    date: 2026-06-07
+    date: 2025-07-22
     note: "website loaded. Has a news page at https://luminategroup.com/news-and-insights . Latest seems to be 22 July 2025 'How storytelling can bring us closer to tech justice'"
+    url: https://luminategroup.com/news-and-insights
+    checked: 2026-06-07
+  scrape:
+    note: "News page found, no machine-readable date"
     checked: 2026-06-07
 ---
 

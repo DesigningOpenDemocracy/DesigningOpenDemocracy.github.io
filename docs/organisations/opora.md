@@ -4,6 +4,7 @@ type: advocacy
 status: active
 country: UA
 website: https://oporaua.org/en
+news_page: https://oporaua.org/en/announce
 summary: "Ukraine's leading non-partisan election observation organisation — monitoring elections since 2006, conducting parliamentary oversight, and co-founding the European Platform for Democratic Elections (EPDE)."
 location:
   latitude: 50.4501
@@ -18,8 +19,12 @@ activity:
     note: "No feed found"
     checked: 2026-06-07
   manual:
-    date: 2026-06-07
+    date: 2026-05-20
     note: "website loaded. https://oporaua.org/en/announce has  May 20, 2026 'REPORT. Dialogue with the Ukrainian Community in Ireland'"
+    url: https://oporaua.org/en/announce
+    checked: 2026-06-07
+  scrape:
+    note: "News page found, no machine-readable date"
     checked: 2026-06-07
 ---
 

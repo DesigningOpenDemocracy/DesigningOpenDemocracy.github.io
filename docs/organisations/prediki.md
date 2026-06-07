@@ -4,6 +4,7 @@ type: platform
 status: active
 country: AT
 website: https://www.prediki.com
+news_page: https://www.prediki.com/meta/en/Management-by-Predictions-(Prediki-Blog-in-English)/
 summary: "An Austrian prediction market platform that aggregates collective intelligence on political and policy questions — users make structured predictions with reasons, and the system surfaces the informed consensus."
 location:
   latitude: 48.2082
@@ -18,8 +19,12 @@ activity:
     note: "No feed found"
     checked: 2026-06-07
   manual:
-    date: 2026-06-07
+    date: 2022-09-30
     note: "website active. News link https://www.prediki.com/meta/en/Management-by-Predictions-(Prediki-Blog-in-English)/ . Last is at  Vienna, 30 September 2022 'Renewed Controversy About Election Polls'"
+    url: https://www.prediki.com/meta/en/Management-by-Predictions-(Prediki-Blog-in-English)/
+    checked: 2026-06-07
+  scrape:
+    note: "News page found, no machine-readable date"
     checked: 2026-06-07
 ---
 

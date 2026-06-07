@@ -4,6 +4,7 @@ type: advocacy
 status: active
 country: CN
 website: https://www.hkdc.us
+news_page: https://www.hkdc.us/news
 summary: "A Washington DC-based organisation advocating for the restoration of democratic governance in Hong Kong — specifically the election-based accountability system promised under One Country, Two Systems, which was effectively dismantled following the 2020 National Security Law."
 location:
   latitude: 22.3193
@@ -20,8 +21,12 @@ activity:
     url: https://www.hkdc.us/sitemap.xml
     checked: 2026-06-07
   manual:
-    date: 2026-06-07
+    date: 2026-02-10
     note: "website loaded. News is https://www.hkdc.us/news where latest is February 10, 2026 'Crossing a New Line: The Conviction of Anna Kwok’s Father'"
+    url: https://www.hkdc.us/news
+    checked: 2026-06-07
+  scrape:
+    note: "News page found, no machine-readable date"
     checked: 2026-06-07
 ---
 

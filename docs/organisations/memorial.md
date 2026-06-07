@@ -4,6 +4,7 @@ type: research
 status: active
 country: RU
 website: https://www.memorial.de
+news_page: https://www.memorial.de/nachrichten
 summary: "Russia's best-known human rights and historical memory organisation — documenting Soviet-era repression and ongoing abuses for 35 years. Liquidated by Russian courts in December 2021 and designated 'extremist' in April 2026; continues operating in exile through its international chapters, including Germany."
 last_checked: "2026-06-02"
 location:
@@ -20,8 +21,15 @@ activity:
     note: Server still up (sitemap detected)
     checked: 2026-06-07
   manual:
-    date: 2026-06-07
+    date: 2026-06-04
     note: "website loaded. It's german... but this looks like news https://www.memorial.de/nachrichten wehere latest news is 04.06.2026 'Asat Miftachov wird im Lager gefoltert'"
+    url: https://www.memorial.de/nachrichten
+    checked: 2026-06-07
+
+  scrape:
+    date: 2026-06-04
+    note: "Latest news page scraped"
+    url: https://www.memorial.de/nachrichten
     checked: 2026-06-07
 ---
 

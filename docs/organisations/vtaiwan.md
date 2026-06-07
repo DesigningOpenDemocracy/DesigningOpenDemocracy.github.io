@@ -4,6 +4,7 @@ type: platform
 status: active
 country: TW
 website: https://vtaiwan.tw
+news_page: https://www.vtaiwan.tw/newsletters
 last_checked: "2026-05-30"
 summary: "A Taiwanese open-consultation platform (launched 2015) that uses Pol.is-based deliberation to surface consensus on contested policy. Influential in its early phase but never legally mandated; now continues as a volunteer-driven civic lab as the state's participation efforts moved to other platforms."
 location:
@@ -20,8 +21,12 @@ activity:
     note: "No feed found"
     checked: 2026-06-07
   manual:
-    date: 2026-06-07
+    date: 2026-06-05
     note: "website loaded. https://www.vtaiwan.tw/newsletters is it's news page. Latest is June 5, 2026 'vTaiwan Newsletter Issue Zero'. Its a mirror of their substack located at https://vtaiwantw.substack.com/p/vtaiwan-newsletter-issue-zero"
+    url: https://vtaiwantw.substack.com/p/vtaiwan-newsletter-issue-zero
+    checked: 2026-06-07
+  scrape:
+    note: "News page found, no machine-readable date"
     checked: 2026-06-07
 ---
 

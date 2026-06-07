@@ -4,6 +4,7 @@ type: philanthropy
 status: active
 country: AU
 website: https://mckinnon.co
+news_page: https://mckinnon.co/insights
 summary: "A non-partisan Australian foundation working across all sides of politics to find common ground and practical pathways on major national challenges, with a focus on democratic and public sector reform."
 location:
   latitude: -37.8136
@@ -18,8 +19,15 @@ activity:
     date: 2026-06-04
     note: Page last modified (from sitemap)
   manual:
-    date: 2026-06-07
+    date: 2026-06-03
     note: "website loaded. https://mckinnon.co/insights is it's news page. Latest news is 03 JUN 2026 'McKinnon Political Leader of the Year 2025 - Federal – Shortlisted nominees'"
+    url: https://mckinnon.co/insights
+    checked: 2026-06-07
+
+  scrape:
+    date: 2026-03-31
+    note: "Latest post: Insights"
+    url: https://mckinnon.co/insights
     checked: 2026-06-07
 ---
 

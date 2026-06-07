@@ -4,6 +4,7 @@ type: advocacy
 status: active
 country: AU
 website: https://www.crossroadsconversation.com.au
+news_page: https://www.crossroadsconversation.com.au/events
 summary: "An independent Melbourne-based civic network running deliberative democracy initiatives, including large-scale citizens assemblies and a national program to scale deliberative participation."
 concepts:
   - citizens-assembly
@@ -21,6 +22,13 @@ activity:
   manual:
     date: 2026-06-07
     note: "Website loaded. https://www.crossroadsconversation.com.au/events says next event is at  Tuesday 30 June 2026  'The decline of democracy and the rise of the far-right'"
+    url: https://www.crossroadsconversation.com.au/events
+    checked: 2026-06-07
+
+  scrape:
+    date: 2026-06-30
+    note: "Latest news page scraped"
+    url: https://www.crossroadsconversation.com.au/events
     checked: 2026-06-07
 ---
 

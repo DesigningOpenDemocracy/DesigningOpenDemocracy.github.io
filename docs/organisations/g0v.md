@@ -4,6 +4,7 @@ type: civic tech
 status: active
 country: TW
 website: https://g0v.tw
+news_page: https://g0v.tw/intl/en/event/
 last_checked: "2026-05-30"
 summary: "A Taiwanese civic tech community that forks government websites and services to make them more open, usable, and participatory — best known internationally for co-developing the vTaiwan deliberation platform."
 location:
@@ -21,6 +22,10 @@ activity:
   manual:
     date: 2026-06-07
     note: "website loaded. FYI they have an english version at https://g0v.tw/intl/en/ . In https://g0v.tw/intl/en/event/ there is a calendar where there appears to be various events."
+    url: https://g0v.tw/intl/en/event/
+    checked: 2026-06-07
+  scrape:
+    note: "News page found, no machine-readable date"
     checked: 2026-06-07
 ---
 

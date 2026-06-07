@@ -4,6 +4,7 @@ type: research
 status: active
 country: NG
 website: https://www.cddwestafrica.org
+news_page: https://www.cddwestafrica.org/blog/
 summary: "An Abuja-based independent research and advocacy organisation focused on democratic governance and human security in West Africa — founded in 1997 to support Nigeria's democratic transition, now a regional hub for policy analysis, electoral integrity, and civil society capacity-building."
 location:
   latitude: 9.0579
@@ -19,8 +20,12 @@ activity:
     note: "Server still up (sitemap detected)"
     checked: 2026-06-07
   manual:
-    date: 2026-06-07
+    date: 2026-06-04
     note: "They got a blog at https://www.cddwestafrica.org/blog/ which has a post on 4 June 2026 : Reconciliation Is Not Deradicalisation: Rethinking the Role of Faith Community Leaders in Operation Safe Corridor"
+    url: https://www.cddwestafrica.org/blog/
+    checked: 2026-06-07
+  scrape:
+    note: "News page found, no machine-readable date"
     checked: 2026-06-07
 ---
 

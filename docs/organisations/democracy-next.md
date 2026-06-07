@@ -4,6 +4,7 @@ type: research
 status: active
 country: EU
 website: https://www.demnext.org
+news_page: https://www.demnext.org/news
 summary: "An international research institute focused on the theory and practice of sortition-based democracy — replacing elections with randomly selected assemblies as the primary decision-making mechanism."
 location:
   latitude: 55.6761
@@ -19,8 +20,15 @@ activity:
     date: 2026-06-04
     note: Page last modified (from sitemap)
   manual:
-    date: 2026-06-07
+    date: 2026-01-02
     note: "website loaded. https://www.demnext.org/news mentions www.theartnewspaper.com/2026/01/02/uk-museums-embrace-citizens-assemblies-to-frame-their-futures 2 January 2026 'How UK museums are embracing citizens’ assemblies to help frame their futures'"
+    url: https://www.demnext.org/news
+    checked: 2026-06-07
+
+  scrape:
+    date: 2026-03-27
+    note: "Latest news page scraped"
+    url: https://www.demnext.org/news
     checked: 2026-06-07
 ---
 
