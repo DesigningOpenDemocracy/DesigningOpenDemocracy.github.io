@@ -143,6 +143,7 @@ def build_llms_txt(site_url):
         f"- Concept index: {site_url}/concepts/",
         f"- Knowledge graph (org↔concept relationships): {site_url}/graph/",
         f"- Blog (event posts, meetup summaries): {site_url}/blog/",
+        f"- Blog RSS feed (subscribe for new posts): {site_url}/feed_rss_created.xml",
         f"- About / philosophy: {site_url}/about/",
         f"- DOD's own projects (wiki, tools, research): {site_url}/community/",
         "",

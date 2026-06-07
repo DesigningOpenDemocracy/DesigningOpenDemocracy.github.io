@@ -245,10 +245,13 @@ def on_pre_build(config):
     os.makedirs(OUT_DIR, exist_ok=True)
     orgs = load_orgs()
     site_url = (config.get("site_url") or "").rstrip("/")
+    all_activity_dates = [_best_activity(o["activity"])[0] for o in orgs]
+    last_activity_date = max((d for d in all_activity_dates if d), default="")
     meta = {
         "generated_at": datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"),
         "source": site_url or "https://designingopendemocracy.com",
         "org_count": len(orgs),
+        "last_activity_date": last_activity_date,
     }
     write_orgs_csv(orgs)
     write_edge_list_csv(orgs)
