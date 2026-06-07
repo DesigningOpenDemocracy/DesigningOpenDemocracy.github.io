@@ -19,6 +19,7 @@ import argparse
 import glob
 import json
 import os
+import random
 import re
 import sys
 import webbrowser
@@ -203,6 +204,26 @@ def update_status_field(path, new_status):
     return True
 
 
+SOURCE_FILTERS = [
+    ("rss",     "RSS stale or missing (>1 year)",       365),
+    ("scrape",  "Scrape stale or missing (>1 year)",    365),
+    ("sitemap", "Sitemap stale or missing (>6 months)", 180),
+    ("social",  "Social stale or missing (>1 year)",    365),
+    ("dod",     "DOD entry stale or missing (>2 years)",730),
+]
+
+
+def source_stale(activity, method, threshold_days):
+    """True if the source has no date entry or its date exceeds the threshold."""
+    entry = (activity or {}).get(method)
+    if not entry:
+        return True
+    d = parse_date(str(entry.get("date", "") or ""))
+    if not d:
+        return True
+    return (date.today() - d).days > threshold_days
+
+
 def prompt_scope(orgs):
     """Ask the user which orgs to review; return the filtered list."""
     never = [o for o in orgs if not (o["activity"] or {}).get("manual")]
@@ -235,6 +256,61 @@ def prompt_scope(orgs):
         if choice == "4":
             return stale_2yr
         print("Please enter 1, 2, 3, or 4.")
+
+
+def prompt_source_filter(orgs):
+    """Optionally AND-filter the org list by activity source staleness."""
+    no_auto = [
+        o for o in orgs
+        if not any(
+            (o["activity"] or {}).get(m, {}).get("date")
+            for m in ("rss", "scrape", "sitemap", "social", "dod")
+        )
+    ]
+
+    print()
+    print("Also filter by activity source? (AND-combined with scope above)")
+    print(f"  [0] No additional filter")
+    for i, (method, label, days) in enumerate(SOURCE_FILTERS, 1):
+        n = sum(1 for o in orgs if source_stale(o["activity"], method, days))
+        print(f"  [{i}] {label:<44} ({n} orgs)")
+    print(f"  [6] No automated data at all                  ({len(no_auto)} orgs)")
+    print()
+
+    while True:
+        choice = input("Choice [0-6]: ").strip()
+        if choice == "0":
+            return orgs
+        if choice in ("1", "2", "3", "4", "5"):
+            method, label, days = SOURCE_FILTERS[int(choice) - 1]
+            return [o for o in orgs if source_stale(o["activity"], method, days)]
+        if choice == "6":
+            return no_auto
+        print("Please enter 0-6.")
+
+
+def prompt_sample(orgs):
+    """Optionally draw a random sample from the filtered list."""
+    print()
+    n = len(orgs)
+    while True:
+        raw = input(f"  How many to review? (Enter for all {n}, or a number): ").strip()
+        if not raw:
+            return orgs
+        try:
+            k = int(raw)
+        except ValueError:
+            print("  Please enter a whole number or press Enter.")
+            continue
+        if k <= 0:
+            print("  Please enter a number greater than 0.")
+            continue
+        if k >= n:
+            print(f"  ({k} ≥ {n} — reviewing all.)")
+            return orgs
+        sample = random.sample(orgs, k)
+        print(f"  Sampled {k} orgs at random.")
+        return sample
 
 
 def review_org(org, index, total):
@@ -327,6 +403,10 @@ def main():
         print(f"Reviewing {len(to_review)} orgs with no or stale manual review (>{MANUAL_STALE_DAYS}d).")
     else:
         to_review = prompt_scope(orgs)
+        if to_review:
+            to_review = prompt_source_filter(to_review)
+        if to_review:
+            to_review = prompt_sample(to_review)
 
     if not to_review:
         print("No orgs to review in selected scope.")
