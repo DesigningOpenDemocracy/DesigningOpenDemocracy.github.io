@@ -11,6 +11,7 @@ Read **CLAUDE.md** first for site conventions and curation standards.
 
 ```bash
 # 1. automated data collection (no input needed)
+# re-runs skip orgs checked within 7 days; add --force to probe everything
 python util/check_rss.py --update-activity
 python util/scrape_news.py
 python util/check_urls.py
@@ -107,8 +108,9 @@ python util/check_rss.py --update-activity
 ```
 
 Tries 23 common feed paths per site. Writes `activity.rss` with the latest
-post date and title, or `activity.sitemap` as a fallback (confirms the site
-is alive but carries less weight). Takes a few minutes for the full set.
+post date and title, or `activity.sitemap` as a fallback. Also writes
+`activity.*.checked` with today's date on every org probed — re-runs within
+7 days skip those orgs automatically. Use `--force` to probe everything.
 
 **Scrape news pages** (orgs that have `news_page:` set):
 

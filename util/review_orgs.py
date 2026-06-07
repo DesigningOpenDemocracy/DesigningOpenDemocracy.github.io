@@ -124,6 +124,7 @@ def write_manual_activity(path, date_str, note):
         "  manual:",
         f"    date: {date_str}",
         f"    note: {json.dumps(note, ensure_ascii=False)}",
+        f"    checked: {date_str}",
     ]
 
     if meta.get("activity"):

@@ -244,6 +244,7 @@ def update_activity_source(path, date_str, note, url, method="scrape"):
         f"    date: {date_str}",
         f"    note: {json.dumps(note, ensure_ascii=False)}",
         f"    url: {url}",
+        f"    checked: {TODAY}",
     ]
 
     if meta.get("activity"):
@@ -295,6 +296,93 @@ def update_activity_source(path, date_str, note, url, method="scrape"):
 # Org loader
 # ---------------------------------------------------------------------------
 
+def write_checked_only(path, method, note=None):
+    """Add/update checked: <TODAY> on an activity source entry (no date/url change)."""
+    import yaml as _yaml
+
+    with open(path, encoding="utf-8") as f:
+        content = f.read()
+    parts = content.split("---", 2)
+    if len(parts) < 3 or parts[0] != "":
+        return False
+    yaml_block, rest = parts[1], parts[2]
+    meta = _yaml.safe_load(yaml_block) or {}
+    activity = meta.get("activity") or {}
+
+    minimal = [f"  {method}:"]
+    if note:
+        minimal.append(f"    note: {json.dumps(note, ensure_ascii=False)}")
+    minimal.append(f"    checked: {TODAY}")
+
+    if not activity:
+        yaml_block = yaml_block.rstrip("\n") + "\nactivity:\n" + "\n".join(minimal) + "\n"
+    elif method not in activity:
+        lines = yaml_block.split("\n")
+        new_lines = []
+        in_activity = False
+        inserted = False
+        i = 0
+        while i < len(lines):
+            line = lines[i]
+            if re.match(r"^activity\s*:", line):
+                in_activity = True
+                new_lines.append(line)
+                i += 1
+                continue
+            if in_activity and line and not line.startswith(" "):
+                if not inserted:
+                    new_lines.extend(minimal)
+                    inserted = True
+                in_activity = False
+                new_lines.append(line)
+                i += 1
+                continue
+            new_lines.append(line)
+            i += 1
+        if in_activity and not inserted:
+            while new_lines and new_lines[-1] == "":
+                new_lines.pop()
+            new_lines.extend(minimal)
+        yaml_block = "\n".join(new_lines)
+    else:
+        lines = yaml_block.split("\n")
+        new_lines = []
+        in_this_source = False
+        checked_written = False
+        i = 0
+        while i < len(lines):
+            line = lines[i]
+            if re.match(rf"^  {method}\s*:", line):
+                in_this_source = True
+                new_lines.append(line)
+                i += 1
+                continue
+            if in_this_source:
+                if re.match(r"^  \w", line) or (line and not line.startswith("    ")):
+                    if not checked_written:
+                        new_lines.append(f"    checked: {TODAY}")
+                        checked_written = True
+                    in_this_source = False
+                elif re.match(r"^    checked\s*:", line):
+                    new_lines.append(f"    checked: {TODAY}")
+                    checked_written = True
+                    i += 1
+                    continue
+            new_lines.append(line)
+            i += 1
+        if in_this_source and not checked_written:
+            while new_lines and new_lines[-1] == "":
+                new_lines.pop()
+            new_lines.append(f"    checked: {TODAY}")
+        yaml_block = "\n".join(new_lines)
+
+    if not yaml_block.endswith("\n"):
+        yaml_block += "\n"
+    with open(path, "w", encoding="utf-8") as f:
+        f.write("---" + yaml_block + "---" + rest)
+    return True
+
+
 def load_orgs(slug_filter=None, include_inactive=False):
     orgs = []
     for path in sorted(glob.glob(os.path.join(ORGS_DIR, "*.md"))):
@@ -320,6 +408,7 @@ def load_orgs(slug_filter=None, include_inactive=False):
             "status": status,
             "news_page": news_page,
             "path": path,
+            "activity": meta.get("activity") or {},
         })
     return orgs
 
@@ -334,6 +423,8 @@ def main():
     parser.add_argument("--slug", metavar="SLUG", help="Scrape a single org by slug")
     parser.add_argument("--timeout", type=int, default=10, metavar="N", help="Per-request timeout in seconds (default: 10)")
     parser.add_argument("--dry-run", action="store_true", help="Print results without writing frontmatter")
+    parser.add_argument("--force", action="store_true",
+                        help="Scrape all orgs even if recently checked (ignores activity.scrape.checked)")
     args = parser.parse_args()
 
     orgs = load_orgs(slug_filter=args.slug, include_inactive=args.all)
@@ -352,6 +443,16 @@ def main():
         url = org["news_page"]
         print(f"  [{i:3d}/{len(orgs)}] {slug} … ", end="", flush=True)
 
+        # Skip recently-checked orgs unless --force
+        if not args.force:
+            entry = (org.get("activity") or {}).get("scrape") or {}
+            chk_date = parse_date(str(entry.get("checked", "") or ""))
+            if chk_date:
+                age = (datetime.strptime(TODAY, "%Y-%m-%d").date() - chk_date).days
+                if age <= 7:
+                    print(f"SKIPPED (checked {age}d ago)")
+                    continue
+
         if not robots_allowed(url, timeout=args.timeout, session=session):
             print(f"ROBOTS_DISALLOWED  {url}")
             time.sleep(1.0)
@@ -362,6 +463,8 @@ def main():
         if not ok:
             print(f"UNREACHABLE  {url}")
         elif d is None:
+            if not args.dry_run:
+                write_checked_only(org["path"], "scrape", "News page found, no machine-readable date")
             print(f"NO_DATE_FOUND  {url}")
         else:
             note = f"Latest post: {title[:80]}" if title else "Latest news page scraped"
