@@ -19,6 +19,7 @@ import argparse
 import glob
 import json
 import os
+import random
 import re
 import sys
 import webbrowser
@@ -288,6 +289,30 @@ def prompt_source_filter(orgs):
         print("Please enter 0-6.")
 
 
+def prompt_sample(orgs):
+    """Optionally draw a random sample from the filtered list."""
+    print()
+    n = len(orgs)
+    while True:
+        raw = input(f"  How many to review? (Enter for all {n}, or a number): ").strip()
+        if not raw:
+            return orgs
+        try:
+            k = int(raw)
+        except ValueError:
+            print("  Please enter a whole number or press Enter.")
+            continue
+        if k <= 0:
+            print("  Please enter a number greater than 0.")
+            continue
+        if k >= n:
+            print(f"  ({k} ≥ {n} — reviewing all.)")
+            return orgs
+        sample = random.sample(orgs, k)
+        print(f"  Sampled {k} orgs at random.")
+        return sample
+
+
 def review_org(org, index, total):
     """Interactively review one org. Returns True to continue, False to quit."""
     print()
@@ -380,6 +405,8 @@ def main():
         to_review = prompt_scope(orgs)
         if to_review:
             to_review = prompt_source_filter(to_review)
+        if to_review:
+            to_review = prompt_sample(to_review)
 
     if not to_review:
         print("No orgs to review in selected scope.")
