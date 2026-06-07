@@ -7,6 +7,29 @@ Read **CLAUDE.md** first for site conventions and curation standards.
 
 ---
 
+## Quick start (copy-paste sequence)
+
+```bash
+# 1. automated data collection (no input needed)
+python util/check_rss.py --update-activity
+python util/scrape_news.py
+python util/check_urls.py
+
+# 2. manual review pass (interactive — opens each site in browser)
+python util/review_orgs.py
+
+# 3. lint check
+python util/pre_commit_check.py
+
+# 4. commit
+git add docs/organisations/
+git commit -m "Maintenance pass — YYYY-MM: N orgs verified"
+```
+
+Read the detail sections below if anything looks unfamiliar.
+
+---
+
 ## Setup
 
 ```bash
