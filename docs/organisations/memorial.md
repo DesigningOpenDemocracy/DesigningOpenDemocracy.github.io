@@ -20,7 +20,7 @@ activity:
     note: Server still up (sitemap detected)
     checked: 2026-06-07
   manual:
-    date: 2026-06-07
+    date: 2026-06-04
     note: "website loaded. It's german... but this looks like news https://www.memorial.de/nachrichten wehere latest news is 04.06.2026 'Asat Miftachov wird im Lager gefoltert'"
     checked: 2026-06-07
 ---

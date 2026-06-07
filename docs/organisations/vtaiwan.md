@@ -20,7 +20,7 @@ activity:
     note: "No feed found"
     checked: 2026-06-07
   manual:
-    date: 2026-06-07
+    date: 2026-06-05
     note: "website loaded. https://www.vtaiwan.tw/newsletters is it's news page. Latest is June 5, 2026 'vTaiwan Newsletter Issue Zero'. Its a mirror of their substack located at https://vtaiwantw.substack.com/p/vtaiwan-newsletter-issue-zero"
     checked: 2026-06-07
 ---

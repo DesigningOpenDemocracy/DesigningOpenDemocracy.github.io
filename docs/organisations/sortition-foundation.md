@@ -22,7 +22,7 @@ activity:
     note: "No feed found"
     checked: 2026-06-07
   manual:
-    date: 2026-06-07
+    date: 2026-02-26
     note: "website loaded. https://www.sortitionfoundation.org/updates is the news page. 26 February, 2026 'Frontiers of Democratic Lotteries Workshop'"
     checked: 2026-06-07
 ---

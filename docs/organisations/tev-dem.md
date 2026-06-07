@@ -12,7 +12,7 @@ concepts:
   - democratic-confederalism
 activity:
   manual:
-    date: 2026-06-07
+    date: 2026-02-21
     note: "Website loaded at https://tev-dem.com/ . News is in front page. Latest is  Feb 21, 2026 ' roja Zimanê Dayîk A Cîhanî li hemû gelan pîroz be û Hêviya me ye ku bibe roja vekirina dergihê azadiya gelên Sûriyayê û aramiya wan.'"
     checked: 2026-06-07
 ---

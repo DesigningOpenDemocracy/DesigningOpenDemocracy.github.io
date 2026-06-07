@@ -19,7 +19,7 @@ activity:
     note: "No feed found"
     checked: 2026-06-07
   manual:
-    date: 2026-06-07
+    date: 2025-07-22
     note: "website loaded. Has a news page at https://luminategroup.com/news-and-insights . Latest seems to be 22 July 2025 'How storytelling can bring us closer to tech justice'"
     checked: 2026-06-07
 ---

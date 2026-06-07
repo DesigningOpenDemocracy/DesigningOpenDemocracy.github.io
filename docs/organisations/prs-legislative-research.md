@@ -18,7 +18,7 @@ activity:
     date: 2021-07-17
     note: Page last modified (from sitemap)
   manual:
-    date: 2026-06-07
+    date: 2024-05-20
     note: "website loaded. Has blog in main page under a tab. Last one is at  May 20, 2024 'A note of gratitude to Mr. N. Vaghul"
     checked: 2026-06-07
 ---

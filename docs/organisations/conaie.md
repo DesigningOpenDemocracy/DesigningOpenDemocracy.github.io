@@ -17,7 +17,7 @@ activity:
     note: "Page last modified (from sitemap)"
     checked: 2026-06-07
   manual:
-    date: 2026-06-07
+    date: 2025-04-04
     note: "website loaded. Last news at april 4 2025 \"Esmeraldas derramada: una historia de Las Piedras\""
     checked: 2026-06-07
 ---

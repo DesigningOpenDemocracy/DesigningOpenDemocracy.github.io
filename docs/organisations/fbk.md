@@ -18,7 +18,7 @@ activity:
     note: "No feed found"
     checked: 2026-06-07
   manual:
-    date: 2026-06-07
+    date: 2026-06-04
     note: "website up. News at https://fbk.info/en/news/ latest article https://fbk.info/en/news/navalny-archive 4 June 2026 'We are launching the Alexei Navalny Archive'"
     checked: 2026-06-07
 ---

@@ -18,7 +18,7 @@ activity:
     date: 2025-12-15
     note: Page last modified (from sitemap)
   manual:
-    date: 2026-06-07
+    date: 2025-12-20
     note: "website loaded. Blog at https://memo98.sk/articles/blog  20. December 2025 ' Moldova Story: How a Small Republic Resisted Hybrid War '"
     checked: 2026-06-07
 ---

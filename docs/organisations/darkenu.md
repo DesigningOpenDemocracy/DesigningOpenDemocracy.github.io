@@ -18,7 +18,7 @@ activity:
     note: "No feed found"
     checked: 2026-06-07
   manual:
-    date: 2026-06-07
+    date: 2025-12-02
     note: "website loaded. It mentioned that it was in the news פורסם: 17.11.25, 15:30 | עודכן: 02.12.25, 15:50 'חנוכה 2025: כל מה שאפשר לעשות עם הילדים בחג'"
     checked: 2026-06-07
 ---

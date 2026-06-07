@@ -111,8 +111,15 @@ def load_orgs(slug_filter=None, include_inactive=False):
     return orgs
 
 
-def write_manual_activity(path, date_str, note):
-    """Write or update activity.manual in org frontmatter using raw text edit."""
+def write_manual_activity(path, date_str, note, checked_str=None, url=None):
+    """Write or update activity.manual in org frontmatter using raw text edit.
+
+    date_str    — last observed activity date (e.g. date of article found)
+    checked_str — date of this review (defaults to date_str for back-compat)
+    url         — optional direct link to the evidence page
+    """
+    if checked_str is None:
+        checked_str = date_str
     with open(path, encoding="utf-8") as f:
         content = f.read()
     parts = content.split("---", 2)
@@ -125,8 +132,10 @@ def write_manual_activity(path, date_str, note):
         "  manual:",
         f"    date: {date_str}",
         f"    note: {json.dumps(note, ensure_ascii=False)}",
-        f"    checked: {date_str}",
     ]
+    if url:
+        source_lines.append(f"    url: {url}")
+    source_lines.append(f"    checked: {checked_str}")
 
     if meta.get("activity"):
         lines = yaml_block.split("\n")
@@ -357,12 +366,29 @@ def review_org(org, index, total):
             return True
         if choice in ("a", "i", "d"):
             new_status = {"a": "active", "i": "inactive", "d": "deregistered"}[choice]
+
             note = input("  Note (Enter to use default): ").strip()
             if not note:
                 note = f"Visited site, confirmed {new_status}"
 
-            write_manual_activity(org["path"], TODAY, note)
-            print(f"  ✓ Wrote activity.manual: {TODAY}")
+            raw_date = input(f"  Activity date found (YYYY-MM-DD, Enter for today {TODAY}): ").strip()
+            if raw_date:
+                parsed = parse_date(raw_date)
+                if parsed:
+                    activity_date = raw_date[:10]
+                else:
+                    print(f"  Invalid date — using {TODAY}")
+                    activity_date = TODAY
+            else:
+                activity_date = TODAY
+
+            url = input("  Evidence URL (Enter to skip): ").strip() or None
+
+            write_manual_activity(org["path"], activity_date, note, checked_str=TODAY, url=url)
+            if activity_date != TODAY:
+                print(f"  ✓ Wrote activity.manual: activity={activity_date}, checked={TODAY}")
+            else:
+                print(f"  ✓ Wrote activity.manual: {TODAY}")
 
             if new_status != org["status"]:
                 update_status_field(org["path"], new_status)

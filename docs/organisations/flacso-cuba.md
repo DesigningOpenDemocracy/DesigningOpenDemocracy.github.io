@@ -19,7 +19,7 @@ activity:
     note: "No feed found"
     checked: 2026-06-07
   manual:
-    date: 2026-06-07
+    date: 2026-06-04
     note: "website loaded. news in main page. Latest is 4 Jun 2026 'Communiqué for the death of Dr. Raúl Vega-Pacheco Researcher and teacher of FLACSO Mexico'"
     checked: 2026-06-07
 ---

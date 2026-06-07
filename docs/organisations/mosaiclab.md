@@ -18,7 +18,7 @@ activity:
     date: 2026-06-03
     note: Page last modified (from sitemap)
   manual:
-    date: 2026-06-07
+    date: 2025-12-08
     note: "website loaded. Latest blog post is on December 8, 2025 'SHIFTS SHAPING ENGAGEMENT NEXT YEAR'"
     checked: 2026-06-07
 ---

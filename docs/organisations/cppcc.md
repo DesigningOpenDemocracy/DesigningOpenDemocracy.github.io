@@ -17,7 +17,7 @@ activity:
     note: "No feed found"
     checked: 2026-06-07
   manual:
-    date: 2026-06-07
+    date: 2026-06-02
     note: "Website loaded. Latest news is 2026-06-02 'Xi encourages Chinese children to strive for better future'"
     checked: 2026-06-07
 ---

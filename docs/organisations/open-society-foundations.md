@@ -19,7 +19,7 @@ activity:
     note: "No feed found"
     checked: 2026-06-07
   manual:
-    date: 2026-06-07
+    date: 2026-05-20
     note: "website loaded. https://www.opensocietyfoundations.org/newsroom has  May 20, 2026 'Open Society Foundations Launch $300 Million Initiative to Advance Economic Security and Defend Civil Liberties in the United States'"
     checked: 2026-06-07
 ---
