@@ -19,6 +19,12 @@ activity:
     date: 2026-05-18
     note: "Latest post: co-présidence engagée pour le renforcement de la démocratie"
     url: https://www.democratieouverte.org/le-blog
+  rss:
+    note: "No feed found"
+    checked: 2026-06-07
+  scrape:
+    note: "News page found, no machine-readable date"
+    checked: 2026-06-07
 ---
 
 Démocratie Ouverte is a French non-partisan association of general interest that has, for over ten years, tested tools and methods and made proposals to public decision-makers to make governance more transparent, cooperative, and participative. It combines practical experimentation with policy advocacy and network convening.

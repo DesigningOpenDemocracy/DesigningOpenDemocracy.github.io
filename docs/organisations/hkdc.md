@@ -15,8 +15,10 @@ concepts:
   - constitutional-democracy
 activity:
   sitemap:
-    date: 2026-06-05
-    note: Page last modified (from sitemap)
+    date: 2026-06-06
+    note: "Page last modified (from sitemap)"
+    url: https://www.hkdc.us/sitemap.xml
+    checked: 2026-06-07
 ---
 
 > **Note:** HKDC operates from diaspora in Washington DC. It is included here because its work is specifically about a particular governance system — the accountability structures promised to Hong Kong under One Country, Two Systems — rather than general human rights documentation.

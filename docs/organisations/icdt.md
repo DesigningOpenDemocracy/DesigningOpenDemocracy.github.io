@@ -13,6 +13,10 @@ concepts:
   - constitutional-democracy
   - democracy
   - liberal-democracy
+activity:
+  rss:
+    note: "No feed found"
+    checked: 2026-06-07
 ---
 
 > **Note:** ICDT operates in diaspora — its focus is China, but its researchers work from outside mainland China where this kind of work cannot be done freely. It is included here because its work is specifically about governance system design, not human rights documentation.

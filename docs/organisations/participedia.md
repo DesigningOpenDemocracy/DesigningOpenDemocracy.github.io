@@ -15,6 +15,10 @@ concepts:
   - participatory-budgeting
   - direct-democracy
   - democracy
+activity:
+  rss:
+    note: "No feed found"
+    checked: 2026-06-07
 ---
 
 Participedia is a collaborative academic platform hosted by the University of British Columbia and Harvard University. It functions as a living encyclopaedia of participatory democracy — cataloguing case studies, methods, and organisations from across the world with structured, comparable data.

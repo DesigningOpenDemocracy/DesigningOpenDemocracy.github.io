@@ -3,7 +3,7 @@ title: Lateral Economics
 type: research
 status: active
 country: AU
-website: https://lateraleconomics.com.au
+website: https://www.lateraleconomics.com.au
 summary: "An Australian policy economics consultancy led by Nicholas Gruen — advising on economic reform, innovation, and democratic governance, with a particular interest in how institutions can better incorporate citizens' knowledge and deliberation."
 location:
   latitude: -33.8688
@@ -33,7 +33,7 @@ He has advocated for a philanthropically funded standing citizens' jury that wou
 
 ## Links
 
-- Website: [lateraleconomics.com.au](https://lateraleconomics.com.au)
+- Website: [lateraleconomics.com.au](https://www.lateraleconomics.com.au)
 - Nicholas Gruen's Substack: [nicholasgruen.substack.com](https://nicholasgruen.substack.com)
 
 ## See also

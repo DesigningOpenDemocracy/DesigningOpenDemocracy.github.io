@@ -15,8 +15,10 @@ concepts:
   - mixed-member-proportional-representation
 activity:
   sitemap:
-    date: 2026-06-05
-    note: Page last modified (from sitemap)
+    date: 2026-06-07
+    note: "Page last modified (from sitemap)"
+    url: https://en.idi.org.il/sitemap.xml
+    checked: 2026-06-07
 ---
 
 The Israel Democracy Institute (IDI) is an independent, nonpartisan research and policy institute founded in 1991. It is the primary academic body studying Israeli democratic governance, producing rigorous empirical research on institutional design, electoral systems, rule of law, and civic participation.

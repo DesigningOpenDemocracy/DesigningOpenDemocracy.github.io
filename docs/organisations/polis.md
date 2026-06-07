@@ -14,6 +14,10 @@ concepts:
   - consensus-mapping
   - deliberative-democracy
   - citizens-assembly
+activity:
+  rss:
+    note: "No feed found"
+    checked: 2026-06-07
 ---
 
 Pol.is (pronounced "polis") is an open-source platform for large-scale online deliberation, developed by the Computational Democracy Project. Since its launch in 2012 it has hosted tens of thousands of conversations with over 10 million participants worldwide, and is now embedded as national democratic infrastructure in Taiwan.

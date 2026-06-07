@@ -3,7 +3,7 @@ title: Susan McKinnon Foundation
 type: philanthropy
 status: active
 country: AU
-website: https://www.susanmckinnon.org.au
+website: https://mckinnon.co
 summary: "A non-partisan Australian foundation working across all sides of politics to find common ground and practical pathways on major national challenges, with a focus on democratic and public sector reform."
 location:
   latitude: -37.8136
@@ -25,7 +25,7 @@ Its explicitly non-partisan stance — working with all sides of politics rather
 
 ## Links
 
-- Website: [susanmckinnon.org.au](https://www.susanmckinnon.org.au)
+- Website: [susanmckinnon.org.au](https://mckinnon.co)
 
 ## See also
 

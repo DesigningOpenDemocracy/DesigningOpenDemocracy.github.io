@@ -14,6 +14,10 @@ concepts:
   - radical-transparency
   - e-government
   - consensus-mapping
+activity:
+  rss:
+    note: "No feed found"
+    checked: 2026-06-07
 ---
 
 g0v (pronounced "gov zero") is a decentralised, volunteer-driven civic tech community founded in Taiwan in 2012. The name is a pun: replacing the "o" in "gov" with "0" (zero) to create an alternative domain — `g0v.tw` versus `gov.tw` — signalling a parallel, open, citizen-built version of government infrastructure.
