@@ -73,7 +73,14 @@ FEED_PATHS = [
     "/?feed=rss",
     "/?feed=atom",
     "/index.xml",
-    "/sitemap.xml",   # fallback: at least shows site is alive
+]
+
+# Sitemap paths tried in order when no RSS/Atom feed is found.
+# robots.txt Sitemap: declarations are checked first (see probe_sitemap()).
+SITEMAP_PATHS = [
+    "/sitemap.xml",
+    "/sitemap_index.xml",
+    "/sitemaps.xml",
 ]
 
 # Content-type fragments that indicate a feed
@@ -105,8 +112,58 @@ def looks_like_feed(response):
     return body.startswith(FEED_BODY_PREFIXES)
 
 
+def is_sitemap_url(url):
+    """True if url looks like a sitemap rather than an RSS/Atom feed."""
+    return "sitemap" in urlparse(url).path.lower()
+
+
+def probe_sitemap(base_url, timeout=8, session=None):
+    """Return a sitemap URL for base_url, or None.
+
+    Checks robots.txt for Sitemap: declarations first, then falls back to
+    SITEMAP_PATHS. Handles both /sitemap.xml and /sitemap_index.xml.
+    """
+    if session is None:
+        session = requests.Session()
+        session.headers["User-Agent"] = "DOD-RSS-Probe/1.0 (democracy wiki feed discovery)"
+
+    parsed = urlparse(base_url)
+    root = f"{parsed.scheme}://{parsed.netloc}"
+
+    # 1. robots.txt Sitemap: declarations are the canonical source
+    try:
+        r = session.get(urljoin(root, "/robots.txt"), timeout=timeout, allow_redirects=True)
+        if r.status_code == 200:
+            for line in r.text.splitlines():
+                line = line.strip()
+                if line.lower().startswith("sitemap:"):
+                    candidate = line.split(":", 1)[1].strip()
+                    if not candidate.startswith("http"):
+                        candidate = urljoin(root, candidate)
+                    try:
+                        chk = session.get(candidate, timeout=timeout, allow_redirects=True)
+                        if chk.status_code == 200:
+                            return candidate
+                    except RequestException:
+                        pass
+    except RequestException:
+        pass
+
+    # 2. Standard paths
+    for path in SITEMAP_PATHS:
+        url = urljoin(root, path)
+        try:
+            r = session.get(url, timeout=timeout, allow_redirects=True)
+            if r.status_code == 200 and r.content:
+                return url
+        except RequestException:
+            pass
+
+    return None
+
+
 def probe_feeds(base_url, timeout=8, session=None):
-    """Return the first feed URL found, or None."""
+    """Return the first feed URL found (RSS/Atom/sitemap), or None."""
     if session is None:
         session = requests.Session()
     session.headers.update({"User-Agent": "DOD-RSS-Probe/1.0 (democracy wiki feed discovery)"})
@@ -123,7 +180,8 @@ def probe_feeds(base_url, timeout=8, session=None):
         except RequestException:
             pass
 
-    return None
+    # Fallback: sitemap (at least proves the site is alive)
+    return probe_sitemap(root, timeout=timeout, session=session)
 
 
 def latest_sitemap_lastmod(sitemap_url, timeout=10, session=None):
@@ -526,7 +584,7 @@ def main():
 
         if feed_url:
             if args.update_activity:
-                if feed_url.endswith("sitemap.xml"):
+                if is_sitemap_url(feed_url):
                     d = latest_sitemap_lastmod(feed_url, timeout=args.timeout, session=session)
                     if d:
                         update_activity_source(org["path"], d.isoformat(),
