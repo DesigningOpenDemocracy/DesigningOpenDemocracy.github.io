@@ -23,6 +23,12 @@ activity:
     note: "website loaded. https://mckinnon.co/insights is it's news page. Latest news is 03 JUN 2026 'McKinnon Political Leader of the Year 2025 - Federal – Shortlisted nominees'"
     url: https://mckinnon.co/insights
     checked: 2026-06-07
+
+  scrape:
+    date: 2026-03-31
+    note: "Latest post: Insights"
+    url: https://mckinnon.co/insights
+    checked: 2026-06-07
 ---
 
 The Susan McKinnon Foundation is a private philanthropic foundation focused on strengthening Australian democracy and governance. It funds and supports work on electoral reform, parliamentary integrity, public sector capability, and cross-party collaboration.

@@ -24,6 +24,12 @@ activity:
     note: "Website loaded. https://www.crossroadsconversation.com.au/events says next event is at  Tuesday 30 June 2026  'The decline of democracy and the rise of the far-right'"
     url: https://www.crossroadsconversation.com.au/events
     checked: 2026-06-07
+
+  scrape:
+    date: 2026-06-30
+    note: "Latest news page scraped"
+    url: https://www.crossroadsconversation.com.au/events
+    checked: 2026-06-07
 ---
 
 Conversations at the Crossroads is an independent Australian civic network focused on democratic renewal through thoughtful, informed conversation. Founded around 2020 by Professor Joseph Camilleri (Professor Emeritus, La Trobe University) and colleagues, the network runs public events, citizens assemblies, educational series, and podcasts aimed at connecting progressive social movements and scaling deliberative participation.

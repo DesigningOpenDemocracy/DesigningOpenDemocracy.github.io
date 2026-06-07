@@ -24,6 +24,9 @@ activity:
     note: "website loaded. FYI they have an english version at https://g0v.tw/intl/en/ . In https://g0v.tw/intl/en/event/ there is a calendar where there appears to be various events."
     url: https://g0v.tw/intl/en/event/
     checked: 2026-06-07
+  scrape:
+    note: "News page found, no machine-readable date"
+    checked: 2026-06-07
 ---
 
 g0v (pronounced "gov zero") is a decentralised, volunteer-driven civic tech community founded in Taiwan in 2012. The name is a pun: replacing the "o" in "gov" with "0" (zero) to create an alternative domain — `g0v.tw` versus `gov.tw` — signalling a parallel, open, citizen-built version of government infrastructure.

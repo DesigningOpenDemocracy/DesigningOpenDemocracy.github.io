@@ -23,6 +23,9 @@ activity:
     note: "website up. News at https://fbk.info/en/news/ latest article https://fbk.info/en/news/navalny-archive 4 June 2026 'We are launching the Alexei Navalny Archive'"
     url: https://fbk.info/en/news/navalny-archive
     checked: 2026-06-07
+  scrape:
+    note: "News page found, no machine-readable date"
+    checked: 2026-06-07
 ---
 
 The Anti-Corruption Foundation (Фонд борьбы с коррупцией, FBK) was founded by Alexei Navalny and became Russia's most prominent anti-corruption investigative and advocacy organisation. Its video investigations into the wealth of senior Russian officials — including widely-viewed exposés on Prime Minister Medvedev and others — reached tens of millions of viewers inside Russia.

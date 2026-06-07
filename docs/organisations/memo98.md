@@ -23,6 +23,12 @@ activity:
     note: "website loaded. Blog at https://memo98.sk/articles/blog  20. December 2025 ' Moldova Story: How a Small Republic Resisted Hybrid War '"
     url: https://memo98.sk/articles/blog
     checked: 2026-06-07
+
+  scrape:
+    date: 2025-12-20
+    note: "Latest news page scraped"
+    url: https://memo98.sk/articles/blog
+    checked: 2026-06-07
 ---
 
 MEMO 98 is a Slovak organisation founded in 1998 focused on media integrity and democratic civic engagement. It is best known for its election media monitoring work — assessing whether voters have access to quality, balanced information during electoral periods — and has applied this methodology across multiple countries.

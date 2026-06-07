@@ -24,6 +24,9 @@ activity:
     note: "website loaded. Has a news page at https://luminategroup.com/news-and-insights . Latest seems to be 22 July 2025 'How storytelling can bring us closer to tech justice'"
     url: https://luminategroup.com/news-and-insights
     checked: 2026-06-07
+  scrape:
+    note: "News page found, no machine-readable date"
+    checked: 2026-06-07
 ---
 
 Luminate is a global philanthropic organisation established in 2018, spun out from the Omidyar Network (founded by eBay co-founder Pierre Omidyar) to focus specifically on civic empowerment and open governance. It operates globally with offices in London, Washington DC, Nairobi, São Paulo, and other cities.

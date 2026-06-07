@@ -24,6 +24,9 @@ activity:
     note: "They got a blog at https://www.cddwestafrica.org/blog/ which has a post on 4 June 2026 : Reconciliation Is Not Deradicalisation: Rethinking the Role of Faith Community Leaders in Operation Safe Corridor"
     url: https://www.cddwestafrica.org/blog/
     checked: 2026-06-07
+  scrape:
+    note: "News page found, no machine-readable date"
+    checked: 2026-06-07
 ---
 
 The Centre for Democracy and Development (CDD West Africa) is an independent, non-profit research and advocacy organisation founded in 1997 (and registered in Nigeria in 1999) to support democratic governance and people-centred development across West Africa. It was established during Nigeria's transition from military to civilian rule and has since grown into a regional institution.
