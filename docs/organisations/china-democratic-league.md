@@ -19,6 +19,7 @@ activity:
   manual:
     date: 2026-04-08
     note: "https://www.mmzy.org.cn/mmyw/default.aspx is it's news section. 8th April 2026 ' NLD \"political participation for the public, practical for the people\" theme education start-up meeting held'"
+    url: https://www.mmzy.org.cn/mmyw/default.aspx
     checked: 2026-06-07
 ---
 

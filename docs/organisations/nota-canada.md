@@ -22,6 +22,7 @@ activity:
   manual:
     date: 2025-01-27
     note: "website loaded. https://nota.ca/news/ has January 27, 2025 'None of the Above Party Calls for Referendum on Trump Tariffs, Strategic Voting to Defeat Ford Government in Election'"
+    url: https://nota.ca/news/
     checked: 2026-06-07
 ---
 

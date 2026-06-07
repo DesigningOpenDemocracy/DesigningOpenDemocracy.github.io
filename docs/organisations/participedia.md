@@ -22,6 +22,7 @@ activity:
   manual:
     date: 2026-01-06
     note: "website loaded. News page points to https://participediaproject.medium.com/ where latest is Jan 6, 2026 'Participedia Schools 2025 Summary Reports'"
+    url: https://participediaproject.medium.com/
     checked: 2026-06-07
 ---
 

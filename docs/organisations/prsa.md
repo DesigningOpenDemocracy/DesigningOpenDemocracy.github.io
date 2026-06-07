@@ -22,6 +22,7 @@ activity:
   manual:
     date: 2026-05-01
     note: "website loaded. News page at https://www.prsa.org.au/latest01.htm 2026-05a 'LETTER ON SOUTH AUSTRALIAN ELECTION OUTCOME TO ALL SA MPs:'"
+    url: https://www.prsa.org.au/latest01.htm
     checked: 2026-06-07
 ---
 

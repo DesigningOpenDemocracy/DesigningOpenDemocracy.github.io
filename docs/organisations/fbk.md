@@ -20,6 +20,7 @@ activity:
   manual:
     date: 2026-06-04
     note: "website up. News at https://fbk.info/en/news/ latest article https://fbk.info/en/news/navalny-archive 4 June 2026 'We are launching the Alexei Navalny Archive'"
+    url: https://fbk.info/en/news/navalny-archive
     checked: 2026-06-07
 ---
 

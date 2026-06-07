@@ -20,6 +20,7 @@ activity:
   manual:
     date: 2022-09-30
     note: "website active. News link https://www.prediki.com/meta/en/Management-by-Predictions-(Prediki-Blog-in-English)/ . Last is at  Vienna, 30 September 2022 'Renewed Controversy About Election Polls'"
+    url: https://www.prediki.com/meta/en/Management-by-Predictions-(Prediki-Blog-in-English)/
     checked: 2026-06-07
 ---
 

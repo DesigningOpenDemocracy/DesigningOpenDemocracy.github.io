@@ -21,6 +21,7 @@ activity:
   manual:
     date: 2026-06-04
     note: "They got a blog at https://www.cddwestafrica.org/blog/ which has a post on 4 June 2026 : Reconciliation Is Not Deradicalisation: Rethinking the Role of Faith Community Leaders in Operation Safe Corridor"
+    url: https://www.cddwestafrica.org/blog/
     checked: 2026-06-07
 ---
 

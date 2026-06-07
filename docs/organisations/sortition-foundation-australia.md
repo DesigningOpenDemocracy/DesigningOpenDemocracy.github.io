@@ -23,6 +23,7 @@ activity:
   manual:
     date: 2026-02-26
     note: "website loaded. News page at https://www.sortitionfoundation.org/updates 26 February, 2026 'Frontiers of Democratic Lotteries Workshop'"
+    url: https://www.sortitionfoundation.org/updates
     checked: 2026-06-07
 ---
 

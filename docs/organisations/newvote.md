@@ -22,6 +22,7 @@ activity:
   manual:
     date: 2020-05-16
     note: "website loaded. But social media is last noted in twitter May 16, 2020 https://x.com/newvote/status/1261440493004615681 . So uncertain on newvote status"
+    url: https://x.com/newvote/status/1261440493004615681
     checked: 2026-06-07
 ---
 

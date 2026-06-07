@@ -21,6 +21,7 @@ activity:
   manual:
     date: 2026-01-02
     note: "website loaded. https://www.demnext.org/news mentions www.theartnewspaper.com/2026/01/02/uk-museums-embrace-citizens-assemblies-to-frame-their-futures 2 January 2026 'How UK museums are embracing citizens’ assemblies to help frame their futures'"
+    url: https://www.demnext.org/news
     checked: 2026-06-07
 ---
 

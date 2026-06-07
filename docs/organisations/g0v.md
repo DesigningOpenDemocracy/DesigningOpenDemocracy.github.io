@@ -21,6 +21,7 @@ activity:
   manual:
     date: 2026-06-07
     note: "website loaded. FYI they have an english version at https://g0v.tw/intl/en/ . In https://g0v.tw/intl/en/event/ there is a calendar where there appears to be various events."
+    url: https://g0v.tw/intl/en/event/
     checked: 2026-06-07
 ---
 

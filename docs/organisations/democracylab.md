@@ -21,6 +21,7 @@ activity:
   manual:
     date: 2025-09-10
     note: "website loaded. Last blog post is at https://blog.democracylab.org/10-000-volunteers-and-counting/  10 Sep 2025 '10,000 Volunteers and Counting!'"
+    url: https://blog.democracylab.org/10-000-volunteers-and-counting/
     checked: 2026-06-07
 ---
 

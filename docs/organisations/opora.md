@@ -20,6 +20,7 @@ activity:
   manual:
     date: 2026-05-20
     note: "website loaded. https://oporaua.org/en/announce has  May 20, 2026 'REPORT. Dialogue with the Ukrainian Community in Ireland'"
+    url: https://oporaua.org/en/announce
     checked: 2026-06-07
 ---
 

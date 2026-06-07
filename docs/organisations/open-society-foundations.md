@@ -21,6 +21,7 @@ activity:
   manual:
     date: 2026-05-20
     note: "website loaded. https://www.opensocietyfoundations.org/newsroom has  May 20, 2026 'Open Society Foundations Launch $300 Million Initiative to Advance Economic Security and Defend Civil Liberties in the United States'"
+    url: https://www.opensocietyfoundations.org/newsroom
     checked: 2026-06-07
 ---
 

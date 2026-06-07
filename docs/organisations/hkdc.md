@@ -22,6 +22,7 @@ activity:
   manual:
     date: 2026-02-10
     note: "website loaded. News is https://www.hkdc.us/news where latest is February 10, 2026 'Crossing a New Line: The Conviction of Anna Kwok’s Father'"
+    url: https://www.hkdc.us/news
     checked: 2026-06-07
 ---
 

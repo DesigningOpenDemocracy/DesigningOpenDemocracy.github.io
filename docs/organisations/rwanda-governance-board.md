@@ -20,6 +20,7 @@ activity:
   manual:
     date: 2026-05-29
     note: "website loaded. News page at https://www.rgb.rw/updates/news . Latest news  Friday, 29 May, 2026  'Former Ethipia Prime Minister H.E. Hailemariam visits RGB'"
+    url: https://www.rgb.rw/updates/news
     checked: 2026-06-07
 ---
 

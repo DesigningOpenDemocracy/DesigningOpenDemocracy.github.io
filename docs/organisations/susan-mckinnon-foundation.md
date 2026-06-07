@@ -20,6 +20,7 @@ activity:
   manual:
     date: 2026-06-03
     note: "website loaded. https://mckinnon.co/insights is it's news page. Latest news is 03 JUN 2026 'McKinnon Political Leader of the Year 2025 - Federal – Shortlisted nominees'"
+    url: https://mckinnon.co/insights
     checked: 2026-06-07
 ---
 
