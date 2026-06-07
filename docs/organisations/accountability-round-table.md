@@ -21,6 +21,10 @@ activity:
     note: "Latest post: GOVERNMENT MUST LEGISLATE IBAC REFORM NOW, NOT AFTER THE ELECTION"
     url: "https://www.accountabilityrt.org/government-must-legislate-ibac-reform-now-not-after-the-election/"
     checked: 2026-06-07
+  manual:
+    date: 2026-06-08
+    note: "website loaded. Saw them meet in person"
+    checked: 2026-06-08
 ---
 
 The Accountability Round Table is a non-partisan coalition of professionals with backgrounds across academia, law, politics, and journalism. Its focus is on the structural conditions that allow democratic accountability to function: transparency laws, integrity commissions, ministerial conduct standards, and parliamentary oversight.

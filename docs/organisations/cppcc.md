@@ -16,6 +16,10 @@ activity:
   rss:
     note: "No feed found"
     checked: 2026-06-07
+  manual:
+    date: 2026-06-07
+    note: "Website loaded. Latest news is 2026-06-02 'Xi encourages Chinese children to strive for better future'"
+    checked: 2026-06-07
 ---
 
 > **Note:** The CPPCC is not an independent institution. Scholars of Chinese politics characterise it as a **"flower vase"** — decorative rather than functional — and describe its members as operating under **["bounded articulation"](https://link.springer.com/article/10.1007/s11366-015-9329-3)**: they can raise proposals within preset CPC limits but cannot challenge the structure of CPC authority. Membership is pre-approved by the United Front Work Department. It is included here not as a functioning accountability mechanism, but as a documented case of where managed consultation fails the good-faith test — and as context for understanding China's own democratic theory.

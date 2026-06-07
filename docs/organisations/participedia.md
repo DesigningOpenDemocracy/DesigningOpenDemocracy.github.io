@@ -19,6 +19,10 @@ activity:
   rss:
     note: "No feed found"
     checked: 2026-06-07
+  manual:
+    date: 2026-06-07
+    note: "website loaded. News page points to https://participediaproject.medium.com/ where latest is Jan 6, 2026 'Participedia Schools 2025 Summary Reports'"
+    checked: 2026-06-07
 ---
 
 Participedia is a collaborative academic platform hosted by the University of British Columbia and Harvard University. It functions as a living encyclopaedia of participatory democracy — cataloguing case studies, methods, and organisations from across the world with structured, comparable data.

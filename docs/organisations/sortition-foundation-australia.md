@@ -20,6 +20,10 @@ activity:
   rss:
     note: "No feed found"
     checked: 2026-06-07
+  manual:
+    date: 2026-06-07
+    note: "website loaded. News page at https://www.sortitionfoundation.org/updates 26 February, 2026 'Frontiers of Democratic Lotteries Workshop'"
+    checked: 2026-06-07
 ---
 
 The Sortition Foundation is a UK-based organisation that campaigns for the use of stratified random selection (sortition) in government, primarily through citizens' assemblies. The Australian chapter operates within that global structure and is established by **Dr Sonia Randhawa**, based in Preston, Victoria, who works as a Project Manager at the Foundation.

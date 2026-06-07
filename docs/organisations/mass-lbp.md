@@ -22,6 +22,10 @@ activity:
   sitemap:
     date: 2026-05-22
     note: Page last modified (from sitemap)
+  manual:
+    date: 2026-06-07
+    note: "website loaded. Uncertain if active. Last social media post at Aug 14, 2023 'We’re aiming to expand our team this fall by adding a new Coordinator at MASS. We are looking for a candidate with the right mix of qualities, skills and experience to help us build our practice and raise our game.'"
+    checked: 2026-06-07
 ---
 
 MASS LBP is a Toronto-based civic design firm founded in 2007 that specialises in designing and running citizens' assemblies, civic lotteries, and deliberative public engagement processes. It takes its name from the French phrase *masse de manœuvre* — a reserve force held back for decisive deployment.

@@ -1,7 +1,7 @@
 ---
 title: br/acc (World Transparency Graph)
 type: civic tech
-status: active
+status: inactive
 country: BR
 website: https://github.com/brunoclz/br-acc
 summary: "An open-source Brazilian civic tech project that normalises 45+ scattered government databases into a single searchable graph — making public data genuinely accessible for accountability and civic research."
@@ -16,6 +16,10 @@ concepts:
 activity:
   rss:
     note: "No feed found"
+    checked: 2026-06-07
+  manual:
+    date: 2026-06-07
+    note: "brunoclz privated all his repo, so looks like his project has ended"
     checked: 2026-06-07
 ---
 

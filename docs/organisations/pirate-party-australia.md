@@ -19,6 +19,10 @@ activity:
     note: "Latest post: Pirate Party Australia raises alarm over miscarriage of justice in David McBride"
     url: https://pirateparty.org.au/2024/05/15/pirate-party-australia-raises-alarm-over-miscarriage-of-justice-in-david-mcbride-case-lengthy-prison-term/
     checked: 2026-06-07
+  manual:
+    date: 2026-06-07
+    note: "Known personally to be active"
+    checked: 2026-06-07
 ---
 
 Pirate Party Australia is the Australian branch of the international Pirate Party movement, which originated in Sweden in 2006 around issues of copyright reform and internet freedom. The Australian chapter has broadened its platform to include democratic reform, government transparency, and civil liberties.

@@ -10,6 +10,11 @@ location:
   name: Qamishli, North and East Syria (AANES)
 concepts:
   - democratic-confederalism
+activity:
+  manual:
+    date: 2026-06-07
+    note: "Website loaded at https://tev-dem.com/ . News is in front page. Latest is  Feb 21, 2026 ' roja Zimanê Dayîk A Cîhanî li hemû gelan pîroz be û Hêviya me ye ku bibe roja vekirina dergihê azadiya gelên Sûriyayê û aramiya wan.'"
+    checked: 2026-06-07
 ---
 
 > **Note on context:** AANES is not internationally recognised as a state. It operates as a de facto autonomous region in northern Syria under ongoing military pressure, primarily from Turkey. TEV-DEM is the civilian governance arm — distinct from the military structures (YPG/YPJ/SDF). It is included here because the governance design it implements is one of the most extensively documented non-statist democratic experiments currently operating.

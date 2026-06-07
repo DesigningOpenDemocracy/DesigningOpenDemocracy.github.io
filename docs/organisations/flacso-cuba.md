@@ -18,6 +18,10 @@ activity:
   rss:
     note: "No feed found"
     checked: 2026-06-07
+  manual:
+    date: 2026-06-07
+    note: "website loaded. news in main page. Latest is 4 Jun 2026 'Communiqué for the death of Dr. Raúl Vega-Pacheco Researcher and teacher of FLACSO Mexico'"
+    checked: 2026-06-07
 ---
 
 > **Note on scope:** FLACSO-Cuba operates within the constraints of a single-party state. Its research on Cuban governance is empirical and sometimes critical in tone, but it works within institutionally bounded space. It is included here as the primary academic body studying Cuba's Poder Popular system as a governance design — not as an independent watchdog, but as a source of substantive comparative governance research.

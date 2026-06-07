@@ -16,6 +16,10 @@ activity:
     date: 2026-03-25
     note: "Page last modified (from sitemap)"
     checked: 2026-06-07
+  manual:
+    date: 2026-06-07
+    note: "website loaded. Last news at april 4 2025 \"Esmeraldas derramada: una historia de Las Piedras\""
+    checked: 2026-06-07
 ---
 
 The Confederation of Indigenous Nationalities of Ecuador (Confederación de Nacionalidades Indígenas del Ecuador, CONAIE) was founded in 1986 and represents 14 indigenous nationalities and 18 peoples across the Ecuadorian Amazon, highlands, and coast. It is one of the most influential indigenous governance bodies in Latin America, operating not only as an advocacy organisation but as a governance actor with territorial jurisdiction and a recognised parallel justice system.

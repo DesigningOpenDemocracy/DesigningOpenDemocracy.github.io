@@ -17,6 +17,10 @@ activity:
   rss:
     note: "No feed found"
     checked: 2026-06-07
+  manual:
+    date: 2026-06-07
+    note: "website active. News link https://www.prediki.com/meta/en/Management-by-Predictions-(Prediki-Blog-in-English)/ . Last is at  Vienna, 30 September 2022 'Renewed Controversy About Election Polls'"
+    checked: 2026-06-07
 ---
 
 Prediki (Prediki Prediction Markets GmbH) is a peer-to-peer platform for opinion research and collective intelligence, built around prediction market methodology. Rather than simple polling, participants make structured predictions about outcomes, stake a position, and provide reasons — the system aggregates these into probability estimates while tracking the quality of each contributor's predictions over time.

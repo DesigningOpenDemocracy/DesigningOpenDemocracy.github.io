@@ -19,6 +19,10 @@ activity:
     date: 2019-11-11
     note: "Latest post: How's SpeakUp @ the University of Queensland going?"
     url: "https://newvote.org/blog/2019/11/10/hows-speakup-the-university-of-queensland-going"
+  manual:
+    date: 2026-06-07
+    note: "website loaded. But social media is last noted in twitter May 16, 2020 https://x.com/newvote/status/1261440493004615681 . So uncertain on newvote status"
+    checked: 2026-06-07
 ---
 
 NewVote is built on a simple philosophy: the world is better when everyone is empowered. The institute uses technology to operate across three democratic modes simultaneously:

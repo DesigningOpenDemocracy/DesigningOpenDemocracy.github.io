@@ -18,6 +18,10 @@ activity:
     note: "Page last modified (from sitemap)"
     url: https://www.democracylab.org/sitemap.xml
     checked: 2026-06-07
+  manual:
+    date: 2026-06-07
+    note: "website loaded. Last blog post is at https://blog.democracylab.org/10-000-volunteers-and-counting/  10 Sep 2025 '10,000 Volunteers and Counting!'"
+    checked: 2026-06-07
 ---
 
 DemocracyLab is a Seattle-based 501(c)(3) non-profit that operates an online platform connecting skilled volunteers with civic technology projects. It functions as infrastructure for the broader civic tech movement, matching developers, designers, researchers, and communications professionals with tech-for-good initiatives that need their skills.

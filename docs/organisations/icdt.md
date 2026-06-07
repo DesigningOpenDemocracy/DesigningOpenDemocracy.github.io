@@ -17,6 +17,10 @@ activity:
   rss:
     note: "No feed found"
     checked: 2026-06-07
+  manual:
+    date: 2026-06-07
+    note: "website loaded. Unsure if active... non of the social media links loaded. No news or blog."
+    checked: 2026-06-07
 ---
 
 > **Note:** ICDT operates in diaspora — its focus is China, but its researchers work from outside mainland China where this kind of work cannot be done freely. It is included here because its work is specifically about governance system design, not human rights documentation.
