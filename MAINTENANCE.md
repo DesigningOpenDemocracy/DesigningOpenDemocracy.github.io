@@ -30,11 +30,55 @@ Read the detail sections below if anything looks unfamiliar.
 
 ---
 
-## Setup
+## Setup (first time)
+
+### 1. System dependencies
+
+**Ubuntu / Debian:**
+```bash
+sudo apt install git python3 python3-pip python3-venv
+```
+
+**Arch Linux:**
+```bash
+sudo pacman -S git python python-pip
+```
+
+**macOS (Homebrew):**
+```bash
+brew install git python
+```
+
+### 2. Clone the repo
 
 ```bash
+git clone https://github.com/DesigningOpenDemocracy/DesigningOpenDemocracy.github.io.git
+cd DesigningOpenDemocracy.github.io
+```
+
+### 3. Python environment
+
+Using a virtual environment keeps the project dependencies isolated:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate        # Windows: .venv\Scripts\activate
 pip install -r util/requirements.txt
 ```
+
+Activate the venv at the start of every session:
+
+```bash
+source .venv/bin/activate
+```
+
+### 4. Verify
+
+```bash
+python util/stats.py
+```
+
+If that prints org counts without errors, you're ready.
 
 ---
 
