@@ -88,6 +88,7 @@ The invariants recorded there are not immutable. Any document in this repo — i
   - If all sources are stale, the most recent entry is shown regardless
   - `util/check_rss.py --update-activity` populates `rss`, `sitemap`, and `ical` entries automatically; re-runs skip orgs checked within 7 days (use `--force` to override)
   - `util/scrape_news.py` populates `scrape` entries for orgs with `news_page:` set; same skip behaviour
+  - `hint:` — written automatically by `scrape_news.py` on failure. Values: `spa` (JS-rendered, headless browser needed), `no_markup` (page loaded but no structured date signals — consider requesting RSS), `bot_blocked` (403/429 — consider requesting RSS), `unreachable` (network error). `spa` and `bot_blocked` are skipped on re-runs unless `--force`.
 - **Key people** is an optional section. Add it only when named individuals are central to understanding the org's story (founders, government champions, notable critics) and the information is sourced. Link names to Wikipedia where a confirmed article exists. Do not add it just to fill the template — most orgs are better served by institutional description.
 
 ### Blog posts (`docs/blog/posts/`)

@@ -25,7 +25,8 @@ activity:
     checked: 2026-06-07
   scrape:
     note: "News page found, no machine-readable date"
-    checked: 2026-06-07
+    hint: no_markup
+    checked: 2026-06-08
 ---
 
 Prediki (Prediki Prediction Markets GmbH) is a peer-to-peer platform for opinion research and collective intelligence, built around prediction market methodology. Rather than simple polling, participants make structured predictions about outcomes, stake a position, and provide reasons — the system aggregates these into probability estimates while tracking the quality of each contributor's predictions over time.

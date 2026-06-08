@@ -267,18 +267,44 @@ def robots_allowed(url, timeout=5, session=None):
 # Scrape
 # ---------------------------------------------------------------------------
 
+# Pages with fewer raw links than this are almost certainly JavaScript SPAs
+_SPA_LINK_THRESHOLD = 5
+
+
+def _classify_hint(ok, http_status, parser):
+    """Return a short hint string classifying a scraping failure.
+
+    spa         — raw HTML is nearly empty (JS SPA); headless browser needed
+    no_markup   — page loaded with content but has no machine-readable date
+                  signals; consider requesting an RSS feed from the org
+    bot_blocked — server returned 403/429; consider reaching out for a feed
+    unreachable — network error or unexpected HTTP error
+    """
+    if not ok:
+        if http_status in (403, 429):
+            return "bot_blocked"
+        return "unreachable"
+    if len(parser.links) < _SPA_LINK_THRESHOLD:
+        return "spa"
+    return "no_markup"
+
+
 def scrape_news_page(url, timeout=10, session=None):
-    """Fetch url and return (date, title, http_ok, parser).
+    """Fetch url and return (date, title, http_ok, parser, http_status).
 
     parser is always returned so callers can inspect signals for --debug output
-    or to write custom extraction logic.
+    or to write custom extraction logic.  http_status is the integer response
+    code on HTTP errors, None on network/timeout failures.
     """
     empty = _NewsParser()
     try:
         r = session.get(url, timeout=timeout)
         r.raise_for_status()
+    except requests.HTTPError as exc:
+        status = exc.response.status_code if exc.response is not None else None
+        return None, None, False, empty, status
     except RequestException:
-        return None, None, False, empty
+        return None, None, False, empty, None
 
     parser = _NewsParser()
     try:
@@ -287,7 +313,7 @@ def scrape_news_page(url, timeout=10, session=None):
         pass  # partial parse is fine; we take what we got
 
     d, title = extract_best(parser)
-    return d, title, True, parser
+    return d, title, True, parser, r.status_code
 
 
 # ---------------------------------------------------------------------------
@@ -369,8 +395,14 @@ def update_activity_source(path, date_str, note, url, method="scrape"):
 # Org loader
 # ---------------------------------------------------------------------------
 
-def write_checked_only(path, method, note=None):
-    """Add/update checked: <TODAY> on an activity source entry (no date/url change)."""
+def write_checked_only(path, method, note=None, hint=None):
+    """Add/update checked: (and optionally hint:) on an activity source entry.
+
+    hint  — short classification string written to activity.<method>.hint so
+            future runs and humans know why scraping failed (spa, no_markup,
+            bot_blocked, unreachable).  Pass None to leave any existing hint
+            unchanged.
+    """
     import yaml as _yaml
 
     with open(path, encoding="utf-8") as f:
@@ -385,6 +417,8 @@ def write_checked_only(path, method, note=None):
     minimal = [f"  {method}:"]
     if note:
         minimal.append(f"    note: {json.dumps(note, ensure_ascii=False)}")
+    if hint:
+        minimal.append(f"    hint: {hint}")
     minimal.append(f"    checked: {TODAY}")
 
     if not activity:
@@ -422,6 +456,7 @@ def write_checked_only(path, method, note=None):
         new_lines = []
         in_this_source = False
         checked_written = False
+        hint_written = False
         i = 0
         while i < len(lines):
             line = lines[i]
@@ -432,21 +467,38 @@ def write_checked_only(path, method, note=None):
                 continue
             if in_this_source:
                 if re.match(r"^  \w", line) or (line and not line.startswith("    ")):
+                    if hint and not hint_written:
+                        new_lines.append(f"    hint: {hint}")
+                        hint_written = True
                     if not checked_written:
                         new_lines.append(f"    checked: {TODAY}")
                         checked_written = True
                     in_this_source = False
+                elif re.match(r"^    hint\s*:", line):
+                    if hint:
+                        new_lines.append(f"    hint: {hint}")
+                        hint_written = True
+                    else:
+                        new_lines.append(line)  # keep existing hint unchanged
+                    i += 1
+                    continue
                 elif re.match(r"^    checked\s*:", line):
+                    if hint and not hint_written:
+                        new_lines.append(f"    hint: {hint}")
+                        hint_written = True
                     new_lines.append(f"    checked: {TODAY}")
                     checked_written = True
                     i += 1
                     continue
             new_lines.append(line)
             i += 1
-        if in_this_source and not checked_written:
+        if in_this_source:
             while new_lines and new_lines[-1] == "":
                 new_lines.pop()
-            new_lines.append(f"    checked: {TODAY}")
+            if hint and not hint_written:
+                new_lines.append(f"    hint: {hint}")
+            if not checked_written:
+                new_lines.append(f"    checked: {TODAY}")
         yaml_block = "\n".join(new_lines)
 
     if not yaml_block.endswith("\n"):
@@ -518,9 +570,15 @@ def main():
         url = org["news_page"]
         print(f"  [{i:3d}/{len(orgs)}] {slug} … ", end="", flush=True)
 
-        # Skip recently-checked orgs unless --force
+        # Skip unless --force
         if not args.force:
             entry = (org.get("activity") or {}).get("scrape") or {}
+            # Permanent-failure hints: skip until --force (no point retrying)
+            existing_hint = entry.get("hint", "")
+            if existing_hint in ("spa", "bot_blocked"):
+                print(f"SKIP [{existing_hint}]")
+                continue
+            # Recency skip: checked within the last 7 days
             chk_date = parse_date(str(entry.get("checked", "") or ""))
             if chk_date:
                 age = (datetime.strptime(TODAY, "%Y-%m-%d").date() - chk_date).days
@@ -533,16 +591,22 @@ def main():
             time.sleep(1.0)
             continue
 
-        d, title, ok, parser = scrape_news_page(url, timeout=args.timeout, session=session)
+        d, title, ok, parser, http_status = scrape_news_page(url, timeout=args.timeout, session=session)
 
         if not ok:
-            print(f"UNREACHABLE  {url}")
+            hint = _classify_hint(ok, http_status, parser)
+            print(f"UNREACHABLE [{hint}]  {url}")
+            if not args.dry_run:
+                write_checked_only(org["path"], "scrape",
+                                   "News page unreachable", hint=hint)
             if args.debug:
                 _print_debug(parser)
         elif d is None:
+            hint = _classify_hint(ok, http_status, parser)
+            print(f"NO_DATE_FOUND [{hint}]  {url}")
             if not args.dry_run:
-                write_checked_only(org["path"], "scrape", "News page found, no machine-readable date")
-            print(f"NO_DATE_FOUND  {url}")
+                write_checked_only(org["path"], "scrape",
+                                   "News page found, no machine-readable date", hint=hint)
             if args.debug:
                 _print_debug(parser)
         else:

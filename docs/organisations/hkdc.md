@@ -27,7 +27,8 @@ activity:
     checked: 2026-06-07
   scrape:
     note: "News page found, no machine-readable date"
-    checked: 2026-06-07
+    hint: no_markup
+    checked: 2026-06-08
 ---
 
 > **Note:** HKDC operates from diaspora in Washington DC. It is included here because its work is specifically about a particular governance system — the accountability structures promised to Hong Kong under One Country, Two Systems — rather than general human rights documentation.
