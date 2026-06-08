@@ -7,6 +7,7 @@
   'party': '🗳️', 'political_party': '🗳️', 'political-party': '🗳️', 'political_movement': '🗳️',
   'governance': '⚖️', 'government': '⚖️'
 } %}
+{% set ri = {'A':'🇦','B':'🇧','C':'🇨','D':'🇩','E':'🇪','F':'🇫','G':'🇬','H':'🇭','I':'🇮','J':'🇯','K':'🇰','L':'🇱','M':'🇲','N':'🇳','O':'🇴','P':'🇵','Q':'🇶','R':'🇷','S':'🇸','T':'🇹','U':'🇺','V':'🇻','W':'🇼','X':'🇽','Y':'🇾','Z':'🇿'} %}
 {% block content %}
 {%- if page.meta.status or page.meta.type or page.meta.country or page.meta.website %}
 <div class="project-meta-box md-typeset">
@@ -27,7 +28,10 @@
       {%- if page.meta.country %}
       <tr>
         <th>Country</th>
-        <td>{{ page.meta.country }}</td>
+        <td>
+          {%- set code = page.meta.country | upper %}
+          {%- if code | length == 2 %}{{ ri.get(code[0], '') }}{{ ri.get(code[1], '') }} {% endif %}{{ page.meta.country }}
+        </td>
       </tr>
       {%- endif %}
       {%- if page.meta.website %}
