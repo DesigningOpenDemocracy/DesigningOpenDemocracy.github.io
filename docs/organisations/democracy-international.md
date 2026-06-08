@@ -22,6 +22,7 @@ activity:
     date: 2026-04-27
     note: "Latest news page scraped"
     url: https://www.democracy-international.org/news
+    checked: 2026-06-08
   rss:
     date: 2026-06-05
     note: "RSS feed active"

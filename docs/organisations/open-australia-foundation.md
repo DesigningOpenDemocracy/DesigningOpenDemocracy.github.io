@@ -20,6 +20,7 @@ activity:
     date: 2026-02-17
     note: "Latest post: Become a Fundraising Champion for Civic Tech"
     url: "https://oaf.org.au/2026/02/17/become-a-fundraising-champion-for-civic-tech/"
+    checked: 2026-06-08
 ---
 
 The OpenAustralia Foundation is a non-partisan charity whose work centres on making Australian parliamentary and government information accessible and usable. They build and maintain several well-known tools:

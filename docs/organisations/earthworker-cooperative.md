@@ -20,6 +20,7 @@ activity:
     date: 2025-08-08
     note: "Latest post: Solidarity in action: Colin Long on a lifetime of co-operation, climate justice "
     url: "https://earthworker.coop/solidarity-in-action-colin-long-on-a-lifetime-of-co-operation-climate-justice-and-the-power-of-the-bunya-fund/"
+    checked: 2026-06-08
 ---
 
 Earthworker Cooperative is a grassroots network of worker-owned cooperatives based in Victoria, Australia. Founded as a response to both the climate crisis and economic inequality, its model is to build community wealth by structuring enterprises as worker cooperatives — where employees are co-owners with equal voice, and profits are distributed locally rather than extracted by external shareholders.

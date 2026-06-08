@@ -23,6 +23,7 @@ activity:
   sitemap:
     date: 2026-06-01
     note: Page last modified (from sitemap)
+    checked: 2026-06-08
   scrape:
     date: 2026-05-28
     note: "Latest news page scraped"

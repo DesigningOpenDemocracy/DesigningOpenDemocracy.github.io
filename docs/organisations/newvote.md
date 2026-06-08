@@ -19,6 +19,7 @@ activity:
     date: 2019-11-11
     note: "Latest post: How's SpeakUp @ the University of Queensland going?"
     url: "https://newvote.org/blog/2019/11/10/hows-speakup-the-university-of-queensland-going"
+    checked: 2026-06-08
   manual:
     date: 2020-05-16
     note: "website loaded. But social media is last noted in twitter May 16, 2020 https://x.com/newvote/status/1261440493004615681 . So uncertain on newvote status"

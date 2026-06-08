@@ -19,6 +19,7 @@ activity:
     date: 2026-03-06
     note: "Latest post: In the Upcoming Local Government Elections, Low Voter Turnout may be the Biggest"
     url: "https://www.eisa.org/in-the-upcoming-local-government-elections-low-voter-turnout-may-be-the-biggest-winner/"
+    checked: 2026-06-08
 ---
 
 EISA (Electoral Institute for Sustainable Democracy in Africa) is an independent, non-partisan organisation founded in 1996, headquartered in Johannesburg with a regional office in Abidjan, Côte d'Ivoire. It works across sub-Saharan Africa supporting electoral processes and democratic institution-building.

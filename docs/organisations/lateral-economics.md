@@ -19,6 +19,7 @@ activity:
   sitemap:
     date: 2026-03-30
     note: Page last modified (from sitemap)
+    checked: 2026-06-08
   manual:
     date: 2026-06-07
     note: "Know personally that this is still active."

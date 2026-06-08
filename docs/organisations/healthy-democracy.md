@@ -20,6 +20,7 @@ activity:
     date: 2026-02-17
     note: "Latest post: Want residents, not politicians, to find answers to LA’s thorniest problems? Try"
     url: "https://healthydemocracy.org/la-assembly-news/2026/02/16/want-residents-not-politicians-to-find-answers-to-las-thorniest-problems-try-a-civic-assembly/"
+    checked: 2026-06-08
 ---
 
 Healthy Democracy developed and institutionalised the **Citizens' Initiative Review** (CIR) — a process in which a randomly selected, representative panel of citizens spends several days intensively studying a ballot measure: hearing from proponents and opponents, questioning experts, and deliberating together. The panel's findings — a balanced statement of key arguments and evidence — are then published in the official voter's guide sent to all voters before the election.

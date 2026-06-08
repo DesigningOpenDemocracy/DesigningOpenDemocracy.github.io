@@ -19,6 +19,7 @@ activity:
     date: 2020-07-09
     note: "Latest post: Orders in Council gazetted for single-councillor wards have taken effect"
     url: "https://prsa.org.au/news/2020/#2020-07b"
+    checked: 2026-06-08
   manual:
     date: 2026-05-01
     note: "website loaded. News page at https://www.prsa.org.au/latest01.htm 2026-05a 'LETTER ON SOUTH AUSTRALIAN ELECTION OUTCOME TO ALL SA MPs:'"

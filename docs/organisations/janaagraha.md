@@ -19,6 +19,7 @@ activity:
     date: 2026-05-14
     note: "Latest post: Too Many Cooks in the Urban Services Kitchen"
     url: "https://www.janaagraha.org/too-many-cooks-in-the-urban-services-kitchen/"
+    checked: 2026-06-08
 ---
 
 Janaagraha Centre for Citizenship and Democracy was founded in December 2001 by Swati and Ramesh Ramanathan in Bangalore. It works to strengthen the relationship between urban citizens and local government, with a focus on ward-level democratic participation and municipal transparency.

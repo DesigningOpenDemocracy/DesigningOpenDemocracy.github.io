@@ -20,6 +20,7 @@ activity:
     date: 2026-03-30
     note: "Latest post: Engaged California Program"
     url: "https://ethelo.com/case-study/engaged-california-program/"
+    checked: 2026-06-08
 ---
 
 Ethelo is a Vancouver-based collective intelligence and digital engagement platform designed for governments and organisations running public consultations. Rather than simple majority polling, Ethelo uses preference aggregation algorithms to identify options with the broadest support across different stakeholder groups — the approach is designed to minimise polarisation rather than simply count the loudest majority.

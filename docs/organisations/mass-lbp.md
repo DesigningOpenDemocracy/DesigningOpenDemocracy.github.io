@@ -22,6 +22,7 @@ activity:
   sitemap:
     date: 2026-05-22
     note: Page last modified (from sitemap)
+    checked: 2026-06-08
   manual:
     date: 2023-08-14
     note: "website loaded. Uncertain if active. Last social media post at Aug 14, 2023 'We’re aiming to expand our team this fall by adding a new Coordinator at MASS. We are looking for a candidate with the right mix of qualities, skills and experience to help us build our practice and raise our game.'"

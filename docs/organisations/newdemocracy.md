@@ -21,6 +21,7 @@ activity:
     date: 2026-03-04
     note: "Latest post: Final report: Upper House Inquiry into Community Consultation Practices."
     url: "https://www.newdemocracy.com.au/2026/03/04/final-report-upper-house-inquiry-into-community-consultation-practices/?utm_source=rss&utm_medium=rss&utm_campaign=final-report-upper-house-inquiry-into-community-consultation-practices"
+    checked: 2026-06-08
 ---
 
 newDemocracy is one of Australia's most active organisations in the deliberative democracy space. It conducts real-world trials using random selection and deliberation — the jury model — to show that citizens, given good information and time to deliberate, can reach considered decisions on complex public issues.

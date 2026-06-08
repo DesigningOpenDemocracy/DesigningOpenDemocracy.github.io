@@ -21,6 +21,7 @@ activity:
     date: 2026-05-21
     note: "Latest news page scraped"
     url: https://bonds.coop/resources/co-op-news/
+    checked: 2026-06-08
   rss:
     date: 2026-06-05
     note: "RSS feed active"

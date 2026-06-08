@@ -19,6 +19,7 @@ activity:
   sitemap:
     date: 2025-09-03
     note: Page last modified (from sitemap)
+    checked: 2026-06-08
   manual:
     date: 2024-09-04
     note: "website loaded. Last article at September 4, 2024 AI-Washing Is an Opportunity"
