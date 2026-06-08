@@ -8,14 +8,14 @@ contributors:
 concepts: [democracy, e-government]
 ---
 
-Internal project covering the technical infrastructure that keeps the [Democracy Landscape](/organisations/) directory healthy — activity tracking, data quality checks, and automated maintenance scripts.
+Internal project covering the technical infrastructure that keeps the [Democracy Landscape](../organisations/organisations.md) directory healthy — activity tracking, data quality checks, and automated maintenance scripts.
 
 ## Scope
 
 - **Activity tracking** — automated scripts probe org websites for RSS feeds, sitemaps, and structured news content to keep "last active" dates current
 - **Data quality** — URL reachability checks, Wikipedia link verification, frontmatter consistency
 - **Data exports** — CSV, JSON, GeoJSON, and KML snapshots generated at build time from org frontmatter
-- **Bot infrastructure** — unified crawler identity, robots.txt compliance, public [bot page](/bot/)
+- **Bot infrastructure** — unified crawler identity, robots.txt compliance, public [bot page](../bot.md)
 
 ## Tooling
 
@@ -28,7 +28,7 @@ Utility scripts live under [`util/`](https://github.com/DesigningOpenDemocracy/D
 | `check_urls.py` | Verifies org website URLs are still reachable |
 | `check_wikipedia.py` | Checks Wikipedia links in org pages resolve correctly |
 
-All scripts identify as `DOD-Bot/1.0` — see the [bot page](/bot/) for details.
+All scripts identify as `DOD-Bot/1.0` — see the [bot page](../bot.md) for details.
 
 ## Recurring tasks
 
@@ -47,6 +47,6 @@ python util/check_urls.py                    # verify org URLs still resolve
 
 ## See also
 
-- [Democracy Landscape](/organisations/)
-- [Bot page](/bot/)
+- [Democracy Landscape](../organisations/organisations.md)
+- [Bot page](../bot.md)
 - [HEARTBEAT.md](https://github.com/DesigningOpenDemocracy/DesigningOpenDemocracy.github.io/blob/main/HEARTBEAT.md)
