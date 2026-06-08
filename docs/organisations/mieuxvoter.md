@@ -4,6 +4,7 @@ type: civil-society
 status: active
 country: FR
 website: https://mieuxvoter.fr
+news_page: https://mieuxvoter.fr/presse
 summary: "A French association advocating for Majority Judgment voting — an alternative electoral method where voters grade each candidate rather than pick one, aimed at reducing strategic voting and better reflecting collective preferences."
 concepts:
   - direct-democracy
@@ -12,6 +13,20 @@ location:
   latitude: 48.8566
   longitude: 2.3522
   name: France
+activity:
+  manual:
+    date: 2025-08-29
+    note: "Latest press item: Bilan des Primaires 2022"
+    url: https://mieuxvoter.fr/presse
+    checked: 2026-06-08
+  rss:
+    note: "No feed found"
+    checked: 2026-06-08
+  scrape:
+    date: 2022-04-06
+    note: "Scraper only finds URL-embedded dates; page shows 2025 items"
+    url: https://mieuxvoter.fr/presse
+    checked: 2026-06-08
 ---
 
 MieuxVoter ("Better Vote") is a French association promoting **Majority Judgment** (Jugement Majoritaire) — a voting method developed by mathematicians Michel Balinski and Rida Laraki in which voters assign a grade to each candidate (e.g. Excellent / Good / Fair / Poor) rather than selecting a single name. The winner is determined by the median grade, which reduces the "lesser evil" problem and makes strategic voting harder.
