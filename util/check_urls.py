@@ -46,10 +46,7 @@ WAYBACK_PREFIX = "https://web.archive.org"
 TODAY = date.today()
 
 HEADERS = {
-    "User-Agent": (
-        "Mozilla/5.0 (compatible; DOD-wiki-checker/1.0; "
-        "+https://designingopendemocracy.github.io)"
-    )
+    "User-Agent": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
 }
 
 
