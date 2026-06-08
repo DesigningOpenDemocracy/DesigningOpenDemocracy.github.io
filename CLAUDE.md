@@ -232,7 +232,8 @@ These are linked from the bottom of the org index table for researcher download.
   python util/scrape_news.py --slug loomio    # single org
   python util/scrape_news.py --dry-run        # print results without writing
   python util/scrape_news.py --debug          # show what date signals were found on each page
-  python util/scrape_news.py --update-rss     # write discovered feed URLs to rss_feed: frontmatter
+  python util/scrape_news.py --update-rss     # write discovered RSS feed URLs to rss_feed: frontmatter
+  python util/scrape_news.py --update-ics     # write discovered iCal feed URLs to ics_feed: frontmatter
   python util/scrape_news.py --force          # re-scrape even if checked recently or spa/bot_blocked
   ```
 

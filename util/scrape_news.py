@@ -14,6 +14,10 @@ extracts the most recent article date from machine-readable signals:
 Also discovers RSS/Atom feed links in <link rel="alternate"> and can write
 them to rss_feed: frontmatter with --update-rss.
 
+Also discovers iCal/ICS calendar links (<link rel="alternate" type="text/calendar">,
+webcal:// hrefs, and .ics file links) and can write them to ics_feed: frontmatter
+with --update-ics.
+
 Writes to activity.scrape in org frontmatter. Respects robots.txt.
 Never writes if no machine-readable date is found.
 
@@ -27,6 +31,7 @@ Usage:
     python util/scrape_news.py --timeout 10
     python util/scrape_news.py --dry-run    # print results without writing
     python util/scrape_news.py --update-rss # write discovered RSS feeds to rss_feed:
+    python util/scrape_news.py --update-ics # write discovered iCal feeds to ics_feed:
     python util/scrape_news.py --debug      # show date signals found per page
 
 Requirements: requests (util/requirements.txt)
@@ -115,6 +120,7 @@ class _NewsParser(HTMLParser):
         self.links = []            # hrefs from <a> tags (used for SPA detection / link count)
         self.link_texts = []       # (href, text) pairs — text = visible anchor label
         self.feed_urls = []        # href values from <link rel="alternate"> feed links
+        self.ical_urls = []        # iCal links: <link rel=alternate type=text/calendar>, webcal://, *.ics
         self._in_jsonld = False
         self._jsonld_buf = ""
         self._in_link = False
@@ -131,6 +137,9 @@ class _NewsParser(HTMLParser):
             href = d.get("href", "").strip()
             if href:
                 self.links.append(href)
+                href_lower = href.lower()
+                if href_lower.startswith("webcal://") or href_lower.split("?")[0].endswith(".ics"):
+                    self.ical_urls.append(href)
             self._in_link = bool(href)
             self._link_href = href
             self._link_buf = ""
@@ -138,11 +147,11 @@ class _NewsParser(HTMLParser):
             rel = (d.get("rel") or "").lower().split()
             type_ = (d.get("type") or "").lower()
             href = (d.get("href") or "").strip()
-            if "alternate" in rel and href and type_ in (
-                "application/rss+xml",
-                "application/atom+xml",
-            ):
-                self.feed_urls.append(href)
+            if "alternate" in rel and href:
+                if type_ in ("application/rss+xml", "application/atom+xml"):
+                    self.feed_urls.append(href)
+                elif type_ in ("text/calendar", "text/x-vcalendar"):
+                    self.ical_urls.append(href)
         elif tag == "time":
             dt = d.get("datetime", "").strip()
             if dt:
@@ -369,6 +378,7 @@ def _print_debug(parser):
     print(f"    │ URL date patterns: {url_dates or '(none)'}")
     print(f"    │ text date matches: {text_dates or '(none)'}")
     print(f"    │ feed links found : {parser.feed_urls[:3] or '(none)'}")
+    print(f"    │ ical links found : {parser.ical_urls[:3] or '(none)'}")
     print(f"    │ total <a> links  : {len(parser.links)}")
     print(f"    └───────────────────────────────────────────────")
 
@@ -677,6 +687,38 @@ def write_rss_feed(path, feed_url):
     return True
 
 
+def write_ics_feed(path, feed_url):
+    """Write ics_feed: to org frontmatter if not already present.
+
+    webcal:// URIs are normalised to https:// so the URL is directly fetchable
+    by check_rss.py.  Inserts after rss_feed: when present, otherwise after
+    website:, otherwise at end of frontmatter.
+    Returns False (no write) if ics_feed: already exists in the file.
+    """
+    # Normalise webcal:// → https:// so check_rss.py can fetch it directly
+    if feed_url.lower().startswith("webcal://"):
+        feed_url = "https://" + feed_url[9:]
+
+    with open(path, encoding="utf-8") as f:
+        content = f.read()
+    parts = content.split("---", 2)
+    if len(parts) < 3 or parts[0] != "":
+        return False
+    yaml_block, rest = parts[1], parts[2]
+    if re.search(r'^ics_feed\s*:', yaml_block, re.MULTILINE):
+        return False
+    for pattern in (r'^(rss_feed\s*:.*\n)', r'^(website\s*:.*\n)'):
+        m = re.search(pattern, yaml_block, re.MULTILINE)
+        if m:
+            yaml_block = yaml_block[:m.end()] + f"ics_feed: {feed_url}\n" + yaml_block[m.end():]
+            break
+    else:
+        yaml_block = yaml_block.rstrip("\n") + f"\nics_feed: {feed_url}\n"
+    with open(path, "w", encoding="utf-8") as f:
+        f.write("---" + yaml_block + "---" + rest)
+    return True
+
+
 # ---------------------------------------------------------------------------
 # Org loader
 # ---------------------------------------------------------------------------
@@ -708,6 +750,7 @@ def load_orgs(slug_filter=None, include_inactive=False):
             "path": path,
             "activity": meta.get("activity") or {},
             "rss_feed": (meta.get("rss_feed") or "").strip(),
+            "ics_feed": (meta.get("ics_feed") or "").strip(),
         })
     return orgs
 
@@ -728,6 +771,8 @@ def main():
                         help="Print what date signals were found on each page (useful for writing custom extractors)")
     parser.add_argument("--update-rss", action="store_true",
                         help="Write discovered RSS/Atom feed URLs to rss_feed: frontmatter for orgs that lack one")
+    parser.add_argument("--update-ics", action="store_true",
+                        help="Write discovered iCal feed URLs to ics_feed: frontmatter for orgs that lack one")
     args = parser.parse_args()
 
     orgs = load_orgs(slug_filter=args.slug, include_inactive=args.all)
@@ -740,6 +785,7 @@ def main():
 
     updated = 0
     feeds_written = 0
+    ics_written = 0
     print(f"\nScraping {len(orgs)} org news page(s) (timeout={args.timeout}s)…\n")
 
     for i, org in enumerate(orgs, 1):
@@ -777,6 +823,13 @@ def main():
                 if write_rss_feed(org["path"], resolved_feeds[0]):
                     feeds_written += 1
 
+        # Report / write discovered iCal feeds
+        if page_parser.ical_urls:
+            resolved_icals = [urljoin(url, f) for f in page_parser.ical_urls[:2]]
+            if args.update_ics and not args.dry_run and not org["ics_feed"]:
+                if write_ics_feed(org["path"], resolved_icals[0]):
+                    ics_written += 1
+
         if not ok:
             hint = _classify_hint(ok, http_status, page_parser)
             print(f"UNREACHABLE [{hint}]")
@@ -799,7 +852,12 @@ def main():
         if page_parser.feed_urls:
             resolved_feeds = [urljoin(url, f) for f in page_parser.feed_urls[:2]]
             for f in resolved_feeds:
-                print(f"    → feed: {f}")
+                print(f"    → feed:  {f}")
+
+        if page_parser.ical_urls:
+            resolved_icals = [urljoin(url, f) for f in page_parser.ical_urls[:2]]
+            for f in resolved_icals:
+                print(f"    → ical:  {f}")
 
         if args.debug:
             _print_debug(page_parser)
@@ -813,6 +871,8 @@ def main():
         print(f"Updated {updated} / {len(orgs)} org page(s)")
         if feeds_written:
             print(f"Wrote rss_feed: for {feeds_written} org(s) — run check_rss.py --update-activity to populate activity.rss")
+        if ics_written:
+            print(f"Wrote ics_feed: for {ics_written} org(s) — run check_rss.py --update-activity to populate activity.ical")
 
     return 0
 
