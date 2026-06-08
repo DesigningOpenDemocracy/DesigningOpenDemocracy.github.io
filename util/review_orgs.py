@@ -100,13 +100,19 @@ def load_orgs(slug_filter=None, include_inactive=False):
         status = meta.get("status", "")
         if not include_inactive and status not in ("active",):
             continue
+        activity = meta.get("activity") or {}
+        scrape_hint = (activity.get("scrape") or {}).get("hint", "")
         orgs.append({
             "slug": slug,
             "path": path,
             "title": meta.get("title", slug),
             "status": status,
             "website": meta.get("website", "") or "",
-            "activity": meta.get("activity") or {},
+            "news_page": (meta.get("news_page") or "").strip(),
+            "rss_feed": (meta.get("rss_feed") or "").strip(),
+            "ics_feed": (meta.get("ics_feed") or "").strip(),
+            "scrape_hint": scrape_hint,
+            "activity": activity,
         })
     return orgs
 
@@ -344,6 +350,28 @@ def review_org(org, index, total):
         print(f"  Manual:   {manual_entry.get('date')} ({age}d ago)  —  {manual_entry.get('note', '')}")
     else:
         print("  Manual:   never reviewed")
+
+    # Show automated data coverage and any scrape hint
+    has_auto = any(
+        (activity.get(m) or {}).get("date")
+        for m in ("rss", "ical", "scrape", "sitemap", "social", "dod")
+    )
+    hint = org.get("scrape_hint", "")
+    if org["rss_feed"]:
+        print(f"  RSS feed: {org['rss_feed']}")
+    elif org["ics_feed"]:
+        print(f"  iCal:     {org['ics_feed']}")
+    elif org["news_page"] and hint:
+        _HINT_MSG = {
+            "no_markup":   "scraper found no machine-readable dates — ask org for RSS/iCal",
+            "spa":         "page is JS-rendered, scraper can't read it — ask org for RSS/iCal",
+            "bot_blocked": "server blocked the scraper — ask org for RSS/iCal",
+            "unreachable": "news page was unreachable",
+        }
+        print(f"  News:     {org['news_page']}")
+        print(f"  Hint:     {hint}  — {_HINT_MSG.get(hint, hint)}")
+    elif org["news_page"] and not has_auto:
+        print(f"  News:     {org['news_page']}  (no automated data yet)")
 
     website = org["website"]
     if website and WAYBACK_PREFIX not in website:

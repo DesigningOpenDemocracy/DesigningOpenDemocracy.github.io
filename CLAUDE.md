@@ -205,7 +205,7 @@ Generated at build time by `hooks/data_export.py`. Served as static assets:
 
 | File | Description |
 |---|---|
-| `/data/organisations.csv` | Flat table — all orgs, one row each. Includes `activity_date`, `activity_method`, `rss_feed`. |
+| `/data/organisations.csv` | Flat table — all orgs, one row each. Includes `activity_date`, `activity_method`, `rss_feed`, `ics_feed`. |
 | `/data/organisations.json` | Structured JSON — concepts as arrays, full `activity` dict, computed `activity_date`/`activity_method`. |
 | `/data/organisations.geojson` | FeatureCollection — orgs with lat/lon only. |
 | `/data/organisations.kml` | KML — orgs with lat/lon, colour-coded by status. |
