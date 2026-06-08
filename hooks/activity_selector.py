@@ -108,17 +108,21 @@ def select_activity(activity, today=None):
         if age <= STALENESS_DAYS.get(source, 180):
             return {**entry, "method": source, "age_days": age, "date": d}
 
-    # Step 3: all sources stale — fall back to most recent across everything
+    # Step 3: all sources stale — prefer most recent content source; only use
+    # site sources if no content dates exist at all.
     best = None
     best_date = None
-    for source in CONTENT_SOURCES + SITE_SOURCES:
-        entry = activity.get(source)
-        if not entry or not isinstance(entry, dict):
-            continue
-        d = _parse_date(entry.get("date"))
-        if d and (best_date is None or d > best_date):
-            best_date = d
-            best = {**entry, "method": source, "age_days": (today - d).days, "date": d}
+    for source_group in [CONTENT_SOURCES, SITE_SOURCES]:
+        for source in source_group:
+            entry = activity.get(source)
+            if not entry or not isinstance(entry, dict):
+                continue
+            d = _parse_date(entry.get("date"))
+            if d and (best_date is None or d > best_date):
+                best_date = d
+                best = {**entry, "method": source, "age_days": (today - d).days, "date": d}
+        if best:
+            break  # don't fall through to site sources if any content date exists
 
     return best
 
