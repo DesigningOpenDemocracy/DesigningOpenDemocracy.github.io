@@ -29,6 +29,31 @@ All requests identify as:
 DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)
 ```
 
+## Making your site bot-friendly
+
+The bot works best when your site publishes machine-readable signals. In priority order:
+
+**1. Publish an RSS or Atom feed**
+This is the most reliable signal. The bot probes [23 common feed paths](/util/check_rss.py) automatically — no configuration needed on your end if your CMS already generates one. WordPress, Ghost, Substack, and most modern platforms do this by default.
+
+**2. Add structured markup to your news/blog pages**
+If you don't have a feed, the bot falls back to scraping your news page. It reads dates only from machine-readable markup — not from visible text. Any of these work:
+
+- **JSON-LD** — `"datePublished"` or `"dateModified"` in a `<script type="application/ld+json">` block
+- **OpenGraph** — `<meta property="article:published_time">` or `article:modified_time`
+- **HTML time element** — `<time datetime="2026-05-01">` on article listings
+
+**3. Publish a sitemap**
+A `sitemap.xml` with `<lastmod>` dates is used as a last-resort activity signal when no feed or structured news page is available.
+
+**4. Explicitly allow the bot in robots.txt**
+If your site uses aggressive bot-blocking, add an explicit allow:
+
+```
+User-agent: DOD-Bot
+Allow: /
+```
+
 ## Opting out
 
 If you would prefer your site not be checked, add the following to your `robots.txt`:
