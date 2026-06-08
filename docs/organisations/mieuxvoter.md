@@ -50,4 +50,5 @@ MieuxVoter runs citizen experiments, supports campaigns for local adoption of Ma
 
 - [Majority Judgment](../concepts/majority-judgment.md)
 - [E-Government](../concepts/e-government.md)
+- [Democracy Apps & Tools](../concepts/democracy-tools.md)
 - [Démocratie Ouverte](democratie-ouverte.md)
