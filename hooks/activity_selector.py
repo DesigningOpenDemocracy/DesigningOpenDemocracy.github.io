@@ -16,14 +16,14 @@ Schema expected in org frontmatter:
         note: "Visited site, confirmed active"
 
 Selection logic:
-  1. Walk sources in priority order: manual > dod > social > rss > scrape > sitemap
+  1. Walk sources in priority order: manual > dod > social > rss > ical > scrape > sitemap
   2. Use the first source whose date is within its staleness threshold
   3. If none qualify (all stale), fall back to the most recent across all sources
 """
 
 from datetime import date
 
-PRIORITY = ["manual", "dod", "social", "rss", "scrape", "sitemap"]
+PRIORITY = ["manual", "dod", "social", "rss", "ical", "scrape", "sitemap"]
 
 # How many days before a source is considered stale and skipped in favour of
 # a lower-priority but fresher source.
@@ -32,6 +32,7 @@ STALENESS_DAYS = {
     "dod":     730,   # same confidence as manual
     "social":  365,   # social presence decays as a signal within a year
     "rss":     365,   # actual content publication
+    "ical":    365,   # calendar events — reliable structured feed like rss
     "scrape":  365,   # scraped news page date — same confidence as rss
     "sitemap": 180,   # weak signal (CMS can touch lastmod for any reason)
 }

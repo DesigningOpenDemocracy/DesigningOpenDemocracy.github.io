@@ -25,8 +25,10 @@ activity:
     url: https://www.opensocietyfoundations.org/newsroom
     checked: 2026-06-07
   scrape:
-    note: "News page found, no machine-readable date"
-    checked: 2026-06-07
+    date: 2026-05-20
+    note: "Latest news page scraped"
+    url: https://www.opensocietyfoundations.org/newsroom
+    checked: 2026-06-08
 ---
 
 The Open Society Foundations (OSF) are a global network of foundations founded by George Soros in 1979. Beginning with scholarships for Black South African students and support for East European dissidents, OSF grew into the world's largest private funder of independent civil society organisations working on democracy, human rights, justice, and equity.

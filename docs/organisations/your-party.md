@@ -18,7 +18,6 @@ activity:
     date: 2026-06-05
     note: "Latest tweet: police accountability post"
     url: https://x.com/thisisyourparty
-
   rss:
     date: 2026-06-07
     note: "RSS feed active"

@@ -22,6 +22,10 @@ activity:
   rss:
     note: "No feed found"
     checked: 2026-06-07
+  scrape:
+    note: "News page unreachable"
+    hint: bot_blocked
+    checked: 2026-06-08
 ---
 
 BERSIH 2.0 (Coalition for Clean and Fair Elections) is a non-partisan coalition of over 90 Malaysian civil society organisations, formally launched in April 2010 as a continuation of the original BERSIH coalition formed in 2007. It is Malaysia's most prominent electoral reform movement.

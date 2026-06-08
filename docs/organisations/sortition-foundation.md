@@ -27,6 +27,10 @@ activity:
     note: "website loaded. https://www.sortitionfoundation.org/updates is the news page. 26 February, 2026 'Frontiers of Democratic Lotteries Workshop'"
     url: https://www.sortitionfoundation.org/updates
     checked: 2026-06-07
+  scrape:
+    note: "News page unreachable"
+    hint: bot_blocked
+    checked: 2026-06-08
 ---
 
 The Sortition Foundation is the UK's leading organisation specifically dedicated to sortition — the selection of decision-makers by random lot rather than election. Their flagship campaign is the **House of Citizens**: replacing the appointed House of Lords with a chamber of randomly selected citizens who serve fixed, non-renewable terms.

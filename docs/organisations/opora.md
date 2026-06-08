@@ -24,8 +24,10 @@ activity:
     url: https://oporaua.org/en/announce
     checked: 2026-06-07
   scrape:
-    note: "News page found, no machine-readable date"
-    checked: 2026-06-07
+    date: 2026-05-20
+    note: "Latest news page scraped"
+    url: https://oporaua.org/en/announce
+    checked: 2026-06-08
 ---
 
 Civil Network OPORA is Ukraine's primary independent election observation and civic oversight organisation, founded in 2006. It conducts comprehensive long-term and short-term election observation for presidential, parliamentary, and local elections, and publishes detailed analytical reports on each electoral cycle.

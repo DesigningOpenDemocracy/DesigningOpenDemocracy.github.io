@@ -4,6 +4,7 @@ type: research
 status: active
 country: CA
 website: https://participedia.net
+rss_feed: https://medium.com/feed/@participediaproject
 news_page: https://participediaproject.medium.com/
 summary: "A global open-access database and research platform cataloguing thousands of participatory democracy cases, methods, and organisations from around the world."
 location:
@@ -18,13 +19,21 @@ concepts:
   - democracy
 activity:
   rss:
-    note: "No feed found"
-    checked: 2026-06-07
+    date: 2026-01-05
+    note: "Latest post: Participedia Schools 2025 Summary Reports"
+    url: https://participediaproject.medium.com/participedia-schools-2025-summary-reports-5f84ce0bd47f?source=rss-4e7f7d842e0a------2
+    checked: 2026-06-08
   manual:
     date: 2026-01-06
     note: "website loaded. News page points to https://participediaproject.medium.com/ where latest is Jan 6, 2026 'Participedia Schools 2025 Summary Reports'"
     url: https://participediaproject.medium.com/
     checked: 2026-06-07
+
+  scrape:
+    date: 2025-06-02
+    note: "Latest news page scraped"
+    url: https://participediaproject.medium.com/
+    checked: 2026-06-08
 ---
 
 Participedia is a collaborative academic platform hosted by the University of British Columbia and Harvard University. It functions as a living encyclopaedia of participatory democracy — cataloguing case studies, methods, and organisations from across the world with structured, comparable data.

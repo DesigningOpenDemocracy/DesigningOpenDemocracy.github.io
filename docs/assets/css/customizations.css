@@ -734,6 +734,7 @@
   vertical-align: middle;
 }
 .method-rss      { background: #fff3e0; color: #e65100; }
+.method-ical     { background: #e1f5fe; color: #01579b; }
 .method-sitemap  { background: #f3e5f5; color: #6a1b9a; }
 .method-manual   { background: #e8f5e9; color: #1b5e20; }
 .method-dod      { background: #e3f2fd; color: #0d47a1; }

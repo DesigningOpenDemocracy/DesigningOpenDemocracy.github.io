@@ -20,7 +20,6 @@ activity:
     date: 2026-06-04
     note: "Latest news page scraped"
     url: https://diem25.org/news
-
   rss:
     date: 2026-06-05
     note: "RSS feed active"
