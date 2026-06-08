@@ -25,7 +25,6 @@ activity:
     note: "website loaded. It's german... but this looks like news https://www.memorial.de/nachrichten wehere latest news is 04.06.2026 'Asat Miftachov wird im Lager gefoltert'"
     url: https://www.memorial.de/nachrichten
     checked: 2026-06-07
-
   scrape:
     date: 2026-06-04
     note: "Latest news page scraped"

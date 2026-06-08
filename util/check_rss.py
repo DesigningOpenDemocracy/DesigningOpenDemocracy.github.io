@@ -382,6 +382,8 @@ def update_activity_source(path, date_str, note, feed_url, post_url=None, method
 
         # If we never found this source, append it inside the activity block
         if in_activity and method not in (meta.get("activity") or {}):
+            while new_lines and new_lines[-1] == "":
+                new_lines.pop()
             new_lines.extend(source_lines)
 
         yaml_block = "\n".join(new_lines)

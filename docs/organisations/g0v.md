@@ -29,7 +29,6 @@ activity:
     note: "News page found, no machine-readable date"
     hint: no_markup
     checked: 2026-06-08
-
   ical:
     date: 2026-06-07
     note: "Latest event: Cofacts 查核協作者培訓"
