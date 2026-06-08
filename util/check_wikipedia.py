@@ -47,7 +47,7 @@ CANDIDATES = [
 ]
 
 API_BASE = "https://en.wikipedia.org/api/rest_v1/page/summary/"
-HEADERS = {"User-Agent": "DOD-wiki-checker/1.0 (https://designingopendemocracy.com)"}
+HEADERS = {"User-Agent": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"}
 
 
 def check(title):

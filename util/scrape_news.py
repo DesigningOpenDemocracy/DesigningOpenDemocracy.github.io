@@ -98,7 +98,7 @@ ORGS_DIR = os.path.join(DOCS_DIR, "organisations")
 SKIP_FILES = {"organisations.md"}
 WAYBACK_PREFIX = "https://web.archive.org"
 TODAY = datetime.today().strftime("%Y-%m-%d")
-USER_AGENT = "DOD-NewsScraper/1.0 (DesigningOpenDemocracy activity monitor)"
+USER_AGENT = "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
 
 # Pages with fewer raw links than this are almost certainly JavaScript SPAs
 _SPA_LINK_THRESHOLD = 5

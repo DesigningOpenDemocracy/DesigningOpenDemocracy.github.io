@@ -61,6 +61,7 @@ hooks:
 
 not_in_nav: |
   llms.txt
+  bot.md
 
 extra_javascript:
   - https://unpkg.com/leaflet@1.9.4/dist/leaflet.js

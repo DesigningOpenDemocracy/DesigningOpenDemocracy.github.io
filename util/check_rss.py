@@ -42,6 +42,8 @@ except ImportError:
     print("Missing dependency: pip install requests")
     sys.exit(1)
 
+DOD_USER_AGENT = "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+
 DOCS_DIR = os.path.join(os.path.dirname(__file__), "..", "docs")
 ORGS_DIR = os.path.join(DOCS_DIR, "organisations")
 SKIP_FILES = {"organisations.md"}
@@ -125,7 +127,7 @@ def probe_sitemap(base_url, timeout=8, session=None):
     """
     if session is None:
         session = requests.Session()
-        session.headers["User-Agent"] = "DOD-RSS-Probe/1.0 (democracy wiki feed discovery)"
+        session.headers["User-Agent"] = DOD_USER_AGENT
 
     parsed = urlparse(base_url)
     root = f"{parsed.scheme}://{parsed.netloc}"
@@ -166,7 +168,7 @@ def probe_feeds(base_url, timeout=8, session=None):
     """Return the first feed URL found (RSS/Atom/sitemap), or None."""
     if session is None:
         session = requests.Session()
-    session.headers.update({"User-Agent": "DOD-RSS-Probe/1.0 (democracy wiki feed discovery)"})
+    session.headers.update({"User-Agent": DOD_USER_AGENT})
 
     parsed = urlparse(base_url)
     root = f"{parsed.scheme}://{parsed.netloc}"
@@ -188,7 +190,7 @@ def latest_sitemap_lastmod(sitemap_url, timeout=10, session=None):
     """Return the most recent <lastmod> date from a sitemap, or None."""
     if session is None:
         session = requests.Session()
-        session.headers["User-Agent"] = "DOD-RSS-Reader/1.0 (democracy wiki)"
+        session.headers["User-Agent"] = DOD_USER_AGENT
     try:
         r = session.get(sitemap_url, timeout=timeout)
         r.raise_for_status()
@@ -308,7 +310,7 @@ def latest_from_feed(url, timeout=10, session=None):
     """
     if session is None:
         session = requests.Session()
-        session.headers["User-Agent"] = "DOD-RSS-Reader/1.0 (democracy wiki)"
+        session.headers["User-Agent"] = DOD_USER_AGENT
     try:
         r = session.get(url, timeout=timeout)
         r.raise_for_status()
@@ -602,7 +604,7 @@ def main():
         sys.exit(0)
 
     session = requests.Session()
-    session.headers.update({"User-Agent": "DOD-RSS-Probe/1.0 (democracy wiki feed discovery)"})
+    session.headers.update({"User-Agent": DOD_USER_AGENT})
 
     results = []
     found = []
