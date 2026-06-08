@@ -850,6 +850,8 @@ def main():
             if not args.dry_run:
                 if update_activity_source(org["path"], d.isoformat(), note, url):
                     updated += 1
+                else:
+                    write_checked_only(org["path"], "scrape")
 
         if page_parser.feed_urls:
             resolved_feeds = [urljoin(url, f) for f in page_parser.feed_urls[:2]]

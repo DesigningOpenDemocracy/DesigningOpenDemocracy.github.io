@@ -647,9 +647,10 @@ def main():
                 if is_sitemap_url(feed_url):
                     d = latest_sitemap_lastmod(feed_url, timeout=args.timeout, session=session)
                     if d:
-                        update_activity_source(org["path"], d.isoformat(),
-                                             "Page last modified (from sitemap)", feed_url,
-                                             method="sitemap")
+                        if not update_activity_source(org["path"], d.isoformat(),
+                                                      "Page last modified (from sitemap)", feed_url,
+                                                      method="sitemap"):
+                            write_checked_only(org["path"], "sitemap")
                         print(f"SITEMAP  {d}")
                         result["latest_date"] = d.isoformat()
                     else:
@@ -659,7 +660,8 @@ def main():
                     d, title, link, http_ok = latest_from_feed(feed_url, timeout=args.timeout, session=session)
                     if d:
                         note = f"Latest post: {title[:80]}" if title else "RSS feed active"
-                        update_activity_source(org["path"], d.isoformat(), note, feed_url, link or None)
+                        if not update_activity_source(org["path"], d.isoformat(), note, feed_url, link or None):
+                            write_checked_only(org["path"], "rss")
                         print(f"UPDATED  {d}  {title[:50]}")
                         result["latest_date"] = d.isoformat()
                         result["latest_title"] = title
@@ -711,7 +713,8 @@ def main():
                     print(f"NO_PAST_EVENTS  {ics_url}")
                 else:
                     note = f"Latest event: {title[:80]}" if title else "Latest calendar event"
-                    update_activity_source(org["path"], d.isoformat(), note, ics_url, method="ical")
+                    if not update_activity_source(org["path"], d.isoformat(), note, ics_url, method="ical"):
+                        write_checked_only(org["path"], "ical")
                     print(f"UPDATED  {d}  {title[:50] if title else '(no title)'}")
 
                 time.sleep(0.5)
