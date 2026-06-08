@@ -82,9 +82,8 @@ The invariants recorded there are not immutable. Any document in this repo — i
   ```
   - `method` keys: `manual` | `rss` | `ical` | `scrape` | `sitemap` | `dod` | `social`
   - `checked:` — optional; the date the source was last probed, regardless of whether new content was found. Written automatically by `check_rss.py`, `scrape_news.py`, and `review_orgs.py`. Entries with no `date` but a `checked` date mean the source was probed but found nothing.
-  - Priority order (highest first): `manual` > `dod` > `social` > `rss` > `ical` > `scrape` > `sitemap`
+  - Selection logic: (1) pick the **most recent** date among content sources (`manual`, `dod`, `social`, `rss`, `ical`, `scrape`) that are within their staleness threshold; (2) if none qualify, fall back to `sitemap` within its threshold; (3) if all stale, show the most recent across everything
   - Staleness thresholds: `manual`/`dod` 730 d · `social`/`rss`/`ical`/`scrape` 365 d · `sitemap` 180 d
-  - A source is skipped if older than its threshold; the next-priority fresh source wins
   - If all sources are stale, the most recent entry is shown regardless
   - `util/check_rss.py --update-activity` populates `rss`, `sitemap`, and `ical` entries automatically; re-runs skip orgs checked within 7 days (use `--force` to override)
   - `util/scrape_news.py` populates `scrape` entries for orgs with `news_page:` set; same skip behaviour

@@ -16,9 +16,11 @@ Schema expected in org frontmatter:
         note: "Visited site, confirmed active"
 
 Selection logic:
-  1. Walk sources in priority order: manual > dod > social > rss > ical > scrape > sitemap
-  2. Use the first source whose date is within its staleness threshold
-  3. If none qualify (all stale), fall back to the most recent across all sources
+  1. Among content sources (manual, dod, social, rss, ical, scrape), pick the
+     most recent date that is within its staleness threshold.
+  2. If no content source qualifies, fall back to site activity (sitemap)
+     within its staleness threshold.
+  3. If all sources are stale, fall back to the most recent across all sources.
 
 The computed result is available two ways:
   - page.meta.computed_activity  — set per-page in on_page_context (used by organisation.html)
@@ -31,7 +33,10 @@ import glob
 import os
 from datetime import date
 
-PRIORITY = ["manual", "dod", "social", "rss", "ical", "scrape", "sitemap"]
+# Sources that indicate actual content publication (preferred)
+CONTENT_SOURCES = ["manual", "dod", "social", "rss", "ical", "scrape"]
+# Sources that indicate only site-level activity (fallback)
+SITE_SOURCES = ["sitemap"]
 
 # How many days before a source is considered stale and skipped in favour of
 # a lower-priority but fresher source.
@@ -73,7 +78,10 @@ def select_activity(activity, today=None):
     if today is None:
         today = date.today()
 
-    for source in PRIORITY:
+    # Step 1: freshest content signal within its staleness threshold
+    best_content = None
+    best_content_date = None
+    for source in CONTENT_SOURCES:
         entry = activity.get(source)
         if not entry or not isinstance(entry, dict):
             continue
@@ -81,13 +89,29 @@ def select_activity(activity, today=None):
         if d is None:
             continue
         age = (today - d).days
-        if age <= STALENESS_DAYS.get(source, 365):
+        if age <= STALENESS_DAYS.get(source, 365) and (best_content_date is None or d > best_content_date):
+            best_content_date = d
+            best_content = {**entry, "method": source, "age_days": age, "date": d}
+
+    if best_content:
+        return best_content
+
+    # Step 2: fall back to site activity (sitemap) if no content signals qualify
+    for source in SITE_SOURCES:
+        entry = activity.get(source)
+        if not entry or not isinstance(entry, dict):
+            continue
+        d = _parse_date(entry.get("date"))
+        if d is None:
+            continue
+        age = (today - d).days
+        if age <= STALENESS_DAYS.get(source, 180):
             return {**entry, "method": source, "age_days": age, "date": d}
 
-    # All sources stale — fall back to most recent
+    # Step 3: all sources stale — fall back to most recent across everything
     best = None
     best_date = None
-    for source in PRIORITY:
+    for source in CONTENT_SOURCES + SITE_SOURCES:
         entry = activity.get(source)
         if not entry or not isinstance(entry, dict):
             continue
