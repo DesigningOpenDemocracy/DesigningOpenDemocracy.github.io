@@ -225,13 +225,15 @@ These are linked from the bottom of the org index table for researcher download.
   ```
   Probes 23 common feed URL paths per site. For real feeds, writes `activity.rss` with latest post date and title. For sitemaps (fallback), writes `activity.sitemap` with `<lastmod>` date. When `ics_feed:` is set, also fetches the iCal calendar and writes `activity.ical` with the most recent past event date. Never overwrites a newer existing entry for the same source.
 
-- `util/scrape_news.py` — scrapes news/blog index pages for orgs that lack a usable RSS feed. Opt-in: only runs for orgs with `news_page:` set in frontmatter. Extracts dates from machine-readable signals (JSON-LD, OpenGraph, `<time datetime>`) and as a fallback from date patterns in article URLs (e.g. `/2026/01/15/`). Respects robots.txt. Writes `activity.scrape`.
+- `util/scrape_news.py` — scrapes news/blog index pages for orgs that lack a usable RSS feed. Opt-in: only runs for orgs with `news_page:` set in frontmatter. Extracts dates from multiple signals in priority order: JSON-LD → `<meta>` / microdata (`itemprop="datePublished"`) → `<time datetime>` → `<time>` text content → URL path patterns (`/2026/01/15/`) → human-readable text date patterns ("January 15, 2026" etc.). Also detects `<link rel="alternate">` RSS/Atom feeds in the page `<head>`. Respects robots.txt. Writes `activity.scrape`.
   ```
   python util/scrape_news.py                  # all active orgs with news_page:
   python util/scrape_news.py --all            # include inactive orgs
   python util/scrape_news.py --slug loomio    # single org
   python util/scrape_news.py --dry-run        # print results without writing
   python util/scrape_news.py --debug          # show what date signals were found on each page
+  python util/scrape_news.py --update-rss     # write discovered feed URLs to rss_feed: frontmatter
+  python util/scrape_news.py --force          # re-scrape even if checked recently or spa/bot_blocked
   ```
 
 ### Org index table filters (`docs/overrides/organisations.html`)

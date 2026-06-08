@@ -3,10 +3,16 @@
 scrape_news.py — Scrape org news/blog pages for latest activity dates.
 
 For each org with a `news_page:` frontmatter field, fetches that URL and
-extracts the most recent article date from machine-readable signals only:
+extracts the most recent article date from machine-readable signals:
   1. JSON-LD datePublished / dateModified
-  2. OpenGraph article:published_time / article:modified_time
-  3. <time datetime="..."> elements
+  2. OpenGraph / Dublin Core / schema.org <meta> date fields
+  3. Schema.org microdata via itemprop="datePublished/dateModified"
+  4. <time datetime="..."> elements (or <time> with parseable text content)
+  5. <a href> URL path patterns (e.g. /2026/01/15/) with anchor text as title
+  6. Human-readable text date patterns ("January 15, 2026", "15 Jan 2026" etc.)
+
+Also discovers RSS/Atom feed links in <link rel="alternate"> and can write
+them to rss_feed: frontmatter with --update-rss.
 
 Writes to activity.scrape in org frontmatter. Respects robots.txt.
 Never writes if no machine-readable date is found.
@@ -20,6 +26,8 @@ Usage:
     python util/scrape_news.py --slug loomio
     python util/scrape_news.py --timeout 10
     python util/scrape_news.py --dry-run    # print results without writing
+    python util/scrape_news.py --update-rss # write discovered RSS feeds to rss_feed:
+    python util/scrape_news.py --debug      # show date signals found per page
 
 Requirements: requests (util/requirements.txt)
 """
@@ -34,12 +42,38 @@ import time
 from datetime import date, datetime
 from email.utils import parsedate_to_datetime
 from html.parser import HTMLParser
-from urllib.parse import urlparse
+from urllib.parse import urlparse, urljoin
 from urllib.robotparser import RobotFileParser
 
 # Matches /YYYY/MM/DD/ path segments — used as a low-priority date fallback
 _URL_DATE_YMD = re.compile(r'/(\d{4})/(\d{1,2})/(\d{1,2})(?:[/?#]|$)')
 _URL_DATE_YM  = re.compile(r'/(\d{4})/(\d{1,2})(?:[/?#]|$)')
+
+# Text date patterns for human-readable dates in article listings.
+# Applied as a final fallback when no structured signals are present.
+_MONTHS_PAT = (
+    r'(?:Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?'
+    r'|Jul(?:y)?|Aug(?:ust)?|Sep(?:tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)\.?'
+)
+_YEAR_PAT = r'(20[0-3]\d)'
+_MONTH_MAP = {m[:3].lower(): i + 1 for i, m in enumerate([
+    'January', 'February', 'March', 'April', 'May', 'June',
+    'July', 'August', 'September', 'October', 'November', 'December',
+])}
+# "January 15, 2026" or "Jan 15 2026"
+# (?<![a-zA-Z]) rather than \b: \b fails when the month name directly follows a
+# letter with no whitespace, e.g. "ArticleFebruary 10, 2026" in concatenated text.
+_TEXT_DATE_MDY = re.compile(
+    rf'(?<![a-zA-Z])({_MONTHS_PAT})\s+(\d{{1,2}}),?\s+{_YEAR_PAT}(?!\d)', re.IGNORECASE
+)
+# "15 January 2026" or "15 Jan, 2026"
+_TEXT_DATE_DMY = re.compile(
+    rf'(?<!\d)(\d{{1,2}})\s+({_MONTHS_PAT}),?\s+{_YEAR_PAT}(?!\d)', re.IGNORECASE
+)
+# "January 2026" (month + year only, treated as 1st of month)
+_TEXT_DATE_MY = re.compile(
+    rf'(?<![a-zA-Z])({_MONTHS_PAT})\s+{_YEAR_PAT}(?!\d)', re.IGNORECASE
+)
 
 try:
     import frontmatter
@@ -61,6 +95,9 @@ WAYBACK_PREFIX = "https://web.archive.org"
 TODAY = datetime.today().strftime("%Y-%m-%d")
 USER_AGENT = "DOD-NewsScraper/1.0 (DesigningOpenDemocracy activity monitor)"
 
+# Pages with fewer raw links than this are almost certainly JavaScript SPAs
+_SPA_LINK_THRESHOLD = 5
+
 
 # ---------------------------------------------------------------------------
 # HTML parsing
@@ -72,11 +109,21 @@ class _NewsParser(HTMLParser):
     def __init__(self):
         super().__init__()
         self.time_datetimes = []   # values from <time datetime="...">
-        self.meta_dates = []       # values from <meta property/name> date fields
+        self.time_text_dates = []  # text content of <time> without datetime attr
+        self.meta_dates = []       # values from <meta property/name/itemprop> date fields
         self.jsonld_blocks = []    # raw text of <script type="application/ld+json">
-        self.links = []            # hrefs from <a> tags (for URL-date fallback)
+        self.links = []            # hrefs from <a> tags (used for SPA detection / link count)
+        self.link_texts = []       # (href, text) pairs — text = visible anchor label
+        self.feed_urls = []        # href values from <link rel="alternate"> feed links
         self._in_jsonld = False
         self._jsonld_buf = ""
+        self._in_link = False
+        self._link_href = ""
+        self._link_buf = ""
+        self._in_time_text = False
+        self._time_text_buf = ""
+        self._in_inert = False     # True inside <script>/<style> (non-JSON-LD)
+        self._text_buf = ""        # visible text content for pattern matching
 
     def handle_starttag(self, tag, attrs):
         d = dict(attrs)
@@ -84,12 +131,28 @@ class _NewsParser(HTMLParser):
             href = d.get("href", "").strip()
             if href:
                 self.links.append(href)
+            self._in_link = bool(href)
+            self._link_href = href
+            self._link_buf = ""
+        elif tag == "link":
+            rel = (d.get("rel") or "").lower().split()
+            type_ = (d.get("type") or "").lower()
+            href = (d.get("href") or "").strip()
+            if "alternate" in rel and href and type_ in (
+                "application/rss+xml",
+                "application/atom+xml",
+            ):
+                self.feed_urls.append(href)
         elif tag == "time":
             dt = d.get("datetime", "").strip()
             if dt:
                 self.time_datetimes.append(dt)
+                self._in_time_text = False
+            else:
+                self._in_time_text = True
+                self._time_text_buf = ""
         elif tag == "meta":
-            prop = (d.get("property") or d.get("name") or "").lower()
+            prop = (d.get("property") or d.get("name") or d.get("itemprop") or "").lower()
             content = d.get("content", "").strip()
             if prop in {
                 "article:published_time",
@@ -99,21 +162,52 @@ class _NewsParser(HTMLParser):
                 "last-modified",
                 "dc.date",
                 "dc.date.issued",
+                "datepublished",    # itemprop="datePublished" on <meta>
+                "datemodified",     # itemprop="dateModified" on <meta>
+                "datecreated",      # itemprop="dateCreated" on <meta>
             } and content:
                 self.meta_dates.append(content)
-        elif tag == "script" and d.get("type") == "application/ld+json":
-            self._in_jsonld = True
-            self._jsonld_buf = ""
+        elif tag == "script":
+            if d.get("type") == "application/ld+json":
+                self._in_jsonld = True
+                self._jsonld_buf = ""
+            else:
+                self._in_inert = True
+        elif tag == "style":
+            self._in_inert = True
 
     def handle_endtag(self, tag):
-        if tag == "script" and self._in_jsonld:
-            self._in_jsonld = False
-            if self._jsonld_buf.strip():
-                self.jsonld_blocks.append(self._jsonld_buf)
+        if tag == "script":
+            if self._in_jsonld:
+                self._in_jsonld = False
+                if self._jsonld_buf.strip():
+                    self.jsonld_blocks.append(self._jsonld_buf)
+            elif self._in_inert:
+                self._in_inert = False
+        elif tag == "style" and self._in_inert:
+            self._in_inert = False
+        elif tag == "a" and self._in_link:
+            text = self._link_buf.strip()
+            if self._link_href:
+                self.link_texts.append((self._link_href, text))
+            self._in_link = False
+        elif tag == "time" and self._in_time_text:
+            self._in_time_text = False
+            t = self._time_text_buf.strip()
+            if t:
+                self.time_text_dates.append(t)
 
     def handle_data(self, data):
         if self._in_jsonld:
             self._jsonld_buf += data
+            return
+        if self._in_inert:
+            return
+        if self._in_link:
+            self._link_buf += data
+        if self._in_time_text:
+            self._time_text_buf += data
+        self._text_buf += data
 
 
 def _dates_from_jsonld(blocks):
@@ -127,7 +221,6 @@ def _dates_from_jsonld(blocks):
         for item in items:
             if not isinstance(item, dict):
                 continue
-            # Recurse into @graph
             graph = item.get("@graph")
             if graph:
                 yield from _dates_from_jsonld([json.dumps(graph)])
@@ -140,24 +233,24 @@ def _dates_from_jsonld(blocks):
                 yield d, title
 
 
-def _dates_from_links(links):
-    """Yield (date, "") from URL path patterns like /2026/01/15/ in anchor hrefs.
+def _dates_from_links(link_texts):
+    """Yield (date, title) from URL path patterns like /2026/01/15/ in anchor hrefs.
 
-    Low-priority fallback for sites that don't use machine-readable date markup
-    but do embed dates in article URLs (common in WordPress/CMS).  Only yields
-    past dates to avoid picking up upcoming-event links.
+    Low-priority fallback for sites that don't use structured date markup
+    but embed dates in article URLs (common in WordPress/CMS).  Anchor text
+    is returned as the title when non-empty.
     """
     today = date.today()
     seen = set()
-    for href in links:
+    for href, text in link_texts:
         m = _URL_DATE_YMD.search(href)
         if m:
             try:
-                y, mo, d = int(m.group(1)), int(m.group(2)), int(m.group(3))
-                dt = date(y, mo, d)
+                y, mo, day_n = int(m.group(1)), int(m.group(2)), int(m.group(3))
+                dt = date(y, mo, day_n)
                 if 2000 <= y and dt <= today and dt not in seen:
                     seen.add(dt)
-                    yield dt, ""
+                    yield dt, text[:80]
                 continue
             except ValueError:
                 pass
@@ -168,15 +261,60 @@ def _dates_from_links(links):
                 dt = date(y, mo, 1)
                 if 2000 <= y and dt <= today and dt not in seen:
                     seen.add(dt)
-                    yield dt, ""
+                    yield dt, text[:80]
             except ValueError:
                 pass
+
+
+def _dates_from_text(text):
+    """Yield (date, '') from human-readable date strings in page text.
+
+    Matches English date formats: "15 January 2026", "January 15, 2026",
+    "Jan 2026".  Lowest-confidence fallback for sites with no structured
+    markup.  Always filtered to past dates.
+    """
+    if not text:
+        return
+    today = date.today()
+    seen = set()
+
+    def _emit(year_s, month_s, day_n):
+        mo = _MONTH_MAP.get(month_s.lower()[:3])
+        if not mo:
+            return
+        try:
+            dt = date(int(year_s), mo, day_n)
+            if 2000 <= dt.year and dt <= today and dt not in seen:
+                seen.add(dt)
+                return dt
+        except ValueError:
+            pass
+
+    for m in _TEXT_DATE_MDY.finditer(text):
+        mo_s, day_s, year_s = m.group(1), m.group(2), m.group(3)
+        dt = _emit(year_s, mo_s, int(day_s))
+        if dt:
+            yield dt, ""
+
+    for m in _TEXT_DATE_DMY.finditer(text):
+        day_s, mo_s, year_s = m.group(1), m.group(2), m.group(3)
+        dt = _emit(year_s, mo_s, int(day_s))
+        if dt:
+            yield dt, ""
+
+    for m in _TEXT_DATE_MY.finditer(text):
+        mo_s, year_s = m.group(1), m.group(2)
+        dt = _emit(year_s, mo_s, 1)
+        if dt:
+            yield dt, ""
 
 
 def extract_best(parser):
     """Return (date, title) for the most recent signal, or (None, None).
 
-    Priority (highest first): JSON-LD > <meta> dates > <time datetime> > URL patterns.
+    Priority (highest to lowest):
+      JSON-LD → <meta>/microdata → <time datetime> → <time> text
+      → URL path patterns → human-readable text patterns
     Future dates are excluded so upcoming-event pages don't inflate activity.
     """
     today = date.today()
@@ -196,8 +334,15 @@ def extract_best(parser):
         if d and d <= today:
             candidates.append((d, ""))
 
-    # Lowest-priority fallback: dates embedded in article URL paths
-    for d, title in _dates_from_links(parser.links):
+    for s in parser.time_text_dates:
+        d = parse_date(s)
+        if d and d <= today:
+            candidates.append((d, ""))
+
+    for d, title in _dates_from_links(parser.link_texts):
+        candidates.append((d, title))
+
+    for d, title in _dates_from_text(parser._text_buf):
         candidates.append((d, title))
 
     if not candidates:
@@ -208,16 +353,22 @@ def extract_best(parser):
 
 def _print_debug(parser):
     """Print a summary of what date signals the parser found on the page."""
-    today = date.today()
     url_dates = sorted(
-        {d.isoformat() for d, _ in _dates_from_links(parser.links)},
+        {d.isoformat() for d, _ in _dates_from_links(parser.link_texts)},
         reverse=True,
     )[:8]
+    text_dates = sorted(
+        {d.isoformat() for d, _ in _dates_from_text(parser._text_buf)},
+        reverse=True,
+    )[:5]
     print(f"    ┌─ signals found ───────────────────────────────")
     print(f"    │ <time datetime>  : {parser.time_datetimes[:8] or '(none)'}")
+    print(f"    │ <time> text      : {parser.time_text_dates[:5] or '(none)'}")
     print(f"    │ <meta> dates     : {parser.meta_dates[:5] or '(none)'}")
     print(f"    │ JSON-LD blocks   : {len(parser.jsonld_blocks)}")
     print(f"    │ URL date patterns: {url_dates or '(none)'}")
+    print(f"    │ text date matches: {text_dates or '(none)'}")
+    print(f"    │ feed links found : {parser.feed_urls[:3] or '(none)'}")
     print(f"    │ total <a> links  : {len(parser.links)}")
     print(f"    └───────────────────────────────────────────────")
 
@@ -267,10 +418,6 @@ def robots_allowed(url, timeout=5, session=None):
 # Scrape
 # ---------------------------------------------------------------------------
 
-# Pages with fewer raw links than this are almost certainly JavaScript SPAs
-_SPA_LINK_THRESHOLD = 5
-
-
 def _classify_hint(ok, http_status, parser):
     """Return a short hint string classifying a scraping failure.
 
@@ -317,7 +464,7 @@ def scrape_news_page(url, timeout=10, session=None):
 
 
 # ---------------------------------------------------------------------------
-# Frontmatter writer (mirrors check_rss.py update_activity_source)
+# Frontmatter writers
 # ---------------------------------------------------------------------------
 
 def update_activity_source(path, date_str, note, url, method="scrape"):
@@ -390,10 +537,6 @@ def update_activity_source(path, date_str, note, url, method="scrape"):
         f.write("---" + yaml_block + "---" + rest)
     return True
 
-
-# ---------------------------------------------------------------------------
-# Org loader
-# ---------------------------------------------------------------------------
 
 def write_checked_only(path, method, note=None, hint=None):
     """Add/update checked: (and optionally hint:) on an activity source entry.
@@ -508,6 +651,36 @@ def write_checked_only(path, method, note=None, hint=None):
     return True
 
 
+def write_rss_feed(path, feed_url):
+    """Write rss_feed: to org frontmatter if not already present.
+
+    Inserts after the website: line when present, otherwise before news_page:.
+    Returns False (no write) if rss_feed: already exists in the file.
+    """
+    with open(path, encoding="utf-8") as f:
+        content = f.read()
+    parts = content.split("---", 2)
+    if len(parts) < 3 or parts[0] != "":
+        return False
+    yaml_block, rest = parts[1], parts[2]
+    if re.search(r'^rss_feed\s*:', yaml_block, re.MULTILINE):
+        return False
+    for pattern in (r'^(website\s*:.*\n)', r'^(news_page\s*:.*\n)'):
+        m = re.search(pattern, yaml_block, re.MULTILINE)
+        if m:
+            yaml_block = yaml_block[:m.end()] + f"rss_feed: {feed_url}\n" + yaml_block[m.end():]
+            break
+    else:
+        yaml_block = yaml_block.rstrip("\n") + f"\nrss_feed: {feed_url}\n"
+    with open(path, "w", encoding="utf-8") as f:
+        f.write("---" + yaml_block + "---" + rest)
+    return True
+
+
+# ---------------------------------------------------------------------------
+# Org loader
+# ---------------------------------------------------------------------------
+
 def load_orgs(slug_filter=None, include_inactive=False):
     orgs = []
     for path in sorted(glob.glob(os.path.join(ORGS_DIR, "*.md"))):
@@ -534,6 +707,7 @@ def load_orgs(slug_filter=None, include_inactive=False):
             "news_page": news_page,
             "path": path,
             "activity": meta.get("activity") or {},
+            "rss_feed": (meta.get("rss_feed") or "").strip(),
         })
     return orgs
 
@@ -552,6 +726,8 @@ def main():
                         help="Scrape all orgs even if recently checked (ignores activity.scrape.checked)")
     parser.add_argument("--debug", action="store_true",
                         help="Print what date signals were found on each page (useful for writing custom extractors)")
+    parser.add_argument("--update-rss", action="store_true",
+                        help="Write discovered RSS/Atom feed URLs to rss_feed: frontmatter for orgs that lack one")
     args = parser.parse_args()
 
     orgs = load_orgs(slug_filter=args.slug, include_inactive=args.all)
@@ -563,6 +739,7 @@ def main():
     session.headers.update({"User-Agent": USER_AGENT})
 
     updated = 0
+    feeds_written = 0
     print(f"\nScraping {len(orgs)} org news page(s) (timeout={args.timeout}s)…\n")
 
     for i, org in enumerate(orgs, 1):
@@ -591,32 +768,41 @@ def main():
             time.sleep(1.0)
             continue
 
-        d, title, ok, parser, http_status = scrape_news_page(url, timeout=args.timeout, session=session)
+        d, title, ok, page_parser, http_status = scrape_news_page(url, timeout=args.timeout, session=session)
+
+        # Report / write discovered RSS feeds
+        if page_parser.feed_urls:
+            resolved_feeds = [urljoin(url, f) for f in page_parser.feed_urls[:2]]
+            if args.update_rss and not args.dry_run and not org["rss_feed"]:
+                if write_rss_feed(org["path"], resolved_feeds[0]):
+                    feeds_written += 1
 
         if not ok:
-            hint = _classify_hint(ok, http_status, parser)
-            print(f"UNREACHABLE [{hint}]  {url}")
+            hint = _classify_hint(ok, http_status, page_parser)
+            print(f"UNREACHABLE [{hint}]")
             if not args.dry_run:
                 write_checked_only(org["path"], "scrape",
                                    "News page unreachable", hint=hint)
-            if args.debug:
-                _print_debug(parser)
         elif d is None:
-            hint = _classify_hint(ok, http_status, parser)
-            print(f"NO_DATE_FOUND [{hint}]  {url}")
+            hint = _classify_hint(ok, http_status, page_parser)
+            print(f"NO_DATE_FOUND [{hint}]")
             if not args.dry_run:
                 write_checked_only(org["path"], "scrape",
                                    "News page found, no machine-readable date", hint=hint)
-            if args.debug:
-                _print_debug(parser)
         else:
             note = f"Latest post: {title[:80]}" if title else "Latest news page scraped"
             print(f"SCRAPED  {d}  {title[:50] if title else '(no title)'}")
-            if args.debug:
-                _print_debug(parser)
             if not args.dry_run:
                 if update_activity_source(org["path"], d.isoformat(), note, url):
                     updated += 1
+
+        if page_parser.feed_urls:
+            resolved_feeds = [urljoin(url, f) for f in page_parser.feed_urls[:2]]
+            for f in resolved_feeds:
+                print(f"    → feed: {f}")
+
+        if args.debug:
+            _print_debug(page_parser)
 
         time.sleep(1.5)
 
@@ -625,6 +811,8 @@ def main():
         print("Dry run — no files written")
     else:
         print(f"Updated {updated} / {len(orgs)} org page(s)")
+        if feeds_written:
+            print(f"Wrote rss_feed: for {feeds_written} org(s) — run check_rss.py --update-activity to populate activity.rss")
 
     return 0
 

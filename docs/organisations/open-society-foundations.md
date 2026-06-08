@@ -25,8 +25,9 @@ activity:
     url: https://www.opensocietyfoundations.org/newsroom
     checked: 2026-06-07
   scrape:
-    note: "News page found, no machine-readable date"
-    hint: no_markup
+    date: 2026-05-20
+    note: "Latest news page scraped"
+    url: https://www.opensocietyfoundations.org/newsroom
     checked: 2026-06-08
 ---
 

@@ -24,8 +24,9 @@ activity:
     url: https://www.prediki.com/meta/en/Management-by-Predictions-(Prediki-Blog-in-English)/
     checked: 2026-06-07
   scrape:
-    note: "News page found, no machine-readable date"
-    hint: no_markup
+    date: 2022-09-30
+    note: "Latest news page scraped"
+    url: https://www.prediki.com/meta/en/Management-by-Predictions-(Prediki-Blog-in-English)/
     checked: 2026-06-08
 ---
 

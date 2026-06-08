@@ -27,7 +27,8 @@ activity:
     checked: 2026-06-07
   scrape:
     note: "News page found, no machine-readable date"
-    checked: 2026-06-07
+    hint: no_markup
+    checked: 2026-06-08
 
   ical:
     date: 2026-06-07

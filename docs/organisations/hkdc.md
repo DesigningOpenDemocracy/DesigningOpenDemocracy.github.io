@@ -26,8 +26,9 @@ activity:
     url: https://www.hkdc.us/news
     checked: 2026-06-07
   scrape:
-    note: "News page found, no machine-readable date"
-    hint: no_markup
+    date: 2026-02-09
+    note: "Latest news page scraped"
+    url: https://www.hkdc.us/news
     checked: 2026-06-08
 ---
 
