@@ -66,7 +66,7 @@
           {%- endif %}
         </td>
         <td data-sort="{{ org_type }}">{{ type_icons.get(org_type, '🏛️') }} {{ org_type }}</td>
-        <td>{{ country }}</td>
+        <td data-sort="{{ country }}">{{ country }}</td>
         <td><span class="project-status-badge status-{{ file.page.meta.get('status', '') }}">{{ file.page.meta.get('status', '') }}</span></td>
         <td data-sort="{{ ca_date }}">
           {%- if ca_date %}
@@ -94,6 +94,13 @@
 </div>
 <script>
 (function () {
+  function toFlag(code) {
+    if (!code || code.length !== 2) return code;
+    var base = 0x1F1E6 - 65;
+    return String.fromCodePoint(code.toUpperCase().charCodeAt(0) + base) +
+           String.fromCodePoint(code.toUpperCase().charCodeAt(1) + base);
+  }
+
   var table        = document.getElementById('org-table');
   var tbody        = table.querySelector('tbody');
   var headers      = Array.from(table.querySelectorAll('th.sortable'));
@@ -119,8 +126,16 @@
   var countries = [...new Set(rows().map(function(r){ return r.dataset.country; }).filter(Boolean))].sort();
   countries.forEach(function(c) {
     var opt = document.createElement('option');
-    opt.value = c; opt.textContent = c;
+    opt.value = c; opt.textContent = toFlag(c) + ' ' + c;
     countrySelect.appendChild(opt);
+  });
+
+  // Replace country code text with emoji flag + code in table cells
+  rows().forEach(function(r) {
+    var code = r.dataset.country;
+    if (code && code.length === 2) {
+      r.cells[2].textContent = toFlag(code) + ' ' + code;
+    }
   });
 
   function daysSince(dateStr) {
