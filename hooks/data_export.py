@@ -17,7 +17,7 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(__file__))
-from activity_selector import PRIORITY, STALENESS_DAYS, _parse_date
+from activity_selector import select_activity
 
 
 def _json_default(obj):
@@ -66,25 +66,11 @@ def load_orgs():
 
 
 def _best_activity(activity_dict):
-    """Return (date_str, method) of the best activity entry, mirroring activity_selector logic."""
-    today = datetime.date.today()
-    for source in PRIORITY:
-        entry = activity_dict.get(source)
-        if not entry:
-            continue
-        d = _parse_date(entry.get("date"))
-        if d and (today - d).days <= STALENESS_DAYS.get(source, 365):
-            return str(d), source
-    # fallback: most recent
-    best_date, best_source = None, None
-    for source in PRIORITY:
-        entry = activity_dict.get(source)
-        if not entry:
-            continue
-        d = _parse_date(entry.get("date"))
-        if d and (best_date is None or d > best_date):
-            best_date, best_source = d, source
-    return (str(best_date), best_source) if best_date else ("", "")
+    """Return (date_str, method) of the best activity entry."""
+    ca = select_activity(activity_dict)
+    if ca:
+        return str(ca["date"]), ca["method"]
+    return "", ""
 
 
 def write_orgs_csv(orgs):

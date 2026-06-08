@@ -51,18 +51,14 @@
       {%- set country = file.page.meta.get('country', '') %}
       {%- set org_type = file.page.meta.get('type', '') %}
       {%- set website = file.page.meta.get('website', '') %}
-      {%- set activity = file.page.meta.get('activity') or {} %}
-      {%- set ns = namespace(best_date='', best_method='') %}
-      {%- for source, entry in activity.items() %}
-        {%- if entry is mapping and entry.date and (entry.date | string) > ns.best_date %}
-          {%- set ns.best_date = entry.date | string %}
-          {%- set ns.best_method = source %}
-        {%- endif %}
-      {%- endfor %}
+      {%- set slug = file.page.file.src_path | replace('organisations/', '') | replace('.md', '') %}
+      {%- set ca = org_activity_cache.get(slug) %}
+      {%- set ca_date = (ca.date | string) if ca else '' %}
+      {%- set ca_method = ca.method if ca else '' %}
       <tr data-status="{{ file.page.meta.get('status', '') }}"
           data-country="{{ country }}"
           data-type="{{ org_type }}"
-          data-activity="{{ ns.best_date }}">
+          data-activity="{{ ca_date }}">
         <td>
           <a href="/{{ file.page.url }}">{{ file.page.title }}</a>
           {%- if website and not website.startswith('https://web.archive.org') %}
@@ -72,9 +68,9 @@
         <td data-sort="{{ org_type }}">{{ type_icons.get(org_type, '🏛️') }} {{ org_type }}</td>
         <td>{{ country }}</td>
         <td><span class="project-status-badge status-{{ file.page.meta.get('status', '') }}">{{ file.page.meta.get('status', '') }}</span></td>
-        <td data-sort="{{ ns.best_date }}">
-          {%- if ns.best_date %}
-          {{ ns.best_date }}<span class="activity-method-chip method-{{ ns.best_method }}">{{ ns.best_method }}</span>
+        <td data-sort="{{ ca_date }}">
+          {%- if ca_date %}
+          {{ ca_date }}<span class="activity-method-chip method-{{ ca_method }}">{{ ca_method }}</span>
           {%- else %}—{%- endif %}
         </td>
         <td>
