@@ -53,6 +53,7 @@ The invariants recorded there are not immutable. Any document in this repo — i
 - The `organisation.html` template is **auto-applied** to all org pages via `hooks/org_template.py` — no need to set `template:` in frontmatter unless overriding.
 - `rss_feed: <url>` — optional; the org's RSS or Atom feed URL. Populated by `util/check_rss.py`.
 - `news_page: <url>` — optional; URL of the org's news or blog index page. Opt-in for `util/scrape_news.py`.
+- `ics_feed: <url>` — optional; URL of an iCal/ICS calendar feed. Opt-in for `util/check_rss.py --update-activity` (writes `activity.ical`).
 - `related_orgs: [slug, slug]` — optional; list of org slugs with a direct relationship to this org. Rendered as orange edges in the knowledge graph. Declare on one side only — direction is normalised so duplicates are automatically suppressed.
 - `activity:` — optional dict of evidence sources, each keyed by method name. The build hook
   (`hooks/activity_selector.py`) picks the best entry for display using a priority order and
@@ -79,13 +80,13 @@ The invariants recorded there are not immutable. Any document in this repo — i
       note: "Visited site, confirmed active"
       checked: 2026-05-01       # same as date for manual reviews
   ```
-  - `method` keys: `manual` | `rss` | `scrape` | `sitemap` | `dod` | `social`
+  - `method` keys: `manual` | `rss` | `ical` | `scrape` | `sitemap` | `dod` | `social`
   - `checked:` — optional; the date the source was last probed, regardless of whether new content was found. Written automatically by `check_rss.py`, `scrape_news.py`, and `review_orgs.py`. Entries with no `date` but a `checked` date mean the source was probed but found nothing.
-  - Priority order (highest first): `manual` > `dod` > `social` > `rss` > `scrape` > `sitemap`
-  - Staleness thresholds: `manual`/`dod` 730 d · `social`/`rss`/`scrape` 365 d · `sitemap` 180 d
+  - Priority order (highest first): `manual` > `dod` > `social` > `rss` > `ical` > `scrape` > `sitemap`
+  - Staleness thresholds: `manual`/`dod` 730 d · `social`/`rss`/`ical`/`scrape` 365 d · `sitemap` 180 d
   - A source is skipped if older than its threshold; the next-priority fresh source wins
   - If all sources are stale, the most recent entry is shown regardless
-  - `util/check_rss.py --update-activity` populates `rss` and `sitemap` entries automatically; re-runs skip orgs checked within 7 days (use `--force` to override)
+  - `util/check_rss.py --update-activity` populates `rss`, `sitemap`, and `ical` entries automatically; re-runs skip orgs checked within 7 days (use `--force` to override)
   - `util/scrape_news.py` populates `scrape` entries for orgs with `news_page:` set; same skip behaviour
 - **Key people** is an optional section. Add it only when named individuals are central to understanding the org's story (founders, government champions, notable critics) and the information is sourced. Link names to Wikipedia where a confirmed article exists. Do not add it just to fill the template — most orgs are better served by institutional description.
 
@@ -213,7 +214,7 @@ These are linked from the bottom of the org index table for researcher download.
 
 ### Utility scripts (`util/`)
 
-- `util/check_rss.py` — probes org websites for RSS/Atom feeds and optionally updates `activity.rss` / `activity.sitemap` in frontmatter.
+- `util/check_rss.py` — probes org websites for RSS/Atom feeds and optionally updates `activity.rss` / `activity.sitemap` / `activity.ical` in frontmatter.
   ```
   python util/check_rss.py                    # probe all active orgs
   python util/check_rss.py --all              # include inactive orgs
@@ -221,14 +222,15 @@ These are linked from the bottom of the org index table for researcher download.
   python util/check_rss.py --update-activity  # write latest post date/title to frontmatter
   python util/check_rss.py --skip-existing    # skip orgs already with rss_feed:
   ```
-  Probes 23 common feed URL paths per site. For real feeds, writes `activity.rss` with latest post date and title. For sitemaps (fallback), writes `activity.sitemap` with `<lastmod>` date. Never overwrites a newer existing entry for the same source.
+  Probes 23 common feed URL paths per site. For real feeds, writes `activity.rss` with latest post date and title. For sitemaps (fallback), writes `activity.sitemap` with `<lastmod>` date. When `ics_feed:` is set, also fetches the iCal calendar and writes `activity.ical` with the most recent past event date. Never overwrites a newer existing entry for the same source.
 
-- `util/scrape_news.py` — scrapes news/blog index pages for orgs that lack a usable RSS feed. Opt-in: only runs for orgs with `news_page:` set in frontmatter. Extracts dates from machine-readable signals only (JSON-LD, OpenGraph, `<time datetime>`). Respects robots.txt. Writes `activity.scrape`.
+- `util/scrape_news.py` — scrapes news/blog index pages for orgs that lack a usable RSS feed. Opt-in: only runs for orgs with `news_page:` set in frontmatter. Extracts dates from machine-readable signals (JSON-LD, OpenGraph, `<time datetime>`) and as a fallback from date patterns in article URLs (e.g. `/2026/01/15/`). Respects robots.txt. Writes `activity.scrape`.
   ```
   python util/scrape_news.py                  # all active orgs with news_page:
   python util/scrape_news.py --all            # include inactive orgs
   python util/scrape_news.py --slug loomio    # single org
   python util/scrape_news.py --dry-run        # print results without writing
+  python util/scrape_news.py --debug          # show what date signals were found on each page
   ```
 
 ### Org index table filters (`docs/overrides/organisations.html`)

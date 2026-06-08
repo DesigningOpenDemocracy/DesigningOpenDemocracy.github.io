@@ -161,7 +161,7 @@ def latest_sitemap_lastmod(sitemap_url, timeout=10, session=None):
 
 
 def parse_date(s):
-    """Parse RSS (RFC 2822) or Atom (ISO 8601) date strings robustly."""
+    """Parse RSS (RFC 2822), Atom (ISO 8601), or iCal (YYYYMMDD) date strings robustly."""
     if not s:
         return None
     s = s.strip()
@@ -181,7 +181,64 @@ def parse_date(s):
         return datetime.strptime(s[:10], "%Y-%m-%d").date()
     except ValueError:
         pass
+    # iCal compact: YYYYMMDD or YYYYMMDDThhmmss
+    try:
+        return datetime.strptime(s[:8], "%Y%m%d").date()
+    except ValueError:
+        pass
     return None
+
+
+def latest_from_ical(url, timeout=10, session=None):
+    """Fetch an iCal (.ics) URL and return (date, title, http_ok) of the most recent past event.
+
+    Only considers events with DTSTART in the past so upcoming events don't
+    inflate activity dates.
+    """
+    if session is None:
+        session = requests.Session()
+        session.headers["User-Agent"] = "DOD-ICS-Reader/1.0 (democracy wiki)"
+    try:
+        r = session.get(url, timeout=timeout)
+        r.raise_for_status()
+    except RequestException:
+        return None, None, False
+
+    today = datetime.today().date()
+    entries = []
+
+    # Unfold continuation lines per RFC 5545 §3.1
+    text = r.text.replace("\r\n", "\n").replace("\r", "\n")
+    text = re.sub(r"\n[ \t]", "", text)
+
+    in_vevent = False
+    current_start = None
+    current_summary = ""
+
+    for line in text.split("\n"):
+        if line == "BEGIN:VEVENT":
+            in_vevent = True
+            current_start = None
+            current_summary = ""
+        elif line == "END:VEVENT":
+            if in_vevent and current_start:
+                d = parse_date(current_start)
+                if d and d <= today:
+                    entries.append((d, current_summary))
+            in_vevent = False
+        elif in_vevent:
+            if line.startswith("DTSTART"):
+                # DTSTART:20260630, DTSTART;TZID=...:20260630T000000,
+                # DTSTART;VALUE=DATE:20260630
+                val = line.split(":", 1)[-1].strip()
+                current_start = val[:8]
+            elif line.startswith("SUMMARY:"):
+                current_summary = line[8:].strip()
+
+    if not entries:
+        return None, None, True
+    entries.sort(key=lambda x: x[0], reverse=True)
+    return entries[0][0], entries[0][1], True
 
 
 def latest_from_feed(url, timeout=10, session=None):
@@ -459,6 +516,7 @@ def load_orgs(slug_filter=None, include_inactive=False):
             "website": website,
             "status": status,
             "rss_feed": meta.get("rss_feed") or "",
+            "ics_feed": meta.get("ics_feed") or "",
             "path": path,
             "activity": meta.get("activity") or {},
         })
@@ -565,6 +623,38 @@ def main():
 
         results.append(result)
         time.sleep(0.3)
+
+    # --- iCal feeds ---
+    if args.update_activity:
+        ical_orgs = [o for o in orgs if o.get("ics_feed")]
+        if ical_orgs:
+            print(f"\nChecking {len(ical_orgs)} iCal feed(s) (timeout={args.timeout}s)…\n")
+            for i, org in enumerate(ical_orgs, 1):
+                slug = org["slug"]
+                ics_url = org["ics_feed"]
+                print(f"  [{i:3d}/{len(ical_orgs)}] {slug} … ", end="", flush=True)
+
+                if not args.force:
+                    entry = (org.get("activity") or {}).get("ical") or {}
+                    chk_date = parse_date(str(entry.get("checked", "") or ""))
+                    if chk_date:
+                        age = (datetime.today().date() - chk_date).days
+                        if age <= 7:
+                            print(f"SKIPPED (checked {age}d ago)")
+                            continue
+
+                d, title, ok = latest_from_ical(ics_url, timeout=args.timeout, session=session)
+                if not ok:
+                    print(f"UNREACHABLE  {ics_url}")
+                elif d is None:
+                    write_checked_only(org["path"], "ical", "iCal feed found, no past events")
+                    print(f"NO_PAST_EVENTS  {ics_url}")
+                else:
+                    note = f"Latest event: {title[:80]}" if title else "Latest calendar event"
+                    update_activity_source(org["path"], d.isoformat(), note, ics_url, method="ical")
+                    print(f"UPDATED  {d}  {title[:50] if title else '(no title)'}")
+
+                time.sleep(0.5)
 
     print(f"\n{'='*60}")
     print(f"Found feeds for {len(found)} / {len(orgs) - len(skipped)} orgs checked")

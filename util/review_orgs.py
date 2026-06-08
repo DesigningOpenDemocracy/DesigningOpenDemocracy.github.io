@@ -43,8 +43,8 @@ SKIP_FILES = {"organisations.md"}
 WAYBACK_PREFIX = "https://web.archive.org"
 TODAY = date.today().isoformat()
 
-PRIORITY_ORDER = ["manual", "dod", "social", "rss", "scrape", "sitemap"]
-STALENESS_DAYS = {"manual": 730, "dod": 730, "social": 365, "rss": 365, "scrape": 365, "sitemap": 180}
+PRIORITY_ORDER = ["manual", "dod", "social", "rss", "ical", "scrape", "sitemap"]
+STALENESS_DAYS = {"manual": 730, "dod": 730, "social": 365, "rss": 365, "ical": 365, "scrape": 365, "sitemap": 180}
 MANUAL_STALE_DAYS = 730
 
 

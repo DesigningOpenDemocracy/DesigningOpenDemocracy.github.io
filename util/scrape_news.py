@@ -31,11 +31,15 @@ import os
 import re
 import sys
 import time
-from datetime import datetime
+from datetime import date, datetime
 from email.utils import parsedate_to_datetime
 from html.parser import HTMLParser
 from urllib.parse import urlparse
 from urllib.robotparser import RobotFileParser
+
+# Matches /YYYY/MM/DD/ path segments — used as a low-priority date fallback
+_URL_DATE_YMD = re.compile(r'/(\d{4})/(\d{1,2})/(\d{1,2})(?:[/?#]|$)')
+_URL_DATE_YM  = re.compile(r'/(\d{4})/(\d{1,2})(?:[/?#]|$)')
 
 try:
     import frontmatter
@@ -70,12 +74,17 @@ class _NewsParser(HTMLParser):
         self.time_datetimes = []   # values from <time datetime="...">
         self.meta_dates = []       # values from <meta property/name> date fields
         self.jsonld_blocks = []    # raw text of <script type="application/ld+json">
+        self.links = []            # hrefs from <a> tags (for URL-date fallback)
         self._in_jsonld = False
         self._jsonld_buf = ""
 
     def handle_starttag(self, tag, attrs):
         d = dict(attrs)
-        if tag == "time":
+        if tag == "a":
+            href = d.get("href", "").strip()
+            if href:
+                self.links.append(href)
+        elif tag == "time":
             dt = d.get("datetime", "").strip()
             if dt:
                 self.time_datetimes.append(dt)
@@ -131,27 +140,86 @@ def _dates_from_jsonld(blocks):
                 yield d, title
 
 
+def _dates_from_links(links):
+    """Yield (date, "") from URL path patterns like /2026/01/15/ in anchor hrefs.
+
+    Low-priority fallback for sites that don't use machine-readable date markup
+    but do embed dates in article URLs (common in WordPress/CMS).  Only yields
+    past dates to avoid picking up upcoming-event links.
+    """
+    today = date.today()
+    seen = set()
+    for href in links:
+        m = _URL_DATE_YMD.search(href)
+        if m:
+            try:
+                y, mo, d = int(m.group(1)), int(m.group(2)), int(m.group(3))
+                dt = date(y, mo, d)
+                if 2000 <= y and dt <= today and dt not in seen:
+                    seen.add(dt)
+                    yield dt, ""
+                continue
+            except ValueError:
+                pass
+        m = _URL_DATE_YM.search(href)
+        if m:
+            try:
+                y, mo = int(m.group(1)), int(m.group(2))
+                dt = date(y, mo, 1)
+                if 2000 <= y and dt <= today and dt not in seen:
+                    seen.add(dt)
+                    yield dt, ""
+            except ValueError:
+                pass
+
+
 def extract_best(parser):
-    """Return (date, title) for the most recent signal, or (None, None)."""
+    """Return (date, title) for the most recent signal, or (None, None).
+
+    Priority (highest first): JSON-LD > <meta> dates > <time datetime> > URL patterns.
+    Future dates are excluded so upcoming-event pages don't inflate activity.
+    """
+    today = date.today()
     candidates = []
 
     for d, title in _dates_from_jsonld(parser.jsonld_blocks):
-        candidates.append((d, title))
+        if d <= today:
+            candidates.append((d, title))
 
     for s in parser.meta_dates:
         d = parse_date(s)
-        if d:
+        if d and d <= today:
             candidates.append((d, ""))
 
     for s in parser.time_datetimes:
         d = parse_date(s)
-        if d:
+        if d and d <= today:
             candidates.append((d, ""))
+
+    # Lowest-priority fallback: dates embedded in article URL paths
+    for d, title in _dates_from_links(parser.links):
+        candidates.append((d, title))
 
     if not candidates:
         return None, None
     candidates.sort(key=lambda x: x[0], reverse=True)
     return candidates[0]
+
+
+def _print_debug(parser):
+    """Print a summary of what date signals the parser found on the page."""
+    today = date.today()
+    url_dates = sorted(
+        {d.isoformat() for d, _ in _dates_from_links(parser.links)},
+        reverse=True,
+    )[:8]
+    print(f"    ┌─ signals found ───────────────────────────────")
+    print(f"    │ <time datetime>  : {parser.time_datetimes[:8] or '(none)'}")
+    print(f"    │ <meta> dates     : {parser.meta_dates[:5] or '(none)'}")
+    print(f"    │ JSON-LD blocks   : {len(parser.jsonld_blocks)}")
+    print(f"    │ URL date patterns: {url_dates or '(none)'}")
+    print(f"    │ total <a> links  : {len(parser.links)}")
+    print(f"    └───────────────────────────────────────────────")
 
 
 # ---------------------------------------------------------------------------
@@ -200,12 +268,17 @@ def robots_allowed(url, timeout=5, session=None):
 # ---------------------------------------------------------------------------
 
 def scrape_news_page(url, timeout=10, session=None):
-    """Fetch url and return (date, title, http_ok)."""
+    """Fetch url and return (date, title, http_ok, parser).
+
+    parser is always returned so callers can inspect signals for --debug output
+    or to write custom extraction logic.
+    """
+    empty = _NewsParser()
     try:
         r = session.get(url, timeout=timeout)
         r.raise_for_status()
     except RequestException:
-        return None, None, False
+        return None, None, False, empty
 
     parser = _NewsParser()
     try:
@@ -214,7 +287,7 @@ def scrape_news_page(url, timeout=10, session=None):
         pass  # partial parse is fine; we take what we got
 
     d, title = extract_best(parser)
-    return d, title, True
+    return d, title, True, parser
 
 
 # ---------------------------------------------------------------------------
@@ -425,6 +498,8 @@ def main():
     parser.add_argument("--dry-run", action="store_true", help="Print results without writing frontmatter")
     parser.add_argument("--force", action="store_true",
                         help="Scrape all orgs even if recently checked (ignores activity.scrape.checked)")
+    parser.add_argument("--debug", action="store_true",
+                        help="Print what date signals were found on each page (useful for writing custom extractors)")
     args = parser.parse_args()
 
     orgs = load_orgs(slug_filter=args.slug, include_inactive=args.all)
@@ -458,17 +533,23 @@ def main():
             time.sleep(1.0)
             continue
 
-        d, title, ok = scrape_news_page(url, timeout=args.timeout, session=session)
+        d, title, ok, parser = scrape_news_page(url, timeout=args.timeout, session=session)
 
         if not ok:
             print(f"UNREACHABLE  {url}")
+            if args.debug:
+                _print_debug(parser)
         elif d is None:
             if not args.dry_run:
                 write_checked_only(org["path"], "scrape", "News page found, no machine-readable date")
             print(f"NO_DATE_FOUND  {url}")
+            if args.debug:
+                _print_debug(parser)
         else:
             note = f"Latest post: {title[:80]}" if title else "Latest news page scraped"
             print(f"SCRAPED  {d}  {title[:50] if title else '(no title)'}")
+            if args.debug:
+                _print_debug(parser)
             if not args.dry_run:
                 if update_activity_source(org["path"], d.isoformat(), note, url):
                     updated += 1
