@@ -42,6 +42,24 @@
         </td>
       </tr>
       {%- endif %}
+      {%- if page.meta.rss_feed %}
+      <tr>
+        <th>RSS feed</th>
+        <td><a href="{{ page.meta.rss_feed }}">{{ page.meta.rss_feed | replace('https://', '') | replace('http://', '') }}</a></td>
+      </tr>
+      {%- endif %}
+      {%- if page.meta.ics_feed %}
+      <tr>
+        <th>Calendar feed</th>
+        <td><a href="{{ page.meta.ics_feed }}">{{ page.meta.ics_feed | replace('https://', '') | replace('http://', '') }}</a></td>
+      </tr>
+      {%- endif %}
+      {%- if page.meta.news_page %}
+      <tr>
+        <th>News page</th>
+        <td><a href="{{ page.meta.news_page }}">{{ page.meta.news_page | replace('https://', '') | replace('http://', '') }}</a></td>
+      </tr>
+      {%- endif %}
       {%- if page.meta.concepts %}
       <tr>
         <th>Concepts</th>
