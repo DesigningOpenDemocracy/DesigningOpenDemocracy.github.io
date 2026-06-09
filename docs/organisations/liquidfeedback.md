@@ -3,7 +3,7 @@ title: LiquidFeedback
 type: platform
 status: active
 country: DE
-website: https://liquidfeedback.org
+website: https://liquidfeedback.com
 summary: "An open-source liquid democracy platform developed in Berlin — best known as the decision-making system used by the German Pirate Party, enabling delegated voting on policy initiatives."
 concepts:
   - liquid-democracy
@@ -13,6 +13,11 @@ location:
   latitude: 52.5200
   longitude: 13.4050
   name: Berlin, Germany
+activity:
+  manual:
+    date: 2024-01-01
+    note: "Site active at liquidfeedback.com (redirects from .org); copyright 2024, no news feed found"
+    checked: 2026-06-09
 related_orgs:
   - liquid-democracy-ev
   - flux-party

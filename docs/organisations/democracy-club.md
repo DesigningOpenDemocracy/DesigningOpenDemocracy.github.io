@@ -4,6 +4,8 @@ type: civic-tech
 status: active
 country: GB
 website: https://democracyclub.org.uk
+rss_feed: https://democracyclub.org.uk/blog/feed/
+news_page: https://democracyclub.org.uk/blog/
 summary: "A UK civic tech nonprofit building free, open data infrastructure for elections — candidate databases, polling place finders, and ward boundary data used by the BBC, The Guardian, and local councils."
 concepts:
   - e-government
@@ -14,6 +16,12 @@ location:
   name: Birmingham, UK
 related_orgs:
   - mysociety
+activity:
+  rss:
+    date: 2026-06-03
+    note: "Latest post: 2026 elections user feedback"
+    url: https://democracyclub.org.uk/blog/
+    checked: 2026-06-09
 ---
 
 Democracy Club is a UK nonprofit (registered charity) that builds open infrastructure for elections. Founded in 2015, it operates as a small paid team supported by a large volunteer community who collectively gather, clean, and maintain data about UK elections.

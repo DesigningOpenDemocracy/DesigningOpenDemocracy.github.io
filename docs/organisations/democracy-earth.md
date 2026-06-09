@@ -13,6 +13,11 @@ location:
   latitude: -34.6037
   longitude: -58.3816
   name: Buenos Aires, Argentina
+activity:
+  manual:
+    date: 2026-06-09
+    note: "Site confirmed active; no blog or news feed found"
+    checked: 2026-06-09
 ---
 
 Democracy Earth Foundation is a San Francisco–registered nonprofit that grew out of the Buenos Aires civic tech scene. Founded by Santiago Siri and Pia Mancini (also co-founders of the Partido de la Red / Net Party), it focuses on building open-source infrastructure for democratic participation that works independently of national governments and legacy institutions.

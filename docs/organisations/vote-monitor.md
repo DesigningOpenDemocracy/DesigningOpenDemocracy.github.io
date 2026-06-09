@@ -13,6 +13,10 @@ location:
   latitude: 44.4268
   longitude: 26.1025
   name: Bucharest, Romania
+activity:
+  manual:
+    checked: 2026-06-09
+    note: "votemonitor.org unreachable on check (ECONNREFUSED); may have moved — check code4.ro"
 ---
 
 Vote Monitor is an open-source election observation tool developed by Code for Romania, a Bucharest-based civic tech organisation. It was created for the 2014 Romanian presidential elections, when civic monitoring organisations needed a faster, more reliable alternative to paper-based observer reporting forms.

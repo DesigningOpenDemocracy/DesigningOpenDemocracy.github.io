@@ -4,6 +4,7 @@ type: platform
 status: active
 country: KE
 website: https://www.ushahidi.com
+news_page: https://www.ushahidi.com/about/blog
 summary: "A Kenyan-founded nonprofit (2008) that builds open-source crowdsourcing and crisis-mapping tools — originally created to map post-election violence in Kenya, now used for election monitoring, human rights documentation, and civic reporting worldwide."
 concepts:
   - e-government
@@ -13,6 +14,12 @@ location:
   latitude: -1.2921
   longitude: 36.8219
   name: Nairobi, Kenya
+activity:
+  scrape:
+    date: 2024-11-12
+    note: "Latest post: The End; and the Means to that End (Angela Oduor Lungati)"
+    url: https://www.ushahidi.com/about/blog
+    checked: 2026-06-09
 ---
 
 Ushahidi ("testimony" in Swahili) was created in January 2008 by a group of Kenyan bloggers and technologists — including Ory Okolloh, Erik Hersman, Juliana Rotich, and David Kobia — in the immediate aftermath of Kenya's disputed presidential election and the violence that followed. Within days of launch, over 45,000 reports had been mapped. The project demonstrated that crowdsourced civic data, gathered via SMS and web submissions and plotted on a map, could provide situational awareness when official sources were failing or actively suppressing information.
