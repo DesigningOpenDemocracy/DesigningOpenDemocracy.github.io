@@ -33,6 +33,8 @@ Web platforms (responsive, no native app) used by governments, cities, and commu
 | [Pol.is](../organisations/polis.md) | Computational Democracy Project | Opinion mapping — surfaces areas of consensus across large groups |
 | [Kialo](../organisations/kialo.md) | Kialo | Structured pro/con argument trees for complex decisions |
 | [adhocracy+](../organisations/liquid-democracy-ev.md) | Liquid Democracy e.V. | Participatory proposal and comment platform for municipalities and organisations |
+| [DemocracyOS](../organisations/democracyos.md) | Net Party / Democracy Earth founders | Open-source proposal debate and structured voting; influential 2012–2017, now inactive |
+| [E-Democracy](../organisations/e-democracy.md) | E-Democracy (Minnesota) | Place-based neighbourhood forums connecting residents with local officials; running since 1994 |
 
 ---
 
@@ -45,6 +47,20 @@ Web tools focused on the mechanics of reaching a group decision — alternative 
 | [MieuxVoter web app](../organisations/mieuxvoter.md) | MieuxVoter | Browser-based polls using Majority Judgment; also provides embeddable libraries for developers |
 | [Ethelo](../organisations/ethelo.md) | Ethelo Decisions | Multi-criteria group decisions with analytics; used for participatory budgeting and policy design |
 | [Prediki](../organisations/prediki.md) | Prediki | Prediction markets applied to policy and organisational decisions |
+| [LiquidFeedback](../organisations/liquidfeedback.md) | Public Software Group (Berlin) | Initiative-based liquid democracy with transitive delegation; used by German Pirate Party |
+| [Democracy Earth](../organisations/democracy-earth.md) | Democracy Earth Foundation | Quadratic voting and sovereign identity tools; open-source, blockchain-backed |
+
+---
+
+## Election monitoring & civic data
+
+Tools for observing elections, aggregating electoral data, and building open infrastructure for democratic accountability.
+
+| Tool | Made by | What it does |
+|---|---|---|
+| [Vote Monitor](../organisations/vote-monitor.md) | Code for Romania | Mobile app for accredited election observers to submit real-time field reports |
+| [Ushahidi](../organisations/ushahidi.md) | Ushahidi (Nairobi) | Crowdsourced crisis and election monitoring maps; submit reports via SMS or web |
+| [Democracy Club tools](../organisations/democracy-club.md) | Democracy Club (UK) | Open candidate database, polling place finder, and election data infrastructure for UK elections |
 
 ---
 
