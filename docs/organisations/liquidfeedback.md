@@ -16,7 +16,7 @@ location:
 activity:
   manual:
     date: 2024-01-01
-    note: "Site active at liquidfeedback.com (redirects from .org); copyright 2024, no news feed found"
+    note: "⚠ Status uncertain: site live at liquidfeedback.com (FlexiGuided GmbH, redirects from .org) but no public development news found since 2012. May be stable/maintenance-only. Needs manual check before accepting."
     checked: 2026-06-09
 related_orgs:
   - liquid-democracy-ev
