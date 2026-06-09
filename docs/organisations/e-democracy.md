@@ -16,7 +16,7 @@ location:
 activity:
   manual:
     checked: 2026-06-09
-    note: "blog.e-democracy.org returned 503 on check; main domain redirects to blog"
+    note: "blog.e-democracy.org returning 503; Wayback capture 2026-05-16 confirms recently alive — likely temporary outage"
 ---
 
 E-Democracy is one of the oldest civic participation nonprofits on the internet, founded in St. Paul, Minnesota in 1994 by Steven Clift. Its core insight, developed through three decades of practice, is that place-based online forums — organised around neighbourhoods rather than issues — generate more sustained civic participation than issue-advocacy platforms.

@@ -1,9 +1,9 @@
 ---
 title: Vote Monitor
 type: platform
-status: active
+status: inactive
 country: RO
-website: https://www.votemonitor.org
+website: https://web.archive.org/web/*/https://votemonitor.org/
 summary: "An open-source election observation platform built by Code for Romania — allows accredited observers to submit real-time field reports from polling stations, replacing paper forms with structured mobile data collection."
 concepts:
   - e-government
@@ -16,7 +16,7 @@ location:
 activity:
   manual:
     checked: 2026-06-09
-    note: "votemonitor.org unreachable on check (ECONNREFUSED); may have moved — check code4.ro"
+    note: "Site defunct; last live Wayback capture ~2022. Code for Romania project — check code4.ro for successor activity"
 ---
 
 Vote Monitor is an open-source election observation tool developed by Code for Romania, a Bucharest-based civic tech organisation. It was created for the 2014 Romanian presidential elections, when civic monitoring organisations needed a faster, more reliable alternative to paper-based observer reporting forms.
