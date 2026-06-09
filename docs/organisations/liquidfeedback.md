@@ -31,9 +31,11 @@ The initiative process follows a structured lifecycle: initiative → discussion
 
 The source code is available under a permissive licence. Liquid Democracy e.V. (a Berlin nonprofit) also builds on LiquidFeedback for municipal participation projects.
 
+**Current status unclear.** As of mid-2026, the site operates under FlexiGuided GmbH (the domain redirects from liquidfeedback.org to liquidfeedback.com) and no public development news has been found since 2012. The software may be in stable maintenance rather than active development. If you can confirm current deployments or recent commits, please update this page.
+
 ## Links
 
-- Website: [liquidfeedback.org](https://liquidfeedback.org)
+- Website: [liquidfeedback.com](https://liquidfeedback.com)
 - Source code: [github.com/ddouglascarr/liquidfeedback-core](https://github.com/ddouglascarr/liquidfeedback-core)
 - Wikipedia: [LiquidFeedback](https://en.wikipedia.org/wiki/LiquidFeedback)
 
