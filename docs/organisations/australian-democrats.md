@@ -32,7 +32,7 @@ The Democrats are notable in the current landscape for making democratic reform 
 - **Proportional representation** — advocating for statewide PR for the Victorian Legislative Council, which would lower the election quota from 16.7% to ~2.4% and enable more diverse representation
 - **Evidence-based framing** — their policy positions cite the 2025 Australian Election Study (48% support for citizens' assemblies, 32% trust in government) and the Victorian parliamentary inquiry findings
 
-See the [blog post on the Victorian Upper House inquiry](../../blog/2026/05/24/victoria-s-upper-house-inquiry-the-case-for-a-citizens-assembly/) for context on the specific proposal.
+See the [blog post on the Victorian Upper House inquiry](../../blog/posts/2026-05-24-vic-upper-house-citizens-assembly.md) for context on the specific proposal.
 
 ## Position and caveats
 

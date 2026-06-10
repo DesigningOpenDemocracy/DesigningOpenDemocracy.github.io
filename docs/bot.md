@@ -34,7 +34,7 @@ DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)
 The bot works best when your site publishes machine-readable signals. In priority order:
 
 **1. Publish an RSS or Atom feed**
-This is the most reliable signal. The bot probes [23 common feed paths](/util/check_rss.py) automatically — no configuration needed on your end if your CMS already generates one. WordPress, Ghost, Substack, and most modern platforms do this by default.
+This is the most reliable signal. The bot probes [23 common feed paths](https://github.com/DesigningOpenDemocracy/DesigningOpenDemocracy.github.io/blob/main/util/check_rss.py) automatically — no configuration needed on your end if your CMS already generates one. WordPress, Ghost, Substack, and most modern platforms do this by default.
 
 **2. Add structured markup to your news/blog pages**
 If you don't have a feed, the bot falls back to scraping your news page. It reads dates only from machine-readable markup — not from visible text. Any of these work:

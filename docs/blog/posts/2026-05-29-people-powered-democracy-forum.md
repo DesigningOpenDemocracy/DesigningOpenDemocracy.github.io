@@ -40,4 +40,4 @@ Beyond Billionaires is hosting a public forum on practical ways to give ordinary
 
 Plenty of Q&A and discussion time built in.
 
-Can't make it in person? Register anyway — organisers will send you the recording. Want to run a viewing party elsewhere? Email [movebeyondbillionaires@proton.me](mailto:movebeyondbillionaires@proton.me).
+Can't make it in person? Register anyway — organisers will send you the recording. Want to run a viewing party elsewhere? Email <a href="mailto:movebeyondbillionaires@proton.me">movebeyondbillionaires@proton.me</a>.

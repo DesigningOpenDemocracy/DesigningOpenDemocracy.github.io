@@ -1,4 +1,4 @@
-.PHONY: serve build clean help
+.PHONY: serve build check-links clean help
 
 # Configure and setup Python Virtual Enviroment Folder
 venv: venv/touchfile
@@ -18,6 +18,11 @@ serve: venv # Serve the book locally and automatically open it in the browser
 # Build the book without serving
 build: venv # Compile the markdown files into HTML format
 	. venv/bin/activate; mkdocs build
+
+# Build strict and verify internal links resolve
+check-links: venv # Build with --strict and check for broken internal links
+	. venv/bin/activate; mkdocs build --strict
+	. venv/bin/activate; python util/check_internal_links.py
 
 # Clean the directory of generated book
 clean: # Remove generated book files

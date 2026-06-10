@@ -26,7 +26,10 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Build docs
-        run: mkdocs build
+        run: mkdocs build --strict
+
+      - name: Check internal links
+        run: python util/check_internal_links.py
 
       - name: Upload pages artifact
         if: github.ref == 'refs/heads/main'
