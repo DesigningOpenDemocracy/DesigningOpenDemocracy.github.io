@@ -71,3 +71,7 @@ Tools for observing elections, aggregating electoral data, and building open inf
 - [Deliberative Democracy](deliberative-democracy.md)
 - [Participatory Budgeting](participatory-budgeting.md)
 - [Liquid Democracy](liquid-democracy.md)
+
+## Sources
+
+- [Apps and Software related to Government and Politics](https://javul.org/wiki/Apps_and_Software_related_to_Government_and_Politics) (Javul.org) — civic tech survey used to identify several of the tools above (DemocracyOS, E-Democracy, LiquidFeedback, Democracy Earth, Vote Monitor, Ushahidi, Democracy Club).
