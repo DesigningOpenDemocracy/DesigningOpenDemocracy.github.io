@@ -28,6 +28,11 @@ serve: setup
 build: setup
     {{mkdocs}} build
 
+# Build with strict mode and check for broken internal links
+check-links: setup
+    {{mkdocs}} build --strict
+    {{python}} util/check_internal_links.py
+
 # Remove generated site files
 clean:
     rm -rf site
