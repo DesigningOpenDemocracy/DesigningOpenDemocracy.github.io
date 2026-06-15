@@ -37,8 +37,9 @@ The invariants recorded there are not immutable. Any document in this repo — i
 ### Project pages (`docs/projects/`)
 
 - Use `template: project.html` in frontmatter — renders a metadata box (status, contributors, website)
-- `status` values: `active` | `mothballed` | `cancelled`
+- `status` values: `active` | `idea` | `mothballed` | `cancelled`
 - `status: active` pages appear in the front page projects section automatically
+- `status: idea` is for ideation-stage proposals with no committed owner — written up with pros/cons and open questions so anyone can adopt one. To activate an idea, change `status` to `active` and add yourself under `contributors`.
 - All projects (any status) appear grouped on the `/projects/` index page
 
 ### Organisation pages (`docs/organisations/`)

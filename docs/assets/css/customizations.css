@@ -26,6 +26,7 @@
 }
 
 .project-status-badge.status-active       { background: #e6f4ea; color: #2e7d32; }
+.project-status-badge.status-idea         { background: #e3f2fd; color: #1565c0; }
 .project-status-badge.status-mothballed   { background: #fff3e0; color: #e65100; }
 .project-status-badge.status-cancelled    { background: #f5f5f5; color: #757575; }
 .project-status-badge.status-inactive     { background: #fff3e0; color: #e65100; }
