@@ -22,6 +22,7 @@ activity:
     note: "Latest post: Nos infrastructures démocratiques ne peuvent pas être propriétaires : à propos d"
     url: "https://decidim.org/blog/2026-04-07-nos-infrastructures-democratiques-ne-peuvent"
     checked: 2026-06-07
+last_checked: "2026-06-15"
 ---
 
 Decidim ("we decide" in Catalan) is a free, open-source participatory democracy framework built in Ruby on Rails, originally developed by Barcelona City Council and first deployed in January 2016 for the city's participatory action plan. It is now governed by the Decidim Association, an independent body separate from the city.

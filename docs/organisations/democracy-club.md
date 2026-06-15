@@ -22,6 +22,7 @@ activity:
     note: "Latest post: 2026 elections user feedback"
     url: https://democracyclub.org.uk/blog/
     checked: 2026-06-09
+last_checked: "2026-06-15"
 ---
 
 Democracy Club is a UK nonprofit (registered charity) that builds open infrastructure for elections. Founded in 2015, it operates as a small paid team supported by a large volunteer community who collectively gather, clean, and maintain data about UK elections.

@@ -34,6 +34,7 @@ activity:
     note: "Latest news page scraped"
     url: https://participediaproject.medium.com/
     checked: 2026-06-08
+last_checked: "2026-06-15"
 ---
 
 Participedia is a collaborative academic platform hosted by the University of British Columbia and Harvard University. It functions as a living encyclopaedia of participatory democracy — cataloguing case studies, methods, and organisations from across the world with structured, comparable data.
