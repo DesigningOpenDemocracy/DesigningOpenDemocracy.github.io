@@ -3,7 +3,7 @@ title: br/acc (World Transparency Graph)
 type: civic tech
 status: inactive
 country: BR
-website: https://github.com/brunoclz/br-acc
+website: https://web.archive.org/web/*/https://github.com/brunoclz/br-acc
 summary: "An open-source Brazilian civic tech project that normalises 45+ scattered government databases into a single searchable graph — making public data genuinely accessible for accountability and civic research."
 location:
   latitude: -23.5505

@@ -31,6 +31,7 @@ activity:
     note: "News page unreachable"
     hint: bot_blocked
     checked: 2026-06-08
+last_checked: "2026-06-15"
 ---
 
 The Sortition Foundation is the UK's leading organisation specifically dedicated to sortition — the selection of decision-makers by random lot rather than election. Their flagship campaign is the **House of Citizens**: replacing the appointed House of Lords with a chamber of randomly selected citizens who serve fixed, non-renewable terms.

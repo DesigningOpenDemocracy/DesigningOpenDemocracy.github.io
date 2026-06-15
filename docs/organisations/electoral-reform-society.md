@@ -25,6 +25,7 @@ activity:
     note: "Latest post: Polling Breakdown: What did the UK polls say in May 2026?"
     url: https://www.electoral-reform.org.uk/latest-news-and-research/blog/
     checked: 2026-06-09
+last_checked: "2026-06-15"
 ---
 
 The Electoral Reform Society (ERS) was founded in 1884, making it one of the world's oldest advocacy organisations dedicated to democratic reform. It is a membership organisation and registered charity headquartered in London, with a staff of around 30 and a substantial public profile in UK political debate.

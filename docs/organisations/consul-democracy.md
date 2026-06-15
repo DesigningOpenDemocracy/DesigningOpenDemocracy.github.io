@@ -22,6 +22,7 @@ activity:
     note: "Latest post: Version release 2.5.0! "
     url: "https://consuldemocracy.org/2026/04/version-release-2-5-0/"
     checked: 2026-06-07
+last_checked: "2026-06-15"
 ---
 
 Consul Democracy is an open-source e-participation platform first deployed as Decide Madrid in September 2015 by Madrid City Council to let citizens submit proposals, vote on participatory budgeting, and collaborate on legislation. The Consul Democracy Foundation, a non-profit incorporated in the Netherlands, was established in 2019 to steward the project independently of the Madrid city government.
