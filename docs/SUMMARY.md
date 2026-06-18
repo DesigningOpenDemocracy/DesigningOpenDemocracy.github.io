@@ -8,6 +8,7 @@
         - [AI Dialogues](philosophy/ai-dialogues/index.md)
             - philosophy/ai-dialogues/*.md
 - [Blog](/blog/)
+- [Microblog](/microblog/)
 - [Community](community/community.md)
     - community/*.md
     - [Projects](projects/projects.md)

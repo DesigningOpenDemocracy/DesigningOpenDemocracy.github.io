@@ -1,14 +1,17 @@
 #!/usr/bin/env python3
 """
-createPost.py — Interactive CLI to scaffold a new blog post
+createPost.py — Interactive CLI to scaffold a new blog or microblog post
 
-Creates a new file in docs/blog/posts/ with frontmatter pre-filled from
-your answers. Open the file in your editor to write the body.
+Creates a new file in docs/blog/posts/ (or docs/microblog/posts/ with
+--micro) with frontmatter pre-filled from your answers. Open the file in
+your editor to write the body.
 
 Usage:
     python util/createPost.py
+    python util/createPost.py --micro
 """
 
+import argparse
 import os
 import re
 from datetime import datetime
@@ -33,7 +36,15 @@ def list_field(items):
 
 
 def main():
-    print("\n── New blog post ──\n")
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--micro", "-m", action="store_true",
+        help="Create a microblog post (docs/microblog/posts/) instead of a full blog post",
+    )
+    args = parser.parse_args()
+    micro = args.micro
+
+    print(f"\n── New {'microblog' if micro else 'blog'} post ──\n")
 
     title = ask("Title")
     while not title:
@@ -45,15 +56,18 @@ def main():
     if not authors:
         authors = [""]
 
-    categories_raw = ask("Categories (comma-separated, e.g. podcast, meetup)")
-    categories = [c.strip() for c in (categories_raw or "").split(",") if c.strip()]
+    if micro:
+        link = ask("Link (URL)", optional=True)
+        note = ask("Note (one-liner, optional)", optional=True)
+        categories, summary = [], note
+    else:
+        categories_raw = ask("Categories (comma-separated, e.g. podcast, meetup)")
+        categories = [c.strip() for c in (categories_raw or "").split(",") if c.strip()]
+        summary = ask("Summary (one paragraph)")
+        link = ask("Link (URL for meetup/event, if any)", optional=True)
 
     tags_raw = ask("Tags (comma-separated)")
     tags = [t.strip() for t in (tags_raw or "").split(",") if t.strip()]
-
-    summary = ask("Summary (one paragraph)")
-
-    link = ask("Link (URL for meetup/event, if any)", optional=True)
 
     date_str = ask("Date (YYYY-MM-DD, Enter for today)", optional=True)
     if not date_str:
@@ -69,7 +83,7 @@ def main():
         lines.append("categories:")
         for c in categories:
             lines.append(f"- {c}")
-    else:
+    elif not micro:
         lines.append("categories: []")
     if tags:
         lines.append("tags:")
@@ -83,12 +97,21 @@ def main():
         lines.append(f"link: {link}")
     lines.append("---")
     lines.append("")
-    lines.append(f"## {title}")
-    lines.append("")
+    if micro:
+        if note:
+            lines.append(note)
+            lines.append("")
+        if link:
+            lines.append(f"<{link}>")
+            lines.append("")
+    else:
+        lines.append(f"## {title}")
+        lines.append("")
 
     slug = slugify(title)
     filename = f"{date_str}-{slug}.md"
-    posts_dir = os.path.join(os.path.dirname(__file__), "..", "docs", "blog", "posts")
+    blog_dir = "microblog" if micro else "blog"
+    posts_dir = os.path.join(os.path.dirname(__file__), "..", "docs", blog_dir, "posts")
     os.makedirs(posts_dir, exist_ok=True)
     file_path = os.path.join(posts_dir, filename)
 

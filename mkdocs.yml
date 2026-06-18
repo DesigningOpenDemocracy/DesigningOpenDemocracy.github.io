@@ -38,13 +38,32 @@ plugins:
   - blog:
       post_excerpt: required
       archive: true
+  - blog:
+      blog_dir: microblog
+      post_excerpt: optional
+      archive: true
+      blog_toc: false
   - rss:
-      match_path: blog/posts/.* 
+      match_path: blog/posts/.*
       date_from_meta:
         as_creation: date
       categories:
         - categories
-        - tags 
+        - tags
+  - rss:
+      match_path: microblog/posts/.*
+      date_from_meta:
+        as_creation: date
+      feed_title: "Designing Open Democracy — Microblog"
+      feed_description: "Quick links and background-monitoring notes — videos, articles, and signals from the democracy landscape that don't warrant a full blog post."
+      feeds_filenames:
+        json_created: feed_microblog_json_created.json
+        json_updated: feed_microblog_json_updated.json
+        rss_created: feed_microblog_rss_created.xml
+        rss_updated: feed_microblog_rss_updated.xml
+      categories:
+        - categories
+        - tags
   - tags
 extra:
   social:

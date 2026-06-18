@@ -3,4 +3,9 @@
 {% block extrahead %}
   {{ super() }}
   <link type="text/plain" rel="llms" href="/llms.txt">
+  {# The blog plugin only auto-injects a <link> for the first registered
+     "rss" plugin instance; the microblog feed needs to be added by hand so
+     it's discoverable from every page (including the home page) too. #}
+  <link rel="alternate" type="application/rss+xml" title="Microblog RSS feed" href="/feed_microblog_rss_created.xml">
+  <link rel="alternate" type="application/rss+xml" title="Microblog RSS feed of updated content" href="/feed_microblog_rss_updated.xml">
 {% endblock %}
