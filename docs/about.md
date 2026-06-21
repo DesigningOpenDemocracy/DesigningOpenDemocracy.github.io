@@ -8,7 +8,7 @@ Designing Open Democracy is an Australian-operated forum of process engineers, s
 
 We are **nonpartisan** and do not presume any single democratic model to be superior. We are agnostic about *which system* — but not about *whether a system is genuinely trying to serve its people*. That distinction matters: it lets us engage seriously with the full range of democratic traditions, including unconventional ones, without pretending all approaches are equally accountable or equally honest about what they are.
 
-→ *For the full framework — including how we assess organisations and what we expect from any system regardless of its ideological label — see the [Philosophy](philosophy/index.md) page.*
+→ *For how we assess organisations and what we expect from any system regardless of its ideological label, see the [Accountability Framework](projects/accountability-framework/index.md). For an open space to discuss democracy and governance ideas with other DOD members, see [Philosophy](philosophy/index.md).*
 
 → *To get involved, see the [Community](community/community.md) page.*
 

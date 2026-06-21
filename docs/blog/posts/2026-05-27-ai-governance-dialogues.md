@@ -21,7 +21,7 @@ summary: "DOD's philosophy framework claims to apply a consistent accountability
 
 ---
 
-Every framework that claims universal applicability should be tested from outside the tradition that built it. DOD's [philosophy page](../../philosophy/index.md) asserts that its accountability standard applies consistently to all governance systems — liberal democracies, vanguard states, communal systems, and everything in between. It was mostly written by Australians and an AI trained in San Francisco. That is a tension worth examining.
+Every framework that claims universal applicability should be tested from outside the tradition that built it. DOD's [accountability framework](../../projects/accountability-framework/index.md) asserts that its standard applies consistently to all governance systems — liberal democracies, vanguard states, communal systems, and everything in between. It was mostly written by Australians and an AI trained in San Francisco. That is a tension worth examining.
 
 So we examined it. Over a series of sessions in May 2026, we put the framework in front of six AI systems from different institutional and national contexts and asked them to take it seriously: find the gaps, challenge the assumptions, tell us where the claimed universalism breaks down.
 
@@ -86,7 +86,7 @@ The honest answer is: they're useful in specific ways, and not useful in others.
 
 ## What this means for DOD
 
-The framework is better for having been tested. The changes are documented in the [AI dialogue record](../../philosophy/ai-dialogues/index.md), which we've published in full as part of the same accountability standard we apply to governance systems.
+The framework is better for having been tested. The changes are documented in the [AI dialogue record](../../projects/accountability-framework/ai-dialogues/index.md), which we've published in full as part of the same accountability standard we apply to governance systems.
 
 The project continues. We're particularly interested in engaging AI systems from national contexts not yet represented — the Arab world, South and Southeast Asia — where the framework's claimed cross-cultural applicability has not yet been tested.
 
@@ -94,4 +94,4 @@ And the harder question raised by Mistral remains open: how does DOD apply its o
 
 ---
 
-*The full dialogue record — including each AI's verbatim feedback, Claude's responses, and each AI's right of reply — is in the [AI Dialogues](../../philosophy/ai-dialogues/index.md) section. The operational document for future AI sessions working on the framework is the [Soul Document](../../philosophy/soul.md).*
+*The full dialogue record — including each AI's verbatim feedback, Claude's responses, and each AI's right of reply — is in the [AI Dialogues](../../projects/accountability-framework/ai-dialogues/index.md) section. The operational document for future AI sessions working on the framework is the [Soul Document](../../projects/accountability-framework/soul.md).*

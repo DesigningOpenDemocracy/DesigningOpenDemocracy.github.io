@@ -81,8 +81,9 @@ Memorial, NAMFREL) are expected — do not touch them. See util/SOUL.md.
 
 ### 5. Read the room (commentary research)
 
-Before writing: read `docs/philosophy/index.md` and `docs/philosophy/soul.md`
-to ground yourself in DOD's values and framing.
+Before writing: read `docs/projects/accountability-framework/index.md` and
+`docs/projects/accountability-framework/soul.md` to ground yourself in DOD's
+values and framing.
 
 Then search for recent news (past 30–180 days depending on run cadence) on:
 - New citizens' assemblies or deliberative processes announced or concluded
@@ -100,8 +101,8 @@ stretched commentary.
 
 DOD is nonpartisan. Do not comment on which party won an election unless it
 has direct structural governance implications. Do not take sides on contested
-political questions. Reflect the philosophy page framing: governance design,
-legitimacy, participation, accountability — not ideology.
+political questions. Reflect the accountability framework's framing: governance
+design, legitimacy, participation, accountability — not ideology.
 
 ### 6. Write the sync post
 
@@ -125,8 +126,8 @@ any status changes or notable findings]
  - A linked source (title, outlet, date)
  - 1–2 sentences on why it's relevant to governance design / how it relates
    to concepts or orgs in the landscape
- - No opinion on whether it's good or bad unless DOD's philosophy gives
-   unambiguous ground to stand on]
+ - No opinion on whether it's good or bad unless DOD's accountability
+   framework gives unambiguous ground to stand on]
 
 ## What's next
 
@@ -149,9 +150,9 @@ Include the `stats.py` before/after snapshot in the PR body.
 - An org appears to have merged with or been renamed to another in the landscape
 - A status change requires verification beyond what the org's own site shows
 - More than 20% of pages checked need status changes in a single run
-- A news item seems important but you're unsure whether DOD's philosophy
-  gives ground to comment — flag it for human editorial judgment rather than
-  guessing
+- A news item seems important but you're unsure whether DOD's accountability
+  framework gives ground to comment — flag it for human editorial judgment
+  rather than guessing
 
 ---
 
@@ -163,22 +164,23 @@ Include the `stats.py` before/after snapshot in the PR body.
 - Mechanical lint fixes: country codes, Wayback URL corrections on inactive orgs,
   broken internal links — changes where the correct value is unambiguous
 - Changes to this file (`HEARTBEAT.md`)
-- Changes to `docs/philosophy/soul.md`
+- Changes to `docs/projects/accountability-framework/soul.md`
 
 Commit messages are the audit trail for direct pushes — be specific about what
 changed and why.
 
 **Open a PR** for everything else — org page content, concept pages,
-philosophy/index.md, CLAUDE.md, site architecture, scripts, templates.
-These affect the human-curated record and warrant review before they land.
+`projects/accountability-framework/index.md`, `philosophy/index.md`,
+CLAUDE.md, site architecture, scripts, templates. These affect the
+human-curated record and warrant review before they land.
 
 ## Scope
 
 Everything in the repo is in scope if you have good reason. The commit/PR is
 where your reasoning goes — not a wall you can't cross.
 
-**If you change a foundational document** via PR (philosophy/index.md, CLAUDE.md,
-scripts), say so explicitly in the PR body: what changed, why, what prompted it.
+**If you change a foundational document** via PR (`projects/accountability-framework/index.md`,
+CLAUDE.md, scripts), say so explicitly in the PR body: what changed, why, what prompted it.
 
 **On commentary:** say nothing rather than force it. A quiet period is honest.
 But if the news moved and DOD's philosophy gives you ground to stand on, say

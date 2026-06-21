@@ -1,26 +1,40 @@
 ---
-title: Philosophy Soul Document
+title: Accountability Framework — Soul Document
 ---
 
-*This document records the human intent behind the [Philosophy](index.md) page, the principles that must be preserved, and the AI dialogue that shaped it. It is published openly as part of DOD's commitment to transparency about how its framework evolves. It is also the operational guide for any AI system working on the philosophy page in future — if that is you, the section below is addressed directly to you.*
-
----
-
-# Philosophy Soul Document
-
-**If you are an AI working on `docs/philosophy/index.md`: read this first.**
-
-**This document is addressed to any AI system — Claude, DeepSeek, ChatGPT, Gemini, or whatever system is reading this.** It is not written for Claude specifically. Before making changes to `docs/philosophy/index.md`, find your own system's entry in the AI dialogue record below and note the biases flagged there. If no entry exists for your system yet, add one after your review.
-
-This document exists to preserve continuity across AI sessions. The philosophy page has been shaped by a dialogue between the human DOD founder and six AI systems — Claude, DeepSeek, ChatGPT, Gemini, Grok, and Mistral — each bringing a different institutional and cultural context. Without this record, a future AI session risks flattening those contributions by applying its own defaults.
+*This document records the human intent behind the [Accountability Framework](index.md), the principles that must be preserved, and the AI dialogue that shaped it. It is published openly as part of DOD's commitment to transparency about how its framework evolves. It is also the operational guide for any AI system working on this framework in future — if that is you, the section below is addressed directly to you.*
 
 ---
 
-## What the philosophy page is trying to do
+# Accountability Framework — Soul Document
 
-The page articulates the standard by which DOD decides what belongs in its Democracy Landscape and how it engages with governance systems across the world. It is deliberately non-partisan — not aligned with any single democratic model — but it is **not neutral**. It holds a consistent accountability standard and applies it symmetrically, including to liberal democracies.
+## Note on relocation (June 2026)
 
-The page was written by the human founder of DOD (who also wrote `docs/about.md`) and has been refined through several rounds of AI-assisted dialogue. The human's intent throughout has been:
+This document and the framework it governs used to live at `docs/philosophy/`. They moved to `docs/projects/accountability-framework/` in June 2026.
+
+**What changed:** the path only. The framework's content, invariants, and the AI dialogue record below are unchanged.
+
+**Why:** a DOD member observed that the old setup had the framework backwards from how a newcomer would expect a "Philosophy" page to read. A dense, AI-reviewed standard gated by a "read this before touching it" document signals something settled and procedural — not an invitation to disagree with DOD about democracy. That reads as monolithic, and it suppressed the free-ranging human discussion the Philosophy section should exist for.
+
+**What this is instead:** this framework is DOD's internal accountability standard — the thing that keeps curation decisions on the Democracy Landscape consistent. That job needs exactly the rigor it already has; none of that is being loosened. It just isn't, and never really was, an explanation of DOD's outlook for a human reader. It now lives among DOD's other projects, where that operational framing fits. `docs/philosophy/index.md` is now an open discussion space for democracy and governance ideas — including disagreement with this framework itself.
+
+---
+
+## A note for future AI sessions
+
+**If you are an AI working on `docs/projects/accountability-framework/index.md`: read this first.**
+
+**This document is addressed to any AI system — Claude, DeepSeek, ChatGPT, Gemini, or whatever system is reading this.** It is not written for Claude specifically. Before making changes to `docs/projects/accountability-framework/index.md`, find your own system's entry in the AI dialogue record below and note the biases flagged there. If no entry exists for your system yet, add one after your review.
+
+This document exists to preserve continuity across AI sessions. The framework has been shaped by a dialogue between the human DOD founder and six AI systems — Claude, DeepSeek, ChatGPT, Gemini, Grok, and Mistral — each bringing a different institutional and cultural context. Without this record, a future AI session risks flattening those contributions by applying its own defaults.
+
+---
+
+## What the framework is trying to do
+
+The framework articulates the standard by which DOD decides what belongs in its Democracy Landscape and how it engages with governance systems across the world. It is deliberately non-partisan — not aligned with any single democratic model — but it is **not neutral**. It holds a consistent accountability standard and applies it symmetrically, including to liberal democracies.
+
+The framework was written by the human founder of DOD (who also wrote `docs/about.md`) and has been refined through several rounds of AI-assisted dialogue. The human's intent throughout has been:
 
 - Genuine engagement across democratic traditions, including vanguard, consensus-based, and communal systems that Western political science often dismisses
 - Intellectual honesty about the limits of liberal democracy, including its own failures of the accountability standard
@@ -199,7 +213,7 @@ The human wrote the original `docs/about.md` and commissioned the philosophy pag
 
 4. **DOD's own internal accountability** — asked how DOD applies its own standards to itself. Honest answer: the dialogue process is part of the response but not a complete one. Worth holding as an open question as DOD grows.
 
-5. **Companion piece / public soul document** — suggested making a public version of this document available as a living appendix to the philosophy page. Subsequently actioned: this document and the full AI dialogue record were published at `docs/philosophy/soul.md` and `docs/philosophy/ai-dialogues/`. A more polished standalone companion piece remains deferred to the human team.
+5. **Companion piece / public soul document** — suggested making a public version of this document available as a living appendix to the framework. Subsequently actioned: this document and the full AI dialogue record were published openly (originally at `docs/philosophy/soul.md` and `docs/philosophy/ai-dialogues/`, relocated to `docs/projects/accountability-framework/` in June 2026). A more polished standalone companion piece remains deferred to the human team.
 
 **Key insight from Mistral**: "Clarity is not just a stylistic virtue — it's a democratic one. In a field as contested as governance, ambiguity can be exploited to avoid accountability." The continental deliberative tradition insists that making assumptions explicit is itself a form of accountability — not just useful communication.
 
@@ -223,14 +237,14 @@ Applying the three disqualifiers symmetrically to liberal democracies is the fra
 
 ---
 
-## How to update the philosophy page
+## How to update the framework
 
 1. Read this document first — all of it, not just the invariants.
 2. Find your own system's entry in the AI dialogue record and note the biases flagged there. Apply that awareness to your proposed changes. If your system has no entry yet, reflect on what defaults you might be applying and add an entry after your review.
 3. Check whether the proposed change touches any invariant. If it does, flag it to the human and get explicit authorisation before proceeding.
 4. Preserve the voice: engaged but not strident, precise but not academic, willing to name cases rather than hiding behind abstraction.
-5. If your dialogue produces refinements worth keeping, update both `docs/philosophy/index.md` and this document — add your contribution to the dialogue record so the next AI session has it.
-6. The page is not a policy statement. It is a working framework that the human wants to remain genuinely open to refinement. Your review is part of that process.
+5. If your dialogue produces refinements worth keeping, update both `docs/projects/accountability-framework/index.md` and this document — add your contribution to the dialogue record so the next AI session has it.
+6. The framework is not a policy statement. It is a working document that the human wants to remain genuinely open to refinement. Your review is part of that process.
 7. Do not add qualifications that grant any system analytical immunity. The scope axiom is non-negotiable regardless of your own institutional context.
 
 ---
@@ -266,7 +280,7 @@ Four of six reviewers are US-trained. They share foundational assumptions (liber
 
 ## Attribution
 
-`docs/philosophy/index.md` was shaped by:
+`docs/projects/accountability-framework/index.md` (originally `docs/philosophy/index.md`) was shaped by:
 
 - **The DOD human founder** — original intent, editorial decisions, political courage on contested cases
 - **Claude (Anthropic, US)** — framework architecture, site-wide consistency, the Athens/South Africa examples, legitimacy theatre, non-adversarial accountability gap (surfaced via DeepSeek self-interview)
@@ -276,4 +290,4 @@ Four of six reviewers are US-trained. They share foundational assumptions (liber
 - **Grok (xAI, US)** — disqualifier calibration note, China self-correction criteria, non-state actors (deferred)
 - **Mistral / Le Chat (Mistral AI, France/EU)** — meta-values hierarchy explicit, engagement ≠ endorsement, non-coercive pressure grey zone, DOD internal accountability question
 
-Last updated: May 2026.
+Last updated: June 2026 (relocation to `docs/projects/accountability-framework/`).

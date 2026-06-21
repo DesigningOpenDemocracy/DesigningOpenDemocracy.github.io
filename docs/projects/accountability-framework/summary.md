@@ -1,10 +1,10 @@
 ---
-title: Philosophy
+title: Accountability Framework — Summary
 ---
 
 DOD is non-partisan and agnostic about which democratic model is superior. This page explains what that means — and what it doesn't.
 
-*For the full framework, see [Philosophy: Full Framework](index.md).*
+*For the full framework, see [Accountability Framework](index.md). For DOD's open discussion space on democracy and governance ideas, see [Philosophy](../../philosophy/index.md).*
 
 ---
 
@@ -33,4 +33,4 @@ Not a human rights observatory. Not a democracy promotion organisation. Not tryi
 
 ---
 
-*This philosophy informs the [Democracy Landscape](../organisations/organisations.md), the [Concepts](../concepts/concepts.md) section, and the curation decisions reflected throughout the site.*
+*This framework informs the [Democracy Landscape](../../organisations/organisations.md), the [Concepts](../../concepts/concepts.md) section, and the curation decisions reflected throughout the site.*
