@@ -25,14 +25,14 @@ activity:
 
 The OpenAustralia Foundation is a non-partisan charity whose work centres on making Australian parliamentary and government information accessible and usable. They build and maintain several well-known tools:
 
-- **[They Vote For You](https://theyvoteforyou.org.au)** — tracks how every MP and Senator votes on legislation
+- **[They Vote For You](they-vote-for-you.md)** — tracks how every MP and Senator votes on legislation
 - **[OpenAustralia](https://www.openaustralia.org.au)** — makes parliamentary debates searchable and followable
 - **[Right To Know](https://www.righttoknow.org.au)** — a platform for making and tracking Freedom of Information requests
 - **[Planning Alerts](https://www.planningalerts.org.au)** — notifies citizens of development applications near them
 
 The foundation's model is to take government data that is technically public but practically inaccessible and present it in a form ordinary people can actually use. This kind of infrastructure work is foundational to an informed democratic public.
 
-The foundation's independence has been tested. In 2021–22, two Liberal MPs launched formal complaints and then legal action over They Vote For You's representation of their voting records, arguing it was misleading. Landauer maintained the site was non-partisan and acknowledged it was constrained to recording formal votes only — not the public positions MPs take outside the chamber.[^oaf-wiki]
+The foundation's independence has been tested. In 2021–22, Liberal MPs Andrew Bragg and Dave Sharma complained to regulators and then threatened legal action over [They Vote For You](they-vote-for-you.md)'s representation of their voting records, arguing it was misleading. Landauer maintained the site was non-partisan and acknowledged it was constrained to recording formal votes only — not the public positions MPs take outside the chamber.[^oaf-wiki]
 
 ## Key people
 
@@ -50,5 +50,6 @@ The foundation's independence has been tested. In 2021–22, two Liberal MPs lau
 - [Radical Transparency](../concepts/radical-transparency.md)
 - [E-Government](../concepts/e-government.md)
 - [Accountability Sink](../concepts/accountability-sink.md)
+- [They Vote For You](they-vote-for-you.md) — flagship voting-record tracker
 - [Code for Australia](code-for-australia.md)
 - [mySociety](mysociety.md) — UK sister organisation
