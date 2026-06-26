@@ -24,17 +24,19 @@ python util/add_video_reference.py "https://www.youtube.com/watch?v=VIDEO_ID" --
 
 `--topic` and `--published` are optional and will be asked for / left as `TBD` if omitted — fill in the date manually afterward if you don't have it handy.
 
+Sorted newest-published first.
+
 | Video published | Video | Creator / Channel | Topic |
 |---|---|---|---|
+| 2020-11-03 | [Supreme Court Chaos — How to Fix Governmental Exploits with Warhammer 40K](https://www.youtube.com/watch?v=8TRyN0mpczQ) | Extra History (Extra Credits) | Exploits/loopholes in the US political system, framed as game-design bugs |
 | 2020-11-02 | [Simulating alternate voting systems](https://www.youtube.com/watch?v=yhO6jfHPFQU) | Primer | Simulates how different voting systems (FPTP, approval, IRV, etc.) behave under the same electorate |
 | 2018-06-26 | [The Rules of Society (Extra Politics, Part 4)](https://www.youtube.com/watch?v=gK1dZ67MLjY) | Extra History (Extra Credits) | Why political systems need stable, game-design-like rules to function |
-| 2020-11-03 | [Supreme Court Chaos — How to Fix Governmental Exploits with Warhammer 40K](https://www.youtube.com/watch?v=8TRyN0mpczQ) | Extra History (Extra Credits) | Exploits/loopholes in the US political system, framed as game-design bugs |
 
 If one of these gets discussed or cited in a post, move its row up into the main table above.
 
+<a href="https://www.youtube.com/watch?v=8TRyN0mpczQ"><img src="../assets/blog/2020-11-03-supreme-court-chaos-thumb.jpg" alt="Thumbnail: Supreme Court Chaos" width="280"></a>
 <a href="https://www.youtube.com/watch?v=yhO6jfHPFQU"><img src="../assets/blog/2020-11-02-simulating-alternate-voting-systems-thumb.jpg" alt="Thumbnail: Simulating alternate voting systems" width="280"></a>
 <a href="https://www.youtube.com/watch?v=gK1dZ67MLjY"><img src="../assets/blog/2018-06-26-the-rules-of-society-thumb.jpg" alt="Thumbnail: The Rules of Society" width="280"></a>
-<a href="https://www.youtube.com/watch?v=8TRyN0mpczQ"><img src="../assets/blog/2020-11-03-supreme-court-chaos-thumb.jpg" alt="Thumbnail: Supreme Court Chaos" width="280"></a>
 
 ## Possible future: a recommendation feed
 
