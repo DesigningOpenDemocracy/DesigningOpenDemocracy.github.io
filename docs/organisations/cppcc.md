@@ -30,7 +30,7 @@ The CPPCC's official functions are framed as "political consultation, democratic
 
 ## Role in China's political theory
 
-The CPPCC is central to the official concept of [**whole-process people's democracy**](https://en.wikipedia.org/wiki/Whole-process_people%27s_democracy) (全过程人民民主) — Xi Jinping's framework positioning Chinese governance as continuous civic participation rather than periodic competitive elections. Whether the body delivers genuine accountability to that stated ideal is the live question; the scholarly consensus currently is that it does not, and that this gap constitutes a structural inflexibility problem by DOD's own [assessment standard](../philosophy/index.md).
+The CPPCC is central to the official concept of [**whole-process people's democracy**](https://en.wikipedia.org/wiki/Whole-process_people%27s_democracy) (全过程人民民主) — Xi Jinping's framework positioning Chinese governance as continuous civic participation rather than periodic competitive elections. Whether the body delivers genuine accountability to that stated ideal is the live question; the scholarly consensus currently is that it does not, and that this gap constitutes a structural inflexibility problem by DOD's own [assessment standard](../projects/accountability-framework/index.md).
 
 ## Links
 

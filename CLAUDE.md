@@ -24,11 +24,16 @@ Current status: we are still on `mkdocs + mkdocs-material` and it works fine. `D
 
 Reference: https://fpgmaas.com/blog/collapse-of-mkdocs/
 
-## Philosophy page
+## Philosophy section vs. Accountability Framework
 
-**Before editing `docs/philosophy/index.md`, read `docs/philosophy/soul.md`.**
+These two are separate on purpose (split June 2026 — see the Soul Document's relocation note):
 
-That file records the human intent behind the page, the invariants that shaped the current text, and the AI dialogue (Claude, DeepSeek, ChatGPT, Gemini, Grok, Mistral) that contributed to it. Reading it first prevents accidentally collapsing earlier contributions.
+- **`docs/philosophy/index.md`** — the open discussion space. Any DOD member's idea about democracy or governance belongs here, including repeated, unpopular, or half-formed ones. No sourcing discipline required; this is the conversation that happens *before* an idea is polished. Edit it freely — it's meant to stay informal and is not gated by the soul document below.
+- **`docs/projects/accountability-framework/index.md`** — DOD's rigorous, AI-reviewed standard for what belongs in the Democracy Landscape. This is the document the rule below applies to.
+
+**Before editing `docs/projects/accountability-framework/index.md`, read `docs/projects/accountability-framework/soul.md`.**
+
+That file records the human intent behind the framework, the invariants that shaped the current text, and the AI dialogue (Claude, DeepSeek, ChatGPT, Gemini, Grok, Mistral) that contributed to it. Reading it first prevents accidentally collapsing earlier contributions.
 
 The invariants recorded there are not immutable. Any document in this repo — including soul.md, this file, and HEARTBEAT.md — can be proposed for change by any contributor, human or AI. The requirement is transparency: if you change something foundational, say what you changed, why, and what prompted it. The PR review is the gate, not a list of forbidden edits.
 
@@ -48,7 +53,7 @@ The invariants recorded there are not immutable. Any document in this repo — i
 - Use `type`, `status`, `country`, `website`, `summary` in frontmatter
 - `status` values: `active` | `inactive` | `deregistered`
 - For defunct orgs, point `website` to the Wayback Machine calendar URL: `https://web.archive.org/web/*/https://originalurl.com/`
-- **Curation standard**: An org belongs here if it works on systems of governance for/with the people, in good faith — regardless of ideological label. See `docs/philosophy/index.md` for the full framework, including the three disqualifiers (hypocrisy, bad faith, structural inflexibility). DOD is not a human rights observatory; orgs focused purely on documenting abuses without engaging governance design do not fit.
+- **Curation standard**: An org belongs here if it works on systems of governance for/with the people, in good faith — regardless of ideological label. See `docs/projects/accountability-framework/index.md` for the full framework, including the three disqualifiers (hypocrisy, bad faith, structural inflexibility). DOD is not a human rights observatory; orgs focused purely on documenting abuses without engaging governance design do not fit.
 - `concepts: [slug, slug]` — list of concept slugs this org relates to. Used to populate concept chips in the metadata box and org index table. Slugs match filenames in `docs/concepts/` without the `.md` extension.
 - `location: {latitude, longitude, name}` — required for the org to appear on the interactive map. Only `status: active` orgs are shown on the map.
 - The `organisation.html` template is **auto-applied** to all org pages via `hooks/org_template.py` — no need to set `template:` in frontmatter unless overriding.

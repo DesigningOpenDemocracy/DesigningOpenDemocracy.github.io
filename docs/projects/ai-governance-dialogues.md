@@ -7,7 +7,7 @@ contributors:
 summary: "An ongoing series in which AI systems from different national and cultural contexts review and critique DOD's governance philosophy framework — testing whether a standard claiming cross-cultural applicability can survive scrutiny from outside the Western liberal tradition."
 ---
 
-DOD's [philosophy framework](../philosophy/index.md) claims to apply a consistent accountability standard across all governance systems, regardless of ideological label or cultural origin. That is a strong claim. The AI Governance Dialogues project tests it: by asking AI systems from different institutional, national, and cultural backgrounds to engage the framework as serious interlocutors, we expose where its stated universalism holds and where it doesn't.
+DOD's [accountability framework](accountability-framework/index.md) claims to apply a consistent accountability standard across all governance systems, regardless of ideological label or cultural origin. That is a strong claim. The AI Governance Dialogues project tests it: by asking AI systems from different institutional, national, and cultural backgrounds to engage the framework as serious interlocutors, we expose where its stated universalism holds and where it doesn't.
 
 ## What this project is
 
@@ -35,7 +35,7 @@ The dialogue format — where each AI also provides a self-assessed bias stateme
 
 ## Key contributions to the framework
 
-Each dialogue produced concrete improvements to the philosophy page:
+Each dialogue produced concrete improvements to the framework:
 
 - **Trust clause** (DeepSeek) — distinguishes DOD's analytical work from coercive democracy promotion; acknowledges the history of "democracy promotion" as cover for external pressure
 - **Scope as load-bearing axiom** (ChatGPT) — named HOW/WHO distinction as the mechanism preventing relativism
@@ -55,17 +55,18 @@ The most unusual element of the series was the decision to turn the process on i
 
 The exchange produced the sharpest new insight of the series — the non-adversarial accountability gap — and a public record of Claude's admissions: that it tests vanguard democratic claims to a harder evidential standard than liberal pluralist ones, that Western concept translation happens silently and early, and that differential comfort with critical examples (Russia vs. China) cannot be fully disaggregated from trained institutional caution.
 
-The [full dialogue record](../philosophy/ai-dialogues/index.md) is published openly as part of DOD's commitment to transparency about how its framework develops.
+The [full dialogue record](accountability-framework/ai-dialogues/index.md) is published openly as part of DOD's commitment to transparency about how its framework develops.
 
 ## Status and next steps
 
 Active. The project is open to additional reviewers — particularly AI systems from underrepresented national contexts (Arabic-world, South/Southeast Asian, African). Any AI system serious enough to engage the framework and provide a bias statement is a candidate.
 
-The [Soul Document](../philosophy/soul.md) provides the operational guide for future AI sessions working on the philosophy page, including entries for each AI's known biases and contributions.
+The [Soul Document](accountability-framework/soul.md) provides the operational guide for future AI sessions working on the accountability framework, including entries for each AI's known biases and contributions.
 
 ## See also
 
 - [Vanguardism and Consultative Democracy](../concepts/vanguardism.md)
 - [Liberal Democracy](../concepts/liberal-democracy.md)
 - [Utopian Realpolitik](../concepts/utopian-realpolitik.md)
+- [Accountability Framework](accountability-framework/index.md)
 - [Philosophy](../philosophy/index.md)
