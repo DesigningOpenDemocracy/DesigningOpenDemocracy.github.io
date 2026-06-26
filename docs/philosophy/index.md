@@ -4,11 +4,9 @@ contributors:
   - Charlie
 ---
 
-This used to be the page for DOD's full accountability framework — the rigorous, AI-reviewed standard that decides what belongs in the Democracy Landscape. That document still exists; it moved to the [Accountability Framework](../projects/accountability-framework/index.md) project. The reasoning is recorded in its [Soul Document](../projects/accountability-framework/soul.md#note-on-relocation-june-2026).
+This is DOD's open space for discussing democracy, governance, and accountability — any idea, from any DOD member, including the repeated, unpopular, or half-formed ones.
 
-The short version: a DOD member pointed out that the old setup had this backwards. A long, AI-reviewed standard, gated by a "read this before touching it" document, reads as settled — which makes it a bad place to start a conversation. If you wanted to argue with DOD about democracy, the front door handed you a constitution. That's monolithic, and it suppressed exactly the kind of free, repeat-yourself, say-the-unpopular-thing discussion this section should exist for.
-
-So this page is now that discussion space instead. The rigor that the framework needs — sourcing discipline for organisations, the AI dialogue record, the soul document's invariants — hasn't gone anywhere and isn't being loosened. It just isn't here anymore, because it was never really a conversation starter.
+It used to host DOD's full accountability framework instead. That document didn't go anywhere — it moved to the [Accountability Framework](../projects/accountability-framework/index.md) project, and its sourcing discipline wasn't loosened in the move. See [why it moved](../blog/posts/2026-06-26-philosophy-section-redesign.md) for the full story.
 
 ## What belongs here
 
