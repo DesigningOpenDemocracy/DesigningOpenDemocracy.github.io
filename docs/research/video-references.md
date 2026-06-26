@@ -24,6 +24,10 @@ Videos flagged as worth checking out but not (yet) discussed or cited in any DOD
 
 If one of these gets discussed or cited in a post, move its row up into the main table above.
 
+<a href="https://www.youtube.com/watch?v=yhO6jfHPFQU"><img src="../assets/blog/2020-11-02-simulating-alternate-voting-systems-thumb.jpg" alt="Thumbnail: Simulating alternate voting systems" width="280"></a>
+<a href="https://www.youtube.com/watch?v=gK1dZ67MLjY"><img src="../assets/blog/2018-06-26-the-rules-of-society-thumb.jpg" alt="Thumbnail: The Rules of Society" width="280"></a>
+<a href="https://www.youtube.com/watch?v=8TRyN0mpczQ"><img src="../assets/blog/2020-11-03-supreme-court-chaos-thumb.jpg" alt="Thumbnail: Supreme Court Chaos" width="280"></a>
+
 ## Possible future: a recommendation feed
 
 Worth considering separately from this log: a lighter-weight way to surface interesting videos/articles to DOD members as they're found, rather than only retroactively logging things already cited in a post. That's closer to social-media sharing than to blogging or citation-tracking, and would need its own format (a Discord/mailing-list digest? a dated links page? something else?) rather than overloading this log or the blog. Noted here as a gap, not yet designed.
