@@ -16,6 +16,14 @@ Thumbnails are saved locally under `docs/assets/blog/` (named `<date>-<slug>-thu
 
 Videos flagged as worth checking out but not (yet) discussed or cited in any DOD post. No "referenced in" link because there isn't one yet — these are bookmarks, not citations.
 
+Add an entry with `util/add_video_reference.py` instead of editing this file by hand — it looks up the title/channel, downloads a local thumbnail to `docs/assets/blog/`, and appends both the table row and the thumbnail embed below:
+
+```
+python util/add_video_reference.py "https://www.youtube.com/watch?v=VIDEO_ID" --topic "One-line topic" --published 2026-06-18
+```
+
+`--topic` and `--published` are optional and will be asked for / left as `TBD` if omitted — fill in the date manually afterward if you don't have it handy.
+
 | Video published | Video | Creator / Channel | Topic |
 |---|---|---|---|
 | 2020-11-02 | [Simulating alternate voting systems](https://www.youtube.com/watch?v=yhO6jfHPFQU) | Primer | Simulates how different voting systems (FPTP, approval, IRV, etc.) behave under the same electorate |
