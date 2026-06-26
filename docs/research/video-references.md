@@ -28,15 +28,23 @@ Sorted newest-published first.
 
 | Video published | Video | Creator / Channel | Topic |
 |---|---|---|---|
+| TBD | [You Would Be a Terrible Leader](https://www.youtube.com/watch?v=rStL7niR7gs) | CGP Grey | How would-be rulers must satisfy supporters to stay in power, and why that constrains even dictators |
+| TBD | [You Can Win the Presidency With 22% of the Vote](https://www.youtube.com/watch?v=7wC42HgLA4k) | CGP Grey | How Electoral College math lets a candidate win with a minority of the popular vote |
+| TBD | [The Voting System That Should Replace Every Election](https://www.youtube.com/watch?v=3Y3jE3B8HsE) | CGP Grey | Explains the Alternative Vote / STV and why it can outperform plurality voting |
+| TBD | [Why Democracy Is Mathematically Impossible](https://www.youtube.com/watch?v=qf7ws2DF-zk) | Veritasium | Arrow's impossibility theorem — no voting system can satisfy all fairness criteria at once |
 | 2020-11-03 | [Supreme Court Chaos — How to Fix Governmental Exploits with Warhammer 40K](https://www.youtube.com/watch?v=8TRyN0mpczQ) | Extra History (Extra Credits) | Exploits/loopholes in the US political system, framed as game-design bugs |
 | 2020-11-02 | [Simulating alternate voting systems](https://www.youtube.com/watch?v=yhO6jfHPFQU) | Primer | Simulates how different voting systems (FPTP, approval, IRV, etc.) behave under the same electorate |
 | 2018-06-26 | [The Rules of Society (Extra Politics, Part 4)](https://www.youtube.com/watch?v=gK1dZ67MLjY) | Extra History (Extra Credits) | Why political systems need stable, game-design-like rules to function |
 
 If one of these gets discussed or cited in a post, move its row up into the main table above.
 
-<a href="https://www.youtube.com/watch?v=8TRyN0mpczQ"><img src="../assets/blog/2020-11-03-supreme-court-chaos-thumb.jpg" alt="Thumbnail: Supreme Court Chaos" width="280"></a>
+<a href="https://www.youtube.com/watch?v=rStL7niR7gs"><img src="../assets/blog/2026-06-26-you-would-be-a-terrible-leader-thumb.jpg" alt="Thumbnail: You Would Be a Terrible Leader" width="280"></a>
+<a href="https://www.youtube.com/watch?v=7wC42HgLA4k"><img src="../assets/blog/2026-06-26-you-can-win-the-presidency-with-22-of-the-vote-thumb.jpg" alt="Thumbnail: You Can Win the Presidency With 22% of the Vote" width="280"></a>
+<a href="https://www.youtube.com/watch?v=3Y3jE3B8HsE"><img src="../assets/blog/2026-06-26-the-voting-system-that-should-replace-every-election-thumb.jpg" alt="Thumbnail: The Voting System That Should Replace Every Election" width="280"></a>
+<a href="https://www.youtube.com/watch?v=qf7ws2DF-zk"><img src="../assets/blog/2026-06-26-why-democracy-is-mathematically-impossible-thumb.jpg" alt="Thumbnail: Why Democracy Is Mathematically Impossible" width="280"></a>
+<a href="https://www.youtube.com/watch?v=8TRyN0mpczQ"><img src="../assets/blog/2020-11-03-supreme-court-chaos-thumb.jpg" alt="Thumbnail: Supreme Court Chaos — How to Fix Governmental Exploits with Warhammer 40K" width="280"></a>
 <a href="https://www.youtube.com/watch?v=yhO6jfHPFQU"><img src="../assets/blog/2020-11-02-simulating-alternate-voting-systems-thumb.jpg" alt="Thumbnail: Simulating alternate voting systems" width="280"></a>
-<a href="https://www.youtube.com/watch?v=gK1dZ67MLjY"><img src="../assets/blog/2018-06-26-the-rules-of-society-thumb.jpg" alt="Thumbnail: The Rules of Society" width="280"></a>
+<a href="https://www.youtube.com/watch?v=gK1dZ67MLjY"><img src="../assets/blog/2018-06-26-the-rules-of-society-thumb.jpg" alt="Thumbnail: The Rules of Society (Extra Politics, Part 4)" width="280"></a>
 
 ## Possible future: a recommendation feed
 
