@@ -6,9 +6,11 @@ A running log of individual videos (YouTube essays, talks, podcasts) that have i
 
 This is a citation log, not an endorsement list. Inclusion means a video was substantive enough to reference or respond to — not agreement with its argument.
 
-| Date logged | Video | Creator / Channel | Topic | Referenced in |
-|---|---|---|---|---|
-| 2026-06-26 | [We Need To Rethink Democracy](https://www.youtube.com/watch?v=W5JEJ_L_Zjg) | Andrewism | Anarchist critique of democracy as a category | [Anarchist critique of democracy](../blog/posts/2026-06-26-anarchist-critique-of-democracy.md) |
+| Date logged | Video | Creator / Channel | Topic | Referenced in | Thumbnail backup |
+|---|---|---|---|---|---|
+| 2026-06-26 | [We Need To Rethink Democracy](https://www.youtube.com/watch?v=W5JEJ_L_Zjg) | Andrewism | Anarchist critique of democracy as a category | [Anarchist critique of democracy](../blog/posts/2026-06-26-anarchist-critique-of-democracy.md) | [local copy](../assets/blog/2026-06-26-we-need-to-rethink-democracy-thumb.jpg) |
+
+Thumbnails are saved locally under `docs/assets/blog/` (named `<date>-<slug>-thumb.jpg`) rather than hotlinked, so the reference survives if a video is taken down. Only the thumbnail is kept, not the video itself, and it's credited and linked back to the source.
 
 ## Older, unstructured references
 
