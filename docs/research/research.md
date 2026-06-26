@@ -25,9 +25,4 @@ This is an **archive of members' raw working notes** — unpolished material kep
 | [Democracy Analysis Project](democracy-analysis-project.md) | Member project to classify and analyse democracy approaches |
 | [Democracy Analysis — Links](democracy-analysis-project---links.md) | Reference links for the analysis project |
 | [Democracy Analysis — Classification](democracy-analysis-project---classification-task.md) | Classification framework for democracy approaches |
-
-## Quick links
-
-- [Simulating alternate voting systems](https://www.youtube.com/watch?v=yhO6jfHPFQU) — YouTube
-- [Extra Credits: The Rules of Society](https://www.youtube.com/watch?v=gK1dZ67MLjY) — YouTube series on political design
-- [Extra Credits: Fixing Broken Politics](https://www.youtube.com/watch?v=8TRyN0mpczQ) — YouTube
+| [Video References](video-references.md) | Log of individual videos (YouTube essays, talks) cited in blog posts or discussion |
