@@ -40,7 +40,6 @@ If one of these gets discussed or cited in a post, move its row up into the main
 
 <a href="https://www.youtube.com/watch?v=rStL7niR7gs"><img src="../assets/blog/2026-06-26-you-would-be-a-terrible-leader-thumb.jpg" alt="Thumbnail: You Would Be a Terrible Leader" width="280"></a>
 <a href="https://www.youtube.com/watch?v=7wC42HgLA4k"><img src="../assets/blog/2026-06-26-you-can-win-the-presidency-with-22-of-the-vote-thumb.jpg" alt="Thumbnail: You Can Win the Presidency With 22% of the Vote" width="280"></a>
-<a href="https://www.youtube.com/watch?v=3Y3jE3B8HsE"><img src="../assets/blog/2026-06-26-the-voting-system-that-should-replace-every-election-thumb.jpg" alt="Thumbnail: The Voting System That Should Replace Every Election" width="280"></a>
 <a href="https://www.youtube.com/watch?v=qf7ws2DF-zk"><img src="../assets/blog/2026-06-26-why-democracy-is-mathematically-impossible-thumb.jpg" alt="Thumbnail: Why Democracy Is Mathematically Impossible" width="280"></a>
 <a href="https://www.youtube.com/watch?v=8TRyN0mpczQ"><img src="../assets/blog/2020-11-03-supreme-court-chaos-thumb.jpg" alt="Thumbnail: Supreme Court Chaos — How to Fix Governmental Exploits with Warhammer 40K" width="280"></a>
 <a href="https://www.youtube.com/watch?v=yhO6jfHPFQU"><img src="../assets/blog/2020-11-02-simulating-alternate-voting-systems-thumb.jpg" alt="Thumbnail: Simulating alternate voting systems" width="280"></a>

@@ -77,10 +77,17 @@ def download_thumbnail(video_id, slug, date_str):
     filename = f"{date_str}-{slug}-thumb.jpg"
     dest = os.path.join(THUMB_DIR, filename)
     os.makedirs(THUMB_DIR, exist_ok=True)
+    # YouTube returns a 200 with a tiny near-blank placeholder image (not a 404)
+    # for variants that don't exist for a given video, so filter those out by size.
+    MIN_THUMB_BYTES = 5000
     for variant in ("maxresdefault", "hqdefault"):
         thumb_url = f"https://i.ytimg.com/vi/{video_id}/{variant}.jpg"
         resp = requests.get(thumb_url, timeout=10)
-        if resp.status_code == 200 and resp.headers.get("content-type", "").startswith("image"):
+        if (
+            resp.status_code == 200
+            and resp.headers.get("content-type", "").startswith("image")
+            and len(resp.content) >= MIN_THUMB_BYTES
+        ):
             with open(dest, "wb") as f:
                 f.write(resp.content)
             return filename
