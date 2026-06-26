@@ -19,6 +19,8 @@ tags:
 
 > *This post was drafted by Claude Code with AI-assisted research, prompted by a YouTube video the user flagged. A human editor should review it for general accuracy and framing before publication. Verify specific claims against the linked sources.*
 
+[![Thumbnail for Andrewism's "We Need To Rethink Democracy"](https://i.ytimg.com/vi/W5JEJ_L_Zjg/maxresdefault.jpg)](https://www.youtube.com/watch?v=W5JEJ_L_Zjg)
+
 [Andrewism's "We Need To Rethink Democracy"](https://www.youtube.com/watch?v=W5JEJ_L_Zjg) (June 2026) argues that democracy — even "real," direct, consensus-based democracy — is not a fellow traveller of anarchism but one of its obstacles. It's a substantial, well-sourced essay, and the argument is worth engaging with directly, including the parts that cut against how DOD itself talks about its work.
 
 <!-- more -->
