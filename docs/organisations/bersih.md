@@ -19,13 +19,15 @@ activity:
     date: 2025-03-06
     note: "Latest post: Akta Perkhidmatan Parlimen — Bersih gesa kerajaan teruskan reformasi Parlimen"
     url: https://bersih.org/news/
+    checked: 2026-06-28
   rss:
     note: "No feed found"
     checked: 2026-06-07
   scrape:
-    note: "News page unreachable"
+    note: "News page unreachable — direct fetch tooling unavailable this run; web search confirms the coalition and its international wing (Global Bersih) remain active with current reform/campaign pages"
     hint: bot_blocked
-    checked: 2026-06-08
+    checked: 2026-06-28
+last_checked: "2026-06-28"
 ---
 
 BERSIH 2.0 (Coalition for Clean and Fair Elections) is a non-partisan coalition of over 90 Malaysian civil society organisations, formally launched in April 2010 as a continuation of the original BERSIH coalition formed in 2007. It is Malaysia's most prominent electoral reform movement.

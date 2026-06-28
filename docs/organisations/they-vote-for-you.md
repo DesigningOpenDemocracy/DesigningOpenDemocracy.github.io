@@ -5,6 +5,10 @@ status: active
 country: AU
 website: https://theyvoteforyou.org.au
 summary: "Converts Australian parliamentary voting records into plain-English histories for every MP and Senator, run by the OpenAustralia Foundation."
+location:
+  latitude: -33.8688
+  longitude: 151.2093
+  name: Sydney, Australia
 concepts:
   - radical-transparency
   - accountability-sink
