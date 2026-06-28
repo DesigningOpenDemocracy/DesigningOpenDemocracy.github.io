@@ -20,6 +20,7 @@ activity:
     note: "Latest post: We took part in a Facebook Q&A"
     url: "https://www.democrats.org.au/posts/6v15DUfhxyWNVoSqBBFje4/we-took-part-in-a-facebook-q-a"
     checked: 2026-06-08
+last_checked: "2026-06-28"
 ---
 
 The Australian Democrats were originally founded in 1977 by Don Chipp with the stated aim to "keep the bastards honest" — a positioning as a principled centrist force holding the major parties accountable. The party held the balance of power in the Senate for many years before collapsing around 2008. It has since been re-established and is rebuilding a presence at state and federal levels.

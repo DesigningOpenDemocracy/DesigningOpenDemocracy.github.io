@@ -21,6 +21,7 @@ activity:
     date: 2026-06-05
     note: "website is present and loaded. Last report released by them is at 5 June, 2026"
     checked: 2026-06-07
+last_checked: "2026-06-28"
 ---
 
 The Association for Democratic Reforms (ADR) was founded in 1999 by professors from IIM Ahmedabad and the National Institute of Design. It focuses on electoral transparency, political party accountability, and civic engagement, combining litigation, research, and citizen mobilisation.
