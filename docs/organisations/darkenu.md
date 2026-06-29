@@ -21,6 +21,7 @@ activity:
     date: 2025-12-02
     note: "website loaded. It mentioned that it was in the news פורסם: 17.11.25, 15:30 | עודכן: 02.12.25, 15:50 'חנוכה 2025: כל מה שאפשר לעשות עם הילדים בחג'"
     checked: 2026-06-07
+last_checked: "2026-06-29"
 ---
 
 Darkenu (דרכנו — "Our Path") is Israel's largest civic movement, with over 400,000 supporters, focused on defending democratic governance, rule of law, and fighting corruption. It operates as a grassroots civic organisation rather than a think tank — mobilising citizens, running campaigns, and building civic infrastructure for democratic participation.
