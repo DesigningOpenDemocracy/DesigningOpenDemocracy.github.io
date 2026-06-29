@@ -20,14 +20,15 @@ activity:
     note: "Server still up (sitemap detected)"
     checked: 2026-06-07
   manual:
-    date: 2026-06-04
-    note: "They got a blog at https://www.cddwestafrica.org/blog/ which has a post on 4 June 2026 : Reconciliation Is Not Deradicalisation: Rethinking the Role of Faith Community Leaders in Operation Safe Corridor"
+    date: 2026-06-29
+    note: "Website and blog confirmed active, with current election-analysis publications (Ekiti State 2026 Pre-Election Environment Analysis; Anambra 2025 Governorship Election report)."
     url: https://www.cddwestafrica.org/blog/
-    checked: 2026-06-07
+    checked: 2026-06-29
   scrape:
     note: "News page found, no machine-readable date"
     hint: no_markup
     checked: 2026-06-08
+last_checked: "2026-06-29"
 ---
 
 The Centre for Democracy and Development (CDD West Africa) is an independent, non-profit research and advocacy organisation founded in 1997 (and registered in Nigeria in 1999) to support democratic governance and people-centred development across West Africa. It was established during Nigeria's transition from military to civilian rule and has since grown into a regional institution.

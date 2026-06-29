@@ -23,6 +23,7 @@ activity:
     date: 2026-06-07
     note: "website loaded. Last convention at 2025"
     checked: 2026-06-07
+last_checked: "2026-06-29"
 ---
 
 The Community Independents Project (CIP) is the coordinating body for Australia's community independent candidate movement — a network of locally organised, non-partisan groups that support community-driven independent candidates at federal, state, and local elections.

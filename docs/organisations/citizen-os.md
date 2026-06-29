@@ -31,6 +31,7 @@ activity:
     note: "Latest news page scraped"
     url: https://citizenos.com/news/
     checked: 2026-06-07
+last_checked: "2026-06-29"
 ---
 
 Citizen OS is an Estonian open-source platform for civic participation — group discussions, co-creation of proposals, online petitions, and consultations. Built by a non-profit foundation, it integrates with Estonia's national e-ID infrastructure to support binding digital signatures in the Estonian context. The platform was relaunched with a new design in 2024.

@@ -19,6 +19,7 @@ activity:
     note: "Latest post: CAfSA News no. 7 April 2026"
     url: "https://cafsa.org.au/cafsa-news-no-7-april-2026/?utm_source=rss&utm_medium=rss&utm_campaign=cafsa-news-no-7-april-2026"
     checked: 2026-06-07
+last_checked: "2026-06-29"
 ---
 
 CAfSA is an incorporated association founded in Adelaide in 2023, advocating for randomly selected, broadly representative citizens' assemblies as a policy-making tool in South Australia. The organisation distinguishes citizens' assemblies from traditional consultation, positioning them as particularly suited to contested issues that are difficult for elected politicians to handle directly.

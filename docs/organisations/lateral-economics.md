@@ -15,6 +15,7 @@ concepts:
   - cognitive-division-of-labour
   - prediction-markets
   - citizens-assembly
+  - tribal-epistemology
 activity:
   sitemap:
     date: 2026-03-30
@@ -47,3 +48,4 @@ He has advocated for a philanthropically funded standing citizens' jury that wou
 - [Cognitive Division of Labour](../concepts/cognitive-division-of-labour.md)
 - [Prediction Markets](../concepts/prediction-markets.md)
 - [Citizens' Assembly](../concepts/citizens-assembly.md)
+- [Tribal Epistemology](../concepts/tribal-epistemology.md)

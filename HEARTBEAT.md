@@ -68,10 +68,12 @@ the cadence limit is about publication noise, not about what's worth noting.
 
 ```bash
 python util/stats.py
+python util/stats.py --save before.json   # optional: snapshot for Step 7's diff
 ```
 
 Note the counts, freshness distribution, and concept coverage. These numbers
-anchor the maintenance section of the post.
+anchor the maintenance section of the post. Saving a snapshot now makes Step
+7's before/after numbers a one-line diff instead of a recompute.
 
 ### 2. Work the staleness queue
 
@@ -158,13 +160,21 @@ feed — sync posts never go in `docs/blog/posts/`, to keep the human-facing
 blog and its feed free of bot noise. See **Heartbeat log** in CLAUDE.md for
 required frontmatter and disclaimer.
 
+`util/heartbeat_post.py` automates the mechanical parts of this step — exact
+frontmatter, the disclaimer block, finding/creating the draft, mirroring to
+`current.md`, and the release mechanics. It does not write the content
+below (that's still your judgment call); use it alongside, not instead of,
+the steps below.
+
 **Release last month's draft, if one is pending.** If a previous month's
 `docs/heartbeat/posts/YYYY-MM-sync.md` still carries `draft: true` and today
 is in a later month, resolve every `<!-- tentative: revisit next run -->`
 marker first (confirm by removing the marker, or delete the item — see Step
 5) — a released post must not carry an unresolved tentative item. Once
-resolved, remove `draft: true`; that's the publish step, nothing else in the
-file needs to change unless something in it is now stale.
+resolved, run `python util/heartbeat_post.py --release` (it refuses if
+tentative markers remain) to drop `draft: true` and reset `current.md`;
+nothing else in the file needs to change unless something in it is now
+stale.
 
 **Find or create this month's draft**, `docs/heartbeat/posts/YYYY-MM-sync.md`:
 - **Exists already (an earlier run this month started it):** read it first.
@@ -174,7 +184,9 @@ file needs to change unless something in it is now stale.
   numbers, append genuinely new "In the world" items (don't repeat ones
   already listed, tentative or not), and tighten "What's next." Keep
   `draft: true`.
-- **Doesn't exist yet:** create it fresh with `draft: true`.
+- **Doesn't exist yet:** `python util/heartbeat_post.py` creates it fresh
+  with `draft: true` and the required frontmatter/disclaimer scaffolded —
+  fill in the TODO sections.
 
 A `draft: true` post is excluded from the production build entirely — no
 page, no feed entry — so it's safe to push mid-month without it going live.
@@ -182,14 +194,14 @@ It only appears once `draft: true` is removed, on the first run of the
 following month.
 
 **Sync the live draft preview.** After writing or refining this month's
-draft, mirror its current body into `docs/heartbeat/current.md`, replacing
-the placeholder/previous content between the banner and the end of the file.
-This page lives outside `heartbeat/posts/`, so it never enters the RSS/JSON
-feed and editing it never notifies subscribers — it exists purely so anyone
-curious can see what's accumulating before release. On the run that releases
-the draft (removes `draft: true`), reset `current.md` back to its
-placeholder state ("No draft is currently accumulating...") since the
-content now lives at its permanent post URL instead.
+draft, run `python util/heartbeat_post.py --mirror` to sync its current body
+into `docs/heartbeat/current.md`, replacing the placeholder/previous content
+between the banner and the end of the file. This page lives outside
+`heartbeat/posts/`, so it never enters the RSS/JSON feed and editing it never
+notifies subscribers — it exists purely so anyone curious can see what's
+accumulating before release. `--release` (above) handles resetting
+`current.md` back to its placeholder state on the run that releases the
+draft, since the content now lives at its permanent post URL instead.
 
 **Structure:**
 
@@ -245,7 +257,8 @@ one-off; don't manufacture a note just to fill the section.
 Commit all changes (org updates + sync post draft/release) and push directly
 to `main` — no PR for routine runs, see Push permissions. Commit message:
 `Heartbeat sync — YYYY-MM`. Include the `stats.py` before/after snapshot in
-the commit message body.
+the commit message body — `python util/stats.py --diff before.json` (using
+the snapshot saved in Step 1) prints it ready to paste in.
 
 If this run also drafts a post idea for the human-facing blog
 (`docs/blog/posts/`), commit it with `draft: true` in the same push — see
