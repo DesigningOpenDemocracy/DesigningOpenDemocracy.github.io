@@ -161,7 +161,7 @@ pushed direct to main — no PR — if they meet all of the following:
    > to main without prior human review — see HEARTBEAT.md for the trust model.
    > A human may review and amend it after the fact.*
    ```
-4. Content is restricted to two sections (see `HEARTBEAT.md` for full structure):
+4. Content is restricted to three sections (see `HEARTBEAT.md` for full structure):
    - **Maintenance log:** landscape statistics, orgs verified, structural findings.
      All claims sourced from the wiki's own data.
    - **World commentary (optional):** 1–3 sourced observations on recent
@@ -174,6 +174,13 @@ pushed direct to main — no PR — if they meet all of the following:
      notable-seeming but not yet confirmed may be included tentatively and
      resolved on a later run (see HEARTBEAT.md Step 5/6). If nothing notable
      happened, this section is omitted entirely.
+   - **Framework notes (optional):** the bot flagging friction it hit while
+     applying the accountability framework this run — to an org decision, a
+     tag call, or a commentary item — not commentary on the world, but
+     feedback on DOD's own standard (see Mission/Step 6 in `HEARTBEAT.md`).
+     A concrete proposed fix to the framework still requires a PR per the
+     normal foundational-document gate; this section is the notice, not the
+     fix. Omitted entirely if nothing surfaced this run.
 5. Pushed straight to main, no PR — see Push permissions in `HEARTBEAT.md`.
 
 ### Concept pages (`docs/concepts/`)

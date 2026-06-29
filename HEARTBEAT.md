@@ -25,17 +25,22 @@ For a full run the agent needs:
 
 ## Mission
 
-Two things in one run:
+Three things in one run:
 
 1. **Maintenance** — keep org data fresh, catch structural issues, close tag gaps.
 2. **Commentary** — automated observation of the democracy space: checking
    world news and geopolitics for anything interesting to note, in DOD's own
    voice, if anything notable (or plausibly notable — see Step 5) happened
    this period.
+3. **Framework feedback** — if applying the accountability framework this
+   run — to an org decision, a tag call, or a commentary item — produces
+   friction, a gap, or a result that cuts against DOD's own stated values,
+   say so. This can surface at any step, not just Step 5; see Framework
+   notes in Step 6 for where it lands.
 
-Both land in a single heartbeat post, pushed directly to `main` (see Push
-permissions). The commentary section is optional — say nothing rather than
-force it.
+All three land in a single heartbeat post, pushed directly to `main` (see
+Push permissions). The commentary and framework-notes sections are each
+optional — say nothing rather than force either.
 
 ---
 
@@ -199,6 +204,20 @@ any status changes or notable findings]
  - If notability is genuinely uncertain, mark the item
    `<!-- tentative: revisit next run -->` right after it (see Step 5/6)]
 
+## Framework notes  ← omit entirely if nothing to flag
+
+[1 short paragraph per item:
+ - The specific case that surfaced the friction — an org slug, a tag
+   decision, a commentary item — concrete enough that a human can check it
+ - What the framework's literal text implies here, and why that seems off,
+   under-specified, or in tension with DOD's own stated values
+ - A concrete fix if you have one; otherwise just flag it for a human look
+ - If you're proposing a specific textual change, open it as a PR against
+   `docs/projects/accountability-framework/index.md` (updating `soul.md`'s
+   dialogue record per its own "How to update the framework" steps) and
+   link the PR here — this section is the notice, the PR is the fix. The
+   framework itself stays PR-gated either way (see Push permissions)]
+
 ## What's next
 
 [One sentence on which section of the landscape is oldest in the queue]
@@ -206,7 +225,10 @@ any status changes or notable findings]
 
 Keep each section short. This is a record and a signal, not an essay. Within
 a month, edit toward a better post rather than padding it — the goal is one
-good entry per month, not a running diary.
+good entry per month, not a running diary. Framework notes is not commentary
+on the news — it's the bot checking its own standard against the decisions
+it just made. A pattern recurring across several runs is worth more than a
+one-off; don't manufacture a note just to fill the section.
 
 ### 7. Commit and push
 
@@ -264,7 +286,10 @@ changed and why.
 `projects/accountability-framework/index.md`, `philosophy/index.md`,
 CLAUDE.md, site architecture, scripts, templates. These shape how the whole
 site works and warrant review before they land, independent of the
-draft-flag mechanism above.
+draft-flag mechanism above. A Framework note from a heartbeat post (see
+Mission/Step 6) that has matured into a concrete proposed fix becomes
+exactly this kind of PR — follow `soul.md`'s "How to update the framework"
+steps when drafting it.
 
 ## Scope
 
