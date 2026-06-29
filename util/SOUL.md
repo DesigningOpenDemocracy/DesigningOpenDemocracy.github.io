@@ -196,8 +196,39 @@ Situational overview: org counts by status, geographic spread, type breakdown, `
 
 ```bash
 python util/stats.py
-python util/stats.py --concepts   # also list orphaned concept pages
+python util/stats.py --concepts          # also list orphaned concept pages
+python util/stats.py --json              # machine-readable snapshot to stdout
+python util/stats.py --save before.json  # also write snapshot to a file
+python util/stats.py --diff before.json  # compare current state to a saved snapshot
 ```
+
+`--save`/`--diff` are meant to bracket a maintenance run: save a snapshot
+before starting the staleness queue, then diff against it at the end to get
+the before/after numbers a heartbeat commit message or sync post needs,
+without recomputing them by hand.
+
+---
+
+### `heartbeat_post.py` — Scaffold and manage the monthly heartbeat draft
+
+Automates the mechanical parts of HEARTBEAT.md Step 6: finding or creating
+this month's `docs/heartbeat/posts/YYYY-MM-sync.md`, typing the exact
+required frontmatter and disclaimer block (risk of drift if done by hand —
+e.g. the disclaimer's "pushed directly to main" wording), mirroring the
+draft's body into `docs/heartbeat/current.md`, and releasing the draft
+(dropping `draft: true`) once the month rolls over.
+
+```bash
+python util/heartbeat_post.py                  # find-or-create this month's draft, report status
+python util/heartbeat_post.py --month 2026-07   # override the month label for a fresh draft
+python util/heartbeat_post.py --mirror          # sync current.md from the active draft's body
+python util/heartbeat_post.py --release         # drop draft: true, reset current.md
+```
+
+`--release` refuses to run while `<!-- tentative: revisit next run -->`
+markers remain in the draft — resolve each first. Does not write the actual
+content (Landscape update / In the world / Framework notes / What's next);
+that's still a judgment call for whoever is running the brief.
 
 ---
 
@@ -334,7 +365,7 @@ python util/check_links.py --all       # all links
 
 ## Requirements
 
-`add_org.py`, `find.py`, `stamp.py`, and `stats.py` use stdlib only. Most other scripts use `python-frontmatter`, `python-dateutil`, and `requests` — all in `util/requirements.txt`. `review_orgs.py` additionally needs `pyyaml`.
+`add_org.py`, `find.py`, and `stamp.py` use stdlib only. Most other scripts use `python-frontmatter`, `python-dateutil`, and `requests` — all in `util/requirements.txt`. `stats.py` and `heartbeat_post.py` need `python-frontmatter` only; `review_orgs.py` additionally needs `pyyaml`.
 
 ```bash
 pip install -r util/requirements.txt
