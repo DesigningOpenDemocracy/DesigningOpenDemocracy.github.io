@@ -181,6 +181,16 @@ page, no feed entry — so it's safe to push mid-month without it going live.
 It only appears once `draft: true` is removed, on the first run of the
 following month.
 
+**Sync the live draft preview.** After writing or refining this month's
+draft, mirror its current body into `docs/heartbeat/current.md`, replacing
+the placeholder/previous content between the banner and the end of the file.
+This page lives outside `heartbeat/posts/`, so it never enters the RSS/JSON
+feed and editing it never notifies subscribers — it exists purely so anyone
+curious can see what's accumulating before release. On the run that releases
+the draft (removes `draft: true`), reset `current.md` back to its
+placeholder state ("No draft is currently accumulating...") since the
+content now lives at its permanent post URL instead.
+
 **Structure:**
 
 ```
@@ -266,6 +276,8 @@ the human's call.
 - Org page edits from the staleness queue (summary, concepts, location, status)
 - Concept pages and tag additions
 - AI-authored sync posts (`docs/heartbeat/posts/YYYY-MM-sync.md`)
+- The live draft preview (`docs/heartbeat/current.md`) — never in a feed,
+  so there's no notification risk either way
 - `last_checked` stamp updates (pure record-keeping after verification)
 - Mechanical lint fixes: country codes, Wayback URL corrections on inactive orgs,
   broken internal links — changes where the correct value is unambiguous
