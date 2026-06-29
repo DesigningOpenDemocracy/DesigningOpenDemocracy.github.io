@@ -28,8 +28,10 @@ For a full run the agent needs:
 Two things in one run:
 
 1. **Maintenance** — keep org data fresh, catch structural issues, close tag gaps.
-2. **Commentary** — a brief, sourced DOD-voice observation on the state of
-   democracy in the world, if anything notable happened this period.
+2. **Commentary** — automated observation of the democracy space: checking
+   world news and geopolitics for anything interesting to note, in DOD's own
+   voice, if anything notable (or plausibly notable — see Step 5) happened
+   this period.
 
 Both land in a single heartbeat post, pushed directly to `main` (see Push
 permissions). The commentary section is optional — say nothing rather than
@@ -104,13 +106,17 @@ Before writing: read `docs/projects/accountability-framework/index.md` and
 `docs/projects/accountability-framework/soul.md` to ground yourself in DOD's
 values and framing.
 
-Then search for recent news (past 30–180 days depending on run cadence) on:
+This step is automated observation of the democracy space — checking world
+news and geopolitics broadly, not just scanning the org watchlist for
+updates. Search for recent news (past 30–180 days depending on run cadence) on:
 - New citizens' assemblies or deliberative processes announced or concluded
 - Significant electoral system or constitutional reforms passed or proposed
 - Notable democratic backsliding (election suspended, assembly dissolved, press
   freedom laws, etc.)
 - New participatory budgeting programs adopted at city or national scale
 - Major academic or policy publications directly relevant to the landscape
+- Broader geopolitical shifts with structural governance implications, even
+  outside that list, if you can source them properly
 
 **Threshold for inclusion:** something is worth commenting on only if it is
 genuinely notable from a governance-design perspective AND you can link a
@@ -118,10 +124,27 @@ primary or reputable secondary source. If nothing clears that bar, skip the
 commentary section entirely — a short maintenance post is better than
 stretched commentary.
 
-DOD is nonpartisan. Do not comment on which party won an election unless it
-has direct structural governance implications. Do not take sides on contested
-political questions. Reflect the accountability framework's framing: governance
-design, legitimacy, participation, accountability — not ideology.
+**If you're unsure whether something clears that bar**, don't force the
+binary call. Include it in this month's draft anyway, marked
+`<!-- tentative: revisit next run -->` immediately after the item — the
+`draft: true` post is already off the live site, so holding a tentative item
+there costs nothing. Resolve it on the *next* run (see Step 6): by then
+either more has surfaced or it hasn't — confirm it (remove the marker) or
+delete the item. Never let an unresolved tentative item survive into a
+release.
+
+**Voice.** DOD is nonpartisan — never comment on which party won an election
+unless it has direct structural governance implications, and never frame
+analysis as one political side being right. But nonpartisan isn't the same
+as opinion-free (see the framework's own "Non-partisan is not the same as
+neutral" section). The heartbeat blog is the bot's own venue, distinct from
+the human-curated main blog, so you have more latitude here to write with a
+direct, evaluative voice than a `docs/blog/posts/` AI-assisted post would.
+Ground any opinion in the accountability framework's standard — the scope
+axiom, good faith, the three disqualifiers — rather than a generic political
+stance, and say plainly when something passes or fails that test. Where the
+framework is genuinely silent on a contested question, say that too, rather
+than manufacturing a side.
 
 ### 6. Write or refine the sync post
 
@@ -132,15 +155,20 @@ required frontmatter and disclaimer.
 
 **Release last month's draft, if one is pending.** If a previous month's
 `docs/heartbeat/posts/YYYY-MM-sync.md` still carries `draft: true` and today
-is in a later month, remove `draft: true` as part of this run — that's the
-publish step, nothing else in the file needs to change unless something in
-it is now stale.
+is in a later month, resolve every `<!-- tentative: revisit next run -->`
+marker first (confirm by removing the marker, or delete the item — see Step
+5) — a released post must not carry an unresolved tentative item. Once
+resolved, remove `draft: true`; that's the publish step, nothing else in the
+file needs to change unless something in it is now stale.
 
 **Find or create this month's draft**, `docs/heartbeat/posts/YYYY-MM-sync.md`:
 - **Exists already (an earlier run this month started it):** read it first.
-  Refine in place — update "Landscape update" with this run's numbers, append
-  genuinely new "In the world" items (don't repeat ones already listed), and
-  tighten "What's next." Keep `draft: true`.
+  Resolve any tentative items from a prior run before adding new ones —
+  decide, in light of whatever has surfaced since, whether each still holds
+  up. Then refine in place: update "Landscape update" with this run's
+  numbers, append genuinely new "In the world" items (don't repeat ones
+  already listed, tentative or not), and tighten "What's next." Keep
+  `draft: true`.
 - **Doesn't exist yet:** create it fresh with `draft: true`.
 
 A `draft: true` post is excluded from the production build entirely — no
@@ -165,8 +193,11 @@ any status changes or notable findings]
  - A linked source (title, outlet, date)
  - 1–2 sentences on why it's relevant to governance design / how it relates
    to concepts or orgs in the landscape
- - No opinion on whether it's good or bad unless DOD's accountability
-   framework gives unambiguous ground to stand on]
+ - Opinion is fine here if it's grounded in the accountability framework —
+   say what you think rather than hedging into false neutrality (see Voice
+   in Step 5)
+ - If notability is genuinely uncertain, mark the item
+   `<!-- tentative: revisit next run -->` right after it (see Step 5/6)]
 
 ## What's next
 
@@ -199,8 +230,11 @@ the human's call.
 - A status change requires verification beyond what the org's own site shows
 - More than 20% of pages checked need status changes in a single run
 - A news item seems important but you're unsure whether DOD's accountability
-  framework gives ground to comment — flag it for human editorial judgment
-  rather than guessing
+  framework gives ground to comment *at all* — that's a framework-application
+  question, and warrants human editorial judgment rather than a guess. (This
+  differs from being unsure whether something is *notable enough* to include
+  — that case doesn't need escalation; use the tentative-item path in Step
+  5/6 instead.)
 
 ---
 

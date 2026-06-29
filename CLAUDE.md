@@ -167,8 +167,13 @@ pushed direct to main — no PR — if they meet all of the following:
    - **World commentary (optional):** 1–3 sourced observations on recent
      democracy-related events (new assemblies, reforms, backsliding, policy
      publications). Every factual claim must carry a linked source. DOD is
-     nonpartisan — no partisan political commentary, no unsourced claims. If
-     nothing notable happened, this section is omitted entirely.
+     nonpartisan — no partisan-election commentary, no unsourced claims — but
+     opinion grounded in the accountability framework is fine; this is the
+     bot's own venue, with more editorial latitude than `docs/blog/posts/`
+     AI-assisted posts (see **Voice** in HEARTBEAT.md Step 5). An item that's
+     notable-seeming but not yet confirmed may be included tentatively and
+     resolved on a later run (see HEARTBEAT.md Step 5/6). If nothing notable
+     happened, this section is omitted entirely.
 5. Pushed straight to main, no PR — see Push permissions in `HEARTBEAT.md`.
 
 ### Concept pages (`docs/concepts/`)
