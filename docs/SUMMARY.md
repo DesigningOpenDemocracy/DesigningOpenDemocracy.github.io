@@ -17,6 +17,7 @@
     - concepts/*.md
 - [Democracy Landscape](organisations/organisations.md)
     - organisations/*.md
+- [Heartbeat](/heartbeat/)
 - [Research](research/research.md)
     - research/*.md
 - [Knowledge Graph](knowledge-graph.md)
