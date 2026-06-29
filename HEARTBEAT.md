@@ -11,7 +11,7 @@ For a full run the agent needs:
 
 | Requirement | Used for |
 |---|---|
-| Git write access to `main` | Direct-push items (sync post, stamps, mechanical fixes) |
+| Git write access to `main` | Direct-push for the whole run — org edits, sync post, stamps, mechanical fixes |
 | Outbound network access | `check_urls.py` (org website reachability), web search for world commentary |
 | Python deps installed | `pip install -r util/requirements.txt` |
 
@@ -31,8 +31,27 @@ Two things in one run:
 2. **Commentary** — a brief, sourced DOD-voice observation on the state of
    democracy in the world, if anything notable happened this period.
 
-Both land in a single blog post and PR. The commentary section is optional —
-say nothing rather than force it.
+Both land in a single heartbeat post, pushed directly to `main` (see Push
+permissions). The commentary section is optional — say nothing rather than
+force it.
+
+---
+
+## Cadence
+
+This brief can run as often as weekly. The underlying scripts already
+self-throttle per-org (e.g. 7-day skip windows in `check_rss.py` /
+`scrape_news.py`), so frequent runs don't re-probe the same site twice in the
+same week.
+
+Maintenance work (staleness queue, tag gaps, structural checks) happens on
+every run, regardless of how often that is — there's no reason to throttle it.
+
+The heartbeat **post** is different: write what you find each run, but
+**release at most one post per calendar month**. Within a month, a single
+draft accumulates across runs and is only published when the month rolls
+over. See step 6 for the mechanics. Content is the bot's call within scope —
+the cadence limit is about publication noise, not about what's worth noting.
 
 ---
 
@@ -104,12 +123,30 @@ has direct structural governance implications. Do not take sides on contested
 political questions. Reflect the accountability framework's framing: governance
 design, legitimacy, participation, accountability — not ideology.
 
-### 6. Write the sync post
+### 6. Write or refine the sync post
 
-Create `docs/heartbeat/posts/YYYY-MM-sync.md`. This is a separate blog instance
-from `docs/blog/` with its own RSS/JSON feed — sync posts never go in
-`docs/blog/posts/`, to keep the human-facing blog and its feed free of bot noise.
-See **Heartbeat log** in CLAUDE.md for required frontmatter and disclaimer.
+This is a separate blog instance from `docs/blog/` with its own RSS/JSON
+feed — sync posts never go in `docs/blog/posts/`, to keep the human-facing
+blog and its feed free of bot noise. See **Heartbeat log** in CLAUDE.md for
+required frontmatter and disclaimer.
+
+**Release last month's draft, if one is pending.** If a previous month's
+`docs/heartbeat/posts/YYYY-MM-sync.md` still carries `draft: true` and today
+is in a later month, remove `draft: true` as part of this run — that's the
+publish step, nothing else in the file needs to change unless something in
+it is now stale.
+
+**Find or create this month's draft**, `docs/heartbeat/posts/YYYY-MM-sync.md`:
+- **Exists already (an earlier run this month started it):** read it first.
+  Refine in place — update "Landscape update" with this run's numbers, append
+  genuinely new "In the world" items (don't repeat ones already listed), and
+  tighten "What's next." Keep `draft: true`.
+- **Doesn't exist yet:** create it fresh with `draft: true`.
+
+A `draft: true` post is excluded from the production build entirely — no
+page, no feed entry — so it's safe to push mid-month without it going live.
+It only appears once `draft: true` is removed, on the first run of the
+following month.
 
 **Structure:**
 
@@ -136,16 +173,25 @@ any status changes or notable findings]
 [One sentence on which section of the landscape is oldest in the queue]
 ```
 
-Keep each section short. This is a record and a signal, not an essay.
+Keep each section short. This is a record and a signal, not an essay. Within
+a month, edit toward a better post rather than padding it — the goal is one
+good entry per month, not a running diary.
 
-### 7. Open the PR
+### 7. Commit and push
 
-Commit all changes (org updates + blog post). Title: `Heartbeat sync — YYYY-MM`.
-Include the `stats.py` before/after snapshot in the PR body.
+Commit all changes (org updates + sync post draft/release) and push directly
+to `main` — no PR for routine runs, see Push permissions. Commit message:
+`Heartbeat sync — YYYY-MM`. Include the `stats.py` before/after snapshot in
+the commit message body.
+
+If this run also drafts a post idea for the human-facing blog
+(`docs/blog/posts/`), commit it with `draft: true` in the same push — see
+Push permissions. Never set `draft: false` on a blog post yourself; that's
+the human's call.
 
 ---
 
-## Escalation — stop and flag in the PR if
+## Escalation — open a PR instead of pushing direct if
 
 - An org's website has a permanent error and you can't determine if it's
   still operating from other sources
@@ -160,7 +206,9 @@ Include the `stats.py` before/after snapshot in the PR body.
 
 ## Push permissions
 
-**Push direct to main** for:
+**Push direct to main** for everything a routine maintenance run produces:
+- Org page edits from the staleness queue (summary, concepts, location, status)
+- Concept pages and tag additions
 - AI-authored sync posts (`docs/heartbeat/posts/YYYY-MM-sync.md`)
 - `last_checked` stamp updates (pure record-keeping after verification)
 - Mechanical lint fixes: country codes, Wayback URL corrections on inactive orgs,
@@ -168,13 +216,21 @@ Include the `stats.py` before/after snapshot in the PR body.
 - Changes to this file (`HEARTBEAT.md`)
 - Changes to `docs/projects/accountability-framework/soul.md`
 
+**Exception — human blog drafts.** If a run drafts or suggests a post for the
+human-facing blog (`docs/blog/posts/`, the `ai_assisted` exception in
+CLAUDE.md), commit it with `draft: true`. The draft flag — not a PR — is the
+safety gate: it's invisible on the live site no matter how it landed on
+`main`. A human reviews it later and flips `draft: false` to publish. Never
+set `draft: false` on a blog post from an autonomous run.
+
 Commit messages are the audit trail for direct pushes — be specific about what
 changed and why.
 
-**Open a PR** for everything else — org page content, concept pages,
+**Open a PR** for foundational/structural changes —
 `projects/accountability-framework/index.md`, `philosophy/index.md`,
-CLAUDE.md, site architecture, scripts, templates. These affect the
-human-curated record and warrant review before they land.
+CLAUDE.md, site architecture, scripts, templates. These shape how the whole
+site works and warrant review before they land, independent of the
+draft-flag mechanism above.
 
 ## Scope
 
