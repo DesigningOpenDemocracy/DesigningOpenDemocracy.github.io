@@ -38,13 +38,32 @@ plugins:
   - blog:
       post_excerpt: required
       archive: true
+  - blog:
+      blog_dir: heartbeat
+      post_excerpt: required
+      archive: true
+      archive_name: heartbeat.archive
   - rss:
-      match_path: blog/posts/.* 
+      match_path: blog/posts/.*
       date_from_meta:
         as_creation: date
       categories:
         - categories
-        - tags 
+        - tags
+  - rss:
+      match_path: heartbeat/posts/.*
+      date_from_meta:
+        as_creation: date
+      categories:
+        - categories
+        - tags
+      feed_title: "Designing Open Democracy — Heartbeat"
+      feed_description: "Automated maintenance sync log for the Democracy Landscape. Not the main DOD blog."
+      feeds_filenames:
+        rss_created: feed_heartbeat_rss_created.xml
+        rss_updated: feed_heartbeat_rss_updated.xml
+        json_created: feed_heartbeat_json_created.json
+        json_updated: feed_heartbeat_json_updated.json
   - tags
 extra:
   social:

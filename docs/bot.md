@@ -68,3 +68,7 @@ All scripts respect `robots.txt`. Alternatively, [contact us](https://github.com
 ## Source code
 
 The scripts are open source: [util/](https://github.com/DesigningOpenDemocracy/DesigningOpenDemocracy.github.io/tree/main/util)
+
+## Our own automation
+
+DOD also runs a periodic maintenance pass over its own [Democracy Landscape](/organisations/), authored by Claude Code and reviewed by a human before merging. The log of these runs — landscape stats, orgs verified, structural fixes — is kept separate from the [main blog](/blog/) at [/heartbeat](/heartbeat/), with its own RSS feed, so it doesn't mix with human-written posts.

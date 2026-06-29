@@ -106,8 +106,10 @@ design, legitimacy, participation, accountability — not ideology.
 
 ### 6. Write the sync post
 
-Create `docs/blog/posts/YYYY-MM-sync.md`. See **AI-authored sync posts** in
-CLAUDE.md for required frontmatter and disclaimer.
+Create `docs/heartbeat/posts/YYYY-MM-sync.md`. This is a separate blog instance
+from `docs/blog/` with its own RSS/JSON feed — sync posts never go in
+`docs/blog/posts/`, to keep the human-facing blog and its feed free of bot noise.
+See **Heartbeat log** in CLAUDE.md for required frontmatter and disclaimer.
 
 **Structure:**
 
@@ -159,7 +161,7 @@ Include the `stats.py` before/after snapshot in the PR body.
 ## Push permissions
 
 **Push direct to main** for:
-- AI-authored sync posts (`docs/blog/posts/YYYY-MM-sync.md`)
+- AI-authored sync posts (`docs/heartbeat/posts/YYYY-MM-sync.md`)
 - `last_checked` stamp updates (pure record-keeping after verification)
 - Mechanical lint fixes: country codes, Wayback URL corrections on inactive orgs,
   broken internal links — changes where the correct value is unambiguous
