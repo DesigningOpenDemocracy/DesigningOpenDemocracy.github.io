@@ -102,6 +102,60 @@ No dependencies beyond stdlib.
 
 ---
 
+### `check_rss.py` — Probe for RSS/Atom feeds and sitemap activity
+
+Probes ~23 common feed URL paths per org site. Writes `activity.rss` (latest
+post date/title) when a real feed is found, or `activity.sitemap`
+(`<lastmod>`) as a fallback. With `ics_feed:` set, also fetches the iCal
+calendar and writes `activity.ical`. Stamps `checked:` on every probe
+regardless of outcome, so re-runs skip orgs probed within 7 days unless
+`--force`.
+
+```bash
+python util/check_rss.py                    # probe all active orgs
+python util/check_rss.py --update-activity   # also write activity.* fields
+python util/check_rss.py --slug loomio       # single org
+```
+
+---
+
+### `scrape_news.py` — Scrape news/blog index pages for activity dates
+
+Opt-in: only runs for orgs with `news_page:` set. Extracts dates from
+JSON-LD → meta/microdata → `<time>` → URL path patterns → human-readable
+text, in that priority order. Writes `activity.scrape`. On failure, writes
+a `hint:` (`spa`, `no_markup`, `bot_blocked`, `unreachable`) so future runs
+know whether retrying is worth it — `spa`/`bot_blocked` are skipped on
+re-runs unless `--force`.
+
+```bash
+python util/scrape_news.py                  # all active orgs with news_page:
+python util/scrape_news.py --debug           # show which date signals were found
+python util/scrape_news.py --update-rss      # also write discovered rss_feed:
+```
+
+---
+
+### `review_orgs.py` — Interactive human review CLI
+
+Opens each org's website in a browser and prompts for a status
+confirmation, writing `activity.manual` (the highest-priority evidence
+source) and optionally updating `status:`. This is a **human-in-the-loop**
+tool — it expects an interactive terminal and a browser, so an AI agent
+without that can't drive it directly. For AI-assisted heartbeat runs, fetch
+the site directly (or web-search as a fallback) and write the
+`activity.manual` entry by hand instead; this script exists for a human
+doing the same kind of pass.
+
+```bash
+python util/review_orgs.py --only-stale  # orgs with no/stale manual review
+python util/review_orgs.py --slug loomio
+```
+
+Requires `pyyaml` in addition to `python-frontmatter`.
+
+---
+
 ### `check_urls.py` — External URL reachability
 
 HTTP-checks the `website:` field on org pages. Active orgs with Wayback URLs
@@ -175,6 +229,22 @@ python util/check_concepts.py --no-orphans # skip orphan check
 ```
 
 Check 1 respects `--days`. Check 2 always runs against all pages (orphan status depends on the whole corpus, not individual page age).
+
+---
+
+### `check_internal_links.py` — Internal link checker (ezlinks-aware)
+
+A stricter successor to `check_links.py`: same goal (flag `[text](path.md)`
+links that don't resolve), but also replicates mkdocs-ezlinks-plugin's
+basename-fallback resolution — the mechanism that makes this site's
+`../../blog/posts/<slug>.md`-style cross-references from `concepts/` and
+`organisations/` actually work despite overshooting `docs/`. This is the
+version wired into CI (`.github/workflows/build.yml`); prefer it over
+`check_links.py` for anything that needs to match what CI will catch.
+
+```bash
+python util/check_internal_links.py
+```
 
 ---
 
@@ -264,7 +334,7 @@ python util/check_links.py --all       # all links
 
 ## Requirements
 
-`add_org.py`, `find.py`, `stamp.py`, and `stats.py` use stdlib only. All other scripts use `python-frontmatter`, `python-dateutil`, and `requests` (for `check_urls.py`) — all in `util/requirements.txt`.
+`add_org.py`, `find.py`, `stamp.py`, and `stats.py` use stdlib only. Most other scripts use `python-frontmatter`, `python-dateutil`, and `requests` — all in `util/requirements.txt`. `review_orgs.py` additionally needs `pyyaml`.
 
 ```bash
 pip install -r util/requirements.txt
