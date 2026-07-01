@@ -16,7 +16,7 @@ activity:
   rss:
     note: "No feed found"
     checked: 2026-06-07
-  manual:
+  dod:
     date: 2026-06-29
     note: "Website confirmed active. Hans Asenbaum remains director; weekly seminar series running, Summer School and Journal of Deliberative Democracy ongoing."
     checked: 2026-06-29
