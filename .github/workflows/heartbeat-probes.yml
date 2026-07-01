@@ -1,0 +1,37 @@
+name: Heartbeat activity probes
+
+on:
+  schedule:
+    - cron: "0 3 * * 5"   # weekly, Friday 03:00 UTC
+  workflow_dispatch:
+
+jobs:
+  probe:
+    name: Probe RSS feeds and news pages
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install util dependencies
+        run: pip install -r util/requirements.txt
+
+      - name: Probe RSS feeds and sitemaps
+        run: python util/check_rss.py --update-activity
+
+      - name: Scrape news pages
+        run: python util/scrape_news.py
+
+      - name: Commit any updates
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/organisations/
+          git diff --staged --quiet || git commit -m "chore: automated activity probe — $(date -u +%Y-%m-%d)"
+          git push

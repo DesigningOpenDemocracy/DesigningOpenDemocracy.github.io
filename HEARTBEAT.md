@@ -75,6 +75,11 @@ Note the counts, freshness distribution, and concept coverage. These numbers
 anchor the maintenance section of the post. Saving a snapshot now makes Step
 7's before/after numbers a one-line diff instead of a recompute.
 
+**Note on RSS/scrape probes:** `check_rss.py` and `scrape_news.py` are handled by
+the weekly GitHub Actions cron job (`.github/workflows/heartbeat-probes.yml`) —
+do not run them during a heartbeat session. The cron owns automated data collection;
+this brief owns verification and judgment.
+
 ### 2. Work the staleness queue
 
 ```bash

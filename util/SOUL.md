@@ -356,6 +356,40 @@ The `*` gives a calendar of all captures rather than a single snapshot. `lint_or
 
 ---
 
+## Automated probes (GitHub Actions)
+
+**`.github/workflows/heartbeat-probes.yml`** runs `check_rss.py --update-activity`
+and `scrape_news.py` on a weekly schedule (Sundays 03:00 UTC) and commits any
+updated org pages directly to `main`. No LLM or personal computer required — this
+handles the purely mechanical feed/sitemap/scrape probes that don't need judgment.
+
+GitHub will disable a scheduled workflow after 60 days of no commit activity in the
+repository. If the landscape goes quiet and no org data changes for several weeks,
+re-enable the workflow manually from the Actions tab — one click.
+
+```
+Trigger:   on: schedule (cron: "0 3 * * 0") + workflow_dispatch
+Installs:  util/requirements.txt
+Runs:      check_rss.py --update-activity → scrape_news.py
+Commits:   docs/organisations/ (only when changes found)
+Pushes to: main (github-actions[bot] identity)
+```
+
+This covers the non-agentic part of the heartbeat loop. The agentic part —
+staleness review, commentary, sync post writing — still requires a full Claude
+heartbeat run per `HEARTBEAT.md`.
+
+**GitHub Actions ToS note:** Actions must be used for activities related to "the
+production, testing, deployment, or publication of the software project associated
+with the repository" ([Terms for Additional Products](https://docs.github.com/en/site-policy/github-terms/github-terms-for-additional-products-and-features)).
+Updating org frontmatter for this wiki qualifies. Infrequent external HTTP probes
+(weekly, robots.txt-respecting) are accepted practice per community guidance. Do
+not add keepalive commits (writing a dummy file to trick GitHub into not disabling
+the schedule) — that circumvents an intentional platform feature and is a policy
+gray area. If the workflow gets disabled due to inactivity, re-enable it manually.
+
+---
+
 ## Typical maintenance workflows
 
 ### AI-assisted recheck pass
