@@ -42,7 +42,7 @@ SITE_SOURCES = ["sitemap"]
 # a lower-priority but fresher source.
 STALENESS_DAYS = {
     "manual":  730,   # human visit — strong, but visits are infrequent
-    "dod":     730,   # same confidence as manual
+    "dod":     365,   # AI/bot-driven check — less durable than a human visit
     "social":  365,   # social presence decays as a signal within a year
     "rss":     365,   # actual content publication
     "ical":    365,   # calendar events — reliable structured feed like rss

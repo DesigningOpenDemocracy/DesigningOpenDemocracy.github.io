@@ -18,7 +18,7 @@ activity:
   rss:
     note: "No feed found"
     checked: 2026-06-07
-  manual:
+  dod:
     date: 2026-06-29
     note: "Website confirmed active, with recent reports on voter registration amid wartime migration and a January 2026 analysis of the challenges of holding a referendum on territorial changes."
     url: https://oporaua.org/en/announce

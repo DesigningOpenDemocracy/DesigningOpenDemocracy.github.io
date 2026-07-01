@@ -13,7 +13,7 @@ location:
   longitude: 13.4050
   name: Germany
 activity:
-  manual:
+  dod:
     date: 2026-03-15
     note: "Latest commit: update GitHub Actions to Node.js 24-compatible versions"
     url: https://github.com/demokratie-live/democracy-client/commits/main

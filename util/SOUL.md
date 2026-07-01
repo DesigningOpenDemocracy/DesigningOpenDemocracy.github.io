@@ -139,12 +139,13 @@ python util/scrape_news.py --update-rss      # also write discovered rss_feed:
 ### `review_orgs.py` — Interactive human review CLI
 
 Opens each org's website in a browser and prompts for a status
-confirmation, writing `activity.manual` (the highest-priority evidence
-source) and optionally updating `status:`. This is a **human-in-the-loop**
-tool — it expects an interactive terminal and a browser, so an AI agent
-without that can't drive it directly. For AI-assisted heartbeat runs, fetch
-the site directly (or web-search as a fallback) and write the
-`activity.manual` entry by hand instead; this script exists for a human
+confirmation, writing `activity.manual` (highest-priority, 730-day staleness)
+and optionally updating `status:`. This is a **human-in-the-loop** tool —
+it expects an interactive terminal and a browser, so an AI agent without
+that can't drive it directly. For AI-assisted heartbeat runs, fetch the site
+directly (or web-search as a fallback) and write an `activity.dod` entry
+instead — `dod` is reserved for bot/automated checks (365-day staleness,
+distinct from the human-visit `manual`). This script exists for a human
 doing the same kind of pass.
 
 ```bash

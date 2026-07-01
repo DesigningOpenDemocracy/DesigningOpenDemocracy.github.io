@@ -87,9 +87,13 @@ The invariants recorded there are not immutable. Any document in this repo — i
       checked: 2026-05-01       # same as date for manual reviews
   ```
   - `method` keys: `manual` | `rss` | `ical` | `scrape` | `sitemap` | `dod` | `social`
+    - `manual` — a human personally visited the site via `review_orgs.py` (730-day staleness)
+    - `dod` — an AI/bot acting on DOD's behalf fetched or searched for evidence (365-day staleness); use this for heartbeat-run checks, not `manual`
+    - `social`/`rss`/`ical`/`scrape` — automated third-party signals (365-day staleness)
+    - `sitemap` — site-level lastmod, weakest signal (180-day staleness)
   - `checked:` — optional; the date the source was last probed, regardless of whether new content was found. Written automatically by `check_rss.py`, `scrape_news.py`, and `review_orgs.py`. Entries with no `date` but a `checked` date mean the source was probed but found nothing.
   - Selection logic: (1) pick the **most recent** date among content sources (`manual`, `dod`, `social`, `rss`, `ical`, `scrape`) that are within their staleness threshold; (2) if none qualify, fall back to `sitemap` within its threshold; (3) if all stale, show the most recent across everything
-  - Staleness thresholds: `manual`/`dod` 730 d · `social`/`rss`/`ical`/`scrape` 365 d · `sitemap` 180 d
+  - Staleness thresholds: `manual` 730 d · `dod`/`social`/`rss`/`ical`/`scrape` 365 d · `sitemap` 180 d
   - If all sources are stale, the most recent entry is shown regardless
   - `util/check_rss.py --update-activity` populates `rss`, `sitemap`, and `ical` entries automatically; re-runs skip orgs checked within 7 days (use `--force` to override)
   - `util/scrape_news.py` populates `scrape` entries for orgs with `news_page:` set; same skip behaviour

@@ -16,7 +16,7 @@ activity:
   rss:
     note: "No feed found"
     checked: 2026-06-07
-  manual:
+  dod:
     date: 2026-06-29
     note: "Direct fetch blocked (503) this run; web search confirms the 14th National Committee's annual session ran 4–11 March 2026 (2,078 of 2,125 members attended), consistent with continued operation."
     checked: 2026-06-29
