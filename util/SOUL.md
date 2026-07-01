@@ -356,6 +356,30 @@ The `*` gives a calendar of all captures rather than a single snapshot. `lint_or
 
 ---
 
+## Automated probes (GitHub Actions)
+
+**`.github/workflows/heartbeat-probes.yml`** runs `check_rss.py --update-activity`
+and `scrape_news.py` on a weekly schedule (Sundays 03:00 UTC) and commits any
+updated org pages directly to `main`. No LLM or personal computer required — this
+handles the purely mechanical feed/sitemap/scrape probes that don't need judgment.
+
+It also always updates `.github/last-probe.txt` with a UTC timestamp, which
+prevents GitHub from disabling the schedule after 60 days of repo inactivity.
+
+```
+Trigger:   on: schedule (cron: "0 3 * * 0") + workflow_dispatch
+Installs:  util/requirements.txt
+Runs:      check_rss.py --update-activity → scrape_news.py
+Commits:   docs/organisations/ + .github/last-probe.txt
+Pushes to: main (github-actions[bot] identity)
+```
+
+This covers the non-agentic part of the heartbeat loop. The agentic part —
+staleness review, commentary, sync post writing — still requires a full Claude
+heartbeat run per `HEARTBEAT.md`.
+
+---
+
 ## Typical maintenance workflows
 
 ### AI-assisted recheck pass
