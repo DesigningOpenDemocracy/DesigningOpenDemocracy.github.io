@@ -379,6 +379,15 @@ This covers the non-agentic part of the heartbeat loop. The agentic part —
 staleness review, commentary, sync post writing — still requires a full Claude
 heartbeat run per `HEARTBEAT.md`.
 
+**GitHub Actions ToS note:** Actions must be used for activities related to "the
+production, testing, deployment, or publication of the software project associated
+with the repository" ([Terms for Additional Products](https://docs.github.com/en/site-policy/github-terms/github-terms-for-additional-products-and-features)).
+Updating org frontmatter for this wiki qualifies. Infrequent external HTTP probes
+(weekly, robots.txt-respecting) are accepted practice per community guidance. Do
+not add keepalive commits (writing a dummy file to trick GitHub into not disabling
+the schedule) — that circumvents an intentional platform feature and is a policy
+gray area. If the workflow gets disabled due to inactivity, re-enable it manually.
+
 ---
 
 ## Typical maintenance workflows
