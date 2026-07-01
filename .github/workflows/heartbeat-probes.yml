@@ -32,9 +32,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          # Always update the keepalive timestamp so the schedule is never disabled
-          # after 60 days of inactivity (GitHub's automated-workflow disable policy).
-          date -u +%Y-%m-%dT%H:%M:%SZ > .github/last-probe.txt
-          git add docs/organisations/ .github/last-probe.txt
+          git add docs/organisations/
           git diff --staged --quiet || git commit -m "chore: automated activity probe — $(date -u +%Y-%m-%d)"
           git push
