@@ -191,6 +191,28 @@ Slugs resolve against `docs/organisations/` first, then `docs/concepts/`. Runnin
 
 ---
 
+### `record_dod.py` — Record an activity.dod entry from the CLI
+
+Writes (or updates) `activity.dod` in org frontmatter and stamps
+`last_checked: today`. Use this during heartbeat AI runs instead of
+hand-editing YAML — keeps bot evidence under `dod` (365-day staleness)
+separate from human `review_orgs.py` entries under `manual` (730-day
+staleness). Handles all three cases: no existing activity block, activity
+block without `dod:`, and updating an existing `dod:` entry.
+
+```bash
+python util/record_dod.py cddgg --note "Website confirmed active, seminar series running"
+python util/record_dod.py cddgg darkenu --note "Confirmed active" --date 2026-06-29
+python util/record_dod.py cddgg --note "..." --url https://example.org/news
+python util/record_dod.py cddgg --note "..." --no-stamp   # skip last_checked update
+```
+
+`--date` is the date of the evidence found (e.g. a publication date);
+defaults to today. The `checked:` field always records today as the probe date.
+Multiple slugs take the same `--note` — run separately for different notes.
+
+---
+
 ### `stats.py` — Landscape snapshot
 
 Situational overview: org counts by status, geographic spread, type breakdown, `last_checked` freshness, and concept coverage. Run at the start of a session.
@@ -241,9 +263,12 @@ Who to re-verify next. Orders active orgs by: no `last_checked` date first, then
 python util/check_orgs.py              # active + inactive, 365-day threshold
 python util/check_orgs.py --days 180   # flag pages not checked in 6 months
 python util/check_orgs.py --active     # active orgs only
+python util/check_orgs.py --since 2026-06-29  # orgs checked on/after this date
 ```
 
-Run this to plan a maintenance pass — gives you a prioritised queue.
+Run without `--since` at the start of a maintenance pass to get a prioritised
+queue. Run with `--since today's date` after stamping orgs to get the title
+list for the heartbeat sync post's "Landscape update" paragraph.
 
 ---
 
@@ -366,7 +391,7 @@ python util/check_links.py --all       # all links
 
 ## Requirements
 
-`add_org.py`, `find.py`, and `stamp.py` use stdlib only. Most other scripts use `python-frontmatter`, `python-dateutil`, and `requests` — all in `util/requirements.txt`. `stats.py` and `heartbeat_post.py` need `python-frontmatter` only; `review_orgs.py` additionally needs `pyyaml`.
+`add_org.py`, `find.py`, and `stamp.py` use stdlib only. Most other scripts use `python-frontmatter`, `python-dateutil`, and `requests` — all in `util/requirements.txt`. `stats.py`, `heartbeat_post.py`, and `record_dod.py` need `python-frontmatter` only; `review_orgs.py` additionally needs `pyyaml`.
 
 ```bash
 pip install -r util/requirements.txt

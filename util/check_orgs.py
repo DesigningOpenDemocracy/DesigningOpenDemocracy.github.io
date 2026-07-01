@@ -11,6 +11,10 @@ Usage:
     python util/check_orgs.py              # show all
     python util/check_orgs.py --days 180   # flag pages not checked in 180+ days
     python util/check_orgs.py --active     # active orgs only
+    python util/check_orgs.py --since 2026-06-29  # orgs checked on/after this date
+
+--since is useful for compiling the "verified this run" list for a heartbeat
+sync post: run it with today's date after stamping orgs to get the title list.
 
 Requirements: python-frontmatter (already in util/requirements.txt)
 """
@@ -90,10 +94,31 @@ def main():
                         help="Flag pages not checked within this many days (default: 365)")
     parser.add_argument("--active", action="store_true",
                         help="Show active orgs only")
+    parser.add_argument("--since", metavar="DATE",
+                        help="List orgs checked on/after DATE (YYYY-MM-DD); useful for "
+                             "compiling the heartbeat 'verified this run' list")
     args = parser.parse_args()
 
     orgs = load_orgs()
     today = date.today()
+
+    if args.since:
+        try:
+            since_date = date.fromisoformat(args.since)
+        except ValueError:
+            print(f"--since must be YYYY-MM-DD, got: {args.since}")
+            sys.exit(1)
+        recent = [
+            o for o in orgs
+            if o["last_checked"] is not None and o["last_checked"] >= since_date
+        ]
+        recent.sort(key=lambda o: (o["last_checked"], o["title"]), reverse=True)
+        print(f"\nOrgs checked since {args.since}  ({len(recent)} total)\n")
+        for o in recent:
+            lc = o["last_checked"]
+            print(f"  {o['title']:<45}  {lc}  {o['status']}")
+        print()
+        return
 
     active = [o for o in orgs if o["status"] == "active"]
     inactive = [o for o in orgs if o["status"] != "active"]

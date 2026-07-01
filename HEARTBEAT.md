@@ -85,7 +85,9 @@ Pick the oldest 10–15 pages. For each:
 - Visit the org's website; confirm it loads and the org is still active
 - Check the summary and status are still accurate
 - Fix anything stale (summary, concepts, location, status)
-- Stamp: `python util/stamp.py <slug>`
+- Record the check: `python util/record_dod.py <slug> --note "..." [--url ...] [--date ...]`
+  (this writes `activity.dod` and stamps `last_checked` in one step; use `--date` when
+  you found evidence dated earlier than today, e.g. a publication date)
 
 If a page needs status changed (active → inactive), update `website:` to a
 Wayback URL per the CLAUDE.md convention.
@@ -211,7 +213,9 @@ draft, since the content now lives at its permanent post URL instead.
 ## Landscape update
 
 [2–3 sentences: current counts from stats.py, what was verified this run,
-any status changes or notable findings]
+any status changes or notable findings. Use
+`python util/check_orgs.py --since YYYY-MM-DD` (today's date) to get the
+title list of orgs verified this run for the paragraph.]
 
 ## In the world  ← omit entirely if nothing notable
 
