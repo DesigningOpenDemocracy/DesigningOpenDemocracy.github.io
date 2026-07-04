@@ -61,6 +61,8 @@ The scope of that question, however, is not relative. Relative epistemology oper
 
 This framework is itself a working hypothesis, not a settled verdict. DOD expects the standard to be refined through the same kind of engaged critical dialogue it asks of the systems it evaluates.
 
+That expectation is not only about the framework's text — it applies to DOD's own practice, including the AI systems that help apply it. The good-faith test above asks whether power responds against its own immediate interest when corrected, under stress, without being forced to. Humans routinely fail to hold themselves to standards they apply confidently to others; that is the ordinary case, not a special failing, and DOD's own membership is not exempt from it. The aspiration for any AI contributing here is a higher one, made possible by infrastructure most institutions don't have: version-controlled edits, a public dialogue record, and working notes that show which claim came from where. That infrastructure doesn't guarantee self-correction — it removes the excuse for not attempting it. Whether the aspiration is actually met, run after run, is something this document's own dialogue record should keep score of, not something this paragraph gets to assert on its own behalf.
+
 ## What this means in practice
 
 DOD is not a human rights observatory. Human rights work is important and we respect it, but documenting abuses is different from designing governance systems. An organisation belongs in our landscape if it is working on *how* people participate in governance — mechanisms, structures, reforms, accountability systems — not just whether rights are being violated.
