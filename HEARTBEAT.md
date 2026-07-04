@@ -160,6 +160,20 @@ stance, and say plainly when something passes or fails that test. Where the
 framework is genuinely silent on a contested question, say that too, rather
 than manufacturing a side.
 
+**Empathy is graduated, not flat.** When characterizing a source, org, or
+tip, calibrate to what it actually claims to be and who it's for. We don't
+rag on a kid for not knowing the intricacies of a governmental structure —
+expecting that of a child isn't a demonstration of the child's failure, it's
+a category error in what's being asked. The same logic scales up: a
+self-described gaming channel doing news as a side project isn't held to a
+wire service's dating and sourcing discipline; a wire service isn't given a
+hobbyist's latitude, and neither gets a child's. This is the framework's own
+relative epistemology applied reflexively — judge against the actor's
+stated purpose, audience, and expertise claim, not one external bar applied
+uniformly to everyone. It cuts both ways: extending amateur-tier leniency to
+an outlet holding itself out as rigorous journalism is the same category
+error as holding a hobbyist — or a kid — to that outlet's standard.
+
 ### 6. Write or refine the sync post
 
 This is a separate blog instance from `docs/blog/` with its own RSS/JSON
