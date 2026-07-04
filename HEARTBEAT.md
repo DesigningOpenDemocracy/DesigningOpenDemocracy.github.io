@@ -249,6 +249,27 @@ title list of orgs verified this run for the paragraph.]
    link the PR here — this section is the notice, the PR is the fix. The
    framework itself stays PR-gated either way (see Push permissions)]
 
+## Working notes
+
+[Dot points, not prose — the methodology appendix. This is where "how do
+you know that" gets answered without cluttering the sections above with
+inline citations for every number:
+ - Which script produced the Landscape update counts, and when (e.g.
+   `stats.py` run on the date of this pass) — the numbers there aren't
+   individually hyperlinked because they're the wiki's own data, verifiable
+   via the named org's own page or the `docs/data/` exports rather than an
+   external source
+ - Any fallback method used during org verification (e.g. a site fetch
+   failing and being corroborated by web search instead) — one line per
+   case, not one per org
+ - For each "In the world" item that cites more than one source, which
+   specific claim came from which link, if it isn't obvious from where the
+   link sits in the paragraph
+ - If a news item was surfaced by a non-authoritative tip (a social post, a
+   commentary video, a forum thread) rather than found directly, say so and
+   name the primary source you verified it against before citing — the tip
+   itself is never the citation]
+
 ## What's next
 
 [One sentence on which section of the landscape is oldest in the queue]
@@ -260,6 +281,15 @@ good entry per month, not a running diary. Framework notes is not commentary
 on the news — it's the bot checking its own standard against the decisions
 it just made. A pattern recurring across several runs is worth more than a
 one-off; don't manufacture a note just to fill the section.
+
+Working notes exists so a link cluster at the end of a paragraph — which
+reads fine but doesn't make clear which of several numbers in that paragraph
+came from which source — has somewhere to be pulled apart without turning
+the prose above into a citation farm. It's about process transparency, not
+new findings; if a run's sourcing is already fully self-evident (one item,
+one link, one claim), a one-line version is enough — this section scaling
+down to almost nothing is a sign the sourcing above was already clear, not a
+gap.
 
 ### 7. Commit and push
 

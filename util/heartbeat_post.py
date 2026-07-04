@@ -130,6 +130,12 @@ TODO: one-sentence intro (current org/active/inactive/deregistered counts).
 TODO: 2-3 sentences — current counts from stats.py, what was verified this
 run, any status changes or notable findings.
 
+## Working notes
+
+TODO: dot points — which script produced the counts above and when, any
+fallback verification method used, and (once "In the world" items exist)
+per-claim source attribution for any item citing more than one source.
+
 ## What's next
 
 TODO: one sentence on which section of the landscape is oldest in the queue.
