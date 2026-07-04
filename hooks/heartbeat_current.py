@@ -27,17 +27,31 @@ PLACEHOLDER = (
 
 
 def _find_active_draft(docs_dir):
-    """Return the frontmatter.Post of the single draft: true heartbeat post, or None."""
+    """Return the frontmatter.Post of the single draft: true heartbeat post, or None.
+
+    Raises if more than one is found — the whole heartbeat system assumes at
+    most one draft: true post exists at a time (see HEARTBEAT.md Step 6 and
+    util/heartbeat_post.py's find_active_draft). Silently picking one would
+    hide a real process violation instead of surfacing it.
+    """
     try:
         import frontmatter
     except ImportError:
         return None
     posts_dir = os.path.join(docs_dir, "heartbeat", "posts")
+    candidates = []
     for path in sorted(glob.glob(os.path.join(posts_dir, "*-sync.md"))):
         post = frontmatter.load(path)
         if post.metadata.get("draft") is True:
-            return post
-    return None
+            candidates.append((path, post))
+    if len(candidates) > 1:
+        paths = ", ".join(p for p, _ in candidates)
+        raise RuntimeError(
+            f"heartbeat_current.py: found {len(candidates)} draft:true heartbeat "
+            f"posts ({paths}) — expected at most one. Resolve (release or delete "
+            f"the stale one) before building."
+        )
+    return candidates[0][1] if candidates else None
 
 
 def _extract_body(post):
