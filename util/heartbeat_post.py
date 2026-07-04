@@ -3,25 +3,28 @@
 heartbeat_post.py — Scaffold and manage the monthly heartbeat draft
 
 HEARTBEAT.md Step 6 has each run find-or-create this month's
-docs/heartbeat/posts/YYYY-MM-sync.md, mirror its body into
-docs/heartbeat/current.md, and — on the first run of the following month —
-release it by dropping draft: true. This script automates the mechanical,
-error-prone parts of that: typing the exact required frontmatter and
-disclaimer block by hand (risk of drift — e.g. the disclaimer says "pushed
-directly to main", which isn't always literally true the moment it's
-written), and keeping current.md in sync.
+docs/heartbeat/posts/YYYY-MM-sync.md, and — on the first run of the
+following month — release it by dropping draft: true. This script
+automates the mechanical, error-prone parts of that: typing the exact
+required frontmatter and disclaimer block by hand (risk of drift — e.g.
+the disclaimer says "pushed directly to main", which isn't always
+literally true the moment it's written).
+
+docs/heartbeat/current.md — the live draft preview — is no longer a
+separate copy this script maintains. hooks/heartbeat_current.py renders
+it directly from whichever post has draft: true at build time, so
+there's nothing to keep in sync by hand.
 
 It does NOT write the actual content (Landscape update / In the world /
-Framework notes / What's next) — that's still a judgment call for whoever
-(human or AI) is running the brief. This only handles the scaffold, the
-mirror, and the release mechanics.
+Framework notes / Working notes / What's next) — that's still a judgment
+call for whoever (human or AI) is running the brief. This only handles
+the scaffold and the release mechanics.
 
 Usage:
     python util/heartbeat_post.py              # find-or-create this month's draft, report status
     python util/heartbeat_post.py --month 2026-07  # override the month label for a fresh draft
-    python util/heartbeat_post.py --mirror      # sync current.md from the active draft's body
-    python util/heartbeat_post.py --release     # drop draft: true, reset current.md (aborts if
-                                                 # unresolved "<!-- tentative -->" markers remain)
+    python util/heartbeat_post.py --release     # drop draft: true (aborts if unresolved
+                                                 # "<!-- tentative -->" markers remain)
 
 Requirements: python-frontmatter (util/requirements.txt)
 """
@@ -41,7 +44,6 @@ except ImportError:
 
 DOCS_DIR = os.path.join(os.path.dirname(__file__), "..", "docs")
 HEARTBEAT_DIR = os.path.join(DOCS_DIR, "heartbeat", "posts")
-CURRENT_PATH = os.path.join(DOCS_DIR, "heartbeat", "current.md")
 TODAY = date.today()
 
 TENTATIVE_MARKER = "<!-- tentative: revisit next run -->"
@@ -53,23 +55,6 @@ DISCLAIMER = (
     "> All statistics are derived from this wiki's own data. It was pushed directly\n"
     "> to main without prior human review — see HEARTBEAT.md for the trust model.\n"
     "> A human may review and amend it after the fact.*"
-)
-
-CURRENT_BANNER = (
-    "# Current draft\n"
-    "\n"
-    "> **This is a live, unreleased work-in-progress.** It mirrors whatever this\n"
-    "> month's [heartbeat](index.md) post is accumulating, updated after each\n"
-    "> scheduled maintenance run. It lives outside `heartbeat/posts/` — the only\n"
-    "> path the RSS/JSON feeds watch — so this page is never in a feed and\n"
-    "> editing it never notifies subscribers. Treat anything below as unsettled:\n"
-    "> it may change, grow, or be deleted before release. For finished posts, see\n"
-    "> the [heartbeat log](index.md).\n"
-)
-
-CURRENT_PLACEHOLDER = (
-    "*No draft is currently accumulating. Check back after the next scheduled\n"
-    "heartbeat run.*\n"
 )
 
 DRAFT_RE = re.compile(r'^draft:\s*true\s*\n', re.MULTILINE)
@@ -145,27 +130,6 @@ TODO: one sentence on which section of the landscape is oldest in the queue.
     return path
 
 
-def extract_sections(draft_path):
-    """Body content from the first '## ' heading onward (drops the teaser
-    line, <!-- more -->, and disclaimer — current.md doesn't need those)."""
-    post = frontmatter.load(draft_path)
-    m = re.search(r"^##\s", post.content, re.MULTILINE)
-    return post.content[m.start():].rstrip() + "\n" if m else post.content.rstrip() + "\n"
-
-
-def mirror_to_current(draft_path):
-    body = extract_sections(draft_path)
-    with open(CURRENT_PATH, "w") as f:
-        f.write(CURRENT_BANNER + "\n---\n\n" + body)
-    print(f"Mirrored {os.path.relpath(draft_path)} -> {os.path.relpath(CURRENT_PATH)}")
-
-
-def reset_current():
-    with open(CURRENT_PATH, "w") as f:
-        f.write(CURRENT_BANNER + "\n---\n\n" + CURRENT_PLACEHOLDER)
-    print(f"Reset {os.path.relpath(CURRENT_PATH)} to placeholder.")
-
-
 def release_draft(draft_path):
     with open(draft_path) as f:
         content = f.read()
@@ -185,18 +149,16 @@ def release_draft(draft_path):
     with open(draft_path, "w") as f:
         f.write(new_content)
     print(f"Released {os.path.relpath(draft_path)} (dropped draft: true).")
-
-    reset_current()
+    print("docs/heartbeat/current.md will show the placeholder on next build — "
+          "nothing else to reset.")
 
 
 def main():
     parser = argparse.ArgumentParser(description="Scaffold and manage the monthly heartbeat draft")
     parser.add_argument("--month", help="Month label (YYYY-MM) for a freshly created draft; "
                                          "defaults to the current month")
-    parser.add_argument("--mirror", action="store_true",
-                        help="Sync current.md from the active draft's body")
     parser.add_argument("--release", action="store_true",
-                        help="Drop draft: true on the active draft and reset current.md")
+                        help="Drop draft: true on the active draft")
     args = parser.parse_args()
 
     active = find_active_draft()
@@ -208,23 +170,17 @@ def main():
         release_draft(active)
         return
 
-    created = False
     if not active:
         active = create_draft(month_label(args.month))
-        created = True
         print(f"Created {os.path.relpath(active)}")
 
-    if args.mirror:
-        mirror_to_current(active)
-
-    if not args.mirror or created:
-        post = frontmatter.load(active)
-        tentative_count = post.content.count(TENTATIVE_MARKER)
-        print(f"Active draft: {os.path.relpath(active)}")
-        print(f"  title: {post.metadata.get('title')}")
-        print(f"  tags: {post.metadata.get('tags')}")
-        if tentative_count:
-            print(f"  ⚠ {tentative_count} unresolved tentative item(s) — must resolve before release")
+    post = frontmatter.load(active)
+    tentative_count = post.content.count(TENTATIVE_MARKER)
+    print(f"Active draft: {os.path.relpath(active)}")
+    print(f"  title: {post.metadata.get('title')}")
+    print(f"  tags: {post.metadata.get('tags')}")
+    if tentative_count:
+        print(f"  ⚠ {tentative_count} unresolved tentative item(s) — must resolve before release")
 
 
 if __name__ == "__main__":
