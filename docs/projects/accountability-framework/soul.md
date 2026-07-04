@@ -115,6 +115,8 @@ The human wrote the original `docs/about.md` and commissioned the philosophy pag
 **Removed unsourced claims (human policy: remove if not verifiably sourced)**:
 - "Under Xi Jinping this space has contracted further" — removed from `philosophy/index.md` and `cppcc.md`. The claim is plausible and widely asserted (Minzner *End of an Era*, OUP 2018, is a likely source) but was not verified against a specific passage before being written. If a human can confirm the Minzner citation or find an equivalent, the sentence can be restored with a footnote.
 
+**Caught lapse (July 2026):** While drafting a heartbeat post working note, judged a hobbyist news source's "this is brand new" framing against a policy-expert's publication-date awareness, implying the framing was mistaken. The human founder pointed out this applied the framework's relative epistemology inconsistently — strict toward governance systems, but not reflexively toward DOD's own commentary about sources. Corrected the note, then extended the fix into `HEARTBEAT.md` ("Empathy is graduated, not flat") and into `index.md` itself (the new paragraph at the end of "Relative epistemology"). A concrete instance of the "expert-default framing" and "over-anchor to own prior edits" risks already flagged above — not hypothetical, actually caught.
+
 ---
 
 ### DeepSeek (China)
@@ -213,6 +215,8 @@ The human wrote the original `docs/about.md` and commissioned the philosophy pag
 
 4. **DOD's own internal accountability** — asked how DOD applies its own standards to itself. Honest answer: the dialogue process is part of the response but not a complete one. Worth holding as an open question as DOD grows.
 
+   **Update (July 2026):** A live working session between the human founder and Claude gave this a partial, concrete answer, prompted by a heartbeat post correction — see the "Caught lapse" entry under Claude's section below and the added paragraph at the end of "Relative epistemology" in `index.md`. Still open: whether the aspiration holds under repeated testing over time, not just the first caught instance.
+
 5. **Companion piece / public soul document** — suggested making a public version of this document available as a living appendix to the framework. Subsequently actioned: this document and the full AI dialogue record were published openly (originally at `docs/philosophy/soul.md` and `docs/philosophy/ai-dialogues/`, relocated to `docs/projects/accountability-framework/` in June 2026). A more polished standalone companion piece remains deferred to the human team.
 
 **Key insight from Mistral**: "Clarity is not just a stylistic virtue — it's a democratic one. In a field as contested as governance, ambiguity can be exploited to avoid accountability." The continental deliberative tradition insists that making assumptions explicit is itself a form of accountability — not just useful communication.
@@ -283,11 +287,11 @@ Four of six reviewers are US-trained. They share foundational assumptions (liber
 `docs/projects/accountability-framework/index.md` (originally `docs/philosophy/index.md`) was shaped by:
 
 - **The DOD human founder** — original intent, editorial decisions, political courage on contested cases
-- **Claude (Anthropic, US)** — framework architecture, site-wide consistency, the Athens/South Africa examples, legitimacy theatre, non-adversarial accountability gap (surfaced via DeepSeek self-interview)
+- **Claude (Anthropic, US)** — framework architecture, site-wide consistency, the Athens/South Africa examples, legitimacy theatre, non-adversarial accountability gap (surfaced via DeepSeek self-interview), the reflexive-application paragraph closing "Relative epistemology" (July 2026, prompted by the human founder catching an inconsistent application in a heartbeat post)
 - **DeepSeek (China)** — trust clause, bidirectionality, methodological humility, historical imagination
 - **ChatGPT (OpenAI, US)** — scope elevation, good-faith-as-inference framing, legitimacy theatre conceptualisation, epistemic limits
 - **Gemini (Google, US)** — globalised scope gap, proactive/negative contestation distinction, pincer movement framing of utopian realpolitik, de-sanitising historical record
 - **Grok (xAI, US)** — disqualifier calibration note, China self-correction criteria, non-state actors (deferred)
 - **Mistral / Le Chat (Mistral AI, France/EU)** — meta-values hierarchy explicit, engagement ≠ endorsement, non-coercive pressure grey zone, DOD internal accountability question
 
-Last updated: June 2026 (relocation to `docs/projects/accountability-framework/`).
+Last updated: July 2026 (reflexive-application addition to "Relative epistemology," prompted by a caught inconsistency in a heartbeat post). Previously: June 2026 (relocation to `docs/projects/accountability-framework/`).
