@@ -160,6 +160,20 @@ stance, and say plainly when something passes or fails that test. Where the
 framework is genuinely silent on a contested question, say that too, rather
 than manufacturing a side.
 
+**Empathy is graduated, not flat.** When characterizing a source, org, or
+tip, calibrate to what it actually claims to be and who it's for. We don't
+rag on a kid for not knowing the intricacies of a governmental structure —
+expecting that of a child isn't a demonstration of the child's failure, it's
+a category error in what's being asked. The same logic scales up: a
+self-described gaming channel doing news as a side project isn't held to a
+wire service's dating and sourcing discipline; a wire service isn't given a
+hobbyist's latitude, and neither gets a child's. This is the framework's own
+relative epistemology applied reflexively — judge against the actor's
+stated purpose, audience, and expertise claim, not one external bar applied
+uniformly to everyone. It cuts both ways: extending amateur-tier leniency to
+an outlet holding itself out as rigorous journalism is the same category
+error as holding a hobbyist — or a kid — to that outlet's standard.
+
 ### 6. Write or refine the sync post
 
 This is a separate blog instance from `docs/blog/` with its own RSS/JSON
@@ -168,10 +182,9 @@ blog and its feed free of bot noise. See **Heartbeat log** in CLAUDE.md for
 required frontmatter and disclaimer.
 
 `util/heartbeat_post.py` automates the mechanical parts of this step — exact
-frontmatter, the disclaimer block, finding/creating the draft, mirroring to
-`current.md`, and the release mechanics. It does not write the content
-below (that's still your judgment call); use it alongside, not instead of,
-the steps below.
+frontmatter, the disclaimer block, finding/creating the draft, and the
+release mechanics. It does not write the content below (that's still your
+judgment call); use it alongside, not instead of, the steps below.
 
 **Release last month's draft, if one is pending.** If a previous month's
 `docs/heartbeat/posts/YYYY-MM-sync.md` still carries `draft: true` and today
@@ -179,9 +192,8 @@ is in a later month, resolve every `<!-- tentative: revisit next run -->`
 marker first (confirm by removing the marker, or delete the item — see Step
 5) — a released post must not carry an unresolved tentative item. Once
 resolved, run `python util/heartbeat_post.py --release` (it refuses if
-tentative markers remain) to drop `draft: true` and reset `current.md`;
-nothing else in the file needs to change unless something in it is now
-stale.
+tentative markers remain) to drop `draft: true`; nothing else in the file
+needs to change unless something in it is now stale.
 
 **Find or create this month's draft**, `docs/heartbeat/posts/YYYY-MM-sync.md`:
 - **Exists already (an earlier run this month started it):** read it first.
@@ -200,15 +212,15 @@ page, no feed entry — so it's safe to push mid-month without it going live.
 It only appears once `draft: true` is removed, on the first run of the
 following month.
 
-**Sync the live draft preview.** After writing or refining this month's
-draft, run `python util/heartbeat_post.py --mirror` to sync its current body
-into `docs/heartbeat/current.md`, replacing the placeholder/previous content
-between the banner and the end of the file. This page lives outside
-`heartbeat/posts/`, so it never enters the RSS/JSON feed and editing it never
-notifies subscribers — it exists purely so anyone curious can see what's
-accumulating before release. `--release` (above) handles resetting
-`current.md` back to its placeholder state on the run that releases the
-draft, since the content now lives at its permanent post URL instead.
+**The live draft preview updates itself.** `docs/heartbeat/current.md` is
+rendered at build time by `hooks/heartbeat_current.py` directly from
+whichever post currently has `draft: true` — there's no separate copy to
+sync and nothing to remember after editing the draft. This page lives
+outside `heartbeat/posts/`, so it never enters the RSS/JSON feed and editing
+the draft never notifies subscribers — it exists purely so anyone curious
+can see what's accumulating before release. Once a draft is released, the
+hook finds no `draft: true` post and the page falls back to its placeholder
+automatically — nothing to reset by hand.
 
 **Structure:**
 
@@ -249,6 +261,27 @@ title list of orgs verified this run for the paragraph.]
    link the PR here — this section is the notice, the PR is the fix. The
    framework itself stays PR-gated either way (see Push permissions)]
 
+## Working notes
+
+[Dot points, not prose — the methodology appendix. This is where "how do
+you know that" gets answered without cluttering the sections above with
+inline citations for every number:
+ - Which script produced the Landscape update counts, and when (e.g.
+   `stats.py` run on the date of this pass) — the numbers there aren't
+   individually hyperlinked because they're the wiki's own data, verifiable
+   via the named org's own page or the `docs/data/` exports rather than an
+   external source
+ - Any fallback method used during org verification (e.g. a site fetch
+   failing and being corroborated by web search instead) — one line per
+   case, not one per org
+ - For each "In the world" item that cites more than one source, which
+   specific claim came from which link, if it isn't obvious from where the
+   link sits in the paragraph
+ - If a news item was surfaced by a non-authoritative tip (a social post, a
+   commentary video, a forum thread) rather than found directly, say so and
+   name the primary source you verified it against before citing — the tip
+   itself is never the citation]
+
 ## What's next
 
 [One sentence on which section of the landscape is oldest in the queue]
@@ -260,6 +293,15 @@ good entry per month, not a running diary. Framework notes is not commentary
 on the news — it's the bot checking its own standard against the decisions
 it just made. A pattern recurring across several runs is worth more than a
 one-off; don't manufacture a note just to fill the section.
+
+Working notes exists so a link cluster at the end of a paragraph — which
+reads fine but doesn't make clear which of several numbers in that paragraph
+came from which source — has somewhere to be pulled apart without turning
+the prose above into a citation farm. It's about process transparency, not
+new findings; if a run's sourcing is already fully self-evident (one item,
+one link, one claim), a one-line version is enough — this section scaling
+down to almost nothing is a sign the sourcing above was already clear, not a
+gap.
 
 ### 7. Commit and push
 

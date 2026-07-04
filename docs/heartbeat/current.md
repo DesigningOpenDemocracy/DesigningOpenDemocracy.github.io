@@ -1,25 +1,13 @@
 # Current draft
 
 > **This is a live, unreleased work-in-progress.** It mirrors whatever this
-> month's [heartbeat](index.md) post is accumulating, updated after each
-> scheduled maintenance run. It lives outside `heartbeat/posts/` — the only
-> path the RSS/JSON feeds watch — so this page is never in a feed and
-> editing it never notifies subscribers. Treat anything below as unsettled:
-> it may change, grow, or be deleted before release. For finished posts, see
-> the [heartbeat log](index.md).
+> month's [heartbeat](index.md) post is accumulating, computed directly from
+> that post at build time — there's no separate copy to keep in sync. It
+> lives outside `heartbeat/posts/` — the only path the RSS/JSON feeds watch —
+> so this page is never in a feed and editing the draft never notifies
+> subscribers. Treat anything below as unsettled: it may change, grow, or be
+> deleted before release. For finished posts, see the [heartbeat log](index.md).
 
 ---
 
-## Landscape update
-
-The landscape holds 119 organisations: 100 active, 17 inactive, 2 deregistered, across 40 concept pages. This run verified 14 active orgs that had never been checked — CDDGG, CDD West Africa, Centro Gumilla, China Democratic League, CPPCC, Citizen Assemblies for South Australia, Citizen OS, Civil Network OPORA, Co-operative Bonds, Code for Australia, Community Independents Project, Conversations at the Crossroads, DEMOCRACY Deutschland, and Darkenu — all confirmed active. Four needed a web-search fallback after direct site fetches failed (Centro Gumilla and Darkenu returned 403; China Democratic League and CPPCC returned 503), mirroring the workaround used in earlier runs. Lateral Economics picked up a `tribal-epistemology` tag, grounded in its existing text on elections rewarding tribal loyalty over considered reasoning — closing one of the landscape's 9 orphaned concepts (8 remain; the rest were checked again this run and the closest candidates are still coincidental keyword overlap rather than genuine matches). Going into this run 57 active orgs had never been checked; 43 remain.
-
-## In the world
-
-**Ukraine's first metropolitan citizens' assembly holds its second session in Lviv.** The Lviv Agglomeration assembly — convened across 13 communities to recommend how to manage shared water resources — ran its opening session on 13–14 June 2026 and its second on 27–28 June, with a final session set for 11–12 July. It's organised by the Council of Europe's Congress of Local and Regional Authorities alongside Kyiv and Rivne assemblies running in parallel. ([Council of Europe — Congress](https://www.coe.int/en/web/congress/-/ukraine-s-first-metropolitan-citizens-assembly-launched-in-lviv).) This extends the deliberative-democracy thread already in the landscape — wartime Ukraine is now running sortition-based assemblies at inter-municipal scale, not just single-city pilots, while under active invasion.
-
-**V-Dem's 2026 Democracy Report finds 44 countries autocratizing — a record share of the world's population — with six of ten new entrants in Europe and North America.** The new 2025 autocratizers are Cambodia, Croatia, Italy, Kuwait, Madagascar, Slovakia, Slovenia, Togo, the UK, and the US; V-Dem's press release calls the US decline "unprecedented" for a long-established democracy. The specific indicators driving the score — media censorship (32 of 44 countries), civil-society repression (30 of 44), and worsening freedom of expression (44 countries) — are structural, not electoral: they measure whether avenues for dissent and oversight stay open between elections, which is exactly the kind of question the accountability framework's structural-inflexibility test asks of every entry in this landscape, liberal democracies included. ([V-Dem Institute — press release](https://www.v-dem.net/news/press-release-democratic-backsliding-reaches-western-democracies-with-us-decline-unprecedented/); [full report, PDF](https://v-dem.net/documents/75/V-Dem_Institute_Democracy_Report_2026_lowres.pdf).) The framework says treat every system by the same yardstick — this is that yardstick turned on the wealthiest democracies in the sample, not just the usual subjects.
-
-## What's next
-
-The 43 remaining never-checked active orgs are next, the same Australian state and regional civic-organisation cluster flagged as oldest in the previous run.
+<!-- HEARTBEAT_CURRENT_BODY -->

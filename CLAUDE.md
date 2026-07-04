@@ -165,15 +165,18 @@ pushed direct to main — no PR — if they meet all of the following:
    > to main without prior human review — see HEARTBEAT.md for the trust model.
    > A human may review and amend it after the fact.*
    ```
-4. Content is restricted to three sections (see `HEARTBEAT.md` for full structure):
+4. Content is restricted to these sections (see `HEARTBEAT.md` for full structure):
    - **Maintenance log:** landscape statistics, orgs verified, structural findings.
      All claims sourced from the wiki's own data.
    - **World commentary (optional):** 1–3 sourced observations on recent
      democracy-related events (new assemblies, reforms, backsliding, policy
-     publications). Every factual claim must carry a linked source. DOD is
-     nonpartisan — no partisan-election commentary, no unsourced claims — but
-     opinion grounded in the accountability framework is fine; this is the
-     bot's own venue, with more editorial latitude than `docs/blog/posts/`
+     publications). Every item must carry at least one linked source and every
+     claim in it must be traceable to one of that item's links — when an item
+     cites more than one source, use Working notes (below) to say which claim
+     came from which, rather than leaving the reader to guess from link order.
+     DOD is nonpartisan — no partisan-election commentary, no unsourced claims
+     — but opinion grounded in the accountability framework is fine; this is
+     the bot's own venue, with more editorial latitude than `docs/blog/posts/`
      AI-assisted posts (see **Voice** in HEARTBEAT.md Step 5). An item that's
      notable-seeming but not yet confirmed may be included tentatively and
      resolved on a later run (see HEARTBEAT.md Step 5/6). If nothing notable
@@ -185,6 +188,11 @@ pushed direct to main — no PR — if they meet all of the following:
      A concrete proposed fix to the framework still requires a PR per the
      normal foundational-document gate; this section is the notice, not the
      fix. Omitted entirely if nothing surfaced this run.
+   - **Working notes:** dot-point methodology appendix — which script produced
+     the Landscape update numbers and when, any fallback method used during
+     verification, and per-claim source attribution for any World commentary
+     item citing more than one source. Process transparency, not new
+     findings; see HEARTBEAT.md Step 6 for what belongs here.
 5. Pushed straight to main, no PR — see Push permissions in `HEARTBEAT.md`.
 
 ### Concept pages (`docs/concepts/`)
