@@ -18,6 +18,11 @@ activity:
     date: 2026-06-09
     note: "Site confirmed active; no blog or news feed found"
     checked: 2026-06-09
+  dod:
+    date: 2026-07-05
+    note: "Direct site fetch returned 503; corroborated active via WEF org profile, GitHub org, and press coverage of new SAIRI autonomous AI-agent project"
+    checked: 2026-07-05
+last_checked: "2026-07-05"
 ---
 
 Democracy Earth Foundation is a San Francisco–registered nonprofit that grew out of the Buenos Aires civic tech scene. Founded by Santiago Siri and Pia Mancini (also co-founders of the Partido de la Red / Net Party), it focuses on building open-source infrastructure for democratic participation that works independently of national governments and legacy institutions.
@@ -25,6 +30,8 @@ Democracy Earth Foundation is a San Francisco–registered nonprofit that grew o
 The foundation is best known for championing **quadratic voting** — a mechanism where participants allocate "voice credits" across proposals, with votes costing the square of the number allocated. This design limits the influence of concentrated interests while preserving minority voice. Democracy Earth's open-source implementation has been adopted by platforms including Gitcoin and tested in pilot programmes in the United States.
 
 Their broader project, **Sovereign**, is a distributed governance application using blockchain for identity and vote integrity. The underlying philosophy is that legitimate democratic participation should not depend on state-issued credentials — making it relevant for diaspora communities, stateless people, and borderless organisations.
+
+As of mid-2026 the foundation has extended this work into **SAIRI**, described in press coverage as a tokenized autonomous AI agent operating on the Base blockchain — able to hold assets, deploy code, and manage its own on-chain activity with persistent memory. It's a speculative, early-stage experiment rather than an established governance tool; noted here as the foundation's current direction, not an endorsement of the approach.
 
 ## Key people
 

@@ -26,6 +26,11 @@ activity:
     note: "News page found, no machine-readable date"
     hint: no_markup
     checked: 2026-06-08
+  dod:
+    date: 2026-07-05
+    note: "Site confirmed active; DémocraNews newsletter launched 17 June 2026, new co-presidency announced 18 May 2026"
+    checked: 2026-07-05
+last_checked: "2026-07-05"
 ---
 
 Démocratie Ouverte is a French non-partisan association of general interest that has, for over ten years, tested tools and methods and made proposals to public decision-makers to make governance more transparent, cooperative, and participative. It combines practical experimentation with policy advocacy and network convening.

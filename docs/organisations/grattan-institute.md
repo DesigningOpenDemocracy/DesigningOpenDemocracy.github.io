@@ -20,6 +20,11 @@ activity:
     note: "Latest post: Tough decisions needed on gas"
     url: "https://grattan.edu.au/tough-decisions-needed-on-gas/"
     checked: 2026-06-08
+  dod:
+    date: 2026-07-05
+    note: "Site confirmed active and current through July 2026; democracy and public integrity program still listed"
+    checked: 2026-07-05
+last_checked: "2026-07-05"
 ---
 
 The Grattan Institute is a Melbourne-based public policy think tank covering a broad range of policy areas including energy, housing, education, health, and governance. It is independent of government, political parties, and industry.

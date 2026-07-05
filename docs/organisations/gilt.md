@@ -20,6 +20,11 @@ activity:
     note: "RSS feed active"
     url: https://www.gilt.at/feed
     checked: 2026-06-07
+  dod:
+    date: 2026-07-05
+    note: "Site confirmed active (2024 election content still featured); Wikipedia (de) corroborates party still exists, no evidence of dissolution"
+    checked: 2026-07-05
+last_checked: "2026-07-05"
 ---
 
 G!LT (stylised from the German *"Meine Stimme G!LT"* — "My Vote Counts") is an Austrian political party founded in 2016 by Roland Düringer, an actor, cabaret artist, and political commentator. The party's starting point is a critique of representative democracy as actually practiced in Austria: that elections every five years give citizens minimal real influence, and that the current system serves party machinery more than citizens.
