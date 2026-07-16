@@ -27,6 +27,12 @@ activity:
     note: "Latest news page scraped"
     url: https://www.lcps-lebanon.org/en/press
     checked: 2026-06-08
+  dod:
+    date: 2026-07-15
+    note: "Website loaded directly; most recent article 'Can Lebanon's Social Protection System Withstand Wartime Shocks?' dated July 15, 2026"
+    url: https://www.lcps-lebanon.org
+    checked: 2026-07-16
+last_checked: "2026-07-16"
 ---
 
 The Lebanese Center for Policy Studies (LCPS) is an independent, non-partisan think tank founded in 1989 in Beirut. It produces research and advocates for policies aimed at improving governance in Lebanon and the broader Arab region. Its priority areas include political representation, decentralisation, transparency in natural resource governance, job creation, and youth empowerment.

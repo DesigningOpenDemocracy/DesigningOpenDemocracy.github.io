@@ -27,6 +27,12 @@ activity:
     note: "Scraper only finds URL-embedded dates; page shows 2025 items"
     url: https://mieuxvoter.fr/presse
     checked: 2026-06-08
+  dod:
+    date: 2025-08-29
+    note: "Press page confirms recent coverage through Aug 29, 2025 (own post: Bilan des Primaires 2022) plus media citations (Libération, France Info); Majority Judgment advocacy focus confirmed on homepage"
+    url: https://mieuxvoter.fr/presse
+    checked: 2026-07-16
+last_checked: "2026-07-16"
 ---
 
 MieuxVoter ("Better Vote") is a French association promoting **Majority Judgment** (Jugement Majoritaire) — a voting method developed by mathematicians Michel Balinski and Rida Laraki in which voters assign a grade to each candidate (e.g. Excellent / Good / Fair / Poor) rather than selecting a single name. The winner is determined by the median grade, which reduces the "lesser evil" problem and makes strategic voting harder.

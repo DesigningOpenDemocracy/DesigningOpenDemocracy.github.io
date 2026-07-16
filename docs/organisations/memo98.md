@@ -29,6 +29,12 @@ activity:
     note: "Latest news page scraped"
     url: https://memo98.sk/articles/blog
     checked: 2026-06-07
+  dod:
+    date: 2026-07-16
+    note: "Site active with news dated through May 2026; recent items include April 2026 formal complaint on public broadcaster impartiality and press freedom monitoring"
+    url: https://memo98.sk/articles/blog
+    checked: 2026-07-16
+last_checked: "2026-07-16"
 ---
 
 MEMO 98 is a Slovak organisation founded in 1998 focused on media integrity and democratic civic engagement. It is best known for its election media monitoring work — assessing whether voters have access to quality, balanced information during electoral periods — and has applied this methodology across multiple countries.

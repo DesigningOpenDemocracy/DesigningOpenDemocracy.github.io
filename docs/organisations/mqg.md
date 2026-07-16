@@ -20,6 +20,12 @@ activity:
     note: "Latest post: התנועה לאיכות השלטון דורשת מהרמטכ\"ל להקים ועדת בדיקה לנתוני גיוס החרדים השגויים "
     url: "https://mqg.org.il/%d7%94%d7%aa%d7%a0%d7%95%d7%a2%d7%94-%d7%9c%d7%90%d7%99%d7%9b%d7%95%d7%aa-%d7%94%d7%a9%d7%9c%d7%98%d7%95%d7%9f-%d7%93%d7%95%d7%a8%d7%a9%d7%aa-%d7%9e%d7%94%d7%a8%d7%9e%d7%98%d7%9b%d7%9c-%d7%9c%d7%94/"
     checked: 2026-06-08
+  dod:
+    date: 2026-07-16
+    note: "Site active with current campaigns: opposing Attorney General dismissal, equal conscription law, and demanding a State Commission of Inquiry into Oct 7 failures; confirms ongoing watchdog/litigation activity"
+    url: https://mqg.org.il/en
+    checked: 2026-07-16
+last_checked: "2026-07-16"
 ---
 
 The Movement for Quality Government in Israel (MQG) has operated since 1990 as Israel's primary watchdog organisation for government accountability, anti-corruption, and rule of law. Its approach combines strategic litigation, Supreme Court petitions, investigative research, and civic education — holding the Israeli government accountable to its own stated legal and democratic standards.

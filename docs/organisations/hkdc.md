@@ -30,6 +30,12 @@ activity:
     note: "Latest news page scraped"
     url: https://www.hkdc.us/news
     checked: 2026-06-08
+  dod:
+    date: 2026-02-10
+    note: "News page loaded directly; most recent item 'Crossing a New Line: The Conviction of Anna Kwok's Father' dated Feb 10, 2026"
+    url: https://www.hkdc.us/news
+    checked: 2026-07-16
+last_checked: "2026-07-16"
 ---
 
 > **Note:** HKDC operates from diaspora in Washington DC. It is included here because its work is specifically about a particular governance system — the accountability structures promised to Hong Kong under One Country, Two Systems — rather than general human rights documentation.
