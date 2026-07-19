@@ -4,7 +4,7 @@ type: party
 status: active
 country: AU
 website: https://pirateparty.org.au
-summary: "An Australian political party focused on digital rights, civil liberties, and democratic reform, including initiating the Electoral Royal Commission campaign to investigate Australian voting reform."
+summary: "An Australian political party focused on digital rights, civil liberties, and democratic reform, including initiating the Electoral Royal Commission campaign to investigate Australian voting reform. Deregistered as an independent AEC-registered party in 2021 and now runs as a distinct internal grouping within the Fusion Party — retaining its own membership and infrastructure, with its members also counted as Fusion Party members for electoral registration."
 location:
   latitude: -33.8688
   longitude: 151.2093
@@ -23,11 +23,17 @@ activity:
     date: 2026-06-07
     note: "Known personally to be active"
     checked: 2026-06-07
+  dod:
+    date: 2026-07-19
+    note: "Status ambiguity resolved by a DOD member with direct knowledge: PPAU deregistered as an independent AEC party in 2021 but continues as a distinct internal grouping within the Fusion Party (own membership, own infrastructure); members also count as Fusion Party members for AEC registration purposes. Kept active."
+    url: https://pirateparty.org.au
+    checked: 2026-07-19
+last_checked: "2026-07-19"
 ---
 
 Pirate Party Australia is the Australian branch of the international Pirate Party movement, which originated in Sweden in 2006 around issues of copyright reform and internet freedom. The Australian chapter has broadened its platform to include democratic reform, government transparency, and civil liberties.
 
-> **Note on status (flagged 2026-07):** Wikipedia states the federal party voluntarily deregistered with the AEC on 28 April 2021 and its members subsequently helped form the Fusion Party — a party not currently in this landscape. However, pirateparty.org.au remains live with posts into 2024, and this page's own `activity.manual` entry (2026-06-07) records the party as "known personally to be active." Kept as `active` pending human review to resolve whether this describes a still-operating advocacy body distinct from its lapsed electoral registration, or a defunct entity whose remaining online presence is residual.
+> **Note on status (resolved 2026-07):** PPAU voluntarily deregistered as an independent AEC-registered party on 28 April 2021. It did not dissolve — it merged into the Fusion Party's federated structure, which allows PPAU to continue as a distinct internal grouping: separate membership, separate infrastructure (its own website and servers), and its own ongoing activity (e.g. the McBride case commentary, the Electoral Royal Commission campaign) — while its members are also counted as Fusion Party members for the purposes of AEC registration. This is a real change worth recording (the party is no longer independently registered), but not a merger in the sense of ceasing to exist as a distinct entity, so `status: active` stands. Confirmed by a DOD member with direct knowledge of the structure, resolving the ambiguity flagged in [PR #112](https://github.com/DesigningOpenDemocracy/DesigningOpenDemocracy.github.io/pull/112).
 
 Of particular note to the democracy reform field: PPAU initiated the **Electoral Royal Commission** campaign, advocating for a formal commission of inquiry into Australian voting systems and electoral reform options. The campaign reflects a view that the mechanisms by which Australians elect their representatives deserve serious, structured scrutiny — not just ad hoc party-political debate.
 
