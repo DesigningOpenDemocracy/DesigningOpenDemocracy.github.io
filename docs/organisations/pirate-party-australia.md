@@ -27,6 +27,8 @@ activity:
 
 Pirate Party Australia is the Australian branch of the international Pirate Party movement, which originated in Sweden in 2006 around issues of copyright reform and internet freedom. The Australian chapter has broadened its platform to include democratic reform, government transparency, and civil liberties.
 
+> **Note on status (flagged 2026-07):** Wikipedia states the federal party voluntarily deregistered with the AEC on 28 April 2021 and its members subsequently helped form the Fusion Party — a party not currently in this landscape. However, pirateparty.org.au remains live with posts into 2024, and this page's own `activity.manual` entry (2026-06-07) records the party as "known personally to be active." Kept as `active` pending human review to resolve whether this describes a still-operating advocacy body distinct from its lapsed electoral registration, or a defunct entity whose remaining online presence is residual.
+
 Of particular note to the democracy reform field: PPAU initiated the **Electoral Royal Commission** campaign, advocating for a formal commission of inquiry into Australian voting systems and electoral reform options. The campaign reflects a view that the mechanisms by which Australians elect their representatives deserve serious, structured scrutiny — not just ad hoc party-political debate.
 
 The party operates as an explicitly political actor with positions across a range of issues, though its structural focus on how democratic processes work (rather than purely what policies they should produce) gives it some overlap with the nonpartisan democracy reform community.
