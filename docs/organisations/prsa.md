@@ -25,6 +25,12 @@ activity:
     note: "website loaded. News page at https://www.prsa.org.au/latest01.htm 2026-05a 'LETTER ON SOUTH AUSTRALIAN ELECTION OUTCOME TO ALL SA MPs:'"
     url: https://www.prsa.org.au/latest01.htm
     checked: 2026-06-07
+  dod:
+    date: 2026-07-19
+    note: "Website live; quarterly newsletter (Quota Notes), active social media, ongoing electoral-reform advocacy."
+    url: https://www.prsa.org.au
+    checked: 2026-07-19
+last_checked: "2026-07-19"
 ---
 
 The Proportional Representation Society of Australia (PRSA) is one of Australia's oldest electoral reform organisations, with roots in the 19th century — Catherine Helen Spence was among its founding members. The current national constitution dates from 1982.

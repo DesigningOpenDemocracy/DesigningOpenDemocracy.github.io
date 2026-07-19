@@ -10,6 +10,7 @@ concepts:
   - direct-democracy
   - participatory-budgeting
   - consensus-mapping
+  - collective-intelligence
 location:
   latitude: 49.2827
   longitude: -123.1207
@@ -41,3 +42,4 @@ The platform is proprietary and primarily used by Canadian public sector clients
 - [E-Government](../concepts/e-government.md)
 - [Consensus Mapping](../concepts/consensus-mapping.md)
 - [Direct Democracy](../concepts/direct-democracy.md)
+- [Collective Intelligence](../concepts/collective-intelligence.md)

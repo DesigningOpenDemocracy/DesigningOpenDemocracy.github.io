@@ -10,6 +10,7 @@ concepts:
   - deliberative-democracy
   - cooperative
   - consensus-mapping
+  - worker-cooperatives
 location:
   latitude: -41.2865
   longitude: 174.7762

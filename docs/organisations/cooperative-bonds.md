@@ -14,6 +14,7 @@ concepts:
   - economic-democracy
   - workplace-democracy
   - community-business
+  - worker-cooperatives
 rss_feed: https://bonds.coop/feed
 news_page: https://bonds.coop/resources/co-op-news/
 activity:

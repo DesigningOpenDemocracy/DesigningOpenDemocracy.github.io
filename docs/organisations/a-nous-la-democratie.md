@@ -25,6 +25,12 @@ activity:
     note: "website loaded. They got https://anouslademocratie.fr/articles/ but it differ from rss feed..."
     url: https://anouslademocratie.fr/2025/07/15/pour-la-premiere-democratie-francaise-un-entretien-avec-baya-bellanger-sur-son-nouveau-livre-gouvernons/
     checked: 2026-06-08
+  dod:
+    date: 2026-07-19
+    note: "Website live; no upcoming events listed at time of check, but no evidence of shutdown."
+    url: https://anouslademocratie.fr/
+    checked: 2026-07-19
+last_checked: "2026-07-19"
 ---
 
 À Nous La Démocratie! is a French citizen movement founded in 2016 by eight citizens who wanted to fundamentally transform how the French political system functions. Non-partisan and citizen-led, it advocates for institutional reforms to shift political power toward citizens.

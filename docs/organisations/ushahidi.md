@@ -20,6 +20,12 @@ activity:
     note: "Latest post: The End; and the Means to that End (Angela Oduor Lungati)"
     url: https://www.ushahidi.com/about/blog
     checked: 2026-06-09
+  dod:
+    date: 2026-07-19
+    note: "Website live; ongoing blog posts and active climate/governance project pages."
+    url: https://www.ushahidi.com
+    checked: 2026-07-19
+last_checked: "2026-07-19"
 ---
 
 Ushahidi ("testimony" in Swahili) was created in January 2008 by a group of Kenyan bloggers and technologists — including Ory Okolloh, Erik Hersman, Juliana Rotich, and David Kobia — in the immediate aftermath of Kenya's disputed presidential election and the violence that followed. Within days of launch, over 45,000 reports had been mapped. The project demonstrated that crowdsourced civic data, gathered via SMS and web submissions and plotted on a map, could provide situational awareness when official sources were failing or actively suppressing information.

@@ -16,9 +16,15 @@ activity:
     note: "Website loaded at https://tev-dem.com/ . News is in front page. Latest is  Feb 21, 2026 ' roja Zimanê Dayîk A Cîhanî li hemû gelan pîroz be û Hêviya me ye ku bibe roja vekirina dergihê azadiya gelên Sûriyayê û aramiya wan.'"
     url: https://tev-dem.com/
     checked: 2026-06-07
+  dod:
+    date: 2026-02-21
+    note: "Website (tev-dem.com) live, publishing through Feb 2026. Updated context note: Jan 2026 Damascus offensive against SDF-held territory + Jan 30 2026 ceasefire/integration agreement is phasing AANES civil institutions into Syrian state structures — governance model description may not fully reflect current on-the-ground reality."
+    url: https://tev-dem.com/
+    checked: 2026-07-19
+last_checked: "2026-07-19"
 ---
 
-> **Note on context:** AANES is not internationally recognised as a state. It operates as a de facto autonomous region in northern Syria under ongoing military pressure, primarily from Turkey. TEV-DEM is the civilian governance arm — distinct from the military structures (YPG/YPJ/SDF). It is included here because the governance design it implements is one of the most extensively documented non-statist democratic experiments currently operating.
+> **Note on context:** AANES is not internationally recognised as a state. Following a January 2026 Syrian government offensive against SDF-held territory and a January 30, 2026 ceasefire/integration agreement with Damascus, AANES's autonomous civil institutions are being phased into national state structures, with Kurdish political autonomy narrowed from territorial control toward local administrative and cultural guarantees. TEV-DEM's website remains active as of February 2026, and the commune-council structure described below reflects the model as documented prior to integration — it may not fully describe current on-the-ground governance. TEV-DEM is the civilian governance arm — distinct from the military structures (YPG/YPJ/SDF). It is included here because the governance design it implements is one of the most extensively documented non-statist democratic experiments in the region.
 
 The Movement for a Democratic Society (Tevgera Demokratîk a Civakê, TEV-DEM) is the civilian coordination body for the Autonomous Administration of North and East Syria. Established in the early years of the Syrian conflict, TEV-DEM functions as an umbrella organisation connecting commune councils, district councils, professional organisations, cultural bodies, and civil society groups operating under the AANES governance framework.
 

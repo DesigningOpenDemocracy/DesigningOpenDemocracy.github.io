@@ -25,6 +25,12 @@ activity:
     note: "website loaded. But social media is last noted in twitter May 16, 2020 https://x.com/newvote/status/1261440493004615681 . So uncertain on newvote status"
     url: https://x.com/newvote/status/1261440493004615681
     checked: 2026-06-07
+  dod:
+    date: 2026-07-19
+    note: "Website live, confirmed active civic-tech institute. Content largely references 2018-2019 activity (UQ Student Voice pilot); no evidence of shutdown."
+    url: https://newvote.org
+    checked: 2026-07-19
+last_checked: "2026-07-19"
 ---
 
 NewVote is built on a simple philosophy: the world is better when everyone is empowered. The institute uses technology to operate across three democratic modes simultaneously:

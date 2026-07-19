@@ -30,6 +30,12 @@ activity:
     note: "News page unreachable"
     hint: bot_blocked
     checked: 2026-06-08
+  dod:
+    date: 2026-07-19
+    note: "Parent org (Sortition Foundation) confirmed active; Australia chapter page returns 403 to automated fetch (Cloudflare bot-block) but is indexed and referenced live; monthly Zoom meetings ongoing per site copy."
+    url: https://www.sortitionfoundation.org/become_a_member_australia
+    checked: 2026-07-19
+last_checked: "2026-07-19"
 ---
 
 The Sortition Foundation is a UK-based organisation that campaigns for the use of stratified random selection (sortition) in government, primarily through citizens' assemblies. The Australian chapter operates within that global structure and is established by **Dr Sonia Randhawa**, based in Preston, Victoria, who works as a Project Manager at the Foundation.
