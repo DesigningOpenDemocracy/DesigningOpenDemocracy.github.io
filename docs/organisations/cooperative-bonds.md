@@ -4,6 +4,11 @@ type: practice
 status: active
 country: AU
 website: https://bonds.coop
+contact:
+  email: hello@bonds.coop
+  phone: "+61 418 223 517"
+  source: https://bonds.coop/connect-with-us/
+  checked: 2026-07-24
 summary: "A Melbourne-based cooperative of cooperative developers, providing governance, business model, and development support to co-operatives, mutuals, social enterprises, and member-based organisations across Australia."
 location:
   latitude: -37.8136

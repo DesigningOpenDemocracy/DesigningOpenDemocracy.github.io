@@ -4,6 +4,10 @@ type: advocacy
 status: active
 country: AU
 website: https://www.communityindependentsproject.org
+contact:
+  email: info@communityindependentsproject.org
+  source: https://www.communityindependentsproject.org/contact-us
+  checked: 2026-07-24
 summary: "The national support and capacity-building body for Australia's community independent candidate movement — a decentralised network of locally organised, non-partisan groups that support community-driven independent candidates for parliament."
 location:
   latitude: -37.8136
