@@ -61,6 +61,16 @@ The invariants recorded there are not immutable. Any document in this repo — i
 - `news_page: <url>` — optional; URL of the org's news or blog index page. Opt-in for `util/scrape_news.py`.
 - `ics_feed: <url>` — optional; URL of an iCal/ICS calendar feed. Opt-in for `util/check_rss.py --update-activity` (writes `activity.ical`).
 - `related_orgs: [slug, slug]` — optional; list of org slugs with a direct relationship to this org. Rendered as orange edges in the knowledge graph. Declare on one side only — direction is normalised so duplicates are automatically suppressed.
+- `contact:` — optional dict of publicly-published contact details, sourced only from the org's own official website (never third-party registries/aggregators):
+  ```yaml
+  contact:
+    email: info@example.org
+    phone: "+61 2 xxxx xxxx"   # quote phone numbers — a leading + or 0 breaks unquoted YAML
+    source: https://example.org/contact    # page the info was found on
+    checked: 2026-07-24                    # date it was last verified
+  ```
+  - Prefer general `info@` / `contact@` / `hello@` addresses over named individuals; only use a named person's address if it's the org's sole/designated general contact channel.
+  - Omit `email`/`phone` individually if not found — don't fabricate or guess. If nothing is publicly published, omit the whole `contact:` block rather than adding an empty one.
 - `activity:` — optional dict of evidence sources, each keyed by method name. The build hook
   (`hooks/activity_selector.py`) picks the best entry for display using a priority order and
   per-source staleness thresholds.

@@ -5,6 +5,10 @@ status: active
 country: AU
 website: https://mckinnon.co
 news_page: https://mckinnon.co/insights
+contact:
+  email: info@mckinnon.co
+  source: https://mckinnon.co/contact
+  checked: 2026-07-24
 summary: "A non-partisan Australian foundation working across all sides of politics to find common ground and practical pathways on major national challenges, with a focus on democratic and public sector reform. Rebranded from Susan McKinnon Foundation to McKinnon in 2025."
 location:
   latitude: -37.8136
