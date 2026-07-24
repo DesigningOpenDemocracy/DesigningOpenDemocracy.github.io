@@ -4,6 +4,10 @@ type: research
 status: active
 country: AU
 website: https://www.newdemocracy.com.au
+contact:
+  email: iain.walker@newdemocracy.com.au
+  source: https://www.newdemocracy.com.au
+  checked: 2026-07-24
 summary: "An independent, non-partisan Australian research and development organisation that designs and runs real-world deliberative democracy trials using randomly selected citizens."
 location:
   latitude: -33.8688

@@ -61,6 +61,8 @@ def load_orgs():
             "rss_feed": m.get("rss_feed", ""),
             "ics_feed": m.get("ics_feed", ""),
             "activity": m.get("activity") or {},
+            "contact_email": (m.get("contact") or {}).get("email", ""),
+            "contact_phone": (m.get("contact") or {}).get("phone", ""),
         })
     return orgs
 
@@ -77,7 +79,8 @@ def write_orgs_csv(orgs):
     path = os.path.join(OUT_DIR, "organisations.csv")
     fields = ["slug", "title", "status", "country", "type", "website",
               "summary", "concepts", "latitude", "longitude", "location_name",
-              "rss_feed", "ics_feed", "activity_date", "activity_method", "last_checked"]
+              "rss_feed", "ics_feed", "contact_email", "contact_phone",
+              "activity_date", "activity_method", "last_checked"]
     with open(path, "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=fields, extrasaction="ignore")
         w.writeheader()

@@ -4,6 +4,10 @@ type: advocacy
 status: active
 country: AU
 website: https://www.prsa.org.au
+contact:
+  email: info@prsa.org.au
+  source: https://www.prsa.org.au/nat_cont.html
+  checked: 2026-07-24
 summary: "Australia's oldest electoral reform organisation, advocating for proportional representation via the Single Transferable Vote — the system already used in Tasmania, the ACT, and the Australian Senate."
 location:
   latitude: -35.2809

@@ -4,6 +4,10 @@ type: advocacy
 status: active
 country: AU
 website: https://democracyincolour.org
+contact:
+  email: info@democracyincolour.org
+  source: https://democracyincolour.org/contact/
+  checked: 2026-07-24
 summary: "Australia's first national racial justice advocacy organisation led by people of colour, campaigning to address structural racism in Australian political, media, and civic institutions and to build the political power of communities of colour."
 location:
   latitude: -37.8136

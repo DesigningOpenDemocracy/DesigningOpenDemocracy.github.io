@@ -4,6 +4,10 @@ type: civic tech
 status: active
 country: AU
 website: https://www.codeforaustralia.org
+contact:
+  email: info@codeforaustralia.org
+  source: https://www.codeforaustralia.org/contact-us/
+  checked: 2026-07-24
 summary: "An Australian civic technology organisation that partners with government and non-profits to deliver digital solutions — through a fellowship program placing technologists inside public institutions."
 location:
   latitude: -37.8136

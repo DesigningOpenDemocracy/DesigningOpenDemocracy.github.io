@@ -4,6 +4,10 @@ type: cooperative
 status: active
 country: AU
 website: https://www.888causeway.coop
+contact:
+  email: coopcauseway@gmail.com
+  source: https://www.888causeway.coop/contact/
+  checked: 2026-07-24
 summary: "Victoria's first registered co-operative co-working space, based in Melbourne CBD, providing affordable member-run workspace for social economy organisations alongside a podcast and events network focused on cooperative and mutual enterprise."
 location:
   latitude: -37.8156

@@ -4,6 +4,11 @@ type: research
 status: active
 country: AU
 website: https://www.canberra.edu.au/research/centres/cddgg
+contact:
+  email: delibdem@canberra.edu.au
+  phone: "+61 2 6201 5111"
+  source: https://www.canberra.edu.au/research/centres/cddgg
+  checked: 2026-07-24
 summary: "A world-leading academic research centre at the University of Canberra focused on deliberative democracy — home of the Journal of Deliberative Democracy, and the institution behind the 2009 Australian Citizens' Parliament."
 location:
   latitude: -35.2457

@@ -4,6 +4,11 @@ type: practice
 status: active
 country: AU
 website: https://mosaiclab.com.au
+contact:
+  email: info@mosaiclab.com.au
+  phone: "0422 830 650"
+  source: https://mosaiclab.com.au
+  checked: 2026-07-24
 summary: "An Australian deliberative democracy practice that designs and facilitates public deliberation processes — citizens' juries, panels, and assemblies — for governments and public institutions."
 location:
   latitude: -37.8136

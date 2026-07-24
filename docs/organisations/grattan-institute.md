@@ -4,6 +4,11 @@ type: research
 status: active
 country: AU
 website: https://grattan.edu.au
+contact:
+  email: info@grattan.edu.au
+  phone: "+61 3 9035 9881"
+  source: https://grattan.edu.au/contact/
+  checked: 2026-07-24
 summary: "A Melbourne-based public policy think tank with a democracy and governance program — producing research on electoral integrity, parliamentary reform, campaign finance, and trust in government. Not democracy-specialist; covers a broad range of policy areas."
 location:
   latitude: -37.8136

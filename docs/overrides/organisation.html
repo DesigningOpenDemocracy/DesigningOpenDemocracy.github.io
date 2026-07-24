@@ -46,6 +46,16 @@
         </td>
       </tr>
       {%- endif %}
+      {%- if page.meta.contact and (page.meta.contact.email or page.meta.contact.phone) %}
+      <tr>
+        <th>Contact</th>
+        <td>
+          {%- if page.meta.contact.email %}<a href="mailto:{{ page.meta.contact.email }}">{{ page.meta.contact.email }}</a>{%- endif %}
+          {%- if page.meta.contact.email and page.meta.contact.phone %}<br>{%- endif %}
+          {%- if page.meta.contact.phone %}{{ page.meta.contact.phone }}{%- endif %}
+        </td>
+      </tr>
+      {%- endif %}
       {%- if page.meta.rss_feed %}
       <tr>
         <th>RSS feed</th>

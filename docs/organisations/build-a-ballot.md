@@ -4,6 +4,10 @@ type: civic tech
 status: active
 country: AU
 website: https://www.buildaballot.org.au
+contact:
+  email: tool@buildaballot.org.au
+  source: https://www.buildaballot.org.au
+  checked: 2026-07-24
 summary: "An Australian voter advice tool that helps citizens match their values to candidates before elections — launched before each state and federal election by Project Planet, a climate-focused charity."
 location:
   latitude: -33.8688

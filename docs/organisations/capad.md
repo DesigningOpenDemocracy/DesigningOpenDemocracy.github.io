@@ -4,6 +4,10 @@ type: advocacy
 status: active
 country: AU
 website: https://canberra-alliance.org.au
+contact:
+  email: secretary@canberra-alliance.org.au
+  source: https://canberra-alliance.org.au
+  checked: 2026-07-24
 summary: "A Canberra-based community nonprofit promoting good governance and civic participation in the ACT through candidate accountability forums, deliberative conversations, and civic education — independently funded and member-run since 2015."
 location:
   latitude: -35.2809

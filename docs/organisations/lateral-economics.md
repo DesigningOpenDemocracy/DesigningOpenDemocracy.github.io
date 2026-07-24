@@ -4,6 +4,11 @@ type: research
 status: active
 country: AU
 website: https://www.lateraleconomics.com.au
+contact:
+  email: mail@lateraleconomics.com.au
+  phone: "+61 403 077 732"
+  source: https://www.lateraleconomics.com.au
+  checked: 2026-07-24
 summary: "An Australian policy economics consultancy led by Nicholas Gruen — advising on economic reform, innovation, and democratic governance, with a particular interest in how institutions can better incorporate citizens' knowledge and deliberation."
 location:
   latitude: -33.8688
