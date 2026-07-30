@@ -24,43 +24,40 @@
 {{ super() }}
 <div class="md-typeset">
 
-<div class="org-layout">
-  <aside class="org-facets" aria-label="Filter organisations">
-    <div class="org-facet-search-row">
-      <input type="search" id="org-search" placeholder="Search organisations…" class="org-search-input" aria-label="Search organisations">
-      <button type="button" id="org-clear-filters" class="org-clear-btn">Clear filters</button>
-    </div>
+<div class="org-toolbar">
+  <input type="search" id="org-search" placeholder="Search organisations…" class="org-search-input" aria-label="Search organisations">
 
-    <div class="org-facet-group">
-      <div class="org-facet-title">Active within</div>
-      <div class="org-activity-filters" role="group" aria-label="Filter by recency">
-        <button class="org-activity-btn active" data-days="0">All time</button>
-        <button class="org-activity-btn" data-days="180">6 months</button>
-        <button class="org-activity-btn" data-days="365">1 year</button>
-        <button class="org-activity-btn" data-days="730">2 years</button>
-      </div>
-    </div>
-
-    <details class="org-facet" data-facet="status" open>
-      <summary>Status</summary>
-      <div class="org-facet-list" data-facet-list="status"></div>
+  <div class="org-facet-bar" aria-label="Filter organisations">
+    <details class="org-facet-dd" data-facet="status">
+      <summary>Status <span class="org-facet-badge" data-facet-badge="status"></span></summary>
+      <div class="org-facet-panel" data-facet-list="status"></div>
     </details>
 
-    <details class="org-facet" data-facet="type" open>
-      <summary>Organisation type</summary>
-      <div class="org-facet-list org-facet-list--scroll" data-facet-list="type"></div>
+    <details class="org-facet-dd" data-facet="type">
+      <summary>Type <span class="org-facet-badge" data-facet-badge="type"></span></summary>
+      <div class="org-facet-panel org-facet-panel--scroll" data-facet-list="type"></div>
     </details>
 
-    <details class="org-facet" data-facet="country">
-      <summary>Country</summary>
-      <div class="org-facet-list org-facet-list--scroll" data-facet-list="country"></div>
+    <details class="org-facet-dd" data-facet="country">
+      <summary>Country <span class="org-facet-badge" data-facet-badge="country"></span></summary>
+      <div class="org-facet-panel org-facet-panel--scroll" data-facet-list="country"></div>
     </details>
 
-    <details class="org-facet" data-facet="concepts">
-      <summary>Concepts</summary>
-      <div class="org-facet-list org-facet-list--scroll" data-facet-list="concepts"></div>
+    <details class="org-facet-dd" data-facet="concepts">
+      <summary>Concepts <span class="org-facet-badge" data-facet-badge="concepts"></span></summary>
+      <div class="org-facet-panel org-facet-panel--scroll" data-facet-list="concepts"></div>
     </details>
-  </aside>
+  </div>
+
+  <div class="org-activity-filters" role="group" aria-label="Filter by recency">
+    <button class="org-activity-btn active" data-days="0">All time</button>
+    <button class="org-activity-btn" data-days="180">6 months</button>
+    <button class="org-activity-btn" data-days="365">1 year</button>
+    <button class="org-activity-btn" data-days="730">2 years</button>
+  </div>
+
+  <button type="button" id="org-clear-filters" class="org-clear-btn">Clear filters</button>
+</div>
 
   <div class="org-results">
     <div class="org-table-scroll">
@@ -132,7 +129,6 @@
       </p>
     </div>
   </div>
-</div>
 
 </div>
 <script>
@@ -275,6 +271,16 @@
     });
   }
 
+  function updateFacetBadges() {
+    facets.forEach(function (facet) {
+      var n = Object.keys(facet.checked).filter(function (k) { return facet.checked[k]; }).length;
+      var badge = document.querySelector('[data-facet-badge="' + facet.key + '"]');
+      if (!badge) return;
+      badge.textContent = n ? '(' + n + ')' : '';
+      badge.closest('.org-facet-dd').classList.toggle('org-facet-dd--active', n > 0);
+    });
+  }
+
   function applyFilters() {
     var visible = 0;
     rows().forEach(function (r) {
@@ -284,6 +290,7 @@
     });
     countEl.textContent = visible + ' organisation' + (visible !== 1 ? 's' : '');
     updateFacetCounts();
+    updateFacetBadges();
   }
 
   function applySort(col, asc) {
@@ -328,6 +335,21 @@
       renderFacet(f);
     });
     applyFilters();
+  });
+
+  // Dropdown facet panels: only one open at a time, and clicking outside closes them.
+  var facetDropdowns = Array.from(document.querySelectorAll('.org-facet-dd'));
+  facetDropdowns.forEach(function (dd) {
+    dd.addEventListener('toggle', function () {
+      if (dd.open) {
+        facetDropdowns.forEach(function (other) { if (other !== dd) other.open = false; });
+      }
+    });
+  });
+  document.addEventListener('click', function (e) {
+    if (!e.target.closest('.org-facet-dd')) {
+      facetDropdowns.forEach(function (dd) { dd.open = false; });
+    }
   });
 
   facets.forEach(renderFacet);

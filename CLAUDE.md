@@ -232,7 +232,7 @@ pushed direct to main — no PR — if they meet all of the following:
 
 ### Hooks
 
-- `hooks/org_template.py` — fires on `on_page_markdown`; sets `template: organisation.html` on any page under `organisations/` that doesn't already have a template. Registered in `mkdocs.yml` under `hooks:`.
+- `hooks/org_template.py` — fires on `on_page_markdown`; sets `template: organisation.html` on any page under `organisations/` that doesn't already have a template, and sets `hide: [navigation]` on every page in the section (index + all org pages) so Material's left sidebar doesn't render a nav tree of 100+ orgs — the section is reached via its top nav tab, and browsing within it uses the index page's own filterable/sortable table instead. Registered in `mkdocs.yml` under `hooks:`.
 - `hooks/activity_selector.py` — fires on `on_page_context`; reads `page.meta.activity` and resolves it to a single `page.meta.computed_activity` dict using priority order and per-source staleness thresholds. Used by `organisation.html` to render the "Last activity" row. See priority/staleness table in the Organisation pages section.
 - `hooks/data_export.py` — fires on `on_pre_build`; generates static data files under `docs/data/` from all org frontmatter. See Data exports section below.
 - `hooks/graph_builder.py` — fires on `on_page_context` and `on_post_build`; collects concept/org/project nodes and edges (from `concepts:` frontmatter and "See also" sections) into `graph.json`. Org/project nodes include `activity_date` (best date across all `activity:` sources) used by the graph UI to fade dormant nodes.
@@ -295,6 +295,15 @@ These are linked from the bottom of the org index table for researcher download.
   python util/scrape_news.py --update-rss     # write discovered RSS feed URLs to rss_feed: frontmatter
   python util/scrape_news.py --update-ics     # write discovered iCal feed URLs to ics_feed: frontmatter
   python util/scrape_news.py --force          # re-scrape even if checked recently or spa/bot_blocked
+  ```
+
+- `util/check_contact.py` — probes org websites for publicly-published email/phone contact info and optionally writes them to `contact:` frontmatter. **Interactive assist tool, not an automation target** — run it by hand and read the output; don't wire it into a heartbeat run or CI step. Comparison-testing it against org contact info already sourced by hand confirmed why: most straightforward sites matched exactly, but real disagreements were judgement calls a script can't make (which of several valid published addresses is the right one to record; whether a plain-text number without a `tel:` link is trustworthy; whether a nonstandard contact-page URL was missed vs. the info genuinely isn't published) — not parsing failures. Fetches the homepage plus common contact-page paths (`/contact`, `/about`, `/get-involved`, …), respecting robots.txt. Emails found via `mailto:` links, Cloudflare-obfuscated `data-cfemail` attributes, or plain `@domain.tld`-shaped text are all "high confidence" (the pattern is unambiguous either way). Phone numbers from `tel:` links are "high confidence"; phone-shaped digit sequences in plain text are "low confidence" and report-only — digit runs produce real false positives (dates, postcodes, prices) that `@domain.tld` text doesn't. Only high-confidence findings are written, and only with `--write` after reading the report; existing `contact.email`/`contact.phone` values are never overwritten unless `--force`. Prefers general addresses (`info@`, `contact@`, `hello@`, etc.) over personal-looking ones when multiple high-confidence emails are found on the same page. Review its findings the same way you'd review the manual sourcing described in the Organisation pages `contact:` convention above.
+  ```
+  python util/check_contact.py                 # report on active orgs missing contact info
+  python util/check_contact.py --all            # include inactive orgs
+  python util/check_contact.py --slug loomio    # single org
+  python util/check_contact.py --write          # write high-confidence findings to contact:
+  python util/check_contact.py --force          # re-check/overwrite orgs that already have contact info
   ```
 
 ### Org index table filters (`docs/overrides/organisations.html`)
