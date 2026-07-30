@@ -5,92 +5,135 @@
   'platform': '💻', 'civic tech': '💻',
   'practice': '🤝', 'philanthropy': '🤝', 'cooperative': '🤝',
   'party': '🗳️', 'movement': '🗳️',
-  'governance': '⚖️', 'government': '⚖️'
+  'governance': '⚖️', 'government': '⚖️',
+  'media': '📺'
 } %}
+{% block styles %}
+{{ super() }}
+<style>
+  /* Wide layout for the Democracy Landscape page only.
+     This page has no headings, so the secondary sidebar (table of
+     contents) is always empty — drop it and give that space to the
+     facet panel + table instead. */
+  .md-main__inner.md-grid { max-width: 1800px; }
+  .md-sidebar--secondary  { display: none !important; }
+  .md-content             { max-width: 100% !important; }
+</style>
+{% endblock %}
 {% block content %}
 {{ super() }}
 <div class="md-typeset">
 
-<div class="org-filter-bar">
-  <input type="search" id="org-search" placeholder="Search organisations…" class="org-search-input" aria-label="Search organisations">
-  <select id="org-type-filter" class="org-filter-select" aria-label="Filter by type">
-    <option value="">All types</option>
-  </select>
-  <select id="org-country-filter" class="org-filter-select" aria-label="Filter by country">
-    <option value="">All countries</option>
-  </select>
-  <select id="org-status-filter" class="org-filter-select" aria-label="Filter by status">
-    <option value="active">Active only</option>
-    <option value="">All statuses</option>
-    <option value="inactive">Inactive</option>
-    <option value="deregistered">Deregistered</option>
-  </select>
-  <span class="org-filter-label">Active within:</span>
-  <div class="org-activity-filters" role="group" aria-label="Filter by recency">
-    <button class="org-activity-btn active" data-days="0">All time</button>
-    <button class="org-activity-btn" data-days="180">6 months</button>
-    <button class="org-activity-btn" data-days="365">1 year</button>
-    <button class="org-activity-btn" data-days="730">2 years</button>
+<div class="org-layout">
+  <aside class="org-facets" aria-label="Filter organisations">
+    <div class="org-facet-search-row">
+      <input type="search" id="org-search" placeholder="Search organisations…" class="org-search-input" aria-label="Search organisations">
+      <button type="button" id="org-clear-filters" class="org-clear-btn">Clear filters</button>
+    </div>
+
+    <div class="org-facet-group">
+      <div class="org-facet-title">Active within</div>
+      <div class="org-activity-filters" role="group" aria-label="Filter by recency">
+        <button class="org-activity-btn active" data-days="0">All time</button>
+        <button class="org-activity-btn" data-days="180">6 months</button>
+        <button class="org-activity-btn" data-days="365">1 year</button>
+        <button class="org-activity-btn" data-days="730">2 years</button>
+      </div>
+    </div>
+
+    <details class="org-facet" data-facet="status" open>
+      <summary>Status</summary>
+      <div class="org-facet-list" data-facet-list="status"></div>
+    </details>
+
+    <details class="org-facet" data-facet="type" open>
+      <summary>Organisation type</summary>
+      <div class="org-facet-list org-facet-list--scroll" data-facet-list="type"></div>
+    </details>
+
+    <details class="org-facet" data-facet="country">
+      <summary>Country</summary>
+      <div class="org-facet-list org-facet-list--scroll" data-facet-list="country"></div>
+    </details>
+
+    <details class="org-facet" data-facet="concepts">
+      <summary>Concepts</summary>
+      <div class="org-facet-list org-facet-list--scroll" data-facet-list="concepts"></div>
+    </details>
+  </aside>
+
+  <div class="org-results">
+    <div class="org-table-scroll">
+    <table id="org-table" class="org-sortable-table">
+      <thead>
+        <tr>
+          <th class="sortable" data-col="0">Name <span class="sort-icon">↕</span></th>
+          <th class="sortable" data-col="1">Type <span class="sort-icon">↕</span></th>
+          <th class="sortable" data-col="2">Country <span class="sort-icon">↕</span></th>
+          <th class="sortable" data-col="3">Status <span class="sort-icon">↕</span></th>
+          <th class="sortable" data-col="4">Last active <span class="sort-icon">↕</span></th>
+          <th>Contact</th>
+          <th>Concepts</th>
+        </tr>
+      </thead>
+      <tbody>
+        {%- for file in pages %}
+          {%- if file.page and file.page.url and file.page.url.startswith('organisations/') and file.page.url != page.url %}
+          {%- set country = file.page.meta.get('country', '') %}
+          {%- set org_type = file.page.meta.get('type', '') %}
+          {%- set website = file.page.meta.get('website', '') %}
+          {%- set contact = file.page.meta.get('contact', {}) or {} %}
+          {%- set concepts = file.page.meta.get('concepts', []) or [] %}
+          {%- set slug = file.page.file.src_path | replace('organisations/', '') | replace('.md', '') %}
+          {%- set ca = org_activity_cache.get(slug) %}
+          {%- set ca_date = (ca.date | string) if ca else '' %}
+          {%- set ca_method = ca.method if ca else '' %}
+          <tr data-status="{{ file.page.meta.get('status', '') }}"
+              data-country="{{ country }}"
+              data-type="{{ org_type }}"
+              data-concepts="{{ concepts | join(',') }}"
+              data-activity="{{ ca_date }}">
+            <td>
+              <a href="/{{ file.page.url }}">{{ file.page.title }}</a>
+              {%- if website and not website.startswith('https://web.archive.org') %}
+              <a href="{{ website }}" class="org-ext-link" target="_blank" rel="noopener" title="{{ website }}">↗</a>
+              {%- endif %}
+            </td>
+            <td data-sort="{{ org_type }}">{{ type_icons.get(org_type, '🏛️') }} {{ org_type }}</td>
+            <td data-sort="{{ country }}">{{ country }}</td>
+            <td><span class="project-status-badge status-{{ file.page.meta.get('status', '') }}">{{ file.page.meta.get('status', '') }}</span></td>
+            <td data-sort="{{ ca_date }}">
+              {%- if ca_date %}
+              {{ ca_date }}<span class="activity-method-chip method-{{ ca_method }}">{{ ca_method }}</span>
+              {%- else %}—{%- endif %}
+            </td>
+            <td class="org-contact-cell">
+              {%- if contact.get('email') %}<a href="mailto:{{ contact.get('email') }}" class="org-contact-line">{{ contact.get('email') }}</a>{%- endif %}
+              {%- if contact.get('phone') %}<span class="org-contact-line">{{ contact.get('phone') }}</span>{%- endif %}
+              {%- if not contact.get('email') and not contact.get('phone') %}—{%- endif %}
+            </td>
+            <td>
+              {%- for c in concepts %}
+              <a href="/concepts/{{ c }}/" class="concept-tag">{{ c | replace('-', ' ') | title }}</a>
+              {%- endfor %}
+            </td>
+          </tr>
+          {%- endif %}
+        {%- endfor %}
+      </tbody>
+    </table>
+    </div>
+    <div class="org-table-footer">
+      <p id="org-count" class="org-count"></p>
+      <p class="org-export-links">Download full dataset:
+        <a href="/data/organisations.csv">CSV</a> ·
+        <a href="/data/organisations.json">JSON</a> ·
+        <a href="/data/organisations.geojson">GeoJSON</a>
+      </p>
+    </div>
   </div>
 </div>
 
-<table id="org-table" class="org-sortable-table">
-  <thead>
-    <tr>
-      <th class="sortable" data-col="0">Name <span class="sort-icon">↕</span></th>
-      <th class="sortable" data-col="1">Type <span class="sort-icon">↕</span></th>
-      <th class="sortable" data-col="2">Country <span class="sort-icon">↕</span></th>
-      <th class="sortable" data-col="3">Status <span class="sort-icon">↕</span></th>
-      <th class="sortable" data-col="4">Last active <span class="sort-icon">↕</span></th>
-      <th>Concepts</th>
-    </tr>
-  </thead>
-  <tbody>
-    {%- for file in pages %}
-      {%- if file.page and file.page.url and file.page.url.startswith('organisations/') and file.page.url != page.url %}
-      {%- set country = file.page.meta.get('country', '') %}
-      {%- set org_type = file.page.meta.get('type', '') %}
-      {%- set website = file.page.meta.get('website', '') %}
-      {%- set slug = file.page.file.src_path | replace('organisations/', '') | replace('.md', '') %}
-      {%- set ca = org_activity_cache.get(slug) %}
-      {%- set ca_date = (ca.date | string) if ca else '' %}
-      {%- set ca_method = ca.method if ca else '' %}
-      <tr data-status="{{ file.page.meta.get('status', '') }}"
-          data-country="{{ country }}"
-          data-type="{{ org_type }}"
-          data-activity="{{ ca_date }}">
-        <td>
-          <a href="/{{ file.page.url }}">{{ file.page.title }}</a>
-          {%- if website and not website.startswith('https://web.archive.org') %}
-          <a href="{{ website }}" class="org-ext-link" target="_blank" rel="noopener" title="{{ website }}">↗</a>
-          {%- endif %}
-        </td>
-        <td data-sort="{{ org_type }}">{{ type_icons.get(org_type, '🏛️') }} {{ org_type }}</td>
-        <td data-sort="{{ country }}">{{ country }}</td>
-        <td><span class="project-status-badge status-{{ file.page.meta.get('status', '') }}">{{ file.page.meta.get('status', '') }}</span></td>
-        <td data-sort="{{ ca_date }}">
-          {%- if ca_date %}
-          {{ ca_date }}<span class="activity-method-chip method-{{ ca_method }}">{{ ca_method }}</span>
-          {%- else %}—{%- endif %}
-        </td>
-        <td>
-          {%- for c in file.page.meta.get('concepts', []) %}
-          <a href="/concepts/{{ c }}/" class="concept-tag">{{ c | replace('-', ' ') | title }}</a>
-          {%- endfor %}
-        </td>
-      </tr>
-      {%- endif %}
-    {%- endfor %}
-  </tbody>
-</table>
-<div class="org-table-footer">
-  <p id="org-count" class="org-count"></p>
-  <p class="org-export-links">Download full dataset:
-    <a href="/data/organisations.csv">CSV</a> ·
-    <a href="/data/organisations.json">JSON</a> ·
-    <a href="/data/organisations.geojson">GeoJSON</a>
-  </p>
-</div>
 </div>
 <script>
 (function () {
@@ -100,38 +143,26 @@
     return String.fromCodePoint(code.toUpperCase().charCodeAt(0) + base) +
            String.fromCodePoint(code.toUpperCase().charCodeAt(1) + base);
   }
+  function titleCase(s) {
+    return s.replace(/-/g, ' ').replace(/\w\S*/g, function (t) {
+      return t.charAt(0).toUpperCase() + t.substr(1);
+    });
+  }
 
-  var table        = document.getElementById('org-table');
-  var tbody        = table.querySelector('tbody');
-  var headers      = Array.from(table.querySelectorAll('th.sortable'));
-  var search       = document.getElementById('org-search');
-  var typeSelect   = document.getElementById('org-type-filter');
-  var countrySelect = document.getElementById('org-country-filter');
-  var statusSelect = document.getElementById('org-status-filter');
+  var table   = document.getElementById('org-table');
+  var tbody   = table.querySelector('tbody');
+  var headers = Array.from(table.querySelectorAll('th.sortable'));
+  var search  = document.getElementById('org-search');
+  var countEl = document.getElementById('org-count');
+  var clearBtn = document.getElementById('org-clear-filters');
   var activityBtns = Array.from(document.querySelectorAll('.org-activity-btn'));
-  var countEl      = document.getElementById('org-count');
   var sortCol = -1, sortAsc = true;
   var activeDays = 0;
 
   function rows() { return Array.from(tbody.querySelectorAll('tr')); }
 
-  // Populate type and country dropdowns from row data
-  var types = [...new Set(rows().map(function(r){ return r.dataset.type; }).filter(Boolean))].sort();
-  types.forEach(function(t) {
-    var opt = document.createElement('option');
-    opt.value = t; opt.textContent = t;
-    typeSelect.appendChild(opt);
-  });
-
-  var countries = [...new Set(rows().map(function(r){ return r.dataset.country; }).filter(Boolean))].sort();
-  countries.forEach(function(c) {
-    var opt = document.createElement('option');
-    opt.value = c; opt.textContent = toFlag(c) + ' ' + c;
-    countrySelect.appendChild(opt);
-  });
-
   // Replace country code text with emoji flag + code in table cells
-  rows().forEach(function(r) {
+  rows().forEach(function (r) {
     var code = r.dataset.country;
     if (code && code.length === 2) {
       r.cells[2].textContent = toFlag(code) + ' ' + code;
@@ -144,40 +175,132 @@
     return (Date.now() - d.getTime()) / 86400000;
   }
 
+  // ── Faceted filters ──────────────────────────────────────────────────
+  // Each facet reads its raw value(s) off a row via `get`, which returns
+  // either a single string (type/country/status) or an array of strings
+  // (concepts, which are multi-valued per row).
+  var facets = [
+    { key: 'type',     list: document.querySelector('[data-facet-list="type"]'),     get: function (r) { return r.dataset.type; },   checked: {}, display: function (v) { return v; } },
+    { key: 'country',  list: document.querySelector('[data-facet-list="country"]'),  get: function (r) { return r.dataset.country; }, checked: {}, display: function (v) { return toFlag(v) + ' ' + v; } },
+    { key: 'status',   list: document.querySelector('[data-facet-list="status"]'),   get: function (r) { return r.dataset.status; },  checked: { active: true }, display: function (v) { return titleCase(v); } },
+    { key: 'concepts', list: document.querySelector('[data-facet-list="concepts"]'), get: function (r) { return r.dataset.concepts ? r.dataset.concepts.split(',').filter(Boolean) : []; }, checked: {}, display: function (v) { return titleCase(v); }, multiValued: true }
+  ];
+
+  function rowMatchesFacet(row, facet) {
+    var checkedValues = Object.keys(facet.checked).filter(function (v) { return facet.checked[v]; });
+    if (checkedValues.length === 0) return true; // nothing checked = no filter from this facet
+    var val = facet.get(row);
+    if (facet.multiValued) {
+      return val.some(function (v) { return facet.checked[v]; });
+    }
+    return !!facet.checked[val];
+  }
+
+  function rowMatchesOtherFacets(row, excludeKey) {
+    return facets.every(function (f) {
+      if (f.key === excludeKey) return true;
+      return rowMatchesFacet(row, f);
+    });
+  }
+
+  function rowMatchesSearchAndActivity(row) {
+    var q = search.value.toLowerCase();
+    var textOk = !q || row.textContent.toLowerCase().includes(q);
+    var activityOk = activeDays === 0 || daysSince(row.dataset.activity) <= activeDays;
+    return textOk && activityOk;
+  }
+
+  function rowVisible(row) {
+    return rowMatchesSearchAndActivity(row) && facets.every(function (f) { return rowMatchesFacet(row, f); });
+  }
+
+  function buildFacetOptionSet(facet) {
+    var values = {};
+    rows().forEach(function (r) {
+      var v = facet.get(r);
+      (facet.multiValued ? v : [v]).forEach(function (single) {
+        if (single) values[single] = true;
+      });
+    });
+    return Object.keys(values).sort();
+  }
+
+  function renderFacet(facet) {
+    var options = buildFacetOptionSet(facet);
+    facet.list.innerHTML = '';
+    options.forEach(function (value) {
+      var id = 'facet-' + facet.key + '-' + value.replace(/[^a-z0-9]+/gi, '-');
+      var label = document.createElement('label');
+      label.className = 'org-facet-option';
+      label.setAttribute('for', id);
+      var input = document.createElement('input');
+      input.type = 'checkbox';
+      input.id = id;
+      input.value = value;
+      input.checked = !!facet.checked[value];
+      input.addEventListener('change', function () {
+        facet.checked[value] = input.checked;
+        applyFilters();
+      });
+      var span = document.createElement('span');
+      span.className = 'org-facet-option-label';
+      span.textContent = facet.display(value);
+      var count = document.createElement('span');
+      count.className = 'org-facet-count';
+      count.dataset.facetKey = facet.key;
+      count.dataset.facetValue = value;
+      label.appendChild(input);
+      label.appendChild(span);
+      label.appendChild(count);
+      facet.list.appendChild(label);
+    });
+  }
+
+  function updateFacetCounts() {
+    facets.forEach(function (facet) {
+      var counts = {};
+      rows().forEach(function (r) {
+        if (!rowMatchesSearchAndActivity(r) || !rowMatchesOtherFacets(r, facet.key)) return;
+        var v = facet.get(r);
+        (facet.multiValued ? v : [v]).forEach(function (single) {
+          if (!single) return;
+          counts[single] = (counts[single] || 0) + 1;
+        });
+      });
+      facet.list.querySelectorAll('.org-facet-count').forEach(function (el) {
+        var n = counts[el.dataset.facetValue] || 0;
+        el.textContent = '(' + n + ')';
+        el.closest('.org-facet-option').classList.toggle('org-facet-option--empty', n === 0);
+      });
+    });
+  }
+
   function applyFilters() {
-    var q       = search.value.toLowerCase();
-    var type    = typeSelect.value;
-    var country = countrySelect.value;
-    var status  = statusSelect.value;
     var visible = 0;
-    rows().forEach(function(r) {
-      var textOk     = !q || r.textContent.toLowerCase().includes(q);
-      var typeOk     = !type    || r.dataset.type    === type;
-      var countryOk  = !country || r.dataset.country === country;
-      var statusOk   = !status  || r.dataset.status  === status;
-      var activityOk = activeDays === 0 || daysSince(r.dataset.activity) <= activeDays;
-      var show = textOk && typeOk && countryOk && statusOk && activityOk;
+    rows().forEach(function (r) {
+      var show = rowVisible(r);
       r.hidden = !show;
       if (show) visible++;
     });
     countEl.textContent = visible + ' organisation' + (visible !== 1 ? 's' : '');
+    updateFacetCounts();
   }
 
   function applySort(col, asc) {
-    var sorted = rows().sort(function(a, b) {
+    var sorted = rows().sort(function (a, b) {
       var av = (a.cells[col].dataset.sort || a.cells[col].textContent).trim().toLowerCase();
       var bv = (b.cells[col].dataset.sort || b.cells[col].textContent).trim().toLowerCase();
       return asc ? av.localeCompare(bv) : bv.localeCompare(av);
     });
-    sorted.forEach(function(r) { tbody.appendChild(r); });
+    sorted.forEach(function (r) { tbody.appendChild(r); });
   }
 
-  headers.forEach(function(th) {
-    th.addEventListener('click', function() {
+  headers.forEach(function (th) {
+    th.addEventListener('click', function () {
       var col = parseInt(th.dataset.col, 10);
       sortAsc = (sortCol === col) ? !sortAsc : true;
       sortCol = col;
-      headers.forEach(function(h) { h.querySelector('.sort-icon').textContent = '↕'; });
+      headers.forEach(function (h) { h.querySelector('.sort-icon').textContent = '↕'; });
       th.querySelector('.sort-icon').textContent = sortAsc ? '↑' : '↓';
       applySort(col, sortAsc);
     });
@@ -185,19 +308,29 @@
   });
 
   search.addEventListener('input', applyFilters);
-  typeSelect.addEventListener('change', applyFilters);
-  countrySelect.addEventListener('change', applyFilters);
-  statusSelect.addEventListener('change', applyFilters);
 
-  activityBtns.forEach(function(btn) {
-    btn.addEventListener('click', function() {
-      activityBtns.forEach(function(b) { b.classList.remove('active'); });
+  activityBtns.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      activityBtns.forEach(function (b) { b.classList.remove('active'); });
       btn.classList.add('active');
       activeDays = parseInt(btn.dataset.days, 10);
       applyFilters();
     });
   });
 
+  clearBtn.addEventListener('click', function () {
+    search.value = '';
+    activeDays = 0;
+    activityBtns.forEach(function (b) { b.classList.toggle('active', b.dataset.days === '0'); });
+    facets.forEach(function (f) {
+      Object.keys(f.checked).forEach(function (k) { delete f.checked[k]; });
+      if (f.key === 'status') f.checked.active = true;
+      renderFacet(f);
+    });
+    applyFilters();
+  });
+
+  facets.forEach(renderFacet);
   applyFilters();
 })();
 </script>
