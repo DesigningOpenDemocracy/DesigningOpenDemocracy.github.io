@@ -297,6 +297,15 @@ These are linked from the bottom of the org index table for researcher download.
   python util/scrape_news.py --force          # re-scrape even if checked recently or spa/bot_blocked
   ```
 
+- `util/check_contact.py` — probes org websites for publicly-published email/phone contact info and optionally writes them to `contact:` frontmatter. Fetches the homepage plus common contact-page paths (`/contact`, `/about`, `/get-involved`, …), respecting robots.txt. Emails found via `mailto:` links, Cloudflare-obfuscated `data-cfemail` attributes, or plain `@domain.tld`-shaped text are all "high confidence" (the pattern is unambiguous either way). Phone numbers from `tel:` links are "high confidence"; phone-shaped digit sequences in plain text are "low confidence" and report-only — digit runs produce real false positives (dates, postcodes, prices) that `@domain.tld` text doesn't. Only high-confidence findings are written, and only with `--write`; existing `contact.email`/`contact.phone` values are never overwritten unless `--force`. Prefers general addresses (`info@`, `contact@`, `hello@`, etc.) over personal-looking ones when multiple high-confidence emails are found on the same page. This is a starting point, not a substitute for judgement — it can't tell a general office line from a named individual's personal mobile, or distinguish a stale number from a current one, so review its findings the same way you'd review the manual sourcing described in the Organisation pages `contact:` convention above.
+  ```
+  python util/check_contact.py                 # report on active orgs missing contact info
+  python util/check_contact.py --all            # include inactive orgs
+  python util/check_contact.py --slug loomio    # single org
+  python util/check_contact.py --write          # write high-confidence findings to contact:
+  python util/check_contact.py --force          # re-check/overwrite orgs that already have contact info
+  ```
+
 ### Org index table filters (`docs/overrides/organisations.html`)
 
 The `/organisations/` index table has four combinable filters:
