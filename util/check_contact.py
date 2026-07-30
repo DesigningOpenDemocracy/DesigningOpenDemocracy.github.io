@@ -34,6 +34,12 @@ existing value, as something worth spot-checking in the resulting diff.
 
 For each org with a live website (non-Wayback), fetches the homepage and a
 handful of likely contact-page paths (/contact, /about, /get-involved, …).
+When multiple pages each publish a different email, the one on a page whose
+URL actually reads as the contact page wins (see page_tier()) — chosen after
+the whole crawl, not by "whichever page happened to be checked last."
+Earlier revisions picked whichever email was found on the last page fetched,
+which meant a stray footer address on a low-relevance page could silently
+outrank a real info@ address on the actual contact page.
 
 Only high-confidence findings (email, tel:, detected form) are written to
 contact: frontmatter, and only with --write (default is report-only).
@@ -95,7 +101,12 @@ CONTACT_PATHS = [
 MAILTO_RE = re.compile(r'mailto:([^"\'?\s<>]+)', re.IGNORECASE)
 TEL_RE = re.compile(r'tel:([^"\'\s<>]+)', re.IGNORECASE)
 CF_EMAIL_RE = re.compile(r'data-cfemail="([0-9a-fA-F]+)"')
-EMAIL_TEXT_RE = re.compile(r'\b[\w.+-]+@(?:[\w-]+\.)+[a-zA-Z]{2,}\b')
+# (?<!@) rejects Mastodon/Fediverse handles ("@user@instance.tld", commonly
+# shown in social-links widgets) — without it, the text following the
+# handle's leading @ sigil matches the local@domain shape perfectly and
+# reads as a real email (confirmed against oaf@social.oaf.org.au, actually
+# "@oaf@social.oaf.org.au" — a Mastodon handle in an org's social links list).
+EMAIL_TEXT_RE = re.compile(r'(?<!@)\b[\w.+-]+@(?:[\w-]+\.)+[a-zA-Z]{2,}\b')
 # Loose local/international phone shapes; digit-count filter in add_phone()
 # does most of the false-positive rejection (dates, postcodes, IDs, etc.)
 PHONE_TEXT_RE = re.compile(
@@ -229,6 +240,21 @@ def pick_best_phone(candidates):
     return pool[0]
 
 
+def page_tier(url):
+    """Rank a page's authority as an email source: lower is more authoritative.
+    A /contact-ish page publishing an address is a deliberate "reach us here"
+    statement; a homepage or /get-involved page might just have a stray
+    footer/copyright address that happens to match the regex. Used so a
+    later-crawled, lower-value page never silently outranks an earlier,
+    more authoritative one purely because it was fetched later."""
+    path = urlparse(url).path.lower()
+    if "contact" in path:
+        return 0
+    if "about" in path or "get-involved" in path:
+        return 1
+    return 2
+
+
 def robots_allowed(url, timeout=5, session=None):
     parsed = urlparse(url)
     robots_url = f"{parsed.scheme}://{parsed.netloc}/robots.txt"
@@ -244,9 +270,20 @@ def robots_allowed(url, timeout=5, session=None):
 
 def probe_contact(website, timeout=10, session=None):
     """Fetch the org's own page, the site homepage, and likely contact pages;
-    return the best email/phone found. The org's given website: URL is tried
-    first — it may already be a specific subpage (e.g. a university centre's
-    page) that generic /contact-style paths on the domain root would miss."""
+    return the best email/phone/form found. The org's given website: URL is
+    tried first — it may already be a specific subpage (e.g. a university
+    centre's page) that generic /contact-style paths on the domain root
+    would miss.
+
+    Email candidates are collected across every fetched page and only picked
+    at the end, ranked by page_tier() (contact page > about/get-involved page
+    > homepage) and then by the generic-address preference in
+    pick_best_email(). This deliberately avoids "last page crawled wins" —
+    with every extracted email treated as equally high-confidence, naively
+    overwriting on each new match would let a stray footer address on a
+    later-fetched, less relevant page silently outrank a real info@ found
+    earlier on the actual contact page.
+    """
     parsed = urlparse(website)
     root = f"{parsed.scheme}://{parsed.netloc}"
 
@@ -255,13 +292,14 @@ def probe_contact(website, timeout=10, session=None):
         if candidate not in urls:
             urls.append(candidate)
 
-    best_email, best_email_conf, email_source = None, None, None
+    email_candidates = {}  # addr.lower() -> {"addr", "tier", "url"} (best tier kept per address)
     best_phone, best_phone_conf, phone_source = None, None, None
     form_url = None
 
     for url in urls:
-        if best_email_conf == "high" and best_phone_conf == "high" and form_url:
-            break
+        best_email_tier = min((c["tier"] for c in email_candidates.values()), default=None)
+        if best_email_tier == 0 and best_phone_conf == "high" and form_url:
+            break  # already have a contact-page email, a tel: phone, and a form — nothing more to gain
         if not robots_allowed(url, timeout=timeout, session=session):
             continue
         try:
@@ -273,11 +311,12 @@ def probe_contact(website, timeout=10, session=None):
 
         html = r.text
         text = strip_tags(html)
+        tier = page_tier(url)
 
-        e, ec = pick_best_email(extract_emails(html, text))
-        if e and (best_email_conf != "high" or ec == "high") and e.lower() != (best_email or "").lower():
-            if best_email is None or ec == "high":
-                best_email, best_email_conf, email_source = e, ec, url
+        for addr, _conf in extract_emails(html, text):
+            key = addr.lower()
+            if key not in email_candidates or tier < email_candidates[key]["tier"]:
+                email_candidates[key] = {"addr": addr, "tier": tier, "url": url}
 
         p, pc = pick_best_phone(extract_phones(html, text))
         if p and (best_phone_conf != "high" or pc == "high"):
@@ -288,6 +327,14 @@ def probe_contact(website, timeout=10, session=None):
             form_url = url
 
         time.sleep(0.3)
+
+    best_email, best_email_conf, email_source = None, None, None
+    if email_candidates:
+        min_tier = min(c["tier"] for c in email_candidates.values())
+        pool = [c for c in email_candidates.values() if c["tier"] == min_tier]
+        chosen_addr, _ = pick_best_email([(c["addr"], "high") for c in pool])
+        chosen = next(c for c in pool if c["addr"] == chosen_addr)
+        best_email, best_email_conf, email_source = chosen["addr"], "high", chosen["url"]
 
     return {
         "email": best_email, "email_confidence": best_email_conf, "email_source": email_source,
