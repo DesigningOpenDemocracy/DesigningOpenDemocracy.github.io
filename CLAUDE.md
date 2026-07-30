@@ -66,11 +66,13 @@ The invariants recorded there are not immutable. Any document in this repo — i
   contact:
     email: info@example.org
     phone: "+61 2 xxxx xxxx"   # quote phone numbers — a leading + or 0 breaks unquoted YAML
+    form: https://example.org/contact      # public contact-form page, when there's no email to record
     source: https://example.org/contact    # page the info was found on
     checked: 2026-07-24                    # date it was last verified
   ```
   - Prefer general `info@` / `contact@` / `hello@` addresses over named individuals; only use a named person's address if it's the org's sole/designated general contact channel.
-  - Omit `email`/`phone` individually if not found — don't fabricate or guess. If nothing is publicly published, omit the whole `contact:` block rather than adding an empty one.
+  - `form:` is a fallback for orgs whose only public contact channel is a web form (no address published anywhere) — a link to that contact-form page. Not mutually exclusive with `email:`, but mainly useful when there's no email to record.
+  - Omit `email`/`phone`/`form` individually if not found — don't fabricate or guess. If nothing is publicly published, omit the whole `contact:` block rather than adding an empty one.
 - `activity:` — optional dict of evidence sources, each keyed by method name. The build hook
   (`hooks/activity_selector.py`) picks the best entry for display using a priority order and
   per-source staleness thresholds.
@@ -265,7 +267,7 @@ Generated at build time by `hooks/data_export.py`. Served as static assets:
 
 | File | Description |
 |---|---|
-| `/data/organisations.csv` | Flat table — all orgs, one row each. Includes `activity_date`, `activity_method`, `rss_feed`, `ics_feed`, `contact_email`, `contact_phone`. |
+| `/data/organisations.csv` | Flat table — all orgs, one row each. Includes `activity_date`, `activity_method`, `rss_feed`, `ics_feed`, `contact_email`, `contact_phone`, `contact_form`. |
 | `/data/organisations.json` | Structured JSON — concepts as arrays, full `activity` dict, computed `activity_date`/`activity_method`. |
 | `/data/organisations.geojson` | FeatureCollection — orgs with lat/lon only. |
 | `/data/organisations.kml` | KML — orgs with lat/lon, colour-coded by status. |
@@ -297,12 +299,12 @@ These are linked from the bottom of the org index table for researcher download.
   python util/scrape_news.py --force          # re-scrape even if checked recently or spa/bot_blocked
   ```
 
-- `util/check_contact.py` — probes org websites for publicly-published email/phone contact info and optionally writes them to `contact:` frontmatter. **Interactive assist tool, not an automation target** — run it by hand and read the output; don't wire it into a heartbeat run or CI step. Comparison-testing it against org contact info already sourced by hand confirmed why: most straightforward sites matched exactly, but real disagreements were judgement calls a script can't make (which of several valid published addresses is the right one to record; whether a plain-text number without a `tel:` link is trustworthy; whether a nonstandard contact-page URL was missed vs. the info genuinely isn't published) — not parsing failures. Fetches the homepage plus common contact-page paths (`/contact`, `/about`, `/get-involved`, …), respecting robots.txt. Emails found via `mailto:` links, Cloudflare-obfuscated `data-cfemail` attributes, or plain `@domain.tld`-shaped text are all "high confidence" (the pattern is unambiguous either way). Phone numbers from `tel:` links are "high confidence"; phone-shaped digit sequences in plain text are "low confidence" and report-only — digit runs produce real false positives (dates, postcodes, prices) that `@domain.tld` text doesn't. Only high-confidence findings are written, and only with `--write` after reading the report; existing `contact.email`/`contact.phone` values are never overwritten unless `--force`. Prefers general addresses (`info@`, `contact@`, `hello@`, etc.) over personal-looking ones when multiple high-confidence emails are found on the same page. Review its findings the same way you'd review the manual sourcing described in the Organisation pages `contact:` convention above.
+- `util/check_contact.py` — probes org websites for publicly-published email/phone/contact-form info and optionally writes them to `contact:` frontmatter. Fetches the homepage plus common contact-page paths (`/contact`, `/about`, `/get-involved`, …), respecting robots.txt. Two trust tiers: emails (`mailto:` links, Cloudflare-obfuscated `data-cfemail` attributes, or plain `@domain.tld`-shaped text) and detected public contact forms (a `<form>` with an email/message-shaped field, on a page whose URL reads as the contact page) are "high confidence" — **safe for `--write` to run unattended across the full org list**, since neither involves text-parsing guesswork. Phone numbers are the opposite: `tel:` links are high confidence, but phone-shaped digit sequences in plain text are "low confidence" and report-only, never auto-written — digit runs produce real false positives (dates, postcodes, prices) that `@domain.tld` text and `<form>` detection don't. Comparison-testing the email/tel: tier against org contact info already sourced by hand found it matched almost exactly; the disagreements were judgement calls (which of several valid published addresses is the right one to record — see the preference order in the Organisation pages `contact:` convention above) rather than parsing failures, so treat that choice, and any `--force` overwrite, as worth a spot-check in the resulting diff rather than blindly trusting every write. Existing `contact.email`/`contact.phone`/`contact.form` values are never overwritten unless `--force`.
   ```
   python util/check_contact.py                 # report on active orgs missing contact info
   python util/check_contact.py --all            # include inactive orgs
   python util/check_contact.py --slug loomio    # single org
-  python util/check_contact.py --write          # write high-confidence findings to contact:
+  python util/check_contact.py --write          # write high-confidence findings (email/tel:/form) to contact:
   python util/check_contact.py --force          # re-check/overwrite orgs that already have contact info
   ```
 

@@ -1,38 +1,44 @@
 #!/usr/bin/env python3
 """
-check_contact.py — Probe org websites for publicly-published email/phone contact info.
+check_contact.py — Probe org websites for publicly-published email/phone/contact-form info.
 
-INTERACTIVE ASSIST TOOL, NOT AN AUTOMATION TARGET. Run it by hand and read
-its output; do not wire it into a cron job, heartbeat run, or CI step that
-writes unattended. Even its "high confidence" findings are a starting point:
-a mailto:/tel: link tells you the org published *some* address, not that
-it's the *right* one to record when a site publishes several (a role inbox
-vs. a form-tool address, a privacy contact vs. a general one), and it can't
-weigh context a human catches at a glance (a named person's number vs. a
-general line, whether a nonstandard contact-page URL was missed vs. the
-info genuinely isn't published). Comparison-testing it against org contact
-info already sourced by hand confirmed this: most straightforward sites
-matched exactly, but real disagreements showed up on exactly these
-judgement calls, not on parsing failures. Use --write only after reading
-the report; never pipe straight through unattended.
+Two tiers of finding, two different trust levels:
+
+  - Email addresses (mailto: links, Cloudflare-obfuscated data-cfemail
+    attributes, plain @domain.tld-shaped text) and detected public contact
+    forms are "high confidence" and SAFE FOR --write TO RUN UNATTENDED
+    ACROSS THE FULL ORG LIST. An @domain.tld string is an unambiguous
+    pattern regardless of whether it's wrapped in a mailto: link, and a
+    contact-page <form> with an email/message field is unambiguously "this
+    org wants the public to reach them here" — there's no text-parsing
+    guesswork involved in either. A contact form is only recorded when
+    BOTH the page URL reads as a contact page AND the form itself has a
+    field that looks like an email/message/enquiry field (see
+    has_contact_form()) — a login form or newsletter widget elsewhere on
+    the site won't be mistaken for one.
+  - Phone numbers are the opposite: tel: links are high confidence, but
+    phone-shaped digit sequences in free text are NOT — digit runs produce
+    real false positives (dates, postcodes, prices; one comparison-testing
+    run against orgs already researched by hand turned up a "(212)
+    555-0110" placeholder number lifted from a JS snippet). Free-text phone
+    matches are report-only and never auto-written, full stop.
+
+Comparison-testing the email/tel: tier against org contact info already
+sourced by hand found it matched almost exactly; the few disagreements were
+judgement calls a script can't make on its own (which of several valid
+published addresses is the "right" one to record — see CLAUDE.md's contact:
+convention for the preference order) rather than parsing failures. So: run
+--write freely for the email/form tier at whatever scale you like, but treat
+its choice among several valid addresses, and any --force overwrite of an
+existing value, as something worth spot-checking in the resulting diff.
 
 For each org with a live website (non-Wayback), fetches the homepage and a
-handful of likely contact-page paths (/contact, /about, /get-involved, …)
-and extracts:
-  - email addresses from mailto: links, Cloudflare-obfuscated data-cfemail
-    attributes, and plain @domain.tld-shaped text (all high confidence — the
-    pattern itself is unambiguous, whether or not it's wrapped in a link)
-  - phone numbers from tel: links (high confidence) and phone-shaped digit
-    sequences in page text (low confidence — reported only, never
-    auto-written; digit runs produce real false positives: dates, postcodes,
-    prices)
+handful of likely contact-page paths (/contact, /about, /get-involved, …).
 
-Only high-confidence findings are written to contact: frontmatter, and only
-with --write (default is report-only). Existing contact.email/contact.phone
-values are never overwritten unless --force. This is a starting point, not
-a substitute for judgement — it can't tell a general office line from a
-named individual's personal mobile, or a stale number from a current one.
-Review what it finds before trusting it.
+Only high-confidence findings (email, tel:, detected form) are written to
+contact: frontmatter, and only with --write (default is report-only).
+Existing contact.email/contact.phone/contact.form values are never
+overwritten unless --force.
 
 Usage:
     python util/check_contact.py                 # report on active orgs missing contact info
@@ -99,6 +105,18 @@ PHONE_TEXT_RE = re.compile(
 GENERIC_EMAIL_PREFIXES = (
     "info@", "contact@", "hello@", "enquiries@", "enquiry@", "inquiries@",
     "admin@", "office@", "secretary@", "media@", "support@", "membership@",
+)
+
+# A <form> is only treated as a "public contact form" when it's on a page
+# whose own URL says it's the contact page (so a newsletter-signup widget
+# embedded on some unrelated page doesn't get picked up) AND the form itself
+# contains a field that looks like it's for a message/enquiry (so a search
+# box or login form on that page isn't mistaken for one either).
+CONTACT_PATH_HINT_RE = re.compile(r'contact', re.IGNORECASE)
+FORM_TAG_RE = re.compile(r'<form\b[^>]*>(.*?)</form>', re.IGNORECASE | re.DOTALL)
+CONTACT_FORM_FIELD_RE = re.compile(
+    r'type=["\']?email|name=["\']?(?:email|e-?mail|message|msg|subject|enquiry|inquiry)|<textarea',
+    re.IGNORECASE,
 )
 
 BAD_EMAIL_SUBSTRINGS = (
@@ -181,6 +199,17 @@ def extract_phones(html, text):
     return [(v["num"], v["conf"]) for v in seen.values()]
 
 
+def has_contact_form(url, html):
+    """True if url's path reads as a contact page AND it has a <form> with
+    an email/message-shaped field — not just any form on any page."""
+    if not CONTACT_PATH_HINT_RE.search(urlparse(url).path):
+        return False
+    for m in FORM_TAG_RE.finditer(html):
+        if CONTACT_FORM_FIELD_RE.search(m.group(1)):
+            return True
+    return False
+
+
 def pick_best_email(candidates):
     if not candidates:
         return None, None
@@ -228,9 +257,10 @@ def probe_contact(website, timeout=10, session=None):
 
     best_email, best_email_conf, email_source = None, None, None
     best_phone, best_phone_conf, phone_source = None, None, None
+    form_url = None
 
     for url in urls:
-        if best_email_conf == "high" and best_phone_conf == "high":
+        if best_email_conf == "high" and best_phone_conf == "high" and form_url:
             break
         if not robots_allowed(url, timeout=timeout, session=session):
             continue
@@ -254,17 +284,21 @@ def probe_contact(website, timeout=10, session=None):
             if best_phone is None or pc == "high":
                 best_phone, best_phone_conf, phone_source = p, pc, url
 
+        if form_url is None and has_contact_form(url, html):
+            form_url = url
+
         time.sleep(0.3)
 
     return {
         "email": best_email, "email_confidence": best_email_conf, "email_source": email_source,
         "phone": best_phone, "phone_confidence": best_phone_conf, "phone_source": phone_source,
+        "form": form_url,
     }
 
 
-def write_contact(path, email=None, phone=None, source=None, force=False):
+def write_contact(path, email=None, phone=None, form=None, source=None, force=False):
     """Write/update the contact: frontmatter block. Only overwrites existing
-    email/phone values when force=True. Returns True if the file changed."""
+    email/phone/form values when force=True. Returns True if the file changed."""
     import yaml as _yaml
 
     with open(path, encoding="utf-8") as f:
@@ -282,8 +316,12 @@ def write_contact(path, email=None, phone=None, source=None, force=False):
     new_phone = existing.get("phone")
     if phone and (force or not new_phone):
         new_phone = phone
+    new_form = existing.get("form")
+    if form and (force or not new_form):
+        new_form = form
 
-    if new_email == existing.get("email") and new_phone == existing.get("phone"):
+    if (new_email == existing.get("email") and new_phone == existing.get("phone")
+            and new_form == existing.get("form")):
         return False  # nothing changed
 
     block_lines = ["contact:"]
@@ -291,6 +329,8 @@ def write_contact(path, email=None, phone=None, source=None, force=False):
         block_lines.append(f"  email: {new_email}")
     if new_phone:
         block_lines.append(f'  phone: "{new_phone}"')
+    if new_form:
+        block_lines.append(f"  form: {new_form}")
     block_lines.append(f"  source: {source or existing.get('source', '')}")
     block_lines.append(f"  checked: {TODAY}")
 
@@ -376,8 +416,8 @@ def main():
     for i, org in enumerate(orgs, 1):
         slug = org["slug"]
         existing = org["contact"]
-        if not args.force and existing.get("email") and existing.get("phone"):
-            print(f"  [{i:3d}/{len(orgs)}] SKIP  {slug} (already has email + phone)")
+        if not args.force and existing.get("email"):
+            print(f"  [{i:3d}/{len(orgs)}] SKIP  {slug} (already has email)")
             continue
 
         print(f"  [{i:3d}/{len(orgs)}] {slug} … ", end="", flush=True)
@@ -391,14 +431,18 @@ def main():
         if found["phone"]:
             tag = "" if found["phone_confidence"] == "high" else " [low-confidence, verify manually]"
             parts.append(f"phone={found['phone']}{tag}")
+        if found["form"]:
+            parts.append(f"form={found['form']}")
         print("; ".join(parts) if parts else "nothing found")
 
         if args.write:
             write_email = found["email"] if found["email_confidence"] == "high" else None
             write_phone = found["phone"] if found["phone_confidence"] == "high" else None
-            source = found["email_source"] or found["phone_source"]
-            if (write_email or write_phone) and write_contact(
-                org["path"], email=write_email, phone=write_phone, source=source, force=args.force
+            write_form = found["form"]
+            source = found["email_source"] or found["phone_source"] or write_form
+            if (write_email or write_phone or write_form) and write_contact(
+                org["path"], email=write_email, phone=write_phone, form=write_form,
+                source=source, force=args.force
             ):
                 written += 1
                 print(f"           → wrote contact: block ({source})")
@@ -406,7 +450,8 @@ def main():
     print(f"\n{'=' * 60}")
     print(f"Checked {len(results)} org(s)")
     if args.write:
-        print(f"Wrote contact: block for {written} org(s) — only high-confidence (mailto:/tel:) findings are auto-written")
+        print(f"Wrote contact: block for {written} org(s) — only high-confidence email/tel: findings and "
+              f"detected public contact forms are auto-written; free-text phone matches never are")
     else:
         print("Report only — pass --write to save high-confidence findings to contact: frontmatter")
 

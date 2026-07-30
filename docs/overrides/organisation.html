@@ -46,13 +46,15 @@
         </td>
       </tr>
       {%- endif %}
-      {%- if page.meta.contact and (page.meta.contact.email or page.meta.contact.phone) %}
+      {%- if page.meta.contact and (page.meta.contact.email or page.meta.contact.phone or page.meta.contact.form) %}
       <tr>
         <th>Contact</th>
         <td>
           {%- if page.meta.contact.email %}<a href="mailto:{{ page.meta.contact.email }}">{{ page.meta.contact.email }}</a>{%- endif %}
           {%- if page.meta.contact.email and page.meta.contact.phone %}<br>{%- endif %}
           {%- if page.meta.contact.phone %}{{ page.meta.contact.phone }}{%- endif %}
+          {%- if page.meta.contact.form and (page.meta.contact.email or page.meta.contact.phone) %}<br>{%- endif %}
+          {%- if page.meta.contact.form %}<a href="{{ page.meta.contact.form }}" target="_blank" rel="noopener">Contact form ↗</a>{%- endif %}
         </td>
       </tr>
       {%- endif %}
