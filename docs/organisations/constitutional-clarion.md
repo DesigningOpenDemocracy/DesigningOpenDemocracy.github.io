@@ -22,15 +22,15 @@ Twomey was appointed an Officer of the Order of Australia in 2021 for ["distingu
 
 ## What it covers
 
-*Note on sourcing: YouTube's channel page isn't reliably fetchable by an automated tool, so the topic list below is not a direct audit of Constitutional Clarion's episodes. It is drawn from Twomey's documented academic focus — the subject matter the channel exists to translate for a general audience — per her [Wikipedia biography](https://en.wikipedia.org/wiki/Anne_Twomey_%28academic%29) and her [High Court of Australia public lecture, "The Unrecognised Reserve Powers"](https://www.hcourt.gov.au/assets/publications/speeches/lecture-series/Twomey_lecture.pdf). A human reviewer should confirm against actual episodes before treating the specific list as settled.*
+*Note on sourcing: YouTube's channel page isn't reliably fetchable by an automated tool, so most of the list below is inferred from Twomey's documented academic focus rather than a full episode audit. The first bullet is a direct citation — a transcript of the channel's most-viewed video, supplied by a DOD contributor, confirmed the eligibility/disqualification example below.*
 
-- The Governor-General's reserve powers and when (if ever) they can be used — the subject of her book *The Veiled Sceptre: Reserve Powers of Heads of State in Westminster Systems* (2018) and the lecture above
-- Constitutional conventions that aren't written down anywhere but govern how the system runs
-- How referendums work procedurally, and why most fail
-- Federalism — the division of power between the Commonwealth and the states
-- Commentary on live constitutional questions as they arise
+- **Eligibility and disqualification of parliamentarians** — the channel's most-viewed video (73,730 views), ["Is Senator Payman disqualified? Section 44 redux"](https://www.youtube.com/watch?v=dA4AtPmyEUc) (5 Jul 2024), walks through section 44(i)'s dual-citizenship bar, the "irremediable impediment" doctrine from *Sykes v Cleary* (1992) and *Re Gallagher* (2018), the section 45 casual-vacancy mechanism if disqualification arises mid-term, and the practical mechanics of how such a challenge would even reach the Court of Disputed Returns (the 40-day window after an election, or a Senate reference)
+- The Governor-General's reserve powers and when (if ever) they can be used — the subject of her book *The Veiled Sceptre: Reserve Powers of Heads of State in Westminster Systems* (2018) and her [High Court public lecture on the topic](https://www.hcourt.gov.au/assets/publications/speeches/lecture-series/Twomey_lecture.pdf) *(inferred from her scholarship, not a confirmed episode)*
+- Constitutional conventions that aren't written down anywhere but govern how the system runs *(inferred)*
+- How referendums work procedurally, and why most fail *(inferred)*
+- Federalism — the division of power between the Commonwealth and the states *(inferred)*
 
-This sits squarely in DOD's interest in accountability *mechanisms* — a citizenry that understands how reserve powers, conventions, and referendum thresholds work is better placed to recognise when those mechanisms are being tested or bypassed.
+This sits squarely in DOD's interest in accountability *mechanisms* — the Payman video is a working example: a citizenry that understands section 44/45 and the Court of Disputed Returns process is better placed to follow a live eligibility dispute instead of relying on partisan framing of it.
 
 ## Links
 
@@ -40,6 +40,7 @@ This sits squarely in DOD's interest in accountability *mechanisms* — a citize
 
 - [Anne Twomey (academic) — Wikipedia](https://en.wikipedia.org/wiki/Anne_Twomey_%28academic%29)
 - [Twomey, Anne. "The Unrecognised Reserve Powers" — High Court of Australia public lecture](https://www.hcourt.gov.au/assets/publications/speeches/lecture-series/Twomey_lecture.pdf)
+- ["Is Senator Payman disqualified? Section 44 redux" — Constitutional Clarion, 5 Jul 2024](https://www.youtube.com/watch?v=dA4AtPmyEUc) (transcript supplied by a DOD contributor)
 
 ## See also
 
