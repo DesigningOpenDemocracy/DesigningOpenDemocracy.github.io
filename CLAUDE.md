@@ -232,7 +232,7 @@ pushed direct to main — no PR — if they meet all of the following:
 
 ### Hooks
 
-- `hooks/org_template.py` — fires on `on_page_markdown`; sets `template: organisation.html` on any page under `organisations/` that doesn't already have a template. Registered in `mkdocs.yml` under `hooks:`.
+- `hooks/org_template.py` — fires on `on_page_markdown`; sets `template: organisation.html` on any page under `organisations/` that doesn't already have a template, and sets `hide: [navigation]` on every page in the section (index + all org pages) so Material's left sidebar doesn't render a nav tree of 100+ orgs — the section is reached via its top nav tab, and browsing within it uses the index page's own filterable/sortable table instead. Registered in `mkdocs.yml` under `hooks:`.
 - `hooks/activity_selector.py` — fires on `on_page_context`; reads `page.meta.activity` and resolves it to a single `page.meta.computed_activity` dict using priority order and per-source staleness thresholds. Used by `organisation.html` to render the "Last activity" row. See priority/staleness table in the Organisation pages section.
 - `hooks/data_export.py` — fires on `on_pre_build`; generates static data files under `docs/data/` from all org frontmatter. See Data exports section below.
 - `hooks/graph_builder.py` — fires on `on_page_context` and `on_post_build`; collects concept/org/project nodes and edges (from `concepts:` frontmatter and "See also" sections) into `graph.json`. Org/project nodes include `activity_date` (best date across all `activity:` sources) used by the graph UI to fade dormant nodes.
