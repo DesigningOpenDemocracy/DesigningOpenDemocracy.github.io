@@ -61,3 +61,4 @@ based on and in accordance with the state constitutions.
 - [Liberal Democracy](liberal-democracy.md)
 - [Representative Democracy](representative-democracy.md)
 - [Direct Democracy](direct-democracy.md)
+- [Constitutional Clarion](../organisations/constitutional-clarion.md)

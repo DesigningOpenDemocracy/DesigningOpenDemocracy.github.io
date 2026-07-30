@@ -36,3 +36,4 @@ RDs can function well as components of two governing systems:
 - [Constitutional Democracy](constitutional-democracy.md)
 - [Flux Party](../organisations/flux-party.md)
 - [None of the Above Party (Canada)](../organisations/nota-canada.md)
+- [Constitutional Clarion](../organisations/constitutional-clarion.md)
