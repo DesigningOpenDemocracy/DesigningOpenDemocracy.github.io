@@ -67,7 +67,7 @@ TODAY = datetime.today().strftime("%Y-%m-%d")
 
 # Likely contact-info paths, tried in order after the homepage.
 CONTACT_PATHS = [
-    "/contact", "/contact/", "/contact-us", "/contact-us/",
+    "/contact", "/contact/", "/contact-us", "/contact-us/", "/contactus",
     "/about", "/about/", "/about-us", "/about-us/",
     "/get-involved", "/get-involved/",
 ]
@@ -75,7 +75,7 @@ CONTACT_PATHS = [
 MAILTO_RE = re.compile(r'mailto:([^"\'?\s<>]+)', re.IGNORECASE)
 TEL_RE = re.compile(r'tel:([^"\'\s<>]+)', re.IGNORECASE)
 CF_EMAIL_RE = re.compile(r'data-cfemail="([0-9a-fA-F]+)"')
-EMAIL_TEXT_RE = re.compile(r'\b[\w.+-]+@[\w-]+\.[a-zA-Z]{2,}\b')
+EMAIL_TEXT_RE = re.compile(r'\b[\w.+-]+@(?:[\w-]+\.)+[a-zA-Z]{2,}\b')
 # Loose local/international phone shapes; digit-count filter in add_phone()
 # does most of the false-positive rejection (dates, postcodes, IDs, etc.)
 PHONE_TEXT_RE = re.compile(
