@@ -98,8 +98,13 @@ CONTACT_PATHS = [
     "/get-involved", "/get-involved/",
 ]
 
-MAILTO_RE = re.compile(r'mailto:([^"\'?\s<>]+)', re.IGNORECASE)
-TEL_RE = re.compile(r'tel:([^"\'\s<>]+)', re.IGNORECASE)
+# Anchored to href=["']mailto:/tel: specifically — not just the bare string
+# "mailto:"/"tel:" anywhere in the page. Confirmed necessary: an unscoped
+# `tel:` search matched into a minified-JS form-validation config object
+# that happened to have a property key named `tel` ({email:!1,tel:!1,
+# text:!1,...}), extracting a chunk of JS as a "phone number".
+MAILTO_RE = re.compile(r'href=["\']mailto:([^"\'?\s<>]+)', re.IGNORECASE)
+TEL_RE = re.compile(r'href=["\']tel:([^"\'\s<>]+)', re.IGNORECASE)
 CF_EMAIL_RE = re.compile(r'data-cfemail="([0-9a-fA-F]+)"')
 # (?<!@) rejects Mastodon/Fediverse handles ("@user@instance.tld", commonly
 # shown in social-links widgets) — without it, the text following the
@@ -107,6 +112,13 @@ CF_EMAIL_RE = re.compile(r'data-cfemail="([0-9a-fA-F]+)"')
 # reads as a real email (confirmed against oaf@social.oaf.org.au, actually
 # "@oaf@social.oaf.org.au" — a Mastodon handle in an org's social links list).
 EMAIL_TEXT_RE = re.compile(r'(?<!@)\b[\w.+-]+@(?:[\w-]+\.)+[a-zA-Z]{2,}\b')
+# Final sanity gate applied to every candidate regardless of which regex
+# found it — anchored, allowed-characters-only. Confirmed necessary: a
+# mailto: href inside an escaped JS string literal (mailto:foo@bar.org\')
+# was captured with a trailing backslash, since MAILTO_RE's capture group
+# excludes quotes but not backslash. Catches that class of leakage in
+# general rather than chasing each escape sequence individually.
+EMAIL_SHAPE_RE = re.compile(r'^[\w.+-]+@(?:[\w-]+\.)+[a-zA-Z]{2,}$')
 # Loose local/international phone shapes; digit-count filter in add_phone()
 # does most of the false-positive rejection (dates, postcodes, IDs, etc.)
 PHONE_TEXT_RE = re.compile(
@@ -169,7 +181,7 @@ def extract_emails(html, text):
 
     def add(addr):
         addr = addr.strip().strip(".,;")
-        if not addr or "@" not in addr:
+        if not addr or not EMAIL_SHAPE_RE.match(addr):
             return
         if any(bad in addr.lower() for bad in BAD_EMAIL_SUBSTRINGS):
             return
