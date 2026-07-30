@@ -445,7 +445,7 @@
     display: flex;
     flex-wrap: wrap;
     flex: 0 0 auto;
-    gap: 0.4rem;
+    gap: 0.6rem;
 }
 
 /* .md-typeset styles every <details> as a blue-bordered admonition box with
@@ -475,7 +475,10 @@
     user-select: none;
     white-space: nowrap;
     list-style: none;
-    background: transparent;
+    /* A border alone reads as merged between adjacent rounded pills at
+       normal viewing size — give each one an actual fill so it's
+       unambiguously a separate shape, not just outlined. */
+    background: rgba(128, 128, 128, 0.12) !important;
     color: var(--md-default-fg-color);
     /* Chromium gives flex items with non-visible overflow an automatic
        min-width of 0, which combined with the flex-shrink this <summary>
@@ -562,7 +565,7 @@
 .org-activity-filters {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.3rem;
+    gap: 0.5rem;
 }
 
 .org-activity-btn {
@@ -570,7 +573,7 @@
     border: 1px solid rgba(128, 128, 128, 0.65);
     border-radius: 14px;
     font-size: 0.82em;
-    background: transparent;
+    background: rgba(128, 128, 128, 0.12);
     color: var(--md-default-fg-color);
     cursor: pointer;
     white-space: nowrap;
