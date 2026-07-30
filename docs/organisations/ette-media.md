@@ -16,12 +16,13 @@ activity:
     checked: 2026-07-30
 ---
 
-ETTE Media is an independent Australian media company founded by journalists Jan Fran and Antoinette Lattouf. Unlike outlets that report the news, ETTE's focus is teaching audiences *how to read* the news — spotting spin, decoding headlines, and identifying who benefits from a given framing, in an environment of algorithmic distortion and declining trust in mainstream media.
+ETTE Media is an independent Australian media company founded by journalists Jan Fran and Antoinette Lattouf. Unlike outlets that report the news, ETTE's focus is teaching audiences *how to read* the news — spotting spin, decoding headlines, and identifying who benefits from a given framing, in an environment of algorithmic distortion and declining trust in mainstream media. In practice this plays out as an irreverent, conversational two-hander rather than a lecture — casual banter wrapped around genuine policy substance.
 
 Like [Constitutional Clarion](constitutional-clarion.md) and [Lamestream](lamestream.md), it is a small, founder-led operation rather than a formal institution — included here on the same basis: DOD's interest is in the accountability and literacy work being done, not the size of the entity doing it. Media literacy is a precondition for citizens being able to use accountability mechanisms at all — an electorate that can't tell coverage from spin can't meaningfully hold power to account through the press.
 
 ## What it covers
 
+- **Platform regulation and government mandates colliding with corporate compliance** — the channel's most-viewed video, ["Why PornHub blocked Australian users"](https://www.youtube.com/watch?v=7jVShSzYkZc) (11 Mar 2026, 15,772 views; transcript supplied by a DOD contributor), covers Aylo (Pornhub's parent company) blocking Australian users rather than complying with the government's new age-verification law — penalties of up to $49.5 million per breach — drawing the UK's earlier experience with the same law (a reported 77% traffic drop, a surge in VPN use to route around it, and Ofcom's assessment that compliance was nonetheless largely achieved) into a discussion of who should bear responsibility for keeping children off porn sites, and the privacy/surveillance trade-offs of age-verification schemes
 - Its flagship podcast, "We Used to be Journos," breaking down the week's news and how it was covered
 - Media ownership, editorial decisions, and the incentives behind them
 - Practical media-literacy skills for a fragmented, algorithm-driven information environment
@@ -34,6 +35,7 @@ Like [Constitutional Clarion](constitutional-clarion.md) and [Lamestream](lamest
 ## Sources
 
 - [About — ettemedia.com](https://www.ettemedia.com/about/)
+- ["Why PornHub blocked Australian users" — Ette Media, 11 Mar 2026](https://www.youtube.com/watch?v=7jVShSzYkZc) (transcript supplied by a DOD contributor)
 
 ## See also
 
