@@ -23,16 +23,17 @@ Twomey was appointed an Officer of the Order of Australia in 2021 for ["distingu
 
 ## What it covers
 
-*Note on sourcing: YouTube's channel page isn't reliably fetchable by an automated tool, so the last three bullets below are inferred from Twomey's documented academic focus rather than a full episode audit. The first two are direct citations — transcripts of the channel's two most-viewed videos, supplied by a DOD contributor.*
+*Note on sourcing: YouTube's channel page isn't reliably fetchable by an automated tool, so the last three bullets below are inferred from Twomey's documented academic focus rather than a full episode audit. The first three are direct citations — transcripts of the channel's three most-viewed videos, supplied by a DOD contributor.*
 
 - **Eligibility and disqualification of parliamentarians** — the channel's most-viewed video (73,730 views), ["Is Senator Payman disqualified? Section 44 redux"](https://www.youtube.com/watch?v=dA4AtPmyEUc) (5 Jul 2024), walks through section 44(i)'s dual-citizenship bar, the "irremediable impediment" doctrine from *Sykes v Cleary* (1992) and *Re Gallagher* (2018), the section 45 casual-vacancy mechanism if disqualification arises mid-term, and the practical mechanics of how such a challenge would even reach the Court of Disputed Returns (the 40-day window after an election, or a Senate reference)
 - **Debunking pseudo-legal misinformation about the state** — the channel's second most-viewed video (34,979 views), ["Is the Commonwealth of Australia a corporation?"](https://www.youtube.com/watch?v=agRzeNZ6OGc) (23 Jan 2025), directly rebuts a "sovereign citizen"-style claim circulating on social media that the Commonwealth is a privately-owned, for-profit US corporation. It walks through legal personality doctrine, the High Court's *Williams v Commonwealth* (2012) finding that legal personality sits with the Commonwealth as a polity, the *Queensland Rail* case, why SEC "foreign government" registration and having an ABN don't make a body a corporation, and quotes courts (*Williamson v Hodson*, 2010; *Cara v Shire of Mundaring*, 2016) rejecting these arguments as legally baseless and financially dangerous for the self-represented litigants who run them
+- **The parliamentary oath of allegiance** — the channel's third most-viewed video (34,214 views), ["Lidia's Oath — Swearing at or to the King"](https://www.youtube.com/watch?v=vrYmUH-14zU) (24 Oct 2024), uses Senator Lidia Thorpe's disputed oath (and later denunciation of the King) to explain section 42's oath requirement, the historical "test roll," and — the sharpest point — why Australia treats a defective or repudiated oath as a non-justiciable internal parliamentary matter, unlike the UK's Parliamentary Oaths Act 1866, which attaches real legal penalties and seat forfeiture; draws on 19th-century UK precedents involving Jewish and atheist MPs for contrast
 - The Governor-General's reserve powers and when (if ever) they can be used — the subject of her book *The Veiled Sceptre: Reserve Powers of Heads of State in Westminster Systems* (2018) and her [High Court public lecture on the topic](https://www.hcourt.gov.au/assets/publications/speeches/lecture-series/Twomey_lecture.pdf) *(inferred from her scholarship, not a confirmed episode)*
 - Constitutional conventions that aren't written down anywhere but govern how the system runs *(inferred)*
 - How referendums work procedurally, and why most fail *(inferred)*
 - Federalism — the division of power between the Commonwealth and the states *(inferred)*
 
-This sits squarely in DOD's interest in accountability *mechanisms* and in countering [tribal epistemology](../concepts/tribal-epistemology.md): a citizenry that understands section 44/45, the Court of Disputed Returns, and basic legal-personality doctrine is better placed to follow a live eligibility dispute — or spot pseudo-legal misinformation — than one relying on social-media framing of either.
+This sits squarely in DOD's interest in accountability *mechanisms* and in countering [tribal epistemology](../concepts/tribal-epistemology.md): a citizenry that understands section 42/44/45, the Court of Disputed Returns, and basic legal-personality doctrine is better placed to follow a live eligibility or conduct dispute — or spot pseudo-legal misinformation — than one relying on social-media framing of either.
 
 ## Links
 
@@ -44,6 +45,7 @@ This sits squarely in DOD's interest in accountability *mechanisms* and in count
 - [Twomey, Anne. "The Unrecognised Reserve Powers" — High Court of Australia public lecture](https://www.hcourt.gov.au/assets/publications/speeches/lecture-series/Twomey_lecture.pdf)
 - ["Is Senator Payman disqualified? Section 44 redux" — Constitutional Clarion, 5 Jul 2024](https://www.youtube.com/watch?v=dA4AtPmyEUc) (transcript supplied by a DOD contributor)
 - ["Is the Commonwealth of Australia a corporation?" — Constitutional Clarion, 23 Jan 2025](https://www.youtube.com/watch?v=agRzeNZ6OGc) (transcript supplied by a DOD contributor)
+- ["Lidia's Oath — Swearing at or to the King" — Constitutional Clarion, 24 Oct 2024](https://www.youtube.com/watch?v=vrYmUH-14zU) (transcript supplied by a DOD contributor)
 
 ## See also
 
