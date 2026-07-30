@@ -24,6 +24,7 @@ Like [Constitutional Clarion](constitutional-clarion.md), it is a small, persona
 
 Per its own [launch press release](https://podnews.net/press-release/lamestream-podcast), the show was pitched around questions like "What does collapsing trust in legacy media mean for Australian society? Why has the ABC abandoned everyone under 60?" and the global rise of Trumpism and the far-right as it plays out in Australian media coverage.
 
+- **Inequality and the global rise of the far right** — the channel's most-viewed video, ["Gary Stevenson on Australian house prices, the rise of the far-right and why the media don't get it"](https://www.youtube.com/watch?v=EFzzKCrwv2Y) (28 Sep 2025, 10,645 views; transcript supplied by a DOD contributor), interviews UK economist and YouTuber Gary Stevenson (*Gary's Economics*) on how growing wealth inequality — not immigration or culture-war framing alone — is the engine behind far-right electoral gains across the West, why house-price growth (Stevenson cites Australia's ~493% rise since 2000, against ~250% in the UK) transfers housing from the young to those who already own it, and why centrist and left-leaning parties and legacy outlets ceded the online media space to the far right rather than contesting it
 - Ownership consolidation and political interference in Australian newsrooms
 - Whether the ABC and commercial media are serving younger audiences
 - Whether independent journalists and influencers can substitute for declining legacy journalism capacity
@@ -38,6 +39,7 @@ Per its own [launch press release](https://podnews.net/press-release/lamestream-
 
 - [Award-winning journalists Osman Faruqi and Scott Mitchell launch new podcast — podnews.net press release](https://podnews.net/press-release/lamestream-podcast)
 - [Why Did Epstein Want to be on the Mongolia Board? Greed, Weapons and Israel — lamestream.com.au](https://www.lamestream.com.au/exclusive-how-israel-weapons-and-greed-drove-jeffrey-epsteins-mongolia-obsession/)
+- ["Gary Stevenson on Australian house prices, the rise of the far-right and why the media don't get it" — Lamestream, 28 Sep 2025](https://www.youtube.com/watch?v=EFzzKCrwv2Y) (transcript supplied by a DOD contributor)
 
 ## See also
 
