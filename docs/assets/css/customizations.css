@@ -570,6 +570,13 @@
     margin-top: 0.5rem;
 }
 
+.org-export-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.2rem;
+}
+
 .org-export-links {
     font-size: 0.82em;
     opacity: 0.65;
@@ -578,6 +585,23 @@
 
 .org-export-links a {
     opacity: 1;
+}
+
+.org-export-btn {
+    font: inherit;
+    font-size: 1em;
+    color: var(--md-typeset-a-color, var(--md-primary-fg-color));
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    text-decoration: none;
+    opacity: 1;
+}
+
+.org-export-btn:hover {
+    text-decoration: underline;
 }
 
 .org-ext-link {

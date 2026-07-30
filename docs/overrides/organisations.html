@@ -88,7 +88,8 @@
           {%- set ca = org_activity_cache.get(slug) %}
           {%- set ca_date = (ca.date | string) if ca else '' %}
           {%- set ca_method = ca.method if ca else '' %}
-          <tr data-status="{{ file.page.meta.get('status', '') }}"
+          <tr data-slug="{{ slug }}"
+              data-status="{{ file.page.meta.get('status', '') }}"
               data-country="{{ country }}"
               data-type="{{ org_type }}"
               data-concepts="{{ concepts | join(',') }}"
@@ -125,11 +126,18 @@
     </div>
     <div class="org-table-footer">
       <p id="org-count" class="org-count"></p>
-      <p class="org-export-links">Download full dataset:
-        <a href="/data/organisations.csv">CSV</a> ·
-        <a href="/data/organisations.json">JSON</a> ·
-        <a href="/data/organisations.geojson">GeoJSON</a>
-      </p>
+      <div class="org-export-block">
+        <p class="org-export-links">Download full dataset:
+          <a href="/data/organisations.csv">CSV</a> ·
+          <a href="/data/organisations.json">JSON</a> ·
+          <a href="/data/organisations.geojson">GeoJSON</a>
+        </p>
+        <p class="org-export-links">Export filtered results:
+          <button type="button" id="org-export-csv" class="org-export-btn">CSV</button> ·
+          <button type="button" id="org-export-json" class="org-export-btn">JSON</button> ·
+          <button type="button" id="org-export-geojson" class="org-export-btn">GeoJSON</button>
+        </p>
+      </div>
     </div>
   </div>
 </div>
@@ -146,6 +154,85 @@
   function titleCase(s) {
     return s.replace(/-/g, ' ').replace(/\w\S*/g, function (t) {
       return t.charAt(0).toUpperCase() + t.substr(1);
+    });
+  }
+
+  // ── Export-filtered (CSV / JSON / GeoJSON) ──────────────────────────
+  // Fetches the full, build-time-generated dataset once (lazily, cached),
+  // then filters it down to whichever orgs are currently visible in the
+  // table before generating a download — so the export stays full-fidelity
+  // (website, coordinates, full activity record, …) rather than just the
+  // handful of columns rendered in the table itself.
+  var CSV_FIELDS = ['slug', 'title', 'status', 'country', 'type', 'website',
+    'summary', 'concepts', 'latitude', 'longitude', 'location_name',
+    'rss_feed', 'ics_feed', 'contact_email', 'contact_phone',
+    'activity_date', 'activity_method', 'last_checked'];
+  var fullDatasetPromise = null;
+
+  function fetchFullDataset() {
+    if (!fullDatasetPromise) {
+      fullDatasetPromise = fetch('/data/organisations.json').then(function (r) { return r.json(); });
+    }
+    return fullDatasetPromise;
+  }
+
+  function downloadBlob(filename, mime, content) {
+    var blob = new Blob([content], { type: mime });
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement('a');
+    a.href = url;
+    a.download = filename;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    setTimeout(function () { URL.revokeObjectURL(url); }, 1000);
+  }
+
+  function csvEscape(v) {
+    v = (v === null || v === undefined) ? '' : String(v);
+    return /["\n,]/.test(v) ? '"' + v.replace(/"/g, '""') + '"' : v;
+  }
+
+  function recordToCsvRow(o) {
+    var flat = {
+      slug: o.slug, title: o.title, status: o.status, country: o.country,
+      type: o.type, website: o.website, summary: o.summary,
+      concepts: (o.concepts || []).join(','),
+      latitude: o.location ? o.location.latitude : '',
+      longitude: o.location ? o.location.longitude : '',
+      location_name: o.location ? o.location.name : '',
+      rss_feed: o.rss_feed, ics_feed: o.ics_feed,
+      contact_email: o.contact_email, contact_phone: o.contact_phone,
+      activity_date: o.activity_date, activity_method: o.activity_method,
+      last_checked: o.last_checked
+    };
+    return CSV_FIELDS.map(function (f) { return csvEscape(flat[f]); }).join(',');
+  }
+
+  function exportFiltered(format) {
+    fetchFullDataset().then(function (data) {
+      var visible = {};
+      rows().forEach(function (r) { if (!r.hidden) visible[r.dataset.slug] = true; });
+      var filtered = data.organisations.filter(function (o) { return visible[o.slug]; });
+      var now = new Date().toISOString();
+
+      if (format === 'csv') {
+        var lines = [CSV_FIELDS.join(',')];
+        filtered.forEach(function (o) { lines.push(recordToCsvRow(o)); });
+        downloadBlob('democracy-landscape-filtered.csv', 'text/csv', lines.join('\r\n'));
+      } else if (format === 'json') {
+        var out = { metadata: Object.assign({}, data.metadata, { generated_at: now, org_count: filtered.length }), organisations: filtered };
+        downloadBlob('democracy-landscape-filtered.json', 'application/json', JSON.stringify(out, null, 2));
+      } else if (format === 'geojson') {
+        var features = filtered.filter(function (o) { return o.location; }).map(function (o) {
+          var props = Object.assign({}, o);
+          delete props.location;
+          props.location_name = o.location.name;
+          return { type: 'Feature', geometry: { type: 'Point', coordinates: [o.location.longitude, o.location.latitude] }, properties: props };
+        });
+        var fc = { type: 'FeatureCollection', metadata: Object.assign({}, data.metadata, { generated_at: now, org_count: features.length }), features: features };
+        downloadBlob('democracy-landscape-filtered.geojson', 'application/geo+json', JSON.stringify(fc, null, 2));
+      }
     });
   }
 
@@ -329,6 +416,10 @@
     });
     applyFilters();
   });
+
+  document.getElementById('org-export-csv').addEventListener('click', function () { exportFiltered('csv'); });
+  document.getElementById('org-export-json').addEventListener('click', function () { exportFiltered('json'); });
+  document.getElementById('org-export-geojson').addEventListener('click', function () { exportFiltered('geojson'); });
 
   facets.forEach(renderFacet);
   applyFilters();
