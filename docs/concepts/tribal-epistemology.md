@@ -18,3 +18,4 @@ Discussed at the [2019 DOD session on trust](../blog/posts/2019-12-11-podcast.md
 - [Consensus Mapping](consensus-mapping.md)
 - [Lamestream](../organisations/lamestream.md)
 - [Ette Media](../organisations/ette-media.md)
+- [Constitutional Clarion](../organisations/constitutional-clarion.md)
