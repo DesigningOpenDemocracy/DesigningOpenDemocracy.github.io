@@ -2,6 +2,20 @@
 """
 check_contact.py — Probe org websites for publicly-published email/phone contact info.
 
+INTERACTIVE ASSIST TOOL, NOT AN AUTOMATION TARGET. Run it by hand and read
+its output; do not wire it into a cron job, heartbeat run, or CI step that
+writes unattended. Even its "high confidence" findings are a starting point:
+a mailto:/tel: link tells you the org published *some* address, not that
+it's the *right* one to record when a site publishes several (a role inbox
+vs. a form-tool address, a privacy contact vs. a general one), and it can't
+weigh context a human catches at a glance (a named person's number vs. a
+general line, whether a nonstandard contact-page URL was missed vs. the
+info genuinely isn't published). Comparison-testing it against org contact
+info already sourced by hand confirmed this: most straightforward sites
+matched exactly, but real disagreements showed up on exactly these
+judgement calls, not on parsing failures. Use --write only after reading
+the report; never pipe straight through unattended.
+
 For each org with a live website (non-Wayback), fetches the homepage and a
 handful of likely contact-page paths (/contact, /about, /get-involved, …)
 and extracts:
