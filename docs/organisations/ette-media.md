@@ -31,6 +31,10 @@ Like [Constitutional Clarion](constitutional-clarion.md) and [Lamestream](lamest
 - Website: [ettemedia.com](https://www.ettemedia.com/)
 - YouTube: [Ette Media](https://www.youtube.com/@Ettemedia)
 
+## Sources
+
+- [About — ettemedia.com](https://www.ettemedia.com/about/)
+
 ## See also
 
 - [Tribal Epistemology](../concepts/tribal-epistemology.md)
