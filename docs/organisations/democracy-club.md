@@ -4,6 +4,10 @@ type: civic-tech
 status: active
 country: GB
 website: https://democracyclub.org.uk
+contact:
+  email: hello@democracyclub.org.uk
+  source: https://democracyclub.org.uk/contact
+  checked: 2026-07-30
 rss_feed: https://democracyclub.org.uk/blog/feed/
 news_page: https://democracyclub.org.uk/blog/
 summary: "A UK civic tech nonprofit building free, open data infrastructure for elections — candidate databases, polling place finders, and ward boundary data used by the BBC, The Guardian, and local councils."

@@ -4,6 +4,10 @@ type: cooperative
 status: active
 country: AU
 website: https://earthworker.coop
+contact:
+  form: https://earthworker.coop/contact
+  source: https://earthworker.coop/contact
+  checked: 2026-07-30
 summary: "A Victorian network of worker-owned cooperatives focused on clean energy manufacturing and services — building a democratic economy as a response to both the ecological crisis and economic inequality."
 concepts:
   - worker-cooperatives

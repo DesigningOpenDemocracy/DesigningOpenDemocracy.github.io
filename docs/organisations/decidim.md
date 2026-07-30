@@ -4,6 +4,11 @@ type: platform
 status: active
 country: ES
 website: https://decidim.org
+contact:
+  email: hola@decidim.org
+  form: https://decidim.org/contact
+  source: https://decidim.org/contact
+  checked: 2026-07-30
 summary: "An open-source participatory democracy framework used by 400+ governments and organisations worldwide — citizen proposals, participatory budgeting, consultations, and collaborative legislation."
 concepts:
   - direct-democracy

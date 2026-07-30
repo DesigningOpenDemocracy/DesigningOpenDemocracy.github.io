@@ -4,6 +4,10 @@ type: civic tech
 status: active
 country: GB
 website: https://www.mysociety.org
+contact:
+  email: hello@mysociety.org
+  source: https://www.mysociety.org/contact
+  checked: 2026-07-30
 summary: "A UK civic technology charity that builds digital tools enabling citizens to hold governments accountable — including TheyWorkForYou, FixMyStreet, and WhatDoTheyKnow, deployed in over 40 countries."
 concepts:
   - e-government

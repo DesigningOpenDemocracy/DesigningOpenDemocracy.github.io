@@ -4,6 +4,10 @@ type: research
 status: active
 country: FR
 website: https://www.democratieouverte.org
+contact:
+  email: contact@democratieouverte.org
+  source: https://www.democratieouverte.org
+  checked: 2026-07-30
 summary: "A French non-partisan association with over 10 years of democratic innovation work — experimenting with participatory tools, advising public bodies, and convening the French democratic innovation network."
 concepts:
   - citizens-assembly

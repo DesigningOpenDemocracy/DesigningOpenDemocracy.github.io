@@ -4,6 +4,10 @@ type: platform
 status: active
 country: ES
 website: https://consuldemocracy.org
+contact:
+  email: info@consulfoundation.org
+  source: https://consuldemocracy.org/about
+  checked: 2026-07-30
 summary: "An open-source e-participation platform originally developed by Madrid City Council, now stewarded by an independent foundation and used by ~350 governments worldwide."
 concepts:
   - direct-democracy

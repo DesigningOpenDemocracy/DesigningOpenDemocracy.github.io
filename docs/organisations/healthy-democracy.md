@@ -4,6 +4,10 @@ type: practice
 status: active
 country: US
 website: https://healthydemocracy.org
+contact:
+  form: https://healthydemocracy.org/contact
+  source: https://healthydemocracy.org
+  checked: 2026-07-30
 summary: "A US non-profit that designs and runs Citizens' Initiative Reviews — structured deliberative processes where randomly selected citizens evaluate ballot measures and publish findings for the wider electorate."
 location:
   latitude: 45.5231

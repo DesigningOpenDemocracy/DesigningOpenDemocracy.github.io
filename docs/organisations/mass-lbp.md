@@ -4,6 +4,10 @@ type: practice
 status: active
 country: CA
 website: https://www.masslbp.com
+contact:
+  email: hello@masslbp.com
+  source: https://www.masslbp.com/about
+  checked: 2026-07-30
 summary: "A Canadian civic design firm specialising in citizens' assemblies, civic lotteries, and deliberative public engagement — with over 50 reference panels completed for governments and institutions across North America."
 concepts:
   - deliberative-democracy

@@ -4,6 +4,11 @@ type: advocacy
 status: active
 country: PS
 website: https://www.aman-palestine.org/en
+contact:
+  email: info@aman-palestine.org
+  form: https://www.aman-palestine.org/contact-us
+  source: https://www.aman-palestine.org/contact-us
+  checked: 2026-07-30
 summary: "Palestine's national anti-corruption and governance integrity coalition — established 2000, accredited as Transparency International's Palestinian chapter in 2006, producing integrity indices, corruption reports, and electoral integrity monitoring."
 location:
   latitude: 31.9026

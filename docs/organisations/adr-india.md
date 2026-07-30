@@ -4,6 +4,11 @@ type: advocacy
 status: active
 country: IN
 website: https://adrindia.org
+contact:
+  email: adr@adrindia.org
+  form: https://adrindia.org/contact
+  source: https://adrindia.org/contact-us
+  checked: 2026-07-30
 summary: "A New Delhi-based non-partisan nonprofit working on electoral and political reform in India since 1999 — best known for the Supreme Court litigation that compelled mandatory candidate disclosure of criminal, financial, and educational backgrounds."
 location:
   latitude: 28.5494

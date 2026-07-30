@@ -4,6 +4,10 @@ type: civic tech
 status: active
 country: AU
 website: https://www.openaustraliafoundation.org.au
+contact:
+  form: https://www.openaustraliafoundation.org.au/contact
+  source: https://www.openaustraliafoundation.org.au
+  checked: 2026-07-30
 summary: "An Australian civic technology charity building tools that help citizens understand and engage with their parliament and government."
 location:
   latitude: -33.8688

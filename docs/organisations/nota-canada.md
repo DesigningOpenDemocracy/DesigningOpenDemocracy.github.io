@@ -4,6 +4,11 @@ type: party
 status: active
 country: CA
 website: https://nota.ca
+contact:
+  email: info@nota.ca
+  form: https://nota.ca/contact
+  source: https://nota.ca/contact
+  checked: 2026-07-30
 summary: "A Canadian provincial party (Ontario) that elects independent MPPs not bound by party discipline — advocating the 3Rs of direct democracy: Referendum, Recall, and Responsible Government laws."
 location:
   latitude: 43.6532

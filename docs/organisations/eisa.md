@@ -4,6 +4,12 @@ type: research
 status: active
 country: ZA
 website: https://www.eisa.org
+contact:
+  email: info@eisa.org
+  phone: "+27113816000"
+  form: https://www.eisa.org/contact
+  source: https://www.eisa.org/contact
+  checked: 2026-07-30
 summary: "A Johannesburg-based independent non-profit supporting credible elections and strong democratic institutions across Africa — conducting election observation, technical assistance, and governance programming in 16+ African countries since 1996."
 location:
   latitude: -26.2041

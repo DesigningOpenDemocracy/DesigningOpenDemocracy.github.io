@@ -4,6 +4,11 @@ type: research
 status: active
 country: RW
 website: https://www.rgb.rw
+contact:
+  email: info@rgb.rw
+  form: https://www.rgb.rw/contact
+  source: https://www.rgb.rw/contact
+  checked: 2026-07-30
 news_page: https://www.rgb.rw/updates/news
 summary: "Rwanda's government body for governance research and oversight — publishing annual governance scorecards, studying decentralisation and citizen participation, and administering the Ubudehe community classification system. Included for its governance design research, not as an independent watchdog of the Kagame government."
 location:

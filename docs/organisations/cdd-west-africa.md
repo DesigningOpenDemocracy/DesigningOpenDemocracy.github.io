@@ -4,6 +4,10 @@ type: research
 status: active
 country: NG
 website: https://www.cddwestafrica.org
+contact:
+  email: cddabv@cddwestafrica.org
+  source: https://www.cddwestafrica.org/contact-us
+  checked: 2026-07-30
 news_page: https://www.cddwestafrica.org/blog/
 summary: "An Abuja-based independent research and advocacy organisation focused on democratic governance and human security in West Africa — founded in 1997 to support Nigeria's democratic transition, now a regional hub for policy analysis, electoral integrity, and civil society capacity-building."
 location:

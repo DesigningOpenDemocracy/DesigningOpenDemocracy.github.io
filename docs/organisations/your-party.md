@@ -4,6 +4,10 @@ type: party
 status: active
 country: GB
 website: https://www.yourparty.uk
+contact:
+  email: herewego@yourparty.uk
+  source: https://www.yourparty.uk/about
+  checked: 2026-07-30
 summary: "A UK political party founded in 2025, notable for using sortition (via the Sortition Foundation) to select delegates to its founding conference — producing a statistically representative membership sample balanced by gender, region, age, ethnicity, and other characteristics."
 location:
   latitude: 51.5074

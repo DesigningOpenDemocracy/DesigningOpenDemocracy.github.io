@@ -4,6 +4,11 @@ type: advocacy
 status: active
 country: IL
 website: https://mqg.org.il/en
+contact:
+  email: mqg@mqg.org.il
+  form: https://mqg.org.il/contact
+  source: https://mqg.org.il/contact
+  checked: 2026-07-30
 summary: "Israel's main anti-corruption and rule-of-law watchdog — strategic litigation, Supreme Court petitions, and civic education since 1990. Has recovered billions in public funds and led legal challenges against the 2023 judicial overhaul."
 location:
   latitude: 32.0853

@@ -4,6 +4,10 @@ type: media
 status: active
 country: AU
 website: https://www.ettemedia.com/
+contact:
+  email: admin@ettemedia.com
+  source: https://www.ettemedia.com/contact
+  checked: 2026-07-30
 summary: "An independent Australian media-literacy outlet founded by journalists Jan Fran and Antoinette Lattouf, teaching audiences to spot spin, unpack headlines, and identify the commercial and political interests behind news coverage — via its podcast 'We Used to be Journos' and multi-platform content."
 contributors:
   - BrianKhuu

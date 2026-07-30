@@ -4,6 +4,10 @@ type: research
 status: active
 country: CN
 website: https://chinademocrats.org/en
+contact:
+  email: office@chinademocrat.org
+  source: https://chinademocrats.org/en
+  checked: 2026-07-30
 summary: "A diaspora research institute focused specifically on constitutional frameworks and transition planning for democratic governance in China — studying separation of powers, institutional design, and comparative lessons from democratic transitions elsewhere."
 location:
   latitude: 39.9042

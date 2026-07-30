@@ -4,6 +4,10 @@ type: party
 status: active
 country: AT
 website: https://www.gilt.at
+contact:
+  email: kontakt@gilt.at
+  source: https://www.gilt.at
+  checked: 2026-07-30
 summary: "An Austrian open democracy party founded by actor and political activist Roland Düringer, arguing that representative democracy as currently practised is broken and proposing citizen-led alternatives."
 location:
   latitude: 48.2082

@@ -4,6 +4,10 @@ type: governance
 status: active
 country: VN
 website: https://mattran.org.vn
+contact:
+  email: tapchimattrantoquoc@gmail.com
+  source: https://mattran.org.vn/contact/
+  checked: 2026-07-30
 summary: "Vietnam's constitutionally mandated consultative umbrella body — 50+ member organisations representing professional, religious, ethnic, and social groups — structurally analogous to China's CPPCC, operating under the Vietnamese Communist Party's single-party framework."
 location:
   latitude: 21.0285

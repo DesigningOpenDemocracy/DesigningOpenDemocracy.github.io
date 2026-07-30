@@ -4,6 +4,10 @@ type: advocacy
 status: active
 country: GB
 website: https://www.electoral-reform.org.uk
+contact:
+  email: ers@electoral-reform.org.uk
+  source: https://www.electoral-reform.org.uk/contact
+  checked: 2026-07-30
 rss_feed: https://www.electoral-reform.org.uk/feed/
 news_page: https://www.electoral-reform.org.uk/latest-news-and-research/blog/
 summary: "The UK's oldest and largest electoral reform organisation (founded 1884), campaigning for proportional representation, citizens' assemblies, and democratic renewal."

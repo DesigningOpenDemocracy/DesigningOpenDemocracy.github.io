@@ -4,6 +4,10 @@ type: media
 status: active
 country: AU
 website: https://www.lamestream.com.au/
+contact:
+  email: contact@lamestream.com.au
+  source: https://www.lamestream.com.au/about
+  checked: 2026-07-30
 summary: "An independent Australian podcast, newsletter, and YouTube show launched in 2025 by journalists Osman Faruqi and Scott Mitchell, examining the collapse of trust in Australian legacy media — ownership consolidation, political interference in newsrooms, and whether independent and influencer-driven media can fill the gap."
 contributors:
   - BrianKhuu

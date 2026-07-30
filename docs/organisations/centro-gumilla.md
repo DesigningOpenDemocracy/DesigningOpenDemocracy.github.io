@@ -4,6 +4,10 @@ type: research
 status: active
 country: VE
 website: https://gumilla.org
+contact:
+  email: comunicacionesgumilla@gmail.com
+  source: https://gumilla.org/contact
+  checked: 2026-07-30
 summary: "A Venezuelan Jesuit social research centre — independent, critically engaged with Bolivarian institutions, publishing on community council governance, political participation, and social policy since 1958. One of the few credible independent governance research bodies operating inside Venezuela."
 location:
   latitude: 10.4806
