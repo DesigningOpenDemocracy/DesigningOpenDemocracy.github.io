@@ -466,6 +466,14 @@
     display: flex;
     align-items: center;
     gap: 0.3rem;
+    /* Material's generic `.md-typeset summary` rule (not just typed
+       admonitions) sets `margin: 0 -.6rem` — a NEGATIVE side margin that
+       pulls each pill 9.6px into its neighbor on both sides. This silently
+       cancelled out every gap/fill change made so far, since a flex
+       container's `gap` doesn't stop a child's own negative margin from
+       overlapping the next child. This is the actual fix; the rest was
+       polish on top of a still-overlapping box. */
+    margin: 0 !important;
     padding: 0.35rem 0.7rem !important;
     border: 1px solid rgba(128, 128, 128, 0.65) !important;
     border-radius: 14px !important;
