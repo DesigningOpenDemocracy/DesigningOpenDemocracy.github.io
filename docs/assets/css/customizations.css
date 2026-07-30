@@ -395,42 +395,136 @@
 }
 
 /****************************************/
-/* Organisations index — filter bar + sortable table */
+/* Organisations index — facet sidebar + sortable table */
 
-.org-filter-bar {
+.org-layout {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 0.5rem 0.75rem;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.org-facets {
+    flex: 0 0 260px;
+    position: sticky;
+    top: 4.8rem;
+    max-height: calc(100vh - 6rem);
+    overflow-y: auto;
+    padding-right: 0.5rem;
+}
+
+.org-results {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+.org-facet-search-row {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
     margin-bottom: 1rem;
 }
 
 .org-search-input {
-    flex: 1 1 220px;
-    max-width: 320px;
+    width: 100%;
     padding: 0.4rem 0.75rem;
     border: 1px solid rgba(128, 128, 128, 0.4);
     border-radius: 6px;
     font-size: 0.9em;
     background: var(--md-default-bg-color);
     color: var(--md-default-fg-color);
+    box-sizing: border-box;
 }
 
-.org-filter-select {
-    flex: 0 1 160px;
-    padding: 0.4rem 0.6rem;
+.org-clear-btn {
+    align-self: flex-start;
+    padding: 0.25rem 0.6rem;
     border: 1px solid rgba(128, 128, 128, 0.4);
     border-radius: 6px;
-    font-size: 0.9em;
-    background: var(--md-default-bg-color);
+    font-size: 0.78em;
+    background: transparent;
     color: var(--md-default-fg-color);
     cursor: pointer;
+    opacity: 0.75;
 }
 
-.org-filter-label {
+.org-clear-btn:hover {
+    opacity: 1;
+    background: rgba(128, 128, 128, 0.12);
+}
+
+.org-facet-group {
+    margin-bottom: 1rem;
+}
+
+.org-facet-title {
+    font-size: 0.78em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    opacity: 0.65;
+    margin-bottom: 0.4rem;
+}
+
+.org-facet {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+    padding-bottom: 0.6rem;
+    margin-bottom: 0.6rem;
+}
+
+.org-facet > summary {
+    font-size: 0.78em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    opacity: 0.65;
+    cursor: pointer;
+    padding: 0.2rem 0;
+    user-select: none;
+}
+
+.org-facet-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    margin-top: 0.4rem;
+}
+
+.org-facet-list--scroll {
+    max-height: 220px;
+    overflow-y: auto;
+    padding-right: 0.25rem;
+}
+
+.org-facet-option {
+    display: flex;
+    align-items: baseline;
+    gap: 0.4rem;
     font-size: 0.85em;
-    opacity: 0.7;
+    cursor: pointer;
+    padding: 0.1rem 0;
+}
+
+.org-facet-option input[type="checkbox"] {
+    cursor: pointer;
+    flex: 0 0 auto;
+}
+
+.org-facet-option-label {
+    flex: 1 1 auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
     white-space: nowrap;
+}
+
+.org-facet-count {
+    flex: 0 0 auto;
+    font-size: 0.9em;
+    opacity: 0.55;
+}
+
+.org-facet-option--empty {
+    opacity: 0.4;
 }
 
 .org-activity-filters {
@@ -498,9 +592,20 @@
     opacity: 1;
 }
 
+.org-table-scroll {
+    overflow-x: auto;
+}
+
 .org-sortable-table {
     width: 100%;
+    min-width: 760px;
     border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.org-sortable-table td {
+    overflow-wrap: break-word;
+    vertical-align: top;
 }
 
 .org-sortable-table th {
@@ -512,12 +617,43 @@
     background: rgba(128, 128, 128, 0.08);
 }
 
-.org-sortable-table th:nth-child(1) { width: 38%; }
-.org-sortable-table th:nth-child(2) { width: 9%; }
-.org-sortable-table th:nth-child(3) { width: 9%; }
-.org-sortable-table th:nth-child(4) { width: 9%; }
-.org-sortable-table th:nth-child(5) { width: 14%; }
-.org-sortable-table th:nth-child(6) { width: 21%; }
+.org-sortable-table th:nth-child(1) { width: 24%; }
+.org-sortable-table th:nth-child(2) { width: 10%; }
+.org-sortable-table th:nth-child(3) { width: 8%; }
+.org-sortable-table th:nth-child(4) { width: 8%; }
+.org-sortable-table th:nth-child(5) { width: 12%; }
+.org-sortable-table th:nth-child(6) { width: 16%; }
+.org-sortable-table th:nth-child(7) { width: 22%; }
+
+.org-sortable-table td:nth-child(3) {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.org-contact-cell {
+    font-size: 0.85em;
+}
+
+.org-contact-line {
+    display: block;
+    word-break: break-all;
+}
+
+@media (max-width: 900px) {
+    .org-layout {
+        flex-direction: column;
+    }
+    .org-facets {
+        position: static;
+        max-height: none;
+        width: 100%;
+        flex: 1 1 auto;
+    }
+    .org-facet-list--scroll {
+        max-height: 160px;
+    }
+}
 
 .sort-icon {
     opacity: 0.45;
