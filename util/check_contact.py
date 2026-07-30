@@ -128,6 +128,10 @@ PHONE_TEXT_RE = re.compile(
 GENERIC_EMAIL_PREFIXES = (
     "info@", "contact@", "hello@", "enquiries@", "enquiry@", "inquiries@",
     "admin@", "office@", "secretary@", "media@", "support@", "membership@",
+    # non-English "hello"/"contact" equivalents — an org publishing e.g.
+    # "hola@" or "kontakt@" as its address is doing the same generic-address
+    # thing an English-language org does with "hello@"/"contact@"
+    "hola@", "hallo@", "bonjour@", "kontakt@", "contacto@", "kontact@",
 )
 
 # A <form> is only treated as a "public contact form" when it's on a page
