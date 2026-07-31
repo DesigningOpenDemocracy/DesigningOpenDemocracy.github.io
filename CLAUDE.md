@@ -308,6 +308,13 @@ These are linked from the bottom of the org index table for researcher download.
   python util/check_contact.py --force          # re-check/overwrite orgs that already have contact info
   ```
 
+- `util/check_contact_deep.py` — headless-browser (Playwright + Chromium) companion to `check_contact.py`, for orgs whose site is a client-side-rendered SPA (confirmed on vtaiwan.tw: every path served an identical near-empty `<div id="app"></div>` shell, invisible to a plain HTTP fetch regardless of what's actually published). Reuses `check_contact.py`'s crawl/extraction functions directly rather than duplicating them, so the two tools can't silently diverge on what counts as a match. Not in `util/requirements.txt`'s default install (`pip install playwright && playwright install chromium` — a real browser binary, not just a package) since most `check_contact.py` usage never needs it. **Unverified end-to-end as written** — see the docstring for why (a sandbox proxy issue blocked all headless-Chromium network access while ordinary HTTP clients worked fine); confirm it actually renders and extracts real content against a known SPA before trusting its output.
+  ```
+  python util/check_contact_deep.py --slug vtaiwan   # one org, deep-rendered (slow: full browser nav per URL)
+  python util/check_contact_deep.py --slug vtaiwan --write
+  python util/check_contact_deep.py                   # all active orgs missing contact.email (very slow)
+  ```
+
 ### Org index table filters (`docs/overrides/organisations.html`)
 
 The `/organisations/` index table has four combinable filters:

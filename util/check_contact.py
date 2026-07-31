@@ -284,29 +284,52 @@ def robots_allowed(url, timeout=5, session=None):
     return rp.can_fetch(DOD_USER_AGENT, url)
 
 
-def probe_contact(website, timeout=10, session=None):
-    """Fetch the org's own page, the site homepage, and likely contact pages;
-    return the best email/phone/form found. The org's given website: URL is
-    tried first — it may already be a specific subpage (e.g. a university
-    centre's page) that generic /contact-style paths on the domain root
-    would miss.
-
-    Email candidates are collected across every fetched page and only picked
-    at the end, ranked by page_tier() (contact page > about/get-involved page
-    > homepage) and then by the generic-address preference in
-    pick_best_email(). This deliberately avoids "last page crawled wins" —
-    with every extracted email treated as equally high-confidence, naively
-    overwriting on each new match would let a stray footer address on a
-    later-fetched, less relevant page silently outrank a real info@ found
-    earlier on the actual contact page.
-    """
+def crawl_urls(website):
+    """The ordered, deduped list of URLs a contact probe should try: the
+    org's own given website: URL first (it may already be a specific
+    subpage, e.g. a university centre's page, that generic /contact-style
+    paths on the domain root would miss), then the domain root, then each
+    of CONTACT_PATHS. Shared by check_contact.py and check_contact_deep.py
+    so the crawl strategy can't silently drift between the two."""
     parsed = urlparse(website)
     root = f"{parsed.scheme}://{parsed.netloc}"
-
     urls = []
     for candidate in [website, root + "/"] + [urljoin(root, p) for p in CONTACT_PATHS]:
         if candidate not in urls:
             urls.append(candidate)
+    return urls
+
+
+def choose_best_email(email_candidates):
+    """Given the {addr.lower(): {"addr","tier","url"}} map accumulated across
+    a crawl, pick the one to report: lowest tier (contact page > about page
+    > homepage) first, then the generic-address preference in
+    pick_best_email(). Returns (addr, confidence, source_url) or (None, None,
+    None). Split out so both check_contact.py and check_contact_deep.py make
+    this choice identically — deliberately avoids "last page crawled wins",
+    since with every extracted email treated as equally high-confidence,
+    naively overwriting on each new match would let a stray footer address
+    on a later-fetched, less relevant page silently outrank a real info@
+    found earlier on the actual contact page."""
+    if not email_candidates:
+        return None, None, None
+    min_tier = min(c["tier"] for c in email_candidates.values())
+    pool = [c for c in email_candidates.values() if c["tier"] == min_tier]
+    chosen_addr, _ = pick_best_email([(c["addr"], "high") for c in pool])
+    chosen = next(c for c in pool if c["addr"] == chosen_addr)
+    return chosen["addr"], "high", chosen["url"]
+
+
+def probe_contact(website, timeout=10, session=None):
+    """Fetch the org's own page, the site homepage, and likely contact pages
+    with a plain HTTP GET; return the best email/phone/form found. Only sees
+    what's in the raw server-rendered HTML — a JavaScript-rendered page (a
+    React/Vue/etc. single-page app with an empty <div id="app"> shell in the
+    static response) is invisible to this. check_contact_deep.py is the
+    companion tool for that case: same extraction logic, but driven by a
+    real (headless) browser so client-side-rendered content actually exists
+    by the time it scrapes."""
+    urls = crawl_urls(website)
 
     email_candidates = {}  # addr.lower() -> {"addr", "tier", "url"} (best tier kept per address)
     best_phone, best_phone_conf, phone_source = None, None, None
@@ -344,13 +367,7 @@ def probe_contact(website, timeout=10, session=None):
 
         time.sleep(0.3)
 
-    best_email, best_email_conf, email_source = None, None, None
-    if email_candidates:
-        min_tier = min(c["tier"] for c in email_candidates.values())
-        pool = [c for c in email_candidates.values() if c["tier"] == min_tier]
-        chosen_addr, _ = pick_best_email([(c["addr"], "high") for c in pool])
-        chosen = next(c for c in pool if c["addr"] == chosen_addr)
-        best_email, best_email_conf, email_source = chosen["addr"], "high", chosen["url"]
+    best_email, best_email_conf, email_source = choose_best_email(email_candidates)
 
     return {
         "email": best_email, "email_confidence": best_email_conf, "email_source": email_source,
