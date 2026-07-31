@@ -4,6 +4,10 @@ type: advocacy
 status: active
 country: AU
 website: http://accountabilityrt.org
+contact:
+  form: http://accountabilityrt.org/contact
+  source: http://accountabilityrt.org/contact
+  checked: 2026-07-30
 last_checked: "2026-06-02"
 summary: "A non-partisan Australian group of citizens — academics, lawyers, politicians, journalists — working to improve standards of accountability, transparency, and democratic integrity in Australian governments."
 location:

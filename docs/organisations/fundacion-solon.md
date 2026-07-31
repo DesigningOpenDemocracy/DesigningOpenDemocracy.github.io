@@ -4,6 +4,10 @@ type: research
 status: active
 country: BO
 website: https://fundacionsolon.org
+contact:
+  email: info@fundacionsolon.org
+  source: https://fundacionsolon.org/contact
+  checked: 2026-07-30
 summary: "A Bolivian research foundation led by Pablo Solón — former government minister and UN ambassador under Morales — developing Vivir Bien (Buen Vivir) as a substantive governance theory, and studying how plurinational constitutional design functions in practice."
 location:
   latitude: -16.5000

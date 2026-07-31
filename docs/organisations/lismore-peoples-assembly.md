@@ -4,6 +4,10 @@ type: practice
 status: active
 country: AU
 website: https://reclaim.org.au/lpa-home/
+contact:
+  form: https://reclaim.org.au/contact
+  source: https://reclaim.org.au/contact
+  checked: 2026-07-30
 summary: "A grassroots deliberative assembly in Lismore, NSW, set up in the aftermath of the 2022 floods to give residents a direct voice in decisions shaping the city's future."
 concepts:
   - citizens-assembly

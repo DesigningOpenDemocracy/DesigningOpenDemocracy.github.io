@@ -4,6 +4,10 @@ type: platform
 status: active
 country: KE
 website: https://www.ushahidi.com
+contact:
+  form: https://www.ushahidi.com/contact
+  source: https://www.ushahidi.com/contact
+  checked: 2026-07-30
 news_page: https://www.ushahidi.com/about/blog
 summary: "A Kenyan-founded nonprofit (2008) that builds open-source crowdsourcing and crisis-mapping tools — originally created to map post-election violence in Kenya, now used for election monitoring, human rights documentation, and civic reporting worldwide."
 concepts:

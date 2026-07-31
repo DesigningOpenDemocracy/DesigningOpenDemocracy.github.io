@@ -4,6 +4,11 @@ type: platform
 status: active
 country: AU
 website: https://newvote.org
+contact:
+  email: hello@newvote.org
+  form: https://newvote.org/contact
+  source: https://newvote.org/contactus
+  checked: 2026-07-30
 summary: "An Australian civic technology institute combining direct, deliberative, and representative democracy — empowering people on specific issues and surfacing the informed 'will of the people' to elected governments."
 location:
   latitude: -27.4698

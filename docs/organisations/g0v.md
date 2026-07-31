@@ -4,6 +4,10 @@ type: civic tech
 status: active
 country: TW
 website: https://g0v.tw
+contact:
+  email: g0v-talks@googlegroups.com
+  source: https://g0v.tw/contact
+  checked: 2026-07-30
 news_page: https://g0v.tw/intl/en/event/
 ics_feed: https://calendar.google.com/calendar/ical/cpcf6iv5pt9l6gl2ue3svo63e8%40group.calendar.google.com/public/basic.ics
 last_checked: "2026-05-30"

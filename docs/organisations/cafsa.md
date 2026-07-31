@@ -4,6 +4,10 @@ type: advocacy
 status: active
 country: AU
 website: https://cafsa.org.au
+contact:
+  form: https://cafsa.org.au/contact
+  source: https://cafsa.org.au/contact
+  checked: 2026-07-30
 summary: "An Adelaide-based incorporated association advocating for the use of citizens' assemblies in South Australian policy-making, with a cross-partisan advisory board including a former SA Premier, a former Liberal Senator, and the executive director of newDemocracy."
 location:
   latitude: -34.9285

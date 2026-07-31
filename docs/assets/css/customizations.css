@@ -945,6 +945,7 @@
   text-transform: uppercase;
   letter-spacing: 0.04em;
   vertical-align: middle;
+  margin-left: 0.4em;
 }
 .method-rss      { background: #fff3e0; color: #e65100; }
 .method-ical     { background: #e1f5fe; color: #01579b; }

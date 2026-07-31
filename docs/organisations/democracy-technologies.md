@@ -4,6 +4,10 @@ type: research
 status: active
 country: AT
 website: https://democracy-technologies.org
+contact:
+  email: contact@democracy-technologies.org
+  source: https://democracy-technologies.org/about
+  checked: 2026-07-30
 summary: "A curated database and research initiative mapping the global landscape of democratic innovation tools — tracking 200+ platforms across participatory, deliberative, and digital democracy."
 concepts:
   - deliberative-democracy

@@ -4,6 +4,10 @@ type: research
 status: active
 country: EU
 website: https://www.demnext.org
+contact:
+  email: hello@demnext.org
+  source: https://www.demnext.org/contact
+  checked: 2026-07-30
 news_page: https://www.demnext.org/news
 summary: "An international research institute focused on the theory and practice of sortition-based democracy — replacing elections with randomly selected assemblies as the primary decision-making mechanism."
 location:

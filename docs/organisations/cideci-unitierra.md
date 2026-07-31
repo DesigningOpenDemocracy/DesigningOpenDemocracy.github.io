@@ -4,6 +4,10 @@ type: education
 status: active
 country: MX
 website: https://unitierra.org
+contact:
+  email: unitierraecuador@gmail.com
+  source: https://unitierra.org
+  checked: 2026-07-30
 summary: "An indigenous education and documentation centre in Chiapas, Mexico, aligned with the Zapatista autonomous communities — hosting the Zapatista 'Little Schools' and serving as a hub for research on the Juntas de Buen Gobierno governance model."
 location:
   latitude: 16.7370

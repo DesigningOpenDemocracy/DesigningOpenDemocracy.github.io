@@ -4,6 +4,10 @@ type: platform
 status: active
 country: EE
 website: https://citizenos.com
+contact:
+  email: info@citizenos.com
+  source: https://citizenos.com/contact
+  checked: 2026-07-30
 summary: "An Estonian open-source civic technology platform for collaborative decision-making, public consultations, and online petitions — deployed in 50+ countries, with binding e-ID vote support in Estonia."
 concepts:
   - direct-democracy

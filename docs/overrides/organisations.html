@@ -94,7 +94,8 @@
               data-name="{{ file.page.title }}"
               data-website="{{ website }}"
               data-email="{{ contact.get('email', '') }}"
-              data-phone="{{ contact.get('phone', '') }}">
+              data-phone="{{ contact.get('phone', '') }}"
+              data-form="{{ contact.get('form', '') }}">
             <td>
               <a href="/{{ file.page.url }}">{{ file.page.title }}</a>
               {%- if website and not website.startswith('https://web.archive.org') %}
@@ -112,7 +113,8 @@
             <td class="org-contact-cell">
               {%- if contact.get('email') %}<a href="mailto:{{ contact.get('email') }}" class="org-contact-line">{{ contact.get('email') }}</a>{%- endif %}
               {%- if contact.get('phone') %}<span class="org-contact-line">{{ contact.get('phone') }}</span>{%- endif %}
-              {%- if not contact.get('email') and not contact.get('phone') %}—{%- endif %}
+              {%- if contact.get('form') %}<a href="{{ contact.get('form') }}" class="org-contact-line" target="_blank" rel="noopener">Contact form ↗</a>{%- endif %}
+              {%- if not contact.get('email') and not contact.get('phone') and not contact.get('form') %}—{%- endif %}
             </td>
             <td>
               {%- for c in concepts %}
@@ -357,7 +359,7 @@
   var exportBtn = document.getElementById('org-export-filtered');
   exportBtn.addEventListener('click', function () {
     var header = ['Name', 'Type', 'Country', 'Status', 'Last active', 'Last active method',
-                   'Website', 'Contact email', 'Contact phone', 'Concepts'];
+                   'Website', 'Contact email', 'Contact phone', 'Contact form', 'Concepts'];
     var lines = [header.map(csvField).join(',')];
     rows().forEach(function (r) {
       if (r.hidden) return;
@@ -365,7 +367,7 @@
       var concepts = d.concepts ? d.concepts.split(',').filter(Boolean).join('; ') : '';
       lines.push([
         d.name, d.type, d.country, d.status, d.activity, d.activityMethod,
-        d.website, d.email, d.phone, concepts
+        d.website, d.email, d.phone, d.form, concepts
       ].map(csvField).join(','));
     });
     var blob = new Blob([lines.join('\r\n')], { type: 'text/csv;charset=utf-8;' });

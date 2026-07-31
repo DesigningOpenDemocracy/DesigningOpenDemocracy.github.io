@@ -4,6 +4,10 @@ type: party
 status: active
 country: CN
 website: https://www.mmzy.org.cn
+contact:
+  email: webmaster@mmzy.org.cn
+  source: https://www.mmzy.org.cn/contact
+  checked: 2026-07-30
 summary: "The largest of China's eight officially recognised 'democratic parties' — ~357,000 members, primarily intellectuals in education, science, and culture. Operates within the CPC-led multi-party cooperation system under 'bounded articulation': advisory on sectoral matters, structurally incapable of challenging CPC authority."
 location:
   latitude: 39.9042

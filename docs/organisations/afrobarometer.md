@@ -4,6 +4,11 @@ type: research
 status: active
 country: GH
 website: https://www.afrobarometer.org
+contact:
+  email: info@afrobarometer.org
+  form: https://www.afrobarometer.org/contact-us
+  source: https://www.afrobarometer.org/contact-us
+  checked: 2026-07-30
 summary: "A pan-African survey research network headquartered in Accra conducting nationally representative surveys on democracy, governance, and quality of life in 35+ African countries — data freely available since 1999."
 location:
   latitude: 5.6037

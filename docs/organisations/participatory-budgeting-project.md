@@ -4,6 +4,11 @@ type: practice
 status: active
 country: US
 website: https://www.participatorybudgeting.org
+contact:
+  email: info@participatorybudgeting.org
+  phone: "1347-652-1478"
+  source: https://www.participatorybudgeting.org/contact-us
+  checked: 2026-07-30
 summary: "A North American nonprofit that has pioneered the spread of participatory budgeting in the US and Canada — helping governments, schools, and institutions engage over 740,000 people in directly deciding how to spend public funds."
 concepts:
   - participatory-budgeting

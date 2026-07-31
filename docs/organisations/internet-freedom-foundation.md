@@ -4,6 +4,10 @@ type: advocacy
 status: active
 country: IN
 website: https://internetfreedom.in
+contact:
+  email: media@internetfreedom.in
+  source: https://internetfreedom.in/contact
+  checked: 2026-07-30
 summary: "A Delhi-based digital rights advocacy organisation defending civil liberties in Indian democracy — challenging internet shutdowns, surveillance, and data protection failures through litigation, policy engagement, and civic literacy since 2016."
 location:
   latitude: 28.5355

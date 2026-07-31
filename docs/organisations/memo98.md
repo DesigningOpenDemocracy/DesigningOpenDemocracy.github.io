@@ -4,6 +4,11 @@ type: research
 status: active
 country: SK
 website: https://memo98.sk
+contact:
+  email: memo98@memo98.sk
+  phone: "+421903581591"
+  source: https://memo98.sk/about-us
+  checked: 2026-07-30
 news_page: https://memo98.sk/articles/blog
 summary: "A Bratislava-based media monitoring and democratic civic engagement organisation with 25+ years of experience — monitoring media integrity during elections, researching disinformation, and supporting democratic consolidation in post-authoritarian contexts."
 location:

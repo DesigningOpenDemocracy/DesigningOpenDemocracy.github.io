@@ -4,6 +4,10 @@ type: civil-society
 status: active
 country: FR
 website: https://mieuxvoter.fr
+contact:
+  form: https://mieuxvoter.fr/contact
+  source: https://mieuxvoter.fr/contact
+  checked: 2026-07-30
 news_page: https://mieuxvoter.fr/presse
 summary: "A French association advocating for Majority Judgment voting — an alternative electoral method where voters grade each candidate rather than pick one, aimed at reducing strategic voting and better reflecting collective preferences."
 concepts:

@@ -4,6 +4,10 @@ type: advocacy
 status: active
 country: CN
 website: https://www.hkdc.us
+contact:
+  email: info@hkdc.us
+  source: https://www.hkdc.us/about
+  checked: 2026-07-30
 news_page: https://www.hkdc.us/news
 summary: "A Washington DC-based organisation advocating for the restoration of democratic governance in Hong Kong — specifically the election-based accountability system promised under One Country, Two Systems, which was effectively dismantled following the 2020 National Security Law."
 location:
