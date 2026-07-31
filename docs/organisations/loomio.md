@@ -4,6 +4,10 @@ type: platform
 status: active
 country: NZ
 website: https://www.loomio.com
+contact:
+  email: contact@loomio.org
+  source: https://www.loomio.com/contact
+  checked: 2026-08-01
 summary: "A New Zealand worker cooperative building open-source collaborative decision-making software — used by cooperatives, NGOs, and local governments to run structured discussions, proposals, and votes."
 concepts:
   - liquid-democracy

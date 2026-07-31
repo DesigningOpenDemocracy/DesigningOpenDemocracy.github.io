@@ -88,19 +88,25 @@ except ImportError:
     sys.exit(1)
 
 
-def probe_contact_deep(website, browser, nav_timeout_ms=20000, robots_session=None):
-    """Same crawl/extraction strategy as check_contact.probe_contact(), but
-    each URL is loaded in a real browser page instead of a plain GET, so
-    client-side-rendered content is present in page.content() by the time
-    it's scraped."""
+_STEALTH_UA = ("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
+                "(KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36")
+
+
+def probe_contact_deep(website, browser, nav_timeout_ms=20000, robots_session=None,
+                       stealth=False):
     urls = crawl_urls(website)
 
     email_candidates = {}
     best_phone, best_phone_conf, phone_source = None, None, None
     form_url = None
 
-    context = browser.new_context(user_agent=DOD_USER_AGENT)
+    ua = _STEALTH_UA if stealth else DOD_USER_AGENT
+    context = browser.new_context(user_agent=ua)
     page = context.new_page()
+    if stealth:
+        page.add_init_script(
+            "Object.defineProperty(navigator, 'webdriver', {get: () => undefined})"
+        )
 
     try:
         for url in urls:
@@ -155,17 +161,19 @@ def _empty_result():
             "phone": None, "phone_confidence": None, "phone_source": None,
             "form": None}
 
-def _launch_browser(p):
+def _launch_browser(p, stealth=False):
+    args = ["--disable-blink-features=AutomationControlled"] if stealth else []
     try:
-        return p.chromium.launch()
+        return p.chromium.launch(args=args)
     except Exception:
-        return p.chromium.launch(executable_path="/opt/pw-browsers/chromium")
+        return p.chromium.launch(args=args, executable_path="/opt/pw-browsers/chromium")
 
 def main():
     parser = argparse.ArgumentParser(description="Headless-browser deep probe for JS-rendered org sites")
     parser.add_argument("--all", action="store_true", help="Include inactive orgs (default: active only)")
     parser.add_argument("--slug", metavar="SLUG", help="Check a single org by slug")
     parser.add_argument("--timeout", type=int, default=20, metavar="N", help="Per-page navigation timeout in seconds (default: 20)")
+    parser.add_argument("--stealth", action="store_true", help="Use stealth browser (realistic Chrome UA, hide webdriver) to evade bot-blocking")
     parser.add_argument("--write", action="store_true", help="Write high-confidence findings to contact: frontmatter (default: report only)")
     parser.add_argument("--force", action="store_true", help="Re-check orgs that already have contact.email, and overwrite existing values")
     parser.add_argument("--output", metavar="FILE", help="Write JSON results to FILE")
@@ -182,7 +190,8 @@ def main():
     results = []
     written = 0
     crashed = 0
-    print(f"\nDeep-probing {len(orgs)} org website(s) with a headless browser "
+    mode = " (stealth)" if args.stealth else ""
+    print(f"\nDeep-probing {len(orgs)} org website(s) with a headless browser{mode} "
           f"(timeout={args.timeout}s/page — this is slow, be patient)…\n")
 
     for i, org in enumerate(orgs, 1):
@@ -201,12 +210,13 @@ def main():
             wall_timeout = args.timeout * len(urls) + 30
             signal.alarm(wall_timeout)
             with sync_playwright() as p:
-                browser = _launch_browser(p)
+                browser = _launch_browser(p, stealth=args.stealth)
                 try:
                     found = probe_contact_deep(
                         org["website"], browser,
                         nav_timeout_ms=args.timeout * 1000,
                         robots_session=robots_session,
+                        stealth=args.stealth,
                     )
                 finally:
                     try:

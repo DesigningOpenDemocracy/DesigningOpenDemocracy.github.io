@@ -4,6 +4,10 @@ type: civic tech
 status: active
 country: AU
 website: https://theyvoteforyou.org.au
+contact:
+  email: contact@theyvoteforyou.org.au
+  source: https://theyvoteforyou.org.au
+  checked: 2026-08-01
 summary: "Converts Australian parliamentary voting records into plain-English histories for every MP and Senator, run by the OpenAustralia Foundation."
 location:
   latitude: -33.8688

@@ -4,6 +4,10 @@ type: civic tech
 status: active
 country: IN
 website: https://www.janaagraha.org
+contact:
+  email: info@janaagraha.org
+  source: https://www.janaagraha.org/get-involved
+  checked: 2026-08-01
 summary: "A Bangalore-based organisation working on urban civic participation and local government reform in India — connecting citizens to municipal processes through ward-level engagement, civic technology, and the I Change My City platform since 2001."
 location:
   latitude: 12.9716
