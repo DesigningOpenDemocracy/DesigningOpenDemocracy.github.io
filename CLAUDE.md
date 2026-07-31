@@ -207,6 +207,17 @@ pushed direct to main — no PR — if they meet all of the following:
      findings; see HEARTBEAT.md Step 6 for what belongs here.
 5. Pushed straight to main, no PR — see Push permissions in `HEARTBEAT.md`.
 
+### Internal heartbeat (`internal-heartbeat/`)
+
+A private counterpart to the public heartbeat log, for research and draft
+editorial reasoning that isn't (yet, or ever) ready to be public — e.g.
+assessing whether a politically sensitive org (a political party, say)
+meets the accountability framework's bar for the Democracy Landscape. Lives
+outside `docs/`, so mkdocs never builds it — nothing there can accidentally
+reach the site, unlike a blog post relying on `draft: true` staying set.
+See `internal-heartbeat/README.md` for conventions and how an entry gets
+promoted to a real public post later, if it ever does.
+
 ### Concept pages (`docs/concepts/`)
 
 - These are **discovery aids** — brief orientations pointing to better sources, not authoritative explanations.
