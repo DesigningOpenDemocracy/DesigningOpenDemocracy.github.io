@@ -5,9 +5,10 @@ status: active
 country: AU
 website: https://www.democracyco.com.au
 contact:
+  email: emily@democracyco.com.au
   phone: "0421 098 355 (Emma Fletcher, co-founder) / 0427 834 062 (Emily Jenke, co-founder)"
-  source: https://www.democracyco.com.au
-  checked: 2026-07-24
+  source: https://www.democracyco.com.au/about
+  checked: 2026-08-01
 summary: "An Adelaide-based deliberative democracy facilitation practice co-founded by Emily Jenke and Emma Fletcher, designing and delivering citizens' juries and deliberative panels for government and industry across Australia and internationally."
 location:
   latitude: -34.9285

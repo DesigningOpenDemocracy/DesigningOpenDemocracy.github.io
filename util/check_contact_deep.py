@@ -57,6 +57,7 @@ Usage:
 
 import argparse
 import json
+import signal
 import sys
 
 # check_contact.py lives in this same directory (util/), which Python adds
@@ -67,6 +68,12 @@ from check_contact import (
     has_contact_form, page_tier, pick_best_phone, robots_allowed,
     strip_tags, write_contact, load_orgs,
 )
+
+class _DeepTimeout(Exception):
+    pass
+
+def _on_alarm(signum, frame):
+    raise _DeepTimeout
 
 try:
     import requests
@@ -103,13 +110,14 @@ def probe_contact_deep(website, browser, nav_timeout_ms=20000, robots_session=No
             if not robots_allowed(url, timeout=10, session=robots_session):
                 continue
             try:
-                resp = page.goto(url, timeout=nav_timeout_ms, wait_until="networkidle")
+                resp = page.goto(url, timeout=nav_timeout_ms, wait_until="domcontentloaded")
                 if resp is None or resp.status != 200:
                     continue
+                try:
+                    page.wait_for_load_state("networkidle", timeout=max(5000, nav_timeout_ms // 2))
+                except PlaywrightTimeoutError:
+                    pass
             except PlaywrightTimeoutError:
-                # networkidle never fires on some sites (persistent polling,
-                # analytics beacons, chat widgets) — use whatever rendered
-                # rather than giving up on an otherwise-successful load
                 pass
             except Exception:
                 continue
@@ -142,6 +150,17 @@ def probe_contact_deep(website, browser, nav_timeout_ms=20000, robots_session=No
     }
 
 
+def _empty_result():
+    return {"email": None, "email_confidence": None, "email_source": None,
+            "phone": None, "phone_confidence": None, "phone_source": None,
+            "form": None}
+
+def _launch_browser(p):
+    try:
+        return p.chromium.launch()
+    except Exception:
+        return p.chromium.launch(executable_path="/opt/pw-browsers/chromium")
+
 def main():
     parser = argparse.ArgumentParser(description="Headless-browser deep probe for JS-rendered org sites")
     parser.add_argument("--all", action="store_true", help="Include inactive orgs (default: active only)")
@@ -162,61 +181,74 @@ def main():
 
     results = []
     written = 0
+    crashed = 0
     print(f"\nDeep-probing {len(orgs)} org website(s) with a headless browser "
           f"(timeout={args.timeout}s/page — this is slow, be patient)…\n")
 
-    with sync_playwright() as p:
-        # /opt/pw-browsers/chromium is this environment's preinstalled
-        # browser (a stable symlink, unlike the versioned directories next
-        # to it). A pip-installed Playwright's default launch() tries to
-        # match its own bundled browser revision, which won't exist here —
-        # fall back to that path if the default launch fails.
+    for i, org in enumerate(orgs, 1):
+        slug = org["slug"]
+        existing = org["contact"]
+        if not args.force and existing.get("email"):
+            print(f"  [{i:3d}/{len(orgs)}] SKIP  {slug} (already has email)")
+            continue
+
+        print(f"  [{i:3d}/{len(orgs)}] {slug} … ", end="", flush=True)
+
+        found = _empty_result()
+        signal.signal(signal.SIGALRM, _on_alarm)
         try:
-            browser = p.chromium.launch()
-        except Exception:
-            browser = p.chromium.launch(executable_path="/opt/pw-browsers/chromium")
-        try:
-            for i, org in enumerate(orgs, 1):
-                slug = org["slug"]
-                existing = org["contact"]
-                if not args.force and existing.get("email"):
-                    print(f"  [{i:3d}/{len(orgs)}] SKIP  {slug} (already has email)")
-                    continue
-
-                print(f"  [{i:3d}/{len(orgs)}] {slug} … ", end="", flush=True)
-                found = probe_contact_deep(
-                    org["website"], browser,
-                    nav_timeout_ms=args.timeout * 1000,
-                    robots_session=robots_session,
-                )
-                results.append({"slug": slug, **found})
-
-                parts = []
-                if found["email"]:
-                    parts.append(f"email={found['email']}")
-                if found["phone"]:
-                    tag = "" if found["phone_confidence"] == "high" else " [low-confidence, verify manually]"
-                    parts.append(f"phone={found['phone']}{tag}")
-                if found["form"]:
-                    parts.append(f"form={found['form']}")
-                print("; ".join(parts) if parts else "nothing found (may genuinely not be a SPA gap)")
-
-                if args.write:
-                    write_email = found["email"] if found["email_confidence"] == "high" else None
-                    write_phone = found["phone"] if found["phone_confidence"] == "high" else None
-                    write_form = found["form"]
-                    source = found["email_source"] or found["phone_source"] or write_form
-                    if (write_email or write_phone or write_form) and write_contact(
-                        org["path"], email=write_email, phone=write_phone, form=write_form,
-                        source=source, force=args.force
-                    ):
-                        written += 1
-                        print(f"           → wrote contact: block ({source})")
+            urls = crawl_urls(org["website"])
+            wall_timeout = args.timeout * len(urls) + 30
+            signal.alarm(wall_timeout)
+            with sync_playwright() as p:
+                browser = _launch_browser(p)
+                try:
+                    found = probe_contact_deep(
+                        org["website"], browser,
+                        nav_timeout_ms=args.timeout * 1000,
+                        robots_session=robots_session,
+                    )
+                finally:
+                    try:
+                        browser.close()
+                    except Exception:
+                        pass
+        except (_DeepTimeout, Exception) as e:
+            msg = "timed out" if isinstance(e, _DeepTimeout) else str(e)
+            print(f"ERROR ({msg}, skipping)")
+            crashed += 1
+            continue
         finally:
-            browser.close()
+            signal.alarm(0)
+
+        results.append({"slug": slug, **found})
+
+        parts = []
+        if found["email"]:
+            parts.append(f"email={found['email']}")
+        if found["phone"]:
+            tag = "" if found["phone_confidence"] == "high" else " [low-confidence, verify manually]"
+            parts.append(f"phone={found['phone']}{tag}")
+        if found["form"]:
+            parts.append(f"form={found['form']}")
+        print("; ".join(parts) if parts else "nothing found (may genuinely not be a SPA gap)")
+
+        if args.write:
+            write_email = found["email"] if found["email_confidence"] == "high" else None
+            write_phone = found["phone"] if found["phone_confidence"] == "high" else None
+            write_form = found["form"]
+            source = found["email_source"] or found["phone_source"] or write_form
+            if (write_email or write_phone or write_form) and write_contact(
+                org["path"], email=write_email, phone=write_phone, form=write_form,
+                source=source, force=args.force
+            ):
+                written += 1
+                print(f"           → wrote contact: block ({source})")
 
     print(f"\n{'=' * 60}")
     print(f"Checked {len(results)} org(s)")
+    if crashed:
+        print(f"{crashed} browser crash(es) — skipped; re-run to retry")
     if args.write:
         print(f"Wrote contact: block for {written} org(s)")
     else:

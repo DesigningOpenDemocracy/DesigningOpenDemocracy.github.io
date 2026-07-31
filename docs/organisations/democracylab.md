@@ -4,6 +4,10 @@ type: civic tech
 status: active
 country: US
 website: https://www.democracylab.org
+contact:
+  form: https://www.democracylab.org/contact
+  source: https://www.democracylab.org/contact
+  checked: 2026-08-01
 summary: "A Seattle-based non-profit connecting skilled volunteers with civic technology projects — an open matchmaking platform for the civic tech movement, with 7,000+ volunteers and 300+ projects supported."
 concepts:
   - e-government
