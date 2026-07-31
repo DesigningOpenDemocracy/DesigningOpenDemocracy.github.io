@@ -72,6 +72,7 @@ extra:
       name: Contribute on GitHub
 
 hooks:
+  - hooks/draft_exclude.py
   - hooks/org_template.py
   - hooks/graph_builder.py
   - hooks/llms_txt.py
