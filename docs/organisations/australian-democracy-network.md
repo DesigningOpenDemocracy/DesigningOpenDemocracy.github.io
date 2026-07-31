@@ -4,6 +4,11 @@ type: advocacy
 status: active
 country: AU
 website: https://australiandemocracy.org.au
+contact:
+  email: media@australiandemocracy.org.au
+  form: https://australiandemocracy.org.au/contact
+  source: https://australiandemocracy.org.au/contact
+  checked: 2026-08-01
 summary: "A coalition of 200+ Australian civil society organisations working for a fairer, more open, and more accountable democracy — focused on campaign finance reform, protecting civil society advocacy rights, protest rights, and countering disinformation."
 location:
   latitude: -37.8136
