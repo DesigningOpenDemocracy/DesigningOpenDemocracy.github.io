@@ -4,6 +4,10 @@ type: party
 status: active
 country: AU
 website: https://pirateparty.org.au
+contact:
+  email: media@pirateparty.org.au
+  source: https://pirateparty.org.au/contact
+  checked: 2026-08-01
 summary: "An Australian political party focused on digital rights, civil liberties, and democratic reform, including initiating the Electoral Royal Commission campaign to investigate Australian voting reform. Deregistered as an independent AEC-registered party in 2021 and now runs as a distinct internal grouping within the Fusion Party — retaining its own membership and infrastructure, with its members also counted as Fusion Party members for electoral registration."
 location:
   latitude: -33.8688

@@ -4,6 +4,11 @@ type: advocacy
 status: active
 country: AU
 website: https://www.sortitionfoundation.org/become_a_member_australia
+contact:
+  email: press@sortitionfoundation.org
+  form: https://www.sortitionfoundation.org/contact
+  source: https://www.sortitionfoundation.org/contact
+  checked: 2026-08-01
 news_page: https://www.sortitionfoundation.org/updates
 summary: "The Australian chapter of the UK-based Sortition Foundation, running monthly community meetings and providing sortition recruitment services for Australian democratic processes — including Victorian council deliberations, federal electorate pilots, and national citizen assemblies."
 location:
