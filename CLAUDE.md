@@ -207,6 +207,21 @@ pushed direct to main — no PR — if they meet all of the following:
      findings; see HEARTBEAT.md Step 6 for what belongs here.
 5. Pushed straight to main, no PR — see Push permissions in `HEARTBEAT.md`.
 
+### Internal heartbeat (`internal-heartbeat/`)
+
+A private counterpart to the public heartbeat log, for research and draft
+editorial reasoning that isn't (yet, or ever) ready to be public — e.g.
+assessing whether a politically sensitive org (a political party, say)
+meets the accountability framework's bar for the Democracy Landscape. Lives
+outside `docs/`, so mkdocs never builds it — nothing there can accidentally
+reach the site, unlike a blog post relying on `draft: true` staying set.
+See `internal-heartbeat/README.md` for conventions and how an entry gets
+promoted to a real public post later, if it ever does. Writable by
+interactive sessions and, per `HEARTBEAT.md`'s Push permissions, the
+scheduled heartbeat bot itself during maintenance runs — lower-stakes than
+anything else the bot direct-pushes, since nothing here can go live
+regardless of what's written.
+
 ### Concept pages (`docs/concepts/`)
 
 - These are **discovery aids** — brief orientations pointing to better sources, not authoritative explanations.
@@ -234,6 +249,7 @@ pushed direct to main — no PR — if they meet all of the following:
 
 ### Hooks
 
+- `hooks/draft_exclude.py` — fires on `on_files` at `event_priority(100)` (i.e. before every other plugin/hook, regardless of `hooks:`/`plugins:` list order); marks any `draft: true` post under `docs/blog/posts/` or `docs/heartbeat/posts/` as `InclusionLevel.EXCLUDED` before `literate-nav` builds the navigation tree. Fixes a real bug: the blog plugin's own draft-exclusion runs late (`event_priority(-50)`, by its own design, so other plugins can add generated posts first) — correctly prevents a draft's page from being built, but by the time it runs, `literate-nav` (default priority, runs earlier) has already auto-attached a nav entry for the unlisted file, since it doesn't check `file.inclusion`. Without this hook, a draft post gets no page (confirmed — no URL exists) but its title still appears as a dead link in the blog's nav sidebar.
 - `hooks/org_template.py` — fires on `on_page_markdown`; sets `template: organisation.html` on any page under `organisations/` that doesn't already have a template, and sets `hide: [navigation]` on every page in the section (index + all org pages) so Material's left sidebar doesn't render a nav tree of 100+ orgs — the section is reached via its top nav tab, and browsing within it uses the index page's own filterable/sortable table instead. Registered in `mkdocs.yml` under `hooks:`.
 - `hooks/activity_selector.py` — fires on `on_page_context`; reads `page.meta.activity` and resolves it to a single `page.meta.computed_activity` dict using priority order and per-source staleness thresholds. Used by `organisation.html` to render the "Last activity" row. See priority/staleness table in the Organisation pages section.
 - `hooks/data_export.py` — fires on `on_pre_build`; generates static data files under `docs/data/` from all org frontmatter. See Data exports section below.
