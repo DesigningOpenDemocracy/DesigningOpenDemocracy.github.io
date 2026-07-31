@@ -26,6 +26,20 @@ Typical uses:
 - Any research trail a future session (human or AI) would benefit from
   finding, without it needing to clear the bar of public-facing prose.
 
+## Who writes here
+
+Interactive Claude Code sessions, and — per `HEARTBEAT.md`'s Push
+permissions — the scheduled heartbeat bot during its own maintenance runs.
+The bot has direct-push access to `main` for this folder specifically
+because the risk here is lower than everything else it touches: nothing in
+`internal-heartbeat/` can go live regardless of what's written, unlike a
+sync post or an org edit. Use it as the staging ground for reasoning that's
+too unresolved or too sensitive even for the public draft's
+`<!-- tentative: revisit next run -->` mechanism (see Step 5 in
+`HEARTBEAT.md`) — an entry here can inform a Framework note or a public
+blog draft later without having to reach public-ready quality on the first
+pass.
+
 ## Conventions
 
 - One file per entry: `YYYY-MM-DD-short-slug.md`.

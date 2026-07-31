@@ -216,7 +216,11 @@ meets the accountability framework's bar for the Democracy Landscape. Lives
 outside `docs/`, so mkdocs never builds it — nothing there can accidentally
 reach the site, unlike a blog post relying on `draft: true` staying set.
 See `internal-heartbeat/README.md` for conventions and how an entry gets
-promoted to a real public post later, if it ever does.
+promoted to a real public post later, if it ever does. Writable by
+interactive sessions and, per `HEARTBEAT.md`'s Push permissions, the
+scheduled heartbeat bot itself during maintenance runs — lower-stakes than
+anything else the bot direct-pushes, since nothing here can go live
+regardless of what's written.
 
 ### Concept pages (`docs/concepts/`)
 

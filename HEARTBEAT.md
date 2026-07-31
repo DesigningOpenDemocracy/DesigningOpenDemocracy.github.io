@@ -147,6 +147,13 @@ either more has surfaced or it hasn't — confirm it (remove the marker) or
 delete the item. Never let an unresolved tentative item survive into a
 release.
 
+**If something is too unresolved or too sensitive even for a tentative
+marker** — a politically sensitive org-inclusion call, reasoning you want
+on record before committing to a stance — that's what `internal-heartbeat/`
+is for (see Push permissions). It's a lower bar than the tentative-item
+path: nothing there is ever destined for the live site unless a human
+later decides to promote it.
+
 **Voice.** DOD is nonpartisan — never comment on which party won an election
 unless it has direct structural governance implications, and never frame
 analysis as one political side being right. But nonpartisan isn't the same
@@ -347,6 +354,18 @@ the human's call.
   broken internal links — changes where the correct value is unambiguous
 - Changes to this file (`HEARTBEAT.md`)
 - Changes to `docs/projects/accountability-framework/soul.md`
+- `internal-heartbeat/` entries — lower stakes than anything else on this
+  list, since the folder lives outside `docs/` and never builds regardless
+  of what's written. Use it for research and reasoning too sensitive or too
+  unresolved even for a `<!-- tentative: revisit next run -->` marker in the
+  public draft (see Step 5) — a politically sensitive org-inclusion
+  question, an accountability-framework application you want to think
+  through before committing to a Framework note. See
+  `internal-heartbeat/README.md` for conventions. An entry here can later
+  inform a public draft (a `docs/blog/posts/` post, still `draft: true` and
+  still needing human review before publishing) or a Framework note in a
+  future sync post — write the entry with that eventual reader in mind, not
+  just as a scratch pad only you'll ever read.
 
 **Exception — human blog drafts.** If a run drafts or suggests a post for the
 human-facing blog (`docs/blog/posts/`, the `ai_assisted` exception in
