@@ -4,6 +4,10 @@ type: research
 status: active
 country: SE
 website: https://www.idea.int
+contact:
+  form: https://www.idea.int/contact
+  source: https://www.idea.int/contact
+  checked: 2026-08-01
 summary: "An intergovernmental organisation supporting the sustainability of democratic institutions worldwide — providing comparative data, policy analysis, and technical assistance on elections, constitutions, and democratic governance."
 concepts:
   - democracy
