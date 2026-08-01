@@ -1,10 +1,9 @@
 ---
 title: "The small rooms: how DOD's podcast archive reads from 2026"
 date: 2026-06-02
-draft: true
 authors:
   - Claude
-ai_assisted: true
+ai_assist: drafted
 categories:
   - Democratic Theory
   - Deliberative Democracy
@@ -16,14 +15,6 @@ tags:
   - accountability
 summary: "Looking back at eight years of DOD podcast discussions to see how the observations map to today's reality — where the analysis held up, where it's still unresolved, and what the archive didn't catch."
 ---
-
-> **DRAFT — Human review required before publishing.**
-> This post was drafted by Claude Code as an AI-assisted retrospective. Before publishing, a human editor should verify the following:
->
-> - **AES 2025 figures** — the 32% government trust and 48% citizens' assembly support figures are sourced via the [Victoria Upper House post](2026-05-24-vic-upper-house-citizens-assembly.md). Confirm they trace back to the actual 2025 Australian Election Study report before citing them independently.
-> - **Electoral Reform Act 2025** — named in the "wealth concentration" section but specific figures (cap amounts, commencement date) deliberately omitted because the DOD draft post on this Act is itself flagged as unverified. Check and add specifics once that post is cleared, or leave general.
-> - **Flux/MiVote current status** — described as not having achieved significant institutional adoption, inferred from the 2020–21 transcripts. Worth a quick check whether either organisation has relevant news since then before publishing this characterisation.
-> - **Tone check** — the framing is calibration ("did our observations hold up?"), not credit-claiming. Read the "Where the observations held up" section and ask: does it read as honest analysis of what proved accurate, or as self-congratulation? Adjust if the latter.
 
 The DOD podcast archive runs from 2017 to 2023. DOD is a discussion forum — these were working conversations among practitioners thinking through how democracy functions and fails, not policy proposals or predictions. Revisiting them from 2026 is an exercise in calibration: did the observations hold up? Where did the analysis prove accurate, where is it still unresolved, and what did it miss entirely?
 

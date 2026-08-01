@@ -26,5 +26,6 @@ The inquiry itself considered two main electoral options, both involving moving 
 What's notable here is the *process* question as much as the *outcome* question: the inquiry explicitly recommended a citizens' assembly as a legitimate mechanism for deciding how to reform elections. That's a meaningful shift in how deliberative democracy is being discussed at the institutional level in Australia.
 
 **Further reading:**
-- [Victorian Upper House Electoral System Inquiry](https://www.parliament.vic.gov.au/lc-ec/inquiry-into-victorias-upper-house-electoral-system/) — Parliament of Victoria, December 2025
-- [Victorian Democrats policy position](https://vic.democrats.org.au/manifesto/1sVFDKLAfCkso1djRdablw/make-victoria-s-upper-house-the-citizens-house-of-review) — one of the party submissions citing the same evidence
+- [Inquiry into Victoria's Upper House electoral system](https://www.parliament.vic.gov.au/electoralsysteminquiry) — Parliament of Victoria. Final report tabled 2 December 2025.
+- [Australian Election Study 2025](https://australianelectionstudy.org) — the 2025 Election Report and Trends report include the trust and citizens' assembly polling figures cited above.
+- [Victorian Democrats policy page](https://vic.democrats.org.au/policies/make-victoria-s-upper-house-the-citizens-house-of-review) — independently cites and confirms the same AES 2025 figures.
