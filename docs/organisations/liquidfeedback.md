@@ -5,6 +5,8 @@ status: active
 country: DE
 website: https://liquidfeedback.com
 contact:
+  email: sales@liquidfeedback.com
+  phone: "+49 30 9789 4550"
   form: https://liquidfeedback.com/en/contact.html
   source: https://liquidfeedback.com/en/contact.html
   checked: 2026-08-01
