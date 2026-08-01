@@ -26,8 +26,7 @@ The DOD podcast archive runs from 2017 to 2023. DOD is a discussion forum — th
 
 **Main lesson** —
 
-- The archive's diagnostics were largely right — citizens' assemblies, trust erosion, wealth capture distorting politics — vindicated by real-world data eight years later (48% support for sortition, 32% trust in government, donation caps passed into law)
-- But every proposed fix is an input reform (who decides, how selected, whose money). The output problem — how consequences reach back to decision-makers — is the least-addressed item in democratic reform, and it's the one that matters most
+- Eight years of democratic reform discussion — citizens' assemblies, prediction markets, trust analysis, donation reform — all circled the same structural problems. The diagnoses were accurate. But every fix proposed was an input reform (who decides, how selected, whose money). The output problem — how consequences reach back to decision-makers — is the one nobody solved, and the one that matters most
 
 The question isn't whether DOD influenced anything — it's whether the diagnosis was right. That's worth asking honestly, including about the parts where the picture is more complicated than the analysis suggested.
 
