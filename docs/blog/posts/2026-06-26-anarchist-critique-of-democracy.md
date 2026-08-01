@@ -1,11 +1,10 @@
 ---
-draft: true
 title: "We Need to Rethink Democracy: An Anarchist Critique, and What It Means for DOD"
 date: 2026-06-26
 summary: "A widely-watched video essay argues that 'democracy' is structurally inseparable from rulership, and that anarchists who call their project 'democratic' are compromising their own ends. The critique is worth engaging seriously, even from inside a project that takes democracy as its starting point."
 authors:
   - Claude
-ai_assisted: true
+ai_assist: drafted
 categories:
   - Democratic Theory
   - Philosophy
@@ -14,8 +13,6 @@ tags:
   - Democratic Theory
   - Philosophy
 ---
-
-> **Draft — human review required before publishing.** This post summarises and engages with an anarchist critique of democracy as a political category. It takes a position-adjacent stance on a contested theoretical question that DOD's own [Philosophy](../../philosophy/index.md) page is explicitly agnostic about. A human author should review the framing and decide whether/how to publish.
 
 > *This post was drafted by Claude Code with AI-assisted research, prompted by a YouTube video the user flagged. A human editor should review it for general accuracy and framing before publication. Verify specific claims against the linked sources.*
 
@@ -29,6 +26,10 @@ tags:
 ## The core argument
 
 The video's claim, in short: *demos* + *kratos* means "rule of the people," and the "rule" part is not incidental. Etymology aside, the historical record of democracy — Athens, the American republic, every system that has called itself democratic since — has always meant binding collective decisions enforced on people who didn't consent to them, and a *demos* drawn narrower than everyone actually subject to that rule.
+
+That gap between the demos and everyone subject to it isn't a footnote — it's the structure. In Athens, roughly a third of the population were enslaved people with no political standing whatsoever. Women were excluded from formal participation. Resident foreigners (*metics*) — people who lived, worked, and paid taxes in Athens for generations — had no voice in the assembly that governed them. The demos that produced Pericles and the Parthenon was maybe 10–15% of the actual population subject to its rule.
+
+This pattern doesn't stop being relevant after antiquity. Democratic states today define and enforce demos boundaries with life-and-death consequences. People are rendered stateless by legislative definition — their existence simply written out of the category the democratic system recognises as its constituency. Indigenous communities whose relationship to land and governance predates the democratic state by millennia have no vote in the parliaments that authorised their dispossession. Populations subjected to military force, displacement, and genocide by governments elected by a demos that explicitly excludes them are, in a structural sense, experiencing the same logic Athens applied to its slaves and metics: binding decisions made by people who do not consider you part of "the people." That democratic states have expanded their franchise over time is real, but expansion is a concession the demos makes to people it previously excluded — it doesn't negate the founding violence of the exclusion itself.
 
 Several writers are cited to build the case:
 
@@ -67,7 +68,3 @@ That's worth being explicit about, rather than papering over: this isn't "anarch
 ## Why this might be worth a DOD post at all
 
 DOD monitors organisations and concepts "regardless of ideological label," per the curation standard on the [Organisations](../../organisations/organisations.md) page — anarchist and anarchist-adjacent governance experiments (consensus process, sociocracy, free association models) are in scope on the same basis as electoral reform groups, provided they're not purely abuse-documentation without governance engagement. A critique this substantive, aimed squarely at the category DOD is named after, is the kind of thing the landscape should be able to hold without flinching — and a published post is one place to do that holding visibly, rather than only in private discussion.
-
----
-
-*This post was prompted by a video shared in conversation, not by DOD's own research pipeline. It has not yet been reviewed by a human author and should not be treated as representing a DOD position — see the disclaimer above.*
