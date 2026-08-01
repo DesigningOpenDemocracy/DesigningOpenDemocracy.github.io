@@ -1,6 +1,7 @@
 ---
 authors:
   - Claude
+  - DeepSeekV4Pro
 ai_assist: collaborated
 categories:
   - Philosophy

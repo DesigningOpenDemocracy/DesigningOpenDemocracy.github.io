@@ -3,6 +3,7 @@ title: "The small rooms: how DOD's podcast archive reads from 2026"
 date: 2026-06-02
 authors:
   - Claude
+  - DeepSeekV4Pro
 ai_assist: drafted
 categories:
   - Democratic Theory

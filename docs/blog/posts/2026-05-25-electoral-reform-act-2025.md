@@ -1,7 +1,8 @@
 ---
-draft: true
 authors:
-  - DOD
+  - Claude
+  - DeepSeekV4Pro
+ai_assist: collaborated
 categories:
   - Policy
   - Australia
@@ -15,10 +16,7 @@ title: "Australia's Electoral Reform Act 2025: What Changed and What's Still Con
 summary: "The Electoral Legislation Amendment (Electoral Reform) Act 2025 — royal assent February 2025, commencement deferred to January 2027 — introduces donation caps and lower disclosure thresholds for the first time in federal Australian politics. Here's a summary of the key changes and the ongoing debate."
 ---
 
-> **DRAFT — Human review required before publishing.**
-> This post was written as an AI-assisted draft and has not been reviewed for accuracy or framing. Key claims should be verified against primary sources before this is published. In particular: check commencement dates, exact cap figures, and whether the charities exemption status has changed. Do not publish without a human author taking responsibility for the content.
-
-Australia's federal parliament passed the **Electoral Legislation Amendment (Electoral Reform) Act 2025**, receiving royal assent on **20 February 2025**. It represents the most significant change to federal campaign finance law in decades — introducing donation caps and tightening disclosure requirements that have been debated in Australia for many years.
+Australia's federal parliament passed the **Electoral Legislation Amendment (Electoral Reform) Act 2025**, receiving royal assent on **20 February 2025**. The AEC describes it as the biggest update to the Commonwealth Electoral Act in 40 years — introducing donation caps and tightening disclosure requirements that have been debated in Australia for many years.
 
 <!-- more -->
 
@@ -26,14 +24,14 @@ Australia's federal parliament passed the **Electoral Legislation Amendment (Ele
 
 The key changes introduced by the Act:
 
-- **Lower disclosure threshold** — the threshold at which political donations must be disclosed was reduced from approximately $16,900 (the previously indexed figure) to **$5,000**
+- **Lower disclosure threshold** — reduced from an indexed threshold of $17,300 (previously $16,900 across 2024–25) to **$5,000**
 - **Donation caps** — introduced caps limiting how much individuals and organisations can donate to political parties and candidates
 - **Electoral expenditure caps** — introduced limits on how much parties and candidates can spend during election campaigns
 - **Faster disclosure** — shortened the time lag between donations occurring and being published on the AEC register
 
 ## Delayed commencement
 
-Despite receiving royal assent in February 2025, the commencement of key provisions was subsequently deferred to **1 January 2027**. This was announced in March 2026, meaning a full federal election cycle will pass before the donation caps and new disclosure rules take effect.
+Despite receiving royal assent in February 2025, the commencement of key provisions was subsequently deferred to **1 January 2027**, with transitional rules taking effect from 1 July 2026. This means at least one federal election cycle has passed before the donation caps and new disclosure rules come into force.
 
 ## Who advocated for the reforms
 

@@ -68,3 +68,7 @@ authors:
     name: Claude Code
     description: AI-assisted research post — see disclaimer in post body
     avatar: data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
+  DeepSeekV4Pro:
+    name: DeepSeek V4 Pro
+    description: AI research, fact-checking, and content drafting
+    avatar: data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==

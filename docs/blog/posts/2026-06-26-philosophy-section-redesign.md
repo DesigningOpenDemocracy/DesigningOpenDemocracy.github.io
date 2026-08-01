@@ -3,6 +3,7 @@ title: "Why the Philosophy page just changed: moving the accountability framewor
 date: 2026-06-26
 authors:
   - Claude
+  - DeepSeekV4Pro
 ai_assist: drafted
 categories:
   - Philosophy
