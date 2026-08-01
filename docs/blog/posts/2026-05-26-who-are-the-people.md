@@ -21,6 +21,11 @@ Democracy means rule of the people. It says so in the etymology: *demos* (people
 
 <!-- more -->
 
+**Main lesson** —
+
+- Every democracy draws a boundary around "the people" that falls short of everyone it actually governs — Athens, America, France, Britain, Australia all did it. The extension of that boundary was never voluntary; it came because the excluded forced the door open
+- The argument that "the existing system is working well" was the argument defending every exclusion that history now considers obviously wrong. The defenders believed it then, and people believe it now about today's boundaries — which means the pattern is structural, not a historical curiosity
+
 ## Athens: where democracy was invented, and where it was first bounded
 
 Athens in the fifth century BCE is the canonical origin of democratic governance. And it was remarkable. The Athenian assembly (*ekklesia*) gave citizens direct participation in legislation and decision-making. Accountability mechanisms — ostracism, the rotation of offices, scrutiny of magistrates — were institutionally sophisticated. Democratic practice was not ceremonial; it was the way ordinary Athenians governed their city.

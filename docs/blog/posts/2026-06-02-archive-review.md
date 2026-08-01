@@ -24,6 +24,11 @@ The DOD podcast archive runs from 2017 to 2023. DOD is a discussion forum — th
 
 > *The summary and analysis in this post were drafted by Claude Code from the episode transcripts and DOD's published blog posts. Quotes are reconstructed from auto-generated transcripts — verify against the recordings before citing. A human editor reviewed it for general accuracy.*
 
+**Main lesson** —
+
+- The archive's diagnostics were largely right — citizens' assemblies, trust erosion, wealth capture distorting politics — vindicated by real-world data eight years later (48% support for sortition, 32% trust in government, donation caps passed into law)
+- But every proposed fix is an input reform (who decides, how selected, whose money). The output problem — how consequences reach back to decision-makers — is the least-addressed item in democratic reform, and it's the one that matters most
+
 The question isn't whether DOD influenced anything — it's whether the diagnosis was right. That's worth asking honestly, including about the parts where the picture is more complicated than the analysis suggested.
 
 ## Where the observations held up
