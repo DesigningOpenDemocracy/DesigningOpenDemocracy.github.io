@@ -1,8 +1,7 @@
 ---
-draft: true
 authors:
   - Claude
-ai_assisted: true
+ai_assist: drafted
 categories:
   - Policy
   - Australia
@@ -16,21 +15,13 @@ tags:
   - PRSA
 ---
 
-> **DRAFT — human review still required before publishing.**
-> Sourcing note, two distinct documents, two different confidence levels:
->
-> - The detailed motion text, rationale, and 2025 survey results in this post come from the [Google Doc](https://docs.google.com/document/d/1ZjQGndVFiudRNRH3ypJsur0wMnwv6pmL4eTicSDsqh0/edit) shared as "the full proposal" in the community message this post originated from, supplied directly by a DOD member. It's long, internally consistent, and detailed in a way that would be unusual to fabricate — but it's a Google Doc, and a URL alone doesn't prove who controls it. This is content **provided by a trusted source**, not independently verified as PRSA's own official publication.
-> - Separately, `p3prsavt.pdf`/`.docx` — genuinely hosted on PRSA's own official domain (prsa.org.au), confirmed — turned out to be a plain **membership application/renewal form**, not the motions document. (An earlier version of this draft wrongly cited it as the source for the proposal content — corrected.) It does independently corroborate two things: the $18/year individual membership fee, and that PRSA is actively running a membership drive right now.
->
-> Still outstanding before this goes live: confirm the Google Doc is the final version actually circulated to members (not an interim draft), and confirm the proposer's (Travis Jordan's) standing to announce this on PRSA's behalf — his role isn't stated in the document itself.
-
-> *This post was drafted by Claude Code with AI-assisted research. A human editor
-> has not yet reviewed it for accuracy. Verify claims against the linked
-> primary source before publishing.*
-
 The [Proportional Representation Society of Australia (PRSA)](../../organisations/prsa.md) — tracing its history back to the 1890s and describing itself as Australia's oldest continuing electoral reform coalition — has circulated a formal notice of motion for its **12 November 2026 AGM**: a 17-motion package that would rename the organisation, broaden its remit far beyond its traditional single-issue focus, and modernise its governance from the ground up.
 
 <!-- more -->
+
+Following information was from this [Google Doc](https://docs.google.com/document/d/1ZjQGndVFiudRNRH3ypJsur0wMnwv6pmL4eTicSDsqh0/edit) provided by a member of PRSA as a heads up and call for people interested to sign up via their [membership form here](https://www.prsa.org.au/p3prsavt.pdf).
+
+**Just a heads up as usual that this post is AI assisted, but we spent some time to review and double check the results.**
 
 ## The headline changes
 
