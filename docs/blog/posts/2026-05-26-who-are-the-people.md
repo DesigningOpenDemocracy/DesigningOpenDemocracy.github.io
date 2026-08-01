@@ -66,8 +66,6 @@ Those are the same questions today. The historical distance makes the pattern ea
 
 ## The contemporary case
 
-> **Note for human reviewer:** The following section names Israel/Palestine explicitly as a contemporary application of the historical pattern. This is the most politically sensitive part of the post and should be reviewed and signed off by a human author before publication. The framing is analytic — it applies the same governance scope question used throughout — but the editorial decision to publish it should rest with a human.
-
 The most contested contemporary application of this question is Israel and Palestine.
 
 Israel has functioning democratic institutions — elections, a free press, genuine political competition, an active civil society. Israeli organisations including the [Israel Democracy Institute](../../organisations/israel-democracy-institute.md), [Movement for Quality Government](../../organisations/mqg.md), and [Darkenu](../../organisations/darkenu.md) work on democratic accountability, anti-corruption, and rule of law from inside Israeli democratic discourse. The 2023–2024 judicial reform crisis, which drew mass civic mobilisation, was a live argument within Israeli democracy about where the limits of executive power should sit. That argument is real, and DOD's landscape includes the organisations making it.
