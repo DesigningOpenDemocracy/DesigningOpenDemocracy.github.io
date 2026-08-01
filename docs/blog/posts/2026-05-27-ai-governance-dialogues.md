@@ -1,7 +1,7 @@
 ---
-draft: true
 authors:
-  - DOD
+  - Claude
+ai_assist: drafted
 categories:
   - Philosophy
   - Democratic Theory
@@ -14,8 +14,6 @@ tags:
 title: "What Happens When You Ask AIs from Different Countries to Review Your Democracy Framework"
 summary: "DOD's philosophy framework claims to apply a consistent accountability standard across all governance systems. We tested that claim by asking AI systems from the US, China, and France to scrutinise it. Here's what they found — and what we found when we turned the lens on ourselves."
 ---
-
-> **Draft — human review required before publishing.** This post describes a real project and links to published dialogue records. The framing and editorial decisions should be reviewed and signed off by a human author before publication.
 
 <!-- more -->
 
