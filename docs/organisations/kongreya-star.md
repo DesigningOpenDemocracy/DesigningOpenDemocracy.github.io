@@ -5,6 +5,7 @@ status: active
 country: SY
 website: https://kongra-star.org/eng/
 contact:
+  email: info@kongra-star.org
   form: https://kongra-star.org/eng/contact/
   source: https://kongra-star.org/eng/contact/
   checked: 2026-08-01
