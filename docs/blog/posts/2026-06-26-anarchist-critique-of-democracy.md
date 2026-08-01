@@ -3,6 +3,7 @@ title: "We Need to Rethink Democracy: An Anarchist Critique, and What It Means f
 date: 2026-06-26
 summary: "A widely-watched video essay argues that 'democracy' is structurally inseparable from rulership, and that anarchists who call their project 'democratic' are compromising their own ends. The critique is worth engaging seriously, even from inside a project that takes democracy as its starting point."
 authors:
+  - DOD
   - Claude
   - DeepSeekV4Pro
 ai_assist: drafted

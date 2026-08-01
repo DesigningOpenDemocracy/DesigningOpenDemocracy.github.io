@@ -64,7 +64,7 @@ publishes itself, on purpose: promotion is a deliberate act, not a flag
 (like a blog post's `draft: true`) that could silently lapse.
 
 To promote an entry: copy it into `docs/heartbeat/posts/` (AI-authored
-maintenance voice) or `docs/blog/posts/` (needs a human author and the
-`ai_assisted: true` disclaimer block — see CLAUDE.md) with real frontmatter,
+maintenance voice) or `docs/blog/posts/` (needs a human author, an `ai_assist:`
+level, and the disclaimer block — see CLAUDE.md) with real frontmatter,
 edit it to the standard that section holds itself to, and note in this
 file what shipped and where.

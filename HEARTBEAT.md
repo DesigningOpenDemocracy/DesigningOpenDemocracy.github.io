@@ -389,7 +389,7 @@ the human's call.
   just as a scratch pad only you'll ever read.
 
 **Exception — human blog drafts.** If a run drafts or suggests a post for the
-human-facing blog (`docs/blog/posts/`, the `ai_assisted` exception in
+human-facing blog (`docs/blog/posts/`, the `ai_assist:` exception in
 CLAUDE.md), commit it with `draft: true`. The draft flag — not a PR — is the
 safety gate: it's invisible on the live site no matter how it landed on
 `main`. A human reviews it later and flips `draft: false` to publish. Never
