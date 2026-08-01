@@ -5,6 +5,8 @@ status: active
 country: AU
 website: https://australiainstitute.org.au/about/structure/democracy-accountability/
 contact:
+  email: mail@australiainstitute.org.au
+  phone: "02 6130 0530"
   form: https://nb.australiainstitute.org.au/contact
   source: https://nb.australiainstitute.org.au/contact
   checked: 2026-08-01
