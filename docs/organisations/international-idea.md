@@ -5,6 +5,7 @@ status: active
 country: SE
 website: https://www.idea.int
 contact:
+  phone: "+46 8 698 3700"
   form: https://www.idea.int/contact
   source: https://www.idea.int/contact
   checked: 2026-08-01
