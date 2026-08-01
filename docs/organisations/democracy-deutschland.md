@@ -4,6 +4,11 @@ type: civil-society
 status: active
 country: DE
 website: https://democracy-app.de
+contact:
+  email: contact@democracy-deutschland.de
+  phone: "+49 176 470 40 213"
+  source: https://democracy-deutschland.de/#!impressum
+  checked: 2026-08-01
 summary: "A German volunteer-run nonprofit that brings the Bundestag to citizens' smartphones — users can vote on live parliamentary procedures and compare their choices with how their actual representatives voted."
 concepts:
   - e-government
