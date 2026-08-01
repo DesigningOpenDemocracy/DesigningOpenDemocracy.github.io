@@ -15,8 +15,6 @@ tags:
   - Philosophy
 ---
 
-> *This post was drafted by Claude Code with AI-assisted research, prompted by a YouTube video the user flagged. A human editor should review it for general accuracy and framing before publication. Verify specific claims against the linked sources.*
-
 [![Thumbnail for Andrewism's "We Need To Rethink Democracy"](../../assets/blog/2026-06-26-we-need-to-rethink-democracy-thumb.jpg)](https://www.youtube.com/watch?v=W5JEJ_L_Zjg)
 *Thumbnail from [Andrewism](https://www.youtube.com/@Andrewism)'s video, used here for editorial commentary — click through to watch on YouTube.*
 
