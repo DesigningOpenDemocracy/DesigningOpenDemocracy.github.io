@@ -97,6 +97,15 @@ Pick the oldest 10–15 pages. For each:
 If a page needs status changed (active → inactive), update `website:` to a
 Wayback URL per the CLAUDE.md convention.
 
+**Contact audit (every 3–4 runs):** while visiting org websites in this step,
+also check whether the org publishes a public contact point (email, phone, or
+contact form). The automated tools (`check_contact.py` / `check_contact_deep.py`)
+find most, but miss some — JS popup forms (`note:` field), footer-only contacts
+on pages that aren't in `CONTACT_PATHS`, and sites behind Cloudflare JS challenges
+that block bot access. A quick human spot-check catches these. When you find one,
+add a `contact:` block with the source URL and today's date. If the contact point
+is non-obvious (popup button, footer, mirror site), add a `note:` field.
+
 ### 3. Surface tag gaps
 
 ```bash

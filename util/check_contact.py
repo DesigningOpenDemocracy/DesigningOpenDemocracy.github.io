@@ -96,6 +96,11 @@ CONTACT_PATHS = [
     "/contact", "/contact/", "/contact-us", "/contact-us/", "/contactus",
     "/about", "/about/", "/about-us", "/about-us/",
     "/get-involved", "/get-involved/",
+    "/page/contacts", "/page/contact",
+    "/en/page/contacts", "/en/about/contact/",
+    "/tos", "/terms", "/terms-of-service",
+    "/careers", "/careers/",
+    "/support", "/support/",
 ]
 
 # Anchored to href=["']mailto:/tel: specifically — not just the bare string
