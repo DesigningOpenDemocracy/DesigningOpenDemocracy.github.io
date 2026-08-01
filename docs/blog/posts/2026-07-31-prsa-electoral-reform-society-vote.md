@@ -22,8 +22,6 @@ The [Proportional Representation Society of Australia (PRSA)](../../organisation
 
 Following information was from this [Google Doc](https://docs.google.com/document/d/1ZjQGndVFiudRNRH3ypJsur0wMnwv6pmL4eTicSDsqh0/edit) provided by a member of PRSA as a heads up and call for people interested to sign up via their [membership form here](https://www.prsa.org.au/p3prsavt.pdf).
 
-**Just a heads up as usual that this post is AI assisted, but we spent some time to review and double check the results.**
-
 ## The headline changes
 
 **Name.** The Society would drop "Proportional Representation Society of Australia Inc." in favour of **Australian Electoral Reform Society Inc.**, trading as the **Electoral Reform Society (ERS)**.
@@ -60,7 +58,7 @@ Adopting these changes requires a **special resolution**: at least a **75% major
 
 ## Getting involved
 
-Membership costs **$18/year**. Given the direct-participation requirement above, joining before the AGM is what would let a new member's vote count. PRSA's own website hosts a [membership application/renewal form](https://www.prsa.org.au/p3prsavt.pdf) (also available as [DOCX](https://www.prsa.org.au/p3prsavt.docx)) confirming the $18 individual fee — but that form is not the motions notice itself. The detailed 17-motion proposal referenced throughout this post is set out in the [Google Doc](https://docs.google.com/document/d/1ZjQGndVFiudRNRH3ypJsur0wMnwv6pmL4eTicSDsqh0/edit) circulated to the community (see the sourcing note at the top of this post). Confirm the AGM's exact registration cutoff and the notice's official status directly with the Society rather than relying on this post.
+Membership costs **$18/year**. Given the direct-participation requirement above, joining before the AGM is what would let a new member's vote count. PRSA's own website hosts a [membership application/renewal form](https://www.prsa.org.au/p3prsavt.pdf) (also available as [DOCX](https://www.prsa.org.au/p3prsavt.docx)) confirming the $18 individual fee — but that form is not the motions notice itself. The detailed 17-motion proposal referenced throughout this post is set out in the [Google Doc](https://docs.google.com/document/d/1ZjQGndVFiudRNRH3ypJsur0wMnwv6pmL4eTicSDsqh0/edit) referenced above. Confirm the AGM's exact registration cutoff and the notice's official status directly with the Society rather than relying on this post.
 
 ## Why it matters for DOD's Democracy Landscape
 

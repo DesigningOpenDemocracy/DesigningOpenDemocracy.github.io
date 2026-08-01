@@ -88,7 +88,7 @@ That is, in some ways, what DOD's landscape is about: the ongoing argument, acro
 
 ## See also
 
-- [We Need to Rethink Democracy: An Anarchist Critique, and What It Means for DOD](../06/26/we-need-to-rethink-democracy-an-anarchist-critique-and-what-it-means-for-dod.md) — covers the same Athenian exclusion problem from an anarchist perspective, arguing that the demos boundary is structural to democracy itself
+- [We Need to Rethink Democracy: An Anarchist Critique, and What It Means for DOD](2026-06-26-anarchist-critique-of-democracy.md) — covers the same Athenian exclusion problem from an anarchist perspective, arguing that the demos boundary is structural to democracy itself
 
 ---
 
