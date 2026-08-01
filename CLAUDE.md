@@ -170,6 +170,14 @@ documents) if:
 a load-bearing flag for the heartbeat log's direct-to-main push path, not a display preference,
 so leave it as-is there rather than migrating it to `ai_assist: generated`.
 
+**Convention — main lesson (optional):**
+
+Each blog post should include a `**Main lesson** —` section positioned directly after
+`<!-- more -->` (and after the disclaimer block, if AI-assisted). Format as up to 3
+short bullet points answering "what should a reader walk away with?" — not a summary
+of what happened, but why it matters. Omit for short posts, podcast announcements,
+and maintenance notes where there is no clear lesson.
+
 Periodic maintenance sync posts do **not** go here — see Heartbeat log below. They
 get their own blog instance and feed so the human-curated blog and its RSS feed
 stay free of bot noise.

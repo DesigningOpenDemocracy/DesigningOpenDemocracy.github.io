@@ -21,6 +21,10 @@ Australia's federal parliament passed the **Electoral Legislation Amendment (Ele
 
 <!-- more -->
 
+**Main lesson** —
+
+- Passing the bill is half the battle — the deferred commencement created a second contest over implementation details (the charities exemption) that could reshape the law's actual effect. The organisations that campaigned for the Act are now the ones asking for it to be adjusted
+
 ## What the Act does
 
 The key changes introduced by the Act:

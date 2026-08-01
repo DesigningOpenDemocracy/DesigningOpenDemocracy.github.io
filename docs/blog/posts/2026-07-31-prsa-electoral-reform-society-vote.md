@@ -23,6 +23,11 @@ The [Proportional Representation Society of Australia (PRSA)](../../organisation
 
 Following information was from this [Google Doc](https://docs.google.com/document/d/1ZjQGndVFiudRNRH3ypJsur0wMnwv6pmL4eTicSDsqh0/edit) provided by a member of PRSA as a heads up and call for people interested to sign up via their [membership form here](https://www.prsa.org.au/p3prsavt.pdf).
 
+**Main lesson** —
+
+- A single-issue remit that once defined you can become the thing that starves you — PRSA's STV-only focus outlived its relevance, and widening the remit now needs a 75% vote from a membership that's already dwindled to <50 people
+- Organisational survival rules can lock you into decline: the no-proxy provision can't be fixed retroactively, so the governance reform that would make future adaptation easier can't borrow votes to pass itself
+
 ## The headline changes
 
 **Name.** The Society would drop "Proportional Representation Society of Australia Inc." in favour of **Australian Electoral Reform Society Inc.**, trading as the **Electoral Reform Society (ERS)**.
