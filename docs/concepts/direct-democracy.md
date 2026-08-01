@@ -33,6 +33,8 @@ representative democracy.
 
 - Wikipedia: [Direct democracy](https://en.wikipedia.org/wiki/Direct_democracy)
 
+[See organisations working on this concept →](/organisations/?concept=direct-democracy)
+
 ## See also
 
 - [Liquid Democracy](liquid-democracy.md)

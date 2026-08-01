@@ -266,6 +266,12 @@ regardless of what's written.
 - Content should come from DOD member discussions/events (linked back to blog posts) or point to external sources.
 - Do not write extended explanations from general knowledge. If depth is needed, link outward.
 - DOD is nonpartisan and agnostic to any specific democratic model; inclusion of a concept is not an endorsement.
+- Each concept page should include a link to the Democracy Landscape filtered to that concept:
+  `[See organisations working on this concept →](/organisations/?concept=direct-democracy)`
+  The org index page reads the `?concept=` query param and pre-checks the Concepts facet.
+  Place this near the end of the page (before "See also" if there is one) so readers can
+  discover real-world organisations working in that space without concept authors having
+  to manually list and maintain org links.
 
 
 

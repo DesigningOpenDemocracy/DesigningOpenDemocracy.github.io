@@ -396,6 +396,16 @@
     }
   });
 
+  // Pre-set facet from URL query param (e.g. ?concept=direct-democracy)
+  (function () {
+    var params = new URLSearchParams(window.location.search);
+    var conceptParam = params.get('concept');
+    if (conceptParam) {
+      var conceptFacet = facets.find(function (f) { return f.key === 'concepts'; });
+      if (conceptFacet) conceptFacet.checked[conceptParam] = true;
+    }
+  })();
+
   facets.forEach(renderFacet);
   applyFilters();
 })();
