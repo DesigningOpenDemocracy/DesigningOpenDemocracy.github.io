@@ -2,7 +2,7 @@
 title: Involve
 type: research
 status: active
-country: UK
+country: GB
 website: https://www.involve.org.uk
 contact:
   email: info@involve.org.uk

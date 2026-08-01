@@ -2,7 +2,7 @@
 title: Sortition Foundation
 type: advocacy
 status: active
-country: UK
+country: GB
 website: https://www.sortitionfoundation.org
 contact:
   email: press@sortitionfoundation.org
