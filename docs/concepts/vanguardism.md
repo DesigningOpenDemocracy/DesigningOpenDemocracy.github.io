@@ -26,6 +26,7 @@ The Chinese Communist Party's contemporary formulation is [**whole-process peopl
 - Andrew Nathan, "Authoritarian Resilience" (2003, *Journal of Democracy*) — on how adaptive authoritarianism sustains itself through institutionalised consultation
 - James Madison, *Federalist No. 10* (1787) — Western democratic tradition's own concern about populism and faction
 
+
 ## See also
 
 - [CPPCC](../organisations/cppcc.md)

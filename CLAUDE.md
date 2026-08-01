@@ -267,13 +267,9 @@ regardless of what's written.
 - Content should come from DOD member discussions/events (linked back to blog posts) or point to external sources.
 - Do not write extended explanations from general knowledge. If depth is needed, link outward.
 - DOD is nonpartisan and agnostic to any specific democratic model; inclusion of a concept is not an endorsement.
-- Each concept page should include a link to the Democracy Landscape filtered to that concept:
-  `<a href="/organisations/organisations/?concept=direct-democracy">See organisations working on this concept →</a>`
-  Use a raw HTML `<a>` tag here, not Markdown link syntax — MkDocs URL-encodes `?` in Markdown
-  links, breaking the query param. The org index page reads `?concept=` and pre-checks the
-  Concepts facet. Place this near the end of the page (before "See also" if there is one) so
-  readers can discover real-world organisations working in that space without concept authors
-  having to manually list and maintain org links.
+- A "Search organisations working on X in the Democracy Landscape →" bubble is auto-injected
+  under the title by `hooks/concept_filter.py` — concept authors do not need to add it manually.
+  The org index page reads the `?concept=` query param and pre-checks the Concepts facet.
 
 
 

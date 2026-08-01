@@ -16,6 +16,7 @@ In practice, deliberative democracy is implemented through mechanisms like **cit
 - [Victoria's Upper House inquiry: the case for a citizens' assembly](../../blog/posts/2026-05-24-vic-upper-house-citizens-assembly.md)
 - [Q&A on deliberative democracy for council candidates (Victoria, Australia)](../../blog/posts/2024-09-28-deliberative-democracy-council-candidates-qa.md)
 
+
 ## See also
 
 - [Citizens' Assembly](citizens-assembly.md)

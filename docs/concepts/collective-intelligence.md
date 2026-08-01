@@ -35,6 +35,7 @@ Nicholas Gruen's response at the same event drew a boundary: prediction markets 
 
 Alexar Pendashteh's analysis in the [2019 DOD Trust discussion](../blog/posts/2019-12-11-podcast.md) approached CI from the preconditions side: trust is the substrate that enables collective intelligence to emerge. Without trust, groups cannot share information freely, cannot update beliefs cooperatively, and cannot coordinate at the scale CI requires. The "feedback loop" insight discussed at that event — *the people who are influenced are not the people who are influencing* — identifies one structural barrier to CI in large democratic systems.
 
+
 ## See also
 
 - [Prediction Markets](prediction-markets.md) — Prediki and the CI-via-markets argument

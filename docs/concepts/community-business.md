@@ -219,6 +219,7 @@ friends, family, and other non-bank investors.
 - <https://communitybusinesses.blogspot.com/p/small-ownership-groups.html>
 - <https://communitybusinesses.blogspot.com/p/financing-tools.html>
 
+
 ## See also
 
 - [Cooperative](cooperative.md)

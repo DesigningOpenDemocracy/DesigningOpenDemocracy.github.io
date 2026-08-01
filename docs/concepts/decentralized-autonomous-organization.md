@@ -335,6 +335,7 @@ as assets under management (AUM).
 - <https://moralis.io/how-to-build-a-decentralized-autonomous-organization-dao>
 - <https://academy.binance.com/en/articles/how-to-create-a-dao>
 
+
 ## See also
 
 - [Cooperative](cooperative.md)

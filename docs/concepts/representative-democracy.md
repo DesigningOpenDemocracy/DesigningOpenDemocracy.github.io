@@ -28,6 +28,7 @@ RDs can function well as components of two governing systems:
 
 - Wikipedia: [Representative democracy](https://en.wikipedia.org/wiki/Representative_democracy)
 
+
 ## See also
 
 - [Democracy](democracy.md)

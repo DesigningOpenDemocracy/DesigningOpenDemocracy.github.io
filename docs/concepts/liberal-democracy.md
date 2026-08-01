@@ -45,6 +45,7 @@ suffrage and political equality. These characteristics are:
 
 - Wikipedia: [Liberal democracy](https://en.wikipedia.org/wiki/Liberal_democracy)
 
+
 ## See also
 
 - [Democracy](democracy.md)

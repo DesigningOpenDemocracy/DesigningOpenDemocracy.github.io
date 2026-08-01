@@ -38,6 +38,7 @@ Liquid democracy has been implemented in several contexts:
 
 - [Talk with Ben Ballingall about Flux Party and IBDD](../blog/posts/2020-02-13-podcast.md) — a 2020 DOD podcast in which Flux's Victorian representative explains delegation, the "hubris" problem with pure delegation, and how Flux's revocability mechanism is meant to address it
 
+
 ## See also
 
 - [Issue-Based Direct Democracy](issue-based-direct-democracy.md) — Flux's specific implementation

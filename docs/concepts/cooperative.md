@@ -462,6 +462,7 @@ acquire supplies and services, or advertise their products and services.
 
 - [Civics Ecosystem Toolkit v1.2](../../blog/posts/2026-05-20-civics-ecosystem-toolkit.md) — a practical guide to cooperative governance in the Australian civic context
 
+
 ## See also
 
 - [Worker Cooperatives](worker-cooperatives.md)

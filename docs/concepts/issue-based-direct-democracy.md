@@ -32,6 +32,7 @@ The system attempts to solve two problems with direct democracy:
 
 - [Talk with Ben Ballingall about Flux Party and IBDD](../blog/posts/2020-02-13-podcast.md) — a 2020 DOD podcast explaining IBDD in plain terms, including the citizen-juries comparison and the abstain-to-bank-capital mechanism
 
+
 ## See also
 
 - [Liquid Democracy](liquid-democracy.md) — the broader category

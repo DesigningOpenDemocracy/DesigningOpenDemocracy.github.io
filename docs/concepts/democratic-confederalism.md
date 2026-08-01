@@ -38,6 +38,7 @@ What distinguishes AANES as a case study is scale and adversity. It governs a po
 - Joost Jongerden and Ahmet Hamdi Akkaya, "Democratic Confederalism as a Kurdish Spring" (2012, *The Kurdish Spring*)
 - Michael Knapp, Anja Flach, and Ercan Ayboga, *Revolution in Rojava* (2016) — detailed institutional account
 
+
 ## See also
 
 - [TEV-DEM](../organisations/tev-dem.md)

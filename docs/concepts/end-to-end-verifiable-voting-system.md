@@ -22,6 +22,7 @@ Research implementations and papers:
 
 - [End-to-end auditable voting systems — Wikipedia](https://en.wikipedia.org/wiki/End-to-end_auditable_voting_systems)
 
+
 ## See also
 
 - [SecureVote](../organisations/securevote.md)

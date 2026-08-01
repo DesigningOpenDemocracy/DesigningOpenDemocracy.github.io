@@ -13,6 +13,7 @@ Developed in the Australian context by economist Nicolas Gruen at the [2017 Desi
 - Joseph Schumpeter, *Capitalism, Socialism and Democracy* (1943)
 - [Nicolas Gruen — Wikipedia](https://en.wikipedia.org/wiki/Nicholas_Gruen)
 
+
 ## See also
 
 - [Sortition](sortition.md)

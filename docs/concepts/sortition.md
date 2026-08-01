@@ -23,6 +23,7 @@ title: Sortition
 - [Sortition — Wikipedia](https://en.wikipedia.org/wiki/Sortition)
 - [Equality by Lot](https://equalitybylot.com/) — blog tracking sortition research and practice globally
 
+
 ## See also
 
 - [Citizens' Assembly](citizens-assembly.md)

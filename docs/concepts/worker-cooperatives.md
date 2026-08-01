@@ -23,6 +23,7 @@ For a more comprehensive overview of the cooperative model, see the [Cooperative
 
 - Wikipedia: [Worker cooperative](https://en.wikipedia.org/wiki/Worker_cooperative)
 
+
 ## See also
 
 - [Cooperative](cooperative.md)

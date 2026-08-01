@@ -55,6 +55,7 @@ based on and in accordance with the state constitutions.
 - <https://www.civiced.org/lesson-plans/constitutional-democracy>
 - <https://stoplearn.com/constitutional-democracy/>
 
+
 ## See also
 
 - [Democracy](democracy.md)

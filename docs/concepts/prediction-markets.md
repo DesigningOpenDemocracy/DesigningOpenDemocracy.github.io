@@ -29,6 +29,7 @@ This makes prediction markets a potential tool for **surfacing considered collec
 - Prediction markets work best on factual, resolvable questions — harder to apply to value questions ("which policy is better?") than to factual ones ("will this policy reduce unemployment?")
 - Futarchy has attracted philosophical objections: reducing governance to welfare metrics may exclude important values that resist quantification
 
+
 ## See also
 
 - [Prediki](../organisations/prediki.md) — Austrian prediction market platform applied to democratic contexts

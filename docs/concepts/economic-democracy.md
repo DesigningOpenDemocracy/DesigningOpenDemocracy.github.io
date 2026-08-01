@@ -16,6 +16,7 @@ Presented at a [2020 Designing Open Democracy podcast](../blog/posts/2020-06-20-
 - [Business Council of Co-operatives and Mutuals](https://bccm.coop/)
 - [Economic democracy — Wikipedia](https://en.wikipedia.org/wiki/Economic_democracy)
 
+
 ## See also
 
 - [Worker Cooperatives](worker-cooperatives.md)

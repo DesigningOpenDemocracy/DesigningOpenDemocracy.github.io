@@ -34,6 +34,7 @@ Buen Vivir is also studied as a potential contribution to governance thinking be
 - Boaventura de Sousa Santos, *Epistemologies of the South* (2014) — on indigenous knowledge and governance
 - Pablo Solón (ed.), *Systemic Alternatives* (2017) — [available online via Fundación Solón](https://fundacionsolon.org)
 
+
 ## See also
 
 - [CONAIE](../organisations/conaie.md)

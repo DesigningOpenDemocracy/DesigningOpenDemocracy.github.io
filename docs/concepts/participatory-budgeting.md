@@ -17,6 +17,7 @@ Several open-source platforms have been built specifically for participatory bud
 - **[Consul Democracy](../organisations/consul-democracy.md)** — Madrid's platform, includes a full PB module
 - **[Ethelo](../organisations/ethelo.md)** — Canada-focused, runs the Citizen Budget tool used by 100+ municipalities
 
+
 ## See also
 
 - [Direct Democracy](direct-democracy.md)

@@ -230,6 +230,7 @@ employees are encouraged to think and act like owners.
 - <https://en.wikipedia.org/wiki/Workplace_democracy/>
 - <https://www.nceo.org/what-is-employee-ownership>
 
+
 ## See also
 
 - [Cooperative](cooperative.md)

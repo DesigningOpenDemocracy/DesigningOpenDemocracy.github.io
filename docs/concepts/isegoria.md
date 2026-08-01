@@ -15,6 +15,7 @@ Citizens' juries and sortition-based processes restore isegoria by a different m
 
 The argument is not just procedural. Gruen also draws on the observation that vox-pop democracy — where public opinion is sampled through rapid, unconsidered reactions — produces systematically worse outcomes than deliberative processes, because human cognition works differently under the two conditions. Electoral politics, by rewarding emotional salience over considered reasoning, actively degrades the quality of collective decision-making.
 
+
 ## See also
 
 - [Sortition](sortition.md)

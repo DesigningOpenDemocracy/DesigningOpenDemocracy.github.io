@@ -192,6 +192,7 @@ following:
 - <https://en.wikipedia.org/wiki/Democracy/>
 - <https://civicsacademy.co.za/what-are-the-key-features-of-a-democracy/>
 
+
 ## See also
 
 - [Direct Democracy](direct-democracy.md)

@@ -22,6 +22,7 @@ Majority Judgment is used in formal electoral experiments as well as everyday gr
 - *Majority Judgment: Measuring, Ranking, and Electing* — Balinski & Laraki, MIT Press 2011
 - [MieuxVoter explainer](https://mieuxvoter.fr) — French association promoting MJ adoption
 
+
 ## See also
 
 - [Direct Democracy](direct-democracy.md)

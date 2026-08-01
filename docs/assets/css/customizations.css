@@ -757,6 +757,32 @@
     text-decoration: none;
 }
 
+/* Bubble callout linking from concept pages to filtered Democracy Landscape */
+.concept-org-bubble {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    padding: 0.5em 1em;
+    margin: 0 0 1.2em 0;
+    border-left: 4px solid #3f51b5;
+    background: rgba(63, 81, 181, 0.08);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.88em;
+}
+.concept-org-bubble .twemoji {
+    flex-shrink: 0;
+    color: #3f51b5;
+}
+.concept-org-bubble a {
+    color: #3f51b5;
+    text-decoration: none;
+    font-weight: 500;
+}
+.concept-org-bubble a:hover {
+    text-decoration: underline;
+    color: #1a237e;
+}
+
 /****************************************/
 
 @media screen and (min-width: 60em) {
