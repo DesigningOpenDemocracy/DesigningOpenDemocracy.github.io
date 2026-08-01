@@ -1,5 +1,6 @@
 ---
 authors:
+  - DOD
   - Claude
   - DeepSeekV4Pro
 ai_assist: collaborated
