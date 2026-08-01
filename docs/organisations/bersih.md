@@ -5,6 +5,8 @@ status: active
 country: MY
 website: https://bersih.org
 contact:
+  email: info@bersih.org
+  phone: "+603-76280371"
   form: https://bersih.org/about-us/#contact
   source: https://bersih.org/about-us/#contact
   checked: 2026-08-01
