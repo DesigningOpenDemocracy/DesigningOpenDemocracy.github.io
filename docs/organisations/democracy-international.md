@@ -6,9 +6,10 @@ country: DE
 website: https://www.democracy-international.org
 contact:
   email: contact@democracy-international.org
+  phone: "+49 221 669 66 50"
   form: https://www.democracy-international.org/contact
   source: https://www.democracy-international.org/contact-us
-  checked: 2026-07-30
+  checked: 2026-08-01
 summary: "A Cologne-based NGO advocating for direct democracy and citizen participation globally — organises the Global Forum on Modern Direct Democracy and supports reform campaigns worldwide."
 concepts:
   - direct-democracy
