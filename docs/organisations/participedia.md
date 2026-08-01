@@ -25,8 +25,7 @@ activity:
   rss:
     date: 2026-01-05
     note: "Latest post: Participedia Schools 2025 Summary Reports"
-    url: https://participediaproject.medium.com/participedia-schools-2025-summary-reports-5f84ce0bd47f?source=rss-4e7f7d842e0a
-------2
+    url: https://participediaproject.medium.com/participedia-schools-2025-summary-reports-5f84ce0bd47f?source=rss-4e7f7d842e0a------2
     checked: 2026-06-08
   manual:
     date: 2026-01-06

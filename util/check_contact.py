@@ -388,10 +388,12 @@ def write_contact(path, email=None, phone=None, form=None, source=None, force=Fa
 
     with open(path, encoding="utf-8") as f:
         content = f.read()
-    parts = content.split("---", 2)
-    if len(parts) < 3 or parts[0] != "":
+
+    if not content.startswith("---\n"):
         return False
-    yaml_block, rest = parts[1], parts[2]
+    closing = content.index("\n---\n", 3)
+    yaml_block = content[3:closing]
+    rest = content[closing:]  # "\n---\n..." — includes closing delimiter and body
     meta = _yaml.safe_load(yaml_block) or {}
     existing = meta.get("contact") or {}
 
@@ -445,7 +447,7 @@ def write_contact(path, email=None, phone=None, form=None, source=None, force=Fa
     if not yaml_block.endswith("\n"):
         yaml_block += "\n"
     with open(path, "w", encoding="utf-8") as f:
-        f.write("---" + yaml_block + "---" + rest)
+        f.write("---" + yaml_block + rest)
     return True
 
 
