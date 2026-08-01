@@ -5,7 +5,7 @@ summary: "vTaiwan is the most-cited example of digital deliberation working at g
 authors:
   - DOD
   - Claude
-ai_assisted: true
+ai_assist: drafted
 categories:
   - civic tech
   - deliberative democracy

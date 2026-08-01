@@ -123,19 +123,40 @@ The invariants recorded there are not immutable. Any document in this repo — i
 
 **Exception — AI-assisted research posts:**
 
-A post may be AI-drafted from research (sources, web fetches, pasted documents) if:
+A post may be AI-drafted or AI-collaborated from research (sources, web fetches, pasted
+documents) if:
 
-1. Frontmatter must include:
+1. Frontmatter must include an `ai_assist:` level. This is the current marker — it replaced
+   the old boolean `ai_assisted: true`, which the badge template (`docs/overrides/blog-post.html`)
+   still renders as a generic "AI-assisted" fallback for old posts but which new posts should
+   not use. Pick the level that actually describes how the post was produced:
+
+   | Level | Meaning | Badge text |
+   |---|---|---|
+   | `drafted` | AI produced the first full draft from directed research; a human editor reviewed and revised it before merge. | "AI-drafted, human-reviewed & revised" |
+   | `collaborated` | Human and AI wrote the post together, back and forth — neither side owns the first draft outright. | "Human-AI collaboration" |
+   | `reviewed` | A human wrote the post; the AI's role was limited to review/editing (fact-check, copyedit, structure suggestions). | "Human-authored, AI-reviewed & edited" |
+
+   Feel free to add a new level (and its badge label in `blog-post.html`) if none of these
+   honestly describe how a post came together — the point is the marker should be accurate,
+   not that this list is closed.
+
    ```yaml
    authors:
      - DOD
      - Claude
-   ai_assisted: true
+   ai_assist: drafted
    ```
-   `DOD` goes first: by the time the post is merged, a human editor has reviewed it and DOD
-   members have passed it, so DOD holds primary authorship credit with Claude as drafting
-   assistant. (This differs from the heartbeat log below, which is pushed direct to main
-   without prior human review and so lists `Claude` alone.)
+
+   Authorship by level:
+   - `drafted` / `collaborated`: `DOD` goes first — by the time the post is merged, a human
+     editor has reviewed it and DOD members have passed it, so DOD holds primary authorship
+     credit, with every AI that materially contributed (e.g. `Claude`, `DeepSeekV4Pro`) listed
+     after it. (This differs from the heartbeat log below, which is pushed direct to main
+     without prior human review and so lists `Claude` alone.)
+   - `reviewed`: the AI didn't materially author content, so don't add it to `authors:` just
+     because the marker is set — list only the human/`DOD`. The `ai_assist: reviewed` marker
+     itself is what discloses the AI's editing role.
 2. The post body must open with this disclaimer block (immediately after `<!-- more -->`):
    ```
    > *This post was drafted by Claude Code with AI-assisted research. A human editor
@@ -145,7 +166,9 @@ A post may be AI-drafted from research (sources, web fetches, pasted documents) 
 3. Every factual claim must carry a linked source. No unsourced assertions.
 4. A human must review and merge the PR.
 
-`ai_assisted: true` is distinct from `ai_generated: true` (sync posts). Use `ai_assisted` when a human has directed the research and partially reviewed the output; use `ai_generated` only for the fully autonomous maintenance sync posts described below.
+`ai_assist:` (any level) is distinct from `ai_generated: true` (sync posts) — that boolean is
+a load-bearing flag for the heartbeat log's direct-to-main push path, not a display preference,
+so leave it as-is there rather than migrating it to `ai_assist: generated`.
 
 Periodic maintenance sync posts do **not** go here — see Heartbeat log below. They
 get their own blog instance and feed so the human-curated blog and its RSS feed
