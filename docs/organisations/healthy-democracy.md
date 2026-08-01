@@ -5,9 +5,11 @@ status: active
 country: US
 website: https://healthydemocracy.org
 contact:
+  email: info@healthydemocracy.org
+  phone: "+1 503 841 6865"
   form: https://healthydemocracy.org/contact
-  source: https://healthydemocracy.org
-  checked: 2026-07-30
+  source: https://healthydemocracy.org/contact
+  checked: 2026-08-01
 summary: "A US non-profit that designs and runs Citizens' Initiative Reviews — structured deliberative processes where randomly selected citizens evaluate ballot measures and publish findings for the wider electorate."
 location:
   latitude: 45.5231
