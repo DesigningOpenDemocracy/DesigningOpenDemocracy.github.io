@@ -59,6 +59,7 @@ def find_broken_links(path: Path, known_names: set[str]) -> list[str]:
                 continue
 
             target_path, _, _fragment = target.partition("#")
+            target_path, _, _query = target_path.partition("?")
             if not target_path:
                 continue
             target_path = unquote(target_path)

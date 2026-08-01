@@ -33,7 +33,7 @@ representative democracy.
 
 - Wikipedia: [Direct democracy](https://en.wikipedia.org/wiki/Direct_democracy)
 
-[See organisations working on this concept →](/organisations/?concept=direct-democracy)
+<a href="/organisations/?concept=direct-democracy">See organisations working on this concept →</a>
 
 ## See also
 
