@@ -243,13 +243,6 @@ automatically — nothing to reset by hand.
 ```
 [Required disclaimer block]
 
-## Landscape update
-
-[2–3 sentences: current counts from stats.py, what was verified this run,
-any status changes or notable findings. Use
-`python util/check_orgs.py --since YYYY-MM-DD` (today's date) to get the
-title list of orgs verified this run for the paragraph.]
-
 ## In the world  ← omit entirely if nothing notable
 
 [1–3 items, each with:
@@ -262,6 +255,25 @@ title list of orgs verified this run for the paragraph.]
    in Step 5)
  - If notability is genuinely uncertain, mark the item
    `<!-- tentative: revisit next run -->` right after it (see Step 5/6)]
+
+## Landscape update
+
+[Use a before/after table rather than prose — readers want to see what
+changed at a glance, not read a verification log. Format:
+
+| Metric | Before this run | After this run |
+|---|---|---|
+| Active orgs | N | N |
+| Inactive orgs | N | N |
+| Deregistered | N | N |
+| Orgs never-checked | N | N |
+| Orgs verified this run | — | N |
+| Tag gaps closed | — | N |
+| Orphaned concepts | N | N |
+
+Then 1–2 sentences for any status changes or notable findings that don't
+fit in the table. Use `python util/check_orgs.py --since YYYY-MM-DD`
+(today's date) to get the title list of orgs verified this run.]
 
 ## Framework notes  ← omit entirely if nothing to flag
 
