@@ -1,9 +1,9 @@
 ---
 title: E-Democracy
 type: ngo
-status: active
+status: inactive
 country: US
-website: https://e-democracy.org
+website: https://web.archive.org/web/*/https://e-democracy.org
 summary: "A Minnesota-based nonprofit (founded 1994) pioneering online civic participation — running neighbourhood discussion forums that connect residents directly with local elected officials."
 concepts:
   - deliberative-democracy

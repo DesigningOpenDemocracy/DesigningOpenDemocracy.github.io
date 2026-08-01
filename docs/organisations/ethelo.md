@@ -4,6 +4,11 @@ type: platform
 status: active
 country: CA
 website: https://ethelo.com
+contact:
+  form: https://ethelo.com
+  source: https://ethelo.com
+  note: "Click the 'Contact Us' button near the top-right to open the contact form popup (Elementor)"
+  checked: 2026-08-01
 summary: "A Canadian collective intelligence platform used by 100+ municipalities and the Government of Canada — surfaces the least polarising, most broadly supported outcomes from large group consultations."
 concepts:
   - e-government

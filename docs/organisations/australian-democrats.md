@@ -4,6 +4,10 @@ type: party
 status: active
 country: AU
 website: https://democrats.org.au
+contact:
+  form: https://www.democrats.org.au/contact/
+  source: https://www.democrats.org.au/contact/
+  checked: 2026-08-01
 summary: "A re-established Australian centrist political party with a strong focus on democratic reform, electoral integrity, and evidence-based policy — including explicit support for citizens' assemblies and proportional representation."
 location:
   latitude: -37.8136

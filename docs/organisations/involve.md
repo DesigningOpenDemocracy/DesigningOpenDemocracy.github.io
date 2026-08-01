@@ -4,6 +4,11 @@ type: research
 status: active
 country: UK
 website: https://www.involve.org.uk
+contact:
+  email: info@involve.org.uk
+  phone: "+44 20 3745 4334"
+  source: https://www.involve.org.uk
+  checked: 2026-08-01
 summary: "A UK charity that develops and promotes public participation and deliberative democracy, advising governments on how to design and run genuine engagement processes."
 location:
   latitude: 51.5074

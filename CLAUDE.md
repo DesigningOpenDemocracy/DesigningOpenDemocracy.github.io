@@ -69,10 +69,12 @@ The invariants recorded there are not immutable. Any document in this repo — i
     form: https://example.org/contact      # public contact-form page, when there's no email to record
     source: https://example.org/contact    # page the info was found on
     checked: 2026-07-24                    # date it was last verified
+    note: "Click the Contact Us button to reveal the email address"  # optional hint for non-obvious contact points
   ```
   - Prefer general `info@` / `contact@` / `hello@` addresses over named individuals; only use a named person's address if it's the org's sole/designated general contact channel.
   - `form:` is a fallback for orgs whose only public contact channel is a web form (no address published anywhere) — a link to that contact-form page. Not mutually exclusive with `email:`, but mainly useful when there's no email to record.
-  - Omit `email`/`phone`/`form` individually if not found — don't fabricate or guess. If nothing is publicly published, omit the whole `contact:` block rather than adding an empty one.
+  - `note:` — optional. A short hint for future checkers or visitors when the contact point isn't obvious (e.g. a JS popup button, a footer block, a mirror site, a specific sub-page to navigate to). Not for general notes; only use when someone would otherwise miss the contact channel.
+  - Omit `email`/`phone`/`form`/`note` individually if not needed — don't fabricate or guess. If nothing is publicly published, omit the whole `contact:` block rather than adding an empty one.
 - `activity:` — optional dict of evidence sources, each keyed by method name. The build hook
   (`hooks/activity_selector.py`) picks the best entry for display using a priority order and
   per-source staleness thresholds.

@@ -4,6 +4,10 @@ type: governance
 status: active
 country: SY
 website: https://kongra-star.org/eng/
+contact:
+  form: https://kongra-star.org/eng/contact/
+  source: https://kongra-star.org/eng/contact/
+  checked: 2026-08-01
 last_checked: "2026-06-02"
 summary: "The women's governance organisation of the Autonomous Administration of North and East Syria — maintaining parallel governance structures at every level of the AANES system, from commune to canton, as a structural check on all decision-making."
 location:

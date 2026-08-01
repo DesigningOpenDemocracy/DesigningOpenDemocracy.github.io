@@ -4,6 +4,12 @@ type: research
 status: active
 country: IL
 website: https://en.idi.org.il
+contact:
+  email: info@idi.org.il
+  phone: "972-2-530-0888"
+  form: https://en.idi.org.il/about/contact/
+  source: https://en.idi.org.il/about/contact/
+  checked: 2026-08-01
 summary: "Israel's leading nonpartisan democracy research institute — publishing annual Israeli Democracy Index, researching electoral reform, parliamentary oversight, judicial independence, civil service reform, and anti-corruption mechanisms since 1991."
 location:
   latitude: 31.7683

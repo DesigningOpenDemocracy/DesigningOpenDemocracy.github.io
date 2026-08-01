@@ -4,6 +4,10 @@ type: platform
 status: active
 country: US
 website: https://pol.is
+contact:
+  email: hello@compdemocracy.org
+  source: https://pol.is/tos
+  checked: 2026-08-01
 last_checked: "2026-05-30"
 summary: "An open-source consensus mapping platform used in large-scale public deliberations — participants rate statements rather than debating, and machine learning surfaces the points of genuine agreement across thousands of respondents."
 location:

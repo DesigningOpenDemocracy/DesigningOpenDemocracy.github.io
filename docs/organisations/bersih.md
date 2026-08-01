@@ -4,6 +4,10 @@ type: advocacy
 status: active
 country: MY
 website: https://bersih.org
+contact:
+  form: https://bersih.org/about-us/#contact
+  source: https://bersih.org/about-us/#contact
+  checked: 2026-08-01
 summary: "Malaysia's largest non-partisan coalition for electoral reform — a network of 90+ civil society organisations conducting independent election observation, voter registration drives, and public campaigns for free and fair elections since 2007."
 location:
   latitude: 3.1569

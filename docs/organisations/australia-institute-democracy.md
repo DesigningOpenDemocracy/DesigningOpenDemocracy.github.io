@@ -4,6 +4,10 @@ type: research
 status: active
 country: AU
 website: https://australiainstitute.org.au/about/structure/democracy-accountability/
+contact:
+  form: https://nb.australiainstitute.org.au/contact
+  source: https://nb.australiainstitute.org.au/contact
+  checked: 2026-08-01
 summary: "A dedicated research and advocacy program within The Australia Institute focused on diagnosing and addressing Australia's democratic deficit — covering truth in political advertising, parliamentary reform, anti-corruption institutions, and campaign finance."
 location:
   latitude: -35.2809

@@ -4,6 +4,11 @@ type: research
 status: active
 country: IN
 website: https://prsindia.org
+contact:
+  email: prsindia@prsindia.org
+  phone: "(011) 2323 4801"
+  source: https://prsindia.org/careers/opportunities-at-prs
+  checked: 2026-08-01
 summary: "A New Delhi-based independent legislative research institute supporting parliamentarians and informing citizens — tracking bills, budgets, and MP activity for India's Parliament and state legislatures since 2005."
 location:
   latitude: 28.6315

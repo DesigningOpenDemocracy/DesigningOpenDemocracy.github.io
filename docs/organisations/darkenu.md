@@ -4,6 +4,11 @@ type: advocacy
 status: active
 country: IL
 website: https://darkenu.org.il/en
+contact:
+  email: thisis@darkenu.org.il
+  phone: "+972-3-5168005"
+  source: https://darkenu.org.il/en/
+  checked: 2026-08-01
 summary: "Israel's largest civic movement (400,000+ supporters) defending rule of law, democratic participation, and fighting corruption — founded independent media outlet DemocraTV, and led mass protests against the 2023 judicial overhaul."
 location:
   latitude: 32.0853

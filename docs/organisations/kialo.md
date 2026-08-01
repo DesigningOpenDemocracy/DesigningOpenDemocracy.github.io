@@ -4,6 +4,10 @@ type: platform
 status: active
 country: US
 website: https://www.kialo.com
+contact:
+  form: https://support.kialo.com/en/contact/
+  source: https://support.kialo.com/en/contact/
+  checked: 2026-08-01
 summary: "The world's largest argument-mapping and structured deliberation platform — uses a debate-tree format to organise pros, cons, and sub-arguments. Proprietary and free to use, with a separate education product."
 concepts:
   - consensus-mapping

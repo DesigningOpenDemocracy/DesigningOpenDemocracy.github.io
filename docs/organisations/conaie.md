@@ -4,6 +4,11 @@ type: governance
 status: active
 country: EC
 website: https://conaie.org
+contact:
+  email: conaie@ecuanex.net.ec
+  source: http://hosted.nativeweb.org/conaie/index.html
+  note: "Main site conaie.org returns a blank page; email found on legacy mirror at hosted.nativeweb.org"
+  checked: 2026-08-01
 summary: "Ecuador's main confederation of indigenous nationalities — 14 nationalities, 18 peoples — a governance actor as much as an advocacy body, having co-drafted Ecuador's 2008 plurinational constitution and operating parallel indigenous justice and territorial governance systems."
 location:
   latitude: -0.2295

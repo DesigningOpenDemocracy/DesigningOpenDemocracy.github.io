@@ -4,6 +4,10 @@ type: platform
 status: active
 country: AT
 website: https://www.prediki.com
+contact:
+  email: support@prediki.com
+  source: https://www.prediki.com/meta/en/prediki-support/
+  checked: 2026-08-01
 news_page: https://www.prediki.com/meta/en/Management-by-Predictions-(Prediki-Blog-in-English)/
 summary: "An Austrian prediction market platform that aggregates collective intelligence on political and policy questions — users make structured predictions with reasons, and the system surfaces the informed consensus."
 location:
