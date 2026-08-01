@@ -128,9 +128,14 @@ A post may be AI-drafted from research (sources, web fetches, pasted documents) 
 1. Frontmatter must include:
    ```yaml
    authors:
+     - DOD
      - Claude
    ai_assisted: true
    ```
+   `DOD` goes first: by the time the post is merged, a human editor has reviewed it and DOD
+   members have passed it, so DOD holds primary authorship credit with Claude as drafting
+   assistant. (This differs from the heartbeat log below, which is pushed direct to main
+   without prior human review and so lists `Claude` alone.)
 2. The post body must open with this disclaimer block (immediately after `<!-- more -->`):
    ```
    > *This post was drafted by Claude Code with AI-assisted research. A human editor
