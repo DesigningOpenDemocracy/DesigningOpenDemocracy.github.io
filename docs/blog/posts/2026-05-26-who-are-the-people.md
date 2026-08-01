@@ -1,7 +1,7 @@
 ---
-draft: true
 authors:
-  - DOD
+  - Claude
+ai_assist: collaborated
 categories:
   - Philosophy
   - Democratic Theory
@@ -13,10 +13,6 @@ tags:
   - Accountability
 title: "Who Are 'The People'? A Question Democracy Has Always Had to Answer"
 summary: "Every democratic system makes a claim to govern for 'the people.' The question of who that actually includes has been contested, expanded, and fought over since Athens. That history matters for how we evaluate democratic systems today."
----
-
-> **Draft — human review required before publishing.** This post engages with politically sensitive historical and contemporary comparisons. The framing, examples, and conclusions should be reviewed by a human author before publication.
-
 ---
 
 Democracy means rule of the people. It says so in the etymology: *demos* (people) + *kratos* (rule). But who counts as the people has never been self-evident. It has been the central contested question of democratic politics across every era — and the history of how that question has been answered, and repeatedly re-answered, is both clarifying and humbling.
@@ -88,6 +84,12 @@ The record here is mixed but not discouraging. The scope of "the people" in func
 That expansion has not happened automatically. It has happened because people who were excluded from the demos nonetheless acted as political agents — organising, arguing, demanding, sometimes fighting — and because enough people inside the demos came to recognise that the gap between the democratic claim and democratic reality was a contradiction worth resolving.
 
 That is, in some ways, what DOD's landscape is about: the ongoing argument, across every democratic tradition, about how governance can be made more genuinely for and with the people — wherever that argument is happening, and however the people are defined.
+
+---
+
+## See also
+
+- [We Need to Rethink Democracy: An Anarchist Critique, and What It Means for DOD](../06/26/we-need-to-rethink-democracy-an-anarchist-critique-and-what-it-means-for-dod.md) — covers the same Athenian exclusion problem from an anarchist perspective, arguing that the demos boundary is structural to democracy itself
 
 ---
 

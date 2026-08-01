@@ -107,6 +107,7 @@
                                        ("assisted" if page.meta.ai_assisted else none)) %}
                     {% if ai_level %}
                       {% set ai_labels = {
+                        "collaborated": "Human-AI collaboration",
                         "drafted":   "AI-drafted, human-reviewed & revised",
                         "reviewed":  "Human-authored, AI-reviewed & edited",
                         "generated": "AI-generated",

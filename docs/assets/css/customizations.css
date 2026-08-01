@@ -970,6 +970,7 @@
   letter-spacing: 0.01em;
   white-space: nowrap;
 }
+.ai-assist-collaborated { background: #e0f2f1; color: #00695c; }
 .ai-assist-drafted   { background: #fff3e0; color: #e65100; }
 .ai-assist-reviewed  { background: #e8f5e9; color: #2e7d32; }
 .ai-assist-generated { background: #f3e5f5; color: #6a1b9a; }
