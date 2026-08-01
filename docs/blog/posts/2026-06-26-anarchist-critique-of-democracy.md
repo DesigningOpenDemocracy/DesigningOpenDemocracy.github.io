@@ -23,6 +23,12 @@ tags:
 
 <!-- more -->
 
+**Main lesson** —
+
+- The critique's strongest points (manufactured majorities, hidden representation in direct democracy, voting-theory results) aren't anarchist talking points you can dismiss on ideological grounds — they're genuine problems every democratic model has to sit with, agnostic-about-models or not
+- The critique's weakest point (what happens when free association fails on a non-exit-able shared stake like a river or a pandemic) is where binding mechanisms tend to reappear under another name — anarchism doesn't have a better answer, but naming that gap honestly matters more than scoring points
+- Holding a fundamental critique of democracy without flinching, on a site named Designing Open Democracy, is the difference between a landscape that does the work and one that just curates comfortable ideas
+
 ## The core argument
 
 The video's claim, in short: *demos* + *kratos* means "rule of the people," and the "rule" part is not incidental. Etymology aside, the historical record of democracy — Athens, the American republic, every system that has called itself democratic since — has always meant binding collective decisions enforced on people who didn't consent to them, and a *demos* drawn narrower than everyone actually subject to that rule.
