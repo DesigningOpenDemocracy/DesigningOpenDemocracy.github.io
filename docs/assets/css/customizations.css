@@ -1066,6 +1066,37 @@
   max-width: 280px;
 }
 
+/* Scoring justification (rendered live from party-governance.json history) */
+.gov-justification-body {
+  margin-bottom: 1.5rem;
+}
+
+.gov-just-scoring-note {
+  color: var(--md-default-fg-color--light);
+  font-size: 0.9em;
+}
+
+.gov-just-entry {
+  border-left: 2px solid var(--md-default-fg-color--lightest);
+  padding: 0.1rem 0 0.1rem 0.9rem;
+  margin-bottom: 0.9rem;
+}
+
+.gov-just-date {
+  font-size: 0.85em;
+  color: var(--md-default-fg-color--light);
+  margin: 0 0 0.35rem;
+}
+
+.gov-just-dim {
+  margin: 0 0 0.35rem;
+}
+
+.gov-just-sources {
+  color: var(--md-default-fg-color--light);
+  font-size: 0.92em;
+}
+
 /* Timeline section (graph 3) */
 .gov-timeline {
   margin-top: 1.5rem;

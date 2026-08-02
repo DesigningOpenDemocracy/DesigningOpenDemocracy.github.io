@@ -110,93 +110,43 @@ Standard political spectrum for rough orientation. −10 = far left (revolutiona
 
 ## Scoring justification
 
-Each party's scores, the evidence behind them, and when they were last assessed. Sources: DOD's internal heartbeat audit (July 2026), party websites, Red Flag, parliamentary records, AEC filings, news media.
-
-*The numeric scores below are pulled live from [`party-governance.json`](/data/party-governance.json) — the same file that drives the graphs and Raw data table — so they can't drift out of sync with the rest of the page. To rescore a party, edit the data file; the prose and citations here are maintained separately and should be updated in the same PR.*
+This section is rendered entirely from [`party-governance.json`](/data/party-governance.json) — the same file that drives the graphs, Raw data table, and timeline charts — so there is no separate hand-written write-up to fall out of sync. Each party's `history` array is a dated audit trail: every time a score changed (or was reassessed), that entry carries its own note and source links for each of the three dimensions. To rescore a party or add a new assessment point, edit the data file directly — the justification *is* the data.
 
 ### Australian Labor Party
-*Scored: August 2026*
-
-- **Left–Right <span class="gov-live-score" data-slug="labor" data-field="left_right">−2</span> of 10** — Centre-left, social democratic.
-- **Internal <span class="gov-live-score" data-slug="labor" data-field="internal_governance">3</span> of 10** — Faction-controlled preselections despite formal OMOV rules; weighted parliamentarian votes in some selections; internal reform pushes from Andrew Leigh and John Faulkner stalled. Sources: [Andrew Leigh on factional duopoly](https://theconversation.com/andrew-leigh-calls-out-how-labors-factional-duopoly-is-undermining-the-party-209972) (The Conversation, 2023); Faulkner's one-member-one-vote push documented in parliamentary and party records.
-- **External <span class="gov-live-score" data-slug="labor" data-field="external_reform">4</span> of 10** — Legislated the National Anti-Corruption Commission Act 2022, but "exceptional circumstances" public-hearings threshold criticised by TI Australia and the Centre for Public Integrity as too restrictive ([joint statement](https://transparency.org.au/joint-statement-on-the-national-anti-corruption-commission-bill-2022/)). 25+ private hearings, zero public as of Dec 2025 ([The New Daily](https://www.thenewdaily.com.au/news/politics/australian-politics/2025/12/18/helen-haines-nacc)).
+<div class="gov-justification-body" data-slug="labor"></div>
 
 ### Liberal Party / Coalition
-*Scored: August 2026*
-
-- **Left–Right <span class="gov-live-score" data-slug="liberal" data-field="left_right">+6</span>** — Centre-right, conservative.
-- **Internal <span class="gov-live-score" data-slug="liberal" data-field="internal_governance">2</span> of 10** — Leader/elite-controlled preselections; branch stacking entrenched in some states.
-- **External <span class="gov-live-score" data-slug="liberal" data-field="external_reform">0</span> of 10** — Opposed real-time donation disclosure (federal director called it "too onerous," 2019). Sources: [Canberra Times](https://www.canberratimes.com.au/story/6512005/liberal-party-pushes-back-against-real-time-donations-disclosure/). 2018/19 integrity commission proposal widely criticised as designed to allow only private hearings with no public tip-off pathway ([Crikey](https://www.crikey.com.au/2022/05/17/scott-morrison-promise-federal-icac-with-teeth-haunts-coalition/)).
+<div class="gov-justification-body" data-slug="liberal"></div>
 
 ### Australian Greens
-*Scored: August 2026*
-
-- **Left–Right <span class="gov-live-score" data-slug="greens" data-field="left_right">−6</span>** — Left, environmental/social-justice platform.
-- **Internal <span class="gov-live-score" data-slug="greens" data-field="internal_governance">3</span> of 10** — Leadership not member-elected in all jurisdictions; preselection processes vary by state; member input on policy platform is stronger than candidate/leadership selection.
-- **External <span class="gov-live-score" data-slug="greens" data-field="external_reform">8</span> of 10** — Strongest external reform record of any Australian parliamentary party. Sources: 10-year federal anti-corruption campaign, won inspector oversight amendments to NACC bill Nov 2022 ([Greens release](https://greens.org.au/news/media-release/nacc-bill-passes-senate-historic-vote-critical-greens-amends-integrity)); truth-in-political-advertising bill modelled on SA law ([Greens ACT](https://greens.org.au/act/news/greens-push-truth-electoral-advertising)); sustained "Clean Up Politics" donations-cap/contractor-donor-ban campaign ([greens.org.au](https://greens.org.au/campaigns/clean-politics)).
+<div class="gov-justification-body" data-slug="greens"></div>
 
 ### Victorian Socialists
-*Scored: August 2026*
-
-- **Left–Right <span class="gov-live-score" data-slug="victorian-socialists" data-field="left_right">−9</span>** — Far left, revolutionary socialist; abolition of capitalism as stated goal.
-- **Internal <span class="gov-live-score" data-slug="victorian-socialists" data-field="internal_governance">7</span> of 10** — Constitutional commitment to OMOV and party democracy adopted at Jan 2024 conference as part of new constitution. Sources: [VS Our Aims](https://www.victoriansocialists.org.au/about/our-aims). June 2025 members' conference (360 attendees): Communist Caucus ran alternative leadership slate, given platform time, lost at vote — competitive democratic practice. Conference voted to expand democratic structures into electorate-based branches. Sources: [Red Flag](https://redflag.org.au/article/victorian-socialists-conference-resolves-to-expand-party-organisation/).
-- **External <span class="gov-live-score" data-slug="victorian-socialists" data-field="external_reform">0</span> of 10** — No external governance-reform advocacy. This is deliberate: VS holds that parliament cannot be meaningfully reformed under capitalism, so external advocacy takes the form of building a democratic workers' movement rather than patching existing institutions. The party's aims document describes a democratic socialist vision (recall rights, no special privileges for elected reps, political pluralism) but does not advocate reform of existing parliamentary institutions.
+<div class="gov-justification-body" data-slug="victorian-socialists"></div>
 
 ### One Nation
-*Scored: August 2026*
-
-- **Left–Right <span class="gov-live-score" data-slug="one-nation" data-field="left_right">+8</span>** — Right-populist.
-- **Internal <span class="gov-live-score" data-slug="one-nation" data-field="internal_governance">1</span> of 10** — Leader-dominated; party constitution gives Hanson near-total control.
-- **External <span class="gov-live-score" data-slug="one-nation" data-field="external_reform">−1</span>** — Cuts against governance reform. AEC compliance action forced withdrawal of $800k+ in contested election-spending claims after ~140 unjustified items, June 2026 ([The Guardian](https://www.theguardian.com/australia-news/2026/jun/29/one-nation-pauline-hanson-election-funding-withdrawals-aec-ntwnfb)).
+<div class="gov-justification-body" data-slug="one-nation"></div>
 
 ### Jacqui Lambie Network
-*Scored: August 2026*
-
-- **Left–Right <span class="gov-live-score" data-slug="jacqui-lambie-network" data-field="left_right">+1</span>** — Centre, personality-based.
-- **Internal <span class="gov-live-score" data-slug="jacqui-lambie-network" data-field="internal_governance">2</span> of 10** — Centralised around Lambie; limited evidence of structured member democracy.
-- **External <span class="gov-live-score" data-slug="jacqui-lambie-network" data-field="external_reform">4</span> of 10** — Sustained criticism of integrity-body design since 2018. Sources: Coalition CIC proposal called "lap dog with dentures" ([Canberra Times](https://www.canberratimes.com.au/story/6998300/lambie-lashes-proposed-corruption-watchdog/)). Donations-disclosure bill on party site; parliamentary progress not independently verified.
+<div class="gov-justification-body" data-slug="jacqui-lambie-network"></div>
 
 ### Katter's Australian Party
-*Scored: August 2026*
-
-- **Left–Right <span class="gov-live-score" data-slug="katter" data-field="left_right">+7</span>** — Agrarian conservative, populist.
-- **Internal <span class="gov-live-score" data-slug="katter" data-field="internal_governance">2</span> of 10** — Leader-dominated; Katter family central to party identity and control.
-- **External <span class="gov-live-score" data-slug="katter" data-field="external_reform">1</span> of 10** — Decentralisation calls and NQ partition referendum — policy positions, not a sustained governance-reform program. Source: [bobkatter.com.au](https://www.bobkatter.com.au/katter-calls-for-decentralisation-of-govt-departments-following-self-absorbing-budget).
+<div class="gov-justification-body" data-slug="katter"></div>
 
 ### Pirate Party Australia
-*Scored: August 2026*
-
-- **Left–Right <span class="gov-live-score" data-slug="pirate-party" data-field="left_right">−3</span>** — Centre-left, digital rights and transparency platform.
-- **Internal <span class="gov-live-score" data-slug="pirate-party" data-field="internal_governance">6</span> of 10** — Liquid democracy culture; participatory governance traditions from the international Pirate Party movement. Merged into Fusion Party's federated structure in 2021; continues as distinct internal grouping. Source: [org page](../../organisations/pirate-party-australia.md).
-- **External <span class="gov-live-score" data-slug="pirate-party" data-field="external_reform">9</span> of 10** — Democracy and transparency reform is the party's reason for existing. Initiated the Electoral Royal Commission campaign.
+<div class="gov-justification-body" data-slug="pirate-party"></div>
 
 ### Australian Democrats
-*Scored: August 2026*
-
-- **Left–Right <span class="gov-live-score" data-slug="australian-democrats" data-field="left_right">0</span> of 10** — Centre, re-established.
-- **Internal <span class="gov-live-score" data-slug="australian-democrats" data-field="internal_governance">3</span> of 10** — Standard party structures; limited evidence of member governance beyond electoral processes. Notably lower than the *original* party (1977–2010s), which pioneered whole-membership postal-ballot leader elections and binding policy plebiscites in Australia — see the timeline chart (graph 3) for that discontinuity. Source: [Meg Lees](https://en.wikipedia.org/wiki/Meg_Lees).
-- **External <span class="gov-live-score" data-slug="australian-democrats" data-field="external_reform">7</span> of 10** — Advocates a randomly selected citizens' assembly for Victoria's upper house electoral reform; proportional representation; evidence-based framing citing 2025 Australian Election Study data (48% support for citizens' assemblies). Source: [org page](../../organisations/australian-democrats.md). See DOD blog post: [Victoria's Upper House inquiry: the case for a citizens' assembly](../../blog/posts/2026-05-24-vic-upper-house-citizens-assembly.md) (May 2026).
+<div class="gov-justification-body" data-slug="australian-democrats"></div>
 
 ### Flux Party
-*Scored: August 2026 (based on platform during active period 2016–2022)*
-
-- **Left–Right <span class="gov-live-score" data-slug="flux" data-field="left_right">−2</span> of 10** — Centre-left, deregistered.
-- **Internal <span class="gov-live-score" data-slug="flux" data-field="internal_governance">8</span> of 10** — Issue-Based Direct Democracy: two-token economy (votes + political capital), abstention rewarded as political capital, proportional delegation with revocation. Most sophisticated internal governance design of any Australian party. Sources: [IBDD concept page](../../concepts/issue-based-direct-democracy.md), [org page](../../organisations/flux-party.md).
-- **External <span class="gov-live-score" data-slug="flux" data-field="external_reform">9</span> of 10** — Democracy reform was the entire platform. Deregistered by AEC August 2022; included for historical comparison of governance innovation.
+<div class="gov-justification-body" data-slug="flux"></div>
 
 ### MiVote
-*Scored: August 2026 (based on platform during active period 2014–2019)*
-
-- **Left–Right <span class="gov-live-score" data-slug="mivote" data-field="left_right">−1</span>** — Centre, non-partisan framing, deregistered. Political sibling of Flux Party — both launched 2014–2016 with complementary democracy-reform designs.
-- **Internal <span class="gov-live-score" data-slug="mivote" data-field="internal_governance">7</span> of 10** — Four-destination policy model (not yes/no); structured information pipeline: university research → domain experts → advisory committees (with permanent seats for underrepresented communities) → ethics committee sign-off; 60% supermajority threshold; mandatory mandate binding Senate candidates to aggregated member position. Source: [org page](../../organisations/mivote.md).
-- **External <span class="gov-live-score" data-slug="mivote" data-field="external_reform">8</span> of 10** — Democracy reform was the entire platform. Deregistered ~2019 without electing senators. MiVote Technologies continued in the UK.
+<div class="gov-justification-body" data-slug="mivote"></div>
 
 ### Your Party (UK)
-*Scored: August 2026*
-
-- **Left–Right <span class="gov-live-score" data-slug="your-party" data-field="left_right">−8</span>** — Left, progressive/socialist, international comparator.
-- **Internal <span class="gov-live-score" data-slug="your-party" data-field="internal_governance">9</span> of 10** — Founding conference delegates selected by sortition via the Sortition Foundation: stratified random sample balanced across gender, region, age, ethnicity, disability, and LGBTQ+ status. One of few parties globally using random selection for internal deliberative bodies. Future conferences to include portion of sortition-selected delegates alongside branch-elected delegates. Source: [org page](../../organisations/your-party.md).
-- **External <span class="gov-live-score" data-slug="your-party" data-field="external_reform">6</span> of 10** — Democratic reform in platform (electoral reform, transparency), but also a general-purpose multi-issue party. See [DOD blog post: Your Party is using sortition](https://www.designingopendemocracy.com/blog/2025/12/07/your-party-is-using-sortition/).
+<div class="gov-justification-body" data-slug="your-party"></div>
 
 ## Why this exists
 
@@ -324,13 +274,38 @@ Contributions welcome via PR:
     return '' + v;
   }
 
-  function renderJustificationScores(parties) {
-    document.querySelectorAll('.gov-live-score').forEach(function(el) {
-      var p = parties.find(function(x) { return x.slug === el.dataset.slug; });
-      if (!p) return;
-      var value = p[el.dataset.field];
-      if (value === undefined) return;
-      el.textContent = formatSignedScore(value);
+  function sourceLinksHtml(sources) {
+    if (!sources || !sources.length) return '';
+    var links = sources.map(function(s) {
+      return '<a href="' + s.url + '" target="_blank" rel="noopener">' + (s.label || s.url) + '</a>';
+    }).join(', ');
+    return ' <span class="gov-just-sources">' + (sources.length > 1 ? 'Sources: ' : 'Source: ') + links + '</span>';
+  }
+
+  function justificationDimHtml(label, note, sources) {
+    if (!note) return '';
+    return '<p class="gov-just-dim"><strong>' + label + ':</strong> ' + note + sourceLinksHtml(sources) + '</p>';
+  }
+
+  function renderJustification(parties) {
+    document.querySelectorAll('.gov-justification-body').forEach(function(container) {
+      var p = parties.find(function(x) { return x.slug === container.dataset.slug; });
+      if (!p || !p.history || !p.history.length) return;
+      var sorted = p.history.slice().sort(function(a, b) { return a.date.localeCompare(b.date); });
+      var scoringNoteHtml = p.scoring_note ? '<p class="gov-just-scoring-note"><em>' + p.scoring_note + '</em></p>' : '';
+      var entriesHtml = sorted.map(function(h) {
+        var scoreLine = '<p class="gov-just-date"><strong>' + h.date + '</strong> — ' +
+          'Left–Right ' + formatSignedScore(h.left_right) +
+          ', Internal ' + h.internal_governance + '/10' +
+          ', External ' + formatSignedScore(h.external_reform) + '/10</p>';
+        var dims = [
+          justificationDimHtml('Left–Right', h.left_right_note, h.left_right_sources),
+          justificationDimHtml('Internal', h.internal_note, h.internal_sources),
+          justificationDimHtml('External', h.external_note, h.external_sources)
+        ].join('');
+        return '<div class="gov-just-entry">' + scoreLine + dims + '</div>';
+      }).join('');
+      container.innerHTML = scoringNoteHtml + entriesHtml;
     });
   }
 
@@ -370,7 +345,10 @@ Contributions welcome via PR:
                 const latest = p.history && p.history.length
                   ? p.history.reduce((a, b) => (b.date > a.date ? b : a))
                   : null;
-                if (latest && latest.source) lines.push('Source: ' + latest.source);
+                if (latest) {
+                  const allSources = (latest.internal_sources || []).concat(latest.external_sources || []);
+                  if (allSources.length) lines.push('Source: ' + allSources[0].label);
+                }
                 return lines;
               }
             }
@@ -429,7 +407,9 @@ Contributions welcome via PR:
         var g = partyGlyph(p);
         return {
           label: p.name,
-          data: sorted.map(function(h) { return { x: h.date, y: h[dim.field], note: h.note, source: h.source }; }),
+          data: sorted.map(function(h) {
+            return { x: h.date, y: h[dim.field], note: h[dim.key + '_note'], sources: h[dim.key + '_sources'] };
+          }),
           borderColor: g.color,
           backgroundColor: hexToRgba(g.color, 0.10),
           borderWidth: 2.5,
@@ -458,7 +438,7 @@ Contributions welcome via PR:
                   var raw = ctx.raw;
                   var lines = [ctx.dataset.label + ': ' + raw.y];
                   if (raw.note) lines.push(raw.note.length > 140 ? raw.note.substring(0, 140) + '...' : raw.note);
-                  if (raw.source) lines.push('Source: ' + raw.source);
+                  if (raw.sources && raw.sources.length) lines.push('Source: ' + raw.sources[0].label);
                   return lines;
                 }
               }
@@ -514,7 +494,7 @@ Contributions welcome via PR:
     .then(data => {
       const parties = data.parties;
       renderTable(parties);
-      renderJustificationScores(parties);
+      renderJustification(parties);
 
       const graphConfigs = data.graphs;
       renderScatter('chart-left-right-internal', {
