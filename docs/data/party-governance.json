@@ -464,6 +464,58 @@
       ]
     },
     {
+      "slug": "fusion",
+      "name": "Fusion Party",
+      "country": "AU",
+      "founded": 2021,
+      "left_right": -4,
+      "internal_governance": 5,
+      "external_reform": 7,
+      "notability": 3,
+      "logo": { "path": "/assets/party-logos/au/fusion.png", "license": "CC BY-SA 4.0", "source": "https://commons.wikimedia.org/wiki/File:Fusion-logo-full-colour.png" },
+      "status": "active",
+      "note": "Federation of minor parties (incl. Pirate Party Australia) formed in response to 2021 legislation raising the minimum party-membership threshold from 500 to 1,500. Federated structure — member parties retain autonomy as formal branches. Platform includes an anti-corruption commission, political-donations disclosure above $1,000, and whistleblower protections.",
+      "scoring_note": "Fusion's own website (fusionparty.org.au) returned 403 Forbidden to automated fetches during scoring — internal_governance is sourced from Wikipedia's description of the federated structure only, not the party's own governance documents. Treat that score as more provisional than most other entries on this page.",
+      "history": [
+        {
+          "date": "2021-04", "left_right": -4, "internal_governance": 5, "external_reform": 7,
+          "left_right_note": "Left, progressive/secular-humanist — inherited from founding member parties (Pirate, Secular, Science, Climate Emergency).",
+          "left_right_sources": [{ "label": "Fusion Party (Australia)", "url": "https://en.wikipedia.org/wiki/Fusion_Party_(Australia)" }],
+          "internal_note": "Formation triggered by the Electoral Legislation Amendment (Party Registration Integrity) Bill 2021, which raised the minimum non-parliamentary party membership threshold from 500 to 1,500 — forcing several small parties to amalgamate rather than independently meet the new bar. Pirate Party Australia deregisters as an independent AEC party this month and joins the federated structure as a founding member, retaining its own membership and infrastructure.",
+          "internal_sources": [{ "label": "Fusion Party (Australia)", "url": "https://en.wikipedia.org/wiki/Fusion_Party_(Australia)" }],
+          "external_note": "No electoral test yet at this point — governance-reform platform (see 2022-03 entry) still forming as constituent parties merge.",
+          "external_sources": []
+        },
+        {
+          "date": "2022-03", "left_right": -4, "internal_governance": 5, "external_reform": 7,
+          "left_right_note": "No ideological shift.",
+          "left_right_sources": [],
+          "internal_note": "Science Party and Secular Party deregister (Jan 2022) and merge in; the amalgamation renames to \"FUSION: Science, Pirate, Secular, Climate Emergency,\" formalising the federated structure with each origin party retaining a degree of autonomy as a formal branch.",
+          "internal_sources": [{ "label": "Fusion Party (Australia)", "url": "https://en.wikipedia.org/wiki/Fusion_Party_(Australia)" }],
+          "external_note": "Platform crystallises around transparent government (donations disclosure above $1,000, open access to policy advice), an anti-corruption commission, whistleblower protections, network neutrality, and a constitutional bill of rights — a genuinely multi-front governance-reform platform, though not yet tested at the ballot box.",
+          "external_sources": [{ "label": "Fusion Party (Australia)", "url": "https://en.wikipedia.org/wiki/Fusion_Party_(Australia)" }]
+        },
+        {
+          "date": "2022-05", "left_right": -4, "internal_governance": 5, "external_reform": 7,
+          "left_right_note": "No ideological shift.",
+          "left_right_sources": [],
+          "internal_note": "No structural change recorded at this point.",
+          "internal_sources": [],
+          "external_note": "First electoral test: Senate candidates in every mainland state at the 2022 federal election, 51,676 votes nationally (0.34%); best lower-house result 2.16% in the Division of Dobell. No candidates elected.",
+          "external_sources": [{ "label": "Fusion Party (Australia)", "url": "https://en.wikipedia.org/wiki/Fusion_Party_(Australia)" }]
+        },
+        {
+          "date": "2026-08", "left_right": -4, "internal_governance": 5, "external_reform": 7,
+          "left_right_note": "Left, progressive/secular-humanist.",
+          "left_right_sources": [],
+          "internal_note": "Federated structure persists — member parties (including Pirate Party Australia) retain autonomy as formal branches. Renamed \"FUSION | Planet Rescue | Whistleblower Protection | Innovation\" in Jan 2025; formed a 2025 alliance with the Australian Progressives and Democracy First.",
+          "internal_sources": [{ "label": "Fusion Party (Australia)", "url": "https://en.wikipedia.org/wiki/Fusion_Party_(Australia)" }],
+          "external_note": "Governance-reform platform unchanged (anti-corruption commission, donations disclosure, whistleblower protections, lower voting age to 16). Ran candidates in six states/territories at the 2025 federal election; none elected — still no legislative track record to point to, unlike Greens' NACC amendments.",
+          "external_sources": [{ "label": "Fusion Party (Australia)", "url": "https://en.wikipedia.org/wiki/Fusion_Party_(Australia)" }]
+        }
+      ]
+    },
+    {
       "slug": "australian-democrats",
       "name": "Australian Democrats",
       "country": "AU",
