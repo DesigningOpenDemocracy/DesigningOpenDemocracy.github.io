@@ -11,9 +11,21 @@ concepts:
   - direct-democracy
   - e-government
   - representative-democracy
+contact:
+  email: admin@mivote.org.au
+  source: MiVote's own "Values & Vision" PDF (see Links below), sourced via Wayback Machine snapshot of mivote.org.au
+  checked: 2026-08-02
+  note: "Historical contact — MiVote is defunct; address unlikely to still be monitored."
 ---
 
-MiVote was an Australian civic technology initiative and political party founded by Adam Jacoby. Its core argument was that representative democracy as currently practised is structurally broken: representatives make thousands of decisions over four years based on a single election, party ideology overrides constituent preferences, and citizens are never meaningfully consulted on individual issues. The organisation deregistered around 2019 without achieving its stated goal of electing senators.
+![MiVote logo](mivote-mark.png)
+
+MiVote was an Australian civic technology initiative and political party founded by Adam Jacoby, launched as an initiative of [Centre for the Future](#key-people) — a "globally networked enterprise" led by futurist Dr Richard Hames. Its core argument was that representative democracy as currently practised is structurally broken: representatives make thousands of decisions over four years based on a single election, party ideology overrides constituent preferences, and citizens are never meaningfully consulted on individual issues. MiVote's own materials cited a 2006 ABS finding that political party membership represented just 1.3% of the Australian adult population — the rationale being that the other 98.7% had no equivalent channel to shape policy outside election day. The organisation deregistered around 2019 without achieving its stated goal of electing senators.
+
+## Key people
+
+- **Adam Jacoby** — Director, Centre for the Future, and author of MiVote's founding "Values & Vision" document. Described in that document as "a serial innovator with a twenty-year global history of starting fast growth businesses in sport, information and media," leading the MiVote movement. Later took the technology to the UK as MiVote Technologies — see [What came after](#what-came-after) below.
+- **Dr Richard Hames** — CEO of Centre for the Future and sponsor of MiVote. A "philosopher-activist" whose stated mission was "to make the world work better for everyone," working on "radically disruptive ideas" and "better social architectures for organising, governing and leading."
 
 ## The four-destination model
 
@@ -46,6 +58,12 @@ The intention was that by the time a voter saw the four destinations and their s
 
 **Term limits.** Two terms maximum; senators were required to mentor their successors.
 
+**Lower voting age.** Movement membership was open to every citizen aged 16 and over, regardless of voting background, prior party membership, or ideology — a deliberate departure from the standard voting age of 18.
+
+**Equality of opportunity and meritocracy.** MiVote's values framing held that success should be determined by capability rather than social status, inherited wealth, gender, race, religion, or sexual preference — explicitly distinguishing equality of *opportunity* from equality of *outcome*.
+
+**Secular commitment.** MiVote stated that religion had no place in policy creation, while welcoming members from all faiths and belief systems.
+
 ## 2018 goals
 
 At the December 2016 Future Assembly presentation, MiVote set public targets for the 2019 federal election: three senators elected, one million members, and 5,000 volunteers. For context, the combined formal membership of all major Australian parties at the time was approximately 81,000. These goals were not achieved. The Australian party deregistered before the 2019 election.
@@ -56,8 +74,9 @@ The movement and its technology did not end with the Australian party's deregist
 
 ## Links
 
-- Website: [mivote.org.au](https://web.archive.org/web/*/https://www.mivote.org.au/) *(archived)*
-- Video: [Adam Jacoby presents MiVote at Future Assembly, December 2016](https://www.youtube.com/watch?v=sDPn9QwKi6s) *(primary source for the sections above; transcript is AI-generated and may contain transcription errors)*
+- Website: [mivote.org.au](https://web.archive.org/web/20190718233549/https://www.mivote.org.au/) *(archived, last known snapshot)*
+- Video: [Adam Jacoby presents MiVote at Future Assembly, December 2016](https://www.youtube.com/watch?v=sDPn9QwKi6s) *(primary source for the "four-destination model," "information pipeline," and "platform principles" sections above; transcript is AI-generated and may contain transcription errors)*
+- Document: [MiVote Values & Vision](mivote-values-vision.pdf) *(MiVote's own founding document, sourced via Wayback Machine — primary source for the "Key people" section, the ABS 1.3% statistic, the logo, and the lower-voting-age/equality-of-opportunity/secular-commitment principles above)*
 
 ## See also
 

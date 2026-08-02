@@ -581,6 +581,7 @@
       "internal_governance": 7,
       "external_reform": 8,
       "notability": 2,
+      "logo": { "path": "/assets/party-logos/au/mivote.png", "license": "MiVote's own official branding", "source": "https://www.designingopendemocracy.com/organisations/mivote/ (extracted from MiVote's own \"Values & Vision\" PDF, sourced via Wayback Machine)" },
       "status": "deregistered",
       "note": "Four-destination policy model; research-to-voter information pipeline with university research, domain experts, advisory committees, and ethics committee sign-off; 60% supermajority threshold; mandatory mandate binding Senate candidates to member vote. Deregistered ~2019.",
       "scoring_note": "Scored August 2026 based on platform during the party's active period, 2014–2019.",
@@ -769,7 +770,7 @@
       "internal_governance": 9,
       "external_reform": 6,
       "notability": 8,
-      "logo": { "path": "/assets/party-logos/gb/your-party.svg", "license": "Public domain", "source": "https://commons.wikimedia.org/wiki/File:This_Is_Your_Party.svg" },
+      "logo": { "path": "/assets/party-logos/gb/your-party.svg", "license": "Public domain", "source": "https://commons.wikimedia.org/wiki/File:Your_Party_logo.svg" },
       "status": "active",
       "note": "Sortition-selected founding conference delegates (via Sortition Foundation) — one of few parties globally using random selection for internal deliberative bodies. International comparator. General-purpose progressive platform alongside democratic reform.",
       "history": [
