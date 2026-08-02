@@ -48,7 +48,7 @@ Standard political spectrum for rough orientation. −10 = far left (revolutiona
 
 ### Parties scored
 
-11 Australian parties (active, except Flux which is included for historical comparison of governance innovation) plus 1 international comparator. Selection: all parties assessed in the internal heartbeat AU party audit <!-- see ../../internal-heartbeat/2026-07-31-au-parties-democracy-reform-assessment.md --> with sufficient documentation. Additional international comparators (Podemos, M5S, German Pirate Party, Alternativet) are candidates for future scoring pending independent verification.
+11 Australian parties (active, except Flux and MiVote, both included for historical comparison of governance innovation despite deregistration) plus 1 international comparator. Selection: all parties assessed in the internal heartbeat AU party audit <!-- see ../../internal-heartbeat/2026-07-31-au-parties-democracy-reform-assessment.md --> with sufficient documentation. Additional international comparators (Podemos, M5S, German Pirate Party, Alternativet) are candidates for future scoring pending independent verification.
 
 ## Graphs
 
@@ -71,10 +71,21 @@ Standard political spectrum for rough orientation. −10 = far left (revolutiona
 
 <div class="gov-chart-wrapper gov-timeline" id="gov-timeline-section">
   <h3>3. Score Changes Over Time</h3>
-  <p class="chart-hint">Toggle parties to compare how internal and external governance scores shift across review cycles. Default shows the three parties that best illustrate the framework's internal-vs-external distinction. Chart collapses when nothing is selected.</p>
+  <p class="chart-hint">Toggle parties to compare how internal and external governance scores shift across review cycles. Default shows the three parties that best illustrate the framework's internal-vs-external distinction. Charts collapse when nothing is selected.</p>
   <div class="timeline-pills" id="timeline-pills"></div>
-  <div class="chart-container" id="chart-timeline-container" style="display:none">
-    <canvas id="chart-timeline"></canvas>
+  <div class="gov-timeline-charts" id="chart-timeline-container" style="display:none">
+    <div>
+      <p class="timeline-chart-label">Internal governance</p>
+      <div class="chart-container">
+        <canvas id="chart-timeline-internal"></canvas>
+      </div>
+    </div>
+    <div>
+      <p class="timeline-chart-label">External reform advocacy</p>
+      <div class="chart-container">
+        <canvas id="chart-timeline-external"></canvas>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -161,8 +172,8 @@ Each party's scores, the evidence behind them, and when they were last assessed.
 *Scored: August 2026*
 
 - **Left–Right 0 of 10** — Centre, re-established.
-- **Internal 3 of 10** — Standard party structures; limited evidence of member governance beyond electoral processes.
-- **External 7 of 10** — Advocates a randomly selected citizens' assembly for Victoria's upper house electoral reform; proportional representation; evidence-based framing citing 2025 Australian Election Study data (48% support for citizens' assemblies). Source: [org page](../../organisations/australian-democrats.md). See DOD blog post: Victoria's Upper House inquiry (May 2026).
+- **Internal 3 of 10** — Standard party structures; limited evidence of member governance beyond electoral processes. Notably lower than the *original* party (1977–2010s), which pioneered whole-membership postal-ballot leader elections and binding policy plebiscites in Australia — see the timeline chart (graph 3) for that discontinuity. Source: [Meg Lees](https://en.wikipedia.org/wiki/Meg_Lees).
+- **External 7 of 10** — Advocates a randomly selected citizens' assembly for Victoria's upper house electoral reform; proportional representation; evidence-based framing citing 2025 Australian Election Study data (48% support for citizens' assemblies). Source: [org page](../../organisations/australian-democrats.md). See DOD blog post: [Victoria's Upper House inquiry: the case for a citizens' assembly](../../blog/posts/2026-05-24-vic-upper-house-citizens-assembly.md) (May 2026).
 
 ### Flux Party
 *Scored: August 2026 (based on platform during active period 2016–2022)*
@@ -216,15 +227,21 @@ Contributions welcome via PR:
 (function() {
   const DATA_URL = '/data/party-governance.json';
 
+  // Read the page's actual (theme-adaptive) colors rather than hardcoding
+  // light-mode values — this site runs a single dark "slate" palette, so a
+  // hardcoded dark grey/black would be near-invisible against it.
+  const rootStyle = getComputedStyle(document.documentElement);
+  const fgText = rootStyle.getPropertyValue('--md-default-fg-color--light').trim() || '#aaa';
+  const fgGrid = rootStyle.getPropertyValue('--md-default-fg-color--lightest').trim() || 'rgba(255,255,255,0.1)';
+
   const COLORS = {
-    grid: 'rgba(0,0,0,0.06)',
-    zero: 'rgba(0,0,0,0.25)',
-    text: '#666',
-    timeline: {
-      internal: { bg: 'rgba(62, 149, 205, 0.15)', border: '#3e95cd' },
-      external: { bg: 'rgba(255, 140, 0, 0.15)', border: '#ff8c00' }
-    }
+    grid: fgGrid,
+    zero: fgText,
+    text: fgText
   };
+
+  Chart.defaults.color = fgText;
+  Chart.defaults.borderColor = fgGrid;
 
   const PARTY_GLYPHS = {
     labor:                  { initials: 'ALP',  color: '#e1393e' },
@@ -282,7 +299,7 @@ Contributions welcome via PR:
     };
   }
 
-  let timelineChart = null;
+  let timelineCharts = { internal: null, external: null };
 
   function renderTable(parties) {
     const tbody = document.querySelector('#gov-data-table tbody');
@@ -332,6 +349,10 @@ Contributions welcome via PR:
                 lines.push('Left→Right: ' + p.left_right);
                 if (p.notability) lines.push('Notability: ' + p.notability + '/10');
                 if (p.note) lines.push(p.note.substring(0, 120) + (p.note.length > 120 ? '...' : ''));
+                const latest = p.history && p.history.length
+                  ? p.history.reduce((a, b) => (b.date > a.date ? b : a))
+                  : null;
+                if (latest && latest.source) lines.push('Source: ' + latest.source);
                 return lines;
               }
             }
@@ -357,8 +378,16 @@ Contributions welcome via PR:
     });
   }
 
+  var TIMELINE_DIMENSIONS = [
+    { key: 'internal', field: 'internal_governance', canvasId: 'chart-timeline-internal', yLabel: 'Internal governance score' },
+    { key: 'external', field: 'external_reform', canvasId: 'chart-timeline-external', yLabel: 'External reform score' }
+  ];
+
   function renderTimeline(parties, selected) {
-    if (timelineChart) { timelineChart.destroy(); timelineChart = null; }
+    TIMELINE_DIMENSIONS.forEach(function(dim) {
+      if (timelineCharts[dim.key]) { timelineCharts[dim.key].destroy(); timelineCharts[dim.key] = null; }
+    });
+
     var container = document.getElementById('chart-timeline-container');
     if (!selected || selected.length === 0) {
       container.style.display = 'none';
@@ -366,67 +395,71 @@ Contributions welcome via PR:
     }
     container.style.display = '';
 
-    var datasets = [];
+    var selectedParties = selected
+      .map(function(slug) { return parties.find(function(x) { return x.slug === slug; }); })
+      .filter(function(p) { return p && p.history && p.history.length > 0; });
+
     var allLabels = new Set();
-    selected.forEach(function(slug) {
-      var p = parties.find(function(x) { return x.slug === slug; });
-      if (!p || !p.history || p.history.length < 1) return;
-      var sorted = p.history.slice().sort(function(a, b) { return a.date.localeCompare(b.date); });
-      var g = partyGlyph(p);
-      sorted.forEach(function(h) { allLabels.add(h.date); });
-
-      datasets.push({
-        label: p.name + ' — internal',
-        data: sorted.map(function(h) { return { x: h.date, y: h.internal_governance }; }),
-        borderColor: g.color,
-        backgroundColor: hexToRgba(g.color, 0.10),
-        borderWidth: 2.5,
-        pointRadius: 4,
-        pointHoverRadius: 6,
-        tension: 0.1
-      });
-      datasets.push({
-        label: p.name + ' — external',
-        data: sorted.map(function(h) { return { x: h.date, y: h.external_reform }; }),
-        borderColor: g.color,
-        backgroundColor: 'transparent',
-        borderWidth: 2,
-        borderDash: [5, 3],
-        pointRadius: 3,
-        pointHoverRadius: 5,
-        tension: 0.1
-      });
+    selectedParties.forEach(function(p) {
+      p.history.forEach(function(h) { allLabels.add(h.date); });
     });
-
     var labels = Array.from(allLabels).sort();
 
-    var ctx = document.getElementById('chart-timeline').getContext('2d');
-    timelineChart = new Chart(ctx, {
-      type: 'line',
-      data: { labels: labels, datasets: datasets },
-      options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        interaction: { intersect: false, mode: 'index' },
-        plugins: {
-          legend: {
-            position: 'bottom',
-            labels: { usePointStyle: true, boxWidth: 8, padding: 12, font: { size: 10 } }
-          }
-        },
-        scales: {
-          x: {
-            type: 'category',
-            title: { display: true, text: 'Date', color: COLORS.text }
+    TIMELINE_DIMENSIONS.forEach(function(dim) {
+      var datasets = selectedParties.map(function(p) {
+        var sorted = p.history.slice().sort(function(a, b) { return a.date.localeCompare(b.date); });
+        var g = partyGlyph(p);
+        return {
+          label: p.name,
+          data: sorted.map(function(h) { return { x: h.date, y: h[dim.field], note: h.note, source: h.source }; }),
+          borderColor: g.color,
+          backgroundColor: hexToRgba(g.color, 0.10),
+          borderWidth: 2.5,
+          pointRadius: 4,
+          pointHoverRadius: 6,
+          tension: 0.1
+        };
+      });
+
+      var ctx = document.getElementById(dim.canvasId).getContext('2d');
+      timelineCharts[dim.key] = new Chart(ctx, {
+        type: 'line',
+        data: { labels: labels, datasets: datasets },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          interaction: { intersect: false, mode: 'index' },
+          plugins: {
+            legend: {
+              position: 'bottom',
+              labels: { usePointStyle: true, boxWidth: 8, padding: 12, font: { size: 10 } }
+            },
+            tooltip: {
+              callbacks: {
+                label: function(ctx) {
+                  var raw = ctx.raw;
+                  var lines = [ctx.dataset.label + ': ' + raw.y];
+                  if (raw.note) lines.push(raw.note.length > 140 ? raw.note.substring(0, 140) + '...' : raw.note);
+                  if (raw.source) lines.push('Source: ' + raw.source);
+                  return lines;
+                }
+              }
+            }
           },
-          y: {
-            min: 0,
-            max: 10,
-            ticks: { stepSize: 1 },
-            title: { display: true, text: 'Score', color: COLORS.text }
+          scales: {
+            x: {
+              type: 'category',
+              title: { display: true, text: 'Date', color: COLORS.text }
+            },
+            y: {
+              min: dim.key === 'external' ? -2 : 0,
+              max: 10,
+              ticks: { stepSize: 1 },
+              title: { display: true, text: dim.yLabel, color: COLORS.text }
+            }
           }
         }
-      }
+      });
     });
   }
 

@@ -1,7 +1,7 @@
 {
   "meta": {
-    "version": "2026-08-02-001",
-    "description": "Multi-year governance structure and ideological scoring for Australian political parties, with international comparators. Latest scores are at the top level (for scatter plots); history arrays track changes over time (for timeline chart). Scores are approximate and deliberately coarse — see project page for full methodology.",
+    "version": "2026-08-02-002",
+    "description": "Multi-year governance structure and ideological scoring for Australian political parties, with international comparators. Latest scores are at the top level (for scatter plots); history arrays track changes over time (for timeline chart). Scores are approximate and deliberately coarse — see project page for full methodology. Each history entry may carry an optional 'source' URL backing that datapoint; entries without one are either unverified estimates (flagged in the note) or backed only by the private internal heartbeat audit.",
     "dimensions": {
       "left_right": {
         "range": [-10, 10],
@@ -34,14 +34,14 @@
       "status": "active",
       "note": "Faction-controlled preselections despite formal OMOV rules; weighted parliamentarian votes in some selections; internal reform pushes (Leigh, Faulkner) stalled.",
       "history": [
-        { "date": "1967-02", "left_right": -3, "internal_governance": 3, "external_reform": 1, "note": "Whitlam becomes leader. Pushes reform of party structure away from pure union control toward broader branch membership input. 36 faceless men image — federal conference still union-dominated but reform movement active." },
-        { "date": "1983-03", "left_right": -2, "internal_governance": 2, "external_reform": 1, "note": "Hawke government. Factional system formalised at national level (Centre-Left, Right, Left factions). Candidate selection largely determined by factional deals." },
-        { "date": "2007-12", "left_right": -2, "internal_governance": 3, "external_reform": 1, "note": "Rudd elected PM. Platform of internal party reform, greater member engagement. Some state branches experiment with OMOV preselections. Factional control persists federally." },
-        { "date": "2010-06", "left_right": -2, "internal_governance": 2, "external_reform": 1, "note": "Rudd rolled by Gillard in factional leadership coup. Factions reassert control. Internal reform agenda sidelined." },
-        { "date": "2013-07", "left_right": -2, "internal_governance": 4, "external_reform": 1, "note": "Rudd returns; pushes major internal reforms including stronger OMOV provisions for leadership and preselection. Faulkner's reform agenda gains brief traction." },
-        { "date": "2014-09", "left_right": -2, "internal_governance": 3, "external_reform": 1, "note": "Post-election loss. Reforms largely stalled. Factional duopoly re-established. Andrew Leigh later publicly criticises the 'duopoly' (2023)." },
-        { "date": "2022-11", "left_right": -2, "internal_governance": 3, "external_reform": 4, "note": "National Anti-Corruption Commission Act enacted. External reform score rises, but exceptional-circumstances public-hearings threshold criticised by TI Australia and CPI." },
-        { "date": "2026-08", "left_right": -2, "internal_governance": 3, "external_reform": 4, "note": "Current. NACC has held 25+ private hearings and zero public hearings as of Dec 2025. Factional preselection control persists. Donation disclosure reforms legislated 2025." }
+        { "date": "1967-02", "left_right": -3, "internal_governance": 3, "external_reform": 1, "note": "Whitlam becomes leader. Pushes reform of party structure away from pure union control toward broader branch membership input. 36 faceless men image — federal conference still union-dominated but reform movement active.", "source": "https://en.wikipedia.org/wiki/Gough_Whitlam" },
+        { "date": "1983-03", "left_right": -2, "internal_governance": 2, "external_reform": 1, "note": "Hawke government. Factional system formalised at national level (Centre-Left, Right, Left factions). Candidate selection largely determined by factional deals.", "source": "https://en.wikipedia.org/wiki/Bob_Hawke" },
+        { "date": "2007-12", "left_right": -2, "internal_governance": 3, "external_reform": 1, "note": "Rudd elected PM. Platform of internal party reform, greater member engagement. Some state branches experiment with OMOV preselections. Factional control persists federally.", "source": "https://en.wikipedia.org/wiki/Kevin_Rudd" },
+        { "date": "2010-06", "left_right": -2, "internal_governance": 2, "external_reform": 1, "note": "Rudd rolled by Gillard in factional leadership coup. Factions reassert control. Internal reform agenda sidelined.", "source": "https://en.wikipedia.org/wiki/2010_Australian_Labor_Party_leadership_spill" },
+        { "date": "2013-07", "left_right": -2, "internal_governance": 4, "external_reform": 1, "note": "Rudd returns; pushes major internal reforms including stronger OMOV provisions for leadership and preselection. Faulkner's reform agenda gains brief traction.", "source": "https://en.wikipedia.org/wiki/2013_Australian_Labor_Party_leadership_spill" },
+        { "date": "2014-09", "left_right": -2, "internal_governance": 3, "external_reform": 1, "note": "Post-election loss. Reforms largely stalled. Factional duopoly re-established. Andrew Leigh later publicly criticises the 'duopoly' (2023).", "source": "https://theconversation.com/andrew-leigh-calls-out-how-labors-factional-duopoly-is-undermining-the-party-209972" },
+        { "date": "2022-11", "left_right": -2, "internal_governance": 3, "external_reform": 4, "note": "National Anti-Corruption Commission Act enacted. External reform score rises, but exceptional-circumstances public-hearings threshold criticised by TI Australia and CPI.", "source": "https://transparency.org.au/joint-statement-on-the-national-anti-corruption-commission-bill-2022/" },
+        { "date": "2026-08", "left_right": -2, "internal_governance": 3, "external_reform": 4, "note": "Current. NACC has held 25+ private hearings and zero public hearings as of Dec 2025. Factional preselection control persists. Donation disclosure reforms legislated 2025.", "source": "https://www.thenewdaily.com.au/news/politics/australian-politics/2025/12/18/helen-haines-nacc" }
       ]
     },
     {
@@ -56,11 +56,11 @@
       "status": "active",
       "note": "Opposed real-time donation disclosure (2019); opposed truth-in-advertising bill; 2018/19 integrity commission proposal widely criticised as designed to hold only private hearings.",
       "history": [
-        { "date": "1944-10", "left_right": 7, "internal_governance": 3, "external_reform": 0, "note": "Founded by Menzies. Branch-based structure but elite-dominated; preselection controlled by state executives, not broad membership." },
-        { "date": "1980-01", "left_right": 6, "internal_governance": 2, "external_reform": 0, "note": "Fraser era. Centralised party control; branch stacking becomes entrenched practice in NSW and Queensland." },
-        { "date": "2007-12", "left_right": 6, "internal_governance": 2, "external_reform": 0, "note": "Howard era ends. Preselection remains faction/executive-controlled. No significant internal governance reform." },
-        { "date": "2019-05", "left_right": 6, "internal_governance": 2, "external_reform": 0, "note": "Federal director calls real-time donation disclosure 'too onerous'. Party opposes truth-in-advertising bill." },
-        { "date": "2026-08", "left_right": 6, "internal_governance": 2, "external_reform": 0, "note": "Current. No positive governance-reform record found. 2018/19 integrity commission proposal widely criticised as designed to hold only private hearings." }
+        { "date": "1944-10", "left_right": 7, "internal_governance": 3, "external_reform": 0, "note": "Founded by Menzies. Branch-based structure but elite-dominated; preselection controlled by state executives, not broad membership.", "source": "https://en.wikipedia.org/wiki/Robert_Menzies" },
+        { "date": "1980-01", "left_right": 6, "internal_governance": 2, "external_reform": 0, "note": "Fraser era. Centralised party control; branch stacking becomes entrenched practice in NSW and Queensland.", "source": "https://en.wikipedia.org/wiki/Malcolm_Fraser" },
+        { "date": "2007-12", "left_right": 6, "internal_governance": 2, "external_reform": 0, "note": "Howard era ends. Preselection remains faction/executive-controlled. No significant internal governance reform.", "source": "https://en.wikipedia.org/wiki/John_Howard" },
+        { "date": "2019-05", "left_right": 6, "internal_governance": 2, "external_reform": 0, "note": "Federal director calls real-time donation disclosure 'too onerous'. Party opposes truth-in-advertising bill.", "source": "https://www.canberratimes.com.au/story/6512005/liberal-party-pushes-back-against-real-time-donations-disclosure/" },
+        { "date": "2026-08", "left_right": 6, "internal_governance": 2, "external_reform": 0, "note": "Current. No positive governance-reform record found. 2018/19 integrity commission proposal widely criticised as designed to hold only private hearings.", "source": "https://www.crikey.com.au/2022/05/17/scott-morrison-promise-federal-icac-with-teeth-haunts-coalition/" }
       ]
     },
     {
@@ -75,10 +75,10 @@
       "status": "active",
       "note": "Leadership not member-elected in all jurisdictions; varied preselection processes by state. Strong external record: 10-year federal anti-corruption campaign, truth-in-advertising bill, donation cap advocacy.",
       "history": [
-        { "date": "1992-08", "left_right": -6, "internal_governance": 3, "external_reform": 3, "note": "Founded from merger of state-based green parties. Decentralised federation model — state branches retain significant autonomy. Leadership and preselection processes vary by state. Early platform includes proportional representation and donation reform." },
-        { "date": "2010-08", "left_right": -6, "internal_governance": 3, "external_reform": 5, "note": "First federal lower house seat (Bandt, Melbourne). Federal anti-corruption body campaign begins to take shape. Donation reform advocacy intensifies." },
-        { "date": "2022-11", "left_right": -6, "internal_governance": 3, "external_reform": 8, "note": "NACC bill passes Senate with Greens amendments (inspector oversight powers). 10-year campaign delivers concrete win. Internal governance unchanged — leadership still not universally member-elected." },
-        { "date": "2026-08", "left_right": -6, "internal_governance": 3, "external_reform": 8, "note": "Current. Truth-in-advertising bill; Clean Up Politics campaign (donations caps, contractor donor bans) ongoing. Internal governance remains ~3 — the story is rising external reform advocacy against stable internal structure." }
+        { "date": "1992-08", "left_right": -6, "internal_governance": 3, "external_reform": 3, "note": "Founded from merger of state-based green parties. Decentralised federation model — state branches retain significant autonomy. Leadership and preselection processes vary by state. Early platform includes proportional representation and donation reform.", "source": "https://en.wikipedia.org/wiki/Australian_Greens" },
+        { "date": "2010-08", "left_right": -6, "internal_governance": 3, "external_reform": 5, "note": "First federal lower house seat (Bandt, Melbourne). Federal anti-corruption body campaign begins to take shape. Donation reform advocacy intensifies.", "source": "https://en.wikipedia.org/wiki/Adam_Bandt" },
+        { "date": "2022-11", "left_right": -6, "internal_governance": 3, "external_reform": 8, "note": "NACC bill passes Senate with Greens amendments (inspector oversight powers). 10-year campaign delivers concrete win. Internal governance unchanged — leadership still not universally member-elected.", "source": "https://greens.org.au/news/media-release/nacc-bill-passes-senate-historic-vote-critical-greens-amends-integrity" },
+        { "date": "2026-08", "left_right": -6, "internal_governance": 3, "external_reform": 8, "note": "Current. Truth-in-advertising bill; Clean Up Politics campaign (donations caps, contractor donor bans) ongoing. Internal governance remains ~3 — the story is rising external reform advocacy against stable internal structure.", "source": "https://greens.org.au/campaigns/clean-politics" }
       ]
     },
     {
@@ -94,8 +94,8 @@
       "note": "Constitutional OMOV (adopted Jan 2024); competitive conference elections with minority faction platform rights; electorate-based branch structure. No external reform advocacy — revolutionary, not reformist (does not believe parliament can be meaningfully reformed under capitalism).",
       "history": [
         { "date": "2022-01", "left_right": -9, "internal_governance": 4, "external_reform": 0, "note": "Estimate — prior to formal constitutional OMOV. Party had de facto democratic culture and volunteer-based structure, but formal member governance mechanisms not yet codified in constitution. Verify with party records." },
-        { "date": "2024-01", "left_right": -9, "internal_governance": 6, "external_reform": 0, "note": "Constitutional OMOV and party democracy adopted at Jan 2024 conference. Aims document adopted as part of new constitution: 'commitment to party democracy, freedom of debate and the principle of one member one vote.'" },
-        { "date": "2025-06", "left_right": -9, "internal_governance": 7, "external_reform": 0, "note": "Electorate-based branch structures adopted at June 2025 conference. Competitive faction platform demonstrated: Communist Caucus ran alternative leadership slate, given platform time, lost at vote. 360 attendees." },
+        { "date": "2024-01", "left_right": -9, "internal_governance": 6, "external_reform": 0, "note": "Constitutional OMOV and party democracy adopted at Jan 2024 conference. Aims document adopted as part of new constitution: 'commitment to party democracy, freedom of debate and the principle of one member one vote.'", "source": "https://www.victoriansocialists.org.au/about/our-aims" },
+        { "date": "2025-06", "left_right": -9, "internal_governance": 7, "external_reform": 0, "note": "Electorate-based branch structures adopted at June 2025 conference. Competitive faction platform demonstrated: Communist Caucus ran alternative leadership slate, given platform time, lost at vote. 360 attendees.", "source": "https://redflag.org.au/article/victorian-socialists-conference-resolves-to-expand-party-organisation/" },
         { "date": "2026-08", "left_right": -9, "internal_governance": 7, "external_reform": 0, "note": "Current. Reassessed from heartbeat 'too thin' after VS member counter-feedback. Deliberate non-reformist stance — external advocacy is building a democratic workers' movement, not patching parliament." }
       ]
     },
@@ -111,7 +111,10 @@
       "status": "active",
       "note": "Leader-dominated structure. AEC compliance action forced withdrawal of $800k+ contested election-spending claims (June 2026).",
       "history": [
-        { "date": "2026-08", "left_right": 8, "internal_governance": 1, "external_reform": -1, "note": "Initial scoring. AEC action June 2026." }
+        { "date": "1997-04", "left_right": 8, "internal_governance": 1, "external_reform": 0, "note": "Founded by Pauline Hanson after her expulsion from the Liberal Party. Leader-dominated from inception; no member primaries or competitive internal ballots.", "source": "https://en.wikipedia.org/wiki/Pauline_Hanson%27s_One_Nation" },
+        { "date": "1998-06", "left_right": 8, "internal_governance": 1, "external_reform": 0, "note": "AEC deregistration after a court found the party's registration relied on misrepresented membership numbers; public leadership feud between Hanson, David Oldfield and David Ettridge over control of the party. Reinforces clique/leader control rather than member governance.", "source": "https://en.wikipedia.org/wiki/Pauline_Hanson%27s_One_Nation" },
+        { "date": "2016-07", "left_right": 8, "internal_governance": 1, "external_reform": 0, "note": "Federal resurgence: four senators elected at the 2016 double-dissolution election. Leader-dominated structure persists — several elected senators (e.g. Rodney Culleton, Brian Burston) subsequently split from the party citing centralised control.", "source": "https://en.wikipedia.org/wiki/Pauline_Hanson%27s_One_Nation" },
+        { "date": "2026-08", "left_right": 8, "internal_governance": 1, "external_reform": -1, "note": "Current. AEC compliance action, June 2026.", "source": "https://www.theguardian.com/australia-news/2026/jun/29/one-nation-pauline-hanson-election-funding-withdrawals-aec-ntwnfb" }
       ]
     },
     {
@@ -126,7 +129,9 @@
       "status": "active",
       "note": "Sustained integrity-body criticism since 2018; donations-disclosure bill on party site.",
       "history": [
-        { "date": "2026-08", "left_right": 1, "internal_governance": 2, "external_reform": 4, "note": "Initial scoring. Integrity-body advocacy since 2018." }
+        { "date": "2015-11", "left_right": 1, "internal_governance": 2, "external_reform": 1, "note": "Founded by Jacqui Lambie after departing the Palmer United Party. Personality-centred structure from the outset; broad populist platform, not yet focused specifically on integrity/accountability mechanisms.", "source": "https://en.wikipedia.org/wiki/Jacqui_Lambie_Network" },
+        { "date": "2019-05", "left_right": 1, "internal_governance": 2, "external_reform": 4, "note": "Lambie re-elected to the Senate under the JLN banner, having been removed from parliament in 2017 by the Section 44 dual-citizenship crisis. Integrity-body criticism (begun 2018) now an established, sustained position.", "source": "https://en.wikipedia.org/wiki/Jacqui_Lambie_Network" },
+        { "date": "2026-08", "left_right": 1, "internal_governance": 2, "external_reform": 4, "note": "Current. Integrity-body advocacy sustained since 2018.", "source": "https://www.canberratimes.com.au/story/6998300/lambie-lashes-proposed-corruption-watchdog/" }
       ]
     },
     {
@@ -141,7 +146,9 @@
       "status": "active",
       "note": "Decentralisation calls and NQ partition referendum — policy positions, not sustained reform program.",
       "history": [
-        { "date": "2026-08", "left_right": 7, "internal_governance": 2, "external_reform": 1, "note": "Initial scoring." }
+        { "date": "2011-11", "left_right": 7, "internal_governance": 2, "external_reform": 1, "note": "Founded by long-serving independent MP Bob Katter. Family/leader-centred control from the outset; decentralisation of federal departments already part of the founding platform.", "source": "https://en.wikipedia.org/wiki/Katter%27s_Australian_Party" },
+        { "date": "2012-03", "left_right": 7, "internal_governance": 2, "external_reform": 1, "note": "Electoral high-water mark: wins seats at the Queensland state election, including Bob Katter's son Robbie Katter — reinforcing family-centred control of the party.", "source": "https://en.wikipedia.org/wiki/2012_Queensland_state_election" },
+        { "date": "2026-08", "left_right": 7, "internal_governance": 2, "external_reform": 1, "note": "Current. Decentralisation calls and NQ partition referendum — policy positions, not a sustained reform program.", "source": "https://www.bobkatter.com.au/katter-calls-for-decentralisation-of-govt-departments-following-self-absorbing-budget" }
       ]
     },
     {
@@ -156,7 +163,10 @@
       "status": "active",
       "note": "Liquid democracy culture; merged into Fusion Party's federated structure 2021. Democracy and transparency reform is the party's reason for existing.",
       "history": [
-        { "date": "2026-08", "left_right": -3, "internal_governance": 6, "external_reform": 9, "note": "Initial scoring. Merged into Fusion 2021 but continues as distinct internal grouping." }
+        { "date": "2009-01", "left_right": -3, "internal_governance": 6, "external_reform": 9, "note": "Founded as part of the international Pirate Party movement. Liquid democracy culture and digital-rights/transparency reform were part of the platform from inception.", "source": "https://en.wikipedia.org/wiki/Pirate_Party_Australia" },
+        { "date": "2013-09", "left_right": -3, "internal_governance": 6, "external_reform": 9, "note": "First federal election contest with Senate candidates across multiple states, building profile around liquid democracy and transparency reform.", "source": "https://en.wikipedia.org/wiki/Pirate_Party_Australia" },
+        { "date": "2021-04", "left_right": -3, "internal_governance": 6, "external_reform": 9, "note": "Voluntarily deregisters as an independent AEC party and merges into the Fusion Party's federated structure, continuing as a distinct internal grouping with its own membership and infrastructure.", "source": "https://en.wikipedia.org/wiki/Pirate_Party_Australia" },
+        { "date": "2026-08", "left_right": -3, "internal_governance": 6, "external_reform": 9, "note": "Current. Merged into Fusion 2021 but continues as distinct internal grouping.", "source": "https://pirateparty.org.au" }
       ]
     },
     {
@@ -171,7 +181,9 @@
       "status": "active",
       "note": "Re-established. Advocates citizens' assembly for Vic upper house reform; proportional representation; evidence-based approach citing 2025 AES data.",
       "history": [
-        { "date": "2026-08", "left_right": 0, "internal_governance": 3, "external_reform": 7, "note": "Initial scoring. Re-established party with citizens' assembly and PR advocacy." }
+        { "date": "1977-05", "left_right": 0, "internal_governance": 7, "external_reform": 6, "note": "Founded by Don Chipp on an explicit government-accountability platform (\"keep the bastards honest\"). First Australian party to let the whole membership elect the leader by postal ballot and to put policy to binding member ballots — genuine OMOV, novel for its time.", "source": "https://en.wikipedia.org/wiki/Australian_Democrats" },
+        { "date": "1999-06", "left_right": 0, "internal_governance": 7, "external_reform": 6, "note": "Leader Meg Lees negotiates a GST deal with the Howard government despite a prior member ballot opposing it — a real test of the party's binding-plebiscite mechanism. The backlash was severe enough that members later removed Lees as leader via ballot in 2002, demonstrating the mechanism could actually bind leadership, for better or worse.", "source": "https://en.wikipedia.org/wiki/Meg_Lees" },
+        { "date": "2026-08", "left_right": 0, "internal_governance": 3, "external_reform": 7, "note": "Current. Re-established party (original registration lapsed in the 2010s); standard structures without the original's binding member-ballot mechanisms. Advocates citizens' assembly for Victoria's upper house reform.", "source": "https://www.designingopendemocracy.com/blog/2026/05/24/victorias-upper-house-inquiry-the-case-for-a-citizens-assembly/" }
       ]
     },
     {
@@ -186,8 +198,8 @@
       "status": "deregistered",
       "note": "Issue-Based Direct Democracy (two-token economy, abstention-as-capital, proportional delegation). Deregistered. Included for historical comparison of governance innovation.",
       "history": [
-        { "date": "2016-02", "left_right": -2, "internal_governance": 8, "external_reform": 9, "note": "Registered with AEC. Issue-Based Direct Democracy as founding platform: two-token economy, abstention-as-capital, proportional delegation. Most sophisticated internal governance design of any Australian party." },
-        { "date": "2022-08", "left_right": -2, "internal_governance": 8, "external_reform": 9, "note": "Deregistered by AEC. IBDD mechanism unchanged throughout active period. Included for historical comparison of governance innovation." }
+        { "date": "2016-02", "left_right": -2, "internal_governance": 8, "external_reform": 9, "note": "Registered with AEC. Issue-Based Direct Democracy as founding platform: two-token economy, abstention-as-capital, proportional delegation. Most sophisticated internal governance design of any Australian party.", "source": "https://en.wikipedia.org/wiki/Flux_(political_party)" },
+        { "date": "2022-08", "left_right": -2, "internal_governance": 8, "external_reform": 9, "note": "Deregistered by AEC. IBDD mechanism unchanged throughout active period. Included for historical comparison of governance innovation.", "source": "https://web.archive.org/web/*/https://voteflux.org/" }
       ]
     },
     {
@@ -202,8 +214,8 @@
       "status": "deregistered",
       "note": "Four-destination policy model; research-to-voter information pipeline with university research, domain experts, advisory committees, and ethics committee sign-off; 60% supermajority threshold; mandatory mandate binding Senate candidates to member vote. Deregistered ~2019. Political sibling of Flux Party — both launched in the same period with complementary democracy-reform philosophies.",
       "history": [
-        { "date": "2014-01", "left_right": -1, "internal_governance": 7, "external_reform": 8, "note": "Founded by Adam Jacoby. Structured information pipeline, four-destination model, 60% supermajority, mandatory mandate. Constitutional requirement that elected senators vote according to aggregated member position." },
-        { "date": "2019-01", "left_right": -1, "internal_governance": 7, "external_reform": 8, "note": "Deregistered ~2019 without electing senators. MiVote Technologies continued in the UK. Included for historical comparison alongside Flux Party — political siblings with complementary governance designs." }
+        { "date": "2014-01", "left_right": -1, "internal_governance": 7, "external_reform": 8, "note": "Founded by Adam Jacoby. Structured information pipeline, four-destination model, 60% supermajority, mandatory mandate. Constitutional requirement that elected senators vote according to aggregated member position.", "source": "https://web.archive.org/web/*/https://www.mivote.org.au/" },
+        { "date": "2019-01", "left_right": -1, "internal_governance": 7, "external_reform": 8, "note": "Deregistered ~2019 without electing senators. MiVote Technologies continued in the UK. Included for historical comparison alongside Flux Party — political siblings with complementary governance designs.", "source": "https://www.designingopendemocracy.com/blog/2021/08/07/podcast-catching-up-with-adam-jacoby-founder-of-mivote/" }
       ]
     },
     {
@@ -218,7 +230,7 @@
       "status": "active",
       "note": "Sortition-selected founding conference delegates (via Sortition Foundation) — one of few parties globally using random selection for internal deliberative bodies. International comparator. General-purpose progressive platform alongside democratic reform.",
       "history": [
-        { "date": "2026-08", "left_right": -8, "internal_governance": 9, "external_reform": 6, "note": "Initial scoring. Founded 2025 with sortition-selected founding conference." }
+        { "date": "2026-08", "left_right": -8, "internal_governance": 9, "external_reform": 6, "note": "Initial scoring. Founded 2025 with sortition-selected founding conference.", "source": "https://www.designingopendemocracy.com/blog/2025/12/07/your-party-is-using-sortition/" }
       ]
     }
   ],

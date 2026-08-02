@@ -1027,7 +1027,7 @@
 
 .chart-hint {
   font-size: 0.8rem;
-  color: #888;
+  color: var(--md-default-fg-color--light);
   margin: -0.5rem 0 0.75rem 0;
 }
 
@@ -1062,7 +1062,7 @@
 
 .gov-data-table .note-cell {
   font-size: 0.75rem;
-  color: #888;
+  color: var(--md-default-fg-color--light);
   max-width: 280px;
 }
 
@@ -1070,6 +1070,20 @@
 .gov-timeline {
   margin-top: 1.5rem;
   grid-column: 1 / -1;
+}
+
+.gov-timeline-charts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.timeline-chart-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--md-default-fg-color--light);
+  margin: 0 0 0.4rem 0;
+  text-align: center;
 }
 
 .timeline-pills {
@@ -1116,7 +1130,8 @@
 }
 
 @media (max-width: 900px) {
-  .gov-charts {
+  .gov-charts,
+  .gov-timeline-charts {
     grid-template-columns: 1fr;
   }
 }
