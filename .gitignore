@@ -5,4 +5,9 @@ venv
 __pycache__/
 *.pyc
 docs/llms.txt
-docs/data/
+docs/data/organisations.csv
+docs/data/organisations.json
+docs/data/organisations.geojson
+docs/data/organisations.kml
+docs/data/org-concepts.csv
+# ^ hook-generated data exports (not committed)

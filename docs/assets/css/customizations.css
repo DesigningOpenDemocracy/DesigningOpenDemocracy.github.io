@@ -1001,3 +1001,122 @@
 .ai-assist-reviewed  { background: #e8f5e9; color: #2e7d32; }
 .ai-assist-generated { background: #f3e5f5; color: #6a1b9a; }
 .ai-assist-assisted  { background: #e3f2fd; color: #1565c0; }
+
+/****************************************/
+/* Party governance comparison charts */
+
+.gov-charts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.gov-chart-wrapper {
+  background: var(--md-default-bg-color);
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 6px;
+  padding: 1rem;
+}
+
+.gov-chart-wrapper h3 {
+  margin-top: 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.chart-hint {
+  font-size: 0.8rem;
+  color: #888;
+  margin: -0.5rem 0 0.75rem 0;
+}
+
+.chart-container {
+  position: relative;
+  width: 100%;
+  height: 380px;
+}
+
+.gov-data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.8rem;
+  margin: 1rem 0 2rem 0;
+}
+
+.gov-data-table th {
+  background: var(--md-default-fg-color--lightest);
+  text-align: left;
+  padding: 6px 8px;
+  font-weight: 600;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.gov-data-table td {
+  padding: 5px 8px;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  vertical-align: top;
+}
+
+.gov-data-table .note-cell {
+  font-size: 0.75rem;
+  color: #888;
+  max-width: 280px;
+}
+
+/* Timeline section (graph 3) */
+.gov-timeline {
+  margin-top: 1.5rem;
+  grid-column: 1 / -1;
+}
+
+.timeline-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 0.75rem;
+}
+
+.timeline-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  background: var(--md-default-fg-color--lightest);
+  color: var(--md-default-fg-color--light);
+  font-size: 0.65rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.15s;
+  font-family: "Roboto", sans-serif;
+}
+
+.timeline-pill.active {
+  background: var(--pill-color);
+  color: #fff;
+  border-color: var(--pill-color);
+  box-shadow: 0 0 0 2px rgba(255,255,255,0.15);
+}
+
+.timeline-pill.deregistered {
+  opacity: 0.4;
+}
+
+.timeline-pill.deregistered.active {
+  opacity: 0.6;
+}
+
+.timeline-pill:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 900px) {
+  .gov-charts {
+    grid-template-columns: 1fr;
+  }
+}
