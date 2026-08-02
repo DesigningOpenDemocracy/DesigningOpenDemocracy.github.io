@@ -48,7 +48,7 @@ Standard political spectrum for rough orientation. −10 = far left (revolutiona
 
 ### Parties scored
 
-11 Australian parties (active, except Flux and MiVote, both included for historical comparison of governance innovation despite deregistration) plus 1 international comparator. Selection: all parties assessed in the internal heartbeat AU party audit <!-- see ../../internal-heartbeat/2026-07-31-au-parties-democracy-reform-assessment.md --> with sufficient documentation. Additional international comparators (Podemos, M5S, German Pirate Party, Alternativet) are candidates for future scoring pending independent verification.
+14 Australian parties plus 1 international comparator. 9 are active; 5 are historical/deregistered and included for comparison — Flux and MiVote for governance innovation, and the Democratic Labor Party (1955–1978), United Australia Party (1931–1945), and Australia Party (1969–1986) as notable earlier cases spanning a wider slice of Australian party history (an externally-directed minor party, a major governing predecessor of the modern Liberals, and a civil-liberties minor party that fed directly into the Australian Democrats). Selection: all parties assessed in the internal heartbeat AU party audit <!-- see ../../internal-heartbeat/2026-07-31-au-parties-democracy-reform-assessment.md --> with sufficient documentation, plus the three historical additions above (sourced independently from Wikipedia, not from the heartbeat audit). Additional international comparators (Podemos, M5S, German Pirate Party, Alternativet) are candidates for future scoring pending independent verification.
 
 ## Graphs
 
@@ -145,6 +145,15 @@ This section is rendered entirely from [`party-governance.json`](/data/party-gov
 ### MiVote
 <div class="gov-justification-body" data-slug="mivote"></div>
 
+### Democratic Labor Party (1955–1978)
+<div class="gov-justification-body" data-slug="dlp"></div>
+
+### United Australia Party (1931–1945)
+<div class="gov-justification-body" data-slug="uap-historical"></div>
+
+### Australia Party (1969–1986)
+<div class="gov-justification-body" data-slug="australia-party"></div>
+
 ### Your Party (UK)
 <div class="gov-justification-body" data-slug="your-party"></div>
 
@@ -208,6 +217,9 @@ Contributions welcome via PR:
     'australian-democrats': { initials: 'AD',   color: '#daa520' },
     flux:                   { initials: 'FLX',  color: '#00bcd4' },
     mivote:                 { initials: 'MV',   color: '#ff5722' },
+    dlp:                    { initials: 'DLP',  color: '#7b1fa2' },
+    'uap-historical':       { initials: 'UAP',  color: '#5c6bc0' },
+    'australia-party':      { initials: 'AP',   color: '#26a69a' },
     'your-party':           { initials: 'YP',   color: '#e91e8a' }
   };
 

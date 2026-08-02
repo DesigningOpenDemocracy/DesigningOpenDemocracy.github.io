@@ -597,6 +597,159 @@
       ]
     },
     {
+      "slug": "dlp",
+      "name": "Democratic Labor Party (1955–1978)",
+      "country": "AU",
+      "founded": 1955,
+      "left_right": 3,
+      "internal_governance": 2,
+      "external_reform": 0,
+      "notability": 7,
+      "status": "deregistered",
+      "note": "Formed by the 1955 Labor Split. Directed Senate preferences to keep the ALP from federal power for 17 years. Effective control sat with B. A. Santamaria's National Civic Council rather than the ordinary membership. Wound up 1978; a separate DLP was later re-founded by former members and remains a minor party today — not the entity scored here.",
+      "history": [
+        {
+          "date": "1955-04", "left_right": 3, "internal_governance": 2, "external_reform": 0,
+          "left_right_note": "Centre-right, anti-communist Catholic-labour breakaway — economically closer to Labor's welfare-state instincts than to the Liberals, but firmly conservative on Cold War foreign policy and social issues.",
+          "left_right_sources": [{ "label": "Democratic Labor Party (Australia, 1955)", "url": "https://en.wikipedia.org/wiki/Democratic_Labor_Party_(Australia,_1955)" }],
+          "internal_note": "Formed as the Australian Labor Party (Anti-Communist) after Victorian federal and state MPs aligned with B. A. Santamaria's anti-communist 'Movement' (later the National Civic Council) were expelled from the ALP at its 1955 Hobart conference. Strategy and direction ran through Santamaria's externally based Movement/NCC rather than ordinary party ballots — an unusual structure: neither leader-dominated nor member-controlled in the usual sense, but directed by a non-elected outside body.",
+          "internal_sources": [
+            { "label": "Democratic Labor Party (Australia, 1955)", "url": "https://en.wikipedia.org/wiki/Democratic_Labor_Party_(Australia,_1955)" },
+            { "label": "B. A. Santamaria", "url": "https://en.wikipedia.org/wiki/B._A._Santamaria" }
+          ],
+          "external_note": "No governance-reform advocacy — founding purpose was anti-communism and Cold War foreign policy, not electoral or accountability mechanisms.",
+          "external_sources": []
+        },
+        {
+          "date": "1961-12", "left_right": 3, "internal_governance": 2, "external_reform": 0,
+          "left_right_note": "No ideological shift.",
+          "left_right_sources": [],
+          "internal_note": "No change to the party's externally directed structure.",
+          "internal_sources": [],
+          "external_note": "DLP preferences hand Liberal candidate Billy Snedden a paper-thin win in Bruce, denying Labor the two seats it needed to topple the Coalition at the 1961 election — the clearest demonstration of the party's preference-direction strategy actually determining a federal government, though this is electoral tactics rather than governance-mechanism reform.",
+          "external_sources": [{ "label": "Democratic Labor Party (Australia, 1955)", "url": "https://en.wikipedia.org/wiki/Democratic_Labor_Party_(Australia,_1955)" }]
+        },
+        {
+          "date": "1974-05", "left_right": 3, "internal_governance": 2, "external_reform": 0,
+          "left_right_note": "No ideological shift.",
+          "left_right_sources": [],
+          "internal_note": "Prime Minister Whitlam appoints DLP Senate leader Vince Gair as ambassador to Ireland, a deliberate move to split the party and remove its most effective figure; the DLP loses all its Senate seats at the 1974 election.",
+          "internal_sources": [{ "label": "Vince Gair", "url": "https://en.wikipedia.org/wiki/Vince_Gair" }],
+          "external_note": "With no remaining parliamentary representation, the preference-direction strategy that was the party's only real lever loses its force.",
+          "external_sources": [{ "label": "Democratic Labor Party (Australia, 1955)", "url": "https://en.wikipedia.org/wiki/Democratic_Labor_Party_(Australia,_1955)" }]
+        },
+        {
+          "date": "1978-04", "left_right": 3, "internal_governance": 0, "external_reform": 0,
+          "left_right_note": "No ideological shift through to wind-up.",
+          "left_right_sources": [],
+          "internal_note": "Queensland and South Australian branches dissolve in 1976; the party contests only Victoria without success at the 1977 election and formally winds up in 1978. (A separate Democratic Labor Party was later founded by former members and continues today — not the entity scored here.)",
+          "internal_sources": [{ "label": "Democratic Labor Party (Australia, 1955)", "url": "https://en.wikipedia.org/wiki/Democratic_Labor_Party_(Australia,_1955)" }],
+          "external_note": "Defunct.",
+          "external_sources": []
+        }
+      ]
+    },
+    {
+      "slug": "uap-historical",
+      "name": "United Australia Party (1931–1945)",
+      "country": "AU",
+      "founded": 1931,
+      "left_right": 6,
+      "internal_governance": 2,
+      "external_reform": 0,
+      "notability": 8,
+      "status": "deregistered",
+      "note": "Governing conservative party of the 1930s–40s; direct predecessor of the modern Liberal Party. No relation to the unrelated modern minor party of the same name (est. 2013).",
+      "history": [
+        {
+          "date": "1931-05", "left_right": 6, "internal_governance": 2, "external_reform": 0,
+          "left_right_note": "Centre-right, formed by fiscally conservative Labor defectors merging with the Nationalist Party in response to the Great Depression.",
+          "left_right_sources": [{ "label": "United Australia Party", "url": "https://en.wikipedia.org/wiki/United_Australia_Party" }],
+          "internal_note": "Six Labor MPs who opposed the Scullin government's Depression-era financial policy, led by former Tasmanian Premier Joseph Lyons, merged with the Nationalist Party. Lyons was chosen as leader for his public popularity rather than through a member ballot — a top-down formation from the outset.",
+          "internal_sources": [{ "label": "United Australia Party", "url": "https://en.wikipedia.org/wiki/United_Australia_Party" }, { "label": "Joseph Lyons", "url": "https://en.wikipedia.org/wiki/Joseph_Lyons" }],
+          "external_note": "No governance-reform advocacy — founding platform was fiscal orthodoxy in response to the Depression.",
+          "external_sources": []
+        },
+        {
+          "date": "1931-12", "left_right": 6, "internal_governance": 2, "external_reform": 0,
+          "left_right_note": "No ideological shift.",
+          "left_right_sources": [],
+          "internal_note": "Landslide victory at the 1931 federal election gives the UAP an outright House of Representatives majority in its first contest — Lyons becomes PM.",
+          "internal_sources": [{ "label": "United Australia Party", "url": "https://en.wikipedia.org/wiki/United_Australia_Party" }],
+          "external_note": "No governance-reform advocacy.",
+          "external_sources": []
+        },
+        {
+          "date": "1939-04", "left_right": 6, "internal_governance": 2, "external_reform": 0,
+          "left_right_note": "No ideological shift.",
+          "left_right_sources": [],
+          "internal_note": "Lyons dies in office; the parliamentary party elects Robert Menzies as leader and PM. Leadership continues to be decided by the parliamentary party, not the wider membership.",
+          "internal_sources": [{ "label": "United Australia Party", "url": "https://en.wikipedia.org/wiki/United_Australia_Party" }],
+          "external_note": "No governance-reform advocacy.",
+          "external_sources": []
+        },
+        {
+          "date": "1945-02", "left_right": 6, "internal_governance": 0, "external_reform": 0,
+          "left_right_note": "No ideological shift through to dissolution.",
+          "left_right_sources": [],
+          "internal_note": "The UAP ceases to exist as a parliamentary party; its members join the newly formed Liberal Party of Australia, which absorbs its position and much of its base.",
+          "internal_sources": [{ "label": "United Australia Party", "url": "https://en.wikipedia.org/wiki/United_Australia_Party" }],
+          "external_note": "Defunct.",
+          "external_sources": []
+        }
+      ]
+    },
+    {
+      "slug": "australia-party",
+      "name": "Australia Party (1969–1986)",
+      "country": "AU",
+      "founded": 1969,
+      "left_right": -2,
+      "internal_governance": 3,
+      "external_reform": 2,
+      "notability": 3,
+      "status": "deregistered",
+      "note": "Grew out of a Liberal Party splinter opposed to Vietnam War conscription. Most members and infrastructure merged into the newly formed Australian Democrats in 1977 — its clearest governance-reform legacy is the party it fed into, more than its own program.",
+      "history": [
+        {
+          "date": "1969-07", "left_right": -2, "internal_governance": 3, "external_reform": 2,
+          "left_right_note": "Centre-left/centrist, formed from a Liberal Party splinter opposed to conscription and the Vietnam War.",
+          "left_right_sources": [{ "label": "Australia Party", "url": "https://en.wikipedia.org/wiki/Australia_Party" }],
+          "internal_note": "Independent Senator Reg Turnbull merges his supporters with Gordon Barton's Australian Reform Movement to form the Australia Party, contested 'convenor' leadership positions from early on.",
+          "internal_sources": [{ "label": "Australia Party", "url": "https://en.wikipedia.org/wiki/Australia_Party" }, { "label": "Reg Turnbull", "url": "https://en.wikipedia.org/wiki/Reg_Turnbull" }],
+          "external_note": "Platform to liberalise abortion law, end conscription, eliminate censorship, and protect the environment — civil-liberties and policy reform rather than governance-mechanism reform specifically.",
+          "external_sources": [{ "label": "Australia Party", "url": "https://en.wikipedia.org/wiki/Australia_Party" }]
+        },
+        {
+          "date": "1970-03", "left_right": -2, "internal_governance": 2, "external_reform": 2,
+          "left_right_note": "No ideological shift.",
+          "left_right_sources": [],
+          "internal_note": "Turnbull resigns after former Australian Reform Movement members accuse Gordon Barton's leadership of acting undemocratically by conducting secret negotiations — an early, documented internal-governance flashpoint.",
+          "internal_sources": [{ "label": "Australia Party", "url": "https://en.wikipedia.org/wiki/Australia_Party" }, { "label": "Gordon Barton", "url": "https://en.wikipedia.org/wiki/Gordon_Barton" }],
+          "external_note": "No change to reform platform.",
+          "external_sources": []
+        },
+        {
+          "date": "1972-12", "left_right": -2, "internal_governance": 3, "external_reform": 2,
+          "left_right_note": "No ideological shift.",
+          "left_right_sources": [],
+          "internal_note": "Best electoral result to date; contested 'national convenor' leadership elections continue (Siddons defeats Gilfillan for the role in 1974).",
+          "internal_sources": [{ "label": "Australia Party", "url": "https://en.wikipedia.org/wiki/Australia_Party" }],
+          "external_note": "Directs preferences to Labor, helping end 23 years of Coalition government at the 1972 election — a real governance effect achieved through preference tactics rather than a reform platform.",
+          "external_sources": [{ "label": "Australia Party", "url": "https://en.wikipedia.org/wiki/Australia_Party" }]
+        },
+        {
+          "date": "1977-05", "left_right": -2, "internal_governance": 3, "external_reform": 2,
+          "left_right_note": "No ideological shift.",
+          "left_right_sources": [],
+          "internal_note": "Most members and organisational infrastructure merge into the newly formed Australian Democrats; former Australia Party convenors John Siddons and Colin Mason are later elected as Democrats senators. A residual Australia Party structure continued in a reduced form until 1986.",
+          "internal_sources": [{ "label": "Australia Party", "url": "https://en.wikipedia.org/wiki/Australia_Party" }],
+          "external_note": "Its civil-liberties and reform-minded membership base becomes part of the Democrats' founding coalition alongside the New Liberal Movement.",
+          "external_sources": [{ "label": "Australian Democrats", "url": "https://en.wikipedia.org/wiki/Australian_Democrats" }]
+        }
+      ]
+    },
+    {
       "slug": "your-party",
       "name": "Your Party",
       "country": "GB",
