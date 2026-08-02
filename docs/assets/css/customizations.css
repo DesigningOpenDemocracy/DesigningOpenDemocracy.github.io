@@ -34,7 +34,7 @@
 
 .org-index-card-meta {
     font-size: 0.8em;
-    color: #888;
+    color: var(--md-default-fg-color--light);
     margin-bottom: 0.4em;
 }
 
@@ -50,7 +50,7 @@
 .project-index-card {
     display: flex;
     flex-direction: column;
-    border: 1px solid rgba(0, 0, 0, 0.12);
+    border: 1px solid var(--md-default-fg-color--lightest);
     border-radius: 8px;
     padding: 1rem 1.25rem;
     text-decoration: none;
@@ -59,7 +59,7 @@
 }
 
 .project-index-card:hover {
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
 
 .project-index-card-header {
@@ -77,17 +77,17 @@
 .project-index-card p {
     margin: 0;
     font-size: 0.9em;
-    color: #555;
+    color: var(--md-default-fg-color--light);
 }
 
 /* Individual project page metadata box */
 
 .project-meta-box {
-    border: 1px solid rgba(0, 0, 0, 0.12);
+    border: 1px solid var(--md-default-fg-color--lightest);
     border-radius: 8px;
     padding: 0.75rem 1rem;
     margin-bottom: 1.5rem;
-    background: rgba(0, 0, 0, 0.02);
+    background: var(--md-default-fg-color--lightest);
 }
 
 .project-meta-box table {
@@ -97,7 +97,7 @@
 .project-meta-box th {
     width: 7em;
     font-weight: 600;
-    color: #555;
+    color: var(--md-default-fg-color--light);
     padding: 0.2rem 0.75rem 0.2rem 0;
 }
 
@@ -1027,7 +1027,7 @@
 
 .chart-hint {
   font-size: 0.8rem;
-  color: #888;
+  color: var(--md-default-fg-color--light);
   margin: -0.5rem 0 0.75rem 0;
 }
 
@@ -1062,7 +1062,7 @@
 
 .gov-data-table .note-cell {
   font-size: 0.75rem;
-  color: #888;
+  color: var(--md-default-fg-color--light);
   max-width: 280px;
 }
 
@@ -1070,6 +1070,20 @@
 .gov-timeline {
   margin-top: 1.5rem;
   grid-column: 1 / -1;
+}
+
+.gov-timeline-charts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.timeline-chart-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--md-default-fg-color--light);
+  margin: 0 0 0.4rem 0;
+  text-align: center;
 }
 
 .timeline-pills {
@@ -1116,7 +1130,8 @@
 }
 
 @media (max-width: 900px) {
-  .gov-charts {
+  .gov-charts,
+  .gov-timeline-charts {
     grid-template-columns: 1fr;
   }
 }
