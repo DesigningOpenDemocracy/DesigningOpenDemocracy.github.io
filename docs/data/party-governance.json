@@ -481,16 +481,43 @@
           "date": "1999-06", "left_right": 0, "internal_governance": 7, "external_reform": 6,
           "left_right_note": "No ideological shift.",
           "left_right_sources": [],
-          "internal_note": "Leader Meg Lees negotiates a GST deal with the Howard government despite a prior member ballot opposing it — a real test of the party's binding-plebiscite mechanism. The backlash was severe enough that members later removed Lees as leader via ballot in 2002, demonstrating the mechanism could actually bind leadership, for better or worse.",
+          "internal_note": "Leader Meg Lees negotiates a GST deal with the Howard government despite a prior member ballot opposing it — a real test of the party's binding-plebiscite mechanism. The backlash split the party: Lees was deposed as leader by Natasha Stott Despoja in 2001, then quit the party entirely in 2002 to sit as an independent — the mechanism could actually bind and remove a leader, for better or worse.",
           "internal_sources": [{ "label": "Meg Lees", "url": "https://en.wikipedia.org/wiki/Meg_Lees" }],
           "external_note": "No change to external reform posture recorded at this point.",
+          "external_sources": []
+        },
+        {
+          "date": "2007-11", "left_right": 0, "internal_governance": 3, "external_reform": 2,
+          "left_right_note": "No ideological shift.",
+          "left_right_sources": [],
+          "internal_note": "A decade of leadership spills and resignations following the 1999 GST split culminates in the 2007 federal election, where the party's remaining four Senators lose their seats (terms expiring 30 June 2008) — leaving the Democrats with no federal representation for the first time since 1977. The binding-ballot mechanism nominally persists but has no functioning parliamentary party left to discipline.",
+          "internal_sources": [{ "label": "Meg Lees", "url": "https://en.wikipedia.org/wiki/Meg_Lees" }],
+          "external_note": "Losing all Senate seats ends the party's balance-of-power watchdog role — the mechanism through which its 1977 accountability platform was actually exercised.",
+          "external_sources": [{ "label": "Australian Democrats", "url": "https://en.wikipedia.org/wiki/Australian_Democrats" }]
+        },
+        {
+          "date": "2016-11", "left_right": 0, "internal_governance": 0, "external_reform": 0,
+          "left_right_note": "No ideological shift — party is dormant/defunct at this point.",
+          "left_right_sources": [],
+          "internal_note": "Deregistered by the AEC (28 November 2016) after failing to maintain the minimum-membership threshold — the original party ceases to legally exist.",
+          "internal_sources": [{ "label": "AEC deregistration notice, Nov 2016 (via Wikipedia citation)", "url": "https://en.wikipedia.org/wiki/Australian_Democrats" }],
+          "external_note": "No governance-reform activity — the party is legally deregistered.",
+          "external_sources": []
+        },
+        {
+          "date": "2019-04", "left_right": 0, "internal_governance": 3, "external_reform": 1,
+          "left_right_note": "Centre — re-registers as a fresh general-purpose small party.",
+          "left_right_sources": [],
+          "internal_note": "Re-registered with the AEC (7 April 2019) after merging with CountryMinded. This is the re-established party referred to throughout this page — it does not carry forward the original's binding whole-membership ballot mechanisms; internal governance resets to standard party structures.",
+          "internal_sources": [{ "label": "AEC registration decision, Apr 2019 (via Wikipedia citation)", "url": "https://en.wikipedia.org/wiki/Australian_Democrats" }],
+          "external_note": "Freshly re-registered and not yet focused on a specific governance-reform campaign.",
           "external_sources": []
         },
         {
           "date": "2026-08", "left_right": 0, "internal_governance": 3, "external_reform": 7,
           "left_right_note": "Centre, re-established.",
           "left_right_sources": [],
-          "internal_note": "Standard party structures; limited evidence of member governance beyond electoral processes. Notably lower than the original party (1977–2010s, see above), which pioneered whole-membership postal-ballot leader elections and binding policy plebiscites — the re-established party does not carry those mechanisms forward.",
+          "internal_note": "Standard party structures; limited evidence of member governance beyond electoral processes. Notably lower than the original party (1977–2016, see above), which pioneered whole-membership postal-ballot leader elections and binding policy plebiscites — the re-established party does not carry those mechanisms forward.",
           "internal_sources": [],
           "external_note": "Advocates a randomly selected citizens' assembly for Victoria's upper house electoral reform and proportional representation, with evidence-based framing citing 2025 Australian Election Study data (48% support for citizens' assemblies).",
           "external_sources": [

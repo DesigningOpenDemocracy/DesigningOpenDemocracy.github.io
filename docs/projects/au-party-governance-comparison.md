@@ -175,6 +175,7 @@ Contributions welcome via PR:
 </style>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
 <script>
 (function() {
   const DATA_URL = '/data/party-governance.json';
@@ -395,12 +396,6 @@ Contributions welcome via PR:
       .map(function(slug) { return parties.find(function(x) { return x.slug === slug; }); })
       .filter(function(p) { return p && p.history && p.history.length > 0; });
 
-    var allLabels = new Set();
-    selectedParties.forEach(function(p) {
-      p.history.forEach(function(h) { allLabels.add(h.date); });
-    });
-    var labels = Array.from(allLabels).sort();
-
     TIMELINE_DIMENSIONS.forEach(function(dim) {
       var datasets = selectedParties.map(function(p) {
         var sorted = p.history.slice().sort(function(a, b) { return a.date.localeCompare(b.date); });
@@ -408,7 +403,7 @@ Contributions welcome via PR:
         return {
           label: p.name,
           data: sorted.map(function(h) {
-            return { x: h.date, y: h[dim.field], note: h[dim.key + '_note'], sources: h[dim.key + '_sources'] };
+            return { x: h.date + '-01', y: h[dim.field], note: h[dim.key + '_note'], sources: h[dim.key + '_sources'] };
           }),
           borderColor: g.color,
           backgroundColor: hexToRgba(g.color, 0.10),
@@ -422,7 +417,7 @@ Contributions welcome via PR:
       var ctx = document.getElementById(dim.canvasId).getContext('2d');
       timelineCharts[dim.key] = new Chart(ctx, {
         type: 'line',
-        data: { labels: labels, datasets: datasets },
+        data: { datasets: datasets },
         options: {
           responsive: true,
           maintainAspectRatio: false,
@@ -446,7 +441,12 @@ Contributions welcome via PR:
           },
           scales: {
             x: {
-              type: 'category',
+              // Real time scale (not category) so the horizontal spacing
+              // between points — and each party's line length — reflects
+              // actual elapsed time, e.g. Labor's 1967-2026 span reads as
+              // far longer than Your Party's single 2026 point.
+              type: 'time',
+              time: { tooltipFormat: 'yyyy-MM', displayFormats: { year: 'yyyy' } },
               title: { display: true, text: 'Date', color: COLORS.text }
             },
             y: {
