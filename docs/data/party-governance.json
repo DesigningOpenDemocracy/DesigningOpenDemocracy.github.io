@@ -544,6 +544,7 @@
       "internal_governance": 8,
       "external_reform": 9,
       "notability": 2,
+      "logo": { "path": "/assets/party-logos/au/flux.svg", "license": "site asset", "source": "https://www.designingopendemocracy.com/organisations/flux-party/" },
       "status": "deregistered",
       "note": "Issue-Based Direct Democracy (two-token economy, abstention-as-capital, proportional delegation). Deregistered. Included for historical comparison of governance innovation.",
       "scoring_note": "Scored August 2026 based on platform during the party's active period, 2016–2022.",
