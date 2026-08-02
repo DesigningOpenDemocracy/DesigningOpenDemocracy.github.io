@@ -48,7 +48,7 @@ Standard political spectrum for rough orientation. −10 = far left (revolutiona
 
 ### Parties scored
 
-11 Australian parties (active, except Flux and MiVote, both included for historical comparison of governance innovation despite deregistration) plus 1 international comparator. Selection: all parties assessed in the internal heartbeat AU party audit <!-- see ../../internal-heartbeat/2026-07-31-au-parties-democracy-reform-assessment.md --> with sufficient documentation. Additional international comparators (Podemos, M5S, German Pirate Party, Alternativet) are candidates for future scoring pending independent verification.
+14 Australian parties plus 1 international comparator. 9 are active; 5 are historical/deregistered and included for comparison — Flux and MiVote for governance innovation, and the Democratic Labor Party (1955–1978), United Australia Party (1931–1945), and Australia Party (1969–1986) as notable earlier cases spanning a wider slice of Australian party history (an externally-directed minor party, a major governing predecessor of the modern Liberals, and a civil-liberties minor party that fed directly into the Australian Democrats). Selection: all parties assessed in the internal heartbeat AU party audit <!-- see ../../internal-heartbeat/2026-07-31-au-parties-democracy-reform-assessment.md --> with sufficient documentation, plus the three historical additions above (sourced independently from Wikipedia, not from the heartbeat audit). Additional international comparators (Podemos, M5S, German Pirate Party, Alternativet) are candidates for future scoring pending independent verification.
 
 ## Graphs
 
@@ -68,6 +68,8 @@ Standard political spectrum for rough orientation. −10 = far left (revolutiona
     </div>
   </div>
 </div>
+
+<p class="chart-hint" id="gov-logo-credits"></p>
 
 <div class="gov-chart-wrapper gov-timeline" id="gov-timeline-section">
   <h3>3. Score Changes Over Time</h3>
@@ -110,91 +112,52 @@ Standard political spectrum for rough orientation. −10 = far left (revolutiona
 
 ## Scoring justification
 
-Each party's scores, the evidence behind them, and when they were last assessed. Sources: DOD's internal heartbeat audit (July 2026), party websites, Red Flag, parliamentary records, AEC filings, news media.
+This section is rendered entirely from [`party-governance.json`](/data/party-governance.json) — the same file that drives the graphs, Raw data table, and timeline charts — so there is no separate hand-written write-up to fall out of sync. Each party's `history` array is a dated audit trail: every time a score changed (or was reassessed), that entry carries its own note and source links for each of the three dimensions. To rescore a party or add a new assessment point, edit the data file directly — the justification *is* the data.
 
 ### Australian Labor Party
-*Scored: August 2026*
-
-- **Left–Right −2 of 10** — Centre-left, social democratic.
-- **Internal 3 of 10** — Faction-controlled preselections despite formal OMOV rules; weighted parliamentarian votes in some selections; internal reform pushes from Andrew Leigh and John Faulkner stalled. Sources: [Andrew Leigh on factional duopoly](https://theconversation.com/andrew-leigh-calls-out-how-labors-factional-duopoly-is-undermining-the-party-209972) (The Conversation, 2023); Faulkner's one-member-one-vote push documented in parliamentary and party records.
-- **External 4 of 10** — Legislated the National Anti-Corruption Commission Act 2022, but "exceptional circumstances" public-hearings threshold criticised by TI Australia and the Centre for Public Integrity as too restrictive ([joint statement](https://transparency.org.au/joint-statement-on-the-national-anti-corruption-commission-bill-2022/)). 25+ private hearings, zero public as of Dec 2025 ([The New Daily](https://www.thenewdaily.com.au/news/politics/australian-politics/2025/12/18/helen-haines-nacc)).
+<div class="gov-justification-body" data-slug="labor"></div>
 
 ### Liberal Party / Coalition
-*Scored: August 2026*
-
-- **Left–Right +6** — Centre-right, conservative.
-- **Internal 2 of 10** — Leader/elite-controlled preselections; branch stacking entrenched in some states.
-- **External 0 of 10** — Opposed real-time donation disclosure (federal director called it "too onerous," 2019). Sources: [Canberra Times](https://www.canberratimes.com.au/story/6512005/liberal-party-pushes-back-against-real-time-donations-disclosure/). 2018/19 integrity commission proposal widely criticised as designed to allow only private hearings with no public tip-off pathway ([Crikey](https://www.crikey.com.au/2022/05/17/scott-morrison-promise-federal-icac-with-teeth-haunts-coalition/)).
+<div class="gov-justification-body" data-slug="liberal"></div>
 
 ### Australian Greens
-*Scored: August 2026*
-
-- **Left–Right −6** — Left, environmental/social-justice platform.
-- **Internal 3 of 10** — Leadership not member-elected in all jurisdictions; preselection processes vary by state; member input on policy platform is stronger than candidate/leadership selection.
-- **External 8 of 10** — Strongest external reform record of any Australian parliamentary party. Sources: 10-year federal anti-corruption campaign, won inspector oversight amendments to NACC bill Nov 2022 ([Greens release](https://greens.org.au/news/media-release/nacc-bill-passes-senate-historic-vote-critical-greens-amends-integrity)); truth-in-political-advertising bill modelled on SA law ([Greens ACT](https://greens.org.au/act/news/greens-push-truth-electoral-advertising)); sustained "Clean Up Politics" donations-cap/contractor-donor-ban campaign ([greens.org.au](https://greens.org.au/campaigns/clean-politics)).
+<div class="gov-justification-body" data-slug="greens"></div>
 
 ### Victorian Socialists
-*Scored: August 2026*
-
-- **Left–Right −9** — Far left, revolutionary socialist; abolition of capitalism as stated goal.
-- **Internal 7 of 10** — Constitutional commitment to OMOV and party democracy adopted at Jan 2024 conference as part of new constitution. Sources: [VS Our Aims](https://www.victoriansocialists.org.au/about/our-aims). June 2025 members' conference (360 attendees): Communist Caucus ran alternative leadership slate, given platform time, lost at vote — competitive democratic practice. Conference voted to expand democratic structures into electorate-based branches. Sources: [Red Flag](https://redflag.org.au/article/victorian-socialists-conference-resolves-to-expand-party-organisation/).
-- **External 0 of 10** — No external governance-reform advocacy. This is deliberate: VS holds that parliament cannot be meaningfully reformed under capitalism, so external advocacy takes the form of building a democratic workers' movement rather than patching existing institutions. The party's aims document describes a democratic socialist vision (recall rights, no special privileges for elected reps, political pluralism) but does not advocate reform of existing parliamentary institutions.
+<div class="gov-justification-body" data-slug="victorian-socialists"></div>
 
 ### One Nation
-*Scored: August 2026*
-
-- **Left–Right +8** — Right-populist.
-- **Internal 1 of 10** — Leader-dominated; party constitution gives Hanson near-total control.
-- **External −1** — Cuts against governance reform. AEC compliance action forced withdrawal of $800k+ in contested election-spending claims after ~140 unjustified items, June 2026 ([The Guardian](https://www.theguardian.com/australia-news/2026/jun/29/one-nation-pauline-hanson-election-funding-withdrawals-aec-ntwnfb)).
+<div class="gov-justification-body" data-slug="one-nation"></div>
 
 ### Jacqui Lambie Network
-*Scored: August 2026*
-
-- **Left–Right +1** — Centre, personality-based.
-- **Internal 2 of 10** — Centralised around Lambie; limited evidence of structured member democracy.
-- **External 4 of 10** — Sustained criticism of integrity-body design since 2018. Sources: Coalition CIC proposal called "lap dog with dentures" ([Canberra Times](https://www.canberratimes.com.au/story/6998300/lambie-lashes-proposed-corruption-watchdog/)). Donations-disclosure bill on party site; parliamentary progress not independently verified.
+<div class="gov-justification-body" data-slug="jacqui-lambie-network"></div>
 
 ### Katter's Australian Party
-*Scored: August 2026*
-
-- **Left–Right +7** — Agrarian conservative, populist.
-- **Internal 2 of 10** — Leader-dominated; Katter family central to party identity and control.
-- **External 1 of 10** — Decentralisation calls and NQ partition referendum — policy positions, not a sustained governance-reform program. Source: [bobkatter.com.au](https://www.bobkatter.com.au/katter-calls-for-decentralisation-of-govt-departments-following-self-absorbing-budget).
+<div class="gov-justification-body" data-slug="katter"></div>
 
 ### Pirate Party Australia
-*Scored: August 2026*
-
-- **Left–Right −3** — Centre-left, digital rights and transparency platform.
-- **Internal 6 of 10** — Liquid democracy culture; participatory governance traditions from the international Pirate Party movement. Merged into Fusion Party's federated structure in 2021; continues as distinct internal grouping. Source: [org page](../../organisations/pirate-party-australia.md).
-- **External 9 of 10** — Democracy and transparency reform is the party's reason for existing. Initiated the Electoral Royal Commission campaign.
+<div class="gov-justification-body" data-slug="pirate-party"></div>
 
 ### Australian Democrats
-*Scored: August 2026*
-
-- **Left–Right 0 of 10** — Centre, re-established.
-- **Internal 3 of 10** — Standard party structures; limited evidence of member governance beyond electoral processes. Notably lower than the *original* party (1977–2010s), which pioneered whole-membership postal-ballot leader elections and binding policy plebiscites in Australia — see the timeline chart (graph 3) for that discontinuity. Source: [Meg Lees](https://en.wikipedia.org/wiki/Meg_Lees).
-- **External 7 of 10** — Advocates a randomly selected citizens' assembly for Victoria's upper house electoral reform; proportional representation; evidence-based framing citing 2025 Australian Election Study data (48% support for citizens' assemblies). Source: [org page](../../organisations/australian-democrats.md). See DOD blog post: [Victoria's Upper House inquiry: the case for a citizens' assembly](../../blog/posts/2026-05-24-vic-upper-house-citizens-assembly.md) (May 2026).
+<div class="gov-justification-body" data-slug="australian-democrats"></div>
 
 ### Flux Party
-*Scored: August 2026 (based on platform during active period 2016–2022)*
-
-- **Left–Right −2 of 10** — Centre-left, deregistered.
-- **Internal 8 of 10** — Issue-Based Direct Democracy: two-token economy (votes + political capital), abstention rewarded as political capital, proportional delegation with revocation. Most sophisticated internal governance design of any Australian party. Sources: [IBDD concept page](../../concepts/issue-based-direct-democracy.md), [org page](../../organisations/flux-party.md).
-- **External 9 of 10** — Democracy reform was the entire platform. Deregistered by AEC August 2022; included for historical comparison of governance innovation.
+<div class="gov-justification-body" data-slug="flux"></div>
 
 ### MiVote
-*Scored: August 2026 (based on platform during active period 2014–2019)*
+<div class="gov-justification-body" data-slug="mivote"></div>
 
-- **Left–Right −1** — Centre, non-partisan framing, deregistered. Political sibling of Flux Party — both launched 2014–2016 with complementary democracy-reform designs.
-- **Internal 7 of 10** — Four-destination policy model (not yes/no); structured information pipeline: university research → domain experts → advisory committees (with permanent seats for underrepresented communities) → ethics committee sign-off; 60% supermajority threshold; mandatory mandate binding Senate candidates to aggregated member position. Source: [org page](../../organisations/mivote.md).
-- **External 8 of 10** — Democracy reform was the entire platform. Deregistered ~2019 without electing senators. MiVote Technologies continued in the UK.
+### Democratic Labor Party (1955–1978)
+<div class="gov-justification-body" data-slug="dlp"></div>
+
+### United Australia Party (1931–1945)
+<div class="gov-justification-body" data-slug="uap-historical"></div>
+
+### Australia Party (1969–1986)
+<div class="gov-justification-body" data-slug="australia-party"></div>
 
 ### Your Party (UK)
-*Scored: August 2026*
-
-- **Left–Right −8** — Left, progressive/socialist, international comparator.
-- **Internal 9 of 10** — Founding conference delegates selected by sortition via the Sortition Foundation: stratified random sample balanced across gender, region, age, ethnicity, disability, and LGBTQ+ status. One of few parties globally using random selection for internal deliberative bodies. Future conferences to include portion of sortition-selected delegates alongside branch-elected delegates. Source: [org page](../../organisations/your-party.md).
-- **External 6 of 10** — Democratic reform in platform (electoral reform, transparency), but also a general-purpose multi-issue party. See [DOD blog post: Your Party is using sortition](https://www.designingopendemocracy.com/blog/2025/12/07/your-party-is-using-sortition/).
+<div class="gov-justification-body" data-slug="your-party"></div>
 
 ## Why this exists
 
@@ -223,6 +186,7 @@ Contributions welcome via PR:
 </style>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
 <script>
 (function() {
   const DATA_URL = '/data/party-governance.json';
@@ -255,6 +219,9 @@ Contributions welcome via PR:
     'australian-democrats': { initials: 'AD',   color: '#daa520' },
     flux:                   { initials: 'FLX',  color: '#00bcd4' },
     mivote:                 { initials: 'MV',   color: '#ff5722' },
+    dlp:                    { initials: 'DLP',  color: '#7b1fa2' },
+    'uap-historical':       { initials: 'UAP',  color: '#5c6bc0' },
+    'australia-party':      { initials: 'AP',   color: '#26a69a' },
     'your-party':           { initials: 'YP',   color: '#e91e8a' }
   };
 
@@ -265,6 +232,55 @@ Contributions welcome via PR:
   function hexToRgba(hex, alpha) {
     var r = parseInt(hex.slice(1,3), 16), g = parseInt(hex.slice(3,5), 16), b = parseInt(hex.slice(5,7), 16);
     return 'rgba(' + r + ',' + g + ',' + b + ',' + alpha + ')';
+  }
+
+  // Loads each party's logo (if it has one) into an Image so the scatter
+  // plugin can draw it; resolves regardless of success/failure so a bad
+  // image never blocks rendering — the plugin falls back to the colored
+  // initials badge whenever `p.logo.image` isn't set.
+  function preloadLogos(parties) {
+    return Promise.all(parties.map(function(p) {
+      if (!p.logo || !p.logo.path) return Promise.resolve();
+      return new Promise(function(resolve) {
+        var img = new Image();
+        img.onload = function() { p.logo.image = img; resolve(); };
+        img.onerror = function() { resolve(); };
+        img.src = p.logo.path;
+      });
+    }));
+  }
+
+  function drawLogoBadge(ctx, img, x, y, r) {
+    ctx.beginPath();
+    ctx.arc(x, y, r, 0, Math.PI * 2);
+    ctx.fillStyle = '#fff';
+    ctx.fill();
+    ctx.save();
+    ctx.clip();
+    // "Contain" fit (never crops) — a wordmark logo cut off at a circle's
+    // edge reads worse than one left smaller with a little white margin.
+    var iw = img.naturalWidth || 1, ih = img.naturalHeight || 1;
+    var pad = 0.82;
+    var scale = Math.min((r * 2 * pad) / iw, (r * 2 * pad) / ih);
+    var w = iw * scale, h = ih * scale;
+    ctx.drawImage(img, x - w / 2, y - h / 2, w, h);
+    ctx.restore();
+    ctx.strokeStyle = '#fff';
+    ctx.lineWidth = 1.5;
+    ctx.stroke();
+  }
+
+  function drawInitialsBadge(ctx, g, x, y, r) {
+    ctx.beginPath();
+    ctx.arc(x, y, r, 0, Math.PI * 2);
+    ctx.fillStyle = g.color;
+    ctx.fill();
+    ctx.strokeStyle = '#fff';
+    ctx.lineWidth = 1.5;
+    ctx.stroke();
+    ctx.fillStyle = '#fff';
+    ctx.font = 'bold ' + (g.initials.length > 3 ? 9 : 10) + 'px "Roboto", sans-serif';
+    ctx.fillText(g.initials, x, y + 1);
   }
 
   function labelPlugin(parties) {
@@ -283,16 +299,11 @@ Contributions welcome via PR:
            var r = 10 + (p.notability || 3) + (g.initials.length > 3 ? 4 : 0);
            ctx.save();
            ctx.globalAlpha = p.status === 'deregistered' ? 0.35 : 0.92;
-           ctx.beginPath();
-           ctx.arc(x, y, r, 0, Math.PI * 2);
-           ctx.fillStyle = g.color;
-           ctx.fill();
-           ctx.strokeStyle = '#fff';
-           ctx.lineWidth = 1.5;
-           ctx.stroke();
-           ctx.fillStyle = '#fff';
-           ctx.font = 'bold ' + (g.initials.length > 3 ? 9 : 10) + 'px "Roboto", sans-serif';
-           ctx.fillText(g.initials, x, y + 1);
+           if (p.logo && p.logo.image) {
+             drawLogoBadge(ctx, p.logo.image, x, y, r);
+           } else {
+             drawInitialsBadge(ctx, g, x, y, r);
+           }
           ctx.restore();
         });
       }
@@ -314,6 +325,58 @@ Contributions welcome via PR:
         <td>${p.status === 'deregistered' ? 'Deregistered' : 'Active'}</td>
       </tr>`
     ).join('');
+  }
+
+  function formatSignedScore(v) {
+    if (v > 0) return '+' + v;
+    if (v < 0) return '−' + Math.abs(v);
+    return '' + v;
+  }
+
+  function sourceLinksHtml(sources) {
+    if (!sources || !sources.length) return '';
+    var links = sources.map(function(s) {
+      return '<a href="' + s.url + '" target="_blank" rel="noopener">' + (s.label || s.url) + '</a>';
+    }).join(', ');
+    return ' <span class="gov-just-sources">' + (sources.length > 1 ? 'Sources: ' : 'Source: ') + links + '</span>';
+  }
+
+  function justificationDimHtml(label, note, sources) {
+    if (!note) return '';
+    return '<p class="gov-just-dim"><strong>' + label + ':</strong> ' + note + sourceLinksHtml(sources) + '</p>';
+  }
+
+  function renderLogoCredits(parties) {
+    var el = document.getElementById('gov-logo-credits');
+    if (!el) return;
+    var withLogos = parties.filter(function(p) { return p.logo && p.logo.image; });
+    if (!withLogos.length) return;
+    var links = withLogos.map(function(p) {
+      return '<a href="' + p.logo.source + '" target="_blank" rel="noopener">' + p.name + '</a> (' + p.logo.license + ')';
+    });
+    el.innerHTML = 'Party logos above: ' + links.join(', ') + ' — via Wikimedia Commons. Parties without a freely licensed logo on file show initials instead.';
+  }
+
+  function renderJustification(parties) {
+    document.querySelectorAll('.gov-justification-body').forEach(function(container) {
+      var p = parties.find(function(x) { return x.slug === container.dataset.slug; });
+      if (!p || !p.history || !p.history.length) return;
+      var sorted = p.history.slice().sort(function(a, b) { return a.date.localeCompare(b.date); });
+      var scoringNoteHtml = p.scoring_note ? '<p class="gov-just-scoring-note"><em>' + p.scoring_note + '</em></p>' : '';
+      var entriesHtml = sorted.map(function(h) {
+        var scoreLine = '<p class="gov-just-date"><strong>' + h.date + '</strong> — ' +
+          'Left–Right ' + formatSignedScore(h.left_right) +
+          ', Internal ' + h.internal_governance + '/10' +
+          ', External ' + formatSignedScore(h.external_reform) + '/10</p>';
+        var dims = [
+          justificationDimHtml('Left–Right', h.left_right_note, h.left_right_sources),
+          justificationDimHtml('Internal', h.internal_note, h.internal_sources),
+          justificationDimHtml('External', h.external_note, h.external_sources)
+        ].join('');
+        return '<div class="gov-just-entry">' + scoreLine + dims + '</div>';
+      }).join('');
+      container.innerHTML = scoringNoteHtml + entriesHtml;
+    });
   }
 
   function renderScatter(canvasId, config) {
@@ -352,7 +415,10 @@ Contributions welcome via PR:
                 const latest = p.history && p.history.length
                   ? p.history.reduce((a, b) => (b.date > a.date ? b : a))
                   : null;
-                if (latest && latest.source) lines.push('Source: ' + latest.source);
+                if (latest) {
+                  const allSources = (latest.internal_sources || []).concat(latest.external_sources || []);
+                  if (allSources.length) lines.push('Source: ' + allSources[0].label);
+                }
                 return lines;
               }
             }
@@ -399,19 +465,15 @@ Contributions welcome via PR:
       .map(function(slug) { return parties.find(function(x) { return x.slug === slug; }); })
       .filter(function(p) { return p && p.history && p.history.length > 0; });
 
-    var allLabels = new Set();
-    selectedParties.forEach(function(p) {
-      p.history.forEach(function(h) { allLabels.add(h.date); });
-    });
-    var labels = Array.from(allLabels).sort();
-
     TIMELINE_DIMENSIONS.forEach(function(dim) {
       var datasets = selectedParties.map(function(p) {
         var sorted = p.history.slice().sort(function(a, b) { return a.date.localeCompare(b.date); });
         var g = partyGlyph(p);
         return {
           label: p.name,
-          data: sorted.map(function(h) { return { x: h.date, y: h[dim.field], note: h.note, source: h.source }; }),
+          data: sorted.map(function(h) {
+            return { x: h.date + '-01', y: h[dim.field], note: h[dim.key + '_note'], sources: h[dim.key + '_sources'] };
+          }),
           borderColor: g.color,
           backgroundColor: hexToRgba(g.color, 0.10),
           borderWidth: 2.5,
@@ -424,7 +486,7 @@ Contributions welcome via PR:
       var ctx = document.getElementById(dim.canvasId).getContext('2d');
       timelineCharts[dim.key] = new Chart(ctx, {
         type: 'line',
-        data: { labels: labels, datasets: datasets },
+        data: { datasets: datasets },
         options: {
           responsive: true,
           maintainAspectRatio: false,
@@ -440,7 +502,7 @@ Contributions welcome via PR:
                   var raw = ctx.raw;
                   var lines = [ctx.dataset.label + ': ' + raw.y];
                   if (raw.note) lines.push(raw.note.length > 140 ? raw.note.substring(0, 140) + '...' : raw.note);
-                  if (raw.source) lines.push('Source: ' + raw.source);
+                  if (raw.sources && raw.sources.length) lines.push('Source: ' + raw.sources[0].label);
                   return lines;
                 }
               }
@@ -448,7 +510,12 @@ Contributions welcome via PR:
           },
           scales: {
             x: {
-              type: 'category',
+              // Real time scale (not category) so the horizontal spacing
+              // between points — and each party's line length — reflects
+              // actual elapsed time, e.g. Labor's 1967-2026 span reads as
+              // far longer than Your Party's single 2026 point.
+              type: 'time',
+              time: { tooltipFormat: 'yyyy-MM', displayFormats: { year: 'yyyy' } },
               title: { display: true, text: 'Date', color: COLORS.text }
             },
             y: {
@@ -493,9 +560,12 @@ Contributions welcome via PR:
 
   fetch(DATA_URL)
     .then(r => r.json())
+    .then(data => preloadLogos(data.parties).then(() => data))
     .then(data => {
       const parties = data.parties;
       renderTable(parties);
+      renderJustification(parties);
+      renderLogoCredits(parties);
 
       const graphConfigs = data.graphs;
       renderScatter('chart-left-right-internal', {

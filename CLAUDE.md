@@ -25,6 +25,10 @@ Current status: we are still on `mkdocs + mkdocs-material` and it works fine. `D
 
 Reference: https://fpgmaas.com/blog/collapse-of-mkdocs/
 
+## Sourcing from Wikipedia
+
+Use the API, not scraped page HTML: `https://en.wikipedia.org/w/api.php?action=query&prop=extracts&explaintext=1&titles=<Page_Title>&format=json` (add `&exintro=1` for just the lead section). Returns clean plain-text article content directly — no tag-stripping/regex needed, far less bytes transferred than fetching the fully rendered page (infoboxes, references, styling, scripts), and it's the endpoint Wikipedia actually intends for this kind of programmatic reading rather than a full page load per lookup. Use `action=query&list=search&srsearch=...` first when unsure of the exact page title (Wikipedia's naming disambiguation, e.g. "Democratic Labor Party" vs "Democratic Labour Party", trips up direct title guesses often enough to check first rather than iterating 404s). Established while sourcing historical Australian parties for the [Party Governance Comparison](docs/projects/au-party-governance-comparison.md) — apply it to any future Wikipedia-sourced research (concept pages, org pages, heartbeat world-commentary items) rather than fetching rendered HTML.
+
 ## Philosophy section vs. Accountability Framework
 
 These two are separate on purpose (split June 2026 — see the Soul Document's relocation note):
