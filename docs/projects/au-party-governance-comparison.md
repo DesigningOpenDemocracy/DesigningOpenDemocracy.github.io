@@ -191,12 +191,14 @@ Contributions welcome via PR:
 (function() {
   const DATA_URL = '/data/party-governance.json';
 
-  // Read the page's actual (theme-adaptive) colors rather than hardcoding
-  // light-mode values — this site runs a single dark "slate" palette, so a
-  // hardcoded dark grey/black would be near-invisible against it.
-  const rootStyle = getComputedStyle(document.documentElement);
-  const fgText = rootStyle.getPropertyValue('--md-default-fg-color--light').trim() || '#aaa';
-  const fgGrid = rootStyle.getPropertyValue('--md-default-fg-color--lightest').trim() || 'rgba(255,255,255,0.1)';
+  // Hardcoded white/near-white — this site runs a single dark "slate"
+  // palette with no light-mode toggle, so chart text and gridlines should
+  // always read against a dark background. (Previously read theme colors
+  // via CSS custom properties, but that was reported unreadable for at
+  // least one viewer — hardcoding removes the dependency on those
+  // resolving the way we expect.)
+  const fgText = '#fff';
+  const fgGrid = 'rgba(255,255,255,0.25)';
 
   const COLORS = {
     grid: fgGrid,
