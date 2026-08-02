@@ -10,6 +10,7 @@ contact:
   checked: 2026-07-30
 summary: "An open-source e-participation platform originally developed by Madrid City Council, now stewarded by an independent foundation and used by ~350 governments worldwide."
 concepts:
+  - democracy-tools
   - direct-democracy
   - deliberative-democracy
   - participatory-budgeting

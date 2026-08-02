@@ -11,6 +11,7 @@ contact:
 news_page: https://mieuxvoter.fr/presse
 summary: "A French association advocating for Majority Judgment voting — an alternative electoral method where voters grade each candidate rather than pick one, aimed at reducing strategic voting and better reflecting collective preferences."
 concepts:
+  - democracy-tools
   - majority-judgment
   - e-government
 location:

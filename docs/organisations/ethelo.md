@@ -11,6 +11,7 @@ contact:
   checked: 2026-08-01
 summary: "A Canadian collective intelligence platform used by 100+ municipalities and the Government of Canada — surfaces the least polarising, most broadly supported outcomes from large group consultations."
 concepts:
+  - democracy-tools
   - e-government
   - direct-democracy
   - participatory-budgeting

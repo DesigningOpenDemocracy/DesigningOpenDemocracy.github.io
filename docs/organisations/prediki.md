@@ -15,6 +15,7 @@ location:
   longitude: 16.3738
   name: Vienna, Austria
 concepts:
+  - democracy-tools
   - prediction-markets
   - cognitive-division-of-labour
   - isegoria

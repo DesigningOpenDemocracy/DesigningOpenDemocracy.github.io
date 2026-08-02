@@ -15,6 +15,13 @@ location:
   latitude: -33.8886
   longitude: 151.1873
   name: Sydney Law School, University of Sydney, Australia
+activity:
+  dod:
+    date: 2026-08-02
+    note: "Confirmed active — YouTube channel live, recent episodes verified"
+    url: https://www.youtube.com/@constitutionalclarion1901
+    checked: 2026-08-02
+last_checked: "2026-08-02"
 ---
 
 Constitutional Clarion is a YouTube channel [started in 2022](https://en.wikipedia.org/wiki/Anne_Twomey_%28academic%29) by Anne Twomey, Professor Emerita at Sydney Law School, "publish[ing] her work for a more general audience." It is a one-person public education effort rather than an organisation in the usual sense — included here as a "landscape of one," on the same footing DOD applies to institutions: what matters is the governance-literacy work being done, not the size of the entity doing it.

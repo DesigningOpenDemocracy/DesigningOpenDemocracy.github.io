@@ -12,6 +12,7 @@ rss_feed: https://democracyclub.org.uk/blog/feed/
 news_page: https://democracyclub.org.uk/blog/
 summary: "A UK civic tech nonprofit building free, open data infrastructure for elections — candidate databases, polling place finders, and ward boundary data used by the BBC, The Guardian, and local councils."
 concepts:
+  - democracy-tools
   - e-government
   - representative-democracy
 location:

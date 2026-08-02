@@ -12,6 +12,7 @@ contact:
   checked: 2026-08-01
 summary: "An open-source liquid democracy platform developed in Berlin — best known as the decision-making system used by the German Pirate Party, enabling delegated voting on policy initiatives."
 concepts:
+  - democracy-tools
   - liquid-democracy
   - direct-democracy
   - issue-based-direct-democracy

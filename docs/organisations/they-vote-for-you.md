@@ -14,6 +14,7 @@ location:
   longitude: 151.2093
   name: Sydney, Australia
 concepts:
+  - democracy-tools
   - radical-transparency
   - accountability-sink
   - e-government

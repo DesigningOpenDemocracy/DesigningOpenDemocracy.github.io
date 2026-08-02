@@ -6,6 +6,7 @@ country: AR
 website: https://democracy.earth
 summary: "An open-source civic technology foundation building quadratic voting and sovereign identity tools — aiming to make democratic participation internet-native and censorship-resistant."
 concepts:
+  - democracy-tools
   - liquid-democracy
   - direct-democracy
   - decentralized-autonomous-organization

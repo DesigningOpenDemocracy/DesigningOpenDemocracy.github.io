@@ -6,6 +6,7 @@ country: AR
 website: https://web.archive.org/web/*/http://democracyos.org
 summary: "An influential open-source platform (2012–2017) for publishing proposals, hosting public debate, and collecting structured votes — used by the Argentine Senate and early vTaiwan."
 concepts:
+  - democracy-tools
   - direct-democracy
   - deliberative-democracy
   - e-government

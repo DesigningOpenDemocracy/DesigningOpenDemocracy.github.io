@@ -6,6 +6,7 @@ country: RO
 website: https://web.archive.org/web/*/https://votemonitor.org/
 summary: "An open-source election observation platform built by Code for Romania — allows accredited observers to submit real-time field reports from polling stations, replacing paper forms with structured mobile data collection."
 concepts:
+  - democracy-tools
   - e-government
   - radical-transparency
   - end-to-end-verifiable-voting-system

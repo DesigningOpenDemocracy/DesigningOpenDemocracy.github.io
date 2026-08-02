@@ -15,6 +15,7 @@ location:
   longitude: -122.3321
   name: Seattle, USA
 concepts:
+  - democracy-tools
   - consensus-mapping
   - deliberative-democracy
   - citizens-assembly

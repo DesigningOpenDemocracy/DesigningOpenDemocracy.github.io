@@ -10,6 +10,7 @@ contact:
   checked: 2026-07-30
 summary: "An Icelandic non-profit developing Your Priorities, an open-source deliberation platform used in 45+ countries — best known for Better Reykjavík, which engaged over half of Iceland's eligible citizens."
 concepts:
+  - democracy-tools
   - direct-democracy
   - deliberative-democracy
   - e-government

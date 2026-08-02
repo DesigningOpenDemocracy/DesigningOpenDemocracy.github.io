@@ -11,6 +11,7 @@ contact:
   checked: 2026-07-30
 summary: "An open-source participatory democracy framework used by 400+ governments and organisations worldwide — citizen proposals, participatory budgeting, consultations, and collaborative legislation."
 concepts:
+  - democracy-tools
   - direct-democracy
   - deliberative-democracy
   - participatory-budgeting

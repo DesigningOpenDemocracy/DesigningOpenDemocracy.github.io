@@ -13,11 +13,16 @@ contributors:
   - BrianKhuu
 concepts:
   - tribal-epistemology
+location:
+  latitude: -33.8688
+  longitude: 151.2093
+  name: Sydney, Australia
 activity:
   dod:
     date: 2026-07-30
     note: "Confirmed active via official site during landscape research"
-    checked: 2026-07-30
+    checked: 2026-08-02
+last_checked: "2026-08-02"
 ---
 
 ETTE Media is an independent Australian media company founded by journalists Jan Fran and Antoinette Lattouf. Unlike outlets that report the news, ETTE's focus is teaching audiences *how to read* the news — spotting spin, decoding headlines, and identifying who benefits from a given framing, in an environment of algorithmic distortion and declining trust in mainstream media. In practice this plays out as an irreverent, conversational two-hander rather than a lecture — casual banter wrapped around genuine policy substance.

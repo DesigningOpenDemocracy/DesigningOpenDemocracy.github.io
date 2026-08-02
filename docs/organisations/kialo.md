@@ -10,6 +10,7 @@ contact:
   checked: 2026-08-01
 summary: "The world's largest argument-mapping and structured deliberation platform — uses a debate-tree format to organise pros, cons, and sub-arguments. Proprietary and free to use, with a separate education product."
 concepts:
+  - democracy-tools
   - consensus-mapping
   - deliberative-democracy
 location:
