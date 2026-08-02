@@ -32,6 +32,7 @@
       "internal_governance": 3,
       "external_reform": 4,
       "notability": 10,
+      "logo": { "path": "/assets/party-logos/au/labor.svg", "license": "CC BY-SA 4.0", "source": "https://commons.wikimedia.org/wiki/File:Logo_of_Australian_Labor_Party.svg" },
       "status": "active",
       "note": "Faction-controlled preselections despite formal OMOV rules; weighted parliamentarian votes in some selections; internal reform pushes (Leigh, Faulkner) stalled.",
       "history": [
@@ -118,6 +119,7 @@
       "internal_governance": 2,
       "external_reform": 0,
       "notability": 10,
+      "logo": { "path": "/assets/party-logos/au/liberal.png", "license": "Public domain", "source": "https://commons.wikimedia.org/wiki/File:Liberal_Party_of_Australia_Logo_2015.png" },
       "status": "active",
       "note": "Opposed real-time donation disclosure (2019); opposed truth-in-advertising bill; 2018/19 integrity commission proposal widely criticised as designed to hold only private hearings.",
       "history": [
@@ -177,6 +179,7 @@
       "internal_governance": 3,
       "external_reform": 8,
       "notability": 7,
+      "logo": { "path": "/assets/party-logos/au/greens.svg", "license": "Public domain", "source": "https://commons.wikimedia.org/wiki/File:AustralianGreensLogo_official.svg" },
       "status": "active",
       "note": "Leadership not member-elected in all jurisdictions; varied preselection processes by state. Strong external record: 10-year federal anti-corruption campaign, truth-in-advertising bill, donation cap advocacy.",
       "history": [
@@ -230,6 +233,7 @@
       "internal_governance": 7,
       "external_reform": 0,
       "notability": 3,
+      "logo": { "path": "/assets/party-logos/au/victorian-socialists.webp", "license": "Public domain", "source": "https://commons.wikimedia.org/wiki/File:Victorian_Socialists_logo,_2025.webp" },
       "status": "active",
       "note": "Constitutional OMOV (adopted Jan 2024); competitive conference elections with minority faction platform rights; electorate-based branch structure. No external reform advocacy — revolutionary, not reformist (does not believe parliament can be meaningfully reformed under capitalism).",
       "history": [
@@ -280,6 +284,7 @@
       "internal_governance": 1,
       "external_reform": -1,
       "notability": 6,
+      "logo": { "path": "/assets/party-logos/au/one-nation.png", "license": "CC BY-SA 4.0", "source": "https://commons.wikimedia.org/wiki/File:One_Nation_logo.png" },
       "status": "active",
       "note": "Leader-dominated structure. AEC compliance action forced withdrawal of $800k+ contested election-spending claims (June 2026).",
       "history": [
@@ -371,6 +376,7 @@
       "internal_governance": 2,
       "external_reform": 1,
       "notability": 3,
+      "logo": { "path": "/assets/party-logos/au/katter.png", "license": "CC BY-SA 4.0", "source": "https://commons.wikimedia.org/wiki/File:KAP2016logo.png" },
       "status": "active",
       "note": "Decentralisation calls and NQ partition referendum — policy positions, not sustained reform program.",
       "history": [
@@ -412,6 +418,7 @@
       "internal_governance": 6,
       "external_reform": 9,
       "notability": 2,
+      "logo": { "path": "/assets/party-logos/au/pirate-party.svg", "license": "CC BY-SA 3.0", "source": "https://commons.wikimedia.org/wiki/File:Pirate_Party_Australia_logo.svg" },
       "status": "active",
       "note": "Liquid democracy culture; merged into Fusion Party's federated structure 2021. Democracy and transparency reform is the party's reason for existing.",
       "history": [
@@ -465,6 +472,7 @@
       "internal_governance": 3,
       "external_reform": 7,
       "notability": 3,
+      "logo": { "path": "/assets/party-logos/au/australian-democrats.png", "license": "Public domain", "source": "https://commons.wikimedia.org/wiki/File:Australian_Democrats_2020_Logo.png" },
       "status": "active",
       "note": "Re-established. Advocates citizens' assembly for Vic upper house reform; proportional representation; evidence-based approach citing 2025 AES data.",
       "history": [
@@ -605,6 +613,7 @@
       "internal_governance": 2,
       "external_reform": 0,
       "notability": 7,
+      "logo": { "path": "/assets/party-logos/au/dlp.jpg", "license": "Public domain", "source": "https://commons.wikimedia.org/wiki/File:DLP_Historic_Logo.jpg" },
       "status": "deregistered",
       "note": "Formed by the 1955 Labor Split. Directed Senate preferences to keep the ALP from federal power for 17 years. Effective control sat with B. A. Santamaria's National Civic Council rather than the ordinary membership. Wound up 1978; a separate DLP was later re-founded by former members and remains a minor party today — not the entity scored here.",
       "history": [
@@ -658,6 +667,7 @@
       "internal_governance": 2,
       "external_reform": 0,
       "notability": 8,
+      "logo": { "path": "/assets/party-logos/au/uap-historical.svg", "license": "CC BY-SA 4.0", "source": "https://commons.wikimedia.org/wiki/File:Logo_of_the_United_Australia_Party.svg" },
       "status": "deregistered",
       "note": "Governing conservative party of the 1930s–40s; direct predecessor of the modern Liberal Party. No relation to the unrelated modern minor party of the same name (est. 2013).",
       "history": [
@@ -758,6 +768,7 @@
       "internal_governance": 9,
       "external_reform": 6,
       "notability": 8,
+      "logo": { "path": "/assets/party-logos/gb/your-party.svg", "license": "Public domain", "source": "https://commons.wikimedia.org/wiki/File:This_Is_Your_Party.svg" },
       "status": "active",
       "note": "Sortition-selected founding conference delegates (via Sortition Foundation) — one of few parties globally using random selection for internal deliberative bodies. International comparator. General-purpose progressive platform alongside democratic reform.",
       "history": [

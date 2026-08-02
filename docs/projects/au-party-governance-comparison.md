@@ -69,6 +69,8 @@ Standard political spectrum for rough orientation. −10 = far left (revolutiona
   </div>
 </div>
 
+<p class="chart-hint" id="gov-logo-credits"></p>
+
 <div class="gov-chart-wrapper gov-timeline" id="gov-timeline-section">
   <h3>3. Score Changes Over Time</h3>
   <p class="chart-hint">Toggle parties to compare how internal and external governance scores shift across review cycles. Default shows the three parties that best illustrate the framework's internal-vs-external distinction. Charts collapse when nothing is selected.</p>
@@ -232,6 +234,55 @@ Contributions welcome via PR:
     return 'rgba(' + r + ',' + g + ',' + b + ',' + alpha + ')';
   }
 
+  // Loads each party's logo (if it has one) into an Image so the scatter
+  // plugin can draw it; resolves regardless of success/failure so a bad
+  // image never blocks rendering — the plugin falls back to the colored
+  // initials badge whenever `p.logo.image` isn't set.
+  function preloadLogos(parties) {
+    return Promise.all(parties.map(function(p) {
+      if (!p.logo || !p.logo.path) return Promise.resolve();
+      return new Promise(function(resolve) {
+        var img = new Image();
+        img.onload = function() { p.logo.image = img; resolve(); };
+        img.onerror = function() { resolve(); };
+        img.src = p.logo.path;
+      });
+    }));
+  }
+
+  function drawLogoBadge(ctx, img, x, y, r) {
+    ctx.beginPath();
+    ctx.arc(x, y, r, 0, Math.PI * 2);
+    ctx.fillStyle = '#fff';
+    ctx.fill();
+    ctx.save();
+    ctx.clip();
+    // "Contain" fit (never crops) — a wordmark logo cut off at a circle's
+    // edge reads worse than one left smaller with a little white margin.
+    var iw = img.naturalWidth || 1, ih = img.naturalHeight || 1;
+    var pad = 0.82;
+    var scale = Math.min((r * 2 * pad) / iw, (r * 2 * pad) / ih);
+    var w = iw * scale, h = ih * scale;
+    ctx.drawImage(img, x - w / 2, y - h / 2, w, h);
+    ctx.restore();
+    ctx.strokeStyle = '#fff';
+    ctx.lineWidth = 1.5;
+    ctx.stroke();
+  }
+
+  function drawInitialsBadge(ctx, g, x, y, r) {
+    ctx.beginPath();
+    ctx.arc(x, y, r, 0, Math.PI * 2);
+    ctx.fillStyle = g.color;
+    ctx.fill();
+    ctx.strokeStyle = '#fff';
+    ctx.lineWidth = 1.5;
+    ctx.stroke();
+    ctx.fillStyle = '#fff';
+    ctx.font = 'bold ' + (g.initials.length > 3 ? 9 : 10) + 'px "Roboto", sans-serif';
+    ctx.fillText(g.initials, x, y + 1);
+  }
+
   function labelPlugin(parties) {
     return {
       id: 'partyLabels',
@@ -248,16 +299,11 @@ Contributions welcome via PR:
            var r = 10 + (p.notability || 3) + (g.initials.length > 3 ? 4 : 0);
            ctx.save();
            ctx.globalAlpha = p.status === 'deregistered' ? 0.35 : 0.92;
-           ctx.beginPath();
-           ctx.arc(x, y, r, 0, Math.PI * 2);
-           ctx.fillStyle = g.color;
-           ctx.fill();
-           ctx.strokeStyle = '#fff';
-           ctx.lineWidth = 1.5;
-           ctx.stroke();
-           ctx.fillStyle = '#fff';
-           ctx.font = 'bold ' + (g.initials.length > 3 ? 9 : 10) + 'px "Roboto", sans-serif';
-           ctx.fillText(g.initials, x, y + 1);
+           if (p.logo && p.logo.image) {
+             drawLogoBadge(ctx, p.logo.image, x, y, r);
+           } else {
+             drawInitialsBadge(ctx, g, x, y, r);
+           }
           ctx.restore();
         });
       }
@@ -298,6 +344,17 @@ Contributions welcome via PR:
   function justificationDimHtml(label, note, sources) {
     if (!note) return '';
     return '<p class="gov-just-dim"><strong>' + label + ':</strong> ' + note + sourceLinksHtml(sources) + '</p>';
+  }
+
+  function renderLogoCredits(parties) {
+    var el = document.getElementById('gov-logo-credits');
+    if (!el) return;
+    var withLogos = parties.filter(function(p) { return p.logo && p.logo.image; });
+    if (!withLogos.length) return;
+    var links = withLogos.map(function(p) {
+      return '<a href="' + p.logo.source + '" target="_blank" rel="noopener">' + p.name + '</a> (' + p.logo.license + ')';
+    });
+    el.innerHTML = 'Party logos above: ' + links.join(', ') + ' — via Wikimedia Commons. Parties without a freely licensed logo on file show initials instead.';
   }
 
   function renderJustification(parties) {
@@ -503,10 +560,12 @@ Contributions welcome via PR:
 
   fetch(DATA_URL)
     .then(r => r.json())
+    .then(data => preloadLogos(data.parties).then(() => data))
     .then(data => {
       const parties = data.parties;
       renderTable(parties);
       renderJustification(parties);
+      renderLogoCredits(parties);
 
       const graphConfigs = data.graphs;
       renderScatter('chart-left-right-internal', {
