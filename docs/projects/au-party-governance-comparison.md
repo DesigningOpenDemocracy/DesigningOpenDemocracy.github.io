@@ -421,7 +421,8 @@ Contributions welcome via PR:
       if (p.website) linksHtml.push('<a href="' + p.website + '" target="_blank" rel="noopener">Website</a>');
       if (p.dod_page) linksHtml.push('<a href="' + p.dod_page + '">DOD page</a>');
       if (p.logo && p.logo.path) {
-        var img = '<img src="' + p.logo.path + '" alt="' + p.name + ' logo" class="gov-just-logo">';
+        var logoPath = p.logo.just_path || p.logo.path;
+        var img = '<img src="' + logoPath + '" alt="' + p.name + ' logo" class="gov-just-logo">';
         logoHtml = '<div class="gov-just-header">' + img + (linksHtml.length ? '<div class="gov-just-links">' + linksHtml.join(' · ') + '</div>' : '') + '</div>';
       } else if (linksHtml.length) {
         logoHtml = '<p class="gov-just-links">' + linksHtml.join(' · ') + '</p>';

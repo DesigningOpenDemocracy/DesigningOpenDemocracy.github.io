@@ -1,6 +1,6 @@
 {
   "meta": {
-    "version": "2026-08-04-005",
+    "version": "2026-08-04-006",
     "description": "Multi-year governance structure and ideological scoring for Australian political parties, with international comparators. Latest scores are at the top level (for scatter plots); history arrays track changes over time (for timeline chart and the dated 'Scoring justification' section, which is rendered entirely from this data — there is no separate hand-written justification text anywhere else). Scores are approximate and deliberately coarse — see project page for full methodology.",
     "dimensions": {
       "left_right": {
@@ -677,7 +677,8 @@
       "logo": {
         "path": "/assets/party-logos/au/jacqui-lambie-network.png",
         "license": "Fair use",
-        "source": "https://en.wikipedia.org/wiki/File:Jacqui_Lambie_Network_federal_logo.png"
+        "source": "https://en.wikipedia.org/wiki/File:Jacqui_Lambie_Network_federal_logo.png",
+        "just_path": "/assets/party-logos/au/jacqui-lambie-network-white.png"
       },
       "wikipedia": "https://en.wikipedia.org/wiki/Jacqui_Lambie_Network",
       "website": "https://lambienetwork.com.au"
