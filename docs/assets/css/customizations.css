@@ -25,12 +25,12 @@
     white-space: nowrap;
 }
 
-.project-status-badge.status-active       { background: #e6f4ea; color: #2e7d32; }
-.project-status-badge.status-idea         { background: #e3f2fd; color: #1565c0; }
-.project-status-badge.status-mothballed   { background: #fff3e0; color: #e65100; }
-.project-status-badge.status-cancelled    { background: #f5f5f5; color: #757575; }
-.project-status-badge.status-inactive     { background: #fff3e0; color: #e65100; }
-.project-status-badge.status-deregistered { background: #f5f5f5; color: #757575; }
+.project-status-badge.status-active       { background: rgba(46,125,50,0.25); color: #81c784; border: 1px solid rgba(46,125,50,0.35); }
+.project-status-badge.status-idea         { background: rgba(21,101,192,0.25); color: #64b5f6; border: 1px solid rgba(21,101,192,0.35); }
+.project-status-badge.status-mothballed   { background: rgba(230,81,0,0.25); color: #ffb74d; border: 1px solid rgba(230,81,0,0.35); }
+.project-status-badge.status-cancelled    { background: rgba(117,117,117,0.25); color: #bdbdbd; border: 1px solid rgba(117,117,117,0.35); }
+.project-status-badge.status-inactive     { background: rgba(230,81,0,0.25); color: #ffb74d; border: 1px solid rgba(230,81,0,0.35); }
+.project-status-badge.status-deregistered { background: rgba(117,117,117,0.25); color: #bdbdbd; border: 1px solid rgba(117,117,117,0.35); }
 
 .org-index-card-meta {
     font-size: 0.8em;
@@ -744,16 +744,16 @@
     border-radius: 10px;
     font-size: 0.72em;
     font-weight: 500;
-    background: #e8eaf6;
-    color: #3949ab;
+    background: hsl(var(--concept-hue, 230), 45%, 16%);
+    color: hsl(var(--concept-hue, 230), 55%, 72%);
     text-decoration: none;
     white-space: nowrap;
-    border: 1px solid #c5cae9;
+    border: 1px solid hsl(var(--concept-hue, 230), 35%, 28%);
 }
 
 .concept-tag:hover {
-    background: #c5cae9;
-    color: #1a237e;
+    background: hsl(var(--concept-hue, 230), 45%, 26%);
+    color: hsl(var(--concept-hue, 230), 65%, 82%);
     text-decoration: none;
 }
 
@@ -973,13 +973,13 @@
   vertical-align: middle;
   margin-left: 0.4em;
 }
-.method-rss      { background: #fff3e0; color: #e65100; }
-.method-ical     { background: #e1f5fe; color: #01579b; }
-.method-sitemap  { background: #f3e5f5; color: #6a1b9a; }
-.method-manual   { background: #e8f5e9; color: #1b5e20; }
-.method-dod      { background: #e3f2fd; color: #0d47a1; }
-.method-social   { background: #fce4ec; color: #880e4f; }
-.method-scrape   { background: #e0f2f1; color: #00695c; }
+.method-rss      { background: rgba(230,81,0,0.25);   color: #ffb74d; }
+.method-ical     { background: rgba(1,87,155,0.25);   color: #4fc3f7; }
+.method-sitemap  { background: rgba(106,27,154,0.25);  color: #ce93d8; }
+.method-manual   { background: rgba(27,94,32,0.25);    color: #a5d6a7; }
+.method-dod      { background: rgba(13,71,161,0.25);   color: #90caf9; }
+.method-social   { background: rgba(136,14,79,0.25);   color: #f48fb1; }
+.method-scrape   { background: rgba(0,105,92,0.25);    color: #80cbc4; }
 .activity-note {
   font-size: 0.85em;
   color: var(--md-default-fg-color--light);

@@ -142,6 +142,15 @@
 </div>
 <script>
 (function () {
+  // Per-concept tag colours — hash the slug to a stable hue
+  document.querySelectorAll('.concept-tag').forEach(function(el) {
+    var parts = el.getAttribute('href').split('/');
+    var slug = parts[parts.indexOf('concepts') + 1] || '';
+    var hash = 0;
+    for (var i = 0; i < slug.length; i++) hash = ((hash << 5) - hash) + slug.charCodeAt(i);
+    el.style.setProperty('--concept-hue', Math.abs(hash) % 360);
+  });
+
   function toFlag(code) {
     if (!code || code.length !== 2) return code;
     var base = 0x1F1E6 - 65;
