@@ -1,6 +1,6 @@
 {
   "meta": {
-    "version": "2026-08-04-003",
+    "version": "2026-08-04-004",
     "description": "Multi-year governance structure and ideological scoring for Australian political parties, with international comparators. Latest scores are at the top level (for scatter plots); history arrays track changes over time (for timeline chart and the dated 'Scoring justification' section, which is rendered entirely from this data — there is no separate hand-written justification text anywhere else). Scores are approximate and deliberately coarse — see project page for full methodology.",
     "dimensions": {
       "left_right": {
@@ -1175,7 +1175,8 @@
             }
           ],
           "external_note": "No governance-reform activity — the party is legally deregistered.",
-          "external_sources": []
+          "external_sources": [],
+          "status": "deregistered"
         },
         {
           "date": "2019-04",
@@ -1192,7 +1193,8 @@
             }
           ],
           "external_note": "Freshly re-registered and not yet focused on a specific governance-reform campaign.",
-          "external_sources": []
+          "external_sources": [],
+          "status": "active"
         },
         {
           "date": "2026-08",
@@ -1284,7 +1286,8 @@
             }
           ],
           "external_note": "Democracy reform remained the entire platform through deregistration.",
-          "external_sources": []
+          "external_sources": [],
+          "status": "deregistered"
         }
       ],
       "wikipedia": "https://en.wikipedia.org/wiki/Flux_(political_party)",
@@ -1351,7 +1354,8 @@
             }
           ],
           "external_note": "Democracy reform remained the entire platform through deregistration.",
-          "external_sources": []
+          "external_sources": [],
+          "status": "deregistered"
         }
       ],
       "wikipedia": "https://en.wikipedia.org/wiki/MiVote",
@@ -1455,7 +1459,8 @@
             }
           ],
           "external_note": "Defunct.",
-          "external_sources": []
+          "external_sources": [],
+          "status": "deregistered"
         }
       ],
       "wikipedia": "https://en.wikipedia.org/wiki/Democratic_Labor_Party_(Australia,_1955)"
@@ -1552,7 +1557,8 @@
             }
           ],
           "external_note": "Defunct.",
-          "external_sources": []
+          "external_sources": [],
+          "status": "deregistered"
         }
       ],
       "wikipedia": "https://en.wikipedia.org/wiki/United_Australia_Party"

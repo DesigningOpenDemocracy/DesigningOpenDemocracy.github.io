@@ -536,19 +536,34 @@ Contributions welcome via PR:
       var datasets = selectedParties.map(function(p) {
         var sorted = p.history.slice().sort(function(a, b) { return a.date.localeCompare(b.date); });
         var g = partyGlyph(p);
-        // Insert gap markers for discontinuities (deregistration, inactivity)
+        // Insert gap markers for status transitions (deregistration, reactivation)
         var data = [];
-        var GAP_YEARS = 2;
+        var prevStatus = 'active';
         for (var i = 0; i < sorted.length; i++) {
-          data.push({ x: sorted[i].date + '-01', y: sorted[i][dim.field], note: sorted[i][dim.key + '_note'], sources: sorted[i][dim.key + '_sources'] });
-          if (i < sorted.length - 1) {
-            var d1 = new Date(sorted[i].date + '-01');
-            var d2 = new Date(sorted[i+1].date + '-01');
-            if ((d2 - d1) / 31556952000 > GAP_YEARS) {
-              data.push({ x: sorted[i].date + '-02', y: null });
+          var h = sorted[i];
+          var curStatus = h.status || prevStatus;
+          if (curStatus !== prevStatus) {
+            // Insert a null point at the previous entry to create a visual break
+            if (data.length > 0) {
+              data.push({ x: sorted[i-1].date + '-02', y: null });
+            }
+          }
+          data.push({ x: h.date + '-01', y: h[dim.field], note: h[dim.key + '_note'], sources: h[dim.key + '_sources'] });
+          prevStatus = curStatus;
+        }
+        // Also insert gap for >3yr time gaps not covered by explicit status
+        var finalData = [];
+        for (var j = 0; j < data.length; j++) {
+          finalData.push(data[j]);
+          if (j < data.length - 1 && data[j+1].y !== null) {
+            var dj = new Date(data[j].x);
+            var dk = new Date(data[j+1].x);
+            if ((dk - dj) / 31556952000 > 3 && data[j].y !== null) {
+              finalData.push({ x: new Date(dj.getTime() + 86400000).toISOString().slice(0,7) + '-01', y: null });
             }
           }
         }
+        data = finalData;
         return {
           label: p.name,
           data: data,
