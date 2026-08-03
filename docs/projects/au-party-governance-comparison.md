@@ -536,11 +536,22 @@ Contributions welcome via PR:
       var datasets = selectedParties.map(function(p) {
         var sorted = p.history.slice().sort(function(a, b) { return a.date.localeCompare(b.date); });
         var g = partyGlyph(p);
+        // Insert gap markers for discontinuities (deregistration, inactivity)
+        var data = [];
+        var GAP_YEARS = 2;
+        for (var i = 0; i < sorted.length; i++) {
+          data.push({ x: sorted[i].date + '-01', y: sorted[i][dim.field], note: sorted[i][dim.key + '_note'], sources: sorted[i][dim.key + '_sources'] });
+          if (i < sorted.length - 1) {
+            var d1 = new Date(sorted[i].date + '-01');
+            var d2 = new Date(sorted[i+1].date + '-01');
+            if ((d2 - d1) / 31556952000 > GAP_YEARS) {
+              data.push({ x: sorted[i].date + '-02', y: null });
+            }
+          }
+        }
         return {
           label: p.name,
-          data: sorted.map(function(h) {
-            return { x: h.date + '-01', y: h[dim.field], note: h[dim.key + '_note'], sources: h[dim.key + '_sources'] };
-          }),
+          data: data,
           borderColor: g.color,
           backgroundColor: hexToRgba(g.color, 0.10),
           borderWidth: 2.5,
