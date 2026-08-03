@@ -1025,6 +1025,41 @@
   font-weight: 600;
 }
 
+.gov-chart-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.gov-chart-header h3 {
+  margin-bottom: 0;
+}
+
+.chart-intl-toggle-btn {
+  flex-shrink: 0;
+  background: var(--md-default-fg-color--lightest);
+  color: var(--md-default-fg-color--light);
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 4px;
+  padding: 4px 10px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.15s;
+}
+
+.chart-intl-toggle-btn:hover {
+  border-color: var(--md-default-fg-color--light);
+}
+
+.chart-intl-toggle-btn.active {
+  background: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+  border-color: var(--md-primary-fg-color);
+}
+
 .chart-hint {
   font-size: 0.8rem;
   color: var(--md-default-fg-color--light);

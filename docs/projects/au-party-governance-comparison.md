@@ -58,21 +58,27 @@ Standard political spectrum for rough orientation. −10 = far left (revolutiona
 
 ### Parties scored
 
-16 Australian parties plus 1 international comparator. 11 are active; 5 are historical/deregistered and included for comparison — Flux and MiVote for governance innovation, and the Democratic Labor Party (1955–1978), United Australia Party (1931–1945), and Australia Party (1969–1986) as notable earlier cases spanning a wider slice of Australian party history (an externally-directed minor party, a major governing predecessor of the modern Liberals, and a civil-liberties minor party that fed directly into the Australian Democrats). Fusion Party is included as the federated home Pirate Party Australia merged into in 2021 — see both entries' history for the relationship. The Libertarian Party (formerly the Liberal Democratic Party) was added specifically to test whether right-of-centre parties score low on external reform generally, or only the populist ones already covered do — see its scoring note. Selection: all parties assessed in the internal heartbeat AU party audit <!-- see ../../internal-heartbeat/2026-07-31-au-parties-democracy-reform-assessment.md --> with sufficient documentation, plus the historical/Fusion/Libertarian additions above (sourced independently from Wikipedia, not from the heartbeat audit). Additional international comparators (Podemos, M5S, German Pirate Party, Alternativet) are candidates for future scoring pending independent verification.
+16 Australian parties plus 4 international comparators. 11 of the Australian parties are active; 5 are historical/deregistered and included for comparison — Flux and MiVote for governance innovation, and the Democratic Labor Party (1955–1978), United Australia Party (1931–1945), and Australia Party (1969–1986) as notable earlier cases spanning a wider slice of Australian party history (an externally-directed minor party, a major governing predecessor of the modern Liberals, and a civil-liberties minor party that fed directly into the Australian Democrats). Fusion Party is included as the federated home Pirate Party Australia merged into in 2021 — see both entries' history for the relationship. The Libertarian Party (formerly the Liberal Democratic Party) was added specifically to test whether right-of-centre parties score low on external reform generally, or only the populist ones already covered do — see its scoring note. Selection: all Australian parties assessed in the internal heartbeat AU party audit <!-- see ../../internal-heartbeat/2026-07-31-au-parties-democracy-reform-assessment.md --> with sufficient documentation, plus the historical/Fusion/Libertarian additions above (sourced independently from Wikipedia, not from the heartbeat audit). The four international comparators — Your Party (UK), Podemos (Spain), Five Star Movement (Italy), and Pirate Party Germany — are hidden by default on graphs 1 and 2 (toggle button next to each chart) so the primary Australian comparison isn't diluted for viewers who don't want it; they're sourced from Wikipedia and included specifically because each documents a concrete internal-governance mechanism (sortition, mass member votes on party structure, an online voting platform, binding liquid democracy) worth comparing against the Australian parties' more conventional structures.
 
 ## Graphs
 
 <div class="gov-charts">
   <div class="gov-chart-wrapper">
-    <h3>1. Internal Governance vs. Ideology</h3>
-    <p class="chart-hint">Where parties sit on the left–right spectrum vs. how deeply democratic their internal structures are.</p>
+    <div class="gov-chart-header">
+      <h3>1. Internal Governance vs. Ideology</h3>
+      <button class="chart-intl-toggle-btn" id="toggle-intl-chart1" type="button" aria-pressed="false">Show international parties</button>
+    </div>
+    <p class="chart-hint">Where parties sit on the left–right spectrum vs. how deeply democratic their internal structures are. Shows Australian parties by default — international comparators (Podemos, Five Star Movement, Pirate Party Germany, Your Party) are hidden until toggled on.</p>
     <div class="chart-container">
       <canvas id="chart-left-right-internal"></canvas>
     </div>
   </div>
   <div class="gov-chart-wrapper">
-    <h3>2. External Reform Advocacy vs. Internal Governance</h3>
-    <p class="chart-hint">The framework's two halves mapped against each other. Top-right quadrant = parties that both practice and advocate governance reform. Top-left = prefigurative internal practice without external reformism. Bottom-right = external advocacy without deep internal democracy.</p>
+    <div class="gov-chart-header">
+      <h3>2. External Reform Advocacy vs. Internal Governance</h3>
+      <button class="chart-intl-toggle-btn" id="toggle-intl-chart2" type="button" aria-pressed="false">Show international parties</button>
+    </div>
+    <p class="chart-hint">The framework's two halves mapped against each other. Top-right quadrant = parties that both practice and advocate governance reform. Top-left = prefigurative internal practice without external reformism. Bottom-right = external advocacy without deep internal democracy. Shows Australian parties by default — toggle to add international comparators.</p>
     <div class="chart-container">
       <canvas id="chart-internal-external"></canvas>
     </div>
@@ -175,6 +181,15 @@ This section is rendered entirely from [`party-governance.json`](/data/party-gov
 ### Your Party (UK)
 <div class="gov-justification-body" data-slug="your-party"></div>
 
+### Podemos (Spain)
+<div class="gov-justification-body" data-slug="podemos"></div>
+
+### Five Star Movement (Italy)
+<div class="gov-justification-body" data-slug="five-star-movement"></div>
+
+### Pirate Party Germany
+<div class="gov-justification-body" data-slug="pirate-party-germany"></div>
+
 ## Why this exists
 
 The [Accountability Framework](index.md) is a qualitative standard. It asks *"is this org working on how people participate in governance?"* — a question whose answer is not always yes/no but often *"in what sense, and on which side of its own boundary?"* The framework itself acknowledges this: its "what this means in practice" section does not clarify whether prefigurative internal democracy qualifies, and its diagnostic tools are calibrated for adversary-style accountability systems.
@@ -186,7 +201,7 @@ This reference makes the ambiguity quantitative. A party in the top-left of grap
 Contributions welcome via PR:
 - **Add a party:** Include sourced evidence for each score in the PR description
 - **Rescore:** Provide new evidence for changed scores
-- **Add international comparators:** Especially parties with novel governance mechanisms (Podemos, M5S, German Pirate Party, Alternativet — see the internal heartbeat research note <!-- ../../internal-heartbeat/2026-07-31-au-parties-democracy-reform-assessment.md --> for method)
+- **Add international comparators:** Especially parties with novel governance mechanisms — Alternativet (Denmark) is a documented candidate not yet added; see the internal heartbeat research note <!-- ../../internal-heartbeat/2026-07-31-au-parties-democracy-reform-assessment.md --> for method
 - **New graph dimensions:** Membership vs. governance depth, party age vs. mechanism novelty
 
 ## See also
@@ -242,7 +257,10 @@ Contributions welcome via PR:
     dlp:                    { initials: 'DLP',  color: '#7b1fa2' },
     'uap-historical':       { initials: 'UAP',  color: '#5c6bc0' },
     'australia-party':      { initials: 'AP',   color: '#26a69a' },
-    'your-party':           { initials: 'YP',   color: '#e91e8a' }
+    'your-party':           { initials: 'YP',   color: '#e91e8a' },
+    podemos:                { initials: 'PDM',  color: '#6a2d8f' },
+    'five-star-movement':   { initials: 'M5S',  color: '#ffcc00' },
+    'pirate-party-germany': { initials: 'PPDE', color: '#ff6600' }
   };
 
   function partyGlyph(party) {
@@ -331,6 +349,7 @@ Contributions welcome via PR:
   }
 
   let timelineCharts = { internal: null, external: null };
+  let scatterCharts = {};
 
   function renderTable(parties) {
     const tbody = document.querySelector('#gov-data-table tbody');
@@ -374,7 +393,7 @@ Contributions welcome via PR:
     var links = withLogos.map(function(p) {
       return '<a href="' + p.logo.source + '" target="_blank" rel="noopener">' + p.name + '</a> (' + p.logo.license + ')';
     });
-    el.innerHTML = 'Party logos above: ' + links.join(', ') + ' — via Wikimedia Commons. Parties without a freely licensed logo on file show initials instead.';
+    el.innerHTML = 'Party logos used across the graphs above (international parties appear once toggled on): ' + links.join(', ') + ' — via Wikimedia Commons. Parties without a freely licensed logo on file show initials instead.';
   }
 
   function renderJustification(parties) {
@@ -400,8 +419,12 @@ Contributions welcome via PR:
   }
 
   function renderScatter(canvasId, config) {
+    if (scatterCharts[canvasId]) {
+      scatterCharts[canvasId].destroy();
+      scatterCharts[canvasId] = null;
+    }
     const ctx = document.getElementById(canvasId).getContext('2d');
-    new Chart(ctx, {
+    scatterCharts[canvasId] = new Chart(ctx, {
       type: 'scatter',
       data: {
         datasets: config.parties.map(p => {
@@ -550,6 +573,29 @@ Contributions welcome via PR:
     });
   }
 
+  // Graph 1 & 2 show Australian parties only by default; international
+  // comparators (Podemos, Five Star Movement, Pirate Party Germany, Your
+  // Party) are opt-in via the toggle button next to each chart, so the
+  // primary AU comparison isn't diluted unless a viewer asks for the
+  // wider context.
+  var SCATTER_CONFIGS = {};
+
+  function setupIntlToggle(buttonId, canvasId, allParties) {
+    var btn = document.getElementById(buttonId);
+    if (!btn) return;
+    var showIntl = false;
+
+    btn.addEventListener('click', function() {
+      showIntl = !showIntl;
+      btn.classList.toggle('active', showIntl);
+      btn.setAttribute('aria-pressed', String(showIntl));
+      btn.textContent = showIntl ? 'Hide international parties' : 'Show international parties';
+      var config = SCATTER_CONFIGS[canvasId];
+      var parties = showIntl ? allParties : allParties.filter(function(p) { return p.country === 'AU'; });
+      renderScatter(canvasId, Object.assign({}, config, { parties: parties }));
+    });
+  }
+
   function setupTimeline(parties) {
     var pillsEl = document.getElementById('timeline-pills');
     var DEFAULT_SELECTED = ['victorian-socialists', 'greens', 'your-party'];
@@ -588,25 +634,30 @@ Contributions welcome via PR:
       renderLogoCredits(parties);
 
       const graphConfigs = data.graphs;
-      renderScatter('chart-left-right-internal', {
-        parties: parties,
+      const auParties = parties.filter(p => p.country === 'AU');
+
+      SCATTER_CONFIGS['chart-left-right-internal'] = {
         x: graphConfigs[0].x_axis,
         y: graphConfigs[0].y_axis,
         xLabel: graphConfigs[0].x_label,
         yLabel: graphConfigs[0].y_label,
         xRange: { min: -10, max: 10 },
         yRange: { min: 0, max: 10 }
-      });
-
-      renderScatter('chart-internal-external', {
-        parties: parties,
+      };
+      SCATTER_CONFIGS['chart-internal-external'] = {
         x: graphConfigs[1].x_axis,
         y: graphConfigs[1].y_axis,
         xLabel: graphConfigs[1].x_label,
         yLabel: graphConfigs[1].y_label,
         xRange: { min: 0, max: 10 },
         yRange: { min: -2, max: 10 }
-      });
+      };
+
+      renderScatter('chart-left-right-internal', Object.assign({ parties: auParties }, SCATTER_CONFIGS['chart-left-right-internal']));
+      renderScatter('chart-internal-external', Object.assign({ parties: auParties }, SCATTER_CONFIGS['chart-internal-external']));
+
+      setupIntlToggle('toggle-intl-chart1', 'chart-left-right-internal', parties);
+      setupIntlToggle('toggle-intl-chart2', 'chart-internal-external', parties);
 
       setupTimeline(parties);
     })

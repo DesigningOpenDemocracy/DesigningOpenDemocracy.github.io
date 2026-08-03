@@ -1,22 +1,34 @@
 {
   "meta": {
-    "version": "2026-08-02-004",
+    "version": "2026-08-03-001",
     "description": "Multi-year governance structure and ideological scoring for Australian political parties, with international comparators. Latest scores are at the top level (for scatter plots); history arrays track changes over time (for timeline chart and the dated 'Scoring justification' section, which is rendered entirely from this data — there is no separate hand-written justification text anywhere else). Scores are approximate and deliberately coarse — see project page for full methodology.",
     "dimensions": {
       "left_right": {
-        "range": [-10, 10],
+        "range": [
+          -10,
+          10
+        ],
         "description": "Political ideology spectrum. -10 = far left (revolutionary socialist), -5 = social democratic, 0 = centre, +5 = conservative, +10 = far right."
       },
       "internal_governance": {
-        "range": [0, 10],
+        "range": [
+          0,
+          10
+        ],
         "description": "Depth and genuineness of member control over party decisions. Composite of leadership selection, candidate preselection, policy platform approval, minority rights, and structural accountability mechanisms. 0 = leader-appointed, closed. 10 = full liquid/sortition/direct member democracy."
       },
       "external_reform": {
-        "range": [0, 10],
+        "range": [
+          0,
+          10
+        ],
         "description": "Sustained external advocacy for governance reform — electoral reform, anti-corruption, transparency, accountability mechanisms. 0 = none or opposes reform. 10 = democracy reform is the party's primary platform and purpose."
       },
       "notability": {
-        "range": [1, 10],
+        "range": [
+          1,
+          10
+        ],
         "description": "Rough public profile / electoral significance. Not a membership count (those are unreliable). 1 = marginal, virtually unknown. 5 = established minor party. 10 = government-forming major party."
       }
     },
@@ -32,81 +44,159 @@
       "internal_governance": 3,
       "external_reform": 4,
       "notability": 10,
-      "logo": { "path": "/assets/party-logos/au/labor.svg", "license": "CC BY-SA 4.0", "source": "https://commons.wikimedia.org/wiki/File:Logo_of_Australian_Labor_Party.svg" },
+      "logo": {
+        "path": "/assets/party-logos/au/labor.svg",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Logo_of_Australian_Labor_Party.svg"
+      },
       "status": "active",
       "note": "Faction-controlled preselections despite formal one-member-one-vote rules; weighted parliamentarian votes in some selections; internal reform pushes (Leigh, Faulkner) stalled.",
       "history": [
         {
-          "date": "1967-02", "left_right": -3, "internal_governance": 3, "external_reform": 1,
+          "date": "1967-02",
+          "left_right": -3,
+          "internal_governance": 3,
+          "external_reform": 1,
           "left_right_note": "Centre-left, social democratic — Whitlam-era positioning slightly further left than the modern party.",
           "left_right_sources": [],
           "internal_note": "Whitlam becomes leader, pushing reform of party structure away from pure union control toward broader branch membership input — though federal conference remains union-dominated (the '36 faceless men' image).",
-          "internal_sources": [{ "label": "Gough Whitlam", "url": "https://en.wikipedia.org/wiki/Gough_Whitlam" }],
+          "internal_sources": [
+            {
+              "label": "Gough Whitlam",
+              "url": "https://en.wikipedia.org/wiki/Gough_Whitlam"
+            }
+          ],
           "external_note": "No governance-reform advocacy at this stage.",
           "external_sources": []
         },
         {
-          "date": "1983-03", "left_right": -2, "internal_governance": 2, "external_reform": 1,
+          "date": "1983-03",
+          "left_right": -2,
+          "internal_governance": 2,
+          "external_reform": 1,
           "left_right_note": "Centre-left, social democratic under Hawke — settles at the party's modern position.",
-          "left_right_sources": [{ "label": "Bob Hawke", "url": "https://en.wikipedia.org/wiki/Bob_Hawke" }],
+          "left_right_sources": [
+            {
+              "label": "Bob Hawke",
+              "url": "https://en.wikipedia.org/wiki/Bob_Hawke"
+            }
+          ],
           "internal_note": "Hawke government. Factional system formalised at national level (Left, Centre-Left, Right). Candidate selection increasingly determined by factional deals rather than open member contests.",
-          "internal_sources": [{ "label": "Bob Hawke", "url": "https://en.wikipedia.org/wiki/Bob_Hawke" }],
+          "internal_sources": [
+            {
+              "label": "Bob Hawke",
+              "url": "https://en.wikipedia.org/wiki/Bob_Hawke"
+            }
+          ],
           "external_note": "No governance-reform advocacy at this stage.",
           "external_sources": []
         },
         {
-          "date": "2007-12", "left_right": -2, "internal_governance": 3, "external_reform": 1,
+          "date": "2007-12",
+          "left_right": -2,
+          "internal_governance": 3,
+          "external_reform": 1,
           "left_right_note": "No ideological shift from the Hawke/Keating era.",
           "left_right_sources": [],
           "internal_note": "Rudd elected PM on a platform of internal party reform and greater member engagement; some state branches experiment with one-member-one-vote preselections, but factional control persists federally.",
-          "internal_sources": [{ "label": "Kevin Rudd", "url": "https://en.wikipedia.org/wiki/Kevin_Rudd" }],
+          "internal_sources": [
+            {
+              "label": "Kevin Rudd",
+              "url": "https://en.wikipedia.org/wiki/Kevin_Rudd"
+            }
+          ],
           "external_note": "No governance-reform advocacy at this stage.",
           "external_sources": []
         },
         {
-          "date": "2010-06", "left_right": -2, "internal_governance": 2, "external_reform": 1,
+          "date": "2010-06",
+          "left_right": -2,
+          "internal_governance": 2,
+          "external_reform": 1,
           "left_right_note": "No ideological shift.",
           "left_right_sources": [],
           "internal_note": "Rudd rolled by Gillard in a factional leadership coup; factions reassert control and the internal reform agenda is sidelined.",
-          "internal_sources": [{ "label": "2010 Australian Labor Party leadership spill", "url": "https://en.wikipedia.org/wiki/2010_Australian_Labor_Party_leadership_spill" }],
+          "internal_sources": [
+            {
+              "label": "2010 Australian Labor Party leadership spill",
+              "url": "https://en.wikipedia.org/wiki/2010_Australian_Labor_Party_leadership_spill"
+            }
+          ],
           "external_note": "No governance-reform advocacy at this stage.",
           "external_sources": []
         },
         {
-          "date": "2013-07", "left_right": -2, "internal_governance": 4, "external_reform": 1,
+          "date": "2013-07",
+          "left_right": -2,
+          "internal_governance": 4,
+          "external_reform": 1,
           "left_right_note": "No ideological shift.",
           "left_right_sources": [],
           "internal_note": "Rudd returns and pushes major internal reforms including stronger one-member-one-vote provisions for leadership and preselection; John Faulkner's reform agenda gains brief traction.",
-          "internal_sources": [{ "label": "2013 Australian Labor Party leadership spill", "url": "https://en.wikipedia.org/wiki/2013_Australian_Labor_Party_leadership_spill" }],
+          "internal_sources": [
+            {
+              "label": "2013 Australian Labor Party leadership spill",
+              "url": "https://en.wikipedia.org/wiki/2013_Australian_Labor_Party_leadership_spill"
+            }
+          ],
           "external_note": "No governance-reform advocacy at this stage.",
           "external_sources": []
         },
         {
-          "date": "2014-09", "left_right": -2, "internal_governance": 3, "external_reform": 1,
+          "date": "2014-09",
+          "left_right": -2,
+          "internal_governance": 3,
+          "external_reform": 1,
           "left_right_note": "No ideological shift.",
           "left_right_sources": [],
           "internal_note": "Post-election loss; reforms largely stall and the factional duopoly re-establishes itself. Andrew Leigh later publicly criticises the 'duopoly' (2023).",
-          "internal_sources": [{ "label": "Andrew Leigh calls out Labor's factional duopoly (The Conversation, 2023)", "url": "https://theconversation.com/andrew-leigh-calls-out-how-labors-factional-duopoly-is-undermining-the-party-209972" }],
+          "internal_sources": [
+            {
+              "label": "Andrew Leigh calls out Labor's factional duopoly (The Conversation, 2023)",
+              "url": "https://theconversation.com/andrew-leigh-calls-out-how-labors-factional-duopoly-is-undermining-the-party-209972"
+            }
+          ],
           "external_note": "No governance-reform advocacy at this stage.",
           "external_sources": []
         },
         {
-          "date": "2022-11", "left_right": -2, "internal_governance": 3, "external_reform": 4,
+          "date": "2022-11",
+          "left_right": -2,
+          "internal_governance": 3,
+          "external_reform": 4,
           "left_right_note": "No ideological shift.",
           "left_right_sources": [],
           "internal_note": "Factional preselection control persists; no structural internal reform accompanies this period.",
           "internal_sources": [],
           "external_note": "National Anti-Corruption Commission Act enacted — but the 'exceptional circumstances' public-hearings threshold is criticised by Transparency International Australia and the Centre for Public Integrity as too restrictive.",
-          "external_sources": [{ "label": "Joint statement on the NACC Bill 2022", "url": "https://transparency.org.au/joint-statement-on-the-national-anti-corruption-commission-bill-2022/" }]
+          "external_sources": [
+            {
+              "label": "Joint statement on the NACC Bill 2022",
+              "url": "https://transparency.org.au/joint-statement-on-the-national-anti-corruption-commission-bill-2022/"
+            }
+          ]
         },
         {
-          "date": "2026-08", "left_right": -2, "internal_governance": 3, "external_reform": 4,
+          "date": "2026-08",
+          "left_right": -2,
+          "internal_governance": 3,
+          "external_reform": 4,
           "left_right_note": "Centre-left, social democratic.",
           "left_right_sources": [],
           "internal_note": "Faction-controlled preselections persist despite formal one-member-one-vote rules; weighted parliamentarian votes remain in some selections; internal reform pushes from Andrew Leigh and John Faulkner have stalled.",
-          "internal_sources": [{ "label": "Andrew Leigh calls out Labor's factional duopoly (The Conversation, 2023)", "url": "https://theconversation.com/andrew-leigh-calls-out-how-labors-factional-duopoly-is-undermining-the-party-209972" }],
+          "internal_sources": [
+            {
+              "label": "Andrew Leigh calls out Labor's factional duopoly (The Conversation, 2023)",
+              "url": "https://theconversation.com/andrew-leigh-calls-out-how-labors-factional-duopoly-is-undermining-the-party-209972"
+            }
+          ],
           "external_note": "NACC has held 25+ private hearings and zero public hearings as of Dec 2025. Donation disclosure reforms were legislated in 2025.",
-          "external_sources": [{ "label": "The New Daily, Dec 2025", "url": "https://www.thenewdaily.com.au/news/politics/australian-politics/2025/12/18/helen-haines-nacc" }]
+          "external_sources": [
+            {
+              "label": "The New Daily, Dec 2025",
+              "url": "https://www.thenewdaily.com.au/news/politics/australian-politics/2025/12/18/helen-haines-nacc"
+            }
+          ]
         }
       ]
     },
@@ -119,54 +209,108 @@
       "internal_governance": 2,
       "external_reform": 0,
       "notability": 10,
-      "logo": { "path": "/assets/party-logos/au/liberal.png", "license": "Public domain", "source": "https://commons.wikimedia.org/wiki/File:Liberal_Party_of_Australia_Logo_2015.png" },
+      "logo": {
+        "path": "/assets/party-logos/au/liberal.png",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Liberal_Party_of_Australia_Logo_2015.png"
+      },
       "status": "active",
       "note": "Opposed real-time donation disclosure (2019); opposed truth-in-advertising bill; 2018/19 integrity commission proposal widely criticised as designed to hold only private hearings.",
       "history": [
         {
-          "date": "1944-10", "left_right": 7, "internal_governance": 3, "external_reform": 0,
+          "date": "1944-10",
+          "left_right": 7,
+          "internal_governance": 3,
+          "external_reform": 0,
           "left_right_note": "Centre-right, conservative — founding-era positioning slightly further right than the modern party.",
-          "left_right_sources": [{ "label": "Robert Menzies", "url": "https://en.wikipedia.org/wiki/Robert_Menzies" }],
+          "left_right_sources": [
+            {
+              "label": "Robert Menzies",
+              "url": "https://en.wikipedia.org/wiki/Robert_Menzies"
+            }
+          ],
           "internal_note": "Founded by Menzies. Branch-based structure but elite-dominated; preselection controlled by state executives, not broad membership.",
-          "internal_sources": [{ "label": "Robert Menzies", "url": "https://en.wikipedia.org/wiki/Robert_Menzies" }],
+          "internal_sources": [
+            {
+              "label": "Robert Menzies",
+              "url": "https://en.wikipedia.org/wiki/Robert_Menzies"
+            }
+          ],
           "external_note": "No governance-reform advocacy at this stage.",
           "external_sources": []
         },
         {
-          "date": "1980-01", "left_right": 6, "internal_governance": 2, "external_reform": 0,
+          "date": "1980-01",
+          "left_right": 6,
+          "internal_governance": 2,
+          "external_reform": 0,
           "left_right_note": "Centre-right, conservative under Fraser — settles at the party's modern position.",
-          "left_right_sources": [{ "label": "Malcolm Fraser", "url": "https://en.wikipedia.org/wiki/Malcolm_Fraser" }],
+          "left_right_sources": [
+            {
+              "label": "Malcolm Fraser",
+              "url": "https://en.wikipedia.org/wiki/Malcolm_Fraser"
+            }
+          ],
           "internal_note": "Fraser era. Centralised party control; branch stacking becomes entrenched practice in NSW and Queensland.",
-          "internal_sources": [{ "label": "Malcolm Fraser", "url": "https://en.wikipedia.org/wiki/Malcolm_Fraser" }],
+          "internal_sources": [
+            {
+              "label": "Malcolm Fraser",
+              "url": "https://en.wikipedia.org/wiki/Malcolm_Fraser"
+            }
+          ],
           "external_note": "No governance-reform advocacy at this stage.",
           "external_sources": []
         },
         {
-          "date": "2007-12", "left_right": 6, "internal_governance": 2, "external_reform": 0,
+          "date": "2007-12",
+          "left_right": 6,
+          "internal_governance": 2,
+          "external_reform": 0,
           "left_right_note": "No ideological shift.",
           "left_right_sources": [],
           "internal_note": "Howard era ends. Preselection remains faction/executive-controlled. No significant internal governance reform.",
-          "internal_sources": [{ "label": "John Howard", "url": "https://en.wikipedia.org/wiki/John_Howard" }],
+          "internal_sources": [
+            {
+              "label": "John Howard",
+              "url": "https://en.wikipedia.org/wiki/John_Howard"
+            }
+          ],
           "external_note": "No governance-reform advocacy at this stage.",
           "external_sources": []
         },
         {
-          "date": "2019-05", "left_right": 6, "internal_governance": 2, "external_reform": 0,
+          "date": "2019-05",
+          "left_right": 6,
+          "internal_governance": 2,
+          "external_reform": 0,
           "left_right_note": "No ideological shift.",
           "left_right_sources": [],
           "internal_note": "No internal governance change recorded at this point.",
           "internal_sources": [],
           "external_note": "Federal director calls real-time donation disclosure 'too onerous'. Party opposes the truth-in-advertising bill.",
-          "external_sources": [{ "label": "Canberra Times, 2019", "url": "https://www.canberratimes.com.au/story/6512005/liberal-party-pushes-back-against-real-time-donations-disclosure/" }]
+          "external_sources": [
+            {
+              "label": "Canberra Times, 2019",
+              "url": "https://www.canberratimes.com.au/story/6512005/liberal-party-pushes-back-against-real-time-donations-disclosure/"
+            }
+          ]
         },
         {
-          "date": "2026-08", "left_right": 6, "internal_governance": 2, "external_reform": 0,
+          "date": "2026-08",
+          "left_right": 6,
+          "internal_governance": 2,
+          "external_reform": 0,
           "left_right_note": "Centre-right, conservative.",
           "left_right_sources": [],
           "internal_note": "Leader/elite-controlled preselections persist; branch stacking remains entrenched in some states.",
           "internal_sources": [],
           "external_note": "No positive governance-reform record found. The 2018/19 integrity commission proposal was widely criticised as designed to hold only private hearings, with no public tip-off pathway.",
-          "external_sources": [{ "label": "Crikey, 2022", "url": "https://www.crikey.com.au/2022/05/17/scott-morrison-promise-federal-icac-with-teeth-haunts-coalition/" }]
+          "external_sources": [
+            {
+              "label": "Crikey, 2022",
+              "url": "https://www.crikey.com.au/2022/05/17/scott-morrison-promise-federal-icac-with-teeth-haunts-coalition/"
+            }
+          ]
         }
       ]
     },
@@ -179,47 +323,94 @@
       "internal_governance": 3,
       "external_reform": 8,
       "notability": 7,
-      "logo": { "path": "/assets/party-logos/au/greens.svg", "license": "Public domain", "source": "https://commons.wikimedia.org/wiki/File:AustralianGreensLogo_official.svg" },
+      "logo": {
+        "path": "/assets/party-logos/au/greens.svg",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:AustralianGreensLogo_official.svg"
+      },
       "status": "active",
       "note": "Leadership not member-elected in all jurisdictions; varied preselection processes by state. Strong external record: 10-year federal anti-corruption campaign, truth-in-advertising bill, donation cap advocacy.",
       "history": [
         {
-          "date": "1992-08", "left_right": -6, "internal_governance": 3, "external_reform": 3,
+          "date": "1992-08",
+          "left_right": -6,
+          "internal_governance": 3,
+          "external_reform": 3,
           "left_right_note": "Left, environmental/social-justice platform from founding.",
-          "left_right_sources": [{ "label": "Australian Greens", "url": "https://en.wikipedia.org/wiki/Australian_Greens" }],
+          "left_right_sources": [
+            {
+              "label": "Australian Greens",
+              "url": "https://en.wikipedia.org/wiki/Australian_Greens"
+            }
+          ],
           "internal_note": "Founded from a merger of state-based green parties. Decentralised federation model — state branches retain significant autonomy; leadership and preselection processes vary by state.",
-          "internal_sources": [{ "label": "Australian Greens", "url": "https://en.wikipedia.org/wiki/Australian_Greens" }],
+          "internal_sources": [
+            {
+              "label": "Australian Greens",
+              "url": "https://en.wikipedia.org/wiki/Australian_Greens"
+            }
+          ],
           "external_note": "Early platform includes proportional representation and donation reform.",
-          "external_sources": [{ "label": "Australian Greens", "url": "https://en.wikipedia.org/wiki/Australian_Greens" }]
+          "external_sources": [
+            {
+              "label": "Australian Greens",
+              "url": "https://en.wikipedia.org/wiki/Australian_Greens"
+            }
+          ]
         },
         {
-          "date": "2010-08", "left_right": -6, "internal_governance": 3, "external_reform": 5,
+          "date": "2010-08",
+          "left_right": -6,
+          "internal_governance": 3,
+          "external_reform": 5,
           "left_right_note": "No ideological shift.",
           "left_right_sources": [],
           "internal_note": "No internal structural change recorded at this point.",
           "internal_sources": [],
           "external_note": "First federal lower house seat (Adam Bandt, Melbourne). A federal anti-corruption body campaign begins to take shape; donation-reform advocacy intensifies.",
-          "external_sources": [{ "label": "Adam Bandt", "url": "https://en.wikipedia.org/wiki/Adam_Bandt" }]
+          "external_sources": [
+            {
+              "label": "Adam Bandt",
+              "url": "https://en.wikipedia.org/wiki/Adam_Bandt"
+            }
+          ]
         },
         {
-          "date": "2022-11", "left_right": -6, "internal_governance": 3, "external_reform": 8,
+          "date": "2022-11",
+          "left_right": -6,
+          "internal_governance": 3,
+          "external_reform": 8,
           "left_right_note": "No ideological shift.",
           "left_right_sources": [],
           "internal_note": "Internal governance unchanged — leadership still not universally member-elected.",
           "internal_sources": [],
           "external_note": "NACC bill passes the Senate with Greens amendments (inspector oversight powers) — a 10-year campaign delivers a concrete win.",
-          "external_sources": [{ "label": "NACC bill passes Senate — Greens release", "url": "https://greens.org.au/news/media-release/nacc-bill-passes-senate-historic-vote-critical-greens-amends-integrity" }]
+          "external_sources": [
+            {
+              "label": "NACC bill passes Senate — Greens release",
+              "url": "https://greens.org.au/news/media-release/nacc-bill-passes-senate-historic-vote-critical-greens-amends-integrity"
+            }
+          ]
         },
         {
-          "date": "2026-08", "left_right": -6, "internal_governance": 3, "external_reform": 8,
+          "date": "2026-08",
+          "left_right": -6,
+          "internal_governance": 3,
+          "external_reform": 8,
           "left_right_note": "Left, environmental/social-justice platform.",
           "left_right_sources": [],
           "internal_note": "Leadership is still not member-elected in all jurisdictions; preselection processes vary by state; member input on policy platform is stronger than on candidate/leadership selection.",
           "internal_sources": [],
           "external_note": "Strongest external reform record of any Australian parliamentary party: the NACC win above, a truth-in-political-advertising bill modelled on South Australia's law, and a sustained \"Clean Up Politics\" donations-cap/contractor-donor-ban campaign.",
           "external_sources": [
-            { "label": "Truth in political advertising — Greens ACT", "url": "https://greens.org.au/act/news/greens-push-truth-electoral-advertising" },
-            { "label": "Clean Up Politics campaign", "url": "https://greens.org.au/campaigns/clean-politics" }
+            {
+              "label": "Truth in political advertising — Greens ACT",
+              "url": "https://greens.org.au/act/news/greens-push-truth-electoral-advertising"
+            },
+            {
+              "label": "Clean Up Politics campaign",
+              "url": "https://greens.org.au/campaigns/clean-politics"
+            }
           ]
         }
       ]
@@ -233,12 +424,19 @@
       "internal_governance": 7,
       "external_reform": 0,
       "notability": 3,
-      "logo": { "path": "/assets/party-logos/au/victorian-socialists.webp", "license": "Public domain", "source": "https://commons.wikimedia.org/wiki/File:Victorian_Socialists_logo,_2025.webp" },
+      "logo": {
+        "path": "/assets/party-logos/au/victorian-socialists.webp",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Victorian_Socialists_logo,_2025.webp"
+      },
       "status": "active",
       "note": "Constitutional one member, one vote (adopted Jan 2024); competitive conference elections with minority faction platform rights; electorate-based branch structure. No external reform advocacy — revolutionary, not reformist (does not believe parliament can be meaningfully reformed under capitalism).",
       "history": [
         {
-          "date": "2022-01", "left_right": -9, "internal_governance": 4, "external_reform": 0,
+          "date": "2022-01",
+          "left_right": -9,
+          "internal_governance": 4,
+          "external_reform": 0,
           "left_right_note": "Far left, revolutionary socialist; abolition of capitalism as stated goal.",
           "left_right_sources": [],
           "internal_note": "Estimate — prior to formal constitutional one member, one vote. Party had a de facto democratic culture and volunteer-based structure, but formal member-governance mechanisms were not yet codified in the constitution. Verify with party records.",
@@ -247,31 +445,55 @@
           "external_sources": []
         },
         {
-          "date": "2024-01", "left_right": -9, "internal_governance": 6, "external_reform": 0,
+          "date": "2024-01",
+          "left_right": -9,
+          "internal_governance": 6,
+          "external_reform": 0,
           "left_right_note": "No ideological shift.",
           "left_right_sources": [],
           "internal_note": "Constitutional one member, one vote and party democracy adopted at the Jan 2024 conference. Aims document adopted as part of the new constitution: \"commitment to party democracy, freedom of debate and the principle of one member one vote.\"",
-          "internal_sources": [{ "label": "Victorian Socialists — Our Aims", "url": "https://www.victoriansocialists.org.au/about/our-aims" }],
+          "internal_sources": [
+            {
+              "label": "Victorian Socialists — Our Aims",
+              "url": "https://www.victoriansocialists.org.au/about/our-aims"
+            }
+          ],
           "external_note": "No external governance-reform advocacy — deliberate: VS holds that parliament cannot be meaningfully reformed under capitalism.",
           "external_sources": []
         },
         {
-          "date": "2025-06", "left_right": -9, "internal_governance": 7, "external_reform": 0,
+          "date": "2025-06",
+          "left_right": -9,
+          "internal_governance": 7,
+          "external_reform": 0,
           "left_right_note": "No ideological shift.",
           "left_right_sources": [],
           "internal_note": "Electorate-based branch structures adopted at the June 2025 conference (360 attendees). Competitive faction platform demonstrated: the Communist Caucus ran an alternative leadership slate, was given platform time, and lost at the vote.",
-          "internal_sources": [{ "label": "Victorian Socialists conference resolves to expand party organisation — Red Flag", "url": "https://redflag.org.au/article/victorian-socialists-conference-resolves-to-expand-party-organisation/" }],
+          "internal_sources": [
+            {
+              "label": "Victorian Socialists conference resolves to expand party organisation — Red Flag",
+              "url": "https://redflag.org.au/article/victorian-socialists-conference-resolves-to-expand-party-organisation/"
+            }
+          ],
           "external_note": "No external governance-reform advocacy.",
           "external_sources": []
         },
         {
-          "date": "2026-08", "left_right": -9, "internal_governance": 7, "external_reform": 0,
+          "date": "2026-08",
+          "left_right": -9,
+          "internal_governance": 7,
+          "external_reform": 0,
           "left_right_note": "Far left, revolutionary socialist; abolition of capitalism as stated goal.",
           "left_right_sources": [],
           "internal_note": "Reassessed from an earlier heartbeat finding of \"too thin\" after counter-feedback from a VS member pointing to the constitutional one-member-one-vote mechanism and its June 2025 competitive-faction test above.",
           "internal_sources": [],
           "external_note": "No external governance-reform advocacy. This is deliberate: VS holds that parliament cannot be meaningfully reformed under capitalism, so external advocacy takes the form of building a democratic workers' movement rather than patching existing institutions. The party's aims document describes a democratic-socialist vision (recall rights, no special privileges for elected reps, political pluralism) but does not advocate reform of existing parliamentary institutions.",
-          "external_sources": [{ "label": "Victorian Socialists — Our Aims", "url": "https://www.victoriansocialists.org.au/about/our-aims" }]
+          "external_sources": [
+            {
+              "label": "Victorian Socialists — Our Aims",
+              "url": "https://www.victoriansocialists.org.au/about/our-aims"
+            }
+          ]
         }
       ]
     },
@@ -284,45 +506,86 @@
       "internal_governance": 1,
       "external_reform": -1,
       "notability": 6,
-      "logo": { "path": "/assets/party-logos/au/one-nation.png", "license": "CC BY-SA 4.0", "source": "https://commons.wikimedia.org/wiki/File:One_Nation_logo.png" },
+      "logo": {
+        "path": "/assets/party-logos/au/one-nation.png",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:One_Nation_logo.png"
+      },
       "status": "active",
       "note": "Leader-dominated structure. AEC compliance action forced withdrawal of $800k+ contested election-spending claims (June 2026).",
       "history": [
         {
-          "date": "1997-04", "left_right": 8, "internal_governance": 1, "external_reform": 0,
+          "date": "1997-04",
+          "left_right": 8,
+          "internal_governance": 1,
+          "external_reform": 0,
           "left_right_note": "Right-populist from founding.",
-          "left_right_sources": [{ "label": "Pauline Hanson's One Nation", "url": "https://en.wikipedia.org/wiki/Pauline_Hanson%27s_One_Nation" }],
+          "left_right_sources": [
+            {
+              "label": "Pauline Hanson's One Nation",
+              "url": "https://en.wikipedia.org/wiki/Pauline_Hanson%27s_One_Nation"
+            }
+          ],
           "internal_note": "Founded by Pauline Hanson after her expulsion from the Liberal Party. Leader-dominated from inception; no member primaries or competitive internal ballots.",
-          "internal_sources": [{ "label": "Pauline Hanson's One Nation", "url": "https://en.wikipedia.org/wiki/Pauline_Hanson%27s_One_Nation" }],
+          "internal_sources": [
+            {
+              "label": "Pauline Hanson's One Nation",
+              "url": "https://en.wikipedia.org/wiki/Pauline_Hanson%27s_One_Nation"
+            }
+          ],
           "external_note": "No governance-reform advocacy at this stage.",
           "external_sources": []
         },
         {
-          "date": "1998-06", "left_right": 8, "internal_governance": 1, "external_reform": 0,
+          "date": "1998-06",
+          "left_right": 8,
+          "internal_governance": 1,
+          "external_reform": 0,
           "left_right_note": "No ideological shift.",
           "left_right_sources": [],
           "internal_note": "AEC deregistration after a court found the party's registration relied on misrepresented membership numbers; public leadership feud between Hanson, David Oldfield and David Ettridge over control of the party. Reinforces clique/leader control rather than member governance.",
-          "internal_sources": [{ "label": "Pauline Hanson's One Nation", "url": "https://en.wikipedia.org/wiki/Pauline_Hanson%27s_One_Nation" }],
+          "internal_sources": [
+            {
+              "label": "Pauline Hanson's One Nation",
+              "url": "https://en.wikipedia.org/wiki/Pauline_Hanson%27s_One_Nation"
+            }
+          ],
           "external_note": "No governance-reform advocacy at this stage.",
           "external_sources": []
         },
         {
-          "date": "2016-07", "left_right": 8, "internal_governance": 1, "external_reform": 0,
+          "date": "2016-07",
+          "left_right": 8,
+          "internal_governance": 1,
+          "external_reform": 0,
           "left_right_note": "No ideological shift.",
           "left_right_sources": [],
           "internal_note": "Federal resurgence: four senators elected at the 2016 double-dissolution election. Leader-dominated structure persists — several elected senators (e.g. Rodney Culleton, Brian Burston) subsequently split from the party citing centralised control.",
-          "internal_sources": [{ "label": "Pauline Hanson's One Nation", "url": "https://en.wikipedia.org/wiki/Pauline_Hanson%27s_One_Nation" }],
+          "internal_sources": [
+            {
+              "label": "Pauline Hanson's One Nation",
+              "url": "https://en.wikipedia.org/wiki/Pauline_Hanson%27s_One_Nation"
+            }
+          ],
           "external_note": "No governance-reform advocacy at this stage.",
           "external_sources": []
         },
         {
-          "date": "2026-08", "left_right": 8, "internal_governance": 1, "external_reform": -1,
+          "date": "2026-08",
+          "left_right": 8,
+          "internal_governance": 1,
+          "external_reform": -1,
           "left_right_note": "Right-populist.",
           "left_right_sources": [],
           "internal_note": "Leader-dominated; the party constitution gives Hanson near-total control.",
           "internal_sources": [],
           "external_note": "AEC compliance action forced withdrawal of $800k+ in contested election-spending claims after roughly 140 unjustified items, June 2026 — cuts against, rather than advances, governance reform.",
-          "external_sources": [{ "label": "The Guardian, June 2026", "url": "https://www.theguardian.com/australia-news/2026/jun/29/one-nation-pauline-hanson-election-funding-withdrawals-aec-ntwnfb" }]
+          "external_sources": [
+            {
+              "label": "The Guardian, June 2026",
+              "url": "https://www.theguardian.com/australia-news/2026/jun/29/one-nation-pauline-hanson-election-funding-withdrawals-aec-ntwnfb"
+            }
+          ]
         }
       ]
     },
@@ -339,31 +602,60 @@
       "note": "Sustained integrity-body criticism since 2018; donations-disclosure bill on party site.",
       "history": [
         {
-          "date": "2015-11", "left_right": 1, "internal_governance": 2, "external_reform": 1,
+          "date": "2015-11",
+          "left_right": 1,
+          "internal_governance": 2,
+          "external_reform": 1,
           "left_right_note": "Centre, personality-based, from founding.",
-          "left_right_sources": [{ "label": "Jacqui Lambie Network", "url": "https://en.wikipedia.org/wiki/Jacqui_Lambie_Network" }],
+          "left_right_sources": [
+            {
+              "label": "Jacqui Lambie Network",
+              "url": "https://en.wikipedia.org/wiki/Jacqui_Lambie_Network"
+            }
+          ],
           "internal_note": "Founded by Jacqui Lambie after departing the Palmer United Party. Personality-centred structure from the outset.",
-          "internal_sources": [{ "label": "Jacqui Lambie Network", "url": "https://en.wikipedia.org/wiki/Jacqui_Lambie_Network" }],
+          "internal_sources": [
+            {
+              "label": "Jacqui Lambie Network",
+              "url": "https://en.wikipedia.org/wiki/Jacqui_Lambie_Network"
+            }
+          ],
           "external_note": "Broad populist platform, not yet focused specifically on integrity/accountability mechanisms.",
           "external_sources": []
         },
         {
-          "date": "2019-05", "left_right": 1, "internal_governance": 2, "external_reform": 4,
+          "date": "2019-05",
+          "left_right": 1,
+          "internal_governance": 2,
+          "external_reform": 4,
           "left_right_note": "No ideological shift.",
           "left_right_sources": [],
           "internal_note": "Centralised around Lambie; limited evidence of structured member democracy.",
           "internal_sources": [],
           "external_note": "Lambie re-elected to the Senate under the JLN banner, having been removed from parliament in 2017 by the Section 44 dual-citizenship crisis. Integrity-body criticism (begun 2018) is now an established, sustained position.",
-          "external_sources": [{ "label": "Jacqui Lambie Network", "url": "https://en.wikipedia.org/wiki/Jacqui_Lambie_Network" }]
+          "external_sources": [
+            {
+              "label": "Jacqui Lambie Network",
+              "url": "https://en.wikipedia.org/wiki/Jacqui_Lambie_Network"
+            }
+          ]
         },
         {
-          "date": "2026-08", "left_right": 1, "internal_governance": 2, "external_reform": 4,
+          "date": "2026-08",
+          "left_right": 1,
+          "internal_governance": 2,
+          "external_reform": 4,
           "left_right_note": "Centre, personality-based.",
           "left_right_sources": [],
           "internal_note": "Centralised around Lambie; limited evidence of structured member democracy.",
           "internal_sources": [],
           "external_note": "Sustained criticism of integrity-body design since 2018, including the Coalition's CIC proposal ('lap dog with dentures'). A donations-disclosure bill is on the party site; its parliamentary progress is not independently verified.",
-          "external_sources": [{ "label": "Canberra Times — Lambie lashes proposed corruption watchdog", "url": "https://www.canberratimes.com.au/story/6998300/lambie-lashes-proposed-corruption-watchdog/" }]
+          "external_sources": [
+            {
+              "label": "Canberra Times — Lambie lashes proposed corruption watchdog",
+              "url": "https://www.canberratimes.com.au/story/6998300/lambie-lashes-proposed-corruption-watchdog/"
+            }
+          ]
         }
       ]
     },
@@ -376,36 +668,74 @@
       "internal_governance": 2,
       "external_reform": 1,
       "notability": 3,
-      "logo": { "path": "/assets/party-logos/au/katter.png", "license": "CC BY-SA 4.0", "source": "https://commons.wikimedia.org/wiki/File:KAP2016logo.png" },
+      "logo": {
+        "path": "/assets/party-logos/au/katter.png",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:KAP2016logo.png"
+      },
       "status": "active",
       "note": "Decentralisation calls and NQ partition referendum — policy positions, not sustained reform program.",
       "history": [
         {
-          "date": "2011-11", "left_right": 7, "internal_governance": 2, "external_reform": 1,
+          "date": "2011-11",
+          "left_right": 7,
+          "internal_governance": 2,
+          "external_reform": 1,
           "left_right_note": "Agrarian conservative, populist, from founding.",
-          "left_right_sources": [{ "label": "Katter's Australian Party", "url": "https://en.wikipedia.org/wiki/Katter%27s_Australian_Party" }],
+          "left_right_sources": [
+            {
+              "label": "Katter's Australian Party",
+              "url": "https://en.wikipedia.org/wiki/Katter%27s_Australian_Party"
+            }
+          ],
           "internal_note": "Founded by long-serving independent MP Bob Katter. Family/leader-centred control from the outset.",
-          "internal_sources": [{ "label": "Katter's Australian Party", "url": "https://en.wikipedia.org/wiki/Katter%27s_Australian_Party" }],
+          "internal_sources": [
+            {
+              "label": "Katter's Australian Party",
+              "url": "https://en.wikipedia.org/wiki/Katter%27s_Australian_Party"
+            }
+          ],
           "external_note": "Decentralisation of federal departments is already part of the founding platform.",
-          "external_sources": [{ "label": "Katter's Australian Party", "url": "https://en.wikipedia.org/wiki/Katter%27s_Australian_Party" }]
+          "external_sources": [
+            {
+              "label": "Katter's Australian Party",
+              "url": "https://en.wikipedia.org/wiki/Katter%27s_Australian_Party"
+            }
+          ]
         },
         {
-          "date": "2012-03", "left_right": 7, "internal_governance": 2, "external_reform": 1,
+          "date": "2012-03",
+          "left_right": 7,
+          "internal_governance": 2,
+          "external_reform": 1,
           "left_right_note": "No ideological shift.",
           "left_right_sources": [],
           "internal_note": "Electoral high-water mark: wins seats at the Queensland state election, including Bob Katter's son Robbie Katter — reinforcing family-centred control of the party.",
-          "internal_sources": [{ "label": "2012 Queensland state election", "url": "https://en.wikipedia.org/wiki/2012_Queensland_state_election" }],
+          "internal_sources": [
+            {
+              "label": "2012 Queensland state election",
+              "url": "https://en.wikipedia.org/wiki/2012_Queensland_state_election"
+            }
+          ],
           "external_note": "No change to the party's external reform posture at this point.",
           "external_sources": []
         },
         {
-          "date": "2026-08", "left_right": 7, "internal_governance": 2, "external_reform": 1,
+          "date": "2026-08",
+          "left_right": 7,
+          "internal_governance": 2,
+          "external_reform": 1,
           "left_right_note": "Agrarian conservative, populist.",
           "left_right_sources": [],
           "internal_note": "Leader-dominated; the Katter family remains central to party identity and control.",
           "internal_sources": [],
           "external_note": "Decentralisation calls and the North Queensland partition referendum are policy positions, not a sustained governance-reform program.",
-          "external_sources": [{ "label": "bobkatter.com.au", "url": "https://www.bobkatter.com.au/katter-calls-for-decentralisation-of-govt-departments-following-self-absorbing-budget" }]
+          "external_sources": [
+            {
+              "label": "bobkatter.com.au",
+              "url": "https://www.bobkatter.com.au/katter-calls-for-decentralisation-of-govt-departments-following-self-absorbing-budget"
+            }
+          ]
         }
       ]
     },
@@ -418,46 +748,92 @@
       "internal_governance": 3,
       "external_reform": 1,
       "notability": 3,
-      "logo": { "path": "/assets/party-logos/au/libertarian.svg", "license": "Public domain", "source": "https://commons.wikimedia.org/wiki/File:Logo_of_the_Libertarian_Party_(Australia).svg" },
+      "logo": {
+        "path": "/assets/party-logos/au/libertarian.svg",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Logo_of_the_Libertarian_Party_(Australia).svg"
+      },
       "status": "active",
       "note": "Formerly the Liberal Democratic Party (renamed 2023 after a member vote, following a long-running name dispute with the Liberal Party). Classical-liberal/libertarian: small government, low/flat taxes, deregulation — plus recent explicitly gender-conservative positions. Sourced independently, added specifically to test whether right-of-centre parties score low on external_reform generally or only the populist ones already in this dataset do.",
       "scoring_note": "Added to check whether a philosophically-driven (non-populist) right-of-centre party scores differently from Liberal/One Nation/Katter's on this page. It doesn't: opposition to mass surveillance/digital IDs is the only plank that reads as governance-accountability-adjacent — the rest of the platform is deregulation and culture-war positions, not electoral/anti-corruption/transparency reform as this axis defines it. Internal governance scores slightly higher than the populist-right cluster on the strength of one genuinely documented member ballot (the 2023 rebrand vote).",
       "history": [
         {
-          "date": "2001-08", "left_right": 5, "internal_governance": 2, "external_reform": 0,
+          "date": "2001-08",
+          "left_right": 5,
+          "internal_governance": 2,
+          "external_reform": 0,
           "left_right_note": "Founded in Canberra as the Liberal Democratic Party. Early positioning read as more civil-libertarian/socially permissive than culturally conservative — a 2012 newspaper description called it a party that \"demands abolition of government welfare as well as the minimum wage, seatbelts and bike helmets\" and \"backs legalisation of marijuana.\"",
-          "left_right_sources": [{ "label": "Libertarian Party (Australia)", "url": "https://en.wikipedia.org/wiki/Libertarian_Party_(Australia)" }],
+          "left_right_sources": [
+            {
+              "label": "Libertarian Party (Australia)",
+              "url": "https://en.wikipedia.org/wiki/Libertarian_Party_(Australia)"
+            }
+          ],
           "internal_note": "Newly founded; no track record yet of internal member-democracy mechanisms beyond standard party structures.",
           "internal_sources": [],
           "external_note": "No governance-reform advocacy at this stage — platform is general small-government/deregulation, not electoral or accountability mechanisms specifically.",
           "external_sources": []
         },
         {
-          "date": "2013-09", "left_right": 6, "internal_governance": 2, "external_reform": 0,
+          "date": "2013-09",
+          "left_right": 6,
+          "internal_governance": 2,
+          "external_reform": 0,
           "left_right_note": "No major ideological shift, though the party's public profile increasingly centres small-government/individual-liberty branding under Leyonhjelm.",
           "left_right_sources": [],
           "internal_note": "David Leyonhjelm elected to the Senate — the party's first parliamentary representation, benefiting partly from a favourable ballot-paper position. No specific internal-democracy mechanism documented at this point.",
-          "internal_sources": [{ "label": "Libertarian Party (Australia)", "url": "https://en.wikipedia.org/wiki/Libertarian_Party_(Australia)" }],
+          "internal_sources": [
+            {
+              "label": "Libertarian Party (Australia)",
+              "url": "https://en.wikipedia.org/wiki/Libertarian_Party_(Australia)"
+            }
+          ],
           "external_note": "No sustained governance-reform campaign found.",
           "external_sources": []
         },
         {
-          "date": "2024-01", "left_right": 7, "internal_governance": 3, "external_reform": 1,
+          "date": "2024-01",
+          "left_right": 7,
+          "internal_governance": 3,
+          "external_reform": 1,
           "left_right_note": "Rebrand accompanies a platform that now includes explicitly gender-conservative positions (defining sex in law, restricting gender-affirming care and self-ID) alongside the original economic libertarianism — a drift toward the populist-right cluster rather than pure classical liberalism.",
-          "left_right_sources": [{ "label": "Libertarian Party (Australia)", "url": "https://en.wikipedia.org/wiki/Libertarian_Party_(Australia)" }],
+          "left_right_sources": [
+            {
+              "label": "Libertarian Party (Australia)",
+              "url": "https://en.wikipedia.org/wiki/Libertarian_Party_(Australia)"
+            }
+          ],
           "internal_note": "Lost federal registration in July 2022 after losing its one Senate seat (Sam McMahon, a 2022 defector from the Country Liberal Party). Re-registers under a new name, \"Libertarian Party,\" adopted by a member vote in May 2023 — a genuinely documented internal ballot on a major party decision, not just a leadership/branch-structure claim.",
-          "internal_sources": [{ "label": "Libertarian Party (Australia)", "url": "https://en.wikipedia.org/wiki/Libertarian_Party_(Australia)" }],
+          "internal_sources": [
+            {
+              "label": "Libertarian Party (Australia)",
+              "url": "https://en.wikipedia.org/wiki/Libertarian_Party_(Australia)"
+            }
+          ],
           "external_note": "Platform includes opposition to \"mass surveillance and digital identities\" — the one plank that reads as accountability/transparency-adjacent — but no sustained campaign for electoral reform, anti-corruption bodies, or donations-disclosure of the kind found in Fusion, the Greens, or the Democrats.",
-          "external_sources": [{ "label": "Libertarian Party (Australia)", "url": "https://en.wikipedia.org/wiki/Libertarian_Party_(Australia)" }]
+          "external_sources": [
+            {
+              "label": "Libertarian Party (Australia)",
+              "url": "https://en.wikipedia.org/wiki/Libertarian_Party_(Australia)"
+            }
+          ]
         },
         {
-          "date": "2026-08", "left_right": 7, "internal_governance": 3, "external_reform": 1,
+          "date": "2026-08",
+          "left_right": 7,
+          "internal_governance": 3,
+          "external_reform": 1,
           "left_right_note": "Right, classical-liberal/libertarian on economics with recent gender-conservative social positions.",
           "left_right_sources": [],
           "internal_note": "No further internal-governance change recorded since the 2023 rebrand vote.",
           "internal_sources": [],
           "external_note": "Contested the 2025 federal election as part of the \"Australia First Alliance\" with the vaccine-sceptic HEART Party and Gerard Rennick People First, its worst-ever result (0.54% of the House vote) — an alliance with populist/fringe parties rather than a governance-reform coalition.",
-          "external_sources": [{ "label": "Libertarian Party (Australia)", "url": "https://en.wikipedia.org/wiki/Libertarian_Party_(Australia)" }]
+          "external_sources": [
+            {
+              "label": "Libertarian Party (Australia)",
+              "url": "https://en.wikipedia.org/wiki/Libertarian_Party_(Australia)"
+            }
+          ]
         }
       ]
     },
@@ -470,48 +846,105 @@
       "internal_governance": 6,
       "external_reform": 9,
       "notability": 2,
-      "logo": { "path": "/assets/party-logos/au/pirate-party.svg", "license": "CC BY-SA 3.0", "source": "https://commons.wikimedia.org/wiki/File:Pirate_Party_Australia_logo.svg" },
+      "logo": {
+        "path": "/assets/party-logos/au/pirate-party.svg",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Pirate_Party_Australia_logo.svg"
+      },
       "status": "active",
       "note": "Liquid democracy culture; merged into Fusion Party's federated structure 2021. Democracy and transparency reform is the party's reason for existing.",
       "history": [
         {
-          "date": "2009-01", "left_right": -3, "internal_governance": 6, "external_reform": 9,
+          "date": "2009-01",
+          "left_right": -3,
+          "internal_governance": 6,
+          "external_reform": 9,
           "left_right_note": "Centre-left, digital rights and transparency platform, from founding.",
-          "left_right_sources": [{ "label": "Pirate Party Australia", "url": "https://en.wikipedia.org/wiki/Pirate_Party_Australia" }],
+          "left_right_sources": [
+            {
+              "label": "Pirate Party Australia",
+              "url": "https://en.wikipedia.org/wiki/Pirate_Party_Australia"
+            }
+          ],
           "internal_note": "Founded as part of the international Pirate Party movement. Liquid democracy culture was part of the platform from inception.",
-          "internal_sources": [{ "label": "Pirate Party Australia", "url": "https://en.wikipedia.org/wiki/Pirate_Party_Australia" }],
+          "internal_sources": [
+            {
+              "label": "Pirate Party Australia",
+              "url": "https://en.wikipedia.org/wiki/Pirate_Party_Australia"
+            }
+          ],
           "external_note": "Digital-rights and transparency reform were part of the platform from inception.",
-          "external_sources": [{ "label": "Pirate Party Australia", "url": "https://en.wikipedia.org/wiki/Pirate_Party_Australia" }]
+          "external_sources": [
+            {
+              "label": "Pirate Party Australia",
+              "url": "https://en.wikipedia.org/wiki/Pirate_Party_Australia"
+            }
+          ]
         },
         {
-          "date": "2013-09", "left_right": -3, "internal_governance": 6, "external_reform": 9,
+          "date": "2013-09",
+          "left_right": -3,
+          "internal_governance": 6,
+          "external_reform": 9,
           "left_right_note": "No ideological shift.",
           "left_right_sources": [],
           "internal_note": "First federal election contest with Senate candidates across multiple states, built on the liquid-democracy platform.",
-          "internal_sources": [{ "label": "Pirate Party Australia", "url": "https://en.wikipedia.org/wiki/Pirate_Party_Australia" }],
+          "internal_sources": [
+            {
+              "label": "Pirate Party Australia",
+              "url": "https://en.wikipedia.org/wiki/Pirate_Party_Australia"
+            }
+          ],
           "external_note": "Campaign builds profile around transparency reform.",
-          "external_sources": [{ "label": "Pirate Party Australia", "url": "https://en.wikipedia.org/wiki/Pirate_Party_Australia" }]
+          "external_sources": [
+            {
+              "label": "Pirate Party Australia",
+              "url": "https://en.wikipedia.org/wiki/Pirate_Party_Australia"
+            }
+          ]
         },
         {
-          "date": "2021-04", "left_right": -3, "internal_governance": 6, "external_reform": 9,
+          "date": "2021-04",
+          "left_right": -3,
+          "internal_governance": 6,
+          "external_reform": 9,
           "left_right_note": "No ideological shift.",
           "left_right_sources": [],
           "internal_note": "Voluntarily deregisters as an independent AEC party and merges into the Fusion Party's federated structure, continuing as a distinct internal grouping with its own membership and infrastructure.",
           "internal_sources": [
-            { "label": "Pirate Party Australia", "url": "https://en.wikipedia.org/wiki/Pirate_Party_Australia" },
-            { "label": "DOD org page — PPAU status note", "url": "https://www.designingopendemocracy.com/organisations/pirate-party-australia/" }
+            {
+              "label": "Pirate Party Australia",
+              "url": "https://en.wikipedia.org/wiki/Pirate_Party_Australia"
+            },
+            {
+              "label": "DOD org page — PPAU status note",
+              "url": "https://www.designingopendemocracy.com/organisations/pirate-party-australia/"
+            }
           ],
           "external_note": "No change to reform focus through the merger.",
           "external_sources": []
         },
         {
-          "date": "2026-08", "left_right": -3, "internal_governance": 6, "external_reform": 9,
+          "date": "2026-08",
+          "left_right": -3,
+          "internal_governance": 6,
+          "external_reform": 9,
           "left_right_note": "Centre-left, digital rights and transparency platform.",
           "left_right_sources": [],
           "internal_note": "Liquid-democracy culture and participatory governance traditions continue from the international Pirate Party movement. Merged into Fusion Party's federated structure in 2021; continues as a distinct internal grouping.",
-          "internal_sources": [{ "label": "DOD org page — PPAU status note", "url": "https://www.designingopendemocracy.com/organisations/pirate-party-australia/" }],
+          "internal_sources": [
+            {
+              "label": "DOD org page — PPAU status note",
+              "url": "https://www.designingopendemocracy.com/organisations/pirate-party-australia/"
+            }
+          ],
           "external_note": "Democracy and transparency reform is the party's reason for existing. Initiated the Electoral Royal Commission campaign.",
-          "external_sources": [{ "label": "pirateparty.org.au", "url": "https://pirateparty.org.au" }]
+          "external_sources": [
+            {
+              "label": "pirateparty.org.au",
+              "url": "https://pirateparty.org.au"
+            }
+          ]
         }
       ]
     },
@@ -524,46 +957,97 @@
       "internal_governance": 5,
       "external_reform": 7,
       "notability": 3,
-      "logo": { "path": "/assets/party-logos/au/fusion.png", "license": "CC BY-SA 4.0", "source": "https://commons.wikimedia.org/wiki/File:Fusion-logo-full-colour.png" },
+      "logo": {
+        "path": "/assets/party-logos/au/fusion.png",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Fusion-logo-full-colour.png"
+      },
       "status": "active",
       "note": "Federation of minor parties (incl. Pirate Party Australia) formed in response to 2021 legislation raising the minimum party-membership threshold from 500 to 1,500. Federated structure — member parties retain autonomy as formal branches. Platform includes an anti-corruption commission, political-donations disclosure above $1,000, and whistleblower protections.",
       "scoring_note": "Fusion's own website (fusionparty.org.au) returned 403 Forbidden to automated fetches during scoring — internal_governance is sourced from Wikipedia's description of the federated structure only, not the party's own governance documents. Treat that score as more provisional than most other entries on this page.",
       "history": [
         {
-          "date": "2021-04", "left_right": -4, "internal_governance": 5, "external_reform": 7,
+          "date": "2021-04",
+          "left_right": -4,
+          "internal_governance": 5,
+          "external_reform": 7,
           "left_right_note": "Left, progressive/secular-humanist — inherited from founding member parties (Pirate, Secular, Science, Climate Emergency).",
-          "left_right_sources": [{ "label": "Fusion Party (Australia)", "url": "https://en.wikipedia.org/wiki/Fusion_Party_(Australia)" }],
+          "left_right_sources": [
+            {
+              "label": "Fusion Party (Australia)",
+              "url": "https://en.wikipedia.org/wiki/Fusion_Party_(Australia)"
+            }
+          ],
           "internal_note": "Formation triggered by the Electoral Legislation Amendment (Party Registration Integrity) Bill 2021, which raised the minimum non-parliamentary party membership threshold from 500 to 1,500 — forcing several small parties to amalgamate rather than independently meet the new bar. Pirate Party Australia deregisters as an independent AEC party this month and joins the federated structure as a founding member, retaining its own membership and infrastructure.",
-          "internal_sources": [{ "label": "Fusion Party (Australia)", "url": "https://en.wikipedia.org/wiki/Fusion_Party_(Australia)" }],
+          "internal_sources": [
+            {
+              "label": "Fusion Party (Australia)",
+              "url": "https://en.wikipedia.org/wiki/Fusion_Party_(Australia)"
+            }
+          ],
           "external_note": "No electoral test yet at this point — governance-reform platform (see 2022-03 entry) still forming as constituent parties merge.",
           "external_sources": []
         },
         {
-          "date": "2022-03", "left_right": -4, "internal_governance": 5, "external_reform": 7,
+          "date": "2022-03",
+          "left_right": -4,
+          "internal_governance": 5,
+          "external_reform": 7,
           "left_right_note": "No ideological shift.",
           "left_right_sources": [],
           "internal_note": "Science Party and Secular Party deregister (Jan 2022) and merge in; the amalgamation renames to \"FUSION: Science, Pirate, Secular, Climate Emergency,\" formalising the federated structure with each origin party retaining a degree of autonomy as a formal branch.",
-          "internal_sources": [{ "label": "Fusion Party (Australia)", "url": "https://en.wikipedia.org/wiki/Fusion_Party_(Australia)" }],
+          "internal_sources": [
+            {
+              "label": "Fusion Party (Australia)",
+              "url": "https://en.wikipedia.org/wiki/Fusion_Party_(Australia)"
+            }
+          ],
           "external_note": "Platform crystallises around transparent government (donations disclosure above $1,000, open access to policy advice), an anti-corruption commission, whistleblower protections, network neutrality, and a constitutional bill of rights — a genuinely multi-front governance-reform platform, though not yet tested at the ballot box.",
-          "external_sources": [{ "label": "Fusion Party (Australia)", "url": "https://en.wikipedia.org/wiki/Fusion_Party_(Australia)" }]
+          "external_sources": [
+            {
+              "label": "Fusion Party (Australia)",
+              "url": "https://en.wikipedia.org/wiki/Fusion_Party_(Australia)"
+            }
+          ]
         },
         {
-          "date": "2022-05", "left_right": -4, "internal_governance": 5, "external_reform": 7,
+          "date": "2022-05",
+          "left_right": -4,
+          "internal_governance": 5,
+          "external_reform": 7,
           "left_right_note": "No ideological shift.",
           "left_right_sources": [],
           "internal_note": "No structural change recorded at this point.",
           "internal_sources": [],
           "external_note": "First electoral test: Senate candidates in every mainland state at the 2022 federal election, 51,676 votes nationally (0.34%); best lower-house result 2.16% in the Division of Dobell. No candidates elected.",
-          "external_sources": [{ "label": "Fusion Party (Australia)", "url": "https://en.wikipedia.org/wiki/Fusion_Party_(Australia)" }]
+          "external_sources": [
+            {
+              "label": "Fusion Party (Australia)",
+              "url": "https://en.wikipedia.org/wiki/Fusion_Party_(Australia)"
+            }
+          ]
         },
         {
-          "date": "2026-08", "left_right": -4, "internal_governance": 5, "external_reform": 7,
+          "date": "2026-08",
+          "left_right": -4,
+          "internal_governance": 5,
+          "external_reform": 7,
           "left_right_note": "Left, progressive/secular-humanist.",
           "left_right_sources": [],
           "internal_note": "Federated structure persists — member parties (including Pirate Party Australia) retain autonomy as formal branches. Renamed \"FUSION | Planet Rescue | Whistleblower Protection | Innovation\" in Jan 2025; formed a 2025 alliance with the Australian Progressives and Democracy First.",
-          "internal_sources": [{ "label": "Fusion Party (Australia)", "url": "https://en.wikipedia.org/wiki/Fusion_Party_(Australia)" }],
+          "internal_sources": [
+            {
+              "label": "Fusion Party (Australia)",
+              "url": "https://en.wikipedia.org/wiki/Fusion_Party_(Australia)"
+            }
+          ],
           "external_note": "Governance-reform platform unchanged (anti-corruption commission, donations disclosure, whistleblower protections, lower voting age to 16). Ran candidates in six states/territories at the 2025 federal election; none elected — still no legislative track record to point to, unlike Greens' NACC amendments.",
-          "external_sources": [{ "label": "Fusion Party (Australia)", "url": "https://en.wikipedia.org/wiki/Fusion_Party_(Australia)" }]
+          "external_sources": [
+            {
+              "label": "Fusion Party (Australia)",
+              "url": "https://en.wikipedia.org/wiki/Fusion_Party_(Australia)"
+            }
+          ]
         }
       ]
     },
@@ -576,65 +1060,133 @@
       "internal_governance": 3,
       "external_reform": 7,
       "notability": 3,
-      "logo": { "path": "/assets/party-logos/au/australian-democrats.png", "license": "Public domain", "source": "https://commons.wikimedia.org/wiki/File:Australian_Democrats_2020_Logo.png" },
+      "logo": {
+        "path": "/assets/party-logos/au/australian-democrats.png",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Australian_Democrats_2020_Logo.png"
+      },
       "status": "active",
       "note": "Re-established. Advocates citizens' assembly for Vic upper house reform; proportional representation; evidence-based approach citing 2025 AES data.",
       "history": [
         {
-          "date": "1977-05", "left_right": 0, "internal_governance": 7, "external_reform": 6,
+          "date": "1977-05",
+          "left_right": 0,
+          "internal_governance": 7,
+          "external_reform": 6,
           "left_right_note": "Centre, founded as a liberal/moderate alternative to the two major blocs.",
-          "left_right_sources": [{ "label": "Australian Democrats", "url": "https://en.wikipedia.org/wiki/Australian_Democrats" }],
+          "left_right_sources": [
+            {
+              "label": "Australian Democrats",
+              "url": "https://en.wikipedia.org/wiki/Australian_Democrats"
+            }
+          ],
           "internal_note": "Founded by Don Chipp on an explicit government-accountability platform (\"keep the bastards honest\"). First Australian party to let the whole membership elect the leader by postal ballot and to put policy to binding member ballots — genuine one member, one vote, novel for its time.",
-          "internal_sources": [{ "label": "Australian Democrats", "url": "https://en.wikipedia.org/wiki/Australian_Democrats" }],
+          "internal_sources": [
+            {
+              "label": "Australian Democrats",
+              "url": "https://en.wikipedia.org/wiki/Australian_Democrats"
+            }
+          ],
           "external_note": "Founding purpose was explicitly a government-accountability watchdog role, using the party's Senate balance-of-power position to scrutinise legislation.",
-          "external_sources": [{ "label": "Australian Democrats", "url": "https://en.wikipedia.org/wiki/Australian_Democrats" }]
+          "external_sources": [
+            {
+              "label": "Australian Democrats",
+              "url": "https://en.wikipedia.org/wiki/Australian_Democrats"
+            }
+          ]
         },
         {
-          "date": "1999-06", "left_right": 0, "internal_governance": 7, "external_reform": 6,
+          "date": "1999-06",
+          "left_right": 0,
+          "internal_governance": 7,
+          "external_reform": 6,
           "left_right_note": "No ideological shift.",
           "left_right_sources": [],
           "internal_note": "Leader Meg Lees negotiates a GST deal with the Howard government despite a prior member ballot opposing it — a real test of the party's binding-plebiscite mechanism. The backlash split the party: Lees was deposed as leader by Natasha Stott Despoja in 2001, then quit the party entirely in 2002 to sit as an independent — the mechanism could actually bind and remove a leader, for better or worse.",
-          "internal_sources": [{ "label": "Meg Lees", "url": "https://en.wikipedia.org/wiki/Meg_Lees" }],
+          "internal_sources": [
+            {
+              "label": "Meg Lees",
+              "url": "https://en.wikipedia.org/wiki/Meg_Lees"
+            }
+          ],
           "external_note": "No change to external reform posture recorded at this point.",
           "external_sources": []
         },
         {
-          "date": "2007-11", "left_right": 0, "internal_governance": 3, "external_reform": 2,
+          "date": "2007-11",
+          "left_right": 0,
+          "internal_governance": 3,
+          "external_reform": 2,
           "left_right_note": "No ideological shift.",
           "left_right_sources": [],
           "internal_note": "A decade of leadership spills and resignations following the 1999 GST split culminates in the 2007 federal election, where the party's remaining four Senators lose their seats (terms expiring 30 June 2008) — leaving the Democrats with no federal representation for the first time since 1977. The binding-ballot mechanism nominally persists but has no functioning parliamentary party left to discipline.",
-          "internal_sources": [{ "label": "Meg Lees", "url": "https://en.wikipedia.org/wiki/Meg_Lees" }],
+          "internal_sources": [
+            {
+              "label": "Meg Lees",
+              "url": "https://en.wikipedia.org/wiki/Meg_Lees"
+            }
+          ],
           "external_note": "Losing all Senate seats ends the party's balance-of-power watchdog role — the mechanism through which its 1977 accountability platform was actually exercised.",
-          "external_sources": [{ "label": "Australian Democrats", "url": "https://en.wikipedia.org/wiki/Australian_Democrats" }]
+          "external_sources": [
+            {
+              "label": "Australian Democrats",
+              "url": "https://en.wikipedia.org/wiki/Australian_Democrats"
+            }
+          ]
         },
         {
-          "date": "2016-11", "left_right": 0, "internal_governance": 0, "external_reform": 0,
+          "date": "2016-11",
+          "left_right": 0,
+          "internal_governance": 0,
+          "external_reform": 0,
           "left_right_note": "No ideological shift — party is dormant/defunct at this point.",
           "left_right_sources": [],
           "internal_note": "Deregistered by the AEC (28 November 2016) after failing to maintain the minimum-membership threshold — the original party ceases to legally exist.",
-          "internal_sources": [{ "label": "AEC deregistration notice, Nov 2016 (via Wikipedia citation)", "url": "https://en.wikipedia.org/wiki/Australian_Democrats" }],
+          "internal_sources": [
+            {
+              "label": "AEC deregistration notice, Nov 2016 (via Wikipedia citation)",
+              "url": "https://en.wikipedia.org/wiki/Australian_Democrats"
+            }
+          ],
           "external_note": "No governance-reform activity — the party is legally deregistered.",
           "external_sources": []
         },
         {
-          "date": "2019-04", "left_right": 0, "internal_governance": 3, "external_reform": 1,
+          "date": "2019-04",
+          "left_right": 0,
+          "internal_governance": 3,
+          "external_reform": 1,
           "left_right_note": "Centre — re-registers as a fresh general-purpose small party.",
           "left_right_sources": [],
           "internal_note": "Re-registered with the AEC (7 April 2019) after merging with CountryMinded. This is the re-established party referred to throughout this page — it does not carry forward the original's binding whole-membership ballot mechanisms; internal governance resets to standard party structures.",
-          "internal_sources": [{ "label": "AEC registration decision, Apr 2019 (via Wikipedia citation)", "url": "https://en.wikipedia.org/wiki/Australian_Democrats" }],
+          "internal_sources": [
+            {
+              "label": "AEC registration decision, Apr 2019 (via Wikipedia citation)",
+              "url": "https://en.wikipedia.org/wiki/Australian_Democrats"
+            }
+          ],
           "external_note": "Freshly re-registered and not yet focused on a specific governance-reform campaign.",
           "external_sources": []
         },
         {
-          "date": "2026-08", "left_right": 0, "internal_governance": 3, "external_reform": 7,
+          "date": "2026-08",
+          "left_right": 0,
+          "internal_governance": 3,
+          "external_reform": 7,
           "left_right_note": "Centre, re-established.",
           "left_right_sources": [],
           "internal_note": "Standard party structures; limited evidence of member governance beyond electoral processes. Notably lower than the original party (1977–2016, see above), which pioneered whole-membership postal-ballot leader elections and binding policy plebiscites — the re-established party does not carry those mechanisms forward.",
           "internal_sources": [],
           "external_note": "Advocates a randomly selected citizens' assembly for Victoria's upper house electoral reform and proportional representation, with evidence-based framing citing 2025 Australian Election Study data (48% support for citizens' assemblies).",
           "external_sources": [
-            { "label": "DOD org page", "url": "https://www.designingopendemocracy.com/organisations/australian-democrats/" },
-            { "label": "Victoria's Upper House inquiry: the case for a citizens' assembly (DOD blog, May 2026)", "url": "https://www.designingopendemocracy.com/blog/2026/05/24/victorias-upper-house-inquiry-the-case-for-a-citizens-assembly/" }
+            {
+              "label": "DOD org page",
+              "url": "https://www.designingopendemocracy.com/organisations/australian-democrats/"
+            },
+            {
+              "label": "Victoria's Upper House inquiry: the case for a citizens' assembly (DOD blog, May 2026)",
+              "url": "https://www.designingopendemocracy.com/blog/2026/05/24/victorias-upper-house-inquiry-the-case-for-a-citizens-assembly/"
+            }
           ]
         }
       ]
@@ -648,29 +1200,60 @@
       "internal_governance": 8,
       "external_reform": 9,
       "notability": 2,
-      "logo": { "path": "/assets/party-logos/au/flux.svg", "license": "site asset", "source": "https://www.designingopendemocracy.com/organisations/flux-party/" },
+      "logo": {
+        "path": "/assets/party-logos/au/flux.svg",
+        "license": "site asset",
+        "source": "https://www.designingopendemocracy.com/organisations/flux-party/"
+      },
       "status": "deregistered",
       "note": "Issue-Based Direct Democracy (two-token economy, abstention-as-capital, proportional delegation). Deregistered. Included for historical comparison of governance innovation.",
       "scoring_note": "Scored August 2026 based on platform during the party's active period, 2016–2022.",
       "history": [
         {
-          "date": "2016-02", "left_right": -2, "internal_governance": 8, "external_reform": 9,
+          "date": "2016-02",
+          "left_right": -2,
+          "internal_governance": 8,
+          "external_reform": 9,
           "left_right_note": "Centre-left framing from founding.",
-          "left_right_sources": [{ "label": "Flux (political party)", "url": "https://en.wikipedia.org/wiki/Flux_(political_party)" }],
+          "left_right_sources": [
+            {
+              "label": "Flux (political party)",
+              "url": "https://en.wikipedia.org/wiki/Flux_(political_party)"
+            }
+          ],
           "internal_note": "Registered with the AEC. Issue-Based Direct Democracy as founding platform: two-token economy (votes + political capital), abstention rewarded as political capital, proportional delegation with revocation. Most sophisticated internal governance design of any Australian party.",
           "internal_sources": [
-            { "label": "Flux (political party)", "url": "https://en.wikipedia.org/wiki/Flux_(political_party)" },
-            { "label": "Issue-Based Direct Democracy — DOD concept page", "url": "https://www.designingopendemocracy.com/concepts/issue-based-direct-democracy/" }
+            {
+              "label": "Flux (political party)",
+              "url": "https://en.wikipedia.org/wiki/Flux_(political_party)"
+            },
+            {
+              "label": "Issue-Based Direct Democracy — DOD concept page",
+              "url": "https://www.designingopendemocracy.com/concepts/issue-based-direct-democracy/"
+            }
           ],
           "external_note": "Democracy reform was the entire platform from founding.",
-          "external_sources": [{ "label": "Flux (political party)", "url": "https://en.wikipedia.org/wiki/Flux_(political_party)" }]
+          "external_sources": [
+            {
+              "label": "Flux (political party)",
+              "url": "https://en.wikipedia.org/wiki/Flux_(political_party)"
+            }
+          ]
         },
         {
-          "date": "2022-08", "left_right": -2, "internal_governance": 8, "external_reform": 9,
+          "date": "2022-08",
+          "left_right": -2,
+          "internal_governance": 8,
+          "external_reform": 9,
           "left_right_note": "No ideological shift through to deregistration.",
           "left_right_sources": [],
           "internal_note": "Deregistered by the AEC. The IBDD mechanism was unchanged throughout the party's active period. Included here for historical comparison of governance innovation.",
-          "internal_sources": [{ "label": "voteflux.org (Wayback Machine)", "url": "https://web.archive.org/web/*/https://voteflux.org/" }],
+          "internal_sources": [
+            {
+              "label": "voteflux.org (Wayback Machine)",
+              "url": "https://web.archive.org/web/*/https://voteflux.org/"
+            }
+          ],
           "external_note": "Democracy reform remained the entire platform through deregistration.",
           "external_sources": []
         }
@@ -685,26 +1268,56 @@
       "internal_governance": 7,
       "external_reform": 8,
       "notability": 2,
-      "logo": { "path": "/assets/party-logos/au/mivote.png", "license": "MiVote's own official branding", "source": "https://www.designingopendemocracy.com/organisations/mivote/ (extracted from MiVote's own \"Values & Vision\" PDF, sourced via Wayback Machine)" },
+      "logo": {
+        "path": "/assets/party-logos/au/mivote.png",
+        "license": "MiVote's own official branding",
+        "source": "https://www.designingopendemocracy.com/organisations/mivote/ (extracted from MiVote's own \"Values & Vision\" PDF, sourced via Wayback Machine)"
+      },
       "status": "deregistered",
       "note": "Four-destination policy model; research-to-voter information pipeline with university research, domain experts, advisory committees, and ethics committee sign-off; 60% supermajority threshold; mandatory mandate binding Senate candidates to member vote. Deregistered ~2019.",
       "scoring_note": "Scored August 2026 based on platform during the party's active period, 2014–2019.",
       "history": [
         {
-          "date": "2014-01", "left_right": -1, "internal_governance": 7, "external_reform": 8,
+          "date": "2014-01",
+          "left_right": -1,
+          "internal_governance": 7,
+          "external_reform": 8,
           "left_right_note": "Centre, non-partisan framing, from founding. Political sibling of Flux Party — both launched 2014–2016 with complementary democracy-reform designs.",
-          "left_right_sources": [{ "label": "mivote.org.au (Wayback Machine)", "url": "https://web.archive.org/web/*/https://www.mivote.org.au/" }],
+          "left_right_sources": [
+            {
+              "label": "mivote.org.au (Wayback Machine)",
+              "url": "https://web.archive.org/web/*/https://www.mivote.org.au/"
+            }
+          ],
           "internal_note": "Founded by Adam Jacoby. Structured information pipeline, four-destination policy model (not yes/no), 60% supermajority threshold, mandatory mandate. Constitutional requirement that elected senators vote according to the aggregated member position.",
-          "internal_sources": [{ "label": "mivote.org.au (Wayback Machine)", "url": "https://web.archive.org/web/*/https://www.mivote.org.au/" }],
+          "internal_sources": [
+            {
+              "label": "mivote.org.au (Wayback Machine)",
+              "url": "https://web.archive.org/web/*/https://www.mivote.org.au/"
+            }
+          ],
           "external_note": "Democracy reform was the entire platform from founding.",
-          "external_sources": [{ "label": "mivote.org.au (Wayback Machine)", "url": "https://web.archive.org/web/*/https://www.mivote.org.au/" }]
+          "external_sources": [
+            {
+              "label": "mivote.org.au (Wayback Machine)",
+              "url": "https://web.archive.org/web/*/https://www.mivote.org.au/"
+            }
+          ]
         },
         {
-          "date": "2019-01", "left_right": -1, "internal_governance": 7, "external_reform": 8,
+          "date": "2019-01",
+          "left_right": -1,
+          "internal_governance": 7,
+          "external_reform": 8,
           "left_right_note": "No ideological shift through to deregistration.",
           "left_right_sources": [],
           "internal_note": "Deregistered ~2019 without electing senators. MiVote Technologies continued in the UK. Included here for historical comparison alongside Flux Party — political siblings with complementary governance designs.",
-          "internal_sources": [{ "label": "Catching up with Adam Jacoby (DOD podcast, 2021)", "url": "https://www.designingopendemocracy.com/blog/2021/08/07/podcast-catching-up-with-adam-jacoby-founder-of-mivote/" }],
+          "internal_sources": [
+            {
+              "label": "Catching up with Adam Jacoby (DOD podcast, 2021)",
+              "url": "https://www.designingopendemocracy.com/blog/2021/08/07/podcast-catching-up-with-adam-jacoby-founder-of-mivote/"
+            }
+          ],
           "external_note": "Democracy reform remained the entire platform through deregistration.",
           "external_sources": []
         }
@@ -719,46 +1332,93 @@
       "internal_governance": 2,
       "external_reform": 0,
       "notability": 7,
-      "logo": { "path": "/assets/party-logos/au/dlp.jpg", "license": "Public domain", "source": "https://commons.wikimedia.org/wiki/File:DLP_Historic_Logo.jpg" },
+      "logo": {
+        "path": "/assets/party-logos/au/dlp.jpg",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:DLP_Historic_Logo.jpg"
+      },
       "status": "deregistered",
       "note": "Formed by the 1955 Labor Split. Directed Senate preferences to keep the ALP from federal power for 17 years. Effective control sat with B. A. Santamaria's National Civic Council rather than the ordinary membership. Wound up 1978; a separate DLP was later re-founded by former members and remains a minor party today — not the entity scored here.",
       "history": [
         {
-          "date": "1955-04", "left_right": 3, "internal_governance": 2, "external_reform": 0,
+          "date": "1955-04",
+          "left_right": 3,
+          "internal_governance": 2,
+          "external_reform": 0,
           "left_right_note": "Centre-right, anti-communist Catholic-labour breakaway — economically closer to Labor's welfare-state instincts than to the Liberals, but firmly conservative on Cold War foreign policy and social issues.",
-          "left_right_sources": [{ "label": "Democratic Labor Party (Australia, 1955)", "url": "https://en.wikipedia.org/wiki/Democratic_Labor_Party_(Australia,_1955)" }],
+          "left_right_sources": [
+            {
+              "label": "Democratic Labor Party (Australia, 1955)",
+              "url": "https://en.wikipedia.org/wiki/Democratic_Labor_Party_(Australia,_1955)"
+            }
+          ],
           "internal_note": "Formed as the Australian Labor Party (Anti-Communist) after Victorian federal and state MPs aligned with B. A. Santamaria's anti-communist 'Movement' (later the National Civic Council) were expelled from the ALP at its 1955 Hobart conference. Strategy and direction ran through Santamaria's externally based Movement/NCC rather than ordinary party ballots — an unusual structure: neither leader-dominated nor member-controlled in the usual sense, but directed by a non-elected outside body.",
           "internal_sources": [
-            { "label": "Democratic Labor Party (Australia, 1955)", "url": "https://en.wikipedia.org/wiki/Democratic_Labor_Party_(Australia,_1955)" },
-            { "label": "B. A. Santamaria", "url": "https://en.wikipedia.org/wiki/B._A._Santamaria" }
+            {
+              "label": "Democratic Labor Party (Australia, 1955)",
+              "url": "https://en.wikipedia.org/wiki/Democratic_Labor_Party_(Australia,_1955)"
+            },
+            {
+              "label": "B. A. Santamaria",
+              "url": "https://en.wikipedia.org/wiki/B._A._Santamaria"
+            }
           ],
           "external_note": "No governance-reform advocacy — founding purpose was anti-communism and Cold War foreign policy, not electoral or accountability mechanisms.",
           "external_sources": []
         },
         {
-          "date": "1961-12", "left_right": 3, "internal_governance": 2, "external_reform": 0,
+          "date": "1961-12",
+          "left_right": 3,
+          "internal_governance": 2,
+          "external_reform": 0,
           "left_right_note": "No ideological shift.",
           "left_right_sources": [],
           "internal_note": "No change to the party's externally directed structure.",
           "internal_sources": [],
           "external_note": "DLP preferences hand Liberal candidate Billy Snedden a paper-thin win in Bruce, denying Labor the two seats it needed to topple the Coalition at the 1961 election — the clearest demonstration of the party's preference-direction strategy actually determining a federal government, though this is electoral tactics rather than governance-mechanism reform.",
-          "external_sources": [{ "label": "Democratic Labor Party (Australia, 1955)", "url": "https://en.wikipedia.org/wiki/Democratic_Labor_Party_(Australia,_1955)" }]
+          "external_sources": [
+            {
+              "label": "Democratic Labor Party (Australia, 1955)",
+              "url": "https://en.wikipedia.org/wiki/Democratic_Labor_Party_(Australia,_1955)"
+            }
+          ]
         },
         {
-          "date": "1974-05", "left_right": 3, "internal_governance": 2, "external_reform": 0,
+          "date": "1974-05",
+          "left_right": 3,
+          "internal_governance": 2,
+          "external_reform": 0,
           "left_right_note": "No ideological shift.",
           "left_right_sources": [],
           "internal_note": "Prime Minister Whitlam appoints DLP Senate leader Vince Gair as ambassador to Ireland, a deliberate move to split the party and remove its most effective figure; the DLP loses all its Senate seats at the 1974 election.",
-          "internal_sources": [{ "label": "Vince Gair", "url": "https://en.wikipedia.org/wiki/Vince_Gair" }],
+          "internal_sources": [
+            {
+              "label": "Vince Gair",
+              "url": "https://en.wikipedia.org/wiki/Vince_Gair"
+            }
+          ],
           "external_note": "With no remaining parliamentary representation, the preference-direction strategy that was the party's only real lever loses its force.",
-          "external_sources": [{ "label": "Democratic Labor Party (Australia, 1955)", "url": "https://en.wikipedia.org/wiki/Democratic_Labor_Party_(Australia,_1955)" }]
+          "external_sources": [
+            {
+              "label": "Democratic Labor Party (Australia, 1955)",
+              "url": "https://en.wikipedia.org/wiki/Democratic_Labor_Party_(Australia,_1955)"
+            }
+          ]
         },
         {
-          "date": "1978-04", "left_right": 3, "internal_governance": 0, "external_reform": 0,
+          "date": "1978-04",
+          "left_right": 3,
+          "internal_governance": 0,
+          "external_reform": 0,
           "left_right_note": "No ideological shift through to wind-up.",
           "left_right_sources": [],
           "internal_note": "Queensland and South Australian branches dissolve in 1976; the party contests only Victoria without success at the 1977 election and formally winds up in 1978. (A separate Democratic Labor Party was later founded by former members and continues today — not the entity scored here.)",
-          "internal_sources": [{ "label": "Democratic Labor Party (Australia, 1955)", "url": "https://en.wikipedia.org/wiki/Democratic_Labor_Party_(Australia,_1955)" }],
+          "internal_sources": [
+            {
+              "label": "Democratic Labor Party (Australia, 1955)",
+              "url": "https://en.wikipedia.org/wiki/Democratic_Labor_Party_(Australia,_1955)"
+            }
+          ],
           "external_note": "Defunct.",
           "external_sources": []
         }
@@ -773,43 +1433,88 @@
       "internal_governance": 2,
       "external_reform": 0,
       "notability": 8,
-      "logo": { "path": "/assets/party-logos/au/uap-historical.svg", "license": "CC BY-SA 4.0", "source": "https://commons.wikimedia.org/wiki/File:Logo_of_the_United_Australia_Party.svg" },
+      "logo": {
+        "path": "/assets/party-logos/au/uap-historical.svg",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Logo_of_the_United_Australia_Party.svg"
+      },
       "status": "deregistered",
       "note": "Governing conservative party of the 1930s–40s; direct predecessor of the modern Liberal Party. No relation to the unrelated modern minor party of the same name (est. 2013).",
       "history": [
         {
-          "date": "1931-05", "left_right": 6, "internal_governance": 2, "external_reform": 0,
+          "date": "1931-05",
+          "left_right": 6,
+          "internal_governance": 2,
+          "external_reform": 0,
           "left_right_note": "Centre-right, formed by fiscally conservative Labor defectors merging with the Nationalist Party in response to the Great Depression.",
-          "left_right_sources": [{ "label": "United Australia Party", "url": "https://en.wikipedia.org/wiki/United_Australia_Party" }],
+          "left_right_sources": [
+            {
+              "label": "United Australia Party",
+              "url": "https://en.wikipedia.org/wiki/United_Australia_Party"
+            }
+          ],
           "internal_note": "Six Labor MPs who opposed the Scullin government's Depression-era financial policy, led by former Tasmanian Premier Joseph Lyons, merged with the Nationalist Party. Lyons was chosen as leader for his public popularity rather than through a member ballot — a top-down formation from the outset.",
-          "internal_sources": [{ "label": "United Australia Party", "url": "https://en.wikipedia.org/wiki/United_Australia_Party" }, { "label": "Joseph Lyons", "url": "https://en.wikipedia.org/wiki/Joseph_Lyons" }],
+          "internal_sources": [
+            {
+              "label": "United Australia Party",
+              "url": "https://en.wikipedia.org/wiki/United_Australia_Party"
+            },
+            {
+              "label": "Joseph Lyons",
+              "url": "https://en.wikipedia.org/wiki/Joseph_Lyons"
+            }
+          ],
           "external_note": "No governance-reform advocacy — founding platform was fiscal orthodoxy in response to the Depression.",
           "external_sources": []
         },
         {
-          "date": "1931-12", "left_right": 6, "internal_governance": 2, "external_reform": 0,
+          "date": "1931-12",
+          "left_right": 6,
+          "internal_governance": 2,
+          "external_reform": 0,
           "left_right_note": "No ideological shift.",
           "left_right_sources": [],
           "internal_note": "Landslide victory at the 1931 federal election gives the UAP an outright House of Representatives majority in its first contest — Lyons becomes PM.",
-          "internal_sources": [{ "label": "United Australia Party", "url": "https://en.wikipedia.org/wiki/United_Australia_Party" }],
+          "internal_sources": [
+            {
+              "label": "United Australia Party",
+              "url": "https://en.wikipedia.org/wiki/United_Australia_Party"
+            }
+          ],
           "external_note": "No governance-reform advocacy.",
           "external_sources": []
         },
         {
-          "date": "1939-04", "left_right": 6, "internal_governance": 2, "external_reform": 0,
+          "date": "1939-04",
+          "left_right": 6,
+          "internal_governance": 2,
+          "external_reform": 0,
           "left_right_note": "No ideological shift.",
           "left_right_sources": [],
           "internal_note": "Lyons dies in office; the parliamentary party elects Robert Menzies as leader and PM. Leadership continues to be decided by the parliamentary party, not the wider membership.",
-          "internal_sources": [{ "label": "United Australia Party", "url": "https://en.wikipedia.org/wiki/United_Australia_Party" }],
+          "internal_sources": [
+            {
+              "label": "United Australia Party",
+              "url": "https://en.wikipedia.org/wiki/United_Australia_Party"
+            }
+          ],
           "external_note": "No governance-reform advocacy.",
           "external_sources": []
         },
         {
-          "date": "1945-02", "left_right": 6, "internal_governance": 0, "external_reform": 0,
+          "date": "1945-02",
+          "left_right": 6,
+          "internal_governance": 0,
+          "external_reform": 0,
           "left_right_note": "No ideological shift through to dissolution.",
           "left_right_sources": [],
           "internal_note": "The UAP ceases to exist as a parliamentary party; its members join the newly formed Liberal Party of Australia, which absorbs its position and much of its base.",
-          "internal_sources": [{ "label": "United Australia Party", "url": "https://en.wikipedia.org/wiki/United_Australia_Party" }],
+          "internal_sources": [
+            {
+              "label": "United Australia Party",
+              "url": "https://en.wikipedia.org/wiki/United_Australia_Party"
+            }
+          ],
           "external_note": "Defunct.",
           "external_sources": []
         }
@@ -828,40 +1533,100 @@
       "note": "Grew out of a Liberal Party splinter opposed to Vietnam War conscription. Most members and infrastructure merged into the newly formed Australian Democrats in 1977 — its clearest governance-reform legacy is the party it fed into, more than its own program.",
       "history": [
         {
-          "date": "1969-07", "left_right": -2, "internal_governance": 3, "external_reform": 2,
+          "date": "1969-07",
+          "left_right": -2,
+          "internal_governance": 3,
+          "external_reform": 2,
           "left_right_note": "Centre-left/centrist, formed from a Liberal Party splinter opposed to conscription and the Vietnam War.",
-          "left_right_sources": [{ "label": "Australia Party", "url": "https://en.wikipedia.org/wiki/Australia_Party" }],
+          "left_right_sources": [
+            {
+              "label": "Australia Party",
+              "url": "https://en.wikipedia.org/wiki/Australia_Party"
+            }
+          ],
           "internal_note": "Independent Senator Reg Turnbull merges his supporters with Gordon Barton's Australian Reform Movement to form the Australia Party, contested 'convenor' leadership positions from early on.",
-          "internal_sources": [{ "label": "Australia Party", "url": "https://en.wikipedia.org/wiki/Australia_Party" }, { "label": "Reg Turnbull", "url": "https://en.wikipedia.org/wiki/Reg_Turnbull" }],
+          "internal_sources": [
+            {
+              "label": "Australia Party",
+              "url": "https://en.wikipedia.org/wiki/Australia_Party"
+            },
+            {
+              "label": "Reg Turnbull",
+              "url": "https://en.wikipedia.org/wiki/Reg_Turnbull"
+            }
+          ],
           "external_note": "Platform to liberalise abortion law, end conscription, eliminate censorship, and protect the environment — civil-liberties and policy reform rather than governance-mechanism reform specifically.",
-          "external_sources": [{ "label": "Australia Party", "url": "https://en.wikipedia.org/wiki/Australia_Party" }]
+          "external_sources": [
+            {
+              "label": "Australia Party",
+              "url": "https://en.wikipedia.org/wiki/Australia_Party"
+            }
+          ]
         },
         {
-          "date": "1970-03", "left_right": -2, "internal_governance": 2, "external_reform": 2,
+          "date": "1970-03",
+          "left_right": -2,
+          "internal_governance": 2,
+          "external_reform": 2,
           "left_right_note": "No ideological shift.",
           "left_right_sources": [],
           "internal_note": "Turnbull resigns after former Australian Reform Movement members accuse Gordon Barton's leadership of acting undemocratically by conducting secret negotiations — an early, documented internal-governance flashpoint.",
-          "internal_sources": [{ "label": "Australia Party", "url": "https://en.wikipedia.org/wiki/Australia_Party" }, { "label": "Gordon Barton", "url": "https://en.wikipedia.org/wiki/Gordon_Barton" }],
+          "internal_sources": [
+            {
+              "label": "Australia Party",
+              "url": "https://en.wikipedia.org/wiki/Australia_Party"
+            },
+            {
+              "label": "Gordon Barton",
+              "url": "https://en.wikipedia.org/wiki/Gordon_Barton"
+            }
+          ],
           "external_note": "No change to reform platform.",
           "external_sources": []
         },
         {
-          "date": "1972-12", "left_right": -2, "internal_governance": 3, "external_reform": 2,
+          "date": "1972-12",
+          "left_right": -2,
+          "internal_governance": 3,
+          "external_reform": 2,
           "left_right_note": "No ideological shift.",
           "left_right_sources": [],
           "internal_note": "Best electoral result to date; contested 'national convenor' leadership elections continue (Siddons defeats Gilfillan for the role in 1974).",
-          "internal_sources": [{ "label": "Australia Party", "url": "https://en.wikipedia.org/wiki/Australia_Party" }],
+          "internal_sources": [
+            {
+              "label": "Australia Party",
+              "url": "https://en.wikipedia.org/wiki/Australia_Party"
+            }
+          ],
           "external_note": "Directs preferences to Labor, helping end 23 years of Coalition government at the 1972 election — a real governance effect achieved through preference tactics rather than a reform platform.",
-          "external_sources": [{ "label": "Australia Party", "url": "https://en.wikipedia.org/wiki/Australia_Party" }]
+          "external_sources": [
+            {
+              "label": "Australia Party",
+              "url": "https://en.wikipedia.org/wiki/Australia_Party"
+            }
+          ]
         },
         {
-          "date": "1977-05", "left_right": -2, "internal_governance": 3, "external_reform": 2,
+          "date": "1977-05",
+          "left_right": -2,
+          "internal_governance": 3,
+          "external_reform": 2,
           "left_right_note": "No ideological shift.",
           "left_right_sources": [],
           "internal_note": "Most members and organisational infrastructure merge into the newly formed Australian Democrats; former Australia Party convenors John Siddons and Colin Mason are later elected as Democrats senators. A residual Australia Party structure continued in a reduced form until 1986.",
-          "internal_sources": [{ "label": "Australia Party", "url": "https://en.wikipedia.org/wiki/Australia_Party" }],
+          "internal_sources": [
+            {
+              "label": "Australia Party",
+              "url": "https://en.wikipedia.org/wiki/Australia_Party"
+            }
+          ],
           "external_note": "Its civil-liberties and reform-minded membership base becomes part of the Democrats' founding coalition alongside the New Liberal Movement.",
-          "external_sources": [{ "label": "Australian Democrats", "url": "https://en.wikipedia.org/wiki/Australian_Democrats" }]
+          "external_sources": [
+            {
+              "label": "Australian Democrats",
+              "url": "https://en.wikipedia.org/wiki/Australian_Democrats"
+            }
+          ]
         }
       ]
     },
@@ -874,18 +1639,339 @@
       "internal_governance": 9,
       "external_reform": 6,
       "notability": 8,
-      "logo": { "path": "/assets/party-logos/gb/your-party.svg", "license": "Public domain", "source": "https://commons.wikimedia.org/wiki/File:Your_Party_logo.svg" },
+      "logo": {
+        "path": "/assets/party-logos/gb/your-party.svg",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Your_Party_logo.svg"
+      },
       "status": "active",
       "note": "Sortition-selected founding conference delegates (via Sortition Foundation) — one of few parties globally using random selection for internal deliberative bodies. International comparator. General-purpose progressive platform alongside democratic reform.",
       "history": [
         {
-          "date": "2026-08", "left_right": -8, "internal_governance": 9, "external_reform": 6,
+          "date": "2026-08",
+          "left_right": -8,
+          "internal_governance": 9,
+          "external_reform": 6,
           "left_right_note": "Left, progressive/socialist, international comparator.",
           "left_right_sources": [],
           "internal_note": "Founding conference delegates selected by sortition via the Sortition Foundation: a stratified random sample balanced across gender, region, age, ethnicity, disability, and LGBTQ+ status. One of few parties globally using random selection for internal deliberative bodies. Future conferences are to include a portion of sortition-selected delegates alongside branch-elected delegates.",
-          "internal_sources": [{ "label": "DOD org page", "url": "https://www.designingopendemocracy.com/organisations/your-party/" }],
+          "internal_sources": [
+            {
+              "label": "DOD org page",
+              "url": "https://www.designingopendemocracy.com/organisations/your-party/"
+            }
+          ],
           "external_note": "Democratic reform is in the platform (electoral reform, transparency), but the party is also a general-purpose multi-issue party rather than a single-issue reform party.",
-          "external_sources": [{ "label": "Your Party is using sortition (DOD blog, Dec 2025)", "url": "https://www.designingopendemocracy.com/blog/2025/12/07/your-party-is-using-sortition/" }]
+          "external_sources": [
+            {
+              "label": "Your Party is using sortition (DOD blog, Dec 2025)",
+              "url": "https://www.designingopendemocracy.com/blog/2025/12/07/your-party-is-using-sortition/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "podemos",
+      "name": "Podemos",
+      "country": "ES",
+      "founded": 2014,
+      "left_right": -7,
+      "internal_governance": 6,
+      "external_reform": 4,
+      "notability": 6,
+      "logo": {
+        "path": "/assets/party-logos/es/podemos.svg",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Podemos_logo_c%C3%ADrculos.svg"
+      },
+      "status": "active",
+      "note": "Spanish left-to-far-left party born from the 2011 Indignados anti-austerity movement. International comparator. Its 2014 founding process used mass online member votes for both leadership and party structure — among the more participatory founding processes in this dataset — though it has since drawn leadership-centred criticism and split from electoral ally Sumar in 2023.",
+      "history": [
+        {
+          "date": "2014-01",
+          "left_right": -6,
+          "internal_governance": 3,
+          "external_reform": 4,
+          "left_right_note": "Launched as a broad anti-austerity coalition; manifesto called for exiting austerity policy and derogating constitutional articles tied to EU fiscal discipline.",
+          "left_right_sources": [
+            {
+              "label": "Podemos (Wikipedia)",
+              "url": "https://en.wikipedia.org/wiki/Podemos_(Spanish_political_party)"
+            }
+          ],
+          "internal_note": "Party structure not yet established at launch; led by political scientist Pablo Iglesias Turrión, announced as head of the movement on 14 January 2014.",
+          "internal_sources": [
+            {
+              "label": "Podemos (Wikipedia)",
+              "url": "https://en.wikipedia.org/wiki/Podemos_(Spanish_political_party)"
+            }
+          ],
+          "external_note": "Grew directly out of the 2011 Indignados anti-corruption, anti-austerity protest movement; manifesto framed as turning street 'indignation' into political change.",
+          "external_sources": [
+            {
+              "label": "Podemos (Wikipedia)",
+              "url": "https://en.wikipedia.org/wiki/Podemos_(Spanish_political_party)"
+            }
+          ]
+        },
+        {
+          "date": "2014-10",
+          "left_right": -7,
+          "internal_governance": 7,
+          "external_reform": 5,
+          "left_right_note": "Solidified as a left to far-left party over 2014, drawing comparisons to Syriza and aligning internationally with left/anti-austerity movements.",
+          "left_right_sources": [
+            {
+              "label": "Podemos (Wikipedia)",
+              "url": "https://en.wikipedia.org/wiki/Podemos_(Spanish_political_party)"
+            }
+          ],
+          "internal_note": "Founding 'Asamblea Ciudadana ‘Sí se puede’' process: a 25-person preparatory team was chosen by open online election (55,000 voters, June 2014), followed by an October assembly where 130,000–170,000 members voted directly on the party's organisational structure documents (80.7% vs 12.3%) and five policy resolutions. Criticised at the time by members over closed candidate lists and short deadlines in the prep-team vote.",
+          "internal_sources": [
+            {
+              "label": "Podemos (Wikipedia)",
+              "url": "https://en.wikipedia.org/wiki/Podemos_(Spanish_political_party)"
+            }
+          ],
+          "external_note": "One of the five member-voted founding resolutions was specifically an anti-corruption measure (42% support among five options), alongside housing, healthcare, education and debt-auditing resolutions.",
+          "external_sources": [
+            {
+              "label": "Podemos (Wikipedia)",
+              "url": "https://en.wikipedia.org/wiki/Podemos_(Spanish_political_party)"
+            }
+          ]
+        },
+        {
+          "date": "2023-06",
+          "left_right": -7,
+          "internal_governance": 6,
+          "external_reform": 4,
+          "left_right_note": "Continues as a left/far-left party; general secretary Ione Belarra has led since 2021.",
+          "left_right_sources": [
+            {
+              "label": "Podemos (Wikipedia)",
+              "url": "https://en.wikipedia.org/wiki/Podemos_(Spanish_political_party)"
+            }
+          ],
+          "internal_note": "2023 coalition talks with Sumar broke down partly over candidate-list control, with Sumar's leader excluding prominent Podemos figures from electoral lists — a dispute over external coalition control rather than Podemos's own internal member votes, but illustrative of continued leadership-centred tension around list-making first flagged in 2014.",
+          "internal_sources": [
+            {
+              "label": "Podemos (Wikipedia)",
+              "url": "https://en.wikipedia.org/wiki/Podemos_(Spanish_political_party)"
+            }
+          ],
+          "external_note": "Electoral significance has shrunk considerably (5 seats in the 2023 general election, down from its 2015–2016 peak as Spain's third-largest party); reform-adjacent positions continue (anti-corruption origins, Catalan self-determination) but the party operates as a general-purpose left platform rather than a reform-focused one.",
+          "external_sources": [
+            {
+              "label": "Podemos (Wikipedia)",
+              "url": "https://en.wikipedia.org/wiki/Podemos_(Spanish_political_party)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "five-star-movement",
+      "name": "Five Star Movement",
+      "country": "IT",
+      "founded": 2009,
+      "left_right": -3,
+      "internal_governance": 6,
+      "external_reform": 6,
+      "notability": 8,
+      "logo": {
+        "path": "/assets/party-logos/it/five-star-movement.svg",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:M5S_logo_2050.svg"
+      },
+      "status": "active",
+      "note": "Italian party founded on direct democracy, anti-corruption and e-democracy principles. International comparator. Its Rousseau online platform let members vote on candidates, legislative positions and coalition decisions, but the platform itself was privately owned by co-founder Gianroberto Casaleggio's company rather than the party — a structural gap between participatory branding and where real control sat, only resolved when a 2024 'constituent assembly' voted to abolish co-founder Beppe Grillo's veto-holding 'guarantor' role.",
+      "history": [
+        {
+          "date": "2009-10",
+          "left_right": 0,
+          "internal_governance": 3,
+          "external_reform": 6,
+          "left_right_note": "Founded as a post-ideological, populist movement explicitly indifferent to the left–right spectrum.",
+          "left_right_sources": [
+            {
+              "label": "Five Star Movement (Wikipedia)",
+              "url": "https://en.wikipedia.org/wiki/Five_Star_Movement"
+            }
+          ],
+          "internal_note": "Founder Beppe Grillo formally served as president with unilateral authority (e.g. later expelling dissenting members without prior consultation); an internet forum for collective policy writing existed but was widely considered inadequate for real participation in the party's early years.",
+          "internal_sources": [
+            {
+              "label": "Five Star Movement (Wikipedia)",
+              "url": "https://en.wikipedia.org/wiki/Five_Star_Movement"
+            }
+          ],
+          "external_note": "Founding platform centred on 'zero-cost politics', e-democracy and a signature anti-corruption 'clean parliament' petition that gathered 450,000 signatures for legislative initiatives.",
+          "external_sources": [
+            {
+              "label": "Five Star Movement (Wikipedia)",
+              "url": "https://en.wikipedia.org/wiki/Five_Star_Movement"
+            }
+          ]
+        },
+        {
+          "date": "2017-01",
+          "left_right": 0,
+          "internal_governance": 5,
+          "external_reform": 6,
+          "left_right_note": "Remained syncretic/populist through the 2010s, at times drawing both left- and right-wing characterisations (e.g. immigration positions, European Parliament group alignment with UKIP 2014–2017).",
+          "left_right_sources": [
+            {
+              "label": "Five Star Movement (Wikipedia)",
+              "url": "https://en.wikipedia.org/wiki/Five_Star_Movement"
+            }
+          ],
+          "internal_note": "The Rousseau online platform let registered members vote on candidate selection, legislative proposals and questions like EU parliamentary group affiliation (78.1% chose the EFD group in a June 2014 referendum) — real binding member votes, but Rousseau was owned and operated by Casaleggio Associati, a private company, not the party itself; its transparency was publicly questioned in 2019.",
+          "internal_sources": [
+            {
+              "label": "Five Star Movement (Wikipedia)",
+              "url": "https://en.wikipedia.org/wiki/Five_Star_Movement"
+            }
+          ],
+          "external_note": "Continued to campaign on transparency and anti-corruption themes through the 2018 election (alongside a basic income policy), maintaining its founding reform identity.",
+          "external_sources": [
+            {
+              "label": "Five Star Movement (Wikipedia)",
+              "url": "https://en.wikipedia.org/wiki/Five_Star_Movement"
+            }
+          ]
+        },
+        {
+          "date": "2024-12",
+          "left_right": -3,
+          "internal_governance": 6,
+          "external_reform": 6,
+          "left_right_note": "A November 2024 member vote saw the party identify as 'independent progressives' (36.7% of participants, plurality among the options offered), continuing a leftward shift under leader Giuseppe Conte since 2022.",
+          "left_right_sources": [
+            {
+              "label": "Five Star Movement (Wikipedia)",
+              "url": "https://en.wikipedia.org/wiki/Five_Star_Movement"
+            }
+          ],
+          "internal_note": "A December 2024 'constituent assembly' voted to abolish the founder-held 'guarantor' veto role (held by Grillo) and the two-term limit for elected members; Grillo challenged the result and forced a repeat vote under his statutory powers, which confirmed the same outcome — a genuine contested internal power transfer away from founder control, decided by member vote rather than by Grillo himself.",
+          "internal_sources": [
+            {
+              "label": "Five Star Movement (Wikipedia)",
+              "url": "https://en.wikipedia.org/wiki/Five_Star_Movement"
+            }
+          ],
+          "external_note": "Continues to frame itself in opposition terms around anti-inequality and anti-corruption themes under Conte's leadership.",
+          "external_sources": [
+            {
+              "label": "Five Star Movement (Wikipedia)",
+              "url": "https://en.wikipedia.org/wiki/Five_Star_Movement"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "pirate-party-germany",
+      "name": "Pirate Party Germany",
+      "country": "DE",
+      "founded": 2006,
+      "left_right": -2,
+      "internal_governance": 7,
+      "external_reform": 6,
+      "notability": 2,
+      "logo": {
+        "path": "/assets/party-logos/de/pirate-party-germany.svg",
+        "license": "CC BY 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Piratenpartei_deutschland_logo.svg"
+      },
+      "status": "active",
+      "note": "German party, part of the same international Pirate Party movement as Pirate Party Australia (already in this dataset). International comparator. Its Berlin branch pioneered LiquidFeedback, giving members binding votes over party resolutions via liquid democracy (delegable voting) — one of the most concrete liquid-democracy implementations by any party in this dataset — though the tool's non-secret recorded votes drew privacy criticism. Electoral support collapsed after its 2011–2012 state-parliament breakthroughs, down to 0.03% nationally by 2025.",
+      "history": [
+        {
+          "date": "2006-09",
+          "left_right": -2,
+          "internal_governance": 4,
+          "external_reform": 7,
+          "left_right_note": "Social-liberal party of fundamental rights; civil-liberties and transparency focused rather than positioned on economic left–right lines.",
+          "left_right_sources": [
+            {
+              "label": "Pirate Party Germany (Wikipedia)",
+              "url": "https://en.wikipedia.org/wiki/Pirate_Party_Germany"
+            }
+          ],
+          "internal_note": "Founded with a deliberately anti-authoritarian, libertarian internal culture; commentators (Der Spiegel, 2012) noted this made it structurally difficult for any strong central leadership to take hold — a genuine decentralisation, though also a source of later organisational dysfunction.",
+          "internal_sources": [
+            {
+              "label": "Pirate Party Germany (Wikipedia)",
+              "url": "https://en.wikipedia.org/wiki/Pirate_Party_Germany"
+            }
+          ],
+          "external_note": "Platform built around open-source governance, transparency APIs for public monitoring of government operations, and e-democracy — direct-democracy governance reform is core to the party's identity, not an add-on.",
+          "external_sources": [
+            {
+              "label": "Pirate Party Germany (Wikipedia)",
+              "url": "https://en.wikipedia.org/wiki/Pirate_Party_Germany"
+            }
+          ]
+        },
+        {
+          "date": "2014-01",
+          "left_right": -2,
+          "internal_governance": 8,
+          "external_reform": 7,
+          "left_right_note": "Unchanged positioning; UBI and e-democracy remained core planks alongside civil-liberties advocacy.",
+          "left_right_sources": [
+            {
+              "label": "Pirate Party Germany (Wikipedia)",
+              "url": "https://en.wikipedia.org/wiki/Pirate_Party_Germany"
+            }
+          ],
+          "internal_note": "The Berlin branch adopted LiquidFeedback in January 2010 for state party conferences, then in 2014 revised its bylaws to give a LiquidFeedback-run 'Permanent General Assembly' the power to adopt binding resolutions — a real liquid-democracy (delegable-vote) mechanism with enforceable authority, later used by Pirate Parties in Austria, Italy, Switzerland and Brazil too. Its non-secret, individually-attributable votes drew privacy criticism from within the party.",
+          "internal_sources": [
+            {
+              "label": "LiquidFeedback (Wikipedia)",
+              "url": "https://en.wikipedia.org/wiki/LiquidFeedback"
+            },
+            {
+              "label": "Pirate Party Germany (Wikipedia)",
+              "url": "https://en.wikipedia.org/wiki/Pirate_Party_Germany"
+            }
+          ],
+          "external_note": "Reached peak electoral relevance in this period (seats in four state parliaments plus the European Parliament, 2011–2012), giving its governance-reform platform its widest audience.",
+          "external_sources": [
+            {
+              "label": "Pirate Party Germany (Wikipedia)",
+              "url": "https://en.wikipedia.org/wiki/Pirate_Party_Germany"
+            }
+          ]
+        },
+        {
+          "date": "2025-02",
+          "left_right": -2,
+          "internal_governance": 7,
+          "external_reform": 6,
+          "left_right_note": "Positioning unchanged; the party's platform and internal culture remain the same even as electoral relevance has collapsed.",
+          "left_right_sources": [
+            {
+              "label": "Pirate Party Germany (Wikipedia)",
+              "url": "https://en.wikipedia.org/wiki/Pirate_Party_Germany"
+            }
+          ],
+          "internal_note": "Governance model and tooling legacy unchanged, but the party itself has become electorally marginal, which has reduced its capacity to sustain internal-democracy infrastructure at scale.",
+          "internal_sources": [
+            {
+              "label": "Pirate Party Germany (Wikipedia)",
+              "url": "https://en.wikipedia.org/wiki/Pirate_Party_Germany"
+            }
+          ],
+          "external_note": "Lost all German state-parliament and European Parliament representation; the 2025 federal election result (0.03% of the vote) cost it eligibility for state party funding entirely.",
+          "external_sources": [
+            {
+              "label": "Pirate Party Germany (Wikipedia)",
+              "url": "https://en.wikipedia.org/wiki/Pirate_Party_Germany"
+            }
+          ]
         }
       ]
     }
