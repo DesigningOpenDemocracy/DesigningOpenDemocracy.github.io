@@ -48,7 +48,7 @@ Standard political spectrum for rough orientation. −10 = far left (revolutiona
 
 ### Parties scored
 
-15 Australian parties plus 1 international comparator. 10 are active; 5 are historical/deregistered and included for comparison — Flux and MiVote for governance innovation, and the Democratic Labor Party (1955–1978), United Australia Party (1931–1945), and Australia Party (1969–1986) as notable earlier cases spanning a wider slice of Australian party history (an externally-directed minor party, a major governing predecessor of the modern Liberals, and a civil-liberties minor party that fed directly into the Australian Democrats). Fusion Party is included as the federated home Pirate Party Australia merged into in 2021 — see both entries' history for the relationship. Selection: all parties assessed in the internal heartbeat AU party audit <!-- see ../../internal-heartbeat/2026-07-31-au-parties-democracy-reform-assessment.md --> with sufficient documentation, plus the historical/Fusion additions above (sourced independently from Wikipedia, not from the heartbeat audit). Additional international comparators (Podemos, M5S, German Pirate Party, Alternativet) are candidates for future scoring pending independent verification.
+16 Australian parties plus 1 international comparator. 11 are active; 5 are historical/deregistered and included for comparison — Flux and MiVote for governance innovation, and the Democratic Labor Party (1955–1978), United Australia Party (1931–1945), and Australia Party (1969–1986) as notable earlier cases spanning a wider slice of Australian party history (an externally-directed minor party, a major governing predecessor of the modern Liberals, and a civil-liberties minor party that fed directly into the Australian Democrats). Fusion Party is included as the federated home Pirate Party Australia merged into in 2021 — see both entries' history for the relationship. The Libertarian Party (formerly the Liberal Democratic Party) was added specifically to test whether right-of-centre parties score low on external reform generally, or only the populist ones already covered do — see its scoring note. Selection: all parties assessed in the internal heartbeat AU party audit <!-- see ../../internal-heartbeat/2026-07-31-au-parties-democracy-reform-assessment.md --> with sufficient documentation, plus the historical/Fusion/Libertarian additions above (sourced independently from Wikipedia, not from the heartbeat audit). Additional international comparators (Podemos, M5S, German Pirate Party, Alternativet) are candidates for future scoring pending independent verification.
 
 ## Graphs
 
@@ -135,6 +135,9 @@ This section is rendered entirely from [`party-governance.json`](/data/party-gov
 ### Katter's Australian Party
 <div class="gov-justification-body" data-slug="katter"></div>
 
+### Libertarian Party
+<div class="gov-justification-body" data-slug="libertarian"></div>
+
 ### Pirate Party Australia
 <div class="gov-justification-body" data-slug="pirate-party"></div>
 
@@ -220,6 +223,7 @@ Contributions welcome via PR:
     'one-nation':           { initials: 'ON',   color: '#ff8c00' },
     'jacqui-lambie-network':{ initials: 'JLN',  color: '#008080' },
     katter:                 { initials: 'KAP',  color: '#8b4513' },
+    libertarian:            { initials: 'LP',   color: '#169a90' },
     'pirate-party':         { initials: 'PPAU', color: '#9933cc' },
     fusion:                 { initials: 'FUS',  color: '#ff6f61' },
     'australian-democrats': { initials: 'AD',   color: '#daa520' },

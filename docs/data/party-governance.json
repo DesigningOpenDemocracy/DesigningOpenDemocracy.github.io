@@ -410,6 +410,58 @@
       ]
     },
     {
+      "slug": "libertarian",
+      "name": "Libertarian Party",
+      "country": "AU",
+      "founded": 2001,
+      "left_right": 7,
+      "internal_governance": 3,
+      "external_reform": 1,
+      "notability": 3,
+      "logo": { "path": "/assets/party-logos/au/libertarian.svg", "license": "Public domain", "source": "https://commons.wikimedia.org/wiki/File:Logo_of_the_Libertarian_Party_(Australia).svg" },
+      "status": "active",
+      "note": "Formerly the Liberal Democratic Party (renamed 2023 after a member vote, following a long-running name dispute with the Liberal Party). Classical-liberal/libertarian: small government, low/flat taxes, deregulation — plus recent explicitly gender-conservative positions. Sourced independently, added specifically to test whether right-of-centre parties score low on external_reform generally or only the populist ones already in this dataset do.",
+      "scoring_note": "Added to check whether a philosophically-driven (non-populist) right-of-centre party scores differently from Liberal/One Nation/Katter's on this page. It doesn't: opposition to mass surveillance/digital IDs is the only plank that reads as governance-accountability-adjacent — the rest of the platform is deregulation and culture-war positions, not electoral/anti-corruption/transparency reform as this axis defines it. Internal governance scores slightly higher than the populist-right cluster on the strength of one genuinely documented member ballot (the 2023 rebrand vote).",
+      "history": [
+        {
+          "date": "2001-08", "left_right": 5, "internal_governance": 2, "external_reform": 0,
+          "left_right_note": "Founded in Canberra as the Liberal Democratic Party. Early positioning read as more civil-libertarian/socially permissive than culturally conservative — a 2012 newspaper description called it a party that \"demands abolition of government welfare as well as the minimum wage, seatbelts and bike helmets\" and \"backs legalisation of marijuana.\"",
+          "left_right_sources": [{ "label": "Libertarian Party (Australia)", "url": "https://en.wikipedia.org/wiki/Libertarian_Party_(Australia)" }],
+          "internal_note": "Newly founded; no track record yet of internal member-democracy mechanisms beyond standard party structures.",
+          "internal_sources": [],
+          "external_note": "No governance-reform advocacy at this stage — platform is general small-government/deregulation, not electoral or accountability mechanisms specifically.",
+          "external_sources": []
+        },
+        {
+          "date": "2013-09", "left_right": 6, "internal_governance": 2, "external_reform": 0,
+          "left_right_note": "No major ideological shift, though the party's public profile increasingly centres small-government/individual-liberty branding under Leyonhjelm.",
+          "left_right_sources": [],
+          "internal_note": "David Leyonhjelm elected to the Senate — the party's first parliamentary representation, benefiting partly from a favourable ballot-paper position. No specific internal-democracy mechanism documented at this point.",
+          "internal_sources": [{ "label": "Libertarian Party (Australia)", "url": "https://en.wikipedia.org/wiki/Libertarian_Party_(Australia)" }],
+          "external_note": "No sustained governance-reform campaign found.",
+          "external_sources": []
+        },
+        {
+          "date": "2024-01", "left_right": 7, "internal_governance": 3, "external_reform": 1,
+          "left_right_note": "Rebrand accompanies a platform that now includes explicitly gender-conservative positions (defining sex in law, restricting gender-affirming care and self-ID) alongside the original economic libertarianism — a drift toward the populist-right cluster rather than pure classical liberalism.",
+          "left_right_sources": [{ "label": "Libertarian Party (Australia)", "url": "https://en.wikipedia.org/wiki/Libertarian_Party_(Australia)" }],
+          "internal_note": "Lost federal registration in July 2022 after losing its one Senate seat (Sam McMahon, a 2022 defector from the Country Liberal Party). Re-registers under a new name, \"Libertarian Party,\" adopted by a member vote in May 2023 — a genuinely documented internal ballot on a major party decision, not just a leadership/branch-structure claim.",
+          "internal_sources": [{ "label": "Libertarian Party (Australia)", "url": "https://en.wikipedia.org/wiki/Libertarian_Party_(Australia)" }],
+          "external_note": "Platform includes opposition to \"mass surveillance and digital identities\" — the one plank that reads as accountability/transparency-adjacent — but no sustained campaign for electoral reform, anti-corruption bodies, or donations-disclosure of the kind found in Fusion, the Greens, or the Democrats.",
+          "external_sources": [{ "label": "Libertarian Party (Australia)", "url": "https://en.wikipedia.org/wiki/Libertarian_Party_(Australia)" }]
+        },
+        {
+          "date": "2026-08", "left_right": 7, "internal_governance": 3, "external_reform": 1,
+          "left_right_note": "Right, classical-liberal/libertarian on economics with recent gender-conservative social positions.",
+          "left_right_sources": [],
+          "internal_note": "No further internal-governance change recorded since the 2023 rebrand vote.",
+          "internal_sources": [],
+          "external_note": "Contested the 2025 federal election as part of the \"Australia First Alliance\" with the vaccine-sceptic HEART Party and Gerard Rennick People First, its worst-ever result (0.54% of the House vote) — an alliance with populist/fringe parties rather than a governance-reform coalition.",
+          "external_sources": [{ "label": "Libertarian Party (Australia)", "url": "https://en.wikipedia.org/wiki/Libertarian_Party_(Australia)" }]
+        }
+      ]
+    },
+    {
       "slug": "pirate-party",
       "name": "Pirate Party Australia",
       "country": "AU",
