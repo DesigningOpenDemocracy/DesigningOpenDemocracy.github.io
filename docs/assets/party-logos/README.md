@@ -6,22 +6,22 @@ Each logo file is the property of its respective party or rightsholder. Used her
 
 | Party | Logo | License | Source |
 |---|---|---|---|
-| Australian Labor Party | `au/labor.svg` | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Logo_of_Australian_Labor_Party.svg) |
-| Liberal Party / Coalition | `au/liberal.png` | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Liberal_Party_of_Australia_Logo_2015.png) |
-| Australian Greens | `au/greens.svg` | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:AustralianGreensLogo_official.svg) |
-| Victorian Socialists | `au/victorian-socialists.webp` | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Victorian_Socialists_logo,_2025.webp) |
-| One Nation | `au/one-nation.png` | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:One_Nation_logo.png) |
-| Jacqui Lambie Network | `au/jacqui-lambie-network.png` | Fair use | [Wikipedia](https://en.wikipedia.org/wiki/File:Jacqui_Lambie_Network_federal_logo.png) · [Party page](https://en.wikipedia.org/wiki/Jacqui_Lambie_Network) |
-| Katter's Australian Party | `au/katter.png` | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:KAP2016logo.png) |
-| Libertarian Party | `au/libertarian.svg` | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Logo_of_the_Libertarian_Party_(Australia).svg) |
-| Pirate Party Australia | `au/pirate-party.svg` | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Pirate_Party_Australia_logo.svg) |
-| Fusion Party | `au/fusion.png` | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Fusion-logo-full-colour.png) |
-| Australian Democrats | `au/australian-democrats.png` | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Australian_Democrats_2020_Logo.png) |
-| Flux Party | `au/flux.svg` | Site asset | Hosted on [DOD](https://www.designingopendemocracy.com/organisations/flux-party/) |
-| MiVote | `au/mivote.png` | MiVote branding | Extracted from MiVote's "Values & Vision" PDF via [Wayback Machine](https://www.designingopendemocracy.com/organisations/mivote/) |
-| Democratic Labor Party (1955–1978) | `au/dlp.jpg` | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:DLP_Historic_Logo.jpg) |
-| United Australia Party (1931–1945) | `au/uap-historical.svg` | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Logo_of_the_United_Australia_Party.svg) |
-| Australia Party (1969–1986) | `au/australia-party.jpg` | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Australia_Party_logo_1972.jpg) · [Party page](https://en.wikipedia.org/wiki/Australia_Party) |
+| Australian Labor Party | ![](au/labor.svg) | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Logo_of_Australian_Labor_Party.svg) |
+| Liberal Party / Coalition | ![](au/liberal.png) | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Liberal_Party_of_Australia_Logo_2015.png) |
+| Australian Greens | ![](au/greens.svg) | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:AustralianGreensLogo_official.svg) |
+| Victorian Socialists | ![](au/victorian-socialists.webp) | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Victorian_Socialists_logo,_2025.webp) |
+| One Nation | ![](au/one-nation.png) | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:One_Nation_logo.png) |
+| Jacqui Lambie Network | ![](au/jacqui-lambie-network.png) | Fair use | [Wikipedia](https://en.wikipedia.org/wiki/File:Jacqui_Lambie_Network_federal_logo.png) · [Party page](https://en.wikipedia.org/wiki/Jacqui_Lambie_Network) |
+| Katter's Australian Party | ![](au/katter.png) | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:KAP2016logo.png) |
+| Libertarian Party | ![](au/libertarian.svg) | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Logo_of_the_Libertarian_Party_(Australia).svg) |
+| Pirate Party Australia | ![](au/pirate-party.svg) | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Pirate_Party_Australia_logo.svg) |
+| Fusion Party | ![](au/fusion.png) | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Fusion-logo-full-colour.png) |
+| Australian Democrats | ![](au/australian-democrats.png) | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Australian_Democrats_2020_Logo.png) |
+| Flux Party | ![](au/flux.svg) | Site asset | Hosted on [DOD](https://www.designingopendemocracy.com/organisations/flux-party/) |
+| MiVote | ![](au/mivote.png) | MiVote branding | Extracted from MiVote's "Values & Vision" PDF via [Wayback Machine](https://www.designingopendemocracy.com/organisations/mivote/) |
+| Democratic Labor Party (1955–1978) | ![](au/dlp.jpg) | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:DLP_Historic_Logo.jpg) |
+| United Australia Party (1931–1945) | ![](au/uap-historical.svg) | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Logo_of_the_United_Australia_Party.svg) |
+| Australia Party (1969–1986) | ![](au/australia-party.jpg) | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Australia_Party_logo_1972.jpg) · [Party page](https://en.wikipedia.org/wiki/Australia_Party) |
 
 ## International comparators
 
