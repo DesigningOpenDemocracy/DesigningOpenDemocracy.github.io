@@ -42,6 +42,16 @@ Does the party work to change *how governance works* — electoral systems, tran
 | 8–9 | Governance reform is a major platform pillar with extensive record |
 | 10 | Democracy reform is the party's primary reason for existing |
 
+### Reading the scores: high isn't "better"
+
+The intro above says this isn't a ranking of merit — this section is what that means in practice for each axis, because "high score" and "good" are easy to conflate even when the text says otherwise.
+
+**Internal governance.** The 8–10 band ("novel mechanisms": sortition, liquid democracy, IBDD-style token economies) and the 6–7 band ("genuine OMOV") aren't just different amounts of the same thing — they're different risk profiles. OMOV is proven at scale: its failure modes (factionalism, voter apathy, populist capture) are well understood after a century of use, precisely because it's been tried by millions of people in real elections. A novel mechanism scoring 8–9 hasn't had that stress-test. Flux's two-token economy and MiVote's mandatory mandate are the clearest cases in this dataset: both score high (8 and 7) for genuinely sophisticated design, and neither was ever tested by actually holding a seat long enough to find out what breaks at scale — vote-buying dynamics in a delegation market, information overload from voting on every issue, an engaged-minority-only electorate, opaque aggregation logic that's hard for ordinary members to audit. A high score here says "ambitious, untested" as much as it says "deep member control." A mid-range OMOV score can mean "proven, but doesn't address the deeper structural critique" rather than "worse."
+
+**External reform advocacy.** A high score means governance reform is central to the party's platform — but for a single-issue reform party (Pirate Party, Flux, MiVote all score 9), that centrality is often inseparable from why the party stays a minor party: it doesn't compete on the bread-and-butter issues (economy, health, housing) most voters weigh first, so the reforms it champions rarely get the chance to actually pass. Contrast the Greens (8): a lower purity score than the single-issue parties, but attached to a party that has actually won NACC amendments into law, because it also does everything else a viable major-adjacent party needs to do. A 9 can mean "this is what the party is for" as much as it can mean "this is most of what the party will ever get to do." A low score is also not one failure mode — it can mean active opposition (Liberal, One Nation), indifference, or a party that's already governing and treats the question as settled; the score alone doesn't distinguish them, which is why every entry's dated notes matter more than the number.
+
+None of this is a reason to distrust the numbers — it's a reason to read the notes and sources next to them (below) rather than stopping at the score.
+
 ### Left–Right (−10 to +10)
 
 Standard political spectrum for rough orientation. −10 = far left (revolutionary socialist), −5 = social democratic, 0 = centre, +5 = conservative, +10 = far right.
