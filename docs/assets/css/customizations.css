@@ -1137,8 +1137,23 @@
   max-width: 80px;
   max-height: 40px;
   margin: 0 0 0.5rem 1rem;
-  filter: brightness(0) invert(1);  /* white logos on dark bg */
+  filter: brightness(0) invert(1);
   opacity: 0.85;
+}
+
+.gov-just-header {
+  overflow: auto;
+  margin-bottom: 0.5rem;
+}
+
+.gov-just-links {
+  font-size: 0.82em;
+}
+
+.gov-just-links a {
+  color: var(--md-default-fg-color--light);
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 /* Timeline section (graph 3) */

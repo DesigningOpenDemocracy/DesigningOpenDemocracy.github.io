@@ -1,6 +1,6 @@
 {
   "meta": {
-    "version": "2026-08-04-001",
+    "version": "2026-08-04-003",
     "description": "Multi-year governance structure and ideological scoring for Australian political parties, with international comparators. Latest scores are at the top level (for scatter plots); history arrays track changes over time (for timeline chart and the dated 'Scoring justification' section, which is rendered entirely from this data — there is no separate hand-written justification text anywhere else). Scores are approximate and deliberately coarse — see project page for full methodology.",
     "dimensions": {
       "left_right": {
@@ -199,7 +199,8 @@
           ]
         }
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Australian_Labor_Party"
+      "wikipedia": "https://en.wikipedia.org/wiki/Australian_Labor_Party",
+      "website": "https://alp.org.au"
     },
     {
       "slug": "liberal",
@@ -314,7 +315,8 @@
           ]
         }
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Liberal_Party_of_Australia"
+      "wikipedia": "https://en.wikipedia.org/wiki/Liberal_Party_of_Australia",
+      "website": "https://liberal.org.au"
     },
     {
       "slug": "greens",
@@ -416,7 +418,8 @@
           ]
         }
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Australian_Greens"
+      "wikipedia": "https://en.wikipedia.org/wiki/Australian_Greens",
+      "website": "https://greens.org.au"
     },
     {
       "slug": "victorian-socialists",
@@ -499,7 +502,8 @@
           ]
         }
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Victorian_Socialists"
+      "wikipedia": "https://en.wikipedia.org/wiki/Victorian_Socialists",
+      "website": "https://victoriansocialists.org.au"
     },
     {
       "slug": "one-nation",
@@ -592,7 +596,8 @@
           ]
         }
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/One_Nation_(Australia)"
+      "wikipedia": "https://en.wikipedia.org/wiki/One_Nation_(Australia)",
+      "website": "https://onenation.org.au"
     },
     {
       "slug": "jacqui-lambie-network",
@@ -668,7 +673,8 @@
         "license": "Fair use",
         "source": "https://en.wikipedia.org/wiki/File:Jacqui_Lambie_Network_federal_logo.png"
       },
-      "wikipedia": "https://en.wikipedia.org/wiki/Jacqui_Lambie_Network"
+      "wikipedia": "https://en.wikipedia.org/wiki/Jacqui_Lambie_Network",
+      "website": "https://lambienetwork.com.au"
     },
     {
       "slug": "katter",
@@ -749,7 +755,8 @@
           ]
         }
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Katter%27s_Australian_Party"
+      "wikipedia": "https://en.wikipedia.org/wiki/Katter%27s_Australian_Party",
+      "website": "https://kap.org.au"
     },
     {
       "slug": "libertarian",
@@ -848,7 +855,8 @@
           ]
         }
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Libertarian_Party_(Australia)"
+      "wikipedia": "https://en.wikipedia.org/wiki/Libertarian_Party_(Australia)",
+      "website": "https://libertarians.org.au"
     },
     {
       "slug": "pirate-party",
@@ -960,7 +968,9 @@
           ]
         }
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Pirate_Party_Australia"
+      "wikipedia": "https://en.wikipedia.org/wiki/Pirate_Party_Australia",
+      "dod_page": "/organisations/pirate-party-australia/",
+      "website": "https://pirateparty.org.au"
     },
     {
       "slug": "fusion",
@@ -1064,7 +1074,8 @@
           ]
         }
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Fusion_Party_(Australia)"
+      "wikipedia": "https://en.wikipedia.org/wiki/Fusion_Party_(Australia)",
+      "website": "https://fusionparty.org.au"
     },
     {
       "slug": "australian-democrats",
@@ -1205,7 +1216,9 @@
           ]
         }
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Australian_Democrats"
+      "wikipedia": "https://en.wikipedia.org/wiki/Australian_Democrats",
+      "dod_page": "/organisations/australian-democrats/",
+      "website": "https://australian-democrats.org.au"
     },
     {
       "slug": "flux",
@@ -1274,7 +1287,9 @@
           "external_sources": []
         }
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Flux_(political_party)"
+      "wikipedia": "https://en.wikipedia.org/wiki/Flux_(political_party)",
+      "dod_page": "/organisations/flux-party/",
+      "website": "https://web.archive.org/web/*/https://voteflux.org"
     },
     {
       "slug": "mivote",
@@ -1339,7 +1354,9 @@
           "external_sources": []
         }
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/MiVote"
+      "wikipedia": "https://en.wikipedia.org/wiki/MiVote",
+      "dod_page": "/organisations/mivote/",
+      "website": "https://web.archive.org/web/*/https://mivote.org.au"
     },
     {
       "slug": "dlp",
@@ -1696,7 +1713,9 @@
           ]
         }
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Your_Party_(UK)"
+      "wikipedia": "https://en.wikipedia.org/wiki/Your_Party_(UK)",
+      "dod_page": "/organisations/your-party/",
+      "website": "https://yourparty.uk"
     },
     {
       "slug": "podemos",
@@ -1797,7 +1816,8 @@
           ]
         }
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Podemos"
+      "wikipedia": "https://en.wikipedia.org/wiki/Podemos",
+      "website": "https://podemos.info"
     },
     {
       "slug": "five-star-movement",
@@ -1898,7 +1918,8 @@
           ]
         }
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Five_Star_Movement"
+      "wikipedia": "https://en.wikipedia.org/wiki/Five_Star_Movement",
+      "website": "https://movimento5stelle.eu"
     },
     {
       "slug": "pirate-party-germany",
@@ -2003,7 +2024,8 @@
           ]
         }
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Pirate_Party_Germany"
+      "wikipedia": "https://en.wikipedia.org/wiki/Pirate_Party_Germany",
+      "website": "https://piratenpartei.de"
     },
     {
       "slug": "pvv",
@@ -2104,7 +2126,8 @@
           ]
         }
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Party_for_Freedom"
+      "wikipedia": "https://en.wikipedia.org/wiki/Party_for_Freedom",
+      "website": "https://pvv.nl"
     }
   ],
   "graphs": [

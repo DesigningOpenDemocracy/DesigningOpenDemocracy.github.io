@@ -416,13 +416,15 @@ Contributions welcome via PR:
       if (!p || !p.history || !p.history.length) return;
       var sorted = p.history.slice().sort(function(a, b) { return a.date.localeCompare(b.date); });
       var logoHtml = '';
+      var linksHtml = [];
+      if (p.wikipedia) linksHtml.push('<a href="' + p.wikipedia + '" target="_blank" rel="noopener">Wikipedia</a>');
+      if (p.website) linksHtml.push('<a href="' + p.website + '" target="_blank" rel="noopener">Website</a>');
+      if (p.dod_page) linksHtml.push('<a href="' + p.dod_page + '">DOD page</a>');
       if (p.logo && p.logo.path) {
         var img = '<img src="' + p.logo.path + '" alt="' + p.name + ' logo" class="gov-just-logo">';
-        if (p.wikipedia) {
-          logoHtml = '<a href="' + p.wikipedia + '" target="_blank" rel="noopener" class="gov-just-wiki-link">' + img + '</a>';
-        } else {
-          logoHtml = img;
-        }
+        logoHtml = '<div class="gov-just-header">' + img + (linksHtml.length ? '<div class="gov-just-links">' + linksHtml.join(' · ') + '</div>' : '') + '</div>';
+      } else if (linksHtml.length) {
+        logoHtml = '<p class="gov-just-links">' + linksHtml.join(' · ') + '</p>';
       }
       var scoringNoteHtml = p.scoring_note ? '<p class="gov-just-scoring-note"><em>' + p.scoring_note + '</em></p>' : '';
       var entriesHtml = sorted.map(function(h) {
