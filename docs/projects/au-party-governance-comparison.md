@@ -8,7 +8,7 @@ summary: "A living reference comparing Australian political parties on internal 
 concepts: [sortition, citizens-assembly, liquid-democracy]
 ---
 
-A living reference that scores Australian political parties (and key international comparators) on three dimensions derived from DOD's [Accountability Framework](index.md): internal governance structure, external governance reform advocacy, and ideological position. Deliberately **not** a ranking of merit — [see why](/blog/posts/2026-08-03-party-governance-comparison/).
+A living reference that scores Australian political parties (and key international comparators) on three dimensions derived from DOD's [Accountability Framework](index.md): internal governance structure, external governance reform advocacy, and ideological position. Deliberately **not** a ranking of merit — [see why](../blog/posts/2026-08-03-party-governance-comparison.md).
 
 ## Methodology
 
@@ -48,7 +48,7 @@ Does the party work to change *how governance works* — electoral systems, tran
 
 ### Reading the scores
 
-A high score isn't necessarily better, a low score isn't necessarily worse — the numbers measure *depth*, not merit. The dated notes and sources below each party are where the real comparison lives. For examples and nuance see the [rescoring blog post](/blog/posts/2026-08-03-party-governance-comparison/).
+A high score isn't necessarily better, a low score isn't necessarily worse — the numbers measure *depth*, not merit. The dated notes and sources below each party are where the real comparison lives. For examples and nuance see the [rescoring blog post](../blog/posts/2026-08-03-party-governance-comparison.md).
 
 ### Left–Right (−10 to +10)
 
@@ -56,7 +56,7 @@ Standard political spectrum for rough orientation. −10 = far left (revolutiona
 
 ### Parties scored
 
-21 parties: 16 Australian (11 active, 5 historical) plus 5 international comparators (hidden by default on graphs 1 and 2 — use the toggle button). Full selection rationale is in the [rescoring blog post](/blog/posts/2026-08-03-party-governance-comparison/).
+21 parties: 16 Australian (11 active, 5 historical) plus 5 international comparators (hidden by default on graphs 1 and 2 — use the toggle button). Full selection rationale is in the [rescoring blog post](../blog/posts/2026-08-03-party-governance-comparison.md).
 
 ## Graphs
 
@@ -206,7 +206,7 @@ This section is rendered entirely from [`party-governance.json`](/data/party-gov
 
 ## Background
 
-The [Accountability Framework](index.md) asks *"is this org working on how people participate in governance?"* — but the answer is not always yes/no. This page makes the ambiguity quantitative. [Full background](/blog/posts/2026-08-03-party-governance-comparison/#why-this-page-exists).
+The [Accountability Framework](index.md) asks *"is this org working on how people participate in governance?"* — but the answer is not always yes/no. This page makes the ambiguity quantitative. [Full background](../blog/posts/2026-08-03-party-governance-comparison.md#why-this-page-exists).
 
 ## Expanding the reference
 
