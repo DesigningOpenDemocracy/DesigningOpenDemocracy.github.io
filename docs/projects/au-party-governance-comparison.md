@@ -543,7 +543,8 @@ Contributions welcome via PR:
         for (var i = 0; i < sorted.length; i++) {
           var h = sorted[i];
           var curStatus = h.status || prevStatus;
-          if (curStatus !== prevStatus) {
+          // Only gap on re-activation (not on first deregistration)
+          if (prevStatus === 'deregistered' && curStatus === 'active') {
             if (data.length > 0) {
               data.push({ x: sorted[i-1].date + '-02', y: null });
             }
