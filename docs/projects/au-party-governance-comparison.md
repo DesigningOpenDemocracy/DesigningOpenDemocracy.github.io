@@ -543,7 +543,6 @@ Contributions welcome via PR:
           var h = sorted[i];
           var curStatus = h.status || prevStatus;
           if (curStatus !== prevStatus) {
-            // Insert a null point at the previous entry to create a visual break
             if (data.length > 0) {
               data.push({ x: sorted[i-1].date + '-02', y: null });
             }
@@ -551,19 +550,6 @@ Contributions welcome via PR:
           data.push({ x: h.date + '-01', y: h[dim.field], note: h[dim.key + '_note'], sources: h[dim.key + '_sources'] });
           prevStatus = curStatus;
         }
-        // Also insert gap for >3yr time gaps not covered by explicit status
-        var finalData = [];
-        for (var j = 0; j < data.length; j++) {
-          finalData.push(data[j]);
-          if (j < data.length - 1 && data[j+1].y !== null) {
-            var dj = new Date(data[j].x);
-            var dk = new Date(data[j+1].x);
-            if ((dk - dj) / 31556952000 > 3 && data[j].y !== null) {
-              finalData.push({ x: new Date(dj.getTime() + 86400000).toISOString().slice(0,7) + '-01', y: null });
-            }
-          }
-        }
-        data = finalData;
         return {
           label: p.name,
           data: data,
