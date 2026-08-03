@@ -15,7 +15,11 @@ tags:
 
 # We scored 21 parties on internal democracy and reform advocacy
 
-The [Australian Party Governance Comparison](/projects/au-party-governance-comparison/) page is live. Three pairwise scatter graphs, a timeline, raw data table, and per-party scoring justification. 16 Australian parties plus 5 international comparators.
+The Democracy Landscape has a lot of advocacy orgs in it. Which is fair — we built it that way. But we're an Australian group, and at some point you've got to stop staring at the international reform ecosystem and take a good hard look at your own backyard. So we did.
+
+We picked every Australian party with enough documentation to score, tossed in a few historical ones and international comparators, and rated them on three things: internal governance, external reform advocacy, and ideology. Then we put it all on a page with graphs and a data file and told ourselves we'd update it when things change.
+
+The [Australian Party Governance Comparison](/projects/au-party-governance-comparison/) page is the result.
 
 <!-- more -->
 
