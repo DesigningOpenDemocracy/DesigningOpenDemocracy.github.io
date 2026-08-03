@@ -23,8 +23,6 @@ The [Australian Party Governance Comparison](/projects/au-party-governance-compa
 
 <!-- more -->
 
-> *This post was drafted by Claude Code with AI-assisted research. A human editor partially reviewed it for general accuracy. Verify specific claims against the linked sources.*
-
 ## The short version
 
 We wanted to make the [Accountability Framework](/projects/accountability-framework/)'s "how people participate in governance" test concrete. So we scored every party on three things:
