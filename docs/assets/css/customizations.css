@@ -1133,18 +1133,17 @@
 }
 
 .gov-just-logo {
-  float: right;
-  max-width: 100px;
   height: 36px;
   width: auto;
-  margin: 0 0 0.5rem 1rem;
-  filter: brightness(0) invert(1);
-  opacity: 0.85;
+  margin-right: 0.75rem;
+  vertical-align: middle;
   object-fit: contain;
 }
 
 .gov-just-header {
-  overflow: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   margin-bottom: 0.5rem;
 }
 
