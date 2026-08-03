@@ -31,9 +31,9 @@ We wanted to make the [Accountability Framework](/projects/accountability-framew
 - **External reform advocacy**: does the party push for changing how governance works (voting systems, accountability, transparency)
 - **Ideology**: standard left–right
 
-The scale runs −10 to +10 on all three axes. 0 is anchored at the typical major-party status quo as of 2026: faction-controlled internal structure, no position on external reform.
+The scale runs −10 to +10 on all three axes. We set 0 at "this is what a typical major party looks like as of 2026" — faction-controlled internally, no strong position on reform either way.
 
-Negative = more centralised / opposes reform. Positive = more distributed / advocates reform.
+Go negative and you're more centralised, or actively opposing reform. Go positive and you're more member-driven, or pushing for systemic change.
 
 A few things jump out:
 
