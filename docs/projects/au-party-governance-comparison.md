@@ -96,7 +96,7 @@ Standard political spectrum for rough orientation. −10 = far left (revolutiona
   </div>
 </div>
 
-<p class="chart-hint" id="gov-logo-credits"></p>
+<p class="chart-hint">Party logos used under fair dealing for identification purposes. See <a href="https://github.com/DesigningOpenDemocracy/DesigningOpenDemocracy.github.io/blob/main/docs/assets/party-logos/README.md">logo credits</a>.</p>
 
 <div class="gov-chart-wrapper gov-timeline" id="gov-timeline-section">
   <h3>4. Score Changes Over Time</h3>
@@ -399,17 +399,6 @@ Contributions welcome via PR:
     return '<p class="gov-just-dim"><strong>' + label + ':</strong> ' + note + sourceLinksHtml(sources) + '</p>';
   }
 
-  function renderLogoCredits(parties) {
-    var el = document.getElementById('gov-logo-credits');
-    if (!el) return;
-    var withLogos = parties.filter(function(p) { return p.logo && p.logo.image; });
-    if (!withLogos.length) return;
-    var links = withLogos.map(function(p) {
-      return '<a href="' + p.logo.source + '" target="_blank" rel="noopener">' + p.name + '</a> (' + p.logo.license + ')';
-    });
-    el.innerHTML = 'Party logos used across the graphs above (international parties appear once toggled on): ' + links.join(', ') + ' — via Wikimedia Commons. Parties without a freely licensed logo on file show initials instead.';
-  }
-
   function renderJustification(parties) {
     document.querySelectorAll('.gov-justification-body').forEach(function(container) {
       var p = parties.find(function(x) { return x.slug === container.dataset.slug; });
@@ -681,7 +670,6 @@ Contributions welcome via PR:
       const parties = data.parties;
       renderTable(parties);
       renderJustification(parties);
-      renderLogoCredits(parties);
 
       const graphConfigs = data.graphs;
       const auParties = parties.filter(p => p.country === 'AU');
