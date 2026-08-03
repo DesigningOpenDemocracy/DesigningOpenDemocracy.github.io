@@ -19,13 +19,13 @@ The Democracy Landscape has a lot of advocacy orgs in it. Which is fair — we b
 
 We picked every Australian party with enough documentation to score, tossed in a few historical ones and international comparators, and rated them on three things: internal governance, external reform advocacy, and ideology. Then we put it all on a page with graphs and a data file and told ourselves we'd update it when things change.
 
-The [Australian Party Governance Comparison](/projects/au-party-governance-comparison/) page is the result.
+The [Australian Party Governance Comparison](../projects/au-party-governance-comparison.md) page is the result.
 
 <!-- more -->
 
 ## The short version
 
-We wanted to make the [Accountability Framework](/projects/accountability-framework/)'s "how people participate in governance" test concrete. So we scored every party on three things:
+We wanted to make the [Accountability Framework](https://www.designingopendemocracy.com/projects/accountability-framework/)'s "how people participate in governance" test concrete. So we scored every party on three things:
 
 - **Internal governance**: who actually makes decisions inside the party
 - **External reform advocacy**: does the party push for changing how governance works (voting systems, accountability, transparency)
@@ -46,7 +46,7 @@ The numbers are qualitative judgment, not a rubric. We're upfront about that. So
 
 **If you're an academic:** we'd love to see this done properly. Take our vibes as a starting point, build a weighted-rubric version with inter-rater calibration, and publish the comparison. It'd be genuinely interesting to see how far off we are.
 
-[Go look at the graphs](/projects/au-party-governance-comparison/) and tell us what we got wrong. PRs welcome.
+[Go look at the graphs](../projects/au-party-governance-comparison.md) and tell us what we got wrong. PRs welcome.
 
 ---
 
@@ -114,4 +114,4 @@ Each party gets a dated audit trail in `party-governance.json` with correspondin
 
 To rescore a party or add a new one, edit `party-governance.json` directly. The graphs, table, and justification text all update from it at build time.
 
-[Page](/projects/au-party-governance-comparison/) · [Data file](/data/party-governance.json) · [PRs welcome](https://github.com/DesigningOpenDemocracy/DesigningOpenDemocracy.github.io)
+[Page](../projects/au-party-governance-comparison.md) · [Data file](../data/party-governance.json) · [PRs welcome](https://github.com/DesigningOpenDemocracy/DesigningOpenDemocracy.github.io)
