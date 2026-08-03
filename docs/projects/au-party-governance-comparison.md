@@ -14,43 +14,57 @@ It is deliberately **not** a ranking of merit. A party with high internal democr
 
 ## Methodology
 
-Each party is scored on three dimensions, 0–10 scale for governance axes, −10 to +10 for ideology. Scores are approximate and intended for relative comparison, not precision. They reflect **documented, sourced practice** — not platform statements alone — and are updated as new evidence surfaces. Additions and rescoring are welcome via PR.
+Each party is scored on three dimensions. Governance axes use a −10 to +10 centered scale: 0 = typical major-party status quo as of 2026 (faction-controlled internal structure, no position on external reform), negative = more centralised / opposed to reform, positive = more distributed / pro-reform. Ideology uses −10 to +10. Scores are approximate qualitative judgment, not a rubric calculation, and intended for relative comparison — not precision. They reflect **documented, sourced practice**, not platform statements alone. Updates welcome via PR.
 
-### Internal governance (0–10)
+### Internal governance (−10 to +10)
 
-How do members control party decisions? Composite of: leadership selection method, candidate preselection, policy platform approval, minority faction rights, and structural accountability mechanisms (recall, term limits, checks on executive power).
-
-| Score | Description |
-|---|---|
-| 0–1 | Leader-appointed, no meaningful member input |
-| 2–3 | Some member input but elite/faction-controlled in practice |
-| 4–5 | One member, one vote (OMOV — every member's vote counts equally, e.g. in leadership elections) on paper, mixed or inconsistent practice |
-| 6–7 | Genuine one member, one vote with documented competitive practice and minority rights |
-| 8–9 | Novel democratic mechanisms beyond standard one member, one vote: sortition, liquid democracy, deliberative structures |
-| 10 | Full member control of all decisions through direct/liquid/sortition-based mechanisms |
-
-### External governance reform advocacy (0–10)
-
-Does the party work to change *how governance works* — electoral systems, transparency, anti-corruption, accountability mechanisms? Scored on documented, sustained advocacy with specific outcomes, not platform mentions.
+How do members control party decisions? Composite of: leadership selection method, candidate preselection, policy platform approval, minority faction rights, and structural accountability mechanisms (recall, term limits, checks on executive power). 0 = typical major-party structure as of 2026 (faction-controlled with some member input).
 
 | Score | Description |
 |---|---|
-| 0 | None, or actively opposes governance reform |
+| −10 to −8 | Single-leader, no formal membership — party IS the leader |
+| −7 to −5 | Leader-appointed — membership exists but leader controls everything |
+| −4 to −2 | Narrow elite circle, membership is symbolic |
+| −1 | Leader-dominated but with some elite input |
+| 0 | Elite/faction-controlled with some member input (typical major party as of 2026) |
+| 1–3 | One member, one vote — on paper, mixed or inconsistent practice |
+| 4–5 | Genuine one member, one vote — competitive, with minority rights |
+| 6–7 | Novel mechanisms alongside standard one member, one vote |
+| 8–10 | Fully novel — sortition, liquid democracy, direct member control |
+
+### External governance reform advocacy (−10 to +10)
+
+Does the party work to change *how governance works* — electoral systems, transparency, anti-corruption, accountability mechanisms? Scored on documented, sustained advocacy with specific outcomes, not platform mentions. 0 = no position or indifferent.
+
+| Score | Description |
+|---|---|
+| −10 to −8 | Dismantles — seeks to replace democracy with authoritarian rule |
+| −7 to −5 | Undermines — attacks electoral integrity, accountability bodies, media |
+| −4 to −2 | Opposes reform — blocks or weakens accountability mechanisms |
+| −1 | Disfavours reform — publicly sceptical, controls damage |
+| 0 | No position or indifferent |
 | 1–3 | Platform mentions only, no documented action |
 | 4–5 | Specific policy commitments, some legislative or campaign action |
 | 6–7 | Sustained campaigns with documented outcomes on multiple fronts |
-| 8–9 | Governance reform is a major platform pillar with extensive record |
-| 10 | Democracy reform is the party's primary reason for existing |
+| 8–10 | Governance reform is a major platform pillar or the party's primary reason for existing |
 
 ### Reading the scores: high isn't "better"
 
-The intro above says this isn't a ranking of merit — this section is what that means in practice for each axis, because "high score" and "good" are easy to conflate even when the text says otherwise.
+A high score is not necessarily better and a low score is not necessarily worse. The numbers measure *depth*, not merit.
 
-**Internal governance.** The 8–10 band ("novel mechanisms": sortition, liquid democracy, IBDD-style token economies) and the 6–7 band ("genuine one member, one vote") aren't just different amounts of the same thing — they're different risk profiles. One member, one vote is proven at scale: its failure modes (factionalism, voter apathy, populist capture) are well understood after a century of use, precisely because it's been tried by millions of people in real elections. A novel mechanism scoring 8–9 hasn't had that stress-test. Flux's two-token economy and MiVote's mandatory mandate are the clearest cases in this dataset: both score high (8 and 7) for genuinely sophisticated design, and neither was ever tested by actually holding a seat long enough to find out what breaks at scale — vote-buying dynamics in a delegation market, information overload from voting on every issue, an engaged-minority-only electorate, opaque aggregation logic that's hard for ordinary members to audit. A high score here says "ambitious, untested" as much as it says "deep member control." A mid-range score here can mean "proven, but doesn't address the deeper structural critique" rather than "worse."
+### Internal governance
 
-**External reform advocacy.** A high score means governance reform is central to the party's platform — but for a single-issue reform party (Pirate Party, Flux, MiVote all score 9), that centrality is often inseparable from why the party stays a minor party: it doesn't compete on the bread-and-butter issues (economy, health, housing) most voters weigh first, so the reforms it champions rarely get the chance to actually pass. Contrast the Greens (8): a lower purity score than the single-issue parties, but attached to a party that has actually won NACC amendments into law, because it also does everything else a viable major-adjacent party needs to do. A 9 can mean "this is what the party is for" as much as it can mean "this is most of what the party will ever get to do." A low score is also not one failure mode — it can mean active opposition (Liberal, One Nation), indifference, or a party that's already governing and treats the question as settled; the score alone doesn't distinguish them, which is why every entry's dated notes matter more than the number.
+Scores around 0 (faction-controlled, typical major-party structure) are proven at scale — their failure modes are well understood after a century of use. High positive scores (+6 to +10, novel mechanisms like sortition or liquid democracy) are *untested* at scale. A high positive score says "ambitious design," not "better governance."
 
-None of this is a reason to distrust the numbers — it's a reason to read the notes and sources next to them (below) rather than stopping at the score.
+*Example:* Flux (+7) and MiVote (+5) had sophisticated token-delegation systems that were never tested by actually holding a seat long enough to find out what breaks.
+
+### External reform advocacy
+
+A high positive score means governance reform is central to the party's platform. But single-issue reform parties (Pirate Party, Flux, MiVote all score +8 to +9) stay minor parties because they don't compete on bread-and-butter issues — so the reforms they champion rarely pass. A negative score means active opposition (Liberal −3, One Nation −6) rather than mere indifference.
+
+*Example:* The Greens (+8) has a lower purity score than the single-issue parties, but has actually won NACC amendments into law — because it also does everything else a viable party needs to do.
+
+**In short:** the numbers are the start, not the end. The dated notes and sources below each party are where the real comparison lives. Scoring is qualitative judgment — someone interested in a more rigorous rubric- or matrix-based approach is welcome to build one (see [Expanding the reference](#expanding-the-reference)).
 
 ### Left–Right (−10 to +10)
 
@@ -72,6 +86,7 @@ Standard political spectrum for rough orientation. −10 = far left (revolutiona
     <div class="chart-container">
       <canvas id="chart-left-right-internal"></canvas>
     </div>
+    <p class="chart-hint chart-warning">⚠️ A high score isn't necessarily better — see <a href="#reading-the-scores-high-isnt-better">Reading the scores</a>.</p>
   </div>
   <div class="gov-chart-wrapper">
     <div class="gov-chart-header">
@@ -82,6 +97,7 @@ Standard political spectrum for rough orientation. −10 = far left (revolutiona
     <div class="chart-container">
       <canvas id="chart-internal-external"></canvas>
     </div>
+    <p class="chart-hint chart-warning">⚠️ A high score isn't necessarily better — see <a href="#reading-the-scores-high-isnt-better">Reading the scores</a>.</p>
   </div>
 </div>
 
@@ -89,7 +105,7 @@ Standard political spectrum for rough orientation. −10 = far left (revolutiona
 
 <div class="gov-chart-wrapper gov-timeline" id="gov-timeline-section">
   <h3>3. Score Changes Over Time</h3>
-  <p class="chart-hint">Toggle parties to compare how internal and external governance scores shift across review cycles. Default shows the three parties that best illustrate the framework's internal-vs-external distinction. Charts collapse when nothing is selected.</p>
+  <p class="chart-hint">Toggle parties to compare how internal and external governance scores shift across review cycles. Defaults to all active Australian parties. Charts collapse when nothing is selected.</p>
   <div class="timeline-pills" id="timeline-pills"></div>
   <div class="gov-timeline-charts" id="chart-timeline-container" style="display:none">
     <div>
@@ -206,6 +222,7 @@ Contributions welcome via PR:
 - **Rescore:** Provide new evidence for changed scores
 - **Add international comparators:** Especially parties with novel governance mechanisms — Alternativet (Denmark) is a documented candidate not yet added; see the internal heartbeat research note <!-- ../../internal-heartbeat/2026-07-31-au-parties-democracy-reform-assessment.md --> for method
 - **New graph dimensions:** Membership vs. governance depth, party age vs. mechanism novelty
+- **Academic rigour:** This is qualitative scoring by design. Someone could build a rubric- or matrix-based methodology (weighted sub-factors, inter-rater calibration) on top of the same evidence — pull requests for that welcome
 
 ## See also
 
@@ -409,8 +426,8 @@ Contributions welcome via PR:
       var entriesHtml = sorted.map(function(h) {
         var scoreLine = '<p class="gov-just-date"><strong>' + h.date + '</strong> — ' +
           'Left–Right ' + formatSignedScore(h.left_right) +
-          ', Internal ' + h.internal_governance + '/10' +
-          ', External ' + formatSignedScore(h.external_reform) + '/10</p>';
+          ', Internal ' + h.internal_governance +
+          ', External ' + formatSignedScore(h.external_reform) + '</p>';
         var dims = [
           justificationDimHtml('Left–Right', h.left_right_note, h.left_right_sources),
           justificationDimHtml('Internal', h.internal_note, h.internal_sources),
@@ -454,9 +471,8 @@ Contributions welcome via PR:
                 const p = config.parties[ctx.datasetIndex];
                 let lines = [p.name];
                 if (p.country !== 'AU') lines.push('Country: ' + p.country);
-                lines.push('Internal gov: ' + p.internal_governance + '/10');
-                lines.push('External reform: ' + p.external_reform + '/10');
-                lines.push('Left→Right: ' + p.left_right);
+                lines.push('Internal gov: ' + p.internal_governance);
+                lines.push('External reform: ' + p.external_reform);
                 if (p.notability) lines.push('Notability: ' + p.notability + '/10');
                 if (p.note) lines.push(p.note.substring(0, 120) + (p.note.length > 120 ? '...' : ''));
                 const latest = p.history && p.history.length
@@ -566,9 +582,9 @@ Contributions welcome via PR:
               title: { display: true, text: 'Date', color: COLORS.text }
             },
             y: {
-              min: dim.key === 'external' ? -2 : 0,
+              min: -10,
               max: 10,
-              ticks: { stepSize: 1 },
+              ticks: { stepSize: 2 },
               title: { display: true, text: dim.yLabel, color: COLORS.text }
             }
           }
@@ -602,7 +618,9 @@ Contributions welcome via PR:
 
   function setupTimeline(parties) {
     var pillsEl = document.getElementById('timeline-pills');
-    var DEFAULT_SELECTED = ['victorian-socialists', 'greens', 'your-party'];
+    var DEFAULT_SELECTED = parties
+      .filter(function(p) { return p.country === 'AU' && p.status === 'active'; })
+      .map(function(p) { return p.slug; });
     var selected = DEFAULT_SELECTED.slice();
 
     parties.forEach(function(p) {
@@ -646,15 +664,15 @@ Contributions welcome via PR:
         xLabel: graphConfigs[0].x_label,
         yLabel: graphConfigs[0].y_label,
         xRange: { min: -10, max: 10 },
-        yRange: { min: 0, max: 10 }
+        yRange: { min: -10, max: 10 }
       };
       SCATTER_CONFIGS['chart-internal-external'] = {
         x: graphConfigs[1].x_axis,
         y: graphConfigs[1].y_axis,
         xLabel: graphConfigs[1].x_label,
         yLabel: graphConfigs[1].y_label,
-        xRange: { min: 0, max: 10 },
-        yRange: { min: -2, max: 10 }
+        xRange: { min: -10, max: 10 },
+        yRange: { min: -10, max: 10 }
       };
 
       renderScatter('chart-left-right-internal', Object.assign({ parties: auParties }, SCATTER_CONFIGS['chart-left-right-internal']));
