@@ -1,6 +1,6 @@
 {
   "meta": {
-    "version": "2026-08-03-001",
+    "version": "2026-08-03-002",
     "description": "Multi-year governance structure and ideological scoring for Australian political parties, with international comparators. Latest scores are at the top level (for scatter plots); history arrays track changes over time (for timeline chart and the dated 'Scoring justification' section, which is rendered entirely from this data — there is no separate hand-written justification text anywhere else). Scores are approximate and deliberately coarse — see project page for full methodology.",
     "dimensions": {
       "left_right": {
@@ -1970,6 +1970,106 @@
             {
               "label": "Pirate Party Germany (Wikipedia)",
               "url": "https://en.wikipedia.org/wiki/Pirate_Party_Germany"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "pvv",
+      "name": "Party for Freedom",
+      "country": "NL",
+      "founded": 2006,
+      "left_right": 8,
+      "internal_governance": 0,
+      "external_reform": 1,
+      "notability": 8,
+      "logo": {
+        "path": "/assets/party-logos/nl/pvv.svg",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:PVV-logo.svg"
+      },
+      "status": "active",
+      "note": "Dutch right-wing populist/far-right party led by Geert Wilders. International comparator, added specifically to test whether right-of-centre parties score low on internal governance internationally too, or only in the Australian dataset — result: PVV is the most extreme case in this entire dataset. Wilders deliberately structured the party as an association with exactly one formal member (himself) and disabled further member registration shortly after founding; it has no conferences, local branches, youth wing, or research institute. An internal push to democratise the party failed and its leading advocate quit citing 'lack of democratic structure.'",
+      "history": [
+        {
+          "date": "2006-02",
+          "left_right": 7,
+          "internal_governance": 1,
+          "external_reform": 1,
+          "left_right_note": "Founded by Geert Wilders after leaving the liberal-conservative VVD in 2004 over opposition to Turkish EU accession; campaigned in its first election on opposition to Islamisation.",
+          "left_right_sources": [
+            {
+              "label": "Party for Freedom (Wikipedia)",
+              "url": "https://en.wikipedia.org/wiki/Party_for_Freedom"
+            }
+          ],
+          "internal_note": "Registered as an association (the legal minimum structure for Dutch ballot access) founded by Wilders and one other; shortly after registration, Wilders disabled new member sign-ups, leaving himself as the party's sole formal member from very early on.",
+          "internal_sources": [
+            {
+              "label": "Party for Freedom (Wikipedia)",
+              "url": "https://en.wikipedia.org/wiki/Party_for_Freedom"
+            }
+          ],
+          "external_note": "No documented governance-reform platform at founding; campaign centred on immigration and Islam rather than electoral or accountability reform.",
+          "external_sources": [
+            {
+              "label": "Party for Freedom (Wikipedia)",
+              "url": "https://en.wikipedia.org/wiki/Party_for_Freedom"
+            }
+          ]
+        },
+        {
+          "date": "2012-07",
+          "left_right": 7,
+          "internal_governance": 0,
+          "external_reform": 1,
+          "left_right_note": "Continued as a right-wing populist party, providing confidence-and-supply to a VVD-led minority government from 2010 before withdrawing support in 2012 over budget disagreements.",
+          "left_right_sources": [
+            {
+              "label": "Party for Freedom (Wikipedia)",
+              "url": "https://en.wikipedia.org/wiki/Party_for_Freedom"
+            }
+          ],
+          "internal_note": "The closed, single-member structure was tested and confirmed rather than relaxed: MP Hero Brinkman quit in March 2012 citing the party's lack of democratic structure among his reasons, after failing to win support for internal democratisation; two more sitting members (Marcial Hernandez, Wim Kortenoeven) quit the same year citing Wilders' 'autocratic leadership.' The party does not hold public conferences and has no local branches through which members could organise even informally.",
+          "internal_sources": [
+            {
+              "label": "Party for Freedom (Wikipedia)",
+              "url": "https://en.wikipedia.org/wiki/Party_for_Freedom"
+            }
+          ],
+          "external_note": "Advocated excluding dual citizens from voting, military service and political office — a voting-rights restriction rather than a reform expanding participation or accountability as this framework's external axis defines it.",
+          "external_sources": [
+            {
+              "label": "Party for Freedom (Wikipedia)",
+              "url": "https://en.wikipedia.org/wiki/Party_for_Freedom"
+            }
+          ]
+        },
+        {
+          "date": "2023-11",
+          "left_right": 8,
+          "internal_governance": 0,
+          "external_reform": 1,
+          "left_right_note": "Won the November 2023 general election outright (37 seats, largest party), entering government for the first time in 2024 before withdrawing from the cabinet in 2025.",
+          "left_right_sources": [
+            {
+              "label": "Party for Freedom (Wikipedia)",
+              "url": "https://en.wikipedia.org/wiki/Party_for_Freedom"
+            }
+          ],
+          "internal_note": "Structure unchanged: still a single-member association with no conferences, branches, youth wing or research institute, even after becoming the largest party in the Dutch parliament and entering national government — a case where electoral scale and internal governance depth moved in opposite directions.",
+          "internal_sources": [
+            {
+              "label": "Party for Freedom (Wikipedia)",
+              "url": "https://en.wikipedia.org/wiki/Party_for_Freedom"
+            }
+          ],
+          "external_note": "Continued Euroscepticism (paused, not abandoned, Nexit advocacy during 2023-24 coalition talks) and immigration focus; no sustained electoral/anti-corruption/transparency reform campaign documented.",
+          "external_sources": [
+            {
+              "label": "Party for Freedom (Wikipedia)",
+              "url": "https://en.wikipedia.org/wiki/Party_for_Freedom"
             }
           ]
         }

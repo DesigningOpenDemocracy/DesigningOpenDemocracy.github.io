@@ -58,7 +58,7 @@ Standard political spectrum for rough orientation. −10 = far left (revolutiona
 
 ### Parties scored
 
-16 Australian parties plus 4 international comparators. 11 of the Australian parties are active; 5 are historical/deregistered and included for comparison — Flux and MiVote for governance innovation, and the Democratic Labor Party (1955–1978), United Australia Party (1931–1945), and Australia Party (1969–1986) as notable earlier cases spanning a wider slice of Australian party history (an externally-directed minor party, a major governing predecessor of the modern Liberals, and a civil-liberties minor party that fed directly into the Australian Democrats). Fusion Party is included as the federated home Pirate Party Australia merged into in 2021 — see both entries' history for the relationship. The Libertarian Party (formerly the Liberal Democratic Party) was added specifically to test whether right-of-centre parties score low on external reform generally, or only the populist ones already covered do — see its scoring note. Selection: all Australian parties assessed in the internal heartbeat AU party audit <!-- see ../../internal-heartbeat/2026-07-31-au-parties-democracy-reform-assessment.md --> with sufficient documentation, plus the historical/Fusion/Libertarian additions above (sourced independently from Wikipedia, not from the heartbeat audit). The four international comparators — Your Party (UK), Podemos (Spain), Five Star Movement (Italy), and Pirate Party Germany — are hidden by default on graphs 1 and 2 (toggle button next to each chart) so the primary Australian comparison isn't diluted for viewers who don't want it; they're sourced from Wikipedia and included specifically because each documents a concrete internal-governance mechanism (sortition, mass member votes on party structure, an online voting platform, binding liquid democracy) worth comparing against the Australian parties' more conventional structures.
+16 Australian parties plus 5 international comparators. 11 of the Australian parties are active; 5 are historical/deregistered and included for comparison — Flux and MiVote for governance innovation, and the Democratic Labor Party (1955–1978), United Australia Party (1931–1945), and Australia Party (1969–1986) as notable earlier cases spanning a wider slice of Australian party history (an externally-directed minor party, a major governing predecessor of the modern Liberals, and a civil-liberties minor party that fed directly into the Australian Democrats). Fusion Party is included as the federated home Pirate Party Australia merged into in 2021 — see both entries' history for the relationship. The Libertarian Party (formerly the Liberal Democratic Party) was added specifically to test whether right-of-centre parties score low on external reform generally, or only the populist ones already covered do — see its scoring note. Selection: all Australian parties assessed in the internal heartbeat AU party audit <!-- see ../../internal-heartbeat/2026-07-31-au-parties-democracy-reform-assessment.md --> with sufficient documentation, plus the historical/Fusion/Libertarian additions above (sourced independently from Wikipedia, not from the heartbeat audit). The five international comparators — Your Party (UK), Podemos (Spain), Five Star Movement (Italy), Pirate Party Germany, and the Party for Freedom (Netherlands) — are hidden by default on graphs 1 and 2 (toggle button next to each chart) so the primary Australian comparison isn't diluted for viewers who don't want it; they're sourced from Wikipedia and included specifically because each documents a concrete, citable internal-governance data point (sortition, mass member votes on party structure, an online voting platform, binding liquid democracy, or — in the PVV's case — a deliberately closed single-member structure) worth comparing against the Australian parties' more conventional structures. The PVV was added to test internationally whether right-wing populist parties pattern the same way the Australian right-of-centre parties do on internal governance; see [its scoring note](#party-for-freedom-netherlands) and the internal heartbeat research note <!-- ../../internal-heartbeat/2026-08-03-right-wing-democratic-innovation-gap.md --> for the fuller picture, including Reform UK's unresolved 2025 shift away from private-company ownership.
 
 ## Graphs
 
@@ -68,7 +68,7 @@ Standard political spectrum for rough orientation. −10 = far left (revolutiona
       <h3>1. Internal Governance vs. Ideology</h3>
       <button class="chart-intl-toggle-btn" id="toggle-intl-chart1" type="button" aria-pressed="false">Show international parties</button>
     </div>
-    <p class="chart-hint">Where parties sit on the left–right spectrum vs. how deeply democratic their internal structures are. Shows Australian parties by default — international comparators (Podemos, Five Star Movement, Pirate Party Germany, Your Party) are hidden until toggled on.</p>
+    <p class="chart-hint">Where parties sit on the left–right spectrum vs. how deeply democratic their internal structures are. Shows Australian parties by default — international comparators (Podemos, Five Star Movement, Pirate Party Germany, Party for Freedom, Your Party) are hidden until toggled on.</p>
     <div class="chart-container">
       <canvas id="chart-left-right-internal"></canvas>
     </div>
@@ -190,6 +190,9 @@ This section is rendered entirely from [`party-governance.json`](/data/party-gov
 ### Pirate Party Germany
 <div class="gov-justification-body" data-slug="pirate-party-germany"></div>
 
+### Party for Freedom (Netherlands)
+<div class="gov-justification-body" data-slug="pvv"></div>
+
 ## Why this exists
 
 The [Accountability Framework](index.md) is a qualitative standard. It asks *"is this org working on how people participate in governance?"* — a question whose answer is not always yes/no but often *"in what sense, and on which side of its own boundary?"* The framework itself acknowledges this: its "what this means in practice" section does not clarify whether prefigurative internal democracy qualifies, and its diagnostic tools are calibrated for adversary-style accountability systems.
@@ -260,7 +263,8 @@ Contributions welcome via PR:
     'your-party':           { initials: 'YP',   color: '#e91e8a' },
     podemos:                { initials: 'PDM',  color: '#6a2d8f' },
     'five-star-movement':   { initials: 'M5S',  color: '#ffcc00' },
-    'pirate-party-germany': { initials: 'PPDE', color: '#ff6600' }
+    'pirate-party-germany': { initials: 'PPDE', color: '#ff6600' },
+    pvv:                    { initials: 'PVV',  color: '#4a4a4a' }
   };
 
   function partyGlyph(party) {
@@ -574,8 +578,8 @@ Contributions welcome via PR:
   }
 
   // Graph 1 & 2 show Australian parties only by default; international
-  // comparators (Podemos, Five Star Movement, Pirate Party Germany, Your
-  // Party) are opt-in via the toggle button next to each chart, so the
+  // comparators (Podemos, Five Star Movement, Pirate Party Germany, Party
+  // for Freedom, Your Party) are opt-in via the toggle button next to each chart, so the
   // primary AU comparison isn't diluted unless a viewer asks for the
   // wider context.
   var SCATTER_CONFIGS = {};
