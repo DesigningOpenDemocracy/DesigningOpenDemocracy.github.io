@@ -1134,10 +1134,9 @@
 
 .gov-just-logo {
   height: 36px;
-  width: auto;
+  max-width: 120px;
   margin-right: 0.75rem;
   vertical-align: middle;
-  object-fit: contain;
 }
 
 .gov-just-header {
