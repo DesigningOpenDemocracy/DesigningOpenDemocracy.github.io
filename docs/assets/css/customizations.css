@@ -1134,6 +1134,7 @@
 
 .gov-just-logo {
   height: 36px;
+  max-height: 36px;
   max-width: 120px;
   margin-right: 0.75rem;
   vertical-align: middle;
