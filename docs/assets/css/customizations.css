@@ -1132,6 +1132,15 @@
   font-size: 0.92em;
 }
 
+.gov-just-logo {
+  float: right;
+  max-width: 80px;
+  max-height: 40px;
+  margin: 0 0 0.5rem 1rem;
+  filter: brightness(0) invert(1);  /* white logos on dark bg */
+  opacity: 0.85;
+}
+
 /* Timeline section (graph 3) */
 .gov-timeline {
   margin-top: 1.5rem;
@@ -1193,6 +1202,16 @@
 
 .timeline-pill:hover {
   transform: scale(1.1);
+}
+
+.timeline-pill.has-logo {
+  background-color: #fff;
+  border-color: var(--md-default-fg-color--lightest);
+}
+
+.timeline-pill.has-logo.active {
+  background-color: #fff;
+  border-color: var(--pill-color);
 }
 
 

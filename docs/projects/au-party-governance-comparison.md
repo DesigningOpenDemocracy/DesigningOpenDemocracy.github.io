@@ -415,6 +415,15 @@ Contributions welcome via PR:
       var p = parties.find(function(x) { return x.slug === container.dataset.slug; });
       if (!p || !p.history || !p.history.length) return;
       var sorted = p.history.slice().sort(function(a, b) { return a.date.localeCompare(b.date); });
+      var logoHtml = '';
+      if (p.logo && p.logo.path) {
+        var img = '<img src="' + p.logo.path + '" alt="' + p.name + ' logo" class="gov-just-logo">';
+        if (p.wikipedia) {
+          logoHtml = '<a href="' + p.wikipedia + '" target="_blank" rel="noopener" class="gov-just-wiki-link">' + img + '</a>';
+        } else {
+          logoHtml = img;
+        }
+      }
       var scoringNoteHtml = p.scoring_note ? '<p class="gov-just-scoring-note"><em>' + p.scoring_note + '</em></p>' : '';
       var entriesHtml = sorted.map(function(h) {
         var scoreLine = '<p class="gov-just-date"><strong>' + h.date + '</strong> — ' +
@@ -428,7 +437,7 @@ Contributions welcome via PR:
         ].join('');
         return '<div class="gov-just-entry">' + scoreLine + dims + '</div>';
       }).join('');
-      container.innerHTML = scoringNoteHtml + entriesHtml;
+      container.innerHTML = logoHtml + scoringNoteHtml + entriesHtml;
     });
   }
 
@@ -622,8 +631,18 @@ Contributions welcome via PR:
       btn.className = 'timeline-pill' + (selected.indexOf(p.slug) !== -1 ? ' active' : '');
       btn.dataset.slug = p.slug;
       btn.style.setProperty('--pill-color', g.color);
-      btn.textContent = g.initials;
       btn.title = p.name + (p.country !== 'AU' ? ' (' + p.country + ')' : '');
+      if (p.logo && p.logo.image) {
+        btn.classList.add('has-logo');
+        btn.style.backgroundImage = 'url(' + p.logo.image.src + ')';
+        btn.style.backgroundSize = 'contain';
+        btn.style.backgroundRepeat = 'no-repeat';
+        btn.style.backgroundPosition = 'center';
+        btn.style.backgroundColor = '#fff';
+        btn.textContent = '';
+      } else {
+        btn.textContent = g.initials;
+      }
       if (p.status === 'deregistered') btn.classList.add('deregistered');
 
       btn.addEventListener('click', function() {

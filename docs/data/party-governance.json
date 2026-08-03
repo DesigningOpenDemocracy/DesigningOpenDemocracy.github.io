@@ -1,6 +1,6 @@
 {
   "meta": {
-    "version": "2026-08-03-009",
+    "version": "2026-08-04-001",
     "description": "Multi-year governance structure and ideological scoring for Australian political parties, with international comparators. Latest scores are at the top level (for scatter plots); history arrays track changes over time (for timeline chart and the dated 'Scoring justification' section, which is rendered entirely from this data — there is no separate hand-written justification text anywhere else). Scores are approximate and deliberately coarse — see project page for full methodology.",
     "dimensions": {
       "left_right": {
@@ -198,7 +198,8 @@
             }
           ]
         }
-      ]
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Australian_Labor_Party"
     },
     {
       "slug": "liberal",
@@ -312,7 +313,8 @@
             }
           ]
         }
-      ]
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Liberal_Party_of_Australia"
     },
     {
       "slug": "greens",
@@ -413,7 +415,8 @@
             }
           ]
         }
-      ]
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Australian_Greens"
     },
     {
       "slug": "victorian-socialists",
@@ -495,7 +498,8 @@
             }
           ]
         }
-      ]
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Victorian_Socialists"
     },
     {
       "slug": "one-nation",
@@ -587,7 +591,8 @@
             }
           ]
         }
-      ]
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/One_Nation_(Australia)"
     },
     {
       "slug": "jacqui-lambie-network",
@@ -662,7 +667,8 @@
         "path": "/assets/party-logos/au/jacqui-lambie-network.png",
         "license": "Fair use",
         "source": "https://en.wikipedia.org/wiki/File:Jacqui_Lambie_Network_federal_logo.png"
-      }
+      },
+      "wikipedia": "https://en.wikipedia.org/wiki/Jacqui_Lambie_Network"
     },
     {
       "slug": "katter",
@@ -742,7 +748,8 @@
             }
           ]
         }
-      ]
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Katter%27s_Australian_Party"
     },
     {
       "slug": "libertarian",
@@ -840,7 +847,8 @@
             }
           ]
         }
-      ]
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Libertarian_Party_(Australia)"
     },
     {
       "slug": "pirate-party",
@@ -951,7 +959,8 @@
             }
           ]
         }
-      ]
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Pirate_Party_Australia"
     },
     {
       "slug": "fusion",
@@ -1054,7 +1063,8 @@
             }
           ]
         }
-      ]
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Fusion_Party_(Australia)"
     },
     {
       "slug": "australian-democrats",
@@ -1194,7 +1204,8 @@
             }
           ]
         }
-      ]
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Australian_Democrats"
     },
     {
       "slug": "flux",
@@ -1262,7 +1273,8 @@
           "external_note": "Democracy reform remained the entire platform through deregistration.",
           "external_sources": []
         }
-      ]
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Flux_(political_party)"
     },
     {
       "slug": "mivote",
@@ -1326,7 +1338,8 @@
           "external_note": "Democracy reform remained the entire platform through deregistration.",
           "external_sources": []
         }
-      ]
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/MiVote"
     },
     {
       "slug": "dlp",
@@ -1427,7 +1440,8 @@
           "external_note": "Defunct.",
           "external_sources": []
         }
-      ]
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Democratic_Labor_Party_(Australia,_1955)"
     },
     {
       "slug": "uap-historical",
@@ -1523,7 +1537,8 @@
           "external_note": "Defunct.",
           "external_sources": []
         }
-      ]
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/United_Australia_Party"
     },
     {
       "slug": "australia-party",
@@ -1638,7 +1653,8 @@
         "path": "/assets/party-logos/au/australia-party.jpg",
         "license": "Public domain",
         "source": "https://commons.wikimedia.org/wiki/File:Australia_Party_logo_1972.jpg"
-      }
+      },
+      "wikipedia": "https://en.wikipedia.org/wiki/Australia_Party"
     },
     {
       "slug": "your-party",
@@ -1679,7 +1695,8 @@
             }
           ]
         }
-      ]
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Your_Party_(UK)"
     },
     {
       "slug": "podemos",
@@ -1779,7 +1796,8 @@
             }
           ]
         }
-      ]
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Podemos"
     },
     {
       "slug": "five-star-movement",
@@ -1879,7 +1897,8 @@
             }
           ]
         }
-      ]
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Five_Star_Movement"
     },
     {
       "slug": "pirate-party-germany",
@@ -1983,7 +2002,8 @@
             }
           ]
         }
-      ]
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Pirate_Party_Germany"
     },
     {
       "slug": "pvv",
@@ -2083,7 +2103,8 @@
             }
           ]
         }
-      ]
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Party_for_Freedom"
     }
   ],
   "graphs": [
