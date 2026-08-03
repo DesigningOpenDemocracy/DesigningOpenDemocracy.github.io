@@ -74,8 +74,19 @@ Standard political spectrum for rough orientation. −10 = far left (revolutiona
   </div>
   <div class="gov-chart-wrapper">
     <div class="gov-chart-header">
-      <h3>2. External Reform Advocacy vs. Internal Governance</h3>
+      <h3>2. External Reform Advocacy vs. Ideology</h3>
       <button class="chart-intl-toggle-btn" id="toggle-intl-chart2" type="button" aria-pressed="false">Show international parties</button>
+    </div>
+    <p class="chart-hint">Where parties sit on the left–right spectrum vs. how strongly they advocate for governance reform. Negative = opposes reform, 0 = indifferent, positive = advocates. Shows Australian parties by default — toggle to add international comparators.</p>
+    <div class="chart-container">
+      <canvas id="chart-left-right-external"></canvas>
+    </div>
+    <p class="chart-hint chart-warning">⚠️ A high score isn't necessarily better — see <a href="#reading-the-scores-high-isnt-better">Reading the scores</a>.</p>
+  </div>
+  <div class="gov-chart-wrapper">
+    <div class="gov-chart-header">
+      <h3>3. External Reform Advocacy vs. Internal Governance</h3>
+      <button class="chart-intl-toggle-btn" id="toggle-intl-chart3" type="button" aria-pressed="false">Show international parties</button>
     </div>
     <p class="chart-hint">The framework's two halves mapped against each other. Top-right quadrant = parties that both practice and advocate governance reform. Top-left = prefigurative internal practice without external reformism. Bottom-right = external advocacy without deep internal democracy. Shows Australian parties by default — toggle to add international comparators.</p>
     <div class="chart-container">
@@ -88,7 +99,7 @@ Standard political spectrum for rough orientation. −10 = far left (revolutiona
 <p class="chart-hint" id="gov-logo-credits"></p>
 
 <div class="gov-chart-wrapper gov-timeline" id="gov-timeline-section">
-  <h3>3. Score Changes Over Time</h3>
+  <h3>4. Score Changes Over Time</h3>
   <p class="chart-hint">Toggle parties to compare how internal and external governance scores shift across review cycles. Defaults to all active Australian parties. Charts collapse when nothing is selected.</p>
   <div class="timeline-pills" id="timeline-pills"></div>
   <div class="gov-timeline-charts" id="chart-timeline-container" style="display:none">
@@ -648,7 +659,7 @@ Contributions welcome via PR:
         xRange: { min: -10, max: 10 },
         yRange: { min: -10, max: 10 }
       };
-      SCATTER_CONFIGS['chart-internal-external'] = {
+      SCATTER_CONFIGS['chart-left-right-external'] = {
         x: graphConfigs[1].x_axis,
         y: graphConfigs[1].y_axis,
         xLabel: graphConfigs[1].x_label,
@@ -656,12 +667,22 @@ Contributions welcome via PR:
         xRange: { min: -10, max: 10 },
         yRange: { min: -10, max: 10 }
       };
+      SCATTER_CONFIGS['chart-internal-external'] = {
+        x: graphConfigs[2].x_axis,
+        y: graphConfigs[2].y_axis,
+        xLabel: graphConfigs[2].x_label,
+        yLabel: graphConfigs[2].y_label,
+        xRange: { min: -10, max: 10 },
+        yRange: { min: -10, max: 10 }
+      };
 
       renderScatter('chart-left-right-internal', Object.assign({ parties: auParties }, SCATTER_CONFIGS['chart-left-right-internal']));
+      renderScatter('chart-left-right-external', Object.assign({ parties: auParties }, SCATTER_CONFIGS['chart-left-right-external']));
       renderScatter('chart-internal-external', Object.assign({ parties: auParties }, SCATTER_CONFIGS['chart-internal-external']));
 
       setupIntlToggle('toggle-intl-chart1', 'chart-left-right-internal', parties);
-      setupIntlToggle('toggle-intl-chart2', 'chart-internal-external', parties);
+      setupIntlToggle('toggle-intl-chart2', 'chart-left-right-external', parties);
+      setupIntlToggle('toggle-intl-chart3', 'chart-internal-external', parties);
 
       setupTimeline(parties);
     })

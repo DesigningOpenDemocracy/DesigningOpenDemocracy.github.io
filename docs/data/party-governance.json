@@ -1,6 +1,6 @@
 {
   "meta": {
-    "version": "2026-08-03-007",
+    "version": "2026-08-03-008",
     "description": "Multi-year governance structure and ideological scoring for Australian political parties, with international comparators. Latest scores are at the top level (for scatter plots); history arrays track changes over time (for timeline chart and the dated 'Scoring justification' section, which is rendered entirely from this data — there is no separate hand-written justification text anywhere else). Scores are approximate and deliberately coarse — see project page for full methodology.",
     "dimensions": {
       "left_right": {
@@ -2084,6 +2084,14 @@
       "y_axis": "internal_governance",
       "x_label": "Left → Right",
       "y_label": "Internal: Centralised ← → Distributed"
+    },
+    {
+      "id": "left-right-vs-external",
+      "title": "External Reform Advocacy vs. Ideology",
+      "x_axis": "left_right",
+      "y_axis": "external_reform",
+      "x_label": "Left → Right",
+      "y_label": "External: Oppose ← → Advocate"
     },
     {
       "id": "internal-vs-external",
