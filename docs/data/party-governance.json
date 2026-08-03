@@ -34,7 +34,7 @@
       "notability": 10,
       "logo": { "path": "/assets/party-logos/au/labor.svg", "license": "CC BY-SA 4.0", "source": "https://commons.wikimedia.org/wiki/File:Logo_of_Australian_Labor_Party.svg" },
       "status": "active",
-      "note": "Faction-controlled preselections despite formal OMOV rules; weighted parliamentarian votes in some selections; internal reform pushes (Leigh, Faulkner) stalled.",
+      "note": "Faction-controlled preselections despite formal one-member-one-vote rules; weighted parliamentarian votes in some selections; internal reform pushes (Leigh, Faulkner) stalled.",
       "history": [
         {
           "date": "1967-02", "left_right": -3, "internal_governance": 3, "external_reform": 1,
@@ -58,7 +58,7 @@
           "date": "2007-12", "left_right": -2, "internal_governance": 3, "external_reform": 1,
           "left_right_note": "No ideological shift from the Hawke/Keating era.",
           "left_right_sources": [],
-          "internal_note": "Rudd elected PM on a platform of internal party reform and greater member engagement; some state branches experiment with OMOV preselections, but factional control persists federally.",
+          "internal_note": "Rudd elected PM on a platform of internal party reform and greater member engagement; some state branches experiment with one-member-one-vote preselections, but factional control persists federally.",
           "internal_sources": [{ "label": "Kevin Rudd", "url": "https://en.wikipedia.org/wiki/Kevin_Rudd" }],
           "external_note": "No governance-reform advocacy at this stage.",
           "external_sources": []
@@ -76,7 +76,7 @@
           "date": "2013-07", "left_right": -2, "internal_governance": 4, "external_reform": 1,
           "left_right_note": "No ideological shift.",
           "left_right_sources": [],
-          "internal_note": "Rudd returns and pushes major internal reforms including stronger OMOV provisions for leadership and preselection; John Faulkner's reform agenda gains brief traction.",
+          "internal_note": "Rudd returns and pushes major internal reforms including stronger one-member-one-vote provisions for leadership and preselection; John Faulkner's reform agenda gains brief traction.",
           "internal_sources": [{ "label": "2013 Australian Labor Party leadership spill", "url": "https://en.wikipedia.org/wiki/2013_Australian_Labor_Party_leadership_spill" }],
           "external_note": "No governance-reform advocacy at this stage.",
           "external_sources": []
@@ -103,7 +103,7 @@
           "date": "2026-08", "left_right": -2, "internal_governance": 3, "external_reform": 4,
           "left_right_note": "Centre-left, social democratic.",
           "left_right_sources": [],
-          "internal_note": "Faction-controlled preselections persist despite formal OMOV rules; weighted parliamentarian votes remain in some selections; internal reform pushes from Andrew Leigh and John Faulkner have stalled.",
+          "internal_note": "Faction-controlled preselections persist despite formal one-member-one-vote rules; weighted parliamentarian votes remain in some selections; internal reform pushes from Andrew Leigh and John Faulkner have stalled.",
           "internal_sources": [{ "label": "Andrew Leigh calls out Labor's factional duopoly (The Conversation, 2023)", "url": "https://theconversation.com/andrew-leigh-calls-out-how-labors-factional-duopoly-is-undermining-the-party-209972" }],
           "external_note": "NACC has held 25+ private hearings and zero public hearings as of Dec 2025. Donation disclosure reforms were legislated in 2025.",
           "external_sources": [{ "label": "The New Daily, Dec 2025", "url": "https://www.thenewdaily.com.au/news/politics/australian-politics/2025/12/18/helen-haines-nacc" }]
@@ -235,13 +235,13 @@
       "notability": 3,
       "logo": { "path": "/assets/party-logos/au/victorian-socialists.webp", "license": "Public domain", "source": "https://commons.wikimedia.org/wiki/File:Victorian_Socialists_logo,_2025.webp" },
       "status": "active",
-      "note": "Constitutional OMOV (adopted Jan 2024); competitive conference elections with minority faction platform rights; electorate-based branch structure. No external reform advocacy — revolutionary, not reformist (does not believe parliament can be meaningfully reformed under capitalism).",
+      "note": "Constitutional one member, one vote (adopted Jan 2024); competitive conference elections with minority faction platform rights; electorate-based branch structure. No external reform advocacy — revolutionary, not reformist (does not believe parliament can be meaningfully reformed under capitalism).",
       "history": [
         {
           "date": "2022-01", "left_right": -9, "internal_governance": 4, "external_reform": 0,
           "left_right_note": "Far left, revolutionary socialist; abolition of capitalism as stated goal.",
           "left_right_sources": [],
-          "internal_note": "Estimate — prior to formal constitutional OMOV. Party had a de facto democratic culture and volunteer-based structure, but formal member-governance mechanisms were not yet codified in the constitution. Verify with party records.",
+          "internal_note": "Estimate — prior to formal constitutional one member, one vote. Party had a de facto democratic culture and volunteer-based structure, but formal member-governance mechanisms were not yet codified in the constitution. Verify with party records.",
           "internal_sources": [],
           "external_note": "No external governance-reform advocacy.",
           "external_sources": []
@@ -250,7 +250,7 @@
           "date": "2024-01", "left_right": -9, "internal_governance": 6, "external_reform": 0,
           "left_right_note": "No ideological shift.",
           "left_right_sources": [],
-          "internal_note": "Constitutional OMOV and party democracy adopted at the Jan 2024 conference. Aims document adopted as part of the new constitution: \"commitment to party democracy, freedom of debate and the principle of one member one vote.\"",
+          "internal_note": "Constitutional one member, one vote and party democracy adopted at the Jan 2024 conference. Aims document adopted as part of the new constitution: \"commitment to party democracy, freedom of debate and the principle of one member one vote.\"",
           "internal_sources": [{ "label": "Victorian Socialists — Our Aims", "url": "https://www.victoriansocialists.org.au/about/our-aims" }],
           "external_note": "No external governance-reform advocacy — deliberate: VS holds that parliament cannot be meaningfully reformed under capitalism.",
           "external_sources": []
@@ -268,7 +268,7 @@
           "date": "2026-08", "left_right": -9, "internal_governance": 7, "external_reform": 0,
           "left_right_note": "Far left, revolutionary socialist; abolition of capitalism as stated goal.",
           "left_right_sources": [],
-          "internal_note": "Reassessed from an earlier heartbeat finding of \"too thin\" after counter-feedback from a VS member pointing to the constitutional OMOV mechanism and its June 2025 competitive-faction test above.",
+          "internal_note": "Reassessed from an earlier heartbeat finding of \"too thin\" after counter-feedback from a VS member pointing to the constitutional one-member-one-vote mechanism and its June 2025 competitive-faction test above.",
           "internal_sources": [],
           "external_note": "No external governance-reform advocacy. This is deliberate: VS holds that parliament cannot be meaningfully reformed under capitalism, so external advocacy takes the form of building a democratic workers' movement rather than patching existing institutions. The party's aims document describes a democratic-socialist vision (recall rights, no special privileges for elected reps, political pluralism) but does not advocate reform of existing parliamentary institutions.",
           "external_sources": [{ "label": "Victorian Socialists — Our Aims", "url": "https://www.victoriansocialists.org.au/about/our-aims" }]
@@ -584,7 +584,7 @@
           "date": "1977-05", "left_right": 0, "internal_governance": 7, "external_reform": 6,
           "left_right_note": "Centre, founded as a liberal/moderate alternative to the two major blocs.",
           "left_right_sources": [{ "label": "Australian Democrats", "url": "https://en.wikipedia.org/wiki/Australian_Democrats" }],
-          "internal_note": "Founded by Don Chipp on an explicit government-accountability platform (\"keep the bastards honest\"). First Australian party to let the whole membership elect the leader by postal ballot and to put policy to binding member ballots — genuine OMOV, novel for its time.",
+          "internal_note": "Founded by Don Chipp on an explicit government-accountability platform (\"keep the bastards honest\"). First Australian party to let the whole membership elect the leader by postal ballot and to put policy to binding member ballots — genuine one member, one vote, novel for its time.",
           "internal_sources": [{ "label": "Australian Democrats", "url": "https://en.wikipedia.org/wiki/Australian_Democrats" }],
           "external_note": "Founding purpose was explicitly a government-accountability watchdog role, using the party's Senate balance-of-power position to scrutinise legislation.",
           "external_sources": [{ "label": "Australian Democrats", "url": "https://en.wikipedia.org/wiki/Australian_Democrats" }]
