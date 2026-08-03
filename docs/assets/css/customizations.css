@@ -1063,7 +1063,7 @@
 .chart-hint {
   font-size: 0.8rem;
   color: var(--md-default-fg-color--light);
-  margin: -0.5rem 0 0.75rem 0;
+  margin: 0.25rem 0 0.75rem 0;
 }
 
 .chart-container {
