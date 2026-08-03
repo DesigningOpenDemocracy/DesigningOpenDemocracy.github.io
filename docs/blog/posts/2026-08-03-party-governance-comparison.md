@@ -6,42 +6,108 @@ ai_assist: drafted
 categories:
   - project
 date: 2026-08-03
-draft: true
-summary: "Introducing the Australian Party Governance Comparison — a living reference scoring 21 parties on internal governance structure, external reform advocacy, and ideology. Centered −10 to +10 scale, 0 = typical major-party status quo as of 2026."
+summary: "We scored 21 political parties on how internally democratic they are and how much they push for governance reform. Centered −10 to +10 scale, 0 = typical major-party status quo as of 2026. Here's what we found."
 tags:
   - party-governance
   - methodology
   - accountability-framework
 ---
 
-# Australian Party Governance Comparison
+# We scored 21 parties on internal democracy and reform advocacy
 
-A new [Australian Party Governance Comparison](/projects/au-party-governance-comparison/) page is live. It scores 21 parties on three dimensions — internal governance, external reform advocacy, and ideology — on a centered −10 to +10 scale.
+The [Australian Party Governance Comparison](/projects/au-party-governance-comparison/) page is live. Three pairwise scatter graphs, a timeline, raw data table, and per-party scoring justification. 16 Australian parties plus 5 international comparators.
 
 <!-- more -->
 
-> *This post was drafted by Claude Code with AI-assisted research. A human editor
-> partially reviewed it for general accuracy. Verify specific claims against the
-> linked sources.*
+> *This post was drafted by Claude Code with AI-assisted research. A human editor partially reviewed it for general accuracy. Verify specific claims against the linked sources.*
 
-**Main lesson** —
+## The short version
 
-- 0 anchors at the typical major-party status quo (faction-controlled, some member input). Negative = more centralised, positive = more distributed. This puts Liberal at 0 and Labor at +1.5 — both in the "faction-controlled" band — while PVV sits at −9 (single-leader) and Your Party at +8.5 (sortition-based).
-- Negative external reform scores mean active opposition, not just indifference. Liberal (−3, opposes reform) and One Nation (−6, actively undermines) land in different negative bands.
-- The scale is qualitative judgment, not a rubric. There's an open invitation for someone to build a more academically rigorous matrix approach on top of the same evidence.
+We wanted to make the [Accountability Framework](/projects/accountability-framework/)'s "how people participate in governance" test concrete. So we scored every party on three things:
 
-## Party selection
+- **Internal governance**: who actually makes decisions inside the party
+- **External reform advocacy**: does the party push for changing how governance works (voting systems, accountability, transparency)
+- **Ideology**: standard left–right
 
-The detailed party selection rationale lives here rather than on the comparison page:
+The scale runs −10 to +10 on all three axes. 0 is anchored at the typical major-party status quo as of 2026: faction-controlled internal structure, no position on external reform.
 
-16 Australian parties plus 5 international comparators. 11 of the Australian parties are active; 5 are historical/deregistered and included for comparison — Flux and MiVote for governance innovation, and the Democratic Labor Party (1955–1978), United Australia Party (1931–1945), and Australia Party (1969–1986) as notable earlier cases spanning a wider slice of Australian party history (an externally-directed minor party, a major governing predecessor of the modern Liberals, and a civil-liberties minor party that fed directly into the Australian Democrats). Fusion Party is included as the federated home Pirate Party Australia merged into in 2021 — see both entries' history for the relationship. The Libertarian Party (formerly the Liberal Democratic Party) was added specifically to test whether right-of-centre parties score low on external reform generally, or only the populist ones already covered do — see its scoring note.
+Negative = more centralised / opposes reform. Positive = more distributed / advocates reform.
 
-Selection: all Australian parties assessed in the internal heartbeat AU party audit with sufficient documentation, plus the historical/Fusion/Libertarian additions above (sourced independently from Wikipedia, not from the heartbeat audit).
+A few things jump out:
 
-The five international comparators — Your Party (UK), Podemos (Spain), Five Star Movement (Italy), Pirate Party Germany, and the Party for Freedom (Netherlands) — are hidden by default on graphs 1, 2, and 3 (toggle button next to each chart) so the primary Australian comparison isn't diluted for viewers who don't want it; they're sourced from Wikipedia and included specifically because each documents a concrete, citable internal-governance data point (sortition, mass member votes on party structure, an online voting platform, binding liquid democracy, or — in the PVV's case — a deliberately closed single-member structure) worth comparing against the Australian parties' more conventional structures. The PVV was added to test internationally whether right-wing populist parties pattern the same way the Australian right-of-centre parties do on internal governance; see [its scoring note](/projects/au-party-governance-comparison/#party-for-freedom-netherlands) and the internal heartbeat research note for the fuller picture, including Reform UK's unresolved 2025 shift away from private-company ownership.
+- Liberal sits at 0 and Labor at +1.5 — both in the "faction-controlled with some member input" band. That's the anchor. One Member One Vote on paper, factional deals in practice.
+- PVV sits at −9 on internal governance. Single leader, no formal membership. One Nation at −5.
+- Your Party (UK) at +8.5 — sortition-based candidate selection. Flux at +7 — token delegation economy.
+- One Nation scores −6 on external reform (actively undermines democratic norms), the Greens +8 (governance reform is central to platform).
 
-## Why this page exists
+The numbers are qualitative judgment, not a rubric. We're upfront about that. Someone could build a real matrix-based methodology on top of the same evidence.
 
-The [Accountability Framework](/projects/accountability-framework/) is a qualitative standard. It asks *"is this org working on how people participate in governance?"* — a question whose answer is not always yes/no but often *"in what sense, and on which side of its own boundary?"* The framework itself acknowledges this: its "what this means in practice" section does not clarify whether prefigurative internal democracy qualifies, and its diagnostic tools are calibrated for adversary-style accountability systems.
+**If you're an academic:** we'd love to see this done properly. Take our vibes as a starting point, build a weighted-rubric version with inter-rater calibration, and publish the comparison. It'd be genuinely interesting to see how far off we are.
 
-The comparison page makes the ambiguity quantitative. A party with high internal democracy but zero external reform advocacy (prefigurative practice) tells a different story than one with strong external advocacy but weak internal structure (reform-from-outside) — and the framework's current formulation does not resolve which qualifies more strongly, or whether both do. Whether any of these should qualify for the Democracy Landscape is the open editorial question the heartbeat entry surfaced. The page helps answer it by making the data inspectable rather than buried in prose.
+[Go look at the graphs](/projects/au-party-governance-comparison/) and tell us what we got wrong. PRs welcome.
+
+---
+
+## The full methodology
+
+If you want the mechanics, here's how it works.
+
+### The scale
+
+We used to have a 0–10 scale where most parties clustered at 2–3. That made the visual centre meaningless — you couldn't distinguish "less democratic than the norm" from "about average." The new scale fixes that.
+
+**Internal governance bands:**
+
+| Score | Description |
+|---|---|
+| −10 to −8 | Single-leader, no formal membership. Party IS the leader. |
+| −7 to −5 | Leader-appointed. Membership exists but leader controls everything. |
+| −4 to −2 | Narrow elite circle. Membership is symbolic. |
+| −1 | Leader-dominated but with some elite input. |
+| 0 | Elite/faction-controlled with some member input (typical major party as of 2026). |
+| 1–3 | One member, one vote on paper. Mixed or inconsistent practice. |
+| 4–5 | Genuine OMOV. Competitive, with minority rights. |
+| 6–7 | Novel mechanisms alongside standard OMOV. |
+| 8–10 | Fully novel: sortition, liquid democracy, direct member control. |
+
+**External reform bands:**
+
+| Score | Description |
+|---|---|
+| −10 to −8 | Dismantles. Seeks to replace democracy with authoritarian rule. |
+| −7 to −5 | Undermines. Attacks electoral integrity, accountability bodies, media. |
+| −4 to −2 | Opposes reform. Blocks or weakens accountability mechanisms. |
+| −1 | Disfavours reform. Publicly sceptical, controls damage. |
+| 0 | No position or indifferent. |
+| 1–3 | Platform mentions only. No documented action. |
+| 4–5 | Specific policy commitments. Some legislative or campaign action. |
+| 6–7 | Sustained campaigns with documented outcomes on multiple fronts. |
+| 8–10 | Governance reform is a major platform pillar or the party's reason for existing. |
+
+Both axes are symmetric: 4 negative bands, a zero band, 4 positive bands. The negative side has granularity because "opposes reform" isn't one thing.
+
+### Party selection
+
+21 parties total. 16 Australian (11 active, 5 historical or deregistered) plus 5 international comparators.
+
+Historical parties are included because Flux and MiVote are genuinely interesting governance experiments (even though both deregistered), and the DLP, UAP, and Australia Party give a wider slice of Australian party history for comparison.
+
+The Libertarian Party (formerly Liberal Democratic Party) was added specifically to check whether right-of-centre parties score low on external reform in general, or only the populist ones. Turns out it's the latter — the Libertarian Party scores +1, not negative.
+
+International comparators (Your Party, Podemos, Five Star Movement, Pirate Party Germany, Party for Freedom) are hidden by default on the scatter graphs. Toggle them on with the button next to each chart. Each documents a specific internal-governance data point worth comparing: sortition, mass member votes on party structure, online voting platforms, binding liquid democracy, or deliberately closed single-member structures.
+
+The PVV was included specifically to test whether right-wing populist parties pattern the same way internationally on internal governance. See its scoring note and the internal heartbeat research note for the fuller picture, including Reform UK's unresolved 2025 shift away from private-company ownership.
+
+### Why this page exists
+
+The Accountability Framework asks whether an org works on how people participate in governance. That question doesn't have a clean yes/no answer, and the framework itself acknowledges this.
+
+A party with strong internal democracy but zero external reform advocacy is answering the question differently than one with strong external advocacy but weak internal structure. Whether either, both, or neither should qualify for the Democracy Landscape is the unresolved editorial question. The comparison page makes that visible rather than burying it in prose.
+
+### Scoring approach
+
+Qualitative judgment on documented practice, not platform statements. Not a rubric. Each party's history array in the data file is a dated audit trail — every score change carries its own note and source links. The justification section on the page is rendered live from that data, so there's no separate write-up to fall out of sync.
+
+To rescore a party or add a new one, edit `party-governance.json` directly. The graphs, table, and justification text all update from it at build time.
+
+[Page](/projects/au-party-governance-comparison/) · [Data file](/data/party-governance.json) · [PRs welcome](https://github.com/DesigningOpenDemocracy/DesigningOpenDemocracy.github.io)
