@@ -1134,11 +1134,13 @@
 
 .gov-just-logo {
   float: right;
-  max-width: 80px;
-  max-height: 40px;
+  max-width: 100px;
+  height: 36px;
+  width: auto;
   margin: 0 0 0.5rem 1rem;
   filter: brightness(0) invert(1);
   opacity: 0.85;
+  object-fit: contain;
 }
 
 .gov-just-header {
@@ -1221,6 +1223,7 @@
 
 .timeline-pill.has-logo {
   background-color: #fff;
+  background-size: 70%;
   border-color: var(--md-default-fg-color--lightest);
 }
 
