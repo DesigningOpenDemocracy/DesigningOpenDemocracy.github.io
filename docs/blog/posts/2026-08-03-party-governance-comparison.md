@@ -104,11 +104,13 @@ The PVV was included specifically to test whether right-wing populist parties pa
 
 The Accountability Framework asks whether an org works on how people participate in governance. That question doesn't have a clean yes/no answer, and the framework itself acknowledges this.
 
-A party with strong internal democracy but zero external reform advocacy is answering the question differently than one with strong external advocacy but weak internal structure. Whether either, both, or neither should qualify for the Democracy Landscape is the unresolved editorial question. The comparison page makes that visible rather than burying it in prose.
+A party with strong internal democracy but zero external reform advocacy is answering the question differently than one with strong external advocacy but weak internal structure. Whether either should qualify for the Democracy Landscape at all is still an open editorial question we're chewing on.
 
 ### Scoring approach
 
-Qualitative judgment on documented practice, not platform statements. Not a rubric. Each party's history array in the data file is a dated audit trail — every score change carries its own note and source links. The justification section on the page is rendered live from that data, so there's no separate write-up to fall out of sync.
+We scored based on what parties have actually done, not what their platforms say. The data file records every score change with a note and sources — there's a dated paper trail for each party. If a score looks wrong, check the justification entry first and then tell us why.
+
+Each party gets a dated audit trail in `party-governance.json` with corresponding justification. 
 
 To rescore a party or add a new one, edit `party-governance.json` directly. The graphs, table, and justification text all update from it at build time.
 
