@@ -20,8 +20,6 @@ Loomio, DemocracyOS, Pol.is, Decide Madrid, Decidim, Democracy Earth, RadicalxCh
 
 <!-- more -->
 
-> *This post was drafted by Claude Code with AI-assisted research. A human editor partially reviewed it for general accuracy. Verify specific claims against the linked sources.*
-
 **Main lesson** —
 
 - Every platform in this wave solved the same first half of the problem — surfacing genuine agreement at scale — and struggled with the same second half: converting that agreement into a binding decision. The tools that survived are the ones institutions adopted formally, not the ones that stayed purest to their protest-movement origins.

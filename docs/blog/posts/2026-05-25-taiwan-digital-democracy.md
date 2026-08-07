@@ -19,8 +19,6 @@ Taiwan is frequently cited as a place where digital deliberation actually worked
 
 <!-- more -->
 
-> *This post was drafted by Claude Code with AI-assisted research. A human editor partially reviewed it for general accuracy. Verify specific claims against the linked sources.*
-
 ## The criteria DOD was asking about in 2017
 
 When DOD first discussed Pol.is in [August 2017](../2017-08-25.md), the group ran through a set of evaluation criteria for democratic technologies: *who decides what the questions are? does it accrue decisions, or do we have to keep re-deciding the same things? will it tend to crush minorities? will it be vulnerable to corruption? what's the human bandwidth cost?*

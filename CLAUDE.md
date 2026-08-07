@@ -162,14 +162,15 @@ documents) if:
    - `reviewed`: the AI didn't materially author content, so don't add it to `authors:` just
      because the marker is set — list only the human/`DOD`. The `ai_assist: reviewed` marker
      itself is what discloses the AI's editing role.
-2. The post body must open with this disclaimer block (immediately after `<!-- more -->`):
-   ```
-   > *This post was drafted by Claude Code with AI-assisted research. A human editor
-   > partially reviewed it for general accuracy. Verify specific claims against the
-   > linked sources.*
-   ```
-3. Every factual claim must carry a linked source. No unsourced assertions.
-4. A human must review and merge the PR.
+2. Every factual claim must carry a linked source. No unsourced assertions.
+3. A human must review and merge the PR.
+
+   No inline disclaimer paragraph is needed in the post body — the `ai_assist` level
+   set in frontmatter renders as a badge in the post's metadata sidebar (via
+   `docs/overrides/blog-post.html`), which is where this now gets disclosed. An
+   inline disclaimer used to be required here too; it was dropped as redundant once
+   the sidebar badge existed. If you're touching an older post that still carries the
+   old disclaimer paragraph, feel free to remove it while you're in there.
 
 `ai_assist:` (any level) is distinct from `ai_generated: true` (sync posts) — that boolean is
 a load-bearing flag for the heartbeat log's direct-to-main push path, not a display preference,
@@ -178,10 +179,10 @@ so leave it as-is there rather than migrating it to `ai_assist: generated`.
 **Convention — main lesson (optional):**
 
 Each blog post should include a `**Main lesson** —` section positioned directly after
-`<!-- more -->` (and after the disclaimer block, if AI-assisted). Format as up to 3
-short bullet points answering "what should a reader walk away with?" — not a summary
-of what happened, but why it matters. Omit for short posts, podcast announcements,
-and maintenance notes where there is no clear lesson.
+`<!-- more -->`. Format as up to 3 short bullet points answering "what should a
+reader walk away with?" — not a summary of what happened, but why it matters. Omit
+for short posts, podcast announcements, and maintenance notes where there is no
+clear lesson.
 
 Periodic maintenance sync posts do **not** go here — see Heartbeat log below. They
 get their own blog instance and feed so the human-curated blog and its RSS feed
