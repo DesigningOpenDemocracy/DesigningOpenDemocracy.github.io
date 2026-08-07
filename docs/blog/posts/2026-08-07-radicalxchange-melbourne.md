@@ -21,17 +21,25 @@ location:
 
 ![An invitation to meet RadicalxChange Foundation in Melbourne — Thursday 27 August, 6-8pm, Collingwood, presented with Small Giants Academy and Today](2026-08-07-radicalxchange-melbourne-event-banner.jpg)
 
-If you're in Melbourne on **Thursday 27 August**, [RSVP to meet RadicalxChange Foundation](https://events.humanitix.com/radicalxchange-foundation-in-melbourne) — the international movement behind quadratic voting, quadratic funding, and the "Plurality" philosophy — as it launches its Australian chapter.
+If you're in Melbourne on **Thursday 27 August**, come meet RadicalxChange Foundation — the international movement behind quadratic voting, quadratic funding, and the "Plurality" philosophy — as it launches its Australian chapter.
+
+<p style="text-align:center; margin: 1.5rem 0;">
+  <a class="hero-cta-btn hero-cta-primary" href="https://events.humanitix.com/radicalxchange-foundation-in-melbourne" target="_blank" rel="noopener">RSVP for 27 August →</a>
+</p>
 
 <!-- more -->
 
 ## Go if you can
 
-["An invitation to meet RadicalxChange Foundation in Melbourne"](https://events.humanitix.com/radicalxchange-foundation-in-melbourne) runs **6–8pm, Thursday 27 August 2026**, at Today (Level 8/54 Wellington Street, Collingwood), co-hosted with Small Giants Academy.[^humanitix] [RSVP here.](https://events.humanitix.com/radicalxchange-foundation-in-melbourne)
+["An invitation to meet RadicalxChange Foundation in Melbourne"](https://events.humanitix.com/radicalxchange-foundation-in-melbourne) runs **6–8pm, Thursday 27 August 2026**, at Today (Level 8/54 Wellington Street, Collingwood), co-hosted with Small Giants Academy.[^humanitix]
 
 It's a conversation between **Jess Scully**, RadicalxChange's Executive Director, and **Tamsin Jones**, on "the role civic tech can play in building common knowledge and moral legibility to cooperate across difference" — with examples spanning polarisation-bridging on urban density in Sydney, climate risk response in Colorado, faith communities shaping AI values, and community voice in data-centre governance.[^humanitix] Tickets ask for a $15 catering contribution, described by organisers as not a barrier to attending.[^humanitix]
 
 Worth going for: this is a brand-new Melbourne chapter forming right now, not an established local group — an early chance to help shape it, and to talk directly with the people building quadratic voting/funding and Plurality rather than just reading about them.
+
+<p style="text-align:center; margin: 1.5rem 0;">
+  <a class="hero-cta-btn hero-cta-primary" href="https://events.humanitix.com/radicalxchange-foundation-in-melbourne" target="_blank" rel="noopener">RSVP for 27 August →</a>
+</p>
 
 A few DOD members are planning to go. If you're headed along too, say so in [DOD's Telegram](https://t.me/joinchat/HNk_UBX8A7jBPJPbAZU5Zg) so we can find each other on the night.
 
