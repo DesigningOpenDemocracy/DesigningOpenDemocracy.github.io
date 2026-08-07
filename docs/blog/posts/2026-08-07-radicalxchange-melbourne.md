@@ -19,6 +19,8 @@ location:
   name: Collingwood, Melbourne, Australia
 ---
 
+![An invitation to meet RadicalxChange Foundation in Melbourne — Thursday 27 August, 6-8pm, Collingwood, presented with Small Giants Academy and Today](2026-08-07-radicalxchange-melbourne-event-banner.jpg)
+
 If you're in Melbourne on **Thursday 27 August**, [RSVP to meet RadicalxChange Foundation](https://events.humanitix.com/radicalxchange-foundation-in-melbourne) — the international movement behind quadratic voting, quadratic funding, and the "Plurality" philosophy — as it launches its Australian chapter.
 
 <!-- more -->
@@ -53,7 +55,7 @@ DOD doesn't endorse specific mechanisms, but quadratic voting/funding and Plural
 
 ## Sources & further reading
 
-- [An invitation to meet RadicalxChange Foundation in Melbourne](https://events.humanitix.com/radicalxchange-foundation-in-melbourne) — Humanitix event listing
+- [An invitation to meet RadicalxChange Foundation in Melbourne](https://events.humanitix.com/radicalxchange-foundation-in-melbourne) — Humanitix event listing (source of the banner image above, the organisers' own share graphic for this event)
 - [RadicalxChange Foundation](../../organisations/radicalxchange.md) — DOD Democracy Landscape entry
 - [Taiwan's digital democracy experiment: what it shows, what it doesn't](2026-05-25-taiwan-digital-democracy.md) — DOD, May 2026
 - ["We are already the super intelligence we are looking for"](https://www.pioneerspost.com/news-views/20251106/we-are-already-the-super-intelligence-we-are-looking-audrey-tang-and-others-big) — Pioneers Post, on Audrey Tang at Small Giants' Wisdom & Action Forum
