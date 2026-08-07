@@ -4,6 +4,7 @@ type: platform
 status: active
 country: ES
 website: https://consuldemocracy.org
+logo: /assets/org-logos/consul-democracy.png
 contact:
   email: info@consulfoundation.org
   source: https://consuldemocracy.org/about

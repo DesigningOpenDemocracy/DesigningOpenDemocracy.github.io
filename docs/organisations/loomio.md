@@ -4,6 +4,7 @@ type: platform
 status: active
 country: NZ
 website: https://www.loomio.com
+logo: /assets/org-logos/loomio.png
 contact:
   email: contact@loomio.org
   source: https://www.loomio.com/contact

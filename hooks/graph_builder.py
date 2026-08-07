@@ -93,6 +93,7 @@ def on_page_context(context, *, page, config, nav):
             'status': page.meta.get('status', ''),
             'org_type': page.meta.get('type', ''),
             'activity_date': _best_activity_date(page.meta.get('activity')),
+            'logo': page.meta.get('logo', ''),
             'url': f'/{url}',
         }
         for c in (page.meta.get('concepts') or []):

@@ -52,6 +52,7 @@ def load_orgs():
             "country": m.get("country", ""),
             "type": m.get("type", ""),
             "website": m.get("website", ""),
+            "logo": m.get("logo", ""),
             "summary": (m.get("summary") or "").strip().strip('"'),
             "concepts": m.get("concepts") or [],
             "latitude": loc.get("latitude", ""),
@@ -78,7 +79,7 @@ def _best_activity(activity_dict):
 
 def write_orgs_csv(orgs):
     path = os.path.join(OUT_DIR, "organisations.csv")
-    fields = ["slug", "title", "status", "country", "type", "website",
+    fields = ["slug", "title", "status", "country", "type", "website", "logo",
               "summary", "concepts", "latitude", "longitude", "location_name",
               "rss_feed", "ics_feed", "contact_email", "contact_phone", "contact_form",
               "activity_date", "activity_method", "last_checked"]

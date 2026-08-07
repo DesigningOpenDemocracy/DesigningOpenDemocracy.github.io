@@ -4,6 +4,7 @@ type: platform
 status: active
 country: ES
 website: https://decidim.org
+logo: /assets/org-logos/decidim.svg
 contact:
   email: hola@decidim.org
   form: https://decidim.org/contact
