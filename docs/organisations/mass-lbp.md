@@ -17,6 +17,7 @@ location:
   latitude: 43.6532
   longitude: -79.3832
   name: Toronto, Canada
+  precision: city
 last_checked: "2026-05-29"
 activity:
   social:

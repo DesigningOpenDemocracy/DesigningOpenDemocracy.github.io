@@ -14,6 +14,7 @@ location:
   latitude: 48.2082
   longitude: 16.3738
   name: Vienna, Austria
+  precision: city
 concepts:
   - liquid-democracy
   - direct-democracy

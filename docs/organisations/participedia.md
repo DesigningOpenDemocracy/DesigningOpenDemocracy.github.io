@@ -15,6 +15,7 @@ location:
   latitude: 49.2827
   longitude: -123.1207
   name: Vancouver, Canada
+  precision: city
 concepts:
   - citizens-assembly
   - deliberative-democracy

@@ -18,6 +18,7 @@ location:
   latitude: -33.8688
   longitude: 151.2093
   name: Sydney, Australia
+  precision: city
 activity:
   dod:
     date: 2026-07-30

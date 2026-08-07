@@ -19,6 +19,7 @@ location:
   latitude: 51.5074
   longitude: -0.1278
   name: London, UK
+  precision: city
 last_checked: "2026-05-29"
 rss_feed: https://www.mysociety.org/feed
 activity:

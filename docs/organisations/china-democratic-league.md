@@ -13,6 +13,7 @@ location:
   latitude: 39.9042
   longitude: 116.4074
   name: Beijing, China
+  precision: city
 concepts:
   - vanguardism
   - democracy

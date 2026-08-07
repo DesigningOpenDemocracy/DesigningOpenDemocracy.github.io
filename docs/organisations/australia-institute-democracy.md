@@ -15,6 +15,7 @@ location:
   latitude: -35.2809
   longitude: 149.13
   name: Canberra, Australia
+  precision: city
 concepts:
   - accountability-sink
   - constitutional-democracy

@@ -15,6 +15,7 @@ location:
   latitude: 55.7558
   longitude: 37.6176
   name: Moscow, Russia (origin; operates in exile)
+  precision: city
 concepts:
   - accountability-sink
   - radical-transparency

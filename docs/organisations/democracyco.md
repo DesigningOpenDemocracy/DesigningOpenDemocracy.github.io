@@ -15,6 +15,7 @@ location:
   latitude: -34.9285
   longitude: 138.6007
   name: Adelaide, Australia
+  precision: city
 concepts:
   - citizens-assembly
   - deliberative-democracy

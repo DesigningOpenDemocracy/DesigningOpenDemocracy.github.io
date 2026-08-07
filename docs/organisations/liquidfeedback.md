@@ -20,6 +20,7 @@ location:
   latitude: 52.5200
   longitude: 13.4050
   name: Berlin, Germany
+  precision: city
 activity:
   manual:
     date: 2024-01-01

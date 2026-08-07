@@ -14,6 +14,7 @@ location:
   latitude: -33.8688
   longitude: 151.2093
   name: Sydney, Australia
+  precision: city
 concepts:
   - representative-democracy
   - e-government
