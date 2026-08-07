@@ -25,8 +25,6 @@ If you're in Melbourne on **Thursday 27 August**, [RSVP to meet RadicalxChange F
 
 <!-- more -->
 
-> *This post was drafted by Claude Code with AI-assisted research. A human editor partially reviewed it for general accuracy. Verify specific claims against the linked sources.*
-
 ## Go if you can
 
 ["An invitation to meet RadicalxChange Foundation in Melbourne"](https://events.humanitix.com/radicalxchange-foundation-in-melbourne) runs **6–8pm, Thursday 27 August 2026**, at Today (Level 8/54 Wellington Street, Collingwood), co-hosted with Small Giants Academy.[^humanitix] [RSVP here.](https://events.humanitix.com/radicalxchange-foundation-in-melbourne)
