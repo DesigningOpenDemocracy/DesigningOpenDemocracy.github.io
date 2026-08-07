@@ -4,6 +4,7 @@ type: research
 status: active
 country: EU
 website: https://www.demnext.org
+logo: /assets/org-logos/democracy-next.png
 contact:
   email: hello@demnext.org
   source: https://www.demnext.org/contact

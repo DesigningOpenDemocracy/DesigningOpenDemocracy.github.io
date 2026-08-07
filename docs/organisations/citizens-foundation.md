@@ -4,6 +4,7 @@ type: platform
 status: active
 country: IS
 website: https://citizens.is
+logo: /assets/org-logos/citizens-foundation.png
 contact:
   email: citizens@citizens.is
   source: https://citizens.is/contact

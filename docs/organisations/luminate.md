@@ -4,6 +4,7 @@ type: philanthropy
 status: active
 country: GB
 website: https://www.luminategroup.com
+logo: /assets/org-logos/luminate.png
 contact:
   email: hello@luminategroup.com
   source: https://www.luminategroup.com/contact-us

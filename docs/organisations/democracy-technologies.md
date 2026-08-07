@@ -4,6 +4,7 @@ type: research
 status: active
 country: AT
 website: https://democracy-technologies.org
+logo: /assets/org-logos/democracy-technologies.png
 contact:
   email: contact@democracy-technologies.org
   source: https://democracy-technologies.org/about

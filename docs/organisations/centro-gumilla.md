@@ -4,6 +4,7 @@ type: research
 status: active
 country: VE
 website: https://gumilla.org
+logo: /assets/org-logos/centro-gumilla.png
 contact:
   email: comunicacionesgumilla@gmail.com
   source: https://gumilla.org/contact

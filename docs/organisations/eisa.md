@@ -4,6 +4,7 @@ type: research
 status: active
 country: ZA
 website: https://www.eisa.org
+logo: /assets/org-logos/eisa.jpg
 contact:
   email: info@eisa.org
   phone: "+27113816000"

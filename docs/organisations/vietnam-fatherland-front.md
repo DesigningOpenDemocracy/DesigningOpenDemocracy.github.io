@@ -4,6 +4,7 @@ type: governance
 status: active
 country: VN
 website: https://mattran.org.vn
+logo: /assets/org-logos/vietnam-fatherland-front.png
 contact:
   email: tapchimattrantoquoc@gmail.com
   source: https://mattran.org.vn/contact/

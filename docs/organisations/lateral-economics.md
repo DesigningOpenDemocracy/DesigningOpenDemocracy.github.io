@@ -4,6 +4,7 @@ type: research
 status: active
 country: AU
 website: https://www.lateraleconomics.com.au
+logo: /assets/org-logos/lateral-economics.webp
 contact:
   email: mail@lateraleconomics.com.au
   phone: "+61 403 077 732"

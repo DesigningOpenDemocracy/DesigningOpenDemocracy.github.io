@@ -4,6 +4,7 @@ type: governance
 status: active
 country: SY
 website: https://kongra-star.org/eng/
+logo: /assets/org-logos/kongreya-star.png
 contact:
   email: info@kongra-star.org
   form: https://kongra-star.org/eng/contact/

@@ -4,6 +4,7 @@ type: advocacy
 status: active
 country: AU
 website: https://www.prsa.org.au
+logo: /assets/org-logos/prsa.jpg
 contact:
   email: info@prsa.org.au
   source: https://www.prsa.org.au/nat_cont.html

@@ -4,6 +4,7 @@ type: platform
 status: active
 country: KE
 website: https://www.ushahidi.com
+logo: /assets/org-logos/ushahidi.png
 contact:
   form: https://www.ushahidi.com/contact
   source: https://www.ushahidi.com/contact

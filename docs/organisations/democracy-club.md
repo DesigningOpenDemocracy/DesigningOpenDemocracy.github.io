@@ -4,6 +4,7 @@ type: civic-tech
 status: active
 country: GB
 website: https://democracyclub.org.uk
+logo: /assets/org-logos/democracy-club.svg
 contact:
   email: hello@democracyclub.org.uk
   source: https://democracyclub.org.uk/contact

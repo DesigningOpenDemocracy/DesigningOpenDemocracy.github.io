@@ -4,6 +4,7 @@ type: advocacy
 status: active
 country: PS
 website: https://www.aman-palestine.org/en
+logo: /assets/org-logos/aman-palestine.jpg
 contact:
   email: info@aman-palestine.org
   form: https://www.aman-palestine.org/contact-us

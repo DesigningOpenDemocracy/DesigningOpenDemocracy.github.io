@@ -4,6 +4,7 @@ type: practice
 status: active
 country: AU
 website: https://mosaiclab.com.au
+logo: /assets/org-logos/mosaiclab.webp
 contact:
   email: info@mosaiclab.com.au
   phone: "0422 830 650"

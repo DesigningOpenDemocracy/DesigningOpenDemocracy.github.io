@@ -4,6 +4,7 @@ type: party
 status: active
 country: GB
 website: https://www.yourparty.uk
+logo: /assets/org-logos/your-party.svg
 contact:
   email: herewego@yourparty.uk
   source: https://www.yourparty.uk/about

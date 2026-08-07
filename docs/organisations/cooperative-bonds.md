@@ -4,6 +4,7 @@ type: practice
 status: active
 country: AU
 website: https://bonds.coop
+logo: /assets/org-logos/cooperative-bonds.png
 contact:
   email: hello@bonds.coop
   phone: "+61 418 223 517"

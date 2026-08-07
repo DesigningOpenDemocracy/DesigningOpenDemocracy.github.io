@@ -4,6 +4,7 @@ type: research
 status: active
 country: BO
 website: https://fundacionsolon.org
+logo: /assets/org-logos/fundacion-solon.png
 contact:
   email: info@fundacionsolon.org
   source: https://fundacionsolon.org/contact

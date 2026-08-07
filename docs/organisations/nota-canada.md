@@ -4,6 +4,7 @@ type: party
 status: active
 country: CA
 website: https://nota.ca
+logo: /assets/org-logos/nota-canada.png
 contact:
   email: info@nota.ca
   form: https://nota.ca/contact

@@ -4,6 +4,7 @@ type: advocacy
 status: active
 country: CN
 website: https://www.hkdc.us
+logo: /assets/org-logos/hkdc.png
 contact:
   email: info@hkdc.us
   source: https://www.hkdc.us/about

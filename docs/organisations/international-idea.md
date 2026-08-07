@@ -4,6 +4,7 @@ type: research
 status: active
 country: SE
 website: https://www.idea.int
+logo: /assets/org-logos/international-idea.png
 contact:
   phone: "+46 8 698 3700"
   form: https://www.idea.int/contact

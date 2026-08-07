@@ -4,6 +4,7 @@ type: cooperative
 status: active
 country: AU
 website: https://earthworker.coop
+logo: /assets/org-logos/earthworker-cooperative.png
 contact:
   form: https://earthworker.coop/contact
   source: https://earthworker.coop/contact

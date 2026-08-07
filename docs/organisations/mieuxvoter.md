@@ -4,6 +4,7 @@ type: civil-society
 status: active
 country: FR
 website: https://mieuxvoter.fr
+logo: /assets/org-logos/mieuxvoter.png
 contact:
   form: https://mieuxvoter.fr/contact
   source: https://mieuxvoter.fr/contact

@@ -4,6 +4,7 @@ type: advocacy
 status: active
 country: AU
 website: https://canberra-alliance.org.au
+logo: /assets/org-logos/capad.jpg
 contact:
   email: secretary@canberra-alliance.org.au
   source: https://canberra-alliance.org.au

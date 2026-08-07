@@ -4,6 +4,7 @@ type: advocacy
 status: active
 country: DE
 website: https://www.democracy-international.org
+logo: /assets/org-logos/democracy-international.png
 contact:
   email: contact@democracy-international.org
   phone: "+49 221 669 66 50"

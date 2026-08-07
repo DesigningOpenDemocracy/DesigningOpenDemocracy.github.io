@@ -4,6 +4,7 @@ type: civic tech
 status: active
 country: AU
 website: https://www.buildaballot.org.au
+logo: /assets/org-logos/build-a-ballot.png
 contact:
   email: tool@buildaballot.org.au
   source: https://www.buildaballot.org.au

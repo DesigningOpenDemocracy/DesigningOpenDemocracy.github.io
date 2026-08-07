@@ -4,6 +4,7 @@ type: media
 status: active
 country: AU
 website: https://www.lamestream.com.au/
+logo: /assets/org-logos/lamestream.png
 contact:
   email: contact@lamestream.com.au
   source: https://www.lamestream.com.au/about

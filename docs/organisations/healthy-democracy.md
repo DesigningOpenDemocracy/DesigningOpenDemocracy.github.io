@@ -4,6 +4,7 @@ type: practice
 status: active
 country: US
 website: https://healthydemocracy.org
+logo: /assets/org-logos/healthy-democracy.svg
 contact:
   email: info@healthydemocracy.org
   phone: "+1 503 841 6865"

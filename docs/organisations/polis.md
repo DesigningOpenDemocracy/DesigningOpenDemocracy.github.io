@@ -4,6 +4,7 @@ type: platform
 status: active
 country: US
 website: https://pol.is
+logo: /assets/org-logos/polis.png
 contact:
   email: hello@compdemocracy.org
   source: https://pol.is/tos

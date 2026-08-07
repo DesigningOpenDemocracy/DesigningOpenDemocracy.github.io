@@ -4,6 +4,7 @@ type: research
 status: active
 country: NG
 website: https://www.cddwestafrica.org
+logo: /assets/org-logos/cdd-west-africa.png
 contact:
   email: cddabv@cddwestafrica.org
   source: https://www.cddwestafrica.org/contact-us
