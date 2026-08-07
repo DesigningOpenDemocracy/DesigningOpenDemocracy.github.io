@@ -33,6 +33,8 @@ It's a conversation between **Jess Scully**, RadicalxChange's Executive Director
 
 Worth going for: this is a brand-new Melbourne chapter forming right now, not an established local group — an early chance to help shape it, and to talk directly with the people building quadratic voting/funding and Plurality rather than just reading about them.
 
+A few DOD members are planning to go. If you're headed along too, say so in [DOD's Telegram](https://t.me/joinchat/HNk_UBX8A7jBPJPbAZU5Zg) so we can find each other on the night.
+
 ## Who's behind it
 
 RadicalxChange was founded by economist [E. Glen Weyl](https://glenweyl.com/) in 2018, after his book *Radical Markets* sparked wider discussion about market-based mechanisms for democratic participation.[^glenweyl] Its central contributions are **quadratic voting** (letting people express how strongly they feel about something, not just which way they lean) and **quadratic funding** (a matching-funds formula that favours breadth of support over the size of any single donor). Both have been piloted in Colorado, Nashville, New York, the UK, Brazil, and Sydney.[^rxc-about]
