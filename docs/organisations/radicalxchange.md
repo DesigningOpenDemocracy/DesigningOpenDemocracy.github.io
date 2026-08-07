@@ -4,6 +4,7 @@ type: civic tech
 status: active
 country: US
 website: https://www.radicalxchange.org
+logo: /assets/org-logos/radicalxchange.png
 contact:
   email: info@radicalxchange.org
   source: https://www.radicalxchange.org/about/
