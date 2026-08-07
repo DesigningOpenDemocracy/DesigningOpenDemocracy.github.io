@@ -126,6 +126,33 @@ document.addEventListener("DOMContentLoaded", function() {
 
   map.addLayer(myFGMarker);
 
+  // Deterministic per-org jitter for approximate (precision: city) org locations —
+  // spreads pins that would otherwise sit exactly on top of each other (a shared
+  // city-centroid guess, not a real address — see CLAUDE.md's location: convention)
+  // onto a small ring around the stated point. Seeded from the org's own URL so the
+  // same org always lands in the same spot across reloads/builds rather than jumping
+  // around, without needing to coordinate with whichever other orgs share that point.
+  function seededUnit(seedStr) {
+    var h = 0;
+    for (var i = 0; i < seedStr.length; i++) {
+      h = (h * 31 + seedStr.charCodeAt(i)) | 0;
+    }
+    return (Math.abs(h) % 3600) / 3600; // [0, 1)
+  }
+  var JITTER_RADIUS_DEG = 0.015; // ~1.6km — visible once zoomed to city level, still reads as "this city"
+  function jitterLatLng(lat, lon, seedStr) {
+    // Spread across a filled disk (angle + radius both seeded, independently
+    // salted) rather than just a ring — two orgs need to collide on BOTH axes
+    // to land close together, not just share a similar hash bucket on one.
+    var angle = seededUnit(seedStr + ':angle') * 2 * Math.PI;
+    var radius = JITTER_RADIUS_DEG * (0.35 + 0.65 * seededUnit(seedStr + ':radius'));
+    var lonScale = Math.cos(lat * Math.PI / 180) || 1;
+    return [
+      lat + radius * Math.cos(angle),
+      lon + (radius * Math.sin(angle)) / lonScale
+    ];
+  }
+
   // Organisation markers — active orgs with location data
   var orgTypeIcons = {
     research: '🔬', education: '🔬',
@@ -135,11 +162,12 @@ document.addEventListener("DOMContentLoaded", function() {
     party: '🗳️', political_party: '🗳️', 'political-party': '🗳️', political_movement: '🗳️',
     governance: '⚖️', government: '⚖️',
   };
-  function makeOrgIcon(type, logo) {
+  function makeOrgIcon(type, logo, approximate) {
+    var approxClass = approximate ? ' org-map-icon-approx' : '';
     if (logo) {
       return L.divIcon({
         html: '<img src="' + logo + '" alt="" loading="lazy">',
-        className: 'org-map-icon org-map-icon-logo',
+        className: 'org-map-icon org-map-icon-logo' + approxClass,
         iconSize: [30, 30],
         iconAnchor: [15, 15],
         popupAnchor: [0, -15]
@@ -147,7 +175,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     return L.divIcon({
       html: orgTypeIcons[type] || '🏛️',
-      className: 'org-map-icon',
+      className: 'org-map-icon' + approxClass,
       iconSize: [28, 28],
       iconAnchor: [14, 14],
       popupAnchor: [0, -14]
@@ -158,15 +186,20 @@ document.addEventListener("DOMContentLoaded", function() {
   {%- for file in pages %}
     {%- if file.page and file.page.meta.location and file.page.meta.location.latitude and file.page.meta.location.longitude and file.page.url.startswith('organisations/') and file.page.meta.status == 'active' %}
       {
+        var approximate = {{ (file.page.meta.location.precision == 'city') | tojson }};
+        var latLng = approximate
+          ? jitterLatLng({{ file.page.meta.location.latitude }}, {{ file.page.meta.location.longitude }}, {{ file.page.url | tojson }})
+          : [{{ file.page.meta.location.latitude }}, {{ file.page.meta.location.longitude }}];
         var marker = L.marker(
-          [{{ file.page.meta.location.latitude }}, {{ file.page.meta.location.longitude }}],
-          { icon: makeOrgIcon('{{ file.page.meta.type }}', {{ (file.page.meta.logo or '') | tojson }}) }
+          latLng,
+          { icon: makeOrgIcon('{{ file.page.meta.type }}', {{ (file.page.meta.logo or '') | tojson }}, approximate) }
         ).bindPopup(`
           <a style="font-weight:bold" href="/{{ file.page.url }}">{{ file.page.title }}</a>
           <br/><i>{{ file.page.meta.type }}{% if file.page.meta.country %} · {{ file.page.meta.country }}{% endif %}</i>
           {%- if file.page.meta.location.name %}
-            <br/>{{ file.page.meta.location.name }}
+            <br/>${approximate ? '~ near ' : ''}{{ file.page.meta.location.name }}
           {%- endif %}
+          ${approximate ? '<br/><span class="org-map-approx-note">Approximate — precise address not confirmed</span>' : ''}
           {%- if file.page.meta.website %}
             <br/><a target="_blank" href="{{ file.page.meta.website }}">Website ↗</a>
           {%- endif %}
@@ -191,7 +224,8 @@ document.addEventListener("DOMContentLoaded", function() {
       '<strong>Organisation type</strong>' +
       [['🔬','Research'],['📢','Advocacy'],['💻','Technology'],
        ['🤝','Practice'],['🗳️','Political'],['⚖️','Governance']]
-      .map(function(c){ return '<div>' + c[0] + ' ' + c[1] + '</div>'; }).join('');
+      .map(function(c){ return '<div>' + c[0] + ' ' + c[1] + '</div>'; }).join('') +
+      '<div class="map-legend-approx-note">Dashed pin = approximate location</div>';
     return div;
   };
   legend.addTo(map);

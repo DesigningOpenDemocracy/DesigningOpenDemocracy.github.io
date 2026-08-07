@@ -19,6 +19,7 @@ location:
   latitude: 51.5074
   longitude: -0.1278
   name: London, UK
+  precision: city
 related_orgs:
   - sortition-foundation
   - democracy-next

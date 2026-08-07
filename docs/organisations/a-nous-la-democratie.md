@@ -14,6 +14,7 @@ location:
   latitude: 48.8566
   longitude: 2.3522
   name: France
+  precision: city
 rss_feed: https://anouslademocratie.fr/feed
 activity:
   rss:

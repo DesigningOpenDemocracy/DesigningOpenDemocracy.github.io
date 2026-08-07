@@ -9,6 +9,7 @@ location:
   latitude: -33.8688
   longitude: 151.2093
   name: Australia
+  precision: city
 concepts:
   - direct-democracy
   - e-government

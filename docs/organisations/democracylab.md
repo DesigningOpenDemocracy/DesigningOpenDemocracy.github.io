@@ -16,6 +16,7 @@ location:
   latitude: 47.6062
   longitude: -122.3321
   name: Seattle, USA
+  precision: city
 activity:
   sitemap:
     date: 2026-06-07

@@ -437,6 +437,27 @@
   object-fit: contain;
 }
 
+/* Pin location: precision: city — spread via JS jitter, not a confirmed address */
+.org-map-icon-approx {
+  border: 2px dashed rgba(210, 79, 46, 0.85) !important;
+  border-radius: 50%;
+  opacity: 0.85;
+}
+
+.org-map-approx-note {
+  color: var(--md-default-fg-color--light, #666);
+  font-style: italic;
+  font-size: 0.85em;
+}
+
+.map-legend-approx-note {
+  margin-top: 4px;
+  padding-top: 4px;
+  border-top: 1px dashed rgba(128, 128, 128, 0.4);
+  font-size: 0.85em;
+  color: #555;
+}
+
 /****************************************/
 /* Organisations index — top filter toolbar + sortable table */
 

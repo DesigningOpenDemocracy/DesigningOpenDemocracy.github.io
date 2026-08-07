@@ -15,6 +15,7 @@ location:
   latitude: 47.6062
   longitude: -122.3321
   name: Seattle, USA
+  precision: city
 concepts:
   - democracy-tools
   - consensus-mapping

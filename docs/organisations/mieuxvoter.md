@@ -19,6 +19,7 @@ location:
   latitude: 48.8566
   longitude: 2.3522
   name: France
+  precision: city
 activity:
   manual:
     date: 2025-08-29

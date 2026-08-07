@@ -19,6 +19,7 @@ location:
   latitude: 48.2082
   longitude: 16.3738
   name: Vienna, Austria
+  precision: city
 last_checked: "2026-05-29"
 activity:
   sitemap:

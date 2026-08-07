@@ -15,6 +15,7 @@ location:
   latitude: -37.8136
   longitude: 144.9631
   name: Melbourne, Australia
+  precision: city
 concepts:
   - democracy
   - constitutional-democracy

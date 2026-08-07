@@ -8,6 +8,7 @@ location:
   latitude: 37.0527
   longitude: 41.2270
   name: Qamishli, North and East Syria (AANES)
+  precision: city
 concepts:
   - democratic-confederalism
 activity:

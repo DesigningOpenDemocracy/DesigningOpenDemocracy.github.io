@@ -19,6 +19,7 @@ location:
   latitude: 52.5200
   longitude: 13.4050
   name: Germany
+  precision: city
 activity:
   dod:
     date: 2026-03-15
