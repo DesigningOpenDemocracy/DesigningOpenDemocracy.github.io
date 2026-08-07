@@ -12,6 +12,7 @@ location:
   latitude: 55.7558
   longitude: 37.6176
   name: Moscow, Russia (liquidated; international chapters active)
+  precision: city
 concepts:
   - accountability-sink
   - democracy

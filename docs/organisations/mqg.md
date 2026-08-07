@@ -16,6 +16,7 @@ location:
   latitude: 32.0853
   longitude: 34.7818
   name: Tel Aviv, Israel
+  precision: city
 concepts:
   - constitutional-democracy
   - accountability-sink

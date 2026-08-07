@@ -18,6 +18,7 @@ location:
   latitude: 48.8566
   longitude: 2.3522
   name: France
+  precision: city
 news_page: https://www.democratieouverte.org/le-blog
 activity:
   manual:

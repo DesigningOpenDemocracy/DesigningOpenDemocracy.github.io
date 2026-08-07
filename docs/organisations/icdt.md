@@ -14,6 +14,7 @@ location:
   latitude: 39.9042
   longitude: 116.4074
   name: Beijing, China (origin; operates in diaspora)
+  precision: city
 concepts:
   - constitutional-democracy
   - democracy

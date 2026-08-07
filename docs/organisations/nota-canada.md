@@ -15,6 +15,7 @@ location:
   latitude: 43.6532
   longitude: -79.3832
   name: Ontario, Canada
+  precision: city
 concepts:
   - direct-democracy
   - representative-democracy

@@ -9,6 +9,7 @@ location:
   latitude: 51.5074
   longitude: -0.1278
   name: London, United Kingdom
+  precision: city
 concepts:
   - citizens-assembly
   - sortition

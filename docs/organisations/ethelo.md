@@ -22,6 +22,7 @@ location:
   latitude: 49.2827
   longitude: -123.1207
   name: Vancouver, Canada
+  precision: city
 rss_feed: https://ethelo.com/feed
 activity:
   rss:

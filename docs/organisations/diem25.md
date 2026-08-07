@@ -9,6 +9,7 @@ location:
   latitude: 50.8503
   longitude: 4.3517
   name: Brussels, Belgium
+  precision: city
 concepts:
   - direct-democracy
   - democracy
