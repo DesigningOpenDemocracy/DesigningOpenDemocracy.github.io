@@ -19,21 +19,19 @@ location:
   name: Collingwood, Melbourne, Australia
 ---
 
-[RadicalxChange Foundation](../../organisations/radicalxchange.md) — the international movement behind quadratic voting, quadratic funding, and the "Plurality" philosophy — is forming a Melbourne chapter, with a public launch event on **27 August 2026**.
+If you're in Melbourne on **Thursday 27 August**, [RSVP to meet RadicalxChange Foundation](https://events.humanitix.com/radicalxchange-foundation-in-melbourne) — the international movement behind quadratic voting, quadratic funding, and the "Plurality" philosophy — as it launches its Australian chapter.
 
 <!-- more -->
 
 > *This post was drafted by Claude Code with AI-assisted research. A human editor partially reviewed it for general accuracy. Verify specific claims against the linked sources.*
 
-**Main lesson** —
+## Go if you can
 
-- RadicalxChange isn't a new name to this space: its "Plurality" philosophy was co-authored with Audrey Tang, the figure behind Taiwan's [vTaiwan](../../organisations/vtaiwan.md) deliberation platform, which DOD has [covered in depth](2026-05-25-taiwan-digital-democracy.md).
-- The Melbourne chapter is genuinely new (forming now), even though the parent foundation (founded 2018) is close in age to DOD itself (active since at least 2016).
-- If quadratic voting/funding or Plurality is new to you, the org page is the place to start; if you're in Melbourne, the event itself is the easiest way in.
+["An invitation to meet RadicalxChange Foundation in Melbourne"](https://events.humanitix.com/radicalxchange-foundation-in-melbourne) runs **6–8pm, Thursday 27 August 2026**, at Today (Level 8/54 Wellington Street, Collingwood), co-hosted with Small Giants Academy.[^humanitix] [RSVP here.](https://events.humanitix.com/radicalxchange-foundation-in-melbourne)
 
-## The event
+It's a conversation between **Jess Scully**, RadicalxChange's Executive Director, and **Tamsin Jones**, on "the role civic tech can play in building common knowledge and moral legibility to cooperate across difference" — with examples spanning polarisation-bridging on urban density in Sydney, climate risk response in Colorado, faith communities shaping AI values, and community voice in data-centre governance.[^humanitix] Tickets ask for a $15 catering contribution, described by organisers as not a barrier to attending.[^humanitix]
 
-["An invitation to meet RadicalxChange Foundation in Melbourne"](https://events.humanitix.com/radicalxchange-foundation-in-melbourne) runs 6–8pm on Thursday 27 August 2026, at Today (Level 8/54 Wellington Street, Collingwood), co-hosted with Small Giants Academy.[^humanitix] It's billed as a conversation between **Jess Scully**, RadicalxChange's Executive Director, and **Tamsin Jones**, on "the role civic tech can play in building common knowledge and moral legibility to cooperate across difference" — with examples spanning polarisation-bridging on urban density in Sydney, climate risk response in Colorado, faith communities shaping AI values, and community voice in data-centre governance.[^humanitix] Tickets ask for a $15 catering contribution, described by organisers as not a barrier to attending.[^humanitix]
+Worth going for: this is a brand-new Melbourne chapter forming right now, not an established local group — an early chance to help shape it, and to talk directly with the people building quadratic voting/funding and Plurality rather than just reading about them.
 
 ## Who's behind it
 
