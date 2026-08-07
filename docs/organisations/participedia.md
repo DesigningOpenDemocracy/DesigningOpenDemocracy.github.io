@@ -21,6 +21,7 @@ concepts:
   - participatory-budgeting
   - direct-democracy
   - democracy
+  - meta-organisation
 activity:
   rss:
     date: 2026-01-05
@@ -58,3 +59,4 @@ The platform is open-access and contributions are welcome, making it a useful pl
 - [Deliberative Democracy](../concepts/deliberative-democracy.md)
 - [Participatory Budgeting](../concepts/participatory-budgeting.md)
 - [Democracy](../concepts/democracy.md)
+- [Meta-Organisation](../concepts/meta-organisation.md)

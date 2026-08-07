@@ -15,6 +15,7 @@ concepts:
   - e-government
   - democracy
   - direct-democracy
+  - meta-organisation
 location:
   latitude: 48.2082
   longitude: 16.3738
@@ -59,3 +60,4 @@ For researchers, practitioners, and funders working in democratic innovation, De
 - [Loomio](loomio.md)
 - [DemocracyLab](democracylab.md)
 - [Participedia](participedia.md)
+- [Meta-Organisation](../concepts/meta-organisation.md)

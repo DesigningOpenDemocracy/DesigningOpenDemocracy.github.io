@@ -41,7 +41,7 @@ Some in the group describe DOD as a [meta-organisation](../concepts/meta-organis
 ## Links
 
 - Website: [designingopendemocracy.com](https://www.designingopendemocracy.com)
-- [Telegram](https://t.me/joinchat/HNk_UBX8A7jBPJPbAZU5Zg) — day-to-day discussion and coordination
+- [Telegram](https://t.me/joinchat/HNk_UBX8A7jBPJPbAZU5Zg) — **main point of contact**; day-to-day discussion and coordination
 - [Meetup](https://www.meetup.com/DesigningOpenDemocracy/) and [Humanitix](https://events.humanitix.com/host/designing-open-democracy) — Melbourne in-person events
 - [YouTube](https://www.youtube.com/channel/UCqIo0VC_zHyPjzNKIafGJpg/featured) — recorded meetups and talks
 - [Podcast](https://podcasts.apple.com/au/podcast/designing-open-democracy/id1492656241)
