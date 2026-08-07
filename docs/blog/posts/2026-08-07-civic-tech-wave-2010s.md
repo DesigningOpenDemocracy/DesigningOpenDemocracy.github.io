@@ -73,7 +73,7 @@ Fifteen years in, the tools have gotten better. The problem they were built to s
 
 Worth naming plainly: this site is also a product of the same moment. Designing Open Democracy held its first meetup in December 2016 — the same year MiVote launched, a year after Flux was founded, with Loomio, DemocracyOS, and vTaiwan already running. [Nick Merange's 2018 comparative evaluation of Flux, MiVote, Online Direct Democracy, and citizens' juries](2018-05-03.md) — with [Max Kaye's response](2018-05-03-Max.md) alongside it — is, structurally, the same exercise as this post: DOD doing this same reckoning eight years earlier, in real time, while its subjects were still active.
 
-Some in the group describe DOD as a kind of meta-organisation for that reason — paying attention across the reform space rather than building a platform or running for office itself, on the premise that most of what's tried has been tried before and the lesson shouldn't have to be re-learned each time. It's a premise a few people hold rather than a settled position, and [we've only just started asking in public whether it actually stands up](../../philosophy/index.md). Whichever way that goes, it depends entirely on organisations like the ones above being willing to do the costly, risky thing DOD hasn't: without Flux and MiVote actually running for office, or vTaiwan actually operating inside a ministry for three years, there would be nothing here to write about.
+Some in the group describe DOD as a kind of [meta-organisation](../../concepts/meta-organisation.md) for that reason — paying attention across the reform space rather than building a platform or running for office itself, on the premise that most of what's tried has been tried before and the lesson shouldn't have to be re-learned each time. It's a premise a few people hold rather than a settled position, and [we've only just started asking in public whether it actually stands up](../../philosophy/index.md). Whichever way that goes, it depends entirely on organisations like the ones above being willing to do the costly, risky thing DOD hasn't: without Flux and MiVote actually running for office, or vTaiwan actually operating inside a ministry for three years, there would be nothing here to write about.
 
 ## Sources & further reading
 
@@ -81,6 +81,7 @@ Some in the group describe DOD as a kind of meta-organisation for that reason �
 - [Taiwan's digital democracy experiment: what it shows, what it doesn't](2026-05-25-taiwan-digital-democracy.md) — DOD, May 2026
 - [The small rooms: how DOD's podcast archive reads from 2026](2026-06-02-archive-review.md) — DOD, June 2026
 - [RadicalxChange is launching a Melbourne chapter](2026-08-07-radicalxchange-melbourne.md) — DOD, August 2026
+- [Meta-Organisation](../../concepts/meta-organisation.md) — DOD Concepts entry, including how this usage differs from the academic organisational-theory term
 - [Evaluating Democracy Reform Proposals](2018-05-03.md) — Nick Merange, DOD, May 2018
 - [Talk with Ben Ballingall about Flux Party and IBDD](2020-02-13-podcast.md) — DOD podcast, February 2020
 - [Catching up with Adam Jacoby, founder of MiVote](2021-08-07-podcast.md) — DOD podcast, August 2021
