@@ -11,6 +11,9 @@
 {% block content %}
 {%- if page.meta.status or page.meta.type or page.meta.country or page.meta.website %}
 <div class="project-meta-box md-typeset">
+  {%- if page.meta.logo %}
+  <img class="org-page-logo" src="{{ page.meta.logo }}" alt="{{ page.title }} logo">
+  {%- endif %}
   <table>
     <tbody>
       {%- if page.meta.status %}

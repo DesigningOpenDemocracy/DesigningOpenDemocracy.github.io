@@ -4,6 +4,7 @@ type: platform
 status: active
 country: TW
 website: https://vtaiwan.tw
+logo: /assets/org-logos/vtaiwan.png
 contact:
   email: info@vtaiwan.tw
   source: https://vtaiwan.tw/contact

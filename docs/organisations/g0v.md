@@ -4,6 +4,7 @@ type: civic tech
 status: active
 country: TW
 website: https://g0v.tw
+logo: /assets/org-logos/g0v.svg
 contact:
   email: g0v-talks@googlegroups.com
   source: https://g0v.tw/contact
