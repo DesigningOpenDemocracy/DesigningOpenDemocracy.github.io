@@ -33,6 +33,7 @@ Before this page becomes any kind of curated record of what DOD members think, w
 8. Has a personal experience ever changed your mind about which systems of governance deserve trust? What happened?
 9. If you could rewrite one rule about how your workplace, council, or community group makes decisions, what would you change — and why hasn't it already changed?
 10. What does "good faith" look like to you, in a person or an institution? How do you tell it apart from a good performance of it?
+11. DOD works from a premise that's rarely said out loud: that there's nothing new under the sun in democracy reform — that most ideas being tried today have already been tried somewhere, and the people building the next version are often unaware the lesson already exists. Does that match what you've seen? And if it's true, is an org whose job is just *paying attention across the whole space* — rather than pushing any one reform — actually useful, or is that a comfortable way to avoid taking a position?
 
 *If you're reading this and have thoughts on these questions themselves — too academic, missing something, badly worded — that's exactly the kind of feedback this page exists for.*
 
