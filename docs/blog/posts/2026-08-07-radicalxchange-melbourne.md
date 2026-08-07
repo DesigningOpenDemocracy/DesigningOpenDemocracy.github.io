@@ -43,7 +43,7 @@ Worth going for: this is a brand-new Melbourne chapter forming right now, not an
 
 ## DOD contingent
 
-DOD is sending a contingent to this one, not just a couple of us dropping in individually. If you're a DOD member (or want to be), [join the coordination thread on Telegram](https://t.me/joinchat/HNk_UBX8A7jBPJPbAZU5Zg) to find the rest of the group, sort out where to meet beforehand, and be counted if you'd like your attendance noted when we let RadicalxChange know a DOD contingent is coming.
+A group of us is planning to attend together — informal for now, not an official DOD contingent yet. That could change if we hear back from RadicalxChange that they're happy to have us come along as a group. Either way, if you're a DOD member (or want to be), [join the coordination thread on Telegram](https://t.me/joinchat/HNk_UBX8A7jBPJPbAZU5Zg) to find the rest of the group and sort out where to meet beforehand.
 
 ## Who's behind it
 
