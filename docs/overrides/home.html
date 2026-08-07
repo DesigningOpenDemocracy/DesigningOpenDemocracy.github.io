@@ -135,7 +135,16 @@ document.addEventListener("DOMContentLoaded", function() {
     party: '🗳️', political_party: '🗳️', 'political-party': '🗳️', political_movement: '🗳️',
     governance: '⚖️', government: '⚖️',
   };
-  function makeOrgIcon(type) {
+  function makeOrgIcon(type, logo) {
+    if (logo) {
+      return L.divIcon({
+        html: '<img src="' + logo + '" alt="" loading="lazy">',
+        className: 'org-map-icon org-map-icon-logo',
+        iconSize: [30, 30],
+        iconAnchor: [15, 15],
+        popupAnchor: [0, -15]
+      });
+    }
     return L.divIcon({
       html: orgTypeIcons[type] || '🏛️',
       className: 'org-map-icon',
@@ -151,7 +160,7 @@ document.addEventListener("DOMContentLoaded", function() {
       {
         var marker = L.marker(
           [{{ file.page.meta.location.latitude }}, {{ file.page.meta.location.longitude }}],
-          { icon: makeOrgIcon('{{ file.page.meta.type }}') }
+          { icon: makeOrgIcon('{{ file.page.meta.type }}', {{ (file.page.meta.logo or '') | tojson }}) }
         ).bindPopup(`
           <a style="font-weight:bold" href="/{{ file.page.url }}">{{ file.page.title }}</a>
           <br/><i>{{ file.page.meta.type }}{% if file.page.meta.country %} · {{ file.page.meta.country }}{% endif %}</i>
