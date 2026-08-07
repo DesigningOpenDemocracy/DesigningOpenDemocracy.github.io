@@ -4,6 +4,7 @@ type: cooperative
 status: active
 country: AU
 website: https://www.888causeway.coop
+logo: /assets/org-logos/888-cooperative-causeway.png
 contact:
   email: coopcauseway@gmail.com
   source: https://www.888causeway.coop/contact/

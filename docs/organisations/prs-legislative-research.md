@@ -4,6 +4,7 @@ type: research
 status: active
 country: IN
 website: https://prsindia.org
+logo: /assets/org-logos/prs-legislative-research.png
 contact:
   email: prsindia@prsindia.org
   phone: "(011) 2323 4801"

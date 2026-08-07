@@ -4,6 +4,7 @@ type: civic tech
 status: active
 country: GB
 website: https://www.mysociety.org
+logo: /assets/org-logos/mysociety.png
 contact:
   email: hello@mysociety.org
   source: https://www.mysociety.org/contact

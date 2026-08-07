@@ -4,6 +4,7 @@ type: movement
 status: active
 country: FR
 website: https://anouslademocratie.fr/
+logo: /assets/org-logos/a-nous-la-democratie.png
 summary: "A French citizen movement founded in 2016 advocating for direct democracy through institutional reforms — sortition, the Citizen Initiative Referendum (RIC), and non-accumulation of terms."
 concepts:
   - direct-democracy

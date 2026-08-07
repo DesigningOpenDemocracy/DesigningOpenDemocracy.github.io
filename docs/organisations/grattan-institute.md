@@ -4,6 +4,7 @@ type: research
 status: active
 country: AU
 website: https://grattan.edu.au
+logo: /assets/org-logos/grattan-institute.png
 contact:
   email: info@grattan.edu.au
   phone: "+61 3 9035 9881"

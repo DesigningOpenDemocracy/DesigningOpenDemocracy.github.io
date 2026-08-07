@@ -4,6 +4,7 @@ type: platform
 status: active
 country: AU
 website: https://newvote.org
+logo: /assets/org-logos/newvote.webp
 contact:
   email: hello@newvote.org
   form: https://newvote.org/contact

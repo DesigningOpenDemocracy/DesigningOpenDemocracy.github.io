@@ -4,6 +4,7 @@ type: civic tech
 status: active
 country: AU
 website: https://www.openaustraliafoundation.org.au
+logo: /assets/org-logos/open-australia-foundation.png
 contact:
   email: contact@oaf.org.au
   form: https://www.openaustraliafoundation.org.au/contact

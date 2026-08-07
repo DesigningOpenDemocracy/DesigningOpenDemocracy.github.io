@@ -4,6 +4,7 @@ type: advocacy
 status: active
 country: AU
 website: https://www.crossroadsconversation.com.au
+logo: /assets/org-logos/conversations-at-the-crossroads.png
 contact:
   email: admin@crossroadsconversation.com.au
   source: https://www.crossroadsconversation.com.au

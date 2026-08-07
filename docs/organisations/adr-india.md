@@ -4,6 +4,7 @@ type: advocacy
 status: active
 country: IN
 website: https://adrindia.org
+logo: /assets/org-logos/adr-india.png
 contact:
   email: adr@adrindia.org
   form: https://adrindia.org/contact

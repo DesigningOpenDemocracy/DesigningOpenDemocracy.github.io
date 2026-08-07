@@ -4,6 +4,7 @@ type: research
 status: active
 country: FR
 website: https://www.democratieouverte.org
+logo: /assets/org-logos/democratie-ouverte.jpg
 contact:
   email: contact@democratieouverte.org
   source: https://www.democratieouverte.org

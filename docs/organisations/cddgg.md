@@ -4,6 +4,7 @@ type: research
 status: active
 country: AU
 website: https://www.canberra.edu.au/research/centres/cddgg
+logo: /assets/org-logos/cddgg.png
 contact:
   email: delibdem@canberra.edu.au
   phone: "+61 2 6201 5111"

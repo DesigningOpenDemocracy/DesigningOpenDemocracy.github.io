@@ -4,6 +4,7 @@ type: party
 status: active
 country: AT
 website: https://www.gilt.at
+logo: /assets/org-logos/gilt.png
 contact:
   email: kontakt@gilt.at
   source: https://www.gilt.at

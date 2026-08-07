@@ -4,6 +4,7 @@ type: media
 status: active
 country: AU
 website: https://www.ettemedia.com/
+logo: /assets/org-logos/ette-media.png
 contact:
   email: admin@ettemedia.com
   source: https://www.ettemedia.com/contact

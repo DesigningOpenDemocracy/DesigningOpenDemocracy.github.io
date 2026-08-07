@@ -4,6 +4,7 @@ type: practice
 status: active
 country: US
 website: https://www.participatorybudgeting.org
+logo: /assets/org-logos/participatory-budgeting-project.png
 contact:
   email: info@participatorybudgeting.org
   phone: "1347-652-1478"

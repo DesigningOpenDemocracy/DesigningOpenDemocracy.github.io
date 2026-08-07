@@ -4,6 +4,7 @@ type: civic tech
 status: active
 country: DE
 website: https://liqd.net/en/
+logo: /assets/org-logos/liquid-democracy-ev.png
 contact:
   email: hallo@liqd.net
   source: https://liqd.net/about

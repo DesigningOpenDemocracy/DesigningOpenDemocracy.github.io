@@ -4,6 +4,7 @@ type: research
 status: active
 country: SK
 website: https://memo98.sk
+logo: /assets/org-logos/memo98.svg
 contact:
   email: memo98@memo98.sk
   phone: "+421903581591"

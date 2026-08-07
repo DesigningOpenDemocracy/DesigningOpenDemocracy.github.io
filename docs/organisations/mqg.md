@@ -4,6 +4,7 @@ type: advocacy
 status: active
 country: IL
 website: https://mqg.org.il/en
+logo: /assets/org-logos/mqg.png
 contact:
   email: mqg@mqg.org.il
   phone: "+972 2-6633400"

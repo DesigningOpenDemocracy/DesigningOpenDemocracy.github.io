@@ -4,6 +4,7 @@ type: civil-society
 status: active
 country: DE
 website: https://democracy-app.de
+logo: /assets/org-logos/democracy-deutschland.png
 contact:
   email: contact@democracy-deutschland.de
   phone: "+49 176 470 40 213"

@@ -4,6 +4,7 @@ type: advocacy
 status: active
 country: UA
 website: https://oporaua.org/en
+logo: /assets/org-logos/opora.png
 contact:
   email: info@opora.org.ua
   source: https://oporaua.org/en/page/contacts

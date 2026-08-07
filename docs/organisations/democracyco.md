@@ -4,6 +4,7 @@ type: practice
 status: active
 country: AU
 website: https://www.democracyco.com.au
+logo: /assets/org-logos/democracyco.svg
 contact:
   email: emily@democracyco.com.au
   phone: "0421 098 355 (Emma Fletcher, co-founder) / 0427 834 062 (Emily Jenke, co-founder)"

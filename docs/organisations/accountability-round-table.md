@@ -4,6 +4,7 @@ type: advocacy
 status: active
 country: AU
 website: http://accountabilityrt.org
+logo: /assets/org-logos/accountability-round-table.jpg
 contact:
   form: http://accountabilityrt.org/contact
   source: http://accountabilityrt.org/contact

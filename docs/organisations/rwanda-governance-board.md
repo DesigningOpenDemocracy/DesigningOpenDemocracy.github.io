@@ -4,6 +4,7 @@ type: research
 status: active
 country: RW
 website: https://www.rgb.rw
+logo: /assets/org-logos/rwanda-governance-board.png
 contact:
   email: info@rgb.rw
   form: https://www.rgb.rw/contact

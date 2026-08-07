@@ -4,6 +4,7 @@ type: platform
 status: active
 country: EE
 website: https://citizenos.com
+logo: /assets/org-logos/citizen-os.png
 contact:
   email: info@citizenos.com
   source: https://citizenos.com/contact

@@ -4,6 +4,7 @@ type: research
 status: active
 country: IL
 website: https://en.idi.org.il
+logo: /assets/org-logos/israel-democracy-institute.png
 contact:
   email: info@idi.org.il
   phone: "972-2-530-0888"

@@ -4,6 +4,7 @@ type: platform
 status: active
 country: CA
 website: https://ethelo.com
+logo: /assets/org-logos/ethelo.png
 contact:
   form: https://ethelo.com
   source: https://ethelo.com

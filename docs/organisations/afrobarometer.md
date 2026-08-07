@@ -4,6 +4,7 @@ type: research
 status: active
 country: GH
 website: https://www.afrobarometer.org
+logo: /assets/org-logos/afrobarometer.webp
 contact:
   email: info@afrobarometer.org
   form: https://www.afrobarometer.org/contact-us

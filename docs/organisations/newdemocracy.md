@@ -4,6 +4,7 @@ type: research
 status: active
 country: AU
 website: https://www.newdemocracy.com.au
+logo: /assets/org-logos/newdemocracy.jpg
 contact:
   email: iain.walker@newdemocracy.com.au
   source: https://www.newdemocracy.com.au

@@ -4,6 +4,7 @@ type: research
 status: active
 country: CN
 website: https://chinademocrats.org/en
+logo: /assets/org-logos/icdt.png
 contact:
   email: office@chinademocrat.org
   source: https://chinademocrats.org/en

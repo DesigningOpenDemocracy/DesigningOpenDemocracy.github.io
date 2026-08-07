@@ -104,10 +104,14 @@
 .org-page-logo {
     display: block;
     float: right;
-    max-width: 96px;
-    max-height: 64px;
+    width: 96px;
+    height: 64px;
     margin: 0 0 0.5rem 0.75rem;
+    padding: 0.4rem;
     object-fit: contain;
+    background: white;
+    border-radius: 6px;
+    box-sizing: border-box;
 }
 
 /****************************************/

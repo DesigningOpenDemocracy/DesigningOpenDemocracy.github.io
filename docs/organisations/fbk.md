@@ -4,6 +4,7 @@ type: advocacy
 status: active
 country: RU
 website: https://fbk.info/en
+logo: /assets/org-logos/fbk.webp
 contact:
   email: fbk@fbk.info
   source: https://fbk.info/en

@@ -4,6 +4,7 @@ type: philanthropy
 status: active
 country: US
 website: https://www.opensocietyfoundations.org
+logo: /assets/org-logos/open-society-foundations.png
 contact:
   email: media@opensocietyfoundations.org
   form: https://www.opensocietyfoundations.org/contact

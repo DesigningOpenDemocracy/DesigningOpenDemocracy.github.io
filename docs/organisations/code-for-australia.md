@@ -4,6 +4,7 @@ type: civic tech
 status: active
 country: AU
 website: https://www.codeforaustralia.org
+logo: /assets/org-logos/code-for-australia.png
 contact:
   email: info@codeforaustralia.org
   source: https://www.codeforaustralia.org/contact-us/
