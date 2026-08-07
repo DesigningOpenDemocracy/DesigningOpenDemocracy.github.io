@@ -72,12 +72,13 @@ But its recommendations were never legally binding, and that proved a structural
 
 ## What came after
 
-The government's appetite for participatory deliberation shifted rather than disappeared. The Digital Affairs Ministry built **Join** (join.gov.tw), a government-run consultation platform that reached a broader, older, less tech-savvy public and ranged well beyond vTaiwan's digital-policy remit into areas like drunk-driving, sexual assault, and child abuse. In 2023 the ministry also partnered with the Collective Intelligence Project on **Alignment Assemblies**, a Pol.is-based process for public consultation on AI governance.[^demtech] vTaiwan itself continues as a volunteer-driven civic laboratory — fully decoupled from direct government support — run by five to seven active contributors. Since 2024 it has organised a series of "Social Issue Meetups": hybrid events combining deliberative discussion with digital tools (Pol.is, Mentimeter, AI-assisted analysis), averaging around 50 participants per event.[^peoplepowered] Recent topics include the Fraud Crime Hazard Prevention Act (December 2024) and a March 2025 consultation with the National Human Rights Commission on a draft AI Basic Act.[^peoplepowered]
+The government's appetite for participatory deliberation shifted rather than disappeared. The Digital Affairs Ministry built **[Join](join-gov-tw.md)** (join.gov.tw), a government-run consultation platform that reached a broader, older, less tech-savvy public and ranged well beyond vTaiwan's digital-policy remit into areas like drunk-driving, sexual assault, and child abuse. In 2023 the ministry also partnered with the Collective Intelligence Project on **Alignment Assemblies**, a Pol.is-based process for public consultation on AI governance.[^demtech] vTaiwan itself continues as a volunteer-driven civic laboratory — fully decoupled from direct government support — run by five to seven active contributors. Since 2024 it has organised a series of "Social Issue Meetups": hybrid events combining deliberative discussion with digital tools (Pol.is, Mentimeter, AI-assisted analysis), averaging around 50 participants per event.[^peoplepowered] Recent topics include the Fraud Crime Hazard Prevention Act (December 2024) and a March 2025 consultation with the National Human Rights Commission on a draft AI Basic Act.[^peoplepowered]
 
 ## Links
 
 - Website: [vtaiwan.tw](https://vtaiwan.tw)
 - Related: [g0v (gov zero)](g0v.md) — the civic-tech community that co-developed vTaiwan
+- Related: [Join](join-gov-tw.md) — the government's own successor platform
 - Blog: [Taiwan's digital democracy experiment: vTaiwan and g0v](../../blog/posts/2026-05-25-taiwan-digital-democracy.md)
 
 [^demtech]: Sebastian Cushing Rodriguez, ["Consensus Building in Taiwan, the Poster Child of Digital Democracy"](https://democracy-technologies.org/participation/consensus-building-in-taiwan/), *Democracy Technologies*, 2023.

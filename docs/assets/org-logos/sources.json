@@ -286,6 +286,13 @@
     "source": "https://en.idi.org.il/images/logo-print.png",
     "title": "Israel Democracy Institute (IDI)"
   },
+  "join-gov-tw": {
+    "license": "Fair use",
+    "note": "site favicon (multi-res .ico, 48x48 extracted), manually selected over a low-confidence og:image guess",
+    "path": "join-gov-tw.png",
+    "source": "https://join.gov.tw/images/favicon.ico",
+    "title": "Join (join.gov.tw)"
+  },
   "kongreya-star": {
     "license": "Fair use",
     "note": "site asset, auto-detected img-logo",
