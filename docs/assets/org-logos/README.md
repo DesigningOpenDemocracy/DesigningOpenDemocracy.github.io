@@ -15,6 +15,7 @@ rest of `docs/organisations/` is a deliberate followup, not part of the initial 
 | Decidim | ![](decidim.svg) | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Decidim-logo.svg) |
 | Loomio | ![](loomio.png) | Fair use | [loomio.com](https://www.loomio.com/images/brand/icon-yellow-on-white-1024.png) (brand asset) |
 | Consul Democracy | ![](consul-democracy.png) | Fair use | [consuldemocracy.org](https://consuldemocracy.org/wp-content/uploads/consul_logo.png) (site asset) |
+| RadicalxChange Foundation | ![](radicalxchange.png) | Fair use | [radicalxchange.org](https://www.radicalxchange.org/images/logos/favicon.png) (site icon) |
 
 ## Adding a logo
 
