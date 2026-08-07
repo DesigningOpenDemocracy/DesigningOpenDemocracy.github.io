@@ -21,6 +21,7 @@ The shared philosophy underneath both usages has three parts. First, that differ
 
 ## See also
 
+- [Designing Open Democracy](../organisations/designing-open-democracy.md) — DOD's own (self-authored) entry in the Democracy Landscape
 - [Philosophy](../philosophy/index.md) — where this premise is posed as an open question to test with real people
 - [Occupy to Plurality: what the 2010s civic-tech wave built, and where it stalled](../blog/posts/2026-08-07-civic-tech-wave-2010s.md) — DOD naming this idea in the context of a concrete retrospective
 - [Accountability Sink](accountability-sink.md) — the structural pattern DOD's retrospectives keep running into
