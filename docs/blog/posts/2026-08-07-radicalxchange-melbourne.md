@@ -41,7 +41,9 @@ Worth going for: this is a brand-new Melbourne chapter forming right now, not an
   <a class="hero-cta-btn hero-cta-primary" href="https://events.humanitix.com/radicalxchange-foundation-in-melbourne" target="_blank" rel="noopener">RSVP for 27 August →</a>
 </p>
 
-A few DOD members are planning to go. If you're headed along too, say so in [DOD's Telegram](https://t.me/joinchat/HNk_UBX8A7jBPJPbAZU5Zg) so we can find each other on the night.
+## DOD contingent
+
+DOD is sending a contingent to this one, not just a couple of us dropping in individually. If you're a DOD member (or want to be), [join the coordination thread on Telegram](https://t.me/joinchat/HNk_UBX8A7jBPJPbAZU5Zg) to find the rest of the group, sort out where to meet beforehand, and be counted if you'd like your attendance noted when we let RadicalxChange know a DOD contingent is coming.
 
 ## Who's behind it
 
