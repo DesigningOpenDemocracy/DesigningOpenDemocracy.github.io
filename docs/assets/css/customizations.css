@@ -178,6 +178,21 @@
     color: #fff;
 }
 
+/* Higher-specificity overrides so these buttons keep their intended text
+   color inside blog-post content, where Material's `.md-typeset a` rule
+   (color: var(--md-typeset-a-color)) otherwise wins over the plain
+   `.hero-cta-btn`/`.hero-cta-primary` class rules above and produces
+   low-contrast blue-on-blue text. */
+.md-typeset a.hero-cta-btn,
+.md-typeset a.hero-cta-btn:hover {
+    color: #49a7e9;
+}
+
+.md-typeset a.hero-cta-primary,
+.md-typeset a.hero-cta-primary:hover {
+    color: #fff;
+}
+
 #projects-container {
     background-color: rgba(245, 245, 255, 0.95);
     display: flex;
