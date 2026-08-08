@@ -37,7 +37,7 @@
   "aman-palestine": {
     "license": "Fair use",
     "note": "site asset, auto-detected og-image",
-    "path": "aman-palestine.jpg",
+    "path": "aman-palestine.png",
     "source": "https://www.aman-palestine.org/assets/images/aman-logo1.png",
     "title": "AMAN – Coalition for Accountability and Integrity"
   },
@@ -246,9 +246,9 @@
   },
   "democracy-earth": {
     "license": "Fair use",
-    "note": "site asset, auto-detected og-image",
+    "note": "logo icon, from democracy.earth assets",
     "path": "democracy-earth.png",
-    "source": "https://democracy.earth/og-image.png",
+    "source": "https://democracy.earth/assets/democracy-earth-logo-DadoaX03.png",
     "title": "Democracy Earth Foundation"
   },
   "democracy-foundation": {
@@ -295,9 +295,9 @@
   },
   "democracylab": {
     "license": "Fair use",
-    "note": "site asset, auto-detected og-image",
+    "note": "logo wordmark, hosted on esal.us",
     "path": "democracylab.png",
-    "source": "https://d1agxr2dqkgkuy.cloudfront.net/img/Democracylab_is_a_global_volunteer_tech_for_good_nonprofit.png",
+    "source": "https://esal.us/wp-content/uploads/2019/01/DemocracyLab-Logo-768x302.png",
     "title": "DemocracyLab"
   },
   "democratie-ouverte": {
@@ -589,9 +589,9 @@
   },
   "mosaiclab": {
     "license": "Fair use",
-    "note": "site asset, auto-detected img-logo",
+    "note": "logo wordmark, from MosaicLab's Squarespace CDN",
     "path": "mosaiclab.webp",
-    "source": "https://images.squarespace-cdn.com/content/v1/57688da046c3c4f6756fd256/1764317912499-ZBV8714VNVG3SQMPMUM5/sunshine-coast-council-logo-png_seeklogo-394072.png",
+    "source": "https://images.squarespace-cdn.com/content/v1/57688da046c3c4f6756fd256/4f0e775b-4146-4bee-b18f-a7a26a4b133b/MosaicLab-logo-2017-blue-nooutline.png?format=1500w",
     "title": "MosaicLab"
   },
   "mqg": {
@@ -603,9 +603,9 @@
   },
   "mysociety": {
     "license": "Fair use",
-    "note": "site asset, auto-detected og-image",
+    "note": "logo wordmark, from mysociety.org theme assets",
     "path": "mysociety.png",
-    "source": "https://blogs.mysociety.org/mysociety/files/2019/07/mysociety-large-social.png",
+    "source": "https://www.mysociety.org/wp-content/themes/mysociety-new/assets/img/mysociety-logo-white@2.png",
     "title": "mySociety"
   },
   "namfrel": {
