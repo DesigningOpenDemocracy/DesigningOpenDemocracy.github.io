@@ -98,7 +98,7 @@
               data-form="{{ contact.get('form', '') }}">
             <td>
               {%- if file.page.meta.get('logo') %}
-              <img src="{{ file.page.meta.logo }}" alt="" class="org-row-logo" loading="lazy" decoding="async" width="40" height="40">
+               <img src="{{ file.page.meta.logo }}" alt="" class="org-row-logo{% if file.page.meta.get('logo_bg') == 'dark' %} org-logo-needs-dark{% endif %}" loading="lazy" decoding="async" width="40" height="40">
               {%- endif %}
               <a href="/{{ file.page.url }}">{{ file.page.title }}</a>
               {%- if website and not website.startswith('https://web.archive.org') %}

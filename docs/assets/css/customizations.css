@@ -200,10 +200,10 @@
 }
 
 .org-page-header-logo {
-    max-height: 144px;
-    max-width: 360px;
+    height: 48px;
+    max-width: 200px;
     object-fit: contain;
-    background: rgba(0,0,0,0.04);
+    background: white;
     border-radius: 4px;
     padding: 2px;
     box-sizing: border-box;
@@ -518,7 +518,7 @@
 }
 
 .org-map-icon-logo {
-  background: rgba(0,0,0,0.04) !important;
+  background: white !important;
   border-radius: 4px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
   padding: 2px;
@@ -530,6 +530,10 @@
   height: 100%;
   border-radius: 4px;
   object-fit: contain;
+}
+
+.org-map-icon-logo.org-logo-needs-dark {
+  background: rgba(0,0,0,0.45) !important;
 }
 
 /* Pin location: precision: city — spread via JS jitter, not a confirmed address */
@@ -810,7 +814,7 @@
     height: 40px;
     object-fit: contain;
     border-radius: 4px;
-    background: rgba(0,0,0,0.04);
+    background: white;
     vertical-align: middle;
     margin-right: 0.4em;
     padding: 2px;

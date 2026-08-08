@@ -162,12 +162,13 @@ document.addEventListener("DOMContentLoaded", function() {
     party: '🗳️', political_party: '🗳️', 'political-party': '🗳️', political_movement: '🗳️',
     governance: '⚖️', government: '⚖️',
   };
-  function makeOrgIcon(type, logo, approximate) {
+  function makeOrgIcon(type, logo, approximate, logoBg) {
     var approxClass = approximate ? ' org-map-icon-approx' : '';
+    var darkClass = (logoBg === 'dark') ? ' org-logo-needs-dark' : '';
     if (logo) {
       return L.divIcon({
         html: '<img src="' + logo + '" alt="" loading="lazy">',
-        className: 'org-map-icon org-map-icon-logo' + approxClass,
+        className: 'org-map-icon org-map-icon-logo' + approxClass + darkClass,
         iconSize: [30, 30],
         iconAnchor: [15, 15],
         popupAnchor: [0, -15]
@@ -192,7 +193,7 @@ document.addEventListener("DOMContentLoaded", function() {
           : [{{ file.page.meta.location.latitude }}, {{ file.page.meta.location.longitude }}];
         var marker = L.marker(
           latLng,
-          { icon: makeOrgIcon('{{ file.page.meta.type }}', {{ (file.page.meta.logo or '') | tojson }}, approximate) }
+          { icon: makeOrgIcon('{{ file.page.meta.type }}', {{ (file.page.meta.logo or '') | tojson }}, approximate, {{ (file.page.meta.logo_bg or '') | tojson }}) }
         ).bindPopup(`
           <a style="font-weight:bold" href="/{{ file.page.url }}">{{ file.page.title }}</a>
           <br/><i>{{ file.page.meta.type }}{% if file.page.meta.country %} · {{ file.page.meta.country }}{% endif %}</i>

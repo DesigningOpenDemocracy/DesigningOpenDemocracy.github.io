@@ -5,6 +5,7 @@ status: active
 country: AU
 website: https://cafsa.org.au
 logo: /assets/org-logos/cafsa.png
+logo_bg: dark
 contact:
   form: https://cafsa.org.au/contact
   source: https://cafsa.org.au/contact
