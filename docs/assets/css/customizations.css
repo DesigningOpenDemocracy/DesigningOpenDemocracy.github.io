@@ -200,13 +200,17 @@
 }
 
 .org-page-header-logo {
-    height: 48px;
-    max-width: 200px;
+    max-height: 144px;
+    max-width: 360px;
     object-fit: contain;
-    background: white;
+    background: rgba(0,0,0,0.04);
     border-radius: 4px;
     padding: 2px;
     box-sizing: border-box;
+}
+
+.org-page-header-logo.org-logo-needs-dark {
+    background: rgba(0,0,0,0.45);
 }
 
 /****************************************/
@@ -814,11 +818,15 @@
     height: 40px;
     object-fit: contain;
     border-radius: 4px;
-    background: white;
+    background: rgba(0,0,0,0.04);
     vertical-align: middle;
     margin-right: 0.4em;
     padding: 2px;
     box-sizing: border-box;
+}
+
+.org-row-logo.org-logo-needs-dark {
+    background: rgba(0,0,0,0.45);
 }
 
 .org-ext-link:hover {
