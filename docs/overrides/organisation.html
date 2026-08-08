@@ -7,13 +7,42 @@
   'party': '🗳️', 'political_party': '🗳️', 'political-party': '🗳️', 'political_movement': '🗳️',
   'governance': '⚖️', 'government': '⚖️'
 } %}
-{% set ri = {'A':'🇦','B':'🇧','C':'🇨','D':'🇩','E':'🇪','F':'🇫','G':'🇬','H':'🇭','I':'🇮','J':'🇯','K':'🇰','L':'🇱','M':'🇲','N':'🇳','O':'🇴','P':'🇵','Q':'🇶','R':'🇷','S':'🇸','T':'🇹','U':'🇺','V':'🇻','W':'🇼','X':'🇽','Y':'🇾','Z':'🇿'} %}
+{% set country_names = {
+  'AR': 'Argentina', 'AT': 'Austria', 'AU': 'Australia', 'BE': 'Belgium',
+  'BO': 'Bolivia', 'BR': 'Brazil', 'CA': 'Canada', 'CN': 'China',
+  'CU': 'Cuba', 'DE': 'Germany', 'EC': 'Ecuador', 'EE': 'Estonia',
+  'ES': 'Spain', 'EU': 'European Union', 'FR': 'France', 'GB': 'United Kingdom',
+  'GH': 'Ghana', 'IL': 'Israel', 'IN': 'India', 'IS': 'Iceland',
+  'KE': 'Kenya', 'LB': 'Lebanon', 'MX': 'Mexico', 'MY': 'Malaysia',
+  'NG': 'Nigeria', 'NZ': 'New Zealand', 'PH': 'Philippines', 'PS': 'Palestine',
+  'RO': 'Romania', 'RU': 'Russia', 'RW': 'Rwanda', 'SE': 'Sweden',
+  'SK': 'Slovakia', 'SY': 'Syria', 'TW': 'Taiwan', 'UA': 'Ukraine',
+  'US': 'United States', 'VE': 'Venezuela', 'VN': 'Vietnam', 'ZA': 'South Africa'
+} %}
 {% block content %}
+{%- if page.meta.logo %}
+<div class="org-page-header">
+  <img class="org-page-header-logo" src="{{ page.meta.logo }}" alt="{{ page.title }} logo">
+</div>
+{%- endif %}
 {%- if page.meta.status or page.meta.type or page.meta.country or page.meta.website %}
-<div class="project-meta-box md-typeset">
-  {%- if page.meta.logo %}
-  <img class="org-page-logo" src="{{ page.meta.logo }}" alt="{{ page.title }} logo">
-  {%- endif %}
+{%- set has_details = (page.meta.contact and (page.meta.contact.email or page.meta.contact.phone or page.meta.contact.form)) or page.meta.rss_feed or page.meta.ics_feed or page.meta.news_page or page.meta.concepts or page.meta.computed_activity %}
+{%- if has_details %}<details class="org-meta-details md-typeset">{% else %}<div class="org-meta-details md-typeset org-meta-details--plain">{% endif %}
+  <summary class="org-meta-summary">
+    {%- if page.meta.status %}<span class="org-meta-pill">Status: <span class="project-status-badge status-{{ page.meta.status }}">{{ page.meta.status }}</span></span>{% endif %}
+    {%- if page.meta.type %}<span class="org-meta-pill">Type: {{ type_icons.get(page.meta.type, '🏛️') }} {{ page.meta.type }}</span>{% endif %}
+    {%- if page.meta.country %}<span class="org-meta-pill">Country: {{ country_names.get(page.meta.country.upper(), page.meta.country) }}</span>{% endif %}
+    {%- if page.meta.website %}
+    <span class="org-meta-pill">Website:
+      {%- if 'web.archive.org' in page.meta.website %}
+      <a href="{{ page.meta.website }}" onclick="event.stopPropagation()" target="_blank" rel="noopener">Archive ↗</a>
+      {%- else %}
+      <a href="{{ page.meta.website }}" onclick="event.stopPropagation()" target="_blank" rel="noopener">{{ page.meta.website | replace('https://', '') | replace('http://', '') }}</a>
+      {%- endif %}
+    </span>
+    {%- endif %}
+  </summary>
+  {%- if has_details %}
   <table>
     <tbody>
       {%- if page.meta.status %}
@@ -31,10 +60,7 @@
       {%- if page.meta.country %}
       <tr>
         <th>Country</th>
-        <td>
-          {%- set code = page.meta.country | upper %}
-          {%- if code | length == 2 %}{{ ri.get(code[0], '') }}{{ ri.get(code[1], '') }} {% endif %}{{ page.meta.country }}
-        </td>
+        <td>{{ country_names.get(page.meta.country.upper(), page.meta.country) }}</td>
       </tr>
       {%- endif %}
       {%- if page.meta.website %}
@@ -106,9 +132,10 @@
       {%- endif %}
     </tbody>
   </table>
-</div>
+  {%- endif %}
+{%- if has_details %}</details>{% else %}</div>{% endif %}
 {%- endif %}
-{{ super() }}
+  {{ super() }}
 {% endblock %}
 {% block scripts %}
 {{ super() }}

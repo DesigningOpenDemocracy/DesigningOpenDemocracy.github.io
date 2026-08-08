@@ -4,7 +4,7 @@ type: civic tech
 status: active
 country: IN
 website: https://www.janaagraha.org
-logo: /assets/org-logos/janaagraha.ico
+logo: /assets/org-logos/janaagraha.svg
 contact:
   email: info@janaagraha.org
   source: https://www.janaagraha.org/get-involved

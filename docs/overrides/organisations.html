@@ -160,6 +160,23 @@
     return String.fromCodePoint(code.toUpperCase().charCodeAt(0) + base) +
            String.fromCodePoint(code.toUpperCase().charCodeAt(1) + base);
   }
+  var countryNames = {
+    AR:'Argentina', AT:'Austria', AU:'Australia', BE:'Belgium',
+    BO:'Bolivia', BR:'Brazil', CA:'Canada', CN:'China',
+    CU:'Cuba', DE:'Germany', EC:'Ecuador', EE:'Estonia',
+    ES:'Spain', EU:'European Union', FR:'France', GB:'United Kingdom',
+    GH:'Ghana', IL:'Israel', IN:'India', IS:'Iceland',
+    KE:'Kenya', LB:'Lebanon', MX:'Mexico', MY:'Malaysia',
+    NG:'Nigeria', NZ:'New Zealand', PH:'Philippines', PS:'Palestine',
+    RO:'Romania', RU:'Russia', RW:'Rwanda', SE:'Sweden',
+    SK:'Slovakia', SY:'Syria', TW:'Taiwan', UA:'Ukraine',
+    US:'United States', VE:'Venezuela', VN:'Vietnam', ZA:'South Africa'
+  };
+  function countryDisplay(code) {
+    if (!code) return '';
+    var name = countryNames[code.toUpperCase()] || code;
+    return code.length === 2 ? toFlag(code) + ' ' + name : name;
+  }
   function titleCase(s) {
     return s.replace(/-/g, ' ').replace(/\w\S*/g, function (t) {
       return t.charAt(0).toUpperCase() + t.substr(1);
@@ -178,12 +195,10 @@
 
   function rows() { return Array.from(tbody.querySelectorAll('tr')); }
 
-  // Replace country code text with emoji flag + code in table cells
+  // Replace country code text with emoji flag + full name in table cells
   rows().forEach(function (r) {
     var code = r.dataset.country;
-    if (code && code.length === 2) {
-      r.cells[2].textContent = toFlag(code) + ' ' + code;
-    }
+    r.cells[2].textContent = countryDisplay(code);
   });
 
   function daysSince(dateStr) {
@@ -198,7 +213,7 @@
   // (concepts, which are multi-valued per row).
   var facets = [
     { key: 'type',     list: document.querySelector('[data-facet-list="type"]'),     get: function (r) { return r.dataset.type; },   checked: {}, display: function (v) { return v; } },
-    { key: 'country',  list: document.querySelector('[data-facet-list="country"]'),  get: function (r) { return r.dataset.country; }, checked: {}, display: function (v) { return toFlag(v) + ' ' + v; } },
+    { key: 'country',  list: document.querySelector('[data-facet-list="country"]'),  get: function (r) { return r.dataset.country; }, checked: {}, display: function (v) { return countryDisplay(v); } },
     { key: 'status',   list: document.querySelector('[data-facet-list="status"]'),   get: function (r) { return r.dataset.status; },  checked: { active: true }, display: function (v) { return titleCase(v); } },
     { key: 'concepts', list: document.querySelector('[data-facet-list="concepts"]'), get: function (r) { return r.dataset.concepts ? r.dataset.concepts.split(',').filter(Boolean) : []; }, checked: {}, display: function (v) { return titleCase(v); }, multiValued: true }
   ];

@@ -85,7 +85,7 @@
   },
   "cafsa": {
     "license": "Fair use",
-    "note": "site asset, auto-detected img-logo",
+    "note": null,
     "path": "cafsa.png",
     "source": "https://cafsa.org.au/wp-content/uploads/2024/06/cafsa_logo_w.png",
     "title": "Citizen Assemblies for South Australia (CAfSA)"
@@ -211,9 +211,9 @@
   },
   "cppcc": {
     "license": "Fair use",
-    "note": "site asset, auto-detected favicon",
-    "path": "cppcc.ico",
-    "source": "http://subsites.chinadaily.com.cn/cppcc/att/5563.files/i/favicon.ico",
+    "note": null,
+    "path": "cppcc.png",
+    "source": "https://subsites.chinadaily.com.cn/cppcc/att/3865.files/i/logo.png",
     "title": "Chinese People's Political Consultative Conference (CPPCC)"
   },
   "darkenu": {
@@ -365,9 +365,9 @@
   },
   "flacso-cuba": {
     "license": "Fair use",
-    "note": "site asset, auto-detected img-logo",
+    "note": null,
     "path": "flacso-cuba.png",
-    "source": "https://flacso.org/assets/img/logo/logo.png",
+    "source": "https://flacso.org/assets/megamenu/images/logo.png",
     "title": "FLACSO-Cuba"
   },
   "flux-party": {
@@ -470,9 +470,9 @@
   },
   "janaagraha": {
     "license": "Fair use",
-    "note": "site asset, auto-detected favicon",
-    "path": "janaagraha.ico",
-    "source": "https://www.janaagraha.org/favicon.ico",
+    "note": null,
+    "path": "janaagraha.svg",
+    "source": "https://www.janaagraha.org/wp-content/uploads/2022/11/1.svg",
     "title": "Janaagraha Centre for Citizenship and Democracy"
   },
   "join-gov-tw": {

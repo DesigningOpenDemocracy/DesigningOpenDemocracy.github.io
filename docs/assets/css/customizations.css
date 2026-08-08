@@ -80,8 +80,100 @@
     color: var(--md-default-fg-color--light);
 }
 
-/* Individual project page metadata box */
+/* Org page — collapsible metadata bar */
+.org-meta-details {
+    border: 1px solid var(--md-default-fg-color--lightest);
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1.5rem;
+    background: var(--md-default-fg-color--lightest);
+}
 
+.org-meta-details--plain {
+    /* same visual but no open/close interaction */
+}
+
+.org-meta-summary {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    font-size: 0.88em;
+    list-style: none;
+    user-select: none;
+}
+
+.org-meta-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 12px;
+    background: rgba(0, 0, 0, 0.06);
+    white-space: nowrap;
+}
+
+.org-meta-summary::-webkit-details-marker {
+    display: none;
+}
+
+.org-meta-summary::marker {
+    display: none;
+    content: none;
+}
+
+.org-meta-summary::before {
+    content: "▸";
+    display: inline-block;
+    font-size: 0.75em;
+    margin-right: 0.1rem;
+    transition: transform 0.15s;
+    color: var(--md-default-fg-color--light);
+    flex-shrink: 0;
+}
+
+.org-meta-details[open] > .org-meta-summary::before {
+    transform: rotate(90deg);
+}
+
+.org-meta-details--plain .org-meta-summary {
+    cursor: default;
+}
+
+.org-meta-details--plain .org-meta-summary::before {
+    content: none;
+}
+
+.org-meta-details table {
+    margin: 0.5rem 0 0.25rem;
+}
+
+.org-meta-details th {
+    width: 7em;
+    font-weight: 600;
+    color: var(--md-default-fg-color--light);
+    padding: 0.2rem 0.75rem 0.2rem 0;
+}
+
+.org-meta-details .project-status-badge {
+    flex-shrink: 0;
+}
+
+.org-meta-summary a {
+    color: var(--md-typeset-a-color);
+    text-decoration: none;
+}
+
+.org-meta-summary a:hover {
+    text-decoration: underline;
+}
+
+.org-meta-summary a:hover {
+    text-decoration: underline;
+}
+
+/* Project page metadata box (remains a plain table) */
 .project-meta-box {
     border: 1px solid var(--md-default-fg-color--lightest);
     border-radius: 8px;
@@ -101,16 +193,19 @@
     padding: 0.2rem 0.75rem 0.2rem 0;
 }
 
-.org-page-logo {
-    display: block;
-    float: right;
-    width: 96px;
-    height: 64px;
-    margin: 0 0 0.5rem 0.75rem;
-    padding: 0.4rem;
+.org-page-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.org-page-header-logo {
+    height: 48px;
+    max-width: 200px;
     object-fit: contain;
     background: white;
-    border-radius: 6px;
+    border-radius: 4px;
+    padding: 2px;
     box-sizing: border-box;
 }
 

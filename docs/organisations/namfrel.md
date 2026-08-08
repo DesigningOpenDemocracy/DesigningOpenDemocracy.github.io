@@ -4,6 +4,7 @@ type: advocacy
 status: active
 country: PH
 website: https://web.archive.org/web/*/https://namfrel.com.ph
+logo: /assets/org-logos/namfrel.jpg
 last_checked: "2026-06-02"
 summary: "The Philippines' independent citizen election watchdog — founded in 1983, widely regarded as the world's first citizen-led election monitoring organisation, with 250,000+ volunteers conducting parallel vote counts and election observation."
 location:
