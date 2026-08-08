@@ -4,7 +4,7 @@ type: movement
 status: active
 country: EU
 website: https://diem25.org
-logo: /assets/org-logos/diem25.svg
+logo: /assets/org-logos/diem25.png
 summary: "A pan-European political movement founded by Yanis Varoufakis in 2016, calling for radical democratisation of EU institutions through transparency, a transnational constitutional assembly, and coordinated progressive politics across member states."
 location:
   latitude: 50.8503
