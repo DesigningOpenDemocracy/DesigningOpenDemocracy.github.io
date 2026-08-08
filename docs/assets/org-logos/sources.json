@@ -456,10 +456,10 @@
   },
   "internet-freedom-foundation": {
     "license": "Fair use",
-    "note": "site asset, auto-detected apple-touch-icon",
-    "path": "internet-freedom-foundation.png",
-    "source": "https://internetfreedom.in/icons/icon-512x512.png",
-    "title": "Internet Freedom Foundation (IFF)"
+    "note": null,
+    "path": "internet-freedom-foundation.svg",
+    "source": "https://internetfreedom.in/images/logo.svg",
+    "title": "Internet Freedom Foundation"
   },
   "israel-democracy-institute": {
     "license": "Fair use",
