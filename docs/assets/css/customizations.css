@@ -200,7 +200,7 @@
 }
 
 .org-page-header-logo {
-    height: 48px;
+    max-height: 48px;
     max-width: 200px;
     object-fit: contain;
     background: rgba(0,0,0,0.04);
