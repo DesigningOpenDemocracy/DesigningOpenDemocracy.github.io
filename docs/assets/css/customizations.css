@@ -810,7 +810,7 @@
     height: 40px;
     object-fit: contain;
     border-radius: 4px;
-    background: white;
+    background: rgba(0,0,0,0.04);
     vertical-align: middle;
     margin-right: 0.4em;
     padding: 2px;
