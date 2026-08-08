@@ -42,6 +42,9 @@ The assembly is notable as a real-world example of citizens establishing their o
 ## Links
 
 - Website: [reclaim.org.au/lpa-home](https://reclaim.org.au/lpa-home/)
+- Instagram: [@lismorepeoplesassembly](https://www.instagram.com/lismorepeoplesassembly/)
+- YouTube: [@LismorePeoplesAssembly](https://www.youtube.com/@LismorePeoplesAssembly)
+- Blog: [The year ahead for the Lismore People's Assembly](https://reclaim.org.au/the-year-ahead-for-the-lismore-peoples-assembly/) (May 2025)
 
 ## See also
 
