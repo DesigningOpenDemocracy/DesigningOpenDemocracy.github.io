@@ -4,6 +4,7 @@ type: platform
 status: active
 country: US
 website: https://www.kialo.com
+logo: /assets/org-logos/kialo.webp
 contact:
   form: https://support.kialo.com/en/contact/
   source: https://support.kialo.com/en/contact/
