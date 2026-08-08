@@ -4,7 +4,7 @@ type: party
 status: active
 country: CN
 website: https://www.mmzy.org.cn
-logo: /assets/org-logos/china-democratic-league.ico
+logo: /assets/org-logos/china-democratic-league.png
 contact:
   email: webmaster@mmzy.org.cn
   source: https://www.mmzy.org.cn/contact
