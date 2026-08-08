@@ -678,18 +678,11 @@
     "source": "https://web.archive.org/web/*/https://www.peopledecide.org.au",
     "title": "People Decide"
   },
-  "pirate-party": {
+  "pirate-party-australia": {
     "license": "CC BY-SA 3.0",
     "note": null,
     "path": "pirate-party.svg",
     "source": "https://commons.wikimedia.org/wiki/File:Pirate_Party_Australia_logo.svg",
-    "title": "Pirate Party Australia"
-  },
-  "pirate-party-australia": {
-    "license": "Fair use",
-    "note": "auto-detected",
-    "path": "pirate-party.svg",
-    "source": "https://pirateparty.org.au",
     "title": "Pirate Party Australia"
   },
   "polis": {
