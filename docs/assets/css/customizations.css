@@ -203,7 +203,7 @@
     height: 48px;
     max-width: 200px;
     object-fit: contain;
-    background: white;
+    background: rgba(0,0,0,0.04);
     border-radius: 4px;
     padding: 2px;
     box-sizing: border-box;
@@ -518,7 +518,7 @@
 }
 
 .org-map-icon-logo {
-  background: white !important;
+  background: rgba(0,0,0,0.04) !important;
   border-radius: 4px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
   padding: 2px;
