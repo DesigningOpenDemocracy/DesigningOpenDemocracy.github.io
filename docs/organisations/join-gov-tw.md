@@ -13,6 +13,7 @@ location:
   latitude: 25.0330
   longitude: 121.5654
   name: Taipei, Taiwan
+  precision: city
 concepts:
   - e-government
   - direct-democracy

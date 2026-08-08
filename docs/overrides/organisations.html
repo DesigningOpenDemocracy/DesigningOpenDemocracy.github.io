@@ -97,6 +97,9 @@
               data-phone="{{ contact.get('phone', '') }}"
               data-form="{{ contact.get('form', '') }}">
             <td>
+              {%- if file.page.meta.get('logo') %}
+              <img src="{{ file.page.meta.logo }}" alt="" class="org-row-logo" loading="lazy" decoding="async" width="20" height="20">
+              {%- endif %}
               <a href="/{{ file.page.url }}">{{ file.page.title }}</a>
               {%- if website and not website.startswith('https://web.archive.org') %}
               <a href="{{ website }}" class="org-ext-link" target="_blank" rel="noopener" title="{{ website }}">↗</a>

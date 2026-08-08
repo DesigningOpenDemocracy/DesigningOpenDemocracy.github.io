@@ -710,6 +710,16 @@
     vertical-align: super;
 }
 
+.org-row-logo {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    border-radius: 50%;
+    background: white;
+    vertical-align: middle;
+    margin-right: 0.4em;
+}
+
 .org-ext-link:hover {
     opacity: 1;
 }

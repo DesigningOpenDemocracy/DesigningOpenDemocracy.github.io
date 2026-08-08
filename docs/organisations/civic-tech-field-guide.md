@@ -14,6 +14,7 @@ location:
   latitude: 40.7128
   longitude: -74.0060
   name: New York City, USA
+  precision: city
 activity:
   manual:
     date: 2026-08-07
