@@ -51,8 +51,8 @@
   "australian-democracy-network": {
     "license": "Fair use",
     "note": "site asset, auto-detected og-image",
-    "path": "australian-democracy-network.jpg",
-    "source": "https://raisely-images.imgix.net/australian-democracy-network/uploads/parliament-house-jpg-25a43e.jpg",
+    "path": "australian-democracy-network.png",
+    "source": "https://raisely-images.imgix.net/australian-democracy-network/uploads/adn-logo-png-c92918.png",
     "title": "Australian Democracy Network"
   },
   "australian-democrats": {
@@ -688,8 +688,8 @@
   "prediki": {
     "license": "Fair use",
     "note": "site asset, auto-detected favicon",
-    "path": "prediki.ico",
-    "source": "https://www.prediki.com/static/img/favicon.ico",
+    "path": "prediki.svg",
+    "source": "https://www.prediki.com/static/img/prediki_logo.svg",
     "title": "Prediki"
   },
   "prs-legislative-research": {
