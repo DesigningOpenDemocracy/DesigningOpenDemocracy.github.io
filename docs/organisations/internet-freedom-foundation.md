@@ -4,6 +4,7 @@ type: advocacy
 status: active
 country: IN
 website: https://internetfreedom.in
+logo: /assets/org-logos/internet-freedom-foundation.png
 contact:
   email: media@internetfreedom.in
   source: https://internetfreedom.in/contact

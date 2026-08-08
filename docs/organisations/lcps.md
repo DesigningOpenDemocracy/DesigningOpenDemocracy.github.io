@@ -4,6 +4,7 @@ type: research
 status: active
 country: LB
 website: https://www.lcps-lebanon.org
+logo: /assets/org-logos/lcps.jpg
 contact:
   email: info@lcps-lebanon.org
   source: https://www.lcps-lebanon.org

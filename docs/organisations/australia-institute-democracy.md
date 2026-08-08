@@ -4,6 +4,7 @@ type: research
 status: active
 country: AU
 website: https://australiainstitute.org.au/about/structure/democracy-accountability/
+logo: /assets/org-logos/australia-institute-democracy.png
 contact:
   email: mail@australiainstitute.org.au
   phone: "02 6130 0530"

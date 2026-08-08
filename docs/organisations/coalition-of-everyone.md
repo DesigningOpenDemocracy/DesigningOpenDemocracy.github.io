@@ -4,6 +4,7 @@ type: advocacy
 status: inactive
 country: AU
 website: https://web.archive.org/web/*/https://coalitionofeveryone.com/
+logo: /assets/org-logos/coalition-of-everyone.ico
 summary: "An Australian organisation that ran participatory and deliberative democracy processes in communities — aimed at repairing and building democracy into everyday life. Wound up after six years of operation."
 concepts:
   - citizens-assembly

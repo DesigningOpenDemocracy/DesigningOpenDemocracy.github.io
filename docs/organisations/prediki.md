@@ -4,6 +4,7 @@ type: platform
 status: active
 country: AT
 website: https://www.prediki.com
+logo: /assets/org-logos/prediki.ico
 contact:
   email: support@prediki.com
   source: https://www.prediki.com/meta/en/prediki-support/

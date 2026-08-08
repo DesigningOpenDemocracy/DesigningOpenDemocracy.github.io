@@ -4,6 +4,7 @@ type: advocacy
 status: active
 country: AU
 website: https://www.communityindependentsproject.org
+logo: /assets/org-logos/community-independents-project.webp
 contact:
   email: info@communityindependentsproject.org
   source: https://www.communityindependentsproject.org/contact-us

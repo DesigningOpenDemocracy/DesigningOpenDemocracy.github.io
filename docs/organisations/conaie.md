@@ -4,6 +4,7 @@ type: governance
 status: active
 country: EC
 website: https://conaie.org
+logo: /assets/org-logos/conaie.ico
 contact:
   email: conaie@ecuanex.net.ec
   source: http://hosted.nativeweb.org/conaie/index.html

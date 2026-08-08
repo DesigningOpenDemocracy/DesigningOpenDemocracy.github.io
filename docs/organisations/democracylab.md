@@ -4,6 +4,7 @@ type: civic tech
 status: active
 country: US
 website: https://www.democracylab.org
+logo: /assets/org-logos/democracylab.png
 contact:
   form: https://www.democracylab.org/contact
   source: https://www.democracylab.org/contact

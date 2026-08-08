@@ -4,6 +4,7 @@ type: government
 status: active
 country: CN
 website: http://en.cppcc.gov.cn
+logo: /assets/org-logos/cppcc.ico
 summary: "China's top political advisory body — a CPC-led consultative institution comprising ~3,000 delegates. Scholars characterise it as a 'flower vase' operating under 'bounded articulation': members can propose within preset CPC limits but cannot challenge the structure of authority. Included here as a documented example of managed consultation, and where it fails the good-faith accountability test."
 location:
   latitude: 39.9042

@@ -4,6 +4,7 @@ type: research
 status: inactive
 country: US
 website: https://web.archive.org/web/*/https://democracy.foundation/
+logo: /assets/org-logos/democracy-foundation.png
 summary: "An internet project dedicated to research and design of innovative decision-making methods, best known for a curated list of e-democracy and e-voting projects that remains maintained."
 concepts:
   - direct-democracy

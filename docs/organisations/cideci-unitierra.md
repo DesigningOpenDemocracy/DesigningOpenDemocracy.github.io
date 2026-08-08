@@ -4,6 +4,7 @@ type: education
 status: active
 country: MX
 website: https://unitierra.org
+logo: /assets/org-logos/cideci-unitierra.png
 contact:
   email: unitierraecuador@gmail.com
   source: https://unitierra.org

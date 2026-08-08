@@ -4,6 +4,7 @@ type: platform
 status: active
 country: AR
 website: https://democracy.earth
+logo: /assets/org-logos/democracy-earth.png
 summary: "An open-source civic technology foundation building quadratic voting and sovereign identity tools — aiming to make democratic participation internet-native and censorship-resistant."
 concepts:
   - democracy-tools

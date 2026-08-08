@@ -4,6 +4,7 @@ type: party
 status: deregistered
 country: AU
 website: https://web.archive.org/web/*/https://voteflux.org/
+logo: /assets/org-logos/flux.svg
 summary: "An Australian political party that uses Issue-Based Direct Democracy (IBDD) to let constituents direct how elected representatives vote in parliament."
 contributors:
   - Charlie

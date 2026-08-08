@@ -4,6 +4,7 @@ type: party
 status: active
 country: AU
 website: https://pirateparty.org.au
+logo: /assets/org-logos/pirate-party.svg
 contact:
   email: media@pirateparty.org.au
   source: https://pirateparty.org.au/contact

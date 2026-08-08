@@ -4,6 +4,7 @@ type: platform
 status: inactive
 country: AU
 website: https://web.archive.org/web/*/https://secure.vote
+logo: /assets/org-logos/securevote.png
 summary: "An Australian blockchain voting platform providing secure, scalable, and anonymous digital voting for governments, organisations, and token-based ecosystems. Now defunct — domain squatted."
 location:
   latitude: -33.8688

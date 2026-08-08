@@ -4,6 +4,7 @@ type: advocacy
 status: active
 country: GB
 website: https://www.sortitionfoundation.org
+logo: /assets/org-logos/sortition-foundation.png
 contact:
   email: press@sortitionfoundation.org
   form: https://www.sortitionfoundation.org/contact

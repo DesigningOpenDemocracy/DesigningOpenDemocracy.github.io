@@ -4,6 +4,7 @@ type: advocacy
 status: active
 country: GB
 website: https://www.electoral-reform.org.uk
+logo: /assets/org-logos/electoral-reform-society.png
 contact:
   email: ers@electoral-reform.org.uk
   source: https://www.electoral-reform.org.uk/contact

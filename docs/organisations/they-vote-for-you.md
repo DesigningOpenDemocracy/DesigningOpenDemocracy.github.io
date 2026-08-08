@@ -4,6 +4,7 @@ type: civic tech
 status: active
 country: AU
 website: https://theyvoteforyou.org.au
+logo: /assets/org-logos/they-vote-for-you.ico
 contact:
   email: contact@theyvoteforyou.org.au
   source: https://theyvoteforyou.org.au

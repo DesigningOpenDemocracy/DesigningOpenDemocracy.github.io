@@ -4,6 +4,7 @@ type: advocacy
 status: active
 country: AU
 website: https://www.sortitionfoundation.org/become_a_member_australia
+logo: /assets/org-logos/sortition-foundation-australia.png
 contact:
   email: press@sortitionfoundation.org
   form: https://www.sortitionfoundation.org/contact

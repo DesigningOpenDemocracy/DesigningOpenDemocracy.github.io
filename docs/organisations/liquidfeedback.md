@@ -4,6 +4,7 @@ type: platform
 status: active
 country: DE
 website: https://liquidfeedback.com
+logo: /assets/org-logos/liquidfeedback.png
 contact:
   email: sales@liquidfeedback.com
   phone: "+49 30 9789 4550"

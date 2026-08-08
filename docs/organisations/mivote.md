@@ -4,6 +4,7 @@ type: platform
 status: deregistered
 country: AU
 website: https://web.archive.org/web/20190718233549/https://www.mivote.org.au/
+logo: /assets/org-logos/mivote.png
 summary: "An Australian civic technology platform and political party (2014–c.2019) that presented citizens with four structured policy destinations per issue — not yes/no polls — backed by a research and ethics pipeline designed to produce informed, non-ideological votes that constitutionally bound its Senate candidates."
 contributors:
   - BrianKhuu

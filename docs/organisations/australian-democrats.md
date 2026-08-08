@@ -4,6 +4,7 @@ type: party
 status: active
 country: AU
 website: https://democrats.org.au
+logo: /assets/org-logos/australian-democrats.png
 contact:
   form: https://www.democrats.org.au/contact/
   source: https://www.democrats.org.au/contact/

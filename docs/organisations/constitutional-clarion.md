@@ -4,6 +4,7 @@ type: media
 status: active
 country: AU
 website: https://www.youtube.com/@constitutionalclarion1901
+logo: /assets/org-logos/constitutional-clarion.jpg
 summary: "A YouTube channel run by Professor Emerita Anne Twomey (Sydney Law School) — a one-person public education initiative explaining how the Australian Constitution actually works: reserve powers, conventions, federalism, and referendum mechanics — for a general audience rather than a legal one."
 contributors:
   - BrianKhuu

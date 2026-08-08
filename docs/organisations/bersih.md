@@ -4,6 +4,7 @@ type: advocacy
 status: active
 country: MY
 website: https://bersih.org
+logo: /assets/org-logos/bersih.png
 contact:
   email: info@bersih.org
   phone: "+603-76280371"

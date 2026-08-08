@@ -4,6 +4,7 @@ type: practice
 status: active
 country: CA
 website: https://www.masslbp.com
+logo: /assets/org-logos/mass-lbp.webp
 contact:
   email: hello@masslbp.com
   source: https://www.masslbp.com/about

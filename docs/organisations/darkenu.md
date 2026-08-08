@@ -4,6 +4,7 @@ type: advocacy
 status: active
 country: IL
 website: https://darkenu.org.il/en
+logo: /assets/org-logos/darkenu.png
 contact:
   email: thisis@darkenu.org.il
   phone: "+972-3-5168005"

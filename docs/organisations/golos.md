@@ -4,6 +4,7 @@ type: advocacy
 status: inactive
 country: RU
 website: https://web.archive.org/web/*/https://www.golos.org/
+logo: /assets/org-logos/golos.png
 summary: "Russia's only independent nationwide election-monitoring organisation for 25 years — training observers, documenting electoral violations, and operating a public 'Map of Violations' platform. Dissolved in July 2025 after its co-chair was convicted under foreign agent legislation."
 location:
   latitude: 55.7558

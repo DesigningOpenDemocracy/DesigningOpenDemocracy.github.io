@@ -4,6 +4,7 @@ type: platform
 status: inactive
 country: RO
 website: https://web.archive.org/web/*/https://votemonitor.org/
+logo: /assets/org-logos/vote-monitor.png
 summary: "An open-source election observation platform built by Code for Romania — allows accredited observers to submit real-time field reports from polling stations, replacing paper forms with structured mobile data collection."
 concepts:
   - democracy-tools

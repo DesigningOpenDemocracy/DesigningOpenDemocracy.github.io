@@ -4,6 +4,7 @@ type: advocacy
 status: active
 country: AU
 website: https://australiandemocracy.org.au
+logo: /assets/org-logos/australian-democracy-network.jpg
 contact:
   email: media@australiandemocracy.org.au
   form: https://australiandemocracy.org.au/contact

@@ -4,6 +4,7 @@ type: research
 status: active
 country: CA
 website: https://participedia.net
+logo: /assets/org-logos/participedia.jpg
 contact:
   email: info@participedia.net
   source: https://participedia.net/about

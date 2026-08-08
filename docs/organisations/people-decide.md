@@ -4,6 +4,7 @@ type: platform
 status: inactive
 country: AU
 website: https://web.archive.org/web/*/https://www.peopledecide.org.au
+logo: /assets/org-logos/people-decide.png
 summary: "An Australian participatory democracy platform and political party of independents allowing citizens to vote on, create, and contribute to national laws and local government decisions online."
 location:
   latitude: -33.8688

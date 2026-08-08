@@ -4,6 +4,7 @@ type: platform
 status: inactive
 country: AU
 website: https://web.archive.org/web/*/https://horizonstate.com/
+logo: /assets/org-logos/horizon-state.png
 summary: "An Australian blockchain voting platform that aimed to bring secure, transparent digital voting to governments and organisations. Wound down after initial pilots."
 concepts:
   - end-to-end-verifiable-voting-system
