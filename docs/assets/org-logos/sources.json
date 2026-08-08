@@ -512,9 +512,9 @@
   },
   "lcps": {
     "license": "Fair use",
-    "note": "site asset, auto-detected og-image",
+    "note": "Instagram profile picture, square crop of organizational logo",
     "path": "lcps.jpg",
-    "source": "https://api.lcps-lebanon.org/content/uploads/corporatepages/lcps.jpg",
+    "source": "https://www.instagram.com/lcpslebanon/",
     "title": "Lebanese Center for Policy Studies (LCPS)"
   },
   "liquid-democracy-ev": {
@@ -659,9 +659,9 @@
   },
   "participatory-budgeting-project": {
     "license": "Fair use",
-    "note": "site asset, auto-detected img-logo",
+    "note": "stacked color logo, from site schema (JSON-LD)",
     "path": "participatory-budgeting-project.png",
-    "source": "https://www.participatorybudgeting.org/wp-content/uploads/2023/01/PBP-Horizontal-Black-1536x100.png",
+    "source": "https://www.participatorybudgeting.org/wp-content/uploads/2023/10/PBP-Stacked-Color.png",
     "title": "Participatory Budgeting Project"
   },
   "participedia": {
