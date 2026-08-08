@@ -213,6 +213,20 @@
     background: rgba(0,0,0,0.45);
 }
 
+.org-page-banner {
+    max-height: 96px;
+    max-width: 100%;
+    object-fit: contain;
+    background: rgba(0,0,0,0.04);
+    border-radius: 4px;
+    padding: 2px;
+    box-sizing: border-box;
+}
+
+.org-page-banner.org-logo-needs-dark {
+    background: rgba(0,0,0,0.45);
+}
+
 /****************************************/
 
 #hero-container {

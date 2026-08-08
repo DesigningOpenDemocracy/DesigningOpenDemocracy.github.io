@@ -4,7 +4,8 @@ type: practice
 status: active
 country: AU
 website: https://reclaim.org.au/lpa-home/
-logo: /assets/org-logos/lismore-peoples-assembly.jpg
+logo: /assets/org-logos/lismore-peoples-assembly-icon.jpg
+banner: /assets/org-logos/lismore-peoples-assembly-banner.jpg
 contact:
   form: https://reclaim.org.au/contact
   source: https://reclaim.org.au/contact
