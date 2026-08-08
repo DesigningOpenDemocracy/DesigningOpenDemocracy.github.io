@@ -34,7 +34,12 @@ activity:
     note: "News page unreachable — direct fetch tooling unavailable this run; web search confirms the coalition and its international wing (Global Bersih) remain active with current reform/campaign pages"
     hint: bot_blocked
     checked: 2026-06-28
-last_checked: "2026-06-28"
+  dod:
+    date: 2026-08-08
+    note: "News page source fetched 8 Aug 2026; 8 pages of news posts, most recent March 2025; site footer has copyright 2026 confirming maintained"
+    url: https://bersih.org/news/
+    checked: 2026-08-08
+last_checked: "2026-08-08"
 ---
 
 BERSIH 2.0 (Coalition for Clean and Fair Elections) is a non-partisan coalition of over 90 Malaysian civil society organisations, formally launched in April 2010 as a continuation of the original BERSIH coalition formed in 2007. It is Malaysia's most prominent electoral reform movement.
@@ -47,10 +52,17 @@ BERSIH's work includes independent election observation (with trained observer t
 - Voter registration and civic education campaigns
 - Electoral reform advocacy and legal action
 - Election observation reports on general elections
+- **Pemantau** — a dedicated election monitoring platform (pemantau.org)
+- **Ketuanan Pengundi** — a "voter supremacy" campaign
 
 ## Links
 
 - Website: [bersih.org](https://bersih.org)
+- News: [bersih.org/news](https://bersih.org/news)
+- Facebook: [BERSIH2.0](https://www.facebook.com/BERSIH2.0)
+- X: [@bersihofficial](https://twitter.com/bersihofficial)
+- YouTube: [BersihTV](https://www.youtube.com/c/BersihTV)
+- Instagram: [@bersihmsia](https://www.instagram.com/bersihmsia)
 
 ## See also
 

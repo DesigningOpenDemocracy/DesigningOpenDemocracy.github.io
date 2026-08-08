@@ -54,7 +54,8 @@ The organisation is distinct from the concept of liquid democracy — the name r
 
 - Website: [liqd.net](https://liqd.net/en/)
 - meinBerlin: [mein.berlin.de](https://mein.berlin.de)
-- Source code: [github.com/liqd/adhocracy4](https://github.com/liqd/adhocracy4)
+- GitHub: [github.com/liqd](https://github.com/liqd)
+- Twitter: [@liqd_de](https://twitter.com/liqd_de)
 
 ## See also
 

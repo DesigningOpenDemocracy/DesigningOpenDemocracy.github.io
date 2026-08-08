@@ -519,9 +519,9 @@
   },
   "liquid-democracy-ev": {
     "license": "Fair use",
-    "note": "site asset, auto-detected img-logo",
+    "note": "GitHub organisation avatar (logo mark)",
     "path": "liquid-democracy-ev.png",
-    "source": "https://liqd.net/media/images/Transparente_ZivilgesellschaftPNG.width-500.png",
+    "source": "https://github.com/liqd",
     "title": "Liquid Democracy e.V."
   },
   "liquidfeedback": {

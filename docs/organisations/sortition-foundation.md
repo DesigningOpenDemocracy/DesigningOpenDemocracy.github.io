@@ -11,11 +11,13 @@ contact:
   source: https://www.sortitionfoundation.org/contact
   checked: 2026-08-01
 news_page: https://www.sortitionfoundation.org/updates
-summary: "A UK-based organisation advocating for the use of random selection (sortition) in democratic institutions, most prominently campaigning to replace the House of Lords with a randomly selected citizens' chamber."
+rss_feed: https://www.sortitionfoundation.org/updates.rss
+summary: "A UK-based organisation advocating for sortition (random selection) in democratic institutions — running the sortition process for European Citizens' Panels, campaigning to replace the UK House of Lords with a citizens' chamber, and building an open-source lottery platform."
 location:
-  latitude: 55.9533
-  longitude: -3.1883
-  name: Edinburgh, United Kingdom
+  latitude: 52.2340
+  longitude: 0.0866
+  name: Cambridge, United Kingdom
+  precision: city
 concepts:
   - sortition
   - deliberative-democracy
@@ -29,33 +31,58 @@ activity:
     note: "No feed found"
     checked: 2026-06-07
   manual:
-    date: 2026-02-26
-    note: "website loaded. https://www.sortitionfoundation.org/updates is the news page. 26 February, 2026 'Frontiers of Democratic Lotteries Workshop'"
+    date: 2026-06-18
+    note: "Latest update: We're looking for a new Independent Director (18 June, 2026)"
     url: https://www.sortitionfoundation.org/updates
-    checked: 2026-06-07
+    checked: 2026-08-08
   scrape:
     note: "News page unreachable"
     hint: bot_blocked
     checked: 2026-06-08
-last_checked: "2026-06-15"
+  dod:
+    date: 2026-06-18
+    note: "Updates page fetched 8 Aug 2026; most recent post 18 Jun 2026 (hiring Independent Director); previous post 26 Feb 2026 (Frontiers of Democratic Lotteries Workshop)"
+    url: https://www.sortitionfoundation.org/updates
+    checked: 2026-08-08
+last_checked: "2026-08-08"
 ---
+The Sortition Foundation is the UK's leading organisation specifically dedicated to sortition — the selection of decision-makers by random lot rather than election. Founded by Brett Hennig, it combines advocacy, campaigning, and hands-on lottery services: the foundation designs and runs the stratified random-selection process for major deliberative exercises, including the European Citizens' Panels convened by the European Commission.
 
-The Sortition Foundation is the UK's leading organisation specifically dedicated to sortition — the selection of decision-makers by random lot rather than election. Their flagship campaign is the **House of Citizens**: replacing the appointed House of Lords with a chamber of randomly selected citizens who serve fixed, non-renewable terms.
+## Campaigns and projects
 
-Beyond the Lords campaign, the foundation promotes sortition more broadly: in local government, planning processes, and deliberative policy forums. Their case is that random selection produces more representative, less partisan, and more considered decision-making than competitive elections — a position they support with reference to the growing body of evidence from citizens' assemblies worldwide.
+**House of Citizens.** The foundation's flagship campaign aims to replace the appointed House of Lords with a randomly selected citizens' chamber serving fixed, non-renewable terms. Polling commissioned by the foundation in May 2025 found that a majority of UK respondents supported the idea.[^poll-lords]
 
-The foundation has become a key reference point for anyone working on democratic innovation in the UK and internationally.
+**Greater Manchester Citizens' Assembly.** Under the banner "Our Home: Our Say," the foundation has been canvassing Greater Manchester residents and building a campaign for a regional citizens' assembly. A May 2026 poll found nearly 60% of Mancunians supported one.[^gm-poll]
+
+**Open Democratic Lottery Platform.** An open-source software tool for running transparent sortition processes — handling the stratified random selection, invitation, and onboarding of participants for citizens' assemblies and panels.[^odlp]
+
+**European Citizens' Panels.** The foundation was commissioned to design and deliver the sortition process for the European Commission's Citizens' Panels, recruiting representative samples of EU citizens for deliberative exercises on topics including pollinators, climate, and youth participation. It has published methodology reports on how the sortition was conducted.[^ecps]
+
+**International work.** Beyond the UK, the foundation has run the lottery selection for assemblies in Australia (energy-transition conversations in Menzies and Bennelong), Canada (Burnaby's Official Community Plan assembly), and Cumbria (climate voices). It also runs an annual "Frontiers of Democratic Lotteries" workshop in Budapest and maintains a [Sortition Foundation Australia](sortition-foundation-australia.md) chapter in Melbourne.[^updates]
 
 ## Key people
 
-- **Brett Hennig** — co-founder and author of *The End of Politicians: Democratic Alternatives to Them* (Scribe Publications, 2017), which makes the systematic case for replacing elected legislatures with sortition-selected assemblies. The foundation's principal public voice internationally.[^hennig]
+- **Brett Hennig** — co-founder and author of *The End of Politicians: Democratic Alternatives to Them* (Scribe Publications, 2017). The foundation's principal public voice internationally.[^hennig]
 
 ## Links
 
 - Website: [sortitionfoundation.org](https://www.sortitionfoundation.org)
+- Updates: [sortitionfoundation.org/updates](https://www.sortitionfoundation.org/updates)
+- Open Democratic Lottery Platform: [sortitionfoundation.org/opendlp](https://www.sortitionfoundation.org/opendlp)
 
 ## See also
 
+- [Sortition Foundation (Australia)](sortition-foundation-australia.md) — Australian chapter
 - [Your Party is using sortition](../../blog/posts/2025-12-07-your-party-is-using-sortition.md) — DOD blog post on a UK party adopting sortition in practice
 
 [^hennig]: Brett Hennig, *The End of Politicians: Democratic Alternatives to Them*, Scribe Publications, 2017.
+
+[^updates]: [Updates page](https://www.sortitionfoundation.org/updates), Sortition Foundation. Fetched 8 August 2026 — active with 20+ posts from February 2025 to June 2026.
+
+[^poll-lords]: [New poll finds widespread support for replacing the House of Lords](https://www.sortitionfoundation.org/uk_poll_may_2025), Sortition Foundation, 8 May 2025.
+
+[^gm-poll]: [Nearly 60% of Mancunians want a citizens' assembly](https://www.sortitionfoundation.org/gm_polling_may_2026), Sortition Foundation, 6 May 2026.
+
+[^odlp]: [Introducing the Open Democratic Lottery Platform](https://www.sortitionfoundation.org/introducing_the_open_democratic_lottery_platform), Sortition Foundation, 8 July 2025.
+
+[^ecps]: [Empowering Citizens Across Europe: Sortition in the European Citizens' Panels](https://www.sortitionfoundation.org/ecps_2025), Sortition Foundation, 10 June 2025.

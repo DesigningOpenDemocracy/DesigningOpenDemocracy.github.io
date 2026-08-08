@@ -29,13 +29,14 @@ activity:
     note: "RSS feed active"
     url: https://diem25.org/news/feed
   dod:
-    date: 2026-07-05
-    note: "Direct fetch 403 (bot-blocked); corroborated active via web search — Varoufakis publishing on diem25.org through mid-2026"
-    checked: 2026-07-05
-last_checked: "2026-07-05"
+    date: 2026-08-08
+    note: "News page source fetched 8 Aug 2026; active publishing — latest: Yanis Varoufakis on Brexit/Project Smear (3 Aug), ICE-ification of Europe (5 Aug), MERA25 Berlin campaign launch for Sep 2026 elections"
+    url: https://diem25.org/news/
+    checked: 2026-08-08
+last_checked: "2026-08-08"
 ---
 
-DiEM25 (Democracy in Europe Movement 2025) was founded by economist and former Greek Finance Minister Yanis Varoufakis in 2016, with the stated goal of democratising the European Union before it disintegrated — the "2025" being an original deadline, since passed. The movement has since evolved into a sustained transnational political organisation with chapters across Europe and affiliated national parties (MERA25 in Greece, and others).
+DiEM25 (Democracy in Europe Movement 2025) was founded by economist and former Greek Finance Minister Yanis Varoufakis in 2016, with the stated goal of democratising the European Union before it disintegrated — the "2025" being an original deadline, since passed. The movement has since evolved into a sustained transnational political organisation with chapters across Europe and affiliated national political parties: **MERA25** (MeRA25), operating in Germany, Greece, Italy, Sweden, and the Netherlands. Varoufakis continues to publish regularly on the site.
 
 ## Why it's notable for democracy watchers
 
@@ -50,6 +51,10 @@ DiEM25 has explicit left-progressive political positions — anti-austerity, pro
 ## Links
 
 - Website: [diem25.org](https://diem25.org)
+- News: [diem25.org/news](https://diem25.org/news)
+- X: [@DiEM_25](https://twitter.com/DiEM_25)
+- YouTube: [DiEM25](https://www.youtube.com/channel/UCnMk-6Brd8rVEKWSWkwsWUg)
+- Bluesky: [@diem25.bsky.social](https://bsky.app/profile/diem25.bsky.social)
 
 ## See also
 

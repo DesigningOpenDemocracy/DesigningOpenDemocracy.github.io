@@ -34,6 +34,11 @@ activity:
     note: "News page found, no machine-readable date"
     hint: no_markup
     checked: 2026-06-08
+  dod:
+    date: 2026-08-08
+    note: "News page fetched 8 Aug 2026; active publishing — recent topics: AI accountability, European AI & Society Fund ($1M grant), strategy shift toward tech accountability, new CEO announced, global polling on AI perceptions"
+    url: https://luminategroup.com/news-and-insights
+    checked: 2026-08-08
 ---
 
 Luminate is a global philanthropic organisation established in 2018, spun out from the Omidyar Network (founded by eBay co-founder Pierre Omidyar) to focus specifically on civic empowerment and open governance. It operates globally with offices in London, Washington DC, Nairobi, São Paulo, and other cities.
@@ -45,13 +50,16 @@ Luminate's grantmaking focuses on four interconnected areas:
 - **Data & Digital Rights** — protecting citizens' rights in the digital environment; addressing surveillance, data exploitation, and algorithmic accountability
 - **Government Transparency & Accountability** — supporting open government initiatives, freedom of information, and anti-corruption work
 
-Luminate makes grants to organisations across the world and is one of the primary international funders active in the civic technology and democracy design space. It funds organisations working on everything from participatory governance platforms to digital rights advocacy.
+Luminate makes grants to organisations across the world and is one of the primary international funders active in the civic technology and democracy design space. Recent funding and strategy indicates an increasing focus on **tech accountability** — holding Big Tech, social media platforms, and AI companies accountable for their impact on democracy and human rights. Recent grants include $1 million to the European AI & Society Fund and support for the AI Accountability Lab. They also fund partner organisations in Brazil, Colombia, and across Africa and Asia.
 
-For organisations working in civic tech, participatory governance, or democratic media, Luminate is a key funder to be aware of — alongside the Open Society Foundations and the Hewlett Foundation.
+For organisations working in civic tech, participatory governance, or democratic media, Luminate is a key funder to be aware of — alongside the Open Society Foundations and the Hewlett Foundation. Their newsletter is run through Axios HQ at [luminate.read.axioshq.com](https://luminate.read.axioshq.com/signup/newsletter).
 
 ## Links
 
 - Website: [luminategroup.com](https://www.luminategroup.com)
+- News & insights: [luminategroup.com/news-and-insights](https://luminategroup.com/news-and-insights)
+- LinkedIn: [luminategroup](https://www.linkedin.com/company/luminategroup/)
+- YouTube: [@luminategroup](https://www.youtube.com/@luminategroup)
 - Grants: [luminategroup.com/grants](https://www.luminategroup.com/grants)
 
 ## See also
