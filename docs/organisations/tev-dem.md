@@ -1,5 +1,6 @@
 ---
 title: TEV-DEM (Movement for a Democratic Society)
+logo: /assets/org-logos/tev-dem.png
 type: governance
 status: active
 country: SY
