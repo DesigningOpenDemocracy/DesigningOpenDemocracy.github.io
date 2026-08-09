@@ -6,31 +6,33 @@ country: AT
 website: https://democracy-technologies.org
 logo: /assets/org-logos/democracy-technologies.png
 contact:
+  checked: 2026-07-30
   email: contact@democracy-technologies.org
   source: https://democracy-technologies.org/about
-  checked: 2026-07-30
-summary: "A curated database and research initiative mapping the global landscape of democratic innovation tools — tracking 200+ platforms across participatory, deliberative, and digital democracy."
+summary: A curated database and research initiative mapping the global landscape of
+  democratic innovation tools — tracking 200+ platforms across participatory, deliberative,
+  and digital democracy.
 concepts:
-  - deliberative-democracy
-  - e-government
-  - democracy
-  - direct-democracy
-  - meta-organisation
+- deliberative-democracy
+- e-government
+- democracy
+- direct-democracy
+- meta-organisation
 location:
   latitude: 48.2082
   longitude: 16.3738
   name: Vienna, Austria
   precision: city
-last_checked: "2026-05-29"
 activity:
+  manual:
+    checked: 2026-06-07
+    date: 2024-09-04
+    note: website loaded. Last article at September 4, 2024 AI-Washing Is an Opportunity
   sitemap:
+    checked: 2026-08-09
     date: 2025-09-03
     note: Page last modified (from sitemap)
-    checked: 2026-08-09
-  manual:
-    date: 2024-09-04
-    note: "website loaded. Last article at September 4, 2024 AI-Washing Is an Opportunity"
-    checked: 2026-06-07
+last_checked: '2026-05-29'
 ---
 
 Democracy Technologies is a research initiative and curated database that maps the global landscape of digital tools and platforms for democratic participation. It is part of the **Innovation in Politics Institute**, based in Vienna and Berlin.

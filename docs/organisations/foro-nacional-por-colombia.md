@@ -4,28 +4,37 @@ type: ngo
 status: active
 country: CO
 website: https://foro.org.co
+logo: /assets/org-logos/foro-nacional-por-colombia.svg
 contact:
+  checked: 2026-08-09
   email: foro@foro.org.co
   source: https://foro.org.co
-  checked: 2026-08-09
-logo: /assets/org-logos/foro-nacional-por-colombia.svg
-summary: "A long-established Colombian civil society foundation working on citizen participation, peace accord implementation monitoring, and extractive industry governance — publishes Revista Foro (edition 118), runs anti-vote-wasting campaigns, and operates regional chapters in Bogotá and Cali."
+summary: A long-established Colombian civil society foundation working on citizen
+  participation, peace accord implementation monitoring, and extractive industry governance
+  — publishes Revista Foro (edition 118), runs anti-vote-wasting campaigns, and operates
+  regional chapters in Bogotá and Cali.
 concepts:
-  - democracy
-  - deliberative-democracy
-  - participatory-budgeting
+- democracy
+- deliberative-democracy
+- participatory-budgeting
 location:
-  latitude: 4.7110
+  latitude: 4.711
   longitude: -74.0721
   name: Bogotá, Colombia
   precision: city
+events:
+- date: '1984-01-01'
+  notable: true
+  title: Founded as one of Colombia's longest-established civil society organisations
+    for democratic participation
 activity:
   rss:
-    date: 2026-04-21
-    note: "Latest post: Informe Cuatro. Observatorio de la participación ciudadana en la implementación "
-    url: https://foro.org.co/informe-cuatro-observatorio-de-la-participacion-ciudadana-en-la-implementacion-del-acuerdo-final/
     checked: 2026-08-09
-last_checked: "2026-08-09"
+    date: 2026-04-21
+    note: 'Latest post: Informe Cuatro. Observatorio de la participación ciudadana
+      en la implementación '
+    url: https://foro.org.co/informe-cuatro-observatorio-de-la-participacion-ciudadana-en-la-implementacion-del-acuerdo-final/
+last_checked: '2026-08-09'
 ---
 
 Foro Nacional por Colombia is one of Colombia's longest-established civil society organisations, working on citizen participation, peace accord implementation (through the OPIAF observatory — Observatorio de la Participación Ciudadana en la Implementación del Acuerdo de Paz), extractive industry governance, and youth civic education. Its institutional longevity — decades rather than years — is itself significant in a country where many civil society organisations are project-funded and short-lived.

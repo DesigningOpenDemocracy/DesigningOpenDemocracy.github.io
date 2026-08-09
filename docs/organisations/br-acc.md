@@ -4,25 +4,27 @@ type: civic tech
 status: inactive
 country: BR
 website: https://web.archive.org/web/*/https://github.com/brunoclz/br-acc
-summary: "An open-source Brazilian civic tech project that normalises 45+ scattered government databases into a single searchable graph — making public data genuinely accessible for accountability and civic research."
+summary: An open-source Brazilian civic tech project that normalises 45+ scattered
+  government databases into a single searchable graph — making public data genuinely
+  accessible for accountability and civic research.
+concepts:
+- e-government
+- radical-transparency
+- accountability-sink
 location:
   latitude: -23.5505
   longitude: -46.6333
   name: São Paulo, Brazil
   precision: city
-concepts:
-  - e-government
-  - radical-transparency
-  - accountability-sink
 activity:
-  rss:
-    note: "No feed found"
-    checked: 2026-06-07
   manual:
-    date: 2026-06-07
-    note: "brunoclz privated all his repo, so looks like his project has ended"
     checked: 2026-06-07
-last_checked: "2026-06-07"
+    date: 2026-06-07
+    note: brunoclz privated all his repo, so looks like his project has ended
+  rss:
+    checked: 2026-06-07
+    note: No feed found
+last_checked: '2026-06-07'
 ---
 
 br/acc (World Transparency Graph) is an open-source project by Brazilian developer Bruno Clz that addresses a fundamental problem in civic accountability: government data is technically "open" but so fragmented across dozens of separate portals that it is practically inaccessible.

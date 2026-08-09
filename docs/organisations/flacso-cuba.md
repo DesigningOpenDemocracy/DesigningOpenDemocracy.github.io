@@ -4,27 +4,31 @@ type: research
 status: active
 country: CU
 website: https://flacso.org/pa%C3%ADs/cuba
-summary: "The Cuban chapter of the Latin American Social Sciences Faculty (FLACSO), based at the University of Havana — one of the few academic bodies in Cuba publishing empirical research on Cuba's Poder Popular governance system, electoral participation, and local government reform."
-last_checked: "2026-06-02"
+summary: The Cuban chapter of the Latin American Social Sciences Faculty (FLACSO),
+  based at the University of Havana — one of the few academic bodies in Cuba publishing
+  empirical research on Cuba's Poder Popular governance system, electoral participation,
+  and local government reform.
+concepts:
+- democracy
+- constitutional-democracy
+- e-government
 location:
   latitude: 23.1136
   longitude: -82.3666
   name: Havana, Cuba
-concepts:
-  - democracy
-  - constitutional-democracy
-  - e-government
 activity:
-  rss:
-    note: "No feed found"
-    checked: 2026-06-07
   manual:
-    date: 2026-06-04
-    note: "website loaded. news in main page. Latest is 4 Jun 2026 'Communiqué for the death of Dr. Raúl Vega-Pacheco Researcher and teacher of FLACSO Mexico'"
     checked: 2026-06-07
+    date: 2026-06-04
+    note: website loaded. news in main page. Latest is 4 Jun 2026 'Communiqué for
+      the death of Dr. Raúl Vega-Pacheco Researcher and teacher of FLACSO Mexico'
+  rss:
+    checked: 2026-06-07
+    note: No feed found
   sitemap:
-    note: "Sitemap found, no lastmod"
     checked: 2026-08-09
+    note: Sitemap found, no lastmod
+last_checked: '2026-06-02'
 ---
 
 > **Note on scope:** FLACSO-Cuba operates within the constraints of a single-party state. Its research on Cuban governance is empirical and sometimes critical in tone, but it works within institutionally bounded space. It is included here as the primary academic body studying Cuba's Poder Popular system as a governance design — not as an independent watchdog, but as a source of substantive comparative governance research.

@@ -7,16 +7,18 @@ website: https://reclaim.org.au/lpa-home/
 logo: /assets/org-logos/lismore-peoples-assembly-icon.jpg
 banner: /assets/org-logos/lismore-peoples-assembly-banner.jpg
 contact:
+  checked: 2026-08-08
   email: reclaimourrecovery@protonmail.com
   form: https://reclaim.org.au/contact
   source: https://reclaim.org.au/lismore-peoples-assembly-on-housing/
-  checked: 2026-08-08
-summary: "A grassroots deliberative assembly in Lismore, NSW, set up by residents in the aftermath of the 2022 floods to practise participatory and deliberative democracy outside the formal political system."
+summary: A grassroots deliberative assembly in Lismore, NSW, set up by residents in
+  the aftermath of the 2022 floods to practise participatory and deliberative democracy
+  outside the formal political system.
 concepts:
-  - citizens-assembly
-  - deliberative-democracy
-  - direct-democracy
-  - democracy
+- citizens-assembly
+- deliberative-democracy
+- direct-democracy
+- democracy
 location:
   latitude: -28.8166
   longitude: 153.2803
@@ -24,17 +26,19 @@ location:
 rss_feed: https://reclaim.org.au/feed
 news_page: https://reclaim.org.au/category/lpa-resources/
 activity:
-  rss:
-    date: 2026-02-09
-    note: "Latest post: Nearly four years after the NR Floods, the community is given a (small) chance t"
-    url: "https://reclaim.org.au/nearly-four-years-after-the-nr-floods-the-community-is-given-a-small-chance-to-be-heard/"
-    checked: 2026-08-09
   dod:
-    date: 2026-02-09
-    note: "RSS feed's latest entry dated Feb 9, 2026: 'Nearly four years after the NR Floods, the community is given a (small) chance to be heard'"
-    url: https://reclaim.org.au/nearly-four-years-after-the-nr-floods-the-community-is-given-a-small-chance-to-be-heard/
     checked: 2026-07-16
-last_checked: "2026-07-16"
+    date: 2026-02-09
+    note: 'RSS feed''s latest entry dated Feb 9, 2026: ''Nearly four years after the
+      NR Floods, the community is given a (small) chance to be heard'''
+    url: https://reclaim.org.au/nearly-four-years-after-the-nr-floods-the-community-is-given-a-small-chance-to-be-heard/
+  rss:
+    checked: 2026-08-09
+    date: 2026-02-09
+    note: 'Latest post: Nearly four years after the NR Floods, the community is given
+      a (small) chance t'
+    url: https://reclaim.org.au/nearly-four-years-after-the-nr-floods-the-community-is-given-a-small-chance-to-be-heard/
+last_checked: '2026-07-16'
 ---
 
 The Lismore People's Assembly emerged from the 2022 flood crisis, when conventional governance structures were seen as failing the community. It runs as a project of [Reclaim Our Recovery](https://reclaim.org.au/), a grassroots flood-recovery advocacy group, and describes its aim explicitly as reinventing democracy from the ground up: bypassing vested interests and giving everyday people a direct voice in decisions that affect them.[^inaugural]

@@ -5,29 +5,32 @@ status: active
 country: AR
 website: https://democracy.earth
 logo: /assets/org-logos/democracy-earth.png
-summary: "An open-source civic technology foundation building quadratic voting and sovereign identity tools — aiming to make democratic participation internet-native and censorship-resistant."
+summary: An open-source civic technology foundation building quadratic voting and
+  sovereign identity tools — aiming to make democratic participation internet-native
+  and censorship-resistant.
 concepts:
-  - democracy-tools
-  - liquid-democracy
-  - direct-democracy
-  - decentralized-autonomous-organization
+- democracy-tools
+- liquid-democracy
+- direct-democracy
+- decentralized-autonomous-organization
 location:
   latitude: -34.6037
   longitude: -58.3816
   name: Buenos Aires, Argentina
 activity:
-  manual:
-    date: 2026-06-09
-    note: "Site confirmed active; no blog or news feed found"
-    checked: 2026-06-09
   dod:
-    date: 2026-07-05
-    note: "Direct site fetch returned 503; corroborated active via WEF org profile, GitHub org, and press coverage of new SAIRI autonomous AI-agent project"
     checked: 2026-07-05
+    date: 2026-07-05
+    note: Direct site fetch returned 503; corroborated active via WEF org profile,
+      GitHub org, and press coverage of new SAIRI autonomous AI-agent project
+  manual:
+    checked: 2026-06-09
+    date: 2026-06-09
+    note: Site confirmed active; no blog or news feed found
   rss:
-    note: "No feed found"
     checked: 2026-08-09
-last_checked: "2026-07-05"
+    note: No feed found
+last_checked: '2026-07-05'
 ---
 
 Democracy Earth Foundation is a San Francisco–registered nonprofit that grew out of the Buenos Aires civic tech scene. Founded by Santiago Siri and Pia Mancini (also co-founders of the Partido de la Red / Net Party), it focuses on building open-source infrastructure for democratic participation that works independently of national governments and legacy institutions.

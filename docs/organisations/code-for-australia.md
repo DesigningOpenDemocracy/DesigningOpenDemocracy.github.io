@@ -6,28 +6,30 @@ country: AU
 website: https://www.codeforaustralia.org
 logo: /assets/org-logos/code-for-australia.png
 contact:
+  checked: 2026-07-24
   email: info@codeforaustralia.org
   source: https://www.codeforaustralia.org/contact-us/
-  checked: 2026-07-24
-summary: "An Australian civic technology organisation that partners with government and non-profits to deliver digital solutions — through a fellowship program placing technologists inside public institutions."
+summary: An Australian civic technology organisation that partners with government
+  and non-profits to deliver digital solutions — through a fellowship program placing
+  technologists inside public institutions.
+concepts:
+- e-government
+- radical-transparency
 location:
   latitude: -37.8136
   longitude: 144.9631
   name: Melbourne, Australia
   precision: city
-concepts:
-  - e-government
-  - radical-transparency
 activity:
-  sitemap:
-    date: 2024-06-28
-    note: "Page last modified (from sitemap)"
-    checked: 2026-08-09
   manual:
-    date: 2026-06-07
-    note: "personally know it exist and still running"
     checked: 2026-06-07
-last_checked: "2026-06-29"
+    date: 2026-06-07
+    note: personally know it exist and still running
+  sitemap:
+    checked: 2026-08-09
+    date: 2024-06-28
+    note: Page last modified (from sitemap)
+last_checked: '2026-06-29'
 ---
 
 Code for Australia (CfA) is a civic tech organisation founded in 2014, modelled on Code for America. Its primary program is a **fellowship**: placing technologists (developers, designers, data scientists) inside government agencies and non-profits for short-term engagements to help solve civic problems through digital tools.

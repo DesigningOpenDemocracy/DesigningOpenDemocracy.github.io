@@ -6,37 +6,41 @@ country: AU
 website: https://newvote.org
 logo: /assets/org-logos/newvote.webp
 contact:
+  checked: 2026-07-30
   email: hello@newvote.org
   form: https://newvote.org/contact
   source: https://newvote.org/contactus
-  checked: 2026-07-30
-summary: "An Australian civic technology institute combining direct, deliberative, and representative democracy — empowering people on specific issues and surfacing the informed 'will of the people' to elected governments."
+summary: An Australian civic technology institute combining direct, deliberative,
+  and representative democracy — empowering people on specific issues and surfacing
+  the informed 'will of the people' to elected governments.
+concepts:
+- direct-democracy
+- liquid-democracy
+- e-government
 location:
   latitude: -27.4698
   longitude: 153.0251
   name: Brisbane, Australia
-concepts:
-  - direct-democracy
-  - liquid-democracy
-  - e-government
 rss_feed: https://newvote.org/blog/rss.xml
 activity:
-  rss:
-    date: 2019-11-11
-    note: "Latest post: How's SpeakUp @ the University of Queensland going?"
-    url: "https://newvote.org/blog/2019/11/10/hows-speakup-the-university-of-queensland-going"
-    checked: 2026-06-08
-  manual:
-    date: 2020-05-16
-    note: "website loaded. But social media is last noted in twitter May 16, 2020 https://x.com/newvote/status/1261440493004615681 . So uncertain on newvote status"
-    url: https://x.com/newvote/status/1261440493004615681
-    checked: 2026-06-07
   dod:
-    date: 2026-07-19
-    note: "Website live, confirmed active civic-tech institute. Content largely references 2018-2019 activity (UQ Student Voice pilot); no evidence of shutdown."
-    url: https://newvote.org
     checked: 2026-07-19
-last_checked: "2026-07-19"
+    date: 2026-07-19
+    note: Website live, confirmed active civic-tech institute. Content largely references
+      2018-2019 activity (UQ Student Voice pilot); no evidence of shutdown.
+    url: https://newvote.org
+  manual:
+    checked: 2026-06-07
+    date: 2020-05-16
+    note: website loaded. But social media is last noted in twitter May 16, 2020 https://x.com/newvote/status/1261440493004615681
+      . So uncertain on newvote status
+    url: https://x.com/newvote/status/1261440493004615681
+  rss:
+    checked: 2026-06-08
+    date: 2019-11-11
+    note: 'Latest post: How''s SpeakUp @ the University of Queensland going?'
+    url: https://newvote.org/blog/2019/11/10/hows-speakup-the-university-of-queensland-going
+last_checked: '2026-07-19'
 ---
 
 NewVote is built on a simple philosophy: the world is better when everyone is empowered. The institute uses technology to operate across three democratic modes simultaneously:

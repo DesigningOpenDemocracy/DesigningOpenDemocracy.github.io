@@ -6,28 +6,32 @@ country: BO
 website: https://fundacionsolon.org
 logo: /assets/org-logos/fundacion-solon.png
 contact:
+  checked: 2026-07-30
   email: info@fundacionsolon.org
   source: https://fundacionsolon.org/contact
-  checked: 2026-07-30
-summary: "A Bolivian research foundation led by Pablo Solón — former government minister and UN ambassador under Morales — developing Vivir Bien (Buen Vivir) as a substantive governance theory, and studying how plurinational constitutional design functions in practice."
-location:
-  latitude: -16.5000
-  longitude: -68.1500
-  name: La Paz, Bolivia
+summary: A Bolivian research foundation led by Pablo Solón — former government minister
+  and UN ambassador under Morales — developing Vivir Bien (Buen Vivir) as a substantive
+  governance theory, and studying how plurinational constitutional design functions
+  in practice.
 concepts:
-  - buen-vivir
+- buen-vivir
+location:
+  latitude: -16.5
+  longitude: -68.15
+  name: La Paz, Bolivia
 rss_feed: https://fundacionsolon.org/feed
 activity:
-  rss:
-    date: 2026-08-05
-    note: "Latest post: Cultura es lo que queda cuando ya no queda nada"
-    url: https://fundacionsolon.org/cultura-es-lo-que-queda-cuando-ya-no-queda-nada/
-    checked: 2026-08-09
   dod:
-    date: 2026-07-05
-    note: "Site confirmed active; articles dated through 3 July 2026 on Bolivian mining policy"
     checked: 2026-07-05
-last_checked: "2026-07-05"
+    date: 2026-07-05
+    note: Site confirmed active; articles dated through 3 July 2026 on Bolivian mining
+      policy
+  rss:
+    checked: 2026-08-09
+    date: 2026-08-05
+    note: 'Latest post: Cultura es lo que queda cuando ya no queda nada'
+    url: https://fundacionsolon.org/cultura-es-lo-que-queda-cuando-ya-no-queda-nada/
+last_checked: '2026-07-05'
 ---
 
 Fundación Solón is a Bolivian research and advocacy foundation established by Pablo Solón, who served as Bolivia's Ambassador to the United Nations under President Evo Morales and as a lead negotiator on climate and trade agreements. After leaving government, Solón founded the organisation to develop and critically examine **Vivir Bien** (Buen Vivir) as a governance theory — assessing both its constitutional articulation and how it functions (or fails to function) in practice.

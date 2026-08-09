@@ -7,26 +7,33 @@ website: https://www.institutoupdate.org.br
 logo: /assets/org-logos/instituto-update.svg
 logo_bg: dark
 contact:
+  checked: 2026-08-09
   email: contato@institutoupdate.org.br
   source: https://www.institutoupdate.org.br
-  checked: 2026-08-09
-summary: "A Brazilian regional platform for political innovation and imagination in the Global South — connecting, strengthening, and producing knowledge to expand political participation, especially for Black, Indigenous, and LGBTQIA+ women."
+summary: A Brazilian regional platform for political innovation and imagination in
+  the Global South — connecting, strengthening, and producing knowledge to expand
+  political participation, especially for Black, Indigenous, and LGBTQIA+ women.
 concepts:
-  - democracy
-  - deliberative-democracy
-  - representative-democracy
+- democracy
+- deliberative-democracy
+- representative-democracy
 location:
   latitude: -23.5505
   longitude: -46.6333
   name: São Paulo, Brazil
   precision: city
+events:
+- date: '2018-01-01'
+  notable: true
+  title: Founded in São Paulo as a regional platform for political innovation and
+    imagination in the Global South
 activity:
   rss:
-    date: 2026-08-09
-    note: "RSS feed active"
-    url: https://www.institutoupdate.org.br/feed
     checked: 2026-08-09
-last_checked: "2026-08-09"
+    date: 2026-08-09
+    note: RSS feed active
+    url: https://www.institutoupdate.org.br/feed
+last_checked: '2026-08-09'
 ---
 
 Instituto Update describes itself as "the missing infrastructure for the democracy we want" — a regional platform for political innovation and imagination in the Global South. Its focus is on expanding political participation for women who are underrepresented in conventional democratic institutions: Black, Indigenous, and LGBTQIA+ women, particularly in Latin America and increasingly in Africa.

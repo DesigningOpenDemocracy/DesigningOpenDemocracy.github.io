@@ -6,14 +6,15 @@ country: AU
 website: https://www.ettemedia.com/
 logo: /assets/org-logos/ette-media.png
 contact:
+  checked: 2026-07-30
   email: admin@ettemedia.com
   source: https://www.ettemedia.com/contact
-  checked: 2026-07-30
-summary: "An independent Australian media-literacy outlet founded by journalists Jan Fran and Antoinette Lattouf, teaching audiences to spot spin, unpack headlines, and identify the commercial and political interests behind news coverage — via its podcast 'We Used to be Journos' and multi-platform content."
-contributors:
-  - BrianKhuu
+summary: An independent Australian media-literacy outlet founded by journalists Jan
+  Fran and Antoinette Lattouf, teaching audiences to spot spin, unpack headlines,
+  and identify the commercial and political interests behind news coverage — via its
+  podcast 'We Used to be Journos' and multi-platform content.
 concepts:
-  - tribal-epistemology
+- tribal-epistemology
 location:
   latitude: -33.8688
   longitude: 151.2093
@@ -21,10 +22,12 @@ location:
   precision: city
 activity:
   dod:
-    date: 2026-07-30
-    note: "Confirmed active via official site during landscape research"
     checked: 2026-08-02
-last_checked: "2026-08-02"
+    date: 2026-07-30
+    note: Confirmed active via official site during landscape research
+last_checked: '2026-08-02'
+contributors:
+- BrianKhuu
 ---
 
 ETTE Media is an independent Australian media company founded by journalists Jan Fran and Antoinette Lattouf. Unlike outlets that report the news, ETTE's focus is teaching audiences *how to read* the news — spotting spin, decoding headlines, and identifying who benefits from a given framing, in an environment of algorithmic distortion and declining trust in mainstream media. In practice this plays out as an irreverent, conversational two-hander rather than a lecture — casual banter wrapped around genuine policy substance.

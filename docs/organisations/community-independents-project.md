@@ -6,30 +6,33 @@ country: AU
 website: https://www.communityindependentsproject.org
 logo: /assets/org-logos/community-independents-project.webp
 contact:
+  checked: 2026-07-24
   email: info@communityindependentsproject.org
   source: https://www.communityindependentsproject.org/contact-us
-  checked: 2026-07-24
-summary: "The national support and capacity-building body for Australia's community independent candidate movement — a decentralised network of locally organised, non-partisan groups that support community-driven independent candidates for parliament."
+summary: The national support and capacity-building body for Australia's community
+  independent candidate movement — a decentralised network of locally organised, non-partisan
+  groups that support community-driven independent candidates for parliament.
+concepts:
+- representative-democracy
+- accountability-sink
 location:
   latitude: -37.8136
   longitude: 144.9631
   name: Melbourne, Australia
   precision: city
-concepts:
-  - representative-democracy
-  - accountability-sink
 rss_feed: https://www.communityindependentsproject.org/blog/rss.xml
 activity:
-  rss:
-    date: 2022-09-04
-    note: "Latest post: The second national Community Independents Convention, August 2022"
-    url: "https://www.communityindependentsproject.org/blog/the-second-national-community-independents-convention-august-2022"
-    checked: 2026-08-09
   manual:
-    date: 2026-06-07
-    note: "website loaded. Last convention at 2025"
     checked: 2026-06-07
-last_checked: "2026-06-29"
+    date: 2026-06-07
+    note: website loaded. Last convention at 2025
+  rss:
+    checked: 2026-08-09
+    date: 2022-09-04
+    note: 'Latest post: The second national Community Independents Convention, August
+      2022'
+    url: https://www.communityindependentsproject.org/blog/the-second-national-community-independents-convention-august-2022
+last_checked: '2026-06-29'
 ---
 
 The Community Independents Project (CIP) is the coordinating body for Australia's community independent candidate movement — a network of locally organised, non-partisan groups that support community-driven independent candidates at federal, state, and local elections.

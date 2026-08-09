@@ -6,34 +6,39 @@ country: US
 website: https://healthydemocracy.org
 logo: /assets/org-logos/healthy-democracy.svg
 contact:
-  email: info@healthydemocracy.org
-  phone: "+1 503 841 6865"
-  form: https://healthydemocracy.org/contact
-  source: https://healthydemocracy.org/contact
   checked: 2026-08-01
-summary: "A US non-profit that designs and runs Citizens' Initiative Reviews — structured deliberative processes where randomly selected citizens evaluate ballot measures and publish findings for the wider electorate."
+  email: info@healthydemocracy.org
+  form: https://healthydemocracy.org/contact
+  phone: +1 503 841 6865
+  source: https://healthydemocracy.org/contact
+summary: A US non-profit that designs and runs Citizens' Initiative Reviews — structured
+  deliberative processes where randomly selected citizens evaluate ballot measures
+  and publish findings for the wider electorate.
+concepts:
+- citizens-assembly
+- deliberative-democracy
+- sortition
+- direct-democracy
 location:
   latitude: 45.5231
   longitude: -122.6765
   name: Portland, Oregon, USA
-concepts:
-  - citizens-assembly
-  - deliberative-democracy
-  - sortition
-  - direct-democracy
 rss_feed: https://healthydemocracy.org/feed
 activity:
-  rss:
-    date: 2026-02-17
-    note: "Latest post: Want residents, not politicians, to find answers to LA’s thorniest problems? Try"
-    url: "https://healthydemocracy.org/la-assembly-news/2026/02/16/want-residents-not-politicians-to-find-answers-to-las-thorniest-problems-try-a-civic-assembly/"
-    checked: 2026-08-09
   dod:
-    date: 2026-07-16
-    note: "Website loaded directly; active programs listed (Civic Assemblies, CIR, Deschutes Civic Assembly on Youth Homelessness billed as 'world's first tech-assisted assembly'), operating since 2007"
-    url: https://healthydemocracy.org
     checked: 2026-07-16
-last_checked: "2026-07-16"
+    date: 2026-07-16
+    note: Website loaded directly; active programs listed (Civic Assemblies, CIR,
+      Deschutes Civic Assembly on Youth Homelessness billed as 'world's first tech-assisted
+      assembly'), operating since 2007
+    url: https://healthydemocracy.org
+  rss:
+    checked: 2026-08-09
+    date: 2026-02-17
+    note: 'Latest post: Want residents, not politicians, to find answers to LA’s thorniest
+      problems? Try'
+    url: https://healthydemocracy.org/la-assembly-news/2026/02/16/want-residents-not-politicians-to-find-answers-to-las-thorniest-problems-try-a-civic-assembly/
+last_checked: '2026-07-16'
 ---
 
 Healthy Democracy developed and institutionalised the **Citizens' Initiative Review** (CIR) — a process in which a randomly selected, representative panel of citizens spends several days intensively studying a ballot measure: hearing from proponents and opponents, questioning experts, and deliberating together. The panel's findings — a balanced statement of key arguments and evidence — are then published in the official voter's guide sent to all voters before the election.

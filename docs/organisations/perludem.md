@@ -6,26 +6,33 @@ country: ID
 website: https://perludem.or.id
 logo: /assets/org-logos/perludem.jpg
 contact:
-  email: perludem@perludem.or.id
-  phone: "+62 21 22833919"
-  source: https://perludem.or.id
   checked: 2026-08-09
-activity:
-  dod:
-    date: 2026-08-09
-    note: Site live and actively publishing as of August 2026
-    checked: 2026-08-09
-last_checked: "2026-08-09"
-summary: "An Indonesian independent nonprofit founded in 2005 — a leading civil society voice on electoral integrity, democratic reform, and electoral system design in the world's third-largest democracy."
+  email: perludem@perludem.or.id
+  phone: +62 21 22833919
+  source: https://perludem.or.id
+summary: An Indonesian independent nonprofit founded in 2005 — a leading civil society
+  voice on electoral integrity, democratic reform, and electoral system design in
+  the world's third-largest democracy.
 concepts:
-  - democracy
-  - representative-democracy
-  - mixed-member-proportional-representation
+- democracy
+- representative-democracy
+- mixed-member-proportional-representation
 location:
   latitude: -6.2088
   longitude: 106.8456
   name: Jakarta, Indonesia
   precision: city
+events:
+- date: '2005-01-01'
+  notable: true
+  title: Founded by former Indonesian election supervisors to strengthen electoral
+    integrity in the world's third-largest democracy
+activity:
+  dod:
+    checked: 2026-08-09
+    date: 2026-08-09
+    note: Site live and actively publishing as of August 2026
+last_checked: '2026-08-09'
 ---
 
 Perludem (Perkumpulan untuk Pemilu dan Demokrasi — the Association for Elections and Democracy) was founded in 2005 by former Indonesian election supervisors who believed that elections must produce governments that genuinely represent the people. It has since become Indonesia's leading civil society organisation on electoral integrity and democratic reform.

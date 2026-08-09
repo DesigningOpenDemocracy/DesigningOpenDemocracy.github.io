@@ -6,24 +6,31 @@ country: JP
 website: https://www.code4japan.org
 logo: /assets/org-logos/code-for-japan.svg
 contact:
+  checked: 2026-08-09
   form: https://www.code4japan.org/contact
   source: https://www.code4japan.org
-  checked: 2026-08-09
-summary: "Japan's leading civic-tech organisation, part of the international Code for All network — running an open community for citizen-led digital problem-solving, co-developing participatory decision-making platforms with local governments, and promoting open data and government digital transformation."
+summary: Japan's leading civic-tech organisation, part of the international Code for
+  All network — running an open community for citizen-led digital problem-solving,
+  co-developing participatory decision-making platforms with local governments, and
+  promoting open data and government digital transformation.
 concepts:
-  - democracy-tools
-  - e-government
-  - participatory-budgeting
+- democracy-tools
+- e-government
+- participatory-budgeting
 location:
   latitude: 35.6762
   longitude: 139.6503
   name: Tokyo, Japan
   precision: city
+events:
+- date: '2013-01-01'
+  notable: true
+  title: Founded as the Japanese node of Code for All, bringing civic tech to Japan
 activity:
   sitemap:
-    note: "Sitemap found, no lastmod"
     checked: 2026-08-09
-last_checked: "2026-08-09"
+    note: Sitemap found, no lastmod
+last_checked: '2026-08-09'
 ---
 
 Code for Japan is the Japanese node of the international Code for All network, bringing the civic-tech model — citizens using technology to solve local problems in partnership with government — to Japan. The organisation runs an open community on Slack and Notion where anyone can participate in projects spanning open data, disaster response technology, and digital government transformation.

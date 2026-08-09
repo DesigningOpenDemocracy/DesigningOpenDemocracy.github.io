@@ -6,38 +6,42 @@ country: EU
 website: https://www.demnext.org
 logo: /assets/org-logos/democracy-next.png
 contact:
+  checked: 2026-07-30
   email: hello@demnext.org
   source: https://www.demnext.org/contact
-  checked: 2026-07-30
-news_page: https://www.demnext.org/news
-summary: "An international research institute focused on the theory and practice of sortition-based democracy — replacing elections with randomly selected assemblies as the primary decision-making mechanism."
+summary: An international research institute focused on the theory and practice of
+  sortition-based democracy — replacing elections with randomly selected assemblies
+  as the primary decision-making mechanism.
+concepts:
+- citizens-assembly
+- deliberative-democracy
+- sortition
+- isegoria
 location:
   latitude: 55.6761
   longitude: 12.5683
   name: Copenhagen, Denmark
   precision: city
-concepts:
-  - citizens-assembly
-  - deliberative-democracy
-  - sortition
-  - isegoria
+news_page: https://www.demnext.org/news
 activity:
-  sitemap:
-    date: 2026-07-29
-    note: "Page last modified (from sitemap)"
-    url: https://www.demnext.org/sitemaps-1-sitemap.xml
-    checked: 2026-08-09
   manual:
+    checked: 2026-06-07
     date: 2026-01-02
-    note: "website loaded. https://www.demnext.org/news mentions www.theartnewspaper.com/2026/01/02/uk-museums-embrace-citizens-assemblies-to-frame-their-futures 2 January 2026 'How UK museums are embracing citizens’ assemblies to help frame their futures'"
+    note: website loaded. https://www.demnext.org/news mentions www.theartnewspaper.com/2026/01/02/uk-museums-embrace-citizens-assemblies-to-frame-their-futures
+      2 January 2026 'How UK museums are embracing citizens’ assemblies to help frame
+      their futures'
     url: https://www.demnext.org/news
-    checked: 2026-06-07
   scrape:
-    date: 2026-03-27
-    note: "Latest news page scraped"
-    url: https://www.demnext.org/news
     checked: 2026-06-07
-last_checked: "2026-06-15"
+    date: 2026-03-27
+    note: Latest news page scraped
+    url: https://www.demnext.org/news
+  sitemap:
+    checked: 2026-08-09
+    date: 2026-07-29
+    note: Page last modified (from sitemap)
+    url: https://www.demnext.org/sitemaps-1-sitemap.xml
+last_checked: '2026-06-15'
 ---
 
 DemocracyNext (demnext.org) is a research institute whose position is that sortition should *replace* elections as the central mechanism of democratic governance — not merely complement them. This distinguishes it from organisations that treat citizens' assemblies as an add-on to existing representative systems.

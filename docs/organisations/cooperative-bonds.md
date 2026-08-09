@@ -6,41 +6,38 @@ country: AU
 website: https://bonds.coop
 logo: /assets/org-logos/cooperative-bonds.png
 contact:
-  email: hello@bonds.coop
-  phone: "+61 418 223 517"
-  source: https://bonds.coop/connect-with-us/
   checked: 2026-07-24
-summary: "A Melbourne-based cooperative of cooperative developers, providing governance, business model, and development support to co-operatives, mutuals, social enterprises, and member-based organisations across Australia."
+  email: hello@bonds.coop
+  phone: +61 418 223 517
+  source: https://bonds.coop/connect-with-us/
+summary: A Melbourne-based cooperative of cooperative developers, providing governance,
+  business model, and development support to co-operatives, mutuals, social enterprises,
+  and member-based organisations across Australia.
+concepts:
+- cooperative
+- economic-democracy
+- workplace-democracy
+- community-business
+- worker-cooperatives
 location:
   latitude: -37.8136
   longitude: 144.9631
   name: Melbourne, Australia
   precision: city
-concepts:
-  - cooperative
-  - economic-democracy
-  - workplace-democracy
-  - community-business
-  - worker-cooperatives
 rss_feed: https://bonds.coop/feed
 news_page: https://bonds.coop/resources/co-op-news/
 activity:
+  rss:
+    checked: 2026-08-09
+    date: 2026-08-09
+    note: RSS feed active
+    url: https://bonds.coop/feed
   scrape:
-    date: 2026-05-21
-    note: "Latest news page scraped"
-    url: https://bonds.coop/resources/co-op-news/
     checked: 2026-06-08
-  rss:
-    date: 2026-08-09
-    note: "RSS feed active"
-    url: https://bonds.coop/feed
-    checked: 2026-08-09
-  rss:
-    date: 2026-08-09
-    note: "RSS feed active"
-    url: https://bonds.coop/feed
-    checked: 2026-08-09
-last_checked: "2026-06-29"
+    date: 2026-05-21
+    note: Latest news page scraped
+    url: https://bonds.coop/resources/co-op-news/
+last_checked: '2026-06-29'
 ---
 
 Co-operative Bonds is a cooperative development consultancy structured as a cooperative itself. Founded by Antony McMullen, Clare Fountain, and Paul Saeki, it provides education and development services to help purpose-driven member-based organisations build financially viable and sustainable models.

@@ -6,27 +6,41 @@ country: AU
 website: https://democrats.org.au
 logo: /assets/org-logos/australian-democrats.png
 contact:
+  checked: 2026-08-01
   form: https://www.democrats.org.au/contact/
   source: https://www.democrats.org.au/contact/
-  checked: 2026-08-01
-summary: "A re-established Australian centrist political party with a strong focus on democratic reform, electoral integrity, and evidence-based policy — including explicit support for citizens' assemblies and proportional representation."
+summary: A re-established Australian centrist political party with a strong focus
+  on democratic reform, electoral integrity, and evidence-based policy — including
+  explicit support for citizens' assemblies and proportional representation.
+concepts:
+- citizens-assembly
+- mixed-member-proportional-representation
+- sortition
 location:
   latitude: -37.8136
   longitude: 144.9631
   name: Melbourne, Australia
   precision: city
-concepts:
-  - citizens-assembly
-  - mixed-member-proportional-representation
-  - sortition
 rss_feed: https://democrats.org.au/rss.xml
+events:
+- date: '1977-01-01'
+  notable: true
+  title: Founded by Don Chipp, emerging from the Liberal Party split, running on 'keeping
+    the bastards honest'
+- date: '1980-10-18'
+  notable: true
+  title: First elected to the Senate, winning balance of power — five Senators elected
+    on a 9.3% vote
+- date: '1990-03-24'
+  notable: false
+  title: Peak electoral result — 12.6% Senate vote in the 1990 federal election
 activity:
   rss:
-    date: 2026-05-24
-    note: "Latest post: We took part in a Facebook Q&A"
-    url: "https://www.democrats.org.au/posts/6v15DUfhxyWNVoSqBBFje4/we-took-part-in-a-facebook-q-a"
     checked: 2026-06-08
-last_checked: "2026-06-28"
+    date: 2026-05-24
+    note: 'Latest post: We took part in a Facebook Q&A'
+    url: https://www.democrats.org.au/posts/6v15DUfhxyWNVoSqBBFje4/we-took-part-in-a-facebook-q-a
+last_checked: '2026-06-28'
 ---
 
 The Australian Democrats were originally founded in 1977 by Don Chipp with the stated aim to "keep the bastards honest" — a positioning as a principled centrist force holding the major parties accountable. The party held the balance of power in the Senate for many years before collapsing around 2008. It has since been re-established and is rebuilding a presence at state and federal levels.

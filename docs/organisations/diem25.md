@@ -5,35 +5,51 @@ status: active
 country: EU
 website: https://diem25.org
 logo: /assets/org-logos/diem25.png
-summary: "A pan-European political movement founded by Yanis Varoufakis in 2016, calling for radical democratisation of EU institutions through transparency, a transnational constitutional assembly, and coordinated progressive politics across member states."
+summary: A pan-European political movement founded by Yanis Varoufakis in 2016, calling
+  for radical democratisation of EU institutions through transparency, a transnational
+  constitutional assembly, and coordinated progressive politics across member states.
+concepts:
+- direct-democracy
+- democracy
+- liberal-democracy
 location:
   latitude: 50.8503
   longitude: 4.3517
   name: Brussels, Belgium
   precision: city
-concepts:
-  - direct-democracy
-  - democracy
-  - liberal-democracy
 rss_feed: https://diem25.org/news/feed
 news_page: https://diem25.org/news
+events:
+- date: '2016-01-01'
+  notable: true
+  title: Launched by Yanis Varoufakis and Srećko Horvat as a pan-European progressive
+    movement in Berlin
+- date: '2017-03-25'
+  notable: false
+  title: First pan-European convention in Rome, adopting the founding declaration
+- date: '2019-05-26'
+  notable: true
+  title: Contested European Parliament elections with a transnational list across
+    multiple member states
 activity:
-  scrape:
-    date: 2026-06-04
-    note: "Latest news page scraped"
-    url: https://diem25.org/news
-    hint: bot_blocked
-    checked: 2026-06-08
+  dod:
+    checked: 2026-08-08
+    date: 2026-08-08
+    note: 'News page source fetched 8 Aug 2026; active publishing — latest: Yanis
+      Varoufakis on Brexit/Project Smear (3 Aug), ICE-ification of Europe (5 Aug),
+      MERA25 Berlin campaign launch for Sep 2026 elections'
+    url: https://diem25.org/news/
   rss:
     date: 2026-06-05
-    note: "RSS feed active"
+    note: RSS feed active
     url: https://diem25.org/news/feed
-  dod:
-    date: 2026-08-08
-    note: "News page source fetched 8 Aug 2026; active publishing — latest: Yanis Varoufakis on Brexit/Project Smear (3 Aug), ICE-ification of Europe (5 Aug), MERA25 Berlin campaign launch for Sep 2026 elections"
-    url: https://diem25.org/news/
-    checked: 2026-08-08
-last_checked: "2026-08-08"
+  scrape:
+    checked: 2026-06-08
+    date: 2026-06-04
+    hint: bot_blocked
+    note: Latest news page scraped
+    url: https://diem25.org/news
+last_checked: '2026-08-08'
 ---
 
 DiEM25 (Democracy in Europe Movement 2025) was founded by economist and former Greek Finance Minister Yanis Varoufakis in 2016, with the stated goal of democratising the European Union before it disintegrated — the "2025" being an original deadline, since passed. The movement has since evolved into a sustained transnational political organisation with chapters across Europe and affiliated national political parties: **MERA25** (MeRA25), operating in Germany, Greece, Italy, Sweden, and the Netherlands. Varoufakis continues to publish regularly on the site.

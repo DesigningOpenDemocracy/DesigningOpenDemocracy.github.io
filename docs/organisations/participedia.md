@@ -6,42 +6,43 @@ country: CA
 website: https://participedia.net
 logo: /assets/org-logos/participedia.jpg
 contact:
+  checked: 2026-08-01
   email: info@participedia.net
   source: https://participedia.net/about
-  checked: 2026-08-01
-rss_feed: https://medium.com/feed/@participediaproject
-news_page: https://participediaproject.medium.com/
-summary: "A global open-access database and research platform cataloguing thousands of participatory democracy cases, methods, and organisations from around the world."
+summary: A global open-access database and research platform cataloguing thousands
+  of participatory democracy cases, methods, and organisations from around the world.
+concepts:
+- citizens-assembly
+- deliberative-democracy
+- participatory-budgeting
+- direct-democracy
+- democracy
+- meta-organisation
 location:
   latitude: 49.2827
   longitude: -123.1207
   name: Vancouver, Canada
   precision: city
-concepts:
-  - citizens-assembly
-  - deliberative-democracy
-  - participatory-budgeting
-  - direct-democracy
-  - democracy
-  - meta-organisation
+rss_feed: https://medium.com/feed/@participediaproject
+news_page: https://participediaproject.medium.com/
 activity:
-  rss:
-    date: 2026-01-05
-    note: "Latest post: Participedia Schools 2025 Summary Reports"
-    url: https://participediaproject.medium.com/participedia-schools-2025-summary-reports-5f84ce0bd47f?source=rss-4e7f7d842e0a------2
-    checked: 2026-06-08
   manual:
-    date: 2026-01-06
-    note: "website loaded. News page points to https://participediaproject.medium.com/ where latest is Jan 6, 2026 'Participedia Schools 2025 Summary Reports'"
-    url: https://participediaproject.medium.com/
     checked: 2026-06-07
-
-  scrape:
-    date: 2025-06-02
-    note: "Latest news page scraped"
+    date: 2026-01-06
+    note: website loaded. News page points to https://participediaproject.medium.com/
+      where latest is Jan 6, 2026 'Participedia Schools 2025 Summary Reports'
     url: https://participediaproject.medium.com/
+  rss:
     checked: 2026-06-08
-last_checked: "2026-06-15"
+    date: 2026-01-05
+    note: 'Latest post: Participedia Schools 2025 Summary Reports'
+    url: https://participediaproject.medium.com/participedia-schools-2025-summary-reports-5f84ce0bd47f?source=rss-4e7f7d842e0a------2
+  scrape:
+    checked: 2026-06-08
+    date: 2025-06-02
+    note: Latest news page scraped
+    url: https://participediaproject.medium.com/
+last_checked: '2026-06-15'
 ---
 
 Participedia is a collaborative academic platform hosted by the University of British Columbia and Harvard University. It functions as a living encyclopaedia of participatory democracy — cataloguing case studies, methods, and organisations from across the world with structured, comparable data.

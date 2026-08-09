@@ -6,36 +6,49 @@ country: US
 website: https://www.opensocietyfoundations.org
 logo: /assets/org-logos/open-society-foundations.png
 contact:
+  checked: 2026-07-30
   email: media@opensocietyfoundations.org
   form: https://www.opensocietyfoundations.org/contact
   source: https://www.opensocietyfoundations.org/contact
-  checked: 2026-07-30
-news_page: https://www.opensocietyfoundations.org/newsroom
-summary: "The world's largest private funder of independent groups working for rights, equity, and justice — founded by George Soros in 1979, with grants, fellowships, and national foundations active across 100+ countries."
+summary: The world's largest private funder of independent groups working for rights,
+  equity, and justice — founded by George Soros in 1979, with grants, fellowships,
+  and national foundations active across 100+ countries.
 concepts:
-  - democracy
-  - radical-transparency
-  - direct-democracy
+- democracy
+- radical-transparency
+- direct-democracy
 location:
   latitude: 40.7128
-  longitude: -74.0060
+  longitude: -74.006
   name: New York, USA
   precision: city
-last_checked: "2026-05-29"
+news_page: https://www.opensocietyfoundations.org/newsroom
+events:
+- date: '1993-04-01'
+  notable: true
+  title: Founded by George Soros to support civil society, human rights, and democratic
+    governance globally
+- date: '2023-03-07'
+  notable: false
+  title: Announced leadership transition — Alex Soros appointed chair, succeeding
+    George Soros
 activity:
-  rss:
-    note: "No feed found"
-    checked: 2026-06-07
   manual:
-    date: 2026-05-20
-    note: "website loaded. https://www.opensocietyfoundations.org/newsroom has  May 20, 2026 'Open Society Foundations Launch $300 Million Initiative to Advance Economic Security and Defend Civil Liberties in the United States'"
-    url: https://www.opensocietyfoundations.org/newsroom
     checked: 2026-06-07
-  scrape:
     date: 2026-05-20
-    note: "Latest news page scraped"
+    note: website loaded. https://www.opensocietyfoundations.org/newsroom has  May
+      20, 2026 'Open Society Foundations Launch $300 Million Initiative to Advance
+      Economic Security and Defend Civil Liberties in the United States'
     url: https://www.opensocietyfoundations.org/newsroom
+  rss:
+    checked: 2026-06-07
+    note: No feed found
+  scrape:
     checked: 2026-06-08
+    date: 2026-05-20
+    note: Latest news page scraped
+    url: https://www.opensocietyfoundations.org/newsroom
+last_checked: '2026-05-29'
 ---
 
 The Open Society Foundations (OSF) are a global network of foundations founded by George Soros in 1979. Beginning with scholarships for Black South African students and support for East European dissidents, OSF grew into the world's largest private funder of independent civil society organisations working on democracy, human rights, justice, and equity.

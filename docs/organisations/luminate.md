@@ -6,39 +6,45 @@ country: GB
 website: https://www.luminategroup.com
 logo: /assets/org-logos/luminate.png
 contact:
+  checked: 2026-07-30
   email: hello@luminategroup.com
   source: https://www.luminategroup.com/contact-us
-  checked: 2026-07-30
-news_page: https://luminategroup.com/news-and-insights
-summary: "A global philanthropic organisation funding civic technology, digital rights, independent media, and government transparency — spun out of the Omidyar Network in 2018 with a focus on open and accountable governance."
+summary: A global philanthropic organisation funding civic technology, digital rights,
+  independent media, and government transparency — spun out of the Omidyar Network
+  in 2018 with a focus on open and accountable governance.
 concepts:
-  - democracy
-  - radical-transparency
-  - e-government
+- democracy
+- radical-transparency
+- e-government
 location:
   latitude: 51.5074
   longitude: -0.1278
   name: London, UK
   precision: city
-last_checked: "2026-05-29"
+news_page: https://luminategroup.com/news-and-insights
 activity:
-  rss:
-    note: "No feed found"
-    checked: 2026-06-07
-  manual:
-    date: 2025-07-22
-    note: "website loaded. Has a news page at https://luminategroup.com/news-and-insights . Latest seems to be 22 July 2025 'How storytelling can bring us closer to tech justice'"
-    url: https://luminategroup.com/news-and-insights
-    checked: 2026-06-07
-  scrape:
-    note: "News page found, no machine-readable date"
-    hint: no_markup
-    checked: 2026-06-08
   dod:
-    date: 2026-08-08
-    note: "News page fetched 8 Aug 2026; active publishing — recent topics: AI accountability, European AI & Society Fund ($1M grant), strategy shift toward tech accountability, new CEO announced, global polling on AI perceptions"
-    url: https://luminategroup.com/news-and-insights
     checked: 2026-08-08
+    date: 2026-08-08
+    note: 'News page fetched 8 Aug 2026; active publishing — recent topics: AI accountability,
+      European AI & Society Fund ($1M grant), strategy shift toward tech accountability,
+      new CEO announced, global polling on AI perceptions'
+    url: https://luminategroup.com/news-and-insights
+  manual:
+    checked: 2026-06-07
+    date: 2025-07-22
+    note: website loaded. Has a news page at https://luminategroup.com/news-and-insights
+      . Latest seems to be 22 July 2025 'How storytelling can bring us closer to tech
+      justice'
+    url: https://luminategroup.com/news-and-insights
+  rss:
+    checked: 2026-06-07
+    note: No feed found
+  scrape:
+    checked: 2026-06-08
+    hint: no_markup
+    note: News page found, no machine-readable date
+last_checked: '2026-05-29'
 ---
 
 Luminate is a global philanthropic organisation established in 2018, spun out from the Omidyar Network (founded by eBay co-founder Pierre Omidyar) to focus specifically on civic empowerment and open governance. It operates globally with offices in London, Washington DC, Nairobi, São Paulo, and other cities.

@@ -6,34 +6,47 @@ country: UA
 website: https://oporaua.org/en
 logo: /assets/org-logos/opora.png
 contact:
+  checked: 2026-08-01
   email: info@opora.org.ua
   source: https://oporaua.org/en/page/contacts
-  checked: 2026-08-01
-news_page: https://oporaua.org/en/announce
-summary: "Ukraine's leading non-partisan election observation organisation — monitoring elections since 2006, conducting parliamentary oversight, and co-founding the European Platform for Democratic Elections (EPDE)."
+summary: Ukraine's leading non-partisan election observation organisation — monitoring
+  elections since 2006, conducting parliamentary oversight, and co-founding the European
+  Platform for Democratic Elections (EPDE).
+concepts:
+- representative-democracy
+- accountability-sink
+- radical-transparency
 location:
   latitude: 50.4501
   longitude: 30.5234
   name: Kyiv, Ukraine
-concepts:
-  - representative-democracy
-  - accountability-sink
-  - radical-transparency
+news_page: https://oporaua.org/en/announce
+events:
+- date: '2004-01-01'
+  notable: true
+  title: Founded as an independent civil network for election observation and civic
+    participation in Ukraine
+- date: '2004-11-21'
+  notable: true
+  title: Deployed 1,000+ observers for Ukraine's presidential election, documenting
+    fraud that triggered the Orange Revolution
 activity:
-  rss:
-    note: "No feed found"
-    checked: 2026-06-07
   dod:
-    date: 2026-06-29
-    note: "Website confirmed active, with recent reports on voter registration amid wartime migration and a January 2026 analysis of the challenges of holding a referendum on territorial changes."
-    url: https://oporaua.org/en/announce
     checked: 2026-06-29
-  scrape:
-    date: 2026-05-20
-    note: "Latest news page scraped"
+    date: 2026-06-29
+    note: Website confirmed active, with recent reports on voter registration amid
+      wartime migration and a January 2026 analysis of the challenges of holding a
+      referendum on territorial changes.
     url: https://oporaua.org/en/announce
+  rss:
+    checked: 2026-06-07
+    note: No feed found
+  scrape:
     checked: 2026-06-08
-last_checked: "2026-06-29"
+    date: 2026-05-20
+    note: Latest news page scraped
+    url: https://oporaua.org/en/announce
+last_checked: '2026-06-29'
 ---
 
 Civil Network OPORA is Ukraine's primary independent election observation and civic oversight organisation, founded in 2006. It conducts comprehensive long-term and short-term election observation for presidential, parliamentary, and local elections, and publishes detailed analytical reports on each electoral cycle.

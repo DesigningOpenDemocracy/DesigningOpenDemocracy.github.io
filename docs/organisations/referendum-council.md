@@ -4,16 +4,18 @@ type: governance
 status: inactive
 country: AU
 website: https://web.archive.org/web/*/https://www.referendumcouncil.org.au
-summary: "A formal Australian advisory body (2016–17) tasked with consulting on constitutional recognition of Aboriginal and Torres Strait Islander peoples — its process produced the Uluru Statement from the Heart."
+summary: A formal Australian advisory body (2016–17) tasked with consulting on constitutional
+  recognition of Aboriginal and Torres Strait Islander peoples — its process produced
+  the Uluru Statement from the Heart.
+concepts:
+- citizens-assembly
+- constitutional-democracy
+- democracy
 location:
   latitude: -35.2809
-  longitude: 149.1300
+  longitude: 149.13
   name: Canberra, Australia
   precision: city
-concepts:
-  - citizens-assembly
-  - constitutional-democracy
-  - democracy
 ---
 
 The Referendum Council was a joint advisory body established by Prime Minister Malcolm Turnbull and Opposition Leader Bill Shorten in December 2016. Co-chaired by Pat Anderson AO and Mark Leibler AC, it was tasked with consulting broadly on options for constitutional recognition of Aboriginal and Torres Strait Islander peoples and reporting back with recommendations.

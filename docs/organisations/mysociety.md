@@ -6,28 +6,44 @@ country: GB
 website: https://www.mysociety.org
 logo: /assets/org-logos/mysociety.png
 contact:
+  checked: 2026-07-30
   email: hello@mysociety.org
   source: https://www.mysociety.org/contact
-  checked: 2026-07-30
-summary: "A UK civic technology charity that builds digital tools enabling citizens to hold governments accountable — including TheyWorkForYou, FixMyStreet, and WhatDoTheyKnow, deployed in over 40 countries."
+summary: A UK civic technology charity that builds digital tools enabling citizens
+  to hold governments accountable — including TheyWorkForYou, FixMyStreet, and WhatDoTheyKnow,
+  deployed in over 40 countries.
 concepts:
-  - e-government
-  - radical-transparency
-  - democracy
-  - accountability-sink
+- e-government
+- radical-transparency
+- democracy
+- accountability-sink
 location:
   latitude: 51.5074
   longitude: -0.1278
   name: London, UK
   precision: city
-last_checked: "2026-05-29"
 rss_feed: https://www.mysociety.org/feed
+events:
+- date: '2003-01-01'
+  notable: true
+  title: Founded by Tom Steinberg as a UK civic-tech charity, launching TheyWorkForYou
+    and WriteToThem
+- date: '2004-06-01'
+  notable: true
+  title: Launched TheyWorkForYou — making parliamentary activity searchable and accessible
+    to UK citizens
+- date: '2005-02-01'
+  notable: true
+  title: Launched WriteToThem — enabling citizens to contact their elected representatives
+    online
 activity:
   rss:
-    date: 2026-06-05
-    note: "Latest post: New report! Supporting Participation: Building an effective European civic tech "
-    url: https://www.mysociety.org/2026/06/05/new-report-supporting-participation-building-an-effective-european-civic-tech-hub/
     checked: 2026-06-08
+    date: 2026-06-05
+    note: 'Latest post: New report! Supporting Participation: Building an effective
+      European civic tech '
+    url: https://www.mysociety.org/2026/06/05/new-report-supporting-participation-building-an-effective-european-civic-tech-hub/
+last_checked: '2026-05-29'
 ---
 
 mySociety is a UK registered charity and social enterprise, founded in 2003, that builds digital tools to make it easier for citizens to participate in democracy, hold governments accountable, and access public services. It operates on the principle that well-designed technology can reduce the friction between citizens and the state.

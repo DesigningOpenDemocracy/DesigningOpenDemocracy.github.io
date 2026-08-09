@@ -6,24 +6,32 @@ country: CO
 website: https://transparenciacolombia.org.co
 logo: /assets/org-logos/transparencia-por-colombia.png
 contact:
+  checked: 2026-08-09
   form: https://transparenciacolombia.org.co/contacto
   source: https://transparenciacolombia.org.co
-  checked: 2026-08-09
-activity:
-  dod:
-    date: 2026-08-09
-    note: Site live and actively publishing as of August 2026
-    checked: 2026-08-09
-last_checked: "2026-08-09"
-summary: "The Colombian chapter of Transparency International — running the Monitor Ciudadano de la Corrupción (open data and analytics platform), tracking electoral campaign financing in real time, and working across all 32 departments on corruption prevention and democratic integrity."
+summary: The Colombian chapter of Transparency International — running the Monitor
+  Ciudadano de la Corrupción (open data and analytics platform), tracking electoral
+  campaign financing in real time, and working across all 32 departments on corruption
+  prevention and democratic integrity.
 concepts:
-  - radical-transparency
-  - democracy
+- radical-transparency
+- democracy
 location:
-  latitude: 4.7110
+  latitude: 4.711
   longitude: -74.0721
   name: Bogotá, Colombia
   precision: city
+events:
+- date: '1998-01-01'
+  notable: true
+  title: Founded as the Colombian chapter of Transparency International, working across
+    all 32 departments
+activity:
+  dod:
+    checked: 2026-08-09
+    date: 2026-08-09
+    note: Site live and actively publishing as of August 2026
+last_checked: '2026-08-09'
 ---
 
 Transparencia por Colombia, founded in 1998, is the Colombian chapter of Transparency International. It operates at a scale and depth that makes it more than a national branch of a global network: its Monitor Ciudadano de la Corrupción is an open data and analytics platform tracking public contracting, campaign finance, judicial processes, and institutional integrity indicators — making corruption legible as a structural pattern rather than a series of isolated scandals.

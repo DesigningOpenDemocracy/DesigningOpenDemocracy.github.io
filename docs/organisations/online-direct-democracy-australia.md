@@ -4,16 +4,18 @@ type: party
 status: inactive
 country: AU
 website: https://web.archive.org/web/*/https://www.onlinedirectdemocracy.org
-summary: "An Australian direct democracy electoral organisation that stood candidates on a platform of replacing the representative system with online direct citizen voting — the domain is now squatted."
+summary: An Australian direct democracy electoral organisation that stood candidates
+  on a platform of replacing the representative system with online direct citizen
+  voting — the domain is now squatted.
+concepts:
+- direct-democracy
+- e-government
+- liquid-democracy
 location:
   latitude: -33.8688
   longitude: 151.2093
   name: Australia
   precision: city
-concepts:
-  - direct-democracy
-  - e-government
-  - liquid-democracy
 ---
 
 Online Direct Democracy Australia was a direct democracy advocacy and electoral organisation that promoted online citizen voting as a structural replacement for representative democracy. It stood candidates at Australian elections.

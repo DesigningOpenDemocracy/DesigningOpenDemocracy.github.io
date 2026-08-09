@@ -6,26 +6,30 @@ country: MX
 website: https://unitierra.org
 logo: /assets/org-logos/cideci-unitierra.png
 contact:
+  checked: 2026-07-30
   email: unitierraecuador@gmail.com
   source: https://unitierra.org
-  checked: 2026-07-30
-summary: "An indigenous education and documentation centre in Chiapas, Mexico, aligned with the Zapatista autonomous communities — hosting the Zapatista 'Little Schools' and serving as a hub for research on the Juntas de Buen Gobierno governance model."
+summary: An indigenous education and documentation centre in Chiapas, Mexico, aligned
+  with the Zapatista autonomous communities — hosting the Zapatista 'Little Schools'
+  and serving as a hub for research on the Juntas de Buen Gobierno governance model.
+concepts:
+- democratic-confederalism
 location:
-  latitude: 16.7370
+  latitude: 16.737
   longitude: -92.6376
   name: San Cristóbal de las Casas, Chiapas, Mexico
-concepts:
-  - democratic-confederalism
 activity:
-  sitemap:
-    date: 2024-05-21
-    note: "Page last modified (from sitemap)"
-    checked: 2026-08-09
   dod:
-    date: 2026-06-28
-    note: "Web search confirms active programming: 'Seedbed Seminar — War Against Humanity' convened at CIDECI-UniTierra 20-24 July 2026 by the Zapatista Sixth Commission."
     checked: 2026-06-28
-last_checked: "2026-06-28"
+    date: 2026-06-28
+    note: 'Web search confirms active programming: ''Seedbed Seminar — War Against
+      Humanity'' convened at CIDECI-UniTierra 20-24 July 2026 by the Zapatista Sixth
+      Commission.'
+  sitemap:
+    checked: 2026-08-09
+    date: 2024-05-21
+    note: Page last modified (from sitemap)
+last_checked: '2026-06-28'
 ---
 
 The Centro Indígena de Capacitación Integral – Universidad de la Tierra (CIDECI-Unitierra) is an indigenous education and documentation centre based in San Cristóbal de las Casas, Chiapas. It operates in close alignment with the Zapatista autonomous communities and serves as the primary hub for the Zapatista *Escuelitas* (Little Schools) — structured learning exchanges in which participants live with Zapatista families and study the autonomous governance system directly.

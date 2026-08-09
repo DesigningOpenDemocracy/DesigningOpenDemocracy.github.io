@@ -6,26 +6,34 @@ country: IT
 website: https://www.labsus.org
 logo: /assets/org-logos/labsus.png
 contact:
+  checked: 2026-08-09
   form: https://www.labsus.org/contatti
   source: https://www.labsus.org
-  checked: 2026-08-09
-summary: "An Italian association pioneering 'shared administration' (amministrazione condivisa) — a legal and practical framework for citizen-government collaboration pacts to manage common goods, adopted by hundreds of Italian cities."
+summary: An Italian association pioneering 'shared administration' (amministrazione
+  condivisa) — a legal and practical framework for citizen-government collaboration
+  pacts to manage common goods, adopted by hundreds of Italian cities.
 concepts:
-  - deliberative-democracy
-  - participatory-budgeting
-  - democracy-tools
+- deliberative-democracy
+- participatory-budgeting
+- democracy-tools
 location:
   latitude: 41.9028
   longitude: 12.4964
   name: Rome, Italy
   precision: city
+events:
+- date: '2005-01-01'
+  notable: true
+  title: Founded in Rome as the Laboratory for Subsidiarity, pioneering shared administration
+    in Italy
 activity:
   rss:
-    date: 2026-07-07
-    note: "Latest post: Oltre la rigenerazione urbana: la cura dei custodi come nuovo bene comune"
-    url: https://www.labsus.org/2026/07/oltre-la-rigenerazione-urbana-la-cura-dei-custodi-come-nuovo-bene-comune/
     checked: 2026-08-09
-last_checked: "2026-08-09"
+    date: 2026-07-07
+    note: 'Latest post: Oltre la rigenerazione urbana: la cura dei custodi come nuovo
+      bene comune'
+    url: https://www.labsus.org/2026/07/oltre-la-rigenerazione-urbana-la-cura-dei-custodi-come-nuovo-bene-comune/
+last_checked: '2026-08-09'
 ---
 
 Labsus — the Laboratory for Subsidiarity — has spent two decades developing and advocating for "amministrazione condivisa" (shared administration), a framework in which citizens and local government enter formal collaboration pacts to co-manage common goods: parks, cultural spaces, social services, confiscated mafia properties, and other shared resources. The model is grounded in the Italian constitution's principle of subsidiarity and has been adopted by hundreds of municipalities, producing what Labsus calls a parallel governance layer — not replacing representative institutions but supplementing them with structured citizen co-management.

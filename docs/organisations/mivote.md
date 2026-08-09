@@ -5,19 +5,23 @@ status: deregistered
 country: AU
 website: https://web.archive.org/web/20190718233549/https://www.mivote.org.au/
 logo: /assets/org-logos/mivote.png
-summary: "An Australian civic technology platform and political party (2014–c.2019) that presented citizens with four structured policy destinations per issue — not yes/no polls — backed by a research and ethics pipeline designed to produce informed, non-ideological votes that constitutionally bound its Senate candidates."
-contributors:
-  - BrianKhuu
-concepts:
-  - direct-democracy
-  - e-government
-  - representative-democracy
 contact:
-  email: admin@mivote.org.au
-  source: MiVote's own "Values & Vision" PDF (see Links below), sourced via Wayback Machine snapshot of mivote.org.au
   checked: 2026-08-02
-  note: "Historical contact — MiVote is defunct; address unlikely to still be monitored."
-last_checked: "2026-08-02"
+  email: admin@mivote.org.au
+  note: Historical contact — MiVote is defunct; address unlikely to still be monitored.
+  source: MiVote's own "Values & Vision" PDF (see Links below), sourced via Wayback
+    Machine snapshot of mivote.org.au
+summary: An Australian civic technology platform and political party (2014–c.2019)
+  that presented citizens with four structured policy destinations per issue — not
+  yes/no polls — backed by a research and ethics pipeline designed to produce informed,
+  non-ideological votes that constitutionally bound its Senate candidates.
+concepts:
+- direct-democracy
+- e-government
+- representative-democracy
+last_checked: '2026-08-02'
+contributors:
+- BrianKhuu
 ---
 
 ![MiVote logo](mivote-mark.png)

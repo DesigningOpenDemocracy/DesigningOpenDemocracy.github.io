@@ -5,12 +5,14 @@ status: inactive
 country: AU
 website: https://web.archive.org/web/*/https://coalitionofeveryone.com/
 logo: /assets/org-logos/coalition-of-everyone.ico
-summary: "An Australian organisation that ran participatory and deliberative democracy processes in communities — aimed at repairing and building democracy into everyday life. Wound up after six years of operation."
+summary: An Australian organisation that ran participatory and deliberative democracy
+  processes in communities — aimed at repairing and building democracy into everyday
+  life. Wound up after six years of operation.
 concepts:
-  - citizens-assembly
-  - deliberative-democracy
-  - consensus-mapping
-  - direct-democracy
+- citizens-assembly
+- deliberative-democracy
+- consensus-mapping
+- direct-democracy
 ---
 
 The Coalition of Everyone (CoE) was founded by Willow Berzin with the aim of making participatory and deliberative democracy part of everyday civic life — not just formal government processes. It ran citizens' assemblies, participatory workshops, and community engagement processes across Australia.

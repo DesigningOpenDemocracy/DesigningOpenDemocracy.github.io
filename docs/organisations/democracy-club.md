@@ -6,34 +6,31 @@ country: GB
 website: https://democracyclub.org.uk
 logo: /assets/org-logos/democracy-club.svg
 contact:
+  checked: 2026-07-30
   email: hello@democracyclub.org.uk
   source: https://democracyclub.org.uk/contact
-  checked: 2026-07-30
-rss_feed: https://democracyclub.org.uk/blog/feed/
-news_page: https://democracyclub.org.uk/blog/
-summary: "A UK civic tech nonprofit building free, open data infrastructure for elections — candidate databases, polling place finders, and ward boundary data used by the BBC, The Guardian, and local councils."
+summary: A UK civic tech nonprofit building free, open data infrastructure for elections
+  — candidate databases, polling place finders, and ward boundary data used by the
+  BBC, The Guardian, and local councils.
 concepts:
-  - democracy-tools
-  - e-government
-  - representative-democracy
+- democracy-tools
+- e-government
+- representative-democracy
 location:
   latitude: 52.4862
   longitude: -1.8904
   name: Birmingham, UK
+rss_feed: https://democracyclub.org.uk/blog/feed/
+news_page: https://democracyclub.org.uk/blog/
 related_orgs:
-  - mysociety
+- mysociety
 activity:
   rss:
-    date: 2026-07-31
-    note: "Latest post: Mapping Northern Ireland's proposed polling places"
-    url: https://democracyclub.org.uk/blog/2026/07/31/mapping-northern-irelands-proposed-polling-places/
     checked: 2026-08-09
-  rss:
     date: 2026-07-31
-    note: "Latest post: Mapping Northern Ireland's proposed polling places"
+    note: 'Latest post: Mapping Northern Ireland''s proposed polling places'
     url: https://democracyclub.org.uk/blog/2026/07/31/mapping-northern-irelands-proposed-polling-places/
-    checked: 2026-08-09
-last_checked: "2026-06-15"
+last_checked: '2026-06-15'
 ---
 
 Democracy Club is a UK nonprofit (registered charity) that builds open infrastructure for elections. Founded in 2015, it operates as a small paid team supported by a large volunteer community who collectively gather, clean, and maintain data about UK elections.

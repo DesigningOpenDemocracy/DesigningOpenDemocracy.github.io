@@ -5,28 +5,29 @@ status: active
 country: GB
 website: https://www.involve.org.uk
 contact:
-  email: info@involve.org.uk
-  phone: "+44 20 3745 4334"
-  source: https://www.involve.org.uk
   checked: 2026-08-01
-summary: "A UK charity that develops and promotes public participation and deliberative democracy, advising governments on how to design and run genuine engagement processes."
+  email: info@involve.org.uk
+  phone: +44 20 3745 4334
+  source: https://www.involve.org.uk
+summary: A UK charity that develops and promotes public participation and deliberative
+  democracy, advising governments on how to design and run genuine engagement processes.
+concepts:
+- citizens-assembly
+- deliberative-democracy
+- participatory-budgeting
+- direct-democracy
 location:
   latitude: 51.5074
   longitude: -0.1278
   name: London, United Kingdom
   precision: city
-concepts:
-  - citizens-assembly
-  - deliberative-democracy
-  - participatory-budgeting
-  - direct-democracy
 rss_feed: https://www.involve.org.uk/rss.xml
 activity:
   rss:
     date: 2026-05-12
-    note: "Latest post: After the May elections: governing on thin mandates"
-    url: "https://www.involve.org.uk/news-opinion/opinion/after-may-elections-governing-thin-mandates"
-last_checked: "2026-06-15"
+    note: 'Latest post: After the May elections: governing on thin mandates'
+    url: https://www.involve.org.uk/news-opinion/opinion/after-may-elections-governing-thin-mandates
+last_checked: '2026-06-15'
 ---
 
 Involve is a UK charity at the intersection of research and practice in public participation. They work with governments, public institutions, and communities to design participation processes that actually influence decisions — as opposed to the tokenistic consultation that often passes for engagement.

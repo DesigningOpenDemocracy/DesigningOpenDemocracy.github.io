@@ -6,35 +6,43 @@ country: GB
 website: https://www.yourparty.uk
 logo: /assets/org-logos/your-party.svg
 contact:
+  checked: 2026-07-30
   email: herewego@yourparty.uk
   source: https://www.yourparty.uk/about
-  checked: 2026-07-30
-summary: "A UK political party founded in 2025, notable for using sortition (via the Sortition Foundation) to select delegates to its founding conference — producing a statistically representative membership sample balanced by gender, region, age, ethnicity, and other characteristics."
+summary: A UK political party founded in 2025, notable for using sortition (via the
+  Sortition Foundation) to select delegates to its founding conference — producing
+  a statistically representative membership sample balanced by gender, region, age,
+  ethnicity, and other characteristics.
+concepts:
+- sortition
+- citizens-assembly
 location:
   latitude: 51.5074
   longitude: -0.1278
   name: London, United Kingdom
   precision: city
-concepts:
-  - sortition
-  - citizens-assembly
 rss_feed: https://www.yourparty.uk/feed
+events:
+- date: '2009-01-01'
+  notable: true
+  title: Founded by Yoshimi Watanabe, a former Liberal Democratic Party minister,
+    as a reformist Japanese political party
 activity:
+  dod:
+    checked: 2026-07-19
+    date: 2026-07-16
+    note: Website live; article:modified_time 2026-07-16, active UK political party.
+    url: https://www.yourparty.uk
+  rss:
+    checked: 2026-06-07
+    date: 2026-06-07
+    note: RSS feed active
+    url: https://www.yourparty.uk/feed
   social:
     date: 2026-06-05
-    note: "Latest tweet: police accountability post"
+    note: 'Latest tweet: police accountability post'
     url: https://x.com/thisisyourparty
-  rss:
-    date: 2026-06-07
-    note: "RSS feed active"
-    url: https://www.yourparty.uk/feed
-    checked: 2026-06-07
-  dod:
-    date: 2026-07-16
-    note: "Website live; article:modified_time 2026-07-16, active UK political party."
-    url: https://www.yourparty.uk
-    checked: 2026-07-19
-last_checked: "2026-07-19"
+last_checked: '2026-07-19'
 ---
 
 Your Party is a UK political party ([Wikipedia](https://en.wikipedia.org/wiki/Your_Party_(UK))) registered with the Electoral Commission in September 2025. It was announced by Jeremy Corbyn and Zarah Sultana following their departures from Labour, reaching 55,000 members by December 2025.

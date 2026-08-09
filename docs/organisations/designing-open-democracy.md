@@ -5,27 +5,30 @@ status: active
 country: AU
 website: https://www.designingopendemocracy.com
 logo: /assets/dodlogo_transparent.png
-summary: "An Australian-operated, nonpartisan forum of process engineers, social architects, and philosophers exploring how technology, engineering, and social-systems design can improve democracy — running since December 2016. This is DOD's own site, so this entry is self-authored rather than third-party researched."
+summary: An Australian-operated, nonpartisan forum of process engineers, social architects,
+  and philosophers exploring how technology, engineering, and social-systems design
+  can improve democracy — running since December 2016. This is DOD's own site, so
+  this entry is self-authored rather than third-party researched.
+concepts:
+- meta-organisation
+- deliberative-democracy
+- accountability-sink
 location:
   latitude: -37.8136
   longitude: 144.9631
   name: Melbourne, Australia
   precision: city
-concepts:
-  - meta-organisation
-  - deliberative-democracy
-  - accountability-sink
 activity:
   manual:
-    date: 2026-08-07
-    note: "This entry, and everything else on this site, is evidence of its own activity."
     checked: 2026-08-07
+    date: 2026-08-07
+    note: This entry, and everything else on this site, is evidence of its own activity.
   sitemap:
-    date: 2026-08-09
-    note: "Page last modified (from sitemap)"
-    url: https://designingopendemocracy.com/sitemap.xml
     checked: 2026-08-09
-last_checked: "2026-08-09"
+    date: 2026-08-09
+    note: Page last modified (from sitemap)
+    url: https://designingopendemocracy.com/sitemap.xml
+last_checked: '2026-08-09'
 ---
 
 *A note on this entry: every other page in the Democracy Landscape is DOD monitoring an organisation from the outside, arm's length, no formal relationship. This one is different — DOD writing about itself, on its own site. Read it with that in mind rather than as independent verification.*

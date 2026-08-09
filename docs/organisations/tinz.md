@@ -7,24 +7,27 @@ website: https://www.transparency.org.nz
 logo: /assets/org-logos/tinz.svg
 logo_bg: dark
 contact:
+  checked: 2026-08-09
   form: https://www.transparency.org.nz/contact
   source: https://www.transparency.org.nz
-  checked: 2026-08-09
-activity:
-  dod:
-    date: 2026-08-09
-    note: Site live and actively publishing as of August 2026
-    checked: 2026-08-09
-last_checked: "2026-08-09"
-summary: "The New Zealand chapter of the global anti-corruption coalition — running the National Integrity System assessment, campaigning for lobbying transparency, political donation reform, limits on parliamentary urgency, and beneficial ownership registers."
+summary: The New Zealand chapter of the global anti-corruption coalition — running
+  the National Integrity System assessment, campaigning for lobbying transparency,
+  political donation reform, limits on parliamentary urgency, and beneficial ownership
+  registers.
 concepts:
-  - radical-transparency
-  - democracy
+- radical-transparency
+- democracy
 location:
   latitude: -41.2865
   longitude: 174.7762
   name: Wellington, New Zealand
   precision: city
+activity:
+  dod:
+    checked: 2026-08-09
+    date: 2026-08-09
+    note: Site live and actively publishing as of August 2026
+last_checked: '2026-08-09'
 ---
 
 Transparency International New Zealand (TINZ) is the New Zealand chapter of the global Transparency International coalition. Its work focuses on the institutional integrity of democratic governance: lobbying transparency (New Zealand is substantially behind peers on regulating who influences policy and law), political donation reform (real-time reporting, donation caps, disclosure of beneficial ownership), limits on the use of parliamentary urgency (which bypasses select committee scrutiny and public submission), and a campaign for a beneficial ownership register to close the gap that allows opaque financial structures to be exploited.

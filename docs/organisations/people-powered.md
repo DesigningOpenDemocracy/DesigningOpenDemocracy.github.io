@@ -1,19 +1,23 @@
 ---
-activity:
-  dod:
-    checked: 2026-08-09
-    date: 2026-08-09
-    note: Site live and actively publishing as of August 2026
+title: People Powered
+type: network
+status: active
+country: US
+website: https://www.peoplepowered.org
+logo: /assets/org-logos/people-powered.webp
+contact:
+  checked: 2026-08-09
+  form: https://www.peoplepowered.org/connect
+  source: https://www.peoplepowered.org
+summary: A global hub for participatory democracy — connecting government practitioners,
+  researchers, and advocates through mentorship, training, accelerator programmes,
+  and a resource centre. Serves as a membership organisation for the participatory
+  democracy field worldwide.
 concepts:
 - participatory-budgeting
 - citizens-assembly
 - deliberative-democracy
 - democracy-tools
-contact:
-  checked: 2026-08-09
-  form: https://www.peoplepowered.org/connect
-  source: https://www.peoplepowered.org
-country: US
 events:
 - date: '2026-09-21'
   end_date: '2026-09-23'
@@ -37,16 +41,12 @@ events:
   title: World Forum for Democracy 2026 (Council of Europe) — 14th edition, 'Democratic
     Foresight,' Strasbourg
   url: https://www.peoplepowered.org/events
+activity:
+  dod:
+    checked: 2026-08-09
+    date: 2026-08-09
+    note: Site live and actively publishing as of August 2026
 last_checked: '2026-08-09'
-logo: /assets/org-logos/people-powered.webp
-status: active
-summary: A global hub for participatory democracy — connecting government practitioners,
-  researchers, and advocates through mentorship, training, accelerator programmes,
-  and a resource centre. Serves as a membership organisation for the participatory
-  democracy field worldwide.
-title: People Powered
-type: network
-website: https://www.peoplepowered.org
 ---
 
 People Powered is a global membership hub for participatory democracy, serving as a field-building organisation for the practitioners, governments, researchers, and advocates working on citizen participation worldwide. It does not itself run participatory processes — it builds the capacity of those who do, bridging the gap between isolated local experiments and a coherent global field with shared standards, evidence, and infrastructure.

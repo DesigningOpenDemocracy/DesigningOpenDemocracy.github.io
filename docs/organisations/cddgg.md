@@ -6,30 +6,33 @@ country: AU
 website: https://www.canberra.edu.au/research/centres/cddgg
 logo: /assets/org-logos/cddgg.png
 contact:
-  email: delibdem@canberra.edu.au
-  phone: "+61 2 6201 5111"
-  source: https://www.canberra.edu.au/research/centres/cddgg
   checked: 2026-07-24
-summary: "A world-leading academic research centre at the University of Canberra focused on deliberative democracy — home of the Journal of Deliberative Democracy, and the institution behind the 2009 Australian Citizens' Parliament."
+  email: delibdem@canberra.edu.au
+  phone: +61 2 6201 5111
+  source: https://www.canberra.edu.au/research/centres/cddgg
+summary: A world-leading academic research centre at the University of Canberra focused
+  on deliberative democracy — home of the Journal of Deliberative Democracy, and the
+  institution behind the 2009 Australian Citizens' Parliament.
+concepts:
+- citizens-assembly
+- sortition
 location:
   latitude: -35.2457
   longitude: 149.0745
   name: Canberra, Australia
-concepts:
-  - citizens-assembly
-  - sortition
 activity:
-  rss:
-    note: "No feed found"
-    checked: 2026-06-07
   dod:
-    date: 2026-06-29
-    note: "Website confirmed active. Hans Asenbaum remains director; weekly seminar series running, Summer School and Journal of Deliberative Democracy ongoing."
     checked: 2026-06-29
+    date: 2026-06-29
+    note: Website confirmed active. Hans Asenbaum remains director; weekly seminar
+      series running, Summer School and Journal of Deliberative Democracy ongoing.
+  rss:
+    checked: 2026-06-07
+    note: No feed found
   sitemap:
-    note: "Sitemap found, no lastmod"
     checked: 2026-08-09
-last_checked: "2026-06-29"
+    note: Sitemap found, no lastmod
+last_checked: '2026-06-29'
 ---
 
 The Centre for Deliberative Democracy and Global Governance (CDDGG) is a research centre within the University of Canberra's Faculty of Business, Government and Law. Founded in 2014 (with earlier roots at ANU), it is one of the leading academic centres for deliberative democracy research globally.

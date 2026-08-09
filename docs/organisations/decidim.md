@@ -1,11 +1,18 @@
 ---
-activity:
-  rss:
-    checked: 2026-06-07
-    date: 2026-06-04
-    note: 'Latest post: Nos infrastructures démocratiques ne peuvent pas être propriétaires
-      : à propos d'
-    url: https://decidim.org/blog/2026-04-07-nos-infrastructures-democratiques-ne-peuvent
+title: Decidim
+type: platform
+status: active
+country: ES
+website: https://decidim.org
+logo: /assets/org-logos/decidim.svg
+contact:
+  checked: 2026-07-30
+  email: hola@decidim.org
+  form: https://decidim.org/contact
+  source: https://decidim.org/contact
+summary: An open-source participatory democracy framework used by 400+ governments
+  and organisations worldwide — citizen proposals, participatory budgeting, consultations,
+  and collaborative legislation.
 concepts:
 - democracy-tools
 - direct-democracy
@@ -13,12 +20,11 @@ concepts:
 - participatory-budgeting
 - e-government
 - citizens-assembly
-contact:
-  checked: 2026-07-30
-  email: hola@decidim.org
-  form: https://decidim.org/contact
-  source: https://decidim.org/contact
-country: ES
+location:
+  latitude: 41.3874
+  longitude: 2.1686
+  name: Barcelona, Spain
+rss_feed: https://decidim.org/blog/feed.xml
 events:
 - date: '2016-01-01'
   notable: true
@@ -35,20 +41,14 @@ events:
 - date: '2023-01-01'
   notable: false
   title: Recognised as Digital Public Good by UN Digital Public Goods Alliance
+activity:
+  rss:
+    checked: 2026-06-07
+    date: 2026-06-04
+    note: 'Latest post: Nos infrastructures démocratiques ne peuvent pas être propriétaires
+      : à propos d'
+    url: https://decidim.org/blog/2026-04-07-nos-infrastructures-democratiques-ne-peuvent
 last_checked: '2026-06-15'
-location:
-  latitude: 41.3874
-  longitude: 2.1686
-  name: Barcelona, Spain
-logo: /assets/org-logos/decidim.svg
-rss_feed: https://decidim.org/blog/feed.xml
-status: active
-summary: An open-source participatory democracy framework used by 400+ governments
-  and organisations worldwide — citizen proposals, participatory budgeting, consultations,
-  and collaborative legislation.
-title: Decidim
-type: platform
-website: https://decidim.org
 ---
 
 Decidim ("we decide" in Catalan) is a free, open-source participatory democracy framework built in Ruby on Rails, originally developed by Barcelona City Council and first deployed in January 2016 for the city's participatory action plan. It is now governed by the Decidim Association, an independent body separate from the city.

@@ -6,37 +6,41 @@ country: AU
 website: https://www.crossroadsconversation.com.au
 logo: /assets/org-logos/conversations-at-the-crossroads.png
 contact:
+  checked: 2026-07-24
   email: admin@crossroadsconversation.com.au
   source: https://www.crossroadsconversation.com.au
-  checked: 2026-07-24
-news_page: https://www.crossroadsconversation.com.au/events
-summary: "An independent Melbourne-based civic network running deliberative democracy initiatives, including large-scale citizens assemblies and a national program to scale deliberative participation."
+summary: An independent Melbourne-based civic network running deliberative democracy
+  initiatives, including large-scale citizens assemblies and a national program to
+  scale deliberative participation.
 concepts:
-  - citizens-assembly
-  - deliberative-democracy
-  - democracy
+- citizens-assembly
+- deliberative-democracy
+- democracy
 location:
   latitude: -37.8136
   longitude: 144.9631
   name: Melbourne, Australia
   precision: city
+news_page: https://www.crossroadsconversation.com.au/events
 activity:
-  sitemap:
-    date: 2026-07-27
-    note: "Page last modified (from sitemap)"
-    url: https://www.crossroadsconversation.com.au/sitemap.xml
-    checked: 2026-08-09
   manual:
+    checked: 2026-06-07
     date: 2026-06-07
-    note: "Website loaded. https://www.crossroadsconversation.com.au/events says next event is at  Tuesday 30 June 2026  'The decline of democracy and the rise of the far-right'"
+    note: Website loaded. https://www.crossroadsconversation.com.au/events says next
+      event is at  Tuesday 30 June 2026  'The decline of democracy and the rise of
+      the far-right'
     url: https://www.crossroadsconversation.com.au/events
-    checked: 2026-06-07
   scrape:
-    date: 2026-06-30
-    note: "Latest news page scraped"
-    url: https://www.crossroadsconversation.com.au/events
     checked: 2026-06-07
-last_checked: "2026-06-29"
+    date: 2026-06-30
+    note: Latest news page scraped
+    url: https://www.crossroadsconversation.com.au/events
+  sitemap:
+    checked: 2026-08-09
+    date: 2026-07-27
+    note: Page last modified (from sitemap)
+    url: https://www.crossroadsconversation.com.au/sitemap.xml
+last_checked: '2026-06-29'
 ---
 
 Conversations at the Crossroads is an independent Australian civic network focused on democratic renewal through thoughtful, informed conversation. Founded around 2020 by Professor Joseph Camilleri (Professor Emeritus, La Trobe University) and colleagues, the network runs public events, citizens assemblies, educational series, and podcasts aimed at connecting progressive social movements and scaling deliberative participation.

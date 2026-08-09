@@ -6,37 +6,42 @@ country: AU
 website: https://www.prsa.org.au
 logo: /assets/org-logos/prsa.jpg
 contact:
+  checked: 2026-07-24
   email: info@prsa.org.au
   source: https://www.prsa.org.au/nat_cont.html
-  checked: 2026-07-24
-summary: "Australia's oldest electoral reform organisation, advocating for proportional representation via the Single Transferable Vote — the system already used in Tasmania, the ACT, and the Australian Senate."
+summary: Australia's oldest electoral reform organisation, advocating for proportional
+  representation via the Single Transferable Vote — the system already used in Tasmania,
+  the ACT, and the Australian Senate.
+concepts:
+- mixed-member-proportional-representation
+- representative-democracy
+- direct-democracy
 location:
   latitude: -35.2809
-  longitude: 149.1300
+  longitude: 149.13
   name: Canberra, Australia
   precision: city
-concepts:
-  - mixed-member-proportional-representation
-  - representative-democracy
-  - direct-democracy
 rss_feed: https://www.prsa.org.au/feed
 activity:
-  rss:
-    date: 2020-07-09
-    note: "Latest post: Orders in Council gazetted for single-councillor wards have taken effect"
-    url: "https://prsa.org.au/news/2020/#2020-07b"
-    checked: 2026-06-08
-  manual:
-    date: 2026-05-01
-    note: "website loaded. News page at https://www.prsa.org.au/latest01.htm 2026-05a 'LETTER ON SOUTH AUSTRALIAN ELECTION OUTCOME TO ALL SA MPs:'"
-    url: https://www.prsa.org.au/latest01.htm
-    checked: 2026-06-07
   dod:
-    date: 2026-07-19
-    note: "Website live; quarterly newsletter (Quota Notes), active social media, ongoing electoral-reform advocacy."
-    url: https://www.prsa.org.au
     checked: 2026-07-19
-last_checked: "2026-07-19"
+    date: 2026-07-19
+    note: Website live; quarterly newsletter (Quota Notes), active social media, ongoing
+      electoral-reform advocacy.
+    url: https://www.prsa.org.au
+  manual:
+    checked: 2026-06-07
+    date: 2026-05-01
+    note: website loaded. News page at https://www.prsa.org.au/latest01.htm 2026-05a
+      'LETTER ON SOUTH AUSTRALIAN ELECTION OUTCOME TO ALL SA MPs:'
+    url: https://www.prsa.org.au/latest01.htm
+  rss:
+    checked: 2026-06-08
+    date: 2020-07-09
+    note: 'Latest post: Orders in Council gazetted for single-councillor wards have
+      taken effect'
+    url: https://prsa.org.au/news/2020/#2020-07b
+last_checked: '2026-07-19'
 ---
 
 The Proportional Representation Society of Australia (PRSA) is one of Australia's oldest electoral reform organisations, with roots in the 19th century — Catherine Helen Spence was among its founding members. The current national constitution dates from 1982.

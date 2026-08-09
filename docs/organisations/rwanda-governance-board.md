@@ -6,40 +6,49 @@ country: RW
 website: https://www.rgb.rw
 logo: /assets/org-logos/rwanda-governance-board.png
 contact:
+  checked: 2026-07-30
   email: info@rgb.rw
   form: https://www.rgb.rw/contact
   source: https://www.rgb.rw/contact
-  checked: 2026-07-30
-news_page: https://www.rgb.rw/updates/news
-summary: "Rwanda's government body for governance research and oversight — publishing annual governance scorecards, studying decentralisation and citizen participation, and administering the Ubudehe community classification system. Included for its governance design research, not as an independent watchdog of the Kagame government."
+summary: Rwanda's government body for governance research and oversight — publishing
+  annual governance scorecards, studying decentralisation and citizen participation,
+  and administering the Ubudehe community classification system. Included for its
+  governance design research, not as an independent watchdog of the Kagame government.
+concepts:
+- vanguardism
+- democracy
+- citizens-assembly
 location:
   latitude: -1.9441
   longitude: 30.0619
   name: Kigali, Rwanda
-concepts:
-  - vanguardism
-  - democracy
-  - citizens-assembly
+news_page: https://www.rgb.rw/updates/news
+events:
+- date: '2011-01-01'
+  notable: true
+  title: Established through merger of institutions to oversee governance, decentralisation,
+    and civic engagement in Rwanda
 activity:
-  rss:
-    note: "No feed found"
-    checked: 2026-06-07
-  manual:
-    date: 2026-05-29
-    note: "website loaded. News page at https://www.rgb.rw/updates/news . Latest news  Friday, 29 May, 2026  'Former Ethipia Prime Minister H.E. Hailemariam visits RGB'"
-    url: https://www.rgb.rw/updates/news
-    checked: 2026-06-07
-  scrape:
-    date: 2026-05-29
-    note: "Latest news page scraped"
-    url: https://www.rgb.rw/updates/news
-    checked: 2026-06-07
   dod:
-    date: 2026-05-29
-    note: "Website live with May 2026 news (RGB leadership meetings, governance commemorations)."
-    url: https://www.rgb.rw
     checked: 2026-07-19
-last_checked: "2026-07-19"
+    date: 2026-05-29
+    note: Website live with May 2026 news (RGB leadership meetings, governance commemorations).
+    url: https://www.rgb.rw
+  manual:
+    checked: 2026-06-07
+    date: 2026-05-29
+    note: website loaded. News page at https://www.rgb.rw/updates/news . Latest news  Friday,
+      29 May, 2026  'Former Ethipia Prime Minister H.E. Hailemariam visits RGB'
+    url: https://www.rgb.rw/updates/news
+  rss:
+    checked: 2026-06-07
+    note: No feed found
+  scrape:
+    checked: 2026-06-07
+    date: 2026-05-29
+    note: Latest news page scraped
+    url: https://www.rgb.rw/updates/news
+last_checked: '2026-07-19'
 ---
 
 > **Note on scope:** The RGB is a government body, not an independent civil society organisation. It is included here because it publishes substantive governance research — on decentralisation, citizen participation mechanisms, and Rwanda's distinctive governance innovations — rather than as a source of critical accountability. Rwanda's national political system under President Kagame does not meet DOD's accountability standard at the top level; elections are not genuinely competitive. The governance mechanisms documented by RGB are analytically interesting and separable from an overall assessment of the Rwandan political system.

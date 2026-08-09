@@ -6,26 +6,28 @@ country: AU
 website: https://earthworker.coop
 logo: /assets/org-logos/earthworker-cooperative.png
 contact:
+  checked: 2026-07-30
   form: https://earthworker.coop/contact
   source: https://earthworker.coop/contact
-  checked: 2026-07-30
-summary: "A Victorian network of worker-owned cooperatives focused on clean energy manufacturing and services — building a democratic economy as a response to both the ecological crisis and economic inequality."
+summary: A Victorian network of worker-owned cooperatives focused on clean energy
+  manufacturing and services — building a democratic economy as a response to both
+  the ecological crisis and economic inequality.
 concepts:
-  - worker-cooperatives
-  - economic-democracy
-  - cooperative
+- worker-cooperatives
+- economic-democracy
+- cooperative
 location:
   latitude: -38.2466
   longitude: 146.4307
   name: Morwell, Victoria, Australia
-last_checked: "2026-05-29"
 rss_feed: https://earthworker.coop/feed
 activity:
   rss:
-    date: 2026-07-13
-    note: "Latest post: Remembering Katherine Cunningham"
-    url: https://earthworker.coop/remembering-katherine-cunningham/
     checked: 2026-08-09
+    date: 2026-07-13
+    note: 'Latest post: Remembering Katherine Cunningham'
+    url: https://earthworker.coop/remembering-katherine-cunningham/
+last_checked: '2026-05-29'
 ---
 
 Earthworker Cooperative is a grassroots network of worker-owned cooperatives based in Victoria, Australia. Founded as a response to both the climate crisis and economic inequality, its model is to build community wealth by structuring enterprises as worker cooperatives — where employees are co-owners with equal voice, and profits are distributed locally rather than extracted by external shareholders.

@@ -1,20 +1,28 @@
 ---
-activity:
-  rss:
-    checked: 2026-08-09
-    date: 2026-01-03
-    note: 'Latest post: Redescribing Democracy: a Review'
-    url: https://canberra-alliance.org.au/redescribing-democracy-a-review/?utm_source=rss&utm_medium=rss&utm_campaign=redescribing-democracy-a-review
+title: Canberra Alliance for Participatory Democracy (CAPaD)
+type: advocacy
+status: active
+country: AU
+website: https://canberra-alliance.org.au
+logo: /assets/org-logos/capad-icon.png
 banner: /assets/org-logos/capad.jpg
-concepts:
-- direct-democracy
-- citizens-assembly
-- cooperative
 contact:
   checked: 2026-07-24
   email: secretary@canberra-alliance.org.au
   source: https://canberra-alliance.org.au
-country: AU
+summary: A Canberra-based community nonprofit promoting good governance and civic
+  participation in the ACT through candidate accountability forums, deliberative conversations,
+  and civic education — independently funded and member-run since 2015.
+concepts:
+- direct-democracy
+- citizens-assembly
+- cooperative
+location:
+  latitude: -35.2809
+  longitude: 149.13
+  name: Canberra, Australia
+  precision: city
+rss_feed: https://canberra-alliance.org.au/feed
 events:
 - date: '2026-08-23'
   notable: false
@@ -35,21 +43,13 @@ events:
   title: Community Assembly following up MP asks for 2026 — Woden Valley Uniting Church,
     Curtin ACT
   url: https://canberra-alliance.org.au/events/
+activity:
+  rss:
+    checked: 2026-08-09
+    date: 2026-01-03
+    note: 'Latest post: Redescribing Democracy: a Review'
+    url: https://canberra-alliance.org.au/redescribing-democracy-a-review/?utm_source=rss&utm_medium=rss&utm_campaign=redescribing-democracy-a-review
 last_checked: '2026-06-28'
-location:
-  latitude: -35.2809
-  longitude: 149.13
-  name: Canberra, Australia
-  precision: city
-logo: /assets/org-logos/capad-icon.png
-rss_feed: https://canberra-alliance.org.au/feed
-status: active
-summary: A Canberra-based community nonprofit promoting good governance and civic
-  participation in the ACT through candidate accountability forums, deliberative conversations,
-  and civic education — independently funded and member-run since 2015.
-title: Canberra Alliance for Participatory Democracy (CAPaD)
-type: advocacy
-website: https://canberra-alliance.org.au
 ---
 
 CAPaD is an ACT-based community organisation founded in 2015, focused on making elected representatives more accountable and democratic participation more meaningful for Canberra residents. It is independently funded — not by political parties, government, or corporations — and run by a voluntary committee.

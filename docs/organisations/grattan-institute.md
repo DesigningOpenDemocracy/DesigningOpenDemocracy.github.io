@@ -6,32 +6,37 @@ country: AU
 website: https://grattan.edu.au
 logo: /assets/org-logos/grattan-institute.png
 contact:
-  email: info@grattan.edu.au
-  phone: "+61 3 9035 9881"
-  source: https://grattan.edu.au/contact/
   checked: 2026-07-24
-summary: "A Melbourne-based public policy think tank with a democracy and governance program — producing research on electoral integrity, parliamentary reform, campaign finance, and trust in government. Not democracy-specialist; covers a broad range of policy areas."
+  email: info@grattan.edu.au
+  phone: +61 3 9035 9881
+  source: https://grattan.edu.au/contact/
+summary: A Melbourne-based public policy think tank with a democracy and governance
+  program — producing research on electoral integrity, parliamentary reform, campaign
+  finance, and trust in government. Not democracy-specialist; covers a broad range
+  of policy areas.
+concepts:
+- democracy
+- constitutional-democracy
+- accountability-sink
 location:
   latitude: -37.8136
   longitude: 144.9631
   name: Melbourne, Australia
   precision: city
-concepts:
-  - democracy
-  - constitutional-democracy
-  - accountability-sink
 rss_feed: https://grattan.edu.au/feed
 activity:
-  rss:
-    date: 2026-07-26
-    note: "Latest post: Reform the system so disabled Australians can have better jobs and fairer wages"
-    url: https://grattan.edu.au/reform-the-system-so-disabled-australians-can-have-better-jobs-and-fairer-wages/
-    checked: 2026-08-09
   dod:
-    date: 2026-07-05
-    note: "Site confirmed active and current through July 2026; democracy and public integrity program still listed"
     checked: 2026-07-05
-last_checked: "2026-07-05"
+    date: 2026-07-05
+    note: Site confirmed active and current through July 2026; democracy and public
+      integrity program still listed
+  rss:
+    checked: 2026-08-09
+    date: 2026-07-26
+    note: 'Latest post: Reform the system so disabled Australians can have better
+      jobs and fairer wages'
+    url: https://grattan.edu.au/reform-the-system-so-disabled-australians-can-have-better-jobs-and-fairer-wages/
+last_checked: '2026-07-05'
 ---
 
 The Grattan Institute is a Melbourne-based public policy think tank covering a broad range of policy areas including energy, housing, education, health, and governance. It is independent of government, political parties, and industry.

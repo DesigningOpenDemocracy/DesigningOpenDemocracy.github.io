@@ -5,27 +5,30 @@ status: active
 country: AU
 website: https://www.youtube.com/@constitutionalclarion1901
 logo: /assets/org-logos/constitutional-clarion.jpg
-summary: "A YouTube channel run by Professor Emerita Anne Twomey (Sydney Law School) — a one-person public education initiative explaining how the Australian Constitution actually works: reserve powers, conventions, federalism, and referendum mechanics — for a general audience rather than a legal one."
-contributors:
-  - BrianKhuu
+summary: 'A YouTube channel run by Professor Emerita Anne Twomey (Sydney Law School)
+  — a one-person public education initiative explaining how the Australian Constitution
+  actually works: reserve powers, conventions, federalism, and referendum mechanics
+  — for a general audience rather than a legal one.'
 concepts:
-  - constitutional-democracy
-  - representative-democracy
-  - tribal-epistemology
+- constitutional-democracy
+- representative-democracy
+- tribal-epistemology
 location:
   latitude: -33.8886
   longitude: 151.1873
   name: Sydney Law School, University of Sydney, Australia
 activity:
   dod:
-    date: 2026-08-02
-    note: "Confirmed active — YouTube channel live, recent episodes verified"
-    url: https://www.youtube.com/@constitutionalclarion1901
     checked: 2026-08-02
+    date: 2026-08-02
+    note: Confirmed active — YouTube channel live, recent episodes verified
+    url: https://www.youtube.com/@constitutionalclarion1901
   sitemap:
-    note: "Sitemap found, no lastmod"
     checked: 2026-08-09
-last_checked: "2026-08-02"
+    note: Sitemap found, no lastmod
+last_checked: '2026-08-02'
+contributors:
+- BrianKhuu
 ---
 
 Constitutional Clarion is a YouTube channel [started in 2022](https://en.wikipedia.org/wiki/Anne_Twomey_%28academic%29) by Anne Twomey, Professor Emerita at Sydney Law School, "publish[ing] her work for a more general audience." It is a one-person public education effort rather than an organisation in the usual sense — included here as a "landscape of one," on the same footing DOD applies to institutions: what matters is the governance-literacy work being done, not the size of the entity doing it.

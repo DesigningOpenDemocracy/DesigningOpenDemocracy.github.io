@@ -6,35 +6,49 @@ country: AU
 website: https://pirateparty.org.au
 logo: /assets/org-logos/pirate-party.svg
 contact:
+  checked: 2026-08-01
   email: media@pirateparty.org.au
   source: https://pirateparty.org.au/contact
-  checked: 2026-08-01
-summary: "An Australian political party focused on digital rights, civil liberties, and democratic reform, including initiating the Electoral Royal Commission campaign to investigate Australian voting reform. Deregistered as an independent AEC-registered party in 2021 and now runs as a distinct internal grouping within the Fusion Party — retaining its own membership and infrastructure, with its members also counted as Fusion Party members for electoral registration."
+summary: An Australian political party focused on digital rights, civil liberties,
+  and democratic reform, including initiating the Electoral Royal Commission campaign
+  to investigate Australian voting reform. Deregistered as an independent AEC-registered
+  party in 2021 and now runs as a distinct internal grouping within the Fusion Party
+  — retaining its own membership and infrastructure, with its members also counted
+  as Fusion Party members for electoral registration.
+concepts:
+- liquid-democracy
+- issue-based-direct-democracy
+- radical-transparency
 location:
   latitude: -33.8688
   longitude: 151.2093
   name: Sydney, Australia
   precision: city
-concepts:
-  - liquid-democracy
-  - issue-based-direct-democracy
-  - radical-transparency
+events:
+- date: '2008-01-01'
+  notable: true
+  title: Founded as part of the international Pirate Party movement, advocating digital
+    rights and direct democracy
 activity:
-  rss:
-    date: 2024-05-14
-    note: "Latest post: Pirate Party Australia raises alarm over miscarriage of justice in David McBride"
-    url: https://pirateparty.org.au/2024/05/15/pirate-party-australia-raises-alarm-over-miscarriage-of-justice-in-david-mcbride-case-lengthy-prison-term/
-    checked: 2026-06-07
-  manual:
-    date: 2026-06-07
-    note: "Known personally to be active"
-    checked: 2026-06-07
   dod:
-    date: 2026-07-19
-    note: "Status ambiguity resolved by a DOD member with direct knowledge: PPAU deregistered as an independent AEC party in 2021 but continues as a distinct internal grouping within the Fusion Party (own membership, own infrastructure); members also count as Fusion Party members for AEC registration purposes. Kept active."
-    url: https://pirateparty.org.au
     checked: 2026-07-19
-last_checked: "2026-07-19"
+    date: 2026-07-19
+    note: 'Status ambiguity resolved by a DOD member with direct knowledge: PPAU deregistered
+      as an independent AEC party in 2021 but continues as a distinct internal grouping
+      within the Fusion Party (own membership, own infrastructure); members also count
+      as Fusion Party members for AEC registration purposes. Kept active.'
+    url: https://pirateparty.org.au
+  manual:
+    checked: 2026-06-07
+    date: 2026-06-07
+    note: Known personally to be active
+  rss:
+    checked: 2026-06-07
+    date: 2024-05-14
+    note: 'Latest post: Pirate Party Australia raises alarm over miscarriage of justice
+      in David McBride'
+    url: https://pirateparty.org.au/2024/05/15/pirate-party-australia-raises-alarm-over-miscarriage-of-justice-in-david-mcbride-case-lengthy-prison-term/
+last_checked: '2026-07-19'
 ---
 
 Pirate Party Australia is the Australian branch of the international Pirate Party movement, which originated in Sweden in 2006 around issues of copyright reform and internet freedom. The Australian chapter has broadened its platform to include democratic reform, government transparency, and civil liberties.

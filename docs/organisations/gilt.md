@@ -6,31 +6,34 @@ country: AT
 website: https://www.gilt.at
 logo: /assets/org-logos/gilt.png
 contact:
+  checked: 2026-07-30
   email: kontakt@gilt.at
   source: https://www.gilt.at
-  checked: 2026-07-30
-summary: "An Austrian open democracy party founded by actor and political activist Roland Düringer, arguing that representative democracy as currently practised is broken and proposing citizen-led alternatives."
+summary: An Austrian open democracy party founded by actor and political activist
+  Roland Düringer, arguing that representative democracy as currently practised is
+  broken and proposing citizen-led alternatives.
+concepts:
+- liquid-democracy
+- direct-democracy
+- sortition
 location:
   latitude: 48.2082
   longitude: 16.3738
   name: Vienna, Austria
   precision: city
-concepts:
-  - liquid-democracy
-  - direct-democracy
-  - sortition
 rss_feed: https://www.gilt.at/feed
 activity:
-  rss:
-    date: 2026-08-09
-    note: "RSS feed active"
-    url: https://www.gilt.at/feed
-    checked: 2026-08-09
   dod:
-    date: 2026-07-05
-    note: "Site confirmed active (2024 election content still featured); Wikipedia (de) corroborates party still exists, no evidence of dissolution"
     checked: 2026-07-05
-last_checked: "2026-07-05"
+    date: 2026-07-05
+    note: Site confirmed active (2024 election content still featured); Wikipedia
+      (de) corroborates party still exists, no evidence of dissolution
+  rss:
+    checked: 2026-08-09
+    date: 2026-08-09
+    note: RSS feed active
+    url: https://www.gilt.at/feed
+last_checked: '2026-07-05'
 ---
 
 G!LT (stylised from the German *"Meine Stimme G!LT"* — "My Vote Counts") is an Austrian political party founded in 2016 by Roland Düringer, an actor, cabaret artist, and political commentator. The party's starting point is a critique of representative democracy as actually practiced in Austria: that elections every five years give citizens minimal real influence, and that the current system serves party machinery more than citizens.

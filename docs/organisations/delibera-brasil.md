@@ -1,15 +1,29 @@
 ---
-concepts:
-- citizens-assembly
-- deliberative-democracy
-- sortition
-- participatory-budgeting
+title: Delibera Brasil
+type: ngo
+status: active
+country: BR
+website: https://deliberabrasil.org
+logo: /assets/org-logos/delibera-brasil.png
 contact:
   checked: 2026-08-09
   email: comunicacao@deliberabrasil.org
   phone: +55 11 95381-1356
   source: https://deliberabrasil.org
-country: BR
+summary: A Brazilian deliberative democracy organisation that designs and runs citizens'
+  assemblies and minipublics using sortition — operating climate assemblies in the
+  Amazon, minipublics in São Paulo's periphery, and theatre-based follow-up to turn
+  assembly recommendations into policy.
+concepts:
+- citizens-assembly
+- deliberative-democracy
+- sortition
+- participatory-budgeting
+location:
+  latitude: -23.5505
+  longitude: -46.6333
+  name: São Paulo, Brazil
+  precision: city
 events:
 - date: '2020-01-01'
   notable: true
@@ -22,20 +36,6 @@ events:
   notable: false
   title: Assembleias Cidadãs de Moçambique — climate resilience assemblies launched
     in Mozambique
-location:
-  latitude: -23.5505
-  longitude: -46.6333
-  name: São Paulo, Brazil
-  precision: city
-logo: /assets/org-logos/delibera-brasil.png
-status: active
-summary: A Brazilian deliberative democracy organisation that designs and runs citizens'
-  assemblies and minipublics using sortition — operating climate assemblies in the
-  Amazon, minipublics in São Paulo's periphery, and theatre-based follow-up to turn
-  assembly recommendations into policy.
-title: Delibera Brasil
-type: ngo
-website: https://deliberabrasil.org
 ---
 
 Delibera Brasil designs and facilitates citizens' assemblies and minipublics — randomly selected groups of ordinary citizens who undergo an intensive learning process with experts, deliberate together, and produce policy recommendations. The method treats democracy not as a spectator sport but as something citizens do: given time, balanced information, and a structured process, laypeople reach substantive, considered conclusions on hard policy questions.

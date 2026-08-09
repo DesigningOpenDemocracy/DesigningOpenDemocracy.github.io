@@ -6,34 +6,44 @@ country: NG
 website: https://www.cddwestafrica.org
 logo: /assets/org-logos/cdd-west-africa.png
 contact:
+  checked: 2026-07-30
   email: cddabv@cddwestafrica.org
   source: https://www.cddwestafrica.org/contact-us
-  checked: 2026-07-30
-news_page: https://www.cddwestafrica.org/blog/
-summary: "An Abuja-based independent research and advocacy organisation focused on democratic governance and human security in West Africa — founded in 1997 to support Nigeria's democratic transition, now a regional hub for policy analysis, electoral integrity, and civil society capacity-building."
+summary: An Abuja-based independent research and advocacy organisation focused on
+  democratic governance and human security in West Africa — founded in 1997 to support
+  Nigeria's democratic transition, now a regional hub for policy analysis, electoral
+  integrity, and civil society capacity-building.
+concepts:
+- democracy
+- representative-democracy
+- accountability-sink
 location:
   latitude: 9.0579
   longitude: 7.4951
   name: Abuja, Nigeria
-concepts:
-  - democracy
-  - representative-democracy
-  - accountability-sink
+news_page: https://www.cddwestafrica.org/blog/
+events:
+- date: '1997-01-01'
+  notable: true
+  title: Founded in Lagos as a research and advocacy organisation on democracy and
+    development in West Africa
 activity:
-  sitemap:
-    date: 2026-06-05
-    note: "Server still up (sitemap detected)"
-    checked: 2026-08-09
   dod:
-    date: 2026-06-29
-    note: "Website and blog confirmed active, with current election-analysis publications (Ekiti State 2026 Pre-Election Environment Analysis; Anambra 2025 Governorship Election report)."
-    url: https://www.cddwestafrica.org/blog/
     checked: 2026-06-29
+    date: 2026-06-29
+    note: Website and blog confirmed active, with current election-analysis publications
+      (Ekiti State 2026 Pre-Election Environment Analysis; Anambra 2025 Governorship
+      Election report).
+    url: https://www.cddwestafrica.org/blog/
   scrape:
-    note: "News page found, no machine-readable date"
-    hint: no_markup
     checked: 2026-06-08
-last_checked: "2026-06-29"
+    hint: no_markup
+    note: News page found, no machine-readable date
+  sitemap:
+    checked: 2026-08-09
+    date: 2026-06-05
+    note: Server still up (sitemap detected)
+last_checked: '2026-06-29'
 ---
 
 The Centre for Democracy and Development (CDD West Africa) is an independent, non-profit research and advocacy organisation founded in 1997 (and registered in Nigeria in 1999) to support democratic governance and people-centred development across West Africa. It was established during Nigeria's transition from military to civilian rule and has since grown into a regional institution.

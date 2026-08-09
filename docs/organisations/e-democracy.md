@@ -4,25 +4,29 @@ type: ngo
 status: inactive
 country: US
 website: https://web.archive.org/web/*/https://e-democracy.org
-summary: "A Minnesota-based nonprofit (founded 1994) pioneering online civic participation — running neighbourhood discussion forums that connect residents directly with local elected officials."
+summary: A Minnesota-based nonprofit (founded 1994) pioneering online civic participation
+  — running neighbourhood discussion forums that connect residents directly with local
+  elected officials.
 concepts:
-  - democracy-tools
-  - deliberative-democracy
-  - e-government
-  - direct-democracy
+- democracy-tools
+- deliberative-democracy
+- e-government
+- direct-democracy
 location:
   latitude: 44.9537
-  longitude: -93.0900
+  longitude: -93.09
   name: St. Paul, Minnesota, US
 activity:
+  dod:
+    checked: 2026-07-05
+    date: 2026-07-05
+    note: e-democracy.org redirects to blog.e-democracy.org, which returned 503 on
+      this check; same intermittent-outage pattern as prior run's Wayback corroboration
   manual:
     checked: 2026-06-09
-    note: "blog.e-democracy.org returning 503; Wayback capture 2026-05-16 confirms recently alive — likely temporary outage"
-  dod:
-    date: 2026-07-05
-    note: "e-democracy.org redirects to blog.e-democracy.org, which returned 503 on this check; same intermittent-outage pattern as prior run's Wayback corroboration"
-    checked: 2026-07-05
-last_checked: "2026-07-05"
+    note: blog.e-democracy.org returning 503; Wayback capture 2026-05-16 confirms
+      recently alive — likely temporary outage
+last_checked: '2026-07-05'
 ---
 
 E-Democracy is one of the oldest civic participation nonprofits on the internet, founded in St. Paul, Minnesota in 1994 by Steven Clift. Its core insight, developed through three decades of practice, is that place-based online forums — organised around neighbourhoods rather than issues — generate more sustained civic participation than issue-advocacy platforms.

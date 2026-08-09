@@ -6,45 +6,50 @@ country: GB
 website: https://www.sortitionfoundation.org
 logo: /assets/org-logos/sortition-foundation.png
 contact:
+  checked: 2026-08-01
   email: press@sortitionfoundation.org
   form: https://www.sortitionfoundation.org/contact
   source: https://www.sortitionfoundation.org/contact
-  checked: 2026-08-01
-news_page: https://www.sortitionfoundation.org/updates
-rss_feed: https://www.sortitionfoundation.org/updates.rss
-summary: "A UK-based organisation advocating for sortition (random selection) in democratic institutions — running the sortition process for European Citizens' Panels, campaigning to replace the UK House of Lords with a citizens' chamber, and building an open-source lottery platform."
+summary: A UK-based organisation advocating for sortition (random selection) in democratic
+  institutions — running the sortition process for European Citizens' Panels, campaigning
+  to replace the UK House of Lords with a citizens' chamber, and building an open-source
+  lottery platform.
+concepts:
+- sortition
+- deliberative-democracy
+- citizens-assembly
+- representative-democracy
 location:
-  latitude: 52.2340
+  latitude: 52.234
   longitude: 0.0866
   name: Cambridge, United Kingdom
   precision: city
-concepts:
-  - sortition
-  - deliberative-democracy
-  - citizens-assembly
-  - representative-democracy
+rss_feed: https://www.sortitionfoundation.org/updates.rss
+news_page: https://www.sortitionfoundation.org/updates
 activity:
+  dod:
+    checked: 2026-08-08
+    date: 2026-06-18
+    note: Updates page fetched 8 Aug 2026; most recent post 18 Jun 2026 (hiring Independent
+      Director); previous post 26 Feb 2026 (Frontiers of Democratic Lotteries Workshop)
+    url: https://www.sortitionfoundation.org/updates
+  manual:
+    checked: 2026-08-08
+    date: 2026-06-18
+    note: 'Latest update: We''re looking for a new Independent Director (18 June,
+      2026)'
+    url: https://www.sortitionfoundation.org/updates
+  rss:
+    checked: 2026-06-07
+    note: No feed found
+  scrape:
+    checked: 2026-06-08
+    hint: bot_blocked
+    note: News page unreachable
   sitemap:
     date: 2026-05-26
     note: Page last modified (from sitemap)
-  rss:
-    note: "No feed found"
-    checked: 2026-06-07
-  manual:
-    date: 2026-06-18
-    note: "Latest update: We're looking for a new Independent Director (18 June, 2026)"
-    url: https://www.sortitionfoundation.org/updates
-    checked: 2026-08-08
-  scrape:
-    note: "News page unreachable"
-    hint: bot_blocked
-    checked: 2026-06-08
-  dod:
-    date: 2026-06-18
-    note: "Updates page fetched 8 Aug 2026; most recent post 18 Jun 2026 (hiring Independent Director); previous post 26 Feb 2026 (Frontiers of Democratic Lotteries Workshop)"
-    url: https://www.sortitionfoundation.org/updates
-    checked: 2026-08-08
-last_checked: "2026-08-08"
+last_checked: '2026-08-08'
 ---
 
 The Sortition Foundation is the UK's leading organisation specifically dedicated to sortition — the selection of decision-makers by random lot rather than election. Founded by Brett Hennig, it combines advocacy, campaigning, and hands-on lottery services: the foundation designs and runs the stratified random-selection process for major deliberative exercises, including the European Citizens' Panels convened by the European Commission.

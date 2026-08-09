@@ -6,27 +6,29 @@ country: US
 website: https://www.participatorybudgeting.org
 logo: /assets/org-logos/participatory-budgeting-project.png
 contact:
-  email: info@participatorybudgeting.org
-  phone: "1347-652-1478"
-  source: https://www.participatorybudgeting.org/contact-us
   checked: 2026-07-30
-summary: "A North American nonprofit that has pioneered the spread of participatory budgeting in the US and Canada — helping governments, schools, and institutions engage over 740,000 people in directly deciding how to spend public funds."
+  email: info@participatorybudgeting.org
+  phone: 1347-652-1478
+  source: https://www.participatorybudgeting.org/contact-us
+summary: A North American nonprofit that has pioneered the spread of participatory
+  budgeting in the US and Canada — helping governments, schools, and institutions
+  engage over 740,000 people in directly deciding how to spend public funds.
 concepts:
-  - participatory-budgeting
-  - direct-democracy
-  - deliberative-democracy
+- participatory-budgeting
+- direct-democracy
+- deliberative-democracy
 location:
   latitude: 40.6782
   longitude: -73.9442
   name: Brooklyn, New York, USA
-last_checked: "2026-05-29"
 rss_feed: https://www.participatorybudgeting.org/feed
 activity:
   rss:
-    date: 2026-03-05
-    note: "Latest post: PB Grows in New Jersey"
-    url: "https://www.participatorybudgeting.org/pb-seeds-eval/"
     checked: 2026-06-08
+    date: 2026-03-05
+    note: 'Latest post: PB Grows in New Jersey'
+    url: https://www.participatorybudgeting.org/pb-seeds-eval/
+last_checked: '2026-05-29'
 ---
 
 The Participatory Budgeting Project (PBP) is a nonprofit organisation founded in 2009 that has been the primary driver of participatory budgeting (PB) adoption in the United States and Canada. It works with governments, schools, housing authorities, and other institutions to design and run PB processes — where community members directly propose and vote on how to spend a portion of the public budget.

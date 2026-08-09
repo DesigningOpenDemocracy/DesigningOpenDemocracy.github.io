@@ -5,15 +5,17 @@ status: inactive
 country: AU
 website: https://web.archive.org/web/*/https://secure.vote
 logo: /assets/org-logos/securevote.png
-summary: "An Australian blockchain voting platform providing secure, scalable, and anonymous digital voting for governments, organisations, and token-based ecosystems. Now defunct — domain squatted."
+summary: An Australian blockchain voting platform providing secure, scalable, and
+  anonymous digital voting for governments, organisations, and token-based ecosystems.
+  Now defunct — domain squatted.
+concepts:
+- end-to-end-verifiable-voting-system
+- e-government
 location:
   latitude: -33.8688
   longitude: 151.2093
   name: Sydney, Australia
   precision: city
-concepts:
-  - end-to-end-verifiable-voting-system
-  - e-government
 ---
 
 SecureVote is a Sydney-based company providing blockchain-based voting infrastructure. Their platform uses a proprietary Blockchain Agnostic Scalability Layer (BASL) to enable decentralised, anonymous, and auditable elections at scale — stress-tested to 1.5 billion transactions in 24 hours.

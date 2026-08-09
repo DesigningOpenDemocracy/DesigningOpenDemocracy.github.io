@@ -5,11 +5,13 @@ status: active
 country: FR
 website: https://anouslademocratie.fr/
 logo: /assets/org-logos/a-nous-la-democratie.png
-summary: "A French citizen movement founded in 2016 advocating for direct democracy through institutional reforms — sortition, the Citizen Initiative Referendum (RIC), and non-accumulation of terms."
+summary: A French citizen movement founded in 2016 advocating for direct democracy
+  through institutional reforms — sortition, the Citizen Initiative Referendum (RIC),
+  and non-accumulation of terms.
 concepts:
-  - direct-democracy
-  - sortition
-  - citizens-assembly
+- direct-democracy
+- sortition
+- citizens-assembly
 location:
   latitude: 48.8566
   longitude: 2.3522
@@ -17,22 +19,25 @@ location:
   precision: city
 rss_feed: https://anouslademocratie.fr/feed
 activity:
-  rss:
-    date: 2025-07-15
-    note: "Latest post: Pour la première Démocratie française : un entretien avec Baya Bellanger sur son"
-    url: "https://anouslademocratie.fr/2025/07/15/pour-la-premiere-democratie-francaise-un-entretien-avec-baya-bellanger-sur-son-nouveau-livre-gouvernons/"
-    checked: 2026-08-09
-  manual:
-    date: 2025-07-15
-    note: "website loaded. They got https://anouslademocratie.fr/articles/ but it differ from rss feed..."
-    url: https://anouslademocratie.fr/2025/07/15/pour-la-premiere-democratie-francaise-un-entretien-avec-baya-bellanger-sur-son-nouveau-livre-gouvernons/
-    checked: 2026-06-08
   dod:
-    date: 2026-07-19
-    note: "Website live; no upcoming events listed at time of check, but no evidence of shutdown."
-    url: https://anouslademocratie.fr/
     checked: 2026-07-19
-last_checked: "2026-07-19"
+    date: 2026-07-19
+    note: Website live; no upcoming events listed at time of check, but no evidence
+      of shutdown.
+    url: https://anouslademocratie.fr/
+  manual:
+    checked: 2026-06-08
+    date: 2025-07-15
+    note: website loaded. They got https://anouslademocratie.fr/articles/ but it differ
+      from rss feed...
+    url: https://anouslademocratie.fr/2025/07/15/pour-la-premiere-democratie-francaise-un-entretien-avec-baya-bellanger-sur-son-nouveau-livre-gouvernons/
+  rss:
+    checked: 2026-08-09
+    date: 2025-07-15
+    note: 'Latest post: Pour la première Démocratie française : un entretien avec
+      Baya Bellanger sur son'
+    url: https://anouslademocratie.fr/2025/07/15/pour-la-premiere-democratie-francaise-un-entretien-avec-baya-bellanger-sur-son-nouveau-livre-gouvernons/
+last_checked: '2026-07-19'
 ---
 
 À Nous La Démocratie! is a French citizen movement founded in 2016 by eight citizens who wanted to fundamentally transform how the French political system functions. Non-partisan and citizen-led, it advocates for institutional reforms to shift political power toward citizens.

@@ -6,25 +6,31 @@ country: CL
 website: https://www.ciudadaniai.org
 logo: /assets/org-logos/ciudadania-inteligente.svg
 contact:
+  checked: 2026-08-09
   form: https://www.ciudadaniai.org/contacto
   source: https://www.ciudadaniai.org
-  checked: 2026-08-09
-summary: "A Chilean civic-tech organisation building tools and strategies to strengthen citizen participation, transparency, and public advocacy across Latin America and the Caribbean, active since 2009."
+summary: A Chilean civic-tech organisation building tools and strategies to strengthen
+  citizen participation, transparency, and public advocacy across Latin America and
+  the Caribbean, active since 2009.
 concepts:
-  - democracy-tools
-  - e-government
-  - deliberative-democracy
-  - radical-transparency
+- democracy-tools
+- e-government
+- deliberative-democracy
+- radical-transparency
 location:
   latitude: -33.4489
   longitude: -70.6693
   name: Santiago, Chile
   precision: city
+events:
+- date: '2009-01-01'
+  notable: true
+  title: Founded as one of Latin America's earliest civic-tech organisations, Santiago
 activity:
   rss:
-    note: "No feed found"
     checked: 2026-08-09
-last_checked: "2026-08-09"
+    note: No feed found
+last_checked: '2026-08-09'
 ---
 
 Fundación Ciudadano Inteligente (Ciudadanía Inteligente) develops digital tools and advocacy strategies to make democracy more participatory, transparent, and responsive across Latin America and the Caribbean. Founded in 2009, it was one of the earliest civic-tech organisations in the region and has influenced a generation of open-government and citizen-participation initiatives.

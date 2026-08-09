@@ -6,31 +6,30 @@ country: VE
 website: https://gumilla.org
 logo: /assets/org-logos/centro-gumilla.png
 contact:
+  checked: 2026-07-30
   email: comunicacionesgumilla@gmail.com
   source: https://gumilla.org/contact
-  checked: 2026-07-30
-summary: "A Venezuelan Jesuit social research centre — independent, critically engaged with Bolivarian institutions, publishing on community council governance, political participation, and social policy since 1958. One of the few credible independent governance research bodies operating inside Venezuela."
+summary: A Venezuelan Jesuit social research centre — independent, critically engaged
+  with Bolivarian institutions, publishing on community council governance, political
+  participation, and social policy since 1958. One of the few credible independent
+  governance research bodies operating inside Venezuela.
+concepts:
+- democracy
+- representative-democracy
+- accountability-sink
 location:
   latitude: 10.4806
   longitude: -66.9036
   name: Caracas, Venezuela
-concepts:
-  - democracy
-  - representative-democracy
-  - accountability-sink
 rss_feed: https://gumilla.org/feed
 activity:
   rss:
-    date: 2026-08-04
-    note: "Latest post: Centro Gumilla, FUNDACEDEAP y Excuela consolidan alianza estratégica para formar"
-    url: https://gumilla.org/alianza-gumilla-formacion-mujeres-emprendedoras/
     checked: 2026-08-09
-  rss:
     date: 2026-08-04
-    note: "Latest post: Centro Gumilla, FUNDACEDEAP y Excuela consolidan alianza estratégica para formar"
+    note: 'Latest post: Centro Gumilla, FUNDACEDEAP y Excuela consolidan alianza estratégica
+      para formar'
     url: https://gumilla.org/alianza-gumilla-formacion-mujeres-emprendedoras/
-    checked: 2026-08-09
-last_checked: "2026-06-29"
+last_checked: '2026-06-29'
 ---
 
 > **Note on scope:** Centro Gumilla meets DOD criteria as an independent research organisation studying governance mechanisms — not because Venezuela's national political system does. Maduro's Venezuela clearly fails the good-faith test; Centro Gumilla is included as a credible independent analyst operating inside that context.

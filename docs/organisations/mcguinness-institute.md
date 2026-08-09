@@ -6,24 +6,27 @@ country: NZ
 website: https://www.mcguinnessinstitute.org
 logo: /assets/org-logos/mcguinness-institute.png
 contact:
+  checked: 2026-08-09
   form: https://www.mcguinnessinstitute.org/contact
   source: https://www.mcguinnessinstitute.org
-  checked: 2026-08-09
-activity:
-  dod:
-    date: 2026-08-09
-    note: Site live and actively publishing as of August 2026
-    checked: 2026-08-09
-last_checked: "2026-08-09"
-summary: "A non-partisan New Zealand think tank applying foresight methods to long-term governance challenges — runs Project CivicsNZ (civic education, political agreements, government department strategies) and publishes on public sector governance and institutional design."
+summary: A non-partisan New Zealand think tank applying foresight methods to long-term
+  governance challenges — runs Project CivicsNZ (civic education, political agreements,
+  government department strategies) and publishes on public sector governance and
+  institutional design.
 concepts:
-  - democracy
-  - representative-democracy
+- democracy
+- representative-democracy
 location:
   latitude: -41.2865
   longitude: 174.7762
   name: Wellington, New Zealand
   precision: city
+activity:
+  dod:
+    checked: 2026-08-09
+    date: 2026-08-09
+    note: Site live and actively publishing as of August 2026
+last_checked: '2026-08-09'
 ---
 
 The McGuinness Institute is a non-partisan think tank that applies "hindsight, insight, and foresight" to New Zealand's long-term governance challenges. Its distinctive contribution to the democracy landscape is a focus on institutional design and strategic foresight — not the mechanics of elections or the practice of deliberation, but the architecture of the governance systems themselves: how government departments set strategy, how political agreements are structured, how royal commissions and public inquiries function, and how civic education prepares citizens for democratic participation.

@@ -6,30 +6,35 @@ country: AU
 website: https://australiandemocracy.org.au
 logo: /assets/org-logos/australian-democracy-network.png
 contact:
+  checked: 2026-08-01
   email: media@australiandemocracy.org.au
   form: https://australiandemocracy.org.au/contact
   source: https://australiandemocracy.org.au/contact
-  checked: 2026-08-01
-summary: "A coalition of 200+ Australian civil society organisations working for a fairer, more open, and more accountable democracy — focused on campaign finance reform, protecting civil society advocacy rights, protest rights, and countering disinformation."
+summary: A coalition of 200+ Australian civil society organisations working for a
+  fairer, more open, and more accountable democracy — focused on campaign finance
+  reform, protecting civil society advocacy rights, protest rights, and countering
+  disinformation.
+concepts:
+- constitutional-democracy
+- representative-democracy
+- accountability-sink
 location:
   latitude: -37.8136
   longitude: 144.9631
   name: Melbourne, Australia
   precision: city
-concepts:
-  - constitutional-democracy
-  - representative-democracy
-  - accountability-sink
 activity:
-  sitemap:
-    date: 2026-06-05
-    note: "Server still up (sitemap detected)"
-    checked: 2026-08-09
   manual:
-    date: 2026-04-15
-    note: "Website is up and they got a new post. 15 Apr 2026 Take the Pledge: Integrity Organisations call on Victorian Political Parties to Commit Now to Donation Transparency"
     checked: 2026-06-07
-last_checked: "2026-06-28"
+    date: 2026-04-15
+    note: 'Website is up and they got a new post. 15 Apr 2026 Take the Pledge: Integrity
+      Organisations call on Victorian Political Parties to Commit Now to Donation
+      Transparency'
+  sitemap:
+    checked: 2026-08-09
+    date: 2026-06-05
+    note: Server still up (sitemap detected)
+last_checked: '2026-06-28'
 ---
 
 The Australian Democracy Network (ADN) is a registered charity and coalition infrastructure body for the Australian democracy reform sector. Founded in 2020 by the Human Rights Law Centre, Australian Conservation Foundation, and Australian Council of Social Service (ACOSS), it operates as a connector and convener — sharing resources, strategy, and campaigns across member organisations rather than acting primarily as a direct-action group.

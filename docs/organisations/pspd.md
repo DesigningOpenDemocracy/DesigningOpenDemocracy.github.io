@@ -1,13 +1,27 @@
 ---
-concepts:
-- democracy
-- deliberative-democracy
-- radical-transparency
+title: People's Solidarity for Participatory Democracy (PSPD)
+type: ngo
+status: active
+country: KR
+website: https://www.peoplepower21.org
+logo: /assets/org-logos/pspd.svg
 contact:
   checked: 2026-08-09
   form: https://www.peoplepower21.org/contact
   source: https://www.peoplepower21.org
-country: KR
+summary: A major South Korean civil society organisation founded in 1994 — a pillar
+  of Korean democratic accountability with ~13,000 members, monitoring the judiciary,
+  legislature, and executive, and driving public-interest law, economic justice, and
+  peace advocacy.
+concepts:
+- democracy
+- deliberative-democracy
+- radical-transparency
+location:
+  latitude: 37.5665
+  longitude: 126.978
+  name: Seoul, South Korea
+  precision: city
 events:
 - date: '1994-09-10'
   notable: true
@@ -21,20 +35,6 @@ events:
   notable: false
   title: Launches Civil Society Joint Action for Strengthening Accountability and
     Public Interest in AI
-location:
-  latitude: 37.5665
-  longitude: 126.978
-  name: Seoul, South Korea
-  precision: city
-logo: /assets/org-logos/pspd.svg
-status: active
-summary: A major South Korean civil society organisation founded in 1994 — a pillar
-  of Korean democratic accountability with ~13,000 members, monitoring the judiciary,
-  legislature, and executive, and driving public-interest law, economic justice, and
-  peace advocacy.
-title: People's Solidarity for Participatory Democracy (PSPD)
-type: ngo
-website: https://www.peoplepower21.org
 ---
 
 People's Solidarity for Participatory Democracy (PSPD, 참여연대) was founded in 1994 and has grown into one of South Korea's most influential civil society institutions, with approximately 13,000 members and UN ECOSOC consultative status. The organisation describes its mission as monitoring power (legislative, judicial, executive), proposing alternatives, and organising participation and solidarity — treating watchdog, think-tank, and movement-building functions as interdependent rather than separate activities.

@@ -6,15 +6,17 @@ country: SN
 website: https://www.africtivistes.com
 logo: /assets/org-logos/africtivistes.svg
 contact:
-  email: info@africtivistes.org
-  phone: "+221 33 837 51 24"
-  source: https://www.africtivistes.com
   checked: 2026-08-09
-summary: "A pan-African civil society network founded in 2015 in Dakar — mobilising bloggers, cyber-activists and changemakers across 45 African countries to strengthen democracy, governance, and civic participation through digital tools."
+  email: info@africtivistes.org
+  phone: +221 33 837 51 24
+  source: https://www.africtivistes.com
+summary: A pan-African civil society network founded in 2015 in Dakar — mobilising
+  bloggers, cyber-activists and changemakers across 45 African countries to strengthen
+  democracy, governance, and civic participation through digital tools.
 concepts:
-  - democracy-tools
-  - democracy
-  - e-government
+- democracy-tools
+- democracy
+- e-government
 location:
   latitude: 14.7167
   longitude: -17.4677
@@ -22,9 +24,9 @@ location:
   precision: city
 activity:
   rss:
-    note: "No feed found"
     checked: 2026-08-09
-last_checked: "2026-08-09"
+    note: No feed found
+last_checked: '2026-08-09'
 ---
 
 AfricTivistes is a pan-African network of bloggers, cyber-activists, and civic-tech practitioners working across 45 countries. Founded in 2015 and headquartered in Dakar, its mission is to use digital tools and new technologies to strengthen democracy, promote good governance, and support sustainable development on the continent.

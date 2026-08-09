@@ -6,43 +6,49 @@ country: AU
 website: https://www.sortitionfoundation.org/become_a_member_australia
 logo: /assets/org-logos/sortition-foundation-australia.png
 contact:
+  checked: 2026-08-01
   email: press@sortitionfoundation.org
   form: https://www.sortitionfoundation.org/contact
   source: https://www.sortitionfoundation.org/contact
-  checked: 2026-08-01
-news_page: https://www.sortitionfoundation.org/updates
-rss_feed: https://www.sortitionfoundation.org/updates.rss
-summary: "The Australian chapter of the UK-based Sortition Foundation, running monthly community meetings and providing sortition recruitment services for Australian democratic processes — including Victorian council deliberations, federal electorate pilots, and national citizen assemblies."
+summary: The Australian chapter of the UK-based Sortition Foundation, running monthly
+  community meetings and providing sortition recruitment services for Australian democratic
+  processes — including Victorian council deliberations, federal electorate pilots,
+  and national citizen assemblies.
+concepts:
+- sortition
+- deliberative-democracy
+- citizens-assembly
 location:
   latitude: -37.7749
   longitude: 144.9934
   name: Preston, Victoria
-concepts:
-  - sortition
-  - deliberative-democracy
-  - citizens-assembly
+rss_feed: https://www.sortitionfoundation.org/updates.rss
+news_page: https://www.sortitionfoundation.org/updates
 activity:
+  dod:
+    checked: 2026-07-19
+    date: 2026-07-19
+    note: Parent org (Sortition Foundation) confirmed active; Australia chapter page
+      returns 403 to automated fetch (Cloudflare bot-block) but is indexed and referenced
+      live; monthly Zoom meetings ongoing per site copy.
+    url: https://www.sortitionfoundation.org/become_a_member_australia
+  manual:
+    checked: 2026-06-07
+    date: 2026-02-26
+    note: website loaded. News page at https://www.sortitionfoundation.org/updates
+      26 February, 2026 'Frontiers of Democratic Lotteries Workshop'
+    url: https://www.sortitionfoundation.org/updates
+  rss:
+    checked: 2026-06-07
+    note: No feed found
+  scrape:
+    checked: 2026-06-08
+    hint: bot_blocked
+    note: News page unreachable
   sitemap:
     date: 2026-05-26
     note: Page last modified (from sitemap)
-  rss:
-    note: "No feed found"
-    checked: 2026-06-07
-  manual:
-    date: 2026-02-26
-    note: "website loaded. News page at https://www.sortitionfoundation.org/updates 26 February, 2026 'Frontiers of Democratic Lotteries Workshop'"
-    url: https://www.sortitionfoundation.org/updates
-    checked: 2026-06-07
-  scrape:
-    note: "News page unreachable"
-    hint: bot_blocked
-    checked: 2026-06-08
-  dod:
-    date: 2026-07-19
-    note: "Parent org (Sortition Foundation) confirmed active; Australia chapter page returns 403 to automated fetch (Cloudflare bot-block) but is indexed and referenced live; monthly Zoom meetings ongoing per site copy."
-    url: https://www.sortitionfoundation.org/become_a_member_australia
-    checked: 2026-07-19
-last_checked: "2026-07-19"
+last_checked: '2026-07-19'
 ---
 
 The Sortition Foundation is a UK-based organisation that campaigns for the use of stratified random selection (sortition) in government, primarily through citizens' assemblies. The Australian chapter operates within that global structure and is established by **Dr Sonia Randhawa**, based in Preston, Victoria, who works as a Project Manager at the Foundation.

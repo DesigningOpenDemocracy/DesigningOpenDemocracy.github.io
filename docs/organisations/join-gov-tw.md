@@ -4,35 +4,39 @@ type: government
 status: active
 country: TW
 website: https://join.gov.tw
+logo: /assets/org-logos/join-gov-tw.png
 contact:
+  checked: 2026-08-09
   form: https://join.gov.tw/contactus
   source: https://join.gov.tw/contactus
-  checked: 2026-08-09
-logo: /assets/org-logos/join-gov-tw.png
-related_orgs:
-  - vtaiwan
-  - g0v
-summary: "Taiwan's official government-run public policy participation platform, launched 2015 by the National Development Council with assistance from Digital Minister Audrey Tang's office — the state's own successor to vTaiwan, reaching a broader public than vTaiwan's digital-policy remit ever did."
+summary: Taiwan's official government-run public policy participation platform, launched
+  2015 by the National Development Council with assistance from Digital Minister Audrey
+  Tang's office — the state's own successor to vTaiwan, reaching a broader public
+  than vTaiwan's digital-policy remit ever did.
+concepts:
+- e-government
+- direct-democracy
 location:
-  latitude: 25.0330
+  latitude: 25.033
   longitude: 121.5654
   name: Taipei, Taiwan
   precision: city
-concepts:
-  - e-government
-  - direct-democracy
+related_orgs:
+- vtaiwan
+- g0v
 activity:
   manual:
-    date: 2026-08-07
-    note: "Site loaded, active proposals visible on homepage across a range of policy areas."
-    url: https://join.gov.tw/
     checked: 2026-08-07
+    date: 2026-08-07
+    note: Site loaded, active proposals visible on homepage across a range of policy
+      areas.
+    url: https://join.gov.tw/
   rss:
-    date: 2026-08-09
-    note: "RSS feed active"
-    url: https://join.gov.tw/?feed=rss2
     checked: 2026-08-09
-last_checked: "2026-08-09"
+    date: 2026-08-09
+    note: RSS feed active
+    url: https://join.gov.tw/?feed=rss2
+last_checked: '2026-08-09'
 ---
 
 Join (join.gov.tw, officially the Public Policy Online Participation Platform / 公共政策網路參與平臺) is a government-run civic participation platform operated by Taiwan's National Development Council, launched in 2015 with assistance from Digital Minister Audrey Tang's office.[^amcham] It grew out of the same 2014 Sunflower Movement moment that produced [vTaiwan](vtaiwan.md) and [g0v](g0v.md), but took a different institutional path: rather than a volunteer civic-tech collaboration, Join was built and is run directly by government, giving its recommendations formal procedural weight that vTaiwan's advisory-only model never had.

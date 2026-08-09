@@ -7,31 +7,29 @@ website: https://cafsa.org.au
 logo: /assets/org-logos/cafsa.png
 logo_bg: dark
 contact:
+  checked: 2026-07-30
   form: https://cafsa.org.au/contact
   source: https://cafsa.org.au/contact
-  checked: 2026-07-30
-summary: "An Adelaide-based incorporated association advocating for the use of citizens' assemblies in South Australian policy-making, with a cross-partisan advisory board including a former SA Premier, a former Liberal Senator, and the executive director of newDemocracy."
+summary: An Adelaide-based incorporated association advocating for the use of citizens'
+  assemblies in South Australian policy-making, with a cross-partisan advisory board
+  including a former SA Premier, a former Liberal Senator, and the executive director
+  of newDemocracy.
+concepts:
+- citizens-assembly
+- sortition
 location:
   latitude: -34.9285
   longitude: 138.6007
   name: Adelaide, Australia
   precision: city
-concepts:
-  - citizens-assembly
-  - sortition
 rss_feed: https://cafsa.org.au/feed
 activity:
   rss:
-    date: 2026-07-09
-    note: "Latest post: CAfSA News Bulletin no. 8"
-    url: https://cafsa.org.au/news-bulletin-no-8/?utm_source=rss&utm_medium=rss&utm_campaign=news-bulletin-no-8
     checked: 2026-08-09
-  rss:
     date: 2026-07-09
-    note: "Latest post: CAfSA News Bulletin no. 8"
+    note: 'Latest post: CAfSA News Bulletin no. 8'
     url: https://cafsa.org.au/news-bulletin-no-8/?utm_source=rss&utm_medium=rss&utm_campaign=news-bulletin-no-8
-    checked: 2026-08-09
-last_checked: "2026-06-29"
+last_checked: '2026-06-29'
 ---
 
 CAfSA is an incorporated association founded in Adelaide in 2023, advocating for randomly selected, broadly representative citizens' assemblies as a policy-making tool in South Australia. The organisation distinguishes citizens' assemblies from traditional consultation, positioning them as particularly suited to contested issues that are difficult for elected politicians to handle directly.

@@ -1,12 +1,25 @@
 ---
-concepts:
-- democracy
-- representative-democracy
+title: Make It 16
+type: campaign
+status: active
+country: NZ
+website: https://www.makeit16.org.nz
+logo: /assets/org-logos/make-it-16.png
 contact:
   checked: 2026-08-09
   email: hello@makeit16.org.nz
   source: https://www.makeit16.org.nz
-country: NZ
+summary: A youth-led, non-partisan campaign to lower New Zealand's voting age to 16
+  — won a Supreme Court ruling that the voting age of 18 breaches the Bill of Rights
+  for 16- and 17-year-olds.
+concepts:
+- democracy
+- representative-democracy
+location:
+  latitude: -41.2865
+  longitude: 174.7762
+  name: Wellington, New Zealand
+  precision: city
 events:
 - date: '2019-09-01'
   notable: true
@@ -26,19 +39,6 @@ events:
   notable: false
   title: Electoral (Lowering Voting Age) Bill passes first reading in Parliament
   url: https://en.wikipedia.org/wiki/Make_It_16
-location:
-  latitude: -41.2865
-  longitude: 174.7762
-  name: Wellington, New Zealand
-  precision: city
-logo: /assets/org-logos/make-it-16.png
-status: active
-summary: A youth-led, non-partisan campaign to lower New Zealand's voting age to 16
-  — won a Supreme Court ruling that the voting age of 18 breaches the Bill of Rights
-  for 16- and 17-year-olds.
-title: Make It 16
-type: campaign
-website: https://www.makeit16.org.nz
 ---
 
 Make It 16 is a youth-led campaign to lower New Zealand's voting age from 18 to 16. It is among the most legally significant voting-rights campaigns in the democratic world: in 2022, New Zealand's Supreme Court ruled that the current voting age of 18 constitutes a breach of the New Zealand Bill of Rights Act for 16- and 17-year-olds — an unjustified limit on the right to be free from age discrimination. The ruling did not itself change the law (that requires a 75% parliamentary majority or a referendum), but it established that the current law is rights-infringing, putting the onus on parliament to justify maintaining it.

@@ -6,24 +6,31 @@ country: CO
 website: https://congresovisible.uniandes.edu.co
 logo: /assets/org-logos/congreso-visible.svg
 contact:
+  checked: 2026-08-09
   form: https://congresovisible.uniandes.edu.co/contacto
   source: https://congresovisible.uniandes.edu.co
-  checked: 2026-08-09
-summary: "A legislative transparency project based at the Universidad de los Andes since 1998 — tracking all Colombian congressional activity, publishing voting records, and running 'Candidatos Visibles' voter information campaigns each election cycle."
+summary: A legislative transparency project based at the Universidad de los Andes
+  since 1998 — tracking all Colombian congressional activity, publishing voting records,
+  and running 'Candidatos Visibles' voter information campaigns each election cycle.
 concepts:
-  - radical-transparency
-  - representative-democracy
-  - democracy-tools
+- radical-transparency
+- representative-democracy
+- democracy-tools
 location:
-  latitude: 4.7110
+  latitude: 4.711
   longitude: -74.0721
   name: Bogotá, Colombia
   precision: city
+events:
+- date: '1998-01-01'
+  notable: true
+  title: Launched at Universidad de los Andes as Colombia's first legislative transparency
+    platform
 activity:
   rss:
-    note: "No feed found"
     checked: 2026-08-09
-last_checked: "2026-08-09"
+    note: No feed found
+last_checked: '2026-08-09'
 ---
 
 Congreso Visible is a legislative transparency project housed in the Department of Political Science at the Universidad de los Andes, tracking and publishing Colombian congressional activity since 1998. It is one of the longest-running parliamentary monitoring initiatives in Latin America and a model of university-hosted accountability infrastructure.

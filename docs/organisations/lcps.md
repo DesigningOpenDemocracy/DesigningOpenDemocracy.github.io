@@ -6,38 +6,41 @@ country: LB
 website: https://www.lcps-lebanon.org
 logo: /assets/org-logos/lcps.jpg
 contact:
+  checked: 2026-08-01
   email: info@lcps-lebanon.org
   source: https://www.lcps-lebanon.org
-  checked: 2026-08-01
-summary: "An independent Beirut-based think tank founded in 1989 producing policy research and advocacy on governance, political representation, decentralisation, and electoral reform in Lebanon and the Arab region."
+summary: An independent Beirut-based think tank founded in 1989 producing policy research
+  and advocacy on governance, political representation, decentralisation, and electoral
+  reform in Lebanon and the Arab region.
+concepts:
+- democracy
+- constitutional-democracy
+- accountability-sink
 location:
   latitude: 33.8938
   longitude: 35.5018
   name: Beirut, Lebanon
-concepts:
-  - democracy
-  - constitutional-democracy
-  - accountability-sink
 news_page: https://www.lcps-lebanon.org/en/press
 activity:
+  dod:
+    checked: 2026-07-16
+    date: 2026-07-15
+    note: Website loaded directly; most recent article 'Can Lebanon's Social Protection
+      System Withstand Wartime Shocks?' dated July 15, 2026
+    url: https://www.lcps-lebanon.org
   manual:
     date: 2026-03-05
-    note: "Latest press item: القواعد الأميركيّة في مرمى النار (via Daraj Media)"
+    note: 'Latest press item: القواعد الأميركيّة في مرمى النار (via Daraj Media)'
     url: https://www.lcps-lebanon.org/en/press
   rss:
-    note: "No feed found"
     checked: 2026-08-09
+    note: No feed found
   scrape:
-    date: 2026-03-05
-    note: "Latest news page scraped"
-    url: https://www.lcps-lebanon.org/en/press
     checked: 2026-06-08
-  dod:
-    date: 2026-07-15
-    note: "Website loaded directly; most recent article 'Can Lebanon's Social Protection System Withstand Wartime Shocks?' dated July 15, 2026"
-    url: https://www.lcps-lebanon.org
-    checked: 2026-07-16
-last_checked: "2026-07-16"
+    date: 2026-03-05
+    note: Latest news page scraped
+    url: https://www.lcps-lebanon.org/en/press
+last_checked: '2026-07-16'
 ---
 
 The Lebanese Center for Policy Studies (LCPS) is an independent, non-partisan think tank founded in 1989 in Beirut. It produces research and advocates for policies aimed at improving governance in Lebanon and the broader Arab region. Its priority areas include political representation, decentralisation, transparency in natural resource governance, job creation, and youth empowerment.

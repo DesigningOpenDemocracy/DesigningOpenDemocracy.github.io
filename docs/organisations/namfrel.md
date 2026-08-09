@@ -5,16 +5,27 @@ status: active
 country: PH
 website: https://web.archive.org/web/*/https://namfrel.com.ph
 logo: /assets/org-logos/namfrel.jpg
-last_checked: "2026-06-02"
-summary: "The Philippines' independent citizen election watchdog — founded in 1983, widely regarded as the world's first citizen-led election monitoring organisation, with 250,000+ volunteers conducting parallel vote counts and election observation."
+summary: The Philippines' independent citizen election watchdog — founded in 1983,
+  widely regarded as the world's first citizen-led election monitoring organisation,
+  with 250,000+ volunteers conducting parallel vote counts and election observation.
+concepts:
+- representative-democracy
+- accountability-sink
+- radical-transparency
 location:
   latitude: 14.5995
   longitude: 120.9842
   name: Manila, Philippines
-concepts:
-  - representative-democracy
-  - accountability-sink
-  - radical-transparency
+events:
+- date: '1983-10-10'
+  notable: true
+  title: Founded as the first citizen-led election monitoring organisation in the
+    world, Philippines
+- date: '1986-02-07'
+  notable: true
+  title: Mobilised 500,000 volunteers for Operation Quick Count — demonstrated Marcos
+    lost the snap election, triggering the People Power uprising
+last_checked: '2026-06-02'
 ---
 
 NAMFREL (National Citizens' Movement for Free Elections) was founded in October 1983 and is widely regarded as the world's first citizen-led election monitoring organisation. It draws on a volunteer base of over 250,000 members from religious, civic, business, professional, labour, and youth organisations across the Philippines.

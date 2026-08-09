@@ -6,31 +6,41 @@ country: CN
 website: https://www.mmzy.org.cn
 logo: /assets/org-logos/china-democratic-league.png
 contact:
+  checked: 2026-07-30
   email: webmaster@mmzy.org.cn
   source: https://www.mmzy.org.cn/contact
-  checked: 2026-07-30
-summary: "The largest of China's eight officially recognised 'democratic parties' — ~357,000 members, primarily intellectuals in education, science, and culture. Operates within the CPC-led multi-party cooperation system under 'bounded articulation': advisory on sectoral matters, structurally incapable of challenging CPC authority."
+summary: 'The largest of China''s eight officially recognised ''democratic parties''
+  — ~357,000 members, primarily intellectuals in education, science, and culture.
+  Operates within the CPC-led multi-party cooperation system under ''bounded articulation'':
+  advisory on sectoral matters, structurally incapable of challenging CPC authority.'
+concepts:
+- vanguardism
+- democracy
 location:
   latitude: 39.9042
   longitude: 116.4074
   name: Beijing, China
   precision: city
-concepts:
-  - vanguardism
-  - democracy
+events:
+- date: '1941-01-01'
+  notable: true
+  title: Founded in Chongqing as an umbrella organisation of China's centrist and
+    left-leaning intellectuals during the Second Sino-Japanese War
 activity:
-  rss:
-    note: "No feed found"
-    checked: 2026-06-07
   dod:
-    date: 2026-06-29
-    note: "Direct fetch blocked (503) this run; web search confirms ongoing activity — Central Committee research on urban/rural land system reform and the continuing 'Serving the Public, Practicing for the People' education campaign."
-    url: https://www.mmzy.org.cn/mmyw/default.aspx
     checked: 2026-06-29
+    date: 2026-06-29
+    note: Direct fetch blocked (503) this run; web search confirms ongoing activity
+      — Central Committee research on urban/rural land system reform and the continuing
+      'Serving the Public, Practicing for the People' education campaign.
+    url: https://www.mmzy.org.cn/mmyw/default.aspx
+  rss:
+    checked: 2026-06-07
+    note: No feed found
   sitemap:
-    note: "Sitemap found, no lastmod"
     checked: 2026-08-09
-last_checked: "2026-06-29"
+    note: Sitemap found, no lastmod
+last_checked: '2026-06-29'
 ---
 
 > **Note:** The CDL and the other seven officially designated minor parties — collectively referred to in Chinese political terminology as the "democratic parties" (民主党派) — are not opposition parties and do not push for structural democratic reform. Their constitutions affirm commitment to CCP guidance; membership is pre-approved by the United Front Work Department. Scholars describe their role as "bounded articulation" — they express sectoral interests within approved channels and cannot challenge the structure of CPC authority. They are included here as a documented example of managed pluralism, and where it falls short of genuine accountability to its own stated ideals.

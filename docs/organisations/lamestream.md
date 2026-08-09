@@ -6,14 +6,15 @@ country: AU
 website: https://www.lamestream.com.au/
 logo: /assets/org-logos/lamestream.png
 contact:
+  checked: 2026-07-30
   email: contact@lamestream.com.au
   source: https://www.lamestream.com.au/about
-  checked: 2026-07-30
-summary: "An independent Australian podcast, newsletter, and YouTube show launched in 2025 by journalists Osman Faruqi and Scott Mitchell, examining the collapse of trust in Australian legacy media — ownership consolidation, political interference in newsrooms, and whether independent and influencer-driven media can fill the gap."
-contributors:
-  - BrianKhuu
+summary: An independent Australian podcast, newsletter, and YouTube show launched
+  in 2025 by journalists Osman Faruqi and Scott Mitchell, examining the collapse of
+  trust in Australian legacy media — ownership consolidation, political interference
+  in newsrooms, and whether independent and influencer-driven media can fill the gap.
 concepts:
-  - tribal-epistemology
+- tribal-epistemology
 location:
   latitude: -33.8688
   longitude: 151.2093
@@ -21,10 +22,13 @@ location:
   precision: city
 activity:
   dod:
-    date: 2026-07-30
-    note: "Confirmed active via official site and podcast platforms during landscape research"
     checked: 2026-08-02
-last_checked: "2026-08-02"
+    date: 2026-07-30
+    note: Confirmed active via official site and podcast platforms during landscape
+      research
+last_checked: '2026-08-02'
+contributors:
+- BrianKhuu
 ---
 
 Lamestream is an independent Australian media outlet — podcast, YouTube show, and newsletter — [launched in April 2025](https://podnews.net/press-release/lamestream-podcast) by journalists Osman Faruqi and Scott Mitchell. It positions itself against the outlets it takes its name from ("lamestream" as a pejorative for legacy media), reporting on the state of Australian journalism itself rather than on politics directly.

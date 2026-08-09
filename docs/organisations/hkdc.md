@@ -6,41 +6,46 @@ country: CN
 website: https://www.hkdc.us
 logo: /assets/org-logos/hkdc.png
 contact:
+  checked: 2026-07-30
   email: info@hkdc.us
   source: https://www.hkdc.us/about
-  checked: 2026-07-30
-news_page: https://www.hkdc.us/news
-summary: "A Washington DC-based organisation advocating for the restoration of democratic governance in Hong Kong — specifically the election-based accountability system promised under One Country, Two Systems, which was effectively dismantled following the 2020 National Security Law."
+summary: A Washington DC-based organisation advocating for the restoration of democratic
+  governance in Hong Kong — specifically the election-based accountability system
+  promised under One Country, Two Systems, which was effectively dismantled following
+  the 2020 National Security Law.
+concepts:
+- democracy
+- liberal-democracy
+- constitutional-democracy
 location:
   latitude: 22.3193
   longitude: 114.1694
   name: Hong Kong (origin; operates in diaspora)
-concepts:
-  - democracy
-  - liberal-democracy
-  - constitutional-democracy
+news_page: https://www.hkdc.us/news
 activity:
-  sitemap:
-    date: 2026-07-15
-    note: "Page last modified (from sitemap)"
-    url: https://www.hkdc.us/sitemap.xml
-    checked: 2026-08-09
-  manual:
-    date: 2026-02-10
-    note: "website loaded. News is https://www.hkdc.us/news where latest is February 10, 2026 'Crossing a New Line: The Conviction of Anna Kwok’s Father'"
-    url: https://www.hkdc.us/news
-    checked: 2026-06-07
-  scrape:
-    date: 2026-02-09
-    note: "Latest news page scraped"
-    url: https://www.hkdc.us/news
-    checked: 2026-06-08
   dod:
-    date: 2026-02-10
-    note: "News page loaded directly; most recent item 'Crossing a New Line: The Conviction of Anna Kwok's Father' dated Feb 10, 2026"
-    url: https://www.hkdc.us/news
     checked: 2026-07-16
-last_checked: "2026-07-16"
+    date: 2026-02-10
+    note: 'News page loaded directly; most recent item ''Crossing a New Line: The
+      Conviction of Anna Kwok''s Father'' dated Feb 10, 2026'
+    url: https://www.hkdc.us/news
+  manual:
+    checked: 2026-06-07
+    date: 2026-02-10
+    note: 'website loaded. News is https://www.hkdc.us/news where latest is February
+      10, 2026 ''Crossing a New Line: The Conviction of Anna Kwok’s Father'''
+    url: https://www.hkdc.us/news
+  scrape:
+    checked: 2026-06-08
+    date: 2026-02-09
+    note: Latest news page scraped
+    url: https://www.hkdc.us/news
+  sitemap:
+    checked: 2026-08-09
+    date: 2026-07-15
+    note: Page last modified (from sitemap)
+    url: https://www.hkdc.us/sitemap.xml
+last_checked: '2026-07-16'
 ---
 
 > **Note:** HKDC operates from diaspora in Washington DC. It is included here because its work is specifically about a particular governance system — the accountability structures promised to Hong Kong under One Country, Two Systems — rather than general human rights documentation.

@@ -6,25 +6,33 @@ country: BR
 website: https://ok.org.br
 logo: /assets/org-logos/open-knowledge-brasil.png
 contact:
+  checked: 2026-08-09
   form: https://ok.org.br/contato
   source: https://ok.org.br
-  checked: 2026-08-09
-activity:
-  dod:
-    date: 2026-08-09
-    note: Site live and actively publishing as of August 2026
-    checked: 2026-08-09
-last_checked: "2026-08-09"
-summary: "A Brazilian organisation promoting open data, public transparency, civic technology, and open knowledge — flagship projects include Querido Diário (crowdsourcing municipal gazettes), the Open Data Index, Parlametria (Congress tracking), and Perfil Político (candidate profiles)."
+summary: A Brazilian organisation promoting open data, public transparency, civic
+  technology, and open knowledge — flagship projects include Querido Diário (crowdsourcing
+  municipal gazettes), the Open Data Index, Parlametria (Congress tracking), and Perfil
+  Político (candidate profiles).
 concepts:
-  - democracy-tools
-  - radical-transparency
-  - e-government
+- democracy-tools
+- radical-transparency
+- e-government
 location:
   latitude: -23.5505
   longitude: -46.6333
   name: São Paulo, Brazil
   precision: city
+events:
+- date: '2013-01-01'
+  notable: true
+  title: Founded as the Brazilian chapter of Open Knowledge, promoting open data and
+    civic technology
+activity:
+  dod:
+    checked: 2026-08-09
+    date: 2026-08-09
+    note: Site live and actively publishing as of August 2026
+last_checked: '2026-08-09'
 ---
 
 Open Knowledge Brasil (OKBR) is the Brazilian chapter of the Open Knowledge network, operating as an independent organisation that promotes transparency, open data, and civic technology. Its work spans advocacy and research, civic innovation (using automation and AI with public data), data literacy (the Escola de Dados programme), and partnerships with government and civil society.

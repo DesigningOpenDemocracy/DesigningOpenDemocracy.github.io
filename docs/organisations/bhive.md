@@ -4,12 +4,14 @@ type: cooperative
 status: inactive
 country: AU
 website: https://web.archive.org/web/*/https://bhive.coop
-summary: "A place-based platform cooperative in Bendigo, Victoria that has since closed — was the first of its kind globally, providing a member-owned sharing platform for local neighbourhoods to exchange skills, goods, and mutual aid."
+summary: A place-based platform cooperative in Bendigo, Victoria that has since closed
+  — was the first of its kind globally, providing a member-owned sharing platform
+  for local neighbourhoods to exchange skills, goods, and mutual aid.
 concepts:
-  - cooperative
-  - worker-cooperatives
-  - economic-democracy
-last_checked: "2026-05-29"
+- cooperative
+- worker-cooperatives
+- economic-democracy
+last_checked: '2026-05-29'
 ---
 
 **bHive has since closed.** Confirmed inactive as of 2026.

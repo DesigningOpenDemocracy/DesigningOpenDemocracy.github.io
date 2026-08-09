@@ -6,24 +6,27 @@ country: NZ
 website: https://nzccl.org.nz
 logo: /assets/org-logos/nzccl.ico
 contact:
+  checked: 2026-08-09
   form: https://nzccl.org.nz/contact
   source: https://nzccl.org.nz
-  checked: 2026-08-09
-activity:
-  dod:
-    date: 2026-08-09
-    note: Site live and actively publishing as of August 2026
-    checked: 2026-08-09
-last_checked: "2026-08-09"
-summary: "An independent watchdog defending democratic rights and civil liberties in Aotearoa — active participant in New Zealand's Open Government Partnership civil society engagement, with a dense programme of parliamentary submissions on bills affecting democratic participation, freedom of expression, and protest rights."
+summary: An independent watchdog defending democratic rights and civil liberties in
+  Aotearoa — active participant in New Zealand's Open Government Partnership civil
+  society engagement, with a dense programme of parliamentary submissions on bills
+  affecting democratic participation, freedom of expression, and protest rights.
 concepts:
-  - democracy
-  - liberal-democracy
+- democracy
+- liberal-democracy
 location:
   latitude: -41.2865
   longitude: 174.7762
   name: Wellington, New Zealand
   precision: city
+activity:
+  dod:
+    checked: 2026-08-09
+    date: 2026-08-09
+    note: Site live and actively publishing as of August 2026
+last_checked: '2026-08-09'
 ---
 
 The New Zealand Council for Civil Liberties (NZCCL) is an independent watchdog defending freedom of thought, expression, and action from government interference or restriction. Its work is primarily conducted through parliamentary submissions — a dense, consistent programme of legislative scrutiny that constitutes one of the most sustained civil-society oversight operations in New Zealand.

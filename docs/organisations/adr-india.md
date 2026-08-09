@@ -6,28 +6,36 @@ country: IN
 website: https://adrindia.org
 logo: /assets/org-logos/adr-india.png
 contact:
+  checked: 2026-07-30
   email: adr@adrindia.org
   form: https://adrindia.org/contact
   source: https://adrindia.org/contact-us
-  checked: 2026-07-30
-summary: "A New Delhi-based non-partisan nonprofit working on electoral and political reform in India since 1999 — best known for the Supreme Court litigation that compelled mandatory candidate disclosure of criminal, financial, and educational backgrounds."
+summary: A New Delhi-based non-partisan nonprofit working on electoral and political
+  reform in India since 1999 — best known for the Supreme Court litigation that compelled
+  mandatory candidate disclosure of criminal, financial, and educational backgrounds.
+concepts:
+- representative-democracy
+- accountability-sink
+- radical-transparency
 location:
   latitude: 28.5494
   longitude: 77.2001
   name: New Delhi, India
-concepts:
-  - representative-democracy
-  - accountability-sink
-  - radical-transparency
+events:
+- date: '1999-01-01'
+  notable: true
+  title: Founded by former Indian Revenue Service officers to improve governance and
+    electoral transparency
 activity:
-  rss:
-    note: "No feed found"
-    checked: 2026-08-09
   manual:
-    date: 2026-06-05
-    note: "website is present and loaded. Last report released by them is at 5 June, 2026"
     checked: 2026-06-07
-last_checked: "2026-06-28"
+    date: 2026-06-05
+    note: website is present and loaded. Last report released by them is at 5 June,
+      2026
+  rss:
+    checked: 2026-08-09
+    note: No feed found
+last_checked: '2026-06-28'
 ---
 
 The Association for Democratic Reforms (ADR) was founded in 1999 by professors from IIM Ahmedabad and the National Institute of Design. It focuses on electoral transparency, political party accountability, and civic engagement, combining litigation, research, and citizen mobilisation.

@@ -6,33 +6,46 @@ country: RU
 website: https://www.memorial.de
 logo: /assets/org-logos/memorial.png
 logo_bg: light
-news_page: https://www.memorial.de/nachrichten
-summary: "Russia's best-known human rights and historical memory organisation — documenting Soviet-era repression and ongoing abuses for 35 years. Liquidated by Russian courts in December 2021 and designated 'extremist' in April 2026; continues operating in exile through its international chapters, including Germany."
-last_checked: "2026-06-02"
+summary: Russia's best-known human rights and historical memory organisation — documenting
+  Soviet-era repression and ongoing abuses for 35 years. Liquidated by Russian courts
+  in December 2021 and designated 'extremist' in April 2026; continues operating in
+  exile through its international chapters, including Germany.
+concepts:
+- accountability-sink
+- democracy
+- radical-transparency
 location:
   latitude: 55.7558
   longitude: 37.6176
   name: Moscow, Russia (liquidated; international chapters active)
   precision: city
-concepts:
-  - accountability-sink
-  - democracy
-  - radical-transparency
+news_page: https://www.memorial.de/nachrichten
+events:
+- date: '1989-01-28'
+  notable: true
+  title: Founded by Andrei Sakharov and others as the first independent human rights
+    organisation in the Soviet Union
+- date: '2022-10-07'
+  notable: true
+  title: Awarded the Nobel Peace Prize jointly with Ales Bialiatski and Center for
+    Civil Liberties
 activity:
+  manual:
+    checked: 2026-06-07
+    date: 2026-06-04
+    note: website loaded. It's german... but this looks like news https://www.memorial.de/nachrichten
+      wehere latest news is 04.06.2026 'Asat Miftachov wird im Lager gefoltert'
+    url: https://www.memorial.de/nachrichten
+  scrape:
+    checked: 2026-06-07
+    date: 2026-06-04
+    note: Latest news page scraped
+    url: https://www.memorial.de/nachrichten
   sitemap:
+    checked: 2026-06-07
     date: 2026-06-05
     note: Server still up (sitemap detected)
-    checked: 2026-06-07
-  manual:
-    date: 2026-06-04
-    note: "website loaded. It's german... but this looks like news https://www.memorial.de/nachrichten wehere latest news is 04.06.2026 'Asat Miftachov wird im Lager gefoltert'"
-    url: https://www.memorial.de/nachrichten
-    checked: 2026-06-07
-  scrape:
-    date: 2026-06-04
-    note: "Latest news page scraped"
-    url: https://www.memorial.de/nachrichten
-    checked: 2026-06-07
+last_checked: '2026-06-02'
 ---
 
 Memorial (Мемориал) was founded in the late 1980s during the Glasnost era to document and preserve memory of Soviet political repression — labour camps, executions, and mass deportations. It became one of Russia's most prominent civil society organisations, documenting abuses in Chechnya and other conflict zones, maintaining databases of political prisoners, and providing legal support to victims of state violence.

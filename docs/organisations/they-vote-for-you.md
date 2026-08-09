@@ -6,28 +6,29 @@ country: AU
 website: https://theyvoteforyou.org.au
 logo: /assets/org-logos/they-vote-for-you.ico
 contact:
+  checked: 2026-08-01
   email: contact@theyvoteforyou.org.au
   source: https://theyvoteforyou.org.au
-  checked: 2026-08-01
-summary: "Converts Australian parliamentary voting records into plain-English histories for every MP and Senator, run by the OpenAustralia Foundation."
+summary: Converts Australian parliamentary voting records into plain-English histories
+  for every MP and Senator, run by the OpenAustralia Foundation.
+concepts:
+- democracy-tools
+- radical-transparency
+- accountability-sink
+- e-government
 location:
   latitude: -33.8688
   longitude: 151.2093
   name: Sydney, Australia
   precision: city
-concepts:
-  - democracy-tools
-  - radical-transparency
-  - accountability-sink
-  - e-government
 related_orgs:
-  - open-australia-foundation
-last_checked: "2026-06-22"
+- open-australia-foundation
 activity:
   manual:
-    date: 2026-06-22
-    note: "Confirmed active via OpenAustralia Foundation project page"
     checked: 2026-06-22
+    date: 2026-06-22
+    note: Confirmed active via OpenAustralia Foundation project page
+last_checked: '2026-06-22'
 ---
 
 They Vote For You tracks every recorded division in Australia's House of Representatives and Senate and turns the Hansard record into plain-English voting histories for each MP and Senator. It flags when a member crosses the floor against their own party, summarises what each vote was actually about, and lets users compare any two politicians by how similarly they vote.[^tvfy-about]

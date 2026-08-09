@@ -6,29 +6,37 @@ country: IL
 website: https://darkenu.org.il/en
 logo: /assets/org-logos/darkenu.png
 contact:
-  email: thisis@darkenu.org.il
-  phone: "+972-3-5168005"
-  source: https://darkenu.org.il/en/
   checked: 2026-08-01
-summary: "Israel's largest civic movement (400,000+ supporters) defending rule of law, democratic participation, and fighting corruption — founded independent media outlet DemocraTV, and led mass protests against the 2023 judicial overhaul."
+  email: thisis@darkenu.org.il
+  phone: +972-3-5168005
+  source: https://darkenu.org.il/en/
+summary: Israel's largest civic movement (400,000+ supporters) defending rule of law,
+  democratic participation, and fighting corruption — founded independent media outlet
+  DemocraTV, and led mass protests against the 2023 judicial overhaul.
+concepts:
+- democracy
+- constitutional-democracy
+- accountability-sink
 location:
   latitude: 32.0853
   longitude: 34.7818
   name: Tel Aviv, Israel
   precision: city
-concepts:
-  - democracy
-  - constitutional-democracy
-  - accountability-sink
+events:
+- date: '2002-01-01'
+  notable: true
+  title: Founded as the Israeli branch of the OneVoice Movement, promoting grassroots
+    civic engagement
 activity:
-  rss:
-    note: "No feed found"
-    checked: 2026-08-09
   manual:
-    date: 2025-12-02
-    note: "website loaded. It mentioned that it was in the news פורסם: 17.11.25, 15:30 | עודכן: 02.12.25, 15:50 'חנוכה 2025: כל מה שאפשר לעשות עם הילדים בחג'"
     checked: 2026-06-07
-last_checked: "2026-06-29"
+    date: 2025-12-02
+    note: 'website loaded. It mentioned that it was in the news פורסם: 17.11.25, 15:30
+      | עודכן: 02.12.25, 15:50 ''חנוכה 2025: כל מה שאפשר לעשות עם הילדים בחג'''
+  rss:
+    checked: 2026-08-09
+    note: No feed found
+last_checked: '2026-06-29'
 ---
 
 Darkenu (דרכנו — "Our Path") is Israel's largest civic movement, with over 400,000 supporters, focused on defending democratic governance, rule of law, and fighting corruption. It operates as a grassroots civic organisation rather than a think tank — mobilising citizens, running campaigns, and building civic infrastructure for democratic participation.

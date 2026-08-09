@@ -6,28 +6,29 @@ country: AU
 website: https://www.openaustraliafoundation.org.au
 logo: /assets/org-logos/open-australia-foundation.png
 contact:
+  checked: 2026-08-01
   email: contact@oaf.org.au
   form: https://www.openaustraliafoundation.org.au/contact
   source: https://www.openaustraliafoundation.org.au/contact-us
-  checked: 2026-08-01
-summary: "An Australian civic technology charity building tools that help citizens understand and engage with their parliament and government."
+summary: An Australian civic technology charity building tools that help citizens
+  understand and engage with their parliament and government.
+concepts:
+- radical-transparency
+- e-government
+- accountability-sink
 location:
   latitude: -33.8688
   longitude: 151.2093
   name: Sydney, Australia
   precision: city
-concepts:
-  - radical-transparency
-  - e-government
-  - accountability-sink
-last_checked: "2026-06-02"
 rss_feed: https://www.openaustraliafoundation.org.au/feed
 activity:
   rss:
-    date: 2026-02-17
-    note: "Latest post: Become a Fundraising Champion for Civic Tech"
-    url: "https://oaf.org.au/2026/02/17/become-a-fundraising-champion-for-civic-tech/"
     checked: 2026-06-08
+    date: 2026-02-17
+    note: 'Latest post: Become a Fundraising Champion for Civic Tech'
+    url: https://oaf.org.au/2026/02/17/become-a-fundraising-champion-for-civic-tech/
+last_checked: '2026-06-02'
 ---
 
 The OpenAustralia Foundation is a non-partisan charity whose work centres on making Australian parliamentary and government information accessible and usable. They build and maintain several well-known tools:

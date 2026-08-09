@@ -4,16 +4,19 @@ type: governance
 status: inactive
 country: AU
 website: https://web.archive.org/web/*/https://ogpau.pmc.gov.au
-summary: "Australia's participation in the international Open Government Partnership, producing a National Action Plan 2016–18 with commitments on transparency, citizen empowerment, anti-corruption, and technology in governance — the dedicated site is no longer live."
+summary: Australia's participation in the international Open Government Partnership,
+  producing a National Action Plan 2016–18 with commitments on transparency, citizen
+  empowerment, anti-corruption, and technology in governance — the dedicated site
+  is no longer live.
+concepts:
+- radical-transparency
+- e-government
+- constitutional-democracy
 location:
   latitude: -35.2809
-  longitude: 149.1300
+  longitude: 149.13
   name: Canberra, Australia
   precision: city
-concepts:
-  - radical-transparency
-  - e-government
-  - constitutional-democracy
 ---
 
 Australia participated in the [Open Government Partnership](https://www.opengovpartnership.org/) (OGP) — an international multilateral initiative in which governments commit to concrete reforms on transparency, civic participation, and accountability. Australia's first National Action Plan (2016–18) comprised 15 commitments across four themes: transparency, citizen empowerment, anti-corruption, and technology to strengthen governance.

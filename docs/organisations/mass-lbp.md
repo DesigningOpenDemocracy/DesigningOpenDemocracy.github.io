@@ -6,33 +6,38 @@ country: CA
 website: https://www.masslbp.com
 logo: /assets/org-logos/mass-lbp.webp
 contact:
+  checked: 2026-07-30
   email: hello@masslbp.com
   source: https://www.masslbp.com/about
-  checked: 2026-07-30
-summary: "A Canadian civic design firm specialising in citizens' assemblies, civic lotteries, and deliberative public engagement — with over 50 reference panels completed for governments and institutions across North America."
+summary: A Canadian civic design firm specialising in citizens' assemblies, civic
+  lotteries, and deliberative public engagement — with over 50 reference panels completed
+  for governments and institutions across North America.
 concepts:
-  - deliberative-democracy
-  - citizens-assembly
-  - sortition
+- deliberative-democracy
+- citizens-assembly
+- sortition
 location:
   latitude: 43.6532
   longitude: -79.3832
   name: Toronto, Canada
   precision: city
-last_checked: "2026-05-29"
 activity:
-  social:
-    date: 2025-07-21
-    note: "Latest video: What is MASS LBP?"
-    url: https://www.youtube.com/watch?v=x-WbnLvrBBc
+  manual:
+    checked: 2026-06-07
+    date: 2023-08-14
+    note: website loaded. Uncertain if active. Last social media post at Aug 14, 2023
+      'We’re aiming to expand our team this fall by adding a new Coordinator at MASS.
+      We are looking for a candidate with the right mix of qualities, skills and experience
+      to help us build our practice and raise our game.'
   sitemap:
+    checked: 2026-06-08
     date: 2026-05-22
     note: Page last modified (from sitemap)
-    checked: 2026-06-08
-  manual:
-    date: 2023-08-14
-    note: "website loaded. Uncertain if active. Last social media post at Aug 14, 2023 'We’re aiming to expand our team this fall by adding a new Coordinator at MASS. We are looking for a candidate with the right mix of qualities, skills and experience to help us build our practice and raise our game.'"
-    checked: 2026-06-07
+  social:
+    date: 2025-07-21
+    note: 'Latest video: What is MASS LBP?'
+    url: https://www.youtube.com/watch?v=x-WbnLvrBBc
+last_checked: '2026-05-29'
 ---
 
 MASS LBP is a Toronto-based civic design firm founded in 2007 that specialises in designing and running citizens' assemblies, civic lotteries, and deliberative public engagement processes. It takes its name from the French phrase *masse de manœuvre* — a reserve force held back for decisive deployment.

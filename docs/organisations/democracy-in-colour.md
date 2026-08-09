@@ -8,31 +8,35 @@ logo: /assets/org-logos/democracy-in-colour-icon.png
 logo_bg: light
 banner: /assets/org-logos/democracy-in-colour.png
 contact:
+  checked: 2026-07-24
   email: info@democracyincolour.org
   source: https://democracyincolour.org/contact/
-  checked: 2026-07-24
-summary: "Australia's first national racial justice advocacy organisation led by people of colour, campaigning to address structural racism in Australian political, media, and civic institutions and to build the political power of communities of colour."
+summary: Australia's first national racial justice advocacy organisation led by people
+  of colour, campaigning to address structural racism in Australian political, media,
+  and civic institutions and to build the political power of communities of colour.
+concepts:
+- democracy
+- representative-democracy
+- isegoria
 location:
   latitude: -37.8136
   longitude: 144.9631
   name: Melbourne, Australia
   precision: city
-concepts:
-  - democracy
-  - representative-democracy
-  - isegoria
 rss_feed: https://democracyincolour.org/feed
 activity:
-  rss:
-    date: 2026-07-29
-    note: "Latest post: Democracy in Colour welcomes court ruling upholding racial discrimination findin"
-    url: https://democracyincolour.org/democracy-in-colour-welcomes-court-ruling-upholding-racial-discrimination-finding-against-pauline-hanson/
-    checked: 2026-08-09
   dod:
-    date: 2026-07-05
-    note: "Site confirmed active; Noura Mansour still National Director per LinkedIn/site, matching existing page"
     checked: 2026-07-05
-last_checked: "2026-07-05"
+    date: 2026-07-05
+    note: Site confirmed active; Noura Mansour still National Director per LinkedIn/site,
+      matching existing page
+  rss:
+    checked: 2026-08-09
+    date: 2026-07-29
+    note: 'Latest post: Democracy in Colour welcomes court ruling upholding racial
+      discrimination findin'
+    url: https://democracyincolour.org/democracy-in-colour-welcomes-court-ruling-upholding-racial-discrimination-finding-against-pauline-hanson/
+last_checked: '2026-07-05'
 ---
 
 Democracy in Colour is a registered charity and advocacy organisation focused on racial justice in Australian democracy. Its focus is on *who* participates in democracy — addressing the structural barriers and systemic racism that shape whose voices are heard in political, media, and civic life — rather than procedural democratic reform.

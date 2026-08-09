@@ -6,28 +6,39 @@ country: SE
 website: https://www.idea.int
 logo: /assets/org-logos/international-idea.png
 contact:
-  phone: "+46 8 698 3700"
-  form: https://www.idea.int/contact
-  source: https://www.idea.int/contact
   checked: 2026-08-01
-summary: "An intergovernmental organisation supporting the sustainability of democratic institutions worldwide — providing comparative data, policy analysis, and technical assistance on elections, constitutions, and democratic governance."
+  form: https://www.idea.int/contact
+  phone: +46 8 698 3700
+  source: https://www.idea.int/contact
+summary: An intergovernmental organisation supporting the sustainability of democratic
+  institutions worldwide — providing comparative data, policy analysis, and technical
+  assistance on elections, constitutions, and democratic governance.
 concepts:
-  - democracy
-  - deliberative-democracy
-  - e-government
-  - constitutional-democracy
+- democracy
+- deliberative-democracy
+- e-government
+- constitutional-democracy
 location:
   latitude: 59.3293
   longitude: 18.0686
   name: Stockholm, Sweden
-last_checked: "2026-05-29"
 rss_feed: https://www.idea.int/rss.xml
+events:
+- date: '1995-01-01'
+  notable: true
+  title: Founded in Stockholm as an intergovernmental organisation supporting sustainable
+    democracy worldwide
+- date: '2006-01-01'
+  notable: true
+  title: Launched the Global State of Democracy indices — a flagship annual assessment
+    covering 160+ countries
 activity:
   rss:
-    date: 2026-08-07
-    note: "Latest post: Annual Reviews of Global Elections"
-    url: https://www.idea.int/theme/annual-reviews-global-elections
     checked: 2026-08-09
+    date: 2026-08-07
+    note: 'Latest post: Annual Reviews of Global Elections'
+    url: https://www.idea.int/theme/annual-reviews-global-elections
+last_checked: '2026-05-29'
 ---
 
 International IDEA (the International Institute for Democracy and Electoral Assistance) is an intergovernmental organisation founded in 1995 with a mandate to support sustainable democratic governance across the globe. It has 35 member states and is headquartered in Stockholm, with regional offices across Africa, Asia-Pacific, Latin America, the Middle East, and Europe.

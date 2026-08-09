@@ -6,39 +6,43 @@ country: AU
 website: https://www.lateraleconomics.com.au
 logo: /assets/org-logos/lateral-economics.webp
 contact:
-  email: mail@lateraleconomics.com.au
-  phone: "+61 403 077 732"
-  source: https://www.lateraleconomics.com.au
   checked: 2026-07-24
-summary: "An Australian policy economics consultancy led by Nicholas Gruen — advising on economic reform, innovation, and democratic governance, with a particular interest in how institutions can better incorporate citizens' knowledge and deliberation."
+  email: mail@lateraleconomics.com.au
+  phone: +61 403 077 732
+  source: https://www.lateraleconomics.com.au
+summary: An Australian policy economics consultancy led by Nicholas Gruen — advising
+  on economic reform, innovation, and democratic governance, with a particular interest
+  in how institutions can better incorporate citizens' knowledge and deliberation.
+concepts:
+- isegoria
+- deliberative-democracy
+- cognitive-division-of-labour
+- prediction-markets
+- citizens-assembly
+- tribal-epistemology
 location:
   latitude: -33.8688
   longitude: 151.2093
   name: Sydney, Australia
   precision: city
-concepts:
-  - isegoria
-  - deliberative-democracy
-  - cognitive-division-of-labour
-  - prediction-markets
-  - citizens-assembly
-  - tribal-epistemology
 activity:
-  sitemap:
-    date: 2026-06-09
-    note: "Page last modified (from sitemap)"
-    url: https://www.lateraleconomics.com.au/sitemap.xml
-    checked: 2026-08-09
-  manual:
-    date: 2026-06-07
-    note: "Know personally that this is still active."
-    checked: 2026-06-07
   dod:
-    date: 2026-07-16
-    note: "Website loaded directly and describes current services/team under Nicholas Gruen (CEO); page itself undated so corroborated via web search showing Gruen's Substack/Club Troppo commentary continuing into 2026"
-    url: https://www.lateraleconomics.com.au
     checked: 2026-07-16
-last_checked: "2026-07-16"
+    date: 2026-07-16
+    note: Website loaded directly and describes current services/team under Nicholas
+      Gruen (CEO); page itself undated so corroborated via web search showing Gruen's
+      Substack/Club Troppo commentary continuing into 2026
+    url: https://www.lateraleconomics.com.au
+  manual:
+    checked: 2026-06-07
+    date: 2026-06-07
+    note: Know personally that this is still active.
+  sitemap:
+    checked: 2026-08-09
+    date: 2026-06-09
+    note: Page last modified (from sitemap)
+    url: https://www.lateraleconomics.com.au/sitemap.xml
+last_checked: '2026-07-16'
 ---
 
 Lateral Economics is a policy consultancy founded and led by Nicholas Gruen, a widely published Australian economist and commentator. The firm works with government clients on economic reform, productivity, and innovation policy — but Gruen is perhaps best known publicly for his advocacy of democratic reform, particularly citizens' juries and sortition as mechanisms for improving the quality of collective decision-making.

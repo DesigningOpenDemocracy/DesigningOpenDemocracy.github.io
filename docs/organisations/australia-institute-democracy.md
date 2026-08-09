@@ -1,26 +1,30 @@
 ---
-activity:
-  dod:
-    checked: 2026-07-19
-    date: 2026-07-19
-    note: Website live; Democracy & Accountability program page current.
-    url: https://australiainstitute.org.au/about/structure/democracy-accountability/
-  rss:
-    checked: 2026-08-09
-    date: 2026-08-06
-    note: 'Latest post: Confused about interest rates and inflation? You’re not alone'
-    url: https://australiainstitute.org.au/post/confused-about-interest-rates-and-inflation-youre-not-alone/?utm_source=rss&utm_medium=rss&utm_campaign=confused-about-interest-rates-and-inflation-youre-not-alone
-concepts:
-- accountability-sink
-- constitutional-democracy
-- representative-democracy
+title: The Australia Institute — Democracy & Accountability Program
+type: research
+status: active
+country: AU
+website: https://australiainstitute.org.au/about/structure/democracy-accountability/
+logo: /assets/org-logos/australia-institute-democracy.png
 contact:
   checked: 2026-08-01
   email: mail@australiainstitute.org.au
   form: https://nb.australiainstitute.org.au/contact
   phone: 02 6130 0530
   source: https://nb.australiainstitute.org.au/contact
-country: AU
+summary: A dedicated research and advocacy program within The Australia Institute
+  focused on diagnosing and addressing Australia's democratic deficit — covering truth
+  in political advertising, parliamentary reform, anti-corruption institutions, and
+  campaign finance.
+concepts:
+- accountability-sink
+- constitutional-democracy
+- representative-democracy
+location:
+  latitude: -35.2809
+  longitude: 149.13
+  name: Canberra, Australia
+  precision: city
+rss_feed: https://australiainstitute.org.au/feed
 events:
 - date: '2026-08-17'
   notable: false
@@ -32,22 +36,18 @@ events:
   title: Climate Integrity Summit 2026 — global leaders, economists and advocates
     on Australia's fossil fuel exit, Parliament of NSW Sydney
   url: https://australiainstitute.org.au/events/
+activity:
+  dod:
+    checked: 2026-07-19
+    date: 2026-07-19
+    note: Website live; Democracy & Accountability program page current.
+    url: https://australiainstitute.org.au/about/structure/democracy-accountability/
+  rss:
+    checked: 2026-08-09
+    date: 2026-08-06
+    note: 'Latest post: Confused about interest rates and inflation? You’re not alone'
+    url: https://australiainstitute.org.au/post/confused-about-interest-rates-and-inflation-youre-not-alone/?utm_source=rss&utm_medium=rss&utm_campaign=confused-about-interest-rates-and-inflation-youre-not-alone
 last_checked: '2026-07-19'
-location:
-  latitude: -35.2809
-  longitude: 149.13
-  name: Canberra, Australia
-  precision: city
-logo: /assets/org-logos/australia-institute-democracy.png
-rss_feed: https://australiainstitute.org.au/feed
-status: active
-summary: A dedicated research and advocacy program within The Australia Institute
-  focused on diagnosing and addressing Australia's democratic deficit — covering truth
-  in political advertising, parliamentary reform, anti-corruption institutions, and
-  campaign finance.
-title: The Australia Institute — Democracy & Accountability Program
-type: research
-website: https://australiainstitute.org.au/about/structure/democracy-accountability/
 ---
 
 The Democracy & Accountability Program is a dedicated research and advocacy program within [The Australia Institute](https://australiainstitute.org.au), a Canberra-based progressive think tank. Established in 2021, it builds on the Institute's longer history of democracy-related research.

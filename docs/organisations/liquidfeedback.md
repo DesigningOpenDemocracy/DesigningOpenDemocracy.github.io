@@ -6,39 +6,46 @@ country: DE
 website: https://liquidfeedback.com
 logo: /assets/org-logos/liquidfeedback.png
 contact:
-  email: sales@liquidfeedback.com
-  phone: "+49 30 9789 4550"
-  form: https://liquidfeedback.com/en/contact.html
-  source: https://liquidfeedback.com/en/contact.html
   checked: 2026-08-01
-summary: "An open-source liquid democracy platform developed in Berlin — best known as the decision-making system used by the German Pirate Party, enabling delegated voting on policy initiatives."
+  email: sales@liquidfeedback.com
+  form: https://liquidfeedback.com/en/contact.html
+  phone: +49 30 9789 4550
+  source: https://liquidfeedback.com/en/contact.html
+summary: An open-source liquid democracy platform developed in Berlin — best known
+  as the decision-making system used by the German Pirate Party, enabling delegated
+  voting on policy initiatives.
 concepts:
-  - democracy-tools
-  - liquid-democracy
-  - direct-democracy
-  - issue-based-direct-democracy
+- democracy-tools
+- liquid-democracy
+- direct-democracy
+- issue-based-direct-democracy
 location:
-  latitude: 52.5200
-  longitude: 13.4050
+  latitude: 52.52
+  longitude: 13.405
   name: Berlin, Germany
   precision: city
-activity:
-  manual:
-    date: 2024-01-01
-    note: "⚠ Status uncertain: site live at liquidfeedback.com (FlexiGuided GmbH, redirects from .org) but no public development news found since 2012. May be stable/maintenance-only. Needs manual check before accepting."
-    checked: 2026-06-09
-  dod:
-    date: 2026-07-16
-    note: "Site live and commercially operating under FlexiGuided GmbH (Berlin), current pricing/installation/maintenance offering; independently listed as active on SoftwareWorld reviews (Jun 2026). No public dev news since 2012 though — status kept active but development activity uncertain"
-    url: https://liquidfeedback.com/en/
-    checked: 2026-07-16
-  rss:
-    note: "No feed found"
-    checked: 2026-08-09
 related_orgs:
-  - liquid-democracy-ev
-  - flux-party
-last_checked: "2026-07-16"
+- liquid-democracy-ev
+- flux-party
+activity:
+  dod:
+    checked: 2026-07-16
+    date: 2026-07-16
+    note: Site live and commercially operating under FlexiGuided GmbH (Berlin), current
+      pricing/installation/maintenance offering; independently listed as active on
+      SoftwareWorld reviews (Jun 2026). No public dev news since 2012 though — status
+      kept active but development activity uncertain
+    url: https://liquidfeedback.com/en/
+  manual:
+    checked: 2026-06-09
+    date: 2024-01-01
+    note: '⚠ Status uncertain: site live at liquidfeedback.com (FlexiGuided GmbH,
+      redirects from .org) but no public development news found since 2012. May be
+      stable/maintenance-only. Needs manual check before accepting.'
+  rss:
+    checked: 2026-08-09
+    note: No feed found
+last_checked: '2026-07-16'
 ---
 
 LiquidFeedback is free and open-source software for initiative-based, delegated decision-making. It was developed by the Public Software Group (formerly BCCM GmbH) in Berlin and released in 2009. The software implements a form of liquid democracy: participants can vote directly on initiatives or delegate their vote to a trusted representative, with delegation transitive and revocable at any time.

@@ -1,14 +1,17 @@
 ---
-activity:
-  manual:
-    checked: 2026-06-07
-    date: 2026-06-07
-    note: website loaded. No certain blog or news. But looks active at least based
-      on vibes.
-  sitemap:
-    checked: 2026-06-07
-    date: 2026-06-05
-    note: Server still up (sitemap detected)
+title: Loomio
+type: platform
+status: active
+country: NZ
+website: https://www.loomio.com
+logo: /assets/org-logos/loomio.png
+contact:
+  checked: 2026-08-01
+  email: contact@loomio.org
+  source: https://www.loomio.com/contact
+summary: A New Zealand worker cooperative building open-source collaborative decision-making
+  software — used by cooperatives, NGOs, and local governments to run structured discussions,
+  proposals, and votes.
 concepts:
 - democracy-tools
 - liquid-democracy
@@ -16,11 +19,11 @@ concepts:
 - cooperative
 - consensus-mapping
 - worker-cooperatives
-contact:
-  checked: 2026-08-01
-  email: contact@loomio.org
-  source: https://www.loomio.com/contact
-country: NZ
+location:
+  latitude: -41.2865
+  longitude: 174.7762
+  name: Wellington, New Zealand
+  precision: city
 events:
 - date: '2012-01-01'
   notable: true
@@ -34,20 +37,17 @@ events:
   notable: false
   title: Wins MIX Prize Digital Freedom Challenge
   url: https://en.wikipedia.org/wiki/Loomio
+activity:
+  manual:
+    checked: 2026-06-07
+    date: 2026-06-07
+    note: website loaded. No certain blog or news. But looks active at least based
+      on vibes.
+  sitemap:
+    checked: 2026-06-07
+    date: 2026-06-05
+    note: Server still up (sitemap detected)
 last_checked: '2026-06-15'
-location:
-  latitude: -41.2865
-  longitude: 174.7762
-  name: Wellington, New Zealand
-  precision: city
-logo: /assets/org-logos/loomio.png
-status: active
-summary: A New Zealand worker cooperative building open-source collaborative decision-making
-  software — used by cooperatives, NGOs, and local governments to run structured discussions,
-  proposals, and votes.
-title: Loomio
-type: platform
-website: https://www.loomio.com
 ---
 
 Loomio is a Wellington-based worker cooperative that develops open-source collaborative decision-making software. Founded in 2012, it grew out of Enspiral — a New Zealand network of social-enterprise workers — and the Occupy movement's need for better collective decision-making tools. The cooperative ownership model is unusual in civic tech: the people building the platform are also its members.

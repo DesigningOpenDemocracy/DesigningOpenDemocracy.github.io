@@ -5,16 +5,18 @@ status: inactive
 country: AU
 website: https://web.archive.org/web/*/https://www.peopledecide.org.au
 logo: /assets/org-logos/people-decide.png
-summary: "An Australian participatory democracy platform and political party of independents allowing citizens to vote on, create, and contribute to national laws and local government decisions online."
+summary: An Australian participatory democracy platform and political party of independents
+  allowing citizens to vote on, create, and contribute to national laws and local
+  government decisions online.
+concepts:
+- direct-democracy
+- e-government
+- liquid-democracy
 location:
   latitude: -33.8688
   longitude: 151.2093
   name: Australia
   precision: city
-concepts:
-  - direct-democracy
-  - e-government
-  - liquid-democracy
 ---
 
 People Decide (PD) was an Australian participatory democracy platform and associated political party. It aimed to give citizens a direct role in national legislation and local government decisions through an online voting platform.

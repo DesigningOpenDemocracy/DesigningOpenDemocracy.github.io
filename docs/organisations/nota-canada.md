@@ -7,38 +7,44 @@ website: https://nota.ca
 logo: /assets/org-logos/nota-canada.png
 logo_bg: light
 contact:
+  checked: 2026-07-30
   email: info@nota.ca
   form: https://nota.ca/contact
   source: https://nota.ca/contact
-  checked: 2026-07-30
-summary: "A Canadian provincial party (Ontario) that elects independent MPPs not bound by party discipline — advocating the 3Rs of direct democracy: Referendum, Recall, and Responsible Government laws."
+summary: 'A Canadian provincial party (Ontario) that elects independent MPPs not bound
+  by party discipline — advocating the 3Rs of direct democracy: Referendum, Recall,
+  and Responsible Government laws.'
+concepts:
+- direct-democracy
+- representative-democracy
+- liquid-democracy
 location:
   latitude: 43.6532
   longitude: -79.3832
   name: Ontario, Canada
   precision: city
-concepts:
-  - direct-democracy
-  - representative-democracy
-  - liquid-democracy
 rss_feed: https://nota.ca/feed
 activity:
-  rss:
-    date: 2025-01-28
-    note: "Latest post: None of the Above Party Calls for Referendum on Trump Tariffs, Strategic Voting "
-    url: "https://nota.ca/none-of-the-above-party-calls-for-referendum-on-trump-tariffs/"
-    checked: 2026-06-08
-  manual:
-    date: 2025-01-27
-    note: "website loaded. https://nota.ca/news/ has January 27, 2025 'None of the Above Party Calls for Referendum on Trump Tariffs, Strategic Voting to Defeat Ford Government in Election'"
-    url: https://nota.ca/news/
-    checked: 2026-06-07
   dod:
-    date: 2025-01-27
-    note: "Website live and actively campaigning; Jan 2025 posts on Ontario provincial election, candidate pages current."
-    url: https://nota.ca
     checked: 2026-07-19
-last_checked: "2026-07-19"
+    date: 2025-01-27
+    note: Website live and actively campaigning; Jan 2025 posts on Ontario provincial
+      election, candidate pages current.
+    url: https://nota.ca
+  manual:
+    checked: 2026-06-07
+    date: 2025-01-27
+    note: website loaded. https://nota.ca/news/ has January 27, 2025 'None of the
+      Above Party Calls for Referendum on Trump Tariffs, Strategic Voting to Defeat
+      Ford Government in Election'
+    url: https://nota.ca/news/
+  rss:
+    checked: 2026-06-08
+    date: 2025-01-28
+    note: 'Latest post: None of the Above Party Calls for Referendum on Trump Tariffs,
+      Strategic Voting '
+    url: https://nota.ca/none-of-the-above-party-calls-for-referendum-on-trump-tariffs/
+last_checked: '2026-07-19'
 ---
 
 The None of the Above Party (NOTA) is a Canadian provincial party registered in Ontario. Its candidates run as independents committed to direct democracy reforms rather than party-line voting. The party's platform centres on what it calls the 3Rs: Referendum (citizens can initiate binding referendums), Recall (voters can remove elected members between elections), and Responsible Government (structural accountability reforms).

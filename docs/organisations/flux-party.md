@@ -5,13 +5,19 @@ status: deregistered
 country: AU
 website: https://web.archive.org/web/*/https://voteflux.org/
 logo: /assets/org-logos/flux.svg
-summary: "An Australian political party that uses Issue-Based Direct Democracy (IBDD) to let constituents direct how elected representatives vote in parliament."
-contributors:
-  - Charlie
+summary: An Australian political party that uses Issue-Based Direct Democracy (IBDD)
+  to let constituents direct how elected representatives vote in parliament.
 concepts:
-  - issue-based-direct-democracy
-  - liquid-democracy
-  - prediction-markets
+- issue-based-direct-democracy
+- liquid-democracy
+- prediction-markets
+events:
+- date: '2016-01-01'
+  notable: true
+  title: Registered as a federal political party, promoting a novel platform of direct
+    digital democracy via app-based voting
+contributors:
+- Charlie
 ---
 
 ![Flux Party logo](flux-mark.svg)

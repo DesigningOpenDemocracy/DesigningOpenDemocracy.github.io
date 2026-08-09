@@ -6,35 +6,40 @@ country: AU
 website: https://mosaiclab.com.au
 logo: /assets/org-logos/mosaiclab.webp
 contact:
-  email: info@mosaiclab.com.au
-  phone: "0422 830 650"
-  source: https://mosaiclab.com.au
   checked: 2026-07-24
-summary: "An Australian deliberative democracy practice that designs and facilitates public deliberation processes — citizens' juries, panels, and assemblies — for governments and public institutions."
+  email: info@mosaiclab.com.au
+  phone: 0422 830 650
+  source: https://mosaiclab.com.au
+summary: An Australian deliberative democracy practice that designs and facilitates
+  public deliberation processes — citizens' juries, panels, and assemblies — for governments
+  and public institutions.
+concepts:
+- citizens-assembly
+- deliberative-democracy
+- consensus-mapping
 location:
   latitude: -37.8136
   longitude: 144.9631
   name: Melbourne, Australia
   precision: city
-concepts:
-  - citizens-assembly
-  - deliberative-democracy
-  - consensus-mapping
 activity:
+  dod:
+    checked: 2026-07-16
+    date: 2026-07-16
+    note: Site active; recent posts include Victorian Government engagement inquiry
+      analysis and a 2025 year-end/2026 trends post covering AI integration and representativeness
+      in deliberative practice
+    url: https://mosaiclab.com.au
+  manual:
+    checked: 2026-06-07
+    date: 2025-12-08
+    note: website loaded. Latest blog post is on December 8, 2025 'SHIFTS SHAPING
+      ENGAGEMENT NEXT YEAR'
   sitemap:
+    checked: 2026-06-08
     date: 2026-06-03
     note: Page last modified (from sitemap)
-    checked: 2026-06-08
-  manual:
-    date: 2025-12-08
-    note: "website loaded. Latest blog post is on December 8, 2025 'SHIFTS SHAPING ENGAGEMENT NEXT YEAR'"
-    checked: 2026-06-07
-  dod:
-    date: 2026-07-16
-    note: "Site active; recent posts include Victorian Government engagement inquiry analysis and a 2025 year-end/2026 trends post covering AI integration and representativeness in deliberative practice"
-    url: https://mosaiclab.com.au
-    checked: 2026-07-16
-last_checked: "2026-07-16"
+last_checked: '2026-07-16'
 ---
 
 MosaicLab is a professional practice specialising in public deliberation. It designs and runs deliberative engagement processes: citizens' juries, standing panels, deliberative polls, and citizens' assemblies for government clients across Australia.

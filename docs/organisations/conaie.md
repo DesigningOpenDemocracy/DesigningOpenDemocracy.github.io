@@ -6,30 +6,41 @@ country: EC
 website: https://conaie.org
 logo: /assets/org-logos/conaie.ico
 contact:
-  email: conaie@ecuanex.net.ec
-  source: http://hosted.nativeweb.org/conaie/index.html
-  note: "Main site conaie.org returns a blank page; email found on legacy mirror at hosted.nativeweb.org"
   checked: 2026-08-01
-summary: "Ecuador's main confederation of indigenous nationalities — 14 nationalities, 18 peoples — a governance actor as much as an advocacy body, having co-drafted Ecuador's 2008 plurinational constitution and operating parallel indigenous justice and territorial governance systems."
+  email: conaie@ecuanex.net.ec
+  note: Main site conaie.org returns a blank page; email found on legacy mirror at
+    hosted.nativeweb.org
+  source: http://hosted.nativeweb.org/conaie/index.html
+summary: Ecuador's main confederation of indigenous nationalities — 14 nationalities,
+  18 peoples — a governance actor as much as an advocacy body, having co-drafted Ecuador's
+  2008 plurinational constitution and operating parallel indigenous justice and territorial
+  governance systems.
+concepts:
+- buen-vivir
 location:
   latitude: -0.2295
   longitude: -78.5243
   name: Quito, Ecuador
-concepts:
-  - buen-vivir
+events:
+- date: '1986-01-01'
+  notable: true
+  title: Founded to represent Ecuador's Indigenous nationalities, becoming the country's
+    largest Indigenous organisation
 activity:
-  sitemap:
-    date: 2026-03-25
-    note: "Page last modified (from sitemap)"
-    checked: 2026-06-07
   dod:
-    date: 2026-06-28
-    note: "Web search confirms continued activity: leadership change (Marlon Vargas elected president, July 2025) and ongoing protest/advocacy on extractivism and state repression through mid-2026."
     checked: 2026-06-28
+    date: 2026-06-28
+    note: 'Web search confirms continued activity: leadership change (Marlon Vargas
+      elected president, July 2025) and ongoing protest/advocacy on extractivism and
+      state repression through mid-2026.'
   rss:
-    note: "No feed found"
     checked: 2026-08-09
-last_checked: "2026-06-28"
+    note: No feed found
+  sitemap:
+    checked: 2026-06-07
+    date: 2026-03-25
+    note: Page last modified (from sitemap)
+last_checked: '2026-06-28'
 ---
 
 The Confederation of Indigenous Nationalities of Ecuador (Confederación de Nacionalidades Indígenas del Ecuador, CONAIE) was founded in 1986 and represents 14 indigenous nationalities and 18 peoples across the Ecuadorian Amazon, highlands, and coast. It is one of the most influential indigenous governance bodies in Latin America, operating not only as an advocacy organisation but as a governance actor with territorial jurisdiction and a recognised parallel justice system.

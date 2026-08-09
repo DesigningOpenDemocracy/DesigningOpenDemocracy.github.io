@@ -1,19 +1,26 @@
 ---
-activity:
-  manual:
-    checked: 2026-08-07
-    date: 2026-08-07
-    note: Confirmed active via own website and an upcoming Melbourne chapter launch
-      event (27 Aug 2026).
-    url: https://www.radicalxchange.org/
-concepts:
-- collective-intelligence
-- participatory-budgeting
+title: RadicalxChange Foundation
+type: civic tech
+status: active
+country: US
+website: https://www.radicalxchange.org
+logo: /assets/org-logos/radicalxchange.png
 contact:
   checked: 2026-08-07
   email: info@radicalxchange.org
   source: https://www.radicalxchange.org/about/
-country: US
+summary: A US-founded international nonprofit and movement advancing 'Plurality' —
+  mechanisms like quadratic voting and quadratic funding that aim to make democratic
+  and economic participation more expressive than one-person-one-vote. National-scale
+  adoption in Taiwan and Japan's Team Mirai; a Melbourne chapter is forming as of
+  August 2026.
+concepts:
+- collective-intelligence
+- participatory-budgeting
+location:
+  latitude: 37.8044
+  longitude: -122.2712
+  name: San Francisco Bay Area, USA
 events:
 - date: '2018-05-15'
   notable: true
@@ -32,22 +39,15 @@ events:
   notable: true
   title: Melbourne chapter launch event — first Australian RadicalxChange chapter
   url: https://events.humanitix.com/radicalxchange-foundation-in-melbourne
-location:
-  latitude: 37.8044
-  longitude: -122.2712
-  name: San Francisco Bay Area, USA
-logo: /assets/org-logos/radicalxchange.png
 related_orgs:
 - vtaiwan
-status: active
-summary: A US-founded international nonprofit and movement advancing 'Plurality' —
-  mechanisms like quadratic voting and quadratic funding that aim to make democratic
-  and economic participation more expressive than one-person-one-vote. National-scale
-  adoption in Taiwan and Japan's Team Mirai; a Melbourne chapter is forming as of
-  August 2026.
-title: RadicalxChange Foundation
-type: civic tech
-website: https://www.radicalxchange.org
+activity:
+  manual:
+    checked: 2026-08-07
+    date: 2026-08-07
+    note: Confirmed active via own website and an upcoming Melbourne chapter launch
+      event (27 Aug 2026).
+    url: https://www.radicalxchange.org/
 ---
 
 RadicalxChange Foundation is an international nonprofit and movement, founded by economist [E. Glen Weyl](https://glenweyl.com/) in 2018 following public discussion of his book *Radical Markets: Uprooting Capitalism and Democracy for a Just Society* (with Eric Posner). It grew from roughly fifty volunteers into a foundation that convened its first major conference in Detroit in March 2019.[^glenweyl][^propublica]

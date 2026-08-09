@@ -6,43 +6,47 @@ country: DE
 website: https://liqd.net/en/
 logo: /assets/org-logos/liquid-democracy-ev.png
 contact:
+  checked: 2026-07-30
   email: hallo@liqd.net
   source: https://liqd.net/about
-  checked: 2026-07-30
-news_page: https://liqd.net/en/blog/
-summary: "A Berlin-based non-profit developing open-source digital participation software — creators of Adhocracy and Adhocracy+, and operators of meinBerlin, Berlin's official participatory platform."
+summary: A Berlin-based non-profit developing open-source digital participation software
+  — creators of Adhocracy and Adhocracy+, and operators of meinBerlin, Berlin's official
+  participatory platform.
 concepts:
-  - democracy-tools
-  - liquid-democracy
-  - deliberative-democracy
-  - e-government
-  - direct-democracy
+- democracy-tools
+- liquid-democracy
+- deliberative-democracy
+- e-government
+- direct-democracy
 location:
-  latitude: 52.5200
-  longitude: 13.4050
+  latitude: 52.52
+  longitude: 13.405
   name: Berlin, Germany
   precision: city
+news_page: https://liqd.net/en/blog/
 activity:
+  dod:
+    checked: 2026-07-16
+    date: 2026-07-16
+    note: Site actively maintained; most recent blog post dated July 7, 2026 (office
+      relocation); adhocracy+, meinBerlin, Zukunft D projects all current
+    url: https://liqd.net/en/
   manual:
     date: 2026-05-28
-    note: "Latest post: Halbzeit – 6 Monate Freiwilligendienst bei Liquid Democracy e.V."
+    note: 'Latest post: Halbzeit – 6 Monate Freiwilligendienst bei Liquid Democracy
+      e.V.'
+    url: https://liqd.net/en/blog/
+  scrape:
+    checked: 2026-06-08
+    date: 2026-05-28
+    note: Latest news page scraped
     url: https://liqd.net/en/blog/
   sitemap:
-    date: 2026-08-03
-    note: "Page last modified (from sitemap)"
-    url: https://liqd.net/en/sitemap.xml
     checked: 2026-08-09
-  scrape:
-    date: 2026-05-28
-    note: "Latest news page scraped"
-    url: https://liqd.net/en/blog/
-    checked: 2026-06-08
-  dod:
-    date: 2026-07-16
-    note: "Site actively maintained; most recent blog post dated July 7, 2026 (office relocation); adhocracy+, meinBerlin, Zukunft D projects all current"
-    url: https://liqd.net/en/
-    checked: 2026-07-16
-last_checked: "2026-07-16"
+    date: 2026-08-03
+    note: Page last modified (from sitemap)
+    url: https://liqd.net/en/sitemap.xml
+last_checked: '2026-07-16'
 ---
 
 Liquid Democracy e.V. is a Berlin-based non-profit association founded in 2009 to develop free and open-source digital participation tools and support their deployment in governments, NGOs, and public institutions. The organisation combines software development with consulting, workshops, and policy research.

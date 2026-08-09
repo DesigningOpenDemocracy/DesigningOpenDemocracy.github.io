@@ -6,29 +6,41 @@ country: US
 website: https://pol.is
 logo: /assets/org-logos/polis.png
 contact:
+  checked: 2026-08-01
   email: hello@compdemocracy.org
   source: https://pol.is/tos
-  checked: 2026-08-01
-last_checked: "2026-05-30"
-summary: "An open-source consensus mapping platform used in large-scale public deliberations — participants rate statements rather than debating, and machine learning surfaces the points of genuine agreement across thousands of respondents."
+summary: An open-source consensus mapping platform used in large-scale public deliberations
+  — participants rate statements rather than debating, and machine learning surfaces
+  the points of genuine agreement across thousands of respondents.
+concepts:
+- democracy-tools
+- consensus-mapping
+- deliberative-democracy
+- citizens-assembly
 location:
   latitude: 47.6062
   longitude: -122.3321
   name: Seattle, USA
   precision: city
-concepts:
-  - democracy-tools
-  - consensus-mapping
-  - deliberative-democracy
-  - citizens-assembly
+events:
+- date: '2012-10-13'
+  notable: true
+  title: Created by Colin Megill and the Computational Democracy Project as an open-source
+    tool for large-scale deliberation
+- date: '2014-06-01'
+  notable: true
+  title: First used by the Taiwanese government for vTaiwan — the first large-scale
+    deployment for public policy deliberation
 activity:
-  rss:
-    note: "No feed found"
-    checked: 2026-06-07
   manual:
-    date: 2026-06-07
-    note: "website loaded. No obvious news pages. But copy right is set to © 2026 on the page."
     checked: 2026-06-07
+    date: 2026-06-07
+    note: website loaded. No obvious news pages. But copy right is set to © 2026 on
+      the page.
+  rss:
+    checked: 2026-06-07
+    note: No feed found
+last_checked: '2026-05-30'
 ---
 
 Pol.is (pronounced "polis") is an open-source platform for large-scale online deliberation, developed by the Computational Democracy Project. Since its launch in 2012 it has hosted tens of thousands of conversations with over 10 million participants worldwide, and is now embedded as national democratic infrastructure in Taiwan.

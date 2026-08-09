@@ -6,31 +6,40 @@ country: IN
 website: https://www.janaagraha.org
 logo: /assets/org-logos/janaagraha.svg
 contact:
+  checked: 2026-08-01
   email: info@janaagraha.org
   source: https://www.janaagraha.org/get-involved
-  checked: 2026-08-01
-summary: "A Bangalore-based organisation working on urban civic participation and local government reform in India — connecting citizens to municipal processes through ward-level engagement, civic technology, and the I Change My City platform since 2001."
+summary: A Bangalore-based organisation working on urban civic participation and local
+  government reform in India — connecting citizens to municipal processes through
+  ward-level engagement, civic technology, and the I Change My City platform since
+  2001.
+concepts:
+- e-government
+- direct-democracy
+- accountability-sink
 location:
   latitude: 12.9716
   longitude: 77.5946
   name: Bangalore, India
-concepts:
-  - e-government
-  - direct-democracy
-  - accountability-sink
 rss_feed: https://www.janaagraha.org/feed
+events:
+- date: '2001-01-01'
+  notable: true
+  title: Founded by Ramesh and Swati Ramanathan to improve urban governance and citizen
+    participation in India
 activity:
-  rss:
-    date: 2026-08-09
-    note: "RSS feed active"
-    url: https://www.janaagraha.org/feed
-    checked: 2026-08-09
   dod:
-    date: 2026-07-16
-    note: "Website loaded directly; Urban Conclave event scheduled for March 18, 2026 and site actively promoting current programs"
-    url: https://www.janaagraha.org
     checked: 2026-07-16
-last_checked: "2026-07-16"
+    date: 2026-07-16
+    note: Website loaded directly; Urban Conclave event scheduled for March 18, 2026
+      and site actively promoting current programs
+    url: https://www.janaagraha.org
+  rss:
+    checked: 2026-08-09
+    date: 2026-08-09
+    note: RSS feed active
+    url: https://www.janaagraha.org/feed
+last_checked: '2026-07-16'
 ---
 
 Janaagraha Centre for Citizenship and Democracy was founded in December 2001 by Swati and Ramesh Ramanathan in Bangalore. It works to strengthen the relationship between urban citizens and local government, with a focus on ward-level democratic participation and municipal transparency.

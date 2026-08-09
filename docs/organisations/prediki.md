@@ -7,41 +7,46 @@ website: https://www.prediki.com
 logo: /assets/org-logos/prediki.svg
 logo_bg: dark
 contact:
+  checked: 2026-08-01
   email: support@prediki.com
   source: https://www.prediki.com/meta/en/prediki-support/
-  checked: 2026-08-01
-news_page: https://www.prediki.com/meta/en/Management-by-Predictions-(Prediki-Blog-in-English)/
-summary: "An Austrian prediction market platform that aggregates collective intelligence on political and policy questions — users make structured predictions with reasons, and the system surfaces the informed consensus."
+summary: An Austrian prediction market platform that aggregates collective intelligence
+  on political and policy questions — users make structured predictions with reasons,
+  and the system surfaces the informed consensus.
+concepts:
+- democracy-tools
+- prediction-markets
+- cognitive-division-of-labour
+- isegoria
 location:
   latitude: 48.2082
   longitude: 16.3738
   name: Vienna, Austria
   precision: city
-concepts:
-  - democracy-tools
-  - prediction-markets
-  - cognitive-division-of-labour
-  - isegoria
+news_page: https://www.prediki.com/meta/en/Management-by-Predictions-(Prediki-Blog-in-English)/
 activity:
-  rss:
-    note: "No feed found"
-    checked: 2026-06-07
-  manual:
-    date: 2022-09-30
-    note: "website active. News link https://www.prediki.com/meta/en/Management-by-Predictions-(Prediki-Blog-in-English)/ . Last is at  Vienna, 30 September 2022 'Renewed Controversy About Election Polls'"
-    url: https://www.prediki.com/meta/en/Management-by-Predictions-(Prediki-Blog-in-English)/
-    checked: 2026-06-07
-  scrape:
-    date: 2022-09-30
-    note: "Latest news page scraped"
-    url: https://www.prediki.com/meta/en/Management-by-Predictions-(Prediki-Blog-in-English)/
-    checked: 2026-06-08
   dod:
-    date: 2026-07-19
-    note: "Prediction market platform live with active questions and participant engagement; footer copyright dated 2012-2022 but platform is operating."
-    url: https://www.prediki.com
     checked: 2026-07-19
-last_checked: "2026-07-19"
+    date: 2026-07-19
+    note: Prediction market platform live with active questions and participant engagement;
+      footer copyright dated 2012-2022 but platform is operating.
+    url: https://www.prediki.com
+  manual:
+    checked: 2026-06-07
+    date: 2022-09-30
+    note: website active. News link https://www.prediki.com/meta/en/Management-by-Predictions-(Prediki-Blog-in-English)/
+      . Last is at  Vienna, 30 September 2022 'Renewed Controversy About Election
+      Polls'
+    url: https://www.prediki.com/meta/en/Management-by-Predictions-(Prediki-Blog-in-English)/
+  rss:
+    checked: 2026-06-07
+    note: No feed found
+  scrape:
+    checked: 2026-06-08
+    date: 2022-09-30
+    note: Latest news page scraped
+    url: https://www.prediki.com/meta/en/Management-by-Predictions-(Prediki-Blog-in-English)/
+last_checked: '2026-07-19'
 ---
 
 Prediki (Prediki Prediction Markets GmbH) is a peer-to-peer platform for opinion research and collective intelligence, built around prediction market methodology. Rather than simple polling, participants make structured predictions about outcomes, stake a position, and provide reasons — the system aggregates these into probability estimates while tracking the quality of each contributor's predictions over time.

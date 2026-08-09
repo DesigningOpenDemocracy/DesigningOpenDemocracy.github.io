@@ -6,26 +6,33 @@ country: FI
 website: https://www.sitra.fi/en/
 logo: /assets/org-logos/sitra.svg
 contact:
-  email: sitra@sitra.fi
-  phone: "+358 294 618 991"
-  source: https://www.sitra.fi/en/
   checked: 2026-08-09
-activity:
-  dod:
-    date: 2026-08-09
-    note: Site live and actively publishing as of August 2026
-    checked: 2026-08-09
-last_checked: "2026-08-09"
-summary: "The Finnish Innovation Fund — a public foundation under parliamentary supervision with a dedicated Democracy work track that renews democracy and strengthens citizen engagement through democratic innovations and technologies."
+  email: sitra@sitra.fi
+  phone: +358 294 618 991
+  source: https://www.sitra.fi/en/
+summary: The Finnish Innovation Fund — a public foundation under parliamentary supervision
+  with a dedicated Democracy work track that renews democracy and strengthens citizen
+  engagement through democratic innovations and technologies.
 concepts:
-  - deliberative-democracy
-  - democracy-tools
-  - e-government
+- deliberative-democracy
+- democracy-tools
+- e-government
 location:
   latitude: 60.1699
   longitude: 24.9384
   name: Helsinki, Finland
   precision: city
+events:
+- date: '1967-01-01'
+  notable: true
+  title: Established by the Finnish Parliament as the Finnish Innovation Fund, under
+    parliamentary supervision
+activity:
+  dod:
+    checked: 2026-08-09
+    date: 2026-08-09
+    note: Site live and actively publishing as of August 2026
+last_checked: '2026-08-09'
 ---
 
 Sitra (the Finnish Innovation Fund) is an unusual institution: a public foundation operating under parliamentary supervision, with an independent mandate to invest in and build Finland's future. Among its workstreams — circular economy (including the World Circular Economy Forum), health data (TEHDAS2), data and AI — is a dedicated Democracy programme that develops and advocates for democratic innovations.

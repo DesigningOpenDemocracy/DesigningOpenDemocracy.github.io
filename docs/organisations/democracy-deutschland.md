@@ -6,30 +6,32 @@ country: DE
 website: https://democracy-app.de
 logo: /assets/org-logos/democracy-deutschland.png
 contact:
-  email: contact@democracy-deutschland.de
-  phone: "+49 176 470 40 213"
-  source: https://democracy-deutschland.de/#!impressum
   checked: 2026-08-01
-summary: "A German volunteer-run nonprofit that brings the Bundestag to citizens' smartphones — users can vote on live parliamentary procedures and compare their choices with how their actual representatives voted."
+  email: contact@democracy-deutschland.de
+  phone: +49 176 470 40 213
+  source: https://democracy-deutschland.de/#!impressum
+summary: A German volunteer-run nonprofit that brings the Bundestag to citizens' smartphones
+  — users can vote on live parliamentary procedures and compare their choices with
+  how their actual representatives voted.
 concepts:
-  - democracy-tools
-  - e-government
-  - representative-democracy
+- democracy-tools
+- e-government
+- representative-democracy
 location:
-  latitude: 52.5200
-  longitude: 13.4050
+  latitude: 52.52
+  longitude: 13.405
   name: Germany
   precision: city
 activity:
   dod:
-    date: 2026-03-15
-    note: "Latest commit: update GitHub Actions to Node.js 24-compatible versions"
-    url: https://github.com/demokratie-live/democracy-client/commits/main
     checked: 2026-06-08
+    date: 2026-03-15
+    note: 'Latest commit: update GitHub Actions to Node.js 24-compatible versions'
+    url: https://github.com/demokratie-live/democracy-client/commits/main
   rss:
-    note: "No feed found"
     checked: 2026-08-09
-last_checked: "2026-06-29"
+    note: No feed found
+last_checked: '2026-06-29'
 ---
 
 DEMOCRACY Deutschland e.V. is a German nonprofit building open-source civic technology to close the gap between parliamentary decisions and the citizens affected by them. Their flagship product is the **DEMOCRACY app**, available on Android (including [F-Droid](https://f-droid.org/en/packages/de.democracydeutschland.app/)), iOS, and as a web interface.

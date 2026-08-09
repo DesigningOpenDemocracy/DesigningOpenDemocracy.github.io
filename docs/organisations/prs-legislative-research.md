@@ -6,34 +6,43 @@ country: IN
 website: https://prsindia.org
 logo: /assets/org-logos/prs-legislative-research.png
 contact:
-  email: prsindia@prsindia.org
-  phone: "(011) 2323 4801"
-  source: https://prsindia.org/careers/opportunities-at-prs
   checked: 2026-08-01
-summary: "A New Delhi-based independent legislative research institute supporting parliamentarians and informing citizens — tracking bills, budgets, and MP activity for India's Parliament and state legislatures since 2005."
+  email: prsindia@prsindia.org
+  phone: (011) 2323 4801
+  source: https://prsindia.org/careers/opportunities-at-prs
+summary: A New Delhi-based independent legislative research institute supporting parliamentarians
+  and informing citizens — tracking bills, budgets, and MP activity for India's Parliament
+  and state legislatures since 2005.
+concepts:
+- representative-democracy
+- radical-transparency
+- accountability-sink
 location:
   latitude: 28.6315
   longitude: 77.2167
   name: New Delhi, India
-concepts:
-  - representative-democracy
-  - radical-transparency
-  - accountability-sink
+events:
+- date: '2005-01-01'
+  notable: true
+  title: Founded to track parliamentary activity and strengthen legislative debate
+    in India
 activity:
+  dod:
+    checked: 2026-07-19
+    date: 2026-07-19
+    note: Website live with July 2026 content; Monsoon session tracking, active blog
+      and bill commentary.
+    url: https://prsindia.org
+  manual:
+    checked: 2026-06-07
+    date: 2024-05-20
+    note: website loaded. Has blog in main page under a tab. Last one is at  May 20,
+      2024 'A note of gratitude to Mr. N. Vaghul
   sitemap:
+    checked: 2026-06-08
     date: 2021-07-17
     note: Page last modified (from sitemap)
-    checked: 2026-06-08
-  manual:
-    date: 2024-05-20
-    note: "website loaded. Has blog in main page under a tab. Last one is at  May 20, 2024 'A note of gratitude to Mr. N. Vaghul"
-    checked: 2026-06-07
-  dod:
-    date: 2026-07-19
-    note: "Website live with July 2026 content; Monsoon session tracking, active blog and bill commentary."
-    url: https://prsindia.org
-    checked: 2026-07-19
-last_checked: "2026-07-19"
+last_checked: '2026-07-19'
 ---
 
 PRS Legislative Research was founded in September 2005 and is housed within the Centre for Policy Research in New Delhi. It provides non-partisan research support to Members of Parliament and state legislators, and makes India's legislative process more accessible to citizens through open tracking tools.

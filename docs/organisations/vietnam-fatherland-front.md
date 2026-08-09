@@ -6,32 +6,43 @@ country: VN
 website: https://mattran.org.vn
 logo: /assets/org-logos/vietnam-fatherland-front.png
 contact:
+  checked: 2026-07-30
   email: tapchimattrantoquoc@gmail.com
   source: https://mattran.org.vn/contact/
-  checked: 2026-07-30
-summary: "Vietnam's constitutionally mandated consultative umbrella body — 50+ member organisations representing professional, religious, ethnic, and social groups — structurally analogous to China's CPPCC, operating under the Vietnamese Communist Party's single-party framework."
+summary: Vietnam's constitutionally mandated consultative umbrella body — 50+ member
+  organisations representing professional, religious, ethnic, and social groups —
+  structurally analogous to China's CPPCC, operating under the Vietnamese Communist
+  Party's single-party framework.
+concepts:
+- vanguardism
 location:
   latitude: 21.0285
   longitude: 105.8542
   name: Hanoi, Vietnam
-concepts:
-  - vanguardism
+events:
+- date: '1977-02-01'
+  notable: true
+  title: Founded as the umbrella political coalition under the Communist Party of
+    Vietnam, succeeding the North Vietnamese Fatherland Front
 activity:
-  sitemap:
-    date: 2026-06-07
-    note: "Page last modified (from sitemap)"
-    url: https://mattran.org.vn/sitemap.xml
-    checked: 2026-06-07
-  manual:
-    date: 2026-06-07
-    note: "website loaded. News page in front page. Latest news 07/06/2026 'Khai mạc phiên thứ nhất Đại hội đại biểu toàn quốc Hội Nông dân Việt Nam lần thứ IX: Gần 600 đại biểu chính thức về dự'"
-    checked: 2026-06-07
   dod:
-    date: 2026-07-18
-    note: "Website live with July 2026 content; homepage timestamp and news dated July 18-19 2026."
-    url: https://mattran.org.vn
     checked: 2026-07-19
-last_checked: "2026-07-19"
+    date: 2026-07-18
+    note: Website live with July 2026 content; homepage timestamp and news dated July
+      18-19 2026.
+    url: https://mattran.org.vn
+  manual:
+    checked: 2026-06-07
+    date: 2026-06-07
+    note: 'website loaded. News page in front page. Latest news 07/06/2026 ''Khai
+      mạc phiên thứ nhất Đại hội đại biểu toàn quốc Hội Nông dân Việt Nam lần thứ
+      IX: Gần 600 đại biểu chính thức về dự'''
+  sitemap:
+    checked: 2026-06-07
+    date: 2026-06-07
+    note: Page last modified (from sitemap)
+    url: https://mattran.org.vn/sitemap.xml
+last_checked: '2026-07-19'
 ---
 
 > **Note:** The VFF operates within Vietnam's single-party system under Vietnamese Communist Party (VCP) guidance. Its role is constitutionally defined as consultative — representing organised social interests within approved channels, not as an independent political actor. Scholars describe its function as similar to China's [CPPCC](cppcc.md): genuine aggregation of sectoral interests within structurally bounded limits. It is included here as a documented example of managed consultation and as a comparative case alongside the Chinese model.

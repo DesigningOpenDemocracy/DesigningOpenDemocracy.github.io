@@ -6,25 +6,31 @@ country: CO
 website: https://www.movilizatorio.org
 logo: /assets/org-logos/movilizatorio.png
 contact:
+  checked: 2026-08-09
   form: https://www.movilizatorio.org/contacto
   source: https://www.movilizatorio.org
-  checked: 2026-08-09
-activity:
-  dod:
-    date: 2026-08-09
-    note: Site live and actively publishing as of August 2026
-    checked: 2026-08-09
-last_checked: "2026-08-09"
-summary: "A Colombian social innovation laboratory with global reach — transforming ideas into actions and apathy into social and environmental movements. Won the Schwab Foundation Award at the World Economic Forum (2025)."
+summary: A Colombian social innovation laboratory with global reach — transforming
+  ideas into actions and apathy into social and environmental movements. Won the Schwab
+  Foundation Award at the World Economic Forum (2025).
 concepts:
-  - democracy-tools
-  - deliberative-democracy
-  - democracy
+- democracy-tools
+- deliberative-democracy
+- democracy
 location:
-  latitude: 4.7110
+  latitude: 4.711
   longitude: -74.0721
   name: Bogotá, Colombia
   precision: city
+events:
+- date: '2016-01-01'
+  notable: true
+  title: Founded in Bogotá as a citizen participation and social innovation laboratory
+activity:
+  dod:
+    checked: 2026-08-09
+    date: 2026-08-09
+    note: Site live and actively publishing as of August 2026
+last_checked: '2026-08-09'
 ---
 
 Movilizatorio is a citizen participation and social innovation laboratory founded in Colombia with offices in Bogotá, Santiago de Chile, and operations reaching Mexico, Spain, Madagascar, and South Africa. Its practice spans six capabilities — knowledge, leadership, experimentation, communication, social design, and mobilisation — treating the pipeline from research to action as a single integrated process rather than separate phases.

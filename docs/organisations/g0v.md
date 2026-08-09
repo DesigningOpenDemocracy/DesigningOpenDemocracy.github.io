@@ -1,4 +1,36 @@
 ---
+title: g0v (gov zero)
+type: civic tech
+status: active
+country: TW
+website: https://g0v.tw
+logo: /assets/org-logos/g0v.svg
+contact:
+  checked: 2026-07-30
+  email: g0v-talks@googlegroups.com
+  source: https://g0v.tw/contact
+summary: A Taiwanese civic tech community that forks government websites and services
+  to make them more open, usable, and participatory — best known internationally for
+  co-developing the vTaiwan deliberation platform.
+concepts:
+- radical-transparency
+- e-government
+- consensus-mapping
+location:
+  latitude: 25.033
+  longitude: 121.5654
+  name: Taipei, Taiwan
+  precision: city
+news_page: https://g0v.tw/intl/en/event/
+ics_feed: https://calendar.google.com/calendar/ical/cpcf6iv5pt9l6gl2ue3svo63e8%40group.calendar.google.com/public/basic.ics
+events:
+- date: '2012-12-01'
+  notable: true
+  title: First hackathon (Hackath0n) at Academia Sinica — launches the g0v community
+  url: https://en.wikipedia.org/wiki/G0v
+- date: '2016-01-01'
+  notable: false
+  title: g0vhk (Hong Kong branch) founded
 activity:
   ical:
     checked: 2026-06-08
@@ -19,39 +51,7 @@ activity:
     checked: 2026-06-08
     hint: no_markup
     note: News page found, no machine-readable date
-concepts:
-- radical-transparency
-- e-government
-- consensus-mapping
-contact:
-  checked: 2026-07-30
-  email: g0v-talks@googlegroups.com
-  source: https://g0v.tw/contact
-country: TW
-events:
-- date: '2012-12-01'
-  notable: true
-  title: First hackathon (Hackath0n) at Academia Sinica — launches the g0v community
-  url: https://en.wikipedia.org/wiki/G0v
-- date: '2016-01-01'
-  notable: false
-  title: g0vhk (Hong Kong branch) founded
-ics_feed: https://calendar.google.com/calendar/ical/cpcf6iv5pt9l6gl2ue3svo63e8%40group.calendar.google.com/public/basic.ics
 last_checked: '2026-05-30'
-location:
-  latitude: 25.033
-  longitude: 121.5654
-  name: Taipei, Taiwan
-  precision: city
-logo: /assets/org-logos/g0v.svg
-news_page: https://g0v.tw/intl/en/event/
-status: active
-summary: A Taiwanese civic tech community that forks government websites and services
-  to make them more open, usable, and participatory — best known internationally for
-  co-developing the vTaiwan deliberation platform.
-title: g0v (gov zero)
-type: civic tech
-website: https://g0v.tw
 ---
 
 g0v (pronounced "gov zero") is a decentralised, volunteer-driven civic tech community founded in Taiwan in 2012. The name is a pun: replacing the "o" in "gov" with "0" (zero) to create an alternative domain — `g0v.tw` versus `gov.tw` — signalling a parallel, open, citizen-built version of government infrastructure.

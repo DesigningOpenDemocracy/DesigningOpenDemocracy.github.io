@@ -5,16 +5,23 @@ status: inactive
 country: RU
 website: https://web.archive.org/web/*/https://www.golos.org/
 logo: /assets/org-logos/golos.png
-summary: "Russia's only independent nationwide election-monitoring organisation for 25 years — training observers, documenting electoral violations, and operating a public 'Map of Violations' platform. Dissolved in July 2025 after its co-chair was convicted under foreign agent legislation."
+summary: Russia's only independent nationwide election-monitoring organisation for
+  25 years — training observers, documenting electoral violations, and operating a
+  public 'Map of Violations' platform. Dissolved in July 2025 after its co-chair was
+  convicted under foreign agent legislation.
+concepts:
+- representative-democracy
+- accountability-sink
+- radical-transparency
 location:
   latitude: 55.7558
   longitude: 37.6176
   name: Moscow, Russia
   precision: city
-concepts:
-  - representative-democracy
-  - accountability-sink
-  - radical-transparency
+events:
+- date: '2000-01-01'
+  notable: true
+  title: Founded as an independent election monitoring organisation in Russia
 ---
 
 Golos (Russian: Голос, meaning "Voice" or "Vote") was Russia's leading independent election monitoring organisation, founded in 2000. Over 25 years, it trained volunteer observers, documented thousands of alleged electoral violations, and operated a publicly accessible "Map of Violations" platform that aggregated citizen reports during election periods.
