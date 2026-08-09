@@ -8,6 +8,8 @@ categories:
   - Policy
   - Australia
 date: 2026-07-31
+event_date: 2026-11-12
+event_notable: true
 title: "PRSA Members to Vote on Rebrand to Australian Electoral Reform Society — AGM 12 November 2026"
 summary: "After a 130-year run as a single-issue STV advocacy body, the Proportional Representation Society of Australia is putting a 17-motion constitutional overhaul to members at its 12 November 2026 AGM: a rename to the Australian Electoral Reform Society, a broadened remit, modernised governance, and authorisation to spend from its ~$80,000 reserve on a rebrand. Passing requires a 75% majority, and — under the rules as they currently stand — no proxy votes."
 tags:
