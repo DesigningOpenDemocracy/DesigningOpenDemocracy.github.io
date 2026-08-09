@@ -61,7 +61,7 @@ Full details are in the new [RadicalxChange Foundation](../../organisations/radi
 
 ## The Taiwan connection
 
-RadicalxChange's flagship idea, **Plurality**, was co-authored by Weyl with [Audrey Tang](https://en.wikipedia.org/wiki/Audrey_Tang), Taiwan's former Digital Minister and the driving government champion behind [vTaiwan](../../organisations/vtaiwan.md) — the Pol.is-based consultation platform DOD wrote about in [May 2026](2026-05-25-taiwan-digital-democracy.md). Tang spoke at Small Giants Academy's Wisdom & Action Forum in Melbourne in May 2026,[^pioneerspost] the same co-host behind this RadicalxChange launch — which is likely why Tang's name has been circulating in Melbourne civic-tech conversations even though they aren't listed as a speaker at the 27 August event itself. Worth being precise about that distinction if you're passing the invitation along.
+RadicalxChange's flagship idea, **Plurality**, was co-authored by Weyl with [Audrey Tang](https://en.wikipedia.org/wiki/Audrey_Tang), Taiwan's former Digital Minister and the driving government champion behind [vTaiwan](../../organisations/vtaiwan.md) — the Pol.is-based consultation platform DOD wrote about in [May 2026](2026-05-25-taiwan-digital-democracy.md). Tang spoke at Small Giants Academy's Wisdom & Action Forum in Melbourne in May 2026,[^pioneerspost] the same co-host behind this RadicalxChange launch — which is likely why Tang's name has been circulating in Melbourne civic-tech conversations. Note that they aren't listed as a speaker at the 27 August event itself.
 
 ## Why it's on our radar
 
