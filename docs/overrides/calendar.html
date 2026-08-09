@@ -29,6 +29,7 @@
   <select id="calendar-country-filter" class="org-filter-select">
     <option value="all">All countries</option>
   </select>
+  <button id="calendar-country-reset" class="calendar-reset-btn" title="Show all countries">✕ Reset</button>
   <span id="calendar-filter-count" class="calendar-filter-count"></span>
 </div>
 
@@ -146,6 +147,7 @@
       h.style.display = visible ? '' : 'none';
     });
 
+    document.getElementById('calendar-country-reset').classList.toggle('visible', filter.value !== 'all');
     updateCount();
   }
 
@@ -156,6 +158,14 @@
     } else {
       url.searchParams.set('country', filter.value);
     }
+    window.history.replaceState({}, '', url);
+    applyFilter();
+  });
+
+  document.getElementById('calendar-country-reset').addEventListener('click', function() {
+    filter.value = 'all';
+    var url = new URL(window.location);
+    url.searchParams.delete('country');
     window.history.replaceState({}, '', url);
     applyFilter();
   });
