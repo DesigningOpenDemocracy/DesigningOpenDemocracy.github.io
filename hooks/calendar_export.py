@@ -274,7 +274,7 @@ def on_pre_build(config):
     if frontmatter is None:
         return
     today = date.today()
-    events = _load_manual_events(today) + _load_synced_events(today) + _load_blog_events(today)
+    events = _load_manual_events(today) + _load_synced_events(today)
     events.sort(key=lambda e: e["date"])
 
     _events.clear()
