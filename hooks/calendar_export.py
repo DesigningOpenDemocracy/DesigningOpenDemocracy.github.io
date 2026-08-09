@@ -144,6 +144,10 @@ def _load_manual_events(today):
                     "notable": bool(entry.get("notable")),
                     "logo": _org_logo(slug),
                     "country": m.get("country"),
+                    "type": entry.get("type"),
+                    "location": entry.get("location"),
+                    "time": entry.get("time"),
+                    "end_time": entry.get("end_time"),
                 }
                 _maybe_add_translation(evt, evt["title"], evt["org_title"])
                 out.append(evt)

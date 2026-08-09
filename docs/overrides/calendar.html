@@ -48,6 +48,7 @@
     </span>
     <span class="calendar-event-body">
       {%- if e.notable %}<span class="calendar-event-badge">★ Major event</span>{% endif %}
+      {%- if e.type %}<span class="calendar-event-type">{{ e.type }}</span>{% endif %}
       {%- if e.title_en -%}
         <span class="calendar-event-title-en">
           {%- if e.url and e.source == 'blog' %}<a href="{{ e.url }}">{{ e.title_en }}</a>
@@ -66,6 +67,7 @@
       {%- endif %}
       {%- if e.org_slug %} — <a href="/organisations/{{ e.org_slug }}/">{{ e.org_title }}</a>
       {%- elif e.org_title %} — {{ e.org_title }}{% endif %}
+      {%- if e.location %}<span class="calendar-event-location">{{ e.location }}</span>{% endif %}
       {%- if e.country %}<span class="calendar-event-country">{{ e.country | country_flag }} {{ e.country | country_name }}</span>{% endif %}
       <span class="activity-method-chip method-{{ e.source }}">{{ e.source }}</span>
       {%- if e.url and e.url.startswith('http') %}

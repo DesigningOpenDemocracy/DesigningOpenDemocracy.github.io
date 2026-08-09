@@ -1325,6 +1325,26 @@
   font-size: 0.82em;
   opacity: 0.65;
 }
+/* Event type label */
+.calendar-event-type {
+  display: inline-block;
+  font-size: 0.75em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--md-default-fg-color--light);
+  margin-right: 0.4em;
+  padding-right: 0.5em;
+  border-right: 1px solid var(--md-default-fg-color--lightest);
+}
+.calendar-event-location {
+  font-size: 0.85em;
+  opacity: 0.7;
+  margin-left: 0.3em;
+}
+.calendar-event-location::before {
+  content: "· ";
+}
 /* Country label on each event */
 .calendar-event-country {
   font-size: 0.78em;
