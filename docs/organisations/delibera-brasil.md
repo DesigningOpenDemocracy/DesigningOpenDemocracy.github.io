@@ -36,6 +36,12 @@ events:
   notable: false
   title: Assembleias Cidadãs de Moçambique — climate resilience assemblies launched
     in Mozambique
+activity:
+  dod:
+    date: 2026-08-09
+    note: "Confirmed live and active — 2025 project updates on climate assemblies in Pará/Mozambique and Osasco minipublic"
+    checked: 2026-08-09
+last_checked: "2026-08-09"
 ---
 
 Delibera Brasil designs and facilitates citizens' assemblies and minipublics — randomly selected groups of ordinary citizens who undergo an intensive learning process with experts, deliberate together, and produce policy recommendations. The method treats democracy not as a spectator sport but as something citizens do: given time, balanced information, and a structured process, laypeople reach substantive, considered conclusions on hard policy questions.

@@ -50,6 +50,11 @@ events:
   type: conference
   url: https://www.peoplepowered.org/events
 last_checked: '2026-08-09'
+location:
+  latitude: 40.6782
+  longitude: -73.9442
+  name: Brooklyn, New York, USA
+  precision: city
 logo: /assets/org-logos/people-powered.webp
 status: active
 summary: A global hub for participatory democracy — connecting government practitioners,

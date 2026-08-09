@@ -35,6 +35,12 @@ events:
   notable: false
   title: Launches Civil Society Joint Action for Strengthening Accountability and
     Public Interest in AI
+activity:
+  dod:
+    date: 2026-08-09
+    note: "Confirmed live (HTTP 200), site current"
+    checked: 2026-08-09
+last_checked: "2026-08-09"
 ---
 
 People's Solidarity for Participatory Democracy (PSPD, 참여연대) was founded in 1994 and has grown into one of South Korea's most influential civil society institutions, with approximately 13,000 members and UN ECOSOC consultative status. The organisation describes its mission as monitoring power (legislative, judicial, executive), proposing alternatives, and organising participation and solidarity — treating watchdog, think-tank, and movement-building functions as interdependent rather than separate activities.

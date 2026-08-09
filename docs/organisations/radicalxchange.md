@@ -6,6 +6,10 @@ activity:
     note: Confirmed active via own website and an upcoming Melbourne chapter launch
       event (27 Aug 2026).
     url: https://www.radicalxchange.org/
+  dod:
+    date: 2026-08-09
+    note: "Confirmed live (HTTP 200), site current"
+    checked: 2026-08-09
 concepts:
 - collective-intelligence
 - participatory-budgeting
@@ -53,6 +57,7 @@ summary: A US-founded international nonprofit and movement advancing 'Plurality'
 title: RadicalxChange Foundation
 type: civic tech
 website: https://www.radicalxchange.org
+last_checked: "2026-08-09"
 ---
 
 RadicalxChange Foundation is an international nonprofit and movement, founded by economist [E. Glen Weyl](https://glenweyl.com/) in 2018 following public discussion of his book *Radical Markets: Uprooting Capitalism and Democracy for a Just Society* (with Eric Posner). It grew from roughly fifty volunteers into a foundation that convened its first major conference in Detroit in March 2019.[^glenweyl][^propublica]
