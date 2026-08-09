@@ -23,6 +23,7 @@
 <ul class="calendar-event-list">
   {%- for e in month_events %}
   <li class="calendar-event{% if e.notable %} calendar-event--notable{% endif %}">
+    {%- if e.logo %}<img class="calendar-event-logo" src="{{ e.logo }}" alt="{{ e.org_title }} logo" loading="lazy">{% endif %}
     <span class="calendar-event-date">
       {%- if e.end_date and e.end_date != e.date -%}
         {%- if e.date.strftime('%b %Y') == e.end_date.strftime('%b %Y') -%}

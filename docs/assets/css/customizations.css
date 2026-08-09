@@ -1252,10 +1252,19 @@
 }
 .calendar-event {
   display: flex;
+  flex-wrap: wrap;
   align-items: baseline;
-  gap: 0.75em;
-  padding: 0.35em 0;
+  gap: 0.3em 0.6em;
+  padding: 0.45em 0;
   border-bottom: 1px solid var(--md-default-fg-color--lightest);
+}
+.calendar-event-logo {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  flex-shrink: 0;
+  margin-right: 0.15em;
+  vertical-align: middle;
 }
 .calendar-event-date {
   flex: 0 0 auto;

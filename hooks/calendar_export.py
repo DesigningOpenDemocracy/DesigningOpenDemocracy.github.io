@@ -83,6 +83,17 @@ def _maybe_add_translation(event_dict, title, org_title):
         event_dict["title_en"] = _eng_title(title, org_title)
     return event_dict
 
+
+def _org_logo(slug):
+    """Return logo path for an org slug, or None if no logo in frontmatter."""
+    path = os.path.join(ORGS_DIR, f"{slug}.md")
+    if not os.path.exists(path):
+        return None
+    try:
+        return frontmatter.load(path).metadata.get("logo")
+    except Exception:
+        return None
+
 _events: list = []
 
 
@@ -120,6 +131,7 @@ def _load_manual_events(today):
                     "org_title": m.get("title", slug),
                     "source": "manual",
                     "notable": bool(entry.get("notable")),
+                    "logo": _org_logo(slug),
                 }
                 _maybe_add_translation(evt, evt["title"], evt["org_title"])
                 out.append(evt)
@@ -158,6 +170,7 @@ def _load_synced_events(today):
                     "org_title": titles.get(slug, slug),
                     "source": "ical",
                     "notable": False,
+                    "logo": _org_logo(slug),
                 }
                 _maybe_add_translation(evt, evt["title"], evt["org_title"])
                 out.append(evt)
@@ -196,6 +209,7 @@ def _load_blog_events(today):
             "org_title": DOD_TITLE,
             "source": "blog",
             "notable": bool(m.get("event_notable")),
+            "logo": "/assets/dodlogo_transparent.png",
         })
     return out
 
