@@ -5,6 +5,7 @@ status: active
 country: BR
 website: https://www.institutoupdate.org.br
 logo: /assets/org-logos/instituto-update.svg
+logo_bg: dark
 contact:
   email: contato@institutoupdate.org.br
   source: https://www.institutoupdate.org.br

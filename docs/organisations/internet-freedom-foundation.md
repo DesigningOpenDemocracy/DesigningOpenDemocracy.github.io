@@ -5,6 +5,7 @@ status: active
 country: IN
 website: https://internetfreedom.in
 logo: /assets/org-logos/internet-freedom-foundation.svg
+logo_bg: dark
 contact:
   email: media@internetfreedom.in
   source: https://internetfreedom.in/contact

@@ -5,6 +5,7 @@ status: active
 country: NZ
 website: https://www.transparency.org.nz
 logo: /assets/org-logos/tinz.svg
+logo_bg: dark
 contact:
   form: https://www.transparency.org.nz/contact
   source: https://www.transparency.org.nz

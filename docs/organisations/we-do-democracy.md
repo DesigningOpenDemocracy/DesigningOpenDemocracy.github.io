@@ -5,6 +5,7 @@ status: active
 country: DK
 website: https://www.wedodemocracy.dk
 logo: /assets/org-logos/we-do-democracy.png
+logo_bg: dark
 contact:
   form: https://www.wedodemocracy.dk/kontakt
   source: https://www.wedodemocracy.dk
