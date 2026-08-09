@@ -1,4 +1,37 @@
-# Democracy Landscape geographic coverage gap — flagged, not yet actioned
+# Democracy Landscape geographic coverage gap — actioned 2026-08-09
+
+## 2026-08-09 action: 33 new org pages added
+
+The research pass logged below was actioned same day. 33 organisations across all five
+gap regions were researched, verified, and added to the Democracy Landscape. Websites
+confirmed active for all entries.
+
+| Region | New orgs added | Countries now represented |
+|---|---|---|
+| Latin America | 10 | BR (4), CL (3), CO (3) |
+| Africa | 5 | SN (2), KE (1), ZA (1), NG (1) — pan-African scope |
+| Continental Europe | 8 | IT (1), DK (1), NO (1), PL (1), CH (1), FI (1), SE (1), BE (1) |
+| East/Southeast Asia | 5 | JP (2), KR (1), ID (1), US (1 global) |
+| New Zealand | 5 | NZ (5) |
+
+Full list of added pages: delibera-brasil, ciudadania-inteligente, fide, we-do-democracy,
+team-mirai, fundacja-stocznia, labsus, wecollect, sitra, africtivistes, socentral, pspd,
+code-for-japan, ctin, movilizatorio, make-it-16, tinz, perludem, digidem-lab, open-knowledge-brasil,
+instituto-update, its-rio, espacio-publico, congreso-visible, transparencia-por-colombia,
+governance-hub-africa, goree-institute, civic-hive, helen-clark-foundation, mcguinness-institute,
+nzccl, foro-nacional-por-colombia, people-powered.
+
+Total org pages: 156 (up from ~120), 225 knowledge-graph nodes (up from ~190).
+Build passes, no broken internal links.
+
+Remaining known gaps not yet filled:
+- Indonesia civic tech (KawalPemilu — project not org, needs further vetting)
+- Seoul participatory budgeting (government programme, not independent org)
+- Portugal, Netherlands (no strong independent candidate orgs surfaced)
+- Brazil participatory budgeting legacy org (Rede Nossa São Paulo — site unreachable during research)
+- African country-level orgs beyond the pan-African networks added
+
+---
 
 ## What was asked
 

@@ -1,0 +1,38 @@
+---
+title: Civic Hive
+type: ngo
+status: active
+country: NG
+website: https://civichive.org
+logo: /assets/org-logos/civic-hive.png
+contact:
+  form: https://civichive.org/contact
+  source: https://civichive.org
+  checked: 2026-08-09
+summary: "A Lagos-based civic-tech fellowship and innovation hub — training civic-tech practitioners, launching platforms for election transparency and civic participation, and running the West Africa CivicTech Conference."
+concepts:
+  - democracy-tools
+  - e-government
+  - radical-transparency
+location:
+  latitude: 6.5244
+  longitude: 3.3792
+  name: Lagos, Nigeria
+  precision: city
+---
+
+Civic Hive is a Lagos-based civic-tech innovation hub that runs a fellowship programme training civic-tech practitioners — 36 fellows have launched 26 organisations through the programme — alongside building platforms for electoral transparency and citizen participation. Its portfolio includes the Nigeria Election Portal, a Live Results Map, and the West Africa CivicTech Conference, a convening space for the region's civic-tech community.
+
+The organisation sits at the intersection of training, movement-building, and tool-building: it does not just develop civic-tech tools but deliberately grows the community of people who can build, adapt, and sustain them. This pipeline function — from fellowship to organisation to ecosystem — makes it infrastructural in a different way from an organisation that only ships software. Blog posts as of August 2026 confirm active operations.
+
+Civic Hive is one of several organisations in the Democracy Landscape operating in Nigeria — alongside CDD West Africa and BudgIT — and represents the civic-tech training-and-incubation model within that ecosystem, complementing the research (CDD) and transparency-tool (BudgIT) organisations already present.
+
+## Links
+
+- Website: [civichive.org](https://civichive.org)
+
+## See also
+
+- [Democracy Tools](../concepts/democracy-tools.md)
+- [E-Government](../concepts/e-government.md)
+- [Radical Transparency](../concepts/radical-transparency.md)

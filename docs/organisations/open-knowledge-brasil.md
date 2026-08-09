@@ -1,0 +1,39 @@
+---
+title: Open Knowledge Brasil (OKBR)
+type: ngo
+status: active
+country: BR
+website: https://ok.org.br
+logo: /assets/org-logos/open-knowledge-brasil.png
+contact:
+  form: https://ok.org.br/contato
+  source: https://ok.org.br
+  checked: 2026-08-09
+summary: "A Brazilian organisation promoting open data, public transparency, civic technology, and open knowledge — flagship projects include Querido Diário (crowdsourcing municipal gazettes), the Open Data Index, Parlametria (Congress tracking), and Perfil Político (candidate profiles)."
+concepts:
+  - democracy-tools
+  - radical-transparency
+  - e-government
+location:
+  latitude: -23.5505
+  longitude: -46.6333
+  name: São Paulo, Brazil
+  precision: city
+---
+
+Open Knowledge Brasil (OKBR) is the Brazilian chapter of the Open Knowledge network, operating as an independent organisation that promotes transparency, open data, and civic technology. Its work spans advocacy and research, civic innovation (using automation and AI with public data), data literacy (the Escola de Dados programme), and partnerships with government and civil society.
+
+Flagship projects give a sense of the scale: Querido Diário, a crowdsourcing platform to digitise and open the official gazettes of Brazil's 5,570 municipalities — the kind of unglamorous data infrastructure that makes all subsequent transparency work possible. Parlametria tracks and translates the massive volume of congressional activity into accessible information for civil society. Perfil Político lets citizens compare election candidates' histories before voting. The Open Data Index (Índice de Dados Abertos) rates government agencies on data openness against international standards. Operação Serenata de Amor, an early and influential project, used AI to audit public spending — one of the first high-profile applications of machine learning to government accountability globally.
+
+OKBR is not a deliberative democracy organisation in the citizens'-assembly sense. It works one layer down: building the data infrastructure without which citizens cannot hold power to account, and governments can avoid being held to account. In a country of continental scale with complex multi-level governance, that infrastructure layer is a precondition for any meaningful participatory governance.
+
+## Links
+
+- Website: [ok.org.br](https://ok.org.br)
+
+## See also
+
+- [Democracy Tools](../concepts/democracy-tools.md)
+- [Radical Transparency](../concepts/radical-transparency.md)
+- [E-Government](../concepts/e-government.md)
+- [Delibera Brasil](delibera-brasil.md)

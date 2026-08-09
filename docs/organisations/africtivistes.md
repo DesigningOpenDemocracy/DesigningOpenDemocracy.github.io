@@ -1,0 +1,39 @@
+---
+title: AfricTivistes
+type: network
+status: active
+country: SN
+website: https://www.africtivistes.com
+logo: /assets/org-logos/africtivistes.svg
+contact:
+  email: info@africtivistes.org
+  phone: "+221 33 837 51 24"
+  source: https://www.africtivistes.com
+  checked: 2026-08-09
+summary: "A pan-African civil society network founded in 2015 in Dakar — mobilising bloggers, cyber-activists and changemakers across 45 African countries to strengthen democracy, governance, and civic participation through digital tools."
+concepts:
+  - democracy-tools
+  - democracy
+  - e-government
+location:
+  latitude: 14.7167
+  longitude: -17.4677
+  name: Dakar, Senegal
+  precision: city
+---
+
+AfricTivistes is a pan-African network of bloggers, cyber-activists, and civic-tech practitioners working across 45 countries. Founded in 2015 and headquartered in Dakar, its mission is to use digital tools and new technologies to strengthen democracy, promote good governance, and support sustainable development on the continent.
+
+Programmatically, AfricTivistes operates across five axes: technological innovation and citizen participation (CitizenLabs, open government labs), elections and democratic governance (Election Civic Tech Fund, election monitoring platforms, a MOOC on democracy and elections), pan-African network building (summits, youth mapping, civic engagement tours), media and information resilience (countering disinformation, cybersecurity training), and research and documentation (policy analysis, an Observatory of Democracy). It has trained over 12,000 beneficiaries, supported 30+ civic-tech initiatives, and regularly issues public statements on democratic crises and human rights situations across member states.
+
+The organisation also runs the Charter Project Africa in partnership with the EU and other organisations, working to support AU member states in implementing the African Charter on Democracy, Elections and Governance.
+
+## Links
+
+- Website: [africtivistes.com](https://www.africtivistes.com)
+
+## See also
+
+- [Democracy Tools](../concepts/democracy-tools.md)
+- [Democracy](../concepts/democracy.md)
+- [E-Government](../concepts/e-government.md)

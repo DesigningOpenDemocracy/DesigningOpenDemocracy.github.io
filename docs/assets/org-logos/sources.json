@@ -11,7 +11,7 @@
     "note": "site asset, auto-detected img-logo",
     "path": "a-nous-la-democratie.png",
     "source": "https://anouslademocratie.fr/wp-content/uploads/2017/09/cropped-a-nous-la-democratie.png",
-    "title": "À Nous La Démocratie!"
+    "title": "\u00c0 Nous La D\u00e9mocratie!"
   },
   "accountability-round-table": {
     "license": "Fair use",
@@ -27,6 +27,13 @@
     "source": "https://adrindia.org/sites/default/files/logo-adr-resized_0.png",
     "title": "Association for Democratic Reforms (ADR)"
   },
+  "africtivistes": {
+    "license": "Fair use",
+    "note": "site asset, auto-detected img-logo",
+    "path": "africtivistes.svg",
+    "source": "https://www.africtivistes.com/wp-uploads/2026/06/logo.svg",
+    "title": "AfricTivistes"
+  },
   "afrobarometer": {
     "license": "Fair use",
     "note": "site asset, auto-detected apple-touch-icon",
@@ -39,14 +46,14 @@
     "note": "site asset, auto-detected og-image",
     "path": "aman-palestine.png",
     "source": "https://www.aman-palestine.org/assets/images/aman-logo1.png",
-    "title": "AMAN – Coalition for Accountability and Integrity"
+    "title": "AMAN \u2013 Coalition for Accountability and Integrity"
   },
   "australia-institute-democracy": {
     "license": "Fair use",
     "note": "site asset, auto-detected apple-touch-icon",
     "path": "australia-institute-democracy.png",
     "source": "https://australiainstitute.org.au/wp-content/themes/tai-theme/apple-touch-icon-precomposed.png",
-    "title": "The Australia Institute — Democracy & Accountability Program"
+    "title": "The Australia Institute \u2014 Democracy & Accountability Program"
   },
   "australian-democracy-network": {
     "license": "Fair use",
@@ -146,6 +153,20 @@
     "source": "https://citizens.is/assets/apple-touch-icon.png",
     "title": "Citizens Foundation"
   },
+  "ciudadania-inteligente": {
+    "license": "Fair use",
+    "note": "site asset, auto-detected svg-icon",
+    "path": "ciudadania-inteligente.svg",
+    "source": "https://www.ciudadaniai.org/img/favicon.svg",
+    "title": "Ciudadan\u00eda Inteligente"
+  },
+  "civic-hive": {
+    "license": "Fair use",
+    "note": "site asset, auto-detected apple-touch-icon",
+    "path": "civic-hive.png",
+    "source": "https://civichive.org/storage/2022/02/cropped-Favicon-180x180.png",
+    "title": "Civic Hive"
+  },
   "civic-tech-field-guide": {
     "license": "Fair use",
     "note": "auto-detected",
@@ -167,6 +188,13 @@
     "source": "https://www.codeforaustralia.org/icons/icon-512x512.png?v=765f7f7476587ee6cc4587183a27148b",
     "title": "Code for Australia"
   },
+  "code-for-japan": {
+    "license": "Fair use",
+    "note": "site asset, auto-detected img-logo",
+    "path": "code-for-japan.svg",
+    "source": "https://www.code4japan.org/_next/static/media/codeforjapan_logo.6ccc2171.svg",
+    "title": "Code for Japan"
+  },
   "community-independents-project": {
     "license": "Fair use",
     "note": "site asset, auto-detected og-image",
@@ -180,6 +208,13 @@
     "path": "conaie.ico",
     "source": "https://conaie.org",
     "title": "CONAIE (Confederation of Indigenous Nationalities of Ecuador)"
+  },
+  "congreso-visible": {
+    "license": "Fair use",
+    "note": "site asset, auto-detected img-logo",
+    "path": "congreso-visible.svg",
+    "source": "https://congresovisible.uniandes.edu.co/img/congreso-logo-footer.svg",
+    "title": "Congreso Visible"
   },
   "constitutional-clarion": {
     "license": "Fair use",
@@ -216,6 +251,13 @@
     "source": "https://subsites.chinadaily.com.cn/cppcc/att/3865.files/i/logo.png",
     "title": "Chinese People's Political Consultative Conference (CPPCC)"
   },
+  "ctin": {
+    "license": "Fair use",
+    "note": "site asset, auto-detected img-logo",
+    "path": "ctin.png",
+    "source": "https://civictech.africa/wp-content/uploads/2021/12/CTIN-Landscape-Logo-20211210-123955-164x67.png",
+    "title": "Civic Tech Innovation Network (CTIN)"
+  },
   "darkenu": {
     "license": "Fair use",
     "note": null,
@@ -229,6 +271,13 @@
     "path": "decidim.svg",
     "source": "https://commons.wikimedia.org/wiki/File:Decidim-logo.svg",
     "title": "Decidim"
+  },
+  "delibera-brasil": {
+    "license": "Fair use",
+    "note": "site asset, auto-detected apple-touch-icon",
+    "path": "delibera-brasil.png",
+    "source": "https://deliberabrasil.org/wp-content/uploads/2020/05/cropped-menu-180x180.png",
+    "title": "Delibera Brasil"
   },
   "democracy-club": {
     "license": "Fair use",
@@ -305,7 +354,7 @@
     "note": "site asset, auto-detected apple-touch-icon",
     "path": "democratie-ouverte.jpg",
     "source": "https://cdn.prod.website-files.com/631702cc8aece668e2622c8a/64272fa830147f736cbfb3a0_DO-logo-couleur-DO%20(2).jpg",
-    "title": "Démocratie Ouverte"
+    "title": "D\u00e9mocratie Ouverte"
   },
   "designing-open-democracy": {
     "license": "Fair use",
@@ -320,6 +369,13 @@
     "path": "diem25.png",
     "source": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=711416467840396",
     "title": "DiEM25"
+  },
+  "digidem-lab": {
+    "license": "Fair use",
+    "note": "site asset, auto-detected img-logo",
+    "path": "digidem-lab.png",
+    "source": "https://digidemlab.org/wp-content/uploads/2025/05/digidemlab-logo-XL.png",
+    "title": "Digidem Lab"
   },
   "earthworker-cooperative": {
     "license": "Fair use",
@@ -342,6 +398,13 @@
     "source": "https://electoral-reform.org.uk/wp-content/uploads/2017/06/cropped-favicon-200x200.png",
     "title": "Electoral Reform Society"
   },
+  "espacio-publico": {
+    "license": "Fair use",
+    "note": "site asset, auto-detected img-logo",
+    "path": "espacio-publico.png",
+    "source": "https://www.espaciopublico.cl/wp-content/uploads/2021/04/LOGO-EP_color.png",
+    "title": "Espacio P\u00fablico"
+  },
   "ethelo": {
     "license": "Fair use",
     "note": "site asset, auto-detected apple-touch-icon",
@@ -363,6 +426,13 @@
     "source": "https://fbk.info/fbk_sharing_en.webp",
     "title": "Anti-Corruption Foundation (FBK)"
   },
+  "fide": {
+    "license": "Fair use",
+    "note": "site asset, auto-detected og-image",
+    "path": "fide.webp",
+    "source": "http://static1.squarespace.com/static/6881f170e22de75639597035/t/692d8822704a776c868f1604/1764591650146/Social+Icon.png?format=1500w",
+    "title": "FIDE \u2014 Federation for Innovation in Democracy"
+  },
   "flacso-cuba": {
     "license": "Fair use",
     "note": null,
@@ -377,12 +447,26 @@
     "source": "https://www.designingopendemocracy.com/organisations/flux-party/",
     "title": "Flux Party"
   },
+  "foro-nacional-por-colombia": {
+    "license": "Fair use",
+    "note": "site asset, navbar logo",
+    "path": "foro-nacional-por-colombia.svg",
+    "source": "https://foro.org.co/wp-content/uploads/2025/10/logo_fnc.svg",
+    "title": "Foro Nacional por Colombia"
+  },
   "fundacion-solon": {
     "license": "Fair use",
     "note": "site asset, auto-detected img-logo",
     "path": "fundacion-solon.png",
     "source": "https://fundacionsolon.org/wp-content/uploads/2026/07/cropped-fundacion-solon-azul.png",
-    "title": "Fundación Solón"
+    "title": "Fundaci\u00f3n Sol\u00f3n"
+  },
+  "fundacja-stocznia": {
+    "license": "Fair use",
+    "note": "site asset, auto-detected apple-touch-icon",
+    "path": "fundacja-stocznia.png",
+    "source": "https://stocznia.org.pl/fav/apple-touch-icon.png",
+    "title": "Fundacja Stocznia"
   },
   "g0v": {
     "license": "Fair use",
@@ -412,6 +496,20 @@
     "source": "https://web.archive.org/web/*/https://www.golos.org/",
     "title": "Golos"
   },
+  "goree-institute": {
+    "license": "Fair use",
+    "note": "site asset, auto-detected img-logo",
+    "path": "goree-institute.png",
+    "source": "https://goreeinstitut.org/wp-content/uploads/2024/12/Gorin30ans.png",
+    "title": "Gor\u00e9e Institute"
+  },
+  "governance-hub-africa": {
+    "license": "Fair use",
+    "note": "site asset, auto-detected apple-touch-icon",
+    "path": "governance-hub-africa.png",
+    "source": "https://governancehubafrica.org/apple-touch-icon.png?v=2",
+    "title": "Governance Hub Africa"
+  },
   "grattan-institute": {
     "license": "Fair use",
     "note": "site asset, auto-detected apple-touch-icon",
@@ -425,6 +523,13 @@
     "path": "healthy-democracy.svg",
     "source": "https://healthydemocracy.org/wp-content/uploads/logo-200.svg",
     "title": "Healthy Democracy"
+  },
+  "helen-clark-foundation": {
+    "license": "Fair use",
+    "note": "site asset, auto-detected apple-touch-icon",
+    "path": "helen-clark-foundation.png",
+    "source": "https://helenclark.foundation/favicons/apple-touch-icon.png",
+    "title": "Helen Clark Foundation"
   },
   "hkdc": {
     "license": "Fair use",
@@ -447,6 +552,13 @@
     "source": "https://chinademocrats.org/favicon.ico",
     "title": "Institute for China's Democratic Transition (ICDT)"
   },
+  "instituto-update": {
+    "license": "Fair use",
+    "note": "site asset, auto-detected img-logo",
+    "path": "instituto-update.svg",
+    "source": "https://www.institutoupdate.org.br/wp-content/uploads/2024/10/logo-iu-blanco.svg",
+    "title": "Instituto Update"
+  },
   "international-idea": {
     "license": "Fair use",
     "note": "site favicon, auto-detected",
@@ -467,6 +579,13 @@
     "path": "israel-democracy-institute.png",
     "source": "https://en.idi.org.il/images/logo-print.png",
     "title": "Israel Democracy Institute (IDI)"
+  },
+  "its-rio": {
+    "license": "Fair use",
+    "note": "site asset, auto-detected img-logo",
+    "path": "its-rio.svg",
+    "source": "https://itsrio.org/wp-content/themes/its-rio/assets/images/logo-home.svg",
+    "title": "ITS Rio"
   },
   "janaagraha": {
     "license": "Fair use",
@@ -495,6 +614,13 @@
     "path": "kongreya-star.png",
     "source": "https://kongra-star.org/ar/wp-content/uploads/2020/05/Kongra-Star01.png",
     "title": "Kongra Star (Women's Congress)"
+  },
+  "labsus": {
+    "license": "Fair use",
+    "note": "site asset, auto-detected apple-touch-icon",
+    "path": "labsus.png",
+    "source": "https://www.labsus.org/wp-content/uploads/2023/03/cropped-favicon-new-1-180x180.png",
+    "title": "Labsus \u2014 Laboratorio per la Sussidiariet\u00e0"
   },
   "lamestream": {
     "license": "Fair use",
@@ -552,12 +678,26 @@
     "source": "https://www.luminategroup.com/images/fav/apple-touch-icon.png",
     "title": "Luminate"
   },
+  "make-it-16": {
+    "license": "Fair use",
+    "note": "site asset, auto-detected img-logo",
+    "path": "make-it-16.png",
+    "source": "https://static.wixstatic.com/media/a1217e_53137cfa844d42cc9a2064cb6f731470~mv2.png/v1/fill/w_113,h_52,al_c,q_95,usm_0.66_1.00_0.01,enc_avif,quality_auto/LogoOrange%20(2).png",
+    "title": "Make It 16"
+  },
   "mass-lbp": {
     "license": "Fair use",
     "note": "site asset, auto-detected og-image",
     "path": "mass-lbp.webp",
     "source": "http://static1.squarespace.com/static/6005ceb747a6a51d636af58d/t/65a2dab9ac1b343be07208bc/1705171641767/mass2blue.png?format=1500w",
     "title": "MASS LBP"
+  },
+  "mcguinness-institute": {
+    "license": "Fair use",
+    "note": "site asset, auto-detected img-logo",
+    "path": "mcguinness-institute.png",
+    "source": "https://www.mcguinnessinstitute.org/wp-content/uploads/2020/01/20180319-MI-logo3.png",
+    "title": "McGuinness Institute"
   },
   "memo98": {
     "license": "Fair use",
@@ -593,6 +733,13 @@
     "path": "mosaiclab.webp",
     "source": "https://images.squarespace-cdn.com/content/v1/57688da046c3c4f6756fd256/4f0e775b-4146-4bee-b18f-a7a26a4b133b/MosaicLab-logo-2017-blue-nooutline.png?format=1500w",
     "title": "MosaicLab"
+  },
+  "movilizatorio": {
+    "license": "Fair use",
+    "note": "site asset, auto-detected apple-touch-icon",
+    "path": "movilizatorio.png",
+    "source": "https://www.movilizatorio.org/wp-content/uploads/2025/09/cropped-Foto-de-Perfil-REDES_Favicon-180x180.png",
+    "title": "Movilizatorio"
   },
   "mqg": {
     "license": "Fair use",
@@ -636,12 +783,26 @@
     "source": "https://nota.ca/wp-content/uploads/2018/05/ico.png",
     "title": "None of the Above Party (Canada)"
   },
+  "nzccl": {
+    "license": "Fair use",
+    "note": "site asset, auto-detected apple-touch-icon",
+    "path": "nzccl.ico",
+    "source": "https://nzccl.org.nz/wp-content/uploads/favicon.ico",
+    "title": "NZ Council for Civil Liberties"
+  },
   "open-australia-foundation": {
     "license": "Fair use",
     "note": "site asset, auto-detected apple-touch-icon",
     "path": "open-australia-foundation.png",
     "source": "https://i0.wp.com/oaf.org.au/wp-content/uploads/2025/10/cropped-LinkedIn-Logo-2024.png?fit=180%2C180&#038;ssl=1",
     "title": "OpenAustralia Foundation"
+  },
+  "open-knowledge-brasil": {
+    "license": "Fair use",
+    "note": "site asset, auto-detected og-image",
+    "path": "open-knowledge-brasil.png",
+    "source": "https://ok.org.br/wp-content/uploads/2023/11/011123-site-logo-150.png",
+    "title": "Open Knowledge Brasil (OKBR)"
   },
   "open-society-foundations": {
     "license": "Fair use",
@@ -678,6 +839,20 @@
     "source": "https://web.archive.org/web/*/https://www.peopledecide.org.au",
     "title": "People Decide"
   },
+  "people-powered": {
+    "license": "Fair use",
+    "note": "site asset, auto-detected og-image",
+    "path": "people-powered.webp",
+    "source": "http://static1.squarespace.com/static/5e96d0e66ae22d58e7c3219f/t/5f16f8999b27dd7e0759bc90/1646413130824/PeoplePowered_RGB_SkyBlue+white.png?format=1500w",
+    "title": "People Powered"
+  },
+  "perludem": {
+    "license": "Fair use",
+    "note": "site asset, auto-detected img-logo",
+    "path": "perludem.jpg",
+    "source": "https://perludem.or.id/wp-content/uploads/2016/10/cropped-Logo-Perludem-300-x-84.jpg.jpg",
+    "title": "Perludem"
+  },
   "pirate-party-australia": {
     "license": "CC BY-SA 3.0",
     "note": null,
@@ -713,6 +888,13 @@
     "source": "https://www.prsa.org.au/logo.jpg",
     "title": "Proportional Representation Society of Australia"
   },
+  "pspd": {
+    "license": "Fair use",
+    "note": "site asset, auto-detected apple-touch-icon",
+    "path": "pspd.svg",
+    "source": "https://pspd-www.s3.ap-northeast-2.amazonaws.com/wp-content/uploads/2022/09/27143641/pspd_favicon.svg",
+    "title": "People's Solidarity for Participatory Democracy (PSPD)"
+  },
   "radicalxchange": {
     "license": "Fair use",
     "note": "site icon",
@@ -733,6 +915,20 @@
     "path": "securevote.png",
     "source": "https://web.archive.org/web/*/https://secure.vote",
     "title": "SecureVote"
+  },
+  "sitra": {
+    "license": "Fair use",
+    "note": "site asset, auto-detected svg-icon",
+    "path": "sitra.svg",
+    "source": "https://www.sitra.fi/wp-content/themes/sitra-25/build/img/favicon/favicon.svg",
+    "title": "Sitra"
+  },
+  "socentral": {
+    "license": "Fair use",
+    "note": "site asset, auto-detected img-logo",
+    "path": "socentral.png",
+    "source": "https://cdn.prod.website-files.com/633d71ff5625100570e7e68c/66e19172d430486db950a004_SoCentral_logo.png",
+    "title": "SoCentral"
   },
   "sortition-foundation": {
     "license": "Fair use",
@@ -755,6 +951,13 @@
     "source": "https://a-ap.storyblok.com/f/3001038/163x24/c181c52d5a/mckinnon_logo.svg/m/326x48/filters:format(webp)",
     "title": "McKinnon (formerly Susan McKinnon Foundation)"
   },
+  "team-mirai": {
+    "license": "Fair use",
+    "note": "site asset, auto-detected img-logo",
+    "path": "team-mirai.png",
+    "source": "https://team-mir.ai/logo_flat.png",
+    "title": "Team Mirai"
+  },
   "tev-dem": {
     "license": "Fair use",
     "note": null,
@@ -768,6 +971,20 @@
     "path": "they-vote-for-you.ico",
     "source": "https://theyvoteforyou.org.au",
     "title": "They Vote For You"
+  },
+  "tinz": {
+    "license": "Fair use",
+    "note": "site asset, auto-detected img-logo",
+    "path": "tinz.svg",
+    "source": "https://cdn.prod.website-files.com/5f3c5d2bb263505e25811876/5f6b01380a9405467bf03b1a_TINZ-Logo-web-blue%201.svg",
+    "title": "Transparency International New Zealand (TINZ)"
+  },
+  "transparencia-por-colombia": {
+    "license": "Fair use",
+    "note": "site asset, auto-detected apple-touch-icon",
+    "path": "transparencia-por-colombia.png",
+    "source": "https://transparenciacolombia.org.co/wp-content/uploads/cropped-indice-integridad-nacional-2002-portadas-02-01-180x180.png",
+    "title": "Transparencia por Colombia"
   },
   "ushahidi": {
     "license": "Fair use",
@@ -796,6 +1013,20 @@
     "path": "vtaiwan.png",
     "source": "https://vtaiwan.tw/apple-touch-icon.png",
     "title": "vTaiwan"
+  },
+  "we-do-democracy": {
+    "license": "Fair use",
+    "note": "site asset, auto-detected img-logo",
+    "path": "we-do-democracy.png",
+    "source": "https://www.wedodemocracy.dk/wp-content/uploads/2022/06/Logo.png",
+    "title": "We Do Democracy"
+  },
+  "wecollect": {
+    "license": "Fair use",
+    "note": "site asset, auto-detected apple-touch-icon",
+    "path": "wecollect.png",
+    "source": "https://www.wecollect.ch/android/android-icon-192x192.png",
+    "title": "WeCollect"
   },
   "your-party": {
     "license": "Public domain",
