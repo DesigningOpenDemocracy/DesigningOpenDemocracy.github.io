@@ -291,6 +291,15 @@ def on_pre_build(config):
 def on_env(env, config, files):
     env.globals["calendar_events"] = _events
     env.filters["country_name"] = lambda c: _COUNTRY_NAMES.get(str(c).upper(), str(c)) if c else ""
+    env.filters["country_flag"] = lambda c: _flag_emoji(str(c)) if c else ""
+
+
+def _flag_emoji(code):
+    """Convert ISO 3166-1 alpha-2 to a flag emoji (regional indicator pair)."""
+    code = code.upper()
+    if len(code) != 2:
+        return ""
+    return chr(ord(code[0]) + 127397) + chr(ord(code[1]) + 127397)
 
 
 _COUNTRY_NAMES = {

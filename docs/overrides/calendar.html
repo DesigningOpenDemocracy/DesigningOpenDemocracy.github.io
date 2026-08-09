@@ -31,7 +31,7 @@
 <h2 class="calendar-month-heading">{{ month_key }}</h2>
 <ul class="calendar-event-list">
   {%- for e in month_events %}
-  <li class="calendar-event{% if e.notable %} calendar-event--notable{% endif %}" data-country="{{ e.country or '' }}">
+  <li class="calendar-event{% if e.notable %} calendar-event--notable{% endif %}" data-country="{{ e.country or '' }}" data-country-label="{{ e.country | country_flag }} {{ e.country | country_name }}">
     {%- if e.logo %}<img class="calendar-event-logo" src="{{ e.logo }}" alt="{{ e.org_title }} logo" loading="lazy">{% endif %}
     <span class="calendar-event-date">
       {%- if e.end_date and e.end_date != e.date -%}
@@ -66,7 +66,7 @@
       {%- endif %}
       {%- if e.org_slug %} — <a href="/organisations/{{ e.org_slug }}/">{{ e.org_title }}</a>
       {%- elif e.org_title %} — {{ e.org_title }}{% endif %}
-      {%- if e.country %}<span class="calendar-event-country">{{ e.country | country_name }}</span>{% endif %}
+      {%- if e.country %}<span class="calendar-event-country">{{ e.country | country_flag }} {{ e.country | country_name }}</span>{% endif %}
       <span class="activity-method-chip method-{{ e.source }}">{{ e.source }}</span>
       {%- if e.url and e.url.startswith('http') %}
       <a class="calendar-event-action" href="{{ e.url }}" target="_blank" rel="noopener">RSVP / Info →</a>
@@ -89,18 +89,21 @@
   var headings = document.querySelectorAll('.calendar-month-heading');
   var countEl = document.getElementById('calendar-filter-count');
 
-  // Build country set from data attributes
-  var countries = new Set();
+  // Build country set from data attributes (label = flag + name for display)
+  var countryMap = {};
   events.forEach(function (el) {
-    var c = el.getAttribute('data-country');
-    if (c) countries.add(c);
+    var code = el.getAttribute('data-country');
+    var label = el.getAttribute('data-country-label');
+    if (code && label) countryMap[code] = label;
   });
 
-  // Populate dropdown, sorted
-  Array.from(countries).sort().forEach(function (c) {
+  // Populate dropdown, sorted by label
+  Object.entries(countryMap).sort(function (a, b) {
+    return a[1].localeCompare(b[1]);
+  }).forEach(function (pair) {
     var opt = document.createElement('option');
-    opt.value = c;
-    opt.textContent = c;
+    opt.value = pair[0];
+    opt.textContent = pair[1];
     filter.appendChild(opt);
   });
 
