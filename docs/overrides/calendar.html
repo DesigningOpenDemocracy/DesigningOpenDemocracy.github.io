@@ -8,6 +8,11 @@
   <span class="calendar-subscribe-hint">Add this URL to Google Calendar, Outlook, or Apple Calendar to get every event below automatically.</span>
 </p>
 
+{% set type_icons = {
+  'conference': '🎤', 'workshop': '🛠️', 'meetup': '🤝',
+  'meeting': '📋', 'assembly': '🏛️', 'lecture': '🎓',
+  'launch': '🚀', 'rally': '📢', 'milestone': '📌'
+} %}
 {%- set grouped = {} %}
 {%- for e in calendar_events %}
   {%- set month_key = e.date.strftime('%B %Y') %}
@@ -47,8 +52,8 @@
       {%- endif -%}
     </span>
     <span class="calendar-event-body">
+      {%- if e.type %}<span class="calendar-event-type">{{ type_icons.get(e.type, '📅') }} {{ e.type }}</span>{% endif %}
       {%- if e.notable %}<span class="calendar-event-badge">★ Major event</span>{% endif %}
-      {%- if e.type %}<span class="calendar-event-type">{{ e.type }}</span>{% endif %}
       {%- if e.title_en -%}
         <span class="calendar-event-title-en">
           {%- if e.url and e.source == 'blog' %}<a href="{{ e.url }}">{{ e.title_en }}</a>
