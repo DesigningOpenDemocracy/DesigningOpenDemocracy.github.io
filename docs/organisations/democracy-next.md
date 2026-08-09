@@ -15,6 +15,7 @@ location:
   latitude: 55.6761
   longitude: 12.5683
   name: Copenhagen, Denmark
+  precision: city
 concepts:
   - citizens-assembly
   - deliberative-democracy

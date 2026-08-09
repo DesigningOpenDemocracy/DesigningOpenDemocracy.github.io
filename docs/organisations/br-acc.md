@@ -9,6 +9,7 @@ location:
   latitude: -23.5505
   longitude: -46.6333
   name: São Paulo, Brazil
+  precision: city
 concepts:
   - e-government
   - radical-transparency

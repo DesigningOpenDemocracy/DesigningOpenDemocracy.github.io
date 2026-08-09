@@ -16,6 +16,7 @@ location:
   latitude: -26.2041
   longitude: 28.0473
   name: Johannesburg, South Africa
+  precision: city
 concepts:
   - representative-democracy
   - democracy

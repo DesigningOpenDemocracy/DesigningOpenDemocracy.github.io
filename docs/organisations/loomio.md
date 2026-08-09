@@ -21,6 +21,7 @@ location:
   latitude: -41.2865
   longitude: 174.7762
   name: Wellington, New Zealand
+  precision: city
 activity:
   sitemap:
     date: 2026-06-05

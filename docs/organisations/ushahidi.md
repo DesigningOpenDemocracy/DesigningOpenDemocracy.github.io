@@ -20,6 +20,7 @@ location:
   latitude: -1.2921
   longitude: 36.8219
   name: Nairobi, Kenya
+  precision: city
 activity:
   scrape:
     date: 2024-11-12
