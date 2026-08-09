@@ -11,7 +11,7 @@
     "note": "site asset, auto-detected img-logo",
     "path": "a-nous-la-democratie.png",
     "source": "https://anouslademocratie.fr/wp-content/uploads/2017/09/cropped-a-nous-la-democratie.png",
-    "title": "À Nous La Démocratie!"
+    "title": "\u00c0 Nous La D\u00e9mocratie!"
   },
   "accountability-round-table": {
     "license": "Fair use",
@@ -46,14 +46,14 @@
     "note": "site asset, auto-detected og-image",
     "path": "aman-palestine.png",
     "source": "https://www.aman-palestine.org/assets/images/aman-logo1.png",
-    "title": "AMAN – Coalition for Accountability and Integrity"
+    "title": "AMAN \u2013 Coalition for Accountability and Integrity"
   },
   "australia-institute-democracy": {
     "license": "Fair use",
     "note": "site asset, auto-detected apple-touch-icon",
     "path": "australia-institute-democracy.png",
     "source": "https://australiainstitute.org.au/wp-content/themes/tai-theme/apple-touch-icon-precomposed.png",
-    "title": "The Australia Institute — Democracy & Accountability Program"
+    "title": "The Australia Institute \u2014 Democracy & Accountability Program"
   },
   "australian-democracy-network": {
     "license": "Fair use",
@@ -151,7 +151,7 @@
     "note": "site asset, auto-detected svg-icon",
     "path": "ciudadania-inteligente.svg",
     "source": "https://www.ciudadaniai.org/img/favicon.svg",
-    "title": "Ciudadanía Inteligente"
+    "title": "Ciudadan\u00eda Inteligente"
   },
   "civic-hive": {
     "license": "Fair use",
@@ -347,7 +347,7 @@
     "note": "site asset, auto-detected apple-touch-icon",
     "path": "democratie-ouverte.jpg",
     "source": "https://cdn.prod.website-files.com/631702cc8aece668e2622c8a/64272fa830147f736cbfb3a0_DO-logo-couleur-DO%20(2).jpg",
-    "title": "Démocratie Ouverte"
+    "title": "D\u00e9mocratie Ouverte"
   },
   "designing-open-democracy": {
     "license": "Fair use",
@@ -396,7 +396,7 @@
     "note": "site asset, auto-detected img-logo",
     "path": "espacio-publico.png",
     "source": "https://www.espaciopublico.cl/wp-content/uploads/2021/04/LOGO-EP_color.png",
-    "title": "Espacio Público"
+    "title": "Espacio P\u00fablico"
   },
   "ethelo": {
     "license": "Fair use",
@@ -424,7 +424,7 @@
     "note": "site asset, auto-detected og-image",
     "path": "fide.webp",
     "source": "http://static1.squarespace.com/static/6881f170e22de75639597035/t/692d8822704a776c868f1604/1764591650146/Social+Icon.png?format=1500w",
-    "title": "FIDE — Federation for Innovation in Democracy"
+    "title": "FIDE \u2014 Federation for Innovation in Democracy"
   },
   "flux-party": {
     "license": "Fair use",
@@ -432,6 +432,13 @@
     "path": "flux.svg",
     "source": "https://www.designingopendemocracy.com/organisations/flux-party/",
     "title": "Flux Party"
+  },
+  "folio-collective": {
+    "license": "Fair use",
+    "note": "site asset, navbar logo",
+    "path": "folio-collective.jpg",
+    "source": "https://folio.org.au/resources/Site/folio-collective-logo-alt05.jpg",
+    "title": "Folio Collective"
   },
   "foro-nacional-por-colombia": {
     "license": "Fair use",
@@ -445,7 +452,7 @@
     "note": "site asset, auto-detected img-logo",
     "path": "fundacion-solon.png",
     "source": "https://fundacionsolon.org/wp-content/uploads/2026/07/cropped-fundacion-solon-azul.png",
-    "title": "Fundación Solón"
+    "title": "Fundaci\u00f3n Sol\u00f3n"
   },
   "fundacja-stocznia": {
     "license": "Fair use",
@@ -487,7 +494,7 @@
     "note": "site asset, auto-detected img-logo",
     "path": "goree-institute.png",
     "source": "https://goreeinstitut.org/wp-content/uploads/2024/12/Gorin30ans.png",
-    "title": "Gorée Institute"
+    "title": "Gor\u00e9e Institute"
   },
   "governance-hub-africa": {
     "license": "Fair use",
@@ -606,7 +613,7 @@
     "note": "site asset, auto-detected apple-touch-icon",
     "path": "labsus.png",
     "source": "https://www.labsus.org/wp-content/uploads/2023/03/cropped-favicon-new-1-180x180.png",
-    "title": "Labsus — Laboratorio per la Sussidiarietà"
+    "title": "Labsus \u2014 Laboratorio per la Sussidiariet\u00e0"
   },
   "lamestream": {
     "license": "Fair use",
