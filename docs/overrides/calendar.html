@@ -3,6 +3,12 @@
 {{ super() }}
 <div class="md-typeset">
 
+<p class="calendar-data-links">
+  <a href="/calendar.ics">📅 iCal feed</a> ·
+  <a href="/data/events.json">📋 JSON export</a> ·
+  <a href="/data/organisations.json">🏛 Org data</a>
+</p>
+
 <p class="calendar-subscribe">
   <a href="/calendar.ics" class="hero-cta-btn hero-cta-primary">📅 Subscribe (.ics)</a>
   <span class="calendar-subscribe-hint">Add this URL to Google Calendar, Outlook, or Apple Calendar to get every event below automatically.</span>
@@ -96,6 +102,24 @@
 {% endblock %}
 {% block scripts %}
 {{ super() }}
+<script type="application/ld+json">
+[
+{%- for e in calendar_events %}
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "{{ e.title | replace('"', '\"') }}",
+    "startDate": "{{ e.date }}",
+    {%- if e.end_date %}"endDate": "{{ (e.end_date.isoformat() if e.end_date is mapping else e.end_date) }}",{% endif %}
+    {%- if e.url %}"url": "{{ e.url }}",{% endif %}
+    {%- if e.location %}"location": {"@type": "Place", "name": "{{ e.location | replace('"', '\"') }}", "address": {"@type": "PostalAddress", "addressCountry": "{{ e.country or '' }}"}},{% endif %}
+    "organizer": {"@type": "Organization", "name": "{{ e.org_title | replace('"', '\"') }}"},
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "eventStatus": "https://schema.org/EventScheduled"
+  }{% if not loop.last %},{% endif %}
+{%- endfor %}
+]
+</script>
 <script>
 (function () {
   var filter = document.getElementById('calendar-country-filter');

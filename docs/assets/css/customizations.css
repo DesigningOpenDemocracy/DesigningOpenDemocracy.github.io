@@ -1243,6 +1243,14 @@
 }
 .calendar-subscribe-hint {
   font-size: 0.85em;
+  opacity: 0.7;
+}
+.calendar-data-links {
+  font-size: 0.82em;
+  opacity: 0.6;
+  margin-bottom: 0.6em;
+}
+.calendar-data-links a {
   color: var(--md-default-fg-color--light);
 }
 .calendar-event-list {

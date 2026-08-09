@@ -156,6 +156,16 @@ def build_llms_txt(site_url):
         f"- organisations.geojson (active orgs with coordinates): {site_url}/data/organisations.geojson",
         f"- organisations.kml (colour-coded by status, for Google Earth): {site_url}/data/organisations.kml",
         f"- org-concepts.csv (edge list for network analysis): {site_url}/data/org-concepts.csv",
+        f"- events.json (upcoming events from the calendar): {site_url}/data/events.json",
+        f"- calendar.ics (subscribable iCal feed): {site_url}/calendar.ics",
+    ]
+    lines += [
+        "",
+        "## Calendar (upcoming events)",
+        "",
+        "A site-wide future events calendar is at {site_url}/calendar/ — filterable by country,".replace("{site_url}", site_url),
+        "with RSVP links and .ics subscription. The page includes Schema.org Event JSON-LD",
+        "for search crawlers. Same data available at {site_url}/data/events.json.".replace("{site_url}", site_url),
         "",
     ]
 
