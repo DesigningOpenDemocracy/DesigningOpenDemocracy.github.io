@@ -1,11 +1,5 @@
 ---
 title: Events and Conferences
-contributors:
-  - Usmaan
 ---
 
-- [Negotiating The New
-  Normal](https://negotiatingthenewnormal.com/schedules/) - FLVS2020
-- [Global Forum on Modern Direct Democracy
-  2021](https://www.democracy.community/events) (28 April 2021 in Bern,
-  Switzerland)
+This page has been superseded by the [Calendar](/calendar/), which tracks upcoming democracy events worldwide with country filters, RSVP links, and .ics subscription.

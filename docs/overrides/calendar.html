@@ -80,6 +80,7 @@
         {%- if e.logo %}<img class="calendar-event-logo" src="{{ e.logo }}" alt="{{ e.org_title }} logo" loading="lazy">{% endif %}
         {%- if e.org_slug %}<a href="/organisations/{{ e.org_slug }}/">{{ e.org_title }}</a>
         {%- elif e.org_title %}{{ e.org_title }}{% endif %}
+        {%- if e.coverage_url %}<a class="calendar-event-coverage" href="{{ e.coverage_url }}">DOD coverage →</a>{% endif %}
         {%- if e.url and e.url.startswith('http') %}
         <a class="calendar-event-action" href="{{ e.url }}" target="_blank" rel="noopener">RSVP / Info →</a>
         {%- endif %}
