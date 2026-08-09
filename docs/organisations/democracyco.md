@@ -1,37 +1,45 @@
 ---
-title: DemocracyCo
-type: practice
-status: active
-country: AU
-website: https://www.democracyco.com.au
-logo: /assets/org-logos/democracyco.svg
+activity:
+  dod:
+    checked: 2026-07-05
+    date: 2026-07-05
+    note: Site confirmed active and current, team/contact details match page
+  rss:
+    checked: 2026-08-09
+    date: 2026-05-02
+    note: 'Latest post: Housing Amplifcation'
+    url: https://www.democracyco.com.au/housing-amplifcation/?utm_source=rss&utm_medium=rss&utm_campaign=housing-amplifcation
+concepts:
+- citizens-assembly
+- deliberative-democracy
+- consensus-mapping
 contact:
-  email: emily@democracyco.com.au
-  phone: "0421 098 355 (Emma Fletcher, co-founder) / 0427 834 062 (Emily Jenke, co-founder)"
-  source: https://www.democracyco.com.au/about
   checked: 2026-08-01
-summary: "An Adelaide-based deliberative democracy facilitation practice co-founded by Emily Jenke and Emma Fletcher, designing and delivering citizens' juries and deliberative panels for government and industry across Australia and internationally."
+  email: emily@democracyco.com.au
+  phone: 0421 098 355 (Emma Fletcher, co-founder) / 0427 834 062 (Emily Jenke, co-founder)
+  source: https://www.democracyco.com.au/about
+country: AU
+events:
+- date: '2026-09-01'
+  notable: false
+  title: Building Common Ground — online training on social licence for complex public
+    policy through deliberative engagement
+  url: https://events.humanitix.com/finding-common-ground-with-democracyco-improving-the-legitimacy-of-public-policy
+last_checked: '2026-07-05'
 location:
   latitude: -34.9285
   longitude: 138.6007
   name: Adelaide, Australia
   precision: city
-concepts:
-  - citizens-assembly
-  - deliberative-democracy
-  - consensus-mapping
+logo: /assets/org-logos/democracyco.svg
 rss_feed: https://www.democracyco.com.au/feed/
-activity:
-  rss:
-    date: 2026-05-02
-    note: "Latest post: Housing Amplifcation"
-    url: "https://www.democracyco.com.au/housing-amplifcation/?utm_source=rss&utm_medium=rss&utm_campaign=housing-amplifcation"
-    checked: 2026-08-09
-  dod:
-    date: 2026-07-05
-    note: "Site confirmed active and current, team/contact details match page"
-    checked: 2026-07-05
-last_checked: "2026-07-05"
+status: active
+summary: An Adelaide-based deliberative democracy facilitation practice co-founded
+  by Emily Jenke and Emma Fletcher, designing and delivering citizens' juries and
+  deliberative panels for government and industry across Australia and internationally.
+title: DemocracyCo
+type: practice
+website: https://www.democracyco.com.au
 ---
 
 DemocracyCo is one of Australia's most established deliberative democracy practices, providing end-to-end design, facilitation, and project management for citizens' juries, panels, and assemblies. It was co-founded by Emily Jenke and Emma Fletcher — both with backgrounds in SA public service and community engagement — out of a frustration that governments were not achieving quality reform commensurate with the scale of problems faced by communities.

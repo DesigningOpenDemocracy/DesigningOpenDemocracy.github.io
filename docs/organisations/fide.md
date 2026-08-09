@@ -1,32 +1,47 @@
 ---
-title: FIDE — Federation for Innovation in Democracy
-type: network
-status: active
-country: BE
-website: https://fidemocracy.org
-logo: /assets/org-logos/fide.webp
+activity:
+  sitemap:
+    checked: 2026-08-09
+    date: 2026-08-07
+    note: Page last modified (from sitemap)
+    url: https://fidemocracy.org/sitemap.xml
+concepts:
+- citizens-assembly
+- deliberative-democracy
+- sortition
 contact:
+  checked: 2026-08-09
   email: europe@fidemocracy.org
   form: https://fidemocracy.org/contact
   source: https://fidemocracy.org
-  checked: 2026-08-09
-summary: "An independent, nonpartisan federation advancing deliberative democratic culture across Europe and North America — training practitioners, designing citizens' assemblies for governments from municipal to international level, and evaluating process quality."
-concepts:
-  - citizens-assembly
-  - deliberative-democracy
-  - sortition
+country: BE
+events:
+- date: '2026-09-14'
+  end_date: '2026-09-16'
+  notable: false
+  title: Lead Facilitator Masterclass — Copenhagen, in partnership with We Do Democracy
+  url: https://www.fidemocracy.org/training
+- date: '2026-11-18'
+  end_date: '2026-11-19'
+  notable: true
+  title: 'FIDE Forum 2026: From Novel to Normal — making deliberation a democratic
+    standard, Vienna'
+  url: https://www.fidemocracy.org/news
+last_checked: '2026-08-09'
 location:
   latitude: 50.8503
   longitude: 4.3517
   name: Brussels, Belgium
   precision: city
-activity:
-  sitemap:
-    date: 2026-08-07
-    note: "Page last modified (from sitemap)"
-    url: https://fidemocracy.org/sitemap.xml
-    checked: 2026-08-09
-last_checked: "2026-08-09"
+logo: /assets/org-logos/fide.webp
+status: active
+summary: An independent, nonpartisan federation advancing deliberative democratic
+  culture across Europe and North America — training practitioners, designing citizens'
+  assemblies for governments from municipal to international level, and evaluating
+  process quality.
+title: FIDE — Federation for Innovation in Democracy
+type: network
+website: https://fidemocracy.org
 ---
 
 FIDE — the Federation for Innovation in Democracy — is an independent network of democratic innovators working to embed deliberative processes in the machinery of governance. Its three pillars are training (capacity-building schools, masterclasses for lead facilitators), design (process architecture for governments at every level, from municipalities to international bodies), and evaluation (learning series, publications, quality standards).
