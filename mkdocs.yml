@@ -50,6 +50,7 @@ plugins:
       categories:
         - categories
         - tags
+      image: https://www.designingopendemocracy.com/assets/dodlogo_transparent.png
   - rss:
       match_path: heartbeat/posts/.*
       date_from_meta:
@@ -59,6 +60,7 @@ plugins:
         - tags
       feed_title: "Designing Open Democracy — Heartbeat"
       feed_description: "Automated maintenance sync log for the Democracy Landscape. Not the main DOD blog."
+      image: https://www.designingopendemocracy.com/assets/dodlogo_transparent.png
       feeds_filenames:
         rss_created: feed_heartbeat_rss_created.xml
         rss_updated: feed_heartbeat_rss_updated.xml
