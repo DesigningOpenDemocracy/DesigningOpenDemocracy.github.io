@@ -28,14 +28,14 @@ events:
   title: Dr Hugh Saddler Memorial Lecture 2026 — Shane Rattenbury on how the ACT turned
     climate ambition into action, National Film and Sound Archive ACT
   type: lecture
-  url: https://australiainstitute.org.au/events/
+  url: https://australiainstitute.org.au/events/dr-hugh-saddler-memorial-lecture/
 - date: '2026-09-15'
   location: Parliament of NSW, Sydney
   notable: true
   title: Climate Integrity Summit 2026 — global leaders, economists and advocates
     on Australia's fossil fuel exit, Parliament of NSW Sydney
   type: conference
-  url: https://australiainstitute.org.au/events/
+  url: https://australiainstitute.org.au/events/climate-integrity-summit/
 last_checked: '2026-07-19'
 location:
   latitude: -35.2809
