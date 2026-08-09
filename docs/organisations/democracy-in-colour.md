@@ -4,7 +4,8 @@ type: advocacy
 status: active
 country: AU
 website: https://democracyincolour.org
-logo: /assets/org-logos/democracy-in-colour.png
+logo: /assets/org-logos/democracy-in-colour-icon.png
+banner: /assets/org-logos/democracy-in-colour.png
 contact:
   email: info@democracyincolour.org
   source: https://democracyincolour.org/contact/

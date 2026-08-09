@@ -4,7 +4,8 @@ type: philanthropy
 status: active
 country: AU
 website: https://mckinnon.co
-logo: /assets/org-logos/susan-mckinnon-foundation.webp
+logo: /assets/org-logos/susan-mckinnon-foundation-icon.png
+banner: /assets/org-logos/susan-mckinnon-foundation.webp
 news_page: https://mckinnon.co/insights
 contact:
   email: info@mckinnon.co

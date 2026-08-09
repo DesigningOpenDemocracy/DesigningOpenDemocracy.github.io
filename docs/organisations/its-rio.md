@@ -4,7 +4,8 @@ type: research
 status: active
 country: BR
 website: https://itsrio.org
-logo: /assets/org-logos/its-rio.svg
+logo: /assets/org-logos/its-rio-icon.png
+banner: /assets/org-logos/its-rio.svg
 contact:
   email: contato@itsrio.org
   source: https://itsrio.org

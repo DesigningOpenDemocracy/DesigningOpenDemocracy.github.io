@@ -92,9 +92,9 @@
   },
   "capad": {
     "license": "Fair use",
-    "note": "site asset, auto-detected img-logo",
-    "path": "capad.jpg",
-    "source": "https://canberra-alliance.org.au/wp-content/uploads/2019/12/2019-Logo.jpg",
+    "note": "site favicon, auto-detected apple-touch-icon",
+    "path": "capad-icon.png",
+    "source": "https://canberra-alliance.org.au/wp-content/uploads/2023/12/cropped-CAPaD-Badge2-180x180.png",
     "title": "Canberra Alliance for Participatory Democracy (CAPaD)"
   },
   "cdd-west-africa": {
@@ -302,9 +302,9 @@
   },
   "democracy-in-colour": {
     "license": "Fair use",
-    "note": "site asset, auto-detected img-logo",
-    "path": "democracy-in-colour.png",
-    "source": "https://democracyincolour.org/wp-content/uploads/2025/09/DIC-logo-scaled.png",
+    "note": "site favicon, auto-detected apple-touch-icon",
+    "path": "democracy-in-colour-icon.png",
+    "source": "https://democracyincolour.org/wp-content/uploads/2025/09/cropped-Logo-C-180x180.png",
     "title": "Democracy in Colour"
   },
   "democracy-international": {
@@ -568,9 +568,9 @@
   },
   "its-rio": {
     "license": "Fair use",
-    "note": "site asset, auto-detected img-logo",
-    "path": "its-rio.svg",
-    "source": "https://itsrio.org/wp-content/themes/its-rio/assets/images/logo-home.svg",
+    "note": "site favicon, auto-detected apple-touch-icon",
+    "path": "its-rio-icon.png",
+    "source": "https://itsrio.org/wp-content/uploads/2017/02/cropped-itsrio_favicon-180x180.png",
     "title": "ITS Rio"
   },
   "janaagraha": {
@@ -932,9 +932,9 @@
   },
   "susan-mckinnon-foundation": {
     "license": "Fair use",
-    "note": "site asset, auto-detected img-logo",
-    "path": "susan-mckinnon-foundation.webp",
-    "source": "https://a-ap.storyblok.com/f/3001038/163x24/c181c52d5a/mckinnon_logo.svg/m/326x48/filters:format(webp)",
+    "note": "site favicon, auto-detected apple-touch-icon",
+    "path": "susan-mckinnon-foundation-icon.png",
+    "source": "https://mckinnon.co/favicon/apple-touch-icon.png",
     "title": "McKinnon (formerly Susan McKinnon Foundation)"
   },
   "team-mirai": {
