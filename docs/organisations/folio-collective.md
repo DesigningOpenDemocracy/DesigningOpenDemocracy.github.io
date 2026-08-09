@@ -41,6 +41,7 @@ location:
   name: Melbourne, Australia
   precision: city
 logo: /assets/org-logos/folio-collective.jpg
+rss_feed: https://folio.org.au/events/RSS
 status: active
 summary: A Melbourne-based, nonpartisan not-for-profit forum that runs small-group
   "Folio Conversations" — structured public dialogue between diverse citizens and
