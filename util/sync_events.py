@@ -22,7 +22,7 @@ import json
 import os
 import re
 import sys
-from datetime import date, datetime
+from datetime import date, datetime, timedelta
 
 import requests
 from requests.exceptions import RequestException
@@ -53,7 +53,11 @@ def parse_ical_date(val):
 def parse_events(text, today, horizon_days):
     """Parse VEVENTs from raw iCal text, returning future events within the horizon.
 
-    Returns a list of {"date": iso-str, "title": str, "url": str} sorted ascending.
+    Returns a list of {"date": iso-str, "end_date": iso-str or omitted, "title": str,
+    "url": str} sorted ascending. "end_date" is only included for genuine multi-day
+    spans — per RFC 5545 §3.6.1, DTEND on an all-day VEVENT is exclusive (the day
+    *after* the event ends), so a normal single-day event has DTEND = DTSTART + 1
+    day and would misreport as a 2-day span if taken literally.
     """
     # Unfold continuation lines per RFC 5545 §3.1
     text = text.replace("\r\n", "\n").replace("\r", "\n")
@@ -61,25 +65,33 @@ def parse_events(text, today, horizon_days):
 
     events = []
     in_vevent = False
-    start = summary = url = None
+    start = end = summary = url = None
 
     for line in text.split("\n"):
         if line == "BEGIN:VEVENT":
             in_vevent = True
-            start = summary = url = None
+            start = end = summary = url = None
         elif line == "END:VEVENT":
             if in_vevent and start:
                 d = parse_ical_date(start)
                 if d and d >= today and (d - today).days <= horizon_days:
-                    events.append({
+                    entry = {
                         "date": d.isoformat(),
                         "title": summary or "Untitled event",
                         "url": url or "",
-                    })
+                    }
+                    end_d = parse_ical_date(end)
+                    if end_d:
+                        inclusive_end = end_d - timedelta(days=1)
+                        if inclusive_end > d:
+                            entry["end_date"] = inclusive_end.isoformat()
+                    events.append(entry)
             in_vevent = False
         elif in_vevent:
             if line.startswith("DTSTART"):
                 start = line.split(":", 1)[-1].strip()
+            elif line.startswith("DTEND"):
+                end = line.split(":", 1)[-1].strip()
             elif line.startswith("SUMMARY:"):
                 summary = line[8:].strip()
             elif line.startswith("URL:"):

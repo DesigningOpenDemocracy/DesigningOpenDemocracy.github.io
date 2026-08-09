@@ -1263,6 +1263,32 @@
   font-weight: 600;
   color: var(--md-default-fg-color--light);
 }
+.calendar-event--notable {
+  background: rgba(255, 179, 0, 0.14);
+  border: 1px solid rgba(255, 179, 0, 0.45);
+  border-bottom: 1px solid rgba(255, 179, 0, 0.45);
+  border-radius: 6px;
+  padding: 0.7em 0.9em;
+  margin: 0.5em 0;
+  font-size: 1.2em;
+}
+.calendar-event--notable .calendar-event-date {
+  color: #ffb300;
+  font-size: 1.05em;
+}
+.calendar-event-badge {
+  display: inline-block;
+  font-size: 0.62em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #ffb300;
+  background: rgba(255, 179, 0, 0.2);
+  border-radius: 3px;
+  padding: 0.15em 0.5em;
+  margin-right: 0.5em;
+  vertical-align: middle;
+}
 
 /* Org page timeline (docs/overrides/organisation.html) */
 .org-events-timeline {

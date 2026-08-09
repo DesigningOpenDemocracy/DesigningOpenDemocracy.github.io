@@ -27,7 +27,7 @@ import glob
 import json
 import os
 import uuid
-from datetime import date, datetime
+from datetime import date, datetime, timedelta
 
 try:
     import frontmatter
@@ -77,11 +77,13 @@ def _load_manual_events(today):
             if d and d >= today:
                 out.append({
                     "date": d,
+                    "end_date": _parse_date(entry.get("end_date")),
                     "title": entry.get("title", "Untitled event"),
                     "url": entry.get("url", ""),
                     "org_slug": slug,
                     "org_title": m.get("title", slug),
                     "source": "manual",
+                    "notable": bool(entry.get("notable")),
                 })
     return out
 
@@ -111,11 +113,13 @@ def _load_synced_events(today):
             if d and d >= today:
                 out.append({
                     "date": d,
+                    "end_date": _parse_date(entry.get("end_date")),
                     "title": entry.get("title", "Untitled event"),
                     "url": entry.get("url", ""),
                     "org_slug": slug,
                     "org_title": titles.get(slug, slug),
                     "source": "ical",
+                    "notable": False,
                 })
     return out
 
@@ -145,11 +149,13 @@ def _load_blog_events(today):
         slug = _slugify(m.get("title", ""), "-")
         out.append({
             "date": event_d,
+            "end_date": _parse_date(m.get("event_end_date")),
             "title": m.get("title", "Untitled post"),
             "url": f"/blog/{post_d:%Y/%m/%d}/{slug}/",
             "org_slug": "",
             "org_title": DOD_TITLE,
             "source": "blog",
+            "notable": bool(m.get("event_notable")),
         })
     return out
 
@@ -175,6 +181,11 @@ def _write_ics(events, path):
             f"UID:{uid}@designingopendemocracy.com",
             f"DTSTAMP:{now_stamp}",
             f"DTSTART;VALUE=DATE:{dt}",
+        ]
+        if e.get("end_date"):
+            # DTEND is exclusive for all-day VEVENTs per RFC 5545 §3.6.1.
+            lines.append(f"DTEND;VALUE=DATE:{(e['end_date'] + timedelta(days=1)).strftime('%Y%m%d')}")
+        lines += [
             f"SUMMARY:{_ics_escape(e['org_title'] + ': ' + e['title'])}",
             f"CATEGORIES:{_ics_escape(e['org_title'])}",
         ]
@@ -201,7 +212,9 @@ def on_pre_build(config):
     os.makedirs(os.path.join(DOCS_DIR, "data"), exist_ok=True)
     with open(os.path.join(DOCS_DIR, "data", "events.json"), "w", encoding="utf-8") as f:
         json.dump(
-            [{**e, "date": e["date"].isoformat()} for e in events],
+            [{**e, "date": e["date"].isoformat(),
+              "end_date": e["end_date"].isoformat() if e.get("end_date") else None}
+             for e in events],
             f, ensure_ascii=False, indent=2,
         )
 

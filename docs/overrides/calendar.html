@@ -22,9 +22,22 @@
 <h2>{{ month_key }}</h2>
 <ul class="calendar-event-list">
   {%- for e in month_events %}
-  <li class="calendar-event">
-    <span class="calendar-event-date">{{ e.date.strftime('%a, %d %b') }}</span>
+  <li class="calendar-event{% if e.notable %} calendar-event--notable{% endif %}">
+    <span class="calendar-event-date">
+      {%- if e.end_date and e.end_date != e.date -%}
+        {%- if e.date.strftime('%b %Y') == e.end_date.strftime('%b %Y') -%}
+          {{ e.date.strftime('%d') }}–{{ e.end_date.strftime('%d %b') }}
+        {%- elif e.date.year == e.end_date.year -%}
+          {{ e.date.strftime('%d %b') }}–{{ e.end_date.strftime('%d %b') }}
+        {%- else -%}
+          {{ e.date.strftime('%d %b %Y') }}–{{ e.end_date.strftime('%d %b %Y') }}
+        {%- endif -%}
+      {%- else -%}
+        {{ e.date.strftime('%a, %d %b') }}
+      {%- endif -%}
+    </span>
     <span class="calendar-event-body">
+      {%- if e.notable %}<span class="calendar-event-badge">★ Major event</span>{% endif %}
       {%- if e.url and e.source == 'blog' %}<a href="{{ e.url }}">{{ e.title }}</a>
       {%- elif e.url %}<a href="{{ e.url }}" target="_blank" rel="noopener">{{ e.title }}</a>
       {%- else %}{{ e.title }}{% endif %}
