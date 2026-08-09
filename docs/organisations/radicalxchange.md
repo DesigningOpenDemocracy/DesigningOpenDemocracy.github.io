@@ -27,7 +27,8 @@ events:
   notable: true
   title: 'Plurality: The Future of Collaborative Technology and Democracy published
     (Weyl, Tang & community)'
-- coverage_url: /blog/2026/08/07/radicalxchange-is-launching-a-melbourne-chapter-heres-what-it-is/
+- country: AU
+  coverage_url: /blog/2026/08/07/radicalxchange-is-launching-a-melbourne-chapter-heres-what-it-is/
   date: '2026-08-27'
   end_time: 8pm
   location: Today, Level 8/54 Wellington St, Collingwood VIC

@@ -23,7 +23,8 @@ events:
   title: Lead Facilitator Masterclass — Copenhagen, in partnership with We Do Democracy
   type: workshop
   url: https://www.fidemocracy.org/training
-- date: '2026-11-18'
+- country: AT
+  date: '2026-11-18'
   end_date: '2026-11-19'
   location: Vienna, Austria
   notable: true

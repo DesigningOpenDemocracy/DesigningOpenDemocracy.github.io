@@ -18,7 +18,8 @@ contact:
   source: https://consuldemocracy.org/about
 country: ES
 events:
-- date: '2026-09-15'
+- country: DE
+  date: '2026-09-15'
   end_date: '2026-09-17'
   location: Munich, Germany
   notable: true

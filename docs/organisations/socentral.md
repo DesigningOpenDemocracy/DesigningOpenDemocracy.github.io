@@ -14,7 +14,8 @@ contact:
   source: https://www.socentral.no
 country: 'NO'
 events:
-- date: '2026-08-10'
+- country: 'NO'
+  date: '2026-08-10'
   end_date: '2026-08-13'
   location: Arendal, Norway
   notable: true

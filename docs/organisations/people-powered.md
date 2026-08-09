@@ -15,7 +15,8 @@ contact:
   source: https://www.peoplepowered.org
 country: US
 events:
-- date: '2026-09-21'
+- country: PL
+  date: '2026-09-21'
   end_date: '2026-09-23'
   location: Kraków, Poland
   notable: true
@@ -24,21 +25,24 @@ events:
     Kraków
   type: conference
   url: https://www.peoplepowered.org/events
-- date: '2026-09-29'
+- country: GR
+  date: '2026-09-29'
   location: Athens, Greece
   notable: true
   title: Athens Democracy Forum 2026 — 14th edition, with Kofi Annan NextGen Democracy
     Prize, organized by Democracy & Culture Foundation with New York Times
   type: conference
   url: https://www.peoplepowered.org/events
-- date: '2026-10-01'
+- country: GR
+  date: '2026-10-01'
   location: Athens, Greece
   notable: true
   title: Global Democracy Coalition (GDC) Global Forum 2026 — co-located with Athens
     Democracy Forum, hybrid
   type: conference
   url: https://www.peoplepowered.org/events
-- date: '2026-11-02'
+- country: FR
+  date: '2026-11-02'
   location: Strasbourg, France
   notable: true
   title: World Forum for Democracy 2026 (Council of Europe) — 14th edition, 'Democratic

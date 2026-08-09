@@ -29,7 +29,8 @@ contact:
   source: https://www.democracy-international.org/contact-us
 country: DE
 events:
-- date: '2026-08-26'
+- country: BG
+  date: '2026-08-26'
   end_date: '2026-08-30'
   location: Sofia/Veliko Tarnovo, Bulgaria
   notable: false
@@ -37,7 +38,8 @@ events:
     on democracy and media, Sofia/Veliko Tarnovo
   type: workshop
   url: https://www.democracy-international.org/events/2315/democracy-camp-2026-bulgaria
-- date: '2026-10-07'
+- country: BW
+  date: '2026-10-07'
   end_date: '2026-10-10'
   location: Gaborone, Botswana
   notable: true
