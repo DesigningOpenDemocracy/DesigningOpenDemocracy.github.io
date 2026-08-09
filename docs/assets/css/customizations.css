@@ -1317,6 +1317,11 @@
   gap: 0.4em;
   margin-bottom: 0.15em;
 }
+.calendar-event-country {
+  font-size: 0.8em;
+  opacity: 0.55;
+  margin-left: auto;
+}
 .calendar-event-title {
   font-weight: 500;
   line-height: 1.4;
@@ -1344,9 +1349,6 @@
 }
 .calendar-event-details .calendar-event-location {
   opacity: 0.8;
-}
-.calendar-event-details .calendar-event-country {
-  opacity: 0.65;
 }
 .calendar-event-orgline {
   display: flex;

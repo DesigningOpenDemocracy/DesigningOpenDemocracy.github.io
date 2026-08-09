@@ -49,6 +49,7 @@
       <div class="calendar-event-header">
         {%- if e.type %}<span class="calendar-event-type">{{ type_icons.get(e.type, '📅') }} {{ e.type }}</span>{% endif %}
         {%- if e.notable %}<span class="calendar-event-badge">★ Major event</span>{% endif %}
+        {%- if e.country %}<span class="calendar-event-country">{{ e.country | country_flag }} {{ e.country | country_name }}</span>{% endif %}
       </div>
 
       <div class="calendar-event-title">
@@ -70,9 +71,6 @@
         {%- endif %}
         {%- if e.location %}
         <span class="calendar-event-location">📍 {{ e.location }}</span>
-        {%- endif %}
-        {%- if e.country %}
-        <span class="calendar-event-country">{{ e.country | country_flag }} {{ e.country | country_name }}</span>
         {%- endif %}
       </div>
 
@@ -152,7 +150,14 @@
   }
 
   filter.addEventListener('change', applyFilter);
-  updateCount();
+
+  // Pre-select from ?country= query param
+  var params = new URLSearchParams(window.location.search);
+  var initial = params.get('country');
+  if (initial && countryMap[initial.toUpperCase()]) {
+    filter.value = initial.toUpperCase();
+  }
+  applyFilter();
 })();
 </script>
 {% endblock %}
