@@ -149,7 +149,16 @@
     updateCount();
   }
 
-  filter.addEventListener('change', applyFilter);
+  filter.addEventListener('change', function() {
+    var url = new URL(window.location);
+    if (filter.value === 'all') {
+      url.searchParams.delete('country');
+    } else {
+      url.searchParams.set('country', filter.value);
+    }
+    window.history.replaceState({}, '', url);
+    applyFilter();
+  });
 
   // Pre-select from ?country= query param
   var params = new URLSearchParams(window.location.search);
