@@ -16,6 +16,13 @@ concepts:
 - mixed-member-proportional-representation
 - representative-democracy
 - direct-democracy
+events:
+- date: '2026-11-12'
+  notable: true
+  title: 2026 AGM — vote on 17-motion package to rename to Australian Electoral Reform
+    Society and broaden remit beyond STV
+  type: meeting
+  url: https://www.designingopendemocracy.com/blog/2026/07/31/prsa-members-to-vote-on-rebrand-to-australian-electoral-reform-society--agm-12-november-2026/
 location:
   latitude: -35.2809
   longitude: 149.13
