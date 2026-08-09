@@ -79,6 +79,8 @@ hooks:
   - hooks/llms_txt.py
   - hooks/data_export.py
   - hooks/activity_selector.py
+  - hooks/org_events.py
+  - hooks/calendar_export.py
   - hooks/heartbeat_current.py
 
 not_in_nav: |

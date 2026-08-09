@@ -137,6 +137,22 @@
   {%- endif %}
 {%- if has_details %}</details>{% else %}</div>{% endif %}
 {%- endif %}
+{%- if page.meta.upcoming_events %}
+<h2>Upcoming events</h2>
+<ul class="org-events-timeline">
+  {%- for e in page.meta.upcoming_events %}
+  <li><span class="org-event-date">{{ e.date }}</span>{% if e.url %}<a href="{{ e.url }}" target="_blank" rel="noopener">{{ e.title }}</a>{% else %}{{ e.title }}{% endif %}</li>
+  {%- endfor %}
+</ul>
+{%- endif %}
+{%- if page.meta.history_events %}
+<h2>History</h2>
+<ul class="org-events-timeline">
+  {%- for e in page.meta.history_events %}
+  <li><span class="org-event-date">{{ e.date }}</span>{% if e.url %}<a href="{{ e.url }}" target="_blank" rel="noopener">{{ e.title }}</a>{% else %}{{ e.title }}{% endif %}</li>
+  {%- endfor %}
+</ul>
+{%- endif %}
   {{ super() }}
 {% endblock %}
 {% block scripts %}

@@ -10,4 +10,9 @@ docs/data/organisations.json
 docs/data/organisations.geojson
 docs/data/organisations.kml
 docs/data/org-concepts.csv
+docs/data/events.json
+docs/calendar.ics
 # ^ hook-generated data exports (not committed)
+# Note: docs/data/events/<slug>.json (the per-org iCal sync cache written by
+# util/sync_events.py) is NOT listed here — it IS committed, since the build
+# hook (calendar_export.py) only reads it and never fetches feeds itself.

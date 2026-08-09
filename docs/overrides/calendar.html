@@ -1,0 +1,39 @@
+{% extends "main.html" %}
+{% block content %}
+{{ super() }}
+<div class="md-typeset">
+
+<p class="calendar-subscribe">
+  <a href="/calendar.ics" class="hero-cta-btn hero-cta-primary">📅 Subscribe (.ics)</a>
+  <span class="calendar-subscribe-hint">Add this URL to Google Calendar, Outlook, or Apple Calendar to get every event below automatically.</span>
+</p>
+
+{%- set grouped = {} %}
+{%- for e in calendar_events %}
+  {%- set month_key = e.date.strftime('%B %Y') %}
+  {%- if month_key not in grouped %}{% set _ = grouped.update({month_key: []}) %}{% endif %}
+  {%- set _ = grouped[month_key].append(e) %}
+{%- endfor %}
+
+{%- if not calendar_events %}
+<p><em>No upcoming events are currently known. Orgs with an <code>ics_feed:</code> or manually curated <code>events:</code> entries will appear here once synced — see <a href="/organisations/organisations/">Democracy Landscape</a>.</em></p>
+{%- else %}
+{%- for month_key, month_events in grouped.items() %}
+<h2>{{ month_key }}</h2>
+<ul class="calendar-event-list">
+  {%- for e in month_events %}
+  <li class="calendar-event">
+    <span class="calendar-event-date">{{ e.date.strftime('%a, %d %b') }}</span>
+    <span class="calendar-event-body">
+      {%- if e.url %}<a href="{{ e.url }}" target="_blank" rel="noopener">{{ e.title }}</a>{% else %}{{ e.title }}{% endif %}
+      — <a href="/organisations/{{ e.org_slug }}/">{{ e.org_title }}</a>
+      <span class="activity-method-chip method-{{ e.source }}">{{ e.source }}</span>
+    </span>
+  </li>
+  {%- endfor %}
+</ul>
+{%- endfor %}
+{%- endif %}
+
+</div>
+{% endblock %}
