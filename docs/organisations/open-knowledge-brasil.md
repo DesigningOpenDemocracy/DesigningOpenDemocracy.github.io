@@ -9,6 +9,12 @@ contact:
   form: https://ok.org.br/contato
   source: https://ok.org.br
   checked: 2026-08-09
+activity:
+  dod:
+    date: 2026-08-09
+    note: Site live and actively publishing as of August 2026
+    checked: 2026-08-09
+last_checked: "2026-08-09"
 summary: "A Brazilian organisation promoting open data, public transparency, civic technology, and open knowledge — flagship projects include Querido Diário (crowdsourcing municipal gazettes), the Open Data Index, Parlametria (Congress tracking), and Perfil Político (candidate profiles)."
 concepts:
   - democracy-tools

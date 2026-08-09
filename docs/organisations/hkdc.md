@@ -21,10 +21,10 @@ concepts:
   - constitutional-democracy
 activity:
   sitemap:
-    date: 2026-06-06
+    date: 2026-07-15
     note: "Page last modified (from sitemap)"
     url: https://www.hkdc.us/sitemap.xml
-    checked: 2026-06-07
+    checked: 2026-08-09
   manual:
     date: 2026-02-10
     note: "website loaded. News is https://www.hkdc.us/news where latest is February 10, 2026 'Crossing a New Line: The Conviction of Anna Kwok’s Father'"

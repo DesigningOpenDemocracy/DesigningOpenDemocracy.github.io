@@ -22,10 +22,10 @@ concepts:
 rss_feed: https://www.gilt.at/feed
 activity:
   rss:
-    date: 2026-06-07
+    date: 2026-08-09
     note: "RSS feed active"
     url: https://www.gilt.at/feed
-    checked: 2026-06-07
+    checked: 2026-08-09
   dod:
     date: 2026-07-05
     note: "Site confirmed active (2024 election content still featured); Wikipedia (de) corroborates party still exists, no evidence of dissolution"

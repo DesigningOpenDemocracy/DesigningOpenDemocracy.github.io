@@ -1289,6 +1289,17 @@
   margin-right: 0.5em;
   vertical-align: middle;
 }
+/* Translated event titles — English first, original below */
+.calendar-event-title-en {
+  display: block;
+  font-weight: 500;
+}
+.calendar-event-title-orig {
+  display: block;
+  font-size: 0.82em;
+  opacity: 0.65;
+  margin-top: 0.15em;
+}
 
 /* Org page timeline (docs/overrides/organisation.html) */
 .org-events-timeline {

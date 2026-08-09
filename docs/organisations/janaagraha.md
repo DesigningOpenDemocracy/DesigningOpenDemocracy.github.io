@@ -21,10 +21,10 @@ concepts:
 rss_feed: https://www.janaagraha.org/feed
 activity:
   rss:
-    date: 2026-05-14
-    note: "Latest post: Too Many Cooks in the Urban Services Kitchen"
-    url: "https://www.janaagraha.org/too-many-cooks-in-the-urban-services-kitchen/"
-    checked: 2026-06-08
+    date: 2026-08-09
+    note: "RSS feed active"
+    url: https://www.janaagraha.org/feed
+    checked: 2026-08-09
   dod:
     date: 2026-07-16
     note: "Website loaded directly; Urban Conclave event scheduled for March 18, 2026 and site actively promoting current programs"

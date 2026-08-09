@@ -26,6 +26,9 @@ activity:
     date: 2026-06-28
     note: "Web search confirms continued activity: leadership change (Marlon Vargas elected president, July 2025) and ongoing protest/advocacy on extractivism and state repression through mid-2026."
     checked: 2026-06-28
+  rss:
+    note: "No feed found"
+    checked: 2026-08-09
 last_checked: "2026-06-28"
 ---
 

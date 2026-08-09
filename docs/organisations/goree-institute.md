@@ -6,8 +6,9 @@ country: SN
 website: https://goreeinstitut.org
 logo: /assets/org-logos/goree-institute.png
 contact:
+  email: info@goreeinstitut.org
   form: https://goreeinstitut.org/contact
-  source: https://goreeinstitut.org
+  source: https://goreeinstitut.org/contact
   checked: 2026-08-09
 summary: "A pan-African civil society organisation founded in 1992 on Gorée Island, Senegal — working on political governance and electoral processes, peace consolidation, and democratic dialogue across West Africa, with diplomatic status and a nearly 35-year institutional track record."
 concepts:
@@ -19,6 +20,13 @@ location:
   longitude: -17.4677
   name: Dakar, Senegal
   precision: city
+activity:
+  rss:
+    date: 2026-06-01
+    note: "Latest post: Lancement de l’étude sur la mise en œuvre de l’Agenda 1325 : après 25 ans de la "
+    url: https://goreeinstitut.org/lancement-de-letude-sur-la-mise-en-oeuvre-de-lagenda-1325-apres-25-ans-de-la-resolution-quel-futur-feministe-pour-la-paix-en-afrique-de-louest-et-au-sahel/
+    checked: 2026-08-09
+
 ---
 
 The Gorée Institute was founded in 1992 on Gorée Island — the symbolic heart of the Atlantic slave trade, now a UNESCO World Heritage site — as a Centre for Democracy, Development and Culture in Africa. It holds diplomatic status and has been a fixture of West African democratic civil society for nearly 35 years.
@@ -36,3 +44,4 @@ Gorée Institute's approach is more diplomatic and process-oriented than the civ
 - [Democracy](../concepts/democracy.md)
 - [Deliberative Democracy](../concepts/deliberative-democracy.md)
 - [AfricTivistes](africtivistes.md)
+last_checked: "2026-08-09"

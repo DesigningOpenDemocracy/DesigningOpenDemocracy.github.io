@@ -10,6 +10,12 @@ contact:
   phone: "+62 21 22833919"
   source: https://perludem.or.id
   checked: 2026-08-09
+activity:
+  dod:
+    date: 2026-08-09
+    note: Site live and actively publishing as of August 2026
+    checked: 2026-08-09
+last_checked: "2026-08-09"
 summary: "An Indonesian independent nonprofit founded in 2005 — a leading civil society voice on electoral integrity, democratic reform, and electoral system design in the world's third-largest democracy."
 concepts:
   - democracy

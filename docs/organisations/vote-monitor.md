@@ -40,3 +40,4 @@ While election observation is a narrower function than governance design, it add
 - [E-Government](../concepts/e-government.md)
 - [Radical Transparency](../concepts/radical-transparency.md)
 - [End-to-End Verifiable Voting System](../concepts/end-to-end-verifiable-voting-system.md)
+last_checked: "2026-06-09"

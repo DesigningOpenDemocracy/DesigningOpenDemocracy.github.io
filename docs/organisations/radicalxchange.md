@@ -81,3 +81,4 @@ RadicalxChange's Melbourne chapter is newly forming. A public launch event — "
 [^humanitix]: ["An invitation to meet RadicalxChange Foundation in Melbourne"](https://events.humanitix.com/radicalxchange-foundation-in-melbourne), Humanitix, 27 August 2026.
 
 [^pioneerspost]: ["'We are already the super intelligence we are looking for': Audrey Tang and others' big ideas for a better future at SEWF25"](https://www.pioneerspost.com/news-views/20251106/we-are-already-the-super-intelligence-we-are-looking-audrey-tang-and-others-big), Pioneers Post.
+last_checked: "2026-08-07"

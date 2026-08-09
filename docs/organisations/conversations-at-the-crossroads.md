@@ -22,9 +22,10 @@ location:
   precision: city
 activity:
   sitemap:
-    date: 2026-06-01
-    note: Page last modified (from sitemap)
-    checked: 2026-06-07
+    date: 2026-07-27
+    note: "Page last modified (from sitemap)"
+    url: https://www.crossroadsconversation.com.au/sitemap.xml
+    checked: 2026-08-09
   manual:
     date: 2026-06-07
     note: "Website loaded. https://www.crossroadsconversation.com.au/events says next event is at  Tuesday 30 June 2026  'The decline of democracy and the rise of the far-right'"

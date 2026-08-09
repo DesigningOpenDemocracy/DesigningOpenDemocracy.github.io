@@ -25,10 +25,15 @@ location:
 rss_feed: https://decidim.org/blog/feed.xml
 activity:
   rss:
-    date: 2026-06-04
-    note: "Latest post: Nos infrastructures démocratiques ne peuvent pas être propriétaires : à propos d"
-    url: "https://decidim.org/blog/2026-04-07-nos-infrastructures-democratiques-ne-peuvent"
-    checked: 2026-06-07
+    date: 2026-07-28
+    note: "Latest post: Decidim and the New York City Civic Engagement Commission formalise Partnership "
+    url: https://decidim.org/blog/2026-07-06-decidim-and-the-new-york-city-civic-engagement-commission-formalise-partnership-with-a-memorandum-of-understanding/
+    checked: 2026-08-09
+  rss:
+    date: 2026-07-28
+    note: "Latest post: Decidim and the New York City Civic Engagement Commission formalise Partnership "
+    url: https://decidim.org/blog/2026-07-06-decidim-and-the-new-york-city-civic-engagement-commission-formalise-partnership-with-a-memorandum-of-understanding/
+    checked: 2026-08-09
 last_checked: "2026-06-15"
 ---
 

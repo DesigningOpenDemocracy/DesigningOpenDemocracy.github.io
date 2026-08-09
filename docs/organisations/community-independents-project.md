@@ -24,7 +24,7 @@ activity:
     date: 2022-09-04
     note: "Latest post: The second national Community Independents Convention, August 2022"
     url: "https://www.communityindependentsproject.org/blog/the-second-national-community-independents-convention-august-2022"
-    checked: 2026-06-07
+    checked: 2026-08-09
   manual:
     date: 2026-06-07
     note: "website loaded. Last convention at 2025"

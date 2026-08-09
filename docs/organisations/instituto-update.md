@@ -20,6 +20,12 @@ location:
   longitude: -46.6333
   name: São Paulo, Brazil
   precision: city
+activity:
+  rss:
+    date: 2026-08-09
+    note: "RSS feed active"
+    url: https://www.institutoupdate.org.br/feed
+    checked: 2026-08-09
 ---
 
 Instituto Update describes itself as "the missing infrastructure for the democracy we want" — a regional platform for political innovation and imagination in the Global South. Its focus is on expanding political participation for women who are underrepresented in conventional democratic institutions: Black, Indigenous, and LGBTQIA+ women, particularly in Latin America and increasingly in Africa.
@@ -37,3 +43,4 @@ Instituto Update also produces mappings of political innovation initiatives acro
 - [Democracy](../concepts/democracy.md)
 - [Representative Democracy](../concepts/representative-democracy.md)
 - [Deliberative Democracy](../concepts/deliberative-democracy.md)
+last_checked: "2026-08-09"

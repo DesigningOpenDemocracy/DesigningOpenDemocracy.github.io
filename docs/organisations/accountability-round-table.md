@@ -23,10 +23,10 @@ concepts:
 rss_feed: http://accountabilityrt.org/feed
 activity:
   rss:
-    date: 2026-06-01
-    note: "Latest post: GOVERNMENT MUST LEGISLATE IBAC REFORM NOW, NOT AFTER THE ELECTION"
-    url: "https://www.accountabilityrt.org/government-must-legislate-ibac-reform-now-not-after-the-election/"
-    checked: 2026-06-07
+    date: 2026-07-28
+    note: "Latest post: Enhancing government accountability"
+    url: https://www.accountabilityrt.org/enhancing-government-accountability/
+    checked: 2026-08-09
   manual:
     date: 2026-06-08
     note: "website loaded. Saw them meet in person"

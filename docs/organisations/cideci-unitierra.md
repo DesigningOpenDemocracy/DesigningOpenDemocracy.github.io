@@ -20,7 +20,7 @@ activity:
   sitemap:
     date: 2024-05-21
     note: "Page last modified (from sitemap)"
-    checked: 2026-06-07
+    checked: 2026-08-09
   dod:
     date: 2026-06-28
     note: "Web search confirms active programming: 'Seedbed Seminar — War Against Humanity' convened at CIDECI-UniTierra 20-24 July 2026 by the Zapatista Sixth Commission."

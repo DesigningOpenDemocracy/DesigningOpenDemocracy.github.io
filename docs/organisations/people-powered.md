@@ -9,6 +9,12 @@ contact:
   form: https://www.peoplepowered.org/connect
   source: https://www.peoplepowered.org
   checked: 2026-08-09
+activity:
+  dod:
+    date: 2026-08-09
+    note: Site live and actively publishing as of August 2026
+    checked: 2026-08-09
+last_checked: "2026-08-09"
 summary: "A global hub for participatory democracy — connecting government practitioners, researchers, and advocates through mentorship, training, accelerator programmes, and a resource centre. Serves as a membership organisation for the participatory democracy field worldwide."
 concepts:
   - participatory-budgeting

@@ -24,10 +24,15 @@ location:
 rss_feed: https://consuldemocracy.org/feed
 activity:
   rss:
-    date: 2026-04-22
-    note: "Latest post: Version release 2.5.0! "
-    url: "https://consuldemocracy.org/2026/04/version-release-2-5-0/"
-    checked: 2026-06-07
+    date: 2026-06-29
+    note: "Latest post: Made with Consul"
+    url: https://consuldemocracy.org/2026/06/made-with-consul/
+    checked: 2026-08-09
+  rss:
+    date: 2026-06-29
+    note: "Latest post: Made with Consul"
+    url: https://consuldemocracy.org/2026/06/made-with-consul/
+    checked: 2026-08-09
 last_checked: "2026-06-15"
 ---
 

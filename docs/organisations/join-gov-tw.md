@@ -4,6 +4,10 @@ type: government
 status: active
 country: TW
 website: https://join.gov.tw
+contact:
+  form: https://join.gov.tw/contactus
+  source: https://join.gov.tw/contactus
+  checked: 2026-08-09
 logo: /assets/org-logos/join-gov-tw.png
 related_orgs:
   - vtaiwan
@@ -23,6 +27,12 @@ activity:
     note: "Site loaded, active proposals visible on homepage across a range of policy areas."
     url: https://join.gov.tw/
     checked: 2026-08-07
+  rss:
+    date: 2026-08-09
+    note: "RSS feed active"
+    url: https://join.gov.tw/?feed=rss2
+    checked: 2026-08-09
+
 ---
 
 Join (join.gov.tw, officially the Public Policy Online Participation Platform / 公共政策網路參與平臺) is a government-run civic participation platform operated by Taiwan's National Development Council, launched in 2015 with assistance from Digital Minister Audrey Tang's office.[^amcham] It grew out of the same 2014 Sunflower Movement moment that produced [vTaiwan](vtaiwan.md) and [g0v](g0v.md), but took a different institutional path: rather than a volunteer civic-tech collaboration, Join was built and is run directly by government, giving its recommendations formal procedural weight that vTaiwan's advisory-only model never had.
@@ -57,3 +67,4 @@ Join also reaches further than vTaiwan ever did — an older, less tech-savvy pu
 [^bertelsmann]: ["Trailblazers of digital participation: Taiwan's Join platform and vTaiwan"](https://www.bertelsmann-stiftung.de/en/our-projects/democracy-and-participation-in-europe/shortcut-archive/shortcut-8-trailblazers-of-digital-participation-taiwans-join-platform-and-vtaiwan), Bertelsmann Stiftung.
 
 [^vtaiwan-blog]: DOD, ["Occupy to Plurality: what the 2010s civic-tech wave built, and where it stalled"](../../blog/posts/2026-08-07-civic-tech-wave-2010s.md), citing the [vTaiwan org page](vtaiwan.md)'s "What came after" section.
+last_checked: "2026-08-09"

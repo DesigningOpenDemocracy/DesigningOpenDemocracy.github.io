@@ -27,7 +27,7 @@ activity:
     url: https://www.democratieouverte.org/le-blog
   rss:
     note: "No feed found"
-    checked: 2026-06-07
+    checked: 2026-08-09
   scrape:
     note: "News page found, no machine-readable date"
     hint: no_markup

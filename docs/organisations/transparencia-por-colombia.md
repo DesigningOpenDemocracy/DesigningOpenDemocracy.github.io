@@ -9,6 +9,12 @@ contact:
   form: https://transparenciacolombia.org.co/contacto
   source: https://transparenciacolombia.org.co
   checked: 2026-08-09
+activity:
+  dod:
+    date: 2026-08-09
+    note: Site live and actively publishing as of August 2026
+    checked: 2026-08-09
+last_checked: "2026-08-09"
 summary: "The Colombian chapter of Transparency International — running the Monitor Ciudadano de la Corrupción (open data and analytics platform), tracking electoral campaign financing in real time, and working across all 32 departments on corruption prevention and democratic integrity."
 concepts:
   - radical-transparency

@@ -9,6 +9,12 @@ contact:
   form: https://nzccl.org.nz/contact
   source: https://nzccl.org.nz
   checked: 2026-08-09
+activity:
+  dod:
+    date: 2026-08-09
+    note: Site live and actively publishing as of August 2026
+    checked: 2026-08-09
+last_checked: "2026-08-09"
 summary: "An independent watchdog defending democratic rights and civil liberties in Aotearoa — active participant in New Zealand's Open Government Partnership civil society engagement, with a dense programme of parliamentary submissions on bills affecting democratic participation, freedom of expression, and protest rights."
 concepts:
   - democracy

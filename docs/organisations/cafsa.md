@@ -22,10 +22,15 @@ concepts:
 rss_feed: https://cafsa.org.au/feed
 activity:
   rss:
-    date: 2026-04-02
-    note: "Latest post: CAfSA News no. 7 April 2026"
-    url: "https://cafsa.org.au/cafsa-news-no-7-april-2026/?utm_source=rss&utm_medium=rss&utm_campaign=cafsa-news-no-7-april-2026"
-    checked: 2026-06-07
+    date: 2026-07-09
+    note: "Latest post: CAfSA News Bulletin no. 8"
+    url: https://cafsa.org.au/news-bulletin-no-8/?utm_source=rss&utm_medium=rss&utm_campaign=news-bulletin-no-8
+    checked: 2026-08-09
+  rss:
+    date: 2026-07-09
+    note: "Latest post: CAfSA News Bulletin no. 8"
+    url: https://cafsa.org.au/news-bulletin-no-8/?utm_source=rss&utm_medium=rss&utm_campaign=news-bulletin-no-8
+    checked: 2026-08-09
 last_checked: "2026-06-29"
 ---
 

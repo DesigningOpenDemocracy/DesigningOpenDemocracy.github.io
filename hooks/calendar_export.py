@@ -26,6 +26,7 @@ cares about the future-facing, cross-org aggregate.
 import glob
 import json
 import os
+import re
 import uuid
 from datetime import date, datetime, timedelta
 
@@ -46,6 +47,41 @@ BLOG_POSTS_DIR = os.path.join(DOCS_DIR, "blog", "posts")
 SYNCED_EVENTS_DIR = os.path.join(DOCS_DIR, "data", "events")
 SKIP_FILES = {"organisations.md"}
 DOD_TITLE = "Designing Open Democracy"
+
+# Known recurring CJK event patterns → English translation (for calendar readability)
+_CJK_PATTERNS = [
+    (re.compile(r'公民科技跑咖松_(.+)'), lambda m: f'Civic Tech Hackathon — {m.group(1)}'),
+    (re.compile(r'第(.+?)次(.+?)松'), lambda m: f'{m.group(1)}th {m.group(2)} Hackathon'),
+    (re.compile(r'公民科技(.+)活動'), lambda m: f'Civic Tech {m.group(1)} Activity'),
+]
+
+
+def _has_cjk(s):
+    """True if string is predominantly CJK characters (Chinese/Japanese/Korean)."""
+    if not s:
+        return False
+    total = len(s)
+    cjk = sum(1 for c in s
+              if '\u4e00' <= c <= '\u9fff'
+              or '\u3400' <= c <= '\u4dbf'
+              or '\uf900' <= c <= '\ufaff')
+    return cjk / total > 0.3
+
+
+def _eng_title(title, org_title):
+    """Return an English title for a CJK event, or None if no translation available."""
+    for pattern, fn in _CJK_PATTERNS:
+        m = pattern.match(title)
+        if m:
+            return fn(m)
+    return f'{org_title} event'
+
+
+def _maybe_add_translation(event_dict, title, org_title):
+    """If the title is predominantly CJK, add title_en to the event dict."""
+    if _has_cjk(title):
+        event_dict["title_en"] = _eng_title(title, org_title)
+    return event_dict
 
 _events: list = []
 
@@ -75,7 +111,7 @@ def _load_manual_events(today):
         for entry in m.get("events") or []:
             d = _parse_date(entry.get("date"))
             if d and d >= today:
-                out.append({
+                evt = {
                     "date": d,
                     "end_date": _parse_date(entry.get("end_date")),
                     "title": entry.get("title", "Untitled event"),
@@ -84,7 +120,9 @@ def _load_manual_events(today):
                     "org_title": m.get("title", slug),
                     "source": "manual",
                     "notable": bool(entry.get("notable")),
-                })
+                }
+                _maybe_add_translation(evt, evt["title"], evt["org_title"])
+                out.append(evt)
     return out
 
 
@@ -111,7 +149,7 @@ def _load_synced_events(today):
         for entry in cached:
             d = _parse_date(entry.get("date"))
             if d and d >= today:
-                out.append({
+                evt = {
                     "date": d,
                     "end_date": _parse_date(entry.get("end_date")),
                     "title": entry.get("title", "Untitled event"),
@@ -120,7 +158,9 @@ def _load_synced_events(today):
                     "org_title": titles.get(slug, slug),
                     "source": "ical",
                     "notable": False,
-                })
+                }
+                _maybe_add_translation(evt, evt["title"], evt["org_title"])
+                out.append(evt)
     return out
 
 

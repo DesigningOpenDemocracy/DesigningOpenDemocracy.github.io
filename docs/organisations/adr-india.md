@@ -22,7 +22,7 @@ concepts:
 activity:
   rss:
     note: "No feed found"
-    checked: 2026-06-07
+    checked: 2026-08-09
   manual:
     date: 2026-06-05
     note: "website is present and loaded. Last report released by them is at 5 June, 2026"

@@ -22,10 +22,10 @@ concepts:
 rss_feed: https://kongra-star.org/?feed=rss2
 activity:
   rss:
-    date: 2026-06-06
-    note: "Latest post: Şêrîn Reşîd: Misogerkirina maf û temsîliyeta jinan di pêvajoya entegrasyonê de p"
-    url: https://kongra-star.org/?p=31567
-    checked: 2026-06-07
+    date: 2026-08-08
+    note: "Latest post: Şêrîn Abbas :Azadiya Rêber Abdullah Ocalan şertê bingehîn e ji bo serkeftina pêv"
+    url: https://kongra-star.org/?p=33202
+    checked: 2026-08-09
 ---
 
 > **Note on context:** Kongra Star operates within the AANES, which is not internationally recognised. See the [TEV-DEM](tev-dem.md) entry for context on the broader governance framework.

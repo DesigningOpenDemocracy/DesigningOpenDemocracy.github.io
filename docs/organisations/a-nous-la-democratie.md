@@ -21,7 +21,7 @@ activity:
     date: 2025-07-15
     note: "Latest post: Pour la première Démocratie française : un entretien avec Baya Bellanger sur son"
     url: "https://anouslademocratie.fr/2025/07/15/pour-la-premiere-democratie-francaise-un-entretien-avec-baya-bellanger-sur-son-nouveau-livre-gouvernons/"
-    checked: 2026-06-07
+    checked: 2026-08-09
   manual:
     date: 2025-07-15
     note: "website loaded. They got https://anouslademocratie.fr/articles/ but it differ from rss feed..."

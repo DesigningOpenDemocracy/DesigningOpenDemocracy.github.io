@@ -19,6 +19,10 @@ location:
   longitude: 36.8219
   name: Nairobi, Kenya
   precision: city
+activity:
+  rss:
+    note: "No feed found"
+    checked: 2026-08-09
 ---
 
 Governance Hub Africa is a Nairobi-based regional platform working on democratic governance across the 55 member states of the African Union. It operates at the intersection of elections, digital innovation, policy advisory, and institutional reform — treating these not as separate domains but as interconnected elements of a governance system.
@@ -37,3 +41,4 @@ In the Democracy Landscape's terms, Governance Hub Africa falls in the "governan
 - [Democracy Tools](../concepts/democracy-tools.md)
 - [AfricTivistes](africtivistes.md)
 - [Civic Tech Innovation Network](ctin.md)
+last_checked: "2026-08-09"

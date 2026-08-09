@@ -21,10 +21,15 @@ concepts:
 rss_feed: https://gumilla.org/feed
 activity:
   rss:
-    date: 2026-05-29
-    note: "Latest post: RASI convoca al XVII Encuentro Constructores de Paz bajo el lema “Democratizació"
-    url: "https://gumilla.org/xvii-encuentro-constructores-de-paz/"
-    checked: 2026-06-07
+    date: 2026-08-04
+    note: "Latest post: Centro Gumilla, FUNDACEDEAP y Excuela consolidan alianza estratégica para formar"
+    url: https://gumilla.org/alianza-gumilla-formacion-mujeres-emprendedoras/
+    checked: 2026-08-09
+  rss:
+    date: 2026-08-04
+    note: "Latest post: Centro Gumilla, FUNDACEDEAP y Excuela consolidan alianza estratégica para formar"
+    url: https://gumilla.org/alianza-gumilla-formacion-mujeres-emprendedoras/
+    checked: 2026-08-09
 last_checked: "2026-06-29"
 ---
 

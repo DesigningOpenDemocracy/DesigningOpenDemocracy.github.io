@@ -24,7 +24,7 @@ activity:
   sitemap:
     date: 2026-06-05
     note: "Server still up (sitemap detected)"
-    checked: 2026-06-07
+    checked: 2026-08-09
   manual:
     date: 2026-04-15
     note: "Website is up and they got a new post. 15 Apr 2026 Take the Pledge: Integrity Organisations call on Victorian Political Parties to Commit Now to Donation Transparency"

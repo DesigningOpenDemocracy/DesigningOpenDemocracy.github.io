@@ -27,7 +27,7 @@ activity:
     date: 2026-02-17
     note: "Latest post: Want residents, not politicians, to find answers to LA’s thorniest problems? Try"
     url: "https://healthydemocracy.org/la-assembly-news/2026/02/16/want-residents-not-politicians-to-find-answers-to-las-thorniest-problems-try-a-civic-assembly/"
-    checked: 2026-06-08
+    checked: 2026-08-09
   dod:
     date: 2026-07-16
     note: "Website loaded directly; active programs listed (Civic Assemblies, CIR, Deschutes Civic Assembly on Youth Homelessness billed as 'world's first tech-assisted assembly'), operating since 2007"

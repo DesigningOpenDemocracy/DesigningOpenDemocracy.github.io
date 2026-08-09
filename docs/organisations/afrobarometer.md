@@ -22,10 +22,15 @@ concepts:
 rss_feed: https://www.afrobarometer.org/feed
 activity:
   rss:
-    date: 2026-06-02
-    note: "Latest post: Many Africans see justice system as unequal, costly, and slow, Afrobarometer sur"
-    url: "https://www.afrobarometer.org/articles/many-africans-see-justice-system-as-unequal-costly-and-slow-afrobarometer-survey-reveals/"
-    checked: 2026-06-07
+    date: 2026-08-05
+    note: "Latest post: Les Africains sont favorables à la libre circulation,  mais restent divisés sur "
+    url: https://www.afrobarometer.org/articles/les-africains-sont-favorables-a-la-libre-circulation-mais-restent-divises-sur-la-question-de-limmigration-selon-le-nouveau-rapport-phare-dafrobarometer/
+    checked: 2026-08-09
+  rss:
+    date: 2026-08-05
+    note: "Latest post: Les Africains sont favorables à la libre circulation,  mais restent divisés sur "
+    url: https://www.afrobarometer.org/articles/les-africains-sont-favorables-a-la-libre-circulation-mais-restent-divises-sur-la-question-de-limmigration-selon-le-nouveau-rapport-phare-dafrobarometer/
+    checked: 2026-08-09
 last_checked: "2026-06-28"
 ---
 

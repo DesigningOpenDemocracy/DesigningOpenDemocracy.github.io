@@ -24,10 +24,15 @@ related_orgs:
   - mysociety
 activity:
   rss:
-    date: 2026-06-03
-    note: "Latest post: 2026 elections user feedback"
-    url: https://democracyclub.org.uk/blog/
-    checked: 2026-06-09
+    date: 2026-07-31
+    note: "Latest post: Mapping Northern Ireland's proposed polling places"
+    url: https://democracyclub.org.uk/blog/2026/07/31/mapping-northern-irelands-proposed-polling-places/
+    checked: 2026-08-09
+  rss:
+    date: 2026-07-31
+    note: "Latest post: Mapping Northern Ireland's proposed polling places"
+    url: https://democracyclub.org.uk/blog/2026/07/31/mapping-northern-irelands-proposed-polling-places/
+    checked: 2026-08-09
 last_checked: "2026-06-15"
 ---
 

@@ -6,8 +6,9 @@ country: NG
 website: https://civichive.org
 logo: /assets/org-logos/civic-hive.png
 contact:
+  email: info@civichive.org
   form: https://civichive.org/contact
-  source: https://civichive.org
+  source: https://civichive.org/contact
   checked: 2026-08-09
 summary: "A Lagos-based civic-tech fellowship and innovation hub — training civic-tech practitioners, launching platforms for election transparency and civic participation, and running the West Africa CivicTech Conference."
 concepts:
@@ -19,6 +20,13 @@ location:
   longitude: 3.3792
   name: Lagos, Nigeria
   precision: city
+activity:
+  rss:
+    date: 2026-08-06
+    note: "Latest post: 2026 Osun State Governorship Election: Another Test for Democratic Participation"
+    url: https://civichive.org/2026-osun-state-governorship-election/?utm_source=rss&utm_medium=rss&utm_campaign=2026-osun-state-governorship-election
+    checked: 2026-08-09
+
 ---
 
 Civic Hive is a Lagos-based civic-tech innovation hub that runs a fellowship programme training civic-tech practitioners — 36 fellows have launched 26 organisations through the programme — alongside building platforms for electoral transparency and citizen participation. Its portfolio includes the Nigeria Election Portal, a Live Results Map, and the West Africa CivicTech Conference, a convening space for the region's civic-tech community.
@@ -36,3 +44,4 @@ Civic Hive is one of several organisations in the Democracy Landscape operating 
 - [Democracy Tools](../concepts/democracy-tools.md)
 - [E-Government](../concepts/e-government.md)
 - [Radical Transparency](../concepts/radical-transparency.md)
+last_checked: "2026-08-09"

@@ -29,7 +29,7 @@ activity:
     checked: 2026-06-28
   rss:
     note: "No feed found"
-    checked: 2026-06-07
+    checked: 2026-08-09
   scrape:
     note: "News page unreachable — direct fetch tooling unavailable this run; web search confirms the coalition and its international wing (Global Bersih) remain active with current reform/campaign pages"
     hint: bot_blocked

@@ -10,6 +10,12 @@ contact:
   phone: "+358 294 618 991"
   source: https://www.sitra.fi/en/
   checked: 2026-08-09
+activity:
+  dod:
+    date: 2026-08-09
+    note: Site live and actively publishing as of August 2026
+    checked: 2026-08-09
+last_checked: "2026-08-09"
 summary: "The Finnish Innovation Fund — a public foundation under parliamentary supervision with a dedicated Democracy work track that renews democracy and strengthens citizen engagement through democratic innovations and technologies."
 concepts:
   - deliberative-democracy

@@ -24,10 +24,10 @@ concepts:
 rss_feed: https://australiainstitute.org.au/feed
 activity:
   rss:
-    date: 2026-06-04
-    note: "Latest post: Australians support stronger whistleblower laws, while Labor drags its feet"
-    url: "https://australiainstitute.org.au/post/australians-support-stronger-whistleblower-laws-while-labor-drags-its-feet/?utm_source=rss&utm_medium=rss&utm_campaign=australians-support-stronger-whistleblower-laws-while-labor-drags-its-feet"
-    checked: 2026-06-07
+    date: 2026-08-06
+    note: "Latest post: Confused about interest rates and inflation? You’re not alone"
+    url: https://australiainstitute.org.au/post/confused-about-interest-rates-and-inflation-youre-not-alone/?utm_source=rss&utm_medium=rss&utm_campaign=confused-about-interest-rates-and-inflation-youre-not-alone
+    checked: 2026-08-09
   dod:
     date: 2026-07-19
     note: "Website live; Democracy & Accountability program page current."

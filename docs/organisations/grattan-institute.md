@@ -23,10 +23,10 @@ concepts:
 rss_feed: https://grattan.edu.au/feed
 activity:
   rss:
-    date: 2026-05-31
-    note: "Latest post: Tough decisions needed on gas"
-    url: "https://grattan.edu.au/tough-decisions-needed-on-gas/"
-    checked: 2026-06-08
+    date: 2026-07-26
+    note: "Latest post: Reform the system so disabled Australians can have better jobs and fairer wages"
+    url: https://grattan.edu.au/reform-the-system-so-disabled-australians-can-have-better-jobs-and-fairer-wages/
+    checked: 2026-08-09
   dod:
     date: 2026-07-05
     note: "Site confirmed active and current through July 2026; democracy and public integrity program still listed"

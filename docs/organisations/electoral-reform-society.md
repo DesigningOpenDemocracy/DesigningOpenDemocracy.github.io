@@ -27,10 +27,15 @@ related_orgs:
   - involve
 activity:
   rss:
-    date: 2026-06-04
-    note: "Latest post: Polling Breakdown: What did the UK polls say in May 2026?"
-    url: https://www.electoral-reform.org.uk/latest-news-and-research/blog/
-    checked: 2026-06-09
+    date: 2026-08-06
+    note: "Latest post: What does an independent commission on electoral reform need to succeed?"
+    url: https://electoral-reform.org.uk/what-does-an-independent-commission-on-electoral-reform-need-to-succeed/
+    checked: 2026-08-09
+  rss:
+    date: 2026-08-06
+    note: "Latest post: What does an independent commission on electoral reform need to succeed?"
+    url: https://electoral-reform.org.uk/what-does-an-independent-commission-on-electoral-reform-need-to-succeed/
+    checked: 2026-08-09
 last_checked: "2026-06-15"
 ---
 

@@ -31,10 +31,15 @@ activity:
     url: https://bonds.coop/resources/co-op-news/
     checked: 2026-06-08
   rss:
-    date: 2026-06-05
+    date: 2026-08-09
     note: "RSS feed active"
     url: https://bonds.coop/feed
-    checked: 2026-06-07
+    checked: 2026-08-09
+  rss:
+    date: 2026-08-09
+    note: "RSS feed active"
+    url: https://bonds.coop/feed
+    checked: 2026-08-09
 last_checked: "2026-06-29"
 ---
 

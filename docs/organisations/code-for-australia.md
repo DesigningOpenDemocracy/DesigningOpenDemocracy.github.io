@@ -22,7 +22,7 @@ activity:
   sitemap:
     date: 2024-06-28
     note: "Page last modified (from sitemap)"
-    checked: 2026-06-07
+    checked: 2026-08-09
   manual:
     date: 2026-06-07
     note: "personally know it exist and still running"

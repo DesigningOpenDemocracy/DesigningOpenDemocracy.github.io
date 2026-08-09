@@ -22,10 +22,10 @@ concepts:
 rss_feed: https://internetfreedom.in/rss
 activity:
   rss:
-    date: 2026-05-29
-    note: "Latest post: RTI Response Reveals that the Viksit Bharat Sampark Whatsapp Initiative was Allo"
-    url: "https://internetfreedom.in/rti-response-reveals-that-the-viksit-bharat-sampark-whatsapp-initiative-was-allocated-funds-amounting-to-18-crores/"
-    checked: 2026-06-08
+    date: 2026-08-07
+    note: "Latest post: IFF files complaints with the NCW and NCPCR on the doxxing of and violent threat"
+    url: https://internetfreedom.in/iff-files-complaints-with-the-ncw-and-ncpcr-on-the-doxxing-of-and-violent-threats-against-women-protesters-at-jantar-mantar/
+    checked: 2026-08-09
   dod:
     date: 2026-03-30
     note: "Site returned 403 to direct fetch (bot protection); web-search fallback found IFF's Second Strategic Plan (2026-2028) and active March 2026 IT Rules Amendment advocacy, plus reported July 2026 Supreme Court AI Committee submission and Delhi HC litigation"

@@ -20,10 +20,10 @@ location:
   precision: city
 activity:
   sitemap:
-    date: 2026-06-07
+    date: 2026-08-09
     note: "Page last modified (from sitemap)"
     url: https://www.democracylab.org/sitemap.xml
-    checked: 2026-06-07
+    checked: 2026-08-09
   manual:
     date: 2025-09-10
     note: "website loaded. Last blog post is at https://blog.democracylab.org/10-000-volunteers-and-counting/  10 Sep 2025 '10,000 Volunteers and Counting!'"

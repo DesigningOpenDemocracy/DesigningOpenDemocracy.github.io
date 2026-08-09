@@ -9,6 +9,12 @@ contact:
   email: hello@makeit16.org.nz
   source: https://www.makeit16.org.nz
   checked: 2026-08-09
+activity:
+  dod:
+    date: 2026-08-09
+    note: Site live and actively publishing as of August 2026
+    checked: 2026-08-09
+last_checked: "2026-08-09"
 summary: "A youth-led, non-partisan campaign to lower New Zealand's voting age to 16 — won a Supreme Court ruling that the voting age of 18 breaches the Bill of Rights for 16- and 17-year-olds."
 concepts:
   - democracy

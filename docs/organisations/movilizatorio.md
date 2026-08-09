@@ -9,6 +9,12 @@ contact:
   form: https://www.movilizatorio.org/contacto
   source: https://www.movilizatorio.org
   checked: 2026-08-09
+activity:
+  dod:
+    date: 2026-08-09
+    note: Site live and actively publishing as of August 2026
+    checked: 2026-08-09
+last_checked: "2026-08-09"
 summary: "A Colombian social innovation laboratory with global reach — transforming ideas into actions and apathy into social and environmental movements. Won the Schwab Foundation Award at the World Economic Forum (2025)."
 concepts:
   - democracy-tools

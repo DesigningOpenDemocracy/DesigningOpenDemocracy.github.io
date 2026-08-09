@@ -9,6 +9,12 @@ contact:
   form: https://www.peoplepower21.org/contact
   source: https://www.peoplepower21.org
   checked: 2026-08-09
+activity:
+  dod:
+    date: 2026-08-09
+    note: Site live and actively publishing as of August 2026
+    checked: 2026-08-09
+last_checked: "2026-08-09"
 summary: "A major South Korean civil society organisation founded in 1994 — a pillar of Korean democratic accountability with ~13,000 members, monitoring the judiciary, legislature, and executive, and driving public-interest law, economic justice, and peace advocacy."
 concepts:
   - democracy

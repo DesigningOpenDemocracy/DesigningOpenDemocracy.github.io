@@ -28,9 +28,10 @@ activity:
     note: "Latest post: Halbzeit – 6 Monate Freiwilligendienst bei Liquid Democracy e.V."
     url: https://liqd.net/en/blog/
   sitemap:
-    date: 2026-06-01
-    note: Page last modified (from sitemap)
-    checked: 2026-06-08
+    date: 2026-08-03
+    note: "Page last modified (from sitemap)"
+    url: https://liqd.net/en/sitemap.xml
+    checked: 2026-08-09
   scrape:
     date: 2026-05-28
     note: "Latest news page scraped"

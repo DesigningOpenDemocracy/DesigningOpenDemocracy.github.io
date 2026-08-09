@@ -28,7 +28,7 @@ activity:
     checked: 2026-06-08
   rss:
     note: "No feed found"
-    checked: 2026-06-08
+    checked: 2026-08-09
 last_checked: "2026-06-29"
 ---
 

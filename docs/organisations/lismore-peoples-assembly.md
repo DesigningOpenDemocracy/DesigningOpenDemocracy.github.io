@@ -28,7 +28,7 @@ activity:
     date: 2026-02-09
     note: "Latest post: Nearly four years after the NR Floods, the community is given a (small) chance t"
     url: "https://reclaim.org.au/nearly-four-years-after-the-nr-floods-the-community-is-given-a-small-chance-to-be-heard/"
-    checked: 2026-06-08
+    checked: 2026-08-09
   dod:
     date: 2026-02-09
     note: "RSS feed's latest entry dated Feb 9, 2026: 'Nearly four years after the NR Floods, the community is given a (small) chance to be heard'"

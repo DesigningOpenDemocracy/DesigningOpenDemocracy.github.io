@@ -27,6 +27,9 @@ activity:
     note: "Direct fetch blocked (503) this run; web search confirms ongoing activity — Central Committee research on urban/rural land system reform and the continuing 'Serving the Public, Practicing for the People' education campaign."
     url: https://www.mmzy.org.cn/mmyw/default.aspx
     checked: 2026-06-29
+  sitemap:
+    note: "Sitemap found, no lastmod"
+    checked: 2026-08-09
 last_checked: "2026-06-29"
 ---
 

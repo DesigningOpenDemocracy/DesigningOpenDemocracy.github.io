@@ -7,8 +7,9 @@ website: https://helenclark.foundation
 logo: /assets/org-logos/helen-clark-foundation.png
 logo_bg: light
 contact:
+  email: contact@helenclark.foundation
   form: https://helenclark.foundation/contact
-  source: https://helenclark.foundation
+  source: https://helenclark.foundation/contact
   checked: 2026-08-09
 summary: "An independent public policy think tank based at AUT Auckland — one of four research streams is 'public policy, governance and the future of democracy,' publishing major work on democratic reform ahead of the 2026 New Zealand general election."
 concepts:
@@ -19,6 +20,11 @@ location:
   longitude: 174.7633
   name: Auckland, New Zealand
   precision: city
+activity:
+  sitemap:
+    note: "Sitemap found, no lastmod"
+    checked: 2026-08-09
+
 ---
 
 The Helen Clark Foundation is an independent public policy think tank based at Auckland University of Technology (AUT). Its research spans four streams: public policy, governance and the future of democracy; sustainability and climate change; inclusive economic development; and a fourth focusing on social wellbeing. The governance and democracy stream positions the Foundation as New Zealand's most prominent institutional voice on democratic reform — distinct from the transparency-and-integrity focus of TINZ and the youth-voting-rights focus of Make It 16.
@@ -36,3 +42,4 @@ Named after Helen Clark, New Zealand's former Prime Minister and UN Development 
 - [Democracy](../concepts/democracy.md)
 - [Representative Democracy](../concepts/representative-democracy.md)
 - [McGuinness Institute](mcguinness-institute.md)
+last_checked: "2026-08-09"

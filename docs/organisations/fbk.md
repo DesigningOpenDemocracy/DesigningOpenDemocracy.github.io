@@ -38,6 +38,9 @@ activity:
     note: "Homepage fetched 8 Aug 2026; latest news: ACF's Strategy for the State Duma Elections (6 Aug), One Garage Two Billion Rubles investigation (3 Aug), poll on Russians losing faith in Putin's stability (30 Jul 2026)"
     url: https://fbk.info/en
     checked: 2026-08-08
+  sitemap:
+    note: "Sitemap found, no lastmod"
+    checked: 2026-08-09
 last_checked: "2026-08-08"
 ---
 

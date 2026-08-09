@@ -25,9 +25,10 @@ concepts:
   - tribal-epistemology
 activity:
   sitemap:
-    date: 2026-03-30
-    note: Page last modified (from sitemap)
-    checked: 2026-06-08
+    date: 2026-06-09
+    note: "Page last modified (from sitemap)"
+    url: https://www.lateraleconomics.com.au/sitemap.xml
+    checked: 2026-08-09
   manual:
     date: 2026-06-07
     note: "Know personally that this is still active."

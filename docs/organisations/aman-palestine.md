@@ -28,10 +28,15 @@ activity:
     url: https://www.aman-palestine.org/en/activities/
     checked: 2026-06-08
   rss:
-    date: 2026-06-05
+    date: 2026-08-09
     note: "RSS feed active"
     url: https://www.aman-palestine.org/rss
-    checked: 2026-06-07
+    checked: 2026-08-09
+  rss:
+    date: 2026-08-09
+    note: "RSS feed active"
+    url: https://www.aman-palestine.org/rss
+    checked: 2026-08-09
 last_checked: "2026-06-28"
 ---
 

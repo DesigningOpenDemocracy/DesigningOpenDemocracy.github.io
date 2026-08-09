@@ -20,6 +20,12 @@ location:
   longitude: 11.9746
   name: Gothenburg, Sweden
   precision: city
+activity:
+  rss:
+    date: 2026-06-02
+    note: "Latest post: Panelsamtal med Audrey Tang"
+    url: https://digidemlab.org/news/panelsamtal-kan-deltagandedemokrati-bli-en-motkraft-i-en-orolig-tid/
+    checked: 2026-08-09
 ---
 
 Digidem Lab is a Gothenburg-based democracy innovation organisation that designs and implements digital participatory processes. It is an official partner and provider of the Decidim platform (the Barcelona-originated open-source participatory democracy framework) for the Nordic market, adapting the platform's citizen proposals, participatory budgeting, and consultation tools to Swedish and Nordic governance contexts.
@@ -39,3 +45,4 @@ Digidem Lab is part of the Nordic Deliberation network alongside We Do Democracy
 - [Citizens' Assembly](../concepts/citizens-assembly.md)
 - [Decidim](decidim.md)
 - [We Do Democracy](we-do-democracy.md)
+last_checked: "2026-08-09"

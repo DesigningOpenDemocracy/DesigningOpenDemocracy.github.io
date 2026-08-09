@@ -31,10 +31,10 @@ activity:
     url: https://www.democracy-international.org/news
     checked: 2026-06-08
   rss:
-    date: 2026-06-05
+    date: 2026-08-09
     note: "RSS feed active"
     url: https://www.democracy-international.org/rss.xml
-    checked: 2026-06-07
+    checked: 2026-08-09
   dod:
     date: 2026-07-05
     note: "Site confirmed active; news page shows articles dated through 28 June 2026, EU CERV Framework Partner 2026-2028"

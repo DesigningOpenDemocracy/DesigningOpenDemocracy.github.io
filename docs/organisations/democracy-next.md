@@ -23,9 +23,10 @@ concepts:
   - isegoria
 activity:
   sitemap:
-    date: 2026-06-04
-    note: Page last modified (from sitemap)
-    checked: 2026-06-08
+    date: 2026-07-29
+    note: "Page last modified (from sitemap)"
+    url: https://www.demnext.org/sitemaps-1-sitemap.xml
+    checked: 2026-08-09
   manual:
     date: 2026-01-02
     note: "website loaded. https://www.demnext.org/news mentions www.theartnewspaper.com/2026/01/02/uk-museums-embrace-citizens-assemblies-to-frame-their-futures 2 January 2026 'How UK museums are embracing citizens’ assemblies to help frame their futures'"

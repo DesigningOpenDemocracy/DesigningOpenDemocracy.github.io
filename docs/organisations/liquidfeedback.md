@@ -32,6 +32,9 @@ activity:
     note: "Site live and commercially operating under FlexiGuided GmbH (Berlin), current pricing/installation/maintenance offering; independently listed as active on SoftwareWorld reviews (Jun 2026). No public dev news since 2012 though — status kept active but development activity uncertain"
     url: https://liquidfeedback.com/en/
     checked: 2026-07-16
+  rss:
+    note: "No feed found"
+    checked: 2026-08-09
 related_orgs:
   - liquid-democracy-ev
   - flux-party

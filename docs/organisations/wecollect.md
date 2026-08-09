@@ -9,6 +9,12 @@ contact:
   email: team@wecollect.ch
   source: https://www.wecollect.ch
   checked: 2026-08-09
+activity:
+  dod:
+    date: 2026-08-09
+    note: Site live and actively publishing as of August 2026
+    checked: 2026-08-09
+last_checked: "2026-08-09"
 summary: "A Swiss civic-tech platform operated by the Stiftung für direkte Demokratie (Foundation for Direct Democracy) — helps citizens launch initiatives and referendums and collect digital signatures. 915,557 signatures gathered across 123 campaigns since 2015."
 concepts:
   - democracy-tools

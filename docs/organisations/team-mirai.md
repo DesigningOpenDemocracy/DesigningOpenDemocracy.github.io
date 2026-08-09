@@ -20,6 +20,10 @@ location:
   longitude: 139.6503
   name: Tokyo, Japan
   precision: city
+activity:
+  rss:
+    note: "No feed found"
+    checked: 2026-08-09
 ---
 
 Team Mirai (チームみらい, "Team Future") is a Japanese political party founded in May 2025 by Takahiro Anno, an AI engineer and entrepreneur. It frames itself as a technology-native political force: the mission is to use technology to make politics more transparent, efficient, and accessible — replacing opaque processes with open ones, and closing the distance between citizens and the decisions that shape their lives.
@@ -38,3 +42,4 @@ The Plurality framework, developed by RadicalxChange founder Glen Weyl and colle
 - [E-Government](../concepts/e-government.md)
 - [Liquid Democracy](../concepts/liquid-democracy.md)
 - [RadicalxChange](radicalxchange.md)
+last_checked: "2026-08-09"

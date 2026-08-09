@@ -20,6 +20,10 @@ location:
   longitude: -70.6693
   name: Santiago, Chile
   precision: city
+activity:
+  rss:
+    note: "No feed found"
+    checked: 2026-08-09
 ---
 
 Fundación Ciudadano Inteligente (Ciudadanía Inteligente) develops digital tools and advocacy strategies to make democracy more participatory, transparent, and responsive across Latin America and the Caribbean. Founded in 2009, it was one of the earliest civic-tech organisations in the region and has influenced a generation of open-government and citizen-participation initiatives.
@@ -35,3 +39,4 @@ Its work spans election transparency (covering Chile's 2025 presidential second 
 - [E-Government](../concepts/e-government.md)
 - [Democracy Tools](../concepts/democracy-tools.md)
 - [Radical Transparency](../concepts/radical-transparency.md)
+last_checked: "2026-08-09"

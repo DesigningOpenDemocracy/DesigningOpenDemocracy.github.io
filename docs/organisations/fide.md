@@ -6,6 +6,7 @@ country: BE
 website: https://fidemocracy.org
 logo: /assets/org-logos/fide.webp
 contact:
+  email: europe@fidemocracy.org
   form: https://fidemocracy.org/contact
   source: https://fidemocracy.org
   checked: 2026-08-09
@@ -19,6 +20,13 @@ location:
   longitude: 4.3517
   name: Brussels, Belgium
   precision: city
+activity:
+  sitemap:
+    date: 2026-08-07
+    note: "Page last modified (from sitemap)"
+    url: https://fidemocracy.org/sitemap.xml
+    checked: 2026-08-09
+
 ---
 
 FIDE — the Federation for Innovation in Democracy — is an independent network of democratic innovators working to embed deliberative processes in the machinery of governance. Its three pillars are training (capacity-building schools, masterclasses for lead facilitators), design (process architecture for governments at every level, from municipalities to international bodies), and evaluation (learning series, publications, quality standards).
@@ -36,3 +44,4 @@ FIDE has worked with the Council of Europe, CESE France, and city governments in
 - [Sortition](../concepts/sortition.md)
 - [G1000](g1000.md)
 - [newDemocracy Foundation](newdemocracy.md)
+last_checked: "2026-08-09"

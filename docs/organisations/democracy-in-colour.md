@@ -24,10 +24,10 @@ concepts:
 rss_feed: https://democracyincolour.org/feed
 activity:
   rss:
-    date: 2026-04-30
-    note: "Latest post: Government must act immediately to release all Australian citizens abducted by I"
-    url: "https://democracyincolour.org/government-must-act-immediately-to-release-all-australian-citizens-abducted-by-israel/"
-    checked: 2026-06-07
+    date: 2026-07-29
+    note: "Latest post: Democracy in Colour welcomes court ruling upholding racial discrimination findin"
+    url: https://democracyincolour.org/democracy-in-colour-welcomes-court-ruling-upholding-racial-discrimination-finding-against-pauline-hanson/
+    checked: 2026-08-09
   dod:
     date: 2026-07-05
     note: "Site confirmed active; Noura Mansour still National Director per LinkedIn/site, matching existing page"

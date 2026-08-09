@@ -29,7 +29,7 @@ activity:
     date: 2026-03-30
     note: "Latest post: Engaged California Program"
     url: "https://ethelo.com/case-study/engaged-california-program/"
-    checked: 2026-06-08
+    checked: 2026-08-09
   dod:
     date: 2026-07-05
     note: "Site confirmed active and current, case studies and contact functionality operational"

@@ -24,7 +24,7 @@ activity:
     date: 2019-06-26
     note: "Latest post: Corner and connect"
     url: "https://www.888causeway.coop/corner-and-connect/"
-    checked: 2026-06-07
+    checked: 2026-08-09
   manual:
     date: 2026-06-07
     note: "directly known to be operating by a dod person"

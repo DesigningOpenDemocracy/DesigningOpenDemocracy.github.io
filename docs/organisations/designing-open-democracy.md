@@ -20,6 +20,11 @@ activity:
     date: 2026-08-07
     note: "This entry, and everything else on this site, is evidence of its own activity."
     checked: 2026-08-07
+  sitemap:
+    date: 2026-08-09
+    note: "Page last modified (from sitemap)"
+    url: https://designingopendemocracy.com/sitemap.xml
+    checked: 2026-08-09
 ---
 
 *A note on this entry: every other page in the Democracy Landscape is DOD monitoring an organisation from the outside, arm's length, no formal relationship. This one is different — DOD writing about itself, on its own site. Read it with that in mind rather than as independent verification.*
@@ -56,3 +61,4 @@ Some in the group describe DOD as a [meta-organisation](../concepts/meta-organis
 - [Accountability Framework](../projects/accountability-framework/index.md)
 - [Meta-Organisation](../concepts/meta-organisation.md)
 - [Occupy to Plurality: what the 2010s civic-tech wave built, and where it stalled](../blog/posts/2026-08-07-civic-tech-wave-2010s.md)
+last_checked: "2026-08-09"

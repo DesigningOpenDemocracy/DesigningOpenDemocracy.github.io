@@ -38,9 +38,22 @@
     </span>
     <span class="calendar-event-body">
       {%- if e.notable %}<span class="calendar-event-badge">★ Major event</span>{% endif %}
-      {%- if e.url and e.source == 'blog' %}<a href="{{ e.url }}">{{ e.title }}</a>
-      {%- elif e.url %}<a href="{{ e.url }}" target="_blank" rel="noopener">{{ e.title }}</a>
-      {%- else %}{{ e.title }}{% endif %}
+      {%- if e.title_en -%}
+        <span class="calendar-event-title-en">
+          {%- if e.url and e.source == 'blog' %}<a href="{{ e.url }}">{{ e.title_en }}</a>
+          {%- elif e.url %}<a href="{{ e.url }}" target="_blank" rel="noopener">{{ e.title_en }}</a>
+          {%- else %}{{ e.title_en }}{% endif -%}
+        </span>
+        <span class="calendar-event-title-orig">
+          {%- if e.url and e.source == 'blog' %}<a href="{{ e.url }}">{{ e.title }}</a>
+          {%- elif e.url %}<a href="{{ e.url }}" target="_blank" rel="noopener">{{ e.title }}</a>
+          {%- else %}{{ e.title }}{% endif -%}
+        </span>
+      {%- else -%}
+        {%- if e.url and e.source == 'blog' %}<a href="{{ e.url }}">{{ e.title }}</a>
+        {%- elif e.url %}<a href="{{ e.url }}" target="_blank" rel="noopener">{{ e.title }}</a>
+        {%- else %}{{ e.title }}{% endif -%}
+      {%- endif %}
       {%- if e.org_slug %} — <a href="/organisations/{{ e.org_slug }}/">{{ e.org_title }}</a>
       {%- elif e.org_title %} — {{ e.org_title }}{% endif %}
       <span class="activity-method-chip method-{{ e.source }}">{{ e.source }}</span>

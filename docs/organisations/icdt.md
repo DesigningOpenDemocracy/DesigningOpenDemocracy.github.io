@@ -21,8 +21,10 @@ concepts:
   - liberal-democracy
 activity:
   rss:
-    note: "No feed found"
-    checked: 2026-06-07
+    date: 2026-08-01
+    note: "Latest post: 钟伟锋/张伦/王超华/苏利利/胡平/王天成 | 通向民主之路：军人的角色问题"
+    url: https://chinademocrats.org/?p=6926
+    checked: 2026-08-09
   manual:
     date: 2026-06-07
     note: "website loaded. Unsure if active... non of the social media links loaded. No news or blog."

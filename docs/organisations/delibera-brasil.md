@@ -21,6 +21,12 @@ location:
   longitude: -46.6333
   name: São Paulo, Brazil
   precision: city
+activity:
+  rss:
+    date: 2026-08-09
+    note: "RSS feed active"
+    url: https://deliberabrasil.org/feed
+    checked: 2026-08-09
 ---
 
 Delibera Brasil designs and facilitates citizens' assemblies and minipublics — randomly selected groups of ordinary citizens who undergo an intensive learning process with experts, deliberate together, and produce policy recommendations. The method treats democracy not as a spectator sport but as something citizens do: given time, balanced information, and a structured process, laypeople reach substantive, considered conclusions on hard policy questions.
@@ -39,3 +45,4 @@ The broader context matters: Porto Alegre originated participatory budgeting in 
 - [Deliberative Democracy](../concepts/deliberative-democracy.md)
 - [Sortition](../concepts/sortition.md)
 - [Participatory Budgeting](../concepts/participatory-budgeting.md)
+last_checked: "2026-08-09"

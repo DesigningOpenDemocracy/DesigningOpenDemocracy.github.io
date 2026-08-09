@@ -23,7 +23,7 @@ activity:
   sitemap:
     date: 2026-06-05
     note: "Server still up (sitemap detected)"
-    checked: 2026-06-07
+    checked: 2026-08-09
   dod:
     date: 2026-06-29
     note: "Website and blog confirmed active, with current election-analysis publications (Ekiti State 2026 Pre-Election Environment Analysis; Anambra 2025 Governorship Election report)."

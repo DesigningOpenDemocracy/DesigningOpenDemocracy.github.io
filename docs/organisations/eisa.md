@@ -24,10 +24,10 @@ concepts:
 rss_feed: https://www.eisa.org/feed
 activity:
   rss:
-    date: 2026-03-06
-    note: "Latest post: In the Upcoming Local Government Elections, Low Voter Turnout may be the Biggest"
-    url: "https://www.eisa.org/in-the-upcoming-local-government-elections-low-voter-turnout-may-be-the-biggest-winner/"
-    checked: 2026-06-08
+    date: 2026-06-23
+    note: "Latest post: The Complaint She Never Files"
+    url: https://www.eisa.org/the-complaint-she-never-files/
+    checked: 2026-08-09
   dod:
     date: 2026-07-05
     note: "Site confirmed active; news article dated 23 June 2026"

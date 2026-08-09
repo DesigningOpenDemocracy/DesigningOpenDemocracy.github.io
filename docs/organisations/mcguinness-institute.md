@@ -9,6 +9,12 @@ contact:
   form: https://www.mcguinnessinstitute.org/contact
   source: https://www.mcguinnessinstitute.org
   checked: 2026-08-09
+activity:
+  dod:
+    date: 2026-08-09
+    note: Site live and actively publishing as of August 2026
+    checked: 2026-08-09
+last_checked: "2026-08-09"
 summary: "A non-partisan New Zealand think tank applying foresight methods to long-term governance challenges — runs Project CivicsNZ (civic education, political agreements, government department strategies) and publishes on public sector governance and institutional design."
 concepts:
   - democracy

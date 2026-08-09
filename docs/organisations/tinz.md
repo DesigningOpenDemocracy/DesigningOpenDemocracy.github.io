@@ -10,6 +10,12 @@ contact:
   form: https://www.transparency.org.nz/contact
   source: https://www.transparency.org.nz
   checked: 2026-08-09
+activity:
+  dod:
+    date: 2026-08-09
+    note: Site live and actively publishing as of August 2026
+    checked: 2026-08-09
+last_checked: "2026-08-09"
 summary: "The New Zealand chapter of the global anti-corruption coalition — running the National Integrity System assessment, campaigning for lobbying transparency, political donation reform, limits on parliamentary urgency, and beneficial ownership registers."
 concepts:
   - radical-transparency

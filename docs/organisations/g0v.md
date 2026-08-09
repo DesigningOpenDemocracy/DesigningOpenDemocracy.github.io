@@ -25,7 +25,7 @@ concepts:
 activity:
   rss:
     note: "No feed found"
-    checked: 2026-06-08
+    checked: 2026-08-09
   manual:
     date: 2026-06-07
     note: "website loaded. FYI they have an english version at https://g0v.tw/intl/en/ . In https://g0v.tw/intl/en/event/ there is a calendar where there appears to be various events."

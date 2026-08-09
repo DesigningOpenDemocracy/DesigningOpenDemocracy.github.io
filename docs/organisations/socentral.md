@@ -9,6 +9,12 @@ contact:
   form: https://www.socentral.no/kontakt
   source: https://www.socentral.no
   checked: 2026-08-09
+activity:
+  dod:
+    date: 2026-08-09
+    note: Site live and actively publishing as of August 2026
+    checked: 2026-08-09
+last_checked: "2026-08-09"
 summary: "A Norwegian social innovation platform that initiates, coordinates, and drives collaborative projects for sustainable societal development — including Norway's first civil-society-initiated national citizens' assemblies on the use of national wealth and sustainable consumption."
 concepts:
   - citizens-assembly

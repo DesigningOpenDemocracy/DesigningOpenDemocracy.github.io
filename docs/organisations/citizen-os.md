@@ -27,10 +27,10 @@ activity:
     note: "Latest post: Big Tech & Small Tech: Is Profit Over People Shrinking Civic Space for Good?"
     url: https://citizenos.com/news/
   rss:
-    date: 2026-06-05
+    date: 2026-08-09
     note: "RSS feed active"
     url: https://citizenos.com/feed
-    checked: 2026-06-07
+    checked: 2026-08-09
   scrape:
     date: 2023-06-19
     note: "Latest news page scraped"
