@@ -41,6 +41,8 @@
     <div class="calendar-date-block">
       <span class="calendar-date-month">{{ e.date.strftime('%b') }}</span>
       <span class="calendar-date-day">{{ e.date.strftime('%d') }}</span>
+      <span class="calendar-date-weekday">{{ e.date.strftime('%a') }}</span>
+      <span class="activity-method-chip method-{{ e.source }} calendar-source-chip--mini">{{ e.source }}</span>
     </div>
 
     <div class="calendar-event-body">
@@ -78,7 +80,6 @@
         {%- if e.logo %}<img class="calendar-event-logo" src="{{ e.logo }}" alt="{{ e.org_title }} logo" loading="lazy">{% endif %}
         {%- if e.org_slug %}<a href="/organisations/{{ e.org_slug }}/">{{ e.org_title }}</a>
         {%- elif e.org_title %}{{ e.org_title }}{% endif %}
-        <span class="activity-method-chip method-{{ e.source }}">{{ e.source }}</span>
         {%- if e.url and e.url.startswith('http') %}
         <a class="calendar-event-action" href="{{ e.url }}" target="_blank" rel="noopener">RSVP / Info →</a>
         {%- endif %}

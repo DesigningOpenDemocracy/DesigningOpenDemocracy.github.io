@@ -1286,6 +1286,21 @@
   font-size: 1.3em;
   font-weight: 800;
 }
+.calendar-date-weekday {
+  display: block;
+  font-size: 0.6em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--md-default-fg-color--light);
+  margin-top: 0.15em;
+}
+.calendar-source-chip--mini {
+  display: block;
+  margin: 0.25em auto 0;
+  font-size: 0.55em;
+  padding: 0.1em 0.4em;
+}
 .calendar-event--notable .calendar-date-block {
   background: rgba(255, 179, 0, 0.18);
 }
