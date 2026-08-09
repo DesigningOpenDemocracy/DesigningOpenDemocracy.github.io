@@ -1,30 +1,40 @@
 ---
-title: People's Solidarity for Participatory Democracy (PSPD)
-type: ngo
-status: active
-country: KR
-website: https://www.peoplepower21.org
-logo: /assets/org-logos/pspd.svg
+concepts:
+- democracy
+- deliberative-democracy
+- radical-transparency
 contact:
+  checked: 2026-08-09
   form: https://www.peoplepower21.org/contact
   source: https://www.peoplepower21.org
-  checked: 2026-08-09
-activity:
-  dod:
-    date: 2026-08-09
-    note: Site live and actively publishing as of August 2026
-    checked: 2026-08-09
-last_checked: "2026-08-09"
-summary: "A major South Korean civil society organisation founded in 1994 — a pillar of Korean democratic accountability with ~13,000 members, monitoring the judiciary, legislature, and executive, and driving public-interest law, economic justice, and peace advocacy."
-concepts:
-  - democracy
-  - deliberative-democracy
-  - radical-transparency
+country: KR
+events:
+- date: '1994-09-10'
+  notable: true
+  title: Founded with ~200 members in Seoul as People's Solidarity for Participatory
+    Democracy
+  url: https://en.wikipedia.org/wiki/People%27s_Solidarity_for_Participatory_Democracy
+- date: '2004-01-01'
+  notable: false
+  title: Obtains UN ECOSOC special consultative status
+- date: '2026-08-07'
+  notable: false
+  title: Launches Civil Society Joint Action for Strengthening Accountability and
+    Public Interest in AI
 location:
   latitude: 37.5665
-  longitude: 126.9780
+  longitude: 126.978
   name: Seoul, South Korea
   precision: city
+logo: /assets/org-logos/pspd.svg
+status: active
+summary: A major South Korean civil society organisation founded in 1994 — a pillar
+  of Korean democratic accountability with ~13,000 members, monitoring the judiciary,
+  legislature, and executive, and driving public-interest law, economic justice, and
+  peace advocacy.
+title: People's Solidarity for Participatory Democracy (PSPD)
+type: ngo
+website: https://www.peoplepower21.org
 ---
 
 People's Solidarity for Participatory Democracy (PSPD, 참여연대) was founded in 1994 and has grown into one of South Korea's most influential civil society institutions, with approximately 13,000 members and UN ECOSOC consultative status. The organisation describes its mission as monitoring power (legislative, judicial, executive), proposing alternatives, and organising participation and solidarity — treating watchdog, think-tank, and movement-building functions as interdependent rather than separate activities.

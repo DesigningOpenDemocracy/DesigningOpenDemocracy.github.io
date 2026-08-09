@@ -1,34 +1,54 @@
 ---
-title: newDemocracy Foundation
-type: research
-status: active
-country: AU
-website: https://www.newdemocracy.com.au
-logo: /assets/org-logos/newdemocracy.jpg
+activity:
+  rss:
+    checked: 2026-06-08
+    date: 2026-03-04
+    note: 'Latest post: Final report: Upper House Inquiry into Community Consultation
+      Practices.'
+    url: https://www.newdemocracy.com.au/2026/03/04/final-report-upper-house-inquiry-into-community-consultation-practices/?utm_source=rss&utm_medium=rss&utm_campaign=final-report-upper-house-inquiry-into-community-consultation-practices
+concepts:
+- citizens-assembly
+- deliberative-democracy
+- sortition
+- isegoria
+- cognitive-division-of-labour
 contact:
+  checked: 2026-07-24
   email: iain.walker@newdemocracy.com.au
   source: https://www.newdemocracy.com.au
-  checked: 2026-07-24
-summary: "An independent, non-partisan Australian research and development organisation that designs and runs real-world deliberative democracy trials using randomly selected citizens."
+country: AU
+events:
+- date: '2007-01-01'
+  notable: true
+  title: newDemocracy Foundation launched — one of the first organisations worldwide
+    dedicated exclusively to citizens' assemblies
+- date: '2009-01-01'
+  notable: true
+  title: Australian Citizens' Parliament — 150 citizens deliberate on strengthening
+    Australia's democracy
+- date: '2017-01-01'
+  notable: false
+  title: Democracy R&D international network founded with newDemocracy as a founding
+    member
+- date: '2018-01-01'
+  notable: true
+  title: Helps design Ostbelgien's permanent Citizens' Council — world's first embedded
+    in a parliament
+last_checked: '2026-06-15'
 location:
   latitude: -33.8688
   longitude: 151.2093
   name: Sydney, Australia
   precision: city
-concepts:
-  - citizens-assembly
-  - deliberative-democracy
-  - sortition
-  - isegoria
-  - cognitive-division-of-labour
+logo: /assets/org-logos/newdemocracy.jpg
 rss_feed: https://www.newdemocracy.com.au/feed
-activity:
-  rss:
-    date: 2026-03-04
-    note: "Latest post: Final report: Upper House Inquiry into Community Consultation Practices."
-    url: "https://www.newdemocracy.com.au/2026/03/04/final-report-upper-house-inquiry-into-community-consultation-practices/?utm_source=rss&utm_medium=rss&utm_campaign=final-report-upper-house-inquiry-into-community-consultation-practices"
-    checked: 2026-06-08
-last_checked: "2026-06-15"
+status: active
+summary: An independent, non-partisan Australian research and development organisation
+  that designs and runs real-world deliberative democracy trials using randomly selected
+  citizens.
+title: newDemocracy Foundation
+type: research
+website: https://www.newdemocracy.com.au
 ---
 
 newDemocracy is one of Australia's most active organisations in the deliberative democracy space. It conducts real-world trials using random selection and deliberation — the jury model — to show that citizens, given good information and time to deliberate, can reach considered decisions on complex public issues.

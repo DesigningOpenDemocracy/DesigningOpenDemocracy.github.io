@@ -24,7 +24,7 @@ location:
 
 ![An invitation to meet RadicalxChange Foundation in Melbourne — Thursday 27 August, 6-8pm, Collingwood, presented with Small Giants Academy and Today](2026-08-07-radicalxchange-melbourne-event-banner.jpg)
 
-If you're in Melbourne on **Thursday 27 August**, come meet RadicalxChange Foundation — the international movement behind quadratic voting, quadratic funding, and the "Plurality" philosophy — as it launches its Australian chapter.
+If you're in Melbourne on **Thursday 27 August**, come meet RadicalxChange Foundation — the international movement behind quadratic voting, quadratic funding, and the "Plurality" philosophy — as it launches its Australian chapter. *(This is a RadicalxChange event, not a DOD event — we're just pointing at it.)*
 
 <p style="text-align:center; margin: 1.5rem 0;">
   <a class="hero-cta-btn hero-cta-primary" href="https://events.humanitix.com/radicalxchange-foundation-in-melbourne" target="_blank" rel="noopener">RSVP for 27 August →</a>

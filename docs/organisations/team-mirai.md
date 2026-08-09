@@ -1,30 +1,40 @@
 ---
-title: Team Mirai
-type: political-party
-status: active
-country: JP
-website: https://team-mir.ai
-logo: /assets/org-logos/team-mirai.png
+concepts:
+- democracy-tools
+- e-government
+- liquid-democracy
+- direct-democracy
 contact:
+  checked: 2026-08-09
   form: https://team-mir.ai/contact
   source: https://team-mir.ai
-  checked: 2026-08-09
-summary: "A Japanese political party founded in 2025 by AI engineer Takahiro Anno, advocating e-democracy and digital democracy — using technology platforms to enable direct citizen input into legislative processes. Won 1 Upper House seat in 2025 and 11 Lower House seats in the February 2026 general election."
-concepts:
-  - democracy-tools
-  - e-government
-  - liquid-democracy
-  - direct-democracy
+country: JP
+events:
+- date: '2025-05-08'
+  notable: true
+  title: Party officially established by AI engineer Takahiro Anno
+- date: '2025-07-20'
+  notable: true
+  title: Wins 1 seat in House of Councillors with 1.5 million votes (2.6%)
+  url: https://en.wikipedia.org/wiki/Team_Mirai
+- date: '2026-02-08'
+  notable: true
+  title: Wins 11 seats in House of Representatives with 3.8 million votes (~6.9%)
+  url: https://en.wikipedia.org/wiki/Team_Mirai
 location:
   latitude: 35.6762
   longitude: 139.6503
   name: Tokyo, Japan
   precision: city
-activity:
-  rss:
-    note: "No feed found"
-    checked: 2026-08-09
-last_checked: "2026-08-09"
+logo: /assets/org-logos/team-mirai.png
+status: active
+summary: A Japanese political party founded in 2025 by AI engineer Takahiro Anno,
+  advocating e-democracy and digital democracy — using technology platforms to enable
+  direct citizen input into legislative processes. Won 1 Upper House seat in 2025
+  and 11 Lower House seats in the February 2026 general election.
+title: Team Mirai
+type: political-party
+website: https://team-mir.ai
 ---
 
 Team Mirai (チームみらい, "Team Future") is a Japanese political party founded in May 2025 by Takahiro Anno, an AI engineer and entrepreneur. It frames itself as a technology-native political force: the mission is to use technology to make politics more transparent, efficient, and accessible — replacing opaque processes with open ones, and closing the distance between citizens and the decisions that shape their lives.
