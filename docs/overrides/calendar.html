@@ -18,11 +18,20 @@
 {%- if not calendar_events %}
 <p><em>No upcoming events are currently known. Orgs with an <code>ics_feed:</code> or manually curated <code>events:</code> entries will appear here once synced — see <a href="/organisations/organisations/">Democracy Landscape</a>.</em></p>
 {%- else %}
+
+<div class="calendar-filter-bar">
+  <label class="calendar-filter-label">Filter by country:</label>
+  <select id="calendar-country-filter" class="org-filter-select">
+    <option value="all">All countries</option>
+  </select>
+  <span id="calendar-filter-count" class="calendar-filter-count"></span>
+</div>
+
 {%- for month_key, month_events in grouped.items() %}
-<h2>{{ month_key }}</h2>
+<h2 class="calendar-month-heading">{{ month_key }}</h2>
 <ul class="calendar-event-list">
   {%- for e in month_events %}
-  <li class="calendar-event{% if e.notable %} calendar-event--notable{% endif %}">
+  <li class="calendar-event{% if e.notable %} calendar-event--notable{% endif %}" data-country="{{ e.country or '' }}">
     {%- if e.logo %}<img class="calendar-event-logo" src="{{ e.logo }}" alt="{{ e.org_title }} logo" loading="lazy">{% endif %}
     <span class="calendar-event-date">
       {%- if e.end_date and e.end_date != e.date -%}
@@ -57,7 +66,11 @@
       {%- endif %}
       {%- if e.org_slug %} — <a href="/organisations/{{ e.org_slug }}/">{{ e.org_title }}</a>
       {%- elif e.org_title %} — {{ e.org_title }}{% endif %}
+      {%- if e.country %}<span class="calendar-event-country">{{ e.country | country_name }}</span>{% endif %}
       <span class="activity-method-chip method-{{ e.source }}">{{ e.source }}</span>
+      {%- if e.url and e.url.startswith('http') %}
+      <a class="calendar-event-action" href="{{ e.url }}" target="_blank" rel="noopener">RSVP / Info →</a>
+      {%- endif %}
     </span>
   </li>
   {%- endfor %}
@@ -66,4 +79,69 @@
 {%- endif %}
 
 </div>
+{% endblock %}
+{% block scripts %}
+{{ super() }}
+<script>
+(function () {
+  var filter = document.getElementById('calendar-country-filter');
+  var events = document.querySelectorAll('.calendar-event');
+  var headings = document.querySelectorAll('.calendar-month-heading');
+  var countEl = document.getElementById('calendar-filter-count');
+
+  // Build country set from data attributes
+  var countries = new Set();
+  events.forEach(function (el) {
+    var c = el.getAttribute('data-country');
+    if (c) countries.add(c);
+  });
+
+  // Populate dropdown, sorted
+  Array.from(countries).sort().forEach(function (c) {
+    var opt = document.createElement('option');
+    opt.value = c;
+    opt.textContent = c;
+    filter.appendChild(opt);
+  });
+
+  function updateCount() {
+    var visible = 0;
+    events.forEach(function (el) {
+      if (el.style.display !== 'none') visible++;
+    });
+    countEl.textContent = visible + ' event' + (visible !== 1 ? 's' : '');
+  }
+
+  function applyFilter() {
+    var selected = filter.value;
+    var anyVisible = false;
+
+    // Show/hide events
+    events.forEach(function (el) {
+      var c = el.getAttribute('data-country');
+      if (selected === 'all' || c === selected) {
+        el.style.display = '';
+        anyVisible = true;
+      } else {
+        el.style.display = 'none';
+      }
+    });
+
+    // Show/hide month headings — hide if all children hidden
+    headings.forEach(function (h) {
+      var list = h.nextElementSibling;
+      if (!list || list.tagName !== 'UL') return;
+      var visible = Array.from(list.children).some(function (li) {
+        return li.style.display !== 'none';
+      });
+      h.style.display = visible ? '' : 'none';
+    });
+
+    updateCount();
+  }
+
+  filter.addEventListener('change', applyFilter);
+  updateCount();
+})();
+</script>
 {% endblock %}

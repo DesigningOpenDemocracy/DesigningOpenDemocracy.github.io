@@ -94,6 +94,17 @@ def _org_logo(slug):
     except Exception:
         return None
 
+
+def _org_country(slug):
+    """Return country ISO code for an org slug, or None."""
+    path = os.path.join(ORGS_DIR, f"{slug}.md")
+    if not os.path.exists(path):
+        return None
+    try:
+        return frontmatter.load(path).metadata.get("country")
+    except Exception:
+        return None
+
 _events: list = []
 
 
@@ -132,6 +143,7 @@ def _load_manual_events(today):
                     "source": "manual",
                     "notable": bool(entry.get("notable")),
                     "logo": _org_logo(slug),
+                    "country": m.get("country"),
                 }
                 _maybe_add_translation(evt, evt["title"], evt["org_title"])
                 out.append(evt)
@@ -142,13 +154,14 @@ def _load_synced_events(today):
     """Future events cached from ics_feed syncs (util/sync_events.py)."""
     if frontmatter is None:
         return []
-    # Map slug -> org title so entries can carry a display name.
+    # Map slug -> org title and country so entries can carry a display name.
     titles = {}
     for path in glob.glob(os.path.join(ORGS_DIR, "*.md")):
         if os.path.basename(path) in SKIP_FILES:
             continue
         slug = os.path.basename(path)[:-3]
-        titles[slug] = frontmatter.load(path).metadata.get("title", slug)
+        m = frontmatter.load(path).metadata
+        titles[slug] = m.get("title", slug)
 
     out = []
     for path in sorted(glob.glob(os.path.join(SYNCED_EVENTS_DIR, "*.json"))):
@@ -171,6 +184,7 @@ def _load_synced_events(today):
                     "source": "ical",
                     "notable": False,
                     "logo": _org_logo(slug),
+                    "country": _org_country(slug),
                 }
                 _maybe_add_translation(evt, evt["title"], evt["org_title"])
                 out.append(evt)
@@ -210,6 +224,7 @@ def _load_blog_events(today):
             "source": "blog",
             "notable": bool(m.get("event_notable")),
             "logo": "/assets/dodlogo_transparent.png",
+            "country": "AU",
         })
     return out
 
@@ -275,3 +290,21 @@ def on_pre_build(config):
 
 def on_env(env, config, files):
     env.globals["calendar_events"] = _events
+    env.filters["country_name"] = lambda c: _COUNTRY_NAMES.get(str(c).upper(), str(c)) if c else ""
+
+
+_COUNTRY_NAMES = {
+    "AR": "Argentina", "AT": "Austria", "AU": "Australia", "BE": "Belgium",
+    "BO": "Bolivia", "BR": "Brazil", "CA": "Canada", "CH": "Switzerland",
+    "CL": "Chile", "CN": "China", "CO": "Colombia", "CU": "Cuba",
+    "DE": "Germany", "DK": "Denmark", "EC": "Ecuador", "EE": "Estonia",
+    "ES": "Spain", "EU": "European Union", "FI": "Finland", "FR": "France",
+    "GB": "United Kingdom", "GH": "Ghana", "ID": "Indonesia", "IL": "Israel",
+    "IN": "India", "IS": "Iceland", "IT": "Italy", "JP": "Japan",
+    "KE": "Kenya", "KR": "South Korea", "LB": "Lebanon", "MX": "Mexico",
+    "MY": "Malaysia", "NG": "Nigeria", "NO": "Norway", "NZ": "New Zealand",
+    "PH": "Philippines", "PL": "Poland", "PS": "Palestine", "RO": "Romania",
+    "RU": "Russia", "RW": "Rwanda", "SE": "Sweden", "SK": "Slovakia",
+    "SN": "Senegal", "SY": "Syria", "TW": "Taiwan", "UA": "Ukraine",
+    "US": "United States", "VE": "Venezuela", "VN": "Vietnam", "ZA": "South Africa",
+}

@@ -1309,6 +1309,48 @@
   opacity: 0.65;
   margin-top: 0.15em;
 }
+/* Country filter bar */
+.calendar-filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4em 0.8em;
+  margin-bottom: 1em;
+}
+.calendar-filter-label {
+  font-size: 0.85em;
+  font-weight: 600;
+}
+.calendar-filter-count {
+  font-size: 0.82em;
+  opacity: 0.65;
+}
+/* Country label on each event */
+.calendar-event-country {
+  font-size: 0.78em;
+  opacity: 0.6;
+  margin-left: 0.3em;
+}
+.calendar-event-country::before {
+  content: "· ";
+}
+/* RSVP / ticket action button */
+.calendar-event-action {
+  display: inline-block;
+  font-size: 0.73em;
+  font-weight: 700;
+  margin-left: 0.5em;
+  padding: 0.15em 0.55em;
+  border-radius: 3px;
+  background: rgba(255, 179, 0, 0.13);
+  color: #ffb300;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.calendar-event-action:hover {
+  background: rgba(255, 179, 0, 0.28);
+}
 
 /* Org page timeline (docs/overrides/organisation.html) */
 .org-events-timeline {
