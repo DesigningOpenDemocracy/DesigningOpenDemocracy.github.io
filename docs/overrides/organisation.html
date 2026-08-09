@@ -24,7 +24,7 @@
 {%- set is_banner = page.meta.banner and true or false %}
 {%- if header_img %}
 <div class="org-page-header">
-  <img class="{{ 'org-page-banner' if is_banner else 'org-page-header-logo' }}{% if page.meta.logo_bg == 'dark' %} org-logo-needs-dark{% endif %}" src="{{ header_img }}" alt="{{ page.title }} logo">
+  <img class="{{ 'org-page-banner' if is_banner else 'org-page-header-logo' }}{% if page.meta.logo_bg == 'dark' %} org-logo-needs-dark{% elif page.meta.logo_bg == 'light' %} org-logo-needs-light{% endif %}" src="{{ header_img }}" alt="{{ page.title }} logo">
 </div>
 {%- endif %}
 {%- if page.meta.status or page.meta.type or page.meta.country or page.meta.website %}

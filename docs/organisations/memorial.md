@@ -5,6 +5,7 @@ status: active
 country: RU
 website: https://www.memorial.de
 logo: /assets/org-logos/memorial.png
+logo_bg: light
 news_page: https://www.memorial.de/nachrichten
 summary: "Russia's best-known human rights and historical memory organisation — documenting Soviet-era repression and ongoing abuses for 35 years. Liquidated by Russian courts in December 2021 and designated 'extremist' in April 2026; continues operating in exile through its international chapters, including Germany."
 last_checked: "2026-06-02"

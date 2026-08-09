@@ -5,6 +5,7 @@ status: active
 country: AU
 website: https://mckinnon.co
 logo: /assets/org-logos/susan-mckinnon-foundation-icon.png
+logo_bg: light
 banner: /assets/org-logos/susan-mckinnon-foundation.webp
 news_page: https://mckinnon.co/insights
 contact:

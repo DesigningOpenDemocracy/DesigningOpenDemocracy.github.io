@@ -5,6 +5,7 @@ status: active
 country: NZ
 website: https://helenclark.foundation
 logo: /assets/org-logos/helen-clark-foundation.png
+logo_bg: light
 contact:
   form: https://helenclark.foundation/contact
   source: https://helenclark.foundation

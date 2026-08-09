@@ -5,6 +5,7 @@ status: active
 country: CL
 website: https://www.espaciopublico.cl
 logo: /assets/org-logos/espacio-publico.png
+logo_bg: light
 contact:
   email: contacto@espaciopublico.cl
   source: https://www.espaciopublico.cl
