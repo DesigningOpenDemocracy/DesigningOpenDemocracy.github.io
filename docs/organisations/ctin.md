@@ -25,6 +25,7 @@ activity:
     note: "Latest post: Civic Tech Innovation Network Annual Report: 2024/25"
     url: https://civictech.africa/civic-tech-innovation-network-annual-report-2024-25/
     checked: 2026-08-09
+last_checked: "2026-08-09"
 ---
 
 The Civic Tech Innovation Network (CTIN) is a community of practice based at Wits University's Tshimologong Digital Innovation Precinct in Johannesburg. It functions as the connective tissue of Africa's civic-tech ecosystem: convening practitioners, documenting initiatives, building evidence, and strengthening capacity across the continent.
@@ -42,4 +43,3 @@ The network also runs a Regional Ambassadors Programme (with Mozilla IRL Fund su
 - [Democracy Tools](../concepts/democracy-tools.md)
 - [E-Government](../concepts/e-government.md)
 - [AfricTivistes](africtivistes.md)
-last_checked: "2026-08-09"

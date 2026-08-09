@@ -24,6 +24,7 @@ activity:
   rss:
     note: "No feed found"
     checked: 2026-08-09
+last_checked: "2026-08-09"
 ---
 
 AfricTivistes is a pan-African network of bloggers, cyber-activists, and civic-tech practitioners working across 45 countries. Founded in 2015 and headquartered in Dakar, its mission is to use digital tools and new technologies to strengthen democracy, promote good governance, and support sustainable development on the continent.
@@ -41,4 +42,3 @@ The organisation also runs the Charter Project Africa in partnership with the EU
 - [Democracy Tools](../concepts/democracy-tools.md)
 - [Democracy](../concepts/democracy.md)
 - [E-Government](../concepts/e-government.md)
-last_checked: "2026-08-09"

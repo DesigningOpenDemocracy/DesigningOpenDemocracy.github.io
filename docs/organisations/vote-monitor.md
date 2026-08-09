@@ -20,6 +20,7 @@ activity:
   manual:
     checked: 2026-06-09
     note: "Site defunct; last live Wayback capture ~2022. Code for Romania project — check code4.ro for successor activity"
+last_checked: "2026-06-09"
 ---
 
 Vote Monitor is an open-source election observation tool developed by Code for Romania, a Bucharest-based civic tech organisation. It was created for the 2014 Romanian presidential elections, when civic monitoring organisations needed a faster, more reliable alternative to paper-based observer reporting forms.
@@ -40,4 +41,3 @@ While election observation is a narrower function than governance design, it add
 - [E-Government](../concepts/e-government.md)
 - [Radical Transparency](../concepts/radical-transparency.md)
 - [End-to-End Verifiable Voting System](../concepts/end-to-end-verifiable-voting-system.md)
-last_checked: "2026-06-09"

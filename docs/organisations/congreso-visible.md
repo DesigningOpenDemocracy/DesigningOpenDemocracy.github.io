@@ -23,6 +23,7 @@ activity:
   rss:
     note: "No feed found"
     checked: 2026-08-09
+last_checked: "2026-08-09"
 ---
 
 Congreso Visible is a legislative transparency project housed in the Department of Political Science at the Universidad de los Andes, tracking and publishing Colombian congressional activity since 1998. It is one of the longest-running parliamentary monitoring initiatives in Latin America and a model of university-hosted accountability infrastructure.
@@ -40,4 +41,3 @@ Congreso Visible is a transparency institution, not a participation platform —
 - [Radical Transparency](../concepts/radical-transparency.md)
 - [Representative Democracy](../concepts/representative-democracy.md)
 - [Democracy Tools](../concepts/democracy-tools.md)
-last_checked: "2026-08-09"

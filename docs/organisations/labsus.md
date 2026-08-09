@@ -25,6 +25,7 @@ activity:
     note: "Latest post: Oltre la rigenerazione urbana: la cura dei custodi come nuovo bene comune"
     url: https://www.labsus.org/2026/07/oltre-la-rigenerazione-urbana-la-cura-dei-custodi-come-nuovo-bene-comune/
     checked: 2026-08-09
+last_checked: "2026-08-09"
 ---
 
 Labsus — the Laboratory for Subsidiarity — has spent two decades developing and advocating for "amministrazione condivisa" (shared administration), a framework in which citizens and local government enter formal collaboration pacts to co-manage common goods: parks, cultural spaces, social services, confiscated mafia properties, and other shared resources. The model is grounded in the Italian constitution's principle of subsidiarity and has been adopted by hundreds of municipalities, producing what Labsus calls a parallel governance layer — not replacing representative institutions but supplementing them with structured citizen co-management.
@@ -40,4 +41,3 @@ The organisation runs a university-accredited higher education course in shared 
 - [Deliberative Democracy](../concepts/deliberative-democracy.md)
 - [Participatory Budgeting](../concepts/participatory-budgeting.md)
 - [Democracy Tools](../concepts/democracy-tools.md)
-last_checked: "2026-08-09"

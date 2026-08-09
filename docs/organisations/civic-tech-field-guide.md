@@ -30,7 +30,7 @@ activity:
     note: "Page last modified (from sitemap)"
     url: https://civictech.guide/sitemap.xml
     checked: 2026-08-09
-
+last_checked: "2026-08-09"
 ---
 
 The Civic Tech Field Guide is a crowdsourced directory â€” "the world's most complete collection of projects, tools, and organizations using tech for democracy."[^about] It was conceived in early 2016 by Micah Sifry (co-founder of Civic Hall), Matt Stempeck (then Director of Civic Technology at Microsoft), and Erin Simpson, starting life as an open spreadsheet before Stempeck built it into a full directory in 2018 under Civic Hall, with funding from the Knight Foundation, Luminate, and the Patrick J. McGovern Foundation.[^about] Stempeck spun it out independently in 2020; it's now fiscally sponsored by Superbloom Design (a US 501(c)3), with National Endowment for Democracy support since 2022.[^about]
@@ -57,4 +57,3 @@ Founded the same year as DOD (2016), the Field Guide runs on a similar premise â
 - [Democracy](../concepts/democracy.md)
 
 [^about]: ["About the Field Guide"](https://civictech.guide/about/), Civic Tech Field Guide.
-last_checked: "2026-08-09"

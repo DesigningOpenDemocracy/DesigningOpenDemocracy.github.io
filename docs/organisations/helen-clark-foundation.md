@@ -24,7 +24,7 @@ activity:
   sitemap:
     note: "Sitemap found, no lastmod"
     checked: 2026-08-09
-
+last_checked: "2026-08-09"
 ---
 
 The Helen Clark Foundation is an independent public policy think tank based at Auckland University of Technology (AUT). Its research spans four streams: public policy, governance and the future of democracy; sustainability and climate change; inclusive economic development; and a fourth focusing on social wellbeing. The governance and democracy stream positions the Foundation as New Zealand's most prominent institutional voice on democratic reform — distinct from the transparency-and-integrity focus of TINZ and the youth-voting-rights focus of Make It 16.
@@ -42,4 +42,3 @@ Named after Helen Clark, New Zealand's former Prime Minister and UN Development 
 - [Democracy](../concepts/democracy.md)
 - [Representative Democracy](../concepts/representative-democracy.md)
 - [McGuinness Institute](mcguinness-institute.md)
-last_checked: "2026-08-09"

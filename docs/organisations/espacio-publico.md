@@ -26,6 +26,7 @@ activity:
     note: "Latest post: Más rigor, menos ruido"
     url: https://espaciopublico.cl/mas-rigor-menos-ruido/
     checked: 2026-08-09
+last_checked: "2026-08-09"
 ---
 
 Espacio Público is an independent research centre in Santiago working across nine thematic areas: democracy and anti-corruption, innovation and ICT, diversity and human rights, cities and territory, youth and education, sustainable growth, social security (health and pensions), sustainability and natural resources, and public opinion. Its Democracy and Anti-Corruption stream includes Lupa Electoral, a campaign finance transparency tool that has been tracking the flow of money into Chilean elections since the post-2015 reforms to political financing.
@@ -43,4 +44,3 @@ The organisation is not a deliberative practitioner or a civic-tech builder — 
 - [Democracy](../concepts/democracy.md)
 - [Radical Transparency](../concepts/radical-transparency.md)
 - [Ciudadanía Inteligente](ciudadania-inteligente.md)
-last_checked: "2026-08-09"

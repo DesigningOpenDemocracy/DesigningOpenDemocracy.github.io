@@ -45,6 +45,11 @@ except ImportError:
     print("Missing dependency: pip install python-frontmatter")
     sys.exit(1)
 
+try:
+    import yaml as _yaml
+except ImportError:
+    _yaml = None
+
 DOCS_DIR = os.path.join(os.path.dirname(__file__), "..", "docs")
 ORGS_DIR = os.path.join(DOCS_DIR, "organisations")
 CONCEPTS_DIR = os.path.join(DOCS_DIR, "concepts")
@@ -75,6 +80,40 @@ def load_concept_slugs():
         for p in glob.glob(os.path.join(CONCEPTS_DIR, "*.md"))
         if os.path.basename(p) != "concepts.md"
     }
+
+
+def check_frontmatter_syntax(content, slug):
+    """Return list of (rule_id, message) for frontmatter syntax issues."""
+    issues = []
+    lines = content.split("\n")
+
+    if not lines or lines[0] != "---":
+        issues.append(("fm-opening", "File does not start with ---"))
+        return issues
+
+    fm_end = -1
+    for i in range(1, len(lines)):
+        if lines[i] == "---":
+            fm_end = i
+            break
+
+    if fm_end == -1:
+        issues.append(("fm-closing", "No closing --- delimiter found"))
+        return issues
+
+    fm_text = "\n".join(lines[1:fm_end])
+
+    if _yaml is not None:
+        try:
+            _yaml.safe_load(fm_text)
+        except _yaml.YAMLError as e:
+            issues.append(("fm-yaml", f"YAML parse error: {str(e)[:100]}"))
+
+    for i in range(fm_end + 1, len(lines)):
+        if lines[i] == "---":
+            issues.append(("fm-stray", f"Stray '---' in body at line {i + 1}"))
+
+    return issues
 
 
 def check_org(meta, valid_slugs):
@@ -141,6 +180,23 @@ def main():
     for path in sorted(glob.glob(os.path.join(ORGS_DIR, "*.md"))):
         if os.path.basename(path) in SKIP_FILES:
             continue
+
+        slug = os.path.basename(path)[:-3]
+
+        # Syntax check runs on raw content (catches YAML errors in unparseable files)
+        with open(path, encoding="utf-8") as f:
+            raw = f.read()
+        syntax_issues = check_frontmatter_syntax(raw, slug)
+        if syntax_issues:
+            pages_checked += 1
+            issues_found += len(syntax_issues)
+            print(f"  {slug}")
+            print(f"    {os.path.relpath(path)}")
+            for rule_id, msg in syntax_issues:
+                print(f"    ✗ {msg}")
+            print()
+            continue  # skip structural checks if syntax is broken
+
         post = frontmatter.load(path)
         meta = post.metadata
 

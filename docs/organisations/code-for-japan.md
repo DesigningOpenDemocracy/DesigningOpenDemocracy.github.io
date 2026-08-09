@@ -23,6 +23,7 @@ activity:
   sitemap:
     note: "Sitemap found, no lastmod"
     checked: 2026-08-09
+last_checked: "2026-08-09"
 ---
 
 Code for Japan is the Japanese node of the international Code for All network, bringing the civic-tech model — citizens using technology to solve local problems in partnership with government — to Japan. The organisation runs an open community on Slack and Notion where anyone can participate in projects spanning open data, disaster response technology, and digital government transformation.
@@ -40,4 +41,3 @@ Japan's civic-tech scene is less dense than equivalents in Taiwan (g0v, vTaiwan)
 - [Democracy Tools](../concepts/democracy-tools.md)
 - [E-Government](../concepts/e-government.md)
 - [Team Mirai](team-mirai.md)
-last_checked: "2026-08-09"

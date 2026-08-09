@@ -46,6 +46,7 @@ activity:
     checked: 2026-08-08
 last_checked: "2026-08-08"
 ---
+
 The Sortition Foundation is the UK's leading organisation specifically dedicated to sortition — the selection of decision-makers by random lot rather than election. Founded by Brett Hennig, it combines advocacy, campaigning, and hands-on lottery services: the foundation designs and runs the stratified random-selection process for major deliberative exercises, including the European Citizens' Panels convened by the European Commission.
 
 ## Campaigns and projects

@@ -17,6 +17,7 @@ contact:
   source: MiVote's own "Values & Vision" PDF (see Links below), sourced via Wayback Machine snapshot of mivote.org.au
   checked: 2026-08-02
   note: "Historical contact — MiVote is defunct; address unlikely to still be monitored."
+last_checked: "2026-08-02"
 ---
 
 ![MiVote logo](mivote-mark.png)
@@ -88,4 +89,3 @@ The movement and its technology did not end with the Australian party's deregist
 - [Digipol](digipol.md)
 - [Evaluating Democracy Reform Proposals](../../blog/posts/2018-05-03.md) — Nick Merange's comparative scoring of Flux, MiVote, Online Direct Democracy, and Citizens' Juries
 - [Catching up with Adam Jacoby (2021 podcast)](../../blog/posts/2021-08-07-podcast.md) — the later UK chapter, the Horizon State lesson, and the 60% consensus finding
-last_checked: "2026-08-02"

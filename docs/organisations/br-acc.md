@@ -22,6 +22,7 @@ activity:
     date: 2026-06-07
     note: "brunoclz privated all his repo, so looks like his project has ended"
     checked: 2026-06-07
+last_checked: "2026-06-07"
 ---
 
 br/acc (World Transparency Graph) is an open-source project by Brazilian developer Bruno Clz that addresses a fundamental problem in civic accountability: government data is technically "open" but so fragmented across dozens of separate portals that it is practically inaccessible.
@@ -43,4 +44,3 @@ With 1.7k GitHub stars and 463 forks, it has significant traction in the Brazili
 - [E-Government](../concepts/e-government.md)
 - [Radical Transparency](../concepts/radical-transparency.md)
 - [Accountability Sink](../concepts/accountability-sink.md)
-last_checked: "2026-06-07"

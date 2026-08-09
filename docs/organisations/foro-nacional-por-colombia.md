@@ -25,6 +25,7 @@ activity:
     note: "Latest post: Informe Cuatro. Observatorio de la participación ciudadana en la implementación "
     url: https://foro.org.co/informe-cuatro-observatorio-de-la-participacion-ciudadana-en-la-implementacion-del-acuerdo-final/
     checked: 2026-08-09
+last_checked: "2026-08-09"
 ---
 
 Foro Nacional por Colombia is one of Colombia's longest-established civil society organisations, working on citizen participation, peace accord implementation (through the OPIAF observatory — Observatorio de la Participación Ciudadana en la Implementación del Acuerdo de Paz), extractive industry governance, and youth civic education. Its institutional longevity — decades rather than years — is itself significant in a country where many civil society organisations are project-funded and short-lived.
@@ -43,4 +44,3 @@ Foro Nacional occupies the institutional civil-society space in Colombia's democ
 - [Deliberative Democracy](../concepts/deliberative-democracy.md)
 - [Transparencia por Colombia](transparencia-por-colombia.md)
 - [Congreso Visible](congreso-visible.md)
-last_checked: "2026-08-09"

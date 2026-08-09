@@ -26,6 +26,7 @@ activity:
     note: "Page last modified (from sitemap)"
     url: https://itsrio.org/sitemap.xml
     checked: 2026-08-09
+last_checked: "2026-08-09"
 ---
 
 ITS Rio (Instituto de Tecnologia e Sociedade do Rio) is a non-profit research institute studying the impact and future of technology on Brazil and the world. Among its four research areas — Democracy and Technology, Law and Technology, Education, and Rethinking Innovation — the Democracy track is directly engaged with how technological change reshapes democratic governance.
@@ -43,4 +44,3 @@ ITS Rio occupies a different position in the democracy landscape than organisati
 - [Democracy Tools](../concepts/democracy-tools.md)
 - [E-Government](../concepts/e-government.md)
 - [Democracy](../concepts/democracy.md)
-last_checked: "2026-08-09"

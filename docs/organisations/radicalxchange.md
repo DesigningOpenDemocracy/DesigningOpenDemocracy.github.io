@@ -25,6 +25,7 @@ activity:
     note: "Confirmed active via own website and an upcoming Melbourne chapter launch event (27 Aug 2026)."
     url: https://www.radicalxchange.org/
     checked: 2026-08-07
+last_checked: "2026-08-07"
 ---
 
 RadicalxChange Foundation is an international nonprofit and movement, founded by economist [E. Glen Weyl](https://glenweyl.com/) in 2018 following public discussion of his book *Radical Markets: Uprooting Capitalism and Democracy for a Just Society* (with Eric Posner). It grew from roughly fifty volunteers into a foundation that convened its first major conference in Detroit in March 2019.[^glenweyl][^propublica]
@@ -81,4 +82,3 @@ RadicalxChange's Melbourne chapter is newly forming. A public launch event — "
 [^humanitix]: ["An invitation to meet RadicalxChange Foundation in Melbourne"](https://events.humanitix.com/radicalxchange-foundation-in-melbourne), Humanitix, 27 August 2026.
 
 [^pioneerspost]: ["'We are already the super intelligence we are looking for': Audrey Tang and others' big ideas for a better future at SEWF25"](https://www.pioneerspost.com/news-views/20251106/we-are-already-the-super-intelligence-we-are-looking-audrey-tang-and-others-big), Pioneers Post.
-last_checked: "2026-08-07"

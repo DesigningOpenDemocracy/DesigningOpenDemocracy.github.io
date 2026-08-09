@@ -26,7 +26,7 @@ activity:
     note: "Page last modified (from sitemap)"
     url: https://fidemocracy.org/sitemap.xml
     checked: 2026-08-09
-
+last_checked: "2026-08-09"
 ---
 
 FIDE — the Federation for Innovation in Democracy — is an independent network of democratic innovators working to embed deliberative processes in the machinery of governance. Its three pillars are training (capacity-building schools, masterclasses for lead facilitators), design (process architecture for governments at every level, from municipalities to international bodies), and evaluation (learning series, publications, quality standards).
@@ -44,4 +44,3 @@ FIDE has worked with the Council of Europe, CESE France, and city governments in
 - [Sortition](../concepts/sortition.md)
 - [G1000](g1000.md)
 - [newDemocracy Foundation](newdemocracy.md)
-last_checked: "2026-08-09"

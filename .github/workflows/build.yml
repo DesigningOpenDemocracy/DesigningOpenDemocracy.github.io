@@ -23,7 +23,10 @@ jobs:
           cache: pip
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: pip install -r requirements.txt && pip install pyyaml
+
+      - name: Lint org pages
+        run: python util/lint_orgs.py
 
       - name: Build docs
         run: mkdocs build --strict
