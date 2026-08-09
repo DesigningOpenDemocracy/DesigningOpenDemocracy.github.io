@@ -70,6 +70,9 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/DesigningOpenDemocracy/DesigningOpenDemocracy.github.io
       name: Contribute on GitHub
+    - icon: fontawesome/brands/telegram
+      link: https://t.me/joinchat/HNk_UBX8A7jBPJPbAZU5Zg
+      name: Join on Telegram
 
 hooks:
   - hooks/draft_exclude.py

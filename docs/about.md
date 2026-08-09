@@ -12,6 +12,12 @@ We are **nonpartisan** and do not presume any single democratic model to be supe
 
 → *To get involved, see the [Community](community/community.md) page.*
 
+→ *[Join the DOD Telegram](https://t.me/joinchat/HNk_UBX8A7jBPJPbAZU5Zg) — where we coordinate meetups, share events, and discuss what's next.*
+
+<p style="margin-top: 0.5em;">
+  <a class="hero-cta-btn hero-cta-primary" href="https://t.me/joinchat/HNk_UBX8A7jBPJPbAZU5Zg" target="_blank" rel="noopener">Join the Telegram →</a>
+</p>
+
 ## Podcast
 
 In-depth discussions on opportunities for reforming democratic institutions — from local organisations to national governments — through technology and other practices.
