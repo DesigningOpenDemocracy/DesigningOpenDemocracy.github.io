@@ -1,13 +1,17 @@
 """
 calendar_export.py — MkDocs hook: build the site-wide future-events calendar.
 
-Merges two sources of *future* events into one list at build time (no network
-calls here — see util/sync_events.py for the fetch step that populates the
-cache this reads):
+Merges three sources of *future* events into one list at build time (no
+network calls here — see util/sync_events.py for the fetch step that
+populates the cache this reads):
 
   1. Manually curated `events:` entries in org frontmatter (date >= today)
   2. Cached iCal-synced events in docs/data/events/<slug>.json, written by
      util/sync_events.py for orgs with `ics_feed:` set (date >= today)
+  3. DOD's own events, announced via an optional `event_date:` field on any
+     (non-draft) blog post — distinct from `date:` (the post's publish date),
+     since a post is usually written before or after the event it announces,
+     not on the day itself.
 
 Output:
   - docs/calendar.ics       — combined VCALENDAR, downloadable/subscribable
@@ -30,10 +34,18 @@ try:
 except ImportError:
     frontmatter = None
 
+try:
+    from pymdownx.slugs import slugify as _pymdownx_slugify
+    _slugify = _pymdownx_slugify(case="lower")
+except ImportError:
+    _slugify = None
+
 DOCS_DIR = os.path.join(os.path.dirname(__file__), "..", "docs")
 ORGS_DIR = os.path.join(DOCS_DIR, "organisations")
+BLOG_POSTS_DIR = os.path.join(DOCS_DIR, "blog", "posts")
 SYNCED_EVENTS_DIR = os.path.join(DOCS_DIR, "data", "events")
 SKIP_FILES = {"organisations.md"}
+DOD_TITLE = "Designing Open Democracy"
 
 _events: list = []
 
@@ -108,6 +120,40 @@ def _load_synced_events(today):
     return out
 
 
+def _load_blog_events(today):
+    """DOD's own future events, from `event_date:` on non-draft blog posts.
+
+    The post's URL is computed with the same {date}/{slug} scheme and
+    pymdownx slugify function mkdocs-material's blog plugin uses by default
+    (verified against a real built post) — this hook runs at on_pre_build,
+    before pages have real page.url values to read instead.
+    """
+    if frontmatter is None or _slugify is None:
+        return []
+    out = []
+    for path in sorted(glob.glob(os.path.join(BLOG_POSTS_DIR, "*.md"))):
+        post = frontmatter.load(path)
+        m = post.metadata
+        if m.get("draft"):
+            continue
+        event_d = _parse_date(m.get("event_date"))
+        if not event_d or event_d < today:
+            continue
+        post_d = _parse_date(m.get("date"))
+        if not post_d:
+            continue
+        slug = _slugify(m.get("title", ""), "-")
+        out.append({
+            "date": event_d,
+            "title": m.get("title", "Untitled post"),
+            "url": f"/blog/{post_d:%Y/%m/%d}/{slug}/",
+            "org_slug": "",
+            "org_title": DOD_TITLE,
+            "source": "blog",
+        })
+    return out
+
+
 def _ics_escape(s):
     return (s or "").replace("\\", "\\\\").replace(",", "\\,").replace(";", "\\;").replace("\n", "\\n")
 
@@ -144,7 +190,7 @@ def on_pre_build(config):
     if frontmatter is None:
         return
     today = date.today()
-    events = _load_manual_events(today) + _load_synced_events(today)
+    events = _load_manual_events(today) + _load_synced_events(today) + _load_blog_events(today)
     events.sort(key=lambda e: e["date"])
 
     _events.clear()

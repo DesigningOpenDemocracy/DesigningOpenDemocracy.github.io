@@ -4,6 +4,7 @@
 - [About](about.md)
     - [Philosophy](philosophy/index.md)
 - [Blog](/blog/)
+- [Calendar](calendar.md)
 - [Community](community/community.md)
     - community/*.md
     - [Projects](projects/projects.md)

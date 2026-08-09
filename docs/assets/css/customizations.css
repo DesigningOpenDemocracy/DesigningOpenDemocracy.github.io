@@ -1211,6 +1211,7 @@
 .method-dod      { background: rgba(13,71,161,0.25);   color: #90caf9; }
 .method-social   { background: rgba(136,14,79,0.25);   color: #f48fb1; }
 .method-scrape   { background: rgba(0,105,92,0.25);    color: #80cbc4; }
+.method-blog     { background: rgba(191,54,12,0.25);   color: #ff8a65; }
 .activity-note {
   font-size: 0.85em;
   color: var(--md-default-fg-color--light);

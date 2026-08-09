@@ -127,17 +127,22 @@ The invariants recorded there are not immutable. Any document in this repo — i
   - `hint:` — written automatically by `scrape_news.py` on failure. Values: `spa` (JS-rendered, headless browser needed), `no_markup` (page loaded but no structured date signals — consider requesting RSS), `bot_blocked` (403/429 — consider requesting RSS), `unreachable` (network error). `spa` and `bot_blocked` are skipped on re-runs unless `--force`.
 - **Key people** is an optional section. Add it only when named individuals are central to understanding the org's story (founders, government champions, notable critics) and the information is sourced. Link names to Wikipedia where a confirmed article exists. Do not add it just to fill the template — most orgs are better served by institutional description.
 
-### Calendar (`docs/community/calendar.md`)
+### Calendar (`docs/calendar.md`)
+
+Top-level nav tab, next to Blog — promoted there deliberately (not left nested under Community) since "what's coming up" is a distinct, equally prominent use-case to "what we've written about."
 
 Three deliberately separate mechanisms handle "events," each for a different purpose — don't collapse them:
 
 1. **External event links** — an org's own calendar/events page, linked from its org page (e.g. `news_page:`, or just a link in prose). No parsing, no sync — a pointer, nothing more.
 2. **Org history/upcoming timeline** (per-org, on the org's own page) — the `events:` frontmatter field, manually curated by an editor (see Organisation pages section above). Split at build time into "Upcoming events" / "History" by `hooks/org_events.py`. Purely editorial judgment about what's *significant* for that org — not a feed dump.
-3. **Site-wide future calendar** (`docs/community/calendar.md`, template `calendar.html`) — a forward-looking, cross-org aggregate meant to help people find events to attend, not an archive. Built from two future-only sources merged by `hooks/calendar_export.py`:
+3. **Site-wide future calendar** (`docs/calendar.md`, template `calendar.html`) — a forward-looking, cross-org aggregate meant to help people find events to attend, not an archive. Built from three future-only sources merged by `hooks/calendar_export.py`:
    - Every org's `events:` entries with a future date (the same field from #2 — no separate declaration needed to appear here)
    - Every org's cached `ics_feed` sync, written by `util/sync_events.py` to `docs/data/events/<slug>.json` (committed; the build hook only reads this, it never fetches feeds itself)
+   - DOD's own events: any non-draft blog post with an `event_date:` field (see Blog posts section below) — kept deliberately separate from the post's `date:` (publish date), since a post is usually written before or after the event it covers, not on the day itself. Confirmed on real posts: `2026-08-07-radicalxchange-melbourne.md` was published 2026-08-07 about an event on 2026-08-27 — those two dates are not interchangeable.
 
-   Output: `docs/calendar.ics` (combined, subscribable VCALENDAR — each `VEVENT` tagged `CATEGORIES:` with the org name) and `docs/data/events.json`, both gitignored/regenerated at build time. `docs/data/events/<slug>.json` (the sync cache) is the opposite — it **is** committed, since it's the thing the network-free build hook depends on.
+   Output: `docs/calendar.ics` (combined, subscribable VCALENDAR — each `VEVENT` tagged `CATEGORIES:` with the org/DOD name) and `docs/data/events.json`, both gitignored/regenerated at build time. `docs/data/events/<slug>.json` (the sync cache) is the opposite — it **is** committed, since it's the thing the network-free build hook depends on.
+
+   Blog post URLs are computed directly from frontmatter (`date:` + `title:`) using the same `{date}/{slug}` scheme and `pymdownx.slugs.slugify(case="lower")` function mkdocs-material's blog plugin uses by default — verified to reproduce a real built post's URL exactly. This is a dependency on blog-plugin internals/defaults, not the public config surface; if a future mkdocs-material upgrade changes `post_url_format` or the slugify function, blog-sourced calendar links would silently point to the wrong URL. `util/check_internal_links.py` is the safety net — run it before pushing (per the top of this file) and it will catch any resulting broken links.
 
    Because raw `ics_feed` calendars are usually full of routine/recurring items (confirmed on g0v's feed — regular meetup dates, not milestones), the aggregate calendar does not attempt to filter for "importance" — it only filters by date (future only). If noise becomes a problem, that's a future curation layer on top of this, not a reason to skip syncing an org's feed.
 
@@ -147,6 +152,7 @@ Three deliberately separate mechanisms handle "events," each for a different pur
 - Claude may assist with drafting, editing, or structuring a post, but should not create and publish a blog post autonomously — especially for factual or politically sensitive content (legislation, election results, organisational positions).
 - When a topic warrants a blog post but no human has written one, note the gap rather than filling it unilaterally. Do not let "the information exists" be sufficient reason to publish.
 - Concept and organisation pages are appropriate for AI-assisted content (with sourcing discipline); blog posts are not.
+- `event_date: YYYY-MM-DD` — optional; set this when a post announces or covers a specific event, and its date differs from the post's own `date:` (publish date) — which it usually does, since a post is normally written before or after the event, not on the day. Picked up by `hooks/calendar_export.py` to surface DOD's own upcoming events on the site-wide `/calendar/` page (only while `event_date:` is still in the future — no need to remove it once the event has passed). See Calendar section above.
 
 **Exception — AI-assisted research posts:**
 
@@ -315,7 +321,7 @@ regardless of what's written.
 | `project.html` | `docs/overrides/` | Project pages — must set `template: project.html` in frontmatter |
 | `home.html` | `docs/overrides/` | Home page — hero pitch, CTA buttons, active projects, map |
 | `knowledge-graph.html` | `docs/overrides/` | `docs/knowledge-graph.md` — interactive Cytoscape.js graph; set via `template:` frontmatter |
-| `calendar.html` | `docs/overrides/` | `docs/community/calendar.md` — site-wide future events list + `.ics` subscribe link; set via `template:` frontmatter |
+| `calendar.html` | `docs/overrides/` | `docs/calendar.md` — site-wide future events list + `.ics` subscribe link; set via `template:` frontmatter |
 
 ### Hooks
 
