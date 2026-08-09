@@ -37,48 +37,61 @@
 <ul class="calendar-event-list">
   {%- for e in month_events %}
   <li class="calendar-event{% if e.notable %} calendar-event--notable{% endif %}" data-country="{{ e.country or '' }}" data-country-label="{{ e.country | country_flag }} {{ e.country | country_name }}">
-    {%- if e.logo %}<img class="calendar-event-logo" src="{{ e.logo }}" alt="{{ e.org_title }} logo" loading="lazy">{% endif %}
-    <span class="calendar-event-date">
-      {%- if e.end_date and e.end_date != e.date -%}
-        {%- if e.date.strftime('%b %Y') == e.end_date.strftime('%b %Y') -%}
-          {{ e.date.strftime('%d') }}–{{ e.end_date.strftime('%d %b') }}
-        {%- elif e.date.year == e.end_date.year -%}
-          {{ e.date.strftime('%d %b') }}–{{ e.end_date.strftime('%d %b') }}
+    <div class="calendar-event-meta">
+      <div class="calendar-event-meta-date">
+        {%- if e.end_date and e.end_date != e.date -%}
+          {%- if e.date.strftime('%b %Y') == e.end_date.strftime('%b %Y') -%}
+            {{ e.date.strftime('%d') }}–{{ e.end_date.strftime('%d %b') }}
+          {%- elif e.date.year == e.end_date.year -%}
+            {{ e.date.strftime('%d %b') }}–{{ e.end_date.strftime('%d %b') }}
+          {%- else -%}
+            {{ e.date.strftime('%d %b %Y') }}–{{ e.end_date.strftime('%d %b %Y') }}
+          {%- endif -%}
         {%- else -%}
-          {{ e.date.strftime('%d %b %Y') }}–{{ e.end_date.strftime('%d %b %Y') }}
+          {{ e.date.strftime('%a, %d %b') }}
         {%- endif -%}
-      {%- else -%}
-        {{ e.date.strftime('%a, %d %b') }}
-      {%- endif -%}
-    </span>
-    <span class="calendar-event-body">
-      {%- if e.type %}<span class="calendar-event-type">{{ type_icons.get(e.type, '📅') }} {{ e.type }}</span>{% endif %}
-      {%- if e.notable %}<span class="calendar-event-badge">★ Major event</span>{% endif %}
-      {%- if e.title_en -%}
-        <span class="calendar-event-title-en">
-          {%- if e.url and e.source == 'blog' %}<a href="{{ e.url }}">{{ e.title_en }}</a>
-          {%- elif e.url %}<a href="{{ e.url }}" target="_blank" rel="noopener">{{ e.title_en }}</a>
-          {%- else %}{{ e.title_en }}{% endif -%}
-        </span>
-        <span class="calendar-event-title-orig">
-          {%- if e.url and e.source == 'blog' %}<a href="{{ e.url }}">{{ e.title }}</a>
-          {%- elif e.url %}<a href="{{ e.url }}" target="_blank" rel="noopener">{{ e.title }}</a>
-          {%- else %}{{ e.title }}{% endif -%}
-        </span>
-      {%- else -%}
-        {%- if e.url and e.source == 'blog' %}<a href="{{ e.url }}">{{ e.title }}</a>
-        {%- elif e.url %}<a href="{{ e.url }}" target="_blank" rel="noopener">{{ e.title }}</a>
-        {%- else %}{{ e.title }}{% endif -%}
+      </div>
+      {%- if e.time %}
+      <div class="calendar-event-meta-time">{{ e.time }}{%- if e.end_time %}&thinsp;–&thinsp;{{ e.end_time }}{% endif %}</div>
       {%- endif %}
-      {%- if e.org_slug %} — <a href="/organisations/{{ e.org_slug }}/">{{ e.org_title }}</a>
-      {%- elif e.org_title %} — {{ e.org_title }}{% endif %}
-      {%- if e.location %}<span class="calendar-event-location">{{ e.location }}</span>{% endif %}
-      {%- if e.country %}<span class="calendar-event-country">{{ e.country | country_flag }} {{ e.country | country_name }}</span>{% endif %}
-      <span class="activity-method-chip method-{{ e.source }}">{{ e.source }}</span>
+      {%- if e.location %}
+      <div class="calendar-event-meta-location">📍 {{ e.location }}</div>
+      {%- endif %}
+      {%- if e.country %}
+      <div class="calendar-event-meta-country">{{ e.country | country_flag }} {{ e.country | country_name }}</div>
+      {%- endif %}
       {%- if e.url and e.url.startswith('http') %}
       <a class="calendar-event-action" href="{{ e.url }}" target="_blank" rel="noopener">RSVP / Info →</a>
       {%- endif %}
-    </span>
+    </div>
+    <div class="calendar-event-main">
+      {%- if e.type %}<span class="calendar-event-type">{{ type_icons.get(e.type, '📅') }} {{ e.type }}</span>{% endif %}
+      {%- if e.notable %}<span class="calendar-event-badge">★ Major event</span>{% endif %}
+      <span class="calendar-event-body">
+        {%- if e.title_en -%}
+          <span class="calendar-event-title-en">
+            {%- if e.url and e.source == 'blog' %}<a href="{{ e.url }}">{{ e.title_en }}</a>
+            {%- elif e.url %}<a href="{{ e.url }}" target="_blank" rel="noopener">{{ e.title_en }}</a>
+            {%- else %}{{ e.title_en }}{% endif -%}
+          </span>
+          <span class="calendar-event-title-orig">
+            {%- if e.url and e.source == 'blog' %}<a href="{{ e.url }}">{{ e.title }}</a>
+            {%- elif e.url %}<a href="{{ e.url }}" target="_blank" rel="noopener">{{ e.title }}</a>
+            {%- else %}{{ e.title }}{% endif -%}
+          </span>
+        {%- else -%}
+          {%- if e.url and e.source == 'blog' %}<a href="{{ e.url }}">{{ e.title }}</a>
+          {%- elif e.url %}<a href="{{ e.url }}" target="_blank" rel="noopener">{{ e.title }}</a>
+          {%- else %}{{ e.title }}{% endif -%}
+        {%- endif %}
+      </span>
+      <div class="calendar-event-orgline">
+        {%- if e.logo %}<img class="calendar-event-logo" src="{{ e.logo }}" alt="{{ e.org_title }} logo" loading="lazy">{% endif %}
+        {%- if e.org_slug %}<a href="/organisations/{{ e.org_slug }}/">{{ e.org_title }}</a>
+        {%- elif e.org_title %}{{ e.org_title }}{% endif %}
+        <span class="activity-method-chip method-{{ e.source }}">{{ e.source }}</span>
+      </div>
+    </div>
   </li>
   {%- endfor %}
 </ul>
@@ -96,7 +109,6 @@
   var headings = document.querySelectorAll('.calendar-month-heading');
   var countEl = document.getElementById('calendar-filter-count');
 
-  // Build country set from data attributes (label = flag + name for display)
   var countryMap = {};
   events.forEach(function (el) {
     var code = el.getAttribute('data-country');
@@ -104,7 +116,6 @@
     if (code && label) countryMap[code] = label;
   });
 
-  // Populate dropdown, sorted by label
   Object.entries(countryMap).sort(function (a, b) {
     return a[1].localeCompare(b[1]);
   }).forEach(function (pair) {
@@ -124,20 +135,15 @@
 
   function applyFilter() {
     var selected = filter.value;
-    var anyVisible = false;
-
-    // Show/hide events
     events.forEach(function (el) {
       var c = el.getAttribute('data-country');
       if (selected === 'all' || c === selected) {
         el.style.display = '';
-        anyVisible = true;
       } else {
         el.style.display = 'none';
       }
     });
 
-    // Show/hide month headings — hide if all children hidden
     headings.forEach(function (h) {
       var list = h.nextElementSibling;
       if (!list || list.tagName !== 'UL') return;
