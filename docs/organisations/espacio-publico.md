@@ -1,32 +1,39 @@
 ---
-title: Espacio Público
-type: think-tank
-status: active
-country: CL
-website: https://www.espaciopublico.cl
-logo: /assets/org-logos/espacio-publico.png
-logo_bg: light
+activity:
+  rss:
+    checked: 2026-08-09
+    date: 2026-07-23
+    note: 'Latest post: Más rigor, menos ruido'
+    url: https://espaciopublico.cl/mas-rigor-menos-ruido/
+concepts:
+- democracy
+- radical-transparency
+- deliberative-democracy
 contact:
+  checked: 2026-08-09
   email: contacto@espaciopublico.cl
   source: https://www.espaciopublico.cl
-  checked: 2026-08-09
-summary: "An independent Chilean think tank working on democracy and anti-corruption, innovation and ICT, diversity and human rights, and urban policy — named among the '100 Think Tanks to Watch 2025'."
-concepts:
-  - democracy
-  - radical-transparency
-  - deliberative-democracy
+country: CL
+events:
+- date: '2026-08-20'
+  notable: false
+  title: Book launch 'Los dueños de la libertad' by Soledad Vallejos — Santiago
+  url: https://espaciopublico.cl/eventos/
+last_checked: '2026-08-09'
 location:
   latitude: -33.4489
   longitude: -70.6693
   name: Santiago, Chile
   precision: city
-activity:
-  rss:
-    date: 2026-07-23
-    note: "Latest post: Más rigor, menos ruido"
-    url: https://espaciopublico.cl/mas-rigor-menos-ruido/
-    checked: 2026-08-09
-last_checked: "2026-08-09"
+logo: /assets/org-logos/espacio-publico.png
+logo_bg: light
+status: active
+summary: An independent Chilean think tank working on democracy and anti-corruption,
+  innovation and ICT, diversity and human rights, and urban policy — named among the
+  '100 Think Tanks to Watch 2025'.
+title: Espacio Público
+type: think-tank
+website: https://www.espaciopublico.cl
 ---
 
 Espacio Público is an independent research centre in Santiago working across nine thematic areas: democracy and anti-corruption, innovation and ICT, diversity and human rights, cities and territory, youth and education, sustainable growth, social security (health and pensions), sustainability and natural resources, and public opinion. Its Democracy and Anti-Corruption stream includes Lupa Electoral, a campaign finance transparency tool that has been tracking the flow of money into Chilean elections since the post-2015 reforms to political financing.
