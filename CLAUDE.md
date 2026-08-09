@@ -71,7 +71,8 @@ The invariants recorded there are not immutable. Any document in this repo — i
 - The `organisation.html` template is **auto-applied** to all org pages via `hooks/org_template.py` — no need to set `template:` in frontmatter unless overriding.
 - `rss_feed: <url>` — optional; the org's RSS or Atom feed URL. Populated by `util/check_rss.py`.
 - `news_page: <url>` — optional; URL of the org's news or blog index page. Opt-in for `util/scrape_news.py`.
-- `ics_feed: <url>` — optional; URL of an iCal/ICS calendar feed. Opt-in for `util/check_rss.py --update-activity` (writes `activity.ical`).
+- `ics_feed: <url>` — optional; URL of an iCal/ICS calendar feed. Opt-in for `util/check_rss.py --update-activity` (writes `activity.ical`) **and** for `util/sync_events.py`, which caches the org's upcoming events into `docs/data/events/<slug>.json` for the site-wide calendar (see Calendar section below).
+- `events: [{date, title, url, end_date, notable}]` — optional; a manually curated, editorial list of an org's significant milestones — **not** derived from `ics_feed:` and not meant to mirror it. `hooks/org_events.py` splits entries at build time into `page.meta.upcoming_events` (date >= today) and `page.meta.history_events` (date < today), rendered by `organisation.html` as two timeline sections. Keep each entry to one line — a terse `title`, no prose paragraph; if a milestone needs real narrative, put that in the page body instead (same judgment call as the optional "Key people" section). Future-dated entries here are also picked up by the site-wide calendar (see below) as a `manual`-source candidate alongside `ics_feed`-synced ones — no separate declaration needed. `end_date:` is optional, for events spanning more than one day (inclusive last day — same convention `util/sync_events.py` uses for iCal `DTEND`). `notable: true` is optional, for events significant enough to warrant the calendar's highlighted "major event" styling — use sparingly, it's meant to stand out.
 - `related_orgs: [slug, slug]` — optional; list of org slugs with a direct relationship to this org. Rendered as orange edges in the knowledge graph. Declare on one side only — direction is normalised so duplicates are automatically suppressed.
 - `contact:` — optional dict of publicly-published contact details, sourced only from the org's own official website (never third-party registries/aggregators):
   ```yaml
@@ -126,12 +127,38 @@ The invariants recorded there are not immutable. Any document in this repo — i
   - `hint:` — written automatically by `scrape_news.py` on failure. Values: `spa` (JS-rendered, headless browser needed), `no_markup` (page loaded but no structured date signals — consider requesting RSS), `bot_blocked` (403/429 — consider requesting RSS), `unreachable` (network error). `spa` and `bot_blocked` are skipped on re-runs unless `--force`.
 - **Key people** is an optional section. Add it only when named individuals are central to understanding the org's story (founders, government champions, notable critics) and the information is sourced. Link names to Wikipedia where a confirmed article exists. Do not add it just to fill the template — most orgs are better served by institutional description.
 
+### Calendar (`docs/calendar.md`)
+
+Top-level nav tab, next to Blog — promoted there deliberately (not left nested under Community) since "what's coming up" is a distinct, equally prominent use-case to "what we've written about."
+
+Three deliberately separate mechanisms handle "events," each for a different purpose — don't collapse them:
+
+1. **External event links** — an org's own calendar/events page, linked from its org page (e.g. `news_page:`, or just a link in prose). No parsing, no sync — a pointer, nothing more.
+2. **Org history/upcoming timeline** (per-org, on the org's own page) — the `events:` frontmatter field, manually curated by an editor (see Organisation pages section above). Split at build time into "Upcoming events" / "History" by `hooks/org_events.py`. Purely editorial judgment about what's *significant* for that org — not a feed dump.
+3. **Site-wide future calendar** (`docs/calendar.md`, template `calendar.html`) — a forward-looking, cross-org aggregate meant to help people find events to attend, not an archive. Built from three future-only sources merged by `hooks/calendar_export.py`:
+   - Every org's `events:` entries with a future date (the same field from #2 — no separate declaration needed to appear here)
+   - Every org's cached `ics_feed` sync, written by `util/sync_events.py` to `docs/data/events/<slug>.json` (committed; the build hook only reads this, it never fetches feeds itself)
+   - DOD's own events: any non-draft blog post with an `event_date:` field (see Blog posts section below) — kept deliberately separate from the post's `date:` (publish date), since a post is usually written before or after the event it covers, not on the day itself. Confirmed on real posts: `2026-08-07-radicalxchange-melbourne.md` was published 2026-08-07 about an event on 2026-08-27 — those two dates are not interchangeable.
+
+   Output: `docs/calendar.ics` (combined, subscribable VCALENDAR — each `VEVENT` tagged `CATEGORIES:` with the org/DOD name) and `docs/data/events.json`, both gitignored/regenerated at build time. `docs/data/events/<slug>.json` (the sync cache) is the opposite — it **is** committed, since it's the thing the network-free build hook depends on.
+
+   Blog post URLs are computed directly from frontmatter (`date:` + `title:`) using the same `{date}/{slug}` scheme and `pymdownx.slugs.slugify(case="lower")` function mkdocs-material's blog plugin uses by default — verified to reproduce a real built post's URL exactly. This is a dependency on blog-plugin internals/defaults, not the public config surface; if a future mkdocs-material upgrade changes `post_url_format` or the slugify function, blog-sourced calendar links would silently point to the wrong URL. `util/check_internal_links.py` is the safety net — run it before pushing (per the top of this file) and it will catch any resulting broken links.
+
+   Because raw `ics_feed` calendars are usually full of routine/recurring items (confirmed on g0v's feed — regular meetup dates, not milestones), the aggregate calendar does not attempt to filter for "importance" — it only filters by date (future only). If noise becomes a problem, that's a future curation layer on top of this, not a reason to skip syncing an org's feed.
+
+   Two additive, opt-in refinements on top of the base date filter — neither one hides anything, so they don't conflict with the "no importance filtering" rule above:
+   - **Multi-day events** — `end_date:` (org `events:`) / `event_end_date:` (blog posts) / iCal `DTEND` (auto-parsed by `util/sync_events.py`, exclusive per RFC 5545 §3.6.1 so a normal 1-day all-day event doesn't misreport as 2 days) render as a date range ("27–31 Aug") instead of a single day.
+   - **"Major event" highlighting** — `notable: true` (org `events:`) / `event_notable: true` (blog posts) gets the calendar's highlighted styling (colored cell, larger text, a "★ Major event" badge). Deliberately **not** available on raw `ics_feed` syncs — a synced feed has no "this one matters more" signal to key off, only the curated sources (manual `events:`, blog posts) do.
+
 ### Blog posts (`docs/blog/posts/`)
 
 - Blog posts are **human-authored**. A human must take primary responsibility for the content, accuracy, and framing of every post.
 - Claude may assist with drafting, editing, or structuring a post, but should not create and publish a blog post autonomously — especially for factual or politically sensitive content (legislation, election results, organisational positions).
 - When a topic warrants a blog post but no human has written one, note the gap rather than filling it unilaterally. Do not let "the information exists" be sufficient reason to publish.
 - Concept and organisation pages are appropriate for AI-assisted content (with sourcing discipline); blog posts are not.
+- `event_date: YYYY-MM-DD` — optional; set this when a post announces or covers a specific event, and its date differs from the post's own `date:` (publish date) — which it usually does, since a post is normally written before or after the event, not on the day. Picked up by `hooks/calendar_export.py` to surface DOD's own upcoming events on the site-wide `/calendar/` page (only while `event_date:` is still in the future — no need to remove it once the event has passed). See Calendar section above.
+  - `event_end_date: YYYY-MM-DD` — optional; inclusive last day, for an event spanning more than one day.
+  - `event_notable: true` — optional; gives the event the calendar's highlighted "major event" styling. Use sparingly.
 
 **Exception — AI-assisted research posts:**
 
@@ -300,6 +327,7 @@ regardless of what's written.
 | `project.html` | `docs/overrides/` | Project pages — must set `template: project.html` in frontmatter |
 | `home.html` | `docs/overrides/` | Home page — hero pitch, CTA buttons, active projects, map |
 | `knowledge-graph.html` | `docs/overrides/` | `docs/knowledge-graph.md` — interactive Cytoscape.js graph; set via `template:` frontmatter |
+| `calendar.html` | `docs/overrides/` | `docs/calendar.md` — site-wide future events list + `.ics` subscribe link; set via `template:` frontmatter |
 
 ### Hooks
 
@@ -308,6 +336,8 @@ regardless of what's written.
 - `hooks/activity_selector.py` — fires on `on_page_context`; reads `page.meta.activity` and resolves it to a single `page.meta.computed_activity` dict using priority order and per-source staleness thresholds. Used by `organisation.html` to render the "Last activity" row. See priority/staleness table in the Organisation pages section.
 - `hooks/data_export.py` — fires on `on_pre_build`; generates static data files under `docs/data/` from all org frontmatter. See Data exports section below.
 - `hooks/graph_builder.py` — fires on `on_page_context` and `on_post_build`; collects concept/org/project nodes and edges (from `concepts:` frontmatter and "See also" sections) into `graph.json`. Org/project nodes include `activity_date` (best date across all `activity:` sources) used by the graph UI to fade dormant nodes.
+- `hooks/org_events.py` — fires on `on_page_context`; splits a single org's `events:` frontmatter into `page.meta.upcoming_events` / `page.meta.history_events` for that org's own page timeline. See Calendar section below.
+- `hooks/calendar_export.py` — fires on `on_pre_build`/`on_env`; merges every org's future `events:` entries with every org's cached `ics_feed` sync (`docs/data/events/<slug>.json`) into one sorted list, writes `docs/calendar.ics` + `docs/data/events.json`, and injects the list as the `calendar_events` Jinja global used by `docs/overrides/calendar.html`. Makes no network calls itself — see Calendar section below for the fetch step.
 
 ### Frontmatter — active gates
 
@@ -356,6 +386,16 @@ These are linked from the bottom of the org index table for researcher download.
   python util/check_rss.py --skip-existing    # skip orgs already with rss_feed:
   ```
   Probes 23 common feed URL paths per site. For real feeds, writes `activity.rss` with latest post date and title. For sitemaps (fallback), writes `activity.sitemap` with `<lastmod>` date. When `ics_feed:` is set, also fetches the iCal calendar and writes `activity.ical` with the most recent past event date. Never overwrites a newer existing entry for the same source.
+
+- `util/sync_events.py` — fetches every org's `ics_feed:` and caches *upcoming* events (not just the latest, unlike `check_rss.py`'s activity check above) to `docs/data/events/<slug>.json`, which is committed to the repo and consumed by `hooks/calendar_export.py` at build time. This is the only place the calendar's iCal data touches the network — the build itself never fetches anything, matching the rest of this repo's fetch-then-cache convention.
+  ```
+  python util/sync_events.py                    # sync all active orgs with ics_feed:
+  python util/sync_events.py --all               # include inactive orgs
+  python util/sync_events.py --slug g0v          # single org
+  python util/sync_events.py --dry-run           # print results without writing
+  python util/sync_events.py --max-events 15     # cap events cached per org (default 15)
+  python util/sync_events.py --horizon-days 365  # only keep events this many days out (default 365)
+  ```
 
 - `util/scrape_news.py` — scrapes news/blog index pages for orgs that lack a usable RSS feed. Opt-in: only runs for orgs with `news_page:` set in frontmatter. Extracts dates from multiple signals in priority order: JSON-LD → `<meta>` / microdata (`itemprop="datePublished"`) → `<time datetime>` → `<time>` text content → URL path patterns (`/2026/01/15/`) → human-readable text date patterns ("January 15, 2026" etc.). Also detects `<link rel="alternate">` RSS/Atom feeds in the page `<head>`. Respects robots.txt. Writes `activity.scrape`.
   ```
