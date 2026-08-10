@@ -142,15 +142,17 @@
   <li class="{% if e.notable %}org-event--notable{% endif %}">
     <span class="org-event-date">{{ e.date }}{% if e.end_date %}–{{ e.end_date }}{% endif %}</span>
     <span class="org-event-title">{% if e.url %}<a href="{{ e.url }}" target="_blank" rel="noopener">{{ e.title }}</a>{% else %}{{ e.title }}{% endif %}</span>
-    {%- if e.proof_level %}<span class="org-event-proof proof-{{ e.proof_level }}" title="Proof level: {{ e.proof_level }}{% if e.proof_warning %} (overridden){% endif %}">{{ e.proof_level }}</span>{% endif %}
-    {%- if e.proof_warning %}<span class="org-event-warning" title="Proof override: source is unverified">⚠</span>{% endif %}
-    {%- if e.url %}<a href="{{ e.url }}" target="_blank" rel="noopener" class="org-event-source-btn" title="View source">↗ source</a>{% elif e.source %}<span class="org-event-source-btn" title="{{ e.source }}">↗ cited</span>{% endif %}
     {%- if e.coverage_url %}<span class="org-event-coverage"> — <a href="{{ e.coverage_url }}">DOD coverage</a></span>{%- endif %}
-    {%- if e.note or e.quote %}
+    {%- if e.proof_level or e.url or e.source %}
     <details class="org-event-detail">
-      <summary>evidence</summary>
+      <summary>
+        {%- if e.proof_level %}<span class="org-event-proof proof-{{ e.proof_level }}">Sourcing: {{ e.proof_level | capitalize }}</span>{% endif %}
+        {%- if e.proof_warning %}<span class="org-event-warning">⚠ Unverified</span>{% endif %}
+      </summary>
       {%- if e.quote %}<blockquote class="org-event-quote">{{ e.quote | e }}</blockquote>{% endif %}
       {%- if e.note %}<p class="org-event-note">{{ e.note | e }}</p>{% endif %}
+      {%- if e.proof_warning %}<p class="org-event-warning-note">No note, quote, or fragment behind this citation yet — click through to verify manually.</p>{% endif %}
+      {%- if e.url %}<a href="{{ e.url }}" target="_blank" rel="noopener" class="org-event-source-btn">↗ View source</a>{% elif e.source %}<p class="org-event-source-cited">Cited: {{ e.source | e }}</p>{% endif %}
     </details>
     {%- endif %}
   </li>
