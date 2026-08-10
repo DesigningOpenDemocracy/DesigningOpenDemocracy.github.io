@@ -35,7 +35,7 @@ events:
   title: Launched PlanningAlerts
   url: https://www.openaustraliafoundation.org.au/2009/12/21/launching-our-new-website-planning-alerts/
   quote: '21 December 2009 Launching our new website: Planning Alerts'
-  proof_level: medium
+  proof_level: high
   url_checked: '2026-08-10'
   notable: false
 - date: '2014-10-21'

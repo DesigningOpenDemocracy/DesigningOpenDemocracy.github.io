@@ -26,7 +26,7 @@ events:
   quote: MiVote launched its world-leading democratic model in February with a test
     vote asking Australians how they want to participate in the country’s decision-making
     process.
-  proof_level: medium
+  proof_level: high
   url_checked: '2026-08-10'
   notable: true
 - date: '2019-01-01'
@@ -35,7 +35,7 @@ events:
   url: https://www.designingopendemocracy.com/blog/2021/08/07/podcast-catching-up-with-adam-jacoby-founder-of-mivote/
   quote: The Australian party deregistered around 2019; the movement and technology
     continued under a different structure.
-  proof_level: medium
+  proof_level: high
   url_checked: '2026-08-10'
   notable: true
 last_checked: '2026-08-02'

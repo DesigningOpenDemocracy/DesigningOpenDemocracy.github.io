@@ -26,7 +26,7 @@ events:
   url: https://icodrops.com/horizon-state/
   quote: The TGE (Token Generation Event) announced by Horizon State has successfully
     concluded on Nov 19, 2017
-  proof_level: medium
+  proof_level: high
   url_checked: '2026-08-10'
   notable: false
 - date: '2019-02-01'

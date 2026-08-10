@@ -29,7 +29,7 @@ events:
   quote: 'https://liferay.com * SPDX-License-Identifier: LGPL-2.1-or-later OR LicenseRef-Liferay-DXP-EULA-2.0.0-2023-06
     */ (function () { AUI().applyConfig({ groups: { alloyeditor: { base: MODULE_PATH
     + ''/js/le'
-  proof_level: medium
+  proof_level: high
   url_checked: '2026-08-10'
   notable: true
 activity:

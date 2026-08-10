@@ -32,7 +32,7 @@ events:
   quote: Sym Roe was a volunteer for the mySociety enterprise during the run up to
     the 2010 general election, working to increase the amount of information available
     online about the candidates.
-  proof_level: medium
+  proof_level: high
   url_checked: '2026-08-10'
   notable: false
 - date: '2015-01-01'
@@ -41,7 +41,7 @@ events:
   url: https://www.nesta.org.uk/feature/new-radicals-2016/democracy-club/
   quote: Press Jobs Privacy Terms of use Accessibility Contact us &copy; 2026 Nesta
     Nesta is a registered charity in England and Wales 1144091 and Scotland SC042833.
-  proof_level: medium
+  proof_level: high
   url_checked: '2026-08-10'
   notable: true
 activity:

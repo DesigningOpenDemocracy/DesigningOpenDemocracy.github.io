@@ -28,7 +28,7 @@ events:
   url: https://adrindia.org/about-adr/mission-and-vision
   quote: The Association for Democratic Reforms (ADR) was established in 1999 by a
     group of professors from the Indian Institute of Management (IIM) Ahmedabad.
-  proof_level: medium
+  proof_level: high
   url_checked: '2026-08-10'
   notable: true
 activity:

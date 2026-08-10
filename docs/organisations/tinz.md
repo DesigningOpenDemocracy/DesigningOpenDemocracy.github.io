@@ -35,7 +35,7 @@ events:
   title: Became an incorporated society and registered charity
   url: https://www.transparency.org.nz/our-story
   quote: and it became an incorporated society and charity in 2001.
-  proof_level: medium
+  proof_level: high
   url_checked: '2026-08-10'
   notable: false
 activity:

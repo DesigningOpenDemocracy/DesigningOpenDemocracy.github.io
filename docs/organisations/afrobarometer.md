@@ -29,7 +29,7 @@ events:
   url: https://www.afrobarometer.org/about/history/
   quote: professors Michael Bratton, Robert Mattes, and E. Gyimah-Boadi merge three
     independent survey research projects to form Afrobarometer (AB)
-  proof_level: medium
+  proof_level: high
   url_checked: '2026-08-10'
   notable: true
 activity:

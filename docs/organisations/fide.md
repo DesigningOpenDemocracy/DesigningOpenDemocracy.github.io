@@ -39,7 +39,7 @@ events:
     standard, Vienna'
   url: https://www.fidemocracy.org/news
   quote: FIDE Forum 2026
-  proof_level: medium
+  proof_level: high
   url_checked: '2026-08-10'
   end_date: '2026-11-19'
   notable: true

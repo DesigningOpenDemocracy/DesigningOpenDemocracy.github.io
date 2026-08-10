@@ -17,7 +17,7 @@ events:
   url: https://en.wikipedia.org/wiki/Flux_(political_party)
   note: Flux was registered at a federal level from 2016, but it was de-registered
     in 2022 for failing to meet the increased requirement of 1500 members.
-  proof_level: high
+  proof_level: medium
   url_checked: '2026-08-10'
   notable: true
 contributors:

@@ -28,7 +28,7 @@ events:
   title: 2026 CAPaD AGM — Annual General Meeting, online via Zoom
   url: https://canberra-alliance.org.au/events/
   quote: 2026 CAPaD AGM
-  proof_level: medium
+  proof_level: high
   url_checked: '2026-08-10'
   notable: false
   type: meeting
@@ -61,7 +61,7 @@ events:
     Curtin ACT
   url: https://canberra-alliance.org.au/events/
   quote: Community Assembly – following up our MP asks for 2026
-  proof_level: medium
+  proof_level: high
   url_checked: '2026-08-10'
   notable: false
   type: assembly

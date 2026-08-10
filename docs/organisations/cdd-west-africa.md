@@ -29,7 +29,7 @@ events:
   url: https://www.cddwestafrica.org/about-us/
   quote: The Centre for Democracy and Development (CDD) was established in the United
     Kingdom in 1997
-  proof_level: medium
+  proof_level: high
   url_checked: '2026-08-10'
   notable: true
 activity:

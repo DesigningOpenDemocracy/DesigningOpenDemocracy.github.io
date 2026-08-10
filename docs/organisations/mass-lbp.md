@@ -34,7 +34,7 @@ events:
   title: Ran the Citizens' Reference Panel on Ontario Health Services
   url: https://www.masslbp.com/work-panels
   quote: Citizens' Reference Panel on Ontario Health Services
-  proof_level: medium
+  proof_level: high
   url_checked: '2026-08-10'
   notable: false
 activity:

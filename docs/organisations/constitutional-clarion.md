@@ -23,7 +23,7 @@ events:
   url: https://en.wikipedia.org/wiki/Anne_Twomey_(academic)
   note: In 2022, Twomey started the Constitutional Clarion YouTube channel, where
     she publishes her work for a more general audience.
-  proof_level: high
+  proof_level: medium
   url_checked: '2026-08-10'
   notable: true
 activity:

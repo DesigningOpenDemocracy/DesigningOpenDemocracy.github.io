@@ -30,7 +30,7 @@ events:
     == Founding ==
 
     GOLOS was founded as an associati'
-  proof_level: medium
+  proof_level: high
   url_checked: '2026-08-10'
   notable: true
 ---

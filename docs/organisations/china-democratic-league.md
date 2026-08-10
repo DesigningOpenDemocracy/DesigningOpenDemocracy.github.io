@@ -27,7 +27,7 @@ events:
     left-leaning intellectuals during the Second Sino-Japanese War
   url: https://www.mmzy.org.cn/mmgk/jianjie/default.aspx
   quote: 民盟于1941年3月19日在重庆秘密成立
-  proof_level: medium
+  proof_level: high
   url_checked: '2026-08-10'
   notable: true
 activity:

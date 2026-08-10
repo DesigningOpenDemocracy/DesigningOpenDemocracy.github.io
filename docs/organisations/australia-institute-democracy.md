@@ -32,7 +32,7 @@ events:
   url: https://australiainstitute.org.au/events/dr-hugh-saddler-memorial-lecture/
   quote: Join us at the 2026 Dr Hugh Saddler Memorial Lecture, featuring former ACT
     Minister, Greens Leader, and long‑serving parliamentarian Shane Rattenbury.
-  proof_level: medium
+  proof_level: high
   url_checked: '2026-08-10'
   notable: false
   type: lecture

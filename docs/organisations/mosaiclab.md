@@ -51,7 +51,7 @@ events:
     for Research
   url: https://mosaiclab.com.au/contributions-to-the-field
   quote: we were awarded the IAP2 Australasia Core Values Award for Research in 2018
-  proof_level: medium
+  proof_level: high
   url_checked: '2026-08-10'
   notable: false
 - date: '2018-01-01'

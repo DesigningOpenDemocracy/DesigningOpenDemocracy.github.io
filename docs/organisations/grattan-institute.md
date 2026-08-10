@@ -31,7 +31,7 @@ events:
   url: https://en.wikipedia.org/wiki/Grattan_Institute
   note: Grattan Institute was incorporated in November 2008, and its founding chief
     executive, John Daley, commenced in January 2009.
-  proof_level: high
+  proof_level: medium
   url_checked: '2026-08-10'
   notable: true
 activity:

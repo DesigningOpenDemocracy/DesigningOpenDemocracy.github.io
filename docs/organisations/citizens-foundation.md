@@ -30,7 +30,7 @@ events:
   quote: The Citizens Foundation is a non-profit organization based in Reykjavík,
     Iceland, and founded under Icelandic law to promote electronic collaborative democracy
     around the globe and to develop the soft
-  proof_level: medium
+  proof_level: high
   url_checked: '2026-08-10'
   notable: true
 - date: '2010-02-01'
@@ -38,7 +38,7 @@ events:
     for citizens to vote on
   url: https://en.wikipedia.org/wiki/Citizens_Foundation
   quote: Shadow Parliament (Skuggaþing) opened formally in February 2010
-  proof_level: medium
+  proof_level: high
   url_checked: '2026-08-10'
   notable: false
 - date: '2010-05-25'
@@ -46,7 +46,7 @@ events:
     and 400+ ideas within three days
   url: https://en.wikipedia.org/wiki/Citizens_Foundation
   quote: on 25 May 2010, the website Shadow City (Skuggaborg) opened
-  proof_level: medium
+  proof_level: high
   url_checked: '2026-08-10'
   notable: true
 activity:

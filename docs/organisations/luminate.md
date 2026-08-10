@@ -30,7 +30,7 @@ events:
   quote: 'Officially launched in recent weeks, Luminate aims to fund projects and
     organizations that can drive changes that fall into one of four categories: civic
     empowerment, data and digital rights, transpar'
-  proof_level: medium
+  proof_level: high
   url_checked: '2026-08-10'
   notable: true
 activity:

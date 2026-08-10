@@ -40,7 +40,7 @@ events:
   quote: 'Susan McKinnon Foundation Co-Founder Grant Rule said: &ldquo;Now, more than
     ever, we need to publicly recognise political leadership that shows vision and
     courage and has had a constructive impact for'
-  proof_level: medium
+  proof_level: high
   url_checked: '2026-08-10'
   notable: true
 activity:

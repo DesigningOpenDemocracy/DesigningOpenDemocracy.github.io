@@ -30,7 +30,7 @@ events:
   quote: Through the Sustainable Living Festival, the Coalition of Everyone held four
     mock Citizens' Assemblies on the topics of; fashion, fire, regenerative agriculture
     and water.
-  proof_level: medium
+  proof_level: high
   url_checked: '2026-08-10'
   notable: false
 ---

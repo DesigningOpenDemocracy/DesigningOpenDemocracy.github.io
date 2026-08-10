@@ -29,7 +29,7 @@ events:
   url: https://en.wikipedia.org/wiki/The_Helen_Clark_Foundation
   note: Founded in 2019 and named after Helen Clark, former New Zealand Prime Minister
     and UNDP administrator
-  proof_level: high
+  proof_level: medium
   url_checked: '2026-08-10'
   notable: true
 activity:

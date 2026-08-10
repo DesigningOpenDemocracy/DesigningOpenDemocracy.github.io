@@ -41,7 +41,7 @@ events:
   quote: Search for companies or officers All Search for companies Companies Search
     for officers Officers Search for disqualfied officers Disqualifications {{#type_is_company}}
     {{{title}}} {{#snippet}} Matchin
-  proof_level: medium
+  proof_level: high
   url_checked: '2026-08-10'
   notable: true
 activity:

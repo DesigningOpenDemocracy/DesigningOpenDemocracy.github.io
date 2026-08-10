@@ -32,7 +32,7 @@ events:
   url: https://en.wikipedia.org/wiki/Nicholas_Gruen
   note: In 2000 he founded economic consultancy Lateral Economics and a discount finance
     broker Peach Home Loans.
-  proof_level: high
+  proof_level: medium
   url_checked: '2026-08-10'
   notable: true
 activity:

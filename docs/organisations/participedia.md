@@ -33,7 +33,7 @@ events:
   quote: His projects have examined democratic reform initiatives in electoral reform,
     urban planning, public services, ecosystem management, transnational governance,
     and the role of technology within the are
-  proof_level: medium
+  proof_level: high
   url_checked: '2026-08-10'
   notable: true
 activity:

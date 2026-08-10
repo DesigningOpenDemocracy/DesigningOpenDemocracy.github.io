@@ -56,7 +56,7 @@ events:
   url: https://en.wikipedia.org/wiki/LiquidFeedback
   quote: In June 2010, the developers of LiquidFeedback founded Interaktive Demokratie
     e.V., an independent and non-partisan research institute.
-  proof_level: medium
+  proof_level: high
   url_checked: '2026-08-10'
   notable: false
 - date: '2012-09-01'
@@ -65,7 +65,7 @@ events:
   url: https://en.wikipedia.org/wiki/LiquidFeedback
   quote: The initial implementation of LiquidFeedback for public engagement occurred
     in Friesland County, Germany, in September 2012.
-  proof_level: medium
+  proof_level: high
   url_checked: '2026-08-10'
   notable: false
 activity:

@@ -33,7 +33,7 @@ events:
     ==== Citizen-led initiatives ====
 
     Code for Pakistan (CfP), founded in 201'
-  proof_level: medium
+  proof_level: high
   url_checked: '2026-08-10'
   notable: true
 activity:

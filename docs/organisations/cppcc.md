@@ -28,7 +28,7 @@ events:
 
     The Political Consultative Conference was established in 1945 as part of peace
     negotiations between the Kuomintang and the'
-  proof_level: medium
+  proof_level: high
   url_checked: '2026-08-10'
   notable: true
 activity:

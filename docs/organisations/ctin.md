@@ -28,7 +28,7 @@ events:
     community of practice
   url: https://civictech.africa/about-ctin
   quote: CTIN was launched in 2017 as a learning network.
-  proof_level: medium
+  proof_level: high
   url_checked: '2026-08-10'
   notable: true
 activity:

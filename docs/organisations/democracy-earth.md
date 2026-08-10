@@ -25,7 +25,7 @@ events:
   quote: 'Democracy Earth Founded: 2015 Batch: Winter 2015 Team Size: 2 Status: Active
     Location: Madrid, Spain Founders Pia Mancini Founder Pia Mancini Founder Santiago
     Siri Founder/President Santiago Siri Foun'
-  proof_level: medium
+  proof_level: high
   url_checked: '2026-08-10'
   notable: true
 activity:

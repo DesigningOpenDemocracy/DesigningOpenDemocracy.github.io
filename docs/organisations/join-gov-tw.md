@@ -32,7 +32,7 @@ events:
   quote: The research dives into g0v, a community of hackers and people from the open
     source community who have launched various initiatives to overcome the information
     asymmetry with government and crowdsourc
-  proof_level: medium
+  proof_level: high
   url_checked: '2026-08-10'
   notable: true
 activity:

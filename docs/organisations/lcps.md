@@ -28,7 +28,7 @@ events:
   quote: 'd; topics publications platforms tracker about MULTIMEDIA: PODCASTS VIDEOS
     DATA VISUALIZATION contact careers press AR contact careers press The center Board
     of directors Fellows Our Team Our Mission '
-  proof_level: medium
+  proof_level: high
   url_checked: '2026-08-10'
   notable: true
 - date: '2006-01-01'

@@ -17,7 +17,7 @@ events:
   url: https://web.archive.org/web/20190824085752/https://bhive.coop/our-story/
   quote: $35,000 was raised in donations to kickstart bHive from an amazing group
     of Founding Patrons.
-  proof_level: medium
+  proof_level: high
   url_checked: '2026-08-10'
   notable: false
 - date: '2017-01-01'
