@@ -16,6 +16,12 @@ concepts:
 - democracy
 - radical-transparency
 - e-government
+events:
+- date: '2018-10-01'
+  notable: true
+  title: Launched as an independent global philanthropic organisation, spun out
+    of Omidyar Network's Governance & Citizen Engagement initiative
+  url: https://www.govtech.com/civic/new-global-civic-tech-group-emerges-from-the-omidyar-group.html
 location:
   latitude: 51.5074
   longitude: -0.1278

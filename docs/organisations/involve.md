@@ -16,6 +16,11 @@ concepts:
 - deliberative-democracy
 - participatory-budgeting
 - direct-democracy
+events:
+- date: '2003-01-01'
+  notable: true
+  title: Founded
+  url: https://register-of-charities.charitycommission.gov.uk/en/charity-search/-/charity-details/4027987
 location:
   latitude: 51.5074
   longitude: -0.1278

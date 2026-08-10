@@ -16,6 +16,15 @@ concepts:
 - deliberative-democracy
 - citizens-assembly
 - sortition
+events:
+- date: '2007-01-01'
+  notable: true
+  title: Founded by Peter MacLeod
+  url: https://www.masslbp.com/about
+- date: '2011-01-01'
+  notable: false
+  title: Ran the Citizens' Reference Panel on Ontario Health Services
+  url: https://www.masslbp.com/work-panels
 location:
   latitude: 43.6532
   longitude: -79.3832

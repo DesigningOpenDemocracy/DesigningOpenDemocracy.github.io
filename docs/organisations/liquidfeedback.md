@@ -19,6 +19,27 @@ concepts:
 - liquid-democracy
 - direct-democracy
 - issue-based-direct-democracy
+events:
+- date: '2009-10-01'
+  notable: true
+  title: First published by Public Software Group e.V., developed in response to
+    requests from German Pirate Party members
+  url: https://en.wikipedia.org/wiki/LiquidFeedback
+- date: '2010-01-01'
+  notable: true
+  title: Pirate Party Berlin becomes the first political organisation to adopt LiquidFeedback,
+    to draft new statutes
+  url: https://en.wikipedia.org/wiki/LiquidFeedback
+- date: '2010-06-01'
+  notable: false
+  title: Developers establish Interaktive Demokratie e.V., an independent research
+    institute for digital-democracy research
+  url: https://en.wikipedia.org/wiki/LiquidFeedback
+- date: '2012-09-01'
+  notable: false
+  title: First public-sector (non-party) deployment, in Friesland County, Germany,
+    for citizen consultation on council proposals
+  url: https://en.wikipedia.org/wiki/LiquidFeedback
 location:
   latitude: 52.52
   longitude: 13.405

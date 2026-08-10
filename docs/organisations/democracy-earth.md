@@ -13,6 +13,12 @@ concepts:
 - liquid-democracy
 - direct-democracy
 - decentralized-autonomous-organization
+events:
+- date: '2015-01-01'
+  notable: true
+  title: Founded by Santiago Siri, Pia Mancini and Guido Vilariño; accepted into
+    Y Combinator's Winter 2015 batch
+  url: https://www.ycombinator.com/companies/democracy-earth
 location:
   latitude: -34.6037
   longitude: -58.3816

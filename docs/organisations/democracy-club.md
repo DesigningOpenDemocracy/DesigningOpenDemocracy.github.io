@@ -16,6 +16,17 @@ concepts:
 - democracy-tools
 - e-government
 - representative-democracy
+events:
+- date: '2010-01-01'
+  notable: false
+  title: Origins as a volunteer effort collecting candidate information for the
+    2010 UK general election, working with mySociety
+  url: https://www.nesta.org.uk/feature/new-radicals-2016/democracy-club/
+- date: '2015-01-01'
+  notable: true
+  title: Registered as a Community Interest Company and crowdsourced the most comprehensive
+    UK election-candidate database to date, used by over a million people
+  url: https://www.nesta.org.uk/feature/new-radicals-2016/democracy-club/
 location:
   latitude: 52.4862
   longitude: -1.8904

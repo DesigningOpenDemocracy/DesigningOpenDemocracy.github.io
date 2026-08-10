@@ -19,6 +19,16 @@ concepts:
 - deliberative-democracy
 - citizens-assembly
 - representative-democracy
+events:
+- date: '2016-01-01'
+  notable: false
+  title: Informal founding — nine people met in a London Indian restaurant and decided
+    to found the organisation
+  url: https://www.sortitionfoundation.org/history
+- date: '2017-03-04'
+  notable: true
+  title: Incorporated as a UK company
+  url: https://find-and-update.company-information.service.gov.uk/company/10652142
 location:
   latitude: 52.234
   longitude: 0.0866

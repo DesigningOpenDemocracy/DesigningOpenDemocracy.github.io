@@ -18,6 +18,12 @@ concepts:
 - direct-democracy
 - democracy
 - meta-organisation
+events:
+- date: '2009-09-01'
+  notable: true
+  title: Launched by Archon Fung (Harvard) and Mark Warren (UBC) as a crowdsourced
+    wiki platform for democratic innovations
+  url: https://en.wikipedia.org/wiki/Archon_Fung
 location:
   latitude: 49.2827
   longitude: -123.1207
