@@ -27,9 +27,8 @@ events:
   title: Foundation established as an independent public policy think tank hosted
     by AUT, named after former PM Helen Clark
   url: https://en.wikipedia.org/wiki/The_Helen_Clark_Foundation
-  note: The foundation was formed in 2019 and is named after Helen Clark, the 37th
-    prime minister of New Zealand and former administrator of the United Nations Development
-    Programme.
+  note: Founded in 2019 and named after Helen Clark, former New Zealand Prime Minister
+    and UNDP administrator
   proof_level: high
   url_checked: '2026-08-10'
   notable: true

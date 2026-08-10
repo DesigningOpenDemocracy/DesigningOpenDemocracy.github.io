@@ -25,8 +25,8 @@ events:
 - date: '2018-01-01'
   title: Formed as Victoria's first registered co-operative co-working space
   url: https://www.888causeway.coop/about/
-  note: Formed in 2018, 888 Co-operative Causeway is an affordable, member-run co-working
-    network for small businesses and organisations in the social economy.
+  note: 888 Co-operative Causeway registered as Victoria's first co-operative co-working
+    space, providing affordable workspace for social-economy organisations
   proof_level: medium
   url_checked: '2026-08-10'
   notable: true

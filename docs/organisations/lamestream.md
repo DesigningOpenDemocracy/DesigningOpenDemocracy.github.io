@@ -25,8 +25,8 @@ events:
   title: Launched as an independent podcast/newsletter by journalists Osman Faruqi
     and Scott Mitchell, in partnership with Acast
   url: https://podnews.net/press-release/lamestream-podcast
-  note: Award-winning journalists Osman Faruqi and Scott Mitchell have launched an
-    independent podcast and newsletter in partnership with Acast
+  note: Osman Faruqi and Scott Mitchell launched Lamestream, an independent podcast
+    and newsletter, in partnership with Acast
   proof_level: medium
   url_checked: '2026-08-10'
   notable: true

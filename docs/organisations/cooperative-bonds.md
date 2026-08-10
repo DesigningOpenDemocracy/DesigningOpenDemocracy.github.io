@@ -30,9 +30,9 @@ events:
 - date: '2018-01-01'
   title: Founded by Antony McMullen, Clare Fountain, and Paul Saeki
   url: https://bonds.coop/about-us/our-story/
-  note: 'Co-operative Bonds was formed in 2018 with a simple but powerful idea: the
-    organisation that builds capacity for co-operatives, mutuals, and other member-driven
-    enterprises should itself be a co-operative.'
+  note: Co-operative Bonds founded in 2018 by Antony McMullen, Clare Fountain and
+    Paul Saeki — itself a co-operative, building financing capacity for member-driven
+    enterprises
   proof_level: medium
   url_checked: '2026-08-10'
   notable: true
