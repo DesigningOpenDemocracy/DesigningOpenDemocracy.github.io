@@ -33,6 +33,7 @@ Requirements: python-frontmatter, requests (util/requirements.txt)
 import argparse
 import glob
 import hashlib
+import html
 import json
 import os
 import re
@@ -93,21 +94,33 @@ def extract_fragment(url):
 
 
 def wikipedia_title(url):
+    """Return (lang_subdomain, article_title) for any *.wikipedia.org URL, or
+    None. Previously this returned just the title and the fetch always
+    queried en.wikipedia.org's API regardless of which language subdomain
+    the citation actually pointed to — a real bug: an fr.wikipedia.org
+    citation would silently fetch the (often nonexistent) English article
+    instead, always producing a MISMATCH regardless of the French text's
+    accuracy (confirmed on africtivistes, which cites fr.wikipedia.org and
+    was being checked against an empty English API response)."""
     parsed = urlparse(url)
     if "wikipedia.org" not in parsed.netloc:
         return None
     m = re.search(r"/wiki/([^#]+)", parsed.path)
-    return unquote(m.group(1)) if m else None
+    if not m:
+        return None
+    lang = parsed.netloc.split(".")[0]
+    return lang, unquote(m.group(1))
 
 
 def _fetch_page_text(url, headers):
     """One unconditional or conditional GET. Returns (text_or_None, resp_or_None, error_or_None).
     text is None with resp set when the server returned 304 (unchanged, no body)."""
-    title = wikipedia_title(url)
+    wp = wikipedia_title(url)
     try:
-        if title:
+        if wp:
+            lang, title = wp
             api_url = (
-                "https://en.wikipedia.org/w/api.php?action=query&prop=extracts"
+                f"https://{lang}.wikipedia.org/w/api.php?action=query&prop=extracts"
                 f"&explaintext=1&titles={title}&format=json"
             )
             r = requests.get(api_url, headers={"User-Agent": USER_AGENT}, timeout=15)
@@ -118,7 +131,20 @@ def _fetch_page_text(url, headers):
         if r.status_code == 304:
             return None, r, None
         r.raise_for_status()
-        text = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", r.text))[:100000]
+        # No practical truncation here — the cache only stores a hash and
+        # per-evidence booleans now (see check_evidence), not the text
+        # itself, so there's no memory-bloat reason to cap it. A prior
+        # 100_000-char cap silently broke matches for evidence sitting
+        # later in longer pages (confirmed: civictech.africa/about-ctin is
+        # ~194KB of extracted text with its founding sentence at ~171KB —
+        # a real false MISMATCH, not a wrong quote). 2MB is a sanity
+        # ceiling against a truly pathological response, not a real limit.
+        # html.unescape() decodes entities (&#8211;, &amp;, &quot;, &nbsp;,
+        # etc.) left behind by tag-stripping — confirmed CAPaD's event page
+        # embeds its listing as JSON-in-HTML with an en-dash encoded as the
+        # literal string "&#8211;", which a quote written with a real "–"
+        # character could never match without this.
+        text = re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", r.text)))[:2_000_000]
         return text, r, None
     except requests.HTTPError as e:
         return None, None, f"HTTP_{e.response.status_code if e.response is not None else '?'}"
@@ -142,10 +168,10 @@ def check_evidence(url, evidence, cache, use_cache=True):
     """
     entry = cache.get(url, {}) if use_cache else {}
     ev_key = sha256(normalize_ws(evidence))
-    title = wikipedia_title(url)
+    is_wikipedia = wikipedia_title(url) is not None
 
     headers = {"User-Agent": USER_AGENT}
-    if not title:
+    if not is_wikipedia:
         if entry.get("etag"):
             headers["If-None-Match"] = entry["etag"]
         if entry.get("last_modified"):
@@ -177,8 +203,8 @@ def check_evidence(url, evidence, cache, use_cache=True):
     result = text_contains(text, evidence)
     verified[ev_key] = result
     cache[url] = {
-        "etag": resp.headers.get("ETag") if resp is not None and not title else entry.get("etag"),
-        "last_modified": resp.headers.get("Last-Modified") if resp is not None and not title else entry.get("last_modified"),
+        "etag": resp.headers.get("ETag") if resp is not None and not is_wikipedia else entry.get("etag"),
+        "last_modified": resp.headers.get("Last-Modified") if resp is not None and not is_wikipedia else entry.get("last_modified"),
         "content_hash": new_hash,
         "verified": verified,
         "checked": date.today().isoformat(),
