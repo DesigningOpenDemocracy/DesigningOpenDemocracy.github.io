@@ -25,7 +25,7 @@ rss_feed: https://www.openaustraliafoundation.org.au/feed
 events:
 - date: '2009-07-07'
   title: Founded by Matthew Landauer and Katherine Szuminska
-  url: https://www.openaustraliafoundation.org.au/2009/07/07/announcing-the-openaustralia-foundation/
+  url: https://www.openaustraliafoundation.org.au/2009/07/07/announcing-the-openaustralia-foundation/#:~:text=OpenAustralia%20Foundation%20Limited%20is%20officially%20incorporated%20as%20a%20company%20limited%20by%20guarantee.
   quote: OpenAustralia Foundation Limited is officially incorporated as a company
     limited by guarantee.
   proof_level: high
@@ -33,14 +33,14 @@ events:
   notable: true
 - date: '2009-12-21'
   title: Launched PlanningAlerts
-  url: https://www.openaustraliafoundation.org.au/2009/12/21/launching-our-new-website-planning-alerts/
+  url: https://www.openaustraliafoundation.org.au/2009/12/21/launching-our-new-website-planning-alerts/#:~:text=21%20December%202009%20Launching%20our%20new%20website%3A%20Planning%20Alerts
   quote: '21 December 2009 Launching our new website: Planning Alerts'
   proof_level: high
   url_checked: '2026-08-10'
   notable: false
 - date: '2014-10-21'
   title: Launched They Vote For You, tracking Australian parliamentary voting records
-  url: https://oaf.org.au/2014/10/21/they-vote-for-you/
+  url: https://oaf.org.au/2014/10/21/they-vote-for-you/#:~:text=today%20the%20OpenAustralia%20Foundation%20is%20launching%20a%20new%20site%20They%20Vote%20for%20You
   quote: today the OpenAustralia Foundation is launching a new site They Vote for
     You
   proof_level: high

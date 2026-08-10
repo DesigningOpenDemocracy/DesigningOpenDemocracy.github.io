@@ -37,7 +37,7 @@ events:
 - date: '2026-11-18'
   title: 'FIDE Forum 2026: From Novel to Normal — making deliberation a democratic
     standard, Vienna'
-  url: https://www.fidemocracy.org/news
+  url: https://www.fidemocracy.org/news#:~:text=FIDE%20Forum%202026
   quote: FIDE Forum 2026
   proof_level: high
   url_checked: '2026-08-10'

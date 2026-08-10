@@ -26,7 +26,7 @@ events:
 - date: '1999-01-01'
   title: Founded as a pan-African survey research network measuring public attitudes
     on democracy and governance
-  url: https://www.afrobarometer.org/about/history/
+  url: https://www.afrobarometer.org/about/history/#:~:text=professors%20Michael%20Bratton%2C%20Robert%20Mattes%2C%20and%20E.%20Gyimah-Boadi%20merge%20three%20independent%20survey%20research%20projects%20to%20form%20Afrobarometer%20%28AB%29
   quote: professors Michael Bratton, Robert Mattes, and E. Gyimah-Boadi merge three
     independent survey research projects to form Afrobarometer (AB)
   proof_level: high

@@ -24,7 +24,7 @@ location:
 events:
 - date: '2007-01-01'
   title: Founded by Peter MacLeod
-  url: https://www.masslbp.com/about
+  url: https://www.masslbp.com/about#:~:text=Since%20its%20founding%20in%202007%2C%20MASS%20has%20completed%20more%20than%20200%20major%20policy%20projects%20for%20governments%20and%20public%20agencies%20across%20Canada
   quote: Since its founding in 2007, MASS has completed more than 200 major policy
     projects for governments and public agencies across Canada
   proof_level: high
@@ -32,7 +32,7 @@ events:
   notable: true
 - date: '2009-01-01'
   title: Ran the Central LHIN Citizens' Reference Panel on Regional Health Priorities
-  url: https://www.masslbp.com/work-panels
+  url: https://www.masslbp.com/work-panels#:~:text=Central%20LHIN%20Citizens%E2%80%99%20Reference%20Panel%20on%20Regional%20Health%20Priorities
   quote: Central LHIN Citizens’ Reference Panel on Regional Health Priorities
   proof_level: high
   url_checked: '2026-08-10'

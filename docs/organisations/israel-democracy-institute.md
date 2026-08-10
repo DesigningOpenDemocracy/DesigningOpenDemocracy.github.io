@@ -31,18 +31,15 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
-- date: '1995-01-01'
+- date: '2003-01-01'
   title: Published the first Israeli Democracy Index — an annual survey tracking democratic
     attitudes in Israel
-  url: https://en.wikipedia.org/wiki/Israel_Democracy_Institute
-  quote: 'In 2018, their vice president of research Yuval Shany was chosen to head
-    the United Nations Human Rights Committee.
-
-    Until 2015, the IDI published HaAyin HaShevi''it (The Seventh Eye).
-
-
-
-    == Award and ra'
+  url: https://en.idi.org.il/articles/47344#:~:text=The%20Democracy%20Index%2C%20IDI%E2%80%99s%20annual%20flagship%20publication%20celebrating%20its%20twentieth%20anniversary
+  quote: The Democracy Index, IDI’s annual flagship publication celebrating its twentieth
+    anniversary
+  note: A 2022 IDI article marking the Index's 20th anniversary, placing its first
+    edition in 2003 — corrected from a previously misdated 1995 entry that had been
+    citing unrelated Wikipedia text about the Institute (not the Index).
   proof_level: high
   url_checked: '2026-08-10'
   notable: true

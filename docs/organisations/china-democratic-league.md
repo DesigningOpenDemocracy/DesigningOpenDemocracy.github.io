@@ -25,7 +25,7 @@ events:
 - date: '1941-03-19'
   title: Founded in Chongqing as an umbrella organisation of China's centrist and
     left-leaning intellectuals during the Second Sino-Japanese War
-  url: https://www.mmzy.org.cn/mmgk/jianjie/default.aspx
+  url: https://www.mmzy.org.cn/mmgk/jianjie/default.aspx#:~:text=%E6%B0%91%E7%9B%9F%E4%BA%8E1941%E5%B9%B43%E6%9C%8819%E6%97%A5%E5%9C%A8%E9%87%8D%E5%BA%86%E7%A7%98%E5%AF%86%E6%88%90%E7%AB%8B
   quote: 民盟于1941年3月19日在重庆秘密成立
   proof_level: high
   url_checked: '2026-08-10'

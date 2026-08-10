@@ -26,7 +26,7 @@ events:
 - date: '2013-01-01'
   title: Founded as the Brazilian chapter of Open Knowledge, promoting open data and
     civic technology
-  url: https://pt.wikipedia.org/wiki/Open_Knowledge_Brasil
+  url: https://pt.wikipedia.org/wiki/Open_Knowledge_Brasil#:~:text=sociedade%20civil%20%28OSC%29%20sem%20fins%20lucrativos%20e%20apartid%C3%A1ria%2C%20fundada%20em%20assembleia%20em%204%20de%20setembro%20de%202013
   quote: sociedade civil (OSC) sem fins lucrativos e apartidária, fundada em assembleia
     em 4 de setembro de 2013
   proof_level: high

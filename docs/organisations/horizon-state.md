@@ -23,7 +23,7 @@ events:
   notable: true
 - date: '2017-11-19'
   title: Token Generation Event (ICO) concluded, raising approximately $1.4M
-  url: https://icodrops.com/horizon-state/
+  url: https://icodrops.com/horizon-state/#:~:text=The%20TGE%20%28Token%20Generation%20Event%29%20announced%20by%20Horizon%20State%20has%20successfully%20concluded%20on%20Nov%2019%2C%202017
   quote: The TGE (Token Generation Event) announced by Horizon State has successfully
     concluded on Nov 19, 2017
   proof_level: high

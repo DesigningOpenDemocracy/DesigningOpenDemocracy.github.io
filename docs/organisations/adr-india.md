@@ -25,7 +25,7 @@ events:
 - date: '1999-01-01'
   title: Founded by former Indian Revenue Service officers to improve governance and
     electoral transparency
-  url: https://adrindia.org/about-adr/mission-and-vision
+  url: https://adrindia.org/about-adr/mission-and-vision#:~:text=The%20Association%20for%20Democratic%20Reforms%20%28ADR%29%20was%20established%20in%201999%20by%20a%20group%20of%20professors%20from%20the%20Indian%20Institute%20of%20Management%20%28IIM%29%20Ahmedabad.
   quote: The Association for Democratic Reforms (ADR) was established in 1999 by a
     group of professors from the Indian Institute of Management (IIM) Ahmedabad.
   proof_level: high

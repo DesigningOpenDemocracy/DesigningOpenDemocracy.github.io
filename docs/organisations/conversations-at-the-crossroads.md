@@ -26,7 +26,7 @@ events:
 - date: '2023-10-22'
   title: Held its inaugural Annual Lecture (Joseph Camilleri, "Australia the Week
     After") at the University of Melbourne
-  url: https://www.crossroadsconversation.com.au/events/on-the-importance-of-conversation-for-the-very-idea-of-a-common-humanity
+  url: https://www.crossroadsconversation.com.au/events/on-the-importance-of-conversation-for-the-very-idea-of-a-common-humanity#:~:text=You%20speak%20not%20to%20say%20something%20and%20to%20hear%20something%20back%2C%20not%20to%20dazzle%2C%20be%20right%20or%20stake%20a%20claim%2C%20but%20to%20be%20held%20accountable%20to%20each%20other.
   quote: You speak not to say something and to hear something back, not to dazzle,
     be right or stake a claim, but to be held accountable to each other.
   proof_level: high

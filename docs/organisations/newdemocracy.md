@@ -28,17 +28,16 @@ events:
 - date: '2007-01-01'
   title: newDemocracy Foundation launched — one of the first organisations worldwide
     dedicated exclusively to citizens' assemblies
-  url: https://www.newdemocracy.com.au/history/
-  quote: Newsletters Audio Podcast Videos Further Reading Donate Now Menu Type and
-    press enter to search The story so far (and the route ahead) Australia, Europe
-    and elsewhere The newDemocracy Foundation was l
+  url: https://www.newdemocracy.com.au/history/#:~:text=The%20newDemocracy%20Foundation%20was%20launched%20in%202007%2C%20with%20Luca%20Belgiorno-Nettis%2C%20Lyn%20Carson%2C%20Kathy%20Jones%20and%20Ian%20Marsh%20as%20the%20inaugural%20directors.
+  quote: The newDemocracy Foundation was launched in 2007, with Luca Belgiorno-Nettis,
+    Lyn Carson, Kathy Jones and Ian Marsh as the inaugural directors.
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
 - date: '2009-01-01'
   title: Australian Citizens' Parliament — 150 citizens deliberate on strengthening
     Australia's democracy
-  url: https://www.newdemocracy.com.au/history/
+  url: https://www.newdemocracy.com.au/history/#:~:text=Our%20first%20big%20project%20was%20the%20Australian%20Citizens%E2%80%99%20Parliament%20in%202009%2C%20which%20was%20an%20Australian%20Research%20Centre-funded%20citizens%E2%80%99%20assembly%20involving%20150%20Australians%20deliberating%20on%20how%20to%20strengthen%20Australia%E2%80%99s%20system%20of%20government.
   quote: Our first big project was the Australian Citizens’ Parliament in 2009, which
     was an Australian Research Centre-funded citizens’ assembly involving 150 Australians
     deliberating on how to strengthen Australia’s system of government.
@@ -48,7 +47,7 @@ events:
 - date: '2017-01-01'
   title: Democracy R&D international network founded with newDemocracy as a founding
     member
-  url: https://www.newdemocracy.com.au/history/
+  url: https://www.newdemocracy.com.au/history/#:~:text=Luca%20had%20a%2030-year%20career%20in%20Transfield%2C%20a%20large%20infrastructure%20and%20engineering%20company%20founded%20by%20his%20father.
   quote: Luca had a 30-year career in Transfield, a large infrastructure and engineering
     company founded by his father.
   proof_level: high
@@ -57,7 +56,7 @@ events:
 - date: '2018-01-01'
   title: Helps design Ostbelgien's permanent Citizens' Council — world's first embedded
     in a parliament
-  url: https://www.newdemocracy.com.au/history/
+  url: https://www.newdemocracy.com.au/history/#:~:text=Still%20in%202018%2C%20we%20were%20invited%20to%20travel%20to%20Belgium%20with%20a%20several%20other%20academics%20and%20practitioners%20to%20consult%20on%20what%20would%20become%20the%20world%E2%80%99s%20first%20permanent%20Citizens%E2%80%99%20Council%20in%20Eupen%2C%20the%20capital%20of%20the%20autonomous%20Ostbelgien%20region.
   quote: Still in 2018, we were invited to travel to Belgium with a several other
     academics and practitioners to consult on what would become the world’s first
     permanent Citizens’ Council in Eupen, the capital of the autonomous Ostbelgien

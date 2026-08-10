@@ -28,7 +28,7 @@ news_page: https://mckinnon.co/insights
 events:
 - date: '2015-01-01'
   title: Founded (as Susan McKinnon Foundation) by Sophie Oh and Grant Rule
-  url: https://mckinnon.co/about-us
+  url: https://mckinnon.co/about-us#:~:text=known%20as%20the%20Susan%20McKinnon%20Foundation%29%20was%20established%20in%202015%20by%20Sophie%20Oh%20and%20Grant%20Rule
   quote: known as the Susan McKinnon Foundation) was established in 2015 by Sophie
     Oh and Grant Rule
   proof_level: high
@@ -37,7 +37,7 @@ events:
 - date: '2017-11-01'
   title: McKinnon Prize in Political Leadership established, in partnership with the
     University of Melbourne
-  url: https://www.unimelb.edu.au/newsroom/news/2017/november/susan-mckinnon-foundation-and-university-of-melbourne-establish-prestigious-award-for-political-leadership
+  url: https://www.unimelb.edu.au/newsroom/news/2017/november/susan-mckinnon-foundation-and-university-of-melbourne-establish-prestigious-award-for-political-leadership#:~:text=Susan%20McKinnon%20Foundation%20Co-Founder%20Grant%20Rule%20said%3A%20%26ldquo%3BNow%2C%20more%20than%20ever%2C%20we%20need%20to%20publicly%20recognise%20political%20leadership%20that%20shows%20vision%20and%20courage%20and%20has%20had%20a%20constructive%20impact%20for
   quote: 'Susan McKinnon Foundation Co-Founder Grant Rule said: &ldquo;Now, more than
     ever, we need to publicly recognise political leadership that shows vision and
     courage and has had a constructive impact for'

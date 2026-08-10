@@ -21,15 +21,9 @@ location:
 events:
 - date: '2000-01-01'
   title: Founded as an independent election monitoring organisation in Russia
-  url: https://en.wikipedia.org/wiki/Golos_(election_monitor)
-  quote: 'It was the only election watchdog active in Russia that was independent
-    of the Russian government, until it announced it would close on July 8, 2025.
-
-
-
-    == Founding ==
-
-    GOLOS was founded as an associati'
+  url: https://en.wikipedia.org/wiki/Golos_(election_monitor)#:~:text=GOLOS%20was%20founded%20as%20an%20association%20of%20non-profit%20organizations%20in%202000%20to%20support%20civil%20monitoring%20of%20elections.
+  quote: GOLOS was founded as an association of non-profit organizations in 2000 to
+    support civil monitoring of elections.
   proof_level: high
   url_checked: '2026-08-10'
   notable: true

@@ -29,10 +29,10 @@ events:
 - date: '2009-09-01'
   title: Launched by Archon Fung (Harvard) and Mark Warren (UBC) as a crowdsourced
     wiki platform for democratic innovations
-  url: https://en.wikipedia.org/wiki/Archon_Fung
-  quote: His projects have examined democratic reform initiatives in electoral reform,
-    urban planning, public services, ecosystem management, transnational governance,
-    and the role of technology within the are
+  url: https://en.wikipedia.org/wiki/Archon_Fung#:~:text=In%20September%202009%2C%20Fung%20launched%20Participedia%2C%20a%20website%20developed%20with%20Mark%20Warren%20of%20the%20University%20of%20British%20Columbia%2C%20aimed%20at%20strengthening%20democracy%20with%20its%20user-generated%20library%20of%20examples%20and%20methods%20of%20participatory%20governance
+  quote: In September 2009, Fung launched Participedia, a website developed with Mark
+    Warren of the University of British Columbia, aimed at strengthening democracy
+    with its user-generated library of examples and methods of participatory governance
   proof_level: high
   url_checked: '2026-08-10'
   notable: true

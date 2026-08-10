@@ -26,10 +26,9 @@ events:
 - date: '2002-01-01'
   title: Founded as the Israeli branch of the OneVoice Movement, promoting grassroots
     civic engagement
-  url: https://en.wikipedia.org/wiki/OneVoice_Movement
+  url: https://en.wikipedia.org/wiki/OneVoice_Movement#:~:text=The%20OneVoice%20Movement%20was%20a%20501c%283%29%20non-profit%20organization%20with%20offices%20in%20New%20York%20City%2C%20Tel%20Aviv%2C%20Ramallah%2C%20and%20London%2C%20founded%20in%202002%20by%20Daniel%20Lubetzky
   quote: The OneVoice Movement was a 501c(3) non-profit organization with offices
-    in New York City, Tel Aviv, Ramallah, and London, founded in 2002 by Daniel Lubetzky,
-    a Mexican and American billionaire busine
+    in New York City, Tel Aviv, Ramallah, and London, founded in 2002 by Daniel Lubetzky
   proof_level: high
   url_checked: '2026-08-10'
   notable: true

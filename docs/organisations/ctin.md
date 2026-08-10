@@ -26,7 +26,7 @@ events:
 - date: '2018-01-01'
   title: Launched at Wits University's Tshimologong Precinct as Africa's civic tech
     community of practice
-  url: https://civictech.africa/about-ctin
+  url: https://civictech.africa/about-ctin#:~:text=CTIN%20was%20launched%20in%202017%20as%20a%20learning%20network.
   quote: CTIN was launched in 2017 as a learning network.
   proof_level: high
   url_checked: '2026-08-10'

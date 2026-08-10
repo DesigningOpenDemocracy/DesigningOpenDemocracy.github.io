@@ -28,7 +28,7 @@ events:
 - date: '2010-01-01'
   title: Origins as a volunteer effort collecting candidate information for the 2010
     UK general election, working with mySociety
-  url: https://www.nesta.org.uk/feature/new-radicals-2016/democracy-club/
+  url: https://www.nesta.org.uk/feature/new-radicals-2016/democracy-club/#:~:text=Sym%20Roe%20was%20a%20volunteer%20for%20the%20mySociety%20enterprise%20during%20the%20run%20up%20to%20the%202010%20general%20election%2C%20working%20to%20increase%20the%20amount%20of%20information%20available%20online%20about%20the%20candidates.
   quote: Sym Roe was a volunteer for the mySociety enterprise during the run up to
     the 2010 general election, working to increase the amount of information available
     online about the candidates.
@@ -38,7 +38,7 @@ events:
 - date: '2015-01-01'
   title: Registered as a Community Interest Company and crowdsourced the most comprehensive
     UK election-candidate database to date, used by over a million people
-  url: https://www.nesta.org.uk/feature/new-radicals-2016/democracy-club/
+  url: https://www.nesta.org.uk/feature/new-radicals-2016/democracy-club/#:~:text=crowdsourcing%20the%20most%20comprehensive%20and%20accurate%20database%20of%20candidates%20in%20recent%20electoral%20history
   quote: crowdsourcing the most comprehensive and accurate database of candidates
     in recent electoral history
   proof_level: high

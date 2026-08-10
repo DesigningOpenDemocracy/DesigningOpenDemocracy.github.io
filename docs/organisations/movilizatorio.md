@@ -24,15 +24,10 @@ location:
 events:
 - date: '2016-01-01'
   title: Founded in Bogotá as a citizen participation and social innovation laboratory
-  url: https://en.wikipedia.org/wiki/Civic_technology
-  quote: 'Key areas of focus include open data initiatives, digital platforms for
-    citizen services, and tools for civic participation.
-
-
-
-    ==== Citizen-led initiatives ====
-
-    Code for Pakistan (CfP), founded in 201'
+  url: https://www.weforum.org/organizations/movilizatorio/#:~:text=Movilizatorio%20was%20born%20in%202016%20precisely%20as%20a%20response%20to%20the%20risks%20and%20possibilities%20to%20create%20better%20civic%20engagement%20and%20social%20innovation%20in%20a%20context%20of%20peace%20negotiations%20and%20peacebuilding.
+  quote: Movilizatorio was born in 2016 precisely as a response to the risks and possibilities
+    to create better civic engagement and social innovation in a context of peace
+    negotiations and peacebuilding.
   proof_level: high
   url_checked: '2026-08-10'
   notable: true

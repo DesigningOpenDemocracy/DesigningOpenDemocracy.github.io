@@ -41,7 +41,7 @@ events:
   proof_warning: true
 - date: '2017-01-01'
   title: Founded by Kimbra White, Nicole Hunter and Keith Greaves
-  url: https://mosaiclab.com.au/nicole-hunter
+  url: https://mosaiclab.com.au/nicole-hunter#:~:text=Nicole%20co-founded%20MosaicLab%20%28with%20Keith%20Greaves%20and%20Kimbra%20White%29%20in%202017
   quote: Nicole co-founded MosaicLab (with Keith Greaves and Kimbra White) in 2017
   proof_level: high
   url_checked: '2026-08-10'
@@ -49,7 +49,7 @@ events:
 - date: '2018-01-01'
   title: Critical Thinking Research with Dr Lyn Carson wins IAP2 Core Values Award
     for Research
-  url: https://mosaiclab.com.au/contributions-to-the-field
+  url: https://mosaiclab.com.au/contributions-to-the-field#:~:text=we%20were%20awarded%20the%20IAP2%20Australasia%20Core%20Values%20Award%20for%20Research%20in%202018
   quote: we were awarded the IAP2 Australasia Core Values Award for Research in 2018
   proof_level: high
   url_checked: '2026-08-10'
@@ -73,7 +73,7 @@ events:
 - date: '2022-01-01'
   title: Publishes Facilitating Deliberation — A Practical Guide, drawing on 39 deliberative
     processes
-  url: https://mosaiclab.com.au/the-big-book
+  url: https://mosaiclab.com.au/the-big-book#:~:text=Drawn%20from%20the%20authors%E2%80%99%20experience%20delivering%2039%20deliberative%20engagement%20processes%2C%20the%20book%20is%20full%20of%20insider%20secrets%2C%20authentic%20lessons%20learned
   quote: Drawn from the authors’ experience delivering 39 deliberative engagement
     processes, the book is full of insider secrets, authentic lessons learned
   proof_level: high

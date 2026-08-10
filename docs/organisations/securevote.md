@@ -19,14 +19,14 @@ location:
 events:
 - date: '2016-01-01'
   title: Founded by Max Kaye as a Sydney-based blockchain voting startup
-  url: https://techboard.com.au/company-profile/xo-1/
+  url: https://techboard.com.au/company-profile/xo-1/#:~:text=Founders%3A%20Max%20Kaye
   quote: 'Founders: Max Kaye'
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
 - date: '2017-11-24'
   title: Won the Cyber Security Award at the Australian Technologies Competition
-  url: https://techboard.com.au/company-profile/xo-1/
+  url: https://techboard.com.au/company-profile/xo-1/#:~:text=SecureVote%20wins%20ATC%20Cyber%20Security%20Award
   quote: SecureVote wins ATC Cyber Security Award
   proof_level: high
   url_checked: '2026-08-10'
@@ -34,7 +34,7 @@ events:
 - date: '2018-01-01'
   title: Signed a deal with Silicon Valley startup Swarm Fund to use SecureVote's
     Liquid Democracy Voting Module
-  url: https://ia.acs.org.au/article/2018/blockchain-to-revolutionise-e-voting.html
+  url: https://ia.acs.org.au/article/2018/blockchain-to-revolutionise-e-voting.html#:~:text=A%20deal%20with%20Silicon%20Valley%20start-up%20Swarm%20Fund%20is%20a%20big%20win%20for%20an%20Australian%20firm%20working%20to%20revolutionise%20the%20democratic%20process%20using%20blockchain
   quote: A deal with Silicon Valley start-up Swarm Fund is a big win for an Australian
     firm working to revolutionise the democratic process using blockchain
   proof_level: high
