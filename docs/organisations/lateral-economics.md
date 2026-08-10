@@ -20,6 +20,12 @@ concepts:
 - prediction-markets
 - citizens-assembly
 - tribal-epistemology
+events:
+- date: '2000-01-01'
+  notable: true
+  title: Founded by economist Nicholas Gruen as an economic consultancy (year-only,
+    sourced from Gruen's own bio)
+  url: https://en.wikipedia.org/wiki/Nicholas_Gruen
 location:
   latitude: -33.8688
   longitude: 151.2093

@@ -11,6 +11,25 @@ summary: An Australian blockchain voting platform that aimed to bring secure, tr
 concepts:
 - end-to-end-verifiable-voting-system
 - e-government
+events:
+- date: '2017-01-01'
+  notable: true
+  title: Founded by Jamie Skella and Nimo Naamani as a Melbourne-based blockchain
+    voting startup
+  url: https://finance.yahoo.com/news/blockchain-voting-platform-horizon-state-140552054.html
+- date: '2017-11-19'
+  notable: false
+  title: Token Generation Event (ICO) concluded, raising approximately $1.4M
+  url: https://icodrops.com/horizon-state/
+- date: '2019-02-01'
+  notable: true
+  title: South Australian government used the platform to run a public election
+    for its Recreational Fishing Advisory Council
+  url: https://finance.yahoo.com/news/blockchain-voting-platform-horizon-state-140552054.html
+- date: '2019-08-21'
+  notable: true
+  title: Company shut down after legal costs from a lawsuit
+  url: https://finance.yahoo.com/news/blockchain-voting-platform-horizon-state-140552054.html
 ---
 
 Horizon State was an Australian company that built a blockchain-based voting and decision-making platform. The system used distributed ledger technology to record votes on a permanent, publicly auditable record — aiming to solve problems of vote integrity, transparency, and accessibility.

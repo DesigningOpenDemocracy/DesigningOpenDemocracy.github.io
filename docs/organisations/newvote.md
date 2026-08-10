@@ -17,6 +17,19 @@ concepts:
 - direct-democracy
 - liquid-democracy
 - e-government
+events:
+- date: '2016-11-10'
+  notable: true
+  title: Established as a not-for-profit / for-purpose organisation in Australia
+  url: https://newvote.org/the-institute
+- date: '2017-11-01'
+  notable: false
+  title: Hosted the inaugural Australian Digital Democracy Forum in Melbourne
+  url: https://newvote.org/the-institute
+- date: '2019-07-24'
+  notable: true
+  title: NewVote platform publicly launched
+  url: https://newvote.org/the-institute
 location:
   latitude: -27.4698
   longitude: 153.0251

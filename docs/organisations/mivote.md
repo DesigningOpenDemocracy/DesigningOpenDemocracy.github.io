@@ -19,6 +19,16 @@ concepts:
 - direct-democracy
 - e-government
 - representative-democracy
+events:
+- date: '2017-02-11'
+  notable: true
+  title: MiVote app publicly launched in Australia with its first test vote
+  url: https://medium.com/mivote/new-model-of-democracy-passes-first-test-c9a3db8da2a1
+- date: '2019-01-01'
+  notable: true
+  title: Australian party deregistered before the 2019 federal election, without
+    electing any senators
+  url: https://www.designingopendemocracy.com/blog/2021/08/07/podcast-catching-up-with-adam-jacoby-founder-of-mivote/
 last_checked: '2026-08-02'
 contributors:
 - BrianKhuu

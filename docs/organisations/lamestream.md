@@ -15,6 +15,12 @@ summary: An independent Australian podcast, newsletter, and YouTube show launche
   in newsrooms, and whether independent and influencer-driven media can fill the gap.
 concepts:
 - tribal-epistemology
+events:
+- date: '2025-04-27'
+  notable: true
+  title: Launched as an independent podcast/newsletter by journalists Osman Faruqi
+    and Scott Mitchell, in partnership with Acast
+  url: https://podnews.net/press-release/lamestream-podcast
 location:
   latitude: -33.8688
   longitude: 151.2093
