@@ -26,7 +26,7 @@ location:
 events:
 - date: '2026-09-09'
   title: Democracy Fitness Trainer camp — Copenhagen
-  url: https://wedodemocracy.dk/kalender/
+  url: https://www.wedodemocracy.dk/vores-kalender/
   proof_level: medium
   url_checked: '2026-08-10'
   end_date: '2026-09-10'
@@ -35,7 +35,7 @@ events:
   location: Copenhagen, Denmark
 - date: '2026-09-22'
   title: Launch of recommendations from Citizens' Assembly on Future Tourism — Copenhagen
-  url: https://wedodemocracy.dk/kalender/
+  url: https://www.wedodemocracy.dk/vores-kalender/
   proof_level: medium
   url_checked: '2026-08-10'
   notable: false

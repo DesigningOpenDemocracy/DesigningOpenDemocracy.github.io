@@ -30,7 +30,7 @@ events:
 - date: '2026-08-26'
   title: Democracy Camp 2026 Bulgaria — Erasmus+ youth exchange for 70+ young Europeans
     on democracy and media, Sofia/Veliko Tarnovo
-  url: https://www.democracy-international.org/events/2315/democracy-camp-2026-bulgaria
+  url: https://www.democracy-international.org/events/democracy-camp-2026-bulgaria
   proof_level: medium
   url_checked: '2026-08-10'
   end_date: '2026-08-30'

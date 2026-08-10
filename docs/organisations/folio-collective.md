@@ -25,36 +25,36 @@ rss_feed: https://folio.org.au/events/RSS
 events:
 - date: 2022-10-19
   title: Public integrity, trust and democracy
-  url: https://folio.org.au/event-4941291
+  url: https://www.folio.org.au/event-4941291
   proof_level: medium
   url_checked: '2026-08-10'
   notable: true
 - date: 2023-03-20
   title: (Un)ethical design — Robodebt, accountability, and equity in a digital society
-  url: https://folio.org.au/event-5200127
+  url: https://www.folio.org.au/event-5200127
   proof_level: medium
   url_checked: '2026-08-10'
 - date: 2023-04-04
   title: Atlas of Human Rights — violations and protections in Australia and abroad
-  url: https://folio.org.au/event-5219140
+  url: https://www.folio.org.au/event-5219140
   proof_level: medium
   url_checked: '2026-08-10'
   location: CURATE Space, Melbourne CBD
 - date: 2024-06-24
   title: 'Democratic Crossroads — the power of participation: what''s holding us back?'
-  url: https://folio.org.au/event-5761027
+  url: https://www.folio.org.au/event-5761027
   proof_level: medium
   url_checked: '2026-08-10'
 - date: 2024-07-01
   title: 'Democratic Crossroads — unpacking the Voice Referendum: what can we learn
     about Australia''s democracy?'
-  url: https://folio.org.au/event-5773784
+  url: https://www.folio.org.au/event-5773784
   proof_level: medium
   url_checked: '2026-08-10'
   notable: true
 - date: 2025-02-26
   title: Election 2025 — how will independents shape our future Parliament?
-  url: https://folio.org.au/event-6065606
+  url: https://www.folio.org.au/event-6065606
   proof_level: medium
   url_checked: '2026-08-10'
 activity:
