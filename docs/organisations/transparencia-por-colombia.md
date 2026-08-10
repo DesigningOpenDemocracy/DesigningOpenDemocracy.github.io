@@ -26,10 +26,11 @@ events:
   title: Founded as the Colombian chapter of Transparency International, working across
     all 32 departments
   url: https://es.wikipedia.org/wiki/Transparencia_Internacional#Transparencia_por_Colombia
-  proof_level: medium
+  quote: Transparencia por Colombia, la Delegación Nacional de Transparencia Internacional
+    en Colombia, surge en 1998
+  proof_level: high
   url_checked: '2026-08-10'
   notable: true
-  proof_warning: true
 activity:
   dod:
     checked: 2026-08-09

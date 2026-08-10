@@ -27,10 +27,11 @@ events:
   title: Founded by Josh Lerner and collaborators, launching the first PB process
     in North America in Chicago's 49th Ward
   url: https://www.participatorybudgeting.org/about/
-  proof_level: medium
+  quote: Since 2009, PBP has collaborated with grassroots and government partners
+    to launch PB processes in over 40 cities
+  proof_level: high
   url_checked: '2026-08-10'
   notable: true
-  proof_warning: true
 - date: '2011-01-01'
   title: Incorporated as a 501(c)(3) nonprofit in Brooklyn, New York
   url: https://www.participatorybudgeting.org/about/

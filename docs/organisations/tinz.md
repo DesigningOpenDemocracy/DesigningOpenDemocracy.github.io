@@ -27,10 +27,11 @@ events:
   title: New Zealand chapter of Transparency International formally established under
     founding chair Michael Morris
   url: https://www.transparency.org.nz/our-story
-  proof_level: medium
+  quote: The New Zealand chapter was formally established in 1999, under the chairmanship
+    of Senior Accountant Michael Morris
+  proof_level: high
   url_checked: '2026-08-10'
   notable: true
-  proof_warning: true
 - date: '2001-01-01'
   title: Became an incorporated society and registered charity
   url: https://www.transparency.org.nz/our-story

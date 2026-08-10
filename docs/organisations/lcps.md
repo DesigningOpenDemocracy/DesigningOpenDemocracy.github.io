@@ -34,10 +34,10 @@ events:
 - date: '2006-01-01'
   title: Contributed to drafting the Boutros electoral law
   url: https://www.lcps-lebanon.org/en/about
-  proof_level: medium
+  quote: contributing to formulating the 2006 Boutros draft electoral law
+  proof_level: high
   url_checked: '2026-08-10'
   notable: false
-  proof_warning: true
 activity:
   manual:
     date: 2026-03-05

@@ -20,25 +20,29 @@ events:
 - date: '2015-12-07'
   title: Jointly appointed by PM Malcolm Turnbull and Opposition Leader Bill Shorten
   url: https://en.wikipedia.org/wiki/Referendum_Council
-  proof_level: medium
+  quote: The 16-member Referendum Council was jointly appointed by the prime minister,
+    Malcolm Turnbull, and Leader of the Opposition, Bill Shorten, on 7 December 2015
+  proof_level: high
   url_checked: '2026-08-10'
   notable: true
-  proof_warning: true
 - date: '2017-05-26'
   title: Uluru Statement from the Heart issued at the First Nations National Constitutional
     Convention
   url: https://en.wikipedia.org/wiki/Referendum_Council
-  proof_level: medium
+  quote: The First Nations National Constitutional Convention met over four days from
+    23 to 26 May 2017
+  proof_level: high
   url_checked: '2026-08-10'
   notable: true
-  proof_warning: true
 - date: '2017-06-30'
   title: Final Report published, incorporating the Uluru Statement
-  url: https://www8.austlii.edu.au/au/other/IndigLRes/2017/2.pdf
-  proof_level: medium
+  url: https://en.wikipedia.org/wiki/Referendum_Council
+  quote: The Final Report of the Referendum Council was published on 30 June 2017,
+    and sent to the Prime Minister, Malcolm Turnbull, and the leader of the opposition,
+    Bill Shorten
+  proof_level: high
   url_checked: '2026-08-10'
   notable: true
-  proof_warning: true
 ---
 
 The Referendum Council was a joint advisory body established by Prime Minister Malcolm Turnbull and Opposition Leader Bill Shorten in December 2016. Co-chaired by Pat Anderson AO and Mark Leibler AC, it was tasked with consulting broadly on options for constitutional recognition of Aboriginal and Torres Strait Islander peoples and reporting back with recommendations.

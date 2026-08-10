@@ -29,10 +29,11 @@ events:
 - date: '2015-01-01'
   title: Founded (as Susan McKinnon Foundation) by Sophie Oh and Grant Rule
   url: https://mckinnon.co/about-us
-  proof_level: medium
+  quote: known as the Susan McKinnon Foundation) was established in 2015 by Sophie
+    Oh and Grant Rule
+  proof_level: high
   url_checked: '2026-08-10'
   notable: true
-  proof_warning: true
 - date: '2017-11-01'
   title: McKinnon Prize in Political Leadership established, in partnership with the
     University of Melbourne

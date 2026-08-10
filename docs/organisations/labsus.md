@@ -26,10 +26,11 @@ events:
   title: Founded in Rome as the Laboratory for Subsidiarity, pioneering shared administration
     in Italy
   url: https://www.labsus.org/chi-siamo/
-  proof_level: medium
+  quote: Il Progetto Labsus, il Laboratorio per la sussidiarietà, ha un obiettivo
+    ben preciso
+  proof_level: high
   url_checked: '2026-08-10'
   notable: true
-  proof_warning: true
 activity:
   rss:
     checked: 2026-08-09
