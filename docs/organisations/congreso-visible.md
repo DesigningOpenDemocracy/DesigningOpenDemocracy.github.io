@@ -27,8 +27,6 @@ events:
     platform
   url: https://congresovisible.uniandes.edu.co/quesomos
   quote: Desde 1998, el proyecto Congreso Visible del Departamento de Ciencia Política
-    de la Universidad de los Andes realiza un seguimiento y análisis permanentes del
-    Congreso de la República
   proof_level: high
   url_checked: '2026-08-10'
   notable: true

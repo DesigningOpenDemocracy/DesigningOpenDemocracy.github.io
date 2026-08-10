@@ -73,9 +73,9 @@ events:
 - date: '2022-01-01'
   title: Publishes Facilitating Deliberation — A Practical Guide, drawing on 39 deliberative
     processes
-  url: https://mosaiclab.com.au/about
-  quote: Nicole and her fellow MosaicLab directors released the book Facilitating
-    Deliberation - A Practical Guide in 2022.
+  url: https://mosaiclab.com.au/the-big-book
+  quote: Drawn from the authors’ experience delivering 39 deliberative engagement
+    processes, the book is full of insider secrets, authentic lessons learned
   proof_level: high
   url_checked: '2026-08-10'
   notable: true

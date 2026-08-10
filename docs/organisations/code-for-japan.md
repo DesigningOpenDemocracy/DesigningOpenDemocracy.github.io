@@ -26,7 +26,7 @@ events:
 - date: '2013-10-25'
   title: Founded as the Japanese node of Code for All, bringing civic tech to Japan
   url: https://www.code4japan.org/aboutus
-  quote: 設立年月日2013年10月25日
+  quote: 設立年月日 2013年10月25日
   proof_level: high
   url_checked: '2026-08-10'
   notable: true

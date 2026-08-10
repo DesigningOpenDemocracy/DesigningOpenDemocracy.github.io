@@ -46,7 +46,7 @@ events:
 - date: '2011-05-05'
   title: Led the Yes campaign in the UK's Alternative Vote referendum — the first
     UK-wide electoral system referendum
-  url: https://en.wikipedia.org/wiki/Electoral_Reform_Society#:~:text=principal%20funder%20of%20the%20YES!%20To%20Fairer%20Votes%20campaign%20in%20the%202011%20referendum%20on%20the%20Alternative%20Vote
+  url: https://en.wikipedia.org/wiki/Electoral_Reform_Society#:~:text=principal%20funder%20of%20the%20YES%21%20To%20Fairer%20Votes%20campaign
   proof_level: high
   url_checked: '2026-08-10'
   notable: true

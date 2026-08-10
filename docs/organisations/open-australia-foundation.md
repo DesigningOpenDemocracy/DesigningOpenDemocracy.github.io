@@ -42,8 +42,7 @@ events:
   title: Launched They Vote For You, tracking Australian parliamentary voting records
   url: https://oaf.org.au/2014/10/21/they-vote-for-you/
   quote: today the OpenAustralia Foundation is launching a new site They Vote for
-    You, so you can find out how your representatives in parliament vote on issues
-    you care about.
+    You
   proof_level: high
   url_checked: '2026-08-10'
   notable: true

@@ -30,10 +30,10 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
-- date: '2011-01-01'
-  title: Ran the Citizens' Reference Panel on Ontario Health Services
+- date: '2009-01-01'
+  title: Ran the Central LHIN Citizens' Reference Panel on Regional Health Priorities
   url: https://www.masslbp.com/work-panels
-  quote: Citizens' Reference Panel on Ontario Health Services
+  quote: Central LHIN Citizens’ Reference Panel on Regional Health Priorities
   proof_level: high
   url_checked: '2026-08-10'
   notable: false

@@ -24,7 +24,7 @@ events:
 - date: '1989-01-28'
   title: Founded by Andrei Sakharov and others as the first independent human rights
     organisation in the Soviet Union
-  url: https://en.wikipedia.org/wiki/Memorial_(society)#:~:text=as%20a%20historical%20and%20educational%20society
+  url: https://en.wikipedia.org/wiki/Memorial_(society)#:~:text=as%20a%20%22historical%20and%20educational%22%20society
   proof_level: high
   url_checked: '2026-08-10'
   notable: true

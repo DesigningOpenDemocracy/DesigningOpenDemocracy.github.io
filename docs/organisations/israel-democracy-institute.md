@@ -27,7 +27,7 @@ events:
 - date: '1991-01-01'
   title: Founded as an independent research centre dedicated to strengthening Israeli
     democracy
-  url: https://en.wikipedia.org/wiki/Israel_Democracy_Institute#:~:text=was%20founded%20in%201991%20as%20a%20center%20of%20research%20and%20action%20dedicated%20to%20strengthening%20the%20foundations%20of%20Israeli%20democracy
+  url: https://en.wikipedia.org/wiki/Israel_Democracy_Institute#:~:text=was%20founded%20in%201991%20as%20a%20%22center%20of%20research%20and%20action%20dedicated%20to%20strengthening%20the%20foundations%20of%20Israeli%20democracy.%22
   proof_level: high
   url_checked: '2026-08-10'
   notable: true

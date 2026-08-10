@@ -33,7 +33,7 @@ events:
 - date: '2014-06-01'
   title: First used by the Taiwanese government for vTaiwan — the first large-scale
     deployment for public policy deliberation
-  url: https://en.wikipedia.org/wiki/Pol.is#:~:text=pol.is%20has%20been%20one%20of%20the%20key%20parts%20of%20vTaiwan
+  url: https://en.wikipedia.org/wiki/Pol.is#:~:text=pol.is%20has%20been%20%22one%20of%20the%20key%20parts%22%20of%20vTaiwan
   proof_level: high
   url_checked: '2026-08-10'
   notable: true

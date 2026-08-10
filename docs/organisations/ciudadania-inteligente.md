@@ -26,7 +26,7 @@ events:
 - date: '2009-01-01'
   title: Founded as one of Latin America's earliest civic-tech organisations, Santiago
   url: https://www.ciudadaniai.org/nosotros
-  quote: Ciudadanía Inteligente 2009 - 2026. Todos los derechos reservados.
+  quote: Ciudadanía Inteligente 2009 - 2026. Todos los derechos reservados
   proof_level: high
   url_checked: '2026-08-10'
   notable: true

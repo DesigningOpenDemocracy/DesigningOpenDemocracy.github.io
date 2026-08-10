@@ -39,8 +39,8 @@ events:
   title: Registered as a Community Interest Company and crowdsourced the most comprehensive
     UK election-candidate database to date, used by over a million people
   url: https://www.nesta.org.uk/feature/new-radicals-2016/democracy-club/
-  quote: Press Jobs Privacy Terms of use Accessibility Contact us &copy; 2026 Nesta
-    Nesta is a registered charity in England and Wales 1144091 and Scotland SC042833.
+  quote: crowdsourcing the most comprehensive and accurate database of candidates
+    in recent electoral history
   proof_level: high
   url_checked: '2026-08-10'
   notable: true

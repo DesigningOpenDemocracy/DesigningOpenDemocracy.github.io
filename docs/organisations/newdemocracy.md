@@ -39,9 +39,9 @@ events:
   title: Australian Citizens' Parliament — 150 citizens deliberate on strengthening
     Australia's democracy
   url: https://www.newdemocracy.com.au/history/
-  quote: Our first big project was the Australian Citizens' Parliament in 2009, which
-    was an Australian Research Centre-funded citizens' assembly involving 150 Australians
-    deliberating on how to strengthen Australia's system of government.
+  quote: Our first big project was the Australian Citizens’ Parliament in 2009, which
+    was an Australian Research Centre-funded citizens’ assembly involving 150 Australians
+    deliberating on how to strengthen Australia’s system of government.
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
@@ -59,8 +59,8 @@ events:
     in a parliament
   url: https://www.newdemocracy.com.au/history/
   quote: Still in 2018, we were invited to travel to Belgium with a several other
-    academics and practitioners to consult on what would become the world's first
-    permanent Citizens' Council in Eupen, the capital of the autonomous Ostbelgien
+    academics and practitioners to consult on what would become the world’s first
+    permanent Citizens’ Council in Eupen, the capital of the autonomous Ostbelgien
     region.
   proof_level: high
   url_checked: '2026-08-10'
