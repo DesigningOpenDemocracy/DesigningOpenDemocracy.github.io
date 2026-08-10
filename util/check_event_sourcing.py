@@ -103,7 +103,22 @@ def confidence_score(event):
 
 
 def compute_proof_level(event):
-    """Auto-compute proof_level from source signals."""
+    """Auto-compute proof_level from source signals.
+
+    Respects proof_level_locked: true — an explicit opt-out for a
+    deliberately hand-set value (documented in CLAUDE.md as allowed) that
+    --calculate/--recalculate and the pre-commit hook must not overwrite.
+    Callers that need the "what would this compute to" answer regardless
+    (e.g. the STALE PROOF_LEVEL check, which should still warn about a
+    locked value that's drifted, just not silently fix it) should call
+    _compute_proof_level_unlocked directly.
+    """
+    if event.get("proof_level_locked") and "proof_level" in event:
+        return event["proof_level"]
+    return _compute_proof_level_unlocked(event)
+
+
+def _compute_proof_level_unlocked(event):
     has_url = "url" in event
     has_source = "source" in event
     has_note = "note" in event
@@ -221,7 +236,14 @@ def main():
             # proof_level is always derived from confidence_score() (see
             # compute_proof_level) so a stored value and a freshly computed
             # one can never silently disagree — check that invariant here.
+            # locked events are compared against the *unlocked* score too,
+            # purely as an FYI (their lock is respected either way, but a
+            # human should know if the reason they locked it may no longer
+            # apply — e.g. a note: got added later, raising the real score).
+            is_locked = bool(e.get("proof_level_locked"))
             computed_level = compute_proof_level(e)
+            unlocked_level = _compute_proof_level_unlocked(e) if is_locked else computed_level
+
             if "proof_level" in e and e["proof_level"] != computed_level and args.recalculate:
                 e["proof_level"] = computed_level
                 proof_counts[computed_level] = proof_counts.get(computed_level, 0) + 1
@@ -229,7 +251,11 @@ def main():
                 changed = True
             elif "proof_level" in e:
                 proof_counts[e["proof_level"]] = proof_counts.get(e["proof_level"], 0) + 1
-                if e["proof_level"] != computed_level:
+                if is_locked and e["proof_level"] != unlocked_level:
+                    print(f"  LOCKED (FYI)    {p['title']}  [{e.get('date','?')}]  {e.get('title','?')}")
+                    print(f"                   locked at: {e['proof_level']}  unlocked score would give: {unlocked_level}"
+                          f"  (not auto-changed — confirm the lock reason still applies)")
+                elif not is_locked and e["proof_level"] != computed_level:
                     mismatched_proof_level += 1
                     print(f"  STALE PROOF_LEVEL {p['title']}  [{e.get('date','?')}]  {e.get('title','?')}")
                     print(f"                     stored: {e['proof_level']}  now computes to: {computed_level}"

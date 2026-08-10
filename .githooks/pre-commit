@@ -11,6 +11,11 @@ if [ -n "$STAGED_ORGS" ]; then
     echo "→ Reordering frontmatter in staged org pages..."
     python util/reorder_frontmatter.py
 
+    echo "→ Refreshing proof_level on staged org pages (local/offline, no network)..."
+    python util/check_event_sourcing.py --recalculate >/dev/null
+    # --recalculate skips any event carrying proof_level_locked: true, so a
+    # deliberate manual override survives an unrelated commit to that file.
+
     # Re-stage any files that were just fixed
     for f in $STAGED_ORGS; do
         git add "$f" 2>/dev/null || true
