@@ -52,9 +52,9 @@ events:
   title: 'Democratic Crossroads — unpacking the Voice Referendum: what can we learn
     about Australia''s democracy?'
   url: https://www.folio.org.au/event-5773784
-  note: This Folio Conversation with Mary Crooks and Lauren Crystal will help us unpack
-    the Voice Referendum, drawing on their direct experience in community conversations
-    across the country.
+  note: A Folio Conversation with Mary Crooks and Lauren Crystal unpacking the Voice
+    Referendum, drawing on their experience in community conversations across the
+    country
   proof_level: medium
   url_checked: '2026-08-10'
   notable: true
