@@ -23,13 +23,19 @@ location:
 news_page: https://oporaua.org/en/announce
 events:
 - date: '2004-01-01'
-  notable: true
   title: Founded as an independent civil network for election observation and civic
     participation in Ukraine
-- date: '2004-11-21'
+  url: https://uk.wikipedia.org/wiki/ОПОРА_(громадська_організація)
+  proof_level: medium
+  url_checked: '2026-08-10'
   notable: true
+- date: '2004-11-21'
   title: Deployed 1,000+ observers for Ukraine's presidential election, documenting
     fraud that triggered the Orange Revolution
+  url: https://uk.wikipedia.org/wiki/ОПОРА_(громадська_організація)
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: true
 activity:
   dod:
     checked: 2026-06-29

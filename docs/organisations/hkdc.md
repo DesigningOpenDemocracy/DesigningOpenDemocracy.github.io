@@ -23,17 +23,17 @@ location:
   name: Hong Kong (origin; operates in diaspora)
 news_page: https://www.hkdc.us/news
 activity:
-  dod:
-    checked: 2026-07-16
-    date: 2026-02-10
-    note: 'News page loaded directly; most recent item ''Crossing a New Line: The
-      Conviction of Anna Kwok''s Father'' dated Feb 10, 2026'
-    url: https://www.hkdc.us/news
   manual:
     checked: 2026-06-07
     date: 2026-02-10
     note: 'website loaded. News is https://www.hkdc.us/news where latest is February
       10, 2026 ''Crossing a New Line: The Conviction of Anna Kwok’s Father'''
+    url: https://www.hkdc.us/news
+  dod:
+    checked: 2026-07-16
+    date: 2026-02-10
+    note: 'News page loaded directly; most recent item ''Crossing a New Line: The
+      Conviction of Anna Kwok''s Father'' dated Feb 10, 2026'
     url: https://www.hkdc.us/news
   scrape:
     checked: 2026-06-08

@@ -15,16 +15,18 @@ summary: An Australian civic technology organisation that partners with governme
 concepts:
 - e-government
 - radical-transparency
-events:
-- date: '2014-01-01'
-  notable: true
-  title: Founded by Alvaro Maz, Jacob Lindsay and Daniel Groch
-  url: https://portable.com.au/articles/code-for-australia-announcement/
 location:
   latitude: -37.8136
   longitude: 144.9631
   name: Melbourne, Australia
   precision: city
+events:
+- date: '2014-01-01'
+  title: Founded by Alvaro Maz, Jacob Lindsay and Daniel Groch
+  url: https://portable.com.au/articles/code-for-australia-announcement/
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: true
 activity:
   manual:
     checked: 2026-06-07

@@ -17,37 +17,43 @@ concepts:
 - direct-democracy
 - liquid-democracy
 - e-government
-events:
-- date: '2016-11-10'
-  notable: true
-  title: Established as a not-for-profit / for-purpose organisation in Australia
-  url: https://newvote.org/the-institute
-- date: '2017-11-01'
-  notable: false
-  title: Hosted the inaugural Australian Digital Democracy Forum in Melbourne
-  url: https://newvote.org/the-institute
-- date: '2019-07-24'
-  notable: true
-  title: NewVote platform publicly launched
-  url: https://newvote.org/the-institute
 location:
   latitude: -27.4698
   longitude: 153.0251
   name: Brisbane, Australia
 rss_feed: https://newvote.org/blog/rss.xml
+events:
+- date: '2016-11-10'
+  title: Established as a not-for-profit / for-purpose organisation in Australia
+  url: https://newvote.org/the-institute
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: true
+- date: '2017-11-01'
+  title: Hosted the inaugural Australian Digital Democracy Forum in Melbourne
+  url: https://newvote.org/the-institute
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: false
+- date: '2019-07-24'
+  title: NewVote platform publicly launched
+  url: https://newvote.org/the-institute
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: true
 activity:
-  dod:
-    checked: 2026-07-19
-    date: 2026-07-19
-    note: Website live, confirmed active civic-tech institute. Content largely references
-      2018-2019 activity (UQ Student Voice pilot); no evidence of shutdown.
-    url: https://newvote.org
   manual:
     checked: 2026-06-07
     date: 2020-05-16
     note: website loaded. But social media is last noted in twitter May 16, 2020 https://x.com/newvote/status/1261440493004615681
       . So uncertain on newvote status
     url: https://x.com/newvote/status/1261440493004615681
+  dod:
+    checked: 2026-07-19
+    date: 2026-07-19
+    note: Website live, confirmed active civic-tech institute. Content largely references
+      2018-2019 activity (UQ Student Voice pilot); no evidence of shutdown.
+    url: https://newvote.org
   rss:
     checked: 2026-06-08
     date: 2019-11-11

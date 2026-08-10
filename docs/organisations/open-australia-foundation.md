@@ -16,25 +16,31 @@ concepts:
 - radical-transparency
 - e-government
 - accountability-sink
-events:
-- date: '2009-07-07'
-  notable: true
-  title: Founded by Matthew Landauer and Katherine Szuminska
-  url: https://www.openaustraliafoundation.org.au/2009/07/07/announcing-the-openaustralia-foundation/
-- date: '2009-12-21'
-  notable: false
-  title: Launched PlanningAlerts
-  url: https://www.openaustraliafoundation.org.au/2009/12/21/launching-our-new-website-planning-alerts/
-- date: '2014-10-21'
-  notable: true
-  title: Launched They Vote For You, tracking Australian parliamentary voting records
-  url: https://oaf.org.au/2014/10/21/they-vote-for-you/
 location:
   latitude: -33.8688
   longitude: 151.2093
   name: Sydney, Australia
   precision: city
 rss_feed: https://www.openaustraliafoundation.org.au/feed
+events:
+- date: '2009-07-07'
+  title: Founded by Matthew Landauer and Katherine Szuminska
+  url: https://www.openaustraliafoundation.org.au/2009/07/07/announcing-the-openaustralia-foundation/
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: true
+- date: '2009-12-21'
+  title: Launched PlanningAlerts
+  url: https://www.openaustraliafoundation.org.au/2009/12/21/launching-our-new-website-planning-alerts/
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: false
+- date: '2014-10-21'
+  title: Launched They Vote For You, tracking Australian parliamentary voting records
+  url: https://oaf.org.au/2014/10/21/they-vote-for-you/
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: true
 activity:
   rss:
     checked: 2026-06-08

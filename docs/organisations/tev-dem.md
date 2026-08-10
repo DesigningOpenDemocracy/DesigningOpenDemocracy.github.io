@@ -17,10 +17,20 @@ location:
   precision: city
 events:
 - date: '2011-01-16'
-  notable: true
   title: Founded as the Movement for a Democratic Society, the political coalition
     governing the Autonomous Administration of North and East Syria
+  url: https://en.wikipedia.org/wiki/Movement_for_a_Democratic_Society#:~:text=Movement%20for%20a%20Democratic%20Society%20(TEV-DEM)
+  proof_level: high
+  url_checked: '2026-08-10'
+  notable: true
 activity:
+  manual:
+    checked: 2026-06-07
+    date: 2026-02-21
+    note: Website loaded at https://tev-dem.com/ . News is in front page. Latest is  Feb
+      21, 2026 ' roja Zimanê Dayîk A Cîhanî li hemû gelan pîroz be û Hêviya me ye
+      ku bibe roja vekirina dergihê azadiya gelên Sûriyayê û aramiya wan.'
+    url: https://tev-dem.com/
   dod:
     checked: 2026-07-19
     date: 2026-02-21
@@ -28,13 +38,6 @@ activity:
       note: Jan 2026 Damascus offensive against SDF-held territory + Jan 30 2026 ceasefire/integration
       agreement is phasing AANES civil institutions into Syrian state structures —
       governance model description may not fully reflect current on-the-ground reality.'
-    url: https://tev-dem.com/
-  manual:
-    checked: 2026-06-07
-    date: 2026-02-21
-    note: Website loaded at https://tev-dem.com/ . News is in front page. Latest is  Feb
-      21, 2026 ' roja Zimanê Dayîk A Cîhanî li hemû gelan pîroz be û Hêviya me ye
-      ku bibe roja vekirina dergihê azadiya gelên Sûriyayê û aramiya wan.'
     url: https://tev-dem.com/
 last_checked: '2026-07-19'
 ---

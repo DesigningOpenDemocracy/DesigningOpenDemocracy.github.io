@@ -24,9 +24,12 @@ location:
   precision: city
 events:
 - date: '2018-01-01'
-  notable: true
   title: Launched at Wits University's Tshimologong Precinct as Africa's civic tech
     community of practice
+  url: https://civictech.africa/about-ctin
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: true
 activity:
   rss:
     checked: 2026-08-09

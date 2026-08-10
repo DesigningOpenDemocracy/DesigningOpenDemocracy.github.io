@@ -25,20 +25,20 @@ location:
   name: Jerusalem, Israel
 events:
 - date: '1991-01-01'
-  notable: true
   title: Founded as an independent research centre dedicated to strengthening Israeli
     democracy
-- date: '1995-01-01'
+  url: https://en.wikipedia.org/wiki/Israel_Democracy_Institute#:~:text=was%20founded%20in%201991%20as%20a%20center%20of%20research%20and%20action%20dedicated%20to%20strengthening%20the%20foundations%20of%20Israeli%20democracy
+  proof_level: high
+  url_checked: '2026-08-10'
   notable: true
+- date: '1995-01-01'
   title: Published the first Israeli Democracy Index — an annual survey tracking democratic
     attitudes in Israel
+  url: https://en.wikipedia.org/wiki/Israel_Democracy_Institute
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: true
 activity:
-  dod:
-    checked: 2026-07-16
-    date: 2026-07-15
-    note: 'Website loaded directly; recent publications dated July 2026 including
-      ''Explainer: Basic Law: Torah Study and Its Implications'' (July 15, 2026)'
-    url: https://en.idi.org.il
   manual:
     checked: 2026-06-07
     date: 2026-06-03
@@ -47,6 +47,12 @@ activity:
       Israel Democracy Institute's annual Eli Hurvitz Conference on Economy and Society
       2026 | Recap '
     url: https://en.idi.org.il/hurvitz/2026/
+  dod:
+    checked: 2026-07-16
+    date: 2026-07-15
+    note: 'Website loaded directly; recent publications dated July 2026 including
+      ''Explainer: Basic Law: Torah Study and Its Implications'' (July 15, 2026)'
+    url: https://en.idi.org.il
   sitemap:
     checked: 2026-08-09
     date: 2026-08-09

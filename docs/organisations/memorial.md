@@ -22,13 +22,19 @@ location:
 news_page: https://www.memorial.de/nachrichten
 events:
 - date: '1989-01-28'
-  notable: true
   title: Founded by Andrei Sakharov and others as the first independent human rights
     organisation in the Soviet Union
-- date: '2022-10-07'
+  url: https://en.wikipedia.org/wiki/Memorial_(society)#:~:text=as%20a%20historical%20and%20educational%20society
+  proof_level: high
+  url_checked: '2026-08-10'
   notable: true
+- date: '2022-10-07'
   title: Awarded the Nobel Peace Prize jointly with Ales Bialiatski and Center for
     Civil Liberties
+  url: https://en.wikipedia.org/wiki/Memorial_(society)#:~:text=Memorial%20was%20one%20of%20the%20three%20laureates%20of%20that%20year%27s%20Nobel%20Peace%20Prize
+  proof_level: high
+  url_checked: '2026-08-10'
+  notable: true
 activity:
   manual:
     checked: 2026-06-07

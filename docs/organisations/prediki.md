@@ -25,12 +25,6 @@ location:
   precision: city
 news_page: https://www.prediki.com/meta/en/Management-by-Predictions-(Prediki-Blog-in-English)/
 activity:
-  dod:
-    checked: 2026-07-19
-    date: 2026-07-19
-    note: Prediction market platform live with active questions and participant engagement;
-      footer copyright dated 2012-2022 but platform is operating.
-    url: https://www.prediki.com
   manual:
     checked: 2026-06-07
     date: 2022-09-30
@@ -38,6 +32,12 @@ activity:
       . Last is at  Vienna, 30 September 2022 'Renewed Controversy About Election
       Polls'
     url: https://www.prediki.com/meta/en/Management-by-Predictions-(Prediki-Blog-in-English)/
+  dod:
+    checked: 2026-07-19
+    date: 2026-07-19
+    note: Prediction market platform live with active questions and participant engagement;
+      footer copyright dated 2012-2022 but platform is operating.
+    url: https://www.prediki.com
   rss:
     checked: 2026-06-07
     note: No feed found

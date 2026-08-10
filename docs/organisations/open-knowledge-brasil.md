@@ -24,9 +24,12 @@ location:
   precision: city
 events:
 - date: '2013-01-01'
-  notable: true
   title: Founded as the Brazilian chapter of Open Knowledge, promoting open data and
     civic technology
+  url: https://pt.wikipedia.org/wiki/Open_Knowledge_Brasil
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: true
 activity:
   dod:
     checked: 2026-08-09

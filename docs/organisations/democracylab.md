@@ -21,17 +21,17 @@ location:
   name: Seattle, USA
   precision: city
 activity:
-  dod:
-    checked: 2026-07-05
-    date: 2026-07-05
-    note: Homepage is JS-rendered (loading placeholder); sitemap.xml lastmod shows
-      2026-07-05, confirming active
   manual:
     checked: 2026-06-07
     date: 2025-09-10
     note: website loaded. Last blog post is at https://blog.democracylab.org/10-000-volunteers-and-counting/  10
       Sep 2025 '10,000 Volunteers and Counting!'
     url: https://blog.democracylab.org/10-000-volunteers-and-counting/
+  dod:
+    checked: 2026-07-05
+    date: 2026-07-05
+    note: Homepage is JS-rendered (loading placeholder); sitemap.xml lastmod shows
+      2026-07-05, confirming active
   sitemap:
     checked: 2026-08-09
     date: 2026-08-09

@@ -16,17 +16,19 @@ concepts:
 - deliberative-democracy
 - participatory-budgeting
 - direct-democracy
-events:
-- date: '2003-01-01'
-  notable: true
-  title: Founded
-  url: https://register-of-charities.charitycommission.gov.uk/en/charity-search/-/charity-details/4027987
 location:
   latitude: 51.5074
   longitude: -0.1278
   name: London, United Kingdom
   precision: city
 rss_feed: https://www.involve.org.uk/rss.xml
+events:
+- date: '2003-01-01'
+  title: Founded
+  url: https://register-of-charities.charitycommission.gov.uk/en/charity-search/-/charity-details/4027987
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: true
 activity:
   rss:
     date: 2026-05-12

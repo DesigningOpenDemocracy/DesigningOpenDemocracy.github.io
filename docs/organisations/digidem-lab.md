@@ -25,9 +25,12 @@ location:
   precision: city
 events:
 - date: '2017-01-01'
-  notable: true
   title: Founded in Gothenburg to design and implement digital participatory democracy
     processes
+  url: https://digidemlab.org/about/
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: true
 activity:
   rss:
     checked: 2026-08-09

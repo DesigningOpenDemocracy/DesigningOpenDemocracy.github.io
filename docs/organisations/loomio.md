@@ -26,17 +26,24 @@ location:
   precision: city
 events:
 - date: '2012-01-01'
-  notable: true
   title: First prototype launched from Occupy movement and Enspiral network in New
     Zealand
-  url: https://en.wikipedia.org/wiki/Loomio
-- date: '2014-01-01'
+  url: https://en.wikipedia.org/wiki/Loomio#:~:text=launched%20its%20first%20prototype
+  proof_level: high
+  url_checked: '2026-08-10'
   notable: true
+- date: '2014-01-01'
   title: Raises $100,000 via crowdfunding for Loomio 1.0 release
+  url: https://en.wikipedia.org/wiki/Loomio#:~:text=raised%20over%20%24100%2C000%20via%20a%20Crowdfunding
+  proof_level: high
+  url_checked: '2026-08-10'
+  notable: true
 - date: '2014-04-01'
-  notable: false
   title: Wins MIX Prize Digital Freedom Challenge
-  url: https://en.wikipedia.org/wiki/Loomio
+  url: https://en.wikipedia.org/wiki/Loomio#:~:text=won%20the%20MIX%20Prize%20Digital%20Freedom%20Challenge
+  proof_level: high
+  url_checked: '2026-08-10'
+  notable: false
 activity:
   manual:
     checked: 2026-06-07

@@ -11,25 +11,31 @@ summary: An Australian blockchain voting platform providing secure, scalable, an
 concepts:
 - end-to-end-verifiable-voting-system
 - e-government
-events:
-- date: '2016-01-01'
-  notable: true
-  title: Founded by Max Kaye as a Sydney-based blockchain voting startup
-  url: https://techboard.com.au/company-profile/xo-1/
-- date: '2017-11-24'
-  notable: false
-  title: Won the Cyber Security Award at the Australian Technologies Competition
-  url: https://techboard.com.au/company-profile/xo-1/
-- date: '2018-01-01'
-  notable: true
-  title: Signed a deal with Silicon Valley startup Swarm Fund to use SecureVote's
-    Liquid Democracy Voting Module
-  url: https://ia.acs.org.au/article/2018/blockchain-to-revolutionise-e-voting.html
 location:
   latitude: -33.8688
   longitude: 151.2093
   name: Sydney, Australia
   precision: city
+events:
+- date: '2016-01-01'
+  title: Founded by Max Kaye as a Sydney-based blockchain voting startup
+  url: https://techboard.com.au/company-profile/xo-1/
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: true
+- date: '2017-11-24'
+  title: Won the Cyber Security Award at the Australian Technologies Competition
+  url: https://techboard.com.au/company-profile/xo-1/
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: false
+- date: '2018-01-01'
+  title: Signed a deal with Silicon Valley startup Swarm Fund to use SecureVote's
+    Liquid Democracy Voting Module
+  url: https://ia.acs.org.au/article/2018/blockchain-to-revolutionise-e-voting.html
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: true
 ---
 
 SecureVote is a Sydney-based company providing blockchain-based voting infrastructure. Their platform uses a proprietary Blockchain Agnostic Scalability Layer (BASL) to enable decentralised, anonymous, and auditable elections at scale — stress-tested to 1.5 billion transactions in 24 hours.

@@ -23,9 +23,12 @@ location:
   name: Tokyo, Japan
   precision: city
 events:
-- date: '2013-01-01'
-  notable: true
+- date: '2013-10-25'
   title: Founded as the Japanese node of Code for All, bringing civic tech to Japan
+  url: https://www.code4japan.org/aboutus
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: true
 activity:
   sitemap:
     checked: 2026-08-09

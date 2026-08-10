@@ -25,13 +25,19 @@ location:
 news_page: https://www.opensocietyfoundations.org/newsroom
 events:
 - date: '1993-04-01'
-  notable: true
   title: Founded by George Soros to support civil society, human rights, and democratic
     governance globally
+  url: https://en.wikipedia.org/wiki/Open_Society_Foundations#:~:text=is%20an%20American%20grantmaking%20network%20founded%20by%20billionaire%20business%20magnate%20George%20Soros
+  proof_level: high
+  url_checked: '2026-08-10'
+  notable: true
 - date: '2023-03-07'
-  notable: false
   title: Announced leadership transition — Alex Soros appointed chair, succeeding
     George Soros
+  url: https://en.wikipedia.org/wiki/Open_Society_Foundations#:~:text=George%20Soros%20handed%20over%20the%20leadership%20of%20the%20foundation%20to%20his%20son%20Alexander%20Soros
+  proof_level: high
+  url_checked: '2026-08-10'
+  notable: false
 activity:
   manual:
     checked: 2026-06-07

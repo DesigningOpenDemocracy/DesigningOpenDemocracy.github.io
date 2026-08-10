@@ -23,15 +23,15 @@ location:
   precision: city
 news_page: https://www.democratieouverte.org/le-blog
 activity:
+  manual:
+    date: 2026-05-18
+    note: 'Latest post: co-présidence engagée pour le renforcement de la démocratie'
+    url: https://www.democratieouverte.org/le-blog
   dod:
     checked: 2026-07-05
     date: 2026-07-05
     note: Site confirmed active; DémocraNews newsletter launched 17 June 2026, new
       co-presidency announced 18 May 2026
-  manual:
-    date: 2026-05-18
-    note: 'Latest post: co-présidence engagée pour le renforcement de la démocratie'
-    url: https://www.democratieouverte.org/le-blog
   rss:
     checked: 2026-08-09
     note: No feed found

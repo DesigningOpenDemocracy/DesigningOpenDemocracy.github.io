@@ -1,4 +1,60 @@
 ---
+title: Democracy International
+type: advocacy
+status: active
+country: DE
+website: https://www.democracy-international.org
+logo: /assets/org-logos/democracy-international.png
+contact:
+  checked: 2026-08-01
+  email: contact@democracy-international.org
+  form: https://www.democracy-international.org/contact
+  phone: +49 221 669 66 50
+  source: https://www.democracy-international.org/contact-us
+summary: A Cologne-based NGO advocating for direct democracy and citizen participation
+  globally — organises the Global Forum on Modern Direct Democracy and supports reform
+  campaigns worldwide.
+concepts:
+- direct-democracy
+- deliberative-democracy
+- participatory-budgeting
+- citizens-assembly
+- sortition
+location:
+  latitude: 50.9333
+  longitude: 6.95
+  name: Cologne, Germany
+news_page: https://www.democracy-international.org/news
+rss_feed: https://www.democracy-international.org/rss.xml
+events:
+- date: '2026-08-26'
+  title: Democracy Camp 2026 Bulgaria — Erasmus+ youth exchange for 70+ young Europeans
+    on democracy and media, Sofia/Veliko Tarnovo
+  url: https://www.democracy-international.org/events/2315/democracy-camp-2026-bulgaria
+  proof_level: medium
+  url_checked: '2026-08-10'
+  end_date: '2026-08-30'
+  notable: false
+  type: workshop
+  location: Sofia/Veliko Tarnovo, Bulgaria
+  country: BG
+- date: '2026-10-07'
+  title: 2026 Global Forum on Modern Direct Democracy — Gaborone, Botswana
+  url: https://www.democracy-international.org/events
+  proof_level: medium
+  url_checked: '2026-08-10'
+  end_date: '2026-10-10'
+  notable: true
+  type: conference
+  location: Gaborone, Botswana
+  country: BW
+- date: '2011-06-01'
+  title: Formally registered as an association, building on a loose network dating
+    back to 2002
+  url: https://en.wikipedia.org/wiki/Democracy_International_eV#:~:text=formally%20established%20in%20June%202011
+  proof_level: high
+  url_checked: '2026-08-10'
+  notable: true
 activity:
   dod:
     checked: 2026-07-05
@@ -15,56 +71,7 @@ activity:
     date: 2026-04-27
     note: Latest news page scraped
     url: https://www.democracy-international.org/news
-concepts:
-- direct-democracy
-- deliberative-democracy
-- participatory-budgeting
-- citizens-assembly
-- sortition
-contact:
-  checked: 2026-08-01
-  email: contact@democracy-international.org
-  form: https://www.democracy-international.org/contact
-  phone: +49 221 669 66 50
-  source: https://www.democracy-international.org/contact-us
-country: DE
-events:
-- country: BG
-  date: '2026-08-26'
-  end_date: '2026-08-30'
-  location: Sofia/Veliko Tarnovo, Bulgaria
-  notable: false
-  title: Democracy Camp 2026 Bulgaria — Erasmus+ youth exchange for 70+ young Europeans
-    on democracy and media, Sofia/Veliko Tarnovo
-  type: workshop
-  url: https://www.democracy-international.org/events/2315/democracy-camp-2026-bulgaria
-- country: BW
-  date: '2026-10-07'
-  end_date: '2026-10-10'
-  location: Gaborone, Botswana
-  notable: true
-  title: 2026 Global Forum on Modern Direct Democracy — Gaborone, Botswana
-  type: conference
-  url: https://www.democracy-international.org/events
-- date: '2011-06-01'
-  notable: true
-  title: Formally registered as an association, building on a loose network dating
-    back to 2002
 last_checked: '2026-07-05'
-location:
-  latitude: 50.9333
-  longitude: 6.95
-  name: Cologne, Germany
-logo: /assets/org-logos/democracy-international.png
-news_page: https://www.democracy-international.org/news
-rss_feed: https://www.democracy-international.org/rss.xml
-status: active
-summary: A Cologne-based NGO advocating for direct democracy and citizen participation
-  globally — organises the Global Forum on Modern Direct Democracy and supports reform
-  campaigns worldwide.
-title: Democracy International
-type: advocacy
-website: https://www.democracy-international.org
 ---
 
 Democracy International is a Cologne-based NGO registered as a German e.V. (Eingetragener Verein), founded in 2011. It advocates for direct democracy and citizen participation at local, national, and global levels, combining policy advocacy, support for activists, published research, and international convening.

@@ -24,9 +24,12 @@ location:
   precision: city
 events:
 - date: '2009-01-01'
-  notable: true
   title: Founded in Warsaw with a mission bridging citizen participation, social innovation,
     and research
+  url: https://stocznia.org.pl/en/about-shipyard/
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: true
 activity:
   rss:
     checked: 2026-08-09

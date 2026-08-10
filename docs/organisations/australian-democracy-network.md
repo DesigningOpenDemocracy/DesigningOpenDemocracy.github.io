@@ -18,17 +18,19 @@ concepts:
 - constitutional-democracy
 - representative-democracy
 - accountability-sink
-events:
-- date: '2020-02-01'
-  notable: true
-  title: Launched as a joint project of the Human Rights Law Centre, Australian
-    Conservation Foundation and ACOSS
-  url: https://raisely-images.imgix.net/australian-democracy-network/uploads/adn-annual-report-23-pdf-531f03.pdf
 location:
   latitude: -37.8136
   longitude: 144.9631
   name: Melbourne, Australia
   precision: city
+events:
+- date: '2020-02-01'
+  title: Launched as a joint project of the Human Rights Law Centre, Australian Conservation
+    Foundation and ACOSS
+  url: https://raisely-images.imgix.net/australian-democracy-network/uploads/adn-annual-report-23-pdf-531f03.pdf
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: true
 activity:
   manual:
     checked: 2026-06-07

@@ -26,22 +26,35 @@ location:
   precision: city
 events:
 - date: '2020-01-01'
-  notable: true
   title: Organisation established — begins running deliberative minipublics in Brazil
-- date: '2021-01-01'
+  url: https://deliberabrasil.org/
+  note: Site describes in-house assembly method, design through to delivery
+  proof_level: medium
+  url_checked: '2026-08-10'
   notable: true
+- date: '2021-01-01'
   title: Climate Assemblies of Pará launched — citizen deliberation in the Amazon
     on climate policy
+  url: https://deliberabrasil.org/
+  note: Site lists 'Assembleias Climáticas do Pará' as a current project
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: true
 - date: '2025-01-01'
-  notable: false
   title: Assembleias Cidadãs de Moçambique — climate resilience assemblies launched
     in Mozambique
+  url: https://deliberabrasil.org/
+  note: Site lists 'Assembleias Cidadãs de Moçambique' as a current project
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: false
 activity:
   dod:
-    date: 2026-08-09
-    note: "Confirmed live and active — 2025 project updates on climate assemblies in Pará/Mozambique and Osasco minipublic"
     checked: 2026-08-09
-last_checked: "2026-08-09"
+    date: 2026-08-09
+    note: Confirmed live and active — 2025 project updates on climate assemblies in
+      Pará/Mozambique and Osasco minipublic
+last_checked: '2026-08-09'
 ---
 
 Delibera Brasil designs and facilitates citizens' assemblies and minipublics — randomly selected groups of ordinary citizens who undergo an intensive learning process with experts, deliberate together, and produce policy recommendations. The method treats democracy not as a spectator sport but as something citizens do: given time, balanced information, and a structured process, laypeople reach substantive, considered conclusions on hard policy questions.

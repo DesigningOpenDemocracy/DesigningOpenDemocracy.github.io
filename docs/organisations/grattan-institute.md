@@ -18,18 +18,20 @@ concepts:
 - democracy
 - constitutional-democracy
 - accountability-sink
-events:
-- date: '2008-11-01'
-  notable: true
-  title: Formally incorporated, backed by the Victorian and Commonwealth governments,
-    the University of Melbourne, and BHP/NAB
-  url: https://en.wikipedia.org/wiki/Grattan_Institute
 location:
   latitude: -37.8136
   longitude: 144.9631
   name: Melbourne, Australia
   precision: city
 rss_feed: https://grattan.edu.au/feed
+events:
+- date: '2008-11-01'
+  title: Formally incorporated, backed by the Victorian and Commonwealth governments,
+    the University of Melbourne, and BHP/NAB
+  url: https://en.wikipedia.org/wiki/Grattan_Institute
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: true
 activity:
   dod:
     checked: 2026-07-05

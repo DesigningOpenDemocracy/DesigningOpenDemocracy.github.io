@@ -16,32 +16,34 @@ concepts:
 - mixed-member-proportional-representation
 - representative-democracy
 - direct-democracy
-events:
-- date: '2026-11-12'
-  notable: true
-  title: 2026 AGM — vote on 17-motion package to rename to Australian Electoral Reform
-    Society and broaden remit beyond STV
-  type: meeting
-  url: https://www.designingopendemocracy.com/blog/2026/07/31/prsa-members-to-vote-on-rebrand-to-australian-electoral-reform-society--agm-12-november-2026/
 location:
   latitude: -35.2809
   longitude: 149.13
   name: Canberra, Australia
   precision: city
 rss_feed: https://www.prsa.org.au/feed
+events:
+- date: '2026-11-12'
+  title: 2026 AGM — vote on 17-motion package to rename to Australian Electoral Reform
+    Society and broaden remit beyond STV
+  url: https://www.designingopendemocracy.com/blog/2026/07/31/prsa-members-to-vote-on-rebrand-to-australian-electoral-reform-society--agm-12-november-2026/
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: true
+  type: meeting
 activity:
-  dod:
-    checked: 2026-07-19
-    date: 2026-07-19
-    note: Website live; quarterly newsletter (Quota Notes), active social media, ongoing
-      electoral-reform advocacy.
-    url: https://www.prsa.org.au
   manual:
     checked: 2026-06-07
     date: 2026-05-01
     note: website loaded. News page at https://www.prsa.org.au/latest01.htm 2026-05a
       'LETTER ON SOUTH AUSTRALIAN ELECTION OUTCOME TO ALL SA MPs:'
     url: https://www.prsa.org.au/latest01.htm
+  dod:
+    checked: 2026-07-19
+    date: 2026-07-19
+    note: Website live; quarterly newsletter (Quota Notes), active social media, ongoing
+      electoral-reform advocacy.
+    url: https://www.prsa.org.au
   rss:
     checked: 2026-06-08
     date: 2020-07-09

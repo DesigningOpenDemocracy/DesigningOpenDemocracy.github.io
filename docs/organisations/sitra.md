@@ -24,9 +24,12 @@ location:
   precision: city
 events:
 - date: '1967-01-01'
-  notable: true
   title: Established by the Finnish Parliament as the Finnish Innovation Fund, under
     parliamentary supervision
+  url: https://en.wikipedia.org/wiki/SITRA#:~:text=Sitra%20was%20founded%20in%201967%20as%20a%20part%20of%20the%20Bank%20of%20Finland
+  proof_level: high
+  url_checked: '2026-08-10'
+  notable: true
 activity:
   dod:
     checked: 2026-08-09

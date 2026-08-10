@@ -24,9 +24,14 @@ location:
   precision: city
 events:
 - date: '2018-01-01'
-  notable: true
   title: Founded in São Paulo as a regional platform for political innovation and
     imagination in the Global South
+  url: https://www.institutoupdate.org.br/
+  note: About page describes the organisation as a regional platform for political
+    innovation in the Global South
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: true
 activity:
   rss:
     checked: 2026-08-09

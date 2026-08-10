@@ -11,20 +11,24 @@ concepts:
 - direct-democracy
 - e-government
 - liquid-democracy
-events:
-- date: '2007-01-01'
-  notable: true
-  title: Founded as "Senator Online"; later renamed Online Direct Democracy in 2015
-  url: https://en.wikipedia.org/wiki/Online_Direct_Democracy
-- date: '2020-12-01'
-  notable: true
-  title: Deregistered as a political party
-  url: https://en.wikipedia.org/wiki/Online_Direct_Democracy
 location:
   latitude: -33.8688
   longitude: 151.2093
   name: Australia
   precision: city
+events:
+- date: '2007-01-01'
+  title: Founded as "Senator Online"; later renamed Online Direct Democracy in 2015
+  url: https://en.wikipedia.org/wiki/Online_Direct_Democracy
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: true
+- date: '2020-12-01'
+  title: Deregistered as a political party
+  url: https://en.wikipedia.org/wiki/Online_Direct_Democracy
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: true
 ---
 
 Online Direct Democracy Australia was a direct democracy advocacy and electoral organisation that promoted online citizen voting as a structural replacement for representative democracy. It stood candidates at Australian elections.

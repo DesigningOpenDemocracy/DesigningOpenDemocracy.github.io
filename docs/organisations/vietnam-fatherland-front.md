@@ -21,22 +21,25 @@ location:
   name: Hanoi, Vietnam
 events:
 - date: '1977-02-01'
-  notable: true
   title: Founded as the umbrella political coalition under the Communist Party of
     Vietnam, succeeding the North Vietnamese Fatherland Front
+  url: https://en.wikipedia.org/wiki/Vietnam_Fatherland_Front#:~:text=was%20founded%20in%20February%201977%20by%20the%20merger
+  proof_level: high
+  url_checked: '2026-08-10'
+  notable: true
 activity:
-  dod:
-    checked: 2026-07-19
-    date: 2026-07-18
-    note: Website live with July 2026 content; homepage timestamp and news dated July
-      18-19 2026.
-    url: https://mattran.org.vn
   manual:
     checked: 2026-06-07
     date: 2026-06-07
     note: 'website loaded. News page in front page. Latest news 07/06/2026 ''Khai
       mạc phiên thứ nhất Đại hội đại biểu toàn quốc Hội Nông dân Việt Nam lần thứ
       IX: Gần 600 đại biểu chính thức về dự'''
+  dod:
+    checked: 2026-07-19
+    date: 2026-07-18
+    note: Website live with July 2026 content; homepage timestamp and news dated July
+      18-19 2026.
+    url: https://mattran.org.vn
   sitemap:
     checked: 2026-06-07
     date: 2026-06-07

@@ -21,8 +21,8 @@ location:
   latitude: 59.437
   longitude: 24.7536
   name: Tallinn, Estonia
-rss_feed: https://citizenos.com/feed
 news_page: https://citizenos.com/news/
+rss_feed: https://citizenos.com/feed
 activity:
   manual:
     date: 2025-07-23

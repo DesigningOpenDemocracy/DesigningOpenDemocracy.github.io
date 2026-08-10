@@ -24,9 +24,12 @@ location:
   precision: city
 events:
 - date: '2018-01-01'
-  notable: true
   title: Founded in Nairobi as a pan-African platform for democratic governance across
     55 AU member states
+  url: https://governancehubafrica.org/about
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: true
 activity:
   rss:
     checked: 2026-08-09

@@ -16,20 +16,24 @@ concepts:
 - deliberative-democracy
 - citizens-assembly
 - sortition
-events:
-- date: '2007-01-01'
-  notable: true
-  title: Founded by Peter MacLeod
-  url: https://www.masslbp.com/about
-- date: '2011-01-01'
-  notable: false
-  title: Ran the Citizens' Reference Panel on Ontario Health Services
-  url: https://www.masslbp.com/work-panels
 location:
   latitude: 43.6532
   longitude: -79.3832
   name: Toronto, Canada
   precision: city
+events:
+- date: '2007-01-01'
+  title: Founded by Peter MacLeod
+  url: https://www.masslbp.com/about
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: true
+- date: '2011-01-01'
+  title: Ran the Citizens' Reference Panel on Ontario Health Services
+  url: https://www.masslbp.com/work-panels
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: false
 activity:
   manual:
     checked: 2026-06-07
@@ -38,14 +42,14 @@ activity:
       'We’re aiming to expand our team this fall by adding a new Coordinator at MASS.
       We are looking for a candidate with the right mix of qualities, skills and experience
       to help us build our practice and raise our game.'
-  sitemap:
-    checked: 2026-06-08
-    date: 2026-05-22
-    note: Page last modified (from sitemap)
   social:
     date: 2025-07-21
     note: 'Latest video: What is MASS LBP?'
     url: https://www.youtube.com/watch?v=x-WbnLvrBBc
+  sitemap:
+    checked: 2026-06-08
+    date: 2026-05-22
+    note: Page last modified (from sitemap)
 last_checked: '2026-05-29'
 ---
 

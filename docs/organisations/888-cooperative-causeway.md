@@ -16,16 +16,18 @@ concepts:
 - cooperative
 - worker-cooperatives
 - economic-democracy
-events:
-- date: '2018-01-01'
-  notable: true
-  title: Formed as Victoria's first registered co-operative co-working space
-  url: https://www.888causeway.coop/about/
 location:
   latitude: -37.8156
   longitude: 144.9648
   name: Melbourne, Australia
 rss_feed: https://www.888causeway.coop/feed
+events:
+- date: '2018-01-01'
+  title: Formed as Victoria's first registered co-operative co-working space
+  url: https://www.888causeway.coop/about/
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: true
 activity:
   manual:
     checked: 2026-06-07

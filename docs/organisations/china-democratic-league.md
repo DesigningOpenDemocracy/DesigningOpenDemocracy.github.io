@@ -22,10 +22,13 @@ location:
   name: Beijing, China
   precision: city
 events:
-- date: '1941-01-01'
-  notable: true
+- date: '1941-03-19'
   title: Founded in Chongqing as an umbrella organisation of China's centrist and
     left-leaning intellectuals during the Second Sino-Japanese War
+  url: https://www.mmzy.org.cn/mmgk/jianjie/default.aspx
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: true
 activity:
   dod:
     checked: 2026-06-29

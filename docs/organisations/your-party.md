@@ -24,24 +24,27 @@ location:
 rss_feed: https://www.yourparty.uk/feed
 events:
 - date: '2009-01-01'
-  notable: true
   title: Founded by Yoshimi Watanabe, a former Liberal Democratic Party minister,
     as a reformist Japanese political party
+  url: https://en.wikipedia.org/wiki/Your_Party_(Japan)#:~:text=party%20was%20founded%20on%20August%208%2C%202009
+  proof_level: high
+  url_checked: '2026-08-10'
+  notable: true
 activity:
   dod:
     checked: 2026-07-19
     date: 2026-07-16
     note: Website live; article:modified_time 2026-07-16, active UK political party.
     url: https://www.yourparty.uk
+  social:
+    date: 2026-06-05
+    note: 'Latest tweet: police accountability post'
+    url: https://x.com/thisisyourparty
   rss:
     checked: 2026-06-07
     date: 2026-06-07
     note: RSS feed active
     url: https://www.yourparty.uk/feed
-  social:
-    date: 2026-06-05
-    note: 'Latest tweet: police accountability post'
-    url: https://x.com/thisisyourparty
 last_checked: '2026-07-19'
 ---
 

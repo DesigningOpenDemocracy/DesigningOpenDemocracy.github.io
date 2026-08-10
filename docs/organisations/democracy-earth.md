@@ -13,26 +13,28 @@ concepts:
 - liquid-democracy
 - direct-democracy
 - decentralized-autonomous-organization
-events:
-- date: '2015-01-01'
-  notable: true
-  title: Founded by Santiago Siri, Pia Mancini and Guido Vilariño; accepted into
-    Y Combinator's Winter 2015 batch
-  url: https://www.ycombinator.com/companies/democracy-earth
 location:
   latitude: -34.6037
   longitude: -58.3816
   name: Buenos Aires, Argentina
+events:
+- date: '2015-01-01'
+  title: Founded by Santiago Siri, Pia Mancini and Guido Vilariño; accepted into Y
+    Combinator's Winter 2015 batch
+  url: https://www.ycombinator.com/companies/democracy-earth
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: true
 activity:
+  manual:
+    checked: 2026-06-09
+    date: 2026-06-09
+    note: Site confirmed active; no blog or news feed found
   dod:
     checked: 2026-07-05
     date: 2026-07-05
     note: Direct site fetch returned 503; corroborated active via WEF org profile,
       GitHub org, and press coverage of new SAIRI autonomous AI-agent project
-  manual:
-    checked: 2026-06-09
-    date: 2026-06-09
-    note: Site confirmed active; no blog or news feed found
   rss:
     checked: 2026-08-09
     note: No feed found

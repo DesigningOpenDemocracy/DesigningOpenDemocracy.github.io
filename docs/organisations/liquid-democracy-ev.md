@@ -25,17 +25,17 @@ location:
   precision: city
 news_page: https://liqd.net/en/blog/
 activity:
+  manual:
+    date: 2026-05-28
+    note: 'Latest post: Halbzeit – 6 Monate Freiwilligendienst bei Liquid Democracy
+      e.V.'
+    url: https://liqd.net/en/blog/
   dod:
     checked: 2026-07-16
     date: 2026-07-16
     note: Site actively maintained; most recent blog post dated July 7, 2026 (office
       relocation); adhocracy+, meinBerlin, Zukunft D projects all current
     url: https://liqd.net/en/
-  manual:
-    date: 2026-05-28
-    note: 'Latest post: Halbzeit – 6 Monate Freiwilligendienst bei Liquid Democracy
-      e.V.'
-    url: https://liqd.net/en/blog/
   scrape:
     checked: 2026-06-08
     date: 2026-05-28

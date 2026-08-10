@@ -26,10 +26,19 @@ location:
 news_page: https://fbk.info/en/news/
 events:
 - date: '2011-01-01'
-  notable: true
   title: Founded by Alexei Navalny as the Anti-Corruption Foundation to investigate
     official corruption in Russia
+  url: https://en.wikipedia.org/wiki/Anti-Corruption_Foundation#:~:text=FBK%20was%20founded%20by%20Alexei%20Navalny
+  proof_level: high
+  url_checked: '2026-08-10'
+  notable: true
 activity:
+  manual:
+    checked: 2026-06-07
+    date: 2026-06-04
+    note: website up. News at https://fbk.info/en/news/ latest article https://fbk.info/en/news/navalny-archive
+      4 June 2026 'We are launching the Alexei Navalny Archive'
+    url: https://fbk.info/en/news/navalny-archive
   dod:
     checked: 2026-08-08
     date: 2026-08-06
@@ -37,12 +46,6 @@ activity:
       Duma Elections (6 Aug), One Garage Two Billion Rubles investigation (3 Aug),
       poll on Russians losing faith in Putin''s stability (30 Jul 2026)'
     url: https://fbk.info/en
-  manual:
-    checked: 2026-06-07
-    date: 2026-06-04
-    note: website up. News at https://fbk.info/en/news/ latest article https://fbk.info/en/news/navalny-archive
-      4 June 2026 'We are launching the Alexei Navalny Archive'
-    url: https://fbk.info/en/news/navalny-archive
   rss:
     checked: 2026-06-07
     note: No feed found

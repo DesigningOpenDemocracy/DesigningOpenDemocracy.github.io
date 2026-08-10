@@ -145,6 +145,7 @@
   <li class="{% if e.notable %}org-event--notable{% endif %}">
     <span class="org-event-date">{{ e.date }}</span>
     <span class="org-event-title">{% if e.url %}<a href="{{ e.url }}" target="_blank" rel="noopener">{{ e.title }}</a>{% else %}{{ e.title }}{% endif %}</span>
+    {%- if e.url %}<a href="{{ e.url }}" target="_blank" rel="noopener" class="org-event-source-btn" title="View source">↗ source</a>{% elif e.source %}<span class="org-event-source-btn" title="{{ e.source }}">↗ cited</span>{% endif %}
     {%- if e.coverage_url %}<span class="org-event-coverage"> — <a href="{{ e.coverage_url }}">DOD coverage</a></span>{%- endif %}
   </li>
   {%- endfor %}
@@ -157,6 +158,7 @@
   <li class="{% if e.notable %}org-event--notable{% endif %}">
     <span class="org-event-date">{{ e.date }}</span>
     <span class="org-event-title">{% if e.url %}<a href="{{ e.url }}" target="_blank" rel="noopener">{{ e.title }}</a>{% else %}{{ e.title }}{% endif %}</span>
+    {%- if e.url %}<a href="{{ e.url }}" target="_blank" rel="noopener" class="org-event-source-btn" title="View source">↗ source</a>{% elif e.source %}<span class="org-event-source-btn" title="{{ e.source }}">↗ cited</span>{% endif %}
     {%- if e.coverage_url %}<span class="org-event-coverage"> — <a href="{{ e.coverage_url }}">DOD coverage</a></span>{%- endif %}
   </li>
   {%- endfor %}

@@ -24,16 +24,25 @@ location:
 rss_feed: https://democrats.org.au/rss.xml
 events:
 - date: '1977-01-01'
-  notable: true
   title: Founded by Don Chipp, emerging from the Liberal Party split, running on 'keeping
     the bastards honest'
-- date: '1980-10-18'
+  url: https://en.wikipedia.org/wiki/Australian_Democrats#:~:text=The%20Democrats%27%20inaugural%20leader%20was%20Don%20Chipp
+  proof_level: high
+  url_checked: '2026-08-10'
   notable: true
+- date: '1980-10-18'
   title: First elected to the Senate, winning balance of power — five Senators elected
     on a 9.3% vote
+  url: https://en.wikipedia.org/wiki/Australian_Democrats#:~:text=At%20the%201980%20election%2C%20this%20increased%20to%20five%20seats
+  proof_level: high
+  url_checked: '2026-08-10'
+  notable: true
 - date: '1990-03-24'
-  notable: false
   title: Peak electoral result — 12.6% Senate vote in the 1990 federal election
+  url: https://en.wikipedia.org/wiki/Australian_Democrats#:~:text=the%201990%20federal%20election%20heralded%20something%20of%20a%20rebirth
+  proof_level: high
+  url_checked: '2026-08-10'
+  notable: false
 activity:
   rss:
     checked: 2026-06-08

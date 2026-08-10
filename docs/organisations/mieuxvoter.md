@@ -23,17 +23,17 @@ location:
   precision: city
 news_page: https://mieuxvoter.fr/presse
 activity:
+  manual:
+    checked: 2026-06-08
+    date: 2025-08-29
+    note: 'Latest press item: Bilan des Primaires 2022'
+    url: https://mieuxvoter.fr/presse
   dod:
     checked: 2026-07-16
     date: 2025-08-29
     note: 'Press page confirms recent coverage through Aug 29, 2025 (own post: Bilan
       des Primaires 2022) plus media citations (Libération, France Info); Majority
       Judgment advocacy focus confirmed on homepage'
-    url: https://mieuxvoter.fr/presse
-  manual:
-    checked: 2026-06-08
-    date: 2025-08-29
-    note: 'Latest press item: Bilan des Primaires 2022'
     url: https://mieuxvoter.fr/presse
   rss:
     checked: 2026-06-08

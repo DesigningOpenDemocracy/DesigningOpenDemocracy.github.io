@@ -26,29 +26,38 @@ location:
 news_page: https://bersih.org/news/
 events:
 - date: '2006-11-23'
-  notable: true
   title: Coalition formed by opposition parties and civil society groups demanding
     free and fair elections in Malaysia
-- date: '2007-11-10'
+  url: https://en.wikipedia.org/wiki/Bersih#:~:text=officially%20formed%20on%2023%20November%202006
+  proof_level: high
+  url_checked: '2026-08-10'
   notable: true
+- date: '2007-11-10'
   title: First Bersih rally — 40,000 Malaysians march for electoral reform in Kuala
     Lumpur
-- date: '2011-07-09'
+  url: https://en.wikipedia.org/wiki/Bersih#:~:text=rally%20with%2010%2C000%20to%2040%2C000%20turnout
+  proof_level: high
+  url_checked: '2026-08-10'
   notable: true
+- date: '2011-07-09'
   title: Bersih 2.0 rally — 50,000+ protestors demanding clean elections, met with
     police crackdown
+  url: https://en.wikipedia.org/wiki/Bersih#:~:text=9%20July%202011%20ranged%20from%2010%2C000%20to%2050%2C000
+  proof_level: high
+  url_checked: '2026-08-10'
+  notable: true
 activity:
-  dod:
-    checked: 2026-08-08
-    date: 2026-08-08
-    note: News page source fetched 8 Aug 2026; 8 pages of news posts, most recent
-      March 2025; site footer has copyright 2026 confirming maintained
-    url: https://bersih.org/news/
   manual:
     checked: 2026-06-28
     date: 2025-03-06
     note: 'Latest post: Akta Perkhidmatan Parlimen — Bersih gesa kerajaan teruskan
       reformasi Parlimen'
+    url: https://bersih.org/news/
+  dod:
+    checked: 2026-08-08
+    date: 2026-08-08
+    note: News page source fetched 8 Aug 2026; 8 pages of news posts, most recent
+      March 2025; site footer has copyright 2026 confirming maintained
     url: https://bersih.org/news/
   rss:
     checked: 2026-08-09

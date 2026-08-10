@@ -23,9 +23,12 @@ location:
   name: Quito, Ecuador
 events:
 - date: '1986-01-01'
-  notable: true
   title: Founded to represent Ecuador's Indigenous nationalities, becoming the country's
     largest Indigenous organisation
+  url: https://en.wikipedia.org/wiki/Confederation_of_Indigenous_Nationalities_of_Ecuador#:~:text=CONAIE%20was%20founded%20in%201986
+  proof_level: high
+  url_checked: '2026-08-10'
+  notable: true
 activity:
   dod:
     checked: 2026-06-28

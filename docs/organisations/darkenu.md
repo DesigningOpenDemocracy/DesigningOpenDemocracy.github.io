@@ -24,9 +24,12 @@ location:
   precision: city
 events:
 - date: '2002-01-01'
-  notable: true
   title: Founded as the Israeli branch of the OneVoice Movement, promoting grassroots
     civic engagement
+  url: https://en.wikipedia.org/wiki/OneVoice_Movement
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: true
 activity:
   manual:
     checked: 2026-06-07

@@ -20,9 +20,12 @@ location:
   precision: city
 events:
 - date: '1945-01-01'
-  notable: true
   title: Established as the Chinese People's Political Consultative Conference, the
     united front and top political advisory body
+  url: https://en.wikipedia.org/wiki/Chinese_People%27s_Political_Consultative_Conference
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: true
 activity:
   dod:
     checked: 2026-06-29

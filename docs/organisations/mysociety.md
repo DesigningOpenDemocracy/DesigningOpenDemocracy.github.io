@@ -25,17 +25,26 @@ location:
 rss_feed: https://www.mysociety.org/feed
 events:
 - date: '2003-01-01'
-  notable: true
   title: Founded by Tom Steinberg as a UK civic-tech charity, launching TheyWorkForYou
     and WriteToThem
-- date: '2004-06-01'
+  url: https://en.wikipedia.org/wiki/MySociety#:~:text=mySociety%20was%20founded%20by%20Tom%20Steinberg%20in%20September%202003
+  proof_level: high
+  url_checked: '2026-08-10'
   notable: true
+- date: '2004-06-01'
   title: Launched TheyWorkForYou — making parliamentary activity searchable and accessible
     to UK citizens
-- date: '2005-02-01'
+  url: https://en.wikipedia.org/wiki/MySociety#:~:text=TheyWorkForYou%20is%20a%20parliamentary%20monitoring%20website%20which%20aims%20to%20make%20it%20easier
+  proof_level: high
+  url_checked: '2026-08-10'
   notable: true
+- date: '2005-02-01'
   title: Launched WriteToThem — enabling citizens to contact their elected representatives
     online
+  url: https://en.wikipedia.org/wiki/MySociety#:~:text=WriteToThem%20is%20a%20website%20which%20allows%20UK%20citizens%20to%20contact%20their%20elected%20representatives
+  proof_level: high
+  url_checked: '2026-08-10'
+  notable: true
 activity:
   rss:
     checked: 2026-06-08

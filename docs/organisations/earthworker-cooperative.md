@@ -16,22 +16,26 @@ concepts:
 - worker-cooperatives
 - economic-democracy
 - cooperative
-events:
-- date: '2011-01-01'
-  notable: true
-  title: Formally became a registered cooperative, rooted in discussions dating
-    to the 1970s Green Bans movement
-  url: https://theconversation.com/as-the-latrobe-valley-moves-away-from-coal-jobs-could-a-green-workers-cooperative-offer-a-solution-245850
-- date: '2016-01-01'
-  notable: true
-  title: Bought a hot water tank manufacturer in Morwell, becoming the Earthworker
-    Energy Manufacturing Cooperative — its flagship worker-owned enterprise
-  url: https://theconversation.com/as-the-latrobe-valley-moves-away-from-coal-jobs-could-a-green-workers-cooperative-offer-a-solution-245850
 location:
   latitude: -38.2466
   longitude: 146.4307
   name: Morwell, Victoria, Australia
 rss_feed: https://earthworker.coop/feed
+events:
+- date: '2011-01-01'
+  title: Formally became a registered cooperative, rooted in discussions dating to
+    the 1970s Green Bans movement
+  url: https://theconversation.com/as-the-latrobe-valley-moves-away-from-coal-jobs-could-a-green-workers-cooperative-offer-a-solution-245850
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: true
+- date: '2016-01-01'
+  title: Bought a hot water tank manufacturer in Morwell, becoming the Earthworker
+    Energy Manufacturing Cooperative — its flagship worker-owned enterprise
+  url: https://theconversation.com/as-the-latrobe-valley-moves-away-from-coal-jobs-could-a-green-workers-cooperative-offer-a-solution-245850
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: true
 activity:
   rss:
     checked: 2026-08-09

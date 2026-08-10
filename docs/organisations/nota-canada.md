@@ -25,12 +25,6 @@ location:
   precision: city
 rss_feed: https://nota.ca/feed
 activity:
-  dod:
-    checked: 2026-07-19
-    date: 2025-01-27
-    note: Website live and actively campaigning; Jan 2025 posts on Ontario provincial
-      election, candidate pages current.
-    url: https://nota.ca
   manual:
     checked: 2026-06-07
     date: 2025-01-27
@@ -38,6 +32,12 @@ activity:
       Above Party Calls for Referendum on Trump Tariffs, Strategic Voting to Defeat
       Ford Government in Election'
     url: https://nota.ca/news/
+  dod:
+    checked: 2026-07-19
+    date: 2025-01-27
+    note: Website live and actively campaigning; Jan 2025 posts on Ontario provincial
+      election, candidate pages current.
+    url: https://nota.ca
   rss:
     checked: 2026-06-08
     date: 2025-01-28

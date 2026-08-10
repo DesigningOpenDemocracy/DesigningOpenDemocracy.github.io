@@ -19,35 +19,39 @@ concepts:
 - deliberative-democracy
 - citizens-assembly
 - representative-democracy
-events:
-- date: '2016-01-01'
-  notable: false
-  title: Informal founding — nine people met in a London Indian restaurant and decided
-    to found the organisation
-  url: https://www.sortitionfoundation.org/history
-- date: '2017-03-04'
-  notable: true
-  title: Incorporated as a UK company
-  url: https://find-and-update.company-information.service.gov.uk/company/10652142
 location:
   latitude: 52.234
   longitude: 0.0866
   name: Cambridge, United Kingdom
   precision: city
-rss_feed: https://www.sortitionfoundation.org/updates.rss
 news_page: https://www.sortitionfoundation.org/updates
+rss_feed: https://www.sortitionfoundation.org/updates.rss
+events:
+- date: '2016-01-01'
+  title: Informal founding — nine people met in a London Indian restaurant and decided
+    to found the organisation
+  url: https://www.sortitionfoundation.org/history
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: false
+- date: '2017-03-04'
+  title: Incorporated as a UK company
+  url: https://find-and-update.company-information.service.gov.uk/company/10652142
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: true
 activity:
-  dod:
-    checked: 2026-08-08
-    date: 2026-06-18
-    note: Updates page fetched 8 Aug 2026; most recent post 18 Jun 2026 (hiring Independent
-      Director); previous post 26 Feb 2026 (Frontiers of Democratic Lotteries Workshop)
-    url: https://www.sortitionfoundation.org/updates
   manual:
     checked: 2026-08-08
     date: 2026-06-18
     note: 'Latest update: We''re looking for a new Independent Director (18 June,
       2026)'
+    url: https://www.sortitionfoundation.org/updates
+  dod:
+    checked: 2026-08-08
+    date: 2026-06-18
+    note: Updates page fetched 8 Aug 2026; most recent post 18 Jun 2026 (hiring Independent
+      Director); previous post 26 Feb 2026 (Frontiers of Democratic Lotteries Workshop)
     url: https://www.sortitionfoundation.org/updates
   rss:
     checked: 2026-06-07

@@ -22,8 +22,8 @@ location:
   latitude: 31.9026
   longitude: 35.2034
   name: Ramallah, Palestine
-rss_feed: https://www.aman-palestine.org/rss
 news_page: https://www.aman-palestine.org/en/activities/
+rss_feed: https://www.aman-palestine.org/rss
 activity:
   rss:
     checked: 2026-08-09

@@ -16,31 +16,35 @@ concepts:
 - democracy
 - constitutional-democracy
 - accountability-sink
-events:
-- date: '1989-01-01'
-  notable: true
-  title: Founded as an independent, non-partisan think tank in Beirut
-  url: https://www.lcps-lebanon.org/en/about
-- date: '2006-01-01'
-  notable: false
-  title: Contributed to drafting the Boutros electoral law
-  url: https://www.lcps-lebanon.org/en/about
 location:
   latitude: 33.8938
   longitude: 35.5018
   name: Beirut, Lebanon
 news_page: https://www.lcps-lebanon.org/en/press
+events:
+- date: '1989-01-01'
+  title: Founded as an independent, non-partisan think tank in Beirut
+  url: https://www.lcps-lebanon.org/en/about
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: true
+- date: '2006-01-01'
+  title: Contributed to drafting the Boutros electoral law
+  url: https://www.lcps-lebanon.org/en/about
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: false
 activity:
+  manual:
+    date: 2026-03-05
+    note: 'Latest press item: القواعد الأميركيّة في مرمى النار (via Daraj Media)'
+    url: https://www.lcps-lebanon.org/en/press
   dod:
     checked: 2026-07-16
     date: 2026-07-15
     note: Website loaded directly; most recent article 'Can Lebanon's Social Protection
       System Withstand Wartime Shocks?' dated July 15, 2026
     url: https://www.lcps-lebanon.org
-  manual:
-    date: 2026-03-05
-    note: 'Latest press item: القواعد الأميركيّة في مرمى النار (via Daraj Media)'
-    url: https://www.lcps-lebanon.org/en/press
   rss:
     checked: 2026-08-09
     note: No feed found

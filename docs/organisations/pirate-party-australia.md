@@ -26,10 +26,17 @@ location:
   precision: city
 events:
 - date: '2008-01-01'
-  notable: true
   title: Founded as part of the international Pirate Party movement, advocating digital
     rights and direct democracy
+  url: https://en.wikipedia.org/wiki/Pirate_Party_Australia#:~:text=was%20founded%20in%202008%20by%20Rodney%20Serkowski
+  proof_level: high
+  url_checked: '2026-08-10'
+  notable: true
 activity:
+  manual:
+    checked: 2026-06-07
+    date: 2026-06-07
+    note: Known personally to be active
   dod:
     checked: 2026-07-19
     date: 2026-07-19
@@ -38,10 +45,6 @@ activity:
       within the Fusion Party (own membership, own infrastructure); members also count
       as Fusion Party members for AEC registration purposes. Kept active.'
     url: https://pirateparty.org.au
-  manual:
-    checked: 2026-06-07
-    date: 2026-06-07
-    note: Known personally to be active
   rss:
     checked: 2026-06-07
     date: 2024-05-14

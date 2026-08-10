@@ -11,25 +11,31 @@ concepts:
 - citizens-assembly
 - constitutional-democracy
 - democracy
-events:
-- date: '2015-12-07'
-  notable: true
-  title: Jointly appointed by PM Malcolm Turnbull and Opposition Leader Bill Shorten
-  url: https://en.wikipedia.org/wiki/Referendum_Council
-- date: '2017-05-26'
-  notable: true
-  title: Uluru Statement from the Heart issued at the First Nations National Constitutional
-    Convention
-  url: https://en.wikipedia.org/wiki/Referendum_Council
-- date: '2017-06-30'
-  notable: true
-  title: Final Report published, incorporating the Uluru Statement
-  url: https://www8.austlii.edu.au/au/other/IndigLRes/2017/2.pdf
 location:
   latitude: -35.2809
   longitude: 149.13
   name: Canberra, Australia
   precision: city
+events:
+- date: '2015-12-07'
+  title: Jointly appointed by PM Malcolm Turnbull and Opposition Leader Bill Shorten
+  url: https://en.wikipedia.org/wiki/Referendum_Council
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: true
+- date: '2017-05-26'
+  title: Uluru Statement from the Heart issued at the First Nations National Constitutional
+    Convention
+  url: https://en.wikipedia.org/wiki/Referendum_Council
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: true
+- date: '2017-06-30'
+  title: Final Report published, incorporating the Uluru Statement
+  url: https://www8.austlii.edu.au/au/other/IndigLRes/2017/2.pdf
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: true
 ---
 
 The Referendum Council was a joint advisory body established by Prime Minister Malcolm Turnbull and Opposition Leader Bill Shorten in December 2016. Co-chaired by Pat Anderson AO and Mark Leibler AC, it was tasked with consulting broadly on options for constitutional recognition of Aboriginal and Torres Strait Islander peoples and reporting back with recommendations.

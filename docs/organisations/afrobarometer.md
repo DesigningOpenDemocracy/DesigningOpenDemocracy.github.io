@@ -24,9 +24,12 @@ location:
 rss_feed: https://www.afrobarometer.org/feed
 events:
 - date: '1999-01-01'
-  notable: true
   title: Founded as a pan-African survey research network measuring public attitudes
     on democracy and governance
+  url: https://www.afrobarometer.org/about/history/
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: true
 activity:
   rss:
     checked: 2026-08-09

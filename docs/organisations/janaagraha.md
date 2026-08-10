@@ -24,9 +24,12 @@ location:
 rss_feed: https://www.janaagraha.org/feed
 events:
 - date: '2001-01-01'
-  notable: true
   title: Founded by Ramesh and Swati Ramanathan to improve urban governance and citizen
     participation in India
+  url: https://en.wikipedia.org/wiki/Janaagraha#:~:text=Founded%20in%202001%20by%20Ramesh%20Ramanathan%20and%20Swati%20Ramanathan
+  proof_level: high
+  url_checked: '2026-08-10'
+  notable: true
 activity:
   dod:
     checked: 2026-07-16

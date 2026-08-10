@@ -24,8 +24,11 @@ location:
   precision: city
 events:
 - date: '2017-01-01'
-  notable: true
   title: Founded in Lagos as a civic-tech fellowship and innovation hub for West Africa
+  url: https://civichive.org/about-us/
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: true
 activity:
   rss:
     checked: 2026-08-09

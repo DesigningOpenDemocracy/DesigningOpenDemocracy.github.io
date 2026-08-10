@@ -26,13 +26,19 @@ location:
 news_page: https://www.ushahidi.com/about/blog
 events:
 - date: '2008-01-01'
-  notable: true
   title: Created in the aftermath of Kenya's 2007 election crisis as a crowdsourced
     crisis-mapping platform
-- date: '2010-01-12'
+  url: https://en.wikipedia.org/wiki/Ushahidi#:~:text=was%20created%20in%20the%20aftermath%20of%20Kenya%27s%20disputed%202007%20presidential%20election
+  proof_level: high
+  url_checked: '2026-08-10'
   notable: true
+- date: '2010-01-12'
   title: Deployed for Haiti earthquake response — mapped tens of thousands of reports,
     establishing the platform's global humanitarian use case
+  url: https://en.wikipedia.org/wiki/Ushahidi#:~:text=in%20response%20to%20the%20Haiti%20Earthquake%20in%202010
+  proof_level: high
+  url_checked: '2026-08-10'
+  notable: true
 activity:
   dod:
     checked: 2026-07-19

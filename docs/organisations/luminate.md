@@ -16,32 +16,34 @@ concepts:
 - democracy
 - radical-transparency
 - e-government
-events:
-- date: '2018-10-01'
-  notable: true
-  title: Launched as an independent global philanthropic organisation, spun out
-    of Omidyar Network's Governance & Citizen Engagement initiative
-  url: https://www.govtech.com/civic/new-global-civic-tech-group-emerges-from-the-omidyar-group.html
 location:
   latitude: 51.5074
   longitude: -0.1278
   name: London, UK
   precision: city
 news_page: https://luminategroup.com/news-and-insights
+events:
+- date: '2018-10-01'
+  title: Launched as an independent global philanthropic organisation, spun out of
+    Omidyar Network's Governance & Citizen Engagement initiative
+  url: https://www.govtech.com/civic/new-global-civic-tech-group-emerges-from-the-omidyar-group.html
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: true
 activity:
-  dod:
-    checked: 2026-08-08
-    date: 2026-08-08
-    note: 'News page fetched 8 Aug 2026; active publishing — recent topics: AI accountability,
-      European AI & Society Fund ($1M grant), strategy shift toward tech accountability,
-      new CEO announced, global polling on AI perceptions'
-    url: https://luminategroup.com/news-and-insights
   manual:
     checked: 2026-06-07
     date: 2025-07-22
     note: website loaded. Has a news page at https://luminategroup.com/news-and-insights
       . Latest seems to be 22 July 2025 'How storytelling can bring us closer to tech
       justice'
+    url: https://luminategroup.com/news-and-insights
+  dod:
+    checked: 2026-08-08
+    date: 2026-08-08
+    note: 'News page fetched 8 Aug 2026; active publishing — recent topics: AI accountability,
+      European AI & Society Fund ($1M grant), strategy shift toward tech accountability,
+      new CEO announced, global polling on AI perceptions'
     url: https://luminategroup.com/news-and-insights
   rss:
     checked: 2026-06-07

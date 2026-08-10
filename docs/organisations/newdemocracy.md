@@ -26,21 +26,33 @@ location:
 rss_feed: https://www.newdemocracy.com.au/feed
 events:
 - date: '2007-01-01'
-  notable: true
   title: newDemocracy Foundation launched — one of the first organisations worldwide
     dedicated exclusively to citizens' assemblies
-- date: '2009-01-01'
+  url: https://www.newdemocracy.com.au/history/
+  proof_level: medium
+  url_checked: '2026-08-10'
   notable: true
+- date: '2009-01-01'
   title: Australian Citizens' Parliament — 150 citizens deliberate on strengthening
     Australia's democracy
+  url: https://www.newdemocracy.com.au/history/
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: true
 - date: '2017-01-01'
-  notable: false
   title: Democracy R&D international network founded with newDemocracy as a founding
     member
+  url: https://www.newdemocracy.com.au/history/
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: false
 - date: '2018-01-01'
-  notable: true
   title: Helps design Ostbelgien's permanent Citizens' Council — world's first embedded
     in a parliament
+  url: https://www.newdemocracy.com.au/history/
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: true
 activity:
   rss:
     checked: 2026-06-08

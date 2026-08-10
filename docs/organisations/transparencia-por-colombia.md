@@ -23,9 +23,12 @@ location:
   precision: city
 events:
 - date: '1998-01-01'
-  notable: true
   title: Founded as the Colombian chapter of Transparency International, working across
     all 32 departments
+  url: https://es.wikipedia.org/wiki/Transparencia_Internacional#Transparencia_por_Colombia
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: true
 activity:
   dod:
     checked: 2026-08-09

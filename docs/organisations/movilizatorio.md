@@ -23,8 +23,11 @@ location:
   precision: city
 events:
 - date: '2016-01-01'
-  notable: true
   title: Founded in Bogotá as a citizen participation and social innovation laboratory
+  url: https://en.wikipedia.org/wiki/Civic_technology
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: true
 activity:
   dod:
     checked: 2026-08-09

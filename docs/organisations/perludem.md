@@ -24,9 +24,12 @@ location:
   precision: city
 events:
 - date: '2005-01-01'
-  notable: true
   title: Founded by former Indonesian election supervisors to strengthen electoral
     integrity in the world's third-largest democracy
+  source: Perludem, About — perludem.or.id (Established 2005)
+  proof_level: low
+  url_checked: '2026-08-10'
+  notable: true
 activity:
   dod:
     checked: 2026-08-09

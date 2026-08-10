@@ -23,6 +23,11 @@ location:
   name: Beijing, China (origin; operates in diaspora)
   precision: city
 activity:
+  manual:
+    checked: 2026-06-07
+    date: 2026-06-07
+    note: website loaded. Unsure if active... non of the social media links loaded.
+      No news or blog.
   dod:
     checked: 2026-07-16
     date: 2026-07-16
@@ -30,11 +35,6 @@ activity:
       issue listed (quarterly journal up to date), confirming ongoing publication
       activity
     url: https://chinademocrats.org/?cat=8
-  manual:
-    checked: 2026-06-07
-    date: 2026-06-07
-    note: website loaded. Unsure if active... non of the social media links loaded.
-      No news or blog.
   rss:
     checked: 2026-08-09
     date: 2026-08-01

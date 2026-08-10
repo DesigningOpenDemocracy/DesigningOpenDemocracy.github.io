@@ -15,21 +15,23 @@ summary: The national support and capacity-building body for Australia's communi
 concepts:
 - representative-democracy
 - accountability-sink
-events:
-- date: '2026-09-11'
-  end_date: '2026-09-12'
-  location: Online
-  notable: true
-  title: Communities Rising — Action by the People for the Times (6th annual Community
-    Independents Convention)
-  type: conference
-  url: https://events.humanitix.com/communities-rising-action-by-the-people-for-the-times
 location:
   latitude: -37.8136
   longitude: 144.9631
   name: Melbourne, Australia
   precision: city
 rss_feed: https://www.communityindependentsproject.org/blog/rss.xml
+events:
+- date: '2026-09-11'
+  title: Communities Rising — Action by the People for the Times (6th annual Community
+    Independents Convention)
+  url: https://events.humanitix.com/communities-rising-action-by-the-people-for-the-times
+  proof_level: medium
+  url_checked: '2026-08-10'
+  end_date: '2026-09-12'
+  notable: true
+  type: conference
+  location: Online
 activity:
   manual:
     checked: 2026-06-07

@@ -19,22 +19,26 @@ concepts:
 - deliberative-democracy
 - sortition
 - direct-democracy
-events:
-- date: '2007-01-01'
-  notable: true
-  title: Founded (as Healthy Democracy Oregon) by Tyrone Reitman and Elliot Shuford
-    to run the Citizens' Initiative Review
-  url: https://www.influencewatch.org/non-profit/healthy-democracy/
-- date: '2011-07-21'
-  notable: true
-  title: Oregon House Bill 2634 signed into law, making the Citizens' Initiative
-    Review a permanent part of the state's initiative process
-  url: https://participedia.net/method/oregon-citizens-initiative-review
 location:
   latitude: 45.5231
   longitude: -122.6765
   name: Portland, Oregon, USA
 rss_feed: https://healthydemocracy.org/feed
+events:
+- date: '2007-01-01'
+  title: Founded (as Healthy Democracy Oregon) by Tyrone Reitman and Elliot Shuford
+    to run the Citizens' Initiative Review
+  url: https://www.influencewatch.org/non-profit/healthy-democracy/
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: true
+- date: '2011-07-21'
+  title: Oregon House Bill 2634 signed into law, making the Citizens' Initiative Review
+    a permanent part of the state's initiative process
+  url: https://participedia.net/method/oregon-citizens-initiative-review
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: true
 activity:
   dod:
     checked: 2026-07-16

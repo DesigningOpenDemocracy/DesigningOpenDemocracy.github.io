@@ -18,19 +18,21 @@ concepts:
 - direct-democracy
 - democracy
 - meta-organisation
-events:
-- date: '2009-09-01'
-  notable: true
-  title: Launched by Archon Fung (Harvard) and Mark Warren (UBC) as a crowdsourced
-    wiki platform for democratic innovations
-  url: https://en.wikipedia.org/wiki/Archon_Fung
 location:
   latitude: 49.2827
   longitude: -123.1207
   name: Vancouver, Canada
   precision: city
-rss_feed: https://medium.com/feed/@participediaproject
 news_page: https://participediaproject.medium.com/
+rss_feed: https://medium.com/feed/@participediaproject
+events:
+- date: '2009-09-01'
+  title: Launched by Archon Fung (Harvard) and Mark Warren (UBC) as a crowdsourced
+    wiki platform for democratic innovations
+  url: https://en.wikipedia.org/wiki/Archon_Fung
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: true
 activity:
   manual:
     checked: 2026-06-07

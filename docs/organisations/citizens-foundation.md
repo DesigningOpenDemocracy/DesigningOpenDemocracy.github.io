@@ -18,26 +18,32 @@ concepts:
 - deliberative-democracy
 - e-government
 - isegoria
-events:
-- date: '2008-01-01'
-  notable: true
-  title: Founded by Robert Bjarnason and Gunnar Grimsson
-  url: https://en.wikipedia.org/wiki/Citizens_Foundation
-- date: '2010-02-01'
-  notable: false
-  title: Launched Shadow Parliament, importing real Icelandic Parliament proposals
-    for citizens to vote on
-  url: https://en.wikipedia.org/wiki/Citizens_Foundation
-- date: '2010-05-25'
-  notable: true
-  title: Launched Better Reykjavík (originally "Shadow City"); nearly 3,000 users
-    and 400+ ideas within three days
-  url: https://en.wikipedia.org/wiki/Citizens_Foundation
 location:
   latitude: 64.1355
   longitude: -21.8954
   name: Reykjavík, Iceland
 rss_feed: https://citizens.is/feed
+events:
+- date: '2008-01-01'
+  title: Founded by Robert Bjarnason and Gunnar Grimsson
+  url: https://en.wikipedia.org/wiki/Citizens_Foundation
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: true
+- date: '2010-02-01'
+  title: Launched Shadow Parliament, importing real Icelandic Parliament proposals
+    for citizens to vote on
+  url: https://en.wikipedia.org/wiki/Citizens_Foundation
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: false
+- date: '2010-05-25'
+  title: Launched Better Reykjavík (originally "Shadow City"); nearly 3,000 users
+    and 400+ ideas within three days
+  url: https://en.wikipedia.org/wiki/Citizens_Foundation
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: true
 activity:
   manual:
     checked: 2026-06-07

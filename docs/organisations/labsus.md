@@ -23,9 +23,12 @@ location:
   precision: city
 events:
 - date: '2005-01-01'
-  notable: true
   title: Founded in Rome as the Laboratory for Subsidiarity, pioneering shared administration
     in Italy
+  url: https://www.labsus.org/chi-siamo/
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: true
 activity:
   rss:
     checked: 2026-08-09

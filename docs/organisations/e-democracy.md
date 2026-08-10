@@ -17,15 +17,15 @@ location:
   longitude: -93.09
   name: St. Paul, Minnesota, US
 activity:
+  manual:
+    checked: 2026-06-09
+    note: blog.e-democracy.org returning 503; Wayback capture 2026-05-16 confirms
+      recently alive — likely temporary outage
   dod:
     checked: 2026-07-05
     date: 2026-07-05
     note: e-democracy.org redirects to blog.e-democracy.org, which returned 503 on
       this check; same intermittent-outage pattern as prior run's Wayback corroboration
-  manual:
-    checked: 2026-06-09
-    note: blog.e-democracy.org returning 503; Wayback capture 2026-05-16 confirms
-      recently alive — likely temporary outage
 last_checked: '2026-07-05'
 ---
 

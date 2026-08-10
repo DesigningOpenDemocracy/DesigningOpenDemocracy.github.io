@@ -1,55 +1,67 @@
 ---
-activity:
-  manual:
-    checked: 2026-08-09
-    date: 2026-08-09
-    note: 'Confirmed active via own website: past events list runs to 29 Jul 2026'
-concepts:
-- deliberative-democracy
-- collective-intelligence
+title: Folio Collective
+type: practice
+status: active
+country: AU
+website: https://folio.org.au
+logo: /assets/org-logos/folio-collective.jpg
 contact:
   checked: 2026-08-09
   email: connect@folio.org.au
   source: https://folio.org.au/Contact
-country: AU
-events:
-- date: 2022-10-19
-  notable: true
-  title: Public integrity, trust and democracy
-  url: https://folio.org.au/event-4941291
-- date: 2023-03-20
-  title: (Un)ethical design — Robodebt, accountability, and equity in a digital society
-  url: https://folio.org.au/event-5200127
-- date: 2023-04-04
-  location: CURATE Space, Melbourne CBD
-  title: Atlas of Human Rights — violations and protections in Australia and abroad
-  url: https://folio.org.au/event-5219140
-- date: 2024-06-24
-  title: 'Democratic Crossroads — the power of participation: what''s holding us back?'
-  url: https://folio.org.au/event-5761027
-- date: 2024-07-01
-  notable: true
-  title: 'Democratic Crossroads — unpacking the Voice Referendum: what can we learn
-    about Australia''s democracy?'
-  url: https://folio.org.au/event-5773784
-- date: 2025-02-26
-  title: Election 2025 — how will independents shape our future Parliament?
-  url: https://folio.org.au/event-6065606
+summary: A Melbourne-based, nonpartisan not-for-profit forum that runs small-group
+  "Folio Conversations" — structured public dialogue between diverse citizens and
+  invited expert "Conversation Leaders" on issues of civic and democratic concern
+  — under the explicit mission "Democracy evolves one conversation at a time."
+concepts:
+- deliberative-democracy
+- collective-intelligence
 location:
   latitude: -37.8136
   longitude: 144.9631
   name: Melbourne, Australia
   precision: city
-logo: /assets/org-logos/folio-collective.jpg
 rss_feed: https://folio.org.au/events/RSS
-status: active
-summary: A Melbourne-based, nonpartisan not-for-profit forum that runs small-group
-  "Folio Conversations" — structured public dialogue between diverse citizens and
-  invited expert "Conversation Leaders" on issues of civic and democratic concern
-  — under the explicit mission "Democracy evolves one conversation at a time."
-title: Folio Collective
-type: practice
-website: https://folio.org.au
+events:
+- date: 2022-10-19
+  title: Public integrity, trust and democracy
+  url: https://folio.org.au/event-4941291
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: true
+- date: 2023-03-20
+  title: (Un)ethical design — Robodebt, accountability, and equity in a digital society
+  url: https://folio.org.au/event-5200127
+  proof_level: medium
+  url_checked: '2026-08-10'
+- date: 2023-04-04
+  title: Atlas of Human Rights — violations and protections in Australia and abroad
+  url: https://folio.org.au/event-5219140
+  proof_level: medium
+  url_checked: '2026-08-10'
+  location: CURATE Space, Melbourne CBD
+- date: 2024-06-24
+  title: 'Democratic Crossroads — the power of participation: what''s holding us back?'
+  url: https://folio.org.au/event-5761027
+  proof_level: medium
+  url_checked: '2026-08-10'
+- date: 2024-07-01
+  title: 'Democratic Crossroads — unpacking the Voice Referendum: what can we learn
+    about Australia''s democracy?'
+  url: https://folio.org.au/event-5773784
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: true
+- date: 2025-02-26
+  title: Election 2025 — how will independents shape our future Parliament?
+  url: https://folio.org.au/event-6065606
+  proof_level: medium
+  url_checked: '2026-08-10'
+activity:
+  manual:
+    checked: 2026-08-09
+    date: 2026-08-09
+    note: 'Confirmed active via own website: past events list runs to 29 Jul 2026'
 ---
 
 Folio Collective (trading as "Folio") is a Melbourne-based, member-supported forum that runs a recurring program of small-group public conversations — "Folio Conversations" — pairing diverse citizens with invited expert "Conversation Leaders" to discuss civic and democratic issues.[^home] Folio describes its purpose plainly: "Democracy evolves one conversation at a time. Let's have better conversations, more often."[^home] It positions itself as an independent, non-partisan, not-for-profit social enterprise that exists "to strengthen democracy through connected, citizen-led dialogue."[^event-state-of-nature]

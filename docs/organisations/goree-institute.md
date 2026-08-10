@@ -25,9 +25,12 @@ location:
   precision: city
 events:
 - date: '1992-01-01'
-  notable: true
   title: Founded on Gorée Island, Senegal, as a Centre for Democracy, Development
     and Culture in Africa
+  url: https://en.wikipedia.org/wiki/Goree_Institute#:~:text=was%20founded%20on%2025%20June%201992
+  proof_level: high
+  url_checked: '2026-08-10'
+  notable: true
 activity:
   rss:
     checked: 2026-08-09

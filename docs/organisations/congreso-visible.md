@@ -23,9 +23,12 @@ location:
   precision: city
 events:
 - date: '1998-01-01'
-  notable: true
   title: Launched at Universidad de los Andes as Colombia's first legislative transparency
     platform
+  url: https://congresovisible.uniandes.edu.co/quesomos
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: true
 activity:
   rss:
     checked: 2026-08-09

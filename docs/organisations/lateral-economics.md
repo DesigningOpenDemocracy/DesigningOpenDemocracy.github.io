@@ -20,18 +20,24 @@ concepts:
 - prediction-markets
 - citizens-assembly
 - tribal-epistemology
-events:
-- date: '2000-01-01'
-  notable: true
-  title: Founded by economist Nicholas Gruen as an economic consultancy (year-only,
-    sourced from Gruen's own bio)
-  url: https://en.wikipedia.org/wiki/Nicholas_Gruen
 location:
   latitude: -33.8688
   longitude: 151.2093
   name: Sydney, Australia
   precision: city
+events:
+- date: '2000-01-01'
+  title: Founded by economist Nicholas Gruen as an economic consultancy (year-only,
+    sourced from Gruen's own bio)
+  url: https://en.wikipedia.org/wiki/Nicholas_Gruen
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: true
 activity:
+  manual:
+    checked: 2026-06-07
+    date: 2026-06-07
+    note: Know personally that this is still active.
   dod:
     checked: 2026-07-16
     date: 2026-07-16
@@ -39,10 +45,6 @@ activity:
       Gruen (CEO); page itself undated so corroborated via web search showing Gruen's
       Substack/Club Troppo commentary continuing into 2026
     url: https://www.lateraleconomics.com.au
-  manual:
-    checked: 2026-06-07
-    date: 2026-06-07
-    note: Know personally that this is still active.
   sitemap:
     checked: 2026-08-09
     date: 2026-06-09

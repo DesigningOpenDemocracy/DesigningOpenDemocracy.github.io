@@ -24,9 +24,12 @@ location:
 news_page: https://www.cddwestafrica.org/blog/
 events:
 - date: '1997-01-01'
-  notable: true
   title: Founded in Lagos as a research and advocacy organisation on democracy and
     development in West Africa
+  url: https://www.cddwestafrica.org/about-us/
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: true
 activity:
   dod:
     checked: 2026-06-29

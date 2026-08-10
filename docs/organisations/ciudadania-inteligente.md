@@ -24,8 +24,11 @@ location:
   precision: city
 events:
 - date: '2009-01-01'
-  notable: true
   title: Founded as one of Latin America's earliest civic-tech organisations, Santiago
+  url: https://www.ciudadaniai.org/nosotros
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: true
 activity:
   rss:
     checked: 2026-08-09

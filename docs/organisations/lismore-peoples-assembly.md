@@ -23,8 +23,8 @@ location:
   latitude: -28.8166
   longitude: 153.2803
   name: Lismore, NSW, Australia
-rss_feed: https://reclaim.org.au/feed
 news_page: https://reclaim.org.au/category/lpa-resources/
+rss_feed: https://reclaim.org.au/feed
 activity:
   dod:
     checked: 2026-07-16

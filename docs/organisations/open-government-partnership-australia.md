@@ -12,30 +12,38 @@ concepts:
 - radical-transparency
 - e-government
 - constitutional-democracy
-events:
-- date: '2015-11-30'
-  notable: true
-  title: Australia signs Letter of Intent to join the Open Government Partnership
-  url: https://www.opengovpartnership.org/documents/australia-letter-of-intent-to-join-ogp/
-- date: '2016-12-01'
-  notable: false
-  title: Australia's first Open Government National Action Plan released
-  url: https://www.opengovpartnership.org/members/australia/
-- date: '2018-09-21'
-  notable: false
-  title: Australia's second Open Government National Action Plan (2018-20) formally
-    released
-  url: https://www.financeminister.gov.au/media-release/2018/09/21/release-second-open-government-national-action-plan
-- date: '2020-11-06'
-  notable: true
-  title: Draft third National Action Plan went through final consultation but was
-    never formally submitted, marking the point the initiative went dormant
-  url: https://www.ipc.nsw.gov.au/news/open-government-partnership-final-public-consultation-draft-commitments-australias-third-national-action-plan
 location:
   latitude: -35.2809
   longitude: 149.13
   name: Canberra, Australia
   precision: city
+events:
+- date: '2015-11-30'
+  title: Australia signs Letter of Intent to join the Open Government Partnership
+  url: https://www.opengovpartnership.org/documents/australia-letter-of-intent-to-join-ogp/
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: true
+- date: '2016-12-01'
+  title: Australia's first Open Government National Action Plan released
+  url: https://www.opengovpartnership.org/members/australia/
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: false
+- date: '2018-09-21'
+  title: Australia's second Open Government National Action Plan (2018-20) formally
+    released
+  url: https://www.financeminister.gov.au/media-release/2018/09/21/release-second-open-government-national-action-plan
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: false
+- date: '2020-11-06'
+  title: Draft third National Action Plan went through final consultation but was
+    never formally submitted, marking the point the initiative went dormant
+  url: https://www.ipc.nsw.gov.au/news/open-government-partnership-final-public-consultation-draft-commitments-australias-third-national-action-plan
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: true
 ---
 
 Australia participated in the [Open Government Partnership](https://www.opengovpartnership.org/) (OGP) — an international multilateral initiative in which governments commit to concrete reforms on transparency, civic participation, and accountability. Australia's first National Action Plan (2016–18) comprised 15 commitments across four themes: transparency, citizen empowerment, anti-corruption, and technology to strengthen governance.

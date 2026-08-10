@@ -17,21 +17,25 @@ summary: The New Zealand chapter of the global anti-corruption coalition — run
 concepts:
 - radical-transparency
 - democracy
-events:
-- date: '1999-01-01'
-  notable: true
-  title: New Zealand chapter of Transparency International formally established
-    under founding chair Michael Morris
-  url: https://www.transparency.org.nz/our-story
-- date: '2001-01-01'
-  notable: false
-  title: Became an incorporated society and registered charity
-  url: https://www.transparency.org.nz/our-story
 location:
   latitude: -41.2865
   longitude: 174.7762
   name: Wellington, New Zealand
   precision: city
+events:
+- date: '1999-01-01'
+  title: New Zealand chapter of Transparency International formally established under
+    founding chair Michael Morris
+  url: https://www.transparency.org.nz/our-story
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: true
+- date: '2001-01-01'
+  title: Became an incorporated society and registered charity
+  url: https://www.transparency.org.nz/our-story
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: false
 activity:
   dod:
     checked: 2026-08-09

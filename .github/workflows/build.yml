@@ -34,6 +34,12 @@ jobs:
       - name: Check internal links
         run: python util/check_internal_links.py
 
+      - name: Check event sourcing
+        run: python util/check_event_sourcing.py
+
+      - name: Check frontmatter ordering
+        run: python util/reorder_frontmatter.py --check
+
       - name: Upload pages artifact
         if: github.ref == 'refs/heads/main'
         uses: actions/upload-pages-artifact@v4

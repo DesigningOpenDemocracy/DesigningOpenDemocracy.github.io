@@ -16,25 +16,29 @@ concepts:
 - democracy-tools
 - e-government
 - representative-democracy
-events:
-- date: '2010-01-01'
-  notable: false
-  title: Origins as a volunteer effort collecting candidate information for the
-    2010 UK general election, working with mySociety
-  url: https://www.nesta.org.uk/feature/new-radicals-2016/democracy-club/
-- date: '2015-01-01'
-  notable: true
-  title: Registered as a Community Interest Company and crowdsourced the most comprehensive
-    UK election-candidate database to date, used by over a million people
-  url: https://www.nesta.org.uk/feature/new-radicals-2016/democracy-club/
 location:
   latitude: 52.4862
   longitude: -1.8904
   name: Birmingham, UK
-rss_feed: https://democracyclub.org.uk/blog/feed/
 news_page: https://democracyclub.org.uk/blog/
+rss_feed: https://democracyclub.org.uk/blog/feed/
 related_orgs:
 - mysociety
+events:
+- date: '2010-01-01'
+  title: Origins as a volunteer effort collecting candidate information for the 2010
+    UK general election, working with mySociety
+  url: https://www.nesta.org.uk/feature/new-radicals-2016/democracy-club/
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: false
+- date: '2015-01-01'
+  title: Registered as a Community Interest Company and crowdsourced the most comprehensive
+    UK election-candidate database to date, used by over a million people
+  url: https://www.nesta.org.uk/feature/new-radicals-2016/democracy-club/
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: true
 activity:
   rss:
     checked: 2026-08-09

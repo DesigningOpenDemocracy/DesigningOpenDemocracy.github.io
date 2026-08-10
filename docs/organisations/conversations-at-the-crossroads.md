@@ -16,23 +16,27 @@ concepts:
 - citizens-assembly
 - deliberative-democracy
 - democracy
-events:
-- date: '2023-10-22'
-  notable: true
-  title: Held its inaugural Annual Lecture (Joseph Camilleri, "Australia the Week
-    After") at the University of Melbourne
-  url: https://www.crossroadsconversation.com.au/events/on-the-importance-of-conversation-for-the-very-idea-of-a-common-humanity
-- date: '2026-05-09'
-  notable: true
-  title: Convened "Reclaiming Democracy Together" national launch at Melbourne Town
-    Hall, marking the 125th anniversary of Australia's first federal parliament
-  url: https://www.crossroadsconversation.com.au/events/reclaiming-democracy-together
 location:
   latitude: -37.8136
   longitude: 144.9631
   name: Melbourne, Australia
   precision: city
 news_page: https://www.crossroadsconversation.com.au/events
+events:
+- date: '2023-10-22'
+  title: Held its inaugural Annual Lecture (Joseph Camilleri, "Australia the Week
+    After") at the University of Melbourne
+  url: https://www.crossroadsconversation.com.au/events/on-the-importance-of-conversation-for-the-very-idea-of-a-common-humanity
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: true
+- date: '2026-05-09'
+  title: Convened "Reclaiming Democracy Together" national launch at Melbourne Town
+    Hall, marking the 125th anniversary of Australia's first federal parliament
+  url: https://www.crossroadsconversation.com.au/events/reclaiming-democracy-together
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: true
 activity:
   manual:
     checked: 2026-06-07

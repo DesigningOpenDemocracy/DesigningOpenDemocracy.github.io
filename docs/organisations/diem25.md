@@ -17,20 +17,29 @@ location:
   longitude: 4.3517
   name: Brussels, Belgium
   precision: city
-rss_feed: https://diem25.org/news/feed
 news_page: https://diem25.org/news
+rss_feed: https://diem25.org/news/feed
 events:
 - date: '2016-01-01'
-  notable: true
   title: Launched by Yanis Varoufakis and Srećko Horvat as a pan-European progressive
     movement in Berlin
-- date: '2017-03-25'
-  notable: false
-  title: First pan-European convention in Rome, adopting the founding declaration
-- date: '2019-05-26'
+  url: https://en.wikipedia.org/wiki/Democracy_in_Europe_Movement_2025#:~:text=The%20movement%20was%20officially%20launched%20at%20ceremonial%20events%20in%202016
+  proof_level: high
+  url_checked: '2026-08-10'
   notable: true
+- date: '2017-03-25'
+  title: First pan-European convention in Rome, adopting the founding declaration
+  url: https://en.wikipedia.org/wiki/Democracy_in_Europe_Movement_2025#:~:text=on%2023%20March%20in%20Rome
+  proof_level: high
+  url_checked: '2026-08-10'
+  notable: false
+- date: '2019-05-26'
   title: Contested European Parliament elections with a transnational list across
     multiple member states
+  url: https://en.wikipedia.org/wiki/Democracy_in_Europe_Movement_2025#:~:text=established%20an%20electoral%20list%20for%20the%202019%20European%20Parliament%20elections
+  proof_level: high
+  url_checked: '2026-08-10'
+  notable: true
 activity:
   dod:
     checked: 2026-08-08

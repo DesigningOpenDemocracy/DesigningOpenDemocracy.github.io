@@ -8,7 +8,8 @@ This is a MkDocs + Material for MkDocs static site deployed to GitHub Pages.
 - Local dev: `make serve`
 - Deploy: CI pushes to `gh-pages` branch via `mkdocs gh-deploy --force`
 - Python deps: `requirements.txt` (site build), `util/requirements.txt` (utility scripts only)
-- Before pushing: `make build && python util/check_internal_links.py` — catches the same errors as CI
+- Before pushing: `make build && python util/check_internal_links.py && python util/check_event_sourcing.py && python util/reorder_frontmatter.py --check` — catches the same errors as CI. The pre-commit hook (`.githooks/pre-commit`) auto-runs `reorder_frontmatter.py` on staged org pages, so the `--check` should always pass — it's a safety net.
+- **If `.git/hooks/pre-commit` doesn't exist:** run `ln -sf ../../.githooks/pre-commit .git/hooks/pre-commit` to install it. Claude should check this on first interaction with the repo and remind the user if it's missing.
 
 ## Known Watch Items
 
@@ -56,6 +57,32 @@ The invariants recorded there are not immutable. Any document in this repo — i
 
 - The section is framed as a **Democracy Landscape reference** — organisations we monitor, not formal affiliates
 - Use `type`, `status`, `country`, `website`, `summary` in frontmatter
+- **Frontmatter field order** — org pages use a canonical key ordering. All org frontmatter should follow this order. Scripts that write or modify frontmatter MUST preserve it:
+  ```
+  title
+  type
+  status
+  country
+  website
+  logo
+  logo_bg
+  banner
+  contact
+  summary
+  concepts
+  location
+  news_page
+  rss_feed
+  ics_feed
+  related_orgs
+  events
+  activity
+  last_checked
+  ```
+  Entries under `activity:` should follow: `manual`, `dod`, `social`, `rss`, `ical`, `scrape`, `sitemap`.
+  Per-event fields under `events:` should follow: `date`, `title`, `url`, `source`, `note`, `proof_level`, `url_checked`, `end_date`, `notable`, `type`, `location`.
+  `util/check_orgs.py` validates ordering. Use the `ordered_dump` pattern when writing YAML (see `util/check_rss.py` for an example of field-order-aware writing).
+
 - `status` values: `active` | `inactive` | `deregistered`
 - For defunct orgs, point `website` to the Wayback Machine calendar URL: `https://web.archive.org/web/*/https://originalurl.com/`
 - **Curation standard**: An org belongs here if it works on systems of governance for/with the people, in good faith — regardless of ideological label. See `docs/projects/accountability-framework/index.md` for the full framework, including the three disqualifiers (hypocrisy, bad faith, structural inflexibility). DOD is not a human rights observatory; orgs focused purely on documenting abuses without engaging governance design do not fit.
@@ -72,7 +99,12 @@ The invariants recorded there are not immutable. Any document in this repo — i
 - `rss_feed: <url>` — optional; the org's RSS or Atom feed URL. Populated by `util/check_rss.py`.
 - `news_page: <url>` — optional; URL of the org's news or blog index page. Opt-in for `util/scrape_news.py`.
 - `ics_feed: <url>` — optional; URL of an iCal/ICS calendar feed. Opt-in for `util/check_rss.py --update-activity` (writes `activity.ical`) **and** for `util/sync_events.py`, which caches the org's upcoming events into `docs/data/events/<slug>.json` for the site-wide calendar (see Calendar section below).
-- `events: [{date, title, url, end_date, notable}]` — optional; a manually curated, editorial list of an org's significant milestones — **not** derived from `ics_feed:` and not meant to mirror it. `hooks/org_events.py` splits entries at build time into `page.meta.upcoming_events` (date >= today) and `page.meta.history_events` (date < today), rendered by `organisation.html` as two timeline sections. Keep each entry to one line — a terse `title`, no prose paragraph; if a milestone needs real narrative, put that in the page body instead (same judgment call as the optional "Key people" section). Future-dated entries here are also picked up by the site-wide calendar (see below) as a `manual`-source candidate alongside `ics_feed`-synced ones — no separate declaration needed. `end_date:` is optional, for events spanning more than one day (inclusive last day — same convention `util/sync_events.py` uses for iCal `DTEND`). `notable: true` is optional, for events significant enough to warrant the calendar's highlighted "major event" styling — use sparingly, it's meant to stand out.
+- `events: [{date, title, url, source, note, proof_level, url_checked, end_date, notable}]` — optional; a manually curated, editorial list of an org's significant milestones — **not** derived from `ics_feed:` and not meant to mirror it. `hooks/org_events.py` splits entries at build time into `page.meta.upcoming_events` (date >= today) and `page.meta.history_events` (date < today), rendered by `organisation.html` as two timeline sections. Keep each entry to one line — a terse `title`, no prose paragraph; if a milestone needs real narrative, put that in the page body instead (same judgment call as the optional "Key people" section). Future-dated entries here are also picked up by the site-wide calendar (see below) as a `manual`-source candidate alongside `ics_feed`-synced ones — no separate declaration needed. `end_date:` is optional, for events spanning more than one day (inclusive last day — same convention `util/sync_events.py` uses for iCal `DTEND`). `notable: true` is optional, for events significant enough to warrant the calendar's highlighted "major event" styling — use sparingly, it's meant to stand out.
+  - **`proof_level:` — `high` | `medium` | `low`** — how trustworthy the sourcing is. Auto-computed by `check_event_sourcing.py --calculate` from source signals (fragment → high, note or specific URL → medium, homepage → low). May be manually overridden. Displayed in the history timeline as a trust indicator. Notable events (`notable: true`) without a note or fragment are flagged as a warning in the linter.
+  - **Every event MUST carry either `url:` or `source:`** (or both). `url:` is for a link (web page, PDF, Wikipedia article, etc.) that substantiates the event. `source:` is for a non-URL citation — a book, a named person's testimony, an archival reference — when no URL exists. Prefer `url:` whenever one is available (e.g. a Wikipedia article is a `url:`, not `source: "Wikipedia"`). `source:` values should be specific enough to actually locate the claim (at minimum ~20 characters — "Book" is not a citation). `util/check_event_sourcing.py` enforces this at lint time; unsourced events cause a non-zero exit code. Vague `source:` values (under 20 chars) are flagged as a warning but do not fail the build.
+  - **`note:` is strongly recommended** — a short (one-line) note capturing what the source actually says, so a reader can verify the event without clicking through. A homepage link confirms the org exists; a note like `"Site lists 'Assembleias Climáticas do Pará' as a current project"` confirms the specific claim. Not gated by the linter — a soft recommendation, not a hard requirement.
+  - **`url_checked:` is optional** — a date (YYYY-MM-DD) recording when the URL was last verified to still contain the claimed evidence. Useful for Wayback Machine fallback if a page changes and a `#:~:text=` fragment stops matching. Adds a +1 confidence bonus in `check_event_sourcing.py` if within 365 days.
+  - **`#:~:text=` URL fragments** — when the source is a long page, append `#:~:text=` to the URL with URL-encoded text to scroll directly to and highlight the relevant sentence. Useful for homepage-only URLs (turns a weak URL into a strong one) and for Wikipedia pages where the cited fact is one sentence among many. The linter awards +2 confidence for fragment-bearing URLs.
 - `related_orgs: [slug, slug]` — optional; list of org slugs with a direct relationship to this org. Rendered as orange edges in the knowledge graph. Declare on one side only — direction is normalised so duplicates are automatically suppressed.
 - `contact:` — optional dict of publicly-published contact details, sourced only from the org's own official website (never third-party registries/aggregators):
   ```yaml

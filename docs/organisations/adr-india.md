@@ -23,9 +23,12 @@ location:
   name: New Delhi, India
 events:
 - date: '1999-01-01'
-  notable: true
   title: Founded by former Indian Revenue Service officers to improve governance and
     electoral transparency
+  url: https://adrindia.org/about-adr/mission-and-vision
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: true
 activity:
   manual:
     checked: 2026-06-07

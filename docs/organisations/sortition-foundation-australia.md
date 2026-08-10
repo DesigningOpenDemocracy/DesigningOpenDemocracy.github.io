@@ -22,9 +22,15 @@ location:
   latitude: -37.7749
   longitude: 144.9934
   name: Preston, Victoria
-rss_feed: https://www.sortitionfoundation.org/updates.rss
 news_page: https://www.sortitionfoundation.org/updates
+rss_feed: https://www.sortitionfoundation.org/updates.rss
 activity:
+  manual:
+    checked: 2026-06-07
+    date: 2026-02-26
+    note: website loaded. News page at https://www.sortitionfoundation.org/updates
+      26 February, 2026 'Frontiers of Democratic Lotteries Workshop'
+    url: https://www.sortitionfoundation.org/updates
   dod:
     checked: 2026-07-19
     date: 2026-07-19
@@ -32,12 +38,6 @@ activity:
       returns 403 to automated fetch (Cloudflare bot-block) but is indexed and referenced
       live; monthly Zoom meetings ongoing per site copy.
     url: https://www.sortitionfoundation.org/become_a_member_australia
-  manual:
-    checked: 2026-06-07
-    date: 2026-02-26
-    note: website loaded. News page at https://www.sortitionfoundation.org/updates
-      26 February, 2026 'Frontiers of Democratic Lotteries Workshop'
-    url: https://www.sortitionfoundation.org/updates
   rss:
     checked: 2026-06-07
     note: No feed found

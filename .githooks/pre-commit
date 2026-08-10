@@ -1,0 +1,19 @@
+#!/bin/bash
+# Pre-commit hook: auto-reorder org frontmatter to canonical field ordering.
+# Install: ln -sf ../../.githooks/pre-commit .git/hooks/pre-commit
+
+set -e
+
+# Get list of staged org pages
+STAGED_ORGS=$(git diff --cached --name-only --diff-filter=ACM docs/organisations/*.md 2>/dev/null || true)
+
+if [ -n "$STAGED_ORGS" ]; then
+    echo "→ Reordering frontmatter in staged org pages..."
+    python util/reorder_frontmatter.py
+
+    # Re-stage any files that were just fixed
+    for f in $STAGED_ORGS; do
+        git add "$f" 2>/dev/null || true
+    done
+    echo "→ Done."
+fi

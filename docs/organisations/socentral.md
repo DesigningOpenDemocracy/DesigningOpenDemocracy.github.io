@@ -1,47 +1,52 @@
 ---
-activity:
-  dod:
-    checked: 2026-08-09
-    date: 2026-08-09
-    note: Site live and actively publishing as of August 2026
-concepts:
-- citizens-assembly
-- deliberative-democracy
-- cooperative
+title: SoCentral
+type: foundation
+status: active
+country: 'NO'
+website: https://www.socentral.no
+logo: /assets/org-logos/socentral.png
 contact:
   checked: 2026-08-09
   form: https://www.socentral.no/kontakt
   source: https://www.socentral.no
-country: 'NO'
-events:
-- country: 'NO'
-  date: '2026-08-10'
-  end_date: '2026-08-13'
-  location: Arendal, Norway
-  notable: true
-  title: Arendalsuka 2026 — multiple sessions on green transition, fjord restoration,
-    and sport inclusion, Arendal Norway
-  type: conference
-  url: https://socentral.no/aktuelt/
-- date: '2014-01-01'
-  notable: true
-  title: Founded in Oslo as a social innovation platform for sustainable societal
-    development
-last_checked: '2026-08-09'
+summary: A Norwegian social innovation platform that initiates, coordinates, and drives
+  collaborative projects for sustainable societal development — including Norway's
+  first civil-society-initiated national citizens' assemblies on the use of national
+  wealth and sustainable consumption.
+concepts:
+- citizens-assembly
+- deliberative-democracy
+- cooperative
 location:
   latitude: 59.9139
   longitude: 10.7522
   name: Oslo, Norway
   precision: city
-logo: /assets/org-logos/socentral.png
-status: active
-summary: A Norwegian social innovation platform that initiates, coordinates, and drives
-  collaborative projects for sustainable societal development — including Norway's
-  first civil-society-initiated national citizens' assemblies on the use of national
-  wealth and sustainable consumption.
-title: SoCentral
-type: foundation
-website: https://www.socentral.no
+events:
+- date: '2026-08-10'
+  title: Arendalsuka 2026 — multiple sessions on green transition, fjord restoration,
+    and sport inclusion, Arendal Norway
+  url: https://socentral.no/aktuelt/
+  proof_level: medium
+  url_checked: '2026-08-10'
+  end_date: '2026-08-13'
+  notable: true
+  type: conference
+  location: Arendal, Norway
+  country: 'NO'
+- date: '2014-01-01'
+  title: Founded in Oslo as a social innovation platform for sustainable societal
+    development
+  url: https://www.socentral.no/om-oss
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: true
+activity:
+  dod:
+    checked: 2026-08-09
+    date: 2026-08-09
+    note: Site live and actively publishing as of August 2026
+last_checked: '2026-08-09'
 ---
 
 SoCentral is an Oslo-based social innovation platform whose core insight is structural: many of society's hardest problems fall into gaps where no single actor — public, private, or civic — has a clear mandate to act, even though everyone agrees something needs to be done. SoCentral's role is to occupy those gaps: initiating, coordinating, and driving forward collaborative projects with over 100 different partners from all three sectors, having launched more than 50 new solutions.

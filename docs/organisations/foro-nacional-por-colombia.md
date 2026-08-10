@@ -23,10 +23,13 @@ location:
   name: Bogotá, Colombia
   precision: city
 events:
-- date: '1984-01-01'
-  notable: true
+- date: '1982-01-01'
   title: Founded as one of Colombia's longest-established civil society organisations
     for democratic participation
+  url: https://foro.org.co/nosotros/quienes-somos/#:~:text=creada%20en%201982
+  proof_level: high
+  url_checked: '2026-08-10'
+  notable: true
 activity:
   rss:
     checked: 2026-08-09

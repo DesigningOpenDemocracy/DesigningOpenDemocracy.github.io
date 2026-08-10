@@ -25,9 +25,14 @@ location:
   precision: city
 events:
 - date: '2015-01-01'
-  notable: true
   title: Founded in Rio de Janeiro to study the impact and future of technology on
     Brazilian society
+  url: https://itsrio.org/
+  note: Site describes institute researching technology's impact on Brazilian society
+    and democracy
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: true
 activity:
   sitemap:
     checked: 2026-08-09

@@ -15,17 +15,19 @@ summary: An Australian voter advice tool that helps citizens match their values 
 concepts:
 - representative-democracy
 - e-government
-events:
-- date: '2022-01-01'
-  notable: true
-  title: Launched its first voting tool, "Vote 1 Climate," ahead of the 2022 federal
-    election
-  url: https://www.buildaballot.org.au/about
 location:
   latitude: -33.8688
   longitude: 151.2093
   name: Sydney, Australia
   precision: city
+events:
+- date: '2022-01-01'
+  title: Launched its first voting tool, "Vote 1 Climate," ahead of the 2022 federal
+    election
+  url: https://www.buildaballot.org.au/about
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: true
 activity:
   manual:
     checked: 2026-06-07

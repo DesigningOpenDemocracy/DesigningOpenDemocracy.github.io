@@ -21,25 +21,34 @@ location:
   longitude: -0.1278
   name: London, UK
   precision: city
-rss_feed: https://www.electoral-reform.org.uk/feed/
 news_page: https://www.electoral-reform.org.uk/latest-news-and-research/blog/
-events:
-- date: '1884-01-01'
-  notable: true
-  title: Founded as the Proportional Representation Society — one of the world's oldest
-    electoral reform organisations
-- date: '1918-02-06'
-  notable: true
-  title: Instrumental in the Representation of the People Act 1918, expanding the
-    franchise and adopting STV for university seats
-- date: '2011-05-05'
-  notable: true
-  title: Led the Yes campaign in the UK's Alternative Vote referendum — the first
-    UK-wide electoral system referendum
+rss_feed: https://www.electoral-reform.org.uk/feed/
 related_orgs:
 - sortition-foundation
 - democracy-next
 - involve
+events:
+- date: '1884-01-01'
+  title: Founded as the Proportional Representation Society — one of the world's oldest
+    electoral reform organisations
+  url: https://en.wikipedia.org/wiki/Electoral_Reform_Society#:~:text=was%20founded%20in%20January%201884%20as%20the%20Proportional%20Representation%20Society%20by
+  proof_level: high
+  url_checked: '2026-08-10'
+  notable: true
+- date: '1918-02-06'
+  title: Instrumental in the Representation of the People Act 1918, expanding the
+    franchise and adopting STV for university seats
+  url: https://en.wikipedia.org/wiki/Electoral_Reform_Society
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: true
+- date: '2011-05-05'
+  title: Led the Yes campaign in the UK's Alternative Vote referendum — the first
+    UK-wide electoral system referendum
+  url: https://en.wikipedia.org/wiki/Electoral_Reform_Society#:~:text=principal%20funder%20of%20the%20YES!%20To%20Fairer%20Votes%20campaign%20in%20the%202011%20referendum%20on%20the%20Alternative%20Vote
+  proof_level: high
+  url_checked: '2026-08-10'
+  notable: true
 activity:
   rss:
     checked: 2026-08-09

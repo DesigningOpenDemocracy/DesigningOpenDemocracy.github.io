@@ -17,33 +17,37 @@ concepts:
 - representative-democracy
 - accountability-sink
 - radical-transparency
-events:
-- date: '1998-06-01'
-  notable: true
-  title: Launched with NDI support to monitor Slovak media ahead of the 1998 parliamentary
-    elections
-  url: https://memo98.sk/about-us
-- date: '1999-01-01'
-  notable: false
-  title: First international election observation mission, invited by OSCE/ODIHR
-  url: https://memo98.sk/about-us
 location:
   latitude: 48.1486
   longitude: 17.1077
   name: Bratislava, Slovakia
 news_page: https://memo98.sk/articles/blog
+events:
+- date: '1998-06-01'
+  title: Launched with NDI support to monitor Slovak media ahead of the 1998 parliamentary
+    elections
+  url: https://memo98.sk/about-us
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: true
+- date: '1999-01-01'
+  title: First international election observation mission, invited by OSCE/ODIHR
+  url: https://memo98.sk/about-us
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: false
 activity:
-  dod:
-    checked: 2026-07-16
-    date: 2026-07-16
-    note: Site active with news dated through May 2026; recent items include April
-      2026 formal complaint on public broadcaster impartiality and press freedom monitoring
-    url: https://memo98.sk/articles/blog
   manual:
     checked: 2026-06-07
     date: 2025-12-20
     note: 'website loaded. Blog at https://memo98.sk/articles/blog  20. December 2025
       '' Moldova Story: How a Small Republic Resisted Hybrid War '''
+    url: https://memo98.sk/articles/blog
+  dod:
+    checked: 2026-07-16
+    date: 2026-07-16
+    note: Site active with news dated through May 2026; recent items include April
+      2026 formal complaint on public broadcaster impartiality and press freedom monitoring
     url: https://memo98.sk/articles/blog
   scrape:
     checked: 2026-06-07

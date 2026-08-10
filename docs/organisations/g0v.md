@@ -25,18 +25,18 @@ news_page: https://g0v.tw/intl/en/event/
 ics_feed: https://calendar.google.com/calendar/ical/cpcf6iv5pt9l6gl2ue3svo63e8%40group.calendar.google.com/public/basic.ics
 events:
 - date: '2012-12-01'
-  notable: true
   title: First hackathon (Hackath0n) at Academia Sinica — launches the g0v community
-  url: https://en.wikipedia.org/wiki/G0v
+  url: https://en.wikipedia.org/wiki/G0v_movement#:~:text=driven%20by%20a%20bimonthly%20hackathon
+  proof_level: high
+  url_checked: '2026-08-10'
+  notable: true
 - date: '2016-01-01'
-  notable: false
   title: g0vhk (Hong Kong branch) founded
+  url: https://en.wikipedia.org/wiki/G0v_movement#:~:text=active%20g0v%20communities%20working%20on%20open%20government%20data%20in%20Taiwan%20and%20Hong%20Kong
+  proof_level: high
+  url_checked: '2026-08-10'
+  notable: false
 activity:
-  ical:
-    checked: 2026-06-08
-    date: 2026-06-07
-    note: 'Latest event: Cofacts 查核協作者培訓'
-    url: https://calendar.google.com/calendar/ical/cpcf6iv5pt9l6gl2ue3svo63e8%40group.calendar.google.com/public/basic.ics
   manual:
     checked: 2026-06-07
     date: 2026-06-07
@@ -47,6 +47,11 @@ activity:
   rss:
     checked: 2026-06-08
     note: No feed found
+  ical:
+    checked: 2026-06-08
+    date: 2026-06-07
+    note: 'Latest event: Cofacts 查核協作者培訓'
+    url: https://calendar.google.com/calendar/ical/cpcf6iv5pt9l6gl2ue3svo63e8%40group.calendar.google.com/public/basic.ics
   scrape:
     checked: 2026-06-08
     hint: no_markup

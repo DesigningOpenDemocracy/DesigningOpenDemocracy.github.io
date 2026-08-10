@@ -19,27 +19,6 @@ concepts:
 - liquid-democracy
 - direct-democracy
 - issue-based-direct-democracy
-events:
-- date: '2009-10-01'
-  notable: true
-  title: First published by Public Software Group e.V., developed in response to
-    requests from German Pirate Party members
-  url: https://en.wikipedia.org/wiki/LiquidFeedback
-- date: '2010-01-01'
-  notable: true
-  title: Pirate Party Berlin becomes the first political organisation to adopt LiquidFeedback,
-    to draft new statutes
-  url: https://en.wikipedia.org/wiki/LiquidFeedback
-- date: '2010-06-01'
-  notable: false
-  title: Developers establish Interaktive Demokratie e.V., an independent research
-    institute for digital-democracy research
-  url: https://en.wikipedia.org/wiki/LiquidFeedback
-- date: '2012-09-01'
-  notable: false
-  title: First public-sector (non-party) deployment, in Friesland County, Germany,
-    for citizen consultation on council proposals
-  url: https://en.wikipedia.org/wiki/LiquidFeedback
 location:
   latitude: 52.52
   longitude: 13.405
@@ -48,7 +27,42 @@ location:
 related_orgs:
 - liquid-democracy-ev
 - flux-party
+events:
+- date: '2009-10-01'
+  title: First published by Public Software Group e.V., developed in response to requests
+    from German Pirate Party members
+  url: https://en.wikipedia.org/wiki/LiquidFeedback
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: true
+- date: '2010-01-01'
+  title: Pirate Party Berlin becomes the first political organisation to adopt LiquidFeedback,
+    to draft new statutes
+  url: https://en.wikipedia.org/wiki/LiquidFeedback
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: true
+- date: '2010-06-01'
+  title: Developers establish Interaktive Demokratie e.V., an independent research
+    institute for digital-democracy research
+  url: https://en.wikipedia.org/wiki/LiquidFeedback
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: false
+- date: '2012-09-01'
+  title: First public-sector (non-party) deployment, in Friesland County, Germany,
+    for citizen consultation on council proposals
+  url: https://en.wikipedia.org/wiki/LiquidFeedback
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: false
 activity:
+  manual:
+    checked: 2026-06-09
+    date: 2024-01-01
+    note: '⚠ Status uncertain: site live at liquidfeedback.com (FlexiGuided GmbH,
+      redirects from .org) but no public development news found since 2012. May be
+      stable/maintenance-only. Needs manual check before accepting.'
   dod:
     checked: 2026-07-16
     date: 2026-07-16
@@ -57,12 +71,6 @@ activity:
       SoftwareWorld reviews (Jun 2026). No public dev news since 2012 though — status
       kept active but development activity uncertain
     url: https://liquidfeedback.com/en/
-  manual:
-    checked: 2026-06-09
-    date: 2024-01-01
-    note: '⚠ Status uncertain: site live at liquidfeedback.com (FlexiGuided GmbH,
-      redirects from .org) but no public development news found since 2012. May be
-      stable/maintenance-only. Needs manual check before accepting.'
   rss:
     checked: 2026-08-09
     note: No feed found

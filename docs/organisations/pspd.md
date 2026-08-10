@@ -24,23 +24,33 @@ location:
   precision: city
 events:
 - date: '1994-09-10'
-  notable: true
   title: Founded with ~200 members in Seoul as People's Solidarity for Participatory
     Democracy
-  url: https://en.wikipedia.org/wiki/People%27s_Solidarity_for_Participatory_Democracy
+  url: https://en.wikipedia.org/wiki/People%27s_Solidarity_for_Participatory_Democracy#:~:text=was%20established%20on%2010%20September%201994%20with%20around%20200%20members
+  proof_level: high
+  url_checked: '2026-08-10'
+  notable: true
 - date: '2004-01-01'
-  notable: false
   title: Obtains UN ECOSOC special consultative status
-- date: '2026-08-07'
+  url: https://en.wikipedia.org/wiki/People%27s_Solidarity_for_Participatory_Democracy#:~:text=PSPD%20obtained%20a%20special%20consultative%20status%20with%20the%20UN%20ECOSOC
+  proof_level: high
+  url_checked: '2026-08-10'
   notable: false
+- date: '2026-08-07'
   title: Launches Civil Society Joint Action for Strengthening Accountability and
     Public Interest in AI
+  url: https://www.peoplepower21.org/
+  note: Site announces Civil Society Joint Action for Strengthening Accountability
+    and Public Interest in AI
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: false
 activity:
   dod:
-    date: 2026-08-09
-    note: "Confirmed live (HTTP 200), site current"
     checked: 2026-08-09
-last_checked: "2026-08-09"
+    date: 2026-08-09
+    note: Confirmed live (HTTP 200), site current
+last_checked: '2026-08-09'
 ---
 
 People's Solidarity for Participatory Democracy (PSPD, 참여연대) was founded in 1994 and has grown into one of South Korea's most influential civil society institutions, with approximately 13,000 members and UN ECOSOC consultative status. The organisation describes its mission as monitoring power (legislative, judicial, executive), proposing alternatives, and organising participation and solidarity — treating watchdog, think-tank, and movement-building functions as interdependent rather than separate activities.

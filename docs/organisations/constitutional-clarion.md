@@ -13,15 +13,17 @@ concepts:
 - constitutional-democracy
 - representative-democracy
 - tribal-epistemology
-events:
-- date: '2022-01-01'
-  notable: true
-  title: Anne Twomey starts the Constitutional Clarion YouTube channel
-  url: https://en.wikipedia.org/wiki/Anne_Twomey_(academic)
 location:
   latitude: -33.8886
   longitude: 151.1873
   name: Sydney Law School, University of Sydney, Australia
+events:
+- date: '2022-01-01'
+  title: Anne Twomey starts the Constitutional Clarion YouTube channel
+  url: https://en.wikipedia.org/wiki/Anne_Twomey_(academic)
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: true
 activity:
   dod:
     checked: 2026-08-02

@@ -24,9 +24,13 @@ location:
   precision: city
 events:
 - date: '2015-01-01'
-  notable: true
   title: Launched by the Stiftung für direkte Demokratie as Switzerland's civic-tech
     platform for direct democracy
+  url: https://www.wecollect.ch
+  note: Site footer shows '© 2015-2026'; body states 'since 2015' with 915,000+ signatures
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: true
 activity:
   dod:
     checked: 2026-08-09

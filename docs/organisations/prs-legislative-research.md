@@ -23,21 +23,24 @@ location:
   name: New Delhi, India
 events:
 - date: '2005-01-01'
-  notable: true
   title: Founded to track parliamentary activity and strengthen legislative debate
     in India
+  url: https://en.wikipedia.org/wiki/PRS_Legislative_Research#:~:text=was%20established%20in%20September%202005%20as%20an%20independent%20research%20institute
+  proof_level: high
+  url_checked: '2026-08-10'
+  notable: true
 activity:
+  manual:
+    checked: 2026-06-07
+    date: 2024-05-20
+    note: website loaded. Has blog in main page under a tab. Last one is at  May 20,
+      2024 'A note of gratitude to Mr. N. Vaghul
   dod:
     checked: 2026-07-19
     date: 2026-07-19
     note: Website live with July 2026 content; Monsoon session tracking, active blog
       and bill commentary.
     url: https://prsindia.org
-  manual:
-    checked: 2026-06-07
-    date: 2024-05-20
-    note: website loaded. Has blog in main page under a tab. Last one is at  May 20,
-      2024 'A note of gratitude to Mr. N. Vaghul
   sitemap:
     checked: 2026-06-08
     date: 2021-07-17

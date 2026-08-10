@@ -25,21 +25,25 @@ location:
 news_page: https://www.rgb.rw/updates/news
 events:
 - date: '2011-01-01'
-  notable: true
   title: Established through merger of institutions to oversee governance, decentralisation,
     and civic engagement in Rwanda
+  source: Rwanda Governance Board, organic law establishing RGB — Law No 42/2010 of
+    14/12/2010
+  proof_level: low
+  url_checked: '2026-08-10'
+  notable: true
 activity:
-  dod:
-    checked: 2026-07-19
-    date: 2026-05-29
-    note: Website live with May 2026 news (RGB leadership meetings, governance commemorations).
-    url: https://www.rgb.rw
   manual:
     checked: 2026-06-07
     date: 2026-05-29
     note: website loaded. News page at https://www.rgb.rw/updates/news . Latest news  Friday,
       29 May, 2026  'Former Ethipia Prime Minister H.E. Hailemariam visits RGB'
     url: https://www.rgb.rw/updates/news
+  dod:
+    checked: 2026-07-19
+    date: 2026-05-29
+    note: Website live with May 2026 news (RGB leadership meetings, governance commemorations).
+    url: https://www.rgb.rw
   rss:
     checked: 2026-06-07
     note: No feed found

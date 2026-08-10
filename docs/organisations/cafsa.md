@@ -17,17 +17,19 @@ summary: An Adelaide-based incorporated association advocating for the use of ci
 concepts:
 - citizens-assembly
 - sortition
-events:
-- date: '2023-01-01'
-  notable: true
-  title: Established in Adelaide as an incorporated association
-  url: https://cafsa.org.au/cafsa/
 location:
   latitude: -34.9285
   longitude: 138.6007
   name: Adelaide, Australia
   precision: city
 rss_feed: https://cafsa.org.au/feed
+events:
+- date: '2023-01-01'
+  title: Established in Adelaide as an incorporated association
+  url: https://cafsa.org.au/cafsa/
+  proof_level: medium
+  url_checked: '2026-08-10'
+  notable: true
 activity:
   rss:
     checked: 2026-08-09
