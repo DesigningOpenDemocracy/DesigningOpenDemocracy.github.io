@@ -138,18 +138,28 @@
 {%- if has_details %}</details>{% else %}</div>{% endif %}
 {%- endif %}
   {{ super() }}
-{%- if page.meta.upcoming_events %}
-<h2>Upcoming events</h2>
-<ul class="org-events-timeline">
-  {%- for e in page.meta.upcoming_events %}
-  <li class="{% if e.notable %}org-event--notable{% endif %}" {% if e.note %}title="{{ e.note | e }}"{% endif %}>
-    <span class="org-event-date">{{ e.date }}</span>
+{%- macro render_event(e) -%}
+  <li class="{% if e.notable %}org-event--notable{% endif %}">
+    <span class="org-event-date">{{ e.date }}{% if e.end_date %}–{{ e.end_date }}{% endif %}</span>
     <span class="org-event-title">{% if e.url %}<a href="{{ e.url }}" target="_blank" rel="noopener">{{ e.title }}</a>{% else %}{{ e.title }}{% endif %}</span>
     {%- if e.proof_level %}<span class="org-event-proof proof-{{ e.proof_level }}" title="Proof level: {{ e.proof_level }}{% if e.proof_warning %} (overridden){% endif %}">{{ e.proof_level }}</span>{% endif %}
     {%- if e.proof_warning %}<span class="org-event-warning" title="Proof override: source is unverified">⚠</span>{% endif %}
     {%- if e.url %}<a href="{{ e.url }}" target="_blank" rel="noopener" class="org-event-source-btn" title="View source">↗ source</a>{% elif e.source %}<span class="org-event-source-btn" title="{{ e.source }}">↗ cited</span>{% endif %}
     {%- if e.coverage_url %}<span class="org-event-coverage"> — <a href="{{ e.coverage_url }}">DOD coverage</a></span>{%- endif %}
+    {%- if e.note or e.quote %}
+    <details class="org-event-detail">
+      <summary>evidence</summary>
+      {%- if e.quote %}<blockquote class="org-event-quote">{{ e.quote | e }}</blockquote>{% endif %}
+      {%- if e.note %}<p class="org-event-note">{{ e.note | e }}</p>{% endif %}
+    </details>
+    {%- endif %}
   </li>
+{%- endmacro %}
+{%- if page.meta.upcoming_events %}
+<h2>Upcoming events</h2>
+<ul class="org-events-timeline">
+  {%- for e in page.meta.upcoming_events %}
+  {{ render_event(e) }}
   {%- endfor %}
 </ul>
 {%- endif %}
@@ -157,14 +167,7 @@
 <h2>History</h2>
 <ul class="org-events-timeline">
   {%- for e in page.meta.history_events | reverse %}
-  <li class="{% if e.notable %}org-event--notable{% endif %}" {% if e.note %}title="{{ e.note | e }}"{% endif %}>
-    <span class="org-event-date">{{ e.date }}</span>
-    <span class="org-event-title">{% if e.url %}<a href="{{ e.url }}" target="_blank" rel="noopener">{{ e.title }}</a>{% else %}{{ e.title }}{% endif %}</span>
-    {%- if e.proof_level %}<span class="org-event-proof proof-{{ e.proof_level }}" title="Proof level: {{ e.proof_level }}{% if e.proof_warning %} (overridden){% endif %}">{{ e.proof_level }}</span>{% endif %}
-    {%- if e.proof_warning %}<span class="org-event-warning" title="Proof override: source is unverified">⚠</span>{% endif %}
-    {%- if e.url %}<a href="{{ e.url }}" target="_blank" rel="noopener" class="org-event-source-btn" title="View source">↗ source</a>{% elif e.source %}<span class="org-event-source-btn" title="{{ e.source }}">↗ cited</span>{% endif %}
-    {%- if e.coverage_url %}<span class="org-event-coverage"> — <a href="{{ e.coverage_url }}">DOD coverage</a></span>{%- endif %}
-  </li>
+  {{ render_event(e) }}
   {%- endfor %}
 </ul>
 {%- endif %}
