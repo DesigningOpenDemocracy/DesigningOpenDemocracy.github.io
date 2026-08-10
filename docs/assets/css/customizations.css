@@ -1540,6 +1540,34 @@
 .org-events-timeline .org-event-source-btn:hover {
   opacity: 0.85;
 }
+.org-events-timeline .org-event-proof {
+  margin-left: 0.4em;
+  font-size: 0.65em;
+  font-weight: 600;
+  padding: 0.1em 0.4em;
+  border-radius: 3px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  cursor: default;
+}
+.org-events-timeline .proof-high {
+  background: rgba(0,200,83,0.15);
+  color: #00c853;
+}
+.org-events-timeline .proof-medium {
+  background: rgba(255,171,64,0.15);
+  color: #ffab40;
+}
+.org-events-timeline .proof-low {
+  background: rgba(255,82,82,0.15);
+  color: #ff5252;
+}
+.org-events-timeline .org-event-warning {
+  margin-left: 0.3em;
+  font-size: 0.75em;
+  opacity: 0.6;
+  cursor: help;
+}
 .org-events-timeline li.org-event--notable .org-event-title {
   font-weight: 500;
 }
