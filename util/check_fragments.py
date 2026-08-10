@@ -119,9 +119,13 @@ def _fetch_page_text(url, headers):
     try:
         if wp:
             lang, title = wp
+            # redirects=1 matters: e.g. en.wikipedia.org/wiki/Referendum_Council
+            # redirects to Uluru_Statement_from_the_Heart — without this the API
+            # returns an empty extract for any redirect title, which read as a
+            # MISMATCH regardless of how accurate the stored evidence was.
             api_url = (
                 f"https://{lang}.wikipedia.org/w/api.php?action=query&prop=extracts"
-                f"&explaintext=1&titles={title}&format=json"
+                f"&explaintext=1&redirects=1&titles={title}&format=json"
             )
             r = requests.get(api_url, headers={"User-Agent": USER_AGENT}, timeout=15)
             r.raise_for_status()
