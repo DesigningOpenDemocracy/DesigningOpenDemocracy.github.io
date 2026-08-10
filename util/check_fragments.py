@@ -100,18 +100,10 @@ def wikipedia_title(url):
     return unquote(m.group(1)) if m else None
 
 
-def fetch_evidence_text(url, cache, use_cache=True):
-    """Fetch the text to check evidence against for a given URL.
-
-    Returns (text, changed_since_last_check, error). `changed_since_last_check`
-    is None when there was no prior cache entry to compare against (first
-    time seeing this URL) — treat that the same as "changed" for reporting
-    purposes (nothing to compare to yet).
-    """
-    entry = cache.get(url, {}) if use_cache else {}
+def _fetch_page_text(url, headers):
+    """One unconditional or conditional GET. Returns (text_or_None, resp_or_None, error_or_None).
+    text is None with resp set when the server returned 304 (unchanged, no body)."""
     title = wikipedia_title(url)
-
-    time.sleep(FETCH_DELAY)
     try:
         if title:
             api_url = (
@@ -121,21 +113,13 @@ def fetch_evidence_text(url, cache, use_cache=True):
             r = requests.get(api_url, headers={"User-Agent": USER_AGENT}, timeout=15)
             r.raise_for_status()
             pages = r.json().get("query", {}).get("pages", {})
-            text = next(iter(pages.values())).get("extract", "")
-        else:
-            headers = {"User-Agent": USER_AGENT}
-            if entry.get("etag"):
-                headers["If-None-Match"] = entry["etag"]
-            if entry.get("last_modified"):
-                headers["If-Modified-Since"] = entry["last_modified"]
-            r = requests.get(url, headers=headers, timeout=15)
-            if r.status_code == 304:
-                # Server confirms unchanged — reuse cached text, no re-fetch needed.
-                cache[url] = {**entry, "checked": date.today().isoformat()}
-                return entry.get("text", ""), False, None
-            r.raise_for_status()
-            raw = r.text
-            text = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", raw))[:100000]
+            return next(iter(pages.values())).get("extract", ""), r, None
+        r = requests.get(url, headers=headers, timeout=15)
+        if r.status_code == 304:
+            return None, r, None
+        r.raise_for_status()
+        text = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", r.text))[:100000]
+        return text, r, None
     except requests.HTTPError as e:
         return None, None, f"HTTP_{e.response.status_code if e.response is not None else '?'}"
     except requests.RequestException:
@@ -143,16 +127,63 @@ def fetch_evidence_text(url, cache, use_cache=True):
     except Exception:
         return None, None, "FETCH_ERROR"
 
+
+def check_evidence(url, evidence, cache, use_cache=True):
+    """Verify one piece of evidence text against a URL, using the cache to
+    avoid redundant fetches. The cache stores ETag/Last-Modified/content
+    hash plus a small per-evidence-string good/bad map — deliberately NOT
+    the fetched page text itself (that made the committed cache file grow
+    to multiple megabytes when it was tried; hashes and booleans are all
+    that's actually needed to skip redundant work).
+
+    Returns (result, unchanged, error) where result is "good"/"bad"/None
+    and unchanged is True if this was answered from cache without a fetch
+    that could reveal new content (i.e. a real 304, not just "first look").
+    """
+    entry = cache.get(url, {}) if use_cache else {}
+    ev_key = sha256(normalize_ws(evidence))
+    title = wikipedia_title(url)
+
+    headers = {"User-Agent": USER_AGENT}
+    if not title:
+        if entry.get("etag"):
+            headers["If-None-Match"] = entry["etag"]
+        if entry.get("last_modified"):
+            headers["If-Modified-Since"] = entry["last_modified"]
+
+    time.sleep(FETCH_DELAY)
+    text, resp, error = _fetch_page_text(url, headers)
+    if error:
+        return None, False, error
+
+    if text is None:
+        # 304 — server confirms unchanged. If we've already verified this
+        # exact evidence string against this URL before, trust that result
+        # without needing the body at all. Otherwise (a new event pointing
+        # at an already-cached, unchanged URL) fall through to a fresh
+        # unconditional fetch — correctness for the rare case beats trying
+        # to be clever with a body we don't have.
+        cached_result = entry.get("verified", {}).get(ev_key)
+        if cached_result is not None:
+            cache[url] = {**entry, "checked": date.today().isoformat()}
+            return ("good" if cached_result else "bad"), True, None
+        time.sleep(FETCH_DELAY)
+        text, resp, error = _fetch_page_text(url, {"User-Agent": USER_AGENT})
+        if error:
+            return None, False, error
+
     new_hash = sha256(text)
-    changed = None if "content_hash" not in entry else (entry["content_hash"] != new_hash)
+    verified = dict(entry.get("verified", {}))
+    result = text_contains(text, evidence)
+    verified[ev_key] = result
     cache[url] = {
-        "etag": r.headers.get("ETag") if not title else entry.get("etag"),
-        "last_modified": r.headers.get("Last-Modified") if not title else entry.get("last_modified"),
+        "etag": resp.headers.get("ETag") if resp is not None and not title else entry.get("etag"),
+        "last_modified": resp.headers.get("Last-Modified") if resp is not None and not title else entry.get("last_modified"),
         "content_hash": new_hash,
-        "text": text,
+        "verified": verified,
         "checked": date.today().isoformat(),
     }
-    return text, changed, None
+    return ("good" if result else "bad"), False, None
 
 
 def main():
@@ -196,7 +227,7 @@ def main():
             title = e.get("title", "")[:50]
             event_date = e.get("date", "?")
 
-            text, changed, error = fetch_evidence_text(url, cache)
+            result, unchanged_hit, error = check_evidence(url, evidence, cache, use_cache=not args.no_cache)
 
             if error:
                 errors += 1
@@ -204,10 +235,10 @@ def main():
                 print(f"               {url}  ({error})")
                 continue
 
-            if changed is False:
+            if unchanged_hit:
                 unchanged += 1
 
-            if text_contains(text, evidence):
+            if result == "good":
                 good += 1
             else:
                 bad += 1
