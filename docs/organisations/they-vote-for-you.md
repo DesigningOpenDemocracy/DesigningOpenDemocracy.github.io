@@ -16,6 +16,12 @@ concepts:
 - radical-transparency
 - accountability-sink
 - e-government
+events:
+- date: '2014-10-21'
+  notable: true
+  title: Launched by the OpenAustralia Foundation with seed funding connected to
+    Google
+  url: https://oaf.org.au/2014/10/21/they-vote-for-you/
 location:
   latitude: -33.8688
   longitude: 151.2093

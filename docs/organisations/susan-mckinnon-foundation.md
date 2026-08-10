@@ -19,6 +19,16 @@ concepts:
 - democracy
 - constitutional-democracy
 - citizens-assembly
+events:
+- date: '2015-01-01'
+  notable: true
+  title: Founded (as Susan McKinnon Foundation) by Sophie Oh and Grant Rule
+  url: https://mckinnon.co/about-us
+- date: '2017-11-01'
+  notable: true
+  title: McKinnon Prize in Political Leadership established, in partnership with
+    the University of Melbourne
+  url: https://www.unimelb.edu.au/newsroom/news/2017/november/susan-mckinnon-foundation-and-university-of-melbourne-establish-prestigious-award-for-political-leadership
 location:
   latitude: -37.8136
   longitude: 144.9631
