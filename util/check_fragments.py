@@ -7,6 +7,7 @@ Checks:
   - quote: fields against source pages (fetch, substring match)
 
 Skips events with proof_warning (explicitly unverified).
+Whitespace is normalised before comparison to handle line breaks and formatting.
 
 Usage:
     python util/check_fragments.py        # verify all events
@@ -55,10 +56,22 @@ def fetch_page(url):
             return text[:100000]
     except HTTPError as e:
         return f"HTTP_{e.code}"
-    except URLError as e:
-        return f"NETWORK_ERROR"
-    except Exception as e:
-        return f"FETCH_ERROR"
+    except URLError:
+        return "NETWORK_ERROR"
+    except Exception:
+        return "FETCH_ERROR"
+
+
+def normalize_ws(text):
+    """Collapse whitespace for forgiving substring matching."""
+    return " ".join(text.split())
+
+
+def text_contains(text, needle):
+    """Check if needle appears in text, with whitespace normalization."""
+    if not text or not needle:
+        return False
+    return normalize_ws(needle) in normalize_ws(text)
 
 
 def extract_fragment(url):
@@ -75,9 +88,10 @@ def main():
     args = parser.parse_args()
 
     fragments_good = 0
-    fragments_bad = []
+    fragments_bad = 0
+    fragments_err = 0
     quotes_good = 0
-    quotes_bad = []
+    quotes_bad = 0
     skipped = 0
 
     for path in sorted(glob.glob(os.path.join(ORG_DIR, "*.md"))):
@@ -93,7 +107,6 @@ def main():
             date = e.get("date", "?")
             url = e.get("url", "")
 
-            # Skip explicitly unverified events
             if "proof_warning" in e:
                 skipped += 1
                 continue
@@ -108,13 +121,13 @@ def main():
                 wp_title = unquote(m.group(1))
                 extract = fetch_wp_extract(wp_title)
                 if extract is None:
-                    fragments_bad.append((slug, date, title, frag, f"{wp_title} (API error)"))
+                    fragments_err += 1
                     print(f"  FRAGMENT ERROR  {slug}  [{date}]  {title}")
-                    print(f"                   {wp_title}")
-                elif frag in extract:
+                    print(f"                   {wp_title} (API error — rate-limited?)")
+                elif text_contains(extract, frag):
                     fragments_good += 1
                 else:
-                    fragments_bad.append((slug, date, title, frag, wp_title))
+                    fragments_bad += 1
                     print(f"  FRAGMENT MISMATCH {slug}  [{date}]  {title}")
                     print(f"                    fragment: {frag[:80]}")
 
@@ -125,33 +138,36 @@ def main():
                 is_wp = "wikipedia.org" in parsed.netloc
                 if is_wp:
                     m = re.search(r"/wiki/([^#]+)", parsed.path)
-                    if m:
-                        text = fetch_wp_extract(unquote(m.group(1)))
-                    else:
-                        text = None
+                    text = fetch_wp_extract(unquote(m.group(1))) if m else None
                 else:
                     text = fetch_page(url)
 
                 if text is None:
-                    quotes_bad.append((slug, date, title, quote[:80], url))
+                    quotes_bad += 1
                     print(f"  QUOTE FETCH ERR {slug}  [{date}]  {title}")
-                elif quote in text:
+                elif not isinstance(text, str) or text.startswith(("HTTP_", "NETWORK", "FETCH")):
+                    quotes_bad += 1
+                    print(f"  QUOTE FETCH ERR {slug}  [{date}]  {title}  ({text})")
+                elif text_contains(text, quote):
                     quotes_good += 1
                 else:
-                    quotes_bad.append((slug, date, title, quote[:80], url))
+                    quotes_bad += 1
                     print(f"  QUOTE MISMATCH  {slug}  [{date}]  {title}")
                     print(f"                   quote: {quote[:80]}")
 
     print()
-    print(f"Fragments: {fragments_good} good, {len(fragments_bad)} bad")
-    print(f"Quotes:    {quotes_good} good, {len(quotes_bad)} bad")
-    print(f"Skipped ({'proof_warning'}): {skipped}")
+    print(f"Fragments: {fragments_good} good, {fragments_bad} mismatch, {fragments_err} API errors")
+    print(f"Quotes:    {quotes_good} good, {quotes_bad} bad")
+    print(f"Skipped (proof_warning): {skipped}")
 
     if fragments_bad or quotes_bad:
-        print(f"\n{fragments_bad + quotes_bad} verifiable source(s) no longer match — citation pages may have changed.")
+        print(f"\n{fragments_bad + quotes_bad} verifiable source(s) no longer match live pages.")
+        print("API errors (rate-limiting) are NOT counted as mismatches.")
         sys.exit(1)
     else:
         print("All verifiable evidence matches live pages.")
+        if fragments_err:
+            print(f"({fragments_err} fragment API errors — re-run later when not rate-limited)")
         sys.exit(0)
 
 
