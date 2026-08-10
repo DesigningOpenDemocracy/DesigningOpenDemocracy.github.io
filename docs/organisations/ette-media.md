@@ -15,6 +15,12 @@ summary: An independent Australian media-literacy outlet founded by journalists 
   podcast 'We Used to be Journos' and multi-platform content.
 concepts:
 - tribal-epistemology
+events:
+- date: '2025-06-01'
+  notable: true
+  title: Launched by journalists Antoinette Lattouf and Jan Fran, with flagship
+    podcast "We Used to Be Journos" debuting 2 July 2025 on Acast
+  url: https://mumbrella.com.au/antoinette-lattouf-and-jan-fran-launch-ette-media-878817
 location:
   latitude: -33.8688
   longitude: 151.2093

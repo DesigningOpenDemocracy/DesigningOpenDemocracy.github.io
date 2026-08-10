@@ -10,6 +10,12 @@ concepts:
 - direct-democracy
 - e-government
 - liquid-democracy
+events:
+- date: '2022-03-24'
+  notable: true
+  title: Flux, the party behind DigiPol, deregistered by the AEC — effective end
+    of the DigiPol project
+  url: https://en.wikipedia.org/wiki/Flux_(political_party)
 contributors:
 - BrianKhuu
 ---

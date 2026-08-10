@@ -13,6 +13,11 @@ concepts:
 - constitutional-democracy
 - representative-democracy
 - tribal-epistemology
+events:
+- date: '2022-01-01'
+  notable: true
+  title: Anne Twomey starts the Constitutional Clarion YouTube channel
+  url: https://en.wikipedia.org/wiki/Anne_Twomey_(academic)
 location:
   latitude: -33.8886
   longitude: 151.1873

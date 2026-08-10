@@ -13,6 +13,16 @@ concepts:
 - meta-organisation
 - deliberative-democracy
 - accountability-sink
+events:
+- date: '2016-12-19'
+  notable: true
+  title: Held its first meetup
+  url: https://www.meetup.com/designingopendemocracy/
+- date: '2018-02-10'
+  notable: false
+  title: Published its "Proposed (Initial) Strategy" outlining the group's founding
+    direction
+  url: https://www.designingopendemocracy.com/blog/2018/02/10/proposed-initial-strategy-of-designing-open-democracy/
 location:
   latitude: -37.8136
   longitude: 144.9631

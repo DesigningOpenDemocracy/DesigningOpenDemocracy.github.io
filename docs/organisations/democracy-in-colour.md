@@ -18,6 +18,12 @@ concepts:
 - democracy
 - representative-democracy
 - isegoria
+events:
+- date: '2017-07-01'
+  notable: true
+  title: Launched in Canberra by founder Tim Lo Surdo as Australia's first national
+    racial-justice advocacy organisation led by people of colour
+  url: https://www.devex.com/news/q-a-tim-lo-surdo-on-how-to-bring-a-voice-to-australia-s-communities-of-color-90674
 location:
   latitude: -37.8136
   longitude: 144.9631

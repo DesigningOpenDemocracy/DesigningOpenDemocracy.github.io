@@ -19,6 +19,11 @@ concepts:
 - workplace-democracy
 - community-business
 - worker-cooperatives
+events:
+- date: '2018-01-01'
+  notable: true
+  title: Founded by Antony McMullen, Clare Fountain, and Paul Saeki
+  url: https://bonds.coop/about-us/our-story/
 location:
   latitude: -37.8136
   longitude: 144.9631
