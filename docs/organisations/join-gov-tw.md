@@ -16,6 +16,12 @@ summary: Taiwan's official government-run public policy participation platform, 
 concepts:
 - e-government
 - direct-democracy
+events:
+- date: '2015-01-01'
+  notable: true
+  title: Launched by Taiwan's National Development Council following a February
+    2015 Executive Yuan directive
+  url: https://europeandemocracyhub.epd.eu/exploring-worldwide-democratic-innovations-taiwan/
 location:
   latitude: 25.033
   longitude: 121.5654

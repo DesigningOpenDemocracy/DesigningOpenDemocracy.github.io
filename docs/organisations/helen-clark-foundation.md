@@ -17,6 +17,12 @@ summary: An independent public policy think tank based at AUT Auckland — one o
 concepts:
 - democracy
 - representative-democracy
+events:
+- date: '2019-01-01'
+  notable: true
+  title: Foundation established as an independent public policy think tank hosted
+    by AUT, named after former PM Helen Clark
+  url: https://en.wikipedia.org/wiki/The_Helen_Clark_Foundation
 location:
   latitude: -36.8485
   longitude: 174.7633

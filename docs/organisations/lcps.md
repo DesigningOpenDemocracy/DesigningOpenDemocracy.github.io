@@ -16,6 +16,15 @@ concepts:
 - democracy
 - constitutional-democracy
 - accountability-sink
+events:
+- date: '1989-01-01'
+  notable: true
+  title: Founded as an independent, non-partisan think tank in Beirut
+  url: https://www.lcps-lebanon.org/en/about
+- date: '2006-01-01'
+  notable: false
+  title: Contributed to drafting the Boutros electoral law
+  url: https://www.lcps-lebanon.org/en/about
 location:
   latitude: 33.8938
   longitude: 35.5018

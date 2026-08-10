@@ -18,6 +18,17 @@ concepts:
 - deliberative-democracy
 - radical-transparency
 - e-government
+events:
+- date: '2015-01-01'
+  notable: true
+  title: Launched by g0v contributors partnering with Taiwanese government officials,
+    following the 2014 Sunflower Movement
+  url: https://congress.crowd.law/case-vtaiwan.html
+- date: '2015-08-01'
+  notable: true
+  title: Uber/UberX case — vTaiwan's first major deliberation using Pol.is, ~31,115
+    votes from 925 participants
+  url: https://congress.crowd.law/case-vtaiwan.html
 location:
   latitude: 25.033
   longitude: 121.5654

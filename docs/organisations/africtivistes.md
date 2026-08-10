@@ -17,6 +17,12 @@ concepts:
 - democracy-tools
 - democracy
 - e-government
+events:
+- date: '2015-11-26'
+  notable: true
+  title: Founded in Dakar by Cheikh Fall, initially as the African League of Bloggers
+    and Web Activists for Democracy
+  url: https://fr.wikipedia.org/wiki/AfricTivistes
 location:
   latitude: 14.7167
   longitude: -17.4677

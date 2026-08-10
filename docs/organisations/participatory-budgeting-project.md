@@ -17,6 +17,16 @@ concepts:
 - participatory-budgeting
 - direct-democracy
 - deliberative-democracy
+events:
+- date: '2009-01-01'
+  notable: true
+  title: Founded by Josh Lerner and collaborators, launching the first PB process
+    in North America in Chicago's 49th Ward
+  url: https://www.participatorybudgeting.org/about/
+- date: '2011-01-01'
+  notable: false
+  title: Incorporated as a 501(c)(3) nonprofit in Brooklyn, New York
+  url: https://www.participatorybudgeting.org/about/
 location:
   latitude: 40.6782
   longitude: -73.9442

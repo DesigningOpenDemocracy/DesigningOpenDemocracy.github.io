@@ -17,6 +17,16 @@ concepts:
 - representative-democracy
 - accountability-sink
 - radical-transparency
+events:
+- date: '1998-06-01'
+  notable: true
+  title: Launched with NDI support to monitor Slovak media ahead of the 1998 parliamentary
+    elections
+  url: https://memo98.sk/about-us
+- date: '1999-01-01'
+  notable: false
+  title: First international election observation mission, invited by OSCE/ODIHR
+  url: https://memo98.sk/about-us
 location:
   latitude: 48.1486
   longitude: 17.1077
