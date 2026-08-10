@@ -16,6 +16,11 @@ summary: A world-leading academic research centre at the University of Canberra 
 concepts:
 - citizens-assembly
 - sortition
+events:
+- date: '2014-01-01'
+  notable: true
+  title: Founded, marking its 10th anniversary in 2024
+  url: https://www.delibdem.org/the-cddgg-10th-anniversary-conversation-series
 location:
   latitude: -35.2457
   longitude: 149.0745

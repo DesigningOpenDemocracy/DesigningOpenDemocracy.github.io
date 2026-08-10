@@ -17,6 +17,11 @@ summary: An Adelaide-based incorporated association advocating for the use of ci
 concepts:
 - citizens-assembly
 - sortition
+events:
+- date: '2023-01-01'
+  notable: true
+  title: Established in Adelaide as an incorporated association
+  url: https://cafsa.org.au/cafsa/
 location:
   latitude: -34.9285
   longitude: 138.6007

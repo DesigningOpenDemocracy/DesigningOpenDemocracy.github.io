@@ -11,6 +11,17 @@ concepts:
 - cooperative
 - worker-cooperatives
 - economic-democracy
+events:
+- date: '2016-09-01'
+  notable: false
+  title: Held its founding pitch night in Bendigo, raising $35,000 from Founding
+    Patrons
+  url: https://web.archive.org/web/20190824085752/https://bhive.coop/our-story/
+- date: '2017-01-01'
+  notable: true
+  title: Formally granted cooperative status by Consumer Affairs Victoria, becoming
+    Australia's first platform cooperative
+  url: https://web.archive.org/web/20190824085752/https://bhive.coop/our-story/
 last_checked: '2026-05-29'
 ---
 

@@ -13,6 +13,16 @@ concepts:
 - deliberative-democracy
 - consensus-mapping
 - direct-democracy
+events:
+- date: '2019-01-01'
+  notable: true
+  title: Co-founded by Willow Berzin, Suse Porter and Dr Sonia Randhawa, inspired
+    by Extinction Rebellion Melbourne's first meeting
+  url: https://www.dumbofeather.com/articles/building-a-coalition-of-everyone/
+- date: '2020-02-04'
+  notable: false
+  title: Ran four mock Citizens' Assemblies at Melbourne's Sustainable Living Festival
+  url: https://web.archive.org/web/20201025045936/https://www.coalitionofeveryone.com/post/citizens-assembly
 ---
 
 The Coalition of Everyone (CoE) was founded by Willow Berzin with the aim of making participatory and deliberative democracy part of everyday civic life — not just formal government processes. It ran citizens' assemblies, participatory workshops, and community engagement processes across Australia.

@@ -16,6 +16,11 @@ concepts:
 - cooperative
 - worker-cooperatives
 - economic-democracy
+events:
+- date: '2018-01-01'
+  notable: true
+  title: Formed as Victoria's first registered co-operative co-working space
+  url: https://www.888causeway.coop/about/
 location:
   latitude: -37.8156
   longitude: 144.9648
