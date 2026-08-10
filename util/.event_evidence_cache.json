@@ -1,7 +1,7 @@
 {
   "https://adrindia.org/about-adr/mission-and-vision": {
     "checked": "2026-08-10",
-    "content_hash": "f074c5e1e9f7cc24bb8c64921491d5e52f542e313e71390758106175f6448840",
+    "content_hash": "faec4cf0aef4976bd70de657a459ff39bc3f1519b44a08e5cc66e636cb010871",
     "etag": null,
     "last_modified": null,
     "verified": {
@@ -10,7 +10,7 @@
   },
   "https://australiainstitute.org.au/events/dr-hugh-saddler-memorial-lecture/": {
     "checked": "2026-08-10",
-    "content_hash": "323d64f31e792a2a992082680e10c4a3124eeae4096fd2bfe9f9b3bc4b974805",
+    "content_hash": "823296cbe36b78a80ffd5e30920d35e268d645089956a0f24129f9782d50d03e",
     "etag": null,
     "last_modified": null,
     "verified": {
@@ -19,17 +19,17 @@
   },
   "https://canberra-alliance.org.au/events/": {
     "checked": "2026-08-10",
-    "content_hash": "7f0fa75814b226e695d528b1fcd563d594657fb4dc3055f144ea8dfe634cd67f",
+    "content_hash": "6352eff3493c9c162df8e085dcc3e5f602ef1b8eb5495c84f52647bfecb278ff",
     "etag": null,
     "last_modified": "Mon, 10 Aug 2026 14:00:53 GMT",
     "verified": {
       "2ee5213dfc060abdf48a43fe16b3969e60f1bbf548bfc1036bc470be4547590f": true,
-      "483d1c07788f0bdf5d93d267ff384e304c3d7d425c93ed98373029e69e1535cc": false
+      "483d1c07788f0bdf5d93d267ff384e304c3d7d425c93ed98373029e69e1535cc": true
     }
   },
   "https://civichive.org/about-us/": {
     "checked": "2026-08-10",
-    "content_hash": "b5d70ac0b0195d3cbd257123de2e8865a44a10a1587d7e3df71ff996e09f5c8d",
+    "content_hash": "db1a7600e280ac3f7af4461d59f0c8be17e0e8bb96ccc8a03a18d24456a131ef",
     "etag": null,
     "last_modified": null,
     "verified": {
@@ -38,11 +38,20 @@
   },
   "https://civictech.africa/about-ctin": {
     "checked": "2026-08-10",
-    "content_hash": "30591671294a6960cb769809192077b0a2aa636538ee9e8db7218d9e01ef0615",
+    "content_hash": "481aff535c78cdd94993b110e3252f4ddf188c72030e61152eea316758a6e837",
     "etag": null,
     "last_modified": "Thu, 06 Aug 2026 12:14:22 GMT",
     "verified": {
-      "74ae83bfa42253f65e7cfb42d5de7ad8dd8030366ec6dc44063bce6e59e827e5": false
+      "74ae83bfa42253f65e7cfb42d5de7ad8dd8030366ec6dc44063bce6e59e827e5": true
+    }
+  },
+  "https://congresovisible.uniandes.edu.co/quesomos": {
+    "checked": "2026-08-10",
+    "content_hash": "9036eef782afc55746d9b0fab1b944f357cc1a340a2e6352a6ed2a6bd2413543",
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "ff2df5821fe2c240be3ae3929f7f1cd4493e284cf54f05564b8ec123e3629cc2": true
     }
   },
   "https://en.wikipedia.org/wiki/Anti-Corruption_Foundation#:~:text=FBK%20was%20founded%20by%20Alexei%20Navalny": {
@@ -236,13 +245,13 @@
       "4d54266b0db9daa49fcd3496dce20af6b770b0889623486afd3da919ba781fe1": true
     }
   },
-  "https://en.wikipedia.org/wiki/Electoral_Reform_Society#:~:text=principal%20funder%20of%20the%20YES!%20To%20Fairer%20Votes%20campaign%20in%20the%202011%20referendum%20on%20the%20Alternative%20Vote": {
+  "https://en.wikipedia.org/wiki/Electoral_Reform_Society#:~:text=principal%20funder%20of%20the%20YES%21%20To%20Fairer%20Votes%20campaign": {
     "checked": "2026-08-10",
     "content_hash": "2aa7a97c138a0ff4702dabf692e45a5073c4e7cc93c4d9bd150c490d092d73a6",
     "etag": null,
     "last_modified": null,
     "verified": {
-      "7a8d15426c43895190b60ff93386c2f5bb62bff57af95ffa9c62016464fc7956": false
+      "a6d0bbffcedb06353a2823950e29a8397d56e9512cc5bea89abe7db209d1952f": true
     }
   },
   "https://en.wikipedia.org/wiki/Electoral_Reform_Society#:~:text=was%20founded%20in%20January%201884%20as%20the%20Proportional%20Representation%20Society%20by": {
@@ -362,13 +371,13 @@
       "ee7ee2ef6130abd27fb2e2919014aec4ffd2a71854fdab583fb28cb4dc57b372": true
     }
   },
-  "https://en.wikipedia.org/wiki/Israel_Democracy_Institute#:~:text=was%20founded%20in%201991%20as%20a%20center%20of%20research%20and%20action%20dedicated%20to%20strengthening%20the%20foundations%20of%20Israeli%20democracy": {
+  "https://en.wikipedia.org/wiki/Israel_Democracy_Institute#:~:text=was%20founded%20in%201991%20as%20a%20%22center%20of%20research%20and%20action%20dedicated%20to%20strengthening%20the%20foundations%20of%20Israeli%20democracy.%22": {
     "checked": "2026-08-10",
     "content_hash": "0cbd6f8e6d5dc2904f11f64386dbba4206fd90786bd53038632e054aee9c7d54",
     "etag": null,
     "last_modified": null,
     "verified": {
-      "b439a6dc5b7a0115085001a102f7776a401ae1d9da00627b7a38fa6305e92cd1": false
+      "0195c0d901307fd47446df9f044c72093905de80620d7712ad0da3c086f41ffb": true
     }
   },
   "https://en.wikipedia.org/wiki/Janaagraha#:~:text=Founded%20in%202001%20by%20Ramesh%20Ramanathan%20and%20Swati%20Ramanathan": {
@@ -491,13 +500,13 @@
       "a1c1f9fcea88d94f56c134ea19f5212f68bf38344f87d1bc6daf5d5abe0df3cf": true
     }
   },
-  "https://en.wikipedia.org/wiki/Memorial_(society)#:~:text=as%20a%20historical%20and%20educational%20society": {
+  "https://en.wikipedia.org/wiki/Memorial_(society)#:~:text=as%20a%20%22historical%20and%20educational%22%20society": {
     "checked": "2026-08-10",
     "content_hash": "f0273c40ccfc964e9cfd08cd1367db779cac15c7f5f6ce56fd6e1f6009fcee19",
     "etag": null,
     "last_modified": null,
     "verified": {
-      "ec5ea3626ede8d7c2c49f38f7145027ecce10d5c3bc09a9e0697397d8228a79f": false
+      "e5432f27f5a9c24cf6114ce6744f6ffaa0ca7aa5d5c1e3dd90e76adedcbdc4e0": true
     }
   },
   "https://en.wikipedia.org/wiki/Movement_for_Quality_Government_in_Israel#:~:text=was%20founded%20in%20March%201990%20by%20lawyer%20Eliad%20Shraga": {
@@ -509,13 +518,13 @@
       "31984a561fd54fc51412742ebb65d5366c9a335218c89cf590a2edca3ef0c7bd": true
     }
   },
-  "https://en.wikipedia.org/wiki/Movement_for_a_Democratic_Society#:~:text=Movement%20for%20a%20Democratic%20Society%20(TEV-DEM)": {
+  "https://en.wikipedia.org/wiki/Movement_for_a_Democratic_Society#:~:text=is%20a%20left-wing%20umbrella%20organization%20in%20northern%20Syria%20founded%20on%2016%20January%202011": {
     "checked": "2026-08-10",
     "content_hash": "6782844aa5036eb1e0983fae8038b5f46acd43a231b0308d7b35ec16cd4560e1",
     "etag": null,
     "last_modified": null,
     "verified": {
-      "977453db8f243b39ec4d4813d2d37ca3b0b0538072eb577b108fe5abd9572a9e": false
+      "1052750b2d5233b820e34a7a2935b16b8aa9b557a609b29c0fa2989ef6248eef": true
     }
   },
   "https://en.wikipedia.org/wiki/MySociety#:~:text=TheyWorkForYou%20is%20a%20parliamentary%20monitoring%20website%20which%20aims%20to%20make%20it%20easier": {
@@ -636,13 +645,13 @@
       "df4b0b1a904c336946576a29110f8081dd950fda90cfbb941e3be97d90184a49": true
     }
   },
-  "https://en.wikipedia.org/wiki/Pol.is#:~:text=pol.is%20has%20been%20one%20of%20the%20key%20parts%20of%20vTaiwan": {
+  "https://en.wikipedia.org/wiki/Pol.is#:~:text=pol.is%20has%20been%20%22one%20of%20the%20key%20parts%22%20of%20vTaiwan": {
     "checked": "2026-08-10",
     "content_hash": "79b46a911c87fe2b25cfa9f590ce99eeaa846b07cce6784797660dda8e2a7823",
     "etag": null,
     "last_modified": null,
     "verified": {
-      "dc01a1b70dd9136dc22f3aaeeb6f9f2b8e1831c1394dcd5fae604ce6f87ef1c8": false
+      "64049a89562a8859c8d7d48918d4ff843493e0205ed930beb778f22740ae5119": true
     }
   },
   "https://en.wikipedia.org/wiki/Pol.is#:~:text=was%20founded%20by%20Colin%20Megill%2C%20Christopher%20Small%2C%20and%20Michael%20Bjorkegren": {
@@ -728,7 +737,7 @@
   },
   "https://europeandemocracyhub.epd.eu/exploring-worldwide-democratic-innovations-taiwan/": {
     "checked": "2026-08-10",
-    "content_hash": "656bd563d40106573ea169c21ff8062a5112a424c35e109a3d8cfaa803bb1008",
+    "content_hash": "41c1b92ab850b001a596a8276d8c56632dcb8973e48a4426e781a03ee24b2b02",
     "etag": null,
     "last_modified": null,
     "verified": {
@@ -737,7 +746,7 @@
   },
   "https://find-and-update.company-information.service.gov.uk/company/10652142": {
     "checked": "2026-08-10",
-    "content_hash": "88442be29c35a466d716bc52e0eac6f4814fb547d28b52b49f92cef6a147966f",
+    "content_hash": "e4098b213e1e39ce073b3370734971eb37a432eb060a71060f8be74e99c7f70b",
     "etag": null,
     "last_modified": null,
     "verified": {
@@ -746,7 +755,7 @@
   },
   "https://foro.org.co/nosotros/quienes-somos/#:~:text=creada%20en%201982": {
     "checked": "2026-08-10",
-    "content_hash": "20417c87c2bdf3cdee3a9b899b7e1badff6cb16954d8b19f088abcdfb119002d",
+    "content_hash": "9ddf1db5a7e6741b4a818163d2d1f3d421e7fdc2660d28cc595eaab854fb7080",
     "etag": null,
     "last_modified": null,
     "verified": {
@@ -755,16 +764,16 @@
   },
   "https://fr.wikipedia.org/wiki/AfricTivistes": {
     "checked": "2026-08-10",
-    "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "content_hash": "afb91c4e572c3db02e223ad17f4a24b9c9ada4e476ee81935a2f8a0b1c1cc414",
     "etag": null,
     "last_modified": null,
     "verified": {
-      "aa02804f9b03b04becd68c1fb447c92d34ad98571b605ab024cd52ecbf790b6d": false
+      "aa02804f9b03b04becd68c1fb447c92d34ad98571b605ab024cd52ecbf790b6d": true
     }
   },
   "https://icodrops.com/horizon-state/": {
     "checked": "2026-08-10",
-    "content_hash": "acd8d4a9f50b97a73ae25bb5df0dcd27d56da13902346b9ac8710415fc267e36",
+    "content_hash": "bed2282c5dc169a9d9b486041b89d81e0708a6fb316dd43e28e76a8ee9119a61",
     "etag": null,
     "last_modified": null,
     "verified": {
@@ -773,7 +782,7 @@
   },
   "https://memo98.sk/about-us": {
     "checked": "2026-08-10",
-    "content_hash": "ab77f58aa0d0ad3e6f5185a9299d9d117c3a7c005ed7949751e7e0eaf49e1415",
+    "content_hash": "a1be28936e3f209d4b1a3ffb1d2645d72b6213c2d6b7186a9ae7a65b1721de0b",
     "etag": null,
     "last_modified": null,
     "verified": {
@@ -781,18 +790,9 @@
       "b7160fdc39af779c64cd739d59a3e3d91343083f3f1aaae928d29273d36bcdc6": true
     }
   },
-  "https://mosaiclab.com.au/about": {
-    "checked": "2026-08-10",
-    "content_hash": "984bd8b8fc6e79a875b73b5f63b40bda6f839a412598db1f1ac1d36bf564ae74",
-    "etag": "W/\"db9010b3ffd1e654a948d613d0796d31\"",
-    "last_modified": null,
-    "verified": {
-      "60b4aca4fd03f8119b067c96bc40ccf658eff65ba6698ed2d00bb3d8a4063242": false
-    }
-  },
   "https://mosaiclab.com.au/contributions-to-the-field": {
     "checked": "2026-08-10",
-    "content_hash": "2630df4e2c1c182215f6de1e1dcade386c6c499c68f05bfa904d8322ec4f05ab",
+    "content_hash": "ea6ae3481d1bce5b7a98db9a0f8016668d758042c2cd530fb0a46afbdb927eb1",
     "etag": "W/\"e72765fa3c7d775ffeba3592e8abf1ed\"",
     "last_modified": null,
     "verified": {
@@ -801,16 +801,25 @@
   },
   "https://mosaiclab.com.au/nicole-hunter": {
     "checked": "2026-08-10",
-    "content_hash": "19b37d8bfc67e953c8fcc93c0d66777e2ddd6c38e7ad1e656233dda1d81122e5",
+    "content_hash": "6ce1e333274ed2d2104b3b5612681620122a2268a9ff1ec062d919c9cd275826",
     "etag": "W/\"5249c26e8aa1a37bacf5cf30c2f19815--gzip\"",
     "last_modified": null,
     "verified": {
       "d410460b6473e7c213f9044e79b05d5451f0b0ea431bf65537048e7894506253": true
     }
   },
+  "https://mosaiclab.com.au/the-big-book": {
+    "checked": "2026-08-10",
+    "content_hash": "49efab6b52f5fba4d87ece00be68b6e769d546b1fc8fcdb3ecce0fdc258ee209",
+    "etag": "W/\"6fe99985a881efd688f76fc0fb4812eb\"",
+    "last_modified": null,
+    "verified": {
+      "db84e2207fad582f7b14ddd8b2089764efe415a4478ed5c9b63266800412e00f": true
+    }
+  },
   "https://newvote.org/the-institute": {
     "checked": "2026-08-10",
-    "content_hash": "96b68c2b9ab891ebf2f2156259a5a909ea0490cd627a8c85a97c932deee8a3f1",
+    "content_hash": "55ffdf12458fd855ef14bbdae31842edda91a287f3406b97b74027eabe2c9c83",
     "etag": "W/\"40bbf7b1d602ef9563eea4e38b88db77\"",
     "last_modified": null,
     "verified": {
@@ -820,16 +829,16 @@
   },
   "https://oaf.org.au/2014/10/21/they-vote-for-you/": {
     "checked": "2026-08-10",
-    "content_hash": "43c726c851b62d3fd840bc56551c3d35375edc1b3b52c6c1837acac4d8598d11",
+    "content_hash": "e085e38f4d631023a00ac677c6a68490dba5a4796a30d44ac8906b7ef52ab138",
     "etag": null,
-    "last_modified": null,
+    "last_modified": "Mon, 10 Aug 2026 16:27:10 GMT",
     "verified": {
-      "ab27101c5e6d84d5358e50f9ef0d57195c1a8d5ec9129ea505c4195fb890a1e5": false
+      "b0fd8227f28a6f87992769921772f646b74777e4904d50a3119b254a7b6d22bd": true
     }
   },
   "https://participedia.net/method/oregon-citizens-initiative-review": {
     "checked": "2026-08-10",
-    "content_hash": "c98f48a9c20f052f0e8d1abbe49a9e165c88f63c30dd4f22ac6beef3236ab5f4",
+    "content_hash": "bfcaeaecdd3215e1cda853b8a3fa709ac525252bd64482726f95e0213ab7d90d",
     "etag": null,
     "last_modified": null,
     "verified": {
@@ -838,7 +847,7 @@
   },
   "https://register-of-charities.charitycommission.gov.uk/en/charity-search/-/charity-details/4027987": {
     "checked": "2026-08-10",
-    "content_hash": "3f64a16bd553320388d2149a89c9c66ba6d58a09571d3f14a4e361772e38313c",
+    "content_hash": "75a5739adfc37883711106c633bdc318d10a2a4ac0962baba804fd9065875a64",
     "etag": null,
     "last_modified": null,
     "verified": {
@@ -847,7 +856,7 @@
   },
   "https://stocznia.org.pl/en/about-shipyard/": {
     "checked": "2026-08-10",
-    "content_hash": "94aac6dc67221b5cf93b8492532ae81fa549d9429831f270d19d0a2b038416a7",
+    "content_hash": "d832c4df17479413a45935528d6c4dda33dc1f28f28956a750a910e01bbda9b4",
     "etag": null,
     "last_modified": null,
     "verified": {
@@ -856,7 +865,7 @@
   },
   "https://www.afrobarometer.org/about/history/": {
     "checked": "2026-08-10",
-    "content_hash": "f9889d1253f2eeffa15012d868bdff553569e666609391386de631e23fdb14b6",
+    "content_hash": "1e2e6d5306c8e61c870307a56cc58b82f3105ac879d2e81e56c0bdfe4b9cabd5",
     "etag": null,
     "last_modified": null,
     "verified": {
@@ -865,7 +874,7 @@
   },
   "https://www.cddwestafrica.org/about-us/": {
     "checked": "2026-08-10",
-    "content_hash": "590faf4cd412abe6e33824de940eb744c45a999a49d6d6c5cab04114d3d2c51f",
+    "content_hash": "49918968febec998b5e826d50c383b6de4f3e013f58ea6f60902218eeeba2a35",
     "etag": null,
     "last_modified": null,
     "verified": {
@@ -878,22 +887,22 @@
     "etag": "\"a6233ce1646ff59ae5ca04cdafdb6a5e-ssl-df\"",
     "last_modified": null,
     "verified": {
-      "8245d3dec6ab036ed84faed2adbb0025e5ada2fb624082f0a8cc896f4f026468": false
+      "0b9471be8f65922f16b7dc2b3cb12858e60cbdd537443c4069a88df8c6d3eb47": true
     }
   },
   "https://www.code4japan.org/aboutus": {
     "checked": "2026-08-10",
-    "content_hash": "4f64508e73053224ee9fffa1d0bd81e287de2c7bed0022971682bc9f841b1bc1",
-    "etag": "W/\"3cbaf5da30778b4334d6efceffd4252e\"",
+    "content_hash": "8f8131d4a07042bba1bfca8426001d87a7b1951651f25fbe08c8ecfbd73b902a",
+    "etag": "W/\"efe54792b74279ed2e9c584bcca8848f\"",
     "last_modified": null,
     "verified": {
-      "51dd1f1f0c61d98e3dcc87a5582f8db5c27493c8dd48ecd53145ed98514cc617": false
+      "da27dacd83bcf74aa79100c2a63503c93e8217cf7c6d094e3842e322ffe289f3": true
     }
   },
   "https://www.crossroadsconversation.com.au/events/on-the-importance-of-conversation-for-the-very-idea-of-a-common-humanity": {
     "checked": "2026-08-10",
-    "content_hash": "c25ec4a4670ff3930862c1f1b4273d6781b51afdb8a11b441ba3fd28560a2840",
-    "etag": "W/\"1768b3640f23b930b7262e91489f039e\"",
+    "content_hash": "21fb21c058564ff1b6a3c5cf481da37be8f530bd8f5a445115da7a19aa35c730",
+    "etag": "W/\"1768b3640f23b930b7262e91489f039e--gzip\"",
     "last_modified": null,
     "verified": {
       "b28e891abc8fa8226aecb38a3cf1abe9f0c0836d3b8071fe41fa424a4079c420": true
@@ -901,7 +910,7 @@
   },
   "https://www.democracy-international.org/events": {
     "checked": "2026-08-10",
-    "content_hash": "78033786906089a40b4a10905f08e990ff2cb89d88c55250bec28ecb29b0a16b",
+    "content_hash": "004b4b57f454e66e401945bef1dd3a17e7760a16f0e6c62e0a3255f569c202a4",
     "etag": "\"1786369836-gzip\"",
     "last_modified": "Mon, 10 Aug 2026 13:50:36 GMT",
     "verified": {
@@ -911,24 +920,24 @@
   "https://www.designingopendemocracy.com/blog/2021/08/07/podcast-catching-up-with-adam-jacoby-founder-of-mivote/": {
     "checked": "2026-08-10",
     "content_hash": "db44dc916f2eedb556a9828abbadd083593bd62a3ef18bbf06d5939671aa6af5",
-    "etag": "W/\"6a79eb5a-381f8\"",
-    "last_modified": "Mon, 10 Aug 2026 15:16:42 GMT",
+    "etag": "W/\"6a79f55c-381f8\"",
+    "last_modified": "Mon, 10 Aug 2026 15:59:24 GMT",
     "verified": {
       "7eedd69a656a150f87f8aee471946a6d238d99f28534cdf4dcc46e34fe7203e5": true
     }
   },
   "https://www.fidemocracy.org/news": {
     "checked": "2026-08-10",
-    "content_hash": "fadac94da9c0a26b1a0c639c1c23a794c5d08259af968e2def8143c1c3652a97",
-    "etag": "W/\"90abc9caa4c5415d1c67b7bed11e1d54\"",
+    "content_hash": "cc4589bc608d391a344297f11c904b1795529a94c25f629ae30c8dd67cf84ed3",
+    "etag": "W/\"15c670a27ff5966a6049c66dd216e873\"",
     "last_modified": null,
     "verified": {
-      "abd88ce88d5b83a990787cd3dcfb9731a7b86c8fe28a242bfab09a6d93105bd7": false
+      "abd88ce88d5b83a990787cd3dcfb9731a7b86c8fe28a242bfab09a6d93105bd7": true
     }
   },
   "https://www.g1000.org/en/cases/g1000-citizens-summit": {
     "checked": "2026-08-10",
-    "content_hash": "0931b08d41fd8e1f970632430ecfb78ed22929fb4d7b8ee5c1c4a63bd4e04033",
+    "content_hash": "0c86a1751aa9564c26faebd5f72733f0a3eb8336fa4130e8f919cff598c83520",
     "etag": "W/\"1786122471\"",
     "last_modified": "Fri, 07 Aug 2026 17:07:51 GMT",
     "verified": {
@@ -937,7 +946,7 @@
   },
   "https://www.g1000.org/en/cases/permanent-citizen-dialogue-ostbelgien": {
     "checked": "2026-08-10",
-    "content_hash": "fa11345faeb184cac12f20d19ac280fc05d63dbf8ad9bd41116050bb916a89ad",
+    "content_hash": "1a2bc6a2b3262be7968ee4035db5ba0c85556898341a52156f753ec9e2e4c319",
     "etag": "W/\"1786126362\"",
     "last_modified": "Fri, 07 Aug 2026 18:12:42 GMT",
     "verified": {
@@ -946,7 +955,7 @@
   },
   "https://www.govtech.com/civic/new-global-civic-tech-group-emerges-from-the-omidyar-group.html": {
     "checked": "2026-08-10",
-    "content_hash": "7d6d05cadd7325dfb04b97727735b4ba1454adae4eb17e748e419eb9e1fe10df",
+    "content_hash": "57b6ebecb3cd2bb28a55cdd557c5ac782fc545f697aa3571752a76b116a656ed",
     "etag": null,
     "last_modified": null,
     "verified": {
@@ -955,16 +964,16 @@
   },
   "https://www.influencewatch.org/non-profit/healthy-democracy/": {
     "checked": "2026-08-10",
-    "content_hash": "d21b159255a1e0843edbbfc2423d3a4b6461912ab763fec9225faa3b91f1a6d1",
+    "content_hash": "9761fc82c334158d760dd4d78e666ea78709df978839a876a967f21e2386dd30",
     "etag": null,
     "last_modified": "Mon, 10 Aug 2026 01:07:11 GMT",
     "verified": {
-      "c6ff3f8484e653bab252936e02cb1ce1544d79cc51f7e5c6ecbd9589981f2e16": false
+      "4573f385afff1cc170214c11411c14f97f322d84a4e2460029e034efa6da739e": true
     }
   },
   "https://www.lcps-lebanon.org/en/about": {
     "checked": "2026-08-10",
-    "content_hash": "cee93a2e61f97e27d5eaaa012e8cbb964ec8a20e8143ade6727b1ac133f3e9c3",
+    "content_hash": "dd975117f663ce8ba18b573477029cf47d08ccac09a34233ef1a34b0a12dc05e",
     "etag": null,
     "last_modified": null,
     "verified": {
@@ -973,7 +982,7 @@
   },
   "https://www.masslbp.com/about": {
     "checked": "2026-08-10",
-    "content_hash": "2dbb91307d839309975e5fb085094706e6a4df71c1fba62fd9298deaed33177d",
+    "content_hash": "30f570cb243e29d54875a30d66001ea32d99c86023f2d24184ab9c10d3e91c7e",
     "etag": "W/\"ae422488b4588b8f51dfb3f4f5aeccc9\"",
     "last_modified": null,
     "verified": {
@@ -982,16 +991,16 @@
   },
   "https://www.masslbp.com/work-panels": {
     "checked": "2026-08-10",
-    "content_hash": "fb9e77bbfdbf90578ea56e49963001d293618da90cda44fae846fcf4051e4e12",
+    "content_hash": "495d312d3d675bbf4d63c94cf81267b2f34f798c1ebb37cd3a1b93f50f968be8",
     "etag": "W/\"fd523db9fce398b089d072514195ccda\"",
     "last_modified": null,
     "verified": {
-      "77d119c12d4de55c9b3bf756a1f8ce2ecfb2a547c568e59b47a8e9d41277b9c7": false
+      "201ce8f32676a307e7c15c13df5f831d0246fafd2b72e9c02cfb51208aac4e13": true
     }
   },
   "https://www.mmzy.org.cn/mmgk/jianjie/default.aspx": {
     "checked": "2026-08-10",
-    "content_hash": "10ecb52ade04fd3daed12f521367aa60c0bc0563535fbb8adb53b33f0ffa414e",
+    "content_hash": "9f6e33a2b1dde88f0d8936c3d521ec75234ebc9c0b1f4bf55309f40091c5ea8d",
     "etag": null,
     "last_modified": null,
     "verified": {
@@ -1000,56 +1009,56 @@
   },
   "https://www.nesta.org.uk/feature/new-radicals-2016/democracy-club/": {
     "checked": "2026-08-10",
-    "content_hash": "3c699fd46c220fd2f636a451bc57341209224fd1e59c3d291da887eeff75228c",
+    "content_hash": "a95b01d0bcad02577cc04d162fae4073e9bfefd45733f4b1de04bedb232e061f",
     "etag": null,
-    "last_modified": "Mon, 10 Aug 2026 15:21:44 GMT",
+    "last_modified": "Mon, 10 Aug 2026 16:25:18 GMT",
     "verified": {
-      "c9756dbd214cd859cd96db65a14cf6963c0651c2d7b6715b745b112ba7d2a7c1": true,
+      "cc28d4301a6779773f43856e1f6c111bba0055dab43f79dedca4a22282f800e8": true,
       "ffd4e132cb12dcddf7e4729e259aba3d7afa6a32ac1281a22178c47b6624e8ca": true
     }
   },
   "https://www.newdemocracy.com.au/history/": {
     "checked": "2026-08-10",
-    "content_hash": "8f3200aa8e7bed16d5dc3f798aac52ee4fc496ceacc8525b18405f156fa5c189",
+    "content_hash": "a351b77f3a3e3e6f4e5c003321463ea0fa4accaf4088e0bf50225ab32aad0c34",
     "etag": null,
     "last_modified": null,
     "verified": {
-      "a3458de5f3320096d8ea09a5d6a7e296f3b0f068141781d46e7aa320c1cb2f7f": false,
+      "4a36d9c43ada44cee83a012dad678849759d7496cc9db875a8a847aaacd40985": true,
       "cc111445acd794c512bc7ff165906f707e6c6bcb43b82accd169ffeba419a4f1": true,
-      "e4795e9e0cbaf2b65cc5c3756c7a4c99e2d00c2a2d8876ee5a5f1dd492fe5000": false,
+      "e84567dc0ad975cc7a82a955c502f06d673cc33abf48b5c40cc77a70d2a89af5": true,
       "fd7fd78b01b81dcb67929ca2f73152ae1d914c56f10166323ab0e23955e62b91": true
     }
   },
   "https://www.openaustraliafoundation.org.au/2009/07/07/announcing-the-openaustralia-foundation/": {
     "checked": "2026-08-10",
-    "content_hash": "a9d7b87f5a0a7e71a2ed0dd26bb369474bb068da7b57b967a4b36a026e75d9fb",
+    "content_hash": "4b220900fd1861f6dab5a6eb32909a85f69d5a6d06afe90749e11374f8470c4a",
     "etag": null,
-    "last_modified": null,
+    "last_modified": "Mon, 10 Aug 2026 16:27:06 GMT",
     "verified": {
       "d41b7486e698b6e2534cc87c9f03ded6aa77bc4bf878892def4cf010f696ef6a": true
     }
   },
   "https://www.openaustraliafoundation.org.au/2009/12/21/launching-our-new-website-planning-alerts/": {
     "checked": "2026-08-10",
-    "content_hash": "170cfe5567598e296cc27570bd1983dcd12b799f9bdf0493e2a95576874e3030",
+    "content_hash": "c9f719618568c89f083445b6b917a97a54356f21f3eb6610a1da0bb3769426ab",
     "etag": null,
-    "last_modified": null,
+    "last_modified": "Mon, 10 Aug 2026 16:27:09 GMT",
     "verified": {
       "23b301288596e31a592686706ca160feed6746546b7a670afa1789a38657fd7b": true
     }
   },
   "https://www.peoplepowered.org/events": {
     "checked": "2026-08-10",
-    "content_hash": "7d851cc780b0d31e0da88e2a4e88237681a4ba0d7bf5e232686c0df860f3c189",
+    "content_hash": "5fbddb3b165aabf3beb032d190abb0def9d753e0496083f682ed3fbf381c8642",
     "etag": "W/\"157b00df5c69f946f36a22322962191c--gzip\"",
     "last_modified": null,
     "verified": {
-      "e8187bbca5d07d8483d45cc1054ef06bccd8169b63fee1f13b73627bfc91e05c": false
+      "e8187bbca5d07d8483d45cc1054ef06bccd8169b63fee1f13b73627bfc91e05c": true
     }
   },
   "https://www.transparency.org.nz/our-story": {
     "checked": "2026-08-10",
-    "content_hash": "13993df29f1acfb8ba4b1420a47dc4077565f10e09139aaf6e522f25bcb9fe0b",
+    "content_hash": "697e271e520d29f0fc3599d10c92e3f60051952d20e519414b7d39731dab0872",
     "etag": null,
     "last_modified": "Fri, 07 Aug 2026 20:01:37 GMT",
     "verified": {
@@ -1058,8 +1067,8 @@
   },
   "https://www.ycombinator.com/companies/democracy-earth": {
     "checked": "2026-08-10",
-    "content_hash": "02a372bc720a3949599e1b0c2b9dce8929716f3f2007d72332f5d8ea9b9f3af5",
-    "etag": "W/\"8e42cdb9bd7760eb685d40cd51a74441\"",
+    "content_hash": "8e9dbf2776d7337172bf62783ebdd332a1537d9df90a4cf2ea60fab90958bee1",
+    "etag": "W/\"d9eec46b7fb9888abd1d0aee123a9321\"",
     "last_modified": null,
     "verified": {
       "5e9fae9522d36cf4b6294284c14d30313ede7a65c860625a91eb93f5b156991c": true
