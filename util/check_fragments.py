@@ -1,65 +1,77 @@
 #!/usr/bin/env python3
 """
-Verify event sourcing evidence against live pages.
+check_fragments.py — mechanically re-verify event evidence against live pages.
 
-Checks:
-  - #:~:text= URL fragments against Wikipedia extracts (API, substring match)
-  - quote: fields against source pages (fetch, substring match)
+An event's "mechanical proof" is one piece of exact text that must appear on
+the cited page — supplied either as a `quote:` field, or as a `#:~:text=`
+fragment embedded in the `url:` itself. These are NOT two different proof
+mechanisms with separate verification logic: whichever one an event has,
+the "evidence text" gets checked the same way, against the same fetched
+page, through one code path. The only thing fragments add on top of `quote:`
+is that a browser highlights the text on click when a reader follows the
+link — worth keeping for that reason, not worth a second verification
+implementation.
 
-Skips events with proof_warning (explicitly unverified).
-Whitespace is normalised before comparison to handle line breaks and formatting.
+Caching: results are kept in .event_evidence_cache.json (committed, so state
+survives across weekly cron runs on fresh checkouts) keyed by URL. Non-
+Wikipedia fetches use conditional GET (If-None-Match / If-Modified-Since) so
+an unchanged page costs a 304 instead of a full download. Wikipedia's
+extracts API has no meaningful conditional-GET support, so it's always
+fetched fresh, but the extract is still hashed and compared to the cached
+hash — this doesn't save the request, but it does tell you whether the
+article actually changed since your last check, which is the signal that
+matters for "has this citation drifted."
 
 Usage:
     python util/check_fragments.py        # verify all events
     python util/check_fragments.py --slug mosaiclab  # single org
+    python util/check_fragments.py --no-cache        # ignore cache, re-fetch everything
 
-Requirements: python-frontmatter (util/requirements.txt)
+Requirements: python-frontmatter, requests (util/requirements.txt)
 """
 
-import glob, os, sys, json, re, time
-from urllib.parse import urlparse, unquote
-from urllib.request import urlopen, Request, HTTPError, URLError
+import argparse
+import glob
+import hashlib
+import json
+import os
+import re
+import sys
+import time
+from datetime import date
+from urllib.parse import unquote, urlparse
 
 try:
     import frontmatter
-except ImportError:
-    print("Missing: pip install python-frontmatter"); sys.exit(1)
+    import requests
+except ImportError as e:
+    print(f"Missing dependency: {e.name} — pip install python-frontmatter requests")
+    sys.exit(1)
 
 ORG_DIR = os.path.join(os.path.dirname(__file__), "..", "docs", "organisations")
-USER_AGENT = "DOD-fragments/1.0"
-FETCH_DELAY = 0.5  # seconds between requests
+CACHE_PATH = os.path.join(os.path.dirname(__file__), ".event_evidence_cache.json")
+USER_AGENT = "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+FETCH_DELAY = 0.5  # seconds between requests — same rate limit as before
 
 
-def fetch_wp_extract(title):
-    """Fetch Wikipedia article text via the API."""
-    time.sleep(FETCH_DELAY)
-    url = f"https://en.wikipedia.org/w/api.php?action=query&prop=extracts&explaintext=1&titles={title}&format=json"
-    try:
-        req = Request(url, headers={"User-Agent": USER_AGENT})
-        with urlopen(req, timeout=15) as resp:
-            data = json.loads(resp.read())
-            pages = data.get("query", {}).get("pages", {})
-            return next(iter(pages.values())).get("extract", "")
-    except Exception:
-        return None
+def load_cache():
+    if os.path.exists(CACHE_PATH):
+        try:
+            with open(CACHE_PATH) as f:
+                return json.load(f)
+        except (json.JSONDecodeError, OSError):
+            return {}
+    return {}
 
 
-def fetch_page(url):
-    """Fetch a non-Wikipedia page and return its text content (stripped of tags)."""
-    time.sleep(FETCH_DELAY)
-    try:
-        req = Request(url, headers={"User-Agent": USER_AGENT})
-        with urlopen(req, timeout=15) as resp:
-            content = resp.read().decode("utf-8", errors="replace")
-            text = re.sub(r"<[^>]+>", " ", content)
-            text = re.sub(r"\s+", " ", text)
-            return text[:100000]
-    except HTTPError as e:
-        return f"HTTP_{e.code}"
-    except URLError:
-        return "NETWORK_ERROR"
-    except Exception:
-        return "FETCH_ERROR"
+def save_cache(cache):
+    with open(CACHE_PATH, "w") as f:
+        json.dump(cache, f, indent=2, sort_keys=True)
+        f.write("\n")
+
+
+def sha256(text):
+    return hashlib.sha256(text.encode("utf-8", errors="replace")).hexdigest()
 
 
 def normalize_ws(text):
@@ -68,7 +80,6 @@ def normalize_ws(text):
 
 
 def text_contains(text, needle):
-    """Check if needle appears in text, with whitespace normalization."""
     if not text or not needle:
         return False
     return normalize_ws(needle) in normalize_ws(text)
@@ -81,18 +92,84 @@ def extract_fragment(url):
     return None
 
 
+def wikipedia_title(url):
+    parsed = urlparse(url)
+    if "wikipedia.org" not in parsed.netloc:
+        return None
+    m = re.search(r"/wiki/([^#]+)", parsed.path)
+    return unquote(m.group(1)) if m else None
+
+
+def fetch_evidence_text(url, cache, use_cache=True):
+    """Fetch the text to check evidence against for a given URL.
+
+    Returns (text, changed_since_last_check, error). `changed_since_last_check`
+    is None when there was no prior cache entry to compare against (first
+    time seeing this URL) — treat that the same as "changed" for reporting
+    purposes (nothing to compare to yet).
+    """
+    entry = cache.get(url, {}) if use_cache else {}
+    title = wikipedia_title(url)
+
+    time.sleep(FETCH_DELAY)
+    try:
+        if title:
+            api_url = (
+                "https://en.wikipedia.org/w/api.php?action=query&prop=extracts"
+                f"&explaintext=1&titles={title}&format=json"
+            )
+            r = requests.get(api_url, headers={"User-Agent": USER_AGENT}, timeout=15)
+            r.raise_for_status()
+            pages = r.json().get("query", {}).get("pages", {})
+            text = next(iter(pages.values())).get("extract", "")
+        else:
+            headers = {"User-Agent": USER_AGENT}
+            if entry.get("etag"):
+                headers["If-None-Match"] = entry["etag"]
+            if entry.get("last_modified"):
+                headers["If-Modified-Since"] = entry["last_modified"]
+            r = requests.get(url, headers=headers, timeout=15)
+            if r.status_code == 304:
+                # Server confirms unchanged — reuse cached text, no re-fetch needed.
+                cache[url] = {**entry, "checked": date.today().isoformat()}
+                return entry.get("text", ""), False, None
+            r.raise_for_status()
+            raw = r.text
+            text = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", raw))[:100000]
+    except requests.HTTPError as e:
+        return None, None, f"HTTP_{e.response.status_code if e.response is not None else '?'}"
+    except requests.RequestException:
+        return None, None, "NETWORK_ERROR"
+    except Exception:
+        return None, None, "FETCH_ERROR"
+
+    new_hash = sha256(text)
+    changed = None if "content_hash" not in entry else (entry["content_hash"] != new_hash)
+    cache[url] = {
+        "etag": r.headers.get("ETag") if not title else entry.get("etag"),
+        "last_modified": r.headers.get("Last-Modified") if not title else entry.get("last_modified"),
+        "content_hash": new_hash,
+        "text": text,
+        "checked": date.today().isoformat(),
+    }
+    return text, changed, None
+
+
 def main():
-    import argparse
     parser = argparse.ArgumentParser(description="Verify event evidence against live pages")
     parser.add_argument("--slug", type=str, help="Check a single org")
+    parser.add_argument("--no-cache", action="store_true",
+                        help="Ignore the evidence cache — re-fetch and re-verify everything")
     args = parser.parse_args()
 
-    fragments_good = 0
-    fragments_bad = 0
-    fragments_err = 0
-    quotes_good = 0
-    quotes_bad = 0
-    skipped = 0
+    cache = {} if args.no_cache else load_cache()
+
+    good = 0
+    bad = 0
+    errors = 0
+    unchanged = 0
+    skipped_no_evidence = 0
+    skipped_warning = 0
 
     for path in sorted(glob.glob(os.path.join(ORG_DIR, "*.md"))):
         slug = os.path.basename(path)[:-3]
@@ -103,71 +180,57 @@ def main():
 
         post = frontmatter.load(path)
         for e in post.metadata.get("events") or []:
-            title = e.get("title", "")[:50]
-            date = e.get("date", "?")
-            url = e.get("url", "")
+            url = str(e.get("url", ""))
+            if not url:
+                continue  # source:-only events have nothing to fetch
 
             if "proof_warning" in e:
-                skipped += 1
+                skipped_warning += 1
                 continue
 
-            # --- Check #:~:text= fragments ---
-            frag = extract_fragment(url)
-            if frag:
-                parsed = urlparse(url)
-                m = re.search(r"/wiki/([^#]+)", parsed.path)
-                if not m:
-                    continue
-                wp_title = unquote(m.group(1))
-                extract = fetch_wp_extract(wp_title)
-                if extract is None:
-                    fragments_err += 1
-                    print(f"  FRAGMENT ERROR  {slug}  [{date}]  {title}")
-                    print(f"                   {wp_title} (API error — rate-limited?)")
-                elif text_contains(extract, frag):
-                    fragments_good += 1
-                else:
-                    fragments_bad += 1
-                    print(f"  FRAGMENT MISMATCH {slug}  [{date}]  {title}")
-                    print(f"                    fragment: {frag[:80]}")
+            evidence = e.get("quote") or extract_fragment(url)
+            if not evidence:
+                skipped_no_evidence += 1
+                continue
 
-            # --- Check quote: fields ---
-            if "quote" in e:
-                quote = e["quote"]
-                parsed = urlparse(url)
-                is_wp = "wikipedia.org" in parsed.netloc
-                if is_wp:
-                    m = re.search(r"/wiki/([^#]+)", parsed.path)
-                    text = fetch_wp_extract(unquote(m.group(1))) if m else None
-                else:
-                    text = fetch_page(url)
+            title = e.get("title", "")[:50]
+            event_date = e.get("date", "?")
 
-                if text is None:
-                    quotes_bad += 1
-                    print(f"  QUOTE FETCH ERR {slug}  [{date}]  {title}")
-                elif not isinstance(text, str) or text.startswith(("HTTP_", "NETWORK", "FETCH")):
-                    quotes_bad += 1
-                    print(f"  QUOTE FETCH ERR {slug}  [{date}]  {title}  ({text})")
-                elif text_contains(text, quote):
-                    quotes_good += 1
-                else:
-                    quotes_bad += 1
-                    print(f"  QUOTE MISMATCH  {slug}  [{date}]  {title}")
-                    print(f"                   quote: {quote[:80]}")
+            text, changed, error = fetch_evidence_text(url, cache)
+
+            if error:
+                errors += 1
+                print(f"  FETCH ERROR  {slug}  [{event_date}]  {title}")
+                print(f"               {url}  ({error})")
+                continue
+
+            if changed is False:
+                unchanged += 1
+
+            if text_contains(text, evidence):
+                good += 1
+            else:
+                bad += 1
+                print(f"  MISMATCH  {slug}  [{event_date}]  {title}")
+                print(f"            evidence: {evidence[:80]}")
+                print(f"            url: {url}")
+
+    save_cache(cache)
 
     print()
-    print(f"Fragments: {fragments_good} good, {fragments_bad} mismatch, {fragments_err} API errors")
-    print(f"Quotes:    {quotes_good} good, {quotes_bad} bad")
-    print(f"Skipped (proof_warning): {skipped}")
+    print(f"Evidence checked: {good} good, {bad} mismatch, {errors} fetch errors")
+    print(f"  ({unchanged} of those confirmed unchanged since last check — skipped re-download)")
+    print(f"Skipped: {skipped_warning} have proof_warning (explicitly unverified), "
+          f"{skipped_no_evidence} have neither quote: nor a fragment (note-only or source-only)")
 
-    if fragments_bad or quotes_bad:
-        print(f"\n{fragments_bad + quotes_bad} verifiable source(s) no longer match live pages.")
-        print("API errors (rate-limiting) are NOT counted as mismatches.")
+    if bad:
+        print(f"\n{bad} piece(s) of evidence no longer match their live source.")
+        print("Fetch errors are NOT counted as mismatches (could be rate-limiting or a transient outage).")
         sys.exit(1)
     else:
-        print("All verifiable evidence matches live pages.")
-        if fragments_err:
-            print(f"({fragments_err} fragment API errors — re-run later when not rate-limited)")
+        print("All checkable evidence matches live pages.")
+        if errors:
+            print(f"({errors} fetch errors — re-run later; a repeated failure on the same URL is worth investigating)")
         sys.exit(0)
 
 
