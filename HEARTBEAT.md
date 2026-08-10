@@ -78,7 +78,11 @@ anchor the maintenance section of the post. Saving a snapshot now makes Step
 **Note on RSS/scrape probes:** `check_rss.py` and `scrape_news.py` are handled by
 the weekly GitHub Actions cron job (`.github/workflows/heartbeat-probes.yml`) —
 do not run them during a heartbeat session. The cron owns automated data collection;
-this brief owns verification and judgment.
+this brief owns verification and judgment. The same cron also runs
+`check_fragments.py` and `check_event_urls.py` report-only (they don't write
+anything, so there's nothing for this brief to skip) — worth a glance at that
+workflow's run log occasionally for dead/blocked event citations or a
+Wikipedia fragment that's drifted out of sync with the live article.
 
 ### 2. Work the staleness queue
 

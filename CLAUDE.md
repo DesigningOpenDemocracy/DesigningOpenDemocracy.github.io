@@ -419,6 +419,34 @@ These are linked from the bottom of the org index table for researcher download.
   ```
   Probes 23 common feed URL paths per site. For real feeds, writes `activity.rss` with latest post date and title. For sitemaps (fallback), writes `activity.sitemap` with `<lastmod>` date. When `ics_feed:` is set, also fetches the iCal calendar and writes `activity.ical` with the most recent past event date. Never overwrites a newer existing entry for the same source.
 
+- `util/check_event_sourcing.py` — validates and scores every org's `events:` entries. Local/offline (no network), part of both `make build`'s pre-push checklist and CI (`.github/workflows/build.yml`).
+  ```
+  python util/check_event_sourcing.py                 # check all orgs, hard-gate on unsourced events
+  python util/check_event_sourcing.py --slug mosaiclab # single org
+  python util/check_event_sourcing.py --calculate      # fill in proof_level on events that lack it
+  python util/check_event_sourcing.py --recalculate    # recompute proof_level on ALL events, overwriting
+  ```
+  `proof_level` (high/medium/low) is always *derived* from a single `confidence_score()` function — never hand-computed separately — so a stored value and a freshly recomputed one can't silently disagree; if they do (source signals changed since the value was last set), it's printed as `STALE PROOF_LEVEL` and `--recalculate` fixes it. Hard gate: every event needs a `url:` or `source:`, or the script exits 1. Soft warnings (printed, don't fail the build): vague `source:` text under 20 chars, "weak" URLs that are homepage-only with no path or fragment, `notable: true` events with neither a `note:` nor a text fragment, and high/medium-proof events whose `url_checked:` is missing or older than 365 days (a nudge to recheck the citation still says what's claimed — pairs with the two scripts below, which actually do that rechecking).
+
+- `util/check_fragments.py` — verifies every `#:~:text=` Wikipedia fragment still matches the live article text (fetches the current extract via the Wikipedia API and checks the fragment text is a substring). This is the only thing that actually rechecks a "high" proof_level citation's continued accuracy — a Wikipedia edit could otherwise silently invalidate a fragment-pinned claim with nothing catching it. Network-dependent, so **not** wired into CI (matches this repo's fetch-then-cache convention of keeping the build offline) — instead runs report-only (`continue-on-error`, doesn't block the RSS/scrape commit) in the weekly `.github/workflows/heartbeat-probes.yml` cron alongside `check_rss.py`/`scrape_news.py`; check that workflow's log for findings.
+  ```
+  python util/check_fragments.py   # exits 1 if any fragment no longer matches
+  ```
+
+- `util/check_event_urls.py` — liveness check for every event's `url:` citation (HEAD request, GET fallback for hosts that don't support HEAD). Catches the failure mode neither of the two scripts above does: a citation URL 404ing, redirecting, or its host disappearing. Distinguishes `DEAD` (404/5xx — a real problem, needs a replacement citation) from `BLOCKED` (403/429 — near-certainly bot/scraper protection, e.g. Cloudflare; several sites in this landscape are confirmed reachable-in-a-browser-but-403-to-scripts, so don't "fix" a BLOCKED citation without manually checking it in a real browser first) from `REDIRECT` (informational — citation still resolves, consider updating the URL to the canonical target). Network-dependent, not in CI; also runs report-only in the same weekly cron as `check_fragments.py` above.
+  ```
+  python util/check_event_urls.py                  # check all event URLs
+  python util/check_event_urls.py --slug mosaiclab  # single org
+  python util/check_event_urls.py --timeout 8       # per-request timeout
+  ```
+
+- `util/reorder_frontmatter.py` — enforces the canonical frontmatter field ordering documented above (org top-level keys, `events:` sub-keys, `activity:` sub-keys). Local/offline, part of `make build`'s pre-push checklist and CI. The pre-commit hook (`.githooks/pre-commit`) runs this automatically on staged org pages, so `--check` failing locally usually means the hook isn't installed — see the note at the top of this file.
+  ```
+  python util/reorder_frontmatter.py            # reorder all org pages in place
+  python util/reorder_frontmatter.py --check    # report only, exit 1 if any need reordering
+  python util/reorder_frontmatter.py --slug mosaiclab  # single org
+  ```
+
 - `util/sync_events.py` — fetches every org's `ics_feed:` and caches *upcoming* events (not just the latest, unlike `check_rss.py`'s activity check above) to `docs/data/events/<slug>.json`, which is committed to the repo and consumed by `hooks/calendar_export.py` at build time. This is the only place the calendar's iCal data touches the network — the build itself never fetches anything, matching the rest of this repo's fetch-then-cache convention.
   ```
   python util/sync_events.py                    # sync all active orgs with ics_feed:

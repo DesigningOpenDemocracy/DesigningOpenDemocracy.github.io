@@ -74,7 +74,7 @@ events:
 - date: '2023-01-01'
   title: Water Works Across 2021-23 named IAP2 Awards Finalist
   source: IAP2 Australasia, Core Values Awards finalists 2023 — mosaiclab.com.au/projects
-  proof_level: low
+  proof_level: medium
   url_checked: '2026-08-10'
   notable: false
 - date: '2025-01-01'

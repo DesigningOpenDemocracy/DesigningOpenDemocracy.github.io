@@ -29,7 +29,7 @@ events:
     and civic engagement in Rwanda
   source: Rwanda Governance Board, organic law establishing RGB — Law No 42/2010 of
     14/12/2010
-  proof_level: low
+  proof_level: medium
   url_checked: '2026-08-10'
   notable: true
 activity:
