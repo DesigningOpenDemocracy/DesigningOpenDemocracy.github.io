@@ -22,7 +22,8 @@ events:
   title: Formally granted cooperative status by Consumer Affairs Victoria, becoming
     Australia's first platform cooperative
   url: https://web.archive.org/web/20190824085752/https://bhive.coop/our-story/
-  note: Consumer Affairs granted us cooperative status. We were now a real thing.
+  note: Consumer Affairs Victoria formally granted bHive cooperative status in 2017,
+    making it Australia's first platform cooperative
   proof_level: medium
   url_checked: '2026-08-10'
   notable: true
