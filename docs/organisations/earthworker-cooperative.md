@@ -26,6 +26,8 @@ events:
   title: Formally became a registered cooperative, rooted in discussions dating to
     the 1970s Green Bans movement
   url: https://theconversation.com/as-the-latrobe-valley-moves-away-from-coal-jobs-could-a-green-workers-cooperative-offer-a-solution-245850
+  note: Earthworker only formally became a cooperative in 2011, though discussions
+    date back to the late 1990s.
   proof_level: medium
   url_checked: '2026-08-10'
   notable: true
@@ -33,6 +35,9 @@ events:
   title: Bought a hot water tank manufacturer in Morwell, becoming the Earthworker
     Energy Manufacturing Cooperative — its flagship worker-owned enterprise
   url: https://theconversation.com/as-the-latrobe-valley-moves-away-from-coal-jobs-could-a-green-workers-cooperative-offer-a-solution-245850
+  note: In 2016, the network bought a hot water tank manufacturer in Morwell and began
+    making their own tanks and solar hot water systems as the Earthworker Energy Manufacturing
+    Co-operative.
   proof_level: medium
   url_checked: '2026-08-10'
   notable: true

@@ -29,6 +29,8 @@ events:
   title: Launched in Canberra by founder Tim Lo Surdo as Australia's first national
     racial-justice advocacy organisation led by people of colour
   url: https://www.devex.com/news/q-a-tim-lo-surdo-on-how-to-bring-a-voice-to-australia-s-communities-of-color-90674
+  note: The launch of Democracy in Colour on July 13 highlighted the ongoing issues
+    faced by indigenous Australians, refugees and all people of color in Australia.
   proof_level: medium
   url_checked: '2026-08-10'
   notable: true

@@ -25,6 +25,8 @@ events:
   title: Launched by journalists Antoinette Lattouf and Jan Fran, with flagship podcast
     "We Used to Be Journos" debuting 2 July 2025 on Acast
   url: https://mumbrella.com.au/antoinette-lattouf-and-jan-fran-launch-ette-media-878817
+  note: Journalists, media personalities and social commentators Antoinette Lattouf
+    and Jan Fran have announced the impending launch of a new venture, Ette Media.
   proof_level: medium
   url_checked: '2026-08-10'
   notable: true

@@ -34,6 +34,9 @@ events:
   title: Convened "Reclaiming Democracy Together" national launch at Melbourne Town
     Hall, marking the 125th anniversary of Australia's first federal parliament
   url: https://www.crossroadsconversation.com.au/events/reclaiming-democracy-together
+  note: 'On 9 May 2026, we gather to launch Reclaiming Democracy Together — an ambitious
+    seven-year project. The aim: to rethink and revitalise democratic life in Australia,
+    and beyond.'
   proof_level: medium
   url_checked: '2026-08-10'
   notable: true

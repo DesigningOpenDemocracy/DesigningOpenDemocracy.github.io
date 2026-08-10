@@ -36,6 +36,9 @@ events:
   title: Do more MLAs make for better government? — Re-imagining Governance for the
     ACT public event, Irish Club Weston
   url: https://canberra-alliance.org.au/events/
+  note: 'Re-imagining Governance for the ACT: A Public Event Series. Expanding the
+    ACT Assembly for better government - is it time? Hosted by CAPaD & Active Democracy
+    Bean.'
   proof_level: medium
   url_checked: '2026-08-10'
   notable: true
@@ -45,6 +48,9 @@ events:
   title: A Citizens' Assembly for the ACT — three-year project to build momentum for
     a trial of citizen input to ACT government
   url: https://canberra-alliance.org.au/events/
+  note: The ACT Standing Citizens' Assembly (SCA) is a three-year project to build
+    momentum for a trial of well facilitated input from Canberrans to government in
+    the ACT.
   proof_level: medium
   url_checked: '2026-08-10'
   notable: true

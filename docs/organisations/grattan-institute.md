@@ -29,7 +29,9 @@ events:
   title: Formally incorporated, backed by the Victorian and Commonwealth governments,
     the University of Melbourne, and BHP/NAB
   url: https://en.wikipedia.org/wiki/Grattan_Institute
-  proof_level: medium
+  note: Grattan Institute was incorporated in November 2008, and its founding chief
+    executive, John Daley, commenced in January 2009.
+  proof_level: high
   url_checked: '2026-08-10'
   notable: true
 activity:

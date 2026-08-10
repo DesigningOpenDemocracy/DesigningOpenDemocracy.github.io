@@ -25,6 +25,9 @@ events:
   title: Launched its first voting tool, "Vote 1 Climate," ahead of the 2022 federal
     election
   url: https://www.buildaballot.org.au/about
+  note: Ahead of the 2022 federal election, we built our first voting tool, Vote 1
+    Climate. It gave voters a simple way to compare climate policies in their electorate
+    before heading to the polls.
   proof_level: medium
   url_checked: '2026-08-10'
   notable: true

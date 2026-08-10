@@ -24,6 +24,8 @@ events:
 - date: '2014-01-01'
   title: Founded by Alvaro Maz, Jacob Lindsay and Daniel Groch
   url: https://portable.com.au/articles/code-for-australia-announcement/
+  note: Code for Australia is a nationwide civic technology organisation founded in
+    2014 by Alvaro Maz, Jacob Lindsay and Daniel Groch.
   proof_level: medium
   url_checked: '2026-08-10'
   notable: true
