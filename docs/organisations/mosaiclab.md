@@ -17,6 +17,11 @@ concepts:
 - citizens-assembly
 - deliberative-democracy
 - consensus-mapping
+events:
+- date: '2017-01-01'
+  notable: true
+  title: Founded by Kimbra White, Nicole Hunter and Keith Greaves
+  url: https://mosaiclab.com.au/nicole-hunter
 location:
   latitude: -37.8136
   longitude: 144.9631
@@ -44,7 +49,7 @@ last_checked: '2026-07-16'
 
 MosaicLab is a professional practice specialising in public deliberation. It designs and runs deliberative engagement processes: citizens' juries, standing panels, deliberative polls, and citizens' assemblies for government clients across Australia.
 
-Since 2014 MosaicLab has delivered over 40 deliberative engagement processes. They have published a comprehensive guide to facilitating public deliberations, drawing on that experience, and co-developed research on how deliberative democracy can be embedded in decision-making organisations.
+Since 2017 MosaicLab has delivered over 40 deliberative engagement processes. They have published a comprehensive guide to facilitating public deliberations, drawing on that experience, and co-developed research on how deliberative democracy can be embedded in decision-making organisations.
 
 ## Approach
 
