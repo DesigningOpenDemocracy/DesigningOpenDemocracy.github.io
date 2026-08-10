@@ -26,19 +26,25 @@ events:
 - date: '2009-07-07'
   title: Founded by Matthew Landauer and Katherine Szuminska
   url: https://www.openaustraliafoundation.org.au/2009/07/07/announcing-the-openaustralia-foundation/
-  proof_level: medium
+  quote: OpenAustralia Foundation Limited is officially incorporated as a company
+    limited by guarantee.
+  proof_level: high
   url_checked: '2026-08-10'
   notable: true
 - date: '2009-12-21'
   title: Launched PlanningAlerts
   url: https://www.openaustraliafoundation.org.au/2009/12/21/launching-our-new-website-planning-alerts/
+  quote: '21 December 2009 Launching our new website: Planning Alerts'
   proof_level: medium
   url_checked: '2026-08-10'
   notable: false
 - date: '2014-10-21'
   title: Launched They Vote For You, tracking Australian parliamentary voting records
   url: https://oaf.org.au/2014/10/21/they-vote-for-you/
-  proof_level: medium
+  quote: today the OpenAustralia Foundation is launching a new site They Vote for
+    You, so you can find out how your representatives in parliament vote on issues
+    you care about.
+  proof_level: high
   url_checked: '2026-08-10'
   notable: true
 activity:

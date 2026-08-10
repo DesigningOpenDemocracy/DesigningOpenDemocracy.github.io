@@ -23,12 +23,14 @@ events:
   proof_level: medium
   url_checked: '2026-08-10'
   notable: true
+  proof_warning: true
 - date: '2017-11-24'
   title: Won the Cyber Security Award at the Australian Technologies Competition
   url: https://techboard.com.au/company-profile/xo-1/
   proof_level: medium
   url_checked: '2026-08-10'
   notable: false
+  proof_warning: true
 - date: '2018-01-01'
   title: Signed a deal with Silicon Valley startup Swarm Fund to use SecureVote's
     Liquid Democracy Voting Module
@@ -36,6 +38,7 @@ events:
   proof_level: medium
   url_checked: '2026-08-10'
   notable: true
+  proof_warning: true
 ---
 
 SecureVote is a Sydney-based company providing blockchain-based voting infrastructure. Their platform uses a proprietary Blockchain Agnostic Scalability Layer (BASL) to enable decentralised, anonymous, and auditable elections at scale — stress-tested to 1.5 billion transactions in 24 hours.

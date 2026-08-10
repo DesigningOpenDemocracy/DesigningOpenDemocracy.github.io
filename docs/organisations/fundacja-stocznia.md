@@ -27,7 +27,8 @@ events:
   title: Founded in Warsaw with a mission bridging citizen participation, social innovation,
     and research
   url: https://stocznia.org.pl/en/about-shipyard/
-  proof_level: medium
+  quote: Shipyard Foundation was established in 2009.
+  proof_level: high
   url_checked: '2026-08-10'
   notable: true
 activity:

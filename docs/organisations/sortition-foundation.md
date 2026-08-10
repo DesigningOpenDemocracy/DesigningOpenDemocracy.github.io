@@ -34,9 +34,13 @@ events:
   proof_level: medium
   url_checked: '2026-08-10'
   notable: false
+  proof_warning: true
 - date: '2017-03-04'
   title: Incorporated as a UK company
   url: https://find-and-update.company-information.service.gov.uk/company/10652142
+  quote: Search for companies or officers All Search for companies Companies Search
+    for officers Officers Search for disqualfied officers Disqualifications {{#type_is_company}}
+    {{{title}}} {{#snippet}} Matchin
   proof_level: medium
   url_checked: '2026-08-10'
   notable: true

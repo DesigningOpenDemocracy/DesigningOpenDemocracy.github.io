@@ -27,6 +27,9 @@ events:
 - date: '2008-01-01'
   title: Founded by Robert Bjarnason and Gunnar Grimsson
   url: https://en.wikipedia.org/wiki/Citizens_Foundation
+  quote: The Citizens Foundation is a non-profit organization based in Reykjavík,
+    Iceland, and founded under Icelandic law to promote electronic collaborative democracy
+    around the globe and to develop the soft
   proof_level: medium
   url_checked: '2026-08-10'
   notable: true
@@ -34,6 +37,7 @@ events:
   title: Launched Shadow Parliament, importing real Icelandic Parliament proposals
     for citizens to vote on
   url: https://en.wikipedia.org/wiki/Citizens_Foundation
+  quote: Shadow Parliament (Skuggaþing) opened formally in February 2010
   proof_level: medium
   url_checked: '2026-08-10'
   notable: false
@@ -41,6 +45,7 @@ events:
   title: Launched Better Reykjavík (originally "Shadow City"); nearly 3,000 users
     and 400+ ideas within three days
   url: https://en.wikipedia.org/wiki/Citizens_Foundation
+  quote: on 25 May 2010, the website Shadow City (Skuggaborg) opened
   proof_level: medium
   url_checked: '2026-08-10'
   notable: true

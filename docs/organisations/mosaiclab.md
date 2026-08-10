@@ -30,6 +30,7 @@ events:
   proof_level: medium
   url_checked: '2026-08-10'
   notable: true
+  proof_warning: true
 - date: '2015-01-01'
   title: City of Melbourne Urban Forest Strategy wins IAP2 Australasian Environment
     Project of the Year
@@ -37,16 +38,19 @@ events:
   proof_level: medium
   url_checked: '2026-08-10'
   notable: false
+  proof_warning: true
 - date: '2017-01-01'
   title: Founded by Kimbra White, Nicole Hunter and Keith Greaves
   url: https://mosaiclab.com.au/nicole-hunter
-  proof_level: medium
+  quote: Nicole co-founded MosaicLab (with Keith Greaves and Kimbra White) in 2017
+  proof_level: high
   url_checked: '2026-08-10'
   notable: true
 - date: '2018-01-01'
   title: Critical Thinking Research with Dr Lyn Carson wins IAP2 Core Values Award
     for Research
   url: https://mosaiclab.com.au/contributions-to-the-field
+  quote: we were awarded the IAP2 Australasia Core Values Award for Research in 2018
   proof_level: medium
   url_checked: '2026-08-10'
   notable: false
@@ -57,6 +61,7 @@ events:
   proof_level: medium
   url_checked: '2026-08-10'
   notable: false
+  proof_warning: true
 - date: '2020-01-01'
   title: Pioneers Australia's first standing citizens' panels (Mornington Peninsula
     Shire & City of Kingston); Kimbra White presents at DOD 2020 Primer
@@ -64,19 +69,23 @@ events:
   proof_level: medium
   url_checked: '2026-08-10'
   notable: false
+  proof_warning: true
 - date: '2022-01-01'
   title: Publishes Facilitating Deliberation — A Practical Guide, drawing on 39 deliberative
     processes
   url: https://mosaiclab.com.au/about
-  proof_level: medium
+  quote: Nicole and her fellow MosaicLab directors released the book Facilitating
+    Deliberation - A Practical Guide in 2022.
+  proof_level: high
   url_checked: '2026-08-10'
   notable: true
 - date: '2023-01-01'
   title: Water Works Across 2021-23 named IAP2 Awards Finalist
   source: IAP2 Australasia, Core Values Awards finalists 2023 — mosaiclab.com.au/projects
-  proof_level: medium
+  proof_level: low
   url_checked: '2026-08-10'
   notable: false
+  proof_warning: true
 - date: '2025-01-01'
   title: Facilitating Deliberation made free to download globally; first use of AI
     tool in a deliberative process (NWMPHN Community Panel); ML Giving formalised
@@ -84,6 +93,7 @@ events:
   proof_level: medium
   url_checked: '2026-08-10'
   notable: false
+  proof_warning: true
 activity:
   manual:
     checked: 2026-06-07

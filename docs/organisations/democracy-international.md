@@ -37,10 +37,12 @@ events:
   notable: false
   type: workshop
   location: Sofia/Veliko Tarnovo, Bulgaria
+  proof_warning: true
   country: BG
 - date: '2026-10-07'
   title: 2026 Global Forum on Modern Direct Democracy — Gaborone, Botswana
   url: https://www.democracy-international.org/events
+  quote: 2026 Global Forum on Modern Direct Democracy
   proof_level: medium
   url_checked: '2026-08-10'
   end_date: '2026-10-10'

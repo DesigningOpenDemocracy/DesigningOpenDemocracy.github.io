@@ -25,12 +25,15 @@ events:
 - date: '2007-01-01'
   title: Founded by Peter MacLeod
   url: https://www.masslbp.com/about
-  proof_level: medium
+  quote: Since its founding in 2007, MASS has completed more than 200 major policy
+    projects for governments and public agencies across Canada
+  proof_level: high
   url_checked: '2026-08-10'
   notable: true
 - date: '2011-01-01'
   title: Ran the Citizens' Reference Panel on Ontario Health Services
   url: https://www.masslbp.com/work-panels
+  quote: Citizens' Reference Panel on Ontario Health Services
   proof_level: medium
   url_checked: '2026-08-10'
   notable: false

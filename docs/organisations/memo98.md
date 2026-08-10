@@ -27,12 +27,17 @@ events:
   title: Launched with NDI support to monitor Slovak media ahead of the 1998 parliamentary
     elections
   url: https://memo98.sk/about-us
+  quote: 'We were launched with support from the US-based National Democratic Institute
+    for International Affairs (NDI) i n 1998 to monitor the Slovak media, using a
+    methodology of qualitative and quantitative '
   proof_level: medium
   url_checked: '2026-08-10'
   notable: true
 - date: '1999-01-01'
   title: First international election observation mission, invited by OSCE/ODIHR
   url: https://memo98.sk/about-us
+  quote: between 1999 (Ukraine) to these days (Kosovo, Philippines) MEMO 98 experts
+    have participated in more than 130 election observation missions
   proof_level: medium
   url_checked: '2026-08-10'
   notable: false

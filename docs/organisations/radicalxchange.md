@@ -37,6 +37,7 @@ events:
   proof_level: medium
   url_checked: '2026-08-10'
   notable: true
+  proof_warning: true
 - date: '2024-04-16'
   title: 'Plurality: The Future of Collaborative Technology and Democracy published
     (Weyl, Tang & community)'
@@ -52,6 +53,7 @@ events:
   notable: true
   type: meetup
   location: Today, Level 8/54 Wellington St, Collingwood VIC
+  proof_warning: true
   coverage_url: /blog/2026/08/07/radicalxchange-is-launching-a-melbourne-chapter--heres-what-it-is/
   country: AU
   end_time: 8pm

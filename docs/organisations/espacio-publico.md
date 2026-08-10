@@ -31,6 +31,7 @@ events:
   notable: false
   type: launch
   location: Santiago, Chile
+  proof_warning: true
 activity:
   rss:
     checked: 2026-08-09

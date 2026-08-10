@@ -29,6 +29,7 @@ events:
   proof_level: medium
   url_checked: '2026-08-10'
   notable: true
+  proof_warning: true
 - date: '2004-11-21'
   title: Deployed 1,000+ observers for Ukraine's presidential election, documenting
     fraud that triggered the Orange Revolution
@@ -36,6 +37,7 @@ events:
   proof_level: medium
   url_checked: '2026-08-10'
   notable: true
+  proof_warning: true
 activity:
   dod:
     checked: 2026-06-29

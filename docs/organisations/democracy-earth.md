@@ -22,6 +22,9 @@ events:
   title: Founded by Santiago Siri, Pia Mancini and Guido Vilariño; accepted into Y
     Combinator's Winter 2015 batch
   url: https://www.ycombinator.com/companies/democracy-earth
+  quote: 'Democracy Earth Founded: 2015 Batch: Winter 2015 Team Size: 2 Status: Active
+    Location: Madrid, Spain Founders Pia Mancini Founder Pia Mancini Founder Santiago
+    Siri Founder/President Santiago Siri Foun'
   proof_level: medium
   url_checked: '2026-08-10'
   notable: true

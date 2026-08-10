@@ -27,6 +27,9 @@ events:
 - date: '2020-02-04'
   title: Ran four mock Citizens' Assemblies at Melbourne's Sustainable Living Festival
   url: https://web.archive.org/web/20201025045936/https://www.coalitionofeveryone.com/post/citizens-assembly
+  quote: Through the Sustainable Living Festival, the Coalition of Everyone held four
+    mock Citizens' Assemblies on the topics of; fashion, fire, regenerative agriculture
+    and water.
   proof_level: medium
   url_checked: '2026-08-10'
   notable: false

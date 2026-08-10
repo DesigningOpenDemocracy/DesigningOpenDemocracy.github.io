@@ -33,6 +33,7 @@ events:
   notable: true
   type: workshop
   location: Copenhagen, Denmark
+  proof_warning: true
 - date: '2026-09-22'
   title: Launch of recommendations from Citizens' Assembly on Future Tourism — Copenhagen
   url: https://www.wedodemocracy.dk/vores-kalender/
@@ -41,6 +42,7 @@ events:
   notable: false
   type: launch
   location: Copenhagen, Denmark
+  proof_warning: true
 activity:
   dod:
     checked: 2026-08-09

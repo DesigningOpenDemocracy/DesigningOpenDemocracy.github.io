@@ -33,10 +33,12 @@ events:
   notable: false
   type: workshop
   location: Copenhagen, Denmark
+  proof_warning: true
 - date: '2026-11-18'
   title: 'FIDE Forum 2026: From Novel to Normal — making deliberation a democratic
     standard, Vienna'
   url: https://www.fidemocracy.org/news
+  quote: FIDE Forum 2026
   proof_level: medium
   url_checked: '2026-08-10'
   end_date: '2026-11-19'

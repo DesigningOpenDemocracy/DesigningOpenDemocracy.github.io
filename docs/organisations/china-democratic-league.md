@@ -26,6 +26,7 @@ events:
   title: Founded in Chongqing as an umbrella organisation of China's centrist and
     left-leaning intellectuals during the Second Sino-Japanese War
   url: https://www.mmzy.org.cn/mmgk/jianjie/default.aspx
+  quote: 民盟于1941年3月19日在重庆秘密成立
   proof_level: medium
   url_checked: '2026-08-10'
   notable: true
@@ -36,13 +37,13 @@ activity:
     note: Direct fetch blocked (503) this run; web search confirms ongoing activity
       — Central Committee research on urban/rural land system reform and the continuing
       'Serving the Public, Practicing for the People' education campaign.
-    url: https://www.mmzy.org.cn/mmyw/default.aspx
   rss:
     checked: 2026-06-07
     note: No feed found
   sitemap:
     checked: 2026-08-09
     note: Sitemap found, no lastmod
+  url: https://www.mmzy.org.cn/mmyw/default.aspx
 last_checked: '2026-06-29'
 ---
 

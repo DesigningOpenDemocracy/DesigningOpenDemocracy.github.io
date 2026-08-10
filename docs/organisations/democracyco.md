@@ -33,6 +33,7 @@ events:
   notable: false
   type: workshop
   location: Online
+  proof_warning: true
 activity:
   dod:
     checked: 2026-07-05

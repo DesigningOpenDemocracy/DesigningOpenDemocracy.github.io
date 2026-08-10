@@ -25,6 +25,14 @@ events:
 - date: '2016-01-01'
   title: Founded in Bogotá as a citizen participation and social innovation laboratory
   url: https://en.wikipedia.org/wiki/Civic_technology
+  quote: 'Key areas of focus include open data initiatives, digital platforms for
+    citizen services, and tools for civic participation.
+
+
+
+    ==== Citizen-led initiatives ====
+
+    Code for Pakistan (CfP), founded in 201'
   proof_level: medium
   url_checked: '2026-08-10'
   notable: true

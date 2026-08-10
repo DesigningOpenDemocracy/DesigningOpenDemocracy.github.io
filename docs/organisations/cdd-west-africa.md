@@ -27,6 +27,8 @@ events:
   title: Founded in Lagos as a research and advocacy organisation on democracy and
     development in West Africa
   url: https://www.cddwestafrica.org/about-us/
+  quote: The Centre for Democracy and Development (CDD) was established in the United
+    Kingdom in 1997
   proof_level: medium
   url_checked: '2026-08-10'
   notable: true
@@ -37,7 +39,6 @@ activity:
     note: Website and blog confirmed active, with current election-analysis publications
       (Ekiti State 2026 Pre-Election Environment Analysis; Anambra 2025 Governorship
       Election report).
-    url: https://www.cddwestafrica.org/blog/
   scrape:
     checked: 2026-06-08
     hint: no_markup
@@ -46,6 +47,7 @@ activity:
     checked: 2026-08-09
     date: 2026-06-05
     note: Server still up (sitemap detected)
+  url: https://www.cddwestafrica.org/blog/
 last_checked: '2026-06-29'
 ---
 

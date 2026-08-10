@@ -31,6 +31,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   type: meeting
+  proof_warning: true
 activity:
   manual:
     checked: 2026-06-07

@@ -27,6 +27,8 @@ events:
   title: Founded as a pan-African survey research network measuring public attitudes
     on democracy and governance
   url: https://www.afrobarometer.org/about/history/
+  quote: professors Michael Bratton, Robert Mattes, and E. Gyimah-Boadi merge three
+    independent survey research projects to form Afrobarometer (AB)
   proof_level: medium
   url_checked: '2026-08-10'
   notable: true
@@ -36,7 +38,7 @@ activity:
     date: 2026-08-05
     note: 'Latest post: Les Africains sont favorables à la libre circulation,  mais
       restent divisés sur '
-    url: https://www.afrobarometer.org/articles/les-africains-sont-favorables-a-la-libre-circulation-mais-restent-divises-sur-la-question-de-limmigration-selon-le-nouveau-rapport-phare-dafrobarometer/
+  url: https://www.afrobarometer.org/articles/les-africains-sont-favorables-a-la-libre-circulation-mais-restent-divises-sur-la-question-de-limmigration-selon-le-nouveau-rapport-phare-dafrobarometer/
 last_checked: '2026-06-28'
 ---
 

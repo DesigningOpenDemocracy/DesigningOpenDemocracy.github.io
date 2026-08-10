@@ -37,17 +37,20 @@ events:
   url: https://www.folio.org.au/event-5200127
   proof_level: medium
   url_checked: '2026-08-10'
+  proof_warning: true
 - date: 2023-04-04
   title: Atlas of Human Rights — violations and protections in Australia and abroad
   url: https://www.folio.org.au/event-5219140
   proof_level: medium
   url_checked: '2026-08-10'
   location: CURATE Space, Melbourne CBD
+  proof_warning: true
 - date: 2024-06-24
   title: 'Democratic Crossroads — the power of participation: what''s holding us back?'
   url: https://www.folio.org.au/event-5761027
   proof_level: medium
   url_checked: '2026-08-10'
+  proof_warning: true
 - date: 2024-07-01
   title: 'Democratic Crossroads — unpacking the Voice Referendum: what can we learn
     about Australia''s democracy?'
@@ -63,6 +66,7 @@ events:
   url: https://www.folio.org.au/event-6065606
   proof_level: medium
   url_checked: '2026-08-10'
+  proof_warning: true
 activity:
   manual:
     checked: 2026-08-09

@@ -27,6 +27,8 @@ events:
   title: Held its inaugural Annual Lecture (Joseph Camilleri, "Australia the Week
     After") at the University of Melbourne
   url: https://www.crossroadsconversation.com.au/events/on-the-importance-of-conversation-for-the-very-idea-of-a-common-humanity
+  quote: You speak not to say something and to hear something back, not to dazzle,
+    be right or stake a claim, but to be held accountable to each other.
   proof_level: medium
   url_checked: '2026-08-10'
   notable: true

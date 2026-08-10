@@ -25,6 +25,7 @@ events:
   proof_level: medium
   url_checked: '2026-08-10'
   notable: true
+  proof_warning: true
 - date: '2018-02-10'
   title: Published its "Proposed (Initial) Strategy" outlining the group's founding
     direction
@@ -32,6 +33,7 @@ events:
   proof_level: medium
   url_checked: '2026-08-10'
   notable: false
+  proof_warning: true
 activity:
   manual:
     checked: 2026-08-07

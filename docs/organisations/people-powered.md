@@ -35,6 +35,7 @@ events:
   notable: true
   type: conference
   location: Kraków, Poland
+  proof_warning: true
   country: PL
 - date: '2026-09-29'
   title: Athens Democracy Forum 2026 — 14th edition, with Kofi Annan NextGen Democracy
@@ -45,6 +46,7 @@ events:
   notable: true
   type: conference
   location: Athens, Greece
+  proof_warning: true
   country: GR
 - date: '2026-10-01'
   title: Global Democracy Coalition (GDC) Global Forum 2026 — co-located with Athens
@@ -55,6 +57,7 @@ events:
   notable: true
   type: conference
   location: Athens, Greece
+  proof_warning: true
   country: GR
 - date: '2026-11-02'
   title: World Forum for Democracy 2026 (Council of Europe) — 14th edition, 'Democratic
@@ -65,6 +68,7 @@ events:
   notable: true
   type: conference
   location: Strasbourg, France
+  proof_warning: true
   country: FR
 activity:
   dod:

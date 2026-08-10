@@ -23,6 +23,7 @@ events:
   proof_level: medium
   url_checked: '2026-08-10'
   notable: true
+  proof_warning: true
 - date: '2017-05-26'
   title: Uluru Statement from the Heart issued at the First Nations National Constitutional
     Convention
@@ -30,12 +31,14 @@ events:
   proof_level: medium
   url_checked: '2026-08-10'
   notable: true
+  proof_warning: true
 - date: '2017-06-30'
   title: Final Report published, incorporating the Uluru Statement
   url: https://www8.austlii.edu.au/au/other/IndigLRes/2017/2.pdf
   proof_level: medium
   url_checked: '2026-08-10'
   notable: true
+  proof_warning: true
 ---
 
 The Referendum Council was a joint advisory body established by Prime Minister Malcolm Turnbull and Opposition Leader Bill Shorten in December 2016. Co-chaired by Pat Anderson AO and Mark Leibler AC, it was tasked with consulting broadly on options for constitutional recognition of Aboriginal and Torres Strait Islander peoples and reporting back with recommendations.

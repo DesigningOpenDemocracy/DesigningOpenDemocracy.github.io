@@ -26,6 +26,7 @@ events:
 - date: '2017-01-01'
   title: Founded in Lagos as a civic-tech fellowship and innovation hub for West Africa
   url: https://civichive.org/about-us/
+  quote: Founded in 2017 as the innovation centre of BudgIT
   proof_level: medium
   url_checked: '2026-08-10'
   notable: true
@@ -35,7 +36,7 @@ activity:
     date: 2026-08-06
     note: 'Latest post: 2026 Osun State Governorship Election: Another Test for Democratic
       Participation'
-    url: https://civichive.org/2026-osun-state-governorship-election/?utm_source=rss&utm_medium=rss&utm_campaign=2026-osun-state-governorship-election
+  url: https://civichive.org/2026-osun-state-governorship-election/?utm_source=rss&utm_medium=rss&utm_campaign=2026-osun-state-governorship-election
 last_checked: '2026-08-09'
 ---
 

@@ -26,6 +26,9 @@ events:
 - date: '2003-01-01'
   title: Founded
   url: https://register-of-charities.charitycommission.gov.uk/en/charity-search/-/charity-details/4027987
+  quote: 'https://liferay.com * SPDX-License-Identifier: LGPL-2.1-or-later OR LicenseRef-Liferay-DXP-EULA-2.0.0-2023-06
+    */ (function () { AUI().applyConfig({ groups: { alloyeditor: { base: MODULE_PATH
+    + ''/js/le'
   proof_level: medium
   url_checked: '2026-08-10'
   notable: true

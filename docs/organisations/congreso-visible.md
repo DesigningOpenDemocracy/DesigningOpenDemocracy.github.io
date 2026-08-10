@@ -26,6 +26,9 @@ events:
   title: Launched at Universidad de los Andes as Colombia's first legislative transparency
     platform
   url: https://congresovisible.uniandes.edu.co/quesomos
+  quote: Desde 1998, el proyecto Congreso Visible del Departamento de Ciencia Política
+    de la Universidad de los Andes realiza un seguimiento y análisis permanentes del
+    Congreso de la República
   proof_level: medium
   url_checked: '2026-08-10'
   notable: true

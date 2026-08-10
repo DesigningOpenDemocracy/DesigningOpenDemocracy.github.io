@@ -29,6 +29,9 @@ events:
   title: Origins as a volunteer effort collecting candidate information for the 2010
     UK general election, working with mySociety
   url: https://www.nesta.org.uk/feature/new-radicals-2016/democracy-club/
+  quote: Sym Roe was a volunteer for the mySociety enterprise during the run up to
+    the 2010 general election, working to increase the amount of information available
+    online about the candidates.
   proof_level: medium
   url_checked: '2026-08-10'
   notable: false
@@ -36,6 +39,8 @@ events:
   title: Registered as a Community Interest Company and crowdsourced the most comprehensive
     UK election-candidate database to date, used by over a million people
   url: https://www.nesta.org.uk/feature/new-radicals-2016/democracy-club/
+  quote: Press Jobs Privacy Terms of use Accessibility Contact us &copy; 2026 Nesta
+    Nesta is a registered charity in England and Wales 1144091 and Scotland SC042833.
   proof_level: medium
   url_checked: '2026-08-10'
   notable: true

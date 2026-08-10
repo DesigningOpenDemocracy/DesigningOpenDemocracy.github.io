@@ -33,6 +33,7 @@ events:
   notable: true
   type: conference
   location: Arendal, Norway
+  proof_warning: true
   country: 'NO'
 - date: '2014-01-01'
   title: Founded in Oslo as a social innovation platform for sustainable societal
@@ -41,6 +42,7 @@ events:
   proof_level: medium
   url_checked: '2026-08-10'
   notable: true
+  proof_warning: true
 activity:
   dod:
     checked: 2026-08-09

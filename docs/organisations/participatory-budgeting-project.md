@@ -30,12 +30,14 @@ events:
   proof_level: medium
   url_checked: '2026-08-10'
   notable: true
+  proof_warning: true
 - date: '2011-01-01'
   title: Incorporated as a 501(c)(3) nonprofit in Brooklyn, New York
   url: https://www.participatorybudgeting.org/about/
   proof_level: medium
   url_checked: '2026-08-10'
   notable: false
+  proof_warning: true
 activity:
   rss:
     checked: 2026-06-08

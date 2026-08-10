@@ -26,7 +26,8 @@ events:
 - date: '2016-11-10'
   title: Established as a not-for-profit / for-purpose organisation in Australia
   url: https://newvote.org/the-institute
-  proof_level: medium
+  quote: NewVote is founded as a for-purpose (a not-for-profit), Australia.
+  proof_level: high
   url_checked: '2026-08-10'
   notable: true
 - date: '2017-11-01'
@@ -35,10 +36,13 @@ events:
   proof_level: medium
   url_checked: '2026-08-10'
   notable: false
+  proof_warning: true
 - date: '2019-07-24'
   title: NewVote platform publicly launched
   url: https://newvote.org/the-institute
-  proof_level: medium
+  quote: The University of Queensland Student Union is piloting and promoting the
+    app with its 52,000 students, starting on 24 July 2019.
+  proof_level: high
   url_checked: '2026-08-10'
   notable: true
 activity:

@@ -32,6 +32,7 @@ events:
   proof_level: medium
   url_checked: '2026-08-10'
   notable: true
+  proof_warning: true
 - date: '2015-08-01'
   title: Uber/UberX case — vTaiwan's first major deliberation using Pol.is, ~31,115
     votes from 925 participants
@@ -39,6 +40,7 @@ events:
   proof_level: medium
   url_checked: '2026-08-10'
   notable: true
+  proof_warning: true
 activity:
   manual:
     checked: 2026-06-07

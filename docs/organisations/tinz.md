@@ -30,9 +30,11 @@ events:
   proof_level: medium
   url_checked: '2026-08-10'
   notable: true
+  proof_warning: true
 - date: '2001-01-01'
   title: Became an incorporated society and registered charity
   url: https://www.transparency.org.nz/our-story
+  quote: and it became an incorporated society and charity in 2001.
   proof_level: medium
   url_checked: '2026-08-10'
   notable: false

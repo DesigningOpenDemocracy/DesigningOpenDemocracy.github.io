@@ -35,6 +35,14 @@ events:
   title: Published the first Israeli Democracy Index — an annual survey tracking democratic
     attitudes in Israel
   url: https://en.wikipedia.org/wiki/Israel_Democracy_Institute
+  quote: 'In 2018, their vice president of research Yuval Shany was chosen to head
+    the United Nations Human Rights Committee.
+
+    Until 2015, the IDI published HaAyin HaShevi''it (The Seventh Eye).
+
+
+
+    == Award and ra'
   proof_level: medium
   url_checked: '2026-08-10'
   notable: true

@@ -21,7 +21,8 @@ events:
 - date: '2015-11-30'
   title: Australia signs Letter of Intent to join the Open Government Partnership
   url: https://www.opengovpartnership.org/documents/australia-letter-of-intent-to-join-ogp/
-  proof_level: medium
+  quote: Australia Letter of Intent to Join OGP 30th November 2015
+  proof_level: high
   url_checked: '2026-08-10'
   notable: true
 - date: '2016-12-01'
@@ -30,6 +31,7 @@ events:
   proof_level: medium
   url_checked: '2026-08-10'
   notable: false
+  proof_warning: true
 - date: '2018-09-21'
   title: Australia's second Open Government National Action Plan (2018-20) formally
     released
@@ -37,11 +39,15 @@ events:
   proof_level: medium
   url_checked: '2026-08-10'
   notable: false
+  proof_warning: true
 - date: '2020-11-06'
   title: Draft third National Action Plan went through final consultation but was
     never formally submitted, marking the point the initiative went dormant
   url: https://www.ipc.nsw.gov.au/news/open-government-partnership-final-public-consultation-draft-commitments-australias-third-national-action-plan
-  proof_level: medium
+  quote: The Open Government Forum is seeking final feedback on the draft Commitments
+    proposed to be included in Australia's Third National Action Plan (NAP3). The
+    Forum is open to feedback until Friday, 6 November 2020.
+  proof_level: high
   url_checked: '2026-08-10'
   notable: true
 ---

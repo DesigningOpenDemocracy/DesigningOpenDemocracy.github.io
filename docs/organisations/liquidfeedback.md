@@ -32,20 +32,30 @@ events:
   title: First published by Public Software Group e.V., developed in response to requests
     from German Pirate Party members
   url: https://en.wikipedia.org/wiki/LiquidFeedback
-  proof_level: medium
+  quote: 'These characteristics lead to the fact that the delegation behavior of the
+    participants and thus the (often topic specific) power structures, are subject
+    to learning effects.
+
+    Interaktive Demokratie pu'
+  proof_level: high
   url_checked: '2026-08-10'
   notable: true
 - date: '2010-01-01'
   title: Pirate Party Berlin becomes the first political organisation to adopt LiquidFeedback,
     to draft new statutes
   url: https://en.wikipedia.org/wiki/LiquidFeedback
-  proof_level: medium
+  quote: The Pirate Party Germany Berlin became the first political party to utilize
+    the platform in January 2010 for a state party conference. LiquidFeedback assisted
+    in the development of new statutes for the branch during this time
+  proof_level: high
   url_checked: '2026-08-10'
   notable: true
 - date: '2010-06-01'
   title: Developers establish Interaktive Demokratie e.V., an independent research
     institute for digital-democracy research
   url: https://en.wikipedia.org/wiki/LiquidFeedback
+  quote: In June 2010, the developers of LiquidFeedback founded Interaktive Demokratie
+    e.V., an independent and non-partisan research institute.
   proof_level: medium
   url_checked: '2026-08-10'
   notable: false
@@ -53,6 +63,8 @@ events:
   title: First public-sector (non-party) deployment, in Friesland County, Germany,
     for citizen consultation on council proposals
   url: https://en.wikipedia.org/wiki/LiquidFeedback
+  quote: The initial implementation of LiquidFeedback for public engagement occurred
+    in Friesland County, Germany, in September 2012.
   proof_level: medium
   url_checked: '2026-08-10'
   notable: false

@@ -27,6 +27,8 @@ events:
   title: Founded in Dakar by Cheikh Fall, initially as the African League of Bloggers
     and Web Activists for Democracy
   url: https://fr.wikipedia.org/wiki/AfricTivistes
+  quote: Fondée le 26 novembre 2015 par Cheikh Fall, AfricTivistes compte à ce jour
+    plus de 400 membres répartis dans 40 pays du continent africain.
   proof_level: medium
   url_checked: '2026-08-10'
   notable: true

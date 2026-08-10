@@ -32,10 +32,14 @@ events:
   proof_level: medium
   url_checked: '2026-08-10'
   notable: true
+  proof_warning: true
 - date: '2017-11-01'
   title: McKinnon Prize in Political Leadership established, in partnership with the
     University of Melbourne
   url: https://www.unimelb.edu.au/newsroom/news/2017/november/susan-mckinnon-foundation-and-university-of-melbourne-establish-prestigious-award-for-political-leadership
+  quote: 'Susan McKinnon Foundation Co-Founder Grant Rule said: &ldquo;Now, more than
+    ever, we need to publicly recognise political leadership that shows vision and
+    courage and has had a constructive impact for'
   proof_level: medium
   url_checked: '2026-08-10'
   notable: true

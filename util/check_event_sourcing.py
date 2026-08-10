@@ -71,13 +71,11 @@ def confidence_score(event):
     has_url = "url" in event
     has_source = "source" in event
     has_note = "note" in event
+    has_quote = "quote" in event
 
     if has_url:
         url_str = str(event["url"]).strip()
         parsed = urlparse(url_str)
-        # Require an actual article path, not just the bare wikipedia.org
-        # domain — a homepage-only "citation" shouldn't earn the bonus a
-        # specific article does.
         is_wikipedia_article = (
             "wikipedia.org" in parsed.netloc and parsed.path not in ("", "/")
         )
@@ -91,6 +89,9 @@ def confidence_score(event):
     elif has_source:
         score += 1
 
+    if has_quote:
+        score += 2
+
     if has_note:
         score += 1
 
@@ -102,19 +103,26 @@ def confidence_score(event):
 
 
 def compute_proof_level(event):
-    """Auto-compute proof_level from the unified confidence_score.
+    """Auto-compute proof_level from source signals."""
+    has_url = "url" in event
+    has_source = "source" in event
+    has_note = "note" in event
+    has_quote = "quote" in event
 
-    high   — score >= 4  (e.g. a fragment-pinned or Wikipedia-article URL,
-                           checked recently)
-    medium — score >= 2  (a specific URL, or source: + note:)
-    low    — everything else (homepage-only URL, bare source:, or a once-
-                           strong citation that's gone stale/unverified)
-    """
-    score = confidence_score(event)
-    if score >= 4:
-        return "high"
-    elif score >= 2:
-        return "medium"
+    if has_url:
+        url_str = str(event["url"]).strip()
+        parsed = urlparse(url_str)
+        if parsed.fragment and parsed.fragment.startswith(":~:text="):
+            return "high"
+        if has_quote:
+            return "high"
+        if has_note:
+            return "medium"
+        if parsed.path not in ("", "/"):
+            return "medium"
+        return "low"
+    elif has_source:
+        return "medium" if (has_note or has_quote) else "low"
     return "low"
 
 
@@ -181,9 +189,10 @@ def main():
     unsourced = 0
     vague_source = 0
     weak_url = 0
-    notable_no_proof = 0
-    stale_checked = 0
+    no_proof = 0
+    notable_soft = 0
     mismatched_proof_level = 0
+    stale_checked = 0
     total = 0
     has_issues = False
     proof_counts = {"high": 0, "medium": 0, "low": 0}
@@ -246,12 +255,24 @@ def main():
                 print(f"  WEAK URL        {p['title']}  [{e.get('date','?')}]  {e.get('title','?')}")
                 print(f"                   url: {e['url']}")
 
-            if e.get("notable") and "note" not in e:
-                parsed = urlparse(str(e.get("url", ""))) if has_url else None
-                has_frag = bool(parsed and parsed.fragment.startswith(":~:text="))
-                if not has_frag:
-                    notable_no_proof += 1
-                    print(f"  NOTABLE NO PROOF {p['title']}  [{e.get('date','?')}]  {e.get('title','?')}")
+            # Hard gate: every event needs evidence — fragment, quote, or note.
+            # proof_warning overrides (event passes CI but shows a warning badge).
+            parsed = urlparse(str(e.get("url", ""))) if has_url else None
+            has_frag = bool(parsed and parsed.fragment.startswith(":~:text="))
+            has_quote = "quote" in e
+            has_note = "note" in e
+            has_warning = "proof_warning" in e
+
+            if not has_frag and not has_quote and not has_note and not has_warning:
+                no_proof += 1
+                has_issues = True
+                print(f"  NO PROOF        {p['title']}  [{e.get('date','?')}]  {e.get('title','?')}")
+
+            # Soft warning: notable events should have mechanical proof (fragment or quote),
+            # not just a note. proof_warning also counts as a gap — notable + override = flagged.
+            if e.get("notable") and not has_frag and not has_quote:
+                notable_soft += 1
+                print(f"  NOTABLE NO PROOF {p['title']}  [{e.get('date','?')}]  {e.get('title','?')}")
 
             url_checked = parse_date(e.get("url_checked"))
             checked_recently = url_checked and (date.today() - url_checked).days <= STALE_CHECK_DAYS
@@ -277,8 +298,10 @@ def main():
         print(f"Calculated and set proof_level on {calculated} events.")
     if mismatched_proof_level:
         print(f"Stale proof_level (stored value no longer matches recomputed score): {mismatched_proof_level}  (run --recalculate to refresh)")
-    if notable_no_proof:
-        print(f"Notable events lacking proof (no note or fragment): {notable_no_proof}")
+    if no_proof:
+        print(f"Events lacking proof (no fragment, quote, note, or proof_warning): {no_proof}")
+    if notable_soft:
+        print(f"Notable events without mechanical proof (no fragment or quote): {notable_soft}")
     if weak_url:
         print(f"Weak URLs (homepage-only): {weak_url}")
     if vague_source:
@@ -289,7 +312,7 @@ def main():
         print(f"Orgs with no events (info only): {len(no_events)}")
 
     if has_issues:
-        print(f"\n{unsourced} event(s) missing both url: and source:. Add one to each.")
+        print(f"\n{no_proof} event(s) need evidence (fragment, quote, note, or proof_warning). Add one to each.")
         sys.exit(1)
     else:
         print("All events have a url: or source:.")

@@ -30,6 +30,8 @@ events:
   title: Dr Hugh Saddler Memorial Lecture 2026 — Shane Rattenbury on how the ACT turned
     climate ambition into action, National Film and Sound Archive ACT
   url: https://australiainstitute.org.au/events/dr-hugh-saddler-memorial-lecture/
+  quote: Join us at the 2026 Dr Hugh Saddler Memorial Lecture, featuring former ACT
+    Minister, Greens Leader, and long‑serving parliamentarian Shane Rattenbury.
   proof_level: medium
   url_checked: '2026-08-10'
   notable: false

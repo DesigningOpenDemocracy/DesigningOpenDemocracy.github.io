@@ -25,6 +25,9 @@ events:
 - date: '1989-01-01'
   title: Founded as an independent, non-partisan think tank in Beirut
   url: https://www.lcps-lebanon.org/en/about
+  quote: 'd; topics publications platforms tracker about MULTIMEDIA: PODCASTS VIDEOS
+    DATA VISUALIZATION contact careers press AR contact careers press The center Board
+    of directors Fellows Our Team Our Mission '
   proof_level: medium
   url_checked: '2026-08-10'
   notable: true
@@ -34,6 +37,7 @@ events:
   proof_level: medium
   url_checked: '2026-08-10'
   notable: false
+  proof_warning: true
 activity:
   manual:
     date: 2026-03-05

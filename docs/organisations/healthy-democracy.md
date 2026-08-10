@@ -29,14 +29,19 @@ events:
   title: Founded (as Healthy Democracy Oregon) by Tyrone Reitman and Elliot Shuford
     to run the Citizens' Initiative Review
   url: https://www.influencewatch.org/non-profit/healthy-democracy/
-  proof_level: medium
+  quote: Healthy Democracy was founded in 2007 as "Healthy Democracy Oregon" by Crosby
+    and his wife and two activists, Tyrone Reitman and Elliot Shuford.
+  proof_level: high
   url_checked: '2026-08-10'
   notable: true
 - date: '2011-07-21'
   title: Oregon House Bill 2634 signed into law, making the Citizens' Initiative Review
     a permanent part of the state's initiative process
   url: https://participedia.net/method/oregon-citizens-initiative-review
-  proof_level: medium
+  quote: How do I create content? Once you are signed in, you can create content by
+    clicking the “quick submit” button from the main menu and choosing the type of
+    article you would like to create.
+  proof_level: high
   url_checked: '2026-08-10'
   notable: true
 activity:
