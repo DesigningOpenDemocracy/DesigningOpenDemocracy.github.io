@@ -115,12 +115,15 @@ verified-date layer on top of CSL-JSON's existing type-specific fields
   the citation-bearing content hasn't changed. Good for detecting any
   edit, bad for signal-to-noise.
 - **Web pages (bounded-context, planned):** Locate the quote in the
-  extracted text, take N chars before and N chars after as a context
-  window, hash just that window. This mirrors the Text Fragments spec's
-  prefix/suffix concept — the surrounding text disambiguates which part
-  of the page we care about, and the hash covers only that region.
-  Immune to nav/ads/timestamp changes elsewhere. No HTML parser needed
-  (we already have flat extracted text from `_fetch_page_text()`).
+  extracted text, find the enclosing paragraph boundaries (preserved
+  `\n\n` markers in extracted text), hash just that paragraph. The
+  paragraph is the natural semantic unit — immune to nav/ads/timestamp
+  changes elsewhere, and avoids the arbitrary-N problem of character
+  windows. Mirrors the Text Fragments prefix/suffix concept but uses
+  paragraph scope instead of a fixed character count. No HTML parser
+  needed: `_fetch_page_text()` already strips tags; the addition is
+  preserving double-newlines as paragraph delimiters rather than fully
+  collapsing whitespace.
 
 ### Why not SHA256 the quote string itself?
 
