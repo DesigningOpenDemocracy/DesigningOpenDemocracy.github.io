@@ -115,6 +115,7 @@ def on_pre_build(config):
     citations = []
     for url, group in sorted(by_url.items()):
         cite = {
+            "id": hashlib.md5(url.encode("utf-8")).hexdigest()[:8],
             "type": "webpage",
             "URL": url,
             "title": group["title"],

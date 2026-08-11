@@ -205,18 +205,30 @@ verifier only needs `evidence[].quote` + `content-sha256` + `last-verified`
 to mechanically check whether a claim still holds — they don't need our ETags
 or per-quote booleans.
 
+### Authorship model
+
+`citations.json` is always **derived, never authored**. Humans write markdown
+footnotes. The build hook parses them and produces CSL-JSON. This means the
+JSON is never hand-edited in Zotero, Pandoc, or any citation manager — those
+tools *consume* it as a bibliography file, not as an input format.
+
+This is deliberate: the machine-verifiable fields (`content-sha256`,
+`evidence[].last-verified`, `evidence[].verified-by`) come from the
+automated verification pipeline. If a human edits the JSON directly, those
+fields lose their meaning. The markdown is the source of truth; the JSON
+is a build artifact.
+
 ## Open questions
 
-1. **Zotero round-trip.** Zotero reads CSL-JSON via its "Import from
-    clipboard" or BetterBibTeX plugin. The non-CSL fields (`content-sha256`,
-    `evidence`) should survive as extra fields — needs testing.
+1. **Pandoc round-trip — confirmed August 2026.** `citations.json` works as a
+    bibliography with `pandoc --citeproc --bibliography`. Non-CSL fields are
+    silently ignored. The `id` field (MD5 of URL) resolves citation keys.
+    Zotero import via BetterBibTeX remains untested.
 2. **Relationship to `#:~:text=` fragments.** The fragment link goes in
     the rendered HTML, not in the JSON. `evidence[].quote` is the data; the
     fragment is a progressive-enhancement UI feature.
 3. **Proposing as a CSL extension?** Premature — prove the model internally
-    first (a working wiki with verifiable citations), then see if there's
-    community interest. The schema is already clean enough to stand alone
-    without a namespace prefix.
+    first, then see if there's community interest.
 
 ## References
 
