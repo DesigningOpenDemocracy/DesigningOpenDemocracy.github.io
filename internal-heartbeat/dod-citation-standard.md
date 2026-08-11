@@ -205,8 +205,8 @@ drifted. That's the signal that matters for evidence integrity.
                                                                  │
                                          citation_export.py      │
                                          reads cache, writes ───→
-                                         dod-content-sha256
-                                         dod-last-verified-date
+                                         content-sha256
+                                         evidence[].last-verified
 ```
 
 ### Two stores, two purposes
@@ -214,11 +214,12 @@ drifted. That's the signal that matters for evidence integrity.
 | Store | Committed? | Audience | Content |
 |---|---|---|---|
 | `docs/data/evidence-cache.json` | Yes | Internal | ETags, per-URL content hashes, per-quote verification booleans. Optimized for `check_fragments.py` to skip redundant refetches. |
-| `docs/data/citations.json` | Yes | External | Clean CSL-JSON array. One entry per citation with `dod-quote`, `dod-content-sha256`, `dod-last-verified-date`. Any tool that reads CSL-JSON can consume it — the `dod-*` fields are silently ignored by standard processors. |
+| `docs/data/citations.json` | Yes | External | CSL-JSON per URL with `content-sha256` and `evidence` array. One entry per URL, multiple `evidence[].quote` entries per URL. Standard CSL processors silently ignore the non-CSL fields. |
 
 The cache feeds the export, but they serve different consumers. An external
-verifier only needs `dod-quote` + hash + date to mechanically check whether a
-claim still holds — they don't need our ETags or per-quote booleans.
+verifier only needs `evidence[].quote` + `content-sha256` + `last-verified`
+to mechanically check whether a claim still holds — they don't need our ETags
+or per-quote booleans.
 
 ## Open questions
 
@@ -229,10 +230,10 @@ claim still holds — they don't need our ETags or per-quote booleans.
    simpler to derive (hook runs per page). Aggregate is easier to consume
    (one file for Zotero import).
 3. **Zotero import library?** Zotero reads CSL-JSON via its "Import from
-   clipboard" or BetterBibTeX plugin. The `dod-*` fields would survive in
-   the internal database as extra fields.
+    clipboard" or BetterBibTeX plugin. The non-CSL fields would survive in
+    the internal database as extra fields.
 4. **Relationship to `#:~:text=` fragments.** The fragment link goes in
-   the rendered HTML, not in the JSON. The `dod-quote` is the data; the
+    the rendered HTML, not in the JSON. `evidence[].quote` is the data; the
    fragment is a progressive-enhancement UI feature.
 5. **Do we propose this as an extension to the CSL spec?** Premature —
    get it working internally first, then see if there's community interest.

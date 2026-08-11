@@ -442,7 +442,7 @@ Generated at build time by `hooks/data_export.py`. Served as static assets:
 | `/data/organisations.geojson` | FeatureCollection — orgs with lat/lon only. |
 | `/data/organisations.kml` | KML — orgs with lat/lon, colour-coded by status. |
 | `/data/org-concepts.csv` | Edge list (`org_slug`, `concept_slug`) for network/graph analysis. |
-| `/data/citations.json` | CSL-JSON — all event and footnote citations with `dod-quote`, `dod-content-sha256`, `dod-last-verified-date`. Committed (reflects last known verification state from the evidence cache). |
+| `/data/citations.json` | CSL-JSON — per-URL entries with `content-sha256` and `evidence` array (`type`, `quote`, `last-verified`). Committed (reflects last known verification state from the evidence cache). |
 
 These are linked from the bottom of the org index table for researcher download.
 
