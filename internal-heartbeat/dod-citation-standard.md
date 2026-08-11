@@ -1,8 +1,8 @@
 # DOD citation standard — design notes
 
-Status: **scoping**. Not yet an implemented standard. This document records the
-research, the options, and the proposed direction so a future session can
-pick it up and implement it.
+Status: **implemented**. The `hooks/citation_export.py` hook and
+`check_fragments.py` verification pipeline are live. This document records
+the research, decisions, and rationale.
 
 ## Goal
 
@@ -29,19 +29,6 @@ the proposed standard:
    August 2026, PR #142).
 
 Both are internal conventions. The standard makes them exportable.
-
-1. **Event quotes** (`events:` frontmatter `quote:` field) — structured YAML,
-   mechanically verified by `util/check_fragments.py`, rendered with
-   `#:~:text=` browser-highlight fragments at build time.
-2. **Prose footnotes** — markdown footnotes with optional verbatim quoted
-   excerpts, same verification pipeline and `#:~:text=` treatment (added
-   August 2026, PR #142).
-
-Both are internal conventions, not a standard any external tool can read.
-Making citations machine-exportable in a standard format that reference
-managers (Zotero, Pandoc) can consume would serve researchers and let us
-propose a novel extension: **content-integrity verification built into
-the citation itself.**
 
 ## Research findings
 
@@ -155,21 +142,17 @@ sentences are intact, but you should re-read the surrounding paragraph"
 (hash changed, quotes survived). The hash is not a pass/fail check — it
 feeds a review queue, not a CI gate.
 
-### Content hash — three contexts
+### Content hash
 
 - **PDFs:** Hash the entire file. A PDF is a static artifact — a SHA256
   pins the exact version cited. Straightforward and unambiguous.
-- **Web pages (whole-page):** Hash the full extracted text. Simple but
-  fragile — a navbar update or sidebar change alters the hash even though
-  the citation-bearing content hasn't changed. Good for detecting any
-  edit, bad for signal-to-noise.
-- **Web pages (paragraph-scoped):** Locate the quote in the
-  extracted text, find the enclosing paragraph boundaries (`\n\n`
-  delimiters from block-level tag substitution), hash just that paragraph.
-  The paragraph is the natural semantic unit — immune to nav/ads/timestamp
-  changes elsewhere. Implemented in `_fetch_page_text()` via sentinel
-  `\x00P\x00` substitution for block-level tags before final whitespace
-  collapse, and `paragraph_hash()` for fetching the enclosing scope.
+- **Web pages:** Paragraph-scoped. Block-level HTML tags are replaced
+  with `\n\n` paragraph delimiters during text extraction, then the
+  paragraph containing the matching quote is located and hashed. Immune
+  to nav/ads/timestamp changes elsewhere — only the paragraph the
+  citation lives in matters. Implemented via `_fetch_page_text()` sentinel
+  substitution and `paragraph_hash()` in `util/check_fragments.py`.
+  (Previously: whole-page hashing — fragile to page furniture changes.)
 
 ### Why not SHA256 the quote string itself?
 
@@ -203,10 +186,11 @@ drifted. That's the signal that matters for evidence integrity.
                                          └── ETag/Last-Modified  │
                                             (internal only)      │
                                                                  │
-                                         citation_export.py      │
-                                         reads cache, writes ───→
-                                         content-sha256
-                                         evidence[].last-verified
+                                          citation_export.py      │
+                                          reads cache, writes ───→
+                                          content-sha256
+                                          evidence[].last-verified
+                                          evidence[].verified-by
 ```
 
 ### Two stores, two purposes
@@ -223,20 +207,16 @@ or per-quote booleans.
 
 ## Open questions
 
-1. **Which CSL-JSON fields are mandatory?** The spec has many optional
-   fields. A minimal `webpage` citation might only need `URL`, `title`,
-   `type`, and the DOD extensions.
-2. **One `citations.json` per page or one aggregate file?** Per-page is
-   simpler to derive (hook runs per page). Aggregate is easier to consume
-   (one file for Zotero import).
-3. **Zotero import library?** Zotero reads CSL-JSON via its "Import from
-    clipboard" or BetterBibTeX plugin. The non-CSL fields would survive in
-    the internal database as extra fields.
-4. **Relationship to `#:~:text=` fragments.** The fragment link goes in
+1. **Zotero round-trip.** Zotero reads CSL-JSON via its "Import from
+    clipboard" or BetterBibTeX plugin. The non-CSL fields (`content-sha256`,
+    `evidence`) should survive as extra fields — needs testing.
+2. **Relationship to `#:~:text=` fragments.** The fragment link goes in
     the rendered HTML, not in the JSON. `evidence[].quote` is the data; the
-   fragment is a progressive-enhancement UI feature.
-5. **Do we propose this as an extension to the CSL spec?** Premature —
-   get it working internally first, then see if there's community interest.
+    fragment is a progressive-enhancement UI feature.
+3. **Proposing as a CSL extension?** Premature — prove the model internally
+    first (a working wiki with verifiable citations), then see if there's
+    community interest. The schema is already clean enough to stand alone
+    without a namespace prefix.
 
 ## References
 
