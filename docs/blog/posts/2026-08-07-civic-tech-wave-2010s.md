@@ -92,7 +92,7 @@ Worth saying outright, not just implying: thanks to everyone who built, ran, fun
 
 [^occupy]: "It began in Zuccotti Park... from September 17 to November 15, 2011," and "The assembly was the main OWS decision-making body and used a modified consensus process," Wikipedia, ["Occupy Wall Street"](https://en.wikipedia.org/wiki/Occupy_Wall_Street).
 
-[^agora]: ["Agora Voting/nVotes"](https://www.opendemocracy.net/en/can-europe-make-it/agora-votingnvotes/), openDemocracy; ["Two Steps Forward, One Step Back: The Evolution of Democratic Digital Innovations in Podemos"](https://www.tandfonline.com/doi/full/10.1080/13608746.2022.2161973), *Journal of Contemporary European Studies*, 2022.
+[^agora]: "over 155,000 members of Podemos voted online to renew the party leadership," ["Agora Voting/nVotes"](https://www.opendemocracy.net/en/can-europe-make-it/agora-votingnvotes/), openDemocracy, 4 March 2017; the Plaza Podemos participation decay figures are from ["Two Steps Forward, One Step Back: The Evolution of Democratic Digital Innovations in Podemos"](https://www.tandfonline.com/doi/full/10.1080/13608746.2022.2161973), *Journal of Contemporary European Studies*, 2022.
 
 [^loomio]: [Loomio](https://en.wikipedia.org/wiki/Loomio), Wikipedia; DOD [org page](../../organisations/loomio.md).
 

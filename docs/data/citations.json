@@ -2596,6 +2596,18 @@
     ]
   },
   {
+    "id": "aecb3eec",
+    "type": "webpage",
+    "URL": "https://www.opendemocracy.net/en/can-europe-make-it/agora-votingnvotes/",
+    "title": "\"Agora Voting/nVotes\"",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "over 155,000 members of Podemos voted online to renew the party leadership,"
+      }
+    ]
+  },
+  {
     "id": "d508220e",
     "type": "webpage",
     "URL": "https://www.opengovpartnership.org/documents/australia-letter-of-intent-to-join-ogp/",

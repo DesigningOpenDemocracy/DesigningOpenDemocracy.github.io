@@ -378,7 +378,15 @@ weekly cron pass as event quotes, with the same cache, conditional GET, and AMBI
 detection. `util/check_footnote_quotes.py` reports current coverage
 (local/offline, informational only — not wired into CI or any gate) so the backfill pace
 can be tracked over time without committing to finishing it all at once.
-over time without committing to a backfill pace yet.
+
+**Multi-source footnotes:** when a footnote cites more than one source, the
+verbatim quote should come from the source supporting the most specific
+claim. If the claims are from different sources and equally important,
+prefer splitting into separate footnotes (one per source). For paywalled
+sources where only the article lead is visible, quote from the lead text
+and note which claims rely on the full article — the mechanical
+verification will flag the mismatch, but the footnote still gives readers
+more than a bare link.
 
 - `util/createPost.py` — interactive CLI to create a new blog post with frontmatter
 - `util/frontmatter_updator.py` — uses OpenAI API to auto-fill frontmatter; requires `util/requirements.txt`
