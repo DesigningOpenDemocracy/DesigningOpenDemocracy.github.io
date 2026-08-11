@@ -25,6 +25,17 @@ def normalize_ws(text):
     return " ".join(text.split())
 
 
+def count_occurrences(page_text, quote_text):
+    """How many times quote_text appears verbatim (whitespace-normalised)
+    in page_text. A count > 1 means the browser's #:~:text= highlight
+    could land on the wrong occurrence, and the quote is weaker evidence
+    than it looks — it isn't pinned to one specific place on the page.
+    Used by check_fragments.py's AMBIGUOUS report."""
+    if not page_text or not quote_text:
+        return 0
+    return normalize_ws(page_text).count(normalize_ws(quote_text))
+
+
 def extract_fragment(url):
     """Decoded evidence text from a url's #:~:text= directive, or None."""
     parsed = urlparse(url)

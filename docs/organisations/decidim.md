@@ -45,7 +45,8 @@ events:
   title: Decidim Association formed — Barcelona transfers trademark and code to community
     governance
   url: https://en.wikipedia.org/wiki/Decidim
-  quote: Decidim Association
+  quote: the community formally established Decidim Association in 2019 and City Council
+    of Barcelona gave control of the Decidim trademark and code base to Decidim Association.
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
