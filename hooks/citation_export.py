@@ -7,7 +7,7 @@ Output: docs/data/citations.json
 Sources:
   - Org events: frontmatter `events:` entries with `quote:` + `url:`
   - Prose footnotes: markdown footnotes with verbatim quoted excerpts
-  - Evidence cache: util/.event_evidence_cache.json (content_hash, checked)
+  - Evidence cache: docs/data/event-evidence-cache.json (content_hash, checked)
 
 CSL-JSON fields: type, URL, title, accessed
 DOD extension fields: dod-quote, dod-content-sha256, dod-last-verified-date
@@ -25,7 +25,7 @@ except ImportError:
     frontmatter = None
 
 DOCS_DIR = os.path.join(os.path.dirname(__file__), "..", "docs")
-CACHE_PATH = os.path.join(os.path.dirname(__file__), "..", "util", ".event_evidence_cache.json")
+CACHE_PATH = os.path.join(os.path.dirname(__file__), "..", "docs", "data", "event-evidence-cache.json")
 OUT_PATH = os.path.join(DOCS_DIR, "data", "citations.json")
 
 FOOTNOTE_RE = re.compile(r"^\[\^([^\]]+)\]:\s*(.*)$")

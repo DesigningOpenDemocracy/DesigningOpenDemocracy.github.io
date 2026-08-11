@@ -16,7 +16,7 @@ Verifies two sources of evidence through the same pipeline:
 
 Both sources share the same cache, fetch machinery, and reporting.
 
-Caching: results are kept in .event_evidence_cache.json (committed, so state
+Caching: results are kept in docs/data/event-evidence-cache.json (committed, so state
 survives across weekly cron runs on fresh checkouts) keyed by URL. Non-
 Wikipedia fetches use conditional GET (If-None-Match / If-Modified-Since) so
 an unchanged page costs a 304 instead of a full download. Wikipedia's
@@ -60,7 +60,7 @@ from text_fragment import count_occurrences, normalize_ws  # noqa: E402
 
 DOCS_DIR = os.path.join(os.path.dirname(__file__), "..", "docs")
 ORG_DIR = os.path.join(DOCS_DIR, "organisations")
-CACHE_PATH = os.path.join(os.path.dirname(__file__), ".event_evidence_cache.json")
+CACHE_PATH = os.path.join(os.path.dirname(__file__), "..", "docs", "data", "event-evidence-cache.json")
 USER_AGENT = "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
 FETCH_DELAY = 0.5  # seconds between requests — same rate limit as before
 
