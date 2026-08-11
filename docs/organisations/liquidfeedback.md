@@ -31,7 +31,7 @@ events:
 - date: '2009-10-01'
   title: First published by Public Software Group e.V., developed in response to requests
     from German Pirate Party members
-  url: https://en.wikipedia.org/wiki/LiquidFeedback#:~:text=The%20software%20was%20first%20published%20in%20October%202009%20by%20Public%20Software%20Group%20e.%20V.%20after%20being%20suggested%20by%20some%20members%20of%20Germany%27s%20Pirate%20Party%20unsatisfied%20with%20conventional%20means%20of%20political%20opinion%20formation.
+  url: https://en.wikipedia.org/wiki/LiquidFeedback
   quote: The software was first published in October 2009 by Public Software Group
     e. V. after being suggested by some members of Germany's Pirate Party unsatisfied
     with conventional means of political opinion formation.
@@ -41,7 +41,7 @@ events:
 - date: '2010-01-01'
   title: Pirate Party Berlin becomes the first political organisation to adopt LiquidFeedback,
     to draft new statutes
-  url: https://en.wikipedia.org/wiki/LiquidFeedback#:~:text=The%20Pirate%20Party%20Germany%20Berlin%20became%20the%20first%20political%20party%20to%20utilize%20the%20platform%20in%20January%202010%20for%20a%20state%20party%20conference.%20LiquidFeedback%20assisted%20in%20the%20development%20of%20new%20statutes%20for%20the%20branch%20during%20this%20time
+  url: https://en.wikipedia.org/wiki/LiquidFeedback
   quote: The Pirate Party Germany Berlin became the first political party to utilize
     the platform in January 2010 for a state party conference. LiquidFeedback assisted
     in the development of new statutes for the branch during this time
@@ -51,7 +51,7 @@ events:
 - date: '2010-06-01'
   title: Developers establish Interaktive Demokratie e.V., an independent research
     institute for digital-democracy research
-  url: https://en.wikipedia.org/wiki/LiquidFeedback#:~:text=In%20June%202010%2C%20the%20developers%20of%20LiquidFeedback%20founded%20Interaktive%20Demokratie%20e.V.%2C%20an%20independent%20and%20non-partisan%20research%20institute.
+  url: https://en.wikipedia.org/wiki/LiquidFeedback
   quote: In June 2010, the developers of LiquidFeedback founded Interaktive Demokratie
     e.V., an independent and non-partisan research institute.
   proof_level: high
@@ -60,7 +60,7 @@ events:
 - date: '2012-09-01'
   title: First public-sector (non-party) deployment, in Friesland County, Germany,
     for citizen consultation on council proposals
-  url: https://en.wikipedia.org/wiki/LiquidFeedback#:~:text=The%20initial%20implementation%20of%20LiquidFeedback%20for%20public%20engagement%20occurred%20in%20Friesland%20County%2C%20Germany%2C%20in%20September%202012.
+  url: https://en.wikipedia.org/wiki/LiquidFeedback
   quote: The initial implementation of LiquidFeedback for public engagement occurred
     in Friesland County, Germany, in September 2012.
   proof_level: high

@@ -26,7 +26,8 @@ events:
 - date: '1967-01-01'
   title: Established by the Finnish Parliament as the Finnish Innovation Fund, under
     parliamentary supervision
-  url: https://en.wikipedia.org/wiki/SITRA#:~:text=Sitra%20was%20founded%20in%201967%20as%20a%20part%20of%20the%20Bank%20of%20Finland
+  url: https://en.wikipedia.org/wiki/SITRA
+  quote: Sitra was founded in 1967 as a part of the Bank of Finland
   proof_level: high
   url_checked: '2026-08-10'
   notable: true

@@ -25,7 +25,8 @@ events:
 - date: '1986-01-01'
   title: Founded to represent Ecuador's Indigenous nationalities, becoming the country's
     largest Indigenous organisation
-  url: https://en.wikipedia.org/wiki/Confederation_of_Indigenous_Nationalities_of_Ecuador#:~:text=CONAIE%20was%20founded%20in%201986
+  url: https://en.wikipedia.org/wiki/Confederation_of_Indigenous_Nationalities_of_Ecuador
+  quote: CONAIE was founded in 1986
   proof_level: high
   url_checked: '2026-08-10'
   notable: true

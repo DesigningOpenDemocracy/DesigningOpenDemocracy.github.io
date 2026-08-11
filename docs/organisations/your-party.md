@@ -26,7 +26,8 @@ events:
 - date: '2009-01-01'
   title: Founded by Yoshimi Watanabe, a former Liberal Democratic Party minister,
     as a reformist Japanese political party
-  url: https://en.wikipedia.org/wiki/Your_Party_(Japan)#:~:text=party%20was%20founded%20on%20August%208%2C%202009
+  url: https://en.wikipedia.org/wiki/Your_Party_(Japan)
+  quote: party was founded on August 8, 2009
   proof_level: high
   url_checked: '2026-08-10'
   notable: true

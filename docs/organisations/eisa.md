@@ -28,7 +28,8 @@ rss_feed: https://www.eisa.org/feed
 events:
 - date: '1996-01-01'
   title: Founded as the Electoral Institute for Sustainable Democracy in Africa, Johannesburg
-  url: https://en.wikipedia.org/wiki/Electoral_Institute_for_Sustainable_Democracy_in_Africa#:~:text=founded%20in%201996%20in%20Johannesburg
+  url: https://en.wikipedia.org/wiki/Electoral_Institute_for_Sustainable_Democracy_in_Africa
+  quote: founded in 1996 in Johannesburg
   proof_level: high
   url_checked: '2026-08-10'
   notable: true

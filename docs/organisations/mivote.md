@@ -22,7 +22,7 @@ concepts:
 events:
 - date: '2017-02-11'
   title: MiVote app publicly launched in Australia with its first test vote
-  url: https://medium.com/mivote/new-model-of-democracy-passes-first-test-c9a3db8da2a1#:~:text=MiVote%20launched%20its%20world-leading%20democratic%20model%20in%20February%20with%20a%20test%20vote%20asking%20Australians%20how%20they%20want%20to%20participate%20in%20the%20country%E2%80%99s%20decision-making%20process.
+  url: https://medium.com/mivote/new-model-of-democracy-passes-first-test-c9a3db8da2a1
   quote: MiVote launched its world-leading democratic model in February with a test
     vote asking Australians how they want to participate in the country’s decision-making
     process.
@@ -32,7 +32,7 @@ events:
 - date: '2019-01-01'
   title: Australian party deregistered before the 2019 federal election, without electing
     any senators
-  url: https://www.designingopendemocracy.com/blog/2021/08/07/podcast-catching-up-with-adam-jacoby-founder-of-mivote/#:~:text=The%20Australian%20party%20deregistered%20around%202019%3B%20the%20movement%20and%20technology%20continued%20under%20a%20different%20structure.
+  url: https://www.designingopendemocracy.com/blog/2021/08/07/podcast-catching-up-with-adam-jacoby-founder-of-mivote/
   quote: The Australian party deregistered around 2019; the movement and technology
     continued under a different structure.
   proof_level: high

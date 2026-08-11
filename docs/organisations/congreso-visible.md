@@ -25,7 +25,7 @@ events:
 - date: '1998-01-01'
   title: Launched at Universidad de los Andes as Colombia's first legislative transparency
     platform
-  url: https://congresovisible.uniandes.edu.co/quesomos#:~:text=Desde%201998%2C%20el%20proyecto%20Congreso%20Visible%20del%20Departamento%20de%20Ciencia%20Pol%C3%ADtica
+  url: https://congresovisible.uniandes.edu.co/quesomos
   quote: Desde 1998, el proyecto Congreso Visible del Departamento de Ciencia Política
   proof_level: high
   url_checked: '2026-08-10'

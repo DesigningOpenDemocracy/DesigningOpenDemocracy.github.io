@@ -41,7 +41,7 @@ events:
   country: BG
 - date: '2026-10-07'
   title: 2026 Global Forum on Modern Direct Democracy — Gaborone, Botswana
-  url: https://www.democracy-international.org/events#:~:text=2026%20Global%20Forum%20on%20Modern%20Direct%20Democracy
+  url: https://www.democracy-international.org/events
   quote: 2026 Global Forum on Modern Direct Democracy
   proof_level: high
   url_checked: '2026-08-10'
@@ -53,7 +53,8 @@ events:
 - date: '2011-06-01'
   title: Formally registered as an association, building on a loose network dating
     back to 2002
-  url: https://en.wikipedia.org/wiki/Democracy_International_eV#:~:text=formally%20established%20in%20June%202011
+  url: https://en.wikipedia.org/wiki/Democracy_International_eV
+  quote: formally established in June 2011
   proof_level: high
   url_checked: '2026-08-10'
   notable: true

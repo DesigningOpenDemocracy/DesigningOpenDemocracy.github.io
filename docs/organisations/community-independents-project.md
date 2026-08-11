@@ -25,7 +25,7 @@ events:
 - date: '2026-09-11'
   title: Communities Rising — Action by the People for the Times (6th annual Community
     Independents Convention)
-  url: https://events.humanitix.com/communities-rising-action-by-the-people-for-the-times#:~:text=the%20sixth%20annual%20Convention%20of%20the%20Community%20Independents%20Movement
+  url: https://events.humanitix.com/communities-rising-action-by-the-people-for-the-times
   quote: the sixth annual Convention of the Community Independents Movement
   proof_level: high
   url_checked: '2026-08-10'

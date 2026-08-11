@@ -26,7 +26,7 @@ events:
 - date: '2018-10-01'
   title: Launched as an independent global philanthropic organisation, spun out of
     Omidyar Network's Governance & Citizen Engagement initiative
-  url: https://www.govtech.com/civic/new-global-civic-tech-group-emerges-from-the-omidyar-group.html#:~:text=Officially%20launched%20in%20recent%20weeks%2C%20Luminate%20aims%20to%20fund%20projects%20and%20organizations%20that%20can%20drive%20changes%20that%20fall%20into%20one%20of%20four%20categories%3A%20civic%20empowerment%2C%20data%20and%20digital%20rights%2C%20transparency%20and%20independent%20media.
+  url: https://www.govtech.com/civic/new-global-civic-tech-group-emerges-from-the-omidyar-group.html
   quote: 'Officially launched in recent weeks, Luminate aims to fund projects and
     organizations that can drive changes that fall into one of four categories: civic
     empowerment, data and digital rights, transparency and independent media.'

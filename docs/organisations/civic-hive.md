@@ -25,7 +25,7 @@ location:
 events:
 - date: '2017-01-01'
   title: Founded in Lagos as a civic-tech fellowship and innovation hub for West Africa
-  url: https://civichive.org/about-us/#:~:text=Founded%20in%202017%20as%20the%20innovation%20centre%20of%20BudgIT
+  url: https://civichive.org/about-us/
   quote: Founded in 2017 as the innovation centre of BudgIT
   proof_level: high
   url_checked: '2026-08-10'

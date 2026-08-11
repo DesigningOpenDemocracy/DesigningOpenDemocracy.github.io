@@ -28,7 +28,8 @@ events:
 - date: '2011-01-01'
   title: Founded by Alexei Navalny as the Anti-Corruption Foundation to investigate
     official corruption in Russia
-  url: https://en.wikipedia.org/wiki/Anti-Corruption_Foundation#:~:text=FBK%20was%20founded%20by%20Alexei%20Navalny
+  url: https://en.wikipedia.org/wiki/Anti-Corruption_Foundation
+  quote: FBK was founded by Alexei Navalny
   proof_level: high
   url_checked: '2026-08-10'
   notable: true

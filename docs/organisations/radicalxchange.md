@@ -27,7 +27,9 @@ events:
 - date: '2018-05-15'
   title: 'Radical Markets: Uprooting Capitalism and Democracy for a Just Society published
     (Posner & Weyl)'
-  url: https://en.wikipedia.org/wiki/Glen_Weyl#:~:text=co%2Dauthor%20(with%20Eric%20Posner)%20of%20the%20book%20Radical%20Markets%3A%20Uprooting%20Capitalism%20and%20Democracy%20for%20a%20Just%20Society
+  url: https://en.wikipedia.org/wiki/Glen_Weyl
+  quote: 'co-author (with Eric Posner) of the book Radical Markets: Uprooting Capitalism
+    and Democracy for a Just Society'
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
@@ -41,7 +43,8 @@ events:
 - date: '2024-04-16'
   title: 'Plurality: The Future of Collaborative Technology and Democracy published
     (Weyl, Tang & community)'
-  url: https://en.wikipedia.org/wiki/Glen_Weyl#:~:text=Plurality%3A%20The%20Future%20of%20Collaborative%20Technology%20and%20Democracy
+  url: https://en.wikipedia.org/wiki/Glen_Weyl
+  quote: 'Plurality: The Future of Collaborative Technology and Democracy'
   proof_level: high
   url_checked: '2026-08-10'
   notable: true

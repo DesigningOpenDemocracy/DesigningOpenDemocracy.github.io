@@ -24,7 +24,7 @@ news_page: https://www.lcps-lebanon.org/en/press
 events:
 - date: '1989-01-01'
   title: Founded as an independent, non-partisan think tank in Beirut
-  url: https://www.lcps-lebanon.org/en/about#:~:text=Founded%20in%201989%2C%20the%20Lebanese%20Center%20for%20Policy%20Studies%20is%20an%20independently%20managed%2C%20non-partisan%2C%20non-profit%2C%20non-governmental%20think%20tank%20whose%20mission%20is%20to%20produce%20and%20advocate%20for%20policies%20that%20improve%20governance%20in%20Lebanon%20and%20the%20Arab%20region.
+  url: https://www.lcps-lebanon.org/en/about
   quote: Founded in 1989, the Lebanese Center for Policy Studies is an independently
     managed, non-partisan, non-profit, non-governmental think tank whose mission is
     to produce and advocate for policies that improve governance in Lebanon and the
@@ -34,7 +34,7 @@ events:
   notable: true
 - date: '2006-01-01'
   title: Contributed to drafting the Boutros electoral law
-  url: https://www.lcps-lebanon.org/en/about#:~:text=contributing%20to%20formulating%20the%202006%20Boutros%20draft%20electoral%20law
+  url: https://www.lcps-lebanon.org/en/about
   quote: contributing to formulating the 2006 Boutros draft electoral law
   proof_level: high
   url_checked: '2026-08-10'

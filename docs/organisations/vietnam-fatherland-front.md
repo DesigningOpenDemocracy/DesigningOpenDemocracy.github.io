@@ -23,7 +23,8 @@ events:
 - date: '1977-02-01'
   title: Founded as the umbrella political coalition under the Communist Party of
     Vietnam, succeeding the North Vietnamese Fatherland Front
-  url: https://en.wikipedia.org/wiki/Vietnam_Fatherland_Front#:~:text=was%20founded%20in%20February%201977%20by%20the%20merger
+  url: https://en.wikipedia.org/wiki/Vietnam_Fatherland_Front
+  quote: was founded in February 1977 by the merger
   proof_level: high
   url_checked: '2026-08-10'
   notable: true

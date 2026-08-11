@@ -20,14 +20,16 @@ events:
 - date: '1983-10-10'
   title: Founded as the first citizen-led election monitoring organisation in the
     world, Philippines
-  url: https://en.wikipedia.org/wiki/National_Citizens%27_Movement_for_Free_Elections#:~:text=NAMFREL%20was%20formally%20organized%20in%20October%201983
+  url: https://en.wikipedia.org/wiki/National_Citizens%27_Movement_for_Free_Elections
+  quote: NAMFREL was formally organized in October 1983
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
 - date: '1986-02-07'
   title: Mobilised 500,000 volunteers for Operation Quick Count — demonstrated Marcos
     lost the snap election, triggering the People Power uprising
-  url: https://en.wikipedia.org/wiki/National_Citizens%27_Movement_for_Free_Elections#:~:text=NAMFREL%20mobilized%20500%2C000%20volunteers%20nationwide
+  url: https://en.wikipedia.org/wiki/National_Citizens%27_Movement_for_Free_Elections
+  quote: NAMFREL mobilized 500,000 volunteers nationwide
   proof_level: high
   url_checked: '2026-08-10'
   notable: true

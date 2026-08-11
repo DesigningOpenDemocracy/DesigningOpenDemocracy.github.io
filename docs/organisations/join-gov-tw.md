@@ -28,7 +28,7 @@ events:
 - date: '2015-01-01'
   title: Launched by Taiwan's National Development Council following a February 2015
     Executive Yuan directive
-  url: https://europeandemocracyhub.epd.eu/exploring-worldwide-democratic-innovations-taiwan/#:~:text=was%20launched%20under%20the%20sponsorship%20of%20the%20National%20Development%20Council.%20The%20website%20has%20made%20it%20possible%20for%20citizens%20to%20submit%20a%20policy%20proposal%20to%20the%20government%20via%20the%20Internet.
+  url: https://europeandemocracyhub.epd.eu/exploring-worldwide-democratic-innovations-taiwan/
   quote: was launched under the sponsorship of the National Development Council. The
     website has made it possible for citizens to submit a policy proposal to the government
     via the Internet.

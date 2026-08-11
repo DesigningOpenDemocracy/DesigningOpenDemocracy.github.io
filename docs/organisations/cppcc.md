@@ -22,7 +22,7 @@ events:
 - date: '1945-01-01'
   title: Established as the Chinese People's Political Consultative Conference, the
     united front and top political advisory body
-  url: https://en.wikipedia.org/wiki/Chinese_People%27s_Political_Consultative_Conference#:~:text=The%20Political%20Consultative%20Conference%20was%20established%20in%201945%20as%20part%20of%20peace%20negotiations%20between%20the%20Kuomintang%20and%20the%20CCP.
+  url: https://en.wikipedia.org/wiki/Chinese_People%27s_Political_Consultative_Conference
   quote: The Political Consultative Conference was established in 1945 as part of
     peace negotiations between the Kuomintang and the CCP.
   proof_level: high

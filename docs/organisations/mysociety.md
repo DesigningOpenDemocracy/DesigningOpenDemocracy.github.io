@@ -27,21 +27,26 @@ events:
 - date: '2003-01-01'
   title: Founded by Tom Steinberg as a UK civic-tech charity, launching TheyWorkForYou
     and WriteToThem
-  url: https://en.wikipedia.org/wiki/MySociety#:~:text=mySociety%20was%20founded%20by%20Tom%20Steinberg%20in%20September%202003
+  url: https://en.wikipedia.org/wiki/MySociety
+  quote: mySociety was founded by Tom Steinberg in September 2003
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
 - date: '2004-06-01'
   title: Launched TheyWorkForYou — making parliamentary activity searchable and accessible
     to UK citizens
-  url: https://en.wikipedia.org/wiki/MySociety#:~:text=TheyWorkForYou%20is%20a%20parliamentary%20monitoring%20website%20which%20aims%20to%20make%20it%20easier
+  url: https://en.wikipedia.org/wiki/MySociety
+  quote: TheyWorkForYou is a parliamentary monitoring website which aims to make it
+    easier
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
 - date: '2005-02-01'
   title: Launched WriteToThem — enabling citizens to contact their elected representatives
     online
-  url: https://en.wikipedia.org/wiki/MySociety#:~:text=WriteToThem%20is%20a%20website%20which%20allows%20UK%20citizens%20to%20contact%20their%20elected%20representatives
+  url: https://en.wikipedia.org/wiki/MySociety
+  quote: WriteToThem is a website which allows UK citizens to contact their elected
+    representatives
   proof_level: high
   url_checked: '2026-08-10'
   notable: true

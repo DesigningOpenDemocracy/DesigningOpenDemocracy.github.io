@@ -14,7 +14,7 @@ concepts:
 events:
 - date: '2016-09-01'
   title: Held its founding pitch night in Bendigo, raising $35,000 from Founding Patrons
-  url: https://web.archive.org/web/20190824085752/https://bhive.coop/our-story/#:~:text=%2435%2C000%20was%20raised%20in%20donations%20to%20kickstart%20bHive%20from%20an%20amazing%20group%20of%20Founding%20Patrons.
+  url: https://web.archive.org/web/20190824085752/https://bhive.coop/our-story/
   quote: $35,000 was raised in donations to kickstart bHive from an amazing group
     of Founding Patrons.
   proof_level: high

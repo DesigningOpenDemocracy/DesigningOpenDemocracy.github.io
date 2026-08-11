@@ -28,7 +28,7 @@ events:
 - date: '2007-01-01'
   title: Founded (as Healthy Democracy Oregon) by Tyrone Reitman and Elliot Shuford
     to run the Citizens' Initiative Review
-  url: https://www.influencewatch.org/non-profit/healthy-democracy/#:~:text=Healthy%20Democracy%20was%20founded%20in%202007%20as%20%E2%80%9CHealthy%20Democracy%20Oregon%E2%80%9D%20by%20Crosby%20and%20his%20wife%20and%20two%20activists%2C%20Tyrone%20Reitman%20and%20Elliot%20Shuford.
+  url: https://www.influencewatch.org/non-profit/healthy-democracy/
   quote: Healthy Democracy was founded in 2007 as “Healthy Democracy Oregon” by Crosby
     and his wife and two activists, Tyrone Reitman and Elliot Shuford.
   proof_level: high
@@ -37,7 +37,7 @@ events:
 - date: '2011-07-21'
   title: Oregon House Bill 2634 signed into law, making the Citizens' Initiative Review
     a permanent part of the state's initiative process
-  url: https://www.influencewatch.org/non-profit/healthy-democracy/#:~:text=In%202011%2C%20Oregon%20state%20legislators%20sponsored%20House%20Bill%202634%20which%20made%20the%20Citizens%E2%80%99%20Initiative%20Review%20%28CIR%29%20process%20an%20official%20and%20permanent%20part%20of%20Oregon%E2%80%99s%20elections
+  url: https://www.influencewatch.org/non-profit/healthy-democracy/
   quote: In 2011, Oregon state legislators sponsored House Bill 2634 which made the
     Citizens’ Initiative Review (CIR) process an official and permanent part of Oregon’s
     elections

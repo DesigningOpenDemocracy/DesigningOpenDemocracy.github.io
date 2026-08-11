@@ -27,14 +27,17 @@ events:
 - date: '1995-01-01'
   title: Founded in Stockholm as an intergovernmental organisation supporting sustainable
     democracy worldwide
-  url: https://en.wikipedia.org/wiki/International_Institute_for_Democracy_and_Electoral_Assistance#:~:text=The%20Founding%20Conference%20of%20International%20IDEA%20took%20place%20on%2027%E2%80%9328%20February%201995
+  url: https://en.wikipedia.org/wiki/International_Institute_for_Democracy_and_Electoral_Assistance
+  quote: The Founding Conference of International IDEA took place on 27–28 February
+    1995
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
 - date: '2006-01-01'
   title: Launched the Global State of Democracy indices — a flagship annual assessment
     covering 160+ countries
-  url: https://en.wikipedia.org/wiki/International_Institute_for_Democracy_and_Electoral_Assistance#:~:text=The%20Global%20State%20of%20Democracy%20(GSoD)%20Initiative%20was%20launched%20in%202016
+  url: https://en.wikipedia.org/wiki/International_Institute_for_Democracy_and_Electoral_Assistance
+  quote: The Global State of Democracy (GSoD) Initiative was launched in 2016
   proof_level: high
   url_checked: '2026-08-10'
   notable: true

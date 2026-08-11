@@ -24,7 +24,7 @@ location:
 events:
 - date: '2016-01-01'
   title: Founded in Bogotá as a citizen participation and social innovation laboratory
-  url: https://www.weforum.org/organizations/movilizatorio/#:~:text=Movilizatorio%20was%20born%20in%202016%20precisely%20as%20a%20response%20to%20the%20risks%20and%20possibilities%20to%20create%20better%20civic%20engagement%20and%20social%20innovation%20in%20a%20context%20of%20peace%20negotiations%20and%20peacebuilding.
+  url: https://www.weforum.org/organizations/movilizatorio/
   quote: Movilizatorio was born in 2016 precisely as a response to the risks and possibilities
     to create better civic engagement and social innovation in a context of peace
     negotiations and peacebuilding.

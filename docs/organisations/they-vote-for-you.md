@@ -26,7 +26,7 @@ related_orgs:
 events:
 - date: '2014-10-21'
   title: Launched by the OpenAustralia Foundation with seed funding connected to Google
-  url: https://oaf.org.au/2014/10/21/they-vote-for-you/#:~:text=today%20the%20OpenAustralia%20Foundation%20is%20launching%20a%20new%20site%20They%20Vote%20for%20You
+  url: https://oaf.org.au/2014/10/21/they-vote-for-you/
   quote: today the OpenAustralia Foundation is launching a new site They Vote for
     You
   proof_level: high

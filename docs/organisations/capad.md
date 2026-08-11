@@ -26,7 +26,7 @@ rss_feed: https://canberra-alliance.org.au/feed
 events:
 - date: '2026-08-23'
   title: 2026 CAPaD AGM — Annual General Meeting, online via Zoom
-  url: https://canberra-alliance.org.au/events/#:~:text=2026%20CAPaD%20AGM
+  url: https://canberra-alliance.org.au/events/
   quote: 2026 CAPaD AGM
   proof_level: high
   url_checked: '2026-08-10'
@@ -59,7 +59,7 @@ events:
 - date: '2026-12-06'
   title: Community Assembly following up MP asks for 2026 — Woden Valley Uniting Church,
     Curtin ACT
-  url: https://canberra-alliance.org.au/events/#:~:text=Community%20Assembly%20%E2%80%93%20following%20up%20our%20MP%20asks%20for%202026
+  url: https://canberra-alliance.org.au/events/
   quote: Community Assembly – following up our MP asks for 2026
   proof_level: high
   url_checked: '2026-08-10'

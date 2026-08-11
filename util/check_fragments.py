@@ -2,15 +2,12 @@
 """
 check_fragments.py — mechanically re-verify event evidence against live pages.
 
-An event's "mechanical proof" is one piece of exact text that must appear on
-the cited page — supplied either as a `quote:` field, or as a `#:~:text=`
-fragment embedded in the `url:` itself. These are NOT two different proof
-mechanisms with separate verification logic: whichever one an event has,
-the "evidence text" gets checked the same way, against the same fetched
-page, through one code path. The only thing fragments add on top of `quote:`
-is that a browser highlights the text on click when a reader follows the
-link — worth keeping for that reason, not worth a second verification
-implementation.
+An event's "mechanical proof" is the exact text in its `quote:` field —
+this must appear verbatim on the cited page. The #:~:text= fragment a
+reader sees when they click through is derived from quote: at render
+time (see util/text_fragment.py and hooks/org_events.py's Jinja filter);
+it is never stored in frontmatter, so there's nothing fragment-specific
+to verify here — checking quote: against the live page covers both.
 
 Caching: results are kept in .event_evidence_cache.json (committed, so state
 survives across weekly cron runs on fresh checkouts) keyed by URL. Non-
@@ -40,8 +37,7 @@ import re
 import sys
 import time
 from datetime import date
-from urllib.parse import quote as url_quote
-from urllib.parse import unquote, urlparse, urlunparse
+from urllib.parse import unquote, urlparse
 
 try:
     import frontmatter
@@ -49,6 +45,9 @@ try:
 except ImportError as e:
     print(f"Missing dependency: {e.name} — pip install python-frontmatter requests")
     sys.exit(1)
+
+sys.path.insert(0, os.path.dirname(__file__))
+from text_fragment import normalize_ws  # noqa: E402
 
 ORG_DIR = os.path.join(os.path.dirname(__file__), "..", "docs", "organisations")
 CACHE_PATH = os.path.join(os.path.dirname(__file__), ".event_evidence_cache.json")
@@ -76,62 +75,10 @@ def sha256(text):
     return hashlib.sha256(text.encode("utf-8", errors="replace")).hexdigest()
 
 
-def normalize_ws(text):
-    """Collapse whitespace for forgiving substring matching."""
-    return " ".join(text.split())
-
-
 def text_contains(text, needle):
     if not text or not needle:
         return False
     return normalize_ws(needle) in normalize_ws(text)
-
-
-def extract_fragment(url):
-    parsed = urlparse(url)
-    if parsed.fragment and parsed.fragment.startswith(":~:text="):
-        return unquote(parsed.fragment[len(":~:text="):])
-    return None
-
-
-def make_text_fragment(quote_text):
-    """Build a `text=...` Text Fragment directive from an exact quote string,
-    per the Text Fragments spec (https://wicg.github.io/scroll-to-text-fragment/).
-
-    Browser support is now near-universal on current versions (Chrome 80+,
-    Edge 83+, Safari 16.1+, Firefox 131+, Opera 67+, Samsung Internet 13+) —
-    an unsupporting browser just ignores the directive and loads the page
-    normally, so this is pure progressive enhancement.
-
-    Quotes over ~300 chars use the textStart,textEnd form (first/last few
-    words) instead of encoding the whole string — matching a very long exact
-    string across DOM node boundaries is more fragile, and it keeps the URL
-    shorter. Either way this only controls where the browser scrolls to and
-    highlights on click; it has no effect on the mechanical proof-checking
-    in check_evidence(), which always matches against the full quote: text.
-    """
-    normalized = normalize_ws(quote_text)
-    words = normalized.split(" ")
-    if len(normalized) <= 300:
-        return "text=" + url_quote(normalized, safe="")
-    start = " ".join(words[:8])
-    end = " ".join(words[-8:])
-    return "text=" + url_quote(start, safe="") + "," + url_quote(end, safe="")
-
-
-def add_fragment_to_url(url, quote_text):
-    """Return `url` with a #:~:text= directive appended, or None if it
-    already has one (extract_fragment() finds it) or there's no quote_text
-    to derive one from. An existing non-text anchor (e.g. #section-2) is
-    preserved — a page anchor and a text directive can coexist in the same
-    fragment, joined by ':~:' per the spec.
-    """
-    if not quote_text or extract_fragment(url):
-        return None
-    parsed = urlparse(url)
-    directive = make_text_fragment(quote_text)
-    new_fragment = f"{parsed.fragment}:~:{directive}" if parsed.fragment else f":~:{directive}"
-    return urlunparse(parsed._replace(fragment=new_fragment))
 
 
 def wikipedia_title(url):
@@ -257,77 +204,12 @@ def check_evidence(url, evidence, cache, use_cache=True):
     return ("good" if result else "bad"), False, None
 
 
-def add_fragments_mode(slug_filter=None, dry_run=False):
-    """Local/offline pass: for every event with a quote: but whose url: has
-    no #:~:text= fragment yet, derive one from the quote and append it.
-    Purely additive (see add_fragment_to_url) — doesn't touch quote: itself,
-    doesn't re-verify anything, and doesn't change proof_level (a quote:
-    already scores "high" on its own; the fragment only adds the browser
-    scroll-and-highlight UX on top).
-    """
-    sys.path.insert(0, os.path.dirname(__file__))
-    from reorder_frontmatter import reorder_frontmatter as _canonical_reorder
-
-    added = 0
-    orgs_touched = 0
-    for path in sorted(glob.glob(os.path.join(ORG_DIR, "*.md"))):
-        slug = os.path.basename(path)[:-3]
-        if slug in ("organisations", "concepts"):
-            continue
-        if slug_filter and slug != slug_filter:
-            continue
-
-        post = frontmatter.load(path)
-        events = post.metadata.get("events") or []
-        changed = False
-        for e in events:
-            url = str(e.get("url", ""))
-            quote_text = e.get("quote")
-            if not url or not quote_text:
-                continue
-            new_url = add_fragment_to_url(url, quote_text)
-            if new_url:
-                e["url"] = new_url
-                changed = True
-                added += 1
-                print(f"  + fragment  {slug}  [{e.get('date', '?')}]  {e.get('title', '')[:50]}")
-
-        if changed:
-            orgs_touched += 1
-            if not dry_run:
-                frontmatter.dump(post, path)
-                with open(path) as f:
-                    content = f.read()
-                m = re.match(r"^---\n(.*?)\n---\n", content, re.DOTALL)
-                if m:
-                    new_fm = _canonical_reorder(m.group(1))
-                    new_content = f"---\n{new_fm}\n---\n{content[m.end():]}"
-                    if new_content != content:
-                        with open(path, "w") as f:
-                            f.write(new_content)
-
-    verb = "Would add" if dry_run else "Added"
-    print(f"\n{verb} fragments to {added} event(s) across {orgs_touched} org page(s).")
-    return added
-
-
 def main():
     parser = argparse.ArgumentParser(description="Verify event evidence against live pages")
     parser.add_argument("--slug", type=str, help="Check a single org")
     parser.add_argument("--no-cache", action="store_true",
                         help="Ignore the evidence cache — re-fetch and re-verify everything")
-    parser.add_argument("--add-fragments", action="store_true",
-                        help="Local/offline pass: append a #:~:text= fragment (derived "
-                             "from quote:) to url: for events that have a quote but no "
-                             "fragment yet. Writes files in place and exits — does not "
-                             "run the network verification pass below.")
-    parser.add_argument("--dry-run", action="store_true",
-                        help="With --add-fragments, print what would change without writing.")
     args = parser.parse_args()
-
-    if args.add_fragments:
-        add_fragments_mode(args.slug, dry_run=args.dry_run)
-        return
 
     cache = {} if args.no_cache else load_cache()
 
@@ -355,7 +237,7 @@ def main():
                 skipped_warning += 1
                 continue
 
-            evidence = e.get("quote") or extract_fragment(url)
+            evidence = e.get("quote")
             if not evidence:
                 skipped_no_evidence += 1
                 continue
@@ -388,7 +270,7 @@ def main():
     print(f"Evidence checked: {good} good, {bad} mismatch, {errors} fetch errors")
     print(f"  ({unchanged} of those confirmed unchanged since last check — skipped re-download)")
     print(f"Skipped: {skipped_warning} have proof_warning (explicitly unverified), "
-          f"{skipped_no_evidence} have neither quote: nor a fragment (note-only or source-only)")
+          f"{skipped_no_evidence} have no quote: (note-only or source-only)")
 
     if bad:
         print(f"\n{bad} piece(s) of evidence no longer match their live source.")

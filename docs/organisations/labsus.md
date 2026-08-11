@@ -25,7 +25,7 @@ events:
 - date: '2005-01-01'
   title: Founded in Rome as the Laboratory for Subsidiarity, pioneering shared administration
     in Italy
-  url: https://www.labsus.org/chi-siamo/#:~:text=Il%20Progetto%20Labsus%2C%20il%20Laboratorio%20per%20la%20sussidiariet%C3%A0%2C%20ha%20un%20obiettivo%20ben%20preciso
+  url: https://www.labsus.org/chi-siamo/
   quote: Il Progetto Labsus, il Laboratorio per la sussidiarietà, ha un obiettivo
     ben preciso
   proof_level: high

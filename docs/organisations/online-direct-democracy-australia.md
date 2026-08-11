@@ -19,14 +19,14 @@ location:
 events:
 - date: '2007-01-01'
   title: Founded as "Senator Online"; later renamed Online Direct Democracy in 2015
-  url: https://en.wikipedia.org/wiki/Online_Direct_Democracy#:~:text=The%20party%20contested%20the%202007%20and%202013%20federal%20elections%20as%20Senator%20Online.
+  url: https://en.wikipedia.org/wiki/Online_Direct_Democracy
   quote: The party contested the 2007 and 2013 federal elections as Senator Online.
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
 - date: '2020-12-01'
   title: Deregistered as a political party
-  url: https://en.wikipedia.org/wiki/Online_Direct_Democracy#:~:text=Online%20Direct%20Democracy%20%E2%80%93%20%28Empowering%20the%20People%21%29%20was%20a%20registered%20Australian%20political%20party.
+  url: https://en.wikipedia.org/wiki/Online_Direct_Democracy
   quote: Online Direct Democracy – (Empowering the People!) was a registered Australian
     political party.
   proof_level: high

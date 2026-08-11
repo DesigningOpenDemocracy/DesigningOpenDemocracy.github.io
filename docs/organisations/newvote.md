@@ -25,7 +25,7 @@ rss_feed: https://newvote.org/blog/rss.xml
 events:
 - date: '2016-11-10'
   title: Established as a not-for-profit / for-purpose organisation in Australia
-  url: https://newvote.org/the-institute#:~:text=NewVote%20is%20founded%20as%20a%20for-purpose%20%28a%20not-for-profit%29%2C%20Australia.
+  url: https://newvote.org/the-institute
   quote: NewVote is founded as a for-purpose (a not-for-profit), Australia.
   proof_level: high
   url_checked: '2026-08-10'
@@ -39,7 +39,7 @@ events:
   proof_warning: true
 - date: '2019-07-24'
   title: NewVote platform publicly launched
-  url: https://newvote.org/the-institute#:~:text=The%20University%20of%20Queensland%20Student%20Union%20is%20piloting%20and%20promoting%20the%20app%20with%20its%2052%2C000%20students%2C%20starting%20on%2024%20July%202019.
+  url: https://newvote.org/the-institute
   quote: The University of Queensland Student Union is piloting and promoting the
     app with its 52,000 students, starting on 24 July 2019.
   proof_level: high
