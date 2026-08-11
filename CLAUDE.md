@@ -346,7 +346,37 @@ regardless of what's written.
   under the title by `hooks/concept_filter.py` — concept authors do not need to add it manually.
   The org index page reads the `?concept=` query param and pre-checks the Concepts facet.
 
+### Prose footnote citations (org pages, blog posts, concept pages)
 
+Markdown footnotes (`[^ref]: ["Title"](url), Source, date.`) are the citation mechanism for
+narrative prose, distinct from the structured `events:` frontmatter field (which has its own
+`quote:`/`note:`/`proof_level` sourcing discipline — see Organisation pages above). Footnotes
+are freeform text with no YAML schema, so that discipline doesn't apply to them today — most
+existing footnotes are pure citation-style (title, source, date), not verbatim excerpts.
+
+**Convention going forward**: where the cited source has a specific sentence that supports the
+claim, include it as a verbatim quoted phrase in the footnote text itself, e.g.:
+
+```
+[^tvfy-about]: "today the OpenAustralia Foundation is launching a new site They Vote for You,"
+  [About](https://theyvoteforyou.org.au/about), They Vote For You.
+```
+
+This is an in-prose analogue of `events:`' `quote:` field — same reason (a claim should be
+traceable to specific source text, not just a link) — but lighter-touch, since footnotes don't
+have a structured field to hang it on. Don't retrofit this onto footnotes that already read
+fine as plain citations; apply it to *new* footnotes as they're added, and opportunistically
+when an existing footnote is already being touched for another reason.
+
+**Not yet decided**: whether to (a) backfill the existing footnote corpus, and (b) whether
+`util/check_fragments.py`'s `--add-fragments` machinery should extend to footnotes once they
+reliably carry quoted text (the underlying `make_text_fragment()`/`add_fragment_to_url()`
+functions are already generic — quote string in, fragment-bearing URL out — so no new
+fragment-generation code would be needed, just a source of quotes to feed them). See
+[issue #140](https://github.com/DesigningOpenDemocracy/DesigningOpenDemocracy.github.io/issues/140)
+for the full scoping. `util/check_footnote_quotes.py` reports current coverage
+(local/offline, informational only — not wired into CI or any gate) so this can be tracked
+over time without committing to a backfill pace yet.
 
 - `util/createPost.py` — interactive CLI to create a new blog post with frontmatter
 - `util/frontmatter_updator.py` — uses OpenAI API to auto-fill frontmatter; requires `util/requirements.txt`
@@ -453,6 +483,13 @@ These are linked from the bottom of the org index table for researcher download.
   python util/reorder_frontmatter.py            # reorder all org pages in place
   python util/reorder_frontmatter.py --check    # report only, exit 1 if any need reordering
   python util/reorder_frontmatter.py --slug mosaiclab  # single org
+  ```
+
+- `util/check_footnote_quotes.py` — reports how many prose footnote citations (org pages, blog posts, concept pages) carry a verbatim quoted excerpt vs. a bare title/source/date citation. Prep-work visibility script for eventually extending `check_fragments.py`'s fragment generation to footnotes (see the "Prose footnote citations" convention above and [issue #140](https://github.com/DesigningOpenDemocracy/DesigningOpenDemocracy.github.io/issues/140)) — local/offline, informational only, not wired into CI or any gate.
+  ```
+  python util/check_footnote_quotes.py             # summary across all docs
+  python util/check_footnote_quotes.py --missing    # list footnotes without a quote
+  python util/check_footnote_quotes.py --path docs/organisations/g0v.md  # single file
   ```
 
 - `util/sync_events.py` — fetches every org's `ics_feed:` and caches *upcoming* events (not just the latest, unlike `check_rss.py`'s activity check above) to `docs/data/events/<slug>.json`, which is committed to the repo and consumed by `hooks/calendar_export.py` at build time. This is the only place the calendar's iCal data touches the network — the build itself never fetches anything, matching the rest of this repo's fetch-then-cache convention.
