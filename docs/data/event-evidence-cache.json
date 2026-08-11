@@ -325,11 +325,11 @@
   },
   "https://en.wikipedia.org/wiki/Meta-organization": {
     "checked": "2026-08-11",
-    "content_hash": "01170c2b5dde476d45bf18f04f15f0d7fd35d40867fc03385a6cf575a32048a6",
+    "content_hash": "e5219cbc361d6b75e77510b4bab7c4cf4919c75776b4d3ede9f04eb2936b5d11",
     "etag": null,
     "last_modified": null,
     "verified": {
-      "b987766f06a5c8960e701b6649b283449156375600b0e3940c5f4f7e1ccc849a": false
+      "e41cf1d78553fd91acba54e621c20a54089a6ea2d47b2e421ef4d2595b2b4e58": true
     }
   },
   "https://en.wikipedia.org/wiki/Movement_for_Quality_Government_in_Israel": {
@@ -615,7 +615,7 @@
     "checked": "2026-08-11",
     "content_hash": "15da2af9077edaf61dce05c1049c2c5ec542143f341ec24fec249165c58256e6",
     "etag": null,
-    "last_modified": "Tue, 11 Aug 2026 21:45:01 GMT",
+    "last_modified": null,
     "verified": {
       "b0fd8227f28a6f87992769921772f646b74777e4904d50a3119b254a7b6d22bd": true
     }
@@ -631,11 +631,11 @@
   },
   "https://reclaim.org.au/inaugural-lismore-peoples-assembly/": {
     "checked": "2026-08-11",
-    "content_hash": "9b985ad0509329a06a00738d494129caf95baa2679f189da5082bf1edcd81087",
+    "content_hash": "d6f51366e8b60fa798347718bf5438e92ff008ae6ff9f84b2d0205ec1d01e77e",
     "etag": null,
     "last_modified": null,
     "verified": {
-      "d7aaa43983c4f92a6f54effe2ac06a93522f1ec161293c48d939f215cf76d3aa": false
+      "5d178e7c6e07b697f520a7fe1ef52fb0fbc054481088e0e3a7fac59039d9181f": true
     }
   },
   "https://reclaim.org.au/lismore-peoples-assembly-on-housing/": {
@@ -660,7 +660,7 @@
     "checked": "2026-08-11",
     "content_hash": "e7c65b2026e35db7b13ddba7bd91b955aa391ad233bd5fd28808640605308044",
     "etag": null,
-    "last_modified": "Tue, 11 Aug 2026 21:37:55 GMT",
+    "last_modified": "Tue, 11 Aug 2026 21:52:20 GMT",
     "verified": {
       "1baf11b8ef1333f3a2d2798791bf4702594ca3570629131a7e0480711eaca5a1": true
     }
@@ -676,7 +676,7 @@
   },
   "https://www.cambridge.org/core/journals/world-politics/article/abs/performative-governance/AAC558378BEA651DB7E2480ECFFB4E10": {
     "checked": "2026-08-11",
-    "content_hash": "6a248aae27eb2a8530730f6a49f098c6c44b33ac7138743b7916be019e82e248",
+    "content_hash": "82e0ccc0288520a4ce4e6061f66216c48b4f22a4d944d427e10b4f72bb28f9db",
     "etag": null,
     "last_modified": null,
     "verified": {
@@ -704,7 +704,7 @@
   "https://www.code4japan.org/aboutus": {
     "checked": "2026-08-11",
     "content_hash": "da27dacd83bcf74aa79100c2a63503c93e8217cf7c6d094e3842e322ffe289f3",
-    "etag": "W/\"8e4fb81f5f7e9978e552a700df04dc3e\"",
+    "etag": "W/\"03103d669890bcb4d6d89ed33f7c9813\"",
     "last_modified": null,
     "verified": {
       "da27dacd83bcf74aa79100c2a63503c93e8217cf7c6d094e3842e322ffe289f3": true
@@ -849,7 +849,7 @@
     "checked": "2026-08-11",
     "content_hash": "d29f03044da8e598f3eeb34d7ac6f647fe999c30fb763f295c66e4d61773149a",
     "etag": null,
-    "last_modified": null,
+    "last_modified": "Tue, 11 Aug 2026 21:46:21 GMT",
     "verified": {
       "292a5491284943180173e19421b4b1906053adf3c0b79e98d2736277bfe08b0a": true
     }
@@ -858,7 +858,7 @@
     "checked": "2026-08-11",
     "content_hash": "64be6754d59dfcdf923568360eab88be30862c30bc6462136b69d12e927b2707",
     "etag": null,
-    "last_modified": null,
+    "last_modified": "Tue, 11 Aug 2026 21:44:57 GMT",
     "verified": {
       "d41b7486e698b6e2534cc87c9f03ded6aa77bc4bf878892def4cf010f696ef6a": true
     }
@@ -867,7 +867,7 @@
     "checked": "2026-08-11",
     "content_hash": "23b301288596e31a592686706ca160feed6746546b7a670afa1789a38657fd7b",
     "etag": null,
-    "last_modified": "Tue, 11 Aug 2026 21:37:13 GMT",
+    "last_modified": "Tue, 11 Aug 2026 21:44:59 GMT",
     "verified": {
       "23b301288596e31a592686706ca160feed6746546b7a670afa1789a38657fd7b": true
     }
@@ -902,7 +902,7 @@
   "https://www.ycombinator.com/companies/democracy-earth": {
     "checked": "2026-08-11",
     "content_hash": "c90ae5009c68609175d2ffdf4bbd2a6e9e059cbef1a72cfb6e371fb42fc70d88",
-    "etag": "W/\"2bcb9a30ddabe2d966a40e32ce585dfd\"",
+    "etag": "W/\"5ce2b52e86d5b6d88949bbbfca599182\"",
     "last_modified": null,
     "verified": {
       "c90ae5009c68609175d2ffdf4bbd2a6e9e059cbef1a72cfb6e371fb42fc70d88": true
