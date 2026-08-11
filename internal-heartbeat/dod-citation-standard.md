@@ -171,20 +171,44 @@ drifted. That's the signal that matters for evidence integrity.
 
 ## Pipeline vision
 
-1. **Author:** human writes footnote in markdown (current convention,
-   unchanged)
-2. **Build-time hook:** `hooks/citation_export.py` derives CSL-JSON +
-   `dod-*` fields from events frontmatter + parsed footnotes, writes
-   `docs/data/citations.json`
-3. **Offline consumers:** Pandoc reads `citations.json` for rendering
-   references; Zotero imports it into a library
-4. **Verification:** `util/check_fragments.py` continues to verify quotes
-   against live pages and populate `content_hash` / `verified` timestamps
-   in the cache. The export hook reads from the cache to fill
-    `dod-content-sha256` and `dod-last-verified-date`.
+### Data flow
 
-Same single-source-of-truth rule as `#:~:text=`: humans never touch the
-JSON — it's always derived from the markdown and the verification cache.
+```
+                         INTERNAL                                │  PUBLIC
+                                                                 │
+  Markdown footnotes ──┐                                         │
+    [^ref]: "quote,"   │  hooks/citation_export.py               │
+    [Title](url)       ├──→ citations.json ──→ readers,          │
+                       │      (CSL-JSON)       Zotero, Pandoc    │
+  Events frontmatter ──┘                                         │
+    quote: "..."                                                 │
+    url: https://...                                             │
+                                                                 │
+                         check_fragments.py                      │
+  Live web page ──→ verify quote ──→ evidence-cache.json         │
+    (weekly cron)    still matches       (committed)              │
+                                         │                       │
+                                         ├── content_hash        │
+                                         ├── last verified date  │
+                                         └── ETag/Last-Modified  │
+                                            (internal only)      │
+                                                                 │
+                                         citation_export.py      │
+                                         reads cache, writes ───→
+                                         dod-content-sha256
+                                         dod-last-verified-date
+```
+
+### Two stores, two purposes
+
+| Store | Committed? | Audience | Content |
+|---|---|---|---|
+| `docs/data/evidence-cache.json` | Yes | Internal | ETags, per-URL content hashes, per-quote verification booleans. Optimized for `check_fragments.py` to skip redundant refetches. |
+| `docs/data/citations.json` | Yes | External | Clean CSL-JSON array. One entry per citation with `dod-quote`, `dod-content-sha256`, `dod-last-verified-date`. Any tool that reads CSL-JSON can consume it — the `dod-*` fields are silently ignored by standard processors. |
+
+The cache feeds the export, but they serve different consumers. An external
+verifier only needs `dod-quote` + hash + date to mechanically check whether a
+claim still holds — they don't need our ETags or per-quote booleans.
 
 ## Open questions
 
