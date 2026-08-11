@@ -1,13 +1,20 @@
 #!/usr/bin/env python3
 """
-check_fragments.py — mechanically re-verify event evidence against live pages.
+check_fragments.py — mechanically re-verify evidence against live pages.
 
-An event's "mechanical proof" is the exact text in its `quote:` field —
-this must appear verbatim on the cited page. The #:~:text= fragment a
-reader sees when they click through is derived from quote: at render
-time (see util/text_fragment.py and hooks/org_events.py's Jinja filter);
-it is never stored in frontmatter, so there's nothing fragment-specific
-to verify here — checking quote: against the live page covers both.
+Verifies two sources of evidence through the same pipeline:
+
+1. Event quotes — from org frontmatter `events:` entries. An event's
+   "mechanical proof" is the exact text in its `quote:` field — this must
+   appear verbatim on the cited page. The #:~:text= fragment is derived
+   from quote: at render time and is never stored in frontmatter.
+
+2. Footnote quotes — from prose footnote citations in org pages, blog
+   posts, and concept pages. A footnote that carries a verbatim quoted
+   excerpt (per the CLAUDE.md "Prose footnote citations" convention) is
+   checked against its cited page using the same text_contains() logic.
+
+Both sources share the same cache, fetch machinery, and reporting.
 
 Caching: results are kept in .event_evidence_cache.json (committed, so state
 survives across weekly cron runs on fresh checkouts) keyed by URL. Non-
@@ -20,9 +27,11 @@ article actually changed since your last check, which is the signal that
 matters for "has this citation drifted."
 
 Usage:
-    python util/check_fragments.py        # verify all events
+    python util/check_fragments.py           # verify all events + footnotes
     python util/check_fragments.py --slug mosaiclab  # single org
     python util/check_fragments.py --no-cache        # ignore cache, re-fetch everything
+    python util/check_fragments.py --save-to-wayback # archive each URL to Wayback Machine
+    python util/check_fragments.py --footnotes-only  # only check footnotes
 
 Requirements: python-frontmatter, requests (util/requirements.txt)
 """
@@ -49,10 +58,15 @@ except ImportError as e:
 sys.path.insert(0, os.path.dirname(__file__))
 from text_fragment import count_occurrences, normalize_ws  # noqa: E402
 
-ORG_DIR = os.path.join(os.path.dirname(__file__), "..", "docs", "organisations")
+DOCS_DIR = os.path.join(os.path.dirname(__file__), "..", "docs")
+ORG_DIR = os.path.join(DOCS_DIR, "organisations")
 CACHE_PATH = os.path.join(os.path.dirname(__file__), ".event_evidence_cache.json")
 USER_AGENT = "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
 FETCH_DELAY = 0.5  # seconds between requests — same rate limit as before
+
+FOOTNOTE_RE = re.compile(r"^\[\^([^\]]+)\]:\s*(.*)$")
+QUOTED_RE = re.compile(r'["\u201c](.+?)["\u201d]')
+MD_LINK_RE = re.compile(r"\[([^\]]*)\]\(([^)]+)\)")
 
 
 def load_cache():
@@ -218,24 +232,50 @@ def check_evidence(url, evidence, cache, use_cache=True):
     return ("good" if result else "bad"), False, None, ambiguous
 
 
-def main():
-    parser = argparse.ArgumentParser(description="Verify event evidence against live pages")
-    parser.add_argument("--slug", type=str, help="Check a single org")
-    parser.add_argument("--no-cache", action="store_true",
-                        help="Ignore the evidence cache — re-fetch and re-verify everything")
-    args = parser.parse_args()
+def find_footnote_evidence(path):
+    """Yield (url, quote_text, source_label) from footnote definitions that
+    carry both a verbatim quoted excerpt and a markdown link. Uses the
+    same format as prose footnote citations per CLAUDE.md convention:
+        [^label]: "quoted text," [Title](url), Source.
+    Each URL is paired with its first preceding quoted string."""
+    rel = os.path.relpath(path, os.path.join(DOCS_DIR, ".."))
+    with open(path, encoding="utf-8") as f:
+        for i, line in enumerate(f, start=1):
+            m = FOOTNOTE_RE.match(line)
+            if not m:
+                continue
+            label, text = m.group(1), m.group(2)
+            urls = [(m2.group(2), m2.start()) for m2 in MD_LINK_RE.finditer(text)]
+            quotes = [(m3.group(1), m3.start()) for m3 in QUOTED_RE.finditer(text)]
+            if not urls or not quotes:
+                continue
+            qi = 0
+            for url, upos in urls:
+                quote = quotes[qi][0] if qi < len(quotes) else quotes[0][0]
+                source_label = "".join([rel, ":", str(i), " [^", label, "]"])
+                yield url, quote, source_label
+                qi += 1
 
-    cache = {} if args.no_cache else load_cache()
 
-    good = 0
-    bad = 0
-    errors = 0
-    unchanged = 0
-    ambiguous_count = 0
-    skipped_no_evidence = 0
-    skipped_warning = 0
+def save_to_wayback(url, timeout=30):
+    """Submit a URL to the Wayback Machine's Save Page Now service.
+    Returns True on success, False on failure. Does not raise."""
+    try:
+        spn_url = "https://web.archive.org/save/" + url
+        r = requests.get(spn_url, headers={"User-Agent": USER_AGENT},
+                         timeout=timeout, allow_redirects=True)
+        return r.status_code == 200
+    except requests.RequestException:
+        return False
 
-    for path in sorted(glob.glob(os.path.join(ORG_DIR, "*.md"))):
+
+def collect_evidence(args):
+    """Return list of (url, quote, source_label, kind) tuples from
+    events and footnotes. 'kind' is 'event' or 'footnote' for reporting."""
+    items = []
+
+    event_paths = sorted(glob.glob(os.path.join(ORG_DIR, "*.md")))
+    for path in event_paths:
         slug = os.path.basename(path)[:-3]
         if slug in ("organisations", "concepts"):
             continue
@@ -246,66 +286,115 @@ def main():
         for e in post.metadata.get("events") or []:
             url = str(e.get("url", ""))
             if not url:
-                continue  # source:-only events have nothing to fetch
-
-            if "proof_warning" in e:
-                skipped_warning += 1
                 continue
-
+            if "proof_warning" in e:
+                continue
             evidence = e.get("quote")
             if not evidence:
-                skipped_no_evidence += 1
                 continue
+            items.append((url, evidence,
+                         "".join([slug, " [", str(e.get("date", "?")), "] ",
+                                  str(e.get("title", ""))[:50]]),
+                         "event"))
 
-            title = e.get("title", "")[:50]
-            event_date = e.get("date", "?")
+    if not args.events_only:
+        for path in sorted(glob.glob(os.path.join(DOCS_DIR, "**", "*.md"),
+                                     recursive=True)):
+            for url, quote, source_label in find_footnote_evidence(path):
+                items.append((url, quote, source_label, "footnote"))
 
-            result, unchanged_hit, error, ambiguous = check_evidence(
-                url, evidence, cache, use_cache=not args.no_cache
-            )
+    return items
 
-            if error:
-                errors += 1
-                print(f"  FETCH ERROR  {slug}  [{event_date}]  {title}")
-                print(f"               {url}  ({error})")
-                continue
 
-            if unchanged_hit:
-                unchanged += 1
+def main():
+    parser = argparse.ArgumentParser(
+        description="Verify event and footnote evidence against live pages")
+    parser.add_argument("--slug", type=str, help="Check a single org")
+    parser.add_argument("--no-cache", action="store_true",
+                        help="Ignore the evidence cache")
+    parser.add_argument("--save-to-wayback", action="store_true",
+                        help="Archive each URL to Wayback Machine's Save Page Now")
+    parser.add_argument("--footnotes-only", action="store_true",
+                        help="Only check footnote evidence (skip events)")
+    parser.add_argument("--events-only", action="store_true",
+                        help="Only check event evidence (skip footnotes)")
+    args = parser.parse_args()
 
-            if result == "good":
-                good += 1
-                if ambiguous:
-                    ambiguous_count += 1
-                    print(f"  AMBIGUOUS  {slug}  [{event_date}]  {title}")
-                    print(f"             quote occurs more than once on the page — the #:~:text= "
-                          f"highlight may land on the wrong occurrence. Consider lengthening the "
-                          f"quote to be unique.")
-                    print(f"             evidence: {evidence[:80]}")
+    cache = {} if args.no_cache else load_cache()
+
+    evidence_items = collect_evidence(args)
+
+    good = 0
+    bad = 0
+    errors = 0
+    unchanged = 0
+    ambiguous_count = 0
+    wayback_saved = 0
+    wayback_failed = 0
+    by_kind = {"event": {"good": 0, "bad": 0, "errors": 0},
+               "footnote": {"good": 0, "bad": 0, "errors": 0}}
+
+    for url, evidence, source_label, kind in evidence_items:
+        result, unchanged_hit, error, ambiguous = check_evidence(
+            url, evidence, cache, use_cache=not args.no_cache
+        )
+
+        if args.save_to_wayback:
+            if save_to_wayback(url):
+                wayback_saved += 1
             else:
-                bad += 1
-                print(f"  MISMATCH  {slug}  [{event_date}]  {title}")
-                print(f"            evidence: {evidence[:80]}")
-                print(f"            url: {url}")
+                wayback_failed += 1
+            time.sleep(0.5)
+
+        if error:
+            errors += 1
+            by_kind[kind]["errors"] += 1
+            print("  FETCH ERROR  " + source_label)
+            print("               " + url + "  (" + error + ")")
+            continue
+
+        if unchanged_hit:
+            unchanged += 1
+
+        if result == "good":
+            good += 1
+            by_kind[kind]["good"] += 1
+            if ambiguous:
+                ambiguous_count += 1
+                print("  AMBIGUOUS  " + source_label)
+                print("             quote occurs more than once on the page")
+                print("             evidence: " + evidence[:80])
+        else:
+            bad += 1
+            by_kind[kind]["bad"] += 1
+            print("  MISMATCH  " + source_label)
+            print("            evidence: " + evidence[:80])
+            print("            url: " + url)
 
     save_cache(cache)
 
     print()
-    print(f"Evidence checked: {good} good, {bad} mismatch, {errors} fetch errors")
-    print(f"  ({unchanged} of those confirmed unchanged since last check — skipped re-download)")
+    print("Evidence checked: " + str(good) + " good, " + str(bad) + " mismatch, " +
+          str(errors) + " fetch errors")
+    print("  (" + str(unchanged) + " of those confirmed unchanged since last check)")
     if ambiguous_count:
-        print(f"  ({ambiguous_count} of the good matches occur more than once on their page — see AMBIGUOUS above)")
-    print(f"Skipped: {skipped_warning} have proof_warning (explicitly unverified), "
-          f"{skipped_no_evidence} have no quote: (note-only or source-only)")
+        print("  (" + str(ambiguous_count) + " of the good matches are AMBIGUOUS)")
+    print("  Events: " + str(by_kind["event"]["good"]) + " good, " +
+          str(by_kind["event"]["bad"]) + " bad, " + str(by_kind["event"]["errors"]) + " errors")
+    print("  Footnotes: " + str(by_kind["footnote"]["good"]) + " good, " +
+          str(by_kind["footnote"]["bad"]) + " bad, " +
+          str(by_kind["footnote"]["errors"]) + " errors")
+    if args.save_to_wayback:
+        print("Wayback Machine: " + str(wayback_saved) + " saved, " +
+              str(wayback_failed) + " failed")
 
     if bad:
-        print(f"\n{bad} piece(s) of evidence no longer match their live source.")
-        print("Fetch errors are NOT counted as mismatches (could be rate-limiting or a transient outage).")
+        print("\n" + str(bad) + " piece(s) of evidence no longer match their live source.")
         sys.exit(1)
     else:
         print("All checkable evidence matches live pages.")
         if errors:
-            print(f"({errors} fetch errors — re-run later; a repeated failure on the same URL is worth investigating)")
+            print("(" + str(errors) + " fetch errors — re-run later)")
         sys.exit(0)
 
 

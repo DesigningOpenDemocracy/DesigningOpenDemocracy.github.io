@@ -354,7 +354,7 @@ narrative prose, distinct from the structured `events:` frontmatter field (which
 are freeform text with no YAML schema, so that discipline doesn't apply to them today — most
 existing footnotes are pure citation-style (title, source, date), not verbatim excerpts.
 
-**Convention going forward**: where the cited source has a specific sentence that supports the
+**Going forward**: where the cited source has a specific sentence that supports the
 claim, include it as a verbatim quoted phrase in the footnote text itself, e.g.:
 
 ```
@@ -368,14 +368,16 @@ have a structured field to hang it on. Don't retrofit this onto footnotes that a
 fine as plain citations; apply it to *new* footnotes as they're added, and opportunistically
 when an existing footnote is already being touched for another reason.
 
-**Not yet decided**: whether to (a) backfill the existing footnote corpus, and (b) whether
-footnote links should get the same render-time `#:~:text=` treatment as `events:` once they
-reliably carry quoted text (the underlying `util/text_fragment.py` functions are already
-generic — quote string in, fragment-bearing URL out — so no new fragment-generation code
-would be needed, just a template change to call them on footnote links too). See
-[issue #140](https://github.com/DesigningOpenDemocracy/DesigningOpenDemocracy.github.io/issues/140)
-for the full scoping. `util/check_footnote_quotes.py` reports current coverage
-(local/offline, informational only — not wired into CI or any gate) so this can be tracked
+Footnote quotes now get the same render-time `#:~:text=` treatment as event quotes.
+`hooks/footnote_fragments.py` (registered in `mkdocs.yml`) parses the page's markdown
+source at build time to find footnotes with verbatim quoted excerpts, then post-processes
+the rendered HTML to add `#:~:text=` fragments to their `<a href="url">` links — no
+fragment is ever stored in the markdown, same single-source-of-truth rule as events.
+Footnote quotes are also mechanically verified by `util/check_fragments.py` in the same
+weekly cron pass as event quotes, with the same cache, conditional GET, and AMBIGUOUS
+detection. `util/check_footnote_quotes.py` reports current coverage
+(local/offline, informational only — not wired into CI or any gate) so the backfill pace
+can be tracked over time without committing to finishing it all at once.
 over time without committing to a backfill pace yet.
 
 - `util/createPost.py` — interactive CLI to create a new blog post with frontmatter
@@ -404,6 +406,7 @@ over time without committing to a backfill pace yet.
 - `hooks/graph_builder.py` — fires on `on_page_context` and `on_post_build`; collects concept/org/project nodes and edges (from `concepts:` frontmatter and "See also" sections) into `graph.json`. Org/project nodes include `activity_date` (best date across all `activity:` sources) used by the graph UI to fade dormant nodes.
 - `hooks/org_events.py` — fires on `on_page_context`; splits a single org's `events:` frontmatter into `page.meta.upcoming_events` / `page.meta.history_events` for that org's own page timeline. Also fires on `on_env` to register the `with_fragment` Jinja filter (from `util/text_fragment.py`), which `organisation.html` uses to derive each event's `#:~:text=` link at build time from `quote:` — see Calendar section below.
 - `hooks/citation_export.py` — fires on `on_pre_build`; exports all event and footnote citations (`quote:` + `url:`) to `/data/citations.json` in CSL-JSON format with DOD content-integrity extension fields (`dod-quote`, `dod-content-sha256`, `dod-last-verified-date`). Reads `util/.event_evidence_cache.json` for hashes and verified dates. The JSON is gitignored (depends on the network-derived cache). See `internal-heartbeat/dod-citation-standard.md` for the design.
+- `hooks/footnote_fragments.py` — fires on `on_page_markdown` and `on_page_content`; parses prose footnotes for verbatim quoted excerpts (same convention as event `quote:`), then post-processes the rendered HTML to add `#:~:text=` fragments to footnote citation links. The counterpart of `with_fragment` for the prose footnote world — derives fragments at build time, never stores them in markdown.
 - `hooks/calendar_export.py` — fires on `on_pre_build`/`on_env`; merges every org's future `events:` entries with every org's cached `ics_feed` sync (`docs/data/events/<slug>.json`) into one sorted list, writes `docs/calendar.ics` + `docs/data/events.json`, and injects the list as the `calendar_events` Jinja global used by `docs/overrides/calendar.html`. Makes no network calls itself — see Calendar section below for the fetch step.
 
 ### Frontmatter — active gates
@@ -464,12 +467,15 @@ These are linked from the bottom of the org index table for researcher download.
   ```
   `proof_level` (high/medium/low) is always *derived* from a single `confidence_score()` function — never hand-computed separately — so a stored value and a freshly recomputed one can't silently disagree; if they do (source signals changed since the value was last set), it's printed as `STALE PROOF_LEVEL` and `--recalculate` fixes it (skips `proof_level_locked: true` events, printing an FYI instead if a locked value has drifted). The pre-commit hook runs `--recalculate` automatically on every commit touching an org page, so this should rarely need running by hand. Two hard gates (exit 1): every event needs a `url:` or `source:`; every event separately needs at least one of `note:`/`quote:`/`proof_warning: true` (`NO PROOF` if all three are missing — see the `events:` frontmatter docs above for what each means and when to reach for `proof_warning:` vs actually sourcing it). Soft warnings (printed, don't fail the build): vague `source:` text under 20 chars, "weak" URLs that are homepage-only with no path or fragment, `notable: true` events without *mechanical* proof (a `quote:` — a `note:` alone isn't enough for this stricter check), and high/medium-proof events whose `url_checked:` is missing or older than 365 days (a nudge to recheck the citation still says what's claimed — pairs with the two scripts below, which actually do that rechecking).
 
-- `util/check_fragments.py` — mechanically re-verifies every event's `quote:` text against the live page it cites. This is the only thing that actually rechecks a "high" proof_level citation's continued accuracy — a source edit could otherwise silently invalidate a pinned claim with nothing catching it. Results are cached in `util/.event_evidence_cache.json` (committed, so state survives across weekly cron runs on a fresh checkout), keyed by URL: non-Wikipedia fetches use conditional GET (`If-None-Match`/`If-Modified-Since`) so an unchanged page costs a cheap 304 instead of a full re-download; Wikipedia's extracts API has no meaningful conditional-GET support, so it's always fetched fresh, but the extract is hashed and compared against the cached hash anyway — purely for the "did this actually change since I last checked" signal, which is what actually matters for catching drift. Network-dependent, so **not** wired into CI (matches this repo's fetch-then-cache convention of keeping the build offline) — instead runs report-only (`continue-on-error`, doesn't block the RSS/scrape commit) in the weekly `.github/workflows/heartbeat-probes.yml` cron alongside `check_rss.py`/`scrape_news.py`; check that workflow's log for findings.
+- `util/check_fragments.py` — mechanically re-verifies evidence against live pages for two sources through the same pipeline: (1) every event's `quote:` field, and (2) every prose footnote's verbatim quoted excerpt (per the "Prose footnote citations" convention above). All evidence shares the same cache, fetch machinery, and AMBIGUOUS detection. Network-dependent, so **not** wired into CI (matches this repo's fetch-then-cache convention of keeping the build offline) — instead runs report-only (`continue-on-error`, doesn't block the RSS/scrape commit) in the weekly `.github/workflows/heartbeat-probes.yml` cron alongside `check_rss.py`/`scrape_news.py`; check that workflow's log for findings. `--save-to-wayback` archives each URL to the Wayback Machine's Save Page Now service (no account needed); `--footnotes-only` / `--events-only` let you scope verification.
   - **AMBIGUOUS quotes** — a separate, non-blocking category printed alongside MISMATCH: when a quote is found on the page (a "good" match) but occurs *more than once*, the browser's `#:~:text=` highlight isn't guaranteed to land on the occurrence the citation actually means, and the repetition itself is a sign the phrase may be too generic to specifically confirm the claim. `util/text_fragment.py`'s `count_occurrences()` does the counting; only detected on a fresh fetch (a cache hit doesn't retain page text, so it can't re-derive this — ambiguity on an unchanged, already-cached page silently isn't re-flagged until that page's cache entry next expires or `--no-cache` is used). The fix is editorial — lengthen the quote until it's unique on its own page — not a new stored field; see the note above about why fragment disambiguation data (WICG prefix-/-suffix context) is deliberately not persisted in frontmatter. Confirmed in practice on this corpus: most flagged cases (CAPaD, mckinnon.co) turned out to be a *false* ambiguity signal from JSON-LD/page-props payloads embedded in `<script>` tags getting swept into the extracted "page text" alongside the real prose — `_fetch_page_text()` now strips `<script>`/`<style>` bodies before tag-stripping to avoid this. The one genuine case (a Wikipedia article mentioning "Decidim Association" twice in adjacent sentences) was fixed by lengthening the quote to span both mentions, which is unique as a whole even though the short phrase alone wasn't.
   ```
   python util/check_fragments.py             # exits 1 if any evidence no longer matches
   python util/check_fragments.py --slug g0v  # single org
   python util/check_fragments.py --no-cache  # ignore the cache, re-fetch and re-verify everything
+  python util/check_fragments.py --save-to-wayback  # archive each URL to Wayback Machine
+  python util/check_fragments.py --footnotes-only  # only check footnote evidence
+  python util/check_fragments.py --events-only     # only check event evidence (original behaviour)
   ```
   The `#:~:text=` fragment-building functions it used to also expose via `--add-fragments` now
   live in `util/text_fragment.py` — a small, dependency-free module imported both here (not
@@ -492,7 +498,7 @@ These are linked from the bottom of the org index table for researcher download.
   python util/reorder_frontmatter.py --slug mosaiclab  # single org
   ```
 
-- `util/check_footnote_quotes.py` — reports how many prose footnote citations (org pages, blog posts, concept pages) carry a verbatim quoted excerpt vs. a bare title/source/date citation. Prep-work visibility script for eventually extending `check_fragments.py`'s fragment generation to footnotes (see the "Prose footnote citations" convention above and [issue #140](https://github.com/DesigningOpenDemocracy/DesigningOpenDemocracy.github.io/issues/140)) — local/offline, informational only, not wired into CI or any gate.
+- `util/check_footnote_quotes.py` — reports how many prose footnote citations (org pages, blog posts, concept pages) carry a verbatim quoted excerpt vs. a bare title/source/date citation. Local/offline, informational only — not wired into CI or any gate, but tracks the backfill pace.
   ```
   python util/check_footnote_quotes.py             # summary across all docs
   python util/check_footnote_quotes.py --missing    # list footnotes without a quote

@@ -59,4 +59,4 @@ Founded the same year as DOD (2016), the Field Guide runs on a similar premise â
 - [E-Government](../concepts/e-government.md)
 - [Democracy](../concepts/democracy.md)
 
-[^about]: ["About the Field Guide"](https://civictech.guide/about/), Civic Tech Field Guide.
+[^about]: "The Civic Tech Field Guide is the world's most complete collection of projects, tools, and organizations using tech for democracy," and "We help over 50,000 people per month," ["About the Field Guide"](https://civictech.guide/about/), Civic Tech Field Guide.
