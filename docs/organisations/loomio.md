@@ -83,4 +83,4 @@ Loomio is widely used by cooperatives, local councils, NGOs, and community organ
 - [Consensus Mapping](../concepts/consensus-mapping.md)
 - [Worker Cooperatives](../concepts/worker-cooperatives.md)
 
-[^loomio-wiki]: Wikipedia, [Loomio](https://en.wikipedia.org/wiki/Loomio).
+[^loomio-wiki]: "Loomio emerged from the Occupy movement. In 2012, it launched its first prototype," Wikipedia, [Loomio](https://en.wikipedia.org/wiki/Loomio).
