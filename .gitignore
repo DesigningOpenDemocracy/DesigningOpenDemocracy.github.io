@@ -12,6 +12,7 @@ docs/data/organisations.kml
 docs/data/org-concepts.csv
 docs/data/events.json
 docs/calendar.ics
-docs/data/citations.json
 # The event sync cache (docs/data/events/<slug>.json) IS committed — the build
 # hook (calendar_export.py) only reads it and never fetches feeds itself.
+# citations.json IS committed — it reflects the last known state of every
+# verified citation (from the evidence cache, which is also committed).
