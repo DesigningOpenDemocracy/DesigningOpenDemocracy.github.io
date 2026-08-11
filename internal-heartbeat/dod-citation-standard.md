@@ -90,57 +90,61 @@ single-verifier wiki pipeline.
 
 ## Proposed format
 
-Layered on CSL-JSON with a `dod-` namespace prefix. The prefix is
-provisional — if the standard gains adoption the fields would just be
-`quote`, `content-sha256`, `last-verified-date` at the top level.
-The prefix exists to avoid collision during development; it's
-scaffolding, not permanent naming.
-
-### Fields
+Layered on CSL-JSON. The `evidence` array groups per-claim data under
+each URL — multiple quotes citing the same page share one hash, one
+access date, and are deduplicated into the array.
 
 ```json
 {
   "type": "webpage",
-  "URL": "https://theyvoteforyou.org.au/about",
-  "title": "About",
-  "publisher": "They Vote For You",
-  "accessed": {"date-parts": [[2026, 8, 10]]},
-  "archive": "Internet Archive",
-  "archive_location": "https://web.archive.org/web/20260810...",
-  "dod-quote": "Forget what politicians say. What truly matters is what they do.",
-  "dod-content-sha256": "a1b2c3d4e5f6...",
-  "dod-last-verified-date": "2026-08-10"
+  "URL": "https://en.wikipedia.org/wiki/MySociety",
+  "title": "mySociety",
+  "accessed": {"date-parts": [[2026, 8, 11]]},
+  "content-sha256": "abc123...",
+  "evidence": [
+    {
+      "type": "quote-match",
+      "quote": "mySociety was founded by Tom Steinberg in September 2003",
+      "last-verified": "2026-08-11"
+    },
+    {
+      "type": "quote-match",
+      "quote": "TheyWorkForYou is a parliamentary monitoring website",
+      "last-verified": "2026-08-11"
+    }
+  ]
 }
 ```
 
 ### Field meanings
 
-| Field | Required | Source | Purpose |
-|---|---|---|---|
-| Standard CSL-JSON fields | Yes | Frontmatter `url:`, `title` | Interoperable with Zotero, Pandoc, citeproc |
-| `dod-quote` | Yes | `quote:` or footnote quote | Verbatim excerpt — the evidence the citation is built on |
-| `dod-content-sha256` | Optional | Content hash at verify time | Context fingerprint. Changed → trigger review (doesn't fail build). |
-| `dod-last-verified-date` | Optional | `url_checked:` or `date of check_fragments.py` run | When the quote was last confirmed to match the live page. |
+**URL-level fields** (one per cited page):
+
+| Field | Source | Purpose |
+|---|---|---|
+| Standard CSL-JSON | Frontmatter `url:`, `title` | Interoperable with Zotero, Pandoc, citeproc |
+| `content-sha256` | Evidence cache | Fingerprint of the page text at last verification. Shared by all claims on this URL. Changed → open review ticket, human checks framing. |
+
+**Per-claim fields** (one entry per quote, nested under `evidence`):
+
+| Field | Source | Purpose |
+|---|---|---|
+| `type` | Always `"quote-match"` today | Evidence kind. Extensible: `screenshot`, `pdf-page`, `timestamp` in future. |
+| `quote` | `quote:` or footnote quote | Verbatim excerpt. Gate tier — must match weekly to keep the citation green. |
+| `last-verified` | Evidence cache `checked` | When this quote was last confirmed to match the live page. |
 
 ### Two tiers of integrity
 
 | Tier | Field | What it catches | Action |
 |---|---|---|---|
-| **Gate** | `dod-quote` | Quote no longer matches source → citation broken | Fail build, fix or remove |
-| **Review** | `dod-content-sha256` | Hash changed but quote survived → page was edited around the claim | Open review ticket, human checks framing |
+| **Gate** | `evidence[].quote` | Quote no longer matches source → citation broken | Fail build, fix or remove |
+| **Review** | `content-sha256` | Hash changed but quotes survived → page was edited around the claims | Open review ticket, human checks framing |
 
 A reader or bot checking `citations.json` knows the difference between "this
 citation is dead" (quote mismatch) and "this page was edited, the cited
-sentence is intact, but you should re-read the surrounding paragraph"
-(hash changed, quote survived). The hash is not a pass/fail check — it
+sentences are intact, but you should re-read the surrounding paragraph"
+(hash changed, quotes survived). The hash is not a pass/fail check — it
 feeds a review queue, not a CI gate.
-
-Note: `type` (webpage, article, book) and publisher/source metadata are
-already covered by native CSL-JSON fields — no need for `dod-type` or
-`dod-source`. The three `dod-*` extensions are type-agnostic: a book
-chapter, conference paper, or PDF gets the same quote + hash +
-verified-date layer on top of CSL-JSON's existing type-specific fields
-(`container-title`, `chapter-number`, etc.).
 
 ### Content hash — three contexts
 

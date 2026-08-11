@@ -3,7 +3,6 @@
     "type": "webpage",
     "URL": "https://adrindia.org/about-adr/mission-and-vision",
     "title": "Founded by former Indian Revenue Service officers to improve governance and electoral transparency",
-    "dod-quote": "The Association for Democratic Reforms (ADR) was established in 1999 by a group of professors from the Indian Institute of Management (IIM) Ahmedabad.",
     "accessed": {
       "date-parts": [
         [
@@ -13,48 +12,19 @@
         ]
       ]
     },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "fb4ba5da49aa1f1c0434b4326dc54bd1deb8855924c9dfaeaac46d4eee8bf46e"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://fr.wikipedia.org/wiki/AfricTivistes",
-    "title": "Founded in Dakar by Cheikh Fall, initially as the African League of Bloggers and Web Activists for Democracy",
-    "dod-quote": "Fondée le 26 novembre 2015 par Cheikh Fall, AfricTivistes compte à ce jour plus de 400 membres répartis dans 40 pays du continent africain.",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "afb91c4e572c3db02e223ad17f4a24b9c9ada4e476ee81935a2f8a0b1c1cc414"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://www.afrobarometer.org/about/history/",
-    "title": "Founded as a pan-African survey research network measuring public attitudes on democracy and governance",
-    "dod-quote": "professors Michael Bratton, Robert Mattes, and E. Gyimah-Boadi merge three independent survey research projects to form Afrobarometer (AB)",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "a4036bf60d1c1ccf5e9f4f8dde53e0f30f8a22f5ec9399d314be7fcfb3141a5b"
+    "content-sha256": "fb4ba5da49aa1f1c0434b4326dc54bd1deb8855924c9dfaeaac46d4eee8bf46e",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "The Association for Democratic Reforms (ADR) was established in 1999 by a group of professors from the Indian Institute of Management (IIM) Ahmedabad.",
+        "last-verified": "2026-08-11"
+      }
+    ]
   },
   {
     "type": "webpage",
     "URL": "https://australiainstitute.org.au/events/dr-hugh-saddler-memorial-lecture/",
     "title": "Dr Hugh Saddler Memorial Lecture 2026 — Shane Rattenbury on how the ACT turned climate ambition into action, National Film and Sound Archive ACT",
-    "dod-quote": "Join us at the 2026 Dr Hugh Saddler Memorial Lecture, featuring former ACT Minister, Greens Leader, and long‑serving parliamentarian Shane Rattenbury.",
     "accessed": {
       "date-parts": [
         [
@@ -64,122 +34,19 @@
         ]
       ]
     },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "cb27ac94a6c4a7ffc6f4ca0a20426ed48908b58fd39c5d2c86b79b1f768fa5d1"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/Australian_Democrats",
-    "title": "Founded by Don Chipp, emerging from the Liberal Party split, running on 'keeping the bastards honest'",
-    "dod-quote": "The Democrats' inaugural leader was Don Chipp",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "a667c54922a781a76abd2f0afcd15e4b10f32cf17dad0e5cc701515c51e0a31b"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/Australian_Democrats",
-    "title": "First elected to the Senate, winning balance of power — five Senators elected on a 9.3% vote",
-    "dod-quote": "At the 1980 election, this increased to five seats",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "a667c54922a781a76abd2f0afcd15e4b10f32cf17dad0e5cc701515c51e0a31b"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/Australian_Democrats",
-    "title": "Peak electoral result — 12.6% Senate vote in the 1990 federal election",
-    "dod-quote": "the 1990 federal election heralded something of a rebirth",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "a667c54922a781a76abd2f0afcd15e4b10f32cf17dad0e5cc701515c51e0a31b"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/Bersih",
-    "title": "Coalition formed by opposition parties and civil society groups demanding free and fair elections in Malaysia",
-    "dod-quote": "officially formed on 23 November 2006",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "21ebf7abdfe9dab710eb9edc51c453a6bf98c0ce24458d42353211af7daa6207"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/Bersih",
-    "title": "First Bersih rally — 40,000 Malaysians march for electoral reform in Kuala Lumpur",
-    "dod-quote": "rally with 10,000 to 40,000 turnout",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "21ebf7abdfe9dab710eb9edc51c453a6bf98c0ce24458d42353211af7daa6207"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/Bersih",
-    "title": "Bersih 2.0 rally — 50,000+ protestors demanding clean elections, met with police crackdown",
-    "dod-quote": "9 July 2011 ranged from 10,000 to 50,000",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "21ebf7abdfe9dab710eb9edc51c453a6bf98c0ce24458d42353211af7daa6207"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://web.archive.org/web/20190824085752/https://bhive.coop/our-story/",
-    "title": "Held its founding pitch night in Bendigo, raising $35,000 from Founding Patrons",
-    "dod-quote": "$35,000 was raised in donations to kickstart bHive from an amazing group of Founding Patrons."
+    "content-sha256": "cb27ac94a6c4a7ffc6f4ca0a20426ed48908b58fd39c5d2c86b79b1f768fa5d1",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Join us at the 2026 Dr Hugh Saddler Memorial Lecture, featuring former ACT Minister, Greens Leader, and long‑serving parliamentarian Shane Rattenbury.",
+        "last-verified": "2026-08-11"
+      }
+    ]
   },
   {
     "type": "webpage",
     "URL": "https://canberra-alliance.org.au/events/",
     "title": "2026 CAPaD AGM — Annual General Meeting, online via Zoom",
-    "dod-quote": "2026 CAPaD AGM",
     "accessed": {
       "date-parts": [
         [
@@ -189,133 +56,24 @@
         ]
       ]
     },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "3fa74738b54a897cbabc2fe1d97b9631400dcedd91072ec31ee9ce58bed9130c"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://canberra-alliance.org.au/events/",
-    "title": "Community Assembly following up MP asks for 2026 — Woden Valley Uniting Church, Curtin ACT",
-    "dod-quote": "Community Assembly – following up our MP asks for 2026",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "3fa74738b54a897cbabc2fe1d97b9631400dcedd91072ec31ee9ce58bed9130c"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://www.cddwestafrica.org/about-us/",
-    "title": "Founded in Lagos as a research and advocacy organisation on democracy and development in West Africa",
-    "dod-quote": "The Centre for Democracy and Development (CDD) was established in the United Kingdom in 1997",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "0df3cfeef36afbd95f4e25800a1f6b89820e7b39abb7dba2484032651b1ecd34"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://www.mmzy.org.cn/mmgk/jianjie/default.aspx",
-    "title": "Founded in Chongqing as an umbrella organisation of China's centrist and left-leaning intellectuals during the Second Sino-Japanese War",
-    "dod-quote": "民盟于1941年3月19日在重庆秘密成立",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "afd9bdb265481f1ebde7fc5109607437076fb3351ba630ce473ddb3cac3090eb"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/Citizens_Foundation",
-    "title": "Founded by Robert Bjarnason and Gunnar Grimsson",
-    "dod-quote": "The Citizens Foundation is a non-profit organization based in Reykjavík, Iceland, and founded under Icelandic law to promote electronic collaborative democracy around the globe and to develop the software needed for that purpose.",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "b05f4f03c811ce9f1bd5d71d72e91d976235422ebf2672e676e7d7df7b7df1a5"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/Citizens_Foundation",
-    "title": "Launched Shadow Parliament, importing real Icelandic Parliament proposals for citizens to vote on",
-    "dod-quote": "Shadow Parliament (Skuggaþing) opened formally in February 2010",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "b05f4f03c811ce9f1bd5d71d72e91d976235422ebf2672e676e7d7df7b7df1a5"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/Citizens_Foundation",
-    "title": "Launched Better Reykjavík (originally \"Shadow City\"); nearly 3,000 users and 400+ ideas within three days",
-    "dod-quote": "on 25 May 2010, the website Shadow City (Skuggaborg) opened",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "b05f4f03c811ce9f1bd5d71d72e91d976235422ebf2672e676e7d7df7b7df1a5"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://www.ciudadaniai.org/nosotros",
-    "title": "Founded as one of Latin America's earliest civic-tech organisations, Santiago",
-    "dod-quote": "Ciudadanía Inteligente 2009 - 2026. Todos los derechos reservados",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "f2132ea932cba1736f5b3072356d93c6ba48bede14aafde6a5e3012217c10c2b"
+    "content-sha256": "3fa74738b54a897cbabc2fe1d97b9631400dcedd91072ec31ee9ce58bed9130c",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "2026 CAPaD AGM",
+        "last-verified": "2026-08-11"
+      },
+      {
+        "type": "quote-match",
+        "quote": "Community Assembly – following up our MP asks for 2026",
+        "last-verified": "2026-08-11"
+      }
+    ]
   },
   {
     "type": "webpage",
     "URL": "https://civichive.org/about-us/",
     "title": "Founded in Lagos as a civic-tech fellowship and innovation hub for West Africa",
-    "dod-quote": "Founded in 2017 as the innovation centre of BudgIT",
     "accessed": {
       "date-parts": [
         [
@@ -325,134 +83,19 @@
         ]
       ]
     },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "0e1f4a9985210ff4907906ea9f4f6d46e9b8cb94a3f7d6bf28a51d33be19bfcc"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://civictech.guide/about/",
-    "title": "\"About the Field Guide\"",
-    "dod-quote": "The Civic Tech Field Guide is the world's most complete collection of projects, tools, and organizations using tech for democracy,"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://web.archive.org/web/20201025045936/https://www.coalitionofeveryone.com/post/citizens-assembly",
-    "title": "Ran four mock Citizens' Assemblies at Melbourne's Sustainable Living Festival",
-    "dod-quote": "Through the Sustainable Living Festival, the Coalition of Everyone held four mock Citizens' Assemblies on the topics of; fashion, fire, regenerative agriculture and water."
-  },
-  {
-    "type": "webpage",
-    "URL": "https://www.code4japan.org/aboutus",
-    "title": "Founded as the Japanese node of Code for All, bringing civic tech to Japan",
-    "dod-quote": "設立年月日 2013年10月25日",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "247f4795d86d25a1c5292ca16bc36f587be60c37955ce998c1f9265c810ae237"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://events.humanitix.com/communities-rising-action-by-the-people-for-the-times",
-    "title": "Communities Rising — Action by the People for the Times (6th annual Community Independents Convention)",
-    "dod-quote": "the sixth annual Convention of the Community Independents Movement"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/Confederation_of_Indigenous_Nationalities_of_Ecuador",
-    "title": "Founded to represent Ecuador's Indigenous nationalities, becoming the country's largest Indigenous organisation",
-    "dod-quote": "CONAIE was founded in 1986",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "7f7ad365c426dbc34364dd2d05cce4de26f2b9076265b3a0aefaf678e86e4095"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://congresovisible.uniandes.edu.co/quesomos",
-    "title": "Launched at Universidad de los Andes as Colombia's first legislative transparency platform",
-    "dod-quote": "Desde 1998, el proyecto Congreso Visible del Departamento de Ciencia Política",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "a36c3c796dd95a7ddae8c333328c28d528ddd981eaaddbab6ff046d3f5fc0e27"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://www.peoplepowered.org/events",
-    "title": "ConsulCon 2026 — three-day gathering on digital democracy and open-source civic tech, Munich",
-    "dod-quote": "The CONSUL DEMOCRACY Foundation and the City of Munich host the annual ConsulCon — a three-day gathering on digital democracy, open-source civic technology and democratic empowerment.",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "9640279a550db2aeca015ce65cb2c747bae78c97fe09a88dbdc25e01d71d2f7c"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://www.crossroadsconversation.com.au/events/on-the-importance-of-conversation-for-the-very-idea-of-a-common-humanity",
-    "title": "Held its inaugural Annual Lecture (Joseph Camilleri, \"Australia the Week After\") at the University of Melbourne",
-    "dod-quote": "You speak not to say something and to hear something back, not to dazzle, be right or stake a claim, but to be held accountable to each other.",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "f318ac7abe7e69ea0a003e1ad38c65166fec6f4d7957e2b32cdac7fac78767df"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/Chinese_People%27s_Political_Consultative_Conference",
-    "title": "Established as the Chinese People's Political Consultative Conference, the united front and top political advisory body",
-    "dod-quote": "The Political Consultative Conference was established in 1945 as part of peace negotiations between the Kuomintang and the CCP.",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "1dc9af679c6f13580beaac6f2bd71c082b56e084e9fff382ce4eef3888f08373"
+    "content-sha256": "0e1f4a9985210ff4907906ea9f4f6d46e9b8cb94a3f7d6bf28a51d33be19bfcc",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Founded in 2017 as the innovation centre of BudgIT",
+        "last-verified": "2026-08-11"
+      }
+    ]
   },
   {
     "type": "webpage",
     "URL": "https://civictech.africa/about-ctin",
     "title": "Launched at Wits University's Tshimologong Precinct as Africa's civic tech community of practice",
-    "dod-quote": "CTIN was launched in 2017 as a learning network.",
     "accessed": {
       "date-parts": [
         [
@@ -462,31 +105,30 @@
         ]
       ]
     },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "29d12ca77c3a989ad5109372ad102f8c325ec6d1b0e9f8c8f3c8560ee17dc5a3"
+    "content-sha256": "29d12ca77c3a989ad5109372ad102f8c325ec6d1b0e9f8c8f3c8560ee17dc5a3",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "CTIN was launched in 2017 as a learning network.",
+        "last-verified": "2026-08-11"
+      }
+    ]
   },
   {
     "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/OneVoice_Movement",
-    "title": "Founded as the Israeli branch of the OneVoice Movement, promoting grassroots civic engagement",
-    "dod-quote": "The OneVoice Movement was a 501c(3) non-profit organization with offices in New York City, Tel Aviv, Ramallah, and London, founded in 2002 by Daniel Lubetzky",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "6c1db82b3af2dbc336e3f03aacb72d1543570150c0ad2662fbf3db11bd0b678c"
+    "URL": "https://civictech.guide/about/",
+    "title": "\"About the Field Guide\"",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "The Civic Tech Field Guide is the world's most complete collection of projects, tools, and organizations using tech for democracy,"
+      }
+    ]
   },
   {
     "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/Decidim",
-    "title": "First Decidim server created by 15M activists in Barcelona",
-    "dod-quote": "Decidim provided their first use of participatory budgeting",
+    "URL": "https://congresovisible.uniandes.edu.co/quesomos",
+    "title": "Launched at Universidad de los Andes as Colombia's first legislative transparency platform",
     "accessed": {
       "date-parts": [
         [
@@ -496,575 +138,19 @@
         ]
       ]
     },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "0740f74f55bc25949c583d6bc8c9241b9c808caaeeeabfc14f49115531a561b8"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/Decidim",
-    "title": "Rewritten as new modular Decidim software, Barcelona city deployment begins",
-    "dod-quote": "the server was switched to a similarly inspired, but new software project, Decidim",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "0740f74f55bc25949c583d6bc8c9241b9c808caaeeeabfc14f49115531a561b8"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/Decidim",
-    "title": "Decidim Association formed — Barcelona transfers trademark and code to community governance",
-    "dod-quote": "the community formally established Decidim Association in 2019 and City Council of Barcelona gave control of the Decidim trademark and code base to Decidim Association.",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "0740f74f55bc25949c583d6bc8c9241b9c808caaeeeabfc14f49115531a561b8"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/Decidim",
-    "title": "Recognised as Digital Public Good by UN Digital Public Goods Alliance",
-    "dod-quote": "recognised as satisfying the criteria of the Digital Public Goods Alliance",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "0740f74f55bc25949c583d6bc8c9241b9c808caaeeeabfc14f49115531a561b8"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://www.nesta.org.uk/feature/new-radicals-2016/democracy-club/",
-    "title": "Origins as a volunteer effort collecting candidate information for the 2010 UK general election, working with mySociety",
-    "dod-quote": "Sym Roe was a volunteer for the mySociety enterprise during the run up to the 2010 general election, working to increase the amount of information available online about the candidates.",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "83f0b9c44777a507c8722796a9f497b21169dc21a2d79f33048fd0b37878f1b9"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://www.nesta.org.uk/feature/new-radicals-2016/democracy-club/",
-    "title": "Registered as a Community Interest Company and crowdsourced the most comprehensive UK election-candidate database to date, used by over a million people",
-    "dod-quote": "crowdsourcing the most comprehensive and accurate database of candidates in recent electoral history",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "83f0b9c44777a507c8722796a9f497b21169dc21a2d79f33048fd0b37878f1b9"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://www.ycombinator.com/companies/democracy-earth",
-    "title": "Founded by Santiago Siri, Pia Mancini and Guido Vilariño; accepted into Y Combinator's Winter 2015 batch",
-    "dod-quote": "Democracy Earth Founded: 2015 Batch: Winter 2015 Team Size: 2 Status: Active Location: Madrid, Spain Founders Pia Mancini Founder Pia Mancini Founder Santiago Siri Founder/President Santiago Siri Founder/President Guido Vilariño Founder",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "d2eec76f4a0b998651b16062cfd411592b66ef85dbd10f10cff161baffc4ef26"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://www.democracy-international.org/events",
-    "title": "2026 Global Forum on Modern Direct Democracy — Gaborone, Botswana",
-    "dod-quote": "2026 Global Forum on Modern Direct Democracy",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "ce12c0bfb87d6049e0d7603cfb05f53026d6864676f4d7da4991748d1ed75a4d"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/Democracy_International_eV",
-    "title": "Formally registered as an association, building on a loose network dating back to 2002",
-    "dod-quote": "formally established in June 2011",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "a76fd98c4af28b65d87b8b9482cca9ef4b98bf643e43bfb1c094b50f1909c6d8"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/Democracy_in_Europe_Movement_2025",
-    "title": "Launched by Yanis Varoufakis and Srećko Horvat as a pan-European progressive movement in Berlin",
-    "dod-quote": "The movement was officially launched at ceremonial events in 2016",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "e45a298ebb888e40e1c87b8cc94138358fa1f2709edc088910fbe6cb240737a7"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/Democracy_in_Europe_Movement_2025",
-    "title": "First pan-European convention in Rome, adopting the founding declaration",
-    "dod-quote": "on 23 March in Rome",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "e45a298ebb888e40e1c87b8cc94138358fa1f2709edc088910fbe6cb240737a7"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/Democracy_in_Europe_Movement_2025",
-    "title": "Contested European Parliament elections with a transnational list across multiple member states",
-    "dod-quote": "established an electoral list for the 2019 European Parliament elections",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "e45a298ebb888e40e1c87b8cc94138358fa1f2709edc088910fbe6cb240737a7"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/Electoral_Institute_for_Sustainable_Democracy_in_Africa",
-    "title": "Founded as the Electoral Institute for Sustainable Democracy in Africa, Johannesburg",
-    "dod-quote": "founded in 1996 in Johannesburg",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "f5f7e1d943e85576c2c31d16ac6eefed19a14d9e11c52e37787d9dc8d3263756"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/Electoral_Reform_Society",
-    "title": "Founded as the Proportional Representation Society — one of the world's oldest electoral reform organisations",
-    "dod-quote": "was founded in January 1884 as the Proportional Representation Society by",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "2aa7a97c138a0ff4702dabf692e45a5073c4e7cc93c4d9bd150c490d092d73a6"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/Electoral_Reform_Society",
-    "title": "Led the Yes campaign in the UK's Alternative Vote referendum — the first UK-wide electoral system referendum",
-    "dod-quote": "principal funder of the YES! To Fairer Votes campaign",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "2aa7a97c138a0ff4702dabf692e45a5073c4e7cc93c4d9bd150c490d092d73a6"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/Anti-Corruption_Foundation",
-    "title": "Founded by Alexei Navalny as the Anti-Corruption Foundation to investigate official corruption in Russia",
-    "dod-quote": "FBK was founded by Alexei Navalny",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "9ec9fa4393372e48883fe8405dd0de48bed76b64ab718444b55a3050878b9e1f"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://www.fidemocracy.org/news",
-    "title": "FIDE Forum 2026: From Novel to Normal — making deliberation a democratic standard, Vienna",
-    "dod-quote": "FIDE Forum 2026",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "2003ab62734aced260a98f861c8a3b64b5af785a38d535e4975a8702339ce6d9"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/Flux_(political_party)",
-    "title": "Registered as a federal political party, promoting a novel platform of direct digital democracy via app-based voting",
-    "dod-quote": "Flux parties were registered",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "66a7f67f00753f48d263e9a9691de8e3910363e6e7232fcc1161e74aed0f970e"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://foro.org.co/nosotros/quienes-somos/",
-    "title": "Founded as one of Colombia's longest-established civil society organisations for democratic participation",
-    "dod-quote": "creada en 1982",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "9dd7bc02617572f58a5d121e8ce95ea2b33576c744b118121966661124aa43ad"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://stocznia.org.pl/en/about-shipyard/",
-    "title": "Founded in Warsaw with a mission bridging citizen participation, social innovation, and research",
-    "dod-quote": "Shipyard Foundation was established in 2009.",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "e1c4d459f3718e4ecf4f18553ab8b728511aab1f5e4e1dfb2985303fc3ef5756"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/G0v_movement",
-    "title": "First hackathon (Hackath0n) at Academia Sinica — launches the g0v community",
-    "dod-quote": "driven by a bimonthly hackathon",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "3f64b69aa44428c2b738a2037bed03d6c91f50526cf0f54258521490e142d966"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/G0v_movement",
-    "title": "g0vhk (Hong Kong branch) founded",
-    "dod-quote": "active g0v communities working on open government data in Taiwan and Hong Kong",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "3f64b69aa44428c2b738a2037bed03d6c91f50526cf0f54258521490e142d966"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://www.g1000.org/en/cases/g1000-citizens-summit",
-    "title": "G1000 Citizens' Summit — 704 randomly selected citizens deliberate in Brussels during Belgium's 541-day government crisis",
-    "dod-quote": "In 2011, in the midst of a political crisis in a governmentless Belgium, G1000 was a citizens' initiative aimed at breathing new life into democracy by organizing a major citizens' consultation, bringing together 1,000 randomly selected citizens to make recommendations to the political world.",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "59f2c67116f2a566158b695c21cb0315d13012051c6d271576464882d59c3dcb"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://www.g1000.org/en/cases/permanent-citizen-dialogue-ostbelgien",
-    "title": "Ostbelgien permanent citizen dialogue launched — the German-speaking Community's Parliament unanimously adopts a decree embedding a permanent Citizens' Council",
-    "dod-quote": "This initiative, launched after a petition by Cap Démocratie, marked a first for Wallonia, where citizens and politicians worked together as equals.",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "e718c1cb33e7f63c2b2bb365a7e022cef2238151b8cd721f6dcbbb3f542e94eb"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/Golos_(election_monitor)",
-    "title": "Founded as an independent election monitoring organisation in Russia",
-    "dod-quote": "GOLOS was founded as an association of non-profit organizations in 2000 to support civil monitoring of elections.",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "be9dd24013ea711084873c9b00f30e4a1366c18bdf4c9acf5dbd1236d627d13b"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/Goree_Institute",
-    "title": "Founded on Gorée Island, Senegal, as a Centre for Democracy, Development and Culture in Africa",
-    "dod-quote": "was founded on 25 June 1992",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "7fb96f7dbd6db04f4a6e95cb3ac170e85867d3c9ddeea86dbbc64ba59ddecffd"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://www.influencewatch.org/non-profit/healthy-democracy/",
-    "title": "Founded (as Healthy Democracy Oregon) by Tyrone Reitman and Elliot Shuford to run the Citizens' Initiative Review",
-    "dod-quote": "Healthy Democracy was founded in 2007 as “Healthy Democracy Oregon” by Crosby and his wife and two activists, Tyrone Reitman and Elliot Shuford.",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "eee29268a127a03f830cc91f305cb2103905c1b48e720f28b9ea9986ab7d7fb5"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://www.influencewatch.org/non-profit/healthy-democracy/",
-    "title": "Oregon House Bill 2634 signed into law, making the Citizens' Initiative Review a permanent part of the state's initiative process",
-    "dod-quote": "In 2011, Oregon state legislators sponsored House Bill 2634 which made the Citizens’ Initiative Review (CIR) process an official and permanent part of Oregon’s elections",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "eee29268a127a03f830cc91f305cb2103905c1b48e720f28b9ea9986ab7d7fb5"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://icodrops.com/horizon-state/",
-    "title": "Token Generation Event (ICO) concluded, raising approximately $1.4M",
-    "dod-quote": "The TGE (Token Generation Event) announced by Horizon State has successfully concluded on Nov 19, 2017",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "c0e0d582027e88241d5b8511e2990a39cdd875522b5c30d0cce22827de978b41"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/International_Institute_for_Democracy_and_Electoral_Assistance",
-    "title": "Founded in Stockholm as an intergovernmental organisation supporting sustainable democracy worldwide",
-    "dod-quote": "The Founding Conference of International IDEA took place on 27–28 February 1995",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "4d59f056f0197ca454288fe9c1b24f6c7ce84d12275a94c6ec688382afd7587b"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/International_Institute_for_Democracy_and_Electoral_Assistance",
-    "title": "Launched the Global State of Democracy indices — a flagship annual assessment covering 160+ countries",
-    "dod-quote": "The Global State of Democracy (GSoD) Initiative was launched in 2016",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "4d59f056f0197ca454288fe9c1b24f6c7ce84d12275a94c6ec688382afd7587b"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/Internet_Freedom_Foundation",
-    "title": "Founded in India on Independence Day to defend digital rights, free expression, and online civil liberties",
-    "dod-quote": "Launched on 15 August 2016",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "7541282ed1afced55f7449c3801384d5f37a51a00acb77d8fb1e5d4b64531457"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/Internet_Freedom_Foundation",
-    "title": "Successfully challenged India's IT Rules 2021 in court, securing key digital rights protections",
-    "dod-quote": "challenges to the IT Rules, 2021",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "7541282ed1afced55f7449c3801384d5f37a51a00acb77d8fb1e5d4b64531457"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/Israel_Democracy_Institute",
-    "title": "Founded as an independent research centre dedicated to strengthening Israeli democracy",
-    "dod-quote": "was founded in 1991 as a \"center of research and action dedicated to strengthening the foundations of Israeli democracy.\"",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "0cbd6f8e6d5dc2904f11f64386dbba4206fd90786bd53038632e054aee9c7d54"
+    "content-sha256": "a36c3c796dd95a7ddae8c333328c28d528ddd981eaaddbab6ff046d3f5fc0e27",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Desde 1998, el proyecto Congreso Visible del Departamento de Ciencia Política",
+        "last-verified": "2026-08-11"
+      }
+    ]
   },
   {
     "type": "webpage",
     "URL": "https://en.idi.org.il/articles/47344",
     "title": "Published the first Israeli Democracy Index — an annual survey tracking democratic attitudes in Israel",
-    "dod-quote": "The Democracy Index, IDI’s annual flagship publication celebrating its twentieth anniversary",
     "accessed": {
       "date-parts": [
         [
@@ -1074,14 +160,19 @@
         ]
       ]
     },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "435d0e846c706989be226d5d19e071fc94b6383b4e22672563eb7537947ea2da"
+    "content-sha256": "435d0e846c706989be226d5d19e071fc94b6383b4e22672563eb7537947ea2da",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "The Democracy Index, IDI’s annual flagship publication celebrating its twentieth anniversary",
+        "last-verified": "2026-08-11"
+      }
+    ]
   },
   {
     "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/Janaagraha",
-    "title": "Founded by Ramesh and Swati Ramanathan to improve urban governance and citizen participation in India",
-    "dod-quote": "Founded in 2001 by Ramesh Ramanathan and Swati Ramanathan",
+    "URL": "https://en.wikipedia.org/wiki/Anti-Corruption_Foundation",
+    "title": "Founded by Alexei Navalny as the Anti-Corruption Foundation to investigate official corruption in Russia",
     "accessed": {
       "date-parts": [
         [
@@ -1091,940 +182,19 @@
         ]
       ]
     },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "aa91fca253f585210311e6256b178c2df823d05e5c9289b145c49847bb6ecc76"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://europeandemocracyhub.epd.eu/exploring-worldwide-democratic-innovations-taiwan/",
-    "title": "Launched by Taiwan's National Development Council following a February 2015 Executive Yuan directive",
-    "dod-quote": "was launched under the sponsorship of the National Development Council. The website has made it possible for citizens to submit a policy proposal to the government via the Internet.",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "b7d4c7becdd8b6210832e757c452aa76d56af926c27c69f14851ebc84f707d89"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/Kialo",
-    "title": "Founded by Errikos Pitsos as a structured debate and argument-mapping platform",
-    "dod-quote": "was founded by German-born entrepreneur and London School of Economics and Political Science graduate Errikos Pitsos",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "954f1114f09b201937f1344e4b975ad7fe5ead9cf5fba3dbae5ee6f4d2ed45bf"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/Kongra_Star",
-    "title": "Founded as the umbrella women's organisation of the Kurdish democratic confederalist movement in Rojava",
-    "dod-quote": "Kongra Star (Kurdish for Star Congress), founded in 2005",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "870b1a0997e3331ed1ccaee029ac6b0846d7de1729bc215c2630e3ace6bbd522"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://www.labsus.org/chi-siamo/",
-    "title": "Founded in Rome as the Laboratory for Subsidiarity, pioneering shared administration in Italy",
-    "dod-quote": "Il Progetto Labsus, il Laboratorio per la sussidiarietà, ha un obiettivo ben preciso",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "5a575a2c7757911272bb4f037b62ac469cfe54fc7482089e4f730e37d3985630"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://www.lcps-lebanon.org/en/about",
-    "title": "Founded as an independent, non-partisan think tank in Beirut",
-    "dod-quote": "Founded in 1989, the Lebanese Center for Policy Studies is an independently managed, non-partisan, non-profit, non-governmental think tank whose mission is to produce and advocate for policies that improve governance in Lebanon and the Arab region.",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "89d4371e6779974ce9738a2e46baffa0e04d73cfdc73423ff92ffe88fb804698"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://www.lcps-lebanon.org/en/about",
-    "title": "Contributed to drafting the Boutros electoral law",
-    "dod-quote": "contributing to formulating the 2006 Boutros draft electoral law",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "89d4371e6779974ce9738a2e46baffa0e04d73cfdc73423ff92ffe88fb804698"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/LiquidFeedback",
-    "title": "First published by Public Software Group e.V., developed in response to requests from German Pirate Party members",
-    "dod-quote": "The software was first published in October 2009 by Public Software Group e. V. after being suggested by some members of Germany's Pirate Party unsatisfied with conventional means of political opinion formation.",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "955e6b0ced7b70e0a100b63c3e297c364805af42a87beb249f3192bc813e0aa9"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/LiquidFeedback",
-    "title": "Pirate Party Berlin becomes the first political organisation to adopt LiquidFeedback, to draft new statutes",
-    "dod-quote": "The Pirate Party Germany Berlin became the first political party to utilize the platform in January 2010 for a state party conference. LiquidFeedback assisted in the development of new statutes for the branch during this time",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "955e6b0ced7b70e0a100b63c3e297c364805af42a87beb249f3192bc813e0aa9"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/LiquidFeedback",
-    "title": "Developers establish Interaktive Demokratie e.V., an independent research institute for digital-democracy research",
-    "dod-quote": "In June 2010, the developers of LiquidFeedback founded Interaktive Demokratie e.V., an independent and non-partisan research institute.",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "955e6b0ced7b70e0a100b63c3e297c364805af42a87beb249f3192bc813e0aa9"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/LiquidFeedback",
-    "title": "First public-sector (non-party) deployment, in Friesland County, Germany, for citizen consultation on council proposals",
-    "dod-quote": "The initial implementation of LiquidFeedback for public engagement occurred in Friesland County, Germany, in September 2012.",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "955e6b0ced7b70e0a100b63c3e297c364805af42a87beb249f3192bc813e0aa9"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://reclaim.org.au/inaugural-lismore-peoples-assembly/",
-    "title": "Inaugural Lismore People's Assembly",
-    "dod-quote": "The Lismore People's Assembly seeks to change this in the hopes of reinventing democracy — starting from the ground up"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://reclaim.org.au/lismore-peoples-assembly-on-housing/",
-    "title": "Lismore People's Assembly on Housing",
-    "dod-quote": "On Saturday 10th August, around fifty people gathered,"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/Loomio",
-    "title": "First prototype launched from Occupy movement and Enspiral network in New Zealand",
-    "dod-quote": "launched its first prototype",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "c5179dd59ae3e7827cf7efaf7341dcbca9beac609363d12e9f5459dcfd319d04"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/Loomio",
-    "title": "Raises $100,000 via crowdfunding for Loomio 1.0 release",
-    "dod-quote": "raised over $100,000 via a Crowdfunding",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "c5179dd59ae3e7827cf7efaf7341dcbca9beac609363d12e9f5459dcfd319d04"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/Loomio",
-    "title": "Wins MIX Prize Digital Freedom Challenge",
-    "dod-quote": "won the MIX Prize Digital Freedom Challenge",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "c5179dd59ae3e7827cf7efaf7341dcbca9beac609363d12e9f5459dcfd319d04"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/Loomio",
-    "title": "Loomio",
-    "dod-quote": "Loomio emerged from the Occupy movement. In 2012, it launched its first prototype,",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "c5179dd59ae3e7827cf7efaf7341dcbca9beac609363d12e9f5459dcfd319d04"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://www.govtech.com/civic/new-global-civic-tech-group-emerges-from-the-omidyar-group.html",
-    "title": "Launched as an independent global philanthropic organisation, spun out of Omidyar Network's Governance & Citizen Engagement initiative",
-    "dod-quote": "Officially launched in recent weeks, Luminate aims to fund projects and organizations that can drive changes that fall into one of four categories: civic empowerment, data and digital rights, transparency and independent media.",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "05996d5f263efc9822aa96cec0c5e38e3210874d1e906b4dc0e336dfd4c063e1"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/Make_It_16_(New_Zealand)",
-    "title": "Campaign launched out of New Zealand Youth Parliament",
-    "dod-quote": "was formed out of the New Zealand Youth Parliament",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "a990711ddc1b95c698e0edbb8bef9a0ad9690931d5669f46293e32886ff24288"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/Make_It_16_(New_Zealand)",
-    "title": "High Court rules voting age of 18 is age discrimination but a justified limit",
-    "dod-quote": "filed legal action with the High Court of New Zealand",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "a990711ddc1b95c698e0edbb8bef9a0ad9690931d5669f46293e32886ff24288"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/Make_It_16_(New_Zealand)",
-    "title": "Court of Appeal rules voting age of 18 is unjustified age discrimination",
-    "dod-quote": "Court of Appeal of New Zealand ruled that the voting age of 18 was unjustified age discrimination",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "a990711ddc1b95c698e0edbb8bef9a0ad9690931d5669f46293e32886ff24288"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/Make_It_16_(New_Zealand)",
-    "title": "Supreme Court issues declaration of inconsistency — rules voting age of 18 breaches Bill of Rights for 16- and 17-year-olds",
-    "dod-quote": "Supreme Court of New Zealand issued",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "a990711ddc1b95c698e0edbb8bef9a0ad9690931d5669f46293e32886ff24288"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/Make_It_16_(New_Zealand)",
-    "title": "Electoral (Lowering Voting Age) Bill passes first reading in Parliament",
-    "dod-quote": "bill passed its first reading",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "a990711ddc1b95c698e0edbb8bef9a0ad9690931d5669f46293e32886ff24288"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://www.masslbp.com/about",
-    "title": "Founded by Peter MacLeod",
-    "dod-quote": "Since its founding in 2007, MASS has completed more than 200 major policy projects for governments and public agencies across Canada",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "9dbab0f8a3b9a19a72339df1e9e83f3f152e25468dada93efe3245e2cadcc63b"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://www.masslbp.com/work-panels",
-    "title": "Ran the Central LHIN Citizens' Reference Panel on Regional Health Priorities",
-    "dod-quote": "Central LHIN Citizens’ Reference Panel on Regional Health Priorities",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "c48f4f6fe167478ef6c1e8d9330e8a2a141899f9e4d40c0af103ee5ee4180e60"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://memo98.sk/about-us",
-    "title": "Launched with NDI support to monitor Slovak media ahead of the 1998 parliamentary elections",
-    "dod-quote": "We were launched with support from the US-based National Democratic Institute for International Affairs (NDI)",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "d9aaf4a8b3028fd6b0424238dc514fc464fe9275b01d44759440664c901ed705"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://memo98.sk/about-us",
-    "title": "First international election observation mission, invited by OSCE/ODIHR",
-    "dod-quote": "between 1999 (Ukraine) to these days (Kosovo, Philippines) MEMO 98 experts have participated in more than 130 election observation missions",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "d9aaf4a8b3028fd6b0424238dc514fc464fe9275b01d44759440664c901ed705"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/Memorial_(society)",
-    "title": "Founded by Andrei Sakharov and others as the first independent human rights organisation in the Soviet Union",
-    "dod-quote": "as a \"historical and educational\" society",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "f0273c40ccfc964e9cfd08cd1367db779cac15c7f5f6ce56fd6e1f6009fcee19"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/Memorial_(society)",
-    "title": "Awarded the Nobel Peace Prize jointly with Ales Bialiatski and Center for Civil Liberties",
-    "dod-quote": "Memorial was one of the three laureates of that year's Nobel Peace Prize",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "f0273c40ccfc964e9cfd08cd1367db779cac15c7f5f6ce56fd6e1f6009fcee19"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://medium.com/mivote/new-model-of-democracy-passes-first-test-c9a3db8da2a1",
-    "title": "MiVote app publicly launched in Australia with its first test vote",
-    "dod-quote": "MiVote launched its world-leading democratic model in February with a test vote asking Australians how they want to participate in the country’s decision-making process."
-  },
-  {
-    "type": "webpage",
-    "URL": "https://www.designingopendemocracy.com/blog/2021/08/07/podcast-catching-up-with-adam-jacoby-founder-of-mivote/",
-    "title": "Australian party deregistered before the 2019 federal election, without electing any senators",
-    "dod-quote": "The Australian party deregistered around 2019; the movement and technology continued under a different structure.",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "87d403f188a9ff1f6d9eba06f48747157e86486e7f7499dbff6500dc5b029c30"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://mosaiclab.com.au/nicole-hunter",
-    "title": "Founded by Kimbra White, Nicole Hunter and Keith Greaves",
-    "dod-quote": "Nicole co-founded MosaicLab (with Keith Greaves and Kimbra White) in 2017",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "2ece9e41593418bfad1b3a6b59da5e0b9483226b505c8dbc5b4dde3a5063a5fe"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://mosaiclab.com.au/contributions-to-the-field",
-    "title": "Critical Thinking Research with Dr Lyn Carson wins IAP2 Core Values Award for Research",
-    "dod-quote": "we were awarded the IAP2 Australasia Core Values Award for Research in 2018",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "d0db47fed5f7d6b92afb7ecaf4887a83daaea7baad49b7ddbabcb51e3f71baca"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://mosaiclab.com.au/the-big-book",
-    "title": "Publishes Facilitating Deliberation — A Practical Guide, drawing on 39 deliberative processes",
-    "dod-quote": "Drawn from the authors’ experience delivering 39 deliberative engagement processes, the book is full of insider secrets, authentic lessons learned",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "8c60b90f64fc991249de4f4726d0e0e410fe75b2b4a19a53e22db4041f3a5dd7"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://www.weforum.org/organizations/movilizatorio/",
-    "title": "Founded in Bogotá as a citizen participation and social innovation laboratory",
-    "dod-quote": "Movilizatorio was born in 2016 precisely as a response to the risks and possibilities to create better civic engagement and social innovation in a context of peace negotiations and peacebuilding."
-  },
-  {
-    "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/Movement_for_Quality_Government_in_Israel",
-    "title": "Founded as the Movement for Quality Government in Israel to combat corruption and promote transparency",
-    "dod-quote": "was founded in March 1990 by lawyer Eliad Shraga",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "e12b56f60f8c5858ec4cab7a16fc6d0cd2383d66d39f066375bd93f871c92c5c"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/MySociety",
-    "title": "Founded by Tom Steinberg as a UK civic-tech charity, launching TheyWorkForYou and WriteToThem",
-    "dod-quote": "mySociety was founded by Tom Steinberg in September 2003",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "0fa52e283fb901d847f796559469e6fc46499dd36a5bad53fb9925418e9a7bb6"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/MySociety",
-    "title": "Launched TheyWorkForYou — making parliamentary activity searchable and accessible to UK citizens",
-    "dod-quote": "TheyWorkForYou is a parliamentary monitoring website which aims to make it easier",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "0fa52e283fb901d847f796559469e6fc46499dd36a5bad53fb9925418e9a7bb6"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/MySociety",
-    "title": "Launched WriteToThem — enabling citizens to contact their elected representatives online",
-    "dod-quote": "WriteToThem is a website which allows UK citizens to contact their elected representatives",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "0fa52e283fb901d847f796559469e6fc46499dd36a5bad53fb9925418e9a7bb6"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/National_Citizens%27_Movement_for_Free_Elections",
-    "title": "Founded as the first citizen-led election monitoring organisation in the world, Philippines",
-    "dod-quote": "NAMFREL was formally organized in October 1983",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "afe7387489809b666337bab78419ca5e1a61184ab499f713c31cf2f1734d3301"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/National_Citizens%27_Movement_for_Free_Elections",
-    "title": "Mobilised 500,000 volunteers for Operation Quick Count — demonstrated Marcos lost the snap election, triggering the People Power uprising",
-    "dod-quote": "NAMFREL mobilized 500,000 volunteers nationwide",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "afe7387489809b666337bab78419ca5e1a61184ab499f713c31cf2f1734d3301"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://www.newdemocracy.com.au/history/",
-    "title": "newDemocracy Foundation launched — one of the first organisations worldwide dedicated exclusively to citizens' assemblies",
-    "dod-quote": "The newDemocracy Foundation was launched in 2007, with Luca Belgiorno-Nettis, Lyn Carson, Kathy Jones and Ian Marsh as the inaugural directors.",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "6bc0cd70124c379000d86a08c18a28da25fdcacdc7cee55c9f257cc7e428a3b8"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://www.newdemocracy.com.au/history/",
-    "title": "Australian Citizens' Parliament — 150 citizens deliberate on strengthening Australia's democracy",
-    "dod-quote": "Our first big project was the Australian Citizens’ Parliament in 2009, which was an Australian Research Centre-funded citizens’ assembly involving 150 Australians deliberating on how to strengthen Australia’s system of government.",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "6bc0cd70124c379000d86a08c18a28da25fdcacdc7cee55c9f257cc7e428a3b8"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://www.newdemocracy.com.au/history/",
-    "title": "Democracy R&D international network founded with newDemocracy as a founding member",
-    "dod-quote": "Luca had a 30-year career in Transfield, a large infrastructure and engineering company founded by his father.",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "6bc0cd70124c379000d86a08c18a28da25fdcacdc7cee55c9f257cc7e428a3b8"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://www.newdemocracy.com.au/history/",
-    "title": "Helps design Ostbelgien's permanent Citizens' Council — world's first embedded in a parliament",
-    "dod-quote": "Still in 2018, we were invited to travel to Belgium with a several other academics and practitioners to consult on what would become the world’s first permanent Citizens’ Council in Eupen, the capital of the autonomous Ostbelgien region.",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "6bc0cd70124c379000d86a08c18a28da25fdcacdc7cee55c9f257cc7e428a3b8"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://www.newdemocracy.com.au/history/",
-    "title": "History",
-    "dod-quote": "The newDemocracy Foundation was launched in 2007, with Luca Belgiorno-Nettis... as the inaugural directors,",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "6bc0cd70124c379000d86a08c18a28da25fdcacdc7cee55c9f257cc7e428a3b8"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://newvote.org/the-institute",
-    "title": "Established as a not-for-profit / for-purpose organisation in Australia",
-    "dod-quote": "NewVote is founded as a for-purpose (a not-for-profit), Australia.",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "5a6630872139100b8f5fceb6c4ad6df14b6d064b36acfe3a47d0f22b155ff881"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://newvote.org/the-institute",
-    "title": "NewVote platform publicly launched",
-    "dod-quote": "The University of Queensland Student Union is piloting and promoting the app with its 52,000 students, starting on 24 July 2019.",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "5a6630872139100b8f5fceb6c4ad6df14b6d064b36acfe3a47d0f22b155ff881"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/Online_Direct_Democracy",
-    "title": "Founded as \"Senator Online\"; later renamed Online Direct Democracy in 2015",
-    "dod-quote": "The party contested the 2007 and 2013 federal elections as Senator Online.",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "61a7f1cd78becb0c7c16a3149b31943c7916ccefa67db63bd7f2904fbc0af1d4"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/Online_Direct_Democracy",
-    "title": "Deregistered as a political party",
-    "dod-quote": "Online Direct Democracy – (Empowering the People!) was a registered Australian political party.",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "61a7f1cd78becb0c7c16a3149b31943c7916ccefa67db63bd7f2904fbc0af1d4"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://www.openaustraliafoundation.org.au/2009/07/07/announcing-the-openaustralia-foundation/",
-    "title": "Founded by Matthew Landauer and Katherine Szuminska",
-    "dod-quote": "OpenAustralia Foundation Limited is officially incorporated as a company limited by guarantee.",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "55fe0ac3d2f9359527429b8bafd6d3e74d233f75fae51d9fa409a6811bb15f77"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://www.openaustraliafoundation.org.au/2009/12/21/launching-our-new-website-planning-alerts/",
-    "title": "Launched PlanningAlerts",
-    "dod-quote": "21 December 2009 Launching our new website: Planning Alerts",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "77771e539d376a68c2ec19c9c6ff8d3145440f89253a8b400bdc49fde070974f"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://oaf.org.au/2014/10/21/they-vote-for-you/",
-    "title": "Launched They Vote For You, tracking Australian parliamentary voting records",
-    "dod-quote": "today the OpenAustralia Foundation is launching a new site They Vote for You",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "a3cb32fab36732ecc0a6a0501a8161fa1b79f4ab9e79977844475e252f1a90b8"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/OpenAustralia_Foundation",
-    "title": "\"OpenAustralia Foundation\"",
-    "dod-quote": "It was established in 2009, co-founded by Matthew Landauer and Katherine Szuminska,"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://www.opengovpartnership.org/documents/australia-letter-of-intent-to-join-ogp/",
-    "title": "Australia signs Letter of Intent to join the Open Government Partnership",
-    "dod-quote": "Australia Letter of Intent to Join OGP 30th November 2015"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://www.ipc.nsw.gov.au/news/open-government-partnership-final-public-consultation-draft-commitments-australias-third-national-action-plan",
-    "title": "Draft third National Action Plan went through final consultation but was never formally submitted, marking the point the initiative went dormant",
-    "dod-quote": "The Open Government Forum is seeking final feedback on the draft Commitments proposed to be included in Australia's Third National Action Plan (NAP3). The Forum is open to feedback until Friday, 6 November 2020."
-  },
-  {
-    "type": "webpage",
-    "URL": "https://pt.wikipedia.org/wiki/Open_Knowledge_Brasil",
-    "title": "Founded as the Brazilian chapter of Open Knowledge, promoting open data and civic technology",
-    "dod-quote": "sociedade civil (OSC) sem fins lucrativos e apartidária, fundada em assembleia em 4 de setembro de 2013",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "7430e432fbdeb0de72e336361263372ee6f4b7feb7a708418ad09423eb5f61dd"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/Open_Society_Foundations",
-    "title": "Founded by George Soros to support civil society, human rights, and democratic governance globally",
-    "dod-quote": "is an American grantmaking network founded by billionaire business magnate George Soros",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "1c34ddb97588bb8445bc33debc60e91dc9375516dae2f1182376e92f0c508984"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/Open_Society_Foundations",
-    "title": "Announced leadership transition — Alex Soros appointed chair, succeeding George Soros",
-    "dod-quote": "George Soros handed over the leadership of the foundation to his son Alexander Soros",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "1c34ddb97588bb8445bc33debc60e91dc9375516dae2f1182376e92f0c508984"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://www.participatorybudgeting.org/about/",
-    "title": "Founded by Josh Lerner and collaborators, launching the first PB process in North America in Chicago's 49th Ward",
-    "dod-quote": "Since 2009, PBP has collaborated with grassroots and government partners to launch PB processes in over 40 cities",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "219d8a79ad9947397d683e6d93fabb5f3c0ed0e0e96b0818191b66024bc5514e"
+    "content-sha256": "9ec9fa4393372e48883fe8405dd0de48bed76b64ab718444b55a3050878b9e1f",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "FBK was founded by Alexei Navalny",
+        "last-verified": "2026-08-11"
+      }
+    ]
   },
   {
     "type": "webpage",
     "URL": "https://en.wikipedia.org/wiki/Archon_Fung",
     "title": "Launched by Archon Fung (Harvard) and Mark Warren (UBC) as a crowdsourced wiki platform for democratic innovations",
-    "dod-quote": "In September 2009, Fung launched Participedia, a website developed with Mark Warren of the University of British Columbia, aimed at strengthening democracy with its user-generated library of examples and methods of participatory governance",
     "accessed": {
       "date-parts": [
         [
@@ -2034,14 +204,19 @@
         ]
       ]
     },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "94891b5e0474508eaac0d48434f9c3fd57050ee44bd8f03b4eada217eed6e320"
+    "content-sha256": "94891b5e0474508eaac0d48434f9c3fd57050ee44bd8f03b4eada217eed6e320",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "In September 2009, Fung launched Participedia, a website developed with Mark Warren of the University of British Columbia, aimed at strengthening democracy with its user-generated library of examples and methods of participatory governance",
+        "last-verified": "2026-08-11"
+      }
+    ]
   },
   {
     "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/Pirate_Party_Australia",
-    "title": "Founded as part of the international Pirate Party movement, advocating digital rights and direct democracy",
-    "dod-quote": "was founded in 2008 by Rodney Serkowski",
+    "URL": "https://en.wikipedia.org/wiki/Australian_Democrats",
+    "title": "Founded by Don Chipp, emerging from the Liberal Party split, running on 'keeping the bastards honest'",
     "accessed": {
       "date-parts": [
         [
@@ -2051,14 +226,29 @@
         ]
       ]
     },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "830f5cf703045d06e23599c4d1bc2c30ff6516ea3930774de260ff10a647198d"
+    "content-sha256": "a667c54922a781a76abd2f0afcd15e4b10f32cf17dad0e5cc701515c51e0a31b",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "At the 1980 election, this increased to five seats",
+        "last-verified": "2026-08-11"
+      },
+      {
+        "type": "quote-match",
+        "quote": "The Democrats' inaugural leader was Don Chipp",
+        "last-verified": "2026-08-11"
+      },
+      {
+        "type": "quote-match",
+        "quote": "the 1990 federal election heralded something of a rebirth",
+        "last-verified": "2026-08-11"
+      }
+    ]
   },
   {
     "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/Pol.is",
-    "title": "Created by Colin Megill and the Computational Democracy Project as an open-source tool for large-scale deliberation",
-    "dod-quote": "was founded by Colin Megill, Christopher Small, and Michael Bjorkegren",
+    "URL": "https://en.wikipedia.org/wiki/Bersih",
+    "title": "Coalition formed by opposition parties and civil society groups demanding free and fair elections in Malaysia",
     "accessed": {
       "date-parts": [
         [
@@ -2068,14 +258,29 @@
         ]
       ]
     },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "79b46a911c87fe2b25cfa9f590ce99eeaa846b07cce6784797660dda8e2a7823"
+    "content-sha256": "21ebf7abdfe9dab710eb9edc51c453a6bf98c0ce24458d42353211af7daa6207",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "9 July 2011 ranged from 10,000 to 50,000",
+        "last-verified": "2026-08-11"
+      },
+      {
+        "type": "quote-match",
+        "quote": "officially formed on 23 November 2006",
+        "last-verified": "2026-08-11"
+      },
+      {
+        "type": "quote-match",
+        "quote": "rally with 10,000 to 40,000 turnout",
+        "last-verified": "2026-08-11"
+      }
+    ]
   },
   {
     "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/Pol.is",
-    "title": "First used by the Taiwanese government for vTaiwan — the first large-scale deployment for public policy deliberation",
-    "dod-quote": "pol.is has been \"one of the key parts\" of vTaiwan",
+    "URL": "https://en.wikipedia.org/wiki/Chinese_People%27s_Political_Consultative_Conference",
+    "title": "Established as the Chinese People's Political Consultative Conference, the united front and top political advisory body",
     "accessed": {
       "date-parts": [
         [
@@ -2085,14 +290,19 @@
         ]
       ]
     },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "79b46a911c87fe2b25cfa9f590ce99eeaa846b07cce6784797660dda8e2a7823"
+    "content-sha256": "1dc9af679c6f13580beaac6f2bd71c082b56e084e9fff382ce4eef3888f08373",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "The Political Consultative Conference was established in 1945 as part of peace negotiations between the Kuomintang and the CCP.",
+        "last-verified": "2026-08-11"
+      }
+    ]
   },
   {
     "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/PRS_Legislative_Research",
-    "title": "Founded to track parliamentary activity and strengthen legislative debate in India",
-    "dod-quote": "was established in September 2005 as an independent research institute",
+    "URL": "https://en.wikipedia.org/wiki/Citizens_Foundation",
+    "title": "Founded by Robert Bjarnason and Gunnar Grimsson",
     "accessed": {
       "date-parts": [
         [
@@ -2102,14 +312,29 @@
         ]
       ]
     },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "7ebd72733e454ec445768bbc069d9e62547ae01963060f1dc482ed7da53ea1eb"
+    "content-sha256": "b05f4f03c811ce9f1bd5d71d72e91d976235422ebf2672e676e7d7df7b7df1a5",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Shadow Parliament (Skuggaþing) opened formally in February 2010",
+        "last-verified": "2026-08-11"
+      },
+      {
+        "type": "quote-match",
+        "quote": "The Citizens Foundation is a non-profit organization based in Reykjavík, Iceland, and founded under Icelandic law to promote electronic collaborative democracy around the globe and to develop the software needed for that purpose.",
+        "last-verified": "2026-08-11"
+      },
+      {
+        "type": "quote-match",
+        "quote": "on 25 May 2010, the website Shadow City (Skuggaborg) opened",
+        "last-verified": "2026-08-11"
+      }
+    ]
   },
   {
     "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/People%27s_Solidarity_for_Participatory_Democracy",
-    "title": "Founded with ~200 members in Seoul as People's Solidarity for Participatory Democracy",
-    "dod-quote": "was established on 10 September 1994 with around 200 members",
+    "URL": "https://en.wikipedia.org/wiki/Confederation_of_Indigenous_Nationalities_of_Ecuador",
+    "title": "Founded to represent Ecuador's Indigenous nationalities, becoming the country's largest Indigenous organisation",
     "accessed": {
       "date-parts": [
         [
@@ -2119,14 +344,19 @@
         ]
       ]
     },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "5629df9bf7f39983779fffe34213d18228ed454efd176260451608801cba00bd"
+    "content-sha256": "7f7ad365c426dbc34364dd2d05cce4de26f2b9076265b3a0aefaf678e86e4095",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "CONAIE was founded in 1986",
+        "last-verified": "2026-08-11"
+      }
+    ]
   },
   {
     "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/People%27s_Solidarity_for_Participatory_Democracy",
-    "title": "Obtains UN ECOSOC special consultative status",
-    "dod-quote": "PSPD obtained a special consultative status with the UN ECOSOC",
+    "URL": "https://en.wikipedia.org/wiki/Decidim",
+    "title": "First Decidim server created by 15M activists in Barcelona",
     "accessed": {
       "date-parts": [
         [
@@ -2136,14 +366,186 @@
         ]
       ]
     },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "5629df9bf7f39983779fffe34213d18228ed454efd176260451608801cba00bd"
+    "content-sha256": "0740f74f55bc25949c583d6bc8c9241b9c808caaeeeabfc14f49115531a561b8",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Decidim provided their first use of participatory budgeting",
+        "last-verified": "2026-08-11"
+      },
+      {
+        "type": "quote-match",
+        "quote": "recognised as satisfying the criteria of the Digital Public Goods Alliance",
+        "last-verified": "2026-08-11"
+      },
+      {
+        "type": "quote-match",
+        "quote": "the community formally established Decidim Association in 2019 and City Council of Barcelona gave control of the Decidim trademark and code base to Decidim Association.",
+        "last-verified": "2026-08-11"
+      },
+      {
+        "type": "quote-match",
+        "quote": "the server was switched to a similarly inspired, but new software project, Decidim",
+        "last-verified": "2026-08-11"
+      }
+    ]
+  },
+  {
+    "type": "webpage",
+    "URL": "https://en.wikipedia.org/wiki/Democracy_International_eV",
+    "title": "Formally registered as an association, building on a loose network dating back to 2002",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          11
+        ]
+      ]
+    },
+    "content-sha256": "a76fd98c4af28b65d87b8b9482cca9ef4b98bf643e43bfb1c094b50f1909c6d8",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "formally established in June 2011",
+        "last-verified": "2026-08-11"
+      }
+    ]
+  },
+  {
+    "type": "webpage",
+    "URL": "https://en.wikipedia.org/wiki/Democracy_in_Europe_Movement_2025",
+    "title": "Launched by Yanis Varoufakis and Srećko Horvat as a pan-European progressive movement in Berlin",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          11
+        ]
+      ]
+    },
+    "content-sha256": "e45a298ebb888e40e1c87b8cc94138358fa1f2709edc088910fbe6cb240737a7",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "The movement was officially launched at ceremonial events in 2016",
+        "last-verified": "2026-08-11"
+      },
+      {
+        "type": "quote-match",
+        "quote": "established an electoral list for the 2019 European Parliament elections",
+        "last-verified": "2026-08-11"
+      },
+      {
+        "type": "quote-match",
+        "quote": "on 23 March in Rome",
+        "last-verified": "2026-08-11"
+      }
+    ]
+  },
+  {
+    "type": "webpage",
+    "URL": "https://en.wikipedia.org/wiki/Electoral_Institute_for_Sustainable_Democracy_in_Africa",
+    "title": "Founded as the Electoral Institute for Sustainable Democracy in Africa, Johannesburg",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          11
+        ]
+      ]
+    },
+    "content-sha256": "f5f7e1d943e85576c2c31d16ac6eefed19a14d9e11c52e37787d9dc8d3263756",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "founded in 1996 in Johannesburg",
+        "last-verified": "2026-08-11"
+      }
+    ]
+  },
+  {
+    "type": "webpage",
+    "URL": "https://en.wikipedia.org/wiki/Electoral_Reform_Society",
+    "title": "Founded as the Proportional Representation Society — one of the world's oldest electoral reform organisations",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          11
+        ]
+      ]
+    },
+    "content-sha256": "2aa7a97c138a0ff4702dabf692e45a5073c4e7cc93c4d9bd150c490d092d73a6",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "principal funder of the YES! To Fairer Votes campaign",
+        "last-verified": "2026-08-11"
+      },
+      {
+        "type": "quote-match",
+        "quote": "was founded in January 1884 as the Proportional Representation Society by",
+        "last-verified": "2026-08-11"
+      }
+    ]
+  },
+  {
+    "type": "webpage",
+    "URL": "https://en.wikipedia.org/wiki/Flux_(political_party)",
+    "title": "Registered as a federal political party, promoting a novel platform of direct digital democracy via app-based voting",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          11
+        ]
+      ]
+    },
+    "content-sha256": "66a7f67f00753f48d263e9a9691de8e3910363e6e7232fcc1161e74aed0f970e",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Flux parties were registered",
+        "last-verified": "2026-08-11"
+      }
+    ]
+  },
+  {
+    "type": "webpage",
+    "URL": "https://en.wikipedia.org/wiki/G0v_movement",
+    "title": "First hackathon (Hackath0n) at Academia Sinica — launches the g0v community",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          11
+        ]
+      ]
+    },
+    "content-sha256": "3f64b69aa44428c2b738a2037bed03d6c91f50526cf0f54258521490e142d966",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "active g0v communities working on open government data in Taiwan and Hong Kong",
+        "last-verified": "2026-08-11"
+      },
+      {
+        "type": "quote-match",
+        "quote": "driven by a bimonthly hackathon",
+        "last-verified": "2026-08-11"
+      }
+    ]
   },
   {
     "type": "webpage",
     "URL": "https://en.wikipedia.org/wiki/Glen_Weyl",
     "title": "Radical Markets: Uprooting Capitalism and Democracy for a Just Society published (Posner & Weyl)",
-    "dod-quote": "co-author (with Eric Posner) of the book Radical Markets: Uprooting Capitalism and Democracy for a Just Society",
     "accessed": {
       "date-parts": [
         [
@@ -2153,14 +555,24 @@
         ]
       ]
     },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "cb9d9567efbcfc4bf5c5701a8e41138767300cb996ee846cb569b2acc34da649"
+    "content-sha256": "cb9d9567efbcfc4bf5c5701a8e41138767300cb996ee846cb569b2acc34da649",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Plurality: The Future of Collaborative Technology and Democracy",
+        "last-verified": "2026-08-11"
+      },
+      {
+        "type": "quote-match",
+        "quote": "co-author (with Eric Posner) of the book Radical Markets: Uprooting Capitalism and Democracy for a Just Society",
+        "last-verified": "2026-08-11"
+      }
+    ]
   },
   {
     "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/Glen_Weyl",
-    "title": "Plurality: The Future of Collaborative Technology and Democracy published (Weyl, Tang & community)",
-    "dod-quote": "Plurality: The Future of Collaborative Technology and Democracy",
+    "URL": "https://en.wikipedia.org/wiki/Golos_(election_monitor)",
+    "title": "Founded as an independent election monitoring organisation in Russia",
     "accessed": {
       "date-parts": [
         [
@@ -2170,14 +582,19 @@
         ]
       ]
     },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "cb9d9567efbcfc4bf5c5701a8e41138767300cb996ee846cb569b2acc34da649"
+    "content-sha256": "be9dd24013ea711084873c9b00f30e4a1366c18bdf4c9acf5dbd1236d627d13b",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "GOLOS was founded as an association of non-profit organizations in 2000 to support civil monitoring of elections.",
+        "last-verified": "2026-08-11"
+      }
+    ]
   },
   {
     "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/Referendum_Council",
-    "title": "Jointly appointed by PM Malcolm Turnbull and Opposition Leader Bill Shorten",
-    "dod-quote": "The 16-member Referendum Council was jointly appointed by the prime minister, Malcolm Turnbull, and Leader of the Opposition, Bill Shorten, on 7 December 2015",
+    "URL": "https://en.wikipedia.org/wiki/Goree_Institute",
+    "title": "Founded on Gorée Island, Senegal, as a Centre for Democracy, Development and Culture in Africa",
     "accessed": {
       "date-parts": [
         [
@@ -2187,14 +604,19 @@
         ]
       ]
     },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "4a6e782b507de936b5dce989d56b99358065432c6d22afd9499ace5e11c89f5e"
+    "content-sha256": "7fb96f7dbd6db04f4a6e95cb3ac170e85867d3c9ddeea86dbbc64ba59ddecffd",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "was founded on 25 June 1992",
+        "last-verified": "2026-08-11"
+      }
+    ]
   },
   {
     "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/Referendum_Council",
-    "title": "Uluru Statement from the Heart issued at the First Nations National Constitutional Convention",
-    "dod-quote": "The First Nations National Constitutional Convention met over four days from 23 to 26 May 2017",
+    "URL": "https://en.wikipedia.org/wiki/International_Institute_for_Democracy_and_Electoral_Assistance",
+    "title": "Founded in Stockholm as an intergovernmental organisation supporting sustainable democracy worldwide",
     "accessed": {
       "date-parts": [
         [
@@ -2204,14 +626,24 @@
         ]
       ]
     },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "4a6e782b507de936b5dce989d56b99358065432c6d22afd9499ace5e11c89f5e"
+    "content-sha256": "4d59f056f0197ca454288fe9c1b24f6c7ce84d12275a94c6ec688382afd7587b",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "The Founding Conference of International IDEA took place on 27–28 February 1995",
+        "last-verified": "2026-08-11"
+      },
+      {
+        "type": "quote-match",
+        "quote": "The Global State of Democracy (GSoD) Initiative was launched in 2016",
+        "last-verified": "2026-08-11"
+      }
+    ]
   },
   {
     "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/Referendum_Council",
-    "title": "Final Report published, incorporating the Uluru Statement",
-    "dod-quote": "The Final Report of the Referendum Council was published on 30 June 2017, and sent to the Prime Minister, Malcolm Turnbull, and the leader of the opposition, Bill Shorten",
+    "URL": "https://en.wikipedia.org/wiki/Internet_Freedom_Foundation",
+    "title": "Founded in India on Independence Day to defend digital rights, free expression, and online civil liberties",
     "accessed": {
       "date-parts": [
         [
@@ -2221,14 +653,24 @@
         ]
       ]
     },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "4a6e782b507de936b5dce989d56b99358065432c6d22afd9499ace5e11c89f5e"
+    "content-sha256": "7541282ed1afced55f7449c3801384d5f37a51a00acb77d8fb1e5d4b64531457",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Launched on 15 August 2016",
+        "last-verified": "2026-08-11"
+      },
+      {
+        "type": "quote-match",
+        "quote": "challenges to the IT Rules, 2021",
+        "last-verified": "2026-08-11"
+      }
+    ]
   },
   {
     "type": "webpage",
-    "URL": "https://techboard.com.au/company-profile/xo-1/",
-    "title": "Founded by Max Kaye as a Sydney-based blockchain voting startup",
-    "dod-quote": "Founders: Max Kaye",
+    "URL": "https://en.wikipedia.org/wiki/Israel_Democracy_Institute",
+    "title": "Founded as an independent research centre dedicated to strengthening Israeli democracy",
     "accessed": {
       "date-parts": [
         [
@@ -2238,14 +680,19 @@
         ]
       ]
     },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "811cdaf72455828359380cc40b56b33b657e70324c164a05705bf44d76b32933"
+    "content-sha256": "0cbd6f8e6d5dc2904f11f64386dbba4206fd90786bd53038632e054aee9c7d54",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "was founded in 1991 as a \"center of research and action dedicated to strengthening the foundations of Israeli democracy.\"",
+        "last-verified": "2026-08-11"
+      }
+    ]
   },
   {
     "type": "webpage",
-    "URL": "https://techboard.com.au/company-profile/xo-1/",
-    "title": "Won the Cyber Security Award at the Australian Technologies Competition",
-    "dod-quote": "SecureVote wins ATC Cyber Security Award",
+    "URL": "https://en.wikipedia.org/wiki/Janaagraha",
+    "title": "Founded by Ramesh and Swati Ramanathan to improve urban governance and citizen participation in India",
     "accessed": {
       "date-parts": [
         [
@@ -2255,14 +702,19 @@
         ]
       ]
     },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "811cdaf72455828359380cc40b56b33b657e70324c164a05705bf44d76b32933"
+    "content-sha256": "aa91fca253f585210311e6256b178c2df823d05e5c9289b145c49847bb6ecc76",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Founded in 2001 by Ramesh Ramanathan and Swati Ramanathan",
+        "last-verified": "2026-08-11"
+      }
+    ]
   },
   {
     "type": "webpage",
-    "URL": "https://ia.acs.org.au/article/2018/blockchain-to-revolutionise-e-voting.html",
-    "title": "Signed a deal with Silicon Valley startup Swarm Fund to use SecureVote's Liquid Democracy Voting Module",
-    "dod-quote": "A deal with Silicon Valley start-up Swarm Fund is a big win for an Australian firm working to revolutionise the democratic process using blockchain",
+    "URL": "https://en.wikipedia.org/wiki/Kialo",
+    "title": "Founded by Errikos Pitsos as a structured debate and argument-mapping platform",
     "accessed": {
       "date-parts": [
         [
@@ -2272,14 +724,19 @@
         ]
       ]
     },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "4e442ffd105c3ce6b2ca615e1390113775668e746704038e05f75713392110aa"
+    "content-sha256": "954f1114f09b201937f1344e4b975ad7fe5ead9cf5fba3dbae5ee6f4d2ed45bf",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "was founded by German-born entrepreneur and London School of Economics and Political Science graduate Errikos Pitsos",
+        "last-verified": "2026-08-11"
+      }
+    ]
   },
   {
     "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/SITRA",
-    "title": "Established by the Finnish Parliament as the Finnish Innovation Fund, under parliamentary supervision",
-    "dod-quote": "Sitra was founded in 1967 as a part of the Bank of Finland",
+    "URL": "https://en.wikipedia.org/wiki/Kongra_Star",
+    "title": "Founded as the umbrella women's organisation of the Kurdish democratic confederalist movement in Rojava",
     "accessed": {
       "date-parts": [
         [
@@ -2289,14 +746,19 @@
         ]
       ]
     },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "cfcb1c3677c327642eceb4f9cf3465cf255bea824ba69aa5405be3fcbe592bfe"
+    "content-sha256": "870b1a0997e3331ed1ccaee029ac6b0846d7de1729bc215c2630e3ace6bbd522",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Kongra Star (Kurdish for Star Congress), founded in 2005",
+        "last-verified": "2026-08-11"
+      }
+    ]
   },
   {
     "type": "webpage",
-    "URL": "https://mckinnon.co/about-us",
-    "title": "Founded (as Susan McKinnon Foundation) by Sophie Oh and Grant Rule",
-    "dod-quote": "known as the Susan McKinnon Foundation) was established in 2015 by Sophie Oh and Grant Rule",
+    "URL": "https://en.wikipedia.org/wiki/LiquidFeedback",
+    "title": "First published by Public Software Group e.V., developed in response to requests from German Pirate Party members",
     "accessed": {
       "date-parts": [
         [
@@ -2306,20 +768,34 @@
         ]
       ]
     },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "11ff06a1889c63e37b408155113d0f216fa90925a1174690f0b15a519e06a6fd"
+    "content-sha256": "955e6b0ced7b70e0a100b63c3e297c364805af42a87beb249f3192bc813e0aa9",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "In June 2010, the developers of LiquidFeedback founded Interaktive Demokratie e.V., an independent and non-partisan research institute.",
+        "last-verified": "2026-08-11"
+      },
+      {
+        "type": "quote-match",
+        "quote": "The Pirate Party Germany Berlin became the first political party to utilize the platform in January 2010 for a state party conference. LiquidFeedback assisted in the development of new statutes for the branch during this time",
+        "last-verified": "2026-08-11"
+      },
+      {
+        "type": "quote-match",
+        "quote": "The initial implementation of LiquidFeedback for public engagement occurred in Friesland County, Germany, in September 2012.",
+        "last-verified": "2026-08-11"
+      },
+      {
+        "type": "quote-match",
+        "quote": "The software was first published in October 2009 by Public Software Group e. V. after being suggested by some members of Germany's Pirate Party unsatisfied with conventional means of political opinion formation.",
+        "last-verified": "2026-08-11"
+      }
+    ]
   },
   {
     "type": "webpage",
-    "URL": "https://www.unimelb.edu.au/newsroom/news/2017/november/susan-mckinnon-foundation-and-university-of-melbourne-establish-prestigious-award-for-political-leadership",
-    "title": "McKinnon Prize in Political Leadership established, in partnership with the University of Melbourne",
-    "dod-quote": "Susan McKinnon Foundation Co-Founder Grant Rule said: &ldquo;Now, more than ever, we need to publicly recognise political leadership that shows vision and courage and has had a constructive impact for"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/Team_Mirai",
-    "title": "Party officially established by AI engineer Takahiro Anno",
-    "dod-quote": "was established on 8 May 2025",
+    "URL": "https://en.wikipedia.org/wiki/Loomio",
+    "title": "First prototype launched from Occupy movement and Enspiral network in New Zealand",
     "accessed": {
       "date-parts": [
         [
@@ -2329,14 +805,34 @@
         ]
       ]
     },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "d6a084a207e5d7f19a9b6d3d34be7665e40f87eaa7ecb312f9fc54a4b7cb6d9f"
+    "content-sha256": "c5179dd59ae3e7827cf7efaf7341dcbca9beac609363d12e9f5459dcfd319d04",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Loomio emerged from the Occupy movement. In 2012, it launched its first prototype,",
+        "last-verified": "2026-08-11"
+      },
+      {
+        "type": "quote-match",
+        "quote": "launched its first prototype",
+        "last-verified": "2026-08-11"
+      },
+      {
+        "type": "quote-match",
+        "quote": "raised over $100,000 via a Crowdfunding",
+        "last-verified": "2026-08-11"
+      },
+      {
+        "type": "quote-match",
+        "quote": "won the MIX Prize Digital Freedom Challenge",
+        "last-verified": "2026-08-11"
+      }
+    ]
   },
   {
     "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/Team_Mirai",
-    "title": "Wins 1 seat in House of Councillors with 1.5 million votes (2.6%)",
-    "dod-quote": "won its first seat in the Diet",
+    "URL": "https://en.wikipedia.org/wiki/Make_It_16_(New_Zealand)",
+    "title": "Campaign launched out of New Zealand Youth Parliament",
     "accessed": {
       "date-parts": [
         [
@@ -2346,14 +842,39 @@
         ]
       ]
     },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "d6a084a207e5d7f19a9b6d3d34be7665e40f87eaa7ecb312f9fc54a4b7cb6d9f"
+    "content-sha256": "a990711ddc1b95c698e0edbb8bef9a0ad9690931d5669f46293e32886ff24288",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Court of Appeal of New Zealand ruled that the voting age of 18 was unjustified age discrimination",
+        "last-verified": "2026-08-11"
+      },
+      {
+        "type": "quote-match",
+        "quote": "Supreme Court of New Zealand issued",
+        "last-verified": "2026-08-11"
+      },
+      {
+        "type": "quote-match",
+        "quote": "bill passed its first reading",
+        "last-verified": "2026-08-11"
+      },
+      {
+        "type": "quote-match",
+        "quote": "filed legal action with the High Court of New Zealand",
+        "last-verified": "2026-08-11"
+      },
+      {
+        "type": "quote-match",
+        "quote": "was formed out of the New Zealand Youth Parliament",
+        "last-verified": "2026-08-11"
+      }
+    ]
   },
   {
     "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/Team_Mirai",
-    "title": "Wins 11 seats in House of Representatives with 3.8 million votes (~6.9%)",
-    "dod-quote": "securing 11 seats in the House of Representatives",
+    "URL": "https://en.wikipedia.org/wiki/Memorial_(society)",
+    "title": "Founded by Andrei Sakharov and others as the first independent human rights organisation in the Soviet Union",
     "accessed": {
       "date-parts": [
         [
@@ -2363,14 +884,46 @@
         ]
       ]
     },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "d6a084a207e5d7f19a9b6d3d34be7665e40f87eaa7ecb312f9fc54a4b7cb6d9f"
+    "content-sha256": "f0273c40ccfc964e9cfd08cd1367db779cac15c7f5f6ce56fd6e1f6009fcee19",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Memorial was one of the three laureates of that year's Nobel Peace Prize",
+        "last-verified": "2026-08-11"
+      },
+      {
+        "type": "quote-match",
+        "quote": "as a \"historical and educational\" society",
+        "last-verified": "2026-08-11"
+      }
+    ]
+  },
+  {
+    "type": "webpage",
+    "URL": "https://en.wikipedia.org/wiki/Movement_for_Quality_Government_in_Israel",
+    "title": "Founded as the Movement for Quality Government in Israel to combat corruption and promote transparency",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          11
+        ]
+      ]
+    },
+    "content-sha256": "e12b56f60f8c5858ec4cab7a16fc6d0cd2383d66d39f066375bd93f871c92c5c",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "was founded in March 1990 by lawyer Eliad Shraga",
+        "last-verified": "2026-08-11"
+      }
+    ]
   },
   {
     "type": "webpage",
     "URL": "https://en.wikipedia.org/wiki/Movement_for_a_Democratic_Society",
     "title": "Founded as the Movement for a Democratic Society, the political coalition governing the Autonomous Administration of North and East Syria",
-    "dod-quote": "is a left-wing umbrella organization in northern Syria founded on 16 January 2011",
     "accessed": {
       "date-parts": [
         [
@@ -2380,14 +933,19 @@
         ]
       ]
     },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "6782844aa5036eb1e0983fae8038b5f46acd43a231b0308d7b35ec16cd4560e1"
+    "content-sha256": "6782844aa5036eb1e0983fae8038b5f46acd43a231b0308d7b35ec16cd4560e1",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "is a left-wing umbrella organization in northern Syria founded on 16 January 2011",
+        "last-verified": "2026-08-11"
+      }
+    ]
   },
   {
     "type": "webpage",
-    "URL": "https://oaf.org.au/2014/10/21/they-vote-for-you/",
-    "title": "Launched by the OpenAustralia Foundation with seed funding connected to Google",
-    "dod-quote": "today the OpenAustralia Foundation is launching a new site They Vote for You",
+    "URL": "https://en.wikipedia.org/wiki/MySociety",
+    "title": "Founded by Tom Steinberg as a UK civic-tech charity, launching TheyWorkForYou and WriteToThem",
     "accessed": {
       "date-parts": [
         [
@@ -2397,32 +955,120 @@
         ]
       ]
     },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "a3cb32fab36732ecc0a6a0501a8161fa1b79f4ab9e79977844475e252f1a90b8"
+    "content-sha256": "0fa52e283fb901d847f796559469e6fc46499dd36a5bad53fb9925418e9a7bb6",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "TheyWorkForYou is a parliamentary monitoring website which aims to make it easier",
+        "last-verified": "2026-08-11"
+      },
+      {
+        "type": "quote-match",
+        "quote": "WriteToThem is a website which allows UK citizens to contact their elected representatives",
+        "last-verified": "2026-08-11"
+      },
+      {
+        "type": "quote-match",
+        "quote": "mySociety was founded by Tom Steinberg in September 2003",
+        "last-verified": "2026-08-11"
+      }
+    ]
   },
   {
     "type": "webpage",
-    "URL": "https://theyvoteforyou.org.au/about",
-    "title": "\"About\"",
-    "dod-quote": "Forget what politicians say. What truly matters is what they do. And what they do is vote,"
+    "URL": "https://en.wikipedia.org/wiki/National_Citizens%27_Movement_for_Free_Elections",
+    "title": "Founded as the first citizen-led election monitoring organisation in the world, Philippines",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          11
+        ]
+      ]
+    },
+    "content-sha256": "afe7387489809b666337bab78419ca5e1a61184ab499f713c31cf2f1734d3301",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "NAMFREL mobilized 500,000 volunteers nationwide",
+        "last-verified": "2026-08-11"
+      },
+      {
+        "type": "quote-match",
+        "quote": "NAMFREL was formally organized in October 1983",
+        "last-verified": "2026-08-11"
+      }
+    ]
+  },
+  {
+    "type": "webpage",
+    "URL": "https://en.wikipedia.org/wiki/OneVoice_Movement",
+    "title": "Founded as the Israeli branch of the OneVoice Movement, promoting grassroots civic engagement",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          11
+        ]
+      ]
+    },
+    "content-sha256": "6c1db82b3af2dbc336e3f03aacb72d1543570150c0ad2662fbf3db11bd0b678c",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "The OneVoice Movement was a 501c(3) non-profit organization with offices in New York City, Tel Aviv, Ramallah, and London, founded in 2002 by Daniel Lubetzky",
+        "last-verified": "2026-08-11"
+      }
+    ]
+  },
+  {
+    "type": "webpage",
+    "URL": "https://en.wikipedia.org/wiki/Online_Direct_Democracy",
+    "title": "Founded as \"Senator Online\"; later renamed Online Direct Democracy in 2015",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          11
+        ]
+      ]
+    },
+    "content-sha256": "61a7f1cd78becb0c7c16a3149b31943c7916ccefa67db63bd7f2904fbc0af1d4",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Online Direct Democracy – (Empowering the People!) was a registered Australian political party.",
+        "last-verified": "2026-08-11"
+      },
+      {
+        "type": "quote-match",
+        "quote": "The party contested the 2007 and 2013 federal elections as Senator Online.",
+        "last-verified": "2026-08-11"
+      }
+    ]
   },
   {
     "type": "webpage",
     "URL": "https://en.wikipedia.org/wiki/OpenAustralia_Foundation",
     "title": "\"OpenAustralia Foundation\"",
-    "dod-quote": "They Vote For You, established in 2014, tracks the outcomes of all votes in the House of Representatives and Senate"
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "It was established in 2009, co-founded by Matthew Landauer and Katherine Szuminska,"
+      },
+      {
+        "type": "quote-match",
+        "quote": "They Vote For You, established in 2014, tracks the outcomes of all votes in the House of Representatives and Senate"
+      }
+    ]
   },
   {
     "type": "webpage",
-    "URL": "https://www.oaf.org.au/2022/03/23/senator-for-nsw-andrew-bragg-threatens-openaustralia-foundation-with-legal-action/",
-    "title": "\"Senator for NSW Andrew Bragg threatens OpenAustralia Foundation with legal action\"",
-    "dod-quote": "Michael Bradley from Marque Lawyers wrote. He is generously helping us pro-bono,"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://www.transparency.org.nz/our-story",
-    "title": "New Zealand chapter of Transparency International formally established under founding chair Michael Morris",
-    "dod-quote": "The New Zealand chapter was formally established in 1999, under the chairmanship of Senior Accountant Michael Morris",
+    "URL": "https://en.wikipedia.org/wiki/Open_Society_Foundations",
+    "title": "Founded by George Soros to support civil society, human rights, and democratic governance globally",
     "accessed": {
       "date-parts": [
         [
@@ -2432,14 +1078,24 @@
         ]
       ]
     },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "53d1b90105a4b16371a5440e36447980b27b67c94ce0602952f8b6b107e2c084"
+    "content-sha256": "1c34ddb97588bb8445bc33debc60e91dc9375516dae2f1182376e92f0c508984",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "George Soros handed over the leadership of the foundation to his son Alexander Soros",
+        "last-verified": "2026-08-11"
+      },
+      {
+        "type": "quote-match",
+        "quote": "is an American grantmaking network founded by billionaire business magnate George Soros",
+        "last-verified": "2026-08-11"
+      }
+    ]
   },
   {
     "type": "webpage",
-    "URL": "https://www.transparency.org.nz/our-story",
-    "title": "Became an incorporated society and registered charity",
-    "dod-quote": "and it became an incorporated society and charity in 2001.",
+    "URL": "https://en.wikipedia.org/wiki/PRS_Legislative_Research",
+    "title": "Founded to track parliamentary activity and strengthen legislative debate in India",
     "accessed": {
       "date-parts": [
         [
@@ -2449,14 +1105,19 @@
         ]
       ]
     },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "53d1b90105a4b16371a5440e36447980b27b67c94ce0602952f8b6b107e2c084"
+    "content-sha256": "7ebd72733e454ec445768bbc069d9e62547ae01963060f1dc482ed7da53ea1eb",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "was established in September 2005 as an independent research institute",
+        "last-verified": "2026-08-11"
+      }
+    ]
   },
   {
     "type": "webpage",
-    "URL": "https://es.wikipedia.org/wiki/Transparencia_Internacional#Transparencia_por_Colombia:~:text=Transparencia%20por%20Colombia%2C%20la%20Delegaci%C3%B3n%20Nacional%20de%20Transparencia%20Internacional%20en%20Colombia%2C%20surge%20en%201998",
-    "title": "Founded as the Colombian chapter of Transparency International, working across all 32 departments",
-    "dod-quote": "Transparencia por Colombia, la Delegación Nacional de Transparencia Internacional en Colombia, surge en 1998",
+    "URL": "https://en.wikipedia.org/wiki/People%27s_Solidarity_for_Participatory_Democracy",
+    "title": "Founded with ~200 members in Seoul as People's Solidarity for Participatory Democracy",
     "accessed": {
       "date-parts": [
         [
@@ -2466,14 +1127,159 @@
         ]
       ]
     },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "8d0794ce4e58a153a04991ac5cc3725f216805fa1c4d57bd4411f9c300651a59"
+    "content-sha256": "5629df9bf7f39983779fffe34213d18228ed454efd176260451608801cba00bd",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "PSPD obtained a special consultative status with the UN ECOSOC",
+        "last-verified": "2026-08-11"
+      },
+      {
+        "type": "quote-match",
+        "quote": "was established on 10 September 1994 with around 200 members",
+        "last-verified": "2026-08-11"
+      }
+    ]
+  },
+  {
+    "type": "webpage",
+    "URL": "https://en.wikipedia.org/wiki/Pirate_Party_Australia",
+    "title": "Founded as part of the international Pirate Party movement, advocating digital rights and direct democracy",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          11
+        ]
+      ]
+    },
+    "content-sha256": "830f5cf703045d06e23599c4d1bc2c30ff6516ea3930774de260ff10a647198d",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "was founded in 2008 by Rodney Serkowski",
+        "last-verified": "2026-08-11"
+      }
+    ]
+  },
+  {
+    "type": "webpage",
+    "URL": "https://en.wikipedia.org/wiki/Pol.is",
+    "title": "Created by Colin Megill and the Computational Democracy Project as an open-source tool for large-scale deliberation",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          11
+        ]
+      ]
+    },
+    "content-sha256": "79b46a911c87fe2b25cfa9f590ce99eeaa846b07cce6784797660dda8e2a7823",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "pol.is has been \"one of the key parts\" of vTaiwan",
+        "last-verified": "2026-08-11"
+      },
+      {
+        "type": "quote-match",
+        "quote": "was founded by Colin Megill, Christopher Small, and Michael Bjorkegren",
+        "last-verified": "2026-08-11"
+      }
+    ]
+  },
+  {
+    "type": "webpage",
+    "URL": "https://en.wikipedia.org/wiki/Referendum_Council",
+    "title": "Jointly appointed by PM Malcolm Turnbull and Opposition Leader Bill Shorten",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          11
+        ]
+      ]
+    },
+    "content-sha256": "4a6e782b507de936b5dce989d56b99358065432c6d22afd9499ace5e11c89f5e",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "The 16-member Referendum Council was jointly appointed by the prime minister, Malcolm Turnbull, and Leader of the Opposition, Bill Shorten, on 7 December 2015",
+        "last-verified": "2026-08-11"
+      },
+      {
+        "type": "quote-match",
+        "quote": "The Final Report of the Referendum Council was published on 30 June 2017, and sent to the Prime Minister, Malcolm Turnbull, and the leader of the opposition, Bill Shorten",
+        "last-verified": "2026-08-11"
+      },
+      {
+        "type": "quote-match",
+        "quote": "The First Nations National Constitutional Convention met over four days from 23 to 26 May 2017",
+        "last-verified": "2026-08-11"
+      }
+    ]
+  },
+  {
+    "type": "webpage",
+    "URL": "https://en.wikipedia.org/wiki/SITRA",
+    "title": "Established by the Finnish Parliament as the Finnish Innovation Fund, under parliamentary supervision",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          11
+        ]
+      ]
+    },
+    "content-sha256": "cfcb1c3677c327642eceb4f9cf3465cf255bea824ba69aa5405be3fcbe592bfe",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Sitra was founded in 1967 as a part of the Bank of Finland",
+        "last-verified": "2026-08-11"
+      }
+    ]
+  },
+  {
+    "type": "webpage",
+    "URL": "https://en.wikipedia.org/wiki/Team_Mirai",
+    "title": "Party officially established by AI engineer Takahiro Anno",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          11
+        ]
+      ]
+    },
+    "content-sha256": "d6a084a207e5d7f19a9b6d3d34be7665e40f87eaa7ecb312f9fc54a4b7cb6d9f",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "securing 11 seats in the House of Representatives",
+        "last-verified": "2026-08-11"
+      },
+      {
+        "type": "quote-match",
+        "quote": "was established on 8 May 2025",
+        "last-verified": "2026-08-11"
+      },
+      {
+        "type": "quote-match",
+        "quote": "won its first seat in the Diet",
+        "last-verified": "2026-08-11"
+      }
+    ]
   },
   {
     "type": "webpage",
     "URL": "https://en.wikipedia.org/wiki/Ushahidi",
     "title": "Created in the aftermath of Kenya's 2007 election crisis as a crowdsourced crisis-mapping platform",
-    "dod-quote": "was created in the aftermath of Kenya's disputed 2007 presidential election",
     "accessed": {
       "date-parts": [
         [
@@ -2483,31 +1289,24 @@
         ]
       ]
     },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "8bd20a2a720f8685b710f1fc5cf39e0428e36bb8982fec82ceba37fe7816d160"
-  },
-  {
-    "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/Ushahidi",
-    "title": "Deployed for Haiti earthquake response — mapped tens of thousands of reports, establishing the platform's global humanitarian use case",
-    "dod-quote": "in response to the Haiti Earthquake in 2010",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          11
-        ]
-      ]
-    },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "8bd20a2a720f8685b710f1fc5cf39e0428e36bb8982fec82ceba37fe7816d160"
+    "content-sha256": "8bd20a2a720f8685b710f1fc5cf39e0428e36bb8982fec82ceba37fe7816d160",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "in response to the Haiti Earthquake in 2010",
+        "last-verified": "2026-08-11"
+      },
+      {
+        "type": "quote-match",
+        "quote": "was created in the aftermath of Kenya's disputed 2007 presidential election",
+        "last-verified": "2026-08-11"
+      }
+    ]
   },
   {
     "type": "webpage",
     "URL": "https://en.wikipedia.org/wiki/Vietnam_Fatherland_Front",
     "title": "Founded as the umbrella political coalition under the Communist Party of Vietnam, succeeding the North Vietnamese Fatherland Front",
-    "dod-quote": "was founded in February 1977 by the merger",
     "accessed": {
       "date-parts": [
         [
@@ -2517,14 +1316,19 @@
         ]
       ]
     },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "d618309a00269a18de1fdc87d9032bf1ad9a0fa4e4c76c46f7e20f87b03344f0"
+    "content-sha256": "d618309a00269a18de1fdc87d9032bf1ad9a0fa4e4c76c46f7e20f87b03344f0",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "was founded in February 1977 by the merger",
+        "last-verified": "2026-08-11"
+      }
+    ]
   },
   {
     "type": "webpage",
     "URL": "https://en.wikipedia.org/wiki/Your_Party_(Japan)",
     "title": "Founded by Yoshimi Watanabe, a former Liberal Democratic Party minister, as a reformist Japanese political party",
-    "dod-quote": "party was founded on August 8, 2009",
     "accessed": {
       "date-parts": [
         [
@@ -2534,13 +1338,1113 @@
         ]
       ]
     },
-    "dod-last-verified-date": "2026-08-11",
-    "dod-content-sha256": "a0224e2352cb93ce7fe1f783ecccb7151e6a97d5c766ce0eade0235391a7fbd2"
+    "content-sha256": "a0224e2352cb93ce7fe1f783ecccb7151e6a97d5c766ce0eade0235391a7fbd2",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "party was founded on August 8, 2009",
+        "last-verified": "2026-08-11"
+      }
+    ]
+  },
+  {
+    "type": "webpage",
+    "URL": "https://es.wikipedia.org/wiki/Transparencia_Internacional#Transparencia_por_Colombia:~:text=Transparencia%20por%20Colombia%2C%20la%20Delegaci%C3%B3n%20Nacional%20de%20Transparencia%20Internacional%20en%20Colombia%2C%20surge%20en%201998",
+    "title": "Founded as the Colombian chapter of Transparency International, working across all 32 departments",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          11
+        ]
+      ]
+    },
+    "content-sha256": "8d0794ce4e58a153a04991ac5cc3725f216805fa1c4d57bd4411f9c300651a59",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Transparencia por Colombia, la Delegación Nacional de Transparencia Internacional en Colombia, surge en 1998",
+        "last-verified": "2026-08-11"
+      }
+    ]
+  },
+  {
+    "type": "webpage",
+    "URL": "https://europeandemocracyhub.epd.eu/exploring-worldwide-democratic-innovations-taiwan/",
+    "title": "Launched by Taiwan's National Development Council following a February 2015 Executive Yuan directive",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          11
+        ]
+      ]
+    },
+    "content-sha256": "b7d4c7becdd8b6210832e757c452aa76d56af926c27c69f14851ebc84f707d89",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "was launched under the sponsorship of the National Development Council. The website has made it possible for citizens to submit a policy proposal to the government via the Internet.",
+        "last-verified": "2026-08-11"
+      }
+    ]
+  },
+  {
+    "type": "webpage",
+    "URL": "https://events.humanitix.com/communities-rising-action-by-the-people-for-the-times",
+    "title": "Communities Rising — Action by the People for the Times (6th annual Community Independents Convention)",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "the sixth annual Convention of the Community Independents Movement"
+      }
+    ]
+  },
+  {
+    "type": "webpage",
+    "URL": "https://foro.org.co/nosotros/quienes-somos/",
+    "title": "Founded as one of Colombia's longest-established civil society organisations for democratic participation",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          11
+        ]
+      ]
+    },
+    "content-sha256": "9dd7bc02617572f58a5d121e8ce95ea2b33576c744b118121966661124aa43ad",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "creada en 1982",
+        "last-verified": "2026-08-11"
+      }
+    ]
+  },
+  {
+    "type": "webpage",
+    "URL": "https://fr.wikipedia.org/wiki/AfricTivistes",
+    "title": "Founded in Dakar by Cheikh Fall, initially as the African League of Bloggers and Web Activists for Democracy",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          11
+        ]
+      ]
+    },
+    "content-sha256": "afb91c4e572c3db02e223ad17f4a24b9c9ada4e476ee81935a2f8a0b1c1cc414",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Fondée le 26 novembre 2015 par Cheikh Fall, AfricTivistes compte à ce jour plus de 400 membres répartis dans 40 pays du continent africain.",
+        "last-verified": "2026-08-11"
+      }
+    ]
+  },
+  {
+    "type": "webpage",
+    "URL": "https://ia.acs.org.au/article/2018/blockchain-to-revolutionise-e-voting.html",
+    "title": "Signed a deal with Silicon Valley startup Swarm Fund to use SecureVote's Liquid Democracy Voting Module",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          11
+        ]
+      ]
+    },
+    "content-sha256": "4e442ffd105c3ce6b2ca615e1390113775668e746704038e05f75713392110aa",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "A deal with Silicon Valley start-up Swarm Fund is a big win for an Australian firm working to revolutionise the democratic process using blockchain",
+        "last-verified": "2026-08-11"
+      }
+    ]
+  },
+  {
+    "type": "webpage",
+    "URL": "https://icodrops.com/horizon-state/",
+    "title": "Token Generation Event (ICO) concluded, raising approximately $1.4M",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          11
+        ]
+      ]
+    },
+    "content-sha256": "c0e0d582027e88241d5b8511e2990a39cdd875522b5c30d0cce22827de978b41",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "The TGE (Token Generation Event) announced by Horizon State has successfully concluded on Nov 19, 2017",
+        "last-verified": "2026-08-11"
+      }
+    ]
+  },
+  {
+    "type": "webpage",
+    "URL": "https://mckinnon.co/about-us",
+    "title": "Founded (as Susan McKinnon Foundation) by Sophie Oh and Grant Rule",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          11
+        ]
+      ]
+    },
+    "content-sha256": "11ff06a1889c63e37b408155113d0f216fa90925a1174690f0b15a519e06a6fd",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "known as the Susan McKinnon Foundation) was established in 2015 by Sophie Oh and Grant Rule",
+        "last-verified": "2026-08-11"
+      }
+    ]
+  },
+  {
+    "type": "webpage",
+    "URL": "https://medium.com/mivote/new-model-of-democracy-passes-first-test-c9a3db8da2a1",
+    "title": "MiVote app publicly launched in Australia with its first test vote",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "MiVote launched its world-leading democratic model in February with a test vote asking Australians how they want to participate in the country’s decision-making process."
+      }
+    ]
+  },
+  {
+    "type": "webpage",
+    "URL": "https://memo98.sk/about-us",
+    "title": "Launched with NDI support to monitor Slovak media ahead of the 1998 parliamentary elections",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          11
+        ]
+      ]
+    },
+    "content-sha256": "d9aaf4a8b3028fd6b0424238dc514fc464fe9275b01d44759440664c901ed705",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "We were launched with support from the US-based National Democratic Institute for International Affairs (NDI)",
+        "last-verified": "2026-08-11"
+      },
+      {
+        "type": "quote-match",
+        "quote": "between 1999 (Ukraine) to these days (Kosovo, Philippines) MEMO 98 experts have participated in more than 130 election observation missions",
+        "last-verified": "2026-08-11"
+      }
+    ]
+  },
+  {
+    "type": "webpage",
+    "URL": "https://mosaiclab.com.au/contributions-to-the-field",
+    "title": "Critical Thinking Research with Dr Lyn Carson wins IAP2 Core Values Award for Research",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          11
+        ]
+      ]
+    },
+    "content-sha256": "d0db47fed5f7d6b92afb7ecaf4887a83daaea7baad49b7ddbabcb51e3f71baca",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "we were awarded the IAP2 Australasia Core Values Award for Research in 2018",
+        "last-verified": "2026-08-11"
+      }
+    ]
+  },
+  {
+    "type": "webpage",
+    "URL": "https://mosaiclab.com.au/nicole-hunter",
+    "title": "Founded by Kimbra White, Nicole Hunter and Keith Greaves",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          11
+        ]
+      ]
+    },
+    "content-sha256": "2ece9e41593418bfad1b3a6b59da5e0b9483226b505c8dbc5b4dde3a5063a5fe",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Nicole co-founded MosaicLab (with Keith Greaves and Kimbra White) in 2017",
+        "last-verified": "2026-08-11"
+      }
+    ]
+  },
+  {
+    "type": "webpage",
+    "URL": "https://mosaiclab.com.au/the-big-book",
+    "title": "Publishes Facilitating Deliberation — A Practical Guide, drawing on 39 deliberative processes",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          11
+        ]
+      ]
+    },
+    "content-sha256": "8c60b90f64fc991249de4f4726d0e0e410fe75b2b4a19a53e22db4041f3a5dd7",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Drawn from the authors’ experience delivering 39 deliberative engagement processes, the book is full of insider secrets, authentic lessons learned",
+        "last-verified": "2026-08-11"
+      }
+    ]
+  },
+  {
+    "type": "webpage",
+    "URL": "https://newvote.org/the-institute",
+    "title": "Established as a not-for-profit / for-purpose organisation in Australia",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          11
+        ]
+      ]
+    },
+    "content-sha256": "5a6630872139100b8f5fceb6c4ad6df14b6d064b36acfe3a47d0f22b155ff881",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "NewVote is founded as a for-purpose (a not-for-profit), Australia.",
+        "last-verified": "2026-08-11"
+      },
+      {
+        "type": "quote-match",
+        "quote": "The University of Queensland Student Union is piloting and promoting the app with its 52,000 students, starting on 24 July 2019.",
+        "last-verified": "2026-08-11"
+      }
+    ]
+  },
+  {
+    "type": "webpage",
+    "URL": "https://oaf.org.au/2014/10/21/they-vote-for-you/",
+    "title": "Launched They Vote For You, tracking Australian parliamentary voting records",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          11
+        ]
+      ]
+    },
+    "content-sha256": "a3cb32fab36732ecc0a6a0501a8161fa1b79f4ab9e79977844475e252f1a90b8",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "today the OpenAustralia Foundation is launching a new site They Vote for You",
+        "last-verified": "2026-08-11"
+      }
+    ]
+  },
+  {
+    "type": "webpage",
+    "URL": "https://pt.wikipedia.org/wiki/Open_Knowledge_Brasil",
+    "title": "Founded as the Brazilian chapter of Open Knowledge, promoting open data and civic technology",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          11
+        ]
+      ]
+    },
+    "content-sha256": "7430e432fbdeb0de72e336361263372ee6f4b7feb7a708418ad09423eb5f61dd",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "sociedade civil (OSC) sem fins lucrativos e apartidária, fundada em assembleia em 4 de setembro de 2013",
+        "last-verified": "2026-08-11"
+      }
+    ]
+  },
+  {
+    "type": "webpage",
+    "URL": "https://reclaim.org.au/inaugural-lismore-peoples-assembly/",
+    "title": "Inaugural Lismore People's Assembly",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "The Lismore People's Assembly seeks to change this in the hopes of reinventing democracy — starting from the ground up"
+      }
+    ]
+  },
+  {
+    "type": "webpage",
+    "URL": "https://reclaim.org.au/lismore-peoples-assembly-on-housing/",
+    "title": "Lismore People's Assembly on Housing",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "On Saturday 10th August, around fifty people gathered,"
+      }
+    ]
+  },
+  {
+    "type": "webpage",
+    "URL": "https://stocznia.org.pl/en/about-shipyard/",
+    "title": "Founded in Warsaw with a mission bridging citizen participation, social innovation, and research",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          11
+        ]
+      ]
+    },
+    "content-sha256": "e1c4d459f3718e4ecf4f18553ab8b728511aab1f5e4e1dfb2985303fc3ef5756",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Shipyard Foundation was established in 2009.",
+        "last-verified": "2026-08-11"
+      }
+    ]
+  },
+  {
+    "type": "webpage",
+    "URL": "https://techboard.com.au/company-profile/xo-1/",
+    "title": "Founded by Max Kaye as a Sydney-based blockchain voting startup",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          11
+        ]
+      ]
+    },
+    "content-sha256": "811cdaf72455828359380cc40b56b33b657e70324c164a05705bf44d76b32933",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Founders: Max Kaye",
+        "last-verified": "2026-08-11"
+      },
+      {
+        "type": "quote-match",
+        "quote": "SecureVote wins ATC Cyber Security Award",
+        "last-verified": "2026-08-11"
+      }
+    ]
+  },
+  {
+    "type": "webpage",
+    "URL": "https://theyvoteforyou.org.au/about",
+    "title": "\"About\"",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Forget what politicians say. What truly matters is what they do. And what they do is vote,"
+      }
+    ]
+  },
+  {
+    "type": "webpage",
+    "URL": "https://web.archive.org/web/20190824085752/https://bhive.coop/our-story/",
+    "title": "Held its founding pitch night in Bendigo, raising $35,000 from Founding Patrons",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "$35,000 was raised in donations to kickstart bHive from an amazing group of Founding Patrons."
+      }
+    ]
+  },
+  {
+    "type": "webpage",
+    "URL": "https://web.archive.org/web/20201025045936/https://www.coalitionofeveryone.com/post/citizens-assembly",
+    "title": "Ran four mock Citizens' Assemblies at Melbourne's Sustainable Living Festival",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Through the Sustainable Living Festival, the Coalition of Everyone held four mock Citizens' Assemblies on the topics of; fashion, fire, regenerative agriculture and water."
+      }
+    ]
+  },
+  {
+    "type": "webpage",
+    "URL": "https://www.afrobarometer.org/about/history/",
+    "title": "Founded as a pan-African survey research network measuring public attitudes on democracy and governance",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          11
+        ]
+      ]
+    },
+    "content-sha256": "a4036bf60d1c1ccf5e9f4f8dde53e0f30f8a22f5ec9399d314be7fcfb3141a5b",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "professors Michael Bratton, Robert Mattes, and E. Gyimah-Boadi merge three independent survey research projects to form Afrobarometer (AB)",
+        "last-verified": "2026-08-11"
+      }
+    ]
   },
   {
     "type": "webpage",
     "URL": "https://www.cambridge.org/core/journals/world-politics/article/abs/performative-governance/AAC558378BEA651DB7E2480ECFFB4E10",
     "title": "\"performative governance\"",
-    "dod-quote": "Legitimacy theatre"
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Legitimacy theatre"
+      }
+    ]
+  },
+  {
+    "type": "webpage",
+    "URL": "https://www.cddwestafrica.org/about-us/",
+    "title": "Founded in Lagos as a research and advocacy organisation on democracy and development in West Africa",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          11
+        ]
+      ]
+    },
+    "content-sha256": "0df3cfeef36afbd95f4e25800a1f6b89820e7b39abb7dba2484032651b1ecd34",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "The Centre for Democracy and Development (CDD) was established in the United Kingdom in 1997",
+        "last-verified": "2026-08-11"
+      }
+    ]
+  },
+  {
+    "type": "webpage",
+    "URL": "https://www.ciudadaniai.org/nosotros",
+    "title": "Founded as one of Latin America's earliest civic-tech organisations, Santiago",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          11
+        ]
+      ]
+    },
+    "content-sha256": "f2132ea932cba1736f5b3072356d93c6ba48bede14aafde6a5e3012217c10c2b",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Ciudadanía Inteligente 2009 - 2026. Todos los derechos reservados",
+        "last-verified": "2026-08-11"
+      }
+    ]
+  },
+  {
+    "type": "webpage",
+    "URL": "https://www.code4japan.org/aboutus",
+    "title": "Founded as the Japanese node of Code for All, bringing civic tech to Japan",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          11
+        ]
+      ]
+    },
+    "content-sha256": "247f4795d86d25a1c5292ca16bc36f587be60c37955ce998c1f9265c810ae237",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "設立年月日 2013年10月25日",
+        "last-verified": "2026-08-11"
+      }
+    ]
+  },
+  {
+    "type": "webpage",
+    "URL": "https://www.crossroadsconversation.com.au/events/on-the-importance-of-conversation-for-the-very-idea-of-a-common-humanity",
+    "title": "Held its inaugural Annual Lecture (Joseph Camilleri, \"Australia the Week After\") at the University of Melbourne",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          11
+        ]
+      ]
+    },
+    "content-sha256": "f318ac7abe7e69ea0a003e1ad38c65166fec6f4d7957e2b32cdac7fac78767df",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "You speak not to say something and to hear something back, not to dazzle, be right or stake a claim, but to be held accountable to each other.",
+        "last-verified": "2026-08-11"
+      }
+    ]
+  },
+  {
+    "type": "webpage",
+    "URL": "https://www.democracy-international.org/events",
+    "title": "2026 Global Forum on Modern Direct Democracy — Gaborone, Botswana",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          11
+        ]
+      ]
+    },
+    "content-sha256": "ce12c0bfb87d6049e0d7603cfb05f53026d6864676f4d7da4991748d1ed75a4d",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "2026 Global Forum on Modern Direct Democracy",
+        "last-verified": "2026-08-11"
+      }
+    ]
+  },
+  {
+    "type": "webpage",
+    "URL": "https://www.designingopendemocracy.com/blog/2021/08/07/podcast-catching-up-with-adam-jacoby-founder-of-mivote/",
+    "title": "Australian party deregistered before the 2019 federal election, without electing any senators",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          11
+        ]
+      ]
+    },
+    "content-sha256": "87d403f188a9ff1f6d9eba06f48747157e86486e7f7499dbff6500dc5b029c30",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "The Australian party deregistered around 2019; the movement and technology continued under a different structure.",
+        "last-verified": "2026-08-11"
+      }
+    ]
+  },
+  {
+    "type": "webpage",
+    "URL": "https://www.fidemocracy.org/news",
+    "title": "FIDE Forum 2026: From Novel to Normal — making deliberation a democratic standard, Vienna",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          11
+        ]
+      ]
+    },
+    "content-sha256": "2003ab62734aced260a98f861c8a3b64b5af785a38d535e4975a8702339ce6d9",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "FIDE Forum 2026",
+        "last-verified": "2026-08-11"
+      }
+    ]
+  },
+  {
+    "type": "webpage",
+    "URL": "https://www.g1000.org/en/cases/g1000-citizens-summit",
+    "title": "G1000 Citizens' Summit — 704 randomly selected citizens deliberate in Brussels during Belgium's 541-day government crisis",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          11
+        ]
+      ]
+    },
+    "content-sha256": "59f2c67116f2a566158b695c21cb0315d13012051c6d271576464882d59c3dcb",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "In 2011, in the midst of a political crisis in a governmentless Belgium, G1000 was a citizens' initiative aimed at breathing new life into democracy by organizing a major citizens' consultation, bringing together 1,000 randomly selected citizens to make recommendations to the political world.",
+        "last-verified": "2026-08-11"
+      }
+    ]
+  },
+  {
+    "type": "webpage",
+    "URL": "https://www.g1000.org/en/cases/permanent-citizen-dialogue-ostbelgien",
+    "title": "Ostbelgien permanent citizen dialogue launched — the German-speaking Community's Parliament unanimously adopts a decree embedding a permanent Citizens' Council",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          11
+        ]
+      ]
+    },
+    "content-sha256": "e718c1cb33e7f63c2b2bb365a7e022cef2238151b8cd721f6dcbbb3f542e94eb",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "This initiative, launched after a petition by Cap Démocratie, marked a first for Wallonia, where citizens and politicians worked together as equals.",
+        "last-verified": "2026-08-11"
+      }
+    ]
+  },
+  {
+    "type": "webpage",
+    "URL": "https://www.govtech.com/civic/new-global-civic-tech-group-emerges-from-the-omidyar-group.html",
+    "title": "Launched as an independent global philanthropic organisation, spun out of Omidyar Network's Governance & Citizen Engagement initiative",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          11
+        ]
+      ]
+    },
+    "content-sha256": "05996d5f263efc9822aa96cec0c5e38e3210874d1e906b4dc0e336dfd4c063e1",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Officially launched in recent weeks, Luminate aims to fund projects and organizations that can drive changes that fall into one of four categories: civic empowerment, data and digital rights, transparency and independent media.",
+        "last-verified": "2026-08-11"
+      }
+    ]
+  },
+  {
+    "type": "webpage",
+    "URL": "https://www.influencewatch.org/non-profit/healthy-democracy/",
+    "title": "Founded (as Healthy Democracy Oregon) by Tyrone Reitman and Elliot Shuford to run the Citizens' Initiative Review",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          11
+        ]
+      ]
+    },
+    "content-sha256": "eee29268a127a03f830cc91f305cb2103905c1b48e720f28b9ea9986ab7d7fb5",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Healthy Democracy was founded in 2007 as “Healthy Democracy Oregon” by Crosby and his wife and two activists, Tyrone Reitman and Elliot Shuford.",
+        "last-verified": "2026-08-11"
+      },
+      {
+        "type": "quote-match",
+        "quote": "In 2011, Oregon state legislators sponsored House Bill 2634 which made the Citizens’ Initiative Review (CIR) process an official and permanent part of Oregon’s elections",
+        "last-verified": "2026-08-11"
+      }
+    ]
+  },
+  {
+    "type": "webpage",
+    "URL": "https://www.ipc.nsw.gov.au/news/open-government-partnership-final-public-consultation-draft-commitments-australias-third-national-action-plan",
+    "title": "Draft third National Action Plan went through final consultation but was never formally submitted, marking the point the initiative went dormant",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "The Open Government Forum is seeking final feedback on the draft Commitments proposed to be included in Australia's Third National Action Plan (NAP3). The Forum is open to feedback until Friday, 6 November 2020."
+      }
+    ]
+  },
+  {
+    "type": "webpage",
+    "URL": "https://www.labsus.org/chi-siamo/",
+    "title": "Founded in Rome as the Laboratory for Subsidiarity, pioneering shared administration in Italy",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          11
+        ]
+      ]
+    },
+    "content-sha256": "5a575a2c7757911272bb4f037b62ac469cfe54fc7482089e4f730e37d3985630",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Il Progetto Labsus, il Laboratorio per la sussidiarietà, ha un obiettivo ben preciso",
+        "last-verified": "2026-08-11"
+      }
+    ]
+  },
+  {
+    "type": "webpage",
+    "URL": "https://www.lcps-lebanon.org/en/about",
+    "title": "Founded as an independent, non-partisan think tank in Beirut",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          11
+        ]
+      ]
+    },
+    "content-sha256": "89d4371e6779974ce9738a2e46baffa0e04d73cfdc73423ff92ffe88fb804698",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Founded in 1989, the Lebanese Center for Policy Studies is an independently managed, non-partisan, non-profit, non-governmental think tank whose mission is to produce and advocate for policies that improve governance in Lebanon and the Arab region.",
+        "last-verified": "2026-08-11"
+      },
+      {
+        "type": "quote-match",
+        "quote": "contributing to formulating the 2006 Boutros draft electoral law",
+        "last-verified": "2026-08-11"
+      }
+    ]
+  },
+  {
+    "type": "webpage",
+    "URL": "https://www.masslbp.com/about",
+    "title": "Founded by Peter MacLeod",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          11
+        ]
+      ]
+    },
+    "content-sha256": "9dbab0f8a3b9a19a72339df1e9e83f3f152e25468dada93efe3245e2cadcc63b",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Since its founding in 2007, MASS has completed more than 200 major policy projects for governments and public agencies across Canada",
+        "last-verified": "2026-08-11"
+      }
+    ]
+  },
+  {
+    "type": "webpage",
+    "URL": "https://www.masslbp.com/work-panels",
+    "title": "Ran the Central LHIN Citizens' Reference Panel on Regional Health Priorities",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          11
+        ]
+      ]
+    },
+    "content-sha256": "c48f4f6fe167478ef6c1e8d9330e8a2a141899f9e4d40c0af103ee5ee4180e60",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Central LHIN Citizens’ Reference Panel on Regional Health Priorities",
+        "last-verified": "2026-08-11"
+      }
+    ]
+  },
+  {
+    "type": "webpage",
+    "URL": "https://www.mmzy.org.cn/mmgk/jianjie/default.aspx",
+    "title": "Founded in Chongqing as an umbrella organisation of China's centrist and left-leaning intellectuals during the Second Sino-Japanese War",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          11
+        ]
+      ]
+    },
+    "content-sha256": "afd9bdb265481f1ebde7fc5109607437076fb3351ba630ce473ddb3cac3090eb",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "民盟于1941年3月19日在重庆秘密成立",
+        "last-verified": "2026-08-11"
+      }
+    ]
+  },
+  {
+    "type": "webpage",
+    "URL": "https://www.nesta.org.uk/feature/new-radicals-2016/democracy-club/",
+    "title": "Origins as a volunteer effort collecting candidate information for the 2010 UK general election, working with mySociety",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          11
+        ]
+      ]
+    },
+    "content-sha256": "83f0b9c44777a507c8722796a9f497b21169dc21a2d79f33048fd0b37878f1b9",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Sym Roe was a volunteer for the mySociety enterprise during the run up to the 2010 general election, working to increase the amount of information available online about the candidates.",
+        "last-verified": "2026-08-11"
+      },
+      {
+        "type": "quote-match",
+        "quote": "crowdsourcing the most comprehensive and accurate database of candidates in recent electoral history",
+        "last-verified": "2026-08-11"
+      }
+    ]
+  },
+  {
+    "type": "webpage",
+    "URL": "https://www.newdemocracy.com.au/history/",
+    "title": "newDemocracy Foundation launched — one of the first organisations worldwide dedicated exclusively to citizens' assemblies",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          11
+        ]
+      ]
+    },
+    "content-sha256": "6bc0cd70124c379000d86a08c18a28da25fdcacdc7cee55c9f257cc7e428a3b8",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Luca had a 30-year career in Transfield, a large infrastructure and engineering company founded by his father.",
+        "last-verified": "2026-08-11"
+      },
+      {
+        "type": "quote-match",
+        "quote": "Our first big project was the Australian Citizens’ Parliament in 2009, which was an Australian Research Centre-funded citizens’ assembly involving 150 Australians deliberating on how to strengthen Australia’s system of government.",
+        "last-verified": "2026-08-11"
+      },
+      {
+        "type": "quote-match",
+        "quote": "Still in 2018, we were invited to travel to Belgium with a several other academics and practitioners to consult on what would become the world’s first permanent Citizens’ Council in Eupen, the capital of the autonomous Ostbelgien region.",
+        "last-verified": "2026-08-11"
+      },
+      {
+        "type": "quote-match",
+        "quote": "The newDemocracy Foundation was launched in 2007, with Luca Belgiorno-Nettis, Lyn Carson, Kathy Jones and Ian Marsh as the inaugural directors.",
+        "last-verified": "2026-08-11"
+      },
+      {
+        "type": "quote-match",
+        "quote": "The newDemocracy Foundation was launched in 2007, with Luca Belgiorno-Nettis... as the inaugural directors,",
+        "last-verified": "2026-08-11"
+      }
+    ]
+  },
+  {
+    "type": "webpage",
+    "URL": "https://www.oaf.org.au/2022/03/23/senator-for-nsw-andrew-bragg-threatens-openaustralia-foundation-with-legal-action/",
+    "title": "\"Senator for NSW Andrew Bragg threatens OpenAustralia Foundation with legal action\"",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Michael Bradley from Marque Lawyers wrote. He is generously helping us pro-bono,"
+      }
+    ]
+  },
+  {
+    "type": "webpage",
+    "URL": "https://www.openaustraliafoundation.org.au/2009/07/07/announcing-the-openaustralia-foundation/",
+    "title": "Founded by Matthew Landauer and Katherine Szuminska",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          11
+        ]
+      ]
+    },
+    "content-sha256": "55fe0ac3d2f9359527429b8bafd6d3e74d233f75fae51d9fa409a6811bb15f77",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "OpenAustralia Foundation Limited is officially incorporated as a company limited by guarantee.",
+        "last-verified": "2026-08-11"
+      }
+    ]
+  },
+  {
+    "type": "webpage",
+    "URL": "https://www.openaustraliafoundation.org.au/2009/12/21/launching-our-new-website-planning-alerts/",
+    "title": "Launched PlanningAlerts",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          11
+        ]
+      ]
+    },
+    "content-sha256": "77771e539d376a68c2ec19c9c6ff8d3145440f89253a8b400bdc49fde070974f",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "21 December 2009 Launching our new website: Planning Alerts",
+        "last-verified": "2026-08-11"
+      }
+    ]
+  },
+  {
+    "type": "webpage",
+    "URL": "https://www.opengovpartnership.org/documents/australia-letter-of-intent-to-join-ogp/",
+    "title": "Australia signs Letter of Intent to join the Open Government Partnership",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Australia Letter of Intent to Join OGP 30th November 2015"
+      }
+    ]
+  },
+  {
+    "type": "webpage",
+    "URL": "https://www.participatorybudgeting.org/about/",
+    "title": "Founded by Josh Lerner and collaborators, launching the first PB process in North America in Chicago's 49th Ward",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          11
+        ]
+      ]
+    },
+    "content-sha256": "219d8a79ad9947397d683e6d93fabb5f3c0ed0e0e96b0818191b66024bc5514e",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Since 2009, PBP has collaborated with grassroots and government partners to launch PB processes in over 40 cities",
+        "last-verified": "2026-08-11"
+      }
+    ]
+  },
+  {
+    "type": "webpage",
+    "URL": "https://www.peoplepowered.org/events",
+    "title": "ConsulCon 2026 — three-day gathering on digital democracy and open-source civic tech, Munich",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          11
+        ]
+      ]
+    },
+    "content-sha256": "9640279a550db2aeca015ce65cb2c747bae78c97fe09a88dbdc25e01d71d2f7c",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "The CONSUL DEMOCRACY Foundation and the City of Munich host the annual ConsulCon — a three-day gathering on digital democracy, open-source civic technology and democratic empowerment.",
+        "last-verified": "2026-08-11"
+      }
+    ]
+  },
+  {
+    "type": "webpage",
+    "URL": "https://www.transparency.org.nz/our-story",
+    "title": "New Zealand chapter of Transparency International formally established under founding chair Michael Morris",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          11
+        ]
+      ]
+    },
+    "content-sha256": "53d1b90105a4b16371a5440e36447980b27b67c94ce0602952f8b6b107e2c084",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "The New Zealand chapter was formally established in 1999, under the chairmanship of Senior Accountant Michael Morris",
+        "last-verified": "2026-08-11"
+      },
+      {
+        "type": "quote-match",
+        "quote": "and it became an incorporated society and charity in 2001.",
+        "last-verified": "2026-08-11"
+      }
+    ]
+  },
+  {
+    "type": "webpage",
+    "URL": "https://www.unimelb.edu.au/newsroom/news/2017/november/susan-mckinnon-foundation-and-university-of-melbourne-establish-prestigious-award-for-political-leadership",
+    "title": "McKinnon Prize in Political Leadership established, in partnership with the University of Melbourne",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Susan McKinnon Foundation Co-Founder Grant Rule said: &ldquo;Now, more than ever, we need to publicly recognise political leadership that shows vision and courage and has had a constructive impact for"
+      }
+    ]
+  },
+  {
+    "type": "webpage",
+    "URL": "https://www.weforum.org/organizations/movilizatorio/",
+    "title": "Founded in Bogotá as a citizen participation and social innovation laboratory",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Movilizatorio was born in 2016 precisely as a response to the risks and possibilities to create better civic engagement and social innovation in a context of peace negotiations and peacebuilding."
+      }
+    ]
+  },
+  {
+    "type": "webpage",
+    "URL": "https://www.ycombinator.com/companies/democracy-earth",
+    "title": "Founded by Santiago Siri, Pia Mancini and Guido Vilariño; accepted into Y Combinator's Winter 2015 batch",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          11
+        ]
+      ]
+    },
+    "content-sha256": "d2eec76f4a0b998651b16062cfd411592b66ef85dbd10f10cff161baffc4ef26",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Democracy Earth Founded: 2015 Batch: Winter 2015 Team Size: 2 Status: Active Location: Madrid, Spain Founders Pia Mancini Founder Pia Mancini Founder Santiago Siri Founder/President Santiago Siri Founder/President Guido Vilariño Founder",
+        "last-verified": "2026-08-11"
+      }
+    ]
   }
 ]

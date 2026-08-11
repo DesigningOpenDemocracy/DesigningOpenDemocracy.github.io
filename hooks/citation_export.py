@@ -9,8 +9,11 @@ Sources:
   - Prose footnotes: markdown footnotes with verbatim quoted excerpts
   - Evidence cache: docs/data/event-evidence-cache.json (content_hash, checked)
 
-CSL-JSON fields: type, URL, title, accessed
-DOD extension fields: dod-quote, dod-content-sha256, dod-last-verified-date
+CSL-JSON fields: type, URL, title, accessed, content-sha256
+Evidence fields (per-claim, nested under evidence: array):
+  type: quote-match (extensible: screenshot, pdf-page, etc.)
+  quote: verbatim excerpt
+  last-verified: YYYY-MM-DD of last confirmation
 """
 
 import glob
@@ -98,22 +101,37 @@ def on_pre_build(config):
         with open(CACHE_PATH) as f:
             cache = json.load(f)
 
-    citations = []
+    # Group by URL — one fetch, one hash, multiple claims
+    by_url = {}
     for item in items:
+        url = item["url"]
+        if url not in by_url:
+            by_url[url] = {"url": url, "title": "", "quotes": []}
+        if not by_url[url]["title"] and item["title"]:
+            by_url[url]["title"] = item["title"]
+        by_url[url]["quotes"].append(item["quote"])
+
+    citations = []
+    for url, group in sorted(by_url.items()):
         cite = {
             "type": "webpage",
-            "URL": item["url"],
-            "title": item["title"],
-            "dod-quote": item["quote"],
+            "URL": url,
+            "title": group["title"],
         }
 
-        entry = cache.get(item["url"], {})
+        entry = cache.get(url, {})
         if entry.get("checked"):
             parts = [int(x) for x in entry["checked"].split("-")]
             cite["accessed"] = {"date-parts": [parts]}
-            cite["dod-last-verified-date"] = entry["checked"]
         if entry.get("content_hash"):
-            cite["dod-content-sha256"] = entry["content_hash"]
+            cite["content-sha256"] = entry["content_hash"]
+
+        cite["evidence"] = []
+        for quote in sorted(set(group["quotes"])):
+            ev = {"type": "quote-match", "quote": quote}
+            if entry.get("checked"):
+                ev["last-verified"] = entry["checked"]
+            cite["evidence"].append(ev)
 
         citations.append(cite)
 
