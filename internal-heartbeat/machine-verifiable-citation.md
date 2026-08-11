@@ -1,8 +1,9 @@
 # Machine-verifiable citation standard — design notes
 
-Status: **implemented**. The `hooks/citation_export.py` hook and
-`check_fragments.py` verification pipeline are live. This document records
-the research, decisions, and rationale.
+Status: **implemented, two correctness gaps found in review — see "Known
+issues" below**. The `hooks/citation_export.py` hook and `check_fragments.py`
+verification pipeline are live. This document records the research,
+decisions, and rationale.
 
 ## Goal
 
@@ -29,6 +30,104 @@ the proposed standard:
    August 2026, PR #142).
 
 Both are internal conventions. The standard makes them exportable.
+
+## Known issues (found in review, 2026-08-11)
+
+A review of PRs #142-144 after merge found two real correctness bugs —
+both reproduced, not theoretical. Recorded here per this repo's
+transparency convention (say what was wrong, why, and what the fix is)
+before the code changes to correct them land. Filed as follow-up work,
+not yet fixed as of this writing.
+
+### 1. `paragraph_hash()` hashes the wrong paragraph on long pages
+
+The function locates the quote's position by searching the
+whitespace-*normalized* page text, then reuses that same numeric offset
+to search for `\n\n` paragraph boundaries in the *original*
+(non-normalized) text. `_fetch_page_text()` already collapses all
+whitespace runs to single spaces before re-inserting `\n\n` delimiters,
+so `normalize_ws()` on top of that shrinks each `\n\n` (2 chars) to a
+single space (1 char) — a drift of exactly one character per paragraph
+break preceding the quote. On a page with enough short paragraphs before
+the cited sentence, the drift exceeds the length of the paragraph the
+offset is supposed to land in, and the function hashes an unrelated
+paragraph — one that may not even contain the quote at all. Reproduced
+directly: 60 short paragraphs before a quote → the function hashes
+paragraph #59, not the one with the quote.
+
+**Fix (spec-level invariant, to guide the re-implementation):** quote
+position and paragraph-boundary search must be computed against the
+*same* text representation. Either locate the quote in the raw text
+directly (no normalization for the position lookup itself — only for the
+containment check), or normalize the whole text once up front and search
+for `\n\n`-equivalent boundaries in that same normalized string. Do not
+compute an offset in one representation and index into the other.
+
+### 2. Multi-citation footnotes have no defined quote↔URL pairing
+
+The proposed format assumes a clean 1:1 mapping between "the footnote's
+quote" and "the footnote's URL." That holds for `events:` (the YAML
+schema enforces one `quote:` per one `url:` by construction) but was
+never actually specified for footnotes, which can cite more than one
+source in a single `[^label]:` block — e.g. a primary citation with a
+quote plus a secondary "see also" or corroborating source with none:
+
+```
+[^agora]: "over 155,000 members of Podemos voted online to renew the
+  party leadership," ["Agora Voting/nVotes"](https://www.opendemocracy.net/...),
+  openDemocracy, 4 March 2017; the Plaza Podemos participation decay
+  figures are from ["Two Steps Forward, One Step Back..."](https://www.tandfonline.com/...),
+  *Journal of Contemporary European Studies*, 2022.
+```
+
+This exact footnote exists in the corpus today
+(`docs/blog/posts/2026-08-07-civic-tech-wave-2010s.md`) and, because the
+pairing contract was undefined, three separate implementations each
+guessed differently and each guessed wrong:
+
+- `check_fragments.py::find_footnote_evidence()` pairs URLs and quotes by
+  position and falls back to reusing the first quote for any extra URL —
+  so it checks the Podemos-voting quote against the *unrelated* journal
+  article and reports a false MISMATCH.
+- `hooks/footnote_fragments.py::on_page_content()` applies the one parsed
+  quote's `#:~:text=` fragment to *every* link in the footnote's rendered
+  `<li>`, so the journal citation would render with a fragment for text
+  that isn't on that page. Harmless in the browser (nothing highlights),
+  but still wrong.
+- `hooks/citation_export.py::_extract_footnote_urls()` takes only the
+  *first* URL in the footnote, silently dropping the journal citation
+  from `citations.json` entirely — confirmed in the actual exported file.
+
+**Fix (spec decision):** the machine-verifiable quote convention applies
+only to footnotes citing **exactly one source** (exactly one
+`[Title](url)` link). A footnote citing multiple sources is treated as
+citation-only — no quote is extracted for verification, fragment
+rendering, or export, even if a quoted phrase is present — until it's
+split into separate `[^label]` footnotes, one citation each. This is a
+hard, unambiguous rule rather than a smarter pairing heuristic
+(e.g. "nearest quote by clause") on purpose: a heuristic just moves the
+guessing into the parser instead of removing it, and multi-source
+footnotes are rare enough (9 in the current corpus, only 1 of which has
+a quote at all) that requiring a split is a small, one-time content fix
+rather than an ongoing parsing risk. Splitting into separate footnotes
+is also better editorial practice regardless — one citation, one claim,
+one label — so this isn't a compromise made purely for parser
+convenience.
+
+All three parsing implementations should share a single function (e.g.
+in `util/text_fragment.py`, alongside the rest of the render/verify
+machinery) that enforces this single-citation rule, rather than each
+independently reimplementing footnote parsing — the three-way
+inconsistency above is exactly what happens when they don't.
+
+### Minor: cache filename doesn't match this doc
+
+The "Two stores" table below calls the internal cache
+`docs/data/evidence-cache.json`; the actual path (see
+`check_fragments.py`'s `CACHE_PATH`) is
+`docs/data/event-evidence-cache.json` — a naming holdover from before it
+covered footnote evidence too. Not worth a migration for a committed
+data file; this doc is corrected to match the code instead.
 
 ## Research findings
 
@@ -178,7 +277,7 @@ drifted. That's the signal that matters for evidence integrity.
     url: https://...                                             │
                                                                  │
                          check_fragments.py                      │
-  Live web page ──→ verify quote ──→ evidence-cache.json         │
+  Live web page ──→ verify quote ──→ event-evidence-cache.json         │
     (weekly cron)    still matches       (committed)              │
                                          │                       │
                                          ├── content_hash        │
@@ -197,7 +296,7 @@ drifted. That's the signal that matters for evidence integrity.
 
 | Store | Committed? | Audience | Content |
 |---|---|---|---|
-| `docs/data/evidence-cache.json` | Yes | Internal | ETags, per-URL content hashes, per-quote verification booleans. Optimized for `check_fragments.py` to skip redundant refetches. |
+| `docs/data/event-evidence-cache.json` | Yes | Internal | ETags, per-URL content hashes, per-quote verification booleans. Optimized for `check_fragments.py` to skip redundant refetches. |
 | `docs/data/citations.json` | Yes | External | CSL-JSON per URL with `content-sha256` and `evidence` array. One entry per URL, multiple `evidence[].quote` entries per URL. Standard CSL processors silently ignore the non-CSL fields. |
 
 The cache feeds the export, but they serve different consumers. An external
@@ -229,6 +328,9 @@ is a build artifact.
     fragment is a progressive-enhancement UI feature.
 3. **Proposing as a CSL extension?** Premature — prove the model internally
     first, then see if there's community interest.
+4. **`paragraph_hash()` and footnote quote↔URL pairing** — resolved as
+    spec decisions in "Known issues" above; code changes to match are the
+    next step, not yet done as of this writing.
 
 ## References
 
