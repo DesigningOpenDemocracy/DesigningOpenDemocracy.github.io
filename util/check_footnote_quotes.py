@@ -13,12 +13,17 @@ script measures that gap so it's visible over time, without committing to
 a backfill pace or gating anything on it yet (see the CLAUDE.md "Prose
 footnote citations" convention).
 
-A footnote "has a quote" if it contains a quote character (straight or
-curly) OUTSIDE its markdown link syntax. Markdown link text is
-conventionally wrapped in quotes as a page-title citation style
-(`["About"](url)`) — that's not a verbatim excerpt from the page, so it's
-stripped out before checking, otherwise nearly every footnote would look
-like it already qualifies.
+A footnote "has a quote" if text_fragment.py's footnote_citation() finds
+one — the same eligibility rule used by check_fragments.py (verification),
+hooks/footnote_fragments.py (render-time #:~:text= fragments), and
+hooks/citation_export.py (CSL-JSON export): exactly one markdown link,
+plus a quoted phrase found outside that link's own syntax (a page title
+wrapped in quotes as link text, e.g. `["About"](url)`, doesn't count — it's
+not a verbatim excerpt from the page). A footnote citing more than one
+source is counted as citation-only here too, even if it contains a
+quoted phrase, since none of the machine-verifiable tooling will act on
+it either — see internal-heartbeat/machine-verifiable-citation.md's
+"Footnote citation scope" note.
 
 Local/offline — no network calls, not wired into CI or any build gate.
 
@@ -31,21 +36,12 @@ Usage:
 import argparse
 import glob
 import os
-import re
 import sys
 
+sys.path.insert(0, os.path.dirname(__file__))
+from text_fragment import footnote_citation, parse_footnote_def  # noqa: E402
+
 DOCS_DIR = os.path.join(os.path.dirname(__file__), "..", "docs")
-
-FOOTNOTE_RE = re.compile(r"^\[\^([^\]]+)\]:\s*(.*)$")
-MD_LINK_RE = re.compile(r"\[[^\]]*\]\([^)]*\)")
-QUOTE_CHARS = re.compile(r'["“”]')
-
-
-def has_verbatim_quote(footnote_text):
-    """True if a quote char survives once markdown link syntax is stripped —
-    i.e. the footnote has quoted text beyond just a title-as-link-text."""
-    stripped = MD_LINK_RE.sub("", footnote_text)
-    return bool(QUOTE_CHARS.search(stripped))
 
 
 def find_footnotes(path):
@@ -55,9 +51,9 @@ def find_footnotes(path):
     joining is attempted."""
     with open(path, encoding="utf-8") as f:
         for i, line in enumerate(f, start=1):
-            m = FOOTNOTE_RE.match(line)
-            if m:
-                yield i, m.group(1), m.group(2)
+            parsed = parse_footnote_def(line)
+            if parsed:
+                yield i, parsed[0], parsed[1]
 
 
 def main():
@@ -86,7 +82,7 @@ def main():
             bucket = by_dir.setdefault(top_dir, {"total": 0, "with_quote": 0})
             bucket["total"] += 1
 
-            if has_verbatim_quote(text):
+            if footnote_citation(text) is not None:
                 with_quote += 1
                 bucket["with_quote"] += 1
             elif args.missing:

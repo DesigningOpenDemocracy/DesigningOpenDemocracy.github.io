@@ -18,15 +18,10 @@ Two hooks:
 """
 
 import os
-import re
 import sys
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "util"))
-from text_fragment import add_fragment_to_url  # noqa: E402
-
-FOOTNOTE_RE = re.compile(r"^\[\^([^\]]+)\]:\s*(.*)$")
-QUOTED_RE = re.compile(r'["\u201c](.+?)["\u201d]')
-MD_LINK_RE = re.compile(r"\[([^\]]*)\]\(([^)]+)\)")
+from text_fragment import add_fragment_to_url, iter_footnote_citations  # noqa: E402
 
 FN_ID_PREFIX = 'id="fn:'
 FN_LI = "<li "
@@ -34,23 +29,14 @@ LI_CLOSE = "</li>"
 
 
 def _parse_footnotes(markdown_source):
-    """Return {label: quote_text} for footnotes with verbatim quotes.
-    Strips markdown link syntax before searching for quoted text,
-    matching check_footnote_quotes.py's detection logic: a page-title
-    wrapped in quotes inside link text (['Title'](url)) is not a
-    verbatim excerpt, so it's excluded."""
-    result = {}
-    for line in markdown_source.split("\n"):
-        m = FOOTNOTE_RE.match(line)
-        if not m:
-            continue
-        label, text = m.group(1), m.group(2)
-        stripped = MD_LINK_RE.sub("", text)
-        qm = QUOTED_RE.search(stripped)
-        lm = MD_LINK_RE.search(text)
-        if qm and lm:
-            result[label] = qm.group(1)
-    return result
+    """Return {label: quote_text} for footnotes that qualify for the
+    machine-verifiable quote convention. See text_fragment.py's
+    footnote_citation() for the exactly-one-citation eligibility rule \u2014
+    a footnote citing more than one source is skipped here entirely
+    (citation-only, no fragment), rather than guessing which quote goes
+    with which link."""
+    return {label: quote for label, url, title, quote
+            in iter_footnote_citations(markdown_source)}
 
 
 def _find_li_end(html, start):

@@ -12,7 +12,10 @@ Verifies two sources of evidence through the same pipeline:
 2. Footnote quotes — from prose footnote citations in org pages, blog
    posts, and concept pages. A footnote that carries a verbatim quoted
    excerpt (per the CLAUDE.md "Prose footnote citations" convention) is
-   checked against its cited page using the same text_contains() logic.
+   checked against its cited page using the same quote_matches() logic
+   (see text_fragment.py) — including its '...' elision handling, so a
+   quote like "X... Y" verifies correctly instead of always mismatching
+   on the literal ellipsis that never appears on a real page.
 
 Both sources share the same cache, fetch machinery, and reporting.
 
@@ -56,7 +59,9 @@ except ImportError as e:
     sys.exit(1)
 
 sys.path.insert(0, os.path.dirname(__file__))
-from text_fragment import count_occurrences, normalize_ws  # noqa: E402
+from text_fragment import (  # noqa: E402
+    count_occurrences, find_span, iter_footnote_citations, normalize_ws, quote_matches,
+)
 
 DOCS_DIR = os.path.join(os.path.dirname(__file__), "..", "docs")
 ORG_DIR = os.path.join(DOCS_DIR, "organisations")
@@ -76,10 +81,6 @@ BLOCK_PATTERN = re.compile(
     re.IGNORECASE
 )
 PARAGRAPH_DELIM = "\x00P\x00"
-
-FOOTNOTE_RE = re.compile(r"^\[\^([^\]]+)\]:\s*(.*)$")
-QUOTED_RE = re.compile(r'["\u201c](.+?)["\u201d]')
-MD_LINK_RE = re.compile(r"\[([^\]]*)\]\(([^)]+)\)")
 
 
 def load_cache():
@@ -102,26 +103,29 @@ def sha256(text):
     return hashlib.sha256(text.encode("utf-8", errors="replace")).hexdigest()
 
 
-def text_contains(text, needle):
-    if not text or not needle:
-        return False
-    return normalize_ws(needle) in normalize_ws(text)
-
-
 def paragraph_hash(text, quote):
     """Hash the paragraph containing the quote, bounded by \n\n
     paragraph delimiters. Returns the SHA256 hex digest, or None if
-    the quote cannot be located in the text."""
+    the quote cannot be located in the text.
+
+    Uses find_span() to locate the quote directly in `text`'s own
+    coordinates, rather than searching a separately-normalized copy and
+    reusing that offset here — mixing the two used to drift by one
+    character per paragraph break preceding the quote (normalize_ws()
+    shrinks each "\\n\\n" to a single space), landing this function in
+    the wrong paragraph — sometimes one that doesn't even contain the
+    quote — on any page with enough short paragraphs before the cited
+    sentence. See internal-heartbeat/machine-verifiable-citation.md's
+    "Known issues" note for the reproduction.
+    """
     if not text or not quote:
         return None
-    norm_text = normalize_ws(text)
-    norm_quote = normalize_ws(quote)
-    idx = norm_text.find(norm_quote)
-    if idx == -1:
+    span = find_span(text, quote)
+    if span is None:
         return None
-    # Find paragraph boundaries
-    before = text.rfind("\n\n", 0, max(0, idx - 1))
-    after = text.find("\n\n", idx + len(norm_quote))
+    idx, end_idx = span
+    before = text.rfind("\n\n", 0, idx)
+    after = text.find("\n\n", end_idx)
     para_start = before + 2 if before != -1 else 0
     para_end = after if after != -1 else len(text)
     para_text = text[para_start:para_end]
@@ -256,7 +260,7 @@ def check_evidence(url, evidence, cache, use_cache=True):
 
     new_hash = paragraph_hash(text, evidence) or sha256(text)
     verified = dict(entry.get("verified", {}))
-    result = text_contains(text, evidence)
+    result = quote_matches(text, evidence)
     verified[ev_key] = result
     cache[url] = {
         "etag": resp.headers.get("ETag") if resp is not None and not is_wikipedia else entry.get("etag"),
@@ -270,28 +274,17 @@ def check_evidence(url, evidence, cache, use_cache=True):
 
 
 def find_footnote_evidence(path):
-    """Yield (url, quote_text, source_label) from footnote definitions that
-    carry both a verbatim quoted excerpt and a markdown link. Uses the
-    same format as prose footnote citations per CLAUDE.md convention:
-        [^label]: "quoted text," [Title](url), Source.
-    Each URL is paired with its first preceding quoted string."""
+    """Yield (url, quote_text, source_label) for footnote definitions
+    that qualify for the machine-verifiable quote convention — see
+    text_fragment.py's footnote_citation() for the exactly-one-citation
+    eligibility rule and why it exists."""
     rel = os.path.relpath(path, os.path.join(DOCS_DIR, ".."))
     with open(path, encoding="utf-8") as f:
-        for i, line in enumerate(f, start=1):
-            m = FOOTNOTE_RE.match(line)
-            if not m:
-                continue
-            label, text = m.group(1), m.group(2)
-            urls = [(m2.group(2), m2.start()) for m2 in MD_LINK_RE.finditer(text)]
-            quotes = [(m3.group(1), m3.start()) for m3 in QUOTED_RE.finditer(text)]
-            if not urls or not quotes:
-                continue
-            qi = 0
-            for url, upos in urls:
-                quote = quotes[qi][0] if qi < len(quotes) else quotes[0][0]
-                source_label = "".join([rel, ":", str(i), " [^", label, "]"])
-                yield url, quote, source_label
-                qi += 1
+        source = f.read()
+    for i, line in enumerate(source.split("\n"), start=1):
+        for label, url, title, quote in iter_footnote_citations(line):
+            source_label = "".join([rel, ":", str(i), " [^", label, "]"])
+            yield url, quote, source_label
 
 
 def save_to_wayback(url, timeout=30):

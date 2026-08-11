@@ -1141,7 +1141,7 @@
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "It began in Zuccotti Park... from September 17 to November 15, 2011,"
+        "quote": "It began in Zuccotti Park... from September 17 to November 15, 2011."
       }
     ]
   },
@@ -2592,18 +2592,6 @@
         "quote": "21 December 2009 Launching our new website: Planning Alerts",
         "last-verified": "2026-08-11",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
-      }
-    ]
-  },
-  {
-    "id": "aecb3eec",
-    "type": "webpage",
-    "URL": "https://www.opendemocracy.net/en/can-europe-make-it/agora-votingnvotes/",
-    "title": "\"Agora Voting/nVotes\"",
-    "evidence": [
-      {
-        "type": "quote-match",
-        "quote": "over 155,000 members of Podemos voted online to renew the party leadership,"
       }
     ]
   },
