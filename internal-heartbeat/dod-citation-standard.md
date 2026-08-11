@@ -106,16 +106,21 @@ chapter, conference paper, or PDF gets the same quote + hash +
 verified-date layer on top of CSL-JSON's existing type-specific fields
 (`container-title`, `chapter-number`, etc.).
 
-### Content hash — two contexts
+### Content hash — three contexts
 
 - **PDFs:** Hash the entire file. A PDF is a static artifact — a SHA256
   pins the exact version cited. Straightforward and unambiguous.
-- **Web pages:** Hash the extracted *page text* (not the quote, not the
-  raw HTML). The text is what `text_contains()` checks against, and it's
-  what our cache already stores as `content_hash`. This says "this is
-  the page content that existed when I verified the quote against it" —
-  it makes drift detectable and is what a citation-auditing system
-  actually needs.
+- **Web pages (whole-page):** Hash the full extracted text. Simple but
+  fragile — a navbar update or sidebar change alters the hash even though
+  the citation-bearing content hasn't changed. Good for detecting any
+  edit, bad for signal-to-noise.
+- **Web pages (bounded-context, planned):** Locate the quote in the
+  extracted text, take N chars before and N chars after as a context
+  window, hash just that window. This mirrors the Text Fragments spec's
+  prefix/suffix concept — the surrounding text disambiguates which part
+  of the page we care about, and the hash covers only that region.
+  Immune to nav/ads/timestamp changes elsewhere. No HTML parser needed
+  (we already have flat extracted text from `_fetch_page_text()`).
 
 ### Why not SHA256 the quote string itself?
 
