@@ -61,7 +61,13 @@ and Jupyter Book. The `webpage` type already covers the basics:
 
 ### Gaps — no standard covers content integrity
 
-No academic citation standard anywhere includes:
+After surveying CSL-JSON, Memento, Schema.org, h-cite, BibTeX, RIS, and
+the W3C Verifiable Credentials model: no existing standard attaches a
+mechanically-verifiable claim to a citation. Every standard tells you
+*where* to find the source and *when* you accessed it. None tell you
+*what* the source said and how to *check* if it still says it.
+
+Specifically, no academic citation standard anywhere includes:
 
 - A **verbatim quote excerpt** from the cited source
 - A **content hash** of the retrieved page at verification time
