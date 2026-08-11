@@ -180,6 +180,94 @@ single-verifier wiki pipeline.
 | **RIS** | Simplest, most portable, but no extension mechanism and no standard place for a quote. |
 | **WebCite** | Commercially dead. |
 
+### Prior art (found 2026-08-11, after the fact)
+
+The survey above covers citation *formats* — where the *what did the source
+say* problem was checked against RIS, BibTeX, Schema.org, and so on, all of
+which turned out not to have an answer. That was the wrong search. The
+right comparison is systems that already solve *anchoring a quote of text
+to a page and re-finding it later* — annotation tools and citation-
+permanence services, not bibliography formats. Four are directly relevant,
+and each teaches something this design should account for.
+
+**W3C Web Annotation Data Model — `TextQuoteSelector`**
+(https://www.w3.org/TR/annotation-model/#text-quote-selector). A real REC
+standard for exactly this problem: `exact` (the quoted text), plus optional
+`prefix`/`suffix` (surrounding context for disambiguation). This is, field
+for field, what `evidence[].quote` already is, independently arrived at —
+and it's also the direct ancestor of the WICG Text Fragments
+`prefix-,textStart,textEnd,-suffix` syntax `make_text_fragment()` already
+speaks. Two things worth taking from it:
+  - **Naming**: consider whether `evidence[].quote` should become (or
+    alias) `exact`, for portability with any tool that already speaks
+    TextQuoteSelector, rather than DOD inventing a parallel vocabulary for
+    the same concept. Not urgent — CSL-JSON extension fields are already
+    non-standard, one more non-standard name doesn't cost much — but worth
+    a deliberate choice rather than an accident.
+  - **Its answer to ambiguity is different from ours.** The spec says: "If
+    ... the user agent discovers multiple matching text sequences, then
+    the selection should be treated as matching all of the matches" —
+    i.e. an ambiguous quote isn't an error, it's a multi-match. DOD's
+    `check_fragments.py` instead flags AMBIGUOUS as a quality problem and
+    expects a human to lengthen the quote until it's unique (see
+    `count_occurrences()` / the AMBIGUOUS report). This is a considered
+    difference, not an oversight: TextQuoteSelector is trying to keep an
+    annotation attached to *something* even under ambiguity; DOD is trying
+    to prove a *specific* claim is *specifically* supported, where "matches
+    all of the matches" would weaken exactly the guarantee the system
+    exists to provide. Recorded here so a future reader doesn't rediscover
+    this same fork and wonder why DOD didn't just copy the spec.
+
+**Robust Links** (Herbert Van de Sompel / Memento project,
+https://mementoweb.org/robustlinks/spec/). Three HTML attributes —
+`data-originalurl`, `data-versionurl`, `data-versiondate` — added directly
+to an `<a>` tag so a reader (or any tool parsing the page, not just ours)
+can find an archived snapshot without consulting a separate JSON file.
+No text-quote anchoring, no content hash — purely a document-level
+pointer plus timestamp. The lesson: `--save-to-wayback` already archives
+every cited URL, but the resulting archive URL only lives in the
+`check_fragments.py` cache today — it never reaches the rendered page.
+Emitting it as a `data-versionurl` attribute on the citation's actual
+`<a href>` (or as a fourth `evidence[]`-adjacent field in `citations.json`)
+would make the fallback discoverable by anyone looking at the HTML or the
+export, not just someone who knows to look in the internal cache.
+
+**Hypothes.is "fuzzy anchoring"**
+(https://web.hypothes.is/blog/fuzzy-anchoring/). A production annotation
+tool solving the identical "the page changed slightly, is my anchor still
+good" problem, with a four-tier fallback: exact range → stored character
+position → context-fuzzy match (prefix/suffix search, then diff the exact
+text against a similarity threshold, using the same Myers-diff/Bitap
+approach as `google-diff-match-patch`) → last-resort fuzzy full-text
+search. Explicitly a *graceful-degradation* design: losing the annotation
+entirely is worse than an uncertain re-anchor. This is the opposite
+tradeoff from DOD's: `quote_matches()` is exact-or-nothing, and a
+near-miss reports MISMATCH for a human to resolve rather than silently
+accepting a fuzzy match. Both are the *right* choice for what each tool
+is for — Hypothes.is is preserving a reader's UI annotation, where a
+slightly-wrong position is a minor inconvenience; DOD is asserting that a
+specific factual claim is specifically supported, where a fuzzy "close
+enough" match would quietly undermine the one thing the system exists to
+guarantee. Worth stating explicitly (as this paragraph now does) rather
+than leaving the strictness undefended — it was raised as a real question
+earlier in this project ("are we making this more complicated than it
+needs to be by not being more forgiving of drift?") and this is the
+answer, now with a concrete counter-example to point to.
+
+**Perma.cc** (Harvard Library Innovation Lab,
+https://perma.cc/docs/perma-link-creation). The other end of the
+spectrum: no text-level anchoring or verification at all — captures a
+full interactive snapshot (WACZ) plus a screenshot PNG of the entire
+page, and that's the citation. Used widely in legal/academic citation
+(The Bluebook recommends it). The lesson is really a confirmation: DOD's
+pipeline already does the equivalent of *both* ends of what these four
+tools each do separately — `--save-to-wayback` is DOD's Perma.cc-style
+whole-page preservation, `quote:` + `check_fragments.py` is DOD's
+Hypothes.is-style specific-claim verification. Most prior art picks one;
+this design deliberately does both, because they answer different
+questions ("is there still *a* copy of this page somewhere" vs. "does
+the page *still say* the specific thing being cited").
+
 ## Proposed format
 
 Layered on CSL-JSON. The `evidence` array groups per-claim data under
@@ -331,6 +419,21 @@ is a build artifact.
 4. **`paragraph_hash()` and footnote quote↔URL pairing** — resolved as
     spec decisions in "Known issues" above; code changes to match are the
     next step, not yet done as of this writing.
+5. **Expose the Wayback archive URL as a Robust Link.** `--save-to-wayback`
+    archives every cited URL today, but the archived snapshot's own URL
+    is never surfaced anywhere outside `check_fragments.py`'s internal
+    cache. Adding it as a `data-versionurl` attribute on the rendered
+    citation link (per the Robust Links spec) or as a field in
+    `citations.json` would make the fallback usable by anyone reading the
+    page or the export, not just this pipeline. Not done yet — needs a
+    place to store the archive URL per-citation first (today the cache is
+    keyed by page URL and doesn't retain the Wayback response).
+6. **Should `evidence[].quote` be renamed/aliased to `exact`, matching
+    the W3C Web Annotation Data Model's `TextQuoteSelector`?** Same
+    concept, independently arrived at. Interoperability benefit is real
+    but small (no other tool in this pipeline consumes that vocabulary
+    yet); revisit if `citations.json` ever needs to interoperate with an
+    actual annotation tool rather than just citeproc/Pandoc.
 
 ## References
 
@@ -341,3 +444,7 @@ is a build artifact.
 - RFC 6920 (Named Information): https://datatracker.ietf.org/doc/html/rfc6920
 - W3C Subresource Integrity: https://www.w3.org/TR/SRI/
 - h-cite microformat: https://indieweb.org/h-cite
+- W3C Web Annotation Data Model, TextQuoteSelector: https://www.w3.org/TR/annotation-model/#text-quote-selector
+- Robust Links specification (Memento project): https://mementoweb.org/robustlinks/spec/
+- Hypothes.is fuzzy anchoring: https://web.hypothes.is/blog/fuzzy-anchoring/
+- Perma.cc documentation: https://perma.cc/docs/perma-link-creation
