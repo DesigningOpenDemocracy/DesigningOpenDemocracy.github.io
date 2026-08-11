@@ -4,9 +4,31 @@ Status: **scoping**. Not yet an implemented standard. This document records the
 research, the options, and the proposed direction so a future session can
 pick it up and implement it.
 
-## Background
+## Goal
 
-DOD's existing citation model has two mechanisms:
+A practical enhancement to web citation that anyone can adopt — not
+university-only, not DOD-only. A blog, news site, or personal wiki that
+ships a `citations.json` alongside its content gives readers mechanical
+verification: the author's claim, the page text it matched at the time,
+and a link to an archived copy. No academic infrastructure required.
+
+The format is standard CSL-JSON plus a handful of extension fields for
+content integrity. Our own pipeline happens to be the reference
+implementation, but the standard is designed to stand alone.
+
+## What we already have
+
+DOD's existing citation model has two mechanisms that map directly onto
+the proposed standard:
+
+1. **Event quotes** (`events:` frontmatter `quote:` field) — structured YAML,
+   mechanically verified by `util/check_fragments.py`, rendered with
+   `#:~:text=` browser-highlight fragments at build time.
+2. **Prose footnotes** — markdown footnotes with optional verbatim quoted
+   excerpts, same verification pipeline and `#:~:text=` treatment (added
+   August 2026, PR #142).
+
+Both are internal conventions. The standard makes them exportable.
 
 1. **Event quotes** (`events:` frontmatter `quote:` field) — structured YAML,
    mechanically verified by `util/check_fragments.py`, rendered with
@@ -66,7 +88,7 @@ single-verifier wiki pipeline.
 | **RIS** | Simplest, most portable, but no extension mechanism and no standard place for a quote. |
 | **WebCite** | Commercially dead. |
 
-## Proposed DOD citation extension
+## Proposed format
 
 Layered on CSL-JSON with a `dod-` namespace prefix (reasonable convention:
 CSL-JSON spec says unknown keys are silently ignored by processors, and
@@ -96,8 +118,21 @@ lowercase-with-hyphens, not prefixes).
 |---|---|---|---|
 | Standard CSL-JSON fields | Yes | Frontmatter `url:`, `title` | Interoperable with Zotero, Pandoc, citeproc |
 | `dod-quote` | Yes | `quote:` or footnote quote | Verbatim excerpt — the evidence the citation is built on |
-| `dod-content-sha256` | Optional | `_fetch_page_text()` content hash at verify time | Pins the exact page text the quote was matched against. Makes drift mechanically detectable. |
-| `dod-last-verified-date` | Optional | `url_checked:` or `date of check_fragments.py` run | When the quote was last confirmed to match the live page |
+| `dod-content-sha256` | Optional | Content hash at verify time | Context fingerprint. Changed → trigger review (doesn't fail build). |
+| `dod-last-verified-date` | Optional | `url_checked:` or `date of check_fragments.py` run | When the quote was last confirmed to match the live page. |
+
+### Two tiers of integrity
+
+| Tier | Field | What it catches | Action |
+|---|---|---|---|
+| **Gate** | `dod-quote` | Quote no longer matches source → citation broken | Fail build, fix or remove |
+| **Review** | `dod-content-sha256` | Hash changed but quote survived → page was edited around the claim | Open review ticket, human checks framing |
+
+A reader or bot checking `citations.json` knows the difference between "this
+citation is dead" (quote mismatch) and "this page was edited, the cited
+sentence is intact, but you should re-read the surrounding paragraph"
+(hash changed, quote survived). The hash is not a pass/fail check — it
+feeds a review queue, not a CI gate.
 
 Note: `type` (webpage, article, book) and publisher/source metadata are
 already covered by native CSL-JSON fields — no need for `dod-type` or
