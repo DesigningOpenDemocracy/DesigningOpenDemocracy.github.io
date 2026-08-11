@@ -1,4 +1,4 @@
-# DOD citation standard — design notes
+# Machine-verifiable citation standard — design notes
 
 Status: **implemented**. The `hooks/citation_export.py` hook and
 `check_fragments.py` verification pipeline are live. This document records

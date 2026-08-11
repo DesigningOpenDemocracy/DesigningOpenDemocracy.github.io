@@ -202,6 +202,17 @@
   },
   {
     "type": "webpage",
+    "URL": "https://en.wikipedia.org/wiki/Anti-austerity_movement_in_Spain",
+    "title": "\"Anti-austerity movement in Spain\"",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Beginning on 15 May 2011,"
+      }
+    ]
+  },
+  {
+    "type": "webpage",
     "URL": "https://en.wikipedia.org/wiki/Archon_Fung",
     "title": "Launched by Archon Fung (Harvard) and Mark Warren (UBC) as a crowdsourced wiki platform for democratic innovations",
     "accessed": {
@@ -962,6 +973,17 @@
   },
   {
     "type": "webpage",
+    "URL": "https://en.wikipedia.org/wiki/Meta-organization",
+    "title": "\"Meta-organization\"",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Meta-organization is defined as an organization with other organizations as its members. This concept was developed in 2005 by Göran Ahrne and Nils Brunsson,"
+      }
+    ]
+  },
+  {
+    "type": "webpage",
     "URL": "https://en.wikipedia.org/wiki/Movement_for_Quality_Government_in_Israel",
     "title": "Founded as the Movement for Quality Government in Israel to combat corruption and promote transparency",
     "accessed": {
@@ -1067,6 +1089,17 @@
         "quote": "NAMFREL was formally organized in October 1983",
         "last-verified": "2026-08-11",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+      }
+    ]
+  },
+  {
+    "type": "webpage",
+    "URL": "https://en.wikipedia.org/wiki/Occupy_Wall_Street",
+    "title": "\"Occupy Wall Street\"",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "It began in Zuccotti Park... from September 17 to November 15, 2011,"
       }
     ]
   },
