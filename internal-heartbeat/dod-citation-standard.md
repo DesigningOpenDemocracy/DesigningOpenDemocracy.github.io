@@ -101,7 +101,10 @@ lowercase-with-hyphens, not prefixes).
 
 Note: `type` (webpage, article, book) and publisher/source metadata are
 already covered by native CSL-JSON fields — no need for `dod-type` or
-`dod-source`.
+`dod-source`. The three `dod-*` extensions are type-agnostic: a book
+chapter, conference paper, or PDF gets the same quote + hash +
+verified-date layer on top of CSL-JSON's existing type-specific fields
+(`container-title`, `chapter-number`, etc.).
 
 ### Content hash — two contexts
 
