@@ -65,8 +65,20 @@ def make_text_fragment(quote_text):
     words) instead of encoding the whole string — matching a very long exact
     string across DOM node boundaries is more fragile, and it keeps the URL
     shorter.
+
+    Quotes containing '...' (editorial truncation) are automatically
+    converted to textStart,textEnd form — the text before the ellipsis is
+    the start, the text after is the end. This lets editors write 'X... Y'
+    as shorthand for 'text starts with X, ends with Y' without being
+    verbatim across the omitted middle.
     """
     normalized = normalize_ws(quote_text)
+    if "..." in normalized:
+        parts = normalized.split("...")
+        start = parts[0].strip()
+        end = parts[-1].strip()
+        if start and end:
+            return "text=" + url_quote(start, safe="") + "," + url_quote(end, safe="")
     words = normalized.split(" ")
     if len(normalized) <= 300:
         return "text=" + url_quote(normalized, safe="")
