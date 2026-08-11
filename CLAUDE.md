@@ -403,6 +403,7 @@ over time without committing to a backfill pace yet.
 - `hooks/data_export.py` — fires on `on_pre_build`; generates static data files under `docs/data/` from all org frontmatter. See Data exports section below.
 - `hooks/graph_builder.py` — fires on `on_page_context` and `on_post_build`; collects concept/org/project nodes and edges (from `concepts:` frontmatter and "See also" sections) into `graph.json`. Org/project nodes include `activity_date` (best date across all `activity:` sources) used by the graph UI to fade dormant nodes.
 - `hooks/org_events.py` — fires on `on_page_context`; splits a single org's `events:` frontmatter into `page.meta.upcoming_events` / `page.meta.history_events` for that org's own page timeline. Also fires on `on_env` to register the `with_fragment` Jinja filter (from `util/text_fragment.py`), which `organisation.html` uses to derive each event's `#:~:text=` link at build time from `quote:` — see Calendar section below.
+- `hooks/citation_export.py` — fires on `on_pre_build`; exports all event and footnote citations (`quote:` + `url:`) to `/data/citations.json` in CSL-JSON format with DOD content-integrity extension fields (`dod-quote`, `dod-content-sha256`, `dod-last-verified-date`). Reads `util/.event_evidence_cache.json` for hashes and verified dates. The JSON is gitignored (depends on the network-derived cache). See `internal-heartbeat/dod-citation-standard.md` for the design.
 - `hooks/calendar_export.py` — fires on `on_pre_build`/`on_env`; merges every org's future `events:` entries with every org's cached `ics_feed` sync (`docs/data/events/<slug>.json`) into one sorted list, writes `docs/calendar.ics` + `docs/data/events.json`, and injects the list as the `calendar_events` Jinja global used by `docs/overrides/calendar.html`. Makes no network calls itself — see Calendar section below for the fetch step.
 
 ### Frontmatter — active gates
@@ -438,6 +439,7 @@ Generated at build time by `hooks/data_export.py`. Served as static assets:
 | `/data/organisations.geojson` | FeatureCollection — orgs with lat/lon only. |
 | `/data/organisations.kml` | KML — orgs with lat/lon, colour-coded by status. |
 | `/data/org-concepts.csv` | Edge list (`org_slug`, `concept_slug`) for network/graph analysis. |
+| `/data/citations.json` | CSL-JSON — all event and footnote citations with `dod-quote`, `dod-content-sha256`, `dod-last-verified-date`. Gitignored (depends on evidence cache). |
 
 These are linked from the bottom of the org index table for researcher download.
 
