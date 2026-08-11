@@ -75,7 +75,7 @@ The foundation's independence has been tested. In 2021–22, Liberal MPs Andrew 
 - Website: [openaustraliafoundation.org.au](https://www.openaustraliafoundation.org.au)
 - Wikipedia: [OpenAustralia Foundation](https://en.wikipedia.org/wiki/OpenAustralia_Foundation)
 
-[^oaf-wiki]: "It was established in 2009, co-founded by Matthew Landauer and Katherine Szuminska," and "federal Liberal MPs Andrew Bragg and Dave Sharma accused They Vote for You of distorting their voting records," ["OpenAustralia Foundation"](https://en.wikipedia.org/wiki/OpenAustralia_Foundation), Wikipedia.
+[^oaf-wiki]: "It was established in 2009, co-founded by Matthew Landauer and Katherine Szuminska." and "federal Liberal MPs Andrew Bragg and Dave Sharma accused They Vote for You of distorting their voting records," ["OpenAustralia Foundation"](https://en.wikipedia.org/wiki/OpenAustralia_Foundation), Wikipedia.
 
 ## See also
 
