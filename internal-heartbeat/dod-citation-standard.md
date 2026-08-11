@@ -160,16 +160,13 @@ feeds a review queue, not a CI gate.
   fragile — a navbar update or sidebar change alters the hash even though
   the citation-bearing content hasn't changed. Good for detecting any
   edit, bad for signal-to-noise.
-- **Web pages (bounded-context, planned):** Locate the quote in the
-  extracted text, find the enclosing paragraph boundaries (preserved
-  `\n\n` markers in extracted text), hash just that paragraph. The
-  paragraph is the natural semantic unit — immune to nav/ads/timestamp
-  changes elsewhere, and avoids the arbitrary-N problem of character
-  windows. Mirrors the Text Fragments prefix/suffix concept but uses
-  paragraph scope instead of a fixed character count. No HTML parser
-  needed: `_fetch_page_text()` already strips tags; the addition is
-  preserving double-newlines as paragraph delimiters rather than fully
-  collapsing whitespace.
+- **Web pages (paragraph-scoped):** Locate the quote in the
+  extracted text, find the enclosing paragraph boundaries (`\n\n`
+  delimiters from block-level tag substitution), hash just that paragraph.
+  The paragraph is the natural semantic unit — immune to nav/ads/timestamp
+  changes elsewhere. Implemented in `_fetch_page_text()` via sentinel
+  `\x00P\x00` substitution for block-level tags before final whitespace
+  collapse, and `paragraph_hash()` for fetching the enclosing scope.
 
 ### Why not SHA256 the quote string itself?
 
