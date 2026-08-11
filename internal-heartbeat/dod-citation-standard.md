@@ -86,7 +86,7 @@ lowercase-with-hyphens, not prefixes).
   "archive_location": "https://web.archive.org/web/20260810...",
   "dod-quote": "Forget what politicians say. What truly matters is what they do.",
   "dod-content-sha256": "a1b2c3d4e5f6...",
-  "dod-verified": "2026-08-10"
+  "dod-last-verified-date": "2026-08-10"
 }
 ```
 
@@ -97,7 +97,11 @@ lowercase-with-hyphens, not prefixes).
 | Standard CSL-JSON fields | Yes | Frontmatter `url:`, `title` | Interoperable with Zotero, Pandoc, citeproc |
 | `dod-quote` | Yes | `quote:` or footnote quote | Verbatim excerpt — the evidence the citation is built on |
 | `dod-content-sha256` | Optional | `_fetch_page_text()` content hash at verify time | Pins the exact page text the quote was matched against. Makes drift mechanically detectable. |
-| `dod-verified` | Optional | `url_checked:` or `date of check_fragments.py` run | When the quote was last confirmed to match the live page |
+| `dod-last-verified-date` | Optional | `url_checked:` or `date of check_fragments.py` run | When the quote was last confirmed to match the live page |
+
+Note: `type` (webpage, article, book) and publisher/source metadata are
+already covered by native CSL-JSON fields — no need for `dod-type` or
+`dod-source`.
 
 ### Content hash — two contexts
 
@@ -130,7 +134,7 @@ drifted. That's the signal that matters for evidence integrity.
 4. **Verification:** `util/check_fragments.py` continues to verify quotes
    against live pages and populate `content_hash` / `verified` timestamps
    in the cache. The export hook reads from the cache to fill
-   `dod-content-sha256` and `dod-verified`.
+    `dod-content-sha256` and `dod-last-verified-date`.
 
 Same single-source-of-truth rule as `#:~:text=`: humans never touch the
 JSON — it's always derived from the markdown and the verification cache.
