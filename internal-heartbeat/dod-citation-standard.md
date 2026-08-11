@@ -90,10 +90,11 @@ single-verifier wiki pipeline.
 
 ## Proposed format
 
-Layered on CSL-JSON with a `dod-` namespace prefix (reasonable convention:
-CSL-JSON spec says unknown keys are silently ignored by processors, and
-`dod-` won't collide with future CSL variable names since CSL uses
-lowercase-with-hyphens, not prefixes).
+Layered on CSL-JSON with a `dod-` namespace prefix. The prefix is
+provisional — if the standard gains adoption the fields would just be
+`quote`, `content-sha256`, `last-verified-date` at the top level.
+The prefix exists to avoid collision during development; it's
+scaffolding, not permanent naming.
 
 ### Fields
 
