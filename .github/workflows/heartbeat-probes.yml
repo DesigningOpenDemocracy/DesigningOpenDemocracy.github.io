@@ -28,9 +28,9 @@ jobs:
       - name: Scrape news pages
         run: python util/scrape_news.py
 
-      - name: Verify Wikipedia event-sourcing fragments still match
+      - name: Verify event and footnote evidence still matches live pages
         run: python util/check_fragments.py
-        continue-on-error: true  # report-only: a stale fragment shouldn't block the RSS/scrape commit below
+        continue-on-error: true  # report-only: stale evidence shouldn't block the RSS/scrape commit below
 
       - name: Check event citation URLs are still live
         run: python util/check_event_urls.py
