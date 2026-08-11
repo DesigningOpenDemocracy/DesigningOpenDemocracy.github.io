@@ -83,6 +83,7 @@ hooks:
   - hooks/graph_builder.py
   - hooks/llms_txt.py
   - hooks/data_export.py
+  - hooks/citation_export.py
   - hooks/activity_selector.py
   - hooks/org_events.py
   - hooks/footnote_fragments.py

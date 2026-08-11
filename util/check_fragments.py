@@ -16,7 +16,7 @@ Verifies two sources of evidence through the same pipeline:
 
 Both sources share the same cache, fetch machinery, and reporting.
 
-Caching: results are kept in .event_evidence_cache.json (committed, so state
+Caching: results are kept in docs/data/event-evidence-cache.json (committed, so state
 survives across weekly cron runs on fresh checkouts) keyed by URL. Non-
 Wikipedia fetches use conditional GET (If-None-Match / If-Modified-Since) so
 an unchanged page costs a 304 instead of a full download. Wikipedia's
@@ -60,9 +60,22 @@ from text_fragment import count_occurrences, normalize_ws  # noqa: E402
 
 DOCS_DIR = os.path.join(os.path.dirname(__file__), "..", "docs")
 ORG_DIR = os.path.join(DOCS_DIR, "organisations")
-CACHE_PATH = os.path.join(os.path.dirname(__file__), ".event_evidence_cache.json")
+CACHE_PATH = os.path.join(os.path.dirname(__file__), "..", "docs", "data", "event-evidence-cache.json")
 USER_AGENT = "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
 FETCH_DELAY = 0.5  # seconds between requests — same rate limit as before
+
+BLOCK_TAGS = [
+    "p", "div", "section", "article",
+    "h1", "h2", "h3", "h4", "h5", "h6",
+    "blockquote", "pre", "header", "footer", "main", "aside", "nav",
+    "figure", "figcaption", "br", "hr",
+    "li", "ol", "ul", "dl", "dt", "dd", "table", "tr",
+]
+BLOCK_PATTERN = re.compile(
+    r"</?(" + "|".join(BLOCK_TAGS) + r")\b[^>]*>",
+    re.IGNORECASE
+)
+PARAGRAPH_DELIM = "\x00P\x00"
 
 FOOTNOTE_RE = re.compile(r"^\[\^([^\]]+)\]:\s*(.*)$")
 QUOTED_RE = re.compile(r'["\u201c](.+?)["\u201d]')
@@ -93,6 +106,26 @@ def text_contains(text, needle):
     if not text or not needle:
         return False
     return normalize_ws(needle) in normalize_ws(text)
+
+
+def paragraph_hash(text, quote):
+    """Hash the paragraph containing the quote, bounded by \n\n
+    paragraph delimiters. Returns the SHA256 hex digest, or None if
+    the quote cannot be located in the text."""
+    if not text or not quote:
+        return None
+    norm_text = normalize_ws(text)
+    norm_quote = normalize_ws(quote)
+    idx = norm_text.find(norm_quote)
+    if idx == -1:
+        return None
+    # Find paragraph boundaries
+    before = text.rfind("\n\n", 0, max(0, idx - 1))
+    after = text.find("\n\n", idx + len(norm_quote))
+    para_start = before + 2 if before != -1 else 0
+    para_end = after if after != -1 else len(text)
+    para_text = text[para_start:para_end]
+    return sha256(normalize_ws(para_text))
 
 
 def wikipedia_title(url):
@@ -159,7 +192,11 @@ def _fetch_page_text(url, headers):
         # literal string "&#8211;", which a quote written with a real "–"
         # character could never match without this.
         no_scripts = re.sub(r"<(script|style)\b[^>]*>.*?</\1>", " ", r.text, flags=re.S | re.I)
-        text = re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", no_scripts)))[:2_000_000]
+        with_paragraphs = BLOCK_PATTERN.sub(" " + PARAGRAPH_DELIM + " ", no_scripts)
+        no_tags = re.sub(r"<[^>]+>", " ", with_paragraphs)
+        text = re.sub(r"\s+", " ", html.unescape(no_tags))
+        text = text.replace(PARAGRAPH_DELIM, "\n\n").strip()
+        text = text[:2_000_000]
         return text, r, None
     except requests.HTTPError as e:
         return None, None, f"HTTP_{e.response.status_code if e.response is not None else '?'}"
@@ -217,7 +254,7 @@ def check_evidence(url, evidence, cache, use_cache=True):
         if error:
             return None, False, error, False
 
-    new_hash = sha256(text)
+    new_hash = paragraph_hash(text, evidence) or sha256(text)
     verified = dict(entry.get("verified", {}))
     result = text_contains(text, evidence)
     verified[ev_key] = result

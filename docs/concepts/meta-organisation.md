@@ -32,4 +32,4 @@ What distinguishes DOD from all three isn't scale — DOD will never out-catalog
 - [Occupy to Plurality: what the 2010s civic-tech wave built, and where it stalled](../blog/posts/2026-08-07-civic-tech-wave-2010s.md) — DOD naming this idea in the context of a concrete retrospective
 - [Accountability Sink](accountability-sink.md) — the structural pattern DOD's retrospectives keep running into
 
-[^wiki]: Wikipedia, ["Meta-organization"](https://en.wikipedia.org/wiki/Meta-organization).
+[^wiki]: "Meta-organization is defined as an organization with other organizations as its members. This concept was developed in 2005 by Göran Ahrne and Nils Brunsson," Wikipedia, ["Meta-organization"](https://en.wikipedia.org/wiki/Meta-organization).
