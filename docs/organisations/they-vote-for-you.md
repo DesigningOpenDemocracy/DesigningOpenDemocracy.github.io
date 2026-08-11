@@ -58,7 +58,7 @@ In March 2022, Bragg's lawyer threatened legal action under the Australian Consu
 
 [^tvfy-about]: "Forget what politicians say. What truly matters is what they do. And what they do is vote," and "based on the ground-breaking UK Public Whip site originally created by Francis Irving and Julian Todd in 2003," ["About"](https://theyvoteforyou.org.au/about), They Vote For You.
 [^oaf-wiki]: "They Vote For You, established in 2014, tracks the outcomes of all votes in the House of Representatives and Senate" and "It received start-up funding from Google," and "federal Liberal MPs Andrew Bragg and Dave Sharma accused They Vote for You of distorting their voting records," ["OpenAustralia Foundation"](https://en.wikipedia.org/wiki/OpenAustralia_Foundation), Wikipedia.
-[^oaf-bragg]: "Michael Bradley from Marque Lawyers wrote. He is generously helping us pro-bono," and "Our legal advice is that Senator Bragg has no cause of action," OpenAustralia Foundation, ["Senator for NSW Andrew Bragg threatens OpenAustralia Foundation with legal action"](https://www.oaf.org.au/2022/03/23/senator-for-nsw-andrew-bragg-threatens-openaustralia-foundation-with-legal-action/), 23 March 2022.
+[^oaf-bragg]: "Michael Bradley from Marque Lawyers wrote. He is generously helping us pro-bono." and "Our legal advice is that Senator Bragg has no cause of action," OpenAustralia Foundation, ["Senator for NSW Andrew Bragg threatens OpenAustralia Foundation with legal action"](https://www.oaf.org.au/2022/03/23/senator-for-nsw-andrew-bragg-threatens-openaustralia-foundation-with-legal-action/), 23 March 2022.
 
 ## See also
 

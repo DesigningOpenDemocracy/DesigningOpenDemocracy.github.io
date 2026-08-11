@@ -103,4 +103,4 @@ newDemocracy's core argument is that the adversarial, partisan nature of represe
 - [MASS LBP](mass-lbp.md)
 - [DemocracyNext](democracy-next.md)
 
-[^newdem]: "The newDemocracy Foundation was launched in 2007, with Luca Belgiorno-Nettis... as the inaugural directors," and "Luca had a 30-year career in Transfield, a large infrastructure and engineering company founded by his father," newDemocracy Foundation, [History](https://www.newdemocracy.com.au/history/).
+[^newdem]: "The newDemocracy Foundation was launched in 2007, with Luca Belgiorno-Nettis... as the inaugural directors." and "Luca had a 30-year career in Transfield, a large infrastructure and engineering company founded by his father," newDemocracy Foundation, [History](https://www.newdemocracy.com.au/history/).
