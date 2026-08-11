@@ -26,20 +26,23 @@ events:
 - date: '1977-01-01'
   title: Founded by Don Chipp, emerging from the Liberal Party split, running on 'keeping
     the bastards honest'
-  url: https://en.wikipedia.org/wiki/Australian_Democrats#:~:text=The%20Democrats%27%20inaugural%20leader%20was%20Don%20Chipp
+  url: https://en.wikipedia.org/wiki/Australian_Democrats
+  quote: The Democrats' inaugural leader was Don Chipp
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
 - date: '1980-10-18'
   title: First elected to the Senate, winning balance of power — five Senators elected
     on a 9.3% vote
-  url: https://en.wikipedia.org/wiki/Australian_Democrats#:~:text=At%20the%201980%20election%2C%20this%20increased%20to%20five%20seats
+  url: https://en.wikipedia.org/wiki/Australian_Democrats
+  quote: At the 1980 election, this increased to five seats
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
 - date: '1990-03-24'
   title: Peak electoral result — 12.6% Senate vote in the 1990 federal election
-  url: https://en.wikipedia.org/wiki/Australian_Democrats#:~:text=the%201990%20federal%20election%20heralded%20something%20of%20a%20rebirth
+  url: https://en.wikipedia.org/wiki/Australian_Democrats
+  quote: the 1990 federal election heralded something of a rebirth
   proof_level: high
   url_checked: '2026-08-10'
   notable: false

@@ -37,10 +37,10 @@ events:
 - date: '2011-07-21'
   title: Oregon House Bill 2634 signed into law, making the Citizens' Initiative Review
     a permanent part of the state's initiative process
-  url: https://participedia.net/method/oregon-citizens-initiative-review
-  quote: How do I create content? Once you are signed in, you can create content by
-    clicking the “quick submit” button from the main menu and choosing the type of
-    article you would like to create.
+  url: https://www.influencewatch.org/non-profit/healthy-democracy/
+  quote: In 2011, Oregon state legislators sponsored House Bill 2634 which made the
+    Citizens’ Initiative Review (CIR) process an official and permanent part of Oregon’s
+    elections
   proof_level: high
   url_checked: '2026-08-10'
   notable: true

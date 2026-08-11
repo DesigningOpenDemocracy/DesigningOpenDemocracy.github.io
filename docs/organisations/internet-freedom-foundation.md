@@ -26,14 +26,16 @@ events:
 - date: '2016-08-15'
   title: Founded in India on Independence Day to defend digital rights, free expression,
     and online civil liberties
-  url: https://en.wikipedia.org/wiki/Internet_Freedom_Foundation#:~:text=Launched%20on%2015%20August%202016
+  url: https://en.wikipedia.org/wiki/Internet_Freedom_Foundation
+  quote: Launched on 15 August 2016
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
 - date: '2021-05-26'
   title: Successfully challenged India's IT Rules 2021 in court, securing key digital
     rights protections
-  url: https://en.wikipedia.org/wiki/Internet_Freedom_Foundation#:~:text=challenges%20to%20the%20IT%20Rules%2C%202021
+  url: https://en.wikipedia.org/wiki/Internet_Freedom_Foundation
+  quote: challenges to the IT Rules, 2021
   proof_level: high
   url_checked: '2026-08-10'
   notable: true

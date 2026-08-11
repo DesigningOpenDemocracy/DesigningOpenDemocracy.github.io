@@ -25,7 +25,8 @@ events:
 - date: '2005-01-01'
   title: Founded to track parliamentary activity and strengthen legislative debate
     in India
-  url: https://en.wikipedia.org/wiki/PRS_Legislative_Research#:~:text=was%20established%20in%20September%202005%20as%20an%20independent%20research%20institute
+  url: https://en.wikipedia.org/wiki/PRS_Legislative_Research
+  quote: was established in September 2005 as an independent research institute
   proof_level: high
   url_checked: '2026-08-10'
   notable: true

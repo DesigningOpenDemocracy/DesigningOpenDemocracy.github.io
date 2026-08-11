@@ -25,9 +25,10 @@ events:
 - date: '1989-01-01'
   title: Founded as an independent, non-partisan think tank in Beirut
   url: https://www.lcps-lebanon.org/en/about
-  quote: 'd; topics publications platforms tracker about MULTIMEDIA: PODCASTS VIDEOS
-    DATA VISUALIZATION contact careers press AR contact careers press The center Board
-    of directors Fellows Our Team Our Mission '
+  quote: Founded in 1989, the Lebanese Center for Policy Studies is an independently
+    managed, non-partisan, non-profit, non-governmental think tank whose mission is
+    to produce and advocate for policies that improve governance in Lebanon and the
+    Arab region.
   proof_level: high
   url_checked: '2026-08-10'
   notable: true

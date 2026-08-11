@@ -2,15 +2,12 @@
 """
 check_fragments.py — mechanically re-verify event evidence against live pages.
 
-An event's "mechanical proof" is one piece of exact text that must appear on
-the cited page — supplied either as a `quote:` field, or as a `#:~:text=`
-fragment embedded in the `url:` itself. These are NOT two different proof
-mechanisms with separate verification logic: whichever one an event has,
-the "evidence text" gets checked the same way, against the same fetched
-page, through one code path. The only thing fragments add on top of `quote:`
-is that a browser highlights the text on click when a reader follows the
-link — worth keeping for that reason, not worth a second verification
-implementation.
+An event's "mechanical proof" is the exact text in its `quote:` field —
+this must appear verbatim on the cited page. The #:~:text= fragment a
+reader sees when they click through is derived from quote: at render
+time (see util/text_fragment.py and hooks/org_events.py's Jinja filter);
+it is never stored in frontmatter, so there's nothing fragment-specific
+to verify here — checking quote: against the live page covers both.
 
 Caching: results are kept in .event_evidence_cache.json (committed, so state
 survives across weekly cron runs on fresh checkouts) keyed by URL. Non-
@@ -49,6 +46,9 @@ except ImportError as e:
     print(f"Missing dependency: {e.name} — pip install python-frontmatter requests")
     sys.exit(1)
 
+sys.path.insert(0, os.path.dirname(__file__))
+from text_fragment import count_occurrences, normalize_ws  # noqa: E402
+
 ORG_DIR = os.path.join(os.path.dirname(__file__), "..", "docs", "organisations")
 CACHE_PATH = os.path.join(os.path.dirname(__file__), ".event_evidence_cache.json")
 USER_AGENT = "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
@@ -75,22 +75,10 @@ def sha256(text):
     return hashlib.sha256(text.encode("utf-8", errors="replace")).hexdigest()
 
 
-def normalize_ws(text):
-    """Collapse whitespace for forgiving substring matching."""
-    return " ".join(text.split())
-
-
 def text_contains(text, needle):
     if not text or not needle:
         return False
     return normalize_ws(needle) in normalize_ws(text)
-
-
-def extract_fragment(url):
-    parsed = urlparse(url)
-    if parsed.fragment and parsed.fragment.startswith(":~:text="):
-        return unquote(parsed.fragment[len(":~:text="):])
-    return None
 
 
 def wikipedia_title(url):
@@ -143,12 +131,21 @@ def _fetch_page_text(url, headers):
         # ~194KB of extracted text with its founding sentence at ~171KB —
         # a real false MISMATCH, not a wrong quote). 2MB is a sanity
         # ceiling against a truly pathological response, not a real limit.
+        # <script>/<style> bodies are dropped before tag-stripping — a bare
+        # <[^>]+> pass only removes the tags themselves, leaving inline
+        # JSON-LD/page-props payloads in place as "text". Confirmed on
+        # CAPaD's events page (JSON-LD embeds the same event title that
+        # also appears in the visible listing) and mckinnon.co (a
+        # Next.js page-props blob duplicating the visible paragraph) —
+        # both made an otherwise-unique quote look like it occurred twice
+        # on the page, which is a false ambiguity signal, not a real one.
         # html.unescape() decodes entities (&#8211;, &amp;, &quot;, &nbsp;,
         # etc.) left behind by tag-stripping — confirmed CAPaD's event page
         # embeds its listing as JSON-in-HTML with an en-dash encoded as the
         # literal string "&#8211;", which a quote written with a real "–"
         # character could never match without this.
-        text = re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", r.text)))[:2_000_000]
+        no_scripts = re.sub(r"<(script|style)\b[^>]*>.*?</\1>", " ", r.text, flags=re.S | re.I)
+        text = re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", no_scripts)))[:2_000_000]
         return text, r, None
     except requests.HTTPError as e:
         return None, None, f"HTTP_{e.response.status_code if e.response is not None else '?'}"
@@ -166,9 +163,13 @@ def check_evidence(url, evidence, cache, use_cache=True):
     to multiple megabytes when it was tried; hashes and booleans are all
     that's actually needed to skip redundant work).
 
-    Returns (result, unchanged, error) where result is "good"/"bad"/None
-    and unchanged is True if this was answered from cache without a fetch
-    that could reveal new content (i.e. a real 304, not just "first look").
+    Returns (result, unchanged, error, ambiguous) where result is
+    "good"/"bad"/None, unchanged is True if this was answered from cache
+    without a fetch that could reveal new content (i.e. a real 304, not
+    just "first look"), and ambiguous is True if the evidence text occurs
+    more than once on a freshly-fetched page (only known when a fetch
+    actually happened — a cache hit reports ambiguous=False rather than
+    re-deriving it, since the cache doesn't retain page text).
     """
     entry = cache.get(url, {}) if use_cache else {}
     ev_key = sha256(normalize_ws(evidence))
@@ -184,7 +185,7 @@ def check_evidence(url, evidence, cache, use_cache=True):
     time.sleep(FETCH_DELAY)
     text, resp, error = _fetch_page_text(url, headers)
     if error:
-        return None, False, error
+        return None, False, error, False
 
     if text is None:
         # 304 — server confirms unchanged. If we've already verified this
@@ -196,11 +197,11 @@ def check_evidence(url, evidence, cache, use_cache=True):
         cached_result = entry.get("verified", {}).get(ev_key)
         if cached_result is not None:
             cache[url] = {**entry, "checked": date.today().isoformat()}
-            return ("good" if cached_result else "bad"), True, None
+            return ("good" if cached_result else "bad"), True, None, False
         time.sleep(FETCH_DELAY)
         text, resp, error = _fetch_page_text(url, {"User-Agent": USER_AGENT})
         if error:
-            return None, False, error
+            return None, False, error, False
 
     new_hash = sha256(text)
     verified = dict(entry.get("verified", {}))
@@ -213,7 +214,8 @@ def check_evidence(url, evidence, cache, use_cache=True):
         "verified": verified,
         "checked": date.today().isoformat(),
     }
-    return ("good" if result else "bad"), False, None
+    ambiguous = result and count_occurrences(text, evidence) > 1
+    return ("good" if result else "bad"), False, None, ambiguous
 
 
 def main():
@@ -229,6 +231,7 @@ def main():
     bad = 0
     errors = 0
     unchanged = 0
+    ambiguous_count = 0
     skipped_no_evidence = 0
     skipped_warning = 0
 
@@ -249,7 +252,7 @@ def main():
                 skipped_warning += 1
                 continue
 
-            evidence = e.get("quote") or extract_fragment(url)
+            evidence = e.get("quote")
             if not evidence:
                 skipped_no_evidence += 1
                 continue
@@ -257,7 +260,9 @@ def main():
             title = e.get("title", "")[:50]
             event_date = e.get("date", "?")
 
-            result, unchanged_hit, error = check_evidence(url, evidence, cache, use_cache=not args.no_cache)
+            result, unchanged_hit, error, ambiguous = check_evidence(
+                url, evidence, cache, use_cache=not args.no_cache
+            )
 
             if error:
                 errors += 1
@@ -270,6 +275,13 @@ def main():
 
             if result == "good":
                 good += 1
+                if ambiguous:
+                    ambiguous_count += 1
+                    print(f"  AMBIGUOUS  {slug}  [{event_date}]  {title}")
+                    print(f"             quote occurs more than once on the page — the #:~:text= "
+                          f"highlight may land on the wrong occurrence. Consider lengthening the "
+                          f"quote to be unique.")
+                    print(f"             evidence: {evidence[:80]}")
             else:
                 bad += 1
                 print(f"  MISMATCH  {slug}  [{event_date}]  {title}")
@@ -281,8 +293,10 @@ def main():
     print()
     print(f"Evidence checked: {good} good, {bad} mismatch, {errors} fetch errors")
     print(f"  ({unchanged} of those confirmed unchanged since last check — skipped re-download)")
+    if ambiguous_count:
+        print(f"  ({ambiguous_count} of the good matches occur more than once on their page — see AMBIGUOUS above)")
     print(f"Skipped: {skipped_warning} have proof_warning (explicitly unverified), "
-          f"{skipped_no_evidence} have neither quote: nor a fragment (note-only or source-only)")
+          f"{skipped_no_evidence} have no quote: (note-only or source-only)")
 
     if bad:
         print(f"\n{bad} piece(s) of evidence no longer match their live source.")

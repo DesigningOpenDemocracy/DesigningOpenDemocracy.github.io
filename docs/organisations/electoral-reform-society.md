@@ -31,7 +31,8 @@ events:
 - date: '1884-01-01'
   title: Founded as the Proportional Representation Society — one of the world's oldest
     electoral reform organisations
-  url: https://en.wikipedia.org/wiki/Electoral_Reform_Society#:~:text=was%20founded%20in%20January%201884%20as%20the%20Proportional%20Representation%20Society%20by
+  url: https://en.wikipedia.org/wiki/Electoral_Reform_Society
+  quote: was founded in January 1884 as the Proportional Representation Society by
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
@@ -46,7 +47,8 @@ events:
 - date: '2011-05-05'
   title: Led the Yes campaign in the UK's Alternative Vote referendum — the first
     UK-wide electoral system referendum
-  url: https://en.wikipedia.org/wiki/Electoral_Reform_Society#:~:text=principal%20funder%20of%20the%20YES%21%20To%20Fairer%20Votes%20campaign
+  url: https://en.wikipedia.org/wiki/Electoral_Reform_Society
+  quote: principal funder of the YES! To Fairer Votes campaign
   proof_level: high
   url_checked: '2026-08-10'
   notable: true

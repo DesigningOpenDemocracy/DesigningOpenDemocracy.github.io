@@ -28,8 +28,7 @@ events:
     civic engagement
   url: https://en.wikipedia.org/wiki/OneVoice_Movement
   quote: The OneVoice Movement was a 501c(3) non-profit organization with offices
-    in New York City, Tel Aviv, Ramallah, and London, founded in 2002 by Daniel Lubetzky,
-    a Mexican and American billionaire busine
+    in New York City, Tel Aviv, Ramallah, and London, founded in 2002 by Daniel Lubetzky
   proof_level: high
   url_checked: '2026-08-10'
   notable: true

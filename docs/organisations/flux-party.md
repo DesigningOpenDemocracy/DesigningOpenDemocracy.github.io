@@ -15,7 +15,8 @@ events:
 - date: '2016-01-01'
   title: Registered as a federal political party, promoting a novel platform of direct
     digital democracy via app-based voting
-  url: https://en.wikipedia.org/wiki/Flux_(political_party)#:~:text=Flux%20parties%20were%20registered
+  url: https://en.wikipedia.org/wiki/Flux_(political_party)
+  quote: Flux parties were registered
   proof_level: high
   url_checked: '2026-08-10'
   notable: true

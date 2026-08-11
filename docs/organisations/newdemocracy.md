@@ -29,9 +29,8 @@ events:
   title: newDemocracy Foundation launched — one of the first organisations worldwide
     dedicated exclusively to citizens' assemblies
   url: https://www.newdemocracy.com.au/history/
-  quote: Newsletters Audio Podcast Videos Further Reading Donate Now Menu Type and
-    press enter to search The story so far (and the route ahead) Australia, Europe
-    and elsewhere The newDemocracy Foundation was l
+  quote: The newDemocracy Foundation was launched in 2007, with Luca Belgiorno-Nettis,
+    Lyn Carson, Kathy Jones and Ian Marsh as the inaugural directors.
   proof_level: high
   url_checked: '2026-08-10'
   notable: true

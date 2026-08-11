@@ -26,7 +26,8 @@ events:
 - date: '1982-01-01'
   title: Founded as one of Colombia's longest-established civil society organisations
     for democratic participation
-  url: https://foro.org.co/nosotros/quienes-somos/#:~:text=creada%20en%201982
+  url: https://foro.org.co/nosotros/quienes-somos/
+  quote: creada en 1982
   proof_level: high
   url_checked: '2026-08-10'
   notable: true

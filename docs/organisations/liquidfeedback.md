@@ -32,11 +32,9 @@ events:
   title: First published by Public Software Group e.V., developed in response to requests
     from German Pirate Party members
   url: https://en.wikipedia.org/wiki/LiquidFeedback
-  quote: 'These characteristics lead to the fact that the delegation behavior of the
-    participants and thus the (often topic specific) power structures, are subject
-    to learning effects.
-
-    Interaktive Demokratie pu'
+  quote: The software was first published in October 2009 by Public Software Group
+    e. V. after being suggested by some members of Germany's Pirate Party unsatisfied
+    with conventional means of political opinion formation.
   proof_level: high
   url_checked: '2026-08-10'
   notable: true

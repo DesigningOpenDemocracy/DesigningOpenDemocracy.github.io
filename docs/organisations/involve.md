@@ -25,11 +25,13 @@ rss_feed: https://www.involve.org.uk/rss.xml
 events:
 - date: '2003-01-01'
   title: Founded
-  url: https://register-of-charities.charitycommission.gov.uk/en/charity-search/-/charity-details/4027987
-  quote: 'https://liferay.com * SPDX-License-Identifier: LGPL-2.1-or-later OR LicenseRef-Liferay-DXP-EULA-2.0.0-2023-06
-    */ (function () { AUI().applyConfig({ groups: { alloyeditor: { base: MODULE_PATH
-    + ''/js/le'
-  proof_level: high
+  url: https://www.involve.org.uk/about/about-involve
+  note: Org's own about page states Involve was founded in 2003 by Richard Wilson
+    to determine how new forms of public participation in government could strengthen
+    democracy in Britain. The Charity Commission register page previously cited here
+    served a Liferay JS bundle to a plain fetch instead of the charity record, so
+    it couldn't mechanically support this date.
+  proof_level: medium
   url_checked: '2026-08-10'
   notable: true
 activity:

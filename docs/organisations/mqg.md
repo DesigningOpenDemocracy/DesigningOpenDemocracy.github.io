@@ -29,7 +29,8 @@ events:
 - date: '1990-03-01'
   title: Founded as the Movement for Quality Government in Israel to combat corruption
     and promote transparency
-  url: https://en.wikipedia.org/wiki/Movement_for_Quality_Government_in_Israel#:~:text=was%20founded%20in%20March%201990%20by%20lawyer%20Eliad%20Shraga
+  url: https://en.wikipedia.org/wiki/Movement_for_Quality_Government_in_Israel
+  quote: was founded in March 1990 by lawyer Eliad Shraga
   proof_level: high
   url_checked: '2026-08-10'
   notable: true

@@ -29,9 +29,9 @@ events:
   title: Launched by Taiwan's National Development Council following a February 2015
     Executive Yuan directive
   url: https://europeandemocracyhub.epd.eu/exploring-worldwide-democratic-innovations-taiwan/
-  quote: The research dives into g0v, a community of hackers and people from the open
-    source community who have launched various initiatives to overcome the information
-    asymmetry with government and crowdsourc
+  quote: was launched under the sponsorship of the National Development Council. The
+    website has made it possible for citizens to submit a policy proposal to the government
+    via the Internet.
   proof_level: high
   url_checked: '2026-08-10'
   notable: true

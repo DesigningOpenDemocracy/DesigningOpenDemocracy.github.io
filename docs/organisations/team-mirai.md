@@ -26,19 +26,22 @@ location:
 events:
 - date: '2025-05-08'
   title: Party officially established by AI engineer Takahiro Anno
-  url: https://en.wikipedia.org/wiki/Team_Mirai#:~:text=was%20established%20on%208%20May%202025
+  url: https://en.wikipedia.org/wiki/Team_Mirai
+  quote: was established on 8 May 2025
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
 - date: '2025-07-20'
   title: Wins 1 seat in House of Councillors with 1.5 million votes (2.6%)
-  url: https://en.wikipedia.org/wiki/Team_Mirai#:~:text=won%20its%20first%20seat%20in%20the%20Diet
+  url: https://en.wikipedia.org/wiki/Team_Mirai
+  quote: won its first seat in the Diet
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
 - date: '2026-02-08'
   title: Wins 11 seats in House of Representatives with 3.8 million votes (~6.9%)
-  url: https://en.wikipedia.org/wiki/Team_Mirai#:~:text=securing%2011%20seats%20in%20the%20House%20of%20Representatives
+  url: https://en.wikipedia.org/wiki/Team_Mirai
+  quote: securing 11 seats in the House of Representatives
   proof_level: high
   url_checked: '2026-08-10'
   notable: true

@@ -27,22 +27,21 @@ events:
 - date: '1991-01-01'
   title: Founded as an independent research centre dedicated to strengthening Israeli
     democracy
-  url: https://en.wikipedia.org/wiki/Israel_Democracy_Institute#:~:text=was%20founded%20in%201991%20as%20a%20%22center%20of%20research%20and%20action%20dedicated%20to%20strengthening%20the%20foundations%20of%20Israeli%20democracy.%22
+  url: https://en.wikipedia.org/wiki/Israel_Democracy_Institute
+  quote: was founded in 1991 as a "center of research and action dedicated to strengthening
+    the foundations of Israeli democracy."
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
-- date: '1995-01-01'
+- date: '2003-01-01'
   title: Published the first Israeli Democracy Index — an annual survey tracking democratic
     attitudes in Israel
-  url: https://en.wikipedia.org/wiki/Israel_Democracy_Institute
-  quote: 'In 2018, their vice president of research Yuval Shany was chosen to head
-    the United Nations Human Rights Committee.
-
-    Until 2015, the IDI published HaAyin HaShevi''it (The Seventh Eye).
-
-
-
-    == Award and ra'
+  url: https://en.idi.org.il/articles/47344
+  quote: The Democracy Index, IDI’s annual flagship publication celebrating its twentieth
+    anniversary
+  note: A 2022 IDI article marking the Index's 20th anniversary, placing its first
+    edition in 2003 — corrected from a previously misdated 1995 entry that had been
+    citing unrelated Wikipedia text about the Institute (not the Index).
   proof_level: high
   url_checked: '2026-08-10'
   notable: true

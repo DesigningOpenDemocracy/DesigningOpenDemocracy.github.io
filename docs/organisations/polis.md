@@ -26,14 +26,16 @@ events:
 - date: '2012-10-13'
   title: Created by Colin Megill and the Computational Democracy Project as an open-source
     tool for large-scale deliberation
-  url: https://en.wikipedia.org/wiki/Pol.is#:~:text=was%20founded%20by%20Colin%20Megill%2C%20Christopher%20Small%2C%20and%20Michael%20Bjorkegren
+  url: https://en.wikipedia.org/wiki/Pol.is
+  quote: was founded by Colin Megill, Christopher Small, and Michael Bjorkegren
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
 - date: '2014-06-01'
   title: First used by the Taiwanese government for vTaiwan — the first large-scale
     deployment for public policy deliberation
-  url: https://en.wikipedia.org/wiki/Pol.is#:~:text=pol.is%20has%20been%20%22one%20of%20the%20key%20parts%22%20of%20vTaiwan
+  url: https://en.wikipedia.org/wiki/Pol.is
+  quote: pol.is has been "one of the key parts" of vTaiwan
   proof_level: high
   url_checked: '2026-08-10'
   notable: true

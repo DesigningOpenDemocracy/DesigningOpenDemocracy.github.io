@@ -37,11 +37,13 @@ events:
   proof_warning: true
 - date: '2017-03-04'
   title: Incorporated as a UK company
-  url: https://find-and-update.company-information.service.gov.uk/company/10652142
-  quote: Search for companies or officers All Search for companies Companies Search
-    for officers Officers Search for disqualfied officers Disqualifications {{#type_is_company}}
-    {{{title}}} {{#snippet}} Matchin
-  proof_level: high
+  url: https://www.sortitionfoundation.org/history
+  note: Org's own history page states the Sortition Foundation registered as a member-run,
+    not-for-profit company limited by guarantee in the UK on 4 March 2017. The Companies
+    House registry page previously cited here is a JS-rendered search app — a plain
+    fetch returns only its search-widget template, not the actual company record,
+    so it couldn't mechanically support this date.
+  proof_level: medium
   url_checked: '2026-08-10'
   notable: true
 activity:

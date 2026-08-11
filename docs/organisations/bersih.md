@@ -28,21 +28,24 @@ events:
 - date: '2006-11-23'
   title: Coalition formed by opposition parties and civil society groups demanding
     free and fair elections in Malaysia
-  url: https://en.wikipedia.org/wiki/Bersih#:~:text=officially%20formed%20on%2023%20November%202006
+  url: https://en.wikipedia.org/wiki/Bersih
+  quote: officially formed on 23 November 2006
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
 - date: '2007-11-10'
   title: First Bersih rally — 40,000 Malaysians march for electoral reform in Kuala
     Lumpur
-  url: https://en.wikipedia.org/wiki/Bersih#:~:text=rally%20with%2010%2C000%20to%2040%2C000%20turnout
+  url: https://en.wikipedia.org/wiki/Bersih
+  quote: rally with 10,000 to 40,000 turnout
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
 - date: '2011-07-09'
   title: Bersih 2.0 rally — 50,000+ protestors demanding clean elections, met with
     police crackdown
-  url: https://en.wikipedia.org/wiki/Bersih#:~:text=9%20July%202011%20ranged%20from%2010%2C000%20to%2050%2C000
+  url: https://en.wikipedia.org/wiki/Bersih
+  quote: 9 July 2011 ranged from 10,000 to 50,000
   proof_level: high
   url_checked: '2026-08-10'
   notable: true

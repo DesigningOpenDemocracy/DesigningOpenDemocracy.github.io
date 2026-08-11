@@ -28,14 +28,16 @@ events:
 - date: '2008-01-01'
   title: Created in the aftermath of Kenya's 2007 election crisis as a crowdsourced
     crisis-mapping platform
-  url: https://en.wikipedia.org/wiki/Ushahidi#:~:text=was%20created%20in%20the%20aftermath%20of%20Kenya%27s%20disputed%202007%20presidential%20election
+  url: https://en.wikipedia.org/wiki/Ushahidi
+  quote: was created in the aftermath of Kenya's disputed 2007 presidential election
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
 - date: '2010-01-12'
   title: Deployed for Haiti earthquake response — mapped tens of thousands of reports,
     establishing the platform's global humanitarian use case
-  url: https://en.wikipedia.org/wiki/Ushahidi#:~:text=in%20response%20to%20the%20Haiti%20Earthquake%20in%202010
+  url: https://en.wikipedia.org/wiki/Ushahidi
+  quote: in response to the Haiti Earthquake in 2010
   proof_level: high
   url_checked: '2026-08-10'
   notable: true

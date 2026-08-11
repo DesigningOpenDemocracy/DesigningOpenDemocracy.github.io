@@ -28,7 +28,8 @@ events:
 - date: '2008-01-01'
   title: Founded as part of the international Pirate Party movement, advocating digital
     rights and direct democracy
-  url: https://en.wikipedia.org/wiki/Pirate_Party_Australia#:~:text=was%20founded%20in%202008%20by%20Rodney%20Serkowski
+  url: https://en.wikipedia.org/wiki/Pirate_Party_Australia
+  quote: was founded in 2008 by Rodney Serkowski
   proof_level: high
   url_checked: '2026-08-10'
   notable: true

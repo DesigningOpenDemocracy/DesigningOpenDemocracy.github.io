@@ -26,13 +26,16 @@ ics_feed: https://calendar.google.com/calendar/ical/cpcf6iv5pt9l6gl2ue3svo63e8%4
 events:
 - date: '2012-12-01'
   title: First hackathon (Hackath0n) at Academia Sinica — launches the g0v community
-  url: https://en.wikipedia.org/wiki/G0v_movement#:~:text=driven%20by%20a%20bimonthly%20hackathon
+  url: https://en.wikipedia.org/wiki/G0v_movement
+  quote: driven by a bimonthly hackathon
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
 - date: '2016-01-01'
   title: g0vhk (Hong Kong branch) founded
-  url: https://en.wikipedia.org/wiki/G0v_movement#:~:text=active%20g0v%20communities%20working%20on%20open%20government%20data%20in%20Taiwan%20and%20Hong%20Kong
+  url: https://en.wikipedia.org/wiki/G0v_movement
+  quote: active g0v communities working on open government data in Taiwan and Hong
+    Kong
   proof_level: high
   url_checked: '2026-08-10'
   notable: false

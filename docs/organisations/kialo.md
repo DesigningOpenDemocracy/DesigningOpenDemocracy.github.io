@@ -24,7 +24,9 @@ location:
 events:
 - date: '2017-08-01'
   title: Founded by Errikos Pitsos as a structured debate and argument-mapping platform
-  url: https://en.wikipedia.org/wiki/Kialo#:~:text=was%20founded%20by%20German%2Dborn%20entrepreneur%20and%20London%20School%20of%20Economics%20and%20Political%20Science%20graduate%20Errikos%20Pitsos
+  url: https://en.wikipedia.org/wiki/Kialo
+  quote: was founded by German-born entrepreneur and London School of Economics and
+    Political Science graduate Errikos Pitsos
   proof_level: high
   url_checked: '2026-08-10'
   notable: true

@@ -25,7 +25,8 @@ events:
 - date: '2005-01-01'
   title: Founded as the umbrella women's organisation of the Kurdish democratic confederalist
     movement in Rojava
-  url: https://en.wikipedia.org/wiki/Kongra_Star#:~:text=Kongra%20Star%20(Kurdish%20for%20Star%20Congress)%2C%20founded%20in%202005
+  url: https://en.wikipedia.org/wiki/Kongra_Star
+  quote: Kongra Star (Kurdish for Star Congress), founded in 2005
   proof_level: high
   url_checked: '2026-08-10'
   notable: true

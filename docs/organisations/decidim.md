@@ -28,26 +28,32 @@ rss_feed: https://decidim.org/blog/feed.xml
 events:
 - date: '2016-01-01'
   title: First Decidim server created by 15M activists in Barcelona
-  url: https://en.wikipedia.org/wiki/Decidim#:~:text=Decidim%20provided%20their%20first%20use%20of%20participatory%20budgeting
+  url: https://en.wikipedia.org/wiki/Decidim
+  quote: Decidim provided their first use of participatory budgeting
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
 - date: '2017-02-01'
   title: Rewritten as new modular Decidim software, Barcelona city deployment begins
-  url: https://en.wikipedia.org/wiki/Decidim#:~:text=the%20server%20was%20switched%20to%20a%20similarly%20inspired%2C%20but%20new%20software%20project%2C%20Decidim
+  url: https://en.wikipedia.org/wiki/Decidim
+  quote: the server was switched to a similarly inspired, but new software project,
+    Decidim
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
 - date: '2019-01-01'
   title: Decidim Association formed — Barcelona transfers trademark and code to community
     governance
-  url: https://en.wikipedia.org/wiki/Decidim#:~:text=Decidim%20Association
+  url: https://en.wikipedia.org/wiki/Decidim
+  quote: the community formally established Decidim Association in 2019 and City Council
+    of Barcelona gave control of the Decidim trademark and code base to Decidim Association.
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
 - date: '2023-01-01'
   title: Recognised as Digital Public Good by UN Digital Public Goods Alliance
-  url: https://en.wikipedia.org/wiki/Decidim#:~:text=recognised%20as%20satisfying%20the%20criteria%20of%20the%20Digital%20Public%20Goods%20Alliance
+  url: https://en.wikipedia.org/wiki/Decidim
+  quote: recognised as satisfying the criteria of the Digital Public Goods Alliance
   proof_level: high
   url_checked: '2026-08-10'
   notable: false

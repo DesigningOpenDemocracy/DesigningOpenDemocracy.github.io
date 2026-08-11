@@ -9,8 +9,10 @@ Scans every org page's frontmatter `events:` entries and:
   - Calculates: --calculate mode auto-sets proof_level from source signals
 
 proof_level values (auto-computed from signals, or manually set):
-  high    — #:~:text= fragment pins exact evidence on the page
-  medium  — specific URL + note, or Wikipedia URL without fragment  
+  high    — quote: pins exact evidence text on the page (rendered as a
+            #:~:text= scroll-to-fragment at build time, see
+            util/text_fragment.py — never stored in url: itself)
+  medium  — specific URL + note, or Wikipedia URL without a quote
   low     — homepage URL, source-only, or click-through needed
 
 Usage:
@@ -83,9 +85,6 @@ def confidence_score(event):
             score += 2
         elif parsed.path not in ("", "/"):
             score += 1
-
-        if parsed.fragment and parsed.fragment.startswith(":~:text="):
-            score += 2
     elif has_source:
         score += 1
 
@@ -127,8 +126,6 @@ def _compute_proof_level_unlocked(event):
     if has_url:
         url_str = str(event["url"]).strip()
         parsed = urlparse(url_str)
-        if parsed.fragment and parsed.fragment.startswith(":~:text="):
-            return "high"
         if has_quote:
             return "high"
         if has_note:
@@ -281,22 +278,20 @@ def main():
                 print(f"  WEAK URL        {p['title']}  [{e.get('date','?')}]  {e.get('title','?')}")
                 print(f"                   url: {e['url']}")
 
-            # Hard gate: every event needs evidence — fragment, quote, or note.
+            # Hard gate: every event needs evidence — quote or note.
             # proof_warning overrides (event passes CI but shows a warning badge).
-            parsed = urlparse(str(e.get("url", ""))) if has_url else None
-            has_frag = bool(parsed and parsed.fragment.startswith(":~:text="))
             has_quote = "quote" in e
             has_note = "note" in e
             has_warning = "proof_warning" in e
 
-            if not has_frag and not has_quote and not has_note and not has_warning:
+            if not has_quote and not has_note and not has_warning:
                 no_proof += 1
                 has_issues = True
                 print(f"  NO PROOF        {p['title']}  [{e.get('date','?')}]  {e.get('title','?')}")
 
-            # Soft warning: notable events should have mechanical proof (fragment or quote),
+            # Soft warning: notable events should have mechanical proof (quote),
             # not just a note. proof_warning also counts as a gap — notable + override = flagged.
-            if e.get("notable") and not has_frag and not has_quote:
+            if e.get("notable") and not has_quote:
                 notable_soft += 1
                 print(f"  NOTABLE NO PROOF {p['title']}  [{e.get('date','?')}]  {e.get('title','?')}")
 
@@ -325,9 +320,9 @@ def main():
     if mismatched_proof_level:
         print(f"Stale proof_level (stored value no longer matches recomputed score): {mismatched_proof_level}  (run --recalculate to refresh)")
     if no_proof:
-        print(f"Events lacking proof (no fragment, quote, note, or proof_warning): {no_proof}")
+        print(f"Events lacking proof (no quote, note, or proof_warning): {no_proof}")
     if notable_soft:
-        print(f"Notable events without mechanical proof (no fragment or quote): {notable_soft}")
+        print(f"Notable events without mechanical proof (no quote): {notable_soft}")
     if weak_url:
         print(f"Weak URLs (homepage-only): {weak_url}")
     if vague_source:
@@ -338,7 +333,7 @@ def main():
         print(f"Orgs with no events (info only): {len(no_events)}")
 
     if has_issues:
-        print(f"\n{no_proof} event(s) need evidence (fragment, quote, note, or proof_warning). Add one to each.")
+        print(f"\n{no_proof} event(s) need evidence (quote, note, or proof_warning). Add one to each.")
         sys.exit(1)
     else:
         print("All events have a url: or source:.")

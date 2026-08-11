@@ -19,7 +19,9 @@ events:
 - date: '2011-01-16'
   title: Founded as the Movement for a Democratic Society, the political coalition
     governing the Autonomous Administration of North and East Syria
-  url: https://en.wikipedia.org/wiki/Movement_for_a_Democratic_Society#:~:text=is%20a%20left-wing%20umbrella%20organization%20in%20northern%20Syria%20founded%20on%2016%20January%202011
+  url: https://en.wikipedia.org/wiki/Movement_for_a_Democratic_Society
+  quote: is a left-wing umbrella organization in northern Syria founded on 16 January
+    2011
   proof_level: high
   url_checked: '2026-08-10'
   notable: true

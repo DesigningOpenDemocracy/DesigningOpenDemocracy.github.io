@@ -53,7 +53,8 @@ events:
 - date: '2011-06-01'
   title: Formally registered as an association, building on a loose network dating
     back to 2002
-  url: https://en.wikipedia.org/wiki/Democracy_International_eV#:~:text=formally%20established%20in%20June%202011
+  url: https://en.wikipedia.org/wiki/Democracy_International_eV
+  quote: formally established in June 2011
   proof_level: high
   url_checked: '2026-08-10'
   notable: true

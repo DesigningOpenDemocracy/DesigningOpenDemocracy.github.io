@@ -23,32 +23,38 @@ location:
 events:
 - date: '2019-09-01'
   title: Campaign launched out of New Zealand Youth Parliament
-  url: https://en.wikipedia.org/wiki/Make_It_16_(New_Zealand)#:~:text=was%20formed%20out%20of%20the%20New%20Zealand%20Youth%20Parliament
+  url: https://en.wikipedia.org/wiki/Make_It_16_(New_Zealand)
+  quote: was formed out of the New Zealand Youth Parliament
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
 - date: '2020-10-07'
   title: High Court rules voting age of 18 is age discrimination but a justified limit
-  url: https://en.wikipedia.org/wiki/Make_It_16_(New_Zealand)#:~:text=filed%20legal%20action%20with%20the%20High%20Court%20of%20New%20Zealand
+  url: https://en.wikipedia.org/wiki/Make_It_16_(New_Zealand)
+  quote: filed legal action with the High Court of New Zealand
   proof_level: high
   url_checked: '2026-08-10'
   notable: false
 - date: '2021-12-14'
   title: Court of Appeal rules voting age of 18 is unjustified age discrimination
-  url: https://en.wikipedia.org/wiki/Make_It_16_(New_Zealand)#:~:text=Court%20of%20Appeal%20of%20New%20Zealand%20ruled%20that%20the%20voting%20age%20of%2018%20was%20unjustified%20age%20discrimination
+  url: https://en.wikipedia.org/wiki/Make_It_16_(New_Zealand)
+  quote: Court of Appeal of New Zealand ruled that the voting age of 18 was unjustified
+    age discrimination
   proof_level: high
   url_checked: '2026-08-10'
   notable: false
 - date: '2022-11-21'
   title: Supreme Court issues declaration of inconsistency — rules voting age of 18
     breaches Bill of Rights for 16- and 17-year-olds
-  url: https://en.wikipedia.org/wiki/Make_It_16_(New_Zealand)#:~:text=Supreme%20Court%20of%20New%20Zealand%20issued
+  url: https://en.wikipedia.org/wiki/Make_It_16_(New_Zealand)
+  quote: Supreme Court of New Zealand issued
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
 - date: '2023-08-29'
   title: Electoral (Lowering Voting Age) Bill passes first reading in Parliament
-  url: https://en.wikipedia.org/wiki/Make_It_16_(New_Zealand)#:~:text=bill%20passed%20its%20first%20reading
+  url: https://en.wikipedia.org/wiki/Make_It_16_(New_Zealand)
+  quote: bill passed its first reading
   proof_level: high
   url_checked: '2026-08-10'
   notable: false

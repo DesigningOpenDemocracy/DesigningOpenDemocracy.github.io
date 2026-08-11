@@ -29,7 +29,7 @@ events:
   url: https://en.wikipedia.org/wiki/Citizens_Foundation
   quote: The Citizens Foundation is a non-profit organization based in Reykjavík,
     Iceland, and founded under Icelandic law to promote electronic collaborative democracy
-    around the globe and to develop the soft
+    around the globe and to develop the software needed for that purpose.
   proof_level: high
   url_checked: '2026-08-10'
   notable: true

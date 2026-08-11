@@ -139,9 +139,10 @@
 {%- endif %}
   {{ super() }}
 {%- macro render_event(e) -%}
+  {%- set href = e.url | with_fragment(e.quote) if e.url else none %}
   <li class="{% if e.notable %}org-event--notable{% endif %}">
     <span class="org-event-date">{{ e.date }}{% if e.end_date %}–{{ e.end_date }}{% endif %}</span>
-    <span class="org-event-title">{% if e.url %}<a href="{{ e.url }}" target="_blank" rel="noopener">{{ e.title }}</a>{% else %}{{ e.title }}{% endif %}</span>
+    <span class="org-event-title">{% if href %}<a href="{{ href }}" target="_blank" rel="noopener">{{ e.title }}</a>{% else %}{{ e.title }}{% endif %}</span>
     {%- if e.coverage_url %}<span class="org-event-coverage"> — <a href="{{ e.coverage_url }}">DOD coverage</a></span>{%- endif %}
     {%- if e.proof_level or e.url or e.source %}
     <details class="org-event-detail">
@@ -152,7 +153,7 @@
       {%- if e.quote %}<blockquote class="org-event-quote">{{ e.quote | e }}</blockquote>{% endif %}
       {%- if e.note %}<p class="org-event-note">{{ e.note | e }}</p>{% endif %}
       {%- if e.proof_warning %}<p class="org-event-warning-note">No note, quote, or fragment behind this citation yet — click through to verify manually.</p>{% endif %}
-      {%- if e.url %}<a href="{{ e.url }}" target="_blank" rel="noopener" class="org-event-source-btn">↗ View source</a>{% elif e.source %}<p class="org-event-source-cited">Cited: {{ e.source | e }}</p>{% endif %}
+      {%- if href %}<a href="{{ href }}" target="_blank" rel="noopener" class="org-event-source-btn">↗ View source</a>{% elif e.source %}<p class="org-event-source-cited">Cited: {{ e.source | e }}</p>{% endif %}
     </details>
     {%- endif %}
   </li>
