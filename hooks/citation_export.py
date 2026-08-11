@@ -30,6 +30,7 @@ except ImportError:
 DOCS_DIR = os.path.join(os.path.dirname(__file__), "..", "docs")
 CACHE_PATH = os.path.join(os.path.dirname(__file__), "..", "docs", "data", "event-evidence-cache.json")
 OUT_PATH = os.path.join(DOCS_DIR, "data", "citations.json")
+VERIFIED_BY = "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
 
 FOOTNOTE_RE = re.compile(r"^\[\^([^\]]+)\]:\s*(.*)$")
 QUOTED_RE = re.compile(r'["\u201c](.+?)["\u201d]')
@@ -131,6 +132,7 @@ def on_pre_build(config):
             ev = {"type": "quote-match", "quote": quote}
             if entry.get("checked"):
                 ev["last-verified"] = entry["checked"]
+                ev["verified-by"] = VERIFIED_BY
             cite["evidence"].append(ev)
 
         citations.append(cite)

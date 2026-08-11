@@ -111,12 +111,14 @@ access date, and are deduplicated into the array.
     {
       "type": "quote-match",
       "quote": "mySociety was founded by Tom Steinberg in September 2003",
-      "last-verified": "2026-08-11"
+      "last-verified": "2026-08-11",
+      "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
     },
     {
       "type": "quote-match",
       "quote": "TheyWorkForYou is a parliamentary monitoring website",
-      "last-verified": "2026-08-11"
+      "last-verified": "2026-08-11",
+      "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
     }
   ]
 }
@@ -138,6 +140,7 @@ access date, and are deduplicated into the array.
 | `type` | Always `"quote-match"` today | Evidence kind. Extensible: `screenshot`, `pdf-page`, `timestamp` in future. |
 | `quote` | `quote:` or footnote quote | Verbatim excerpt. Gate tier — must match weekly to keep the citation green. |
 | `last-verified` | Evidence cache `checked` | When this quote was last confirmed to match the live page. |
+| `verified-by` | Verifier identity string | Present = mechanically verified, absent = human claim. The value identifies the tool that checked it (e.g. "DOD-Bot/1.0") — a reader can reproduce the check with the same method.
 
 ### Two tiers of integrity
 
