@@ -37,14 +37,17 @@ events:
   type: conference
   location: Arendal, Norway
   country: 'NO'
-- date: '2014-01-01'
+- date: '2012-01-01'
   title: Founded in Oslo as a social innovation platform for sustainable societal
     development
-  url: https://www.socentral.no/om-oss
-  proof_level: medium
-  url_checked: '2026-08-10'
+  url: https://www.socentral.no/english
+  quote: SoCentral was founded in 2012, is a non-profit company and owned by its employees.
+  note: Date corrected from 2014 to 2012 — the org's own English "About us" page states
+    "founded in 2012," and the previously-cited Norwegian om-oss page (still the org's
+    general About page) never actually states a founding year at all.
+  proof_level: high
+  url_checked: '2026-08-12'
   notable: true
-  proof_warning: true
 activity:
   dod:
     checked: 2026-08-09

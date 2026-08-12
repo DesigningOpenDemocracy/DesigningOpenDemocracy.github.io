@@ -21,19 +21,25 @@ location:
 events:
 - date: '2016-12-19'
   title: Held its first meetup
-  url: https://www.meetup.com/designingopendemocracy/
-  proof_level: medium
-  url_checked: '2026-08-10'
+  url: https://www.designingopendemocracy.com/blog/2016/12/19/inaugural-designing-open-democracy-meeting/
+  quote: Thanks very much to all who were able to attend the first Designing Open
+    Democracy Meetup!
+  note: DOD's own mirror of the original meetup.com post-meeting message, dated 19
+    December 2016 — a more specific source than the generic meetup.com group page
+    this event previously cited.
+  proof_level: high
+  url_checked: '2026-08-12'
   notable: true
-  proof_warning: true
 - date: '2018-02-10'
   title: Published its "Proposed (Initial) Strategy" outlining the group's founding
     direction
   url: https://www.designingopendemocracy.com/blog/2018/02/10/proposed-initial-strategy-of-designing-open-democracy/
-  proof_level: medium
-  url_checked: '2026-08-10'
+  quote: Designing Open Democracy so far has centered on the niche topic of “Democratic
+    System Reform” and is a gathering of minds to think about ways that our current
+    system could be improved, without endorsing any particular system.
+  proof_level: high
+  url_checked: '2026-08-12'
   notable: false
-  proof_warning: true
 activity:
   manual:
     checked: 2026-08-07

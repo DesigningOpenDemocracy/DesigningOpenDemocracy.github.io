@@ -27,8 +27,14 @@ events:
   title: Founded in Nairobi as a pan-African platform for democratic governance across
     55 AU member states
   url: https://governancehubafrica.org/about
+  note: 'Unquotable as of this check: the live page is a JS-rendered SPA shell (a
+    plain fetch returns ~20 chars of visible text, no real content), and no Wayback
+    Machine snapshot of this specific /about URL exists. Web search turned up nothing
+    beyond the org''s own homepage confirming founding details. Left as proof_warning
+    rather than guessed at; worth retrying with a headless-browser fetch (see util/check_contact_deep.py
+    for the established pattern) or once the live page changes.'
   proof_level: medium
-  url_checked: '2026-08-10'
+  url_checked: '2026-08-12'
   notable: true
   proof_warning: true
 activity:

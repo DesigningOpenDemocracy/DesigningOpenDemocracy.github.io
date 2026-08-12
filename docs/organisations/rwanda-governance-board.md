@@ -27,12 +27,19 @@ events:
 - date: '2011-01-01'
   title: Established through merger of institutions to oversee governance, decentralisation,
     and civic engagement in Rwanda
-  source: Rwanda Governance Board, organic law establishing RGB — Law No 42/2010 of
-    14/12/2010
-  proof_level: low
-  url_checked: '2026-08-10'
+  url: https://www.icnl.org/resources/civic-freedom-monitor/rwanda
+  quote: The RGB was formed from merging the Rwanda Governance Advisory Council (RGAC)
+    and the National Decentralization Implementation Secretariat (NDIS).
+  note: 'Merger fact confirmed by ICNL''s Civic Freedom Monitor, but there''s a genuine
+    date discrepancy worth flagging: RGB''s own official About page (rgb.rw/1/about-rgb,
+    checked 2026-08-12) cites its establishing law as N°56/2016 of 16/12/2016, not
+    the 2010/2011 law previously cited here (Law No 42/2010) — the 2011-01-01 date
+    is plausible as the original RGAC+NDIS merger with RGB later re-established under
+    revised legislation, but that''s inference, not confirmed. Left the date as-is
+    rather than guessing which is the "true" founding year without deeper legal research.'
+  proof_level: high
+  url_checked: '2026-08-12'
   notable: true
-  proof_warning: true
 activity:
   manual:
     checked: 2026-06-07

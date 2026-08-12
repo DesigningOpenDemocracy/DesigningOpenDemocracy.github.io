@@ -398,6 +398,57 @@
       "3bbbfb3bbb443ceaa2c37f75a208d4dcbed53c85459ce09db3747652442aff49": true
     }
   },
+  "https://www.designingopendemocracy.com/blog/2016/12/19/inaugural-designing-open-democracy-meeting/": {
+    "checked": "2026-08-12",
+    "content_hash": "596d09e225107816bbb960ce2d396ba03012597f3e3c7239777d350befe04331",
+    "contexts": {
+      "596d09e225107816bbb960ce2d396ba03012597f3e3c7239777d350befe04331": {
+        "prefix": "This is a historical post from meetup.com where we sent the first message after our very first meeting at 19/12/2016 Hello Everyone!",
+        "sha256": "596d09e225107816bbb960ce2d396ba03012597f3e3c7239777d350befe04331",
+        "suffix": "Below, I wish to give everyone a summary of what was discussed for those who were unable to make it, here's a summary of what occurred:",
+        "text": "Thanks very much to all who were able to attend the first Designing Open Democracy Meetup!"
+      }
+    },
+    "etag": "W/\"6a7c8f8e-4ad8d\"",
+    "last_modified": "Wed, 12 Aug 2026 15:21:50 GMT",
+    "verified": {
+      "596d09e225107816bbb960ce2d396ba03012597f3e3c7239777d350befe04331": true
+    }
+  },
+  "https://www.designingopendemocracy.com/blog/2018/02/10/proposed-initial-strategy-of-designing-open-democracy/": {
+    "checked": "2026-08-12",
+    "content_hash": "d61364727cdb81b6061a95993507e41502ef3dcbe47b4bc1fff372b8f5e158be",
+    "contexts": {
+      "48f5313730268658b444f8282cb6e4f362d06708bde34e74051682a395dfd12a": {
+        "prefix": "tical alliances political discourse public awareness workshops Proposed (Initial) Strategy of Designing Open Democracy Rationale & Vision",
+        "sha256": "d61364727cdb81b6061a95993507e41502ef3dcbe47b4bc1fff372b8f5e158be",
+        "suffix": "While this topic is very interesting, we are at a juncture where we are trying to work out exactly what is group is and what we are trying to d",
+        "text": "Rationale & Vision Designing Open Democracy so far has centered on the niche topic of \u201cDemocratic System Reform\u201d and is a gathering of minds to think about ways that our current system could be improved, without endorsing any particular system."
+      }
+    },
+    "etag": "W/\"6a7c8f8e-365c9\"",
+    "last_modified": "Wed, 12 Aug 2026 15:21:50 GMT",
+    "verified": {
+      "48f5313730268658b444f8282cb6e4f362d06708bde34e74051682a395dfd12a": true
+    }
+  },
+  "https://www.icnl.org/resources/civic-freedom-monitor/rwanda": {
+    "checked": "2026-08-12",
+    "content_hash": "b3bdb7ecb644bffa1bf4b7516d2c69833b80f69cacb5e7cd80aedc931dc77a39",
+    "contexts": {
+      "2b55a3224952d9fe777d1b984c2c9944d917b9ac322f0b8429921d85b145d6a7": {
+        "prefix": "receipt of provisional permit from local authority (collaboration letter from the District). There are also excessive documentation requirements.",
+        "sha256": "b3bdb7ecb644bffa1bf4b7516d2c69833b80f69cacb5e7cd80aedc931dc77a39",
+        "suffix": "It is a public agency with legal personality and administrative and financial autonomy, and is established by Law no. 56/2016 of 16/12/2016 establish",
+        "text": "The RGB was formed from merging the Rwanda Governance Advisory Council (RGAC) and the National Decentralization Implementation Secretariat (NDIS). It is a public agency with legal personality and administrative and financial autonomy, and is established by Law no. 56/2016 of 16/12/2016 establishing the Rwanda Governance Board (RGB) and determining its mission, organization and functioning."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "2b55a3224952d9fe777d1b984c2c9944d917b9ac322f0b8429921d85b145d6a7": true
+    }
+  },
   "https://www.mysociety.org/about/": {
     "checked": "2026-08-12",
     "content_hash": "82e7b4b5c5b139db029fa50b163e84e2c5e0c6edd6cdefe1f7c915b6627ac0bf",
@@ -490,6 +541,33 @@
     "last_modified": null,
     "verified": {
       "93585aa0a00f2cf98a88445720db53165d4f4aa8b4a7dcc05f495e02260621a3": true
+    }
+  },
+  "https://www.socentral.no/aktuelt/": {
+    "checked": "2026-08-12",
+    "content_hash": "f1e6f545b309178ec4e144ab92632ccf9d93cbaf89c46e84a64a710ee045959c",
+    "contexts": {},
+    "etag": null,
+    "last_modified": "Tue, 11 Aug 2026 22:15:52 GMT",
+    "verified": {
+      "a657f0fa9c25d964ccf2728beb0ca5df719826011aacdf542ca9ffa88bde6ef5": false
+    }
+  },
+  "https://www.socentral.no/english": {
+    "checked": "2026-08-12",
+    "content_hash": "20cf27b55a5d0dc70a935747f9b0a909c29e8b43df1c4253bb71633200a764d2",
+    "contexts": {
+      "e9727a46395a649f719290388f82e96c6f5ce2e4db6dab33ce4ced13346cc8c4": {
+        "prefix": "skills, working every day to bring out the best in each other. Together, we have developed a culture and way of working that we are proud of. \u200d",
+        "sha256": "20cf27b55a5d0dc70a935747f9b0a909c29e8b43df1c4253bb71633200a764d2",
+        "suffix": "The value we create is reinvested into the company and into new development projects. We do not receive regular financial support from the government",
+        "text": "SoCentral was founded in 2012, is a non-profit company and owned by its employees. The value we create is reinvested into the company and into new development projects. We do not receive regular financial support from the government or foundations. Feel free to take a look at our articles of association and financial statements (in Norwegian)."
+      }
+    },
+    "etag": null,
+    "last_modified": "Sun, 09 Aug 2026 17:40:59 GMT",
+    "verified": {
+      "e9727a46395a649f719290388f82e96c6f5ce2e4db6dab33ce4ced13346cc8c4": true
     }
   }
 }
