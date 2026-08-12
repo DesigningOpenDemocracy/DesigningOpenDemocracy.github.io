@@ -47,6 +47,7 @@ In practice, a community operating from this disposition will contain different 
 
 ## See also
 
+- [Accountability Framework](../projects/accountability-framework/index.md) — the human founder names this disposition explicitly as one of the framework's core intents
 - [Vanguardism and Consultative Democracy](vanguardism.md)
 - [CPPCC](../organisations/cppcc.md)
 - [China Democratic League](../organisations/china-democratic-league.md)

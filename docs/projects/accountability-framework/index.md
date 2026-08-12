@@ -5,6 +5,7 @@ status: active
 contributors:
   - Charlie
 summary: "DOD's accountability standard: the framework used to decide which governance systems and organisations belong in the Democracy Landscape. Relocated from the old Philosophy page in June 2026 — see the note in the Soul Document — so the Philosophy section could be reserved for open human discussion."
+concepts: [utopian-realpolitik]
 ---
 
 *Looking for the short version? See the [Summary](summary.md).*
