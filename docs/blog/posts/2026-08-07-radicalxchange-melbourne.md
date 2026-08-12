@@ -75,11 +75,11 @@ DOD doesn't endorse specific mechanisms, but quadratic voting/funding and Plural
 - ["We are already the super intelligence we are looking for"](https://www.pioneerspost.com/news-views/20251106/we-are-already-the-super-intelligence-we-are-looking-audrey-tang-and-others-big) — Pioneers Post, on Audrey Tang at Small Giants' Wisdom & Action Forum
 - [Jess Scully](https://www.jessscully.com/about) — bio
 
-[^humanitix]: ["An invitation to meet RadicalxChange Foundation in Melbourne"](https://events.humanitix.com/radicalxchange-foundation-in-melbourne), Humanitix, accessed 7 August 2026.
+[^humanitix]: "Join us to learn about civic tech for democracy and community, and explore how our tools might serve your community or sector." ["An invitation to meet RadicalxChange Foundation in Melbourne"](https://events.humanitix.com/radicalxchange-foundation-in-melbourne), Humanitix, accessed 7 August 2026.
 
-[^glenweyl]: E. Glen Weyl, ["RadicalxChange"](https://glenweyl.com/radicalxchange/), personal site.
+[^glenweyl]: "Founded by economist Glen Weyl in 2018, the RadicalxChange Foundation is a 501(c)(3) nonprofit dedicated to advancing the RxC movement, to building community, and to education about democratic innovation." E. Glen Weyl, ["RadicalxChange"](https://glenweyl.com/radicalxchange/), personal site.
 
-[^rxc-about]: ["About"](https://www.radicalxchange.org/about/), RadicalxChange Foundation.
+[^rxc-about]: "RadicalxChange sparks imagination for transformative systems change." ["About"](https://www.radicalxchange.org/about/), RadicalxChange Foundation.
 
 [^rxc-jess]: [Jess Scully](https://www.radicalxchange.org/team/jess-scully/), RadicalxChange Foundation; [jessscully.com/about](https://www.jessscully.com/about).
 

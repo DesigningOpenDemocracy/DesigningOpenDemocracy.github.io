@@ -2928,6 +2928,18 @@
     ]
   },
   {
+    "id": "ba7758a1",
+    "type": "webpage",
+    "URL": "https://www.radicalxchange.org/about/",
+    "title": "\"About\"",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "RadicalxChange sparks imagination for transformative systems change."
+      }
+    ]
+  },
+  {
     "id": "4de07bf7",
     "type": "webpage",
     "URL": "https://www.transparency.org.nz/our-story",
