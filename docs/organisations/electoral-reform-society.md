@@ -36,11 +36,15 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
-- date: '1918-02-06'
-  title: Instrumental in the Representation of the People Act 1918, expanding the
-    franchise and adopting STV for university seats
+- date: '1958-01-01'
+  title: Defended STV in Ireland — future director Enid Lakeman led successful campaigns
+    against referendums to abolish proportional representation
   url: https://en.wikipedia.org/wiki/Electoral_Reform_Society
-  proof_level: medium
+  quote: The Irish government in 1958 and 1968 tried to abolish the use of the Single
+    Transferable Vote and to revert to Westminster's voting system. On both occasions,
+    future director Enid Lakeman led our successful campaign to protect democracy
+    in Ireland.
+  proof_level: high
   url_checked: '2026-08-10'
   notable: true
   proof_warning: true

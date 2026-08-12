@@ -561,6 +561,10 @@
     "evidence": [
       {
         "type": "quote-match",
+        "quote": "The Irish government in 1958 and 1968 tried to abolish the use of the Single Transferable Vote and to revert to Westminster's voting system. On both occasions, future director Enid Lakeman led our successful campaign to protect democracy in Ireland."
+      },
+      {
+        "type": "quote-match",
         "quote": "principal funder of the YES! To Fairer Votes campaign"
       },
       {
@@ -1565,6 +1569,18 @@
       {
         "type": "quote-match",
         "quote": "today the OpenAustralia Foundation is launching a new site They Vote for You"
+      }
+    ]
+  },
+  {
+    "id": "91f770a6",
+    "type": "webpage",
+    "URL": "https://perludem.or.id/profil/",
+    "title": "Founded by former Indonesian election supervisors to strengthen electoral integrity in the world's third-largest democracy",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "para mantan Pengawas Pemilu 2004 berhimpun dalam wadah yang bernama Perkumpulan untuk Pemilu dan Demokrasi"
       }
     ]
   },
@@ -2684,6 +2700,18 @@
       {
         "type": "quote-match",
         "quote": "Movilizatorio was born in 2016 precisely as a response to the risks and possibilities to create better civic engagement and social innovation in a context of peace negotiations and peacebuilding."
+      }
+    ]
+  },
+  {
+    "id": "afe1df9c",
+    "type": "webpage",
+    "URL": "https://www.wisdomandaction.com.au/",
+    "title": "Wisdom & Action Forum 2026 — Speakers",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Audrey Tang (Virtual) — Cyber Ambassador at Ministry of Foreign Affairs, Taiwan (R.O.C.)"
       }
     ]
   },

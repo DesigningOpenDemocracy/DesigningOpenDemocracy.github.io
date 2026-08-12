@@ -103,7 +103,7 @@ Two examples are cited as evidence the ideas move beyond pilots:
 
 ## In Australia
 
-RadicalxChange's Melbourne chapter is newly forming. A public launch event — "An invitation to meet RadicalxChange Foundation in Melbourne," hosted with Small Giants Academy and Today — is scheduled for 27 August 2026.[^humanitix] Jess Scully's connection to Melbourne runs through Small Giants Academy's [Wisdom & Action Forum](https://www.wisdomandaction.com.au/) (May 2026), where Audrey Tang also spoke.[^pioneerspost]
+RadicalxChange's Melbourne chapter is newly forming. A public launch event — "An invitation to meet RadicalxChange Foundation in Melbourne," hosted with Small Giants Academy and Today — is scheduled for 27 August 2026.[^humanitix] Jess Scully's connection to Melbourne runs through Small Giants Academy's [Wisdom & Action Forum](https://www.wisdomandaction.com.au/) (May 2026), where Audrey Tang also spoke.[^wisdom-action]
 
 ## Links
 
@@ -128,4 +128,5 @@ RadicalxChange's Melbourne chapter is newly forming. A public launch event — "
 
 [^humanitix]: "Join us to learn about civic tech for democracy and community, and explore how our tools might serve your community or sector." ["An invitation to meet RadicalxChange Foundation in Melbourne"](https://events.humanitix.com/radicalxchange-foundation-in-melbourne), Humanitix, 27 August 2026.
 
-[^pioneerspost]: ["'We are already the super intelligence we are looking for': Audrey Tang and others' big ideas for a better future at SEWF25"](https://www.pioneerspost.com/news-views/20251106/we-are-already-the-super-intelligence-we-are-looking-audrey-tang-and-others-big), Pioneers Post.
+[^wisdom-action]: "Audrey Tang (Virtual) — Cyber Ambassador at Ministry of Foreign Affairs, Taiwan (R.O.C.)" and "Trust by Design: Digital Democracy in the Age of AI" [Wisdom & Action Forum 2026 — Speakers](https://www.wisdomandaction.com.au/), Small Giants Academy, 5-7 May 2026, Melbourne.
+
