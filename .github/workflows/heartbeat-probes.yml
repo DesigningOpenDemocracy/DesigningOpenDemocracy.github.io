@@ -29,7 +29,7 @@ jobs:
         run: python util/scrape_news.py
 
       - name: Verify event and footnote evidence still matches live pages
-        run: python util/check_fragments.py
+        run: python util/check_fragments.py --save-to-wayback
         continue-on-error: true  # report-only: stale evidence shouldn't block the RSS/scrape commit below
 
       - name: Check event citation URLs are still live
@@ -40,6 +40,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/organisations/
+          git add docs/organisations/ docs/data/event-evidence-cache.json
           git diff --staged --quiet || git commit -m "chore: automated activity probe — $(date -u +%Y-%m-%d)"
           git push
