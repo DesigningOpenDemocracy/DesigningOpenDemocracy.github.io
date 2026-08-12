@@ -52,7 +52,7 @@ When the Philippines adopted electronic voting in 2010, the counting process bec
 - Governance and budget monitoring via local chapters
 - Electoral integrity monitoring and post-election reporting
 
-[^ndi-namfrel]: Confirms NAMFREL conducted the world's first Process and Results Verification for Transparency (PRVT) in 1986, demonstrating election fraud and showing that Marcos had, in fact, lost the election. Laura Grace, ["Lessons from NAMFREL and Gong"](https://www.ndi.org/sites/default/files/2025-04/No-6-Lessons-from-Namfrel-and-Gong---NDI-Sustaining-the-Fight-for-Democracy-Lessons-from-Citizen-Election-Monitoring-Organizations-Around-the-World.pdf), *NDI Sustaining the Fight for Democracy* series, No. 6, 2025.
+[^ndi-namfrel]: "In 1986, NAMFREL conducted the world’s first Process and Results Verification for Transparency (PRVT), demonstrating election fraud and showing that Marcos had, in fact, lost the election." Laura Grace, ["Lessons from NAMFREL and Gong"](https://www.ndi.org/sites/default/files/2025-04/No-6-Lessons-from-Namfrel-and-Gong---NDI-Sustaining-the-Fight-for-Democracy-Lessons-from-Citizen-Election-Monitoring-Organizations-Around-the-World.pdf), *NDI Sustaining the Fight for Democracy* series, No. 6, 2025.
 
 ## Links
 

@@ -43,6 +43,7 @@ import argparse
 import glob
 import hashlib
 import html
+import io
 import json
 import os
 import re
@@ -200,6 +201,25 @@ def wikipedia_title(url):
     return lang, unquote(m.group(1))
 
 
+def _extract_pdf_text(content):
+    """Extract plain text from PDF bytes via pdfminer.six. Returns None if
+    pdfminer isn't installed or extraction otherwise fails — the caller
+    turns that into an explicit PDF_PARSE_ERROR rather than treating empty
+    text as evidence of a genuine MISMATCH (see issue #149: a bare
+    requests.get(url).text on a PDF silently decodes the raw compressed
+    bytes as if they were HTML, finding nothing and false-MISMATCHing an
+    otherwise-accurate quote — this replaces that path for PDF responses,
+    detected by Content-Type or the %PDF- magic bytes)."""
+    try:
+        from pdfminer.high_level import extract_text
+    except ImportError:
+        return None
+    try:
+        return extract_text(io.BytesIO(content))
+    except Exception:
+        return None
+
+
 def _fetch_page_text(url, headers):
     """One unconditional or conditional GET. Returns (text_or_None, resp_or_None, error_or_None).
     text is None with resp set when the server returned 304 (unchanged, no body)."""
@@ -223,6 +243,14 @@ def _fetch_page_text(url, headers):
         if r.status_code == 304:
             return None, r, None
         r.raise_for_status()
+
+        content_type = r.headers.get("Content-Type", "")
+        if "application/pdf" in content_type.lower() or r.content[:5] == b"%PDF-":
+            text = _extract_pdf_text(r.content)
+            if text is None:
+                return None, None, "PDF_PARSE_ERROR"
+            return re.sub(r"\s+", " ", text).strip(), r, None
+
         # No practical truncation here — the cache only stores a hash and
         # per-evidence booleans now (see check_evidence), not the text
         # itself, so there's no memory-bloat reason to cap it. A prior

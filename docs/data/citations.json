@@ -1689,6 +1689,18 @@
     ]
   },
   {
+    "id": "0629dea9",
+    "type": "webpage",
+    "URL": "https://raisely-images.imgix.net/australian-democracy-network/uploads/adn-annual-report-23-pdf-531f03.pdf",
+    "title": "Launched as a joint project of the Human Rights Law Centre, Australian Conservation Foundation and ACOSS",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "ADN launched in February 2020 as a joint project of the Human Rights Law Centre, Australian Conservation Foundation and Australian Council of Social Service"
+      }
+    ]
+  },
+  {
     "id": "8d4c23e8",
     "type": "webpage",
     "URL": "https://reclaim.org.au/1-lismore-peoples-assembly-housing/",
@@ -2407,6 +2419,18 @@
           "suffix": "Established in 2003, we are the UK-based charity behind FixMyStreet , TheyWorkForYou , WhatDoTheyKnow , WriteToThem — and other empowering online too",
           "text": "mySociety is a trusted, collaborative and evidence-driven organisation with a long history of leading in civic tech. Established in 2003, we are the UK-based charity behind FixMyStreet , TheyWorkForYou , WhatDoTheyKnow , WriteToThem — and other empowering online tools."
         }
+      }
+    ]
+  },
+  {
+    "id": "00283224",
+    "type": "webpage",
+    "URL": "https://www.ndi.org/sites/default/files/2025-04/No-6-Lessons-from-Namfrel-and-Gong---NDI-Sustaining-the-Fight-for-Democracy-Lessons-from-Citizen-Election-Monitoring-Organizations-Around-the-World.pdf",
+    "title": "\"Lessons from NAMFREL and Gong\"",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "In 1986, NAMFREL conducted the world’s first Process and Results Verification for Transparency (PRVT), demonstrating election fraud and showing that Marcos had, in fact, lost the election."
       }
     ]
   },

@@ -236,6 +236,22 @@
       "f0118f7c11e028ae89a861bb290d491d50a00569481952a73ba3be722b261ff6": true
     }
   },
+  "https://raisely-images.imgix.net/australian-democracy-network/uploads/adn-annual-report-23-pdf-531f03.pdf": {
+    "checked": "2026-08-12",
+    "content_hash": "ba7946c361b12c574734c0542f8efe428014a0c250fc0a091d765da6d428a3e9",
+    "contexts": {
+      "770b620352cd754ae5f9149620515354b48eecec72011225af82c4fbe3ac7a74": {
+        "prefix": "es that can shift a whole system, we need collective power, strategically directed. Australian Democracy Network (ADN) was created to meet that need.",
+        "sha256": "57abd28a13bfbae5988e0b6885591cc4cb61c5e36ccbe60470607f5f3b9c8970",
+        "suffix": "to fill a unique role in our change-making sector. We are a hub where diverse organisations can come together in strategic collaborations to win the"
+      }
+    },
+    "etag": null,
+    "last_modified": "Fri, 06 Mar 2026 04:46:29 GMT",
+    "verified": {
+      "770b620352cd754ae5f9149620515354b48eecec72011225af82c4fbe3ac7a74": true
+    }
+  },
   "https://reclaim.org.au/1-lismore-peoples-assembly-housing/": {
     "checked": "2026-08-12",
     "content_hash": "c32ff80280689420b855efd6209762b535e60b88091d0669f8ceff73e226e820",
@@ -401,12 +417,18 @@
   },
   "https://www.ndi.org/sites/default/files/2025-04/No-6-Lessons-from-Namfrel-and-Gong---NDI-Sustaining-the-Fight-for-Democracy-Lessons-from-Citizen-Election-Monitoring-Organizations-Around-the-World.pdf": {
     "checked": "2026-08-12",
-    "content_hash": "0e70bc24209e2a81d13574b44e4cdb88a9fbf7a4442d67b23061f0c5152f309f",
-    "contexts": {},
+    "content_hash": "5fbe15a7c0d48360371d472f99eff320fa0f3029c79696caec929e92ea2e44cd",
+    "contexts": {
+      "dc694bf6a0921fdcc3efc773bfb68958a891b71e07cb46f8d87ec0e71a802869": {
+        "prefix": "decades of rule by Ferdinand Marcos. Their goal was to ensure honest and fair elections and build public confidence in elections through observation.",
+        "sha256": "17514b63c7b098e6209698c7888171ad0bd1989e534eb0ebe186385c0c149ca9",
+        "suffix": "After the fall of the Marcos regime and with the new political opening, NAMFREL saw an opportunity to rebuild citizen engagement in the process throu"
+      }
+    },
     "etag": "\"70742-6326cd5015c1f\"",
     "last_modified": "Thu, 10 Apr 2025 13:47:51 GMT",
     "verified": {
-      "dc694bf6a0921fdcc3efc773bfb68958a891b71e07cb46f8d87ec0e71a802869": false
+      "dc694bf6a0921fdcc3efc773bfb68958a891b71e07cb46f8d87ec0e71a802869": true
     }
   },
   "https://www.newdemocracy.com.au/history/": {
