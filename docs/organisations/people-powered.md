@@ -32,7 +32,7 @@ events:
   proof_level: medium
   url_checked: '2026-08-10'
   end_date: '2026-09-23'
-  notable: true
+  notable: false
   type: conference
   location: Kraków, Poland
   proof_warning: true
@@ -43,7 +43,7 @@ events:
   url: https://www.peoplepowered.org/events
   proof_level: medium
   url_checked: '2026-08-10'
-  notable: true
+  notable: false
   type: conference
   location: Athens, Greece
   proof_warning: true
@@ -54,7 +54,7 @@ events:
   url: https://www.peoplepowered.org/events
   proof_level: medium
   url_checked: '2026-08-10'
-  notable: true
+  notable: false
   type: conference
   location: Athens, Greece
   proof_warning: true
@@ -65,7 +65,7 @@ events:
   url: https://www.peoplepowered.org/events
   proof_level: medium
   url_checked: '2026-08-10'
-  notable: true
+  notable: false
   type: conference
   location: Strasbourg, France
   proof_warning: true

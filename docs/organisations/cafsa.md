@@ -32,6 +32,7 @@ events:
   proof_level: medium
   url_checked: '2026-08-10'
   notable: true
+  proof_warning: true
 activity:
   rss:
     checked: 2026-08-09
