@@ -21,6 +21,8 @@ location:
   longitude: 144.9648
   name: Melbourne, Australia
 rss_feed: https://www.888causeway.coop/feed
+related_orgs:
+- cooperative-bonds
 events:
 - date: '2018-01-01'
   title: Formed as Victoria's first registered co-operative co-working space

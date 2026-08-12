@@ -52,14 +52,28 @@
     "type": "webpage",
     "URL": "https://bonds.coop/about-us/our-story/",
     "title": "Formed as Victoria's first registered co-operative co-working space",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          12
+        ]
+      ]
+    },
+    "content-sha256": "64133499a5f3dbacf5a0feb85ac302ff31c33d8b56de113d2db1792612dd6492",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "888 Co-operative Causeway—Victoria’s first registered co-operative co-working space"
+        "quote": "888 Co-operative Causeway—Victoria’s first registered co-operative co-working space",
+        "last-verified": "2026-08-12",
+        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       },
       {
         "type": "quote-match",
-        "quote": "Co-operative Bonds was formed in 2018 with a simple but powerful idea"
+        "quote": "Co-operative Bonds was formed in 2018 with a simple but powerful idea",
+        "last-verified": "2026-08-12",
+        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
   },
@@ -194,14 +208,28 @@
     "type": "webpage",
     "URL": "https://congress.crowd.law/case-vtaiwan.html",
     "title": "Launched by g0v contributors partnering with Taiwanese government officials, following the 2014 Sunflower Movement",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          12
+        ]
+      ]
+    },
+    "content-sha256": "30add457c7d4a9687b5f00fd24daa8d575219b566f1481853d1246c8fcb76cd0",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "31,115 total votes (highest of any process to date)"
+        "quote": "31,115 total votes (highest of any process to date)",
+        "last-verified": "2026-08-12",
+        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       },
       {
         "type": "quote-match",
-        "quote": "In turn, former Taiwanese Minister without Portfolio Jaclyn Tsai attended a g0v.tw hackathon in December 2014 and asked the volunteers if they could “create a platform for rational discussion and deliberation of policy issues that the entire nation could participate in.”"
+        "quote": "In turn, former Taiwanese Minister without Portfolio Jaclyn Tsai attended a g0v.tw hackathon in December 2014 and asked the volunteers if they could “create a platform for rational discussion and deliberation of policy issues that the entire nation could participate in.”",
+        "last-verified": "2026-08-12",
+        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
   },
@@ -234,10 +262,22 @@
     "type": "webpage",
     "URL": "https://digidemlab.org/en/about/",
     "title": "Founded in Gothenburg to design and implement digital participatory democracy processes",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          12
+        ]
+      ]
+    },
+    "content-sha256": "e4877b3468c72c479a011f77f1c920735a7e56908c54f57bbd5462f5ae696925",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "Digidem Lab is an independent democracy lab that supports neighbourhoods, municipalities and public institutions in conducting effective and inclusive citizen dialogues."
+        "quote": "Digidem Lab is an independent democracy lab that supports neighbourhoods, municipalities and public institutions in conducting effective and inclusive citizen dialogues.",
+        "last-verified": "2026-08-12",
+        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
   },
@@ -792,10 +832,22 @@
     "type": "webpage",
     "URL": "https://en.wikipedia.org/wiki/Grattan_Institute",
     "title": "Formally incorporated, backed by the Victorian and Commonwealth governments, the University of Melbourne, and BHP/NAB",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          12
+        ]
+      ]
+    },
+    "content-sha256": "fc9ba83cfcab37b8636f22a0359d593db3f482d11186b7623bd17d90397fd2d1",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "Grattan Institute is an Australian public policy think tank... established in 2008."
+        "quote": "Grattan Institute is an Australian public policy think tank... established in 2008.",
+        "last-verified": "2026-08-12",
+        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
   },
@@ -1752,18 +1804,34 @@
     "type": "webpage",
     "URL": "https://finance.yahoo.com/news/blockchain-voting-platform-horizon-state-140552054.html",
     "title": "Founded by Jamie Skella and Nimo Naamani as a Melbourne-based blockchain voting startup",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          12
+        ]
+      ]
+    },
+    "content-sha256": "d725a235edf5624ac75fe73fd63a5c3b77ca8ff9f4d45bda693544d7b8380af4",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "Co-founded in 2017 by Jamie Skella and Nimo Naamani, Horizon State attempted to transform the voting process in Australia and New Zealand using blockchain"
+        "quote": "Co-founded in 2017 by Jamie Skella and Nimo Naamani, Horizon State attempted to transform the voting process in Australia and New Zealand using blockchain",
+        "last-verified": "2026-08-12",
+        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       },
       {
         "type": "quote-match",
-        "quote": "In February 2019, the South Australian government used Horizon State to run a public election for the recreational fishing advisory council."
+        "quote": "In February 2019, the South Australian government used Horizon State to run a public election for the recreational fishing advisory council.",
+        "last-verified": "2026-08-12",
+        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       },
       {
         "type": "quote-match",
-        "quote": "an eye-watering expense [that] will see the business become insolvent, and ultimately force its closure"
+        "quote": "an eye-watering expense [that] will see the business become insolvent, and ultimately force its closure",
+        "last-verified": "2026-08-12",
+        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
   },
@@ -2072,10 +2140,22 @@
     "type": "webpage",
     "URL": "https://portable.com.au/articles/code-for-australia-announcement/",
     "title": "Founded by Alvaro Maz, Jacob Lindsay and Daniel Groch",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          12
+        ]
+      ]
+    },
+    "content-sha256": "b33a7ba3fa2e231e3a823e4f9330c0225ddb4f927271c8e1a9e2c7688c9dd79f",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "Code for Australia is a nationwide civic technology organisation founded in 2014 by Alvaro Maz, Jacob Lindsay and Daniel Groch."
+        "quote": "Code for Australia is a nationwide civic technology organisation founded in 2014 by Alvaro Maz, Jacob Lindsay and Daniel Groch.",
+        "last-verified": "2026-08-12",
+        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
   },
@@ -2234,14 +2314,28 @@
     "type": "webpage",
     "URL": "https://theconversation.com/as-the-latrobe-valley-moves-away-from-coal-jobs-could-a-green-workers-cooperative-offer-a-solution-245850",
     "title": "Formally became a registered cooperative, rooted in discussions dating to the late 1990s",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          12
+        ]
+      ]
+    },
+    "content-sha256": "a306ccc6487edaac0cde189a7b4786539f159ed5ec8514b4e05fd24214af099e",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "Earthworker only formally became a cooperative in 2011, though discussions date back to the late 1990s."
+        "quote": "Earthworker only formally became a cooperative in 2011, though discussions date back to the late 1990s.",
+        "last-verified": "2026-08-12",
+        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       },
       {
         "type": "quote-match",
-        "quote": "In 2016, the network bought a hot water tank manufacturer in Morwell and began making their own tanks and solar hot water systems as the Earthworker Energy Manufacturing Co-operative."
+        "quote": "In 2016, the network bought a hot water tank manufacturer in Morwell and began making their own tanks and solar hot water systems as the Earthworker Energy Manufacturing Co-operative.",
+        "last-verified": "2026-08-12",
+        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
   },
@@ -2652,10 +2746,22 @@
     "type": "webpage",
     "URL": "https://www.institutoupdate.org.br/",
     "title": "Founded in São Paulo as a regional platform for political innovation and imagination in the Global South",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          12
+        ]
+      ]
+    },
+    "content-sha256": "6bda42773821c2636fae0b375db88c85bacd3abfc96e8ce808cac62e46852ef0",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "O Instituto Update atua como uma plataforma regional de inovação e imaginação política no Sul Global."
+        "quote": "O Instituto Update atua como uma plataforma regional de inovação e imaginação política no Sul Global.",
+        "last-verified": "2026-08-12",
+        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
   },
