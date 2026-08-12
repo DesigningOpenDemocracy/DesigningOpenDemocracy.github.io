@@ -103,4 +103,4 @@ g0v is one of the most studied examples of civic tech that has achieved genuine 
 
 [^demtech]: "it has transformed how the government brings stakeholders together, allowing for a more inclusive approach to legislation." Sebastian Cushing Rodriguez, ["Consensus Building in Taiwan, the Poster Child of Digital Democracy"](https://democracy-technologies.org/participation/consensus-building-in-taiwan/), *Democracy Technologies*, 2023.
 
-[^noveck]: Beth Simone Noveck, ["Was vTaiwan such a big flop, after all?"](https://bethnoveck.medium.com/was-vtaiwan-such-a-big-flop-after-all-d6b365f916dc), *Reboot Democracy / Medium*, 2023 — reproduces key quotes from the original *Daily Beast* report (paywalled).
+[^noveck]: "vTaiwan enabled over two hundred thousand people to participate in crafting 26 pieces of national legislation" Beth Simone Noveck, ["Was vTaiwan such a big flop, after all?"](https://bethnoveck.medium.com/was-vtaiwan-such-a-big-flop-after-all-d6b365f916dc), *Reboot Democracy / Medium*, 22 November 2023.

@@ -79,6 +79,6 @@ The UK Sortition Foundation already has a [landscape entry](sortition-foundation
 - [Sortition Foundation](sortition-foundation.md)
 - [newDemocracy Foundation](newdemocracy.md)
 
-[^sfau]: Sortition Foundation, [Australia chapter](https://www.sortitionfoundation.org/become_a_member_australia).
+[^sfau]: "We want to change the way politics is done in Australia! Join us" Sortition Foundation, [Australia chapter](https://www.sortitionfoundation.org/become_a_member_australia), 3 September 2020.
 - [What if we replaced politicians with randomly selected people?](../../blog/posts/2018-06-18.md) — Brett Hennig TED talk, discussed at DOD 2018
 - [Your Party is using sortition](../../blog/posts/2025-12-07-your-party-is-using-sortition.md) — UK case study, 2025
