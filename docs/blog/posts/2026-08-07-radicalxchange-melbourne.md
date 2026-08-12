@@ -61,7 +61,7 @@ Full details are in the new [RadicalxChange Foundation](../../organisations/radi
 
 ## The Taiwan connection
 
-RadicalxChange's flagship idea, **Plurality**, was co-authored by Weyl with [Audrey Tang](https://en.wikipedia.org/wiki/Audrey_Tang), Taiwan's former Digital Minister and the driving government champion behind [vTaiwan](../../organisations/vtaiwan.md) — the Pol.is-based consultation platform DOD wrote about in [May 2026](2026-05-25-taiwan-digital-democracy.md). Tang spoke at Small Giants Academy's Wisdom & Action Forum in Melbourne in May 2026,[^pioneerspost] the same co-host behind this RadicalxChange launch — which is likely why Tang's name has been circulating in Melbourne civic-tech conversations. Note that they aren't listed as a speaker at the 27 August event itself.
+RadicalxChange's flagship idea, **Plurality**, was co-authored by Weyl with [Audrey Tang](https://en.wikipedia.org/wiki/Audrey_Tang), Taiwan's former Digital Minister and the driving government champion behind [vTaiwan](../../organisations/vtaiwan.md) — the Pol.is-based consultation platform DOD wrote about in [May 2026](2026-05-25-taiwan-digital-democracy.md). Tang spoke at Small Giants Academy's Wisdom & Action Forum in Melbourne in May 2026,[^wisdom-action] the same co-host behind this RadicalxChange launch — which is likely why Tang's name has been circulating in Melbourne civic-tech conversations. Note that they aren't listed as a speaker at the 27 August event itself.
 
 ## Why it's on our radar
 
@@ -72,7 +72,7 @@ DOD doesn't endorse specific mechanisms, but quadratic voting/funding and Plural
 - [An invitation to meet RadicalxChange Foundation in Melbourne](https://events.humanitix.com/radicalxchange-foundation-in-melbourne) — Humanitix event listing (source of the banner image above, the organisers' own share graphic for this event)
 - [RadicalxChange Foundation](../../organisations/radicalxchange.md) — DOD Democracy Landscape entry
 - [Taiwan's digital democracy experiment: what it shows, what it doesn't](2026-05-25-taiwan-digital-democracy.md) — DOD, May 2026
-- ["We are already the super intelligence we are looking for"](https://www.pioneerspost.com/news-views/20251106/we-are-already-the-super-intelligence-we-are-looking-audrey-tang-and-others-big) — Pioneers Post, on Audrey Tang at Small Giants' Wisdom & Action Forum
+- [Wisdom & Action Forum 2026 — Speakers](https://www.wisdomandaction.com.au/) — Small Giants Academy, confirms Audrey Tang as a speaker
 - [Jess Scully](https://www.jessscully.com/about) — bio
 
 [^humanitix]: "Join us to learn about civic tech for democracy and community, and explore how our tools might serve your community or sector." ["An invitation to meet RadicalxChange Foundation in Melbourne"](https://events.humanitix.com/radicalxchange-foundation-in-melbourne), Humanitix, accessed 7 August 2026.
@@ -83,4 +83,4 @@ DOD doesn't endorse specific mechanisms, but quadratic voting/funding and Plural
 
 [^rxc-jess]: "Jess Scully is Executive Director of RadicalxChange and an advocate for civic imagination." [Jess Scully](https://www.radicalxchange.org/team/jess-scully/), RadicalxChange Foundation.
 
-[^pioneerspost]: ["'We are already the super intelligence we are looking for': Audrey Tang and others' big ideas for a better future at SEWF25"](https://www.pioneerspost.com/news-views/20251106/we-are-already-the-super-intelligence-we-are-looking-audrey-tang-and-others-big), Pioneers Post.
+[^wisdom-action]: "Audrey Tang (Virtual)... Cyber Ambassador at Ministry of Foreign Affairs, Taiwan (R.O.C.)" and "Trust by Design: Digital Democracy in the Age of AI" [Wisdom & Action Forum 2026 — Speakers](https://www.wisdomandaction.com.au/), Small Giants Academy, 5-7 May 2026, Melbourne.

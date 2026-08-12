@@ -1542,6 +1542,18 @@
     ]
   },
   {
+    "id": "f548ebc0",
+    "type": "webpage",
+    "URL": "https://mosaiclab.com.au/news-all-posts/2016/8/16/meet-a-co-founder-kimbra-white",
+    "title": "Kimbra White",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Kimbra co-founded MosaicLab in 2013 and sees the group as a platform for continuous learning about participation."
+      }
+    ]
+  },
+  {
     "id": "03c2b1d5",
     "type": "webpage",
     "URL": "https://mosaiclab.com.au/nicole-hunter",
@@ -2513,6 +2525,18 @@
       {
         "type": "quote-match",
         "quote": "21 December 2009 Launching our new website: Planning Alerts"
+      }
+    ]
+  },
+  {
+    "id": "aecb3eec",
+    "type": "webpage",
+    "URL": "https://www.opendemocracy.net/en/can-europe-make-it/agora-votingnvotes/",
+    "title": "\"Agora Voting/nVotes\"",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "over 155,000 members of Podemos voted online to renew the party leadership,"
       }
     ]
   },
