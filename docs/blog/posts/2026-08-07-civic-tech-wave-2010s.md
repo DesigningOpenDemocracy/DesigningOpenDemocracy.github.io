@@ -33,7 +33,7 @@ Both movements ran into the same wall: a room-sized consensus process doesn't sc
 
 ## The platforms, in rough order
 
-**Agora Voting** (Spain, 2011) was the first mover — a secure online voting system built directly out of the 15-M milieu.[^agora] When Podemos formed in 2014 as a party explicitly descended from 15-M, it adopted Agora Voting for binding internal elections (155,000 members voted on party leadership in February 2016) and built **Plaza Podemos**, a deliberation space for citizen-drafted proposals.[^agora] Plaza Podemos is the clearest documented case of participation decay in this whole wave: proposal counts fell from 1,405 to 407 and mean votes per proposal from 198.3 to 17.6 in a single year (Oct 2015–Oct 2016), and the party formally replaced it in 2019.[^agora]
+**Agora Voting** (Spain, 2011) was the first mover — a secure online voting system built directly out of the 15-M milieu.[^agora-voting] When Podemos formed in 2014 as a party explicitly descended from 15-M, it adopted Agora Voting for binding internal elections (155,000 members voted on party leadership in February 2016) and built **Plaza Podemos**, a deliberation space for citizen-drafted proposals.[^agora-voting] Plaza Podemos is the clearest documented case of participation decay in this whole wave: proposal counts fell from 1,405 to 407 and mean votes per proposal from 198.3 to 17.6 in a single year (Oct 2015–Oct 2016), and the party formally replaced it in 2019.[^agora-decay]
 
 **Loomio** (Wellington, NZ, 2012) came directly out of Occupy — its founders built it because Occupy Wellington needed better tools for the general-assembly process itself.[^loomio] Unlike most of what follows, Loomio stayed a worker cooperative rather than seeking government adoption, and that's arguably why it's still running fifteen years later: no institution's changing appetite can defund it.
 
@@ -92,9 +92,11 @@ Worth saying outright, not just implying: thanks to everyone who built, ran, fun
 
 [^occupy]: "It began in Zuccotti Park... from September 17 to November 15, 2011." and "The assembly was the main OWS decision-making body and used a modified consensus process," Wikipedia, ["Occupy Wall Street"](https://en.wikipedia.org/wiki/Occupy_Wall_Street).
 
-[^agora]: "over 155,000 members of Podemos voted online to renew the party leadership," ["Agora Voting/nVotes"](https://www.opendemocracy.net/en/can-europe-make-it/agora-votingnvotes/), openDemocracy, 4 March 2017; the Plaza Podemos participation decay figures are from ["Two Steps Forward, One Step Back: The Evolution of Democratic Digital Innovations in Podemos"](https://www.tandfonline.com/doi/full/10.1080/13608746.2022.2161973), *Journal of Contemporary European Studies*, 2022.
+[^agora-voting]: "over 155,000 members of Podemos voted online to renew the party leadership," ["Agora Voting/nVotes"](https://www.opendemocracy.net/en/can-europe-make-it/agora-votingnvotes/), openDemocracy, 4 March 2017.
 
-[^loomio]: [Loomio](https://en.wikipedia.org/wiki/Loomio), Wikipedia; DOD [org page](../../organisations/loomio.md).
+[^agora-decay]: The Plaza Podemos participation decay figures (proposal counts fell from 1,405 to 407, mean votes from 198.3 to 17.6 in a single year) are from ["Two Steps Forward, One Step Back: The Evolution of Democratic Digital Innovations in Podemos"](https://www.tandfonline.com/doi/full/10.1080/13608746.2022.2161973), *Journal of Contemporary European Studies*, 2022.
+
+[^loomio]: "Loomio emerged from the Occupy movement. In 2012, it launched its first prototype." [Loomio](https://en.wikipedia.org/wiki/Loomio), Wikipedia. See also DOD [org page](../../organisations/loomio.md).
 
 [^demos]: DOD [DemocracyOS org page](../../organisations/democracyos.md).
 
