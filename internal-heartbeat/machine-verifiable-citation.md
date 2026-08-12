@@ -2,8 +2,11 @@
 
 Status: **implemented, two correctness gaps found in review — see "Known
 issues" below**. The `hooks/citation_export.py` hook and `check_fragments.py`
-verification pipeline are live. This document records the research,
-decisions, and rationale.
+verification pipeline are live. Robust Links-style archive exposure (Open
+question 5) and a fuzzy-diff MISMATCH diagnostic are also implemented as of
+2026-08-12 — see the updated Open question 5 entry and the Hypothes.is prior-
+art note below. This document records the research, decisions, and
+rationale.
 
 ## Goal
 
@@ -232,6 +235,15 @@ Emitting it as a `data-versionurl` attribute on the citation's actual
 would make the fallback discoverable by anyone looking at the HTML or the
 export, not just someone who knows to look in the internal cache.
 
+**Implemented 2026-08-12** (see Open question 5 below for the final design):
+rather than a `data-versionurl` attribute, the archive URL is rendered as a
+separate, visible archive-box (🗃️) link next to the citation — additive, not
+replacing the normal citation link, matching Robust Links' own "fallback,
+not primary" framing. `citations.json` gets the standard `archive` /
+`archive_location` CSL-JSON fields instead of a bespoke one, since those
+were already identified as the correct mapping in the "What we already
+have" table above.
+
 **Hypothes.is "fuzzy anchoring"**
 (https://web.hypothes.is/blog/fuzzy-anchoring/). A production annotation
 tool solving the identical "the page changed slightly, is my anchor still
@@ -253,6 +265,24 @@ than leaving the strictness undefended — it was raised as a real question
 earlier in this project ("are we making this more complicated than it
 needs to be by not being more forgiving of drift?") and this is the
 answer, now with a concrete counter-example to point to.
+
+**Implemented 2026-08-12, diagnostic-only:** `text_fragment.py`'s
+`closest_match_hint()` uses stdlib `difflib.SequenceMatcher` (no new
+dependency — same spirit as Hypothes.is's Myers-diff/Bitap approach, at a
+fraction of the sophistication) to find the passage on the page most
+similar to a MISMATCHed quote, and prints it alongside the MISMATCH report
+("closest match on page (91% similar): ..."). This makes a broken citation
+actionable — "the page now says X instead of Y" instead of a bare
+not-found — without weakening the gate: the fuzzy match never counts as
+verification, `quote_matches()` still decides pass/fail on exact
+(whitespace-normalized) containment alone. Confirmed against the two
+already-known, deliberately-unfixed mismatches in the corpus (loomio.md's
+`[^loomio-wiki]`, accountability-framework's `[^theatre]` — see issue
+#139): the hint correctly surfaces the rewritten Wikipedia sentence at 99%
+similarity for the former, and the actual nearby (but substantively
+different) passage at 62% for the latter, in both cases telling a human
+reviewer exactly where to look without ever attempting to auto-resolve
+either citation.
 
 **Perma.cc** (Harvard Library Innovation Lab,
 https://perma.cc/docs/perma-link-creation). The other end of the
@@ -370,7 +400,9 @@ drifted. That's the signal that matters for evidence integrity.
                                          │                       │
                                          ├── content_hash        │
                                          ├── last verified date  │
-                                         └── ETag/Last-Modified  │
+                                         ├── archive_url ────────┼──→ 🗃️ archive-box
+                                         │   (--save-to-wayback)  │    link (rendered
+                                         └── ETag/Last-Modified  │    HTML, additive)
                                             (internal only)      │
                                                                  │
                                           citation_export.py      │
@@ -384,7 +416,7 @@ drifted. That's the signal that matters for evidence integrity.
 
 | Store | Committed? | Audience | Content |
 |---|---|---|---|
-| `docs/data/event-evidence-cache.json` | Yes | Internal | ETags, per-URL content hashes, per-quote verification booleans. Optimized for `check_fragments.py` to skip redundant refetches. |
+| `docs/data/event-evidence-cache.json` | Yes | Internal | ETags, per-URL content hashes, per-quote verification booleans, plus `archive_url`/`archive_checked` when `--save-to-wayback` has run for that URL. Optimized for `check_fragments.py` to skip redundant refetches. |
 | `docs/data/citations.json` | Yes | External | CSL-JSON per URL with `content-sha256` and `evidence` array. One entry per URL, multiple `evidence[].quote` entries per URL. Standard CSL processors silently ignore the non-CSL fields. |
 
 The cache feeds the export, but they serve different consumers. An external
@@ -419,15 +451,45 @@ is a build artifact.
 4. **`paragraph_hash()` and footnote quote↔URL pairing** — resolved as
     spec decisions in "Known issues" above; code changes to match are the
     next step, not yet done as of this writing.
-5. **Expose the Wayback archive URL as a Robust Link.** `--save-to-wayback`
-    archives every cited URL today, but the archived snapshot's own URL
-    is never surfaced anywhere outside `check_fragments.py`'s internal
-    cache. Adding it as a `data-versionurl` attribute on the rendered
-    citation link (per the Robust Links spec) or as a field in
-    `citations.json` would make the fallback usable by anyone reading the
-    page or the export, not just this pipeline. Not done yet — needs a
-    place to store the archive URL per-citation first (today the cache is
-    keyed by page URL and doesn't retain the Wayback response).
+5. **Expose the Wayback archive URL as a Robust Link — implemented
+    2026-08-12.** Final design, after "all your idea makes sense, proceed"
+    plus a follow-up request for a *visible* link (not just a hidden HTML
+    attribute):
+    - `check_fragments.py::save_to_wayback()` is now two-step: trigger a
+      fresh snapshot via Save Page Now, then resolve an actually-browsable
+      snapshot URL via the read-only Availability API
+      (`https://archive.org/wayback/available?url=...`) — the one just
+      triggered if indexing was fast enough, otherwise the most recent
+      existing one. Returns that URL (or `None`), not just a
+      trigger-succeeded boolean, since a 200 from `/save/` doesn't tell you
+      where the snapshot actually lives.
+    - The returned URL is persisted into the evidence cache as
+      `archive_url` / `archive_checked`, merged into (not replacing) the
+      existing per-URL entry — `check_evidence()`'s own cache write was
+      also fixed to preserve those two fields across a fresh
+      fetch-verification cycle, since it used to fully overwrite the entry.
+    - `text_fragment.py::load_archive_urls()` reads the cache once per
+      build and exposes `{url: archive_url}`. `hooks/org_events.py`
+      registers it as the `archive_url_for` Jinja filter;
+      `hooks/footnote_fragments.py` uses the same map directly.
+    - Rendered as a visible archive-box (🗃️) link — `organisation.html`'s
+      `render_event` macro puts it next to the "↗ View source" button;
+      `footnote_fragments.py` inserts it right after the citation's
+      `<a href>` in footnote HTML. Always **additional** to the normal
+      citation link, never a replacement, per explicit instruction.
+    - `hooks/citation_export.py` maps `archive_url` onto the standard
+      CSL-JSON `archive` / `archive_location` fields in `citations.json`.
+    - **Caveat, not yet confirmed in a real deploy:** the Save Page Now
+      trigger endpoint (`web.archive.org/save/...`) returned a connection
+      reset in this sandbox during development — plausibly a sandbox-
+      specific network restriction rather than a real endpoint problem, but
+      untested end-to-end outside the sandbox. The Availability API
+      fallback was live-tested successfully (confirmed returning real
+      snapshot URLs for `en.wikipedia.org/wiki/Loomio`), so the feature
+      degrades gracefully even if the trigger step never works here: no
+      archive link renders for a URL with no existing snapshot, rather
+      than a broken one. Worth a live check on a real `--save-to-wayback`
+      run outside this sandbox before relying on the trigger step.
 6. **Should `evidence[].quote` be renamed/aliased to `exact`, matching
     the W3C Web Annotation Data Model's `TextQuoteSelector`?** Same
     concept, independently arrived at. Interoperability benefit is real
@@ -448,3 +510,4 @@ is a build artifact.
 - Robust Links specification (Memento project): https://mementoweb.org/robustlinks/spec/
 - Hypothes.is fuzzy anchoring: https://web.hypothes.is/blog/fuzzy-anchoring/
 - Perma.cc documentation: https://perma.cc/docs/perma-link-creation
+- Wayback Machine Availability API: https://archive.org/help/wayback_api.php
