@@ -254,6 +254,45 @@ enable mechanical verification.
 - **2026-08-12:** Added fuzzy-diff `closest_match_hint()` diagnostic
   for MISMATCH events (Hypothes.is-inspired, diagnostic-only).
 
+---
+
+## Appendix D: Promoting this to upstream CSL-JSON (not yet — how-to for later)
+
+Idea raised 2026-08-12: propose `evidence`, `archive`/`archive_location`,
+etc. as an actual CSL-JSON extension upstream, not just a convention
+DOD's own tooling happens to produce. Checked what that would actually
+take; recording it here rather than acting on it now.
+
+**Where this format stands today:** not schema-valid. The official CSL-JSON
+JSON Schema (https://github.com/citation-style-language/schema) sets
+`"additionalProperties": false` on item objects, so `evidence` and every
+DOD extension field are technically invalid against it. This doesn't
+break real-world use — Pandoc's citeproc and Zotero don't run strict
+schema validation at parse time, they just read known fields and ignore
+the rest, which is why the Pandoc round-trip claim above still holds.
+Also worth knowing: the schema repo describes itself as "not yet fully
+normative," so even upstream doesn't treat it as a closed, final contract.
+
+**The actual contribution path**, per the repo's `CONTRIBUTING.md`:
+1. File an issue first, following their issue template — enough detail
+   that maintainers can see "what you are requesting, how broad the need
+   is, and what implementation options there are." Not a PR-first project.
+2. Community discussion venue: https://discourse.citationstyles.org/
+   — worth raising it there too, not just as a GitHub issue.
+3. A schema change PR has to update the JSON Schema *and* the mirrored
+   RNC (Relax NG Compact) files together — they're kept in sync by
+   convention, not just the JSON one.
+
+**Why not now:** the field set has been substantively reworked multiple
+times in a single day as of this writing (paragraph-only context →
+prefix/suffix → optional-fields bag; `status` added; archive fields
+added — see Appendix C). Walking into an external project's tracker with
+names that might change again next week costs credibility for no real
+gain. Right call is to let it sit through some real-world use first —
+confirm `citations_tool.py --verify` actually round-trips a citations.json
+that DOD's own `citation_export.py` didn't produce — then file the issue
+once the shape has actually stopped moving.
+
 ## References
 
 - CSL-JSON schema: https://github.com/citation-style-language/schema
@@ -264,3 +303,5 @@ enable mechanical verification.
 - Robust Links specification: https://mementoweb.org/robustlinks/spec/
 - Hypothes.is fuzzy anchoring: https://web.hypothes.is/blog/fuzzy-anchoring/
 - Perma.cc documentation: https://perma.cc/docs/perma-link-creation
+- CSL-JSON schema CONTRIBUTING guide: https://github.com/citation-style-language/schema/blob/master/CONTRIBUTING.md
+- CSL discussion forum: https://discourse.citationstyles.org/
