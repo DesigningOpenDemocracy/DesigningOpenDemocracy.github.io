@@ -27,12 +27,11 @@ events:
 - date: '2023-01-01'
   title: Established in Adelaide as an incorporated association
   url: https://cafsa.org.au/cafsa/
-  note: CAfSA incorporated in Adelaide to advocate for the use of citizens' assemblies
-    in South Australian public policy making
-  proof_level: medium
-  url_checked: '2026-08-10'
+  quote: Citizen Assemblies for SA (CAfSA) was founded in Adelaide in 2023 and is
+    an incorporated association advocating for the use of CAs in public policy making.
+  proof_level: high
+  url_checked: '2026-08-12'
   notable: true
-  proof_warning: true
 activity:
   rss:
     checked: 2026-08-09

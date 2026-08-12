@@ -28,8 +28,13 @@ events:
   title: Launched as a joint project of the Human Rights Law Centre, Australian Conservation
     Foundation and ACOSS
   url: https://raisely-images.imgix.net/australian-democracy-network/uploads/adn-annual-report-23-pdf-531f03.pdf
+  note: 'PDF confirms verbatim: "ADN launched in February 2020 as a joint project
+    of the Human Rights Law Centre, Australian Conservation Foundation and Australian
+    Council of Social Service." Recorded as note: not quote: — check_fragments.py
+    can''t currently parse PDF content (it decodes the raw bytes as if they were HTML),
+    so a quote: here would falsely MISMATCH the next time the cache clears.'
   proof_level: medium
-  url_checked: '2026-08-10'
+  url_checked: '2026-08-12'
   notable: true
   proof_warning: true
 activity:
