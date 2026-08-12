@@ -77,8 +77,8 @@ Join also reaches further than vTaiwan ever did — an older, less tech-savvy pu
 - [vTaiwan](vtaiwan.md)
 - [g0v](g0v.md)
 
-[^amcham]: ["Make Full Use of Join.gov.tw"](https://topics.amcham.com.tw/2017/02/make-full-use-of-join-gov-tw/), AmCham Taiwan / Taiwan Business TOPICS, 2017.
+[^amcham]: "a well-designed online portal called Join to facilitate two-way communication between government offices and members of the public on regulatory matters." ["Make Full Use of Join.gov.tw"](https://topics.amcham.com.tw/2017/02/make-full-use-of-join-gov-tw/), AmCham Taiwan / Taiwan Business TOPICS, 2017.
 
-[^bertelsmann]: ["Trailblazers of digital participation: Taiwan's Join platform and vTaiwan"](https://www.bertelsmann-stiftung.de/en/our-projects/democracy-and-participation-in-europe/shortcut-archive/shortcut-8-trailblazers-of-digital-participation-taiwans-join-platform-and-vtaiwan), Bertelsmann Stiftung.
+[^bertelsmann]: "The Join platform is a government-run participation hub that is most notable for its petitioning function but also offers several feedback and discussion options." ["Trailblazers of digital participation: Taiwan's Join platform and vTaiwan"](https://www.bertelsmann-stiftung.de/en/our-projects/democracy-and-participation-in-europe/shortcut-archive/shortcut-8-trailblazers-of-digital-participation-taiwans-join-platform-and-vtaiwan), Bertelsmann Stiftung.
 
 [^vtaiwan-blog]: DOD, ["Occupy to Plurality: what the 2010s civic-tech wave built, and where it stalled"](../../blog/posts/2026-08-07-civic-tech-wave-2010s.md), citing the [vTaiwan org page](vtaiwan.md)'s "What came after" section.

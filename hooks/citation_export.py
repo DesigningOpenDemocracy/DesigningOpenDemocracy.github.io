@@ -20,7 +20,10 @@ import glob
 import hashlib
 import json
 import os
-import re
+import sys
+
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "util"))
+from text_fragment import iter_footnote_citations  # noqa: E402
 
 try:
     import frontmatter
@@ -32,29 +35,17 @@ CACHE_PATH = os.path.join(os.path.dirname(__file__), "..", "docs", "data", "even
 OUT_PATH = os.path.join(DOCS_DIR, "data", "citations.json")
 VERIFIED_BY = "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
 
-FOOTNOTE_RE = re.compile(r"^\[\^([^\]]+)\]:\s*(.*)$")
-QUOTED_RE = re.compile(r'["\u201c](.+?)["\u201d]')
-MD_LINK_RE = re.compile(r"\[([^\]]*)\]\(([^)]+)\)")
-
 
 def _extract_footnote_urls(markdown):
-    """Yield (url, title, quote) from footnotes. Skips footnotes whose
-    quoted text sits inside markdown link syntax (page-title citation
-    style) — those are not verbatim excerpts."""
-    for line in markdown.split("\n"):
-        mf = FOOTNOTE_RE.match(line)
-        if not mf:
-            continue
-        label, text = mf.group(1), mf.group(2)
-        stripped = MD_LINK_RE.sub("", text)
-        qm = QUOTED_RE.search(stripped)
-        lm = MD_LINK_RE.search(text)
-        if not qm or not lm:
-            continue
-        url = lm.group(2)
-        if not url.startswith(("http://", "https://")):
-            continue
-        yield url, lm.group(1), qm.group(1)
+    """Yield (url, title, quote) from footnotes that qualify for the
+    machine-verifiable quote convention. See text_fragment.py's
+    footnote_citation() for the exactly-one-citation eligibility rule —
+    a footnote citing more than one source is skipped entirely rather
+    than guessing which quote supports which URL (a prior version here
+    took only the *first* URL in a multi-citation footnote, silently
+    dropping any others from the export)."""
+    for label, url, title, quote in iter_footnote_citations(markdown):
+        yield url, title, quote
 
 
 def _collect_items():
@@ -127,6 +118,12 @@ def on_pre_build(config):
             cite["accessed"] = {"date-parts": [parts]}
         if entry.get("content_hash"):
             cite["content-sha256"] = entry["content_hash"]
+        if entry.get("archive_url"):
+            # Standard CSL-JSON variables — see "What we already have" in
+            # internal-heartbeat/machine-verifiable-citation.md. Populated
+            # from util/check_fragments.py --save-to-wayback's cache write.
+            cite["archive"] = "Internet Archive Wayback Machine"
+            cite["archive_location"] = entry["archive_url"]
 
         cite["evidence"] = []
         for quote in sorted(set(group["quotes"])):

@@ -12,7 +12,10 @@ Verifies two sources of evidence through the same pipeline:
 2. Footnote quotes — from prose footnote citations in org pages, blog
    posts, and concept pages. A footnote that carries a verbatim quoted
    excerpt (per the CLAUDE.md "Prose footnote citations" convention) is
-   checked against its cited page using the same text_contains() logic.
+   checked against its cited page using the same quote_matches() logic
+   (see text_fragment.py) — including its '...' elision handling, so a
+   quote like "X... Y" verifies correctly instead of always mismatching
+   on the literal ellipsis that never appears on a real page.
 
 Both sources share the same cache, fetch machinery, and reporting.
 
@@ -56,7 +59,10 @@ except ImportError as e:
     sys.exit(1)
 
 sys.path.insert(0, os.path.dirname(__file__))
-from text_fragment import count_occurrences, normalize_ws  # noqa: E402
+from text_fragment import (  # noqa: E402
+    closest_match_hint, count_occurrences, find_span, iter_footnote_citations, normalize_ws,
+    quote_matches,
+)
 
 DOCS_DIR = os.path.join(os.path.dirname(__file__), "..", "docs")
 ORG_DIR = os.path.join(DOCS_DIR, "organisations")
@@ -76,10 +82,6 @@ BLOCK_PATTERN = re.compile(
     re.IGNORECASE
 )
 PARAGRAPH_DELIM = "\x00P\x00"
-
-FOOTNOTE_RE = re.compile(r"^\[\^([^\]]+)\]:\s*(.*)$")
-QUOTED_RE = re.compile(r'["\u201c](.+?)["\u201d]')
-MD_LINK_RE = re.compile(r"\[([^\]]*)\]\(([^)]+)\)")
 
 
 def load_cache():
@@ -102,26 +104,29 @@ def sha256(text):
     return hashlib.sha256(text.encode("utf-8", errors="replace")).hexdigest()
 
 
-def text_contains(text, needle):
-    if not text or not needle:
-        return False
-    return normalize_ws(needle) in normalize_ws(text)
-
-
 def paragraph_hash(text, quote):
     """Hash the paragraph containing the quote, bounded by \n\n
     paragraph delimiters. Returns the SHA256 hex digest, or None if
-    the quote cannot be located in the text."""
+    the quote cannot be located in the text.
+
+    Uses find_span() to locate the quote directly in `text`'s own
+    coordinates, rather than searching a separately-normalized copy and
+    reusing that offset here — mixing the two used to drift by one
+    character per paragraph break preceding the quote (normalize_ws()
+    shrinks each "\\n\\n" to a single space), landing this function in
+    the wrong paragraph — sometimes one that doesn't even contain the
+    quote — on any page with enough short paragraphs before the cited
+    sentence. See internal-heartbeat/machine-verifiable-citation.md's
+    "Known issues" note for the reproduction.
+    """
     if not text or not quote:
         return None
-    norm_text = normalize_ws(text)
-    norm_quote = normalize_ws(quote)
-    idx = norm_text.find(norm_quote)
-    if idx == -1:
+    span = find_span(text, quote)
+    if span is None:
         return None
-    # Find paragraph boundaries
-    before = text.rfind("\n\n", 0, max(0, idx - 1))
-    after = text.find("\n\n", idx + len(norm_quote))
+    idx, end_idx = span
+    before = text.rfind("\n\n", 0, idx)
+    after = text.find("\n\n", end_idx)
     para_start = before + 2 if before != -1 else 0
     para_end = after if after != -1 else len(text)
     para_text = text[para_start:para_end]
@@ -214,13 +219,23 @@ def check_evidence(url, evidence, cache, use_cache=True):
     to multiple megabytes when it was tried; hashes and booleans are all
     that's actually needed to skip redundant work).
 
-    Returns (result, unchanged, error, ambiguous) where result is
+    Returns (result, unchanged, error, ambiguous, hint) where result is
     "good"/"bad"/None, unchanged is True if this was answered from cache
     without a fetch that could reveal new content (i.e. a real 304, not
-    just "first look"), and ambiguous is True if the evidence text occurs
+    just "first look"), ambiguous is True if the evidence text occurs
     more than once on a freshly-fetched page (only known when a fetch
     actually happened — a cache hit reports ambiguous=False rather than
-    re-deriving it, since the cache doesn't retain page text).
+    re-deriving it, since the cache doesn't retain page text), and hint
+    is a (passage, ratio) fuzzy-diff diagnostic (see
+    text_fragment.closest_match_hint()) when result is "bad" and a fetch
+    actually happened, else None. hint is diagnostic only — it never
+    changes result.
+
+    Any existing archive_url/archive_checked fields on the cache entry
+    are preserved across a fresh-fetch write — this function only owns
+    the fetch-verification fields (etag/last_modified/content_hash/
+    verified/checked); --save-to-wayback owns the archive fields and
+    writes them separately in main().
     """
     entry = cache.get(url, {}) if use_cache else {}
     ev_key = sha256(normalize_ws(evidence))
@@ -236,7 +251,7 @@ def check_evidence(url, evidence, cache, use_cache=True):
     time.sleep(FETCH_DELAY)
     text, resp, error = _fetch_page_text(url, headers)
     if error:
-        return None, False, error, False
+        return None, False, error, False, None
 
     if text is None:
         # 304 — server confirms unchanged. If we've already verified this
@@ -248,17 +263,19 @@ def check_evidence(url, evidence, cache, use_cache=True):
         cached_result = entry.get("verified", {}).get(ev_key)
         if cached_result is not None:
             cache[url] = {**entry, "checked": date.today().isoformat()}
-            return ("good" if cached_result else "bad"), True, None, False
+            return ("good" if cached_result else "bad"), True, None, False, None
         time.sleep(FETCH_DELAY)
         text, resp, error = _fetch_page_text(url, {"User-Agent": USER_AGENT})
         if error:
-            return None, False, error, False
+            return None, False, error, False, None
 
     new_hash = paragraph_hash(text, evidence) or sha256(text)
     verified = dict(entry.get("verified", {}))
-    result = text_contains(text, evidence)
+    result = quote_matches(text, evidence)
     verified[ev_key] = result
     cache[url] = {
+        **{k: v for k, v in entry.items() if k not in
+           ("etag", "last_modified", "content_hash", "verified", "checked")},
         "etag": resp.headers.get("ETag") if resp is not None and not is_wikipedia else entry.get("etag"),
         "last_modified": resp.headers.get("Last-Modified") if resp is not None and not is_wikipedia else entry.get("last_modified"),
         "content_hash": new_hash,
@@ -266,44 +283,56 @@ def check_evidence(url, evidence, cache, use_cache=True):
         "checked": date.today().isoformat(),
     }
     ambiguous = result and count_occurrences(text, evidence) > 1
-    return ("good" if result else "bad"), False, None, ambiguous
+    hint = None if result else closest_match_hint(text, evidence)
+    return ("good" if result else "bad"), False, None, ambiguous, hint
 
 
 def find_footnote_evidence(path):
-    """Yield (url, quote_text, source_label) from footnote definitions that
-    carry both a verbatim quoted excerpt and a markdown link. Uses the
-    same format as prose footnote citations per CLAUDE.md convention:
-        [^label]: "quoted text," [Title](url), Source.
-    Each URL is paired with its first preceding quoted string."""
+    """Yield (url, quote_text, source_label) for footnote definitions
+    that qualify for the machine-verifiable quote convention — see
+    text_fragment.py's footnote_citation() for the exactly-one-citation
+    eligibility rule and why it exists."""
     rel = os.path.relpath(path, os.path.join(DOCS_DIR, ".."))
     with open(path, encoding="utf-8") as f:
-        for i, line in enumerate(f, start=1):
-            m = FOOTNOTE_RE.match(line)
-            if not m:
-                continue
-            label, text = m.group(1), m.group(2)
-            urls = [(m2.group(2), m2.start()) for m2 in MD_LINK_RE.finditer(text)]
-            quotes = [(m3.group(1), m3.start()) for m3 in QUOTED_RE.finditer(text)]
-            if not urls or not quotes:
-                continue
-            qi = 0
-            for url, upos in urls:
-                quote = quotes[qi][0] if qi < len(quotes) else quotes[0][0]
-                source_label = "".join([rel, ":", str(i), " [^", label, "]"])
-                yield url, quote, source_label
-                qi += 1
+        source = f.read()
+    for i, line in enumerate(source.split("\n"), start=1):
+        for label, url, title, quote in iter_footnote_citations(line):
+            source_label = "".join([rel, ":", str(i), " [^", label, "]"])
+            yield url, quote, source_label
 
 
 def save_to_wayback(url, timeout=30):
-    """Submit a URL to the Wayback Machine's Save Page Now service.
-    Returns True on success, False on failure. Does not raise."""
+    """Best-effort archival, in two steps: (1) trigger a fresh snapshot via
+    Save Page Now, (2) ask the read-only Availability API for a snapshot
+    URL to actually record — the one just triggered if indexing was fast
+    enough, otherwise the most recent existing one. Either way this
+    returns a real, browsable Robust-Links-style fallback URL rather than
+    just a yes/no on whether the trigger request succeeded (the old
+    behavior — a 200 from /save/ doesn't mean a snapshot exists or tells
+    you where to find it, and the trigger endpoint's own redirect chain
+    isn't reliable enough to parse for the snapshot URL directly).
+
+    Returns the snapshot URL (str) on success, None on failure. Never
+    raises — both steps are best-effort and independent; a failed trigger
+    doesn't prevent returning a URL from a snapshot that already existed.
+    """
     try:
-        spn_url = "https://web.archive.org/save/" + url
-        r = requests.get(spn_url, headers={"User-Agent": USER_AGENT},
-                         timeout=timeout, allow_redirects=True)
-        return r.status_code == 200
+        requests.get("https://web.archive.org/save/" + url,
+                     headers={"User-Agent": USER_AGENT}, timeout=timeout)
     except requests.RequestException:
-        return False
+        pass  # trigger is best-effort; the availability check below is what matters
+
+    try:
+        r = requests.get("https://archive.org/wayback/available",
+                         params={"url": url},
+                         headers={"User-Agent": USER_AGENT}, timeout=15)
+        r.raise_for_status()
+        closest = r.json().get("archived_snapshots", {}).get("closest", {})
+        if closest.get("available") and closest.get("url"):
+            return closest["url"]
+    except (requests.RequestException, ValueError):
+        pass
+    return None
 
 
 def collect_evidence(args):
@@ -372,13 +401,19 @@ def main():
                "footnote": {"good": 0, "bad": 0, "errors": 0}}
 
     for url, evidence, source_label, kind in evidence_items:
-        result, unchanged_hit, error, ambiguous = check_evidence(
+        result, unchanged_hit, error, ambiguous, hint = check_evidence(
             url, evidence, cache, use_cache=not args.no_cache
         )
 
         if args.save_to_wayback:
-            if save_to_wayback(url):
+            archive_url = save_to_wayback(url)
+            if archive_url:
                 wayback_saved += 1
+                cache[url] = {
+                    **cache.get(url, {}),
+                    "archive_url": archive_url,
+                    "archive_checked": date.today().isoformat(),
+                }
             else:
                 wayback_failed += 1
             time.sleep(0.5)
@@ -407,6 +442,10 @@ def main():
             print("  MISMATCH  " + source_label)
             print("            evidence: " + evidence[:80])
             print("            url: " + url)
+            if hint:
+                passage, ratio = hint
+                print("            closest match on page ({:.0%} similar): {}".format(
+                    ratio, passage[:120]))
 
     save_cache(cache)
 

@@ -65,4 +65,4 @@ DemocracyNext is a useful reference for understanding the strongest case for sor
 - [Isegoria](../concepts/isegoria.md)
 - [newDemocracy Foundation](newdemocracy.md)
 
-[^demnext]: DemocracyNext, [About](https://www.demnext.org/about).
+[^demnext]: "DemocracyNext is an international research & action institute focused on broadening who has power and enhancing how we make decisions together." [About](https://www.demnext.org/about), DemocracyNext.

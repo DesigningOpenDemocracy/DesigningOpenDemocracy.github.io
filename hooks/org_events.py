@@ -14,11 +14,16 @@ every org for the site-wide calendar page. This hook only concerns a single
 org's own page: it shows both directions (past and future), the aggregator
 only ever shows future.
 
-Also registers the `with_fragment` Jinja filter (via on_env) that
-organisation.html uses to build an event's link href. A #:~:text= fragment
-is derived from quote: at render time here rather than stored in url: —
-see util/text_fragment.py's docstring for why (single source of truth,
-no risk of the two drifting apart).
+Also registers two Jinja filters (via on_env):
+  - `with_fragment` — organisation.html uses this to build an event's link
+    href. A #:~:text= fragment is derived from quote: at render time here
+    rather than stored in url: — see util/text_fragment.py's docstring for
+    why (single source of truth, no risk of the two drifting apart).
+  - `archive_url_for` — looks up a citation url's Wayback Machine snapshot
+    (recorded by `util/check_fragments.py --save-to-wayback`), for
+    rendering an additional Robust-Links-style archive link alongside the
+    normal citation link. Loaded once at env setup, not per-page, since
+    the cache is a single shared file.
 """
 
 import os
@@ -26,7 +31,7 @@ import sys
 from datetime import date
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "util"))
-from text_fragment import with_fragment  # noqa: E402
+from text_fragment import load_archive_urls, with_fragment  # noqa: E402
 
 
 def _parse_date(val):
@@ -66,3 +71,5 @@ def on_page_context(context, page, config, nav):
 
 def on_env(env, config, files):
     env.filters["with_fragment"] = with_fragment
+    archive_urls = load_archive_urls()
+    env.filters["archive_url_for"] = lambda url: archive_urls.get(url)

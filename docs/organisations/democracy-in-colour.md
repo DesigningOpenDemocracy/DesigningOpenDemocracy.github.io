@@ -78,4 +78,4 @@ Democracy in Colour's work is distinct from electoral or procedural reform organ
 - [Representative Democracy](../concepts/representative-democracy.md)
 - [Isegoria](../concepts/isegoria.md)
 
-[^dic]: Democracy in Colour, [About](https://democracyincolour.org/about/).
+[^dic]: "Democracy in Colour is an organisation that advocates for racial justice by identifying the various manifestations of racism in society and providing targeted and strategic interventions that centre the voices and lived experiences of racialised and marginalised communities." [About](https://democracyincolour.org/about/), Democracy in Colour.
