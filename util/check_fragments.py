@@ -104,6 +104,54 @@ def sha256(text):
     return hashlib.sha256(text.encode("utf-8", errors="replace")).hexdigest()
 
 
+def paragraph_text(text, quote):
+    """Return the paragraph containing the quote, bounded by \n\n delimiters,
+    or None if the quote cannot be located. Uses find_span() in text's own
+    coordinates — same logic as paragraph_hash() minus the hashing step."""
+    if not text or not quote:
+        return None
+    span = find_span(text, quote)
+    if span is None:
+        return None
+    idx, end_idx = span
+    before = text.rfind("\n\n", 0, idx)
+    after = text.find("\n\n", end_idx)
+    para_start = before + 2 if before != -1 else 0
+    para_end = after if after != -1 else len(text)
+    return text[para_start:para_end]
+
+
+CONTEXT_TEXT_MAX = 1000   # chars — cap paragraph text at this length
+CONTEXT_SLICE = 150       # chars before and after the quote for prefix/suffix
+
+
+def context_for_quote(text, quote):
+    """Return a context dict with any combination of text, prefix, suffix,
+    and sha256 for a quote confirmed to match the page. Returns None if
+    the quote cannot be located.
+
+    Always includes prefix and suffix (bracketing the quote's position).
+    Includes text (the full containing paragraph) when it fits within
+    CONTEXT_TEXT_MAX chars. sha256 is computed over text if present,
+    otherwise prefix + quote + suffix.
+    """
+    para = paragraph_text(text, quote)
+    if para is None:
+        return None
+    span = find_span(text, quote)
+    idx, end_idx = span
+    prefix_raw = text[max(0, idx - CONTEXT_SLICE):idx]
+    suffix_raw = text[end_idx:end_idx + CONTEXT_SLICE]
+    prefix = normalize_ws(prefix_raw).strip()
+    suffix = normalize_ws(suffix_raw).strip()
+    ctx = {"prefix": prefix, "suffix": suffix}
+    para_norm = normalize_ws(para)
+    if len(para_norm) <= CONTEXT_TEXT_MAX:
+        ctx["text"] = para_norm
+    ctx["sha256"] = sha256(ctx.get("text", prefix + quote + suffix))
+    return ctx
+
+
 def paragraph_hash(text, quote):
     """Hash the paragraph containing the quote, bounded by \n\n
     paragraph delimiters. Returns the SHA256 hex digest, or None if
@@ -273,6 +321,11 @@ def check_evidence(url, evidence, cache, use_cache=True):
     verified = dict(entry.get("verified", {}))
     result = quote_matches(text, evidence)
     verified[ev_key] = result
+    contexts = dict(entry.get("contexts", {}))
+    if result:
+        ctx = context_for_quote(text, evidence)
+        if ctx:
+            contexts[ev_key] = ctx
     cache[url] = {
         **{k: v for k, v in entry.items() if k not in
            ("etag", "last_modified", "content_hash", "verified", "checked")},
@@ -280,6 +333,7 @@ def check_evidence(url, evidence, cache, use_cache=True):
         "last_modified": resp.headers.get("Last-Modified") if resp is not None and not is_wikipedia else entry.get("last_modified"),
         "content_hash": new_hash,
         "verified": verified,
+        "contexts": contexts,
         "checked": date.today().isoformat(),
     }
     ambiguous = result and count_occurrences(text, evidence) > 1

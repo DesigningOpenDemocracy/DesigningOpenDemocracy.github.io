@@ -24,20 +24,23 @@ news_page: https://oporaua.org/en/announce
 events:
 - date: '2004-01-01'
   title: Founded as an independent civil network for election observation and civic
-    participation in Ukraine
-  url: https://uk.wikipedia.org/wiki/ОПОРА_(громадська_організація)
-  proof_level: medium
-  url_checked: '2026-08-10'
+  url: https://en.wikipedia.org/wiki/PORA
+  quote: The group was established in 2004 as only a civic youth organization participation
+    in Ukraine
+  proof_level: high
+  url_checked: '2026-08-12'
   notable: true
-  proof_warning: true
 - date: '2004-11-21'
   title: Deployed 1,000+ observers for Ukraine's presidential election, documenting
-    fraud that triggered the Orange Revolution
-  url: https://uk.wikipedia.org/wiki/ОПОРА_(громадська_організація)
-  proof_level: medium
-  url_checked: '2026-08-10'
+  url: https://en.wikipedia.org/wiki/PORA
+  quote: pro-democracy movements such as Pora! had created political networks throughout
+    Ukraine, including 150 groups responsible for spreading information and coordinating
+    election monitoring, 72 regional centers, and 30,000 registered participants.
+    This allowed Pora! to mobilize protesters after widespread reports of electoral
+    fraud. fraud that triggered the Orange Revolution
+  proof_level: high
+  url_checked: '2026-08-12'
   notable: true
-  proof_warning: true
 activity:
   dod:
     checked: 2026-06-29

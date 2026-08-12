@@ -27,18 +27,22 @@ location:
 events:
 - date: '2020-01-01'
   title: Organisation established — begins running deliberative minipublics in Brazil
-  url: https://deliberabrasil.org/
-  note: Site describes in-house assembly method, design through to delivery
-  proof_level: medium
-  url_checked: '2026-08-10'
+  url: https://deliberabrasil.org/sobre/
+  quote: O Coletivo Delibera Brasil é uma organização sem fins lucrativos e suprapartidária
+    que objetiva contribuir para o fortalecimento e aprofundamento da democracia brasileira,
+    promovendo a Deliberação Cidadã, principalmente a partir de uma metodologia de
+    ação conhecida como Minipúblico.
+  proof_level: high
+  url_checked: '2026-08-12'
   notable: true
 - date: '2021-01-01'
   title: Climate Assemblies of Pará launched — citizen deliberation in the Amazon
     on climate policy
   url: https://deliberabrasil.org/
-  note: Site lists 'Assembleias Climáticas do Pará' as a current project
-  proof_level: medium
-  url_checked: '2026-08-10'
+  quote: 'Primeira Assembleia Cidadã sobre o Clima em Cidades Amazônicas: Bujaru.
+    O município selecionado foi Bujaru, no Pará.'
+  proof_level: high
+  url_checked: '2026-08-12'
   notable: true
 - date: '2025-01-01'
   title: Assembleias Cidadãs de Moçambique — climate resilience assemblies launched

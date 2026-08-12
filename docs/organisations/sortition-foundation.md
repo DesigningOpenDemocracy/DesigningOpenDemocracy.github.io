@@ -38,13 +38,10 @@ events:
 - date: '2017-03-04'
   title: Incorporated as a UK company
   url: https://www.sortitionfoundation.org/history
-  note: Org's own history page states the Sortition Foundation registered as a member-run,
-    not-for-profit company limited by guarantee in the UK on 4 March 2017. The Companies
-    House registry page previously cited here is a JS-rendered search app — a plain
-    fetch returns only its search-widget template, not the actual company record,
-    so it couldn't mechanically support this date.
-  proof_level: medium
-  url_checked: '2026-08-10'
+  quote: on 4 March 2017 we registered as a member-run, not-for-profit company limited
+    by guarantee in the UK.
+  proof_level: high
+  url_checked: '2026-08-12'
   notable: true
 activity:
   manual:

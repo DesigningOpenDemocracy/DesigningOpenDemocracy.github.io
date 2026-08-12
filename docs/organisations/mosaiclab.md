@@ -25,12 +25,15 @@ location:
 events:
 - date: '2014-01-01'
   title: First citizens' jury — City of Melbourne 10-Year Financial Plan; Nicholas
-    Gruen attends as observer
-  url: https://mosaiclab.com.au/news-all-posts/2016/8/16/meet-a-co-founder-kimbra-white
-  proof_level: medium
-  url_checked: '2026-08-10'
+  url: https://www.mosaiclab.com.au/case-study-1-participatory-budgeting
+  quote: City of Melbourne decided to seek the advice of its community by way of a
+    43 member People's Panel. The panel was a random stratified selection of people
+    that was recruited by the newDemocracy Foundation, and included business and residential
+    participants. The Panel met over five and a half days and was facilitated by MosiacLab
+    founders Nicole Hunter, Kimbra White and Keith Greaves. Gruen attends as observer
+  proof_level: high
+  url_checked: '2026-08-12'
   notable: true
-  proof_warning: true
 - date: '2015-01-01'
   title: City of Melbourne Urban Forest Strategy wins IAP2 Australasian Environment
     Project of the Year

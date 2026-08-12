@@ -13,13 +13,31 @@
         ]
       ]
     },
-    "content-sha256": "12b5a77f6dedb7265afbe3d053e63767591152b0e8de93d70685f4b501d82b93",
     "evidence": [
       {
         "type": "quote-match",
         "quote": "The Association for Democratic Reforms (ADR) was established in 1999 by a group of professors from the Indian Institute of Management (IIM) Ahmedabad.",
+        "status": "MATCH",
         "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)",
+        "context": {
+          "prefix": "प्रजा ही प्रभु है! Citizens are the masters in a democracy! History",
+          "sha256": "12b5a77f6dedb7265afbe3d053e63767591152b0e8de93d70685f4b501d82b93",
+          "suffix": "In 1999, Public Interest Litigation (PIL) was filed by them with Delhi High Court asking for [or requesting] the disclosure of the criminal, financia",
+          "text": "The Association for Democratic Reforms (ADR) was established in 1999 by a group of professors from the Indian Institute of Management (IIM) Ahmedabad. In 1999, Public Interest Litigation (PIL) was filed by them with Delhi High Court asking for [or requesting] the disclosure of the criminal, financial and educational background of the candidates contesting elections. Based on this, the Supreme Court in 2002 , and subsequently in 2003, made it mandatory for all candidates contesting elections to disclose criminal, financial and educational background prior to the polls by filing an affidavit with the Election Commission."
+        }
+      }
+    ]
+  },
+  {
+    "id": "43eea8ef",
+    "type": "webpage",
+    "URL": "https://australiainstitute.org.au/events/climate-integrity-summit/",
+    "title": "Climate Integrity Summit 2026 — global leaders, economists and advocates on Australia's fossil fuel exit, Parliament of NSW Sydney",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "The Climate Integrity Summit convenes leading experts in economics, ecology, policy and governance to discuss a credible and achievable climate policy that serves the Australian people and the broader global community."
       }
     ]
   },
@@ -28,22 +46,10 @@
     "type": "webpage",
     "URL": "https://australiainstitute.org.au/events/dr-hugh-saddler-memorial-lecture/",
     "title": "Dr Hugh Saddler Memorial Lecture 2026 — Shane Rattenbury on how the ACT turned climate ambition into action, National Film and Sound Archive ACT",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "2a61f7e5ce24a09c44d3f1f09ecddf3f0811b6d44011d979633ad82d79e3c83a",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "Join us at the 2026 Dr Hugh Saddler Memorial Lecture, featuring former ACT Minister, Greens Leader, and long‑serving parliamentarian Shane Rattenbury.",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "Join us at the 2026 Dr Hugh Saddler Memorial Lecture, featuring former ACT Minister, Greens Leader, and long‑serving parliamentarian Shane Rattenbury."
       }
     ]
   },
@@ -78,32 +84,42 @@
     ]
   },
   {
+    "id": "cd7d64b7",
+    "type": "webpage",
+    "URL": "https://canberra-alliance.org.au/event/a-citizens-assembly-for-the-act/",
+    "title": "A Citizens' Assembly for the ACT — three-year project to build momentum for a trial of citizen input to ACT government",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "The ACT Standing Citizens' Assembly (SCA) is a three-year project to build momentum for a trial of well facilitated input from Canberrans to government in the ACT."
+      }
+    ]
+  },
+  {
+    "id": "80f12694",
+    "type": "webpage",
+    "URL": "https://canberra-alliance.org.au/event/expanding-the-act-assembly-is-it-time/",
+    "title": "Do more MLAs make for better government? — Re-imagining Governance for the ACT public event, Irish Club Weston",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Event 3 Re-imagining Governance for the ACT — Expanding the ACT Assembly for better government – hosted by CAPaD & Active Democracy Bean"
+      }
+    ]
+  },
+  {
     "id": "8e983ae1",
     "type": "webpage",
     "URL": "https://canberra-alliance.org.au/events/",
     "title": "2026 CAPaD AGM — Annual General Meeting, online via Zoom",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "2ee5213dfc060abdf48a43fe16b3969e60f1bbf548bfc1036bc470be4547590f",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "2026 CAPaD AGM",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "2026 CAPaD AGM"
       },
       {
         "type": "quote-match",
-        "quote": "Community Assembly – following up our MP asks for 2026",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "Community Assembly – following up our MP asks for 2026"
       }
     ]
   },
@@ -112,22 +128,10 @@
     "type": "webpage",
     "URL": "https://civichive.org/about-us/",
     "title": "Founded in Lagos as a civic-tech fellowship and innovation hub for West Africa",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "aee7e1dc3880e8ec6b1c12e3c9c5fe4c6c50ef9e9673b5c2a409de2b9ebfafa1",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "Founded in 2017 as the innovation centre of BudgIT",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "Founded in 2017 as the innovation centre of BudgIT"
       }
     ]
   },
@@ -136,22 +140,10 @@
     "type": "webpage",
     "URL": "https://civictech.africa/about-ctin",
     "title": "Launched at Wits University's Tshimologong Precinct as Africa's civic tech community of practice",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "74ae83bfa42253f65e7cfb42d5de7ad8dd8030366ec6dc44063bce6e59e827e5",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "CTIN was launched in 2017 as a learning network.",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "CTIN was launched in 2017 as a learning network."
       }
     ]
   },
@@ -165,17 +157,23 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
-    "content-sha256": "07ce94ed3e6961d650dc0b94334a88be014c06184000639fde83467b3d5e0238",
     "evidence": [
       {
         "type": "quote-match",
         "quote": "The Civic Tech Field Guide is the world's most complete collection of projects, tools, and organizations using tech for democracy.",
-        "last-verified": "2026-08-11",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "status": "MATCH",
+        "last-verified": "2026-08-12",
+        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)",
+        "context": {
+          "prefix": "endar Map Build 🇺🇸 EN Submit Project Civic Tech Field Guide About the Field Guide Welcome",
+          "sha256": "07ce94ed3e6961d650dc0b94334a88be014c06184000639fde83467b3d5e0238",
+          "suffix": "It's primarily a crowdsourced directory where you can find helpful resources and inspiration, and share your own work with the world. We also publish",
+          "text": "The Civic Tech Field Guide is the world's most complete collection of projects, tools, and organizations using tech for democracy. It's primarily a crowdsourced directory where you can find helpful resources and inspiration, and share your own work with the world. We also publish research and regular updates about the state of the field."
+        }
       }
     ]
   },
@@ -184,22 +182,10 @@
     "type": "webpage",
     "URL": "https://congresovisible.uniandes.edu.co/quesomos",
     "title": "Launched at Universidad de los Andes as Colombia's first legislative transparency platform",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "0afed153ef4cf5e7c8889335e5ed34f055042539e7bf92474130666affa6b37a",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "Desde 1998, el proyecto Congreso Visible del Departamento de Ciencia Política",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "Desde 1998, el proyecto Congreso Visible del Departamento de Ciencia Política"
       }
     ]
   },
@@ -234,14 +220,56 @@
     ]
   },
   {
+    "id": "7d18fede",
+    "type": "webpage",
+    "URL": "https://deliberabrasil.org/",
+    "title": "Climate Assemblies of Pará launched — citizen deliberation in the Amazon on climate policy",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Primeira Assembleia Cidadã sobre o Clima em Cidades Amazônicas: Bujaru. O município selecionado foi Bujaru, no Pará."
+      }
+    ]
+  },
+  {
+    "id": "2e6c238f",
+    "type": "webpage",
+    "URL": "https://deliberabrasil.org/sobre/",
+    "title": "Organisation established — begins running deliberative minipublics in Brazil",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "O Coletivo Delibera Brasil é uma organização sem fins lucrativos e suprapartidária que objetiva contribuir para o fortalecimento e aprofundamento da democracia brasileira, promovendo a Deliberação Cidadã, principalmente a partir de uma metodologia de ação conhecida como Minipúblico."
+      }
+    ]
+  },
+  {
     "id": "05d3a280",
     "type": "webpage",
     "URL": "https://democracy-technologies.org/participation/consensus-building-in-taiwan/",
     "title": "\"Consensus Building in Taiwan, the Poster Child of Digital Democracy\"",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          12
+        ]
+      ]
+    },
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "it has transformed how the government brings stakeholders together, allowing for a more inclusive approach to legislation."
+        "quote": "it has transformed how the government brings stakeholders together, allowing for a more inclusive approach to legislation.",
+        "status": "MATCH",
+        "last-verified": "2026-08-12",
+        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)",
+        "context": {
+          "prefix": "Taiwan is a world-leader in digital democracy. It all started with vTaiwan, an online participation platform powered by Polis. Launched in 2015,",
+          "sha256": "640700c8d55ff5c4c7db97b39b78ebafa5f3de60e5ef2550497d23e9973bfa0b",
+          "suffix": "Â A demonstration by the Sunflower Movement in Tapei, 2014. The vTaiwan platform was developed in the wake of the protests.",
+          "text": "Taiwan is a world-leader in digital democracy. It all started with vTaiwan, an online participation platform powered by Polis. Launched in 2015, it has transformed how the government brings stakeholders together, allowing for a more inclusive approach to legislation.Â"
+        }
       }
     ]
   },
@@ -250,10 +278,28 @@
     "type": "webpage",
     "URL": "https://democracyincolour.org/about/",
     "title": "About",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          12
+        ]
+      ]
+    },
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "Democracy in Colour is an organisation that advocates for racial justice by identifying the various manifestations of racism in society and providing targeted and strategic interventions that centre the voices and lived experiences of racialised and marginalised communities."
+        "quote": "Democracy in Colour is an organisation that advocates for racial justice by identifying the various manifestations of racism in society and providing targeted and strategic interventions that centre the voices and lived experiences of racialised and marginalised communities.",
+        "status": "MATCH",
+        "last-verified": "2026-08-12",
+        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)",
+        "context": {
+          "prefix": "About Us Who We Are",
+          "sha256": "32dadf29e415818d14066f068f18e7f2bb2443683fdac35fbd9372223bd7f932",
+          "suffix": "The work we do is built upon a rich legacy of community organising, personal sacrifices and collective wins of the anti-racism movement across the wo",
+          "text": "Democracy in Colour is an organisation that advocates for racial justice by identifying the various manifestations of racism in society and providing targeted and strategic interventions that centre the voices and lived experiences of racialised and marginalised communities. The work we do is built upon a rich legacy of community organising, personal sacrifices and collective wins of the anti-racism movement across the world."
+        }
       }
     ]
   },
@@ -286,22 +332,22 @@
     "type": "webpage",
     "URL": "https://en.idi.org.il/articles/47344",
     "title": "Published the first Israeli Democracy Index — an annual survey tracking democratic attitudes in Israel",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "98aab4fa917b6c7ff72608084c79d6545ff3cf35c233082439ed3ab9ef01d737",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "The Democracy Index, IDI’s annual flagship publication celebrating its twentieth anniversary",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "The Democracy Index, IDI’s annual flagship publication celebrating its twentieth anniversary"
+      }
+    ]
+  },
+  {
+    "id": "bf752459",
+    "type": "webpage",
+    "URL": "https://en.wikipedia.org/wiki/Anne_Twomey_(academic)",
+    "title": "Anne Twomey starts the Constitutional Clarion YouTube channel",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "In 2022, Twomey started the Constitutional Clarion YouTube channel, where she publishes her work for a more general audience."
       }
     ]
   },
@@ -310,22 +356,10 @@
     "type": "webpage",
     "URL": "https://en.wikipedia.org/wiki/Anti-Corruption_Foundation",
     "title": "Founded by Alexei Navalny as the Anti-Corruption Foundation to investigate official corruption in Russia",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "a8e4becb59b91507cdcd5157ce9c1438c7e39f1cd7b2fbcf51592cd2e1bfe4a3",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "FBK was founded by Alexei Navalny",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "FBK was founded by Alexei Navalny"
       }
     ]
   },
@@ -339,17 +373,22 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
-    "content-sha256": "0504df7b59e8f81954f4f0fa76cdd9cf6aafa6bd55eeb3cc423698cbb0019424",
     "evidence": [
       {
         "type": "quote-match",
         "quote": "Beginning on 15 May 2011,",
-        "last-verified": "2026-08-11",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "status": "MATCH",
+        "last-verified": "2026-08-12",
+        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)",
+        "context": {
+          "prefix": "of protests, demonstrations, and occupations against austerity policies in Spain that began around the local and regional elections of 2011 and 2012.",
+          "sha256": "f1faba92cca383a6b379a5d2ccc27de9720baebac606e4f04b328e75721954d8",
+          "suffix": "many of the subsequent demonstrations spread through various social networks such as Real Democracy NOW (Spanish: Democracia Real YA) and Youth Witho"
+        }
       }
     ]
   },
@@ -358,22 +397,10 @@
     "type": "webpage",
     "URL": "https://en.wikipedia.org/wiki/Archon_Fung",
     "title": "Launched by Archon Fung (Harvard) and Mark Warren (UBC) as a crowdsourced wiki platform for democratic innovations",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "5f0634fa93590b83783bf6dc7d916367486409066a940bcb0868a1c8a9c6473c",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "In September 2009, Fung launched Participedia, a website developed with Mark Warren of the University of British Columbia, aimed at strengthening democracy with its user-generated library of examples and methods of participatory governance",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "In September 2009, Fung launched Participedia, a website developed with Mark Warren of the University of British Columbia, aimed at strengthening democracy with its user-generated library of examples and methods of participatory governance"
       }
     ]
   },
@@ -382,34 +409,18 @@
     "type": "webpage",
     "URL": "https://en.wikipedia.org/wiki/Australian_Democrats",
     "title": "Founded by Don Chipp, emerging from the Liberal Party split, running on 'keeping the bastards honest'",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "e5006e01c0a20514a01c3cce9b0acdd3ac8cd049fee7d34448f7ea56cec28ba7",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "At the 1980 election, this increased to five seats",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "At the 1980 election, this increased to five seats"
       },
       {
         "type": "quote-match",
-        "quote": "The Democrats' inaugural leader was Don Chipp",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "The Democrats' inaugural leader was Don Chipp"
       },
       {
         "type": "quote-match",
-        "quote": "the 1990 federal election heralded something of a rebirth",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "the 1990 federal election heralded something of a rebirth"
       }
     ]
   },
@@ -418,34 +429,18 @@
     "type": "webpage",
     "URL": "https://en.wikipedia.org/wiki/Bersih",
     "title": "Coalition formed by opposition parties and civil society groups demanding free and fair elections in Malaysia",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "f2bffa60155e6a64ac8d1faaef65dcf5ae6bdfba5314b26d8af526e6ee8eac11",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "9 July 2011 ranged from 10,000 to 50,000",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "9 July 2011 ranged from 10,000 to 50,000"
       },
       {
         "type": "quote-match",
-        "quote": "officially formed on 23 November 2006",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "officially formed on 23 November 2006"
       },
       {
         "type": "quote-match",
-        "quote": "rally with 10,000 to 40,000 turnout",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "rally with 10,000 to 40,000 turnout"
       }
     ]
   },
@@ -454,22 +449,10 @@
     "type": "webpage",
     "URL": "https://en.wikipedia.org/wiki/Chinese_People%27s_Political_Consultative_Conference",
     "title": "Established as the Chinese People's Political Consultative Conference, the united front and top political advisory body",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "a2c25dccedbccba09e111b7629f3f6820fd5c95ac4e2cdd0ed417e70bfcf1df2",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "The Political Consultative Conference was established in 1945 as part of peace negotiations between the Kuomintang and the CCP.",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "The Political Consultative Conference was established in 1945 as part of peace negotiations between the Kuomintang and the CCP."
       }
     ]
   },
@@ -478,34 +461,18 @@
     "type": "webpage",
     "URL": "https://en.wikipedia.org/wiki/Citizens_Foundation",
     "title": "Founded by Robert Bjarnason and Gunnar Grimsson",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "3f682c8b64c10c5e8610bff72aa1a8d7589f8ebe4cfb9419aa4d7914aa8395c5",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "Shadow Parliament (Skuggaþing) opened formally in February 2010",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "Shadow Parliament (Skuggaþing) opened formally in February 2010"
       },
       {
         "type": "quote-match",
-        "quote": "The Citizens Foundation is a non-profit organization based in Reykjavík, Iceland, and founded under Icelandic law to promote electronic collaborative democracy around the globe and to develop the software needed for that purpose.",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "The Citizens Foundation is a non-profit organization based in Reykjavík, Iceland, and founded under Icelandic law to promote electronic collaborative democracy around the globe and to develop the software needed for that purpose."
       },
       {
         "type": "quote-match",
-        "quote": "on 25 May 2010, the website Shadow City (Skuggaborg) opened",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "on 25 May 2010, the website Shadow City (Skuggaborg) opened"
       }
     ]
   },
@@ -514,22 +481,10 @@
     "type": "webpage",
     "URL": "https://en.wikipedia.org/wiki/Confederation_of_Indigenous_Nationalities_of_Ecuador",
     "title": "Founded to represent Ecuador's Indigenous nationalities, becoming the country's largest Indigenous organisation",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "bede0c9bb305308c177c6beff314390e0e282a2d4a3f546adf2f43b66f574470",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "CONAIE was founded in 1986",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "CONAIE was founded in 1986"
       }
     ]
   },
@@ -538,40 +493,22 @@
     "type": "webpage",
     "URL": "https://en.wikipedia.org/wiki/Decidim",
     "title": "First Decidim server created by 15M activists in Barcelona",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "04d8ae810638f210386b01769841fb8748ad6a4d286880c9fd53ba37db0838ed",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "Decidim provided their first use of participatory budgeting",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "Decidim provided their first use of participatory budgeting"
       },
       {
         "type": "quote-match",
-        "quote": "recognised as satisfying the criteria of the Digital Public Goods Alliance",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "recognised as satisfying the criteria of the Digital Public Goods Alliance"
       },
       {
         "type": "quote-match",
-        "quote": "the community formally established Decidim Association in 2019 and City Council of Barcelona gave control of the Decidim trademark and code base to Decidim Association.",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "the community formally established Decidim Association in 2019 and City Council of Barcelona gave control of the Decidim trademark and code base to Decidim Association."
       },
       {
         "type": "quote-match",
-        "quote": "the server was switched to a similarly inspired, but new software project, Decidim",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "the server was switched to a similarly inspired, but new software project, Decidim"
       }
     ]
   },
@@ -580,22 +517,10 @@
     "type": "webpage",
     "URL": "https://en.wikipedia.org/wiki/Democracy_International_eV",
     "title": "Formally registered as an association, building on a loose network dating back to 2002",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "552b1faa80559c369b2a3f306843e47b50a6e1222a526ea670f8193bd1241fcd",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "formally established in June 2011",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "formally established in June 2011"
       }
     ]
   },
@@ -604,34 +529,18 @@
     "type": "webpage",
     "URL": "https://en.wikipedia.org/wiki/Democracy_in_Europe_Movement_2025",
     "title": "Launched by Yanis Varoufakis and Srećko Horvat as a pan-European progressive movement in Berlin",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "d6bfbbbfe6bbbaca148728f8b4bc720a39af868e55e361a2f79670d0d0ab73d3",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "The movement was officially launched at ceremonial events in 2016",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "The movement was officially launched at ceremonial events in 2016"
       },
       {
         "type": "quote-match",
-        "quote": "established an electoral list for the 2019 European Parliament elections",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "established an electoral list for the 2019 European Parliament elections"
       },
       {
         "type": "quote-match",
-        "quote": "on 23 March in Rome",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "on 23 March in Rome"
       }
     ]
   },
@@ -640,22 +549,10 @@
     "type": "webpage",
     "URL": "https://en.wikipedia.org/wiki/Electoral_Institute_for_Sustainable_Democracy_in_Africa",
     "title": "Founded as the Electoral Institute for Sustainable Democracy in Africa, Johannesburg",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "b601a97f171636b368326b522906f62741cb0b1c62813d67eae59f2ec5717ec6",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "founded in 1996 in Johannesburg",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "founded in 1996 in Johannesburg"
       }
     ]
   },
@@ -664,28 +561,14 @@
     "type": "webpage",
     "URL": "https://en.wikipedia.org/wiki/Electoral_Reform_Society",
     "title": "Founded as the Proportional Representation Society — one of the world's oldest electoral reform organisations",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "cbe8c7fc95d0f199a131795297e81285b85cd57b36ee64cc52700335dd31df3a",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "principal funder of the YES! To Fairer Votes campaign",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "principal funder of the YES! To Fairer Votes campaign"
       },
       {
         "type": "quote-match",
-        "quote": "was founded in January 1884 as the Proportional Representation Society by",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "was founded in January 1884 as the Proportional Representation Society by"
       }
     ]
   },
@@ -693,23 +576,15 @@
     "id": "079cff44",
     "type": "webpage",
     "URL": "https://en.wikipedia.org/wiki/Flux_(political_party)",
-    "title": "Registered as a federal political party, promoting a novel platform of direct digital democracy via app-based voting",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "8165a6bf95538d2064e68a910d8e3ca43c3e24f012ce7342fb5eb90e6ef105c3",
+    "title": "Flux, the party behind DigiPol, deregistered by the AEC — effective end of",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "Flux parties were registered",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "Flux parties were registered"
+      },
+      {
+        "type": "quote-match",
+        "quote": "Flux was registered at a federal level from 2016, but it was de-registered in 2022 for failing to meet the increased requirement of 1500 members. the DigiPol project"
       }
     ]
   },
@@ -718,28 +593,14 @@
     "type": "webpage",
     "URL": "https://en.wikipedia.org/wiki/G0v_movement",
     "title": "First hackathon (Hackath0n) at Academia Sinica — launches the g0v community",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "53374246d21b55f7ccc6e4609a414c26eec3b8ecd7b27b1c95301828dc27057d",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "active g0v communities working on open government data in Taiwan and Hong Kong",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "active g0v communities working on open government data in Taiwan and Hong Kong"
       },
       {
         "type": "quote-match",
-        "quote": "driven by a bimonthly hackathon",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "driven by a bimonthly hackathon"
       }
     ]
   },
@@ -757,11 +618,11 @@
         ]
       ]
     },
-    "content-sha256": "e30a7df50bb9d845fb9b2ec2ec30bcf228765789048ad46bc2823114e9708aed",
     "evidence": [
       {
         "type": "quote-match",
         "quote": "Eric Glen Weyl (born May 6, 1985)... is an American economist at Microsoft Research",
+        "status": "MATCH",
         "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       },
@@ -784,22 +645,10 @@
     "type": "webpage",
     "URL": "https://en.wikipedia.org/wiki/Golos_(election_monitor)",
     "title": "Founded as an independent election monitoring organisation in Russia",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "a8bf09b8195dc71e5e8118f50ce1db1a032fa81451b074c7585e18a2e38a1785",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "GOLOS was founded as an association of non-profit organizations in 2000 to support civil monitoring of elections.",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "GOLOS was founded as an association of non-profit organizations in 2000 to support civil monitoring of elections."
       }
     ]
   },
@@ -808,22 +657,10 @@
     "type": "webpage",
     "URL": "https://en.wikipedia.org/wiki/Goree_Institute",
     "title": "Founded on Gorée Island, Senegal, as a Centre for Democracy, Development and Culture in Africa",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "a506da41baec16ccb33a6edb4bd0994cbf1bec13fa9f398b60d8b66d821fbe42",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "was founded on 25 June 1992",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "was founded on 25 June 1992"
       }
     ]
   },
@@ -856,28 +693,14 @@
     "type": "webpage",
     "URL": "https://en.wikipedia.org/wiki/International_Institute_for_Democracy_and_Electoral_Assistance",
     "title": "Founded in Stockholm as an intergovernmental organisation supporting sustainable democracy worldwide",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "978c70a7875350416aad6a887931799ccf0d9ee59881abf3f3fd23073043cdae",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "The Founding Conference of International IDEA took place on 27–28 February 1995",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "The Founding Conference of International IDEA took place on 27–28 February 1995"
       },
       {
         "type": "quote-match",
-        "quote": "The Global State of Democracy (GSoD) Initiative was launched in 2016",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "The Global State of Democracy (GSoD) Initiative was launched in 2016"
       }
     ]
   },
@@ -886,28 +709,14 @@
     "type": "webpage",
     "URL": "https://en.wikipedia.org/wiki/Internet_Freedom_Foundation",
     "title": "Founded in India on Independence Day to defend digital rights, free expression, and online civil liberties",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "75cc773ecad4497f2b805f78908d379afa09ff0d3747f094d1ad6a0e932d0f61",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "Launched on 15 August 2016",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "Launched on 15 August 2016"
       },
       {
         "type": "quote-match",
-        "quote": "challenges to the IT Rules, 2021",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "challenges to the IT Rules, 2021"
       }
     ]
   },
@@ -916,22 +725,22 @@
     "type": "webpage",
     "URL": "https://en.wikipedia.org/wiki/Israel_Democracy_Institute",
     "title": "Founded as an independent research centre dedicated to strengthening Israeli democracy",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "2cf14a3618bac8540d774dd788952f7800335425e94271a47eac429d28733751",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "was founded in 1991 as a \"center of research and action dedicated to strengthening the foundations of Israeli democracy.\"",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "was founded in 1991 as a \"center of research and action dedicated to strengthening the foundations of Israeli democracy.\""
+      }
+    ]
+  },
+  {
+    "id": "5c1635cc",
+    "type": "webpage",
+    "URL": "https://en.wikipedia.org/wiki/Jan_Fran",
+    "title": "Launched by journalists Antoinette Lattouf and Jan Fran, with flagship podcast",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "In 2025, Fran started a company with Antoinette Lattouf \"Ette Media\". The pair launched a podcast \"We used to be Journos\". \"We Used to Be Journos\" debuting 2 July 2025 on Acast"
       }
     ]
   },
@@ -940,22 +749,10 @@
     "type": "webpage",
     "URL": "https://en.wikipedia.org/wiki/Janaagraha",
     "title": "Founded by Ramesh and Swati Ramanathan to improve urban governance and citizen participation in India",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "ee3f9d718d75ae896e70b03aa73fbf30d31b0b4842241516dbeba367b2770da3",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "Founded in 2001 by Ramesh Ramanathan and Swati Ramanathan",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "Founded in 2001 by Ramesh Ramanathan and Swati Ramanathan"
       }
     ]
   },
@@ -964,22 +761,10 @@
     "type": "webpage",
     "URL": "https://en.wikipedia.org/wiki/Kialo",
     "title": "Founded by Errikos Pitsos as a structured debate and argument-mapping platform",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "12e9507b78c839b9897170b7ef209a5ea45fb3e0d1fa63604c102afd631d5834",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "was founded by German-born entrepreneur and London School of Economics and Political Science graduate Errikos Pitsos",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "was founded by German-born entrepreneur and London School of Economics and Political Science graduate Errikos Pitsos"
       }
     ]
   },
@@ -988,22 +773,10 @@
     "type": "webpage",
     "URL": "https://en.wikipedia.org/wiki/Kongra_Star",
     "title": "Founded as the umbrella women's organisation of the Kurdish democratic confederalist movement in Rojava",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "45536d40c4f30592bbaab66487fe215aeb8b22d4179f6c84babf948670bcd054",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "Kongra Star (Kurdish for Star Congress), founded in 2005",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "Kongra Star (Kurdish for Star Congress), founded in 2005"
       }
     ]
   },
@@ -1012,40 +785,22 @@
     "type": "webpage",
     "URL": "https://en.wikipedia.org/wiki/LiquidFeedback",
     "title": "First published by Public Software Group e.V., developed in response to requests from German Pirate Party members",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "286ec0e1662d402b723fe4054f381f338a07e6b44ee9f29bf6603c6743163776",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "In June 2010, the developers of LiquidFeedback founded Interaktive Demokratie e.V., an independent and non-partisan research institute.",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "In June 2010, the developers of LiquidFeedback founded Interaktive Demokratie e.V., an independent and non-partisan research institute."
       },
       {
         "type": "quote-match",
-        "quote": "The Pirate Party Germany Berlin became the first political party to utilize the platform in January 2010 for a state party conference. LiquidFeedback assisted in the development of new statutes for the branch during this time",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "The Pirate Party Germany Berlin became the first political party to utilize the platform in January 2010 for a state party conference. LiquidFeedback assisted in the development of new statutes for the branch during this time"
       },
       {
         "type": "quote-match",
-        "quote": "The initial implementation of LiquidFeedback for public engagement occurred in Friesland County, Germany, in September 2012.",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "The initial implementation of LiquidFeedback for public engagement occurred in Friesland County, Germany, in September 2012."
       },
       {
         "type": "quote-match",
-        "quote": "The software was first published in October 2009 by Public Software Group e. V. after being suggested by some members of Germany's Pirate Party unsatisfied with conventional means of political opinion formation.",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "The software was first published in October 2009 by Public Software Group e. V. after being suggested by some members of Germany's Pirate Party unsatisfied with conventional means of political opinion formation."
       }
     ]
   },
@@ -1063,11 +818,11 @@
         ]
       ]
     },
-    "content-sha256": "5bbec34580292d81ff038b8e3caafd98d31f234d49f54c1402d7644d65cdbf5e",
     "evidence": [
       {
         "type": "quote-match",
         "quote": "Loomio emerged from the Occupy movement. In 2012, it launched its first prototype,",
+        "status": "MISMATCH",
         "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       },
@@ -1096,46 +851,26 @@
     "type": "webpage",
     "URL": "https://en.wikipedia.org/wiki/Make_It_16_(New_Zealand)",
     "title": "Campaign launched out of New Zealand Youth Parliament",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "511c1d7cb1b58f564fa680c8734a2b8412ae53aa0bcde0b5bbbb85416ebc46aa",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "Court of Appeal of New Zealand ruled that the voting age of 18 was unjustified age discrimination",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "Court of Appeal of New Zealand ruled that the voting age of 18 was unjustified age discrimination"
       },
       {
         "type": "quote-match",
-        "quote": "Supreme Court of New Zealand issued",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "Supreme Court of New Zealand issued"
       },
       {
         "type": "quote-match",
-        "quote": "bill passed its first reading",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "bill passed its first reading"
       },
       {
         "type": "quote-match",
-        "quote": "filed legal action with the High Court of New Zealand",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "filed legal action with the High Court of New Zealand"
       },
       {
         "type": "quote-match",
-        "quote": "was formed out of the New Zealand Youth Parliament",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "was formed out of the New Zealand Youth Parliament"
       }
     ]
   },
@@ -1144,28 +879,14 @@
     "type": "webpage",
     "URL": "https://en.wikipedia.org/wiki/Memorial_(society)",
     "title": "Founded by Andrei Sakharov and others as the first independent human rights organisation in the Soviet Union",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "21419ceb3d6880b1bf236a4ae15395650b9cf8f377bfcc575aac1a8605bf6d21",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "Memorial was one of the three laureates of that year's Nobel Peace Prize",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "Memorial was one of the three laureates of that year's Nobel Peace Prize"
       },
       {
         "type": "quote-match",
-        "quote": "as a \"historical and educational\" society",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "as a \"historical and educational\" society"
       }
     ]
   },
@@ -1179,17 +900,22 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
-    "content-sha256": "e5219cbc361d6b75e77510b4bab7c4cf4919c75776b4d3ede9f04eb2936b5d11",
     "evidence": [
       {
         "type": "quote-match",
         "quote": "Meta-organization is defined as an organization with other organizations as its members. This concept was developed in 2005 by Göran Ahrne and Nils Brunsson.",
-        "last-verified": "2026-08-11",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "status": "MATCH",
+        "last-verified": "2026-08-12",
+        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)",
+        "context": {
+          "prefix": "",
+          "sha256": "e4439d61b8c05cdfcefe974d2123580799ace409a51e68fa6f6c05175f500ffe",
+          "suffix": "They further elaborated and underpinned the concept theoretically in 2008 by focusing on explaining what difference it makes to have organizations as"
+        }
       }
     ]
   },
@@ -1198,22 +924,10 @@
     "type": "webpage",
     "URL": "https://en.wikipedia.org/wiki/Movement_for_Quality_Government_in_Israel",
     "title": "Founded as the Movement for Quality Government in Israel to combat corruption and promote transparency",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "507b7d338732081292fa6a7799d1279ae91b4a89037ee90266b2425ae23f0445",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "was founded in March 1990 by lawyer Eliad Shraga",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "was founded in March 1990 by lawyer Eliad Shraga"
       }
     ]
   },
@@ -1222,22 +936,10 @@
     "type": "webpage",
     "URL": "https://en.wikipedia.org/wiki/Movement_for_a_Democratic_Society",
     "title": "Founded as the Movement for a Democratic Society, the political coalition governing the Autonomous Administration of North and East Syria",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "723407162fd857fad45f78285f40182125f7e4062780cce6fb8f02477a411989",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "is a left-wing umbrella organization in northern Syria founded on 16 January 2011",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "is a left-wing umbrella organization in northern Syria founded on 16 January 2011"
       }
     ]
   },
@@ -1246,34 +948,18 @@
     "type": "webpage",
     "URL": "https://en.wikipedia.org/wiki/MySociety",
     "title": "Founded by Tom Steinberg as a UK civic-tech charity, launching TheyWorkForYou and WriteToThem",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "07c4c122ec71bd90c6cb77c2c9107fdf597d47e5365e9aeb6a874b1ae94912b7",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "TheyWorkForYou is a parliamentary monitoring website which aims to make it easier",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "TheyWorkForYou is a parliamentary monitoring website which aims to make it easier"
       },
       {
         "type": "quote-match",
-        "quote": "WriteToThem is a website which allows UK citizens to contact their elected representatives",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "WriteToThem is a website which allows UK citizens to contact their elected representatives"
       },
       {
         "type": "quote-match",
-        "quote": "mySociety was founded by Tom Steinberg in September 2003",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "mySociety was founded by Tom Steinberg in September 2003"
       }
     ]
   },
@@ -1282,28 +968,26 @@
     "type": "webpage",
     "URL": "https://en.wikipedia.org/wiki/National_Citizens%27_Movement_for_Free_Elections",
     "title": "Founded as the first citizen-led election monitoring organisation in the world, Philippines",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "fa014028e14e0f65543ec15fc143b0cbe9982b6b4cd8bbd70ee7f5e796d5a5bd",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "NAMFREL mobilized 500,000 volunteers nationwide",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "NAMFREL mobilized 500,000 volunteers nationwide"
       },
       {
         "type": "quote-match",
-        "quote": "NAMFREL was formally organized in October 1983",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "NAMFREL was formally organized in October 1983"
+      }
+    ]
+  },
+  {
+    "id": "0bddfd08",
+    "type": "webpage",
+    "URL": "https://en.wikipedia.org/wiki/Nicholas_Gruen",
+    "title": "Founded by economist Nicholas Gruen as an economic consultancy (year-only,",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "In 2000 he founded economic consultancy Lateral Economics sourced from Gruen's own bio)"
       }
     ]
   },
@@ -1317,16 +1001,16 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
-    "content-sha256": "68b2e5a328236f23b0e34b6d94b821a66b8345307a7da6625af82fb59495a078",
     "evidence": [
       {
         "type": "quote-match",
         "quote": "It began in Zuccotti Park... from September 17 to November 15, 2011.",
-        "last-verified": "2026-08-11",
+        "status": "MATCH",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -1336,22 +1020,10 @@
     "type": "webpage",
     "URL": "https://en.wikipedia.org/wiki/OneVoice_Movement",
     "title": "Founded as the Israeli branch of the OneVoice Movement, promoting grassroots civic engagement",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "866112edee37b40b4f5059d96c4c6f4bae03ed6cbdf58434d3f268781b115262",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "The OneVoice Movement was a 501c(3) non-profit organization with offices in New York City, Tel Aviv, Ramallah, and London, founded in 2002 by Daniel Lubetzky",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "The OneVoice Movement was a 501c(3) non-profit organization with offices in New York City, Tel Aviv, Ramallah, and London, founded in 2002 by Daniel Lubetzky"
       }
     ]
   },
@@ -1360,28 +1032,14 @@
     "type": "webpage",
     "URL": "https://en.wikipedia.org/wiki/Online_Direct_Democracy",
     "title": "Founded as \"Senator Online\"; later renamed Online Direct Democracy in 2015",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "fc3e802edce98d7ca9ad9c24c3536c9c52ea3f00fa0574d3afe91fbda5344020",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "Online Direct Democracy – (Empowering the People!) was a registered Australian political party.",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "Online Direct Democracy – (Empowering the People!) was a registered Australian political party."
       },
       {
         "type": "quote-match",
-        "quote": "The party contested the 2007 and 2013 federal elections as Senator Online.",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "The party contested the 2007 and 2013 federal elections as Senator Online."
       }
     ]
   },
@@ -1395,23 +1053,29 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
-    "content-sha256": "17e022c6157463ba6a56fbbc7ad00dabc582ebfc5953c6ca9d6e69e1454030a1",
     "evidence": [
       {
         "type": "quote-match",
         "quote": "It was established in 2009, co-founded by Matthew Landauer and Katherine Szuminska.",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       },
       {
         "type": "quote-match",
         "quote": "They Vote For You, established in 2014, tracks the outcomes of all votes in the House of Representatives and Senate",
-        "last-verified": "2026-08-11",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "status": "MATCH",
+        "last-verified": "2026-08-12",
+        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)",
+        "context": {
+          "prefix": "ows users to submit freedom of information (FOI) requests to government bodies under the Freedom of Information Act 1982. === They Vote For You ===",
+          "sha256": "17e022c6157463ba6a56fbbc7ad00dabc582ebfc5953c6ca9d6e69e1454030a1",
+          "suffix": ". It displays \"voting patterns by politician, when they vote against their own party, and offers descriptions of divisions in plain English\". It recei",
+          "text": "=== They Vote For You === They Vote For You, established in 2014, tracks the outcomes of all votes in the House of Representatives and Senate. It displays \"voting patterns by politician, when they vote against their own party, and offers descriptions of divisions in plain English\". It received start-up funding from Google."
+        }
       }
     ]
   },
@@ -1420,28 +1084,30 @@
     "type": "webpage",
     "URL": "https://en.wikipedia.org/wiki/Open_Society_Foundations",
     "title": "Founded by George Soros to support civil society, human rights, and democratic governance globally",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "94f4db237389fd0671c26de8c3e8f151cb57ce523b9200c96f9d27e9faa3a662",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "George Soros handed over the leadership of the foundation to his son Alexander Soros",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "George Soros handed over the leadership of the foundation to his son Alexander Soros"
       },
       {
         "type": "quote-match",
-        "quote": "is an American grantmaking network founded by billionaire business magnate George Soros",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "is an American grantmaking network founded by billionaire business magnate George Soros"
+      }
+    ]
+  },
+  {
+    "id": "1825d7b2",
+    "type": "webpage",
+    "URL": "https://en.wikipedia.org/wiki/PORA",
+    "title": "Founded as an independent civil network for election observation and civic",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "The group was established in 2004 as only a civic youth organization participation in Ukraine"
+      },
+      {
+        "type": "quote-match",
+        "quote": "pro-democracy movements such as Pora! had created political networks throughout Ukraine, including 150 groups responsible for spreading information and coordinating election monitoring, 72 regional centers, and 30,000 registered participants. This allowed Pora! to mobilize protesters after widespread reports of electoral fraud. fraud that triggered the Orange Revolution"
       }
     ]
   },
@@ -1450,22 +1116,10 @@
     "type": "webpage",
     "URL": "https://en.wikipedia.org/wiki/PRS_Legislative_Research",
     "title": "Founded to track parliamentary activity and strengthen legislative debate in India",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "825d531a7973ed01a163dfe6cbd15b4342dca1d6b1e803a33b1e65710970624f",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "was established in September 2005 as an independent research institute",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "was established in September 2005 as an independent research institute"
       }
     ]
   },
@@ -1474,28 +1128,14 @@
     "type": "webpage",
     "URL": "https://en.wikipedia.org/wiki/People%27s_Solidarity_for_Participatory_Democracy",
     "title": "Founded with ~200 members in Seoul as People's Solidarity for Participatory Democracy",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "0ff2d8f901b699518ba73f0520217f13bc6f62013b9e829e074ba2acf779b10d",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "PSPD obtained a special consultative status with the UN ECOSOC",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "PSPD obtained a special consultative status with the UN ECOSOC"
       },
       {
         "type": "quote-match",
-        "quote": "was established on 10 September 1994 with around 200 members",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "was established on 10 September 1994 with around 200 members"
       }
     ]
   },
@@ -1504,22 +1144,10 @@
     "type": "webpage",
     "URL": "https://en.wikipedia.org/wiki/Pirate_Party_Australia",
     "title": "Founded as part of the international Pirate Party movement, advocating digital rights and direct democracy",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "6ede1abce4be770de5705036a7afdd8564c7b2cb61262b3ab9cc1dc7e63e7257",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "was founded in 2008 by Rodney Serkowski",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "was founded in 2008 by Rodney Serkowski"
       }
     ]
   },
@@ -1528,28 +1156,14 @@
     "type": "webpage",
     "URL": "https://en.wikipedia.org/wiki/Pol.is",
     "title": "Created by Colin Megill and the Computational Democracy Project as an open-source tool for large-scale deliberation",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "c09979850fb1c134651d7c16d242e4707adf2163e21ff6b910c7e91852785436",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "pol.is has been \"one of the key parts\" of vTaiwan",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "pol.is has been \"one of the key parts\" of vTaiwan"
       },
       {
         "type": "quote-match",
-        "quote": "was founded by Colin Megill, Christopher Small, and Michael Bjorkegren",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "was founded by Colin Megill, Christopher Small, and Michael Bjorkegren"
       }
     ]
   },
@@ -1558,34 +1172,18 @@
     "type": "webpage",
     "URL": "https://en.wikipedia.org/wiki/Referendum_Council",
     "title": "Jointly appointed by PM Malcolm Turnbull and Opposition Leader Bill Shorten",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "00425574072d4e370501489d674e0ef7b2f28452848e0194c15772cb527141ce",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "The 16-member Referendum Council was jointly appointed by the prime minister, Malcolm Turnbull, and Leader of the Opposition, Bill Shorten, on 7 December 2015",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "The 16-member Referendum Council was jointly appointed by the prime minister, Malcolm Turnbull, and Leader of the Opposition, Bill Shorten, on 7 December 2015"
       },
       {
         "type": "quote-match",
-        "quote": "The Final Report of the Referendum Council was published on 30 June 2017, and sent to the Prime Minister, Malcolm Turnbull, and the leader of the opposition, Bill Shorten",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "The Final Report of the Referendum Council was published on 30 June 2017, and sent to the Prime Minister, Malcolm Turnbull, and the leader of the opposition, Bill Shorten"
       },
       {
         "type": "quote-match",
-        "quote": "The First Nations National Constitutional Convention met over four days from 23 to 26 May 2017",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "The First Nations National Constitutional Convention met over four days from 23 to 26 May 2017"
       }
     ]
   },
@@ -1594,22 +1192,10 @@
     "type": "webpage",
     "URL": "https://en.wikipedia.org/wiki/SITRA",
     "title": "Established by the Finnish Parliament as the Finnish Innovation Fund, under parliamentary supervision",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "a99db7a67f59fda03bbef3f18c151aef9c43c72507b29b08337487765eab3191",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "Sitra was founded in 1967 as a part of the Bank of Finland",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "Sitra was founded in 1967 as a part of the Bank of Finland"
       }
     ]
   },
@@ -1618,34 +1204,30 @@
     "type": "webpage",
     "URL": "https://en.wikipedia.org/wiki/Team_Mirai",
     "title": "Party officially established by AI engineer Takahiro Anno",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "165e17cd062ad5fc1c25dbca44c0b40f88c5e42bdcf539afcded2d49d16ef565",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "securing 11 seats in the House of Representatives",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "securing 11 seats in the House of Representatives"
       },
       {
         "type": "quote-match",
-        "quote": "was established on 8 May 2025",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "was established on 8 May 2025"
       },
       {
         "type": "quote-match",
-        "quote": "won its first seat in the Diet",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "won its first seat in the Diet"
+      }
+    ]
+  },
+  {
+    "id": "a4524e50",
+    "type": "webpage",
+    "URL": "https://en.wikipedia.org/wiki/The_Helen_Clark_Foundation",
+    "title": "Foundation established as an independent public policy think tank hosted",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "The Helen Clark Foundation is a New Zealand-based independent, non-partisan public policy think tank hosted by Auckland University of Technology. by AUT, named after former PM Helen Clark"
       }
     ]
   },
@@ -1654,28 +1236,14 @@
     "type": "webpage",
     "URL": "https://en.wikipedia.org/wiki/Ushahidi",
     "title": "Created in the aftermath of Kenya's 2007 election crisis as a crowdsourced crisis-mapping platform",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "1e638114714b09a477bb5fbbf6ca756026f069f27e65e5c3a755ccedeea1f724",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "in response to the Haiti Earthquake in 2010",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "in response to the Haiti Earthquake in 2010"
       },
       {
         "type": "quote-match",
-        "quote": "was created in the aftermath of Kenya's disputed 2007 presidential election",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "was created in the aftermath of Kenya's disputed 2007 presidential election"
       }
     ]
   },
@@ -1684,22 +1252,10 @@
     "type": "webpage",
     "URL": "https://en.wikipedia.org/wiki/Vietnam_Fatherland_Front",
     "title": "Founded as the umbrella political coalition under the Communist Party of Vietnam, succeeding the North Vietnamese Fatherland Front",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "8a08d9848ba00956c361582a97da9840ed9813ee860c776cd3997640024f7d95",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "was founded in February 1977 by the merger",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "was founded in February 1977 by the merger"
       }
     ]
   },
@@ -1708,22 +1264,10 @@
     "type": "webpage",
     "URL": "https://en.wikipedia.org/wiki/Your_Party_(Japan)",
     "title": "Founded by Yoshimi Watanabe, a former Liberal Democratic Party minister, as a reformist Japanese political party",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "0ddf94ee2c8744b9de5a441debec0f18394cf9d2da0392bb9dc6aac506fc6655",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "party was founded on August 8, 2009",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "party was founded on August 8, 2009"
       }
     ]
   },
@@ -1732,22 +1276,10 @@
     "type": "webpage",
     "URL": "https://es.wikipedia.org/wiki/Transparencia_Internacional#Transparencia_por_Colombia:~:text=Transparencia%20por%20Colombia%2C%20la%20Delegaci%C3%B3n%20Nacional%20de%20Transparencia%20Internacional%20en%20Colombia%2C%20surge%20en%201998",
     "title": "Founded as the Colombian chapter of Transparency International, working across all 32 departments",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "68b301d6f8259e0aadf888ae3ca1146e4a93d73682dd868ce3f0ae8314758f69",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "Transparencia por Colombia, la Delegación Nacional de Transparencia Internacional en Colombia, surge en 1998",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "Transparencia por Colombia, la Delegación Nacional de Transparencia Internacional en Colombia, surge en 1998"
       }
     ]
   },
@@ -1756,22 +1288,10 @@
     "type": "webpage",
     "URL": "https://europeandemocracyhub.epd.eu/exploring-worldwide-democratic-innovations-taiwan/",
     "title": "Launched by Taiwan's National Development Council following a February 2015 Executive Yuan directive",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "de9ad78b9cad3c69c404f3b13c4c4b3d6e50404cb8b800308d0b94cf36a731c1",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "was launched under the sponsorship of the National Development Council. The website has made it possible for citizens to submit a policy proposal to the government via the Internet.",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "was launched under the sponsorship of the National Development Council. The website has made it possible for citizens to submit a policy proposal to the government via the Internet."
       }
     ]
   },
@@ -1792,10 +1312,34 @@
     "type": "webpage",
     "URL": "https://events.humanitix.com/radicalxchange-foundation-in-melbourne",
     "title": "\"An invitation to meet RadicalxChange Foundation in Melbourne\"",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          12
+        ]
+      ]
+    },
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "Join us to learn about civic tech for democracy and community, and explore how our tools might serve your community or sector."
+        "quote": "Join us to learn about civic tech for democracy and community, and explore how our tools might serve your community or sector.",
+        "status": "MATCH",
+        "last-verified": "2026-08-12",
+        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)",
+        "context": {
+          "prefix": "desktop Yahoo Close icon Close An invitation to meet RadicalxChange Foundation in Melbourne",
+          "sha256": "5760c293c05f53070e2c0ae9d9c0abbc13710775fe504090d59aaa4ed3ddff7f",
+          "suffix": "At the Small Giants Wisdom & Action Forum in May, many were energised by the extraordinary work and vision of Audrey Tang, Taiwan's di",
+          "text": "Join us to learn about civic tech for democracy and community, and explore how our tools might serve your community or sector."
+        }
+      },
+      {
+        "type": "quote-match",
+        "quote": "we are also excited to introduce you to the founding members of the new RadicalxChange Melbourne chapter",
+        "last-verified": "2026-08-12",
+        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
   },
@@ -1840,22 +1384,10 @@
     "type": "webpage",
     "URL": "https://foro.org.co/nosotros/quienes-somos/",
     "title": "Founded as one of Colombia's longest-established civil society organisations for democratic participation",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "041fee79860e8af0815e79054810b1433e1d9a8bf966b32f51428f40c4ebed6e",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "creada en 1982",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "creada en 1982"
       }
     ]
   },
@@ -1864,22 +1396,10 @@
     "type": "webpage",
     "URL": "https://fr.wikipedia.org/wiki/AfricTivistes",
     "title": "Founded in Dakar by Cheikh Fall, initially as the African League of Bloggers and Web Activists for Democracy",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "252b5333c69d722536f81e7d16d535608eda6ec1b68943076d0eb749e44e1ea4",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "Fondée le 26 novembre 2015 par Cheikh Fall, AfricTivistes compte à ce jour plus de 400 membres répartis dans 40 pays du continent africain.",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "Fondée le 26 novembre 2015 par Cheikh Fall, AfricTivistes compte à ce jour plus de 400 membres répartis dans 40 pays du continent africain."
       }
     ]
   },
@@ -1888,10 +1408,28 @@
     "type": "webpage",
     "URL": "https://glenweyl.com/radicalxchange/",
     "title": "\"RadicalxChange\"",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          12
+        ]
+      ]
+    },
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "Founded by economist Glen Weyl in 2018, the RadicalxChange Foundation is a 501(c)(3) nonprofit dedicated to advancing the RxC movement, to building community, and to education about democratic innovation."
+        "quote": "Founded by economist Glen Weyl in 2018, the RadicalxChange Foundation is a 501(c)(3) nonprofit dedicated to advancing the RxC movement, to building community, and to education about democratic innovation.",
+        "status": "MATCH",
+        "last-verified": "2026-08-12",
+        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)",
+        "context": {
+          "prefix": "Foundation (RxC) is a global movement for next-generation political economies",
+          "sha256": "a010f2e8072c84a697d2cd73667f7a7b9d4436b8e6a29df63775be7e70d14445",
+          "suffix": "RxC connects people from all walks of life – ranging from social scientists and technologists to artists and activists. The movement is ever-ev",
+          "text": "Founded by economist Glen Weyl in 2018, the RadicalxChange Foundation is a 501(c)(3) nonprofit dedicated to advancing the RxC movement, to building community, and to education about democratic innovation."
+        }
       }
     ]
   },
@@ -1900,22 +1438,10 @@
     "type": "webpage",
     "URL": "https://ia.acs.org.au/article/2018/blockchain-to-revolutionise-e-voting.html",
     "title": "Signed a deal with Silicon Valley startup Swarm Fund to use SecureVote's Liquid Democracy Voting Module",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "23469086d0ee48bd6b95906310cdafbfc621a0236b945ba611631b213dcaa03b",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "A deal with Silicon Valley start-up Swarm Fund is a big win for an Australian firm working to revolutionise the democratic process using blockchain",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "A deal with Silicon Valley start-up Swarm Fund is a big win for an Australian firm working to revolutionise the democratic process using blockchain"
       }
     ]
   },
@@ -1924,22 +1450,22 @@
     "type": "webpage",
     "URL": "https://icodrops.com/horizon-state/",
     "title": "Token Generation Event (ICO) concluded, raising approximately $1.4M",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "60406e970fc249b1410e6a987d4e6124ef5a96109736d68a9869637ef8ca7f8c",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "The TGE (Token Generation Event) announced by Horizon State has successfully concluded on Nov 19, 2017",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "The TGE (Token Generation Event) announced by Horizon State has successfully concluded on Nov 19, 2017"
+      }
+    ]
+  },
+  {
+    "id": "96dc34e0",
+    "type": "webpage",
+    "URL": "https://itsrio.org/pt/institucional/",
+    "title": "Founded in Rio de Janeiro to study the impact and future of technology on",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "O ITS Rio e um Instituto de pesquisa sem fins lucrativos, que estuda o impacto e o futuro da tecnologia no Brasil e no mundo, na busca de assegurar o aproveitamento criativo e apropriado das oportunidades fornecidas pela tecnologia na era digital. Brazilian society"
       }
     ]
   },
@@ -1948,22 +1474,10 @@
     "type": "webpage",
     "URL": "https://mckinnon.co/about-us",
     "title": "Founded (as Susan McKinnon Foundation) by Sophie Oh and Grant Rule",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "f9a63121fe8480f53da154817ff9a11ca0384c4eef56d541da1bfbf68d5d6193",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "known as the Susan McKinnon Foundation) was established in 2015 by Sophie Oh and Grant Rule",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "known as the Susan McKinnon Foundation) was established in 2015 by Sophie Oh and Grant Rule"
       }
     ]
   },
@@ -1984,28 +1498,14 @@
     "type": "webpage",
     "URL": "https://memo98.sk/about-us",
     "title": "Launched with NDI support to monitor Slovak media ahead of the 1998 parliamentary elections",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "0f833eb3c633d85b3a38da94d615e23b7e830a960c64a21bfedc1557707ef62a",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "We were launched with support from the US-based National Democratic Institute for International Affairs (NDI)",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "We were launched with support from the US-based National Democratic Institute for International Affairs (NDI)"
       },
       {
         "type": "quote-match",
-        "quote": "between 1999 (Ukraine) to these days (Kosovo, Philippines) MEMO 98 experts have participated in more than 130 election observation missions",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "between 1999 (Ukraine) to these days (Kosovo, Philippines) MEMO 98 experts have participated in more than 130 election observation missions"
       }
     ]
   },
@@ -2014,22 +1514,10 @@
     "type": "webpage",
     "URL": "https://mosaiclab.com.au/contributions-to-the-field",
     "title": "Critical Thinking Research with Dr Lyn Carson wins IAP2 Core Values Award for Research",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "15a6e3514340d9c60f2a4f982feb811f88d8b6e0b2e35d54dc6f484d2bd96580",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "we were awarded the IAP2 Australasia Core Values Award for Research in 2018",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "we were awarded the IAP2 Australasia Core Values Award for Research in 2018"
       }
     ]
   },
@@ -2038,22 +1526,10 @@
     "type": "webpage",
     "URL": "https://mosaiclab.com.au/nicole-hunter",
     "title": "Founded by Kimbra White, Nicole Hunter and Keith Greaves",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "ff9d85661b80da6f039c286280f1a2a95e60c493584568c026e730fc788e8332",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "Nicole co-founded MosaicLab (with Keith Greaves and Kimbra White) in 2017",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "Nicole co-founded MosaicLab (with Keith Greaves and Kimbra White) in 2017"
       }
     ]
   },
@@ -2062,22 +1538,10 @@
     "type": "webpage",
     "URL": "https://mosaiclab.com.au/the-big-book",
     "title": "Publishes Facilitating Deliberation — A Practical Guide, drawing on 39 deliberative processes",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "e405e7355a44918a2e4e5482b77a7d955573520fa1a5ab24c19cdafea271f29e",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "Drawn from the authors’ experience delivering 39 deliberative engagement processes, the book is full of insider secrets, authentic lessons learned",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "Drawn from the authors’ experience delivering 39 deliberative engagement processes, the book is full of insider secrets, authentic lessons learned"
       }
     ]
   },
@@ -2086,28 +1550,14 @@
     "type": "webpage",
     "URL": "https://newvote.org/the-institute",
     "title": "Established as a not-for-profit / for-purpose organisation in Australia",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "41de34d51814cde39f45696142e803023c7a62a397acac993a107c99cd8ca769",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "NewVote is founded as a for-purpose (a not-for-profit), Australia.",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "NewVote is founded as a for-purpose (a not-for-profit), Australia."
       },
       {
         "type": "quote-match",
-        "quote": "The University of Queensland Student Union is piloting and promoting the app with its 52,000 students, starting on 24 July 2019.",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "The University of Queensland Student Union is piloting and promoting the app with its 52,000 students, starting on 24 July 2019."
       }
     ]
   },
@@ -2116,22 +1566,10 @@
     "type": "webpage",
     "URL": "https://oaf.org.au/2014/10/21/they-vote-for-you/",
     "title": "Launched They Vote For You, tracking Australian parliamentary voting records",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "15da2af9077edaf61dce05c1049c2c5ec542143f341ec24fec249165c58256e6",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "today the OpenAustralia Foundation is launching a new site They Vote for You",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "today the OpenAustralia Foundation is launching a new site They Vote for You"
       }
     ]
   },
@@ -2164,6 +1602,18 @@
     "type": "webpage",
     "URL": "https://pt.wikipedia.org/wiki/Open_Knowledge_Brasil",
     "title": "Founded as the Brazilian chapter of Open Knowledge, promoting open data and civic technology",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "sociedade civil (OSC) sem fins lucrativos e apartidária, fundada em assembleia em 4 de setembro de 2013"
+      }
+    ]
+  },
+  {
+    "id": "8d4c23e8",
+    "type": "webpage",
+    "URL": "https://reclaim.org.au/1-lismore-peoples-assembly-housing/",
+    "title": "#1 Lismore People's Assembly/Housing",
     "accessed": {
       "date-parts": [
         [
@@ -2173,25 +1623,19 @@
         ]
       ]
     },
-    "content-sha256": "b3934f46a0e6a500b3969fe5bbe004c6f133cf5547633a3001a36999203101e1",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "sociedade civil (OSC) sem fins lucrativos e apartidária, fundada em assembleia em 4 de setembro de 2013",
+        "quote": "Community based diverse and cooperative solutions for housing",
+        "status": "MATCH",
         "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
-      }
-    ]
-  },
-  {
-    "id": "8d4c23e8",
-    "type": "webpage",
-    "URL": "https://reclaim.org.au/1-lismore-peoples-assembly-housing/",
-    "title": "#1 Lismore People's Assembly/Housing",
-    "evidence": [
-      {
-        "type": "quote-match",
-        "quote": "Community based diverse and cooperative solutions for housing"
+        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)",
+        "context": {
+          "prefix": "for their house including safety and facility audits of bought back houses to identify their potential for different kinds of tenancy.",
+          "sha256": "c32ff80280689420b855efd6209762b535e60b88091d0669f8ceff73e226e820",
+          "suffix": "More generous support for landowners in urban and rural areas to place transportable homes and tiny homes on their properties. Explori",
+          "text": "Community based diverse and cooperative solutions for housing"
+        }
       }
     ]
   },
@@ -2205,17 +1649,23 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
-    "content-sha256": "d6f51366e8b60fa798347718bf5438e92ff008ae6ff9f84b2d0205ec1d01e77e",
     "evidence": [
       {
         "type": "quote-match",
         "quote": "The Lismore People’s Assembly seeks to change this in the hopes of reinventing democracy – starting from the ground up",
-        "last-verified": "2026-08-11",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "status": "MATCH",
+        "last-verified": "2026-08-12",
+        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)",
+        "context": {
+          "prefix": "own, those with power, the elites, the rich, or self-interested politicians’ who are being represented. Reinventing democracy",
+          "sha256": "d6f51366e8b60fa798347718bf5438e92ff008ae6ff9f84b2d0205ec1d01e77e",
+          "suffix": ", starting in Lismore, with all surrounding communities heartily invited. And not just any kind of democracy, but participatory and deliberative democ",
+          "text": "The Lismore People’s Assembly seeks to change this in the hopes of reinventing democracy – starting from the ground up, starting in Lismore, with all surrounding communities heartily invited. And not just any kind of democracy, but participatory and deliberative democracy. And everyone is warmly invited."
+        }
       }
     ]
   },
@@ -2229,17 +1679,23 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
-    "content-sha256": "962246259b6a487def673b4ca2f1ccccb76cdf98ebf9ec8ca07b6e77a8f1ff9e",
     "evidence": [
       {
         "type": "quote-match",
         "quote": "On Saturday 10th August, around fifty people gathered",
-        "last-verified": "2026-08-11",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "status": "MATCH",
+        "last-verified": "2026-08-12",
+        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)",
+        "context": {
+          "prefix": "project of grassroots, participatory democracy with the first of two public assemblies on housing. What happened:",
+          "sha256": "962246259b6a487def673b4ca2f1ccccb76cdf98ebf9ec8ca07b6e77a8f1ff9e",
+          "suffix": "to talk together about the housing crisis and to answer the question: ‘What can this community do to get everyone a home?’ The atte",
+          "text": "On Saturday 10th August, around fifty people gathered to talk together about the housing crisis and to answer the question: ‘What can this community do to get everyone a home?’"
+        }
       }
     ]
   },
@@ -2248,10 +1704,28 @@
     "type": "webpage",
     "URL": "https://reclaim.org.au/the-year-ahead-for-the-lismore-peoples-assembly/",
     "title": "The year ahead for the Lismore People's Assembly",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          12
+        ]
+      ]
+    },
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "Support local tiny house production (one of the solutions from the housing assembly)"
+        "quote": "Support local tiny house production (one of the solutions from the housing assembly)",
+        "status": "MATCH",
+        "last-verified": "2026-08-12",
+        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)",
+        "context": {
+          "prefix": "ended by 17 humans and 2 Canines (with plenty of Turkeys and ducks out in the yard!) we came up with a few priority projects we are keen on:",
+          "sha256": "20e6e6902c0a0287a487e72910cf53a6f385b53c10413bfe63c121e7dee87b21",
+          "suffix": "Erect 2022 Flood Signage up on Poles – if the council won’t do it, we will. (as per the disaster preparedness assembly) Neighbourhood",
+          "text": "Support local tiny house production (one of the solutions from the housing assembly)"
+        }
       }
     ]
   },
@@ -2260,22 +1734,10 @@
     "type": "webpage",
     "URL": "https://stocznia.org.pl/en/about-shipyard/",
     "title": "Founded in Warsaw with a mission bridging citizen participation, social innovation, and research",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "6686a58250e335ed90f716edfd4130f33a471e120ffbc9a84a32a69da589567a",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "Shipyard Foundation was established in 2009.",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "Shipyard Foundation was established in 2009."
       }
     ]
   },
@@ -2284,28 +1746,14 @@
     "type": "webpage",
     "URL": "https://techboard.com.au/company-profile/xo-1/",
     "title": "Founded by Max Kaye as a Sydney-based blockchain voting startup",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "3573c52bd04966c380a9b3ac0c3023a221c7f8740521915567b994b26f9df89b",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "Founders: Max Kaye",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "Founders: Max Kaye"
       },
       {
         "type": "quote-match",
-        "quote": "SecureVote wins ATC Cyber Security Award",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "SecureVote wins ATC Cyber Security Award"
       }
     ]
   },
@@ -2356,10 +1804,28 @@
     "type": "webpage",
     "URL": "https://topics.amcham.com.tw/2017/02/make-full-use-of-join-gov-tw/",
     "title": "\"Make Full Use of Join.gov.tw\"",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          12
+        ]
+      ]
+    },
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "a well-designed online portal called Join to facilitate two-way communication between government offices and members of the public on regulatory matters."
+        "quote": "a well-designed online portal called Join to facilitate two-way communication between government offices and members of the public on regulatory matters.",
+        "status": "MATCH",
+        "last-verified": "2026-08-12",
+        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)",
+        "context": {
+          "prefix": "for precisely that type of platform. The National Development Council, with assistance from the office of Digital Minister Audrey Tang, has developed",
+          "sha256": "33a12277a8f75847058928b3e1ca28b228ca8f74ed092f18be9bfca56b32eedd",
+          "suffix": "Accessible at join.gov.tw, the home page of the website bears the aspirational slogan “Participate to Make Taiwan Even Better.” As welcome as t",
+          "text": "Thankfully, the government has recognized the need for precisely that type of platform. The National Development Council, with assistance from the office of Digital Minister Audrey Tang, has developed a well-designed online portal called Join to facilitate two-way communication between government offices and members of the public on regulatory matters. Accessible at join.gov.tw, the home page of the website bears the aspirational slogan “Participate to Make Taiwan Even Better.”"
+        }
       }
     ]
   },
@@ -2372,6 +1838,10 @@
       {
         "type": "quote-match",
         "quote": "$35,000 was raised in donations to kickstart bHive from an amazing group of Founding Patrons."
+      },
+      {
+        "type": "quote-match",
+        "quote": "Finally Consumer Affairs granted us cooperative status. We were now a real thing. Australia's first platform cooperative"
       }
     ]
   },
@@ -2392,6 +1862,18 @@
     "type": "webpage",
     "URL": "https://www.afrobarometer.org/about/history/",
     "title": "Founded as a pan-African survey research network measuring public attitudes on democracy and governance",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "professors Michael Bratton, Robert Mattes, and E. Gyimah-Boadi merge three independent survey research projects to form Afrobarometer (AB)"
+      }
+    ]
+  },
+  {
+    "id": "b5fc264d",
+    "type": "webpage",
+    "URL": "https://www.bertelsmann-stiftung.de/en/our-projects/democracy-and-participation-in-europe/shortcut-archive/shortcut-8-trailblazers-of-digital-participation-taiwans-join-platform-and-vtaiwan",
+    "title": "\"Trailblazers of digital participation: Taiwan's Join platform and vTaiwan\"",
     "accessed": {
       "date-parts": [
         [
@@ -2401,25 +1883,31 @@
         ]
       ]
     },
-    "content-sha256": "c0b33751c067cd7dab044fecf687a264444cbf4dee859309dd04c5d5c85cd3d7",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "professors Michael Bratton, Robert Mattes, and E. Gyimah-Boadi merge three independent survey research projects to form Afrobarometer (AB)",
+        "quote": "The Join platform is a government-run participation hub that is most notable for its petitioning function but also offers several feedback and discussion options.",
+        "status": "MATCH",
         "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)",
+        "context": {
+          "prefix": "(“gov-zero”). It is designed to enable open, in-depth, and lengthy consultation processes between the government, citizens, and policy stakeholders.",
+          "sha256": "05c110afc92fb278b8ab2ca88cb1ae818a26074bf9d9d549880c39af9a005686",
+          "suffix": "It allows anyone legally registered in Taiwan to file a proposal with the national government and gather support. A proposal that receives at least 5",
+          "text": "Though born out of the same civic ethos of cooperation between society and government, vTaiwan and the Join platform are two distinct participation instruments. vTaiwan is an online-offline platform run by a collective of “civic hackers” called gOv (“gov-zero”). It is designed to enable open, in-depth, and lengthy consultation processes between the government, citizens, and policy stakeholders. The Join platform is a government-run participation hub that is most notable for its petitioning function but also offers several feedback and discussion options. It allows anyone legally registered in Taiwan to file a proposal with the national government and gather support. A proposal that receives at least 5,000 supporters will be discussed by the relevant government agencies, who must provide a reasoned response."
+        }
       }
     ]
   },
   {
-    "id": "b5fc264d",
+    "id": "d2b0d9ec",
     "type": "webpage",
-    "URL": "https://www.bertelsmann-stiftung.de/en/our-projects/democracy-and-participation-in-europe/shortcut-archive/shortcut-8-trailblazers-of-digital-participation-taiwans-join-platform-and-vtaiwan",
-    "title": "\"Trailblazers of digital participation: Taiwan's Join platform and vTaiwan\"",
+    "URL": "https://www.buildaballot.org.au/about",
+    "title": "Launched its first voting tool, \"Vote 1 Climate,\" ahead of the 2022 federal",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "The Join platform is a government-run participation hub that is most notable for its petitioning function but also offers several feedback and discussion options."
+        "quote": "Ahead of the 2022 federal election, we built our first voting tool, Vote 1 Climate. election"
       }
     ]
   },
@@ -2433,17 +1921,29 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
-    "content-sha256": "82e0ccc0288520a4ce4e6061f66216c48b4f22a4d944d427e10b4f72bb28f9db",
     "evidence": [
       {
         "type": "quote-match",
         "quote": "Legitimacy theatre",
-        "last-verified": "2026-08-11",
+        "status": "MISMATCH",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+      }
+    ]
+  },
+  {
+    "id": "5e981c57",
+    "type": "webpage",
+    "URL": "https://www.canberra.edu.au/research/centres/cdd/about-cdd/our-history",
+    "title": "Founded, marking its 10th anniversary in 2024",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "It relocated to the University of Canberra in 2014, where it has since been consolidated and expanded through the collective efforts of its members."
       }
     ]
   },
@@ -2452,22 +1952,10 @@
     "type": "webpage",
     "URL": "https://www.cddwestafrica.org/about-us/",
     "title": "Founded in Lagos as a research and advocacy organisation on democracy and development in West Africa",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "39f16719c192f7b17c396e2daff9c54a393dc48d63a425d0e96c0863a672ec03",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "The Centre for Democracy and Development (CDD) was established in the United Kingdom in 1997",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "The Centre for Democracy and Development (CDD) was established in the United Kingdom in 1997"
       }
     ]
   },
@@ -2476,22 +1964,10 @@
     "type": "webpage",
     "URL": "https://www.ciudadaniai.org/nosotros",
     "title": "Founded as one of Latin America's earliest civic-tech organisations, Santiago",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "0b9471be8f65922f16b7dc2b3cb12858e60cbdd537443c4069a88df8c6d3eb47",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "Ciudadanía Inteligente 2009 - 2026. Todos los derechos reservados",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "Ciudadanía Inteligente 2009 - 2026. Todos los derechos reservados"
       }
     ]
   },
@@ -2500,22 +1976,10 @@
     "type": "webpage",
     "URL": "https://www.code4japan.org/aboutus",
     "title": "Founded as the Japanese node of Code for All, bringing civic tech to Japan",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "da27dacd83bcf74aa79100c2a63503c93e8217cf7c6d094e3842e322ffe289f3",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "設立年月日 2013年10月25日",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "設立年月日 2013年10月25日"
       }
     ]
   },
@@ -2524,22 +1988,22 @@
     "type": "webpage",
     "URL": "https://www.crossroadsconversation.com.au/events/on-the-importance-of-conversation-for-the-very-idea-of-a-common-humanity",
     "title": "Held its inaugural Annual Lecture (Joseph Camilleri, \"Australia the Week After\") at the University of Melbourne",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "0fc86d407615caf5514aa2a0a14bcaa3c602d87db6f6fa1b78cccad3ea0274d2",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "You speak not to say something and to hear something back, not to dazzle, be right or stake a claim, but to be held accountable to each other.",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "You speak not to say something and to hear something back, not to dazzle, be right or stake a claim, but to be held accountable to each other."
+      }
+    ]
+  },
+  {
+    "id": "29da9a19",
+    "type": "webpage",
+    "URL": "https://www.crossroadsconversation.com.au/events/reclaiming-democracy-together",
+    "title": "Convened \"Reclaiming Democracy Together\" national launch at Melbourne Town Hall, marking the 125th anniversary of Australia's first federal parliament",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "On 9 May 2026, we gather to launch Reclaiming Democracy Together — an ambitious seven-year project. The aim: to rethink and revitalise democratic life in Australia, and beyond."
       }
     ]
   },
@@ -2548,10 +2012,28 @@
     "type": "webpage",
     "URL": "https://www.demnext.org/about",
     "title": "About",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          12
+        ]
+      ]
+    },
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "DemocracyNext is an international research & action institute focused on broadening who has power and enhancing how we make decisions together."
+        "quote": "DemocracyNext is an international research & action institute focused on broadening who has power and enhancing how we make decisions together.",
+        "status": "MATCH",
+        "last-verified": "2026-08-12",
+        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)",
+        "context": {
+          "prefix": "We believe in a more just, joyful, and collaborative future, where everyone has meaningful power to shape their societies.",
+          "sha256": "31b35e733ed03b9b4e9d03ec4028349a9d92aa6532dabeec34b3a5fc9e73b1c9",
+          "suffix": "We champion three democratic practices – sortition (choosing decision makers by lottery), deliberation (structured collective reasoning), and r",
+          "text": "DemocracyNext is an international research & action institute focused on broadening who has power and enhancing how we make decisions together."
+        }
       }
     ]
   },
@@ -2560,22 +2042,10 @@
     "type": "webpage",
     "URL": "https://www.democracy-international.org/events",
     "title": "2026 Global Forum on Modern Direct Democracy — Gaborone, Botswana",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "5ed493eba9ce9b166ebb4495284d9d5b915fa084635a8d016db12c035d322fe7",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "2026 Global Forum on Modern Direct Democracy",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "2026 Global Forum on Modern Direct Democracy"
       }
     ]
   },
@@ -2584,10 +2054,28 @@
     "type": "webpage",
     "URL": "https://www.democracyco.com.au/about/",
     "title": "About",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          12
+        ]
+      ]
+    },
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "At DemocracyCo we create opportunities for citizens to participate constructively in the decisions that matter to them."
+        "quote": "At DemocracyCo we create opportunities for citizens to participate constructively in the decisions that matter to them.",
+        "status": "MATCH",
+        "last-verified": "2026-08-12",
+        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)",
+        "context": {
+          "prefix": "n Get Involved The People’s House Shaping our futures",
+          "sha256": "1f3342948b4e4774f63f0a457d7b23029356b55548d19d7eebc0650eb1be368f",
+          "suffix": "We support better decisions and policy-making, by advising governments and organisations on best-practice deliberative engagement processes, and by d",
+          "text": "At DemocracyCo we create opportunities for citizens to participate constructively in the decisions that matter to them. We support better decisions and policy-making, by advising governments and organisations on best-practice deliberative engagement processes, and by designing planning and facilitating respectful dialogue and collaboration."
+        }
       }
     ]
   },
@@ -2596,22 +2084,22 @@
     "type": "webpage",
     "URL": "https://www.designingopendemocracy.com/blog/2021/08/07/podcast-catching-up-with-adam-jacoby-founder-of-mivote/",
     "title": "Australian party deregistered before the 2019 federal election, without electing any senators",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "cbb7f54c729d9ecfcd25e0a3f1400963923c76d69a26336852fa45a5916a9a6b",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "The Australian party deregistered around 2019; the movement and technology continued under a different structure.",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "The Australian party deregistered around 2019; the movement and technology continued under a different structure."
+      }
+    ]
+  },
+  {
+    "id": "989585b7",
+    "type": "webpage",
+    "URL": "https://www.dumbofeather.com/articles/building-a-coalition-of-everyone/",
+    "title": "Co-founded by Willow Berzin, Suse Porter and Dr Sonia Randhawa, inspired",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "I met my two other co-founders Suse Porter and Dr Sonia Randhawa early last year, and have been working closely with them since. by Extinction Rebellion Melbourne's first meeting"
       }
     ]
   },
@@ -2620,22 +2108,34 @@
     "type": "webpage",
     "URL": "https://www.fidemocracy.org/news",
     "title": "FIDE Forum 2026: From Novel to Normal — making deliberation a democratic standard, Vienna",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "abd88ce88d5b83a990787cd3dcfb9731a7b86c8fe28a242bfab09a6d93105bd7",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "FIDE Forum 2026",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "FIDE Forum 2026"
+      }
+    ]
+  },
+  {
+    "id": "5ac27fe0",
+    "type": "webpage",
+    "URL": "https://www.folio.org.au/event-4941291",
+    "title": "Public integrity, trust and democracy",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "The Hon Stephen Charles AO QC and Danielle Wood (CEO, Grattan Institute) to lead a timely conversation about the state of Australian politics and democracy and how we might let the sunshine in and strengthen public integrity."
+      }
+    ]
+  },
+  {
+    "id": "38f2c8a6",
+    "type": "webpage",
+    "URL": "https://www.folio.org.au/event-5773784",
+    "title": "Democratic Crossroads — unpacking the Voice Referendum: what can we learn about Australia's democracy?",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "This Folio Conversation with Mary Crooks and Lauren Crystal will help us unpack the Voice Referendum, drawing on their direct experience in community conversations across the country."
       }
     ]
   },
@@ -2644,22 +2144,10 @@
     "type": "webpage",
     "URL": "https://www.g1000.org/en/cases/g1000-citizens-summit",
     "title": "G1000 Citizens' Summit — 704 randomly selected citizens deliberate in Brussels during Belgium's 541-day government crisis",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "99f329db92db6439c9941a067607e4d7d0c7e0d71b3c0ba49b8b47efe3e3226c",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "In 2011, in the midst of a political crisis in a governmentless Belgium, G1000 was a citizens' initiative aimed at breathing new life into democracy by organizing a major citizens' consultation, bringing together 1,000 randomly selected citizens to make recommendations to the political world.",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "In 2011, in the midst of a political crisis in a governmentless Belgium, G1000 was a citizens' initiative aimed at breathing new life into democracy by organizing a major citizens' consultation, bringing together 1,000 randomly selected citizens to make recommendations to the political world."
       }
     ]
   },
@@ -2668,22 +2156,10 @@
     "type": "webpage",
     "URL": "https://www.g1000.org/en/cases/permanent-citizen-dialogue-ostbelgien",
     "title": "Ostbelgien permanent citizen dialogue launched — the German-speaking Community's Parliament unanimously adopts a decree embedding a permanent Citizens' Council",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "9d9dd7eb44ce1feb60d009a8461f4ee3411bd3fa7f790f06f40bcc4344b1f244",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "This initiative, launched after a petition by Cap Démocratie, marked a first for Wallonia, where citizens and politicians worked together as equals.",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "This initiative, launched after a petition by Cap Démocratie, marked a first for Wallonia, where citizens and politicians worked together as equals."
       }
     ]
   },
@@ -2692,22 +2168,10 @@
     "type": "webpage",
     "URL": "https://www.govtech.com/civic/new-global-civic-tech-group-emerges-from-the-omidyar-group.html",
     "title": "Launched as an independent global philanthropic organisation, spun out of Omidyar Network's Governance & Citizen Engagement initiative",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "5739cf6dbe8712a5009711e87e8ab0803df92b1c7c79276d3d8ba6ce59d733fe",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "Officially launched in recent weeks, Luminate aims to fund projects and organizations that can drive changes that fall into one of four categories: civic empowerment, data and digital rights, transparency and independent media.",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "Officially launched in recent weeks, Luminate aims to fund projects and organizations that can drive changes that fall into one of four categories: civic empowerment, data and digital rights, transparency and independent media."
       }
     ]
   },
@@ -2716,35 +2180,21 @@
     "type": "webpage",
     "URL": "https://www.influencewatch.org/non-profit/healthy-democracy/",
     "title": "Founded (as Healthy Democracy Oregon) by Tyrone Reitman and Elliot Shuford to run the Citizens' Initiative Review",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "1d1c8cfc7834bf76cc123f07d21a514808f8e2577757b6d08ee5133c4e5d30e5",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "Healthy Democracy was founded in 2007 as “Healthy Democracy Oregon” by Crosby and his wife and two activists, Tyrone Reitman and Elliot Shuford.",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "Healthy Democracy was founded in 2007 as “Healthy Democracy Oregon” by Crosby and his wife and two activists, Tyrone Reitman and Elliot Shuford."
       },
       {
         "type": "quote-match",
-        "quote": "In 2011, Oregon state legislators sponsored House Bill 2634 which made the Citizens’ Initiative Review (CIR) process an official and permanent part of Oregon’s elections",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "In 2011, Oregon state legislators sponsored House Bill 2634 which made the Citizens’ Initiative Review (CIR) process an official and permanent part of Oregon’s elections"
       }
     ]
   },
   {
-    "id": "cc9069b0",
+    "id": "aca97307",
     "type": "webpage",
-    "URL": "https://www.institutoupdate.org.br/",
+    "URL": "https://www.institutoupdate.org.br/sobre/",
     "title": "Founded in São Paulo as a regional platform for political innovation and imagination in the Global South",
     "accessed": {
       "date-parts": [
@@ -2766,6 +2216,18 @@
     ]
   },
   {
+    "id": "18eecbde",
+    "type": "webpage",
+    "URL": "https://www.involve.org.uk/about/about-involve",
+    "title": "Founded",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Since 2003, we have been working with governments, parliaments, civil society, academics and members of the public to create, advocate for and deliver new forms of public participation that re-vitalise democracy, improve decision-making, and enable people to shape the decisions that affect their lives."
+      }
+    ]
+  },
+  {
     "id": "4b4fec7e",
     "type": "webpage",
     "URL": "https://www.ipc.nsw.gov.au/news/open-government-partnership-final-public-consultation-draft-commitments-australias-third-national-action-plan",
@@ -2782,22 +2244,10 @@
     "type": "webpage",
     "URL": "https://www.labsus.org/chi-siamo/",
     "title": "Founded in Rome as the Laboratory for Subsidiarity, pioneering shared administration in Italy",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "e1fde2cce5c1c2c169de201bbc72f56013fc9be23a1a46259023f63de009ca0d",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "Il Progetto Labsus, il Laboratorio per la sussidiarietà, ha un obiettivo ben preciso",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "Il Progetto Labsus, il Laboratorio per la sussidiarietà, ha un obiettivo ben preciso"
       }
     ]
   },
@@ -2806,28 +2256,14 @@
     "type": "webpage",
     "URL": "https://www.lcps-lebanon.org/en/about",
     "title": "Founded as an independent, non-partisan think tank in Beirut",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "99cdfdb6c2c1b89d7ed7ec193d5df152ba8e8deca92040727928754901aa84ff",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "Founded in 1989, the Lebanese Center for Policy Studies is an independently managed, non-partisan, non-profit, non-governmental think tank whose mission is to produce and advocate for policies that improve governance in Lebanon and the Arab region.",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "Founded in 1989, the Lebanese Center for Policy Studies is an independently managed, non-partisan, non-profit, non-governmental think tank whose mission is to produce and advocate for policies that improve governance in Lebanon and the Arab region."
       },
       {
         "type": "quote-match",
-        "quote": "contributing to formulating the 2006 Boutros draft electoral law",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "contributing to formulating the 2006 Boutros draft electoral law"
       }
     ]
   },
@@ -2836,22 +2272,10 @@
     "type": "webpage",
     "URL": "https://www.masslbp.com/about",
     "title": "Founded by Peter MacLeod",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "90b7b8d75b71ba9462fcf179942e61cc0b6463144784abb61997ec00cc12d76c",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "Since its founding in 2007, MASS has completed more than 200 major policy projects for governments and public agencies across Canada",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "Since its founding in 2007, MASS has completed more than 200 major policy projects for governments and public agencies across Canada"
       }
     ]
   },
@@ -2860,22 +2284,10 @@
     "type": "webpage",
     "URL": "https://www.masslbp.com/work-panels",
     "title": "Ran the Central LHIN Citizens' Reference Panel on Regional Health Priorities",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "201ce8f32676a307e7c15c13df5f831d0246fafd2b72e9c02cfb51208aac4e13",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "Central LHIN Citizens’ Reference Panel on Regional Health Priorities",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "Central LHIN Citizens’ Reference Panel on Regional Health Priorities"
       }
     ]
   },
@@ -2884,22 +2296,22 @@
     "type": "webpage",
     "URL": "https://www.mmzy.org.cn/mmgk/jianjie/default.aspx",
     "title": "Founded in Chongqing as an umbrella organisation of China's centrist and left-leaning intellectuals during the Second Sino-Japanese War",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "f4bd3fd3b32f0c1cb42d485a26ed67a2e99278d96b879b0d4527463f89fe1a0a",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "民盟于1941年3月19日在重庆秘密成立",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "民盟于1941年3月19日在重庆秘密成立"
+      }
+    ]
+  },
+  {
+    "id": "3262ef46",
+    "type": "webpage",
+    "URL": "https://www.mosaiclab.com.au/case-study-1-participatory-budgeting",
+    "title": "First citizens' jury — City of Melbourne 10-Year Financial Plan; Nicholas",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "City of Melbourne decided to seek the advice of its community by way of a 43 member People's Panel. The panel was a random stratified selection of people that was recruited by the newDemocracy Foundation, and included business and residential participants. The Panel met over five and a half days and was facilitated by MosiacLab founders Nicole Hunter, Kimbra White and Keith Greaves. Gruen attends as observer"
       }
     ]
   },
@@ -2908,30 +2320,6 @@
     "type": "webpage",
     "URL": "https://www.mysociety.org/about/",
     "title": "About",
-    "evidence": [
-      {
-        "type": "quote-match",
-        "quote": "mySociety is a trusted, collaborative and evidence-driven organisation with a long history of leading in civic tech."
-      }
-    ]
-  },
-  {
-    "id": "00283224",
-    "type": "webpage",
-    "URL": "https://www.ndi.org/sites/default/files/2025-04/No-6-Lessons-from-Namfrel-and-Gong---NDI-Sustaining-the-Fight-for-Democracy-Lessons-from-Citizen-Election-Monitoring-Organizations-Around-the-World.pdf",
-    "title": "\"Lessons from NAMFREL and Gong\"",
-    "evidence": [
-      {
-        "type": "quote-match",
-        "quote": "In 1986, NAMFREL conducted the world’s first Process and Results Verification for Transparency (PRVT), demonstrating election fraud and showing that Marcos had, in fact, lost the election."
-      }
-    ]
-  },
-  {
-    "id": "0392b5ff",
-    "type": "webpage",
-    "URL": "https://www.nesta.org.uk/feature/new-radicals-2016/democracy-club/",
-    "title": "Origins as a volunteer effort collecting candidate information for the 2010 UK general election, working with mySociety",
     "accessed": {
       "date-parts": [
         [
@@ -2941,19 +2329,59 @@
         ]
       ]
     },
-    "content-sha256": "f59a08f534783c5fd659bcf0a7044c4e0617c44778f22f166eb49a9ec06e8ef6",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "Sym Roe was a volunteer for the mySociety enterprise during the run up to the 2010 general election, working to increase the amount of information available online about the candidates.",
+        "quote": "mySociety is a trusted, collaborative and evidence-driven organisation with a long history of leading in civic tech.",
+        "status": "MATCH",
+        "last-verified": "2026-08-12",
+        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)",
+        "context": {
+          "prefix": "Subscribe Donate Search for: Home Hello, we’re mySociety",
+          "sha256": "82e7b4b5c5b139db029fa50b163e84e2c5e0c6edd6cdefe1f7c915b6627ac0bf",
+          "suffix": "Established in 2003, we are the UK-based charity behind FixMyStreet , TheyWorkForYou , WhatDoTheyKnow , WriteToThem — and other empowering online too",
+          "text": "mySociety is a trusted, collaborative and evidence-driven organisation with a long history of leading in civic tech. Established in 2003, we are the UK-based charity behind FixMyStreet , TheyWorkForYou , WhatDoTheyKnow , WriteToThem — and other empowering online tools."
+        }
+      }
+    ]
+  },
+  {
+    "id": "00283224",
+    "type": "webpage",
+    "URL": "https://www.ndi.org/sites/default/files/2025-04/No-6-Lessons-from-Namfrel-and-Gong---NDI-Sustaining-the-Fight-for-Democracy-Lessons-from-Citizen-Election-Monitoring-Organizations-Around-the-World.pdf",
+    "title": "\"Lessons from NAMFREL and Gong\"",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          12
+        ]
+      ]
+    },
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "In 1986, NAMFREL conducted the world’s first Process and Results Verification for Transparency (PRVT), demonstrating election fraud and showing that Marcos had, in fact, lost the election.",
+        "status": "MISMATCH",
         "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+      }
+    ]
+  },
+  {
+    "id": "0392b5ff",
+    "type": "webpage",
+    "URL": "https://www.nesta.org.uk/feature/new-radicals-2016/democracy-club/",
+    "title": "Origins as a volunteer effort collecting candidate information for the 2010 UK general election, working with mySociety",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Sym Roe was a volunteer for the mySociety enterprise during the run up to the 2010 general election, working to increase the amount of information available online about the candidates."
       },
       {
         "type": "quote-match",
-        "quote": "crowdsourcing the most comprehensive and accurate database of candidates in recent electoral history",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "crowdsourcing the most comprehensive and accurate database of candidates in recent electoral history"
       }
     ]
   },
@@ -2971,7 +2399,6 @@
         ]
       ]
     },
-    "content-sha256": "e34739f08d9203fc55e4dd0282920f9ca4e1d29dc6a7c276558ecf94e784e229",
     "evidence": [
       {
         "type": "quote-match",
@@ -3000,6 +2427,7 @@
       {
         "type": "quote-match",
         "quote": "The newDemocracy Foundation was launched in 2007, with Luca Belgiorno-Nettis... as the inaugural directors.",
+        "status": "MATCH",
         "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
@@ -3015,17 +2443,23 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
-    "content-sha256": "d29f03044da8e598f3eeb34d7ac6f647fe999c30fb763f295c66e4d61773149a",
     "evidence": [
       {
         "type": "quote-match",
         "quote": "Michael Bradley from Marque Lawyers wrote. He is generously helping us pro-bono.",
-        "last-verified": "2026-08-11",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "status": "MATCH",
+        "last-verified": "2026-08-12",
+        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)",
+        "context": {
+          "prefix": "rs. The legal threat Now back to where they are threatening to sue us under Australian Consumer Law. For this we defer to the letter that",
+          "sha256": "d29f03044da8e598f3eeb34d7ac6f647fe999c30fb763f295c66e4d61773149a",
+          "suffix": "Here is the letter he wrote in response. Letter to Rebekah Giles re OpenAustralia Foundation – Senator Andrew Bragg_2611028_1_redacted Download",
+          "text": "Now back to where they are threatening to sue us under Australian Consumer Law. For this we defer to the letter that Michael Bradley from Marque Lawyers wrote. He is generously helping us pro-bono. Here is the letter he wrote in response."
+        }
       }
     ]
   },
@@ -3034,22 +2468,10 @@
     "type": "webpage",
     "URL": "https://www.openaustraliafoundation.org.au/2009/07/07/announcing-the-openaustralia-foundation/",
     "title": "Founded by Matthew Landauer and Katherine Szuminska",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "64be6754d59dfcdf923568360eab88be30862c30bc6462136b69d12e927b2707",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "OpenAustralia Foundation Limited is officially incorporated as a company limited by guarantee.",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "OpenAustralia Foundation Limited is officially incorporated as a company limited by guarantee."
       }
     ]
   },
@@ -3058,22 +2480,10 @@
     "type": "webpage",
     "URL": "https://www.openaustraliafoundation.org.au/2009/12/21/launching-our-new-website-planning-alerts/",
     "title": "Launched PlanningAlerts",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "23b301288596e31a592686706ca160feed6746546b7a670afa1789a38657fd7b",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "21 December 2009 Launching our new website: Planning Alerts",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "21 December 2009 Launching our new website: Planning Alerts"
       }
     ]
   },
@@ -3094,22 +2504,22 @@
     "type": "webpage",
     "URL": "https://www.participatorybudgeting.org/about/",
     "title": "Founded by Josh Lerner and collaborators, launching the first PB process in North America in Chicago's 49th Ward",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "9caecfe4a8b685cef6c9963bd4658b0495569e80536ad3c4c8f43b9e90ca8ce1",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "Since 2009, PBP has collaborated with grassroots and government partners to launch PB processes in over 40 cities",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "Since 2009, PBP has collaborated with grassroots and government partners to launch PB processes in over 40 cities"
+      }
+    ]
+  },
+  {
+    "id": "4ff2591e",
+    "type": "webpage",
+    "URL": "https://www.peoplepower21.org/English",
+    "title": "Launches Civil Society Joint Action for Strengthening Accountability and",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Launch of 'Civil Society Joint Action for Strengthening Accountability and Public Interest in AI' Public Interest in AI"
       }
     ]
   },
@@ -3118,22 +2528,10 @@
     "type": "webpage",
     "URL": "https://www.peoplepowered.org/events",
     "title": "ConsulCon 2026 — three-day gathering on digital democracy and open-source civic tech, Munich",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "c5ef4ef97ec6a68ce52ba65b451e0bf974f7e79470a79a41850269a33c426bcb",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "The CONSUL DEMOCRACY Foundation and the City of Munich host the annual ConsulCon — a three-day gathering on digital democracy, open-source civic technology and democratic empowerment.",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "The CONSUL DEMOCRACY Foundation and the City of Munich host the annual ConsulCon — a three-day gathering on digital democracy, open-source civic technology and democratic empowerment."
       }
     ]
   },
@@ -3142,30 +2540,6 @@
     "type": "webpage",
     "URL": "https://www.peoplepowered.org/news-content/digital-participation-case-study-taiwan",
     "title": "\"Digital Participation Case Study: Taiwan\"",
-    "evidence": [
-      {
-        "type": "quote-match",
-        "quote": "vTaiwan has always demonstrated how civic communities can innovate in democratic participation by combining open-source platforms, commercial tools, and AI."
-      }
-    ]
-  },
-  {
-    "id": "ba7758a1",
-    "type": "webpage",
-    "URL": "https://www.radicalxchange.org/about/",
-    "title": "\"About\"",
-    "evidence": [
-      {
-        "type": "quote-match",
-        "quote": "RadicalxChange sparks imagination for transformative systems change."
-      }
-    ]
-  },
-  {
-    "id": "4de07bf7",
-    "type": "webpage",
-    "URL": "https://www.transparency.org.nz/our-story",
-    "title": "New Zealand chapter of Transparency International formally established under founding chair Michael Morris",
     "accessed": {
       "date-parts": [
         [
@@ -3175,19 +2549,101 @@
         ]
       ]
     },
-    "content-sha256": "5932469bf355d2f38d2efc15e6c5be84640c6805b7000d90ee556614ce142141",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "The New Zealand chapter was formally established in 1999, under the chairmanship of Senior Accountant Michael Morris",
+        "quote": "vTaiwan has always demonstrated how civic communities can innovate in democratic participation by combining open-source platforms, commercial tools, and AI.",
+        "status": "MATCH",
         "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)",
+        "context": {
+          "prefix": "ntribute online. The deliberation discussions were conducted primarily in Mandarin, with limited English interpretation provided by volunteers.",
+          "sha256": "302a97ff4a746653f8e489f47e644e637a3589acb7c57ab81e73833b181f7df4",
+          "suffix": "Currently, the community integrates tools such as Pol.is for large-scale opinion mapping, Mentimeter for interactive delibera",
+          "text": "vTaiwan has always demonstrated how civic communities can innovate in democratic participation by combining open-source platforms, commercial tools, and AI. Currently, the community integrates tools such as"
+        }
+      }
+    ]
+  },
+  {
+    "id": "ba7758a1",
+    "type": "webpage",
+    "URL": "https://www.radicalxchange.org/about/",
+    "title": "\"About\"",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          12
+        ]
+      ]
+    },
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "RadicalxChange sparks imagination for transformative systems change.",
+        "status": "MATCH",
+        "last-verified": "2026-08-12",
+        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)",
+        "context": {
+          "prefix": "© 2026 RadicalxChange Foundation Ltd. Close Menu ABOUT RxC What is RadicalxChange?",
+          "sha256": "244f6412e7c68526636b169b60dc572308662e0b13290c07caffdf047e612caa",
+          "suffix": "We provide participatory tools and collaborative approaches to cooperate across diversity and shape positive futures. RxC helps communities of",
+          "text": "RadicalxChange sparks imagination for transformative systems change. We provide participatory tools and collaborative approaches to cooperate across diversity and shape positive futures."
+        }
+      }
+    ]
+  },
+  {
+    "id": "15ecca75",
+    "type": "webpage",
+    "URL": "https://www.radicalxchange.org/events/2019-conference",
+    "title": "First RadicalxChange conference in Detroit — movement formally launched",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Our inaugural conference was held March 22-24 at the A. Alfred Taubman Center for Design Education in Detroit, Michigan"
+      }
+    ]
+  },
+  {
+    "id": "4c39f557",
+    "type": "webpage",
+    "URL": "https://www.socentral.no/aktuelt/",
+    "title": "Arendalsuka 2026 — multiple sessions on green transition, fjord restoration,",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Ses vi på Arendalsuka? Om du er interessert i grønn omstilling, hvordan få til samarbeid, skogbevaring, grønnvasking, OsloFjorden eller inkludering i idrett — det finnes et arrangement for deg på Arendalsuka 10-13.august. and sport inclusion, Arendal Norway"
+      }
+    ]
+  },
+  {
+    "id": "4def30fc",
+    "type": "webpage",
+    "URL": "https://www.sortitionfoundation.org/history",
+    "title": "Incorporated as a UK company",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "on 4 March 2017 we registered as a member-run, not-for-profit company limited by guarantee in the UK."
+      }
+    ]
+  },
+  {
+    "id": "4de07bf7",
+    "type": "webpage",
+    "URL": "https://www.transparency.org.nz/our-story",
+    "title": "New Zealand chapter of Transparency International formally established under founding chair Michael Morris",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "The New Zealand chapter was formally established in 1999, under the chairmanship of Senior Accountant Michael Morris"
       },
       {
         "type": "quote-match",
-        "quote": "and it became an incorporated society and charity in 2001.",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "and it became an incorporated society and charity in 2001."
       }
     ]
   },
@@ -3200,6 +2656,30 @@
       {
         "type": "quote-match",
         "quote": "Susan McKinnon Foundation Co-Founder Grant Rule said: &ldquo;Now, more than ever, we need to publicly recognise political leadership that shows vision and courage and has had a constructive impact for"
+      }
+    ]
+  },
+  {
+    "id": "942d127a",
+    "type": "webpage",
+    "URL": "https://www.wecollect.ch/ueber-uns/",
+    "title": "Launched by the Stiftung für direkte Demokratie as Switzerland's civic-tech",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Seit dem Start 2015 haben wir uber 800'000 Unterschriften gesammelt. platform for direct democracy"
+      }
+    ]
+  },
+  {
+    "id": "755d8d97",
+    "type": "webpage",
+    "URL": "https://www.wedodemocracy.dk/event/join-a-democracy-fitness-trainer-camp-in-copenhagen/",
+    "title": "Democracy Fitness Trainer camp — Copenhagen",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Join the open international Democracy Fitness camp this September in Copenhagen to learn new facilitation methods and get a deeper understanding of democracy as something that needs training."
       }
     ]
   },
@@ -3220,22 +2700,10 @@
     "type": "webpage",
     "URL": "https://www.ycombinator.com/companies/democracy-earth",
     "title": "Founded by Santiago Siri, Pia Mancini and Guido Vilariño; accepted into Y Combinator's Winter 2015 batch",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "content-sha256": "c90ae5009c68609175d2ffdf4bbd2a6e9e059cbef1a72cfb6e371fb42fc70d88",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "Democracy Earth Founded: 2015 Batch: Winter 2015 Team Size: 2 Status: Active Location: Madrid, Spain Founders Pia Mancini Founder Pia Mancini Founder Santiago Siri Founder/President Santiago Siri Founder/President Guido Vilariño Founder",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "Democracy Earth Founded: 2015 Batch: Winter 2015 Team Size: 2 Status: Active Location: Madrid, Spain Founders Pia Mancini Founder Pia Mancini Founder Santiago Siri Founder/President Santiago Siri Founder/President Guido Vilariño Founder"
       }
     ]
   }

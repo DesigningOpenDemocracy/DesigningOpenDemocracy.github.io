@@ -2,736 +2,212 @@
   "https://adrindia.org/about-adr/mission-and-vision": {
     "checked": "2026-08-12",
     "content_hash": "12b5a77f6dedb7265afbe3d053e63767591152b0e8de93d70685f4b501d82b93",
+    "contexts": {
+      "10d318870f8eff4cf3e3659d7e17c43c87cb4eb19785e9453d6ab10ac5b05ceb": {
+        "prefix": "\u092a\u094d\u0930\u091c\u093e \u0939\u0940 \u092a\u094d\u0930\u092d\u0941 \u0939\u0948! Citizens are the masters in a democracy! History",
+        "sha256": "12b5a77f6dedb7265afbe3d053e63767591152b0e8de93d70685f4b501d82b93",
+        "suffix": "In 1999, Public Interest Litigation (PIL) was filed by them with Delhi High Court asking for [or requesting] the disclosure of the criminal, financia",
+        "text": "The Association for Democratic Reforms (ADR) was established in 1999 by a group of professors from the Indian Institute of Management (IIM) Ahmedabad. In 1999, Public Interest Litigation (PIL) was filed by them with Delhi High Court asking for [or requesting] the disclosure of the criminal, financial and educational background of the candidates contesting elections. Based on this, the Supreme Court in 2002 , and subsequently in 2003, made it mandatory for all candidates contesting elections to disclose criminal, financial and educational background prior to the polls by filing an affidavit with the Election Commission."
+      }
+    },
     "etag": null,
     "last_modified": null,
     "verified": {
       "10d318870f8eff4cf3e3659d7e17c43c87cb4eb19785e9453d6ab10ac5b05ceb": true
     }
   },
-  "https://australiainstitute.org.au/events/dr-hugh-saddler-memorial-lecture/": {
-    "checked": "2026-08-12",
-    "content_hash": "2a61f7e5ce24a09c44d3f1f09ecddf3f0811b6d44011d979633ad82d79e3c83a",
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "939670c4f221cb54b3cbf3b9889c4b83a44ab4e1ddca899410f1e2a8d0b9f882": true
-    }
-  },
-  "https://bonds.coop/about-us/our-story/": {
-    "checked": "2026-08-12",
-    "content_hash": "64133499a5f3dbacf5a0feb85ac302ff31c33d8b56de113d2db1792612dd6492",
-    "etag": null,
-    "last_modified": "Wed, 12 Aug 2026 03:53:46 GMT",
-    "verified": {
-      "b3ede53ee5fce2752e17d9ab41a205960c534728fc5fa44fae82728e1a491939": true,
-      "e7ffcaa0c1357d088fb509ced6334a1cc45468affe79436ede9aab8e83434f6d": true
-    }
-  },
-  "https://canberra-alliance.org.au/events/": {
-    "checked": "2026-08-12",
-    "content_hash": "2ee5213dfc060abdf48a43fe16b3969e60f1bbf548bfc1036bc470be4547590f",
-    "etag": null,
-    "last_modified": "Tue, 11 Aug 2026 12:51:51 GMT",
-    "verified": {
-      "2ee5213dfc060abdf48a43fe16b3969e60f1bbf548bfc1036bc470be4547590f": true,
-      "483d1c07788f0bdf5d93d267ff384e304c3d7d425c93ed98373029e69e1535cc": true
-    }
-  },
-  "https://civichive.org/about-us/": {
-    "checked": "2026-08-12",
-    "content_hash": "aee7e1dc3880e8ec6b1c12e3c9c5fe4c6c50ef9e9673b5c2a409de2b9ebfafa1",
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "67ce0166bba34c1ac6dc47214ec2e5da1eb25890c25dd0259ba97992ea97afe2": true
-    }
-  },
-  "https://civictech.africa/about-ctin": {
-    "checked": "2026-08-12",
-    "content_hash": "74ae83bfa42253f65e7cfb42d5de7ad8dd8030366ec6dc44063bce6e59e827e5",
-    "etag": null,
-    "last_modified": "Thu, 06 Aug 2026 12:14:22 GMT",
-    "verified": {
-      "74ae83bfa42253f65e7cfb42d5de7ad8dd8030366ec6dc44063bce6e59e827e5": true
-    }
-  },
   "https://civictech.guide/about/": {
-    "checked": "2026-08-11",
+    "checked": "2026-08-12",
     "content_hash": "07ce94ed3e6961d650dc0b94334a88be014c06184000639fde83467b3d5e0238",
+    "contexts": {
+      "25d546fb9449c1380fed6e2ecf84a9706dc54f4f4af5a075ca0c658537c6dc92": {
+        "prefix": "endar Map Build \ud83c\uddfa\ud83c\uddf8 EN Submit Project Civic Tech Field Guide About the Field Guide Welcome",
+        "sha256": "07ce94ed3e6961d650dc0b94334a88be014c06184000639fde83467b3d5e0238",
+        "suffix": "It's primarily a crowdsourced directory where you can find helpful resources and inspiration, and share your own work with the world. We also publish",
+        "text": "The Civic Tech Field Guide is the world's most complete collection of projects, tools, and organizations using tech for democracy. It's primarily a crowdsourced directory where you can find helpful resources and inspiration, and share your own work with the world. We also publish research and regular updates about the state of the field."
+      }
+    },
     "etag": null,
     "last_modified": null,
     "verified": {
       "25d546fb9449c1380fed6e2ecf84a9706dc54f4f4af5a075ca0c658537c6dc92": true
     }
   },
-  "https://congresovisible.uniandes.edu.co/quesomos": {
+  "https://democracy-technologies.org/participation/consensus-building-in-taiwan/": {
     "checked": "2026-08-12",
-    "content_hash": "0afed153ef4cf5e7c8889335e5ed34f055042539e7bf92474130666affa6b37a",
+    "content_hash": "640700c8d55ff5c4c7db97b39b78ebafa5f3de60e5ef2550497d23e9973bfa0b",
+    "contexts": {
+      "8268a06cd26c208f2ff000a2f0f9954f57894ab78c1fecb71998e7e7b592eef1": {
+        "prefix": "Taiwan is a world-leader in digital democracy. It all started with vTaiwan, an online participation platform powered by Polis. Launched in 2015,",
+        "sha256": "640700c8d55ff5c4c7db97b39b78ebafa5f3de60e5ef2550497d23e9973bfa0b",
+        "suffix": "\u00c2 A demonstration by the Sunflower Movement in Tapei, 2014. The vTaiwan platform was developed in the wake of the protests.",
+        "text": "Taiwan is a world-leader in digital democracy. It all started with vTaiwan, an online participation platform powered by Polis. Launched in 2015, it has transformed how the government brings stakeholders together, allowing for a more inclusive approach to legislation.\u00c2"
+      }
+    },
+    "etag": "W/\"6a7a98b3-211f7\"",
+    "last_modified": "Tue, 11 Aug 2026 03:36:19 GMT",
+    "verified": {
+      "8268a06cd26c208f2ff000a2f0f9954f57894ab78c1fecb71998e7e7b592eef1": true
+    }
+  },
+  "https://democracyincolour.org/about/": {
+    "checked": "2026-08-12",
+    "content_hash": "32dadf29e415818d14066f068f18e7f2bb2443683fdac35fbd9372223bd7f932",
+    "contexts": {
+      "97663fcf73415c375a71271789c017fae384cc2a567f080f6f5b79f4a250fb25": {
+        "prefix": "About Us Who We Are",
+        "sha256": "32dadf29e415818d14066f068f18e7f2bb2443683fdac35fbd9372223bd7f932",
+        "suffix": "The work we do is built upon a rich legacy of community organising, personal sacrifices and collective wins of the anti-racism movement across the wo",
+        "text": "Democracy in Colour is an organisation that advocates for racial justice by identifying the various manifestations of racism in society and providing targeted and strategic interventions that centre the voices and lived experiences of racialised and marginalised communities. The work we do is built upon a rich legacy of community organising, personal sacrifices and collective wins of the anti-racism movement across the world."
+      }
+    },
     "etag": null,
     "last_modified": null,
     "verified": {
-      "ff2df5821fe2c240be3ae3929f7f1cd4493e284cf54f05564b8ec123e3629cc2": true
-    }
-  },
-  "https://congress.crowd.law/case-vtaiwan.html": {
-    "checked": "2026-08-12",
-    "content_hash": "30add457c7d4a9687b5f00fd24daa8d575219b566f1481853d1246c8fcb76cd0",
-    "etag": "W/\"5f87868d-f01e\"",
-    "last_modified": "Wed, 14 Oct 2020 23:15:25 GMT",
-    "verified": {
-      "30add457c7d4a9687b5f00fd24daa8d575219b566f1481853d1246c8fcb76cd0": true,
-      "4d5cfd57418cdb1c705ee7d8da5cf19e428d42dfc14037c13d0d9f3d5feacf42": true
-    }
-  },
-  "https://digidemlab.org/en/about/": {
-    "checked": "2026-08-12",
-    "content_hash": "e4877b3468c72c479a011f77f1c920735a7e56908c54f57bbd5462f5ae696925",
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "e4877b3468c72c479a011f77f1c920735a7e56908c54f57bbd5462f5ae696925": true
-    }
-  },
-  "https://en.idi.org.il/articles/47344": {
-    "checked": "2026-08-12",
-    "content_hash": "98aab4fa917b6c7ff72608084c79d6545ff3cf35c233082439ed3ab9ef01d737",
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "bc1f3b91500490bbbb7967dc30a839b3872e4910098ab9d8355ee99e481dc085": true
-    }
-  },
-  "https://en.wikipedia.org/wiki/Anti-Corruption_Foundation": {
-    "checked": "2026-08-12",
-    "content_hash": "a8e4becb59b91507cdcd5157ce9c1438c7e39f1cd7b2fbcf51592cd2e1bfe4a3",
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "8465d8c1ab9f9c0d1b70c0a237982ebfc5b9c9e31e085894562107081965a17c": true
+      "97663fcf73415c375a71271789c017fae384cc2a567f080f6f5b79f4a250fb25": true
     }
   },
   "https://en.wikipedia.org/wiki/Anti-austerity_movement_in_Spain": {
-    "checked": "2026-08-11",
+    "checked": "2026-08-12",
     "content_hash": "0504df7b59e8f81954f4f0fa76cdd9cf6aafa6bd55eeb3cc423698cbb0019424",
+    "contexts": {
+      "795652a925bdd8df979e18c0b90380d245f7ec9355567cb78a3d9e1aad2d8f58": {
+        "prefix": "of protests, demonstrations, and occupations against austerity policies in Spain that began around the local and regional elections of 2011 and 2012.",
+        "sha256": "f1faba92cca383a6b379a5d2ccc27de9720baebac606e4f04b328e75721954d8",
+        "suffix": "many of the subsequent demonstrations spread through various social networks such as Real Democracy NOW (Spanish: Democracia Real YA) and Youth Witho"
+      }
+    },
     "etag": null,
     "last_modified": null,
     "verified": {
       "795652a925bdd8df979e18c0b90380d245f7ec9355567cb78a3d9e1aad2d8f58": true
     }
   },
-  "https://en.wikipedia.org/wiki/Archon_Fung": {
-    "checked": "2026-08-12",
-    "content_hash": "5f0634fa93590b83783bf6dc7d916367486409066a940bcb0868a1c8a9c6473c",
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "6374dcd3e0821688685025db3c86e9a671aba278a24ae88059089fb98ca50cd6": true
-    }
-  },
-  "https://en.wikipedia.org/wiki/Australian_Democrats": {
-    "checked": "2026-08-12",
-    "content_hash": "e5006e01c0a20514a01c3cce9b0acdd3ac8cd049fee7d34448f7ea56cec28ba7",
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "066428938846717a17e953f7891f39420408f6cb3d20fa96526907a821b10764": true,
-      "541a526ac206ba793a64283b63325b6804ac203e2296dbaa7e6fc7671f932f5f": true,
-      "81261318cf8d95ec580eeb8c310d0a8caea4e44b2ce19dcd47c2593955927907": true
-    }
-  },
-  "https://en.wikipedia.org/wiki/Bersih": {
-    "checked": "2026-08-12",
-    "content_hash": "f2bffa60155e6a64ac8d1faaef65dcf5ae6bdfba5314b26d8af526e6ee8eac11",
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "6b7f1a4df9164a7817672fdd1f01861163386a2ffc435f604fd09211c94bea07": true,
-      "dd28a4904f92a247eaa57255c3e04ba6ded76d61a13e2abe04911765153c6796": true,
-      "e0a18796edba32568bc3041843efc0e82c15c1d3cd4ae1b76ed9e631c25956f8": true
-    }
-  },
-  "https://en.wikipedia.org/wiki/Chinese_People%27s_Political_Consultative_Conference": {
-    "checked": "2026-08-12",
-    "content_hash": "a2c25dccedbccba09e111b7629f3f6820fd5c95ac4e2cdd0ed417e70bfcf1df2",
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "7659e6902e99e341134ed7c66a2a41fa000d5785c3ba4e5822a624036fd897df": true
-    }
-  },
-  "https://en.wikipedia.org/wiki/Citizens_Foundation": {
-    "checked": "2026-08-12",
-    "content_hash": "3f682c8b64c10c5e8610bff72aa1a8d7589f8ebe4cfb9419aa4d7914aa8395c5",
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "17eadeb4e1d8fc9319dd05cafbefeb5ba1e9348de377c5ee134507234ee971c7": true,
-      "37f16e77c155f1c1c87b24599019dbd7ab228763cfaaecdd6f872c2ef92595d6": true,
-      "d9dc02a93f7068a23159f948ae9ed7f7e5e777e54a1b30408460f6729b81285c": true
-    }
-  },
-  "https://en.wikipedia.org/wiki/Confederation_of_Indigenous_Nationalities_of_Ecuador": {
-    "checked": "2026-08-12",
-    "content_hash": "bede0c9bb305308c177c6beff314390e0e282a2d4a3f546adf2f43b66f574470",
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "77983da3c49cb0c7611de766862228cd96c65bf742baafb87c1f95d0c6358667": true
-    }
-  },
-  "https://en.wikipedia.org/wiki/Decidim": {
-    "checked": "2026-08-12",
-    "content_hash": "04d8ae810638f210386b01769841fb8748ad6a4d286880c9fd53ba37db0838ed",
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "30d8944e46f747728de22067c2091933f8dd7c8b84613b88c6fddb807882b229": true,
-      "30ee79f603688712b59f21f9cec512155de6c05b8a216dc21a73add136775b92": true,
-      "8c6e1c096f1360642231ed8bc379921ba0160948ccdb79aed79aa6164c1b4f3f": true,
-      "ac5665faa39dc2139668f945756569ea177945ea9eb3ee61c5901892627cc2ea": true
-    }
-  },
-  "https://en.wikipedia.org/wiki/Democracy_International_eV": {
-    "checked": "2026-08-12",
-    "content_hash": "552b1faa80559c369b2a3f306843e47b50a6e1222a526ea670f8193bd1241fcd",
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "94ebdc81e07f61e6d18c2421a48bf160eb987a9cc769637451378e69f2f7c764": true
-    }
-  },
-  "https://en.wikipedia.org/wiki/Democracy_in_Europe_Movement_2025": {
-    "checked": "2026-08-12",
-    "content_hash": "d6bfbbbfe6bbbaca148728f8b4bc720a39af868e55e361a2f79670d0d0ab73d3",
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "26118a8021d971dadf6e179abaa0a3d7f52d57a5b7ac249ccdf67980d8a29177": true,
-      "4abf8e4f92d008e5c3480fa209176b706a80c114beb28744bfe93f71d6d79969": true,
-      "5dbab3ad4ddc7385214478a7cd290b87e90462b80536e38e91d2fdf7a983319f": true
-    }
-  },
-  "https://en.wikipedia.org/wiki/Electoral_Institute_for_Sustainable_Democracy_in_Africa": {
-    "checked": "2026-08-12",
-    "content_hash": "b601a97f171636b368326b522906f62741cb0b1c62813d67eae59f2ec5717ec6",
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "4d54266b0db9daa49fcd3496dce20af6b770b0889623486afd3da919ba781fe1": true
-    }
-  },
-  "https://en.wikipedia.org/wiki/Electoral_Reform_Society": {
-    "checked": "2026-08-12",
-    "content_hash": "cbe8c7fc95d0f199a131795297e81285b85cd57b36ee64cc52700335dd31df3a",
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "74287bc5b9b7c87203003151dac8f078cf62108994bb26796251c76f7a3e065d": true,
-      "a6d0bbffcedb06353a2823950e29a8397d56e9512cc5bea89abe7db209d1952f": true
-    }
-  },
-  "https://en.wikipedia.org/wiki/Flux_(political_party)": {
-    "checked": "2026-08-12",
-    "content_hash": "8165a6bf95538d2064e68a910d8e3ca43c3e24f012ce7342fb5eb90e6ef105c3",
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "b928b77f00aef5a573cab550ecf58b461e57e3b4d06415caadc078691a6c6ffa": true
-    }
-  },
-  "https://en.wikipedia.org/wiki/G0v_movement": {
-    "checked": "2026-08-12",
-    "content_hash": "53374246d21b55f7ccc6e4609a414c26eec3b8ecd7b27b1c95301828dc27057d",
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "0a118d3ed00a70bbb2c4813158a69fb076b9d05ca631309519ece470548d2e1d": true,
-      "7e4edcc5b838f5762a3cf0c6cb59d89b4d3f7c0354f54277f42384c020d54509": true
-    }
-  },
   "https://en.wikipedia.org/wiki/Glen_Weyl": {
     "checked": "2026-08-12",
-    "content_hash": "e30a7df50bb9d845fb9b2ec2ec30bcf228765789048ad46bc2823114e9708aed",
+    "content_hash": "cb9d9567efbcfc4bf5c5701a8e41138767300cb996ee846cb569b2acc34da649",
+    "contexts": {},
     "etag": null,
     "last_modified": null,
     "verified": {
-      "0bdaa9c2fd1fb2b871ecee89b5a53f12b7095f1599806252be7b5bec02bd325e": true,
-      "5aab2b96543d5b52643c6eafea6aeeef547c091ec0b42731223d1c788956bf12": true
-    }
-  },
-  "https://en.wikipedia.org/wiki/Golos_(election_monitor)": {
-    "checked": "2026-08-12",
-    "content_hash": "a8bf09b8195dc71e5e8118f50ce1db1a032fa81451b074c7585e18a2e38a1785",
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "ab771d9ab8712fc12992a02f30753e42d7a995429da4ae36b42738bd871de385": true
-    }
-  },
-  "https://en.wikipedia.org/wiki/Goree_Institute": {
-    "checked": "2026-08-12",
-    "content_hash": "a506da41baec16ccb33a6edb4bd0994cbf1bec13fa9f398b60d8b66d821fbe42",
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "9a4a8948591e1461cdfdcbc7f0fcd60200d6966f3613b78c4ba7da1ee9df2502": true
-    }
-  },
-  "https://en.wikipedia.org/wiki/Grattan_Institute": {
-    "checked": "2026-08-12",
-    "content_hash": "fc9ba83cfcab37b8636f22a0359d593db3f482d11186b7623bd17d90397fd2d1",
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "44030e8c5aad432491ba2879893666c3a50b368c00e3f4326f8943b4402b5346": true
-    }
-  },
-  "https://en.wikipedia.org/wiki/International_Institute_for_Democracy_and_Electoral_Assistance": {
-    "checked": "2026-08-12",
-    "content_hash": "978c70a7875350416aad6a887931799ccf0d9ee59881abf3f3fd23073043cdae",
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "1b645714318845edd96af9bbde238d503114f9eebff6727f3676d883119de171": true,
-      "5f80002617aaf191548e23593a8cd6bb976b825ee2fabd82f464a5b2d8da82c5": true
-    }
-  },
-  "https://en.wikipedia.org/wiki/Internet_Freedom_Foundation": {
-    "checked": "2026-08-12",
-    "content_hash": "75cc773ecad4497f2b805f78908d379afa09ff0d3747f094d1ad6a0e932d0f61",
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "73d0d56f1809f85f2243083c223810aa287041a2501782c0f3fb1b5eae434210": true,
-      "bbd6a4a88b9358ec3e6c47bea8b037fae01dc00f60bbf0f53e035a6fd30692be": true
-    }
-  },
-  "https://en.wikipedia.org/wiki/Israel_Democracy_Institute": {
-    "checked": "2026-08-12",
-    "content_hash": "2cf14a3618bac8540d774dd788952f7800335425e94271a47eac429d28733751",
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "0195c0d901307fd47446df9f044c72093905de80620d7712ad0da3c086f41ffb": true
-    }
-  },
-  "https://en.wikipedia.org/wiki/Janaagraha": {
-    "checked": "2026-08-12",
-    "content_hash": "ee3f9d718d75ae896e70b03aa73fbf30d31b0b4842241516dbeba367b2770da3",
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "966cf44f3e6f2640c0a708a402a81e954be306d6cc2306a8378b1050211b6f3d": true
-    }
-  },
-  "https://en.wikipedia.org/wiki/Kialo": {
-    "checked": "2026-08-12",
-    "content_hash": "12e9507b78c839b9897170b7ef209a5ea45fb3e0d1fa63604c102afd631d5834",
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "b72ba393b2d89339bb659a151756e88d10c1525eea8a9dff430760a57c256709": true
-    }
-  },
-  "https://en.wikipedia.org/wiki/Kongra_Star": {
-    "checked": "2026-08-12",
-    "content_hash": "45536d40c4f30592bbaab66487fe215aeb8b22d4179f6c84babf948670bcd054",
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "a7f1e2a55c14fa4eae60947f93684afe46edb6b21fe2df692a3c5fda1fd01853": true
-    }
-  },
-  "https://en.wikipedia.org/wiki/LiquidFeedback": {
-    "checked": "2026-08-12",
-    "content_hash": "286ec0e1662d402b723fe4054f381f338a07e6b44ee9f29bf6603c6743163776",
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "6dfb046827d7af62adf52aa151df8b6f677314b92c087e1e2b28c6ccce06b757": true,
-      "c4dca3c15f4d7fc508f70c10fa5972dfb9d62e4dee2ee95615cf258fb8781e3e": true,
-      "ddb63b6322f415b07dfca8fbb8811d49abd2c2ef4cc3ee48e010b89e07f122f9": true,
-      "efe411c66ca31c2815d935d5c144e0bf43b1da4f3973190f4e5bd88a6eb876f0": true
+      "380a3016f7cfcdcaa42eb30d881988d9ccb5fb5daad7fef3e92c231e0a683d71": true
     }
   },
   "https://en.wikipedia.org/wiki/Loomio": {
     "checked": "2026-08-12",
-    "content_hash": "5bbec34580292d81ff038b8e3caafd98d31f234d49f54c1402d7644d65cdbf5e",
+    "content_hash": "c5179dd59ae3e7827cf7efaf7341dcbca9beac609363d12e9f5459dcfd319d04",
+    "contexts": {},
     "etag": null,
     "last_modified": null,
     "verified": {
-      "092caa8015f99b5350c42717d3dcf2db57840656ce87036f518608a02193cca0": true,
-      "1867b25f67d2d190fc05f2945991005b5f1951c368dd5d1139e71efe37235e2a": false,
-      "dbedffff7b1614e9b51b963011e98ec065e99400d9180704e74dea07f8cbfcaf": true,
-      "fec9682393b45940117ca461d9f1dfdb5e65b0b41778cdffb24e1a12545586a0": true
-    }
-  },
-  "https://en.wikipedia.org/wiki/Make_It_16_(New_Zealand)": {
-    "checked": "2026-08-12",
-    "content_hash": "511c1d7cb1b58f564fa680c8734a2b8412ae53aa0bcde0b5bbbb85416ebc46aa",
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "2901b6847919ec28eaa7079c767bf0cd6e1852acdb721849d756813d2dddd221": true,
-      "2d5bfb93311f7d54d0547b3f332ea40ae7db0f81d8ba762ae8b9cb7366005006": true,
-      "719c825e0dae72cd5719315c9e58b84608d126231b7418380328a52fb85cf4f0": true,
-      "98ff0622828044cdbed62020148a08aaa216313879c35a893d7611fcaf3f98ed": true,
-      "fc4d7bdcbb348b04c545278d84e1f1b6d34af843e74bc9daf5979d408204a005": true
-    }
-  },
-  "https://en.wikipedia.org/wiki/Memorial_(society)": {
-    "checked": "2026-08-12",
-    "content_hash": "21419ceb3d6880b1bf236a4ae15395650b9cf8f377bfcc575aac1a8605bf6d21",
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "a1c1f9fcea88d94f56c134ea19f5212f68bf38344f87d1bc6daf5d5abe0df3cf": true,
-      "e5432f27f5a9c24cf6114ce6744f6ffaa0ca7aa5d5c1e3dd90e76adedcbdc4e0": true
+      "1867b25f67d2d190fc05f2945991005b5f1951c368dd5d1139e71efe37235e2a": false
     }
   },
   "https://en.wikipedia.org/wiki/Meta-organization": {
-    "checked": "2026-08-11",
+    "checked": "2026-08-12",
     "content_hash": "e5219cbc361d6b75e77510b4bab7c4cf4919c75776b4d3ede9f04eb2936b5d11",
+    "contexts": {
+      "e41cf1d78553fd91acba54e621c20a54089a6ea2d47b2e421ef4d2595b2b4e58": {
+        "prefix": "",
+        "sha256": "e4439d61b8c05cdfcefe974d2123580799ace409a51e68fa6f6c05175f500ffe",
+        "suffix": "They further elaborated and underpinned the concept theoretically in 2008 by focusing on explaining what difference it makes to have organizations as"
+      }
+    },
     "etag": null,
     "last_modified": null,
     "verified": {
       "e41cf1d78553fd91acba54e621c20a54089a6ea2d47b2e421ef4d2595b2b4e58": true
     }
   },
-  "https://en.wikipedia.org/wiki/Movement_for_Quality_Government_in_Israel": {
-    "checked": "2026-08-12",
-    "content_hash": "507b7d338732081292fa6a7799d1279ae91b4a89037ee90266b2425ae23f0445",
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "31984a561fd54fc51412742ebb65d5366c9a335218c89cf590a2edca3ef0c7bd": true
-    }
-  },
-  "https://en.wikipedia.org/wiki/Movement_for_a_Democratic_Society": {
-    "checked": "2026-08-12",
-    "content_hash": "723407162fd857fad45f78285f40182125f7e4062780cce6fb8f02477a411989",
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "1052750b2d5233b820e34a7a2935b16b8aa9b557a609b29c0fa2989ef6248eef": true
-    }
-  },
-  "https://en.wikipedia.org/wiki/MySociety": {
-    "checked": "2026-08-12",
-    "content_hash": "07c4c122ec71bd90c6cb77c2c9107fdf597d47e5365e9aeb6a874b1ae94912b7",
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "12e921bba88858d60049eea5ff5de7107661450cccafb027e4f4de125a271615": true,
-      "25e1294d420a35c9adc5cc2fd463d2eea774713006147d67f4b89ba582e6e7a3": true,
-      "e66fde5d9ac849a19fa9e95fb66a859596c3a906bc58adf03663193b37876102": true
-    }
-  },
-  "https://en.wikipedia.org/wiki/National_Citizens%27_Movement_for_Free_Elections": {
-    "checked": "2026-08-12",
-    "content_hash": "fa014028e14e0f65543ec15fc143b0cbe9982b6b4cd8bbd70ee7f5e796d5a5bd",
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "493a17f812dfd9f368518453df2bbba29f27970fa1a7443450642a128272898b": true,
-      "8532e801a42b444e919d4e9f4afccc5d251d885d2c9ea702ea61f5fc604ed2dd": true
-    }
-  },
   "https://en.wikipedia.org/wiki/Occupy_Wall_Street": {
-    "checked": "2026-08-11",
+    "checked": "2026-08-12",
     "content_hash": "68b2e5a328236f23b0e34b6d94b821a66b8345307a7da6625af82fb59495a078",
+    "contexts": {},
     "etag": null,
     "last_modified": null,
     "verified": {
       "c6f60c8d72e63dc448c4073a16dc4d3fe8c84e685f19eda257ee38227c5b4a6b": true
     }
   },
-  "https://en.wikipedia.org/wiki/OneVoice_Movement": {
-    "checked": "2026-08-12",
-    "content_hash": "866112edee37b40b4f5059d96c4c6f4bae03ed6cbdf58434d3f268781b115262",
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "ea099608e4d1f572313ca46f4bc93668b0267893ce10bccc8faa878edf4686da": true
-    }
-  },
-  "https://en.wikipedia.org/wiki/Online_Direct_Democracy": {
-    "checked": "2026-08-12",
-    "content_hash": "fc3e802edce98d7ca9ad9c24c3536c9c52ea3f00fa0574d3afe91fbda5344020",
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "2e50c03586481bd8a3839dc609d34660a99001f482b65ffae227ce729cef7619": true,
-      "d26109095143e13a8da211ffecd4607bd488d4f257b477bd1b7d3993a8ecac91": true
-    }
-  },
   "https://en.wikipedia.org/wiki/OpenAustralia_Foundation": {
-    "checked": "2026-08-11",
+    "checked": "2026-08-12",
     "content_hash": "17e022c6157463ba6a56fbbc7ad00dabc582ebfc5953c6ca9d6e69e1454030a1",
+    "contexts": {
+      "3c9c203d4bcf14372dc6f31d343c75ee3325e6e9120851df796f2d222260b18e": {
+        "prefix": "ows users to submit freedom of information (FOI) requests to government bodies under the Freedom of Information Act 1982. === They Vote For You ===",
+        "sha256": "17e022c6157463ba6a56fbbc7ad00dabc582ebfc5953c6ca9d6e69e1454030a1",
+        "suffix": ". It displays \"voting patterns by politician, when they vote against their own party, and offers descriptions of divisions in plain English\". It recei",
+        "text": "=== They Vote For You === They Vote For You, established in 2014, tracks the outcomes of all votes in the House of Representatives and Senate. It displays \"voting patterns by politician, when they vote against their own party, and offers descriptions of divisions in plain English\". It received start-up funding from Google."
+      }
+    },
     "etag": null,
     "last_modified": null,
     "verified": {
       "3c9c203d4bcf14372dc6f31d343c75ee3325e6e9120851df796f2d222260b18e": true
     }
   },
-  "https://en.wikipedia.org/wiki/Open_Society_Foundations": {
+  "https://events.humanitix.com/radicalxchange-foundation-in-melbourne": {
     "checked": "2026-08-12",
-    "content_hash": "94f4db237389fd0671c26de8c3e8f151cb57ce523b9200c96f9d27e9faa3a662",
+    "content_hash": "5760c293c05f53070e2c0ae9d9c0abbc13710775fe504090d59aaa4ed3ddff7f",
+    "contexts": {
+      "5760c293c05f53070e2c0ae9d9c0abbc13710775fe504090d59aaa4ed3ddff7f": {
+        "prefix": "desktop Yahoo Close icon Close An invitation to meet RadicalxChange Foundation in Melbourne",
+        "sha256": "5760c293c05f53070e2c0ae9d9c0abbc13710775fe504090d59aaa4ed3ddff7f",
+        "suffix": "At the Small Giants Wisdom & Action Forum in May, many were energised by the extraordinary work and vision of Audrey Tang, Taiwan's di",
+        "text": "Join us to learn about civic tech for democracy and community, and explore how our tools might serve your community or sector."
+      }
+    },
     "etag": null,
     "last_modified": null,
     "verified": {
-      "d47b7696573fecb7b9b8dd82e90d9b38690483787b26cdd715e8273c75efac7c": true,
-      "e584d72bca326dc5da833a514e22aff2b8ced7a2780a0b0cab16025031efa187": true
+      "5760c293c05f53070e2c0ae9d9c0abbc13710775fe504090d59aaa4ed3ddff7f": true
     }
   },
-  "https://en.wikipedia.org/wiki/PRS_Legislative_Research": {
+  "https://glenweyl.com/radicalxchange/": {
     "checked": "2026-08-12",
-    "content_hash": "825d531a7973ed01a163dfe6cbd15b4342dca1d6b1e803a33b1e65710970624f",
+    "content_hash": "a010f2e8072c84a697d2cd73667f7a7b9d4436b8e6a29df63775be7e70d14445",
+    "contexts": {
+      "a010f2e8072c84a697d2cd73667f7a7b9d4436b8e6a29df63775be7e70d14445": {
+        "prefix": "Foundation (RxC) is a global movement for next-generation political economies",
+        "sha256": "a010f2e8072c84a697d2cd73667f7a7b9d4436b8e6a29df63775be7e70d14445",
+        "suffix": "RxC connects people from all walks of life \u2013 ranging from social scientists and technologists to artists and activists. The movement is ever-ev",
+        "text": "Founded by economist Glen Weyl in 2018, the RadicalxChange Foundation is a 501(c)(3) nonprofit dedicated to advancing the RxC movement, to building community, and to education about democratic innovation."
+      }
+    },
     "etag": null,
     "last_modified": null,
     "verified": {
-      "c8e33bf627761470e3fed004a375537e23607f962fa9968d6057c04b8a397746": true
+      "a010f2e8072c84a697d2cd73667f7a7b9d4436b8e6a29df63775be7e70d14445": true
     }
   },
-  "https://en.wikipedia.org/wiki/People%27s_Solidarity_for_Participatory_Democracy": {
+  "https://reclaim.org.au/1-lismore-peoples-assembly-housing/": {
     "checked": "2026-08-12",
-    "content_hash": "0ff2d8f901b699518ba73f0520217f13bc6f62013b9e829e074ba2acf779b10d",
+    "content_hash": "c32ff80280689420b855efd6209762b535e60b88091d0669f8ceff73e226e820",
+    "contexts": {
+      "c32ff80280689420b855efd6209762b535e60b88091d0669f8ceff73e226e820": {
+        "prefix": "for their house including safety and facility audits of bought back houses to identify their potential for different kinds of tenancy.",
+        "sha256": "c32ff80280689420b855efd6209762b535e60b88091d0669f8ceff73e226e820",
+        "suffix": "More generous support for landowners in urban and rural areas to place transportable homes and tiny homes on their properties. Explori",
+        "text": "Community based diverse and cooperative solutions for housing"
+      }
+    },
     "etag": null,
     "last_modified": null,
     "verified": {
-      "3fdfced0da5f080aa790d9058b537d514b8f75be1887c01038d4fcfd48463772": true,
-      "c23ca1c5aa636d9bf4ab16368414fc797fb682c81bff7fc2ee1b8913e14310f1": true
-    }
-  },
-  "https://en.wikipedia.org/wiki/Pirate_Party_Australia": {
-    "checked": "2026-08-12",
-    "content_hash": "6ede1abce4be770de5705036a7afdd8564c7b2cb61262b3ab9cc1dc7e63e7257",
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "df4b0b1a904c336946576a29110f8081dd950fda90cfbb941e3be97d90184a49": true
-    }
-  },
-  "https://en.wikipedia.org/wiki/Pol.is": {
-    "checked": "2026-08-12",
-    "content_hash": "c09979850fb1c134651d7c16d242e4707adf2163e21ff6b910c7e91852785436",
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "5849399f505b3877368f3aeabc6090435f8a0a93048e66059b1abd5bfe895333": true,
-      "64049a89562a8859c8d7d48918d4ff843493e0205ed930beb778f22740ae5119": true
-    }
-  },
-  "https://en.wikipedia.org/wiki/Referendum_Council": {
-    "checked": "2026-08-12",
-    "content_hash": "00425574072d4e370501489d674e0ef7b2f28452848e0194c15772cb527141ce",
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "109c86cd7e3b92090813776256ddd4ad4fa1a0cbb08839c4ede6ae3d837af1c6": true,
-      "4e1354b833eabf9827b3a0976d458f279fd2dd4b7e6183fcbbdf513b855b2dd1": true,
-      "8978ffd3ddfb3b48f22edcea6a5db2068995581a97d0f11463e50b9de8f12556": true
-    }
-  },
-  "https://en.wikipedia.org/wiki/SITRA": {
-    "checked": "2026-08-12",
-    "content_hash": "a99db7a67f59fda03bbef3f18c151aef9c43c72507b29b08337487765eab3191",
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "596d57b7c10273488ccde41ae62afefebd76b2be0db734f867885f05edcfd311": true
-    }
-  },
-  "https://en.wikipedia.org/wiki/Team_Mirai": {
-    "checked": "2026-08-12",
-    "content_hash": "165e17cd062ad5fc1c25dbca44c0b40f88c5e42bdcf539afcded2d49d16ef565",
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "32b693ab4cab10c337bdda08c1aaf248123dce7e384fb545ae3bec212b77550f": true,
-      "eea05cc4aeb9f2635f5361212da220b50fcf1b7a2d52784bb3ee88b65fe1c94f": true,
-      "fb281bf5289384439f3adcb6d7089f2ebadd7bb4b04cf2a981a51381f7f342ab": true
-    }
-  },
-  "https://en.wikipedia.org/wiki/Ushahidi": {
-    "checked": "2026-08-12",
-    "content_hash": "1e638114714b09a477bb5fbbf6ca756026f069f27e65e5c3a755ccedeea1f724",
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "1d5cab0eb3b029b0b08d5510cae9e5de21440f9346c895adb825580e1dc2ec4b": true,
-      "3b13ce71d4df8c67de54e04e14c553a2d27598760c7d7d898e8bbbf6f1bb5e71": true
-    }
-  },
-  "https://en.wikipedia.org/wiki/Vietnam_Fatherland_Front": {
-    "checked": "2026-08-12",
-    "content_hash": "8a08d9848ba00956c361582a97da9840ed9813ee860c776cd3997640024f7d95",
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "64e7f584635ede720134d307c930bdcb3f0f4070cfe4906eec43034a1170d855": true
-    }
-  },
-  "https://en.wikipedia.org/wiki/Your_Party_(Japan)": {
-    "checked": "2026-08-12",
-    "content_hash": "0ddf94ee2c8744b9de5a441debec0f18394cf9d2da0392bb9dc6aac506fc6655",
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "7119e2602c6b658dcc60b51019a44b6582063ea3485d51f2a750b32e3461314b": true
-    }
-  },
-  "https://es.wikipedia.org/wiki/Transparencia_Internacional#Transparencia_por_Colombia:~:text=Transparencia%20por%20Colombia%2C%20la%20Delegaci%C3%B3n%20Nacional%20de%20Transparencia%20Internacional%20en%20Colombia%2C%20surge%20en%201998": {
-    "checked": "2026-08-12",
-    "content_hash": "68b301d6f8259e0aadf888ae3ca1146e4a93d73682dd868ce3f0ae8314758f69",
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "78d0e9775d4cb24f4ffdec969d1604a259f98c0fad8800ce75942454bc3117db": true
-    }
-  },
-  "https://europeandemocracyhub.epd.eu/exploring-worldwide-democratic-innovations-taiwan/": {
-    "checked": "2026-08-12",
-    "content_hash": "de9ad78b9cad3c69c404f3b13c4c4b3d6e50404cb8b800308d0b94cf36a731c1",
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "2a9827e95e461de39600b194bbad324ce207126c26f65c38215f074fbdc5a37b": true
-    }
-  },
-  "https://finance.yahoo.com/news/blockchain-voting-platform-horizon-state-140552054.html": {
-    "checked": "2026-08-12",
-    "content_hash": "d725a235edf5624ac75fe73fd63a5c3b77ca8ff9f4d45bda693544d7b8380af4",
-    "etag": "\"e6oe6o\"",
-    "last_modified": null,
-    "verified": {
-      "22b1e02513c292360803ac5655c367bc33603a705b0f1f39c0132e880d22803b": true,
-      "62372c547988d3ef264c216577151b7037be59ec6aa677e02729f7f2150a382e": true,
-      "e33500070d3cd016aa72397a9285fe078a23fc4125dd83f402bdeec91d5573d3": true
-    }
-  },
-  "https://foro.org.co/nosotros/quienes-somos/": {
-    "checked": "2026-08-12",
-    "content_hash": "041fee79860e8af0815e79054810b1433e1d9a8bf966b32f51428f40c4ebed6e",
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "ef1a5a97046e575f07466b0616270c5af87e6e2890cb2f5b6d40ea13a93cad00": true
-    }
-  },
-  "https://fr.wikipedia.org/wiki/AfricTivistes": {
-    "checked": "2026-08-12",
-    "content_hash": "252b5333c69d722536f81e7d16d535608eda6ec1b68943076d0eb749e44e1ea4",
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "aa02804f9b03b04becd68c1fb447c92d34ad98571b605ab024cd52ecbf790b6d": true
-    }
-  },
-  "https://ia.acs.org.au/article/2018/blockchain-to-revolutionise-e-voting.html": {
-    "checked": "2026-08-12",
-    "content_hash": "23469086d0ee48bd6b95906310cdafbfc621a0236b945ba611631b213dcaa03b",
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "3c37246d83e4a5392f7029ce3447911a6476b8a1d604e07af291b08c9ddd7a44": true
-    }
-  },
-  "https://icodrops.com/horizon-state/": {
-    "checked": "2026-08-12",
-    "content_hash": "60406e970fc249b1410e6a987d4e6124ef5a96109736d68a9869637ef8ca7f8c",
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "5c904e38e564b0a8d4b47db5ea418a77edc2218ccd005230848e07696e83ee9d": true
-    }
-  },
-  "https://mckinnon.co/about-us": {
-    "checked": "2026-08-12",
-    "content_hash": "f9a63121fe8480f53da154817ff9a11ca0384c4eef56d541da1bfbf68d5d6193",
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "a2ca2c617bccda3262bf256be647677dcd63460cb09c10ebad8ecf9cbfafb8d4": true
-    }
-  },
-  "https://memo98.sk/about-us": {
-    "checked": "2026-08-12",
-    "content_hash": "0f833eb3c633d85b3a38da94d615e23b7e830a960c64a21bfedc1557707ef62a",
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "099a8923b40dfb5fad557d79e1391393e3b4ff509b7af8f9f90ced88a95f994d": true,
-      "568376afcac99c06ee68699c81d865ef2481ccd135741fa51a96b463babd6826": true
-    }
-  },
-  "https://mosaiclab.com.au/contributions-to-the-field": {
-    "checked": "2026-08-12",
-    "content_hash": "15a6e3514340d9c60f2a4f982feb811f88d8b6e0b2e35d54dc6f484d2bd96580",
-    "etag": "W/\"2375d9c218a4d05a0f30fc4f2744bbbb\"",
-    "last_modified": null,
-    "verified": {
-      "d30b31381c021157f32d4c09c70a60bed94ebdc10c5ffe6302a3375d7f58b233": true
-    }
-  },
-  "https://mosaiclab.com.au/nicole-hunter": {
-    "checked": "2026-08-12",
-    "content_hash": "ff9d85661b80da6f039c286280f1a2a95e60c493584568c026e730fc788e8332",
-    "etag": "W/\"f035349f0b8585aab038198fccf6916f--gzip\"",
-    "last_modified": null,
-    "verified": {
-      "d410460b6473e7c213f9044e79b05d5451f0b0ea431bf65537048e7894506253": true
-    }
-  },
-  "https://mosaiclab.com.au/the-big-book": {
-    "checked": "2026-08-12",
-    "content_hash": "e405e7355a44918a2e4e5482b77a7d955573520fa1a5ab24c19cdafea271f29e",
-    "etag": "W/\"25dc172d63816cf0515b0352b4a776f1--gzip\"",
-    "last_modified": null,
-    "verified": {
-      "db84e2207fad582f7b14ddd8b2089764efe415a4478ed5c9b63266800412e00f": true
-    }
-  },
-  "https://newvote.org/the-institute": {
-    "checked": "2026-08-12",
-    "content_hash": "41de34d51814cde39f45696142e803023c7a62a397acac993a107c99cd8ca769",
-    "etag": "W/\"6666cbaa1cac9fe37ae11b46968d0526--gzip\"",
-    "last_modified": null,
-    "verified": {
-      "41de34d51814cde39f45696142e803023c7a62a397acac993a107c99cd8ca769": true,
-      "b35cb545be320c9010dd6960da99a334f68b1a7029ef88ed5399780127231fcb": true
-    }
-  },
-  "https://oaf.org.au/2014/10/21/they-vote-for-you/": {
-    "checked": "2026-08-12",
-    "content_hash": "15da2af9077edaf61dce05c1049c2c5ec542143f341ec24fec249165c58256e6",
-    "etag": null,
-    "last_modified": "Wed, 12 Aug 2026 08:00:50 GMT",
-    "verified": {
-      "b0fd8227f28a6f87992769921772f646b74777e4904d50a3119b254a7b6d22bd": true
-    }
-  },
-  "https://portable.com.au/articles/code-for-australia-announcement/": {
-    "checked": "2026-08-12",
-    "content_hash": "b33a7ba3fa2e231e3a823e4f9330c0225ddb4f927271c8e1a9e2c7688c9dd79f",
-    "etag": "W/\"50bbaf33872d1386ff1f85b148636694\"",
-    "last_modified": "Wed, 05 Aug 2026 23:47:05 GMT",
-    "verified": {
-      "9814534926a98c30bc7124d2d12012b27b3b33ea17fa6537fbc73964ea7f5f7d": true
-    }
-  },
-  "https://pt.wikipedia.org/wiki/Open_Knowledge_Brasil": {
-    "checked": "2026-08-12",
-    "content_hash": "b3934f46a0e6a500b3969fe5bbe004c6f133cf5547633a3001a36999203101e1",
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "155ee67d1b6db29710b62cb2593a35ae9cecf55f8d21bd6e8c3187a0b8f6c467": true
+      "c32ff80280689420b855efd6209762b535e60b88091d0669f8ceff73e226e820": true
     }
   },
   "https://reclaim.org.au/inaugural-lismore-peoples-assembly/": {
-    "checked": "2026-08-11",
+    "checked": "2026-08-12",
     "content_hash": "d6f51366e8b60fa798347718bf5438e92ff008ae6ff9f84b2d0205ec1d01e77e",
+    "contexts": {
+      "5d178e7c6e07b697f520a7fe1ef52fb0fbc054481088e0e3a7fac59039d9181f": {
+        "prefix": "own, those with power, the elites, the rich, or self-interested politicians\u2019 who are being represented. Reinventing democracy",
+        "sha256": "d6f51366e8b60fa798347718bf5438e92ff008ae6ff9f84b2d0205ec1d01e77e",
+        "suffix": ", starting in Lismore, with all surrounding communities heartily invited. And not just any kind of democracy, but participatory and deliberative democ",
+        "text": "The Lismore People\u2019s Assembly seeks to change this in the hopes of reinventing democracy \u2013 starting from the ground up, starting in Lismore, with all surrounding communities heartily invited. And not just any kind of democracy, but participatory and deliberative democracy. And everyone is warmly invited."
+      }
+    },
     "etag": null,
     "last_modified": null,
     "verified": {
@@ -739,300 +215,203 @@
     }
   },
   "https://reclaim.org.au/lismore-peoples-assembly-on-housing/": {
-    "checked": "2026-08-11",
+    "checked": "2026-08-12",
     "content_hash": "962246259b6a487def673b4ca2f1ccccb76cdf98ebf9ec8ca07b6e77a8f1ff9e",
+    "contexts": {
+      "d278588f631f4a70ec72de1f3c704dfaba8f790108d5454982daac2a07a590f7": {
+        "prefix": "project of grassroots, participatory democracy with the first of two public assemblies on housing. What happened:",
+        "sha256": "962246259b6a487def673b4ca2f1ccccb76cdf98ebf9ec8ca07b6e77a8f1ff9e",
+        "suffix": "to talk together about the housing crisis and to answer the question: \u2018What can this community do to get everyone a home?\u2019 The atte",
+        "text": "On Saturday 10th August, around fifty people gathered to talk together about the housing crisis and to answer the question: \u2018What can this community do to get everyone a home?\u2019"
+      }
+    },
     "etag": null,
     "last_modified": null,
     "verified": {
       "d278588f631f4a70ec72de1f3c704dfaba8f790108d5454982daac2a07a590f7": true
     }
   },
-  "https://stocznia.org.pl/en/about-shipyard/": {
+  "https://reclaim.org.au/the-year-ahead-for-the-lismore-peoples-assembly/": {
     "checked": "2026-08-12",
-    "content_hash": "6686a58250e335ed90f716edfd4130f33a471e120ffbc9a84a32a69da589567a",
+    "content_hash": "20e6e6902c0a0287a487e72910cf53a6f385b53c10413bfe63c121e7dee87b21",
+    "contexts": {
+      "20e6e6902c0a0287a487e72910cf53a6f385b53c10413bfe63c121e7dee87b21": {
+        "prefix": "ended by 17 humans and 2 Canines (with plenty of Turkeys and ducks out in the yard!) we came up with a few priority projects we are keen on:",
+        "sha256": "20e6e6902c0a0287a487e72910cf53a6f385b53c10413bfe63c121e7dee87b21",
+        "suffix": "Erect 2022 Flood Signage up on Poles \u2013 if the council won\u2019t do it, we will. (as per the disaster preparedness assembly) Neighbourhood",
+        "text": "Support local tiny house production (one of the solutions from the housing assembly)"
+      }
+    },
     "etag": null,
     "last_modified": null,
     "verified": {
-      "3ecc7fe884cef76a6eed16f7b62ddc16783b7ce7573bbc9870effdb3f29da458": true
+      "20e6e6902c0a0287a487e72910cf53a6f385b53c10413bfe63c121e7dee87b21": true
     }
   },
-  "https://techboard.com.au/company-profile/xo-1/": {
+  "https://topics.amcham.com.tw/2017/02/make-full-use-of-join-gov-tw/": {
     "checked": "2026-08-12",
-    "content_hash": "3573c52bd04966c380a9b3ac0c3023a221c7f8740521915567b994b26f9df89b",
-    "etag": null,
-    "last_modified": "Wed, 12 Aug 2026 08:01:27 GMT",
-    "verified": {
-      "1baf11b8ef1333f3a2d2798791bf4702594ca3570629131a7e0480711eaca5a1": true,
-      "3573c52bd04966c380a9b3ac0c3023a221c7f8740521915567b994b26f9df89b": true
-    }
-  },
-  "https://theconversation.com/as-the-latrobe-valley-moves-away-from-coal-jobs-could-a-green-workers-cooperative-offer-a-solution-245850": {
-    "checked": "2026-08-12",
-    "content_hash": "a306ccc6487edaac0cde189a7b4786539f159ed5ec8514b4e05fd24214af099e",
+    "content_hash": "33a12277a8f75847058928b3e1ca28b228ca8f74ed092f18be9bfca56b32eedd",
+    "contexts": {
+      "f2bc1350fab07763d03538042100f87084a4a232f7caa8b0f69e0187361eae48": {
+        "prefix": "for precisely that type of platform. The National Development Council, with assistance from the office of Digital Minister Audrey Tang, has developed",
+        "sha256": "33a12277a8f75847058928b3e1ca28b228ca8f74ed092f18be9bfca56b32eedd",
+        "suffix": "Accessible at join.gov.tw, the home page of the website bears the aspirational slogan \u201cParticipate to Make Taiwan Even Better.\u201d As welcome as t",
+        "text": "Thankfully, the government has recognized the need for precisely that type of platform. The National Development Council, with assistance from the office of Digital Minister Audrey Tang, has developed a well-designed online portal called Join to facilitate two-way communication between government offices and members of the public on regulatory matters. Accessible at join.gov.tw, the home page of the website bears the aspirational slogan \u201cParticipate to Make Taiwan Even Better.\u201d"
+      }
+    },
     "etag": null,
     "last_modified": null,
     "verified": {
-      "73435ff7a5545bc9080b2627633eeb791257c8f6b4596074ad79aec4f6bb3119": true,
-      "b4529489def4ef82e2782ce27b9e80bfc62ea03999d06cf939bce5bcfd69a01b": true
+      "f2bc1350fab07763d03538042100f87084a4a232f7caa8b0f69e0187361eae48": true
     }
   },
-  "https://www.afrobarometer.org/about/history/": {
+  "https://www.bertelsmann-stiftung.de/en/our-projects/democracy-and-participation-in-europe/shortcut-archive/shortcut-8-trailblazers-of-digital-participation-taiwans-join-platform-and-vtaiwan": {
     "checked": "2026-08-12",
-    "content_hash": "c0b33751c067cd7dab044fecf687a264444cbf4dee859309dd04c5d5c85cd3d7",
-    "etag": null,
+    "content_hash": "05c110afc92fb278b8ab2ca88cb1ae818a26074bf9d9d549880c39af9a005686",
+    "contexts": {
+      "2bb69c560807cf0c7be8d767dccd92457b40f1d32e94a61557df80263877489e": {
+        "prefix": "(\u201cgov-zero\u201d). It is designed to enable open, in-depth, and lengthy consultation processes between the government, citizens, and policy stakeholders.",
+        "sha256": "05c110afc92fb278b8ab2ca88cb1ae818a26074bf9d9d549880c39af9a005686",
+        "suffix": "It allows anyone legally registered in Taiwan to file a proposal with the national government and gather support. A proposal that receives at least 5",
+        "text": "Though born out of the same civic ethos of cooperation between society and government, vTaiwan and the Join platform are two distinct participation instruments. vTaiwan is an online-offline platform run by a collective of \u201ccivic hackers\u201d called gOv (\u201cgov-zero\u201d). It is designed to enable open, in-depth, and lengthy consultation processes between the government, citizens, and policy stakeholders. The Join platform is a government-run participation hub that is most notable for its petitioning function but also offers several feedback and discussion options. It allows anyone legally registered in Taiwan to file a proposal with the national government and gather support. A proposal that receives at least 5,000 supporters will be discussed by the relevant government agencies, who must provide a reasoned response."
+      }
+    },
+    "etag": "W/\"163657e8c9adddc98f1f63b35e471385\"",
     "last_modified": null,
     "verified": {
-      "05714f91762de147b3966b1cc74395a8048824ec50708f5def3adf56d5398fc4": true
+      "2bb69c560807cf0c7be8d767dccd92457b40f1d32e94a61557df80263877489e": true
     }
   },
   "https://www.cambridge.org/core/journals/world-politics/article/abs/performative-governance/AAC558378BEA651DB7E2480ECFFB4E10": {
-    "checked": "2026-08-11",
-    "content_hash": "82e0ccc0288520a4ce4e6061f66216c48b4f22a4d944d427e10b4f72bb28f9db",
+    "checked": "2026-08-12",
+    "content_hash": "93134d14a7aa9c241e7f7975a416fa9fb6a24d0c04f2b3d0cb0ffb4bc8401551",
+    "contexts": {},
     "etag": null,
     "last_modified": null,
     "verified": {
       "20720c979a84f8b081c99a8cc04c124e317b44d3945bc3e434153656085148ce": false
     }
   },
-  "https://www.cddwestafrica.org/about-us/": {
+  "https://www.demnext.org/about": {
     "checked": "2026-08-12",
-    "content_hash": "39f16719c192f7b17c396e2daff9c54a393dc48d63a425d0e96c0863a672ec03",
+    "content_hash": "31b35e733ed03b9b4e9d03ec4028349a9d92aa6532dabeec34b3a5fc9e73b1c9",
+    "contexts": {
+      "31b35e733ed03b9b4e9d03ec4028349a9d92aa6532dabeec34b3a5fc9e73b1c9": {
+        "prefix": "We believe in a more just, joyful, and collaborative future, where everyone has meaningful power to shape their societies.",
+        "sha256": "31b35e733ed03b9b4e9d03ec4028349a9d92aa6532dabeec34b3a5fc9e73b1c9",
+        "suffix": "We champion three democratic practices \u2013 sortition (choosing decision makers by lottery), deliberation (structured collective reasoning), and r",
+        "text": "DemocracyNext is an international research & action institute focused on broadening who has power and enhancing how we make decisions together."
+      }
+    },
     "etag": null,
     "last_modified": null,
     "verified": {
-      "a6dd36394b455564e8b2149b566c47366b1268142c34238968b75c9f58c146d7": true
+      "31b35e733ed03b9b4e9d03ec4028349a9d92aa6532dabeec34b3a5fc9e73b1c9": true
     }
   },
-  "https://www.ciudadaniai.org/nosotros": {
+  "https://www.democracyco.com.au/about/": {
     "checked": "2026-08-12",
-    "content_hash": "0b9471be8f65922f16b7dc2b3cb12858e60cbdd537443c4069a88df8c6d3eb47",
-    "etag": "\"1b3b3515ad689855e91529fc818366d3-ssl-df\"",
-    "last_modified": null,
-    "verified": {
-      "0b9471be8f65922f16b7dc2b3cb12858e60cbdd537443c4069a88df8c6d3eb47": true
-    }
-  },
-  "https://www.code4japan.org/aboutus": {
-    "checked": "2026-08-12",
-    "content_hash": "da27dacd83bcf74aa79100c2a63503c93e8217cf7c6d094e3842e322ffe289f3",
-    "etag": "W/\"ac1e7241ff20670f8446c8d8b4d18c6e\"",
-    "last_modified": null,
-    "verified": {
-      "da27dacd83bcf74aa79100c2a63503c93e8217cf7c6d094e3842e322ffe289f3": true
-    }
-  },
-  "https://www.crossroadsconversation.com.au/events/on-the-importance-of-conversation-for-the-very-idea-of-a-common-humanity": {
-    "checked": "2026-08-12",
-    "content_hash": "0fc86d407615caf5514aa2a0a14bcaa3c602d87db6f6fa1b78cccad3ea0274d2",
-    "etag": "W/\"3e703ee9205f236beb3b779d8dfbe408--gzip\"",
-    "last_modified": null,
-    "verified": {
-      "b28e891abc8fa8226aecb38a3cf1abe9f0c0836d3b8071fe41fa424a4079c420": true
-    }
-  },
-  "https://www.democracy-international.org/events": {
-    "checked": "2026-08-12",
-    "content_hash": "5ed493eba9ce9b166ebb4495284d9d5b915fa084635a8d016db12c035d322fe7",
-    "etag": "\"1786462749-gzip\"",
-    "last_modified": "Tue, 11 Aug 2026 15:39:09 GMT",
-    "verified": {
-      "5ed493eba9ce9b166ebb4495284d9d5b915fa084635a8d016db12c035d322fe7": true
-    }
-  },
-  "https://www.designingopendemocracy.com/blog/2021/08/07/podcast-catching-up-with-adam-jacoby-founder-of-mivote/": {
-    "checked": "2026-08-12",
-    "content_hash": "cbb7f54c729d9ecfcd25e0a3f1400963923c76d69a26336852fa45a5916a9a6b",
-    "etag": "W/\"6a7c26dc-381f8\"",
-    "last_modified": "Wed, 12 Aug 2026 07:55:08 GMT",
-    "verified": {
-      "7eedd69a656a150f87f8aee471946a6d238d99f28534cdf4dcc46e34fe7203e5": true
-    }
-  },
-  "https://www.fidemocracy.org/news": {
-    "checked": "2026-08-12",
-    "content_hash": "abd88ce88d5b83a990787cd3dcfb9731a7b86c8fe28a242bfab09a6d93105bd7",
-    "etag": "W/\"f7f2f970cddadeac36f77510de34d829--gzip\"",
-    "last_modified": null,
-    "verified": {
-      "abd88ce88d5b83a990787cd3dcfb9731a7b86c8fe28a242bfab09a6d93105bd7": true
-    }
-  },
-  "https://www.g1000.org/en/cases/g1000-citizens-summit": {
-    "checked": "2026-08-12",
-    "content_hash": "99f329db92db6439c9941a067607e4d7d0c7e0d71b3c0ba49b8b47efe3e3226c",
-    "etag": "W/\"1786438631\"",
-    "last_modified": "Tue, 11 Aug 2026 08:57:11 GMT",
-    "verified": {
-      "99f329db92db6439c9941a067607e4d7d0c7e0d71b3c0ba49b8b47efe3e3226c": true
-    }
-  },
-  "https://www.g1000.org/en/cases/permanent-citizen-dialogue-ostbelgien": {
-    "checked": "2026-08-12",
-    "content_hash": "9d9dd7eb44ce1feb60d009a8461f4ee3411bd3fa7f790f06f40bcc4344b1f244",
-    "etag": "W/\"1786438634\"",
-    "last_modified": "Tue, 11 Aug 2026 08:57:14 GMT",
-    "verified": {
-      "57bb32e4bdcd6c2f1a494cdba58b090e8ae2d4bcf1f9a19dc6c7d96fa683588c": true
-    }
-  },
-  "https://www.govtech.com/civic/new-global-civic-tech-group-emerges-from-the-omidyar-group.html": {
-    "checked": "2026-08-12",
-    "content_hash": "5739cf6dbe8712a5009711e87e8ab0803df92b1c7c79276d3d8ba6ce59d733fe",
+    "content_hash": "1f3342948b4e4774f63f0a457d7b23029356b55548d19d7eebc0650eb1be368f",
+    "contexts": {
+      "3bbbfb3bbb443ceaa2c37f75a208d4dcbed53c85459ce09db3747652442aff49": {
+        "prefix": "n Get Involved The People\u2019s House Shaping our futures",
+        "sha256": "1f3342948b4e4774f63f0a457d7b23029356b55548d19d7eebc0650eb1be368f",
+        "suffix": "We support better decisions and policy-making, by advising governments and organisations on best-practice deliberative engagement processes, and by d",
+        "text": "At DemocracyCo we create opportunities for citizens to participate constructively in the decisions that matter to them. We support better decisions and policy-making, by advising governments and organisations on best-practice deliberative engagement processes, and by designing planning and facilitating respectful dialogue and collaboration."
+      }
+    },
     "etag": null,
     "last_modified": null,
     "verified": {
-      "b760e0c84485e81c48f2e2736d61b2b8c93b021ba2280b9c00eabb9487273a25": true
+      "3bbbfb3bbb443ceaa2c37f75a208d4dcbed53c85459ce09db3747652442aff49": true
     }
   },
-  "https://www.influencewatch.org/non-profit/healthy-democracy/": {
+  "https://www.mysociety.org/about/": {
     "checked": "2026-08-12",
-    "content_hash": "1d1c8cfc7834bf76cc123f07d21a514808f8e2577757b6d08ee5133c4e5d30e5",
-    "etag": null,
-    "last_modified": "Wed, 12 Aug 2026 07:56:39 GMT",
-    "verified": {
-      "4573f385afff1cc170214c11411c14f97f322d84a4e2460029e034efa6da739e": true,
-      "5aca62386ad7698c6e7c2d439bdba747c25433cb29e314ebf42ffac88fdc0566": true
-    }
-  },
-  "https://www.institutoupdate.org.br/": {
-    "checked": "2026-08-12",
-    "content_hash": "6bda42773821c2636fae0b375db88c85bacd3abfc96e8ce808cac62e46852ef0",
+    "content_hash": "82e7b4b5c5b139db029fa50b163e84e2c5e0c6edd6cdefe1f7c915b6627ac0bf",
+    "contexts": {
+      "386cf456651ac8ec5c84521090f481775dc04a2623290a7dbdc4f61798f30752": {
+        "prefix": "Subscribe Donate Search for: Home Hello, we\u2019re mySociety",
+        "sha256": "82e7b4b5c5b139db029fa50b163e84e2c5e0c6edd6cdefe1f7c915b6627ac0bf",
+        "suffix": "Established in 2003, we are the UK-based charity behind FixMyStreet , TheyWorkForYou , WhatDoTheyKnow , WriteToThem \u2014 and other empowering online too",
+        "text": "mySociety is a trusted, collaborative and evidence-driven organisation with a long history of leading in civic tech. Established in 2003, we are the UK-based charity behind FixMyStreet , TheyWorkForYou , WhatDoTheyKnow , WriteToThem \u2014 and other empowering online tools."
+      }
+    },
     "etag": null,
     "last_modified": null,
     "verified": {
-      "f80e17daa544eab5de5971fed425a4a027932b6bba9fe9173a611807f3f8cf7b": true
+      "386cf456651ac8ec5c84521090f481775dc04a2623290a7dbdc4f61798f30752": true
     }
   },
-  "https://www.labsus.org/chi-siamo/": {
+  "https://www.ndi.org/sites/default/files/2025-04/No-6-Lessons-from-Namfrel-and-Gong---NDI-Sustaining-the-Fight-for-Democracy-Lessons-from-Citizen-Election-Monitoring-Organizations-Around-the-World.pdf": {
     "checked": "2026-08-12",
-    "content_hash": "e1fde2cce5c1c2c169de201bbc72f56013fc9be23a1a46259023f63de009ca0d",
-    "etag": null,
-    "last_modified": "Tue, 07 Jul 2026 09:28:55 GMT",
+    "content_hash": "0e70bc24209e2a81d13574b44e4cdb88a9fbf7a4442d67b23061f0c5152f309f",
+    "contexts": {},
+    "etag": "\"70742-6326cd5015c1f\"",
+    "last_modified": "Thu, 10 Apr 2025 13:47:51 GMT",
     "verified": {
-      "ca329cbba779ca6fa7c520d965034b819c28ad399936ceb89a2a8ea7db4566c5": true
-    }
-  },
-  "https://www.lcps-lebanon.org/en/about": {
-    "checked": "2026-08-12",
-    "content_hash": "99cdfdb6c2c1b89d7ed7ec193d5df152ba8e8deca92040727928754901aa84ff",
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "67a9739f02616a8ff624b6314721d73a11d8377e9b7b2e897c28005c7728616f": true,
-      "dcdf3c83bd6362ebde6b230b820a2b7af0b4deda87c90d048f17a5daa3cd4b1e": true
-    }
-  },
-  "https://www.masslbp.com/about": {
-    "checked": "2026-08-12",
-    "content_hash": "90b7b8d75b71ba9462fcf179942e61cc0b6463144784abb61997ec00cc12d76c",
-    "etag": "W/\"98a5d5961acfe0558e0b04ac31e519b8\"",
-    "last_modified": null,
-    "verified": {
-      "c86437b5843e2fe1380cb202ebe6c0a08a62c30e72f87fb9857baf3672831b33": true
-    }
-  },
-  "https://www.masslbp.com/work-panels": {
-    "checked": "2026-08-12",
-    "content_hash": "201ce8f32676a307e7c15c13df5f831d0246fafd2b72e9c02cfb51208aac4e13",
-    "etag": "W/\"e930184469344344f00710af4f66a347\"",
-    "last_modified": null,
-    "verified": {
-      "201ce8f32676a307e7c15c13df5f831d0246fafd2b72e9c02cfb51208aac4e13": true
-    }
-  },
-  "https://www.mmzy.org.cn/mmgk/jianjie/default.aspx": {
-    "checked": "2026-08-12",
-    "content_hash": "f4bd3fd3b32f0c1cb42d485a26ed67a2e99278d96b879b0d4527463f89fe1a0a",
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "4cb187c2805ff536c6187505c77bc60560fbfdd1c128edf34ad67c1534fd3423": true
-    }
-  },
-  "https://www.nesta.org.uk/feature/new-radicals-2016/democracy-club/": {
-    "checked": "2026-08-12",
-    "content_hash": "f59a08f534783c5fd659bcf0a7044c4e0617c44778f22f166eb49a9ec06e8ef6",
-    "etag": null,
-    "last_modified": "Wed, 12 Aug 2026 07:31:49 GMT",
-    "verified": {
-      "cc28d4301a6779773f43856e1f6c111bba0055dab43f79dedca4a22282f800e8": true,
-      "ffd4e132cb12dcddf7e4729e259aba3d7afa6a32ac1281a22178c47b6624e8ca": true
+      "dc694bf6a0921fdcc3efc773bfb68958a891b71e07cb46f8d87ec0e71a802869": false
     }
   },
   "https://www.newdemocracy.com.au/history/": {
     "checked": "2026-08-12",
-    "content_hash": "e34739f08d9203fc55e4dd0282920f9ca4e1d29dc6a7c276558ecf94e784e229",
+    "content_hash": "f3919e944ca7bd379d685285a218d052e4723264fc242cf7461d0d79059ed3d4",
+    "contexts": {},
     "etag": null,
     "last_modified": null,
     "verified": {
-      "16875b3a7fbc11dc2b9fed805ea528795b884dd7535d92fe438880445db482d6": true,
-      "6ddebb3aec3951ce145480c2d335b1acdcb4f5aa4457a102dc11b83e5a8fe456": true,
-      "cc111445acd794c512bc7ff165906f707e6c6bcb43b82accd169ffeba419a4f1": true,
-      "e84567dc0ad975cc7a82a955c502f06d673cc33abf48b5c40cc77a70d2a89af5": true
+      "16875b3a7fbc11dc2b9fed805ea528795b884dd7535d92fe438880445db482d6": true
     }
   },
   "https://www.oaf.org.au/2022/03/23/senator-for-nsw-andrew-bragg-threatens-openaustralia-foundation-with-legal-action/": {
-    "checked": "2026-08-11",
+    "checked": "2026-08-12",
     "content_hash": "d29f03044da8e598f3eeb34d7ac6f647fe999c30fb763f295c66e4d61773149a",
+    "contexts": {
+      "292a5491284943180173e19421b4b1906053adf3c0b79e98d2736277bfe08b0a": {
+        "prefix": "rs. The legal threat Now back to where they are threatening to sue us under Australian Consumer Law. For this we defer to the letter that",
+        "sha256": "d29f03044da8e598f3eeb34d7ac6f647fe999c30fb763f295c66e4d61773149a",
+        "suffix": "Here is the letter he wrote in response. Letter to Rebekah Giles re OpenAustralia Foundation \u2013 Senator Andrew Bragg_2611028_1_redacted Download",
+        "text": "Now back to where they are threatening to sue us under Australian Consumer Law. For this we defer to the letter that Michael Bradley from Marque Lawyers wrote. He is generously helping us pro-bono. Here is the letter he wrote in response."
+      }
+    },
     "etag": null,
-    "last_modified": "Tue, 11 Aug 2026 21:46:21 GMT",
+    "last_modified": "Wed, 12 Aug 2026 09:50:25 GMT",
     "verified": {
       "292a5491284943180173e19421b4b1906053adf3c0b79e98d2736277bfe08b0a": true
     }
   },
-  "https://www.openaustraliafoundation.org.au/2009/07/07/announcing-the-openaustralia-foundation/": {
+  "https://www.peoplepowered.org/news-content/digital-participation-case-study-taiwan": {
     "checked": "2026-08-12",
-    "content_hash": "64be6754d59dfcdf923568360eab88be30862c30bc6462136b69d12e927b2707",
-    "etag": null,
-    "last_modified": "Wed, 12 Aug 2026 00:17:06 GMT",
-    "verified": {
-      "d41b7486e698b6e2534cc87c9f03ded6aa77bc4bf878892def4cf010f696ef6a": true
-    }
-  },
-  "https://www.openaustraliafoundation.org.au/2009/12/21/launching-our-new-website-planning-alerts/": {
-    "checked": "2026-08-12",
-    "content_hash": "23b301288596e31a592686706ca160feed6746546b7a670afa1789a38657fd7b",
-    "etag": null,
-    "last_modified": "Wed, 12 Aug 2026 00:17:08 GMT",
-    "verified": {
-      "23b301288596e31a592686706ca160feed6746546b7a670afa1789a38657fd7b": true
-    }
-  },
-  "https://www.participatorybudgeting.org/about/": {
-    "checked": "2026-08-12",
-    "content_hash": "9caecfe4a8b685cef6c9963bd4658b0495569e80536ad3c4c8f43b9e90ca8ce1",
-    "etag": null,
-    "last_modified": "Tue, 11 Aug 2026 11:00:11 GMT",
-    "verified": {
-      "777e4c79a8cc8c7cc1a10ca73595cdb41c5cd496240d6024994af6b1239f3882": true
-    }
-  },
-  "https://www.peoplepowered.org/events": {
-    "checked": "2026-08-12",
-    "content_hash": "c5ef4ef97ec6a68ce52ba65b451e0bf974f7e79470a79a41850269a33c426bcb",
-    "etag": "W/\"db1520d7f358dd3968e03a12976987e6\"",
+    "content_hash": "302a97ff4a746653f8e489f47e644e637a3589acb7c57ab81e73833b181f7df4",
+    "contexts": {
+      "8b1132d10f23f3c8368c2b3e9233c0fb121095a3bdafd9c9521eb699bd32f69d": {
+        "prefix": "ntribute online. The deliberation discussions were conducted primarily in Mandarin, with limited English interpretation provided by volunteers.",
+        "sha256": "302a97ff4a746653f8e489f47e644e637a3589acb7c57ab81e73833b181f7df4",
+        "suffix": "Currently, the community integrates tools such as Pol.is for large-scale opinion mapping, Mentimeter for interactive delibera",
+        "text": "vTaiwan has always demonstrated how civic communities can innovate in democratic participation by combining open-source platforms, commercial tools, and AI. Currently, the community integrates tools such as"
+      }
+    },
+    "etag": "W/\"2108b9cbf5266325de677660b93e1ea4\"",
     "last_modified": null,
     "verified": {
-      "e8187bbca5d07d8483d45cc1054ef06bccd8169b63fee1f13b73627bfc91e05c": true
+      "8b1132d10f23f3c8368c2b3e9233c0fb121095a3bdafd9c9521eb699bd32f69d": true
     }
   },
-  "https://www.transparency.org.nz/our-story": {
+  "https://www.radicalxchange.org/about/": {
     "checked": "2026-08-12",
-    "content_hash": "5932469bf355d2f38d2efc15e6c5be84640c6805b7000d90ee556614ce142141",
-    "etag": null,
-    "last_modified": "Fri, 07 Aug 2026 20:01:37 GMT",
-    "verified": {
-      "326163090fd17e3c9abe777a89eab5aa0d4de4f1a1cc63ef21d82aa54cee5b8c": true,
-      "cbc4b7b7b126a6120d54a688818f8ac6e4fb5f46cd3ec77a28a78c82670e7245": true
-    }
-  },
-  "https://www.ycombinator.com/companies/democracy-earth": {
-    "checked": "2026-08-12",
-    "content_hash": "c90ae5009c68609175d2ffdf4bbd2a6e9e059cbef1a72cfb6e371fb42fc70d88",
-    "etag": "W/\"c306b94e6f28e2387089efd3bcd523b3\"",
+    "content_hash": "244f6412e7c68526636b169b60dc572308662e0b13290c07caffdf047e612caa",
+    "contexts": {
+      "93585aa0a00f2cf98a88445720db53165d4f4aa8b4a7dcc05f495e02260621a3": {
+        "prefix": "\u00a9 2026 RadicalxChange Foundation Ltd. Close Menu ABOUT RxC What is RadicalxChange?",
+        "sha256": "244f6412e7c68526636b169b60dc572308662e0b13290c07caffdf047e612caa",
+        "suffix": "We provide participatory tools and collaborative approaches to cooperate across diversity and shape positive futures. RxC helps communities of",
+        "text": "RadicalxChange sparks imagination for transformative systems change. We provide participatory tools and collaborative approaches to cooperate across diversity and shape positive futures."
+      }
+    },
+    "etag": "\"1f34fc4b1f691e596ef24855b59988f1-ssl-df\"",
     "last_modified": null,
     "verified": {
-      "c90ae5009c68609175d2ffdf4bbd2a6e9e059cbef1a72cfb6e371fb42fc70d88": true
+      "93585aa0a00f2cf98a88445720db53165d4f4aa8b4a7dcc05f495e02260621a3": true
     }
   }
 }

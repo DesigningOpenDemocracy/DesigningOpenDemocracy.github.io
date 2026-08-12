@@ -25,15 +25,17 @@ location:
 events:
 - date: '2026-08-10'
   title: Arendalsuka 2026 — multiple sessions on green transition, fjord restoration,
-    and sport inclusion, Arendal Norway
-  url: https://socentral.no/aktuelt/
-  proof_level: medium
-  url_checked: '2026-08-10'
+  url: https://www.socentral.no/aktuelt/
+  quote: Ses vi på Arendalsuka? Om du er interessert i grønn omstilling, hvordan få
+    til samarbeid, skogbevaring, grønnvasking, OsloFjorden eller inkludering i idrett
+    — det finnes et arrangement for deg på Arendalsuka 10-13.august. and sport inclusion,
+    Arendal Norway
+  proof_level: high
+  url_checked: '2026-08-12'
   end_date: '2026-08-13'
   notable: true
   type: conference
   location: Arendal, Norway
-  proof_warning: true
   country: 'NO'
 - date: '2014-01-01'
   title: Founded in Oslo as a social innovation platform for sustainable societal

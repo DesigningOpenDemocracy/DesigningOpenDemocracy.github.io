@@ -35,11 +35,12 @@ events:
   notable: true
 - date: '2019-03-01'
   title: First RadicalxChange conference in Detroit — movement formally launched
-  url: https://www.radicalxchange.org/about/
-  proof_level: medium
-  url_checked: '2026-08-10'
+  url: https://www.radicalxchange.org/events/2019-conference
+  quote: Our inaugural conference was held March 22-24 at the A. Alfred Taubman Center
+    for Design Education in Detroit, Michigan
+  proof_level: high
+  url_checked: '2026-08-12'
   notable: true
-  proof_warning: true
 - date: '2024-04-16'
   title: 'Plurality: The Future of Collaborative Technology and Democracy published
     (Weyl, Tang & community)'
@@ -51,12 +52,11 @@ events:
 - date: '2026-08-27'
   title: Melbourne chapter launch event — first Australian RadicalxChange chapter
   url: https://events.humanitix.com/radicalxchange-foundation-in-melbourne
-  proof_level: medium
-  url_checked: '2026-08-10'
+  quote: we are also excited to introduce you to the founding members of the new RadicalxChange
+    Melbourne chapter
+  proof_level: high
+  url_checked: '2026-08-12'
   notable: true
-  type: meetup
-  location: Today, Level 8/54 Wellington St, Collingwood VIC
-  proof_warning: true
   coverage_url: /blog/2026/08/07/radicalxchange-is-launching-a-melbourne-chapter--heres-what-it-is/
   country: AU
   end_time: 8pm

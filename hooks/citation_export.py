@@ -1,19 +1,18 @@
 """
-citation_export.py — on_pre_build MkDocs hook that generates a
-CSL-JSON citations file with DOD content-integrity extension fields.
+citation_export.py — on_pre_build MkDocs hook that produces and maintains
+a CSL-JSON citations file with DOD content-integrity extension fields.
 
 Output: docs/data/citations.json
 
-Sources:
-  - Org events: frontmatter `events:` entries with `quote:` + `url:`
-  - Prose footnotes: markdown footnotes with verbatim quoted excerpts
-  - Evidence cache: docs/data/event-evidence-cache.json (content_hash, checked)
+Flow:
+  1. Extract quotes from markdown (events + footnotes)
+  2. Load existing citations.json (if any) to preserve verification data
+  3. Merge: add new quotes, drop removed ones, carry forward enrichment
+  4. Write back
 
-CSL-JSON fields: type, URL, title, accessed, content-sha256
+CSL-JSON fields: type, URL, title, accessed, archive, archive_location
 Evidence fields (per-claim, nested under evidence: array):
-  type: quote-match (extensible: screenshot, pdf-page, etc.)
-  quote: verbatim excerpt
-  last-verified: YYYY-MM-DD of last confirmation
+  type: quote-match, quote, status, last-verified, verified-by, context
 """
 
 import glob
@@ -31,25 +30,17 @@ except ImportError:
     frontmatter = None
 
 DOCS_DIR = os.path.join(os.path.dirname(__file__), "..", "docs")
-CACHE_PATH = os.path.join(os.path.dirname(__file__), "..", "docs", "data", "event-evidence-cache.json")
 OUT_PATH = os.path.join(DOCS_DIR, "data", "citations.json")
-VERIFIED_BY = "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
 
 
 def _extract_footnote_urls(markdown):
-    """Yield (url, title, quote) from footnotes that qualify for the
-    machine-verifiable quote convention. See text_fragment.py's
-    footnote_citation() for the exactly-one-citation eligibility rule —
-    a footnote citing more than one source is skipped entirely rather
-    than guessing which quote supports which URL (a prior version here
-    took only the *first* URL in a multi-citation footnote, silently
-    dropping any others from the export)."""
-    for label, url, title, quote in iter_footnote_citations(markdown):
+    for _label, url, title, quote in iter_footnote_citations(markdown):
         yield url, title, quote
 
 
 def _collect_items():
-    """Walk org pages + blog posts + concept pages, return list of citation dicts."""
+    """Walk org pages + blog posts + concept pages, return list of
+    (url, title, quote) tuples."""
     items = []
     md_files = sorted(glob.glob(os.path.join(DOCS_DIR, "**", "*.md"), recursive=True))
 
@@ -70,15 +61,11 @@ def _collect_items():
                 url = str(event.get("url", ""))
                 quote = event.get("quote")
                 if url and quote and url.startswith(("http://", "https://")):
-                    items.append({"url": url, "title": event.get("title", ""),
-                                  "quote": quote, "source": source_title,
-                                  "kind": "event"})
+                    items.append((url, event.get("title", ""), quote, source_title, "event"))
 
         # --- prose footnotes with verbatim quotes ---
         for url, title, quote in _extract_footnote_urls(content):
-            items.append({"url": url, "title": title,
-                          "quote": quote, "source": source_title,
-                          "kind": "footnote"})
+            items.append((url, title, quote, source_title, "footnote"))
 
     return items
 
@@ -88,49 +75,46 @@ def on_pre_build(config):
     if not items:
         return
 
-    cache = {}
-    if os.path.exists(CACHE_PATH):
-        with open(CACHE_PATH) as f:
-            cache = json.load(f)
+    # Load existing citations.json to preserve enrichment
+    existing = {}
+    if os.path.exists(OUT_PATH):
+        with open(OUT_PATH) as f:
+            for cite in json.load(f):
+                existing[cite["URL"]] = cite
 
-    # Group by URL — one fetch, one hash, multiple claims
+    # Group new items by URL
     by_url = {}
-    for item in items:
-        url = item["url"]
+    for url, title, quote, _source, _kind in items:
         if url not in by_url:
-            by_url[url] = {"url": url, "title": "", "quotes": []}
-        if not by_url[url]["title"] and item["title"]:
-            by_url[url]["title"] = item["title"]
-        by_url[url]["quotes"].append(item["quote"])
+            by_url[url] = {"title": "", "quotes": []}
+        if not by_url[url]["title"] and title:
+            by_url[url]["title"] = title
+        by_url[url]["quotes"].append(quote)
 
     citations = []
     for url, group in sorted(by_url.items()):
+        old = existing.get(url, {})
         cite = {
             "id": hashlib.md5(url.encode("utf-8")).hexdigest()[:8],
             "type": "webpage",
             "URL": url,
-            "title": group["title"],
+            "title": group["title"] or old.get("title", ""),
         }
 
-        entry = cache.get(url, {})
-        if entry.get("checked"):
-            parts = [int(x) for x in entry["checked"].split("-")]
-            cite["accessed"] = {"date-parts": [parts]}
-        if entry.get("content_hash"):
-            cite["content-sha256"] = entry["content_hash"]
-        if entry.get("archive_url"):
-            # Standard CSL-JSON variables — see "What we already have" in
-            # internal-heartbeat/machine-verifiable-citation.md. Populated
-            # from util/check_fragments.py --save-to-wayback's cache write.
-            cite["archive"] = "Internet Archive Wayback Machine"
-            cite["archive_location"] = entry["archive_url"]
+        # Carry forward CSL-level fields from previous enrichment
+        for field in ("accessed", "archive", "archive_location"):
+            if old.get(field):
+                cite[field] = old[field]
 
+        # Build evidence: preserve per-quote enrichment, drop removed quotes
+        old_evidence = {e["quote"]: e for e in old.get("evidence", [])}
         cite["evidence"] = []
         for quote in sorted(set(group["quotes"])):
+            old_ev = old_evidence.get(quote, {})
             ev = {"type": "quote-match", "quote": quote}
-            if entry.get("checked"):
-                ev["last-verified"] = entry["checked"]
-                ev["verified-by"] = VERIFIED_BY
+            for field in ("status", "last-verified", "verified-by", "context"):
+                if old_ev.get(field):
+                    ev[field] = old_ev[field]
             cite["evidence"].append(ev)
 
         citations.append(cite)

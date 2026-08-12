@@ -36,23 +36,23 @@ events:
 - date: '2026-10-19'
   title: Do more MLAs make for better government? — Re-imagining Governance for the
     ACT public event, Irish Club Weston
-  url: https://canberra-alliance.org.au/events/
-  note: 'Re-imagining Governance for the ACT: A Public Event Series. Expanding the
-    ACT Assembly for better government - is it time? Hosted by CAPaD & Active Democracy
-    Bean.'
-  proof_level: medium
-  url_checked: '2026-08-10'
+  url: https://canberra-alliance.org.au/event/expanding-the-act-assembly-is-it-time/
+  quote: Event 3 Re-imagining Governance for the ACT — Expanding the ACT Assembly
+    for better government – hosted by CAPaD & Active Democracy Bean
+  proof_level: high
+  url_checked: '2026-08-12'
   notable: true
   type: meetup
   location: Irish Club, Weston ACT
 - date: '2026-11-16'
   title: A Citizens' Assembly for the ACT — three-year project to build momentum for
     a trial of citizen input to ACT government
-  url: https://canberra-alliance.org.au/events/
-  note: Three-year project, announced at Reclaiming Democracy Together, to build momentum
-    for a trial of citizens' assembly input to ACT government
-  proof_level: medium
-  url_checked: '2026-08-10'
+  url: https://canberra-alliance.org.au/event/a-citizens-assembly-for-the-act/
+  quote: The ACT Standing Citizens' Assembly (SCA) is a three-year project to build
+    momentum for a trial of well facilitated input from Canberrans to government in
+    the ACT.
+  proof_level: high
+  url_checked: '2026-08-12'
   notable: true
   type: meetup
   location: Irish Club, Weston ACT

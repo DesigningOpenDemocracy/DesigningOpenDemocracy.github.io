@@ -41,11 +41,11 @@ events:
   title: Climate Integrity Summit 2026 — global leaders, economists and advocates
     on Australia's fossil fuel exit, Parliament of NSW Sydney
   url: https://australiainstitute.org.au/events/climate-integrity-summit/
-  note: The Climate Integrity Summit convenes leading experts in economics, ecology,
+  quote: The Climate Integrity Summit convenes leading experts in economics, ecology,
     policy and governance to discuss a credible and achievable climate policy that
     serves the Australian people and the broader global community.
-  proof_level: medium
-  url_checked: '2026-08-10'
+  proof_level: high
+  url_checked: '2026-08-12'
   notable: true
   type: conference
   location: Parliament of NSW, Sydney

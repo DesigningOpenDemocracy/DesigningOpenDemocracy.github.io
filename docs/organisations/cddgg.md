@@ -23,11 +23,11 @@ location:
 events:
 - date: '2014-01-01'
   title: Founded, marking its 10th anniversary in 2024
-  url: https://www.delibdem.org/the-cddgg-10th-anniversary-conversation-series
-  note: In 2024 the Centre for Deliberative Democracy and Global Governance, at the
-    University of Canberra, turns 10 years old.
-  proof_level: medium
-  url_checked: '2026-08-10'
+  url: https://www.canberra.edu.au/research/centres/cdd/about-cdd/our-history
+  quote: It relocated to the University of Canberra in 2014, where it has since been
+    consolidated and expanded through the collective efforts of its members.
+  proof_level: high
+  url_checked: '2026-08-12'
   notable: true
 activity:
   dod:

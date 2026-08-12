@@ -26,11 +26,11 @@ events:
 - date: 2022-10-19
   title: Public integrity, trust and democracy
   url: https://www.folio.org.au/event-4941291
-  note: The Hon Stephen Charles AO QC and Danielle Wood (CEO, Grattan Institute) lead
-    a timely conversation about the state of Australian politics and democracy and
-    how we might let the sunshine in and strengthen public integrity.
-  proof_level: medium
-  url_checked: '2026-08-10'
+  quote: The Hon Stephen Charles AO QC and Danielle Wood (CEO, Grattan Institute)
+    to lead a timely conversation about the state of Australian politics and democracy
+    and how we might let the sunshine in and strengthen public integrity.
+  proof_level: high
+  url_checked: '2026-08-12'
   notable: true
 - date: 2023-03-20
   title: (Un)ethical design — Robodebt, accountability, and equity in a digital society
@@ -55,11 +55,11 @@ events:
   title: 'Democratic Crossroads — unpacking the Voice Referendum: what can we learn
     about Australia''s democracy?'
   url: https://www.folio.org.au/event-5773784
-  note: A Folio Conversation with Mary Crooks and Lauren Crystal unpacking the Voice
-    Referendum, drawing on their experience in community conversations across the
-    country
-  proof_level: medium
-  url_checked: '2026-08-10'
+  quote: This Folio Conversation with Mary Crooks and Lauren Crystal will help us
+    unpack the Voice Referendum, drawing on their direct experience in community conversations
+    across the country.
+  proof_level: high
+  url_checked: '2026-08-12'
   notable: true
 - date: 2025-02-26
   title: Election 2025 — how will independents shape our future Parliament?
@@ -72,6 +72,14 @@ activity:
     checked: 2026-08-09
     date: 2026-08-09
     note: 'Confirmed active via own website: past events list runs to 29 Jul 2026'
+  dod:
+    date: 2025-12-03
+    note: Site unreachable (connection error) as of 2026-08-12. Wayback Machine shows
+      last capture Nov 2025 with events scheduled through Dec 2025. May be temporarily
+      down or dormant.
+    url: https://web.archive.org/web/20251130042451/https://www.folio.org.au/
+    checked: 2026-08-12
+last_checked: '2026-08-12'
 ---
 
 Folio Collective (trading as "Folio") is a Melbourne-based, member-supported forum that runs a recurring program of small-group public conversations — "Folio Conversations" — pairing diverse citizens with invited expert "Conversation Leaders" to discuss civic and democratic issues.[^home] Folio describes its purpose plainly: "Democracy evolves one conversation at a time. Let's have better conversations, more often."[^home] It positions itself as an independent, non-partisan, not-for-profit social enterprise that exists "to strengthen democracy through connected, citizen-led dialogue."[^event-state-of-nature]

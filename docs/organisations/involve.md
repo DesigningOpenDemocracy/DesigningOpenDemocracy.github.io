@@ -26,13 +26,12 @@ events:
 - date: '2003-01-01'
   title: Founded
   url: https://www.involve.org.uk/about/about-involve
-  note: Org's own about page states Involve was founded in 2003 by Richard Wilson
-    to determine how new forms of public participation in government could strengthen
-    democracy in Britain. The Charity Commission register page previously cited here
-    served a Liferay JS bundle to a plain fetch instead of the charity record, so
-    it couldn't mechanically support this date.
-  proof_level: medium
-  url_checked: '2026-08-10'
+  quote: Since 2003, we have been working with governments, parliaments, civil society,
+    academics and members of the public to create, advocate for and deliver new forms
+    of public participation that re-vitalise democracy, improve decision-making, and
+    enable people to shape the decisions that affect their lives.
+  proof_level: high
+  url_checked: '2026-08-12'
   notable: true
 activity:
   rss:

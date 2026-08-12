@@ -14,6 +14,7 @@ summary: Victoria's first registered co-operative co-working space, based in Mel
   alongside a podcast and events network focused on cooperative and mutual enterprise.
 concepts:
 - cooperative
+- employee-ownership-trusts
 - worker-cooperatives
 - economic-democracy
 location:

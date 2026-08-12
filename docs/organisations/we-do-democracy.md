@@ -26,14 +26,14 @@ location:
 events:
 - date: '2026-09-09'
   title: Democracy Fitness Trainer camp — Copenhagen
-  url: https://www.wedodemocracy.dk/vores-kalender/
-  proof_level: medium
-  url_checked: '2026-08-10'
+  url: https://www.wedodemocracy.dk/event/join-a-democracy-fitness-trainer-camp-in-copenhagen/
+  quote: Join the open international Democracy Fitness camp this September in Copenhagen
+    to learn new facilitation methods and get a deeper understanding of democracy
+    as something that needs training.
+  proof_level: high
+  url_checked: '2026-08-12'
   end_date: '2026-09-10'
   notable: true
-  type: workshop
-  location: Copenhagen, Denmark
-  proof_warning: true
 - date: '2026-09-22'
   title: Launch of recommendations from Citizens' Assembly on Future Tourism — Copenhagen
   url: https://www.wedodemocracy.dk/vores-kalender/

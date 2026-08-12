@@ -16,13 +16,12 @@ concepts:
 events:
 - date: '2019-01-01'
   title: Co-founded by Willow Berzin, Suse Porter and Dr Sonia Randhawa, inspired
-    by Extinction Rebellion Melbourne's first meeting
   url: https://www.dumbofeather.com/articles/building-a-coalition-of-everyone/
-  note: Willow Berzin describes founding the Coalition with co-founders Suse Porter
-    and Dr Sonia Randhawa after attending Extinction Rebellion's first Melbourne meeting
-    in late 2018
-  proof_level: medium
-  url_checked: '2026-08-10'
+  quote: I met my two other co-founders Suse Porter and Dr Sonia Randhawa early last
+    year, and have been working closely with them since. by Extinction Rebellion Melbourne's
+    first meeting
+  proof_level: high
+  url_checked: '2026-08-12'
   notable: true
 - date: '2020-02-04'
   title: Ran four mock Citizens' Assemblies at Melbourne's Sustainable Living Festival
