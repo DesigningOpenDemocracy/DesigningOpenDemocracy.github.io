@@ -1,20 +1,11 @@
 # Machine-verifiable citation — standard
 
-A practical enhancement to web citation that anyone can adopt — not
-university-only, not DOD-only. A blog, news site, or personal wiki that
-ships a `citations.json` alongside its content gives readers mechanical
-verification: the author's claim, the page text it matched at the time,
-and a link to an archived copy. No academic infrastructure required.
-
-The format is standard CSL-JSON plus a handful of extension fields for
-content integrity. Standard CSL processors silently ignore the non-CSL
-fields — Pandoc round-trip confirmed via `pandoc --citeproc
---bibliography`. Zotero import via BetterBibTeX remains untested.
+A citation format that tells you what the source said and how to check if it still says it. Ships as a `citations.json` alongside your content. No academic infrastructure required.
 
 ## Format
 
-Layered on CSL-JSON. The `evidence` array groups per-claim data under
-each URL — multiple quotes citing the same page share one access date.
+Layered on standard CSL-JSON — ignored by Zotero, Pandoc, citeproc.
+The `evidence` array groups per-claim data under each URL.
 
 ```json
 {
