@@ -2170,6 +2170,18 @@
     ]
   },
   {
+    "id": "0a4dd1e0",
+    "type": "webpage",
+    "URL": "https://www.designingopendemocracy.com/blog/2018/12/18/designing-open-democracy-state-of-democracy-in-australia-in-2018/",
+    "title": "\"Designing Open Democracy: State of Democracy In Australia in 2018\"",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "My main thrust is government organized along scientific principles which is as much to say as the application of cybernetic principles to government."
+      }
+    ]
+  },
+  {
     "id": "508f13db",
     "type": "webpage",
     "URL": "https://www.designingopendemocracy.com/blog/2021/08/07/podcast-catching-up-with-adam-jacoby-founder-of-mivote/",

@@ -27,7 +27,7 @@ Cybernetic governance offers a structural language for diagnosing democratic fai
 - **Representative democracy** can be analysed as a particular design of the intelligence/policy subsystems — with elections as the primary feedback mechanism — and critiqued for the frequency and bandwidth of that feedback
 - **Citizens' assemblies** can be understood as alternative intelligence subsystems that provide richer, more considered feedback than elections
 
-Tim Falkiner presented a cybernetic governance framework at a DOD event, exploring how Beer's thinking could be applied to democratic institution design.
+Tim Falkiner, a cybernetics researcher who has lectured on the topic at the Parliamentary Counsel offices in Victoria and Tasmania and at Tilburg University, wrote up his framework for [Designing Open Democracy](../organisations/designing-open-democracy.md) — applying Beer's cybernetics, in his words, to "government organized along scientific principles."[^falkiner]
 
 ## Further reading
 
@@ -38,3 +38,6 @@ Tim Falkiner presented a cybernetic governance framework at a DOD event, explori
 ## See also
 
 - [Accountability Sink](accountability-sink.md) — related concept on feedback failure in organisations
+- [Designing Open Democracy](../organisations/designing-open-democracy.md) — hosted Falkiner's cybernetic governance write-up
+
+[^falkiner]: "My main thrust is government organized along scientific principles which is as much to say as the application of cybernetic principles to government." Tim Falkiner, ["Designing Open Democracy: State of Democracy In Australia in 2018"](https://www.designingopendemocracy.com/blog/2018/12/18/designing-open-democracy-state-of-democracy-in-australia-in-2018/), Designing Open Democracy, 18 December 2018.

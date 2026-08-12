@@ -13,6 +13,7 @@ concepts:
 - meta-organisation
 - deliberative-democracy
 - accountability-sink
+- cybernetic-governance
 location:
   latitude: -37.8136
   longitude: 144.9631
