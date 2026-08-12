@@ -54,6 +54,18 @@
     ]
   },
   {
+    "id": "f73bbf12",
+    "type": "webpage",
+    "URL": "https://bethnoveck.medium.com/was-vtaiwan-such-a-big-flop-after-all-d6b365f916dc",
+    "title": "\"Was vTaiwan such a big flop, after all?\"",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "vTaiwan enabled over two hundred thousand people to participate in crafting 26 pieces of national legislation"
+      }
+    ]
+  },
+  {
     "id": "7b7f2e08",
     "type": "webpage",
     "URL": "https://bonds.coop/about-us/our-story/",
@@ -821,10 +833,7 @@
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "Loomio emerged from the Occupy movement. In 2012, it launched its first prototype,",
-        "status": "MISMATCH",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "Loomio emerged from the Occupy movement. In 2012, it launched its first prototype."
       },
       {
         "type": "quote-match",
@@ -1469,6 +1478,18 @@
     ]
   },
   {
+    "id": "311af9a0",
+    "type": "webpage",
+    "URL": "https://journals.sagepub.com/doi/10.1177/20539517241296038",
+    "title": "\"Strong or thin digital democracy? The democratic implications of Taiwan's open government data policy in the 2010s\"",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "What kind of 'democracy' do new government-led digital initiatives facilitate? This paper discusses the issue by investigating the open government data policy in Taiwan in the 2010s"
+      }
+    ]
+  },
+  {
     "id": "9f79f35a",
     "type": "webpage",
     "URL": "https://mckinnon.co/about-us",
@@ -1604,6 +1625,18 @@
         "quote": "Code for Australia is a nationwide civic technology organisation founded in 2014 by Alvaro Maz, Jacob Lindsay and Daniel Groch.",
         "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+      }
+    ]
+  },
+  {
+    "id": "20b0b352",
+    "type": "webpage",
+    "URL": "https://projects.propublica.org/nonprofits/organizations/832183139",
+    "title": "RadicalxChange Foundation Ltd — Nonprofit Explorer",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Radicalxchange Foundation Ltd, Moraga, CA, Tax-exempt since July 2019, EIN: 83-2183139"
       }
     ]
   },
@@ -1917,30 +1950,6 @@
       {
         "type": "quote-match",
         "quote": "Ahead of the 2022 federal election, we built our first voting tool, Vote 1 Climate. election"
-      }
-    ]
-  },
-  {
-    "id": "d958c4d0",
-    "type": "webpage",
-    "URL": "https://www.cambridge.org/core/journals/world-politics/article/abs/performative-governance/AAC558378BEA651DB7E2480ECFFB4E10",
-    "title": "\"performative governance\"",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
-    "evidence": [
-      {
-        "type": "quote-match",
-        "quote": "Legitimacy theatre",
-        "status": "MISMATCH",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
   },
@@ -2628,6 +2637,18 @@
     ]
   },
   {
+    "id": "c0dd580a",
+    "type": "webpage",
+    "URL": "https://www.radicalxchange.org/team/jess-scully/",
+    "title": "Jess Scully",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Jess Scully is Executive Director of RadicalxChange and an advocate for civic imagination."
+      }
+    ]
+  },
+  {
     "id": "4c39f557",
     "type": "webpage",
     "URL": "https://www.socentral.no/aktuelt/",
@@ -2640,6 +2661,42 @@
     ]
   },
   {
+    "id": "08d1ca03",
+    "type": "webpage",
+    "URL": "https://www.sortitionfoundation.org/become_a_member_australia",
+    "title": "Australia chapter",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "We want to change the way politics is done in Australia! Join us"
+      }
+    ]
+  },
+  {
+    "id": "aa7de9ca",
+    "type": "webpage",
+    "URL": "https://www.sortitionfoundation.org/ecps_2025",
+    "title": "Empowering Citizens Across Europe: Sortition in the European Citizens' Panels",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "As we continue our work across the continent, we remain committed to upholding the democratic potential of sortition-based processes — bringing real people into meaningful dialogue and decision-making about Europe's future."
+      }
+    ]
+  },
+  {
+    "id": "e5e19b36",
+    "type": "webpage",
+    "URL": "https://www.sortitionfoundation.org/gm_polling_may_2026",
+    "title": "Nearly 60% of Mancunians want a citizens' assembly",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "59% of Mancunians support the proposal for a Greater Manchester citizens' assembly"
+      }
+    ]
+  },
+  {
     "id": "4def30fc",
     "type": "webpage",
     "URL": "https://www.sortitionfoundation.org/history",
@@ -2648,6 +2705,42 @@
       {
         "type": "quote-match",
         "quote": "on 4 March 2017 we registered as a member-run, not-for-profit company limited by guarantee in the UK."
+      }
+    ]
+  },
+  {
+    "id": "30711eab",
+    "type": "webpage",
+    "URL": "https://www.sortitionfoundation.org/introducing_the_open_democratic_lottery_platform",
+    "title": "Introducing the Open Democratic Lottery Platform",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Last year we secured funding to build OpenDLP, a brand new open-source digital platform that will make democratic lotteries more inclusive by automating the process for selecting participants for citizens' assemblies."
+      }
+    ]
+  },
+  {
+    "id": "9286ab77",
+    "type": "webpage",
+    "URL": "https://www.sortitionfoundation.org/uk_poll_may_2025",
+    "title": "New poll finds widespread support for replacing the House of Lords",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "43% of British adults, including 46% of adults living in the North, say that replacing the House of Lords with a citizens' assembly would increase their trust in politics"
+      }
+    ]
+  },
+  {
+    "id": "a9fd40c0",
+    "type": "webpage",
+    "URL": "https://www.sortitionfoundation.org/updates",
+    "title": "Updates page",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "2026 Frontiers of Democratic Lotteries Workshop"
       }
     ]
   },
