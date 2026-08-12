@@ -47,7 +47,6 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
-  proof_warning: true
 - date: '2011-05-05'
   title: Led the Yes campaign in the UK's Alternative Vote referendum — the first
     UK-wide electoral system referendum

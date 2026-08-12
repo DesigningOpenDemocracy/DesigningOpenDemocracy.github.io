@@ -128,5 +128,5 @@ RadicalxChange's Melbourne chapter is newly forming. A public launch event — "
 
 [^humanitix]: "Join us to learn about civic tech for democracy and community, and explore how our tools might serve your community or sector." ["An invitation to meet RadicalxChange Foundation in Melbourne"](https://events.humanitix.com/radicalxchange-foundation-in-melbourne), Humanitix, 27 August 2026.
 
-[^wisdom-action]: "Audrey Tang (Virtual) — Cyber Ambassador at Ministry of Foreign Affairs, Taiwan (R.O.C.)" and "Trust by Design: Digital Democracy in the Age of AI" [Wisdom & Action Forum 2026 — Speakers](https://www.wisdomandaction.com.au/), Small Giants Academy, 5-7 May 2026, Melbourne.
+[^wisdom-action]: "Audrey Tang (Virtual)... Cyber Ambassador at Ministry of Foreign Affairs, Taiwan (R.O.C.)" and "Trust by Design: Digital Democracy in the Age of AI" [Wisdom & Action Forum 2026 — Speakers](https://www.wisdomandaction.com.au/), Small Giants Academy, 5-7 May 2026, Melbourne.
 
