@@ -543,6 +543,23 @@
       "93585aa0a00f2cf98a88445720db53165d4f4aa8b4a7dcc05f495e02260621a3": true
     }
   },
+  "https://www.socentral.no/aktuelt": {
+    "checked": "2026-08-12",
+    "content_hash": "dfbf3858f54052eab03274ccfd8bfc80f65b26c639c8c763a497e585034fd55a",
+    "contexts": {
+      "060cb057585ce03f9195d26d6e0ff9ef987771983982859437e3fbb7d053d445": {
+        "prefix": "English Medlemskap > Aktuelt Ses vi p\u00e5 Arendalsuka? Aug 04, 2026",
+        "sha256": "dfbf3858f54052eab03274ccfd8bfc80f65b26c639c8c763a497e585034fd55a",
+        "suffix": "10- 13.august. Thomas og Mette fra SoCentral teamet er p\u00e5 plass i Arendal. Kanskje vi ses? Nytt, unikt partnerskap for sterkere idr",
+        "text": "Om du er interessert i gr\u00f8nn omstilling, hvordan f\u00e5 til samarbeid, skogbevaring, gr\u00f8nnvasking, OsloFjorden eller inkludering i idrett - det finnes et arrangement for deg p\u00e5 Arendalsuka 10- 13.august. Thomas og Mette fra SoCentral teamet er p\u00e5 plass i Arendal. Kanskje vi ses?"
+      }
+    },
+    "etag": null,
+    "last_modified": "Tue, 11 Aug 2026 22:15:52 GMT",
+    "verified": {
+      "060cb057585ce03f9195d26d6e0ff9ef987771983982859437e3fbb7d053d445": true
+    }
+  },
   "https://www.socentral.no/aktuelt/": {
     "checked": "2026-08-12",
     "content_hash": "f1e6f545b309178ec4e144ab92632ccf9d93cbaf89c46e84a64a710ee045959c",

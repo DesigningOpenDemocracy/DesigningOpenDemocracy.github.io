@@ -25,11 +25,11 @@ location:
 events:
 - date: '2026-08-10'
   title: Arendalsuka 2026 — multiple sessions on green transition, fjord restoration,
-  url: https://www.socentral.no/aktuelt/
-  quote: Ses vi på Arendalsuka? Om du er interessert i grønn omstilling, hvordan få
-    til samarbeid, skogbevaring, grønnvasking, OsloFjorden eller inkludering i idrett
-    — det finnes et arrangement for deg på Arendalsuka 10-13.august. and sport inclusion,
-    Arendal Norway
+    and sport inclusion, Arendal Norway
+  url: https://www.socentral.no/aktuelt
+  quote: Om du er interessert i grønn omstilling, hvordan få til samarbeid, skogbevaring,
+    grønnvasking, OsloFjorden eller inkludering i idrett - det finnes et arrangement
+    for deg på Arendalsuka
   proof_level: high
   url_checked: '2026-08-12'
   end_date: '2026-08-13'
