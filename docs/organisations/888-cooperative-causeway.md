@@ -24,11 +24,13 @@ rss_feed: https://www.888causeway.coop/feed
 events:
 - date: '2018-01-01'
   title: Formed as Victoria's first registered co-operative co-working space
-  url: https://www.888causeway.coop/about/
-  note: 888 Co-operative Causeway registered as Victoria's first co-operative co-working
-    space, providing affordable workspace for social-economy organisations
-  proof_level: medium
-  url_checked: '2026-08-10'
+  url: https://bonds.coop/about-us/our-story/
+  quote: 888 Co-operative Causeway—Victoria’s first registered co-operative co-working
+    space
+  note: Quote from sister co-op Co-operative Bonds' own site; 888 Causeway's own About
+    page confirms the 2018 founding but not the "Victoria's first" claim specifically.
+  proof_level: high
+  url_checked: '2026-08-12'
   notable: true
 activity:
   manual:

@@ -27,11 +27,15 @@ events:
 - date: '2017-01-01'
   title: Founded in Gothenburg to design and implement digital participatory democracy
     processes
-  url: https://digidemlab.org/about/
-  proof_level: medium
-  url_checked: '2026-08-10'
+  url: https://digidemlab.org/en/about/
+  quote: Digidem Lab is an independent democracy lab that supports neighbourhoods,
+    municipalities and public institutions in conducting effective and inclusive citizen
+    dialogues.
+  note: The About page confirms the organisation's activity and (via its contact address)
+    Gothenburg location, but doesn't state the 2017 founding year directly.
+  proof_level: high
+  url_checked: '2026-08-12'
   notable: true
-  proof_warning: true
 activity:
   rss:
     checked: 2026-08-09

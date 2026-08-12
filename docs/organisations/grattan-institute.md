@@ -29,10 +29,12 @@ events:
   title: Formally incorporated, backed by the Victorian and Commonwealth governments,
     the University of Melbourne, and BHP/NAB
   url: https://en.wikipedia.org/wiki/Grattan_Institute
+  quote: Grattan Institute is an Australian public policy think tank... established
+    in 2008.
   note: Grattan Institute was incorporated in November 2008, and its founding chief
     executive, John Daley, commenced in January 2009.
-  proof_level: medium
-  url_checked: '2026-08-10'
+  proof_level: high
+  url_checked: '2026-08-12'
   notable: true
 activity:
   dod:

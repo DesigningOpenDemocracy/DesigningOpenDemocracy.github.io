@@ -9,7 +9,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -18,7 +18,7 @@
       {
         "type": "quote-match",
         "quote": "The Association for Democratic Reforms (ADR) was established in 1999 by a group of professors from the Indian Institute of Management (IIM) Ahmedabad.",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -33,7 +33,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -42,8 +42,24 @@
       {
         "type": "quote-match",
         "quote": "Join us at the 2026 Dr Hugh Saddler Memorial Lecture, featuring former ACT Minister, Greens Leader, and long‑serving parliamentarian Shane Rattenbury.",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+      }
+    ]
+  },
+  {
+    "id": "7b7f2e08",
+    "type": "webpage",
+    "URL": "https://bonds.coop/about-us/our-story/",
+    "title": "Formed as Victoria's first registered co-operative co-working space",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "888 Co-operative Causeway—Victoria’s first registered co-operative co-working space"
+      },
+      {
+        "type": "quote-match",
+        "quote": "Co-operative Bonds was formed in 2018 with a simple but powerful idea"
       }
     ]
   },
@@ -57,22 +73,22 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
-    "content-sha256": "483d1c07788f0bdf5d93d267ff384e304c3d7d425c93ed98373029e69e1535cc",
+    "content-sha256": "2ee5213dfc060abdf48a43fe16b3969e60f1bbf548bfc1036bc470be4547590f",
     "evidence": [
       {
         "type": "quote-match",
         "quote": "2026 CAPaD AGM",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       },
       {
         "type": "quote-match",
         "quote": "Community Assembly – following up our MP asks for 2026",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -87,7 +103,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -96,7 +112,7 @@
       {
         "type": "quote-match",
         "quote": "Founded in 2017 as the innovation centre of BudgIT",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -111,7 +127,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -120,7 +136,7 @@
       {
         "type": "quote-match",
         "quote": "CTIN was launched in 2017 as a learning network.",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -159,7 +175,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -168,8 +184,24 @@
       {
         "type": "quote-match",
         "quote": "Desde 1998, el proyecto Congreso Visible del Departamento de Ciencia Política",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+      }
+    ]
+  },
+  {
+    "id": "0f868daa",
+    "type": "webpage",
+    "URL": "https://congress.crowd.law/case-vtaiwan.html",
+    "title": "Launched by g0v contributors partnering with Taiwanese government officials, following the 2014 Sunflower Movement",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "31,115 total votes (highest of any process to date)"
+      },
+      {
+        "type": "quote-match",
+        "quote": "In turn, former Taiwanese Minister without Portfolio Jaclyn Tsai attended a g0v.tw hackathon in December 2014 and asked the volunteers if they could “create a platform for rational discussion and deliberation of policy issues that the entire nation could participate in.”"
       }
     ]
   },
@@ -198,6 +230,18 @@
     ]
   },
   {
+    "id": "b969dc64",
+    "type": "webpage",
+    "URL": "https://digidemlab.org/en/about/",
+    "title": "Founded in Gothenburg to design and implement digital participatory democracy processes",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Digidem Lab is an independent democracy lab that supports neighbourhoods, municipalities and public institutions in conducting effective and inclusive citizen dialogues."
+      }
+    ]
+  },
+  {
     "id": "dfa14e4e",
     "type": "webpage",
     "URL": "https://en.idi.org.il/articles/47344",
@@ -207,7 +251,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -216,7 +260,7 @@
       {
         "type": "quote-match",
         "quote": "The Democracy Index, IDI’s annual flagship publication celebrating its twentieth anniversary",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -231,7 +275,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -240,7 +284,7 @@
       {
         "type": "quote-match",
         "quote": "FBK was founded by Alexei Navalny",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -279,7 +323,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -288,7 +332,7 @@
       {
         "type": "quote-match",
         "quote": "In September 2009, Fung launched Participedia, a website developed with Mark Warren of the University of British Columbia, aimed at strengthening democracy with its user-generated library of examples and methods of participatory governance",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -303,7 +347,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -312,19 +356,19 @@
       {
         "type": "quote-match",
         "quote": "At the 1980 election, this increased to five seats",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       },
       {
         "type": "quote-match",
         "quote": "The Democrats' inaugural leader was Don Chipp",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       },
       {
         "type": "quote-match",
         "quote": "the 1990 federal election heralded something of a rebirth",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -339,7 +383,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -348,19 +392,19 @@
       {
         "type": "quote-match",
         "quote": "9 July 2011 ranged from 10,000 to 50,000",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       },
       {
         "type": "quote-match",
         "quote": "officially formed on 23 November 2006",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       },
       {
         "type": "quote-match",
         "quote": "rally with 10,000 to 40,000 turnout",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -375,7 +419,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -384,7 +428,7 @@
       {
         "type": "quote-match",
         "quote": "The Political Consultative Conference was established in 1945 as part of peace negotiations between the Kuomintang and the CCP.",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -399,7 +443,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -408,19 +452,19 @@
       {
         "type": "quote-match",
         "quote": "Shadow Parliament (Skuggaþing) opened formally in February 2010",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       },
       {
         "type": "quote-match",
         "quote": "The Citizens Foundation is a non-profit organization based in Reykjavík, Iceland, and founded under Icelandic law to promote electronic collaborative democracy around the globe and to develop the software needed for that purpose.",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       },
       {
         "type": "quote-match",
         "quote": "on 25 May 2010, the website Shadow City (Skuggaborg) opened",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -435,7 +479,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -444,7 +488,7 @@
       {
         "type": "quote-match",
         "quote": "CONAIE was founded in 1986",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -459,7 +503,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -468,25 +512,25 @@
       {
         "type": "quote-match",
         "quote": "Decidim provided their first use of participatory budgeting",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       },
       {
         "type": "quote-match",
         "quote": "recognised as satisfying the criteria of the Digital Public Goods Alliance",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       },
       {
         "type": "quote-match",
         "quote": "the community formally established Decidim Association in 2019 and City Council of Barcelona gave control of the Decidim trademark and code base to Decidim Association.",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       },
       {
         "type": "quote-match",
         "quote": "the server was switched to a similarly inspired, but new software project, Decidim",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -501,7 +545,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -510,7 +554,7 @@
       {
         "type": "quote-match",
         "quote": "formally established in June 2011",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -525,7 +569,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -534,19 +578,19 @@
       {
         "type": "quote-match",
         "quote": "The movement was officially launched at ceremonial events in 2016",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       },
       {
         "type": "quote-match",
         "quote": "established an electoral list for the 2019 European Parliament elections",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       },
       {
         "type": "quote-match",
         "quote": "on 23 March in Rome",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -561,7 +605,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -570,7 +614,7 @@
       {
         "type": "quote-match",
         "quote": "founded in 1996 in Johannesburg",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -585,7 +629,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -594,13 +638,13 @@
       {
         "type": "quote-match",
         "quote": "principal funder of the YES! To Fairer Votes campaign",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       },
       {
         "type": "quote-match",
         "quote": "was founded in January 1884 as the Proportional Representation Society by",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -615,7 +659,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -624,7 +668,7 @@
       {
         "type": "quote-match",
         "quote": "Flux parties were registered",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -639,7 +683,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -648,13 +692,13 @@
       {
         "type": "quote-match",
         "quote": "active g0v communities working on open government data in Taiwan and Hong Kong",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       },
       {
         "type": "quote-match",
         "quote": "driven by a bimonthly hackathon",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -669,7 +713,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -678,19 +722,19 @@
       {
         "type": "quote-match",
         "quote": "Eric Glen Weyl (born May 6, 1985)... is an American economist at Microsoft Research",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       },
       {
         "type": "quote-match",
         "quote": "Plurality: The Future of Collaborative Technology and Democracy",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       },
       {
         "type": "quote-match",
         "quote": "co-author (with Eric Posner) of the book Radical Markets: Uprooting Capitalism and Democracy for a Just Society",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -705,7 +749,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -714,7 +758,7 @@
       {
         "type": "quote-match",
         "quote": "GOLOS was founded as an association of non-profit organizations in 2000 to support civil monitoring of elections.",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -729,7 +773,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -738,8 +782,20 @@
       {
         "type": "quote-match",
         "quote": "was founded on 25 June 1992",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+      }
+    ]
+  },
+  {
+    "id": "15d0cfeb",
+    "type": "webpage",
+    "URL": "https://en.wikipedia.org/wiki/Grattan_Institute",
+    "title": "Formally incorporated, backed by the Victorian and Commonwealth governments, the University of Melbourne, and BHP/NAB",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Grattan Institute is an Australian public policy think tank... established in 2008."
       }
     ]
   },
@@ -753,7 +809,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -762,13 +818,13 @@
       {
         "type": "quote-match",
         "quote": "The Founding Conference of International IDEA took place on 27–28 February 1995",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       },
       {
         "type": "quote-match",
         "quote": "The Global State of Democracy (GSoD) Initiative was launched in 2016",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -783,7 +839,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -792,13 +848,13 @@
       {
         "type": "quote-match",
         "quote": "Launched on 15 August 2016",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       },
       {
         "type": "quote-match",
         "quote": "challenges to the IT Rules, 2021",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -813,7 +869,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -822,7 +878,7 @@
       {
         "type": "quote-match",
         "quote": "was founded in 1991 as a \"center of research and action dedicated to strengthening the foundations of Israeli democracy.\"",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -837,7 +893,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -846,7 +902,7 @@
       {
         "type": "quote-match",
         "quote": "Founded in 2001 by Ramesh Ramanathan and Swati Ramanathan",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -861,7 +917,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -870,7 +926,7 @@
       {
         "type": "quote-match",
         "quote": "was founded by German-born entrepreneur and London School of Economics and Political Science graduate Errikos Pitsos",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -885,7 +941,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -894,7 +950,7 @@
       {
         "type": "quote-match",
         "quote": "Kongra Star (Kurdish for Star Congress), founded in 2005",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -909,7 +965,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -918,25 +974,25 @@
       {
         "type": "quote-match",
         "quote": "In June 2010, the developers of LiquidFeedback founded Interaktive Demokratie e.V., an independent and non-partisan research institute.",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       },
       {
         "type": "quote-match",
         "quote": "The Pirate Party Germany Berlin became the first political party to utilize the platform in January 2010 for a state party conference. LiquidFeedback assisted in the development of new statutes for the branch during this time",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       },
       {
         "type": "quote-match",
         "quote": "The initial implementation of LiquidFeedback for public engagement occurred in Friesland County, Germany, in September 2012.",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       },
       {
         "type": "quote-match",
         "quote": "The software was first published in October 2009 by Public Software Group e. V. after being suggested by some members of Germany's Pirate Party unsatisfied with conventional means of political opinion formation.",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -951,34 +1007,34 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
-    "content-sha256": "c5179dd59ae3e7827cf7efaf7341dcbca9beac609363d12e9f5459dcfd319d04",
+    "content-sha256": "5bbec34580292d81ff038b8e3caafd98d31f234d49f54c1402d7644d65cdbf5e",
     "evidence": [
       {
         "type": "quote-match",
         "quote": "Loomio emerged from the Occupy movement. In 2012, it launched its first prototype,",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       },
       {
         "type": "quote-match",
         "quote": "launched its first prototype",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       },
       {
         "type": "quote-match",
         "quote": "raised over $100,000 via a Crowdfunding",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       },
       {
         "type": "quote-match",
         "quote": "won the MIX Prize Digital Freedom Challenge",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -993,7 +1049,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -1002,31 +1058,31 @@
       {
         "type": "quote-match",
         "quote": "Court of Appeal of New Zealand ruled that the voting age of 18 was unjustified age discrimination",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       },
       {
         "type": "quote-match",
         "quote": "Supreme Court of New Zealand issued",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       },
       {
         "type": "quote-match",
         "quote": "bill passed its first reading",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       },
       {
         "type": "quote-match",
         "quote": "filed legal action with the High Court of New Zealand",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       },
       {
         "type": "quote-match",
         "quote": "was formed out of the New Zealand Youth Parliament",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -1041,7 +1097,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -1050,13 +1106,13 @@
       {
         "type": "quote-match",
         "quote": "Memorial was one of the three laureates of that year's Nobel Peace Prize",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       },
       {
         "type": "quote-match",
         "quote": "as a \"historical and educational\" society",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -1095,7 +1151,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -1104,7 +1160,7 @@
       {
         "type": "quote-match",
         "quote": "was founded in March 1990 by lawyer Eliad Shraga",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -1119,7 +1175,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -1128,7 +1184,7 @@
       {
         "type": "quote-match",
         "quote": "is a left-wing umbrella organization in northern Syria founded on 16 January 2011",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -1143,7 +1199,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -1152,19 +1208,19 @@
       {
         "type": "quote-match",
         "quote": "TheyWorkForYou is a parliamentary monitoring website which aims to make it easier",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       },
       {
         "type": "quote-match",
         "quote": "WriteToThem is a website which allows UK citizens to contact their elected representatives",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       },
       {
         "type": "quote-match",
         "quote": "mySociety was founded by Tom Steinberg in September 2003",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -1179,7 +1235,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -1188,13 +1244,13 @@
       {
         "type": "quote-match",
         "quote": "NAMFREL mobilized 500,000 volunteers nationwide",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       },
       {
         "type": "quote-match",
         "quote": "NAMFREL was formally organized in October 1983",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -1233,7 +1289,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -1242,7 +1298,7 @@
       {
         "type": "quote-match",
         "quote": "The OneVoice Movement was a 501c(3) non-profit organization with offices in New York City, Tel Aviv, Ramallah, and London, founded in 2002 by Daniel Lubetzky",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -1257,7 +1313,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -1266,13 +1322,13 @@
       {
         "type": "quote-match",
         "quote": "Online Direct Democracy – (Empowering the People!) was a registered Australian political party.",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       },
       {
         "type": "quote-match",
         "quote": "The party contested the 2007 and 2013 federal elections as Senator Online.",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -1317,7 +1373,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -1326,13 +1382,13 @@
       {
         "type": "quote-match",
         "quote": "George Soros handed over the leadership of the foundation to his son Alexander Soros",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       },
       {
         "type": "quote-match",
         "quote": "is an American grantmaking network founded by billionaire business magnate George Soros",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -1347,7 +1403,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -1356,7 +1412,7 @@
       {
         "type": "quote-match",
         "quote": "was established in September 2005 as an independent research institute",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -1371,7 +1427,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -1380,13 +1436,13 @@
       {
         "type": "quote-match",
         "quote": "PSPD obtained a special consultative status with the UN ECOSOC",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       },
       {
         "type": "quote-match",
         "quote": "was established on 10 September 1994 with around 200 members",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -1401,7 +1457,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -1410,7 +1466,7 @@
       {
         "type": "quote-match",
         "quote": "was founded in 2008 by Rodney Serkowski",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -1425,7 +1481,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -1434,13 +1490,13 @@
       {
         "type": "quote-match",
         "quote": "pol.is has been \"one of the key parts\" of vTaiwan",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       },
       {
         "type": "quote-match",
         "quote": "was founded by Colin Megill, Christopher Small, and Michael Bjorkegren",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -1455,7 +1511,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -1464,19 +1520,19 @@
       {
         "type": "quote-match",
         "quote": "The 16-member Referendum Council was jointly appointed by the prime minister, Malcolm Turnbull, and Leader of the Opposition, Bill Shorten, on 7 December 2015",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       },
       {
         "type": "quote-match",
         "quote": "The Final Report of the Referendum Council was published on 30 June 2017, and sent to the Prime Minister, Malcolm Turnbull, and the leader of the opposition, Bill Shorten",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       },
       {
         "type": "quote-match",
         "quote": "The First Nations National Constitutional Convention met over four days from 23 to 26 May 2017",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -1491,7 +1547,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -1500,7 +1556,7 @@
       {
         "type": "quote-match",
         "quote": "Sitra was founded in 1967 as a part of the Bank of Finland",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -1515,7 +1571,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -1524,19 +1580,19 @@
       {
         "type": "quote-match",
         "quote": "securing 11 seats in the House of Representatives",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       },
       {
         "type": "quote-match",
         "quote": "was established on 8 May 2025",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       },
       {
         "type": "quote-match",
         "quote": "won its first seat in the Diet",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -1551,7 +1607,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -1560,13 +1616,13 @@
       {
         "type": "quote-match",
         "quote": "in response to the Haiti Earthquake in 2010",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       },
       {
         "type": "quote-match",
         "quote": "was created in the aftermath of Kenya's disputed 2007 presidential election",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -1581,7 +1637,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -1590,7 +1646,7 @@
       {
         "type": "quote-match",
         "quote": "was founded in February 1977 by the merger",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -1605,7 +1661,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -1614,7 +1670,7 @@
       {
         "type": "quote-match",
         "quote": "party was founded on August 8, 2009",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -1629,7 +1685,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -1638,7 +1694,7 @@
       {
         "type": "quote-match",
         "quote": "Transparencia por Colombia, la Delegación Nacional de Transparencia Internacional en Colombia, surge en 1998",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -1653,7 +1709,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -1662,7 +1718,7 @@
       {
         "type": "quote-match",
         "quote": "was launched under the sponsorship of the National Development Council. The website has made it possible for citizens to submit a policy proposal to the government via the Internet.",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -1692,6 +1748,26 @@
     ]
   },
   {
+    "id": "a74018cb",
+    "type": "webpage",
+    "URL": "https://finance.yahoo.com/news/blockchain-voting-platform-horizon-state-140552054.html",
+    "title": "Founded by Jamie Skella and Nimo Naamani as a Melbourne-based blockchain voting startup",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Co-founded in 2017 by Jamie Skella and Nimo Naamani, Horizon State attempted to transform the voting process in Australia and New Zealand using blockchain"
+      },
+      {
+        "type": "quote-match",
+        "quote": "In February 2019, the South Australian government used Horizon State to run a public election for the recreational fishing advisory council."
+      },
+      {
+        "type": "quote-match",
+        "quote": "an eye-watering expense [that] will see the business become insolvent, and ultimately force its closure"
+      }
+    ]
+  },
+  {
     "id": "b78f325c",
     "type": "webpage",
     "URL": "https://foro.org.co/nosotros/quienes-somos/",
@@ -1701,7 +1777,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -1710,7 +1786,7 @@
       {
         "type": "quote-match",
         "quote": "creada en 1982",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -1725,7 +1801,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -1734,7 +1810,7 @@
       {
         "type": "quote-match",
         "quote": "Fondée le 26 novembre 2015 par Cheikh Fall, AfricTivistes compte à ce jour plus de 400 membres répartis dans 40 pays du continent africain.",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -1761,7 +1837,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -1770,7 +1846,7 @@
       {
         "type": "quote-match",
         "quote": "A deal with Silicon Valley start-up Swarm Fund is a big win for an Australian firm working to revolutionise the democratic process using blockchain",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -1785,7 +1861,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -1794,7 +1870,7 @@
       {
         "type": "quote-match",
         "quote": "The TGE (Token Generation Event) announced by Horizon State has successfully concluded on Nov 19, 2017",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -1809,7 +1885,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -1818,7 +1894,7 @@
       {
         "type": "quote-match",
         "quote": "known as the Susan McKinnon Foundation) was established in 2015 by Sophie Oh and Grant Rule",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -1845,7 +1921,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -1854,13 +1930,13 @@
       {
         "type": "quote-match",
         "quote": "We were launched with support from the US-based National Democratic Institute for International Affairs (NDI)",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       },
       {
         "type": "quote-match",
         "quote": "between 1999 (Ukraine) to these days (Kosovo, Philippines) MEMO 98 experts have participated in more than 130 election observation missions",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -1875,7 +1951,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -1884,7 +1960,7 @@
       {
         "type": "quote-match",
         "quote": "we were awarded the IAP2 Australasia Core Values Award for Research in 2018",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -1899,7 +1975,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -1908,7 +1984,7 @@
       {
         "type": "quote-match",
         "quote": "Nicole co-founded MosaicLab (with Keith Greaves and Kimbra White) in 2017",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -1923,7 +1999,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -1932,7 +2008,7 @@
       {
         "type": "quote-match",
         "quote": "Drawn from the authors’ experience delivering 39 deliberative engagement processes, the book is full of insider secrets, authentic lessons learned",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -1947,22 +2023,22 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
-    "content-sha256": "a338ad43ab969dd62edbc78cb4034fbdc6706567697c2e5f33fd1b717514b0dd",
+    "content-sha256": "41de34d51814cde39f45696142e803023c7a62a397acac993a107c99cd8ca769",
     "evidence": [
       {
         "type": "quote-match",
         "quote": "NewVote is founded as a for-purpose (a not-for-profit), Australia.",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       },
       {
         "type": "quote-match",
         "quote": "The University of Queensland Student Union is piloting and promoting the app with its 52,000 students, starting on 24 July 2019.",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -1977,7 +2053,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -1986,8 +2062,20 @@
       {
         "type": "quote-match",
         "quote": "today the OpenAustralia Foundation is launching a new site They Vote for You",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+      }
+    ]
+  },
+  {
+    "id": "b39206cd",
+    "type": "webpage",
+    "URL": "https://portable.com.au/articles/code-for-australia-announcement/",
+    "title": "Founded by Alvaro Maz, Jacob Lindsay and Daniel Groch",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Code for Australia is a nationwide civic technology organisation founded in 2014 by Alvaro Maz, Jacob Lindsay and Daniel Groch."
       }
     ]
   },
@@ -2001,7 +2089,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -2010,7 +2098,7 @@
       {
         "type": "quote-match",
         "quote": "sociedade civil (OSC) sem fins lucrativos e apartidária, fundada em assembleia em 4 de setembro de 2013",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -2097,7 +2185,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -2106,7 +2194,7 @@
       {
         "type": "quote-match",
         "quote": "Shipyard Foundation was established in 2009.",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -2121,23 +2209,39 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
-    "content-sha256": "e7c65b2026e35db7b13ddba7bd91b955aa391ad233bd5fd28808640605308044",
+    "content-sha256": "3573c52bd04966c380a9b3ac0c3023a221c7f8740521915567b994b26f9df89b",
     "evidence": [
       {
         "type": "quote-match",
         "quote": "Founders: Max Kaye",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       },
       {
         "type": "quote-match",
         "quote": "SecureVote wins ATC Cyber Security Award",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+      }
+    ]
+  },
+  {
+    "id": "bd504f90",
+    "type": "webpage",
+    "URL": "https://theconversation.com/as-the-latrobe-valley-moves-away-from-coal-jobs-could-a-green-workers-cooperative-offer-a-solution-245850",
+    "title": "Formally became a registered cooperative, rooted in discussions dating to the late 1990s",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Earthworker only formally became a cooperative in 2011, though discussions date back to the late 1990s."
+      },
+      {
+        "type": "quote-match",
+        "quote": "In 2016, the network bought a hot water tank manufacturer in Morwell and began making their own tanks and solar hot water systems as the Earthworker Energy Manufacturing Co-operative."
       }
     ]
   },
@@ -2199,7 +2303,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -2208,7 +2312,7 @@
       {
         "type": "quote-match",
         "quote": "professors Michael Bratton, Robert Mattes, and E. Gyimah-Boadi merge three independent survey research projects to form Afrobarometer (AB)",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -2259,7 +2363,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -2268,7 +2372,7 @@
       {
         "type": "quote-match",
         "quote": "The Centre for Democracy and Development (CDD) was established in the United Kingdom in 1997",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -2283,7 +2387,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -2292,7 +2396,7 @@
       {
         "type": "quote-match",
         "quote": "Ciudadanía Inteligente 2009 - 2026. Todos los derechos reservados",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -2307,7 +2411,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -2316,7 +2420,7 @@
       {
         "type": "quote-match",
         "quote": "設立年月日 2013年10月25日",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -2331,7 +2435,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -2340,7 +2444,7 @@
       {
         "type": "quote-match",
         "quote": "You speak not to say something and to hear something back, not to dazzle, be right or stake a claim, but to be held accountable to each other.",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -2367,7 +2471,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -2376,7 +2480,7 @@
       {
         "type": "quote-match",
         "quote": "2026 Global Forum on Modern Direct Democracy",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -2403,7 +2507,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -2412,7 +2516,7 @@
       {
         "type": "quote-match",
         "quote": "The Australian party deregistered around 2019; the movement and technology continued under a different structure.",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -2427,7 +2531,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -2436,7 +2540,7 @@
       {
         "type": "quote-match",
         "quote": "FIDE Forum 2026",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -2451,7 +2555,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -2460,7 +2564,7 @@
       {
         "type": "quote-match",
         "quote": "In 2011, in the midst of a political crisis in a governmentless Belgium, G1000 was a citizens' initiative aimed at breathing new life into democracy by organizing a major citizens' consultation, bringing together 1,000 randomly selected citizens to make recommendations to the political world.",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -2475,7 +2579,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -2484,7 +2588,7 @@
       {
         "type": "quote-match",
         "quote": "This initiative, launched after a petition by Cap Démocratie, marked a first for Wallonia, where citizens and politicians worked together as equals.",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -2499,7 +2603,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -2508,7 +2612,7 @@
       {
         "type": "quote-match",
         "quote": "Officially launched in recent weeks, Luminate aims to fund projects and organizations that can drive changes that fall into one of four categories: civic empowerment, data and digital rights, transparency and independent media.",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -2523,23 +2627,35 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
-    "content-sha256": "464fb6d16d10ee9d99ab9f899e243fd99620ecb9ddd704d1aad3a76b407ae01a",
+    "content-sha256": "1d1c8cfc7834bf76cc123f07d21a514808f8e2577757b6d08ee5133c4e5d30e5",
     "evidence": [
       {
         "type": "quote-match",
         "quote": "Healthy Democracy was founded in 2007 as “Healthy Democracy Oregon” by Crosby and his wife and two activists, Tyrone Reitman and Elliot Shuford.",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       },
       {
         "type": "quote-match",
         "quote": "In 2011, Oregon state legislators sponsored House Bill 2634 which made the Citizens’ Initiative Review (CIR) process an official and permanent part of Oregon’s elections",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+      }
+    ]
+  },
+  {
+    "id": "cc9069b0",
+    "type": "webpage",
+    "URL": "https://www.institutoupdate.org.br/",
+    "title": "Founded in São Paulo as a regional platform for political innovation and imagination in the Global South",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "O Instituto Update atua como uma plataforma regional de inovação e imaginação política no Sul Global."
       }
     ]
   },
@@ -2565,7 +2681,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -2574,7 +2690,7 @@
       {
         "type": "quote-match",
         "quote": "Il Progetto Labsus, il Laboratorio per la sussidiarietà, ha un obiettivo ben preciso",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -2589,7 +2705,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -2598,13 +2714,13 @@
       {
         "type": "quote-match",
         "quote": "Founded in 1989, the Lebanese Center for Policy Studies is an independently managed, non-partisan, non-profit, non-governmental think tank whose mission is to produce and advocate for policies that improve governance in Lebanon and the Arab region.",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       },
       {
         "type": "quote-match",
         "quote": "contributing to formulating the 2006 Boutros draft electoral law",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -2619,7 +2735,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -2628,7 +2744,7 @@
       {
         "type": "quote-match",
         "quote": "Since its founding in 2007, MASS has completed more than 200 major policy projects for governments and public agencies across Canada",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -2643,7 +2759,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -2652,7 +2768,7 @@
       {
         "type": "quote-match",
         "quote": "Central LHIN Citizens’ Reference Panel on Regional Health Priorities",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -2667,7 +2783,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -2676,7 +2792,7 @@
       {
         "type": "quote-match",
         "quote": "民盟于1941年3月19日在重庆秘密成立",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -2715,22 +2831,22 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
-    "content-sha256": "6eb4446fd4258c1f5ba672e595136f6f9eb83ea5370fbb268635344181da6327",
+    "content-sha256": "f59a08f534783c5fd659bcf0a7044c4e0617c44778f22f166eb49a9ec06e8ef6",
     "evidence": [
       {
         "type": "quote-match",
         "quote": "Sym Roe was a volunteer for the mySociety enterprise during the run up to the 2010 general election, working to increase the amount of information available online about the candidates.",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       },
       {
         "type": "quote-match",
         "quote": "crowdsourcing the most comprehensive and accurate database of candidates in recent electoral history",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -2745,40 +2861,40 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
-    "content-sha256": "f3919e944ca7bd379d685285a218d052e4723264fc242cf7461d0d79059ed3d4",
+    "content-sha256": "e34739f08d9203fc55e4dd0282920f9ca4e1d29dc6a7c276558ecf94e784e229",
     "evidence": [
       {
         "type": "quote-match",
         "quote": "Luca had a 30-year career in Transfield, a large infrastructure and engineering company founded by his father.",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       },
       {
         "type": "quote-match",
         "quote": "Our first big project was the Australian Citizens’ Parliament in 2009, which was an Australian Research Centre-funded citizens’ assembly involving 150 Australians deliberating on how to strengthen Australia’s system of government.",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       },
       {
         "type": "quote-match",
         "quote": "Still in 2018, we were invited to travel to Belgium with a several other academics and practitioners to consult on what would become the world’s first permanent Citizens’ Council in Eupen, the capital of the autonomous Ostbelgien region.",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       },
       {
         "type": "quote-match",
         "quote": "The newDemocracy Foundation was launched in 2007, with Luca Belgiorno-Nettis, Lyn Carson, Kathy Jones and Ian Marsh as the inaugural directors.",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       },
       {
         "type": "quote-match",
         "quote": "The newDemocracy Foundation was launched in 2007, with Luca Belgiorno-Nettis... as the inaugural directors.",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -2817,7 +2933,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -2826,7 +2942,7 @@
       {
         "type": "quote-match",
         "quote": "OpenAustralia Foundation Limited is officially incorporated as a company limited by guarantee.",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -2841,7 +2957,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -2850,7 +2966,7 @@
       {
         "type": "quote-match",
         "quote": "21 December 2009 Launching our new website: Planning Alerts",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -2877,7 +2993,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -2886,7 +3002,7 @@
       {
         "type": "quote-match",
         "quote": "Since 2009, PBP has collaborated with grassroots and government partners to launch PB processes in over 40 cities",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -2901,7 +3017,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -2910,7 +3026,7 @@
       {
         "type": "quote-match",
         "quote": "The CONSUL DEMOCRACY Foundation and the City of Munich host the annual ConsulCon — a three-day gathering on digital democracy, open-source civic technology and democratic empowerment.",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -2949,22 +3065,22 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
-    "content-sha256": "7d842a326f518a91bb7fa3c51bcf71fc549de4ad240055b614b6126893a20a45",
+    "content-sha256": "5932469bf355d2f38d2efc15e6c5be84640c6805b7000d90ee556614ce142141",
     "evidence": [
       {
         "type": "quote-match",
         "quote": "The New Zealand chapter was formally established in 1999, under the chairmanship of Senior Accountant Michael Morris",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       },
       {
         "type": "quote-match",
         "quote": "and it became an incorporated society and charity in 2001.",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]
@@ -3003,7 +3119,7 @@
         [
           2026,
           8,
-          11
+          12
         ]
       ]
     },
@@ -3012,7 +3128,7 @@
       {
         "type": "quote-match",
         "quote": "Democracy Earth Founded: 2015 Batch: Winter 2015 Team Size: 2 Status: Active Location: Madrid, Spain Founders Pia Mancini Founder Pia Mancini Founder Santiago Siri Founder/President Santiago Siri Founder/President Guido Vilariño Founder",
-        "last-verified": "2026-08-11",
+        "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
       }
     ]

@@ -29,18 +29,23 @@ events:
   title: Launched by g0v contributors partnering with Taiwanese government officials,
     following the 2014 Sunflower Movement
   url: https://congress.crowd.law/case-vtaiwan.html
-  proof_level: medium
-  url_checked: '2026-08-10'
+  quote: In turn, former Taiwanese Minister without Portfolio Jaclyn Tsai attended
+    a g0v.tw hackathon in December 2014 and asked the volunteers if they could “create
+    a platform for rational discussion and deliberation of policy issues that the
+    entire nation could participate in.”
+  proof_level: high
+  url_checked: '2026-08-12'
   notable: true
-  proof_warning: true
 - date: '2015-08-01'
   title: Uber/UberX case — vTaiwan's first major deliberation using Pol.is, ~31,115
     votes from 925 participants
   url: https://congress.crowd.law/case-vtaiwan.html
-  proof_level: medium
-  url_checked: '2026-08-10'
+  quote: 31,115 total votes (highest of any process to date)
+  note: Also confirmed on the same page — "925 participants voted on Polis survey
+    (opinion stage)".
+  proof_level: high
+  url_checked: '2026-08-12'
   notable: true
-  proof_warning: true
 activity:
   manual:
     checked: 2026-06-07

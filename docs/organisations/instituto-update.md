@@ -27,10 +27,13 @@ events:
   title: Founded in São Paulo as a regional platform for political innovation and
     imagination in the Global South
   url: https://www.institutoupdate.org.br/
-  note: About page describes the organisation as a regional platform for political
-    innovation in the Global South
-  proof_level: medium
-  url_checked: '2026-08-10'
+  quote: O Instituto Update atua como uma plataforma regional de inovação e imaginação
+    política no Sul Global.
+  note: 'Portuguese source text (translation: "Instituto Update acts as a regional
+    platform of political innovation and imagination in the Global South"). The 2018
+    founding year and São Paulo location aren''t stated on this page directly.'
+  proof_level: high
+  url_checked: '2026-08-12'
   notable: true
 activity:
   rss:
