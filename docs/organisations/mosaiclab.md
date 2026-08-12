@@ -160,4 +160,4 @@ MosaicLab's pro-bono arm provides each recipient project **$5,000** toward costs
 - [DemocracyCo](democracyco.md)
 - [Designing Open Democracy 2020 Primer](../../blog/posts/2022-02-24-podcast.md) — Kimbra White from MosaicLab appeared at this DOD meetup
 
-[^mosaiclab]: "Kimbra co-founded MosaicLab in 2013 and sees the group as a platform for continuous learning about participation." [Kimbra White](https://mosaiclab.com.au/news-all-posts/2016/8/16/meet-a-co-founder-kimbra-white) co-founder bio; see also [Nicole Hunter](https://mosaiclab.com.au/nicole-hunter), [Keith Greaves](https://mosaiclab.com.au/keith-greaves).
+[^mosaiclab]: "Kimbra co-founded MosaicLab in 2013 and sees the group as a platform for continuous learning about participation." [Kimbra White](https://mosaiclab.com.au/news-all-posts/2016/8/16/meet-a-co-founder-kimbra-white) co-founder bio. See also Nicole Hunter and Keith Greaves bios.

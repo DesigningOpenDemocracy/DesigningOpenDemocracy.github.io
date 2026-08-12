@@ -81,6 +81,6 @@ DOD doesn't endorse specific mechanisms, but quadratic voting/funding and Plural
 
 [^rxc-about]: "RadicalxChange sparks imagination for transformative systems change." ["About"](https://www.radicalxchange.org/about/), RadicalxChange Foundation.
 
-[^rxc-jess]: "Jess Scully is Executive Director of RadicalxChange and an advocate for civic imagination." [Jess Scully](https://www.radicalxchange.org/team/jess-scully/), RadicalxChange Foundation; [jessscully.com/about](https://www.jessscully.com/about).
+[^rxc-jess]: "Jess Scully is Executive Director of RadicalxChange and an advocate for civic imagination." [Jess Scully](https://www.radicalxchange.org/team/jess-scully/), RadicalxChange Foundation.
 
 [^pioneerspost]: ["'We are already the super intelligence we are looking for': Audrey Tang and others' big ideas for a better future at SEWF25"](https://www.pioneerspost.com/news-views/20251106/we-are-already-the-super-intelligence-we-are-looking-audrey-tang-and-others-big), Pioneers Post.
