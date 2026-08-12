@@ -66,6 +66,6 @@ At a planning day in May 2025, the group set its priorities for the year ahead: 
 
 [^housing]: "On Saturday 10th August, around fifty people gathered" and "The attendees were diverse and ranged in age from their twenties to seventies," [Lismore People's Assembly on Housing](https://reclaim.org.au/lismore-peoples-assembly-on-housing/), Reclaim Our Recovery, recounting the August 2024 assembly.
 
-[^outcomes]: [#1 Lismore People's Assembly/Housing](https://reclaim.org.au/1-lismore-peoples-assembly-housing/), Reclaim Our Recovery — full list of solutions generated.
+[^outcomes]: "Community based diverse and cooperative solutions for housing" [#1 Lismore People's Assembly/Housing](https://reclaim.org.au/1-lismore-peoples-assembly-housing/), Reclaim Our Recovery — full list of solutions generated.
 
-[^year-ahead]: [The year ahead for the Lismore People's Assembly](https://reclaim.org.au/the-year-ahead-for-the-lismore-peoples-assembly/), Reclaim Our Recovery, May 2025.
+[^year-ahead]: "Support local tiny house production (one of the solutions from the housing assembly)" [The year ahead for the Lismore People's Assembly](https://reclaim.org.au/the-year-ahead-for-the-lismore-peoples-assembly/), Reclaim Our Recovery, May 2025.

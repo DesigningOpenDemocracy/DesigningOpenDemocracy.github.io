@@ -174,6 +174,30 @@
     ]
   },
   {
+    "id": "05d3a280",
+    "type": "webpage",
+    "URL": "https://democracy-technologies.org/participation/consensus-building-in-taiwan/",
+    "title": "\"Consensus Building in Taiwan, the Poster Child of Digital Democracy\"",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "it has transformed how the government brings stakeholders together, allowing for a more inclusive approach to legislation."
+      }
+    ]
+  },
+  {
+    "id": "3f8044cd",
+    "type": "webpage",
+    "URL": "https://democracyincolour.org/about/",
+    "title": "About",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Democracy in Colour is an organisation that advocates for racial justice by identifying the various manifestations of racism in society and providing targeted and strategic interventions that centre the voices and lived experiences of racialised and marginalised communities."
+      }
+    ]
+  },
+  {
     "id": "dfa14e4e",
     "type": "webpage",
     "URL": "https://en.idi.org.il/articles/47344",
@@ -651,6 +675,12 @@
     },
     "content-sha256": "e30a7df50bb9d845fb9b2ec2ec30bcf228765789048ad46bc2823114e9708aed",
     "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Eric Glen Weyl (born May 6, 1985)... is an American economist at Microsoft Research",
+        "last-verified": "2026-08-11",
+        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+      },
       {
         "type": "quote-match",
         "quote": "Plurality: The Future of Collaborative Technology and Democracy",
@@ -1650,6 +1680,18 @@
     ]
   },
   {
+    "id": "6eac6922",
+    "type": "webpage",
+    "URL": "https://events.humanitix.com/radicalxchange-foundation-in-melbourne",
+    "title": "\"An invitation to meet RadicalxChange Foundation in Melbourne\"",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Join us to learn about civic tech for democracy and community, and explore how our tools might serve your community or sector."
+      }
+    ]
+  },
+  {
     "id": "b78f325c",
     "type": "webpage",
     "URL": "https://foro.org.co/nosotros/quienes-somos/",
@@ -1694,6 +1736,18 @@
         "quote": "Fondée le 26 novembre 2015 par Cheikh Fall, AfricTivistes compte à ce jour plus de 400 membres répartis dans 40 pays du continent africain.",
         "last-verified": "2026-08-11",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+      }
+    ]
+  },
+  {
+    "id": "3d7bb3d9",
+    "type": "webpage",
+    "URL": "https://glenweyl.com/radicalxchange/",
+    "title": "\"RadicalxChange\"",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Founded by economist Glen Weyl in 2018, the RadicalxChange Foundation is a 501(c)(3) nonprofit dedicated to advancing the RxC movement, to building community, and to education about democratic innovation."
       }
     ]
   },
@@ -1962,6 +2016,18 @@
     ]
   },
   {
+    "id": "8d4c23e8",
+    "type": "webpage",
+    "URL": "https://reclaim.org.au/1-lismore-peoples-assembly-housing/",
+    "title": "#1 Lismore People's Assembly/Housing",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Community based diverse and cooperative solutions for housing"
+      }
+    ]
+  },
+  {
     "id": "e3ae0804",
     "type": "webpage",
     "URL": "https://reclaim.org.au/inaugural-lismore-peoples-assembly/",
@@ -2006,6 +2072,18 @@
         "quote": "On Saturday 10th August, around fifty people gathered",
         "last-verified": "2026-08-11",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+      }
+    ]
+  },
+  {
+    "id": "ed6cc5c5",
+    "type": "webpage",
+    "URL": "https://reclaim.org.au/the-year-ahead-for-the-lismore-peoples-assembly/",
+    "title": "The year ahead for the Lismore People's Assembly",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Support local tiny house production (one of the solutions from the housing assembly)"
       }
     ]
   },
@@ -2076,6 +2154,18 @@
     ]
   },
   {
+    "id": "c9c74eab",
+    "type": "webpage",
+    "URL": "https://topics.amcham.com.tw/2017/02/make-full-use-of-join-gov-tw/",
+    "title": "\"Make Full Use of Join.gov.tw\"",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "a well-designed online portal called Join to facilitate two-way communication between government offices and members of the public on regulatory matters."
+      }
+    ]
+  },
+  {
     "id": "7bf576cf",
     "type": "webpage",
     "URL": "https://web.archive.org/web/20190824085752/https://bhive.coop/our-story/",
@@ -2120,6 +2210,18 @@
         "quote": "professors Michael Bratton, Robert Mattes, and E. Gyimah-Boadi merge three independent survey research projects to form Afrobarometer (AB)",
         "last-verified": "2026-08-11",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+      }
+    ]
+  },
+  {
+    "id": "b5fc264d",
+    "type": "webpage",
+    "URL": "https://www.bertelsmann-stiftung.de/en/our-projects/democracy-and-participation-in-europe/shortcut-archive/shortcut-8-trailblazers-of-digital-participation-taiwans-join-platform-and-vtaiwan",
+    "title": "\"Trailblazers of digital participation: Taiwan's Join platform and vTaiwan\"",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "The Join platform is a government-run participation hub that is most notable for its petitioning function but also offers several feedback and discussion options."
       }
     ]
   },
@@ -2244,6 +2346,18 @@
     ]
   },
   {
+    "id": "64cfd962",
+    "type": "webpage",
+    "URL": "https://www.demnext.org/about",
+    "title": "About",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "DemocracyNext is an international research & action institute focused on broadening who has power and enhancing how we make decisions together."
+      }
+    ]
+  },
+  {
     "id": "a331b6d0",
     "type": "webpage",
     "URL": "https://www.democracy-international.org/events",
@@ -2264,6 +2378,18 @@
         "quote": "2026 Global Forum on Modern Direct Democracy",
         "last-verified": "2026-08-11",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+      }
+    ]
+  },
+  {
+    "id": "57260b84",
+    "type": "webpage",
+    "URL": "https://www.democracyco.com.au/about/",
+    "title": "About",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "At DemocracyCo we create opportunities for citizens to participate constructively in the decisions that matter to them."
       }
     ]
   },
@@ -2556,6 +2682,30 @@
     ]
   },
   {
+    "id": "e3bdd410",
+    "type": "webpage",
+    "URL": "https://www.mysociety.org/about/",
+    "title": "About",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "mySociety is a trusted, collaborative and evidence-driven organisation with a long history of leading in civic tech."
+      }
+    ]
+  },
+  {
+    "id": "00283224",
+    "type": "webpage",
+    "URL": "https://www.ndi.org/sites/default/files/2025-04/No-6-Lessons-from-Namfrel-and-Gong---NDI-Sustaining-the-Fight-for-Democracy-Lessons-from-Citizen-Election-Monitoring-Organizations-Around-the-World.pdf",
+    "title": "\"Lessons from NAMFREL and Gong\"",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "In 1986, NAMFREL conducted the world’s first Process and Results Verification for Transparency (PRVT), demonstrating election fraud and showing that Marcos had, in fact, lost the election."
+      }
+    ]
+  },
+  {
     "id": "0392b5ff",
     "type": "webpage",
     "URL": "https://www.nesta.org.uk/feature/new-radicals-2016/democracy-club/",
@@ -2762,6 +2912,18 @@
         "quote": "The CONSUL DEMOCRACY Foundation and the City of Munich host the annual ConsulCon — a three-day gathering on digital democracy, open-source civic technology and democratic empowerment.",
         "last-verified": "2026-08-11",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+      }
+    ]
+  },
+  {
+    "id": "0921a796",
+    "type": "webpage",
+    "URL": "https://www.peoplepowered.org/news-content/digital-participation-case-study-taiwan",
+    "title": "\"Digital Participation Case Study: Taiwan\"",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "vTaiwan has always demonstrated how civic communities can innovate in democratic participation by combining open-source platforms, commercial tools, and AI."
       }
     ]
   },

@@ -75,4 +75,4 @@ The practice does not advocate a single methodology; it selects approaches suite
 - [Deliberative Democracy](../concepts/deliberative-democracy.md)
 - [Mosaic Lab](mosaiclab.md)
 
-[^democracyco]: DemocracyCo, [About](https://www.democracyco.com.au/about/).
+[^democracyco]: "At DemocracyCo we create opportunities for citizens to participate constructively in the decisions that matter to them." [About](https://www.democracyco.com.au/about/), DemocracyCo.

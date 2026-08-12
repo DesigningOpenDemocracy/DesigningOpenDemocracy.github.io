@@ -116,16 +116,16 @@ RadicalxChange's Melbourne chapter is newly forming. A public launch event — "
 - [Participatory Budgeting](../concepts/participatory-budgeting.md)
 - [vTaiwan](vtaiwan.md)
 
-[^glenweyl]: E. Glen Weyl, ["RadicalxChange"](https://glenweyl.com/radicalxchange/), personal site.
+[^glenweyl]: "Founded by economist Glen Weyl in 2018, the RadicalxChange Foundation is a 501(c)(3) nonprofit dedicated to advancing the RxC movement, to building community, and to education about democratic innovation." ["RadicalxChange"](https://glenweyl.com/radicalxchange/), E. Glen Weyl personal site.
 
 [^propublica]: [RadicalxChange Foundation Ltd — Nonprofit Explorer](https://projects.propublica.org/nonprofits/organizations/832183139), ProPublica (EIN 83-2183139, registered Moraga, CA).
 
 [^rxc-about]: ["About"](https://www.radicalxchange.org/about/) and [radicalxchange.org](https://www.radicalxchange.org/), RadicalxChange Foundation.
 
-[^wiki-weyl]: [E. Glen Weyl](https://en.wikipedia.org/wiki/Glen_Weyl), Wikipedia.
+[^wiki-weyl]: "Eric Glen Weyl (born May 6, 1985)... is an American economist at Microsoft Research" [E. Glen Weyl](https://en.wikipedia.org/wiki/Glen_Weyl), Wikipedia.
 
 [^rxc-jess]: [Jess Scully](https://www.radicalxchange.org/team/jess-scully/), RadicalxChange Foundation team page; [jessscully.com/about](https://www.jessscully.com/about).
 
-[^humanitix]: ["An invitation to meet RadicalxChange Foundation in Melbourne"](https://events.humanitix.com/radicalxchange-foundation-in-melbourne), Humanitix, 27 August 2026.
+[^humanitix]: "Join us to learn about civic tech for democracy and community, and explore how our tools might serve your community or sector." ["An invitation to meet RadicalxChange Foundation in Melbourne"](https://events.humanitix.com/radicalxchange-foundation-in-melbourne), Humanitix, 27 August 2026.
 
 [^pioneerspost]: ["'We are already the super intelligence we are looking for': Audrey Tang and others' big ideas for a better future at SEWF25"](https://www.pioneerspost.com/news-views/20251106/we-are-already-the-super-intelligence-we-are-looking-audrey-tang-and-others-big), Pioneers Post.

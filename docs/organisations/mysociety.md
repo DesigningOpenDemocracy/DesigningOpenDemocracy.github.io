@@ -94,4 +94,4 @@ The open-source Alaveteli software (powering WhatDoTheyKnow variants globally) i
 - [Open Australia Foundation](open-australia-foundation.md)
 - [Liquid Democracy e.V.](liquid-democracy-ev.md)
 
-[^mysociety]: mySociety, [About](https://www.mysociety.org/about/).
+[^mysociety]: "mySociety is a trusted, collaborative and evidence-driven organisation with a long history of leading in civic tech." [About](https://www.mysociety.org/about/), mySociety.
