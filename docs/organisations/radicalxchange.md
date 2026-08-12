@@ -120,11 +120,11 @@ RadicalxChange's Melbourne chapter is newly forming. A public launch event — "
 
 [^propublica]: [RadicalxChange Foundation Ltd — Nonprofit Explorer](https://projects.propublica.org/nonprofits/organizations/832183139), ProPublica (EIN 83-2183139, registered Moraga, CA).
 
-[^rxc-about]: ["About"](https://www.radicalxchange.org/about/) and [radicalxchange.org](https://www.radicalxchange.org/), RadicalxChange Foundation.
+[^rxc-about]: "RadicalxChange sparks imagination for transformative systems change." ["About"](https://www.radicalxchange.org/about/), RadicalxChange Foundation.
 
 [^wiki-weyl]: "Eric Glen Weyl (born May 6, 1985)... is an American economist at Microsoft Research" [E. Glen Weyl](https://en.wikipedia.org/wiki/Glen_Weyl), Wikipedia.
 
-[^rxc-jess]: [Jess Scully](https://www.radicalxchange.org/team/jess-scully/), RadicalxChange Foundation team page; [jessscully.com/about](https://www.jessscully.com/about).
+[^rxc-jess]: "Jess Scully is Executive Director of RadicalxChange and an advocate for civic imagination." [Jess Scully](https://www.radicalxchange.org/team/jess-scully/), RadicalxChange Foundation team page.
 
 [^humanitix]: "Join us to learn about civic tech for democracy and community, and explore how our tools might serve your community or sector." ["An invitation to meet RadicalxChange Foundation in Melbourne"](https://events.humanitix.com/radicalxchange-foundation-in-melbourne), Humanitix, 27 August 2026.
 
