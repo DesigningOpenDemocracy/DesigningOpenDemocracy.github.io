@@ -1624,6 +1624,24 @@
 .org-events-timeline .org-event-source-btn:hover {
   opacity: 1;
 }
+/* .org-event-archive-btn is shared by two render paths — org event
+   citations (docs/overrides/organisation.html, inside .org-events-timeline)
+   and prose footnote citations (hooks/footnote_fragments.py, inline in
+   ordinary page/footnote content) — so it's styled unscoped rather than
+   under .org-events-timeline like the other org-event-* rules above. */
+.org-event-archive-btn {
+  display: inline-block;
+  margin-left: 0.3em;
+  font-size: 0.85em;
+  text-decoration: none;
+  opacity: 0.6;
+}
+.org-event-archive-btn:hover {
+  opacity: 1;
+}
+.org-events-timeline .org-event-archive-btn {
+  margin-top: 0.4em;
+}
 .ai-assist-assisted  { background: rgba(21,101,192,0.25);  color: #64b5f6; border: 1px solid rgba(21,101,192,0.35); }
 
 /****************************************/

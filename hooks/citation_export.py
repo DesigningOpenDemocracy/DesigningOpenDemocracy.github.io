@@ -118,6 +118,12 @@ def on_pre_build(config):
             cite["accessed"] = {"date-parts": [parts]}
         if entry.get("content_hash"):
             cite["content-sha256"] = entry["content_hash"]
+        if entry.get("archive_url"):
+            # Standard CSL-JSON variables — see "What we already have" in
+            # internal-heartbeat/machine-verifiable-citation.md. Populated
+            # from util/check_fragments.py --save-to-wayback's cache write.
+            cite["archive"] = "Internet Archive Wayback Machine"
+            cite["archive_location"] = entry["archive_url"]
 
         cite["evidence"] = []
         for quote in sorted(set(group["quotes"])):

@@ -15,9 +15,16 @@ either is edited without the other; deriving the fragment at render time
 from quote: instead makes that drift structurally impossible.
 """
 
+import difflib
+import json
+import os
 import re
 from urllib.parse import quote as url_quote
 from urllib.parse import unquote, urlparse, urlunparse
+
+ARCHIVE_CACHE_PATH = os.path.join(
+    os.path.dirname(__file__), "..", "docs", "data", "event-evidence-cache.json"
+)
 
 
 def normalize_ws(text):
@@ -175,6 +182,63 @@ def with_fragment(url, quote_text):
     """Jinja-filter-friendly wrapper: always returns a usable url — the
     fragment-bearing version when derivable, otherwise the url unchanged."""
     return add_fragment_to_url(url, quote_text) or url
+
+
+def load_archive_urls():
+    """Read the committed evidence cache and return {url: archive_url} for
+    every citation that has a recorded Wayback Machine snapshot. Used at
+    render time (hooks/org_events.py, hooks/footnote_fragments.py) to add a
+    Robust-Links-style archive link alongside the normal citation link —
+    see internal-heartbeat/machine-verifiable-citation.md's Open question 5.
+
+    Returns {} if the cache doesn't exist or is unreadable — this must
+    never break a build, since archive links are a pure enhancement on top
+    of the normal citation url, never a replacement for it.
+    """
+    try:
+        with open(ARCHIVE_CACHE_PATH, encoding="utf-8") as f:
+            cache = json.load(f)
+    except (OSError, ValueError):
+        return {}
+    return {
+        url: entry["archive_url"]
+        for url, entry in cache.items()
+        if isinstance(entry, dict) and entry.get("archive_url")
+    }
+
+
+def closest_match_hint(page_text, quote_text, min_ratio=0.6):
+    """Best-effort fuzzy-diff diagnostic for a MISMATCH report: find the
+    passage in page_text that most closely resembles quote_text, using
+    stdlib difflib (no new dependency). Returns (passage, ratio) — ratio
+    is a 0..1 similarity score — or None if page_text/quote_text is empty
+    or nothing clears min_ratio.
+
+    Diagnostic only. This must never be used to decide pass/fail — the
+    trust model stays exact-match-only (see quote_matches()); this exists
+    purely to make a MISMATCH report actionable ("the page now says X
+    instead of Y") instead of just "not found".
+    """
+    if not page_text or not quote_text:
+        return None
+    quote_norm = normalize_ws(quote_text)
+    page_norm = normalize_ws(page_text)
+    matcher = difflib.SequenceMatcher(None, page_norm, quote_norm, autojunk=False)
+    match = matcher.find_longest_match(0, len(page_norm), 0, len(quote_norm))
+    if match.size == 0:
+        return None
+    # Expand from the longest common block out to roughly the quote's own
+    # length, so the returned passage is comparable in size to what was
+    # being searched for rather than just the matched fragment itself.
+    target_len = len(quote_norm)
+    slack = max(0, target_len - match.size)
+    start = max(0, match.a - slack // 2)
+    end = min(len(page_norm), start + target_len + slack // 2)
+    passage = page_norm[start:end]
+    ratio = difflib.SequenceMatcher(None, passage, quote_norm, autojunk=False).ratio()
+    if ratio < min_ratio:
+        return None
+    return passage, ratio
 
 
 FOOTNOTE_DEF_RE = re.compile(r"^\[\^([^\]]+)\]:\s*(.*)$")

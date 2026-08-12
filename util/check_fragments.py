@@ -60,7 +60,8 @@ except ImportError as e:
 
 sys.path.insert(0, os.path.dirname(__file__))
 from text_fragment import (  # noqa: E402
-    count_occurrences, find_span, iter_footnote_citations, normalize_ws, quote_matches,
+    closest_match_hint, count_occurrences, find_span, iter_footnote_citations, normalize_ws,
+    quote_matches,
 )
 
 DOCS_DIR = os.path.join(os.path.dirname(__file__), "..", "docs")
@@ -218,13 +219,23 @@ def check_evidence(url, evidence, cache, use_cache=True):
     to multiple megabytes when it was tried; hashes and booleans are all
     that's actually needed to skip redundant work).
 
-    Returns (result, unchanged, error, ambiguous) where result is
+    Returns (result, unchanged, error, ambiguous, hint) where result is
     "good"/"bad"/None, unchanged is True if this was answered from cache
     without a fetch that could reveal new content (i.e. a real 304, not
-    just "first look"), and ambiguous is True if the evidence text occurs
+    just "first look"), ambiguous is True if the evidence text occurs
     more than once on a freshly-fetched page (only known when a fetch
     actually happened — a cache hit reports ambiguous=False rather than
-    re-deriving it, since the cache doesn't retain page text).
+    re-deriving it, since the cache doesn't retain page text), and hint
+    is a (passage, ratio) fuzzy-diff diagnostic (see
+    text_fragment.closest_match_hint()) when result is "bad" and a fetch
+    actually happened, else None. hint is diagnostic only — it never
+    changes result.
+
+    Any existing archive_url/archive_checked fields on the cache entry
+    are preserved across a fresh-fetch write — this function only owns
+    the fetch-verification fields (etag/last_modified/content_hash/
+    verified/checked); --save-to-wayback owns the archive fields and
+    writes them separately in main().
     """
     entry = cache.get(url, {}) if use_cache else {}
     ev_key = sha256(normalize_ws(evidence))
@@ -240,7 +251,7 @@ def check_evidence(url, evidence, cache, use_cache=True):
     time.sleep(FETCH_DELAY)
     text, resp, error = _fetch_page_text(url, headers)
     if error:
-        return None, False, error, False
+        return None, False, error, False, None
 
     if text is None:
         # 304 — server confirms unchanged. If we've already verified this
@@ -252,17 +263,19 @@ def check_evidence(url, evidence, cache, use_cache=True):
         cached_result = entry.get("verified", {}).get(ev_key)
         if cached_result is not None:
             cache[url] = {**entry, "checked": date.today().isoformat()}
-            return ("good" if cached_result else "bad"), True, None, False
+            return ("good" if cached_result else "bad"), True, None, False, None
         time.sleep(FETCH_DELAY)
         text, resp, error = _fetch_page_text(url, {"User-Agent": USER_AGENT})
         if error:
-            return None, False, error, False
+            return None, False, error, False, None
 
     new_hash = paragraph_hash(text, evidence) or sha256(text)
     verified = dict(entry.get("verified", {}))
     result = quote_matches(text, evidence)
     verified[ev_key] = result
     cache[url] = {
+        **{k: v for k, v in entry.items() if k not in
+           ("etag", "last_modified", "content_hash", "verified", "checked")},
         "etag": resp.headers.get("ETag") if resp is not None and not is_wikipedia else entry.get("etag"),
         "last_modified": resp.headers.get("Last-Modified") if resp is not None and not is_wikipedia else entry.get("last_modified"),
         "content_hash": new_hash,
@@ -270,7 +283,8 @@ def check_evidence(url, evidence, cache, use_cache=True):
         "checked": date.today().isoformat(),
     }
     ambiguous = result and count_occurrences(text, evidence) > 1
-    return ("good" if result else "bad"), False, None, ambiguous
+    hint = None if result else closest_match_hint(text, evidence)
+    return ("good" if result else "bad"), False, None, ambiguous, hint
 
 
 def find_footnote_evidence(path):
@@ -288,15 +302,37 @@ def find_footnote_evidence(path):
 
 
 def save_to_wayback(url, timeout=30):
-    """Submit a URL to the Wayback Machine's Save Page Now service.
-    Returns True on success, False on failure. Does not raise."""
+    """Best-effort archival, in two steps: (1) trigger a fresh snapshot via
+    Save Page Now, (2) ask the read-only Availability API for a snapshot
+    URL to actually record — the one just triggered if indexing was fast
+    enough, otherwise the most recent existing one. Either way this
+    returns a real, browsable Robust-Links-style fallback URL rather than
+    just a yes/no on whether the trigger request succeeded (the old
+    behavior — a 200 from /save/ doesn't mean a snapshot exists or tells
+    you where to find it, and the trigger endpoint's own redirect chain
+    isn't reliable enough to parse for the snapshot URL directly).
+
+    Returns the snapshot URL (str) on success, None on failure. Never
+    raises — both steps are best-effort and independent; a failed trigger
+    doesn't prevent returning a URL from a snapshot that already existed.
+    """
     try:
-        spn_url = "https://web.archive.org/save/" + url
-        r = requests.get(spn_url, headers={"User-Agent": USER_AGENT},
-                         timeout=timeout, allow_redirects=True)
-        return r.status_code == 200
+        requests.get("https://web.archive.org/save/" + url,
+                     headers={"User-Agent": USER_AGENT}, timeout=timeout)
     except requests.RequestException:
-        return False
+        pass  # trigger is best-effort; the availability check below is what matters
+
+    try:
+        r = requests.get("https://archive.org/wayback/available",
+                         params={"url": url},
+                         headers={"User-Agent": USER_AGENT}, timeout=15)
+        r.raise_for_status()
+        closest = r.json().get("archived_snapshots", {}).get("closest", {})
+        if closest.get("available") and closest.get("url"):
+            return closest["url"]
+    except (requests.RequestException, ValueError):
+        pass
+    return None
 
 
 def collect_evidence(args):
@@ -365,13 +401,19 @@ def main():
                "footnote": {"good": 0, "bad": 0, "errors": 0}}
 
     for url, evidence, source_label, kind in evidence_items:
-        result, unchanged_hit, error, ambiguous = check_evidence(
+        result, unchanged_hit, error, ambiguous, hint = check_evidence(
             url, evidence, cache, use_cache=not args.no_cache
         )
 
         if args.save_to_wayback:
-            if save_to_wayback(url):
+            archive_url = save_to_wayback(url)
+            if archive_url:
                 wayback_saved += 1
+                cache[url] = {
+                    **cache.get(url, {}),
+                    "archive_url": archive_url,
+                    "archive_checked": date.today().isoformat(),
+                }
             else:
                 wayback_failed += 1
             time.sleep(0.5)
@@ -400,6 +442,10 @@ def main():
             print("  MISMATCH  " + source_label)
             print("            evidence: " + evidence[:80])
             print("            url: " + url)
+            if hint:
+                passage, ratio = hint
+                print("            closest match on page ({:.0%} similar): {}".format(
+                    ratio, passage[:120]))
 
     save_cache(cache)
 

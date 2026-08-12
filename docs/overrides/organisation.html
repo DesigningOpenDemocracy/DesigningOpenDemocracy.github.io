@@ -140,6 +140,7 @@
   {{ super() }}
 {%- macro render_event(e) -%}
   {%- set href = e.url | with_fragment(e.quote) if e.url else none %}
+  {%- set archive_href = e.url | archive_url_for if e.url else none %}
   <li class="{% if e.notable %}org-event--notable{% endif %}">
     <span class="org-event-date">{{ e.date }}{% if e.end_date %}–{{ e.end_date }}{% endif %}</span>
     <span class="org-event-title">{% if href %}<a href="{{ href }}" target="_blank" rel="noopener">{{ e.title }}</a>{% else %}{{ e.title }}{% endif %}</span>
@@ -154,6 +155,7 @@
       {%- if e.note %}<p class="org-event-note">{{ e.note | e }}</p>{% endif %}
       {%- if e.proof_warning %}<p class="org-event-warning-note">No note, quote, or fragment behind this citation yet — click through to verify manually.</p>{% endif %}
       {%- if href %}<a href="{{ href }}" target="_blank" rel="noopener" class="org-event-source-btn">↗ View source</a>{% elif e.source %}<p class="org-event-source-cited">Cited: {{ e.source | e }}</p>{% endif %}
+      {%- if archive_href %}<a href="{{ archive_href }}" target="_blank" rel="noopener" class="org-event-archive-btn" title="Archived snapshot (Wayback Machine)">🗃️ Archived copy</a>{% endif %}
     </details>
     {%- endif %}
   </li>
