@@ -1,25 +1,11 @@
 ---
-authors:
-- Aya.elfadil
-contributors:
-- Aya.elfadil
-date: 2022-09-14 00:00:00
-summary: Overview of equity compensation plans in the United States, including stock
-  options, ESPPs, restricted stock, phantom stock, and SARs.
 title: Equity Compensation Plans
+summary: Employer-provided stock or stock-equivalent compensation (stock options, ESPPs, restricted stock, phantom stock, SARs) — a US-specific category, distinct from the ownership-transferring structures (ESOPs, employee ownership trusts) this wiki otherwise tracks.
 ---
 
-The other important example of employee ownership in the United States
-is equity compensation, which is defined as employer-provided stock or
-stock equivalents. There are several different types of equity
-compensation, each with a unique structure, incentive structure, and tax
-treatment. The most prevalent types are as follows:
+**Equity compensation** is employer-provided stock or stock equivalents, used across several distinct structures (stock options, employee stock purchase plans, restricted stock, phantom stock, stock appreciation rights) each with its own tax treatment. It's a US-specific category.
 
-- Stock options
-- Employee stock purchase plans (ESPPs)
-- Restricted stock
-- Phantom stock
-- Stock appreciation rights (SARs)
+Worth distinguishing from [Employee Stock Ownership Plans](employee-stock-ownership-plans.md) and [Employee Ownership Trusts](employee-ownership-trusts.md): those transfer real, often majority, ownership and governance rights to employees collectively. Equity compensation plans are typically individual incentive-pay instruments layered on top of ordinary corporate governance — a narrower, less democratic mechanism, even where broadly distributed.
 
 ## Further reading
 
