@@ -55,4 +55,4 @@ CoE represented an attempt to operationalise deliberative democracy at the grass
 - [Direct Democracy](../concepts/direct-democracy.md)
 - [Designing Open Democracy 2020 Primer](../../blog/posts/2022-02-24-podcast.md) — Willow Berzin from CoE appeared at this DOD meetup
 
-[^coe]: Coalition of Everyone, archived at [Wayback Machine](https://web.archive.org/web/*/https://coalitionofeveryone.com/).
+[^coe]: "Renewing democratic culture for citizen, community, and policy-led change." Coalition of Everyone, archived at [Wayback Machine](https://web.archive.org/web/20201025042342/https://www.coalitionofeveryone.com/).

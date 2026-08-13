@@ -16,7 +16,7 @@ The platform's model was sequential: members first raised issues, then proposed 
 
 The website (`policyincubator.com`) went offline sometime after 2018. Kennedy was listed as a planned speaker at DOD events from late 2018 and gave a presentation at a DOD event in 2019, though no recording appears to have been preserved.
 
-[^about]: Policy Incubator About page (archived): [web.archive.org](https://web.archive.org/web/20190718131041/https://policyincubator.com/home/about_us)
+[^about]: "The strength of this decentralised policy making and deliberation model is based on the power of 'the crowd'." Policy Incubator About page (archived): [web.archive.org](https://web.archive.org/web/20190718131041/https://policyincubator.com/home/about_us)
 
 ## See also
 
