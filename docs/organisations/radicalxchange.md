@@ -56,11 +56,11 @@ events:
     Melbourne chapter
   proof_level: high
   url_checked: '2026-08-12'
+  time: '18:00'
+  end_time: '20:00'
   notable: true
   coverage_url: /blog/2026/08/07/radicalxchange-is-launching-a-melbourne-chapter--heres-what-it-is/
   country: AU
-  end_time: 8pm
-  time: 6pm
 activity:
   manual:
     checked: 2026-08-07

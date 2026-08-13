@@ -254,13 +254,20 @@
     }
   },
   "https://en.wikipedia.org/wiki/Glen_Weyl": {
-    "checked": "2026-08-12",
-    "content_hash": "cb9d9567efbcfc4bf5c5701a8e41138767300cb996ee846cb569b2acc34da649",
-    "contexts": {},
+    "checked": "2026-08-13",
+    "content_hash": "e30a7df50bb9d845fb9b2ec2ec30bcf228765789048ad46bc2823114e9708aed",
+    "contexts": {
+      "0bdaa9c2fd1fb2b871ecee89b5a53f12b7095f1599806252be7b5bec02bd325e": {
+        "prefix": "\" that blends economics and computer science in much the way that digital economists blend them at tech companies. == Selected bibliography == \u2ffb \u6578\u4f4d",
+        "sha256": "e30a7df50bb9d845fb9b2ec2ec30bcf228765789048ad46bc2823114e9708aed",
+        "suffix": "(Independently published, Apr 16, 2024, ISBN 979-8321247181), written with Audrey Tang and \u2ffb Community Radical Markets: Uprooting Capitalism and Demo",
+        "text": "== Selected bibliography == \u2ffb \u6578\u4f4d Plurality: The Future of Collaborative Technology and Democracy (Independently published, Apr 16, 2024, ISBN 979-8321247181), written with Audrey Tang and \u2ffb Community Radical Markets: Uprooting Capitalism and Democracy for a Just Society (Princeton University Press, May 15, 2018, ISBN 978-0691177502), written with Eric Posner"
+      }
+    },
     "etag": null,
     "last_modified": null,
     "verified": {
-      "380a3016f7cfcdcaa42eb30d881988d9ccb5fb5daad7fef3e92c231e0a683d71": true
+      "0bdaa9c2fd1fb2b871ecee89b5a53f12b7095f1599806252be7b5bec02bd325e": true
     }
   },
   "https://en.wikipedia.org/wiki/Loomio": {
@@ -1112,6 +1119,23 @@
     "last_modified": null,
     "verified": {
       "93585aa0a00f2cf98a88445720db53165d4f4aa8b4a7dcc05f495e02260621a3": true
+    }
+  },
+  "https://www.radicalxchange.org/events/2019-conference": {
+    "checked": "2026-08-13",
+    "content_hash": "6264021384b8cad5ea6531a2398d14fd4ceb4b4a5b5210e06025c57f982233bc",
+    "contexts": {
+      "b6955a1bbee95cce161cbd560f0198523a1111ab10df35c8c5bb8cd75ccdba0b": {
+        "prefix": "2019 Annual Conference - RadicalxChange Close 2019 Annual Conference About",
+        "sha256": "6264021384b8cad5ea6531a2398d14fd4ceb4b4a5b5210e06025c57f982233bc",
+        "suffix": "and brought together speakers across four tracks: Ideas & Research, Arts & Communication, Entrepreneurship & Technology, and Activism & Governance.",
+        "text": "Our inaugural conference was held March 22-24 at the A. Alfred Taubman Center for Design Education in Detroit, Michigan and brought together speakers across four tracks: Ideas & Research, Arts & Communication, Entrepreneurship & Technology, and Activism & Governance."
+      }
+    },
+    "etag": "\"8e893c51c12fa86dfb9dbddc0824054e-ssl-df\"",
+    "last_modified": null,
+    "verified": {
+      "b6955a1bbee95cce161cbd560f0198523a1111ab10df35c8c5bb8cd75ccdba0b": true
     }
   },
   "https://www.socentral.no/aktuelt": {

@@ -238,6 +238,27 @@ def _ics_escape(s):
     return (s or "").replace("\\", "\\\\").replace(",", "\\,").replace(";", "\\;").replace("\n", "\\n")
 
 
+_TIME_RE = re.compile(r'^([01]?\d|2[0-3]):([0-5]\d)$')
+
+
+def _parse_time(t):
+    """Parse a strict 24-hour "HH:MM" time string into (hour, minute), or
+    None if t is missing or doesn't match that exact shape. Deliberately
+    strict — no natural-language parsing ("6pm", "2:00 PM AEST", "14:00 -
+    15:00 AEST") is attempted. Real event pages checked while sourcing
+    citations this session used wildly inconsistent formats for the same
+    piece of information (CAPaD: "14:00 - 15:00 AEST" in a widget vs plain
+    prose elsewhere; the World Forum for Democracy's own People Powered
+    listing stated "2–3 November" in one place and "2–4 November" in the
+    surrounding paragraph) — a fuzzy parser here would produce confident,
+    wrong output rather than a value worth automating. See CLAUDE.md's
+    events: time:/end_time: docs for the expected input shape."""
+    if not t:
+        return None
+    m = _TIME_RE.match(str(t).strip())
+    return (int(m.group(1)), int(m.group(2))) if m else None
+
+
 def _write_ics(events, path):
     lines = [
         "BEGIN:VCALENDAR",
@@ -254,11 +275,30 @@ def _write_ics(events, path):
             "BEGIN:VEVENT",
             f"UID:{uid}@designingopendemocracy.com",
             f"DTSTAMP:{now_stamp}",
-            f"DTSTART;VALUE=DATE:{dt}",
         ]
-        if e.get("end_date"):
-            # DTEND is exclusive for all-day VEVENTs per RFC 5545 §3.6.1.
-            lines.append(f"DTEND;VALUE=DATE:{(e['end_date'] + timedelta(days=1)).strftime('%Y%m%d')}")
+        # A parseable time: gives a real (floating-local-time) DTSTART/DTEND
+        # instead of an all-day marker — floating because no event carries a
+        # structured timezone today (time: is a bare "HH:MM"), so this is
+        # honest about the precision actually on hand: closer than all-day,
+        # not a claim to have the IANA tz right. See _parse_time().
+        start_time = _parse_time(e.get("time"))
+        if start_time:
+            h, m = start_time
+            lines.append(f"DTSTART:{dt}T{h:02d}{m:02d}00")
+            end_time = _parse_time(e.get("end_time"))
+            if end_time:
+                eh, em = end_time
+                lines.append(f"DTEND:{dt}T{eh:02d}{em:02d}00")
+            elif e.get("end_date"):
+                # end_date without a matching end_time: falls back to a
+                # date-only DTEND (exclusive, +1 day per RFC 5545 §3.6.1) —
+                # still better than losing the end_date entirely.
+                lines.append(f"DTEND;VALUE=DATE:{(e['end_date'] + timedelta(days=1)).strftime('%Y%m%d')}")
+        else:
+            lines.append(f"DTSTART;VALUE=DATE:{dt}")
+            if e.get("end_date"):
+                # DTEND is exclusive for all-day VEVENTs per RFC 5545 §3.6.1.
+                lines.append(f"DTEND;VALUE=DATE:{(e['end_date'] + timedelta(days=1)).strftime('%Y%m%d')}")
         lines += [
             f"SUMMARY:{_ics_escape(e['org_title'] + ': ' + e['title'])}",
             f"CATEGORIES:{_ics_escape(e['org_title'])}",
