@@ -11,6 +11,8 @@
 
 <p class="calendar-subscribe">
   <a href="/calendar.ics" id="calendar-subscribe-link" class="hero-cta-btn hero-cta-primary">📅 Subscribe (.ics)</a>
+  <a href="webcal://" id="calendar-subscribe-apple" class="hero-cta-btn" title="Opens in Apple Calendar or Outlook">🍎 Apple / Outlook</a>
+  <a href="https://calendar.google.com/" id="calendar-subscribe-google" class="hero-cta-btn" target="_blank" rel="noopener" title="Opens Google Calendar's Add by URL screen">🟦 Google Calendar</a>
   <span id="calendar-subscribe-hint" class="calendar-subscribe-hint">Add this URL to Google Calendar, Outlook, or Apple Calendar to get every event below automatically.</span>
 </p>
 
@@ -38,6 +40,25 @@
   <button id="calendar-country-reset" class="calendar-reset-btn" title="Show all countries">✕ Reset</button>
   <span id="calendar-filter-count" class="calendar-filter-count"></span>
 </div>
+
+{%- set country_entries = [] %}
+{%- for e in calendar_events %}
+  {%- if e.country %}
+    {%- set entry = {'code': e.country, 'name': e.country | country_name, 'flag': e.country | country_flag} %}
+    {%- if entry not in country_entries %}{% set _ = country_entries.append(entry) %}{% endif %}
+  {%- endif %}
+{%- endfor %}
+{%- set country_entries = country_entries | sort(attribute='name') %}
+
+<details class="calendar-feeds-details">
+  <summary>📡 All iCal feeds ({{ country_entries | length + 1 }})</summary>
+  <ul class="calendar-feeds-list">
+    <li><a href="/calendar.ics">📅 All countries</a></li>
+    {%- for c in country_entries %}
+    <li><a href="/calendar-{{ c.code }}.ics">{{ c.flag }} {{ c.name }}</a></li>
+    {%- endfor %}
+  </ul>
+</details>
 
 {%- for month_key, month_events in grouped.items() %}
 <h2 class="calendar-month-heading">{{ month_key }}</h2>
@@ -185,14 +206,29 @@
   // pointing at the combined everything-feed.
   function updateSubscribeLink() {
     var link = document.getElementById('calendar-subscribe-link');
+    var appleLink = document.getElementById('calendar-subscribe-apple');
+    var googleLink = document.getElementById('calendar-subscribe-google');
     var hint = document.getElementById('calendar-subscribe-hint');
     var selected = filter.value;
+    var path = selected === 'all' ? '/calendar.ics' : '/calendar-' + selected + '.ics';
+    var absoluteUrl = window.location.origin + path;
+
+    link.href = path;
+    // webcal:// is the scheme Apple Calendar and Outlook register to
+    // subscribe (live, auto-refreshing) rather than one-time-import a
+    // plain https:// .ics link, which most OSes just download.
+    appleLink.href = absoluteUrl.replace(/^https?:\/\//, 'webcal://');
+    // Google Calendar's "Add by URL" screen, keyed off a ?cid= query param.
+    googleLink.href = 'https://calendar.google.com/calendar/render?cid=' + encodeURIComponent(absoluteUrl);
+
     if (selected === 'all') {
-      link.href = '/calendar.ics';
+      link.textContent = '📅 Subscribe (.ics)';
       hint.textContent = 'Add this URL to Google Calendar, Outlook, or Apple Calendar to get every event below automatically.';
     } else {
-      link.href = '/calendar-' + selected + '.ics';
-      hint.textContent = 'Subscribes to ' + (countryMap[selected] || selected) + ' events only. Reset the filter above for every country instead.';
+      var label = countryMap[selected] || selected;
+      var flag = label.split(' ')[0];
+      link.textContent = flag + ' Subscribe (.ics)';
+      hint.textContent = 'Subscribes to ' + label + ' events only. Reset the filter above for every country instead.';
     }
   }
 
