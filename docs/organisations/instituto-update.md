@@ -26,9 +26,10 @@ events:
 - date: '2018-01-01'
   title: Founded in São Paulo as a regional platform for political innovation and
     imagination in the Global South
-  url: https://www.institutoupdate.org.br/sobre/
-  quote: O Instituto Update atua como uma plataforma regional de inovação e imaginação
-    política no Sul Global.
+  url: https://www.institutoupdate.org.br/quem-somos/
+  quote: O Instituto Update é uma organização liderada por mulheres que trabalha para
+    transformar democracias incompletas em sistemas participativos que promovem o
+    bem viver para todas as pessoas.
   proof_level: high
   url_checked: '2026-08-12'
   notable: true

@@ -33,6 +33,23 @@
       "df929ab5566c473eff41117725d048245c949170398782267afecefb68f6f213": true
     }
   },
+  "https://ciudadaniai.org/nosotros/": {
+    "checked": "2026-08-13",
+    "content_hash": "0b9471be8f65922f16b7dc2b3cb12858e60cbdd537443c4069a88df8c6d3eb47",
+    "contexts": {
+      "0b9471be8f65922f16b7dc2b3cb12858e60cbdd537443c4069a88df8c6d3eb47": {
+        "prefix": "S\u00famate a nuestro Newsletter SUSCR\u00cdBETE Ciudadan\u00eda_Inteligente",
+        "sha256": "0b9471be8f65922f16b7dc2b3cb12858e60cbdd537443c4069a88df8c6d3eb47",
+        "suffix": "",
+        "text": "Ciudadan\u00eda Inteligente 2009 - 2026. Todos los derechos reservados"
+      }
+    },
+    "etag": "\"c08ef7a2fe31e31dbc9233dd6a95d274-ssl-df\"",
+    "last_modified": null,
+    "verified": {
+      "0b9471be8f65922f16b7dc2b3cb12858e60cbdd537443c4069a88df8c6d3eb47": true
+    }
+  },
   "https://civictech.guide/about/": {
     "checked": "2026-08-12",
     "content_hash": "07ce94ed3e6961d650dc0b94334a88be014c06184000639fde83467b3d5e0238",
@@ -236,6 +253,23 @@
       "3c9c203d4bcf14372dc6f31d343c75ee3325e6e9120851df796f2d222260b18e": true
     }
   },
+  "https://en.wikipedia.org/wiki/People%27s_Solidarity_for_Participatory_Democracy": {
+    "checked": "2026-08-13",
+    "content_hash": "0ff2d8f901b699518ba73f0520217f13bc6f62013b9e829e074ba2acf779b10d",
+    "contexts": {
+      "c23ca1c5aa636d9bf4ab16368414fc797fb682c81bff7fc2ee1b8913e14310f1": {
+        "prefix": "racy (PSPD; Korean: \ucc38\uc5ec\uc5f0\ub300) is a South Korean non-governmental organization that was established on 10 September 1994 with around 200 members. In 2004,",
+        "sha256": "0ff2d8f901b699518ba73f0520217f13bc6f62013b9e829e074ba2acf779b10d",
+        "suffix": "and started advocating before various UN bodies including the UN human rights council. As of July 2012, around 13,000 individuals are members of PSPD",
+        "text": "People's Solidarity for Participatory Democracy (PSPD; Korean: \ucc38\uc5ec\uc5f0\ub300) is a South Korean non-governmental organization that was established on 10 September 1994 with around 200 members. In 2004, PSPD obtained a special consultative status with the UN ECOSOC and started advocating before various UN bodies including the UN human rights council. As of July 2012, around 13,000 individuals are members of PSPD. It has ten departments and three auxiliaries."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "c23ca1c5aa636d9bf4ab16368414fc797fb682c81bff7fc2ee1b8913e14310f1": true
+    }
+  },
   "https://events.humanitix.com/radicalxchange-foundation-in-melbourne": {
     "checked": "2026-08-12",
     "content_hash": "5760c293c05f53070e2c0ae9d9c0abbc13710775fe504090d59aaa4ed3ddff7f",
@@ -253,6 +287,40 @@
       "5760c293c05f53070e2c0ae9d9c0abbc13710775fe504090d59aaa4ed3ddff7f": true
     }
   },
+  "https://fidemocracy.org/news": {
+    "checked": "2026-08-13",
+    "content_hash": "abd88ce88d5b83a990787cd3dcfb9731a7b86c8fe28a242bfab09a6d93105bd7",
+    "contexts": {
+      "abd88ce88d5b83a990787cd3dcfb9731a7b86c8fe28a242bfab09a6d93105bd7": {
+        "prefix": "e, Copenhagen Apply EUROPE",
+        "sha256": "abd88ce88d5b83a990787cd3dcfb9731a7b86c8fe28a242bfab09a6d93105bd7",
+        "suffix": "From novel to normal: making deliberation a democratic standard A conference for practitioners, public offi",
+        "text": "FIDE Forum 2026"
+      }
+    },
+    "etag": "W/\"6eedc7502cbc116b632a1d85741fcef0\"",
+    "last_modified": null,
+    "verified": {
+      "abd88ce88d5b83a990787cd3dcfb9731a7b86c8fe28a242bfab09a6d93105bd7": true
+    }
+  },
+  "https://foro.org.co/quienes-somos/": {
+    "checked": "2026-08-13",
+    "content_hash": "041fee79860e8af0815e79054810b1433e1d9a8bf966b32f51428f40c4ebed6e",
+    "contexts": {
+      "ef1a5a97046e575f07466b0616270c5af87e6e2890cb2f5b6d40ea13a93cad00": {
+        "prefix": "\u00bfQuienes Somos? La Fundaci\u00f3n Foro Nacional por Colombia es una organizaci\u00f3n civil no gubernamental sin \u00e1nimo de lucro,",
+        "sha256": "041fee79860e8af0815e79054810b1433e1d9a8bf966b32f51428f40c4ebed6e",
+        "suffix": ", comprometida con el fortalecimiento de la democracia y la promoci\u00f3n de la justicia social, la paz y la convivencia. Trabajamos con el prop\u00f3sito de c",
+        "text": "La Fundaci\u00f3n Foro Nacional por Colombia es una organizaci\u00f3n civil no gubernamental sin \u00e1nimo de lucro, creada en 1982, comprometida con el fortalecimiento de la democracia y la promoci\u00f3n de la justicia social, la paz y la convivencia. Trabajamos con el prop\u00f3sito de crear las condiciones para el ejercicio de una ciudadan\u00eda activa con capacidad de incidencia en los asuntos p\u00fablicos. El pluralismo, la participaci\u00f3n ciudadana, la concertaci\u00f3n democr\u00e1tica, la corresponsabilidad y la solidaridad son la base para el desarrollo de nuestra misi\u00f3n, con un enfoque diferencial (de g\u00e9nero, generaci\u00f3n y etnia)."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "ef1a5a97046e575f07466b0616270c5af87e6e2890cb2f5b6d40ea13a93cad00": true
+    }
+  },
   "https://glenweyl.com/radicalxchange/": {
     "checked": "2026-08-12",
     "content_hash": "a010f2e8072c84a697d2cd73667f7a7b9d4436b8e6a29df63775be7e70d14445",
@@ -268,6 +336,159 @@
     "last_modified": null,
     "verified": {
       "a010f2e8072c84a697d2cd73667f7a7b9d4436b8e6a29df63775be7e70d14445": true
+    }
+  },
+  "https://mosaiclab.com.au/case-study-1-participatory-budgeting": {
+    "checked": "2026-08-13",
+    "content_hash": "47de2cc4d34de8eb40d4e9f24d5f89c959290350b1cb97b15d0c8723d4a6a223",
+    "contexts": {
+      "272fc84b35520d5b80f1ff15fd2a6cd658739ab643f5f2c3e2b5aee4550f4b73": {
+        "prefix": "n preparing its first 10-year financial plan, the City of Melbourne decided to seek the advice of its community by way of a 43 member People\u2019s Panel.",
+        "sha256": "47de2cc4d34de8eb40d4e9f24d5f89c959290350b1cb97b15d0c8723d4a6a223",
+        "suffix": ", and included business and residential participants. The process The Panel met ove",
+        "text": "In preparing its first 10-year financial plan, the City of Melbourne decided to seek the advice of its community by way of a 43 member People\u2019s Panel. The panel was a random stratified (to match the demographics of the city) selection of people that was recruited by the newDemocracy Foundation , and included business and residential participants."
+      }
+    },
+    "etag": "W/\"0778222ad231cd86a8ddf2feccd04c84--gzip\"",
+    "last_modified": null,
+    "verified": {
+      "272fc84b35520d5b80f1ff15fd2a6cd658739ab643f5f2c3e2b5aee4550f4b73": true
+    }
+  },
+  "https://mosaiclab.com.au/contributions-to-the-field": {
+    "checked": "2026-08-13",
+    "content_hash": "15a6e3514340d9c60f2a4f982feb811f88d8b6e0b2e35d54dc6f484d2bd96580",
+    "contexts": {
+      "d30b31381c021157f32d4c09c70a60bed94ebdc10c5ffe6302a3375d7f58b233": {
+        "prefix": "l thinking exercises, with a particular focus on participants\u2019 ability to effectively interrogate experts. We\u2019re very pleased to announce that,",
+        "sha256": "15a6e3514340d9c60f2a4f982feb811f88d8b6e0b2e35d54dc6f484d2bd96580",
+        "suffix": ". We feel very honoured to have had this exciting work recognised in this way. To celebrate, we\u2019re providing everyone with all the free digital",
+        "text": "We\u2019re very pleased to announce that, we were awarded the IAP2 Australasia Core Values Award for Research in 2018 . We feel very honoured to have had this exciting work recognised in this way."
+      }
+    },
+    "etag": "W/\"a16e368a574c842f182410a6213c065b--gzip\"",
+    "last_modified": null,
+    "verified": {
+      "d30b31381c021157f32d4c09c70a60bed94ebdc10c5ffe6302a3375d7f58b233": true
+    }
+  },
+  "https://mosaiclab.com.au/nicole-hunter": {
+    "checked": "2026-08-13",
+    "content_hash": "ff9d85661b80da6f039c286280f1a2a95e60c493584568c026e730fc788e8332",
+    "contexts": {
+      "d410460b6473e7c213f9044e79b05d5451f0b0ea431bf65537048e7894506253": {
+        "prefix": "b enables me to utilise and build on my skills and experiences and help further the practice of engagement for others.\"",
+        "sha256": "ff9d85661b80da6f039c286280f1a2a95e60c493584568c026e730fc788e8332",
+        "suffix": "because she is passionate about genuine democracy and developing and delivering robust engagement processes. She believes everyday people can d",
+        "text": "Nicole co-founded MosaicLab (with Keith Greaves and Kimbra White) in 2017 because she is passionate about genuine democracy and developing and delivering robust engagement processes."
+      }
+    },
+    "etag": "W/\"eb0ea73dd5d531f2041ab231139fcb3f\"",
+    "last_modified": null,
+    "verified": {
+      "d410460b6473e7c213f9044e79b05d5451f0b0ea431bf65537048e7894506253": true
+    }
+  },
+  "https://mosaiclab.com.au/the-big-book": {
+    "checked": "2026-08-13",
+    "content_hash": "e405e7355a44918a2e4e5482b77a7d955573520fa1a5ab24c19cdafea271f29e",
+    "contexts": {
+      "db84e2207fad582f7b14ddd8b2089764efe415a4478ed5c9b63266800412e00f": {
+        "prefix": "bra White , Nicole Hunter and Keith Greaves as they take you behind the scenes of a public deliberation in this comprehensive, practical guide.",
+        "sha256": "e405e7355a44918a2e4e5482b77a7d955573520fa1a5ab24c19cdafea271f29e",
+        "suffix": "and step-by-step advice. This book is for facilitators, changemakers, engagement professionals, decision makers - anyone looking to solve compl",
+        "text": "Drawn from the authors\u2019 experience delivering 39 deliberative engagement processes, the book is full of insider secrets, authentic lessons learned and step-by-step advice."
+      }
+    },
+    "etag": "W/\"8658be579ab1bd25ed92ffc4c31896ff\"",
+    "last_modified": null,
+    "verified": {
+      "db84e2207fad582f7b14ddd8b2089764efe415a4478ed5c9b63266800412e00f": true
+    }
+  },
+  "https://oaf.org.au/2009/07/07/announcing-the-openaustralia-foundation/": {
+    "checked": "2026-08-13",
+    "content_hash": "64be6754d59dfcdf923568360eab88be30862c30bc6462136b69d12e927b2707",
+    "contexts": {
+      "d41b7486e698b6e2534cc87c9f03ded6aa77bc4bf878892def4cf010f696ef6a": {
+        "prefix": "n expected. But finally\u2026 Today is a happy day Because today we heard from our lawyer (the ever helpful Stephanie Barnes at Deacons ) that",
+        "sha256": "64be6754d59dfcdf923568360eab88be30862c30bc6462136b69d12e927b2707",
+        "suffix": "The next step: applying to the tax office to get endorsement as an income exempt charity and also importantly apply for deductible gift recipie",
+        "text": "Because today we heard from our lawyer (the ever helpful Stephanie Barnes at Deacons ) that OpenAustralia Foundation Limited is officially incorporated as a company limited by guarantee."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "d41b7486e698b6e2534cc87c9f03ded6aa77bc4bf878892def4cf010f696ef6a": true
+    }
+  },
+  "https://oaf.org.au/2009/12/21/launching-our-new-website-planning-alerts/": {
+    "checked": "2026-08-13",
+    "content_hash": "23b301288596e31a592686706ca160feed6746546b7a670afa1789a38657fd7b",
+    "contexts": {
+      "23b301288596e31a592686706ca160feed6746546b7a670afa1789a38657fd7b": {
+        "prefix": "Blog People Contact Donate Announcement , PlanningAlerts.org.au",
+        "sha256": "23b301288596e31a592686706ca160feed6746546b7a670afa1789a38657fd7b",
+        "suffix": "Matthew Landauer You might have noticed we\u2019ve been fairly quiet of late. Well, that\u2019s because we\u2019ve been",
+        "text": "21 December 2009 Launching our new website: Planning Alerts"
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "23b301288596e31a592686706ca160feed6746546b7a670afa1789a38657fd7b": true
+    }
+  },
+  "https://oaf.org.au/2014/10/21/they-vote-for-you/": {
+    "checked": "2026-08-13",
+    "content_hash": "15da2af9077edaf61dce05c1049c2c5ec542143f341ec24fec249165c58256e6",
+    "contexts": {
+      "b0fd8227f28a6f87992769921772f646b74777e4904d50a3119b254a7b6d22bd": {
+        "prefix": "the Senate and try to make sense of it all. This is not something anyone can do easily. Parliament should be easy, and accessible. That is why",
+        "sha256": "15da2af9077edaf61dce05c1049c2c5ec542143f341ec24fec249165c58256e6",
+        "suffix": ", so you can find out how your representatives in parliament vote on issues you care about. Our political researchers have been working t",
+        "text": "Parliament should be easy, and accessible. That is why today the OpenAustralia Foundation is launching a new site They Vote for You , so you can find out how your representatives in parliament vote on issues you care about."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "b0fd8227f28a6f87992769921772f646b74777e4904d50a3119b254a7b6d22bd": true
+    }
+  },
+  "https://peoplepower21.org/English": {
+    "checked": "2026-08-13",
+    "content_hash": "9afc82947e6b49ab53c90b7ec3f8898c72764700dab0bc961722a5e9d9023501",
+    "contexts": {
+      "93aa70025cecffcce55d8b4a47eb58cdb3de59ffca2515ad80cea3131f816633": {
+        "prefix": "10) Peace/Disarmament (464) Sewol Ferry Tragedy (13) Socio-Economic (78) UN Advocacy (58) \uc81c\ubaa9 \ub0a0\uc9dc Civil-Political --> -->",
+        "sha256": "9afc82947e6b49ab53c90b7ec3f8898c72764700dab0bc961722a5e9d9023501",
+        "suffix": "2026-08-07 Peace/Disarmament --> --> [2026 NPT Review Conf.] Civil Society Joint Statement on the Denuclearization of the Korean Peninsula 2026",
+        "text": "Civil-Political --> --> Launch of \u2018Civil Society Joint Action for Strengthening Accountability and Public Interest in AI\u2019 2026-08-07"
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "93aa70025cecffcce55d8b4a47eb58cdb3de59ffca2515ad80cea3131f816633": true
+    }
+  },
+  "https://perludem.or.id/id/profil/": {
+    "checked": "2026-08-13",
+    "content_hash": "f5187f72089216a8e9270bf4d26f9b443c9621869d19708fa0407ff49aa2a109",
+    "contexts": {
+      "1f37267ec5d600eebb3f8ddb386f7fd6e41f2a985eabca68b429559c4608601c": {
+        "prefix": "hgunakan kedaulatan rakyat yang diberikan kepadanya. Menyadari bahwa kondisi-kondisi tersebut membutuhkan partisipasi setiap warga negara, maka",
+        "sha256": "f5187f72089216a8e9270bf4d26f9b443c9621869d19708fa0407ff49aa2a109",
+        "suffix": ", disingkat Perludem agar dapat secara efektif terlibat dalam proses membangun negara demokrasi dan melaksanakan pemilu yang fair . Nilai-nilai moral",
+        "text": "Menyadari bahwa kondisi-kondisi tersebut membutuhkan partisipasi setiap warga negara, maka para mantan Pengawas Pemilu 2004 berhimpun dalam wadah yang bernama Perkumpulan untuk Pemilu dan Demokrasi, disingkat Perludem agar dapat secara efektif terlibat dalam proses membangun negara demokrasi dan melaksanakan pemilu yang fair . Nilai-nilai moral pengawas pemilu yang tertanam selama menjalankan tugas-tugas pengawasan pemilu, serta pengetahuan dan keterampilan tentang pelaksanaan dan pengawasan pemilu, merupakan modal bagi Perludem untuk memaksimalkan partisipasinya."
+      }
+    },
+    "etag": null,
+    "last_modified": "Wed, 12 Aug 2026 16:50:50 GMT",
+    "verified": {
+      "1f37267ec5d600eebb3f8ddb386f7fd6e41f2a985eabca68b429559c4608601c": true
     }
   },
   "https://podnews.net/press-release/lamestream-podcast": {
@@ -388,6 +609,40 @@
       "f2bc1350fab07763d03538042100f87084a4a232f7caa8b0f69e0187361eae48": true
     }
   },
+  "https://web.archive.org/web/20201025045936/https://www.coalitionofeveryone.com/post/citizens-assembly": {
+    "checked": "2026-08-13",
+    "content_hash": "42a2dde22f077ea58612c0f866b57ddf31193850b9b3005a401aece461f44d63",
+    "contexts": {
+      "42a2dde22f077ea58612c0f866b57ddf31193850b9b3005a401aece461f44d63": {
+        "prefix": "LITATION Sonia Randhawa AUSTRALIANS COMING TOGETHER Ordinary people taking extraordinary decisions",
+        "sha256": "42a2dde22f077ea58612c0f866b57ddf31193850b9b3005a401aece461f44d63",
+        "suffix": "Each assembly consisted of expert testimony and a period of deliberation, before participants workshopped policy ideas and voted upon",
+        "text": "Through the Sustainable Living Festival, the Coalition of Everyone held four mock Citizens\u2019 Assemblies on the topics of; fashion, fire, regenerative agriculture and water."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "42a2dde22f077ea58612c0f866b57ddf31193850b9b3005a401aece461f44d63": true
+    }
+  },
+  "https://wecollect.ch/ueber-uns/": {
+    "checked": "2026-08-13",
+    "content_hash": "8e0a28a64f26b45fa4327e68277647b8ac6bbc05aaee98dc977496d5baf984fa",
+    "contexts": {
+      "189034b7801ad11ac83990aeb72cb6d361a9a3e4ad5ad8e6a81b712b88ba6fe5": {
+        "prefix": "st\u00e4rkere Stimme! Die Schweizer Demokratie-Plattform hilft mit, Volksinitiativen und Referenden erfolgreich zu starten und ins Ziel zu bringen.",
+        "sha256": "8e0a28a64f26b45fa4327e68277647b8ac6bbc05aaee98dc977496d5baf984fa",
+        "suffix": "Bis heute ist die WeCollect Community auf rund 150\u2019000 engagierte Menschen gewachsen. Seit Herbst 2020 unterst\u00fctzen wir \u2013 neben nationalen Projekten",
+        "text": "Seit dem Start 2015 haben wir \u00fcber 800'000 Unterschriften gesammelt. Bis heute ist die WeCollect Community auf rund 150\u2019000 engagierte Menschen gewachsen. Seit Herbst 2020 unterst\u00fctzen wir \u2013 neben nationalen Projekten \u2013 auch Volksinitiativen und Referenden auf kantonaler und kommunaler Ebene."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "189034b7801ad11ac83990aeb72cb6d361a9a3e4ad5ad8e6a81b712b88ba6fe5": true
+    }
+  },
   "https://www.bertelsmann-stiftung.de/en/our-projects/democracy-and-participation-in-europe/shortcut-archive/shortcut-8-trailblazers-of-digital-participation-taiwans-join-platform-and-vtaiwan": {
     "checked": "2026-08-12",
     "content_hash": "05c110afc92fb278b8ab2ca88cb1ae818a26074bf9d9d549880c39af9a005686",
@@ -483,6 +738,40 @@
       "48f5313730268658b444f8282cb6e4f362d06708bde34e74051682a395dfd12a": true
     }
   },
+  "https://www.dumbofeather.com/articles/building-a-coalition-of-everyone/": {
+    "checked": "2026-08-13",
+    "content_hash": "367eb5e6d899338f2bcb29b30f02bce4bad703b01c68c4ebe9f50fbc0e0c3e04",
+    "contexts": {
+      "b661584df7bf48e3bfddf55a6e12ed907dcedf5b25bda524af0bb7ed41a6fb44": {
+        "prefix": "thing. I was intrigued about how I could remove the barriers to these forms of participatory and deliberative democracy for people like myself.",
+        "sha256": "367eb5e6d899338f2bcb29b30f02bce4bad703b01c68c4ebe9f50fbc0e0c3e04",
+        "suffix": "While we are establishing the Coalition as a non partisan, non profit social enterprise, we currently all work other jobs too so we can pay the bills",
+        "text": "I met my two other co-founders Suse Porter and Dr Sonia Randhawa early last year, and have been working closely with them since. While we are establishing the Coalition as a non partisan, non profit social enterprise, we currently all work other jobs too so we can pay the bills; finding enough time in each day to do the work we are most passionate about is challenging. I am humbled on a daily basis by their courage, support and relentless commitment to make this happen. Listening to our advisors, participant feedback from our events, and regularly checking in with my mentor Adam Jacoby gives me confidence we really are onto something, as we grow a passionate team to help weave this thing into its fullest potential."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "b661584df7bf48e3bfddf55a6e12ed907dcedf5b25bda524af0bb7ed41a6fb44": true
+    }
+  },
+  "https://www.govtech.com/civic/New-Global-Civic-Tech-Group-Emerges-from-The-Omidyar-Group.html": {
+    "checked": "2026-08-13",
+    "content_hash": "5739cf6dbe8712a5009711e87e8ab0803df92b1c7c79276d3d8ba6ce59d733fe",
+    "contexts": {
+      "b760e0c84485e81c48f2e2736d61b2b8c93b021ba2280b9c00eabb9487273a25": {
+        "prefix": ", Luminate, a global philanthropic organization, has emerged from Omidyar Network\u2019s long-standing governance and citizen engagement initiative.",
+        "sha256": "5739cf6dbe8712a5009711e87e8ab0803df92b1c7c79276d3d8ba6ce59d733fe",
+        "suffix": "Luminate's work is quite similar to what it was doing while under the umbrella of Omidyar Network, a philanthropic \"impact investment\" firm establish",
+        "text": "Officially launched in recent weeks, Luminate aims to fund projects and organizations that can drive changes that fall into one of four categories: civic empowerment, data and digital rights, transparency and independent media. Luminate's work is quite similar to what it was doing while under the umbrella of Omidyar Network, a philanthropic \"impact investment\" firm established in 2004 by eBay founder and entrepreneur Pierre Omidyar."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "b760e0c84485e81c48f2e2736d61b2b8c93b021ba2280b9c00eabb9487273a25": true
+    }
+  },
   "https://www.icnl.org/resources/civic-freedom-monitor/rwanda": {
     "checked": "2026-08-12",
     "content_hash": "b3bdb7ecb644bffa1bf4b7516d2c69833b80f69cacb5e7cd80aedc931dc77a39",
@@ -498,6 +787,57 @@
     "last_modified": null,
     "verified": {
       "2b55a3224952d9fe777d1b984c2c9944d917b9ac322f0b8429921d85b145d6a7": true
+    }
+  },
+  "https://www.institutoupdate.org.br": {
+    "checked": "2026-08-13",
+    "content_hash": "6bda42773821c2636fae0b375db88c85bacd3abfc96e8ce808cac62e46852ef0",
+    "contexts": {
+      "f80e17daa544eab5de5971fed425a4a027932b6bba9fe9173a611807f3f8cf7b": {
+        "prefix": "sobre Instituto Update Somos a infraestrutura que faltava para a democracia que queremos.",
+        "sha256": "6bda42773821c2636fae0b375db88c85bacd3abfc96e8ce808cac62e46852ef0",
+        "suffix": "Conectamos lideran\u00e7as, fortalecemos redes e produzimos conhecimento para ampliar a participa\u00e7\u00e3o pol\u00edtica de mulheres diversas que lideram agendas dem",
+        "text": "O Instituto Update atua como uma plataforma regional de inova\u00e7\u00e3o e imagina\u00e7\u00e3o pol\u00edtica no Sul Global. Conectamos lideran\u00e7as, fortalecemos redes e produzimos conhecimento para ampliar a participa\u00e7\u00e3o pol\u00edtica de mulheres diversas que lideram agendas democr\u00e1ticas."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "f80e17daa544eab5de5971fed425a4a027932b6bba9fe9173a611807f3f8cf7b": true
+    }
+  },
+  "https://www.institutoupdate.org.br/quem-somos/": {
+    "checked": "2026-08-13",
+    "content_hash": "ce7de03943e79e28f9fd0e1cb206901aabd883e35b18d25e115c697936d8d906",
+    "contexts": {
+      "ce7de03943e79e28f9fd0e1cb206901aabd883e35b18d25e115c697936d8d906": {
+        "prefix": "Projetos Midiateca es pt en Da Am\u00e9rica Latina para todo o Sul Global",
+        "sha256": "ce7de03943e79e28f9fd0e1cb206901aabd883e35b18d25e115c697936d8d906",
+        "suffix": "Miss\u00e3o Fortalecer iniciativas e potencializar pr\u00e1ticas inovadoras que nascem da imagina\u00e7\u00e3o p",
+        "text": "O Instituto Update \u00e9 uma organiza\u00e7\u00e3o liderada por mulheres que trabalha para transformar democracias incompletas em sistemas participativos que promovem o bem viver para todas as pessoas."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "ce7de03943e79e28f9fd0e1cb206901aabd883e35b18d25e115c697936d8d906": true
+    }
+  },
+  "https://www.mmzy.org.cn/mmgk/jianjie/11796.aspx": {
+    "checked": "2026-08-13",
+    "content_hash": "f4bd3fd3b32f0c1cb42d485a26ed67a2e99278d96b879b0d4527463f89fe1a0a",
+    "contexts": {
+      "4cb187c2805ff536c6187505c77bc60560fbfdd1c128edf34ad67c1534fd3423": {
+        "prefix": "tp://www.mmzy.org.cn [\u5927] [\u5c0f] 2023-02-09 \u4e2d\u56fd\u6c11\u4e3b\u540c\u76df\u662f\u4e3b\u8981\u7531\u6587\u5316\u6559\u80b2\u4ee5\u53ca\u76f8\u5173\u7684\u79d1\u5b66\u6280\u672f\u9886\u57df\u9ad8\u3001\u4e2d\u7ea7\u77e5\u8bc6\u5206\u5b50\u7ec4\u6210\u7684\uff0c\u5177\u6709\u653f\u6cbb\u8054\u76df\u7279\u70b9\u7684\uff0c\u63a5\u53d7\u4e2d\u56fd\u5171\u4ea7\u515a\u9886\u5bfc\u3001\u540c\u4e2d\u56fd\u5171\u4ea7\u515a\u901a\u529b\u5408\u4f5c\uff0c\u8fdb\u6b65\u6027\u4e0e\u5e7f\u6cdb\u6027\u76f8\u7edf\u4e00\u7684\u4e2d\u56fd\u7279\u8272\u793e\u4f1a\u4e3b\u4e49\u53c2\u653f\u515a\u3002",
+        "sha256": "f4bd3fd3b32f0c1cb42d485a26ed67a2e99278d96b879b0d4527463f89fe1a0a",
+        "suffix": "\uff0c\u5f53\u65f6\u7684\u540d\u79f0\u662f\u201c\u4e2d\u56fd\u6c11\u4e3b\u653f\u56e2\u540c\u76df\u201d\u3002\u5176\u65f6\uff0c\u7531\u4e8e\u201c\u7696\u5357\u4e8b\u53d8\u201d\u7684\u53d1\u751f\uff0c\u56fd\u6c11\u515a\u548c\u5171\u4ea7\u515a\u7684\u5408\u4f5c\u906d\u5230\u7834\u574f\uff0c\u6297\u65e5\u6c11\u65cf\u7edf\u4e00\u6218\u7ebf\u5371\u673a\u56db\u4f0f\u3002\u56fd\u5171\u4e24\u515a\u4ee5\u5916\u4e00\u4e9b\u4e3b\u5f20\u6297\u65e5\u7684\u653f\u515a\u548c\u4eba\u58eb\uff0c\u8feb\u5207\u5e0c\u671b\u8054\u5408\u8d77\u6765\uff0c\u4e3a\u575a\u6301\u56e2\u7ed3\u6c11\u4e3b\u6297\u65e5\u800c\u6597\u4e89\u3002\u4e8e\u662f\uff0c\u5373\u4ee5\u90e8\u5206\u56fd\u6c11\u53c2\u653f\u5458\u4e8e1939\u5e7411\u6708\u6210\u7acb\u7684\u201c\u7edf\u4e00\u5efa\u56fd\u540c\u5fd7\u4f1a\u201d\u4e3a\u57fa\u7840\uff0c\u6210\u7acb\u4e86\u4e2d\u56fd\u6c11\u4e3b\u653f\u56e2\u540c\u76df",
+        "text": "\u6c11\u76df\u4e8e1941\u5e743\u670819\u65e5\u5728\u91cd\u5e86\u79d8\u5bc6\u6210\u7acb\uff0c\u5f53\u65f6\u7684\u540d\u79f0\u662f\u201c\u4e2d\u56fd\u6c11\u4e3b\u653f\u56e2\u540c\u76df\u201d\u3002\u5176\u65f6\uff0c\u7531\u4e8e\u201c\u7696\u5357\u4e8b\u53d8\u201d\u7684\u53d1\u751f\uff0c\u56fd\u6c11\u515a\u548c\u5171\u4ea7\u515a\u7684\u5408\u4f5c\u906d\u5230\u7834\u574f\uff0c\u6297\u65e5\u6c11\u65cf\u7edf\u4e00\u6218\u7ebf\u5371\u673a\u56db\u4f0f\u3002\u56fd\u5171\u4e24\u515a\u4ee5\u5916\u4e00\u4e9b\u4e3b\u5f20\u6297\u65e5\u7684\u653f\u515a\u548c\u4eba\u58eb\uff0c\u8feb\u5207\u5e0c\u671b\u8054\u5408\u8d77\u6765\uff0c\u4e3a\u575a\u6301\u56e2\u7ed3\u6c11\u4e3b\u6297\u65e5\u800c\u6597\u4e89\u3002\u4e8e\u662f\uff0c\u5373\u4ee5\u90e8\u5206\u56fd\u6c11\u53c2\u653f\u5458\u4e8e1939\u5e7411\u6708\u6210\u7acb\u7684\u201c\u7edf\u4e00\u5efa\u56fd\u540c\u5fd7\u4f1a\u201d\u4e3a\u57fa\u7840\uff0c\u6210\u7acb\u4e86\u4e2d\u56fd\u6c11\u4e3b\u653f\u56e2\u540c\u76df\u3002\u53c2\u52a0\u8005\u6709\uff1a\u4e2d\u56fd\u9752\u5e74\u515a\u3001\u56fd\u5bb6\u793e\u4f1a\u515a\uff08\u540e\u6539\u79f0\u6c11\u4e3b\u793e\u4f1a\u515a\uff09\u3001\u4e2d\u534e\u6c11\u65cf\u89e3\u653e\u884c\u52a8\u59d4\u5458\u4f1a\uff08\u540e\u6539\u79f0\u4e2d\u56fd\u519c\u5de5\u6c11\u4e3b\u515a\uff09\u3001\u4e2d\u534e\u804c\u4e1a\u6559\u80b2\u793e\u3001\u4e61\u6751\u5efa\u8bbe\u534f\u4f1a\u7684\u6210\u5458\u53ca\u5176\u4ed6\u4eba\u58eb\uff0c\u516c\u63a8\u9ec4\u708e\u57f9\u4e3a\u4e2d\u592e\u59d4\u5458\u4f1a\u4e3b\u5e2d\u3002\u65cb\u9ec4\u708e\u57f9\u8f9e\u53bb\u4e3b\u5e2d\u804c\u52a1\uff0c\u63a8\u4e3e\u5f20\u6f9c\u4efb\u4e3b\u5e2d\u30021941\u5e7410\u670810\u65e5\uff0c\u5728\u9999\u6e2f\u7684\u6c11\u76df\u673a\u5173\u62a5\u300a\u5149\u660e\u62a5\u300b\u53d1\u8868\u300a\u4e2d\u56fd\u6c11\u4e3b\u653f\u56e2\u540c\u76df\u6210\u7acb\u5ba3\u8a00\u300b\u548c\u300a\u4e2d\u56fd\u6c11\u4e3b\u653f\u56e2\u540c\u76df\u5bf9\u65f6\u5c40\u4e3b\u5f20\u7eb2\u9886\u300b\uff08\u7b80\u79f0\u201c\u5341\u5927\u7eb2\u9886\u201d\uff09\u30021942\u5e74\uff0c\u5168\u56fd\u5404\u754c\u6551\u56fd\u8054\u5408\u4f1a\u52a0\u5165\uff0c\u4e2d\u56fd\u6c11\u4e3b\u653f\u56e2\u540c\u76df\u9042\u6210\u4e3a\u96c6\u5408\u201c\u4e09\u515a\u4e09\u6d3e\u201d\u7684\u653f\u6cbb\u515a\u6d3e\u3002\u4e2d\u56fd\u6c11\u4e3b\u653f\u56e2\u540c\u76df\u6700\u521d\u7684\u653f\u6cbb\u4e3b\u5f20\u662f\u201c\u8d2f\u5f7b\u6297\u65e5\u4e3b\u5f20\u201d\uff0c\u201c\u5b9e\u8df5\u6c11\u4e3b\u7cbe\u795e\u201d\uff0c\u201c\u52a0\u5f3a\u56fd\u5185\u56e2\u7ed3\u201d\u7b49\uff0c\u5e76\u79ef\u6781\u7ec4\u7ec7\u6210\u5458\u53c2\u52a0\u56fd\u6c11\u515a\u7edf\u6cbb\u533a\u7684\u6c11\u4e3b\u5baa\u653f\u8fd0\u52a8\u3002"
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "4cb187c2805ff536c6187505c77bc60560fbfdd1c128edf34ad67c1534fd3423": true
     }
   },
   "https://www.mysociety.org/about/": {

@@ -40,9 +40,9 @@ events:
   notable: false
 - date: '2026-08-07'
   title: Launches Civil Society Joint Action for Strengthening Accountability and
-  url: https://www.peoplepower21.org/English
-  quote: Launch of 'Civil Society Joint Action for Strengthening Accountability and
-    Public Interest in AI' Public Interest in AI
+  url: https://peoplepower21.org/English
+  quote: Launch of ‘Civil Society Joint Action for Strengthening Accountability and
+    Public Interest in AI’
   proof_level: high
   url_checked: '2026-08-12'
   notable: false

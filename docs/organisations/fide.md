@@ -26,7 +26,7 @@ location:
 events:
 - date: '2026-09-14'
   title: Lead Facilitator Masterclass — Copenhagen, in partnership with We Do Democracy
-  url: https://www.fidemocracy.org/training
+  url: https://fidemocracy.org/training
   proof_level: medium
   url_checked: '2026-08-10'
   end_date: '2026-09-16'
@@ -37,7 +37,7 @@ events:
 - date: '2026-11-18'
   title: 'FIDE Forum 2026: From Novel to Normal — making deliberation a democratic
     standard, Vienna'
-  url: https://www.fidemocracy.org/news
+  url: https://fidemocracy.org/news
   quote: FIDE Forum 2026
   proof_level: high
   url_checked: '2026-08-10'

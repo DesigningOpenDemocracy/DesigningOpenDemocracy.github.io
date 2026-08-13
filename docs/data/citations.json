@@ -147,6 +147,18 @@
     ]
   },
   {
+    "id": "acffd28f",
+    "type": "webpage",
+    "URL": "https://ciudadaniai.org/nosotros/",
+    "title": "Founded as one of Latin America's earliest civic-tech organisations, Santiago",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Ciudadanía Inteligente 2009 - 2026. Todos los derechos reservados"
+      }
+    ]
+  },
+  {
     "id": "c09af16f",
     "type": "webpage",
     "URL": "https://civichive.org/about-us/",
@@ -1377,6 +1389,18 @@
     ]
   },
   {
+    "id": "5498452c",
+    "type": "webpage",
+    "URL": "https://fidemocracy.org/news",
+    "title": "FIDE Forum 2026: From Novel to Normal — making deliberation a democratic standard, Vienna",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "FIDE Forum 2026"
+      }
+    ]
+  },
+  {
     "id": "a74018cb",
     "type": "webpage",
     "URL": "https://finance.yahoo.com/news/blockchain-voting-platform-horizon-state-140552054.html",
@@ -1412,9 +1436,9 @@
     ]
   },
   {
-    "id": "b78f325c",
+    "id": "a8c82e99",
     "type": "webpage",
-    "URL": "https://foro.org.co/nosotros/quienes-somos/",
+    "URL": "https://foro.org.co/quienes-somos/",
     "title": "Founded as one of Colombia's longest-established civil society organisations for democratic participation",
     "evidence": [
       {
@@ -1554,6 +1578,18 @@
     ]
   },
   {
+    "id": "01470189",
+    "type": "webpage",
+    "URL": "https://mosaiclab.com.au/case-study-1-participatory-budgeting",
+    "title": "First citizens' jury — City of Melbourne 10-Year Financial Plan; Nicholas",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "The panel was a random stratified (to match the demographics of the city) selection of people that was recruited by the newDemocracy Foundation"
+      }
+    ]
+  },
+  {
     "id": "5ee8d3db",
     "type": "webpage",
     "URL": "https://mosaiclab.com.au/contributions-to-the-field",
@@ -1618,6 +1654,30 @@
     ]
   },
   {
+    "id": "fa6d50ee",
+    "type": "webpage",
+    "URL": "https://oaf.org.au/2009/07/07/announcing-the-openaustralia-foundation/",
+    "title": "Founded by Matthew Landauer and Katherine Szuminska",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "OpenAustralia Foundation Limited is officially incorporated as a company limited by guarantee."
+      }
+    ]
+  },
+  {
+    "id": "cce16e43",
+    "type": "webpage",
+    "URL": "https://oaf.org.au/2009/12/21/launching-our-new-website-planning-alerts/",
+    "title": "Launched PlanningAlerts",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "21 December 2009 Launching our new website: Planning Alerts"
+      }
+    ]
+  },
+  {
     "id": "173b5966",
     "type": "webpage",
     "URL": "https://oaf.org.au/2014/10/21/they-vote-for-you/",
@@ -1630,9 +1690,21 @@
     ]
   },
   {
-    "id": "91f770a6",
+    "id": "c3968850",
     "type": "webpage",
-    "URL": "https://perludem.or.id/profil/",
+    "URL": "https://peoplepower21.org/English",
+    "title": "Launches Civil Society Joint Action for Strengthening Accountability and",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Launch of ‘Civil Society Joint Action for Strengthening Accountability and Public Interest in AI’"
+      }
+    ]
+  },
+  {
+    "id": "5ea0036f",
+    "type": "webpage",
+    "URL": "https://perludem.or.id/id/profil/",
     "title": "Founded by former Indonesian election supervisors to strengthen electoral integrity in the world's third-largest democracy",
     "evidence": [
       {
@@ -1955,7 +2027,19 @@
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "Through the Sustainable Living Festival, the Coalition of Everyone held four mock Citizens' Assemblies on the topics of; fashion, fire, regenerative agriculture and water."
+        "quote": "Through the Sustainable Living Festival, the Coalition of Everyone held four mock Citizens’ Assemblies on the topics of; fashion, fire, regenerative agriculture and water."
+      }
+    ]
+  },
+  {
+    "id": "a3bc0169",
+    "type": "webpage",
+    "URL": "https://wecollect.ch/ueber-uns/",
+    "title": "Launched by the Stiftung für direkte Demokratie as Switzerland's civic-tech",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Seit dem Start 2015 haben wir über 800'000 Unterschriften gesammelt."
       }
     ]
   },
@@ -2034,18 +2118,6 @@
       {
         "type": "quote-match",
         "quote": "The Centre for Democracy and Development (CDD) was established in the United Kingdom in 1997"
-      }
-    ]
-  },
-  {
-    "id": "d44b748a",
-    "type": "webpage",
-    "URL": "https://www.ciudadaniai.org/nosotros",
-    "title": "Founded as one of Latin America's earliest civic-tech organisations, Santiago",
-    "evidence": [
-      {
-        "type": "quote-match",
-        "quote": "Ciudadanía Inteligente 2009 - 2026. Todos los derechos reservados"
       }
     ]
   },
@@ -2221,23 +2293,11 @@
     "id": "989585b7",
     "type": "webpage",
     "URL": "https://www.dumbofeather.com/articles/building-a-coalition-of-everyone/",
-    "title": "Co-founded by Willow Berzin, Suse Porter and Dr Sonia Randhawa, inspired",
+    "title": "Co-founded by Willow Berzin, Suse Porter and Dr Sonia Randhawa, inspired by Extinction Rebellion Melbourne's first meeting",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "I met my two other co-founders Suse Porter and Dr Sonia Randhawa early last year, and have been working closely with them since. by Extinction Rebellion Melbourne's first meeting"
-      }
-    ]
-  },
-  {
-    "id": "4198aeae",
-    "type": "webpage",
-    "URL": "https://www.fidemocracy.org/news",
-    "title": "FIDE Forum 2026: From Novel to Normal — making deliberation a democratic standard, Vienna",
-    "evidence": [
-      {
-        "type": "quote-match",
-        "quote": "FIDE Forum 2026"
+        "quote": "I met my two other co-founders Suse Porter and Dr Sonia Randhawa early last year, and have been working closely with them since."
       }
     ]
   },
@@ -2290,9 +2350,9 @@
     ]
   },
   {
-    "id": "444e5d0d",
+    "id": "2fa3b6ef",
     "type": "webpage",
-    "URL": "https://www.govtech.com/civic/new-global-civic-tech-group-emerges-from-the-omidyar-group.html",
+    "URL": "https://www.govtech.com/civic/New-Global-Civic-Tech-Group-Emerges-from-The-Omidyar-Group.html",
     "title": "Launched as an independent global philanthropic organisation, spun out of Omidyar Network's Governance & Citizen Engagement initiative",
     "evidence": [
       {
@@ -2330,25 +2390,14 @@
     ]
   },
   {
-    "id": "aca97307",
+    "id": "802ad15c",
     "type": "webpage",
-    "URL": "https://www.institutoupdate.org.br/sobre/",
+    "URL": "https://www.institutoupdate.org.br/quem-somos/",
     "title": "Founded in São Paulo as a regional platform for political innovation and imagination in the Global South",
-    "accessed": {
-      "date-parts": [
-        [
-          2026,
-          8,
-          12
-        ]
-      ]
-    },
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "O Instituto Update atua como uma plataforma regional de inovação e imaginação política no Sul Global.",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "O Instituto Update é uma organização liderada por mulheres que trabalha para transformar democracias incompletas em sistemas participativos que promovem o bem viver para todas as pessoas."
       }
     ]
   },
@@ -2429,26 +2478,14 @@
     ]
   },
   {
-    "id": "48bbb484",
+    "id": "26fb3b1c",
     "type": "webpage",
-    "URL": "https://www.mmzy.org.cn/mmgk/jianjie/default.aspx",
+    "URL": "https://www.mmzy.org.cn/mmgk/jianjie/11796.aspx",
     "title": "Founded in Chongqing as an umbrella organisation of China's centrist and left-leaning intellectuals during the Second Sino-Japanese War",
     "evidence": [
       {
         "type": "quote-match",
         "quote": "民盟于1941年3月19日在重庆秘密成立"
-      }
-    ]
-  },
-  {
-    "id": "3262ef46",
-    "type": "webpage",
-    "URL": "https://www.mosaiclab.com.au/case-study-1-participatory-budgeting",
-    "title": "First citizens' jury — City of Melbourne 10-Year Financial Plan; Nicholas",
-    "evidence": [
-      {
-        "type": "quote-match",
-        "quote": "City of Melbourne decided to seek the advice of its community by way of a 43 member People's Panel. The panel was a random stratified selection of people that was recruited by the newDemocracy Foundation, and included business and residential participants. The Panel met over five and a half days and was facilitated by MosiacLab founders Nicole Hunter, Kimbra White and Keith Greaves. Gruen attends as observer"
       }
     ]
   },
@@ -2589,30 +2626,6 @@
     ]
   },
   {
-    "id": "26363104",
-    "type": "webpage",
-    "URL": "https://www.openaustraliafoundation.org.au/2009/07/07/announcing-the-openaustralia-foundation/",
-    "title": "Founded by Matthew Landauer and Katherine Szuminska",
-    "evidence": [
-      {
-        "type": "quote-match",
-        "quote": "OpenAustralia Foundation Limited is officially incorporated as a company limited by guarantee."
-      }
-    ]
-  },
-  {
-    "id": "5f95a673",
-    "type": "webpage",
-    "URL": "https://www.openaustraliafoundation.org.au/2009/12/21/launching-our-new-website-planning-alerts/",
-    "title": "Launched PlanningAlerts",
-    "evidence": [
-      {
-        "type": "quote-match",
-        "quote": "21 December 2009 Launching our new website: Planning Alerts"
-      }
-    ]
-  },
-  {
     "id": "aecb3eec",
     "type": "webpage",
     "URL": "https://www.opendemocracy.net/en/can-europe-make-it/agora-votingnvotes/",
@@ -2645,18 +2658,6 @@
       {
         "type": "quote-match",
         "quote": "Since 2009, PBP has collaborated with grassroots and government partners to launch PB processes in over 40 cities"
-      }
-    ]
-  },
-  {
-    "id": "4ff2591e",
-    "type": "webpage",
-    "URL": "https://www.peoplepower21.org/English",
-    "title": "Launches Civil Society Joint Action for Strengthening Accountability and",
-    "evidence": [
-      {
-        "type": "quote-match",
-        "quote": "Launch of 'Civil Society Joint Action for Strengthening Accountability and Public Interest in AI' Public Interest in AI"
       }
     ]
   },
@@ -2889,18 +2890,6 @@
       {
         "type": "quote-match",
         "quote": "Susan McKinnon Foundation Co-Founder Grant Rule said: &ldquo;Now, more than ever, we need to publicly recognise political leadership that shows vision and courage and has had a constructive impact for"
-      }
-    ]
-  },
-  {
-    "id": "942d127a",
-    "type": "webpage",
-    "URL": "https://www.wecollect.ch/ueber-uns/",
-    "title": "Launched by the Stiftung für direkte Demokratie as Switzerland's civic-tech",
-    "evidence": [
-      {
-        "type": "quote-match",
-        "quote": "Seit dem Start 2015 haben wir uber 800'000 Unterschriften gesammelt. platform for direct democracy"
       }
     ]
   },

@@ -25,9 +25,8 @@ location:
 events:
 - date: '2015-01-01'
   title: Launched by the Stiftung für direkte Demokratie as Switzerland's civic-tech
-  url: https://www.wecollect.ch/ueber-uns/
-  quote: Seit dem Start 2015 haben wir uber 800'000 Unterschriften gesammelt. platform
-    for direct democracy
+  url: https://wecollect.ch/ueber-uns/
+  quote: Seit dem Start 2015 haben wir über 800'000 Unterschriften gesammelt.
   proof_level: high
   url_checked: '2026-08-12'
   notable: true

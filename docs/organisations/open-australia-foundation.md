@@ -25,7 +25,7 @@ rss_feed: https://www.openaustraliafoundation.org.au/feed
 events:
 - date: '2009-07-07'
   title: Founded by Matthew Landauer and Katherine Szuminska
-  url: https://www.openaustraliafoundation.org.au/2009/07/07/announcing-the-openaustralia-foundation/
+  url: https://oaf.org.au/2009/07/07/announcing-the-openaustralia-foundation/
   quote: OpenAustralia Foundation Limited is officially incorporated as a company
     limited by guarantee.
   proof_level: high
@@ -33,7 +33,7 @@ events:
   notable: true
 - date: '2009-12-21'
   title: Launched PlanningAlerts
-  url: https://www.openaustraliafoundation.org.au/2009/12/21/launching-our-new-website-planning-alerts/
+  url: https://oaf.org.au/2009/12/21/launching-our-new-website-planning-alerts/
   quote: '21 December 2009 Launching our new website: Planning Alerts'
   proof_level: high
   url_checked: '2026-08-10'

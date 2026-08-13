@@ -26,7 +26,7 @@ events:
 - date: '2005-01-01'
   title: Founded by former Indonesian election supervisors to strengthen electoral
     integrity in the world's third-largest democracy
-  url: https://perludem.or.id/profil/
+  url: https://perludem.or.id/id/profil/
   quote: para mantan Pengawas Pemilu 2004 berhimpun dalam wadah yang bernama Perkumpulan
     untuk Pemilu dan Demokrasi
   proof_level: high

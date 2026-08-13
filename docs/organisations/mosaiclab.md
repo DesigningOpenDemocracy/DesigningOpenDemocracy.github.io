@@ -25,12 +25,9 @@ location:
 events:
 - date: '2014-01-01'
   title: First citizens' jury — City of Melbourne 10-Year Financial Plan; Nicholas
-  url: https://www.mosaiclab.com.au/case-study-1-participatory-budgeting
-  quote: City of Melbourne decided to seek the advice of its community by way of a
-    43 member People's Panel. The panel was a random stratified selection of people
-    that was recruited by the newDemocracy Foundation, and included business and residential
-    participants. The Panel met over five and a half days and was facilitated by MosiacLab
-    founders Nicole Hunter, Kimbra White and Keith Greaves. Gruen attends as observer
+  url: https://mosaiclab.com.au/case-study-1-participatory-budgeting
+  quote: The panel was a random stratified (to match the demographics of the city)
+    selection of people that was recruited by the newDemocracy Foundation
   proof_level: high
   url_checked: '2026-08-12'
   notable: true
@@ -68,7 +65,7 @@ events:
 - date: '2020-01-01'
   title: Pioneers Australia's first standing citizens' panels (Mornington Peninsula
     Shire & City of Kingston); Kimbra White presents at DOD 2020 Primer
-  url: https://mosaiclab.com.au/about
+  url: https://mosaiclab.com.au/about-us
   proof_level: medium
   url_checked: '2026-08-10'
   notable: false
