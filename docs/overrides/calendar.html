@@ -52,12 +52,27 @@
 
 <details class="calendar-feeds-details">
   <summary>📡 All iCal feeds ({{ country_entries | length + 1 }})</summary>
-  <ul class="calendar-feeds-list">
-    <li><a href="/calendar.ics">📅 All countries</a></li>
-    {%- for c in country_entries %}
-    <li><a href="/calendar-{{ c.code }}.ics">{{ c.flag }} {{ c.name }}</a></li>
-    {%- endfor %}
-  </ul>
+  <table class="calendar-feeds-table">
+    <thead>
+      <tr><th>Country</th><th>.ics</th><th>Apple / Outlook</th><th>Google Calendar</th></tr>
+    </thead>
+    <tbody>
+      <tr data-ics-path="/calendar.ics">
+        <td>📅 All countries</td>
+        <td><a href="/calendar.ics">.ics</a></td>
+        <td><a class="calendar-feed-apple-link" href="webcal://">🍎 Add</a></td>
+        <td><a class="calendar-feed-google-link" href="https://calendar.google.com/" target="_blank" rel="noopener">🟦 Add</a></td>
+      </tr>
+      {%- for c in country_entries %}
+      <tr data-ics-path="/calendar-{{ c.code }}.ics">
+        <td>{{ c.flag }} {{ c.name }}</td>
+        <td><a href="/calendar-{{ c.code }}.ics">.ics</a></td>
+        <td><a class="calendar-feed-apple-link" href="webcal://">🍎 Add</a></td>
+        <td><a class="calendar-feed-google-link" href="https://calendar.google.com/" target="_blank" rel="noopener">🟦 Add</a></td>
+      </tr>
+      {%- endfor %}
+    </tbody>
+  </table>
 </details>
 
 {%- for month_key, month_events in grouped.items() %}
@@ -197,6 +212,20 @@
     updateSubscribeLink();
   }
 
+  // webcal:// is the scheme Apple Calendar and Outlook register to
+  // subscribe (live, auto-refreshing) rather than one-time-import a plain
+  // https:// .ics link, which most OSes just download. Google Calendar's
+  // equivalent is its "Add by URL" screen, keyed off a ?cid= query param.
+  // Both need an *absolute* URL, built from the real page origin rather
+  // than mkdocs.yml's site_url (which is http://, not https://, and isn't
+  // guaranteed to match wherever this actually ends up deployed).
+  function appleUrl(path) {
+    return (window.location.origin + path).replace(/^https?:\/\//, 'webcal://');
+  }
+  function googleUrl(path) {
+    return 'https://calendar.google.com/calendar/render?cid=' + encodeURIComponent(window.location.origin + path);
+  }
+
   // Google Calendar (and most other clients) don't offer any way to
   // filter a subscribed .ics feed after the fact — subscribing is
   // all-or-nothing. A per-country feed is generated at build time for
@@ -211,15 +240,10 @@
     var hint = document.getElementById('calendar-subscribe-hint');
     var selected = filter.value;
     var path = selected === 'all' ? '/calendar.ics' : '/calendar-' + selected + '.ics';
-    var absoluteUrl = window.location.origin + path;
 
     link.href = path;
-    // webcal:// is the scheme Apple Calendar and Outlook register to
-    // subscribe (live, auto-refreshing) rather than one-time-import a
-    // plain https:// .ics link, which most OSes just download.
-    appleLink.href = absoluteUrl.replace(/^https?:\/\//, 'webcal://');
-    // Google Calendar's "Add by URL" screen, keyed off a ?cid= query param.
-    googleLink.href = 'https://calendar.google.com/calendar/render?cid=' + encodeURIComponent(absoluteUrl);
+    appleLink.href = appleUrl(path);
+    googleLink.href = googleUrl(path);
 
     if (selected === 'all') {
       link.textContent = '📅 Subscribe (.ics)';
@@ -230,6 +254,18 @@
       link.textContent = flag + ' Subscribe (.ics)';
       hint.textContent = 'Subscribes to ' + label + ' events only. Reset the filter above for every country instead.';
     }
+  }
+
+  // The "All iCal feeds" table's rows are static (not affected by the
+  // country filter), so this only needs to run once at load.
+  function populateFeedsTable() {
+    document.querySelectorAll('.calendar-feeds-table tr[data-ics-path]').forEach(function (row) {
+      var path = row.getAttribute('data-ics-path');
+      var apple = row.querySelector('.calendar-feed-apple-link');
+      var google = row.querySelector('.calendar-feed-google-link');
+      if (apple) apple.href = appleUrl(path);
+      if (google) google.href = googleUrl(path);
+    });
   }
 
   filter.addEventListener('change', function() {
@@ -258,6 +294,7 @@
     filter.value = initial.toUpperCase();
   }
   applyFilter();
+  populateFeedsTable();
 })();
 </script>
 {% endblock %}

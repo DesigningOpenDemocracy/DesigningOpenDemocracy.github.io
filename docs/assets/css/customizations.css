@@ -1264,16 +1264,17 @@
 .calendar-feeds-details summary:hover {
   opacity: 1;
 }
-.calendar-feeds-list {
-  list-style: none;
-  padding-left: 0;
+.calendar-feeds-table {
   margin: 0.6em 0 0;
-  columns: 2;
+  font-size: 1em;
 }
-.calendar-feeds-list li {
-  padding: 0.15em 0;
+.calendar-feeds-table th,
+.calendar-feeds-table td {
+  padding: 0.3em 0.8em 0.3em 0;
+  text-align: left;
+  white-space: nowrap;
 }
-.calendar-feeds-list a {
+.calendar-feeds-table a {
   color: var(--md-default-fg-color--light);
 }
 .calendar-event-list {
