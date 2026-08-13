@@ -1267,15 +1267,91 @@
 .calendar-feeds-table {
   margin: 0.6em 0 0;
   font-size: 1em;
+  border-spacing: 0.5em 0.4em;
+  border-collapse: separate;
 }
 .calendar-feeds-table th,
 .calendar-feeds-table td {
-  padding: 0.3em 0.8em 0.3em 0;
+  padding: 0;
   text-align: left;
   white-space: nowrap;
 }
-.calendar-feeds-table a {
+.calendar-feeds-table th {
+  font-weight: 600;
+  opacity: 0.7;
+  font-size: 0.85em;
+  padding-bottom: 0.3em;
+}
+/* Real, comfortably-sized click targets (not bare text links) so the
+   three actions per row are easy to hit individually. Color differentiates
+   Apple vs. Google instead of relying on brand-logo emoji, which render
+   inconsistently across platforms (an apple emoji reads as generic fruit,
+   not the Apple logo) and Google has no equivalent emoji at all. */
+.calendar-feed-btn {
+  display: inline-block;
+  padding: 0.4em 0.9em;
+  border-radius: 0.3em;
+  font-size: 0.85em;
+  font-weight: 500;
+  line-height: 1.3;
+}
+/* Two classes chained (not space-separated) on each selector below is
+   deliberate, not stylistic: Material's `.md-typeset a` base rule has
+   specificity (0,1,1), which beats a single-class selector like
+   `.calendar-feed-btn--google` alone (0,1,0) — confirmed as a real bug
+   (blue-on-blue near-illegible text) before this fix. Chaining
+   `.calendar-feed-btn.calendar-feed-btn--*` raises it to (0,2,0), which
+   wins regardless of element-selector tiebreaks. */
+.calendar-feed-btn.calendar-feed-btn--ics {
+  border: 1px solid var(--md-default-fg-color--lighter);
   color: var(--md-default-fg-color--light);
+}
+.calendar-feed-btn.calendar-feed-btn--ics:hover {
+  border-color: var(--md-default-fg-color--light);
+  color: var(--md-default-fg-color);
+}
+.calendar-feed-btn.calendar-feed-btn--apple {
+  background: var(--md-default-fg-color);
+  color: var(--md-default-bg-color);
+  opacity: 0.85;
+}
+.calendar-feed-btn.calendar-feed-btn--apple:hover {
+  opacity: 1;
+  color: var(--md-default-bg-color);
+}
+.calendar-feed-btn.calendar-feed-btn--google {
+  background: #4285f4;
+  color: #fff;
+}
+.calendar-feed-btn.calendar-feed-btn--google:hover {
+  background: #3367d6;
+  color: #fff;
+}
+/* Same treatment for the primary Subscribe row's Apple/Google buttons.
+   Plain ID selectors here (rather than adding the .calendar-feed-btn--*
+   classes to these anchors) because those classes would lose a
+   specificity fight to the existing `.md-typeset a.hero-cta-btn` rule
+   above, which these buttons also match via .hero-cta-btn — an ID
+   selector beats any number of classes regardless of nesting. */
+#calendar-subscribe-apple {
+  background: var(--md-default-fg-color);
+  color: var(--md-default-bg-color);
+  border-color: var(--md-default-fg-color);
+  opacity: 0.85;
+}
+#calendar-subscribe-apple:hover {
+  opacity: 1;
+  color: var(--md-default-bg-color);
+}
+#calendar-subscribe-google {
+  background: #4285f4;
+  border-color: #4285f4;
+  color: #fff;
+}
+#calendar-subscribe-google:hover {
+  background: #3367d6;
+  border-color: #3367d6;
+  color: #fff;
 }
 .calendar-event-list {
   list-style: none;
