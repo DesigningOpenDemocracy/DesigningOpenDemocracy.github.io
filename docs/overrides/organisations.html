@@ -117,7 +117,10 @@
               {%- if contact.get('email') %}<a href="mailto:{{ contact.get('email') }}" class="org-contact-line">{{ contact.get('email') }}</a>{%- endif %}
               {%- if contact.get('phone') %}<span class="org-contact-line">{{ contact.get('phone') }}</span>{%- endif %}
               {%- if contact.get('form') %}<a href="{{ contact.get('form') }}" class="org-contact-line" target="_blank" rel="noopener">Contact form ↗</a>{%- endif %}
-              {%- if not contact.get('email') and not contact.get('phone') and not contact.get('form') %}—{%- endif %}
+              {%- for ch in contact.get('channels', []) or [] %}
+              <a href="{{ ch.url }}" class="org-contact-line" target="_blank" rel="noopener">{{ ch.label or ch.type | capitalize }} ↗</a>
+              {%- endfor %}
+              {%- if not contact.get('email') and not contact.get('phone') and not contact.get('form') and not contact.get('channels') %}—{%- endif %}
             </td>
             <td>
               {%- for c in concepts %}
