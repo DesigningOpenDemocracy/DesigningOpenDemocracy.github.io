@@ -230,6 +230,27 @@ fragment rendering, or export, even if a quoted phrase is present.
 Split into separate footnotes (one citation, one claim, one label) to
 enable mechanical verification.
 
+**Editorial notes and citation-only text are deliberately excluded
+from `citations.json`** — this is a scope boundary, not a gap to fix.
+Two sources on the wiki carry human-written prose that isn't a
+verbatim `quote`: events' `note:` frontmatter field (an editorial
+paraphrase, distinct from `quote:`) and citation-only footnotes (no
+extractable quote — usually multi-link, book/person citations with no
+URL, or a bare title/source/date). Neither ever appears in
+`citations.json`, even though both are valid, spec-allowed sourcing on
+the site itself (rendered directly on the page — see `note:` in the
+"Organisation pages" section of `CLAUDE.md`, and "Prose footnote
+citations"). The reason: `citations.json`'s entire value is in
+`evidence[].quote` being mechanically re-checkable — `status: MATCH`
+means something because `check_fragments.py` verified the substring
+still appears on the live page. A paraphrase or a no-URL book citation
+has nothing to re-check; folding it into `evidence` under some new
+`type` would dilute that guarantee for every consumer without adding
+real information (the note/citation is already readable in the page's
+own rendered HTML). Considered 2026-08-13, on request, before building
+it — see the reasoning above for why it doesn't clear the bar. Revisit
+only if a concrete downstream consumer actually needs it.
+
 ---
 
 ## Appendix C: Changelog
