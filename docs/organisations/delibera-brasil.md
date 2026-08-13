@@ -38,19 +38,18 @@ events:
 - date: '2021-01-01'
   title: Climate Assemblies of Pará launched — citizen deliberation in the Amazon
     on climate policy
-  url: https://deliberabrasil.org/
-  quote: 'Primeira Assembleia Cidadã sobre o Clima em Cidades Amazônicas: Bujaru.
-    O município selecionado foi Bujaru, no Pará.'
+  url: https://deliberabrasil.org/projetos/primeira-assembleia-cidada-sobre-o-clima-em-cidades-amazonicas/
+  quote: O município selecionado foi Bujaru, no Pará
   proof_level: high
-  url_checked: '2026-08-12'
+  url_checked: '2026-08-13'
   notable: true
 - date: '2025-01-01'
   title: Assembleias Cidadãs de Moçambique — climate resilience assemblies launched
     in Mozambique
-  url: https://deliberabrasil.org/
-  note: Site lists 'Assembleias Cidadãs de Moçambique' as a current project
-  proof_level: medium
-  url_checked: '2026-08-10'
+  url: https://deliberabrasil.org/projetos/assembleias-cidadas-de-mocambique-sobre-as-mudancas-climaticas/
+  quote: Diálogo público sobre resiliência climática e uso de recursos naturais
+  proof_level: high
+  url_checked: '2026-08-13'
   notable: false
 activity:
   dod:
