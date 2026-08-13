@@ -12,6 +12,7 @@ docs/data/organisations.kml
 docs/data/org-concepts.csv
 docs/data/events.json
 docs/calendar.ics
+docs/calendar-*.ics
 # Re-generated at every build from in-repo data:
 # - events.json + calendar.ics are derived from docs/data/events/<slug>.json
 #   (the committed iCal sync cache) so they don't need to be versioned.

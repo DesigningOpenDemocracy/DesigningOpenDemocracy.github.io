@@ -259,12 +259,12 @@ def _parse_time(t):
     return (int(m.group(1)), int(m.group(2))) if m else None
 
 
-def _write_ics(events, path):
+def _write_ics(events, path, calname="Designing Open Democracy — Democracy Landscape Calendar"):
     lines = [
         "BEGIN:VCALENDAR",
         "VERSION:2.0",
         "PRODID:-//Designing Open Democracy//Democracy Landscape Calendar//EN",
-        "X-WR-CALNAME:Designing Open Democracy — Democracy Landscape Calendar",
+        f"X-WR-CALNAME:{_ics_escape(calname)}",
         "CALSCALE:GREGORIAN",
     ]
     now_stamp = datetime.utcnow().strftime("%Y%m%dT%H%M%SZ")
@@ -322,6 +322,26 @@ def on_pre_build(config):
     _events.extend(events)
 
     _write_ics(events, os.path.join(DOCS_DIR, "calendar.ics"))
+
+    # Per-country subscribe feeds. Google Calendar (and most other clients)
+    # offer no way to filter a subscribed .ics URL after the fact — CATEGORIES
+    # is ignored on import — so the combined feed is all-or-nothing once
+    # someone's subscribed. Splitting by country at build time is the only
+    # lever available for cutting that noise; every country actually present
+    # gets a file, matching exactly what docs/overrides/calendar.html's
+    # country dropdown offers (same underlying `country` field), so the
+    # per-country "Subscribe" link it builds can never point at a 404.
+    by_country = {}
+    for e in events:
+        c = e.get("country")
+        if c:
+            by_country.setdefault(c, []).append(e)
+    for country, country_events in by_country.items():
+        country_name = _COUNTRY_NAMES.get(country, country)
+        _write_ics(
+            country_events, os.path.join(DOCS_DIR, f"calendar-{country}.ics"),
+            calname=f"Designing Open Democracy — {country_name} Events",
+        )
 
     os.makedirs(os.path.join(DOCS_DIR, "data"), exist_ok=True)
     with open(os.path.join(DOCS_DIR, "data", "events.json"), "w", encoding="utf-8") as f:

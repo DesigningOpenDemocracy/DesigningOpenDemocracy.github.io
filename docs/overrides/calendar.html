@@ -10,8 +10,8 @@
 </p>
 
 <p class="calendar-subscribe">
-  <a href="/calendar.ics" class="hero-cta-btn hero-cta-primary">📅 Subscribe (.ics)</a>
-  <span class="calendar-subscribe-hint">Add this URL to Google Calendar, Outlook, or Apple Calendar to get every event below automatically.</span>
+  <a href="/calendar.ics" id="calendar-subscribe-link" class="hero-cta-btn hero-cta-primary">📅 Subscribe (.ics)</a>
+  <span id="calendar-subscribe-hint" class="calendar-subscribe-hint">Add this URL to Google Calendar, Outlook, or Apple Calendar to get every event below automatically.</span>
 </p>
 
 {% set type_icons = {
@@ -173,6 +173,27 @@
 
     document.getElementById('calendar-country-reset').classList.toggle('visible', filter.value !== 'all');
     updateCount();
+    updateSubscribeLink();
+  }
+
+  // Google Calendar (and most other clients) don't offer any way to
+  // filter a subscribed .ics feed after the fact — subscribing is
+  // all-or-nothing. A per-country feed is generated at build time for
+  // every country that appears in the dropdown above (see
+  // hooks/calendar_export.py), so swap the Subscribe link's target to
+  // match whichever country is currently selected, rather than always
+  // pointing at the combined everything-feed.
+  function updateSubscribeLink() {
+    var link = document.getElementById('calendar-subscribe-link');
+    var hint = document.getElementById('calendar-subscribe-hint');
+    var selected = filter.value;
+    if (selected === 'all') {
+      link.href = '/calendar.ics';
+      hint.textContent = 'Add this URL to Google Calendar, Outlook, or Apple Calendar to get every event below automatically.';
+    } else {
+      link.href = '/calendar-' + selected + '.ics';
+      hint.textContent = 'Subscribes to ' + (countryMap[selected] || selected) + ' events only. Reset the filter above for every country instead.';
+    }
   }
 
   filter.addEventListener('change', function() {
