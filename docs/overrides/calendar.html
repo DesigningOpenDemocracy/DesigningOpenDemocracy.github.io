@@ -11,8 +11,8 @@
 
 <p class="calendar-subscribe">
   <a href="/calendar.ics" id="calendar-subscribe-link" class="hero-cta-btn hero-cta-primary">📅 Subscribe (.ics)</a>
-  <a href="webcal://" id="calendar-subscribe-apple" class="hero-cta-btn" title="Opens in Apple Calendar or Outlook">🍎 Apple / Outlook</a>
-  <a href="https://calendar.google.com/" id="calendar-subscribe-google" class="hero-cta-btn" target="_blank" rel="noopener" title="Opens Google Calendar's Add by URL screen">🟦 Google Calendar</a>
+  <a href="webcal://" id="calendar-subscribe-apple" class="hero-cta-btn" title="Opens in Apple Calendar or Outlook">Apple / Outlook</a>
+  <a href="https://calendar.google.com/" id="calendar-subscribe-google" class="hero-cta-btn" target="_blank" rel="noopener" title="Opens Google Calendar's Add by URL screen">Google Calendar</a>
   <span id="calendar-subscribe-hint" class="calendar-subscribe-hint">Add this URL to Google Calendar, Outlook, or Apple Calendar to get every event below automatically.</span>
 </p>
 
@@ -50,25 +50,24 @@
 {%- endfor %}
 {%- set country_entries = country_entries | sort(attribute='name') %}
 
+{%- set feed_rows = [{'flag': '📅', 'name': 'All countries', 'path': '/calendar.ics'}] %}
+{%- for c in country_entries %}
+  {%- set _ = feed_rows.append({'flag': c.flag, 'name': c.name, 'path': '/calendar-' + c.code + '.ics'}) %}
+{%- endfor %}
+
 <details class="calendar-feeds-details">
-  <summary>📡 All iCal feeds ({{ country_entries | length + 1 }})</summary>
+  <summary>📡 All iCal feeds ({{ feed_rows | length }})</summary>
   <table class="calendar-feeds-table">
     <thead>
-      <tr><th>Country</th><th>.ics</th><th>Apple / Outlook</th><th>Google Calendar</th></tr>
+      <tr><th>Country</th><th>Download</th><th>Apple / Outlook</th><th>Google Calendar</th></tr>
     </thead>
     <tbody>
-      <tr data-ics-path="/calendar.ics">
-        <td>📅 All countries</td>
-        <td><a href="/calendar.ics">.ics</a></td>
-        <td><a class="calendar-feed-apple-link" href="webcal://">🍎 Add</a></td>
-        <td><a class="calendar-feed-google-link" href="https://calendar.google.com/" target="_blank" rel="noopener">🟦 Add</a></td>
-      </tr>
-      {%- for c in country_entries %}
-      <tr data-ics-path="/calendar-{{ c.code }}.ics">
-        <td>{{ c.flag }} {{ c.name }}</td>
-        <td><a href="/calendar-{{ c.code }}.ics">.ics</a></td>
-        <td><a class="calendar-feed-apple-link" href="webcal://">🍎 Add</a></td>
-        <td><a class="calendar-feed-google-link" href="https://calendar.google.com/" target="_blank" rel="noopener">🟦 Add</a></td>
+      {%- for r in feed_rows %}
+      <tr data-ics-path="{{ r.path }}">
+        <td>{{ r.flag }} {{ r.name }}</td>
+        <td><a class="calendar-feed-btn calendar-feed-btn--ics" href="{{ r.path }}">Download .ics</a></td>
+        <td><a class="calendar-feed-btn calendar-feed-btn--apple calendar-feed-apple-link" href="webcal://">Apple / Outlook</a></td>
+        <td><a class="calendar-feed-btn calendar-feed-btn--google calendar-feed-google-link" href="https://calendar.google.com/" target="_blank" rel="noopener">Google Calendar</a></td>
       </tr>
       {%- endfor %}
     </tbody>
