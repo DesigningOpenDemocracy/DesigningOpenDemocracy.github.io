@@ -57,9 +57,24 @@ def parse_date(val):
         return None
 
 
+# Bare collection/index pages — e.g. https://org.example/events/ rather than
+# .../events/the-specific-event-slug/. Same problem as a homepage-only URL
+# (flagged below): the citation isn't pinned to the claimed event and will
+# silently rot once that event scrolls off the list. Deliberately narrow to
+# unambiguous list-noun segments rather than every short single-segment path
+# (e.g. "/about", "/training") — those may well be a genuine specific page,
+# not a rotating collection, and flagging them would be a false positive.
+GENERIC_LIST_SEGMENTS = {"events", "event", "news", "blog", "calendar", "press", "media", "updates", "whats-on"}
+
+
 def is_weak_url(url):
     parsed = urlparse(str(url).strip())
-    return parsed.path in ("", "/") and not parsed.fragment
+    if parsed.fragment:
+        return False
+    if parsed.path in ("", "/"):
+        return True
+    segments = [s for s in parsed.path.split("/") if s]
+    return len(segments) == 1 and segments[0].lower() in GENERIC_LIST_SEGMENTS
 
 
 def confidence_score(event):
@@ -324,7 +339,7 @@ def main():
     if notable_soft:
         print(f"Notable events without mechanical proof (no quote): {notable_soft}")
     if weak_url:
-        print(f"Weak URLs (homepage-only): {weak_url}")
+        print(f"Weak URLs (homepage or generic list page, e.g. /events/): {weak_url}")
     if vague_source:
         print(f"Vague source values (below {MIN_SOURCE_LENGTH} chars): {vague_source}")
     if stale_checked:
