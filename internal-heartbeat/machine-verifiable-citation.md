@@ -275,15 +275,61 @@ etc. as an actual CSL-JSON extension upstream, not just a convention
 DOD's own tooling happens to produce. Checked what that would actually
 take; recording it here rather than acting on it now.
 
-**Where this format stands today:** not schema-valid. The official CSL-JSON
-JSON Schema (https://github.com/citation-style-language/schema) sets
-`"additionalProperties": false` on item objects, so `evidence` and every
-DOD extension field are technically invalid against it. This doesn't
-break real-world use — Pandoc's citeproc and Zotero don't run strict
-schema validation at parse time, they just read known fields and ignore
-the rest, which is why the Pandoc round-trip claim above still holds.
-Also worth knowing: the schema repo describes itself as "not yet fully
-normative," so even upstream doesn't treat it as a closed, final contract.
+**Where this format stands today — corrected 2026-08-13.** The original
+note above ("evidence, archive/archive_location, etc. are all technically
+invalid") overstated the gap: it was written against `csl-citation.json`
+(the *in-text citation cluster* schema — citationID, citationItems, a
+completely different object), not `csl-data.json`, the one that actually
+governs the item objects `citations.json` produces. Re-checked against
+the real one:
+(https://github.com/citation-style-language/schema/blob/master/schemas/input/csl-data.json).
+It does set `"additionalProperties": false` on item objects, confirmed —
+but every field DOD's `citations.json` actually emits today (checked the
+live file: `id`, `type`, `URL`, `title`, `accessed`, plus `archive`/
+`archive_location` when populated) is already a real, defined CSL field.
+**`evidence` is the only non-standard key**, not a family of them.
+
+Better still, the schema defines an explicit escape hatch for exactly
+this case — a `custom` property (`"type": "object"`, no
+`additionalProperties` restriction of its own), documented in-schema as
+"Used to store additional information that does not have a designated
+CSL JSON field... preferred over the note field for storing custom
+data." Nesting `evidence` under `custom.evidence` instead of at the top
+level would make `citations.json` fully schema-valid *today*, with no
+upstream involvement needed — this isn't a proposal-first situation the
+way the rest of this appendix assumed, it's a mechanical rename. Not yet
+done: `hooks/citation_export.py` (produces `cite["evidence"]`) and every
+consumer that reads it (`util/citations_tool.py`,
+`hooks/footnote_fragments.py`'s Jinja filter chain if it ever reads this
+file, any future doc/UI) would need the same key-path change together,
+otherwise reads and writes silently disagree — a small, contained
+refactor, not attempted as part of this correction pass.
+
+This doesn't mean the previous framing was worthless — Pandoc's citeproc
+and Zotero don't run strict schema validation at parse time regardless,
+they just read known fields and ignore the rest, which is why the Pandoc
+round-trip claim above holds either way. And the schema repo still
+describes itself as "not yet fully normative," so even upstream doesn't
+treat it as a closed, final contract. But "not schema-valid" was simply
+wrong as originally stated.
+
+**Two different goals, not one** — worth keeping separate now that the
+`custom` finding is on the table:
+1. *Schema-valid today* — nest `evidence` under `custom.evidence`. A
+   mechanical rename, no upstream involvement, done whenever the
+   refactor above is worth doing.
+2. *`evidence` as a genuine, recognized CSL-JSON extension* — the actual
+   goal here, not settled by (1). `custom` is a junk-drawer any
+   implementation can read differently or ignore; it doesn't get other
+   citation tools to understand what `evidence`/`quote-match`/`status`
+   mean, doesn't give the concept a stable documented shape other CSL
+   consumers could build against, and doesn't make DOD's verification
+   semantics part of the actual spec. That's what the contribution path
+   below is for, and (1) doesn't substitute for it — if anything, having
+   a schema-valid file in hand strengthens the pitch when filing the
+   issue ("here's a working implementation, already passing your own
+   JSON Schema by using the sanctioned extension point"), rather than
+   removing the motivation to propose it properly.
 
 **The actual contribution path**, per the repo's `CONTRIBUTING.md`:
 1. File an issue first, following their issue template — enough detail
@@ -308,6 +354,9 @@ once the shape has actually stopped moving.
 ## References
 
 - CSL-JSON schema: https://github.com/citation-style-language/schema
+- CSL-JSON item/data schema (governs citations.json's objects — NOT
+  csl-citation.json, which is the separate in-text-citation-cluster
+  schema): https://github.com/citation-style-language/schema/blob/master/schemas/input/csl-data.json
 - CSL 1.0.2 spec: https://docs.citationstyles.org/
 - W3C Web Annotation Data Model, TextQuoteSelector: https://www.w3.org/TR/annotation-model/#text-quote-selector
 - WICG Text Fragments: https://wicg.github.io/scroll-to-text-fragment/
