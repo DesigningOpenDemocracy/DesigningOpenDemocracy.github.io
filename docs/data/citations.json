@@ -2004,6 +2004,18 @@
     ]
   },
   {
+    "id": "c231f441",
+    "type": "webpage",
+    "URL": "https://web.archive.org/web/20190718131041/https://policyincubator.com/home/about_us",
+    "title": "web.archive.org",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "The strength of this decentralised policy making and deliberation model is based on the power of 'the crowd'."
+      }
+    ]
+  },
+  {
     "id": "7bf576cf",
     "type": "webpage",
     "URL": "https://web.archive.org/web/20190824085752/https://bhive.coop/our-story/",
@@ -2016,6 +2028,18 @@
       {
         "type": "quote-match",
         "quote": "Finally Consumer Affairs granted us cooperative status. We were now a real thing. Australia's first platform cooperative"
+      }
+    ]
+  },
+  {
+    "id": "acce1df7",
+    "type": "webpage",
+    "URL": "https://web.archive.org/web/20201025042342/https://www.coalitionofeveryone.com/",
+    "title": "Wayback Machine",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Renewing democratic culture for citizen, community, and policy-led change."
       }
     ]
   },
