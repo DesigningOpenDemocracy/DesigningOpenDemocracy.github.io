@@ -37,10 +37,12 @@ events:
 - date: '2026-11-18'
   title: 'FIDE Forum 2026: From Novel to Normal — making deliberation a democratic
     standard, Vienna'
-  url: https://fidemocracy.org/news
-  quote: FIDE Forum 2026
+  url: https://fidemocracy.org/europe-forum-2026-from-novel-to-normal
+  quote: A conference for practitioners, public officials, political parties, NGOs,
+    and funders to move this field from the margins to the mainstream. To build the
+    infrastructure, lift the standards, and create the political will to make it permanent.
   proof_level: high
-  url_checked: '2026-08-10'
+  url_checked: '2026-08-13'
   end_date: '2026-11-19'
   notable: true
   type: conference

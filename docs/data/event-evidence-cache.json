@@ -33,6 +33,74 @@
       "df929ab5566c473eff41117725d048245c949170398782267afecefb68f6f213": true
     }
   },
+  "https://canberra-alliance.org.au/event/2026-capad-agm/": {
+    "checked": "2026-08-13",
+    "content_hash": "9f2460966f61721c96b7c008007aa71ee8cb5de4c098448b8df2ea559e3ba1fb",
+    "contexts": {
+      "9f2460966f61721c96b7c008007aa71ee8cb5de4c098448b8df2ea559e3ba1fb": {
+        "prefix": "August @ 14:00 - 15:00 AEST \u00ab Spotlight on Community Councils Do more MLAs make for better government? \u00bb",
+        "sha256": "9f2460966f61721c96b7c008007aa71ee8cb5de4c098448b8df2ea559e3ba1fb",
+        "suffix": "Annual Report and other papers . Zoom link to attend: https://us06web.zoom.us/j/82905882663 RSVP . Tweet",
+        "text": "Be part of setting the future for CAPaD for another year."
+      }
+    },
+    "etag": null,
+    "last_modified": "Thu, 13 Aug 2026 04:10:21 GMT",
+    "verified": {
+      "9f2460966f61721c96b7c008007aa71ee8cb5de4c098448b8df2ea559e3ba1fb": true
+    }
+  },
+  "https://canberra-alliance.org.au/event/a-citizens-assembly-for-the-act/": {
+    "checked": "2026-08-13",
+    "content_hash": "deb147d674adaebd0b6e9291f63f3dbffee5d45fdad6147fb0bc2a556773550e",
+    "contexts": {
+      "8b93a12bae23870d853747831ad995f05f5f45631a27987161de034eaaa5a444": {
+        "prefix": "AEDT \u00ab Do more MLAs make for better government? Community Assembly \u2013 following up our MP asks for 2026 \u00bb",
+        "sha256": "deb147d674adaebd0b6e9291f63f3dbffee5d45fdad6147fb0bc2a556773550e",
+        "suffix": "The Citizens\u2019 Assembly would assist the ACT Legislative Assembly to govern for better social and environmental outcomes. It builds on international e",
+        "text": "The ACT Standing Citizens\u2019 Assembly (SCA) is a three-year project to build momentum for a trial of well facilitated input from Canberrans to government in the ACT. The Citizens\u2019 Assembly would assist the ACT Legislative Assembly to govern for better social and environmental outcomes. It builds on international experience of citizens\u2019 assemblies."
+      }
+    },
+    "etag": null,
+    "last_modified": "Thu, 13 Aug 2026 07:41:45 GMT",
+    "verified": {
+      "8b93a12bae23870d853747831ad995f05f5f45631a27987161de034eaaa5a444": true
+    }
+  },
+  "https://canberra-alliance.org.au/event/community-assembly-following-up-our-mp-asks-for-2026/": {
+    "checked": "2026-08-13",
+    "content_hash": "bb6b449b355e2c9fae344ef3f3d9473256d4118c2e05c1b1ed40ed8b36b5a11f",
+    "contexts": {
+      "a90e80e6aeefc64834dc5bbe532519967f1c78ee4707e0158ee73ef79dcbaaab": {
+        "prefix": "nd its impacts on those experiencing gambling harm ). To round off the year we are inviting them to come to tell us what they have achieved.",
+        "sha256": "bb6b449b355e2c9fae344ef3f3d9473256d4118c2e05c1b1ed40ed8b36b5a11f",
+        "suffix": "More details and registration links in November. Tweet Add to calendar Google Calendar iCalendar",
+        "text": "To round off the year we are inviting them to come to tell us what they have achieved. This Community Assembly to to give them opportunity to report back to us and for us to respond to their report."
+      }
+    },
+    "etag": null,
+    "last_modified": "Thu, 13 Aug 2026 07:40:21 GMT",
+    "verified": {
+      "a90e80e6aeefc64834dc5bbe532519967f1c78ee4707e0158ee73ef79dcbaaab": true
+    }
+  },
+  "https://canberra-alliance.org.au/event/expanding-the-act-assembly-is-it-time/": {
+    "checked": "2026-08-13",
+    "content_hash": "afb1e1080fe732db4825bb8f8be50a341e4949dc4750b55911ece1ead81430ff",
+    "contexts": {
+      "afb1e1080fe732db4825bb8f8be50a341e4949dc4750b55911ece1ead81430ff": {
+        "prefix": "government? 19 October @ 18:00 - 19:30 AEDT \u00ab 2026 CAPaD AGM A Citizens\u2019 Assembly for the ACT \u00bb",
+        "sha256": "afb1e1080fe732db4825bb8f8be50a341e4949dc4750b55911ece1ead81430ff",
+        "suffix": "The 2019 Latimer House Review suggested that the ACT was under represented. We need more MLAs. The next Latimer House Review is happening in 20",
+        "text": "Event 3 Re-imagining Governance for the ACT: A Public Event Series Expanding the ACT Assembly for better government \u2013 is it time? Hosted by CAPaD & Active Democracy Bean"
+      }
+    },
+    "etag": null,
+    "last_modified": "Thu, 13 Aug 2026 07:41:42 GMT",
+    "verified": {
+      "afb1e1080fe732db4825bb8f8be50a341e4949dc4750b55911ece1ead81430ff": true
+    }
+  },
   "https://ciudadaniai.org/nosotros/": {
     "checked": "2026-08-13",
     "content_hash": "0b9471be8f65922f16b7dc2b3cb12858e60cbdd537443c4069a88df8c6d3eb47",
@@ -65,6 +133,23 @@
     "last_modified": null,
     "verified": {
       "25d546fb9449c1380fed6e2ecf84a9706dc54f4f4af5a075ca0c658537c6dc92": true
+    }
+  },
+  "https://consuldemocracy.org/2025/12/consul-conference-2026-munich/": {
+    "checked": "2026-08-13",
+    "content_hash": "cd729351ab05147c0cc12144223afcc290c18397362ddfa50a7fad4270c6e85d",
+    "contexts": {
+      "cd729351ab05147c0cc12144223afcc290c18397362ddfa50a7fad4270c6e85d": {
+        "prefix": "oundation Registration is open! Get your donation-based ticket through the button below. Get your ticket",
+        "sha256": "cd729351ab05147c0cc12144223afcc290c18397362ddfa50a7fad4270c6e85d",
+        "suffix": "After a succesful 2025 edition in Las Palmas de Gran Canaria, this time the CONSULCON will be hosted by the city of Munchen, who is also an Amb",
+        "text": "The CONSUL DEMOCRACY Foundation in collaboration with the Landeshauptstadt M\u00fcnchen organises the next ConsulCon on 15-17 September 2026 in M\u00fcnchen, Germany."
+      }
+    },
+    "etag": null,
+    "last_modified": "Thu, 13 Aug 2026 07:44:21 GMT",
+    "verified": {
+      "cd729351ab05147c0cc12144223afcc290c18397362ddfa50a7fad4270c6e85d": true
     }
   },
   "https://deliberabrasil.org/projetos/assembleias-cidadas-de-mocambique-sobre-as-mudancas-climaticas/": {
@@ -285,6 +370,23 @@
     "last_modified": null,
     "verified": {
       "5760c293c05f53070e2c0ae9d9c0abbc13710775fe504090d59aaa4ed3ddff7f": true
+    }
+  },
+  "https://fidemocracy.org/europe-forum-2026-from-novel-to-normal": {
+    "checked": "2026-08-13",
+    "content_hash": "f3343c6735e33cdc41a2a0185b525177b24ab00900a6483d46160fded5167b80",
+    "contexts": {
+      "f3343c6735e33cdc41a2a0185b525177b24ab00900a6483d46160fded5167b80": {
+        "prefix": "Where deliberative practice meets.",
+        "sha256": "f3343c6735e33cdc41a2a0185b525177b24ab00900a6483d46160fded5167b80",
+        "suffix": "FIDE FORUM 2026 Program Overview",
+        "text": "A conference for practitioners, public officials, political parties, NGOs, and funders to move this field from the margins to the mainstream. To build the infrastructure, lift the standards, and create the political will to make it permanent."
+      }
+    },
+    "etag": "W/\"6d91f6d26f0a8dd8b7cd20670857b145\"",
+    "last_modified": null,
+    "verified": {
+      "f3343c6735e33cdc41a2a0185b525177b24ab00900a6483d46160fded5167b80": true
     }
   },
   "https://fidemocracy.org/news": {
@@ -687,6 +789,23 @@
       "31b35e733ed03b9b4e9d03ec4028349a9d92aa6532dabeec34b3a5fc9e73b1c9": true
     }
   },
+  "https://www.democracy-international.org/events/2026-global-forum-modern-direct-democracy": {
+    "checked": "2026-08-13",
+    "content_hash": "cf2c23156ed8eb4d38665bdc204005a7dc4a85f72e6a5fafaece085a06b1b086",
+    "contexts": {
+      "cf2c23156ed8eb4d38665bdc204005a7dc4a85f72e6a5fafaece085a06b1b086": {
+        "prefix": "Africa 07.10.2026 17:00 - 10.10.2026 15:00 Location University of Botswana Gaborone Botswana",
+        "sha256": "cf2c23156ed8eb4d38665bdc204005a7dc4a85f72e6a5fafaece085a06b1b086",
+        "suffix": "We will meet in Gaborone, Botswana, at the University of Botswana, an institution founded through citizens\u2019 collective contributions. The",
+        "text": "In 2026, the Global Forum on Modern Direct Democracy heads to Southern Africa for the first time."
+      }
+    },
+    "etag": "\"1786548839-gzip\"",
+    "last_modified": "Wed, 12 Aug 2026 15:33:59 GMT",
+    "verified": {
+      "cf2c23156ed8eb4d38665bdc204005a7dc4a85f72e6a5fafaece085a06b1b086": true
+    }
+  },
   "https://www.democracyco.com.au/about/": {
     "checked": "2026-08-12",
     "content_hash": "1f3342948b4e4774f63f0a457d7b23029356b55548d19d7eebc0650eb1be368f",
@@ -898,6 +1017,67 @@
     "last_modified": "Wed, 12 Aug 2026 09:50:25 GMT",
     "verified": {
       "292a5491284943180173e19421b4b1906053adf3c0b79e98d2736277bfe08b0a": true
+    }
+  },
+  "https://www.peoplepowered.org/events-content/athens-democracy-forum-2026": {
+    "checked": "2026-08-13",
+    "content_hash": "3b87965af0deaf9932ac9ee22874e190bd31f3f219533bcd6171a4943a40ae7a",
+    "contexts": {
+      "a38f319c15fc154b61a460f9f8afdef8ba9041ec10117f4a88d55970546863a7": {
+        "prefix": "\ud83d\udcc5 September 29 \u2013 October 1, 2026 \ud83d\udccd Athens, Greece \ud83d\udd17 https://www.athensdemocracyforum.com/",
+        "sha256": "3b87965af0deaf9932ac9ee22874e190bd31f3f219533bcd6171a4943a40ae7a",
+        "suffix": ". Organized by the Democracy & Culture Foundation in association with The New York Times , the Forum asks both a philosophical and operational questi",
+        "text": "The Athens Democracy Forum returns for its 14th edition, convening in the Greek capital from 29 September \u2013 1 October 2026 . Organized by the Democracy & Culture Foundation in association with The New York Times , the Forum asks both a philosophical and operational question: Why democracy \u2014 and how must it evolve to be fit for purpose in the 21st century?"
+      }
+    },
+    "etag": "W/\"8d99f3a4fe0bdaae87cbad86870304d8--gzip\"",
+    "last_modified": null,
+    "verified": {
+      "a38f319c15fc154b61a460f9f8afdef8ba9041ec10117f4a88d55970546863a7": true
+    }
+  },
+  "https://www.peoplepowered.org/events-content/gdc-global-forum-2026": {
+    "checked": "2026-08-13",
+    "content_hash": "ef02486981b2b65b203557409510c3c5b53692a15e37691785c348135a3dc4f7",
+    "contexts": {
+      "07265e6c158ad6283a1a87a5c558fbc7620adb41e676a759fcfba3dfce067e87": {
+        "prefix": "vatoire Amphitheater, Greece (hybrid \u2014 livestreamed on Zoom and YouTube) \ud83d\udd17 https://globaldemocracycoalition.org/event/gdc-global-forum-2026/",
+        "sha256": "ef02486981b2b65b203557409510c3c5b53692a15e37691785c348135a3dc4f7",
+        "suffix": "The Forum is conceived not as a traditional conference but as a collective platform for collaboration \u2014 designed to strengthen democratic resilience",
+        "text": "The Global Democracy Coalition will hold its annual Global Forum on 1 October 2026 in Athens, working alongside the Athens Democracy Forum. The Forum is conceived not as a traditional conference but as a collective platform for collaboration \u2014 designed to strengthen democratic resilience by aligning actors, pooling resources and amplifying democratic innovations emerging from different regions."
+      }
+    },
+    "etag": "W/\"2931aa69c55908bee64663c3b706cca2\"",
+    "last_modified": null,
+    "verified": {
+      "07265e6c158ad6283a1a87a5c558fbc7620adb41e676a759fcfba3dfce067e87": true
+    }
+  },
+  "https://www.peoplepowered.org/events-content/oidp-2026": {
+    "checked": "2026-08-13",
+    "content_hash": "2fbb1287958a10cd4aebb9970d93ae112af8864de8608f9d671128f9242fc0dd",
+    "contexts": {
+      "ecde6a2ee95a466cc9941e7950d391dcb400f52e53a0cd759b4a4ed9e0ce40a3": {
+        "prefix": "6 11:00 AM 11:00 krakow Poland (map) Google Calendar ICS",
+        "sha256": "2fbb1287958a10cd4aebb9970d93ae112af8864de8608f9d671128f9242fc0dd",
+        "suffix": ", under the theme \u201cHope and renewal in the face of a global crisis of democracy.\u201d This milestone event invites political leaders, practitioners, acad",
+        "text": "The International Observatory on Participatory Democracy (OIDP) will return for its 25th annual conference in Krak\u00f3w from 21\u201323 September 2026 , under the theme \u201cHope and renewal in the face of a global crisis of democracy.\u201d This milestone event invites political leaders, practitioners, academics and civil society from around the world to reflect on how participatory democracy can respond to pressing global challenges like polarization, climate change, migration and declining trust in democratic institutions \u2014 and how local innovation can inform broader democratic futures."
+      }
+    },
+    "etag": "W/\"e0a4bd94a799160c8dd9cfb74758a84a\"",
+    "last_modified": null,
+    "verified": {
+      "ecde6a2ee95a466cc9941e7950d391dcb400f52e53a0cd759b4a4ed9e0ce40a3": true
+    }
+  },
+  "https://www.peoplepowered.org/events-content/world-forum-for-democracy-2026": {
+    "checked": "2026-08-13",
+    "content_hash": "79f74d7505889ff5938779ab5d4a0ccda14614508a0b857d8d80142b9e2e2658",
+    "contexts": {},
+    "etag": "W/\"14de2b77af13495f07a436ddf3bd2437\"",
+    "last_modified": null,
+    "verified": {
+      "d39140481410db1394c64a21facfdbd7605cc549c80ab12b17c5a38ad308e582": true
     }
   },
   "https://www.peoplepowered.org/news-content/digital-participation-case-study-taiwan": {

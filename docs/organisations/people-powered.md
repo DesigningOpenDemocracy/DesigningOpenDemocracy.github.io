@@ -28,47 +28,51 @@ events:
   title: International Observatory on Participatory Democracy Conference (OIDP 2026)
     — 25th annual, 'Hope and renewal in the face of a global crisis of democracy,'
     Kraków
-  url: https://www.peoplepowered.org/events
-  proof_level: medium
-  url_checked: '2026-08-10'
+  url: https://www.peoplepowered.org/events-content/oidp-2026
+  quote: The International Observatory on Participatory Democracy (OIDP) will return
+    for its 25th annual conference in Kraków from 21–23 September 2026
+  proof_level: high
+  url_checked: '2026-08-13'
   end_date: '2026-09-23'
   notable: false
   type: conference
   location: Kraków, Poland
-  proof_warning: true
   country: PL
 - date: '2026-09-29'
   title: Athens Democracy Forum 2026 — 14th edition, with Kofi Annan NextGen Democracy
     Prize, organized by Democracy & Culture Foundation with New York Times
-  url: https://www.peoplepowered.org/events
-  proof_level: medium
-  url_checked: '2026-08-10'
+  url: https://www.peoplepowered.org/events-content/athens-democracy-forum-2026
+  quote: The Athens Democracy Forum returns for its 14th edition, convening in the
+    Greek capital from 29 September – 1 October 2026
+  proof_level: high
+  url_checked: '2026-08-13'
   notable: false
   type: conference
   location: Athens, Greece
-  proof_warning: true
   country: GR
 - date: '2026-10-01'
   title: Global Democracy Coalition (GDC) Global Forum 2026 — co-located with Athens
     Democracy Forum, hybrid
-  url: https://www.peoplepowered.org/events
-  proof_level: medium
-  url_checked: '2026-08-10'
+  url: https://www.peoplepowered.org/events-content/gdc-global-forum-2026
+  quote: The Global Democracy Coalition will hold its annual Global Forum on 1 October
+    2026 in Athens, working alongside the Athens Democracy Forum.
+  proof_level: high
+  url_checked: '2026-08-13'
   notable: false
   type: conference
   location: Athens, Greece
-  proof_warning: true
   country: GR
 - date: '2026-11-02'
   title: World Forum for Democracy 2026 (Council of Europe) — 14th edition, 'Democratic
     Foresight,' Strasbourg
-  url: https://www.peoplepowered.org/events
-  proof_level: medium
-  url_checked: '2026-08-10'
+  url: https://www.peoplepowered.org/events-content/world-forum-for-democracy-2026
+  quote: The 14th World Forum for Democracy... will take place in Strasbourg from
+    2–4 November 2026 under the theme "Democratic Foresight."
+  proof_level: high
+  url_checked: '2026-08-13'
   notable: false
   type: conference
   location: Strasbourg, France
-  proof_warning: true
   country: FR
 activity:
   dod:

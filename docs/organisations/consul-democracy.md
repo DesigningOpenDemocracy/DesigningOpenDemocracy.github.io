@@ -28,12 +28,11 @@ events:
 - date: '2026-09-15'
   title: ConsulCon 2026 — three-day gathering on digital democracy and open-source
     civic tech, Munich
-  url: https://www.peoplepowered.org/events
-  quote: The CONSUL DEMOCRACY Foundation and the City of Munich host the annual ConsulCon
-    — a three-day gathering on digital democracy, open-source civic technology and
-    democratic empowerment.
+  url: https://consuldemocracy.org/2025/12/consul-conference-2026-munich/
+  quote: The CONSUL DEMOCRACY Foundation in collaboration with the Landeshauptstadt
+    München organises the next ConsulCon on 15-17 September 2026 in München, Germany.
   proof_level: high
-  url_checked: '2026-08-10'
+  url_checked: '2026-08-13'
   end_date: '2026-09-17'
   notable: true
   type: conference

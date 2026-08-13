@@ -107,6 +107,18 @@
     ]
   },
   {
+    "id": "8dff2602",
+    "type": "webpage",
+    "URL": "https://canberra-alliance.org.au/event/2026-capad-agm/",
+    "title": "2026 CAPaD AGM — Annual General Meeting, online via Zoom",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Be part of setting the future for CAPaD for another year."
+      }
+    ]
+  },
+  {
     "id": "cd7d64b7",
     "type": "webpage",
     "URL": "https://canberra-alliance.org.au/event/a-citizens-assembly-for-the-act/",
@@ -114,7 +126,19 @@
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "The ACT Standing Citizens' Assembly (SCA) is a three-year project to build momentum for a trial of well facilitated input from Canberrans to government in the ACT."
+        "quote": "The ACT Standing Citizens’ Assembly (SCA) is a three-year project to build momentum for a trial of well facilitated input from Canberrans to government in the ACT."
+      }
+    ]
+  },
+  {
+    "id": "311d7106",
+    "type": "webpage",
+    "URL": "https://canberra-alliance.org.au/event/community-assembly-following-up-our-mp-asks-for-2026/",
+    "title": "Community Assembly following up MP asks for 2026 — Woden Valley Uniting Church, Curtin ACT",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "This Community Assembly to to give them opportunity to report back to us and for us to respond to their report."
       }
     ]
   },
@@ -126,23 +150,7 @@
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "Event 3 Re-imagining Governance for the ACT — Expanding the ACT Assembly for better government – hosted by CAPaD & Active Democracy Bean"
-      }
-    ]
-  },
-  {
-    "id": "8e983ae1",
-    "type": "webpage",
-    "URL": "https://canberra-alliance.org.au/events/",
-    "title": "2026 CAPaD AGM — Annual General Meeting, online via Zoom",
-    "evidence": [
-      {
-        "type": "quote-match",
-        "quote": "2026 CAPaD AGM"
-      },
-      {
-        "type": "quote-match",
-        "quote": "Community Assembly – following up our MP asks for 2026"
+        "quote": "Event 3 Re-imagining Governance for the ACT: A Public Event Series Expanding the ACT Assembly for better government – is it time? Hosted by CAPaD & Active Democracy Bean"
       }
     ]
   },
@@ -250,6 +258,18 @@
         "quote": "In turn, former Taiwanese Minister without Portfolio Jaclyn Tsai attended a g0v.tw hackathon in December 2014 and asked the volunteers if they could “create a platform for rational discussion and deliberation of policy issues that the entire nation could participate in.”",
         "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+      }
+    ]
+  },
+  {
+    "id": "1b8a5377",
+    "type": "webpage",
+    "URL": "https://consuldemocracy.org/2025/12/consul-conference-2026-munich/",
+    "title": "ConsulCon 2026 — three-day gathering on digital democracy and open-source civic tech, Munich",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "The CONSUL DEMOCRACY Foundation in collaboration with the Landeshauptstadt München organises the next ConsulCon on 15-17 September 2026 in München, Germany."
       }
     ]
   },
@@ -1389,14 +1409,14 @@
     ]
   },
   {
-    "id": "5498452c",
+    "id": "598825f3",
     "type": "webpage",
-    "URL": "https://fidemocracy.org/news",
+    "URL": "https://fidemocracy.org/europe-forum-2026-from-novel-to-normal",
     "title": "FIDE Forum 2026: From Novel to Normal — making deliberation a democratic standard, Vienna",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "FIDE Forum 2026"
+        "quote": "A conference for practitioners, public officials, political parties, NGOs, and funders to move this field from the margins to the mainstream. To build the infrastructure, lift the standards, and create the political will to make it permanent."
       }
     ]
   },
@@ -2212,14 +2232,14 @@
     ]
   },
   {
-    "id": "a331b6d0",
+    "id": "047f4701",
     "type": "webpage",
-    "URL": "https://www.democracy-international.org/events",
+    "URL": "https://www.democracy-international.org/events/2026-global-forum-modern-direct-democracy",
     "title": "2026 Global Forum on Modern Direct Democracy — Gaborone, Botswana",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "2026 Global Forum on Modern Direct Democracy"
+        "quote": "In 2026, the Global Forum on Modern Direct Democracy heads to Southern Africa for the first time."
       }
     ]
   },
@@ -2686,14 +2706,50 @@
     ]
   },
   {
-    "id": "134a6424",
+    "id": "405b3eb8",
     "type": "webpage",
-    "URL": "https://www.peoplepowered.org/events",
-    "title": "ConsulCon 2026 — three-day gathering on digital democracy and open-source civic tech, Munich",
+    "URL": "https://www.peoplepowered.org/events-content/athens-democracy-forum-2026",
+    "title": "Athens Democracy Forum 2026 — 14th edition, with Kofi Annan NextGen Democracy Prize, organized by Democracy & Culture Foundation with New York Times",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "The CONSUL DEMOCRACY Foundation and the City of Munich host the annual ConsulCon — a three-day gathering on digital democracy, open-source civic technology and democratic empowerment."
+        "quote": "The Athens Democracy Forum returns for its 14th edition, convening in the Greek capital from 29 September – 1 October 2026"
+      }
+    ]
+  },
+  {
+    "id": "7ea1f92a",
+    "type": "webpage",
+    "URL": "https://www.peoplepowered.org/events-content/gdc-global-forum-2026",
+    "title": "Global Democracy Coalition (GDC) Global Forum 2026 — co-located with Athens Democracy Forum, hybrid",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "The Global Democracy Coalition will hold its annual Global Forum on 1 October 2026 in Athens, working alongside the Athens Democracy Forum."
+      }
+    ]
+  },
+  {
+    "id": "21567ff2",
+    "type": "webpage",
+    "URL": "https://www.peoplepowered.org/events-content/oidp-2026",
+    "title": "International Observatory on Participatory Democracy Conference (OIDP 2026) — 25th annual, 'Hope and renewal in the face of a global crisis of democracy,' Kraków",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "The International Observatory on Participatory Democracy (OIDP) will return for its 25th annual conference in Kraków from 21–23 September 2026"
+      }
+    ]
+  },
+  {
+    "id": "1a9f0460",
+    "type": "webpage",
+    "URL": "https://www.peoplepowered.org/events-content/world-forum-for-democracy-2026",
+    "title": "World Forum for Democracy 2026 (Council of Europe) — 14th edition, 'Democratic Foresight,' Strasbourg",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "The 14th World Forum for Democracy... will take place in Strasbourg from 2–4 November 2026 under the theme \"Democratic Foresight.\""
       }
     ]
   },

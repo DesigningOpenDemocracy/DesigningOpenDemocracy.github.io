@@ -26,10 +26,10 @@ rss_feed: https://canberra-alliance.org.au/feed
 events:
 - date: '2026-08-23'
   title: 2026 CAPaD AGM — Annual General Meeting, online via Zoom
-  url: https://canberra-alliance.org.au/events/
-  quote: 2026 CAPaD AGM
+  url: https://canberra-alliance.org.au/event/2026-capad-agm/
+  quote: Be part of setting the future for CAPaD for another year.
   proof_level: high
-  url_checked: '2026-08-10'
+  url_checked: '2026-08-13'
   notable: false
   type: meeting
   location: Online via Zoom
@@ -37,10 +37,11 @@ events:
   title: Do more MLAs make for better government? — Re-imagining Governance for the
     ACT public event, Irish Club Weston
   url: https://canberra-alliance.org.au/event/expanding-the-act-assembly-is-it-time/
-  quote: Event 3 Re-imagining Governance for the ACT — Expanding the ACT Assembly
-    for better government – hosted by CAPaD & Active Democracy Bean
+  quote: 'Event 3 Re-imagining Governance for the ACT: A Public Event Series Expanding
+    the ACT Assembly for better government – is it time? Hosted by CAPaD & Active
+    Democracy Bean'
   proof_level: high
-  url_checked: '2026-08-12'
+  url_checked: '2026-08-13'
   notable: true
   type: meetup
   location: Irish Club, Weston ACT
@@ -48,21 +49,22 @@ events:
   title: A Citizens' Assembly for the ACT — three-year project to build momentum for
     a trial of citizen input to ACT government
   url: https://canberra-alliance.org.au/event/a-citizens-assembly-for-the-act/
-  quote: The ACT Standing Citizens' Assembly (SCA) is a three-year project to build
+  quote: The ACT Standing Citizens’ Assembly (SCA) is a three-year project to build
     momentum for a trial of well facilitated input from Canberrans to government in
     the ACT.
   proof_level: high
-  url_checked: '2026-08-12'
+  url_checked: '2026-08-13'
   notable: true
   type: meetup
   location: Irish Club, Weston ACT
 - date: '2026-12-06'
   title: Community Assembly following up MP asks for 2026 — Woden Valley Uniting Church,
     Curtin ACT
-  url: https://canberra-alliance.org.au/events/
-  quote: Community Assembly – following up our MP asks for 2026
+  url: https://canberra-alliance.org.au/event/community-assembly-following-up-our-mp-asks-for-2026/
+  quote: This Community Assembly to to give them opportunity to report back to us
+    and for us to respond to their report.
   proof_level: high
-  url_checked: '2026-08-10'
+  url_checked: '2026-08-13'
   notable: false
   type: assembly
   location: Woden Valley Uniting Church, Curtin ACT

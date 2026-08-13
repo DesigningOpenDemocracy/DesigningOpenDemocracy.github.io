@@ -41,10 +41,11 @@ events:
   country: BG
 - date: '2026-10-07'
   title: 2026 Global Forum on Modern Direct Democracy — Gaborone, Botswana
-  url: https://www.democracy-international.org/events
-  quote: 2026 Global Forum on Modern Direct Democracy
+  url: https://www.democracy-international.org/events/2026-global-forum-modern-direct-democracy
+  quote: In 2026, the Global Forum on Modern Direct Democracy heads to Southern Africa
+    for the first time.
   proof_level: high
-  url_checked: '2026-08-10'
+  url_checked: '2026-08-13'
   end_date: '2026-10-10'
   notable: true
   type: conference
