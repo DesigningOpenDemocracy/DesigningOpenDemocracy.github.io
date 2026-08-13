@@ -1,20 +1,32 @@
 """
 calendar_export.py — MkDocs hook: build the site-wide future-events calendar.
 
-Merges three sources of *future* events into one list at build time (no
+Merges two sources of *future* events into one list at build time (no
 network calls here — see util/sync_events.py for the fetch step that
 populates the cache this reads):
 
-  1. Manually curated `events:` entries in org frontmatter (date >= today)
+  1. Manually curated `events:` entries in org frontmatter (date >= today) —
+     this is also how DOD's own events reach the calendar: DOD is itself a
+     tracked org (designing-open-democracy.md) with its own `events:` list,
+     the same as any other org, so there's no separate "DOD's events" path.
   2. Cached iCal-synced events in docs/data/events/<slug>.json, written by
      util/sync_events.py for orgs with `ics_feed:` set (date >= today)
-  3. DOD's own events, announced via an optional `event_date:` field on any
-     (non-draft) blog post — distinct from `date:` (the post's publish date),
-     since a post is usually written before or after the event it announces,
-     not on the day itself.
+
+A third source — an optional `event_date:` field on blog posts — existed
+briefly but was removed: every blog post that set it was DOD *covering*
+another org's event, not hosting its own, so the same event ended up on
+the calendar twice (once from the org's own `events:` entry, once from
+the post). Confirmed on both posts that had used it — the dates matched
+their subject org's `events:` entry exactly. If DOD ever hosts a genuine
+event of its own, it belongs in designing-open-democracy.md's `events:`,
+same as any org.
 
 Output:
   - docs/calendar.ics       — combined VCALENDAR, downloadable/subscribable
+  - docs/calendar-<CC>.ics  — same, filtered to one ISO 3166-1 country code;
+    one per country actually present, since most calendar apps (Google
+    Calendar included) offer no way to filter a subscribed feed after the
+    fact — CATEGORIES is ignored on import
   - docs/data/events.json   — same data as JSON, for reference/download
   - `calendar_events` Jinja2 global — consumed by docs/overrides/calendar.html
 
@@ -35,18 +47,10 @@ try:
 except ImportError:
     frontmatter = None
 
-try:
-    from pymdownx.slugs import slugify as _pymdownx_slugify
-    _slugify = _pymdownx_slugify(case="lower")
-except ImportError:
-    _slugify = None
-
 DOCS_DIR = os.path.join(os.path.dirname(__file__), "..", "docs")
 ORGS_DIR = os.path.join(DOCS_DIR, "organisations")
-BLOG_POSTS_DIR = os.path.join(DOCS_DIR, "blog", "posts")
 SYNCED_EVENTS_DIR = os.path.join(DOCS_DIR, "data", "events")
 SKIP_FILES = {"organisations.md"}
-DOD_TITLE = "Designing Open Democracy"
 
 # Known recurring CJK event patterns → English translation (for calendar readability)
 _CJK_PATTERNS = [
@@ -193,44 +197,6 @@ def _load_synced_events(today):
                 }
                 _maybe_add_translation(evt, evt["title"], evt["org_title"])
                 out.append(evt)
-    return out
-
-
-def _load_blog_events(today):
-    """DOD's own future events, from `event_date:` on non-draft blog posts.
-
-    The post's URL is computed with the same {date}/{slug} scheme and
-    pymdownx slugify function mkdocs-material's blog plugin uses by default
-    (verified against a real built post) — this hook runs at on_pre_build,
-    before pages have real page.url values to read instead.
-    """
-    if frontmatter is None or _slugify is None:
-        return []
-    out = []
-    for path in sorted(glob.glob(os.path.join(BLOG_POSTS_DIR, "*.md"))):
-        post = frontmatter.load(path)
-        m = post.metadata
-        if m.get("draft"):
-            continue
-        event_d = _parse_date(m.get("event_date"))
-        if not event_d or event_d < today:
-            continue
-        post_d = _parse_date(m.get("date"))
-        if not post_d:
-            continue
-        slug = _slugify(m.get("title", ""), "-")
-        out.append({
-            "date": event_d,
-            "end_date": _parse_date(m.get("event_end_date")),
-            "title": m.get("title", "Untitled post"),
-            "url": f"/blog/{post_d:%Y/%m/%d}/{slug}/",
-            "org_slug": "",
-            "org_title": DOD_TITLE,
-            "source": "blog",
-            "notable": bool(m.get("event_notable")),
-            "logo": "/assets/dodlogo_transparent.png",
-            "country": "AU",
-        })
     return out
 
 
