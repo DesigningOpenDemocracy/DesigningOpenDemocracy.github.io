@@ -116,14 +116,22 @@ The invariants recorded there are not immutable. Any document in this repo — i
     email: info@example.org
     phone: "+61 2 xxxx xxxx"   # quote phone numbers — a leading + or 0 breaks unquoted YAML
     form: https://example.org/contact      # public contact-form page, when there's no email to record
+    channels:                              # any other contact/social channel — deliberately open-ended
+      - type: telegram
+        url: https://t.me/joinchat/...
+        label: Telegram                    # optional; defaults to type capitalized
+        note: main point of contact        # optional
+      - type: instagram
+        url: https://instagram.com/example
     source: https://example.org/contact    # page the info was found on
     checked: 2026-07-24                    # date it was last verified
     note: "Click the Contact Us button to reveal the email address"  # optional hint for non-obvious contact points
   ```
   - Prefer general `info@` / `contact@` / `hello@` addresses over named individuals; only use a named person's address if it's the org's sole/designated general contact channel.
   - `form:` is a fallback for orgs whose only public contact channel is a web form (no address published anywhere) — a link to that contact-form page. Not mutually exclusive with `email:`, but mainly useful when there's no email to record.
-  - `note:` — optional. A short hint for future checkers or visitors when the contact point isn't obvious (e.g. a JS popup button, a footer block, a mirror site, a specific sub-page to navigate to). Not for general notes; only use when someone would otherwise miss the contact channel.
-  - Omit `email`/`phone`/`form`/`note` individually if not needed — don't fabricate or guess. If nothing is publicly published, omit the whole `contact:` block rather than adding an empty one.
+  - `channels:` — optional list, for any contact/social channel that isn't email/phone/form: Telegram, Discord, Signal, Mastodon, Instagram, WhatsApp, etc. Deliberately a flat `{type, url, label, note}` list rather than one named field per platform, so a new channel type never needs a schema change. `type` is a free-text lowercase slug (used as the fallback rendered label, capitalized, when `label:` is omitted); `url` is required; `label:` and `note:` are both optional (`note:` renders inline next to the link, e.g. "— main point of contact"). Rendered by `organisation.html` alongside email/phone/form; exported as `contact_channels` in the CSV (`type:url` pairs, `; `-joined) and JSON data exports.
+  - `note:` (top-level, not per-channel) — optional. A short hint for future checkers or visitors when the contact point isn't obvious (e.g. a JS popup button, a footer block, a mirror site, a specific sub-page to navigate to). Not for general notes; only use when someone would otherwise miss the contact channel.
+  - Omit `email`/`phone`/`form`/`channels`/`note` individually if not needed — don't fabricate or guess. If nothing is publicly published, omit the whole `contact:` block rather than adding an empty one.
 - `activity:` — optional dict of evidence sources, each keyed by method name. The build hook
   (`hooks/activity_selector.py`) picks the best entry for display using a priority order and
   per-source staleness thresholds.

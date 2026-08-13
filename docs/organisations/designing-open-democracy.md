@@ -5,6 +5,14 @@ status: active
 country: AU
 website: https://www.designingopendemocracy.com
 logo: /assets/dodlogo_transparent.png
+contact:
+  channels:
+  - type: telegram
+    url: https://t.me/joinchat/HNk_UBX8A7jBPJPbAZU5Zg
+    label: Telegram
+    note: main point of contact; day-to-day discussion and coordination
+  source: https://www.designingopendemocracy.com
+  checked: '2026-08-13'
 summary: An Australian-operated, nonpartisan forum of process engineers, social architects,
   and philosophers exploring how technology, engineering, and social-systems design
   can improve democracy — running since December 2016. This is DOD's own site, so

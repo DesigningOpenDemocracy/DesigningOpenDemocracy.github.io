@@ -65,6 +65,7 @@ def load_orgs():
             "contact_email": (m.get("contact") or {}).get("email", ""),
             "contact_phone": (m.get("contact") or {}).get("phone", ""),
             "contact_form": (m.get("contact") or {}).get("form", ""),
+            "contact_channels": (m.get("contact") or {}).get("channels") or [],
         })
     return orgs
 
@@ -82,13 +83,15 @@ def write_orgs_csv(orgs):
     fields = ["slug", "title", "status", "country", "type", "website", "logo",
               "summary", "concepts", "latitude", "longitude", "location_name",
               "rss_feed", "ics_feed", "contact_email", "contact_phone", "contact_form",
-              "activity_date", "activity_method", "last_checked"]
+              "contact_channels", "activity_date", "activity_method", "last_checked"]
     with open(path, "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=fields, extrasaction="ignore")
         w.writeheader()
         for o in orgs:
             row = dict(o)
             row["concepts"] = ",".join(o["concepts"])
+            row["contact_channels"] = "; ".join(
+                f"{c.get('type', '')}:{c.get('url', '')}" for c in o["contact_channels"])
             row["activity_date"], row["activity_method"] = _best_activity(o["activity"])
             w.writerow(row)
 

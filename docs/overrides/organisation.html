@@ -77,7 +77,7 @@
         </td>
       </tr>
       {%- endif %}
-      {%- if page.meta.contact and (page.meta.contact.email or page.meta.contact.phone or page.meta.contact.form) %}
+      {%- if page.meta.contact and (page.meta.contact.email or page.meta.contact.phone or page.meta.contact.form or page.meta.contact.channels) %}
       <tr>
         <th>Contact</th>
         <td>
@@ -86,6 +86,10 @@
           {%- if page.meta.contact.phone %}{{ page.meta.contact.phone }}{%- endif %}
           {%- if page.meta.contact.form and (page.meta.contact.email or page.meta.contact.phone) %}<br>{%- endif %}
           {%- if page.meta.contact.form %}<a href="{{ page.meta.contact.form }}" target="_blank" rel="noopener">Contact form ↗</a>{%- endif %}
+          {%- for ch in page.meta.contact.channels or [] %}
+          {%- if not loop.first or page.meta.contact.email or page.meta.contact.phone or page.meta.contact.form %}<br>{%- endif %}
+          <a href="{{ ch.url }}" target="_blank" rel="noopener">{{ ch.label or ch.type | capitalize }} ↗</a>{% if ch.note %} — {{ ch.note }}{% endif %}
+          {%- endfor %}
         </td>
       </tr>
       {%- endif %}
