@@ -50,6 +50,57 @@
       "25d546fb9449c1380fed6e2ecf84a9706dc54f4f4af5a075ca0c658537c6dc92": true
     }
   },
+  "https://deliberabrasil.org/projetos/assembleias-cidadas-de-mocambique-sobre-as-mudancas-climaticas/": {
+    "checked": "2026-08-13",
+    "content_hash": "c43016d6dd7a4d33c03f2818c4b80d16abf00ed4209bdf2f901fc6f24d8d5e03",
+    "contexts": {
+      "c43016d6dd7a4d33c03f2818c4b80d16abf00ed4209bdf2f901fc6f24d8d5e03": {
+        "prefix": "ica\u00e7\u00f5es Gloss\u00e1rio Nosso trabalho Assembleias Cidad\u00e3s de Mo\u00e7ambique sobre as mudan\u00e7as clim\u00e1ticas",
+        "sha256": "c43016d6dd7a4d33c03f2818c4b80d16abf00ed4209bdf2f901fc6f24d8d5e03",
+        "suffix": "O Governo da Rep\u00fablica de Mo\u00e7ambique iniciou, em janeiro de 2026, a implementa\u00e7\u00e3o do projeto Assembleias Cidad\u00e3s , uma iniciativa in\u00e9dita volta",
+        "text": "Di\u00e1logo p\u00fablico sobre resili\u00eancia clim\u00e1tica e uso de recursos naturais"
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "c43016d6dd7a4d33c03f2818c4b80d16abf00ed4209bdf2f901fc6f24d8d5e03": true
+    }
+  },
+  "https://deliberabrasil.org/projetos/primeira-assembleia-cidada-sobre-o-clima-em-cidades-amazonicas/": {
+    "checked": "2026-08-13",
+    "content_hash": "a8db8360d685d604a3fed6be87d71c9129d4c97e91df86839ce47dae15e7d199",
+    "contexts": {
+      "8cddf10ae615f630fb1a91f8c2fb1ee7ee0f1dda0debcf1bc945b6d06449f91e": {
+        "prefix": "com o apoio de especialistas e organiza\u00e7\u00f5es reconhecidas pelo trabalho na regi\u00e3o, entre as cidades de Macap\u00e1 (AM), Bujaru (PA) e Salvaterra (PA).",
+        "sha256": "a8db8360d685d604a3fed6be87d71c9129d4c97e91df86839ce47dae15e7d199",
+        "suffix": ", sua hist\u00f3ria remonta a 1943, completou 80 anos em 2023. Situada no estado, na regi\u00e3o Norte do Brasil, \u00e9 um munic\u00edpio que faz parte da Regi\u00e3o",
+        "text": "O munic\u00edpio selecionado foi Bujaru, no Par\u00e1 , sua hist\u00f3ria remonta a 1943, completou 80 anos em 2023."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "8cddf10ae615f630fb1a91f8c2fb1ee7ee0f1dda0debcf1bc945b6d06449f91e": true
+    }
+  },
+  "https://deliberabrasil.org/sobre/": {
+    "checked": "2026-08-13",
+    "content_hash": "7463aa298a7d3703f3c2e36ccc8e12b0f02ea4f7ebb2edd03e9c640eadb73f66",
+    "contexts": {
+      "7463aa298a7d3703f3c2e36ccc8e12b0f02ea4f7ebb2edd03e9c640eadb73f66": {
+        "prefix": "elibera Brasil Como funciona? Nosso trabalho M\u00eddia e Publica\u00e7\u00f5es Gloss\u00e1rio O Delibera Brasil",
+        "sha256": "7463aa298a7d3703f3c2e36ccc8e12b0f02ea4f7ebb2edd03e9c640eadb73f66",
+        "suffix": "A Delibera\u00e7\u00e3o Cidad\u00e3 \u00e9 uma forma de participa\u00e7\u00e3o pol\u00edtica que se integra aos processos democr\u00e1ticos de tomada de decis\u00e3o, possibilitando que ci",
+        "text": "O Coletivo Delibera Brasil \u00e9 uma organiza\u00e7\u00e3o sem fins lucrativos e suprapartid\u00e1ria que objetiva contribuir para o fortalecimento e aprofundamento da democracia brasileira, promovendo a Delibera\u00e7\u00e3o Cidad\u00e3, principalmente a partir de uma metodologia de a\u00e7\u00e3o conhecida como Minip\u00fablico."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "7463aa298a7d3703f3c2e36ccc8e12b0f02ea4f7ebb2edd03e9c640eadb73f66": true
+    }
+  },
   "https://democracy-technologies.org/participation/consensus-building-in-taiwan/": {
     "checked": "2026-08-12",
     "content_hash": "640700c8d55ff5c4c7db97b39b78ebafa5f3de60e5ef2550497d23e9973bfa0b",

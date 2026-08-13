@@ -242,14 +242,26 @@
     ]
   },
   {
-    "id": "7d18fede",
+    "id": "2fb9ace3",
     "type": "webpage",
-    "URL": "https://deliberabrasil.org/",
+    "URL": "https://deliberabrasil.org/projetos/assembleias-cidadas-de-mocambique-sobre-as-mudancas-climaticas/",
+    "title": "Assembleias Cidadãs de Moçambique — climate resilience assemblies launched in Mozambique",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Diálogo público sobre resiliência climática e uso de recursos naturais"
+      }
+    ]
+  },
+  {
+    "id": "235f8aba",
+    "type": "webpage",
+    "URL": "https://deliberabrasil.org/projetos/primeira-assembleia-cidada-sobre-o-clima-em-cidades-amazonicas/",
     "title": "Climate Assemblies of Pará launched — citizen deliberation in the Amazon on climate policy",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "Primeira Assembleia Cidadã sobre o Clima em Cidades Amazônicas: Bujaru. O município selecionado foi Bujaru, no Pará."
+        "quote": "O município selecionado foi Bujaru, no Pará"
       }
     ]
   },

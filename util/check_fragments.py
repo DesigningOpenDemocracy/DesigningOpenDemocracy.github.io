@@ -468,7 +468,15 @@ def main():
                         help="Only check event evidence (skip footnotes)")
     args = parser.parse_args()
 
-    cache = {} if args.no_cache else load_cache()
+    # Always start from the committed cache, even with --no-cache: that flag
+    # means "don't use cached data to answer *this run's* checks" (handled
+    # per-URL via use_cache= below, which check_evidence() already respects),
+    # not "discard the cache file." save_cache() at the end writes this same
+    # dict back out — starting from {} here silently dropped every entry not
+    # touched by this run's (possibly --slug-narrowed) evidence set, which
+    # wiped ~500 unrelated cached entries the one time this was run with
+    # --no-cache --slug together.
+    cache = load_cache()
 
     evidence_items = collect_evidence(args)
 
