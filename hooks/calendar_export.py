@@ -204,6 +204,31 @@ def _ics_escape(s):
     return (s or "").replace("\\", "\\\\").replace(",", "\\,").replace(";", "\\;").replace("\n", "\\n")
 
 
+def _fold_line(line, limit=75):
+    """RFC 5545 §3.1 line folding: a content line MUST NOT exceed 75 octets
+    (excluding the line break); longer lines are split across multiple
+    physical lines, each continuation prefixed with a single leading space.
+    Google Calendar's importer is strict about this — several event
+    SUMMARY/URL lines here run past 75 octets unfolded (confirmed up to 220),
+    and multi-byte UTF-8 titles (e.g. g0v's Chinese-language event names)
+    make a naive octet split even more likely to corrupt a character, so
+    splits are only made on whole-character boundaries."""
+    encoded = line.encode("utf-8")
+    if len(encoded) <= limit:
+        return line
+    segments = []
+    start = 0
+    seg_limit = limit
+    while start < len(encoded):
+        end = min(start + seg_limit, len(encoded))
+        while end < len(encoded) and (encoded[end] & 0xC0) == 0x80:
+            end -= 1
+        segments.append(encoded[start:end].decode("utf-8"))
+        start = end
+        seg_limit = limit - 1  # continuation lines carry a leading space
+    return "\r\n ".join(segments)
+
+
 _TIME_RE = re.compile(r'^([01]?\d|2[0-3]):([0-5]\d)$')
 
 
@@ -274,7 +299,7 @@ def _write_ics(events, path, calname="Designing Open Democracy — Democracy Lan
         lines.append("END:VEVENT")
     lines.append("END:VCALENDAR")
     with open(path, "w", encoding="utf-8") as f:
-        f.write("\r\n".join(lines) + "\r\n")
+        f.write("\r\n".join(_fold_line(l) for l in lines) + "\r\n")
 
 
 def on_pre_build(config):
