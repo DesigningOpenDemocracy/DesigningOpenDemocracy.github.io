@@ -915,6 +915,22 @@
       "8532e801a42b444e919d4e9f4afccc5d251d885d2c9ea702ea61f5fc604ed2dd": true
     }
   },
+  "https://en.wikipedia.org/wiki/None_of_the_Above_Direct_Democracy_Party": {
+    "checked": "2026-08-14",
+    "content_hash": "84e11fc34139c5579da4d9ed902047cd84450d066ee3f710d18ca97c09a0ec21",
+    "contexts": {
+      "16a8b351783ca878593324112687fbf9b85400977cf9cf965926ec24d3b43553": {
+        "prefix": "t bound by party control and who truly can represent their constituents first\". It supports the use of referendums, term limits and recall elections.",
+        "sha256": "5b8e3a0f9a5b10c12a0fc1a8cf0a3845b5b9eedaa8f0cb7ae88e869168f5738d",
+        "suffix": ": Vezina ran in Mississauga\u2014Erindale, Vezina's wife Kathleen ran in Mississauga\u2014Brampton South, Vezina's son Alexander ran in Mississauga\u2014Streetsville"
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "16a8b351783ca878593324112687fbf9b85400977cf9cf965926ec24d3b43553": true
+    }
+  },
   "https://en.wikipedia.org/wiki/Occupy_Wall_Street": {
     "checked": "2026-08-14",
     "content_hash": "68b2e5a328236f23b0e34b6d94b821a66b8345307a7da6625af82fb59495a078",
@@ -1466,6 +1482,37 @@
     "last_modified": null,
     "verified": {
       "b35cb545be320c9010dd6960da99a334f68b1a7029ef88ed5399780127231fcb": true
+    }
+  },
+  "https://nzccl.org.nz/the-founding-and-early-history-of-the-new-zealand-council-for-civil-liberties/": {
+    "checked": "2026-08-14",
+    "content_hash": "d4e2ebe748cba11d3ced15eef040817d6bfe7924ee23dd559ab4816d06188914",
+    "contexts": {
+      "8e084c12bcab769645770faa497d67aa3ca99a98c439ff59cd46b6160d81b47c": {
+        "prefix": "at something coming out of East Germany or one of the other Soviet satellites. Founding of the Canterbury Civil Liberties Union \u2013 (1954)",
+        "sha256": "d4e2ebe748cba11d3ced15eef040817d6bfe7924ee23dd559ab4816d06188914",
+        "suffix": "As with the founding of the Council in 1952, the Police Special Branch had a person attending the founding meeting and reporting on it. In the",
+        "text": "Papers in the Police Special Branch file revealed that the Canterbury Civil Liberties Union was founded in 1954. As with the founding of the Council in 1952, the Police Special Branch had a person attending the founding meeting and reporting on it."
+      },
+      "eb70f62623f15e1cf4a26d5b4ff0ee73fe38518887f0444c959870e97ffffbe8": {
+        "prefix": "eting Chaired by Sir Thomas Hunter in June 1952 to Look at Setting up an Organisation to Defend and Enlarge Upon Civil Liberties in New Zealand",
+        "sha256": "eb70f62623f15e1cf4a26d5b4ff0ee73fe38518887f0444c959870e97ffffbe8",
+        "suffix": "From that meeting a group was charged with developing a draft Constitution and reporting back to a further public meeting on 18 August 1952.",
+        "text": "Concern culminated in June 1952 when Sir Thomas Hunter, who could hardly be described as a dangerous radical, convened a public meeting of concerned citizens, many of whom were academics from Victoria University, around the setting up of an organisation to protect and, if possible, enlarge civil liberties in New Zealand."
+      },
+      "ffb69a431c7b59f8322c88c4d513f07e59b7d1b53ea1ccb463382ff4623cd903": {
+        "prefix": "From that meeting a group was charged with developing a draft Constitution and reporting back to a further public meeting on 18 August 1952.",
+        "sha256": "ffb69a431c7b59f8322c88c4d513f07e59b7d1b53ea1ccb463382ff4623cd903",
+        "suffix": "At this meeting the draft Constitution was tabled and a committee elected. The committee was comprised of some people who were or became",
+        "text": "Committee Reported Back at a Meeting on 18 August 1952 at Which the NZCCL was Founded"
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "8e084c12bcab769645770faa497d67aa3ca99a98c439ff59cd46b6160d81b47c": true,
+      "eb70f62623f15e1cf4a26d5b4ff0ee73fe38518887f0444c959870e97ffffbe8": true,
+      "ffb69a431c7b59f8322c88c4d513f07e59b7d1b53ea1ccb463382ff4623cd903": true
     }
   },
   "https://oaf.org.au/2009/07/07/announcing-the-openaustralia-foundation/": {

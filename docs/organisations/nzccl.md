@@ -21,6 +21,31 @@ location:
   longitude: 174.7762
   name: Wellington, New Zealand
   precision: city
+events:
+- date: '1952-06-01'
+  title: Sir Thomas Hunter convened a public meeting on setting up a civil liberties
+    organisation
+  url: https://nzccl.org.nz/the-founding-and-early-history-of-the-new-zealand-council-for-civil-liberties/
+  quote: Concern culminated in June 1952 when Sir Thomas Hunter, who could hardly
+    be described as a dangerous radical, convened a public meeting of concerned citizens,
+    many of whom were academics from Victoria University, around the setting up of
+    an organisation to protect and, if possible, enlarge civil liberties in New Zealand.
+  proof_level: high
+  url_checked: '2026-08-14'
+- date: '1952-08-18'
+  title: NZCCL founded at a follow-up committee meeting
+  url: https://nzccl.org.nz/the-founding-and-early-history-of-the-new-zealand-council-for-civil-liberties/
+  quote: Committee Reported Back at a Meeting on 18 August 1952 at Which the NZCCL
+    was Founded
+  proof_level: high
+  url_checked: '2026-08-14'
+- date: '1954-01-01'
+  title: Canterbury Civil Liberties Union founded as a regional branch
+  url: https://nzccl.org.nz/the-founding-and-early-history-of-the-new-zealand-council-for-civil-liberties/
+  quote: Papers in the Police Special Branch file revealed that the Canterbury Civil
+    Liberties Union was founded in 1954.
+  proof_level: high
+  url_checked: '2026-08-14'
 activity:
   dod:
     checked: 2026-08-09

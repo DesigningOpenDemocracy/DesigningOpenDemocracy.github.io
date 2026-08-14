@@ -24,6 +24,20 @@ location:
   name: Ontario, Canada
   precision: city
 rss_feed: https://nota.ca/feed
+events:
+- date: '2014-01-01'
+  title: Founded by Greg Vezina, disillusioned with the major parties
+  url: https://en.wikipedia.org/wiki/None_of_the_Above_Direct_Democracy_Party
+  quote: was founded in 2014 by Greg Vezina in response to his disillusionment with
+    the current major political parties
+  proof_level: high
+  url_checked: '2026-08-14'
+- date: '2014-01-01'
+  title: Fielded candidates in eight ridings in its first provincial election
+  url: https://en.wikipedia.org/wiki/None_of_the_Above_Direct_Democracy_Party
+  quote: NOTA nominated candidates in eight ridings in the 2014 provincial election
+  proof_level: high
+  url_checked: '2026-08-14'
 activity:
   manual:
     checked: 2026-06-07
