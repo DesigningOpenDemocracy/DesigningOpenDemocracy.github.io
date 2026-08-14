@@ -17,7 +17,7 @@ Stdlib `unittest` regression coverage for the citation-verification tooling (`ut
 ```
 python -m unittest discover tests   # or: just test
 ```
-Wired into CI (`.github/workflows/build.yml`) as its own step, before the build/lint jobs. Covers the pure functions in `text_fragment.py` (`normalize_ws`, `find_span`, `quote_matches`, `_split_ellipsis`, `make_text_fragment`/`add_fragment_to_url`/`with_fragment`, `spacing_autofix`, `closest_match_hint`, footnote parsing) directly, plus the I/O-adjacent parts of `check_fragments.py` via fixture files in a tempdir: `paragraph_hash` (regression test for the offset-drift bug — see its docstring), `wikipedia_title` (including the non-English-subdomain regression), `write_quote_fix`/`_write_quote_fix_yaml` (the plain-scalar and YAML-scalar success paths, plus all three refusal cases: no frontmatter, ambiguous quote across events, non-canonical existing frontmatter), and `collect_evidence`'s `--slug` filtering (the exact `--slug a --slug b` regression from 2026-08-14 — see the "Utility scripts" `check_fragments.py` entry below). When adding new verification logic to either file, add a test alongside it rather than validating by hand-running against real org files — see issue #155 for the motivating history of bugs this would have caught.
+Wired into CI (`.github/workflows/build.yml`) as its own step, before the build/lint jobs. Covers the pure functions in `text_fragment.py` (`normalize_ws`, `find_span`, `quote_matches`, `_split_ellipsis`, `make_text_fragment`/`add_fragment_to_url`/`with_fragment`, `spacing_autofix`, `closest_match_hint`, footnote parsing) directly, plus the I/O-adjacent parts of `check_fragments.py` via fixture files in a tempdir: `paragraph_hash` (regression test for the offset-drift bug — see its docstring), `wikipedia_title` (including the non-English-subdomain regression), `write_quote_fix`/`_write_quote_fix_yaml` (the plain-scalar and YAML-scalar success paths, plus all three refusal cases: no frontmatter, ambiguous quote across events, non-canonical existing frontmatter), and `collect_evidence`'s `--slug` filtering (the exact `--slug a --slug b` regression from 2026-08-14 — see the "Utility scripts" `check_fragments.py` entry below). Also covers `util/report_tracking_issue.py`: `build_issue_body`/`is_actionable` directly (pure formatting), and `sync_issue`/`find_existing_issue` against a mocked `requests.Session` (no real API calls) — verifying the create/update/close/reopen/no-op decision table, including the "zero write calls on an already-clean, already-closed run" case that's the point of that script's API-frugality design. When adding new verification logic to any of these files, add a test alongside it rather than validating by hand-running against real org files — see issue #155 for the motivating history of bugs this would have caught.
 
 ## Known Watch Items
 
@@ -501,6 +501,7 @@ These are linked from the bottom of the org index table for researcher download.
   python util/check_fragments.py --footnotes-only  # only check footnote evidence
   python util/check_fragments.py --events-only     # only check event evidence (original behaviour)
   python util/check_fragments.py --autofix-spaces  # rewrite spacing-only MISMATCHes in place
+  python util/check_fragments.py --report /tmp/fragments-report.json  # also write a JSON findings summary
   ```
   - **`--autofix-spaces`** — fixes MISMATCHes whose only differences from the live page
     are space runs (em-dash spacing, stray spaces): rewrites the stored `quote:` in the
@@ -534,6 +535,17 @@ These are linked from the bottom of the org index table for researcher download.
   python util/check_event_urls.py                  # check all event URLs
   python util/check_event_urls.py --slug mosaiclab  # single org
   python util/check_event_urls.py --timeout 8       # per-request timeout
+  python util/check_event_urls.py --report /tmp/urls-report.json  # also write a JSON findings summary
+  ```
+
+- `util/report_tracking_issue.py` — closes the loop on the two report-only checks above: reads their `--report` JSON output and creates/updates **one persistent GitHub issue** ("Citation verification tracking") summarizing current MISMATCH/AMBIGUOUS/fetch-error/DEAD findings, so drift is visible without anyone reading the weekly Action log. Purely mechanical formatting — no LLM, no judgment calls. Wired into `.github/workflows/heartbeat-probes.yml` (needs `issues: write` permission) as the step right after the two report-only checks, using the workflow's own `GITHUB_TOKEN`. Deliberately conservative about GitHub API traffic and repo-watcher noise: one GET to find the issue by exact title (no label dependency), then at most one POST/PATCH; **edits the same issue's body in place every run, never posts a comment**; makes **zero write calls** on a clean run with no pre-existing issue or an already-closed one — the issue only opens/closes on an actual state transition, not every clean week. `BLOCKED`/`REDIRECT` findings are listed under a separate "Informational" section and don't by themselves keep the issue open (too prone to false positives — see the `check_event_urls.py` entry above). A missing `--report` file (the check step crashed before writing one) is treated as **actionable**, not as "zero findings" — otherwise a real failure could look like a clean sweep and wrongly close the tracking issue.
+  ```
+  python util/report_tracking_issue.py --fragments-report /tmp/fragments-report.json \
+      --urls-report /tmp/urls-report.json --dry-run   # preview the issue body locally, no API calls
+
+  # In CI (GITHUB_REPOSITORY / GITHUB_TOKEN read from the environment):
+  python util/report_tracking_issue.py --fragments-report /tmp/fragments-report.json \
+      --urls-report /tmp/urls-report.json
   ```
 
 - `util/reorder_frontmatter.py` — enforces the canonical frontmatter field ordering documented above (org top-level keys, `events:` sub-keys, `activity:` sub-keys). Local/offline, part of `make build`'s pre-push checklist and CI. The pre-commit hook (`.githooks/pre-commit`) runs this automatically on staged org pages, so `--check` failing locally usually means the hook isn't installed — see the note at the top of this file.

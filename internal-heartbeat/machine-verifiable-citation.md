@@ -313,6 +313,32 @@ only if a concrete downstream consumer actually needs it.
   non-English-subdomain bugs referenced elsewhere in this changelog, and
   the pure functions in `text_fragment.py`. See `CLAUDE.md`'s "Tests"
   section for how to run it.
+- **2026-08-14:** Closed a gap this changelog itself kept surfacing:
+  `check_fragments.py`/`check_event_urls.py` are report-only in the
+  weekly cron (`continue-on-error`, no CI gate — network-dependent
+  verification deliberately can't block the offline build), which meant
+  citation drift could sit undetected for a week or more with nothing but
+  an Action log to notice it. Both scripts gained a `--report PATH` flag
+  writing a JSON findings summary (mismatches/ambiguous/fetch-errors;
+  dead/blocked/redirected/errored URLs). New `util/report_tracking_issue.py`
+  reads those and keeps one persistent GitHub issue ("Citation
+  verification tracking") in sync — pure mechanical counting/formatting,
+  no LLM. Deliberately frugal with the GitHub API and repo-watcher
+  attention: one GET to find the issue (by title, not a label), at most
+  one POST/PATCH, body edited in place every run rather than a growing
+  comment thread, and zero write calls on a clean run against an
+  already-closed (or nonexistent) issue — it only opens/closes on an
+  actual state transition. `BLOCKED`/`REDIRECT` render as informational
+  and don't gate the issue's open/closed state, given how often `BLOCKED`
+  in particular is a false positive (see the `check_event_urls.py`
+  changelog note above this one). A missing `--report` file (the check
+  step crashed) is treated as actionable, not as "zero findings" — a
+  silent crash must never look identical to a clean sweep. Wired into
+  `.github/workflows/heartbeat-probes.yml` right after the two
+  report-only steps, with `issues: write` added to that job's
+  permissions. `build_issue_body`/`is_actionable`/`sync_issue` are
+  covered by `tests/test_report_tracking_issue.py` (the API calls are
+  exercised against a mocked `requests.Session`, never a real one).
 
 ---
 

@@ -570,6 +570,12 @@ def main():
                              "rewritten via a frontmatter re-serialization that "
                              "keeps canonical ordering. Writes to source files, "
                              "so run it on a reviewable branch, not in the cron.")
+    parser.add_argument("--report", type=str, default=None,
+                        help="Write a JSON summary of findings to this path "
+                             "(mismatches/ambiguous/fetch-errors, with counts) "
+                             "for automated tracking — see "
+                             "util/report_tracking_issue.py. Purely additive: "
+                             "never changes stdout or the exit code.")
     args = parser.parse_args()
 
     # Always start from the committed cache, even with --no-cache: that flag
@@ -595,6 +601,9 @@ def main():
     wayback_failed = 0
     by_kind = {"event": {"good": 0, "bad": 0, "errors": 0},
                "footnote": {"good": 0, "bad": 0, "errors": 0}}
+    report_mismatches = []
+    report_ambiguous = []
+    report_fetch_errors = []
 
     for url, evidence, source_label, kind, path in evidence_items:
         result, unchanged_hit, error, ambiguous, hint, page_text = check_evidence(
@@ -617,6 +626,7 @@ def main():
         if error:
             errors += 1
             by_kind[kind]["errors"] += 1
+            report_fetch_errors.append({"source": source_label, "url": url, "error": error})
             print("  FETCH ERROR  " + source_label)
             print("               " + url + "  (" + error + ")")
             continue
@@ -629,6 +639,7 @@ def main():
             by_kind[kind]["good"] += 1
             if ambiguous:
                 ambiguous_count += 1
+                report_ambiguous.append({"source": source_label, "url": url, "evidence": evidence[:200]})
                 print("  AMBIGUOUS  " + source_label)
                 print("             quote occurs more than once on the page")
                 print("             evidence: " + evidence[:80])
@@ -661,6 +672,7 @@ def main():
                     autofix_pending += 1
             bad += 1
             by_kind[kind]["bad"] += 1
+            report_mismatches.append({"source": source_label, "url": url, "evidence": evidence[:200]})
             print("  MISMATCH  " + source_label)
             print("            evidence: " + evidence[:80])
             print("            url: " + url)
@@ -693,6 +705,18 @@ def main():
     if args.save_to_wayback:
         print("Wayback Machine: " + str(wayback_saved) + " saved, " +
               str(wayback_failed) + " failed")
+
+    if args.report:
+        with open(args.report, "w", encoding="utf-8") as f:
+            json.dump({
+                "generated": date.today().isoformat(),
+                "counts": {"good": good, "bad": bad, "errors": errors,
+                           "ambiguous": ambiguous_count},
+                "mismatches": report_mismatches,
+                "ambiguous": report_ambiguous,
+                "fetch_errors": report_fetch_errors,
+            }, f, indent=2)
+            f.write("\n")
 
     if bad:
         print("\n" + str(bad) + " piece(s) of evidence no longer match their live source.")
