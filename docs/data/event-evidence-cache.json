@@ -1180,19 +1180,19 @@
   },
   "https://www.prsa.org.au/qn/50.html": {
     "checked": "2026-08-14",
-    "content_hash": "21a6ff61c1d8774f0c70591d5e2d388ec48d7fce83c9212e927c10c3489a2a86",
+    "content_hash": "ce1168e2bc40800294529f13952aeb5557b4389b17fae9fc4a6d7b9b2f8ed196",
     "contexts": {
-      "928ae9dcbc176a692825a81c389102465580621ec4e68835c77eddbd324a3f56": {
+      "620a3b1a8bb77047003e8ca623579b0f716d6c554ad14a23096d12a75cbdb0eb": {
         "prefix": "ns) Bill 1988 Past issues of Quota Notes Death of PRSA Founding President (1982-85)",
-        "sha256": "21a6ff61c1d8774f0c70591d5e2d388ec48d7fce83c9212e927c10c3489a2a86",
+        "sha256": "ce1168e2bc40800294529f13952aeb5557b4389b17fae9fc4a6d7b9b2f8ed196",
         "suffix": "Many members of the Society knew Jack well as a humorous and good-natured man of great intellect and humanity, who, for more than 40 years, wrote abo",
-        "text": "On 13th May 1988, Mr J.F.H.Wright , who was instrumental in establishing the Society as a nation-wide body, died after a brief illness. Many members of the Society knew Jack well as a humorous and good-natured man of great intellect and humanity, who, for more than 40 years, wrote about and campaigned for the adoption and improvement of Proportional Representation for the election of parliaments, councils and committees. Much of Jack's spare time and retirement had been devoted to the cause of electoral reform through PR. By his tireless efforts in writing and publishing on the subject, and in providing expert advice on the system's advantages to those seeking it (and to some that didn't, but needed to know), Jack probably did more to advance the cause of PR than any other single Australian in the 20th Century."
+        "text": "On 13th May 1988, Mr J.F.H.Wright, who was instrumental in establishing the Society as a nation-wide body, died after a brief illness. Many members of the Society knew Jack well as a humorous and good-natured man of great intellect and humanity, who, for more than 40 years, wrote about and campaigned for the adoption and improvement of Proportional Representation for the election of parliaments, councils and committees. Much of Jack's spare time and retirement had been devoted to the cause of electoral reform through PR. By his tireless efforts in writing and publishing on the subject, and in providing expert advice on the system's advantages to those seeking it (and to some that didn't, but needed to know), Jack probably did more to advance the cause of PR than any other single Australian in the 20th Century."
       }
     },
     "etag": null,
     "last_modified": "Mon, 04 May 2020 08:19:48 GMT",
     "verified": {
-      "928ae9dcbc176a692825a81c389102465580621ec4e68835c77eddbd324a3f56": true
+      "620a3b1a8bb77047003e8ca623579b0f716d6c554ad14a23096d12a75cbdb0eb": true
     }
   },
   "https://www.radicalxchange.org/about/": {

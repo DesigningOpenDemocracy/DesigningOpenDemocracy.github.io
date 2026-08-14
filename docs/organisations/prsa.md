@@ -28,8 +28,8 @@ events:
   title: Death of founding National President J.F.H. "Jack" Wright, who built PRSA
     into a national body
   url: https://www.prsa.org.au/qn/50.html
-  quote: On 13th May 1988, Mr J.F.H.Wright , who was instrumental in establishing
-    the Society as a nation-wide body, died after a brief illness.
+  quote: On 13th May 1988, Mr J.F.H.Wright, who was instrumental in establishing the
+    Society as a nation-wide body, died after a brief illness.
   proof_level: high
   url_checked: '2026-08-14'
   notable: true

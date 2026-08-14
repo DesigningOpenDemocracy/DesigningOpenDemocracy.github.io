@@ -276,6 +276,16 @@ def _fetch_page_text(url, headers):
         with_paragraphs = BLOCK_PATTERN.sub(" " + PARAGRAPH_DELIM + " ", no_scripts)
         no_tags = re.sub(r"<[^>]+>", " ", with_paragraphs)
         text = re.sub(r"\s+", " ", html.unescape(no_tags))
+        # An inline tag boundary immediately before punctuation (e.g.
+        # "Wright</a>,") becomes "Wright ," above — a space that was never
+        # actually rendered, since the closing tag carries no whitespace of
+        # its own. Left in, this makes an accurately-transcribed quote that
+        # spans an inline element (a link, a <span>, ...) false-MISMATCH,
+        # and a quote "fixed" to match it would no longer be the real DOM
+        # text a browser's #:~:text= lookup searches. Drop it so tag
+        # boundaries never introduce punctuation spacing that didn't exist
+        # in the rendered page.
+        text = re.sub(r"\s+([,.;:!?)])", r"\1", text)
         text = text.replace(PARAGRAPH_DELIM, "\n\n").strip()
         text = text[:2_000_000]
         return text, r, None
