@@ -1,0 +1,295 @@
+#!/usr/bin/env python3
+"""Regression tests for the I/O-adjacent parts of util/check_fragments.py:
+paragraph_hash, wikipedia_title, write_quote_fix/_write_quote_fix_yaml, and
+collect_evidence's --slug filtering.
+
+Offline — no network calls. Requires the same deps check_fragments.py itself
+needs at import time (python-frontmatter, requests, pyyaml); see
+util/requirements.txt. Run with:
+
+    python -m unittest discover tests
+"""
+
+import argparse
+import os
+import shutil
+import sys
+import tempfile
+import unittest
+
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "util"))
+
+import check_fragments as cf  # noqa: E402
+
+
+ORG_FRONTMATTER = """---
+title: {title}
+type: ngo
+status: active
+country: France
+website: https://example.org
+summary: A test org.
+events:
+{events_yaml}---
+
+Body text here.
+"""
+
+
+def make_org_file(directory, slug, events_yaml, title=None):
+    path = os.path.join(directory, slug + ".md")
+    with open(path, "w", encoding="utf-8") as f:
+        f.write(ORG_FRONTMATTER.format(title=title or slug, events_yaml=events_yaml))
+    return path
+
+
+class ParagraphHashTests(unittest.TestCase):
+
+    def test_returns_none_when_quote_not_found(self):
+        self.assertIsNone(cf.paragraph_hash("hello world", "not present"))
+
+    def test_returns_none_on_empty_inputs(self):
+        self.assertIsNone(cf.paragraph_hash("", "quote"))
+        self.assertIsNone(cf.paragraph_hash("text", ""))
+
+    def test_same_paragraph_same_hash_regardless_of_preceding_paragraphs(self):
+        # Regression for the historical offset-drift bug: a prior version
+        # mixed a whitespace-normalized search with raw-text indexing,
+        # landing in the wrong paragraph whenever there were enough short
+        # paragraphs before the quote (each "\n\n" collapses to one space
+        # under normalization, shifting the reused offset). paragraph_hash
+        # must return the SAME hash for the SAME paragraph regardless of
+        # how much unrelated paragraph-break-separated text precedes it.
+        quote = "the org was founded in 2015 by local activists"
+        page_no_preamble = "Paragraph with the org was founded in 2015 by local activists in it."
+        page_with_preamble = (
+            "Short.\n\nAlso short.\n\nEven shorter.\n\n"
+            "Paragraph with the org was founded in 2015 by local activists in it."
+        )
+        hash_no_preamble = cf.paragraph_hash(page_no_preamble, quote)
+        hash_with_preamble = cf.paragraph_hash(page_with_preamble, quote)
+        self.assertIsNotNone(hash_no_preamble)
+        self.assertEqual(hash_no_preamble, hash_with_preamble)
+
+    def test_paragraph_boundaries_respected(self):
+        quote = "founded in 2015"
+        page = "Unrelated first paragraph.\n\nThe org was founded in 2015 here.\n\nUnrelated last paragraph."
+        expected = cf.sha256(cf.normalize_ws("The org was founded in 2015 here."))
+        self.assertEqual(cf.paragraph_hash(page, quote), expected)
+
+
+class WikipediaTitleTests(unittest.TestCase):
+
+    def test_english_article(self):
+        self.assertEqual(
+            cf.wikipedia_title("https://en.wikipedia.org/wiki/Democracy"),
+            ("en", "Democracy"),
+        )
+
+    def test_non_english_subdomain_preserved(self):
+        # Regression: this used to always query en.wikipedia.org regardless
+        # of the citation's actual language subdomain, silently querying a
+        # nonexistent English article for e.g. fr.wikipedia.org citations.
+        self.assertEqual(
+            cf.wikipedia_title("https://fr.wikipedia.org/wiki/D%C3%A9mocratie"),
+            ("fr", "Démocratie"),
+        )
+
+    def test_strips_trailing_fragment(self):
+        lang, title = cf.wikipedia_title("https://en.wikipedia.org/wiki/Democracy#History")
+        self.assertEqual(title, "Democracy")
+
+    def test_non_wikipedia_url_returns_none(self):
+        self.assertIsNone(cf.wikipedia_title("https://example.org/wiki/Democracy"))
+
+    def test_wikipedia_domain_without_wiki_path_returns_none(self):
+        self.assertIsNone(cf.wikipedia_title("https://en.wikipedia.org/w/index.php"))
+
+
+class WriteQuoteFixTests(unittest.TestCase):
+
+    def setUp(self):
+        self.tmpdir = tempfile.mkdtemp()
+        self.addCleanup(shutil.rmtree, self.tmpdir, ignore_errors=True)
+
+    def _path(self, name="org.md"):
+        return os.path.join(self.tmpdir, name)
+
+    def test_plain_scalar_substring_replace(self):
+        path = self._path()
+        with open(path, "w", encoding="utf-8") as f:
+            f.write("---\ntitle: X\n---\n\nSome prose with a footnoted quote here.\n")
+        old = "footnoted quote here"
+        new = "footnoted quote here now"
+        self.assertTrue(cf.write_quote_fix(path, old, new))
+        with open(path, encoding="utf-8") as f:
+            self.assertIn(new, f.read())
+
+    def test_footnote_body_with_no_frontmatter_and_no_raw_match_refuses(self):
+        # No frontmatter to fall back to, and the raw string isn't present
+        # verbatim (e.g. it was YAML-escaped elsewhere) — must refuse
+        # rather than guess.
+        path = self._path("plain.md")
+        with open(path, "w", encoding="utf-8") as f:
+            f.write("Just prose, no frontmatter, and no match here at all.\n")
+        self.assertFalse(cf.write_quote_fix(path, "text not present", "replacement"))
+
+    def test_yaml_fallback_rewrites_folded_scalar_quote(self):
+        # A quote containing an apostrophe forces YAML to store it as a
+        # single-quoted scalar with '' escaping — not verbatim in the raw
+        # file text, so the plain substring replace can never find it.
+        events_yaml = (
+            "- date: '2020-01-01'\n"
+            "  title: Founded\n"
+            "  url: https://example.org/about\n"
+            "  quote: 'l''été 2020: something happened'\n"
+            "  note: Test event.\n"
+            "  proof_level: high\n"
+        )
+        path = make_org_file(self.tmpdir, "test-org", events_yaml)
+        old = "l'été 2020: something happened"
+        new = "l'été 2020: something else happened"
+
+        self.assertTrue(cf.write_quote_fix(path, old, new))
+
+        with open(path, encoding="utf-8") as f:
+            content = f.read()
+        # `new` also contains an apostrophe, so it too is stored escaped
+        # (not verbatim) — compare on the PARSED value, same as the
+        # function itself does, rather than raw substring search.
+
+        import re
+        import yaml
+        m = re.match(r"^---\n(.*?)\n---\n", content, re.DOTALL)
+        data = yaml.safe_load(m.group(1))
+        self.assertEqual(data["events"][0]["quote"], new)
+
+        # The rewritten file must still be canonically ordered.
+        import reorder_frontmatter as rf
+        self.assertEqual(rf.reorder_frontmatter(m.group(1)), m.group(1))
+
+    def test_refuses_when_quote_is_not_unique_to_one_event(self):
+        # Two events sharing the exact same quote text — which one would
+        # the fix apply to? Refuse rather than guess. Use a value that
+        # forces the YAML fallback (an apostrophe forces a quoted scalar,
+        # so the plain substring path's count==1 check can't shortcut this).
+        shared = "l'été 2020: shared claim"
+        events_yaml = (
+            "- date: '2020-01-01'\n"
+            "  title: First\n"
+            "  url: https://example.org/first\n"
+            "  quote: '{q}'\n"
+            "  note: First event.\n"
+            "  proof_level: high\n"
+            "- date: '2021-01-01'\n"
+            "  title: Second\n"
+            "  url: https://example.org/second\n"
+            "  quote: '{q}'\n"
+            "  note: Second event.\n"
+            "  proof_level: high\n"
+        ).format(q=shared.replace("'", "''"))
+        path = make_org_file(self.tmpdir, "dup-org", events_yaml)
+        with open(path, encoding="utf-8") as f:
+            original = f.read()
+
+        result = cf.write_quote_fix(path, shared, "a different corrected value")
+
+        self.assertFalse(result)
+        with open(path, encoding="utf-8") as f:
+            self.assertEqual(f.read(), original)  # untouched
+
+    def test_refuses_when_existing_frontmatter_is_not_canonical(self):
+        # Field order deliberately wrong (status before type) — the
+        # docstring says the fallback must refuse rather than fold
+        # unrelated reordering into what should be a one-line fix.
+        content = (
+            "---\n"
+            "title: Bad Order Org\n"
+            "status: active\n"
+            "type: ngo\n"
+            "events:\n"
+            "- date: '2020-01-01'\n"
+            "  title: Founded\n"
+            "  url: https://example.org/about\n"
+            "  quote: 'l''été 2020: something happened'\n"
+            "  note: Test event.\n"
+            "  proof_level: high\n"
+            "---\n\nBody.\n"
+        )
+        path = self._path("bad-order.md")
+        with open(path, "w", encoding="utf-8") as f:
+            f.write(content)
+
+        old = "l'été 2020: something happened"
+        result = cf.write_quote_fix(path, old, "l'été 2020: something else")
+
+        self.assertFalse(result)
+        with open(path, encoding="utf-8") as f:
+            self.assertEqual(f.read(), content)  # untouched
+
+    def test_refuses_when_events_field_missing(self):
+        path = self._path("no-events.md")
+        with open(path, "w", encoding="utf-8") as f:
+            f.write("---\ntitle: No Events Org\ntype: ngo\n---\n\nBody.\n")
+        # Not found verbatim either, so both the plain and YAML paths must
+        # refuse.
+        self.assertFalse(cf.write_quote_fix(path, "some quote", "new quote"))
+
+
+class CollectEvidenceSlugFilterTests(unittest.TestCase):
+    """Regression test for the --slug bug: --slug a --slug b used to
+    silently keep only the last flag (a plain str field, overwritten on
+    each occurrence), so a multi-org run verified one org while reporting
+    as if it checked both. args.slug is now a list (action="append")."""
+
+    def setUp(self):
+        self.tmpdir = tempfile.mkdtemp()
+        self.addCleanup(shutil.rmtree, self.tmpdir, ignore_errors=True)
+        self._orig_org_dir = cf.ORG_DIR
+        self._orig_docs_dir = cf.DOCS_DIR
+        cf.ORG_DIR = self.tmpdir
+        cf.DOCS_DIR = self.tmpdir
+
+        one_event = (
+            "- date: '2020-01-01'\n"
+            "  title: Founded\n"
+            "  url: https://example.org/about\n"
+            "  quote: some quote text\n"
+            "  note: Test event.\n"
+            "  proof_level: high\n"
+        )
+        make_org_file(self.tmpdir, "alpha-org", one_event)
+        make_org_file(self.tmpdir, "beta-org", one_event)
+        make_org_file(self.tmpdir, "gamma-org", one_event)
+
+    def tearDown(self):
+        cf.ORG_DIR = self._orig_org_dir
+        cf.DOCS_DIR = self._orig_docs_dir
+
+    def _slugs_seen(self, args):
+        items = cf.collect_evidence(args)
+        return {source_label.split(" ", 1)[0] for _, _, source_label, kind, _ in items
+                if kind == "event"}
+
+    def _args(self, slug=None):
+        return argparse.Namespace(slug=slug, events_only=True)
+
+    def test_no_slug_filter_includes_all_orgs(self):
+        self.assertEqual(
+            self._slugs_seen(self._args(slug=None)),
+            {"alpha-org", "beta-org", "gamma-org"},
+        )
+
+    def test_single_slug_filters_to_one_org(self):
+        self.assertEqual(self._slugs_seen(self._args(slug=["alpha-org"])), {"alpha-org"})
+
+    def test_repeated_slug_includes_every_named_org(self):
+        # This is the exact regression scenario: --slug alpha-org --slug
+        # gamma-org should check BOTH, not silently collapse to the last one.
+        seen = self._slugs_seen(self._args(slug=["alpha-org", "gamma-org"]))
+        self.assertEqual(seen, {"alpha-org", "gamma-org"})
+        self.assertNotIn("beta-org", seen)
+
+
+if __name__ == "__main__":
+    unittest.main()

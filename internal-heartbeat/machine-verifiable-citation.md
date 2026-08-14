@@ -303,6 +303,16 @@ only if a concrete downstream consumer actually needs it.
   safely: non-org files, a quote value shared by >1 event, or a file whose
   frontmatter isn't already canonical (re-serialization would fold unrelated
   reformatting into a one-line fix).
+- **2026-08-14:** Added `tests/` (stdlib `unittest`, offline, wired into
+  CI) covering both files — see issue #155, which was opened after the
+  two bugs above shipped without any automated coverage catching them.
+  Regression tests exist for both: `--slug`'s `action="append"` list
+  behavior (`collect_evidence` filtering) and `_write_quote_fix_yaml()`'s
+  success path plus its three refusal branches. Also covers the older
+  `paragraph_hash()` offset-drift and `wikipedia_title()`
+  non-English-subdomain bugs referenced elsewhere in this changelog, and
+  the pure functions in `text_fragment.py`. See `CLAUDE.md`'s "Tests"
+  section for how to run it.
 
 ---
 
