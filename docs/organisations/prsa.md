@@ -21,6 +21,7 @@ location:
   longitude: 149.13
   name: Canberra, Australia
   precision: city
+news_page: https://www.prsa.org.au/qn/indexqn.htm
 rss_feed: https://www.prsa.org.au/feed
 events:
 - date: '2026-11-12'
