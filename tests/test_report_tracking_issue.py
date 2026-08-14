@@ -124,6 +124,23 @@ class BuildIssueBodyTests(unittest.TestCase):
         self.assertIn("may have failed", body)
         self.assertNotIn("Nothing to do", body)
 
+    def test_large_section_is_capped_with_a_more_note(self):
+        # Regression / robustness: a transient outage could flag hundreds
+        # of fetch errors in one run. Uncapped, the issue body could blow
+        # past GitHub's ~65KB limit and the PATCH/POST itself would fail
+        # — exactly the week this tracking issue matters most. The
+        # section must cap the rendered list while still reporting the
+        # true total count in the header.
+        fragments = {"mismatches": [
+            {"source": f"org-{i} [2020-01-01] Event", "url": f"https://example.org/{i}",
+             "evidence": "some evidence text"}
+            for i in range(40)
+        ]}
+        body = rti.build_issue_body(fragments, {}, "2026-08-21")
+        self.assertIn("Quote mismatches (40)", body)
+        self.assertIn("and 15 more", body)
+        self.assertLess(len(body), 20_000)  # nowhere near GitHub's ~65KB cap
+
     def test_ambiguous_and_fetch_errors_have_their_own_sections(self):
         fragments = {
             "ambiguous": [{"source": "a [2020-01-01] X", "url": "https://a.org", "evidence": "dup text"}],

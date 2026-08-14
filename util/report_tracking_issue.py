@@ -103,14 +103,21 @@ def _url_bullets(items, extra_key):
     return lines
 
 
-def _section(label, bullet_lines):
-    if not bullet_lines:
+SECTION_ITEM_CAP = 25  # keeps a single bad week from blowing past GitHub's
+# ~65KB issue body limit — a transient outage flagging hundreds of fetch
+# errors at once must never make the PATCH/POST itself fail, which would
+# be the one week this tracking issue matters most.
+
+
+def _section(label, items, bullet_fn):
+    if not items:
         return []
-    # Every bullet group emits one leading "- `source` ..." line per item
-    # plus an optional detail line, so the item count is the number of
-    # lines starting with "- ", not len(bullet_lines).
-    count = sum(1 for line in bullet_lines if line.startswith("- "))
-    return [f"### {label} ({count})", ""] + bullet_lines + [""]
+    shown = items[:SECTION_ITEM_CAP]
+    lines = bullet_fn(shown)
+    if len(items) > SECTION_ITEM_CAP:
+        lines.append(f"- … and {len(items) - SECTION_ITEM_CAP} more "
+                      "(see the Action log for the full list)")
+    return [f"### {label} ({len(items)})", ""] + lines + [""]
 
 
 def build_issue_body(fragments, urls, generated, fragments_missing=False, urls_missing=False):
@@ -149,19 +156,19 @@ def build_issue_body(fragments, urls, generated, fragments_missing=False, urls_m
                  "step may have failed before writing it. Check the Action log.", ""]
 
     needs_attention = (
-        _section("Quote mismatches", _fragment_bullets(mismatches)) +
-        _section("Ambiguous quotes (occur more than once on the page)", _fragment_bullets(ambiguous)) +
-        _section("Fetch errors", _fragment_bullets(fetch_errors, error_field="error")) +
-        _section("Dead citation URLs", _url_bullets(dead, "status")) +
-        _section("Errored citation URLs", _url_bullets(errored, "error"))
+        _section("Quote mismatches", mismatches, _fragment_bullets) +
+        _section("Ambiguous quotes (occur more than once on the page)", ambiguous, _fragment_bullets) +
+        _section("Fetch errors", fetch_errors, lambda items: _fragment_bullets(items, error_field="error")) +
+        _section("Dead citation URLs", dead, lambda items: _url_bullets(items, "status")) +
+        _section("Errored citation URLs", errored, lambda items: _url_bullets(items, "error"))
     )
     if needs_attention:
         body += ["## Needs attention", ""] + needs_attention
 
     informational = (
         _section("Blocked (403/429 — likely bot-blocking, verify manually before touching)",
-                  _url_bullets(blocked, "status")) +
-        _section("Redirected (informational only)", _url_bullets(redirected, "final_url"))
+                  blocked, lambda items: _url_bullets(items, "status")) +
+        _section("Redirected (informational only)", redirected, lambda items: _url_bullets(items, "final_url"))
     )
     if informational:
         body += ["## Informational (not gating this issue's open/closed state)", ""] + informational
