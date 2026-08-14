@@ -573,9 +573,8 @@ def main():
     parser.add_argument("--report", type=str, default=None,
                         help="Write a JSON summary of findings to this path "
                              "(mismatches/ambiguous/fetch-errors, with counts) "
-                             "for automated tracking — see "
-                             "util/report_tracking_issue.py. Purely additive: "
-                             "never changes stdout or the exit code.")
+                             "for ad hoc/manual review. Purely additive: never "
+                             "changes stdout or the exit code.")
     args = parser.parse_args()
 
     # Always start from the committed cache, even with --no-cache: that flag

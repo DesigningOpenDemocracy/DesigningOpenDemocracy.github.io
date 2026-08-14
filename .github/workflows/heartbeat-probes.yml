@@ -11,7 +11,6 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-      issues: write
     steps:
       - uses: actions/checkout@v4
 
@@ -30,21 +29,12 @@ jobs:
         run: python util/scrape_news.py
 
       - name: Verify event and footnote evidence still matches live pages
-        run: python util/check_fragments.py --save-to-wayback --report /tmp/fragments-report.json
+        run: python util/check_fragments.py --save-to-wayback
         continue-on-error: true  # report-only: stale evidence shouldn't block the RSS/scrape commit below
 
       - name: Check event citation URLs are still live
-        run: python util/check_event_urls.py --report /tmp/urls-report.json
+        run: python util/check_event_urls.py
         continue-on-error: true  # report-only, same reasoning — see job summary/log for findings
-
-      - name: Sync citation-verification tracking issue
-        if: always()  # must run even if the two report-only steps above failed
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          python util/report_tracking_issue.py \
-            --fragments-report /tmp/fragments-report.json \
-            --urls-report /tmp/urls-report.json
 
       - name: Commit any updates
         run: |

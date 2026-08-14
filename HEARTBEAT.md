@@ -80,13 +80,16 @@ the weekly GitHub Actions cron job (`.github/workflows/heartbeat-probes.yml`) �
 do not run them during a heartbeat session. The cron owns automated data collection;
 this brief owns verification and judgment. The same cron also runs
 `check_fragments.py` and `check_event_urls.py` report-only (they don't write
-anything, so there's nothing for this brief to skip), then
-`util/report_tracking_issue.py` keeps a single "Citation verification tracking"
-GitHub issue in sync with their findings (opens/updates it when there's a
-MISMATCH/AMBIGUOUS/fetch-error/DEAD citation, closes it automatically once
-clean) — check whether that issue is open before this brief's own scan for
-staleness; a fresh MISMATCH there may be worth folding into this run's
-Maintenance log rather than waiting to notice it separately.
+anything, so there's nothing for this brief to skip) — worth a glance at that
+workflow's run log occasionally for dead/blocked event citations or a
+Wikipedia fragment that's drifted out of sync with the live article. Deliberately
+no automated issue-filing here: GitHub Actions in this repo stays scoped to CI
+checks and light read-only probing, not scripts that open tickets on their own
+schedule. If a heartbeat run's own glance at that log (or a manual
+`--report PATH` run — see the `check_fragments.py`/`check_event_urls.py` entries
+in `CLAUDE.md`) turns up something worth tracking, that's this brief's judgment
+call to make (fold it into the Maintenance log below, or open an issue by hand),
+not a mechanism running unattended between runs.
 
 ### 2. Work the staleness queue
 
