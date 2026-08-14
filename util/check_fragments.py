@@ -32,6 +32,7 @@ matters for "has this citation drifted."
 Usage:
     python util/check_fragments.py           # verify all events + footnotes
     python util/check_fragments.py --slug mosaiclab  # single org
+    python util/check_fragments.py --slug g0v --slug namfrel  # multiple orgs
     python util/check_fragments.py --no-cache        # ignore cache, re-fetch everything
     python util/check_fragments.py --save-to-wayback # archive each URL to Wayback Machine
     python util/check_fragments.py --footnotes-only  # only check footnotes
@@ -52,6 +53,8 @@ import time
 from datetime import date
 from urllib.parse import unquote, urlparse
 
+import yaml
+
 try:
     import frontmatter
     import requests
@@ -64,6 +67,7 @@ from text_fragment import (  # noqa: E402
     closest_match_hint, count_occurrences, find_span, iter_footnote_citations, normalize_ws,
     quote_matches, spacing_autofix,
 )
+import reorder_frontmatter  # noqa: E402 — canonical frontmatter re-serialization for the autofix fallback
 
 DOCS_DIR = os.path.join(os.path.dirname(__file__), "..", "docs")
 ORG_DIR = os.path.join(DOCS_DIR, "organisations")
@@ -385,22 +389,75 @@ def write_quote_fix(path, old, new):
     """Surgically replace `old` with `new` in the source file at `path`
     (a quote: field value in org frontmatter, or a quoted footnote body).
 
-    Deliberately a plain substring replace rather than a frontmatter
-    re-dump: a re-dump would re-serialize every field and risk reordering
-    keys or changing formatting the file's other content relies on. Only
-    applies when `old` appears exactly once — the quote's own occurrence.
-    If it appears zero times (the parsed value doesn't match the raw text,
-    e.g. YAML-escaped characters) or more than once (a duplicate quote),
-    return False and let the human edit: never guess.
+    First tries a plain substring replace, which covers the common case of
+    a plain YAML scalar: there the parsed value is stored verbatim, so the
+    raw search finds it. When the value ISN'T stored verbatim — a folded or
+    single/double-quoted scalar (the ones YAML itself chooses for values
+    containing ': ' or apostrophes, e.g. 'l''été'), or one wrapped across
+    lines at 80 chars — the raw text differs from the parsed value by
+    escaping and line-wrapping and the search can't find it. Those fall
+    back to _write_quote_fix_yaml(), which locates the value by parsing the
+    frontmatter instead of matching raw text.
+
+    Footnote bodies have no frontmatter to fall back to; if the raw
+    substring isn't found there exactly once, return False and let the
+    human edit: never guess.
 
     Returns True if the file was rewritten."""
     with open(path, encoding="utf-8") as f:
         src = f.read()
-    if src.count(old) != 1:
+    if src.count(old) == 1:
+        with open(path, "w", encoding="utf-8") as f:
+            f.write(src.replace(old, new, 1))
+        return True
+    return _write_quote_fix_yaml(path, old, new)
+
+
+def _write_quote_fix_yaml(path, old, new):
+    """YAML-aware fallback for write_quote_fix: rewrite the event whose
+    quote: value equals `old` (compared on the PARSED value, not raw text),
+    then re-serialize the whole frontmatter through reorder_frontmatter's
+    canonical dumper so the file still passes `reorder_frontmatter.py
+    --check` after the edit.
+
+    Refuses (returns False, letting the human edit) when:
+      - the file has no frontmatter, no events list, or is otherwise not an
+        org page (a footnote/markdown file — there's no YAML to rewrite);
+      - `old` is not the quote: value of EXACTLY ONE event (a duplicate
+        quote across two events would make which event to fix ambiguous);
+      - the file's existing frontmatter isn't already canonical — the
+        re-serialization would otherwise fold unrelated reformatting of
+        every field into what should be a one-line fix (run
+        reorder_frontmatter.py first if it isn't).
+
+    Never raises; returns True only after the file was actually written."""
+    try:
+        with open(path, encoding="utf-8") as f:
+            content = f.read()
+        m = re.match(r"^---\n(.*?)\n---\n", content, re.DOTALL)
+        if not m:
+            return False
+        fm_text, body = m.group(1), content[m.end():]
+        data = yaml.safe_load(fm_text)
+        if not isinstance(data, dict):
+            return False
+        events = data.get("events")
+        if not isinstance(events, list):
+            return False
+        targets = [e for e in events
+                   if isinstance(e, dict) and e.get("quote") == old]
+        if len(targets) != 1:
+            return False
+        if reorder_frontmatter.reorder_frontmatter(fm_text) != fm_text:
+            return False
+        targets[0]["quote"] = new
+        new_fm = reorder_frontmatter.reorder_frontmatter(
+            reorder_frontmatter.canonical_yaml_dump(data)).rstrip("\n")
+        with open(path, "w", encoding="utf-8") as f:
+            f.write("---\n" + new_fm + "\n---\n" + body)
+        return True
+    except Exception:
         return False
-    with open(path, "w", encoding="utf-8") as f:
-        f.write(src.replace(old, new, 1))
-    return True
 
 
 def find_footnote_evidence(path):
@@ -461,7 +518,7 @@ def collect_evidence(args):
         slug = os.path.basename(path)[:-3]
         if slug in ("organisations", "concepts"):
             continue
-        if args.slug and slug != args.slug:
+        if args.slug and slug not in args.slug:
             continue
 
         post = frontmatter.load(path)
@@ -491,7 +548,8 @@ def collect_evidence(args):
 def main():
     parser = argparse.ArgumentParser(
         description="Verify event and footnote evidence against live pages")
-    parser.add_argument("--slug", type=str, help="Check a single org")
+    parser.add_argument("--slug", type=str, action="append",
+                        help="Check a single org (repeatable: pass --slug once per org)")
     parser.add_argument("--no-cache", action="store_true",
                         help="Ignore the evidence cache")
     parser.add_argument("--save-to-wayback", action="store_true",
@@ -506,7 +564,11 @@ def main():
                              "stored quote in place to the page's text. Only ever "
                              "applies to pure space-run differences — punctuation, "
                              "case, content, or the page having extra text stay "
-                             "MISMATCH for manual judgment. Writes to source files, "
+                             "MISMATCH for manual judgment. Works on quotes stored "
+                             "as plain YAML scalars AND folded/quoted ones (which "
+                             "the raw substring can't find) — the latter are "
+                             "rewritten via a frontmatter re-serialization that "
+                             "keeps canonical ordering. Writes to source files, "
                              "so run it on a reviewable branch, not in the cron.")
     args = parser.parse_args()
 

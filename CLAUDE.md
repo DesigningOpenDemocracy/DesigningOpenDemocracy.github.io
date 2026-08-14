@@ -487,6 +487,7 @@ These are linked from the bottom of the org index table for researcher download.
   ```
   python util/check_fragments.py             # exits 1 if any evidence no longer matches
   python util/check_fragments.py --slug g0v  # single org
+  python util/check_fragments.py --slug g0v --slug namfrel  # multiple orgs — --slug is repeatable
   python util/check_fragments.py --no-cache  # ignore the cache, re-fetch and re-verify everything
   python util/check_fragments.py --save-to-wayback  # archive each URL to Wayback Machine
   python util/check_fragments.py --footnotes-only  # only check footnote evidence
@@ -505,7 +506,12 @@ These are linked from the bottom of the org index table for researcher download.
     extra text is a genuine page-drift signal a MISMATCH is supposed to surface, not hide.
     Refuses if the corrected text would appear more than once on the page (human should
     lengthen the quote instead), refuses to write unless the old string occurs exactly
-    once in the file, and marks the corrected string verified against that fetch. Writes
+    once in the file, and marks the corrected string verified against that fetch. Quotes
+    stored as plain YAML scalars are replaced as raw text; folded/quoted scalars (the
+    form YAML itself picks for values containing `: ` or apostrophes, where the parsed
+    value isn't verbatim in the file) are rewritten via a frontmatter re-serialization
+    that keeps canonical ordering (`util/reorder_frontmatter.py --check` still passes)
+    — the raw substring search alone used to silently give up on those. Writes
     to source files, so **don't pass it in the weekly cron** — run it on a reviewable
     branch and check the git diff, same as `check_rss.py --update-activity`.
   The `#:~:text=` fragment-building functions it used to also expose via `--add-fragments` now

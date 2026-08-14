@@ -287,6 +287,22 @@ only if a concrete downstream consumer actually needs it.
   unless the old string occurs exactly once), refuses on ambiguity
   (corrected text appearing >1× on the page), records the corrected
   string as verified against that fetch.
+- **2026-08-14:** Two fixes from the first real autofix run. (1) `--slug`
+  is now repeatable (`action="append"`) — it used to silently honor only
+  the last flag passed, so `--slug a --slug b` verified a alone while
+  looking like it was checking both. (2) The raw substring replace behind
+  `--autofix-spaces` silently gave up on quotes whose parsed value isn't
+  verbatim in the file — the folded/single-quoted scalars YAML itself
+  chooses for values containing `: ` or apostrophes (confirmed live: the
+  démocratie-ouverte Convention Citoyenne quote stores as a single-quoted
+  scalar with `''`-escaped apostrophes, which raw text search can never
+  locate). `write_quote_fix()` now falls back to `_write_quote_fix_yaml()`,
+  which locates the value by parsing the frontmatter, rewrites the unique
+  matching event's `quote:`, and re-serializes through
+  reorder_frontmatter's canonical dumper so `--check` still passes. Refuses
+  safely: non-org files, a quote value shared by >1 event, or a file whose
+  frontmatter isn't already canonical (re-serialization would fold unrelated
+  reformatting into a one-line fix).
 
 ---
 
