@@ -22,6 +22,45 @@ location:
   name: France
   precision: city
 news_page: https://www.democratieouverte.org/le-blog
+events:
+- date: '2012-01-01'
+  title: Founded by a collective of democratic innovators
+  url: https://www.democratieouverte.org/qui-sommes-nous
+  quote: En 2012, des citoyennes et citoyens engagés, qui portent des projets pour
+    transformer notre vieux système politique (comme Parlement & Citoyens, Voxe, ou
+    encore Questionnez vos élus), décident de se regrouper et de formaliser leur collectif
+    en créant une association
+  note: The association's own history describes a collective of engaged citizens forming
+    Démocratie Ouverte in 2012 to bring together democratic innovators with researchers,
+    professionals, elected officials and citizens.
+  proof_level: high
+  url_checked: '2026-08-14'
+- date: '2016-01-01'
+  title: Launched Système D, the first democratic-innovation incubator in France
+  url: https://www.democratieouverte.org/qui-sommes-nous
+  quote: Avec le soutien de la Caisse des Dépôts, du Crédit Coopératif, d’Accenture,
+    de la MGEN, du groupe La Poste et de la Fondation La France s’engage, Démocratie
+    Ouverte lance le premier incubateur spécifiquement dédié à accompagner les projets
+    d’innovation démocratique.
+  note: Démocratie Ouverte launched Système D, described as the first incubator specifically
+    dedicated to supporting democratic-innovation projects, with backing from public
+    and private partners including the Caisse des Dépôts.
+  proof_level: high
+  url_checked: '2026-08-14'
+- date: '2019-04-25'
+  title: France's Convention Citoyenne pour le Climat announced after the Gilets Citoyens'
+    open letter
+  url: https://www.democratieouverte.org/qui-sommes-nous
+  quote: 'Le 25 avril 2019, face à ce mouvement social intense, le Président Emmanuel
+    Macron annonce la création de la « Convention Citoyenne pour Le Climat »: 150
+    françaises et français tirés au sort durant l''été'
+  note: Démocratie Ouverte helped create the Gilets Citoyens collective, whose open
+    letter to the government called for a citizens' assembly drawn by lot; President
+    Macron announced the Citizens' Climate Convention in response, with several collective
+    members joining its governance team.
+  proof_level: high
+  url_checked: '2026-08-14'
+  notable: true
 activity:
   manual:
     date: 2026-05-18

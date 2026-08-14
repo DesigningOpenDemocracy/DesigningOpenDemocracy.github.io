@@ -27,6 +27,38 @@ location:
   name: Vancouver, Canada
   precision: city
 rss_feed: https://ethelo.com/feed
+events:
+- date: '2011-01-01'
+  title: Founded in Vancouver as a social enterprise
+  url: https://www.mcconnellfoundation.ca/funding-database/ethelo/
+  quote: Founded in 2011, Ethelo is dedicated to advancing new forms of democracy
+    using internet technology.
+  note: The McConnell Foundation's grant profile records Ethelo's founding in 2011
+    as two entities — the technology company Ethelo Decisions and the non-profit society
+    Ethelo Democracy.
+  proof_level: high
+  url_checked: '2026-08-14'
+- date: '2019-05-15'
+  title: Acquired Citizen Budget, Canada's leading municipal budget consultation tool
+  url: https://opennorth.ca/resources/citizen-budget/
+  quote: Ethelo and Open North are excited to announce the acquisition by Ethelo of
+    “Citizen Budget”- Canada’s leading municipal budget consultation tool.
+  note: Ethelo acquired Citizen Budget, launched by Open North in 2011 and used by
+    over 100 Canadian municipalities for public budget engagement, integrating it
+    with its participatory decision-making platform.
+  proof_level: high
+  url_checked: '2026-08-14'
+- date: '2025-03-01'
+  title: Selected to power California's Engaged California digital democracy initiative
+  url: https://ethelo.com/case-study/engaged-california-program/
+  quote: Engaged California is a first-in-the-nation digital democracy initiative
+    launched by the State of California to improve public engagement, rebuild trust,
+    and integrate lived experience directly into government decision-making.
+  note: Ethelo was selected after a global search to power the State of California's
+    Engaged California program; its first engagement, the LA Wildfire Recovery exercise,
+    ran from March to May 2025.
+  proof_level: high
+  url_checked: '2026-08-14'
 activity:
   dod:
     checked: 2026-07-05

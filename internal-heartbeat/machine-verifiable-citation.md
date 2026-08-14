@@ -265,6 +265,28 @@ only if a concrete downstream consumer actually needs it.
   and `archive`/`archive_location` in `citations.json`.
 - **2026-08-12:** Added fuzzy-diff `closest_match_hint()` diagnostic
   for MISMATCH events (Hypothes.is-inspired, diagnostic-only).
+- **2026-08-14:** `closest_match_hint()` now also returns a rendered
+  character-level diff (page − / quote +, whitespace made visible) so a
+  MISMATCH from a one-character divergence — em-dash spacing, a stray
+  sentence-terminating period on a quote that continues mid-clause — is
+  fixable at a glance instead of requiring a manual page fetch to locate
+  it. Verification semantics unchanged (still exact-match-only).
+- **2026-08-14:** Added `spacing_autofix()` and a `--autofix-spaces` flag
+  on `check_fragments.py` that rewrites a MISMATCHed stored quote in
+  place when its only differences from the live page are space runs
+  (em-dash spacing, stray spaces). This class is safe to auto-apply by
+  construction — if only spaces differ, the quote's words are a
+  contiguous substring of the page's, so the fix cannot change what the
+  quote claims — and the corrected text is what the browser renders, so
+  the `#:~:text=` highlight passes too. Deliberately scoped to spaces
+  only: punctuation, case, content changes, and the "page continues past
+  the quote" case all stay MISMATCH for human judgment (a trailing
+  period vs. the page continuing is an editorial choice about quote
+  extent and a genuine page-drift signal, not a typo to hide). Opt-in
+  flag, writes to source files (surgical substring replace, refuses
+  unless the old string occurs exactly once), refuses on ambiguity
+  (corrected text appearing >1× on the page), records the corrected
+  string as verified against that fetch.
 
 ---
 

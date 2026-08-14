@@ -62,7 +62,7 @@ except ImportError as e:
 sys.path.insert(0, os.path.dirname(__file__))
 from text_fragment import (  # noqa: E402
     closest_match_hint, count_occurrences, find_span, iter_footnote_citations, normalize_ws,
-    quote_matches,
+    quote_matches, spacing_autofix,
 )
 
 DOCS_DIR = os.path.join(os.path.dirname(__file__), "..", "docs")
@@ -305,17 +305,19 @@ def check_evidence(url, evidence, cache, use_cache=True):
     to multiple megabytes when it was tried; hashes and booleans are all
     that's actually needed to skip redundant work).
 
-    Returns (result, unchanged, error, ambiguous, hint) where result is
-    "good"/"bad"/None, unchanged is True if this was answered from cache
-    without a fetch that could reveal new content (i.e. a real 304, not
-    just "first look"), ambiguous is True if the evidence text occurs
-    more than once on a freshly-fetched page (only known when a fetch
-    actually happened — a cache hit reports ambiguous=False rather than
-    re-deriving it, since the cache doesn't retain page text), and hint
-    is a (passage, ratio) fuzzy-diff diagnostic (see
+    Returns (result, unchanged, error, ambiguous, hint, page_text) where
+    result is "good"/"bad"/None, unchanged is True if this was answered
+    from cache without a fetch that could reveal new content (i.e. a real
+    304, not just "first look"), ambiguous is True if the evidence text
+    occurs more than once on a freshly-fetched page (only known when a
+    fetch actually happened — a cache hit reports ambiguous=False rather
+    than re-deriving it, since the cache doesn't retain page text), hint
+    is a (passage, ratio, diff) fuzzy-diff diagnostic (see
     text_fragment.closest_match_hint()) when result is "bad" and a fetch
-    actually happened, else None. hint is diagnostic only — it never
-    changes result.
+    actually happened, else None, and page_text is the freshly-fetched
+    page (None on 304/error paths) — supplied for --autofix-spaces, which
+    derives a corrected quote from the live text and must never do so from
+    a cache answer. hint is diagnostic only — it never changes result.
 
     Any existing archive_url/archive_checked fields on the cache entry
     are preserved across a fresh-fetch write — this function only owns
@@ -337,7 +339,7 @@ def check_evidence(url, evidence, cache, use_cache=True):
     time.sleep(FETCH_DELAY)
     text, resp, error = _fetch_page_text(url, headers)
     if error:
-        return None, False, error, False, None
+        return None, False, error, False, None, None
 
     if text is None:
         # 304 — server confirms unchanged. If we've already verified this
@@ -349,11 +351,11 @@ def check_evidence(url, evidence, cache, use_cache=True):
         cached_result = entry.get("verified", {}).get(ev_key)
         if cached_result is not None:
             cache[url] = {**entry, "checked": date.today().isoformat()}
-            return ("good" if cached_result else "bad"), True, None, False, None
+            return ("good" if cached_result else "bad"), True, None, False, None, None
         time.sleep(FETCH_DELAY)
         text, resp, error = _fetch_page_text(url, {"User-Agent": USER_AGENT})
         if error:
-            return None, False, error, False, None
+            return None, False, error, False, None, None
 
     new_hash = paragraph_hash(text, evidence) or sha256(text)
     verified = dict(entry.get("verified", {}))
@@ -376,11 +378,33 @@ def check_evidence(url, evidence, cache, use_cache=True):
     }
     ambiguous = result and count_occurrences(text, evidence) > 1
     hint = None if result else closest_match_hint(text, evidence)
-    return ("good" if result else "bad"), False, None, ambiguous, hint
+    return ("good" if result else "bad"), False, None, ambiguous, hint, text
+
+
+def write_quote_fix(path, old, new):
+    """Surgically replace `old` with `new` in the source file at `path`
+    (a quote: field value in org frontmatter, or a quoted footnote body).
+
+    Deliberately a plain substring replace rather than a frontmatter
+    re-dump: a re-dump would re-serialize every field and risk reordering
+    keys or changing formatting the file's other content relies on. Only
+    applies when `old` appears exactly once — the quote's own occurrence.
+    If it appears zero times (the parsed value doesn't match the raw text,
+    e.g. YAML-escaped characters) or more than once (a duplicate quote),
+    return False and let the human edit: never guess.
+
+    Returns True if the file was rewritten."""
+    with open(path, encoding="utf-8") as f:
+        src = f.read()
+    if src.count(old) != 1:
+        return False
+    with open(path, "w", encoding="utf-8") as f:
+        f.write(src.replace(old, new, 1))
+    return True
 
 
 def find_footnote_evidence(path):
-    """Yield (url, quote_text, source_label) for footnote definitions
+    """Yield (url, quote_text, source_label, path) for footnote definitions
     that qualify for the machine-verifiable quote convention — see
     text_fragment.py's footnote_citation() for the exactly-one-citation
     eligibility rule and why it exists."""
@@ -390,7 +414,7 @@ def find_footnote_evidence(path):
     for i, line in enumerate(source.split("\n"), start=1):
         for label, url, title, quote in iter_footnote_citations(line):
             source_label = "".join([rel, ":", str(i), " [^", label, "]"])
-            yield url, quote, source_label
+            yield url, quote, source_label, path
 
 
 def save_to_wayback(url, timeout=30):
@@ -453,13 +477,13 @@ def collect_evidence(args):
             items.append((url, evidence,
                          "".join([slug, " [", str(e.get("date", "?")), "] ",
                                   str(e.get("title", ""))[:50]]),
-                         "event"))
+                         "event", path))
 
     if not args.events_only:
         for path in sorted(glob.glob(os.path.join(DOCS_DIR, "**", "*.md"),
                                      recursive=True)):
-            for url, quote, source_label in find_footnote_evidence(path):
-                items.append((url, quote, source_label, "footnote"))
+            for url, quote, source_label, path in find_footnote_evidence(path):
+                items.append((url, quote, source_label, "footnote", path))
 
     return items
 
@@ -476,6 +500,14 @@ def main():
                         help="Only check footnote evidence (skip events)")
     parser.add_argument("--events-only", action="store_true",
                         help="Only check event evidence (skip footnotes)")
+    parser.add_argument("--autofix-spaces", action="store_true",
+                        help="Fix MISMATCHes that differ from the page only by "
+                             "spacing (em-dash spacing, stray spaces): rewrite the "
+                             "stored quote in place to the page's text. Only ever "
+                             "applies to pure space-run differences — punctuation, "
+                             "case, content, or the page having extra text stay "
+                             "MISMATCH for manual judgment. Writes to source files, "
+                             "so run it on a reviewable branch, not in the cron.")
     args = parser.parse_args()
 
     # Always start from the committed cache, even with --no-cache: that flag
@@ -495,13 +527,15 @@ def main():
     errors = 0
     unchanged = 0
     ambiguous_count = 0
+    autofixed = 0
+    autofix_pending = 0
     wayback_saved = 0
     wayback_failed = 0
     by_kind = {"event": {"good": 0, "bad": 0, "errors": 0},
                "footnote": {"good": 0, "bad": 0, "errors": 0}}
 
-    for url, evidence, source_label, kind in evidence_items:
-        result, unchanged_hit, error, ambiguous, hint = check_evidence(
+    for url, evidence, source_label, kind, path in evidence_items:
+        result, unchanged_hit, error, ambiguous, hint, page_text = check_evidence(
             url, evidence, cache, use_cache=not args.no_cache
         )
 
@@ -537,15 +571,44 @@ def main():
                 print("             quote occurs more than once on the page")
                 print("             evidence: " + evidence[:80])
         else:
+            # A MISMATCH that differs from the live page only by spaces is
+            # safe to fix in place (spacing can't change what a quote claims
+            # — see text_fragment.spacing_autofix); everything else stays a
+            # MISMATCH for human judgment.
+            if args.autofix_spaces:
+                if page_text is None:
+                    print("  AUTOFIX SKIPPED  " + source_label +
+                          "  (answered from cache — rerun with --no-cache)")
+                else:
+                    corrected = spacing_autofix(page_text, evidence)
+                    if corrected and write_quote_fix(path, evidence, corrected):
+                        # Record the corrected string as verified against
+                        # this fetch — we have the live text in hand, so
+                        # this is the same evidence-confidence as any good
+                        # result, not an unverified claim.
+                        new_key = sha256(normalize_ws(corrected))
+                        entry = cache.get(url, {})
+                        verified = dict(entry.get("verified", {}))
+                        verified[new_key] = True
+                        cache[url] = {**entry, "verified": verified}
+                        autofixed += 1
+                        print("  AUTOFIXED (spacing only)  " + source_label)
+                        print("            quote: " + evidence[:80])
+                        print("            →      " + corrected[:80])
+                        continue
+                    autofix_pending += 1
             bad += 1
             by_kind[kind]["bad"] += 1
             print("  MISMATCH  " + source_label)
             print("            evidence: " + evidence[:80])
             print("            url: " + url)
             if hint:
-                passage, ratio = hint
+                passage, ratio, diff = hint
                 print("            closest match on page ({:.0%} similar): {}".format(
                     ratio, passage[:120]))
+                if diff:
+                    print("            diff (page − / quote +):")
+                    print(diff)
 
     save_cache(cache)
 
@@ -553,6 +616,11 @@ def main():
     print("Evidence checked: " + str(good) + " good, " + str(bad) + " mismatch, " +
           str(errors) + " fetch errors")
     print("  (" + str(unchanged) + " of those confirmed unchanged since last check)")
+    if autofixed:
+        print("  (" + str(autofixed) + " auto-fixed in place (spacing-only differences))")
+    if autofix_pending:
+        print("  (" + str(autofix_pending) + " spacing-only fixes left for manual edit — "
+              "quote text not found verbatim in the source file)")
     if ambiguous_count:
         print("  (" + str(ambiguous_count) + " of the good matches are AMBIGUOUS)")
     print("  Events: " + str(by_kind["event"]["good"]) + " good, " +

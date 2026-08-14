@@ -24,6 +24,27 @@ location:
   name: Berlin, Germany
   precision: city
 news_page: https://liqd.net/en/blog/
+events:
+- date: '2009-05-01'
+  title: Founded in Berlin as a non-profit association
+  url: https://liqd.net/en/transparenz/
+  quote: Liquid Democracy e.V. ist im Vereinsregister des Amtsgerichtes Charlottenburg
+    (Berlin) unter der VR-Nummer 28939 B eingetragen. Der Liquid Democracy e.V. ist
+    ein gemeinnütziger Verein.
+  proof_level: high
+  url_checked: '2026-08-14'
+- date: '2014-01-01'
+  title: Commissioned by the Berlin Senate Chancellery to build meinBerlin, Berlin's
+    central participation platform
+  url: https://liqd.net/en/projects/meinberlin/
+  quote: One of our most ambitious projects is the development of meinBerlin, a central
+    participation platform for Berlin's citizens.
+  note: The org's annual reports record the Senate Chancellery commission in 2014;
+    the project page dates meinBerlin "since 2014" and it launched for wider use in
+    2016-2017.
+  proof_level: high
+  url_checked: '2026-08-14'
+  notable: true
 activity:
   manual:
     date: 2026-05-28

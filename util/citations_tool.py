@@ -274,10 +274,13 @@ def process_citations(citations, augment=False, archive=False, use_cache=True):
             if not matched and closest_match_hint:
                 hint = closest_match_hint(page_text, quote)
                 if hint:
-                    passage, ratio = hint
+                    passage, ratio, diff = hint
                     report.append(
                         f"    closest match ({ratio:.0%}): {passage[:80]}..."
                     )
+                    if diff:
+                        for line in diff.splitlines():
+                            report.append("    " + line)
 
             # --- context ---
             if matched and augment:

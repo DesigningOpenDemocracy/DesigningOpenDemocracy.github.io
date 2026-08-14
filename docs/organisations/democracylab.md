@@ -20,6 +20,28 @@ location:
   longitude: -122.3321
   name: Seattle, USA
   precision: city
+events:
+- date: '2018-01-01'
+  title: Launched the online volunteer platform in Seattle
+  url: https://solve.mit.edu/solutions/51507
+  quote: Though we launched in Seattle in 2018, we now have projects and/or volunteers
+    from every inhabited continent thanks to our adoption of asynchronous and remote
+    work prior to the pandemic.
+  note: The organisation's MIT Solve profile dates the launch of its online volunteer
+    matchmaking platform to Seattle in 2018, with volunteers and projects since reaching
+    every inhabited continent.
+  proof_level: high
+  url_checked: '2026-08-14'
+- date: '2025-09-10'
+  title: Reached 10,000 connected volunteers
+  url: https://blog.democracylab.org/10-000-volunteers-and-counting/
+  quote: Recently DemocracyLab reached an important milestone- we have connected over
+    10,000 volunteers (UXers, Data Scientists, Devs, and other tech roles) to over
+    300 nonprofits and tech-for-good projects!
+  note: Blog post announcing the milestone of 10,000 skilled volunteers connected
+    to over 300 nonprofits and tech-for-good projects through the platform.
+  proof_level: high
+  url_checked: '2026-08-14'
 activity:
   manual:
     checked: 2026-06-07

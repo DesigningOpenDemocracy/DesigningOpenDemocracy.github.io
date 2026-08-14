@@ -18,6 +18,29 @@ location:
   name: France
   precision: city
 rss_feed: https://anouslademocratie.fr/feed
+events:
+- date: '2016-11-03'
+  title: Founded by a core group of eight citizens
+  url: https://anouslademocratie.fr/2020/04/03/entretien-avec-emmanuel-martin-quelquun-disait-que-lentreprise-privee-ou-publique-ce-sont-des-univers-feodaux/
+  quote: Emmanuel est sociologue de formation, il enseigne les sciences économiques
+    et sociales en classes préparatoires et faisait partie du noyau de huit personnes
+    qui ont donné naissance au mouvement au crépuscule de l’année 2016.
+  note: An interview with founding member Emmanuel Martin describes the movement emerging
+    at the end of 2016 from a core group of eight people; the national RNA association
+    registry records the movement's creation on 3 November 2016.
+  proof_level: high
+  url_checked: '2026-08-14'
+- date: '2019-05-31'
+  title: Published its platform for the 2020 municipal elections
+  url: https://anouslademocratie.fr/municipales-2020/
+  quote: À nous la démocratie! se donne pour unique mission de démocratiser les institutions
+    et les pratiques pour les mettre en accord avec les attentes actuelles de nos
+    concitoyennes et concitoyens.
+  note: The movement published its proposals for the 2020 French municipal elections,
+    including a citizens' assembly chosen by lot, local citizen-initiative referendums
+    and stronger neighbourhood councils.
+  proof_level: high
+  url_checked: '2026-08-14'
 activity:
   manual:
     checked: 2026-06-08

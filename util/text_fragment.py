@@ -207,12 +207,45 @@ def load_archive_urls():
     }
 
 
+def _visible(s):
+    """Make whitespace visible in diff output so a missing/extra space
+    (the classic em-dash case: page renders '— with', quote has '—with')
+    isn't an invisible one-character difference. Only called on already
+    whitespace-normalised strings (normalize_ws collapses every unicode
+    whitespace char, U+00A0 included, down to a single plain space), so a
+    bare space is the only run type worth escaping."""
+    return (s.replace(" ", "␣")
+             .replace("\t", "→").replace("\n", "␤"))
+
+
+def _diff_text(a, b):
+    """Render the character-level differences between two strings as
+    compact -/+ lines (one per differing run, whitespace made visible),
+    or '' if they're identical. Built from SequenceMatcher opcodes —
+    stdlib only, same as the rest of this module. The runs are the
+    unaligned fragments themselves, so the reader sees the exact
+    characters to add/remove rather than a whole-line ndiff."""
+    lines = []
+    for tag, i1, i2, j1, j2 in difflib.SequenceMatcher(
+        None, a, b, autojunk=False
+    ).get_opcodes():
+        if tag == "equal":
+            continue
+        lines.append("    - " + (_visible(a[i1:i2]) or "∅"))
+        lines.append("    + " + (_visible(b[j1:j2]) or "∅"))
+    return "\n".join(lines)
+
+
 def closest_match_hint(page_text, quote_text, min_ratio=0.6):
     """Best-effort fuzzy-diff diagnostic for a MISMATCH report: find the
     passage in page_text that most closely resembles quote_text, using
-    stdlib difflib (no new dependency). Returns (passage, ratio) — ratio
-    is a 0..1 similarity score — or None if page_text/quote_text is empty
-    or nothing clears min_ratio.
+    stdlib difflib (no new dependency). Returns (passage, ratio, diff) —
+    ratio is a 0..1 similarity score and diff is a rendered
+    character-level diff of the two (see _diff_text), making a near-miss
+    fixable at a glance (em-dash spacing, a stray sentence-terminating
+    period, a reworded word) instead of requiring a manual page fetch to
+    locate the one-character divergence. Returns None if page_text/
+    quote_text is empty or nothing clears min_ratio.
 
     Diagnostic only. This must never be used to decide pass/fail — the
     trust model stays exact-match-only (see quote_matches()); this exists
@@ -238,7 +271,95 @@ def closest_match_hint(page_text, quote_text, min_ratio=0.6):
     ratio = difflib.SequenceMatcher(None, passage, quote_norm, autojunk=False).ratio()
     if ratio < min_ratio:
         return None
-    return passage, ratio
+    # Anchor the diff on the longest common block itself, with a bounded
+    # context on each side, rather than diffing the slack-expanded passage
+    # against the whole quote — the two are not aligned to the same start,
+    # so the window offset produces a spurious leading insert/delete
+    # (confirmed: a near-miss differing only in em-dash spacing rendered a
+    # 37-char phantom insertion). Slicing both sides around the same match
+    # keeps them aligned; a real divergence sits within the context either
+    # side of the block, which is what makes this diagnostic useful.
+    context = 80
+    a_lo, a_hi = max(0, match.a - context), min(len(page_norm), match.a + match.size + context)
+    b_lo, b_hi = max(0, match.b - context), min(len(quote_norm), match.b + match.size + context)
+    diff = _diff_text(page_norm[a_lo:a_hi], quote_norm[b_lo:b_hi])
+    return passage, ratio, diff
+
+
+def spacing_autofix(page_text, quote_text):
+    """Return the corrected version of quote_text to store, if the ONLY
+    differences between it and the page are space-run insertions/deletions
+    (the page renders '— with', the pasted quote has '—with') — otherwise
+    None. Caller applies the result (writes it into the source file) and
+    re-verifies; this function never mutates anything itself.
+
+    Why this class is safe to auto-apply, and the others are not: if the
+    only differences are spaces, then the quote's word content is a
+    contiguous substring of the page's by construction, so the fix cannot
+    alter what the quote claims — it's the same non-semantic-whitespace
+    judgment quote_matches() already makes (normalize_ws), just applied to
+    the stored text instead of the comparison. Anything else — letters,
+    case, punctuation (',', '.', ':' at word boundaries are semantic:
+    "stop, thief" != "stop thief"), or the page simply having extra text
+    where the quote ends — returns None and stays a MISMATCH for human
+    judgment. In particular the 'page continues after the quote' case is
+    deliberately NOT auto-fixed: where a quote ends is an editorial choice
+    (trim vs. extend) and the extra text is a genuine page-drift signal a
+    MISMATCH is supposed to surface, not hide.
+
+    The correction is the page's whitespace-normalized text over the
+    quote's span, which is what a browser actually renders (HTML collapses
+    whitespace runs), so a stored correction makes both the verification
+    and the #:~:text= highlight pass. Refuses (returns None) if the
+    corrected text would occur more than once on the page — an ambiguous
+    highlight is worth leaving for a human to lengthen, not worth
+    auto-creating. Never returns a string identical to the (normalized)
+    input, so callers can use 'is not None' as 'something to apply'.
+    """
+    if not page_text or not quote_text:
+        return None
+    page_norm = normalize_ws(page_text)
+    quote_norm = normalize_ws(quote_text)
+    if quote_norm in page_norm:
+        return None  # already a verbatim match — nothing to fix
+    matcher = difflib.SequenceMatcher(None, page_norm, quote_norm, autojunk=False)
+    match = matcher.find_longest_match(0, len(page_norm), 0, len(quote_norm))
+    if match.size == 0:
+        return None
+    # Window covering the whole quote's span on the page, bounded by ~2x
+    # quote length plus margin (the quote is a near-substring, so its span
+    # can't drift more than a couple of quote-lengths from the anchor).
+    margin = len(quote_norm) + 40
+    start = max(0, match.a - margin)
+    end = min(len(page_norm), match.a + match.size + margin)
+    win = page_norm[start:end]
+    opcodes = difflib.SequenceMatcher(None, win, quote_norm, autojunk=False).get_opcodes()
+    # The page is usually a long document and the quote a short extract, so
+    # the opcode list starts and ends with page-only runs (the header before
+    # the quote, the body after it). Those are outside the quote's span and
+    # must be ignored — only page content that sits BETWEEN quote characters
+    # (or is what the quote chars themselves differ from) counts.
+    touched = [j2 > j1 for _, _, _, j1, j2 in opcodes]
+    first, last = touched.index(True), len(touched) - 1 - touched[::-1].index(True)
+    parts = []
+    for tag, i1, i2, j1, j2 in opcodes[first:last + 1]:
+        if tag == "equal":
+            parts.append(quote_norm[j1:j2])
+            continue
+        a, b = win[i1:i2], quote_norm[j1:j2]
+        if a.strip(" ") or b.strip(" "):
+            return None  # a real difference — not spacing
+        # delete/replace: take the page's space run. insert: a is empty,
+        # so appending a drops the quote's stray space. Either way append a.
+        parts.append(a)
+    corrected = "".join(parts)
+    if not corrected or corrected == quote_norm:
+        return None
+    if corrected not in page_norm:
+        return None
+    if count_occurrences(page_norm, corrected) > 1:
+        return None  # ambiguous — human should lengthen the quote
+    return corrected
 
 
 FOOTNOTE_DEF_RE = re.compile(r"^\[\^([^\]]+)\]:\s*(.*)$")

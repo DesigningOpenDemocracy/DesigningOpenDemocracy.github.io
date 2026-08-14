@@ -491,7 +491,23 @@ These are linked from the bottom of the org index table for researcher download.
   python util/check_fragments.py --save-to-wayback  # archive each URL to Wayback Machine
   python util/check_fragments.py --footnotes-only  # only check footnote evidence
   python util/check_fragments.py --events-only     # only check event evidence (original behaviour)
+  python util/check_fragments.py --autofix-spaces  # rewrite spacing-only MISMATCHes in place
   ```
+  - **`--autofix-spaces`** — fixes MISMATCHes whose only differences from the live page
+    are space runs (em-dash spacing, stray spaces): rewrites the stored `quote:` in the
+    source file to the page's text. Safe by construction — if only spaces differ, the
+    quote's words are a contiguous substring of the page's, so the fix can't change what
+    the quote claims — and it also makes the reader-facing `#:~:text=` highlight work,
+    since the page's whitespace-normalised text is what the browser renders. Deliberately
+    **spaces only**: punctuation, case, content changes, and the "page continues past the
+    quote" case (e.g. `quote: "…pilot."` vs page `"…pilot, followed by…"`) all stay
+    MISMATCH for human judgment — where a quote ends is an editorial choice, and the
+    extra text is a genuine page-drift signal a MISMATCH is supposed to surface, not hide.
+    Refuses if the corrected text would appear more than once on the page (human should
+    lengthen the quote instead), refuses to write unless the old string occurs exactly
+    once in the file, and marks the corrected string verified against that fetch. Writes
+    to source files, so **don't pass it in the weekly cron** — run it on a reviewable
+    branch and check the git diff, same as `check_rss.py --update-activity`.
   The `#:~:text=` fragment-building functions it used to also expose via `--add-fragments` now
   live in `util/text_fragment.py` — a small, dependency-free module imported both here (not
   actually needed anymore, since verification only ever checks `quote:`) and by

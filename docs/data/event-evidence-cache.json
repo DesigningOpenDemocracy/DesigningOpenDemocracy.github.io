@@ -16,6 +16,40 @@
       "10d318870f8eff4cf3e3659d7e17c43c87cb4eb19785e9453d6ab10ac5b05ceb": true
     }
   },
+  "https://anouslademocratie.fr/2020/04/03/entretien-avec-emmanuel-martin-quelquun-disait-que-lentreprise-privee-ou-publique-ce-sont-des-univers-feodaux/": {
+    "checked": "2026-08-14",
+    "content_hash": "6f12b1ef2ebbf34df15ebde6ca42a7040fa71b04f6a78f9820f4db252ce9be16",
+    "contexts": {
+      "e02a8439c78b79848277bbdc3e920e26d6cd4850fd0fe1b37a0600953d32f50f": {
+        "prefix": "Dans le premier de nos entretiens avec des membres d\u2019\u00c0 nous la d\u00e9mocratie, nous allons \u00e0 la rencontre de l\u2019un de ses membres fondateurs.",
+        "sha256": "6f12b1ef2ebbf34df15ebde6ca42a7040fa71b04f6a78f9820f4db252ce9be16",
+        "suffix": "Emmanuel, pourquoi \u00e9tais-tu pr\u00e9sent lors de la fondation d\u2019\u00c0 nous la d\u00e9mocratie? Il y a deux mani\u00e8res de r\u00e9pondre. Soit j\u2019insiste sur",
+        "text": "Dans le premier de nos entretiens avec des membres d\u2019\u00c0 nous la d\u00e9mocratie, nous allons \u00e0 la rencontre de l\u2019un de ses membres fondateurs. Emmanuel est sociologue de formation, il enseigne les sciences \u00e9conomiques et sociales en classes pr\u00e9paratoires et faisait partie du noyau de huit personnes qui ont donn\u00e9 naissance au mouvement au cr\u00e9puscule de l\u2019ann\u00e9e 2016."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "e02a8439c78b79848277bbdc3e920e26d6cd4850fd0fe1b37a0600953d32f50f": true
+    }
+  },
+  "https://anouslademocratie.fr/municipales-2020/": {
+    "checked": "2026-08-14",
+    "content_hash": "1645108a292b9a76524544b2f0552f90299245bcdfacb60088f0a672d107bf3c",
+    "contexts": {
+      "510c7964ea9f870d55dc38e4df8a53e2a8395937e8800bb54294dfea19d62cea": {
+        "prefix": "Municipales 2020 Formation au porte-\u00e0-porte Notre strat\u00e9gie pour les municipales L\u2019int\u00e9gralit\u00e9 des propositions",
+        "sha256": "1645108a292b9a76524544b2f0552f90299245bcdfacb60088f0a672d107bf3c",
+        "suffix": "C\u2019est \u00e0 l\u2019\u00e9chelle locale que la vie d\u00e9mocratique devrait \u00eatre la plus inclusive, la plus bouillonnante, la plus passionnante pour chacun.e d\u2019entre no",
+        "text": "\u00c0 nous la d\u00e9mocratie! se donne pour unique mission de d\u00e9mocratiser les institutions et les pratiques pour les mettre en accord avec les attentes actuelles de nos concitoyennes et concitoyens. C\u2019est \u00e0 l\u2019\u00e9chelle locale que la vie d\u00e9mocratique devrait \u00eatre la plus inclusive, la plus bouillonnante, la plus passionnante pour chacun.e d\u2019entre nous."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "510c7964ea9f870d55dc38e4df8a53e2a8395937e8800bb54294dfea19d62cea": true
+    }
+  },
   "https://australiainstitute.org.au/events/climate-integrity-summit/": {
     "checked": "2026-08-14",
     "content_hash": "7bb2ea87bf61e04d53e47bdb86e26357eeb713eb57a49719bd6e599e0b968ad1",
@@ -48,6 +82,23 @@
     "last_modified": null,
     "verified": {
       "939670c4f221cb54b3cbf3b9889c4b83a44ab4e1ddca899410f1e2a8d0b9f882": true
+    }
+  },
+  "https://blog.democracylab.org/10-000-volunteers-and-counting/": {
+    "checked": "2026-08-14",
+    "content_hash": "85dcc5dd764a9de7d00b72bb42939fc5413c746c2e99843950b58f854525bfba",
+    "contexts": {
+      "85dcc5dd764a9de7d00b72bb42939fc5413c746c2e99843950b58f854525bfba": {
+        "prefix": "by this author. DemocracyLab 10 Sep 2025 \u2022 3 min read Important Milestone Reached!",
+        "sha256": "85dcc5dd764a9de7d00b72bb42939fc5413c746c2e99843950b58f854525bfba",
+        "suffix": "We've worked together through the years and have built DemocracyLab into an impactful nonprofit that has made the world a better place through",
+        "text": "Recently DemocracyLab reached an important milestone- we have connected over 10,000 volunteers (UXers, Data Scientists, Devs, and other tech roles) to over 300 nonprofits and tech-for-good projects!"
+      }
+    },
+    "etag": "W/\"55ba-aTA0uJ88XEzqS31qJsdqMhaEZks\"",
+    "last_modified": null,
+    "verified": {
+      "85dcc5dd764a9de7d00b72bb42939fc5413c746c2e99843950b58f854525bfba": true
     }
   },
   "https://bonds.coop/about-us/our-story/": {
@@ -150,6 +201,57 @@
     "last_modified": "Fri, 14 Aug 2026 13:06:35 GMT",
     "verified": {
       "afb1e1080fe732db4825bb8f8be50a341e4949dc4750b55911ece1ead81430ff": true
+    }
+  },
+  "https://citizenos.com/news/citizen-os-annual-report-2024-a-year-of-a-big-revamp/": {
+    "checked": "2026-08-14",
+    "content_hash": "5cb3fdc1a4f026ceaf66a1ecc387d5bad4de4f3bd270a9064827b63e95e718a8",
+    "contexts": {
+      "34b1daed9d05b71cde630ad31f875b5d5f49f7d8babc42aada0292d2f899171e": {
+        "prefix": "for Sustainable Societies\u201d. The Indonesian Opinion Festival 2024: A Milestone for Citizen Engagement",
+        "sha256": "5cb3fdc1a4f026ceaf66a1ecc387d5bad4de4f3bd270a9064827b63e95e718a8",
+        "suffix": "This groundbreaking event engaged 5,354 people, making it our largest festival to date. Notably, it brought 1,562 participants together in person at t",
+        "text": "In December 2024, Citizen OS Indonesia co-organised the 4th Indonesia Opinion Festival (IOF), in collaboration with the Indonesian House of Representatives.This groundbreaking event engaged 5,354 people, making it our largest festival to date. Notably, it brought 1,562 participants together in person at the Indonesian Parliament building\u2014 an unprecedented achievement for civil society."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "34b1daed9d05b71cde630ad31f875b5d5f49f7d8babc42aada0292d2f899171e": true
+    }
+  },
+  "https://citizenos.com/news/citizen-os-platform-now-has-an-improved-look-and-feel/": {
+    "checked": "2026-08-14",
+    "content_hash": "6efb9e00c966e634f536bbeb43b955ca54be518dfa7cd09ddda99f7764d5e308",
+    "contexts": {
+      "87fa3e19f982eac6e718c1ee247b68a3f9ddd55518989a9e5d72b45e2b8866e8": {
+        "prefix": "ed Look and Feel 18 March 2024 Meelika Hirmo",
+        "sha256": "6efb9e00c966e634f536bbeb43b955ca54be518dfa7cd09ddda99f7764d5e308",
+        "suffix": "In the upcoming months, even more improvements and much-anticipated new features will follow.",
+        "text": "We\u2019re very happy to be launching the first phase of our redesign roll-out \u2014 with an improved look and feel, and a more intuitive interface. In the upcoming months, even more improvements and much-anticipated new features will follow."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "87fa3e19f982eac6e718c1ee247b68a3f9ddd55518989a9e5d72b45e2b8866e8": true
+    }
+  },
+  "https://citizenos.com/platform/": {
+    "checked": "2026-08-14",
+    "content_hash": "2b629341c8682c09d2eedaca29d90e98eb4d2ce4ad9dfb37b3ea60790a71e1f2",
+    "contexts": {
+      "2b629341c8682c09d2eedaca29d90e98eb4d2ce4ad9dfb37b3ea60790a71e1f2": {
+        "prefix": "nt funds. We do not sell any of your data to third parties to raise funds. Who are the creators of Citizen OS platform?",
+        "sha256": "2b629341c8682c09d2eedaca29d90e98eb4d2ce4ad9dfb37b3ea60790a71e1f2",
+        "suffix": "Our team is based in Tallinn, Estonia (EU), with an active branch in Jakarta, Indonesia. You can find all team contacts here. We also work w",
+        "text": "Citizen OS is a non-profit organisation, founded in 2015 by philanthropist and tech entrepreneur Ahti Heinla, civic society expert Margo Loor, and the Let\u2019s Do It! Foundation (coordinators of World Cleanup Day)."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "2b629341c8682c09d2eedaca29d90e98eb4d2ce4ad9dfb37b3ea60790a71e1f2": true
     }
   },
   "https://ciudadaniai.org/nosotros/": {
@@ -321,6 +423,23 @@
       "7463aa298a7d3703f3c2e36ccc8e12b0f02ea4f7ebb2edd03e9c640eadb73f66": true
     }
   },
+  "https://demnext.substack.com/p/looking-back-moving-forward-democracynexts": {
+    "checked": "2026-08-14",
+    "content_hash": "0d405ed57bb95e1e243501762120552180c526b1c37b97e7a9510821543a3fe3",
+    "contexts": {
+      "0d405ed57bb95e1e243501762120552180c526b1c37b97e7a9510821543a3fe3": {
+        "prefix": "ure Sep 15, 2025 3 1 Share",
+        "sha256": "0d405ed57bb95e1e243501762120552180c526b1c37b97e7a9510821543a3fe3",
+        "suffix": "Inside, you\u2019ll find: Inspiring stories from three flagship projects Insights into our evolving approach A t",
+        "text": "As we mark DemNext\u2019s third birthday, and the International Day of Democracy, we\u2019re thrilled to share our 2024 Impact Report."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "0d405ed57bb95e1e243501762120552180c526b1c37b97e7a9510821543a3fe3": true
+    }
+  },
   "https://democracy-technologies.org/participation/consensus-building-in-taiwan/": {
     "checked": "2026-08-14",
     "content_hash": "640700c8d55ff5c4c7db97b39b78ebafa5f3de60e5ef2550497d23e9973bfa0b",
@@ -370,6 +489,23 @@
     "last_modified": null,
     "verified": {
       "e4877b3468c72c479a011f77f1c920735a7e56908c54f57bbd5462f5ae696925": true
+    }
+  },
+  "https://ec.europa.eu/newsroom/cc-demos/items/741221/en": {
+    "checked": "2026-08-14",
+    "content_hash": "94e44b79c1177089838a9a9aca33579c8c93455d486fd2c61f9902c0766dfa3a",
+    "contexts": {
+      "94e44b79c1177089838a9a9aca33579c8c93455d486fd2c61f9902c0766dfa3a": {
+        "prefix": "ative Democracy Archives Overview News DemocracyNext official launch",
+        "sha256": "94e44b79c1177089838a9a9aca33579c8c93455d486fd2c61f9902c0766dfa3a",
+        "suffix": "Date: 15/09/2022 permalink: Main URL About this event There is another democratic future bey",
+        "text": "Join the official launch of DemocracyNext on 15 September 2022, the International Day of Democracy."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "94e44b79c1177089838a9a9aca33579c8c93455d486fd2c61f9902c0766dfa3a": true
     }
   },
   "https://en.idi.org.il/articles/47344": {
@@ -423,7 +559,7 @@
     }
   },
   "https://en.wikipedia.org/wiki/Anti-austerity_movement_in_Spain": {
-    "checked": "2026-08-12",
+    "checked": "2026-08-14",
     "content_hash": "0504df7b59e8f81954f4f0fa76cdd9cf6aafa6bd55eeb3cc423698cbb0019424",
     "contexts": {
       "795652a925bdd8df979e18c0b90380d245f7ec9355567cb78a3d9e1aad2d8f58": {
@@ -558,19 +694,12 @@
   },
   "https://en.wikipedia.org/wiki/Glen_Weyl": {
     "checked": "2026-08-14",
-    "content_hash": "e30a7df50bb9d845fb9b2ec2ec30bcf228765789048ad46bc2823114e9708aed",
-    "contexts": {
-      "0bdaa9c2fd1fb2b871ecee89b5a53f12b7095f1599806252be7b5bec02bd325e": {
-        "prefix": "\" that blends economics and computer science in much the way that digital economists blend them at tech companies. == Selected bibliography == \u2ffb \u6578\u4f4d",
-        "sha256": "e30a7df50bb9d845fb9b2ec2ec30bcf228765789048ad46bc2823114e9708aed",
-        "suffix": "(Independently published, Apr 16, 2024, ISBN 979-8321247181), written with Audrey Tang and \u2ffb Community Radical Markets: Uprooting Capitalism and Demo",
-        "text": "== Selected bibliography == \u2ffb \u6578\u4f4d Plurality: The Future of Collaborative Technology and Democracy (Independently published, Apr 16, 2024, ISBN 979-8321247181), written with Audrey Tang and \u2ffb Community Radical Markets: Uprooting Capitalism and Democracy for a Just Society (Princeton University Press, May 15, 2018, ISBN 978-0691177502), written with Eric Posner"
-      }
-    },
+    "content_hash": "cb9d9567efbcfc4bf5c5701a8e41138767300cb996ee846cb569b2acc34da649",
+    "contexts": {},
     "etag": null,
     "last_modified": null,
     "verified": {
-      "0bdaa9c2fd1fb2b871ecee89b5a53f12b7095f1599806252be7b5bec02bd325e": true
+      "380a3016f7cfcdcaa42eb30d881988d9ccb5fb5daad7fef3e92c231e0a683d71": true
     }
   },
   "https://en.wikipedia.org/wiki/International_Institute_for_Democracy_and_Electoral_Assistance": {
@@ -651,19 +780,19 @@
   },
   "https://en.wikipedia.org/wiki/Loomio": {
     "checked": "2026-08-14",
-    "content_hash": "5bbec34580292d81ff038b8e3caafd98d31f234d49f54c1402d7644d65cdbf5e",
+    "content_hash": "23880a28a900c902f72a25d6b879c04ad8846fbe6802b1acc46f9e19d79da787",
     "contexts": {
-      "dbedffff7b1614e9b51b963011e98ec065e99400d9180704e74dea07f8cbfcaf": {
-        "prefix": "iness, and donations from its users. == Reception == Loomio has been used by the Wellington City Council for discussion with their citizens. Loomio",
-        "sha256": "5bbec34580292d81ff038b8e3caafd98d31f234d49f54c1402d7644d65cdbf5e",
-        "suffix": "in April 2014. == Product Overview == === EU specific === Loomio has committed to address the needs and regulations of the EU market. In 2018 the",
-        "text": "== Reception == Loomio has been used by the Wellington City Council for discussion with their citizens. Loomio won the MIX Prize Digital Freedom Challenge in April 2014."
+      "cf0f98f6eec3e01e343d8e25a7508335e772c5ef3a39d7d66becbf13b26d7125": {
+        "prefix": "and other enhancements. As of 2016, Loomio was used in more than 100 countries, with the software being translated into 35 languages. == History ==",
+        "sha256": "23880a28a900c902f72a25d6b879c04ad8846fbe6802b1acc46f9e19d79da787",
+        "suffix": "It was utilized in the Occupy movement in New Zealand. After using the first prototype in this, the team behind Loomio felt that it would be easier t",
+        "text": "== History == Loomio emerged from the Occupy movement. In 2012, it launched its first prototype. It was utilized in the Occupy movement in New Zealand. After using the first prototype in this, the team behind Loomio felt that it would be easier to give everyone a voice with an online software, leading to the launch of Loomio 1.0. Since the launch of Loomio 1.0, Loomio has stopped using occupy hand-signals in the interface. It has since been developed into a social enterprise as Loomio Cooperative Limited that is a platform cooperative."
       }
     },
     "etag": null,
     "last_modified": null,
     "verified": {
-      "dbedffff7b1614e9b51b963011e98ec065e99400d9180704e74dea07f8cbfcaf": true
+      "cf0f98f6eec3e01e343d8e25a7508335e772c5ef3a39d7d66becbf13b26d7125": true
     }
   },
   "https://en.wikipedia.org/wiki/Make_It_16_(New_Zealand)": {
@@ -989,6 +1118,23 @@
       "7119e2602c6b658dcc60b51019a44b6582063ea3485d51f2a750b32e3461314b": true
     }
   },
+  "https://ethelo.com/case-study/engaged-california-program/": {
+    "checked": "2026-08-14",
+    "content_hash": "b8efbae53b2fe9ceb65d207d7ab5ecf22dc1244543fca0cd79514bbf18de1157",
+    "contexts": {
+      "541d0371f211c0e3a493f87a17814c5585cc2b5dc5fe01524b6d7c5408169b06": {
+        "prefix": "ponds and improves.\u201d \u2014 Governor Gavin Newsom Overview",
+        "sha256": "b8efbae53b2fe9ceb65d207d7ab5ecf22dc1244543fca0cd79514bbf18de1157",
+        "suffix": "Designed as a \u201cmodern town hall,\u201d the program brings Californians into structured, civil, and policy-relevant conversations on complex public challen",
+        "text": "Engaged California is a first-in-the-nation digital democracy initiative launched by the State of California to improve public engagement, rebuild trust, and integrate lived experience directly into government decision-making. Designed as a \u201cmodern town hall,\u201d the program brings Californians into structured, civil, and policy-relevant conversations on complex public challenges."
+      }
+    },
+    "etag": null,
+    "last_modified": "Fri, 07 Aug 2026 04:38:34 GMT",
+    "verified": {
+      "541d0371f211c0e3a493f87a17814c5585cc2b5dc5fe01524b6d7c5408169b06": true
+    }
+  },
   "https://europeandemocracyhub.epd.eu/exploring-worldwide-democratic-innovations-taiwan/": {
     "checked": "2026-08-14",
     "content_hash": "67e9fe3e74d10ed92d44c34d19a38ccd92d4972e52ac5998a034d2fc368a49a9",
@@ -1007,7 +1153,7 @@
     }
   },
   "https://events.humanitix.com/radicalxchange-foundation-in-melbourne": {
-    "checked": "2026-08-12",
+    "checked": "2026-08-14",
     "content_hash": "5760c293c05f53070e2c0ae9d9c0abbc13710775fe504090d59aaa4ed3ddff7f",
     "contexts": {
       "5760c293c05f53070e2c0ae9d9c0abbc13710775fe504090d59aaa4ed3ddff7f": {
@@ -1093,12 +1239,19 @@
   },
   "https://glenweyl.com/radicalxchange/": {
     "checked": "2026-08-14",
-    "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "contexts": {},
+    "content_hash": "a010f2e8072c84a697d2cd73667f7a7b9d4436b8e6a29df63775be7e70d14445",
+    "contexts": {
+      "a010f2e8072c84a697d2cd73667f7a7b9d4436b8e6a29df63775be7e70d14445": {
+        "prefix": "Foundation (RxC) is a global movement for next-generation political economies",
+        "sha256": "a010f2e8072c84a697d2cd73667f7a7b9d4436b8e6a29df63775be7e70d14445",
+        "suffix": "RxC connects people from all walks of life \u2013 ranging from social scientists and technologists to artists and activists. The movement is ever-ev",
+        "text": "Founded by economist Glen Weyl in 2018, the RadicalxChange Foundation is a 501(c)(3) nonprofit dedicated to advancing the RxC movement, to building community, and to education about democratic innovation."
+      }
+    },
     "etag": null,
     "last_modified": null,
     "verified": {
-      "a010f2e8072c84a697d2cd73667f7a7b9d4436b8e6a29df63775be7e70d14445": false
+      "a010f2e8072c84a697d2cd73667f7a7b9d4436b8e6a29df63775be7e70d14445": true
     }
   },
   "https://ia.acs.org.au/article/2018/blockchain-to-revolutionise-e-voting.html": {
@@ -1143,6 +1296,40 @@
     "last_modified": "Fri, 14 Aug 2026 02:08:49 GMT",
     "verified": {
       "b303350a68e27c8c5e02403b8b711a3241802bbd3513f0cb1f0e8f3a29071435": false
+    }
+  },
+  "https://liqd.net/en/projects/meinberlin/": {
+    "checked": "2026-08-14",
+    "content_hash": "b5fd40a2d4d8c76c1d10484b84b69769d4c016b3e95c3bc2849e358c46f05efb",
+    "contexts": {
+      "d79bebd8c21cdc6eddc92497100a1bd98a058456b16636fe36b373c075836576": {
+        "prefix": "year: since 2014 users: ca. 45.000 partners: Regierender B\u00fcrgermeister von Berlin - Senatskanzlei",
+        "sha256": "b5fd40a2d4d8c76c1d10484b84b69769d4c016b3e95c3bc2849e358c46f05efb",
+        "suffix": "The platform is the first point of contact for all digital participation offerings in the capital that emanate from politics and administration. Its",
+        "text": "One of our most ambitious projects is the development of meinBerlin, a central participation platform for Berlin's citizens. The platform is the first point of contact for all digital participation offerings in the capital that emanate from politics and administration. Its aim is to bundle all possible participation procedures - both at state and district level - in one place and thus make them easy for citizens to find and access. At the same time, myBerlin enables administrative staff to obtain citizen feedback on their projects with little effort and at no additional cost."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "d79bebd8c21cdc6eddc92497100a1bd98a058456b16636fe36b373c075836576": true
+    }
+  },
+  "https://liqd.net/en/transparenz/": {
+    "checked": "2026-08-14",
+    "content_hash": "d57608b88e2c6d9b5e113c0a7fc1b6873cd230617a0f64c41e7251c0f114ae0f",
+    "contexts": {
+      "d57608b88e2c6d9b5e113c0a7fc1b6873cd230617a0f64c41e7251c0f114ae0f": {
+        "prefix": "Anfragen zum Thema Transparenz und Finanzen zust\u00e4ndige Person: Moritz Ritter m.ritter@liqd.net Tel.: +49 30-62933553-7",
+        "sha256": "d57608b88e2c6d9b5e113c0a7fc1b6873cd230617a0f64c41e7251c0f114ae0f",
+        "suffix": "Ust-IdNr. DE281288811 Gr\u00fcndungsjahr: 2009 2 / Satzung Unsere Satzung inklusive des Vereinszwecks kann unter Sa",
+        "text": "Liquid Democracy e.V. ist im Vereinsregister des Amtsgerichtes Charlottenburg (Berlin) unter der VR-Nummer 28939 B eingetragen. Der Liquid Democracy e.V. ist ein gemeinn\u00fctziger Verein."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "d57608b88e2c6d9b5e113c0a7fc1b6873cd230617a0f64c41e7251c0f114ae0f": true
     }
   },
   "https://mckinnon.co/about-us": {
@@ -1224,7 +1411,7 @@
         "text": "Kimbra co-founded MosaicLab in 2013 and sees the group as a platform for continuous learning about participation. She believes that these learnings should be shared with others, ultimately contributing to quality and meaningful engagement becoming the norm in the way that decisions are made."
       }
     },
-    "etag": "W/\"13bd23f04b0f0691dd865fa4b78ab4f7\"",
+    "etag": "W/\"13bd23f04b0f0691dd865fa4b78ab4f7--gzip\"",
     "last_modified": null,
     "verified": {
       "6d0107d03961bf9c85d61a0729b7654f779e719eda72bd637b6b275890a3d592": true
@@ -1330,6 +1517,23 @@
     "last_modified": null,
     "verified": {
       "b0fd8227f28a6f87992769921772f646b74777e4904d50a3119b254a7b6d22bd": true
+    }
+  },
+  "https://opennorth.ca/resources/citizen-budget/": {
+    "checked": "2026-08-14",
+    "content_hash": "19395ec633511fe627917532c9a729057f8d841e4201a3bc000e72c637fed378",
+    "contexts": {
+      "19395ec633511fe627917532c9a729057f8d841e4201a3bc000e72c637fed378": {
+        "prefix": "Open North & Ethelo Announce Acquisition of Citizen Budget Tool Press Release Press Release",
+        "sha256": "19395ec633511fe627917532c9a729057f8d841e4201a3bc000e72c637fed378",
+        "suffix": "About Citizen Budget Launched in 2011 by Open North, Citizen Budget simulator has been used by over 100 Canadian municipalities for their",
+        "text": "Ethelo and Open North are excited to announce the acquisition by Ethelo of \u201cCitizen Budget\u201d- Canada\u2019s leading municipal budget consultation tool."
+      }
+    },
+    "etag": null,
+    "last_modified": "Fri, 14 Aug 2026 11:41:57 GMT",
+    "verified": {
+      "19395ec633511fe627917532c9a729057f8d841e4201a3bc000e72c637fed378": true
     }
   },
   "https://peoplepower21.org/English": {
@@ -1510,6 +1714,23 @@
       "20e6e6902c0a0287a487e72910cf53a6f385b53c10413bfe63c121e7dee87b21": true
     }
   },
+  "https://solve.mit.edu/solutions/51507": {
+    "checked": "2026-08-14",
+    "content_hash": "d5a9dcb8154b480706770169b9bf0e10e93cfcdc69a132981171d87a7b02cdf4",
+    "contexts": {
+      "833309c1e8b7fc7e744f915aeba755d8573e66dd4691fb844187bbf649569216": {
+        "prefix": ". Explain why you selected this stage of development for your solution. DemocracyLab\u2019s solution is in the growth stage.",
+        "sha256": "d5a9dcb8154b480706770169b9bf0e10e93cfcdc69a132981171d87a7b02cdf4",
+        "suffix": "One growth example is our \u201c A Better Tech-a-thon \u201d event, which we are convening in October in collaboration with NYU, the Public Interest Technology",
+        "text": "DemocracyLab\u2019s solution is in the growth stage. Though we launched in Seattle in 2018, we now have projects and/or volunteers from every inhabited continent thanks to our adoption of asynchronous and remote work prior to the pandemic. One growth example is our \u201c A Better Tech-a-thon \u201d event, which we are convening in October in collaboration with NYU, the Public Interest Technology University Network, and Code for America. The event will engage students and faculty from many of the country's most outstanding universities, professionals from tech companies, and members of Code for America's Brigade Network to contribute to impactful tech-for-good projects. This event will give grassroots volunteers the opportunity to work side by side with students, faculty, and professionals to improve their skills, grow their networks, and advance their careers."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "833309c1e8b7fc7e744f915aeba755d8573e66dd4691fb844187bbf649569216": true
+    }
+  },
   "https://stocznia.org.pl/en/about-shipyard/": {
     "checked": "2026-08-14",
     "content_hash": "6686a58250e335ed90f716edfd4130f33a471e120ffbc9a84a32a69da589567a",
@@ -1576,6 +1797,40 @@
     "last_modified": null,
     "verified": {
       "f2bc1350fab07763d03538042100f87084a4a232f7caa8b0f69e0187361eae48": true
+    }
+  },
+  "https://web.archive.org/web/20190718131041/https://policyincubator.com/home/about_us": {
+    "checked": "2026-08-14",
+    "content_hash": "da3667d0384ce21370c7572b25b5e4b602ca2a6070df321e3b3d2971d9386504",
+    "contexts": {
+      "76232b5ffc5c4d5295d37f9625a47b73af148adcd15e29334ee060306d5f2172": {
+        "prefix": "ne for political action, giving opportunities for community engagement groups, activists and aspiring leaders to achieve their political goals.",
+        "sha256": "da3667d0384ce21370c7572b25b5e4b602ca2a6070df321e3b3d2971d9386504",
+        "suffix": "This crowdsourcing model not only results in superior public policy, but also provides an ideal platform for grassroots campaigners to build communit",
+        "text": "The strength of this decentralised policy making and deliberation model is based on the power of 'the crowd'. This crowdsourcing model not only results in superior public policy, but also provides an ideal platform for grassroots campaigners to build community support for their causes. This will make politics more accessible to all corners of the Australian public!"
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "76232b5ffc5c4d5295d37f9625a47b73af148adcd15e29334ee060306d5f2172": true
+    }
+  },
+  "https://web.archive.org/web/20201025042342/https://www.coalitionofeveryone.com/": {
+    "checked": "2026-08-14",
+    "content_hash": "1f64be74ded78db93e4be4c0450c20460a7c4a987f3913c85cd1e3eba4335de1",
+    "contexts": {
+      "1f64be74ded78db93e4be4c0450c20460a7c4a987f3913c85cd1e3eba4335de1": {
+        "prefix": "About Team Contact",
+        "sha256": "1f64be74ded78db93e4be4c0450c20460a7c4a987f3913c85cd1e3eba4335de1",
+        "suffix": "VISION & MISSION Disrupting politics of fear and building a polit",
+        "text": "Renewing democratic culture for citizen, community, and policy-led change."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "1f64be74ded78db93e4be4c0450c20460a7c4a987f3913c85cd1e3eba4335de1": true
     }
   },
   "https://web.archive.org/web/20201025045936/https://www.coalitionofeveryone.com/post/citizens-assembly": {
@@ -1795,6 +2050,37 @@
       "3bbbfb3bbb443ceaa2c37f75a208d4dcbed53c85459ce09db3747652442aff49": true
     }
   },
+  "https://www.democratieouverte.org/qui-sommes-nous": {
+    "checked": "2026-08-14",
+    "content_hash": "e941ff4adf01e2cccc86336c9d4c8bb9a4cc77f9c3585bbbf6bfd5f7773df3da",
+    "contexts": {
+      "91d03e3b55e6076e17623ab42f63cbc93e175bf0635cbf3f3ed10c372b98b2ee": {
+        "prefix": "mocratie et de l\u2019urgence climatique. L'objectif? Introduire un dispositif de participation citoyenne au sein des instances d\u00e9cisionnelles. \u200d",
+        "sha256": "af6ad9a0798d60a6ebeea26a2c7d6cbbbcc11651e2f32bd4d245a39e0462275c",
+        "suffix": ", avec pour mandat de \u201cd\u00e9finir une s\u00e9rie de mesures permettant d\u2019atteindre une baisse d\u2019au moins 40 % des \u00e9missions de gaz \u00e0 effet de serre d\u2019ici 2030",
+        "text": "Le 25 avril 2019, face \u00e0 ce mouvement social intense, le Pr\u00e9sident Emmanuel Macron annonce la cr\u00e9ation de la \u00ab Convention Citoyenne pour Le Climat \u00bb: 150 fran\u00e7aises et fran\u00e7ais tir\u00e9s au sort durant l'\u00e9t\u00e9, avec pour mandat de \u201cd\u00e9finir une s\u00e9rie de mesures permettant d\u2019atteindre une baisse d\u2019au moins 40 % des \u00e9missions de gaz \u00e0 effet de serre d\u2019ici 2030 (par rapport \u00e0 1990) dans un esprit de justice sociale. Plusieurs membres du collectif ont fait partie de l'\u00e9quipe de gouvernance."
+      },
+      "c5ee437f553c19f28860fd9a564aa6cd0fcf9c781422623f432e35426c5f369e": {
+        "prefix": "Notre histoire 2012 Un collectif donne naissance \u00e0 D\u00e9mocratie Ouverte",
+        "sha256": "b222d97c8fa119ab9069d7d3d0e0dec7842e14bb664b425d6244d192f9a7113a",
+        "suffix": "qui regroupe les innovateurs d\u00e9mocratiques avec des chercheurs, des professionnels, des \u00e9lus, des associations et des citoyens qui cherchent eux auss",
+        "text": "En 2012, des citoyennes et citoyens engag\u00e9s, qui portent des projets pour transformer notre vieux syst\u00e8me politique (comme Parlement & Citoyens, Voxe, ou encore Questionnez vos \u00e9lus), d\u00e9cident de se regrouper et de formaliser leur collectif en cr\u00e9ant une association qui regroupe les innovateurs d\u00e9mocratiques avec des chercheurs, des professionnels, des \u00e9lus, des associations et des citoyens qui cherchent eux aussi \u00e0 rendre notre d\u00e9mocratie plus transparente, participative et collaborative."
+      },
+      "e941ff4adf01e2cccc86336c9d4c8bb9a4cc77f9c3585bbbf6bfd5f7773df3da": {
+        "prefix": "2016 Syst\u00e8me D, le tout premier incubateur d\u00e9di\u00e9 \u00e0 accompagner les projets d\u2019innovation d\u00e9mocratique",
+        "sha256": "e941ff4adf01e2cccc86336c9d4c8bb9a4cc77f9c3585bbbf6bfd5f7773df3da",
+        "suffix": "Incubateur devenu acc\u00e9l\u00e9rateur, Syst\u00e8me D a accompagn\u00e9 17 projets en 3 ans! 2019-2020 L'associa",
+        "text": "Avec le soutien de la Caisse des D\u00e9p\u00f4ts, du Cr\u00e9dit Coop\u00e9ratif, d\u2019Accenture, de la MGEN, du groupe La Poste et de la Fondation La France s\u2019engage, D\u00e9mocratie Ouverte lance le premier incubateur sp\u00e9cifiquement d\u00e9di\u00e9 \u00e0 accompagner les projets d\u2019innovation d\u00e9mocratique."
+      }
+    },
+    "etag": null,
+    "last_modified": "Fri, 14 Aug 2026 13:23:17 GMT",
+    "verified": {
+      "91d03e3b55e6076e17623ab42f63cbc93e175bf0635cbf3f3ed10c372b98b2ee": true,
+      "c5ee437f553c19f28860fd9a564aa6cd0fcf9c781422623f432e35426c5f369e": true,
+      "e941ff4adf01e2cccc86336c9d4c8bb9a4cc77f9c3585bbbf6bfd5f7773df3da": true
+    }
+  },
   "https://www.designingopendemocracy.com/blog/2016/12/19/inaugural-designing-open-democracy-meeting/": {
     "checked": "2026-08-14",
     "content_hash": "596d09e225107816bbb960ce2d396ba03012597f3e3c7239777d350befe04331",
@@ -1840,8 +2126,8 @@
         "text": "My main thrust is government organized along scientific principles which is as much to say as the application of cybernetic principles to government. Democracy is part of that and Stafford Beer, who is the father of management cybernetics, was highly regarded by the Open Democracy organisation as witnessed by the obituary published for him by Rosemary Bechler, the International Editor, of Open Democracy - https://www.opendemocracy.net/node/611"
       }
     },
-    "etag": "W/\"6a7e7948-3bb1b\"",
-    "last_modified": "Fri, 14 Aug 2026 02:11:20 GMT",
+    "etag": "W/\"6a7e7a3f-3bb1b\"",
+    "last_modified": "Fri, 14 Aug 2026 02:15:27 GMT",
     "verified": {
       "bede7c49e95577b8277ad463bb91abccf42180fb72e768eccea82d61fcd628e0": true
     }
@@ -1932,6 +2218,23 @@
     "last_modified": "Thu, 13 Aug 2026 16:23:12 GMT",
     "verified": {
       "57bb32e4bdcd6c2f1a494cdba58b090e8ae2d4bcf1f9a19dc6c7d96fa683588c": true
+    }
+  },
+  "https://www.ghst.de/presse/pressemeldung-im-detail/app-democracy-fuer-transparentere-demokratie-geht-an-den-start": {
+    "checked": "2026-08-14",
+    "content_hash": "49f63541cf3a123ea33ad9d4842bb1a647d6463b7964c3800b88daaa8f4c674b",
+    "contexts": {
+      "4e5dd38efcb0a295598dfa0ac6482cdba414274110bb5a7720772a8526441ad2": {
+        "prefix": "mmungsbild der Bev\u00f6lkerung selbst abstimmen; Hertie-Kollegiat Marius Kr\u00fcger sammelte durch Crowdfunding 35.000 Euro f\u00fcr seine App-Idee",
+        "sha256": "49f63541cf3a123ea33ad9d4842bb1a647d6463b7964c3800b88daaa8f4c674b",
+        "suffix": "Die Nutzer haben die M\u00f6glichkeit, sich \u00fcber die Antr\u00e4ge der Fraktionen zu informieren, den Stand der Gesetze zu verfolgen und selbst ihre Stimme abzu",
+        "text": "Mit der App DEMOCRACY startet am 1. Oktober die bundesweit erste App, mit der sich B\u00fcrgerinnen und B\u00fcrger einen Echtzeit-Einblick in die Gesetzesfindung des Deutschen Bundestages verschaffen k\u00f6nnen. Die Nutzer haben die M\u00f6glichkeit, sich \u00fcber die Antr\u00e4ge der Fraktionen zu informieren, den Stand der Gesetze zu verfolgen und selbst ihre Stimme abzugeben. \u201eStudien zeigen, dass sich die B\u00fcrgerinnen und B\u00fcrger mehr Transparenz und politische Beteiligungsm\u00f6glichkeiten w\u00fcnschen als nur alle vier Jahre ihr Kreuzchen zu machen\u201c, sagt Kollegiat des Hertie-Innovationskollegs Marius Kr\u00fcger (24). \u201eZudem vertrauen immer weniger Menschen dem Regierungshandeln. Diese sp\u00fcrbare Unzufriedenheit brachte mich auf die Idee, eine App f\u00fcr transparentere Demokratie zu entwickeln.\u201c"
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "4e5dd38efcb0a295598dfa0ac6482cdba414274110bb5a7720772a8526441ad2": true
     }
   },
   "https://www.govtech.com/civic/New-Global-Civic-Tech-Group-Emerges-from-The-Omidyar-Group.html": {
@@ -2085,6 +2388,23 @@
     "last_modified": null,
     "verified": {
       "201ce8f32676a307e7c15c13df5f831d0246fafd2b72e9c02cfb51208aac4e13": true
+    }
+  },
+  "https://www.mcconnellfoundation.ca/funding-database/ethelo/": {
+    "checked": "2026-08-14",
+    "content_hash": "a44b3889fff2a173b2e8f9d798a7506ca1fa690f35719ab69d6b81a1a70d58ec",
+    "contexts": {
+      "c6a56ff2457811cb6a856aa80c1b482c34f40ec024488d3d02d26871c5cea2c7": {
+        "prefix": "January 8, 2020 Ethelo Share This Background of the organization:",
+        "sha256": "a44b3889fff2a173b2e8f9d798a7506ca1fa690f35719ab69d6b81a1a70d58ec",
+        "suffix": "Ethelo is comprised of two entities. First, Ethelo Decisions, a technology company dedicated to helping organizations focus collective intelligence t",
+        "text": "Founded in 2011, Ethelo is dedicated to advancing new forms of democracy using internet technology. Ethelo is comprised of two entities. First, Ethelo Decisions, a technology company dedicated to helping organizations focus collective intelligence to make good decisions more quickly; second, Ethelo Democracy, a non-profit society dedicated to a more effective, citizen-engaged democracy. Ethelo Decisions undertakes commercial projects to fund the development of the Ethelo technology, which is provided to Ethelo Democracy and its partners for the cost of hardware."
+      }
+    },
+    "etag": "\"6647-1786713908;br\"",
+    "last_modified": null,
+    "verified": {
+      "c6a56ff2457811cb6a856aa80c1b482c34f40ec024488d3d02d26871c5cea2c7": true
     }
   },
   "https://www.mmzy.org.cn/mmgk/jianjie/11796.aspx": {
@@ -2280,10 +2600,27 @@
         "text": "vTaiwan has always demonstrated how civic communities can innovate in democratic participation by combining open-source platforms, commercial tools, and AI. Currently, the community integrates tools such as"
       }
     },
-    "etag": "W/\"10c1438e2e236336152c367b6a7c7691--gzip\"",
+    "etag": "W/\"10c1438e2e236336152c367b6a7c7691\"",
     "last_modified": null,
     "verified": {
       "8b1132d10f23f3c8368c2b3e9233c0fb121095a3bdafd9c9521eb699bd32f69d": true
+    }
+  },
+  "https://www.pressenza.com/de/2017/12/demokratie-echtzeit-neue-app-democracy-erfolgreich-crowdfinanziert/": {
+    "checked": "2026-08-14",
+    "content_hash": "3d04f5dc226d4bc4a2f4b08d8af4e4101599838e34f9dc65741e240f6713b5f1",
+    "contexts": {
+      "5ba19627a56207c7330b1f7693e57c2b55442ad4ff54133c17ccfef57e9bce4a": {
+        "prefix": "ches Crowdfunding Vergangenen Sonntag (26.11.) konnte das sich mittlerweile formierte Team um Kr\u00fcger einen ersten gro\u00dfen Meilenstein verbuchen:",
+        "sha256": "3d04f5dc226d4bc4a2f4b08d8af4e4101599838e34f9dc65741e240f6713b5f1",
+        "suffix": ". \u201cWir freuen uns sehr, dass \u00fcber 580 Unterst\u00fctzer*innen von unserer Idee \u00fcberzeugt sind und uns das Vertrauen schenken. Gemeinsam mit Ihnen arbeiten",
+        "text": "Vergangenen Sonntag (26.11.) konnte das sich mittlerweile formierte Team um Kr\u00fcger einen ersten gro\u00dfen Meilenstein verbuchen: der erfolgreiche Abschluss ihres initialen Crowdfundings sicherte ihnen gut 35.000 \u20ac zweckgebundenes Startkapital f\u00fcr die Programmierung einer ersten Version der App. \u201cWir freuen uns sehr, dass \u00fcber 580 Unterst\u00fctzer*innen von unserer Idee \u00fcberzeugt sind und uns das Vertrauen schenken. Gemeinsam mit Ihnen arbeiten wir die kommenden 4 Monate an der Entwicklung dieses Prototyps\u201d, erl\u00e4utert der Gr\u00fcnder der Initiative Marius Kr\u00fcger den Schritt. \u201cSobald im April 2018 eine erste Version verf\u00fcgbar ist, stellen wir diese unmittelbar unseren Crowdfunding-Unterst\u00fctzer*innen zur Verf\u00fcgung und lassen sie die ersten Tests durchf\u00fchren und die Benutzerf\u00fchrung bewerten\u201d, so Kr\u00fcger weiter. \u201cNach \u00dcberwindung der ersten Kinderkrankheiten soll die Plattform dann Mitte n\u00e4chsten Jahres allgemein zug\u00e4nglich gemacht werden.\u201d"
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "5ba19627a56207c7330b1f7693e57c2b55442ad4ff54133c17ccfef57e9bce4a": true
     }
   },
   "https://www.prsa.org.au/qn/2011a_.html": {
@@ -2432,6 +2769,128 @@
       "e9727a46395a649f719290388f82e96c6f5ce2e4db6dab33ce4ced13346cc8c4": true
     }
   },
+  "https://www.sortitionfoundation.org/amplifying_voices_on_housing": {
+    "checked": "2026-08-14",
+    "content_hash": "2224993e2850071296d14ded7ab206ddbf59c8feddf3af3b2270a6685fb35de6",
+    "contexts": {
+      "6c9bfaedf01881883bdff59004faa2111f46ad4353d2f243ea30de72da504b15": {
+        "prefix": "Client Case Studies Amplifying voices on housing 30 March, 2025 Amplifying voices on housing",
+        "sha256": "2224993e2850071296d14ded7ab206ddbf59c8feddf3af3b2270a6685fb35de6",
+        "suffix": "They were asked: How can Australians get a fair go at housing now and into the future? We recruited the participants over 11 demographic",
+        "text": "On 28 January 2025, we selected 120 participants for AMPLIFY National Housing AMPLIFICATION, a ground-breaking national deliberative process bringing Australians from across the continent together in Sydney for a weekend of deliberation from Friday 21 to Sunday 23 February 2025. They were asked:"
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "6c9bfaedf01881883bdff59004faa2111f46ad4353d2f243ea30de72da504b15": true
+    }
+  },
+  "https://www.sortitionfoundation.org/australia_update": {
+    "checked": "2026-08-14",
+    "content_hash": "c5cb8783879bf1eb464556df6485d03c6c950a4700f35a2c0a41dd98a82179c1",
+    "contexts": {
+      "ee7b46512566846194f168827c07bf678e45c5e4af077f562782697abe7f36b4": {
+        "prefix": "n. With Council Plans due this year, there have been lots of deliberative panels - and many of these have been chosen through random selection.",
+        "sha256": "c5cb8783879bf1eb464556df6485d03c6c950a4700f35a2c0a41dd98a82179c1",
+        "suffix": ", followed by choosing a demographically representative cohort using our selection software, the fairest algorithm in the world. To take one exa",
+        "text": "Since January 2020, we've helped conduct independent selections, based on demographic criteria and on the fairest algorithm for random selection, in 11 councils, with seven of those using the 'gold standard' of sending out letters to randomly selected addresses, followed by choosing a demographically representative cohort using our selection software, the fairest algorithm in the world."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "ee7b46512566846194f168827c07bf678e45c5e4af077f562782697abe7f36b4": true
+    }
+  },
+  "https://www.sortitionfoundation.org/become_a_member_australia": {
+    "checked": "2026-08-14",
+    "content_hash": "8252ba80f0cbb1d791ff8cd8b5872c27e4f11fde9e1d2df7e23773be63ba74a4",
+    "contexts": {
+      "f0d9f84381b92c97bcf1f0ddc129417fe3ea0483b8279ad79bc075cc201659ba": {
+        "prefix": "Sortition Foundation Australia Chapter 03 September, 2020 Sortition Foundation Australia Chapter",
+        "sha256": "8252ba80f0cbb1d791ff8cd8b5872c27e4f11fde9e1d2df7e23773be63ba74a4",
+        "suffix": "if you want to help, or just want to learn more about sortition in Australia. The Sortition Foundation Australia Chapter meets once a month onl",
+        "text": "We want to change the way politics is done in Australia! Join us if you want to help, or just want to learn more about sortition in Australia."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "f0d9f84381b92c97bcf1f0ddc129417fe3ea0483b8279ad79bc075cc201659ba": true
+    }
+  },
+  "https://www.sortitionfoundation.org/ecps_2025": {
+    "checked": "2026-08-14",
+    "content_hash": "e68c639682af8645dfa561c38b58792fdec558d0e0b5255062b2c9424363b318",
+    "contexts": {},
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "f17590386deaa19fd3088fc7fb291712a7519d31aedf4bcf27d6c7324a68d326": false
+    }
+  },
+  "https://www.sortitionfoundation.org/gm_polling_may_2026": {
+    "checked": "2026-08-14",
+    "content_hash": "5d5fea50d84db458511c9444616083aaba007fbaca96e695e5f05d1b07d61a9b",
+    "contexts": {},
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "532201edf6a343fbcffefd73a71ea2da04f10c9279b4b2575e2cd08bb3ed7800": false
+    }
+  },
+  "https://www.sortitionfoundation.org/introducing_the_open_democratic_lottery_platform": {
+    "checked": "2026-08-14",
+    "content_hash": "c89b222c503bde006daa8f785412fc3d77d57189bdbbb23bb956dfbdca2468b0",
+    "contexts": {
+      "0b3365698aa53adaff7dc1203d5fc1464d83ea0e786a8c44aaade745adc6fbdc": {
+        "prefix": "OpenDLP). Sortition Lab is where we develop tools and applications to support and enhance the work we and our partners do to upgrade democracy.",
+        "sha256": "c89b222c503bde006daa8f785412fc3d77d57189bdbbb23bb956dfbdca2468b0",
+        "suffix": "Work began earlier this year on what will be a three-year project in total. Since we started Sortition Foundation in 2017 we have run these sor",
+        "text": "Sortition Lab is where we develop tools and applications to support and enhance the work we and our partners do to upgrade democracy. Last year we secured funding to build OpenDLP, a brand new open-source digital platform that will make democratic lotteries more inclusive by automating the process for selecting participants for citizens' assemblies. Work began earlier this year on what will be a three-year project in total."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "0b3365698aa53adaff7dc1203d5fc1464d83ea0e786a8c44aaade745adc6fbdc": true
+    }
+  },
+  "https://www.sortitionfoundation.org/uk_poll_may_2025": {
+    "checked": "2026-08-14",
+    "content_hash": "76cbc4516cc42d9b46da26b9ffbcd00d0a59014ef0164e2d43e5fdd494894510",
+    "contexts": {
+      "76cbc4516cc42d9b46da26b9ffbcd00d0a59014ef0164e2d43e5fdd494894510": {
+        "prefix": "K polling May 2025 08 May, 2025 New poll finds widespread support for replacing the House of Lords",
+        "sha256": "76cbc4516cc42d9b46da26b9ffbcd00d0a59014ef0164e2d43e5fdd494894510",
+        "suffix": "Polling published today on trust and House of Lords reform show that 2024 Reform voters trust citizen assembly members more, and members of par",
+        "text": "43% of British adults, including 46% of adults living in the North, say that replacing the House of Lords with a citizens' assembly would increase their trust in politics"
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "76cbc4516cc42d9b46da26b9ffbcd00d0a59014ef0164e2d43e5fdd494894510": true
+    }
+  },
+  "https://www.sortitionfoundation.org/updates": {
+    "checked": "2026-08-14",
+    "content_hash": "05e23ba79346effd609cc1870a89e497347acc7aeef95914a4a5fce483609883",
+    "contexts": {
+      "150fd71baf8893dbc2177e200ec31f46c487ac7f74a30b4b4dda3fd71d7423ab": {
+        "prefix": "Home Learn more Read Our Latest News Latest News 26 February,",
+        "sha256": "05e23ba79346effd609cc1870a89e497347acc7aeef95914a4a5fce483609883",
+        "suffix": "18 June, 2026 We're looking for a new Independent Director Jobs",
+        "text": "26 February, 2026 Frontiers of Democratic Lotteries Workshop"
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "150fd71baf8893dbc2177e200ec31f46c487ac7f74a30b4b4dda3fd71d7423ab": true
+    }
+  },
   "https://www.transparency.org.nz/our-story": {
     "checked": "2026-08-14",
     "content_hash": "7d842a326f518a91bb7fa3c51bcf71fc549de4ad240055b614b6126893a20a45",
@@ -2471,7 +2930,7 @@
     "content_hash": "093e6afce3be88ff08491be4a68365e5ebafd4769594f98cd120474ea9daa932",
     "contexts": {},
     "etag": null,
-    "last_modified": "Wed, 12 Aug 2026 02:40:11 GMT",
+    "last_modified": "Fri, 14 Aug 2026 12:33:47 GMT",
     "verified": {
       "9589f103a07f2e4200cd0e9f25b7e415aa22c030e2b4cad981e961485fd96a7f": true
     }

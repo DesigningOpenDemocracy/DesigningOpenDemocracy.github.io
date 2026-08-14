@@ -23,6 +23,31 @@ location:
   name: Tallinn, Estonia
 news_page: https://citizenos.com/news/
 rss_feed: https://citizenos.com/feed
+events:
+- date: '2015-01-01'
+  title: Founded by Ahti Heinla, Margo Loor and the Let’s Do It! Foundation
+  url: https://citizenos.com/platform/
+  quote: Citizen OS is a non-profit organisation, founded in 2015 by philanthropist
+    and tech entrepreneur Ahti Heinla, civic society expert Margo Loor, and the Let’s
+    Do It! Foundation (coordinators of World Cleanup Day).
+  proof_level: high
+  url_checked: '2026-08-14'
+- date: '2024-03-18'
+  title: Launched first phase of the platform redesign with a new look and feel
+  url: https://citizenos.com/news/citizen-os-platform-now-has-an-improved-look-and-feel/
+  quote: We’re very happy to be launching the first phase of our redesign roll-out
+    — with an improved look and feel, and a more intuitive interface.
+  proof_level: high
+  url_checked: '2026-08-14'
+  notable: true
+- date: '2024-12-01'
+  title: Citizen OS Indonesia co-organised the 4th Indonesia Opinion Festival with
+    the Indonesian House of Representatives
+  url: https://citizenos.com/news/citizen-os-annual-report-2024-a-year-of-a-big-revamp/
+  quote: In December 2024, Citizen OS Indonesia co-organised the 4th Indonesia Opinion
+    Festival (IOF), in collaboration with the Indonesian House of Representatives.
+  proof_level: high
+  url_checked: '2026-08-14'
 activity:
   manual:
     date: 2025-07-23
