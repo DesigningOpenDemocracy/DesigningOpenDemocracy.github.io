@@ -48,3 +48,8 @@ post: setup
 # Auto-fill frontmatter using OpenAI (requires OPENAI_API_KEY)
 frontmatter file: setup setup-util
     {{python}} util/frontmatter_updator.py {{file}}
+
+# Run the offline regression test suite (tests/)
+test: setup-util
+    {{pip}} install -q pyyaml
+    {{python}} -m unittest discover tests

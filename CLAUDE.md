@@ -11,6 +11,14 @@ This is a MkDocs + Material for MkDocs static site deployed to GitHub Pages.
 - Before pushing: `make build && python util/check_internal_links.py && python util/check_event_sourcing.py && python util/reorder_frontmatter.py --check` — catches the same errors as CI. The pre-commit hook (`.githooks/pre-commit`) auto-runs `reorder_frontmatter.py` on staged org pages, so the `--check` should always pass — it's a safety net.
 - **If `.git/hooks/pre-commit` doesn't exist:** run `ln -sf ../../.githooks/pre-commit .git/hooks/pre-commit` to install it. Claude should check this on first interaction with the repo and remind the user if it's missing.
 
+## Tests (`tests/`)
+
+Stdlib `unittest` regression coverage for the citation-verification tooling (`util/text_fragment.py`, `util/check_fragments.py`) — offline, no network calls, no new deps beyond what `util/requirements.txt` already installs plus `pyyaml`. Lives at repo root (outside `docs/`) so mkdocs never touches it. Run with:
+```
+python -m unittest discover tests   # or: just test
+```
+Wired into CI (`.github/workflows/build.yml`) as its own step, before the build/lint jobs. Covers the pure functions in `text_fragment.py` (`normalize_ws`, `find_span`, `quote_matches`, `_split_ellipsis`, `make_text_fragment`/`add_fragment_to_url`/`with_fragment`, `spacing_autofix`, `closest_match_hint`, footnote parsing) directly, plus the I/O-adjacent parts of `check_fragments.py` via fixture files in a tempdir: `paragraph_hash` (regression test for the offset-drift bug — see its docstring), `wikipedia_title` (including the non-English-subdomain regression), `write_quote_fix`/`_write_quote_fix_yaml` (the plain-scalar and YAML-scalar success paths, plus all three refusal cases: no frontmatter, ambiguous quote across events, non-canonical existing frontmatter), and `collect_evidence`'s `--slug` filtering (the exact `--slug a --slug b` regression from 2026-08-14 — see the "Utility scripts" `check_fragments.py` entry below). When adding new verification logic to either file, add a test alongside it rather than validating by hand-running against real org files — see issue #155 for the motivating history of bugs this would have caught.
+
 ## Known Watch Items
 
 ### MkDocs ecosystem fragmentation (as of May 2026)
@@ -493,6 +501,7 @@ These are linked from the bottom of the org index table for researcher download.
   python util/check_fragments.py --footnotes-only  # only check footnote evidence
   python util/check_fragments.py --events-only     # only check event evidence (original behaviour)
   python util/check_fragments.py --autofix-spaces  # rewrite spacing-only MISMATCHes in place
+  python util/check_fragments.py --report /tmp/fragments-report.json  # also write a JSON findings summary (for ad hoc/manual review — not consumed by anything in CI)
   ```
   - **`--autofix-spaces`** — fixes MISMATCHes whose only differences from the live page
     are space runs (em-dash spacing, stray spaces): rewrites the stored `quote:` in the
@@ -526,6 +535,7 @@ These are linked from the bottom of the org index table for researcher download.
   python util/check_event_urls.py                  # check all event URLs
   python util/check_event_urls.py --slug mosaiclab  # single org
   python util/check_event_urls.py --timeout 8       # per-request timeout
+  python util/check_event_urls.py --report /tmp/urls-report.json  # also write a JSON findings summary (for ad hoc/manual review — not consumed by anything in CI)
   ```
 
 - `util/reorder_frontmatter.py` — enforces the canonical frontmatter field ordering documented above (org top-level keys, `events:` sub-keys, `activity:` sub-keys). Local/offline, part of `make build`'s pre-push checklist and CI. The pre-commit hook (`.githooks/pre-commit`) runs this automatically on staged org pages, so `--check` failing locally usually means the hook isn't installed — see the note at the top of this file.
