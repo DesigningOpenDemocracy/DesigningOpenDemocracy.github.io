@@ -54,8 +54,8 @@ events:
   url_checked: '2026-08-15'
   notable: true
 - date: '2021-06-09'
-  title: Co-founder Grant Rule's company MessageMedia sold to Sinch for a total
-    enterprise value of US$1.3 billion
+  title: Co-founder Grant Rule's company MessageMedia sold to Sinch for a total enterprise
+    value of US$1.3 billion
   url: https://www.globenewswire.com/news-release/2021/06/09/2244148/0/en/sinch-ab-publ-sinch-to-acquire-messagemedia-accelerating-growth-with-small-and-medium-sized-businesses.html
   quote: Sinch will pay a total enterprise value of USD 1.3 billion, with a total
     cash consideration of USD 1.1 billion and 1,128,487 new shares in Sinch
