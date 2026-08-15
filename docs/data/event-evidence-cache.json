@@ -306,7 +306,7 @@
     }
   },
   "https://civictech.guide/about/": {
-    "checked": "2026-08-14",
+    "checked": "2026-08-15",
     "content_hash": "07ce94ed3e6961d650dc0b94334a88be014c06184000639fde83467b3d5e0238",
     "contexts": {
       "25d546fb9449c1380fed6e2ecf84a9706dc54f4f4af5a075ca0c658537c6dc92": {
@@ -441,7 +441,7 @@
     }
   },
   "https://democracy-technologies.org/participation/consensus-building-in-taiwan/": {
-    "checked": "2026-08-14",
+    "checked": "2026-08-15",
     "content_hash": "640700c8d55ff5c4c7db97b39b78ebafa5f3de60e5ef2550497d23e9973bfa0b",
     "contexts": {
       "8268a06cd26c208f2ff000a2f0f9954f57894ab78c1fecb71998e7e7b592eef1": {
@@ -451,14 +451,14 @@
         "text": "Taiwan is a world-leader in digital democracy. It all started with vTaiwan, an online participation platform powered by Polis. Launched in 2015, it has transformed how the government brings stakeholders together, allowing for a more inclusive approach to legislation.\u00c2"
       }
     },
-    "etag": "W/\"6a7d288a-211f7\"",
-    "last_modified": "Thu, 13 Aug 2026 02:14:34 GMT",
+    "etag": "W/\"6a7fb95b-211f7\"",
+    "last_modified": "Sat, 15 Aug 2026 00:56:59 GMT",
     "verified": {
       "8268a06cd26c208f2ff000a2f0f9954f57894ab78c1fecb71998e7e7b592eef1": true
     }
   },
   "https://democracyincolour.org/about/": {
-    "checked": "2026-08-14",
+    "checked": "2026-08-15",
     "content_hash": "32dadf29e415818d14066f068f18e7f2bb2443683fdac35fbd9372223bd7f932",
     "contexts": {
       "97663fcf73415c375a71271789c017fae384cc2a567f080f6f5b79f4a250fb25": {
@@ -559,7 +559,7 @@
     }
   },
   "https://en.wikipedia.org/wiki/Anti-austerity_movement_in_Spain": {
-    "checked": "2026-08-14",
+    "checked": "2026-08-15",
     "content_hash": "0504df7b59e8f81954f4f0fa76cdd9cf6aafa6bd55eeb3cc423698cbb0019424",
     "contexts": {
       "795652a925bdd8df979e18c0b90380d245f7ec9355567cb78a3d9e1aad2d8f58": {
@@ -693,7 +693,7 @@
     }
   },
   "https://en.wikipedia.org/wiki/Glen_Weyl": {
-    "checked": "2026-08-14",
+    "checked": "2026-08-15",
     "content_hash": "cb9d9567efbcfc4bf5c5701a8e41138767300cb996ee846cb569b2acc34da649",
     "contexts": {},
     "etag": null,
@@ -779,7 +779,7 @@
     }
   },
   "https://en.wikipedia.org/wiki/Loomio": {
-    "checked": "2026-08-14",
+    "checked": "2026-08-15",
     "content_hash": "23880a28a900c902f72a25d6b879c04ad8846fbe6802b1acc46f9e19d79da787",
     "contexts": {
       "cf0f98f6eec3e01e343d8e25a7508335e772c5ef3a39d7d66becbf13b26d7125": {
@@ -828,7 +828,7 @@
     }
   },
   "https://en.wikipedia.org/wiki/Meta-organization": {
-    "checked": "2026-08-14",
+    "checked": "2026-08-15",
     "content_hash": "e5219cbc361d6b75e77510b4bab7c4cf4919c75776b4d3ede9f04eb2936b5d11",
     "contexts": {
       "e41cf1d78553fd91acba54e621c20a54089a6ea2d47b2e421ef4d2595b2b4e58": {
@@ -916,7 +916,7 @@
     }
   },
   "https://en.wikipedia.org/wiki/Occupy_Wall_Street": {
-    "checked": "2026-08-14",
+    "checked": "2026-08-15",
     "content_hash": "68b2e5a328236f23b0e34b6d94b821a66b8345307a7da6625af82fb59495a078",
     "contexts": {},
     "etag": null,
@@ -960,7 +960,7 @@
     }
   },
   "https://en.wikipedia.org/wiki/OpenAustralia_Foundation": {
-    "checked": "2026-08-14",
+    "checked": "2026-08-15",
     "content_hash": "17e022c6157463ba6a56fbbc7ad00dabc582ebfc5953c6ca9d6e69e1454030a1",
     "contexts": {
       "3c9c203d4bcf14372dc6f31d343c75ee3325e6e9120851df796f2d222260b18e": {
@@ -968,12 +968,19 @@
         "sha256": "17e022c6157463ba6a56fbbc7ad00dabc582ebfc5953c6ca9d6e69e1454030a1",
         "suffix": ". It displays \"voting patterns by politician, when they vote against their own party, and offers descriptions of divisions in plain English\". It recei",
         "text": "=== They Vote For You === They Vote For You, established in 2014, tracks the outcomes of all votes in the House of Representatives and Senate. It displays \"voting patterns by politician, when they vote against their own party, and offers descriptions of divisions in plain English\". It received start-up funding from Google."
+      },
+      "b331c6c90624e6e9566b403c4e321a76b461f4c320a527462d6f833dffcd7d8a": {
+        "prefix": "or You, a parliamentary informatics website. == Structure == OpenAustralia is a registered charity that operates as a company limited by guarantee.",
+        "sha256": "df6c43f8a5954b8a82123a2fcc825c1ed484cbc32f217ece247f417c58dbdda2",
+        "suffix": "== Projects == One of the foundation's earliest projects was Election Leaflets, a website established in the lead-up to the 2010 federal election t",
+        "text": "== Structure == OpenAustralia is a registered charity that operates as a company limited by guarantee. It was established in 2009, co-founded by Matthew Landauer and Katherine Szuminska."
       }
     },
     "etag": null,
     "last_modified": null,
     "verified": {
-      "3c9c203d4bcf14372dc6f31d343c75ee3325e6e9120851df796f2d222260b18e": true
+      "3c9c203d4bcf14372dc6f31d343c75ee3325e6e9120851df796f2d222260b18e": true,
+      "b331c6c90624e6e9566b403c4e321a76b461f4c320a527462d6f833dffcd7d8a": true
     }
   },
   "https://en.wikipedia.org/wiki/Open_Society_Foundations": {
@@ -1238,8 +1245,8 @@
     }
   },
   "https://glenweyl.com/radicalxchange/": {
-    "checked": "2026-08-14",
-    "content_hash": "a010f2e8072c84a697d2cd73667f7a7b9d4436b8e6a29df63775be7e70d14445",
+    "checked": "2026-08-15",
+    "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "contexts": {
       "a010f2e8072c84a697d2cd73667f7a7b9d4436b8e6a29df63775be7e70d14445": {
         "prefix": "Foundation (RxC) is a global movement for next-generation political economies",
@@ -1251,7 +1258,7 @@
     "etag": null,
     "last_modified": null,
     "verified": {
-      "a010f2e8072c84a697d2cd73667f7a7b9d4436b8e6a29df63775be7e70d14445": true
+      "a010f2e8072c84a697d2cd73667f7a7b9d4436b8e6a29df63775be7e70d14445": false
     }
   },
   "https://ia.acs.org.au/article/2018/blockchain-to-revolutionise-e-voting.html": {
@@ -1333,7 +1340,7 @@
     }
   },
   "https://mckinnon.co/about-us": {
-    "checked": "2026-08-14",
+    "checked": "2026-08-15",
     "content_hash": "f9a63121fe8480f53da154817ff9a11ca0384c4eef56d541da1bfbf68d5d6193",
     "contexts": {
       "a2ca2c617bccda3262bf256be647677dcd63460cb09c10ebad8ecf9cbfafb8d4": {
@@ -1401,7 +1408,7 @@
     }
   },
   "https://mosaiclab.com.au/news-all-posts/2016/8/16/meet-a-co-founder-kimbra-white": {
-    "checked": "2026-08-14",
+    "checked": "2026-08-15",
     "content_hash": "fde90594c4e849be608a2cd2a75548c667224c53677e139241ef828d13cacf14",
     "contexts": {
       "6d0107d03961bf9c85d61a0729b7654f779e719eda72bd637b6b275890a3d592": {
@@ -1411,7 +1418,7 @@
         "text": "Kimbra co-founded MosaicLab in 2013 and sees the group as a platform for continuous learning about participation. She believes that these learnings should be shared with others, ultimately contributing to quality and meaningful engagement becoming the norm in the way that decisions are made."
       }
     },
-    "etag": "W/\"13bd23f04b0f0691dd865fa4b78ab4f7--gzip\"",
+    "etag": "W/\"2a8781b8f1bf8db1ebf5ee401e6b3a97--gzip\"",
     "last_modified": null,
     "verified": {
       "6d0107d03961bf9c85d61a0729b7654f779e719eda72bd637b6b275890a3d592": true
@@ -1605,7 +1612,7 @@
     }
   },
   "https://projects.propublica.org/nonprofits/organizations/832183139": {
-    "checked": "2026-08-14",
+    "checked": "2026-08-15",
     "content_hash": "76a56b8718dcae944fac8c984e0de25f764c9efdfc0f7660206ded6164f18dc2",
     "contexts": {},
     "etag": null,
@@ -1647,7 +1654,7 @@
     }
   },
   "https://reclaim.org.au/1-lismore-peoples-assembly-housing/": {
-    "checked": "2026-08-14",
+    "checked": "2026-08-15",
     "content_hash": "c32ff80280689420b855efd6209762b535e60b88091d0669f8ceff73e226e820",
     "contexts": {
       "c32ff80280689420b855efd6209762b535e60b88091d0669f8ceff73e226e820": {
@@ -1664,7 +1671,7 @@
     }
   },
   "https://reclaim.org.au/inaugural-lismore-peoples-assembly/": {
-    "checked": "2026-08-14",
+    "checked": "2026-08-15",
     "content_hash": "d6f51366e8b60fa798347718bf5438e92ff008ae6ff9f84b2d0205ec1d01e77e",
     "contexts": {
       "5d178e7c6e07b697f520a7fe1ef52fb0fbc054481088e0e3a7fac59039d9181f": {
@@ -1681,7 +1688,7 @@
     }
   },
   "https://reclaim.org.au/lismore-peoples-assembly-on-housing/": {
-    "checked": "2026-08-14",
+    "checked": "2026-08-15",
     "content_hash": "962246259b6a487def673b4ca2f1ccccb76cdf98ebf9ec8ca07b6e77a8f1ff9e",
     "contexts": {
       "d278588f631f4a70ec72de1f3c704dfaba8f790108d5454982daac2a07a590f7": {
@@ -1698,7 +1705,7 @@
     }
   },
   "https://reclaim.org.au/the-year-ahead-for-the-lismore-peoples-assembly/": {
-    "checked": "2026-08-14",
+    "checked": "2026-08-15",
     "content_hash": "20e6e6902c0a0287a487e72910cf53a6f385b53c10413bfe63c121e7dee87b21",
     "contexts": {
       "20e6e6902c0a0287a487e72910cf53a6f385b53c10413bfe63c121e7dee87b21": {
@@ -1783,7 +1790,7 @@
     }
   },
   "https://topics.amcham.com.tw/2017/02/make-full-use-of-join-gov-tw/": {
-    "checked": "2026-08-14",
+    "checked": "2026-08-15",
     "content_hash": "33a12277a8f75847058928b3e1ca28b228ca8f74ed092f18be9bfca56b32eedd",
     "contexts": {
       "f2bc1350fab07763d03538042100f87084a4a232f7caa8b0f69e0187361eae48": {
@@ -1800,7 +1807,7 @@
     }
   },
   "https://web.archive.org/web/20190718131041/https://policyincubator.com/home/about_us": {
-    "checked": "2026-08-14",
+    "checked": "2026-08-15",
     "content_hash": "da3667d0384ce21370c7572b25b5e4b602ca2a6070df321e3b3d2971d9386504",
     "contexts": {
       "76232b5ffc5c4d5295d37f9625a47b73af148adcd15e29334ee060306d5f2172": {
@@ -1817,7 +1824,7 @@
     }
   },
   "https://web.archive.org/web/20201025042342/https://www.coalitionofeveryone.com/": {
-    "checked": "2026-08-14",
+    "checked": "2026-08-15",
     "content_hash": "1f64be74ded78db93e4be4c0450c20460a7c4a987f3913c85cd1e3eba4335de1",
     "contexts": {
       "1f64be74ded78db93e4be4c0450c20460a7c4a987f3913c85cd1e3eba4335de1": {
@@ -1885,7 +1892,7 @@
     }
   },
   "https://www.bertelsmann-stiftung.de/en/our-projects/democracy-and-participation-in-europe/shortcut-archive/shortcut-8-trailblazers-of-digital-participation-taiwans-join-platform-and-vtaiwan": {
-    "checked": "2026-08-14",
+    "checked": "2026-08-15",
     "content_hash": "05c110afc92fb278b8ab2ca88cb1ae818a26074bf9d9d549880c39af9a005686",
     "contexts": {
       "2bb69c560807cf0c7be8d767dccd92457b40f1d32e94a61557df80263877489e": {
@@ -2000,7 +2007,7 @@
     }
   },
   "https://www.demnext.org/about": {
-    "checked": "2026-08-14",
+    "checked": "2026-08-15",
     "content_hash": "31b35e733ed03b9b4e9d03ec4028349a9d92aa6532dabeec34b3a5fc9e73b1c9",
     "contexts": {
       "31b35e733ed03b9b4e9d03ec4028349a9d92aa6532dabeec34b3a5fc9e73b1c9": {
@@ -2034,7 +2041,7 @@
     }
   },
   "https://www.democracyco.com.au/about/": {
-    "checked": "2026-08-14",
+    "checked": "2026-08-15",
     "content_hash": "1f3342948b4e4774f63f0a457d7b23029356b55548d19d7eebc0650eb1be368f",
     "contexts": {
       "3bbbfb3bbb443ceaa2c37f75a208d4dcbed53c85459ce09db3747652442aff49": {
@@ -2116,7 +2123,7 @@
     }
   },
   "https://www.designingopendemocracy.com/blog/2018/12/18/designing-open-democracy-state-of-democracy-in-australia-in-2018/": {
-    "checked": "2026-08-14",
+    "checked": "2026-08-15",
     "content_hash": "5661eb95731baf8bc8b220f39a8c37c1e2f4f661f1d723a83fdf1ca002ca7933",
     "contexts": {
       "bede7c49e95577b8277ad463bb91abccf42180fb72e768eccea82d61fcd628e0": {
@@ -2126,8 +2133,8 @@
         "text": "My main thrust is government organized along scientific principles which is as much to say as the application of cybernetic principles to government. Democracy is part of that and Stafford Beer, who is the father of management cybernetics, was highly regarded by the Open Democracy organisation as witnessed by the obituary published for him by Rosemary Bechler, the International Editor, of Open Democracy - https://www.opendemocracy.net/node/611"
       }
     },
-    "etag": "W/\"6a7e7a3f-3bb1b\"",
-    "last_modified": "Fri, 14 Aug 2026 02:15:27 GMT",
+    "etag": "W/\"6a800a0d-3baed\"",
+    "last_modified": "Sat, 15 Aug 2026 06:41:17 GMT",
     "verified": {
       "bede7c49e95577b8277ad463bb91abccf42180fb72e768eccea82d61fcd628e0": true
     }
@@ -2235,6 +2242,23 @@
     "last_modified": null,
     "verified": {
       "4e5dd38efcb0a295598dfa0ac6482cdba414274110bb5a7720772a8526441ad2": true
+    }
+  },
+  "https://www.globenewswire.com/news-release/2021/06/09/2244148/0/en/sinch-ab-publ-sinch-to-acquire-messagemedia-accelerating-growth-with-small-and-medium-sized-businesses.html": {
+    "checked": "2026-08-15",
+    "content_hash": "009a96ea9a515ead16d1ad1c4af55e2344226c3ebcf0437a1837bdc2b2207ec0",
+    "contexts": {
+      "238270711d72c16e83bb7492d56548bb599b06218237aca886821a947ab24bca": {
+        "prefix": "ssageMedia, a leader in mobile messaging solutions for small and medium-sized businesses in the United States and Australia, New Zealand, and Europe.",
+        "sha256": "009a96ea9a515ead16d1ad1c4af55e2344226c3ebcf0437a1837bdc2b2207ec0",
+        "suffix": ". Using yesterday\u2019s USD/SEK exchange rate of 8.27, this corresponds to an enterprise value of SEK 10,745 million. MessageMedia offers a web-base",
+        "text": "Sinch AB (publ), a global leader in cloud communications for mobile customer engagement, has entered into a definitive agreement to acquire MessageMedia, a leader in mobile messaging solutions for small and medium-sized businesses in the United States and Australia, New Zealand, and Europe. Sinch will pay a total enterprise value of USD 1.3 billion, with a total cash consideration of USD 1.1 billion and 1,128,487 new shares in Sinch. Using yesterday\u2019s USD/SEK exchange rate of 8.27, this corresponds to an enterprise value of SEK 10,745 million."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "238270711d72c16e83bb7492d56548bb599b06218237aca886821a947ab24bca": true
     }
   },
   "https://www.govtech.com/civic/New-Global-Civic-Tech-Group-Emerges-from-The-Omidyar-Group.html": {
@@ -2425,7 +2449,7 @@
     }
   },
   "https://www.mysociety.org/about/": {
-    "checked": "2026-08-14",
+    "checked": "2026-08-15",
     "content_hash": "52d9e0812b0b0946fd3970c50c5c9b87c5f75370aefb8e3917a3191793719b33",
     "contexts": {
       "386cf456651ac8ec5c84521090f481775dc04a2623290a7dbdc4f61798f30752": {
@@ -2442,7 +2466,7 @@
     }
   },
   "https://www.ndi.org/sites/default/files/2025-04/No-6-Lessons-from-Namfrel-and-Gong---NDI-Sustaining-the-Fight-for-Democracy-Lessons-from-Citizen-Election-Monitoring-Organizations-Around-the-World.pdf": {
-    "checked": "2026-08-12",
+    "checked": "2026-08-15",
     "content_hash": "5fbe15a7c0d48360371d472f99eff320fa0f3029c79696caec929e92ea2e44cd",
     "contexts": {
       "dc694bf6a0921fdcc3efc773bfb68958a891b71e07cb46f8d87ec0e71a802869": {
@@ -2475,7 +2499,7 @@
     }
   },
   "https://www.newdemocracy.com.au/history/": {
-    "checked": "2026-08-14",
+    "checked": "2026-08-15",
     "content_hash": "3edb657c20fca0f0a9cdadc1ef77a88b61171ac8ba192143400233fa5bfa776b",
     "contexts": {},
     "etag": null,
@@ -2485,7 +2509,7 @@
     }
   },
   "https://www.oaf.org.au/2022/03/23/senator-for-nsw-andrew-bragg-threatens-openaustralia-foundation-with-legal-action/": {
-    "checked": "2026-08-14",
+    "checked": "2026-08-15",
     "content_hash": "d29f03044da8e598f3eeb34d7ac6f647fe999c30fb763f295c66e4d61773149a",
     "contexts": {
       "292a5491284943180173e19421b4b1906053adf3c0b79e98d2736277bfe08b0a": {
@@ -2496,16 +2520,16 @@
       }
     },
     "etag": null,
-    "last_modified": null,
+    "last_modified": "Sat, 15 Aug 2026 12:08:11 GMT",
     "verified": {
       "292a5491284943180173e19421b4b1906053adf3c0b79e98d2736277bfe08b0a": true
     }
   },
   "https://www.opendemocracy.net/en/can-europe-make-it/agora-votingnvotes/": {
-    "checked": "2026-08-14",
-    "content_hash": "666f44c7360a8c00ede19fd321f06f5fc49639254517168bbdaa5eb1a5b10883",
+    "checked": "2026-08-15",
+    "content_hash": "6024da051527620151690406a06e01ed99351ac47b7ad30afa968ca1836523af",
     "contexts": {},
-    "etag": "W/\"24863-k4/zMxizgwf+waqmDtXIjwoJIr4\"",
+    "etag": "W/\"24563-Q0a1DH2YdNdo2pdvAThAZAGA/v0\"",
     "last_modified": null,
     "verified": {
       "6af77572e19c01f07ceb0d60910df68777c10dbaaa7e6bd289cf8fce49a116f7": false
@@ -2590,7 +2614,7 @@
     }
   },
   "https://www.peoplepowered.org/news-content/digital-participation-case-study-taiwan": {
-    "checked": "2026-08-14",
+    "checked": "2026-08-15",
     "content_hash": "302a97ff4a746653f8e489f47e644e637a3589acb7c57ab81e73833b181f7df4",
     "contexts": {
       "8b1132d10f23f3c8368c2b3e9233c0fb121095a3bdafd9c9521eb699bd32f69d": {
@@ -2600,10 +2624,35 @@
         "text": "vTaiwan has always demonstrated how civic communities can innovate in democratic participation by combining open-source platforms, commercial tools, and AI. Currently, the community integrates tools such as"
       }
     },
-    "etag": "W/\"10c1438e2e236336152c367b6a7c7691\"",
+    "etag": "W/\"260038a97e481c0ef5216fcd1e1ce003--gzip\"",
     "last_modified": null,
     "verified": {
       "8b1132d10f23f3c8368c2b3e9233c0fb121095a3bdafd9c9521eb699bd32f69d": true
+    }
+  },
+  "https://www.philanthropy.org.au/news-and-stories/the-susan-mckinnon-foundation-and-monash-university-renew-commitment-to-enhanced-political-leadership/": {
+    "checked": "2026-08-15",
+    "content_hash": "e4169783d71617d9b23833e0208d0448950513ac7136ce892aa5a79b86c170d4",
+    "contexts": {
+      "8784b86eb8660afb843c6fcc89e525763fa433a85fbafdbabe83698f249aac78": {
+        "prefix": "The Susan McKinnon Foundation and Monash University this week announced the renewal of their philanthropic partnership with",
+        "sha256": "e4169783d71617d9b23833e0208d0448950513ac7136ce892aa5a79b86c170d4",
+        "suffix": ". The renewed commitment underscores a shared dedication to fostering high-quality political leadership and enhancing democracy in Australia. Th",
+        "text": "The Susan McKinnon Foundation and Monash University this week announced the renewal of their philanthropic partnership with an investment of more than $25 million over five years from the Foundation to sustain and advance the McKinnon Institute for Political Leadership."
+      },
+      "e2624f36670b20f17933bbb185e3beccb4d997a8f0ab35c07ac498b8bbb77c23": {
+        "prefix": "bold idea into reality. I know he has exciting plans for the Institute and I\u2019m really looking forward to seeing these plans progress,\u201d he said.",
+        "sha256": "77ed1b4f1139124c555224508e8a01c1a0ff3f78ec58a0bad380a46a09a6ae00",
+        "suffix": ", providing tailored coaching and mentoring as well as exposure to some of the world\u2019s best policy experts. Monash University Vice-Chancellor an",
+        "text": "Since it was established in 2019, the Institute has delivered transformative programs to more than 25% of the current MPs across Australia, providing tailored coaching and mentoring as well as exposure to some of the world\u2019s best policy experts."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "8784b86eb8660afb843c6fcc89e525763fa433a85fbafdbabe83698f249aac78": true,
+      "ce66c2c78be01e30116e1180b7e0587e59883109451fe73a33d948381076d8ce": false,
+      "e2624f36670b20f17933bbb185e3beccb4d997a8f0ab35c07ac498b8bbb77c23": true
     }
   },
   "https://www.pressenza.com/de/2017/12/demokratie-echtzeit-neue-app-democracy-erfolgreich-crowdfinanziert/": {
@@ -2675,7 +2724,7 @@
     }
   },
   "https://www.radicalxchange.org/about/": {
-    "checked": "2026-08-14",
+    "checked": "2026-08-15",
     "content_hash": "244f6412e7c68526636b169b60dc572308662e0b13290c07caffdf047e612caa",
     "contexts": {
       "93585aa0a00f2cf98a88445720db53165d4f4aa8b4a7dcc05f495e02260621a3": {
@@ -2709,7 +2758,7 @@
     }
   },
   "https://www.radicalxchange.org/team/jess-scully/": {
-    "checked": "2026-08-14",
+    "checked": "2026-08-15",
     "content_hash": "d3a3d62f5a46a4d90930a332cc63859711e441182f58754d2c62e0211868ade6",
     "contexts": {
       "d3a3d62f5a46a4d90930a332cc63859711e441182f58754d2c62e0211868ade6": {
@@ -2926,7 +2975,7 @@
     }
   },
   "https://www.wisdomandaction.com.au/": {
-    "checked": "2026-08-14",
+    "checked": "2026-08-15",
     "content_hash": "093e6afce3be88ff08491be4a68365e5ebafd4769594f98cd120474ea9daa932",
     "contexts": {},
     "etag": null,
