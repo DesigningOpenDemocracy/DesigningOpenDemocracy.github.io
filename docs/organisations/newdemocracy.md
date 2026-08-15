@@ -85,6 +85,7 @@ newDemocracy's core argument is that the adversarial, partisan nature of represe
 ## Key people
 
 - **Luca Belgiorno-Nettis** — founder and principal funder of the newDemocracy Foundation. A Sydney-based infrastructure developer and philanthropist who became a significant advocate for deliberative democracy in Australia after growing disillusioned with conventional politics.[^newdem]
+- **Iain Walker** — Executive Director since 2011, leading over 20 citizens' jury and assembly trials for state and local governments.[^ndf-exec]
 - **[Nicholas Gruen](https://en.wikipedia.org/wiki/Nicholas_Gruen)** — prominent economist and longstanding collaborator, who has presented to DOD on deliberative democracy and the concept of isegoria. One of newDemocracy's most visible intellectual contributors. [See 2017 presentation](../../blog/posts/2017-08-21-podcast.md)
 
 ## Links
@@ -104,3 +105,4 @@ newDemocracy's core argument is that the adversarial, partisan nature of represe
 - [DemocracyNext](democracy-next.md)
 
 [^newdem]: "The newDemocracy Foundation was launched in 2007, with Luca Belgiorno-Nettis... as the inaugural directors." and "Luca had a 30-year career in Transfield, a large infrastructure and engineering company founded by his father," newDemocracy Foundation, [History](https://www.newdemocracy.com.au/history/).
+[^ndf-exec]: "Iain Walker is Executive Director of the newDemocracy Foundation (nDF) in Australia, a role he has held since 2011," newDemocracy Foundation, [Board and Executive](https://www.newdemocracy.com.au/board-and-executive/).

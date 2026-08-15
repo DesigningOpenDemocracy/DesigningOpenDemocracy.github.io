@@ -754,6 +754,18 @@
     ]
   },
   {
+    "id": "bf5c2585",
+    "type": "webpage",
+    "URL": "https://en.wikipedia.org/wiki/Fusion_Party_(Australia)",
+    "title": "Formed via merger of the Science, Pirate, Secular, Vote Planet, and Climate Change Justice parties, after new AEC rules raised the minimum party membership threshold from 500 to 1,500",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "was formed in 2021 following the passing of the Electoral Legislation Amendment (Party Registration Integrity) Bill 2021"
+      }
+    ]
+  },
+  {
     "id": "d042169d",
     "type": "webpage",
     "URL": "https://en.wikipedia.org/wiki/G0v_movement",
@@ -2884,6 +2896,18 @@
       {
         "type": "quote-match",
         "quote": "crowdsourcing the most comprehensive and accurate database of candidates in recent electoral history"
+      }
+    ]
+  },
+  {
+    "id": "f6331b5f",
+    "type": "webpage",
+    "URL": "https://www.newdemocracy.com.au/board-and-executive/",
+    "title": "Board and Executive",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Iain Walker is Executive Director of the newDemocracy Foundation (nDF) in Australia, a role he has held since 2011,"
       }
     ]
   },
