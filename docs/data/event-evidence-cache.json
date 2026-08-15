@@ -702,6 +702,22 @@
       "380a3016f7cfcdcaa42eb30d881988d9ccb5fb5daad7fef3e92c231e0a683d71": true
     }
   },
+  "https://en.wikipedia.org/wiki/Grattan_Institute": {
+    "checked": "2026-08-15",
+    "content_hash": "9189983139eed6d84a100fa2cc4139c3e3bb3bfe33d883ed8ca8dc5e99fc3023",
+    "contexts": {
+      "cb0df30b346a363776841fad5fcc35fb5166ea7284f7ad1eb60919d658f16c31": {
+        "prefix": "matching funding, along with support in kind from the University of Melbourne. Commitments followed soon after from BHP and National Australia Bank.",
+        "sha256": "480d865eda5ac756cc77e87a1ee6021e497f1e2b37be2b968d9b7db437afedab",
+        "suffix": ", Origin Energy Foundation, Third Link Growth Fund, Cuffe Family Foundation, Medibank Private, Trawalla Foundation, Wesfarmers, Maddocks, McKinsey & C"
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "cb0df30b346a363776841fad5fcc35fb5166ea7284f7ad1eb60919d658f16c31": true
+    }
+  },
   "https://en.wikipedia.org/wiki/International_Institute_for_Democracy_and_Electoral_Assistance": {
     "checked": "2026-08-14",
     "content_hash": "978c70a7875350416aad6a887931799ccf0d9ee59881abf3f3fd23073043cdae",
@@ -961,19 +977,19 @@
   },
   "https://en.wikipedia.org/wiki/OpenAustralia_Foundation": {
     "checked": "2026-08-15",
-    "content_hash": "17e022c6157463ba6a56fbbc7ad00dabc582ebfc5953c6ca9d6e69e1454030a1",
+    "content_hash": "df6c43f8a5954b8a82123a2fcc825c1ed484cbc32f217ece247f417c58dbdda2",
     "contexts": {
-      "3c9c203d4bcf14372dc6f31d343c75ee3325e6e9120851df796f2d222260b18e": {
-        "prefix": "ows users to submit freedom of information (FOI) requests to government bodies under the Freedom of Information Act 1982. === They Vote For You ===",
-        "sha256": "17e022c6157463ba6a56fbbc7ad00dabc582ebfc5953c6ca9d6e69e1454030a1",
-        "suffix": ". It displays \"voting patterns by politician, when they vote against their own party, and offers descriptions of divisions in plain English\". It recei",
-        "text": "=== They Vote For You === They Vote For You, established in 2014, tracks the outcomes of all votes in the House of Representatives and Senate. It displays \"voting patterns by politician, when they vote against their own party, and offers descriptions of divisions in plain English\". It received start-up funding from Google."
+      "b331c6c90624e6e9566b403c4e321a76b461f4c320a527462d6f833dffcd7d8a": {
+        "prefix": "or You, a parliamentary informatics website. == Structure == OpenAustralia is a registered charity that operates as a company limited by guarantee.",
+        "sha256": "df6c43f8a5954b8a82123a2fcc825c1ed484cbc32f217ece247f417c58dbdda2",
+        "suffix": "== Projects == One of the foundation's earliest projects was Election Leaflets, a website established in the lead-up to the 2010 federal election t",
+        "text": "== Structure == OpenAustralia is a registered charity that operates as a company limited by guarantee. It was established in 2009, co-founded by Matthew Landauer and Katherine Szuminska."
       }
     },
     "etag": null,
     "last_modified": null,
     "verified": {
-      "3c9c203d4bcf14372dc6f31d343c75ee3325e6e9120851df796f2d222260b18e": true
+      "b331c6c90624e6e9566b403c4e321a76b461f4c320a527462d6f833dffcd7d8a": true
     }
   },
   "https://en.wikipedia.org/wiki/Open_Society_Foundations": {
@@ -1245,6 +1261,108 @@
     "last_modified": null,
     "verified": {
       "a010f2e8072c84a697d2cd73667f7a7b9d4436b8e6a29df63775be7e70d14445": false
+    }
+  },
+  "https://grattan.edu.au/about-us/": {
+    "checked": "2026-08-15",
+    "content_hash": "eb7c25c9c2d08909da644cfb6642164eb1bdb700d3736b0fa61d89c90ff6a04d",
+    "contexts": {
+      "aecc0abaf726d33629e4bd2659cc2ce0802a41b849f9d5eae25ad496e3662069": {
+        "prefix": "We are independent, taking the side of the public interest rather than interest groups.",
+        "sha256": "eb7c25c9c2d08909da644cfb6642164eb1bdb700d3736b0fa61d89c90ff6a04d",
+        "suffix": "We are rigorous in obtaining the best evidence from our own data analysis and from published work. We are p",
+        "text": "We are independent, taking the side of the public interest rather than interest groups. We receive no ongoing government funding and reject commissioned work to ensure this independence."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "aecc0abaf726d33629e4bd2659cc2ce0802a41b849f9d5eae25ad496e3662069": true
+    }
+  },
+  "https://grattan.edu.au/about/funding/": {
+    "checked": "2026-08-15",
+    "content_hash": "562e05a83ebfd7ad64f7df53f0b5926edf7b8e392516def97970f7fe17a6b9ee",
+    "contexts": {
+      "562e05a83ebfd7ad64f7df53f0b5926edf7b8e392516def97970f7fe17a6b9ee": {
+        "prefix": "t and by generous companies, philanthropic organisations, and individuals who support our public policy research.",
+        "sha256": "562e05a83ebfd7ad64f7df53f0b5926edf7b8e392516def97970f7fe17a6b9ee",
+        "suffix": "To safeguard our independence, Grattan Institute\u2019s board controls the endowment. The funds are invested, and Grattan uses the income to pursue",
+        "text": "Grattan began with a $15 million endowment from each of the Federal and Victorian Governments. In addition, BHP Billiton provided $4 million and the National Australia Bank $1 million."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "562e05a83ebfd7ad64f7df53f0b5926edf7b8e392516def97970f7fe17a6b9ee": true
+    }
+  },
+  "https://grattan.edu.au/appointment-of-danielle-wood-as-new-ceo-of-grattan-institute/": {
+    "checked": "2026-08-15",
+    "content_hash": "513b7fe16c1107e35b5a4c46161e86a4b8a68227cdba68a11322efcdce8b0e06",
+    "contexts": {
+      "513b7fe16c1107e35b5a4c46161e86a4b8a68227cdba68a11322efcdce8b0e06": {
+        "prefix": "as agreed to step into the CEO role at Grattan and continue the vital work that we have been doing over the last eleven years\u2019 said Mr Chernov.",
+        "sha256": "513b7fe16c1107e35b5a4c46161e86a4b8a68227cdba68a11322efcdce8b0e06",
+        "suffix": "Mr Chernov said that \u2018since John opened the doors in 2009, he has steered Grattan to become Australia\u2019s leading domestic policy think tank, and",
+        "text": "Grattan Institute\u2019s inaugural CEO, Prof John Daley, will be stepping down in July 2020."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "513b7fe16c1107e35b5a4c46161e86a4b8a68227cdba68a11322efcdce8b0e06": true
+    }
+  },
+  "https://grattan.edu.au/democracy-and-public-integrity/": {
+    "checked": "2026-08-15",
+    "content_hash": "9c2f0e547564db62e453758d34eb48f4656032245da9f74c56a81f13157e3a34",
+    "contexts": {
+      "9c2f0e547564db62e453758d34eb48f4656032245da9f74c56a81f13157e3a34": {
+        "prefix": "Our Experts Aruna Sathanapally",
+        "sha256": "9c2f0e547564db62e453758d34eb48f4656032245da9f74c56a81f13157e3a34",
+        "suffix": "Kate Griffiths Chief of Staff and Democracy Deputy Program Director",
+        "text": "CEO and Economic Prosperity and Democracy Program Director"
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "9c2f0e547564db62e453758d34eb48f4656032245da9f74c56a81f13157e3a34": true
+    }
+  },
+  "https://grattan.edu.au/grattan-institute-new-ceo/": {
+    "checked": "2026-08-15",
+    "content_hash": "abb1d9a048af96d4614e3e51343424336a17adc74477479f7c7fb91760114fc6",
+    "contexts": {
+      "acd3ad14dec4fecf95db4c6bdac1283a46ad8381dd92a5c36fe8d0e6499afb16": {
+        "prefix": "2024 Share Bluesky Streamline Icon: https://streamlinehq.com Bluesky",
+        "sha256": "abb1d9a048af96d4614e3e51343424336a17adc74477479f7c7fb91760114fc6",
+        "suffix": ". Dr Sathanapally is currently Executive Director, Macroeconomy, at the NSW Treasury, where she previously led the Revenue division, the NSW Int",
+        "text": "Aruna Sathanapally has been appointed CEO of Australia\u2019s leading public policy think tank, Grattan Institute."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "acd3ad14dec4fecf95db4c6bdac1283a46ad8381dd92a5c36fe8d0e6499afb16": true
+    }
+  },
+  "https://grattan.edu.au/news/improving-australias-democracy/": {
+    "checked": "2026-08-15",
+    "content_hash": "ae1de85cf692ad43df1256fb0228f0524375f1b3f6c85de922dcaf38e335910f",
+    "contexts": {
+      "386062a5f8ce019d1b4fd9ae64c79fb983fd58cb3af3432a84b13644af0c2599": {
+        "prefix": "at any single interest can hold over the national debate. These are important reforms, but substantial problems remain with the current design.",
+        "sha256": "ae1de85cf692ad43df1256fb0228f0524375f1b3f6c85de922dcaf38e335910f",
+        "suffix": "A loophole in the design of the donations cap also advantages major parties by allowing the cap to apply separately to each branch of a party.",
+        "text": "These are important reforms, but substantial problems remain with the current design. The total cap of $90 million for electoral expenditure by a political party is too high. And the per-seat cap of $800,000 is too low, advantaging incumbents over new entrants. A loophole in the design of the donations cap also advantages major parties by allowing the cap to apply separately to each branch of a party."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "386062a5f8ce019d1b4fd9ae64c79fb983fd58cb3af3432a84b13644af0c2599": true
     }
   },
   "https://greens.org.au/about/our-story": {
@@ -2204,8 +2322,8 @@
         "text": "My main thrust is government organized along scientific principles which is as much to say as the application of cybernetic principles to government. Democracy is part of that and Stafford Beer, who is the father of management cybernetics, was highly regarded by the Open Democracy organisation as witnessed by the obituary published for him by Rosemary Bechler, the International Editor, of Open Democracy - https://www.opendemocracy.net/node/611"
       }
     },
-    "etag": "W/\"6a80576e-3baed\"",
-    "last_modified": "Sat, 15 Aug 2026 12:11:26 GMT",
+    "etag": "W/\"6a808b70-3bde5\"",
+    "last_modified": "Sat, 15 Aug 2026 15:53:20 GMT",
     "verified": {
       "bede7c49e95577b8277ad463bb91abccf42180fb72e768eccea82d61fcd628e0": true
     }
@@ -2569,6 +2687,16 @@
       "cc28d4301a6779773f43856e1f6c111bba0055dab43f79dedca4a22282f800e8": true
     }
   },
+  "https://www.newdemocracy.com.au/board-and-executive/": {
+    "checked": "2026-08-15",
+    "content_hash": "f82fb37738cf86f81a3f595391ff5b26fa3727e20672f5e910b8899dc2578be2",
+    "contexts": {},
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "da67029ed5ea52da45e84dcad34c4538e72b4fbda8f0cef37336baee4ed65ce1": false
+    }
+  },
   "https://www.newdemocracy.com.au/history/": {
     "checked": "2026-08-15",
     "content_hash": "3edb657c20fca0f0a9cdadc1ef77a88b61171ac8ba192143400233fa5bfa776b",
@@ -2591,7 +2719,7 @@
       }
     },
     "etag": null,
-    "last_modified": "Sat, 15 Aug 2026 12:56:46 GMT",
+    "last_modified": "Sat, 15 Aug 2026 16:12:16 GMT",
     "verified": {
       "292a5491284943180173e19421b4b1906053adf3c0b79e98d2736277bfe08b0a": true
     }
