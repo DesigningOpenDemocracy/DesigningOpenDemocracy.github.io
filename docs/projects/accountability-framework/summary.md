@@ -33,4 +33,4 @@ Not a human rights observatory. Not a democracy promotion organisation. Not tryi
 
 ---
 
-*This framework informs the [Democracy Landscape](../../organisations/organisations.md), the [Concepts](../../concepts/concepts.md) section, and the curation decisions reflected throughout the site.*
+*This framework informs the [Democracy Landscape](../../organisations/index.md), the [Concepts](../../concepts/index.md) section, and the curation decisions reflected throughout the site.*

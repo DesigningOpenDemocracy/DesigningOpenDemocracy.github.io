@@ -41,7 +41,7 @@ from reorder_frontmatter import reorder_frontmatter as _canonical_reorder  # noq
 
 DOCS_DIR = os.path.join(os.path.dirname(__file__), "..", "docs")
 ORGS_DIR = os.path.join(DOCS_DIR, "organisations")
-SKIP_FILES = {"organisations.md", "concepts.md"}
+SKIP_FILES = {"index.md"}
 MIN_SOURCE_LENGTH = 20
 STALE_CHECK_DAYS = 365
 

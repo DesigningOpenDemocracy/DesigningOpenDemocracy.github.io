@@ -16,7 +16,7 @@ tags:
 summary: "DOD's Philosophy page used to host the full accountability framework — a long, AI-reviewed standard gated by a 'read this first' document. A member pointed out that's a bad front door for open discussion. Here's what moved, where, and why."
 ---
 
-If you've visited DOD's Philosophy page before, it just changed shape. The full accountability framework that used to live there — the rigorous, AI-reviewed standard for what belongs in the [Democracy Landscape](../../organisations/organisations.md) — has moved. The page itself is now something different: an open space for DOD members to argue about democracy.
+If you've visited DOD's Philosophy page before, it just changed shape. The full accountability framework that used to live there — the rigorous, AI-reviewed standard for what belongs in the [Democracy Landscape](../../organisations/index.md) — has moved. The page itself is now something different: an open space for DOD members to argue about democracy.
 
 <!-- more -->
 

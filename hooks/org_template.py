@@ -11,7 +11,7 @@ def on_page_markdown(markdown, *, page, config, files):
         hide = page.meta.get('hide') or []
         if 'navigation' not in hide:
             page.meta['hide'] = hide + ['navigation']
-        if (page.file.src_path != 'organisations/organisations.md'
+        if (page.file.src_path != 'organisations/index.md'
                 and not page.meta.get('template')):
             page.meta['template'] = 'organisation.html'
     return markdown

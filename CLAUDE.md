@@ -413,7 +413,7 @@ more than a bare link.
 | Template | Location | Applied to |
 |---|---|---|
 | `organisation.html` | `docs/overrides/` | All org pages — auto-applied by hook, no frontmatter needed |
-| `organisations.html` | `docs/overrides/` | `docs/organisations/organisations.md` — sortable table index |
+| `organisations.html` | `docs/overrides/` | `docs/organisations/index.md` — sortable table index |
 | `community.html` | `docs/overrides/` | `docs/community/community.md` — auto-generates active projects grid |
 | `project.html` | `docs/overrides/` | Project pages — must set `template: project.html` in frontmatter |
 | `home.html` | `docs/overrides/` | Home page — hero pitch, CTA buttons, active projects, map |

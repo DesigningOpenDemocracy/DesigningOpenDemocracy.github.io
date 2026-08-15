@@ -24,7 +24,7 @@ except ImportError:
 
 DOCS_DIR = os.path.join(os.path.dirname(__file__), "..", "docs")
 ORGS_DIR = os.path.join(DOCS_DIR, "organisations")
-SKIP_FILES = {"organisations.md", "concepts.md"}
+SKIP_FILES = {"index.md"}
 
 # Canonical ordering (fields not listed are appended at end in original order)
 CANONICAL_TOP = [

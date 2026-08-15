@@ -53,7 +53,7 @@ except ImportError:
 DOCS_DIR = os.path.join(os.path.dirname(__file__), "..", "docs")
 ORGS_DIR = os.path.join(DOCS_DIR, "organisations")
 CONCEPTS_DIR = os.path.join(DOCS_DIR, "concepts")
-SKIP_FILES = {"organisations.md"}
+SKIP_FILES = {"index.md"}
 WAYBACK_PREFIX = "https://web.archive.org"
 ALLOWED_STATUSES = {"active", "inactive", "deregistered"}
 ISO2_RE = __import__("re").compile(r'^[A-Z]{2}$')
@@ -78,7 +78,7 @@ def load_concept_slugs():
     return {
         os.path.basename(p)[:-3]
         for p in glob.glob(os.path.join(CONCEPTS_DIR, "*.md"))
-        if os.path.basename(p) != "concepts.md"
+        if os.path.basename(p) != "index.md"
     }
 
 

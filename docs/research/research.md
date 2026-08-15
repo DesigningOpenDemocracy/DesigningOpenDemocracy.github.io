@@ -9,8 +9,8 @@ This is an **archive of members' raw working notes** — unpolished material kep
 
 **If you're new, start elsewhere:**
 
-- For short orientations on democracy topics, see [Concepts](../concepts/concepts.md).
-- For organisations we track, see the [Democracy Landscape](../organisations/organisations.md) — this is now the maintained reference. The two org link-lists below originated here and are gradually being migrated into it; they still contain entries not yet moved across.
+- For short orientations on democracy topics, see [Concepts](../concepts/index.md).
+- For organisations we track, see the [Democracy Landscape](../organisations/index.md) — this is now the maintained reference. The two org link-lists below originated here and are gradually being migrated into it; they still contain entries not yet moved across.
 
 ## Files in this section
 

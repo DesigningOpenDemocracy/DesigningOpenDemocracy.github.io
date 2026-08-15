@@ -50,7 +50,7 @@ except ImportError:
 
 DOCS_DIR = os.path.join(os.path.dirname(__file__), "..", "docs")
 LINK_RE = re.compile(r'\[([^\]]*)\]\(([^)]+)\)')
-SKIP_FILES = {"organisations.md", "concepts.md"}
+SKIP_FILES = {"index.md"}
 
 
 def parse_date(val):

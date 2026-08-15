@@ -22,7 +22,7 @@ import re
 import sys
 
 DOCS_DIR = os.path.join(os.path.dirname(__file__), "..", "docs")
-SKIP_FILES = {"organisations.md", "concepts.md"}
+SKIP_FILES = {"index.md"}
 FM_RE = re.compile(r'^---\s*$', re.MULTILINE)
 TITLE_RE = re.compile(r'^title:\s*(.+)$', re.MULTILINE)
 
