@@ -54,14 +54,14 @@ events:
   url_checked: '2026-08-15'
   notable: true
 - date: '2021-06-09'
-  title: Co-founder Grant Rule's company MessageMedia sold to Sinch for a total enterprise
-    value of US$1.3 billion, substantially expanding the foundation's funding base
+  title: Co-founder Grant Rule's company MessageMedia sold to Sinch for a total
+    enterprise value of US$1.3 billion
   url: https://www.globenewswire.com/news-release/2021/06/09/2244148/0/en/sinch-ab-publ-sinch-to-acquire-messagemedia-accelerating-growth-with-small-and-medium-sized-businesses.html
   quote: Sinch will pay a total enterprise value of USD 1.3 billion, with a total
     cash consideration of USD 1.1 billion and 1,128,487 new shares in Sinch
   proof_level: high
   url_checked: '2026-08-15'
-  notable: true
+  notable: false
 - date: '2024-05-17'
   title: Renews Monash University partnership with a $25M+, five-year commitment to
     the McKinnon Institute; Prof. Rod Glover named CEO
@@ -115,9 +115,9 @@ Its explicitly non-partisan stance — working with all sides of politics rather
 
 ## History
 
-Founded in 2015 by tech entrepreneur Grant Rule and public health professional Dr Sophie Oh, the foundation's mission was "inspired by Grant's mother, who instils the values of service and positive contribution in those around her."[^about] Its two flagship programs both launched as university partnerships: the [McKinnon Prize in Political Leadership](https://mckinnon.co/leadership/mckinnon-prize) — Australia's only independent, non-partisan award for political leadership, launched with the University of Melbourne in November 2017[^prize] — and the [McKinnon Institute for Political Leadership](https://mckinnon.co/leadership/mckinnon-institute), established with Monash University in 2019 and, by 2024, credited with delivering leadership programs to more than a quarter of Australia's sitting MPs.[^monash]
+Founded in 2015 by co-founders Grant Rule and Dr Sophie Oh, the foundation's mission was "inspired by Grant's mother, who instils the values of service and positive contribution in those around her."[^about] Its two flagship programs both launched as university partnerships: the [McKinnon Prize in Political Leadership](https://mckinnon.co/leadership/mckinnon-prize) — which McKinnon's own site describes as "Australia's only independent, non-partisan award for outstanding political leadership"[^prize-only] — launched with the University of Melbourne in November 2017[^prize], and the [McKinnon Institute for Political Leadership](https://mckinnon.co/leadership/mckinnon-institute), established with Monash University in 2019 and, by 2024, credited with delivering leadership programs to more than a quarter of Australia's sitting MPs.[^monash]
 
-The foundation's scale changed sharply in 2021, when Rule's messaging-technology company MessageMedia was sold to Swedish rival Sinch for a total enterprise value of US$1.3 billion.[^sinch] It rebranded from "Susan McKinnon Foundation" to "McKinnon" in 2025, a change independently confirmed via the organisation's own site, its LinkedIn page, and its ACNC charity registration.
+Rule separately founded the messaging-technology company MessageMedia, sold to Swedish rival Sinch in June 2021 for a total enterprise value of US$1.3 billion.[^sinch] The foundation rebranded from "Susan McKinnon Foundation" to "McKinnon" in 2025, a change independently confirmed via the organisation's own site, its LinkedIn page, and its ACNC charity registration.
 
 ## Links
 
@@ -133,6 +133,7 @@ The foundation's scale changed sharply in 2021, when Rule's messaging-technology
 - [Luminate](luminate.md)
 
 [^about]: ["About Us"](https://mckinnon.co/about-us), McKinnon.
+[^prize-only]: ["McKinnon Prize"](https://mckinnon.co/leadership/mckinnon-prize), McKinnon — "The prize is Australia's only independent, non-partisan award for outstanding political leadership." The organisation's own claim about itself, not independently verified against competing awards.
 [^prize]: ["Susan McKinnon Foundation and University of Melbourne establish prestigious award for political leadership"](https://www.unimelb.edu.au/newsroom/news/2017/november/susan-mckinnon-foundation-and-university-of-melbourne-establish-prestigious-award-for-political-leadership), University of Melbourne Newsroom, November 2017.
 [^monash]: ["The Susan McKinnon Foundation and Monash University renew commitment to enhanced political leadership"](https://www.philanthropy.org.au/news-and-stories/the-susan-mckinnon-foundation-and-monash-university-renew-commitment-to-enhanced-political-leadership/), Philanthropy Australia, 17 May 2024.
 [^sinch]: ["Sinch to acquire MessageMedia, accelerating growth with small and medium-sized businesses"](https://www.globenewswire.com/news-release/2021/06/09/2244148/0/en/sinch-ab-publ-sinch-to-acquire-messagemedia-accelerating-growth-with-small-and-medium-sized-businesses.html), Sinch AB press release via GlobeNewswire, 9 June 2021.

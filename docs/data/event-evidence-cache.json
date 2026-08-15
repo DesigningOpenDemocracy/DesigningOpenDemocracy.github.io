@@ -1356,6 +1356,23 @@
       "a2ca2c617bccda3262bf256be647677dcd63460cb09c10ebad8ecf9cbfafb8d4": true
     }
   },
+  "https://mckinnon.co/leadership/mckinnon-prize": {
+    "checked": "2026-08-15",
+    "content_hash": "f8e3a0bf0db2e9b5e79a9eec2b75a24be7596e1d23eb03125595973bd15711c0",
+    "contexts": {
+      "c5a619c71cb4b90253d6e7c90d6fe6cb86a68e3a4d0410ae04a993e4706a0560": {
+        "prefix": "\u00a9 McKinnon 2026 | All rights reserved Privacy Policy MCKINNON PRIZE",
+        "sha256": "f8e3a0bf0db2e9b5e79a9eec2b75a24be7596e1d23eb03125595973bd15711c0",
+        "suffix": "It seeks to recognise leaders, encourage national discussion and inspire others to pursue courageous and visionary political leadership.",
+        "text": "The prize is Australia's only independent, non-partisan award for outstanding political leadership. It seeks to recognise leaders, encourage national discussion and inspire others to pursue courageous and visionary political leadership."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "c5a619c71cb4b90253d6e7c90d6fe6cb86a68e3a4d0410ae04a993e4706a0560": true
+    }
+  },
   "https://memo98.sk/about-us": {
     "checked": "2026-08-14",
     "content_hash": "9ae71de58d33f30dbd3c5e1e9bfdbb3b7d159d98c14b143a55e5b1cf14bb3c38",
@@ -2133,8 +2150,8 @@
         "text": "My main thrust is government organized along scientific principles which is as much to say as the application of cybernetic principles to government. Democracy is part of that and Stafford Beer, who is the father of management cybernetics, was highly regarded by the Open Democracy organisation as witnessed by the obituary published for him by Rosemary Bechler, the International Editor, of Open Democracy - https://www.opendemocracy.net/node/611"
       }
     },
-    "etag": "W/\"6a800a0d-3baed\"",
-    "last_modified": "Sat, 15 Aug 2026 06:41:17 GMT",
+    "etag": "W/\"6a80576e-3baed\"",
+    "last_modified": "Sat, 15 Aug 2026 12:11:26 GMT",
     "verified": {
       "bede7c49e95577b8277ad463bb91abccf42180fb72e768eccea82d61fcd628e0": true
     }
