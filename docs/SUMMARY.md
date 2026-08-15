@@ -5,9 +5,9 @@
     - [Philosophy](philosophy/index.md)
 - [Blog](/blog/)
 - [Calendar](calendar.md)
-- [Community](community/community.md)
+- [Community](community/index.md)
     - community/*.md
-    - [Projects](projects/projects.md)
+    - [Projects](projects/index.md)
         - projects/*.md
         - [Accountability Framework](projects/accountability-framework/index.md)
             - [Summary](projects/accountability-framework/summary.md)
@@ -19,7 +19,7 @@
 - [Democracy Landscape](organisations/index.md)
     - organisations/*.md
 - [Heartbeat](/heartbeat/)
-- [Research](research/research.md)
+- [Research](research/index.md)
     - research/*.md
 - [Knowledge Graph](knowledge-graph.md)
 

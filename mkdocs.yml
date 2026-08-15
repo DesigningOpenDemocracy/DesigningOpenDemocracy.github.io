@@ -39,6 +39,9 @@ plugins:
       redirect_maps:
         'organisations/organisations.md': 'organisations/index.md'
         'concepts/concepts.md': 'concepts/index.md'
+        'community/community.md': 'community/index.md'
+        'projects/projects.md': 'projects/index.md'
+        'research/research.md': 'research/index.md'
   - blog:
       post_excerpt: required
       archive: true

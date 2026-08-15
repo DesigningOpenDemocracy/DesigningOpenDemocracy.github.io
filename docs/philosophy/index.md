@@ -42,6 +42,6 @@ Before this page becomes any kind of curated record of what DOD members think, w
 - Raise it in DOD's [Telegram channel](https://t.me/joinchat/HNk_UBX8A7jBPJPbAZU5Zg)
 - Bring it to a [meetup or event](../about.md) — recordings end up on [YouTube](https://www.youtube.com/channel/UCqIo0VC_zHyPjzNKIafGJpg/featured) and the [podcast](../about.md)
 - Open a discussion on [GitHub](https://github.com/DesigningOpenDemocracy/DesigningOpenDemocracy.github.io) if you want a written record
-- See the [Community](../community/community.md) page for other ways to get involved
+- See the [Community](../community/index.md) page for other ways to get involved
 
 *This page does not yet reflect a curated body of community discussion — that's the point. Once real responses come in, from an event or otherwise, they belong here.*

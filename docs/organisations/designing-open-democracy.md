@@ -91,7 +91,7 @@ Some in the group describe DOD as a [meta-organisation](../concepts/meta-organis
 ## See also
 
 - [About](../about.md) — DOD's own fuller self-description
-- [Community](../community/community.md) — how to get involved
+- [Community](../community/index.md) — how to get involved
 - [Philosophy](../philosophy/index.md) — open discussion space, including disagreement with DOD's own framework
 - [Accountability Framework](../projects/accountability-framework/index.md)
 - [Meta-Organisation](../concepts/meta-organisation.md)

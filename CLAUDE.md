@@ -414,7 +414,7 @@ more than a bare link.
 |---|---|---|
 | `organisation.html` | `docs/overrides/` | All org pages — auto-applied by hook, no frontmatter needed |
 | `organisations.html` | `docs/overrides/` | `docs/organisations/index.md` — sortable table index |
-| `community.html` | `docs/overrides/` | `docs/community/community.md` — auto-generates active projects grid |
+| `community.html` | `docs/overrides/` | `docs/community/index.md` — auto-generates active projects grid |
 | `project.html` | `docs/overrides/` | Project pages — must set `template: project.html` in frontmatter |
 | `home.html` | `docs/overrides/` | Home page — hero pitch, CTA buttons, active projects, map |
 | `knowledge-graph.html` | `docs/overrides/` | `docs/knowledge-graph.md` — interactive Cytoscape.js graph; set via `template:` frontmatter |

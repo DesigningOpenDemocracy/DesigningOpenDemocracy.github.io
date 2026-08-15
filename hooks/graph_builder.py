@@ -54,7 +54,7 @@ def on_page_markdown(markdown, *, page, config, files):
                         'type': 'see_also',
                     })
 
-    elif src.startswith('projects/') and src != 'projects/projects.md':
+    elif src.startswith('projects/') and src != 'projects/index.md':
         slug = src[len('projects/'):].replace('.md', '')
         if m:
             for link_m in _MD_LINK_RE.finditer(m.group(1)):
@@ -102,7 +102,7 @@ def on_page_context(context, *, page, config, nav):
             a, b = sorted([node_id, f'org:{r}'])
             _edges.append({'source': a, 'target': b, 'type': 'org_link'})
 
-    elif url.startswith('projects/') and url not in ('projects/', 'projects/projects/'):
+    elif url.startswith('projects/') and url != 'projects/':
         slug = url.replace('projects/', '').rstrip('/')
         node_id = f'project:{slug}'
         _nodes[node_id] = {
