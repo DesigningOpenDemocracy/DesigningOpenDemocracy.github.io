@@ -29,7 +29,7 @@ def load_concept_slugs():
     slugs = set()
     for path in glob.glob(os.path.join(CONCEPTS_DIR, "*.md")):
         slug = os.path.basename(path)[:-3]
-        if slug != "concepts":
+        if slug != "index":
             slugs.add(slug)
     return slugs
 

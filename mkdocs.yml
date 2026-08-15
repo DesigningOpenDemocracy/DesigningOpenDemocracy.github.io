@@ -35,6 +35,10 @@ plugins:
       nav_file: SUMMARY.md
   - ezlinks:
       wikilinks: true
+  - redirects:
+      redirect_maps:
+        'organisations/organisations.md': 'organisations/index.md'
+        'concepts/concepts.md': 'concepts/index.md'
   - blog:
       post_excerpt: required
       archive: true

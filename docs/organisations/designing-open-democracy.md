@@ -75,7 +75,7 @@ Some in the group describe DOD as a [meta-organisation](../concepts/meta-organis
 ## What DOD does
 
 - **Podcast and meetups** — recorded discussions with practitioners, researchers, and people building democracy-reform projects, going back to 2016
-- **The Democracy Landscape** — this site's [organisations index](organisations.md), tracking who's working on what, whether they're still active, and what happened when they weren't
+- **The Democracy Landscape** — this site's [organisations index](index.md), tracking who's working on what, whether they're still active, and what happened when they weren't
 - **The Accountability Framework** — DOD's standard for what belongs in the Democracy Landscape, applied non-partisanly and symmetrically, including to liberal democracies
 - **Blog and retrospectives** — analysis connecting DOD's own eight-plus years of discussion to what's happening in the wider reform space now
 

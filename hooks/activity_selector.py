@@ -144,7 +144,7 @@ def on_pre_build(config):
     today = date.today()
     orgs_dir = os.path.join(os.path.dirname(__file__), "..", "docs", "organisations")
     for path in glob.glob(os.path.join(orgs_dir, "*.md")):
-        if os.path.basename(path) == "organisations.md":
+        if os.path.basename(path) == "index.md":
             continue
         try:
             post = _fm.load(path)

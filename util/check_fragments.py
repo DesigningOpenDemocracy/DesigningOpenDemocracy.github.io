@@ -516,7 +516,7 @@ def collect_evidence(args):
     event_paths = sorted(glob.glob(os.path.join(ORG_DIR, "*.md")))
     for path in event_paths:
         slug = os.path.basename(path)[:-3]
-        if slug in ("organisations", "concepts"):
+        if slug == "index":
             continue
         if args.slug and slug not in args.slug:
             continue

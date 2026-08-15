@@ -2,7 +2,7 @@
 title: Video References
 ---
 
-A running log of individual videos (YouTube essays, talks, podcasts) that have informed DOD discussion or been cited in a blog post or concept page. This tracks **specific videos**, not the creators or channels behind them — a creator gets a row here for each video referenced, not a dedicated page, unless their body of work warrants a full [organisation](../organisations/organisations.md) entry in its own right.
+A running log of individual videos (YouTube essays, talks, podcasts) that have informed DOD discussion or been cited in a blog post or concept page. This tracks **specific videos**, not the creators or channels behind them — a creator gets a row here for each video referenced, not a dedicated page, unless their body of work warrants a full [organisation](../organisations/index.md) entry in its own right.
 
 This is a citation log, not an endorsement list. Inclusion means a video was substantive enough to reference or respond to — not agreement with its argument.
 

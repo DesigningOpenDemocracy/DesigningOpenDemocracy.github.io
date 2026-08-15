@@ -14,9 +14,9 @@
             - [Soul Document](projects/accountability-framework/soul.md)
             - [AI Dialogues](projects/accountability-framework/ai-dialogues/index.md)
                 - projects/accountability-framework/ai-dialogues/*.md
-- [Concepts](concepts/concepts.md)
+- [Concepts](concepts/index.md)
     - concepts/*.md
-- [Democracy Landscape](organisations/organisations.md)
+- [Democracy Landscape](organisations/index.md)
     - organisations/*.md
 - [Heartbeat](/heartbeat/)
 - [Research](research/research.md)

@@ -86,4 +86,4 @@ Created articles:
 ## See also
 
 - [Democracy](../concepts/democracy.md)
-- [Concepts](../concepts/concepts.md)
+- [Concepts](../concepts/index.md)

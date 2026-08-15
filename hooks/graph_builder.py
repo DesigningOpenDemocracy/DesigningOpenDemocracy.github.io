@@ -38,7 +38,7 @@ def on_page_markdown(markdown, *, page, config, files):
     src = page.file.src_path
     m = _SEE_ALSO_RE.search(markdown)
 
-    if src.startswith('concepts/') and src != 'concepts/concepts.md':
+    if src.startswith('concepts/') and src != 'concepts/index.md':
         slug = src[len('concepts/'):].replace('.md', '')
         if m:
             for link_m in _MD_LINK_RE.finditer(m.group(1)):
@@ -74,7 +74,7 @@ def on_page_markdown(markdown, *, page, config, files):
 def on_page_context(context, *, page, config, nav):
     url = page.url or ''
 
-    if url.startswith('concepts/') and url not in ('concepts/', 'concepts/concepts/'):
+    if url.startswith('concepts/') and url != 'concepts/':
         slug = url.replace('concepts/', '').rstrip('/')
         _nodes[f'concept:{slug}'] = {
             'id': f'concept:{slug}',
@@ -83,7 +83,7 @@ def on_page_context(context, *, page, config, nav):
             'url': f'/{url}',
         }
 
-    elif url.startswith('organisations/') and url not in ('organisations/', 'organisations/organisations/'):
+    elif url.startswith('organisations/') and url != 'organisations/':
         slug = url.replace('organisations/', '').rstrip('/')
         node_id = f'org:{slug}'
         _nodes[node_id] = {
