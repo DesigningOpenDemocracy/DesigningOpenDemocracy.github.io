@@ -1630,6 +1630,54 @@
     ]
   },
   {
+    "id": "800e215f",
+    "type": "webpage",
+    "URL": "https://greens.org.au/about/our-story",
+    "title": "Federal party formally established, uniting Australia's state-based Greens parties",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "In 1992 Australia's state-based Greens parties joined together, fronting the press on 30 August to announce the new federal party, the Australian Greens"
+      }
+    ]
+  },
+  {
+    "id": "a3531b81",
+    "type": "webpage",
+    "URL": "https://greens.org.au/act/news/greens-push-truth-electoral-advertising",
+    "title": "ACT Greens push a truth-in-political-advertising bill modelled on South Australia's law",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "The Greens are proposing to amend the Electoral Act to include provisions similar to those that exist in South Australia that makes it illegal to disseminate political material or advertising that is factually incorrect during the election period"
+      }
+    ]
+  },
+  {
+    "id": "4d15c0fe",
+    "type": "webpage",
+    "URL": "https://greens.org.au/news/media-release/greens-legislation-would-ban-dirty-donations-aec-data-reveals-major-parties",
+    "title": "Reintroduces a Bill to cap political donations at $3,000 per term and ban donations from \"dirty industries\"",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "It will cap donations at $3,000 per term, finishing the job abandoned when Labor and the Liberals cut a backroom deal"
+      }
+    ]
+  },
+  {
+    "id": "e8689a52",
+    "type": "webpage",
+    "URL": "https://greens.org.au/news/media-release/nacc-bill-passes-senate-historic-vote-critical-greens-amends-integrity",
+    "title": "Wins amendments strengthening Inspector oversight powers as the National Anti-Corruption Commission bill passes the Senate",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Greens amendments to the NACC bill give significant additional powers to the Inspector of the Commission to provide real time auditing and monitoring of the NACC’s workings and to guard against potential overreach and maladministration"
+      }
+    ]
+  },
+  {
     "id": "47fa6bdf",
     "type": "webpage",
     "URL": "https://ia.acs.org.au/article/2018/blockchain-to-revolutionise-e-voting.html",
@@ -1710,6 +1758,18 @@
       {
         "type": "quote-match",
         "quote": "known as the Susan McKinnon Foundation) was established in 2015 by Sophie Oh and Grant Rule"
+      }
+    ]
+  },
+  {
+    "id": "0de149c7",
+    "type": "webpage",
+    "URL": "https://mckinnon.co/leadership/mckinnon-prize",
+    "title": "\"McKinnon Prize\"",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "The prize is Australia's only independent, non-partisan award for outstanding political leadership."
       }
     ]
   },
@@ -2618,6 +2678,18 @@
     ]
   },
   {
+    "id": "c6547300",
+    "type": "webpage",
+    "URL": "https://www.globenewswire.com/news-release/2021/06/09/2244148/0/en/sinch-ab-publ-sinch-to-acquire-messagemedia-accelerating-growth-with-small-and-medium-sized-businesses.html",
+    "title": "Co-founder Grant Rule's company MessageMedia sold to Sinch for a total enterprise value of US$1.3 billion",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Sinch will pay a total enterprise value of USD 1.3 billion, with a total cash consideration of USD 1.1 billion and 1,128,487 new shares in Sinch"
+      }
+    ]
+  },
+  {
     "id": "2fa3b6ef",
     "type": "webpage",
     "URL": "https://www.govtech.com/civic/New-Global-Civic-Tech-Group-Emerges-from-The-Omidyar-Group.html",
@@ -3028,6 +3100,22 @@
           "suffix": "Currently, the community integrates tools such as Pol.is for large-scale opinion mapping, Mentimeter for interactive delibera",
           "text": "vTaiwan has always demonstrated how civic communities can innovate in democratic participation by combining open-source platforms, commercial tools, and AI. Currently, the community integrates tools such as"
         }
+      }
+    ]
+  },
+  {
+    "id": "0f7b34f9",
+    "type": "webpage",
+    "URL": "https://www.philanthropy.org.au/news-and-stories/the-susan-mckinnon-foundation-and-monash-university-renew-commitment-to-enhanced-political-leadership/",
+    "title": "McKinnon Institute for Political Leadership established, in partnership with Monash University",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Since it was established in 2019, the Institute has delivered transformative programs to more than 25% of the current MPs across Australia"
+      },
+      {
+        "type": "quote-match",
+        "quote": "an investment of more than $25 million over five years from the Foundation to sustain and advance the McKinnon Institute for Political Leadership"
       }
     ]
   },
