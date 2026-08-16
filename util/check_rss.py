@@ -29,6 +29,9 @@ from email.utils import parsedate_to_datetime
 from urllib.parse import urljoin, urlparse
 from xml.etree import ElementTree as ET
 
+sys.path.insert(0, os.path.dirname(__file__))
+from frontmatter_io import split_frontmatter  # noqa: E402
+
 try:
     import frontmatter
 except ImportError:
@@ -364,10 +367,9 @@ def update_activity_source(path, date_str, note, feed_url, post_url=None, method
 
     with open(path, encoding="utf-8") as f:
         content = f.read()
-    parts = content.split("---", 2)
-    if len(parts) < 3 or parts[0] != "":
+    yaml_block, rest = split_frontmatter(content)
+    if yaml_block is None:
         return False
-    yaml_block, rest = parts[1], parts[2]
 
     meta = _yaml.safe_load(yaml_block) or {}
 
@@ -470,10 +472,9 @@ def write_checked_only(path, method, note=None):
 
     with open(path, encoding="utf-8") as f:
         content = f.read()
-    parts = content.split("---", 2)
-    if len(parts) < 3 or parts[0] != "":
+    yaml_block, rest = split_frontmatter(content)
+    if yaml_block is None:
         return False
-    yaml_block, rest = parts[1], parts[2]
     meta = _yaml.safe_load(yaml_block) or {}
     activity = meta.get("activity") or {}
 
