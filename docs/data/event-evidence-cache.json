@@ -2098,13 +2098,30 @@
     }
   },
   "https://www.buildaballot.org.au/about": {
-    "checked": "2026-08-14",
+    "checked": "2026-08-16",
     "content_hash": "8741925b19fa9a3b0fe85029b310a584731707fa2027eb8d750abbd3ce829f4e",
     "contexts": {},
     "etag": null,
     "last_modified": "Fri, 07 Aug 2026 09:57:38 GMT",
     "verified": {
-      "2dc15b9b52cd94f073b89f53e3239acdac2011d04010c2d83d9cef82f62e3df2": false
+      "bca897fecd269434703d2f7e9b62d73411bb837f4b3b4ba0d4999695b6ecf137": true
+    }
+  },
+  "https://www.buildaballot.org.au/transparency/candidate-and-party-assessments": {
+    "checked": "2026-08-16",
+    "content_hash": "690f1c81f04ac5df5df4c736f5becbcf634e06d916e0b310596616758512b9d9",
+    "contexts": {
+      "63d9389aff17fc40ce3b5f9af5d4427d1be6a5671447a6f842fcc5dc2feeed07": {
+        "prefix": "Transparency / Candidate & Party Assessments Candidate and Party Assessments",
+        "sha256": "690f1c81f04ac5df5df4c736f5becbcf634e06d916e0b310596616758512b9d9",
+        "suffix": "If you have a question or concern, please email tool@buildaballot.org.au Filter by Reset all State",
+        "text": "View how candidates and parties have been assessed on the policies included in the Build a Ballot tool for the 2026 South Australian election.If you have a question or concern, please email tool@buildaballot.org.au"
+      }
+    },
+    "etag": null,
+    "last_modified": "Tue, 11 Aug 2026 18:15:20 GMT",
+    "verified": {
+      "63d9389aff17fc40ce3b5f9af5d4427d1be6a5671447a6f842fcc5dc2feeed07": true
     }
   },
   "https://www.cambridge.org/core/journals/world-politics/article/abs/performative-governance/AAC558378BEA651DB7E2480ECFFB4E10": {
