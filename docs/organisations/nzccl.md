@@ -21,6 +21,33 @@ location:
   longitude: 174.7762
   name: Wellington, New Zealand
   precision: city
+events:
+- date: '1952-08-18'
+  title: Founded at a public meeting in Wellington
+  url: https://nzccl.org.nz/the-founding-and-early-history-of-the-new-zealand-council-for-civil-liberties/
+  quote: Concern culminated in June 1952 when Sir Thomas Hunter, who could hardly
+    be described as a dangerous radical, convened a public meeting of concerned citizens,
+    many of whom were academics from Victoria University, around the setting up of
+    an organisation to protect and, if possible, enlarge civil liberties in New Zealand.
+  note: A founding meeting on 18 August 1952 at which the NZCCL was founded, reported
+    in newspapers on 19 August 1952 (per the Council's own history transcript).
+  proof_level: high
+  url_checked: '2026-08-17'
+- date: '1959-01-01'
+  title: Campaigns against the censorship and import ban on Nabokov's "Lolita"
+  url: https://nzccl.org.nz/the-founding-and-early-history-of-the-new-zealand-council-for-civil-liberties/
+  quote: 1959 saw the Council taking on the issue of censorship. The Indecent Publications
+    Tribunal had declared Vladimir Nabokov’s book “Lolita” indecent and banned its
+    importation and distribution.
+  proof_level: high
+  url_checked: '2026-08-17'
+- date: '1982-01-01'
+  title: Official Secrets Act 1951 repealed after 31 years of Council campaigning
+  url: https://nzccl.org.nz/the-founding-and-early-history-of-the-new-zealand-council-for-civil-liberties/
+  quote: Finally, after 31 years, the Official Secrets Act 1951 was repealed by the
+    Official Information Act 1982 (OIA).
+  proof_level: high
+  url_checked: '2026-08-17'
 activity:
   dod:
     checked: 2026-08-09

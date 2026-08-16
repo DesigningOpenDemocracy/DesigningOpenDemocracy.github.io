@@ -11,7 +11,7 @@ contact:
   source: https://gumilla.org/contact
 summary: A Venezuelan Jesuit social research centre — independent, critically engaged
   with Bolivarian institutions, publishing on community council governance, political
-  participation, and social policy since 1958. One of the few credible independent
+  participation, and social policy since 1968. One of the few credible independent
   governance research bodies operating inside Venezuela.
 concepts:
 - democracy
@@ -22,6 +22,24 @@ location:
   longitude: -66.9036
   name: Caracas, Venezuela
 rss_feed: https://gumilla.org/feed
+events:
+- date: '1968-01-01'
+  title: Founded in January 1968 as Venezuela's first CIAS social research centre
+  url: https://gumilla.org/tenemos-historia/
+  note: 'Site history states: "En enero de 1968 nace la Fundación Centro Gumilla..."
+    ("In January 1968 the Fundación Centro Gumilla was born") — founded under Jesuit
+    priest Alberto Micheo following the CIAS statutes set by General Pedro Arrupe
+    in 1966.'
+  proof_level: medium
+  url_checked: '2026-08-17'
+- date: '1975-01-01'
+  title: Revista Comunicación becomes an integral part of the Centre
+  url: https://gumilla.org/tenemos-historia/
+  note: '"...the magazine Comunicación ... grew and developed from 1975 with autonomy
+    and freedom as an integral and essential component of Centro Gumilla''s analyses
+    and reflections."'
+  proof_level: medium
+  url_checked: '2026-08-17'
 activity:
   rss:
     checked: 2026-08-09
@@ -34,7 +52,7 @@ last_checked: '2026-06-29'
 
 > **Note on scope:** Centro Gumilla meets DOD criteria as an independent research organisation studying governance mechanisms — not because Venezuela's national political system does. Maduro's Venezuela clearly fails the good-faith test; Centro Gumilla is included as a credible independent analyst operating inside that context.
 
-Centro Gumilla is a Jesuit social research and education centre founded in 1958 and based in Caracas. It is one of the few organisations inside Venezuela conducting independent, empirically grounded research on governance — including critical analysis of the Bolivarian institutions, community council model, and participatory democracy mechanisms introduced under Chávez and continued under Maduro.
+Centro Gumilla is a Jesuit social research and education centre founded in January 1968 and based in Caracas. It is one of the few organisations inside Venezuela conducting independent, empirically grounded research on governance — including critical analysis of the Bolivarian institutions, community council model, and participatory democracy mechanisms introduced under Chávez and continued under Maduro.
 
 Venezuela's **Consejos Comunales** (Community Councils), introduced under a 2006 law, were an architecturally distinctive participatory governance experiment: by 2010, over 30,000 neighbourhood-level councils had been registered, each with direct access to state development funding — bypassing traditional municipal government and giving local bodies budget authority over community projects. The design drew on theories of participatory and protagonistic democracy. Centro Gumilla was among the few organisations studying this model empirically rather than ideologically.
 

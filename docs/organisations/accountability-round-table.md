@@ -22,6 +22,22 @@ location:
   name: Melbourne, Australia
   precision: city
 rss_feed: http://accountabilityrt.org/feed
+events:
+- date: '2006-01-01'
+  title: Co-founded by former Supreme Court judge Tim Smith
+  url: https://www.accountabilityrt.org/fiona-mcleod-sc-to-head-up-art/
+  quote: She replaces Tim Smith, a former Supreme Court judge and foundation President
+    of ART, which he co-founded in 2006.
+  proof_level: high
+  url_checked: '2026-08-17'
+- date: '2011-10-20'
+  title: Holds the inaugural Annual Integrity Lecture, delivered by Fred Chaney on
+    integrity in Parliament
+  url: https://www.accountabilityrt.org/inaugural-art-lecture-fred-chaney-integrity-parliament-where-does-duty-lie/
+  note: Post dated 20 October 2011; the lecture series was renamed the Jim Carlton
+    Lectures in 2016.
+  proof_level: medium
+  url_checked: '2026-08-17'
 activity:
   manual:
     checked: 2026-06-08

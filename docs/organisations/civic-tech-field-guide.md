@@ -22,6 +22,31 @@ location:
   longitude: -74.006
   name: New York City, USA
   precision: city
+events:
+- date: '2016-01-01'
+  title: Conceived and first edition published as an open spreadsheet
+  url: https://civictech.guide/about
+  quote: The Field Guide was conceived in early 2016 by Micah Sifry, co-founder of
+    Civic Hall, Matt Stempeck (then the Director of Civic Technology at Microsoft),
+    and Erin Simpson, then at Civic Hall Labs.
+  proof_level: high
+  url_checked: '2026-08-17'
+- date: '2018-01-01'
+  title: Developed into a full directory under Civic Hall
+  url: https://civictech.guide/about
+  quote: Stempeck developed the project into a full directory in 2018 under the auspices
+    of Civic Hall with support from Knight Foundation, Luminate, and Patrick J. McGovern
+    Foundation.
+  proof_level: high
+  url_checked: '2026-08-17'
+- date: '2022-01-01'
+  title: Revamped with National Endowment for Democracy support
+  url: https://civictech.guide/about
+  quote: In 2022, the National Endowment for Democracy provided critical support to
+    revamp and activate the project, making its resources readily available to people
+    fighting for democracy all over the world.
+  proof_level: high
+  url_checked: '2026-08-17'
 activity:
   manual:
     checked: 2026-08-07

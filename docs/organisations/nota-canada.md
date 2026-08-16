@@ -24,6 +24,30 @@ location:
   name: Ontario, Canada
   precision: city
 rss_feed: https://nota.ca/feed
+events:
+- date: '2014-01-01'
+  title: Founded by Greg Vezina in Ontario
+  url: https://en.wikipedia.org/wiki/None_of_the_Above_Direct_Democracy_Party
+  quote: It is named after the expression "none of the above" and was founded in 2014
+    by Greg Vezina in response to his disillusionment with the current major political
+    parties.
+  proof_level: high
+  url_checked: '2026-08-17'
+- date: '2014-06-01'
+  title: Nominates its first candidates in eight ridings in the 2014 Ontario provincial
+    election
+  url: https://en.wikipedia.org/wiki/None_of_the_Above_Direct_Democracy_Party
+  quote: NOTA nominated candidates in eight ridings in the 2014 provincial election
+  proof_level: high
+  url_checked: '2026-08-17'
+- date: '2018-06-01'
+  title: Runs 42 candidates in the 2018 Ontario general election
+  url: https://nota.ca/ontario/about/
+  quote: The None of the Above Direct Democracy Party of Ontario had a 2018 candidate
+    list filled up with 42 competent people that could effectively run the Ontario
+    government.
+  proof_level: high
+  url_checked: '2026-08-17'
 activity:
   manual:
     checked: 2026-06-07

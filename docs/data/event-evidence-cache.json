@@ -203,6 +203,24 @@
       "afb1e1080fe732db4825bb8f8be50a341e4949dc4750b55911ece1ead81430ff": true
     }
   },
+  "https://chinademocrats.org/en": {
+    "checked": "2026-08-17",
+    "content_hash": "11e2d10d2345cfd8e7ceb107b559b7db66c67740704847c4670fc96995fdab9d",
+    "contexts": {
+      "9d852272a96be5286bc5d7c224358413051e48728e9075dffae1ddd75c6bdc04": {
+        "prefix": "e electronic version of the journal is delivered by email to readers in mainland China. Readers can also access the journal by visiting this website.",
+        "sha256": "11e2d10d2345cfd8e7ceb107b559b7db66c67740704847c4670fc96995fdab9d",
+        "suffix": "To access each issue of the journal, please click: Here. For information of the journal\u00e2\u0080\u0099s work team, advisory and editorial boards, how",
+        "text": "China Journal of Democracy is a quarterly publication by the Institute for China\u00e2\u0080\u0099s Democratic Transition, aiming to provides Chinese readers with fresh knowledge and opinions about significant issues facing China and the world, particularly about issues of democracy and democratic transition. It serves as a free discussion platform for pro-democracy Chinese intellectuals in and outside China, and publishes articles by foreign experts or interviews with foreign experts as well. The electronic version of the journal is delivered by email to readers in mainland China. Readers can also access the journal by visiting this website. Since its launch in January 2023, the journal has quickly become the flagship publication for pro-democracy Chinese intellectuals."
+      }
+    },
+    "etag": null,
+    "last_modified": "Fri, 27 Sep 2024 01:01:31 GMT",
+    "verified": {
+      "9d852272a96be5286bc5d7c224358413051e48728e9075dffae1ddd75c6bdc04": true,
+      "d50fd9635a9a87bc07c3fddaa0b51a6134a4428f21e5c13390017a310d8c6a6e": false
+    }
+  },
   "https://citizenos.com/news/citizen-os-annual-report-2024-a-year-of-a-big-revamp/": {
     "checked": "2026-08-14",
     "content_hash": "5cb3fdc1a4f026ceaf66a1ecc387d5bad4de4f3bd270a9064827b63e95e718a8",
@@ -305,6 +323,37 @@
       "74ae83bfa42253f65e7cfb42d5de7ad8dd8030366ec6dc44063bce6e59e827e5": true
     }
   },
+  "https://civictech.guide/about": {
+    "checked": "2026-08-17",
+    "content_hash": "95e8e958e1445f407bf0fbb57da157515ff185b17267db5b05d7af78e07053d8",
+    "contexts": {
+      "5b01eb2e3f48323ecef92d7a609664b1227ad9171c070ca3a83ae056948d5998": {
+        "prefix": "and Patrick J. McGovern Foundation. In 2020, Stempeck spun the project out of Civic Hall and independently sustained it for the next two years.",
+        "sha256": "95e8e958e1445f407bf0fbb57da157515ff185b17267db5b05d7af78e07053d8",
+        "suffix": "Today, the Civic Tech Field Guide is the most comprehensive collection of tech projects for the public interest and democracy, anywhere. Its co",
+        "text": "In 2020, Stempeck spun the project out of Civic Hall and independently sustained it for the next two years. In 2022, the National Endowment for Democracy provided critical support to revamp and activate the project, making its resources readily available to people fighting for democracy all over the world."
+      },
+      "8d3267eedcf2208d82d6bf99bc5995335ac8d47a621524ef995ec2a2aa15fcd6": {
+        "prefix": "ion of the Field Guide, an open spreadsheet. After this initial prototype gained considerable traction and validated the need for the resource,",
+        "sha256": "b524f2e84277fa196de23b5fa65f43d9f631cc2ad6f48503bc7572d4306ffcb4",
+        "suffix": "In 2020, Stempeck spun the project out of Civic Hall and independently sustained it for the next two years. In 2022, the National Endowment for",
+        "text": "After this initial prototype gained considerable traction and validated the need for the resource, Stempeck developed the project into a full directory in 2018 under the auspices of Civic Hall with support from Knight Foundation, Luminate, and Patrick J. McGovern Foundation."
+      },
+      "fc94a7ca0b407b4b217fd148cdc713523eb694d19a12aa181bdc665d501ca5cd": {
+        "prefix": "rivate challenges. You can learn more about the original motivation for the Civic Tech Field Guide here. History of the Field Guide",
+        "sha256": "f29d08ef3b2f950042077dd28e5d9b5696eb08c8489481ce0f43f982fc8c8430",
+        "suffix": "This team created the first edition of the Field Guide, an open spreadsheet. After this initial prototype gained considerable traction and vali",
+        "text": "The Field Guide was conceived in early 2016 by Micah Sifry, co-founder of Civic Hall, Matt Stempeck (then the Director of Civic Technology at Microsoft), and Erin Simpson, then at Civic Hall Labs. This team created the first edition of the Field Guide, an open spreadsheet."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "5b01eb2e3f48323ecef92d7a609664b1227ad9171c070ca3a83ae056948d5998": true,
+      "8d3267eedcf2208d82d6bf99bc5995335ac8d47a621524ef995ec2a2aa15fcd6": true,
+      "fc94a7ca0b407b4b217fd148cdc713523eb694d19a12aa181bdc665d501ca5cd": true
+    }
+  },
   "https://civictech.guide/about/": {
     "checked": "2026-08-15",
     "content_hash": "07ce94ed3e6961d650dc0b94334a88be014c06184000639fde83467b3d5e0238",
@@ -370,6 +419,36 @@
     "last_modified": "Thu, 13 Aug 2026 12:43:00 GMT",
     "verified": {
       "cd729351ab05147c0cc12144223afcc290c18397362ddfa50a7fad4270c6e85d": true
+    }
+  },
+  "https://de.wikipedia.org/wiki/Jede_Stimme_GILT": {
+    "checked": "2026-08-17",
+    "content_hash": "1870ec0f7bb66ac464d872acf5d0a06b68263f1ade792f0b2360937d35757ba7",
+    "contexts": {
+      "92edd91b9e617fdb495271e13e50991e46a58e0e64b8a02fdf32b27790a8d708": {
+        "prefix": "ca. 4.500 wurden erreicht) sammelten, wurde die Partei am Ende dieser Abgabefrist am 18. August 2017 zur Nationalratswahl im Oktober 2017 zugelassen.",
+        "sha256": "378ef8684a95a6b82aa543c4421387beaddbad7a2ede2e44457be359c577aa8b",
+        "suffix": "Die Partei konnte aber aufgrund der Vier-Prozent-H\u00fcrde kein Nationalratsmandat erringen. == Wahlen nach 2017 == F\u00fcr die Nationalratswahl in \u00d6sterre",
+        "text": "== Nationalratswahl 2017 == Nachdem dutzende Sympathisanten in ganz \u00d6sterreich erfolgreich Unterst\u00fctzungs-Erkl\u00e4rungen (2.600 Unterschriften sind erforderlich, ca. 4.500 wurden erreicht) sammelten, wurde die Partei am Ende dieser Abgabefrist am 18. August 2017 zur Nationalratswahl im Oktober 2017 zugelassen. G!LT stand zur Nationalratswahl 2017 in allen \u00f6sterreichischen Bundesl\u00e4ndern zur Wahl und erhielt 0,95 % der g\u00fcltigen Stimmen (dies waren absolut 48.234 Stimmen). Die Partei konnte aber aufgrund der Vier-Prozent-H\u00fcrde kein Nationalratsmandat erringen."
+      },
+      "c0b64e2d6e7b31a2029a442c301ecf3369fcd463636cd612bf146c5265788430": {
+        "prefix": "er 2016 vom \u00f6sterreichischen Schauspieler, Kabarettisten, Schriftsteller und politischen Aktivisten Roland D\u00fcringer gegr\u00fcndet. == Parteigr\u00fcndung ==",
+        "sha256": "1f319c9a0d20da1f16019a6c51d9fc44096bdbc2ca88d02239acd05a4e2713a3",
+        "suffix": "Seine Gr\u00fcnde daf\u00fcr beschreibt D\u00fcringer in seinem Buch MEINE STIMME G!LT ... UND DEINE? Er kritisiert darin, dass das Prinzip der repr\u00e4sentativen Demo",
+        "text": "== Parteigr\u00fcndung == Die Gr\u00fcndung der Partei \u201eListe Roland D\u00fcringer \u2013 Meine Stimme gilt\u201c erfolgte am 21. September 2016 durch D\u00fcringer in Wien. Seine Gr\u00fcnde daf\u00fcr beschreibt D\u00fcringer in seinem Buch MEINE STIMME G!LT ... UND DEINE? Er kritisiert darin, dass das Prinzip der repr\u00e4sentativen Demokratie lediglich erlaubt, dass die Bev\u00f6lkerung alle f\u00fcnf Jahre eine Entscheidung treffen darf. Ab dann herrschen nach seiner Auffassung nur noch einige wenige, die seiner Meinung nach keinesfalls als repr\u00e4sentativ f\u00fcr alle \u00d6sterreicher bezeichnet werden k\u00f6nnen. G!LT setzt sich gegen die derzeit in \u00d6sterreich gelebte Form der repr\u00e4sentativen Demokratie ein. Diese wird als korruptionsanf\u00e4llig und als Scheindemokratie bezeichnet. G!LT steht nach eigener Aussage f\u00fcr eine Offene Demokratie."
+      },
+      "df3cba60df6aee275de714ae9302302a01bed276ab060563cd6b23d4cef0593b": {
+        "prefix": "krise von M\u00e4rz auf September verschobenen Gemeindevertretungs- und B\u00fcrgermeisterwahlen 2020 brachte G!LT einen Wahlvorschlag in der Gemeinde Koblach.",
+        "sha256": "e913c5a4bc11bf769fa3d77b5e1aa6186b14f4f03c5e326eeeddc3c76bd6596e",
+        "suffix": "G!LT ist dadurch auch mit 1 Sitz im Gemeindevorstand vertreten. Am 15. M\u00e4rz 2024 berichteten Medien dar\u00fcber, dass die Listen Xi \u2013 Chance Zukunft, Wan"
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "92edd91b9e617fdb495271e13e50991e46a58e0e64b8a02fdf32b27790a8d708": true,
+      "c0b64e2d6e7b31a2029a442c301ecf3369fcd463636cd612bf146c5265788430": true,
+      "df3cba60df6aee275de714ae9302302a01bed276ab060563cd6b23d4cef0593b": true
     }
   },
   "https://deliberabrasil.org/projetos/assembleias-cidadas-de-mocambique-sobre-as-mudancas-climaticas/": {
@@ -438,6 +517,33 @@
     "last_modified": null,
     "verified": {
       "0d405ed57bb95e1e243501762120552180c526b1c37b97e7a9510821543a3fe3": true
+    }
+  },
+  "https://democracy-technologies.org/about/": {
+    "checked": "2026-08-17",
+    "content_hash": "f17e241aa979ccb2e02292584227711dea6a411f6743419a019d0bdbc462f7ee",
+    "contexts": {
+      "091331123a910742244da5c9f56c86be5bc88586d49721cf1f260f6dd05526dd": {
+        "prefix": "ion, electronic voting, and other digital tools that improve political organisations. Who founded democracy-technologies.org?",
+        "sha256": "f17e241aa979ccb2e02292584227711dea6a411f6743419a019d0bdbc462f7ee",
+        "suffix": "\u00c2 Who is behind democracy-technologies.org? We are an independent, non-partisan team committed to keeping pace with the latest",
+        "text": "Democracy-Technologies.org is a project of the Innovation in Politics Institute, a mission-driven company dedicated to strengthening democracy in Europe and beyond.\u00c2"
+      }
+    },
+    "etag": "W/\"6a7fc380-2499e\"",
+    "last_modified": "Sat, 15 Aug 2026 01:40:16 GMT",
+    "verified": {
+      "091331123a910742244da5c9f56c86be5bc88586d49721cf1f260f6dd05526dd": true
+    }
+  },
+  "https://democracy-technologies.org/ai-data/democracy-technology-convention-panelists-2023/": {
+    "checked": "2026-08-17",
+    "content_hash": "674cd49e7d7a88ad4cb51cb527c4f88c36d510b43f544da981a6b2b5a8f069d1",
+    "contexts": {},
+    "etag": "W/\"6a81641c-20a06\"",
+    "last_modified": "Sun, 16 Aug 2026 07:17:48 GMT",
+    "verified": {
+      "05845b183fcfca535a9fe5f182007304d96d3387fd524a25cd29d7d50b3bdf81": false
     }
   },
   "https://democracy-technologies.org/participation/consensus-building-in-taiwan/": {
@@ -718,6 +824,22 @@
       "cb0df30b346a363776841fad5fcc35fb5166ea7284f7ad1eb60919d658f16c31": true
     }
   },
+  "https://en.wikipedia.org/wiki/Hong_Kong_Democracy_Council": {
+    "checked": "2026-08-17",
+    "content_hash": "157dd01022bb0dd5ff9e31a1d0b352b7c577c08f3a28529213da3b4987253380",
+    "contexts": {
+      "cd52d43d867673771ea3eba9122e8da149e307b24954276e0f5398515a7249ae": {
+        "prefix": "s Congress. HKDC has also pushed for the broad-based Hong Kong People's Freedom and Choice Act and the immigration-focused Hong Kong Safe Harbor Act.",
+        "sha256": "046ba79730d27e5423c99cbd8d7eb286b783337e4e0122009681e6d84a362b4d",
+        "suffix": "Along with 52 Hong Kong diaspora groups and advocacy organizations, HKDC urged President Joe Biden to bar Hong Kong Chief Executive John Lee from att"
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "cd52d43d867673771ea3eba9122e8da149e307b24954276e0f5398515a7249ae": true
+    }
+  },
   "https://en.wikipedia.org/wiki/International_Institute_for_Democracy_and_Electoral_Assistance": {
     "checked": "2026-08-14",
     "content_hash": "978c70a7875350416aad6a887931799ccf0d9ee59881abf3f3fd23073043cdae",
@@ -931,6 +1053,28 @@
       "8532e801a42b444e919d4e9f4afccc5d251d885d2c9ea702ea61f5fc604ed2dd": true
     }
   },
+  "https://en.wikipedia.org/wiki/None_of_the_Above_Direct_Democracy_Party": {
+    "checked": "2026-08-17",
+    "content_hash": "84e11fc34139c5579da4d9ed902047cd84450d066ee3f710d18ca97c09a0ec21",
+    "contexts": {
+      "16a8b351783ca878593324112687fbf9b85400977cf9cf965926ec24d3b43553": {
+        "prefix": "t bound by party control and who truly can represent their constituents first\". It supports the use of referendums, term limits and recall elections.",
+        "sha256": "5b8e3a0f9a5b10c12a0fc1a8cf0a3845b5b9eedaa8f0cb7ae88e869168f5738d",
+        "suffix": ": Vezina ran in Mississauga\u2014Erindale, Vezina's wife Kathleen ran in Mississauga\u2014Brampton South, Vezina's son Alexander ran in Mississauga\u2014Streetsville"
+      },
+      "41c2221ac105d53ba2b5b639c7d7e89ba1fb7df5ccd5b0da53b92a4328c1d25a": {
+        "prefix": "nofficially called the None of the Above Party (French: Parti Aucune de ces r\u00e9ponses), is a minor political party in the province of Ontario, Canada.",
+        "sha256": "c23aecc6baa69c7f8b6fff2cafc1759569342c2703b245e3f113bab63c5c184c",
+        "suffix": "The party aims to \"elect independent MPPs who are not bound by party control and who truly can represent their constituents first\". It supports the u"
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "16a8b351783ca878593324112687fbf9b85400977cf9cf965926ec24d3b43553": true,
+      "41c2221ac105d53ba2b5b639c7d7e89ba1fb7df5ccd5b0da53b92a4328c1d25a": true
+    }
+  },
   "https://en.wikipedia.org/wiki/Occupy_Wall_Street": {
     "checked": "2026-08-15",
     "content_hash": "68b2e5a328236f23b0e34b6d94b821a66b8345307a7da6625af82fb59495a078",
@@ -1134,6 +1278,23 @@
       "7119e2602c6b658dcc60b51019a44b6582063ea3485d51f2a750b32e3461314b": true
     }
   },
+  "https://enlacezapatista.ezln.org.mx/2013/07/18/nuevas-fechas-para-la-escuelita-informacion-de-videoconferencias-y-de-otras-cosas/": {
+    "checked": "2026-08-17",
+    "content_hash": "d8f4d8a58e58232ab06a247cc2f32aff747c6280665e4b18f3b1da88124b2336",
+    "contexts": {
+      "50ecb2d69a9451fc74ef08d9c48723beed03b82c03f835c4668f4dfbcb9934df": {
+        "prefix": "stro. Luego les pasamos el programa. Tercero.- Queremos recordarles que, para la primera vuelta de la escuelita, en agosto de este a\u00f1o: .-",
+        "sha256": "d8f4d8a58e58232ab06a247cc2f32aff747c6280665e4b18f3b1da88124b2336",
+        "suffix": ".- Deben llevar $100.00 (cien pesos mexicanos) que es lo que cuesta el paquete de estudio que consta de 4 libros de texto y 2 dvd\u00b4s (20 pesos ca",
+        "text": ".- El registro, con su clave y una identificaci\u00f3n, es en los d\u00edas 10 y 11 de agosto del 2013 en el CIDECI, San Crist\u00f3bal de Las Casas, Chiapas, M\u00e9xico."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "50ecb2d69a9451fc74ef08d9c48723beed03b82c03f835c4668f4dfbcb9934df": true
+    }
+  },
   "https://ethelo.com/case-study/engaged-california-program/": {
     "checked": "2026-08-14",
     "content_hash": "b8efbae53b2fe9ceb65d207d7ab5ecf22dc1244543fca0cd79514bbf18de1157",
@@ -1236,6 +1397,34 @@
       "e33500070d3cd016aa72397a9285fe078a23fc4125dd83f402bdeec91d5573d3": true
     }
   },
+  "https://flacso.org/quem-somos/nuestra-historia/historia-flacso/": {
+    "checked": "2026-08-17",
+    "content_hash": "6b14e9cdf38e46d3e01deb01f5d4a2ccbfbb9b74a90b7ef5d92b17f1ebeb71ab",
+    "contexts": {},
+    "etag": "W/\"6928a9c1-143fb\"",
+    "last_modified": "Thu, 27 Nov 2025 19:42:57 GMT",
+    "verified": {
+      "6e2dbbba8a042f752e3b65d0275a239cb27154990c7092aedf1bbeacddf0cd40": false
+    }
+  },
+  "https://focusweb.org/press-statement-social-movements-united-in-defiance-of-false-solutions-being-negotiated-at-paris-cop/": {
+    "checked": "2026-08-17",
+    "content_hash": "dcd3d15abfec6a5114de4b11547b2bb40af19c42e52876957151f356b77f50a2",
+    "contexts": {
+      "dcd3d15abfec6a5114de4b11547b2bb40af19c42e52876957151f356b77f50a2": {
+        "prefix": "ovements worldwide to continue to build their own, just alternatives to the political and economic systems that have caused the climate crisis.",
+        "sha256": "dcd3d15abfec6a5114de4b11547b2bb40af19c42e52876957151f356b77f50a2",
+        "suffix": "Eberto Diaz, speaking on behalf of La Via Campesina in Colombia said: \u201cFalse solutions only serve to increase hunger and impoverishment in the",
+        "text": "Pablo Solon, former chief climate negotiator for Bolivia and current Executive Director of the Fundacion Solon, said: \u201cThe Paris agreement will force us to choose who of our children will survive, because in a +3C world, not all will be able to live.\u201d"
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "9c9eaea1df672896b09dac8af9048031603c7f33504bf6112a4c6009293d617d": false,
+      "dcd3d15abfec6a5114de4b11547b2bb40af19c42e52876957151f356b77f50a2": true
+    }
+  },
   "https://foro.org.co/quienes-somos/": {
     "checked": "2026-08-14",
     "content_hash": "041fee79860e8af0815e79054810b1433e1d9a8bf966b32f51428f40c4ebed6e",
@@ -1251,6 +1440,30 @@
     "last_modified": null,
     "verified": {
       "ef1a5a97046e575f07466b0616270c5af87e6e2890cb2f5b6d40ea13a93cad00": true
+    }
+  },
+  "https://fundacionsolon.org/la-fundacion-solon/": {
+    "checked": "2026-08-17",
+    "content_hash": "f9e0798610f06792e44b18c288db7fef72ed90bdddc27e156821bf20e79c0177",
+    "contexts": {
+      "0625c32430ddb95e3916659b9a3ac3cc90806747b146142618949015d1b1d43f": {
+        "prefix": "ales Buscar: Buscar Fundacion Sol\u00f3n",
+        "sha256": "a9e7aecbb1388fde8b0a05157b4e55fa18a382b82a95f04f369c90a3d73f7082",
+        "suffix": "Con el paso de los a\u00f1os, y tras la partida del maestro en 1999, la Fundaci\u00f3n Sol\u00f3n se convirti\u00f3 en un centro de interpelaci\u00f3n y b\u00fasqueda de alternati",
+        "text": "La Fundaci\u00f3n Sol\u00f3n naci\u00f3 en 1994 por iniciativa del artista Walter Sol\u00f3n Romero Gonzales para fomentar la creatividad y la mirada cr\u00edtica de los esp\u00edritus rebeldes. Con el paso de los a\u00f1os, y tras la partida del maestro en 1999, la Fundaci\u00f3n Sol\u00f3n se convirti\u00f3 en un centro de interpelaci\u00f3n y b\u00fasqueda de alternativas a partir del arte, la investigaci\u00f3n y el activismo."
+      },
+      "f9e0798610f06792e44b18c288db7fef72ed90bdddc27e156821bf20e79c0177": {
+        "prefix": "da Inversiones Pol\u00edtica 12/08/2026 Fundaci\u00f3n Sol\u00f3n",
+        "sha256": "f9e0798610f06792e44b18c288db7fef72ed90bdddc27e156821bf20e79c0177",
+        "suffix": "Confrontar las injusticias y so\u00f1ar con un mundo diferente son los legados del artista que una vez dijo: \u201cNo podemos permitir que nuest",
+        "text": "La Fundaci\u00f3n Sol\u00f3n naci\u00f3 en 1994 por iniciativa del artista Walter Sol\u00f3n Romero Gonzales para fomentar la creatividad y la mirada cr\u00edtica de los esp\u00edritus rebeldes. Con el paso de los a\u00f1os, y tras la partida del maestro en 1999, la Fundaci\u00f3n Sol\u00f3n se convirti\u00f3 en un centro de interpelaci\u00f3n y b\u00fasqueda de alternativas a partir del arte, la investigaci\u00f3n y el activismo para intentar cambiar el sistema"
+      }
+    },
+    "etag": "\"332-1786578405;br\"",
+    "last_modified": null,
+    "verified": {
+      "0625c32430ddb95e3916659b9a3ac3cc90806747b146142618949015d1b1d43f": true,
+      "f9e0798610f06792e44b18c288db7fef72ed90bdddc27e156821bf20e79c0177": true
     }
   },
   "https://glenweyl.com/radicalxchange/": {
@@ -1431,6 +1644,17 @@
     "last_modified": "Sat, 15 Aug 2026 12:51:48 GMT",
     "verified": {
       "72e590445972cb6d29f1f197c7bfc92aa3bd064eb941e6a27ea3feb5c266d0c9": true
+    }
+  },
+  "https://gumilla.org/tenemos-historia/": {
+    "checked": "2026-08-17",
+    "content_hash": "9032be2683b6c0cca258ec2c487f9a7173ef4dad97de96eb8d0b9093f2e68644",
+    "contexts": {},
+    "etag": null,
+    "last_modified": "Wed, 05 Aug 2026 03:53:40 GMT",
+    "verified": {
+      "99ce8b782d2063437b575304a271b3dc2cf1cad5c2fd2fd80fb91667560baf51": false,
+      "c0a0e3e48cf1cd001572f6e34067af2e86c96e8457a3155781eb886062c43467": false
     }
   },
   "https://ia.acs.org.au/article/2018/blockchain-to-revolutionise-e-voting.html": {
@@ -1664,6 +1888,55 @@
       "b35cb545be320c9010dd6960da99a334f68b1a7029ef88ed5399780127231fcb": true
     }
   },
+  "https://nota.ca/ontario/about/": {
+    "checked": "2026-08-17",
+    "content_hash": "382a1b06e6450e36b40db4893525e87c77203f635f9576278341c4e38f08c253",
+    "contexts": {
+      "382a1b06e6450e36b40db4893525e87c77203f635f9576278341c4e38f08c253": {
+        "prefix": "ticipate, while excluding others\u2026 I would not hesitate in granting\u2026 injunctive relief.\u201d \u2014 Ontario Superior Court Justice James Stribopoul",
+        "sha256": "382a1b06e6450e36b40db4893525e87c77203f635f9576278341c4e38f08c253",
+        "suffix": "If elected we would start by asking the best MPPs or MPs from all parties to join our Cabinet while allowing them to sit with the parties",
+        "text": "The None of the Above Direct Democracy Party of Ontario had a 2018 candidate list filled up with 42 competent people that could effectively run the Ontario government."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "382a1b06e6450e36b40db4893525e87c77203f635f9576278341c4e38f08c253": true
+    }
+  },
+  "https://nzccl.org.nz/the-founding-and-early-history-of-the-new-zealand-council-for-civil-liberties/": {
+    "checked": "2026-08-17",
+    "content_hash": "6b0fec0af801daad6c871b6be33c79e38bf152f71817db0b64c72101357db28c",
+    "contexts": {
+      "215430c8fcd7a42999498a0f9628bc65e2a91bf60b7b305912940c220c35b3db": {
+        "prefix": "fficial Secrets Act 1951 repealed. They didn\u2019t have success with that for quite some time notwithstanding the amount of lobbying that they did.",
+        "sha256": "6b0fec0af801daad6c871b6be33c79e38bf152f71817db0b64c72101357db28c",
+        "suffix": "The OIA turned the previous requirement for secrecy on its head with the requirement that government held information should be made available unless",
+        "text": "Finally, after 31 years, the Official Secrets Act 1951 was repealed by the Official Information Act 1982 (OIA). The OIA turned the previous requirement for secrecy on its head with the requirement that government held information should be made available unless there was good reason for withholding it."
+      },
+      "5cbad5a26681abb19e40e6cf05fc5e6ba7e3902b5d568b0e1eac262ed4b436b5": {
+        "prefix": "who wrote various letters and the few replies they got were unsatisfactory ones. Opposition to the Banning of the Book \u2018Lolita\u2019 \u2013 (1959)",
+        "sha256": "5cbad5a26681abb19e40e6cf05fc5e6ba7e3902b5d568b0e1eac262ed4b436b5",
+        "suffix": "The Council took the issue up under the broad umbrella of censorship and went to Court after being unsuccessful at the Indecent Publications Tr",
+        "text": "1959 saw the Council taking on the issue of censorship. The Indecent Publications Tribunal had declared Vladimir Nabokov\u2019s book \u201cLolita\u201d indecent and banned its importation and distribution."
+      },
+      "eb70f62623f15e1cf4a26d5b4ff0ee73fe38518887f0444c959870e97ffffbe8": {
+        "prefix": "eting Chaired by Sir Thomas Hunter in June 1952 to Look at Setting up an Organisation to Defend and Enlarge Upon Civil Liberties in New Zealand",
+        "sha256": "eb70f62623f15e1cf4a26d5b4ff0ee73fe38518887f0444c959870e97ffffbe8",
+        "suffix": "From that meeting a group was charged with developing a draft Constitution and reporting back to a further public meeting on 18 August 1952.",
+        "text": "Concern culminated in June 1952 when Sir Thomas Hunter, who could hardly be described as a dangerous radical, convened a public meeting of concerned citizens, many of whom were academics from Victoria University, around the setting up of an organisation to protect and, if possible, enlarge civil liberties in New Zealand."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "215430c8fcd7a42999498a0f9628bc65e2a91bf60b7b305912940c220c35b3db": true,
+      "5cbad5a26681abb19e40e6cf05fc5e6ba7e3902b5d568b0e1eac262ed4b436b5": true,
+      "e68bdd06e59bc7b168e6a2c33b621830a5f73fffe70824d9ec1f50a2959f5f10": false,
+      "eb70f62623f15e1cf4a26d5b4ff0ee73fe38518887f0444c959870e97ffffbe8": true
+    }
+  },
   "https://oaf.org.au/2009/07/07/announcing-the-openaustralia-foundation/": {
     "checked": "2026-08-14",
     "content_hash": "b9356b9568741260b2367c820d6d7d5ac795e307d5112ba520398618194656df",
@@ -1860,20 +2133,28 @@
     }
   },
   "https://reclaim.org.au/inaugural-lismore-peoples-assembly/": {
-    "checked": "2026-08-15",
-    "content_hash": "d6f51366e8b60fa798347718bf5438e92ff008ae6ff9f84b2d0205ec1d01e77e",
+    "checked": "2026-08-17",
+    "content_hash": "373bb0e4d16734a171c543938e80826235ca1a271cdef7b41f66582a057d6190",
     "contexts": {
       "5d178e7c6e07b697f520a7fe1ef52fb0fbc054481088e0e3a7fac59039d9181f": {
         "prefix": "own, those with power, the elites, the rich, or self-interested politicians\u2019 who are being represented. Reinventing democracy",
         "sha256": "d6f51366e8b60fa798347718bf5438e92ff008ae6ff9f84b2d0205ec1d01e77e",
         "suffix": ", starting in Lismore, with all surrounding communities heartily invited. And not just any kind of democracy, but participatory and deliberative democ",
         "text": "The Lismore People\u2019s Assembly seeks to change this in the hopes of reinventing democracy \u2013 starting from the ground up, starting in Lismore, with all surrounding communities heartily invited. And not just any kind of democracy, but participatory and deliberative democracy. And everyone is warmly invited."
+      },
+      "b268ef91513dba23d272e2b380351595c9a2041ac513f2f6aefccf5d917917e5": {
+        "prefix": "Reclaim our Recovery (ROR) say they have been pushing for robust, democratic, community involvement in the flood recovery since the start of 2022.",
+        "sha256": "373bb0e4d16734a171c543938e80826235ca1a271cdef7b41f66582a057d6190",
+        "suffix": "ROR centred on community voice ROR spokesperson Miriam Torzillo says that from the beginning ROR has centred community voice in all its a",
+        "text": "Reclaim our Recovery (ROR) say they have been pushing for robust, democratic, community involvement in the flood recovery since the start of 2022. ROR is now bringing a new front to their grassroots community advocacy, with the inaugural Lismore People\u2019s Assembly on Housing taking place this Saturday."
       }
     },
     "etag": null,
     "last_modified": null,
     "verified": {
-      "5d178e7c6e07b697f520a7fe1ef52fb0fbc054481088e0e3a7fac59039d9181f": true
+      "5d178e7c6e07b697f520a7fe1ef52fb0fbc054481088e0e3a7fac59039d9181f": true,
+      "65063e5bb565f04ea5d78f27427ba440603b4a3be127856d46003a86bc506c03": false,
+      "b268ef91513dba23d272e2b380351595c9a2041ac513f2f6aefccf5d917917e5": true
     }
   },
   "https://reclaim.org.au/lismore-peoples-assembly-on-housing/": {
@@ -2063,6 +2344,23 @@
       "189034b7801ad11ac83990aeb72cb6d361a9a3e4ad5ad8e6a81b712b88ba6fe5": true
     }
   },
+  "https://www.accountabilityrt.org/fiona-mcleod-sc-to-head-up-art/": {
+    "checked": "2026-08-17",
+    "content_hash": "0cc00077183835dbd3a3e72556b834ede1f50071760c2fc371935ab57980a82b",
+    "contexts": {
+      "0cc00077183835dbd3a3e72556b834ede1f50071760c2fc371935ab57980a82b": {
+        "prefix": "bility Round Table is delighted to announce that eminent barrister Fiona McLeod SC has been appointed Chair of Accountability Round Table",
+        "sha256": "0cc00077183835dbd3a3e72556b834ede1f50071760c2fc371935ab57980a82b",
+        "suffix": "\u201cI am honoured to accept the office and to advance ART\u2019s valuable work in scrutinising government accountability and integrity,\u201d Ms McLeod said",
+        "text": "She replaces Tim Smith, a former Supreme Court judge and foundation President of ART, which he co-founded in 2006."
+      }
+    },
+    "etag": "\"242799-1786639066;br\"",
+    "last_modified": null,
+    "verified": {
+      "0cc00077183835dbd3a3e72556b834ede1f50071760c2fc371935ab57980a82b": true
+    }
+  },
   "https://www.afrobarometer.org/about/history/": {
     "checked": "2026-08-14",
     "content_hash": "503e9850d465b3efc486f86ce23efe29327fc94285e2db6be46461d1f53f43da",
@@ -2078,6 +2376,36 @@
     "last_modified": null,
     "verified": {
       "05714f91762de147b3966b1cc74395a8048824ec50708f5def3adf56d5398fc4": true
+    }
+  },
+  "https://www.aman-palestine.org/en/about-aman/5.html": {
+    "checked": "2026-08-17",
+    "content_hash": "61aa2a1a42cff399f25a0a4433750738d4a64f244ae6bedbc8e12bf9706df3d5",
+    "contexts": {
+      "1838b1da502248ed804d2b68f3103ddab85bd173e165231c4082ba64f81fb972": {
+        "prefix": "in the oversight of public administrative and public financial management (PFM). It is a youth summer school that is modelled on the scout movement.",
+        "sha256": "3c463153dd464b4cc9230fb7dbee536a39c883d5c4e5fe5cc5507c8630ded636",
+        "suffix": "Organised twice a year, 13 classes of the Integrity School were in place between 2017 and 2022 in both areas. In some years, three school sessions we"
+      },
+      "32c3a43579504760523ceff0daa13b4471e36b79eb4d2a4168ca1786c5c9ef06": {
+        "prefix": "n was first formed by an initiative from a number of civil society organizations working in the field of democracy, human rights and good governance.",
+        "sha256": "b53aa28b887824337753616b15d8eb8a7299d41e07dd585cc16faa694b5dcaa7",
+        "suffix": "AMAN is a Palestinian think tank and a specialized body providing knowledge on corruption at the local and regional level through producing spe",
+        "text": "AMAN was established in 2000 as a civil society organization that seeks to combat corruption and promote integrity, transparency and accountability in the Palestinian society. The Coalition was first formed by an initiative from a number of civil society organizations working in the field of democracy, human rights and good governance. In 2006, the Coalition was accredited as a national chapter for Transparency International."
+      },
+      "86b03c52b66296b2730acc97770419180a111f7770f287d4495e4d1d41f87010": {
+        "prefix": "AR About Aman AMAN-Transparency Palestine",
+        "sha256": "b53aa28b887824337753616b15d8eb8a7299d41e07dd585cc16faa694b5dcaa7",
+        "suffix": "The Coalition was first formed by an initiative from a number of civil society organizations working in the field of democracy, human rights and good",
+        "text": "AMAN was established in 2000 as a civil society organization that seeks to combat corruption and promote integrity, transparency and accountability in the Palestinian society. The Coalition was first formed by an initiative from a number of civil society organizations working in the field of democracy, human rights and good governance. In 2006, the Coalition was accredited as a national chapter for Transparency International."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "1838b1da502248ed804d2b68f3103ddab85bd173e165231c4082ba64f81fb972": true,
+      "32c3a43579504760523ceff0daa13b4471e36b79eb4d2a4168ca1786c5c9ef06": true,
+      "86b03c52b66296b2730acc97770419180a111f7770f287d4495e4d1d41f87010": true
     }
   },
   "https://www.bertelsmann-stiftung.de/en/our-projects/democracy-and-participation-in-europe/shortcut-archive/shortcut-8-trailblazers-of-digital-participation-taiwans-join-platform-and-vtaiwan": {
@@ -2484,6 +2812,30 @@
       "b760e0c84485e81c48f2e2736d61b2b8c93b021ba2280b9c00eabb9487273a25": true
     }
   },
+  "https://www.hkdc.us/biannual-report": {
+    "checked": "2026-08-17",
+    "content_hash": "7fe55ee42080d58346759153c8a38865fdeabdde5f5016c55ce7547ac13388a9",
+    "contexts": {
+      "69c3d9278b85ee87f5d6c2e570c3ef39ce85d9c2c8ed4badaa5317f2e261ec96": {
+        "prefix": "ng discontent with Beijing\u2019s increasing suppression of everything that once made the city unique. To advance the cause of freedom in Hong Kong,",
+        "sha256": "7fe55ee42080d58346759153c8a38865fdeabdde5f5016c55ce7547ac13388a9",
+        "suffix": "We also worked with the executive branch to implement these laws, including the imposition of targeted sanctions against individuals responsible for",
+        "text": "To advance the cause of freedom in Hong Kong, the HKDC team pushed for the successful passage of several landmark pieces of legislation: the Hong Kong Human Rights and Democracy Act of 2019, the PROTECT Hong Kong Act of 2019, and the Hong Kong Autonomy Act of 2020. We also worked with the executive branch to implement these laws, including the imposition of targeted sanctions against individuals responsible for Hong Kong\u2019s deterioration. This culminated in then-Secretary of State Michael Pompeo\u2019s decertification of Hong Kong\u2019s special status on May 27, 2020, given that it no longer enjoyed meaningful autonomy. The following month, Beijing imposed the sweeping National Security Law (N.S.L.) on Hong Kong, effectively spelling the final demise of One Country, Two Systems and forever changing the fate of Hong Kongers."
+      },
+      "c515926deeb8a69d5638d64083fb02b9858c9dd0483ebb8d0b1f2e47e5e4381a": {
+        "prefix": "(HKDC) is a Washington, D.C.-based nonpartisan, nonprofit organization for Hong Kong\u2019s pro-democracy movement and Hong Kongers in the United States.",
+        "sha256": "3524f90dda19d3f5987d1a78bf14c44fde0f54f584dd2732a7516f56c7f61869",
+        "suffix": "But those demonstrations also reflected the broader, longstanding discontent with Beijing\u2019s increasing suppression of everything that once made the c",
+        "text": "The Hong Kong Democracy Council (HKDC) is a Washington, D.C.-based nonpartisan, nonprofit organization for Hong Kong\u2019s pro-democracy movement and Hong Kongers in the United States. It was founded on September 17, 2019, amid massive protests in Hong Kong that saw millions of people marching on the streets in opposition to an unpopular plan to establish extradition arrangements between Hong Kong and China proposed by then-Chief Executive Carrie Lam. But those demonstrations also reflected the broader, longstanding discontent with Beijing\u2019s increasing suppression of everything that once made the city unique."
+      }
+    },
+    "etag": "W/\"b7b65f295ea838a5a0b7d2634a82b7af\"",
+    "last_modified": null,
+    "verified": {
+      "69c3d9278b85ee87f5d6c2e570c3ef39ce85d9c2c8ed4badaa5317f2e261ec96": true,
+      "c515926deeb8a69d5638d64083fb02b9858c9dd0483ebb8d0b1f2e47e5e4381a": true
+    }
+  },
   "https://www.icnl.org/resources/civic-freedom-monitor/rwanda": {
     "checked": "2026-08-14",
     "content_hash": "b3bdb7ecb644bffa1bf4b7516d2c69833b80f69cacb5e7cd80aedc931dc77a39",
@@ -2518,6 +2870,23 @@
       "5aca62386ad7698c6e7c2d439bdba747c25433cb29e314ebf42ffac88fdc0566": true
     }
   },
+  "https://www.inmotionmagazine.com/global/rsb_int_esp.html": {
+    "checked": "2026-08-17",
+    "content_hash": "f794cbc96f53ad28f16518c4db95664f4a54eacfe470aabe2343312d2d32f50e",
+    "contexts": {
+      "c152d884115785f94c255e48cc571b0313a948b387414c3512caae78f9b75b59": {
+        "prefix": "tambi\u00e9n por los ind\u00edgenas. Es un centro ind\u00edgena, en su hacer, en su definici\u00f3n, en su modo de trabajar, en sus componentes, en quienes lo integran.",
+        "sha256": "f794cbc96f53ad28f16518c4db95664f4a54eacfe470aabe2343312d2d32f50e",
+        "suffix": "Llev\u00f3 el nombre de Fray Bartolom\u00e9 de Las Casas porque nacimos un 24 de agosto de ese a\u00f1o, y el 24 de agosto se celebra la fiesta de San Bartolom\u00e9 y e",
+        "text": "El primer componente del sistema es precisamente lo que llamamos CIDECI Las Casas. \u00bfQue quiere decir CIDECI Las Casas? Quiere decir Centro Ind\u00edgena de Capacitaci\u00f3n Integral Fray Bartolom\u00e9 de Las Casas, es un Centro Ind\u00edgena. Esto es lo que le da una connotaci\u00f3n y unas caracter\u00edsticas del todo particulares. No es un centro para, solamente, lo es tambi\u00e9n por los ind\u00edgenas. Es un centro ind\u00edgena, en su hacer, en su definici\u00f3n, en su modo de trabajar, en sus componentes, en quienes lo integran. Este centro nace el 24 de agosto de 1989 hace 16 a\u00f1os. Llev\u00f3 el nombre de Fray Bartolom\u00e9 de Las Casas porque nacimos un 24 de agosto de ese a\u00f1o, y el 24 de agosto se celebra la fiesta de San Bartolom\u00e9 y es el aniversario del natalicio de Fray Bartolom\u00e9 de Las Casas."
+      }
+    },
+    "etag": null,
+    "last_modified": "Wed, 05 Nov 2025 02:54:23 GMT",
+    "verified": {
+      "c152d884115785f94c255e48cc571b0313a948b387414c3512caae78f9b75b59": true
+    }
+  },
   "https://www.institutoupdate.org.br": {
     "checked": "2026-08-13",
     "content_hash": "6bda42773821c2636fae0b375db88c85bacd3abfc96e8ce808cac62e46852ef0",
@@ -2550,6 +2919,23 @@
     "last_modified": null,
     "verified": {
       "ce7de03943e79e28f9fd0e1cb206901aabd883e35b18d25e115c697936d8d906": true
+    }
+  },
+  "https://www.jornada.com.mx/2006/01/03/index.php?article=003n1pol&section=politica": {
+    "checked": "2026-08-17",
+    "content_hash": "518c27572e1a638861b5753c0d01632f4435df84df2e978f655d5a310e653f05",
+    "contexts": {
+      "6bb2bd85144f174a4e11ac0bdbc1209e0a1cfe29be787061040279611ff820d0": {
+        "prefix": "m\u00edtines de acarreados \"donde habla uno y los dem\u00e1s aplauden\". En este sentido, propuso diferenciar la otra campa\u00f1a del \"circo electoral\". As\u00ed,",
+        "sha256": "518c27572e1a638861b5753c0d01632f4435df84df2e978f655d5a310e653f05",
+        "suffix": "Con la participaci\u00f3n de 768 personas, de las cuales 443 pertenecen a organizaciones que suscriben la Sexta Declaraci\u00f3n de la selva Lacandona, la \"Sex",
+        "text": "As\u00ed, la otra campa\u00f1a dio inicio pr\u00e1ctico esta ma\u00f1ana con el primer encuentro del delegado Zero en las instalaciones de Unitierra-Cideci (Centro Ind\u00edgena de Estudios y Capacitaci\u00f3n Integral), en las afueras de esta ciudad. Con la participaci\u00f3n de 768 personas, de las cuales 443 pertenecen a organizaciones que suscriben la Sexta Declaraci\u00f3n de la selva Lacandona, la \"Sexta coleta\" (que ya se multiplic\u00f3 en las \"Sextas coletas\") dio el primer round del proceso. Tambi\u00e9n estuvieron presentes cerca de un centenar de observadores internacionales."
+      }
+    },
+    "etag": null,
+    "last_modified": "Sun, 16 Aug 2026 14:24:49 GMT",
+    "verified": {
+      "6bb2bd85144f174a4e11ac0bdbc1209e0a1cfe29be787061040279611ff820d0": true
     }
   },
   "https://www.labsus.org/chi-siamo/": {
@@ -2635,6 +3021,47 @@
     "last_modified": null,
     "verified": {
       "c6a56ff2457811cb6a856aa80c1b482c34f40ec024488d3d02d26871c5cea2c7": true
+    }
+  },
+  "https://www.mcguinnessinstitute.org/about-us/history/": {
+    "checked": "2026-08-17",
+    "content_hash": "e7f38f8220f0d297c9a05a653722cd1dcc772a5bfe8486ea559ad46a2ed7dab1",
+    "contexts": {
+      "73e447b9b81e354274ef9091c13b3638cf86f02e743474fbea6edec9a394362b": {
+        "prefix": "i name. Why the name change? When Wendy started the McGuinness Institute in 2004, we called it the Sustainable Future Institute.",
+        "sha256": "e7f38f8220f0d297c9a05a653722cd1dcc772a5bfe8486ea559ad46a2ed7dab1",
+        "suffix": "First \u2013 while the concept of \u2018sustainability\u2019 is well recognised internationally as covering social, economic, cultural and environmental issue",
+        "text": "When Wendy started the McGuinness Institute in 2004, we called it the Sustainable Future Institute. Our 2012 name change was for several reasons."
+      },
+      "b8acc5dc63b2498ec3a2bcc592a29cce76bbee2e35734fb010a21755a8f67fd7": {
+        "prefix": "does to forge connections between people and projects. Read the story of the Institute\u2019s te reo M\u0101ori name. Why the name change?",
+        "sha256": "e7f38f8220f0d297c9a05a653722cd1dcc772a5bfe8486ea559ad46a2ed7dab1",
+        "suffix": "Our 2012 name change was for several reasons. First \u2013 while the concept of \u2018sustainability\u2019 is well recognised internationally as covering soci",
+        "text": "When Wendy started the McGuinness Institute in 2004, we called it the Sustainable Future Institute. Our 2012 name change was for several reasons."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "73e447b9b81e354274ef9091c13b3638cf86f02e743474fbea6edec9a394362b": true,
+      "b8acc5dc63b2498ec3a2bcc592a29cce76bbee2e35734fb010a21755a8f67fd7": true
+    }
+  },
+  "https://www.mcguinnessinstitute.org/research-projects/civics-nz/": {
+    "checked": "2026-08-17",
+    "content_hash": "e332ff61ccb84a6d6daeae6504a88432df4f506179fee28391987d0f84f64e60",
+    "contexts": {
+      "501ce3e27ec8d962a3722f85aa81ea1ed25f5bc214876153fbf756d2c5b6de54": {
+        "prefix": "the EmpowerNZ workshop, have consistently voiced concern at the lack of information provided to educate young people on civics in New Zealand.",
+        "sha256": "e332ff61ccb84a6d6daeae6504a88432df4f506179fee28391987d0f84f64e60",
+        "suffix": "It was also a response to the Government\u2019s constitutional review, undertaken by the Constitutional Advisory Panel (CAP) in 2012 and 2013. A mor",
+        "text": "CivicsNZ began in 2010 with the publication of Report 8: Effective M\u0101ori Representation in Parliament \u2013 Working towards a National Sustainable Development Strategy (2010). It was also a response to the Government\u2019s constitutional review, undertaken by the Constitutional Advisory Panel (CAP) in 2012 and 2013."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "501ce3e27ec8d962a3722f85aa81ea1ed25f5bc214876153fbf756d2c5b6de54": true
     }
   },
   "https://www.mmzy.org.cn/mmgk/jianjie/11796.aspx": {
@@ -2869,6 +3296,40 @@
       "8784b86eb8660afb843c6fcc89e525763fa433a85fbafdbabe83698f249aac78": true,
       "ce66c2c78be01e30116e1180b7e0587e59883109451fe73a33d948381076d8ce": false,
       "e2624f36670b20f17933bbb185e3beccb4d997a8f0ab35c07ac498b8bbb77c23": true
+    }
+  },
+  "https://www.prediki.com/meta/en/Legal-information": {
+    "checked": "2026-08-17",
+    "content_hash": "5bcb62efa2a94fef31ef7f4c1673f0e62189db1520f2ce49948b57fe5433794d",
+    "contexts": {
+      "5bcb62efa2a94fef31ef7f4c1673f0e62189db1520f2ce49948b57fe5433794d": {
+        "prefix": "bH, a limited liability corporation under Austrian law, headquartered in Vienna. Company details VAT identification: ATU66924368",
+        "sha256": "5bcb62efa2a94fef31ef7f4c1673f0e62189db1520f2ce49948b57fe5433794d",
+        "suffix": "Trade authority: Municipal Authority of Vienna VII, Reg.Zl.: 114497F06/07 Chamber membership: Economic Chamber of Vienna, No. 91100178437",
+        "text": "Registrar: Commercial Court of Vienna, FN 373457b, dated 30 December 2011"
+      }
+    },
+    "etag": "W/\"3fe788957fc6c69666e78118aafc723f\"",
+    "last_modified": null,
+    "verified": {
+      "5bcb62efa2a94fef31ef7f4c1673f0e62189db1520f2ce49948b57fe5433794d": true
+    }
+  },
+  "https://www.prediki.com/meta/en/Prediction-Markets-A-Better-Alternative/": {
+    "checked": "2026-08-17",
+    "content_hash": "4b462959e312a0f8c36d4e0681721d4defe29ba246cda68592d992613d5b7452",
+    "contexts": {
+      "9403c2539a89054c49ae0d21dabf867b64ec315a88354afb848f6130b21799bd": {
+        "prefix": "theoretical confidence intervals. Once more the virtual political stock markets fared significantly better than their traditional competitors.",
+        "sha256": "4b462959e312a0f8c36d4e0681721d4defe29ba246cda68592d992613d5b7452",
+        "suffix": "Reliably more reliable The applications show that this was not just an anecdotic coincidence. The political stock markets provided by far",
+        "text": "Once more the virtual political stock markets fared significantly better than their traditional competitors. The prediction error on Prediki\u2019s platform wahlfieber.com for example, only amounted to 1.87 percentage points, the average error of all German political stock markets came to an excellent 2.65 percentage points."
+      }
+    },
+    "etag": "W/\"1135154e117d8f30b4599b14947b4587\"",
+    "last_modified": null,
+    "verified": {
+      "9403c2539a89054c49ae0d21dabf867b64ec315a88354afb848f6130b21799bd": true
     }
   },
   "https://www.pressenza.com/de/2017/12/demokratie-echtzeit-neue-app-democracy-erfolgreich-crowdfinanziert/": {

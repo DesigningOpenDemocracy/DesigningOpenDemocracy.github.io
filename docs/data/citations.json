@@ -191,6 +191,18 @@
     ]
   },
   {
+    "id": "d0eedb3c",
+    "type": "webpage",
+    "URL": "https://chinademocrats.org/en",
+    "title": "Launches the China Journal of Democracy",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Since its launch in January 2023, the journal has quickly become the flagship publication for pro-democracy Chinese intellectuals."
+      }
+    ]
+  },
+  {
     "id": "4d2db6ff",
     "type": "webpage",
     "URL": "https://citizenos.com/news/citizen-os-annual-report-2024-a-year-of-a-big-revamp/",
@@ -259,6 +271,26 @@
       {
         "type": "quote-match",
         "quote": "CTIN was launched in 2017 as a learning network."
+      }
+    ]
+  },
+  {
+    "id": "264946bd",
+    "type": "webpage",
+    "URL": "https://civictech.guide/about",
+    "title": "Conceived and first edition published as an open spreadsheet",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "In 2022, the National Endowment for Democracy provided critical support to revamp and activate the project, making its resources readily available to people fighting for democracy all over the world."
+      },
+      {
+        "type": "quote-match",
+        "quote": "Stempeck developed the project into a full directory in 2018 under the auspices of Civic Hall with support from Knight Foundation, Luminate, and Patrick J. McGovern Foundation."
+      },
+      {
+        "type": "quote-match",
+        "quote": "The Field Guide was conceived in early 2016 by Micah Sifry, co-founder of Civic Hall, Matt Stempeck (then the Director of Civic Technology at Microsoft), and Erin Simpson, then at Civic Hall Labs."
       }
     ]
   },
@@ -346,6 +378,26 @@
     ]
   },
   {
+    "id": "90703df8",
+    "type": "webpage",
+    "URL": "https://de.wikipedia.org/wiki/Jede_Stimme_GILT",
+    "title": "Party \"Liste Roland Düringer – Meine Stimme gilt\" founded by actor Roland Düringer in Vienna",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Die Gründung der Partei „Liste Roland Düringer – Meine Stimme gilt“ erfolgte am 21. September 2016 durch Düringer in Wien."
+      },
+      {
+        "type": "quote-match",
+        "quote": "G!LT erreichte dort auf Anhieb 14,23 % der Wählerstimmen und 3 Mandate."
+      },
+      {
+        "type": "quote-match",
+        "quote": "G!LT stand zur Nationalratswahl 2017 in allen österreichischen Bundesländern zur Wahl und erhielt 0,95 % der gültigen Stimmen (dies waren absolut 48.234 Stimmen)."
+      }
+    ]
+  },
+  {
     "id": "2fb9ace3",
     "type": "webpage",
     "URL": "https://deliberabrasil.org/projetos/assembleias-cidadas-de-mocambique-sobre-as-mudancas-climaticas/",
@@ -390,6 +442,18 @@
       {
         "type": "quote-match",
         "quote": "As we mark DemNext’s third birthday, and the International Day of Democracy, we’re thrilled to share our 2024 Impact Report."
+      }
+    ]
+  },
+  {
+    "id": "96ee996c",
+    "type": "webpage",
+    "URL": "https://democracy-technologies.org/about/",
+    "title": "Project launched by the Innovation in Politics Institute",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Democracy-Technologies.org is a project of the Innovation in Politics Institute, a mission-driven company dedicated to strengthening democracy in Europe and beyond."
       }
     ]
   },
@@ -861,6 +925,22 @@
         "quote": "Grattan Institute is an Australian public policy think tank... established in 2008.",
         "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+      },
+      {
+        "type": "quote-match",
+        "quote": "Grattan receives money from its endowment supporters and affiliates, which include Susan McKinnon Foundation, Scanlon Foundation, The Myer Foundation"
+      }
+    ]
+  },
+  {
+    "id": "09118fec",
+    "type": "webpage",
+    "URL": "https://en.wikipedia.org/wiki/Hong_Kong_Democracy_Council",
+    "title": "Sponsors the first humanitarian parole visas for Hong Kong protesters",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "In January 2021, HKDC assisted in the rescue of five Hong Kong protesters, aged 18–26 who fled by boat to Taiwan in July 2020 soon after the national security law was imposed, by sponsoring the first set of humanitarian parole visas to the US."
       }
     ]
   },
@@ -1165,6 +1245,22 @@
     ]
   },
   {
+    "id": "11c5c9e9",
+    "type": "webpage",
+    "URL": "https://en.wikipedia.org/wiki/None_of_the_Above_Direct_Democracy_Party",
+    "title": "Founded by Greg Vezina in Ontario",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "It is named after the expression \"none of the above\" and was founded in 2014 by Greg Vezina in response to his disillusionment with the current major political parties."
+      },
+      {
+        "type": "quote-match",
+        "quote": "NOTA nominated candidates in eight ridings in the 2014 provincial election"
+      }
+    ]
+  },
+  {
     "id": "021095ca",
     "type": "webpage",
     "URL": "https://en.wikipedia.org/wiki/Occupy_Wall_Street",
@@ -1445,6 +1541,18 @@
     ]
   },
   {
+    "id": "45572a54",
+    "type": "webpage",
+    "URL": "https://enlacezapatista.ezln.org.mx/2013/07/18/nuevas-fechas-para-la-escuelita-informacion-de-videoconferencias-y-de-otras-cosas/",
+    "title": "Hosts registration for the first Zapatista Escuelita (little school)",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "El registro, con su clave y una identificación, es en los días 10 y 11 de agosto del 2013 en el CIDECI, San Cristóbal de Las Casas, Chiapas, México."
+      }
+    ]
+  },
+  {
     "id": "8f8515e0",
     "type": "webpage",
     "URL": "https://es.wikipedia.org/wiki/Transparencia_Internacional#Transparencia_por_Colombia:~:text=Transparencia%20por%20Colombia%2C%20la%20Delegaci%C3%B3n%20Nacional%20de%20Transparencia%20Internacional%20en%20Colombia%2C%20surge%20en%201998",
@@ -1576,6 +1684,18 @@
     ]
   },
   {
+    "id": "be8de4c3",
+    "type": "webpage",
+    "URL": "https://focusweb.org/press-statement-social-movements-united-in-defiance-of-false-solutions-being-negotiated-at-paris-cop/",
+    "title": "Executive director Pablo Solón speaks at COP21 against the Paris agreement",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Pablo Solon, former chief climate negotiator for Bolivia and current Executive Director of the Fundacion Solon, said: “The Paris agreement will force us to choose who of our children will survive, because in a +3C world, not all will be able to live.”"
+      }
+    ]
+  },
+  {
     "id": "a8c82e99",
     "type": "webpage",
     "URL": "https://foro.org.co/quienes-somos/",
@@ -1596,6 +1716,18 @@
       {
         "type": "quote-match",
         "quote": "Fondée le 26 novembre 2015 par Cheikh Fall, AfricTivistes compte à ce jour plus de 400 membres répartis dans 40 pays du continent africain."
+      }
+    ]
+  },
+  {
+    "id": "ad128d1c",
+    "type": "webpage",
+    "URL": "https://fundacionsolon.org/la-fundacion-solon/",
+    "title": "Founded by artist Walter Solón Romero",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "La Fundación Solón nació en 1994 por iniciativa del artista Walter Solón Romero Gonzales para fomentar la creatividad y la mirada crítica de los espíritus rebeldes. Con el paso de los años, y tras la partida del maestro en 1999, la Fundación Solón se convirtió en un centro de interpelación y búsqueda de alternativas a partir del arte, la investigación y el activismo para intentar cambiar el sistema"
       }
     ]
   },
@@ -1626,6 +1758,82 @@
           "suffix": "RxC connects people from all walks of life – ranging from social scientists and technologists to artists and activists. The movement is ever-ev",
           "text": "Founded by economist Glen Weyl in 2018, the RadicalxChange Foundation is a 501(c)(3) nonprofit dedicated to advancing the RxC movement, to building community, and to education about democratic innovation."
         }
+      }
+    ]
+  },
+  {
+    "id": "161214bc",
+    "type": "webpage",
+    "URL": "https://grattan.edu.au/about-us/",
+    "title": "\"About Us\"",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "We receive no ongoing government funding and reject commissioned work to ensure this independence."
+      }
+    ]
+  },
+  {
+    "id": "12a96ebb",
+    "type": "webpage",
+    "URL": "https://grattan.edu.au/about/funding/",
+    "title": "\"Funding\"",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Grattan began with a $15 million endowment from each of the Federal and Victorian Governments. In addition, BHP Billiton provided $4 million and the National Australia Bank $1 million."
+      }
+    ]
+  },
+  {
+    "id": "766eaeca",
+    "type": "webpage",
+    "URL": "https://grattan.edu.au/appointment-of-danielle-wood-as-new-ceo-of-grattan-institute/",
+    "title": "Danielle Wood announced as incoming CEO, succeeding founding CEO John Daley",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Grattan Institute’s Board had appointed Ms Danielle Wood as Grattan’s new Chief Executive Officer, to take up the role in July 2020 upon the retirement of Prof John Daley"
+      },
+      {
+        "type": "quote-match",
+        "quote": "Grattan Institute’s inaugural CEO, Prof John Daley, will be stepping down in July 2020."
+      }
+    ]
+  },
+  {
+    "id": "d5fd1a2e",
+    "type": "webpage",
+    "URL": "https://grattan.edu.au/democracy-and-public-integrity/",
+    "title": "\"Democracy and public integrity\"",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "CEO and Economic Prosperity and Democracy Program Director"
+      }
+    ]
+  },
+  {
+    "id": "6aab1915",
+    "type": "webpage",
+    "URL": "https://grattan.edu.au/grattan-institute-new-ceo/",
+    "title": "Dr Aruna Sathanapally appointed CEO, following Danielle Wood's move to chair the Productivity Commission",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Aruna Sathanapally has been appointed CEO of Australia’s leading public policy think tank, Grattan Institute"
+      }
+    ]
+  },
+  {
+    "id": "9c29c346",
+    "type": "webpage",
+    "URL": "https://grattan.edu.au/news/improving-australias-democracy/",
+    "title": "\"Improving Australia's democracy\"",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "The total cap of $90 million for electoral expenditure by a political party is too high. And the per-seat cap of $800,000 is too low, advantaging incumbents over new entrants."
       }
     ]
   },
@@ -1890,6 +2098,38 @@
     ]
   },
   {
+    "id": "ea8144ed",
+    "type": "webpage",
+    "URL": "https://nota.ca/ontario/about/",
+    "title": "Runs 42 candidates in the 2018 Ontario general election",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "The None of the Above Direct Democracy Party of Ontario had a 2018 candidate list filled up with 42 competent people that could effectively run the Ontario government."
+      }
+    ]
+  },
+  {
+    "id": "402600b0",
+    "type": "webpage",
+    "URL": "https://nzccl.org.nz/the-founding-and-early-history-of-the-new-zealand-council-for-civil-liberties/",
+    "title": "Founded at a public meeting in Wellington",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "1959 saw the Council taking on the issue of censorship. The Indecent Publications Tribunal had declared Vladimir Nabokov’s book “Lolita” indecent and banned its importation and distribution."
+      },
+      {
+        "type": "quote-match",
+        "quote": "Concern culminated in June 1952 when Sir Thomas Hunter, who could hardly be described as a dangerous radical, convened a public meeting of concerned citizens, many of whom were academics from Victoria University, around the setting up of an organisation to protect and, if possible, enlarge civil liberties in New Zealand."
+      },
+      {
+        "type": "quote-match",
+        "quote": "Finally, after 31 years, the Official Secrets Act 1951 was repealed by the Official Information Act 1982 (OIA)."
+      }
+    ]
+  },
+  {
     "id": "fa6d50ee",
     "type": "webpage",
     "URL": "https://oaf.org.au/2009/07/07/announcing-the-openaustralia-foundation/",
@@ -2066,7 +2306,7 @@
     "id": "e3ae0804",
     "type": "webpage",
     "URL": "https://reclaim.org.au/inaugural-lismore-peoples-assembly/",
-    "title": "Inaugural Lismore People's Assembly",
+    "title": "Inaugural Lismore People's Assembly on Housing held at the Red Dove Cafe, Lismore",
     "accessed": {
       "date-parts": [
         [
@@ -2077,6 +2317,10 @@
       ]
     },
     "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "ROR is now bringing a new front to their grassroots community advocacy, with the inaugural Lismore People’s Assembly on Housing taking place this Saturday."
+      },
       {
         "type": "quote-match",
         "quote": "The Lismore People’s Assembly seeks to change this in the hopes of reinventing democracy – starting from the ground up",
@@ -2328,6 +2572,18 @@
     ]
   },
   {
+    "id": "e847d647",
+    "type": "webpage",
+    "URL": "https://www.accountabilityrt.org/fiona-mcleod-sc-to-head-up-art/",
+    "title": "Co-founded by former Supreme Court judge Tim Smith",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "She replaces Tim Smith, a former Supreme Court judge and foundation President of ART, which he co-founded in 2006."
+      }
+    ]
+  },
+  {
     "id": "d9e4ebc0",
     "type": "webpage",
     "URL": "https://www.afrobarometer.org/about/history/",
@@ -2336,6 +2592,26 @@
       {
         "type": "quote-match",
         "quote": "professors Michael Bratton, Robert Mattes, and E. Gyimah-Boadi merge three independent survey research projects to form Afrobarometer (AB)"
+      }
+    ]
+  },
+  {
+    "id": "2e840a23",
+    "type": "webpage",
+    "URL": "https://www.aman-palestine.org/en/about-aman/5.html",
+    "title": "Established as a Palestinian anti-corruption coalition",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "AMAN was established in 2000 as a civil society organization that seeks to combat corruption and promote integrity, transparency and accountability in the Palestinian society."
+      },
+      {
+        "type": "quote-match",
+        "quote": "In 2006, the Coalition was accredited as a national chapter for Transparency International."
+      },
+      {
+        "type": "quote-match",
+        "quote": "In partnership with a group of civil society organisations, the Integrity School was held for the first time in the West Bank and Gaza Strip in 2017."
       }
     ]
   },
@@ -2702,6 +2978,22 @@
     ]
   },
   {
+    "id": "a2d8d45d",
+    "type": "webpage",
+    "URL": "https://www.hkdc.us/biannual-report",
+    "title": "Founded in Washington, DC amid the 2019 Hong Kong protests",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "It was founded on September 17, 2019, amid massive protests in Hong Kong that saw millions of people marching on the streets in opposition to an unpopular plan to establish extradition arrangements between Hong Kong and China proposed by then-Chief Executive Carrie Lam."
+      },
+      {
+        "type": "quote-match",
+        "quote": "the HKDC team pushed for the successful passage of several landmark pieces of legislation: the Hong Kong Human Rights and Democracy Act of 2019, the PROTECT Hong Kong Act of 2019, and the Hong Kong Autonomy Act of 2020."
+      }
+    ]
+  },
+  {
     "id": "16b969bc",
     "type": "webpage",
     "URL": "https://www.icnl.org/resources/civic-freedom-monitor/rwanda",
@@ -2726,6 +3018,18 @@
       {
         "type": "quote-match",
         "quote": "In 2011, Oregon state legislators sponsored House Bill 2634 which made the Citizens’ Initiative Review (CIR) process an official and permanent part of Oregon’s elections"
+      }
+    ]
+  },
+  {
+    "id": "df6af73f",
+    "type": "webpage",
+    "URL": "https://www.inmotionmagazine.com/global/rsb_int_esp.html",
+    "title": "CIDECI founded in San Cristóbal de las Casas, Chiapas",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Este centro nace el 24 de agosto de 1989 hace 16 años."
       }
     ]
   },
@@ -2762,6 +3066,18 @@
       {
         "type": "quote-match",
         "quote": "The Open Government Forum is seeking final feedback on the draft Commitments proposed to be included in Australia's Third National Action Plan (NAP3). The Forum is open to feedback until Friday, 6 November 2020."
+      }
+    ]
+  },
+  {
+    "id": "93be187f",
+    "type": "webpage",
+    "URL": "https://www.jornada.com.mx/2006/01/03/index.php?article=003n1pol&section=politica",
+    "title": "La Otra Campaña holds its first public encounter (delegate Zero) at Unitierra-Cideci",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "la otra campaña dio inicio práctico esta mañana con el primer encuentro del delegado Zero en las instalaciones de Unitierra-Cideci (Centro Indígena de Estudios y Capacitación Integral), en las afueras de esta ciudad."
       }
     ]
   },
@@ -2826,6 +3142,34 @@
       {
         "type": "quote-match",
         "quote": "Founded in 2011, Ethelo is dedicated to advancing new forms of democracy using internet technology."
+      }
+    ]
+  },
+  {
+    "id": "a8406423",
+    "type": "webpage",
+    "URL": "https://www.mcguinnessinstitute.org/about-us/history/",
+    "title": "Founded by Wendy McGuinness as the Sustainable Future Institute",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Our 2012 name change was for several reasons."
+      },
+      {
+        "type": "quote-match",
+        "quote": "When Wendy started the McGuinness Institute in 2004, we called it the Sustainable Future Institute."
+      }
+    ]
+  },
+  {
+    "id": "78af4b79",
+    "type": "webpage",
+    "URL": "https://www.mcguinnessinstitute.org/research-projects/civics-nz/",
+    "title": "CivicsNZ research project begins with a report on Māori representation in Parliament",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "CivicsNZ began in 2010 with the publication of Report 8: Effective Māori Representation in Parliament – Working towards a National Sustainable Development Strategy (2010)."
       }
     ]
   },
@@ -3116,6 +3460,30 @@
       {
         "type": "quote-match",
         "quote": "an investment of more than $25 million over five years from the Foundation to sustain and advance the McKinnon Institute for Political Leadership"
+      }
+    ]
+  },
+  {
+    "id": "d707e84b",
+    "type": "webpage",
+    "URL": "https://www.prediki.com/meta/en/Legal-information",
+    "title": "Prediki Prediction Markets GmbH registered in Vienna",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Registrar: Commercial Court of Vienna, FN 373457b, dated 30 December 2011"
+      }
+    ]
+  },
+  {
+    "id": "979d38b1",
+    "type": "webpage",
+    "URL": "https://www.prediki.com/meta/en/Prediction-Markets-A-Better-Alternative/",
+    "title": "Publishes study showing its wahlfieber.com markets beat pollsters after Germany's 2016 state elections",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "The prediction error on Prediki’s platform wahlfieber.com for example, only amounted to 1.87 percentage points, the average error of all German political stock markets came to an excellent 2.65 percentage points."
       }
     ]
   },

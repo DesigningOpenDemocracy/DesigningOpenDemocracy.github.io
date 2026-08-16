@@ -22,6 +22,36 @@ location:
   longitude: 114.1694
   name: Hong Kong (origin; operates in diaspora)
 news_page: https://www.hkdc.us/news
+events:
+- date: '2019-09-17'
+  title: Founded in Washington, DC amid the 2019 Hong Kong protests
+  url: https://www.hkdc.us/biannual-report
+  quote: It was founded on September 17, 2019, amid massive protests in Hong Kong
+    that saw millions of people marching on the streets in opposition to an unpopular
+    plan to establish extradition arrangements between Hong Kong and China proposed
+    by then-Chief Executive Carrie Lam.
+  proof_level: high
+  url_checked: '2026-08-17'
+- date: '2020-01-01'
+  title: Helps secure US congressional passage of the Hong Kong Human Rights and Democracy,
+    PROTECT Hong Kong, and Autonomy Acts
+  url: https://www.hkdc.us/biannual-report
+  quote: 'the HKDC team pushed for the successful passage of several landmark pieces
+    of legislation: the Hong Kong Human Rights and Democracy Act of 2019, the PROTECT
+    Hong Kong Act of 2019, and the Hong Kong Autonomy Act of 2020.'
+  note: Legislation passed and signed into US law over 2019–2020; the flagship Human
+    Rights and Democracy Act became law in November 2019.
+  proof_level: high
+  url_checked: '2026-08-17'
+- date: '2021-01-01'
+  title: Sponsors the first humanitarian parole visas for Hong Kong protesters
+  url: https://en.wikipedia.org/wiki/Hong_Kong_Democracy_Council
+  quote: In January 2021, HKDC assisted in the rescue of five Hong Kong protesters,
+    aged 18–26 who fled by boat to Taiwan in July 2020 soon after the national security
+    law was imposed, by sponsoring the first set of humanitarian parole visas to the
+    US.
+  proof_level: high
+  url_checked: '2026-08-17'
 activity:
   manual:
     checked: 2026-06-07
