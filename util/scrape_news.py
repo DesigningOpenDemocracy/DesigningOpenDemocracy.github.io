@@ -50,6 +50,9 @@ from html.parser import HTMLParser
 from urllib.parse import urlparse, urljoin
 from urllib.robotparser import RobotFileParser
 
+sys.path.insert(0, os.path.dirname(__file__))
+from frontmatter_io import split_frontmatter  # noqa: E402
+
 # Matches /YYYY/MM/DD/ path segments — used as a low-priority date fallback
 _URL_DATE_YMD = re.compile(r'/(\d{4})/(\d{1,2})/(\d{1,2})(?:[/?#]|$)')
 _URL_DATE_YM  = re.compile(r'/(\d{4})/(\d{1,2})(?:[/?#]|$)')
@@ -483,10 +486,9 @@ def update_activity_source(path, date_str, note, url, method="scrape"):
 
     with open(path, encoding="utf-8") as f:
         content = f.read()
-    parts = content.split("---", 2)
-    if len(parts) < 3 or parts[0] != "":
+    yaml_block, rest = split_frontmatter(content)
+    if yaml_block is None:
         return False
-    yaml_block, rest = parts[1], parts[2]
 
     meta = _yaml.safe_load(yaml_block) or {}
     existing = (meta.get("activity") or {}).get(method) or {}
@@ -562,10 +564,9 @@ def write_checked_only(path, method, note=None, hint=None):
 
     with open(path, encoding="utf-8") as f:
         content = f.read()
-    parts = content.split("---", 2)
-    if len(parts) < 3 or parts[0] != "":
+    yaml_block, rest = split_frontmatter(content)
+    if yaml_block is None:
         return False
-    yaml_block, rest = parts[1], parts[2]
     meta = _yaml.safe_load(yaml_block) or {}
     activity = meta.get("activity") or {}
 
@@ -671,10 +672,9 @@ def write_rss_feed(path, feed_url):
     """
     with open(path, encoding="utf-8") as f:
         content = f.read()
-    parts = content.split("---", 2)
-    if len(parts) < 3 or parts[0] != "":
+    yaml_block, rest = split_frontmatter(content)
+    if yaml_block is None:
         return False
-    yaml_block, rest = parts[1], parts[2]
     if re.search(r'^rss_feed\s*:', yaml_block, re.MULTILINE):
         return False
     for pattern in (r'^(website\s*:.*\n)', r'^(news_page\s*:.*\n)'):
@@ -703,10 +703,9 @@ def write_ics_feed(path, feed_url):
 
     with open(path, encoding="utf-8") as f:
         content = f.read()
-    parts = content.split("---", 2)
-    if len(parts) < 3 or parts[0] != "":
+    yaml_block, rest = split_frontmatter(content)
+    if yaml_block is None:
         return False
-    yaml_block, rest = parts[1], parts[2]
     if re.search(r'^ics_feed\s*:', yaml_block, re.MULTILINE):
         return False
     for pattern in (r'^(rss_feed\s*:.*\n)', r'^(website\s*:.*\n)'):
