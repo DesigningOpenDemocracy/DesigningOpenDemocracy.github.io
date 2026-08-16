@@ -21,14 +21,53 @@ location:
   name: Sydney, Australia
   precision: city
 events:
+- date: '2020-01-01'
+  title: Project Planet co-founded during the 2019–20 Black Summer bushfires
+  url: https://www.buildaballot.org.au/about
+  quote: Project Planet was co-founded by Lizzie Hedding and Tegan Lerm after connecting
+    online during the 2019–20 bushfires.
+  note: Exact month not specified on the source page; dated to the start of the 2020
+    calendar year as a placeholder.
+  proof_level: high
+  url_checked: '2026-08-16'
 - date: '2022-01-01'
   title: Launched its first voting tool, "Vote 1 Climate," ahead of the 2022 federal
+    election
   url: https://www.buildaballot.org.au/about
   quote: Ahead of the 2022 federal election, we built our first voting tool, Vote
-    1 Climate. election
+    1 Climate.
   proof_level: high
-  url_checked: '2026-08-12'
+  url_checked: '2026-08-16'
   notable: true
+- date: '2025-05-03'
+  title: Scaled up for the 2025 federal election, growing the team from two to four
+  url: https://www.buildaballot.org.au/about
+  quote: In the lead-up to the 2025 federal election, thousands of Australians — most
+    contributing donations under $50 — helped bring Build a Ballot to life at scale.
+  proof_level: high
+  url_checked: '2026-08-16'
+  notable: true
+- date: '2026-03-21'
+  title: Tool live for the 2026 South Australian state election
+  url: https://www.buildaballot.org.au/transparency/candidate-and-party-assessments
+  quote: View how candidates and parties have been assessed on the policies included
+    in the Build a Ballot tool for the 2026 South Australian election.
+  proof_level: high
+  url_checked: '2026-08-16'
+- date: '2026-11-28'
+  title: Planned coverage for the 2026 Victorian state election
+  url: https://www.buildaballot.org.au/about
+  quote: Over the next three years, we’re expanding Build a Ballot to state elections
+    in:...South Australia and Victoria in 2026
+  proof_level: high
+  url_checked: '2026-08-16'
+- date: '2027-03-13'
+  title: Planned coverage for the 2027 New South Wales state election
+  url: https://www.buildaballot.org.au/about
+  quote: Over the next three years, we’re expanding Build a Ballot to state elections
+    in:...New South Wales in 2027
+  proof_level: high
+  url_checked: '2026-08-16'
 activity:
   manual:
     checked: 2026-06-07
