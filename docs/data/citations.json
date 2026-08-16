@@ -861,6 +861,10 @@
         "quote": "Grattan Institute is an Australian public policy think tank... established in 2008.",
         "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+      },
+      {
+        "type": "quote-match",
+        "quote": "Grattan receives money from its endowment supporters and affiliates, which include Susan McKinnon Foundation, Scanlon Foundation, The Myer Foundation"
       }
     ]
   },
@@ -1630,6 +1634,82 @@
     ]
   },
   {
+    "id": "161214bc",
+    "type": "webpage",
+    "URL": "https://grattan.edu.au/about-us/",
+    "title": "\"About Us\"",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "We receive no ongoing government funding and reject commissioned work to ensure this independence."
+      }
+    ]
+  },
+  {
+    "id": "12a96ebb",
+    "type": "webpage",
+    "URL": "https://grattan.edu.au/about/funding/",
+    "title": "\"Funding\"",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Grattan began with a $15 million endowment from each of the Federal and Victorian Governments. In addition, BHP Billiton provided $4 million and the National Australia Bank $1 million."
+      }
+    ]
+  },
+  {
+    "id": "766eaeca",
+    "type": "webpage",
+    "URL": "https://grattan.edu.au/appointment-of-danielle-wood-as-new-ceo-of-grattan-institute/",
+    "title": "Danielle Wood announced as incoming CEO, succeeding founding CEO John Daley",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Grattan Institute’s Board had appointed Ms Danielle Wood as Grattan’s new Chief Executive Officer, to take up the role in July 2020 upon the retirement of Prof John Daley"
+      },
+      {
+        "type": "quote-match",
+        "quote": "Grattan Institute’s inaugural CEO, Prof John Daley, will be stepping down in July 2020."
+      }
+    ]
+  },
+  {
+    "id": "d5fd1a2e",
+    "type": "webpage",
+    "URL": "https://grattan.edu.au/democracy-and-public-integrity/",
+    "title": "\"Democracy and public integrity\"",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "CEO and Economic Prosperity and Democracy Program Director"
+      }
+    ]
+  },
+  {
+    "id": "6aab1915",
+    "type": "webpage",
+    "URL": "https://grattan.edu.au/grattan-institute-new-ceo/",
+    "title": "Dr Aruna Sathanapally appointed CEO, following Danielle Wood's move to chair the Productivity Commission",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Aruna Sathanapally has been appointed CEO of Australia’s leading public policy think tank, Grattan Institute"
+      }
+    ]
+  },
+  {
+    "id": "9c29c346",
+    "type": "webpage",
+    "URL": "https://grattan.edu.au/news/improving-australias-democracy/",
+    "title": "\"Improving Australia's democracy\"",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "The total cap of $90 million for electoral expenditure by a political party is too high. And the per-seat cap of $800,000 is too low, advantaging incumbents over new entrants."
+      }
+    ]
+  },
+  {
     "id": "800e215f",
     "type": "webpage",
     "URL": "https://greens.org.au/about/our-story",
@@ -2385,11 +2465,39 @@
     "id": "d2b0d9ec",
     "type": "webpage",
     "URL": "https://www.buildaballot.org.au/about",
-    "title": "Launched its first voting tool, \"Vote 1 Climate,\" ahead of the 2022 federal",
+    "title": "Project Planet co-founded during the 2019–20 Black Summer bushfires",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "Ahead of the 2022 federal election, we built our first voting tool, Vote 1 Climate. election"
+        "quote": "Ahead of the 2022 federal election, we built our first voting tool, Vote 1 Climate."
+      },
+      {
+        "type": "quote-match",
+        "quote": "In the lead-up to the 2025 federal election, thousands of Australians — most contributing donations under $50 — helped bring Build a Ballot to life at scale."
+      },
+      {
+        "type": "quote-match",
+        "quote": "Over the next three years, we’re expanding Build a Ballot to state elections in:...New South Wales in 2027"
+      },
+      {
+        "type": "quote-match",
+        "quote": "Over the next three years, we’re expanding Build a Ballot to state elections in:...South Australia and Victoria in 2026"
+      },
+      {
+        "type": "quote-match",
+        "quote": "Project Planet was co-founded by Lizzie Hedding and Tegan Lerm after connecting online during the 2019–20 bushfires."
+      }
+    ]
+  },
+  {
+    "id": "66b70cd4",
+    "type": "webpage",
+    "URL": "https://www.buildaballot.org.au/transparency/candidate-and-party-assessments",
+    "title": "Tool live for the 2026 South Australian state election",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "View how candidates and parties have been assessed on the policies included in the Build a Ballot tool for the 2026 South Australian election."
       }
     ]
   },
