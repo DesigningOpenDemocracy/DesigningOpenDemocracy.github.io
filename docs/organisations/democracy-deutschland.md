@@ -22,6 +22,33 @@ location:
   longitude: 13.405
   name: Germany
   precision: city
+events:
+- date: '2017-08-15'
+  title: Verein founded in Göttingen by Marius Krüger
+  url: https://www.pressenza.com/de/2017/12/demokratie-echtzeit-neue-app-democracy-erfolgreich-crowdfinanziert/
+  quote: Im August dieses Jahres entschied sich Marius Krüger dann dazu, den Worten
+    Taten folgen zu lassen und gründete den gemeinnützigen Verein DEMOCRACY Deutschland
+    e.V.
+  proof_level: high
+  url_checked: '2026-08-14'
+- date: '2017-11-26'
+  title: Crowdfunding campaign completed, securing €35,000 from 580+ supporters
+  url: https://www.pressenza.com/de/2017/12/demokratie-echtzeit-neue-app-democracy-erfolgreich-crowdfinanziert/
+  quote: der erfolgreiche Abschluss ihres initialen Crowdfundings sicherte ihnen gut
+    35.000 € zweckgebundenes Startkapital für die Programmierung einer ersten Version
+    der App
+  proof_level: high
+  url_checked: '2026-08-14'
+- date: '2018-10-01'
+  title: App launch — first app giving citizens real-time insight into Bundestag legislation,
+    with shadow voting
+  url: https://www.ghst.de/presse/pressemeldung-im-detail/app-democracy-fuer-transparentere-demokratie-geht-an-den-start
+  quote: Mit der App DEMOCRACY startet am 1. Oktober die bundesweit erste App, mit
+    der sich Bürgerinnen und Bürger einen Echtzeit-Einblick in die Gesetzesfindung
+    des Deutschen Bundestages verschaffen können.
+  proof_level: high
+  url_checked: '2026-08-14'
+  notable: true
 activity:
   dod:
     checked: 2026-06-08

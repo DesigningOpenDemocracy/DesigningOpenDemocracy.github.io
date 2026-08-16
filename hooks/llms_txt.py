@@ -25,7 +25,7 @@ DOCS_DIR = os.path.join(os.path.dirname(__file__), "..", "docs")
 ORGS_DIR = os.path.join(DOCS_DIR, "organisations")
 CONCEPTS_DIR = os.path.join(DOCS_DIR, "concepts")
 OUT_PATH = os.path.join(DOCS_DIR, "llms.txt")
-SKIP_FILES = {"organisations.md", "concepts.md"}
+SKIP_FILES = {"index.md"}
 
 
 def load_orgs():

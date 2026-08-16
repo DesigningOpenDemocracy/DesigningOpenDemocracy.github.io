@@ -50,7 +50,7 @@ except ImportError:
 DOCS_DIR = os.path.join(os.path.dirname(__file__), "..", "docs")
 ORGS_DIR = os.path.join(DOCS_DIR, "organisations")
 SYNCED_EVENTS_DIR = os.path.join(DOCS_DIR, "data", "events")
-SKIP_FILES = {"organisations.md"}
+SKIP_FILES = {"index.md"}
 
 # Known recurring CJK event patterns → English translation (for calendar readability)
 _CJK_PATTERNS = [

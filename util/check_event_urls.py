@@ -21,9 +21,11 @@ Usage:
 
 import argparse
 import glob
+import json
 import os
 import sys
 import time
+from datetime import date
 from urllib.parse import urlparse
 
 try:
@@ -34,7 +36,7 @@ except ImportError as e:
     sys.exit(1)
 
 ORGS_DIR = os.path.join(os.path.dirname(__file__), "..", "docs", "organisations")
-SKIP_FILES = {"organisations.md", "concepts.md"}
+SKIP_FILES = {"index.md"}
 DOD_USER_AGENT = "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
 REQUEST_DELAY = 0.5  # be polite between requests to the same run, different hosts
 
@@ -67,6 +69,11 @@ def main():
     parser = argparse.ArgumentParser(description="Check liveness of event citation URLs")
     parser.add_argument("--slug", type=str, help="Check a single org by slug")
     parser.add_argument("--timeout", type=int, default=10, help="Per-request timeout in seconds")
+    parser.add_argument("--report", type=str, default=None,
+                        help="Write a JSON summary of findings to this path "
+                             "(dead/blocked/redirected/errored, with counts) "
+                             "for ad hoc/manual review. Purely additive: never "
+                             "changes stdout or the exit code.")
     args = parser.parse_args()
 
     session = requests.Session()
@@ -134,6 +141,25 @@ def main():
     print(f"Unique URLs checked: {checked}")
     print(f"Dead: {len(dead)}  Blocked (403/429, likely not actually dead): {len(blocked)}  "
           f"Redirected: {len(redirected)}  Errored: {len(errored)}")
+
+    if args.report:
+        def _rows(items, extra_key):
+            return [
+                {"org": t, "date": d, "event": et, "url": u, extra_key: x}
+                for (t, d, et, u, x) in items
+            ]
+        with open(args.report, "w", encoding="utf-8") as f:
+            json.dump({
+                "generated": date.today().isoformat(),
+                "counts": {"checked": checked, "dead": len(dead), "blocked": len(blocked),
+                           "redirected": len(redirected), "errored": len(errored)},
+                "dead": _rows(dead, "status"),
+                "blocked": _rows(blocked, "status"),
+                "redirected": _rows(redirected, "final_url"),
+                "errored": _rows(errored, "error"),
+            }, f, indent=2)
+            f.write("\n")
+
     if dead or errored:
         print("\nDead/errored URLs need a replacement citation, an updated url_checked "
               "if the content moved, or (if the source is genuinely gone) removal of the "

@@ -1,13 +1,13 @@
 {
   "https://adrindia.org/about-adr/mission-and-vision": {
-    "checked": "2026-08-12",
-    "content_hash": "12b5a77f6dedb7265afbe3d053e63767591152b0e8de93d70685f4b501d82b93",
+    "checked": "2026-08-14",
+    "content_hash": "1195054c565b3a283f960f328e7da223d254826e922c017cd0ef4a16e2eaa4f2",
     "contexts": {
       "10d318870f8eff4cf3e3659d7e17c43c87cb4eb19785e9453d6ab10ac5b05ceb": {
         "prefix": "\u092a\u094d\u0930\u091c\u093e \u0939\u0940 \u092a\u094d\u0930\u092d\u0941 \u0939\u0948! Citizens are the masters in a democracy! History",
-        "sha256": "12b5a77f6dedb7265afbe3d053e63767591152b0e8de93d70685f4b501d82b93",
+        "sha256": "1195054c565b3a283f960f328e7da223d254826e922c017cd0ef4a16e2eaa4f2",
         "suffix": "In 1999, Public Interest Litigation (PIL) was filed by them with Delhi High Court asking for [or requesting] the disclosure of the criminal, financia",
-        "text": "The Association for Democratic Reforms (ADR) was established in 1999 by a group of professors from the Indian Institute of Management (IIM) Ahmedabad. In 1999, Public Interest Litigation (PIL) was filed by them with Delhi High Court asking for [or requesting] the disclosure of the criminal, financial and educational background of the candidates contesting elections. Based on this, the Supreme Court in 2002 , and subsequently in 2003, made it mandatory for all candidates contesting elections to disclose criminal, financial and educational background prior to the polls by filing an affidavit with the Election Commission."
+        "text": "The Association for Democratic Reforms (ADR) was established in 1999 by a group of professors from the Indian Institute of Management (IIM) Ahmedabad. In 1999, Public Interest Litigation (PIL) was filed by them with Delhi High Court asking for [or requesting] the disclosure of the criminal, financial and educational background of the candidates contesting elections. Based on this, the Supreme Court in 2002, and subsequently in 2003, made it mandatory for all candidates contesting elections to disclose criminal, financial and educational background prior to the polls by filing an affidavit with the Election Commission."
       }
     },
     "etag": null,
@@ -16,8 +16,110 @@
       "10d318870f8eff4cf3e3659d7e17c43c87cb4eb19785e9453d6ab10ac5b05ceb": true
     }
   },
+  "https://anouslademocratie.fr/2020/04/03/entretien-avec-emmanuel-martin-quelquun-disait-que-lentreprise-privee-ou-publique-ce-sont-des-univers-feodaux/": {
+    "checked": "2026-08-14",
+    "content_hash": "6f12b1ef2ebbf34df15ebde6ca42a7040fa71b04f6a78f9820f4db252ce9be16",
+    "contexts": {
+      "e02a8439c78b79848277bbdc3e920e26d6cd4850fd0fe1b37a0600953d32f50f": {
+        "prefix": "Dans le premier de nos entretiens avec des membres d\u2019\u00c0 nous la d\u00e9mocratie, nous allons \u00e0 la rencontre de l\u2019un de ses membres fondateurs.",
+        "sha256": "6f12b1ef2ebbf34df15ebde6ca42a7040fa71b04f6a78f9820f4db252ce9be16",
+        "suffix": "Emmanuel, pourquoi \u00e9tais-tu pr\u00e9sent lors de la fondation d\u2019\u00c0 nous la d\u00e9mocratie? Il y a deux mani\u00e8res de r\u00e9pondre. Soit j\u2019insiste sur",
+        "text": "Dans le premier de nos entretiens avec des membres d\u2019\u00c0 nous la d\u00e9mocratie, nous allons \u00e0 la rencontre de l\u2019un de ses membres fondateurs. Emmanuel est sociologue de formation, il enseigne les sciences \u00e9conomiques et sociales en classes pr\u00e9paratoires et faisait partie du noyau de huit personnes qui ont donn\u00e9 naissance au mouvement au cr\u00e9puscule de l\u2019ann\u00e9e 2016."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "e02a8439c78b79848277bbdc3e920e26d6cd4850fd0fe1b37a0600953d32f50f": true
+    }
+  },
+  "https://anouslademocratie.fr/municipales-2020/": {
+    "checked": "2026-08-14",
+    "content_hash": "1645108a292b9a76524544b2f0552f90299245bcdfacb60088f0a672d107bf3c",
+    "contexts": {
+      "510c7964ea9f870d55dc38e4df8a53e2a8395937e8800bb54294dfea19d62cea": {
+        "prefix": "Municipales 2020 Formation au porte-\u00e0-porte Notre strat\u00e9gie pour les municipales L\u2019int\u00e9gralit\u00e9 des propositions",
+        "sha256": "1645108a292b9a76524544b2f0552f90299245bcdfacb60088f0a672d107bf3c",
+        "suffix": "C\u2019est \u00e0 l\u2019\u00e9chelle locale que la vie d\u00e9mocratique devrait \u00eatre la plus inclusive, la plus bouillonnante, la plus passionnante pour chacun.e d\u2019entre no",
+        "text": "\u00c0 nous la d\u00e9mocratie! se donne pour unique mission de d\u00e9mocratiser les institutions et les pratiques pour les mettre en accord avec les attentes actuelles de nos concitoyennes et concitoyens. C\u2019est \u00e0 l\u2019\u00e9chelle locale que la vie d\u00e9mocratique devrait \u00eatre la plus inclusive, la plus bouillonnante, la plus passionnante pour chacun.e d\u2019entre nous."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "510c7964ea9f870d55dc38e4df8a53e2a8395937e8800bb54294dfea19d62cea": true
+    }
+  },
+  "https://australiainstitute.org.au/events/climate-integrity-summit/": {
+    "checked": "2026-08-14",
+    "content_hash": "7bb2ea87bf61e04d53e47bdb86e26357eeb713eb57a49719bd6e599e0b968ad1",
+    "contexts": {
+      "7bb2ea87bf61e04d53e47bdb86e26357eeb713eb57a49719bd6e599e0b968ad1": {
+        "prefix": "Contact Home / Events / Climate Integrity Summit Climate Integrity Summit",
+        "sha256": "7bb2ea87bf61e04d53e47bdb86e26357eeb713eb57a49719bd6e599e0b968ad1",
+        "suffix": "Sub-pages All Politics in the Pub Webinars Book Club Past Events",
+        "text": "The Climate Integrity Summit convenes leading experts in economics, ecology, policy and governance to discuss a credible and achievable climate policy that serves the Australian people and the broader global community."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "7bb2ea87bf61e04d53e47bdb86e26357eeb713eb57a49719bd6e599e0b968ad1": true
+    }
+  },
+  "https://australiainstitute.org.au/events/dr-hugh-saddler-memorial-lecture/": {
+    "checked": "2026-08-14",
+    "content_hash": "2a61f7e5ce24a09c44d3f1f09ecddf3f0811b6d44011d979633ad82d79e3c83a",
+    "contexts": {
+      "939670c4f221cb54b3cbf3b9889c4b83a44ab4e1ddca899410f1e2a8d0b9f882": {
+        "prefix": "re Dr Hugh Saddler Memorial Lecture 2026 | Shane Rattenbury Mon, Aug 17, 2026 6:00 pm AEST National Film and Sound Archive",
+        "sha256": "2a61f7e5ce24a09c44d3f1f09ecddf3f0811b6d44011d979633ad82d79e3c83a",
+        "suffix": "This special evening will be a reflection on how the ACT turned climate ambition into action, and what its experience reveals about democracy, power,",
+        "text": "Join us at the 2026 Dr Hugh Saddler Memorial Lecture, featuring former ACT Minister, Greens Leader, and long\u2011serving parliamentarian Shane Rattenbury. This special evening will be a reflection on how the ACT turned climate ambition into action, and what its experience reveals about democracy, power, and people\u2011driven change. The ACT has gone from setting bold"
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "939670c4f221cb54b3cbf3b9889c4b83a44ab4e1ddca899410f1e2a8d0b9f882": true
+    }
+  },
+  "https://blog.democracylab.org/10-000-volunteers-and-counting/": {
+    "checked": "2026-08-14",
+    "content_hash": "85dcc5dd764a9de7d00b72bb42939fc5413c746c2e99843950b58f854525bfba",
+    "contexts": {
+      "85dcc5dd764a9de7d00b72bb42939fc5413c746c2e99843950b58f854525bfba": {
+        "prefix": "by this author. DemocracyLab 10 Sep 2025 \u2022 3 min read Important Milestone Reached!",
+        "sha256": "85dcc5dd764a9de7d00b72bb42939fc5413c746c2e99843950b58f854525bfba",
+        "suffix": "We've worked together through the years and have built DemocracyLab into an impactful nonprofit that has made the world a better place through",
+        "text": "Recently DemocracyLab reached an important milestone- we have connected over 10,000 volunteers (UXers, Data Scientists, Devs, and other tech roles) to over 300 nonprofits and tech-for-good projects!"
+      }
+    },
+    "etag": "W/\"55ba-aTA0uJ88XEzqS31qJsdqMhaEZks\"",
+    "last_modified": null,
+    "verified": {
+      "85dcc5dd764a9de7d00b72bb42939fc5413c746c2e99843950b58f854525bfba": true
+    }
+  },
+  "https://bonds.coop/about-us/our-story/": {
+    "checked": "2026-08-14",
+    "content_hash": "64133499a5f3dbacf5a0feb85ac302ff31c33d8b56de113d2db1792612dd6492",
+    "contexts": {
+      "b3ede53ee5fce2752e17d9ab41a205960c534728fc5fa44fae82728e1a491939": {
+        "prefix": "Connect with us Connect Join us",
+        "sha256": "64133499a5f3dbacf5a0feb85ac302ff31c33d8b56de113d2db1792612dd6492",
+        "suffix": ": the organisation that builds capacity for co-operatives, mutuals, and other member-driven enterprises should itself be a co-operative. We believe th",
+        "text": "Co-operative Bonds was formed in 2018 with a simple but powerful idea: the organisation that builds capacity for co-operatives, mutuals, and other member-driven enterprises should itself be a co-operative. We believe that co-operative developers should practise what they preach."
+      }
+    },
+    "etag": null,
+    "last_modified": "Fri, 14 Aug 2026 00:08:25 GMT",
+    "verified": {
+      "b3ede53ee5fce2752e17d9ab41a205960c534728fc5fa44fae82728e1a491939": true
+    }
+  },
   "https://cafsa.org.au/cafsa/": {
-    "checked": "2026-08-12",
+    "checked": "2026-08-14",
     "content_hash": "df929ab5566c473eff41117725d048245c949170398782267afecefb68f6f213",
     "contexts": {
       "df929ab5566c473eff41117725d048245c949170398782267afecefb68f6f213": {
@@ -27,31 +129,31 @@
         "text": "Citizen Assemblies for SA (CAfSA) was founded in Adelaide in 2023 and is an incorporated association advocating for the use of CAs in public policy making."
       }
     },
-    "etag": "\"327-1786546793;gz\"",
+    "etag": "\"3208-1786673188;gz\"",
     "last_modified": null,
     "verified": {
       "df929ab5566c473eff41117725d048245c949170398782267afecefb68f6f213": true
     }
   },
   "https://canberra-alliance.org.au/event/2026-capad-agm/": {
-    "checked": "2026-08-13",
+    "checked": "2026-08-14",
     "content_hash": "9f2460966f61721c96b7c008007aa71ee8cb5de4c098448b8df2ea559e3ba1fb",
     "contexts": {
       "9f2460966f61721c96b7c008007aa71ee8cb5de4c098448b8df2ea559e3ba1fb": {
         "prefix": "August @ 14:00 - 15:00 AEST \u00ab Spotlight on Community Councils Do more MLAs make for better government? \u00bb",
         "sha256": "9f2460966f61721c96b7c008007aa71ee8cb5de4c098448b8df2ea559e3ba1fb",
-        "suffix": "Annual Report and other papers . Zoom link to attend: https://us06web.zoom.us/j/82905882663 RSVP . Tweet",
+        "suffix": "Annual Report and other papers. Zoom link to attend: https://us06web.zoom.us/j/82905882663 RSVP. Tweet",
         "text": "Be part of setting the future for CAPaD for another year."
       }
     },
     "etag": null,
-    "last_modified": "Thu, 13 Aug 2026 04:10:21 GMT",
+    "last_modified": "Fri, 14 Aug 2026 13:06:31 GMT",
     "verified": {
       "9f2460966f61721c96b7c008007aa71ee8cb5de4c098448b8df2ea559e3ba1fb": true
     }
   },
   "https://canberra-alliance.org.au/event/a-citizens-assembly-for-the-act/": {
-    "checked": "2026-08-13",
+    "checked": "2026-08-14",
     "content_hash": "deb147d674adaebd0b6e9291f63f3dbffee5d45fdad6147fb0bc2a556773550e",
     "contexts": {
       "8b93a12bae23870d853747831ad995f05f5f45631a27987161de034eaaa5a444": {
@@ -62,30 +164,30 @@
       }
     },
     "etag": null,
-    "last_modified": "Thu, 13 Aug 2026 07:41:45 GMT",
+    "last_modified": "Fri, 14 Aug 2026 13:06:39 GMT",
     "verified": {
       "8b93a12bae23870d853747831ad995f05f5f45631a27987161de034eaaa5a444": true
     }
   },
   "https://canberra-alliance.org.au/event/community-assembly-following-up-our-mp-asks-for-2026/": {
-    "checked": "2026-08-13",
+    "checked": "2026-08-14",
     "content_hash": "bb6b449b355e2c9fae344ef3f3d9473256d4118c2e05c1b1ed40ed8b36b5a11f",
     "contexts": {
       "a90e80e6aeefc64834dc5bbe532519967f1c78ee4707e0158ee73ef79dcbaaab": {
-        "prefix": "nd its impacts on those experiencing gambling harm ). To round off the year we are inviting them to come to tell us what they have achieved.",
+        "prefix": "and its impacts on those experiencing gambling harm). To round off the year we are inviting them to come to tell us what they have achieved.",
         "sha256": "bb6b449b355e2c9fae344ef3f3d9473256d4118c2e05c1b1ed40ed8b36b5a11f",
         "suffix": "More details and registration links in November. Tweet Add to calendar Google Calendar iCalendar",
         "text": "To round off the year we are inviting them to come to tell us what they have achieved. This Community Assembly to to give them opportunity to report back to us and for us to respond to their report."
       }
     },
     "etag": null,
-    "last_modified": "Thu, 13 Aug 2026 07:40:21 GMT",
+    "last_modified": "Fri, 14 Aug 2026 13:06:42 GMT",
     "verified": {
       "a90e80e6aeefc64834dc5bbe532519967f1c78ee4707e0158ee73ef79dcbaaab": true
     }
   },
   "https://canberra-alliance.org.au/event/expanding-the-act-assembly-is-it-time/": {
-    "checked": "2026-08-13",
+    "checked": "2026-08-14",
     "content_hash": "afb1e1080fe732db4825bb8f8be50a341e4949dc4750b55911ece1ead81430ff",
     "contexts": {
       "afb1e1080fe732db4825bb8f8be50a341e4949dc4750b55911ece1ead81430ff": {
@@ -96,13 +198,64 @@
       }
     },
     "etag": null,
-    "last_modified": "Thu, 13 Aug 2026 07:41:42 GMT",
+    "last_modified": "Fri, 14 Aug 2026 13:06:35 GMT",
     "verified": {
       "afb1e1080fe732db4825bb8f8be50a341e4949dc4750b55911ece1ead81430ff": true
     }
   },
+  "https://citizenos.com/news/citizen-os-annual-report-2024-a-year-of-a-big-revamp/": {
+    "checked": "2026-08-14",
+    "content_hash": "5cb3fdc1a4f026ceaf66a1ecc387d5bad4de4f3bd270a9064827b63e95e718a8",
+    "contexts": {
+      "34b1daed9d05b71cde630ad31f875b5d5f49f7d8babc42aada0292d2f899171e": {
+        "prefix": "for Sustainable Societies\u201d. The Indonesian Opinion Festival 2024: A Milestone for Citizen Engagement",
+        "sha256": "5cb3fdc1a4f026ceaf66a1ecc387d5bad4de4f3bd270a9064827b63e95e718a8",
+        "suffix": "This groundbreaking event engaged 5,354 people, making it our largest festival to date. Notably, it brought 1,562 participants together in person at t",
+        "text": "In December 2024, Citizen OS Indonesia co-organised the 4th Indonesia Opinion Festival (IOF), in collaboration with the Indonesian House of Representatives.This groundbreaking event engaged 5,354 people, making it our largest festival to date. Notably, it brought 1,562 participants together in person at the Indonesian Parliament building\u2014 an unprecedented achievement for civil society."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "34b1daed9d05b71cde630ad31f875b5d5f49f7d8babc42aada0292d2f899171e": true
+    }
+  },
+  "https://citizenos.com/news/citizen-os-platform-now-has-an-improved-look-and-feel/": {
+    "checked": "2026-08-14",
+    "content_hash": "6efb9e00c966e634f536bbeb43b955ca54be518dfa7cd09ddda99f7764d5e308",
+    "contexts": {
+      "87fa3e19f982eac6e718c1ee247b68a3f9ddd55518989a9e5d72b45e2b8866e8": {
+        "prefix": "ed Look and Feel 18 March 2024 Meelika Hirmo",
+        "sha256": "6efb9e00c966e634f536bbeb43b955ca54be518dfa7cd09ddda99f7764d5e308",
+        "suffix": "In the upcoming months, even more improvements and much-anticipated new features will follow.",
+        "text": "We\u2019re very happy to be launching the first phase of our redesign roll-out \u2014 with an improved look and feel, and a more intuitive interface. In the upcoming months, even more improvements and much-anticipated new features will follow."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "87fa3e19f982eac6e718c1ee247b68a3f9ddd55518989a9e5d72b45e2b8866e8": true
+    }
+  },
+  "https://citizenos.com/platform/": {
+    "checked": "2026-08-14",
+    "content_hash": "2b629341c8682c09d2eedaca29d90e98eb4d2ce4ad9dfb37b3ea60790a71e1f2",
+    "contexts": {
+      "2b629341c8682c09d2eedaca29d90e98eb4d2ce4ad9dfb37b3ea60790a71e1f2": {
+        "prefix": "nt funds. We do not sell any of your data to third parties to raise funds. Who are the creators of Citizen OS platform?",
+        "sha256": "2b629341c8682c09d2eedaca29d90e98eb4d2ce4ad9dfb37b3ea60790a71e1f2",
+        "suffix": "Our team is based in Tallinn, Estonia (EU), with an active branch in Jakarta, Indonesia. You can find all team contacts here. We also work w",
+        "text": "Citizen OS is a non-profit organisation, founded in 2015 by philanthropist and tech entrepreneur Ahti Heinla, civic society expert Margo Loor, and the Let\u2019s Do It! Foundation (coordinators of World Cleanup Day)."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "2b629341c8682c09d2eedaca29d90e98eb4d2ce4ad9dfb37b3ea60790a71e1f2": true
+    }
+  },
   "https://ciudadaniai.org/nosotros/": {
-    "checked": "2026-08-13",
+    "checked": "2026-08-14",
     "content_hash": "0b9471be8f65922f16b7dc2b3cb12858e60cbdd537443c4069a88df8c6d3eb47",
     "contexts": {
       "0b9471be8f65922f16b7dc2b3cb12858e60cbdd537443c4069a88df8c6d3eb47": {
@@ -112,18 +265,52 @@
         "text": "Ciudadan\u00eda Inteligente 2009 - 2026. Todos los derechos reservados"
       }
     },
-    "etag": "\"c08ef7a2fe31e31dbc9233dd6a95d274-ssl-df\"",
+    "etag": "\"240c390b7282617199b3b86650045ba1-ssl-df\"",
     "last_modified": null,
     "verified": {
       "0b9471be8f65922f16b7dc2b3cb12858e60cbdd537443c4069a88df8c6d3eb47": true
     }
   },
+  "https://civichive.org/about-us/": {
+    "checked": "2026-08-14",
+    "content_hash": "aee7e1dc3880e8ec6b1c12e3c9c5fe4c6c50ef9e9673b5c2a409de2b9ebfafa1",
+    "contexts": {
+      "67ce0166bba34c1ac6dc47214ec2e5da1eb25890c25dd0259ba97992ea97afe2": {
+        "prefix": "Donate Election Result Portal About us",
+        "sha256": "aee7e1dc3880e8ec6b1c12e3c9c5fe4c6c50ef9e9673b5c2a409de2b9ebfafa1",
+        "suffix": ", Civichive was set up to create an innovative virtual & physical space for partnerships and to raise civic tech leaders/solutions in Nigeria. It was",
+        "text": "Founded in 2017 as the innovation centre of BudgIT, Civichive was set up to create an innovative virtual & physical space for partnerships and to raise civic tech leaders/solutions in Nigeria. It was also set up to improve the capacity of existing NGOs and media organizations, thereby making a huge impact within the Nigerian space."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "67ce0166bba34c1ac6dc47214ec2e5da1eb25890c25dd0259ba97992ea97afe2": true
+    }
+  },
+  "https://civictech.africa/about-ctin": {
+    "checked": "2026-08-14",
+    "content_hash": "74ae83bfa42253f65e7cfb42d5de7ad8dd8030366ec6dc44063bce6e59e827e5",
+    "contexts": {
+      "74ae83bfa42253f65e7cfb42d5de7ad8dd8030366ec6dc44063bce6e59e827e5": {
+        "prefix": "t and citizens, in public participation, in transparency and accountability and in delivering public services.",
+        "sha256": "74ae83bfa42253f65e7cfb42d5de7ad8dd8030366ec6dc44063bce6e59e827e5",
+        "suffix": "The Network grew out of a Making All Voices Count (MAVC) community of practice that ran from 2014 until 2017. During the Making All Voices Coun",
+        "text": "CTIN was launched in 2017 as a learning network."
+      }
+    },
+    "etag": null,
+    "last_modified": "Thu, 06 Aug 2026 12:14:22 GMT",
+    "verified": {
+      "74ae83bfa42253f65e7cfb42d5de7ad8dd8030366ec6dc44063bce6e59e827e5": true
+    }
+  },
   "https://civictech.guide/about/": {
-    "checked": "2026-08-12",
+    "checked": "2026-08-15",
     "content_hash": "07ce94ed3e6961d650dc0b94334a88be014c06184000639fde83467b3d5e0238",
     "contexts": {
       "25d546fb9449c1380fed6e2ecf84a9706dc54f4f4af5a075ca0c658537c6dc92": {
-        "prefix": "endar Map Build \ud83c\uddfa\ud83c\uddf8 EN Submit Project Civic Tech Field Guide About the Field Guide Welcome",
+        "prefix": "ry Calendar Map \ud83c\uddfa\ud83c\uddf8 EN Submit Project Civic Tech Field Guide About the Field Guide Welcome",
         "sha256": "07ce94ed3e6961d650dc0b94334a88be014c06184000639fde83467b3d5e0238",
         "suffix": "It's primarily a crowdsourced directory where you can find helpful resources and inspiration, and share your own work with the world. We also publish",
         "text": "The Civic Tech Field Guide is the world's most complete collection of projects, tools, and organizations using tech for democracy. It's primarily a crowdsourced directory where you can find helpful resources and inspiration, and share your own work with the world. We also publish research and regular updates about the state of the field."
@@ -135,8 +322,41 @@
       "25d546fb9449c1380fed6e2ecf84a9706dc54f4f4af5a075ca0c658537c6dc92": true
     }
   },
+  "https://congresovisible.uniandes.edu.co/quesomos": {
+    "checked": "2026-08-14",
+    "content_hash": "0afed153ef4cf5e7c8889335e5ed34f055042539e7bf92474130666affa6b37a",
+    "contexts": {
+      "ff2df5821fe2c240be3ae3929f7f1cd4493e284cf54f05564b8ec123e3629cc2": {
+        "prefix": "Qu\u00e9 es Congreso Visible",
+        "sha256": "dda0e7cca4c21947259bb3b665c62bf3b375cea3f13dfe688cec218b5281df0c",
+        "suffix": "de la Universidad de losAndes realiza un seguimiento y an\u00e1lisis permanentes del Congreso de la Rep\u00fablica a trav\u00e9s de la publicaci\u00f3nde su actividad le"
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "ff2df5821fe2c240be3ae3929f7f1cd4493e284cf54f05564b8ec123e3629cc2": true
+    }
+  },
+  "https://congress.crowd.law/case-vtaiwan.html": {
+    "checked": "2026-08-14",
+    "content_hash": "30add457c7d4a9687b5f00fd24daa8d575219b566f1481853d1246c8fcb76cd0",
+    "contexts": {
+      "30add457c7d4a9687b5f00fd24daa8d575219b566f1481853d1246c8fcb76cd0": {
+        "prefix": "ebate over the country\u2019s policies regarding taxis and the ride-hailing app Uber. Participation statistics from this process were as follows:",
+        "sha256": "30add457c7d4a9687b5f00fd24daa8d575219b566f1481853d1246c8fcb76cd0",
+        "suffix": "145 statements submitted on Polis survey (during opinion gathering stage) 925 participants voted on Polis survey (opinion stage) 1,",
+        "text": "31,115 total votes (highest of any process to date)"
+      }
+    },
+    "etag": "W/\"5f87868d-f01e\"",
+    "last_modified": "Wed, 14 Oct 2020 23:15:25 GMT",
+    "verified": {
+      "30add457c7d4a9687b5f00fd24daa8d575219b566f1481853d1246c8fcb76cd0": true
+    }
+  },
   "https://consuldemocracy.org/2025/12/consul-conference-2026-munich/": {
-    "checked": "2026-08-13",
+    "checked": "2026-08-14",
     "content_hash": "cd729351ab05147c0cc12144223afcc290c18397362ddfa50a7fad4270c6e85d",
     "contexts": {
       "cd729351ab05147c0cc12144223afcc290c18397362ddfa50a7fad4270c6e85d": {
@@ -147,19 +367,19 @@
       }
     },
     "etag": null,
-    "last_modified": "Thu, 13 Aug 2026 07:44:21 GMT",
+    "last_modified": "Thu, 13 Aug 2026 12:43:00 GMT",
     "verified": {
       "cd729351ab05147c0cc12144223afcc290c18397362ddfa50a7fad4270c6e85d": true
     }
   },
   "https://deliberabrasil.org/projetos/assembleias-cidadas-de-mocambique-sobre-as-mudancas-climaticas/": {
-    "checked": "2026-08-13",
+    "checked": "2026-08-14",
     "content_hash": "c43016d6dd7a4d33c03f2818c4b80d16abf00ed4209bdf2f901fc6f24d8d5e03",
     "contexts": {
       "c43016d6dd7a4d33c03f2818c4b80d16abf00ed4209bdf2f901fc6f24d8d5e03": {
         "prefix": "ica\u00e7\u00f5es Gloss\u00e1rio Nosso trabalho Assembleias Cidad\u00e3s de Mo\u00e7ambique sobre as mudan\u00e7as clim\u00e1ticas",
         "sha256": "c43016d6dd7a4d33c03f2818c4b80d16abf00ed4209bdf2f901fc6f24d8d5e03",
-        "suffix": "O Governo da Rep\u00fablica de Mo\u00e7ambique iniciou, em janeiro de 2026, a implementa\u00e7\u00e3o do projeto Assembleias Cidad\u00e3s , uma iniciativa in\u00e9dita volta",
+        "suffix": "O Governo da Rep\u00fablica de Mo\u00e7ambique iniciou, em janeiro de 2026, a implementa\u00e7\u00e3o do projeto Assembleias Cidad\u00e3s, uma iniciativa in\u00e9dita voltad",
         "text": "Di\u00e1logo p\u00fablico sobre resili\u00eancia clim\u00e1tica e uso de recursos naturais"
       }
     },
@@ -170,14 +390,14 @@
     }
   },
   "https://deliberabrasil.org/projetos/primeira-assembleia-cidada-sobre-o-clima-em-cidades-amazonicas/": {
-    "checked": "2026-08-13",
-    "content_hash": "a8db8360d685d604a3fed6be87d71c9129d4c97e91df86839ce47dae15e7d199",
+    "checked": "2026-08-14",
+    "content_hash": "362cd234bc2114bd0af6c8c801b8bd851a79a6c251d1bf8f6b423e7aa04c14a3",
     "contexts": {
       "8cddf10ae615f630fb1a91f8c2fb1ee7ee0f1dda0debcf1bc945b6d06449f91e": {
         "prefix": "com o apoio de especialistas e organiza\u00e7\u00f5es reconhecidas pelo trabalho na regi\u00e3o, entre as cidades de Macap\u00e1 (AM), Bujaru (PA) e Salvaterra (PA).",
-        "sha256": "a8db8360d685d604a3fed6be87d71c9129d4c97e91df86839ce47dae15e7d199",
-        "suffix": ", sua hist\u00f3ria remonta a 1943, completou 80 anos em 2023. Situada no estado, na regi\u00e3o Norte do Brasil, \u00e9 um munic\u00edpio que faz parte da Regi\u00e3o",
-        "text": "O munic\u00edpio selecionado foi Bujaru, no Par\u00e1 , sua hist\u00f3ria remonta a 1943, completou 80 anos em 2023."
+        "sha256": "362cd234bc2114bd0af6c8c801b8bd851a79a6c251d1bf8f6b423e7aa04c14a3",
+        "suffix": ", sua hist\u00f3ria remonta a 1943, completou 80 anos em 2023. Situada no estado, na regi\u00e3o Norte do Brasil, \u00e9 um munic\u00edpio que faz parte da Regi\u00e3o M",
+        "text": "O munic\u00edpio selecionado foi Bujaru, no Par\u00e1, sua hist\u00f3ria remonta a 1943, completou 80 anos em 2023."
       }
     },
     "etag": null,
@@ -187,7 +407,7 @@
     }
   },
   "https://deliberabrasil.org/sobre/": {
-    "checked": "2026-08-13",
+    "checked": "2026-08-14",
     "content_hash": "7463aa298a7d3703f3c2e36ccc8e12b0f02ea4f7ebb2edd03e9c640eadb73f66",
     "contexts": {
       "7463aa298a7d3703f3c2e36ccc8e12b0f02ea4f7ebb2edd03e9c640eadb73f66": {
@@ -203,8 +423,25 @@
       "7463aa298a7d3703f3c2e36ccc8e12b0f02ea4f7ebb2edd03e9c640eadb73f66": true
     }
   },
+  "https://demnext.substack.com/p/looking-back-moving-forward-democracynexts": {
+    "checked": "2026-08-14",
+    "content_hash": "0d405ed57bb95e1e243501762120552180c526b1c37b97e7a9510821543a3fe3",
+    "contexts": {
+      "0d405ed57bb95e1e243501762120552180c526b1c37b97e7a9510821543a3fe3": {
+        "prefix": "ure Sep 15, 2025 3 1 Share",
+        "sha256": "0d405ed57bb95e1e243501762120552180c526b1c37b97e7a9510821543a3fe3",
+        "suffix": "Inside, you\u2019ll find: Inspiring stories from three flagship projects Insights into our evolving approach A t",
+        "text": "As we mark DemNext\u2019s third birthday, and the International Day of Democracy, we\u2019re thrilled to share our 2024 Impact Report."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "0d405ed57bb95e1e243501762120552180c526b1c37b97e7a9510821543a3fe3": true
+    }
+  },
   "https://democracy-technologies.org/participation/consensus-building-in-taiwan/": {
-    "checked": "2026-08-12",
+    "checked": "2026-08-15",
     "content_hash": "640700c8d55ff5c4c7db97b39b78ebafa5f3de60e5ef2550497d23e9973bfa0b",
     "contexts": {
       "8268a06cd26c208f2ff000a2f0f9954f57894ab78c1fecb71998e7e7b592eef1": {
@@ -214,14 +451,14 @@
         "text": "Taiwan is a world-leader in digital democracy. It all started with vTaiwan, an online participation platform powered by Polis. Launched in 2015, it has transformed how the government brings stakeholders together, allowing for a more inclusive approach to legislation.\u00c2"
       }
     },
-    "etag": "W/\"6a7a98b3-211f7\"",
-    "last_modified": "Tue, 11 Aug 2026 03:36:19 GMT",
+    "etag": "W/\"6a7fb95b-211f7\"",
+    "last_modified": "Sat, 15 Aug 2026 00:56:59 GMT",
     "verified": {
       "8268a06cd26c208f2ff000a2f0f9954f57894ab78c1fecb71998e7e7b592eef1": true
     }
   },
   "https://democracyincolour.org/about/": {
-    "checked": "2026-08-12",
+    "checked": "2026-08-15",
     "content_hash": "32dadf29e415818d14066f068f18e7f2bb2443683fdac35fbd9372223bd7f932",
     "contexts": {
       "97663fcf73415c375a71271789c017fae384cc2a567f080f6f5b79f4a250fb25": {
@@ -237,8 +474,92 @@
       "97663fcf73415c375a71271789c017fae384cc2a567f080f6f5b79f4a250fb25": true
     }
   },
+  "https://digidemlab.org/en/about/": {
+    "checked": "2026-08-14",
+    "content_hash": "e4877b3468c72c479a011f77f1c920735a7e56908c54f57bbd5462f5ae696925",
+    "contexts": {
+      "e4877b3468c72c479a011f77f1c920735a7e56908c54f57bbd5462f5ae696925": {
+        "prefix": "--> Work Services About Contact sv | en We are Digidem Lab",
+        "sha256": "e4877b3468c72c479a011f77f1c920735a7e56908c54f57bbd5462f5ae696925",
+        "suffix": "We study, test and offer internationally proven digital tools and methods for civic participation and create citizen-centred processes to re",
+        "text": "Digidem Lab is an independent democracy lab that supports neighbourhoods, municipalities and public institutions in conducting effective and inclusive citizen dialogues."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "e4877b3468c72c479a011f77f1c920735a7e56908c54f57bbd5462f5ae696925": true
+    }
+  },
+  "https://ec.europa.eu/newsroom/cc-demos/items/741221/en": {
+    "checked": "2026-08-14",
+    "content_hash": "94e44b79c1177089838a9a9aca33579c8c93455d486fd2c61f9902c0766dfa3a",
+    "contexts": {
+      "94e44b79c1177089838a9a9aca33579c8c93455d486fd2c61f9902c0766dfa3a": {
+        "prefix": "ative Democracy Archives Overview News DemocracyNext official launch",
+        "sha256": "94e44b79c1177089838a9a9aca33579c8c93455d486fd2c61f9902c0766dfa3a",
+        "suffix": "Date: 15/09/2022 permalink: Main URL About this event There is another democratic future bey",
+        "text": "Join the official launch of DemocracyNext on 15 September 2022, the International Day of Democracy."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "94e44b79c1177089838a9a9aca33579c8c93455d486fd2c61f9902c0766dfa3a": true
+    }
+  },
+  "https://en.idi.org.il/articles/47344": {
+    "checked": "2026-08-14",
+    "content_hash": "fcbbb057014883d9c3a3cb0cd3f5cbd605a7f1116c762f0deebf3148d2639d2c",
+    "contexts": {
+      "bc1f3b91500490bbbb7967dc30a839b3872e4910098ab9d8355ee99e481dc085": {
+        "prefix": "rbi Family Center for Public Opinion and Policy Research, presented President Isaac Herzog with the Israeli Democracy Index for 202 2 today (Sunday).",
+        "sha256": "fcbbb057014883d9c3a3cb0cd3f5cbd605a7f1116c762f0deebf3148d2639d2c",
+        "suffix": ", reveals a complex picture regarding the level of public trust in key institutions and officials, confidence in the country's civil service and the o",
+        "text": "Yohanan Plesner, President of the Israel Democracy Institute, and Prof. Tamar Hermann, Director of IDI's Viterbi Family Center for Public Opinion and Policy Research, presented President Isaac Herzog with the Israeli Democracy Index for 202 2 today (Sunday). The Democracy Index, IDI\u2019s annual flagship publication celebrating its twentieth anniversary, reveals a complex picture regarding the level of public trust in key institutions and officials, confidence in the country's civil service and the overall strength of Israeli democracy."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "bc1f3b91500490bbbb7967dc30a839b3872e4910098ab9d8355ee99e481dc085": true
+    }
+  },
+  "https://en.wikipedia.org/wiki/Anne_Twomey_(academic)": {
+    "checked": "2026-08-14",
+    "content_hash": "faa3b67b14e3c8becfdeda1bdd8cdd387ee26f0630abc5382ab3ad6d8947ee4e",
+    "contexts": {
+      "69de1f8457c4f21eece429c24535910ea14ce3f0393d51a8f4707607802b7a47": {
+        "prefix": "In 2019, Twomey was appointed to a New South Wales Government panel to examine the financial relationship between the state and federal governments.",
+        "sha256": "9120dd25150f8290e7347174b6c3cde0872112f51403ae57b70f6fe5ec29e20c",
+        "suffix": "== Honours and personal life == Twomey was appointed an Officer of the Order of Australia in the 2021 Queen's Birthday Honours, for \"distinguished"
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "69de1f8457c4f21eece429c24535910ea14ce3f0393d51a8f4707607802b7a47": true
+    }
+  },
+  "https://en.wikipedia.org/wiki/Anti-Corruption_Foundation": {
+    "checked": "2026-08-14",
+    "content_hash": "a8e4becb59b91507cdcd5157ce9c1438c7e39f1cd7b2fbcf51592cd2e1bfe4a3",
+    "contexts": {
+      "8465d8c1ab9f9c0d1b70c0a237982ebfc5b9c9e31e085894562107081965a17c": {
+        "prefix": "ns in which government structures will feel pressure, and creating a real alternative to the current power system. == History == === Creation ===",
+        "sha256": "a8e4becb59b91507cdcd5157ce9c1438c7e39f1cd7b2fbcf51592cd2e1bfe4a3",
+        "suffix": ". The Foundation was registered on 9 September 2011 (account No. 7714013315, OGRN 1117799018204). According to Vladimir Ashurkov, the founders of the",
+        "text": "=== Creation === FBK was founded by Alexei Navalny. The Foundation was registered on 9 September 2011 (account No. 7714013315, OGRN 1117799018204). According to Vladimir Ashurkov, the founders of the fund gained experience in public and transparent fundraising by organising financing for the RosPil project. A significant amount was collected through the Yandex.Money payment system, which provided financial support for the project for a year. In parallel, the founders of the fund are working on the idea of involving on a permanent basis professional lawyers and economists in the search for and suppression of corruption schemes in the public procurement system. The contractual basis will allow to get some guarantees, in contrast to the scheme for working with volunteers."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "8465d8c1ab9f9c0d1b70c0a237982ebfc5b9c9e31e085894562107081965a17c": true
+    }
+  },
   "https://en.wikipedia.org/wiki/Anti-austerity_movement_in_Spain": {
-    "checked": "2026-08-12",
+    "checked": "2026-08-15",
     "content_hash": "0504df7b59e8f81954f4f0fa76cdd9cf6aafa6bd55eeb3cc423698cbb0019424",
     "contexts": {
       "795652a925bdd8df979e18c0b90380d245f7ec9355567cb78a3d9e1aad2d8f58": {
@@ -253,35 +574,277 @@
       "795652a925bdd8df979e18c0b90380d245f7ec9355567cb78a3d9e1aad2d8f58": true
     }
   },
-  "https://en.wikipedia.org/wiki/Glen_Weyl": {
-    "checked": "2026-08-13",
-    "content_hash": "e30a7df50bb9d845fb9b2ec2ec30bcf228765789048ad46bc2823114e9708aed",
+  "https://en.wikipedia.org/wiki/Archon_Fung": {
+    "checked": "2026-08-14",
+    "content_hash": "5f0634fa93590b83783bf6dc7d916367486409066a940bcb0868a1c8a9c6473c",
     "contexts": {
-      "0bdaa9c2fd1fb2b871ecee89b5a53f12b7095f1599806252be7b5bec02bd325e": {
-        "prefix": "\" that blends economics and computer science in much the way that digital economists blend them at tech companies. == Selected bibliography == \u2ffb \u6578\u4f4d",
-        "sha256": "e30a7df50bb9d845fb9b2ec2ec30bcf228765789048ad46bc2823114e9708aed",
-        "suffix": "(Independently published, Apr 16, 2024, ISBN 979-8321247181), written with Audrey Tang and \u2ffb Community Radical Markets: Uprooting Capitalism and Demo",
-        "text": "== Selected bibliography == \u2ffb \u6578\u4f4d Plurality: The Future of Collaborative Technology and Democracy (Independently published, Apr 16, 2024, ISBN 979-8321247181), written with Audrey Tang and \u2ffb Community Radical Markets: Uprooting Capitalism and Democracy for a Just Society (Princeton University Press, May 15, 2018, ISBN 978-0691177502), written with Eric Posner"
+      "6374dcd3e0821688685025db3c86e9a671aba278a24ae88059089fb98ca50cd6": {
+        "prefix": "planning, public services, ecosystem management, transnational governance, and the role of technology within the area of transparency and governance.",
+        "sha256": "d5a8203b00fefab73593cf2f2cac6f20f8aaa7f7741d0e8ed97ef4a74dda5dbd",
+        "suffix": ", public deliberation, and collaborative public action. == Awards and honors == 1995 National Science Foundation Training Fellowship in Democratiza"
       }
     },
     "etag": null,
     "last_modified": null,
     "verified": {
-      "0bdaa9c2fd1fb2b871ecee89b5a53f12b7095f1599806252be7b5bec02bd325e": true
+      "6374dcd3e0821688685025db3c86e9a671aba278a24ae88059089fb98ca50cd6": true
     }
   },
-  "https://en.wikipedia.org/wiki/Loomio": {
-    "checked": "2026-08-12",
-    "content_hash": "c5179dd59ae3e7827cf7efaf7341dcbca9beac609363d12e9f5459dcfd319d04",
+  "https://en.wikipedia.org/wiki/Confederation_of_Indigenous_Nationalities_of_Ecuador": {
+    "checked": "2026-08-14",
+    "content_hash": "bede0c9bb305308c177c6beff314390e0e282a2d4a3f546adf2f43b66f574470",
+    "contexts": {
+      "77983da3c49cb0c7611de766862228cd96c65bf742baafb87c1f95d0c6358667": {
+        "prefix": "the following indigenous peoples: Shuar, Achuar, Siona, Secoya, Cof\u00e1n, Huaorani, Z\u00e1paro, Chachi, Ts\u00e1chila, Aw\u00e1, Epera, Manta, Wancavilca and Quichua.",
+        "sha256": "bede0c9bb305308c177c6beff314390e0e282a2d4a3f546adf2f43b66f574470",
+        "suffix": "from the union of two confederations of Indigenous nations: the Confederation of Indigenous Nationalities of the Ecuadorian Amazon (CONFENIAE) in the",
+        "text": "== Organization == CONAIE represents the following indigenous peoples: Shuar, Achuar, Siona, Secoya, Cof\u00e1n, Huaorani, Z\u00e1paro, Chachi, Ts\u00e1chila, Aw\u00e1, Epera, Manta, Wancavilca and Quichua. CONAIE was founded in 1986 from the union of two confederations of Indigenous nations: the Confederation of Indigenous Nationalities of the Ecuadorian Amazon (CONFENIAE) in the eastern Amazon region, and The Confederation of Peoples of Quichua Nationality (ECUARUNARI) in the central mountain region."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "77983da3c49cb0c7611de766862228cd96c65bf742baafb87c1f95d0c6358667": true
+    }
+  },
+  "https://en.wikipedia.org/wiki/Democracy_in_Europe_Movement_2025": {
+    "checked": "2026-08-14",
+    "content_hash": "d6bfbbbfe6bbbaca148728f8b4bc720a39af868e55e361a2f79670d0d0ab73d3",
+    "contexts": {
+      "5dbab3ad4ddc7385214478a7cd290b87e90462b80536e38e91d2fdf7a983319f": {
+        "prefix": "th the DiEM25 agenda and in May 2017 began discussing running on a shared ticket in the 2019 European Parliament election. From this alliance, DiEM25",
+        "sha256": "d6bfbbbfe6bbbaca148728f8b4bc720a39af868e55e361a2f79670d0d0ab73d3",
+        "suffix": "named European Spring which by 2019 was styling itself a transnational European political party list. On 25 November 2018, Varoufakis was chosen as a",
+        "text": "From its foundation, DiEM25 gathered affiliations from national political parties that agree with the DiEM25 agenda and in May 2017 began discussing running on a shared ticket in the 2019 European Parliament election. From this alliance, DiEM25 established an electoral list for the 2019 European Parliament elections named European Spring which by 2019 was styling itself a transnational European political party list. On 25 November 2018, Varoufakis was chosen as a Spitzenkandidat for DiEM25 in the 2019 European Parliament elections. However, DiEM25 did not elect any MEPs in 2019 and most affiliated parties ceased to exist, disaffiliated or did not stand in the subsequent 2024 European Parliament election. In these elections, DiEM25 supported MERA25 electoral lists in Germany and Greece, and the list Peace Land Dignity in Italy. Once again, none of them elected MEPs. Affiliated parties were the following:"
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "5dbab3ad4ddc7385214478a7cd290b87e90462b80536e38e91d2fdf7a983319f": true
+    }
+  },
+  "https://en.wikipedia.org/wiki/Electoral_Institute_for_Sustainable_Democracy_in_Africa": {
+    "checked": "2026-08-14",
+    "content_hash": "b601a97f171636b368326b522906f62741cb0b1c62813d67eae59f2ec5717ec6",
+    "contexts": {
+      "4d54266b0db9daa49fcd3496dce20af6b770b0889623486afd3da919ba781fe1": {
+        "prefix": "The Electoral Institute for Sustainable Democracy in Africa (former Electoral Institute of Southern Africa), or EISA, is an organization",
+        "sha256": "b601a97f171636b368326b522906f62741cb0b1c62813d67eae59f2ec5717ec6",
+        "suffix": "to \"promote credible elections, participatory democracy, human rights culture and the strengthening of governance institutions for the consolidation",
+        "text": "The Electoral Institute for Sustainable Democracy in Africa (former Electoral Institute of Southern Africa), or EISA, is an organization founded in 1996 in Johannesburg to \"promote credible elections, participatory democracy, human rights culture and the strengthening of governance institutions for the consolidation of democracy in Africa.\""
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "4d54266b0db9daa49fcd3496dce20af6b770b0889623486afd3da919ba781fe1": true
+    }
+  },
+  "https://en.wikipedia.org/wiki/Electoral_Reform_Society": {
+    "checked": "2026-08-14",
+    "content_hash": "cbe8c7fc95d0f199a131795297e81285b85cd57b36ee64cc52700335dd31df3a",
+    "contexts": {
+      "a6d0bbffcedb06353a2823950e29a8397d56e9512cc5bea89abe7db209d1952f": {
+        "prefix": "ndal as part of the Vote for a Change campaign. It is a founding member of the Votes at 16 Coalition. === AV referendum === The society was later a",
+        "sha256": "cbe8c7fc95d0f199a131795297e81285b85cd57b36ee64cc52700335dd31df3a",
+        "suffix": "in the unsuccessful bid for a Yes vote in the 2011 referendum on the Alternative Vote. Its chief executive, Katie Ghose, served as the campaign's cha",
+        "text": "=== AV referendum === The society was later a principal funder of the YES! To Fairer Votes campaign in the unsuccessful bid for a Yes vote in the 2011 referendum on the Alternative Vote. Its chief executive, Katie Ghose, served as the campaign's chair."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "a6d0bbffcedb06353a2823950e29a8397d56e9512cc5bea89abe7db209d1952f": true
+    }
+  },
+  "https://en.wikipedia.org/wiki/Flux_(political_party)": {
+    "checked": "2026-08-14",
+    "content_hash": "8165a6bf95538d2064e68a910d8e3ca43c3e24f012ce7342fb5eb90e6ef105c3",
+    "contexts": {
+      "b928b77f00aef5a573cab550ecf58b461e57e3b4d06415caadc078691a6c6ffa": {
+        "prefix": "ate effectively in issue-based direct democracy without having to focus on every issue as they would in a regular direct democracy. == Australia ==",
+        "sha256": "8165a6bf95538d2064e68a910d8e3ca43c3e24f012ce7342fb5eb90e6ef105c3",
+        "suffix": "in the Australian Capital Territory, Western Australia, Queensland and New South Wales. Flux was registered at a federal level from 2016, but it was",
+        "text": "== Australia == Flux parties were registered in the Australian Capital Territory, Western Australia, Queensland and New South Wales. Flux was registered at a federal level from 2016, but it was de-registered in 2022 for failing to meet the increased requirement of 1500 members."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "b928b77f00aef5a573cab550ecf58b461e57e3b4d06415caadc078691a6c6ffa": true
+    }
+  },
+  "https://en.wikipedia.org/wiki/G0v_movement": {
+    "checked": "2026-08-14",
+    "content_hash": "53374246d21b55f7ccc6e4609a414c26eec3b8ecd7b27b1c95301828dc27057d",
+    "contexts": {
+      "7e4edcc5b838f5762a3cf0c6cb59d89b4d3f7c0354f54277f42384c020d54509": {
+        "prefix": "ities are both online and offline, including hackathons, speeches, sharing sessions, teaching, conference, and other activities. As of 2020 there are",
+        "sha256": "53374246d21b55f7ccc6e4609a414c26eec3b8ecd7b27b1c95301828dc27057d",
+        "suffix": ". === g0v.tw projects === Prominent applications and widgets created by g0v include: MoeDict, a digital Chinese dictionary developed by Audrey Tang",
+        "text": "== Activities and projects == g0v community activities are both online and offline, including hackathons, speeches, sharing sessions, teaching, conference, and other activities. As of 2020 there are active g0v communities working on open government data in Taiwan and Hong Kong."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "7e4edcc5b838f5762a3cf0c6cb59d89b4d3f7c0354f54277f42384c020d54509": true
+    }
+  },
+  "https://en.wikipedia.org/wiki/Glen_Weyl": {
+    "checked": "2026-08-15",
+    "content_hash": "cb9d9567efbcfc4bf5c5701a8e41138767300cb996ee846cb569b2acc34da649",
     "contexts": {},
     "etag": null,
     "last_modified": null,
     "verified": {
-      "1867b25f67d2d190fc05f2945991005b5f1951c368dd5d1139e71efe37235e2a": false
+      "380a3016f7cfcdcaa42eb30d881988d9ccb5fb5daad7fef3e92c231e0a683d71": true
+    }
+  },
+  "https://en.wikipedia.org/wiki/Grattan_Institute": {
+    "checked": "2026-08-15",
+    "content_hash": "9189983139eed6d84a100fa2cc4139c3e3bb3bfe33d883ed8ca8dc5e99fc3023",
+    "contexts": {
+      "cb0df30b346a363776841fad5fcc35fb5166ea7284f7ad1eb60919d658f16c31": {
+        "prefix": "matching funding, along with support in kind from the University of Melbourne. Commitments followed soon after from BHP and National Australia Bank.",
+        "sha256": "480d865eda5ac756cc77e87a1ee6021e497f1e2b37be2b968d9b7db437afedab",
+        "suffix": ", Origin Energy Foundation, Third Link Growth Fund, Cuffe Family Foundation, Medibank Private, Trawalla Foundation, Wesfarmers, Maddocks, McKinsey & C"
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "cb0df30b346a363776841fad5fcc35fb5166ea7284f7ad1eb60919d658f16c31": true
+    }
+  },
+  "https://en.wikipedia.org/wiki/International_Institute_for_Democracy_and_Electoral_Assistance": {
+    "checked": "2026-08-14",
+    "content_hash": "978c70a7875350416aad6a887931799ccf0d9ee59881abf3f3fd23073043cdae",
+    "contexts": {
+      "1b645714318845edd96af9bbde238d503114f9eebff6727f3676d883119de171": {
+        "prefix": "effective interparty dialogue. And effective Party Assistance: to strengthen the alignment of approaches in party assistance. Democracy Assessment -",
+        "sha256": "8245a79d220abfdeda600970f53614178e6cb5816b299366d426d23b6dfe46df",
+        "suffix": "to analyze current trends and challenges impacting on democracy worldwide. The GSoD Initiative provides evidence-based analysis and data on the globa"
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "1b645714318845edd96af9bbde238d503114f9eebff6727f3676d883119de171": true
+    }
+  },
+  "https://en.wikipedia.org/wiki/Internet_Freedom_Foundation": {
+    "checked": "2026-08-14",
+    "content_hash": "b0ac90e077bb5d22fec3abcd191364eb933c56b85fef0eae3903c6b621de1f92",
+    "contexts": {
+      "73d0d56f1809f85f2243083c223810aa287041a2501782c0f3fb1b5eae434210": {
+        "prefix": "t Freedom Foundation (IFF) is an Indian digital rights advocacy organisation that defends against threats to civil liberties and democracy in India.",
+        "sha256": "b0ac90e077bb5d22fec3abcd191364eb933c56b85fef0eae3903c6b621de1f92",
+        "suffix": "\u2014 India's Independence Day, \u2014 it grounds its mission in the principles of the Constitution of India, reflecting its commitment to democratic rights a",
+        "text": "Internet Freedom Foundation (IFF) is an Indian digital rights advocacy organisation that defends against threats to civil liberties and democracy in India. Launched on 15 August 2016 \u2014 India's Independence Day, \u2014 it grounds its mission in the principles of the Constitution of India, reflecting its commitment to democratic rights and civic participation. IFF combines digital-first campaigning with policy advocacy. Its staff and volunteers run literacy projects such as online campaigns that inform citizens and engage government bodies about complex issues in technology policy. It conducts strategic litigation in matters of censorship, digital surveillance, and digital privacy. Based in New Delhi, it is led by Indian lawyer and founder director Apar Gupta."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "73d0d56f1809f85f2243083c223810aa287041a2501782c0f3fb1b5eae434210": true
+    }
+  },
+  "https://en.wikipedia.org/wiki/Jan_Fran": {
+    "checked": "2026-08-14",
+    "content_hash": "08aefbba23ff4851588f3b085380539ba1a37f3c73a2638d065190e3b4ce0da7",
+    "contexts": {},
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "153ad588fa9818219c7009d60b10c9f214383c370f7da7437157a3b9280dbfc2": false
+    }
+  },
+  "https://en.wikipedia.org/wiki/Kongra_Star": {
+    "checked": "2026-08-14",
+    "content_hash": "45536d40c4f30592bbaab66487fe215aeb8b22d4179f6c84babf948670bcd054",
+    "contexts": {
+      "a7f1e2a55c14fa4eae60947f93684afe46edb6b21fe2df692a3c5fda1fd01853": {
+        "prefix": "",
+        "sha256": "45536d40c4f30592bbaab66487fe215aeb8b22d4179f6c84babf948670bcd054",
+        "suffix": "under the name of Yek\u00eetiya Star (Kurdish for Star Union of Women), is a confederation of women's organizations in Rojava, Syria. The name Star \"refer",
+        "text": "Kongra Star (Kurdish for Star Congress), founded in 2005 under the name of Yek\u00eetiya Star (Kurdish for Star Union of Women), is a confederation of women's organizations in Rojava, Syria. The name Star \"refers to the ancient Mesopoamian goddess Ishtar, and nowadays the name also refers to celestial stars.\" They have been instrumental in the significant advances made in gender relations in the region. Its work is based on the claim that \"without the liberation of women, a truly free society is impossible.\" One of its founding members is \u00celham Ehmed, former co-chair of the Syrian Democratic Council."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "a7f1e2a55c14fa4eae60947f93684afe46edb6b21fe2df692a3c5fda1fd01853": true
+    }
+  },
+  "https://en.wikipedia.org/wiki/LiquidFeedback": {
+    "checked": "2026-08-14",
+    "content_hash": "286ec0e1662d402b723fe4054f381f338a07e6b44ee9f29bf6603c6743163776",
+    "contexts": {
+      "efe411c66ca31c2815d935d5c144e0bf43b1da4f3973190f4e5bd88a6eb876f0": {
+        "prefix": "egate votes. The countries mentioned in the paragraph above all have similar forms of Liquid Democracy that stem from the software of LiquidFeedback.",
+        "sha256": "2798857c629f8465921d614c57ca5256c36de8239853b5c18f309f472c77a799",
+        "suffix": "At the county's proposal, administrative procedures were established to seek input from citizens on pre-existing county council proposals. Subsequent"
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "efe411c66ca31c2815d935d5c144e0bf43b1da4f3973190f4e5bd88a6eb876f0": true
+    }
+  },
+  "https://en.wikipedia.org/wiki/Loomio": {
+    "checked": "2026-08-15",
+    "content_hash": "23880a28a900c902f72a25d6b879c04ad8846fbe6802b1acc46f9e19d79da787",
+    "contexts": {
+      "cf0f98f6eec3e01e343d8e25a7508335e772c5ef3a39d7d66becbf13b26d7125": {
+        "prefix": "and other enhancements. As of 2016, Loomio was used in more than 100 countries, with the software being translated into 35 languages. == History ==",
+        "sha256": "23880a28a900c902f72a25d6b879c04ad8846fbe6802b1acc46f9e19d79da787",
+        "suffix": "It was utilized in the Occupy movement in New Zealand. After using the first prototype in this, the team behind Loomio felt that it would be easier t",
+        "text": "== History == Loomio emerged from the Occupy movement. In 2012, it launched its first prototype. It was utilized in the Occupy movement in New Zealand. After using the first prototype in this, the team behind Loomio felt that it would be easier to give everyone a voice with an online software, leading to the launch of Loomio 1.0. Since the launch of Loomio 1.0, Loomio has stopped using occupy hand-signals in the interface. It has since been developed into a social enterprise as Loomio Cooperative Limited that is a platform cooperative."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "cf0f98f6eec3e01e343d8e25a7508335e772c5ef3a39d7d66becbf13b26d7125": true
+    }
+  },
+  "https://en.wikipedia.org/wiki/Make_It_16_(New_Zealand)": {
+    "checked": "2026-08-14",
+    "content_hash": "511c1d7cb1b58f564fa680c8734a2b8412ae53aa0bcde0b5bbbb85416ebc46aa",
+    "contexts": {
+      "98ff0622828044cdbed62020148a08aaa216313879c35a893d7611fcaf3f98ed": {
+        "prefix": "Te P\u0101ti M\u0101ori candidate Hana-Rawhiti Maipi-Clarke, Make It 16 co-director Thomas Brocherie, and Young Greens equity officer Johnny Bentley-Cribb The",
+        "sha256": "45ea23a861a056d62420869446187078c0e3913a7ed11ed8558cd6ade6c5e43f",
+        "suffix": "on 29 August during the last sitting week of the 53rd New Zealand Parliament prior to its dissolution before the 2023 New Zealand general election. T"
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "98ff0622828044cdbed62020148a08aaa216313879c35a893d7611fcaf3f98ed": true
+    }
+  },
+  "https://en.wikipedia.org/wiki/Memorial_(society)": {
+    "checked": "2026-08-14",
+    "content_hash": "21419ceb3d6880b1bf236a4ae15395650b9cf8f377bfcc575aac1a8605bf6d21",
+    "contexts": {
+      "a1c1f9fcea88d94f56c134ea19f5212f68bf38344f87d1bc6daf5d5abe0df3cf": {
+        "prefix": "ia. Memorial continues to operate in other countries, notably in Germany, where its oldest and largest non-Russian chapter is based. In October 2022,",
+        "sha256": "2bceac8047098b4e0a3d227ae0b3083a37493ecdbbc2f3a5f3a88c6e80b1b355",
+        "suffix": ", alongside Ukrainian human rights organisation Centre for Civil Liberties and Belarusian activist Ales Bialiatski, for their efforts in \"document[ing"
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "a1c1f9fcea88d94f56c134ea19f5212f68bf38344f87d1bc6daf5d5abe0df3cf": true
     }
   },
   "https://en.wikipedia.org/wiki/Meta-organization": {
-    "checked": "2026-08-12",
+    "checked": "2026-08-15",
     "content_hash": "e5219cbc361d6b75e77510b4bab7c4cf4919c75776b4d3ede9f04eb2936b5d11",
     "contexts": {
       "e41cf1d78553fd91acba54e621c20a54089a6ea2d47b2e421ef4d2595b2b4e58": {
@@ -294,6 +857,56 @@
     "last_modified": null,
     "verified": {
       "e41cf1d78553fd91acba54e621c20a54089a6ea2d47b2e421ef4d2595b2b4e58": true
+    }
+  },
+  "https://en.wikipedia.org/wiki/Movement_for_Quality_Government_in_Israel": {
+    "checked": "2026-08-14",
+    "content_hash": "507b7d338732081292fa6a7799d1279ae91b4a89037ee90266b2425ae23f0445",
+    "contexts": {
+      "31984a561fd54fc51412742ebb65d5366c9a335218c89cf590a2edca3ef0c7bd": {
+        "prefix": "omoting democracy, ethics and good governance in Israel. It is a regular and longstanding petitioner of the Supreme Court of Israel. The organisation",
+        "sha256": "1f30251bfa0badd56fb0cc4fef58229fa670d48ec063e331de8272be46c9dec6",
+        "suffix": ", initially as a protest movement during the coalition crisis. It created a yearly \"Knight of Quality Government\" award, with categories including exe"
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "31984a561fd54fc51412742ebb65d5366c9a335218c89cf590a2edca3ef0c7bd": true
+    }
+  },
+  "https://en.wikipedia.org/wiki/Movement_for_a_Democratic_Society": {
+    "checked": "2026-08-14",
+    "content_hash": "723407162fd857fad45f78285f40182125f7e4062780cce6fb8f02477a411989",
+    "contexts": {
+      "1052750b2d5233b820e34a7a2935b16b8aa9b557a609b29c0fa2989ef6248eef": {
+        "prefix": ": Tevgera Civaka Demokrat\u00eek, TEV-DEM; Arabic: \u062d\u0631\u0643\u0629 \u0627\u0644\u0645\u062c\u062a\u0645\u0639 \u0627\u0644\u062f\u064a\u0645\u0642\u0631\u0627\u0637\u064a; Classical Syriac: \u0719\u0718\u0725\u0710 \u0715\u071f\u0722\u072b\u0710 \u0715\u071d\u0721\u0729\u072a\u0710\u071b\u071d\u0710, romanized: Zaw'o d'Kensho Demoqra\u1e6doyo)",
+        "sha256": "723407162fd857fad45f78285f40182125f7e4062780cce6fb8f02477a411989",
+        "suffix": "with the goal of organizing Syrian society under a democratic confederalist system. TEV-DEM is currently chaired by co-chairs Zalal Jagar and Kharib",
+        "text": "The Movement for a Democratic Society (Kurdish: Tevgera Civaka Demokrat\u00eek, TEV-DEM; Arabic: \u062d\u0631\u0643\u0629 \u0627\u0644\u0645\u062c\u062a\u0645\u0639 \u0627\u0644\u062f\u064a\u0645\u0642\u0631\u0627\u0637\u064a; Classical Syriac: \u0719\u0718\u0725\u0710 \u0715\u071f\u0722\u072b\u0710 \u0715\u071d\u0721\u0729\u072a\u0710\u071b\u071d\u0710, romanized: Zaw'o d'Kensho Demoqra\u1e6doyo) is a left-wing umbrella organization in northern Syria founded on 16 January 2011 with the goal of organizing Syrian society under a democratic confederalist system. TEV-DEM is currently chaired by co-chairs Zalal Jagar and Kharib Heso."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "1052750b2d5233b820e34a7a2935b16b8aa9b557a609b29c0fa2989ef6248eef": true
+    }
+  },
+  "https://en.wikipedia.org/wiki/MySociety": {
+    "checked": "2026-08-14",
+    "content_hash": "9749101ffe8bccb692de8df6994c04cc4fcc93c3b3019b8ee954669921d0e034",
+    "contexts": {
+      "12e921bba88858d60049eea5ff5de7107661450cccafb027e4f4de125a271615": {
+        "prefix": "tools for UK citizens. However, those tools were open source, so that the code could be (and soon was) redeployed in other countries. == History ==",
+        "sha256": "9749101ffe8bccb692de8df6994c04cc4fcc93c3b3019b8ee954669921d0e034",
+        "suffix": ", and started activity after receiving a \u00a3250,000 grant in September 2004. Steinberg says that it was inspired by a collaboration with his then-flatma",
+        "text": "== History == mySociety was founded by Tom Steinberg in September 2003, and started activity after receiving a \u00a3250,000 grant in September 2004. Steinberg says that it was inspired by a collaboration with his then-flatmate James Crabtree which spawned Crabtree's article \"Civic hacking: a new agenda for e-democracy\". mySociety went on to simplify and internationalise its code and through the now dormant Poplus project, encouraged others to share open source code that would minimise the amount of duplication in civic tech coding. Like many non-profits, mySociety sustains itself with a mixture of grant funding and commercial work, providing software and development services to local government and other organisations. In March 2015, Steinberg announced his decision to stand down as executive director of mySociety. In July of that year, Mark Cridge became the organisation's new CEO."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "12e921bba88858d60049eea5ff5de7107661450cccafb027e4f4de125a271615": true
     }
   },
   "https://en.wikipedia.org/wiki/National_Citizens%27_Movement_for_Free_Elections": {
@@ -319,7 +932,7 @@
     }
   },
   "https://en.wikipedia.org/wiki/Occupy_Wall_Street": {
-    "checked": "2026-08-12",
+    "checked": "2026-08-15",
     "content_hash": "68b2e5a328236f23b0e34b6d94b821a66b8345307a7da6625af82fb59495a078",
     "contexts": {},
     "etag": null,
@@ -328,25 +941,86 @@
       "c6f60c8d72e63dc448c4073a16dc4d3fe8c84e685f19eda257ee38227c5b4a6b": true
     }
   },
-  "https://en.wikipedia.org/wiki/OpenAustralia_Foundation": {
-    "checked": "2026-08-12",
-    "content_hash": "17e022c6157463ba6a56fbbc7ad00dabc582ebfc5953c6ca9d6e69e1454030a1",
+  "https://en.wikipedia.org/wiki/OneVoice_Movement": {
+    "checked": "2026-08-14",
+    "content_hash": "866112edee37b40b4f5059d96c4c6f4bae03ed6cbdf58434d3f268781b115262",
     "contexts": {
-      "3c9c203d4bcf14372dc6f31d343c75ee3325e6e9120851df796f2d222260b18e": {
-        "prefix": "ows users to submit freedom of information (FOI) requests to government bodies under the Freedom of Information Act 1982. === They Vote For You ===",
-        "sha256": "17e022c6157463ba6a56fbbc7ad00dabc582ebfc5953c6ca9d6e69e1454030a1",
-        "suffix": ". It displays \"voting patterns by politician, when they vote against their own party, and offers descriptions of divisions in plain English\". It recei",
-        "text": "=== They Vote For You === They Vote For You, established in 2014, tracks the outcomes of all votes in the House of Representatives and Senate. It displays \"voting patterns by politician, when they vote against their own party, and offers descriptions of divisions in plain English\". It received start-up funding from Google."
+      "ea099608e4d1f572313ca46f4bc93668b0267893ce10bccc8faa878edf4686da": {
+        "prefix": "",
+        "sha256": "866112edee37b40b4f5059d96c4c6f4bae03ed6cbdf58434d3f268781b115262",
+        "suffix": ", a Mexican and American billionaire businessman and social entrepreneur who later founded KIND Healthy Snacks and Maiyet, a luxury fashion venture. I",
+        "text": "The OneVoice Movement was a 501c(3) non-profit organization with offices in New York City, Tel Aviv, Ramallah, and London, founded in 2002 by Daniel Lubetzky, a Mexican and American billionaire businessman and social entrepreneur who later founded KIND Healthy Snacks and Maiyet, a luxury fashion venture. It disbanded in 2025."
       }
     },
     "etag": null,
     "last_modified": null,
     "verified": {
-      "3c9c203d4bcf14372dc6f31d343c75ee3325e6e9120851df796f2d222260b18e": true
+      "ea099608e4d1f572313ca46f4bc93668b0267893ce10bccc8faa878edf4686da": true
+    }
+  },
+  "https://en.wikipedia.org/wiki/Online_Direct_Democracy": {
+    "checked": "2026-08-14",
+    "content_hash": "fc3e802edce98d7ca9ad9c24c3536c9c52ea3f00fa0574d3afe91fbda5344020",
+    "contexts": {
+      "2e50c03586481bd8a3839dc609d34660a99001f482b65ffae227ce729cef7619": {
+        "prefix": "",
+        "sha256": "fc3e802edce98d7ca9ad9c24c3536c9c52ea3f00fa0574d3afe91fbda5344020",
+        "suffix": "It was briefly named Climate Action! Immigration Action! Accountable Politicians! from January 2019 to September 2019, and had previously been known",
+        "text": "Online Direct Democracy \u2013 (Empowering the People!) was a registered Australian political party. It was briefly named Climate Action! Immigration Action! Accountable Politicians! from January 2019 to September 2019, and had previously been known as Senator Online. The party was de-registered in December 2020."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "2e50c03586481bd8a3839dc609d34660a99001f482b65ffae227ce729cef7619": true
+    }
+  },
+  "https://en.wikipedia.org/wiki/OpenAustralia_Foundation": {
+    "checked": "2026-08-15",
+    "content_hash": "df6c43f8a5954b8a82123a2fcc825c1ed484cbc32f217ece247f417c58dbdda2",
+    "contexts": {
+      "b331c6c90624e6e9566b403c4e321a76b461f4c320a527462d6f833dffcd7d8a": {
+        "prefix": "or You, a parliamentary informatics website. == Structure == OpenAustralia is a registered charity that operates as a company limited by guarantee.",
+        "sha256": "df6c43f8a5954b8a82123a2fcc825c1ed484cbc32f217ece247f417c58dbdda2",
+        "suffix": "== Projects == One of the foundation's earliest projects was Election Leaflets, a website established in the lead-up to the 2010 federal election t",
+        "text": "== Structure == OpenAustralia is a registered charity that operates as a company limited by guarantee. It was established in 2009, co-founded by Matthew Landauer and Katherine Szuminska."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "b331c6c90624e6e9566b403c4e321a76b461f4c320a527462d6f833dffcd7d8a": true
+    }
+  },
+  "https://en.wikipedia.org/wiki/Open_Society_Foundations": {
+    "checked": "2026-08-14",
+    "content_hash": "2d6fe1da0072a2ef92c05771c0f2c03888c05e63ef1ed706d819f7d064136b09",
+    "contexts": {
+      "d47b7696573fecb7b9b8dd82e90d9b38690483787b26cdd715e8273c75efac7c": {
+        "prefix": "Open Society Foundations (OSF), formerly the Open Society Institute,",
+        "sha256": "2d6fe1da0072a2ef92c05771c0f2c03888c05e63ef1ed706d819f7d064136b09",
+        "suffix": ". OSF financially supports progressive organizations. As of 2025, OSF has reported expenditures in excess of $24.2 billion since its establishment in",
+        "text": "Open Society Foundations (OSF), formerly the Open Society Institute, is an American grantmaking network founded by billionaire business magnate George Soros. OSF financially supports progressive organizations. As of 2025, OSF has reported expenditures in excess of $24.2 billion since its establishment in 1993. OSF has assets of over $23 billion, making it one of the world's largest foundations. It has offices in over a dozen countries. The New York Times described OSF as \"a sprawling political and philanthropic empire that seeks to advance a liberal, democratic agenda around the globe\"."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "d47b7696573fecb7b9b8dd82e90d9b38690483787b26cdd715e8273c75efac7c": true
+    }
+  },
+  "https://en.wikipedia.org/wiki/PORA": {
+    "checked": "2026-08-14",
+    "content_hash": "c635b01651af128d40f5cc58a566e9a0e4f3f751eca66ddb4dcf25945190cd12",
+    "contexts": {},
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "90fbeeffc031d64adb4b6d3421c559d9d27a75517d776f9c8b388ccc4a1ff147": false
     }
   },
   "https://en.wikipedia.org/wiki/People%27s_Solidarity_for_Participatory_Democracy": {
-    "checked": "2026-08-13",
+    "checked": "2026-08-14",
     "content_hash": "0ff2d8f901b699518ba73f0520217f13bc6f62013b9e829e074ba2acf779b10d",
     "contexts": {
       "c23ca1c5aa636d9bf4ab16368414fc797fb682c81bff7fc2ee1b8913e14310f1": {
@@ -362,8 +1036,140 @@
       "c23ca1c5aa636d9bf4ab16368414fc797fb682c81bff7fc2ee1b8913e14310f1": true
     }
   },
+  "https://en.wikipedia.org/wiki/Pol.is": {
+    "checked": "2026-08-14",
+    "content_hash": "c09979850fb1c134651d7c16d242e4707adf2163e21ff6b910c7e91852785436",
+    "contexts": {
+      "64049a89562a8859c8d7d48918d4ff843493e0205ed930beb778f22740ae5119": {
+        "prefix": "y == Pol.is was founded by Colin Megill, Christopher Small, and Michael Bjorkegren after the Occupy Wall Street and Arab Spring movements. In Taiwan,",
+        "sha256": "5e056bdd3320e54bd46066744c6516d114f2dbf737cda81d9df31ee7c5e07eaf",
+        "suffix": "'s suite of open-source tools for its citizen engagement efforts arising out of the Sunflower Student Movement. vTaiwan claims that of the 26 national"
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "64049a89562a8859c8d7d48918d4ff843493e0205ed930beb778f22740ae5119": true
+    }
+  },
+  "https://en.wikipedia.org/wiki/Referendum_Council": {
+    "checked": "2026-08-14",
+    "content_hash": "00425574072d4e370501489d674e0ef7b2f28452848e0194c15772cb527141ce",
+    "contexts": {
+      "109c86cd7e3b92090813776256ddd4ad4fa1a0cbb08839c4ede6ae3d837af1c6": {
+        "prefix": "guarantees of respect for the rights of Aboriginal and Torres Strait Islander Peoples. == Presentation to government and journey across country ==",
+        "sha256": "00425574072d4e370501489d674e0ef7b2f28452848e0194c15772cb527141ce",
+        "suffix": ". It included the Uluru Statement as a preface, and the essay Rom Watangu \u2013 The Law of the Land by Galarrwuy Yunupingu, in which he describes Rom wata",
+        "text": "== Presentation to government and journey across country == The Final Report of the Referendum Council was published on 30 June 2017, and sent to the Prime Minister, Malcolm Turnbull, and the leader of the opposition, Bill Shorten. It included the Uluru Statement as a preface, and the essay Rom Watangu \u2013 The Law of the Land by Galarrwuy Yunupingu, in which he describes Rom watangu as the overarching law of the land, which is \"lasting and alive... my backbone\". The 439 words of the Uluru Statement were printed onto a large canvas, surrounded by the signatures of participants, and afterwards decorated by Anangu law women. This official painted and signed canvas artwork was presented to the Prime Minister and the Leader of the Opposition on 5 August 2017, at the Garma Festival in north-east Arnhem Land in the Northern Territory. The Statement was also on display alongside musician John Butler at the Woodford Folk Festival in Queensland."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "109c86cd7e3b92090813776256ddd4ad4fa1a0cbb08839c4ede6ae3d837af1c6": true
+    }
+  },
+  "https://en.wikipedia.org/wiki/SITRA": {
+    "checked": "2026-08-14",
+    "content_hash": "a99db7a67f59fda03bbef3f18c151aef9c43c72507b29b08337487765eab3191",
+    "contexts": {
+      "596d57b7c10273488ccde41ae62afefebd76b2be0db734f867885f05edcfd311": {
+        "prefix": "mprove the level of education or research, or study future development scenarios\". Sitra functions both as a think tank and as an investment company.",
+        "sha256": "865af2677fb94943d56fa89c9abc2a53dfb4878534e5596a14ac4eea3c8712ca",
+        "suffix": ", on the country's 50th anniversary. However, most of the value of its current endowment comes from a donation of Nokia stock from the Finnish Parliam"
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "596d57b7c10273488ccde41ae62afefebd76b2be0db734f867885f05edcfd311": true
+    }
+  },
+  "https://en.wikipedia.org/wiki/Team_Mirai": {
+    "checked": "2026-08-14",
+    "content_hash": "165e17cd062ad5fc1c25dbca44c0b40f88c5e42bdcf539afcded2d49d16ef565",
+    "contexts": {
+      "fb281bf5289384439f3adcb6d7089f2ebadd7bb4b04cf2a981a51381f7f342ab": {
+        "prefix": "House of Councillors election, the party won its first seat in the Diet. In the subsequent 2026 Japanese general election, it made significant gains,",
+        "sha256": "165e17cd062ad5fc1c25dbca44c0b40f88c5e42bdcf539afcded2d49d16ef565",
+        "suffix": ". == History == === Origins: 2024 Tokyo Gubernatorial Election === The party traces its roots to \"Team Anno,\" a group of volunteers and engineers",
+        "text": "Team Mirai (Japanese: \u30c1\u30fc\u30e0\u307f\u3089\u3044; lit. 'Team Future') is a political party in Japan founded by AI engineer Takahiro Anno. The party supports E-democracy and has been described as technocratic. The party was established on 8 May 2025, evolving from \"Team Anno,\" which supported his candidacy in the 2024 Tokyo gubernatorial election. The party advocates for \"Digital Democracy\" and aims to implement technology to ensure \"no one is left behind.\" In the 2025 Japanese House of Councillors election, the party won its first seat in the Diet. In the subsequent 2026 Japanese general election, it made significant gains, securing 11 seats in the House of Representatives."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "fb281bf5289384439f3adcb6d7089f2ebadd7bb4b04cf2a981a51381f7f342ab": true
+    }
+  },
+  "https://en.wikipedia.org/wiki/Ushahidi": {
+    "checked": "2026-08-14",
+    "content_hash": "1e638114714b09a477bb5fbbf6ca756026f069f27e65e5c3a755ccedeea1f724",
+    "contexts": {
+      "3b13ce71d4df8c67de54e04e14c553a2d27598760c7d7d898e8bbbf6f1bb5e71": {
+        "prefix": "risis response, human rights reporting, and election monitoring. Ushahidi (Swahili for \"testimony\", closely related to shahidi which means \"witness\")",
+        "sha256": "31623fc2aa9b9238883d57b7ba53dfd0c146950b2385988ef17f4bc84efca2d1",
+        "suffix": "that collected eyewitness reports of violence reported by email and text message and placed them on a Google Maps interface. The Ushahidi platform ha"
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "3b13ce71d4df8c67de54e04e14c553a2d27598760c7d7d898e8bbbf6f1bb5e71": true
+    }
+  },
+  "https://en.wikipedia.org/wiki/Your_Party_(Japan)": {
+    "checked": "2026-08-14",
+    "content_hash": "0ddf94ee2c8744b9de5a441debec0f18394cf9d2da0392bb9dc6aac506fc6655",
+    "contexts": {
+      "7119e2602c6b658dcc60b51019a44b6582063ea3485d51f2a750b32e3461314b": {
+        "prefix": "rnal disagreement over the upcoming general election. == History == Led by Yoshimi Watanabe, who split from the Liberal Democratic Party (LDP), the",
+        "sha256": "60bc09d5383d1f24c0acc264c6133cebe24b6f601bb636ab7042a782076b203a",
+        "suffix": "after then-Prime Minister Taro Aso dissolved the lower house. One concept behind the party was to make the government more democratic, and to elimina"
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "7119e2602c6b658dcc60b51019a44b6582063ea3485d51f2a750b32e3461314b": true
+    }
+  },
+  "https://ethelo.com/case-study/engaged-california-program/": {
+    "checked": "2026-08-14",
+    "content_hash": "b8efbae53b2fe9ceb65d207d7ab5ecf22dc1244543fca0cd79514bbf18de1157",
+    "contexts": {
+      "541d0371f211c0e3a493f87a17814c5585cc2b5dc5fe01524b6d7c5408169b06": {
+        "prefix": "ponds and improves.\u201d \u2014 Governor Gavin Newsom Overview",
+        "sha256": "b8efbae53b2fe9ceb65d207d7ab5ecf22dc1244543fca0cd79514bbf18de1157",
+        "suffix": "Designed as a \u201cmodern town hall,\u201d the program brings Californians into structured, civil, and policy-relevant conversations on complex public challen",
+        "text": "Engaged California is a first-in-the-nation digital democracy initiative launched by the State of California to improve public engagement, rebuild trust, and integrate lived experience directly into government decision-making. Designed as a \u201cmodern town hall,\u201d the program brings Californians into structured, civil, and policy-relevant conversations on complex public challenges."
+      }
+    },
+    "etag": null,
+    "last_modified": "Fri, 07 Aug 2026 04:38:34 GMT",
+    "verified": {
+      "541d0371f211c0e3a493f87a17814c5585cc2b5dc5fe01524b6d7c5408169b06": true
+    }
+  },
+  "https://europeandemocracyhub.epd.eu/exploring-worldwide-democratic-innovations-taiwan/": {
+    "checked": "2026-08-14",
+    "content_hash": "67e9fe3e74d10ed92d44c34d19a38ccd92d4972e52ac5998a034d2fc368a49a9",
+    "contexts": {
+      "2a9827e95e461de39600b194bbad324ce207126c26f65c38215f074fbdc5a37b": {
+        "prefix": "and its website claims to have resulted in \u201cdecisive government action\u201d in 80 percent of cases. In 2015, a government-operated platform, JOIN,",
+        "sha256": "67e9fe3e74d10ed92d44c34d19a38ccd92d4972e52ac5998a034d2fc368a49a9",
+        "suffix": "If an initiative collects more than 5,000 endorsements, the relevant governmental agencies have to respond with a formal explanation. As of June 3, 2",
+        "text": "In 2015, a government-operated platform, JOIN, was launched under the sponsorship of the National Development Council. The website has made it possible for citizens to submit a policy proposal to the government via the Internet. If an initiative collects more than 5,000 endorsements, the relevant governmental agencies have to respond with a formal explanation. As of June 3, 2022, there have been 13,853 issues proposed on the platform, and 289 proposals met the threshold that automatically initiates a government response, while more seemingly frivolous suggestions, such as banning parsley, were automatically rejected."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "2a9827e95e461de39600b194bbad324ce207126c26f65c38215f074fbdc5a37b": true
+    }
+  },
   "https://events.humanitix.com/radicalxchange-foundation-in-melbourne": {
-    "checked": "2026-08-12",
+    "checked": "2026-08-14",
     "content_hash": "5760c293c05f53070e2c0ae9d9c0abbc13710775fe504090d59aaa4ed3ddff7f",
     "contexts": {
       "5760c293c05f53070e2c0ae9d9c0abbc13710775fe504090d59aaa4ed3ddff7f": {
@@ -380,7 +1186,7 @@
     }
   },
   "https://fidemocracy.org/europe-forum-2026-from-novel-to-normal": {
-    "checked": "2026-08-13",
+    "checked": "2026-08-14",
     "content_hash": "f3343c6735e33cdc41a2a0185b525177b24ab00900a6483d46160fded5167b80",
     "contexts": {
       "f3343c6735e33cdc41a2a0185b525177b24ab00900a6483d46160fded5167b80": {
@@ -390,7 +1196,7 @@
         "text": "A conference for practitioners, public officials, political parties, NGOs, and funders to move this field from the margins to the mainstream. To build the infrastructure, lift the standards, and create the political will to make it permanent."
       }
     },
-    "etag": "W/\"6d91f6d26f0a8dd8b7cd20670857b145\"",
+    "etag": "W/\"0485c2b1fb3294dd9c73e72ed28fa94d\"",
     "last_modified": null,
     "verified": {
       "f3343c6735e33cdc41a2a0185b525177b24ab00900a6483d46160fded5167b80": true
@@ -413,8 +1219,25 @@
       "abd88ce88d5b83a990787cd3dcfb9731a7b86c8fe28a242bfab09a6d93105bd7": true
     }
   },
+  "https://finance.yahoo.com/news/blockchain-voting-platform-horizon-state-140552054.html": {
+    "checked": "2026-08-14",
+    "content_hash": "d725a235edf5624ac75fe73fd63a5c3b77ca8ff9f4d45bda693544d7b8380af4",
+    "contexts": {
+      "e33500070d3cd016aa72397a9285fe078a23fc4125dd83f402bdeec91d5573d3": {
+        "prefix": "statement reads. The statement adds that the costs to challenge the case and a potential mediation process to reach a settlement would involve \"",
+        "sha256": "d725a235edf5624ac75fe73fd63a5c3b77ca8ff9f4d45bda693544d7b8380af4",
+        "suffix": ".\" Co-founded in 2017 by Jamie Skella and Nimo Naamani, Horizon State attempted to transform the voting process in Australia and New Zealand usi",
+        "text": "The statement adds that the costs to challenge the case and a potential mediation process to reach a settlement would involve \"an eye-watering expense [that] will see the business become insolvent, and ultimately force its closure.\""
+      }
+    },
+    "etag": "\"1y015n9\"",
+    "last_modified": null,
+    "verified": {
+      "e33500070d3cd016aa72397a9285fe078a23fc4125dd83f402bdeec91d5573d3": true
+    }
+  },
   "https://foro.org.co/quienes-somos/": {
-    "checked": "2026-08-13",
+    "checked": "2026-08-14",
     "content_hash": "041fee79860e8af0815e79054810b1433e1d9a8bf966b32f51428f40c4ebed6e",
     "contexts": {
       "ef1a5a97046e575f07466b0616270c5af87e6e2890cb2f5b6d40ea13a93cad00": {
@@ -431,58 +1254,367 @@
     }
   },
   "https://glenweyl.com/radicalxchange/": {
-    "checked": "2026-08-12",
-    "content_hash": "a010f2e8072c84a697d2cd73667f7a7b9d4436b8e6a29df63775be7e70d14445",
+    "checked": "2026-08-15",
+    "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "contexts": {},
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "a010f2e8072c84a697d2cd73667f7a7b9d4436b8e6a29df63775be7e70d14445": false
+    }
+  },
+  "https://grattan.edu.au/about-us/": {
+    "checked": "2026-08-15",
+    "content_hash": "eb7c25c9c2d08909da644cfb6642164eb1bdb700d3736b0fa61d89c90ff6a04d",
     "contexts": {
-      "a010f2e8072c84a697d2cd73667f7a7b9d4436b8e6a29df63775be7e70d14445": {
-        "prefix": "Foundation (RxC) is a global movement for next-generation political economies",
-        "sha256": "a010f2e8072c84a697d2cd73667f7a7b9d4436b8e6a29df63775be7e70d14445",
-        "suffix": "RxC connects people from all walks of life \u2013 ranging from social scientists and technologists to artists and activists. The movement is ever-ev",
-        "text": "Founded by economist Glen Weyl in 2018, the RadicalxChange Foundation is a 501(c)(3) nonprofit dedicated to advancing the RxC movement, to building community, and to education about democratic innovation."
+      "aecc0abaf726d33629e4bd2659cc2ce0802a41b849f9d5eae25ad496e3662069": {
+        "prefix": "We are independent, taking the side of the public interest rather than interest groups.",
+        "sha256": "eb7c25c9c2d08909da644cfb6642164eb1bdb700d3736b0fa61d89c90ff6a04d",
+        "suffix": "We are rigorous in obtaining the best evidence from our own data analysis and from published work. We are p",
+        "text": "We are independent, taking the side of the public interest rather than interest groups. We receive no ongoing government funding and reject commissioned work to ensure this independence."
       }
     },
     "etag": null,
     "last_modified": null,
     "verified": {
-      "a010f2e8072c84a697d2cd73667f7a7b9d4436b8e6a29df63775be7e70d14445": true
+      "aecc0abaf726d33629e4bd2659cc2ce0802a41b849f9d5eae25ad496e3662069": true
+    }
+  },
+  "https://grattan.edu.au/about/funding/": {
+    "checked": "2026-08-15",
+    "content_hash": "562e05a83ebfd7ad64f7df53f0b5926edf7b8e392516def97970f7fe17a6b9ee",
+    "contexts": {
+      "562e05a83ebfd7ad64f7df53f0b5926edf7b8e392516def97970f7fe17a6b9ee": {
+        "prefix": "t and by generous companies, philanthropic organisations, and individuals who support our public policy research.",
+        "sha256": "562e05a83ebfd7ad64f7df53f0b5926edf7b8e392516def97970f7fe17a6b9ee",
+        "suffix": "To safeguard our independence, Grattan Institute\u2019s board controls the endowment. The funds are invested, and Grattan uses the income to pursue",
+        "text": "Grattan began with a $15 million endowment from each of the Federal and Victorian Governments. In addition, BHP Billiton provided $4 million and the National Australia Bank $1 million."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "562e05a83ebfd7ad64f7df53f0b5926edf7b8e392516def97970f7fe17a6b9ee": true
+    }
+  },
+  "https://grattan.edu.au/appointment-of-danielle-wood-as-new-ceo-of-grattan-institute/": {
+    "checked": "2026-08-15",
+    "content_hash": "513b7fe16c1107e35b5a4c46161e86a4b8a68227cdba68a11322efcdce8b0e06",
+    "contexts": {
+      "513b7fe16c1107e35b5a4c46161e86a4b8a68227cdba68a11322efcdce8b0e06": {
+        "prefix": "as agreed to step into the CEO role at Grattan and continue the vital work that we have been doing over the last eleven years\u2019 said Mr Chernov.",
+        "sha256": "513b7fe16c1107e35b5a4c46161e86a4b8a68227cdba68a11322efcdce8b0e06",
+        "suffix": "Mr Chernov said that \u2018since John opened the doors in 2009, he has steered Grattan to become Australia\u2019s leading domestic policy think tank, and",
+        "text": "Grattan Institute\u2019s inaugural CEO, Prof John Daley, will be stepping down in July 2020."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "513b7fe16c1107e35b5a4c46161e86a4b8a68227cdba68a11322efcdce8b0e06": true
+    }
+  },
+  "https://grattan.edu.au/democracy-and-public-integrity/": {
+    "checked": "2026-08-15",
+    "content_hash": "9c2f0e547564db62e453758d34eb48f4656032245da9f74c56a81f13157e3a34",
+    "contexts": {
+      "9c2f0e547564db62e453758d34eb48f4656032245da9f74c56a81f13157e3a34": {
+        "prefix": "Our Experts Aruna Sathanapally",
+        "sha256": "9c2f0e547564db62e453758d34eb48f4656032245da9f74c56a81f13157e3a34",
+        "suffix": "Kate Griffiths Chief of Staff and Democracy Deputy Program Director",
+        "text": "CEO and Economic Prosperity and Democracy Program Director"
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "9c2f0e547564db62e453758d34eb48f4656032245da9f74c56a81f13157e3a34": true
+    }
+  },
+  "https://grattan.edu.au/grattan-institute-new-ceo/": {
+    "checked": "2026-08-15",
+    "content_hash": "abb1d9a048af96d4614e3e51343424336a17adc74477479f7c7fb91760114fc6",
+    "contexts": {
+      "acd3ad14dec4fecf95db4c6bdac1283a46ad8381dd92a5c36fe8d0e6499afb16": {
+        "prefix": "2024 Share Bluesky Streamline Icon: https://streamlinehq.com Bluesky",
+        "sha256": "abb1d9a048af96d4614e3e51343424336a17adc74477479f7c7fb91760114fc6",
+        "suffix": ". Dr Sathanapally is currently Executive Director, Macroeconomy, at the NSW Treasury, where she previously led the Revenue division, the NSW Int",
+        "text": "Aruna Sathanapally has been appointed CEO of Australia\u2019s leading public policy think tank, Grattan Institute."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "acd3ad14dec4fecf95db4c6bdac1283a46ad8381dd92a5c36fe8d0e6499afb16": true
+    }
+  },
+  "https://grattan.edu.au/news/improving-australias-democracy/": {
+    "checked": "2026-08-15",
+    "content_hash": "ae1de85cf692ad43df1256fb0228f0524375f1b3f6c85de922dcaf38e335910f",
+    "contexts": {
+      "386062a5f8ce019d1b4fd9ae64c79fb983fd58cb3af3432a84b13644af0c2599": {
+        "prefix": "at any single interest can hold over the national debate. These are important reforms, but substantial problems remain with the current design.",
+        "sha256": "ae1de85cf692ad43df1256fb0228f0524375f1b3f6c85de922dcaf38e335910f",
+        "suffix": "A loophole in the design of the donations cap also advantages major parties by allowing the cap to apply separately to each branch of a party.",
+        "text": "These are important reforms, but substantial problems remain with the current design. The total cap of $90 million for electoral expenditure by a political party is too high. And the per-seat cap of $800,000 is too low, advantaging incumbents over new entrants. A loophole in the design of the donations cap also advantages major parties by allowing the cap to apply separately to each branch of a party."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "386062a5f8ce019d1b4fd9ae64c79fb983fd58cb3af3432a84b13644af0c2599": true
+    }
+  },
+  "https://greens.org.au/about/our-story": {
+    "checked": "2026-08-15",
+    "content_hash": "b503af6cad0764b3976ec69dd84c2a2590ee3bcc16c5a0f1770ea572dd5ee12a",
+    "contexts": {
+      "4d3beb1af06ca1891de049c72e4249605adb82254e6d6eb0f9d10308217b7ec2": {
+        "prefix": "the name 'the Greens' in 1983. Western Australia, which fostered an earlier nuclear disarmament movement, had the first Green Senator in 1990.",
+        "sha256": "b503af6cad0764b3976ec69dd84c2a2590ee3bcc16c5a0f1770ea572dd5ee12a",
+        "suffix": ". Growing support The Greens movement quickly gained momentum. Everyday people were the victors when we successfully pushed for Denticare",
+        "text": "In 1992 Australia's state-based Greens parties joined together, fronting the press on 30 August to announce the new federal party, the Australian Greens."
+      }
+    },
+    "etag": "W/\"1786616823\"",
+    "last_modified": "Thu, 13 Aug 2026 10:27:03 GMT",
+    "verified": {
+      "4d3beb1af06ca1891de049c72e4249605adb82254e6d6eb0f9d10308217b7ec2": true
+    }
+  },
+  "https://greens.org.au/act/news/greens-push-truth-electoral-advertising": {
+    "checked": "2026-08-15",
+    "content_hash": "0e19dc901d20b08c74e49aac16e3e1ac042c2c162278a540a1cb3739be8875ef",
+    "contexts": {
+      "c77e196842107a6968cb95e2cdaf4a88a3b47ab5dfa9c274095c1f6101554ce8": {
+        "prefix": "o-vote cards are banned under existing law. However, the ACT Greens would like to see laws around protecting our democratic integrity expanded.",
+        "sha256": "0e19dc901d20b08c74e49aac16e3e1ac042c2c162278a540a1cb3739be8875ef",
+        "suffix": ". South Australia is currently the only jurisdiction in Australia with truth in political advertising laws. Similar laws were also proposed in Q",
+        "text": "However, the ACT Greens would like to see laws around protecting our democratic integrity expanded. The Greens are proposing to amend the Electoral Act to include provisions similar to those that exist in South Australia that makes it illegal to disseminate political material or advertising that is factually incorrect during the election period."
+      }
+    },
+    "etag": "W/\"1786765096\"",
+    "last_modified": "Sat, 15 Aug 2026 03:38:16 GMT",
+    "verified": {
+      "c77e196842107a6968cb95e2cdaf4a88a3b47ab5dfa9c274095c1f6101554ce8": true
+    }
+  },
+  "https://greens.org.au/news/media-release/greens-legislation-would-ban-dirty-donations-aec-data-reveals-major-parties": {
+    "checked": "2026-08-15",
+    "content_hash": "c88a37cc61097963ebb3f8351ee972256062af965c51794633b229f2b8a430fd",
+    "contexts": {
+      "644f2aa1f0e0baa252889b9f256a46ca2c157e2d831759314712bd5501c5d393": {
+        "prefix": "g \u2014 they\u2019re pulling the strings from behind the scenes. \u201cThis Bill would finally clean up politics by putting a stop to dirty donations. \u201c",
+        "sha256": "c88a37cc61097963ebb3f8351ee972256062af965c51794633b229f2b8a430fd",
+        "suffix": "to gut last year\u2019s electoral reforms.\u201d \u2014end\u2014 Facebook for the Aus",
+        "text": "\u201cIt will cap donations at $3,000 per term, finishing the job abandoned when Labor and the Liberals cut a backroom deal to gut last year\u2019s electoral reforms.\u201d"
+      }
+    },
+    "etag": "W/\"1786768373\"",
+    "last_modified": "Sat, 15 Aug 2026 04:32:53 GMT",
+    "verified": {
+      "644f2aa1f0e0baa252889b9f256a46ca2c157e2d831759314712bd5501c5d393": true
+    }
+  },
+  "https://greens.org.au/news/media-release/nacc-bill-passes-senate-historic-vote-critical-greens-amends-integrity": {
+    "checked": "2026-08-15",
+    "content_hash": "951a88c3c586ea7896ba19abf94b4c93d104ebca58566ef33dc93d6ef775f6f8",
+    "contexts": {
+      "72e590445972cb6d29f1f197c7bfc92aa3bd064eb941e6a27ea3feb5c266d0c9": {
+        "prefix": "e National Anti-Corruption Bill has passed the Senate with broad cross party support and critical Greens amendments that protect its integrity.",
+        "sha256": "951a88c3c586ea7896ba19abf94b4c93d104ebca58566ef33dc93d6ef775f6f8",
+        "suffix": ". In a missed opportunity to further future-proof the NACC, a series of further crossbench amendments to remove the extraordinary circumstances",
+        "text": "Greens amendments to the NACC bill give significant additional powers to the Inspector of the Commission to provide real time auditing and monitoring of the NACC\u2019s workings and to guard against potential overreach and maladministration."
+      }
+    },
+    "etag": "W/\"1786798308\"",
+    "last_modified": "Sat, 15 Aug 2026 12:51:48 GMT",
+    "verified": {
+      "72e590445972cb6d29f1f197c7bfc92aa3bd064eb941e6a27ea3feb5c266d0c9": true
+    }
+  },
+  "https://ia.acs.org.au/article/2018/blockchain-to-revolutionise-e-voting.html": {
+    "checked": "2026-08-14",
+    "content_hash": "23469086d0ee48bd6b95906310cdafbfc621a0236b945ba611631b213dcaa03b",
+    "contexts": {
+      "3c37246d83e4a5392f7029ce3447911a6476b8a1d604e07af291b08c9ddd7a44": {
+        "prefix": "be overcome. By David Braue on Feb 12 2018 03:26 PM Print article Tweet",
+        "sha256": "23469086d0ee48bd6b95906310cdafbfc621a0236b945ba611631b213dcaa03b",
+        "suffix": ". Yet, despite the technology\u2019s promise, it could be years before it\u2019s adopted by an electronic voting industry that has struggled to build and",
+        "text": "A deal with Silicon Valley start-up Swarm Fund is a big win for an Australian firm working to revolutionise the democratic process using blockchain."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "3c37246d83e4a5392f7029ce3447911a6476b8a1d604e07af291b08c9ddd7a44": true
+    }
+  },
+  "https://icodrops.com/horizon-state/": {
+    "checked": "2026-08-14",
+    "content_hash": "60406e970fc249b1410e6a987d4e6124ef5a96109736d68a9869637ef8ca7f8c",
+    "contexts": {
+      "5c904e38e564b0a8d4b47db5ea418a77edc2218ccd005230848e07696e83ee9d": {
+        "prefix": "ties Past TGE and Distribution Launched Presumably on Q4, 2017",
+        "sha256": "60406e970fc249b1410e6a987d4e6124ef5a96109736d68a9869637ef8ca7f8c",
+        "suffix": "at 20:44 (UTC+3). Main Sale Ended Oct 30, 2017 Price $0.085 Raised $876 K",
+        "text": "The TGE (Token Generation Event) announced by Horizon State has successfully concluded on Nov 19, 2017 at 20:44 (UTC+3)."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "5c904e38e564b0a8d4b47db5ea418a77edc2218ccd005230848e07696e83ee9d": true
+    }
+  },
+  "https://itsrio.org/pt/institucional/": {
+    "checked": "2026-08-14",
+    "content_hash": "52f7276be505083b1d718ab4903da440faa4bfb4e0ebd92756a6580cd5f197c7",
+    "contexts": {},
+    "etag": null,
+    "last_modified": "Fri, 14 Aug 2026 02:08:49 GMT",
+    "verified": {
+      "b303350a68e27c8c5e02403b8b711a3241802bbd3513f0cb1f0e8f3a29071435": false
+    }
+  },
+  "https://liqd.net/en/projects/meinberlin/": {
+    "checked": "2026-08-14",
+    "content_hash": "b5fd40a2d4d8c76c1d10484b84b69769d4c016b3e95c3bc2849e358c46f05efb",
+    "contexts": {
+      "d79bebd8c21cdc6eddc92497100a1bd98a058456b16636fe36b373c075836576": {
+        "prefix": "year: since 2014 users: ca. 45.000 partners: Regierender B\u00fcrgermeister von Berlin - Senatskanzlei",
+        "sha256": "b5fd40a2d4d8c76c1d10484b84b69769d4c016b3e95c3bc2849e358c46f05efb",
+        "suffix": "The platform is the first point of contact for all digital participation offerings in the capital that emanate from politics and administration. Its",
+        "text": "One of our most ambitious projects is the development of meinBerlin, a central participation platform for Berlin's citizens. The platform is the first point of contact for all digital participation offerings in the capital that emanate from politics and administration. Its aim is to bundle all possible participation procedures - both at state and district level - in one place and thus make them easy for citizens to find and access. At the same time, myBerlin enables administrative staff to obtain citizen feedback on their projects with little effort and at no additional cost."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "d79bebd8c21cdc6eddc92497100a1bd98a058456b16636fe36b373c075836576": true
+    }
+  },
+  "https://liqd.net/en/transparenz/": {
+    "checked": "2026-08-14",
+    "content_hash": "d57608b88e2c6d9b5e113c0a7fc1b6873cd230617a0f64c41e7251c0f114ae0f",
+    "contexts": {
+      "d57608b88e2c6d9b5e113c0a7fc1b6873cd230617a0f64c41e7251c0f114ae0f": {
+        "prefix": "Anfragen zum Thema Transparenz und Finanzen zust\u00e4ndige Person: Moritz Ritter m.ritter@liqd.net Tel.: +49 30-62933553-7",
+        "sha256": "d57608b88e2c6d9b5e113c0a7fc1b6873cd230617a0f64c41e7251c0f114ae0f",
+        "suffix": "Ust-IdNr. DE281288811 Gr\u00fcndungsjahr: 2009 2 / Satzung Unsere Satzung inklusive des Vereinszwecks kann unter Sa",
+        "text": "Liquid Democracy e.V. ist im Vereinsregister des Amtsgerichtes Charlottenburg (Berlin) unter der VR-Nummer 28939 B eingetragen. Der Liquid Democracy e.V. ist ein gemeinn\u00fctziger Verein."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "d57608b88e2c6d9b5e113c0a7fc1b6873cd230617a0f64c41e7251c0f114ae0f": true
+    }
+  },
+  "https://mckinnon.co/about-us": {
+    "checked": "2026-08-15",
+    "content_hash": "f9a63121fe8480f53da154817ff9a11ca0384c4eef56d541da1bfbf68d5d6193",
+    "contexts": {
+      "a2ca2c617bccda3262bf256be647677dcd63460cb09c10ebad8ecf9cbfafb8d4": {
+        "prefix": "our vision a bold new chapter in our story McKinnon (previously",
+        "sha256": "f9a63121fe8480f53da154817ff9a11ca0384c4eef56d541da1bfbf68d5d6193",
+        "suffix": ". Our new name signals a renewed commitment to empower better governments for a stronger Australia. This mission was inspired by Grant\u2019s mother, who i",
+        "text": "McKinnon (previously known as the Susan McKinnon Foundation) was established in 2015 by Sophie Oh and Grant Rule. Our new name signals a renewed commitment to empower better governments for a stronger Australia. This mission was inspired by Grant\u2019s mother, who instils the values of service and positive contribution in those around her."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "a2ca2c617bccda3262bf256be647677dcd63460cb09c10ebad8ecf9cbfafb8d4": true
+    }
+  },
+  "https://mckinnon.co/leadership/mckinnon-prize": {
+    "checked": "2026-08-15",
+    "content_hash": "f8e3a0bf0db2e9b5e79a9eec2b75a24be7596e1d23eb03125595973bd15711c0",
+    "contexts": {
+      "c5a619c71cb4b90253d6e7c90d6fe6cb86a68e3a4d0410ae04a993e4706a0560": {
+        "prefix": "\u00a9 McKinnon 2026 | All rights reserved Privacy Policy MCKINNON PRIZE",
+        "sha256": "f8e3a0bf0db2e9b5e79a9eec2b75a24be7596e1d23eb03125595973bd15711c0",
+        "suffix": "It seeks to recognise leaders, encourage national discussion and inspire others to pursue courageous and visionary political leadership.",
+        "text": "The prize is Australia's only independent, non-partisan award for outstanding political leadership. It seeks to recognise leaders, encourage national discussion and inspire others to pursue courageous and visionary political leadership."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "c5a619c71cb4b90253d6e7c90d6fe6cb86a68e3a4d0410ae04a993e4706a0560": true
+    }
+  },
+  "https://memo98.sk/about-us": {
+    "checked": "2026-08-14",
+    "content_hash": "9ae71de58d33f30dbd3c5e1e9bfdbb3b7d159d98c14b143a55e5b1cf14bb3c38",
+    "contexts": {
+      "099a8923b40dfb5fad557d79e1391393e3b4ff509b7af8f9f90ced88a95f994d": {
+        "prefix": "raditional and social media) and on professional assessments of the media environment and its challenges (such as disinformation). In addition,",
+        "sha256": "9ae71de58d33f30dbd3c5e1e9bfdbb3b7d159d98c14b143a55e5b1cf14bb3c38",
+        "suffix": ", in five continents, from the United States (West), through Iceland (North), Tanzania (South) tothe Philippines (East).",
+        "text": "In addition, between 1999 (Ukraine) to these days (Kosovo, Philippines) MEMO 98 experts have participated in more than 130 election observation missions, in five continents, from the United States (West), through Iceland (North), Tanzania (South) tothe Philippines (East)."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "099a8923b40dfb5fad557d79e1391393e3b4ff509b7af8f9f90ced88a95f994d": true
     }
   },
   "https://mosaiclab.com.au/case-study-1-participatory-budgeting": {
-    "checked": "2026-08-13",
-    "content_hash": "47de2cc4d34de8eb40d4e9f24d5f89c959290350b1cb97b15d0c8723d4a6a223",
+    "checked": "2026-08-14",
+    "content_hash": "b490089bd0b75e5027d5f1aeae3abb6318135582df1c72878b7c5e3710959b3c",
     "contexts": {
       "272fc84b35520d5b80f1ff15fd2a6cd658739ab643f5f2c3e2b5aee4550f4b73": {
         "prefix": "n preparing its first 10-year financial plan, the City of Melbourne decided to seek the advice of its community by way of a 43 member People\u2019s Panel.",
-        "sha256": "47de2cc4d34de8eb40d4e9f24d5f89c959290350b1cb97b15d0c8723d4a6a223",
-        "suffix": ", and included business and residential participants. The process The Panel met ove",
-        "text": "In preparing its first 10-year financial plan, the City of Melbourne decided to seek the advice of its community by way of a 43 member People\u2019s Panel. The panel was a random stratified (to match the demographics of the city) selection of people that was recruited by the newDemocracy Foundation , and included business and residential participants."
+        "sha256": "b490089bd0b75e5027d5f1aeae3abb6318135582df1c72878b7c5e3710959b3c",
+        "suffix": ", and included business and residential participants. The process The Panel met over",
+        "text": "In preparing its first 10-year financial plan, the City of Melbourne decided to seek the advice of its community by way of a 43 member People\u2019s Panel. The panel was a random stratified (to match the demographics of the city) selection of people that was recruited by the newDemocracy Foundation, and included business and residential participants."
       }
     },
-    "etag": "W/\"0778222ad231cd86a8ddf2feccd04c84--gzip\"",
+    "etag": "W/\"476b78d26f8be61178902bd60af5ef5f\"",
     "last_modified": null,
     "verified": {
       "272fc84b35520d5b80f1ff15fd2a6cd658739ab643f5f2c3e2b5aee4550f4b73": true
     }
   },
   "https://mosaiclab.com.au/contributions-to-the-field": {
-    "checked": "2026-08-13",
-    "content_hash": "15a6e3514340d9c60f2a4f982feb811f88d8b6e0b2e35d54dc6f484d2bd96580",
+    "checked": "2026-08-14",
+    "content_hash": "98650b60d2222e7293793b727a121e74209c78ece3ccc6b73881cb8f6d0ea937",
     "contexts": {
       "d30b31381c021157f32d4c09c70a60bed94ebdc10c5ffe6302a3375d7f58b233": {
         "prefix": "l thinking exercises, with a particular focus on participants\u2019 ability to effectively interrogate experts. We\u2019re very pleased to announce that,",
-        "sha256": "15a6e3514340d9c60f2a4f982feb811f88d8b6e0b2e35d54dc6f484d2bd96580",
+        "sha256": "98650b60d2222e7293793b727a121e74209c78ece3ccc6b73881cb8f6d0ea937",
         "suffix": ". We feel very honoured to have had this exciting work recognised in this way. To celebrate, we\u2019re providing everyone with all the free digital",
-        "text": "We\u2019re very pleased to announce that, we were awarded the IAP2 Australasia Core Values Award for Research in 2018 . We feel very honoured to have had this exciting work recognised in this way."
+        "text": "We\u2019re very pleased to announce that, we were awarded the IAP2 Australasia Core Values Award for Research in 2018. We feel very honoured to have had this exciting work recognised in this way."
       }
     },
-    "etag": "W/\"a16e368a574c842f182410a6213c065b--gzip\"",
+    "etag": "W/\"09323c32330fab5a236576b975e55238\"",
     "last_modified": null,
     "verified": {
       "d30b31381c021157f32d4c09c70a60bed94ebdc10c5ffe6302a3375d7f58b233": true
     }
   },
+  "https://mosaiclab.com.au/news-all-posts/2016/8/16/meet-a-co-founder-kimbra-white": {
+    "checked": "2026-08-15",
+    "content_hash": "fde90594c4e849be608a2cd2a75548c667224c53677e139241ef828d13cacf14",
+    "contexts": {
+      "6d0107d03961bf9c85d61a0729b7654f779e719eda72bd637b6b275890a3d592": {
+        "prefix": "ting conversations that matter and believes that every meeting can always be a better meeting. FOR KIMBRA, MOSAICLAB IS IMPORTANT BECAUSE",
+        "sha256": "fde90594c4e849be608a2cd2a75548c667224c53677e139241ef828d13cacf14",
+        "suffix": "She believes that these learnings should be shared with others, ultimately contributing to quality and meaningful engagement becoming the norm in the",
+        "text": "Kimbra co-founded MosaicLab in 2013 and sees the group as a platform for continuous learning about participation. She believes that these learnings should be shared with others, ultimately contributing to quality and meaningful engagement becoming the norm in the way that decisions are made."
+      }
+    },
+    "etag": "W/\"2a8781b8f1bf8db1ebf5ee401e6b3a97--gzip\"",
+    "last_modified": null,
+    "verified": {
+      "6d0107d03961bf9c85d61a0729b7654f779e719eda72bd637b6b275890a3d592": true
+    }
+  },
   "https://mosaiclab.com.au/nicole-hunter": {
-    "checked": "2026-08-13",
+    "checked": "2026-08-14",
     "content_hash": "ff9d85661b80da6f039c286280f1a2a95e60c493584568c026e730fc788e8332",
     "contexts": {
       "d410460b6473e7c213f9044e79b05d5451f0b0ea431bf65537048e7894506253": {
@@ -492,38 +1624,55 @@
         "text": "Nicole co-founded MosaicLab (with Keith Greaves and Kimbra White) in 2017 because she is passionate about genuine democracy and developing and delivering robust engagement processes."
       }
     },
-    "etag": "W/\"eb0ea73dd5d531f2041ab231139fcb3f\"",
+    "etag": "W/\"3784b592ac72106fb1dff97930f5c64a\"",
     "last_modified": null,
     "verified": {
       "d410460b6473e7c213f9044e79b05d5451f0b0ea431bf65537048e7894506253": true
     }
   },
   "https://mosaiclab.com.au/the-big-book": {
-    "checked": "2026-08-13",
+    "checked": "2026-08-14",
     "content_hash": "e405e7355a44918a2e4e5482b77a7d955573520fa1a5ab24c19cdafea271f29e",
     "contexts": {
       "db84e2207fad582f7b14ddd8b2089764efe415a4478ed5c9b63266800412e00f": {
-        "prefix": "bra White , Nicole Hunter and Keith Greaves as they take you behind the scenes of a public deliberation in this comprehensive, practical guide.",
+        "prefix": "mbra White, Nicole Hunter and Keith Greaves as they take you behind the scenes of a public deliberation in this comprehensive, practical guide.",
         "sha256": "e405e7355a44918a2e4e5482b77a7d955573520fa1a5ab24c19cdafea271f29e",
         "suffix": "and step-by-step advice. This book is for facilitators, changemakers, engagement professionals, decision makers - anyone looking to solve compl",
         "text": "Drawn from the authors\u2019 experience delivering 39 deliberative engagement processes, the book is full of insider secrets, authentic lessons learned and step-by-step advice."
       }
     },
-    "etag": "W/\"8658be579ab1bd25ed92ffc4c31896ff\"",
+    "etag": "W/\"9fe61ccde92c62e5a25dbe550cfc830e--gzip\"",
     "last_modified": null,
     "verified": {
       "db84e2207fad582f7b14ddd8b2089764efe415a4478ed5c9b63266800412e00f": true
     }
   },
+  "https://newvote.org/the-institute": {
+    "checked": "2026-08-14",
+    "content_hash": "a338ad43ab969dd62edbc78cb4034fbdc6706567697c2e5f33fd1b717514b0dd",
+    "contexts": {
+      "b35cb545be320c9010dd6960da99a334f68b1a7029ef88ed5399780127231fcb": {
+        "prefix": ", we can help you. Our vision is to see communities and governments address issues, implement solutions and take actions in an agile way.",
+        "sha256": "a338ad43ab969dd62edbc78cb4034fbdc6706567697c2e5f33fd1b717514b0dd",
+        "suffix": "Many other communities are also following suit.",
+        "text": "The University of Queensland Student Union is piloting and promoting the app with its 52,000 students, starting on 24 July 2019. Many other communities are also following suit."
+      }
+    },
+    "etag": "W/\"6c687aea28dc4ff447919eb4bfea95fc--gzip\"",
+    "last_modified": null,
+    "verified": {
+      "b35cb545be320c9010dd6960da99a334f68b1a7029ef88ed5399780127231fcb": true
+    }
+  },
   "https://oaf.org.au/2009/07/07/announcing-the-openaustralia-foundation/": {
-    "checked": "2026-08-13",
-    "content_hash": "64be6754d59dfcdf923568360eab88be30862c30bc6462136b69d12e927b2707",
+    "checked": "2026-08-14",
+    "content_hash": "b9356b9568741260b2367c820d6d7d5ac795e307d5112ba520398618194656df",
     "contexts": {
       "d41b7486e698b6e2534cc87c9f03ded6aa77bc4bf878892def4cf010f696ef6a": {
-        "prefix": "n expected. But finally\u2026 Today is a happy day Because today we heard from our lawyer (the ever helpful Stephanie Barnes at Deacons ) that",
-        "sha256": "64be6754d59dfcdf923568360eab88be30862c30bc6462136b69d12e927b2707",
+        "prefix": "an expected. But finally\u2026 Today is a happy day Because today we heard from our lawyer (the ever helpful Stephanie Barnes at Deacons) that",
+        "sha256": "b9356b9568741260b2367c820d6d7d5ac795e307d5112ba520398618194656df",
         "suffix": "The next step: applying to the tax office to get endorsement as an income exempt charity and also importantly apply for deductible gift recipie",
-        "text": "Because today we heard from our lawyer (the ever helpful Stephanie Barnes at Deacons ) that OpenAustralia Foundation Limited is officially incorporated as a company limited by guarantee."
+        "text": "Because today we heard from our lawyer (the ever helpful Stephanie Barnes at Deacons) that OpenAustralia Foundation Limited is officially incorporated as a company limited by guarantee."
       }
     },
     "etag": null,
@@ -533,11 +1682,11 @@
     }
   },
   "https://oaf.org.au/2009/12/21/launching-our-new-website-planning-alerts/": {
-    "checked": "2026-08-13",
+    "checked": "2026-08-14",
     "content_hash": "23b301288596e31a592686706ca160feed6746546b7a670afa1789a38657fd7b",
     "contexts": {
       "23b301288596e31a592686706ca160feed6746546b7a670afa1789a38657fd7b": {
-        "prefix": "Blog People Contact Donate Announcement , PlanningAlerts.org.au",
+        "prefix": "Blog People Contact Donate Announcement, PlanningAlerts.org.au",
         "sha256": "23b301288596e31a592686706ca160feed6746546b7a670afa1789a38657fd7b",
         "suffix": "Matthew Landauer You might have noticed we\u2019ve been fairly quiet of late. Well, that\u2019s because we\u2019ve been",
         "text": "21 December 2009 Launching our new website: Planning Alerts"
@@ -550,14 +1699,14 @@
     }
   },
   "https://oaf.org.au/2014/10/21/they-vote-for-you/": {
-    "checked": "2026-08-13",
-    "content_hash": "15da2af9077edaf61dce05c1049c2c5ec542143f341ec24fec249165c58256e6",
+    "checked": "2026-08-14",
+    "content_hash": "4b1e7122c01530f06f8fb4fef9bf4fc5cca13534c4972e185d4ec8aab6a19b7c",
     "contexts": {
       "b0fd8227f28a6f87992769921772f646b74777e4904d50a3119b254a7b6d22bd": {
         "prefix": "the Senate and try to make sense of it all. This is not something anyone can do easily. Parliament should be easy, and accessible. That is why",
-        "sha256": "15da2af9077edaf61dce05c1049c2c5ec542143f341ec24fec249165c58256e6",
-        "suffix": ", so you can find out how your representatives in parliament vote on issues you care about. Our political researchers have been working t",
-        "text": "Parliament should be easy, and accessible. That is why today the OpenAustralia Foundation is launching a new site They Vote for You , so you can find out how your representatives in parliament vote on issues you care about."
+        "sha256": "4b1e7122c01530f06f8fb4fef9bf4fc5cca13534c4972e185d4ec8aab6a19b7c",
+        "suffix": ", so you can find out how your representatives in parliament vote on issues you care about. Our political researchers have been working to",
+        "text": "Parliament should be easy, and accessible. That is why today the OpenAustralia Foundation is launching a new site They Vote for You, so you can find out how your representatives in parliament vote on issues you care about."
       }
     },
     "etag": null,
@@ -566,8 +1715,25 @@
       "b0fd8227f28a6f87992769921772f646b74777e4904d50a3119b254a7b6d22bd": true
     }
   },
+  "https://opennorth.ca/resources/citizen-budget/": {
+    "checked": "2026-08-14",
+    "content_hash": "19395ec633511fe627917532c9a729057f8d841e4201a3bc000e72c637fed378",
+    "contexts": {
+      "19395ec633511fe627917532c9a729057f8d841e4201a3bc000e72c637fed378": {
+        "prefix": "Open North & Ethelo Announce Acquisition of Citizen Budget Tool Press Release Press Release",
+        "sha256": "19395ec633511fe627917532c9a729057f8d841e4201a3bc000e72c637fed378",
+        "suffix": "About Citizen Budget Launched in 2011 by Open North, Citizen Budget simulator has been used by over 100 Canadian municipalities for their",
+        "text": "Ethelo and Open North are excited to announce the acquisition by Ethelo of \u201cCitizen Budget\u201d- Canada\u2019s leading municipal budget consultation tool."
+      }
+    },
+    "etag": null,
+    "last_modified": "Fri, 14 Aug 2026 11:41:57 GMT",
+    "verified": {
+      "19395ec633511fe627917532c9a729057f8d841e4201a3bc000e72c637fed378": true
+    }
+  },
   "https://peoplepower21.org/English": {
-    "checked": "2026-08-13",
+    "checked": "2026-08-14",
     "content_hash": "9afc82947e6b49ab53c90b7ec3f8898c72764700dab0bc961722a5e9d9023501",
     "contexts": {
       "93aa70025cecffcce55d8b4a47eb58cdb3de59ffca2515ad80cea3131f816633": {
@@ -584,24 +1750,24 @@
     }
   },
   "https://perludem.or.id/id/profil/": {
-    "checked": "2026-08-13",
-    "content_hash": "f5187f72089216a8e9270bf4d26f9b443c9621869d19708fa0407ff49aa2a109",
+    "checked": "2026-08-14",
+    "content_hash": "fbbd297c5e6d02e1747f9fc502388d5db50117034a2bf610e391a19959d24d6b",
     "contexts": {
       "1f37267ec5d600eebb3f8ddb386f7fd6e41f2a985eabca68b429559c4608601c": {
         "prefix": "hgunakan kedaulatan rakyat yang diberikan kepadanya. Menyadari bahwa kondisi-kondisi tersebut membutuhkan partisipasi setiap warga negara, maka",
-        "sha256": "f5187f72089216a8e9270bf4d26f9b443c9621869d19708fa0407ff49aa2a109",
-        "suffix": ", disingkat Perludem agar dapat secara efektif terlibat dalam proses membangun negara demokrasi dan melaksanakan pemilu yang fair . Nilai-nilai moral",
-        "text": "Menyadari bahwa kondisi-kondisi tersebut membutuhkan partisipasi setiap warga negara, maka para mantan Pengawas Pemilu 2004 berhimpun dalam wadah yang bernama Perkumpulan untuk Pemilu dan Demokrasi, disingkat Perludem agar dapat secara efektif terlibat dalam proses membangun negara demokrasi dan melaksanakan pemilu yang fair . Nilai-nilai moral pengawas pemilu yang tertanam selama menjalankan tugas-tugas pengawasan pemilu, serta pengetahuan dan keterampilan tentang pelaksanaan dan pengawasan pemilu, merupakan modal bagi Perludem untuk memaksimalkan partisipasinya."
+        "sha256": "fbbd297c5e6d02e1747f9fc502388d5db50117034a2bf610e391a19959d24d6b",
+        "suffix": ", disingkat Perludem agar dapat secara efektif terlibat dalam proses membangun negara demokrasi dan melaksanakan pemilu yang fair. Nilai-nilai moral p",
+        "text": "Menyadari bahwa kondisi-kondisi tersebut membutuhkan partisipasi setiap warga negara, maka para mantan Pengawas Pemilu 2004 berhimpun dalam wadah yang bernama Perkumpulan untuk Pemilu dan Demokrasi, disingkat Perludem agar dapat secara efektif terlibat dalam proses membangun negara demokrasi dan melaksanakan pemilu yang fair. Nilai-nilai moral pengawas pemilu yang tertanam selama menjalankan tugas-tugas pengawasan pemilu, serta pengetahuan dan keterampilan tentang pelaksanaan dan pengawasan pemilu, merupakan modal bagi Perludem untuk memaksimalkan partisipasinya."
       }
     },
     "etag": null,
-    "last_modified": "Wed, 12 Aug 2026 16:50:50 GMT",
+    "last_modified": "Thu, 13 Aug 2026 06:11:41 GMT",
     "verified": {
       "1f37267ec5d600eebb3f8ddb386f7fd6e41f2a985eabca68b429559c4608601c": true
     }
   },
   "https://podnews.net/press-release/lamestream-podcast": {
-    "checked": "2026-08-12",
+    "checked": "2026-08-14",
     "content_hash": "f0118f7c11e028ae89a861bb290d491d50a00569481952a73ba3be722b261ff6",
     "contexts": {
       "f0118f7c11e028ae89a861bb290d491d50a00569481952a73ba3be722b261ff6": {
@@ -615,6 +1781,49 @@
     "last_modified": "Sun, 27 Apr 2025 23:33:05 GMT",
     "verified": {
       "f0118f7c11e028ae89a861bb290d491d50a00569481952a73ba3be722b261ff6": true
+    }
+  },
+  "https://portable.com.au/articles/code-for-australia-announcement/": {
+    "checked": "2026-08-14",
+    "content_hash": "b33a7ba3fa2e231e3a823e4f9330c0225ddb4f927271c8e1a9e2c7688c9dd79f",
+    "contexts": {
+      "9814534926a98c30bc7124d2d12012b27b3b33ea17fa6537fbc73964ea7f5f7d": {
+        "prefix": "rtable is proud to announce that it will be supporting the operation and management of Code for Australia going into 2025.",
+        "sha256": "b33a7ba3fa2e231e3a823e4f9330c0225ddb4f927271c8e1a9e2c7688c9dd79f",
+        "suffix": "They partner with government and not-for-profit organisations to support them with expert technical advice, digital capability, and the development o",
+        "text": "Code for Australia is a nationwide civic technology organisation founded in 2014 by Alvaro Maz, Jacob Lindsay and Daniel Groch. They partner with government and not-for-profit organisations to support them with expert technical advice, digital capability, and the development of digital solutions that are accessible, inclusive, sustainable and effective. Code for Australia began as part of a global network of like-minded organisations called \u00e2\u0080\u009cCode for All\u00e2\u0080\u009d and is well known for its Fellowship program for early-mid career technologists."
+      }
+    },
+    "etag": "W/\"d32adcab2d1ef446a039152c7478e25d\"",
+    "last_modified": "Thu, 13 Aug 2026 23:26:42 GMT",
+    "verified": {
+      "9814534926a98c30bc7124d2d12012b27b3b33ea17fa6537fbc73964ea7f5f7d": true
+    }
+  },
+  "https://projects.propublica.org/nonprofits/organizations/832183139": {
+    "checked": "2026-08-15",
+    "content_hash": "76a56b8718dcae944fac8c984e0de25f764c9efdfc0f7660206ded6164f18dc2",
+    "contexts": {},
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "2c2357d91cd4ee5fb36b3931a28107813f4857aaa5654b688c6e32a0dd3b77ea": false
+    }
+  },
+  "https://pt.wikipedia.org/wiki/Open_Knowledge_Brasil": {
+    "checked": "2026-08-14",
+    "content_hash": "b3934f46a0e6a500b3969fe5bbe004c6f133cf5547633a3001a36999203101e1",
+    "contexts": {
+      "155ee67d1b6db29710b62cb2593a35ae9cecf55f8d21bd6e8c3187a0b8f6c467": {
+        "prefix": "tornar mais transparentes as rela\u00e7\u00f5es entre governo e sociedade. Conhecida em seus prim\u00f3rdios como Rede pelo Conhecimento Livre, \u00e9 uma organiza\u00e7\u00e3o da",
+        "sha256": "3140fb0a4720e265dd6519e81b90a3e77907f7fd533bc3ac8b15d4ab7fe81573",
+        "suffix": ". Entre seus projetos de destaque est\u00e3o o Querido Di\u00e1rio, ferramenta de c\u00f3digo aberto que agrega os di\u00e1rios oficiais de munic\u00edpios brasileiros em form"
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "155ee67d1b6db29710b62cb2593a35ae9cecf55f8d21bd6e8c3187a0b8f6c467": true
     }
   },
   "https://raisely-images.imgix.net/australian-democracy-network/uploads/adn-annual-report-23-pdf-531f03.pdf": {
@@ -634,7 +1843,7 @@
     }
   },
   "https://reclaim.org.au/1-lismore-peoples-assembly-housing/": {
-    "checked": "2026-08-12",
+    "checked": "2026-08-15",
     "content_hash": "c32ff80280689420b855efd6209762b535e60b88091d0669f8ceff73e226e820",
     "contexts": {
       "c32ff80280689420b855efd6209762b535e60b88091d0669f8ceff73e226e820": {
@@ -651,7 +1860,7 @@
     }
   },
   "https://reclaim.org.au/inaugural-lismore-peoples-assembly/": {
-    "checked": "2026-08-12",
+    "checked": "2026-08-15",
     "content_hash": "d6f51366e8b60fa798347718bf5438e92ff008ae6ff9f84b2d0205ec1d01e77e",
     "contexts": {
       "5d178e7c6e07b697f520a7fe1ef52fb0fbc054481088e0e3a7fac59039d9181f": {
@@ -668,7 +1877,7 @@
     }
   },
   "https://reclaim.org.au/lismore-peoples-assembly-on-housing/": {
-    "checked": "2026-08-12",
+    "checked": "2026-08-15",
     "content_hash": "962246259b6a487def673b4ca2f1ccccb76cdf98ebf9ec8ca07b6e77a8f1ff9e",
     "contexts": {
       "d278588f631f4a70ec72de1f3c704dfaba8f790108d5454982daac2a07a590f7": {
@@ -685,7 +1894,7 @@
     }
   },
   "https://reclaim.org.au/the-year-ahead-for-the-lismore-peoples-assembly/": {
-    "checked": "2026-08-12",
+    "checked": "2026-08-15",
     "content_hash": "20e6e6902c0a0287a487e72910cf53a6f385b53c10413bfe63c121e7dee87b21",
     "contexts": {
       "20e6e6902c0a0287a487e72910cf53a6f385b53c10413bfe63c121e7dee87b21": {
@@ -701,8 +1910,76 @@
       "20e6e6902c0a0287a487e72910cf53a6f385b53c10413bfe63c121e7dee87b21": true
     }
   },
+  "https://solve.mit.edu/solutions/51507": {
+    "checked": "2026-08-14",
+    "content_hash": "d5a9dcb8154b480706770169b9bf0e10e93cfcdc69a132981171d87a7b02cdf4",
+    "contexts": {
+      "833309c1e8b7fc7e744f915aeba755d8573e66dd4691fb844187bbf649569216": {
+        "prefix": ". Explain why you selected this stage of development for your solution. DemocracyLab\u2019s solution is in the growth stage.",
+        "sha256": "d5a9dcb8154b480706770169b9bf0e10e93cfcdc69a132981171d87a7b02cdf4",
+        "suffix": "One growth example is our \u201c A Better Tech-a-thon \u201d event, which we are convening in October in collaboration with NYU, the Public Interest Technology",
+        "text": "DemocracyLab\u2019s solution is in the growth stage. Though we launched in Seattle in 2018, we now have projects and/or volunteers from every inhabited continent thanks to our adoption of asynchronous and remote work prior to the pandemic. One growth example is our \u201c A Better Tech-a-thon \u201d event, which we are convening in October in collaboration with NYU, the Public Interest Technology University Network, and Code for America. The event will engage students and faculty from many of the country's most outstanding universities, professionals from tech companies, and members of Code for America's Brigade Network to contribute to impactful tech-for-good projects. This event will give grassroots volunteers the opportunity to work side by side with students, faculty, and professionals to improve their skills, grow their networks, and advance their careers."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "833309c1e8b7fc7e744f915aeba755d8573e66dd4691fb844187bbf649569216": true
+    }
+  },
+  "https://stocznia.org.pl/en/about-shipyard/": {
+    "checked": "2026-08-14",
+    "content_hash": "6686a58250e335ed90f716edfd4130f33a471e120ffbc9a84a32a69da589567a",
+    "contexts": {
+      "3ecc7fe884cef76a6eed16f7b62ddc16783b7ce7573bbc9870effdb3f29da458": {
+        "prefix": "About Shipyard Share Close Facebook facebook LinkedIn linkedin mail Copy link",
+        "sha256": "6686a58250e335ed90f716edfd4130f33a471e120ffbc9a84a32a69da589567a",
+        "suffix": "For over 15 years, we have been creating and supporting effective solutions to social challenges, involving citizens in deciding on public matters an",
+        "text": "Shipyard Foundation was established in 2009. For over 15 years, we have been creating and supporting effective solutions to social challenges, involving citizens in deciding on public matters and helping organizations and local governments to plan and implement social activities."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "3ecc7fe884cef76a6eed16f7b62ddc16783b7ce7573bbc9870effdb3f29da458": true
+    }
+  },
+  "https://techboard.com.au/company-profile/xo-1/": {
+    "checked": "2026-08-14",
+    "content_hash": "e7c65b2026e35db7b13ddba7bd91b955aa391ad233bd5fd28808640605308044",
+    "contexts": {
+      "1baf11b8ef1333f3a2d2798791bf4702594ca3570629131a7e0480711eaca5a1": {
+        "prefix": "Profile: Yes Company Profile Company Announcements: (reported by the Company)",
+        "sha256": "e7c65b2026e35db7b13ddba7bd91b955aa391ad233bd5fd28808640605308044",
+        "suffix": "24/11/2017 SecureVote Acquires First Customer In Swarm Fund Platform 25/10/2017 SecureVote Named APAC Finalist For Talent Unleashed Award",
+        "text": "SecureVote wins ATC Cyber Security Award 24/11/2017"
+      }
+    },
+    "etag": null,
+    "last_modified": "Fri, 14 Aug 2026 02:11:08 GMT",
+    "verified": {
+      "1baf11b8ef1333f3a2d2798791bf4702594ca3570629131a7e0480711eaca5a1": true
+    }
+  },
+  "https://theconversation.com/as-the-latrobe-valley-moves-away-from-coal-jobs-could-a-green-workers-cooperative-offer-a-solution-245850": {
+    "checked": "2026-08-14",
+    "content_hash": "a306ccc6487edaac0cde189a7b4786539f159ed5ec8514b4e05fd24214af099e",
+    "contexts": {
+      "73435ff7a5545bc9080b2627633eeb791257c8f6b4596074ad79aec4f6bb3119": {
+        "prefix": "development and fair labour practices. Earthworker only formally became a cooperative in 2011, though discussions date back to the late 1990s.",
+        "sha256": "a306ccc6487edaac0cde189a7b4786539f159ed5ec8514b4e05fd24214af099e",
+        "suffix": "The cooperative is aimed at helping the Latrobe Valley\u2019s transition away from coal power jobs. Morwell and other Latrobe Valley towns",
+        "text": "Earthworker only formally became a cooperative in 2011, though discussions date back to the late 1990s. In 2016, the network bought a hot water tank manufacturer in Morwell and began making their own tanks and solar hot water systems as the Earthworker Energy Manufacturing Co-operative. The cooperative is aimed at helping the Latrobe Valley\u2019s transition away from coal power jobs."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "73435ff7a5545bc9080b2627633eeb791257c8f6b4596074ad79aec4f6bb3119": true
+    }
+  },
   "https://topics.amcham.com.tw/2017/02/make-full-use-of-join-gov-tw/": {
-    "checked": "2026-08-12",
+    "checked": "2026-08-15",
     "content_hash": "33a12277a8f75847058928b3e1ca28b228ca8f74ed092f18be9bfca56b32eedd",
     "contexts": {
       "f2bc1350fab07763d03538042100f87084a4a232f7caa8b0f69e0187361eae48": {
@@ -716,6 +1993,40 @@
     "last_modified": null,
     "verified": {
       "f2bc1350fab07763d03538042100f87084a4a232f7caa8b0f69e0187361eae48": true
+    }
+  },
+  "https://web.archive.org/web/20190718131041/https://policyincubator.com/home/about_us": {
+    "checked": "2026-08-15",
+    "content_hash": "da3667d0384ce21370c7572b25b5e4b602ca2a6070df321e3b3d2971d9386504",
+    "contexts": {
+      "76232b5ffc5c4d5295d37f9625a47b73af148adcd15e29334ee060306d5f2172": {
+        "prefix": "ne for political action, giving opportunities for community engagement groups, activists and aspiring leaders to achieve their political goals.",
+        "sha256": "da3667d0384ce21370c7572b25b5e4b602ca2a6070df321e3b3d2971d9386504",
+        "suffix": "This crowdsourcing model not only results in superior public policy, but also provides an ideal platform for grassroots campaigners to build communit",
+        "text": "The strength of this decentralised policy making and deliberation model is based on the power of 'the crowd'. This crowdsourcing model not only results in superior public policy, but also provides an ideal platform for grassroots campaigners to build community support for their causes. This will make politics more accessible to all corners of the Australian public!"
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "76232b5ffc5c4d5295d37f9625a47b73af148adcd15e29334ee060306d5f2172": true
+    }
+  },
+  "https://web.archive.org/web/20201025042342/https://www.coalitionofeveryone.com/": {
+    "checked": "2026-08-15",
+    "content_hash": "1f64be74ded78db93e4be4c0450c20460a7c4a987f3913c85cd1e3eba4335de1",
+    "contexts": {
+      "1f64be74ded78db93e4be4c0450c20460a7c4a987f3913c85cd1e3eba4335de1": {
+        "prefix": "About Team Contact",
+        "sha256": "1f64be74ded78db93e4be4c0450c20460a7c4a987f3913c85cd1e3eba4335de1",
+        "suffix": "VISION & MISSION Disrupting politics of fear and building a polit",
+        "text": "Renewing democratic culture for citizen, community, and policy-led change."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "1f64be74ded78db93e4be4c0450c20460a7c4a987f3913c85cd1e3eba4335de1": true
     }
   },
   "https://web.archive.org/web/20201025045936/https://www.coalitionofeveryone.com/post/citizens-assembly": {
@@ -736,7 +2047,7 @@
     }
   },
   "https://wecollect.ch/ueber-uns/": {
-    "checked": "2026-08-13",
+    "checked": "2026-08-14",
     "content_hash": "8e0a28a64f26b45fa4327e68277647b8ac6bbc05aaee98dc977496d5baf984fa",
     "contexts": {
       "189034b7801ad11ac83990aeb72cb6d361a9a3e4ad5ad8e6a81b712b88ba6fe5": {
@@ -752,8 +2063,25 @@
       "189034b7801ad11ac83990aeb72cb6d361a9a3e4ad5ad8e6a81b712b88ba6fe5": true
     }
   },
+  "https://www.afrobarometer.org/about/history/": {
+    "checked": "2026-08-14",
+    "content_hash": "503e9850d465b3efc486f86ce23efe29327fc94285e2db6be46461d1f53f43da",
+    "contexts": {
+      "05714f91762de147b3966b1cc74395a8048824ec50708f5def3adf56d5398fc4": {
+        "prefix": "Cabo Verde, Kenya, Mozambique, and Senegal. 1999-2001 Driven by a vision of policy making in which ordinary Africans have a voice,",
+        "sha256": "503e9850d465b3efc486f86ce23efe29327fc94285e2db6be46461d1f53f43da",
+        "suffix": ". Michigan State University (MSU), the Institute for Democracy in South Africa (Idasa), and the Center for Democratic Development ( CDD-Ghana) are cor",
+        "text": "Driven by a vision of policy making in which ordinary Africans have a voice, professors Michael Bratton, Robert Mattes, and E. Gyimah-Boadi merge three independent survey research projects to form Afrobarometer (AB). Michigan State University (MSU), the Institute for Democracy in South Africa (Idasa), and the Center for Democratic Development ( CDD-Ghana) are core partners, and Bratton is executive director."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "05714f91762de147b3966b1cc74395a8048824ec50708f5def3adf56d5398fc4": true
+    }
+  },
   "https://www.bertelsmann-stiftung.de/en/our-projects/democracy-and-participation-in-europe/shortcut-archive/shortcut-8-trailblazers-of-digital-participation-taiwans-join-platform-and-vtaiwan": {
-    "checked": "2026-08-12",
+    "checked": "2026-08-15",
     "content_hash": "05c110afc92fb278b8ab2ca88cb1ae818a26074bf9d9d549880c39af9a005686",
     "contexts": {
       "2bb69c560807cf0c7be8d767dccd92457b40f1d32e94a61557df80263877489e": {
@@ -769,6 +2097,33 @@
       "2bb69c560807cf0c7be8d767dccd92457b40f1d32e94a61557df80263877489e": true
     }
   },
+  "https://www.buildaballot.org.au/about": {
+    "checked": "2026-08-16",
+    "content_hash": "8741925b19fa9a3b0fe85029b310a584731707fa2027eb8d750abbd3ce829f4e",
+    "contexts": {},
+    "etag": null,
+    "last_modified": "Fri, 07 Aug 2026 09:57:38 GMT",
+    "verified": {
+      "bca897fecd269434703d2f7e9b62d73411bb837f4b3b4ba0d4999695b6ecf137": true
+    }
+  },
+  "https://www.buildaballot.org.au/transparency/candidate-and-party-assessments": {
+    "checked": "2026-08-16",
+    "content_hash": "690f1c81f04ac5df5df4c736f5becbcf634e06d916e0b310596616758512b9d9",
+    "contexts": {
+      "63d9389aff17fc40ce3b5f9af5d4427d1be6a5671447a6f842fcc5dc2feeed07": {
+        "prefix": "Transparency / Candidate & Party Assessments Candidate and Party Assessments",
+        "sha256": "690f1c81f04ac5df5df4c736f5becbcf634e06d916e0b310596616758512b9d9",
+        "suffix": "If you have a question or concern, please email tool@buildaballot.org.au Filter by Reset all State",
+        "text": "View how candidates and parties have been assessed on the policies included in the Build a Ballot tool for the 2026 South Australian election.If you have a question or concern, please email tool@buildaballot.org.au"
+      }
+    },
+    "etag": null,
+    "last_modified": "Tue, 11 Aug 2026 18:15:20 GMT",
+    "verified": {
+      "63d9389aff17fc40ce3b5f9af5d4427d1be6a5671447a6f842fcc5dc2feeed07": true
+    }
+  },
   "https://www.cambridge.org/core/journals/world-politics/article/abs/performative-governance/AAC558378BEA651DB7E2480ECFFB4E10": {
     "checked": "2026-08-12",
     "content_hash": "93134d14a7aa9c241e7f7975a416fa9fb6a24d0c04f2b3d0cb0ffb4bc8401551",
@@ -779,8 +2134,86 @@
       "20720c979a84f8b081c99a8cc04c124e317b44d3945bc3e434153656085148ce": false
     }
   },
+  "https://www.canberra.edu.au/research/centres/cdd/about-cdd/our-history": {
+    "checked": "2026-08-14",
+    "content_hash": "0b2eb39469b9a619c46496f96c794a92e4ee2abb96ad1726e9db200d87ba52fc",
+    "contexts": {},
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "f7b7bdd0503cd401dcda4993570954a3b43d2762c94b10c0a4760d94db555e49": false
+    }
+  },
+  "https://www.cddwestafrica.org/about-us/": {
+    "checked": "2026-08-14",
+    "content_hash": "39f16719c192f7b17c396e2daff9c54a393dc48d63a425d0e96c0863a672ec03",
+    "contexts": {
+      "a6dd36394b455564e8b2149b566c47366b1268142c34238968b75c9f58c146d7": {
+        "prefix": "HIS About the Centre for Democracy & Development (CDD-West Africa) SHARE THIS",
+        "sha256": "39f16719c192f7b17c396e2daff9c54a393dc48d63a425d0e96c0863a672ec03",
+        "suffix": "and subsequently registered in Lagos \u2013 Nigeria in 1999 as an independent, not-for-profit, research, training, advocacy and capacity building organisa",
+        "text": "The Centre for Democracy and Development (CDD) was established in the United Kingdom in 1997 and subsequently registered in Lagos \u2013 Nigeria in 1999 as an independent, not-for-profit, research, training, advocacy and capacity building organisation"
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "a6dd36394b455564e8b2149b566c47366b1268142c34238968b75c9f58c146d7": true
+    }
+  },
+  "https://www.code4japan.org/aboutus": {
+    "checked": "2026-08-14",
+    "content_hash": "da27dacd83bcf74aa79100c2a63503c93e8217cf7c6d094e3842e322ffe289f3",
+    "contexts": {
+      "da27dacd83bcf74aa79100c2a63503c93e8217cf7c6d094e3842e322ffe289f3": {
+        "prefix": "\u6cd5\u4eba\u5354\u8cdb \u5bc4\u4ed8 Overview \u56e3\u4f53\u6982\u8981 \u56e3\u4f53\u540d \u4e00\u822c\u793e\u56e3\u6cd5\u4eba\u30b3\u30fc\u30c9\u30fb\u30d5\u30a9\u30fc\u30fb\u30b8\u30e3\u30d1\u30f3 \u304a\u554f\u3044\u5408\u308f\u305b\u5148 \u304a\u554f\u3044\u5408\u308f\u305b\u30d5\u30a9\u30fc\u30e0",
+        "sha256": "da27dacd83bcf74aa79100c2a63503c93e8217cf7c6d094e3842e322ffe289f3",
+        "suffix": "\u60c5\u5831\u516c\u958b \u5b9a\u6b3e \u53d7\u6ce8\u5358\u4fa1\u8868 2025\u5e7412\u671f\u6c7a\u7b97\u66f8 2024\u5e7411\u671f\u6c7a\u7b97\u66f8 2023\u5e7410\u671f\u6c7a\u7b97\u66f8 2022\u5e749\u671f\u6c7a\u7b97\u66f8 2021\u5e748\u671f\u6c7a\u7b97\u66f8 2020\u5e747\u671f\u6c7a\u7b97\u66f8 2019\u5e746\u671f\u6c7a\u7b97\u66f8 2018\u5e745\u671f\u6c7a\u7b97\u66f8 2017\u5e744\u671f\u6c7a\u7b97\u66f8 2016\u5e743\u671f\u6c7a\u7b97\u66f8 2",
+        "text": "\u8a2d\u7acb\u5e74\u6708\u65e5 2013\u5e7410\u670825\u65e5"
+      }
+    },
+    "etag": "W/\"35fbe5bede4b211a60d24a6ead682b8e\"",
+    "last_modified": null,
+    "verified": {
+      "da27dacd83bcf74aa79100c2a63503c93e8217cf7c6d094e3842e322ffe289f3": true
+    }
+  },
+  "https://www.crossroadsconversation.com.au/events/on-the-importance-of-conversation-for-the-very-idea-of-a-common-humanity": {
+    "checked": "2026-08-14",
+    "content_hash": "0fc86d407615caf5514aa2a0a14bcaa3c602d87db6f6fa1b78cccad3ea0274d2",
+    "contexts": {
+      "b28e891abc8fa8226aecb38a3cf1abe9f0c0836d3b8071fe41fa424a4079c420": {
+        "prefix": "t the idea that public spaces should be free of hate? \u201cRai\u2019s tough-minded conception of conversations sidesteps chat and debate alike.",
+        "sha256": "0fc86d407615caf5514aa2a0a14bcaa3c602d87db6f6fa1b78cccad3ea0274d2",
+        "suffix": "A conversation is a pact. You are accountable not only for what you say but for the way what you say, and how you live your life, does or doesn\u2019t squ",
+        "text": "\u201cRai\u2019s tough-minded conception of conversations sidesteps chat and debate alike. You speak not to say something and to hear something back, not to dazzle, be right or stake a claim, but to be held accountable to each other. A conversation is a pact. You are accountable not only for what you say but for the way what you say, and how you live your life, does or doesn\u2019t square up. A conversation is also a precious opening. The light of another person\u2019s presence turned towards you will almost always illuminate something you couldn\u2019t see or find thinkable before.\u201d"
+      }
+    },
+    "etag": "W/\"6244324a2886991be8d59b28ac7c6f6d--gzip\"",
+    "last_modified": null,
+    "verified": {
+      "b28e891abc8fa8226aecb38a3cf1abe9f0c0836d3b8071fe41fa424a4079c420": true
+    }
+  },
+  "https://www.crossroadsconversation.com.au/events/reclaiming-democracy-together": {
+    "checked": "2026-08-14",
+    "content_hash": "3c9d693eac7a7ebab9abd72bbd1448dab4c3333d4fc1528436e6eda7c072948a",
+    "contexts": {
+      "3c9d693eac7a7ebab9abd72bbd1448dab4c3333d4fc1528436e6eda7c072948a": {
+        "prefix": "g. Public discourse is coarsening. Yet Australia is well placed to meet this moment not as spectator, but as participant in democratic renewal.",
+        "sha256": "3c9d693eac7a7ebab9abd72bbd1448dab4c3333d4fc1528436e6eda7c072948a",
+        "suffix": "This launch marks the beginning of that long-term work. Why 9 May Matters On the afternoon of 9 May 1901, the Duke of Cornwall and",
+        "text": "On 9 May 2026, we gather to launch Reclaiming Democracy Together \u2014 an ambitious seven-year project. The aim: to rethink and revitalise democratic life in Australia, and beyond."
+      }
+    },
+    "etag": "W/\"7dfc1848edf26613877c82ca16ff2ec5--gzip\"",
+    "last_modified": null,
+    "verified": {
+      "3c9d693eac7a7ebab9abd72bbd1448dab4c3333d4fc1528436e6eda7c072948a": true
+    }
+  },
   "https://www.demnext.org/about": {
-    "checked": "2026-08-12",
+    "checked": "2026-08-15",
     "content_hash": "31b35e733ed03b9b4e9d03ec4028349a9d92aa6532dabeec34b3a5fc9e73b1c9",
     "contexts": {
       "31b35e733ed03b9b4e9d03ec4028349a9d92aa6532dabeec34b3a5fc9e73b1c9": {
@@ -797,7 +2230,7 @@
     }
   },
   "https://www.democracy-international.org/events/2026-global-forum-modern-direct-democracy": {
-    "checked": "2026-08-13",
+    "checked": "2026-08-14",
     "content_hash": "cf2c23156ed8eb4d38665bdc204005a7dc4a85f72e6a5fafaece085a06b1b086",
     "contexts": {
       "cf2c23156ed8eb4d38665bdc204005a7dc4a85f72e6a5fafaece085a06b1b086": {
@@ -807,14 +2240,14 @@
         "text": "In 2026, the Global Forum on Modern Direct Democracy heads to Southern Africa for the first time."
       }
     },
-    "etag": "\"1786548839-gzip\"",
-    "last_modified": "Wed, 12 Aug 2026 15:33:59 GMT",
+    "etag": "\"1786636061-gzip\"",
+    "last_modified": "Thu, 13 Aug 2026 15:47:41 GMT",
     "verified": {
       "cf2c23156ed8eb4d38665bdc204005a7dc4a85f72e6a5fafaece085a06b1b086": true
     }
   },
   "https://www.democracyco.com.au/about/": {
-    "checked": "2026-08-12",
+    "checked": "2026-08-15",
     "content_hash": "1f3342948b4e4774f63f0a457d7b23029356b55548d19d7eebc0650eb1be368f",
     "contexts": {
       "3bbbfb3bbb443ceaa2c37f75a208d4dcbed53c85459ce09db3747652442aff49": {
@@ -830,8 +2263,39 @@
       "3bbbfb3bbb443ceaa2c37f75a208d4dcbed53c85459ce09db3747652442aff49": true
     }
   },
+  "https://www.democratieouverte.org/qui-sommes-nous": {
+    "checked": "2026-08-14",
+    "content_hash": "e941ff4adf01e2cccc86336c9d4c8bb9a4cc77f9c3585bbbf6bfd5f7773df3da",
+    "contexts": {
+      "91d03e3b55e6076e17623ab42f63cbc93e175bf0635cbf3f3ed10c372b98b2ee": {
+        "prefix": "mocratie et de l\u2019urgence climatique. L'objectif? Introduire un dispositif de participation citoyenne au sein des instances d\u00e9cisionnelles. \u200d",
+        "sha256": "af6ad9a0798d60a6ebeea26a2c7d6cbbbcc11651e2f32bd4d245a39e0462275c",
+        "suffix": ", avec pour mandat de \u201cd\u00e9finir une s\u00e9rie de mesures permettant d\u2019atteindre une baisse d\u2019au moins 40 % des \u00e9missions de gaz \u00e0 effet de serre d\u2019ici 2030",
+        "text": "Le 25 avril 2019, face \u00e0 ce mouvement social intense, le Pr\u00e9sident Emmanuel Macron annonce la cr\u00e9ation de la \u00ab Convention Citoyenne pour Le Climat \u00bb: 150 fran\u00e7aises et fran\u00e7ais tir\u00e9s au sort durant l'\u00e9t\u00e9, avec pour mandat de \u201cd\u00e9finir une s\u00e9rie de mesures permettant d\u2019atteindre une baisse d\u2019au moins 40 % des \u00e9missions de gaz \u00e0 effet de serre d\u2019ici 2030 (par rapport \u00e0 1990) dans un esprit de justice sociale. Plusieurs membres du collectif ont fait partie de l'\u00e9quipe de gouvernance."
+      },
+      "c5ee437f553c19f28860fd9a564aa6cd0fcf9c781422623f432e35426c5f369e": {
+        "prefix": "Notre histoire 2012 Un collectif donne naissance \u00e0 D\u00e9mocratie Ouverte",
+        "sha256": "b222d97c8fa119ab9069d7d3d0e0dec7842e14bb664b425d6244d192f9a7113a",
+        "suffix": "qui regroupe les innovateurs d\u00e9mocratiques avec des chercheurs, des professionnels, des \u00e9lus, des associations et des citoyens qui cherchent eux auss",
+        "text": "En 2012, des citoyennes et citoyens engag\u00e9s, qui portent des projets pour transformer notre vieux syst\u00e8me politique (comme Parlement & Citoyens, Voxe, ou encore Questionnez vos \u00e9lus), d\u00e9cident de se regrouper et de formaliser leur collectif en cr\u00e9ant une association qui regroupe les innovateurs d\u00e9mocratiques avec des chercheurs, des professionnels, des \u00e9lus, des associations et des citoyens qui cherchent eux aussi \u00e0 rendre notre d\u00e9mocratie plus transparente, participative et collaborative."
+      },
+      "e941ff4adf01e2cccc86336c9d4c8bb9a4cc77f9c3585bbbf6bfd5f7773df3da": {
+        "prefix": "2016 Syst\u00e8me D, le tout premier incubateur d\u00e9di\u00e9 \u00e0 accompagner les projets d\u2019innovation d\u00e9mocratique",
+        "sha256": "e941ff4adf01e2cccc86336c9d4c8bb9a4cc77f9c3585bbbf6bfd5f7773df3da",
+        "suffix": "Incubateur devenu acc\u00e9l\u00e9rateur, Syst\u00e8me D a accompagn\u00e9 17 projets en 3 ans! 2019-2020 L'associa",
+        "text": "Avec le soutien de la Caisse des D\u00e9p\u00f4ts, du Cr\u00e9dit Coop\u00e9ratif, d\u2019Accenture, de la MGEN, du groupe La Poste et de la Fondation La France s\u2019engage, D\u00e9mocratie Ouverte lance le premier incubateur sp\u00e9cifiquement d\u00e9di\u00e9 \u00e0 accompagner les projets d\u2019innovation d\u00e9mocratique."
+      }
+    },
+    "etag": null,
+    "last_modified": "Fri, 14 Aug 2026 13:23:17 GMT",
+    "verified": {
+      "91d03e3b55e6076e17623ab42f63cbc93e175bf0635cbf3f3ed10c372b98b2ee": true,
+      "c5ee437f553c19f28860fd9a564aa6cd0fcf9c781422623f432e35426c5f369e": true,
+      "e941ff4adf01e2cccc86336c9d4c8bb9a4cc77f9c3585bbbf6bfd5f7773df3da": true
+    }
+  },
   "https://www.designingopendemocracy.com/blog/2016/12/19/inaugural-designing-open-democracy-meeting/": {
-    "checked": "2026-08-12",
+    "checked": "2026-08-14",
     "content_hash": "596d09e225107816bbb960ce2d396ba03012597f3e3c7239777d350befe04331",
     "contexts": {
       "596d09e225107816bbb960ce2d396ba03012597f3e3c7239777d350befe04331": {
@@ -841,14 +2305,14 @@
         "text": "Thanks very much to all who were able to attend the first Designing Open Democracy Meetup!"
       }
     },
-    "etag": "W/\"6a7c8f8e-4ad8d\"",
-    "last_modified": "Wed, 12 Aug 2026 15:21:50 GMT",
+    "etag": "W/\"6a7e744d-4ad8d\"",
+    "last_modified": "Fri, 14 Aug 2026 01:50:05 GMT",
     "verified": {
       "596d09e225107816bbb960ce2d396ba03012597f3e3c7239777d350befe04331": true
     }
   },
   "https://www.designingopendemocracy.com/blog/2018/02/10/proposed-initial-strategy-of-designing-open-democracy/": {
-    "checked": "2026-08-12",
+    "checked": "2026-08-14",
     "content_hash": "d61364727cdb81b6061a95993507e41502ef3dcbe47b4bc1fff372b8f5e158be",
     "contexts": {
       "48f5313730268658b444f8282cb6e4f362d06708bde34e74051682a395dfd12a": {
@@ -858,14 +2322,48 @@
         "text": "Rationale & Vision Designing Open Democracy so far has centered on the niche topic of \u201cDemocratic System Reform\u201d and is a gathering of minds to think about ways that our current system could be improved, without endorsing any particular system."
       }
     },
-    "etag": "W/\"6a7c8f8e-365c9\"",
-    "last_modified": "Wed, 12 Aug 2026 15:21:50 GMT",
+    "etag": "W/\"6a7e744d-365c9\"",
+    "last_modified": "Fri, 14 Aug 2026 01:50:05 GMT",
     "verified": {
       "48f5313730268658b444f8282cb6e4f362d06708bde34e74051682a395dfd12a": true
     }
   },
+  "https://www.designingopendemocracy.com/blog/2018/12/18/designing-open-democracy-state-of-democracy-in-australia-in-2018/": {
+    "checked": "2026-08-15",
+    "content_hash": "5661eb95731baf8bc8b220f39a8c37c1e2f4f661f1d723a83fdf1ca002ca7933",
+    "contexts": {
+      "bede7c49e95577b8277ad463bb91abccf42180fb72e768eccea82d61fcd628e0": {
+        "prefix": "rnetics the Meta-Grammar of Legislation. It is based to a very large degree on Stafford Beer's books Brain of the Firm and Heart of Enterprise.",
+        "sha256": "5661eb95731baf8bc8b220f39a8c37c1e2f4f661f1d723a83fdf1ca002ca7933",
+        "suffix": "Democracy is part of that and Stafford Beer, who is the father of management cybernetics, was highly regarded by the Open Democracy organisation as w",
+        "text": "My main thrust is government organized along scientific principles which is as much to say as the application of cybernetic principles to government. Democracy is part of that and Stafford Beer, who is the father of management cybernetics, was highly regarded by the Open Democracy organisation as witnessed by the obituary published for him by Rosemary Bechler, the International Editor, of Open Democracy - https://www.opendemocracy.net/node/611"
+      }
+    },
+    "etag": "W/\"6a808b70-3bde5\"",
+    "last_modified": "Sat, 15 Aug 2026 15:53:20 GMT",
+    "verified": {
+      "bede7c49e95577b8277ad463bb91abccf42180fb72e768eccea82d61fcd628e0": true
+    }
+  },
+  "https://www.designingopendemocracy.com/blog/2021/08/07/podcast-catching-up-with-adam-jacoby-founder-of-mivote/": {
+    "checked": "2026-08-14",
+    "content_hash": "ec5cd1b32cb770288205a363e80453e300a718686c940cbb6b70fbf96b4f5512",
+    "contexts": {
+      "7eedd69a656a150f87f8aee471946a6d238d99f28534cdf4dcc46e34fe7203e5": {
+        "prefix": "he constitutional mandate binding its senators. This post picks up the thread afterwards: the Horizon State fallout, the rebuild, and the UK chapter.",
+        "sha256": "ec5cd1b32cb770288205a363e80453e300a718686c940cbb6b70fbf96b4f5512",
+        "suffix": "What MiVote actually did MiVote's core design insight was to reject the binary. Rather than asking citizens yes or no on a policy questio",
+        "text": "Note: the MiVote page in the Democracy Landscape documents the original 2014\u20132019 model in detail \u2014 the four-destination framing, the university/expert/ethics information pipeline, the constitutional mandate binding its senators. This post picks up the thread afterwards: the Horizon State fallout, the rebuild, and the UK chapter. The Australian party deregistered around 2019; the movement and technology continued under a different structure."
+      }
+    },
+    "etag": "W/\"6a7e744d-381f8\"",
+    "last_modified": "Fri, 14 Aug 2026 01:50:05 GMT",
+    "verified": {
+      "7eedd69a656a150f87f8aee471946a6d238d99f28534cdf4dcc46e34fe7203e5": true
+    }
+  },
   "https://www.dumbofeather.com/articles/building-a-coalition-of-everyone/": {
-    "checked": "2026-08-13",
+    "checked": "2026-08-14",
     "content_hash": "367eb5e6d899338f2bcb29b30f02bce4bad703b01c68c4ebe9f50fbc0e0c3e04",
     "contexts": {
       "b661584df7bf48e3bfddf55a6e12ed907dcedf5b25bda524af0bb7ed41a6fb44": {
@@ -881,8 +2379,96 @@
       "b661584df7bf48e3bfddf55a6e12ed907dcedf5b25bda524af0bb7ed41a6fb44": true
     }
   },
+  "https://www.folio.org.au/event-4941291": {
+    "checked": "2026-08-14",
+    "content_hash": "d5597fc74b49abbd5925d93ebcb56dd97d62762c50c3e579f3573558db0f46b8",
+    "contexts": {},
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "4e65ba0c5546e7cda6b970bb6aec764c8c0aba68772c67f965ca552bc8cddb95": false
+    }
+  },
+  "https://www.folio.org.au/event-5773784": {
+    "checked": "2026-08-14",
+    "content_hash": "7f84c2c4503dcba9e4bde2bf95d7e4623e0c1ae3e9beb89b7bf080306b4902d1",
+    "contexts": {},
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "0e32733c943cd8650940a4e67f7a82baef291fd9a97eb5fe79964eaa556a9bff": false
+    }
+  },
+  "https://www.g1000.org/en/cases/g1000-citizens-summit": {
+    "checked": "2026-08-14",
+    "content_hash": "99f329db92db6439c9941a067607e4d7d0c7e0d71b3c0ba49b8b47efe3e3226c",
+    "contexts": {
+      "99f329db92db6439c9941a067607e4d7d0c7e0d71b3c0ba49b8b47efe3e3226c": {
+        "prefix": "News Strijd mee G1000 Citizens' Summit Casesoverview",
+        "sha256": "99f329db92db6439c9941a067607e4d7d0c7e0d71b3c0ba49b8b47efe3e3226c",
+        "suffix": "Date 2011 Institution G1000 Level National Location Brussels",
+        "text": "In 2011, in the midst of a political crisis in a governmentless Belgium, G1000 was a citizens' initiative aimed at breathing new life into democracy by organizing a major citizens' consultation, bringing together 1,000 randomly selected citizens to make recommendations to the political world."
+      }
+    },
+    "etag": "W/\"1786633041\"",
+    "last_modified": "Thu, 13 Aug 2026 14:57:21 GMT",
+    "verified": {
+      "99f329db92db6439c9941a067607e4d7d0c7e0d71b3c0ba49b8b47efe3e3226c": true
+    }
+  },
+  "https://www.g1000.org/en/cases/permanent-citizen-dialogue-ostbelgien": {
+    "checked": "2026-08-14",
+    "content_hash": "9d9dd7eb44ce1feb60d009a8461f4ee3411bd3fa7f790f06f40bcc4344b1f244",
+    "contexts": {
+      "57bb32e4bdcd6c2f1a494cdba58b090e8ae2d4bcf1f9a19dc6c7d96fa683588c": {
+        "prefix": "d thirty randomly selected citizens engaged in discussions over five days on how citizens in Wallonia can permanently participate in decision-making.",
+        "sha256": "9d9dd7eb44ce1feb60d009a8461f4ee3411bd3fa7f790f06f40bcc4344b1f244",
+        "suffix": "Date 2023-2024 Location Namur Institution Parlement de Wallonie Level R",
+        "text": "Between October 2023 and February 2024, the first deliberative committee of the Walloon Parliament took place. Ten parliamentarians and thirty randomly selected citizens engaged in discussions over five days on how citizens in Wallonia can permanently participate in decision-making. This initiative, launched after a petition by Cap D\u00e9mocratie, marked a first for Wallonia, where citizens and politicians worked together as equals."
+      }
+    },
+    "etag": "W/\"1786638192\"",
+    "last_modified": "Thu, 13 Aug 2026 16:23:12 GMT",
+    "verified": {
+      "57bb32e4bdcd6c2f1a494cdba58b090e8ae2d4bcf1f9a19dc6c7d96fa683588c": true
+    }
+  },
+  "https://www.ghst.de/presse/pressemeldung-im-detail/app-democracy-fuer-transparentere-demokratie-geht-an-den-start": {
+    "checked": "2026-08-14",
+    "content_hash": "49f63541cf3a123ea33ad9d4842bb1a647d6463b7964c3800b88daaa8f4c674b",
+    "contexts": {
+      "4e5dd38efcb0a295598dfa0ac6482cdba414274110bb5a7720772a8526441ad2": {
+        "prefix": "mmungsbild der Bev\u00f6lkerung selbst abstimmen; Hertie-Kollegiat Marius Kr\u00fcger sammelte durch Crowdfunding 35.000 Euro f\u00fcr seine App-Idee",
+        "sha256": "49f63541cf3a123ea33ad9d4842bb1a647d6463b7964c3800b88daaa8f4c674b",
+        "suffix": "Die Nutzer haben die M\u00f6glichkeit, sich \u00fcber die Antr\u00e4ge der Fraktionen zu informieren, den Stand der Gesetze zu verfolgen und selbst ihre Stimme abzu",
+        "text": "Mit der App DEMOCRACY startet am 1. Oktober die bundesweit erste App, mit der sich B\u00fcrgerinnen und B\u00fcrger einen Echtzeit-Einblick in die Gesetzesfindung des Deutschen Bundestages verschaffen k\u00f6nnen. Die Nutzer haben die M\u00f6glichkeit, sich \u00fcber die Antr\u00e4ge der Fraktionen zu informieren, den Stand der Gesetze zu verfolgen und selbst ihre Stimme abzugeben. \u201eStudien zeigen, dass sich die B\u00fcrgerinnen und B\u00fcrger mehr Transparenz und politische Beteiligungsm\u00f6glichkeiten w\u00fcnschen als nur alle vier Jahre ihr Kreuzchen zu machen\u201c, sagt Kollegiat des Hertie-Innovationskollegs Marius Kr\u00fcger (24). \u201eZudem vertrauen immer weniger Menschen dem Regierungshandeln. Diese sp\u00fcrbare Unzufriedenheit brachte mich auf die Idee, eine App f\u00fcr transparentere Demokratie zu entwickeln.\u201c"
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "4e5dd38efcb0a295598dfa0ac6482cdba414274110bb5a7720772a8526441ad2": true
+    }
+  },
+  "https://www.globenewswire.com/news-release/2021/06/09/2244148/0/en/sinch-ab-publ-sinch-to-acquire-messagemedia-accelerating-growth-with-small-and-medium-sized-businesses.html": {
+    "checked": "2026-08-15",
+    "content_hash": "009a96ea9a515ead16d1ad1c4af55e2344226c3ebcf0437a1837bdc2b2207ec0",
+    "contexts": {
+      "238270711d72c16e83bb7492d56548bb599b06218237aca886821a947ab24bca": {
+        "prefix": "ssageMedia, a leader in mobile messaging solutions for small and medium-sized businesses in the United States and Australia, New Zealand, and Europe.",
+        "sha256": "009a96ea9a515ead16d1ad1c4af55e2344226c3ebcf0437a1837bdc2b2207ec0",
+        "suffix": ". Using yesterday\u2019s USD/SEK exchange rate of 8.27, this corresponds to an enterprise value of SEK 10,745 million. MessageMedia offers a web-base",
+        "text": "Sinch AB (publ), a global leader in cloud communications for mobile customer engagement, has entered into a definitive agreement to acquire MessageMedia, a leader in mobile messaging solutions for small and medium-sized businesses in the United States and Australia, New Zealand, and Europe. Sinch will pay a total enterprise value of USD 1.3 billion, with a total cash consideration of USD 1.1 billion and 1,128,487 new shares in Sinch. Using yesterday\u2019s USD/SEK exchange rate of 8.27, this corresponds to an enterprise value of SEK 10,745 million."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "238270711d72c16e83bb7492d56548bb599b06218237aca886821a947ab24bca": true
+    }
+  },
   "https://www.govtech.com/civic/New-Global-Civic-Tech-Group-Emerges-from-The-Omidyar-Group.html": {
-    "checked": "2026-08-13",
+    "checked": "2026-08-14",
     "content_hash": "5739cf6dbe8712a5009711e87e8ab0803df92b1c7c79276d3d8ba6ce59d733fe",
     "contexts": {
       "b760e0c84485e81c48f2e2736d61b2b8c93b021ba2280b9c00eabb9487273a25": {
@@ -899,7 +2485,7 @@
     }
   },
   "https://www.icnl.org/resources/civic-freedom-monitor/rwanda": {
-    "checked": "2026-08-12",
+    "checked": "2026-08-14",
     "content_hash": "b3bdb7ecb644bffa1bf4b7516d2c69833b80f69cacb5e7cd80aedc931dc77a39",
     "contexts": {
       "2b55a3224952d9fe777d1b984c2c9944d917b9ac322f0b8429921d85b145d6a7": {
@@ -913,6 +2499,23 @@
     "last_modified": null,
     "verified": {
       "2b55a3224952d9fe777d1b984c2c9944d917b9ac322f0b8429921d85b145d6a7": true
+    }
+  },
+  "https://www.influencewatch.org/non-profit/healthy-democracy/": {
+    "checked": "2026-08-14",
+    "content_hash": "464fb6d16d10ee9d99ab9f899e243fd99620ecb9ddd704d1aad3a76b407ae01a",
+    "contexts": {
+      "5aca62386ad7698c6e7c2d439bdba747c25433cb29e314ebf42ffac88fdc0566": {
+        "prefix": "res. The Reviews were evaluated by University of Washington professor John Gastil who was funded by a grant from National Science Foundation. 1",
+        "sha256": "464fb6d16d10ee9d99ab9f899e243fd99620ecb9ddd704d1aad3a76b407ae01a",
+        "suffix": ", giving it a governance team and full authorization to select panels of reviewers. Healthy Democracy was selected to do the first reviews in 2012, wi",
+        "text": "In 2011, Oregon state legislators sponsored House Bill 2634 which made the Citizens\u2019 Initiative Review (CIR) process an official and permanent part of Oregon\u2019s elections, giving it a governance team and full authorization to select panels of reviewers. Healthy Democracy was selected to do the first reviews in 2012, with John Gastil continuing to study the CIR process for academic insight. In 2014, Healthy Democracy undertook a county-level initiative review in Jackson County, Oregon, and out-of-state CIR pilots in Colorado and Phoenix, Arizona. 2"
+      }
+    },
+    "etag": null,
+    "last_modified": "Fri, 14 Aug 2026 02:08:29 GMT",
+    "verified": {
+      "5aca62386ad7698c6e7c2d439bdba747c25433cb29e314ebf42ffac88fdc0566": true
     }
   },
   "https://www.institutoupdate.org.br": {
@@ -933,7 +2536,7 @@
     }
   },
   "https://www.institutoupdate.org.br/quem-somos/": {
-    "checked": "2026-08-13",
+    "checked": "2026-08-14",
     "content_hash": "ce7de03943e79e28f9fd0e1cb206901aabd883e35b18d25e115c697936d8d906",
     "contexts": {
       "ce7de03943e79e28f9fd0e1cb206901aabd883e35b18d25e115c697936d8d906": {
@@ -949,8 +2552,93 @@
       "ce7de03943e79e28f9fd0e1cb206901aabd883e35b18d25e115c697936d8d906": true
     }
   },
+  "https://www.labsus.org/chi-siamo/": {
+    "checked": "2026-08-14",
+    "content_hash": "e1fde2cce5c1c2c169de201bbc72f56013fc9be23a1a46259023f63de009ca0d",
+    "contexts": {
+      "ca329cbba779ca6fa7c520d965034b819c28ad399936ceb89a2a8ea7db4566c5": {
+        "prefix": "Chi siamo",
+        "sha256": "e1fde2cce5c1c2c169de201bbc72f56013fc9be23a1a46259023f63de009ca0d",
+        "suffix": ", fondato su una certezza. La certezza \u00e8 che le persone sono portatrici non solo di bisogni ma anche di capacit\u00e0 e che \u00e8 possibile che queste capacit\u00e0",
+        "text": "Il Progetto Labsus, il Laboratorio per la sussidiariet\u00e0, ha un obiettivo ben preciso, fondato su una certezza. La certezza \u00e8 che le persone sono portatrici non solo di bisogni ma anche di capacit\u00e0 e che \u00e8 possibile che queste capacit\u00e0 siano messe a disposizione della comunit\u00e0 per contribuire a dare soluzione, insieme con le amministrazioni pubbliche, ai problemi di interesse generale."
+      }
+    },
+    "etag": null,
+    "last_modified": "Tue, 07 Jul 2026 09:28:55 GMT",
+    "verified": {
+      "ca329cbba779ca6fa7c520d965034b819c28ad399936ceb89a2a8ea7db4566c5": true
+    }
+  },
+  "https://www.lcps-lebanon.org/en/about": {
+    "checked": "2026-08-14",
+    "content_hash": "99cdfdb6c2c1b89d7ed7ec193d5df152ba8e8deca92040727928754901aa84ff",
+    "contexts": {
+      "dcdf3c83bd6362ebde6b230b820a2b7af0b4deda87c90d048f17a5daa3cd4b1e": {
+        "prefix": "e organization: Influencing As part of its mission to shape policy, LCPS has directly engaged with decision makers, including",
+        "sha256": "99cdfdb6c2c1b89d7ed7ec193d5df152ba8e8deca92040727928754901aa84ff",
+        "suffix": "and the 2014 draft decentralization law. In 2013 and 2014, LCPS and the Lebanese Petroleum Administration convened roundtable discussions on the futu",
+        "text": "As part of its mission to shape policy, LCPS has directly engaged with decision makers, including contributing to formulating the 2006 Boutros draft electoral law and the 2014 draft decentralization law. In 2013 and 2014, LCPS and the Lebanese Petroleum Administration convened roundtable discussions on the future of Lebanese oil and gas with experts and members of civil society. In 2014 and 2015, LCPS also launched a series of meetings between the Ministry of Industry and industrialists to address outstanding issues which have hampered production and exports. In 2021, LCPS engaged with international organizations and civil society to influence the debate on how to use Lebanon\u2019s share of the International Monetary Fund special drawing rights."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "dcdf3c83bd6362ebde6b230b820a2b7af0b4deda87c90d048f17a5daa3cd4b1e": true
+    }
+  },
+  "https://www.masslbp.com/about": {
+    "checked": "2026-08-14",
+    "content_hash": "90b7b8d75b71ba9462fcf179942e61cc0b6463144784abb61997ec00cc12d76c",
+    "contexts": {
+      "c86437b5843e2fe1380cb202ebe6c0a08a62c30e72f87fb9857baf3672831b33": {
+        "prefix": "Peter MacLeod (he/him) is the founder and principal of MASS LBP, and one of Canada\u2019s leading experts in public engagement and deliberative democracy.",
+        "sha256": "90b7b8d75b71ba9462fcf179942e61cc0b6463144784abb61997ec00cc12d76c",
+        "suffix": "while popularizing the use of Civic Lotteries and Citizens\u2019 Assemblies, and earning international recognition for its work. Peter frequently wr",
+        "text": "Peter MacLeod (he/him) is the founder and principal of MASS LBP, and one of Canada\u2019s leading experts in public engagement and deliberative democracy. Since its founding in 2007, MASS has completed more than 200 major policy projects for governments and public agencies across Canada while popularizing the use of Civic Lotteries and Citizens\u2019 Assemblies, and earning international recognition for its work."
+      }
+    },
+    "etag": "W/\"95aa3a4b0d6c6c984be7345e8778d4ac\"",
+    "last_modified": null,
+    "verified": {
+      "c86437b5843e2fe1380cb202ebe6c0a08a62c30e72f87fb9857baf3672831b33": true
+    }
+  },
+  "https://www.masslbp.com/work-panels": {
+    "checked": "2026-08-14",
+    "content_hash": "201ce8f32676a307e7c15c13df5f831d0246fafd2b72e9c02cfb51208aac4e13",
+    "contexts": {
+      "201ce8f32676a307e7c15c13df5f831d0246fafd2b72e9c02cfb51208aac4e13": {
+        "prefix": "op Series Biobanking in BC: A Deliberative Public Consultation (Civic Lottery) 2009",
+        "sha256": "201ce8f32676a307e7c15c13df5f831d0246fafd2b72e9c02cfb51208aac4e13",
+        "suffix": "ENGAGE 2009: Workshop on Health Services and Integration Planning & Citizens\u2019 Reference Panel on Regional Health Priorities E",
+        "text": "Central LHIN Citizens\u2019 Reference Panel on Regional Health Priorities"
+      }
+    },
+    "etag": "W/\"92f76afe1e48e1db645d49896ec45bc4\"",
+    "last_modified": null,
+    "verified": {
+      "201ce8f32676a307e7c15c13df5f831d0246fafd2b72e9c02cfb51208aac4e13": true
+    }
+  },
+  "https://www.mcconnellfoundation.ca/funding-database/ethelo/": {
+    "checked": "2026-08-14",
+    "content_hash": "a44b3889fff2a173b2e8f9d798a7506ca1fa690f35719ab69d6b81a1a70d58ec",
+    "contexts": {
+      "c6a56ff2457811cb6a856aa80c1b482c34f40ec024488d3d02d26871c5cea2c7": {
+        "prefix": "January 8, 2020 Ethelo Share This Background of the organization:",
+        "sha256": "a44b3889fff2a173b2e8f9d798a7506ca1fa690f35719ab69d6b81a1a70d58ec",
+        "suffix": "Ethelo is comprised of two entities. First, Ethelo Decisions, a technology company dedicated to helping organizations focus collective intelligence t",
+        "text": "Founded in 2011, Ethelo is dedicated to advancing new forms of democracy using internet technology. Ethelo is comprised of two entities. First, Ethelo Decisions, a technology company dedicated to helping organizations focus collective intelligence to make good decisions more quickly; second, Ethelo Democracy, a non-profit society dedicated to a more effective, citizen-engaged democracy. Ethelo Decisions undertakes commercial projects to fund the development of the Ethelo technology, which is provided to Ethelo Democracy and its partners for the cost of hardware."
+      }
+    },
+    "etag": "\"6647-1786713908;br\"",
+    "last_modified": null,
+    "verified": {
+      "c6a56ff2457811cb6a856aa80c1b482c34f40ec024488d3d02d26871c5cea2c7": true
+    }
+  },
   "https://www.mmzy.org.cn/mmgk/jianjie/11796.aspx": {
-    "checked": "2026-08-13",
+    "checked": "2026-08-14",
     "content_hash": "f4bd3fd3b32f0c1cb42d485a26ed67a2e99278d96b879b0d4527463f89fe1a0a",
     "contexts": {
       "4cb187c2805ff536c6187505c77bc60560fbfdd1c128edf34ad67c1534fd3423": {
@@ -967,14 +2655,14 @@
     }
   },
   "https://www.mysociety.org/about/": {
-    "checked": "2026-08-12",
-    "content_hash": "82e7b4b5c5b139db029fa50b163e84e2c5e0c6edd6cdefe1f7c915b6627ac0bf",
+    "checked": "2026-08-15",
+    "content_hash": "52d9e0812b0b0946fd3970c50c5c9b87c5f75370aefb8e3917a3191793719b33",
     "contexts": {
       "386cf456651ac8ec5c84521090f481775dc04a2623290a7dbdc4f61798f30752": {
         "prefix": "Subscribe Donate Search for: Home Hello, we\u2019re mySociety",
-        "sha256": "82e7b4b5c5b139db029fa50b163e84e2c5e0c6edd6cdefe1f7c915b6627ac0bf",
-        "suffix": "Established in 2003, we are the UK-based charity behind FixMyStreet , TheyWorkForYou , WhatDoTheyKnow , WriteToThem \u2014 and other empowering online too",
-        "text": "mySociety is a trusted, collaborative and evidence-driven organisation with a long history of leading in civic tech. Established in 2003, we are the UK-based charity behind FixMyStreet , TheyWorkForYou , WhatDoTheyKnow , WriteToThem \u2014 and other empowering online tools."
+        "sha256": "52d9e0812b0b0946fd3970c50c5c9b87c5f75370aefb8e3917a3191793719b33",
+        "suffix": "Established in 2003, we are the UK-based charity behind FixMyStreet, TheyWorkForYou, WhatDoTheyKnow, WriteToThem \u2014 and other empowering online tools.",
+        "text": "mySociety is a trusted, collaborative and evidence-driven organisation with a long history of leading in civic tech. Established in 2003, we are the UK-based charity behind FixMyStreet, TheyWorkForYou, WhatDoTheyKnow, WriteToThem \u2014 and other empowering online tools."
       }
     },
     "etag": null,
@@ -984,7 +2672,7 @@
     }
   },
   "https://www.ndi.org/sites/default/files/2025-04/No-6-Lessons-from-Namfrel-and-Gong---NDI-Sustaining-the-Fight-for-Democracy-Lessons-from-Citizen-Election-Monitoring-Organizations-Around-the-World.pdf": {
-    "checked": "2026-08-12",
+    "checked": "2026-08-15",
     "content_hash": "5fbe15a7c0d48360371d472f99eff320fa0f3029c79696caec929e92ea2e44cd",
     "contexts": {
       "dc694bf6a0921fdcc3efc773bfb68958a891b71e07cb46f8d87ec0e71a802869": {
@@ -999,9 +2687,36 @@
       "dc694bf6a0921fdcc3efc773bfb68958a891b71e07cb46f8d87ec0e71a802869": true
     }
   },
+  "https://www.nesta.org.uk/feature/new-radicals-2016/democracy-club/": {
+    "checked": "2026-08-14",
+    "content_hash": "6eb4446fd4258c1f5ba672e595136f6f9eb83ea5370fbb268635344181da6327",
+    "contexts": {
+      "cc28d4301a6779773f43856e1f6c111bba0055dab43f79dedca4a22282f800e8": {
+        "prefix": "possible about the upcoming 2015 election. Working with Democracy Club, which he co-founded with Joe Mitchell, he succeeded in this aim, after",
+        "sha256": "6eb4446fd4258c1f5ba672e595136f6f9eb83ea5370fbb268635344181da6327",
+        "suffix": ". Democracy Club\u2019s data was used by a number of national newspapers and by organisations such as Google. Over a million people directly used its",
+        "text": "Working with Democracy Club, which he co-founded with Joe Mitchell, he succeeded in this aim, after crowdsourcing the most comprehensive and accurate database of candidates in recent electoral history."
+      }
+    },
+    "etag": null,
+    "last_modified": "Fri, 14 Aug 2026 02:07:46 GMT",
+    "verified": {
+      "cc28d4301a6779773f43856e1f6c111bba0055dab43f79dedca4a22282f800e8": true
+    }
+  },
+  "https://www.newdemocracy.com.au/board-and-executive/": {
+    "checked": "2026-08-15",
+    "content_hash": "f82fb37738cf86f81a3f595391ff5b26fa3727e20672f5e910b8899dc2578be2",
+    "contexts": {},
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "da67029ed5ea52da45e84dcad34c4538e72b4fbda8f0cef37336baee4ed65ce1": false
+    }
+  },
   "https://www.newdemocracy.com.au/history/": {
-    "checked": "2026-08-12",
-    "content_hash": "f3919e944ca7bd379d685285a218d052e4723264fc242cf7461d0d79059ed3d4",
+    "checked": "2026-08-15",
+    "content_hash": "3edb657c20fca0f0a9cdadc1ef77a88b61171ac8ba192143400233fa5bfa776b",
     "contexts": {},
     "etag": null,
     "last_modified": null,
@@ -1010,7 +2725,7 @@
     }
   },
   "https://www.oaf.org.au/2022/03/23/senator-for-nsw-andrew-bragg-threatens-openaustralia-foundation-with-legal-action/": {
-    "checked": "2026-08-12",
+    "checked": "2026-08-15",
     "content_hash": "d29f03044da8e598f3eeb34d7ac6f647fe999c30fb763f295c66e4d61773149a",
     "contexts": {
       "292a5491284943180173e19421b4b1906053adf3c0b79e98d2736277bfe08b0a": {
@@ -1021,30 +2736,57 @@
       }
     },
     "etag": null,
-    "last_modified": "Wed, 12 Aug 2026 09:50:25 GMT",
+    "last_modified": "Sat, 15 Aug 2026 16:12:16 GMT",
     "verified": {
       "292a5491284943180173e19421b4b1906053adf3c0b79e98d2736277bfe08b0a": true
     }
   },
+  "https://www.opendemocracy.net/en/can-europe-make-it/agora-votingnvotes/": {
+    "checked": "2026-08-15",
+    "content_hash": "6024da051527620151690406a06e01ed99351ac47b7ad30afa968ca1836523af",
+    "contexts": {},
+    "etag": "W/\"24563-Q0a1DH2YdNdo2pdvAThAZAGA/v0\"",
+    "last_modified": null,
+    "verified": {
+      "6af77572e19c01f07ceb0d60910df68777c10dbaaa7e6bd289cf8fce49a116f7": false
+    }
+  },
+  "https://www.participatorybudgeting.org/about/": {
+    "checked": "2026-08-14",
+    "content_hash": "9caecfe4a8b685cef6c9963bd4658b0495569e80536ad3c4c8f43b9e90ca8ce1",
+    "contexts": {
+      "777e4c79a8cc8c7cc1a10ca73595cdb41c5cd496240d6024994af6b1239f3882": {
+        "prefix": "participatory budgeting (PB) processes that deepen democracy, build stronger communities, and make public budgets more equitable and effective.",
+        "sha256": "9caecfe4a8b685cef6c9963bd4658b0495569e80536ad3c4c8f43b9e90ca8ce1",
+        "suffix": ", empowering more than 739,000 people to directly decide how to spend over $400 million in public funds.",
+        "text": "Since 2009, PBP has collaborated with grassroots and government partners to launch PB processes in over 40 cities, empowering more than 739,000 people to directly decide how to spend over $400 million in public funds."
+      }
+    },
+    "etag": null,
+    "last_modified": "Thu, 13 Aug 2026 20:29:27 GMT",
+    "verified": {
+      "777e4c79a8cc8c7cc1a10ca73595cdb41c5cd496240d6024994af6b1239f3882": true
+    }
+  },
   "https://www.peoplepowered.org/events-content/athens-democracy-forum-2026": {
-    "checked": "2026-08-13",
-    "content_hash": "3b87965af0deaf9932ac9ee22874e190bd31f3f219533bcd6171a4943a40ae7a",
+    "checked": "2026-08-14",
+    "content_hash": "e3d0e071556ae2a7a7d9b507eb0ce2f3fc3442e66dac4591ba168f9b89d167b4",
     "contexts": {
       "a38f319c15fc154b61a460f9f8afdef8ba9041ec10117f4a88d55970546863a7": {
         "prefix": "\ud83d\udcc5 September 29 \u2013 October 1, 2026 \ud83d\udccd Athens, Greece \ud83d\udd17 https://www.athensdemocracyforum.com/",
-        "sha256": "3b87965af0deaf9932ac9ee22874e190bd31f3f219533bcd6171a4943a40ae7a",
-        "suffix": ". Organized by the Democracy & Culture Foundation in association with The New York Times , the Forum asks both a philosophical and operational questi",
-        "text": "The Athens Democracy Forum returns for its 14th edition, convening in the Greek capital from 29 September \u2013 1 October 2026 . Organized by the Democracy & Culture Foundation in association with The New York Times , the Forum asks both a philosophical and operational question: Why democracy \u2014 and how must it evolve to be fit for purpose in the 21st century?"
+        "sha256": "e3d0e071556ae2a7a7d9b507eb0ce2f3fc3442e66dac4591ba168f9b89d167b4",
+        "suffix": ". Organized by the Democracy & Culture Foundation in association with The New York Times, the Forum asks both a philosophical and operational question",
+        "text": "The Athens Democracy Forum returns for its 14th edition, convening in the Greek capital from 29 September \u2013 1 October 2026. Organized by the Democracy & Culture Foundation in association with The New York Times, the Forum asks both a philosophical and operational question: Why democracy \u2014 and how must it evolve to be fit for purpose in the 21st century?"
       }
     },
-    "etag": "W/\"8d99f3a4fe0bdaae87cbad86870304d8--gzip\"",
+    "etag": "W/\"6bee7b8632bdb9462d1f8d078cc670f6--gzip\"",
     "last_modified": null,
     "verified": {
       "a38f319c15fc154b61a460f9f8afdef8ba9041ec10117f4a88d55970546863a7": true
     }
   },
   "https://www.peoplepowered.org/events-content/gdc-global-forum-2026": {
-    "checked": "2026-08-13",
+    "checked": "2026-08-14",
     "content_hash": "ef02486981b2b65b203557409510c3c5b53692a15e37691785c348135a3dc4f7",
     "contexts": {
       "07265e6c158ad6283a1a87a5c558fbc7620adb41e676a759fcfba3dfce067e87": {
@@ -1054,32 +2796,32 @@
         "text": "The Global Democracy Coalition will hold its annual Global Forum on 1 October 2026 in Athens, working alongside the Athens Democracy Forum. The Forum is conceived not as a traditional conference but as a collective platform for collaboration \u2014 designed to strengthen democratic resilience by aligning actors, pooling resources and amplifying democratic innovations emerging from different regions."
       }
     },
-    "etag": "W/\"2931aa69c55908bee64663c3b706cca2\"",
+    "etag": "W/\"10c75b5ca01ce5e4fdc0e41c975fb7d9--gzip\"",
     "last_modified": null,
     "verified": {
       "07265e6c158ad6283a1a87a5c558fbc7620adb41e676a759fcfba3dfce067e87": true
     }
   },
   "https://www.peoplepowered.org/events-content/oidp-2026": {
-    "checked": "2026-08-13",
-    "content_hash": "2fbb1287958a10cd4aebb9970d93ae112af8864de8608f9d671128f9242fc0dd",
+    "checked": "2026-08-14",
+    "content_hash": "863145bff300bad6c9a10be5364e4ed44e86240750a2252dc4d38e116049b956",
     "contexts": {
       "ecde6a2ee95a466cc9941e7950d391dcb400f52e53a0cd759b4a4ed9e0ce40a3": {
         "prefix": "6 11:00 AM 11:00 krakow Poland (map) Google Calendar ICS",
-        "sha256": "2fbb1287958a10cd4aebb9970d93ae112af8864de8608f9d671128f9242fc0dd",
-        "suffix": ", under the theme \u201cHope and renewal in the face of a global crisis of democracy.\u201d This milestone event invites political leaders, practitioners, acad",
-        "text": "The International Observatory on Participatory Democracy (OIDP) will return for its 25th annual conference in Krak\u00f3w from 21\u201323 September 2026 , under the theme \u201cHope and renewal in the face of a global crisis of democracy.\u201d This milestone event invites political leaders, practitioners, academics and civil society from around the world to reflect on how participatory democracy can respond to pressing global challenges like polarization, climate change, migration and declining trust in democratic institutions \u2014 and how local innovation can inform broader democratic futures."
+        "sha256": "863145bff300bad6c9a10be5364e4ed44e86240750a2252dc4d38e116049b956",
+        "suffix": ", under the theme \u201cHope and renewal in the face of a global crisis of democracy.\u201d This milestone event invites political leaders, practitioners, acade",
+        "text": "The International Observatory on Participatory Democracy (OIDP) will return for its 25th annual conference in Krak\u00f3w from 21\u201323 September 2026, under the theme \u201cHope and renewal in the face of a global crisis of democracy.\u201d This milestone event invites political leaders, practitioners, academics and civil society from around the world to reflect on how participatory democracy can respond to pressing global challenges like polarization, climate change, migration and declining trust in democratic institutions \u2014 and how local innovation can inform broader democratic futures."
       }
     },
-    "etag": "W/\"e0a4bd94a799160c8dd9cfb74758a84a\"",
+    "etag": "W/\"4d88e34ebaa0ab712a07c177cb26785f\"",
     "last_modified": null,
     "verified": {
       "ecde6a2ee95a466cc9941e7950d391dcb400f52e53a0cd759b4a4ed9e0ce40a3": true
     }
   },
   "https://www.peoplepowered.org/events-content/world-forum-for-democracy-2026": {
-    "checked": "2026-08-13",
-    "content_hash": "79f74d7505889ff5938779ab5d4a0ccda14614508a0b857d8d80142b9e2e2658",
+    "checked": "2026-08-14",
+    "content_hash": "a6be8446eeab07c07de4f8699f0a56f3169c0eabf29fc801d9fc38c7b732b202",
     "contexts": {},
     "etag": "W/\"14de2b77af13495f07a436ddf3bd2437\"",
     "last_modified": null,
@@ -1088,7 +2830,7 @@
     }
   },
   "https://www.peoplepowered.org/news-content/digital-participation-case-study-taiwan": {
-    "checked": "2026-08-12",
+    "checked": "2026-08-15",
     "content_hash": "302a97ff4a746653f8e489f47e644e637a3589acb7c57ab81e73833b181f7df4",
     "contexts": {
       "8b1132d10f23f3c8368c2b3e9233c0fb121095a3bdafd9c9521eb699bd32f69d": {
@@ -1098,14 +2840,107 @@
         "text": "vTaiwan has always demonstrated how civic communities can innovate in democratic participation by combining open-source platforms, commercial tools, and AI. Currently, the community integrates tools such as"
       }
     },
-    "etag": "W/\"2108b9cbf5266325de677660b93e1ea4\"",
+    "etag": "W/\"260038a97e481c0ef5216fcd1e1ce003--gzip\"",
     "last_modified": null,
     "verified": {
       "8b1132d10f23f3c8368c2b3e9233c0fb121095a3bdafd9c9521eb699bd32f69d": true
     }
   },
+  "https://www.philanthropy.org.au/news-and-stories/the-susan-mckinnon-foundation-and-monash-university-renew-commitment-to-enhanced-political-leadership/": {
+    "checked": "2026-08-15",
+    "content_hash": "e4169783d71617d9b23833e0208d0448950513ac7136ce892aa5a79b86c170d4",
+    "contexts": {
+      "8784b86eb8660afb843c6fcc89e525763fa433a85fbafdbabe83698f249aac78": {
+        "prefix": "The Susan McKinnon Foundation and Monash University this week announced the renewal of their philanthropic partnership with",
+        "sha256": "e4169783d71617d9b23833e0208d0448950513ac7136ce892aa5a79b86c170d4",
+        "suffix": ". The renewed commitment underscores a shared dedication to fostering high-quality political leadership and enhancing democracy in Australia. Th",
+        "text": "The Susan McKinnon Foundation and Monash University this week announced the renewal of their philanthropic partnership with an investment of more than $25 million over five years from the Foundation to sustain and advance the McKinnon Institute for Political Leadership."
+      },
+      "e2624f36670b20f17933bbb185e3beccb4d997a8f0ab35c07ac498b8bbb77c23": {
+        "prefix": "bold idea into reality. I know he has exciting plans for the Institute and I\u2019m really looking forward to seeing these plans progress,\u201d he said.",
+        "sha256": "77ed1b4f1139124c555224508e8a01c1a0ff3f78ec58a0bad380a46a09a6ae00",
+        "suffix": ", providing tailored coaching and mentoring as well as exposure to some of the world\u2019s best policy experts. Monash University Vice-Chancellor an",
+        "text": "Since it was established in 2019, the Institute has delivered transformative programs to more than 25% of the current MPs across Australia, providing tailored coaching and mentoring as well as exposure to some of the world\u2019s best policy experts."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "8784b86eb8660afb843c6fcc89e525763fa433a85fbafdbabe83698f249aac78": true,
+      "ce66c2c78be01e30116e1180b7e0587e59883109451fe73a33d948381076d8ce": false,
+      "e2624f36670b20f17933bbb185e3beccb4d997a8f0ab35c07ac498b8bbb77c23": true
+    }
+  },
+  "https://www.pressenza.com/de/2017/12/demokratie-echtzeit-neue-app-democracy-erfolgreich-crowdfinanziert/": {
+    "checked": "2026-08-14",
+    "content_hash": "3d04f5dc226d4bc4a2f4b08d8af4e4101599838e34f9dc65741e240f6713b5f1",
+    "contexts": {
+      "5ba19627a56207c7330b1f7693e57c2b55442ad4ff54133c17ccfef57e9bce4a": {
+        "prefix": "ches Crowdfunding Vergangenen Sonntag (26.11.) konnte das sich mittlerweile formierte Team um Kr\u00fcger einen ersten gro\u00dfen Meilenstein verbuchen:",
+        "sha256": "3d04f5dc226d4bc4a2f4b08d8af4e4101599838e34f9dc65741e240f6713b5f1",
+        "suffix": ". \u201cWir freuen uns sehr, dass \u00fcber 580 Unterst\u00fctzer*innen von unserer Idee \u00fcberzeugt sind und uns das Vertrauen schenken. Gemeinsam mit Ihnen arbeiten",
+        "text": "Vergangenen Sonntag (26.11.) konnte das sich mittlerweile formierte Team um Kr\u00fcger einen ersten gro\u00dfen Meilenstein verbuchen: der erfolgreiche Abschluss ihres initialen Crowdfundings sicherte ihnen gut 35.000 \u20ac zweckgebundenes Startkapital f\u00fcr die Programmierung einer ersten Version der App. \u201cWir freuen uns sehr, dass \u00fcber 580 Unterst\u00fctzer*innen von unserer Idee \u00fcberzeugt sind und uns das Vertrauen schenken. Gemeinsam mit Ihnen arbeiten wir die kommenden 4 Monate an der Entwicklung dieses Prototyps\u201d, erl\u00e4utert der Gr\u00fcnder der Initiative Marius Kr\u00fcger den Schritt. \u201cSobald im April 2018 eine erste Version verf\u00fcgbar ist, stellen wir diese unmittelbar unseren Crowdfunding-Unterst\u00fctzer*innen zur Verf\u00fcgung und lassen sie die ersten Tests durchf\u00fchren und die Benutzerf\u00fchrung bewerten\u201d, so Kr\u00fcger weiter. \u201cNach \u00dcberwindung der ersten Kinderkrankheiten soll die Plattform dann Mitte n\u00e4chsten Jahres allgemein zug\u00e4nglich gemacht werden.\u201d"
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "5ba19627a56207c7330b1f7693e57c2b55442ad4ff54133c17ccfef57e9bce4a": true
+    }
+  },
+  "https://www.prsa.org.au/qn/2011a_.html": {
+    "checked": "2026-08-14",
+    "content_hash": "2bf99c710c2ac52fb0a7eb87bbef44ae62b51d8b1fe81067706b27173894c4ac",
+    "contexts": {
+      "b9ec28229861dedd710f20860ea5a0782c65ca6ecdc68f4b3914d82e35f403d7": {
+        "prefix": "rnment\u0092s response on 28 February 2011 did not give reformers early cause for optimism. First PRSA Honorary Life Members",
+        "sha256": "2bf99c710c2ac52fb0a7eb87bbef44ae62b51d8b1fe81067706b27173894c4ac",
+        "suffix": "Each of those members had become eligible by having first been admitted as an Honorary Life Member of a PRSA branch. The longest-standing",
+        "text": "Three PRSA members were admitted as the first ever Honorary Life Members of the PRSA earlier this year. Each of those members had become eligible by having first been admitted as an Honorary Life Member of a PRSA branch."
+      }
+    },
+    "etag": null,
+    "last_modified": "Tue, 07 Nov 2017 08:46:11 GMT",
+    "verified": {
+      "b9ec28229861dedd710f20860ea5a0782c65ca6ecdc68f4b3914d82e35f403d7": true
+    }
+  },
+  "https://www.prsa.org.au/qn/2018b_.html": {
+    "checked": "2026-08-14",
+    "content_hash": "737fcb085cdb24f6ebd9c51a0d698878adf765f286f5f9d9431f8e7849c9295e",
+    "contexts": {
+      "341c062ed86d735aedddd664b3df8a75c4d59214260b4afd0a3e0d9fccc77391": {
+        "prefix": "k by Dr Stephen Morey, PRSA National Secretary This re-launched Quota Notes begins with my tribute to the Society\u0092s long-term",
+        "sha256": "737fcb085cdb24f6ebd9c51a0d698878adf765f286f5f9d9431f8e7849c9295e",
+        "suffix": "In his obituary in The Canberra Times, Malcolm Mackerras AO referred to Bogey as the \u0091father of Hare-Clark in Canberra\u0092, poin",
+        "text": "This re-launched Quota Notes begins with my tribute to the Society\u0092s long-term National President, Bogey Musidlak, who died on 27 August 2017, at the age of 63. Bogey had been President of the PRSA since 1 January 1994, for over 23 years."
+      }
+    },
+    "etag": null,
+    "last_modified": "Fri, 29 Oct 2021 05:32:51 GMT",
+    "verified": {
+      "341c062ed86d735aedddd664b3df8a75c4d59214260b4afd0a3e0d9fccc77391": true
+    }
+  },
+  "https://www.prsa.org.au/qn/50.html": {
+    "checked": "2026-08-14",
+    "content_hash": "ce1168e2bc40800294529f13952aeb5557b4389b17fae9fc4a6d7b9b2f8ed196",
+    "contexts": {
+      "620a3b1a8bb77047003e8ca623579b0f716d6c554ad14a23096d12a75cbdb0eb": {
+        "prefix": "ns) Bill 1988 Past issues of Quota Notes Death of PRSA Founding President (1982-85)",
+        "sha256": "ce1168e2bc40800294529f13952aeb5557b4389b17fae9fc4a6d7b9b2f8ed196",
+        "suffix": "Many members of the Society knew Jack well as a humorous and good-natured man of great intellect and humanity, who, for more than 40 years, wrote abo",
+        "text": "On 13th May 1988, Mr J.F.H.Wright, who was instrumental in establishing the Society as a nation-wide body, died after a brief illness. Many members of the Society knew Jack well as a humorous and good-natured man of great intellect and humanity, who, for more than 40 years, wrote about and campaigned for the adoption and improvement of Proportional Representation for the election of parliaments, councils and committees. Much of Jack's spare time and retirement had been devoted to the cause of electoral reform through PR. By his tireless efforts in writing and publishing on the subject, and in providing expert advice on the system's advantages to those seeking it (and to some that didn't, but needed to know), Jack probably did more to advance the cause of PR than any other single Australian in the 20th Century."
+      }
+    },
+    "etag": null,
+    "last_modified": "Mon, 04 May 2020 08:19:48 GMT",
+    "verified": {
+      "620a3b1a8bb77047003e8ca623579b0f716d6c554ad14a23096d12a75cbdb0eb": true
+    }
+  },
   "https://www.radicalxchange.org/about/": {
-    "checked": "2026-08-12",
+    "checked": "2026-08-15",
     "content_hash": "244f6412e7c68526636b169b60dc572308662e0b13290c07caffdf047e612caa",
     "contexts": {
       "93585aa0a00f2cf98a88445720db53165d4f4aa8b4a7dcc05f495e02260621a3": {
@@ -1122,7 +2957,7 @@
     }
   },
   "https://www.radicalxchange.org/events/2019-conference": {
-    "checked": "2026-08-13",
+    "checked": "2026-08-14",
     "content_hash": "6264021384b8cad5ea6531a2398d14fd4ceb4b4a5b5210e06025c57f982233bc",
     "contexts": {
       "b6955a1bbee95cce161cbd560f0198523a1111ab10df35c8c5bb8cd75ccdba0b": {
@@ -1138,8 +2973,25 @@
       "b6955a1bbee95cce161cbd560f0198523a1111ab10df35c8c5bb8cd75ccdba0b": true
     }
   },
+  "https://www.radicalxchange.org/team/jess-scully/": {
+    "checked": "2026-08-15",
+    "content_hash": "d3a3d62f5a46a4d90930a332cc63859711e441182f58754d2c62e0211868ade6",
+    "contexts": {
+      "d3a3d62f5a46a4d90930a332cc63859711e441182f58754d2c62e0211868ade6": {
+        "prefix": "Team - RadicalxChange Close Jess Scully Executive Director",
+        "sha256": "d3a3d62f5a46a4d90930a332cc63859711e441182f58754d2c62e0211868ade6",
+        "suffix": "She is a Non Executive Director of Parents for Climate, a member of Women for Election\u2019s Political Advisory Board and Senior Associate at the S",
+        "text": "Jess Scully is Executive Director of RadicalxChange and an advocate for civic imagination."
+      }
+    },
+    "etag": "\"a7e6498012b17c4235ed21fe661c6bc1-ssl-df\"",
+    "last_modified": null,
+    "verified": {
+      "d3a3d62f5a46a4d90930a332cc63859711e441182f58754d2c62e0211868ade6": true
+    }
+  },
   "https://www.socentral.no/aktuelt": {
-    "checked": "2026-08-12",
+    "checked": "2026-08-14",
     "content_hash": "dfbf3858f54052eab03274ccfd8bfc80f65b26c639c8c763a497e585034fd55a",
     "contexts": {
       "060cb057585ce03f9195d26d6e0ff9ef987771983982859437e3fbb7d053d445": {
@@ -1150,7 +3002,7 @@
       }
     },
     "etag": null,
-    "last_modified": "Tue, 11 Aug 2026 22:15:52 GMT",
+    "last_modified": "Thu, 13 Aug 2026 22:19:39 GMT",
     "verified": {
       "060cb057585ce03f9195d26d6e0ff9ef987771983982859437e3fbb7d053d445": true
     }
@@ -1166,7 +3018,7 @@
     }
   },
   "https://www.socentral.no/english": {
-    "checked": "2026-08-12",
+    "checked": "2026-08-14",
     "content_hash": "20cf27b55a5d0dc70a935747f9b0a909c29e8b43df1c4253bb71633200a764d2",
     "contexts": {
       "e9727a46395a649f719290388f82e96c6f5ce2e4db6dab33ce4ced13346cc8c4": {
@@ -1180,6 +3032,189 @@
     "last_modified": "Sun, 09 Aug 2026 17:40:59 GMT",
     "verified": {
       "e9727a46395a649f719290388f82e96c6f5ce2e4db6dab33ce4ced13346cc8c4": true
+    }
+  },
+  "https://www.sortitionfoundation.org/amplifying_voices_on_housing": {
+    "checked": "2026-08-14",
+    "content_hash": "2224993e2850071296d14ded7ab206ddbf59c8feddf3af3b2270a6685fb35de6",
+    "contexts": {
+      "6c9bfaedf01881883bdff59004faa2111f46ad4353d2f243ea30de72da504b15": {
+        "prefix": "Client Case Studies Amplifying voices on housing 30 March, 2025 Amplifying voices on housing",
+        "sha256": "2224993e2850071296d14ded7ab206ddbf59c8feddf3af3b2270a6685fb35de6",
+        "suffix": "They were asked: How can Australians get a fair go at housing now and into the future? We recruited the participants over 11 demographic",
+        "text": "On 28 January 2025, we selected 120 participants for AMPLIFY National Housing AMPLIFICATION, a ground-breaking national deliberative process bringing Australians from across the continent together in Sydney for a weekend of deliberation from Friday 21 to Sunday 23 February 2025. They were asked:"
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "6c9bfaedf01881883bdff59004faa2111f46ad4353d2f243ea30de72da504b15": true
+    }
+  },
+  "https://www.sortitionfoundation.org/australia_update": {
+    "checked": "2026-08-14",
+    "content_hash": "c5cb8783879bf1eb464556df6485d03c6c950a4700f35a2c0a41dd98a82179c1",
+    "contexts": {
+      "ee7b46512566846194f168827c07bf678e45c5e4af077f562782697abe7f36b4": {
+        "prefix": "n. With Council Plans due this year, there have been lots of deliberative panels - and many of these have been chosen through random selection.",
+        "sha256": "c5cb8783879bf1eb464556df6485d03c6c950a4700f35a2c0a41dd98a82179c1",
+        "suffix": ", followed by choosing a demographically representative cohort using our selection software, the fairest algorithm in the world. To take one exa",
+        "text": "Since January 2020, we've helped conduct independent selections, based on demographic criteria and on the fairest algorithm for random selection, in 11 councils, with seven of those using the 'gold standard' of sending out letters to randomly selected addresses, followed by choosing a demographically representative cohort using our selection software, the fairest algorithm in the world."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "ee7b46512566846194f168827c07bf678e45c5e4af077f562782697abe7f36b4": true
+    }
+  },
+  "https://www.sortitionfoundation.org/become_a_member_australia": {
+    "checked": "2026-08-14",
+    "content_hash": "8252ba80f0cbb1d791ff8cd8b5872c27e4f11fde9e1d2df7e23773be63ba74a4",
+    "contexts": {
+      "f0d9f84381b92c97bcf1f0ddc129417fe3ea0483b8279ad79bc075cc201659ba": {
+        "prefix": "Sortition Foundation Australia Chapter 03 September, 2020 Sortition Foundation Australia Chapter",
+        "sha256": "8252ba80f0cbb1d791ff8cd8b5872c27e4f11fde9e1d2df7e23773be63ba74a4",
+        "suffix": "if you want to help, or just want to learn more about sortition in Australia. The Sortition Foundation Australia Chapter meets once a month onl",
+        "text": "We want to change the way politics is done in Australia! Join us if you want to help, or just want to learn more about sortition in Australia."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "f0d9f84381b92c97bcf1f0ddc129417fe3ea0483b8279ad79bc075cc201659ba": true
+    }
+  },
+  "https://www.sortitionfoundation.org/ecps_2025": {
+    "checked": "2026-08-14",
+    "content_hash": "e68c639682af8645dfa561c38b58792fdec558d0e0b5255062b2c9424363b318",
+    "contexts": {},
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "f17590386deaa19fd3088fc7fb291712a7519d31aedf4bcf27d6c7324a68d326": false
+    }
+  },
+  "https://www.sortitionfoundation.org/gm_polling_may_2026": {
+    "checked": "2026-08-14",
+    "content_hash": "5d5fea50d84db458511c9444616083aaba007fbaca96e695e5f05d1b07d61a9b",
+    "contexts": {},
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "532201edf6a343fbcffefd73a71ea2da04f10c9279b4b2575e2cd08bb3ed7800": false
+    }
+  },
+  "https://www.sortitionfoundation.org/introducing_the_open_democratic_lottery_platform": {
+    "checked": "2026-08-14",
+    "content_hash": "c89b222c503bde006daa8f785412fc3d77d57189bdbbb23bb956dfbdca2468b0",
+    "contexts": {
+      "0b3365698aa53adaff7dc1203d5fc1464d83ea0e786a8c44aaade745adc6fbdc": {
+        "prefix": "OpenDLP). Sortition Lab is where we develop tools and applications to support and enhance the work we and our partners do to upgrade democracy.",
+        "sha256": "c89b222c503bde006daa8f785412fc3d77d57189bdbbb23bb956dfbdca2468b0",
+        "suffix": "Work began earlier this year on what will be a three-year project in total. Since we started Sortition Foundation in 2017 we have run these sor",
+        "text": "Sortition Lab is where we develop tools and applications to support and enhance the work we and our partners do to upgrade democracy. Last year we secured funding to build OpenDLP, a brand new open-source digital platform that will make democratic lotteries more inclusive by automating the process for selecting participants for citizens' assemblies. Work began earlier this year on what will be a three-year project in total."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "0b3365698aa53adaff7dc1203d5fc1464d83ea0e786a8c44aaade745adc6fbdc": true
+    }
+  },
+  "https://www.sortitionfoundation.org/uk_poll_may_2025": {
+    "checked": "2026-08-14",
+    "content_hash": "76cbc4516cc42d9b46da26b9ffbcd00d0a59014ef0164e2d43e5fdd494894510",
+    "contexts": {
+      "76cbc4516cc42d9b46da26b9ffbcd00d0a59014ef0164e2d43e5fdd494894510": {
+        "prefix": "K polling May 2025 08 May, 2025 New poll finds widespread support for replacing the House of Lords",
+        "sha256": "76cbc4516cc42d9b46da26b9ffbcd00d0a59014ef0164e2d43e5fdd494894510",
+        "suffix": "Polling published today on trust and House of Lords reform show that 2024 Reform voters trust citizen assembly members more, and members of par",
+        "text": "43% of British adults, including 46% of adults living in the North, say that replacing the House of Lords with a citizens' assembly would increase their trust in politics"
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "76cbc4516cc42d9b46da26b9ffbcd00d0a59014ef0164e2d43e5fdd494894510": true
+    }
+  },
+  "https://www.sortitionfoundation.org/updates": {
+    "checked": "2026-08-14",
+    "content_hash": "05e23ba79346effd609cc1870a89e497347acc7aeef95914a4a5fce483609883",
+    "contexts": {
+      "150fd71baf8893dbc2177e200ec31f46c487ac7f74a30b4b4dda3fd71d7423ab": {
+        "prefix": "Home Learn more Read Our Latest News Latest News 26 February,",
+        "sha256": "05e23ba79346effd609cc1870a89e497347acc7aeef95914a4a5fce483609883",
+        "suffix": "18 June, 2026 We're looking for a new Independent Director Jobs",
+        "text": "26 February, 2026 Frontiers of Democratic Lotteries Workshop"
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "150fd71baf8893dbc2177e200ec31f46c487ac7f74a30b4b4dda3fd71d7423ab": true
+    }
+  },
+  "https://www.transparency.org.nz/our-story": {
+    "checked": "2026-08-14",
+    "content_hash": "7d842a326f518a91bb7fa3c51bcf71fc549de4ad240055b614b6126893a20a45",
+    "contexts": {
+      "cbc4b7b7b126a6120d54a688818f8ac6e4fb5f46cd3ec77a28a78c82670e7245": {
+        "prefix": "ards corruption, bribery and organised crime within governments and businesses. \u200d The New Zealand chapter was formed a few years later in 1999.",
+        "sha256": "7d842a326f518a91bb7fa3c51bcf71fc549de4ad240055b614b6126893a20a45",
+        "suffix": "Global successes include the creation of international anti-corruption conventions (such as UNCAC); the reporting of corruption through Legal A",
+        "text": "The New Zealand chapter was formed a few years later in 1999. and it became an incorporated society and charity in 2001."
+      }
+    },
+    "etag": null,
+    "last_modified": "Fri, 07 Aug 2026 20:01:37 GMT",
+    "verified": {
+      "cbc4b7b7b126a6120d54a688818f8ac6e4fb5f46cd3ec77a28a78c82670e7245": true
+    }
+  },
+  "https://www.wedodemocracy.dk/event/join-a-democracy-fitness-trainer-camp-in-copenhagen/": {
+    "checked": "2026-08-14",
+    "content_hash": "f97037c99610386f135c0550118134ca3b5f4c1d8a7c9a4cdb6694ac9eda1e67",
+    "contexts": {
+      "370d2914181e6cd47f407d2cda5bb50aa10685ed49be1eeaf797082689715767": {
+        "prefix": "essionally with democracy, facilitation, education and the like? Now you can become part of the global community of Democracy Fitness trainers!",
+        "sha256": "f97037c99610386f135c0550118134ca3b5f4c1d8a7c9a4cdb6694ac9eda1e67",
+        "suffix": "As the Nordic Democracy Fitness partner, We Do Democracy is proud to co-host the Trainer Camp with Democracy Fitness Global. What do I get out",
+        "text": "Join the open international Democracy Fitness camp this September in Copenhagen to learn new facilitation methods and get a deeper understanding of democracy as something that needs training. As the Nordic Democracy Fitness partner, We Do Democracy is proud to co-host the Trainer Camp with Democracy Fitness Global."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "370d2914181e6cd47f407d2cda5bb50aa10685ed49be1eeaf797082689715767": true
+    }
+  },
+  "https://www.wisdomandaction.com.au/": {
+    "checked": "2026-08-15",
+    "content_hash": "093e6afce3be88ff08491be4a68365e5ebafd4769594f98cd120474ea9daa932",
+    "contexts": {},
+    "etag": null,
+    "last_modified": "Wed, 12 Aug 2026 02:40:11 GMT",
+    "verified": {
+      "9589f103a07f2e4200cd0e9f25b7e415aa22c030e2b4cad981e961485fd96a7f": true
+    }
+  },
+  "https://www.ycombinator.com/companies/democracy-earth": {
+    "checked": "2026-08-14",
+    "content_hash": "c90ae5009c68609175d2ffdf4bbd2a6e9e059cbef1a72cfb6e371fb42fc70d88",
+    "contexts": {
+      "c90ae5009c68609175d2ffdf4bbd2a6e9e059cbef1a72cfb6e371fb42fc70d88": {
+        "prefix": "nd Singularity University (2016). We did research for Alphabet, World Economic Forum and the University of Berkeley.",
+        "sha256": "c90ae5009c68609175d2ffdf4bbd2a6e9e059cbef1a72cfb6e371fb42fc70d88",
+        "suffix": "Guido Vilari\u00f1o Founder Footer Y Combinator",
+        "text": "Democracy Earth Founded: 2015 Batch: Winter 2015 Team Size: 2 Status: Active Location: Madrid, Spain Founders Pia Mancini Founder Pia Mancini Founder Santiago Siri Founder/President Santiago Siri Founder/President Guido Vilari\u00f1o Founder"
+      }
+    },
+    "etag": "W/\"db9526ecd09a4cad75c0bc0070ba54d1\"",
+    "last_modified": null,
+    "verified": {
+      "c90ae5009c68609175d2ffdf4bbd2a6e9e059cbef1a72cfb6e371fb42fc70d88": true
     }
   }
 }

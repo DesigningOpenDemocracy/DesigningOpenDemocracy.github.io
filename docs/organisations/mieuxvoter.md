@@ -22,6 +22,27 @@ location:
   name: France
   precision: city
 news_page: https://mieuxvoter.fr/presse
+events:
+- date: '2018-01-01'
+  title: Association founded in France to promote Majority Judgment voting
+  url: https://mieuxvoter.fr/en/qui-sommes-nous
+  quote: Better Vote is an association created in January 2018, with hundreds members
+    around France and the world.
+  proof_level: high
+  url_checked: '2026-08-14'
+- date: '2022-01-27'
+  title: 2022 French People's Primary conducted under Majority Judgment — the method's
+    largest political election to date
+  url: https://www.bienpublic.com/elections/2022/01/27/primaire-populaire-qu-est-ce-que-le-jugement-majoritaire
+  quote: la Primaire populaire sera la plus grosse élection politique jamais réalisée
+    au jugement majoritaire
+  note: MieuxVoter co-founder and president Chloé Ridel described the People's Primary
+    as Majority Judgment's largest-ever political election; organisers credited MieuxVoter
+    with making the method available. Ran 27-30 January 2022 with 466,895 registered
+    voters.
+  proof_level: high
+  url_checked: '2026-08-14'
+  notable: true
 activity:
   manual:
     checked: 2026-06-08

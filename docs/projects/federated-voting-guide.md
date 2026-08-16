@@ -34,7 +34,7 @@ This is structurally similar to how this wiki already aggregates organisation ac
 ## Open questions & potential evolution
 
 - Define a minimal feed schema for "positions on candidates/policies" — possibly building on schema.org's `Endorsement`/`Review` types or a simple RSS/JSON extension
-- Start small: hand-curate a handful of feeds from orgs already in the [organisations index](../organisations/organisations.md) that publish election-relevant content, as a proof of concept
+- Start small: hand-curate a handful of feeds from orgs already in the [organisations index](../organisations/index.md) that publish election-relevant content, as a proof of concept
 - Could connect to the [Political Creator Map](political-creator-map.md) idea — self-declared creator affiliations as one feed type
 - Could connect to the [Promise Ledger](promise-ledger.md) idea — past-term voting records as a "feed" alongside pre-election promises
 - Likely starts life as a concept page defining the feed format and listing candidate sources, well before any UI is built

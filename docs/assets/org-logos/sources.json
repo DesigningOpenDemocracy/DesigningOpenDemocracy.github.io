@@ -69,6 +69,13 @@
     "source": "https://commons.wikimedia.org/wiki/File:Australian_Democrats_2020_Logo.png",
     "title": "Australian Democrats"
   },
+  "australian-greens": {
+    "license": "Public domain",
+    "note": null,
+    "path": "australian-greens.svg",
+    "source": "https://commons.wikimedia.org/wiki/File:AustralianGreensLogo_official.svg",
+    "title": "Australian Greens"
+  },
   "bersih": {
     "license": "Fair use",
     "note": null,
@@ -508,6 +515,13 @@
     "note": "site asset, auto-detected apple-touch-icon",
     "path": "grattan-institute.png",
     "source": "https://grattan.edu.au/wp-content/uploads/2021/07/cropped-grattanfavicon-180x180.png",
+    "title": "Grattan Institute"
+  },
+  "grattan-institute-banner": {
+    "license": "Fair use",
+    "note": "inline SVG wordmark extracted from the site's own header markup (an <svg class=\"app-logo\"> with vector <path> letterforms, not a linked image file, so automated logo detection missed it); the \"Institute\" subtitle paths use fill=\"currentColor\" on the live site and were given an explicit black fill here for portability",
+    "path": "grattan-institute-banner.svg",
+    "source": "https://grattan.edu.au/",
     "title": "Grattan Institute"
   },
   "healthy-democracy": {

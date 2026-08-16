@@ -408,7 +408,7 @@
           "left_right_sources": [],
           "internal_note": "Leadership is still not member-elected in all jurisdictions; preselection processes vary by state; member input on policy platform is stronger than on candidate/leadership selection.",
           "internal_sources": [],
-          "external_note": "Strongest external reform record of any Australian parliamentary party: the NACC win above, a truth-in-political-advertising bill modelled on South Australia's law, and a sustained \"Clean Up Politics\" donations-cap/contractor-donor-ban campaign.",
+          "external_note": "Strongest external reform record of any Australian parliamentary party: the NACC win above, a truth-in-political-advertising bill modelled on South Australia's law, and a sustained \"Clean Up Politics\" donations-cap/contractor-donor-ban campaign. Added to the Democracy Landscape on the strength of this record; DOD does not track or endorse the party's broader platform.",
           "external_sources": [
             {
               "label": "Truth in political advertising — Greens ACT",
@@ -417,11 +417,16 @@
             {
               "label": "Clean Up Politics campaign",
               "url": "https://greens.org.au/campaigns/clean-politics"
+            },
+            {
+              "label": "DOD org page — Australian Greens",
+              "url": "https://www.designingopendemocracy.com/organisations/australian-greens/"
             }
           ]
         }
       ],
       "wikipedia": "https://en.wikipedia.org/wiki/Australian_Greens",
+      "dod_page": "/organisations/australian-greens/",
       "website": "https://greens.org.au"
     },
     {

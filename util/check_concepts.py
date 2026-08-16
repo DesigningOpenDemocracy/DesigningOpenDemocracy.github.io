@@ -37,7 +37,7 @@ except ImportError:
 DOCS_DIR = os.path.join(os.path.dirname(__file__), "..", "docs")
 ORGS_DIR = os.path.join(DOCS_DIR, "organisations")
 CONCEPTS_DIR = os.path.join(DOCS_DIR, "concepts")
-SKIP_FILES = {"organisations.md", "concepts.md"}
+SKIP_FILES = {"index.md"}
 
 
 def parse_date(val):
@@ -59,7 +59,7 @@ def load_concept_slugs():
     slugs = set()
     for path in glob.glob(os.path.join(CONCEPTS_DIR, "*.md")):
         slug = os.path.basename(path)[:-3]
-        if slug != "concepts":
+        if slug != "index":
             slugs.add(slug)
     return slugs
 

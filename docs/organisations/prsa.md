@@ -21,8 +21,38 @@ location:
   longitude: 149.13
   name: Canberra, Australia
   precision: city
+news_page: https://www.prsa.org.au/qn/indexqn.htm
 rss_feed: https://www.prsa.org.au/feed
 events:
+- date: '1988-05-13'
+  title: Death of founding National President J.F.H. "Jack" Wright, who built PRSA
+    into a national body
+  url: https://www.prsa.org.au/qn/50.html
+  quote: On 13th May 1988, Mr J.F.H.Wright, who was instrumental in establishing the
+    Society as a nation-wide body, died after a brief illness.
+  proof_level: high
+  url_checked: '2026-08-14'
+  notable: true
+- date: '2011-01-01'
+  title: First three PRSA members admitted as Honorary Life Members
+  url: https://www.prsa.org.au/qn/2011a_.html
+  quote: Three PRSA members were admitted as the first ever Honorary Life Members
+    of the PRSA earlier this year.
+  note: Reported in the March 2011 newsletter; the admissions occurred earlier that
+    year, exact date not stated.
+  proof_level: high
+  url_checked: '2026-08-14'
+  notable: false
+- date: '2017-08-27'
+  title: Death of long-serving National President Bogey Musidlak (President since
+    1994)
+  url: https://www.prsa.org.au/qn/2018b_.html
+  quote: National President, Bogey Musidlak, who died on 27 August 2017, at the age
+    of 63. Bogey had been President of the PRSA since 1 January 1994, for over 23
+    years.
+  proof_level: high
+  url_checked: '2026-08-14'
+  notable: true
 - date: '2026-11-12'
   title: 2026 AGM — vote on 17-motion package to rename to Australian Electoral Reform
     Society and broaden remit beyond STV

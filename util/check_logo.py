@@ -74,7 +74,7 @@ ORGS_DIR = os.path.join(DOCS_DIR, "organisations")
 LOGOS_DIR = os.path.join(DOCS_DIR, "assets", "org-logos")
 SOURCES_JSON = os.path.join(LOGOS_DIR, "sources.json")
 README_PATH = os.path.join(LOGOS_DIR, "README.md")
-SKIP_FILES = {"organisations.md"}
+SKIP_FILES = {"index.md"}
 WAYBACK_PREFIX = "https://web.archive.org"
 TODAY = datetime.today().strftime("%Y-%m-%d")
 

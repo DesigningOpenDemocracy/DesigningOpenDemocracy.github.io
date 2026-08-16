@@ -25,6 +25,9 @@ import sys
 import webbrowser
 from datetime import date, datetime
 
+sys.path.insert(0, os.path.dirname(__file__))
+from frontmatter_io import split_frontmatter  # noqa: E402
+
 try:
     import frontmatter
 except ImportError:
@@ -39,7 +42,7 @@ except ImportError:
 
 DOCS_DIR = os.path.join(os.path.dirname(__file__), "..", "docs")
 ORGS_DIR = os.path.join(DOCS_DIR, "organisations")
-SKIP_FILES = {"organisations.md"}
+SKIP_FILES = {"index.md"}
 WAYBACK_PREFIX = "https://web.archive.org"
 TODAY = date.today().isoformat()
 
@@ -128,10 +131,9 @@ def write_manual_activity(path, date_str, note, checked_str=None, url=None):
         checked_str = date_str
     with open(path, encoding="utf-8") as f:
         content = f.read()
-    parts = content.split("---", 2)
-    if len(parts) < 3 or parts[0] != "":
+    yaml_block, rest = split_frontmatter(content)
+    if yaml_block is None:
         return False
-    yaml_block, rest = parts[1], parts[2]
 
     meta = _yaml.safe_load(yaml_block) or {}
     source_lines = [
@@ -204,10 +206,9 @@ def update_status_field(path, new_status):
     """Update the status: line in org frontmatter using raw text substitution."""
     with open(path, encoding="utf-8") as f:
         content = f.read()
-    parts = content.split("---", 2)
-    if len(parts) < 3 or parts[0] != "":
+    yaml_block, rest = split_frontmatter(content)
+    if yaml_block is None:
         return False
-    yaml_block, rest = parts[1], parts[2]
     yaml_block = re.sub(
         r"^(status\s*:\s*)\S+",
         rf"\g<1>{new_status}",

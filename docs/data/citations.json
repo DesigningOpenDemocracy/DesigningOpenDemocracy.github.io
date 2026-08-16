@@ -30,6 +30,30 @@
     ]
   },
   {
+    "id": "bf634635",
+    "type": "webpage",
+    "URL": "https://anouslademocratie.fr/2020/04/03/entretien-avec-emmanuel-martin-quelquun-disait-que-lentreprise-privee-ou-publique-ce-sont-des-univers-feodaux/",
+    "title": "Founded by a core group of eight citizens",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Emmanuel est sociologue de formation, il enseigne les sciences économiques et sociales en classes préparatoires et faisait partie du noyau de huit personnes qui ont donné naissance au mouvement au crépuscule de l’année 2016."
+      }
+    ]
+  },
+  {
+    "id": "e8d2d307",
+    "type": "webpage",
+    "URL": "https://anouslademocratie.fr/municipales-2020/",
+    "title": "Published its platform for the 2020 municipal elections",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "À nous la démocratie! se donne pour unique mission de démocratiser les institutions et les pratiques pour les mettre en accord avec les attentes actuelles de nos concitoyennes et concitoyens."
+      }
+    ]
+  },
+  {
     "id": "43eea8ef",
     "type": "webpage",
     "URL": "https://australiainstitute.org.au/events/climate-integrity-summit/",
@@ -62,6 +86,18 @@
       {
         "type": "quote-match",
         "quote": "vTaiwan enabled over two hundred thousand people to participate in crafting 26 pieces of national legislation"
+      }
+    ]
+  },
+  {
+    "id": "2ecd72a8",
+    "type": "webpage",
+    "URL": "https://blog.democracylab.org/10-000-volunteers-and-counting/",
+    "title": "Reached 10,000 connected volunteers",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Recently DemocracyLab reached an important milestone- we have connected over 10,000 volunteers (UXers, Data Scientists, Devs, and other tech roles) to over 300 nonprofits and tech-for-good projects!"
       }
     ]
   },
@@ -151,6 +187,42 @@
       {
         "type": "quote-match",
         "quote": "Event 3 Re-imagining Governance for the ACT: A Public Event Series Expanding the ACT Assembly for better government – is it time? Hosted by CAPaD & Active Democracy Bean"
+      }
+    ]
+  },
+  {
+    "id": "4d2db6ff",
+    "type": "webpage",
+    "URL": "https://citizenos.com/news/citizen-os-annual-report-2024-a-year-of-a-big-revamp/",
+    "title": "Citizen OS Indonesia co-organised the 4th Indonesia Opinion Festival with the Indonesian House of Representatives",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "In December 2024, Citizen OS Indonesia co-organised the 4th Indonesia Opinion Festival (IOF), in collaboration with the Indonesian House of Representatives."
+      }
+    ]
+  },
+  {
+    "id": "1ca8da4a",
+    "type": "webpage",
+    "URL": "https://citizenos.com/news/citizen-os-platform-now-has-an-improved-look-and-feel/",
+    "title": "Launched first phase of the platform redesign with a new look and feel",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "We’re very happy to be launching the first phase of our redesign roll-out — with an improved look and feel, and a more intuitive interface."
+      }
+    ]
+  },
+  {
+    "id": "6f8b96da",
+    "type": "webpage",
+    "URL": "https://citizenos.com/platform/",
+    "title": "Founded by Ahti Heinla, Margo Loor and the Let’s Do It! Foundation",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Citizen OS is a non-profit organisation, founded in 2015 by philanthropist and tech entrepreneur Ahti Heinla, civic society expert Margo Loor, and the Let’s Do It! Foundation (coordinators of World Cleanup Day)."
       }
     ]
   },
@@ -310,6 +382,18 @@
     ]
   },
   {
+    "id": "7cce306e",
+    "type": "webpage",
+    "URL": "https://demnext.substack.com/p/looking-back-moving-forward-democracynexts",
+    "title": "Published the 2024 Impact Report on the institute's third anniversary",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "As we mark DemNext’s third birthday, and the International Day of Democracy, we’re thrilled to share our 2024 Impact Report."
+      }
+    ]
+  },
+  {
     "id": "05d3a280",
     "type": "webpage",
     "URL": "https://democracy-technologies.org/participation/consensus-building-in-taiwan/",
@@ -389,6 +473,18 @@
         "quote": "Digidem Lab is an independent democracy lab that supports neighbourhoods, municipalities and public institutions in conducting effective and inclusive citizen dialogues.",
         "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+      }
+    ]
+  },
+  {
+    "id": "b0e8d64b",
+    "type": "webpage",
+    "URL": "https://ec.europa.eu/newsroom/cc-demos/items/741221/en",
+    "title": "DemocracyNext launched on the International Day of Democracy",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Join the official launch of DemocracyNext on 15 September 2022, the International Day of Democracy."
       }
     ]
   },
@@ -654,6 +750,18 @@
       {
         "type": "quote-match",
         "quote": "Flux was registered at a federal level from 2016, but it was de-registered in 2022 for failing to meet the increased requirement of 1500 members. the DigiPol project"
+      }
+    ]
+  },
+  {
+    "id": "bf5c2585",
+    "type": "webpage",
+    "URL": "https://en.wikipedia.org/wiki/Fusion_Party_(Australia)",
+    "title": "Formed via merger of the Science, Pirate, Secular, Vote Planet, and Climate Change Justice parties, after new AEC rules raised the minimum party membership threshold from 500 to 1,500",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "was formed in 2021 following the passing of the Electoral Legislation Amendment (Party Registration Integrity) Bill 2021"
       }
     ]
   },
@@ -1349,6 +1457,18 @@
     ]
   },
   {
+    "id": "e9df8450",
+    "type": "webpage",
+    "URL": "https://ethelo.com/case-study/engaged-california-program/",
+    "title": "Selected to power California's Engaged California digital democracy initiative",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Engaged California is a first-in-the-nation digital democracy initiative launched by the State of California to improve public engagement, rebuild trust, and integrate lived experience directly into government decision-making."
+      }
+    ]
+  },
+  {
     "id": "6d445979",
     "type": "webpage",
     "URL": "https://europeandemocracyhub.epd.eu/exploring-worldwide-democratic-innovations-taiwan/",
@@ -1510,6 +1630,54 @@
     ]
   },
   {
+    "id": "800e215f",
+    "type": "webpage",
+    "URL": "https://greens.org.au/about/our-story",
+    "title": "Federal party formally established, uniting Australia's state-based Greens parties",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "In 1992 Australia's state-based Greens parties joined together, fronting the press on 30 August to announce the new federal party, the Australian Greens"
+      }
+    ]
+  },
+  {
+    "id": "a3531b81",
+    "type": "webpage",
+    "URL": "https://greens.org.au/act/news/greens-push-truth-electoral-advertising",
+    "title": "ACT Greens push a truth-in-political-advertising bill modelled on South Australia's law",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "The Greens are proposing to amend the Electoral Act to include provisions similar to those that exist in South Australia that makes it illegal to disseminate political material or advertising that is factually incorrect during the election period"
+      }
+    ]
+  },
+  {
+    "id": "4d15c0fe",
+    "type": "webpage",
+    "URL": "https://greens.org.au/news/media-release/greens-legislation-would-ban-dirty-donations-aec-data-reveals-major-parties",
+    "title": "Reintroduces a Bill to cap political donations at $3,000 per term and ban donations from \"dirty industries\"",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "It will cap donations at $3,000 per term, finishing the job abandoned when Labor and the Liberals cut a backroom deal"
+      }
+    ]
+  },
+  {
+    "id": "e8689a52",
+    "type": "webpage",
+    "URL": "https://greens.org.au/news/media-release/nacc-bill-passes-senate-historic-vote-critical-greens-amends-integrity",
+    "title": "Wins amendments strengthening Inspector oversight powers as the National Anti-Corruption Commission bill passes the Senate",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Greens amendments to the NACC bill give significant additional powers to the Inspector of the Commission to provide real time auditing and monitoring of the NACC’s workings and to guard against potential overreach and maladministration"
+      }
+    ]
+  },
+  {
     "id": "47fa6bdf",
     "type": "webpage",
     "URL": "https://ia.acs.org.au/article/2018/blockchain-to-revolutionise-e-voting.html",
@@ -1558,6 +1726,30 @@
     ]
   },
   {
+    "id": "a5248ba0",
+    "type": "webpage",
+    "URL": "https://liqd.net/en/projects/meinberlin/",
+    "title": "Commissioned by the Berlin Senate Chancellery to build meinBerlin, Berlin's central participation platform",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "One of our most ambitious projects is the development of meinBerlin, a central participation platform for Berlin's citizens."
+      }
+    ]
+  },
+  {
+    "id": "f2ba8287",
+    "type": "webpage",
+    "URL": "https://liqd.net/en/transparenz/",
+    "title": "Founded in Berlin as a non-profit association",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Liquid Democracy e.V. ist im Vereinsregister des Amtsgerichtes Charlottenburg (Berlin) unter der VR-Nummer 28939 B eingetragen. Der Liquid Democracy e.V. ist ein gemeinnütziger Verein."
+      }
+    ]
+  },
+  {
     "id": "9f79f35a",
     "type": "webpage",
     "URL": "https://mckinnon.co/about-us",
@@ -1566,6 +1758,18 @@
       {
         "type": "quote-match",
         "quote": "known as the Susan McKinnon Foundation) was established in 2015 by Sophie Oh and Grant Rule"
+      }
+    ]
+  },
+  {
+    "id": "0de149c7",
+    "type": "webpage",
+    "URL": "https://mckinnon.co/leadership/mckinnon-prize",
+    "title": "\"McKinnon Prize\"",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "The prize is Australia's only independent, non-partisan award for outstanding political leadership."
       }
     ]
   },
@@ -1594,6 +1798,18 @@
       {
         "type": "quote-match",
         "quote": "between 1999 (Ukraine) to these days (Kosovo, Philippines) MEMO 98 experts have participated in more than 130 election observation missions"
+      }
+    ]
+  },
+  {
+    "id": "a3043862",
+    "type": "webpage",
+    "URL": "https://mieuxvoter.fr/en/qui-sommes-nous",
+    "title": "Association founded in France to promote Majority Judgment voting",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Better Vote is an association created in January 2018, with hundreds members around France and the world."
       }
     ]
   },
@@ -1706,6 +1922,18 @@
       {
         "type": "quote-match",
         "quote": "today the OpenAustralia Foundation is launching a new site They Vote for You"
+      }
+    ]
+  },
+  {
+    "id": "be467590",
+    "type": "webpage",
+    "URL": "https://opennorth.ca/resources/citizen-budget/",
+    "title": "Acquired Citizen Budget, Canada's leading municipal budget consultation tool",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Ethelo and Open North are excited to announce the acquisition by Ethelo of “Citizen Budget”- Canada’s leading municipal budget consultation tool."
       }
     ]
   },
@@ -1925,6 +2153,18 @@
     ]
   },
   {
+    "id": "863f2631",
+    "type": "webpage",
+    "URL": "https://solve.mit.edu/solutions/51507",
+    "title": "Launched the online volunteer platform in Seattle",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Though we launched in Seattle in 2018, we now have projects and/or volunteers from every inhabited continent thanks to our adoption of asynchronous and remote work prior to the pandemic."
+      }
+    ]
+  },
+  {
     "id": "216f69c7",
     "type": "webpage",
     "URL": "https://stocznia.org.pl/en/about-shipyard/",
@@ -2130,6 +2370,18 @@
     ]
   },
   {
+    "id": "b4998f4a",
+    "type": "webpage",
+    "URL": "https://www.bienpublic.com/elections/2022/01/27/primaire-populaire-qu-est-ce-que-le-jugement-majoritaire",
+    "title": "2022 French People's Primary conducted under Majority Judgment — the method's largest political election to date",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "la Primaire populaire sera la plus grosse élection politique jamais réalisée au jugement majoritaire"
+      }
+    ]
+  },
+  {
     "id": "d2b0d9ec",
     "type": "webpage",
     "URL": "https://www.buildaballot.org.au/about",
@@ -2274,6 +2526,26 @@
     ]
   },
   {
+    "id": "55076354",
+    "type": "webpage",
+    "URL": "https://www.democratieouverte.org/qui-sommes-nous",
+    "title": "Founded by a collective of democratic innovators",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Avec le soutien de la Caisse des Dépôts, du Crédit Coopératif, d’Accenture, de la MGEN, du groupe La Poste et de la Fondation La France s’engage, Démocratie Ouverte lance le premier incubateur spécifiquement dédié à accompagner les projets d’innovation démocratique."
+      },
+      {
+        "type": "quote-match",
+        "quote": "En 2012, des citoyennes et citoyens engagés, qui portent des projets pour transformer notre vieux système politique (comme Parlement & Citoyens, Voxe, ou encore Questionnez vos élus), décident de se regrouper et de formaliser leur collectif en créant une association"
+      },
+      {
+        "type": "quote-match",
+        "quote": "Le 25 avril 2019, face à ce mouvement social intense, le Président Emmanuel Macron annonce la création de la « Convention Citoyenne pour Le Climat »: 150 françaises et français tirés au sort durant l'été"
+      }
+    ]
+  },
+  {
     "id": "4985c0aa",
     "type": "webpage",
     "URL": "https://www.designingopendemocracy.com/blog/2016/12/19/inaugural-designing-open-democracy-meeting/",
@@ -2390,6 +2662,30 @@
       {
         "type": "quote-match",
         "quote": "This initiative, launched after a petition by Cap Démocratie, marked a first for Wallonia, where citizens and politicians worked together as equals."
+      }
+    ]
+  },
+  {
+    "id": "af17be0a",
+    "type": "webpage",
+    "URL": "https://www.ghst.de/presse/pressemeldung-im-detail/app-democracy-fuer-transparentere-demokratie-geht-an-den-start",
+    "title": "App launch — first app giving citizens real-time insight into Bundestag legislation, with shadow voting",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Mit der App DEMOCRACY startet am 1. Oktober die bundesweit erste App, mit der sich Bürgerinnen und Bürger einen Echtzeit-Einblick in die Gesetzesfindung des Deutschen Bundestages verschaffen können."
+      }
+    ]
+  },
+  {
+    "id": "c6547300",
+    "type": "webpage",
+    "URL": "https://www.globenewswire.com/news-release/2021/06/09/2244148/0/en/sinch-ab-publ-sinch-to-acquire-messagemedia-accelerating-growth-with-small-and-medium-sized-businesses.html",
+    "title": "Co-founder Grant Rule's company MessageMedia sold to Sinch for a total enterprise value of US$1.3 billion",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Sinch will pay a total enterprise value of USD 1.3 billion, with a total cash consideration of USD 1.1 billion and 1,128,487 new shares in Sinch"
       }
     ]
   },
@@ -2522,6 +2818,18 @@
     ]
   },
   {
+    "id": "048f7832",
+    "type": "webpage",
+    "URL": "https://www.mcconnellfoundation.ca/funding-database/ethelo/",
+    "title": "Founded in Vancouver as a social enterprise",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Founded in 2011, Ethelo is dedicated to advancing new forms of democracy using internet technology."
+      }
+    ]
+  },
+  {
     "id": "26fb3b1c",
     "type": "webpage",
     "URL": "https://www.mmzy.org.cn/mmgk/jianjie/11796.aspx",
@@ -2588,6 +2896,18 @@
       {
         "type": "quote-match",
         "quote": "crowdsourcing the most comprehensive and accurate database of candidates in recent electoral history"
+      }
+    ]
+  },
+  {
+    "id": "f6331b5f",
+    "type": "webpage",
+    "URL": "https://www.newdemocracy.com.au/board-and-executive/",
+    "title": "Board and Executive",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Iain Walker is Executive Director of the newDemocracy Foundation (nDF) in Australia, a role he has held since 2011,"
       }
     ]
   },
@@ -2784,6 +3104,74 @@
     ]
   },
   {
+    "id": "0f7b34f9",
+    "type": "webpage",
+    "URL": "https://www.philanthropy.org.au/news-and-stories/the-susan-mckinnon-foundation-and-monash-university-renew-commitment-to-enhanced-political-leadership/",
+    "title": "McKinnon Institute for Political Leadership established, in partnership with Monash University",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Since it was established in 2019, the Institute has delivered transformative programs to more than 25% of the current MPs across Australia"
+      },
+      {
+        "type": "quote-match",
+        "quote": "an investment of more than $25 million over five years from the Foundation to sustain and advance the McKinnon Institute for Political Leadership"
+      }
+    ]
+  },
+  {
+    "id": "13992436",
+    "type": "webpage",
+    "URL": "https://www.pressenza.com/de/2017/12/demokratie-echtzeit-neue-app-democracy-erfolgreich-crowdfinanziert/",
+    "title": "Verein founded in Göttingen by Marius Krüger",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Im August dieses Jahres entschied sich Marius Krüger dann dazu, den Worten Taten folgen zu lassen und gründete den gemeinnützigen Verein DEMOCRACY Deutschland e.V."
+      },
+      {
+        "type": "quote-match",
+        "quote": "der erfolgreiche Abschluss ihres initialen Crowdfundings sicherte ihnen gut 35.000 € zweckgebundenes Startkapital für die Programmierung einer ersten Version der App"
+      }
+    ]
+  },
+  {
+    "id": "a617d04d",
+    "type": "webpage",
+    "URL": "https://www.prsa.org.au/qn/2011a_.html",
+    "title": "First three PRSA members admitted as Honorary Life Members",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Three PRSA members were admitted as the first ever Honorary Life Members of the PRSA earlier this year."
+      }
+    ]
+  },
+  {
+    "id": "350d031c",
+    "type": "webpage",
+    "URL": "https://www.prsa.org.au/qn/2018b_.html",
+    "title": "Death of long-serving National President Bogey Musidlak (President since 1994)",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "National President, Bogey Musidlak, who died on 27 August 2017, at the age of 63. Bogey had been President of the PRSA since 1 January 1994, for over 23 years."
+      }
+    ]
+  },
+  {
+    "id": "f3a3f3ba",
+    "type": "webpage",
+    "URL": "https://www.prsa.org.au/qn/50.html",
+    "title": "Death of founding National President J.F.H. \"Jack\" Wright, who built PRSA into a national body",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "On 13th May 1988, Mr J.F.H.Wright, who was instrumental in establishing the Society as a nation-wide body, died after a brief illness."
+      }
+    ]
+  },
+  {
     "id": "ba7758a1",
     "type": "webpage",
     "URL": "https://www.radicalxchange.org/about/",
@@ -2858,6 +3246,30 @@
       {
         "type": "quote-match",
         "quote": "SoCentral was founded in 2012, is a non-profit company and owned by its employees."
+      }
+    ]
+  },
+  {
+    "id": "89c859cf",
+    "type": "webpage",
+    "URL": "https://www.sortitionfoundation.org/amplifying_voices_on_housing",
+    "title": "AMPLIFY National Assembly on Housing — sortition selection of 120 participants for a Sydney deliberative weekend",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "On 28 January 2025, we selected 120 participants for AMPLIFY National Housing AMPLIFICATION, a ground-breaking national deliberative process bringing Australians from across the continent together in Sydney for a weekend of deliberation from Friday 21 to Sunday 23 February 2025."
+      }
+    ]
+  },
+  {
+    "id": "ecb3dfc9",
+    "type": "webpage",
+    "URL": "https://www.sortitionfoundation.org/australia_update",
+    "title": "Began running democratic lottery selections for Victorian councils under the Local Government Act",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Since January 2020, we've helped conduct independent selections, based on demographic criteria and on the fairest algorithm for random selection, in 11 councils, with seven of those using the 'gold standard' of sending out letters to randomly selected addresses"
       }
     ]
   },

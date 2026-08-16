@@ -23,6 +23,29 @@ location:
   name: Copenhagen, Denmark
   precision: city
 news_page: https://www.demnext.org/news
+events:
+- date: '2022-09-15'
+  title: DemocracyNext launched on the International Day of Democracy
+  url: https://ec.europa.eu/newsroom/cc-demos/items/741221/en
+  quote: Join the official launch of DemocracyNext on 15 September 2022, the International
+    Day of Democracy.
+  note: The European Commission's CC-DEMOS community of practice promoted DemocracyNext's
+    official launch on International Democracy Day 2022, with founder and CEO Claudia
+    Chwalisz presenting the institute's early plans alongside an advisory panel including
+    Hélène Landemore, David Van Reybrouck and Art O'Leary.
+  proof_level: high
+  url_checked: '2026-08-14'
+  notable: true
+- date: '2025-09-15'
+  title: Published the 2024 Impact Report on the institute's third anniversary
+  url: https://demnext.substack.com/p/looking-back-moving-forward-democracynexts
+  quote: As we mark DemNext’s third birthday, and the International Day of Democracy,
+    we’re thrilled to share our 2024 Impact Report.
+  note: DemocracyNext marked its third anniversary on 15 September 2025 by publishing
+    its 2024 Impact Report, covering stories from three flagship projects, the institute's
+    evolving approach and a transparent look at its finances.
+  proof_level: high
+  url_checked: '2026-08-14'
 activity:
   manual:
     checked: 2026-06-07

@@ -8,7 +8,7 @@ contributors:
 concepts: [democracy, e-government]
 ---
 
-Internal project covering the technical infrastructure that keeps the [Democracy Landscape](../organisations/organisations.md) directory healthy — activity tracking, data quality checks, and automated maintenance scripts.
+Internal project covering the technical infrastructure that keeps the [Democracy Landscape](../organisations/index.md) directory healthy — activity tracking, data quality checks, and automated maintenance scripts.
 
 ## Scope
 
@@ -47,6 +47,6 @@ python util/check_urls.py                    # verify org URLs still resolve
 
 ## See also
 
-- [Democracy Landscape](../organisations/organisations.md)
+- [Democracy Landscape](../organisations/index.md)
 - [Bot page](../bot.md)
 - [HEARTBEAT.md](https://github.com/DesigningOpenDemocracy/DesigningOpenDemocracy.github.io/blob/main/HEARTBEAT.md)

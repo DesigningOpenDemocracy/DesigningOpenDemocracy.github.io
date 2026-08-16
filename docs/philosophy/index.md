@@ -17,7 +17,7 @@ Ideas about democracy, governance, and accountability — from any DOD member, i
 - Half-formed questions you don't have an answer to
 - Disagreement with the [Accountability Framework](../projects/accountability-framework/index.md) itself
 
-Nothing here needs a citation to be worth saying. Sourcing discipline is the [Accountability Framework](../projects/accountability-framework/index.md)'s job, and the [Concepts](../concepts/concepts.md) section's. This page is for the conversation that happens *before* an idea is sourced, polished, or settled — including the version of it that never gets there.
+Nothing here needs a citation to be worth saying. Sourcing discipline is the [Accountability Framework](../projects/accountability-framework/index.md)'s job, and the [Concepts](../concepts/index.md) section's. This page is for the conversation that happens *before* an idea is sourced, polished, or settled — including the version of it that never gets there.
 
 ## Questions we want to put to real people
 

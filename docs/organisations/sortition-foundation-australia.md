@@ -24,6 +24,31 @@ location:
   name: Preston, Victoria
 news_page: https://www.sortitionfoundation.org/updates
 rss_feed: https://www.sortitionfoundation.org/updates.rss
+events:
+- date: '2020-01-01'
+  title: Began running democratic lottery selections for Victorian councils under
+    the Local Government Act
+  url: https://www.sortitionfoundation.org/australia_update
+  quote: Since January 2020, we've helped conduct independent selections, based on
+    demographic criteria and on the fairest algorithm for random selection, in 11
+    councils, with seven of those using the 'gold standard' of sending out letters
+    to randomly selected addresses
+  proof_level: high
+  url_checked: '2026-08-14'
+- date: '2025-02-21'
+  title: AMPLIFY National Assembly on Housing — sortition selection of 120 participants
+    for a Sydney deliberative weekend
+  url: https://www.sortitionfoundation.org/amplifying_voices_on_housing
+  quote: On 28 January 2025, we selected 120 participants for AMPLIFY National Housing
+    AMPLIFICATION, a ground-breaking national deliberative process bringing Australians
+    from across the continent together in Sydney for a weekend of deliberation from
+    Friday 21 to Sunday 23 February 2025.
+  note: Selected 120 participants (from 36,000 mailed invitations) across 11 demographic
+    categories for the AMPLIFY National Housing Assembly deliberating 21-23 February
+    2025 in Sydney.
+  proof_level: high
+  url_checked: '2026-08-14'
+  notable: true
 activity:
   manual:
     checked: 2026-06-07

@@ -11,6 +11,14 @@ This is a MkDocs + Material for MkDocs static site deployed to GitHub Pages.
 - Before pushing: `make build && python util/check_internal_links.py && python util/check_event_sourcing.py && python util/reorder_frontmatter.py --check` — catches the same errors as CI. The pre-commit hook (`.githooks/pre-commit`) auto-runs `reorder_frontmatter.py` on staged org pages, so the `--check` should always pass — it's a safety net.
 - **If `.git/hooks/pre-commit` doesn't exist:** run `ln -sf ../../.githooks/pre-commit .git/hooks/pre-commit` to install it. Claude should check this on first interaction with the repo and remind the user if it's missing.
 
+## Tests (`tests/`)
+
+Stdlib `unittest` regression coverage for the citation-verification tooling (`util/text_fragment.py`, `util/check_fragments.py`) — offline, no network calls, no new deps beyond what `util/requirements.txt` already installs plus `pyyaml`. Lives at repo root (outside `docs/`) so mkdocs never touches it. Run with:
+```
+python -m unittest discover tests   # or: just test
+```
+Wired into CI (`.github/workflows/build.yml`) as its own step, before the build/lint jobs. Covers the pure functions in `text_fragment.py` (`normalize_ws`, `find_span`, `quote_matches`, `_split_ellipsis`, `make_text_fragment`/`add_fragment_to_url`/`with_fragment`, `spacing_autofix`, `closest_match_hint`, footnote parsing) directly, plus the I/O-adjacent parts of `check_fragments.py` via fixture files in a tempdir: `paragraph_hash` (regression test for the offset-drift bug — see its docstring), `wikipedia_title` (including the non-English-subdomain regression), `write_quote_fix`/`_write_quote_fix_yaml` (the plain-scalar and YAML-scalar success paths, plus all three refusal cases: no frontmatter, ambiguous quote across events, non-canonical existing frontmatter), and `collect_evidence`'s `--slug` filtering (the exact `--slug a --slug b` regression from 2026-08-14 — see the "Utility scripts" `check_fragments.py` entry below). When adding new verification logic to either file, add a test alongside it rather than validating by hand-running against real org files — see issue #155 for the motivating history of bugs this would have caught.
+
 ## Known Watch Items
 
 ### MkDocs ecosystem fragmentation (as of May 2026)
@@ -405,7 +413,7 @@ more than a bare link.
 | Template | Location | Applied to |
 |---|---|---|
 | `organisation.html` | `docs/overrides/` | All org pages — auto-applied by hook, no frontmatter needed |
-| `organisations.html` | `docs/overrides/` | `docs/organisations/organisations.md` — sortable table index |
+| `organisations.html` | `docs/overrides/` | `docs/organisations/index.md` — sortable table index |
 | `community.html` | `docs/overrides/` | `docs/community/community.md` — auto-generates active projects grid |
 | `project.html` | `docs/overrides/` | Project pages — must set `template: project.html` in frontmatter |
 | `home.html` | `docs/overrides/` | Home page — hero pitch, CTA buttons, active projects, map |
@@ -487,11 +495,34 @@ These are linked from the bottom of the org index table for researcher download.
   ```
   python util/check_fragments.py             # exits 1 if any evidence no longer matches
   python util/check_fragments.py --slug g0v  # single org
+  python util/check_fragments.py --slug g0v --slug namfrel  # multiple orgs — --slug is repeatable
   python util/check_fragments.py --no-cache  # ignore the cache, re-fetch and re-verify everything
   python util/check_fragments.py --save-to-wayback  # archive each URL to Wayback Machine
   python util/check_fragments.py --footnotes-only  # only check footnote evidence
   python util/check_fragments.py --events-only     # only check event evidence (original behaviour)
+  python util/check_fragments.py --autofix-spaces  # rewrite spacing-only MISMATCHes in place
+  python util/check_fragments.py --report /tmp/fragments-report.json  # also write a JSON findings summary (for ad hoc/manual review — not consumed by anything in CI)
   ```
+  - **`--autofix-spaces`** — fixes MISMATCHes whose only differences from the live page
+    are space runs (em-dash spacing, stray spaces): rewrites the stored `quote:` in the
+    source file to the page's text. Safe by construction — if only spaces differ, the
+    quote's words are a contiguous substring of the page's, so the fix can't change what
+    the quote claims — and it also makes the reader-facing `#:~:text=` highlight work,
+    since the page's whitespace-normalised text is what the browser renders. Deliberately
+    **spaces only**: punctuation, case, content changes, and the "page continues past the
+    quote" case (e.g. `quote: "…pilot."` vs page `"…pilot, followed by…"`) all stay
+    MISMATCH for human judgment — where a quote ends is an editorial choice, and the
+    extra text is a genuine page-drift signal a MISMATCH is supposed to surface, not hide.
+    Refuses if the corrected text would appear more than once on the page (human should
+    lengthen the quote instead), refuses to write unless the old string occurs exactly
+    once in the file, and marks the corrected string verified against that fetch. Quotes
+    stored as plain YAML scalars are replaced as raw text; folded/quoted scalars (the
+    form YAML itself picks for values containing `: ` or apostrophes, where the parsed
+    value isn't verbatim in the file) are rewritten via a frontmatter re-serialization
+    that keeps canonical ordering (`util/reorder_frontmatter.py --check` still passes)
+    — the raw substring search alone used to silently give up on those. Writes
+    to source files, so **don't pass it in the weekly cron** — run it on a reviewable
+    branch and check the git diff, same as `check_rss.py --update-activity`.
   The `#:~:text=` fragment-building functions it used to also expose via `--add-fragments` now
   live in `util/text_fragment.py` — a small, dependency-free module imported both here (not
   actually needed anymore, since verification only ever checks `quote:`) and by
@@ -504,6 +535,7 @@ These are linked from the bottom of the org index table for researcher download.
   python util/check_event_urls.py                  # check all event URLs
   python util/check_event_urls.py --slug mosaiclab  # single org
   python util/check_event_urls.py --timeout 8       # per-request timeout
+  python util/check_event_urls.py --report /tmp/urls-report.json  # also write a JSON findings summary (for ad hoc/manual review — not consumed by anything in CI)
   ```
 
 - `util/reorder_frontmatter.py` — enforces the canonical frontmatter field ordering documented above (org top-level keys, `events:` sub-keys, `activity:` sub-keys). Local/offline, part of `make build`'s pre-push checklist and CI. The pre-commit hook (`.githooks/pre-commit`) runs this automatically on staged org pages, so `--check` failing locally usually means the hook isn't installed — see the note at the top of this file.

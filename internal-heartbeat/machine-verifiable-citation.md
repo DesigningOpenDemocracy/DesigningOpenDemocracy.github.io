@@ -265,6 +265,65 @@ only if a concrete downstream consumer actually needs it.
   and `archive`/`archive_location` in `citations.json`.
 - **2026-08-12:** Added fuzzy-diff `closest_match_hint()` diagnostic
   for MISMATCH events (Hypothes.is-inspired, diagnostic-only).
+- **2026-08-14:** `closest_match_hint()` now also returns a rendered
+  character-level diff (page − / quote +, whitespace made visible) so a
+  MISMATCH from a one-character divergence — em-dash spacing, a stray
+  sentence-terminating period on a quote that continues mid-clause — is
+  fixable at a glance instead of requiring a manual page fetch to locate
+  it. Verification semantics unchanged (still exact-match-only).
+- **2026-08-14:** Added `spacing_autofix()` and a `--autofix-spaces` flag
+  on `check_fragments.py` that rewrites a MISMATCHed stored quote in
+  place when its only differences from the live page are space runs
+  (em-dash spacing, stray spaces). This class is safe to auto-apply by
+  construction — if only spaces differ, the quote's words are a
+  contiguous substring of the page's, so the fix cannot change what the
+  quote claims — and the corrected text is what the browser renders, so
+  the `#:~:text=` highlight passes too. Deliberately scoped to spaces
+  only: punctuation, case, content changes, and the "page continues past
+  the quote" case all stay MISMATCH for human judgment (a trailing
+  period vs. the page continuing is an editorial choice about quote
+  extent and a genuine page-drift signal, not a typo to hide). Opt-in
+  flag, writes to source files (surgical substring replace, refuses
+  unless the old string occurs exactly once), refuses on ambiguity
+  (corrected text appearing >1× on the page), records the corrected
+  string as verified against that fetch.
+- **2026-08-14:** Two fixes from the first real autofix run. (1) `--slug`
+  is now repeatable (`action="append"`) — it used to silently honor only
+  the last flag passed, so `--slug a --slug b` verified a alone while
+  looking like it was checking both. (2) The raw substring replace behind
+  `--autofix-spaces` silently gave up on quotes whose parsed value isn't
+  verbatim in the file — the folded/single-quoted scalars YAML itself
+  chooses for values containing `: ` or apostrophes (confirmed live: the
+  démocratie-ouverte Convention Citoyenne quote stores as a single-quoted
+  scalar with `''`-escaped apostrophes, which raw text search can never
+  locate). `write_quote_fix()` now falls back to `_write_quote_fix_yaml()`,
+  which locates the value by parsing the frontmatter, rewrites the unique
+  matching event's `quote:`, and re-serializes through
+  reorder_frontmatter's canonical dumper so `--check` still passes. Refuses
+  safely: non-org files, a quote value shared by >1 event, or a file whose
+  frontmatter isn't already canonical (re-serialization would fold unrelated
+  reformatting into a one-line fix).
+- **2026-08-14:** Added `tests/` (stdlib `unittest`, offline, wired into
+  CI) covering both files — see issue #155, which was opened after the
+  two bugs above shipped without any automated coverage catching them.
+  Regression tests exist for both: `--slug`'s `action="append"` list
+  behavior (`collect_evidence` filtering) and `_write_quote_fix_yaml()`'s
+  success path plus its three refusal branches. Also covers the older
+  `paragraph_hash()` offset-drift and `wikipedia_title()`
+  non-English-subdomain bugs referenced elsewhere in this changelog, and
+  the pure functions in `text_fragment.py`. See `CLAUDE.md`'s "Tests"
+  section for how to run it.
+- **2026-08-14:** `check_fragments.py`/`check_event_urls.py` gained a
+  `--report PATH` flag writing a JSON findings summary (mismatches/
+  ambiguous/fetch-errors; dead/blocked/redirected/errored URLs) alongside
+  their normal stdout output — for ad hoc/manual review, not wired into
+  the weekly cron. A GitHub-Actions-driven auto-filed tracking issue was
+  prototyped and deliberately dropped: this repo keeps its Actions usage
+  scoped to CI checks and light read-only probing, not scripts that open
+  tickets on their own schedule. Deciding whether a finding is worth
+  tracking stays a periodic, manual, human/AI-reviewed judgment call (see
+  HEARTBEAT.md's note on `check_fragments.py`/`check_event_urls.py`), not
+  something automated end-to-end.
 
 ---
 

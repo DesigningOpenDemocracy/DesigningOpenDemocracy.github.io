@@ -33,7 +33,7 @@ except ImportError:
 
 
 DOCS_DIR = os.path.join(os.path.dirname(__file__), "..", "docs", "organisations")
-SKIP_FILES = {"organisations.md"}
+SKIP_FILES = {"index.md"}
 
 
 def load_orgs():

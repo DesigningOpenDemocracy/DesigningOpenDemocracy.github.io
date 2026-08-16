@@ -30,6 +30,9 @@ import re
 import sys
 from datetime import date
 
+sys.path.insert(0, os.path.dirname(__file__))
+from frontmatter_io import split_frontmatter  # noqa: E402
+
 try:
     import frontmatter
 except ImportError:
@@ -54,10 +57,9 @@ def write_dod_activity(path, date_str, note, url=None, checked_str=None):
         checked_str = TODAY
     with open(path, encoding="utf-8") as f:
         content = f.read()
-    parts = content.split("---", 2)
-    if len(parts) < 3 or parts[0] != "":
+    yaml_block, rest = split_frontmatter(content)
+    if yaml_block is None:
         return False, "no frontmatter"
-    yaml_block, rest = parts[1], parts[2]
 
     source_lines = [
         "  dod:",

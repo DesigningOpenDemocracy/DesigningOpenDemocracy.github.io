@@ -30,7 +30,7 @@ except ImportError:
 DOCS_DIR = os.path.join(os.path.dirname(__file__), "..", "docs")
 ORGS_DIR = os.path.join(DOCS_DIR, "organisations")
 CONCEPTS_DIR = os.path.join(DOCS_DIR, "concepts")
-SKIP_FILES = {"organisations.md"}
+SKIP_FILES = {"index.md"}
 STOP_WORDS = {
     "a", "an", "the", "and", "or", "of", "for", "in", "to", "is", "are",
     "was", "were", "that", "this", "it", "at", "by", "on", "with", "as",
