@@ -631,7 +631,15 @@ def write_checked_only(path, method, note=None, hint=None):
                         checked_written = True
                     in_this_source = False
                 elif re.match(r"^    hint\s*:", line):
-                    if hint:
+                    # Note the guard on hint_written: if checked: appeared
+                    # earlier in this sub-block (field order isn't fixed),
+                    # its handler below may have already inserted the new
+                    # hint: line pre-emptively. Re-appending here on top of
+                    # that would duplicate the key, so once hint_written is
+                    # set this old line is dropped rather than re-emitted.
+                    if hint_written:
+                        pass
+                    elif hint:
                         new_lines.append(f"    hint: {hint}")
                         hint_written = True
                     else:
@@ -642,8 +650,9 @@ def write_checked_only(path, method, note=None, hint=None):
                     if hint and not hint_written:
                         new_lines.append(f"    hint: {hint}")
                         hint_written = True
-                    new_lines.append(f"    checked: {TODAY}")
-                    checked_written = True
+                    if not checked_written:
+                        new_lines.append(f"    checked: {TODAY}")
+                        checked_written = True
                     i += 1
                     continue
             new_lines.append(line)
