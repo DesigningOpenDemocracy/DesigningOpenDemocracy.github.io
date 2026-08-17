@@ -233,7 +233,7 @@ documents) if:
 
    ```yaml
    authors:
-     - Brian Khuu
+     - <reviewing human's name>
      - Claude
    ai_assist: drafted
    ```
@@ -242,12 +242,15 @@ documents) if:
    - `drafted` / `collaborated`: the reviewing human goes first — by the time the post is
      merged, a human editor has reviewed and passed it, so they hold primary authorship
      credit, with every AI that materially contributed (e.g. `Claude`, `DeepSeekV4Pro`) listed
-     after them. Name the actual person who did the review (e.g. `Brian Khuu`), not the
-     collective `DOD` credit — `DOD` implies a multi-person editorial team standing behind
-     the post, which overstates it while review is really done by one person at a time.
-     Use `DOD` only once a post has genuinely been reviewed/passed by the org collectively
-     rather than an individual. (This differs from the heartbeat log below, which is pushed
-     direct to main without prior human review and so lists `Claude` alone.)
+     after them. Name whichever person actually did the review for *this* post — don't
+     default to any one name across posts, since different posts get reviewed by different
+     people. Don't use the collective `DOD` credit either — `DOD` implies a multi-person
+     editorial team standing behind the post, which overstates it while review is really
+     done by one person at a time. Use `DOD` only once a post has genuinely been
+     reviewed/passed by the org collectively rather than an individual. (This differs from
+     the heartbeat log below, which is pushed direct to main without prior human review and
+     so lists `Claude` alone.) If you don't know who reviewed a given post, ask rather than
+     guessing a name.
    - `reviewed`: the AI didn't materially author content, so don't add it to `authors:` just
      because the marker is set — list only the reviewing human. The `ai_assist: reviewed`
      marker itself is what discloses the AI's editing role.
