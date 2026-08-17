@@ -52,7 +52,7 @@ activity:
     url: https://reclaim.org.au/nearly-four-years-after-the-nr-floods-the-community-is-given-a-small-chance-to-be-heard/
   scrape:
     date: 2026-02-01
-    note: "Latest post: Gallery"
+    note: 'Latest post: Gallery'
     url: https://reclaim.org.au/category/lpa-resources/
     checked: 2026-08-17
 last_checked: '2026-07-16'

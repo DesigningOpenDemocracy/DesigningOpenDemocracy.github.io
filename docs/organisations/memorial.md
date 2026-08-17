@@ -46,7 +46,7 @@ activity:
     url: https://www.memorial.de/nachrichten
   scrape:
     date: 2026-07-08
-    note: "Latest news page scraped"
+    note: Latest news page scraped
     url: https://www.memorial.de/nachrichten
     checked: 2026-08-17
   sitemap:

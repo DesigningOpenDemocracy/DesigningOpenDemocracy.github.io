@@ -53,7 +53,7 @@ activity:
     note: 'Latest post: The End; and the Means to that End (Angela Oduor Lungati)'
     url: https://www.ushahidi.com/about/blog
   sitemap:
-    note: "Sitemap found, no lastmod"
+    note: Sitemap found, no lastmod
     checked: 2026-08-17
 last_checked: '2026-07-19'
 ---

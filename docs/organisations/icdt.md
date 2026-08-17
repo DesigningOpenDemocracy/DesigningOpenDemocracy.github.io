@@ -60,12 +60,7 @@ activity:
     url: https://chinademocrats.org/?cat=8
   rss:
     date: 2026-08-14
-    note: "Latest post: 李厚辰：反嵌型政治结构跟1990以来的政治经济历史（回应吴国光老师“十大问题”系列其二）"
-    url: https://chinademocrats.org/?p=6943
-    checked: 2026-08-17
-  rss:
-    date: 2026-08-14
-    note: "Latest post: 李厚辰：反嵌型政治结构跟1990以来的政治经济历史（回应吴国光老师“十大问题”系列其二）"
+    note: 'Latest post: 李厚辰：反嵌型政治结构跟1990以来的政治经济历史（回应吴国光老师“十大问题”系列其二）'
     url: https://chinademocrats.org/?p=6943
     checked: 2026-08-17
 last_checked: '2026-07-16'

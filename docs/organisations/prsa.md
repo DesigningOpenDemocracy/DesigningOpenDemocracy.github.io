@@ -83,7 +83,7 @@ activity:
     url: https://prsa.org.au/news/2020/#2020-07b
   scrape:
     date: 2026-03-01
-    note: "Latest news page scraped"
+    note: Latest news page scraped
     url: https://www.prsa.org.au/qn/indexqn.htm
     checked: 2026-08-17
 last_checked: '2026-07-19'

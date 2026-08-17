@@ -65,7 +65,7 @@ activity:
     url: https://www.sortitionfoundation.org/become_a_member_australia
   rss:
     date: 2026-06-18
-    note: "Latest post: We're looking for a new Independent Director"
+    note: 'Latest post: We''re looking for a new Independent Director'
     url: http://www.sortitionfoundation.org/new_independent_director_2026
     checked: 2026-08-17
   scrape:

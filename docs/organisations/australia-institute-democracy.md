@@ -57,12 +57,7 @@ activity:
     url: https://australiainstitute.org.au/about/structure/democracy-accountability/
   rss:
     date: 2026-08-17
-    note: "Latest post: What’s the point of gambling reform?"
-    url: https://australiainstitute.org.au/post/whats-the-point-of-gambling-reform/?utm_source=rss&utm_medium=rss&utm_campaign=whats-the-point-of-gambling-reform
-    checked: 2026-08-17
-  rss:
-    date: 2026-08-17
-    note: "Latest post: What’s the point of gambling reform?"
+    note: 'Latest post: What’s the point of gambling reform?'
     url: https://australiainstitute.org.au/post/whats-the-point-of-gambling-reform/?utm_source=rss&utm_medium=rss&utm_campaign=whats-the-point-of-gambling-reform
     checked: 2026-08-17
 last_checked: '2026-07-19'

@@ -56,7 +56,7 @@ activity:
     url: https://www.demnext.org/news
   scrape:
     date: 2026-06-24
-    note: "Latest news page scraped"
+    note: Latest news page scraped
     url: https://www.demnext.org/news
     checked: 2026-08-17
   sitemap:

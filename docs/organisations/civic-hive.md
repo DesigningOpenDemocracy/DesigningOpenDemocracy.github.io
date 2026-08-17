@@ -33,7 +33,8 @@ events:
 activity:
   rss:
     date: 2026-08-10
-    note: "Latest post: Navigating Technology and Inclusion in Nigeria’s Electoral Future"
+    note: 'Latest post: Navigating Technology and Inclusion in Nigeria’s Electoral
+      Future'
     url: https://civichive.org/navigating-technology-and-inclusion-in-nigerias-electoral-future/?utm_source=rss&utm_medium=rss&utm_campaign=navigating-technology-and-inclusion-in-nigerias-electoral-future
     checked: 2026-08-17
   url: https://civichive.org/2026-osun-state-governorship-election/?utm_source=rss&utm_medium=rss&utm_campaign=2026-osun-state-governorship-election

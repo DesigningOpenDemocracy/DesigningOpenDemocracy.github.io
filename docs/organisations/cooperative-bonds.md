@@ -40,12 +40,12 @@ events:
 activity:
   rss:
     date: 2026-08-17
-    note: "RSS feed active"
+    note: RSS feed active
     url: https://bonds.coop/feed
     checked: 2026-08-17
   scrape:
     date: 2026-07-30
-    note: "Latest news page scraped"
+    note: Latest news page scraped
     url: https://bonds.coop/resources/co-op-news/
     checked: 2026-08-17
 last_checked: '2026-06-29'

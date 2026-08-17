@@ -99,17 +99,12 @@ activity:
       after verifying each claim against directly-fetched primary sources
   scrape:
     date: 2026-07-06
-    note: "Latest post: News & Insights | McKinnon"
+    note: 'Latest post: News & Insights | McKinnon'
     url: https://mckinnon.co/insights
     checked: 2026-08-17
   sitemap:
     date: 2026-08-11
-    note: "Page last modified (from sitemap)"
-    url: https://mckinnon.co/sitemap.xml
-    checked: 2026-08-17
-  sitemap:
-    date: 2026-08-11
-    note: "Page last modified (from sitemap)"
+    note: Page last modified (from sitemap)
     url: https://mckinnon.co/sitemap.xml
     checked: 2026-08-17
 last_checked: '2026-08-15'

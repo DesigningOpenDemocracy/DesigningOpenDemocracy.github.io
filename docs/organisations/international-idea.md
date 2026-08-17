@@ -44,12 +44,7 @@ events:
 activity:
   rss:
     date: 2026-08-14
-    note: "Latest post: ans_9388_818839906"
-    url: https://www.idea.int/node/161776
-    checked: 2026-08-17
-  rss:
-    date: 2026-08-14
-    note: "Latest post: ans_9388_818839906"
+    note: 'Latest post: ans_9388_818839906'
     url: https://www.idea.int/node/161776
     checked: 2026-08-17
 last_checked: '2026-05-29'

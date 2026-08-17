@@ -35,7 +35,7 @@ events:
 activity:
   rss:
     date: 2026-08-08
-    note: "Latest post: AB Update July 2026"
+    note: 'Latest post: AB Update July 2026'
     url: https://www.afrobarometer.org/articles/ab-update-july-2026/
     checked: 2026-08-17
   url: https://www.afrobarometer.org/articles/les-africains-sont-favorables-a-la-libre-circulation-mais-restent-divises-sur-la-question-de-limmigration-selon-le-nouveau-rapport-phare-dafrobarometer/
