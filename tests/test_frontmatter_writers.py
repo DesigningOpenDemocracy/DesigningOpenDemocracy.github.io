@@ -1,17 +1,24 @@
 #!/usr/bin/env python3
 """Regression tests for the raw-text frontmatter surgery in
-util/check_rss.py's update_activity_source() and util/scrape_news.py's
-write_checked_only().
+util/check_rss.py's update_activity_source(), util/scrape_news.py's
+write_checked_only(), and util/review_orgs.py's write_manual_activity().
 
-Both functions edit org frontmatter by splicing lines rather than doing a
+These functions edit org frontmatter by splicing lines rather than doing a
 full YAML re-serialization (see util/frontmatter_io.py's module docstring
 for why: it avoids reformatting parts of the file the write didn't touch).
 That approach is inherently easy to get subtly wrong, and it was: the
 2026-08-17 automated activity probe (commit 934ccd2) landed duplicate
 activity.sitemap and activity.scrape.hint keys on live org pages — caught
 only because it broke util/reorder_frontmatter.py --check in CI on an
-unrelated PR. These tests pin the two root causes down so they can't
-silently recur.
+unrelated PR. Auditing the other scripts sharing this pattern
+(util/frontmatter_io.py's docstring names check_rss.py, scrape_news.py,
+record_dod.py, review_orgs.py) turned up the same silent-drop bug in
+review_orgs.py's write_manual_activity() — a brand-new activity.manual
+entry (the very first manual review for an org) never got written
+whenever activity: was followed by a top-level key such as last_checked:,
+which is nearly always. record_dod.py's write_dod_activity() already used
+a correctly-scoped `inserted` flag and needed no fix. These tests pin all
+of it down so it can't silently recur.
 
 Offline, no network calls. Run with:
 
@@ -28,6 +35,7 @@ import unittest
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "util"))
 
 import check_rss  # noqa: E402
+import review_orgs  # noqa: E402
 import scrape_news  # noqa: E402
 
 
@@ -174,6 +182,74 @@ class WriteCheckedOnlyTests(unittest.TestCase):
         out = open(path, encoding="utf-8").read()
         self.assertEqual(count_keys(out, "hint"), 1)
         self.assertEqual(count_keys(out, "checked"), 1)
+
+
+class WriteManualActivityTests(unittest.TestCase):
+    """util/review_orgs.py's write_manual_activity()."""
+
+    def setUp(self):
+        self.tmpdir = tempfile.mkdtemp()
+
+    def tearDown(self):
+        shutil.rmtree(self.tmpdir, ignore_errors=True)
+
+    def _write(self, body):
+        path = os.path.join(self.tmpdir, "org.md")
+        with open(path, "w", encoding="utf-8") as f:
+            f.write("---\n" + body + "---\nBody text.\n")
+        return path
+
+    def test_brand_new_source_before_last_checked_is_not_silently_dropped(self):
+        # Regression: activity.manual had never appeared for this org, so
+        # in_this_source was never set True, and the boundary-insert branch
+        # was gated on `in_this_source and not inserted` — silently
+        # skipping the write whenever activity: was followed by a
+        # top-level key (last_checked: — the common case).
+        path = self._write(
+            "title: Some Org\n"
+            "activity:\n"
+            "  rss:\n"
+            "    date: 2026-01-01\n"
+            "    note: some rss note\n"
+            "    checked: 2026-01-01\n"
+            "last_checked: '2026-08-09'\n"
+        )
+        ok = review_orgs.write_manual_activity(path, "2026-08-17", "First manual review")
+        self.assertTrue(ok)
+        out = open(path, encoding="utf-8").read()
+        self.assertEqual(count_keys(out, "manual"), 1, out)
+        self.assertIn("First manual review", out)
+
+    def test_brand_new_source_when_activity_is_last_key(self):
+        path = self._write(
+            "title: Some Org\n"
+            "activity:\n"
+            "  rss:\n"
+            "    date: 2026-01-01\n"
+            "    note: some rss note\n"
+            "    checked: 2026-01-01\n"
+        )
+        ok = review_orgs.write_manual_activity(path, "2026-08-17", "First manual review")
+        self.assertTrue(ok)
+        out = open(path, encoding="utf-8").read()
+        self.assertEqual(count_keys(out, "manual"), 1, out)
+
+    def test_replacing_existing_source_before_last_checked_does_not_duplicate(self):
+        path = self._write(
+            "title: Some Org\n"
+            "activity:\n"
+            "  manual:\n"
+            "    date: 2026-08-01\n"
+            "    note: Old manual note\n"
+            "    checked: 2026-08-01\n"
+            "last_checked: '2026-08-09'\n"
+        )
+        ok = review_orgs.write_manual_activity(path, "2026-08-17", "New manual note")
+        self.assertTrue(ok)
+        out = open(path, encoding="utf-8").read()
+        self.assertEqual(count_keys(out, "manual"), 1, out)
+        self.assertIn("New manual note", out)
+        self.assertNotIn("Old manual note", out)
 
 
 if __name__ == "__main__":

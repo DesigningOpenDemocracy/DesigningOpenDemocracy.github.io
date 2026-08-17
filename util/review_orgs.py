@@ -162,7 +162,15 @@ def write_manual_activity(path, date_str, note, checked_str=None, url=None):
             if in_activity:
                 # Top-level key ends the activity block
                 if line and not line.startswith(" "):
-                    if in_this_source and not inserted:
+                    # Guard on `inserted` alone, not `in_this_source and
+                    # inserted` — when manual: had never appeared at all
+                    # (brand-new entry, not a replacement), in_this_source
+                    # was never set True, so gating on it here silently
+                    # skipped the insert whenever activity: was followed by
+                    # a top-level key (e.g. last_checked: — the common
+                    # case). See tests/test_frontmatter_writers.py for the
+                    # check_rss.py sibling of this bug.
+                    if not inserted:
                         new_lines.extend(source_lines)
                         inserted = True
                     in_activity = False
