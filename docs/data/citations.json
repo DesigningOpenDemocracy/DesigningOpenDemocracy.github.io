@@ -1934,6 +1934,18 @@
     ]
   },
   {
+    "id": "69d6594a",
+    "type": "webpage",
+    "URL": "https://knightcolumbia.org/content/can-ai-mediation-improve-democratic-deliberation",
+    "title": "\"Can AI Mediation Improve Democratic Deliberation?\"",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "the HM tended to over-weight minority viewpoints,"
+      }
+    ]
+  },
+  {
     "id": "a5248ba0",
     "type": "webpage",
     "URL": "https://liqd.net/en/projects/meinberlin/",
@@ -2174,6 +2186,18 @@
       {
         "type": "quote-match",
         "quote": "Ethelo and Open North are excited to announce the acquisition by Ethelo of “Citizen Budget”- Canada’s leading municipal budget consultation tool."
+      }
+    ]
+  },
+  {
+    "id": "d266e917",
+    "type": "webpage",
+    "URL": "https://overtone.ai/how-to-get-people-to-agree-with-each-other-using-ai-an-interview-with-prof-chris-summerfield/",
+    "title": "\"How to get people to agree with each other using AI — an interview with Prof. Chris Summerfield\"",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "What it seems to do is write statements which are faithful to the majority, but include prominent elements of dissent. So they weave in stuff of people who would otherwise feel kind of disenfranchised."
       }
     ]
   },
@@ -2661,11 +2685,39 @@
     "id": "d2b0d9ec",
     "type": "webpage",
     "URL": "https://www.buildaballot.org.au/about",
-    "title": "Launched its first voting tool, \"Vote 1 Climate,\" ahead of the 2022 federal",
+    "title": "Project Planet co-founded during the 2019–20 Black Summer bushfires",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "Ahead of the 2022 federal election, we built our first voting tool, Vote 1 Climate. election"
+        "quote": "Ahead of the 2022 federal election, we built our first voting tool, Vote 1 Climate."
+      },
+      {
+        "type": "quote-match",
+        "quote": "In the lead-up to the 2025 federal election, thousands of Australians — most contributing donations under $50 — helped bring Build a Ballot to life at scale."
+      },
+      {
+        "type": "quote-match",
+        "quote": "Over the next three years, we’re expanding Build a Ballot to state elections in:...New South Wales in 2027"
+      },
+      {
+        "type": "quote-match",
+        "quote": "Over the next three years, we’re expanding Build a Ballot to state elections in:...South Australia and Victoria in 2026"
+      },
+      {
+        "type": "quote-match",
+        "quote": "Project Planet was co-founded by Lizzie Hedding and Tegan Lerm after connecting online during the 2019–20 bushfires."
+      }
+    ]
+  },
+  {
+    "id": "66b70cd4",
+    "type": "webpage",
+    "URL": "https://www.buildaballot.org.au/transparency/candidate-and-party-assessments",
+    "title": "Tool live for the 2026 South Australian state election",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "View how candidates and parties have been assessed on the policies included in the Build a Ballot tool for the 2026 South Australian election."
       }
     ]
   },
@@ -3722,6 +3774,18 @@
       {
         "type": "quote-match",
         "quote": "2026 Frontiers of Democratic Lotteries Workshop"
+      }
+    ]
+  },
+  {
+    "id": "b8ee55ec",
+    "type": "webpage",
+    "URL": "https://www.taipeitimes.com/News/feat/archives/2024/10/19/2003825522",
+    "title": "\"AI mediation tool may help reduce culture war rifts, say researchers\"",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "the Habermas Machine does not offer participants the chance to explain their feelings, and hence develop empathy with those of a different view"
       }
     ]
   },
