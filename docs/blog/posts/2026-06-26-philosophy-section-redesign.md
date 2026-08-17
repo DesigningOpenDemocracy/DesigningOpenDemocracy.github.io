@@ -2,10 +2,11 @@
 title: "Why the Philosophy page just changed: moving the accountability framework to Projects"
 date: 2026-06-26
 authors:
-  - DOD
+  - Brian Khuu
   - Claude
   - DeepSeekV4Pro
 ai_assist: drafted
+origin: milestone
 categories:
   - Philosophy
   - Maintenance

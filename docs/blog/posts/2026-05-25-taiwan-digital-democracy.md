@@ -3,7 +3,7 @@ title: "Taiwan's digital democracy experiment: what it shows, what it doesn't"
 date: 2026-05-25
 summary: "vTaiwan is the most-cited example of digital deliberation working at government scale. Run through the criteria DOD was asking about in 2017 and the picture gets more interesting — and more instructive."
 authors:
-  - DOD
+  - Brian Khuu
   - Claude
 ai_assist: drafted
 categories:

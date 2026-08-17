@@ -233,20 +233,24 @@ documents) if:
 
    ```yaml
    authors:
-     - DOD
+     - Brian Khuu
      - Claude
    ai_assist: drafted
    ```
 
    Authorship by level:
-   - `drafted` / `collaborated`: `DOD` goes first — by the time the post is merged, a human
-     editor has reviewed it and DOD members have passed it, so DOD holds primary authorship
+   - `drafted` / `collaborated`: the reviewing human goes first — by the time the post is
+     merged, a human editor has reviewed and passed it, so they hold primary authorship
      credit, with every AI that materially contributed (e.g. `Claude`, `DeepSeekV4Pro`) listed
-     after it. (This differs from the heartbeat log below, which is pushed direct to main
-     without prior human review and so lists `Claude` alone.)
+     after them. Name the actual person who did the review (e.g. `Brian Khuu`), not the
+     collective `DOD` credit — `DOD` implies a multi-person editorial team standing behind
+     the post, which overstates it while review is really done by one person at a time.
+     Use `DOD` only once a post has genuinely been reviewed/passed by the org collectively
+     rather than an individual. (This differs from the heartbeat log below, which is pushed
+     direct to main without prior human review and so lists `Claude` alone.)
    - `reviewed`: the AI didn't materially author content, so don't add it to `authors:` just
-     because the marker is set — list only the human/`DOD`. The `ai_assist: reviewed` marker
-     itself is what discloses the AI's editing role.
+     because the marker is set — list only the reviewing human. The `ai_assist: reviewed`
+     marker itself is what discloses the AI's editing role.
 2. Every factual claim must carry a linked source. No unsourced assertions.
 3. A human must review and merge the PR.
 
@@ -260,6 +264,33 @@ documents) if:
 `ai_assist:` (any level) is distinct from `ai_generated: true` (sync posts) — that boolean is
 a load-bearing flag for the heartbeat log's direct-to-main push path, not a display preference,
 so leave it as-is there rather than migrating it to `ai_assist: generated`.
+
+**Convention — origin (optional):**
+
+An optional `origin:` frontmatter field records *why* a post was written — a small,
+closed vocabulary meant for future automation (e.g. a script that wants to treat
+"we covered this org's event" posts differently from "we're reacting to the news"
+posts) rather than for display. Set it when the trigger is clear-cut; leave it off
+rather than guessing when a post's origin is genuinely mixed or not obviously one
+of these.
+
+| Value | Meaning |
+|---|---|
+| `member-raised` | A DOD member raised or discussed the topic internally (meeting, chat, forum) before it became a post. |
+| `event-coverage` | Written around another org's event DOD is covering — an announcement/preview or a recap. |
+| `world-commentary` | Reacting to an external news item, publication, study, or development. |
+| `milestone` | Announcing DOD's own project output or site change. |
+| `reader-question` | Prompted by a reader or community question. |
+
+```yaml
+origin: world-commentary
+```
+
+Feel free to add a new value if none of these honestly fit — same spirit as `ai_assist`
+levels above: the point is that the value is accurate, not that this list is closed. No
+badge is currently rendered for this field (it exists for machine consumption, not reader
+display) — add one in `docs/overrides/blog-post.html` alongside the `ai_assist` badge if a
+reader-facing use for it emerges later.
 
 **Convention — main lesson (optional):**
 

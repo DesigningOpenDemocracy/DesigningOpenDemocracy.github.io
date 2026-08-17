@@ -1,9 +1,10 @@
 ---
 authors:
-  - DOD
+  - Brian Khuu
   - Claude
   - DeepSeekV4Pro
 ai_assist: drafted
+origin: event-coverage
 categories:
   - Policy
   - Australia

@@ -1,6 +1,6 @@
 ---
 authors:
-  - DOD
+  - Brian Khuu
   - Claude
   - DeepSeekV4Pro
 ai_assist: collaborated
