@@ -53,12 +53,7 @@ events:
 activity:
   rss:
     date: 2026-08-17
-    note: "Latest post: The ICO is changing: it’s an ideal time to demand better"
-    url: https://www.mysociety.org/2026/08/17/the-ico-is-changing-its-an-ideal-time-to-demand-better/
-    checked: 2026-08-17
-  rss:
-    date: 2026-08-17
-    note: "Latest post: The ICO is changing: it’s an ideal time to demand better"
+    note: 'Latest post: The ICO is changing: it’s an ideal time to demand better'
     url: https://www.mysociety.org/2026/08/17/the-ico-is-changing-its-an-ideal-time-to-demand-better/
     checked: 2026-08-17
 last_checked: '2026-05-29'

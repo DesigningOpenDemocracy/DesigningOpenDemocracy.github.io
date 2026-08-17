@@ -40,12 +40,7 @@ activity:
     url: https://www.janaagraha.org
   rss:
     date: 2026-08-17
-    note: "RSS feed active"
-    url: https://www.janaagraha.org/feed
-    checked: 2026-08-17
-  rss:
-    date: 2026-08-17
-    note: "RSS feed active"
+    note: RSS feed active
     url: https://www.janaagraha.org/feed
     checked: 2026-08-17
 last_checked: '2026-07-16'

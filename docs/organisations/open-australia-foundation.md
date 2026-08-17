@@ -49,12 +49,7 @@ events:
 activity:
   rss:
     date: 2026-08-10
-    note: "Latest post: Why does democracy need a library?"
-    url: https://oaf.org.au/2026/08/10/why-does-democracy-need-a-library/
-    checked: 2026-08-17
-  rss:
-    date: 2026-08-10
-    note: "Latest post: Why does democracy need a library?"
+    note: 'Latest post: Why does democracy need a library?'
     url: https://oaf.org.au/2026/08/10/why-does-democracy-need-a-library/
     checked: 2026-08-17
 last_checked: '2026-06-02'

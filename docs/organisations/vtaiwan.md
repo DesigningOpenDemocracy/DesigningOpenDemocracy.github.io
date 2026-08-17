@@ -62,7 +62,7 @@ activity:
     hint: spa
     note: News page found, no machine-readable date
   sitemap:
-    note: "Sitemap found, no lastmod"
+    note: Sitemap found, no lastmod
     checked: 2026-08-17
 last_checked: '2026-05-30'
 ---

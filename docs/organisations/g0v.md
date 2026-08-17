@@ -52,13 +52,12 @@ activity:
     note: No feed found
   ical:
     date: 2026-08-08
-    note: "Latest event: COSCUP _ AI 開放治理 & Civic Tech 議程"
+    note: 'Latest event: COSCUP _ AI 開放治理 & Civic Tech 議程'
     url: https://calendar.google.com/calendar/ical/cpcf6iv5pt9l6gl2ue3svo63e8%40group.calendar.google.com/public/basic.ics
     checked: 2026-08-17
   scrape:
     hint: no_markup
     checked: 2026-08-17
-    hint: no_markup
     note: News page found, no machine-readable date
 last_checked: '2026-05-30'
 ---

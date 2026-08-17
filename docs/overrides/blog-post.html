@@ -1,7 +1,8 @@
 {#-
   Custom override of material/templates/blog-post.html
   Adds an AI assistance badge to the metadata sidebar when ai_assist
-  frontmatter is set (or ai_assisted / ai_generated is true).
+  frontmatter is set (or ai_assisted / ai_generated is true), and an
+  origin badge when origin: frontmatter is set.
 -#}
 {% extends "main.html" %}
 {% import "partials/nav-item.html" as item with context %}
@@ -130,6 +131,24 @@
                           {% include ".icons/material/robot.svg" %}
                           <span class="md-ellipsis ai-assist-badge ai-assist-{{ ai_level }}">
                             {{ ai_labels[ai_level] }}
+                          </span>
+                        </div>
+                      </li>
+                    {% endif %}
+                    {# ── Post origin badge (custom addition) ── #}
+                    {% if page.meta.origin %}
+                      {% set origin_labels = {
+                        "member-raised":   "Raised by a DOD member",
+                        "event-coverage":  "Event coverage",
+                        "world-commentary": "World commentary",
+                        "milestone":       "DOD milestone",
+                        "reader-question": "Reader question"
+                      } %}
+                      <li class="md-nav__item">
+                        <div class="md-nav__link">
+                          {% include ".icons/material/compass-outline.svg" %}
+                          <span class="md-ellipsis origin-badge origin-{{ page.meta.origin }}">
+                            {{ origin_labels[page.meta.origin] or page.meta.origin }}
                           </span>
                         </div>
                       </li>

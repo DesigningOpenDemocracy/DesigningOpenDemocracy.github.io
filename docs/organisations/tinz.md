@@ -45,7 +45,7 @@ activity:
     date: 2026-08-09
     note: Site live and actively publishing as of August 2026
   sitemap:
-    note: "Sitemap found, no lastmod"
+    note: Sitemap found, no lastmod
     checked: 2026-08-17
 last_checked: '2026-08-09'
 ---

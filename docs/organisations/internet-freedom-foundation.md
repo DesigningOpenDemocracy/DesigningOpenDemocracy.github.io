@@ -50,12 +50,7 @@ activity:
     url: https://x.com/internetfreedom/status/2038604152318644237
   rss:
     date: 2026-08-14
-    note: "Latest post: Flagging data protection violations in Har Ghar Tiranga 5.0"
-    url: https://internetfreedom.in/flagging-data-protection-violations-in-har-ghar-tiranga-5-0/
-    checked: 2026-08-17
-  rss:
-    date: 2026-08-14
-    note: "Latest post: Flagging data protection violations in Har Ghar Tiranga 5.0"
+    note: 'Latest post: Flagging data protection violations in Har Ghar Tiranga 5.0'
     url: https://internetfreedom.in/flagging-data-protection-violations-in-har-ghar-tiranga-5-0/
     checked: 2026-08-17
 last_checked: '2026-07-16'

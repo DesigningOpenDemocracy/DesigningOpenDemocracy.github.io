@@ -3,9 +3,10 @@ title: "The Habermas Machine: an AI mediator that beat humans at finding common 
 date: 2026-08-16
 summary: "A Google DeepMind system trained to write group statements — not to persuade — was preferred over human mediators 56% of the time by more than 5,000 UK participants, and was tested in a full virtual citizens' assembly recruited with the Sortition Foundation. A heads-up on the study, what it found, and where its own authors say it falls short."
 authors:
-  - DOD
+  - Brian Khuu
   - Claude
 ai_assist: drafted
+origin: world-commentary
 categories:
   - AI
   - Deliberative Democracy

@@ -50,12 +50,12 @@ events:
 activity:
   rss:
     date: 2026-08-17
-    note: "RSS feed active"
+    note: RSS feed active
     url: https://www.aman-palestine.org/rss
     checked: 2026-08-17
   scrape:
     date: 2026-08-13
-    note: "Latest news page scraped"
+    note: Latest news page scraped
     url: https://www.aman-palestine.org/en/activities/
     checked: 2026-08-17
 last_checked: '2026-06-28'

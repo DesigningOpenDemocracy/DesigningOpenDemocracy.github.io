@@ -53,7 +53,6 @@ activity:
   scrape:
     hint: no_markup
     checked: 2026-08-17
-    hint: no_markup
     note: News page found, no machine-readable date
   sitemap:
     checked: 2026-08-17

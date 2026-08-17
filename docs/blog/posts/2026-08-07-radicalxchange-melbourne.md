@@ -3,9 +3,10 @@ title: "RadicalxChange is launching a Melbourne chapter — here's what it is"
 date: 2026-08-07
 summary: "RadicalxChange Foundation, the quadratic-voting/Plurality movement co-founded on ideas from Taiwan's Audrey Tang, is forming an Australian chapter with a Melbourne launch event on 27 August 2026."
 authors:
-  - DOD
+  - Brian Khuu
   - Claude
 ai_assist: drafted
+origin: event-coverage
 categories:
   - civic tech
   - event

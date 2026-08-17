@@ -43,12 +43,7 @@ activity:
     url: https://mattran.org.vn
   sitemap:
     date: 2026-08-17
-    note: "Page last modified (from sitemap)"
-    url: https://mattran.org.vn/sitemaps.xml
-    checked: 2026-08-17
-  sitemap:
-    date: 2026-08-17
-    note: "Page last modified (from sitemap)"
+    note: Page last modified (from sitemap)
     url: https://mattran.org.vn/sitemaps.xml
     checked: 2026-08-17
 last_checked: '2026-07-19'
