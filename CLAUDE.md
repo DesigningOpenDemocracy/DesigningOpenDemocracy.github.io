@@ -287,10 +287,12 @@ origin: world-commentary
 ```
 
 Feel free to add a new value if none of these honestly fit — same spirit as `ai_assist`
-levels above: the point is that the value is accurate, not that this list is closed. No
-badge is currently rendered for this field (it exists for machine consumption, not reader
-display) — add one in `docs/overrides/blog-post.html` alongside the `ai_assist` badge if a
-reader-facing use for it emerges later.
+levels above: the point is that the value is accurate, not that this list is closed.
+Rendered as a badge in the post's metadata sidebar (`docs/overrides/blog-post.html`,
+styled in `customizations.css`'s `.origin-*` rules) alongside the `ai_assist` badge, and
+also readable by future automation off the raw frontmatter value — adding a new value
+means adding its label to `origin_labels` in the template and a `.origin-<value>` colour
+rule in the CSS, same pattern as `ai_assist`'s `ai_labels`/`.ai-assist-*`.
 
 **Convention — main lesson (optional):**
 
