@@ -48,10 +48,15 @@ events:
   notable: true
 activity:
   rss:
-    checked: 2026-06-08
-    date: 2026-02-17
-    note: 'Latest post: Become a Fundraising Champion for Civic Tech'
-    url: https://oaf.org.au/2026/02/17/become-a-fundraising-champion-for-civic-tech/
+    date: 2026-08-10
+    note: "Latest post: Why does democracy need a library?"
+    url: https://oaf.org.au/2026/08/10/why-does-democracy-need-a-library/
+    checked: 2026-08-17
+  rss:
+    date: 2026-08-10
+    note: "Latest post: Why does democracy need a library?"
+    url: https://oaf.org.au/2026/08/10/why-does-democracy-need-a-library/
+    checked: 2026-08-17
 last_checked: '2026-06-02'
 ---
 

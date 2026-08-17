@@ -41,7 +41,7 @@ activity:
       Organisations call on Victorian Political Parties to Commit Now to Donation
       Transparency'
   sitemap:
-    checked: 2026-08-09
+    checked: 2026-08-17
     date: 2026-06-05
     note: Server still up (sitemap detected)
 last_checked: '2026-06-28'

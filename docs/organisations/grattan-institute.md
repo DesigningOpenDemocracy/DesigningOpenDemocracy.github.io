@@ -69,7 +69,7 @@ activity:
       funder'
     checked: 2026-08-15
   rss:
-    checked: 2026-08-09
+    checked: 2026-08-17
     date: 2026-07-26
     note: 'Latest post: Reform the system so disabled Australians can have better
       jobs and fairer wages'

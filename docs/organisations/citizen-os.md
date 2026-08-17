@@ -55,12 +55,12 @@ activity:
       Space for Good?'
     url: https://citizenos.com/news/
   rss:
-    checked: 2026-08-09
-    date: 2026-08-09
-    note: RSS feed active
+    date: 2026-08-17
+    note: "RSS feed active"
     url: https://citizenos.com/feed
+    checked: 2026-08-17
   scrape:
-    checked: 2026-06-07
+    checked: 2026-08-17
     date: 2023-06-19
     note: Latest news page scraped
     url: https://citizenos.com/news/

@@ -33,7 +33,7 @@ events:
   notable: true
 activity:
   rss:
-    checked: 2026-08-09
+    checked: 2026-08-17
     date: 2026-04-21
     note: 'Latest post: Informe Cuatro. Observatorio de la participación ciudadana
       en la implementación '

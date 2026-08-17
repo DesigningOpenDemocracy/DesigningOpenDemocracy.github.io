@@ -35,9 +35,15 @@ events:
   notable: true
 activity:
   rss:
-    date: 2026-05-12
-    note: 'Latest post: After the May elections: governing on thin mandates'
-    url: https://www.involve.org.uk/news-opinion/opinion/after-may-elections-governing-thin-mandates
+    date: 2026-08-13
+    note: "Latest post: We're hiring! Digital Communication Officer"
+    url: https://www.involve.org.uk/news-opinion/jobs/were-hiring-digital-communication-officer
+    checked: 2026-08-17
+  rss:
+    date: 2026-08-13
+    note: "Latest post: We're hiring! Digital Communication Officer"
+    url: https://www.involve.org.uk/news-opinion/jobs/were-hiring-digital-communication-officer
+    checked: 2026-08-17
 last_checked: '2026-06-15'
 ---
 

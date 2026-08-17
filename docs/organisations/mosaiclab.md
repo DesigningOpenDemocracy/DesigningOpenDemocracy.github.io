@@ -108,9 +108,15 @@ activity:
       in deliberative practice
     url: https://mosaiclab.com.au
   sitemap:
-    checked: 2026-06-08
-    date: 2026-06-03
-    note: Page last modified (from sitemap)
+    date: 2026-07-31
+    note: "Page last modified (from sitemap)"
+    url: https://mosaiclab.com.au/sitemap.xml
+    checked: 2026-08-17
+  sitemap:
+    date: 2026-07-31
+    note: "Page last modified (from sitemap)"
+    url: https://mosaiclab.com.au/sitemap.xml
+    checked: 2026-08-17
 last_checked: '2026-07-16'
 ---
 

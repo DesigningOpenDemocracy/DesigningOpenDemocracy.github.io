@@ -39,7 +39,7 @@ activity:
     date: 2026-07-05
     note: Site confirmed active; news article dated 23 June 2026
   rss:
-    checked: 2026-08-09
+    checked: 2026-08-17
     date: 2026-06-23
     note: 'Latest post: The Complaint She Never Files'
     url: https://www.eisa.org/the-complaint-she-never-files/

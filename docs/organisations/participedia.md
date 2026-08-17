@@ -44,12 +44,12 @@ activity:
       where latest is Jan 6, 2026 'Participedia Schools 2025 Summary Reports'
     url: https://participediaproject.medium.com/
   rss:
-    checked: 2026-06-08
+    checked: 2026-08-17
     date: 2026-01-05
     note: 'Latest post: Participedia Schools 2025 Summary Reports'
     url: https://participediaproject.medium.com/participedia-schools-2025-summary-reports-5f84ce0bd47f?source=rss-4e7f7d842e0a------2
   scrape:
-    checked: 2026-06-08
+    checked: 2026-08-17
     date: 2025-06-02
     note: Latest news page scraped
     url: https://participediaproject.medium.com/

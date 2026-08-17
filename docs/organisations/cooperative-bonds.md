@@ -39,15 +39,15 @@ events:
   notable: true
 activity:
   rss:
-    checked: 2026-08-09
-    date: 2026-08-09
-    note: RSS feed active
+    date: 2026-08-17
+    note: "RSS feed active"
     url: https://bonds.coop/feed
+    checked: 2026-08-17
   scrape:
-    checked: 2026-06-08
-    date: 2026-05-21
-    note: Latest news page scraped
+    date: 2026-07-30
+    note: "Latest news page scraped"
     url: https://bonds.coop/resources/co-op-news/
+    checked: 2026-08-17
 last_checked: '2026-06-29'
 ---
 

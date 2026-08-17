@@ -39,7 +39,7 @@ activity:
     note: Direct site fetch returned 503; corroborated active via WEF org profile,
       GitHub org, and press coverage of new SAIRI autonomous AI-agent project
   rss:
-    checked: 2026-08-09
+    checked: 2026-08-17
     note: No feed found
 last_checked: '2026-07-05'
 ---

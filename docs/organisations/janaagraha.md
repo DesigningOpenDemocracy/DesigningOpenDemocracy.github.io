@@ -39,10 +39,15 @@ activity:
       and site actively promoting current programs
     url: https://www.janaagraha.org
   rss:
-    checked: 2026-08-09
-    date: 2026-08-09
-    note: RSS feed active
+    date: 2026-08-17
+    note: "RSS feed active"
     url: https://www.janaagraha.org/feed
+    checked: 2026-08-17
+  rss:
+    date: 2026-08-17
+    note: "RSS feed active"
+    url: https://www.janaagraha.org/feed
+    checked: 2026-08-17
 last_checked: '2026-07-16'
 ---
 

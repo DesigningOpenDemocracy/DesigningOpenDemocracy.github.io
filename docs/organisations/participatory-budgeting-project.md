@@ -41,7 +41,7 @@ events:
   proof_warning: true
 activity:
   rss:
-    checked: 2026-06-08
+    checked: 2026-08-17
     date: 2026-03-05
     note: 'Latest post: PB Grows in New Jersey'
     url: https://www.participatorybudgeting.org/pb-seeds-eval/

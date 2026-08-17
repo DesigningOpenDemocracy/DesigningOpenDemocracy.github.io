@@ -56,10 +56,15 @@ activity:
     note: Site confirmed active (2024 election content still featured); Wikipedia
       (de) corroborates party still exists, no evidence of dissolution
   rss:
-    checked: 2026-08-09
-    date: 2026-08-09
-    note: RSS feed active
+    date: 2026-08-17
+    note: "RSS feed active"
     url: https://www.gilt.at/feed
+    checked: 2026-08-17
+  rss:
+    date: 2026-08-17
+    note: "RSS feed active"
+    url: https://www.gilt.at/feed
+    checked: 2026-08-17
 last_checked: '2026-07-05'
 ---
 

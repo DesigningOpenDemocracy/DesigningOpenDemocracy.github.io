@@ -53,13 +53,13 @@ activity:
     note: Website live with May 2026 news (RGB leadership meetings, governance commemorations).
     url: https://www.rgb.rw
   rss:
-    checked: 2026-06-07
+    checked: 2026-08-17
     note: No feed found
   scrape:
-    checked: 2026-06-07
-    date: 2026-05-29
-    note: Latest news page scraped
+    date: 2026-08-05
+    note: "Latest news page scraped"
     url: https://www.rgb.rw/updates/news
+    checked: 2026-08-17
 last_checked: '2026-07-19'
 ---
 

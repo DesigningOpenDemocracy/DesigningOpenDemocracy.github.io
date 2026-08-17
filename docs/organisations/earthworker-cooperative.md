@@ -46,7 +46,7 @@ events:
   notable: true
 activity:
   rss:
-    checked: 2026-08-09
+    checked: 2026-08-17
     date: 2026-07-13
     note: 'Latest post: Remembering Katherine Cunningham'
     url: https://earthworker.coop/remembering-katherine-cunningham/

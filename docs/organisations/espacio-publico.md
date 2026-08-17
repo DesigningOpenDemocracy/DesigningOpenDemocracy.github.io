@@ -34,7 +34,7 @@ events:
   proof_warning: true
 activity:
   rss:
-    checked: 2026-08-09
+    checked: 2026-08-17
     date: 2026-07-23
     note: 'Latest post: Más rigor, menos ruido'
     url: https://espaciopublico.cl/mas-rigor-menos-ruido/

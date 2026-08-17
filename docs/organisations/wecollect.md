@@ -35,6 +35,9 @@ activity:
     checked: 2026-08-09
     date: 2026-08-09
     note: Site live and actively publishing as of August 2026
+  rss:
+    note: "No feed found"
+    checked: 2026-08-17
 last_checked: '2026-08-09'
 ---
 

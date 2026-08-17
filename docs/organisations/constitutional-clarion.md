@@ -33,7 +33,7 @@ activity:
     note: Confirmed active — YouTube channel live, recent episodes verified
     url: https://www.youtube.com/@constitutionalclarion1901
   sitemap:
-    checked: 2026-08-09
+    checked: 2026-08-17
     note: Sitemap found, no lastmod
 last_checked: '2026-08-02'
 contributors:

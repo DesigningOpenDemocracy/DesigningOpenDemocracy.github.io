@@ -32,7 +32,7 @@ events:
   notable: true
 activity:
   sitemap:
-    checked: 2026-08-09
+    checked: 2026-08-17
     note: Sitemap found, no lastmod
 last_checked: '2026-08-09'
 ---

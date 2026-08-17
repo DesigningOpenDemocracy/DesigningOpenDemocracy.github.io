@@ -52,11 +52,15 @@ events:
   notable: true
 activity:
   rss:
-    checked: 2026-06-08
-    date: 2026-06-05
-    note: 'Latest post: New report! Supporting Participation: Building an effective
-      European civic tech '
-    url: https://www.mysociety.org/2026/06/05/new-report-supporting-participation-building-an-effective-european-civic-tech-hub/
+    date: 2026-08-17
+    note: "Latest post: The ICO is changing: it’s an ideal time to demand better"
+    url: https://www.mysociety.org/2026/08/17/the-ico-is-changing-its-an-ideal-time-to-demand-better/
+    checked: 2026-08-17
+  rss:
+    date: 2026-08-17
+    note: "Latest post: The ICO is changing: it’s an ideal time to demand better"
+    url: https://www.mysociety.org/2026/08/17/the-ico-is-changing-its-an-ideal-time-to-demand-better/
+    checked: 2026-08-17
 last_checked: '2026-05-29'
 ---
 

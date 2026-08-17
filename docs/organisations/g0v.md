@@ -48,15 +48,16 @@ activity:
       be various events.
     url: https://g0v.tw/intl/en/event/
   rss:
-    checked: 2026-06-08
+    checked: 2026-08-17
     note: No feed found
   ical:
-    checked: 2026-06-08
-    date: 2026-06-07
-    note: 'Latest event: Cofacts 查核協作者培訓'
+    date: 2026-08-08
+    note: "Latest event: COSCUP _ AI 開放治理 & Civic Tech 議程"
     url: https://calendar.google.com/calendar/ical/cpcf6iv5pt9l6gl2ue3svo63e8%40group.calendar.google.com/public/basic.ics
+    checked: 2026-08-17
   scrape:
-    checked: 2026-06-08
+    hint: no_markup
+    checked: 2026-08-17
     hint: no_markup
     note: News page found, no machine-readable date
 last_checked: '2026-05-30'

@@ -56,10 +56,15 @@ activity:
     note: Website live; Democracy & Accountability program page current.
     url: https://australiainstitute.org.au/about/structure/democracy-accountability/
   rss:
-    checked: 2026-08-09
-    date: 2026-08-06
-    note: 'Latest post: Confused about interest rates and inflation? You’re not alone'
-    url: https://australiainstitute.org.au/post/confused-about-interest-rates-and-inflation-youre-not-alone/?utm_source=rss&utm_medium=rss&utm_campaign=confused-about-interest-rates-and-inflation-youre-not-alone
+    date: 2026-08-17
+    note: "Latest post: What’s the point of gambling reform?"
+    url: https://australiainstitute.org.au/post/whats-the-point-of-gambling-reform/?utm_source=rss&utm_medium=rss&utm_campaign=whats-the-point-of-gambling-reform
+    checked: 2026-08-17
+  rss:
+    date: 2026-08-17
+    note: "Latest post: What’s the point of gambling reform?"
+    url: https://australiainstitute.org.au/post/whats-the-point-of-gambling-reform/?utm_source=rss&utm_medium=rss&utm_campaign=whats-the-point-of-gambling-reform
+    checked: 2026-08-17
 last_checked: '2026-07-19'
 ---
 

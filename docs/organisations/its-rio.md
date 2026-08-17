@@ -36,10 +36,15 @@ events:
   notable: true
 activity:
   sitemap:
-    checked: 2026-08-09
-    date: 2026-08-06
-    note: Page last modified (from sitemap)
+    date: 2026-08-14
+    note: "Page last modified (from sitemap)"
     url: https://itsrio.org/sitemap.xml
+    checked: 2026-08-17
+  sitemap:
+    date: 2026-08-14
+    note: "Page last modified (from sitemap)"
+    url: https://itsrio.org/sitemap.xml
+    checked: 2026-08-17
 last_checked: '2026-08-09'
 ---
 

@@ -34,7 +34,7 @@ events:
   notable: true
 activity:
   rss:
-    checked: 2026-08-09
+    checked: 2026-08-17
     date: 2026-06-01
     note: 'Latest post: Lancement de l’étude sur la mise en œuvre de l’Agenda 1325 :
       après 25 ans de la '

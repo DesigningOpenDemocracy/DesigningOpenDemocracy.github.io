@@ -38,7 +38,7 @@ activity:
     note: website is present and loaded. Last report released by them is at 5 June,
       2026
   rss:
-    checked: 2026-08-09
+    checked: 2026-08-17
     note: No feed found
 last_checked: '2026-06-28'
 ---

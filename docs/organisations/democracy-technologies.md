@@ -54,7 +54,7 @@ activity:
     date: 2024-09-04
     note: website loaded. Last article at September 4, 2024 AI-Washing Is an Opportunity
   sitemap:
-    checked: 2026-08-09
+    checked: 2026-08-17
     date: 2025-09-03
     note: Page last modified (from sitemap)
 last_checked: '2026-05-29'

@@ -33,7 +33,7 @@ events:
   notable: true
 activity:
   rss:
-    checked: 2026-08-09
+    checked: 2026-08-17
     date: 2026-06-25
     note: 'Latest post: Wspólne oświadczenie polskich i ukraińskich organizacji, działaczy
       i działaczek '

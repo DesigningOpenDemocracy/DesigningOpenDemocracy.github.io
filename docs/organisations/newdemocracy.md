@@ -66,11 +66,15 @@ events:
   notable: true
 activity:
   rss:
-    checked: 2026-06-08
-    date: 2026-03-04
-    note: 'Latest post: Final report: Upper House Inquiry into Community Consultation
-      Practices.'
-    url: https://www.newdemocracy.com.au/2026/03/04/final-report-upper-house-inquiry-into-community-consultation-practices/?utm_source=rss&utm_medium=rss&utm_campaign=final-report-upper-house-inquiry-into-community-consultation-practices
+    date: 2026-07-03
+    note: "Latest post: A New Political Party: Why?"
+    url: https://www.newdemocracy.com.au/2026/07/03/a-new-political-party-why/?utm_source=rss&utm_medium=rss&utm_campaign=a-new-political-party-why
+    checked: 2026-08-17
+  rss:
+    date: 2026-07-03
+    note: "Latest post: A New Political Party: Why?"
+    url: https://www.newdemocracy.com.au/2026/07/03/a-new-political-party-why/?utm_source=rss&utm_medium=rss&utm_campaign=a-new-political-party-why
+    checked: 2026-08-17
 last_checked: '2026-06-15'
 ---
 

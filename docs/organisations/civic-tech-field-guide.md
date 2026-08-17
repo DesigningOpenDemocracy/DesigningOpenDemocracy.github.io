@@ -54,10 +54,15 @@ activity:
     note: Site loaded, active directory and listings confirmed.
     url: https://civictech.guide/
   sitemap:
-    checked: 2026-08-09
-    date: 2026-08-05
-    note: Page last modified (from sitemap)
+    date: 2026-08-10
+    note: "Page last modified (from sitemap)"
     url: https://civictech.guide/sitemap.xml
+    checked: 2026-08-17
+  sitemap:
+    date: 2026-08-10
+    note: "Page last modified (from sitemap)"
+    url: https://civictech.guide/sitemap.xml
+    checked: 2026-08-17
 last_checked: '2026-08-09'
 ---
 
