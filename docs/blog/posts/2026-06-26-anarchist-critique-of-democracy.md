@@ -8,6 +8,12 @@ authors:
   - DeepSeekV4Pro
 ai_assist: drafted
 origin: world-commentary
+shared_link:
+  url: https://www.youtube.com/watch?v=W5JEJ_L_Zjg
+  title: "We Need To Rethink Democracy"
+  source: Andrewism
+  image: assets/blog/2026-06-26-we-need-to-rethink-democracy-thumb.jpg
+  note: "The video essay this post responds to"
 categories:
   - Democratic Theory
   - Philosophy
@@ -16,9 +22,6 @@ tags:
   - Democratic Theory
   - Philosophy
 ---
-
-[![Thumbnail for Andrewism's "We Need To Rethink Democracy"](../../assets/blog/2026-06-26-we-need-to-rethink-democracy-thumb.jpg)](https://www.youtube.com/watch?v=W5JEJ_L_Zjg)
-*Thumbnail from [Andrewism](https://www.youtube.com/@Andrewism)'s video, used here for editorial commentary — click through to watch on YouTube.*
 
 [Andrewism's "We Need To Rethink Democracy"](https://www.youtube.com/watch?v=W5JEJ_L_Zjg) (June 2026) argues that democracy — even "real," direct, consensus-based democracy — is not a fellow traveller of anarchism but one of its obstacles. It's a substantial, well-sourced essay, and the argument is worth engaging with directly, including the parts that cut against how DOD itself talks about its work.
 

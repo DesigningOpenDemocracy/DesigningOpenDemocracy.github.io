@@ -43,6 +43,26 @@ def make_org_file(directory, slug, events_yaml, title=None):
     return path
 
 
+BLOG_POST_FRONTMATTER = """---
+title: "{title}"
+date: 2026-01-01
+authors:
+  - Test Author
+shared_link:
+{shared_link_yaml}---
+
+Body text here.
+"""
+
+
+def make_blog_post_file(directory, slug, shared_link_yaml, title=None):
+    path = os.path.join(directory, slug + ".md")
+    with open(path, "w", encoding="utf-8") as f:
+        f.write(BLOG_POST_FRONTMATTER.format(
+            title=title or slug, shared_link_yaml=shared_link_yaml))
+    return path
+
+
 class ParagraphHashTests(unittest.TestCase):
 
     def test_returns_none_when_quote_not_found(self):
@@ -236,6 +256,105 @@ class WriteQuoteFixTests(unittest.TestCase):
         self.assertFalse(cf.write_quote_fix(path, "some quote", "new quote"))
 
 
+class FindSharedLinkEvidenceTests(unittest.TestCase):
+
+    def setUp(self):
+        self.tmpdir = tempfile.mkdtemp()
+        self.addCleanup(shutil.rmtree, self.tmpdir, ignore_errors=True)
+
+    def test_yields_url_and_description(self):
+        yaml = (
+            "  url: https://example.org/paper\n"
+            "  title: A Paper\n"
+            "  source: Example Journal\n"
+            "  description: The abstract text goes here verbatim.\n"
+        )
+        path = make_blog_post_file(self.tmpdir, "test-post", yaml)
+        items = list(cf.find_shared_link_evidence(path))
+        self.assertEqual(len(items), 1)
+        url, description, source_label, yielded_path = items[0]
+        self.assertEqual(url, "https://example.org/paper")
+        self.assertEqual(description, "The abstract text goes here verbatim.")
+        self.assertIn("A Paper", source_label)
+        self.assertEqual(yielded_path, path)
+
+    def test_no_shared_link_yields_nothing(self):
+        path = self._path_no_shared_link()
+        self.assertEqual(list(cf.find_shared_link_evidence(path)), [])
+
+    def _path_no_shared_link(self):
+        path = os.path.join(self.tmpdir, "no-link.md")
+        with open(path, "w", encoding="utf-8") as f:
+            f.write("---\ntitle: No Link\ndate: 2026-01-01\n---\n\nBody.\n")
+        return path
+
+    def test_shared_link_without_description_yields_nothing(self):
+        yaml = "  url: https://example.org/paper\n  title: A Paper\n"
+        path = make_blog_post_file(self.tmpdir, "no-desc", yaml)
+        self.assertEqual(list(cf.find_shared_link_evidence(path)), [])
+
+    def test_shared_link_without_url_yields_nothing(self):
+        yaml = "  description: Some text with no url to check it against.\n"
+        path = make_blog_post_file(self.tmpdir, "no-url", yaml)
+        self.assertEqual(list(cf.find_shared_link_evidence(path)), [])
+
+
+class WriteSharedLinkFixTests(unittest.TestCase):
+
+    def setUp(self):
+        self.tmpdir = tempfile.mkdtemp()
+        self.addCleanup(shutil.rmtree, self.tmpdir, ignore_errors=True)
+
+    def test_plain_scalar_substring_replace(self):
+        # The common case: a description with no special YAML characters is
+        # stored verbatim, so write_quote_fix's primary path (not even the
+        # shared_link-specific fallback) finds and replaces it directly.
+        yaml = "  url: https://example.org/paper\n  description: Old abstract text.\n"
+        path = make_blog_post_file(self.tmpdir, "plain", yaml)
+        self.assertTrue(cf.write_quote_fix(path, "Old abstract text.", "New abstract text."))
+        with open(path, encoding="utf-8") as f:
+            self.assertIn("New abstract text.", f.read())
+
+    def test_yaml_fallback_rewrites_quoted_scalar_description(self):
+        # An apostrophe forces YAML to store the value as a single-quoted
+        # scalar with '' escaping — not verbatim in the raw file text, so
+        # the plain substring replace can't find it and must fall back to
+        # _write_shared_link_fix_yaml.
+        old = "It's the abstract's opening line"
+        new = "It's the abstract's corrected opening line"
+        yaml = (
+            "  url: https://example.org/paper\n"
+            "  title: A Paper\n"
+            f"  description: '{old.replace(chr(39), chr(39) * 2)}'\n"
+        )
+        path = make_blog_post_file(self.tmpdir, "quoted", yaml)
+
+        self.assertTrue(cf.write_quote_fix(path, old, new))
+
+        post_after = None
+        import frontmatter as fm
+        post_after = fm.load(path)
+        self.assertEqual(post_after.metadata["shared_link"]["description"], new)
+        # Other shared_link fields must survive the round-trip untouched.
+        self.assertEqual(post_after.metadata["shared_link"]["title"], "A Paper")
+
+    def test_refuses_when_description_does_not_match(self):
+        yaml = "  url: https://example.org/paper\n  description: Some text.\n"
+        path = make_blog_post_file(self.tmpdir, "mismatch", yaml)
+        with open(path, encoding="utf-8") as f:
+            original = f.read()
+        result = cf.write_quote_fix(path, "text that is not present anywhere", "new text")
+        self.assertFalse(result)
+        with open(path, encoding="utf-8") as f:
+            self.assertEqual(f.read(), original)  # untouched
+
+    def test_refuses_when_no_shared_link_field(self):
+        path = os.path.join(self.tmpdir, "no-link.md")
+        with open(path, "w", encoding="utf-8") as f:
+            f.write("---\ntitle: No Link\ndate: 2026-01-01\n---\n\nBody.\n")
+        self.assertFalse(cf.write_quote_fix(path, "some text", "new text"))
+
+
 class CollectEvidenceSlugFilterTests(unittest.TestCase):
     """Regression test for the --slug bug: --slug a --slug b used to
     silently keep only the last flag (a plain str field, overwritten on
@@ -289,6 +408,48 @@ class CollectEvidenceSlugFilterTests(unittest.TestCase):
         seen = self._slugs_seen(self._args(slug=["alpha-org", "gamma-org"]))
         self.assertEqual(seen, {"alpha-org", "gamma-org"})
         self.assertNotIn("beta-org", seen)
+
+
+class CollectEvidenceSharedLinkTests(unittest.TestCase):
+    """collect_evidence() must pick up blog posts' shared_link.description:
+    under docs/blog/posts/, tagged kind='shared_link', alongside events and
+    footnotes — not just org pages directly under DOCS_DIR."""
+
+    def setUp(self):
+        self.tmpdir = tempfile.mkdtemp()
+        self.addCleanup(shutil.rmtree, self.tmpdir, ignore_errors=True)
+        self._orig_org_dir = cf.ORG_DIR
+        self._orig_docs_dir = cf.DOCS_DIR
+        cf.ORG_DIR = os.path.join(self.tmpdir, "organisations")
+        cf.DOCS_DIR = self.tmpdir
+        os.makedirs(cf.ORG_DIR, exist_ok=True)
+
+        posts_dir = os.path.join(self.tmpdir, "blog", "posts")
+        os.makedirs(posts_dir, exist_ok=True)
+        make_blog_post_file(
+            posts_dir, "test-post",
+            "  url: https://example.org/paper\n"
+            "  title: A Paper\n"
+            "  description: The abstract text goes here.\n",
+        )
+
+    def tearDown(self):
+        cf.ORG_DIR = self._orig_org_dir
+        cf.DOCS_DIR = self._orig_docs_dir
+
+    def test_shared_link_evidence_is_collected(self):
+        args = argparse.Namespace(slug=None, events_only=False)
+        items = cf.collect_evidence(args)
+        shared_link_items = [i for i in items if i[3] == "shared_link"]
+        self.assertEqual(len(shared_link_items), 1)
+        url, description, source_label, kind, path = shared_link_items[0]
+        self.assertEqual(url, "https://example.org/paper")
+        self.assertEqual(description, "The abstract text goes here.")
+
+    def test_events_only_excludes_shared_link(self):
+        args = argparse.Namespace(slug=None, events_only=True)
+        items = cf.collect_evidence(args)
+        self.assertFalse([i for i in items if i[3] == "shared_link"])
 
 
 if __name__ == "__main__":

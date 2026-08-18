@@ -2,7 +2,7 @@
 """
 check_fragments.py — mechanically re-verify evidence against live pages.
 
-Verifies two sources of evidence through the same pipeline:
+Verifies three sources of evidence through the same pipeline:
 
 1. Event quotes — from org frontmatter `events:` entries. An event's
    "mechanical proof" is the exact text in its `quote:` field — this must
@@ -17,7 +17,13 @@ Verifies two sources of evidence through the same pipeline:
    quote like "X... Y" verifies correctly instead of always mismatching
    on the literal ellipsis that never appears on a real page.
 
-Both sources share the same cache, fetch machinery, and reporting.
+3. Shared-link descriptions — from a blog post's `shared_link.description:`
+   frontmatter (see CLAUDE.md's "Convention — shared_link"). When set, this
+   is expected to be the verbatim abstract/summary text of the linked page
+   — checked against `shared_link.url` the same way a footnote quote is
+   checked against its citation URL.
+
+All three sources share the same cache, fetch machinery, and reporting.
 
 Caching: results are kept in docs/data/event-evidence-cache.json (committed, so state
 survives across weekly cron runs on fresh checkouts) keyed by URL. Non-
@@ -386,8 +392,9 @@ def check_evidence(url, evidence, cache, use_cache=True):
 
 
 def write_quote_fix(path, old, new):
-    """Surgically replace `old` with `new` in the source file at `path`
-    (a quote: field value in org frontmatter, or a quoted footnote body).
+    """Surgically replace `old` with `new` in the source file at `path` (a
+    quote: field value in org frontmatter, a shared_link.description:
+    value in blog-post frontmatter, or a quoted footnote body).
 
     First tries a plain substring replace, which covers the common case of
     a plain YAML scalar: there the parsed value is stored verbatim, so the
@@ -396,8 +403,9 @@ def write_quote_fix(path, old, new):
     containing ': ' or apostrophes, e.g. 'l''été'), or one wrapped across
     lines at 80 chars — the raw text differs from the parsed value by
     escaping and line-wrapping and the search can't find it. Those fall
-    back to _write_quote_fix_yaml(), which locates the value by parsing the
-    frontmatter instead of matching raw text.
+    back to _write_quote_fix_yaml() (org-page events:) or
+    _write_shared_link_fix_yaml() (blog-post shared_link:), which locate
+    the value by parsing the frontmatter instead of matching raw text.
 
     Footnote bodies have no frontmatter to fall back to; if the raw
     substring isn't found there exactly once, return False and let the
@@ -410,7 +418,9 @@ def write_quote_fix(path, old, new):
         with open(path, "w", encoding="utf-8") as f:
             f.write(src.replace(old, new, 1))
         return True
-    return _write_quote_fix_yaml(path, old, new)
+    if _write_quote_fix_yaml(path, old, new):
+        return True
+    return _write_shared_link_fix_yaml(path, old, new)
 
 
 def _write_quote_fix_yaml(path, old, new):
@@ -460,6 +470,33 @@ def _write_quote_fix_yaml(path, old, new):
         return False
 
 
+def _write_shared_link_fix_yaml(path, old, new):
+    """YAML-aware fallback for write_quote_fix, for a blog post's
+    shared_link.description: value. Unlike org pages, blog-post frontmatter
+    has no canonical field order to preserve (reorder_frontmatter.py only
+    covers docs/organisations/), so this round-trips through
+    python-frontmatter's own dumper rather than the canonical one — it will
+    reformat the rest of the file's frontmatter, same tradeoff
+    _write_quote_fix_yaml accepts for org pages, but with no ordering
+    check to gate on first.
+
+    Refuses (returns False) when the file has no frontmatter or
+    shared_link.description doesn't equal `old` exactly.
+
+    Never raises; returns True only after the file was actually written."""
+    try:
+        post = frontmatter.load(path)
+        link = post.metadata.get("shared_link")
+        if not isinstance(link, dict) or link.get("description") != old:
+            return False
+        link["description"] = new
+        with open(path, "w", encoding="utf-8") as f:
+            f.write(frontmatter.dumps(post))
+        return True
+    except Exception:
+        return False
+
+
 def find_footnote_evidence(path):
     """Yield (url, quote_text, source_label, path) for footnote definitions
     that qualify for the machine-verifiable quote convention — see
@@ -472,6 +509,24 @@ def find_footnote_evidence(path):
         for label, url, title, quote in iter_footnote_citations(line):
             source_label = "".join([rel, ":", str(i), " [^", label, "]"])
             yield url, quote, source_label, path
+
+
+def find_shared_link_evidence(path):
+    """Yield (url, description_text, source_label, path) for a blog post's
+    shared_link.description: — the abstract/summary of the linked resource,
+    checked against shared_link.url the same way a footnote quote is
+    checked against its citation URL."""
+    post = frontmatter.load(path)
+    link = post.metadata.get("shared_link")
+    if not isinstance(link, dict):
+        return
+    url = str(link.get("url", ""))
+    description = link.get("description")
+    if not url or not description:
+        return
+    rel = os.path.relpath(path, os.path.join(DOCS_DIR, ".."))
+    title = str(link.get("title", ""))[:50]
+    yield url, description, "".join([rel, " shared_link (", title, ")"]), path
 
 
 def save_to_wayback(url, timeout=30):
@@ -509,8 +564,9 @@ def save_to_wayback(url, timeout=30):
 
 
 def collect_evidence(args):
-    """Return list of (url, quote, source_label, kind) tuples from
-    events and footnotes. 'kind' is 'event' or 'footnote' for reporting."""
+    """Return list of (url, quote, source_label, kind) tuples from events,
+    footnotes, and shared-link descriptions. 'kind' is 'event', 'footnote',
+    or 'shared_link' for reporting."""
     items = []
 
     event_paths = sorted(glob.glob(os.path.join(ORG_DIR, "*.md")))
@@ -542,6 +598,10 @@ def collect_evidence(args):
             for url, quote, source_label, path in find_footnote_evidence(path):
                 items.append((url, quote, source_label, "footnote", path))
 
+        for path in sorted(glob.glob(os.path.join(DOCS_DIR, "blog", "posts", "*.md"))):
+            for url, quote, source_label, path in find_shared_link_evidence(path):
+                items.append((url, quote, source_label, "shared_link", path))
+
     return items
 
 
@@ -557,7 +617,7 @@ def main():
     parser.add_argument("--footnotes-only", action="store_true",
                         help="Only check footnote evidence (skip events)")
     parser.add_argument("--events-only", action="store_true",
-                        help="Only check event evidence (skip footnotes)")
+                        help="Only check event evidence (skip footnotes and shared links)")
     parser.add_argument("--autofix-spaces", action="store_true",
                         help="Fix MISMATCHes that differ from the page only by "
                              "spacing (em-dash spacing, stray spaces): rewrite the "
@@ -599,7 +659,8 @@ def main():
     wayback_saved = 0
     wayback_failed = 0
     by_kind = {"event": {"good": 0, "bad": 0, "errors": 0},
-               "footnote": {"good": 0, "bad": 0, "errors": 0}}
+               "footnote": {"good": 0, "bad": 0, "errors": 0},
+               "shared_link": {"good": 0, "bad": 0, "errors": 0}}
     report_mismatches = []
     report_ambiguous = []
     report_fetch_errors = []
@@ -701,6 +762,9 @@ def main():
     print("  Footnotes: " + str(by_kind["footnote"]["good"]) + " good, " +
           str(by_kind["footnote"]["bad"]) + " bad, " +
           str(by_kind["footnote"]["errors"]) + " errors")
+    print("  Shared links: " + str(by_kind["shared_link"]["good"]) + " good, " +
+          str(by_kind["shared_link"]["bad"]) + " bad, " +
+          str(by_kind["shared_link"]["errors"]) + " errors")
     if args.save_to_wayback:
         print("Wayback Machine: " + str(wayback_saved) + " saved, " +
               str(wayback_failed) + " failed")
