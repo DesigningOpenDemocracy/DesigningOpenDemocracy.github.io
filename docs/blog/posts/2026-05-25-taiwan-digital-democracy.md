@@ -29,7 +29,7 @@ vTaiwan — the Taiwanese consultation platform built around Pol.is — gives co
 
 [Nicholas Gruen](https://en.wikipedia.org/wiki/Nicholas_Gruen), who presented to DOD on isegoria and citizens' juries in [2017](../2017-08-21-podcast.md) and [2020](../2020-03-20.md), has a frame that maps cleanly onto this. Elections are *competitive* and *aristocratic* — you win by beating opponents, and the people who rise are a self-selected political class. Juries are *unitary* and *democratic in the Greek sense* — your job is to reach a conclusion together, and equality of speech (*isegoria*) is the design principle, not freedom to out-shout.
 
-Pol.is is, at its core, an isegoria machine. Instead of threaded argument (which rewards combative voices), participants vote agree/disagree/pass on each other's statements. The algorithm surfaces cross-cluster consensus — points of agreement between groups that disagree on most things. Minority views that cut across conventional divides become visible rather than drowned out. The 2015 Uber consultation showed this clearly: taxi drivers and Uber supporters converged on shared positions about registration and fair regulation that open debate had buried under noise ([Democracy Technologies, 2023](https://democracy-technologies.org/participation/consensus-building-in-taiwan/)).
+Pol.is is, at its core, an isegoria machine. Instead of threaded argument (which rewards combative voices), participants vote agree/disagree/pass on each other's statements. The algorithm surfaces cross-cluster consensus — points of agreement between groups that disagree on most things. Minority views that cut across conventional divides become visible rather than drowned out. The 2015 Uber consultation showed this clearly: taxi drivers and Uber supporters converged on shared positions about registration and fair regulation that open debate had buried under noise.[^uber-consensus]
 
 On the 2017 criteria: Pol.is scores well on *crushing minorities* (the design surfaces minority cross-cluster views rather than flattening them) and *human bandwidth* (agree/disagree/pass is genuinely low-friction at scale). *Vulnerability to corruption* was handled through radical transparency — all meetings live-streamed, all outputs published verbatim.
 
@@ -37,7 +37,7 @@ On the 2017 criteria: Pol.is scores well on *crushing minorities* (the design su
 
 **Who decides the questions?** The government. vTaiwan's scope was determined by which ministries were willing to engage, and in practice it stayed mostly confined to digital-policy questions — ride-sharing, fintech, online alcohol sales. The civic community couldn't put whatever it wanted on the agenda. This turned out to matter when the government's appetite shrank.
 
-**Does it accrue decisions?** No. vTaiwan's recommendations were never legally binding. In its early phase — roughly 2015–2018 — around 80% of its ~26 deliberations led to some government action, by its own count. But that track record ran almost entirely on political novelty and on [Audrey Tang](https://en.wikipedia.org/wiki/Audrey_Tang), then the platform's champion inside government. The platform hasn't driven a major decision since 2018. One policymaker described it as "a tiger without teeth" — and vTaiwan co-creator and former legislator Jason Hsu made the same point in his own words: because the government isn't required to act on recommendations, "legislators don't take it seriously" ([Democracy Technologies, 2023](https://democracy-technologies.org/participation/consensus-building-in-taiwan/); [Noveck, 2023](https://bethnoveck.medium.com/was-vtaiwan-such-a-big-flop-after-all-d6b365f916dc)).
+**Does it accrue decisions?** No. vTaiwan's recommendations were never legally binding. In its early phase — roughly 2015–2018 — around 80% of its ~26 deliberations led to some government action, by its own count. But that track record ran almost entirely on political novelty and on [Audrey Tang](https://en.wikipedia.org/wiki/Audrey_Tang), then the platform's champion inside government. The platform hasn't driven a major decision since 2018. One policymaker described it as "a tiger without teeth."[^tiger-no-teeth] vTaiwan co-creator and former legislator Jason Hsu made the same point in his own words: because the government isn't required to act on recommendations, "legislators don't take it seriously."[^hsu-quote]
 
 Gruen's line from his [2017 DOD presentation](../2017-08-21-podcast.md) fits exactly: *"in political combat, the considered opinion of the people amounts to nothing unless you consider it properly."* vTaiwan could surface a considered public view. It was never wired to compel anyone to act on it.
 
@@ -73,6 +73,12 @@ What this post doesn't cover: the AI governance angle (Alignment Assemblies, the
 </details>
 
 ---
+
+[^uber-consensus]: "However, as vTaiwan users revised viewpoints, they coalesced around more consensual statements like ‘the government should set up a fair regulatory regime,’ and ‘private passenger vehicles should be registered.’" Sebastian Cushing Rodriguez, ["Consensus Building in Taiwan, the Poster Child of Digital Democracy"](https://democracy-technologies.org/participation/consensus-building-in-taiwan/), *Democracy Technologies*, 2023.
+
+[^tiger-no-teeth]: "vTaiwan has been criticised for being, as one policymaker described it," a tiger without teeth. Sebastian Cushing Rodriguez, ["Consensus Building in Taiwan, the Poster Child of Digital Democracy"](https://democracy-technologies.org/participation/consensus-building-in-taiwan/), *Democracy Technologies*, 2023.
+
+[^hsu-quote]: "legislators don't take it seriously." Since the government is not mandated to adopt recommendations coming from vTaiwan, vTaiwan co-creator and former Taiwanese legislator Jason Hsu told The Daily Beast, quoted in ["Taiwan Tried to Digitize Democracy. It Was a Huge Flop."](https://au.finance.yahoo.com/news/taiwan-tried-digitize-democracy-huge-084810185.html), Yahoo Finance (republishing the original, paywalled *Daily Beast* report).
 
 ## Sources & further reading
 
