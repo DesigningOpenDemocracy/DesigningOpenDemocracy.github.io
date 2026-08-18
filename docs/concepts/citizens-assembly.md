@@ -147,6 +147,12 @@ Electoral Reform Society, ‘What is a Citizens’ Assembly’,
 <https://www.electoral-reform.org.uk/what-is-a-citizens-assembly/>. The
 organisation has helped run Citizens’ Assemblies in the UK.
 
+Extinction Rebellion Australia, ‘Citizens’ Assemblies’,
+<https://ausrebellion.earth/citizens-assemblies/>. Frames citizens'
+assemblies as XR's third demand (a citizens' assembly on climate and
+ecological justice); also links a downloadable guide covering how
+assemblies work at both state and federal levels in Australia.
+
 
 ## See also
 
