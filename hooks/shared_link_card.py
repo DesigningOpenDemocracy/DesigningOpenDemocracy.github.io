@@ -19,6 +19,7 @@ def on_page_markdown(markdown, *, page, config, files):
     note = link.get('note', '')
     paywalled = link.get('paywalled', False)
     image = link.get('image', '')
+    description = link.get('description', '')
 
     eyebrow = 'Shared link' + (f' · {source}' if source else '')
     parts = ['\n<div class="shared-link-card">']
@@ -38,6 +39,8 @@ def on_page_markdown(markdown, *, page, config, files):
         parts.append(f'<div class="shared-link-title">{title}</div>')
     if note:
         parts.append(f'<div class="shared-link-note">{note}</div>')
+    if description:
+        parts.append(f'<blockquote class="shared-link-description">{description}</blockquote>')
     parts.append('<div class="shared-link-actions">')
     parts.append(
         f'<a class="hero-cta-btn hero-cta-primary" href="{url}" '
