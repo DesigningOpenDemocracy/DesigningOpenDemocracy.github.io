@@ -145,11 +145,15 @@ class FetchPreviewTests(unittest.TestCase):
             result = fsp.fetch_preview("https://example.org/page", session=session)
         self.assertEqual(result["image"], "https://example.org/thumb.jpg")
 
-    def test_blocked_status_reported_as_blocked(self):
+    def test_blocked_status_reported_in_check_fragments_format(self):
+        # "HTTP_403" (not a bespoke "BLOCKED" string) — this script shares
+        # check_fragments.py's cache/"blocked" field, so the error format
+        # has to match cf.BLOCKED_ERRORS exactly.
         session = _FakeSession({"https://example.org/page": _FakeResponse(status_code=403)})
         with mock.patch.object(fsp, "robots_allowed", return_value=True):
             result = fsp.fetch_preview("https://example.org/page", session=session)
-        self.assertEqual(result, {"error": "BLOCKED"})
+        self.assertEqual(result, {"error": "HTTP_403"})
+        self.assertIn("HTTP_403", fsp.cf.BLOCKED_ERRORS)
 
     def test_robots_disallowed_skips_fetch_entirely(self):
         session = _FakeSession({})  # any .get() call would raise AssertionError
@@ -171,6 +175,49 @@ class FetchPreviewTests(unittest.TestCase):
         with mock.patch.object(fsp, "robots_allowed", return_value=True):
             result = fsp.fetch_preview("https://example.org/page", session=session)
         self.assertEqual(result["title"], "OG Title")  # oEmbed failure doesn't clobber it
+
+
+class FetchPreviewCachedTests(unittest.TestCase):
+    """fetch_preview_cached() must skip a URL already confirmed BLOCKED —
+    no request at all — until use_cache=False forces a recheck, sharing
+    the exact cache/field format check_fragments.py and check_event_urls.py
+    use for the same URL."""
+
+    def test_blocked_url_is_skipped_without_a_request(self):
+        cache = {"https://example.org/page": {"blocked": "HTTP_403", "blocked_since": "2026-01-01"}}
+        session = _FakeSession({})  # any .get() call raises AssertionError
+        found, skipped = fsp.fetch_preview_cached(
+            "https://example.org/page", timeout=5, session=session, cache=cache, use_cache=True)
+        self.assertTrue(skipped)
+        self.assertEqual(found, {"error": "HTTP_403"})
+
+    def test_fresh_403_gets_recorded_as_blocked(self):
+        cache = {}
+        session = _FakeSession({"https://example.org/page": _FakeResponse(status_code=403)})
+        with mock.patch.object(fsp, "robots_allowed", return_value=True):
+            fsp.fetch_preview_cached(
+                "https://example.org/page", timeout=5, session=session, cache=cache, use_cache=True)
+        self.assertEqual(cache["https://example.org/page"]["blocked"], "HTTP_403")
+        self.assertIn("blocked_since", cache["https://example.org/page"])
+
+    def test_no_cache_bypasses_the_blocked_skip(self):
+        cache = {"https://example.org/page": {"blocked": "HTTP_403", "blocked_since": "2026-01-01"}}
+        html_text = '<html><head><meta property="og:title" content="Now Live"></head></html>'
+        session = _FakeSession({"https://example.org/page": _FakeResponse(html_text)})
+        with mock.patch.object(fsp, "robots_allowed", return_value=True):
+            found, skipped = fsp.fetch_preview_cached(
+                "https://example.org/page", timeout=5, session=session, cache=cache, use_cache=False)
+        self.assertFalse(skipped)
+        self.assertEqual(found["title"], "Now Live")
+
+    def test_successful_recheck_clears_a_stale_blocked_flag(self):
+        cache = {"https://example.org/page": {"blocked": "HTTP_403", "blocked_since": "2026-01-01"}}
+        html_text = '<html><head><meta property="og:title" content="Now Live"></head></html>'
+        session = _FakeSession({"https://example.org/page": _FakeResponse(html_text)})
+        with mock.patch.object(fsp, "robots_allowed", return_value=True):
+            fsp.fetch_preview_cached(
+                "https://example.org/page", timeout=5, session=session, cache=cache, use_cache=False)
+        self.assertNotIn("https://example.org/page", cache)
 
 
 class DescriptionVerifiesTests(unittest.TestCase):

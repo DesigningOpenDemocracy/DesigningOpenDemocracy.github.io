@@ -16,6 +16,7 @@ import shutil
 import sys
 import tempfile
 import unittest
+from unittest import mock
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "util"))
 
@@ -124,6 +125,63 @@ class WikipediaTitleTests(unittest.TestCase):
 
     def test_wikipedia_domain_without_wiki_path_returns_none(self):
         self.assertIsNone(cf.wikipedia_title("https://en.wikipedia.org/w/index.php"))
+
+
+class CheckEvidenceBlockedCacheTests(unittest.TestCase):
+    """A URL confirmed BLOCKED (403/429) must be skipped on later runs — no
+    network call — until --no-cache forces a recheck, and must NOT stay
+    stuck blocked forever once the site starts answering again. Transient
+    errors (a 500, a timeout) must NOT get this sticky treatment — only
+    403/429 mean "this server doesn't want scripted requests."."""
+
+    def setUp(self):
+        # check_evidence() sleeps FETCH_DELAY before a real fetch attempt —
+        # only mocking _fetch_page_text still leaves that real 0.5s sleep
+        # in every test that reaches it. Patch it out so this stays a fast
+        # offline test, not a network test with the network call removed.
+        patcher = mock.patch.object(cf.time, "sleep")
+        patcher.start()
+        self.addCleanup(patcher.stop)
+
+    def test_blocked_url_is_skipped_without_a_fetch(self):
+        cache = {"https://example.org/paper": {"blocked": "HTTP_403", "blocked_since": "2026-01-01"}}
+        with mock.patch.object(cf, "_fetch_page_text") as fake_fetch:
+            result, unchanged, error, ambiguous, hint, text = cf.check_evidence(
+                "https://example.org/paper", "some evidence", cache, use_cache=True)
+        fake_fetch.assert_not_called()
+        self.assertIsNone(result)
+        self.assertTrue(unchanged)
+        self.assertEqual(error, "HTTP_403")
+
+    def test_fresh_403_gets_recorded_as_blocked(self):
+        cache = {}
+        with mock.patch.object(cf, "_fetch_page_text", return_value=(None, None, "HTTP_403")):
+            cf.check_evidence("https://example.org/paper", "some evidence", cache, use_cache=True)
+        self.assertEqual(cache["https://example.org/paper"]["blocked"], "HTTP_403")
+        self.assertIn("blocked_since", cache["https://example.org/paper"])
+
+    def test_transient_error_is_not_recorded_as_blocked(self):
+        cache = {}
+        with mock.patch.object(cf, "_fetch_page_text", return_value=(None, None, "NETWORK_ERROR")):
+            cf.check_evidence("https://example.org/paper", "some evidence", cache, use_cache=True)
+        self.assertNotIn("blocked", cache.get("https://example.org/paper", {}))
+
+    def test_no_cache_bypasses_the_blocked_skip(self):
+        cache = {"https://example.org/paper": {"blocked": "HTTP_403", "blocked_since": "2026-01-01"}}
+        with mock.patch.object(cf, "_fetch_page_text",
+                                return_value=("some evidence appears here", mock.Mock(headers={}), None)):
+            result, unchanged, error, ambiguous, hint, text = cf.check_evidence(
+                "https://example.org/paper", "some evidence", cache, use_cache=False)
+        self.assertIsNone(error)
+        self.assertEqual(result, "good")
+
+    def test_successful_fetch_clears_a_stale_blocked_flag(self):
+        cache = {"https://example.org/paper": {"blocked": "HTTP_403", "blocked_since": "2026-01-01"}}
+        with mock.patch.object(cf, "_fetch_page_text",
+                                return_value=("some evidence appears here", mock.Mock(headers={}), None)):
+            cf.check_evidence("https://example.org/paper", "some evidence", cache, use_cache=False)
+        self.assertNotIn("blocked", cache["https://example.org/paper"])
+        self.assertNotIn("blocked_since", cache["https://example.org/paper"])
 
 
 class WriteQuoteFixTests(unittest.TestCase):

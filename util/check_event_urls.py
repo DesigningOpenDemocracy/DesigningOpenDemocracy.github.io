@@ -13,10 +13,20 @@ This is a network script (like check_rss.py / scrape_news.py), so it is
 NOT part of the offline `make build` / CI pipeline — run it periodically
 as a maintenance step (see HEARTBEAT.md) rather than on every commit.
 
+A URL that comes back 403/429 (bot protection, not a transient failure)
+has that recorded against it and is skipped entirely on every subsequent
+run — no request at all, HEAD or GET — until --no-cache forces a recheck
+or the site starts answering normally again. This shares the same cache
+file and "blocked"/"blocked_since" fields check_fragments.py uses for the
+same reason: retrying a server that's already told us no, every week,
+forever, produces no new information and is just unwanted traffic to a
+site that's explicitly signalled it doesn't want scripted requests.
+
 Usage:
     python util/check_event_urls.py                  # check all event URLs
     python util/check_event_urls.py --slug mosaiclab  # single org
     python util/check_event_urls.py --timeout 8       # per-request timeout
+    python util/check_event_urls.py --no-cache        # recheck URLs already confirmed BLOCKED
 """
 
 import argparse
@@ -28,12 +38,16 @@ import time
 from datetime import date
 from urllib.parse import urlparse
 
+sys.path.insert(0, os.path.dirname(__file__))
+
 try:
     import frontmatter
     import requests
 except ImportError as e:
     print(f"Missing dependency: {e.name} — pip install python-frontmatter requests")
     sys.exit(1)
+
+import check_fragments as cf  # noqa: E402 — shared "blocked" URL cache
 
 ORGS_DIR = os.path.join(os.path.dirname(__file__), "..", "docs", "organisations")
 SKIP_FILES = {"index.md"}
@@ -56,8 +70,14 @@ def check_url(url, session, timeout):
         r = session.head(target, timeout=timeout, allow_redirects=True)
         # Some servers don't implement HEAD properly (405/501) or lie about
         # it — fall back to GET, same pattern used elsewhere in this repo
-        # (see probe_feeds in check_rss.py).
-        if r.status_code in (405, 501) or r.status_code >= 400:
+        # (see probe_feeds in check_rss.py). Deliberately NOT done for
+        # 403/429: those are bot protection giving a real answer to HEAD,
+        # not "method not supported" — a GET immediately after would almost
+        # certainly hit the exact same block, doubling the request for no
+        # new information. Other 4xx/5xx (404, 500, ...) still get the GET
+        # double-check, since those aren't a bot-protection signal and a
+        # server occasionally answers HEAD and GET differently for them.
+        if r.status_code in (405, 501) or (r.status_code >= 400 and r.status_code not in (403, 429)):
             r = session.get(target, timeout=timeout, allow_redirects=True, stream=True)
             r.close()
         return r.status_code, r.url, None
@@ -65,10 +85,44 @@ def check_url(url, session, timeout):
         return None, None, str(e)
 
 
+def check_url_cached(url, session, timeout, cache, use_cache=True):
+    """Wraps check_url() with the same shared "blocked" cache
+    check_fragments.py writes to (docs/data/event-evidence-cache.json,
+    keyed the same way — cache[url]["blocked"] is the "HTTP_403"/"HTTP_429"
+    string format that script already uses, so either script's write is
+    visible to the other). A URL already confirmed BLOCKED is skipped
+    entirely here — no request at all — until use_cache=False forces a
+    recheck. Returns (status, final_url, error, skipped), where
+    skipped=True means this was answered from cache without any network
+    call this run."""
+    entry = cache.get(url, {}) if use_cache else {}
+    if entry.get("blocked"):
+        return int(entry["blocked"].rsplit("_", 1)[-1]), None, None, True
+
+    status, final_url, error = check_url(url, session, timeout)
+
+    if status in (403, 429):
+        prior = cache.get(url, {})
+        cache[url] = {**prior, "blocked": f"HTTP_{status}",
+                      "blocked_since": prior.get("blocked_since", date.today().isoformat())}
+    elif not error and url in cache:
+        # A real, non-blocked answer — clear a stale blocked flag (the
+        # site un-blocked itself, or our UA/IP situation changed).
+        cache[url] = {k: v for k, v in cache[url].items()
+                      if k not in ("blocked", "blocked_since")}
+        if not cache[url]:
+            del cache[url]
+
+    return status, final_url, error, False
+
+
 def main():
     parser = argparse.ArgumentParser(description="Check liveness of event citation URLs")
     parser.add_argument("--slug", type=str, help="Check a single org by slug")
     parser.add_argument("--timeout", type=int, default=10, help="Per-request timeout in seconds")
+    parser.add_argument("--no-cache", action="store_true",
+                        help="Recheck URLs already confirmed BLOCKED on a prior run instead "
+                             "of skipping them")
     parser.add_argument("--report", type=str, default=None,
                         help="Write a JSON summary of findings to this path "
                              "(dead/blocked/redirected/errored, with counts) "
@@ -78,8 +132,10 @@ def main():
 
     session = requests.Session()
     session.headers.update({"User-Agent": DOD_USER_AGENT})
+    cache = cf.load_cache()
 
     checked = 0
+    skipped_blocked = 0
     dead = []
     blocked = []
     redirected = []
@@ -104,10 +160,13 @@ def main():
 
             if url not in seen_urls:
                 time.sleep(REQUEST_DELAY)
-                status, final_url, error = check_url(url, session, args.timeout)
-                seen_urls[url] = (status, final_url, error)
+                status, final_url, error, skipped = check_url_cached(
+                    url, session, args.timeout, cache, use_cache=not args.no_cache)
+                seen_urls[url] = (status, final_url, error, skipped)
                 checked += 1
-            status, final_url, error = seen_urls[url]
+                if skipped:
+                    skipped_blocked += 1
+            status, final_url, error, skipped = seen_urls[url]
 
             event_date = e.get("date", "?")
             event_title = e.get("title", "?")
@@ -126,8 +185,14 @@ def main():
                 # Reported separately from DEAD so nobody "fixes" a citation
                 # that was never actually broken.
                 blocked.append((title, event_date, event_title, url, status))
-                print(f"  BLOCKED ({status})  {title}  [{event_date}]  {event_title}")
-                print(f"           {url}  (likely bot-blocking — verify manually in a browser before touching)")
+                label = "STILL BLOCKED" if skipped else "BLOCKED"
+                print(f"  {label} ({status})  {title}  [{event_date}]  {event_title}")
+                if skipped:
+                    since = cache.get(url, {}).get("blocked_since", "?")
+                    print(f"           {url}  (confirmed blocked since {since} — skipped, "
+                          f"no request made; pass --no-cache to recheck)")
+                else:
+                    print(f"           {url}  (likely bot-blocking — verify manually in a browser before touching)")
             elif status is None or status >= 400:
                 dead.append((title, event_date, event_title, url, status))
                 print(f"  DEAD ({status})  {title}  [{event_date}]  {event_title}")
@@ -137,8 +202,12 @@ def main():
                 print(f"  REDIRECT {title}  [{event_date}]  {event_title}")
                 print(f"           {url}  ->  {final_url}")
 
+    cf.save_cache(cache)
+
     print()
-    print(f"Unique URLs checked: {checked}")
+    print(f"Unique URLs checked: {checked}"
+          + (f" ({skipped_blocked} answered from cache, already confirmed BLOCKED — "
+             f"pass --no-cache to recheck)" if skipped_blocked else ""))
     print(f"Dead: {len(dead)}  Blocked (403/429, likely not actually dead): {len(blocked)}  "
           f"Redirected: {len(redirected)}  Errored: {len(errored)}")
 

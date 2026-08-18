@@ -35,6 +35,17 @@ hash — this doesn't save the request, but it does tell you whether the
 article actually changed since your last check, which is the signal that
 matters for "has this citation drifted."
 
+A URL that returns 403/429 (bot protection, not a transient failure) has
+that recorded against it (cache[url]["blocked"]/["blocked_since"]) and is
+skipped entirely — no network call — on every subsequent run, reported as
+STILL BLOCKED rather than FETCH ERROR, until --no-cache forces a recheck
+or the site starts answering normally again. Retrying a server that's
+already told us no, every week, forever, produces no new information —
+same reasoning as scrape_news.py's existing bot_blocked hint, which is
+skipped on re-runs the same way. A transient error (a timeout, a 500) is
+NOT sticky like this — only 403/429 are, since those are the ones that
+mean "this server doesn't want scripted requests," not "try again later."
+
 Usage:
     python util/check_fragments.py           # verify all events + footnotes
     python util/check_fragments.py --slug mosaiclab  # single org
@@ -93,6 +104,13 @@ BLOCK_PATTERN = re.compile(
     re.IGNORECASE
 )
 PARAGRAPH_DELIM = "\x00P\x00"
+
+# HTTP statuses that mean "this site's bot protection said no," not "try
+# again later" — 500s, timeouts, and DNS errors are transient and should
+# still be retried every run, but a 403/429 from the same server, week
+# after week, isn't new information. See check_evidence()'s "blocked"
+# cache field.
+BLOCKED_ERRORS = {"HTTP_403", "HTTP_429"}
 
 
 def load_cache():
@@ -318,7 +336,9 @@ def check_evidence(url, evidence, cache, use_cache=True):
     Returns (result, unchanged, error, ambiguous, hint, page_text) where
     result is "good"/"bad"/None, unchanged is True if this was answered
     from cache without a fetch that could reveal new content (i.e. a real
-    304, not just "first look"), ambiguous is True if the evidence text
+    304, or a URL already confirmed BLOCKED on a prior run — see the
+    "blocked" cache field above check_evidence — not just "first look"),
+    ambiguous is True if the evidence text
     occurs more than once on a freshly-fetched page (only known when a
     fetch actually happened — a cache hit reports ambiguous=False rather
     than re-deriving it, since the cache doesn't retain page text), hint
@@ -339,6 +359,15 @@ def check_evidence(url, evidence, cache, use_cache=True):
     ev_key = sha256(normalize_ws(evidence))
     is_wikipedia = wikipedia_title(url) is not None
 
+    # A URL already confirmed BLOCKED (403/429) on a prior run is skipped
+    # entirely — no network call this run at all — until --no-cache forces
+    # a recheck. Retrying a site that's already told us no, every week,
+    # forever, is wasted traffic that can't even produce new information;
+    # this mirrors scrape_news.py's existing bot_blocked hint, which is
+    # skipped on re-runs the same way.
+    if use_cache and entry.get("blocked"):
+        return None, True, entry["blocked"], False, None, None
+
     headers = {"User-Agent": USER_AGENT}
     if not is_wikipedia:
         if entry.get("etag"):
@@ -349,6 +378,9 @@ def check_evidence(url, evidence, cache, use_cache=True):
     time.sleep(FETCH_DELAY)
     text, resp, error = _fetch_page_text(url, headers)
     if error:
+        if error in BLOCKED_ERRORS:
+            cache[url] = {**entry, "blocked": error,
+                          "blocked_since": entry.get("blocked_since", date.today().isoformat())}
         return None, False, error, False, None, None
 
     if text is None:
@@ -365,6 +397,9 @@ def check_evidence(url, evidence, cache, use_cache=True):
         time.sleep(FETCH_DELAY)
         text, resp, error = _fetch_page_text(url, {"User-Agent": USER_AGENT})
         if error:
+            if error in BLOCKED_ERRORS:
+                cache[url] = {**entry, "blocked": error,
+                              "blocked_since": entry.get("blocked_since", date.today().isoformat())}
             return None, False, error, False, None, None
 
     new_hash = paragraph_hash(text, evidence) or sha256(text)
@@ -378,7 +413,8 @@ def check_evidence(url, evidence, cache, use_cache=True):
             contexts[ev_key] = ctx
     cache[url] = {
         **{k: v for k, v in entry.items() if k not in
-           ("etag", "last_modified", "content_hash", "verified", "checked")},
+           ("etag", "last_modified", "content_hash", "verified", "checked",
+            "blocked", "blocked_since")},
         "etag": resp.headers.get("ETag") if resp is not None and not is_wikipedia else entry.get("etag"),
         "last_modified": resp.headers.get("Last-Modified") if resp is not None and not is_wikipedia else entry.get("last_modified"),
         "content_hash": new_hash,
@@ -652,6 +688,7 @@ def main():
     good = 0
     bad = 0
     errors = 0
+    still_blocked = 0
     unchanged = 0
     ambiguous_count = 0
     autofixed = 0
@@ -684,11 +721,23 @@ def main():
             time.sleep(0.5)
 
         if error:
-            errors += 1
             by_kind[kind]["errors"] += 1
-            report_fetch_errors.append({"source": source_label, "url": url, "error": error})
-            print("  FETCH ERROR  " + source_label)
-            print("               " + url + "  (" + error + ")")
+            if unchanged_hit:
+                # Already confirmed BLOCKED on a prior run — skipped
+                # entirely this run, no network call made. See
+                # check_evidence()'s "blocked" cache field.
+                still_blocked += 1
+                blocked_since = cache.get(url, {}).get("blocked_since", "?")
+                report_fetch_errors.append({"source": source_label, "url": url, "error": error,
+                                             "blocked_since": blocked_since})
+                print("  STILL BLOCKED  " + source_label)
+                print("               " + url + "  (" + error + ", confirmed blocked since " +
+                      blocked_since + " — skipped, use --no-cache to recheck)")
+            else:
+                errors += 1
+                report_fetch_errors.append({"source": source_label, "url": url, "error": error})
+                print("  FETCH ERROR  " + source_label)
+                print("               " + url + "  (" + error + ")")
             continue
 
         if unchanged_hit:
@@ -750,6 +799,9 @@ def main():
     print("Evidence checked: " + str(good) + " good, " + str(bad) + " mismatch, " +
           str(errors) + " fetch errors")
     print("  (" + str(unchanged) + " of those confirmed unchanged since last check)")
+    if still_blocked:
+        print("  (" + str(still_blocked) + " more skipped — already confirmed BLOCKED on a "
+              "prior run; pass --no-cache to recheck)")
     if autofixed:
         print("  (" + str(autofixed) + " auto-fixed in place (spacing-only differences))")
     if autofix_pending:

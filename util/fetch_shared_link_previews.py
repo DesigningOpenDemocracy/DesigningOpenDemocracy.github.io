@@ -44,12 +44,20 @@ writers.py). A full round-trip reformats the rest of the post's
 frontmatter — acceptable for a --write-gated, review-before-merge script,
 same tradeoff check_fragments.py's own YAML fallback already accepts.
 
+A URL that comes back 403/429 is recorded as BLOCKED and skipped entirely
+— no request at all — on every subsequent run of this script (or of
+check_fragments.py / check_event_urls.py — all three share the same cache
+file and "blocked"/"blocked_since" fields) until --no-cache forces a
+recheck. Retrying a site that's already told us no, every run, is wasted
+traffic that produces no new information.
+
 Usage:
     python util/fetch_shared_link_previews.py                       # report only, all posts with shared_link: url
     python util/fetch_shared_link_previews.py --post 2026-08-16-habermas-machine-ai-mediation
     python util/fetch_shared_link_previews.py --write                # write missing title:/image:
     python util/fetch_shared_link_previews.py --write --write-description  # also attempt description: (only when it verifies)
     python util/fetch_shared_link_previews.py --write --force         # overwrite existing title:/image: too
+    python util/fetch_shared_link_previews.py --no-cache              # recheck URLs already confirmed BLOCKED
     python util/fetch_shared_link_previews.py --timeout 15
 
 Requirements: python-frontmatter, requests (util/requirements.txt)
@@ -155,7 +163,10 @@ def fetch_preview(url, timeout=10, session=None):
         r.raise_for_status()
     except requests.HTTPError as e:
         status = e.response.status_code if e.response is not None else None
-        return {"error": "BLOCKED" if status in (403, 429) else f"HTTP_{status}"}
+        # "HTTP_403"/"HTTP_429" format matches check_fragments.py's own
+        # error strings (cf.BLOCKED_ERRORS) — this script shares that
+        # module's cache/"blocked" field, so the format has to line up.
+        return {"error": f"HTTP_{status}" if status else "NETWORK_ERROR"}
     except requests.RequestException:
         return {"error": "NETWORK_ERROR"}
 
@@ -191,6 +202,32 @@ def fetch_preview(url, timeout=10, session=None):
             pass  # oEmbed is a bonus, not required — OG fields above still stand
 
     return result
+
+
+def fetch_preview_cached(url, timeout, session, cache, use_cache=True):
+    """Wraps fetch_preview() with the same shared "blocked" cache
+    check_fragments.py/check_event_urls.py use (docs/data/event-evidence-
+    cache.json). A URL already confirmed BLOCKED is skipped entirely —
+    no request at all — until use_cache=False forces a recheck. Returns
+    (found_dict, skipped), where skipped=True means this was answered
+    from cache without any network call."""
+    entry = cache.get(url, {}) if use_cache else {}
+    if entry.get("blocked"):
+        return {"error": entry["blocked"]}, True
+
+    found = fetch_preview(url, timeout=timeout, session=session)
+
+    if found.get("error") in cf.BLOCKED_ERRORS:
+        prior = cache.get(url, {})
+        cache[url] = {**prior, "blocked": found["error"],
+                      "blocked_since": prior.get("blocked_since", cf.date.today().isoformat())}
+    elif "error" not in found and url in cache:
+        cache[url] = {k: v for k, v in cache[url].items()
+                      if k not in ("blocked", "blocked_since")}
+        if not cache[url]:
+            del cache[url]
+
+    return found, False
 
 
 def description_verifies(url, description, timeout=15):
@@ -268,6 +305,9 @@ def main():
                              "appear verbatim in the page body text (the same check "
                              "util/check_fragments.py runs on it forever after). Off by "
                              "default even with --write.")
+    parser.add_argument("--no-cache", action="store_true",
+                        help="Recheck URLs already confirmed BLOCKED on a prior run instead "
+                             "of skipping them")
     parser.add_argument("--timeout", type=int, default=10)
     args = parser.parse_args()
 
@@ -278,15 +318,22 @@ def main():
         return 0
 
     session = requests.Session()
+    cache = cf.load_cache()
     written = 0
     for i, post in enumerate(posts, 1):
         slug = post["slug"]
         url = post["link"]["url"]
         print(f"  [{i:3d}/{len(posts)}] {slug} … ", end="", flush=True)
 
-        found = fetch_preview(url, timeout=args.timeout, session=session)
+        found, skipped = fetch_preview_cached(
+            url, timeout=args.timeout, session=session, cache=cache, use_cache=not args.no_cache)
         if "error" in found:
-            print(found["error"])
+            if skipped:
+                since = cache.get(url, {}).get("blocked_since", "?")
+                print(f"STILL BLOCKED (confirmed since {since} — skipped, "
+                      f"pass --no-cache to recheck)")
+            else:
+                print(found["error"])
             continue
 
         got = [k for k in ("title", "description", "image") if found.get(k)]
@@ -309,6 +356,8 @@ def main():
                                           write_description=write_description):
                 written += 1
                 print("               written")
+
+    cf.save_cache(cache)
 
     print()
     if args.write:
