@@ -1360,8 +1360,18 @@
 }
 .event-card-when,
 .event-card-location {
+    display: flex;
+    align-items: center;
+    gap: 0.4em;
     font-size: 0.9em;
     margin-bottom: 0.2em;
+}
+.event-card-when .twemoji,
+.event-card-location .twemoji {
+    flex-shrink: 0;
+    width: 1.1em;
+    height: 1.1em;
+    color: #ffb300;
 }
 .event-card-note {
     font-size: 0.9em;
