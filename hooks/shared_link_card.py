@@ -18,10 +18,22 @@ def on_page_markdown(markdown, *, page, config, files):
     source = link.get('source', '')
     note = link.get('note', '')
     paywalled = link.get('paywalled', False)
+    image = link.get('image', '')
 
     eyebrow = 'Shared link' + (f' · {source}' if source else '')
-    parts = [f'\n<div class="shared-link-card">',
-             f'<div class="shared-link-eyebrow">{eyebrow}</div>']
+    parts = ['\n<div class="shared-link-card">']
+    if image:
+        # A remote thumbnail URL is used as-is; a local path (under
+        # docs/assets/, no leading slash) needs one added — see the "URL
+        # gotcha" note in CLAUDE.md about file.page.url being root-relative
+        # without a leading '/'.
+        img_src = image if image.startswith('http') else f'/{image}'
+        parts.append(
+            f'<a class="shared-link-image-wrap" href="{url}" target="_blank" '
+            f'rel="noopener"><img class="shared-link-image" src="{img_src}" '
+            f'alt="{title or eyebrow}"></a>'
+        )
+    parts.append(f'<div class="shared-link-eyebrow">{eyebrow}</div>')
     if title:
         parts.append(f'<div class="shared-link-title">{title}</div>')
     if note:

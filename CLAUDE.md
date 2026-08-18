@@ -320,8 +320,16 @@ shared_link:
   auto-fetched (no oEmbed/Open Graph scraping) — this repo's convention is fetch-once-
   cache-to-a-committed-file for anything network-dependent (see `util/sync_events.py`),
   and most things worth sharing here are paywalled or otherwise unfetchable anyway, so a
-  live-fetch approach would fail more often than it'd help. If a thumbnail is ever wanted,
-  add it by hand later (a copied `og:image` URL) rather than building fetch machinery for it.
+  live-fetch approach would fail more often than it'd help.
+- `image:` — optional; a thumbnail rendered at the top of the card, clickable through to
+  `url:` same as the button below it. Either a path under `docs/assets/` (no leading
+  slash — the hook adds one; see the "URL gotcha" note below for why) or a full remote
+  URL. Manually sourced, same as `logo:`/`banner:` on org pages — not auto-fetched, for
+  the same reason `title:`/`source:`/`note:` aren't. Used for `2026-06-26-anarchist-
+  critique-of-democracy.md`'s Andrewism video: `image:` replaced what used to be a
+  hand-built `[![thumb](...)](url)` markdown block right after the frontmatter, so the
+  same card now covers both the text-only paper case and the video-with-thumbnail case
+  under one system instead of two competing patterns.
 - `paywalled: true` — optional; renders a small "Paywalled" badge next to the button, so
   readers calibrate expectations before clicking through.
 - Rendered by `hooks/shared_link_card.py` (registered in `mkdocs.yml`), which injects the
@@ -333,12 +341,10 @@ shared_link:
 - Not a replacement for `[^footnote]` citations or the "Sources & further reading" list —
   the shared link should usually still appear there too, exactly as before. This card is
   purely about giving *the* link visual priority a reader shouldn't have to hunt for.
-- **Don't add it to a post that already has its own hand-built "watch/read this" treatment**
-  for the same link — e.g. `2026-06-26-anarchist-critique-of-democracy.md`'s clickable video
-  thumbnail + caption pointing at the Andrewism YouTube essay. Setting `shared_link:` there
-  too would stack two competing prompts for the same link near the top of the post. Reach for
-  `shared_link:` when a post *doesn't* already have a strong visual treatment of its source,
-  not as a second one layered on top of an existing custom embed.
+- **Don't stack this with a separate hand-built "watch/read this" treatment for the same
+  link** (a manual thumbnail block, an inline embed) — migrate the post onto `shared_link:`
+  instead, the way `2026-06-26-anarchist-critique-of-democracy.md` was, rather than layering
+  a second prompt for the same URL on top of the first.
 
 **Convention — main lesson (optional):**
 

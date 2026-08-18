@@ -1262,6 +1262,17 @@
     border-left: 4px solid #49a7e9;
     background: rgba(73, 167, 233, 0.06);
     border-radius: 0 8px 8px 0;
+    overflow: hidden;
+}
+.shared-link-image-wrap {
+    display: block;
+    margin: -1em -1.25em 0.8em -1.25em;
+    line-height: 0;
+}
+.shared-link-image {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 .shared-link-eyebrow {
     font-size: 0.72em;
