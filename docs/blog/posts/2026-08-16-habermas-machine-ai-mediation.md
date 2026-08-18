@@ -13,6 +13,7 @@ shared_link:
   source: Science
   paywalled: true
   note: "The study this post is about. Full text is paywalled, but the abstract is free — and the link is still worth clicking if you have institutional access or are willing to pay. DOD's write-up below draws on the secondary sources listed at the bottom for everyone else."
+  description: "Finding agreement through a free exchange of views is often difficult. Collective deliberation can be slow, difficult to scale, and unequally attentive to different voices. In this study, we trained an artificial intelligence (AI) to mediate human deliberation. Using participants’ personal opinions and critiques, the AI mediator iteratively generates and refines statements that express common ground among the group on social or political issues. Participants (N = 5734) preferred AI-generated statements to those written by human mediators, rating them as more informative, clear, and unbiased. Discussants often updated their views after the deliberation, converging on a shared perspective. Text embeddings revealed that successful group statements incorporated dissenting voices while respecting the majority position. These findings were replicated in a virtual citizens’ assembly involving a demographically representative sample of the UK population."
 categories:
   - AI
   - Deliberative Democracy
