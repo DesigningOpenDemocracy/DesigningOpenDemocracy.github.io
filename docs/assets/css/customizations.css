@@ -589,7 +589,12 @@
 }
 
 .org-map-approx-note {
-  color: var(--md-default-fg-color--light, #666);
+  /* Fixed gray, not the theme-flipping --md-default-fg-color--light var:
+     Leaflet popups always render on a plain white background regardless
+     of the site's light/dark theme, and that variable goes pale in dark
+     mode — unreadable against white. Matches .map-legend-approx-note
+     below, which has the same fixed-white-background constraint. */
+  color: #555;
   font-style: italic;
   font-size: 0.85em;
 }
