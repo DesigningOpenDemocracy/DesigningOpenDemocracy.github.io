@@ -1704,6 +1704,13 @@
   color: #42a5f5;
   background: rgba(66, 165, 245, 0.2);
 }
+/* "This week" (day 2-7 out) is badge-only, deliberately without the
+   colored border+background today/tomorrow get — a lighter third tier
+   so it doesn't dilute the "truly imminent" signal those two carry. */
+.calendar-event-badge--week {
+  color: #b0bec5;
+  background: rgba(176, 190, 197, 0.2);
+}
 /* Past events, collapsed out of the main list so the still-relevant ones
    stay on top — see collapsePastAndHighlightNear() for why a static site
    needs this client-side rather than relying on build-time filtering. */
