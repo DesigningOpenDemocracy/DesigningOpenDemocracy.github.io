@@ -6,7 +6,7 @@ authors:
   - Brian Khuu
   - Claude
 ai_assist: drafted
-origin: world-commentary
+origin: member-raised
 categories:
   - AI
   - Deliberative Democracy
