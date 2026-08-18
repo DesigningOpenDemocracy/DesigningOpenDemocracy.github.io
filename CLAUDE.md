@@ -331,7 +331,12 @@ shared_link:
   same card now covers both the text-only paper case and the video-with-thumbnail case
   under one system instead of two competing patterns.
 - `paywalled: true` — optional; renders a small "Paywalled" badge next to the button, so
-  readers calibrate expectations before clicking through.
+  readers calibrate expectations before clicking through. The button and link stay live
+  regardless — a paywall doesn't mean the link isn't worth following: abstracts are
+  usually free, and some readers have institutional access or are willing to pay. If
+  `note:` mentions the paywall, word it so the link still reads as worth clicking (e.g.
+  "full text is paywalled, but the abstract is free") rather than steering readers away
+  from it entirely.
 - Rendered by `hooks/shared_link_card.py` (registered in `mkdocs.yml`), which injects the
   card as raw HTML at the very top of the post body — before the author's own opening
   paragraph, regardless of where in the markdown source it would otherwise land — styled
