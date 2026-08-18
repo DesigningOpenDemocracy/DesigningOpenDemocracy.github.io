@@ -400,11 +400,28 @@ def update_activity_source(path, date_str, note, feed_url, post_url=None, method
     ]
 
     if meta.get("activity"):
-        # activity: block already exists — replace just this source's sub-block
+        # activity: block already exists — replace just this source's
+        # sub-block, or insert it fresh if this method has no entry yet.
+        #
+        # `found` tracks whether source_lines have been written, so it can
+        # be checked both mid-loop (when the activity: block ends at the
+        # frontmatter's next top-level key, e.g. last_checked: — the common
+        # case, since canonical field order always puts one there) and
+        # after the loop (when activity: is the very last frontmatter key,
+        # so the block ends at end-of-file instead). Two real bugs lived
+        # here from conflating this with a separate in_this_source flag
+        # that didn't reset after a replacement completed: an existing
+        # source got its replacement inserted a second time whenever
+        # followed by a top-level key (duplicate keys — the 2026-08-17
+        # activity probe's designing-open-democracy.md/g0v.md corruption),
+        # and a *new* source silently never got written at all in that same
+        # common case, because the old "did we ever find it" check only
+        # fired when the block ran to end-of-file. See
+        # tests/test_frontmatter_writers.py.
         lines = yaml_block.split("\n")
         new_lines = []
         in_activity = False
-        in_this_source = False
+        found = False
         i = 0
         while i < len(lines):
             line = lines[i]
@@ -416,34 +433,30 @@ def update_activity_source(path, date_str, note, feed_url, post_url=None, method
             if in_activity:
                 # Detect a top-level key (end of activity block)
                 if line and not line.startswith(" "):
-                    if in_this_source:
-                        # Insert the new source block before this top-level key
+                    if not found:
                         new_lines.extend(source_lines)
+                        found = True
                     in_activity = False
-                    in_this_source = False
                     new_lines.append(line)
                     i += 1
                     continue
-                # Detect this source's sub-block
+                # Detect this source's sub-block and replace it in place
                 if re.match(rf"^  {method}\s*:", line):
-                    in_this_source = True
-                    # Skip old sub-block lines
+                    found = True
                     i += 1
                     while i < len(lines) and lines[i].startswith("    "):
                         i += 1
                     new_lines.extend(source_lines)
                     continue
-                # Detect a different source (end of this source's sub-block)
-                if in_this_source and re.match(r"^  \w", line):
-                    in_this_source = False
                 new_lines.append(line)
                 i += 1
                 continue
             new_lines.append(line)
             i += 1
 
-        # If we never found this source, append it inside the activity block
-        if in_activity and method not in (meta.get("activity") or {}):
+        # activity: was the last frontmatter key, so the loop ended without
+        # ever hitting the boundary branch above.
+        if in_activity and not found:
             while new_lines and new_lines[-1] == "":
                 new_lines.pop()
             new_lines.extend(source_lines)

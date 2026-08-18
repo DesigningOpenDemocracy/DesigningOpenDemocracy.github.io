@@ -33,7 +33,7 @@ events:
   notable: true
 activity:
   rss:
-    checked: 2026-08-09
+    checked: 2026-08-17
     date: 2026-07-07
     note: 'Latest post: Oltre la rigenerazione urbana: la cura dei custodi come nuovo
       bene comune'

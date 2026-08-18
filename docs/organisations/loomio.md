@@ -54,9 +54,10 @@ activity:
     note: website loaded. No certain blog or news. But looks active at least based
       on vibes.
   sitemap:
-    checked: 2026-06-07
-    date: 2026-06-05
-    note: Server still up (sitemap detected)
+    date: 2026-08-12
+    note: Page last modified (from sitemap)
+    url: https://www.loomio.com/marketing-sitemap.xml
+    checked: 2026-08-17
 last_checked: '2026-06-15'
 ---
 

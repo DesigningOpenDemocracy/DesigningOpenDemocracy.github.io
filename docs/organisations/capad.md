@@ -70,7 +70,7 @@ events:
   location: Woden Valley Uniting Church, Curtin ACT
 activity:
   rss:
-    checked: 2026-08-09
+    checked: 2026-08-17
     date: 2026-01-03
     note: 'Latest post: Redescribing Democracy: a Review'
     url: https://canberra-alliance.org.au/redescribing-democracy-a-review/?utm_source=rss&utm_medium=rss&utm_campaign=redescribing-democracy-a-review

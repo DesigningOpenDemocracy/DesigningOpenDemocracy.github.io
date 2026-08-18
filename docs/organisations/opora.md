@@ -50,13 +50,13 @@ activity:
       referendum on territorial changes.
     url: https://oporaua.org/en/announce
   rss:
-    checked: 2026-06-07
+    checked: 2026-08-17
     note: No feed found
   scrape:
-    checked: 2026-06-08
-    date: 2026-05-20
+    date: 2026-08-06
     note: Latest news page scraped
     url: https://oporaua.org/en/announce
+    checked: 2026-08-17
 last_checked: '2026-06-29'
 ---
 

@@ -25,6 +25,18 @@ location:
   name: Lismore, NSW, Australia
 news_page: https://reclaim.org.au/category/lpa-resources/
 rss_feed: https://reclaim.org.au/feed
+events:
+- date: '2024-08-10'
+  title: Inaugural Lismore People's Assembly on Housing held at the Red Dove Cafe,
+    Lismore
+  url: https://reclaim.org.au/inaugural-lismore-peoples-assembly/
+  quote: ROR is now bringing a new front to their grassroots community advocacy, with
+    the inaugural Lismore People’s Assembly on Housing taking place this Saturday.
+  note: Assembly run by Reclaim Our Recovery, the residents' group formed after the
+    February 2022 floods; approximately fifty residents attended (Northern Rivers
+    Times).
+  proof_level: high
+  url_checked: '2026-08-17'
 activity:
   dod:
     checked: 2026-07-16
@@ -33,11 +45,16 @@ activity:
       NR Floods, the community is given a (small) chance to be heard'''
     url: https://reclaim.org.au/nearly-four-years-after-the-nr-floods-the-community-is-given-a-small-chance-to-be-heard/
   rss:
-    checked: 2026-08-09
+    checked: 2026-08-17
     date: 2026-02-09
     note: 'Latest post: Nearly four years after the NR Floods, the community is given
       a (small) chance t'
     url: https://reclaim.org.au/nearly-four-years-after-the-nr-floods-the-community-is-given-a-small-chance-to-be-heard/
+  scrape:
+    date: 2026-02-01
+    note: 'Latest post: Gallery'
+    url: https://reclaim.org.au/category/lpa-resources/
+    checked: 2026-08-17
 last_checked: '2026-07-16'
 ---
 

@@ -40,7 +40,7 @@ events:
   country: DE
 activity:
   rss:
-    checked: 2026-08-09
+    checked: 2026-08-17
     date: 2026-06-29
     note: 'Latest post: Made with Consul'
     url: https://consuldemocracy.org/2026/06/made-with-consul/

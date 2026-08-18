@@ -55,7 +55,7 @@ activity:
       of shutdown.
     url: https://anouslademocratie.fr/
   rss:
-    checked: 2026-08-09
+    checked: 2026-08-17
     date: 2025-07-15
     note: 'Latest post: Pour la première Démocratie française : un entretien avec
       Baya Bellanger sur son'

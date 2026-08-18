@@ -57,8 +57,10 @@ activity:
       Director); previous post 26 Feb 2026 (Frontiers of Democratic Lotteries Workshop)
     url: https://www.sortitionfoundation.org/updates
   rss:
-    checked: 2026-06-07
-    note: No feed found
+    date: 2026-06-18
+    note: 'Latest post: We''re looking for a new Independent Director'
+    url: http://www.sortitionfoundation.org/new_independent_director_2026
+    checked: 2026-08-17
   scrape:
     checked: 2026-06-08
     hint: bot_blocked

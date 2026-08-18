@@ -51,11 +51,11 @@ activity:
     checked: 2026-06-07
     note: No feed found
   scrape:
-    checked: 2026-06-08
     hint: no_markup
+    checked: 2026-08-17
     note: News page found, no machine-readable date
   sitemap:
-    checked: 2026-08-09
+    checked: 2026-08-17
     note: Sitemap found, no lastmod
 last_checked: '2026-08-08'
 ---

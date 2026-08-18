@@ -61,10 +61,10 @@ activity:
       ''Explainer: Basic Law: Torah Study and Its Implications'' (July 15, 2026)'
     url: https://en.idi.org.il
   sitemap:
-    checked: 2026-08-09
-    date: 2026-08-09
+    date: 2026-08-17
     note: Page last modified (from sitemap)
     url: https://en.idi.org.il/sitemap.xml
+    checked: 2026-08-17
 last_checked: '2026-07-16'
 ---
 

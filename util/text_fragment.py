@@ -364,7 +364,7 @@ def spacing_autofix(page_text, quote_text):
 
 FOOTNOTE_DEF_RE = re.compile(r"^\[\^([^\]]+)\]:\s*(.*)$")
 QUOTED_PHRASE_RE = re.compile(r'["“](.+?)["”]')
-MD_LINK_RE = re.compile(r"\[([^\]]*)\]\(([^)]+)\)")
+MD_LINK_RE = re.compile(r"\[([^\]]*)\]\(((?:[^()]|\([^()]*\))+)\)")
 
 
 def parse_footnote_def(line):

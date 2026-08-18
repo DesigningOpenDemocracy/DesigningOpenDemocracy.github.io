@@ -203,6 +203,8 @@ Three deliberately separate mechanisms handle "events," each for a different pur
    - **Multi-day events** — `end_date:` / iCal `DTEND` (auto-parsed by `util/sync_events.py`, exclusive per RFC 5545 §3.6.1 so a normal 1-day all-day event doesn't misreport as 2 days) render as a date range ("27–31 Aug") instead of a single day.
    - **"Major event" highlighting** — `notable: true` gets the calendar's highlighted styling (colored cell, larger text, a "★ Major event" badge). Deliberately **not** available on raw `ics_feed` syncs — a synced feed has no "this one matters more" signal to key off, only the curated `events:` source does.
 
+   **Client-side past-event collapse and today/tomorrow highlighting.** Since the calendar page is static (built at deploy time), an event that was future-dated at build time can have already passed by the time a visitor actually loads the page — there's no server-side "now" to filter against. `calendar.html`'s JS (`collapsePastAndHighlightNear()`, run once on load before `applyFilter()`) fixes this up client-side: it walks every `<li class="calendar-event">` (each carries a `data-date="YYYY-MM-DD"` attribute for this purpose), and for any event whose date is before today, moves it out of its month's list and into a single collapsed `<details class="calendar-past-events-details">` inserted above the month groups — collapsed by default, so a returning visitor's "what's current" view isn't pushed down by events that have already happened. Today's and tomorrow's events instead get a `calendar-event--today`/`--tomorrow` class (green/blue left-border + tinted background, styled in `customizations.css`) and an inline "Today"/"Tomorrow" badge prepended to their header — collapsing would be wrong for these, since they're the most relevant events on the page, not stale ones. Events 2–7 days out get a third, lighter tier: a plain "This week" badge (`calendar-event-badge--week`) with no border/background change — deliberately weaker than today/tomorrow's treatment, since highlighting every event in the coming week as strongly would drown out the "truly imminent" signal today/tomorrow are meant to give on a calendar aggregating many orgs' events. `updateCount()` excludes anything inside the collapsed past-events `<details>` from its "N events" tally, matching what a visitor can actually see without expanding it. Local-midnight dates are parsed manually (`parseLocalDate()`) rather than via `new Date("YYYY-MM-DD")`, which parses as UTC midnight and off-by-ones for negative-UTC-offset viewers. Verified via a headless-browser check with `Date` monkey-patched to a fixed instant, served over a real local HTTP server (not `file://`, which has its own unrelated image-loading quirks) — confirmed correct collapse/highlight/count behaviour and that `<img loading="lazy">` calendar logos (unrelated pre-existing behaviour) load fine once scrolled into view.
+
 ### Blog posts (`docs/blog/posts/`)
 
 - Blog posts are **human-authored**. A human must take primary responsibility for the content, accuracy, and framing of every post.
@@ -233,20 +235,27 @@ documents) if:
 
    ```yaml
    authors:
-     - DOD
+     - <reviewing human's name>
      - Claude
    ai_assist: drafted
    ```
 
    Authorship by level:
-   - `drafted` / `collaborated`: `DOD` goes first — by the time the post is merged, a human
-     editor has reviewed it and DOD members have passed it, so DOD holds primary authorship
+   - `drafted` / `collaborated`: the reviewing human goes first — by the time the post is
+     merged, a human editor has reviewed and passed it, so they hold primary authorship
      credit, with every AI that materially contributed (e.g. `Claude`, `DeepSeekV4Pro`) listed
-     after it. (This differs from the heartbeat log below, which is pushed direct to main
-     without prior human review and so lists `Claude` alone.)
+     after them. Name whichever person actually did the review for *this* post — don't
+     default to any one name across posts, since different posts get reviewed by different
+     people. Don't use the collective `DOD` credit either — `DOD` implies a multi-person
+     editorial team standing behind the post, which overstates it while review is really
+     done by one person at a time. Use `DOD` only once a post has genuinely been
+     reviewed/passed by the org collectively rather than an individual. (This differs from
+     the heartbeat log below, which is pushed direct to main without prior human review and
+     so lists `Claude` alone.) If you don't know who reviewed a given post, ask rather than
+     guessing a name.
    - `reviewed`: the AI didn't materially author content, so don't add it to `authors:` just
-     because the marker is set — list only the human/`DOD`. The `ai_assist: reviewed` marker
-     itself is what discloses the AI's editing role.
+     because the marker is set — list only the reviewing human. The `ai_assist: reviewed`
+     marker itself is what discloses the AI's editing role.
 2. Every factual claim must carry a linked source. No unsourced assertions.
 3. A human must review and merge the PR.
 
@@ -260,6 +269,171 @@ documents) if:
 `ai_assist:` (any level) is distinct from `ai_generated: true` (sync posts) — that boolean is
 a load-bearing flag for the heartbeat log's direct-to-main push path, not a display preference,
 so leave it as-is there rather than migrating it to `ai_assist: generated`.
+
+**Convention — origin (optional):**
+
+An optional `origin:` frontmatter field records *why* a post was written — a small,
+closed vocabulary meant for future automation (e.g. a script that wants to treat
+"we covered this org's event" posts differently from "we're reacting to the news"
+posts) rather than for display. Set it when the trigger is clear-cut; leave it off
+rather than guessing when a post's origin is genuinely mixed or not obviously one
+of these.
+
+| Value | Meaning |
+|---|---|
+| `member-raised` | A DOD member raised or discussed the topic internally (meeting, chat, forum) before it became a post. |
+| `event-coverage` | Written around another org's event DOD is covering — an announcement/preview or a recap. |
+| `world-commentary` | Reacting to an external news item, publication, study, or development. |
+| `milestone` | Announcing DOD's own project output or site change. |
+| `reader-question` | Prompted by a reader or community question. |
+
+```yaml
+origin: world-commentary
+```
+
+Feel free to add a new value if none of these honestly fit — same spirit as `ai_assist`
+levels above: the point is that the value is accurate, not that this list is closed.
+Rendered as a badge in the post's metadata sidebar (`docs/overrides/blog-post.html`,
+styled in `customizations.css`'s `.origin-*` rules) alongside the `ai_assist` badge, and
+also readable by future automation off the raw frontmatter value — adding a new value
+means adding its label to `origin_labels` in the template and a `.origin-<value>` colour
+rule in the CSS, same pattern as `ai_assist`'s `ai_labels`/`.ai-assist-*`.
+
+**Convention — shared_link (optional, for posts that exist to point at one external thing):**
+
+When a post's whole reason for existing is "look at this" — a paper, article, video,
+someone shared in the DOD chat — set `shared_link:` in frontmatter so the actual link
+gets a prominent, unmissable card instead of being just one more bullet in "Sources &
+further reading" at the bottom, indistinguishable from secondary citations. This was a
+real gap: the Habermas Machine post's paywalled *Science* paper — the thing the whole
+post is about — was buried in a 7-item source list with no visual weight.
+
+```yaml
+shared_link:
+  url: https://www.science.org/doi/10.1126/science.adq2852
+  title: "AI can help humans find common ground in democratic deliberation"
+  source: Science
+  paywalled: true
+  note: "The paper DOD is writing about"
+  description: "Online deliberations at scale are a promising way to elicit citizens' opinions on policy issues, but existing approaches lack scalable mechanisms..."
+```
+
+- `url:` — required; everything else is optional.
+- `title:` / `source:` / `note:` — plain text, author-written by hand. Deliberately not
+  auto-fetched (no oEmbed/Open Graph scraping) — this repo's convention is fetch-once-
+  cache-to-a-committed-file for anything network-dependent (see `util/sync_events.py`),
+  and most things worth sharing here are paywalled or otherwise unfetchable anyway, so a
+  live-fetch approach would fail more often than it'd help.
+- `cta:` — optional button text override. Defaults to "Read the original →", except for a
+  known video-hosting URL (`youtube.com`/`youtu.be`/`vimeo.com` — see `_VIDEO_HOSTS` in
+  `hooks/shared_link_card.py`), where it defaults to "Watch →" instead — "read" doesn't fit
+  a video link. Deterministic on the URL's own host, not a content-sniffing guess, so it
+  stays manual/no-heuristics in spirit like the rest of this field. `cta:` overrides either
+  default for any case the host list misses.
+- `description:` — optional; the source's own abstract/summary text, pasted in verbatim
+  and rendered as a blockquote on the card — this is what gives the card the substance a
+  real oEmbed/Open Graph fetch would (`title` + `description` + `thumbnail_url` is
+  basically that shape already; the difference is a human pastes it once instead of a
+  script fetching it every build). Unlike `title:`/`source:`/`note:`, this one IS
+  mechanically re-verified against `url:` — same pipeline as event/footnote `quote:` — by
+  `util/check_fragments.py`, which now checks three evidence sources instead of two (see
+  that script's docstring). Word it as the source's actual abstract, not editorial
+  commentary — that's what `note:` is for.
+- `image:` — optional; a thumbnail rendered at the top of the card, clickable through to
+  `url:` same as the button below it. Either a path under `docs/assets/` (no leading
+  slash — the hook adds one; see the "URL gotcha" note below for why) or a full remote
+  URL. Manually sourced, same as `logo:`/`banner:` on org pages — not auto-fetched, for
+  the same reason `title:`/`source:`/`note:` aren't. Used for `2026-06-26-anarchist-
+  critique-of-democracy.md`'s Andrewism video: `image:` replaced what used to be a
+  hand-built `[![thumb](...)](url)` markdown block right after the frontmatter, so the
+  same card now covers both the text-only paper case and the video-with-thumbnail case
+  under one system instead of two competing patterns.
+  - **If the image lives next to the post itself** (`docs/blog/posts/<file>.jpg`, the
+    common case for a hand-sourced banner — see `event.image:` below), the path is
+    **not** `blog/posts/<file>.jpg`. mkdocs-material's blog plugin flattens post-colocated
+    assets to `site/blog/<file>.jpg` at build time (confirmed on
+    `2026-08-07-radicalxchange-melbourne-event-banner.jpg`), so the frontmatter value
+    needs to be `blog/<file>.jpg` to resolve correctly as raw `<img src>` HTML — unlike a
+    markdown `![](file.jpg)` reference in the post body itself, which mkdocs resolves
+    relative to the source file and gets this right automatically. Only an issue for
+    raw-HTML-injecting hooks (this one, `hooks/event_card.py`); doesn't affect ordinary
+    markdown images elsewhere in a post.
+- `paywalled: true` — optional; renders a small "Paywalled" badge next to the button, so
+  readers calibrate expectations before clicking through. The button and link stay live
+  regardless — a paywall doesn't mean the link isn't worth following: abstracts are
+  usually free, and some readers have institutional access or are willing to pay. If
+  `note:` mentions the paywall, word it so the link still reads as worth clicking (e.g.
+  "full text is paywalled, but the abstract is free") rather than steering readers away
+  from it entirely.
+- Rendered by `hooks/shared_link_card.py` (registered in `mkdocs.yml`), which injects the
+  card as raw HTML at the very top of the post body — before the author's own opening
+  paragraph, regardless of where in the markdown source it would otherwise land — styled
+  in `customizations.css`'s `.shared-link-*` rules. The button reuses the existing
+  `.hero-cta-btn.hero-cta-primary` classes from the home page rather than inventing new
+  button styling.
+- Not a replacement for `[^footnote]` citations or the "Sources & further reading" list —
+  the shared link should usually still appear there too, exactly as before. This card is
+  purely about giving *the* link visual priority a reader shouldn't have to hunt for.
+- **Don't stack this with a separate hand-built "watch/read this" treatment for the same
+  link** (a manual thumbnail block, an inline embed) — migrate the post onto `shared_link:`
+  instead, the way `2026-06-26-anarchist-critique-of-democracy.md` was, rather than layering
+  a second prompt for the same URL on top of the first.
+
+**Convention — event (optional, for posts pointing at a ticketed/RSVP'd event):**
+
+When a post's whole reason for existing is "here's an event, go register" — someone else's
+conference, workshop, or meetup DOD is flagging, not hosting — set `event:` in frontmatter
+so the RSVP link gets a prominent card instead of a hand-rolled mix of banner image, button,
+and map that drifts in shape from post to post. Confirmed drifting before this existed:
+`2026-08-07-radicalxchange-melbourne.md` had a banner image, a styled button, and an embedded
+map; `2026-05-29-people-powered-democracy-forum.md` had none of those, just a plain link.
+
+```yaml
+event:
+  url: https://events.humanitix.com/radicalxchange-foundation-in-melbourne
+  title: "An invitation to meet RadicalxChange Foundation in Melbourne"
+  host: RadicalxChange Foundation
+  cta: "RSVP for 27 August"
+  date: 2026-08-27
+  time: "18:00"
+  end_time: "20:00"
+  note: "This is a RadicalxChange event, not a DOD event — we're just pointing at it."
+  image: 2026-08-07-radicalxchange-melbourne-event-banner.jpg
+```
+
+- `url:` — required; everything else is optional.
+- `title:` — the event's own name (from its ticket page), not necessarily the same as this
+  post's own title.
+- `host:` — who's actually running it. Rendered in the card's eyebrow ("Event · Host Name")
+  so nobody mistakes it for a DOD-run event.
+- `cta:` — button text override. Defaults to "RSVP →" if omitted.
+- `date:` / `time:` / `end_time:` — same shapes as org `events:` frontmatter (`time:`/
+  `end_time:` are strict 24-hour `"HH:MM"` strings — quote them, an unquoted `18:00` parses
+  as a YAML sexagesimal number). Rendered as e.g. "Thursday, 27 August 2026, 6:00–8:00 PM".
+- `note:` — plain text, typically the "this isn't a DOD event" disclaimer.
+- `image:` — same convention as `shared_link.image:` (a `docs/assets/` path with no leading
+  slash, or a full remote URL) — a banner shown at the top of the card, clickable through to
+  `url:`.
+- **Location and map come from the post's own top-level `location:` frontmatter** (`name`,
+  `latitude`, `longitude`) — not duplicated inside `event:`. When `location:` has
+  coordinates, the card embeds an OpenStreetMap iframe with a "View larger map / directions"
+  link, the same pattern `2026-08-07-radicalxchange-melbourne.md` used to hand-build.
+- Rendered by `hooks/event_card.py` (registered in `mkdocs.yml`), which injects the card as
+  raw HTML at the very top of the post body, styled in `customizations.css`'s `.event-card-*`
+  rules. The RSVP button reuses `.hero-cta-btn.hero-cta-primary`, same as `shared_link:`'s
+  button — one consistent action-button color across the site regardless of card type; the
+  card's own amber accent (vs. `shared_link:`'s blue) is what signals which kind of card it is.
+- **This card is presentational only and must never be read by `hooks/calendar_export.py`.**
+  A blog-post field that looked similar to this — `event_date:` — was tried and removed for
+  exactly the failure mode this would reintroduce: it fed the site-wide calendar and
+  duplicated the org's own `events:` entry for the same date (see the Calendar section
+  below). The actual calendar-worthy entry for an event like this still belongs on the
+  *host org's own page*, per the "A post covering an org's event does not get its own
+  calendar entry" rule in the Blog posts section below — `event:` here is only ever a reader-
+  facing card on the post itself.
+- **Don't stack this with a separate hand-built banner-image/button/map combination for the
+  same event** — migrate the post onto `event:` instead, same spirit as `shared_link:`'s
+  equivalent rule above.
 
 **Convention — main lesson (optional):**
 
@@ -431,6 +605,8 @@ more than a bare link.
 - `hooks/citation_export.py` — fires on `on_pre_build`; exports all event and footnote citations to `/data/citations.json` in CSL-JSON format with `evidence` array (machine-verifiable citation standard). See `internal-heartbeat/machine-verifiable-citation.md` for the design.
 - `hooks/footnote_fragments.py` — fires on `on_page_markdown` and `on_page_content`; parses prose footnotes for verbatim quoted excerpts (same convention as event `quote:`), then post-processes the rendered HTML to add `#:~:text=` fragments to footnote citation links. The counterpart of `with_fragment` for the prose footnote world — derives fragments at build time, never stores them in markdown.
 - `hooks/calendar_export.py` — fires on `on_pre_build`/`on_env`; merges every org's future `events:` entries with every org's cached `ics_feed` sync (`docs/data/events/<slug>.json`) into one sorted list, writes `docs/calendar.ics` + `docs/data/events.json`, and injects the list as the `calendar_events` Jinja global used by `docs/overrides/calendar.html`. Makes no network calls itself — see Calendar section below for the fetch step.
+- `hooks/shared_link_card.py` — fires on `on_page_markdown`; injects a reader-facing card at the top of a blog post's body from `shared_link:` frontmatter. See "Convention — shared_link" above.
+- `hooks/event_card.py` — fires on `on_page_markdown`; injects a reader-facing card at the top of a blog post's body from `event:` frontmatter, reusing the page's own `location:` for an embedded map. Presentational only — deliberately never read by `hooks/calendar_export.py`. See "Convention — event" above.
 
 ### Frontmatter — active gates
 
@@ -490,15 +666,15 @@ These are linked from the bottom of the org index table for researcher download.
   ```
   `proof_level` (high/medium/low) is always *derived* from a single `confidence_score()` function — never hand-computed separately — so a stored value and a freshly recomputed one can't silently disagree; if they do (source signals changed since the value was last set), it's printed as `STALE PROOF_LEVEL` and `--recalculate` fixes it (skips `proof_level_locked: true` events, printing an FYI instead if a locked value has drifted). The pre-commit hook runs `--recalculate` automatically on every commit touching an org page, so this should rarely need running by hand. Two hard gates (exit 1): every event needs a `url:` or `source:`; every event separately needs at least one of `note:`/`quote:`/`proof_warning: true` (`NO PROOF` if all three are missing — see the `events:` frontmatter docs above for what each means and when to reach for `proof_warning:` vs actually sourcing it). Soft warnings (printed, don't fail the build): vague `source:` text under 20 chars, "weak" URLs — either homepage-only with no path or fragment, *or* a single-segment generic list/index page (`/events/`, `/news/`, `/blog/`, `/calendar/`, `/press/`, `/media/`, `/updates/`, `/whats-on/` — see `GENERIC_LIST_SEGMENTS`) rather than the specific event's own page; both rot the same way, since the cited page keeps changing out from under the claim as newer items push the cited one off the list — `notable: true` events without *mechanical* proof (a `quote:` — a `note:` alone isn't enough for this stricter check), and high/medium-proof events whose `url_checked:` is missing or older than 365 days (a nudge to recheck the citation still says what's claimed — pairs with the two scripts below, which actually do that rechecking).
 
-- `util/check_fragments.py` — mechanically re-verifies evidence against live pages for two sources through the same pipeline: (1) every event's `quote:` field, and (2) every prose footnote's verbatim quoted excerpt (per the "Prose footnote citations" convention above). All evidence shares the same cache (`docs/data/event-evidence-cache.json`, committed), fetch machinery, and AMBIGUOUS detection. Network-dependent, so **not** wired into CI (matches this repo's fetch-then-cache convention of keeping the build offline) — instead runs report-only (`continue-on-error`, doesn't block the RSS/scrape commit) in the weekly `.github/workflows/heartbeat-probes.yml` cron alongside `check_rss.py`/`scrape_news.py`; check that workflow's log for findings. `--save-to-wayback` archives each URL to the Wayback Machine's Save Page Now service (no account needed); `--footnotes-only` / `--events-only` let you scope verification.
+- `util/check_fragments.py` — mechanically re-verifies evidence against live pages for three sources through the same pipeline: (1) every event's `quote:` field, (2) every prose footnote's verbatim quoted excerpt (per the "Prose footnote citations" convention above), and (3) every blog post's `shared_link.description:` (per the "Convention — shared_link" section above) checked against `shared_link.url`. All evidence shares the same cache (`docs/data/event-evidence-cache.json`, committed), fetch machinery, and AMBIGUOUS detection. Network-dependent, so **not** wired into CI (matches this repo's fetch-then-cache convention of keeping the build offline) — instead runs report-only (`continue-on-error`, doesn't block the RSS/scrape commit) in the weekly `.github/workflows/heartbeat-probes.yml` cron alongside `check_rss.py`/`scrape_news.py`; check that workflow's log for findings. `--save-to-wayback` archives each URL to the Wayback Machine's Save Page Now service (no account needed); `--events-only` scopes verification to just events, skipping footnotes and shared links.
   - **AMBIGUOUS quotes** — a separate, non-blocking category printed alongside MISMATCH: when a quote is found on the page (a "good" match) but occurs *more than once*, the browser's `#:~:text=` highlight isn't guaranteed to land on the occurrence the citation actually means, and the repetition itself is a sign the phrase may be too generic to specifically confirm the claim. `util/text_fragment.py`'s `count_occurrences()` does the counting; only detected on a fresh fetch (a cache hit doesn't retain page text, so it can't re-derive this — ambiguity on an unchanged, already-cached page silently isn't re-flagged until that page's cache entry next expires or `--no-cache` is used). The fix is editorial — lengthen the quote until it's unique on its own page — not a new stored field; see the note above about why fragment disambiguation data (WICG prefix-/-suffix context) is deliberately not persisted in frontmatter. Confirmed in practice on this corpus: most flagged cases (CAPaD, mckinnon.co) turned out to be a *false* ambiguity signal from JSON-LD/page-props payloads embedded in `<script>` tags getting swept into the extracted "page text" alongside the real prose — `_fetch_page_text()` now strips `<script>`/`<style>` bodies before tag-stripping to avoid this. The one genuine case (a Wikipedia article mentioning "Decidim Association" twice in adjacent sentences) was fixed by lengthening the quote to span both mentions, which is unique as a whole even though the short phrase alone wasn't.
+  - **STILL BLOCKED / the shared "blocked" cache** — a URL that answers 403/429 (bot protection, not a transient failure) is recorded as `blocked`/`blocked_since` in the same cache file and skipped entirely — no network call at all — on every later run, printed as `STILL BLOCKED` rather than `FETCH ERROR`, until `--no-cache` forces a recheck or the site starts answering normally again (a successful fetch clears the flag). `util/check_event_urls.py` and `util/fetch_shared_link_previews.py` write to and read from this exact same cache/field, so a URL any one of the three scripts has confirmed blocked stays skipped for all three, not just the one that found it. Added after a real gap: none of these scripts remembered a block before this, so the weekly cron re-hit every known-bot-protected site fresh every single run — pointless traffic to a server that had already said no, and (per `check_event_urls.py`'s HEAD-then-GET-fallback design) sometimes two requests per run, not one, since a 403 used to trigger a GET retry too. A transient error (a timeout, a 500) is deliberately NOT sticky like this — only 403/429 mean "this server doesn't want scripted requests," not "try again later."
   ```
   python util/check_fragments.py             # exits 1 if any evidence no longer matches
   python util/check_fragments.py --slug g0v  # single org
   python util/check_fragments.py --slug g0v --slug namfrel  # multiple orgs — --slug is repeatable
-  python util/check_fragments.py --no-cache  # ignore the cache, re-fetch and re-verify everything
+  python util/check_fragments.py --no-cache  # ignore the cache, re-fetch and re-verify everything, including URLs already confirmed BLOCKED
   python util/check_fragments.py --save-to-wayback  # archive each URL to Wayback Machine
-  python util/check_fragments.py --footnotes-only  # only check footnote evidence
   python util/check_fragments.py --events-only     # only check event evidence (original behaviour)
   python util/check_fragments.py --autofix-spaces  # rewrite spacing-only MISMATCHes in place
   python util/check_fragments.py --report /tmp/fragments-report.json  # also write a JSON findings summary (for ad hoc/manual review — not consumed by anything in CI)
@@ -530,12 +706,23 @@ These are linked from the bottom of the org index table for researcher download.
   `organisation.html` derives each event's fragment-bearing link at build time. Fragments are
   never written back to frontmatter — see the "events:" `#:~:text=` docs above for why.
 
-- `util/check_event_urls.py` — liveness check for every event's `url:` citation (HEAD request, GET fallback for hosts that don't support HEAD). Catches the failure mode neither of the two scripts above does: a citation URL 404ing, redirecting, or its host disappearing. Distinguishes `DEAD` (404/5xx — a real problem, needs a replacement citation) from `BLOCKED` (403/429 — near-certainly bot/scraper protection, e.g. Cloudflare; several sites in this landscape are confirmed reachable-in-a-browser-but-403-to-scripts, so don't "fix" a BLOCKED citation without manually checking it in a real browser first) from `REDIRECT` (informational — citation still resolves, consider updating the URL to the canonical target). Network-dependent, not in CI; also runs report-only in the same weekly cron as `check_fragments.py` above.
+- `util/check_event_urls.py` — liveness check for every event's `url:` citation (HEAD request, GET fallback for hosts that don't support HEAD). Catches the failure mode neither of the two scripts above does: a citation URL 404ing, redirecting, or its host disappearing. Distinguishes `DEAD` (404/5xx — a real problem, needs a replacement citation) from `BLOCKED` (403/429 — near-certainly bot/scraper protection, e.g. Cloudflare; several sites in this landscape are confirmed reachable-in-a-browser-but-403-to-scripts, so don't "fix" a BLOCKED citation without manually checking it in a real browser first) from `REDIRECT` (informational — citation still resolves, consider updating the URL to the canonical target). Network-dependent, not in CI; also runs report-only in the same weekly cron as `check_fragments.py` above. A HEAD that comes back 403/429 does **not** trigger the GET fallback (only 405/501 — genuine "HEAD not supported" signals — do) — a GET immediately after would almost certainly hit the same block, doubling the request for no new information. Shares `check_fragments.py`'s "blocked" cache (see that entry's STILL BLOCKED bullet above) — a URL already confirmed BLOCKED is skipped with zero requests on later runs until `--no-cache`.
   ```
   python util/check_event_urls.py                  # check all event URLs
   python util/check_event_urls.py --slug mosaiclab  # single org
   python util/check_event_urls.py --timeout 8       # per-request timeout
+  python util/check_event_urls.py --no-cache        # recheck URLs already confirmed BLOCKED
   python util/check_event_urls.py --report /tmp/urls-report.json  # also write a JSON findings summary (for ad hoc/manual review — not consumed by anything in CI)
+  ```
+
+- `util/fetch_shared_link_previews.py` — fetches Open Graph / oEmbed metadata for blog posts' `shared_link.url` and fills in missing `title:`/`image:`/`description:` (see "Convention — shared_link" above). `title:`/`image:` are freely written whenever missing (or always with `--force`); `description:` is only ever written when independently confirmed to appear verbatim in the same page's body text — the exact check `check_fragments.py` runs on it forever after — so it never hands that script's next run a guaranteed MISMATCH. Writes via a full `python-frontmatter` round-trip, not raw-text splicing (blog posts have no canonical field order to preserve, unlike org pages). Shares `check_fragments.py`'s "blocked" cache.
+  ```
+  python util/fetch_shared_link_previews.py                              # report only, all posts with shared_link: url
+  python util/fetch_shared_link_previews.py --post 2026-08-16-habermas-machine-ai-mediation
+  python util/fetch_shared_link_previews.py --write                      # write missing title:/image:
+  python util/fetch_shared_link_previews.py --write --write-description  # also attempt description: (only when it verifies)
+  python util/fetch_shared_link_previews.py --write --force              # overwrite existing title:/image: too
+  python util/fetch_shared_link_previews.py --no-cache                   # recheck URLs already confirmed BLOCKED
   ```
 
 - `util/reorder_frontmatter.py` — enforces the canonical frontmatter field ordering documented above (org top-level keys, `events:` sub-keys, `activity:` sub-keys). Local/offline, part of `make build`'s pre-push checklist and CI. The pre-commit hook (`.githooks/pre-commit`) runs this automatically on staged org pages, so `--check` failing locally usually means the hook isn't installed — see the note at the top of this file.

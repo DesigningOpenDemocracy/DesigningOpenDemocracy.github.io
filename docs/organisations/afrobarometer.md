@@ -34,10 +34,10 @@ events:
   notable: true
 activity:
   rss:
-    checked: 2026-08-09
-    date: 2026-08-05
-    note: 'Latest post: Les Africains sont favorables à la libre circulation,  mais
-      restent divisés sur '
+    date: 2026-08-08
+    note: 'Latest post: AB Update July 2026'
+    url: https://www.afrobarometer.org/articles/ab-update-july-2026/
+    checked: 2026-08-17
   url: https://www.afrobarometer.org/articles/les-africains-sont-favorables-a-la-libre-circulation-mais-restent-divises-sur-la-question-de-limmigration-selon-le-nouveau-rapport-phare-dafrobarometer/
 last_checked: '2026-06-28'
 ---

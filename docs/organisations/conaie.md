@@ -41,7 +41,7 @@ activity:
     checked: 2026-08-09
     note: No feed found
   sitemap:
-    checked: 2026-06-07
+    checked: 2026-08-17
     date: 2026-03-25
     note: Page last modified (from sitemap)
 last_checked: '2026-06-28'

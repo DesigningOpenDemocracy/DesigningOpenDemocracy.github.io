@@ -16,6 +16,26 @@ location:
   latitude: 23.1136
   longitude: -82.3666
   name: Havana, Cuba
+events:
+- date: '1988-01-01'
+  title: FLACSO's Cuban academic unit (Sede Cuba) created
+  url: https://flacso.org/quem-somos/nuestra-historia/historia-flacso/
+  note: FLACSO's official institutional timeline lists "1988 Creación de la Sede Cuba.
+    Creación de la Unidad Académica en Cuba." ("1988 Creation of the Cuba seat. Creation
+    of the academic unit in Cuba.")
+  proof_level: medium
+  url_checked: '2026-08-17'
+- date: '1994-01-01'
+  title: Begins teaching the Master's in Social Development (Maestría en Desarrollo
+    Social)
+  url: https://revistas.uh.cu/revflacso/article/view/7419
+  note: 'The FLACSO-Cuba journal article states: "FLACSO-Cuba imparte dos maestrías,
+    Desarrollo Social (1994) y Gestión y Desarrollo de Cooperativas (2000)..." ("FLACSO-Cuba
+    teaches two master''s programmes, Social Development (1994) and Cooperative Management
+    and Development (2000)..."), both accredited with excellence by the Junta de Acreditación
+    Nacional.'
+  proof_level: medium
+  url_checked: '2026-08-17'
 activity:
   manual:
     checked: 2026-06-07
@@ -26,7 +46,7 @@ activity:
     checked: 2026-06-07
     note: No feed found
   sitemap:
-    checked: 2026-08-09
+    checked: 2026-08-17
     note: Sitemap found, no lastmod
 last_checked: '2026-06-02'
 ---

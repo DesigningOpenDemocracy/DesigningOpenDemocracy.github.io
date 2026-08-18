@@ -21,11 +21,37 @@ location:
   longitude: 174.7762
   name: Wellington, New Zealand
   precision: city
+events:
+- date: '2004-01-01'
+  title: Founded by Wendy McGuinness as the Sustainable Future Institute
+  url: https://www.mcguinnessinstitute.org/about-us/history/
+  quote: When Wendy started the McGuinness Institute in 2004, we called it the Sustainable
+    Future Institute.
+  proof_level: high
+  url_checked: '2026-08-17'
+- date: '2010-01-01'
+  title: CivicsNZ research project begins with a report on Māori representation in
+    Parliament
+  url: https://www.mcguinnessinstitute.org/research-projects/civics-nz/
+  quote: 'CivicsNZ began in 2010 with the publication of Report 8: Effective Māori
+    Representation in Parliament – Working towards a National Sustainable Development
+    Strategy (2010).'
+  proof_level: high
+  url_checked: '2026-08-17'
+- date: '2012-01-01'
+  title: Renamed the McGuinness Institute
+  url: https://www.mcguinnessinstitute.org/about-us/history/
+  quote: Our 2012 name change was for several reasons.
+  proof_level: high
+  url_checked: '2026-08-17'
 activity:
   dod:
     checked: 2026-08-09
     date: 2026-08-09
     note: Site live and actively publishing as of August 2026
+  rss:
+    note: No feed found
+    checked: 2026-08-17
 last_checked: '2026-08-09'
 ---
 

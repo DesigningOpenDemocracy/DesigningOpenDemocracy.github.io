@@ -46,10 +46,15 @@ events:
   notable: true
 activity:
   rss:
-    checked: 2026-08-09
+    checked: 2026-08-17
     date: 2026-07-31
     note: 'Latest post: Mapping Northern Ireland''s proposed polling places'
     url: https://democracyclub.org.uk/blog/2026/07/31/mapping-northern-irelands-proposed-polling-places/
+  scrape:
+    date: 2026-07-31
+    note: Latest news page scraped
+    url: https://democracyclub.org.uk/blog/
+    checked: 2026-08-17
 last_checked: '2026-06-15'
 ---
 

@@ -24,6 +24,29 @@ location:
   name: Vienna, Austria
   precision: city
 news_page: https://www.prediki.com/meta/en/Management-by-Predictions-(Prediki-Blog-in-English)/
+events:
+- date: '2011-12-30'
+  title: Prediki Prediction Markets GmbH registered in Vienna
+  url: https://www.prediki.com/meta/en/Legal-information
+  quote: 'Registrar: Commercial Court of Vienna, FN 373457b, dated 30 December 2011'
+  proof_level: high
+  url_checked: '2026-08-17'
+- date: '2012-01-01'
+  title: Open prediction market platform goes online
+  url: https://www.prediki.com
+  note: Site copyright line dates the platform's operation to 2012; no explicit launch
+    date is published.
+  proof_level: medium
+  url_checked: '2026-08-17'
+- date: '2017-02-17'
+  title: Publishes study showing its wahlfieber.com markets beat pollsters after Germany's
+    2016 state elections
+  url: https://www.prediki.com/meta/en/Prediction-Markets-A-Better-Alternative/
+  quote: The prediction error on Prediki’s platform wahlfieber.com for example, only
+    amounted to 1.87 percentage points, the average error of all German political
+    stock markets came to an excellent 2.65 percentage points.
+  proof_level: high
+  url_checked: '2026-08-17'
 activity:
   manual:
     checked: 2026-06-07
@@ -39,10 +62,11 @@ activity:
       footer copyright dated 2012-2022 but platform is operating.
     url: https://www.prediki.com
   rss:
-    checked: 2026-06-07
+    checked: 2026-08-17
     note: No feed found
   scrape:
-    checked: 2026-06-08
+    hint: unreachable
+    checked: 2026-08-17
     date: 2022-09-30
     note: Latest news page scraped
     url: https://www.prediki.com/meta/en/Management-by-Predictions-(Prediki-Blog-in-English)/

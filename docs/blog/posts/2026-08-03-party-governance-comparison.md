@@ -1,8 +1,9 @@
 ---
 authors:
-  - DOD
+  - Brian Khuu
   - Claude
 ai_assist: drafted
+origin: milestone
 categories:
   - project
 date: 2026-08-03

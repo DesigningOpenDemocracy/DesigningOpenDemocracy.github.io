@@ -55,12 +55,12 @@ activity:
       their futures'
     url: https://www.demnext.org/news
   scrape:
-    checked: 2026-06-07
-    date: 2026-03-27
+    date: 2026-06-24
     note: Latest news page scraped
     url: https://www.demnext.org/news
+    checked: 2026-08-17
   sitemap:
-    checked: 2026-08-09
+    checked: 2026-08-17
     date: 2026-07-29
     note: Page last modified (from sitemap)
     url: https://www.demnext.org/sitemaps-1-sitemap.xml

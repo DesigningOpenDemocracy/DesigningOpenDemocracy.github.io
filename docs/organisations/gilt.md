@@ -22,6 +22,33 @@ location:
   name: Vienna, Austria
   precision: city
 rss_feed: https://www.gilt.at/feed
+events:
+- date: '2016-09-21'
+  title: Party "Liste Roland Düringer – Meine Stimme gilt" founded by actor Roland
+    Düringer in Vienna
+  url: https://de.wikipedia.org/wiki/Jede_Stimme_GILT
+  quote: Die Gründung der Partei „Liste Roland Düringer – Meine Stimme gilt“ erfolgte
+    am 21. September 2016 durch Düringer in Wien.
+  note: '"The founding of the party took place on 21 September 2016 by Düringer in
+    Vienna."'
+  proof_level: high
+  url_checked: '2026-08-17'
+- date: '2017-10-15'
+  title: Contests the 2017 Austrian National Council election, winning 0.95% of the
+    vote
+  url: https://de.wikipedia.org/wiki/Jede_Stimme_GILT
+  quote: G!LT stand zur Nationalratswahl 2017 in allen österreichischen Bundesländern
+    zur Wahl und erhielt 0,95 % der gültigen Stimmen (dies waren absolut 48.234 Stimmen).
+  note: Election held 15 October 2017; the party failed the 4% threshold for a parliamentary
+    seat.
+  proof_level: high
+  url_checked: '2026-08-17'
+- date: '2020-01-01'
+  title: Wins 14.23% and three seats in the Koblach municipal election
+  url: https://de.wikipedia.org/wiki/Jede_Stimme_GILT
+  quote: G!LT erreichte dort auf Anhieb 14,23 % der Wählerstimmen und 3 Mandate.
+  proof_level: high
+  url_checked: '2026-08-17'
 activity:
   dod:
     checked: 2026-07-05
@@ -29,10 +56,10 @@ activity:
     note: Site confirmed active (2024 election content still featured); Wikipedia
       (de) corroborates party still exists, no evidence of dissolution
   rss:
-    checked: 2026-08-09
-    date: 2026-08-09
+    date: 2026-08-17
     note: RSS feed active
     url: https://www.gilt.at/feed
+    checked: 2026-08-17
 last_checked: '2026-07-05'
 ---
 

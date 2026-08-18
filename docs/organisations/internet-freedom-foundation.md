@@ -49,11 +49,10 @@ activity:
       and Delhi HC litigation
     url: https://x.com/internetfreedom/status/2038604152318644237
   rss:
-    checked: 2026-08-09
-    date: 2026-08-07
-    note: 'Latest post: IFF files complaints with the NCW and NCPCR on the doxxing
-      of and violent threat'
-    url: https://internetfreedom.in/iff-files-complaints-with-the-ncw-and-ncpcr-on-the-doxxing-of-and-violent-threats-against-women-protesters-at-jantar-mantar/
+    date: 2026-08-14
+    note: 'Latest post: Flagging data protection violations in Har Ghar Tiranga 5.0'
+    url: https://internetfreedom.in/flagging-data-protection-violations-in-har-ghar-tiranga-5-0/
+    checked: 2026-08-17
 last_checked: '2026-07-16'
 ---
 

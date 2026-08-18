@@ -24,17 +24,40 @@ location:
   name: Ramallah, Palestine
 news_page: https://www.aman-palestine.org/en/activities/
 rss_feed: https://www.aman-palestine.org/rss
+events:
+- date: '2000-01-01'
+  title: Established as a Palestinian anti-corruption coalition
+  url: https://www.aman-palestine.org/en/about-aman/5.html
+  quote: AMAN was established in 2000 as a civil society organization that seeks to
+    combat corruption and promote integrity, transparency and accountability in the
+    Palestinian society.
+  proof_level: high
+  url_checked: '2026-08-17'
+- date: '2006-01-01'
+  title: Accredited as Transparency International's Palestine chapter
+  url: https://www.aman-palestine.org/en/about-aman/5.html
+  quote: In 2006, the Coalition was accredited as a national chapter for Transparency
+    International.
+  proof_level: high
+  url_checked: '2026-08-17'
+- date: '2017-01-01'
+  title: Holds the first Integrity School in the West Bank and Gaza Strip
+  url: https://www.aman-palestine.org/en/about-aman/5.html
+  quote: In partnership with a group of civil society organisations, the Integrity
+    School was held for the first time in the West Bank and Gaza Strip in 2017.
+  proof_level: high
+  url_checked: '2026-08-17'
 activity:
   rss:
-    checked: 2026-08-09
-    date: 2026-08-09
+    date: 2026-08-17
     note: RSS feed active
     url: https://www.aman-palestine.org/rss
+    checked: 2026-08-17
   scrape:
-    checked: 2026-06-08
-    date: 2026-05-21
+    date: 2026-08-13
     note: Latest news page scraped
     url: https://www.aman-palestine.org/en/activities/
+    checked: 2026-08-17
 last_checked: '2026-06-28'
 ---
 

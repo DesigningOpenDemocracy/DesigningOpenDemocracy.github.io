@@ -37,6 +37,9 @@ activity:
     checked: 2026-06-22
     date: 2026-06-22
     note: Confirmed active via OpenAustralia Foundation project page
+  rss:
+    note: No feed found
+    checked: 2026-08-17
 last_checked: '2026-06-22'
 ---
 

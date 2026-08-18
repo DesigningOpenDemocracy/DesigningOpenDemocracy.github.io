@@ -51,13 +51,13 @@ activity:
       Economic Security and Defend Civil Liberties in the United States'
     url: https://www.opensocietyfoundations.org/newsroom
   rss:
-    checked: 2026-06-07
+    checked: 2026-08-17
     note: No feed found
   scrape:
-    checked: 2026-06-08
-    date: 2026-05-20
+    date: 2026-08-11
     note: Latest news page scraped
     url: https://www.opensocietyfoundations.org/newsroom
+    checked: 2026-08-17
 last_checked: '2026-05-29'
 ---
 

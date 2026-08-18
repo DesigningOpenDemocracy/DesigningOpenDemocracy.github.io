@@ -2,7 +2,7 @@
 title: "The small rooms: how DOD's podcast archive reads from 2026"
 date: 2026-06-02
 authors:
-  - DOD
+  - Brian Khuu
   - Claude
   - DeepSeekV4Pro
 ai_assist: drafted
@@ -34,7 +34,7 @@ The question isn't whether DOD influenced anything — it's whether the diagnosi
 
 **Citizens' assemblies as a serious policy option.** When Nicholas Gruen argued in 2017 that randomly selected citizen juries were a structural corrective to elections — that elections select for charisma and emotional mobilisation rather than considered judgement — it was a reformist position with limited institutional uptake. By December 2025, the Victorian parliament had completed an inquiry into its Upper House electoral system and recommended a citizens' assembly as the appropriate mechanism for deciding any reform. The 2025 Australian Election Study found that 48% of Australians support the idea, against only 20% opposed — and that only 32% trust government at all. [The Victorian inquiry is documented on this site](2026-05-24-vic-upper-house-citizens-assembly.md). The 2017 Gruen argument is in [Citizens' Democracy](2017-08-21-podcast.md); the 2020 version in [Isegoria](2020-03-20.md).
 
-Gruen's framing was precise: it's not that politicians are bad people, it's that the system rewards the wrong qualities. *"We are getting exactly what we're asking for."* The trust figures suggest that the public has arrived, intuitively, at a similar diagnosis.
+Gruen's framing was precise: it's not that politicians are bad people, it's that the system rewards the wrong qualities — [the 2017 session's show notes summarise it](2017-08-21-podcast.md) as democracy's current trouble being that we're getting exactly what we're asking for. The trust figures suggest that the public has arrived, intuitively, at a similar diagnosis.
 
 **Trust as a measurable substrate.** The [2019 DOD Trust discussion](2019-12-11-podcast.md) treated trust not as a warm feeling but as the structural substrate without which collective intelligence can't emerge at scale. The 32% government trust figure from the 2025 AES is a concrete measurement of that substrate deteriorating. The podcast was examining the mechanism; the survey is measuring the outcome.
 
@@ -52,7 +52,7 @@ Whether those specific mechanisms are the right vehicle remains an open question
 
 Every discussion in the archive, across eight years, circles the same underlying problem from different angles.
 
-The 2019 Trust discussion named it most precisely: *"the people who are influenced are not the people who are influencing."* The feedback loop between political outcomes and political decision-making is broken. [Dan Davies' accountability sink concept](../../concepts/accountability-sink.md) — developed in *The Unaccountability Machine* (2024) — gives it a more recent theoretical frame: a structural feature of large organisations in which the chain between decision and consequence is broken so that no individual can be held responsible.
+The [2019 Trust discussion](2019-12-11-podcast.md) named it most precisely: *"Who is influenced is not who is influencing it... if someone's influencing something, they also need to be influenced to the same degree. In engineering that's called a feedback loop. Without it, the system destabilises."* The feedback loop between political outcomes and political decision-making is broken. [Dan Davies' accountability sink concept](../../concepts/accountability-sink.md) — developed in *The Unaccountability Machine* (2024) — gives it a more recent theoretical frame: a structural feature of large organisations in which the chain between decision and consequence is broken so that no individual can be held responsible.
 
 The citizens' assembly proposals, the donation caps, the deliberative democracy mechanisms — all of these are input reforms. They address *who decides* and *how they're selected* and *whose money flows into the process*. None of them directly addresses the output problem: how do the consequences of decisions reach back to the people who made them? That's the feedback loop Gruen and Hofkirchner were both circling in 2017, from opposite directions (deliberation vs. prediction markets), and it remains the least-addressed item in democratic reform discussions.
 

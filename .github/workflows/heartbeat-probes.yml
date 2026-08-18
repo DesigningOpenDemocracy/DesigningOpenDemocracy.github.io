@@ -23,17 +23,25 @@ jobs:
         run: pip install -r util/requirements.txt
 
       - name: Probe RSS feeds and sitemaps
-        run: python util/check_rss.py --update-activity
+        run: |
+          set -o pipefail
+          python util/check_rss.py --update-activity | tee /tmp/rss.log
 
       - name: Scrape news pages
-        run: python util/scrape_news.py
+        run: |
+          set -o pipefail
+          python util/scrape_news.py | tee /tmp/scrape.log
 
       - name: Verify event and footnote evidence still matches live pages
-        run: python util/check_fragments.py --save-to-wayback
+        run: |
+          set -o pipefail
+          python util/check_fragments.py --save-to-wayback | tee /tmp/fragments.log
         continue-on-error: true  # report-only: stale evidence shouldn't block the RSS/scrape commit below
 
       - name: Check event citation URLs are still live
-        run: python util/check_event_urls.py
+        run: |
+          set -o pipefail
+          python util/check_event_urls.py | tee /tmp/urls.log
         continue-on-error: true  # report-only, same reasoning — see job summary/log for findings
 
       - name: Commit any updates
@@ -41,5 +49,19 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add docs/organisations/ docs/data/event-evidence-cache.json
-          git diff --staged --quiet || git commit -m "chore: automated activity probe — $(date -u +%Y-%m-%d)"
+          if ! git diff --staged --quiet; then
+            SUMMARY=$(
+              echo "RSS/sitemap probe:"; tail -n 3 /tmp/rss.log
+              echo; echo "News scrape:"; tail -n 6 /tmp/scrape.log
+              echo; echo "Fragment verification:"; tail -n 6 /tmp/fragments.log
+              echo; echo "Event URL check:"; tail -n 6 /tmp/urls.log
+            )
+            git commit -m "chore: automated activity probe — $(date -u +%Y-%m-%d)" -m "$SUMMARY"
+          fi
+          # The job above can run for a couple of hours (check_fragments.py verifies
+          # every citation live and archives each to the Wayback Machine), so `main`
+          # has often moved by the time we get here — rebase onto its tip before
+          # pushing rather than risk a rejected push discarding this run's results.
+          git fetch origin main
+          git rebase origin/main
           git push

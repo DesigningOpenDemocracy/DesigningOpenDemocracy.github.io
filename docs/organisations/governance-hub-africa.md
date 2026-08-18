@@ -39,7 +39,7 @@ events:
   proof_warning: true
 activity:
   rss:
-    checked: 2026-08-09
+    checked: 2026-08-17
     note: No feed found
 last_checked: '2026-08-09'
 ---

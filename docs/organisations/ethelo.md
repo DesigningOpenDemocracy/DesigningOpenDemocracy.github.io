@@ -66,7 +66,7 @@ activity:
     note: Site confirmed active and current, case studies and contact functionality
       operational
   rss:
-    checked: 2026-08-09
+    checked: 2026-08-17
     date: 2026-03-30
     note: 'Latest post: Engaged California Program'
     url: https://ethelo.com/case-study/engaged-california-program/

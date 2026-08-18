@@ -63,7 +63,7 @@ activity:
       March 2025; site footer has copyright 2026 confirming maintained
     url: https://bersih.org/news/
   rss:
-    checked: 2026-08-09
+    checked: 2026-08-17
     note: No feed found
   scrape:
     checked: 2026-06-28

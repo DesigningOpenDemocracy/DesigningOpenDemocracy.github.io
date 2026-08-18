@@ -66,15 +66,15 @@ activity:
     note: Site confirmed active; news page shows articles dated through 28 June 2026,
       EU CERV Framework Partner 2026-2028
   rss:
-    checked: 2026-08-09
-    date: 2026-08-09
+    date: 2026-08-17
     note: RSS feed active
     url: https://www.democracy-international.org/rss.xml
+    checked: 2026-08-17
   scrape:
-    checked: 2026-06-08
-    date: 2026-04-27
+    date: 2026-08-13
     note: Latest news page scraped
     url: https://www.democracy-international.org/news
+    checked: 2026-08-17
 last_checked: '2026-07-05'
 ---
 

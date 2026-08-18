@@ -43,11 +43,11 @@ activity:
       7 failures; confirms ongoing watchdog/litigation activity'
     url: https://mqg.org.il/en
   rss:
-    checked: 2026-06-08
-    date: 2026-04-15
-    note: 'Latest post: התנועה לאיכות השלטון דורשת מהרמטכ"ל להקים ועדת בדיקה לנתוני
-      גיוס החרדים השגויים '
-    url: https://mqg.org.il/%d7%94%d7%aa%d7%a0%d7%95%d7%a2%d7%94-%d7%9c%d7%90%d7%99%d7%9b%d7%95%d7%aa-%d7%94%d7%a9%d7%9c%d7%98%d7%95%d7%9f-%d7%93%d7%95%d7%a8%d7%a9%d7%aa-%d7%9e%d7%94%d7%a8%d7%9e%d7%98%d7%9b%d7%9c-%d7%9c%d7%94/
+    date: 2026-07-24
+    note: 'Latest post: התנועה לאיכות השלטון בתגובה לתצהירה של ח"כ שרן השכל: דורשים
+      חקירה פלילית בחשד לה'
+    url: https://mqg.org.il/%d7%94%d7%aa%d7%a0%d7%95%d7%a2%d7%94-%d7%9c%d7%90%d7%99%d7%9b%d7%95%d7%aa-%d7%94%d7%a9%d7%9c%d7%98%d7%95%d7%9f-%d7%91%d7%aa%d7%92%d7%95%d7%91%d7%94-%d7%9c%d7%aa%d7%a6%d7%94%d7%99%d7%a8%d7%94-%d7%a9/
+    checked: 2026-08-17
 last_checked: '2026-07-16'
 ---
 

@@ -62,6 +62,10 @@ activity:
     note: 'Latest post: What does an independent commission on electoral reform need
       to succeed?'
     url: https://electoral-reform.org.uk/what-does-an-independent-commission-on-electoral-reform-need-to-succeed/
+  scrape:
+    note: News page unreachable
+    hint: unreachable
+    checked: 2026-08-17
 last_checked: '2026-06-15'
 ---
 

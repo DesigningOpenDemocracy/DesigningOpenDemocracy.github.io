@@ -43,10 +43,10 @@ activity:
       areas.
     url: https://join.gov.tw/
   rss:
-    checked: 2026-08-09
-    date: 2026-08-09
+    date: 2026-08-17
     note: RSS feed active
     url: https://join.gov.tw/?feed=rss2
+    checked: 2026-08-17
 last_checked: '2026-08-09'
 ---
 

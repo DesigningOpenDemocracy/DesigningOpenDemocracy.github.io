@@ -43,10 +43,10 @@ events:
   notable: true
 activity:
   rss:
-    checked: 2026-08-09
-    date: 2026-08-07
-    note: 'Latest post: Annual Reviews of Global Elections'
-    url: https://www.idea.int/theme/annual-reviews-global-elections
+    date: 2026-08-14
+    note: 'Latest post: ans_9388_818839906'
+    url: https://www.idea.int/node/161776
+    checked: 2026-08-17
 last_checked: '2026-05-29'
 ---
 

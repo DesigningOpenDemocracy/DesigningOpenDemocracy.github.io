@@ -40,11 +40,11 @@ activity:
       (Ekiti State 2026 Pre-Election Environment Analysis; Anambra 2025 Governorship
       Election report).
   scrape:
-    checked: 2026-06-08
     hint: no_markup
+    checked: 2026-08-17
     note: News page found, no machine-readable date
   sitemap:
-    checked: 2026-08-09
+    checked: 2026-08-17
     date: 2026-06-05
     note: Server still up (sitemap detected)
   url: https://www.cddwestafrica.org/blog/

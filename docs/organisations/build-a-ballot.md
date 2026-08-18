@@ -74,7 +74,7 @@ activity:
     date: 2026-06-07
     note: was definitely active last year, as noted by a dod member
   sitemap:
-    checked: 2026-08-09
+    checked: 2026-08-17
     date: 2026-06-05
     note: Server still up (sitemap detected)
 last_checked: '2026-06-28'

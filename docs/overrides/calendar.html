@@ -74,11 +74,13 @@
   </table>
 </details>
 
+<div id="calendar-past-events-slot"></div>
+
 {%- for month_key, month_events in grouped.items() %}
 <h2 class="calendar-month-heading">{{ month_key }}</h2>
 <ul class="calendar-event-list">
   {%- for e in month_events %}
-  <li class="calendar-event{% if e.notable %} calendar-event--notable{% endif %}" data-country="{{ e.country or '' }}" data-country-label="{{ e.country | country_flag }} {{ e.country | country_name }}">
+  <li class="calendar-event{% if e.notable %} calendar-event--notable{% endif %}" data-country="{{ e.country or '' }}" data-country-label="{{ e.country | country_flag }} {{ e.country | country_name }}" data-date="{{ e.date.isoformat() }}">
 
     <div class="calendar-date-block">
       <span class="calendar-date-month">{{ e.date.strftime('%b') }}</span>
@@ -178,10 +180,95 @@
     filter.appendChild(opt);
   });
 
+  // This is a static site — the page you're reading may have been built
+  // days ago, so an event that was genuinely upcoming at build time can
+  // have already happened by the time it's viewed. hooks/calendar_export.py
+  // only filters by date at *build* time, so that drift is expected, not a
+  // bug: this client-side pass corrects for it using the viewer's own
+  // clock, which is always current regardless of when the page was built.
+  // Collapsing past events (rather than just fading them in place) is what
+  // actually keeps the still-relevant events on top without a full
+  // re-layout, and highlighting today/tomorrow draws the eye to what's
+  // most actionable right now.
+  function collapsePastAndHighlightNear() {
+    function parseLocalDate(s) {
+      // new Date("YYYY-MM-DD") parses as UTC midnight, which reads as the
+      // *previous* day for anyone west of UTC — a real off-by-one for a
+      // "was this today" comparison. Parse the components and construct a
+      // local-midnight Date instead.
+      var parts = s.split('-');
+      return new Date(Number(parts[0]), Number(parts[1]) - 1, Number(parts[2]));
+    }
+
+    var now = new Date();
+    var today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+    var tomorrow = new Date(today);
+    tomorrow.setDate(tomorrow.getDate() + 1);
+    var weekOut = new Date(today);
+    weekOut.setDate(weekOut.getDate() + 7);
+
+    var pastEvents = [];
+
+    events.forEach(function (el) {
+      var dateStr = el.getAttribute('data-date');
+      if (!dateStr) return;
+      var eventDate = parseLocalDate(dateStr);
+      var header = el.querySelector('.calendar-event-header');
+
+      if (eventDate < today) {
+        pastEvents.push(el);
+      } else if (header && eventDate.getTime() === today.getTime()) {
+        el.classList.add('calendar-event--today');
+        var badge = document.createElement('span');
+        badge.className = 'calendar-event-badge calendar-event-badge--today';
+        badge.textContent = 'Today';
+        header.insertBefore(badge, header.firstChild);
+      } else if (header && eventDate.getTime() === tomorrow.getTime()) {
+        el.classList.add('calendar-event--tomorrow');
+        var badge2 = document.createElement('span');
+        badge2.className = 'calendar-event-badge calendar-event-badge--tomorrow';
+        badge2.textContent = 'Tomorrow';
+        header.insertBefore(badge2, header.firstChild);
+      } else if (header && eventDate > tomorrow && eventDate <= weekOut) {
+        // A lighter-weight third tier: a plain badge only, deliberately
+        // without today/tomorrow's colored border+background — highlighting
+        // every event in the next week that strongly would drown out the
+        // "this one is truly imminent" signal today/tomorrow are meant to
+        // give, especially on a calendar aggregating many orgs' events.
+        var badge3 = document.createElement('span');
+        badge3.className = 'calendar-event-badge calendar-event-badge--week';
+        badge3.textContent = 'This week';
+        header.insertBefore(badge3, header.firstChild);
+      }
+    });
+
+    if (pastEvents.length === 0) return;
+
+    var slot = document.getElementById('calendar-past-events-slot');
+    var details = document.createElement('details');
+    details.className = 'calendar-past-events-details';
+    var summary = document.createElement('summary');
+    summary.textContent = pastEvents.length + ' event' + (pastEvents.length !== 1 ? 's' : '') +
+      ' already passed since this page was last built — click to show';
+    var list = document.createElement('ul');
+    list.className = 'calendar-event-list';
+    details.appendChild(summary);
+    details.appendChild(list);
+    pastEvents.forEach(function (el) {
+      el.classList.add('calendar-event--past');
+      list.appendChild(el);
+    });
+    slot.appendChild(details);
+  }
+
   function updateCount() {
     var visible = 0;
     events.forEach(function (el) {
-      if (el.style.display !== 'none') visible++;
+      // Past events living inside the collapsed "already passed" details
+      // aren't part of "what's coming up" — excluded from the headline
+      // count even while that details is open and they're technically
+      // style.display !== 'none'.
+      if (el.style.display !== 'none' && !el.closest('.calendar-past-events-details')) visible++;
     });
     countEl.textContent = visible + ' event' + (visible !== 1 ? 's' : '');
   }
@@ -285,6 +372,11 @@
     window.history.replaceState({}, '', url);
     applyFilter();
   });
+
+  // Must run before applyFilter(): moves past events out of their month
+  // <ul>s so the empty-heading check inside applyFilter() sees the
+  // post-collapse DOM, not the original build-time list.
+  collapsePastAndHighlightNear();
 
   // Pre-select from ?country= query param
   var params = new URLSearchParams(window.location.search);

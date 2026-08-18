@@ -98,14 +98,15 @@ activity:
       Institute 2019, MessageMedia/Sinch sale 2021, Monash renewal 2024, rebrand 2025)
       after verifying each claim against directly-fetched primary sources
   scrape:
-    checked: 2026-06-07
-    date: 2026-03-31
-    note: 'Latest post: Insights'
+    date: 2026-07-06
+    note: 'Latest post: News & Insights | McKinnon'
     url: https://mckinnon.co/insights
+    checked: 2026-08-17
   sitemap:
-    checked: 2026-06-08
-    date: 2026-06-04
+    date: 2026-08-11
     note: Page last modified (from sitemap)
+    url: https://mckinnon.co/sitemap.xml
+    checked: 2026-08-17
 last_checked: '2026-08-15'
 ---
 

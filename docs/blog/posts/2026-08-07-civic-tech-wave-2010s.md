@@ -3,7 +3,7 @@ title: "Occupy to Plurality: what the 2010s civic-tech wave built, and where it 
 date: 2026-08-07
 summary: "From Occupy's general assemblies to RadicalxChange's new Melbourne chapter, a decade and a half of protest-born democracy software shares one pattern: strong on making agreement visible, weak on making it binding."
 authors:
-  - DOD
+  - Brian Khuu
   - Claude
 ai_assist: drafted
 categories:

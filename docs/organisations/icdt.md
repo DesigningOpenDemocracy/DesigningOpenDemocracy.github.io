@@ -22,6 +22,29 @@ location:
   longitude: 116.4074
   name: Beijing, China (origin; operates in diaspora)
   precision: city
+events:
+- date: '2016-09-01'
+  title: Incorporated in New Jersey, USA
+  url: https://chinademocrats.org/en
+  note: 'The institute''s own site states: "Incorporated in September 2016, the Institute
+    for China''s Democratic Transition is based in the State of New Jersey, United
+    States."'
+  proof_level: medium
+  url_checked: '2026-08-17'
+- date: '2017-04-15'
+  title: Public launch at Princeton University
+  url: https://www.rfa.org/mandarin/zhuanlan/zhongguotoushi/panel-04212017105345.html
+  note: Radio Free Asia's Chinese-language commentary reports the institute was established
+    at Princeton University on 15 April 2017.
+  proof_level: medium
+  url_checked: '2026-08-17'
+- date: '2023-01-01'
+  title: Launches the China Journal of Democracy
+  url: https://chinademocrats.org/en
+  quote: Since its launch in January 2023, the journal has quickly become the flagship
+    publication for pro-democracy Chinese intellectuals.
+  proof_level: high
+  url_checked: '2026-08-17'
 activity:
   manual:
     checked: 2026-06-07
@@ -36,10 +59,10 @@ activity:
       activity
     url: https://chinademocrats.org/?cat=8
   rss:
-    checked: 2026-08-09
-    date: 2026-08-01
-    note: 'Latest post: 钟伟锋/张伦/王超华/苏利利/胡平/王天成 | 通向民主之路：军人的角色问题'
-    url: https://chinademocrats.org/?p=6926
+    date: 2026-08-14
+    note: 'Latest post: 李厚辰：反嵌型政治结构跟1990以来的政治经济历史（回应吴国光老师“十大问题”系列其二）'
+    url: https://chinademocrats.org/?p=6943
+    checked: 2026-08-17
 last_checked: '2026-07-16'
 ---
 

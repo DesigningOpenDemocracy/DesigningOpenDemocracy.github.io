@@ -589,7 +589,12 @@
 }
 
 .org-map-approx-note {
-  color: var(--md-default-fg-color--light, #666);
+  /* Fixed gray, not the theme-flipping --md-default-fg-color--light var:
+     Leaflet popups always render on a plain white background regardless
+     of the site's light/dark theme, and that variable goes pale in dark
+     mode — unreadable against white. Matches .map-legend-approx-note
+     below, which has the same fixed-white-background constraint. */
+  color: #555;
   font-style: italic;
   font-size: 0.85em;
 }
@@ -1233,6 +1238,168 @@
 .ai-assist-reviewed  { background: rgba(46,125,50,0.25);   color: #81c784; border: 1px solid rgba(46,125,50,0.35); }
 .ai-assist-generated { background: rgba(106,27,154,0.25);  color: #ce93d8; border: 1px solid rgba(106,27,154,0.35); }
 
+/* Post origin badge in blog post sidebar (docs/overrides/blog-post.html) */
+.origin-badge {
+  display: inline-block;
+  font-size: 0.72em;
+  font-weight: 600;
+  padding: 0.1em 0.55em;
+  border-radius: 9px;
+  text-transform: none;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+}
+.origin-member-raised   { background: rgba(191,54,12,0.25);  color: #ff8a65; border: 1px solid rgba(191,54,12,0.35); }
+.origin-event-coverage  { background: rgba(2,119,189,0.25);  color: #4fc3f7; border: 1px solid rgba(2,119,189,0.35); }
+.origin-world-commentary { background: rgba(94,53,177,0.25); color: #b39ddb; border: 1px solid rgba(94,53,177,0.35); }
+.origin-milestone       { background: rgba(158,157,36,0.25); color: #dce775; border: 1px solid rgba(158,157,36,0.35); }
+.origin-reader-question { background: rgba(0,131,143,0.25);  color: #4dd0e1; border: 1px solid rgba(0,131,143,0.35); }
+
+/* Shared-link card: auto-injected at the top of blog posts with
+   shared_link: frontmatter (hooks/shared_link_card.py) — the specific
+   external resource a post exists to point at, made prominent instead of
+   buried as one more bullet in "Sources & further reading". */
+.shared-link-card {
+    display: block;
+    padding: 1em 1.25em;
+    margin: 0 0 1.4em 0;
+    border: 1px solid rgba(73, 167, 233, 0.35);
+    border-left: 4px solid #49a7e9;
+    background: rgba(73, 167, 233, 0.06);
+    border-radius: 0 8px 8px 0;
+    overflow: hidden;
+}
+.shared-link-image-wrap {
+    display: block;
+    margin: -1em -1.25em 0.8em -1.25em;
+    line-height: 0;
+}
+.shared-link-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.shared-link-eyebrow {
+    font-size: 0.72em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #49a7e9;
+    margin-bottom: 0.35em;
+}
+.shared-link-title {
+    font-weight: 600;
+    font-size: 1.02em;
+    margin-bottom: 0.3em;
+}
+.shared-link-note {
+    font-size: 0.9em;
+    color: var(--md-default-fg-color--light);
+    margin-bottom: 0.8em;
+}
+/* .md-typeset blockquote qualifier needed to out-specificity Material's own
+   `.md-typeset blockquote` default border/padding, which otherwise wins
+   over the plain .shared-link-description class rule below it. */
+.md-typeset blockquote.shared-link-description {
+    margin: 0 0 0.8em 0;
+    padding: 0.1em 0 0.1em 0.8em;
+    border-left: 2px solid rgba(73, 167, 233, 0.4);
+    font-size: 0.92em;
+    font-style: italic;
+    color: var(--md-default-fg-color--light);
+}
+.shared-link-actions {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.75em;
+}
+.shared-link-badge {
+    display: inline-block;
+    font-size: 0.72em;
+    font-weight: 600;
+    padding: 0.15em 0.6em;
+    border-radius: 9px;
+    background: rgba(191, 54, 12, 0.18);
+    color: #ff8a65;
+    border: 1px solid rgba(191, 54, 12, 0.3);
+}
+
+/* Event card: auto-injected at the top of blog posts with event:
+   frontmatter (hooks/event_card.py) — a ticketed/RSVP'd event DOD is
+   pointing readers at, unifying what used to be inconsistent hand-built
+   banner-image/button/map combinations across a couple of posts into one
+   system, the same way shared_link: did for the shared-content case. */
+.event-card {
+    display: block;
+    padding: 1em 1.25em;
+    margin: 0 0 1.4em 0;
+    border: 1px solid rgba(255, 179, 0, 0.35);
+    border-left: 4px solid #ffb300;
+    background: rgba(255, 179, 0, 0.06);
+    border-radius: 0 8px 8px 0;
+    overflow: hidden;
+}
+.event-card-image-wrap {
+    display: block;
+    margin: -1em -1.25em 0.8em -1.25em;
+    line-height: 0;
+}
+.event-card-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.event-card-eyebrow {
+    font-size: 0.72em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #ffb300;
+    margin-bottom: 0.35em;
+}
+.event-card-title {
+    font-weight: 600;
+    font-size: 1.02em;
+    margin-bottom: 0.3em;
+}
+.event-card-when,
+.event-card-location {
+    display: flex;
+    align-items: center;
+    gap: 0.4em;
+    font-size: 0.9em;
+    margin-bottom: 0.2em;
+}
+.event-card-when .twemoji,
+.event-card-location .twemoji {
+    flex-shrink: 0;
+    width: 1.1em;
+    height: 1.1em;
+    color: #ffb300;
+}
+.event-card-note {
+    font-size: 0.9em;
+    color: var(--md-default-fg-color--light);
+    margin: 0.5em 0 0.8em 0;
+}
+.event-card-actions {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.75em;
+    margin-bottom: 0.6em;
+}
+.event-card-map {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    margin: 0.6em 0 0.3em 0;
+}
+.event-card-map-link {
+    font-size: 0.85em;
+}
+
 /* Site-wide future events calendar (docs/overrides/calendar.html) */
 .calendar-subscribe {
   display: flex;
@@ -1518,6 +1685,53 @@
 }
 .calendar-event-action:hover {
   background: rgba(255, 179, 0, 0.28);
+}
+/* Today / tomorrow highlight (docs/overrides/calendar.html's
+   collapsePastAndHighlightNear()) — chained class selectors so this wins
+   over .calendar-event--notable's own background/border regardless of
+   declaration order, since an event can be both notable and today at
+   once and the "happening now" signal should take visual priority. */
+.calendar-event.calendar-event--today {
+  border-left: 4px solid #4caf50;
+  background: rgba(76, 175, 80, 0.1);
+  padding-left: 0.5em;
+}
+.calendar-event.calendar-event--tomorrow {
+  border-left: 4px solid #42a5f5;
+  background: rgba(66, 165, 245, 0.1);
+  padding-left: 0.5em;
+}
+.calendar-event-badge--today {
+  color: #4caf50;
+  background: rgba(76, 175, 80, 0.2);
+}
+.calendar-event-badge--tomorrow {
+  color: #42a5f5;
+  background: rgba(66, 165, 245, 0.2);
+}
+/* "This week" (day 2-7 out) is badge-only, deliberately without the
+   colored border+background today/tomorrow get — a lighter third tier
+   so it doesn't dilute the "truly imminent" signal those two carry. */
+.calendar-event-badge--week {
+  color: #b0bec5;
+  background: rgba(176, 190, 197, 0.2);
+}
+/* Past events, collapsed out of the main list so the still-relevant ones
+   stay on top — see collapsePastAndHighlightNear() for why a static site
+   needs this client-side rather than relying on build-time filtering. */
+.calendar-past-events-details {
+  font-size: 0.85em;
+  margin: 0 0 1.5em;
+}
+.calendar-past-events-details summary {
+  cursor: pointer;
+  opacity: 0.75;
+}
+.calendar-past-events-details summary:hover {
+  opacity: 1;
+}
+.calendar-past-events-details .calendar-event {
+  opacity: 0.6;
 }
 /* Country filter bar */
 .calendar-filter-bar {

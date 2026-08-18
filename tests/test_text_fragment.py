@@ -288,6 +288,22 @@ class FootnoteParsingTests(unittest.TestCase):
         body = '"a quote," [ref](mailto:info@example.org).'
         self.assertIsNone(tf.footnote_citation(body))
 
+    def test_footnote_citation_handles_paren_in_url(self):
+        # A Wikipedia disambiguation-style URL (e.g. .../Politics_(Aristotle))
+        # contains a literal ")" before the markdown link's own closing paren.
+        # MD_LINK_RE's URL group used to stop at the first ")" it saw,
+        # silently truncating the url to end right before "Aristotle)" —
+        # confirmed via check_fragments.py fetching the wrong (truncated,
+        # non-existent) URL for such a footnote and reporting a false
+        # HTTP error/mismatch on an otherwise-correct citation.
+        body = ('"a quote," [Politics (Aristotle)]'
+                '(https://en.wikipedia.org/wiki/Politics_(Aristotle)).')
+        result = tf.footnote_citation(body)
+        self.assertIsNotNone(result)
+        url, title, quote = result
+        self.assertEqual(url, "https://en.wikipedia.org/wiki/Politics_(Aristotle)")
+        self.assertEqual(title, "Politics (Aristotle)")
+
     def test_iter_footnote_citations_yields_only_qualifying_definitions(self):
         source = "\n".join([
             "Some prose.",
