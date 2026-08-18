@@ -1681,6 +1681,46 @@
 .calendar-event-action:hover {
   background: rgba(255, 179, 0, 0.28);
 }
+/* Today / tomorrow highlight (docs/overrides/calendar.html's
+   collapsePastAndHighlightNear()) — chained class selectors so this wins
+   over .calendar-event--notable's own background/border regardless of
+   declaration order, since an event can be both notable and today at
+   once and the "happening now" signal should take visual priority. */
+.calendar-event.calendar-event--today {
+  border-left: 4px solid #4caf50;
+  background: rgba(76, 175, 80, 0.1);
+  padding-left: 0.5em;
+}
+.calendar-event.calendar-event--tomorrow {
+  border-left: 4px solid #42a5f5;
+  background: rgba(66, 165, 245, 0.1);
+  padding-left: 0.5em;
+}
+.calendar-event-badge--today {
+  color: #4caf50;
+  background: rgba(76, 175, 80, 0.2);
+}
+.calendar-event-badge--tomorrow {
+  color: #42a5f5;
+  background: rgba(66, 165, 245, 0.2);
+}
+/* Past events, collapsed out of the main list so the still-relevant ones
+   stay on top — see collapsePastAndHighlightNear() for why a static site
+   needs this client-side rather than relying on build-time filtering. */
+.calendar-past-events-details {
+  font-size: 0.85em;
+  margin: 0 0 1.5em;
+}
+.calendar-past-events-details summary {
+  cursor: pointer;
+  opacity: 0.75;
+}
+.calendar-past-events-details summary:hover {
+  opacity: 1;
+}
+.calendar-past-events-details .calendar-event {
+  opacity: 0.6;
+}
 /* Country filter bar */
 .calendar-filter-bar {
   display: flex;
