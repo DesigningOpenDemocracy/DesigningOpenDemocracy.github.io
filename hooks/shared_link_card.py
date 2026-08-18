@@ -1,4 +1,16 @@
 import html
+from urllib.parse import urlparse
+
+# Known video-hosting domains get a "Watch" button by default instead of
+# "Read the original" — "read" doesn't make sense for a video link.
+# Deterministic on the URL's own host, not a content-sniffing guess, so it
+# stays in keeping with this field's manual/no-heuristics philosophy
+# elsewhere (title:/source:/note:/description: are all hand-entered, never
+# fetched). cta: still overrides this for any case the host list misses.
+_VIDEO_HOSTS = {
+    'youtube.com', 'www.youtube.com', 'youtu.be', 'm.youtube.com',
+    'vimeo.com', 'www.vimeo.com',
+}
 
 
 def on_page_markdown(markdown, *, page, config, files):
@@ -15,6 +27,10 @@ def on_page_markdown(markdown, *, page, config, files):
     link = page.meta.get('shared_link')
     if not link or not link.get('url'):
         return markdown
+
+    is_video = urlparse(link['url']).netloc.lower() in _VIDEO_HOSTS
+    default_cta = 'Watch →' if is_video else 'Read the original →'
+    cta = html.escape(link.get('cta') or default_cta)
 
     # Escaped once, up front — an unescaped '&' in a URL breaks HTML
     # attribute validity, and title:/source:/note:/description: are free
@@ -52,7 +68,7 @@ def on_page_markdown(markdown, *, page, config, files):
     parts.append('<div class="shared-link-actions">')
     parts.append(
         f'<a class="hero-cta-btn hero-cta-primary" href="{url}" '
-        f'target="_blank" rel="noopener">Read the original →</a>'
+        f'target="_blank" rel="noopener">{cta}</a>'
     )
     if paywalled:
         parts.append('<span class="shared-link-badge">Paywalled</span>')

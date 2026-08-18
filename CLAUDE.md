@@ -322,6 +322,12 @@ shared_link:
   cache-to-a-committed-file for anything network-dependent (see `util/sync_events.py`),
   and most things worth sharing here are paywalled or otherwise unfetchable anyway, so a
   live-fetch approach would fail more often than it'd help.
+- `cta:` — optional button text override. Defaults to "Read the original →", except for a
+  known video-hosting URL (`youtube.com`/`youtu.be`/`vimeo.com` — see `_VIDEO_HOSTS` in
+  `hooks/shared_link_card.py`), where it defaults to "Watch →" instead — "read" doesn't fit
+  a video link. Deterministic on the URL's own host, not a content-sniffing guess, so it
+  stays manual/no-heuristics in spirit like the rest of this field. `cta:` overrides either
+  default for any case the host list misses.
 - `description:` — optional; the source's own abstract/summary text, pasted in verbatim
   and rendered as a blockquote on the card — this is what gives the card the substance a
   real oEmbed/Open Graph fetch would (`title` + `description` + `thumbnail_url` is
