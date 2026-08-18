@@ -29,4 +29,5 @@ The dedicated site (electionroyalcommission.org.au) is no longer active and redi
 
 - [Representative Democracy](../concepts/representative-democracy.md)
 - [Mixed-Member Proportional Representation](../concepts/mixed-member-proportional-representation.md)
+- [Preferential Voting](../concepts/preferential-voting.md)
 - [Pirate Party Australia](pirate-party-australia.md)

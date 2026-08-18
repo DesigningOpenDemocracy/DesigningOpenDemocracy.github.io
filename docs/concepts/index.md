@@ -46,6 +46,7 @@ These pages are discovery aids — brief orientations to help you find better so
 | [Prediction Markets](prediction-markets.md) | Markets where participants bet on policy outcomes to aggregate dispersed knowledge — applied to democratic deliberation |
 | [Sortition](sortition.md) | Selection of officials or jurors by random lot |
 | [Mixed-Member Proportional Representation](mixed-member-proportional-representation.md) | Electoral system combining constituency seats with proportional top-up seats |
+| [Preferential Voting](preferential-voting.md) | Ranked-choice / instant-runoff voting used to elect Australia's House of Representatives |
 | [End-to-End Verifiable Voting System](end-to-end-verifiable-voting-system.md) | Voting systems where voters can verify their vote was counted correctly |
 | [E-Government](e-government.md) | Digital delivery of government services and participation |
 | [Organisations of World Citizens](organizations-of-world-citizens.md) | Global civic organisations and world citizenship concepts |
