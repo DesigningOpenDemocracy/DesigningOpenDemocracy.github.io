@@ -204,6 +204,8 @@
     var today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
     var tomorrow = new Date(today);
     tomorrow.setDate(tomorrow.getDate() + 1);
+    var weekOut = new Date(today);
+    weekOut.setDate(weekOut.getDate() + 7);
 
     var pastEvents = [];
 
@@ -227,6 +229,16 @@
         badge2.className = 'calendar-event-badge calendar-event-badge--tomorrow';
         badge2.textContent = 'Tomorrow';
         header.insertBefore(badge2, header.firstChild);
+      } else if (header && eventDate > tomorrow && eventDate <= weekOut) {
+        // A lighter-weight third tier: a plain badge only, deliberately
+        // without today/tomorrow's colored border+background — highlighting
+        // every event in the next week that strongly would drown out the
+        // "this one is truly imminent" signal today/tomorrow are meant to
+        // give, especially on a calendar aggregating many orgs' events.
+        var badge3 = document.createElement('span');
+        badge3.className = 'calendar-event-badge calendar-event-badge--week';
+        badge3.textContent = 'This week';
+        header.insertBefore(badge3, header.firstChild);
       }
     });
 
