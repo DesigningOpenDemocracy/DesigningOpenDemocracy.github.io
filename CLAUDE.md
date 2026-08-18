@@ -333,6 +333,12 @@ shared_link:
 - Not a replacement for `[^footnote]` citations or the "Sources & further reading" list —
   the shared link should usually still appear there too, exactly as before. This card is
   purely about giving *the* link visual priority a reader shouldn't have to hunt for.
+- **Don't add it to a post that already has its own hand-built "watch/read this" treatment**
+  for the same link — e.g. `2026-06-26-anarchist-critique-of-democracy.md`'s clickable video
+  thumbnail + caption pointing at the Andrewism YouTube essay. Setting `shared_link:` there
+  too would stack two competing prompts for the same link near the top of the post. Reach for
+  `shared_link:` when a post *doesn't* already have a strong visual treatment of its source,
+  not as a second one layered on top of an existing custom embed.
 
 **Convention — main lesson (optional):**
 
