@@ -7,6 +7,16 @@ authors:
   - Claude
 ai_assist: drafted
 origin: event-coverage
+event:
+  url: https://events.humanitix.com/radicalxchange-foundation-in-melbourne
+  title: "An invitation to meet RadicalxChange Foundation in Melbourne"
+  host: RadicalxChange Foundation
+  cta: "RSVP for 27 August →"
+  date: 2026-08-27
+  time: "18:00"
+  end_time: "20:00"
+  note: "This is a RadicalxChange event, not a DOD event — we're just pointing at it."
+  image: blog/2026-08-07-radicalxchange-melbourne-event-banner.jpg
 categories:
   - civic tech
   - event
@@ -21,22 +31,13 @@ location:
   address: "Level 8/54 Wellington Street, Collingwood VIC 3066"
 ---
 
-![An invitation to meet RadicalxChange Foundation in Melbourne — Thursday 27 August, 6-8pm, Collingwood, presented with Small Giants Academy and Today](2026-08-07-radicalxchange-melbourne-event-banner.jpg)
-
-If you're in Melbourne on **Thursday 27 August**, come meet RadicalxChange Foundation — the international movement behind quadratic voting, quadratic funding, and the "Plurality" philosophy — as it launches its Australian chapter. *(This is a RadicalxChange event, not a DOD event — we're just pointing at it.)*
-
-<p style="text-align:center; margin: 1.5rem 0;">
-  <a class="hero-cta-btn hero-cta-primary" href="https://events.humanitix.com/radicalxchange-foundation-in-melbourne" target="_blank" rel="noopener">RSVP for 27 August →</a>
-</p>
+If you're in Melbourne on **Thursday 27 August**, come meet RadicalxChange Foundation — the international movement behind quadratic voting, quadratic funding, and the "Plurality" philosophy — as it launches its Australian chapter.
 
 <!-- more -->
 
 ## Go if you can
 
 ["An invitation to meet RadicalxChange Foundation in Melbourne"](https://events.humanitix.com/radicalxchange-foundation-in-melbourne) runs **6–8pm, Thursday 27 August 2026**, at Today (Level 8/54 Wellington Street, Collingwood), co-hosted with Small Giants Academy.[^humanitix]
-
-<iframe width="100%" height="300" frameborder="0" scrolling="no" style="border-radius: 8px; margin: 1rem 0;" src="https://www.openstreetmap.org/export/embed.html?bbox=144.9823843%2C-37.8100772%2C144.9903843%2C-37.8040772&amp;layer=mapnik&amp;marker=-37.8070772%2C144.9863843"></iframe>
-<br/><small><a href="https://www.openstreetmap.org/?mlat=-37.8070772&amp;mlon=144.9863843#map=17/-37.8070772/144.9863843" target="_blank" rel="noopener">View larger map / directions →</a></small>
 
 It's a conversation between **Jess Scully**, RadicalxChange's Executive Director, and **Tamsin Jones**, on "the role civic tech can play in building common knowledge and moral legibility to cooperate across difference" — with examples spanning polarisation-bridging on urban density in Sydney, climate risk response in Colorado, faith communities shaping AI values, and community voice in data-centre governance.[^humanitix] Tickets ask for a $15 catering contribution, described by organisers as not a barrier to attending.[^humanitix]
 

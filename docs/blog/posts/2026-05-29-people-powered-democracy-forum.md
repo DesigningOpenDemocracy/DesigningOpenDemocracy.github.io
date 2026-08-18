@@ -12,6 +12,14 @@ tags:
   - deliberative-democracy
   - melbourne
 title: "Event: People Powered Democracy Forum — Carlton, 31 May"
+event:
+  url: "https://actionnetwork.org/events/people-powered-democracy?source=direct_link&"
+  title: "People Powered Democracy Forum"
+  host: Beyond Billionaires
+  cta: "Register here →"
+  date: 2026-05-31
+  time: "14:00"
+  note: "This is an external event organised by Beyond Billionaires — not a DOD event. We're flagging it because the topic and speakers are directly relevant to our work, and DOD member Craig Lambie is one of the speakers."
 location:
   name: "Kathleen Syme Library, Multi-Purpose Room 2"
   description: "Kathleen Syme Library and Community Centre — 251 Faraday Street, Carlton VIC 3053"
@@ -22,13 +30,9 @@ location:
 
 # People Powered Democracy Forum — this Sunday in Carlton
 
-**Sunday 31 May, 2:00 PM — Kathleen Syme Library, 251 Faraday St, Carlton VIC 3053**
-
-[Register here](https://actionnetwork.org/events/people-powered-democracy?source=direct_link&) — free event, in-person, with video sent to those who can't make it.
+Free event, in-person, with video sent to those who can't make it.
 
 <!-- more -->
-
-*This is an external event organised by Beyond Billionaires — not a DOD event. We're flagging it because the topic and speakers are directly relevant to our work, and DOD member Craig Lambie is one of the speakers.*
 
 Beyond Billionaires is hosting a public forum on practical ways to give ordinary people more power in democratic decisions. The lineup is strong for anyone interested in how deliberative democracy actually works in practice:
 

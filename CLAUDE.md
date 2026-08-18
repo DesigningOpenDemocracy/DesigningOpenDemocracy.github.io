@@ -340,6 +340,16 @@ shared_link:
   hand-built `[![thumb](...)](url)` markdown block right after the frontmatter, so the
   same card now covers both the text-only paper case and the video-with-thumbnail case
   under one system instead of two competing patterns.
+  - **If the image lives next to the post itself** (`docs/blog/posts/<file>.jpg`, the
+    common case for a hand-sourced banner — see `event.image:` below), the path is
+    **not** `blog/posts/<file>.jpg`. mkdocs-material's blog plugin flattens post-colocated
+    assets to `site/blog/<file>.jpg` at build time (confirmed on
+    `2026-08-07-radicalxchange-melbourne-event-banner.jpg`), so the frontmatter value
+    needs to be `blog/<file>.jpg` to resolve correctly as raw `<img src>` HTML — unlike a
+    markdown `![](file.jpg)` reference in the post body itself, which mkdocs resolves
+    relative to the source file and gets this right automatically. Only an issue for
+    raw-HTML-injecting hooks (this one, `hooks/event_card.py`); doesn't affect ordinary
+    markdown images elsewhere in a post.
 - `paywalled: true` — optional; renders a small "Paywalled" badge next to the button, so
   readers calibrate expectations before clicking through. The button and link stay live
   regardless — a paywall doesn't mean the link isn't worth following: abstracts are
@@ -360,6 +370,62 @@ shared_link:
   link** (a manual thumbnail block, an inline embed) — migrate the post onto `shared_link:`
   instead, the way `2026-06-26-anarchist-critique-of-democracy.md` was, rather than layering
   a second prompt for the same URL on top of the first.
+
+**Convention — event (optional, for posts pointing at a ticketed/RSVP'd event):**
+
+When a post's whole reason for existing is "here's an event, go register" — someone else's
+conference, workshop, or meetup DOD is flagging, not hosting — set `event:` in frontmatter
+so the RSVP link gets a prominent card instead of a hand-rolled mix of banner image, button,
+and map that drifts in shape from post to post. Confirmed drifting before this existed:
+`2026-08-07-radicalxchange-melbourne.md` had a banner image, a styled button, and an embedded
+map; `2026-05-29-people-powered-democracy-forum.md` had none of those, just a plain link.
+
+```yaml
+event:
+  url: https://events.humanitix.com/radicalxchange-foundation-in-melbourne
+  title: "An invitation to meet RadicalxChange Foundation in Melbourne"
+  host: RadicalxChange Foundation
+  cta: "RSVP for 27 August"
+  date: 2026-08-27
+  time: "18:00"
+  end_time: "20:00"
+  note: "This is a RadicalxChange event, not a DOD event — we're just pointing at it."
+  image: 2026-08-07-radicalxchange-melbourne-event-banner.jpg
+```
+
+- `url:` — required; everything else is optional.
+- `title:` — the event's own name (from its ticket page), not necessarily the same as this
+  post's own title.
+- `host:` — who's actually running it. Rendered in the card's eyebrow ("Event · Host Name")
+  so nobody mistakes it for a DOD-run event.
+- `cta:` — button text override. Defaults to "RSVP →" if omitted.
+- `date:` / `time:` / `end_time:` — same shapes as org `events:` frontmatter (`time:`/
+  `end_time:` are strict 24-hour `"HH:MM"` strings — quote them, an unquoted `18:00` parses
+  as a YAML sexagesimal number). Rendered as e.g. "Thursday, 27 August 2026, 6:00–8:00 PM".
+- `note:` — plain text, typically the "this isn't a DOD event" disclaimer.
+- `image:` — same convention as `shared_link.image:` (a `docs/assets/` path with no leading
+  slash, or a full remote URL) — a banner shown at the top of the card, clickable through to
+  `url:`.
+- **Location and map come from the post's own top-level `location:` frontmatter** (`name`,
+  `latitude`, `longitude`) — not duplicated inside `event:`. When `location:` has
+  coordinates, the card embeds an OpenStreetMap iframe with a "View larger map / directions"
+  link, the same pattern `2026-08-07-radicalxchange-melbourne.md` used to hand-build.
+- Rendered by `hooks/event_card.py` (registered in `mkdocs.yml`), which injects the card as
+  raw HTML at the very top of the post body, styled in `customizations.css`'s `.event-card-*`
+  rules. The RSVP button reuses `.hero-cta-btn.hero-cta-primary`, same as `shared_link:`'s
+  button — one consistent action-button color across the site regardless of card type; the
+  card's own amber accent (vs. `shared_link:`'s blue) is what signals which kind of card it is.
+- **This card is presentational only and must never be read by `hooks/calendar_export.py`.**
+  A blog-post field that looked similar to this — `event_date:` — was tried and removed for
+  exactly the failure mode this would reintroduce: it fed the site-wide calendar and
+  duplicated the org's own `events:` entry for the same date (see the Calendar section
+  below). The actual calendar-worthy entry for an event like this still belongs on the
+  *host org's own page*, per the "A post covering an org's event does not get its own
+  calendar entry" rule in the Blog posts section below — `event:` here is only ever a reader-
+  facing card on the post itself.
+- **Don't stack this with a separate hand-built banner-image/button/map combination for the
+  same event** — migrate the post onto `event:` instead, same spirit as `shared_link:`'s
+  equivalent rule above.
 
 **Convention — main lesson (optional):**
 
@@ -531,6 +597,8 @@ more than a bare link.
 - `hooks/citation_export.py` — fires on `on_pre_build`; exports all event and footnote citations to `/data/citations.json` in CSL-JSON format with `evidence` array (machine-verifiable citation standard). See `internal-heartbeat/machine-verifiable-citation.md` for the design.
 - `hooks/footnote_fragments.py` — fires on `on_page_markdown` and `on_page_content`; parses prose footnotes for verbatim quoted excerpts (same convention as event `quote:`), then post-processes the rendered HTML to add `#:~:text=` fragments to footnote citation links. The counterpart of `with_fragment` for the prose footnote world — derives fragments at build time, never stores them in markdown.
 - `hooks/calendar_export.py` — fires on `on_pre_build`/`on_env`; merges every org's future `events:` entries with every org's cached `ics_feed` sync (`docs/data/events/<slug>.json`) into one sorted list, writes `docs/calendar.ics` + `docs/data/events.json`, and injects the list as the `calendar_events` Jinja global used by `docs/overrides/calendar.html`. Makes no network calls itself — see Calendar section below for the fetch step.
+- `hooks/shared_link_card.py` — fires on `on_page_markdown`; injects a reader-facing card at the top of a blog post's body from `shared_link:` frontmatter. See "Convention — shared_link" above.
+- `hooks/event_card.py` — fires on `on_page_markdown`; injects a reader-facing card at the top of a blog post's body from `event:` frontmatter, reusing the page's own `location:` for an embedded map. Presentational only — deliberately never read by `hooks/calendar_export.py`. See "Convention — event" above.
 
 ### Frontmatter — active gates
 

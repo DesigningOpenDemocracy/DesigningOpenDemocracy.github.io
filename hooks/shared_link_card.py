@@ -1,3 +1,6 @@
+import html
+
+
 def on_page_markdown(markdown, *, page, config, files):
     """Auto-inject a prominent shared-link card on blog posts that set
     shared_link: frontmatter — the specific external resource (article,
@@ -13,13 +16,18 @@ def on_page_markdown(markdown, *, page, config, files):
     if not link or not link.get('url'):
         return markdown
 
-    url = link['url']
-    title = link.get('title', '')
-    source = link.get('source', '')
-    note = link.get('note', '')
+    # Escaped once, up front — an unescaped '&' in a URL breaks HTML
+    # attribute validity, and title:/source:/note:/description: are free
+    # text that could contain '<'/'>'/quotes. Display-only: the raw,
+    # unescaped description: in frontmatter is still what
+    # util/check_fragments.py verifies against the live page.
+    url = html.escape(link['url'])
+    title = html.escape(link.get('title', ''))
+    source = html.escape(link.get('source', ''))
+    note = html.escape(link.get('note', ''))
     paywalled = link.get('paywalled', False)
     image = link.get('image', '')
-    description = link.get('description', '')
+    description = html.escape(link.get('description', ''))
 
     eyebrow = 'Shared link' + (f' · {source}' if source else '')
     parts = ['\n<div class="shared-link-card">']
@@ -28,7 +36,7 @@ def on_page_markdown(markdown, *, page, config, files):
         # docs/assets/, no leading slash) needs one added — see the "URL
         # gotcha" note in CLAUDE.md about file.page.url being root-relative
         # without a leading '/'.
-        img_src = image if image.startswith('http') else f'/{image}'
+        img_src = html.escape(image if image.startswith('http') else f'/{image}')
         parts.append(
             f'<a class="shared-link-image-wrap" href="{url}" target="_blank" '
             f'rel="noopener"><img class="shared-link-image" src="{img_src}" '
