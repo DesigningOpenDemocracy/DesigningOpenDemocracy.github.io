@@ -1,6 +1,8 @@
 ---
 authors:
 - Brian Khuu
+- ChatGPT
+ai_assist: collaborated
 categories: []
 date: 2024-02-23 00:00:00
 summary: 'Sharing this podcast episode which details the application of peace polls, initially inspired by Inuit consensus practices, to facilitate peace in Northern Ireland and proposes their potential in addressing the Israel-Palestine conflict. Despite challenges in engaging all parties, notably an unresponsive Israeli leadership, the methodology''s success in inclusively gauging public opinion on contentious issues highlights its relevance for promoting democratic dialogues and reform efforts globally, resonating with our focus on exploring innovative democratic processes.'
