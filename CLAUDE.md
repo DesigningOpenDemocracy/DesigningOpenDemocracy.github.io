@@ -297,6 +297,43 @@ also readable by future automation off the raw frontmatter value — adding a ne
 means adding its label to `origin_labels` in the template and a `.origin-<value>` colour
 rule in the CSS, same pattern as `ai_assist`'s `ai_labels`/`.ai-assist-*`.
 
+**Convention — shared_link (optional, for posts that exist to point at one external thing):**
+
+When a post's whole reason for existing is "look at this" — a paper, article, video,
+someone shared in the DOD chat — set `shared_link:` in frontmatter so the actual link
+gets a prominent, unmissable card instead of being just one more bullet in "Sources &
+further reading" at the bottom, indistinguishable from secondary citations. This was a
+real gap: the Habermas Machine post's paywalled *Science* paper — the thing the whole
+post is about — was buried in a 7-item source list with no visual weight.
+
+```yaml
+shared_link:
+  url: https://www.science.org/doi/10.1126/science.adq2852
+  title: "AI can help humans find common ground in democratic deliberation"
+  source: Science
+  paywalled: true
+  note: "The paper DOD is writing about"
+```
+
+- `url:` — required; everything else is optional.
+- `title:` / `source:` / `note:` — plain text, author-written by hand. Deliberately not
+  auto-fetched (no oEmbed/Open Graph scraping) — this repo's convention is fetch-once-
+  cache-to-a-committed-file for anything network-dependent (see `util/sync_events.py`),
+  and most things worth sharing here are paywalled or otherwise unfetchable anyway, so a
+  live-fetch approach would fail more often than it'd help. If a thumbnail is ever wanted,
+  add it by hand later (a copied `og:image` URL) rather than building fetch machinery for it.
+- `paywalled: true` — optional; renders a small "Paywalled" badge next to the button, so
+  readers calibrate expectations before clicking through.
+- Rendered by `hooks/shared_link_card.py` (registered in `mkdocs.yml`), which injects the
+  card as raw HTML at the very top of the post body — before the author's own opening
+  paragraph, regardless of where in the markdown source it would otherwise land — styled
+  in `customizations.css`'s `.shared-link-*` rules. The button reuses the existing
+  `.hero-cta-btn.hero-cta-primary` classes from the home page rather than inventing new
+  button styling.
+- Not a replacement for `[^footnote]` citations or the "Sources & further reading" list —
+  the shared link should usually still appear there too, exactly as before. This card is
+  purely about giving *the* link visual priority a reader shouldn't have to hunt for.
+
 **Convention — main lesson (optional):**
 
 Each blog post should include a `**Main lesson** —` section positioned directly after

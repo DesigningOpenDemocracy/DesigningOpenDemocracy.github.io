@@ -7,6 +7,12 @@ authors:
   - Claude
 ai_assist: drafted
 origin: member-raised
+shared_link:
+  url: https://www.science.org/doi/10.1126/science.adq2852
+  title: "AI can help humans find common ground in democratic deliberation"
+  source: Science
+  paywalled: true
+  note: "The study this post is about — full text is paywalled; DOD's write-up below draws on the secondary sources listed at the bottom."
 categories:
   - AI
   - Deliberative Democracy
