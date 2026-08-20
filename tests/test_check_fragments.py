@@ -184,6 +184,44 @@ class CheckEvidenceBlockedCacheTests(unittest.TestCase):
         self.assertNotIn("blocked_since", cache["https://example.org/paper"])
 
 
+class FetchPageTextRobotsTests(unittest.TestCase):
+    """_fetch_page_text() must honor a site's robots.txt for ordinary
+    citation URLs (docs/bot.md's public promise), but must NOT gate
+    Wikipedia's own REST/action API — that's designed for exactly this
+    kind of programmatic access (see CLAUDE.md's "Sourcing from
+    Wikipedia"), and gating it would need a robots.txt lookup against a
+    path this function never actually requests directly."""
+
+    def test_disallowed_url_is_not_fetched(self):
+        with mock.patch.object(cf, "robots_allowed", return_value=False) as fake_robots, \
+             mock.patch.object(cf.requests, "get") as fake_get:
+            text, resp, error = cf._fetch_page_text(
+                "https://example.org/paper", {"User-Agent": cf.USER_AGENT})
+        fake_robots.assert_called_once()
+        fake_get.assert_not_called()
+        self.assertIsNone(text)
+        self.assertIsNone(resp)
+        self.assertEqual(error, "ROBOTS_DISALLOWED")
+
+    def test_robots_disallowed_is_in_blocked_errors(self):
+        # ROBOTS_DISALLOWED must get the same sticky "don't recheck every
+        # run" treatment as HTTP_403/429 — see check_evidence()'s
+        # BLOCKED_ERRORS handling, already covered generically by
+        # CheckEvidenceBlockedCacheTests above for the HTTP_403 case.
+        self.assertIn("ROBOTS_DISALLOWED", cf.BLOCKED_ERRORS)
+
+    def test_wikipedia_api_is_not_robots_gated(self):
+        with mock.patch.object(cf, "robots_allowed") as fake_robots, \
+             mock.patch.object(cf.requests, "get") as fake_get:
+            fake_get.return_value = mock.Mock(
+                status_code=200,
+                json=lambda: {"query": {"pages": {"1": {"extract": "some text"}}}})
+            text, resp, error = cf._fetch_page_text(
+                "https://en.wikipedia.org/wiki/Test", {"User-Agent": cf.USER_AGENT})
+        fake_robots.assert_not_called()
+        self.assertEqual(text, "some text")
+
+
 class WriteQuoteFixTests(unittest.TestCase):
 
     def setUp(self):

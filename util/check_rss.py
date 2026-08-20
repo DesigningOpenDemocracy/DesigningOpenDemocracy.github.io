@@ -27,10 +27,12 @@ import time
 from datetime import datetime
 from email.utils import parsedate_to_datetime
 from urllib.parse import urljoin, urlparse
+from urllib.robotparser import RobotFileParser
 from xml.etree import ElementTree as ET
 
 sys.path.insert(0, os.path.dirname(__file__))
 from frontmatter_io import split_frontmatter  # noqa: E402
+from robots_check import load_robots, robots_allowed  # noqa: E402
 
 try:
     import frontmatter
@@ -126,7 +128,11 @@ def probe_sitemap(base_url, timeout=8, session=None):
     """Return a sitemap URL for base_url, or None.
 
     Checks robots.txt for Sitemap: declarations first, then falls back to
-    SITEMAP_PATHS. Handles both /sitemap.xml and /sitemap_index.xml.
+    SITEMAP_PATHS. Handles both /sitemap.xml and /sitemap_index.xml. Any
+    candidate path robots.txt disallows for DOD-Bot is skipped — same
+    fetch also builds the RobotFileParser used for that gate, so this
+    doesn't cost a second robots.txt request beyond the Sitemap: lookup
+    it was already doing.
     """
     if session is None:
         session = requests.Session()
@@ -135,16 +141,23 @@ def probe_sitemap(base_url, timeout=8, session=None):
     parsed = urlparse(base_url)
     root = f"{parsed.scheme}://{parsed.netloc}"
 
+    rp = RobotFileParser()
+    robots_url = urljoin(root, "/robots.txt")
+    rp.set_url(robots_url)
+
     # 1. robots.txt Sitemap: declarations are the canonical source
     try:
-        r = session.get(urljoin(root, "/robots.txt"), timeout=timeout, allow_redirects=True)
+        r = session.get(robots_url, timeout=timeout, allow_redirects=True)
         if r.status_code == 200:
+            rp.parse(r.text.splitlines())
             for line in r.text.splitlines():
                 line = line.strip()
                 if line.lower().startswith("sitemap:"):
                     candidate = line.split(":", 1)[1].strip()
                     if not candidate.startswith("http"):
                         candidate = urljoin(root, candidate)
+                    if not rp.can_fetch(DOD_USER_AGENT, candidate):
+                        continue
                     try:
                         chk = session.get(candidate, timeout=timeout, allow_redirects=True)
                         if chk.status_code == 200:
@@ -152,11 +165,13 @@ def probe_sitemap(base_url, timeout=8, session=None):
                     except RequestException:
                         pass
     except RequestException:
-        pass
+        pass  # unreachable robots.txt → rp has no rules → allows everything below
 
     # 2. Standard paths
     for path in SITEMAP_PATHS:
         url = urljoin(root, path)
+        if not rp.can_fetch(DOD_USER_AGENT, url):
+            continue
         try:
             r = session.get(url, timeout=timeout, allow_redirects=True)
             if r.status_code == 200 and r.content:
@@ -168,7 +183,8 @@ def probe_sitemap(base_url, timeout=8, session=None):
 
 
 def probe_feeds(base_url, timeout=8, session=None):
-    """Return the first feed URL found (RSS/Atom/sitemap), or None."""
+    """Return the first feed URL found (RSS/Atom/sitemap), or None. Skips
+    any candidate feed path robots.txt disallows for DOD-Bot."""
     if session is None:
         session = requests.Session()
     session.headers.update({"User-Agent": DOD_USER_AGENT})
@@ -176,8 +192,12 @@ def probe_feeds(base_url, timeout=8, session=None):
     parsed = urlparse(base_url)
     root = f"{parsed.scheme}://{parsed.netloc}"
 
+    rp = load_robots(root, timeout=timeout, session=session)
+
     for path in FEED_PATHS:
         url = urljoin(root, path)
+        if not rp.can_fetch(DOD_USER_AGENT, url):
+            continue
         try:
             r = session.get(url, timeout=timeout, allow_redirects=True)
             if r.status_code == 200 and looks_like_feed(r):
@@ -656,6 +676,16 @@ def main():
         feed_url = org["rss_feed"] or probe_feeds(org["website"], timeout=args.timeout, session=session)
 
         print(f"  [{i:3d}/{len(orgs)}] {slug} … ", end="", flush=True)
+
+        # An already-configured rss_feed: skips probe_feeds()'s own gating
+        # above, so re-check here — the site's robots.txt may have changed
+        # since the feed was recorded.
+        if feed_url and not robots_allowed(feed_url, DOD_USER_AGENT, timeout=args.timeout, session=session):
+            print(f"BLOCKED by robots.txt  {feed_url}")
+            skipped.append(org)
+            results.append({**org, "feed_url": None, "skipped_robots": True})
+            continue
+
         result = {**org, "feed_url": feed_url}
 
         if feed_url:
@@ -720,6 +750,10 @@ def main():
                         if age <= 7:
                             print(f"SKIPPED (checked {age}d ago)")
                             continue
+
+                if not robots_allowed(ics_url, DOD_USER_AGENT, timeout=args.timeout, session=session):
+                    print(f"BLOCKED by robots.txt  {ics_url}")
+                    continue
 
                 d, title, ok = latest_from_ical(ics_url, timeout=args.timeout, session=session)
                 if not ok:

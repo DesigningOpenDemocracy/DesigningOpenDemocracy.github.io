@@ -4956,6 +4956,8 @@
   "https://www.radicalxchange.org/events/2019-conference": {
     "archive_checked": "2026-08-17",
     "archive_url": "http://web.archive.org/web/20260611115230/https://www.radicalxchange.org/events/2019-conference/",
+    "blocked": "ROBOTS_DISALLOWED",
+    "blocked_since": "2026-08-20",
     "checked": "2026-08-18",
     "content_hash": "6264021384b8cad5ea6531a2398d14fd4ceb4b4a5b5210e06025c57f982233bc",
     "contexts": {

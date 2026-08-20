@@ -48,6 +48,7 @@ except ImportError as e:
     sys.exit(1)
 
 import check_fragments as cf  # noqa: E402 — shared "blocked" URL cache
+from robots_check import robots_allowed  # noqa: E402
 
 ORGS_DIR = os.path.join(os.path.dirname(__file__), "..", "docs", "organisations")
 SKIP_FILES = {"index.md"}
@@ -85,19 +86,33 @@ def check_url(url, session, timeout):
         return None, None, str(e)
 
 
+ROBOTS_STATUS = "ROBOTS_DISALLOWED"  # sentinel status value, not a real HTTP code
+
+
 def check_url_cached(url, session, timeout, cache, use_cache=True):
     """Wraps check_url() with the same shared "blocked" cache
     check_fragments.py writes to (docs/data/event-evidence-cache.json,
-    keyed the same way — cache[url]["blocked"] is the "HTTP_403"/"HTTP_429"
-    string format that script already uses, so either script's write is
-    visible to the other). A URL already confirmed BLOCKED is skipped
-    entirely here — no request at all — until use_cache=False forces a
-    recheck. Returns (status, final_url, error, skipped), where
+    keyed the same way — cache[url]["blocked"] is either the "HTTP_403"/
+    "HTTP_429" string format that script already uses, or "ROBOTS_DISALLOWED"
+    when the site's own robots.txt says no — so a write by either script
+    is visible to the other, and either kind of block is skipped entirely
+    here — no request at all — until use_cache=False forces a recheck.
+    Returns (status, final_url, error, skipped), where status is an int
+    HTTP code, None on a network error, or the ROBOTS_STATUS sentinel;
     skipped=True means this was answered from cache without any network
     call this run."""
     entry = cache.get(url, {}) if use_cache else {}
-    if entry.get("blocked"):
-        return int(entry["blocked"].rsplit("_", 1)[-1]), None, None, True
+    blocked = entry.get("blocked")
+    if blocked == ROBOTS_STATUS:
+        return ROBOTS_STATUS, None, None, True
+    if blocked:
+        return int(blocked.rsplit("_", 1)[-1]), None, None, True
+
+    if not robots_allowed(url, DOD_USER_AGENT, timeout=timeout, session=session):
+        prior = cache.get(url, {})
+        cache[url] = {**prior, "blocked": ROBOTS_STATUS,
+                      "blocked_since": prior.get("blocked_since", date.today().isoformat())}
+        return ROBOTS_STATUS, None, None, False
 
     status, final_url, error = check_url(url, session, timeout)
 
@@ -107,7 +122,8 @@ def check_url_cached(url, session, timeout, cache, use_cache=True):
                       "blocked_since": prior.get("blocked_since", date.today().isoformat())}
     elif not error and url in cache:
         # A real, non-blocked answer — clear a stale blocked flag (the
-        # site un-blocked itself, or our UA/IP situation changed).
+        # site un-blocked itself, our UA/IP situation changed, or its
+        # robots.txt no longer disallows us).
         cache[url] = {k: v for k, v in cache[url].items()
                       if k not in ("blocked", "blocked_since")}
         if not cache[url]:
@@ -138,6 +154,7 @@ def main():
     skipped_blocked = 0
     dead = []
     blocked = []
+    robots_blocked = []
     redirected = []
     errored = []
     seen_urls = {}  # url -> result, so a citation reused across orgs is only fetched once
@@ -176,6 +193,19 @@ def main():
                 print(f"  ERROR    {title}  [{event_date}]  {event_title}")
                 print(f"           {url}")
                 print(f"           {error}")
+            elif status == ROBOTS_STATUS:
+                # The site's own robots.txt disallows us — we didn't even
+                # try HEAD/GET. Not a dead or broken citation, just one we
+                # deliberately didn't check; see docs/bot.md.
+                robots_blocked.append((title, event_date, event_title, url))
+                label = "STILL ROBOTS-BLOCKED" if skipped else "ROBOTS.TXT DISALLOWED"
+                print(f"  {label}  {title}  [{event_date}]  {event_title}")
+                if skipped:
+                    since = cache.get(url, {}).get("blocked_since", "?")
+                    print(f"           {url}  (confirmed disallowed since {since} — skipped, "
+                          f"no request made; pass --no-cache to recheck)")
+                else:
+                    print(f"           {url}  (robots.txt disallows DOD-Bot — not requested)")
             elif status in (403, 429):
                 # Near-certainly bot/scraper blocking (Cloudflare etc.), not a
                 # dead resource — several sites in this landscape are known to
@@ -209,10 +239,14 @@ def main():
           + (f" ({skipped_blocked} answered from cache, already confirmed BLOCKED — "
              f"pass --no-cache to recheck)" if skipped_blocked else ""))
     print(f"Dead: {len(dead)}  Blocked (403/429, likely not actually dead): {len(blocked)}  "
+          f"Robots-disallowed (not requested): {len(robots_blocked)}  "
           f"Redirected: {len(redirected)}  Errored: {len(errored)}")
 
     if args.report:
-        def _rows(items, extra_key):
+        def _rows(items, extra_key=None):
+            if extra_key is None:
+                return [{"org": t, "date": d, "event": et, "url": u}
+                        for (t, d, et, u) in items]
             return [
                 {"org": t, "date": d, "event": et, "url": u, extra_key: x}
                 for (t, d, et, u, x) in items
@@ -221,9 +255,11 @@ def main():
             json.dump({
                 "generated": date.today().isoformat(),
                 "counts": {"checked": checked, "dead": len(dead), "blocked": len(blocked),
+                           "robots_blocked": len(robots_blocked),
                            "redirected": len(redirected), "errored": len(errored)},
                 "dead": _rows(dead, "status"),
                 "blocked": _rows(blocked, "status"),
+                "robots_blocked": _rows(robots_blocked),
                 "redirected": _rows(redirected, "final_url"),
                 "errored": _rows(errored, "error"),
             }, f, indent=2)
@@ -237,6 +273,10 @@ def main():
     if blocked:
         print("\nAll remaining issues are BLOCKED (403/429) — spot-check a few manually "
               "in a real browser before assuming anything is actually broken.")
+    if robots_blocked:
+        print(f"\n{len(robots_blocked)} URL(s) weren't requested at all because the site's "
+              "own robots.txt disallows DOD-Bot — this is us honoring their opt-out, not "
+              "a citation problem.")
     print("No confirmed-dead event citation URLs.")
     sys.exit(0)
 

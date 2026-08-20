@@ -15,7 +15,7 @@ Internal project covering the technical infrastructure that keeps the [Democracy
 - **Activity tracking** — automated scripts probe org websites for RSS feeds, sitemaps, and structured news content to keep "last active" dates current
 - **Data quality** — URL reachability checks, Wikipedia link verification, frontmatter consistency
 - **Data exports** — CSV, JSON, GeoJSON, and KML snapshots generated at build time from org frontmatter
-- **Bot infrastructure** — unified crawler identity, partial robots.txt compliance (not yet universal — see the [bot page](../bot.md) for exactly which scripts honor it), public [bot page](../bot.md)
+- **Bot infrastructure** — unified crawler identity, robots.txt compliance via a shared `util/robots_check.py` implementation (see the [bot page](../bot.md) for the one deliberate exception), public [bot page](../bot.md)
 
 ## Tooling
 

@@ -86,7 +86,9 @@ import time
 from datetime import datetime
 from html import unescape
 from urllib.parse import urljoin, urlparse, unquote
-from urllib.robotparser import RobotFileParser
+
+sys.path.insert(0, os.path.dirname(__file__))
+from robots_check import robots_allowed as _robots_allowed  # noqa: E402
 
 try:
     import frontmatter
@@ -356,16 +358,7 @@ def page_tier(url):
 
 
 def robots_allowed(url, timeout=5, session=None):
-    parsed = urlparse(url)
-    robots_url = f"{parsed.scheme}://{parsed.netloc}/robots.txt"
-    rp = RobotFileParser()
-    rp.set_url(robots_url)
-    try:
-        resp = session.get(robots_url, timeout=timeout)
-        rp.parse(resp.text.splitlines())
-    except Exception:
-        return True  # unreachable robots.txt → assume allowed
-    return rp.can_fetch(DOD_USER_AGENT, url)
+    return _robots_allowed(url, DOD_USER_AGENT, timeout=timeout, session=session)
 
 
 def crawl_urls(website):

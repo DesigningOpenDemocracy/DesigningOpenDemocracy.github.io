@@ -105,12 +105,13 @@ No dependencies beyond stdlib.
 
 ### `check_rss.py` — Probe for RSS/Atom feeds and sitemap activity
 
-Probes ~23 common feed URL paths per org site. Writes `activity.rss` (latest
-post date/title) when a real feed is found, or `activity.sitemap`
-(`<lastmod>`) as a fallback. With `ics_feed:` set, also fetches the iCal
-calendar and writes `activity.ical`. Stamps `checked:` on every probe
-regardless of outcome, so re-runs skip orgs probed within 7 days unless
-`--force`.
+Probes ~23 common feed URL paths per org site, skipping any path robots.txt
+disallows (checked once per site via `robots_check.load_robots()`, not
+once per candidate path). Writes `activity.rss` (latest post date/title)
+when a real feed is found, or `activity.sitemap` (`<lastmod>`) as a
+fallback. With `ics_feed:` set, also fetches the iCal calendar and writes
+`activity.ical`. Stamps `checked:` on every probe regardless of outcome, so
+re-runs skip orgs probed within 7 days unless `--force`.
 
 ```bash
 python util/check_rss.py                    # probe all active orgs
@@ -161,9 +162,10 @@ Requires `pyyaml` in addition to `python-frontmatter`.
 ### `check_urls.py` — External URL reachability
 
 HTTP-checks the `website:` field on org pages. Active orgs with Wayback URLs
-(known exceptions) are skipped. Inactive orgs skipped by default. Reports
-OK, REDIRECT (with final URL), CLIENT_ERROR, SERVER_ERROR, TIMEOUT,
-SSL_ERROR, CONNECTION_ERROR.
+(known exceptions) are skipped. Inactive orgs skipped by default. A site
+whose robots.txt disallows DOD-Bot is also skipped — reported separately
+in the summary, not counted as an error. Reports OK, REDIRECT (with final
+URL), CLIENT_ERROR, SERVER_ERROR, TIMEOUT, SSL_ERROR, CONNECTION_ERROR.
 
 ```bash
 python util/check_urls.py              # active orgs not checked in 365 days
@@ -432,12 +434,20 @@ python util/check_links.py --all       # all links
 pip install -r util/requirements.txt
 ```
 
-Most scripts are standalone. `frontmatter_io.py` is the one shared library
-module in this directory — `check_rss.py`, `scrape_news.py`, `record_dod.py`,
-and `review_orgs.py` all import its `split_frontmatter()` helper rather than
-reimplementing the same frontmatter-delimiter-finding logic (see its own
-docstring for the bug it exists to avoid). It has no CLI of its own and
-isn't meant to be run directly.
+Most scripts are standalone. Two shared library modules live in this
+directory, neither with a CLI of its own:
+
+- `frontmatter_io.py` — `check_rss.py`, `scrape_news.py`, `record_dod.py`,
+  and `review_orgs.py` all import its `split_frontmatter()` helper rather
+  than reimplementing the same frontmatter-delimiter-finding logic (see
+  its own docstring for the bug it exists to avoid).
+- `robots_check.py` — every script that fetches a third-party site
+  (`check_rss.py`, `check_urls.py`, `scrape_news.py`, `check_contact.py`/
+  `check_contact_deep.py`, `check_logo.py`, and `check_fragments.py`/
+  `check_event_urls.py` over in the citation-tooling generation below)
+  imports its `robots_allowed()`/`load_robots()` to honor the site's
+  robots.txt before fetching — see `docs/bot.md`, DOD's public opt-out
+  page, which this module is what makes actually true.
 
 This file covers the core org-maintenance workflow scripts. The newer
 citation/event-sourcing verification tooling (`check_fragments.py`,

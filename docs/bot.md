@@ -36,13 +36,16 @@ None of this is a high-frequency or continuous crawl.
 
 ## robots.txt
 
-`scrape_news.py`, `check_contact.py`/`check_contact_deep.py`, and `check_logo.py`
-check `robots.txt` before fetching a page and skip it if disallowed. The
-others currently do not consult `robots.txt` at all before fetching (`check_rss.py`
-reads it only to look up a `Sitemap:` declaration, not as an allow/disallow
-gate) — so a `Disallow` entry for `DOD-Bot` does not yet stop every script
-listed here. If you'd rather not be probed at all, the reliable way to opt
-out today is the contact-us route below, not `robots.txt` alone.
+Every script listed above checks `robots.txt` before fetching a page and
+skips it if disallowed — `util/robots_check.py` is the single shared
+implementation all of them use, so this can't quietly drift out of sync
+script by script. The one exception is `check_wikipedia.py`, which only
+ever queries Wikipedia's own REST API rather than a third-party site, and
+Wikipedia's API is designed for exactly this kind of programmatic access
+(same reasoning as `check_fragments.py` not gating its own Wikipedia
+lookups). An unreachable robots.txt is treated as "allow everything," not
+"block everything" — a transient failure to fetch robots.txt shouldn't
+silently stop a legitimate check.
 
 ## User-Agent string
 
@@ -86,9 +89,8 @@ User-agent: DOD-Bot
 Disallow: /
 ```
 
-`scrape_news.py`, `check_contact.py`/`check_contact_deep.py`, and `check_logo.py`
-honor this. As noted above, the rest don't check `robots.txt` yet, so this alone
-won't stop every script — the reliable way to opt out fully is to
+Every script above honors this (see robots.txt section above for the one
+exception, which never queries your site at all). Alternatively,
 [contact us](https://github.com/DesigningOpenDemocracy/DesigningOpenDemocracy.github.io/issues)
 and we will remove your organisation from automated checks.
 
