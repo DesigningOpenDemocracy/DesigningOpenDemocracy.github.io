@@ -183,6 +183,37 @@ class CheckEvidenceBlockedCacheTests(unittest.TestCase):
         self.assertNotIn("blocked", cache["https://example.org/paper"])
         self.assertNotIn("blocked_since", cache["https://example.org/paper"])
 
+    def test_no_cache_failed_recheck_does_not_destroy_prior_good_verification(self):
+        # Regression test: a --no-cache run from a network-disadvantaged
+        # environment (a different IP a site's bot-protection blocks, one
+        # that a prior run's environment could reach fine) must not let its
+        # own failed fetch wipe out a previously-successful verification's
+        # "verified"/"contexts" evidence. Confirmed happening in practice —
+        # a --no-cache run overwrote real prefix/suffix/text context data
+        # with a bare {"blocked": ...} stub. --no-cache means "don't use the
+        # cache to SKIP the check," not "discard prior good evidence if this
+        # run's fetch fails."
+        cache = {
+            "https://example.org/paper": {
+                "etag": "abc123",
+                "content_hash": "deadbeef",
+                "verified": {"somehash": True},
+                "contexts": {"somehash": {"prefix": "before ", "text": "some evidence", "suffix": " after"}},
+                "checked": "2026-01-01",
+            }
+        }
+        with mock.patch.object(cf, "_fetch_page_text", return_value=(None, None, "HTTP_403")):
+            result, unchanged, error, ambiguous, hint, text = cf.check_evidence(
+                "https://example.org/paper", "some evidence", cache, use_cache=False)
+        self.assertIsNone(result)
+        self.assertEqual(error, "HTTP_403")
+        entry = cache["https://example.org/paper"]
+        self.assertEqual(entry["blocked"], "HTTP_403")
+        # The prior good evidence must survive the failed recheck.
+        self.assertEqual(entry["verified"], {"somehash": True})
+        self.assertEqual(entry["contexts"], {"somehash": {"prefix": "before ", "text": "some evidence", "suffix": " after"}})
+        self.assertEqual(entry["content_hash"], "deadbeef")
+
 
 class FetchPageTextRobotsTests(unittest.TestCase):
     """_fetch_page_text() must honor a site's robots.txt for ordinary

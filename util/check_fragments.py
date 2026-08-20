@@ -387,8 +387,19 @@ def check_evidence(url, evidence, cache, use_cache=True):
     text, resp, error = _fetch_page_text(url, headers)
     if error:
         if error in BLOCKED_ERRORS:
-            cache[url] = {**entry, "blocked": error,
-                          "blocked_since": entry.get("blocked_since", date.today().isoformat())}
+            # Merge into whatever is already on disk for this URL (not the
+            # possibly-emptied `entry` above) — a failed re-check must never
+            # destroy a previously-successful verification's "verified"/
+            # "contexts" data just because *this* run's environment (a
+            # different IP, a stricter bot filter) couldn't reach the page.
+            # Confirmed happening in practice: a --no-cache run from a
+            # network-disadvantaged sandbox overwrote real prefix/suffix/text
+            # evidence a prior run had captured from an unblocked network,
+            # with a bare {"blocked": ...} stub — see git history around
+            # 2026-08-20 for the incident this guards against.
+            prior = cache.get(url, {})
+            cache[url] = {**prior, "blocked": error,
+                          "blocked_since": prior.get("blocked_since", date.today().isoformat())}
         return None, False, error, False, None, None
 
     if text is None:
@@ -406,8 +417,11 @@ def check_evidence(url, evidence, cache, use_cache=True):
         text, resp, error = _fetch_page_text(url, {"User-Agent": USER_AGENT})
         if error:
             if error in BLOCKED_ERRORS:
-                cache[url] = {**entry, "blocked": error,
-                              "blocked_since": entry.get("blocked_since", date.today().isoformat())}
+                # Same non-regression guard as above — merge into the entry
+                # already on disk, not the possibly-emptied local `entry`.
+                prior = cache.get(url, {})
+                cache[url] = {**prior, "blocked": error,
+                              "blocked_since": prior.get("blocked_since", date.today().isoformat())}
             return None, False, error, False, None, None
 
     new_hash = paragraph_hash(text, evidence) or sha256(text)
