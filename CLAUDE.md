@@ -748,9 +748,19 @@ These are linked from the bottom of the org index table for researcher download.
   ```
 
 - `util/manual_dump.py` / `util/import_manual_dump.py` — an escape hatch for citation URLs that stay unreachable to every automated path (bot protection, rate limits — both the origin site's own and Wayback Machine's Save Page Now — or robots.txt) but a human's own browser can still load fine. `manual-dump/` lives at the repo root, entirely gitignored — local working state, not archival; the durable, shareable copy of a citation is still Wayback Machine (`check_fragments.py --save-to-wayback`), not this.
+
+  **Maintainer runbook — steps to actually do this:**
+  1. Run `cat manual-dump/requests.txt` (or just check whether the file exists — `check_fragments.py`/`git status` won't remind you, since the directory is gitignored). Each line is a URL waiting on a human.
+  2. Open each URL in a real browser and let it fully load (wait out any JS-rendered content).
+  3. **Firefox: File → Save Page As → "Web Page, HTML only"** (not "Web Page, complete" — that also writes a folder of asset files nothing here needs). Save into `manual-dump/snapshots/`; the filename doesn't matter.
+  4. Run `python util/import_manual_dump.py --dry-run` first to preview what will be matched/imported, then `python util/import_manual_dump.py` for real.
+  5. `git diff docs/data/event-evidence-cache.json` and skim the new `manual_verified` entries before committing — same spot-check judgment as reviewing any other automated write to this file.
+  6. Re-run `check_fragments.py` (or just check its next report) to confirm the citation no longer shows as STILL BLOCKED.
+
+  Mechanism, for reference:
   - Whenever `check_fragments.py` hits a BLOCKED citation with no manual coverage for that exact evidence yet, it appends the URL to `manual-dump/requests.txt` (deduplicated).
-  - A human opens each URL in a real browser, lets it fully load, and saves it via **Firefox's "Save Page As → Web Page, HTML only"** (not "Web Page, complete" — that also writes a folder of asset files nothing here needs) into `manual-dump/snapshots/`. The filename doesn't matter: Firefox (like Chrome and IE/Edge) stamps a `<!-- saved from url=(NNNN)https://... -->` comment as the file's first line, which is how the source URL is recovered — no need to separately record it.
-  - `python util/import_manual_dump.py` (add `--dry-run` to preview) picks up every file in `snapshots/`, extracts its text with the same `text_fragment.html_to_text()` a live fetch uses (so a quote verifies identically against either path), checks it against every citation currently pointing at that URL, records each result in the shared evidence cache as `manual_verified: {hash: bool}` / `manual_checked: <date>`, removes the URL from `requests.txt`, and moves the file into `snapshots/imported/` so a re-run doesn't reprocess it.
+  - Firefox (like Chrome and IE/Edge) stamps a `<!-- saved from url=(NNNN)https://... -->` comment as the saved file's first line, which is how `import_manual_dump.py` recovers the source URL — no need to separately record it.
+  - `import_manual_dump.py` extracts text with the same `text_fragment.html_to_text()` a live fetch uses (so a quote verifies identically against either path), checks it against every citation currently pointing at that URL, records each result in the shared evidence cache as `manual_verified: {hash: bool}` / `manual_checked: <date>`, removes the URL from `requests.txt`, and moves the file into `snapshots/imported/` so a re-run doesn't reprocess it.
   - `manual_verified` is a separate field from the automated `verified` map, never merged into it — stale automated data captured before a site started blocking scripts must never be silently presented as reconfirmed just because an unrelated snapshot was imported later. `check_evidence()` consults `manual_verified` for the specific evidence hash being checked *before* falling back to reporting STILL BLOCKED, so a manually-resolved citation stops being reported as blocked without the origin site ever needing to cooperate again.
   - A snapshot whose recovered URL doesn't match any current citation is left in place (not moved) and reported — more likely a mistake (wrong page saved, or the citation was since removed) than something to silently discard.
 
