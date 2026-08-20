@@ -106,7 +106,7 @@ The Sortition Foundation is the UK's leading organisation specifically dedicated
 
 [^poll-lords]: "43% of British adults, including 46% of adults living in the North, say that replacing the House of Lords with a citizens' assembly would increase their trust in politics" [New poll finds widespread support for replacing the House of Lords](https://www.sortitionfoundation.org/uk_poll_may_2025), Sortition Foundation, 8 May 2025.
 
-[^gm-poll]: "59% of Mancunians support the proposal for a Greater Manchester citizens' assembly" [Nearly 60% of Mancunians want a citizens' assembly](https://www.sortitionfoundation.org/gm_polling_may_2026), Sortition Foundation, 6 May 2026.
+[^gm-poll]: "59% of Mancunians support the proposal for a Greater Manchester citizens’ assembly" [Nearly 60% of Mancunians want a citizens' assembly](https://www.sortitionfoundation.org/gm_polling_may_2026), Sortition Foundation, 6 May 2026.
 
 [^odlp]: "Last year we secured funding to build OpenDLP, a brand new open-source digital platform that will make democratic lotteries more inclusive by automating the process for selecting participants for citizens' assemblies." [Introducing the Open Democratic Lottery Platform](https://www.sortitionfoundation.org/introducing_the_open_democratic_lottery_platform), Sortition Foundation, 8 July 2025.
 

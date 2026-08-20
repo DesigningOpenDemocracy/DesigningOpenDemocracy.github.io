@@ -116,7 +116,7 @@ That is, in some ways, what DOD's landscape is about: the ongoing argument, acro
 
 [^three-fifths]: "Free states wanted to exclude the counting of slave populations in slave states, since those slaves had no voting rights. A compromise was struck to resolve this impasse. The compromise counted three-fifths of each state's slave population toward that state's total population for the purpose of apportioning the House of Representatives, effectively giving the Southern United States more power in the House relative to the Northern United States." [Three-fifths Compromise](https://en.wikipedia.org/wiki/Three-fifths_Compromise), Wikipedia.
 
-[^rights-of-man]: "Men are born and remain free and equal in rights. Social distinctions may be founded only upon the general good." [Declaration of the Rights of Man and of the Citizen](https://en.wikipedia.org/wiki/Declaration_of_the_Rights_of_Man_and_of_the_Citizen), Wikipedia, adopted 26 August 1789.
+[^rights-of-man]: "Article I – Men are born and remain free and equal in rights. Social distinctions may be founded only upon the general good." [Declaration of the Rights of Man and of the Citizen](https://en.wikipedia.org/wiki/Declaration_of_the_Rights_of_Man_and_of_the_Citizen), Wikipedia, adopted 26 August 1789.
 
 [^haitian-revolution]: "Raynal's admonition was written thirteen years before the Declaration of the Rights of Man and of the Citizen, which highlighted freedom and liberty but did not abolish slavery." [Haitian Revolution](https://en.wikipedia.org/wiki/Haitian_Revolution), Wikipedia.
 

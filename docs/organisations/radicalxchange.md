@@ -52,7 +52,7 @@ events:
 - date: '2026-08-27'
   title: Melbourne chapter launch event — first Australian RadicalxChange chapter
   url: https://events.humanitix.com/radicalxchange-foundation-in-melbourne
-  quote: we are also excited to introduce you to the founding members of the new RadicalxChange
+  quote: We are also excited to introduce you to the founding members of the new RadicalxChange
     Melbourne chapter
   proof_level: high
   url_checked: '2026-08-12'

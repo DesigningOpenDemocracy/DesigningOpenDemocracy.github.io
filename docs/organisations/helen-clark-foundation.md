@@ -25,10 +25,13 @@ location:
 events:
 - date: '2019-01-01'
   title: Foundation established as an independent public policy think tank hosted
+    by AUT, named after former PM Helen Clark
   url: https://en.wikipedia.org/wiki/The_Helen_Clark_Foundation
-  quote: The Helen Clark Foundation is a New Zealand-based independent, non-partisan
-    public policy think tank hosted by Auckland University of Technology. by AUT,
-    named after former PM Helen Clark
+  quote: 'The Helen Clark Foundation (Māori: Mahi a Rongo) is a New Zealand-based
+    independent, non-partisan public policy think tank hosted by Auckland University
+    of Technology. The foundation was formed in 2019 and is named after Helen Clark,
+    the 37th prime minister of New Zealand and former administrator of the United
+    Nations Development Programme who serves as patron.'
   proof_level: high
   url_checked: '2026-08-12'
   notable: true
