@@ -29,11 +29,11 @@ events:
 - date: '2026-08-17'
   title: Dr Hugh Saddler Memorial Lecture 2026 — Shane Rattenbury on how the ACT turned
     climate ambition into action, National Film and Sound Archive ACT
-  url: https://australiainstitute.org.au/events/dr-hugh-saddler-memorial-lecture/
+  url: https://australiainstitute.org.au/event/dr-hugh-saddler-memorial-lecture-2026-shane-rattenbury/
   quote: Join us at the 2026 Dr Hugh Saddler Memorial Lecture, featuring former ACT
     Minister, Greens Leader, and long‑serving parliamentarian Shane Rattenbury.
   proof_level: high
-  url_checked: '2026-08-10'
+  url_checked: '2026-08-20'
   notable: false
   type: lecture
   location: National Film and Sound Archive, Canberra ACT
@@ -45,7 +45,7 @@ events:
     policy and governance to discuss a credible and achievable climate policy that
     serves the Australian people and the broader global community.
   proof_level: high
-  url_checked: '2026-08-12'
+  url_checked: '2026-08-20'
   notable: true
   type: conference
   location: Parliament of NSW, Sydney
