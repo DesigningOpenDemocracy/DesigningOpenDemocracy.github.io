@@ -104,4 +104,4 @@ newDemocracy's core argument is that the adversarial, partisan nature of represe
 - [DemocracyNext](democracy-next.md)
 
 [^newdem]: "The newDemocracy Foundation was launched in 2007, with Luca Belgiorno-Nettis... as the inaugural directors." and "Luca had a 30-year career in Transfield, a large infrastructure and engineering company founded by his father," newDemocracy Foundation, [History](https://www.newdemocracy.com.au/history/).
-[^ndf-exec]: "Iain Walker is Executive Director of the newDemocracy Foundation (nDF) in Australia, a role he has held since 2011," newDemocracy Foundation, [Board and Executive](https://www.newdemocracy.com.au/board-and-executive/).
+[^ndf-exec]: "Iain Walker is Executive Director of the newDemocracy Foundation (nDF) in Australia, a role he has held since 2011." newDemocracy Foundation, [Board and Executive](https://www.newdemocracy.com.au/board-and-executive/).
