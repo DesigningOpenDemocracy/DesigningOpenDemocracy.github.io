@@ -739,6 +739,14 @@ These are linked from the bottom of the org index table for researcher download.
   python util/check_footnote_quotes.py --path docs/organisations/g0v.md  # single file
   ```
 
+- `util/manual_check_worklist.py` — generates a plain checklist for a human to verify citations `check_fragments.py` can't resolve by itself. Two modes: the default (offline, no network) reads `event-evidence-cache.json`'s `blocked` entries — URLs that have returned 403/429 to a script and are deliberately never auto-retried (see `check_fragments.py`'s docstring on why that's sticky) — and lists them with the exact quote to Ctrl+F for. `--live` instead fetches every not-yet-blocked citation fresh and additionally surfaces current AMBIGUOUS (quote occurs more than once on the page) and MISMATCH findings, which aren't persisted to the cache the way BLOCKED is — the only way to get a current list of those without re-running `check_fragments.py` and reading its console output. Never edits a source file; the fix (or the decision that no fix is needed) still happens by hand after checking the page in a real browser, where the network path and browser fingerprint look nothing like a script's — confirmed useful in practice on `radicalxchange.md`'s `glenweyl.com` citation, which resets the connection for both plain HTTP and headless-Chromium requests alike.
+  ```
+  python util/manual_check_worklist.py                # offline: list BLOCKED citations
+  python util/manual_check_worklist.py --live          # also fetch fresh, flag AMBIGUOUS/MISMATCH too
+  python util/manual_check_worklist.py --slug radicalxchange --events-only
+  python util/manual_check_worklist.py --out /tmp/worklist.md
+  ```
+
 - `util/sync_events.py` — fetches every org's `ics_feed:` and caches *upcoming* events (not just the latest, unlike `check_rss.py`'s activity check above) to `docs/data/events/<slug>.json`, which is committed to the repo and consumed by `hooks/calendar_export.py` at build time. This is the only place the calendar's iCal data touches the network — the build itself never fetches anything, matching the rest of this repo's fetch-then-cache convention.
   ```
   python util/sync_events.py                    # sync all active orgs with ics_feed:
