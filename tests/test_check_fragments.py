@@ -214,6 +214,22 @@ class CheckEvidenceBlockedCacheTests(unittest.TestCase):
         self.assertEqual(entry["contexts"], {"somehash": {"prefix": "before ", "text": "some evidence", "suffix": " after"}})
         self.assertEqual(entry["content_hash"], "deadbeef")
 
+    def test_empty_body_is_reported_as_fetch_error_not_mismatch(self):
+        # Regression: glenweyl.com returns HTTP 202 with a completely empty
+        # body to DOD-Bot's plain requests.get() (almost certainly a
+        # bot-challenge holding page, not real content — a browser gets the
+        # actual page). _fetch_page_text() sees no HTTP error, so `error` is
+        # None and `text` is "" — comparing any quote against zero
+        # characters always "fails," which used to report a guaranteed,
+        # uninformative MISMATCH instead of the fetch problem it actually is.
+        cache = {}
+        with mock.patch.object(cf, "_fetch_page_text", return_value=("", mock.Mock(headers={}), None)):
+            result, unchanged, error, ambiguous, hint, text = cf.check_evidence(
+                "https://example.org/paper", "some evidence", cache, use_cache=True)
+        self.assertIsNone(result)
+        self.assertEqual(error, "EMPTY_RESPONSE")
+        self.assertNotIn("https://example.org/paper", cache)
+
 
 class FetchPageTextRobotsTests(unittest.TestCase):
     """_fetch_page_text() must honor a site's robots.txt for ordinary

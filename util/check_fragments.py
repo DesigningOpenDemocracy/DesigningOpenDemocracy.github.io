@@ -424,6 +424,17 @@ def check_evidence(url, evidence, cache, use_cache=True):
                               "blocked_since": prior.get("blocked_since", date.today().isoformat())}
             return None, False, error, False, None, None
 
+    if not text:
+        # A 200/202-range response with a completely empty body — confirmed
+        # on glenweyl.com, which serves HTTP 202 with a blank page to
+        # DOD-Bot's plain requests.get() (almost certainly a bot-challenge
+        # holding page rather than real content; a browser or a headless
+        # fetch gets the actual page). Comparing a quote against zero
+        # characters of text always "fails," which would report a
+        # guaranteed, uninformative MISMATCH rather than the fetch problem
+        # it actually is — surface it as an error instead.
+        return None, False, "EMPTY_RESPONSE", False, None, None
+
     new_hash = paragraph_hash(text, evidence) or sha256(text)
     verified = dict(entry.get("verified", {}))
     result = quote_matches(text, evidence)
