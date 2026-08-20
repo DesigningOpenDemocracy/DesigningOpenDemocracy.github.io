@@ -67,7 +67,8 @@ chmod +x .git/hooks/pre-commit
 ```
 
 Hard failures: broken internal links, invalid concept slugs.
-Informational only: `lint_orgs` (4 known Wayback exceptions always appear).
+Informational only: `lint_orgs` (a small number of deliberate Wayback
+exceptions — see below — always appear).
 
 ---
 
@@ -352,7 +353,7 @@ website: https://web.archive.org/web/*/https://originalurl.com/
 
 The `*` gives a calendar of all captures rather than a single snapshot. `lint_orgs.py` enforces this.
 
-**Known exceptions**: a small number of `active` orgs intentionally use Wayback URLs because their live site is in a restricted or unreliable jurisdiction (e.g. FLACSO-Cuba, Kongra Star in AANES/Syria). `lint_orgs.py` will flag these — they are false positives. Do not "fix" them to a live URL unless you can verify the live site is reliably accessible to international readers.
+**Known exceptions**: a small number of `active` orgs intentionally use Wayback URLs — either because the live site is in a restricted or unreliable jurisdiction, or because the origin server is currently down but the org itself is still believed active (e.g. NAMFREL, whose `.com.ph`/`.org.ph` domains both 522 through Cloudflare as of this writing — see `docs/organisations/namfrel.md`). `lint_orgs.py` will flag these — they are false positives. Do not "fix" them to a live URL unless you can verify the live site is reliably accessible to international readers. This list changes over time (a site can come back, or a previously-live one can go down) — check `python util/lint_orgs.py` for the current set rather than trusting a name list in prose, including this one.
 
 ---
 
@@ -431,4 +432,16 @@ python util/check_links.py --all       # all links
 pip install -r util/requirements.txt
 ```
 
-Scripts are standalone; no shared library needed.
+Most scripts are standalone. `frontmatter_io.py` is the one shared library
+module in this directory — `check_rss.py`, `scrape_news.py`, `record_dod.py`,
+and `review_orgs.py` all import its `split_frontmatter()` helper rather than
+reimplementing the same frontmatter-delimiter-finding logic (see its own
+docstring for the bug it exists to avoid). It has no CLI of its own and
+isn't meant to be run directly.
+
+This file covers the core org-maintenance workflow scripts. The newer
+citation/event-sourcing verification tooling (`check_fragments.py`,
+`check_event_sourcing.py`, `check_event_urls.py`, `check_contact.py`,
+`manual_check_worklist.py`, and related scripts) is documented instead in
+CLAUDE.md's "Utility scripts" section — check there too if you don't find
+what you're looking for here.
