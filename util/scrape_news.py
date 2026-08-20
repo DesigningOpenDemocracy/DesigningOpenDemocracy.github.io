@@ -48,10 +48,10 @@ from datetime import date, datetime
 from email.utils import parsedate_to_datetime
 from html.parser import HTMLParser
 from urllib.parse import urlparse, urljoin
-from urllib.robotparser import RobotFileParser
 
 sys.path.insert(0, os.path.dirname(__file__))
 from frontmatter_io import split_frontmatter  # noqa: E402
+from robots_check import robots_allowed as _robots_allowed  # noqa: E402
 
 # Matches /YYYY/MM/DD/ path segments — used as a low-priority date fallback
 _URL_DATE_YMD = re.compile(r'/(\d{4})/(\d{1,2})/(\d{1,2})(?:[/?#]|$)')
@@ -411,20 +411,11 @@ def parse_date(s):
 
 
 # ---------------------------------------------------------------------------
-# Robots.txt check
+# Robots.txt check — shared implementation in robots_check.py
 # ---------------------------------------------------------------------------
 
 def robots_allowed(url, timeout=5, session=None):
-    parsed = urlparse(url)
-    robots_url = f"{parsed.scheme}://{parsed.netloc}/robots.txt"
-    rp = RobotFileParser()
-    rp.set_url(robots_url)
-    try:
-        resp = session.get(robots_url, timeout=timeout)
-        rp.parse(resp.text.splitlines())
-    except Exception:
-        return True  # unreachable robots.txt → assume allowed
-    return rp.can_fetch(USER_AGENT, url)
+    return _robots_allowed(url, USER_AGENT, timeout=timeout, session=session)
 
 
 # ---------------------------------------------------------------------------

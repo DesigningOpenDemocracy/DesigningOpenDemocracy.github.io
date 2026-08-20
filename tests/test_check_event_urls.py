@@ -20,22 +20,29 @@ import check_event_urls as ceu  # noqa: E402
 
 
 class _FakeResponse:
-    def __init__(self, status_code, url="https://example.org/page"):
+    def __init__(self, status_code, url="https://example.org/page", text=""):
         self.status_code = status_code
         self.url = url
+        self.text = text
 
     def close(self):
         pass
 
 
 class _FakeSession:
-    """Records every head()/get() call and returns canned responses in
-    order, so a test can assert exactly which HTTP methods actually fired
-    (the whole point of the GET-fallback-narrowing fix)."""
+    """Records every head()/get() call to the page under test and returns
+    canned responses in order, so a test can assert exactly which HTTP
+    methods actually fired (the whole point of the GET-fallback-narrowing
+    fix). check_url_cached() also fetches robots.txt before touching the
+    page itself — that preflight is answered here with an empty ("allow
+    everything") robots.txt and deliberately left out of self.calls, since
+    these tests are about the page-fetch method/ordering, not the
+    robots.txt implementation detail."""
 
-    def __init__(self, head_response, get_response=None):
+    def __init__(self, head_response, get_response=None, robots_disallow=False):
         self.head_response = head_response
         self.get_response = get_response
+        self.robots_disallow = robots_disallow
         self.calls = []
 
     def head(self, url, timeout=None, allow_redirects=None):
@@ -43,6 +50,9 @@ class _FakeSession:
         return self.head_response
 
     def get(self, url, timeout=None, allow_redirects=None, stream=None):
+        if url.endswith("/robots.txt"):
+            text = "User-agent: *\nDisallow: /" if self.robots_disallow else ""
+            return _FakeResponse(200, url=url, text=text)
         self.calls.append("GET")
         return self.get_response
 
@@ -122,6 +132,30 @@ class CheckUrlCachedTests(unittest.TestCase):
         session = _FakeSession(_FakeResponse(200))
         ceu.check_url_cached("https://example.org/page", session, timeout=5, cache=cache, use_cache=False)
         self.assertNotIn("https://example.org/page", cache)  # nothing left worth keeping
+
+    def test_robots_disallowed_url_is_not_requested(self):
+        # session.head_response would prove a request happened if HEAD/GET
+        # were actually called — the point is that they aren't.
+        cache = {}
+        session = _FakeSession(_FakeResponse(200), robots_disallow=True)
+        status, final_url, error, skipped = ceu.check_url_cached(
+            "https://example.org/page", session, timeout=5, cache=cache, use_cache=True)
+        self.assertEqual(session.calls, [])  # no HEAD/GET to the page itself
+        self.assertFalse(skipped)  # first time seeing this — not a cache hit
+        self.assertEqual(status, ceu.ROBOTS_STATUS)
+        self.assertEqual(cache["https://example.org/page"]["blocked"], ceu.ROBOTS_STATUS)
+
+    def test_robots_disallowed_is_sticky_like_403(self):
+        # Regression: check_url_cached()'s cached-blocked branch used to do
+        # int(blocked.rsplit("_", 1)[-1]) unconditionally, which raises on
+        # "ROBOTS_DISALLOWED" (no trailing number) instead of "HTTP_403".
+        cache = {"https://example.org/page": {"blocked": ceu.ROBOTS_STATUS, "blocked_since": "2026-01-01"}}
+        session = _FakeSession(_FakeResponse(200))  # would prove a request happened if called
+        status, final_url, error, skipped = ceu.check_url_cached(
+            "https://example.org/page", session, timeout=5, cache=cache, use_cache=True)
+        self.assertEqual(session.calls, [])
+        self.assertTrue(skipped)
+        self.assertEqual(status, ceu.ROBOTS_STATUS)
 
 
 if __name__ == "__main__":

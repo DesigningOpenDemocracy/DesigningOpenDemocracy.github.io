@@ -10,16 +10,42 @@ title: DOD Bot
 
 The bot performs read-only checks against publicly accessible URLs. It does not create accounts, submit forms, or interact with authenticated content.
 
+**Runs automatically, weekly** (GitHub Actions, Fridays 03:00 UTC):
+
 | Script | Purpose |
 |---|---|
 | `check_rss.py` | Probes for RSS/Atom feeds and sitemaps; records the latest post date to show activity status |
 | `scrape_news.py` | Reads news/blog index pages for orgs that lack a machine-readable feed; extracts dates from structured markup only (JSON-LD, OpenGraph, `<time>` tags) |
+| `check_fragments.py` | Re-fetches pages cited as evidence for an org's timeline events and prose citations, to confirm the quoted text is still there |
+| `check_event_urls.py` | Checks that URLs cited as event evidence are still live (not 404/redirected) |
+
+**Run manually by a human maintainer**, roughly quarterly, not on a fixed schedule:
+
+| Script | Purpose |
+|---|---|
 | `check_urls.py` | Verifies that `website:` URLs in the landscape are still reachable |
-| `check_wikipedia.py` | Checks that Wikipedia links in org pages resolve correctly |
+| `check_wikipedia.py` | Checks that Wikipedia links in org pages resolve correctly (queries Wikipedia's own REST API, not third-party sites) |
+| `check_contact.py` / `check_contact_deep.py` | Looks for publicly published contact info (email/phone/form) on an org's own site |
+| `check_logo.py` | Looks for a usable logo image on an org's own site |
 
 ## Frequency
 
-Scripts run as part of periodic maintenance passes — roughly monthly, not continuously. They are not high-frequency crawlers.
+The automated pass above runs weekly. The manually-run scripts run whenever a
+human maintainer does a maintenance pass — in practice more like quarterly.
+None of this is a high-frequency or continuous crawl.
+
+## robots.txt
+
+Every script listed above checks `robots.txt` before fetching a page and
+skips it if disallowed — `util/robots_check.py` is the single shared
+implementation all of them use, so this can't quietly drift out of sync
+script by script. The one exception is `check_wikipedia.py`, which only
+ever queries Wikipedia's own REST API rather than a third-party site, and
+Wikipedia's API is designed for exactly this kind of programmatic access
+(same reasoning as `check_fragments.py` not gating its own Wikipedia
+lookups). An unreachable robots.txt is treated as "allow everything," not
+"block everything" — a transient failure to fetch robots.txt shouldn't
+silently stop a legitimate check.
 
 ## User-Agent string
 
@@ -63,7 +89,10 @@ User-agent: DOD-Bot
 Disallow: /
 ```
 
-All scripts respect `robots.txt`. Alternatively, [contact us](https://github.com/DesigningOpenDemocracy/DesigningOpenDemocracy.github.io/issues) and we will remove your organisation from automated checks.
+Every script above honors this (see robots.txt section above for the one
+exception, which never queries your site at all). Alternatively,
+[contact us](https://github.com/DesigningOpenDemocracy/DesigningOpenDemocracy.github.io/issues)
+and we will remove your organisation from automated checks.
 
 ## Source code
 

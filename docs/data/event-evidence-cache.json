@@ -16,6 +16,23 @@
       "10d318870f8eff4cf3e3659d7e17c43c87cb4eb19785e9453d6ab10ac5b05ceb": true
     }
   },
+  "https://aec.gov.au/FADReform/factsheets/gift-caps.htm": {
+    "checked": "2026-08-20",
+    "content_hash": "616484933cd4a7e220b4022a9f9e4d338a7e28b53811ed7126a69411790c01a7",
+    "contexts": {
+      "c59503cd1783a80f470993666f3948a6663c2390e234dd89a6e82abf3a54cef8": {
+        "prefix": "caps amounts are subject to indexation. Please refer to the table below. Gift cap type Cap amount (as of 1 January 2027) Applicable to",
+        "sha256": "616484933cd4a7e220b4022a9f9e4d338a7e28b53811ed7126a69411790c01a7",
+        "suffix": "Recipients and donors By-election gift cap $50,000 indexed annually Recipients and donors Senate-only election gift cap $50,000 indexed a",
+        "text": "Annual gift cap $50,000 indexed annually Recipients and donors"
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "c59503cd1783a80f470993666f3948a6663c2390e234dd89a6e82abf3a54cef8": true
+    }
+  },
   "https://anouslademocratie.fr/2020/04/03/entretien-avec-emmanuel-martin-quelquun-disait-que-lentreprise-privee-ou-publique-ce-sont-des-univers-feodaux/": {
     "checked": "2026-08-18",
     "content_hash": "6f12b1ef2ebbf34df15ebde6ca42a7040fa71b04f6a78f9820f4db252ce9be16",
@@ -51,9 +68,7 @@
     }
   },
   "https://astanatimes.com/2026/07/kazakhstans-new-constitution-takes-effect-heres-what-changes/": {
-    "archive_checked": "2026-08-17",
-    "archive_url": "http://web.archive.org/web/20260809055903/https://astanatimes.com/2026/07/kazakhstans-new-constitution-takes-effect-heres-what-changes/",
-    "checked": "2026-08-18",
+    "checked": "2026-08-20",
     "content_hash": "11725bb1d294a28bbbd494057c00a2fecb2ccaba5a439fe4f28e7975252ac16e",
     "contexts": {
       "8133e50b2abe0f7abdeffd6ba788372c9e395116debf78a471538573ba052ebc": {
@@ -69,8 +84,42 @@
       "8133e50b2abe0f7abdeffd6ba788372c9e395116debf78a471538573ba052ebc": true
     }
   },
+  "https://au.finance.yahoo.com/news/taiwan-tried-digitize-democracy-huge-084810185.html": {
+    "checked": "2026-08-20",
+    "content_hash": "4d49dc29c1db85ef19cedfb6d201fb3be7e7858f54c5e7358f3e8619ce0b4ac0",
+    "contexts": {
+      "f9d5b04bc7b735889f2d68af1ac15d434e0d855c9e7e82d6118c2b30b04d969e": {
+        "prefix": "r and former Taiwanese legislator Jason Hsu told The Daily Beast. Since the government is not mandated to adopt recommendations coming from vTaiwan, \"",
+        "sha256": "4d49dc29c1db85ef19cedfb6d201fb3be7e7858f54c5e7358f3e8619ce0b4ac0",
+        "suffix": "\" Story continues Taiwan unwittingly tested the early limits of digital democracy's potential to create meaningful, lasting particip",
+        "text": "But in reality, the momentum of vTaiwan\u2014and of the country's digital participation revolution\u2014had fizzled out years earlier. The platform hasn't been used for any major decisions since 2018, as it was seen as difficult to use and people lost interest, vTaiwan co-creator and former Taiwanese legislator Jason Hsu told The Daily Beast. Since the government is not mandated to adopt recommendations coming from vTaiwan, \"legislators don't take it seriously.\""
+      }
+    },
+    "etag": "\"182zlv9\"",
+    "last_modified": null,
+    "verified": {
+      "f9d5b04bc7b735889f2d68af1ac15d434e0d855c9e7e82d6118c2b30b04d969e": true
+    }
+  },
+  "https://australiainstitute.org.au/event/dr-hugh-saddler-memorial-lecture-2026-shane-rattenbury/": {
+    "checked": "2026-08-20",
+    "content_hash": "4a956f585e7f76960aaf6952083c679c0db508ea6ec4021c7091120137143124",
+    "contexts": {
+      "939670c4f221cb54b3cbf3b9889c4b83a44ab4e1ddca899410f1e2a8d0b9f882": {
+        "prefix": "ane Rattenbury Mon, Aug 17, 2026 6:00 pm AEST National Film and Sound Archive",
+        "sha256": "4a956f585e7f76960aaf6952083c679c0db508ea6ec4021c7091120137143124",
+        "suffix": "This special evening will be a reflection on how the ACT turned climate ambition into action, and what its experience reveals about democracy, power,",
+        "text": "Join us at the 2026 Dr Hugh Saddler Memorial Lecture, featuring former ACT Minister, Greens Leader, and long\u2011serving parliamentarian Shane Rattenbury. This special evening will be a reflection on how the ACT turned climate ambition into action, and what its experience reveals about democracy, power, and people\u2011driven change."
+      }
+    },
+    "etag": null,
+    "last_modified": "Mon, 17 Aug 2026 20:21:24 GMT",
+    "verified": {
+      "939670c4f221cb54b3cbf3b9889c4b83a44ab4e1ddca899410f1e2a8d0b9f882": true
+    }
+  },
   "https://australiainstitute.org.au/events/climate-integrity-summit/": {
-    "checked": "2026-08-18",
+    "checked": "2026-08-20",
     "content_hash": "7bb2ea87bf61e04d53e47bdb86e26357eeb713eb57a49719bd6e599e0b968ad1",
     "contexts": {
       "7bb2ea87bf61e04d53e47bdb86e26357eeb713eb57a49719bd6e599e0b968ad1": {
@@ -81,48 +130,57 @@
       }
     },
     "etag": null,
-    "last_modified": null,
+    "last_modified": "Thu, 20 Aug 2026 04:39:24 GMT",
     "verified": {
       "7bb2ea87bf61e04d53e47bdb86e26357eeb713eb57a49719bd6e599e0b968ad1": true
     }
   },
   "https://australiainstitute.org.au/events/dr-hugh-saddler-memorial-lecture/": {
-    "checked": "2026-08-18",
+    "checked": "2026-08-20",
     "content_hash": "800043b1e5905725e503f410871b2e53f2dd21a820ecc7de59043c7f58d3fec8",
-    "contexts": {
-      "939670c4f221cb54b3cbf3b9889c4b83a44ab4e1ddca899410f1e2a8d0b9f882": {
-        "prefix": "re Dr Hugh Saddler Memorial Lecture 2026 | Shane Rattenbury Mon, Aug 17, 2026 6:00 pm AEST National Film and Sound Archive",
-        "sha256": "2a61f7e5ce24a09c44d3f1f09ecddf3f0811b6d44011d979633ad82d79e3c83a",
-        "suffix": "This special evening will be a reflection on how the ACT turned climate ambition into action, and what its experience reveals about democracy, power,",
-        "text": "Join us at the 2026 Dr Hugh Saddler Memorial Lecture, featuring former ACT Minister, Greens Leader, and long\u2011serving parliamentarian Shane Rattenbury. This special evening will be a reflection on how the ACT turned climate ambition into action, and what its experience reveals about democracy, power, and people\u2011driven change. The ACT has gone from setting bold"
-      }
-    },
+    "contexts": {},
     "etag": null,
-    "last_modified": null,
+    "last_modified": "Thu, 20 Aug 2026 04:39:23 GMT",
     "verified": {
       "939670c4f221cb54b3cbf3b9889c4b83a44ab4e1ddca899410f1e2a8d0b9f882": false
     }
   },
-  "https://bethnoveck.medium.com/was-vtaiwan-such-a-big-flop-after-all-d6b365f916dc": {
-    "archive_checked": "2026-08-17",
-    "archive_url": "http://web.archive.org/web/20250916173243/https://bethnoveck.medium.com/was-vtaiwan-such-a-big-flop-after-all-d6b365f916dc",
-    "blocked": "HTTP_403",
-    "blocked_since": "2026-08-18",
-    "checked": "2026-08-17",
-    "content_hash": "706174063403ca4c36a1552f59dbec2488d6609f4b287a74cf5b245accb6273b",
+  "https://australiainstitute.org.au/post/legislation-requiring-real-time-disclosure-of-political-donations-could-pass-this-week/": {
+    "checked": "2026-08-20",
+    "content_hash": "4a3170b944c89181a553db815f08f2970ade5a3cfbdd5bc55a42b721dee3bbc9",
     "contexts": {
-      "75217c8943bc9841a4ac2f6e228ba4ca3f2fa0fa384e69a1f1658dc026bd5ead": {
-        "prefix": "add that: \u201csince the government is not mandated to adopt recommendations coming from vTaiwan, \u2018legislators don\u2019t take it seriously.\u2019\u201d After",
-        "sha256": "706174063403ca4c36a1552f59dbec2488d6609f4b287a74cf5b245accb6273b",
-        "suffix": ", advocates for tech and democracy hailed this four-stage online and offline deliberative process as the poster child of tech-enabled public engagemen",
-        "text": "After vTaiwan enabled over two hundred thousand people to participate in crafting 26 pieces of national legislation, advocates for tech and democracy hailed this four-stage online and offline deliberative process as the poster child of tech-enabled public engagement. We celebrated vTaiwan as evidence of the powerful potential for meaningful public participation in governance."
+      "4a3170b944c89181a553db815f08f2970ade5a3cfbdd5bc55a42b721dee3bbc9": {
+        "prefix": "2025. Photograph by Mike Bowers. Share",
+        "sha256": "4a3170b944c89181a553db815f08f2970ade5a3cfbdd5bc55a42b721dee3bbc9",
+        "suffix": "Flaws in the current system mean that some donations take over 18 months to be disclosed \u2013 if they are disclosed at all. Parliament co",
+        "text": "The Australia Institute is calling for transparency and real-time disclosure of political donations ahead of the Australian Electoral Commission\u2019s annual release of political contributions data for 2023-24."
       }
     },
     "etag": null,
-    "last_modified": null,
+    "last_modified": "Mon, 03 Feb 2025 09:48:13 GMT",
     "verified": {
-      "75217c8943bc9841a4ac2f6e228ba4ca3f2fa0fa384e69a1f1658dc026bd5ead": true
+      "4a3170b944c89181a553db815f08f2970ade5a3cfbdd5bc55a42b721dee3bbc9": true
     }
+  },
+  "https://australianelectionstudy.org/wp-content/uploads/The-2025-Australian-Federal-Election-Results-from-the-Australian-Election-Study.pdf": {
+    "checked": "2026-08-20",
+    "content_hash": "ad2f60f831d824c4e04ee06309b05d00865a256e5b5ac7cbac60c1c9d09a8d28",
+    "contexts": {
+      "2b0d135d28d75eede3c82ad47035006e99aba8a6ad575ca42f0cd1df5453a6df": {
+        "prefix": "cent). On democratic reform, more Australians would prefer four-year parliamentary terms (42 percent) to three-year parliamentary terms (30 percent).",
+        "sha256": "ce10879f0f169607d7eb5a4f411406c478231d983a6cf0df4e641a2ae49c6788",
+        "suffix": "1 Executive Summary Foreign policy \u2022 Confidence in the United States to come to Australia\u2019s defence dropped from 73 percent in 2022 to 54 percent, it"
+      }
+    },
+    "etag": "\"3d12af-644720c43fa9c\"",
+    "last_modified": "Tue, 25 Nov 2025 21:34:43 GMT",
+    "verified": {
+      "2b0d135d28d75eede3c82ad47035006e99aba8a6ad575ca42f0cd1df5453a6df": true
+    }
+  },
+  "https://bethnoveck.medium.com/was-vtaiwan-such-a-big-flop-after-all-d6b365f916dc": {
+    "blocked": "HTTP_403",
+    "blocked_since": "2026-08-20"
   },
   "https://blog.democracylab.org/10-000-volunteers-and-counting/": {
     "checked": "2026-08-18",
@@ -402,9 +460,7 @@
     }
   },
   "https://civictech.guide/about/": {
-    "archive_checked": "2026-08-17",
-    "archive_url": "http://web.archive.org/web/20260728135814/https://civictech.guide/about",
-    "checked": "2026-08-18",
+    "checked": "2026-08-20",
     "content_hash": "07ce94ed3e6961d650dc0b94334a88be014c06184000639fde83467b3d5e0238",
     "contexts": {
       "25d546fb9449c1380fed6e2ecf84a9706dc54f4f4af5a075ca0c658537c6dc92": {
@@ -421,24 +477,24 @@
     }
   },
   "https://commonslibrary.parliament.uk/research-briefings/cbp-10876/": {
-    "archive_checked": "2026-08-17",
-    "archive_url": "http://web.archive.org/web/20260726223707/https://commonslibrary.parliament.uk/research-briefings/cbp-10876/",
     "blocked": "HTTP_403",
-    "blocked_since": "2026-08-18",
-    "checked": "2026-08-17",
-    "content_hash": "b7b816c51ea740e1462e3904912adb85ee0f8bd89db8025e9dda276851e1f878",
+    "blocked_since": "2026-08-20"
+  },
+  "https://communityfoundation.org.au/making-a-difference/projects/our-democracy": {
+    "checked": "2026-08-20",
+    "content_hash": "d672932c6d730c76c763c4dd5f671e11039e22f643663558c5120cc777eea707",
     "contexts": {
-      "ab601bea9d27131a684cf369d26e13fbfcf426f81c8c52ad4b47377acc0a0fdc": {
-        "prefix": "f the People Bill 2024-26, 2026-27 was introduced in the House of Commons on 12 February 2026. The bill had its second reading on 2 March 2026.",
-        "sha256": "b7b816c51ea740e1462e3904912adb85ee0f8bd89db8025e9dda276851e1f878",
-        "suffix": "The first two sittings were evidence sessions, where the committee heard from external witnesses. The remaining seven sittings were held from 24 Marc",
-        "text": "Committee stage took place over nine sittings from 18 March to 16 April 2026. The first two sittings were evidence sessions, where the committee heard from external witnesses. The remaining seven sittings were held from 24 March to 16 April 2026. The 2024\u201326 session of Parliament ended on 29 April 2026 without the bill progressing further."
+      "a34db60f06b370443b55e216d699a44889105c15b2833170d8b23a827fb99168": {
+        "prefix": "s wield disproportionate influence in our democracy \u2013 they are getting outcomes that put their profits ahead of the wellbeing of everyone else.",
+        "sha256": "d672932c6d730c76c763c4dd5f671e11039e22f643663558c5120cc777eea707",
+        "suffix": "These core organisations continue to develop the solutions and work on the campaign, but just as our democracy belongs to all Australians, the #OurDe",
+        "text": "The #OurDemocracy campaign was developed by three organisations \u2013 the Australian Conservation Foundation, the Human Rights Law Centre (HRLC) and the Australian Democracy Network (ADN), together with the input of over 30 more. These core organisations continue to develop the solutions and work on the campaign, but just as our democracy belongs to all Australians, the #OurDemocracy campaign is a movement of people and organisations passionate about making our democracy fairer for all."
       }
     },
     "etag": null,
-    "last_modified": "Mon, 17 Aug 2026 13:58:52 GMT",
+    "last_modified": null,
     "verified": {
-      "ab601bea9d27131a684cf369d26e13fbfcf426f81c8c52ad4b47377acc0a0fdc": true
+      "a34db60f06b370443b55e216d699a44889105c15b2833170d8b23a827fb99168": true
     }
   },
   "https://congresovisible.uniandes.edu.co/quesomos": {
@@ -484,31 +540,24 @@
     }
   },
   "https://connecticut.news12.com/connecticut-lottery-selects-members-for-property-tax-assembly": {
-    "checked": "2026-08-18",
+    "checked": "2026-08-20",
     "content_hash": "488c33924e7829b21cbd2d65e5fdc623421271751898342a6437182c1dff4af4",
     "contexts": {
       "3180770dd5802b360b7227fad09cff73f84a36777daa24e76378752e1a1792a2": {
-        "prefix": "d in smoke Norwalk man charged after 2 people stabbed during early-morning fight",
+        "prefix": "02:43 Road Trip: US Open Fan Week brings the stars to Queens ahead of event",
         "sha256": "488c33924e7829b21cbd2d65e5fdc623421271751898342a6437182c1dff4af4",
         "suffix": "of the Connecticut Citizens\u2019 Assembly on Property Taxes. Ball 29 was chosen from 40 numbered lottery balls, with each ball representing a group",
         "text": "The Connecticut Lottery Corporation on Thursday conducted a public drawing to select members of the Connecticut Citizens\u2019 Assembly on Property Taxes."
-      },
-      "e79d54595261ff2774df89ac9b56e24aaec5f3c36bc1249cab8d51338e320351": {
-        "prefix": "mbered lottery balls, with each ball representing a group of 110 eligible Connecticut residents. The selected group will serve on the assembly.",
-        "sha256": "e79d54595261ff2774df89ac9b56e24aaec5f3c36bc1249cab8d51338e320351",
-        "suffix": "\u201cPublic confidence is critical to us,\u201d said Frank Suarez, president and CEO of the Connecticut Lottery Corporation. \u201cWe are proud to bring the",
-        "text": "The initiative, organized by the Connecticut Conference of Municipalities, Yale University, the University of Connecticut, and the Connecticut Office of the State Comptroller, will bring together residents from across the state to study Connecticut\u2019s property tax system and develop recommendations."
       }
     },
     "etag": null,
     "last_modified": null,
     "verified": {
-      "3180770dd5802b360b7227fad09cff73f84a36777daa24e76378752e1a1792a2": true,
-      "e79d54595261ff2774df89ac9b56e24aaec5f3c36bc1249cab8d51338e320351": true
+      "3180770dd5802b360b7227fad09cff73f84a36777daa24e76378752e1a1792a2": true
     }
   },
   "https://constitutionnet.org/news/hungarys-parliament-passes-constitutional-amendment-limiting-prime-ministerial-terms": {
-    "checked": "2026-08-18",
+    "checked": "2026-08-20",
     "content_hash": "25aa11cfdfed4896c98ca153f34d6b2a64e3744d0b05c62dc9e4f8551ae261df",
     "contexts": {
       "b1fdc849dde12b3fdb25945e027c4f9726510304061de859e877a0cc76d2bdc6": {
@@ -525,9 +574,7 @@
     }
   },
   "https://constitutionnet.org/news/voices/new-constitution-kazakhstan-parliamentary-reform-facade-presidential-monopoly": {
-    "archive_checked": "2026-08-17",
-    "archive_url": "http://web.archive.org/web/20260606032404/https://constitutionnet.org/news/voices/new-constitution-kazakhstan-parliamentary-reform-facade-presidential-monopoly",
-    "checked": "2026-08-18",
+    "checked": "2026-08-20",
     "content_hash": "e3e60d2e087e82a844e28920456b0fc622728cd029d5b8511a44aa7dd11334a6",
     "contexts": {
       "77f5a97c241b4a19d96b79c0ac3e9777f0282b87022e4f44dac1d46f4a1faa22": {
@@ -544,9 +591,7 @@
     }
   },
   "https://constitutionnet.org/news/voices/term-limits-no-limits-el-salvadors-constitutional-reform-presidential-re-election": {
-    "archive_checked": "2026-08-17",
-    "archive_url": "http://web.archive.org/web/20260715155326/https://constitutionnet.org/news/voices/term-limits-no-limits-el-salvadors-constitutional-reform-presidential-re-election",
-    "checked": "2026-08-18",
+    "checked": "2026-08-20",
     "content_hash": "b9fab13f7fdda3685cef54362c99d03d614b96346bdc699dfca6f9401c8a9db7",
     "contexts": {
       "9402f50fb3019821af1c1dd977f4e9e16abb54c8adce4550be9bdb36064b19b0": {
@@ -580,9 +625,7 @@
     }
   },
   "https://ct-citizens-assembly.org/": {
-    "archive_checked": "2026-08-17",
-    "archive_url": "http://web.archive.org/web/20260810083348/https://ct-citizens-assembly.org/",
-    "checked": "2026-08-18",
+    "checked": "2026-08-20",
     "content_hash": "8e2f15ad60d1306cdd296405371dc95711f00bea8d319b00a589b64b99f15bf6",
     "contexts": {
       "8e2f15ad60d1306cdd296405371dc95711f00bea8d319b00a589b64b99f15bf6": {
@@ -599,9 +642,7 @@
     }
   },
   "https://ct-citizens-assembly.org/about": {
-    "archive_checked": "2026-08-17",
-    "archive_url": "http://web.archive.org/web/20260605084018/https://ct-citizens-assembly.org/about",
-    "checked": "2026-08-18",
+    "checked": "2026-08-20",
     "content_hash": "70f6227c0fdaca525ee18525a9d87c60ce6f0537ab02e56213d05d40a6aa1a55",
     "contexts": {
       "566c3f5911b18d6c3077cbfc1f49232e084577d129622645c1ab92a2fcfa2270": {
@@ -618,9 +659,7 @@
     }
   },
   "https://ctmirror.org/2026/07/13/citizens-assembly-property-taxes/": {
-    "archive_checked": "2026-08-17",
-    "archive_url": "http://web.archive.org/web/20260810161227/https://ctmirror.org/2026/07/13/citizens-assembly-property-taxes/",
-    "checked": "2026-08-18",
+    "checked": "2026-08-20",
     "content_hash": "d336d03a74743be51e288c75e7a79cdc5999cdfa5b64283e24d78283c1bb8804",
     "contexts": {
       "3763c310e629b73cb0dafc4928397c98ca5a2b1cb63b80352dbd62089fbc095a": {
@@ -630,7 +669,7 @@
       }
     },
     "etag": null,
-    "last_modified": "Mon, 17 Aug 2026 10:14:38 GMT",
+    "last_modified": "Thu, 20 Aug 2026 04:41:42 GMT",
     "verified": {
       "3763c310e629b73cb0dafc4928397c98ca5a2b1cb63b80352dbd62089fbc095a": true
     }
@@ -736,7 +775,7 @@
     }
   },
   "https://demnext.substack.com/p/new-paper-from-projects-to-permanence": {
-    "checked": "2026-08-18",
+    "checked": "2026-08-20",
     "content_hash": "5077099f21975ca045e085471e185b99a55ddcc1a86600e4a48ebef1b9fe0f7d",
     "contexts": {
       "b6648f9995877a014a327e19de08b7a3505dc6c5bcd9c966e8134d9d1c328bf3": {
@@ -780,9 +819,7 @@
     }
   },
   "https://democracy-technologies.org/participation/consensus-building-in-taiwan/": {
-    "archive_checked": "2026-08-17",
-    "archive_url": "http://web.archive.org/web/20260817142620/https://democracy-technologies.org/participation/consensus-building-in-taiwan/",
-    "checked": "2026-08-18",
+    "checked": "2026-08-20",
     "content_hash": "640700c8d55ff5c4c7db97b39b78ebafa5f3de60e5ef2550497d23e9973bfa0b",
     "contexts": {
       "8268a06cd26c208f2ff000a2f0f9954f57894ab78c1fecb71998e7e7b592eef1": {
@@ -792,16 +829,14 @@
         "text": "Taiwan is a world-leader in digital democracy. It all started with vTaiwan, an online participation platform powered by Polis. Launched in 2015, it has transformed how the government brings stakeholders together, allowing for a more inclusive approach to legislation.\u00c2"
       }
     },
-    "etag": "W/\"6a83dc19-211f7\"",
-    "last_modified": "Tue, 18 Aug 2026 04:14:17 GMT",
+    "etag": "W/\"6a8633cf-211f7\"",
+    "last_modified": "Wed, 19 Aug 2026 22:53:03 GMT",
     "verified": {
       "8268a06cd26c208f2ff000a2f0f9954f57894ab78c1fecb71998e7e7b592eef1": true
     }
   },
   "https://democracyincolour.org/about/": {
-    "archive_checked": "2026-08-17",
-    "archive_url": "http://web.archive.org/web/20251211063253/https://democracyincolour.org/about/",
-    "checked": "2026-08-18",
+    "checked": "2026-08-20",
     "content_hash": "32dadf29e415818d14066f068f18e7f2bb2443683fdac35fbd9372223bd7f932",
     "contexts": {
       "97663fcf73415c375a71271789c017fae384cc2a567f080f6f5b79f4a250fb25": {
@@ -868,10 +903,40 @@
       "bc1f3b91500490bbbb7967dc30a839b3872e4910098ab9d8355ee99e481dc085": true
     }
   },
+  "https://en.wikipedia.org/wiki/1967_Australian_referendum_(Aboriginals)": {
+    "checked": "2026-08-20",
+    "content_hash": "9dae16b053b6d584d03873b1ed537d82af291ed90e6b52fa4fee800c4f922765",
+    "contexts": {
+      "79ea2000b93764b14d777ceefc495ba216979231e0d2f8dfeeefdda6bf07fcc0": {
+        "prefix": "under section 122 of the Constitution. Section 127 was wholly removed. Headed \"Aborigines not to be counted in reckoning population\", it had read:",
+        "sha256": "8bf53c7d59c79b0df8724200f2cdeb8357210c70030a33ed21debf1bc02a494d",
+        "suffix": "The Constitution required the calculation of \"the people\" for several purposes in sections 24, 89, 93 and 105. Section 89 related to the imposition o"
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "79ea2000b93764b14d777ceefc495ba216979231e0d2f8dfeeefdda6bf07fcc0": true
+    }
+  },
+  "https://en.wikipedia.org/wiki/2023_Israeli_judicial_reform_protests": {
+    "checked": "2026-08-20",
+    "content_hash": "aedbb49f5a2d7566aff38124dc872d2cf98e33b4989adf43fb82ddf18b374e1f",
+    "contexts": {
+      "c0d189a42147cc187057e760addf8b55ccef6c9d6ec2135607ab3417dbf8fd17": {
+        "prefix": "re held on a weekly basis in Kaplan Street, alongside smaller protests in Jerusalem, Haifa, Beersheba, and other cities like Ness Ziona and Herzliya.",
+        "sha256": "9909cfdea0b2e969e6d4db5d6b7428d8493eb6dfa663b4e2a04ec8da6de4edc5",
+        "suffix": "Protests in other cities regularly attracted smaller numbers. === 13\u201325 February === On 8 February, the Chairman of the Knesset's Constitution, Law"
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "c0d189a42147cc187057e760addf8b55ccef6c9d6ec2135607ab3417dbf8fd17": true
+    }
+  },
   "https://en.wikipedia.org/wiki/2026_Bangladeshi_constitutional_referendum": {
-    "blocked": "HTTP_429",
-    "blocked_since": "2026-08-18",
-    "checked": "2026-08-17",
+    "checked": "2026-08-20",
     "content_hash": "ba97fa4783695d81c86fc3f9ff57414b2ce661ae5687e57bb7c927e51c108b09",
     "contexts": {
       "0cd293ad388e03c93c8bc039b8d173ed49b4941f0d82822dc9053cb7430a4556": {
@@ -920,9 +985,7 @@
     }
   },
   "https://en.wikipedia.org/wiki/Anti-austerity_movement_in_Spain": {
-    "archive_checked": "2026-08-17",
-    "archive_url": "http://web.archive.org/web/20260814083656/https://en.wikipedia.org/wiki/Anti-austerity_movement_in_Spain",
-    "checked": "2026-08-18",
+    "checked": "2026-08-20",
     "content_hash": "0504df7b59e8f81954f4f0fa76cdd9cf6aafa6bd55eeb3cc423698cbb0019424",
     "contexts": {
       "795652a925bdd8df979e18c0b90380d245f7ec9355567cb78a3d9e1aad2d8f58": {
@@ -951,6 +1014,22 @@
     "last_modified": null,
     "verified": {
       "6374dcd3e0821688685025db3c86e9a671aba278a24ae88059089fb98ca50cd6": true
+    }
+  },
+  "https://en.wikipedia.org/wiki/Athenian_democracy": {
+    "checked": "2026-08-20",
+    "content_hash": "3c2c536f52e562c75dc2c2a848c03e47d64b8cfe237ee2a0e6939331a137de94",
+    "contexts": {
+      "94e8cf47c044ed23f81366f10f09ade4e921e05df56df7dd36feb9c033a3b9fe": {
+        "prefix": "f of the over one thousand existing Greek cities might have been democracies. Athens practiced a political system of legislation and executive bills.",
+        "sha256": "a858f87c1908d3b2b36a8b076bd5536f82eb72b64e52e52ac0531cc5beb4c57f",
+        "suffix": "Adult male citizens probably constituted no more than 30 percent of the total adult population. Solon (in 594 BC), Cleisthenes (in 508\u201307 BC), and Ep"
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "94e8cf47c044ed23f81366f10f09ade4e921e05df56df7dd36feb9c033a3b9fe": true
     }
   },
   "https://en.wikipedia.org/wiki/Australian_Democrats": {
@@ -1111,6 +1190,22 @@
       "ac5665faa39dc2139668f945756569ea177945ea9eb3ee61c5901892627cc2ea": true
     }
   },
+  "https://en.wikipedia.org/wiki/Declaration_of_the_Rights_of_Man_and_of_the_Citizen": {
+    "checked": "2026-08-20",
+    "content_hash": "d21dd4ab7a1dad0a54b45460199e5acf39d0620255e428912dc5b67acb09d746",
+    "contexts": {
+      "7257ddc364e171d5d05cb6041e98b7556a0b11b3e34717e2c97e9c719fa4f549": {
+        "prefix": "hts for all men. Influenced by the doctrine of natural rights, these rights are held to be universal and valid in all times and places. For example, \"",
+        "sha256": "bd5bb5e1cc3fdbc3c853a70ddaacdc6c8c3e927dfdd73bc06b80b7f63513c4b1",
+        "suffix": "\" They have certain natural rights to property, to liberty, and to life. According to this theory, the role of government is to recognize and secure t"
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "7257ddc364e171d5d05cb6041e98b7556a0b11b3e34717e2c97e9c719fa4f549": true
+    }
+  },
   "https://en.wikipedia.org/wiki/Democracy_International_eV": {
     "checked": "2026-08-18",
     "content_hash": "552b1faa80559c369b2a3f306843e47b50a6e1222a526ea670f8193bd1241fcd",
@@ -1257,30 +1352,13 @@
     }
   },
   "https://en.wikipedia.org/wiki/Glen_Weyl": {
-    "archive_checked": "2026-08-17",
-    "archive_url": "http://web.archive.org/web/20260816162941/https://en.wikipedia.org/wiki/Glen_Weyl",
-    "checked": "2026-08-18",
+    "checked": "2026-08-20",
     "content_hash": "cb9d9567efbcfc4bf5c5701a8e41138767300cb996ee846cb569b2acc34da649",
-    "contexts": {
-      "0bdaa9c2fd1fb2b871ecee89b5a53f12b7095f1599806252be7b5bec02bd325e": {
-        "prefix": "\" that blends economics and computer science in much the way that digital economists blend them at tech companies. == Selected bibliography == \u2ffb \u6578\u4f4d",
-        "sha256": "e30a7df50bb9d845fb9b2ec2ec30bcf228765789048ad46bc2823114e9708aed",
-        "suffix": "(Independently published, Apr 16, 2024, ISBN 979-8321247181), written with Audrey Tang and \u2ffb Community Radical Markets: Uprooting Capitalism and Demo",
-        "text": "== Selected bibliography == \u2ffb \u6578\u4f4d Plurality: The Future of Collaborative Technology and Democracy (Independently published, Apr 16, 2024, ISBN 979-8321247181), written with Audrey Tang and \u2ffb Community Radical Markets: Uprooting Capitalism and Democracy for a Just Society (Princeton University Press, May 15, 2018, ISBN 978-0691177502), written with Eric Posner"
-      },
-      "5aab2b96543d5b52643c6eafea6aeeef547c091ec0b42731223d1c788956bf12": {
-        "prefix": "Eric Glen Weyl (born May 6, 1985) is an American economist at Microsoft Research, and a",
-        "sha256": "e1b6a96a2114c8bc26cb7db1d8a5480058ba9573e9279a02977c3fd5c53868c7",
-        "suffix": ". Weyl helped create a collective decision-making procedure known as quadratic voting, designed to allow fine-grained expression of how strongly voter",
-        "text": "Eric Glen Weyl (born May 6, 1985) is an American economist at Microsoft Research, and a co-author (with Eric Posner) of the book Radical Markets: Uprooting Capitalism and Democracy for a Just Society. Weyl helped create a collective decision-making procedure known as quadratic voting, designed to allow fine-grained expression of how strongly voters feel about an issue, and also a method of democratically disbursing resources known as quadratic funding."
-      }
-    },
+    "contexts": {},
     "etag": null,
     "last_modified": null,
     "verified": {
-      "0bdaa9c2fd1fb2b871ecee89b5a53f12b7095f1599806252be7b5bec02bd325e": true,
-      "380a3016f7cfcdcaa42eb30d881988d9ccb5fb5daad7fef3e92c231e0a683d71": true,
-      "5aab2b96543d5b52643c6eafea6aeeef547c091ec0b42731223d1c788956bf12": true
+      "380a3016f7cfcdcaa42eb30d881988d9ccb5fb5daad7fef3e92c231e0a683d71": true
     }
   },
   "https://en.wikipedia.org/wiki/Golos_(election_monitor)": {
@@ -1321,11 +1399,7 @@
     }
   },
   "https://en.wikipedia.org/wiki/Grattan_Institute": {
-    "archive_checked": "2026-08-17",
-    "archive_url": "http://web.archive.org/web/20260127231549/https://en.wikipedia.org/wiki/Grattan_Institute",
-    "blocked": "HTTP_429",
-    "blocked_since": "2026-08-18",
-    "checked": "2026-08-17",
+    "checked": "2026-08-20",
     "content_hash": "9189983139eed6d84a100fa2cc4139c3e3bb3bfe33d883ed8ca8dc5e99fc3023",
     "contexts": {
       "cb0df30b346a363776841fad5fcc35fb5166ea7284f7ad1eb60919d658f16c31": {
@@ -1337,8 +1411,40 @@
     "etag": null,
     "last_modified": null,
     "verified": {
-      "44030e8c5aad432491ba2879893666c3a50b368c00e3f4326f8943b4402b5346": true,
       "cb0df30b346a363776841fad5fcc35fb5166ea7284f7ad1eb60919d658f16c31": true
+    }
+  },
+  "https://en.wikipedia.org/wiki/Haitian_Revolution": {
+    "checked": "2026-08-20",
+    "content_hash": "1c45fafbe5f6729bd2be823eedc7db1d44303909ab7f1901e3784906028e9146",
+    "contexts": {
+      "2301fb735d6a5cdd015c900d7b0550c365383953c8e252fdfc389cfd76b8ab96": {
+        "prefix": "r.\" Raynal's Enlightenment philosophy went deeper than a prediction and reflected many similar philosophies, including those of Rousseau and Diderot.",
+        "sha256": "1c45fafbe5f6729bd2be823eedc7db1d44303909ab7f1901e3784906028e9146",
+        "suffix": "In addition to Raynal's influence, Toussaint Louverture, a free Black who was familiar with Enlightenment ideas within the context of European colon",
+        "text": "=== Slavery in Enlightenment thought === French writer Guillaume Raynal attacked slavery in his history of European colonization. He warned, \"the Africans only want a chief, sufficiently courageous, to lead them on to vengeance and slaughter.\" Raynal's Enlightenment philosophy went deeper than a prediction and reflected many similar philosophies, including those of Rousseau and Diderot. Raynal's admonition was written thirteen years before the Declaration of the Rights of Man and of the Citizen, which highlighted freedom and liberty but did not abolish slavery."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "2301fb735d6a5cdd015c900d7b0550c365383953c8e252fdfc389cfd76b8ab96": true
+    }
+  },
+  "https://en.wikipedia.org/wiki/Herrenvolk_democracy": {
+    "checked": "2026-08-20",
+    "content_hash": "1ece5dd328570a0ec23838f0d6fe48c662016239fe211a293250250e844b7740",
+    "contexts": {
+      "6d3ed88a4da4d28ba4e9d863e83702f08453378b5aa62fd341df3fa106e9793b": {
+        "prefix": "",
+        "sha256": "bab39a867d3468c7423910e1a41185fab8c947bab3e695d321ec9e864f67661c",
+        "suffix": "Herrenvolk democracy is a subtype of ethnocracy, which refers to any form of government where one ethnic group dominates the state, with or without e"
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "6d3ed88a4da4d28ba4e9d863e83702f08453378b5aa62fd341df3fa106e9793b": true
     }
   },
   "https://en.wikipedia.org/wiki/Hong_Kong_Democracy_Council": {
@@ -1421,6 +1527,16 @@
       "0195c0d901307fd47446df9f044c72093905de80620d7712ad0da3c086f41ffb": true
     }
   },
+  "https://en.wikipedia.org/wiki/Israeli_occupation_of_the_West_Bank": {
+    "checked": "2026-08-20",
+    "content_hash": "f41988163b5b7eac196a41081aca732b5471d8b54df15229e7adcb43cf2d8230",
+    "contexts": {},
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "d5203641c47a34809071bda9524a2d1e401190d1f75588d639c19031b6da1b0d": true
+    }
+  },
   "https://en.wikipedia.org/wiki/Jan_Fran": {
     "checked": "2026-08-18",
     "content_hash": "08aefbba23ff4851588f3b085380539ba1a37f3c73a2638d065190e3b4ce0da7",
@@ -1481,6 +1597,22 @@
       "a7f1e2a55c14fa4eae60947f93684afe46edb6b21fe2df692a3c5fda1fd01853": true
     }
   },
+  "https://en.wikipedia.org/wiki/Legal_Consequences_arising_from_the_Policies_and_Practices_of_Israel_in_the_Occupied_Palestinian_Territory,_including_East_Jerusalem": {
+    "checked": "2026-08-20",
+    "content_hash": "419778e0461625015071df6f772d605421574af5e462408366268478edd38780",
+    "contexts": {
+      "e2f129d1b68d2a8c0f80e84927e0a4b5fbcc18ed5f905b97f3fede8f49464411": {
+        "prefix": "determination have a direct impact on the legality of the continued presence of Israel, as an occupying Power, in the Occupied Palestinian Territory.",
+        "sha256": "a7c6f2b73f6f6e92c1d1d630aa63cc6397d2a1e9d02442700eed57a311854959",
+        "suffix": "The Court found that the Israeli\u2013Palestinian peace process did not prevent international law from applying to the situation. It declared that the Gen"
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "e2f129d1b68d2a8c0f80e84927e0a4b5fbcc18ed5f905b97f3fede8f49464411": true
+    }
+  },
   "https://en.wikipedia.org/wiki/LiquidFeedback": {
     "checked": "2026-08-18",
     "content_hash": "286ec0e1662d402b723fe4054f381f338a07e6b44ee9f29bf6603c6743163776",
@@ -1516,42 +1648,20 @@
     }
   },
   "https://en.wikipedia.org/wiki/Loomio": {
-    "archive_checked": "2026-08-17",
-    "archive_url": "http://web.archive.org/web/20260816154027/https://en.wikipedia.org/wiki/Loomio",
-    "checked": "2026-08-18",
+    "checked": "2026-08-20",
     "content_hash": "23880a28a900c902f72a25d6b879c04ad8846fbe6802b1acc46f9e19d79da787",
     "contexts": {
-      "092caa8015f99b5350c42717d3dcf2db57840656ce87036f518608a02193cca0": {
-        "prefix": "rk was made by this core group but more than 70 contributors from around the world participated occasionally with small contribution. In 2014, Loomio",
-        "sha256": "aa8298f81fb72d84cb8a6ed8dfcd72d12313fb2ca3f415ee3f582925c97eba32",
-        "suffix": "effort to develop Loomio 1.0. The Loomio web interface supports mobile access and other enhancements. As of 2016, Loomio was used in more than 100 co"
-      },
       "cf0f98f6eec3e01e343d8e25a7508335e772c5ef3a39d7d66becbf13b26d7125": {
         "prefix": "and other enhancements. As of 2016, Loomio was used in more than 100 countries, with the software being translated into 35 languages. == History ==",
         "sha256": "23880a28a900c902f72a25d6b879c04ad8846fbe6802b1acc46f9e19d79da787",
         "suffix": "It was utilized in the Occupy movement in New Zealand. After using the first prototype in this, the team behind Loomio felt that it would be easier t",
-        "text": "== History == Loomio emerged from the Occupy movement. In 2012, it launched its first prototype. It was utilized in the Occupy movement in New Zealand. After using the first prototype in this, the team behind Loomio felt that it would be easier to give everyone a voice with an online software, leading to the launch of Loomio 1.0. Since the launch of Loomio 1.0, Loomio has stopped using occupy hand-signals in the interface. It has since been developed into a social enterprise as Loomio Cooperative Limited that is a platform cooperative."
-      },
-      "dbedffff7b1614e9b51b963011e98ec065e99400d9180704e74dea07f8cbfcaf": {
-        "prefix": "iness, and donations from its users. == Reception == Loomio has been used by the Wellington City Council for discussion with their citizens. Loomio",
-        "sha256": "5bbec34580292d81ff038b8e3caafd98d31f234d49f54c1402d7644d65cdbf5e",
-        "suffix": "in April 2014. == Product Overview == === EU specific === Loomio has committed to address the needs and regulations of the EU market. In 2018 the",
-        "text": "== Reception == Loomio has been used by the Wellington City Council for discussion with their citizens. Loomio won the MIX Prize Digital Freedom Challenge in April 2014."
-      },
-      "fec9682393b45940117ca461d9f1dfdb5e65b0b41778cdffb24e1a12545586a0": {
-        "prefix": "n more than 100 countries, with the software being translated into 35 languages. == History == Loomio emerged from the Occupy movement. In 2012, it",
-        "sha256": "23880a28a900c902f72a25d6b879c04ad8846fbe6802b1acc46f9e19d79da787",
-        "suffix": ". It was utilized in the Occupy movement in New Zealand. After using the first prototype in this, the team behind Loomio felt that it would be easier",
         "text": "== History == Loomio emerged from the Occupy movement. In 2012, it launched its first prototype. It was utilized in the Occupy movement in New Zealand. After using the first prototype in this, the team behind Loomio felt that it would be easier to give everyone a voice with an online software, leading to the launch of Loomio 1.0. Since the launch of Loomio 1.0, Loomio has stopped using occupy hand-signals in the interface. It has since been developed into a social enterprise as Loomio Cooperative Limited that is a platform cooperative."
       }
     },
     "etag": null,
     "last_modified": null,
     "verified": {
-      "092caa8015f99b5350c42717d3dcf2db57840656ce87036f518608a02193cca0": true,
-      "cf0f98f6eec3e01e343d8e25a7508335e772c5ef3a39d7d66becbf13b26d7125": true,
-      "dbedffff7b1614e9b51b963011e98ec065e99400d9180704e74dea07f8cbfcaf": true,
-      "fec9682393b45940117ca461d9f1dfdb5e65b0b41778cdffb24e1a12545586a0": true
+      "cf0f98f6eec3e01e343d8e25a7508335e772c5ef3a39d7d66becbf13b26d7125": true
     }
   },
   "https://en.wikipedia.org/wiki/Make_It_16_(New_Zealand)": {
@@ -1619,9 +1729,7 @@
     }
   },
   "https://en.wikipedia.org/wiki/Meta-organization": {
-    "archive_checked": "2026-08-17",
-    "archive_url": "http://web.archive.org/web/20260810165656/https://en.wikipedia.org/wiki/Meta-organization",
-    "checked": "2026-08-18",
+    "checked": "2026-08-20",
     "content_hash": "e5219cbc361d6b75e77510b4bab7c4cf4919c75776b4d3ede9f04eb2936b5d11",
     "contexts": {
       "e41cf1d78553fd91acba54e621c20a54089a6ea2d47b2e421ef4d2595b2b4e58": {
@@ -1634,6 +1742,22 @@
     "last_modified": null,
     "verified": {
       "e41cf1d78553fd91acba54e621c20a54089a6ea2d47b2e421ef4d2595b2b4e58": true
+    }
+  },
+  "https://en.wikipedia.org/wiki/Metic": {
+    "checked": "2026-08-20",
+    "content_hash": "2419255570fdea258a90e85999154b0aaeee4cb5701dddca0f64cbe92252f3b6",
+    "contexts": {
+      "f6ce74e1bb200a34d5bbdadc575e27bfff1a37aa4de6225eb11a7f92253a8fe5": {
+        "prefix": "p on them as a gift. This was rarely done. From a cultural viewpoint such a resident could be completely \"local\" and indistinguishable from citizens.",
+        "sha256": "22ec15f81e7ae78e233f97cbf91c256fc36c273ab34d80eef18f6daca7b0b39e",
+        "suffix": "In the urbane scene that opens Plato's Republic\u2014the dialogue takes place in a metic household\u2014the status of the speakers as citizen or metic is never"
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "f6ce74e1bb200a34d5bbdadc575e27bfff1a37aa4de6225eb11a7f92253a8fe5": true
     }
   },
   "https://en.wikipedia.org/wiki/Movement_for_Quality_Government_in_Israel": {
@@ -1757,9 +1881,7 @@
     }
   },
   "https://en.wikipedia.org/wiki/Occupy_Wall_Street": {
-    "archive_checked": "2026-08-17",
-    "archive_url": "http://web.archive.org/web/20260816161521/https://en.wikipedia.org/wiki/Occupy_Wall_Street",
-    "checked": "2026-08-18",
+    "checked": "2026-08-20",
     "content_hash": "68b2e5a328236f23b0e34b6d94b821a66b8345307a7da6625af82fb59495a078",
     "contexts": {},
     "etag": null,
@@ -1809,9 +1931,7 @@
     }
   },
   "https://en.wikipedia.org/wiki/OpenAustralia_Foundation": {
-    "archive_checked": "2026-08-17",
-    "archive_url": "http://web.archive.org/web/20251230134005/https://en.wikipedia.org/wiki/OpenAustralia_Foundation",
-    "checked": "2026-08-18",
+    "checked": "2026-08-20",
     "content_hash": "17e022c6157463ba6a56fbbc7ad00dabc582ebfc5953c6ca9d6e69e1454030a1",
     "contexts": {
       "3c9c203d4bcf14372dc6f31d343c75ee3325e6e9120851df796f2d222260b18e": {
@@ -1819,19 +1939,12 @@
         "sha256": "17e022c6157463ba6a56fbbc7ad00dabc582ebfc5953c6ca9d6e69e1454030a1",
         "suffix": ". It displays \"voting patterns by politician, when they vote against their own party, and offers descriptions of divisions in plain English\". It recei",
         "text": "=== They Vote For You === They Vote For You, established in 2014, tracks the outcomes of all votes in the House of Representatives and Senate. It displays \"voting patterns by politician, when they vote against their own party, and offers descriptions of divisions in plain English\". It received start-up funding from Google."
-      },
-      "b331c6c90624e6e9566b403c4e321a76b461f4c320a527462d6f833dffcd7d8a": {
-        "prefix": "or You, a parliamentary informatics website. == Structure == OpenAustralia is a registered charity that operates as a company limited by guarantee.",
-        "sha256": "df6c43f8a5954b8a82123a2fcc825c1ed484cbc32f217ece247f417c58dbdda2",
-        "suffix": "== Projects == One of the foundation's earliest projects was Election Leaflets, a website established in the lead-up to the 2010 federal election t",
-        "text": "== Structure == OpenAustralia is a registered charity that operates as a company limited by guarantee. It was established in 2009, co-founded by Matthew Landauer and Katherine Szuminska."
       }
     },
     "etag": null,
     "last_modified": null,
     "verified": {
-      "3c9c203d4bcf14372dc6f31d343c75ee3325e6e9120851df796f2d222260b18e": true,
-      "b331c6c90624e6e9566b403c4e321a76b461f4c320a527462d6f833dffcd7d8a": true
+      "3c9c203d4bcf14372dc6f31d343c75ee3325e6e9120851df796f2d222260b18e": true
     }
   },
   "https://en.wikipedia.org/wiki/Open_Society_Foundations": {
@@ -1948,6 +2061,23 @@
       "64049a89562a8859c8d7d48918d4ff843493e0205ed930beb778f22740ae5119": true
     }
   },
+  "https://en.wikipedia.org/wiki/Politics_(Aristotle)": {
+    "checked": "2026-08-20",
+    "content_hash": "31816bfe70319f193272c8038fd4bdd6b6ebb18c9564d6545106de3fe2e4024b",
+    "contexts": {
+      "537cdaf26f0d0e6f24247c9a172de692f2b794961b9b1f2cd25450d12afa3c37": {
+        "prefix": "rs citizenship and who counts as a citizen. He asserts that a citizen is anyone who is \"entitled to participate in office, deliberative or judicial\".",
+        "sha256": "31816bfe70319f193272c8038fd4bdd6b6ebb18c9564d6545106de3fe2e4024b",
+        "suffix": "Aristotle is also doubtful about whether citizenship should extend to the banausos or working classes. He next considers what sort of entity a state",
+        "text": "=== Book III === Aristotle considers citizenship and who counts as a citizen. He asserts that a citizen is anyone who is \"entitled to participate in office, deliberative or judicial\". This excludes honorary citizens, resident aliens, slaves, women, foreigners even if they have some access to the legal system through commercial treaties, boys too young for military service, or people who have been exiled or stripped of their citizenship. Aristotle is also doubtful about whether citizenship should extend to the banausos or working classes. He next considers what sort of entity a state is, whether it is a single thing, and under what circumstances it can be considered to have changed or, alternatively, to have been supplanted by a new state. He then turns to the question of how the virtues of a person qua person line up with the virtues of a person qua citizen: where they are coincident and where they may differ."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "537cdaf26f0d0e6f24247c9a172de692f2b794961b9b1f2cd25450d12afa3c37": true
+    }
+  },
   "https://en.wikipedia.org/wiki/Referendum_Council": {
     "archive_checked": "2026-08-17",
     "archive_url": "http://web.archive.org/web/20251218063309/https://en.wikipedia.org/wiki/Referendum_Council",
@@ -1981,6 +2111,22 @@
       "8978ffd3ddfb3b48f22edcea6a5db2068995581a97d0f11463e50b9de8f12556": true
     }
   },
+  "https://en.wikipedia.org/wiki/Reform_Act_1832": {
+    "checked": "2026-08-20",
+    "content_hash": "96eb151473ee8195512a4b4a39a69ceb9b84d0915adc473f20d9637463d90300",
+    "contexts": {
+      "6c2f35db54c1c339960fee2796583cbaf44eae16600b2d03358c610f8b5df65d": {
+        "prefix": "England and Wales and to expand the franchise. The measure was brought forward by the Whig government of Prime Minister Charles Grey, 2nd Earl Grey.",
+        "sha256": "4cc34da75b31107efa863f135646fdb6f3ccf0b01228ab98849703141d6e4795",
+        "suffix": "The act also reapportioned constituencies to address the unequal distribution of seats. The act formally excluded women from voting, as a voter was d"
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "6c2f35db54c1c339960fee2796583cbaf44eae16600b2d03358c610f8b5df65d": true
+    }
+  },
   "https://en.wikipedia.org/wiki/SITRA": {
     "archive_checked": "2026-08-17",
     "archive_url": "http://web.archive.org/web/20260816160522/https://en.wikipedia.org/wiki/SITRA",
@@ -1997,6 +2143,22 @@
     "last_modified": null,
     "verified": {
       "596d57b7c10273488ccde41ae62afefebd76b2be0db734f867885f05edcfd311": true
+    }
+  },
+  "https://en.wikipedia.org/wiki/Slavery_in_France": {
+    "checked": "2026-08-20",
+    "content_hash": "460153a866fcc91828c070b5e39a0e18a672b4072b89182777c29096fe37521d",
+    "contexts": {
+      "d14042843aef627b978e01584444c3fc6c90802d16baace5e290ca55c39afa94": {
+        "prefix": "e metropole. Another decisive reason for the sudden abolition of slavery was the success of the Slave Revolt in Saint-Domingue (Haitian Revolution).",
+        "sha256": "130885c73ba4f0c5ea86e30a0efb9a07435fdd20e846a810db07f1f3d88d98f3",
+        "suffix": "The first article of the law stated that \"Slavery was abolished\" in the French colonies, while the second article stated that \"slave-owners would be"
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "d14042843aef627b978e01584444c3fc6c90802d16baace5e290ca55c39afa94": true
     }
   },
   "https://en.wikipedia.org/wiki/Team_Mirai": {
@@ -2042,6 +2204,22 @@
     "last_modified": null,
     "verified": {
       "6db18b3038c77cdce4c760184437faad30ceaed2c99377207acc6b8d3521127f": false
+    }
+  },
+  "https://en.wikipedia.org/wiki/Three-fifths_Compromise": {
+    "checked": "2026-08-20",
+    "content_hash": "27401c8982df8b9380510693d7723ab90749e8e7056884a84a721caef01b3536",
+    "contexts": {
+      "3ab4eab341a2373292a29cf6d4eed900b40bfd4948ae2f26daeeee4d43ca9fcd": {
+        "prefix": ". Slave states wanted their entire population to be counted to determine the number of Representatives those states could elect and send to Congress.",
+        "sha256": "fe84a80a521c54338c473b3880d4565c8275de77d4cb89db940cd553bba1e6c6",
+        "suffix": "It also gave slaveholders similarly enlarged powers in Southern legislatures; this was an issue in the secession of West Virginia from Virginia in 18"
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "3ab4eab341a2373292a29cf6d4eed900b40bfd4948ae2f26daeeee4d43ca9fcd": true
     }
   },
   "https://en.wikipedia.org/wiki/Ushahidi": {
@@ -2179,25 +2357,8 @@
     "blocked_since": "2026-08-18"
   },
   "https://events.humanitix.com/radicalxchange-foundation-in-melbourne": {
-    "archive_checked": "2026-08-17",
-    "archive_url": "http://web.archive.org/web/20260817141209/https://events.humanitix.com/radicalxchange-foundation-in-melbourne",
     "blocked": "HTTP_403",
-    "blocked_since": "2026-08-18",
-    "checked": "2026-08-14",
-    "content_hash": "5760c293c05f53070e2c0ae9d9c0abbc13710775fe504090d59aaa4ed3ddff7f",
-    "contexts": {
-      "5760c293c05f53070e2c0ae9d9c0abbc13710775fe504090d59aaa4ed3ddff7f": {
-        "prefix": "desktop Yahoo Close icon Close An invitation to meet RadicalxChange Foundation in Melbourne",
-        "sha256": "5760c293c05f53070e2c0ae9d9c0abbc13710775fe504090d59aaa4ed3ddff7f",
-        "suffix": "At the Small Giants Wisdom & Action Forum in May, many were energised by the extraordinary work and vision of Audrey Tang, Taiwan's di",
-        "text": "Join us to learn about civic tech for democracy and community, and explore how our tools might serve your community or sector."
-      }
-    },
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "5760c293c05f53070e2c0ae9d9c0abbc13710775fe504090d59aaa4ed3ddff7f": true
-    }
+    "blocked_since": "2026-08-20"
   },
   "https://fidemocracy.org/europe-forum-2026-from-novel-to-normal": {
     "checked": "2026-08-18",
@@ -2351,9 +2512,7 @@
     }
   },
   "https://glenweyl.com/radicalxchange/": {
-    "archive_checked": "2026-08-17",
-    "archive_url": "http://web.archive.org/web/20260817141324/https://glenweyl.com/radicalxchange/",
-    "checked": "2026-08-18",
+    "checked": "2026-08-20",
     "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "contexts": {},
     "etag": null,
@@ -2363,9 +2522,7 @@
     }
   },
   "https://grattan.edu.au/about-us/": {
-    "archive_checked": "2026-08-17",
-    "archive_url": "http://web.archive.org/web/20210612204939/https://grattan.edu.au/about-us/",
-    "checked": "2026-08-18",
+    "checked": "2026-08-20",
     "content_hash": "eb7c25c9c2d08909da644cfb6642164eb1bdb700d3736b0fa61d89c90ff6a04d",
     "contexts": {
       "aecc0abaf726d33629e4bd2659cc2ce0802a41b849f9d5eae25ad496e3662069": {
@@ -2382,9 +2539,7 @@
     }
   },
   "https://grattan.edu.au/about/funding/": {
-    "archive_checked": "2026-08-17",
-    "archive_url": "http://web.archive.org/web/20260514005848/https://grattan.edu.au/about/funding/",
-    "checked": "2026-08-18",
+    "checked": "2026-08-20",
     "content_hash": "562e05a83ebfd7ad64f7df53f0b5926edf7b8e392516def97970f7fe17a6b9ee",
     "contexts": {
       "562e05a83ebfd7ad64f7df53f0b5926edf7b8e392516def97970f7fe17a6b9ee": {
@@ -2401,17 +2556,9 @@
     }
   },
   "https://grattan.edu.au/appointment-of-danielle-wood-as-new-ceo-of-grattan-institute/": {
-    "archive_checked": "2026-08-17",
-    "archive_url": "http://web.archive.org/web/20260514100419/https://grattan.edu.au/appointment-of-danielle-wood-as-new-ceo-of-grattan-institute/",
-    "checked": "2026-08-18",
+    "checked": "2026-08-20",
     "content_hash": "513b7fe16c1107e35b5a4c46161e86a4b8a68227cdba68a11322efcdce8b0e06",
     "contexts": {
-      "2fc508eae0ef08c8ad7048b3624bf900667054709c8b6944b67880a0abf32afc": {
-        "prefix": "The Chair of Grattan Institute, The Hon Alex Chernov AC QC, announced today that after an extensive search",
-        "sha256": "3fad74504abc2c36b368b1e1e682a1144d874dfab624f2910d1d1937a6b1f5c7",
-        "suffix": ". Danielle is currently the Budget Policy and Institutional Reform Program Director at the Grattan Institute, where her research focuses on econ",
-        "text": "The Chair of Grattan Institute, The Hon Alex Chernov AC QC, announced today that after an extensive search Grattan Institute\u2019s Board had appointed Ms Danielle Wood as Grattan\u2019s new Chief Executive Officer, to take up the role in July 2020 upon the retirement of Prof John Daley."
-      },
       "513b7fe16c1107e35b5a4c46161e86a4b8a68227cdba68a11322efcdce8b0e06": {
         "prefix": "as agreed to step into the CEO role at Grattan and continue the vital work that we have been doing over the last eleven years\u2019 said Mr Chernov.",
         "sha256": "513b7fe16c1107e35b5a4c46161e86a4b8a68227cdba68a11322efcdce8b0e06",
@@ -2422,14 +2569,11 @@
     "etag": null,
     "last_modified": null,
     "verified": {
-      "2fc508eae0ef08c8ad7048b3624bf900667054709c8b6944b67880a0abf32afc": true,
       "513b7fe16c1107e35b5a4c46161e86a4b8a68227cdba68a11322efcdce8b0e06": true
     }
   },
   "https://grattan.edu.au/democracy-and-public-integrity/": {
-    "archive_checked": "2026-08-17",
-    "archive_url": "http://web.archive.org/web/20260514013410/https://grattan.edu.au/democracy-and-public-integrity/",
-    "checked": "2026-08-18",
+    "checked": "2026-08-20",
     "content_hash": "9c2f0e547564db62e453758d34eb48f4656032245da9f74c56a81f13157e3a34",
     "contexts": {
       "9c2f0e547564db62e453758d34eb48f4656032245da9f74c56a81f13157e3a34": {
@@ -2462,10 +2606,25 @@
       "acd3ad14dec4fecf95db4c6bdac1283a46ad8381dd92a5c36fe8d0e6499afb16": true
     }
   },
+  "https://grattan.edu.au/news/election-2025-where-the-money-came-from/": {
+    "checked": "2026-08-20",
+    "content_hash": "5cd51eb4da7326c9ab48ccf2beaa561f07eb288f280b1e4bab133304238c60ad",
+    "contexts": {
+      "6ab1f720da41e54274a449407a237ff7503619fd11590ed8b3a5ddbf1948cbc0": {
+        "prefix": "e, helping to reduce the influence of money in politics. But the new rules unfairly advantage major parties over independents and new entrants.",
+        "sha256": "5cd51eb4da7326c9ab48ccf2beaa561f07eb288f280b1e4bab133304238c60ad",
+        "suffix": "There is also a loophole in the design of the donations cap that advantages major parties by allowing the cap to apply separately to each branch of a",
+        "text": "The new total cap of $90 million for electoral expenditure by a political party is too high, keeping too much money in politics. And the per-seat spending cap of $800,000 is too low, advantaging incumbents over new entrants. There is also a loophole in the design of the donations cap that advantages major parties by allowing the cap to apply separately to each branch of a party."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "6ab1f720da41e54274a449407a237ff7503619fd11590ed8b3a5ddbf1948cbc0": true
+    }
+  },
   "https://grattan.edu.au/news/improving-australias-democracy/": {
-    "archive_checked": "2026-08-17",
-    "archive_url": "http://web.archive.org/web/20251112210624/https://grattan.edu.au/news/improving-australias-democracy/",
-    "checked": "2026-08-18",
+    "checked": "2026-08-20",
     "content_hash": "ae1de85cf692ad43df1256fb0228f0524375f1b3f6c85de922dcaf38e335910f",
     "contexts": {
       "386062a5f8ce019d1b4fd9ae64c79fb983fd58cb3af3432a84b13644af0c2599": {
@@ -2561,9 +2720,7 @@
     }
   },
   "https://home.treasury.gov/news/press-releases/sb0603": {
-    "archive_checked": "2026-08-17",
-    "archive_url": "http://web.archive.org/web/20260816074149/https://home.treasury.gov/news/press-releases/sb0603",
-    "checked": "2026-08-18",
+    "checked": "2026-08-20",
     "content_hash": "aeb49a1c720bc60967edd8aee237296b7367c4c7ffd3f0ae21e58a74f0732e36",
     "contexts": {
       "8fae7e975ed216380100925298b160ead07cf93b59b87adbbc03f6880cb54151": {
@@ -2626,19 +2783,15 @@
     }
   },
   "https://journals.sagepub.com/doi/10.1177/20539517241296038": {
-    "archive_checked": "2026-08-17",
-    "archive_url": "http://web.archive.org/web/20260816163521/https://journals.sagepub.com/doi/10.1177/20539517241296038",
     "blocked": "HTTP_403",
-    "blocked_since": "2026-08-18"
+    "blocked_since": "2026-08-20"
   },
   "https://knightcolumbia.org/content/can-ai-mediation-improve-democratic-deliberation": {
-    "archive_checked": "2026-08-17",
-    "archive_url": "http://web.archive.org/web/20260619132723/https://knightcolumbia.org/content/can-ai-mediation-improve-democratic-deliberation",
-    "checked": "2026-08-18",
+    "checked": "2026-08-20",
     "content_hash": "7e57a0693dc225fdec8ece7743464001d746359957c9f268cd867512536c8292",
     "contexts": {},
     "etag": null,
-    "last_modified": "Tue, 18 Aug 2026 08:51:09 GMT",
+    "last_modified": "Thu, 20 Aug 2026 04:41:24 GMT",
     "verified": {
       "81bd03ee73b4aa759b81fbd5893635760b47c5c7b76f5d9ea05b8038afc6fb85": false
     }
@@ -2697,9 +2850,7 @@
     }
   },
   "https://mckinnon.co/leadership/mckinnon-prize": {
-    "archive_checked": "2026-08-17",
-    "archive_url": "http://web.archive.org/web/20260718151855/https://mckinnon.co/leadership/mckinnon-prize",
-    "checked": "2026-08-18",
+    "checked": "2026-08-20",
     "content_hash": "f8e3a0bf0db2e9b5e79a9eec2b75a24be7596e1d23eb03125595973bd15711c0",
     "contexts": {
       "c5a619c71cb4b90253d6e7c90d6fe6cb86a68e3a4d0410ae04a993e4706a0560": {
@@ -2716,9 +2867,7 @@
     }
   },
   "https://mecouncil.org/blog_posts/syria-sdf-integration-agreement-2026-analysis/": {
-    "archive_checked": "2026-08-17",
-    "archive_url": "http://web.archive.org/web/20260607174322/https://mecouncil.org/blog_posts/syria-sdf-integration-agreement-2026-analysis/",
-    "checked": "2026-08-18",
+    "checked": "2026-08-20",
     "content_hash": "1f0c876667953d74ec4331430cf82fd4c39185692e748cff87c98d6acf34f633",
     "contexts": {
       "9bc2bf53fed2cb75e9edf60e5c76032fefd577a44608b70bb80c4b2d67ada2b3": {
@@ -2829,7 +2978,7 @@
     }
   },
   "https://mosaiclab.com.au/news-all-posts/2016/8/16/meet-a-co-founder-kimbra-white": {
-    "checked": "2026-08-18",
+    "checked": "2026-08-20",
     "content_hash": "fde90594c4e849be608a2cd2a75548c667224c53677e139241ef828d13cacf14",
     "contexts": {
       "6d0107d03961bf9c85d61a0729b7654f779e719eda72bd637b6b275890a3d592": {
@@ -2839,7 +2988,7 @@
         "text": "Kimbra co-founded MosaicLab in 2013 and sees the group as a platform for continuous learning about participation. She believes that these learnings should be shared with others, ultimately contributing to quality and meaningful engagement becoming the norm in the way that decisions are made."
       }
     },
-    "etag": "W/\"2cdff5ee4e8656e90a20baec9a55fb2b--gzip\"",
+    "etag": "W/\"5233878545e1082dd8db9acb6b81f09f\"",
     "last_modified": null,
     "verified": {
       "6d0107d03961bf9c85d61a0729b7654f779e719eda72bd637b6b275890a3d592": true
@@ -3021,7 +3170,7 @@
     }
   },
   "https://overtone.ai/how-to-get-people-to-agree-with-each-other-using-ai-an-interview-with-prof-chris-summerfield/": {
-    "checked": "2026-08-18",
+    "checked": "2026-08-20",
     "content_hash": "3e9bf79c96ea3f8fa89839f58c379e0a70a6e128bec59d262fc0d2eea8e176b5",
     "contexts": {
       "9da192de456309980b845915805e089967f98c3a246e52552f07367e59741588": {
@@ -3032,7 +3181,7 @@
       }
     },
     "etag": null,
-    "last_modified": "Tue, 18 Aug 2026 08:51:08 GMT",
+    "last_modified": "Thu, 20 Aug 2026 04:41:23 GMT",
     "verified": {
       "9da192de456309980b845915805e089967f98c3a246e52552f07367e59741588": true
     }
@@ -3108,7 +3257,7 @@
     }
   },
   "https://projects.propublica.org/nonprofits/organizations/832183139": {
-    "checked": "2026-08-18",
+    "checked": "2026-08-20",
     "content_hash": "76a56b8718dcae944fac8c984e0de25f764c9efdfc0f7660206ded6164f18dc2",
     "contexts": {},
     "etag": null,
@@ -3150,7 +3299,7 @@
     }
   },
   "https://reclaim.org.au/1-lismore-peoples-assembly-housing/": {
-    "checked": "2026-08-18",
+    "checked": "2026-08-20",
     "content_hash": "c32ff80280689420b855efd6209762b535e60b88091d0669f8ceff73e226e820",
     "contexts": {
       "c32ff80280689420b855efd6209762b535e60b88091d0669f8ceff73e226e820": {
@@ -3167,7 +3316,7 @@
     }
   },
   "https://reclaim.org.au/inaugural-lismore-peoples-assembly/": {
-    "checked": "2026-08-18",
+    "checked": "2026-08-20",
     "content_hash": "d6f51366e8b60fa798347718bf5438e92ff008ae6ff9f84b2d0205ec1d01e77e",
     "contexts": {
       "5d178e7c6e07b697f520a7fe1ef52fb0fbc054481088e0e3a7fac59039d9181f": {
@@ -3175,24 +3324,16 @@
         "sha256": "d6f51366e8b60fa798347718bf5438e92ff008ae6ff9f84b2d0205ec1d01e77e",
         "suffix": ", starting in Lismore, with all surrounding communities heartily invited. And not just any kind of democracy, but participatory and deliberative democ",
         "text": "The Lismore People\u2019s Assembly seeks to change this in the hopes of reinventing democracy \u2013 starting from the ground up, starting in Lismore, with all surrounding communities heartily invited. And not just any kind of democracy, but participatory and deliberative democracy. And everyone is warmly invited."
-      },
-      "b268ef91513dba23d272e2b380351595c9a2041ac513f2f6aefccf5d917917e5": {
-        "prefix": "Reclaim our Recovery (ROR) say they have been pushing for robust, democratic, community involvement in the flood recovery since the start of 2022.",
-        "sha256": "373bb0e4d16734a171c543938e80826235ca1a271cdef7b41f66582a057d6190",
-        "suffix": "ROR centred on community voice ROR spokesperson Miriam Torzillo says that from the beginning ROR has centred community voice in all its a",
-        "text": "Reclaim our Recovery (ROR) say they have been pushing for robust, democratic, community involvement in the flood recovery since the start of 2022. ROR is now bringing a new front to their grassroots community advocacy, with the inaugural Lismore People\u2019s Assembly on Housing taking place this Saturday."
       }
     },
     "etag": null,
     "last_modified": null,
     "verified": {
-      "5d178e7c6e07b697f520a7fe1ef52fb0fbc054481088e0e3a7fac59039d9181f": true,
-      "65063e5bb565f04ea5d78f27427ba440603b4a3be127856d46003a86bc506c03": false,
-      "b268ef91513dba23d272e2b380351595c9a2041ac513f2f6aefccf5d917917e5": true
+      "5d178e7c6e07b697f520a7fe1ef52fb0fbc054481088e0e3a7fac59039d9181f": true
     }
   },
   "https://reclaim.org.au/lismore-peoples-assembly-on-housing/": {
-    "checked": "2026-08-18",
+    "checked": "2026-08-20",
     "content_hash": "962246259b6a487def673b4ca2f1ccccb76cdf98ebf9ec8ca07b6e77a8f1ff9e",
     "contexts": {
       "d278588f631f4a70ec72de1f3c704dfaba8f790108d5454982daac2a07a590f7": {
@@ -3209,7 +3350,7 @@
     }
   },
   "https://reclaim.org.au/the-year-ahead-for-the-lismore-peoples-assembly/": {
-    "checked": "2026-08-18",
+    "checked": "2026-08-20",
     "content_hash": "20e6e6902c0a0287a487e72910cf53a6f385b53c10413bfe63c121e7dee87b21",
     "contexts": {
       "20e6e6902c0a0287a487e72910cf53a6f385b53c10413bfe63c121e7dee87b21": {
@@ -3303,10 +3444,25 @@
       "b4529489def4ef82e2782ce27b9e80bfc62ea03999d06cf939bce5bcfd69a01b": true
     }
   },
+  "https://theconversation.com/israel-gaza-how-opinion-polls-used-in-northern-ireland-could-pave-a-way-to-peace-224085": {
+    "checked": "2026-08-20",
+    "content_hash": "16be5d61a30e4d68517d7bae272e39ffa8b2c032d05ad54dd00545af04268ff1",
+    "contexts": {
+      "16be5d61a30e4d68517d7bae272e39ffa8b2c032d05ad54dd00545af04268ff1": {
+        "prefix": "le Copy link Email Bluesky Facebook WhatsApp Messenger LinkedIn X (Twitter) Print article",
+        "sha256": "16be5d61a30e4d68517d7bae272e39ffa8b2c032d05ad54dd00545af04268ff1",
+        "suffix": "In this episode of The Conversation Weekly podcast, we hear about a method called peace polling, tried out successfully in Northern Ireland, th",
+        "text": "Amid the death and suffering unleashed by Israel\u2019s war on Gaza and the Hamas attack on Israel on October 7, prospects for lasting peace between Israelis and Palestinians appear ever more elusive. But when the war eventually ends, pressure will mount for negotiations to begin for a deal. When that day comes, how can opposing sides in such an intractable conflict find enough common ground to reach an agreement?"
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "16be5d61a30e4d68517d7bae272e39ffa8b2c032d05ad54dd00545af04268ff1": true
+    }
+  },
   "https://theconversation.com/parliament-has-passed-landmark-election-donation-laws-they-may-be-a-stitch-up-but-they-also-improve-australias-democracy-249588": {
-    "archive_checked": "2026-08-17",
-    "archive_url": "http://web.archive.org/web/20260630015118/https://theconversation.com/parliament-has-passed-landmark-election-donation-laws-they-may-be-a-stitch-up-but-they-also-improve-australias-democracy-249588",
-    "checked": "2026-08-18",
+    "checked": "2026-08-20",
     "content_hash": "5b0c1af32f270843870dd0b0bfc80fd76555237fbad434a0c372897c36fc4113",
     "contexts": {
       "49bbc8ec9f768523edef0d7f16a64a5eb27d1468fed3e15af3f5b7fc38626757": {
@@ -3323,15 +3479,11 @@
     }
   },
   "https://theyvoteforyou.org.au/about": {
-    "archive_checked": "2026-08-17",
-    "archive_url": "http://web.archive.org/web/20260812053340/https://theyvoteforyou.org.au/about",
     "blocked": "HTTP_403",
-    "blocked_since": "2026-08-18"
+    "blocked_since": "2026-08-20"
   },
   "https://topics.amcham.com.tw/2017/02/make-full-use-of-join-gov-tw/": {
-    "archive_checked": "2026-08-17",
-    "archive_url": "http://web.archive.org/web/20260310102340/https://topics.amcham.com.tw/2017/02/make-full-use-of-join-gov-tw/",
-    "checked": "2026-08-18",
+    "checked": "2026-08-20",
     "content_hash": "33a12277a8f75847058928b3e1ca28b228ca8f74ed092f18be9bfca56b32eedd",
     "contexts": {
       "f2bc1350fab07763d03538042100f87084a4a232f7caa8b0f69e0187361eae48": {
@@ -3346,6 +3498,10 @@
     "verified": {
       "f2bc1350fab07763d03538042100f87084a4a232f7caa8b0f69e0187361eae48": true
     }
+  },
+  "https://vic.democrats.org.au/policies/make-victoria-s-upper-house-the-citizens-house-of-review/": {
+    "blocked": "HTTP_403",
+    "blocked_since": "2026-08-20"
   },
   "https://web.archive.org/web/20190718131041/https://policyincubator.com/home/about_us": {
     "checked": "2026-08-15",
@@ -3444,10 +3600,25 @@
       "0cc00077183835dbd3a3e72556b834ede1f50071760c2fc371935ab57980a82b": true
     }
   },
+  "https://www.aec.gov.au/FADReform/factsheets/changes-explained.htm": {
+    "checked": "2026-08-20",
+    "content_hash": "941b9aab4ba4838e3c8fb4c83e52569dbdbf2acb59e3e790cc47e88bd33560b0",
+    "contexts": {
+      "941b9aab4ba4838e3c8fb4c83e52569dbdbf2acb59e3e790cc47e88bd33560b0": {
+        "prefix": "e than $5,000 must be disclosed. Gift and electoral expenditure caps Limits on how much can be donated and spent. Faster disclosure",
+        "sha256": "941b9aab4ba4838e3c8fb4c83e52569dbdbf2acb59e3e790cc47e88bd33560b0",
+        "suffix": "New entity and definitions Introduction of nominated entities, plus updated definitions of donations, candidates, third parties and electora",
+        "text": "Donations for a federal purpose must be reported sooner (as soon as within 24 hours during an election period)."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "941b9aab4ba4838e3c8fb4c83e52569dbdbf2acb59e3e790cc47e88bd33560b0": true
+    }
+  },
   "https://www.aec.gov.au/media/2025/02-21.htm": {
-    "archive_checked": "2026-08-17",
-    "archive_url": "http://web.archive.org/web/20260609115148/https://www.aec.gov.au/media/2025/02-21.htm",
-    "checked": "2026-08-18",
+    "checked": "2026-08-20",
     "content_hash": "2beb20ec2ae5cf1a0dc25b692b98abf1d84290a99bbcf086d25a268cc81d4b81",
     "contexts": {
       "65b3f44a15f09c122d1848cadccfc32ba1876a12be0a6bff9c7c4f3e86421986": {
@@ -3464,9 +3635,7 @@
     }
   },
   "https://www.africanews.com/2026/06/30/senegals-national-assembly-passes-constitutional-reform-curbing-presidential-powers/": {
-    "archive_checked": "2026-08-17",
-    "archive_url": "http://web.archive.org/web/20260710072213/https://www.africanews.com/2026/06/30/senegals-national-assembly-passes-constitutional-reform-curbing-presidential-powers/",
-    "checked": "2026-08-18",
+    "checked": "2026-08-20",
     "content_hash": "d47f98c3c5f0fe349c26bca4fd3b5a117f29d10363bc067fe9e4ac1eb66ff5c5",
     "contexts": {
       "d47f98c3c5f0fe349c26bca4fd3b5a117f29d10363bc067fe9e4ac1eb66ff5c5": {
@@ -3500,9 +3669,7 @@
     }
   },
   "https://www.aljazeera.com/news/2026/7/17/israel-headed-for-october-election-as-parliament-dissolved": {
-    "archive_checked": "2026-08-17",
-    "archive_url": "http://web.archive.org/web/20260718002438/https://www.aljazeera.com/news/2026/7/17/israel-headed-for-october-election-as-parliament-dissolved",
-    "checked": "2026-08-18",
+    "checked": "2026-08-20",
     "content_hash": "923cb842c1d987615ed5f597a95b90b4d928a81bb979f2dbc7801dc2e274fc2c",
     "contexts": {
       "923cb842c1d987615ed5f597a95b90b4d928a81bb979f2dbc7801dc2e274fc2c": {
@@ -3512,7 +3679,7 @@
         "text": "It is a rare historical milestone, marking the first time since 1988 that a Knesset has completed its legally mandated, full four-year term."
       }
     },
-    "etag": "W/\"2dfbc-+cc6AZP73qeaUoN5pQX60J+Fhhw\"",
+    "etag": "W/\"2dfd4-6fmWhNjJ4dv/8PXTS2YW7o2NTuA\"",
     "last_modified": null,
     "verified": {
       "923cb842c1d987615ed5f597a95b90b4d928a81bb979f2dbc7801dc2e274fc2c": true
@@ -3549,9 +3716,7 @@
     }
   },
   "https://www.bbc.com/news/articles/cm2lgnze013o": {
-    "archive_checked": "2026-08-17",
-    "archive_url": "http://web.archive.org/web/20260330202415/https://www.bbc.com/news/articles/cm2lgnze013o",
-    "checked": "2026-08-18",
+    "checked": "2026-08-20",
     "content_hash": "0621279d2dccc8945937f03c73acdad703f21f0780a52ab61f6d11a7f08b66cd",
     "contexts": {
       "0621279d2dccc8945937f03c73acdad703f21f0780a52ab61f6d11a7f08b66cd": {
@@ -3561,16 +3726,14 @@
         "text": "Legislation which will let 1.7 million 16 and 17-year-olds vote at the next general election is beginning its journey through Parliament."
       }
     },
-    "etag": "\"11vxa3x9ns05vp9\"",
+    "etag": "\"naywk2zjb15vm7\"",
     "last_modified": null,
     "verified": {
       "0621279d2dccc8945937f03c73acdad703f21f0780a52ab61f6d11a7f08b66cd": true
     }
   },
   "https://www.bertelsmann-stiftung.de/en/our-projects/democracy-and-participation-in-europe/shortcut-archive/shortcut-8-trailblazers-of-digital-participation-taiwans-join-platform-and-vtaiwan": {
-    "archive_checked": "2026-08-17",
-    "archive_url": "http://web.archive.org/web/20260816162400/https://www.bertelsmann-stiftung.de/en/our-projects/democracy-and-participation-in-europe/shortcut-archive/shortcut-8-trailblazers-of-digital-participation-taiwans-join-platform-and-vtaiwan",
-    "checked": "2026-08-18",
+    "checked": "2026-08-20",
     "content_hash": "05c110afc92fb278b8ab2ca88cb1ae818a26074bf9d9d549880c39af9a005686",
     "contexts": {
       "2bb69c560807cf0c7be8d767dccd92457b40f1d32e94a61557df80263877489e": {
@@ -3602,6 +3765,10 @@
     "verified": {
       "bf278d20c04ac26c084b80ee70ed807c0154c5b84d1cafa1028e86fc663abd5b": true
     }
+  },
+  "https://www.britannica.com/topic/slavery-sociology/Slave-societies": {
+    "blocked": "HTTP_403",
+    "blocked_since": "2026-08-20"
   },
   "https://www.buildaballot.org.au/about": {
     "checked": "2026-08-18",
@@ -3708,21 +3875,15 @@
     }
   },
   "https://www.coe.int/en/web/congress/-/deliberative-democracy-in-ukraine-congress-to-support-three-citizens-assemblies-in-2025-2026": {
-    "archive_checked": "2026-08-17",
-    "archive_url": "http://web.archive.org/web/20260715143908/https://www.coe.int/en/web/congress/-/deliberative-democracy-in-ukraine-congress-to-support-three-citizens-assemblies-in-2025-2026",
     "blocked": "HTTP_403",
-    "blocked_since": "2026-08-18"
+    "blocked_since": "2026-08-20"
   },
   "https://www.coe.int/en/web/congress/-/ukraine-s-first-metropolitan-citizens-assembly-launched-in-lviv": {
-    "archive_checked": "2026-08-17",
-    "archive_url": "http://web.archive.org/web/20260617130423/https://www.coe.int/en/web/congress/-/ukraine-s-first-metropolitan-citizens-assembly-launched-in-lviv",
     "blocked": "HTTP_403",
-    "blocked_since": "2026-08-18"
+    "blocked_since": "2026-08-20"
   },
   "https://www.columbusnavigator.com/columbus-participatory-budgeting-program/": {
-    "archive_checked": "2026-08-17",
-    "archive_url": "http://web.archive.org/web/20260708214726/https://www.columbusnavigator.com/columbus-participatory-budgeting-program/",
-    "checked": "2026-08-18",
+    "checked": "2026-08-20",
     "content_hash": "b793b2e7e595240550e5e0027f6396743d963448660ec2c96fe4c59440698404",
     "contexts": {
       "b793b2e7e595240550e5e0027f6396743d963448660ec2c96fe4c59440698404": {
@@ -3733,7 +3894,7 @@
       }
     },
     "etag": null,
-    "last_modified": "Tue, 18 Aug 2026 08:51:46 GMT",
+    "last_modified": "Thu, 20 Aug 2026 04:41:59 GMT",
     "verified": {
       "b793b2e7e595240550e5e0027f6396743d963448660ec2c96fe4c59440698404": true
     }
@@ -3773,9 +3934,7 @@
     }
   },
   "https://www.demnext.org/about": {
-    "archive_checked": "2026-08-17",
-    "archive_url": "http://web.archive.org/web/20260809030057/https://www.demnext.org/about",
-    "checked": "2026-08-18",
+    "checked": "2026-08-20",
     "content_hash": "31b35e733ed03b9b4e9d03ec4028349a9d92aa6532dabeec34b3a5fc9e73b1c9",
     "contexts": {
       "31b35e733ed03b9b4e9d03ec4028349a9d92aa6532dabeec34b3a5fc9e73b1c9": {
@@ -3809,9 +3968,7 @@
     }
   },
   "https://www.democracyco.com.au/about/": {
-    "archive_checked": "2026-08-17",
-    "archive_url": "http://web.archive.org/web/20260605215840/https://www.democracyco.com.au/about/",
-    "checked": "2026-08-18",
+    "checked": "2026-08-20",
     "content_hash": "1f3342948b4e4774f63f0a457d7b23029356b55548d19d7eebc0650eb1be368f",
     "contexts": {
       "3bbbfb3bbb443ceaa2c37f75a208d4dcbed53c85459ce09db3747652442aff49": {
@@ -3893,9 +4050,7 @@
     }
   },
   "https://www.designingopendemocracy.com/blog/2018/12/18/designing-open-democracy-state-of-democracy-in-australia-in-2018/": {
-    "archive_checked": "2026-08-17",
-    "archive_url": "http://web.archive.org/web/20260105153358/https://www.designingopendemocracy.com/blog/2018/12/18/designing-open-democracy-state-of-democracy-in-australia-in-2018/",
-    "checked": "2026-08-18",
+    "checked": "2026-08-20",
     "content_hash": "5661eb95731baf8bc8b220f39a8c37c1e2f4f661f1d723a83fdf1ca002ca7933",
     "contexts": {
       "bede7c49e95577b8277ad463bb91abccf42180fb72e768eccea82d61fcd628e0": {
@@ -3905,8 +4060,8 @@
         "text": "My main thrust is government organized along scientific principles which is as much to say as the application of cybernetic principles to government. Democracy is part of that and Stafford Beer, who is the father of management cybernetics, was highly regarded by the Open Democracy organisation as witnessed by the obituary published for him by Rosemary Bechler, the International Editor, of Open Democracy - https://www.opendemocracy.net/node/611"
       }
     },
-    "etag": "W/\"6a841b70-3c1f1\"",
-    "last_modified": "Tue, 18 Aug 2026 08:44:32 GMT",
+    "etag": "W/\"6a84c58a-3c329\"",
+    "last_modified": "Tue, 18 Aug 2026 20:50:18 GMT",
     "verified": {
       "bede7c49e95577b8277ad463bb91abccf42180fb72e768eccea82d61fcd628e0": true
     }
@@ -4078,6 +4233,23 @@
       "c515926deeb8a69d5638d64083fb02b9858c9dd0483ebb8d0b1f2e47e5e4381a": true
     }
   },
+  "https://www.hrlc.org.au/news/2023-1-31-election-data-a-reminder-that-albanese-government-must-regulate-money-in-politics/": {
+    "checked": "2026-08-20",
+    "content_hash": "c0b61fc73822398c5fdadb27e28ca1ba7a4d8b7ef857942ddad70bb761452bb5",
+    "contexts": {
+      "c0b61fc73822398c5fdadb27e28ca1ba7a4d8b7ef857942ddad70bb761452bb5": {
+        "prefix": "lude another key feature of electoral law regulation that is becoming commonplace at state level: bans on large political donations altogether.",
+        "sha256": "c0b61fc73822398c5fdadb27e28ca1ba7a4d8b7ef857942ddad70bb761452bb5",
+        "suffix": "Our federal disclosure laws are so full of holes that we only know a fraction of the total financial contributions big industries are mak",
+        "text": "The Human Rights Law Centre and the #OurDemocracy campaign both made submissions supporting three key reforms: To improve transparency of political donations and election spending through lowering the disclosure threshold, requiring real time disclosure, and closing loopholes that allow millions in financial contributions to go undisclosed;"
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "c0b61fc73822398c5fdadb27e28ca1ba7a4d8b7ef857942ddad70bb761452bb5": true
+    }
+  },
   "https://www.icnl.org/resources/civic-freedom-monitor/rwanda": {
     "archive_checked": "2026-08-17",
     "archive_url": "http://web.archive.org/web/20251125122307/https://www.icnl.org/resources/civic-freedom-monitor/rwanda",
@@ -4185,9 +4357,7 @@
     }
   },
   "https://www.ipsnews.net/2026/08/pakistans-crackdown-on-journalists-comes-under-heavy-fire/": {
-    "archive_checked": "2026-08-17",
-    "archive_url": "http://web.archive.org/web/20260815125008/https://www.ipsnews.net/2026/08/pakistans-crackdown-on-journalists-comes-under-heavy-fire/",
-    "checked": "2026-08-18",
+    "checked": "2026-08-20",
     "content_hash": "e80a1fd41b599ce882e8a7a44fbb1917e922118d92eb1d73675d1a76d30616f0",
     "contexts": {
       "153ff53c86858b22df96775d102645cb5eebb91159c387a2fa85100bb6be6b26": {
@@ -4260,6 +4430,10 @@
       "67a9739f02616a8ff624b6314721d73a11d8377e9b7b2e897c28005c7728616f": true,
       "dcdf3c83bd6362ebde6b230b820a2b7af0b4deda87c90d048f17a5daa3cd4b1e": true
     }
+  },
+  "https://www.localgovernment.vic.gov.au/__data/assets/word_doc/0027/167913/Local-Government-Act-2020-Principles-Community-Engagement.docx": {
+    "blocked": "HTTP_403",
+    "blocked_since": "2026-08-20"
   },
   "https://www.masslbp.com/about": {
     "checked": "2026-08-18",
@@ -4354,7 +4528,7 @@
     }
   },
   "https://www.miragenews.com/lviv-assembly-yields-19-water-protection-1710540/": {
-    "checked": "2026-08-18",
+    "checked": "2026-08-20",
     "content_hash": "4a95448d99fd28e1a60fc86a3c31a597dd8cbb96432a4db2745092668a6d0e00",
     "contexts": {
       "c2818896dcfe240d678899972cb064bdf13ddce3baa08c29231548cefd2717fc": {
@@ -4365,7 +4539,7 @@
       }
     },
     "etag": null,
-    "last_modified": "Tue, 18 Aug 2026 08:51:22 GMT",
+    "last_modified": "Thu, 20 Aug 2026 04:41:36 GMT",
     "verified": {
       "c2818896dcfe240d678899972cb064bdf13ddce3baa08c29231548cefd2717fc": true
     }
@@ -4388,7 +4562,7 @@
     }
   },
   "https://www.mysociety.org/about/": {
-    "checked": "2026-08-18",
+    "checked": "2026-08-20",
     "content_hash": "52d9e0812b0b0946fd3970c50c5c9b87c5f75370aefb8e3917a3191793719b33",
     "contexts": {
       "386cf456651ac8ec5c84521090f481775dc04a2623290a7dbdc4f61798f30752": {
@@ -4405,9 +4579,7 @@
     }
   },
   "https://www.ndi.org/sites/default/files/2025-04/No-6-Lessons-from-Namfrel-and-Gong---NDI-Sustaining-the-Fight-for-Democracy-Lessons-from-Citizen-Election-Monitoring-Organizations-Around-the-World.pdf": {
-    "archive_checked": "2026-08-17",
-    "archive_url": "http://web.archive.org/web/20251013031615/https://ndi.org/sites/default/files/2025-04/No-6-Lessons-from-Namfrel-and-Gong---NDI-Sustaining-the-Fight-for-Democracy-Lessons-from-Citizen-Election-Monitoring-Organizations-Around-the-World.pdf",
-    "checked": "2026-08-18",
+    "checked": "2026-08-20",
     "content_hash": "5fbe15a7c0d48360371d472f99eff320fa0f3029c79696caec929e92ea2e44cd",
     "contexts": {
       "dc694bf6a0921fdcc3efc773bfb68958a891b71e07cb46f8d87ec0e71a802869": {
@@ -4447,9 +4619,7 @@
     }
   },
   "https://www.newdemocracy.com.au/board-and-executive/": {
-    "archive_checked": "2026-08-17",
-    "archive_url": "http://web.archive.org/web/20260123164930/https://www.newdemocracy.com.au/board-and-executive/",
-    "checked": "2026-08-18",
+    "checked": "2026-08-20",
     "content_hash": "f82fb37738cf86f81a3f595391ff5b26fa3727e20672f5e910b8899dc2578be2",
     "contexts": {},
     "etag": null,
@@ -4459,50 +4629,17 @@
     }
   },
   "https://www.newdemocracy.com.au/history/": {
-    "archive_checked": "2026-08-17",
-    "archive_url": "http://web.archive.org/web/20260816154940/https://www.newdemocracy.com.au/history/",
-    "checked": "2026-08-18",
+    "checked": "2026-08-20",
     "content_hash": "3edb657c20fca0f0a9cdadc1ef77a88b61171ac8ba192143400233fa5bfa776b",
-    "contexts": {
-      "4a36d9c43ada44cee83a012dad678849759d7496cc9db875a8a847aaacd40985": {
-        "prefix": "tary and a handbook. Based on that guide, Kyle and Luca wrote a modest little book in 2021, with an immodest title: \u2018The A,B & C of Democracy\u2019.",
-        "sha256": "b032384e6b226735fac8f0882e54c4ceef7dc3c2dd726c8508110dfbd2115101",
-        "suffix": "After that success, we then decided with David van Reybrouck, who also led the Belgium group, to establish FIDE \u2013 Federation for Innovation in Democr",
-        "text": "Still in 2018, we were invited to travel to Belgium with a several other academics and practitioners to consult on what would become the world\u2019s first permanent Citizens\u2019 Council in Eupen, the capital of the autonomous Ostbelgien region. After that success, we then decided with David van Reybrouck, who also led the Belgium group, to establish FIDE \u2013 Federation for Innovation in Democracy Europe \u2014 as resource for expert advice on deliberative democracy in Europe. Yves Dejaeghere was appointed as the inaugural Executive Director, who successfully secured the underwriting support of several other international philanthropies. Back in Australia, in 2021, we launched Change Politics \u2014 a public facing campaign led by Polly Cameron, and kicked off with a spoof clip featuring Osher Gunsberg."
-      },
-      "6ddebb3aec3951ce145480c2d335b1acdcb4f5aa4457a102dc11b83e5a8fe456": {
-        "prefix": "search The story so far (and the route ahead) Australia, Europe and elsewhere",
-        "sha256": "b73ba4eaf03a69d08166d2d887e8b5fccc7bc2bc7bad2951386affc055578898",
-        "suffix": "Many colleagues have helped float this boat. We must note the contribution especially of Fred Chaney and John Button, former Senators who lent their",
-        "text": "The newDemocracy Foundation was launched in 2007, with Luca Belgiorno-Nettis, Lyn Carson, Kathy Jones and Ian Marsh as the inaugural directors. Many colleagues have helped float this boat. We must note the contribution especially of Fred Chaney and John Button, former Senators who lent their names, and thus credibility to our early endeavours. Geoff Gallop and Nick Greiner \u2014 former State Premiers \u2014 took up the reins thereafter. You can find all our generous friends on the Supporters page."
-      },
-      "cc111445acd794c512bc7ff165906f707e6c6bcb43b82accd169ffeba419a4f1": {
-        "prefix": "lt her business into one of Australia\u2019s foremost consultancies. Ian was a well-respected academic and political adviser to various Federal Ministers.",
-        "sha256": "e34739f08d9203fc55e4dd0282920f9ca4e1d29dc6a7c276558ecf94e784e229",
-        "suffix": "Our first big project was the Australian Citizens\u2019 Parliament in 2009, which was an Australian Research Centre-funded citizens\u2019 assembly involv",
-        "text": "Our founders have diverse backgrounds. Carson had designed and convened some of the first citizens\u2019 juries in Australia a decade earlier. Kathy was \u2014 and still is \u2014 a leading practitioner in community engagement, having built her business into one of Australia\u2019s foremost consultancies. Ian was a well-respected academic and political adviser to various Federal Ministers. Luca had a 30-year career in Transfield, a large infrastructure and engineering company founded by his father."
-      },
-      "e84567dc0ad975cc7a82a955c502f06d673cc33abf48b5c40cc77a70d2a89af5": {
-        "prefix": "er to various Federal Ministers. Luca had a 30-year career in Transfield, a large infrastructure and engineering company founded by his father.",
-        "sha256": "132f0898f4592633ade7c0ba3440c72374fddeff3062d4c355f5efaa2373c347",
-        "suffix": "We then decided in 2011 to get serious and employed our first full-time executive, Iain Walker. Over the next decade, Iain successfully reached out t",
-        "text": "Our first big project was the Australian Citizens\u2019 Parliament in 2009, which was an Australian Research Centre-funded citizens\u2019 assembly involving 150 Australians deliberating on how to strengthen Australia\u2019s system of government. We then decided in 2011 to get serious and employed our first full-time executive, Iain Walker. Over the next decade, Iain successfully reached out to government clients and undertook more than 30 citizens\u2019 juries/assemblies."
-      }
-    },
+    "contexts": {},
     "etag": null,
     "last_modified": null,
     "verified": {
-      "16875b3a7fbc11dc2b9fed805ea528795b884dd7535d92fe438880445db482d6": true,
-      "4a36d9c43ada44cee83a012dad678849759d7496cc9db875a8a847aaacd40985": true,
-      "6ddebb3aec3951ce145480c2d335b1acdcb4f5aa4457a102dc11b83e5a8fe456": true,
-      "cc111445acd794c512bc7ff165906f707e6c6bcb43b82accd169ffeba419a4f1": true,
-      "e84567dc0ad975cc7a82a955c502f06d673cc33abf48b5c40cc77a70d2a89af5": true
+      "16875b3a7fbc11dc2b9fed805ea528795b884dd7535d92fe438880445db482d6": true
     }
   },
   "https://www.oaf.org.au/2022/03/23/senator-for-nsw-andrew-bragg-threatens-openaustralia-foundation-with-legal-action/": {
-    "archive_checked": "2026-08-17",
-    "archive_url": "http://web.archive.org/web/20251230133337/https://oaf.org.au/2022/03/23/senator-for-nsw-andrew-bragg-threatens-openaustralia-foundation-with-legal-action/",
-    "checked": "2026-08-18",
+    "checked": "2026-08-20",
     "content_hash": "d29f03044da8e598f3eeb34d7ac6f647fe999c30fb763f295c66e4d61773149a",
     "contexts": {
       "292a5491284943180173e19421b4b1906053adf3c0b79e98d2736277bfe08b0a": {
@@ -4519,12 +4656,10 @@
     }
   },
   "https://www.opendemocracy.net/en/can-europe-make-it/agora-votingnvotes/": {
-    "archive_checked": "2026-08-17",
-    "archive_url": "http://web.archive.org/web/20240520061254/https://www.opendemocracy.net/en/can-europe-make-it/agora-votingnvotes/",
-    "checked": "2026-08-18",
-    "content_hash": "b526aba0dd3fa0fdf8bfe522c3f91ce0ea9e16d80a19413b8fcc2cf5184b2d41",
+    "checked": "2026-08-20",
+    "content_hash": "d96762f3e5e2558aa90e617d645ab1d4f6dff869573a9e730d4f776888a96945",
     "contexts": {},
-    "etag": "W/\"23174-Kjm+jA8f9or3m7QDO+/qwepQt2Y\"",
+    "etag": "W/\"24579-W/xfi5x4jdWFdOnfv24AWFkpjgg\"",
     "last_modified": null,
     "verified": {
       "6af77572e19c01f07ceb0d60910df68777c10dbaaa7e6bd289cf8fce49a116f7": false
@@ -4548,6 +4683,10 @@
     "verified": {
       "293e418718692e3bb196f9650c54668492fb14c4166ba7e4edb10bbc3c8b2e03": true
     }
+  },
+  "https://www.parliament.vic.gov.au/get-involved/inquiries/electoralsysteminquiry/reports": {
+    "blocked": "HTTP_403",
+    "blocked_since": "2026-08-20"
   },
   "https://www.participatorybudgeting.org/about/": {
     "checked": "2026-08-18",
@@ -4628,7 +4767,7 @@
     }
   },
   "https://www.peoplepowered.org/news-content/digital-participation-case-study-taiwan": {
-    "checked": "2026-08-18",
+    "checked": "2026-08-20",
     "content_hash": "302a97ff4a746653f8e489f47e644e637a3589acb7c57ab81e73833b181f7df4",
     "contexts": {
       "8b1132d10f23f3c8368c2b3e9233c0fb121095a3bdafd9c9521eb699bd32f69d": {
@@ -4638,7 +4777,7 @@
         "text": "vTaiwan has always demonstrated how civic communities can innovate in democratic participation by combining open-source platforms, commercial tools, and AI. Currently, the community integrates tools such as"
       }
     },
-    "etag": "W/\"f4d4513ae9e92455a815ccad911ed24a\"",
+    "etag": "W/\"71648844ed7e658a9646d5b44335cdf6\"",
     "last_modified": null,
     "verified": {
       "8b1132d10f23f3c8368c2b3e9233c0fb121095a3bdafd9c9521eb699bd32f69d": true
@@ -4730,9 +4869,7 @@
     }
   },
   "https://www.prnewswire.com/news-releases/eiu-democracy-index-2025-democracy-stabilises-after-eight-years-of-decline-302734863.html": {
-    "archive_checked": "2026-08-17",
-    "archive_url": "http://web.archive.org/web/20260408064148/https://www.prnewswire.com/news-releases/eiu-democracy-index-2025-democracy-stabilises-after-eight-years-of-decline-302734863.html",
-    "checked": "2026-08-18",
+    "checked": "2026-08-20",
     "content_hash": "3d3d143432a45a9e57b0b55d1b17df424670d18170ec6c8bc58994302830ae42",
     "contexts": {
       "af23cbf0ae3bafbbbb5531809c026baf4d8595c0db87d1cdb843a288390bea75": {
@@ -4743,7 +4880,7 @@
       }
     },
     "etag": null,
-    "last_modified": "Tue, 11 Aug 2026 21:55:14 GMT",
+    "last_modified": "Wed, 19 Aug 2026 02:41:15 GMT",
     "verified": {
       "af23cbf0ae3bafbbbb5531809c026baf4d8595c0db87d1cdb843a288390bea75": true
     }
@@ -4800,9 +4937,7 @@
     }
   },
   "https://www.radicalxchange.org/about/": {
-    "archive_checked": "2026-08-17",
-    "archive_url": "http://web.archive.org/web/20260817141413/https://www.radicalxchange.org/about/",
-    "checked": "2026-08-18",
+    "checked": "2026-08-20",
     "content_hash": "244f6412e7c68526636b169b60dc572308662e0b13290c07caffdf047e612caa",
     "contexts": {
       "93585aa0a00f2cf98a88445720db53165d4f4aa8b4a7dcc05f495e02260621a3": {
@@ -4821,6 +4956,8 @@
   "https://www.radicalxchange.org/events/2019-conference": {
     "archive_checked": "2026-08-17",
     "archive_url": "http://web.archive.org/web/20260611115230/https://www.radicalxchange.org/events/2019-conference/",
+    "blocked": "ROBOTS_DISALLOWED",
+    "blocked_since": "2026-08-20",
     "checked": "2026-08-18",
     "content_hash": "6264021384b8cad5ea6531a2398d14fd4ceb4b4a5b5210e06025c57f982233bc",
     "contexts": {
@@ -4838,9 +4975,7 @@
     }
   },
   "https://www.radicalxchange.org/team/jess-scully/": {
-    "archive_checked": "2026-08-17",
-    "archive_url": "http://web.archive.org/web/20260817141451/https://www.radicalxchange.org/team/jess-scully/",
-    "checked": "2026-08-18",
+    "checked": "2026-08-20",
     "content_hash": "d3a3d62f5a46a4d90930a332cc63859711e441182f58754d2c62e0211868ade6",
     "contexts": {
       "d3a3d62f5a46a4d90930a332cc63859711e441182f58754d2c62e0211868ade6": {
@@ -4858,7 +4993,7 @@
   },
   "https://www.science.org/doi/10.1126/science.adq2852": {
     "blocked": "HTTP_403",
-    "blocked_since": "2026-08-18"
+    "blocked_since": "2026-08-20"
   },
   "https://www.socentral.no/aktuelt": {
     "archive_checked": "2026-08-17",
@@ -4951,53 +5086,16 @@
     }
   },
   "https://www.sortitionfoundation.org/become_a_member_australia": {
-    "archive_checked": "2026-08-17",
-    "archive_url": "http://web.archive.org/web/20260816163112/https://www.sortitionfoundation.org/become_a_member_australia",
     "blocked": "HTTP_403",
-    "blocked_since": "2026-08-18",
-    "checked": "2026-08-14",
-    "content_hash": "8252ba80f0cbb1d791ff8cd8b5872c27e4f11fde9e1d2df7e23773be63ba74a4",
-    "contexts": {
-      "f0d9f84381b92c97bcf1f0ddc129417fe3ea0483b8279ad79bc075cc201659ba": {
-        "prefix": "Sortition Foundation Australia Chapter 03 September, 2020 Sortition Foundation Australia Chapter",
-        "sha256": "8252ba80f0cbb1d791ff8cd8b5872c27e4f11fde9e1d2df7e23773be63ba74a4",
-        "suffix": "if you want to help, or just want to learn more about sortition in Australia. The Sortition Foundation Australia Chapter meets once a month onl",
-        "text": "We want to change the way politics is done in Australia! Join us if you want to help, or just want to learn more about sortition in Australia."
-      }
-    },
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "f0d9f84381b92c97bcf1f0ddc129417fe3ea0483b8279ad79bc075cc201659ba": true
-    }
+    "blocked_since": "2026-08-20"
   },
   "https://www.sortitionfoundation.org/ecps_2025": {
-    "archive_checked": "2026-08-17",
-    "archive_url": "http://web.archive.org/web/20260517123216/https://www.sortitionfoundation.org/ecps_2025",
     "blocked": "HTTP_403",
-    "blocked_since": "2026-08-18",
-    "checked": "2026-08-14",
-    "content_hash": "e68c639682af8645dfa561c38b58792fdec558d0e0b5255062b2c9424363b318",
-    "contexts": {},
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "f17590386deaa19fd3088fc7fb291712a7519d31aedf4bcf27d6c7324a68d326": false
-    }
+    "blocked_since": "2026-08-20"
   },
   "https://www.sortitionfoundation.org/gm_polling_may_2026": {
-    "archive_checked": "2026-08-17",
-    "archive_url": "http://web.archive.org/web/20260517115015/https://www.sortitionfoundation.org/gm_polling_may_2026",
     "blocked": "HTTP_403",
-    "blocked_since": "2026-08-18",
-    "checked": "2026-08-14",
-    "content_hash": "5d5fea50d84db458511c9444616083aaba007fbaca96e695e5f05d1b07d61a9b",
-    "contexts": {},
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "532201edf6a343fbcffefd73a71ea2da04f10c9279b4b2575e2cd08bb3ed7800": false
-    }
+    "blocked_since": "2026-08-20"
   },
   "https://www.sortitionfoundation.org/history": {
     "archive_checked": "2026-08-17",
@@ -5006,72 +5104,36 @@
     "blocked_since": "2026-08-18"
   },
   "https://www.sortitionfoundation.org/introducing_the_open_democratic_lottery_platform": {
-    "archive_checked": "2026-08-17",
-    "archive_url": "http://web.archive.org/web/20260611072100/https://www.sortitionfoundation.org/introducing_the_open_democratic_lottery_platform",
     "blocked": "HTTP_403",
-    "blocked_since": "2026-08-18",
-    "checked": "2026-08-14",
-    "content_hash": "c89b222c503bde006daa8f785412fc3d77d57189bdbbb23bb956dfbdca2468b0",
-    "contexts": {
-      "0b3365698aa53adaff7dc1203d5fc1464d83ea0e786a8c44aaade745adc6fbdc": {
-        "prefix": "OpenDLP). Sortition Lab is where we develop tools and applications to support and enhance the work we and our partners do to upgrade democracy.",
-        "sha256": "c89b222c503bde006daa8f785412fc3d77d57189bdbbb23bb956dfbdca2468b0",
-        "suffix": "Work began earlier this year on what will be a three-year project in total. Since we started Sortition Foundation in 2017 we have run these sor",
-        "text": "Sortition Lab is where we develop tools and applications to support and enhance the work we and our partners do to upgrade democracy. Last year we secured funding to build OpenDLP, a brand new open-source digital platform that will make democratic lotteries more inclusive by automating the process for selecting participants for citizens' assemblies. Work began earlier this year on what will be a three-year project in total."
-      }
-    },
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "0b3365698aa53adaff7dc1203d5fc1464d83ea0e786a8c44aaade745adc6fbdc": true
-    }
+    "blocked_since": "2026-08-20"
   },
   "https://www.sortitionfoundation.org/uk_poll_may_2025": {
-    "archive_checked": "2026-08-17",
-    "archive_url": "http://web.archive.org/web/20260517124701/https://www.sortitionfoundation.org/uk_poll_may_2025",
     "blocked": "HTTP_403",
-    "blocked_since": "2026-08-18",
-    "checked": "2026-08-14",
-    "content_hash": "76cbc4516cc42d9b46da26b9ffbcd00d0a59014ef0164e2d43e5fdd494894510",
-    "contexts": {
-      "76cbc4516cc42d9b46da26b9ffbcd00d0a59014ef0164e2d43e5fdd494894510": {
-        "prefix": "K polling May 2025 08 May, 2025 New poll finds widespread support for replacing the House of Lords",
-        "sha256": "76cbc4516cc42d9b46da26b9ffbcd00d0a59014ef0164e2d43e5fdd494894510",
-        "suffix": "Polling published today on trust and House of Lords reform show that 2024 Reform voters trust citizen assembly members more, and members of par",
-        "text": "43% of British adults, including 46% of adults living in the North, say that replacing the House of Lords with a citizens' assembly would increase their trust in politics"
-      }
-    },
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "76cbc4516cc42d9b46da26b9ffbcd00d0a59014ef0164e2d43e5fdd494894510": true
-    }
+    "blocked_since": "2026-08-20"
   },
   "https://www.sortitionfoundation.org/updates": {
-    "archive_checked": "2026-08-17",
-    "archive_url": "http://web.archive.org/web/20260816163213/https://www.sortitionfoundation.org/updates",
     "blocked": "HTTP_403",
-    "blocked_since": "2026-08-18",
-    "checked": "2026-08-14",
-    "content_hash": "05e23ba79346effd609cc1870a89e497347acc7aeef95914a4a5fce483609883",
+    "blocked_since": "2026-08-20"
+  },
+  "https://www.strongercharities.org.au/2025/02/11/media-release-charities-call-for-critical-amendments-to-the-electoral-reform-bill/": {
+    "checked": "2026-08-20",
+    "content_hash": "59e5e6596b61408992db0c6beaa9cff12d7f4d7813d54159865b88d2ce57e02c",
     "contexts": {
-      "150fd71baf8893dbc2177e200ec31f46c487ac7f74a30b4b4dda3fd71d7423ab": {
-        "prefix": "Home Learn more Read Our Latest News Latest News 26 February,",
-        "sha256": "05e23ba79346effd609cc1870a89e497347acc7aeef95914a4a5fce483609883",
-        "suffix": "18 June, 2026 We're looking for a new Independent Director Jobs",
-        "text": "26 February, 2026 Frontiers of Democratic Lotteries Workshop"
+      "8fc9eda11d9588c25a9de54eafe5a16d46de1760798789aa572b54fd461168fc": {
+        "prefix": "d under electoral laws across different Australian jurisdictions. Saffron Zomer, Executive Director of the Australian Democracy Network: \u201c",
+        "sha256": "59e5e6596b61408992db0c6beaa9cff12d7f4d7813d54159865b88d2ce57e02c",
+        "suffix": "New election rules need to recognise this. If the Albanese government takes a one-size-fits-all approach to electoral reform, then the outcome",
+        "text": "\u201cCharities aren\u2019t the same as political parties. We don\u2019t make laws, we can\u2019t form a government, and we\u2019re legally bound to pursue the public interest. New election rules need to recognise this."
       }
     },
     "etag": null,
-    "last_modified": null,
+    "last_modified": "Thu, 20 Aug 2026 04:40:17 GMT",
     "verified": {
-      "150fd71baf8893dbc2177e200ec31f46c487ac7f74a30b4b4dda3fd71d7423ab": true
+      "8fc9eda11d9588c25a9de54eafe5a16d46de1760798789aa572b54fd461168fc": true
     }
   },
   "https://www.taipeitimes.com/News/feat/archives/2024/10/19/2003825522": {
-    "archive_checked": "2026-08-17",
-    "archive_url": "http://web.archive.org/web/20250722141828/https://www.taipeitimes.com/News/feat/archives/2024/10/19/2003825522",
-    "checked": "2026-08-18",
+    "checked": "2026-08-20",
     "content_hash": "13429b28b808a37178bbcb73466c6cc98719396495afe40e3f6a38e09f4603df",
     "contexts": {
       "46ccffac9e18bfa51ab10733c173cb9ae7161bf5f553df9c958b8fefa8fafdb8": {
@@ -5120,9 +5182,7 @@
     "blocked_since": "2026-08-18"
   },
   "https://www.v-dem.net/news/press-release-democratic-backsliding-reaches-western-democracies-with-us-decline-unprecedented/": {
-    "archive_checked": "2026-08-17",
-    "archive_url": "http://web.archive.org/web/20260804153308/https://v-dem.net/news/press-release-democratic-backsliding-reaches-western-democracies-with-us-decline-unprecedented/",
-    "checked": "2026-08-18",
+    "checked": "2026-08-20",
     "content_hash": "8719fcc915dba62c3080a9aef3563938f89a9d8fa31931225b2a53579c055860",
     "contexts": {
       "79de61ccb5acd6cff63f799f78957058e8cee0857ddd49de79194029a6061145": {
@@ -5160,7 +5220,7 @@
     "blocked_since": "2026-08-18"
   },
   "https://www.whitehouse.senate.gov/news/release/whitehouse-grassley-issue-statement-on-treasury-departments-final-rule-dismantling-key-element-of-corporate-transparency-act/": {
-    "checked": "2026-08-18",
+    "checked": "2026-08-20",
     "content_hash": "d55c769b037771a6bcfebae4f7146ec5b70d2a18c8b769c4f6e9312cd36c382f",
     "contexts": {
       "f97e3fb83d4f8f4a6b2eac9aaea025cfb0a7328d0ab6588245072af0a42f9548": {
@@ -5177,13 +5237,11 @@
     }
   },
   "https://www.wisdomandaction.com.au/": {
-    "archive_checked": "2026-08-17",
-    "archive_url": "http://web.archive.org/web/20260817141510/https://www.wisdomandaction.com.au/",
-    "checked": "2026-08-18",
+    "checked": "2026-08-20",
     "content_hash": "093e6afce3be88ff08491be4a68365e5ebafd4769594f98cd120474ea9daa932",
     "contexts": {},
     "etag": null,
-    "last_modified": "Mon, 17 Aug 2026 04:51:43 GMT",
+    "last_modified": "Mon, 17 Aug 2026 02:44:20 GMT",
     "verified": {
       "9589f103a07f2e4200cd0e9f25b7e415aa22c030e2b4cad981e961485fd96a7f": true
     }
@@ -5206,9 +5264,7 @@
     }
   },
   "https://www.ynetnews.com/article/r17pwltnmg": {
-    "archive_checked": "2026-08-17",
-    "archive_url": "http://web.archive.org/web/20260720062208/https://www.ynetnews.com/article/r17pwltnmg",
-    "checked": "2026-08-18",
+    "checked": "2026-08-20",
     "content_hash": "2debb0f237451ebd770968b59c465a9a55ac4bfa13322b73d8b57f17b26369d4",
     "contexts": {
       "c2eea83ca832d9e5ce27ca000077c14e6c2b916129f786692b93e45cf7b8a486": {
@@ -5219,9 +5275,26 @@
       }
     },
     "etag": null,
-    "last_modified": "Tue, 18 Aug 2026 08:51:36 GMT",
+    "last_modified": "Thu, 20 Aug 2026 04:41:50 GMT",
     "verified": {
       "c2eea83ca832d9e5ce27ca000077c14e6c2b916129f786692b93e45cf7b8a486": true
+    }
+  },
+  "https://www.yourparty.uk/sortition/": {
+    "checked": "2026-08-20",
+    "content_hash": "ac9bb372014623400e082b9c8b75e0bb933f9257412bbcbe919acb286a30185b",
+    "contexts": {
+      "ac9bb372014623400e082b9c8b75e0bb933f9257412bbcbe919acb286a30185b": {
+        "prefix": "roup\u2019s voice is unheard. If any places remain unfilled after the two rounds, the whole process will be repeated among the remaining membership.",
+        "sha256": "ac9bb372014623400e082b9c8b75e0bb933f9257412bbcbe919acb286a30185b",
+        "suffix": "Will sortition be used permanently? That\u2019s up to members! Whether sortition will be used by Your Party for future conferences, or whether",
+        "text": "This process is being conducted in partnership with the Sortition Foundation, who are responsible for running the sortition selection to ensure independence and integrity."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "ac9bb372014623400e082b9c8b75e0bb933f9257412bbcbe919acb286a30185b": true
     }
   }
 }

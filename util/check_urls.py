@@ -39,6 +39,9 @@ except ImportError:
     print("Missing dependency: pip install requests")
     sys.exit(1)
 
+sys.path.insert(0, os.path.dirname(__file__))
+from robots_check import robots_allowed  # noqa: E402
+
 DOCS_DIR = os.path.join(os.path.dirname(__file__), "..", "docs")
 ORGS_DIR = os.path.join(DOCS_DIR, "organisations")
 SKIP_FILES = {"index.md"}
@@ -153,9 +156,18 @@ def main():
     print(f"    {skipped_recent} skipped (recently verified)  "
           f"|  {skipped_wayback} Wayback exceptions skipped\n")
 
-    ok = redirects = errors = 0
+    ok = redirects = errors = blocked = 0
+    session = requests.Session()
+    session.headers.update(HEADERS)
 
     for p in pages:
+        if not robots_allowed(p["website"], HEADERS["User-Agent"], timeout=args.timeout, session=session):
+            print(f"  ⊘  {p['title']}  [BLOCKED by robots.txt]")
+            blocked += 1
+            if args.delay:
+                time.sleep(args.delay)
+            continue
+
         result, code, detail = check_url(p["website"], args.timeout)
         code_str = f" ({code})" if code else ""
 
@@ -178,6 +190,7 @@ def main():
             time.sleep(args.delay)
 
     print(f"\nSummary: {ok} OK  |  {redirects} redirect(s)  |  {errors} error(s)"
+          f"  |  {blocked} blocked by robots.txt"
           f"  ({len(pages)} checked)\n")
 
 

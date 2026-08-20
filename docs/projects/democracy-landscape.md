@@ -15,30 +15,23 @@ Internal project covering the technical infrastructure that keeps the [Democracy
 - **Activity tracking** — automated scripts probe org websites for RSS feeds, sitemaps, and structured news content to keep "last active" dates current
 - **Data quality** — URL reachability checks, Wikipedia link verification, frontmatter consistency
 - **Data exports** — CSV, JSON, GeoJSON, and KML snapshots generated at build time from org frontmatter
-- **Bot infrastructure** — unified crawler identity, robots.txt compliance, public [bot page](../bot.md)
+- **Bot infrastructure** — unified crawler identity, robots.txt compliance via a shared `util/robots_check.py` implementation (see the [bot page](../bot.md) for the one deliberate exception), public [bot page](../bot.md)
 
 ## Tooling
 
-Utility scripts live under [`util/`](https://github.com/DesigningOpenDemocracy/DesigningOpenDemocracy.github.io/tree/main/util):
-
-| Script | Purpose |
-|---|---|
-| `check_rss.py` | Probes for RSS/Atom feeds and sitemaps; writes latest post dates to frontmatter |
-| `scrape_news.py` | Scrapes news pages for orgs without feeds (opt-in via `news_page:` frontmatter) |
-| `check_urls.py` | Verifies org website URLs are still reachable |
-| `check_wikipedia.py` | Checks Wikipedia links in org pages resolve correctly |
-
-All scripts identify as `DOD-Bot/1.0` — see the [bot page](../bot.md) for details.
+Utility scripts live under [`util/`](https://github.com/DesigningOpenDemocracy/DesigningOpenDemocracy.github.io/tree/main/util) and are documented in three places depending on kind: `util/SOUL.md` for the core org-maintenance workflow (staleness, structural lint, `stamp.py`/`check_orgs.py`/etc.), `CLAUDE.md`'s "Utility scripts" section for citation/event-sourcing verification tooling, and the [bot page](../bot.md) for exactly which scripts run automatically vs. by hand, at what frequency, and their `robots.txt` behavior — that table isn't repeated here to avoid the two drifting apart.
 
 ## Recurring tasks
 
-Run these periodically (roughly monthly) during maintenance passes:
+See [`MAINTENANCE.md`](https://github.com/DesigningOpenDemocracy/DesigningOpenDemocracy.github.io/blob/main/MAINTENANCE.md) at the repo root for the full step-by-step maintenance pass. In short:
 
 ```bash
 python util/check_rss.py --update-activity   # update activity dates from feeds
 python util/scrape_news.py                   # update activity dates from news pages
 python util/check_urls.py                    # verify org URLs still resolve
 ```
+
+`check_rss.py` and `scrape_news.py` also run automatically every week via GitHub Actions (see the [bot page](../bot.md)); `check_urls.py` is a manual, human-run step, done roughly quarterly.
 
 ## Future ideas
 

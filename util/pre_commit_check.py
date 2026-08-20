@@ -11,7 +11,9 @@ Hard failures (exit 1):
   check_concepts — invalid concept slugs on org pages
 
 Informational only (always shown, never blocks):
-  lint_orgs     — structural issues; 4 known Wayback exceptions always appear
+  lint_orgs     — structural issues; a small number of active orgs are
+                  deliberate Wayback-URL exceptions (see util/SOUL.md) and
+                  will always appear here — don't "fix" those to a live URL
 
 Usage:
     python util/pre_commit_check.py
@@ -56,7 +58,8 @@ def main():
     failures = []
 
     section("1/3  lint_orgs  (informational)")
-    print("     4 known Wayback exceptions will always appear here.\n")
+    print("     A small number of active orgs are deliberate Wayback-URL "
+          "exceptions (see util/SOUL.md) and will always appear here.\n")
     lint_args = ["--fix-hints"] if args.fix_hints else []
     run("lint_orgs.py", *lint_args)
 

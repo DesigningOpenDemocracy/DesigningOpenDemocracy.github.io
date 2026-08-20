@@ -131,8 +131,11 @@ Run for concepts with low org coverage. Add tags where the match is genuine.
 python util/pre_commit_check.py
 ```
 
-Fix any hard failures. The 4 known lint exceptions (FLACSO-Cuba, Kongra Star,
-Memorial, NAMFREL) are expected — do not touch them. See util/SOUL.md.
+Fix any hard failures. A small number of active orgs are deliberate
+Wayback-URL exceptions and are expected to show up here — do not touch
+them. The set changes over time (see util/SOUL.md for why and the current
+set); run `python util/lint_orgs.py` rather than trusting a name list in
+prose, including this one.
 
 ### 5. Read the room (commentary research)
 

@@ -118,7 +118,7 @@ RadicalxChange's Melbourne chapter is newly forming. A public launch event — "
 
 [^glenweyl]: "Founded by economist Glen Weyl in 2018, the RadicalxChange Foundation is a 501(c)(3) nonprofit dedicated to advancing the RxC movement, to building community, and to education about democratic innovation." ["RadicalxChange"](https://glenweyl.com/radicalxchange/), E. Glen Weyl personal site.
 
-[^propublica]: "Radicalxchange Foundation Ltd, Moraga, CA, Tax-exempt since July 2019, EIN: 83-2183139" [RadicalxChange Foundation Ltd — Nonprofit Explorer](https://projects.propublica.org/nonprofits/organizations/832183139), ProPublica.
+[^propublica]: "Radicalxchange Foundation Ltd Moraga, CA Tax-exempt since July 2019 EIN: 83-2183139" [RadicalxChange Foundation Ltd — Nonprofit Explorer](https://projects.propublica.org/nonprofits/organizations/832183139), ProPublica.
 
 [^rxc-about]: "RadicalxChange sparks imagination for transformative systems change." ["About"](https://www.radicalxchange.org/about/), RadicalxChange Foundation.
 

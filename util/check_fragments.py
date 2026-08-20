@@ -85,6 +85,7 @@ from text_fragment import (  # noqa: E402
     quote_matches, spacing_autofix,
 )
 import reorder_frontmatter  # noqa: E402 — canonical frontmatter re-serialization for the autofix fallback
+from robots_check import robots_allowed  # noqa: E402
 
 DOCS_DIR = os.path.join(os.path.dirname(__file__), "..", "docs")
 ORG_DIR = os.path.join(DOCS_DIR, "organisations")
@@ -105,12 +106,12 @@ BLOCK_PATTERN = re.compile(
 )
 PARAGRAPH_DELIM = "\x00P\x00"
 
-# HTTP statuses that mean "this site's bot protection said no," not "try
-# again later" — 500s, timeouts, and DNS errors are transient and should
-# still be retried every run, but a 403/429 from the same server, week
-# after week, isn't new information. See check_evidence()'s "blocked"
-# cache field.
-BLOCKED_ERRORS = {"HTTP_403", "HTTP_429"}
+# Errors that mean "this site's bot protection (or its own robots.txt)
+# said no," not "try again later" — 500s, timeouts, and DNS errors are
+# transient and should still be retried every run, but a 403/429 (or a
+# robots.txt Disallow) from the same server, week after week, isn't new
+# information. See check_evidence()'s "blocked" cache field.
+BLOCKED_ERRORS = {"HTTP_403", "HTTP_429", "ROBOTS_DISALLOWED"}
 
 
 def load_cache():
@@ -267,6 +268,13 @@ def _fetch_page_text(url, headers):
             r.raise_for_status()
             pages = r.json().get("query", {}).get("pages", {})
             return next(iter(pages.values())).get("extract", ""), r, None
+        # Wikipedia's own REST/action API is deliberately not gated above —
+        # it's designed for exactly this kind of programmatic access (see
+        # CLAUDE.md's "Sourcing from Wikipedia"). Every other citation URL
+        # is a third-party org's own site, so honor its robots.txt the same
+        # way docs/bot.md promises for the rest of DOD's bot.
+        if not robots_allowed(url, USER_AGENT, timeout=15, session=requests):
+            return None, None, "ROBOTS_DISALLOWED"
         r = requests.get(url, headers=headers, timeout=15)
         if r.status_code == 304:
             return None, r, None

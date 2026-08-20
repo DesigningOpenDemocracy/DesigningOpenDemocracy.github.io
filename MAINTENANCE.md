@@ -189,8 +189,11 @@ python util/pre_commit_check.py
 ```
 
 Catches broken internal links and invalid concept slugs. Fix any hard failures
-before committing. The four known lint exceptions (FLACSO-Cuba, Kongra Star,
-Memorial, NAMFREL) are expected — see `util/SOUL.md`.
+before committing. A small number of active orgs are deliberate Wayback-URL
+exceptions and are expected to show up here — see `util/SOUL.md` for the
+current set and why (the set changes over time, so don't rely on a name list
+in prose, including this one — run `python util/lint_orgs.py` to see who's
+currently flagged).
 
 ---
 
