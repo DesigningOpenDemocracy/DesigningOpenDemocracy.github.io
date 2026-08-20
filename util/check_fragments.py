@@ -46,6 +46,17 @@ skipped on re-runs the same way. A transient error (a timeout, a 500) is
 NOT sticky like this — only 403/429 are, since those are the ones that
 mean "this server doesn't want scripted requests," not "try again later."
 
+A newly-blocked URL is queued into manual-dump/requests.txt (see
+util/manual_dump.py) — a plain-text worklist for a human to open each URL
+in a real browser and save it, since bot-protection and rate limits (both
+the origin site's own and Wayback Machine's Save Page Now) can make a page
+unreachable to every automated path here even though a human can still
+read it fine. util/import_manual_dump.py turns a saved snapshot into a
+cache[url]["manual_verified"] entry, which check_evidence() checks before
+falling back to STILL BLOCKED — so a manually-resolved citation stops
+being reported as blocked without ever needing the origin site itself to
+start cooperating again.
+
 Usage:
     python util/check_fragments.py           # verify all events + footnotes
     python util/check_fragments.py --slug mosaiclab  # single org
@@ -60,7 +71,6 @@ Requirements: python-frontmatter, requests (util/requirements.txt)
 import argparse
 import glob
 import hashlib
-import html
 import io
 import json
 import os
@@ -81,9 +91,10 @@ except ImportError as e:
 
 sys.path.insert(0, os.path.dirname(__file__))
 from text_fragment import (  # noqa: E402
-    closest_match_hint, count_occurrences, find_span, iter_footnote_citations, normalize_ws,
-    quote_matches, spacing_autofix,
+    closest_match_hint, count_occurrences, find_span, html_to_text, iter_footnote_citations,
+    normalize_ws, quote_matches, spacing_autofix,
 )
+import manual_dump  # noqa: E402 — the manual-dump request queue (see util/manual_dump.py)
 import reorder_frontmatter  # noqa: E402 — canonical frontmatter re-serialization for the autofix fallback
 from robots_check import robots_allowed  # noqa: E402
 
@@ -92,19 +103,6 @@ ORG_DIR = os.path.join(DOCS_DIR, "organisations")
 CACHE_PATH = os.path.join(os.path.dirname(__file__), "..", "docs", "data", "event-evidence-cache.json")
 USER_AGENT = "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
 FETCH_DELAY = 0.5  # seconds between requests — same rate limit as before
-
-BLOCK_TAGS = [
-    "p", "div", "section", "article",
-    "h1", "h2", "h3", "h4", "h5", "h6",
-    "blockquote", "pre", "header", "footer", "main", "aside", "nav",
-    "figure", "figcaption", "br", "hr",
-    "li", "ol", "ul", "dl", "dt", "dd", "table", "tr",
-]
-BLOCK_PATTERN = re.compile(
-    r"</?(" + "|".join(BLOCK_TAGS) + r")\b[^>]*>",
-    re.IGNORECASE
-)
-PARAGRAPH_DELIM = "\x00P\x00"
 
 # Errors that mean "this site's bot protection (or its own robots.txt)
 # said no," not "try again later" — 500s, timeouts, and DNS errors are
@@ -287,44 +285,13 @@ def _fetch_page_text(url, headers):
                 return None, None, "PDF_PARSE_ERROR"
             return re.sub(r"\s+", " ", text).strip(), r, None
 
-        # No practical truncation here — the cache only stores a hash and
-        # per-evidence booleans now (see check_evidence), not the text
-        # itself, so there's no memory-bloat reason to cap it. A prior
-        # 100_000-char cap silently broke matches for evidence sitting
-        # later in longer pages (confirmed: civictech.africa/about-ctin is
-        # ~194KB of extracted text with its founding sentence at ~171KB —
-        # a real false MISMATCH, not a wrong quote). 2MB is a sanity
-        # ceiling against a truly pathological response, not a real limit.
-        # <script>/<style> bodies are dropped before tag-stripping — a bare
-        # <[^>]+> pass only removes the tags themselves, leaving inline
-        # JSON-LD/page-props payloads in place as "text". Confirmed on
-        # CAPaD's events page (JSON-LD embeds the same event title that
-        # also appears in the visible listing) and mckinnon.co (a
-        # Next.js page-props blob duplicating the visible paragraph) —
-        # both made an otherwise-unique quote look like it occurred twice
-        # on the page, which is a false ambiguity signal, not a real one.
-        # html.unescape() decodes entities (&#8211;, &amp;, &quot;, &nbsp;,
-        # etc.) left behind by tag-stripping — confirmed CAPaD's event page
-        # embeds its listing as JSON-in-HTML with an en-dash encoded as the
-        # literal string "&#8211;", which a quote written with a real "–"
-        # character could never match without this.
-        no_scripts = re.sub(r"<(script|style)\b[^>]*>.*?</\1>", " ", r.text, flags=re.S | re.I)
-        with_paragraphs = BLOCK_PATTERN.sub(" " + PARAGRAPH_DELIM + " ", no_scripts)
-        no_tags = re.sub(r"<[^>]+>", " ", with_paragraphs)
-        text = re.sub(r"\s+", " ", html.unescape(no_tags))
-        # An inline tag boundary immediately before punctuation (e.g.
-        # "Wright</a>,") becomes "Wright ," above — a space that was never
-        # actually rendered, since the closing tag carries no whitespace of
-        # its own. Left in, this makes an accurately-transcribed quote that
-        # spans an inline element (a link, a <span>, ...) false-MISMATCH,
-        # and a quote "fixed" to match it would no longer be the real DOM
-        # text a browser's #:~:text= lookup searches. Drop it so tag
-        # boundaries never introduce punctuation spacing that didn't exist
-        # in the rendered page.
-        text = re.sub(r"\s+([,.;:!?)])", r"\1", text)
-        text = text.replace(PARAGRAPH_DELIM, "\n\n").strip()
-        text = text[:2_000_000]
-        return text, r, None
+        # Extraction itself (tag-stripping, script/style removal, entity
+        # decoding, paragraph-break preservation, the 2MB sanity cap) lives
+        # in text_fragment.html_to_text() — shared with the manual-dump
+        # import path (util/import_manual_dump.py) so a live fetch and a
+        # browser-saved snapshot of the same page always produce identical
+        # text. See that function's docstring for the "why" of each step.
+        return html_to_text(r.text), r, None
     except requests.HTTPError as e:
         return None, None, f"HTTP_{e.response.status_code if e.response is not None else '?'}"
     except requests.RequestException:
@@ -372,8 +339,17 @@ def check_evidence(url, evidence, cache, use_cache=True):
     # a recheck. Retrying a site that's already told us no, every week,
     # forever, is wasted traffic that can't even produce new information;
     # this mirrors scrape_news.py's existing bot_blocked hint, which is
-    # skipped on re-runs the same way.
+    # skipped on re-runs the same way. A manual_verified entry for this
+    # exact evidence (written by util/import_manual_dump.py from a
+    # human-saved browser snapshot — see util/manual_dump.py) is checked
+    # first: a human's own browser reached the page even though a script
+    # can't, so that result is used instead of reporting STILL BLOCKED
+    # forever. Otherwise, queue this URL for a manual dump.
     if use_cache and entry.get("blocked"):
+        manual_result = entry.get("manual_verified", {}).get(ev_key)
+        if manual_result is not None:
+            return ("good" if manual_result else "bad"), True, None, False, None, None
+        manual_dump.queue_request(url)
         return None, True, entry["blocked"], False, None, None
 
     headers = {"User-Agent": USER_AGENT}
@@ -400,6 +376,8 @@ def check_evidence(url, evidence, cache, use_cache=True):
             prior = cache.get(url, {})
             cache[url] = {**prior, "blocked": error,
                           "blocked_since": prior.get("blocked_since", date.today().isoformat())}
+            if prior.get("manual_verified", {}).get(ev_key) is None:
+                manual_dump.queue_request(url)
         return None, False, error, False, None, None
 
     if text is None:
@@ -422,6 +400,8 @@ def check_evidence(url, evidence, cache, use_cache=True):
                 prior = cache.get(url, {})
                 cache[url] = {**prior, "blocked": error,
                               "blocked_since": prior.get("blocked_since", date.today().isoformat())}
+                if prior.get("manual_verified", {}).get(ev_key) is None:
+                    manual_dump.queue_request(url)
             return None, False, error, False, None, None
 
     if not text:

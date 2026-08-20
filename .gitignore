@@ -18,3 +18,9 @@ docs/calendar-*.ics
 #   (the committed iCal sync cache) so they don't need to be versioned.
 # - citations.json IS committed — it captures the last known verification
 #   state from util/.event_evidence_cache.json, which is also committed.
+manual-dump/
+# Local working state for the manual page-dump workflow (see
+# util/manual_dump.py) — human-saved browser snapshots for citation URLs
+# no automated fetch can reach. Never committed: the durable, shareable
+# archive of a citation is Wayback Machine, not this. util/import_manual_dump.py
+# distills whatever's useful out of it into the committed evidence cache.

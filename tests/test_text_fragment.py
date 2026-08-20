@@ -318,5 +318,58 @@ class FootnoteParsingTests(unittest.TestCase):
         self.assertEqual(quote, "founded in 2015,")
 
 
+class HtmlToTextTests(unittest.TestCase):
+    """html_to_text() is shared between check_fragments.py's live-fetch
+    path and import_manual_dump.py's browser-snapshot path — a quote must
+    verify identically against either, so these tests pin down its exact
+    output shape rather than just "some text comes out"."""
+
+    def test_strips_tags_and_collapses_whitespace(self):
+        html_src = "<html><body><p>Hello   <b>world</b>.</p></body></html>"
+        self.assertEqual(tf.html_to_text(html_src), "Hello world.")
+
+    def test_block_tags_become_paragraph_breaks(self):
+        html_src = "<div>First paragraph.</div><div>Second paragraph.</div>"
+        text = tf.html_to_text(html_src)
+        # Adjacent open/close block-tag boundaries can each contribute their
+        # own \n\n (harmless — paragraph_text()/paragraph_hash() only need
+        # rfind/find on "\n\n", not exactly one), so assert the paragraph
+        # break and content rather than pinning the exact run of newlines.
+        self.assertIn("\n\n", text)
+        before, after = text.split("\n\n", 1)
+        self.assertEqual(before.strip(), "First paragraph.")
+        self.assertTrue(after.strip().endswith("Second paragraph."))
+
+    def test_drops_script_and_style_bodies(self):
+        html_src = ("<p>Visible text.</p>"
+                   "<script>var x = 'founded in 2015';</script>"
+                   "<style>.a { color: red; }</style>")
+        text = tf.html_to_text(html_src)
+        self.assertIn("Visible text.", text)
+        self.assertNotIn("founded in 2015", text)
+
+    def test_unescapes_entities(self):
+        html_src = "<p>2015&#8211;2016 &amp; beyond</p>"
+        self.assertEqual(tf.html_to_text(html_src), "2015–2016 & beyond")
+
+    def test_no_stray_space_before_punctuation_at_tag_boundary(self):
+        html_src = "<p>Written by <a href=\"/x\">Jane Wright</a>, an activist.</p>"
+        self.assertEqual(tf.html_to_text(html_src),
+                         "Written by Jane Wright, an activist.")
+
+    def test_same_output_as_a_live_fetch_would_produce(self):
+        # Regression guard for the refactor that moved this out of
+        # check_fragments.py's _fetch_page_text() into this shared
+        # function — a live fetch and a manually-saved snapshot of
+        # identical markup must extract to identical text, or a quote
+        # could verify against one path and mismatch against the other
+        # for no reason but a diverging extractor.
+        html_src = "<article><h1>Title</h1><p>Founded in 2015 by activists.</p></article>"
+        text = tf.html_to_text(html_src)
+        self.assertIn("Title", text)
+        self.assertIn("Founded in 2015 by activists.", text)
+        self.assertIn("\n\n", text)
+
+
 if __name__ == "__main__":
     unittest.main()
