@@ -95,7 +95,7 @@
         "text": "But in reality, the momentum of vTaiwan\u2014and of the country's digital participation revolution\u2014had fizzled out years earlier. The platform hasn't been used for any major decisions since 2018, as it was seen as difficult to use and people lost interest, vTaiwan co-creator and former Taiwanese legislator Jason Hsu told The Daily Beast. Since the government is not mandated to adopt recommendations coming from vTaiwan, \"legislators don't take it seriously.\""
       }
     },
-    "etag": "\"110s7ld\"",
+    "etag": "\"pwxiof\"",
     "last_modified": null,
     "verified": {
       "f9d5b04bc7b735889f2d68af1ac15d434e0d855c9e7e82d6118c2b30b04d969e": true
@@ -639,7 +639,7 @@
       }
     },
     "etag": null,
-    "last_modified": "Thu, 20 Aug 2026 04:41:42 GMT",
+    "last_modified": "Thu, 20 Aug 2026 11:54:23 GMT",
     "verified": {
       "96c34b1c863a331f670f3b427e9d5925124e2168c88587b226d2968074a8b834": true
     }
@@ -874,8 +874,20 @@
     }
   },
   "https://en.wikipedia.org/wiki/2023_Israeli_judicial_reform_protests": {
-    "blocked": "HTTP_429",
-    "blocked_since": "2026-08-20"
+    "checked": "2026-08-20",
+    "content_hash": "aedbb49f5a2d7566aff38124dc872d2cf98e33b4989adf43fb82ddf18b374e1f",
+    "contexts": {
+      "c0d189a42147cc187057e760addf8b55ccef6c9d6ec2135607ab3417dbf8fd17": {
+        "prefix": "re held on a weekly basis in Kaplan Street, alongside smaller protests in Jerusalem, Haifa, Beersheba, and other cities like Ness Ziona and Herzliya.",
+        "sha256": "9909cfdea0b2e969e6d4db5d6b7428d8493eb6dfa663b4e2a04ec8da6de4edc5",
+        "suffix": "Protests in other cities regularly attracted smaller numbers. === 13\u201325 February === On 8 February, the Chairman of the Knesset's Constitution, Law"
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "c0d189a42147cc187057e760addf8b55ccef6c9d6ec2135607ab3417dbf8fd17": true
+    }
   },
   "https://en.wikipedia.org/wiki/2026_Bangladeshi_constitutional_referendum": {
     "checked": "2026-08-20",
@@ -1074,18 +1086,18 @@
   },
   "https://en.wikipedia.org/wiki/Declaration_of_the_Rights_of_Man_and_of_the_Citizen": {
     "checked": "2026-08-20",
-    "content_hash": "88ffbbcfd36260aa214dff541e1e1a31e83f19accf55fc4932cecdf3410809d7",
+    "content_hash": "d21dd4ab7a1dad0a54b45460199e5acf39d0620255e428912dc5b67acb09d746",
     "contexts": {
-      "e97a3be4722a2b4d46c6153518dda0ded096274e3d7e71feaeb6c4dedea578ae": {
-        "prefix": "ut distinction other than that of their virtues and of their talents,\" eliminating the special rights of the nobility and clergy. === Articles ===",
-        "sha256": "9b2447ec3164700ca8affac803a89bef10ce6edf6aec0358131374da23dbc05e",
-        "suffix": "Article II \u2013 The goal of any political association is the conservation of the natural and imprescriptible rights of man. These rights are liberty, pr"
+      "7257ddc364e171d5d05cb6041e98b7556a0b11b3e34717e2c97e9c719fa4f549": {
+        "prefix": "hts for all men. Influenced by the doctrine of natural rights, these rights are held to be universal and valid in all times and places. For example, \"",
+        "sha256": "bd5bb5e1cc3fdbc3c853a70ddaacdc6c8c3e927dfdd73bc06b80b7f63513c4b1",
+        "suffix": "\" They have certain natural rights to property, to liberty, and to life. According to this theory, the role of government is to recognize and secure t"
       }
     },
     "etag": null,
     "last_modified": null,
     "verified": {
-      "e97a3be4722a2b4d46c6153518dda0ded096274e3d7e71feaeb6c4dedea578ae": true
+      "7257ddc364e171d5d05cb6041e98b7556a0b11b3e34717e2c97e9c719fa4f549": true
     }
   },
   "https://en.wikipedia.org/wiki/Democracy_International_eV": {
@@ -1283,8 +1295,20 @@
     }
   },
   "https://en.wikipedia.org/wiki/Herrenvolk_democracy": {
-    "blocked": "HTTP_429",
-    "blocked_since": "2026-08-20"
+    "checked": "2026-08-20",
+    "content_hash": "1ece5dd328570a0ec23838f0d6fe48c662016239fe211a293250250e844b7740",
+    "contexts": {
+      "6d3ed88a4da4d28ba4e9d863e83702f08453378b5aa62fd341df3fa106e9793b": {
+        "prefix": "",
+        "sha256": "bab39a867d3468c7423910e1a41185fab8c947bab3e695d321ec9e864f67661c",
+        "suffix": "Herrenvolk democracy is a subtype of ethnocracy, which refers to any form of government where one ethnic group dominates the state, with or without e"
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "6d3ed88a4da4d28ba4e9d863e83702f08453378b5aa62fd341df3fa106e9793b": true
+    }
   },
   "https://en.wikipedia.org/wiki/Hong_Kong_Democracy_Council": {
     "checked": "2026-08-20",
@@ -1352,8 +1376,14 @@
     }
   },
   "https://en.wikipedia.org/wiki/Israeli_occupation_of_the_West_Bank": {
-    "blocked": "HTTP_429",
-    "blocked_since": "2026-08-20"
+    "checked": "2026-08-20",
+    "content_hash": "f41988163b5b7eac196a41081aca732b5471d8b54df15229e7adcb43cf2d8230",
+    "contexts": {},
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "d5203641c47a34809071bda9524a2d1e401190d1f75588d639c19031b6da1b0d": true
+    }
   },
   "https://en.wikipedia.org/wiki/Jan_Fran": {
     "checked": "2026-08-20",
@@ -1422,8 +1452,20 @@
     }
   },
   "https://en.wikipedia.org/wiki/Legal_Consequences_arising_from_the_Policies_and_Practices_of_Israel_in_the_Occupied_Palestinian_Territory,_including_East_Jerusalem": {
-    "blocked": "HTTP_429",
-    "blocked_since": "2026-08-20"
+    "checked": "2026-08-20",
+    "content_hash": "419778e0461625015071df6f772d605421574af5e462408366268478edd38780",
+    "contexts": {
+      "e2f129d1b68d2a8c0f80e84927e0a4b5fbcc18ed5f905b97f3fede8f49464411": {
+        "prefix": "determination have a direct impact on the legality of the continued presence of Israel, as an occupying Power, in the Occupied Palestinian Territory.",
+        "sha256": "a7c6f2b73f6f6e92c1d1d630aa63cc6397d2a1e9d02442700eed57a311854959",
+        "suffix": "The Court found that the Israeli\u2013Palestinian peace process did not prevent international law from applying to the situation. It declared that the Gen"
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "e2f129d1b68d2a8c0f80e84927e0a4b5fbcc18ed5f905b97f3fede8f49464411": true
+    }
   },
   "https://en.wikipedia.org/wiki/LiquidFeedback": {
     "checked": "2026-08-20",
@@ -1880,19 +1922,12 @@
   },
   "https://en.wikipedia.org/wiki/The_Helen_Clark_Foundation": {
     "checked": "2026-08-20",
-    "content_hash": "b1d2c4c5492b9d5cd9958c18f6967a453f935a3fca1428bae0359c2e4b673a3a",
-    "contexts": {
-      "25d5fafb1426bbe20383e91f6733802efd8d3d65d6584fa86ea14a44a8945875": {
-        "prefix": "",
-        "sha256": "b1d2c4c5492b9d5cd9958c18f6967a453f935a3fca1428bae0359c2e4b673a3a",
-        "suffix": "Its mission is to create public policy research which promotes the values demonstrated by Helen Clark across her lengthy public career: inclusion, fa",
-        "text": "The Helen Clark Foundation (M\u0101ori: Mahi a Rongo) is a New Zealand-based independent, non-partisan public policy think tank hosted by Auckland University of Technology. The foundation was formed in 2019 and is named after Helen Clark, the 37th prime minister of New Zealand and former administrator of the United Nations Development Programme who serves as patron. Its mission is to create public policy research which promotes the values demonstrated by Helen Clark across her lengthy public career: inclusion, fairness, and sustainability."
-      }
-    },
+    "content_hash": "dde1b94f7062820d8406a099744fc03544be53fadfb5a1a0eec6d14fbd0039e2",
+    "contexts": {},
     "etag": null,
     "last_modified": null,
     "verified": {
-      "25d5fafb1426bbe20383e91f6733802efd8d3d65d6584fa86ea14a44a8945875": true
+      "6db18b3038c77cdce4c760184437faad30ceaed2c99377207acc6b8d3521127f": false
     }
   },
   "https://en.wikipedia.org/wiki/Three-fifths_Compromise": {
@@ -2032,8 +2067,21 @@
     "blocked_since": "2026-08-18"
   },
   "https://events.humanitix.com/radicalxchange-foundation-in-melbourne": {
-    "blocked": "HTTP_403",
-    "blocked_since": "2026-08-20"
+    "checked": "2026-08-20",
+    "content_hash": "5760c293c05f53070e2c0ae9d9c0abbc13710775fe504090d59aaa4ed3ddff7f",
+    "contexts": {
+      "5760c293c05f53070e2c0ae9d9c0abbc13710775fe504090d59aaa4ed3ddff7f": {
+        "prefix": "desktop Yahoo Close icon Close An invitation to meet RadicalxChange Foundation in Melbourne",
+        "sha256": "5760c293c05f53070e2c0ae9d9c0abbc13710775fe504090d59aaa4ed3ddff7f",
+        "suffix": "At the Small Giants Wisdom & Action Forum in May, many were energised by the extraordinary work and vision of Audrey Tang, Taiwan's di",
+        "text": "Join us to learn about civic tech for democracy and community, and explore how our tools might serve your community or sector."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "5760c293c05f53070e2c0ae9d9c0abbc13710775fe504090d59aaa4ed3ddff7f": true
+    }
   },
   "https://fidemocracy.org/europe-forum-2026-from-novel-to-normal": {
     "checked": "2026-08-20",
@@ -2153,12 +2201,19 @@
   },
   "https://glenweyl.com/radicalxchange/": {
     "checked": "2026-08-20",
-    "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "contexts": {},
+    "content_hash": "a010f2e8072c84a697d2cd73667f7a7b9d4436b8e6a29df63775be7e70d14445",
+    "contexts": {
+      "a010f2e8072c84a697d2cd73667f7a7b9d4436b8e6a29df63775be7e70d14445": {
+        "prefix": "Foundation (RxC) is a global movement for next-generation political economies",
+        "sha256": "a010f2e8072c84a697d2cd73667f7a7b9d4436b8e6a29df63775be7e70d14445",
+        "suffix": "RxC connects people from all walks of life \u2013 ranging from social scientists and technologists to artists and activists. The movement is ever-ev",
+        "text": "Founded by economist Glen Weyl in 2018, the RadicalxChange Foundation is a 501(c)(3) nonprofit dedicated to advancing the RxC movement, to building community, and to education about democratic innovation."
+      }
+    },
     "etag": null,
     "last_modified": null,
     "verified": {
-      "a010f2e8072c84a697d2cd73667f7a7b9d4436b8e6a29df63775be7e70d14445": false
+      "a010f2e8072c84a697d2cd73667f7a7b9d4436b8e6a29df63775be7e70d14445": true
     }
   },
   "https://grattan.edu.au/about-us/": {
@@ -2442,7 +2497,7 @@
       }
     },
     "etag": null,
-    "last_modified": "Thu, 20 Aug 2026 12:02:45 GMT",
+    "last_modified": "Thu, 20 Aug 2026 11:53:58 GMT",
     "verified": {
       "904d4454fca76da3ce047163ee870f5f22335990f2fce83453a6961120c1d638": true
     }
@@ -2786,7 +2841,7 @@
       }
     },
     "etag": null,
-    "last_modified": "Thu, 20 Aug 2026 04:41:23 GMT",
+    "last_modified": "Thu, 20 Aug 2026 11:53:56 GMT",
     "verified": {
       "9da192de456309980b845915805e089967f98c3a246e52552f07367e59741588": true
     }
@@ -3277,7 +3332,7 @@
         "text": "It is a rare historical milestone, marking the first time since 1988 that a Knesset has completed its legally mandated, full four-year term."
       }
     },
-    "etag": "W/\"2dfd4-tfBZGm0i833aibdLAgCVZf+5R3c\"",
+    "etag": "W/\"2dfd4-JCjCOqRSISi3LtmX11sVUP99SZU\"",
     "last_modified": null,
     "verified": {
       "923cb842c1d987615ed5f597a95b90b4d928a81bb979f2dbc7801dc2e274fc2c": true
@@ -3310,7 +3365,7 @@
         "text": "Legislation which will let 1.7 million 16 and 17-year-olds vote at the next general election is beginning its journey through Parliament."
       }
     },
-    "etag": "\"rv7ssd9kr55vm5\"",
+    "etag": "\"fs2ytrrrpo5pp6\"",
     "last_modified": null,
     "verified": {
       "0621279d2dccc8945937f03c73acdad703f21f0780a52ab61f6d11a7f08b66cd": true
@@ -3462,7 +3517,7 @@
       }
     },
     "etag": null,
-    "last_modified": "Thu, 20 Aug 2026 10:04:17 GMT",
+    "last_modified": "Thu, 20 Aug 2026 11:54:45 GMT",
     "verified": {
       "b793b2e7e595240550e5e0027f6396743d963448660ec2c96fe4c59440698404": true
     }
@@ -3614,8 +3669,8 @@
         "text": "My main thrust is government organized along scientific principles which is as much to say as the application of cybernetic principles to government. Democracy is part of that and Stafford Beer, who is the father of management cybernetics, was highly regarded by the Open Democracy organisation as witnessed by the obituary published for him by Rosemary Bechler, the International Editor, of Open Democracy - https://www.opendemocracy.net/node/611"
       }
     },
-    "etag": "W/\"6a86ecf3-3c329\"",
-    "last_modified": "Thu, 20 Aug 2026 12:02:59 GMT",
+    "etag": "W/\"6a86d496-3c329\"",
+    "last_modified": "Thu, 20 Aug 2026 10:19:02 GMT",
     "verified": {
       "bede7c49e95577b8277ad463bb91abccf42180fb72e768eccea82d61fcd628e0": true
     }
@@ -3779,19 +3834,12 @@
   },
   "https://www.hkdc.us/biannual-report": {
     "checked": "2026-08-20",
-    "content_hash": "7fe55ee42080d58346759153c8a38865fdeabdde5f5016c55ce7547ac13388a9",
-    "contexts": {
-      "69c3d9278b85ee87f5d6c2e570c3ef39ce85d9c2c8ed4badaa5317f2e261ec96": {
-        "prefix": "ng discontent with Beijing\u2019s increasing suppression of everything that once made the city unique. To advance the cause of freedom in Hong Kong,",
-        "sha256": "7fe55ee42080d58346759153c8a38865fdeabdde5f5016c55ce7547ac13388a9",
-        "suffix": "We also worked with the executive branch to implement these laws, including the imposition of targeted sanctions against individuals responsible for",
-        "text": "To advance the cause of freedom in Hong Kong, the HKDC team pushed for the successful passage of several landmark pieces of legislation: the Hong Kong Human Rights and Democracy Act of 2019, the PROTECT Hong Kong Act of 2019, and the Hong Kong Autonomy Act of 2020. We also worked with the executive branch to implement these laws, including the imposition of targeted sanctions against individuals responsible for Hong Kong\u2019s deterioration. This culminated in then-Secretary of State Michael Pompeo\u2019s decertification of Hong Kong\u2019s special status on May 27, 2020, given that it no longer enjoyed meaningful autonomy. The following month, Beijing imposed the sweeping National Security Law (N.S.L.) on Hong Kong, effectively spelling the final demise of One Country, Two Systems and forever changing the fate of Hong Kongers."
-      }
-    },
-    "etag": "W/\"cf8f96d29603070dd12dbe25ea3f651e\"",
+    "content_hash": "5d5b9de6d9b95f3e0c950afe742a5bb39cb25f6e6e886c10603310b7bf3cba35",
+    "contexts": {},
+    "etag": "W/\"6ac2a45405793a8da4eb1de59c4f2d5b\"",
     "last_modified": null,
     "verified": {
-      "69c3d9278b85ee87f5d6c2e570c3ef39ce85d9c2c8ed4badaa5317f2e261ec96": true
+      "69c3d9278b85ee87f5d6c2e570c3ef39ce85d9c2c8ed4badaa5317f2e261ec96": false
     }
   },
   "https://www.hrlc.org.au/news/2023-1-31-election-data-a-reminder-that-albanese-government-must-regulate-money-in-politics/": {
@@ -4069,7 +4117,7 @@
       }
     },
     "etag": null,
-    "last_modified": "Thu, 20 Aug 2026 12:18:18 GMT",
+    "last_modified": "Thu, 20 Aug 2026 11:54:14 GMT",
     "verified": {
       "c2818896dcfe240d678899972cb064bdf13ddce3baa08c29231548cefd2717fc": true
     }
@@ -4180,7 +4228,7 @@
       }
     },
     "etag": null,
-    "last_modified": "Thu, 20 Aug 2026 12:13:01 GMT",
+    "last_modified": null,
     "verified": {
       "292a5491284943180173e19421b4b1906053adf3c0b79e98d2736277bfe08b0a": true
     }
@@ -4207,7 +4255,7 @@
     "blocked_since": "2026-08-20"
   },
   "https://www.parliament.vic.gov.au/get-involved/inquiries/electoralsysteminquiry/reports": {
-    "blocked": "HTTP_403",
+    "blocked": "ROBOTS_DISALLOWED",
     "blocked_since": "2026-08-20"
   },
   "https://www.participatorybudgeting.org/about/": {
@@ -4299,7 +4347,7 @@
         "text": "vTaiwan has always demonstrated how civic communities can innovate in democratic participation by combining open-source platforms, commercial tools, and AI. Currently, the community integrates tools such as Pol.is for large-scale opinion mapping,"
       }
     },
-    "etag": "W/\"71648844ed7e658a9646d5b44335cdf6\"",
+    "etag": "W/\"71648844ed7e658a9646d5b44335cdf6--gzip\"",
     "last_modified": null,
     "verified": {
       "8fa827287576f5877acfab08abf40a049d3a085a3267d7b2782ea8ee282613fa": true
@@ -4385,7 +4433,7 @@
       }
     },
     "etag": null,
-    "last_modified": "Wed, 19 Aug 2026 02:41:15 GMT",
+    "last_modified": "Thu, 20 Aug 2026 03:38:46 GMT",
     "verified": {
       "af23cbf0ae3bafbbbb5531809c026baf4d8595c0db87d1cdb843a288390bea75": true
     }
@@ -4575,32 +4623,109 @@
     }
   },
   "https://www.sortitionfoundation.org/become_a_member_australia": {
-    "blocked": "HTTP_403",
-    "blocked_since": "2026-08-20"
+    "checked": "2026-08-20",
+    "content_hash": "8252ba80f0cbb1d791ff8cd8b5872c27e4f11fde9e1d2df7e23773be63ba74a4",
+    "contexts": {
+      "f0d9f84381b92c97bcf1f0ddc129417fe3ea0483b8279ad79bc075cc201659ba": {
+        "prefix": "Sortition Foundation Australia Chapter 03 September, 2020 Sortition Foundation Australia Chapter",
+        "sha256": "8252ba80f0cbb1d791ff8cd8b5872c27e4f11fde9e1d2df7e23773be63ba74a4",
+        "suffix": "if you want to help, or just want to learn more about sortition in Australia. The Sortition Foundation Australia Chapter meets once a month onl",
+        "text": "We want to change the way politics is done in Australia! Join us if you want to help, or just want to learn more about sortition in Australia."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "f0d9f84381b92c97bcf1f0ddc129417fe3ea0483b8279ad79bc075cc201659ba": true
+    }
   },
   "https://www.sortitionfoundation.org/ecps_2025": {
-    "blocked": "HTTP_403",
-    "blocked_since": "2026-08-20"
+    "checked": "2026-08-20",
+    "content_hash": "e68c639682af8645dfa561c38b58792fdec558d0e0b5255062b2c9424363b318",
+    "contexts": {},
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "f17590386deaa19fd3088fc7fb291712a7519d31aedf4bcf27d6c7324a68d326": false
+    }
   },
   "https://www.sortitionfoundation.org/gm_polling_may_2026": {
-    "blocked": "HTTP_403",
-    "blocked_since": "2026-08-20"
+    "checked": "2026-08-20",
+    "content_hash": "5d5fea50d84db458511c9444616083aaba007fbaca96e695e5f05d1b07d61a9b",
+    "contexts": {},
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "532201edf6a343fbcffefd73a71ea2da04f10c9279b4b2575e2cd08bb3ed7800": false
+    }
   },
   "https://www.sortitionfoundation.org/history": {
-    "blocked": "HTTP_403",
-    "blocked_since": "2026-08-20"
+    "checked": "2026-08-20",
+    "content_hash": "aaa207479d859ec0b320a7785f4e3fe73841dc320f42b84b9d709bdac6982477",
+    "contexts": {
+      "8091f7fc19514407c4ce57d77347af2b874104861a45b4d46025fd855be41b6f": {
+        "prefix": "ant (also in London) the nine people present all decided to call themselves \"directors\" and try to get this thing further off the ground. Then,",
+        "sha256": "aaa207479d859ec0b320a7785f4e3fe73841dc320f42b84b9d709bdac6982477",
+        "suffix": "From this point on it was \"official\" - but we were still simply a bunch of friends with a great idea, and very few resources. But things were c",
+        "text": "Then, on 4 March 2017 we registered as a member-run, not-for-profit company limited by guarantee in the UK. From this point on it was \"official\" - but we were still simply a bunch of friends with a great idea, and very few resources."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "8091f7fc19514407c4ce57d77347af2b874104861a45b4d46025fd855be41b6f": true
+    }
   },
   "https://www.sortitionfoundation.org/introducing_the_open_democratic_lottery_platform": {
-    "blocked": "HTTP_403",
-    "blocked_since": "2026-08-20"
+    "checked": "2026-08-20",
+    "content_hash": "c89b222c503bde006daa8f785412fc3d77d57189bdbbb23bb956dfbdca2468b0",
+    "contexts": {
+      "0b3365698aa53adaff7dc1203d5fc1464d83ea0e786a8c44aaade745adc6fbdc": {
+        "prefix": "OpenDLP). Sortition Lab is where we develop tools and applications to support and enhance the work we and our partners do to upgrade democracy.",
+        "sha256": "c89b222c503bde006daa8f785412fc3d77d57189bdbbb23bb956dfbdca2468b0",
+        "suffix": "Work began earlier this year on what will be a three-year project in total. Since we started Sortition Foundation in 2017 we have run these sor",
+        "text": "Sortition Lab is where we develop tools and applications to support and enhance the work we and our partners do to upgrade democracy. Last year we secured funding to build OpenDLP, a brand new open-source digital platform that will make democratic lotteries more inclusive by automating the process for selecting participants for citizens' assemblies. Work began earlier this year on what will be a three-year project in total."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "0b3365698aa53adaff7dc1203d5fc1464d83ea0e786a8c44aaade745adc6fbdc": true
+    }
   },
   "https://www.sortitionfoundation.org/uk_poll_may_2025": {
-    "blocked": "HTTP_403",
-    "blocked_since": "2026-08-20"
+    "checked": "2026-08-20",
+    "content_hash": "76cbc4516cc42d9b46da26b9ffbcd00d0a59014ef0164e2d43e5fdd494894510",
+    "contexts": {
+      "76cbc4516cc42d9b46da26b9ffbcd00d0a59014ef0164e2d43e5fdd494894510": {
+        "prefix": "K polling May 2025 08 May, 2025 New poll finds widespread support for replacing the House of Lords",
+        "sha256": "76cbc4516cc42d9b46da26b9ffbcd00d0a59014ef0164e2d43e5fdd494894510",
+        "suffix": "Polling published today on trust and House of Lords reform show that 2024 Reform voters trust citizen assembly members more, and members of par",
+        "text": "43% of British adults, including 46% of adults living in the North, say that replacing the House of Lords with a citizens' assembly would increase their trust in politics"
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "76cbc4516cc42d9b46da26b9ffbcd00d0a59014ef0164e2d43e5fdd494894510": true
+    }
   },
   "https://www.sortitionfoundation.org/updates": {
-    "blocked": "HTTP_403",
-    "blocked_since": "2026-08-20"
+    "checked": "2026-08-20",
+    "content_hash": "05e23ba79346effd609cc1870a89e497347acc7aeef95914a4a5fce483609883",
+    "contexts": {
+      "150fd71baf8893dbc2177e200ec31f46c487ac7f74a30b4b4dda3fd71d7423ab": {
+        "prefix": "Home Learn more Read Our Latest News Latest News 26 February,",
+        "sha256": "05e23ba79346effd609cc1870a89e497347acc7aeef95914a4a5fce483609883",
+        "suffix": "18 June, 2026 We're looking for a new Independent Director Jobs",
+        "text": "26 February, 2026 Frontiers of Democratic Lotteries Workshop"
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "150fd71baf8893dbc2177e200ec31f46c487ac7f74a30b4b4dda3fd71d7423ab": true
+    }
   },
   "https://www.strongercharities.org.au/2025/02/11/media-release-charities-call-for-critical-amendments-to-the-electoral-reform-bill/": {
     "checked": "2026-08-20",
@@ -4614,7 +4739,7 @@
       }
     },
     "etag": null,
-    "last_modified": "Thu, 20 Aug 2026 12:07:06 GMT",
+    "last_modified": "Thu, 20 Aug 2026 11:52:40 GMT",
     "verified": {
       "8fc9eda11d9588c25a9de54eafe5a16d46de1760798789aa572b54fd461168fc": true
     }
@@ -4696,28 +4821,15 @@
     "blocked_since": "2026-08-20"
   },
   "https://www.whitehouse.senate.gov/news/release/whitehouse-grassley-issue-statement-on-treasury-departments-final-rule-dismantling-key-element-of-corporate-transparency-act/": {
-    "checked": "2026-08-20",
-    "content_hash": "d55c769b037771a6bcfebae4f7146ec5b70d2a18c8b769c4f6e9312cd36c382f",
-    "contexts": {
-      "f97e3fb83d4f8f4a6b2eac9aaea025cfb0a7328d0ab6588245072af0a42f9548": {
-        "prefix": "ement, national security officials, and tax authorities. The CTA is widely considered the most important anti-money laundering law in decades. \u201c",
-        "sha256": "d55c769b037771a6bcfebae4f7146ec5b70d2a18c8b769c4f6e9312cd36c382f",
-        "suffix": "The Act gave the federal government needed tools to address criminal activity like human trafficking, terrorist financing, drug distribution, sanctio",
-        "text": "\u201cThe Treasury Department\u2019s final rule exempting U.S. based companies from the Corporate Transparency Act\u2019s reporting requirements undermines the clear intent of the law. The Act gave the federal government needed tools to address criminal activity like human trafficking, terrorist financing, drug distribution, sanctions evasion, and more without unduly burdening legitimate commercial entities. This decision is an unfortunate one that fails to use all available tools to protect Americans and crack down on illicit financial schemes.\u201d"
-      }
-    },
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "f97e3fb83d4f8f4a6b2eac9aaea025cfb0a7328d0ab6588245072af0a42f9548": true
-    }
+    "blocked": "HTTP_403",
+    "blocked_since": "2026-08-20"
   },
   "https://www.wisdomandaction.com.au/": {
     "checked": "2026-08-20",
     "content_hash": "093e6afce3be88ff08491be4a68365e5ebafd4769594f98cd120474ea9daa932",
     "contexts": {},
     "etag": null,
-    "last_modified": "Mon, 17 Aug 2026 02:44:20 GMT",
+    "last_modified": "Thu, 20 Aug 2026 11:53:52 GMT",
     "verified": {
       "9589f103a07f2e4200cd0e9f25b7e415aa22c030e2b4cad981e961485fd96a7f": true
     }
@@ -4751,7 +4863,7 @@
       }
     },
     "etag": null,
-    "last_modified": "Thu, 20 Aug 2026 12:18:37 GMT",
+    "last_modified": "Thu, 20 Aug 2026 11:54:34 GMT",
     "verified": {
       "c2eea83ca832d9e5ce27ca000077c14e6c2b916129f786692b93e45cf7b8a486": true
     }
