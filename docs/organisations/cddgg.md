@@ -25,9 +25,9 @@ events:
   title: Founded, marking its 10th anniversary in 2024
   url: https://www.canberra.edu.au/research/centres/cdd/about-cdd/our-history
   quote: It relocated to the University of Canberra in 2014, where it has since been
-    consolidated and expanded through the collective efforts of its members.
+    consolidated and expanded through the collective efforts of its members
   proof_level: high
-  url_checked: '2026-08-12'
+  url_checked: '2026-08-20'
   notable: true
 activity:
   dod:

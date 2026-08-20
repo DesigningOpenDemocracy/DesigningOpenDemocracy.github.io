@@ -26,13 +26,13 @@ location:
 events:
 - date: '2015-01-01'
   title: Founded in Rio de Janeiro to study the impact and future of technology on
+    Brazilian society
   url: https://itsrio.org/pt/institucional/
-  quote: O ITS Rio e um Instituto de pesquisa sem fins lucrativos, que estuda o impacto
+  quote: O ITS Rio é um Instituto de pesquisa sem fins lucrativos, que estuda o impacto
     e o futuro da tecnologia no Brasil e no mundo, na busca de assegurar o aproveitamento
     criativo e apropriado das oportunidades fornecidas pela tecnologia na era digital.
-    Brazilian society
   proof_level: high
-  url_checked: '2026-08-12'
+  url_checked: '2026-08-20'
   notable: true
 activity:
   sitemap:

@@ -95,7 +95,7 @@
         "text": "But in reality, the momentum of vTaiwan\u2014and of the country's digital participation revolution\u2014had fizzled out years earlier. The platform hasn't been used for any major decisions since 2018, as it was seen as difficult to use and people lost interest, vTaiwan co-creator and former Taiwanese legislator Jason Hsu told The Daily Beast. Since the government is not mandated to adopt recommendations coming from vTaiwan, \"legislators don't take it seriously.\""
       }
     },
-    "etag": "\"182zlv9\"",
+    "etag": "\"1yz1zw8\"",
     "last_modified": null,
     "verified": {
       "f9d5b04bc7b735889f2d68af1ac15d434e0d855c9e7e82d6118c2b30b04d969e": true
@@ -514,29 +514,20 @@
     }
   },
   "https://congress.crowd.law/case-vtaiwan.html": {
-    "archive_checked": "2026-08-17",
-    "archive_url": "http://web.archive.org/web/20260802154958/https://congress.crowd.law/case-vtaiwan.html",
-    "checked": "2026-08-18",
-    "content_hash": "92d8cb0537b0ba88dda059e4ffa8763b759f05f5ec7fd756c452de3d7fbeb1d5",
+    "checked": "2026-08-20",
+    "content_hash": "30add457c7d4a9687b5f00fd24daa8d575219b566f1481853d1246c8fcb76cd0",
     "contexts": {
       "30add457c7d4a9687b5f00fd24daa8d575219b566f1481853d1246c8fcb76cd0": {
         "prefix": "ebate over the country\u2019s policies regarding taxis and the ride-hailing app Uber. Participation statistics from this process were as follows:",
         "sha256": "30add457c7d4a9687b5f00fd24daa8d575219b566f1481853d1246c8fcb76cd0",
         "suffix": "145 statements submitted on Polis survey (during opinion gathering stage) 925 participants voted on Polis survey (opinion stage) 1,",
         "text": "31,115 total votes (highest of any process to date)"
-      },
-      "4d5cfd57418cdb1c705ee7d8da5cf19e428d42dfc14037c13d0d9f3d5feacf42": {
-        "prefix": "tizen participation-- led the protests. The Taiwanese government responded to the demonstration by acknowledging the public\u2019s peaceful demands.",
-        "sha256": "92d8cb0537b0ba88dda059e4ffa8763b759f05f5ec7fd756c452de3d7fbeb1d5",
-        "suffix": "[1] If they were up to the challenge, Tsai committed that the government would participate and respond.Shortly after, the g0v.tw volunteers built vTa",
-        "text": "The Taiwanese government responded to the demonstration by acknowledging the public\u2019s peaceful demands. In turn, former Taiwanese Minister without Portfolio Jaclyn Tsai attended a g0v.tw hackathon in December 2014 and asked the volunteers if they could \u201ccreate a platform for rational discussion and deliberation of policy issues that the entire nation could participate in.\u201d [1] If they were up to the challenge, Tsai committed that the government would participate and respond.Shortly after, the g0v.tw volunteers built vTaiwan: an open consultation process to bring together experts, government officials, and relevant citizens on a national scale to deliberate, reach consensus, and craft legislation."
       }
     },
     "etag": "W/\"5f87868d-f01e\"",
     "last_modified": "Wed, 14 Oct 2020 23:15:25 GMT",
     "verified": {
-      "30add457c7d4a9687b5f00fd24daa8d575219b566f1481853d1246c8fcb76cd0": true,
-      "4d5cfd57418cdb1c705ee7d8da5cf19e428d42dfc14037c13d0d9f3d5feacf42": true
+      "30add457c7d4a9687b5f00fd24daa8d575219b566f1481853d1246c8fcb76cd0": true
     }
   },
   "https://connecticut.news12.com/connecticut-lottery-selects-members-for-property-tax-assembly": {
@@ -544,7 +535,7 @@
     "content_hash": "488c33924e7829b21cbd2d65e5fdc623421271751898342a6437182c1dff4af4",
     "contexts": {
       "3180770dd5802b360b7227fad09cff73f84a36777daa24e76378752e1a1792a2": {
-        "prefix": "02:43 Road Trip: US Open Fan Week brings the stars to Queens ahead of event",
+        "prefix": "01:34 Stamford Town Center parking garage to host monthly dance music party",
         "sha256": "488c33924e7829b21cbd2d65e5fdc623421271751898342a6437182c1dff4af4",
         "suffix": "of the Connecticut Citizens\u2019 Assembly on Property Taxes. Ball 29 was chosen from 40 numbered lottery balls, with each ball representing a group",
         "text": "The Connecticut Lottery Corporation on Thursday conducted a public drawing to select members of the Connecticut Citizens\u2019 Assembly on Property Taxes."
@@ -660,18 +651,19 @@
   },
   "https://ctmirror.org/2026/07/13/citizens-assembly-property-taxes/": {
     "checked": "2026-08-20",
-    "content_hash": "d336d03a74743be51e288c75e7a79cdc5999cdfa5b64283e24d78283c1bb8804",
+    "content_hash": "96c19b9e05a46eae88d157ad8deb6685eb47e7e71d85e896e736c4eed618db61",
     "contexts": {
-      "3763c310e629b73cb0dafc4928397c98ca5a2b1cb63b80352dbd62089fbc095a": {
-        "prefix": "org/2026/05/05/city-hosts-democracy-experiment/\">first citizens\u2019 assembly</a>, which was held at Yale\u2019s Linsly-Chittenden Hall on High Street.</p> <p>",
-        "sha256": "2e47a4713514360810ce51832e5b4f93909fdeafda152656fabe474dda9e11e1",
-        "suffix": "</p> <p>The project has been described as \u201cjury duty\u201d for politics, and comes with a $1,200 stipend over six weeks of programming, conditional on atte"
+      "96c34b1c863a331f670f3b427e9d5925124e2168c88587b226d2968074a8b834": {
+        "prefix": "Connecticut residents who participated in the state\u2019s first citizens\u2019 assembly, which was held at Yale\u2019s Linsly-Chittenden Hall on High Street.",
+        "sha256": "96c19b9e05a46eae88d157ad8deb6685eb47e7e71d85e896e736c4eed618db61",
+        "suffix": "\u201d for politics, and comes with a $1,200 stipend over six weeks of programming, conditional on attendance. Although Evans is particularly passion",
+        "text": "All of the participants on Saturday were selected by lottery to participate in the democratic initiative that is designed to encourage non-politicians to engage in policy-making. The project has been described as \u201cjury duty\u201d for politics, and comes with a $1,200 stipend over six weeks of programming, conditional on attendance."
       }
     },
     "etag": null,
     "last_modified": "Thu, 20 Aug 2026 04:41:42 GMT",
     "verified": {
-      "3763c310e629b73cb0dafc4928397c98ca5a2b1cb63b80352dbd62089fbc095a": true
+      "96c34b1c863a331f670f3b427e9d5925124e2168c88587b226d2968074a8b834": true
     }
   },
   "https://de.wikipedia.org/wiki/Jede_Stimme_GILT": {
@@ -904,20 +896,8 @@
     }
   },
   "https://en.wikipedia.org/wiki/1967_Australian_referendum_(Aboriginals)": {
-    "checked": "2026-08-20",
-    "content_hash": "9dae16b053b6d584d03873b1ed537d82af291ed90e6b52fa4fee800c4f922765",
-    "contexts": {
-      "79ea2000b93764b14d777ceefc495ba216979231e0d2f8dfeeefdda6bf07fcc0": {
-        "prefix": "under section 122 of the Constitution. Section 127 was wholly removed. Headed \"Aborigines not to be counted in reckoning population\", it had read:",
-        "sha256": "8bf53c7d59c79b0df8724200f2cdeb8357210c70030a33ed21debf1bc02a494d",
-        "suffix": "The Constitution required the calculation of \"the people\" for several purposes in sections 24, 89, 93 and 105. Section 89 related to the imposition o"
-      }
-    },
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "79ea2000b93764b14d777ceefc495ba216979231e0d2f8dfeeefdda6bf07fcc0": true
-    }
+    "blocked": "HTTP_429",
+    "blocked_since": "2026-08-20"
   },
   "https://en.wikipedia.org/wiki/2023_Israeli_judicial_reform_protests": {
     "checked": "2026-08-20",
@@ -936,20 +916,8 @@
     }
   },
   "https://en.wikipedia.org/wiki/2026_Bangladeshi_constitutional_referendum": {
-    "checked": "2026-08-20",
-    "content_hash": "ba97fa4783695d81c86fc3f9ff57414b2ce661ae5687e57bb7c927e51c108b09",
-    "contexts": {
-      "0cd293ad388e03c93c8bc039b8d173ed49b4941f0d82822dc9053cb7430a4556": {
-        "prefix": "arliament will act as a constituent assembly to enact the changes in the constitution agreed in the charter. The \"Yes\" vote passed in the referendum,",
-        "sha256": "73c889c37892fcbfe12f3eecf2222ce4f600c24e51181b1aa3319eba9daab0be",
-        "suffix": "The \"Yes\" vote does not, by itself, change the Constitution; it is a mandate to change the Constitution. It is considered politically binding, not le"
-      }
-    },
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "0cd293ad388e03c93c8bc039b8d173ed49b4941f0d82822dc9053cb7430a4556": true
-    }
+    "blocked": "HTTP_429",
+    "blocked_since": "2026-08-20"
   },
   "https://en.wikipedia.org/wiki/Anne_Twomey_(academic)": {
     "checked": "2026-08-18",
@@ -1017,20 +985,8 @@
     }
   },
   "https://en.wikipedia.org/wiki/Athenian_democracy": {
-    "checked": "2026-08-20",
-    "content_hash": "3c2c536f52e562c75dc2c2a848c03e47d64b8cfe237ee2a0e6939331a137de94",
-    "contexts": {
-      "94e8cf47c044ed23f81366f10f09ade4e921e05df56df7dd36feb9c033a3b9fe": {
-        "prefix": "f of the over one thousand existing Greek cities might have been democracies. Athens practiced a political system of legislation and executive bills.",
-        "sha256": "a858f87c1908d3b2b36a8b076bd5536f82eb72b64e52e52ac0531cc5beb4c57f",
-        "suffix": "Adult male citizens probably constituted no more than 30 percent of the total adult population. Solon (in 594 BC), Cleisthenes (in 508\u201307 BC), and Ep"
-      }
-    },
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "94e8cf47c044ed23f81366f10f09ade4e921e05df56df7dd36feb9c033a3b9fe": true
-    }
+    "blocked": "HTTP_429",
+    "blocked_since": "2026-08-20"
   },
   "https://en.wikipedia.org/wiki/Australian_Democrats": {
     "checked": "2026-08-18",
@@ -1270,15 +1226,9 @@
     }
   },
   "https://en.wikipedia.org/wiki/Electoral_Reform_Society": {
-    "checked": "2026-08-18",
+    "checked": "2026-08-20",
     "content_hash": "cbe8c7fc95d0f199a131795297e81285b85cd57b36ee64cc52700335dd31df3a",
     "contexts": {
-      "74287bc5b9b7c87203003151dac8f078cf62108994bb26796251c76f7a3e065d": {
-        "prefix": "a regular commentator on all aspects of representation, public participation and democratic governance in the United Kingdom. == History == The ERS",
-        "sha256": "29442e69e3616538c7ff0f518f994a5b7506f3d9c96c3945fa7c04bfbf293f00",
-        "suffix": "the polymath and politician John Lubbock. By the end of the year, the society had attracted the support of 184 Members of Parliament, split almost eq",
-        "text": "== History == The ERS was founded in January 1884 as the Proportional Representation Society by the polymath and politician John Lubbock. By the end of the year, the society had attracted the support of 184 Members of Parliament, split almost equally between Conservatives and Liberals. Other early members included Charles Dodgson (better known as Lewis Carroll), C. P. Scott, editor of The Manchester Guardian and Thomas Hare, inventor of the Single Transferable Vote. The initial aim of the society was to have proportional representation included in the terms of the Representation of the People Act 1884 and the Redistribution of Seats Act 1885 (48 & 49 Vict. c. 23), but, despite a determined campaign of political lobbying, it was unable to do so. A PRS pamphlet of the 1920s described the organisation's aims thus:"
-      },
       "a6d0bbffcedb06353a2823950e29a8397d56e9512cc5bea89abe7db209d1952f": {
         "prefix": "ndal as part of the Vote for a Change campaign. It is a founding member of the Votes at 16 Coalition. === AV referendum === The society was later a",
         "sha256": "cbe8c7fc95d0f199a131795297e81285b85cd57b36ee64cc52700335dd31df3a",
@@ -1289,28 +1239,12 @@
     "etag": null,
     "last_modified": null,
     "verified": {
-      "32569e4692d1ee725dd0e8f1cabcfe644cfad119f0aec899fd07a314b72048d9": false,
-      "74287bc5b9b7c87203003151dac8f078cf62108994bb26796251c76f7a3e065d": true,
       "a6d0bbffcedb06353a2823950e29a8397d56e9512cc5bea89abe7db209d1952f": true
     }
   },
   "https://en.wikipedia.org/wiki/Flux_(political_party)": {
-    "checked": "2026-08-18",
-    "content_hash": "8165a6bf95538d2064e68a910d8e3ca43c3e24f012ce7342fb5eb90e6ef105c3",
-    "contexts": {
-      "b928b77f00aef5a573cab550ecf58b461e57e3b4d06415caadc078691a6c6ffa": {
-        "prefix": "ate effectively in issue-based direct democracy without having to focus on every issue as they would in a regular direct democracy. == Australia ==",
-        "sha256": "8165a6bf95538d2064e68a910d8e3ca43c3e24f012ce7342fb5eb90e6ef105c3",
-        "suffix": "in the Australian Capital Territory, Western Australia, Queensland and New South Wales. Flux was registered at a federal level from 2016, but it was",
-        "text": "== Australia == Flux parties were registered in the Australian Capital Territory, Western Australia, Queensland and New South Wales. Flux was registered at a federal level from 2016, but it was de-registered in 2022 for failing to meet the increased requirement of 1500 members."
-      }
-    },
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "196076683c1085d2ce7733c6c902d61c4c37ba62b18e533ec2868d6a80074cff": false,
-      "b928b77f00aef5a573cab550ecf58b461e57e3b4d06415caadc078691a6c6ffa": true
-    }
+    "blocked": "HTTP_429",
+    "blocked_since": "2026-08-20"
   },
   "https://en.wikipedia.org/wiki/Fusion_Party_(Australia)": {
     "checked": "2026-08-18",
@@ -1399,37 +1333,12 @@
     }
   },
   "https://en.wikipedia.org/wiki/Grattan_Institute": {
-    "checked": "2026-08-20",
-    "content_hash": "9189983139eed6d84a100fa2cc4139c3e3bb3bfe33d883ed8ca8dc5e99fc3023",
-    "contexts": {
-      "cb0df30b346a363776841fad5fcc35fb5166ea7284f7ad1eb60919d658f16c31": {
-        "prefix": "matching funding, along with support in kind from the University of Melbourne. Commitments followed soon after from BHP and National Australia Bank.",
-        "sha256": "480d865eda5ac756cc77e87a1ee6021e497f1e2b37be2b968d9b7db437afedab",
-        "suffix": ", Origin Energy Foundation, Third Link Growth Fund, Cuffe Family Foundation, Medibank Private, Trawalla Foundation, Wesfarmers, Maddocks, McKinsey & C"
-      }
-    },
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "cb0df30b346a363776841fad5fcc35fb5166ea7284f7ad1eb60919d658f16c31": true
-    }
+    "blocked": "HTTP_429",
+    "blocked_since": "2026-08-20"
   },
   "https://en.wikipedia.org/wiki/Haitian_Revolution": {
-    "checked": "2026-08-20",
-    "content_hash": "1c45fafbe5f6729bd2be823eedc7db1d44303909ab7f1901e3784906028e9146",
-    "contexts": {
-      "2301fb735d6a5cdd015c900d7b0550c365383953c8e252fdfc389cfd76b8ab96": {
-        "prefix": "r.\" Raynal's Enlightenment philosophy went deeper than a prediction and reflected many similar philosophies, including those of Rousseau and Diderot.",
-        "sha256": "1c45fafbe5f6729bd2be823eedc7db1d44303909ab7f1901e3784906028e9146",
-        "suffix": "In addition to Raynal's influence, Toussaint Louverture, a free Black who was familiar with Enlightenment ideas within the context of European colon",
-        "text": "=== Slavery in Enlightenment thought === French writer Guillaume Raynal attacked slavery in his history of European colonization. He warned, \"the Africans only want a chief, sufficiently courageous, to lead them on to vengeance and slaughter.\" Raynal's Enlightenment philosophy went deeper than a prediction and reflected many similar philosophies, including those of Rousseau and Diderot. Raynal's admonition was written thirteen years before the Declaration of the Rights of Man and of the Citizen, which highlighted freedom and liberty but did not abolish slavery."
-      }
-    },
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "2301fb735d6a5cdd015c900d7b0550c365383953c8e252fdfc389cfd76b8ab96": true
-    }
+    "blocked": "HTTP_429",
+    "blocked_since": "2026-08-20"
   },
   "https://en.wikipedia.org/wiki/Herrenvolk_democracy": {
     "checked": "2026-08-20",
@@ -1538,14 +1447,8 @@
     }
   },
   "https://en.wikipedia.org/wiki/Jan_Fran": {
-    "checked": "2026-08-18",
-    "content_hash": "08aefbba23ff4851588f3b085380539ba1a37f3c73a2638d065190e3b4ce0da7",
-    "contexts": {},
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "153ad588fa9818219c7009d60b10c9f214383c370f7da7437157a3b9280dbfc2": false
-    }
+    "blocked": "HTTP_429",
+    "blocked_since": "2026-08-20"
   },
   "https://en.wikipedia.org/wiki/Janaagraha": {
     "checked": "2026-08-18",
@@ -1745,20 +1648,8 @@
     }
   },
   "https://en.wikipedia.org/wiki/Metic": {
-    "checked": "2026-08-20",
-    "content_hash": "2419255570fdea258a90e85999154b0aaeee4cb5701dddca0f64cbe92252f3b6",
-    "contexts": {
-      "f6ce74e1bb200a34d5bbdadc575e27bfff1a37aa4de6225eb11a7f92253a8fe5": {
-        "prefix": "p on them as a gift. This was rarely done. From a cultural viewpoint such a resident could be completely \"local\" and indistinguishable from citizens.",
-        "sha256": "22ec15f81e7ae78e233f97cbf91c256fc36c273ab34d80eef18f6daca7b0b39e",
-        "suffix": "In the urbane scene that opens Plato's Republic\u2014the dialogue takes place in a metic household\u2014the status of the speakers as citizen or metic is never"
-      }
-    },
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "f6ce74e1bb200a34d5bbdadc575e27bfff1a37aa4de6225eb11a7f92253a8fe5": true
-    }
+    "blocked": "HTTP_429",
+    "blocked_since": "2026-08-20"
   },
   "https://en.wikipedia.org/wiki/Movement_for_Quality_Government_in_Israel": {
     "checked": "2026-08-18",
@@ -1847,13 +1738,19 @@
     }
   },
   "https://en.wikipedia.org/wiki/Nicholas_Gruen": {
-    "checked": "2026-08-18",
-    "content_hash": "c6cc3560787fdc68d42cf67a2d703d47d4c1d2e2564d28f4c294e6d224d1f38c",
-    "contexts": {},
+    "checked": "2026-08-20",
+    "content_hash": "94596eab717cd19361e57c5cfbaabee227c59e4ac5ee2a2ae7163b27060b2b39",
+    "contexts": {
+      "d25352cdb56457da9b39478ed6854774199687939e505ae2247b5f966bbd0fdc": {
+        "prefix": "roductivity Commission on which he served until the late 1990s when he joined the Business Council of Australia directing its New Directions project.",
+        "sha256": "66b2c89a7be6ee16e3b0cba45b03a15412d3376812fec63ec6bed29e65b54a7e",
+        "suffix": "and a discount finance broker Peach Home Loans. In this period he has advised Federal and State Governments both as a consultant and when appointed a"
+      }
+    },
     "etag": null,
     "last_modified": null,
     "verified": {
-      "7441f396dbfa195895773c9a89f4bff98b20e0ea5aa3631c6fcaa962f0318497": false
+      "d25352cdb56457da9b39478ed6854774199687939e505ae2247b5f966bbd0fdc": true
     }
   },
   "https://en.wikipedia.org/wiki/None_of_the_Above_Direct_Democracy_Party": {
@@ -1971,15 +1868,8 @@
     }
   },
   "https://en.wikipedia.org/wiki/PORA": {
-    "checked": "2026-08-18",
-    "content_hash": "c635b01651af128d40f5cc58a566e9a0e4f3f751eca66ddb4dcf25945190cd12",
-    "contexts": {},
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "90fbeeffc031d64adb4b6d3421c559d9d27a75517d776f9c8b388ccc4a1ff147": false,
-      "d3f890b11de7278454cd3f55a8cc9b9c54a5f746e0852b7ed9a810c789faf5bd": false
-    }
+    "blocked": "HTTP_429",
+    "blocked_since": "2026-08-20"
   },
   "https://en.wikipedia.org/wiki/PRS_Legislative_Research": {
     "checked": "2026-08-18",
@@ -2062,21 +1952,8 @@
     }
   },
   "https://en.wikipedia.org/wiki/Politics_(Aristotle)": {
-    "checked": "2026-08-20",
-    "content_hash": "31816bfe70319f193272c8038fd4bdd6b6ebb18c9564d6545106de3fe2e4024b",
-    "contexts": {
-      "537cdaf26f0d0e6f24247c9a172de692f2b794961b9b1f2cd25450d12afa3c37": {
-        "prefix": "rs citizenship and who counts as a citizen. He asserts that a citizen is anyone who is \"entitled to participate in office, deliberative or judicial\".",
-        "sha256": "31816bfe70319f193272c8038fd4bdd6b6ebb18c9564d6545106de3fe2e4024b",
-        "suffix": "Aristotle is also doubtful about whether citizenship should extend to the banausos or working classes. He next considers what sort of entity a state",
-        "text": "=== Book III === Aristotle considers citizenship and who counts as a citizen. He asserts that a citizen is anyone who is \"entitled to participate in office, deliberative or judicial\". This excludes honorary citizens, resident aliens, slaves, women, foreigners even if they have some access to the legal system through commercial treaties, boys too young for military service, or people who have been exiled or stripped of their citizenship. Aristotle is also doubtful about whether citizenship should extend to the banausos or working classes. He next considers what sort of entity a state is, whether it is a single thing, and under what circumstances it can be considered to have changed or, alternatively, to have been supplanted by a new state. He then turns to the question of how the virtues of a person qua person line up with the virtues of a person qua citizen: where they are coincident and where they may differ."
-      }
-    },
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "537cdaf26f0d0e6f24247c9a172de692f2b794961b9b1f2cd25450d12afa3c37": true
-    }
+    "blocked": "HTTP_429",
+    "blocked_since": "2026-08-20"
   },
   "https://en.wikipedia.org/wiki/Referendum_Council": {
     "archive_checked": "2026-08-17",
@@ -2112,20 +1989,8 @@
     }
   },
   "https://en.wikipedia.org/wiki/Reform_Act_1832": {
-    "checked": "2026-08-20",
-    "content_hash": "96eb151473ee8195512a4b4a39a69ceb9b84d0915adc473f20d9637463d90300",
-    "contexts": {
-      "6c2f35db54c1c339960fee2796583cbaf44eae16600b2d03358c610f8b5df65d": {
-        "prefix": "England and Wales and to expand the franchise. The measure was brought forward by the Whig government of Prime Minister Charles Grey, 2nd Earl Grey.",
-        "sha256": "4cc34da75b31107efa863f135646fdb6f3ccf0b01228ab98849703141d6e4795",
-        "suffix": "The act also reapportioned constituencies to address the unequal distribution of seats. The act formally excluded women from voting, as a voter was d"
-      }
-    },
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "6c2f35db54c1c339960fee2796583cbaf44eae16600b2d03358c610f8b5df65d": true
-    }
+    "blocked": "HTTP_429",
+    "blocked_since": "2026-08-20"
   },
   "https://en.wikipedia.org/wiki/SITRA": {
     "archive_checked": "2026-08-17",
@@ -2146,20 +2011,8 @@
     }
   },
   "https://en.wikipedia.org/wiki/Slavery_in_France": {
-    "checked": "2026-08-20",
-    "content_hash": "460153a866fcc91828c070b5e39a0e18a672b4072b89182777c29096fe37521d",
-    "contexts": {
-      "d14042843aef627b978e01584444c3fc6c90802d16baace5e290ca55c39afa94": {
-        "prefix": "e metropole. Another decisive reason for the sudden abolition of slavery was the success of the Slave Revolt in Saint-Domingue (Haitian Revolution).",
-        "sha256": "130885c73ba4f0c5ea86e30a0efb9a07435fdd20e846a810db07f1f3d88d98f3",
-        "suffix": "The first article of the law stated that \"Slavery was abolished\" in the French colonies, while the second article stated that \"slave-owners would be"
-      }
-    },
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "d14042843aef627b978e01584444c3fc6c90802d16baace5e290ca55c39afa94": true
-    }
+    "blocked": "HTTP_429",
+    "blocked_since": "2026-08-20"
   },
   "https://en.wikipedia.org/wiki/Team_Mirai": {
     "archive_checked": "2026-08-17",
@@ -2207,20 +2060,8 @@
     }
   },
   "https://en.wikipedia.org/wiki/Three-fifths_Compromise": {
-    "checked": "2026-08-20",
-    "content_hash": "27401c8982df8b9380510693d7723ab90749e8e7056884a84a721caef01b3536",
-    "contexts": {
-      "3ab4eab341a2373292a29cf6d4eed900b40bfd4948ae2f26daeeee4d43ca9fcd": {
-        "prefix": ". Slave states wanted their entire population to be counted to determine the number of Representatives those states could elect and send to Congress.",
-        "sha256": "fe84a80a521c54338c473b3880d4565c8275de77d4cb89db940cd553bba1e6c6",
-        "suffix": "It also gave slaveholders similarly enlarged powers in Southern legislatures; this was an issue in the secession of West Virginia from Virginia in 18"
-      }
-    },
-    "etag": null,
-    "last_modified": null,
-    "verified": {
-      "3ab4eab341a2373292a29cf6d4eed900b40bfd4948ae2f26daeeee4d43ca9fcd": true
-    }
+    "blocked": "HTTP_429",
+    "blocked_since": "2026-08-20"
   },
   "https://en.wikipedia.org/wiki/Ushahidi": {
     "archive_checked": "2026-08-17",
@@ -2737,9 +2578,7 @@
     }
   },
   "https://ia.acs.org.au/article/2018/blockchain-to-revolutionise-e-voting.html": {
-    "archive_checked": "2026-08-17",
-    "archive_url": "http://web.archive.org/web/20260816160453/https://ia.acs.org.au/article/2018/blockchain-to-revolutionise-e-voting.html",
-    "checked": "2026-08-18",
+    "checked": "2026-08-20",
     "content_hash": "23469086d0ee48bd6b95906310cdafbfc621a0236b945ba611631b213dcaa03b",
     "contexts": {
       "3c37246d83e4a5392f7029ce3447911a6476b8a1d604e07af291b08c9ddd7a44": {
@@ -2773,13 +2612,20 @@
     }
   },
   "https://itsrio.org/pt/institucional/": {
-    "checked": "2026-08-18",
-    "content_hash": "52f7276be505083b1d718ab4903da440faa4bfb4e0ebd92756a6580cd5f197c7",
-    "contexts": {},
+    "checked": "2026-08-20",
+    "content_hash": "14e15a667fe35f7cc46b13a0c6a12d50da0857a9853fa1e241b08e68bd554af8",
+    "contexts": {
+      "14e15a667fe35f7cc46b13a0c6a12d50da0857a9853fa1e241b08e68bd554af8": {
+        "prefix": "seguir e em caso de d\u00favida entre em contato conosco atrav\u00e9s do endere\u00e7o de e-mail [email protected]. 1) Nossa miss\u00e3o institucional",
+        "sha256": "14e15a667fe35f7cc46b13a0c6a12d50da0857a9853fa1e241b08e68bd554af8",
+        "suffix": "Na busca dessa finalidade s\u00e3o realizados estudos, pesquisas e s\u00e3o oferecidos cursos e estudos que podem envolver a necessidade de tratamento de",
+        "text": "O ITS Rio \u00e9 um Instituto de pesquisa sem fins lucrativos, que estuda o impacto e o futuro da tecnologia no Brasil e no mundo, na busca de assegurar o aproveitamento criativo e apropriado das oportunidades fornecidas pela tecnologia na era digital."
+      }
+    },
     "etag": null,
-    "last_modified": "Tue, 18 Aug 2026 08:47:11 GMT",
+    "last_modified": "Thu, 20 Aug 2026 10:01:04 GMT",
     "verified": {
-      "b303350a68e27c8c5e02403b8b711a3241802bbd3513f0cb1f0e8f3a29071435": false
+      "14e15a667fe35f7cc46b13a0c6a12d50da0857a9853fa1e241b08e68bd554af8": true
     }
   },
   "https://journals.sagepub.com/doi/10.1177/20539517241296038": {
@@ -2788,12 +2634,18 @@
   },
   "https://knightcolumbia.org/content/can-ai-mediation-improve-democratic-deliberation": {
     "checked": "2026-08-20",
-    "content_hash": "7e57a0693dc225fdec8ece7743464001d746359957c9f268cd867512536c8292",
-    "contexts": {},
+    "content_hash": "84e7bf80e174a55ce62d267ef0ba6fc86a68760448f1fe4b08558e03866959d3",
+    "contexts": {
+      "904d4454fca76da3ce047163ee870f5f22335990f2fce83453a6961120c1d638": {
+        "prefix": "(i.e., weighing their opinions in proportion to the size of the majority/minority) after processing the opinions, but after processing the critiques,",
+        "sha256": "e4320900a8b2575ac2189e3337e3bdaca23a005c7a72ba984ffc6bb94a353a2f",
+        "suffix": "Finally, the authors replicated their findings in a demographically representative sample of the UK, finding convergent shifts in position across gro"
+      }
+    },
     "etag": null,
-    "last_modified": "Thu, 20 Aug 2026 04:41:24 GMT",
+    "last_modified": "Thu, 20 Aug 2026 09:58:49 GMT",
     "verified": {
-      "81bd03ee73b4aa759b81fbd5893635760b47c5c7b76f5d9ea05b8038afc6fb85": false
+      "904d4454fca76da3ce047163ee870f5f22335990f2fce83453a6961120c1d638": true
     }
   },
   "https://liqd.net/en/projects/meinberlin/": {
@@ -3258,12 +3110,19 @@
   },
   "https://projects.propublica.org/nonprofits/organizations/832183139": {
     "checked": "2026-08-20",
-    "content_hash": "76a56b8718dcae944fac8c984e0de25f764c9efdfc0f7660206ded6164f18dc2",
-    "contexts": {},
+    "content_hash": "34697ca225e584e9215ddb2777a89fbe68cc05fcc8a46d92fb37e35dc6394ea6",
+    "contexts": {
+      "34697ca225e584e9215ddb2777a89fbe68cc05fcc8a46d92fb37e35dc6394ea6": {
+        "prefix": "Radicalxchange Foundation Ltd - Nonprofit Explorer - ProPublica Nonprofit Explorer California",
+        "sha256": "34697ca225e584e9215ddb2777a89fbe68cc05fcc8a46d92fb37e35dc6394ea6",
+        "suffix": "Organization summary Type of Nonprofit Designated as a 501(c)(3) Organizations for any of the following",
+        "text": "Radicalxchange Foundation Ltd Moraga, CA Tax-exempt since July 2019 EIN: 83-2183139"
+      }
+    },
     "etag": null,
     "last_modified": null,
     "verified": {
-      "2c2357d91cd4ee5fb36b3931a28107813f4857aaa5654b688c6e32a0dd3b77ea": false
+      "34697ca225e584e9215ddb2777a89fbe68cc05fcc8a46d92fb37e35dc6394ea6": true
     }
   },
   "https://pt.wikipedia.org/wiki/Open_Knowledge_Brasil": {
@@ -3401,10 +3260,8 @@
     }
   },
   "https://techboard.com.au/company-profile/xo-1/": {
-    "archive_checked": "2026-08-17",
-    "archive_url": "http://web.archive.org/web/20260816160405/https://techboard.com.au/company-profile/xo-1/",
-    "checked": "2026-08-18",
-    "content_hash": "38ace296b9b8b6004eda2154431eb810f871eafe21d34ca1ee957bbc1f03173b",
+    "checked": "2026-08-20",
+    "content_hash": "e7c65b2026e35db7b13ddba7bd91b955aa391ad233bd5fd28808640605308044",
     "contexts": {
       "1baf11b8ef1333f3a2d2798791bf4702594ca3570629131a7e0480711eaca5a1": {
         "prefix": "Profile: Yes Company Profile Company Announcements: (reported by the Company)",
@@ -3414,10 +3271,9 @@
       }
     },
     "etag": null,
-    "last_modified": "Tue, 18 Aug 2026 08:50:13 GMT",
+    "last_modified": "Thu, 20 Aug 2026 09:55:32 GMT",
     "verified": {
-      "1baf11b8ef1333f3a2d2798791bf4702594ca3570629131a7e0480711eaca5a1": true,
-      "3573c52bd04966c380a9b3ac0c3023a221c7f8740521915567b994b26f9df89b": false
+      "1baf11b8ef1333f3a2d2798791bf4702594ca3570629131a7e0480711eaca5a1": true
     }
   },
   "https://theconversation.com/as-the-latrobe-valley-moves-away-from-coal-jobs-could-a-green-workers-cooperative-offer-a-solution-245850": {
@@ -3726,7 +3582,7 @@
         "text": "Legislation which will let 1.7 million 16 and 17-year-olds vote at the next general election is beginning its journey through Parliament."
       }
     },
-    "etag": "\"naywk2zjb15vm7\"",
+    "etag": "\"2goel04lex5vm7\"",
     "last_modified": null,
     "verified": {
       "0621279d2dccc8945937f03c73acdad703f21f0780a52ab61f6d11a7f08b66cd": true
@@ -3831,13 +3687,20 @@
     }
   },
   "https://www.canberra.edu.au/research/centres/cdd/about-cdd/our-history": {
-    "checked": "2026-08-18",
-    "content_hash": "0b2eb39469b9a619c46496f96c794a92e4ee2abb96ad1726e9db200d87ba52fc",
-    "contexts": {},
+    "checked": "2026-08-20",
+    "content_hash": "9f2547a64d78df55c5d5907f7d11ea0169e200be08c7f247d88c4a5da82b20af",
+    "contexts": {
+      "63f61418f6bdb086840adc46930793ba15107771302dc88df65958c67cd4f4dc": {
+        "prefix": "Our history The Centre was founded in 2004 at the Australian National University by John Dryzek and Simon Niemeyer.",
+        "sha256": "9f2547a64d78df55c5d5907f7d11ea0169e200be08c7f247d88c4a5da82b20af",
+        "suffix": ", most recently under the leadership of Selen Ercan, alongside many staff, students, associates, and partners. Early Years at",
+        "text": "The Centre was founded in 2004 at the Australian National University by John Dryzek and Simon Niemeyer. It relocated to the University of Canberra in 2014, where it has since been consolidated and expanded through the collective efforts of its members, most recently under the leadership of Selen Ercan, alongside many staff, students, associates, and partners."
+      }
+    },
     "etag": null,
     "last_modified": null,
     "verified": {
-      "f7b7bdd0503cd401dcda4993570954a3b43d2762c94b10c0a4760d94db555e49": false
+      "63f61418f6bdb086840adc46930793ba15107771302dc88df65958c67cd4f4dc": true
     }
   },
   "https://www.cddwestafrica.org/about-us/": {
@@ -3894,7 +3757,7 @@
       }
     },
     "etag": null,
-    "last_modified": "Thu, 20 Aug 2026 04:41:59 GMT",
+    "last_modified": "Thu, 20 Aug 2026 10:04:17 GMT",
     "verified": {
       "b793b2e7e595240550e5e0027f6396743d963448660ec2c96fe4c59440698404": true
     }
@@ -4060,8 +3923,8 @@
         "text": "My main thrust is government organized along scientific principles which is as much to say as the application of cybernetic principles to government. Democracy is part of that and Stafford Beer, who is the father of management cybernetics, was highly regarded by the Open Democracy organisation as witnessed by the obituary published for him by Rosemary Bechler, the International Editor, of Open Democracy - https://www.opendemocracy.net/node/611"
       }
     },
-    "etag": "W/\"6a84c58a-3c329\"",
-    "last_modified": "Tue, 18 Aug 2026 20:50:18 GMT",
+    "etag": "W/\"6a86cf00-3c329\"",
+    "last_modified": "Thu, 20 Aug 2026 09:55:12 GMT",
     "verified": {
       "bede7c49e95577b8277ad463bb91abccf42180fb72e768eccea82d61fcd628e0": true
     }
@@ -4105,23 +3968,37 @@
     }
   },
   "https://www.folio.org.au/event-4941291": {
-    "checked": "2026-08-18",
-    "content_hash": "d5597fc74b49abbd5925d93ebcb56dd97d62762c50c3e579f3573558db0f46b8",
-    "contexts": {},
+    "checked": "2026-08-20",
+    "content_hash": "1df16e4aa765339cade7c5c150a36c5238dd0bdf91958ca7d409a27b54e6858a",
+    "contexts": {
+      "efefdd95be3e7b720c2d760fc21178cdd2c0de2801632fb3ec26d35f2f22d5be": {
+        "prefix": "rs that the trust bubble has burst, with the Edelman survey revealing sharp declines in trust across the board. We are extremely fortunate to have",
+        "sha256": "1df16e4aa765339cade7c5c150a36c5238dd0bdf91958ca7d409a27b54e6858a",
+        "suffix": "Danielle Wood is the CEO of the Grattan Institute, a non-partisan think tank providing independent, rigorous and practical solutions t",
+        "text": "We are extremely fortunate to have The Hon Stephen Charles AO QC (Centre for Public Integrity; former Victoria Court of Appeal judge) and Danielle Wood (CEO, Grattan Institute) to lead a timely conversation about the state of Australian politics and democracy and how we might let the sunshine in and strengthen public integrity."
+      }
+    },
     "etag": null,
     "last_modified": null,
     "verified": {
-      "4e65ba0c5546e7cda6b970bb6aec764c8c0aba68772c67f965ca552bc8cddb95": false
+      "efefdd95be3e7b720c2d760fc21178cdd2c0de2801632fb3ec26d35f2f22d5be": true
     }
   },
   "https://www.folio.org.au/event-5773784": {
-    "checked": "2026-08-18",
-    "content_hash": "7f84c2c4503dcba9e4bde2bf95d7e4623e0c1ae3e9beb89b7bf080306b4902d1",
-    "contexts": {},
+    "checked": "2026-08-20",
+    "content_hash": "5382a717ca1f49c3cfd26722588fe036be02e41d9083e4c1d69f69c792a7d8ca",
+    "contexts": {
+      "5382a717ca1f49c3cfd26722588fe036be02e41d9083e4c1d69f69c792a7d8ca": {
+        "prefix": "t Islander peoples. While the outcome is clear, what did the Voice Referendum reveal about our democratic institutions and culture?",
+        "sha256": "5382a717ca1f49c3cfd26722588fe036be02e41d9083e4c1d69f69c792a7d8ca",
+        "suffix": "Whether you voted YES or NO, we invite you to join this important conversation and contribute your perspectives and experiences. This eve",
+        "text": "This Folio Conversation with Mary Crooks and Lauren Crystal will help us unpack the Voice Referendum, drawing on their direct experience in community conversations across the country and personal reflections on the Yes and No campaigns, the referendum outcome, and democracy in Australia."
+      }
+    },
     "etag": null,
     "last_modified": null,
     "verified": {
-      "0e32733c943cd8650940a4e67f7a82baef291fd9a97eb5fe79964eaa556a9bff": false
+      "5382a717ca1f49c3cfd26722588fe036be02e41d9083e4c1d69f69c792a7d8ca": true
     }
   },
   "https://www.g1000.org/en/cases/g1000-citizens-summit": {
@@ -4539,7 +4416,7 @@
       }
     },
     "etag": null,
-    "last_modified": "Thu, 20 Aug 2026 04:41:36 GMT",
+    "last_modified": "Thu, 20 Aug 2026 10:12:36 GMT",
     "verified": {
       "c2818896dcfe240d678899972cb064bdf13ddce3baa08c29231548cefd2717fc": true
     }
@@ -4620,12 +4497,19 @@
   },
   "https://www.newdemocracy.com.au/board-and-executive/": {
     "checked": "2026-08-20",
-    "content_hash": "f82fb37738cf86f81a3f595391ff5b26fa3727e20672f5e910b8899dc2578be2",
-    "contexts": {},
+    "content_hash": "94fe21be6bb2347c6982d6c48e46edb15757d4bcc6490a6dc7603082a7db11d7",
+    "contexts": {
+      "94fe21be6bb2347c6982d6c48e46edb15757d4bcc6490a6dc7603082a7db11d7": {
+        "prefix": "rsity. He is a pro bono Director of The newDemocracy Foundation. Iain Walker Executive Director",
+        "sha256": "94fe21be6bb2347c6982d6c48e46edb15757d4bcc6490a6dc7603082a7db11d7",
+        "suffix": "Iain has led over 20 trial projects at local government and state government level including projects for State Premiers on both sides of polit",
+        "text": "Iain Walker is Executive Director of the newDemocracy Foundation (nDF) in Australia, a role he has held since 2011."
+      }
+    },
     "etag": null,
     "last_modified": null,
     "verified": {
-      "da67029ed5ea52da45e84dcad34c4538e72b4fbda8f0cef37336baee4ed65ce1": false
+      "94fe21be6bb2347c6982d6c48e46edb15757d4bcc6490a6dc7603082a7db11d7": true
     }
   },
   "https://www.newdemocracy.com.au/history/": {
@@ -4657,12 +4541,19 @@
   },
   "https://www.opendemocracy.net/en/can-europe-make-it/agora-votingnvotes/": {
     "checked": "2026-08-20",
-    "content_hash": "d96762f3e5e2558aa90e617d645ab1d4f6dff869573a9e730d4f776888a96945",
-    "contexts": {},
+    "content_hash": "2163a9505a9748fa9ae73784644b172a1534517250c04cc554c92c1cc55c9e82",
+    "contexts": {
+      "760454caecf822573c42dd31e93134bb57ad652f4d181bbea53b49d4563b1515": {
+        "prefix": ", and leadership. Over the past two weeks, two large Internet-based consultations have been held in Spain. From February 4 through February 11,",
+        "sha256": "2163a9505a9748fa9ae73784644b172a1534517250c04cc554c92c1cc55c9e82",
+        "suffix": "and political line before the second party congress held in Vistalegre, a suburb of Madrid. A few days later, over 150,000 madrilenos voted in the fi",
+        "text": "Over the past two weeks, two large Internet-based consultations have been held in Spain. From February 4 through February 11, over 155,000 members of Podemos voted online to renew the party leadership and political line before the second party congress held in Vistalegre, a suburb of Madrid. A few days later, over 150,000 madrilenos voted in the first binding city referendums concerning public transport, a sustainability programme, and the renovation plan for Plaza de Espana."
+      }
+    },
     "etag": "W/\"24579-W/xfi5x4jdWFdOnfv24AWFkpjgg\"",
     "last_modified": null,
     "verified": {
-      "6af77572e19c01f07ceb0d60910df68777c10dbaaa7e6bd289cf8fce49a116f7": false
+      "760454caecf822573c42dd31e93134bb57ad652f4d181bbea53b49d4563b1515": true
     }
   },
   "https://www.opengovpartnership.org/documents/australia-letter-of-intent-to-join-ogp/": {
@@ -4768,19 +4659,19 @@
   },
   "https://www.peoplepowered.org/news-content/digital-participation-case-study-taiwan": {
     "checked": "2026-08-20",
-    "content_hash": "302a97ff4a746653f8e489f47e644e637a3589acb7c57ab81e73833b181f7df4",
+    "content_hash": "34e8a1d166f1a9d019993b36380a00c1b548d28fe52f0cf0b30429c4c54d80a5",
     "contexts": {
-      "8b1132d10f23f3c8368c2b3e9233c0fb121095a3bdafd9c9521eb699bd32f69d": {
+      "8fa827287576f5877acfab08abf40a049d3a085a3267d7b2782ea8ee282613fa": {
         "prefix": "ntribute online. The deliberation discussions were conducted primarily in Mandarin, with limited English interpretation provided by volunteers.",
-        "sha256": "302a97ff4a746653f8e489f47e644e637a3589acb7c57ab81e73833b181f7df4",
-        "suffix": "Currently, the community integrates tools such as Pol.is for large-scale opinion mapping, Mentimeter for interactive delibera",
-        "text": "vTaiwan has always demonstrated how civic communities can innovate in democratic participation by combining open-source platforms, commercial tools, and AI. Currently, the community integrates tools such as"
+        "sha256": "34e8a1d166f1a9d019993b36380a00c1b548d28fe52f0cf0b30429c4c54d80a5",
+        "suffix": ", Mentimeter for interactive deliberation, and Generative AI tools such as ChatGPT and Claude for analysis and summarization i",
+        "text": "vTaiwan has always demonstrated how civic communities can innovate in democratic participation by combining open-source platforms, commercial tools, and AI. Currently, the community integrates tools such as Pol.is for large-scale opinion mapping,"
       }
     },
     "etag": "W/\"71648844ed7e658a9646d5b44335cdf6\"",
     "last_modified": null,
     "verified": {
-      "8b1132d10f23f3c8368c2b3e9233c0fb121095a3bdafd9c9521eb699bd32f69d": true
+      "8fa827287576f5877acfab08abf40a049d3a085a3267d7b2782ea8ee282613fa": true
     }
   },
   "https://www.philanthropy.org.au/news-and-stories/the-susan-mckinnon-foundation-and-monash-university-renew-commitment-to-enhanced-political-leadership/": {
@@ -4954,11 +4845,7 @@
     }
   },
   "https://www.radicalxchange.org/events/2019-conference": {
-    "archive_checked": "2026-08-17",
-    "archive_url": "http://web.archive.org/web/20260611115230/https://www.radicalxchange.org/events/2019-conference/",
-    "blocked": "ROBOTS_DISALLOWED",
-    "blocked_since": "2026-08-20",
-    "checked": "2026-08-18",
+    "checked": "2026-08-20",
     "content_hash": "6264021384b8cad5ea6531a2398d14fd4ceb4b4a5b5210e06025c57f982233bc",
     "contexts": {
       "b6955a1bbee95cce161cbd560f0198523a1111ab10df35c8c5bb8cd75ccdba0b": {
@@ -5127,7 +5014,7 @@
       }
     },
     "etag": null,
-    "last_modified": "Thu, 20 Aug 2026 04:40:17 GMT",
+    "last_modified": "Thu, 20 Aug 2026 10:02:26 GMT",
     "verified": {
       "8fc9eda11d9588c25a9de54eafe5a16d46de1760798789aa572b54fd461168fc": true
     }
@@ -5275,7 +5162,7 @@
       }
     },
     "etag": null,
-    "last_modified": "Thu, 20 Aug 2026 04:41:50 GMT",
+    "last_modified": "Thu, 20 Aug 2026 10:12:57 GMT",
     "verified": {
       "c2eea83ca832d9e5ce27ca000077c14e6c2b916129f786692b93e45cf7b8a486": true
     }

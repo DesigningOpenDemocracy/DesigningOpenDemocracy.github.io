@@ -23,12 +23,12 @@ location:
 events:
 - date: '2025-06-01'
   title: Launched by journalists Antoinette Lattouf and Jan Fran, with flagship podcast
+    "We Used to Be Journos"
   url: https://en.wikipedia.org/wiki/Jan_Fran
   quote: In 2025, Fran started a company with Antoinette Lattouf "Ette Media". The
-    pair launched a podcast "We used to be Journos". "We Used to Be Journos" debuting
-    2 July 2025 on Acast
+    pair launched a podcast "We used to be Journos".
   proof_level: high
-  url_checked: '2026-08-12'
+  url_checked: '2026-08-20'
   notable: true
 activity:
   dod:

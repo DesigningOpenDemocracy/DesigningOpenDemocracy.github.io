@@ -25,10 +25,10 @@ events:
 - date: '2004-01-01'
   title: Founded as an independent civil network for election observation and civic
   url: https://en.wikipedia.org/wiki/PORA
-  quote: The group was established in 2004 as only a civic youth organization participation
-    in Ukraine
+  quote: The group was established in 2004 (as only a civic youth organization) to
+    coordinate young people's opposition to the Kuchma government
   proof_level: high
-  url_checked: '2026-08-12'
+  url_checked: '2026-08-20'
   notable: true
 - date: '2004-11-21'
   title: Deployed 1,000+ observers for Ukraine's presidential election, documenting
@@ -37,9 +37,9 @@ events:
     Ukraine, including 150 groups responsible for spreading information and coordinating
     election monitoring, 72 regional centers, and 30,000 registered participants.
     This allowed Pora! to mobilize protesters after widespread reports of electoral
-    fraud. fraud that triggered the Orange Revolution
+    fraud.
   proof_level: high
-  url_checked: '2026-08-12'
+  url_checked: '2026-08-20'
   notable: true
 activity:
   dod:

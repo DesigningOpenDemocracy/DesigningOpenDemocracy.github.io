@@ -26,11 +26,12 @@ events:
 - date: 2022-10-19
   title: Public integrity, trust and democracy
   url: https://www.folio.org.au/event-4941291
-  quote: The Hon Stephen Charles AO QC and Danielle Wood (CEO, Grattan Institute)
-    to lead a timely conversation about the state of Australian politics and democracy
-    and how we might let the sunshine in and strengthen public integrity.
+  quote: The Hon Stephen Charles AO QC (Centre for Public Integrity; former Victoria
+    Court of Appeal judge) and Danielle Wood (CEO, Grattan Institute) to lead a timely
+    conversation about the state of Australian politics and democracy and how we might
+    let the sunshine in and strengthen public integrity.
   proof_level: high
-  url_checked: '2026-08-12'
+  url_checked: '2026-08-20'
   notable: true
 - date: 2023-03-20
   title: (Un)ethical design — Robodebt, accountability, and equity in a digital society
@@ -57,9 +58,10 @@ events:
   url: https://www.folio.org.au/event-5773784
   quote: This Folio Conversation with Mary Crooks and Lauren Crystal will help us
     unpack the Voice Referendum, drawing on their direct experience in community conversations
-    across the country.
+    across the country and personal reflections on the Yes and No campaigns, the referendum
+    outcome, and democracy in Australia.
   proof_level: high
-  url_checked: '2026-08-12'
+  url_checked: '2026-08-20'
   notable: true
 - date: 2025-02-26
   title: Election 2025 — how will independents shape our future Parliament?

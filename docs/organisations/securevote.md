@@ -18,11 +18,11 @@ location:
   precision: city
 events:
 - date: '2016-01-01'
-  title: Founded by Max Kaye as a Sydney-based blockchain voting startup
+  title: Founded by Frank Nesci and Max Kaye as a Sydney-based blockchain voting startup
   url: https://techboard.com.au/company-profile/xo-1/
-  quote: 'Founders: Max Kaye'
+  quote: 'Founders: Frank Nesci Max Kaye'
   proof_level: high
-  url_checked: '2026-08-10'
+  url_checked: '2026-08-20'
   notable: true
 - date: '2017-11-24'
   title: Won the Cyber Security Award at the Australian Technologies Competition

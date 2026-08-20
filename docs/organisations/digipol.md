@@ -15,10 +15,9 @@ events:
   title: Flux, the party behind DigiPol, deregistered by the AEC — effective end of
   url: https://en.wikipedia.org/wiki/Flux_(political_party)
   quote: Flux was registered at a federal level from 2016, but it was de-registered
-    in 2022 for failing to meet the increased requirement of 1500 members. the DigiPol
-    project
+    in 2022 for failing to meet the increased requirement of 1500 members.
   proof_level: high
-  url_checked: '2026-08-12'
+  url_checked: '2026-08-20'
   notable: true
 contributors:
 - BrianKhuu

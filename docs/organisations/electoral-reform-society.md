@@ -36,16 +36,15 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
-- date: '1958-01-01'
+- date: '1959-01-01'
   title: Defended STV in Ireland — future director Enid Lakeman led successful campaigns
     against referendums to abolish proportional representation
   url: https://en.wikipedia.org/wiki/Electoral_Reform_Society
-  quote: The Irish government in 1958 and 1968 tried to abolish the use of the Single
-    Transferable Vote and to revert to Westminster's voting system. On both occasions,
-    future director Enid Lakeman led our successful campaign to protect democracy
-    in Ireland.
+  quote: When Fianna Fáil put to a referendum a proposal to revert to first-past-the-post
+    voting twice (1959 and 1968), the society, under the leadership of Enid Lakeman,
+    led a successful campaign to keep the STV system in Ireland.
   proof_level: high
-  url_checked: '2026-08-10'
+  url_checked: '2026-08-20'
   notable: true
 - date: '2011-05-05'
   title: Led the Yes campaign in the UK's Alternative Vote referendum — the first

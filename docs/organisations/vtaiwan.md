@@ -118,7 +118,7 @@ The government's appetite for participatory deliberation shifted rather than dis
 
 [^chen]: "What kind of 'democracy' do new government-led digital initiatives facilitate? This paper discusses the issue by investigating the open government data policy in Taiwan in the 2010s" Terrence Ting-Yen Chen, ["Strong or thin digital democracy? The democratic implications of Taiwan's open government data policy in the 2010s"](https://journals.sagepub.com/doi/10.1177/20539517241296038), *Big Data & Society*, November 2024.
 
-[^peoplepowered]: "vTaiwan has always demonstrated how civic communities can innovate in democratic participation by combining open-source platforms, commercial tools, and AI." People Powered, ["Digital Participation Case Study: Taiwan"](https://www.peoplepowered.org/news-content/digital-participation-case-study-taiwan).
+[^peoplepowered]: "vTaiwan has always demonstrated how civic communities can innovate in democratic participation by combining open-source platforms, commercial tools, and AI. Currently, the community integrates tools such as Pol.is for large-scale opinion mapping" People Powered, ["Digital Participation Case Study: Taiwan"](https://www.peoplepowered.org/news-content/digital-participation-case-study-taiwan).
 
 ## See also
 

@@ -27,12 +27,11 @@ location:
   precision: city
 events:
 - date: '2000-01-01'
-  title: Founded by economist Nicholas Gruen as an economic consultancy (year-only,
+  title: Founded by economist Nicholas Gruen as an economic consultancy
   url: https://en.wikipedia.org/wiki/Nicholas_Gruen
-  quote: In 2000 he founded economic consultancy Lateral Economics sourced from Gruen's
-    own bio)
+  quote: In 2000 he founded economic consultancy Lateral Economics
   proof_level: high
-  url_checked: '2026-08-12'
+  url_checked: '2026-08-20'
   notable: true
 activity:
   manual:
