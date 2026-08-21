@@ -56,3 +56,28 @@ their own reasons as real cases show up rather than being pre-guessed here.
 | Org | Country | Date considered | Type | Reason | Notes |
 |---|---|---|---|---|---|
 | [Amnesty International (Australia)](https://www.amnesty.org.au/) | AU | 2026-08-21 | `human-rights-observatory` | `marginal-mechanism-work` | [Full reasoning](2026-08-21-amnesty-international-not-included.md) |
+| [Forensic Architecture](https://forensic-architecture.org/) | GB | 2026-08-21 (recorded retroactively — a DOD member recalled this being rejected previously, no prior written record found) | `human-rights-observatory` | `documentation-only` | [Full reasoning](2026-08-21-forensic-architecture-not-included.md) |
+
+## Possible spinoff: a rights-documentation/advocacy tracker
+
+Two entries in a row now tagged `human-rights-observatory` (Amnesty,
+Forensic Architecture) — both organisations DOD members clearly rate
+highly, just outside what the Democracy Landscape is scoped to cover.
+That's worth flagging as a pattern, not just filing away as two
+individual "no"s.
+
+**Not a decision to build anything.** Just a note that if this keeps
+recurring, there may be a genuine case for a sibling project — its own
+scope, its own curation standard, not a diluted copy of the
+Accountability Framework — specifically covering rights-documentation
+and rights-advocacy organisations (evidence production, violation
+reporting, campaign-based pressure) that the Landscape's
+governance-mechanism focus deliberately excludes. Something like a more
+advocacy-focused meta-index alongside the Landscape, rather than a
+rewrite of it.
+
+If someone wants to pick this up, the right home is a
+`docs/projects/` page with `status: idea` (DOD's normal mechanism for an
+ideation-stage proposal with no committed owner — see `CLAUDE.md`'s
+"Project pages" convention) — not an expansion of the Accountability
+Framework itself, and not this file, which only tracks the *no*s.
