@@ -46,4 +46,4 @@ Council Watch is an advocacy and watchdog organisation, not a neutral academic s
 - [How Victorian Councils Are Governed](../research/how-victorian-councils-are-governed.md) — background on the council structures Council Watch monitors *(working note, not yet a maintained reference page)*
 - [Case study: City of Casey and Operation Sandon](../research/case-study-city-of-casey-operation-sandon.md) *(working note, not yet a maintained reference page)*
 
-[^cw-about]: [Council Watch](https://www.councilwatch.com.au), Council Watch website — incorporation number and registration year stated in the site footer.
+[^cw-about]: "Registered since 2001," [Council Watch](https://www.councilwatch.com.au), Council Watch website footer — the same footer states the incorporation number as A0040924M.
