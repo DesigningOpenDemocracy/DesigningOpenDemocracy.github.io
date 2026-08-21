@@ -46,8 +46,8 @@ events:
   title: Chair co-founded the "Not My Debt" website documenting harm from the Robodebt
     automated debt-recovery scheme
   url: https://en.wikipedia.org/wiki/Electronic_Frontiers_Australia
-  quote: the organisation's chair, Lyndsey Jackson, was also involved in the creation
-    of the "Not My Debt" website, an online platform that collected accounts from
+  quote: the organisation’s chair, Lyndsey Jackson, was also involved in the creation
+    of the “Not My Debt” website, an online platform that collected accounts from
     individuals affected by the scheme
   proof_level: high
   notable: true

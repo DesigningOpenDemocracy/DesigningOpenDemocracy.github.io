@@ -50,21 +50,24 @@ events:
     and Other Legislation Amendment (Assistance and Access) Bill 2018, published on
     the Department's own site.
   proof_level: medium
-- date: '2018-05-01'
+- date: '2018-05-14'
   title: Published the inaugural "State of Digital Rights" report assessing Australia's
     digital rights landscape
-  url: https://en.wikipedia.org/wiki/Digital_Rights_Watch
-  note: Wikipedia's account of DRW's activities lists the May 2018 launch of the State
-    of Digital Rights report among its notable campaigns.
-  proof_level: medium
-- date: '2018-10-01'
-  title: Led the "Alliance for a Safe and Secure Internet" coalition opposing the
-    Assistance and Access encryption bill
-  url: https://en.wikipedia.org/wiki/Digital_Rights_Watch
-  note: Wikipedia's account of DRW's activities lists this coalition campaign as running
-    October to December 2018, alongside the formal submission above.
-  proof_level: medium
-  end_date: '2018-12-31'
+  url: https://digitalrightswatch.org.au/2018/05/14/the-state-of-digital-rights/
+  quote: Today, we’re proud to release the State of Digital Rights report, which outlines
+    the many ways Australians’ rights are being impacted by the activities of private
+    companies and governments in the online world.
+  proof_level: high
+- date: '2018-10-02'
+  title: Co-founded the "Alliance for a Safe and Secure Internet" coalition opposing
+    the Assistance and Access encryption bill
+  url: https://digitalrightswatch.org.au/2018/10/03/slow-down-stop-and-listen-consumers-human-rights-groups-industry-telcos-and-technology-companies-join-forces-to-sound-alarm-at-governments-spyware-legislation/
+  quote: Consumers, human rights groups, industry, telcos and technology companies
+    join forces to sound alarm at Government’s spyware legislation
+  note: End date is the Assistance and Access Bill's passage through federal parliament
+    on 6 December 2018 — the coalition's stated goal was to prevent this, not achieved.
+  proof_level: high
+  end_date: '2018-12-06'
 activity:
   dod:
     checked: 2026-08-21

@@ -823,6 +823,40 @@
       "e4877b3468c72c479a011f77f1c920735a7e56908c54f57bbd5462f5ae696925": true
     }
   },
+  "https://digitalrightswatch.org.au/2018/05/14/the-state-of-digital-rights/": {
+    "checked": "2026-08-21",
+    "content_hash": "9934dccc264679d6e2c8f0c774eeacf0700771de84ecd029250c2cee993b3052",
+    "contexts": {
+      "9934dccc264679d6e2c8f0c774eeacf0700771de84ecd029250c2cee993b3052": {
+        "prefix": "te The State of Digital Rights Posted on May 13, 2018 by Digital Rights Watch",
+        "sha256": "9934dccc264679d6e2c8f0c774eeacf0700771de84ecd029250c2cee993b3052",
+        "suffix": "The internet is often touted as the new frontier of freedom of expression, described simultaneously as a wide open plain free from heavy-handed",
+        "text": "Today, we\u2019re proud to release the State of Digital Rights report, which outlines the many ways Australians\u2019 rights are being impacted by the activities of private companies and governments in the online world."
+      }
+    },
+    "etag": "\"0b11c8d3ab6f9204bead156fb153ea34-ssl-df\"",
+    "last_modified": null,
+    "verified": {
+      "9934dccc264679d6e2c8f0c774eeacf0700771de84ecd029250c2cee993b3052": true
+    }
+  },
+  "https://digitalrightswatch.org.au/2018/10/03/slow-down-stop-and-listen-consumers-human-rights-groups-industry-telcos-and-technology-companies-join-forces-to-sound-alarm-at-governments-spyware-legislation/": {
+    "checked": "2026-08-21",
+    "content_hash": "5348539bb8d44fef1114fcbbfc3894eb19fb0686e0b684f390a91571a372cdff",
+    "contexts": {
+      "5348539bb8d44fef1114fcbbfc3894eb19fb0686e0b684f390a91571a372cdff": {
+        "prefix": "Slow down, stop and listen Posted on October 2, 2018 by Digital Rights Watch",
+        "sha256": "5348539bb8d44fef1114fcbbfc3894eb19fb0686e0b684f390a91571a372cdff",
+        "suffix": "A diverse group of consumer representatives, human rights organisations, industry, technology and telecommunications companies has today joined",
+        "text": "Consumers, human rights groups, industry, telcos and technology companies join forces to sound alarm at Government\u2019s spyware legislation"
+      }
+    },
+    "etag": "\"91c400c5ce01e73cc2d395048938a4a7-ssl-df\"",
+    "last_modified": null,
+    "verified": {
+      "5348539bb8d44fef1114fcbbfc3894eb19fb0686e0b684f390a91571a372cdff": true
+    }
+  },
   "https://ec.europa.eu/newsroom/cc-demos/items/741221/en": {
     "checked": "2026-08-20",
     "content_hash": "94e44b79c1177089838a9a9aca33579c8c93455d486fd2c61f9902c0766dfa3a",
@@ -1186,21 +1220,19 @@
     }
   },
   "https://en.wikipedia.org/wiki/Electronic_Frontiers_Australia": {
-    "blocked": "HTTP_429",
-    "blocked_since": "2026-08-21",
     "checked": "2026-08-21",
-    "content_hash": "7764a4725a5fcd48cdd58454a7524f94dbbeb0a6e6caf28e751f0df022e4e897",
+    "content_hash": "c3e4a9de0370520c55cafdfe06c4b1bc0d55da8c6d4b5e69afc3421e734b542d",
     "contexts": {
-      "9ae062133912fdc1f96e9a805970cf92dbd30def95c0a2f90119b95bbe82ff7e": {
-        "prefix": "ges did not provide compensation for individuals harmed by data misuse, and advocated for a statutory tort for serious invasions of privacy. In 2024,",
-        "sha256": "2c7fe31b993a0ec4da987d0a7869f368ad61dad61e28c4edc3a8f8a8e2ed12d7",
-        "suffix": "In the same year, EFA participated in public consultations and made submissions during the review process of the proposed Australian Federal Governme"
+      "f11633c3e6f840a6715b9d9ffe7f2f29f95b580aae85b931102b50fca44d9a16": {
+        "prefix": "proposed online safety codes. In September 2025, EFA cautioned against the use of ChatGPT in government decision making. Chair John Pane commented, \u201c",
+        "sha256": "5dadd1c87aa6a16fb32c3d47ed94707532fa9a88f70ecce792973c91557d2c79",
+        "suffix": "\u201d The Department of Finance was expanding its AI use in a program called GovAI which would be fully rolled out by November 2025. In October 2025, Pane"
       }
     },
     "etag": null,
     "last_modified": null,
     "verified": {
-      "9ae062133912fdc1f96e9a805970cf92dbd30def95c0a2f90119b95bbe82ff7e": true
+      "f11633c3e6f840a6715b9d9ffe7f2f29f95b580aae85b931102b50fca44d9a16": true
     }
   },
   "https://en.wikipedia.org/wiki/Flux_(political_party)": {
@@ -3914,6 +3946,10 @@
     "verified": {
       "69c3d9278b85ee87f5d6c2e570c3ef39ce85d9c2c8ed4badaa5317f2e261ec96": false
     }
+  },
+  "https://www.homeaffairs.gov.au/how-to-engage-us-subsite/files/assistance-access-bill-2018/digital-rights-watch.pdf": {
+    "blocked": "HTTP_403",
+    "blocked_since": "2026-08-21"
   },
   "https://www.hrlc.org.au/news/2023-1-31-election-data-a-reminder-that-albanese-government-must-regulate-money-in-politics/": {
     "checked": "2026-08-20",
