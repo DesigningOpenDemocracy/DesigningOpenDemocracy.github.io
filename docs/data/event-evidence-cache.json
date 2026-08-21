@@ -1134,6 +1134,23 @@
       "5dbab3ad4ddc7385214478a7cd290b87e90462b80536e38e91d2fdf7a983319f": true
     }
   },
+  "https://en.wikipedia.org/wiki/Digital_Rights_Watch": {
+    "checked": "2026-08-21",
+    "content_hash": "1ec4de155237042e555b0970395891bd38302d189fcf79b4a8a9bd4e0b6b4b73",
+    "contexts": {
+      "3557564e2ab04770101061f5e09983d23517ea695b9577d3d046f6f296425082": {
+        "prefix": "atch is an Australian charity organisation founded in 2016 that aims to educate and uphold the digital rights of Australian citizens. == History ==",
+        "sha256": "1ec4de155237042e555b0970395891bd38302d189fcf79b4a8a9bd4e0b6b4b73",
+        "suffix": "A new organisation was founded to coordinate a civil society response to the data retention scheme and other digital rights and civil liberties issu",
+        "text": "== History == In 2016, largely in response to the introduction of Australia's mandatory telecommunications data retention scheme, Digital Rights Watch was created at a meeting of representatives from Australian digital and human rights organisations, activists, political advisers, technology consultants and academics. A new organisation was founded to coordinate a civil society response to the data retention scheme and other digital rights and civil liberties issues such as privacy. A key objective was building on and supporting existing policy and advocacy efforts."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "3557564e2ab04770101061f5e09983d23517ea695b9577d3d046f6f296425082": true
+    }
+  },
   "https://en.wikipedia.org/wiki/Electoral_Institute_for_Sustainable_Democracy_in_Africa": {
     "checked": "2026-08-20",
     "content_hash": "b601a97f171636b368326b522906f62741cb0b1c62813d67eae59f2ec5717ec6",
@@ -1166,6 +1183,24 @@
     "last_modified": null,
     "verified": {
       "a6d0bbffcedb06353a2823950e29a8397d56e9512cc5bea89abe7db209d1952f": true
+    }
+  },
+  "https://en.wikipedia.org/wiki/Electronic_Frontiers_Australia": {
+    "blocked": "HTTP_429",
+    "blocked_since": "2026-08-21",
+    "checked": "2026-08-21",
+    "content_hash": "7764a4725a5fcd48cdd58454a7524f94dbbeb0a6e6caf28e751f0df022e4e897",
+    "contexts": {
+      "9ae062133912fdc1f96e9a805970cf92dbd30def95c0a2f90119b95bbe82ff7e": {
+        "prefix": "ges did not provide compensation for individuals harmed by data misuse, and advocated for a statutory tort for serious invasions of privacy. In 2024,",
+        "sha256": "2c7fe31b993a0ec4da987d0a7869f368ad61dad61e28c4edc3a8f8a8e2ed12d7",
+        "suffix": "In the same year, EFA participated in public consultations and made submissions during the review process of the proposed Australian Federal Governme"
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "9ae062133912fdc1f96e9a805970cf92dbd30def95c0a2f90119b95bbe82ff7e": true
     }
   },
   "https://en.wikipedia.org/wiki/Flux_(political_party)": {
