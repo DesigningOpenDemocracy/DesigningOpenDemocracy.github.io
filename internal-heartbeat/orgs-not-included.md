@@ -66,18 +66,27 @@ highly, just outside what the Democracy Landscape is scoped to cover.
 That's worth flagging as a pattern, not just filing away as two
 individual "no"s.
 
-**Not a decision to build anything.** Just a note that if this keeps
-recurring, there may be a genuine case for a sibling project — its own
-scope, its own curation standard, not a diluted copy of the
-Accountability Framework — specifically covering rights-documentation
-and rights-advocacy organisations (evidence production, violation
-reporting, campaign-based pressure) that the Landscape's
-governance-mechanism focus deliberately excludes. Something like a more
-advocacy-focused meta-index alongside the Landscape, rather than a
-rewrite of it.
+**Not a decision to build anything, and — on reflection — not a DOD
+project either.** A `docs/projects/` `status: idea` page (DOD's normal
+mechanism for an unowned ideation-stage proposal) was the first instinct,
+but that's the wrong shape for this: a `docs/projects/` entry is
+something *DOD itself* might build under its own name. Cataloguing
+rights-documentation and rights-advocacy organisations (evidence
+production, violation reporting, campaign-based pressure) is a genuinely
+different mission with its own identity — not a DOD sub-initiative — and
+there's a neat self-referential reason why: such a meta-org would almost
+certainly fail DOD's *own* accountability-framework scope test, the same
+way Amnesty and Forensic Architecture themselves did. A cataloguing/advocacy
+body isn't governance-mechanism work either. It shouldn't live inside the
+organisation whose own standard it wouldn't clear.
 
-If someone wants to pick this up, the right home is a
-`docs/projects/` page with `status: idea` (DOD's normal mechanism for an
-ideation-stage proposal with no committed owner — see `CLAUDE.md`'s
-"Project pages" convention) — not an expansion of the Accountability
-Framework itself, and not this file, which only tracks the *no*s.
+So: a separate meta-org, run by whoever wants to found it — possibly DOD
+members acting outside DOD, possibly nobody, possibly worth floating to
+Amnesty/Forensic Architecture/EFA/DRW's own networks as a gap they might
+already be aware of. This file's job is just to record that the idea
+came up and why, not to own it. If such a meta-org is ever founded, it's
+a normal candidate for a future `docs/organisations/` entry in its own
+right (a body of orgs cataloguing accountability-relevant human-rights
+work, refereed against its own standard, is itself arguably closer to
+DOD's landscape than any single documentation org is) — that's a call
+for whenever, if ever, it exists.
