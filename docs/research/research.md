@@ -26,3 +26,5 @@ This is an **archive of members' raw working notes** — unpolished material kep
 | [Democracy Analysis — Links](democracy-analysis-project---links.md) | Reference links for the analysis project |
 | [Democracy Analysis — Classification](democracy-analysis-project---classification-task.md) | Classification framework for democracy approaches |
 | [Video References](video-references.md) | Log of individual videos (YouTube essays, talks) cited in blog posts or discussion |
+| [How Victorian Councils Are Governed](how-victorian-councils-are-governed.md) | Explainer on the Mayor/CEO governance split in Victorian local councils, AI-compiled, not yet human-reviewed |
+| [Case study: City of Casey and Operation Sandon](case-study-city-of-casey-operation-sandon.md) | IBAC corruption case study, AI-compiled, not yet human-reviewed — see its own disclaimer on pending court proceedings |
