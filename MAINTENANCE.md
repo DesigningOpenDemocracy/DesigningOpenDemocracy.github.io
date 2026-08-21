@@ -221,3 +221,14 @@ lets you actually look at each site rather than clicking through.
 
 The automated tools (step 2) run fast and are worth doing every time even
 if you don't have time for the full manual review.
+
+---
+
+## See also
+
+This guide covers org data freshness (activity, status, structure). A separate
+concern — verifying that a timeline event's or footnote's cited quote still
+appears on the live page — is covered by `check_fragments.py` and friends,
+documented in **CLAUDE.md**'s "Utility scripts" section. If that turns up a
+citation URL blocked to every automated fetch, see the same section's
+manual-dump runbook for the human-in-a-browser fallback.
