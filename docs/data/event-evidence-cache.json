@@ -823,6 +823,40 @@
       "e4877b3468c72c479a011f77f1c920735a7e56908c54f57bbd5462f5ae696925": true
     }
   },
+  "https://digitalrightswatch.org.au/2018/05/14/the-state-of-digital-rights/": {
+    "checked": "2026-08-21",
+    "content_hash": "9934dccc264679d6e2c8f0c774eeacf0700771de84ecd029250c2cee993b3052",
+    "contexts": {
+      "9934dccc264679d6e2c8f0c774eeacf0700771de84ecd029250c2cee993b3052": {
+        "prefix": "te The State of Digital Rights Posted on May 13, 2018 by Digital Rights Watch",
+        "sha256": "9934dccc264679d6e2c8f0c774eeacf0700771de84ecd029250c2cee993b3052",
+        "suffix": "The internet is often touted as the new frontier of freedom of expression, described simultaneously as a wide open plain free from heavy-handed",
+        "text": "Today, we\u2019re proud to release the State of Digital Rights report, which outlines the many ways Australians\u2019 rights are being impacted by the activities of private companies and governments in the online world."
+      }
+    },
+    "etag": "\"0b11c8d3ab6f9204bead156fb153ea34-ssl-df\"",
+    "last_modified": null,
+    "verified": {
+      "9934dccc264679d6e2c8f0c774eeacf0700771de84ecd029250c2cee993b3052": true
+    }
+  },
+  "https://digitalrightswatch.org.au/2018/10/03/slow-down-stop-and-listen-consumers-human-rights-groups-industry-telcos-and-technology-companies-join-forces-to-sound-alarm-at-governments-spyware-legislation/": {
+    "checked": "2026-08-21",
+    "content_hash": "5348539bb8d44fef1114fcbbfc3894eb19fb0686e0b684f390a91571a372cdff",
+    "contexts": {
+      "5348539bb8d44fef1114fcbbfc3894eb19fb0686e0b684f390a91571a372cdff": {
+        "prefix": "Slow down, stop and listen Posted on October 2, 2018 by Digital Rights Watch",
+        "sha256": "5348539bb8d44fef1114fcbbfc3894eb19fb0686e0b684f390a91571a372cdff",
+        "suffix": "A diverse group of consumer representatives, human rights organisations, industry, technology and telecommunications companies has today joined",
+        "text": "Consumers, human rights groups, industry, telcos and technology companies join forces to sound alarm at Government\u2019s spyware legislation"
+      }
+    },
+    "etag": "\"91c400c5ce01e73cc2d395048938a4a7-ssl-df\"",
+    "last_modified": null,
+    "verified": {
+      "5348539bb8d44fef1114fcbbfc3894eb19fb0686e0b684f390a91571a372cdff": true
+    }
+  },
   "https://ec.europa.eu/newsroom/cc-demos/items/741221/en": {
     "checked": "2026-08-20",
     "content_hash": "94e44b79c1177089838a9a9aca33579c8c93455d486fd2c61f9902c0766dfa3a",
@@ -1134,6 +1168,23 @@
       "5dbab3ad4ddc7385214478a7cd290b87e90462b80536e38e91d2fdf7a983319f": true
     }
   },
+  "https://en.wikipedia.org/wiki/Digital_Rights_Watch": {
+    "checked": "2026-08-21",
+    "content_hash": "1ec4de155237042e555b0970395891bd38302d189fcf79b4a8a9bd4e0b6b4b73",
+    "contexts": {
+      "3557564e2ab04770101061f5e09983d23517ea695b9577d3d046f6f296425082": {
+        "prefix": "atch is an Australian charity organisation founded in 2016 that aims to educate and uphold the digital rights of Australian citizens. == History ==",
+        "sha256": "1ec4de155237042e555b0970395891bd38302d189fcf79b4a8a9bd4e0b6b4b73",
+        "suffix": "A new organisation was founded to coordinate a civil society response to the data retention scheme and other digital rights and civil liberties issu",
+        "text": "== History == In 2016, largely in response to the introduction of Australia's mandatory telecommunications data retention scheme, Digital Rights Watch was created at a meeting of representatives from Australian digital and human rights organisations, activists, political advisers, technology consultants and academics. A new organisation was founded to coordinate a civil society response to the data retention scheme and other digital rights and civil liberties issues such as privacy. A key objective was building on and supporting existing policy and advocacy efforts."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "3557564e2ab04770101061f5e09983d23517ea695b9577d3d046f6f296425082": true
+    }
+  },
   "https://en.wikipedia.org/wiki/Electoral_Institute_for_Sustainable_Democracy_in_Africa": {
     "checked": "2026-08-20",
     "content_hash": "b601a97f171636b368326b522906f62741cb0b1c62813d67eae59f2ec5717ec6",
@@ -1166,6 +1217,22 @@
     "last_modified": null,
     "verified": {
       "a6d0bbffcedb06353a2823950e29a8397d56e9512cc5bea89abe7db209d1952f": true
+    }
+  },
+  "https://en.wikipedia.org/wiki/Electronic_Frontiers_Australia": {
+    "checked": "2026-08-21",
+    "content_hash": "c3e4a9de0370520c55cafdfe06c4b1bc0d55da8c6d4b5e69afc3421e734b542d",
+    "contexts": {
+      "f11633c3e6f840a6715b9d9ffe7f2f29f95b580aae85b931102b50fca44d9a16": {
+        "prefix": "proposed online safety codes. In September 2025, EFA cautioned against the use of ChatGPT in government decision making. Chair John Pane commented, \u201c",
+        "sha256": "5dadd1c87aa6a16fb32c3d47ed94707532fa9a88f70ecce792973c91557d2c79",
+        "suffix": "\u201d The Department of Finance was expanding its AI use in a program called GovAI which would be fully rolled out by November 2025. In October 2025, Pane"
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "f11633c3e6f840a6715b9d9ffe7f2f29f95b580aae85b931102b50fca44d9a16": true
     }
   },
   "https://en.wikipedia.org/wiki/Flux_(political_party)": {
@@ -3879,6 +3946,10 @@
     "verified": {
       "69c3d9278b85ee87f5d6c2e570c3ef39ce85d9c2c8ed4badaa5317f2e261ec96": false
     }
+  },
+  "https://www.homeaffairs.gov.au/how-to-engage-us-subsite/files/assistance-access-bill-2018/digital-rights-watch.pdf": {
+    "blocked": "HTTP_403",
+    "blocked_since": "2026-08-21"
   },
   "https://www.hrlc.org.au/news/2023-1-31-election-data-a-reminder-that-albanese-government-must-regulate-money-in-politics/": {
     "checked": "2026-08-20",
