@@ -85,6 +85,7 @@ hooks:
   - hooks/concept_filter.py
   - hooks/shared_link_card.py
   - hooks/event_card.py
+  - hooks/blog_post_chips.py
   - hooks/org_template.py
   - hooks/graph_builder.py
   - hooks/llms_txt.py
