@@ -38,8 +38,21 @@ existing one already covers it before minting another.
 | `structural-inflexibility` | Can't reform itself, or suppresses the organisations holding it to its own standards. Disqualifier 3. |
 | `out-of-scope` | Doesn't engage governance/participation mechanisms at all — catch-all for orgs with no real disqualifier at play, just no fit. |
 
+## Reasons (sub-tags, nested under a type)
+
+The specific *why* within a `Type` category. Same open-vocabulary spirit —
+add a new one when needed, reuse an existing one when it already fits.
+Only `human-rights-observatory` has entries so far; other types will grow
+their own reasons as real cases show up rather than being pre-guessed here.
+
+| Reason | Under type | Meaning |
+|---|---|---|
+| `documentation-only` | `human-rights-observatory` | Org's output is research/reporting on violations, with no advocacy for a specific mechanism or structural reform. |
+| `campaign-only` | `human-rights-observatory` | Org organises public pressure (petitions, letter-writing, protest) but doesn't work on mechanism design or oversight structures. |
+| `marginal-mechanism-work` | `human-rights-observatory` | Org does some governance-mechanism work (e.g. legislative submissions) but it's a minor activity inside a mandate whose centre of gravity is documentation-and-campaigning. |
+
 ## Registry
 
 | Org | Country | Date considered | Type | Reason | Notes |
 |---|---|---|---|---|---|
-| [Amnesty International (Australia)](https://www.amnesty.org.au/) | AU | 2026-08-21 | `human-rights-observatory` | Core mandate is exposing and campaigning against rights violations, not designing/reforming/overseeing governance mechanisms. | [Full reasoning](2026-08-21-amnesty-international-not-included.md) |
+| [Amnesty International (Australia)](https://www.amnesty.org.au/) | AU | 2026-08-21 | `human-rights-observatory` | `marginal-mechanism-work` | [Full reasoning](2026-08-21-amnesty-international-not-included.md) |
