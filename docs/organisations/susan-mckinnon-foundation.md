@@ -73,16 +73,16 @@ events:
   notable: false
 - date: '2025-01-01'
   title: Rebranded from Susan McKinnon Foundation to McKinnon
-  url: https://mckinnon.co/about-us
-  note: Rebrand independently cross-checked against the organisation's own site, LinkedIn
-    company page, and ACNC charity registration (recorded in this page's activity.dod,
-    2026-07-19). The linked page confirms the rebrand itself ("previously known as
-    the Susan McKinnon Foundation") but not the specific 2025 year on its own — hence
-    proof_warning rather than a quote.
-  proof_level: medium
-  url_checked: '2026-08-15'
+  url: https://web.archive.org/web/20250531195416/https://mckinnon.co/
+  quote: Introducing McKinnon, formerly the Susan McKinnon Foundation. A new name
+    for a renewed commitment to enabling better governments for a stronger Australia.
+  note: Archived homepage banner announcing the rebrand — snapshot dated 31 May 2025,
+    so the change happened in the first half of that year. The live site has since
+    removed the banner, and the foundation's ACNC registration still reads "Susan
+    McKinnon Foundation", so this was a brand rename rather than a legal name change.
+  proof_level: high
+  url_checked: '2026-08-21'
   notable: true
-  proof_warning: true
 activity:
   manual:
     checked: 2026-06-07

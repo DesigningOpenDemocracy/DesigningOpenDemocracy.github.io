@@ -2537,7 +2537,7 @@
     }
   },
   "https://mckinnon.co/about-us": {
-    "checked": "2026-08-20",
+    "checked": "2026-08-21",
     "content_hash": "f9a63121fe8480f53da154817ff9a11ca0384c4eef56d541da1bfbf68d5d6193",
     "contexts": {
       "a2ca2c617bccda3262bf256be647677dcd63460cb09c10ebad8ecf9cbfafb8d4": {
@@ -3219,6 +3219,23 @@
       "42a2dde22f077ea58612c0f866b57ddf31193850b9b3005a401aece461f44d63": true
     }
   },
+  "https://web.archive.org/web/20250531195416/https://mckinnon.co/": {
+    "checked": "2026-08-21",
+    "content_hash": "bbc2be338642fdaaae0210c06966ae53d90b7bfd0f3b2662e76ece0b67562530",
+    "contexts": {
+      "bbc2be338642fdaaae0210c06966ae53d90b7bfd0f3b2662e76ece0b67562530": {
+        "prefix": "Careers MCKINNON enters a bold new era",
+        "sha256": "bbc2be338642fdaaae0210c06966ae53d90b7bfd0f3b2662e76ece0b67562530",
+        "suffix": "READ MORE OUR VISION",
+        "text": "Introducing McKinnon, formerly the Susan McKinnon Foundation. A new name for a renewed commitment to enabling better governments for a stronger Australia."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "bbc2be338642fdaaae0210c06966ae53d90b7bfd0f3b2662e76ece0b67562530": true
+    }
+  },
   "https://wecollect.ch/ueber-uns/": {
     "checked": "2026-08-20",
     "content_hash": "8e0a28a64f26b45fa4327e68277647b8ac6bbc05aaee98dc977496d5baf984fa",
@@ -3799,7 +3816,7 @@
     }
   },
   "https://www.globenewswire.com/news-release/2021/06/09/2244148/0/en/sinch-ab-publ-sinch-to-acquire-messagemedia-accelerating-growth-with-small-and-medium-sized-businesses.html": {
-    "checked": "2026-08-20",
+    "checked": "2026-08-21",
     "content_hash": "009a96ea9a515ead16d1ad1c4af55e2344226c3ebcf0437a1837bdc2b2207ec0",
     "contexts": {
       "238270711d72c16e83bb7492d56548bb599b06218237aca886821a947ab24bca": {
@@ -4354,20 +4371,27 @@
     }
   },
   "https://www.philanthropy.org.au/news-and-stories/the-susan-mckinnon-foundation-and-monash-university-renew-commitment-to-enhanced-political-leadership/": {
-    "checked": "2026-08-20",
-    "content_hash": "e4169783d71617d9b23833e0208d0448950513ac7136ce892aa5a79b86c170d4",
+    "checked": "2026-08-21",
+    "content_hash": "77ed1b4f1139124c555224508e8a01c1a0ff3f78ec58a0bad380a46a09a6ae00",
     "contexts": {
       "8784b86eb8660afb843c6fcc89e525763fa433a85fbafdbabe83698f249aac78": {
         "prefix": "The Susan McKinnon Foundation and Monash University this week announced the renewal of their philanthropic partnership with",
         "sha256": "e4169783d71617d9b23833e0208d0448950513ac7136ce892aa5a79b86c170d4",
         "suffix": ". The renewed commitment underscores a shared dedication to fostering high-quality political leadership and enhancing democracy in Australia. Th",
         "text": "The Susan McKinnon Foundation and Monash University this week announced the renewal of their philanthropic partnership with an investment of more than $25 million over five years from the Foundation to sustain and advance the McKinnon Institute for Political Leadership."
+      },
+      "e2624f36670b20f17933bbb185e3beccb4d997a8f0ab35c07ac498b8bbb77c23": {
+        "prefix": "bold idea into reality. I know he has exciting plans for the Institute and I\u2019m really looking forward to seeing these plans progress,\u201d he said.",
+        "sha256": "77ed1b4f1139124c555224508e8a01c1a0ff3f78ec58a0bad380a46a09a6ae00",
+        "suffix": ", providing tailored coaching and mentoring as well as exposure to some of the world\u2019s best policy experts. Monash University Vice-Chancellor an",
+        "text": "Since it was established in 2019, the Institute has delivered transformative programs to more than 25% of the current MPs across Australia, providing tailored coaching and mentoring as well as exposure to some of the world\u2019s best policy experts."
       }
     },
     "etag": null,
-    "last_modified": "Thu, 20 Aug 2026 11:51:43 GMT",
+    "last_modified": "Fri, 21 Aug 2026 04:04:10 GMT",
     "verified": {
-      "8784b86eb8660afb843c6fcc89e525763fa433a85fbafdbabe83698f249aac78": true
+      "8784b86eb8660afb843c6fcc89e525763fa433a85fbafdbabe83698f249aac78": true,
+      "e2624f36670b20f17933bbb185e3beccb4d997a8f0ab35c07ac498b8bbb77c23": true
     }
   },
   "https://www.prediki.com/meta/en/Legal-information": {

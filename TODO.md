@@ -1,24 +1,28 @@
 # TODO
 
 Everything mechanically fixable is done. Remaining items need editorial judgment.
+Counts verified 2026-08-21 against `check_event_sourcing.py`, `check_footnote_quotes.py`,
+and `check_concepts.py`.
 
 ## Hard leftovers (require research or judgment calls)
 
-- [ ] 12 NOTABLE NO PROOF events (down from 43):
-  - Unreachable sites: CAfSA, Lamestream, Governance Hub Africa, Coalition of Everyone
-  - Unverified claims: Australian Democracy Network (launch), DOD (first meetup), RGB (founding), SoCentral (founding)
-  - Conferences without quoted source text: People Powered (4 events)
-  - Not yet announced: PRSA 2026 AGM
-- [ ] 2 WEAK URLs — Delibera Brasil homepage (source IS their homepage)
-- [ ] 18 footnote citations without verbatim quotes — multi-source footnotes flagged by parser, unreachable sites (folio.org.au), or internal DOD references
-- [ ] 7 orphaned concepts — mostly meta/index pages (concepts, what-is-democracy) or niche topics with no natural org match
-- [ ] Issue #139 — loomio[^loomio-wiki] and AF[^theatre] footnote mismatches
+- [ ] 1 NOTABLE NO PROOF event (down from 43 when this list started):
+  - Governance Hub Africa — founding claim, site unreachable to scripts
+- [ ] 1 WEAK URL — Prediki launch event cites their own homepage (the homepage is
+  the only evidence that the platform "goes online" in 2012)
+- [ ] 27 footnote citations without machine-verifiable quotes (129/156 have them):
+  - folio.org.au — site unreachable to scripts (5 footnotes)
+  - multi-source footnotes — parser deliberately treats these as citation-only until
+    split one-citation-per-footnote (loomio, taiwan-post, china, russia, …)
+  - books/journal articles with no URL to verify against (hennig, theatre, …)
+  - internal DOD references (demos, join-gov-tw)
+- [ ] 4 orphaned concepts — not referenced by any org's `concepts:`:
+  employee-stock-ownership-plans, equity-compensation-plans, utopian-realpolitik,
+  what-is-democracy
 
-## Done (this session)
+## Done
 
-- 31 NOTABLE NO PROOF fixed (43→12)
-- 5 WEAK URLs resolved (7→2) 
-- 13 footnote quotes backfilled (31→44/62)
-- 0 proof_warning events, 0 unsourced events, 0 no-proof events
-- Issue #148 closed (radicalxchange footnote)
-- Spec doc restructured, citations_tool.py created, pipeline unified
+- Issue #139 closed (event sourcing backlog: quote mismatches + proof_warning events)
+- NOTABLE NO PROOF 43→12→2; WEAK URLs 7→2→1; orphaned concepts 7→4
+- Footnote quotes backfilled: 44/62 → 129/156
+- 0 unsourced events, 0 no-proof events, 0 proof_warning events across 334 events
