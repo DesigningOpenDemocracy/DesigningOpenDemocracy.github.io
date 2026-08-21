@@ -224,11 +224,34 @@ if you don't have time for the full manual review.
 
 ---
 
-## See also
+## Citation verification follow-up (as needed)
 
-This guide covers org data freshness (activity, status, structure). A separate
-concern — verifying that a timeline event's or footnote's cited quote still
-appears on the live page — is covered by `check_fragments.py` and friends,
-documented in **CLAUDE.md**'s "Utility scripts" section. If that turns up a
-citation URL blocked to every automated fetch, see the same section's
-manual-dump runbook for the human-in-a-browser fallback.
+Separate concern from the pass above: this guide covers org data freshness
+(activity, status, structure), while `check_fragments.py` verifies that a
+timeline event's or footnote's cited *quote* still appears on the live page.
+It runs automatically every week, so you don't need to run it yourself — but
+its weekly report (`.github/workflows/heartbeat-probes.yml`'s log) sometimes
+turns up citation URLs that are BLOCKED to every automated fetch (bot
+protection, rate limits) even though a human's own browser can load them
+fine. If you see one:
+
+```bash
+# 1. See what's waiting on you
+cat manual-dump/requests.txt
+
+# 2. Open each URL in a real browser, let it fully load, then:
+#    Firefox: File -> Save Page As -> "Web Page, HTML only"
+#    Save into manual-dump/snapshots/ — filename doesn't matter.
+
+# 3. Preview, then import for real
+python util/import_manual_dump.py --dry-run
+python util/import_manual_dump.py
+
+# 4. Skim what changed before committing
+git diff docs/data/event-evidence-cache.json
+```
+
+See **CLAUDE.md**'s "Utility scripts" section for the full mechanism (why
+`manual-dump/` is gitignored, how the source URL is recovered from the saved
+file, why `manual_verified` is kept separate from the automated `verified`
+map) if anything above is unclear.
