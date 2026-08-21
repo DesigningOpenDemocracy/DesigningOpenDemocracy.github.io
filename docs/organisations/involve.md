@@ -33,13 +33,43 @@ events:
   proof_level: high
   url_checked: '2026-08-12'
   notable: true
+- date: '2017-09-01'
+  title: Delivered the Citizens' Assembly on Brexit — 50 members over two weekends
+    in Manchester
+  url: https://www.ucl.ac.uk/social-historical-sciences/constitution-unit/constitution-unit-research-areas/deliberative-democracy/citizens-assembly-brexit
+  quote: 'The Constitution Unit led the team that hosted the Citizens’ Assembly on
+    Brexit in September 2017. ... The project also had two partners: the Electoral
+    Reform Society, which worked on impact and public engagement, and Involve, which
+    worked on the delivery of the Assembly.'
+  note: Assembly members met over two weekends in September 2017 and agreed recommendations
+    on post-Brexit trade and immigration policy.
+  proof_level: high
+  url_checked: '2026-08-21'
+  notable: true
+- date: '2020-01-01'
+  title: Ran Climate Assembly UK for six House of Commons select committees
+  url: https://www.climateassembly.uk/about/
+  quote: The House of Commons contracted three organisations to run Climate Assembly
+    UK on its behalf – The Involve Foundation (‘Involve’), Sortition Foundation, and
+    mySociety.
+  note: Members met in central Birmingham from January to March 2020 and then online;
+    outcomes were presented to the select committees in a report in September 2020.
+  proof_level: high
+  url_checked: '2026-08-21'
+  notable: true
 activity:
+  dod:
+    date: 2026-08-21
+    note: 'Deep-dive history pass: added sourced milestone events (founding, major
+      judgments/launches) with verbatim quotes verified against live pages'
+    url: https://consuldemocracy.org/about-us/
+    checked: 2026-08-21
   rss:
     date: 2026-08-13
     note: 'Latest post: We''re hiring! Digital Communication Officer'
     url: https://www.involve.org.uk/news-opinion/jobs/were-hiring-digital-communication-officer
     checked: 2026-08-17
-last_checked: '2026-06-15'
+last_checked: '2026-08-21'
 ---
 
 Involve is a UK charity at the intersection of research and practice in public participation. They work with governments, public institutions, and communities to design participation processes that actually influence decisions — as opposed to the tokenistic consultation that often passes for engagement.

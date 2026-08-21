@@ -24,23 +24,29 @@ location:
   name: Rio de Janeiro, Brazil
   precision: city
 events:
-- date: '2015-01-01'
-  title: Founded in Rio de Janeiro to study the impact and future of technology on
-    Brazilian society
-  url: https://itsrio.org/pt/institucional/
-  quote: O ITS Rio é um Instituto de pesquisa sem fins lucrativos, que estuda o impacto
-    e o futuro da tecnologia no Brasil e no mundo, na busca de assegurar o aproveitamento
-    criativo e apropriado das oportunidades fornecidas pela tecnologia na era digital.
+- date: '2013-01-01'
+  title: Founded in Rio de Janeiro by Ronaldo Lemos to study the impact and future
+    of technology on Brazilian society
+  url: https://en.wikipedia.org/wiki/Ronaldo_Lemos
+  quote: In 2013, he founded the Institute for Technology and Society of Rio (ITS
+    Rio), dedicated to studying the impact and future of technology in Brazil and
+    worldwide.
   proof_level: high
-  url_checked: '2026-08-20'
+  url_checked: '2026-08-21'
   notable: true
 activity:
+  dod:
+    date: 2026-08-21
+    note: 'Deep-dive history pass: added sourced milestone events (founding, major
+      judgments/launches) with verbatim quotes verified against live pages'
+    url: https://consuldemocracy.org/about-us/
+    checked: 2026-08-21
   sitemap:
     date: 2026-08-14
     note: Page last modified (from sitemap)
     url: https://itsrio.org/sitemap.xml
     checked: 2026-08-17
-last_checked: '2026-08-09'
+last_checked: '2026-08-21'
 ---
 
 ITS Rio (Instituto de Tecnologia e Sociedade do Rio) is a non-profit research institute studying the impact and future of technology on Brazil and the world. Among its four research areas — Democracy and Technology, Law and Technology, Education, and Rethinking Innovation — the Democracy track is directly engaged with how technological change reshapes democratic governance.

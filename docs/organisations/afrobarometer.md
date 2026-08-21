@@ -32,14 +32,37 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
+- date: '2001-01-01'
+  title: Round 1 surveys completed across 12 countries
+  url: https://www.afrobarometer.org/feature/ab25-the-first-quarter-century-of-giving-voice-to-african-citizens/
+  quote: In its inaugural round in 1999-2001, AB surveyed 12 countries – Botswana,
+    Ghana, Lesotho, Malawi, Mali, Namibia, Nigeria, South Africa, Tanzania, Uganda,
+    Zambia, and Zimbabwe – on questions of democracy, governance, and quality of life.
+  note: Round 1 fieldwork spanned 1999–2001.
+  proof_level: high
+  url_checked: '2026-08-21'
+- date: '2019-01-01'
+  title: Registered as an independent legal entity headquartered in Accra
+  url: https://www.afrobarometer.org/about/history/
+  quote: Afrobarometer registers as a legal entity headquartered in Accra and inaugurates
+    a Board of Directors, an International Advisory Council, and dedicated capacity
+    building and engagement/resource mobilization units.
+  note: History page places this milestone in its 2019–2021 section.
+  proof_level: high
+  url_checked: '2026-08-21'
 activity:
+  dod:
+    date: 2026-08-21
+    note: 'Deep-dive history pass: added sourced milestone events (founding, major
+      judgments/launches) with verbatim quotes verified against live pages'
+    url: https://consuldemocracy.org/about-us/
+    checked: 2026-08-21
   rss:
     date: 2026-08-08
     note: 'Latest post: AB Update July 2026'
     url: https://www.afrobarometer.org/articles/ab-update-july-2026/
     checked: 2026-08-17
-  url: https://www.afrobarometer.org/articles/les-africains-sont-favorables-a-la-libre-circulation-mais-restent-divises-sur-la-question-de-limmigration-selon-le-nouveau-rapport-phare-dafrobarometer/
-last_checked: '2026-06-28'
+last_checked: '2026-08-21'
 ---
 
 Afrobarometer is a nonpartisan pan-African survey research network founded in 1999 and headquartered in Accra, Ghana. It conducts nationally representative face-to-face surveys in 35+ African countries (covering roughly three-quarters of the continent's population) every two to three years, producing freely accessible data on how Africans experience democracy and governance.

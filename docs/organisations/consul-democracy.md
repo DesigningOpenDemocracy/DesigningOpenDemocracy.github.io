@@ -25,6 +25,21 @@ location:
   name: Madrid, Spain
 rss_feed: https://consuldemocracy.org/feed
 events:
+- date: '2015-09-07'
+  title: First deployed to production as Decide Madrid by Madrid City Council
+  url: https://github.com/consuldemocracy/consuldemocracy
+  quote: Code was deployed to production on 2015 september 7th
+  proof_level: high
+  url_checked: '2026-08-21'
+  notable: true
+  type: launch
+- date: '2019-01-01'
+  title: CONSUL DEMOCRACY Foundation established in the Netherlands to steward the
+    project independently of city government
+  url: https://consuldemocracy.org/about-us/
+  quote: The Foundation was founded in 2019 in the Netherlands and has two main objectives
+  proof_level: high
+  url_checked: '2026-08-21'
 - date: '2026-09-15'
   title: ConsulCon 2026 — three-day gathering on digital democracy and open-source
     civic tech, Munich
@@ -39,12 +54,18 @@ events:
   location: Munich, Germany
   country: DE
 activity:
+  dod:
+    date: 2026-08-21
+    note: 'Deep-dive history pass: added sourced milestone events (founding, major
+      judgments/launches) with verbatim quotes verified against live pages'
+    url: https://consuldemocracy.org/about-us/
+    checked: 2026-08-21
   rss:
     checked: 2026-08-17
     date: 2026-06-29
     note: 'Latest post: Made with Consul'
     url: https://consuldemocracy.org/2026/06/made-with-consul/
-last_checked: '2026-06-15'
+last_checked: '2026-08-21'
 ---
 
 Consul Democracy is an open-source e-participation platform first deployed as Decide Madrid in September 2015 by Madrid City Council to let citizens submit proposals, vote on participatory budgeting, and collaborate on legislation. The Consul Democracy Foundation, a non-profit incorporated in the Netherlands, was established in 2019 to steward the project independently of the Madrid city government.

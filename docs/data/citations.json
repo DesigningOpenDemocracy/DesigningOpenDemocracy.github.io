@@ -30,6 +30,26 @@
     ]
   },
   {
+    "id": "e74b03ee",
+    "type": "webpage",
+    "URL": "https://adrindia.org/legal-advocacy/judgements-and-orders",
+    "title": "Supreme Court judgment mandating candidate disclosure of criminal, financial, and educational background",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "A Public Interest Litigation (PIL) filed by ADR in December 1999 culminated into a landmark Supreme Court Judgement on May 2, 2002"
+      },
+      {
+        "type": "quote-match",
+        "quote": "The Supreme Court, in a second landmark Judgement on March 13, 2003, struck down the Bill as unconstitutional and restored its earlier order."
+      },
+      {
+        "type": "quote-match",
+        "quote": "the Supreme Court gave a favourable ruling on 27th Sept. 2013. The NOTA button was inserted in the EVM machines first time during the 2014 Lok Sabha elections."
+      }
+    ]
+  },
+  {
     "id": "bad46756",
     "type": "webpage",
     "URL": "https://aec.gov.au/FADReform/factsheets/gift-caps.htm",
@@ -514,6 +534,18 @@
       {
         "type": "quote-match",
         "quote": "The CONSUL DEMOCRACY Foundation in collaboration with the Landeshauptstadt München organises the next ConsulCon on 15-17 September 2026 in München, Germany."
+      }
+    ]
+  },
+  {
+    "id": "00ad0156",
+    "type": "webpage",
+    "URL": "https://consuldemocracy.org/about-us/",
+    "title": "CONSUL DEMOCRACY Foundation established in the Netherlands to steward the project independently of city government",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "The Foundation was founded in 2019 in the Netherlands and has two main objectives"
       }
     ]
   },
@@ -1853,6 +1885,18 @@
     ]
   },
   {
+    "id": "7018227c",
+    "type": "webpage",
+    "URL": "https://en.wikipedia.org/wiki/Ronaldo_Lemos",
+    "title": "Founded in Rio de Janeiro by Ronaldo Lemos to study the impact and future of technology on Brazilian society",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "In 2013, he founded the Institute for Technology and Society of Rio (ITS Rio), dedicated to studying the impact and future of technology in Brazil and worldwide."
+      }
+    ]
+  },
+  {
     "id": "0c39c38f",
     "type": "webpage",
     "URL": "https://en.wikipedia.org/wiki/SITRA",
@@ -2178,6 +2222,18 @@
     ]
   },
   {
+    "id": "0ba7b0d8",
+    "type": "webpage",
+    "URL": "https://github.com/consuldemocracy/consuldemocracy",
+    "title": "First deployed to production as Decide Madrid by Madrid City Council",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Code was deployed to production on 2015 september 7th"
+      }
+    ]
+  },
+  {
     "id": "3d7bb3d9",
     "type": "webpage",
     "URL": "https://glenweyl.com/radicalxchange/",
@@ -2400,18 +2456,6 @@
       {
         "type": "quote-match",
         "quote": "The TGE (Token Generation Event) announced by Horizon State has successfully concluded on Nov 19, 2017"
-      }
-    ]
-  },
-  {
-    "id": "96dc34e0",
-    "type": "webpage",
-    "URL": "https://itsrio.org/pt/institucional/",
-    "title": "Founded in Rio de Janeiro to study the impact and future of technology on Brazilian society",
-    "evidence": [
-      {
-        "type": "quote-match",
-        "quote": "O ITS Rio é um Instituto de pesquisa sem fins lucrativos, que estuda o impacto e o futuro da tecnologia no Brasil e no mundo, na busca de assegurar o aproveitamento criativo e apropriado das oportunidades fornecidas pela tecnologia na era digital."
       }
     ]
   },
@@ -2704,6 +2748,18 @@
       {
         "type": "quote-match",
         "quote": "What it seems to do is write statements which are faithful to the majority, but include prominent elements of dissent. So they weave in stuff of people who would otherwise feel kind of disenfranchised."
+      }
+    ]
+  },
+  {
+    "id": "53ba4356",
+    "type": "webpage",
+    "URL": "https://participedia.net/about",
+    "title": "Phase 2 launched under SSHRC Partnership Grant funding",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Participedia Phase 2, launched in June 2021, is expanding to include a broader range of practices and institutions that potentially support democratic ideals"
       }
     ]
   },
@@ -3189,7 +3245,23 @@
     "evidence": [
       {
         "type": "quote-match",
+        "quote": "Afrobarometer registers as a legal entity headquartered in Accra and inaugurates a Board of Directors, an International Advisory Council, and dedicated capacity building and engagement/resource mobilization units."
+      },
+      {
+        "type": "quote-match",
         "quote": "professors Michael Bratton, Robert Mattes, and E. Gyimah-Boadi merge three independent survey research projects to form Afrobarometer (AB)"
+      }
+    ]
+  },
+  {
+    "id": "a53fba23",
+    "type": "webpage",
+    "URL": "https://www.afrobarometer.org/feature/ab25-the-first-quarter-century-of-giving-voice-to-african-citizens/",
+    "title": "Round 1 surveys completed across 12 countries",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "In its inaugural round in 1999-2001, AB surveyed 12 countries – Botswana, Ghana, Lesotho, Malawi, Mali, Namibia, Nigeria, South Africa, Tanzania, Uganda, Zambia, and Zimbabwe – on questions of democracy, governance, and quality of life."
       }
     ]
   },
@@ -3376,6 +3448,18 @@
       {
         "type": "quote-match",
         "quote": "The Centre for Democracy and Development (CDD) was established in the United Kingdom in 1997"
+      }
+    ]
+  },
+  {
+    "id": "d21fb1e9",
+    "type": "webpage",
+    "URL": "https://www.climateassembly.uk/about/",
+    "title": "Ran Climate Assembly UK for six House of Commons select committees",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "The House of Commons contracted three organisations to run Climate Assembly UK on its behalf – The Involve Foundation (‘Involve’), Sortition Foundation, and mySociety."
       }
     ]
   },
@@ -4583,6 +4667,18 @@
       {
         "type": "quote-match",
         "quote": "and it became an incorporated society and charity in 2001."
+      }
+    ]
+  },
+  {
+    "id": "1aee317a",
+    "type": "webpage",
+    "URL": "https://www.ucl.ac.uk/social-historical-sciences/constitution-unit/constitution-unit-research-areas/deliberative-democracy/citizens-assembly-brexit",
+    "title": "Delivered the Citizens' Assembly on Brexit — 50 members over two weekends in Manchester",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "The Constitution Unit led the team that hosted the Citizens’ Assembly on Brexit in September 2017. ... The project also had two partners: the Electoral Reform Society, which worked on impact and public engagement, and Involve, which worked on the delivery of the Assembly."
       }
     ]
   },
