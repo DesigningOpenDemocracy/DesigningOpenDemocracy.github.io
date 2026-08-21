@@ -33,9 +33,12 @@ events:
   url_checked: '2026-08-17'
 - date: '2012-01-01'
   title: Open prediction market platform goes online
-  url: https://www.prediki.com
-  note: Site copyright line dates the platform's operation to 2012; no explicit launch
-    date is published.
+  url: https://web.archive.org/web/20120405172546/http://www.prediki.com/
+  note: Exact launch date never published. Wayback brackets it — www.prediki.com still
+    read "Under construction" as of 1 Dec 2011, and by 5 Apr 2012 served the operational
+    site (a Flash-era page titled "Prediki Prognosedienste", so nothing quotable survives
+    from the era itself). Consistent with the live site's footer, "© 2012 - 2022 Prediki",
+    and with the GmbH registration one month prior (previous event).
   proof_level: medium
   url_checked: '2026-08-17'
 - date: '2017-02-17'

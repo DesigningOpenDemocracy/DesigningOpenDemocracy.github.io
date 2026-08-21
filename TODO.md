@@ -9,8 +9,8 @@ and `check_concepts.py`.
 - [ ] 0 NOTABLE NO PROOF events (down from 43 when this list started) — backlog clear
   as of 2026-08-21. The last one (Governance Hub Africa's unverifiable 2018 founding
   claim) was replaced with a sourced April 2026 partnership event instead.
-- [ ] 1 WEAK URL — Prediki launch event cites their own homepage (the homepage is
-  the only evidence that the platform "goes online" in 2012)
+- [ ] 0 WEAK URLs (was 7) — the last one (Prediki's 2012 launch) now cites a dated
+  Wayback snapshot bracketing the launch instead of the bare homepage
 - [ ] 27 footnote citations without machine-verifiable quotes (129/156 have them):
   - folio.org.au — site unreachable to scripts (5 footnotes)
   - multi-source footnotes — parser deliberately treats these as citation-only until
