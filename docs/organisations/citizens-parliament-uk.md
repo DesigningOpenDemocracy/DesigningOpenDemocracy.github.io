@@ -14,6 +14,13 @@ location:
   longitude: -0.1278
   name: London, United Kingdom
   precision: city
+activity:
+  dod:
+    date: 2026-08-21
+    note: 'Defunct-status recheck: Wayback CDX confirms archived snapshots of the
+      original site; no evidence of revival found'
+    checked: 2026-08-21
+last_checked: '2026-08-21'
 ---
 
 Citizens Parliament is a UK advocacy organisation with a specific and concrete goal: abolish the appointed House of Lords and replace it with a representative chamber selected by sortition — a random sample of everyday people, similar to a jury, serving as a permanent upper house of review.

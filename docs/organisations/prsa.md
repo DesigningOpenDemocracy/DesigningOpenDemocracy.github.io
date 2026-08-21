@@ -13,6 +13,7 @@ summary: Australia's oldest electoral reform organisation, advocating for propor
   representation via the Single Transferable Vote — the system already used in Tasmania,
   the ACT, and the Australian Senate.
 concepts:
+- preferential-voting
 - mixed-member-proportional-representation
 - representative-democracy
 - direct-democracy

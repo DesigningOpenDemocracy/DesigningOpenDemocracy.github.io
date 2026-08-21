@@ -43,6 +43,13 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
+activity:
+  dod:
+    date: 2026-08-21
+    note: 'Defunct-status recheck: Wayback CDX confirms archived snapshots of the
+      original site; no evidence of revival found'
+    checked: 2026-08-21
+last_checked: '2026-08-21'
 ---
 
 The Referendum Council was a joint advisory body established by Prime Minister Malcolm Turnbull and Opposition Leader Bill Shorten in December 2016. Co-chaired by Pat Anderson AO and Mark Leibler AC, it was tasked with consulting broadly on options for constitutional recognition of Aboriginal and Torres Strait Islander peoples and reporting back with recommendations.

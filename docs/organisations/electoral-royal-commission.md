@@ -8,6 +8,7 @@ summary: An Australian campaign initiated by Pirate Party Australia calling for 
   formal Royal Commission into electoral and voting reform — the dedicated site now
   redirects to the Pirate Party.
 concepts:
+- preferential-voting
 - representative-democracy
 - mixed-member-proportional-representation
 location:
@@ -15,6 +16,13 @@ location:
   longitude: 151.2093
   name: Australia
   precision: city
+activity:
+  dod:
+    date: 2026-08-21
+    note: 'Defunct-status recheck: Wayback CDX confirms archived snapshots of the
+      original site; no evidence of revival found'
+    checked: 2026-08-21
+last_checked: '2026-08-21'
 ---
 
 The Electoral Royal Commission campaign was an initiative started by [Pirate Party Australia](pirate-party-australia.md) to advocate for a formal Royal Commission into Australia's electoral system and voting reform options. The campaign sought to place electoral reform on the national political agenda through the established Royal Commission mechanism.

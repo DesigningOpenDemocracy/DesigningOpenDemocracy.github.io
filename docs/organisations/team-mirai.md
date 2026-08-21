@@ -1,6 +1,6 @@
 ---
 title: Team Mirai
-type: political-party
+type: party
 status: active
 country: JP
 website: https://team-mir.ai

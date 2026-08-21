@@ -32,6 +32,13 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
+activity:
+  dod:
+    date: 2026-08-21
+    note: 'Defunct-status recheck: Wayback CDX confirms archived snapshots of the
+      original site; no evidence of revival found'
+    checked: 2026-08-21
+last_checked: '2026-08-21'
 ---
 
 Online Direct Democracy Australia was a direct democracy advocacy and electoral organisation that promoted online citizen voting as a structural replacement for representative democracy. It stood candidates at Australian elections.

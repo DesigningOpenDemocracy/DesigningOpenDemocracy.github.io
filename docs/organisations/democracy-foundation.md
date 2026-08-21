@@ -3,7 +3,7 @@ title: The Democracy Foundation
 type: research
 status: inactive
 country: US
-website: https://web.archive.org/web/*/https://democracy.foundation/
+website: https://democracy.foundation/
 logo: /assets/org-logos/democracy-foundation.png
 summary: An internet project dedicated to research and design of innovative decision-making
   methods, best known for a curated list of e-democracy and e-voting projects that
@@ -12,6 +12,13 @@ concepts:
 - direct-democracy
 - deliberative-democracy
 - e-government
+activity:
+  dod:
+    date: 2026-08-21
+    note: 'Site liveness recheck: website live but project dormant (no recent activity);
+      website field corrected from Wayback URL to live URL per defunct-orgs-only convention'
+    checked: 2026-08-21
+last_checked: '2026-08-21'
 ---
 
 The Democracy Foundation is an internet project dedicated to the research and design of innovative and advanced methods of decision-making, and to their implementation via free and open-source tools. Their primary software project is **Epitome**, an online platform for mass deliberation and consensus decision-making that enables large groups to simultaneously communicate and develop proposals.

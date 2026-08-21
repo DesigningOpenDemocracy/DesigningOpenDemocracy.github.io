@@ -30,6 +30,18 @@
     ]
   },
   {
+    "id": "bad46756",
+    "type": "webpage",
+    "URL": "https://aec.gov.au/FADReform/factsheets/gift-caps.htm",
+    "title": "\"Fact sheet: Gift caps\"",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Annual gift cap $50,000 indexed annually"
+      }
+    ]
+  },
+  {
     "id": "bf634635",
     "type": "webpage",
     "URL": "https://anouslademocratie.fr/2020/04/03/entretien-avec-emmanuel-martin-quelquun-disait-que-lentreprise-privee-ou-publique-ce-sont-des-univers-feodaux/",
@@ -54,6 +66,42 @@
     ]
   },
   {
+    "id": "ab87c48e",
+    "type": "webpage",
+    "URL": "https://astanatimes.com/2026/07/kazakhstans-new-constitution-takes-effect-heres-what-changes/",
+    "title": "Kazakhstan’s New Constitution Takes Effect: Here’s What Changes",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Kazakhstan’s new Constitution entered into force on July 1 following its approval in a nationwide referendum on March 15. Replacing the 1995 Constitution, it sets out changes to the country’s system of government, the distribution of state powers, constitutional rights and public institutions."
+      }
+    ]
+  },
+  {
+    "id": "a8cf5ae1",
+    "type": "webpage",
+    "URL": "https://au.finance.yahoo.com/news/taiwan-tried-digitize-democracy-huge-084810185.html",
+    "title": "\"Taiwan Tried to Digitize Democracy. It Was a Huge Flop.\"",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "legislators don't take it seriously."
+      }
+    ]
+  },
+  {
+    "id": "d29851c1",
+    "type": "webpage",
+    "URL": "https://australiainstitute.org.au/event/dr-hugh-saddler-memorial-lecture-2026-shane-rattenbury/",
+    "title": "Dr Hugh Saddler Memorial Lecture 2026 — Shane Rattenbury on how the ACT turned climate ambition into action, National Film and Sound Archive ACT",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Join us at the 2026 Dr Hugh Saddler Memorial Lecture, featuring former ACT Minister, Greens Leader, and long‑serving parliamentarian Shane Rattenbury."
+      }
+    ]
+  },
+  {
     "id": "43eea8ef",
     "type": "webpage",
     "URL": "https://australiainstitute.org.au/events/climate-integrity-summit/",
@@ -66,14 +114,30 @@
     ]
   },
   {
-    "id": "8feb336a",
+    "id": "a256570b",
     "type": "webpage",
-    "URL": "https://australiainstitute.org.au/events/dr-hugh-saddler-memorial-lecture/",
-    "title": "Dr Hugh Saddler Memorial Lecture 2026 — Shane Rattenbury on how the ACT turned climate ambition into action, National Film and Sound Archive ACT",
+    "URL": "https://australiainstitute.org.au/post/legislation-requiring-real-time-disclosure-of-political-donations-could-pass-this-week/",
+    "title": "\"Legislation requiring real-time disclosure of political donations could pass this week\"",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "Join us at the 2026 Dr Hugh Saddler Memorial Lecture, featuring former ACT Minister, Greens Leader, and long‑serving parliamentarian Shane Rattenbury."
+        "quote": "The Australia Institute is calling for transparency and real-time disclosure of political donations ahead of the Australian Electoral Commission’s annual release of political contributions data for 2023-24."
+      }
+    ]
+  },
+  {
+    "id": "70b2500c",
+    "type": "webpage",
+    "URL": "https://australianelectionstudy.org/wp-content/uploads/The-2025-Australian-Federal-Election-Results-from-the-Australian-Election-Study.pdf",
+    "title": "\"The 2025 Australian Federal Election: Results from the Australian Election Study\"",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "There is also high public support for the idea of a Citizens’ Assembly in Australia (48 percent in favour, 20 percent not in favour)."
+      },
+      {
+        "type": "quote-match",
+        "quote": "Trust in government (32 percent) and satisfaction with democracy (70 percent) have remained stable since the last election."
       }
     ]
   },
@@ -191,6 +255,18 @@
     ]
   },
   {
+    "id": "d0eedb3c",
+    "type": "webpage",
+    "URL": "https://chinademocrats.org/en",
+    "title": "Launches the China Journal of Democracy",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Since its launch in January 2023, the journal has quickly become the flagship publication for pro-democracy Chinese intellectuals."
+      }
+    ]
+  },
+  {
     "id": "4d2db6ff",
     "type": "webpage",
     "URL": "https://citizenos.com/news/citizen-os-annual-report-2024-a-year-of-a-big-revamp/",
@@ -263,6 +339,26 @@
     ]
   },
   {
+    "id": "264946bd",
+    "type": "webpage",
+    "URL": "https://civictech.guide/about",
+    "title": "Conceived and first edition published as an open spreadsheet",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "In 2022, the National Endowment for Democracy provided critical support to revamp and activate the project, making its resources readily available to people fighting for democracy all over the world."
+      },
+      {
+        "type": "quote-match",
+        "quote": "Stempeck developed the project into a full directory in 2018 under the auspices of Civic Hall with support from Knight Foundation, Luminate, and Patrick J. McGovern Foundation."
+      },
+      {
+        "type": "quote-match",
+        "quote": "The Field Guide was conceived in early 2016 by Micah Sifry, co-founder of Civic Hall, Matt Stempeck (then the Director of Civic Technology at Microsoft), and Erin Simpson, then at Civic Hall Labs."
+      }
+    ]
+  },
+  {
     "id": "3f648109",
     "type": "webpage",
     "URL": "https://civictech.guide/about/",
@@ -289,6 +385,30 @@
           "suffix": "It's primarily a crowdsourced directory where you can find helpful resources and inspiration, and share your own work with the world. We also publish",
           "text": "The Civic Tech Field Guide is the world's most complete collection of projects, tools, and organizations using tech for democracy. It's primarily a crowdsourced directory where you can find helpful resources and inspiration, and share your own work with the world. We also publish research and regular updates about the state of the field."
         }
+      }
+    ]
+  },
+  {
+    "id": "4feccb1f",
+    "type": "webpage",
+    "URL": "https://commonslibrary.parliament.uk/research-briefings/cbp-10876/",
+    "title": "Representation of the People Bill: progress of the bill",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Committee stage took place over nine sittings from 18 March to 16 April 2026."
+      }
+    ]
+  },
+  {
+    "id": "ad7eb809",
+    "type": "webpage",
+    "URL": "https://communityfoundation.org.au/making-a-difference/projects/our-democracy",
+    "title": "\"#OurDemocracy + Stronger Charities Alliance\"",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "The #OurDemocracy campaign was developed by three organisations – the Australian Conservation Foundation, the Human Rights Law Centre (HRLC) and the Australian Democracy Network (ADN), together with the input of over 30 more."
       }
     ]
   },
@@ -334,6 +454,58 @@
     ]
   },
   {
+    "id": "19968683",
+    "type": "webpage",
+    "URL": "https://connecticut.news12.com/connecticut-lottery-selects-members-for-property-tax-assembly",
+    "title": "Connecticut Lottery selects members for property tax assembly",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "The Connecticut Lottery Corporation on Thursday conducted a public drawing to select members"
+      },
+      {
+        "type": "quote-match",
+        "quote": "The initiative, organized by the Connecticut Conference of Municipalities, Yale University, the University of Connecticut, and the Connecticut Office of the State Comptroller, will bring together residents from across the state to study Connecticut’s property tax system and develop recommendations."
+      }
+    ]
+  },
+  {
+    "id": "e6dbe814",
+    "type": "webpage",
+    "URL": "https://constitutionnet.org/news/hungarys-parliament-passes-constitutional-amendment-limiting-prime-ministerial-terms",
+    "title": "Hungary's Parliament Passes Constitutional Amendment Limiting Prime Ministerial Terms",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Hungarian members of parliament have passed a constitutional amendment limiting prime ministerial terms to eight years."
+      }
+    ]
+  },
+  {
+    "id": "404af29e",
+    "type": "webpage",
+    "URL": "https://constitutionnet.org/news/voices/new-constitution-kazakhstan-parliamentary-reform-facade-presidential-monopoly",
+    "title": "Parliamentary Reform as a Façade for Presidential Monopoly",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "The draft revealed that the parliamentary reform was largely a façade."
+      }
+    ]
+  },
+  {
+    "id": "b8a17532",
+    "type": "webpage",
+    "URL": "https://constitutionnet.org/news/voices/term-limits-no-limits-el-salvadors-constitutional-reform-presidential-re-election",
+    "title": "From Term Limits to No Limits: El Salvador's Constitutional Reform on Presidential Re-election",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Article 248 provides that clauses concerning presidential alternation cannot be amended."
+      }
+    ]
+  },
+  {
     "id": "1b8a5377",
     "type": "webpage",
     "URL": "https://consuldemocracy.org/2025/12/consul-conference-2026-munich/",
@@ -342,6 +514,62 @@
       {
         "type": "quote-match",
         "quote": "The CONSUL DEMOCRACY Foundation in collaboration with the Landeshauptstadt München organises the next ConsulCon on 15-17 September 2026 in München, Germany."
+      }
+    ]
+  },
+  {
+    "id": "c824e401",
+    "type": "webpage",
+    "URL": "https://ct-citizens-assembly.org/",
+    "title": "Connecticut Citizens' Assembly",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "July 11–12 2-Day In-Person Session New Haven — Yale Campus"
+      }
+    ]
+  },
+  {
+    "id": "7d1dc48f",
+    "type": "webpage",
+    "URL": "https://ct-citizens-assembly.org/about",
+    "title": "About",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "a Citizens' Assembly randomly selects 100 ordinary citizens and empowers them to learn, deliberate, and pass recommendations directly to a legislative hearing."
+      }
+    ]
+  },
+  {
+    "id": "9b0429d3",
+    "type": "webpage",
+    "URL": "https://ctmirror.org/2026/07/13/citizens-assembly-property-taxes/",
+    "title": "It's tax-talk time: Connecticut's first 'Citizens' Assembly' convenes",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "All of the participants on Saturday were selected by lottery to participate in the democratic initiative that is designed to encourage non-politicians to engage in policy-making. The project has been described as “jury duty"
+      }
+    ]
+  },
+  {
+    "id": "90703df8",
+    "type": "webpage",
+    "URL": "https://de.wikipedia.org/wiki/Jede_Stimme_GILT",
+    "title": "Party \"Liste Roland Düringer – Meine Stimme gilt\" founded by actor Roland Düringer in Vienna",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Die Gründung der Partei „Liste Roland Düringer – Meine Stimme gilt“ erfolgte am 21. September 2016 durch Düringer in Wien."
+      },
+      {
+        "type": "quote-match",
+        "quote": "G!LT erreichte dort auf Anhieb 14,23 % der Wählerstimmen und 3 Mandate."
+      },
+      {
+        "type": "quote-match",
+        "quote": "G!LT stand zur Nationalratswahl 2017 in allen österreichischen Bundesländern zur Wahl und erhielt 0,95 % der gültigen Stimmen (dies waren absolut 48.234 Stimmen)."
       }
     ]
   },
@@ -394,6 +622,30 @@
     ]
   },
   {
+    "id": "d2338af6",
+    "type": "webpage",
+    "URL": "https://demnext.substack.com/p/new-paper-from-projects-to-permanence",
+    "title": "New Paper: From Projects to Permanence",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Establishing an ongoing citizens’ assembly while building supportive civic infrastructure requires a completely different mindset than implementing a one-off assembly."
+      }
+    ]
+  },
+  {
+    "id": "96ee996c",
+    "type": "webpage",
+    "URL": "https://democracy-technologies.org/about/",
+    "title": "Project launched by the Innovation in Politics Institute",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Democracy-Technologies.org is a project of the Innovation in Politics Institute, a mission-driven company dedicated to strengthening democracy in Europe and beyond."
+      }
+    ]
+  },
+  {
     "id": "05d3a280",
     "type": "webpage",
     "URL": "https://democracy-technologies.org/participation/consensus-building-in-taiwan/",
@@ -410,6 +662,10 @@
     "evidence": [
       {
         "type": "quote-match",
+        "quote": "However, as vTaiwan users revised viewpoints, they coalesced around more consensual statements like ‘the government should set up a fair regulatory regime,’ and ‘private passenger vehicles should be registered.’"
+      },
+      {
+        "type": "quote-match",
         "quote": "it has transformed how the government brings stakeholders together, allowing for a more inclusive approach to legislation.",
         "status": "MATCH",
         "last-verified": "2026-08-12",
@@ -420,6 +676,10 @@
           "suffix": "Â A demonstration by the Sunflower Movement in Tapei, 2014. The vTaiwan platform was developed in the wake of the protests.",
           "text": "Taiwan is a world-leader in digital democracy. It all started with vTaiwan, an online participation platform powered by Polis. Launched in 2015, it has transformed how the government brings stakeholders together, allowing for a more inclusive approach to legislation.Â"
         }
+      },
+      {
+        "type": "quote-match",
+        "quote": "vTaiwan has been criticised for being, as one policymaker described it,"
       }
     ]
   },
@@ -501,6 +761,42 @@
     ]
   },
   {
+    "id": "5cfe302a",
+    "type": "webpage",
+    "URL": "https://en.wikipedia.org/wiki/1967_Australian_referendum_(Aboriginals)",
+    "title": "1967 Australian referendum (Aboriginals)",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "In reckoning the numbers of the people of the Commonwealth, or of a State or other part of the Commonwealth, aboriginal natives shall not be counted."
+      }
+    ]
+  },
+  {
+    "id": "9d5cd0ff",
+    "type": "webpage",
+    "URL": "https://en.wikipedia.org/wiki/2023_Israeli_judicial_reform_protests",
+    "title": "2023 Israeli judicial reform protests",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "The Kaplan protests were regularly attended by numbers ranging from 60,000 to 150,000 people."
+      }
+    ]
+  },
+  {
+    "id": "69d284a4",
+    "type": "webpage",
+    "URL": "https://en.wikipedia.org/wiki/2026_Bangladeshi_constitutional_referendum",
+    "title": "2026 Bangladeshi constitutional referendum",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "with 68% votes in favor on a turnout of 60%."
+      }
+    ]
+  },
+  {
     "id": "bf752459",
     "type": "webpage",
     "URL": "https://en.wikipedia.org/wiki/Anne_Twomey_(academic)",
@@ -562,6 +858,26 @@
       {
         "type": "quote-match",
         "quote": "In September 2009, Fung launched Participedia, a website developed with Mark Warren of the University of British Columbia, aimed at strengthening democracy with its user-generated library of examples and methods of participatory governance"
+      }
+    ]
+  },
+  {
+    "id": "525e10c8",
+    "type": "webpage",
+    "URL": "https://en.wikipedia.org/wiki/Athenian_democracy",
+    "title": "Athenian democracy",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Ostracism, a unique feature of Athenian democracy introduced in the early 5th century BCE, allowed the Assembly to exile citizens deemed threats to the state's stability."
+      },
+      {
+        "type": "quote-match",
+        "quote": "Participation was open to adult, free male citizens (i.e., not minors, metics, women or slaves)."
+      },
+      {
+        "type": "quote-match",
+        "quote": "The central events of the Athenian democracy were the meetings of the assembly (ἐκκλησία, ekklesía)... Greek democracy created at Athens was direct, rather than representative: any adult male citizen over the age of 20 could take part, and it was a duty to do so."
       }
     ]
   },
@@ -674,6 +990,18 @@
     ]
   },
   {
+    "id": "e3c8e0d6",
+    "type": "webpage",
+    "URL": "https://en.wikipedia.org/wiki/Declaration_of_the_Rights_of_Man_and_of_the_Citizen",
+    "title": "Declaration of the Rights of Man and of the Citizen",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Article I – Men are born and remain free and equal in rights. Social distinctions may be founded only upon the general good."
+      }
+    ]
+  },
+  {
     "id": "ac08ca41",
     "type": "webpage",
     "URL": "https://en.wikipedia.org/wiki/Democracy_International_eV",
@@ -682,6 +1010,26 @@
       {
         "type": "quote-match",
         "quote": "formally established in June 2011"
+      }
+    ]
+  },
+  {
+    "id": "2eb5095c",
+    "type": "webpage",
+    "URL": "https://en.wikipedia.org/wiki/Democracy_Without_Borders",
+    "title": "Established as an international NGO with its legal seat in Berlin, originating from the Committee for a Democratic UN (founded 2003)",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Democracy Without Borders, or DWB is an international nongovernmental organization established in 2017 with national chapters across the world and a legal seat in Berlin that promotes 'global democracy, global governance and global citizenship.'"
+      },
+      {
+        "type": "quote-match",
+        "quote": "In 2021, both campaigns were brought under the umbrella of the \"We The Peoples\" campaign for inclusive global governance that was endorsed by over 200 civil society groups and networks from across the world."
+      },
+      {
+        "type": "quote-match",
+        "quote": "originates in what is now its German chapter which prior to March 2017 operated as Committee for a Democratic UN"
       }
     ]
   },
@@ -725,7 +1073,7 @@
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "The Irish government in 1958 and 1968 tried to abolish the use of the Single Transferable Vote and to revert to Westminster's voting system. On both occasions, future director Enid Lakeman led our successful campaign to protect democracy in Ireland."
+        "quote": "When Fianna Fáil put to a referendum a proposal to revert to first-past-the-post voting twice (1959 and 1968), the society, under the leadership of Enid Lakeman, led a successful campaign to keep the STV system in Ireland."
       },
       {
         "type": "quote-match",
@@ -734,6 +1082,18 @@
       {
         "type": "quote-match",
         "quote": "was founded in January 1884 as the Proportional Representation Society by"
+      }
+    ]
+  },
+  {
+    "id": "8520090f",
+    "type": "webpage",
+    "URL": "https://en.wikipedia.org/wiki/FairVote",
+    "title": "Ranked-choice voting ballot initiatives supported by FairVote passed in multiple cities including Washington, DC",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Multiple cities, including DC, pass IRV ballot initiatives supported by FairVote"
       }
     ]
   },
@@ -749,7 +1109,7 @@
       },
       {
         "type": "quote-match",
-        "quote": "Flux was registered at a federal level from 2016, but it was de-registered in 2022 for failing to meet the increased requirement of 1500 members. the DigiPol project"
+        "quote": "Flux was registered at a federal level from 2016, but it was de-registered in 2022 for failing to meet the increased requirement of 1500 members."
       }
     ]
   },
@@ -869,6 +1229,42 @@
     ]
   },
   {
+    "id": "ef80c714",
+    "type": "webpage",
+    "URL": "https://en.wikipedia.org/wiki/Haitian_Revolution",
+    "title": "Haitian Revolution",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Raynal's admonition was written thirteen years before the Declaration of the Rights of Man and of the Citizen, which highlighted freedom and liberty but did not abolish slavery."
+      }
+    ]
+  },
+  {
+    "id": "57f9f566",
+    "type": "webpage",
+    "URL": "https://en.wikipedia.org/wiki/Herrenvolk_democracy",
+    "title": "Herrenvolk democracy",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Herrenvolk democracy (German pronunciation: [ˈhɛʁənfɔlk]) is a partially democratic form of government in which only a specific ethnic group has voting rights and the right to run for office, while other groups are disenfranchised."
+      }
+    ]
+  },
+  {
+    "id": "09118fec",
+    "type": "webpage",
+    "URL": "https://en.wikipedia.org/wiki/Hong_Kong_Democracy_Council",
+    "title": "Sponsors the first humanitarian parole visas for Hong Kong protesters",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "In January 2021, HKDC assisted in the rescue of five Hong Kong protesters, aged 18–26 who fled by boat to Taiwan in July 2020 soon after the national security law was imposed, by sponsoring the first set of humanitarian parole visas to the US."
+      }
+    ]
+  },
+  {
     "id": "1ab5a182",
     "type": "webpage",
     "URL": "https://en.wikipedia.org/wiki/International_Institute_for_Democracy_and_Electoral_Assistance",
@@ -913,14 +1309,26 @@
     ]
   },
   {
-    "id": "5c1635cc",
+    "id": "49e6f477",
     "type": "webpage",
-    "URL": "https://en.wikipedia.org/wiki/Jan_Fran",
-    "title": "Launched by journalists Antoinette Lattouf and Jan Fran, with flagship podcast",
+    "URL": "https://en.wikipedia.org/wiki/Israeli_occupation_of_the_West_Bank",
+    "title": "Israeli occupation of the West Bank",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "In 2025, Fran started a company with Antoinette Lattouf \"Ette Media\". The pair launched a podcast \"We used to be Journos\". \"We Used to Be Journos\" debuting 2 July 2025 on Acast"
+        "quote": "The West Bank, including East Jerusalem, has been under military occupation by Israel since 7 June 1967... Israel's occupation is now the longest in modern history."
+      }
+    ]
+  },
+  {
+    "id": "5c1635cc",
+    "type": "webpage",
+    "URL": "https://en.wikipedia.org/wiki/Jan_Fran",
+    "title": "Launched by journalists Antoinette Lattouf and Jan Fran, with flagship podcast \"We Used to Be Journos\"",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "In 2025, Fran started a company with Antoinette Lattouf \"Ette Media\". The pair launched a podcast \"We used to be Journos\"."
       }
     ]
   },
@@ -957,6 +1365,18 @@
       {
         "type": "quote-match",
         "quote": "Kongra Star (Kurdish for Star Congress), founded in 2005"
+      }
+    ]
+  },
+  {
+    "id": "a019b1a1",
+    "type": "webpage",
+    "URL": "https://en.wikipedia.org/wiki/Legal_Consequences_arising_from_the_Policies_and_Practices_of_Israel_in_the_Occupied_Palestinian_Territory,_including_East_Jerusalem",
+    "title": "Legal Consequences arising from the Policies and Practices of Israel in the Occupied Palestinian Territory, including East Jerusalem",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "The sustained abuse by Israel of its position as an occupying Power, through annexation and an assertion of permanent control over the Occupied Palestinian Territory and continued frustration of the right of the Palestinian people to self-determination, violates fundamental principles of international law and renders Israel's presence in the Occupied Palestinian Territory unlawful."
       }
     ]
   },
@@ -1097,6 +1517,18 @@
     ]
   },
   {
+    "id": "e8bbfa3e",
+    "type": "webpage",
+    "URL": "https://en.wikipedia.org/wiki/Metic",
+    "title": "Metic",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "They had no role in the political community but might be completely integrated into the social and economic life of the city."
+      }
+    ]
+  },
+  {
     "id": "2af3958c",
     "type": "webpage",
     "URL": "https://en.wikipedia.org/wiki/Movement_for_Quality_Government_in_Israel",
@@ -1160,11 +1592,27 @@
     "id": "0bddfd08",
     "type": "webpage",
     "URL": "https://en.wikipedia.org/wiki/Nicholas_Gruen",
-    "title": "Founded by economist Nicholas Gruen as an economic consultancy (year-only,",
+    "title": "Founded by economist Nicholas Gruen as an economic consultancy",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "In 2000 he founded economic consultancy Lateral Economics sourced from Gruen's own bio)"
+        "quote": "In 2000 he founded economic consultancy Lateral Economics"
+      }
+    ]
+  },
+  {
+    "id": "11c5c9e9",
+    "type": "webpage",
+    "URL": "https://en.wikipedia.org/wiki/None_of_the_Above_Direct_Democracy_Party",
+    "title": "Founded by Greg Vezina in Ontario",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "It is named after the expression \"none of the above\" and was founded in 2014 by Greg Vezina in response to his disillusionment with the current major political parties."
+      },
+      {
+        "type": "quote-match",
+        "quote": "NOTA nominated candidates in eight ridings in the 2014 provincial election"
       }
     ]
   },
@@ -1280,11 +1728,11 @@
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "The group was established in 2004 as only a civic youth organization participation in Ukraine"
+        "quote": "The group was established in 2004 (as only a civic youth organization) to coordinate young people's opposition to the Kuchma government"
       },
       {
         "type": "quote-match",
-        "quote": "pro-democracy movements such as Pora! had created political networks throughout Ukraine, including 150 groups responsible for spreading information and coordinating election monitoring, 72 regional centers, and 30,000 registered participants. This allowed Pora! to mobilize protesters after widespread reports of electoral fraud. fraud that triggered the Orange Revolution"
+        "quote": "pro-democracy movements such as Pora! had created political networks throughout Ukraine, including 150 groups responsible for spreading information and coordinating election monitoring, 72 regional centers, and 30,000 registered participants. This allowed Pora! to mobilize protesters after widespread reports of electoral fraud."
       }
     ]
   },
@@ -1345,6 +1793,18 @@
     ]
   },
   {
+    "id": "7e82bd9b",
+    "type": "webpage",
+    "URL": "https://en.wikipedia.org/wiki/Politics_(Aristotle)",
+    "title": "Politics (Aristotle)",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "This excludes honorary citizens, resident aliens, slaves, women, foreigners even if they have some access to the legal system through commercial treaties, boys too young for military service, or people who have been exiled or stripped of their citizenship."
+      }
+    ]
+  },
+  {
     "id": "71b31a2e",
     "type": "webpage",
     "URL": "https://en.wikipedia.org/wiki/Referendum_Council",
@@ -1365,6 +1825,34 @@
     ]
   },
   {
+    "id": "bd81a22e",
+    "type": "webpage",
+    "URL": "https://en.wikipedia.org/wiki/Reform_Act_1832",
+    "title": "Reform Act 1832",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "The legislation granted the right to vote to a broader segment of the male population by standardizing property qualifications, extending the franchise to small landowners, tenant farmers, shopkeepers, and all householders who paid a yearly rental of £10 or more."
+      }
+    ]
+  },
+  {
+    "id": "4bc20b5c",
+    "type": "webpage",
+    "URL": "https://en.wikipedia.org/wiki/RepresentUs",
+    "title": "Co-founded by Josh Silver and Joshua Graham Lynn",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Josh Silver and Joshua Graham Lynn co-founded the group in 2012."
+      },
+      {
+        "type": "quote-match",
+        "quote": "it established ranked choice voting with its 2016 Maine Question 5 for all statewide elections"
+      }
+    ]
+  },
+  {
     "id": "0c39c38f",
     "type": "webpage",
     "URL": "https://en.wikipedia.org/wiki/SITRA",
@@ -1373,6 +1861,18 @@
       {
         "type": "quote-match",
         "quote": "Sitra was founded in 1967 as a part of the Bank of Finland"
+      }
+    ]
+  },
+  {
+    "id": "b23e87e2",
+    "type": "webpage",
+    "URL": "https://en.wikipedia.org/wiki/Slavery_in_France",
+    "title": "Slavery in France",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "The Law of 4 February 1794 abolished slavery in all French territories and possessions in the Americas and Caribbean, although slavery was maintained in the Mascarene Islands."
       }
     ]
   },
@@ -1400,11 +1900,23 @@
     "id": "a4524e50",
     "type": "webpage",
     "URL": "https://en.wikipedia.org/wiki/The_Helen_Clark_Foundation",
-    "title": "Foundation established as an independent public policy think tank hosted",
+    "title": "Foundation established as an independent public policy think tank hosted by AUT, named after former PM Helen Clark",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "The Helen Clark Foundation is a New Zealand-based independent, non-partisan public policy think tank hosted by Auckland University of Technology. by AUT, named after former PM Helen Clark"
+        "quote": "The Helen Clark Foundation (Māori: Mahi a Rongo) is a New Zealand-based independent, non-partisan public policy think tank hosted by Auckland University of Technology. The foundation was formed in 2019 and is named after Helen Clark, the 37th prime minister of New Zealand and former administrator of the United Nations Development Programme who serves as patron."
+      }
+    ]
+  },
+  {
+    "id": "8b844ba4",
+    "type": "webpage",
+    "URL": "https://en.wikipedia.org/wiki/Three-fifths_Compromise",
+    "title": "Three-fifths Compromise",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Free states wanted to exclude the counting of slave populations in slave states, since those slaves had no voting rights. A compromise was struck to resolve this impasse. The compromise counted three-fifths of each state's slave population toward that state's total population for the purpose of apportioning the House of Representatives, effectively giving the Southern United States more power in the House relative to the Northern United States."
       }
     ]
   },
@@ -1445,6 +1957,18 @@
       {
         "type": "quote-match",
         "quote": "party was founded on August 8, 2009"
+      }
+    ]
+  },
+  {
+    "id": "45572a54",
+    "type": "webpage",
+    "URL": "https://enlacezapatista.ezln.org.mx/2013/07/18/nuevas-fechas-para-la-escuelita-informacion-de-videoconferencias-y-de-otras-cosas/",
+    "title": "Hosts registration for the first Zapatista Escuelita (little school)",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "El registro, con su clave y una identificación, es en los días 10 y 11 de agosto del 2013 en el CIDECI, San Cristóbal de Las Casas, Chiapas, México."
       }
     ]
   },
@@ -1526,9 +2050,35 @@
       },
       {
         "type": "quote-match",
-        "quote": "we are also excited to introduce you to the founding members of the new RadicalxChange Melbourne chapter",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+        "quote": "We are also excited to introduce you to the founding members of the new RadicalxChange Melbourne chapter"
+      }
+    ]
+  },
+  {
+    "id": "d55e69ea",
+    "type": "webpage",
+    "URL": "https://fairvote.org/the_history_of_fairvote_the_founding_years/",
+    "title": "Founded at a Cincinnati conference as Citizens for Proportional Representation",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "to organize a Cincinnati conference in June 1992 and launch the new organization"
+      },
+      {
+        "type": "quote-match",
+        "quote": "to organize a Cincinnati conference in June 1992 and launch the new organization. More than 60 people from 17 states gathered,"
+      }
+    ]
+  },
+  {
+    "id": "c465637d",
+    "type": "webpage",
+    "URL": "https://fairvote.org/who-we-are/our-impact/",
+    "title": "Our Impact",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Today, FairVote promotes solutions that translate our votes into power and create incentives for our elected leaders to be truly accountable and responsive to their constituents. These solutions include ranked choice voting (RCV) and proportional representation."
       }
     ]
   },
@@ -1580,6 +2130,18 @@
     ]
   },
   {
+    "id": "be8de4c3",
+    "type": "webpage",
+    "URL": "https://focusweb.org/press-statement-social-movements-united-in-defiance-of-false-solutions-being-negotiated-at-paris-cop/",
+    "title": "Executive director Pablo Solón speaks at COP21 against the Paris agreement",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Pablo Solon, former chief climate negotiator for Bolivia and current Executive Director of the Fundacion Solon, said: “The Paris agreement will force us to choose who of our children will survive, because in a +3C world, not all will be able to live.”"
+      }
+    ]
+  },
+  {
     "id": "a8c82e99",
     "type": "webpage",
     "URL": "https://foro.org.co/quienes-somos/",
@@ -1600,6 +2162,18 @@
       {
         "type": "quote-match",
         "quote": "Fondée le 26 novembre 2015 par Cheikh Fall, AfricTivistes compte à ce jour plus de 400 membres répartis dans 40 pays du continent africain."
+      }
+    ]
+  },
+  {
+    "id": "ad128d1c",
+    "type": "webpage",
+    "URL": "https://fundacionsolon.org/la-fundacion-solon/",
+    "title": "Founded by artist Walter Solón Romero",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "La Fundación Solón nació en 1994 por iniciativa del artista Walter Solón Romero Gonzales para fomentar la creatividad y la mirada crítica de los espíritus rebeldes. Con el paso de los años, y tras la partida del maestro en 1999, la Fundación Solón se convirtió en un centro de interpelación y búsqueda de alternativas a partir del arte, la investigación y el activismo para intentar cambiar el sistema"
       }
     ]
   },
@@ -1698,6 +2272,18 @@
     ]
   },
   {
+    "id": "3dce3c9c",
+    "type": "webpage",
+    "URL": "https://grattan.edu.au/news/election-2025-where-the-money-came-from/",
+    "title": "\"Election 2025: Where the money came from\"",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "The new total cap of $90 million for electoral expenditure by a political party is too high, keeping too much money in politics. And the per-seat spending cap of $800,000 is too low, advantaging incumbents over new entrants."
+      }
+    ]
+  },
+  {
     "id": "9c29c346",
     "type": "webpage",
     "URL": "https://grattan.edu.au/news/improving-australias-democracy/",
@@ -1758,6 +2344,42 @@
     ]
   },
   {
+    "id": "48011734",
+    "type": "webpage",
+    "URL": "https://home.treasury.gov/news/press-releases/sb0603",
+    "title": "Treasury Issues Final Rule on Beneficial Ownership Information Reporting",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Today’s action is a victory for common sense and American small businesses"
+      }
+    ]
+  },
+  {
+    "id": "600b19ec",
+    "type": "webpage",
+    "URL": "https://horizonstate.com/hst-faq/",
+    "title": "Returned under new management after a community group purchased the platform's IP assets",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Award-winning tech company Horizon State today (1/11/2019) announced it is returning under new management."
+      }
+    ]
+  },
+  {
+    "id": "2c5867d8",
+    "type": "webpage",
+    "URL": "https://horizonstate.com/hst-token/",
+    "title": "Relaunched its token as Horizon State Token (HST) on the Base network, with an airdrop to prior Decision Token holders",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Horizon State Token is a continuation of the Decision Token that came to an end in 2019. We are a new ownership and management team who have airdropped tokens to prior holders as goodwill."
+      }
+    ]
+  },
+  {
     "id": "47fa6bdf",
     "type": "webpage",
     "URL": "https://ia.acs.org.au/article/2018/blockchain-to-revolutionise-e-voting.html",
@@ -1785,11 +2407,11 @@
     "id": "96dc34e0",
     "type": "webpage",
     "URL": "https://itsrio.org/pt/institucional/",
-    "title": "Founded in Rio de Janeiro to study the impact and future of technology on",
+    "title": "Founded in Rio de Janeiro to study the impact and future of technology on Brazilian society",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "O ITS Rio e um Instituto de pesquisa sem fins lucrativos, que estuda o impacto e o futuro da tecnologia no Brasil e no mundo, na busca de assegurar o aproveitamento criativo e apropriado das oportunidades fornecidas pela tecnologia na era digital. Brazilian society"
+        "quote": "O ITS Rio é um Instituto de pesquisa sem fins lucrativos, que estuda o impacto e o futuro da tecnologia no Brasil e no mundo, na busca de assegurar o aproveitamento criativo e apropriado das oportunidades fornecidas pela tecnologia na era digital."
       }
     ]
   },
@@ -1802,6 +2424,18 @@
       {
         "type": "quote-match",
         "quote": "What kind of 'democracy' do new government-led digital initiatives facilitate? This paper discusses the issue by investigating the open government data policy in Taiwan in the 2010s"
+      }
+    ]
+  },
+  {
+    "id": "69d6594a",
+    "type": "webpage",
+    "URL": "https://knightcolumbia.org/content/can-ai-mediation-improve-democratic-deliberation",
+    "title": "\"Can AI Mediation Improve Democratic Deliberation?\"",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "the HM tended to over-weight minority viewpoints."
       }
     ]
   },
@@ -1850,6 +2484,18 @@
       {
         "type": "quote-match",
         "quote": "The prize is Australia's only independent, non-partisan award for outstanding political leadership."
+      }
+    ]
+  },
+  {
+    "id": "8f92adb6",
+    "type": "webpage",
+    "URL": "https://mecouncil.org/blog_posts/syria-sdf-integration-agreement-2026-analysis/",
+    "title": "How Damascus Reclaimed Syria's Northeast, and What Integration Now Means",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "the two sides announced a comprehensive agreement on January 30 to stabilize the ceasefire and launch phased integration."
       }
     ]
   },
@@ -1970,6 +2616,38 @@
     ]
   },
   {
+    "id": "ea8144ed",
+    "type": "webpage",
+    "URL": "https://nota.ca/ontario/about/",
+    "title": "Runs 42 candidates in the 2018 Ontario general election",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "The None of the Above Direct Democracy Party of Ontario had a 2018 candidate list filled up with 42 competent people that could effectively run the Ontario government."
+      }
+    ]
+  },
+  {
+    "id": "402600b0",
+    "type": "webpage",
+    "URL": "https://nzccl.org.nz/the-founding-and-early-history-of-the-new-zealand-council-for-civil-liberties/",
+    "title": "Founded at a public meeting in Wellington",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "1959 saw the Council taking on the issue of censorship. The Indecent Publications Tribunal had declared Vladimir Nabokov’s book “Lolita” indecent and banned its importation and distribution."
+      },
+      {
+        "type": "quote-match",
+        "quote": "Concern culminated in June 1952 when Sir Thomas Hunter, who could hardly be described as a dangerous radical, convened a public meeting of concerned citizens, many of whom were academics from Victoria University, around the setting up of an organisation to protect and, if possible, enlarge civil liberties in New Zealand."
+      },
+      {
+        "type": "quote-match",
+        "quote": "Finally, after 31 years, the Official Secrets Act 1951 was repealed by the Official Information Act 1982 (OIA)."
+      }
+    ]
+  },
+  {
     "id": "fa6d50ee",
     "type": "webpage",
     "URL": "https://oaf.org.au/2009/07/07/announcing-the-openaustralia-foundation/",
@@ -2014,6 +2692,18 @@
       {
         "type": "quote-match",
         "quote": "Ethelo and Open North are excited to announce the acquisition by Ethelo of “Citizen Budget”- Canada’s leading municipal budget consultation tool."
+      }
+    ]
+  },
+  {
+    "id": "d266e917",
+    "type": "webpage",
+    "URL": "https://overtone.ai/how-to-get-people-to-agree-with-each-other-using-ai-an-interview-with-prof-chris-summerfield/",
+    "title": "\"How to get people to agree with each other using AI — an interview with Prof. Chris Summerfield\"",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "What it seems to do is write statements which are faithful to the majority, but include prominent elements of dissent. So they weave in stuff of people who would otherwise feel kind of disenfranchised."
       }
     ]
   },
@@ -2084,7 +2774,7 @@
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "Radicalxchange Foundation Ltd, Moraga, CA, Tax-exempt since July 2019, EIN: 83-2183139"
+        "quote": "Radicalxchange Foundation Ltd Moraga, CA Tax-exempt since July 2019 EIN: 83-2183139"
       }
     ]
   },
@@ -2146,7 +2836,7 @@
     "id": "e3ae0804",
     "type": "webpage",
     "URL": "https://reclaim.org.au/inaugural-lismore-peoples-assembly/",
-    "title": "Inaugural Lismore People's Assembly",
+    "title": "Inaugural Lismore People's Assembly on Housing held at the Red Dove Cafe, Lismore",
     "accessed": {
       "date-parts": [
         [
@@ -2157,6 +2847,10 @@
       ]
     },
     "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "ROR is now bringing a new front to their grassroots community advocacy, with the inaugural Lismore People’s Assembly on Housing taking place this Saturday."
+      },
       {
         "type": "quote-match",
         "quote": "The Lismore People’s Assembly seeks to change this in the hopes of reinventing democracy – starting from the ground up",
@@ -2260,11 +2954,11 @@
     "id": "9a0a618a",
     "type": "webpage",
     "URL": "https://techboard.com.au/company-profile/xo-1/",
-    "title": "Founded by Max Kaye as a Sydney-based blockchain voting startup",
+    "title": "Founded by Frank Nesci and Max Kaye as a Sydney-based blockchain voting startup",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "Founders: Max Kaye"
+        "quote": "Founders: Frank Nesci Max Kaye"
       },
       {
         "type": "quote-match",
@@ -2298,6 +2992,18 @@
         "quote": "In 2016, the network bought a hot water tank manufacturer in Morwell and began making their own tanks and solar hot water systems as the Earthworker Energy Manufacturing Co-operative.",
         "last-verified": "2026-08-12",
         "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+      }
+    ]
+  },
+  {
+    "id": "243c7b27",
+    "type": "webpage",
+    "URL": "https://theconversation.com/parliament-has-passed-landmark-election-donation-laws-they-may-be-a-stitch-up-but-they-also-improve-australias-democracy-249588",
+    "title": "Parliament has passed landmark election donation laws. They may be a 'stitch up' – but they also improve Australia's democracy",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "The effect of increasing public funding is that political parties don’t have to fundraise because they’ve got their war chests. But any challengers do have to fundraise"
       }
     ]
   },
@@ -2344,6 +3050,18 @@
     ]
   },
   {
+    "id": "1c4d9b84",
+    "type": "webpage",
+    "URL": "https://vic.democrats.org.au/policies/make-victoria-s-upper-house-the-citizens-house-of-review/",
+    "title": "Victorian Democrats policy page",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "To be elected in the current structure [with eight regions], a candidate must receive 16.7% of the vote, either through first preference votes or through the flow of preferences."
+      }
+    ]
+  },
+  {
     "id": "c231f441",
     "type": "webpage",
     "URL": "https://web.archive.org/web/20190718131041/https://policyincubator.com/home/about_us",
@@ -2367,7 +3085,7 @@
       },
       {
         "type": "quote-match",
-        "quote": "Finally Consumer Affairs granted us cooperative status. We were now a real thing. Australia's first platform cooperative"
+        "quote": "Finally Consumer Affairs granted us cooperative status. We were now a real thing."
       }
     ]
   },
@@ -2408,6 +3126,62 @@
     ]
   },
   {
+    "id": "e847d647",
+    "type": "webpage",
+    "URL": "https://www.accountabilityrt.org/fiona-mcleod-sc-to-head-up-art/",
+    "title": "Co-founded by former Supreme Court judge Tim Smith",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "She replaces Tim Smith, a former Supreme Court judge and foundation President of ART, which he co-founded in 2006."
+      }
+    ]
+  },
+  {
+    "id": "bd47b5be",
+    "type": "webpage",
+    "URL": "https://www.aec.gov.au/FADReform/factsheets/changes-explained.htm",
+    "title": "\"Introduction to the Reform\"",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Donations for a federal purpose must be reported sooner (as soon as within 24 hours during an election period)."
+      },
+      {
+        "type": "quote-match",
+        "quote": "The Electoral Legislation Amendment (Electoral Reform) Act 2025 is the biggest update to the Commonwealth Electoral Act 1918 in 40 years."
+      }
+    ]
+  },
+  {
+    "id": "1ba2335a",
+    "type": "webpage",
+    "URL": "https://www.aec.gov.au/media/2025/02-21.htm",
+    "title": "\"Changes to electoral laws\"",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "The Electoral Legislation Amendment (Electoral Reform) Act 2025 received Royal Assent on, Thursday 20 February 2025."
+      },
+      {
+        "type": "quote-match",
+        "quote": "the legislative amendments are substantial – the largest in nearly 40 years for funding and disclosure."
+      }
+    ]
+  },
+  {
+    "id": "aed3aab8",
+    "type": "webpage",
+    "URL": "https://www.africanews.com/2026/06/30/senegals-national-assembly-passes-constitutional-reform-curbing-presidential-powers/",
+    "title": "Senegal's National Assembly passes constitutional reform curbing presidential powers",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "The reform strengthens parliament's powers, such as requiring the government to inform the legislature of agreements related to the exploitation of natural resources. It also expands the powers of parliamentary inquiry committees."
+      }
+    ]
+  },
+  {
     "id": "d9e4ebc0",
     "type": "webpage",
     "URL": "https://www.afrobarometer.org/about/history/",
@@ -2416,6 +3190,74 @@
       {
         "type": "quote-match",
         "quote": "professors Michael Bratton, Robert Mattes, and E. Gyimah-Boadi merge three independent survey research projects to form Afrobarometer (AB)"
+      }
+    ]
+  },
+  {
+    "id": "bdab0cc7",
+    "type": "webpage",
+    "URL": "https://www.ag.gov.au/integrity/australias-open-government-partnership",
+    "title": "Third National Action Plan (2023–25) published, renewing Australia's OGP engagement after the post-2020 dormancy",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "The Australian Government worked with civil society to develop a Third National Action Plan(NAP3), which was published on 15 December 2023 and captures an ambitious plan for open government, transparency and accountability."
+      }
+    ]
+  },
+  {
+    "id": "32ff8290",
+    "type": "webpage",
+    "URL": "https://www.ag.gov.au/rights-and-protections/australias-open-government-partnership/open-government-forum",
+    "title": "Australia's fourth Open Government Forum appointed, with co-creation of the fourth National Action Plan beginning",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "The Attorney-General appointed Forum members from those rated suitable by the panel, with successful candidates announced on 8 May 2026."
+      }
+    ]
+  },
+  {
+    "id": "90cd7a1b",
+    "type": "webpage",
+    "URL": "https://www.aljazeera.com/news/2026/7/17/israel-headed-for-october-election-as-parliament-dissolved",
+    "title": "Israel headed for October election as parliament dissolved",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "It is a rare historical milestone, marking the first time since 1988 that a Knesset has completed its legally mandated, full four-year term."
+      }
+    ]
+  },
+  {
+    "id": "2e840a23",
+    "type": "webpage",
+    "URL": "https://www.aman-palestine.org/en/about-aman/5.html",
+    "title": "Established as a Palestinian anti-corruption coalition",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "AMAN was established in 2000 as a civil society organization that seeks to combat corruption and promote integrity, transparency and accountability in the Palestinian society."
+      },
+      {
+        "type": "quote-match",
+        "quote": "In 2006, the Coalition was accredited as a national chapter for Transparency International."
+      },
+      {
+        "type": "quote-match",
+        "quote": "In partnership with a group of civil society organisations, the Integrity School was held for the first time in the West Bank and Gaza Strip in 2017."
+      }
+    ]
+  },
+  {
+    "id": "f7e72789",
+    "type": "webpage",
+    "URL": "https://www.bbc.com/news/articles/cm2lgnze013o",
+    "title": "How will votes at 16 and changes to voter ID work?",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Legislation which will let 1.7 million 16 and 17-year-olds vote at the next general election is beginning its journey through Parliament."
       }
     ]
   },
@@ -2458,6 +3300,18 @@
       {
         "type": "quote-match",
         "quote": "la Primaire populaire sera la plus grosse élection politique jamais réalisée au jugement majoritaire"
+      }
+    ]
+  },
+  {
+    "id": "54f8a29d",
+    "type": "webpage",
+    "URL": "https://www.britannica.com/topic/slavery-sociology/Slave-societies",
+    "title": "\"Slavery\"",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "At the time of Classical Athens (the 5th through the 3rd century bce) slaves constituted about a third of the population."
       }
     ]
   },
@@ -2509,7 +3363,7 @@
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "It relocated to the University of Canberra in 2014, where it has since been consolidated and expanded through the collective efforts of its members."
+        "quote": "It relocated to the University of Canberra in 2014, where it has since been consolidated and expanded through the collective efforts of its members"
       }
     ]
   },
@@ -2534,6 +3388,42 @@
       {
         "type": "quote-match",
         "quote": "設立年月日 2013年10月25日"
+      }
+    ]
+  },
+  {
+    "id": "95cbeef5",
+    "type": "webpage",
+    "URL": "https://www.coe.int/en/web/congress/-/deliberative-democracy-in-ukraine-congress-to-support-three-citizens-assemblies-in-2025-2026",
+    "title": "Deliberative democracy in Ukraine: Congress to support three citizens' assemblies in 2025-2026",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "the Obolon district of Kyiv (2025), the Rivne territorial community (2026) and the Lviv Agglomeration (2026)"
+      }
+    ]
+  },
+  {
+    "id": "eac89c83",
+    "type": "webpage",
+    "URL": "https://www.coe.int/en/web/congress/-/ukraine-s-first-metropolitan-citizens-assembly-launched-in-lviv",
+    "title": "Ukraine's first metropolitan citizens' assembly launched in Lviv",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "On 13–14 June 2026, residents of the Lviv Agglomeration gathered in Lviv for the first session of a citizens’ assembly focused on a shared challenge for this metropolitan area’s 13 communities: how to preserve and use water resources sustainably."
+      }
+    ]
+  },
+  {
+    "id": "2e38c7a4",
+    "type": "webpage",
+    "URL": "https://www.columbusnavigator.com/columbus-participatory-budgeting-program/",
+    "title": "Columbus Launches Participatory Budgeting Program",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "The pilot program sets aside $9 million from the city’s capital budget, with $1 million allocated to each of Columbus’ nine City Council districts."
       }
     ]
   },
@@ -2630,6 +3520,30 @@
           "suffix": "We support better decisions and policy-making, by advising governments and organisations on best-practice deliberative engagement processes, and by d",
           "text": "At DemocracyCo we create opportunities for citizens to participate constructively in the decisions that matter to them. We support better decisions and policy-making, by advising governments and organisations on best-practice deliberative engagement processes, and by designing planning and facilitating respectful dialogue and collaboration."
         }
+      }
+    ]
+  },
+  {
+    "id": "69e7649c",
+    "type": "webpage",
+    "URL": "https://www.democracywithoutborders.org/12106/campaign-for-a-un-world-citizens-initiative-launched-in-new-york/",
+    "title": "Co-launched the Campaign for a UN World Citizens' Initiative at a meeting opposite the UN headquarters in New York",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "The Campaign for the World Citizens' Initiative was formally launched at a meeting opposite the UN's headquarters in New York on Thursday, 14 November 2019."
+      }
+    ]
+  },
+  {
+    "id": "eb6496c0",
+    "type": "webpage",
+    "URL": "https://www.democracywithoutborders.org/unpa-campaign/",
+    "title": "Campaign for a UN Parliamentary Assembly",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Democracy Without Borders coordinates the campaign for a UNPA supported by numerous civil society organizations, as well as individuals from 150 countries, among them over 1,600 current and former members of parliament"
       }
     ]
   },
@@ -2733,7 +3647,7 @@
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "The Hon Stephen Charles AO QC and Danielle Wood (CEO, Grattan Institute) to lead a timely conversation about the state of Australian politics and democracy and how we might let the sunshine in and strengthen public integrity."
+        "quote": "The Hon Stephen Charles AO QC (Centre for Public Integrity; former Victoria Court of Appeal judge) and Danielle Wood (CEO, Grattan Institute) to lead a timely conversation about the state of Australian politics and democracy and how we might let the sunshine in and strengthen public integrity."
       }
     ]
   },
@@ -2745,7 +3659,7 @@
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "This Folio Conversation with Mary Crooks and Lauren Crystal will help us unpack the Voice Referendum, drawing on their direct experience in community conversations across the country."
+        "quote": "This Folio Conversation with Mary Crooks and Lauren Crystal will help us unpack the Voice Referendum, drawing on their direct experience in community conversations across the country and personal reflections on the Yes and No campaigns, the referendum outcome, and democracy in Australia."
       }
     ]
   },
@@ -2810,6 +3724,34 @@
     ]
   },
   {
+    "id": "a2d8d45d",
+    "type": "webpage",
+    "URL": "https://www.hkdc.us/biannual-report",
+    "title": "Founded in Washington, DC amid the 2019 Hong Kong protests",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "It was founded on September 17, 2019, amid massive protests in Hong Kong that saw millions of people marching on the streets in opposition to an unpopular plan to establish extradition arrangements between Hong Kong and China proposed by then-Chief Executive Carrie Lam."
+      },
+      {
+        "type": "quote-match",
+        "quote": "the HKDC team pushed for the successful passage of several landmark pieces of legislation: the Hong Kong Human Rights and Democracy Act of 2019, the PROTECT Hong Kong Act of 2019, and the Hong Kong Autonomy Act of 2020."
+      }
+    ]
+  },
+  {
+    "id": "aed253e0",
+    "type": "webpage",
+    "URL": "https://www.hrlc.org.au/news/2023-1-31-election-data-a-reminder-that-albanese-government-must-regulate-money-in-politics/",
+    "title": "\"Election data a reminder that Albanese government must regulate money in politics\"",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "The Human Rights Law Centre and the #OurDemocracy campaign both made submissions supporting three key reforms: To improve transparency of political donations and election spending through lowering the disclosure threshold, requiring real time disclosure, and closing loopholes that allow millions in financial contributions to go undisclosed;"
+      }
+    ]
+  },
+  {
     "id": "16b969bc",
     "type": "webpage",
     "URL": "https://www.icnl.org/resources/civic-freedom-monitor/rwanda",
@@ -2834,6 +3776,18 @@
       {
         "type": "quote-match",
         "quote": "In 2011, Oregon state legislators sponsored House Bill 2634 which made the Citizens’ Initiative Review (CIR) process an official and permanent part of Oregon’s elections"
+      }
+    ]
+  },
+  {
+    "id": "df6af73f",
+    "type": "webpage",
+    "URL": "https://www.inmotionmagazine.com/global/rsb_int_esp.html",
+    "title": "CIDECI founded in San Cristóbal de las Casas, Chiapas",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Este centro nace el 24 de agosto de 1989 hace 16 años."
       }
     ]
   },
@@ -2874,6 +3828,30 @@
     ]
   },
   {
+    "id": "f7fdcac3",
+    "type": "webpage",
+    "URL": "https://www.ipsnews.net/2026/08/pakistans-crackdown-on-journalists-comes-under-heavy-fire/",
+    "title": "Pakistan's Crackdown on Journalists Comes Under Heavy Fire",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "acts against the ideology, sovereignty, security or public order of Pakistan"
+      }
+    ]
+  },
+  {
+    "id": "93be187f",
+    "type": "webpage",
+    "URL": "https://www.jornada.com.mx/2006/01/03/index.php?article=003n1pol&section=politica",
+    "title": "La Otra Campaña holds its first public encounter (delegate Zero) at Unitierra-Cideci",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "la otra campaña dio inicio práctico esta mañana con el primer encuentro del delegado Zero en las instalaciones de Unitierra-Cideci (Centro Indígena de Estudios y Capacitación Integral), en las afueras de esta ciudad."
+      }
+    ]
+  },
+  {
     "id": "59283583",
     "type": "webpage",
     "URL": "https://www.labsus.org/chi-siamo/",
@@ -2898,6 +3876,18 @@
       {
         "type": "quote-match",
         "quote": "contributing to formulating the 2006 Boutros draft electoral law"
+      }
+    ]
+  },
+  {
+    "id": "fb54c43c",
+    "type": "webpage",
+    "URL": "https://www.localgovernment.vic.gov.au/__data/assets/word_doc/0027/167913/Local-Government-Act-2020-Principles-Community-Engagement.docx",
+    "title": "\"Local Government Act 2020 — Principles: Community Engagement\"",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Councils must, at a minimum, apply their community engagement policy in the development of the following:"
       }
     ]
   },
@@ -2934,6 +3924,46 @@
       {
         "type": "quote-match",
         "quote": "Founded in 2011, Ethelo is dedicated to advancing new forms of democracy using internet technology."
+      }
+    ]
+  },
+  {
+    "id": "a8406423",
+    "type": "webpage",
+    "URL": "https://www.mcguinnessinstitute.org/about-us/history/",
+    "title": "Founded by Wendy McGuinness as the Sustainable Future Institute",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Our 2012 name change was for several reasons."
+      },
+      {
+        "type": "quote-match",
+        "quote": "When Wendy started the McGuinness Institute in 2004, we called it the Sustainable Future Institute."
+      }
+    ]
+  },
+  {
+    "id": "78af4b79",
+    "type": "webpage",
+    "URL": "https://www.mcguinnessinstitute.org/research-projects/civics-nz/",
+    "title": "CivicsNZ research project begins with a report on Māori representation in Parliament",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "CivicsNZ began in 2010 with the publication of Report 8: Effective Māori Representation in Parliament – Working towards a National Sustainable Development Strategy (2010)."
+      }
+    ]
+  },
+  {
+    "id": "f7f84753",
+    "type": "webpage",
+    "URL": "https://www.miragenews.com/lviv-assembly-yields-19-water-protection-1710540/",
+    "title": "Lviv Assembly Yields 19 Water Protection Proposals",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Over three intensive sessions of learning, deliberation and joint work, local residents collaborated with experts to co-design 19 practical recommendations, which have been delivered to the local authorities of the Agglomeration's 13 communities."
       }
     ]
   },
@@ -3015,7 +4045,7 @@
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "Iain Walker is Executive Director of the newDemocracy Foundation (nDF) in Australia, a role he has held since 2011,"
+        "quote": "Iain Walker is Executive Director of the newDemocracy Foundation (nDF) in Australia, a role he has held since 2011."
       }
     ]
   },
@@ -3068,6 +4098,18 @@
     ]
   },
   {
+    "id": "23fda5a7",
+    "type": "webpage",
+    "URL": "https://www.npr.org/2021/01/12/956020789/israeli-human-rights-group-says-the-country-pursues-nondemocratic-apartheid-regi",
+    "title": "\"Israeli Human Rights Group Says The Country Pursues Nondemocratic, 'Apartheid Regime'\"",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "One organizing principle lies at the base of a wide array of Israeli policies: advancing and perpetuating the supremacy of one group – Jews – over another – Palestinians,"
+      }
+    ]
+  },
+  {
     "id": "5975d716",
     "type": "webpage",
     "URL": "https://www.oaf.org.au/2022/03/23/senator-for-nsw-andrew-bragg-threatens-openaustralia-foundation-with-legal-action/",
@@ -3105,7 +4147,7 @@
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "over 155,000 members of Podemos voted online to renew the party leadership,"
+        "quote": "over 155,000 members of Podemos voted online to renew the party leadership"
       }
     ]
   },
@@ -3118,6 +4160,18 @@
       {
         "type": "quote-match",
         "quote": "Australia Letter of Intent to Join OGP 30th November 2015"
+      }
+    ]
+  },
+  {
+    "id": "bc0de320",
+    "type": "webpage",
+    "URL": "https://www.parliament.vic.gov.au/get-involved/inquiries/electoralsysteminquiry/reports",
+    "title": "reports page",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "That, following the 2026 election, a new process be established to consider and negotiate different views about the best electoral structure for Victoria’s Upper House and make a recommendation if it reaches general agreement. The independent process could be: an expert panel, a citizens’ assembly, a constitutional convention."
       }
     ]
   },
@@ -3198,16 +4252,7 @@
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "vTaiwan has always demonstrated how civic communities can innovate in democratic participation by combining open-source platforms, commercial tools, and AI.",
-        "status": "MATCH",
-        "last-verified": "2026-08-12",
-        "verified-by": "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)",
-        "context": {
-          "prefix": "ntribute online. The deliberation discussions were conducted primarily in Mandarin, with limited English interpretation provided by volunteers.",
-          "sha256": "302a97ff4a746653f8e489f47e644e637a3589acb7c57ab81e73833b181f7df4",
-          "suffix": "Currently, the community integrates tools such as Pol.is for large-scale opinion mapping, Mentimeter for interactive delibera",
-          "text": "vTaiwan has always demonstrated how civic communities can innovate in democratic participation by combining open-source platforms, commercial tools, and AI. Currently, the community integrates tools such as"
-        }
+        "quote": "vTaiwan has always demonstrated how civic communities can innovate in democratic participation by combining open-source platforms, commercial tools, and AI. Currently, the community integrates tools such as Pol.is for large-scale opinion mapping"
       }
     ]
   },
@@ -3228,6 +4273,30 @@
     ]
   },
   {
+    "id": "d707e84b",
+    "type": "webpage",
+    "URL": "https://www.prediki.com/meta/en/Legal-information",
+    "title": "Prediki Prediction Markets GmbH registered in Vienna",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Registrar: Commercial Court of Vienna, FN 373457b, dated 30 December 2011"
+      }
+    ]
+  },
+  {
+    "id": "979d38b1",
+    "type": "webpage",
+    "URL": "https://www.prediki.com/meta/en/Prediction-Markets-A-Better-Alternative/",
+    "title": "Publishes study showing its wahlfieber.com markets beat pollsters after Germany's 2016 state elections",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "The prediction error on Prediki’s platform wahlfieber.com for example, only amounted to 1.87 percentage points, the average error of all German political stock markets came to an excellent 2.65 percentage points."
+      }
+    ]
+  },
+  {
     "id": "13992436",
     "type": "webpage",
     "URL": "https://www.pressenza.com/de/2017/12/demokratie-echtzeit-neue-app-democracy-erfolgreich-crowdfinanziert/",
@@ -3240,6 +4309,18 @@
       {
         "type": "quote-match",
         "quote": "der erfolgreiche Abschluss ihres initialen Crowdfundings sicherte ihnen gut 35.000 € zweckgebundenes Startkapital für die Programmierung einer ersten Version der App"
+      }
+    ]
+  },
+  {
+    "id": "532f34a5",
+    "type": "webpage",
+    "URL": "https://www.prnewswire.com/news-releases/eiu-democracy-index-2025-democracy-stabilises-after-eight-years-of-decline-302734863.html",
+    "title": "EIU Democracy Index 2025: democracy stabilises after eight years of decline",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "the average score in the 2025 Democracy Index rose less than a half of a percent from 5.17 to 5.19"
       }
     ]
   },
@@ -3413,7 +4494,7 @@
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "59% of Mancunians support the proposal for a Greater Manchester citizens' assembly"
+        "quote": "59% of Mancunians support the proposal for a Greater Manchester citizens’ assembly"
       }
     ]
   },
@@ -3466,6 +4547,30 @@
     ]
   },
   {
+    "id": "4799a6f6",
+    "type": "webpage",
+    "URL": "https://www.strongercharities.org.au/2025/02/11/media-release-charities-call-for-critical-amendments-to-the-electoral-reform-bill/",
+    "title": "\"MEDIA RELEASE: Charities call for critical amendments to the Electoral Reform Bill\"",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Charities aren’t the same as political parties. We don’t make laws, we can’t form a government, and we’re legally bound to pursue the public interest."
+      }
+    ]
+  },
+  {
+    "id": "b8ee55ec",
+    "type": "webpage",
+    "URL": "https://www.taipeitimes.com/News/feat/archives/2024/10/19/2003825522",
+    "title": "\"AI mediation tool may help reduce culture war rifts, say researchers\"",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "the Habermas Machine does not offer participants the chance to explain their feelings, and hence develop empathy with those of a different view"
+      }
+    ]
+  },
+  {
     "id": "4de07bf7",
     "type": "webpage",
     "URL": "https://www.transparency.org.nz/our-story",
@@ -3494,6 +4599,18 @@
     ]
   },
   {
+    "id": "73ac9921",
+    "type": "webpage",
+    "URL": "https://www.v-dem.net/news/press-release-democratic-backsliding-reaches-western-democracies-with-us-decline-unprecedented/",
+    "title": "Press Release: Democratic Backsliding Reaches Western Democracies, with U.S. Decline \"Unprecedented\"",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Nearly a quarter of the world’s nations are going through democratic backsliding, or autocratization, in 2025, and six out of the ten new autocratizing countries identified in the 2026 Democracy Report are in Europe and North America."
+      }
+    ]
+  },
+  {
     "id": "755d8d97",
     "type": "webpage",
     "URL": "https://www.wedodemocracy.dk/event/join-a-democracy-fitness-trainer-camp-in-copenhagen/",
@@ -3518,6 +4635,18 @@
     ]
   },
   {
+    "id": "e537c782",
+    "type": "webpage",
+    "URL": "https://www.whitehouse.senate.gov/news/release/whitehouse-grassley-issue-statement-on-treasury-departments-final-rule-dismantling-key-element-of-corporate-transparency-act/",
+    "title": "Whitehouse, Grassley Issue Statement on Treasury Department's Final Rule Dismantling Key Element of Corporate Transparency Act",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "The Treasury Department’s final rule exempting U.S. based companies from the Corporate Transparency Act’s reporting requirements undermines the clear intent of the law."
+      }
+    ]
+  },
+  {
     "id": "afe1df9c",
     "type": "webpage",
     "URL": "https://www.wisdomandaction.com.au/",
@@ -3538,6 +4667,18 @@
       {
         "type": "quote-match",
         "quote": "Democracy Earth Founded: 2015 Batch: Winter 2015 Team Size: 2 Status: Active Location: Madrid, Spain Founders Pia Mancini Founder Pia Mancini Founder Santiago Siri Founder/President Santiago Siri Founder/President Guido Vilariño Founder"
+      }
+    ]
+  },
+  {
+    "id": "bf85909a",
+    "type": "webpage",
+    "URL": "https://www.ynetnews.com/article/r17pwltnmg",
+    "title": "Thousands rally against Netanyahu government's last-minute legislative blitz",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Fifty-eight coalition lawmakers voted for legislation that creates two classes before the law — those subject to the rule of law and those who are not,"
       }
     ]
   }

@@ -27,6 +27,13 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
+activity:
+  dod:
+    date: 2026-08-21
+    note: 'Defunct-status recheck: Wayback CDX confirms archived snapshots of the
+      original site; no evidence of revival found'
+    checked: 2026-08-21
+last_checked: '2026-08-21'
 ---
 
 Golos (Russian: Голос, meaning "Voice" or "Vote") was Russia's leading independent election monitoring organisation, founded in 2000. Over 25 years, it trained volunteer observers, documented thousands of alleged electoral violations, and operated a publicly accessible "Map of Violations" platform that aggregated citizen reports during election periods.

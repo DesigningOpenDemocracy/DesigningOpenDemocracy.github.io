@@ -3,13 +3,20 @@ title: PeopleCount
 type: platform
 status: inactive
 country: US
-website: https://web.archive.org/web/*/https://peoplecount.org/
+website: https://peoplecount.org/
 summary: A US civic technology project focused on restoring political accountability
   through structured many-to-many communication between citizens and representatives.
 concepts:
 - direct-democracy
 - accountability-sink
 - consensus-mapping
+activity:
+  dod:
+    date: 2026-08-21
+    note: 'Site liveness recheck: website live but project dormant (no recent activity);
+      website field corrected from Wayback URL to live URL per defunct-orgs-only convention'
+    checked: 2026-08-21
+last_checked: '2026-08-21'
 contributors:
 - RandStrauss
 - Usmaan

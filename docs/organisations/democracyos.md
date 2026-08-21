@@ -15,6 +15,13 @@ concepts:
 related_orgs:
 - vtaiwan
 - democracy-earth
+activity:
+  dod:
+    date: 2026-08-21
+    note: 'Defunct-status recheck: Wayback CDX confirms archived snapshots of the
+      original site; no evidence of revival found'
+    checked: 2026-08-21
+last_checked: '2026-08-21'
 ---
 
 DemocracyOS was an open-source web platform for democratic deliberation and voting, developed in Buenos Aires from 2012 by the Net Party (Partido de la Red) — the same group that later founded Democracy Earth Foundation. The software allowed governments and organisations to publish proposals, host structured debate, and collect participant votes, with a clean interface designed for non-specialist users.

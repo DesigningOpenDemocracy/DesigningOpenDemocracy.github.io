@@ -1,6 +1,6 @@
 ---
 title: Democracy Club
-type: civic-tech
+type: civic tech
 status: active
 country: GB
 website: https://democracyclub.org.uk

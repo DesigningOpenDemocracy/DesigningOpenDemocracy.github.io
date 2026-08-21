@@ -40,6 +40,13 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
+activity:
+  dod:
+    date: 2026-08-21
+    note: 'Defunct-status recheck: Wayback CDX confirms archived snapshots of the
+      original site; no evidence of revival found'
+    checked: 2026-08-21
+last_checked: '2026-08-21'
 ---
 
 SecureVote is a Sydney-based company providing blockchain-based voting infrastructure. Their platform uses a proprietary Blockchain Agnostic Scalability Layer (BASL) to enable decentralised, anonymous, and auditable elections at scale — stress-tested to 1.5 billion transactions in 24 hours.

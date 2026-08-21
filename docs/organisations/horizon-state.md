@@ -1,13 +1,15 @@
 ---
 title: Horizon State
 type: platform
-status: inactive
+status: active
 country: AU
-website: https://web.archive.org/web/*/https://horizonstate.com/
+website: https://horizonstate.com/
 logo: /assets/org-logos/horizon-state.png
 logo_bg: light
-summary: An Australian blockchain voting platform that aimed to bring secure, transparent
-  digital voting to governments and organisations. Wound down after initial pilots.
+summary: An Australian blockchain voting platform bringing secure, transparent digital
+  voting to governments and organisations. Collapsed in 2019 under legal costs, was
+  bought out by its community, and relaunched — relaunching its token in 2024 and
+  currently offering managed elections.
 concepts:
 - end-to-end-verifiable-voting-system
 - e-government
@@ -48,17 +50,47 @@ events:
   proof_level: high
   url_checked: '2026-08-12'
   notable: true
+- date: '2019-11-01'
+  title: Returned under new management after a community group purchased the platform's
+    IP assets
+  url: https://horizonstate.com/hst-faq/
+  quote: Award-winning tech company Horizon State today (1/11/2019) announced it is
+    returning under new management.
+  proof_level: high
+  url_checked: '2026-08-21'
+  notable: true
+- date: '2024-12-04'
+  title: Relaunched its token as Horizon State Token (HST) on the Base network, with
+    an airdrop to prior Decision Token holders
+  url: https://horizonstate.com/hst-token/
+  quote: Horizon State Token is a continuation of the Decision Token that came to
+    an end in 2019. We are a new ownership and management team who have airdropped
+    tokens to prior holders as goodwill.
+  proof_level: high
+  url_checked: '2026-08-21'
+  notable: false
+activity:
+  dod:
+    date: 2026-08-21
+    note: 'Status corrected inactive→active: site live (archived monthly through Jun
+      2026), community-buyout relaunch Nov 2019, HST token relaunched Dec 2024 on
+      Base; page updated with two new sourced events'
+    url: https://horizonstate.com/hst-token/
+    checked: 2026-08-21
+last_checked: '2026-08-21'
 ---
 
-Horizon State was an Australian company that built a blockchain-based voting and decision-making platform. The system used distributed ledger technology to record votes on a permanent, publicly auditable record — aiming to solve problems of vote integrity, transparency, and accessibility.
+Horizon State is an Australian company that built a blockchain-based voting and decision-making platform. The system used distributed ledger technology to record votes on a permanent, publicly auditable record — aiming to solve problems of vote integrity, transparency, and accessibility.
 
 They ran several real-world pilots, including a contract with the South Australian government to run the election for the inaugural Minister's Recreational Fishing Advisory Council, and work with The Opportunities Party in New Zealand.
 
+The original company collapsed in August 2019 under the legal costs of a lawsuit. That turned out not to be the end: a group of community members purchased the intellectual property and relaunched the platform in November 2019 under new management. In December 2024 the relaunched company issued a new Horizon State Token (HST) on the Base network — airdropped to prior Decision Token holders — and currently offers managed elections as a paid service, with a fully on-chain, self-serve voting product stated as its goal.
+
 ## Why it matters as a case study
 
-Horizon State is a useful reference point for the blockchain-in-democracy discussion. It attracted significant attention during the blockchain enthusiasm of 2017–2018, demonstrated that blockchain voting could be implemented in real government contexts, but ultimately did not achieve the scale or institutional adoption needed to sustain the company.
+Horizon State is a useful reference point for the blockchain-in-democracy discussion. It attracted significant attention during the blockchain enthusiasm of 2017–2018, demonstrated that blockchain voting could be implemented in real government contexts, collapsed under commercial rather than technical pressure, and then became one of the few platforms in this space to be resurrected by its own user community.
 
-The core lesson: technical feasibility is not the binding constraint for digital voting adoption. The challenges are political, institutional, and trust-related — blockchain's verifiability properties don't automatically translate into public confidence, and governments move slowly on changes to electoral infrastructure regardless of the technology's merits.
+The core lesson: technical feasibility is not the binding constraint for digital voting adoption. The challenges are political, institutional, and trust-related — blockchain's verifiability properties don't automatically translate into public confidence, and governments move slowly on changes to electoral infrastructure regardless of the technology's merits. Horizon State's afterlife adds a second lesson: a platform's community can outlive its company.
 
 Horizon State operated in the same ecosystem as [SecureVote](securevote.md) and in the broader orbit of the [Flux Party](flux-party.md), which also used blockchain in its voting architecture.
 

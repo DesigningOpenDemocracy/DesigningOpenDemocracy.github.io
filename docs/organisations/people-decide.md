@@ -17,6 +17,13 @@ location:
   longitude: 151.2093
   name: Australia
   precision: city
+activity:
+  dod:
+    date: 2026-08-21
+    note: 'Defunct-status recheck: Wayback CDX confirms archived snapshots of the
+      original site; no evidence of revival found'
+    checked: 2026-08-21
+last_checked: '2026-08-21'
 ---
 
 People Decide (PD) was an Australian participatory democracy platform and associated political party. It aimed to give citizens a direct role in national legislation and local government decisions through an online voting platform.

@@ -1,13 +1,14 @@
 ---
 title: Open Government Partnership — Australia
 type: governance
-status: inactive
+status: active
 country: AU
-website: https://web.archive.org/web/*/https://ogpau.pmc.gov.au
-summary: Australia's participation in the international Open Government Partnership,
-  producing a National Action Plan 2016–18 with commitments on transparency, citizen
-  empowerment, anti-corruption, and technology in governance — the dedicated site
-  is no longer live.
+website: https://www.ag.gov.au/integrity/australias-open-government-partnership
+summary: Australia's participation in the international Open Government Partnership.
+  Dormant after its second action plan (2018–20), participation was renewed with a
+  third National Action Plan (2023–25) on transparency, anti-corruption, and technology
+  in governance — now hosted by the Attorney-General's Department, with a fourth Open
+  Government Forum appointed in 2026.
 concepts:
 - radical-transparency
 - e-government
@@ -50,15 +51,44 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
+- date: '2023-12-15'
+  title: Third National Action Plan (2023–25) published, renewing Australia's OGP
+    engagement after the post-2020 dormancy
+  url: https://www.ag.gov.au/integrity/australias-open-government-partnership
+  quote: The Australian Government worked with civil society to develop a Third National
+    Action Plan(NAP3), which was published on 15 December 2023 and captures an ambitious
+    plan for open government, transparency and accountability.
+  proof_level: high
+  url_checked: '2026-08-21'
+  notable: true
+- date: '2026-05-08'
+  title: Australia's fourth Open Government Forum appointed, with co-creation of the
+    fourth National Action Plan beginning
+  url: https://www.ag.gov.au/rights-and-protections/australias-open-government-partnership/open-government-forum
+  quote: The Attorney-General appointed Forum members from those rated suitable by
+    the panel, with successful candidates announced on 8 May 2026.
+  proof_level: high
+  url_checked: '2026-08-21'
+  notable: true
+activity:
+  dod:
+    date: 2026-08-21
+    note: 'Status corrected inactive→active: OGP participation renewed — NAP3 published
+      Dec 2023, fourth Open Government Forum appointed May 2026 under Attorney-General''s
+      Department'
+    url: https://www.ag.gov.au/integrity/australias-open-government-partnership
+    checked: 2026-08-21
+last_checked: '2026-08-21'
 ---
 
-Australia participated in the [Open Government Partnership](https://www.opengovpartnership.org/) (OGP) — an international multilateral initiative in which governments commit to concrete reforms on transparency, civic participation, and accountability. Australia's first National Action Plan (2016–18) comprised 15 commitments across four themes: transparency, citizen empowerment, anti-corruption, and technology to strengthen governance.
+Australia participates in the [Open Government Partnership](https://www.opengovpartnership.org/) (OGP) — an international multilateral initiative in which governments commit to concrete reforms on transparency, civic participation, and accountability. Australia's first National Action Plan (2016–18) comprised 15 commitments across four themes: transparency, citizen empowerment, anti-corruption, and technology to strengthen governance.
 
-The dedicated OGP Australia site (ogpau.pmc.gov.au) was hosted by the Department of the Prime Minister and Cabinet. Australia's OGP membership lapsed after 2018 and was not renewed under subsequent governments.
+The original dedicated OGP Australia site (ogpau.pmc.gov.au) was hosted by the Department of the Prime Minister and Cabinet. Participation lapsed after the second action plan (2018–20) went unimplemented, but was renewed in 2023: a third National Action Plan (2023–25) was co-created with civil society and published in December 2023, stewardship moved to the Attorney-General's Department, and a fourth Open Government Forum — with equal government and civil society representation — was appointed in May 2026 to begin co-creating the next plan. The international movement's 2026 results report on Australia noted seven of eight NAP3 commitments completed or substantially completed.
 
 ## Links
 
-- Archive: [ogpau.pmc.gov.au (Wayback Machine)](https://web.archive.org/web/*/https://ogpau.pmc.gov.au)
+- Current program: [ag.gov.au — Australia's Open Government Partnership](https://www.ag.gov.au/integrity/australias-open-government-partnership)
+- Archive of the original site: [ogpau.pmc.gov.au (Wayback Machine)](https://web.archive.org/web/*/https://ogpau.pmc.gov.au)
 - International body: [opengovpartnership.org](https://www.opengovpartnership.org/)
 
 ## See also

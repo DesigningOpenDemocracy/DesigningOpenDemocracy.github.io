@@ -32,6 +32,13 @@ events:
   proof_level: high
   url_checked: '2026-08-13'
   notable: false
+activity:
+  dod:
+    date: 2026-08-21
+    note: 'Defunct-status recheck: Wayback CDX confirms archived snapshots of the
+      original site; no evidence of revival found'
+    checked: 2026-08-21
+last_checked: '2026-08-21'
 ---
 
 The Coalition of Everyone (CoE) was founded by Willow Berzin with the aim of making participatory and deliberative democracy part of everyday civic life — not just formal government processes. It ran citizens' assemblies, participatory workshops, and community engagement processes across Australia.
