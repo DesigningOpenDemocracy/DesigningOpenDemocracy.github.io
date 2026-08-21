@@ -26,6 +26,12 @@ Typical uses:
 - Any research trail a future session (human or AI) would benefit from
   finding, without it needing to clear the bar of public-facing prose.
 
+**Before assessing a new organisation for the Democracy Landscape, check
+`orgs-not-included.md`** — a running registry of orgs already considered
+and rejected, with a typed reason (mirroring the framework's disqualifiers
+plus its scope-exclusions) and a link to the fuller reasoning note for
+any non-trivial call. Saves re-litigating the same org from scratch.
+
 ## Who writes here
 
 Interactive Claude Code sessions, and — per `HEARTBEAT.md`'s Push
