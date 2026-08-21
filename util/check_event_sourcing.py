@@ -44,6 +44,12 @@ ORGS_DIR = os.path.join(DOCS_DIR, "organisations")
 SKIP_FILES = {"index.md"}
 MIN_SOURCE_LENGTH = 20
 STALE_CHECK_DAYS = 365
+# Informational coverage nudge, not a gate: an active org with this many or
+# fewer events has a history timeline too sparse to tell its story (see the
+# "Orgs with no events" line for the zero end of the same spectrum). The fix
+# is editorial — researching and adding sourced milestones — not something a
+# linter can do, so this is reported without affecting the exit code.
+THIN_HISTORY_MAX_EVENTS = 1
 
 
 def parse_date(val):
@@ -213,6 +219,7 @@ def main():
     pages = load_org_pages(args.slug)
 
     no_events = []
+    thin_history = []
     unsourced = 0
     vague_source = 0
     weak_url = 0
@@ -230,6 +237,9 @@ def main():
         if not events:
             no_events.append(p["title"])
             continue
+
+        if p["post"].metadata.get("status") == "active" and len(events) <= THIN_HISTORY_MAX_EVENTS:
+            thin_history.append((p["title"], len(events)))
 
         changed = False
         for e in events:
@@ -346,6 +356,8 @@ def main():
         print(f"High/medium-proof events never checked or unchecked in {STALE_CHECK_DAYS}+ days: {stale_checked}  (citation may have drifted — see util/check_event_urls.py and util/check_fragments.py)")
     if no_events:
         print(f"Orgs with no events (info only): {len(no_events)}")
+    if thin_history:
+        print(f"Active orgs with {THIN_HISTORY_MAX_EVENTS} or fewer events (thin history, info only): {len(thin_history)}")
 
     if has_issues:
         print(f"\n{no_proof} event(s) need evidence (quote, note, or proof_warning). Add one to each.")
