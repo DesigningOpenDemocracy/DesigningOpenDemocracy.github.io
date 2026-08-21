@@ -111,12 +111,12 @@ Folio sits in similar territory to DOD's own mission — nonpartisan, citizen-fa
 - [Deliberative Democracy](../concepts/deliberative-democracy.md)
 - [Collective Intelligence](../concepts/collective-intelligence.md)
 
-[^home]: ["Folio Collective Limited — Home"](https://folio.org.au/), accessed 9 August 2026.
+[^home]: ["Folio Collective Limited — Home"](https://folio.org.au/), accessed 9 August 2026. <!-- unquoted: legacy: predates the unquoted: justification convention (added 2026-08-21); not individually reviewed -->
 
-[^events]: ["Folio Collective Limited — Events"](https://folio.org.au/events), accessed 9 August 2026.
+[^events]: ["Folio Collective Limited — Events"](https://folio.org.au/events), accessed 9 August 2026. <!-- unquoted: legacy: predates the unquoted: justification convention (added 2026-08-21); not individually reviewed -->
 
-[^join-us]: ["Folio Collective Limited — Join us"](https://folio.org.au/join-us), accessed 9 August 2026.
+[^join-us]: ["Folio Collective Limited — Join us"](https://folio.org.au/join-us), accessed 9 August 2026. <!-- unquoted: legacy: predates the unquoted: justification convention (added 2026-08-21); not individually reviewed -->
 
-[^team]: ["The Folio Team"](https://folio.org.au/Folio-Team), accessed 9 August 2026.
+[^team]: ["The Folio Team"](https://folio.org.au/Folio-Team), accessed 9 August 2026. <!-- unquoted: legacy: predates the unquoted: justification convention (added 2026-08-21); not individually reviewed -->
 
-[^event-state-of-nature]: ["State of Nature - Have we fallen out of love with nature?"](https://folio.org.au/event-6451621), Folio Collective event page, accessed 9 August 2026.
+[^event-state-of-nature]: ["State of Nature - Have we fallen out of love with nature?"](https://folio.org.au/event-6451621), Folio Collective event page, accessed 9 August 2026. <!-- unquoted: legacy: predates the unquoted: justification convention (added 2026-08-21); not individually reviewed -->

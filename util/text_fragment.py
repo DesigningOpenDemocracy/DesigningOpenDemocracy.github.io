@@ -409,12 +409,34 @@ def spacing_autofix(page_text, quote_text):
 FOOTNOTE_DEF_RE = re.compile(r"^\[\^([^\]]+)\]:\s*(.*)$")
 QUOTED_PHRASE_RE = re.compile(r'["“](.+?)["”]')
 MD_LINK_RE = re.compile(r"\[([^\]]*)\]\(((?:[^()]|\([^()]*\))+)\)")
+UNQUOTED_REASON_RE = re.compile(r"<!--\s*unquoted:\s*([\w-]+):\s*(.+?)\s*-->")
 
 
 def parse_footnote_def(line):
     """Match a footnote-definition line ([^label]: body text...).
     Returns (label, body_text), or None if the line isn't one."""
     m = FOOTNOTE_DEF_RE.match(line)
+    return (m.group(1), m.group(2)) if m else None
+
+
+def parse_unquoted_reason(body_text):
+    """Match a trailing `<!-- unquoted: type: reason -->` annotation on a
+    footnote-definition line — the required justification for a footnote
+    that cites a source without the machine-verifiable quote: convention
+    (see footnote_citation()). Returns (type, reason) or None if absent.
+
+    `type` is deliberately an open vocabulary rather than a hard-coded
+    enum, same spirit as ai_assist:/origin: elsewhere in this repo (see
+    CLAUDE.md) — check_footnote_quotes.py judges whether `reason` reads
+    as a substantive explanation, not whether `type` is from a fixed
+    list. Established values in use: legacy (predates this convention,
+    not individually reviewed), bot-blocked, paywalled, no-single-sentence,
+    multi-source, non-web-source, not-yet-verified.
+
+    Avoid quote characters (\" or “/”) inside the reason text — they can
+    be misread as a verbatim excerpt by footnote_citation()'s quote
+    regex, which runs over the same line."""
+    m = UNQUOTED_REASON_RE.search(body_text)
     return (m.group(1), m.group(2)) if m else None
 
 

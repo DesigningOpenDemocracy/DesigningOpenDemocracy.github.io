@@ -22,3 +22,13 @@ if [ -n "$STAGED_ORGS" ]; then
     done
     echo "→ Done."
 fi
+
+# Any staged docs page (not just org pages) can carry prose footnotes, so
+# this check runs whenever any docs/**/*.md is staged — not gated behind
+# STAGED_ORGS above.
+STAGED_DOCS=$(git diff --cached --name-only --diff-filter=ACM -- 'docs/**/*.md' 2>/dev/null || true)
+
+if [ -n "$STAGED_DOCS" ]; then
+    echo "→ Checking footnote citations are quoted or justified (local/offline, no network)..."
+    python util/check_footnote_quotes.py
+fi
