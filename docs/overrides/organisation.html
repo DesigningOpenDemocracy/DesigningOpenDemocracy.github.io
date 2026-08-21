@@ -142,11 +142,18 @@
 {%- if has_details %}</details>{% else %}</div>{% endif %}
 {%- endif %}
   {{ super() }}
+{%- set event_type_icons = {
+  'conference': '🎤', 'workshop': '🛠️', 'meetup': '🤝',
+  'meeting': '📋', 'assembly': '🏛️', 'lecture': '🎓',
+  'launch': '🚀', 'rally': '📢', 'milestone': '📌',
+  'deadline': '⏰'
+} %}
 {%- macro render_event(e) -%}
   {%- set href = e.url | with_fragment(e.quote) if e.url else none %}
   {%- set archive_href = e.url | archive_url_for if e.url else none %}
   <li class="{% if e.notable %}org-event--notable{% endif %}">
     <span class="org-event-date">{{ e.date }}{% if e.end_date %}–{{ e.end_date }}{% endif %}</span>
+    {%- if e.type %}<span class="org-event-type">{{ event_type_icons.get(e.type, '📅') }} {{ e.type }}</span>{% endif %}
     <span class="org-event-title">{% if href %}<a href="{{ href }}" target="_blank" rel="noopener">{{ e.title }}</a>{% else %}{{ e.title }}{% endif %}</span>
     {%- if e.coverage_url %}<span class="org-event-coverage"> — <a href="{{ e.coverage_url }}">DOD coverage</a></span>{%- endif %}
     {%- if e.proof_level or e.url or e.source %}

@@ -1836,6 +1836,15 @@
   color: var(--md-default-fg-color--light);
   margin-bottom: 0.1em;
 }
+.org-events-timeline .org-event-type {
+  display: inline-block;
+  font-size: 0.7em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--md-default-fg-color--light);
+  margin-right: 0.4em;
+}
 .org-events-timeline .org-event-title {
   display: block;
 }
