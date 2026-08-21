@@ -16,6 +16,7 @@ from quote: instead makes that drift structurally impossible.
 """
 
 import difflib
+import html
 import json
 import os
 import re
@@ -25,6 +26,49 @@ from urllib.parse import unquote, urlparse, urlunparse
 ARCHIVE_CACHE_PATH = os.path.join(
     os.path.dirname(__file__), "..", "docs", "data", "event-evidence-cache.json"
 )
+
+_BLOCK_TAGS = [
+    "p", "div", "section", "article",
+    "h1", "h2", "h3", "h4", "h5", "h6",
+    "blockquote", "pre", "header", "footer", "main", "aside", "nav",
+    "figure", "figcaption", "br", "hr",
+    "li", "ol", "ul", "dl", "dt", "dd", "table", "tr",
+]
+_BLOCK_PATTERN = re.compile(
+    r"</?(" + "|".join(_BLOCK_TAGS) + r")\b[^>]*>",
+    re.IGNORECASE
+)
+_PARAGRAPH_DELIM = "\x00P\x00"
+
+
+def html_to_text(raw_html):
+    """Convert raw HTML into flat, whitespace-normalised plain text with
+    paragraph breaks preserved as blank lines. This is the same extraction
+    check_fragments.py's _fetch_page_text() runs on every live fetch, and
+    (via util/import_manual_dump.py) on a manually browser-saved snapshot
+    of the same kind of page — both paths share this one implementation so
+    a quote can't verify against a live fetch and then mismatch against a
+    manual dump of the same markup (or vice versa) purely because two
+    extractors disagreed on something as basic as tag-stripping.
+
+    <script>/<style> bodies are dropped before tag-stripping — a bare
+    <[^>]+> pass only removes the tags themselves, leaving inline
+    JSON-LD/page-props payloads in place as "text", which has produced
+    false AMBIGUOUS matches in practice (a quote appearing once in visible
+    prose and again inside an embedded JSON blob). html.unescape() decodes
+    entities (&#8211;, &amp;, &nbsp;, ...) left behind by tag-stripping.
+    """
+    no_scripts = re.sub(r"<(script|style)\b[^>]*>.*?</\1>", " ", raw_html, flags=re.S | re.I)
+    with_paragraphs = _BLOCK_PATTERN.sub(" " + _PARAGRAPH_DELIM + " ", no_scripts)
+    no_tags = re.sub(r"<[^>]+>", " ", with_paragraphs)
+    text = re.sub(r"\s+", " ", html.unescape(no_tags))
+    # An inline tag boundary immediately before punctuation (e.g.
+    # "Wright</a>,") becomes "Wright ," above — a space that was never
+    # actually rendered. Drop it so tag boundaries never introduce
+    # punctuation spacing that didn't exist in the rendered page.
+    text = re.sub(r"\s+([,.;:!?)])", r"\1", text)
+    text = text.replace(_PARAGRAPH_DELIM, "\n\n").strip()
+    return text[:2_000_000]
 
 
 def normalize_ws(text):

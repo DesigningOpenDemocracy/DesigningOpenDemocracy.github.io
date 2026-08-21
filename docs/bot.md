@@ -27,6 +27,8 @@ The bot performs read-only checks against publicly accessible URLs. It does not 
 | `check_wikipedia.py` | Checks that Wikipedia links in org pages resolve correctly (queries Wikipedia's own REST API, not third-party sites) |
 | `check_contact.py` / `check_contact_deep.py` | Looks for publicly published contact info (email/phone/form) on an org's own site |
 | `check_logo.py` | Looks for a usable logo image on an org's own site |
+| `manual_check_worklist.py` | Generates a checklist of citations the automated checks couldn't resolve, for a human to verify by hand in a real browser |
+| `import_manual_dump.py` | Imports a human-saved browser snapshot for a citation URL that's blocked to every automated path (see [CLAUDE.md](https://github.com/DesigningOpenDemocracy/DesigningOpenDemocracy.github.io/blob/main/CLAUDE.md)'s "manual-dump" runbook) |
 
 ## Frequency
 

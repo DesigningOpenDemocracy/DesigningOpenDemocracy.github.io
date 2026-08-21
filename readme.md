@@ -30,3 +30,7 @@ python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 ```
+
+## Maintenance & utility scripts
+
+The `util/` directory holds the citation-verification and org-maintenance tooling (RSS/activity checks, event-sourcing lint, link/citation verification, etc.). See [CLAUDE.md](CLAUDE.md)'s "[Utility scripts](CLAUDE.md#utility-scripts-util)" section for what each script does and how to run it — including the manual-dump runbook for citation URLs blocked to every automated fetch. [docs/bot.md](docs/bot.md) lists which of these run automatically vs. by hand, and at what frequency.

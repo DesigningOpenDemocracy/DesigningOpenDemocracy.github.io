@@ -142,6 +142,13 @@ class CheckEvidenceBlockedCacheTests(unittest.TestCase):
         patcher = mock.patch.object(cf.time, "sleep")
         patcher.start()
         self.addCleanup(patcher.stop)
+        # A blocked URL now queues a manual-dump request (see
+        # util/manual_dump.py) — without this patch, every test below that
+        # hits a blocked path would write to the real repo's
+        # manual-dump/requests.txt on disk.
+        queue_patcher = mock.patch.object(cf.manual_dump, "queue_request")
+        self.mock_queue_request = queue_patcher.start()
+        self.addCleanup(queue_patcher.stop)
 
     def test_blocked_url_is_skipped_without_a_fetch(self):
         cache = {"https://example.org/paper": {"blocked": "HTTP_403", "blocked_since": "2026-01-01"}}
@@ -152,6 +159,64 @@ class CheckEvidenceBlockedCacheTests(unittest.TestCase):
         self.assertIsNone(result)
         self.assertTrue(unchanged)
         self.assertEqual(error, "HTTP_403")
+
+    def test_blocked_url_queues_a_manual_dump_request(self):
+        cache = {"https://example.org/paper": {"blocked": "HTTP_403", "blocked_since": "2026-01-01"}}
+        with mock.patch.object(cf, "_fetch_page_text"):
+            cf.check_evidence("https://example.org/paper", "some evidence", cache, use_cache=True)
+        self.mock_queue_request.assert_called_once_with("https://example.org/paper")
+
+    def test_manual_verified_good_result_is_used_instead_of_still_blocked(self):
+        # A human imported a browser snapshot for this URL (see
+        # util/import_manual_dump.py) that confirms this exact evidence —
+        # that result must be used instead of reporting STILL BLOCKED, and
+        # no fetch or manual-dump request should happen.
+        ev_key = cf.sha256(cf.normalize_ws("some evidence"))
+        cache = {"https://example.org/paper": {
+            "blocked": "HTTP_403", "blocked_since": "2026-01-01",
+            "manual_verified": {ev_key: True},
+        }}
+        with mock.patch.object(cf, "_fetch_page_text") as fake_fetch:
+            result, unchanged, error, ambiguous, hint, text = cf.check_evidence(
+                "https://example.org/paper", "some evidence", cache, use_cache=True)
+        fake_fetch.assert_not_called()
+        self.mock_queue_request.assert_not_called()
+        self.assertEqual(result, "good")
+        self.assertTrue(unchanged)
+        self.assertIsNone(error)
+
+    def test_manual_verified_bad_result_is_used_instead_of_still_blocked(self):
+        ev_key = cf.sha256(cf.normalize_ws("some evidence"))
+        cache = {"https://example.org/paper": {
+            "blocked": "HTTP_403", "blocked_since": "2026-01-01",
+            "manual_verified": {ev_key: False},
+        }}
+        result, unchanged, error, ambiguous, hint, text = cf.check_evidence(
+            "https://example.org/paper", "some evidence", cache, use_cache=True)
+        self.assertEqual(result, "bad")
+        self.assertIsNone(error)
+
+    def test_manual_verified_for_different_evidence_does_not_cover_this_one(self):
+        # manual_verified is keyed per evidence string — a snapshot that
+        # answered a different citation's quote must not be treated as
+        # covering this one; STILL BLOCKED (and a queued request) is still
+        # correct here.
+        other_key = cf.sha256(cf.normalize_ws("other evidence"))
+        cache = {"https://example.org/paper": {
+            "blocked": "HTTP_403", "blocked_since": "2026-01-01",
+            "manual_verified": {other_key: True},
+        }}
+        result, unchanged, error, ambiguous, hint, text = cf.check_evidence(
+            "https://example.org/paper", "some evidence", cache, use_cache=True)
+        self.assertIsNone(result)
+        self.assertEqual(error, "HTTP_403")
+        self.mock_queue_request.assert_called_once_with("https://example.org/paper")
+
+    def test_fresh_403_queues_a_manual_dump_request(self):
+        cache = {}
+        with mock.patch.object(cf, "_fetch_page_text", return_value=(None, None, "HTTP_403")):
+            cf.check_evidence("https://example.org/paper", "some evidence", cache, use_cache=True)
+        self.mock_queue_request.assert_called_once_with("https://example.org/paper")
 
     def test_fresh_403_gets_recorded_as_blocked(self):
         cache = {}
