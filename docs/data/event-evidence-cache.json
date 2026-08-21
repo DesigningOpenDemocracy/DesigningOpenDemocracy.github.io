@@ -2216,6 +2216,27 @@
       "a010f2e8072c84a697d2cd73667f7a7b9d4436b8e6a29df63775be7e70d14445": true
     }
   },
+  "https://governancehubafrica.org/about": {
+    "checked": "2026-08-21",
+    "content_hash": "edc89330b44559a4420e2f73c682cbb0c2347ff8eebb08d527c11cb8894df32b",
+    "contexts": {
+      "394a0655e0b8b520092fd5835be4776516b76eb4af9dbd7b1981e56f5eeb7bb0": {
+        "prefix": "Current Affairs 22 April 2026",
+        "sha256": "394a0655e0b8b520092fd5835be4776516b76eb4af9dbd7b1981e56f5eeb7bb0",
+        "suffix": "This partnership reflects a shared vision to empower young people as key drivers of accountable, inclusive and innovative governance. Together,",
+        "text": "22nd April 2026 GHA & Youth Agenda Formalise Strategic Partnership A meaningful stride for youth in democratic governance as Youth Agenda and Governance Hub Africa formalise a strategic collaboration focused on advancing youth participation, strengthening democratic engagement, and amplifying policy influence."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "manual_checked": "2026-08-21",
+    "manual_verified": {
+      "394a0655e0b8b520092fd5835be4776516b76eb4af9dbd7b1981e56f5eeb7bb0": true
+    },
+    "verified": {
+      "394a0655e0b8b520092fd5835be4776516b76eb4af9dbd7b1981e56f5eeb7bb0": false
+    }
+  },
   "https://grattan.edu.au/about-us/": {
     "checked": "2026-08-20",
     "content_hash": "eb7c25c9c2d08909da644cfb6642164eb1bdb700d3736b0fa61d89c90ff6a04d",

@@ -53,9 +53,12 @@ the origin site's own and Wayback Machine's Save Page Now) can make a page
 unreachable to every automated path here even though a human can still
 read it fine. util/import_manual_dump.py turns a saved snapshot into a
 cache[url]["manual_verified"] entry, which check_evidence() checks before
-falling back to STILL BLOCKED — so a manually-resolved citation stops
-being reported as blocked without ever needing the origin site itself to
-start cooperating again.
+falling back to STILL BLOCKED — and also when a fetch succeeds but returns
+less text than the evidence string is long (a JS-rendered SPA shell or a
+bot-challenge holding page: the quote can't possibly be there, so that's
+a fetch failure, not evidence drift) — so a manually-resolved citation
+stops being reported as blocked without ever needing the origin site
+itself to start cooperating again.
 
 Usage:
     python util/check_fragments.py           # verify all events + footnotes
@@ -404,16 +407,29 @@ def check_evidence(url, evidence, cache, use_cache=True):
                     manual_dump.queue_request(url)
             return None, False, error, False, None, None
 
-    if not text:
-        # A 200/202-range response with a completely empty body — confirmed
-        # on glenweyl.com, which serves HTTP 202 with a blank page to
-        # DOD-Bot's plain requests.get() (almost certainly a bot-challenge
-        # holding page rather than real content; a browser or a headless
-        # fetch gets the actual page). Comparing a quote against zero
-        # characters of text always "fails," which would report a
-        # guaranteed, uninformative MISMATCH rather than the fetch problem
-        # it actually is — surface it as an error instead.
-        return None, False, "EMPTY_RESPONSE", False, None, None
+    if len(text) < len(evidence):
+        # A 200/202-range response whose extracted text is shorter than the
+        # evidence string itself cannot possibly contain it — we didn't get
+        # the real page. Two confirmed shapes: a completely empty body
+        # (glenweyl.com serves HTTP 202 with a blank page to DOD-Bot's plain
+        # requests.get() — almost certainly a bot-challenge holding page), and
+        # a JS-rendered SPA shell that serves only its title/nav chrome to
+        # plain fetches while a browser sees thousands of characters
+        # (governancehubafrica.org/about: 21 chars vs ~8,000 rendered).
+        # Matching a quote against such text always "fails," which would
+        # report a guaranteed, uninformative MISMATCH asserting the page no
+        # longer says something we never actually saw — a fetch failure, not
+        # evidence drift. A human's browser reads these pages fine, so consult
+        # any manual_verified snapshot for this exact evidence first (same as
+        # the blocked path above), otherwise queue the URL for a manual dump
+        # and surface an error. Deliberately NOT cached as sticky-blocked:
+        # unlike a 403, a shell-to-server-rendered switch is a realistic
+        # recovery, so each run re-fetches and self-heals if the site changes.
+        manual_result = entry.get("manual_verified", {}).get(ev_key)
+        if manual_result is not None:
+            return ("good" if manual_result else "bad"), True, None, False, None, None
+        manual_dump.queue_request(url)
+        return None, False, "EMPTY_RESPONSE" if not text else "PAGE_TOO_SHORT", False, None, None
 
     new_hash = paragraph_hash(text, evidence) or sha256(text)
     verified = dict(entry.get("verified", {}))

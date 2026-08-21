@@ -6,8 +6,9 @@ and `check_concepts.py`.
 
 ## Hard leftovers (require research or judgment calls)
 
-- [ ] 1 NOTABLE NO PROOF event (down from 43 when this list started):
-  - Governance Hub Africa — founding claim, site unreachable to scripts
+- [ ] 0 NOTABLE NO PROOF events (down from 43 when this list started) — backlog clear
+  as of 2026-08-21. The last one (Governance Hub Africa's unverifiable 2018 founding
+  claim) was replaced with a sourced April 2026 partnership event instead.
 - [ ] 1 WEAK URL — Prediki launch event cites their own homepage (the homepage is
   the only evidence that the platform "goes online" in 2012)
 - [ ] 27 footnote citations without machine-verifiable quotes (129/156 have them):

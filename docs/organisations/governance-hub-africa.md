@@ -23,20 +23,22 @@ location:
   name: Nairobi, Kenya
   precision: city
 events:
-- date: '2018-01-01'
-  title: Founded in Nairobi as a pan-African platform for democratic governance across
-    55 AU member states
+- date: '2026-04-22'
+  title: Formalises strategic partnership with Youth Agenda on youth participation
+    in governance
   url: https://governancehubafrica.org/about
-  note: 'Unquotable as of this check: the live page is a JS-rendered SPA shell (a
-    plain fetch returns ~20 chars of visible text, no real content), and no Wayback
-    Machine snapshot of this specific /about URL exists. Web search turned up nothing
-    beyond the org''s own homepage confirming founding details. Left as proof_warning
-    rather than guessed at; worth retrying with a headless-browser fetch (see util/check_contact_deep.py
-    for the established pattern) or once the live page changes.'
-  proof_level: medium
-  url_checked: '2026-08-12'
-  notable: true
-  proof_warning: true
+  quote: 22nd April 2026 GHA & Youth Agenda Formalise Strategic Partnership A meaningful
+    stride for youth in democratic governance as Youth Agenda and Governance Hub Africa
+    formalise a strategic collaboration focused on advancing youth participation,
+    strengthening democratic engagement, and amplifying policy influence.
+  note: Announced in the site's news section. The page is a JS-rendered SPA that plain
+    fetches can't read, so this quote is verified against a manually saved browser
+    snapshot (util/import_manual_dump.py) rather than a live fetch. Replaces an earlier
+    "founded 2018 in Nairobi" timeline entry that no available source — the org's
+    own site included — supports.
+  proof_level: high
+  url_checked: '2026-08-21'
+  notable: false
 activity:
   rss:
     checked: 2026-08-17

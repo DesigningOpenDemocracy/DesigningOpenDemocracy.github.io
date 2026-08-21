@@ -295,6 +295,52 @@ class CheckEvidenceBlockedCacheTests(unittest.TestCase):
         self.assertEqual(error, "EMPTY_RESPONSE")
         self.assertNotIn("https://example.org/paper", cache)
 
+    def test_spa_shell_shorter_than_quote_is_fetch_error_not_mismatch(self):
+        # Regression: governancehubafrica.org/about is a JS-rendered SPA that
+        # serves plain fetches only its title (~21 chars) while a browser
+        # sees ~8,000 characters. Text shorter than the evidence string
+        # cannot possibly contain it — reporting MISMATCH would assert the
+        # page no longer says something we never actually saw. Same failure
+        # shape as the empty-body case above, just with nav chrome attached.
+        shell = "Governance Hub Africa"
+        cache = {}
+        with mock.patch.object(cf, "_fetch_page_text", return_value=(shell, mock.Mock(headers={}), None)):
+            result, unchanged, error, ambiguous, hint, text = cf.check_evidence(
+                "https://example.org/about", "a quote much longer than the shell text", cache, use_cache=True)
+        self.assertIsNone(result)
+        self.assertEqual(error, "PAGE_TOO_SHORT")
+        self.mock_queue_request.assert_called_once_with("https://example.org/about")
+
+    def test_manual_verified_used_when_page_text_too_short(self):
+        # The manual-dump escape hatch must cover the SPA-shell shape too,
+        # not just 403/429 blocks: a human's browser rendered the real page,
+        # so their snapshot's verdict stands in for the unreadable fetch.
+        ev_key = cf.sha256(cf.normalize_ws("a quote much longer than the shell text"))
+        cache = {"https://example.org/about": {
+            "manual_verified": {ev_key: True},
+        }}
+        shell = "Governance Hub Africa"
+        with mock.patch.object(cf, "_fetch_page_text", return_value=(shell, mock.Mock(headers={}), None)):
+            result, unchanged, error, ambiguous, hint, text = cf.check_evidence(
+                "https://example.org/about", "a quote much longer than the shell text", cache, use_cache=True)
+        self.assertEqual(result, "good")
+        self.assertTrue(unchanged)
+        self.assertIsNone(error)
+        self.mock_queue_request.assert_not_called()
+
+    def test_page_longer_than_quote_still_matches_normally(self):
+        # The too-short shortcut must only trigger when containment is
+        # impossible: a short-but-real page longer than the quote goes
+        # through normal matching (and can legitimately MISMATCH).
+        page = "a real page body that simply does not contain the claim"
+        cache = {}
+        with mock.patch.object(cf, "_fetch_page_text", return_value=(page, mock.Mock(headers={}), None)):
+            result, unchanged, error, ambiguous, hint, text = cf.check_evidence(
+                "https://example.org/paper", "an entirely different sentence", cache, use_cache=True)
+        self.assertEqual(result, "bad")
+        self.assertIsNone(error)
+        self.mock_queue_request.assert_not_called()
+
 
 class FetchPageTextRobotsTests(unittest.TestCase):
     """_fetch_page_text() must honor a site's robots.txt for ordinary
