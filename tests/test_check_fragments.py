@@ -903,5 +903,93 @@ class SetUrlStatusCliTests(unittest.TestCase):
             self._run("--offline", "--save-to-wayback")
 
 
+class UncheckedOnlyFilterTests(unittest.TestCase):
+    """--unchecked-only skips any evidence already present in the evidence
+    file's verified map, with zero network calls for it — distinct from
+    the default cache-aware path, which still issues a conditional-GET
+    request per URL on every run even when nothing has changed."""
+
+    CHECKED_URL = "https://example.org/checked"
+    CHECKED_QUOTE = "this quote was already verified"
+    NEW_URL = "https://example.org/new"
+    NEW_QUOTE = "this quote has never been checked"
+
+    def setUp(self):
+        self.tmpdir = tempfile.mkdtemp()
+        self.addCleanup(shutil.rmtree, self.tmpdir, ignore_errors=True)
+        self._orig_org_dir = cf.ORG_DIR
+        self._orig_docs_dir = cf.DOCS_DIR
+        self._orig_evidence_path = cf.EVIDENCE_PATH
+        cf.ORG_DIR = self.tmpdir
+        cf.DOCS_DIR = self.tmpdir
+        cf.EVIDENCE_PATH = os.path.join(self.tmpdir, "evidence.json")
+        self.addCleanup(self._restore)
+
+        make_org_file(self.tmpdir, "already-checked-org", (
+            "- date: '2020-01-01'\n"
+            "  title: Founded\n"
+            f"  url: {self.CHECKED_URL}\n"
+            f"  quote: {self.CHECKED_QUOTE}\n"
+            "  proof_level: high\n"
+        ))
+        make_org_file(self.tmpdir, "new-org", (
+            "- date: '2020-01-01'\n"
+            "  title: Founded\n"
+            f"  url: {self.NEW_URL}\n"
+            f"  quote: {self.NEW_QUOTE}\n"
+            "  proof_level: high\n"
+        ))
+
+        ev_key = cf.sha256(cf.normalize_ws(self.CHECKED_QUOTE))
+        cf.save_evidence({self.CHECKED_URL: {"verified": {ev_key: True}}})
+
+        sleep_patcher = mock.patch.object(cf.time, "sleep")
+        sleep_patcher.start()
+        self.addCleanup(sleep_patcher.stop)
+
+    def _restore(self):
+        cf.ORG_DIR = self._orig_org_dir
+        cf.DOCS_DIR = self._orig_docs_dir
+        cf.EVIDENCE_PATH = self._orig_evidence_path
+
+    def _run(self, *argv):
+        # main() always calls sys.exit() on its normal completion path
+        # (0 = clean, 1 = a MISMATCH found, 2 = argparse rejected the
+        # arguments) — every test here cares about that exit code, so
+        # none of them should swallow it.
+        with mock.patch.object(sys, "argv", ["check_fragments.py", *argv]):
+            with self.assertRaises(SystemExit) as cm:
+                cf.main()
+            return cm.exception.code
+
+    def _fake_fetch(self, url, headers):
+        text = self.CHECKED_QUOTE if url == self.CHECKED_URL else self.NEW_QUOTE
+        return (f"Some page text. {text} And more text.",
+                mock.Mock(status_code=200, headers={}), None)
+
+    def test_unchecked_only_fetches_only_the_new_url(self):
+        fetched = []
+        with mock.patch.object(cf, "_fetch_page_text",
+                               side_effect=lambda url, headers: (
+                                   fetched.append(url), self._fake_fetch(url, headers))[1]):
+            exit_code = self._run("--unchecked-only")
+        self.assertEqual(fetched, [self.NEW_URL])
+        self.assertEqual(exit_code, 0)
+
+    def test_without_the_flag_both_urls_are_fetched(self):
+        fetched = []
+        with mock.patch.object(cf, "_fetch_page_text",
+                               side_effect=lambda url, headers: (
+                                   fetched.append(url), self._fake_fetch(url, headers))[1]):
+            exit_code = self._run()
+        self.assertEqual(set(fetched), {self.CHECKED_URL, self.NEW_URL})
+        self.assertEqual(exit_code, 0)
+
+    def test_cannot_combine_with_no_cache(self):
+        # argparse's parser.error() exits with code 2, distinct from the
+        # 0/1 main() itself would return.
+        self.assertEqual(self._run("--unchecked-only", "--no-cache"), 2)
+
+
 if __name__ == "__main__":
     unittest.main()
