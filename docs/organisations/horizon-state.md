@@ -56,6 +56,7 @@ events:
   url: https://web.archive.org/web/20260419134339/https://horizonstate.com/hst-faq/
   quote: Award-winning tech company Horizon State today (1/11/2019) announced it is
     returning under new management.
+  note: Originally published at horizonstate.com/hst-faq/ — domain since parked.
   proof_level: high
   url_checked: '2026-08-22'
   notable: true
@@ -66,6 +67,7 @@ events:
   quote: Horizon State Token is a continuation of the Decision Token that came to
     an end in 2019. We are a new ownership and management team who have airdropped
     tokens to prior holders as goodwill.
+  note: Originally published at horizonstate.com/hst-token/ — domain since parked.
   proof_level: high
   url_checked: '2026-08-22'
   notable: false
