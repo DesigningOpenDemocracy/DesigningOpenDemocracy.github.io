@@ -81,4 +81,4 @@ Join also reaches further than vTaiwan ever did — an older, less tech-savvy pu
 
 [^bertelsmann]: "The Join platform is a government-run participation hub that is most notable for its petitioning function but also offers several feedback and discussion options." ["Trailblazers of digital participation: Taiwan's Join platform and vTaiwan"](https://www.bertelsmann-stiftung.de/en/our-projects/democracy-and-participation-in-europe/shortcut-archive/shortcut-8-trailblazers-of-digital-participation-taiwans-join-platform-and-vtaiwan), Bertelsmann Stiftung.
 
-[^vtaiwan-blog]: DOD, ["Occupy to Plurality: what the 2010s civic-tech wave built, and where it stalled"](../../blog/posts/2026-08-07-civic-tech-wave-2010s.md), citing the [vTaiwan org page](vtaiwan.md)'s "What came after" section.
+[^vtaiwan-blog]: DOD, ["Occupy to Plurality: what the 2010s civic-tech wave built, and where it stalled"](../../blog/posts/2026-08-07-civic-tech-wave-2010s.md), citing the [vTaiwan org page](vtaiwan.md)'s "What came after" section. <!-- unquoted: legacy: predates the unquoted: justification convention (added 2026-08-21); not individually reviewed -->

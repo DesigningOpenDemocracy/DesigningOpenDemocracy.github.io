@@ -8,7 +8,7 @@ This is a MkDocs + Material for MkDocs static site deployed to GitHub Pages.
 - Local dev: `make serve`
 - Deploy: CI pushes to `gh-pages` branch via `mkdocs gh-deploy --force`
 - Python deps: `requirements.txt` (site build), `util/requirements.txt` (utility scripts only)
-- Before pushing: `make build && python util/check_internal_links.py && python util/check_event_sourcing.py && python util/reorder_frontmatter.py --check` — catches the same errors as CI. The pre-commit hook (`.githooks/pre-commit`) auto-runs `reorder_frontmatter.py` on staged org pages, so the `--check` should always pass — it's a safety net.
+- Before pushing: `make build && python util/check_internal_links.py && python util/check_event_sourcing.py && python util/reorder_frontmatter.py --check && python util/check_footnote_quotes.py` — catches the same errors as CI. The pre-commit hook (`.githooks/pre-commit`) auto-runs `reorder_frontmatter.py` (which fixes frontmatter ordering in place) on staged org pages, so the `--check` should always pass — it's a safety net. `check_footnote_quotes.py` also runs in the hook on any staged docs page, but it can't auto-fix a missing justification the way `reorder_frontmatter.py` can reorder fields — it blocks the commit until a quote or an `unquoted:` annotation is added by hand.
 - **If `.git/hooks/pre-commit` doesn't exist:** run `ln -sf ../../.githooks/pre-commit .git/hooks/pre-commit` to install it. Claude should check this on first interaction with the repo and remind the user if it's missing.
 
 ## Tests (`tests/`)
@@ -550,11 +550,11 @@ regardless of what's written.
 Markdown footnotes (`[^ref]: ["Title"](url), Source, date.`) are the citation mechanism for
 narrative prose, distinct from the structured `events:` frontmatter field (which has its own
 `quote:`/`note:`/`proof_level` sourcing discipline — see Organisation pages above). Footnotes
-are freeform text with no YAML schema, so that discipline doesn't apply to them today — most
-existing footnotes are pure citation-style (title, source, date), not verbatim excerpts.
+are freeform text with no YAML schema, so that discipline used to not apply to them at all —
+most existing footnotes are pure citation-style (title, source, date), not verbatim excerpts.
 
-**Going forward**: where the cited source has a specific sentence that supports the
-claim, include it as a verbatim quoted phrase in the footnote text itself, e.g.:
+**Where the cited source has a specific sentence that supports the claim**, include it as a
+verbatim quoted phrase in the footnote text itself, e.g.:
 
 ```
 [^tvfy-about]: "today the OpenAustralia Foundation is launching a new site They Vote for You,"
@@ -563,20 +563,47 @@ claim, include it as a verbatim quoted phrase in the footnote text itself, e.g.:
 
 This is an in-prose analogue of `events:`' `quote:` field — same reason (a claim should be
 traceable to specific source text, not just a link) — but lighter-touch, since footnotes don't
-have a structured field to hang it on. Don't retrofit this onto footnotes that already read
-fine as plain citations; apply it to *new* footnotes as they're added, and opportunistically
-when an existing footnote is already being touched for another reason.
+have a structured field to hang it on.
 
-Footnote quotes now get the same render-time `#:~:text=` treatment as event quotes.
-`hooks/footnote_fragments.py` (registered in `mkdocs.yml`) parses the page's markdown
-source at build time to find footnotes with verbatim quoted excerpts, then post-processes
-the rendered HTML to add `#:~:text=` fragments to their `<a href="url">` links — no
-fragment is ever stored in the markdown, same single-source-of-truth rule as events.
-Footnote quotes are also mechanically verified by `util/check_fragments.py` in the same
-weekly cron pass as event quotes, with the same cache, conditional GET, and AMBIGUOUS
-detection. `util/check_footnote_quotes.py` reports current coverage
-(local/offline, informational only — not wired into CI or any gate) so the backfill pace
-can be tracked over time without committing to finishing it all at once.
+**When a footnote can't carry a quote, it must instead carry a justification** — a trailing
+`<!-- unquoted: type: reason -->` HTML comment on the same footnote-definition line, e.g.:
+
+```
+[^cw-about]: "Registered since 2001," [Council Watch](https://www.councilwatch.com.au), Council Watch website footer.
+[^some-ref]: [Some Page](https://example.org/page), Example Org. <!-- unquoted: bot-blocked: example.org returns a Cloudflare challenge to automated fetches, confirmed 2026-08-21 -->
+```
+
+This is a hard gate (`util/check_footnote_quotes.py`, wired into CI and the pre-commit hook —
+see that script's entry below), not a style preference: a citation-only footnote with neither a
+quote nor an `unquoted:` annotation fails the build. `type` is an open vocabulary (same spirit
+as `ai_assist:`/`origin:` elsewhere in this file) — established values in use: `legacy`
+(predates this convention, not individually reviewed — the backfilled default for pre-existing
+footnotes), `bot-blocked`, `paywalled`, `no-single-sentence` (the source supports the claim but
+no single verbatim sentence captures it), `multi-source` (see below), `non-web-source`,
+`not-yet-verified` (a deliberate backlog marker, same spirit as events' `proof_warning: true`).
+Avoid literal quote characters inside the `reason` text — they can be misread as a verbatim
+excerpt by the same line's quote-extraction regex.
+
+**This gate exists because of a real incident, not preemptively**: an AI-authored footnote was
+left citation-only with no reason recorded, not because the source resisted quoting but because
+the underlying claim had been sourced from a summarizing tool's paraphrase rather than the
+page's actual text — and that shortcut was invisible in review. A required justification does
+not make the underlying claim correct on its own (a model can misjudge or misstate a reason
+the same way it can misstate a quote), but it converts a silent gap into a reviewable one,
+which is the realistic ceiling for what a lint step can enforce here. **The actual fix is
+upstream of any lint**: WebSearch/WebFetch output is a *lead*, not a *source* — before writing
+any quote or specific factual claim (a name, a date, a statute number, a legal/criminal status),
+fetch the page's raw text directly (e.g. `curl` + `util/text_fragment.py`'s `html_to_text()`,
+not a summarizing tool) and confirm the claim against it. See
+`internal-heartbeat/` for the incident writeup if one exists for a given case.
+
+Footnote quotes get render-time `#:~:text=` treatment. `hooks/footnote_fragments.py`
+(registered in `mkdocs.yml`) parses the page's markdown source at build time to find footnotes
+with verbatim quoted excerpts, then post-processes the rendered HTML to add `#:~:text=`
+fragments to their `<a href="url">` links — no fragment is ever stored in the markdown, same
+single-source-of-truth rule as events. Footnote quotes are also mechanically verified by
+`util/check_fragments.py` in the same weekly cron pass as event quotes, with the same cache,
+conditional GET, and AMBIGUOUS detection.
 
 **Multi-source footnotes:** when a footnote cites more than one source, the
 verbatim quote should come from the source supporting the most specific
@@ -744,10 +771,10 @@ These are linked from the bottom of the org index table for researcher download.
   python util/reorder_frontmatter.py --slug mosaiclab  # single org
   ```
 
-- `util/check_footnote_quotes.py` — reports how many prose footnote citations (org pages, blog posts, concept pages) carry a verbatim quoted excerpt vs. a bare title/source/date citation. Local/offline, informational only — not wired into CI or any gate, but tracks the backfill pace.
+- `util/check_footnote_quotes.py` — gates every prose footnote citation (org pages, blog posts, concept pages) on carrying either a verbatim quoted excerpt or an explicit `unquoted:` justification (see the "Prose footnote citations" convention above). Local/offline, no network calls. Wired into CI (`.github/workflows/build.yml`) and the pre-commit hook (`.githooks/pre-commit`, whenever any staged file matches `docs/**/*.md`) as a hard gate — exits 1 if any citation-only footnote has neither a quote nor an `unquoted:` annotation. A separate soft warning (printed, doesn't fail the build) flags an annotation whose `reason` is under 15 characters — present but not really an explanation.
   ```
-  python util/check_footnote_quotes.py             # summary across all docs
-  python util/check_footnote_quotes.py --missing    # list footnotes without a quote
+  python util/check_footnote_quotes.py             # gate: exit 1 if any MISSING JUSTIFICATION
+  python util/check_footnote_quotes.py --missing    # also list every citation-only footnote (justified or not)
   python util/check_footnote_quotes.py --path docs/organisations/g0v.md  # single file
   ```
 

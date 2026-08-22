@@ -332,6 +332,25 @@ class FootnoteParsingTests(unittest.TestCase):
         self.assertEqual(url, "https://en.wikipedia.org/wiki/Politics_(Aristotle)")
         self.assertEqual(title, "Politics (Aristotle)")
 
+    def test_parse_unquoted_reason_matches_trailing_comment(self):
+        body = ("[Council Watch](https://www.councilwatch.com.au), Council Watch. "
+                "<!-- unquoted: bot-blocked: site returns 403 to automated fetches -->")
+        result = tf.parse_unquoted_reason(body)
+        self.assertEqual(result, ("bot-blocked", "site returns 403 to automated fetches"))
+
+    def test_parse_unquoted_reason_none_when_absent(self):
+        body = "[About](https://example.org/about), Example Org."
+        self.assertIsNone(tf.parse_unquoted_reason(body))
+
+    def test_parse_unquoted_reason_does_not_confuse_footnote_citation(self):
+        # A trailing unquoted: comment must not itself be picked up as a
+        # verbatim quote by footnote_citation() — it carries no quote
+        # characters, so the two parsers stay independent on the same line.
+        body = ("[About](https://example.org/about), Example Org. "
+                "<!-- unquoted: legacy: predates this convention -->")
+        self.assertIsNone(tf.footnote_citation(body))
+        self.assertIsNotNone(tf.parse_unquoted_reason(body))
+
     def test_iter_footnote_citations_yields_only_qualifying_definitions(self):
         source = "\n".join([
             "Some prose.",

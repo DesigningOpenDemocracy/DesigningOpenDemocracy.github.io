@@ -94,10 +94,10 @@ Worth saying outright, not just implying: thanks to everyone who built, ran, fun
 
 [^agora-voting]: "over 155,000 members of Podemos voted online to renew the party leadership" ["Agora Voting/nVotes"](https://www.opendemocracy.net/en/can-europe-make-it/agora-votingnvotes/), openDemocracy, 4 March 2017.
 
-[^agora-decay]: The Plaza Podemos participation decay figures (proposal counts fell from 1,405 to 407, mean votes from 198.3 to 17.6 in a single year) are from ["Two Steps Forward, One Step Back: The Evolution of Democratic Digital Innovations in Podemos"](https://www.tandfonline.com/doi/full/10.1080/13608746.2022.2161973), *Journal of Contemporary European Studies*, 2022.
+[^agora-decay]: The Plaza Podemos participation decay figures (proposal counts fell from 1,405 to 407, mean votes from 198.3 to 17.6 in a single year) are from ["Two Steps Forward, One Step Back: The Evolution of Democratic Digital Innovations in Podemos"](https://www.tandfonline.com/doi/full/10.1080/13608746.2022.2161973), *Journal of Contemporary European Studies*, 2022. <!-- unquoted: legacy: predates the unquoted: justification convention (added 2026-08-21); not individually reviewed -->
 
-[^loomio]: "Loomio emerged from the Occupy movement. In 2012, it launched its first prototype." [Loomio](https://en.wikipedia.org/wiki/Loomio), Wikipedia. See also DOD [org page](../../organisations/loomio.md).
+[^loomio]: "Loomio emerged from the Occupy movement. In 2012, it launched its first prototype." [Loomio](https://en.wikipedia.org/wiki/Loomio), Wikipedia. See also DOD [org page](../../organisations/loomio.md). <!-- unquoted: legacy: predates the unquoted: justification convention (added 2026-08-21); not individually reviewed -->
 
-[^demos]: DOD [DemocracyOS org page](../../organisations/democracyos.md).
+[^demos]: DOD [DemocracyOS org page](../../organisations/democracyos.md). <!-- unquoted: legacy: predates the unquoted: justification convention (added 2026-08-21); not individually reviewed -->
 
-[^taiwan-post]: [Taiwan's digital democracy experiment: what it shows, what it doesn't](2026-05-25-taiwan-digital-democracy.md), DOD, May 2026; DOD [Pol.is org page](../../organisations/polis.md).
+[^taiwan-post]: [Taiwan's digital democracy experiment: what it shows, what it doesn't](2026-05-25-taiwan-digital-democracy.md), DOD, May 2026; DOD [Pol.is org page](../../organisations/polis.md). <!-- unquoted: legacy: predates the unquoted: justification convention (added 2026-08-21); not individually reviewed -->

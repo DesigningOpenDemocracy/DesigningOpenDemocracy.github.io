@@ -100,7 +100,7 @@ The Sortition Foundation is the UK's leading organisation specifically dedicated
 - [Sortition Foundation (Australia)](sortition-foundation-australia.md) — Australian chapter
 - [Your Party is using sortition](../../blog/posts/2025-12-07-your-party-is-using-sortition.md) — DOD blog post on a UK party adopting sortition in practice
 
-[^hennig]: Brett Hennig, *The End of Politicians: Democratic Alternatives to Them*, Scribe Publications, 2017.
+[^hennig]: Brett Hennig, *The End of Politicians: Democratic Alternatives to Them*, Scribe Publications, 2017. <!-- unquoted: legacy: predates the unquoted: justification convention (added 2026-08-21); not individually reviewed -->
 
 [^updates]: "Frontiers of Democratic Lotteries Workshop 18 June, 2026 We're looking for a new Independent Director" — [Updates page](https://www.sortitionfoundation.org/updates), Sortition Foundation. Fetched 12 August 2026, active with posts through June 2026.
 
