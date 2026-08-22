@@ -85,6 +85,7 @@ Usage:
     python util/check_fragments.py --slug mosaiclab  # single org
     python util/check_fragments.py --slug g0v --slug namfrel  # multiple orgs
     python util/check_fragments.py --no-cache        # ignore cache, re-fetch everything
+    python util/check_fragments.py --unchecked-only  # skip anything already verified — zero requests for it
     python util/check_fragments.py --offline         # check against .pagecache/ copies only (no network)
     python util/check_fragments.py --verbose (-v)    # also print one line per quiet GOOD result
     python util/check_fragments.py --save-to-wayback # archive each URL to Wayback Machine
@@ -757,9 +758,9 @@ def save_to_wayback(url, timeout=30):
 
 
 def collect_evidence(args):
-    """Return list of (url, quote, source_label, kind) tuples from events,
-    footnotes, and shared-link descriptions. 'kind' is 'event', 'footnote',
-    or 'shared_link' for reporting."""
+    """Return list of (url, quote, source_label, kind, path) tuples from
+    events, footnotes, and shared-link descriptions. 'kind' is 'event',
+    'footnote', or 'shared_link' for reporting."""
     items = []
 
     event_paths = sorted(glob.glob(os.path.join(ORG_DIR, "*.md")))
@@ -835,6 +836,19 @@ def main():
                              "human judgment call, same spirit as "
                              "proof_level_locked. Exits immediately after "
                              "writing; does not run verification.")
+    parser.add_argument("--unchecked-only", action="store_true",
+                        help="Skip any evidence already verified in a prior run "
+                             "(present in citation-evidence.json's verified map for "
+                             "that URL) with zero network calls — not even a "
+                             "conditional-GET 304 like the default cache-aware path "
+                             "still makes. Only fetches evidence that has never been "
+                             "checked before: a newly-added quote, or a newly-added "
+                             "citation URL entirely. A MISMATCH from a prior run still "
+                             "counts as checked and is skipped — this flag is for "
+                             "catching up on new evidence quickly, not re-litigating "
+                             "known failures (re-run without it, or --no-cache, for "
+                             "that). Cannot be combined with --no-cache — they pull in "
+                             "opposite directions on how much to trust the cache.")
     parser.add_argument("--footnotes-only", action="store_true",
                         help="Only check footnote evidence (skip events)")
     parser.add_argument("--events-only", action="store_true",
@@ -859,6 +873,8 @@ def main():
     args = parser.parse_args()
     if args.offline and args.save_to_wayback:
         parser.error("--offline cannot be combined with --save-to-wayback")
+    if args.unchecked_only and args.no_cache:
+        parser.error("--unchecked-only cannot be combined with --no-cache")
 
     if args.set_url_status:
         url, status = args.set_url_status
@@ -890,6 +906,16 @@ def main():
     cache = load_evidence()
 
     evidence_items = collect_evidence(args)
+
+    skipped_unchecked_only = 0
+    if args.unchecked_only:
+        def _already_checked(item):
+            url, evidence_text = item[0], item[1]
+            ev_key = sha256(normalize_ws(evidence_text))
+            return ev_key in cache.get(url, {}).get("verified", {})
+        before = len(evidence_items)
+        evidence_items = [item for item in evidence_items if not _already_checked(item)]
+        skipped_unchecked_only = before - len(evidence_items)
 
     good = 0
     bad = 0
@@ -1058,6 +1084,9 @@ def main():
     if args.save_to_wayback:
         print("Wayback Machine: " + str(wayback_saved) + " saved, " +
               str(wayback_failed) + " failed")
+    if args.unchecked_only:
+        print(str(skipped_unchecked_only) + " already-checked evidence item(s) "
+              "skipped (--unchecked-only)")
 
     if args.report:
         with open(args.report, "w", encoding="utf-8") as f:
