@@ -248,7 +248,7 @@ python util/import_manual_dump.py --dry-run
 python util/import_manual_dump.py
 
 # 4. Skim what changed before committing
-git diff docs/data/event-evidence-cache.json
+git diff docs/data/citation-evidence.json
 ```
 
 See **CLAUDE.md**'s "Utility scripts" section for the full mechanism (why

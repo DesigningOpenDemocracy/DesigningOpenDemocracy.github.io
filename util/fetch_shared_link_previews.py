@@ -318,7 +318,7 @@ def main():
         return 0
 
     session = requests.Session()
-    cache = cf.load_cache()
+    cache = cf.load_evidence()
     written = 0
     for i, post in enumerate(posts, 1):
         slug = post["slug"]
@@ -357,7 +357,7 @@ def main():
                 written += 1
                 print("               written")
 
-    cf.save_cache(cache)
+    cf.save_evidence(cache)
 
     print()
     if args.write:

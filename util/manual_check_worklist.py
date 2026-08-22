@@ -6,7 +6,7 @@ citations that check_fragments.py can't verify by itself.
 Two categories of "can't verify automatically":
 
 1. BLOCKED (the default, offline mode) — the URL is recorded in
-   docs/data/event-evidence-cache.json as having returned 403/429 to a
+   docs/data/citation-evidence.json as having returned 403/429 to a
    scripted request. check_fragments.py deliberately never retries these
    on its own (see that script's docstring on why the block is sticky) —
    the only way past a BLOCKED entry is a human opening the link in a real
@@ -51,7 +51,7 @@ import check_fragments as cf  # noqa: E402
 def build_worklist(args):
     """Return a list of (status, url, quote, source_label, kind, hint)
     tuples — hint is a closest-match passage string or None."""
-    cache = cf.load_cache()
+    cache = cf.load_evidence()
     items = cf.collect_evidence(args)
     if args.footnotes_only:
         items = [i for i in items if i[3] != "event"]
@@ -70,7 +70,7 @@ def build_worklist(args):
             elif error:
                 entries.append((f"FETCH ERROR ({error})", url, quote,
                                  source_label, kind, None))
-        cf.save_cache(cache)
+        cf.save_evidence(cache)
     else:
         for url, quote, source_label, kind, _path in items:
             blocked = cache.get(url, {}).get("blocked")

@@ -843,5 +843,65 @@ class CollectEvidenceSharedLinkTests(unittest.TestCase):
         self.assertFalse([i for i in items if i[3] == "shared_link"])
 
 
+class SetUrlStatusCliTests(unittest.TestCase):
+    """--set-url-status writes/clears url_status in the evidence cache —
+    the manual, never-auto-inferred liveness flag consumed by
+    text_fragment.load_archive_info() and rendered by organisation.html /
+    hooks/footnote_fragments.py. See internal-heartbeat/
+    2026-08-22-citation-archival-design-decisions.md."""
+
+    def setUp(self):
+        self.tmpdir = tempfile.mkdtemp()
+        self.addCleanup(shutil.rmtree, self.tmpdir, ignore_errors=True)
+        self.cache_path = os.path.join(self.tmpdir, "cache.json")
+        self._orig_cache_path = cf.EVIDENCE_PATH
+        cf.EVIDENCE_PATH = self.cache_path
+        self.addCleanup(self._restore)
+
+    def _restore(self):
+        cf.EVIDENCE_PATH = self._orig_cache_path
+
+    def _run(self, *argv):
+        with mock.patch.object(sys, "argv", ["check_fragments.py", *argv]):
+            cf.main()
+
+    def test_sets_dead_status_on_new_url(self):
+        self._run("--set-url-status", "https://example.org/x", "dead")
+        cache = cf.load_evidence()
+        self.assertEqual(cache["https://example.org/x"]["url_status"], "dead")
+
+    def test_sets_unfit_status_preserving_other_fields(self):
+        cf.save_evidence({"https://example.org/x": {"checked": "2026-08-01"}})
+        self._run("--set-url-status", "https://example.org/x", "unfit")
+        cache = cf.load_evidence()
+        self.assertEqual(cache["https://example.org/x"]["url_status"], "unfit")
+        self.assertEqual(cache["https://example.org/x"]["checked"], "2026-08-01")
+
+    def test_live_clears_the_field(self):
+        cf.save_evidence({"https://example.org/x": {"url_status": "dead",
+                                                   "checked": "2026-08-01"}})
+        self._run("--set-url-status", "https://example.org/x", "live")
+        cache = cf.load_evidence()
+        self.assertNotIn("url_status", cache["https://example.org/x"])
+        self.assertEqual(cache["https://example.org/x"]["checked"], "2026-08-01")
+
+    def test_status_is_case_insensitive(self):
+        self._run("--set-url-status", "https://example.org/x", "DEAD")
+        cache = cf.load_evidence()
+        self.assertEqual(cache["https://example.org/x"]["url_status"], "dead")
+
+    def test_invalid_status_rejected(self):
+        with self.assertRaises(SystemExit):
+            self._run("--set-url-status", "https://example.org/x", "bogus")
+        # Nothing should have been written.
+        self.assertFalse(os.path.exists(self.cache_path))
+
+    def test_offline_and_save_to_wayback_still_mutually_exclusive(self):
+        # Unrelated pre-existing guard — confirm --set-url-status didn't
+        # disturb argument parsing for the other flags.
+        with self.assertRaises(SystemExit):
+            self._run("--offline", "--save-to-wayback")
+
+
 if __name__ == "__main__":
     unittest.main()

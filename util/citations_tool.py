@@ -12,6 +12,18 @@ cited page, checks quotes against live text, and reports mismatches.
 
 Requirements: requests (util/requirements.txt), plus check_fragments.py
 for context extraction (stdlib shim otherwise).
+
+--archive on DOD's OWN docs/data/citations.json is discouraged: as of
+2026-08-22, hooks/citation_export.py projects archive/archive_location/
+url-status onto that file fresh on every build, straight from
+docs/data/citation-evidence.json (the one place check_fragments.py's
+--save-to-wayback/--set-url-status ever write) — so a manual --archive
+run here would just get overwritten by the next build, and having two
+independent things call Wayback for the same URL is exactly the
+disagreement this change was meant to close. See internal-heartbeat/
+2026-08-22-citation-archival-design-decisions.md. --archive remains the
+right tool for a THIRD-PARTY citations.json passed via --file, which has
+no DOD evidence cache behind it.
 """
 
 import argparse
@@ -346,7 +358,13 @@ def main():
     parser.add_argument(
         "--archive",
         action="store_true",
-        help="Also submit each URL to the Wayback Machine for archiving",
+        help="Also submit each URL to the Wayback Machine for archiving. "
+             "Discouraged on DOD's own docs/data/citations.json — that "
+             "file's archive fields are now projected fresh from "
+             "docs/data/citation-evidence.json on every build (see "
+             "check_fragments.py --save-to-wayback/--set-url-status) and "
+             "would just overwrite whatever this writes. Intended for a "
+             "third-party citations.json passed via --file instead.",
     )
     parser.add_argument(
         "--no-cache",

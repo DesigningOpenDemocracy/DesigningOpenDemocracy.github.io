@@ -91,7 +91,7 @@ ROBOTS_STATUS = "ROBOTS_DISALLOWED"  # sentinel status value, not a real HTTP co
 
 def check_url_cached(url, session, timeout, cache, use_cache=True):
     """Wraps check_url() with the same shared "blocked" cache
-    check_fragments.py writes to (docs/data/event-evidence-cache.json,
+    check_fragments.py writes to (docs/data/citation-evidence.json,
     keyed the same way — cache[url]["blocked"] is either the "HTTP_403"/
     "HTTP_429" string format that script already uses, or "ROBOTS_DISALLOWED"
     when the site's own robots.txt says no — so a write by either script
@@ -148,7 +148,7 @@ def main():
 
     session = requests.Session()
     session.headers.update({"User-Agent": DOD_USER_AGENT})
-    cache = cf.load_cache()
+    cache = cf.load_evidence()
 
     checked = 0
     skipped_blocked = 0
@@ -227,12 +227,20 @@ def main():
                 dead.append((title, event_date, event_title, url, status))
                 print(f"  DEAD ({status})  {title}  [{event_date}]  {event_title}")
                 print(f"           {url}")
+                if cache.get(url, {}).get("url_status") != "dead":
+                    # Never auto-set — a human decides, same as
+                    # proof_level_locked elsewhere in this repo. This is a
+                    # suggestion, not a verdict: url_status also covers
+                    # "unfit" (a parked domain, still 200s) which this
+                    # liveness check can't distinguish from healthy.
+                    print(f"           suggest: python util/check_fragments.py "
+                          f"--set-url-status \"{url}\" dead")
             elif final_url and strip_fragment(url).rstrip("/") != final_url.rstrip("/"):
                 redirected.append((title, event_date, event_title, url, final_url))
                 print(f"  REDIRECT {title}  [{event_date}]  {event_title}")
                 print(f"           {url}  ->  {final_url}")
 
-    cf.save_cache(cache)
+    cf.save_evidence(cache)
 
     print()
     print(f"Unique URLs checked: {checked}"

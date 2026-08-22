@@ -48,7 +48,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/organisations/ docs/data/event-evidence-cache.json
+          git add docs/organisations/ docs/data/citation-evidence.json
           if ! git diff --staged --quiet; then
             SUMMARY=$(
               echo "RSS/sitemap probe:"; tail -n 3 /tmp/rss.log

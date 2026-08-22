@@ -23,10 +23,21 @@ Verifies three sources of evidence through the same pipeline:
    — checked against `shared_link.url` the same way a footnote quote is
    checked against its citation URL.
 
-All three sources share the same cache, fetch machinery, and reporting.
+All three sources share the same store, fetch machinery, and reporting.
 
-Caching: results are kept in docs/data/event-evidence-cache.json (committed, so state
-survives across weekly cron runs on fresh checkouts) keyed by URL. Non-
+Results are kept in docs/data/citation-evidence.json (committed, so state
+survives across weekly cron runs on fresh checkouts) keyed by URL. Named
+"evidence," not "cache," on purpose (renamed 2026-08-22 — see
+internal-heartbeat/2026-08-22-citation-archival-design-decisions.md): most
+of what it holds (content hashes, matched contexts, the sticky blocked
+flag below) IS re-derivable by re-fetching, but --set-url-status's
+url_status field is not — a human-curated verdict (most acutely "unfit,"
+a parked domain that 200s exactly like a healthy page — no script can
+ever recompute that) with no other source of truth. Treat this file like
+any other durable, hand-curated data, not a disposable artifact safe to
+bulk-regenerate or delete; docs/data/citations.json (see
+hooks/citation_export.py) is the one that's actually disposable — fully
+regenerated from this file plus markdown on every build. Non-
 Wikipedia fetches use conditional GET (If-None-Match / If-Modified-Since) so
 an unchanged page costs a 304 instead of a full download. Wikipedia's
 extracts API has no meaningful conditional-GET support, so it's always
@@ -115,7 +126,7 @@ from robots_check import robots_allowed  # noqa: E402
 
 DOCS_DIR = os.path.join(os.path.dirname(__file__), "..", "docs")
 ORG_DIR = os.path.join(DOCS_DIR, "organisations")
-CACHE_PATH = os.path.join(os.path.dirname(__file__), "..", "docs", "data", "event-evidence-cache.json")
+EVIDENCE_PATH = os.path.join(os.path.dirname(__file__), "..", "docs", "data", "citation-evidence.json")
 USER_AGENT = "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
 FETCH_DELAY = 0.5  # seconds between requests — same rate limit as before
 
@@ -127,19 +138,19 @@ FETCH_DELAY = 0.5  # seconds between requests — same rate limit as before
 BLOCKED_ERRORS = {"HTTP_403", "HTTP_429", "ROBOTS_DISALLOWED"}
 
 
-def load_cache():
-    if os.path.exists(CACHE_PATH):
+def load_evidence():
+    if os.path.exists(EVIDENCE_PATH):
         try:
-            with open(CACHE_PATH) as f:
+            with open(EVIDENCE_PATH) as f:
                 return json.load(f)
         except (json.JSONDecodeError, OSError):
             return {}
     return {}
 
 
-def save_cache(cache):
-    with open(CACHE_PATH, "w") as f:
-        json.dump(cache, f, indent=2, sort_keys=True)
+def save_evidence(evidence):
+    with open(EVIDENCE_PATH, "w") as f:
+        json.dump(evidence, f, indent=2, sort_keys=True)
         f.write("\n")
 
 
@@ -812,6 +823,18 @@ def main():
                              "Useful as progress output on long --no-cache runs.")
     parser.add_argument("--save-to-wayback", action="store_true",
                         help="Archive each URL to Wayback Machine's Save Page Now")
+    parser.add_argument("--set-url-status", type=str, nargs=2, default=None,
+                        metavar=("URL", "STATUS"),
+                        help="Manually record a citation URL's liveness in "
+                             "the evidence cache: STATUS is 'dead' (site is "
+                             "gone/404s), 'unfit' (resolves, but to a parked "
+                             "domain/spam — check_event_urls.py can't tell "
+                             "this from a healthy 200 automatically), or "
+                             "'live' (clears the field back to the implicit "
+                             "default). Never auto-set by any script — a "
+                             "human judgment call, same spirit as "
+                             "proof_level_locked. Exits immediately after "
+                             "writing; does not run verification.")
     parser.add_argument("--footnotes-only", action="store_true",
                         help="Only check footnote evidence (skip events)")
     parser.add_argument("--events-only", action="store_true",
@@ -836,17 +859,35 @@ def main():
     args = parser.parse_args()
     if args.offline and args.save_to_wayback:
         parser.error("--offline cannot be combined with --save-to-wayback")
+
+    if args.set_url_status:
+        url, status = args.set_url_status
+        status = status.strip().lower()
+        if status not in ("dead", "unfit", "live"):
+            parser.error("--set-url-status STATUS must be one of: dead, unfit, live")
+        evidence = load_evidence()
+        entry = evidence.get(url, {})
+        if status == "live":
+            entry.pop("url_status", None)
+            print(f"Cleared url_status for {url} (back to implicit live/unset)")
+        else:
+            entry["url_status"] = status
+            print(f"Set url_status={status} for {url}")
+        evidence[url] = entry
+        save_evidence(evidence)
+        return
+
     pagecache.enabled = not args.no_page_cache
 
-    # Always start from the committed cache, even with --no-cache: that flag
-    # means "don't use cached data to answer *this run's* checks" (handled
-    # per-URL via use_cache= below, which check_evidence() already respects),
-    # not "discard the cache file." save_cache() at the end writes this same
-    # dict back out — starting from {} here silently dropped every entry not
-    # touched by this run's (possibly --slug-narrowed) evidence set, which
-    # wiped ~500 unrelated cached entries the one time this was run with
-    # --no-cache --slug together.
-    cache = load_cache()
+    # Always start from the committed evidence file, even with --no-cache:
+    # that flag means "don't use cached data to answer *this run's* checks"
+    # (handled per-URL via use_cache= below, which check_evidence() already
+    # respects), not "discard the file." save_evidence() at the end writes
+    # this same dict back out — starting from {} here silently dropped
+    # every entry not touched by this run's (possibly --slug-narrowed)
+    # evidence set, which wiped ~500 unrelated entries the one time this
+    # was run with --no-cache --slug together.
+    cache = load_evidence()
 
     evidence_items = collect_evidence(args)
 
@@ -987,7 +1028,7 @@ def main():
     # before any mutation), but guard the save anyway so that invariant
     # holds even if future code paths start writing.
     if not args.offline:
-        save_cache(cache)
+        save_evidence(cache)
 
     print()
     print("Evidence checked: " + str(good) + " good, " + str(bad) + " mismatch, " +
