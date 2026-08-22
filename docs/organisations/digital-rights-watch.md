@@ -119,4 +119,4 @@ Amnesty International Australia, Access Now, and Privacy International.
 - [Radical Transparency](../concepts/radical-transparency.md)
 - [E-Government](../concepts/e-government.md)
 
-[^drw-about]: "Australians are equipped, empowered and enabled to uphold their digital rights," [About](https://digitalrightswatch.org.au/about/), Digital Rights Watch.
+[^drw-about]: "Australians are equipped, empowered and enabled to uphold their digital rights." [About](https://digitalrightswatch.org.au/about/), Digital Rights Watch.

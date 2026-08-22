@@ -187,12 +187,18 @@
         "prefix": "cent). On democratic reform, more Australians would prefer four-year parliamentary terms (42 percent) to three-year parliamentary terms (30 percent).",
         "sha256": "ce10879f0f169607d7eb5a4f411406c478231d983a6cf0df4e641a2ae49c6788",
         "suffix": "1 Executive Summary Foreign policy \u2022 Confidence in the United States to come to Australia\u2019s defence dropped from 73 percent in 2022 to 54 percent, it"
+      },
+      "379d7cfdf707057208eddd0c38316760633b228902f57cae406d0540b5e3410c": {
+        "prefix": "share over the past decade has been driven by both women and men shifting their votes to other parties. Political trust and democratic reform \u2022 \u2022 \u2022 \u2022",
+        "sha256": "ce1a9650be22dcaa9b69e6c538cd096aeaba9574e3dcd37161e8554916a811ef",
+        "suffix": "This represents a modest recovery from historic lows in political trust observed in the 2010s. The proportion of Australians who report that they wou"
       }
     },
     "etag": "\"3d12af-644720c43fa9c\"",
     "last_modified": "Tue, 25 Nov 2025 21:34:43 GMT",
     "verified": {
-      "2b0d135d28d75eede3c82ad47035006e99aba8a6ad575ca42f0cd1df5453a6df": true
+      "2b0d135d28d75eede3c82ad47035006e99aba8a6ad575ca42f0cd1df5453a6df": true,
+      "379d7cfdf707057208eddd0c38316760633b228902f57cae406d0540b5e3410c": true
     }
   },
   "https://bethnoveck.medium.com/was-vtaiwan-such-a-big-flop-after-all-d6b365f916dc": {
@@ -551,19 +557,26 @@
   },
   "https://connecticut.news12.com/connecticut-lottery-selects-members-for-property-tax-assembly": {
     "checked": "2026-08-22",
-    "content_hash": "488c33924e7829b21cbd2d65e5fdc623421271751898342a6437182c1dff4af4",
+    "content_hash": "e79d54595261ff2774df89ac9b56e24aaec5f3c36bc1249cab8d51338e320351",
     "contexts": {
       "3180770dd5802b360b7227fad09cff73f84a36777daa24e76378752e1a1792a2": {
         "prefix": "00:26 Brookfield FD warns residents of downed power lines in wake of storm",
         "sha256": "488c33924e7829b21cbd2d65e5fdc623421271751898342a6437182c1dff4af4",
         "suffix": "of the Connecticut Citizens\u2019 Assembly on Property Taxes. Ball 29 was chosen from 40 numbered lottery balls, with each ball representing a group",
         "text": "The Connecticut Lottery Corporation on Thursday conducted a public drawing to select members of the Connecticut Citizens\u2019 Assembly on Property Taxes."
+      },
+      "e79d54595261ff2774df89ac9b56e24aaec5f3c36bc1249cab8d51338e320351": {
+        "prefix": "mbered lottery balls, with each ball representing a group of 110 eligible Connecticut residents. The selected group will serve on the assembly.",
+        "sha256": "e79d54595261ff2774df89ac9b56e24aaec5f3c36bc1249cab8d51338e320351",
+        "suffix": "\u201cPublic confidence is critical to us,\u201d said Frank Suarez, president and CEO of the Connecticut Lottery Corporation. \u201cWe are proud to bring the",
+        "text": "The initiative, organized by the Connecticut Conference of Municipalities, Yale University, the University of Connecticut, and the Connecticut Office of the State Comptroller, will bring together residents from across the state to study Connecticut\u2019s property tax system and develop recommendations."
       }
     },
     "etag": null,
     "last_modified": null,
     "verified": {
-      "3180770dd5802b360b7227fad09cff73f84a36777daa24e76378752e1a1792a2": true
+      "3180770dd5802b360b7227fad09cff73f84a36777daa24e76378752e1a1792a2": true,
+      "e79d54595261ff2774df89ac9b56e24aaec5f3c36bc1249cab8d51338e320351": true
     }
   },
   "https://constitutionnet.org/news/hungarys-parliament-passes-constitutional-amendment-limiting-prime-ministerial-terms": {
@@ -832,19 +845,33 @@
   },
   "https://democracy-technologies.org/participation/consensus-building-in-taiwan/": {
     "checked": "2026-08-22",
-    "content_hash": "b56388912102008782057e3346b4933a891feeffa1f1b284d6265c0c7d5105bc",
+    "content_hash": "de8413d811d001081c34e059f75faed442d029d46a8517c013e7e7b7614f6629",
     "contexts": {
       "8268a06cd26c208f2ff000a2f0f9954f57894ab78c1fecb71998e7e7b592eef1": {
         "prefix": "Taiwan is a world-leader in digital democracy. It all started with vTaiwan, an online participation platform powered by Polis. Launched in 2015,",
         "sha256": "b56388912102008782057e3346b4933a891feeffa1f1b284d6265c0c7d5105bc",
         "suffix": "A demonstration by the Sunflower Movement in Tapei, 2014. The vTaiwan platform was developed in the wake of the protests.",
         "text": "Taiwan is a world-leader in digital democracy. It all started with vTaiwan, an online participation platform powered by Polis. Launched in 2015, it has transformed how the government brings stakeholders together, allowing for a more inclusive approach to legislation."
+      },
+      "c61b3cf6296e218b72d25b3b7ff4120bd8a27e5cbdc8bdc6cbcf8a7ed4ba6726": {
+        "prefix": "as proven effective at shaping many pieces of legislation in Taiwan\u2019s digital economy \u2013 from areas like e-scooters to FinTech and beyond. While",
+        "sha256": "de8413d811d001081c34e059f75faed442d029d46a8517c013e7e7b7614f6629",
+        "suffix": "\u201ca tiger without teeth,\u201d it has nevertheless had an impact. Another more recent online debate platform called \u2018Join,\u2019 also overseen by the Digital Af",
+        "text": "While vTaiwan has been criticised for being, as one policymaker described it, \u201ca tiger without teeth,\u201d it has nevertheless had an impact. Another more recent online debate platform called \u2018Join,\u2019 also overseen by the Digital Affairs Ministry of Taiwan, has been a big success. The purview of Join has gone well beyond vTaiwan covering issues like drunk driving, sexual assault, and child abuse, while including a greater number of older and less tech-savvy users."
+      },
+      "ee67814d029a6fcc96a148f4f39c8302b2195e4bab5e055a9a2a3f75c4800248": {
+        "prefix": "ebate. Initially, opinions were strong on both sides of the debate between pro- and anti-Uber camps \u2013 the latter eventually growing far larger.",
+        "sha256": "ee67814d029a6fcc96a148f4f39c8302b2195e4bab5e055a9a2a3f75c4800248",
+        "suffix": "The two camps came to agree that there should be a level playing field between Uber and taxi firms. It was a scenario which protected customers",
+        "text": "However, as vTaiwan users revised viewpoints, they coalesced around more consensual statements like \u2018the government should set up a fair regulatory regime,\u2019 and \u2018private passenger vehicles should be registered.\u2019"
       }
     },
     "etag": "W/\"6a88beec-22634\"",
     "last_modified": "Fri, 21 Aug 2026 21:11:08 GMT",
     "verified": {
-      "8268a06cd26c208f2ff000a2f0f9954f57894ab78c1fecb71998e7e7b592eef1": true
+      "8268a06cd26c208f2ff000a2f0f9954f57894ab78c1fecb71998e7e7b592eef1": true,
+      "c61b3cf6296e218b72d25b3b7ff4120bd8a27e5cbdc8bdc6cbcf8a7ed4ba6726": true,
+      "ee67814d029a6fcc96a148f4f39c8302b2195e4bab5e055a9a2a3f75c4800248": true
     }
   },
   "https://democracyincolour.org/about/": {
@@ -913,6 +940,24 @@
     "last_modified": null,
     "verified": {
       "5348539bb8d44fef1114fcbbfc3894eb19fb0686e0b684f390a91571a372cdff": true
+    }
+  },
+  "https://digitalrightswatch.org.au/about/": {
+    "checked": "2026-08-22",
+    "content_hash": "8d15b406f8b645bd26f20c2b3247c07d975088c611365bc3f44b2694ed182d9b",
+    "contexts": {
+      "42459bdeaf89dbd7c1d1fc9693287356f5d5eeb59a69467a02840e7788277257": {
+        "prefix": "this vision \u2013 to ensure fairness, freedoms and fundamental rights for all people who engage in the digital world. Our mission is to ensure that",
+        "sha256": "8d15b406f8b645bd26f20c2b3247c07d975088c611365bc3f44b2694ed182d9b",
+        "suffix": "We believe that digital rights are human rights which see their expression online. Privacy & Security We believe in the fu",
+        "text": "Our mission is to ensure that Australians are equipped, empowered and enabled to uphold their digital rights. We believe that digital rights are human rights which see their expression online."
+      }
+    },
+    "etag": "\"31715cde8aff9c8282f701813a2debe8-ssl-df\"",
+    "last_modified": null,
+    "verified": {
+      "42459bdeaf89dbd7c1d1fc9693287356f5d5eeb59a69467a02840e7788277257": true,
+      "8ca49ec4bd0ef0b9bee787e8c3ede794136b0cf8d74689064a52047755c4cab7": false
     }
   },
   "https://ec.europa.eu/newsroom/cc-demos/items/741221/en": {
@@ -1063,6 +1108,8 @@
     }
   },
   "https://en.wikipedia.org/wiki/Athenian_democracy": {
+    "blocked": "HTTP_429",
+    "blocked_since": "2026-08-22",
     "checked": "2026-08-22",
     "content_hash": "3c2c536f52e562c75dc2c2a848c03e47d64b8cfe237ee2a0e6939331a137de94",
     "contexts": {
@@ -1360,6 +1407,8 @@
     }
   },
   "https://en.wikipedia.org/wiki/G0v_movement": {
+    "blocked": "HTTP_429",
+    "blocked_since": "2026-08-22",
     "checked": "2026-08-22",
     "content_hash": "53374246d21b55f7ccc6e4609a414c26eec3b8ecd7b27b1c95301828dc27057d",
     "contexts": {
@@ -1641,6 +1690,18 @@
       "efe411c66ca31c2815d935d5c144e0bf43b1da4f3973190f4e5bd88a6eb876f0": true
     }
   },
+  "https://en.wikipedia.org/wiki/Local_government_in_Victoria": {
+    "blocked": "HTTP_429",
+    "blocked_since": "2026-08-22",
+    "checked": "2026-08-22",
+    "content_hash": "0c803a4071fcc52dc6166cd4bcae9c53eb918a5a926c39c5efae51b44baf0cf5",
+    "contexts": {},
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "b5bc32e83a8e136f5dcaeea8cf3e24fa9c21e474af5267426ee89a2b1f8ec89b": false
+    }
+  },
   "https://en.wikipedia.org/wiki/Loomio": {
     "checked": "2026-08-22",
     "content_hash": "23880a28a900c902f72a25d6b879c04ad8846fbe6802b1acc46f9e19d79da787",
@@ -1864,6 +1925,8 @@
     }
   },
   "https://en.wikipedia.org/wiki/OpenAustralia_Foundation": {
+    "blocked": "HTTP_429",
+    "blocked_since": "2026-08-22",
     "checked": "2026-08-22",
     "content_hash": "17e022c6157463ba6a56fbbc7ad00dabc582ebfc5953c6ca9d6e69e1454030a1",
     "contexts": {
@@ -3612,6 +3675,57 @@
       "189034b7801ad11ac83990aeb72cb6d361a9a3e4ad5ad8e6a81b712b88ba6fe5": true
     }
   },
+  "https://www.abc.net.au/news/2020-02-18/city-of-casey-sacked-administrators-could-run-council-until-2024/11976104": {
+    "checked": "2026-08-22",
+    "content_hash": "345242d3a41170a28a7dd9f31e5ec804a7d63c05590f1df25ff694ad0a97ef8b",
+    "contexts": {
+      "345242d3a41170a28a7dd9f31e5ec804a7d63c05590f1df25ff694ad0a97ef8b": {
+        "prefix": "ons will be held in Victoria in October this year, but Local Government Minister Adam Somyurek said the City of Casey would not be taking part.",
+        "sha256": "345242d3a41170a28a7dd9f31e5ec804a7d63c05590f1df25ff694ad0a97ef8b",
+        "suffix": "The Independent Broad-based Anti-corruption Commission (IBAC) is also investigating allegations Mr Woodman bribed some Casey councillors in exc",
+        "text": "The State Government on Tuesday passed legislation to sack the entire council, after an independent monitor's report recommended it be dismissed over allegations of corruption linked to property developer John Woodman."
+      }
+    },
+    "etag": "\"cvrszioe0q7uan\"",
+    "last_modified": null,
+    "verified": {
+      "345242d3a41170a28a7dd9f31e5ec804a7d63c05590f1df25ff694ad0a97ef8b": true,
+      "cf7cbe5e4dbdc565ba94aa3e0249394c4e88f0aeada351789e308175bad4c0c2": false
+    }
+  },
+  "https://www.abc.net.au/news/2025-09-03/operation-sandon-casey-council-ibac-charges/105730716": {
+    "checked": "2026-08-22",
+    "content_hash": "7eff2149d77f435dead275d291fc7d710baa7bd601ee3d18cb0da67ee7616fa6",
+    "contexts": {
+      "247d2feb502adcbb151a2c11633866a5bea367147d6303c7bff270bcb426ccee": {
+        "prefix": "an's right-hand woman and lobbyist Megan Schutz coached Cr Aziz to support their planning applications, including providing him with a script. \"",
+        "sha256": "4743852d62981fcbb144fe1d32f7c818cff2d1266aebab48b24351f9d70d94ae",
+        "suffix": "\" the report found. John Woodman denies he bribed any Casey councillors. (ABC News: Danielle Bonica)",
+        "text": "\"IBAC uncovered a web of well-orchestrated strategies designed to manipulate Casey Council decision-making processes, buy influence and undermine the effectiveness of the Victorian planning system in exchange for certain benefits,\" the report found."
+      },
+      "5a5a0dcfee8c24b999c0e59978c2a484d21b62be6c9ca26d12b84e2359e15ae5": {
+        "prefix": "etly recorded phone calls, and one councillor and former VFL footballer being paid tens of thousands of dollars for a racehorse that never ran.",
+        "sha256": "5a5a0dcfee8c24b999c0e59978c2a484d21b62be6c9ca26d12b84e2359e15ae5",
+        "suffix": "It said covert phone calls revealed Mr Woodman's right-hand woman and lobbyist Megan Schutz coached Cr Aziz to support their planning applicati",
+        "text": "The report named councillors Sam Aziz and Geoff Ablett as receiving more than $550,000 each from Mr Woodman in exchange for support for his plans to rezone tracts of land in Cranbourne West."
+      },
+      "7eff2149d77f435dead275d291fc7d710baa7bd601ee3d18cb0da67ee7616fa6": {
+        "prefix": "nduct in public office and misuse of position. It said a property development consultant had been charged with giving secret commissions.",
+        "sha256": "7eff2149d77f435dead275d291fc7d710baa7bd601ee3d18cb0da67ee7616fa6",
+        "suffix": "Both accused are expected to appear in the Melbourne Magistrates' Court on September 25. Operation Sandon included 40 days of explosive h",
+        "text": "IBAC has not named those charged and said it would not be providing any further comment as the matter was now before the courts."
+      }
+    },
+    "etag": "\"16cd0agshh27arb\"",
+    "last_modified": null,
+    "verified": {
+      "247d2feb502adcbb151a2c11633866a5bea367147d6303c7bff270bcb426ccee": true,
+      "5a5a0dcfee8c24b999c0e59978c2a484d21b62be6c9ca26d12b84e2359e15ae5": true,
+      "5b42070dfddfdb25b3ebbdcb1ca0c6eb1575d0284a6433f6d071ee40106d18ae": false,
+      "7eff2149d77f435dead275d291fc7d710baa7bd601ee3d18cb0da67ee7616fa6": true,
+      "bfc9bbd977e14e048df17be8ac830c1e072332383c73f1b2cde21305a487d8c6": false
+    }
+  },
   "https://www.accountabilityrt.org/fiona-mcleod-sc-to-head-up-art/": {
     "checked": "2026-08-22",
     "content_hash": "0cc00077183835dbd3a3e72556b834ede1f50071760c2fc371935ab57980a82b",
@@ -3631,8 +3745,14 @@
   },
   "https://www.aec.gov.au/FADReform/factsheets/changes-explained.htm": {
     "checked": "2026-08-22",
-    "content_hash": "941b9aab4ba4838e3c8fb4c83e52569dbdbf2acb59e3e790cc47e88bd33560b0",
+    "content_hash": "34923ee574a62aba255b9ed9e82d940b2d7fba6c7ce70d626ee72e89c1276700",
     "contexts": {
+      "34923ee574a62aba255b9ed9e82d940b2d7fba6c7ce70d626ee72e89c1276700": {
+        "prefix": "anges to funding and disclosure Introduction to the Reform Explaining the changes to funding and disclosure",
+        "sha256": "34923ee574a62aba255b9ed9e82d940b2d7fba6c7ce70d626ee72e89c1276700",
+        "suffix": "From 1 January 2027, major changes to political funding and disclosure take effect. These changes impact political parties, parliamentari",
+        "text": "The Electoral Legislation Amendment (Electoral Reform) Act 2025 is the biggest update to the Commonwealth Electoral Act 1918 in 40 years."
+      },
       "941b9aab4ba4838e3c8fb4c83e52569dbdbf2acb59e3e790cc47e88bd33560b0": {
         "prefix": "e than $5,000 must be disclosed. Gift and electoral expenditure caps Limits on how much can be donated and spent. Faster disclosure",
         "sha256": "941b9aab4ba4838e3c8fb4c83e52569dbdbf2acb59e3e790cc47e88bd33560b0",
@@ -3643,24 +3763,32 @@
     "etag": null,
     "last_modified": null,
     "verified": {
+      "34923ee574a62aba255b9ed9e82d940b2d7fba6c7ce70d626ee72e89c1276700": true,
       "941b9aab4ba4838e3c8fb4c83e52569dbdbf2acb59e3e790cc47e88bd33560b0": true
     }
   },
   "https://www.aec.gov.au/media/2025/02-21.htm": {
     "checked": "2026-08-22",
-    "content_hash": "2beb20ec2ae5cf1a0dc25b692b98abf1d84290a99bbcf086d25a268cc81d4b81",
+    "content_hash": "ad52b261744d4c6702d476de53efa94cab92bd4b4e5ba82c917d16ba4922734a",
     "contexts": {
       "65b3f44a15f09c122d1848cadccfc32ba1876a12be0a6bff9c7c4f3e86421986": {
         "prefix": "ll commence on 1 July 2026, meaning they will not be in effect for the 2025 federal election. Acting Electoral Commissioner Jeff Pope said that",
         "sha256": "2beb20ec2ae5cf1a0dc25b692b98abf1d84290a99bbcf086d25a268cc81d4b81",
         "suffix": "\u201cThe implementation of these reforms is very significant for the AEC \u2013 we're undertaking extensive preparation for changes to our processes, re",
         "text": "Acting Electoral Commissioner Jeff Pope said that the legislative amendments are substantial \u2013 the largest in nearly 40 years for funding and disclosure."
+      },
+      "d2019b57c82b8a07d8e8095f8384bcf23e8076a3e76967931a5f6fe195009660": {
+        "prefix": "Changes to electoral laws Updated: 21 February 2025 New electoral reforms have recently been passed by the Australian Parliament.",
+        "sha256": "ad52b261744d4c6702d476de53efa94cab92bd4b4e5ba82c917d16ba4922734a",
+        "suffix": "The amendments cover the following two areas: the Commonwealth funding and disclosure scheme Electoral process (machinery) amendments.",
+        "text": "The Electoral Legislation Amendment (Electoral Reform) Act 2025 received Royal Assent on, Thursday 20 February 2025. The amendments cover the following two areas:"
       }
     },
     "etag": null,
     "last_modified": null,
     "verified": {
-      "65b3f44a15f09c122d1848cadccfc32ba1876a12be0a6bff9c7c4f3e86421986": true
+      "65b3f44a15f09c122d1848cadccfc32ba1876a12be0a6bff9c7c4f3e86421986": true,
+      "d2019b57c82b8a07d8e8095f8384bcf23e8076a3e76967931a5f6fe195009660": true
     }
   },
   "https://www.africanews.com/2026/06/30/senegals-national-assembly-passes-constitutional-reform-curbing-presidential-powers/": {
@@ -3997,6 +4125,24 @@
     "last_modified": "Sat, 22 Aug 2026 09:10:31 GMT",
     "verified": {
       "b793b2e7e595240550e5e0027f6396743d963448660ec2c96fe4c59440698404": true
+    }
+  },
+  "https://www.councilwatch.com.au": {
+    "checked": "2026-08-22",
+    "content_hash": "f7cdf9d106d78051f754ba20069af51f09bfe1a7276a473f5c5b246b51a4a53f",
+    "contexts": {
+      "f7cdf9d106d78051f754ba20069af51f09bfe1a7276a473f5c5b246b51a4a53f": {
+        "prefix": "com.au Media Enquiries ONLY: Dean Hurlston President 0427 862 103 2026 Council Watch Inc A0040924M",
+        "sha256": "f7cdf9d106d78051f754ba20069af51f09bfe1a7276a473f5c5b246b51a4a53f",
+        "suffix": "Council Watch Media Code of Ethics Council Watch Adopts the MEAA journalist code of ethics bottom of page",
+        "text": "Registered since 2001."
+      }
+    },
+    "etag": "W/\"3b915dacbc5bc6354e52ff2c8eb4b3a9\"",
+    "last_modified": null,
+    "verified": {
+      "22735f4443b58fcdea38dd20b5bcbb2b5209e4c4664aef57f7fad2127f5c7e49": false,
+      "f7cdf9d106d78051f754ba20069af51f09bfe1a7276a473f5c5b246b51a4a53f": true
     }
   },
   "https://www.crossroadsconversation.com.au/events/on-the-importance-of-conversation-for-the-very-idea-of-a-common-humanity": {
@@ -4557,6 +4703,76 @@
       "dcdf3c83bd6362ebde6b230b820a2b7af0b4deda87c90d048f17a5daa3cd4b1e": true
     }
   },
+  "https://www.lgi.vic.gov.au/managing-employment-cycle-council-ceo": {
+    "checked": "2026-08-22",
+    "content_hash": "6f10cc0e7e364c2d03d78cd3c277984982bbc5d8ab1e4e3d955d2a4fe3a15627",
+    "contexts": {
+      "6a5f5a957fde4b111c7cddd0cf0389f53eecf2f953a1e870916de6a1040eaa0d": {
+        "prefix": "rected our focus on the unique employer/employee relationship. This is prescribed under the legislative framework for local government, where the CEO",
+        "sha256": "6f10cc0e7e364c2d03d78cd3c277984982bbc5d8ab1e4e3d955d2a4fe3a15627",
+        "suffix": "It creates a unique situation where a group of people, who may have limited capability in managing employment cycles, have a say in the employment re",
+        "text": "Recent investigations and events have directed our focus on the unique employer/employee relationship. This is prescribed under the legislative framework for local government, where the CEO is employed and managed by an entity comprised of elected community representatives who make decisions by democratic vote. It creates a unique situation where a group of people, who may have limited capability in managing employment cycles, have a say in the employment relationship but no single individual is responsible."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "04c9606d7c5ff7a1c08ca2034c0cc5951fcdf9903afc517eba066c20a9da9601": false,
+      "6a5f5a957fde4b111c7cddd0cf0389f53eecf2f953a1e870916de6a1040eaa0d": true
+    }
+  },
+  "https://www.lgi.vic.gov.au/managing-employment-cycle-council-ceo/current-employment-arrangements": {
+    "checked": "2026-08-22",
+    "content_hash": "b058caac262c0773211206f6bc97fdd2385dde7cd4553d2e6528d8746cb72453",
+    "contexts": {
+      "9b46f47d57e95dd2c78aecf9b00d496de8c13e246ddeb3abce97a92c20edc109": {
+        "prefix": "A CEO\u2019s contract cannot extend beyond five years but there is no limit on how many times a CEO can be reappointed and enter into a new contract.",
+        "sha256": "b058caac262c0773211206f6bc97fdd2385dde7cd4553d2e6528d8746cb72453",
+        "suffix": "The Minister may exempt a council from employing a CEO under contract, and may also forbid a council from employing a CEO or entering into a ne",
+        "text": "A CEO\u2019s contract cannot extend beyond five years but there is no limit on how many times a CEO can be reappointed and enter into a new contract. The CEO\u2019s contract must specify performance criteria, and the council must review the CEO\u2019s performance at least once a year."
+      },
+      "d2e9e4ef2d54511739cf08701758218c606746cba28ef4ed6a764653b72ed1ad": {
+        "prefix": "beyond that election. Nor can a council make any decisions with regard to CEO employment during the caretaker period before a general election.",
+        "sha256": "b058caac262c0773211206f6bc97fdd2385dde7cd4553d2e6528d8746cb72453",
+        "suffix": "The CEO\u2019s contract must specify performance criteria, and the council must review the CEO\u2019s performance at least once a year. The Minister may",
+        "text": "A CEO\u2019s contract cannot extend beyond five years but there is no limit on how many times a CEO can be reappointed and enter into a new contract. The CEO\u2019s contract must specify performance criteria, and the council must review the CEO\u2019s performance at least once a year."
+      },
+      "eb48a27e68001079c2a60019ada993c681496843e475513090f10cfd195a7b80": {
+        "prefix": "enable the audit and risk committee to monitor and report on a council\u2019s performance against the remuneration policy but this is not mandated.",
+        "sha256": "eb48a27e68001079c2a60019ada993c681496843e475513090f10cfd195a7b80",
+        "suffix": "This will be discussed later in the report, noting that the proposed legislation lapsed during the 2018 parliamentary term. P",
+        "text": "There were also reforms proposed that required the Mayor and/or council to obtain independent advice in overseeing CEO recruitment, contractual arrangements and performance monitoring."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "39240145e84b911ab89e11c3b262ff9da58c75f3e0772b34d4e097e4e04a5f0c": false,
+      "8f7320598554838dd50978cce32cc0796800d33e4d89af46c6cb2b643b88a1ca": false,
+      "9b46f47d57e95dd2c78aecf9b00d496de8c13e246ddeb3abce97a92c20edc109": true,
+      "ccbdca563f7c7dedf206e5b2b3e92553cc24da786ff5b8fddcac70f5236ba8a0": false,
+      "d2e9e4ef2d54511739cf08701758218c606746cba28ef4ed6a764653b72ed1ad": true,
+      "eb48a27e68001079c2a60019ada993c681496843e475513090f10cfd195a7b80": true
+    }
+  },
+  "https://www.lgi.vic.gov.au/winter-2024-local-government-integrity-matters/local-government-amendment-governance-and-integrity-bill-2024": {
+    "checked": "2026-08-22",
+    "content_hash": "13fdac26c7eceb692fd511598bf12706c641bcce85e0a4693b097ee180b5cb2b",
+    "contexts": {
+      "13fdac26c7eceb692fd511598bf12706c641bcce85e0a4693b097ee180b5cb2b": {
+        "prefix": "Local Government Amendment (Governance and Integrity) Bill 2024",
+        "sha256": "13fdac26c7eceb692fd511598bf12706c641bcce85e0a4693b097ee180b5cb2b",
+        "suffix": "The Bill: Introduces ongoing mandates training for mayors and councillors that expand the existing induction training r",
+        "text": "The Bill includes reforms to strengthen council leadership, capability and councillor conduct, improve early intervention and effective dispute resolution and strengthen oversight mechanisms."
+      }
+    },
+    "etag": null,
+    "last_modified": null,
+    "verified": {
+      "13fdac26c7eceb692fd511598bf12706c641bcce85e0a4693b097ee180b5cb2b": true,
+      "6187556d8cfd633fcc66654f733309a30e583d1d8a5afbad5b45fa382347774e": false
+    }
+  },
   "https://www.localgovernment.vic.gov.au/__data/assets/word_doc/0027/167913/Local-Government-Act-2020-Principles-Community-Engagement.docx": {
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-20",
@@ -4833,6 +5049,8 @@
     }
   },
   "https://www.parliament.vic.gov.au/4a42b9/contentassets/ef9b956f759e4dc1ad5f601f71a29823/3ab-response-to-upper-house-electoral-system.pdf": {
+    "blocked": "HTTP_403",
+    "blocked_since": "2026-08-22",
     "contexts": {
       "a18f6d18433800d7bf75e7d1f2483b748565a9d12dd0ccfe181179e615b34ec2": {
         "prefix": "tem (March 2026) Page 8 of 11 EMC recommendation Recommendation 4 VEC response This recommendation is not applicable to the VEC.",
