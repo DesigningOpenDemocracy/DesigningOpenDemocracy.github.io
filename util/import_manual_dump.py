@@ -75,8 +75,8 @@ sys.path.insert(0, os.path.dirname(__file__))
 import manual_dump  # noqa: E402
 import pagecache  # noqa: E402
 from check_fragments import (  # noqa: E402
-    CACHE_PATH, _extract_pdf_text, _extract_zip_xml_text, collect_evidence,
-    context_for_quote, load_cache, save_cache, sha256,
+    EVIDENCE_PATH, _extract_pdf_text, _extract_zip_xml_text, collect_evidence,
+    context_for_quote, load_evidence, save_evidence, sha256,
 )
 from text_fragment import html_to_text, normalize_ws, quote_matches  # noqa: E402
 
@@ -303,7 +303,7 @@ def main():
     args = parser.parse_args()
 
     if args.rebuild_map:
-        entries = rebuild_import_map(load_cache(), manual_dump.load_url_map())
+        entries = rebuild_import_map(load_evidence(), manual_dump.load_url_map())
         save_import_map(entries)
         known = sum(1 for e in entries.values() if e["url"])
         print("Manifest rebuilt from imported/: " +
@@ -338,7 +338,7 @@ def main():
     for url, evidence, source_label, kind, _path in collect_evidence(fake_args):
         evidence_by_url.setdefault(url, []).append((evidence, source_label, kind))
 
-    cache = load_cache()
+    cache = load_evidence()
     url_map = manual_dump.load_url_map()
     imp_map = load_import_map()
     imported = 0
@@ -348,13 +348,13 @@ def main():
             imported += 1
 
     if not args.dry_run:
-        save_cache(cache)
+        save_evidence(cache)
         save_import_map(imp_map)
 
     print()
     print(str(imported) + " of " + str(len(snapshots)) + " snapshot(s) imported" +
           (" (dry run — nothing written)" if args.dry_run else ""))
-    print("Cache: " + CACHE_PATH)
+    print("Evidence file: " + EVIDENCE_PATH)
     if not args.dry_run:
         print("Import map: " + manual_dump.IMPORT_MAP_PATH)
 

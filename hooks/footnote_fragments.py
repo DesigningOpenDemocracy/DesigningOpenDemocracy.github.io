@@ -14,7 +14,7 @@ stored in the markdown. The same text_fragment.py module is used.
 
 If a Wayback Machine snapshot for that same url has been recorded
 (via `util/check_fragments.py --save-to-wayback`, cached in
-docs/data/event-evidence-cache.json), a second, visible archive-box
+docs/data/citation-evidence.json), a second, visible archive-box
 link is added right after the citation link — in addition to it, not
 replacing it — pointing at the archived copy as a Robust-Links-style
 fallback. See util/text_fragment.py's load_archive_info().

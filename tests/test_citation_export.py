@@ -2,7 +2,7 @@
 """Regression tests for hooks/citation_export.py's on_pre_build(): the
 CSL-JSON citations.json export, and specifically that archive/
 archive_location/url-status are a fresh *projection* of
-docs/data/event-evidence-cache.json on every build, never carried
+docs/data/citation-evidence.json on every build, never carried
 forward from citations.json's own previous output.
 
 That's the fix for the drift risk recorded in internal-heartbeat/
@@ -68,7 +68,7 @@ class OnPreBuildArchiveProjectionTests(unittest.TestCase):
 
         self._orig_docs_dir = ce.DOCS_DIR
         self._orig_out_path = ce.OUT_PATH
-        self._orig_archive_cache_path = tf.ARCHIVE_CACHE_PATH
+        self._orig_archive_cache_path = tf.EVIDENCE_PATH
         ce.DOCS_DIR = docs_dir
         ce.OUT_PATH = os.path.join(docs_dir, "data", "citations.json")
         self.addCleanup(self._restore)
@@ -76,13 +76,13 @@ class OnPreBuildArchiveProjectionTests(unittest.TestCase):
     def _restore(self):
         ce.DOCS_DIR = self._orig_docs_dir
         ce.OUT_PATH = self._orig_out_path
-        tf.ARCHIVE_CACHE_PATH = self._orig_archive_cache_path
+        tf.EVIDENCE_PATH = self._orig_archive_cache_path
 
     def _set_archive_cache(self, data):
         path = os.path.join(self.tmpdir, "evidence-cache.json")
         with open(path, "w", encoding="utf-8") as f:
             json.dump(data, f)
-        tf.ARCHIVE_CACHE_PATH = path
+        tf.EVIDENCE_PATH = path
 
     def _read_citations(self):
         with open(ce.OUT_PATH, encoding="utf-8") as f:

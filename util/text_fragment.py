@@ -23,8 +23,8 @@ import re
 from urllib.parse import quote as url_quote
 from urllib.parse import unquote, urlparse, urlunparse
 
-ARCHIVE_CACHE_PATH = os.path.join(
-    os.path.dirname(__file__), "..", "docs", "data", "event-evidence-cache.json"
+EVIDENCE_PATH = os.path.join(
+    os.path.dirname(__file__), "..", "docs", "data", "citation-evidence.json"
 )
 
 _BLOCK_TAGS = [
@@ -256,7 +256,7 @@ def load_archive_info():
     of the normal citation url, never a replacement for it.
     """
     try:
-        with open(ARCHIVE_CACHE_PATH, encoding="utf-8") as f:
+        with open(EVIDENCE_PATH, encoding="utf-8") as f:
             cache = json.load(f)
     except (OSError, ValueError):
         return {}

@@ -32,12 +32,12 @@ class OnPageContentTests(unittest.TestCase):
 
     def setUp(self):
         self._orig_cache = ff._archive_info_cache
-        self._orig_path = tf.ARCHIVE_CACHE_PATH
+        self._orig_path = tf.EVIDENCE_PATH
         self.addCleanup(self._restore)
 
     def _restore(self):
         ff._archive_info_cache = self._orig_cache
-        tf.ARCHIVE_CACHE_PATH = self._orig_path
+        tf.EVIDENCE_PATH = self._orig_path
 
     def _set_archive_cache(self, data):
         with tempfile.NamedTemporaryFile(
@@ -45,7 +45,7 @@ class OnPageContentTests(unittest.TestCase):
             json.dump(data, f)
             path = f.name
         self.addCleanup(lambda: os.remove(path))
-        tf.ARCHIVE_CACHE_PATH = path
+        tf.EVIDENCE_PATH = path
         ff._archive_info_cache = None  # force a reload from the new path
 
     def _render(self, markdown_src, html_src):

@@ -854,12 +854,12 @@ class SetUrlStatusCliTests(unittest.TestCase):
         self.tmpdir = tempfile.mkdtemp()
         self.addCleanup(shutil.rmtree, self.tmpdir, ignore_errors=True)
         self.cache_path = os.path.join(self.tmpdir, "cache.json")
-        self._orig_cache_path = cf.CACHE_PATH
-        cf.CACHE_PATH = self.cache_path
+        self._orig_cache_path = cf.EVIDENCE_PATH
+        cf.EVIDENCE_PATH = self.cache_path
         self.addCleanup(self._restore)
 
     def _restore(self):
-        cf.CACHE_PATH = self._orig_cache_path
+        cf.EVIDENCE_PATH = self._orig_cache_path
 
     def _run(self, *argv):
         with mock.patch.object(sys, "argv", ["check_fragments.py", *argv]):
@@ -867,27 +867,27 @@ class SetUrlStatusCliTests(unittest.TestCase):
 
     def test_sets_dead_status_on_new_url(self):
         self._run("--set-url-status", "https://example.org/x", "dead")
-        cache = cf.load_cache()
+        cache = cf.load_evidence()
         self.assertEqual(cache["https://example.org/x"]["url_status"], "dead")
 
     def test_sets_unfit_status_preserving_other_fields(self):
-        cf.save_cache({"https://example.org/x": {"checked": "2026-08-01"}})
+        cf.save_evidence({"https://example.org/x": {"checked": "2026-08-01"}})
         self._run("--set-url-status", "https://example.org/x", "unfit")
-        cache = cf.load_cache()
+        cache = cf.load_evidence()
         self.assertEqual(cache["https://example.org/x"]["url_status"], "unfit")
         self.assertEqual(cache["https://example.org/x"]["checked"], "2026-08-01")
 
     def test_live_clears_the_field(self):
-        cf.save_cache({"https://example.org/x": {"url_status": "dead",
+        cf.save_evidence({"https://example.org/x": {"url_status": "dead",
                                                    "checked": "2026-08-01"}})
         self._run("--set-url-status", "https://example.org/x", "live")
-        cache = cf.load_cache()
+        cache = cf.load_evidence()
         self.assertNotIn("url_status", cache["https://example.org/x"])
         self.assertEqual(cache["https://example.org/x"]["checked"], "2026-08-01")
 
     def test_status_is_case_insensitive(self):
         self._run("--set-url-status", "https://example.org/x", "DEAD")
-        cache = cf.load_cache()
+        cache = cf.load_evidence()
         self.assertEqual(cache["https://example.org/x"]["url_status"], "dead")
 
     def test_invalid_status_rejected(self):

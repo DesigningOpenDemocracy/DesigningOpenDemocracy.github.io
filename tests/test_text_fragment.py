@@ -426,20 +426,20 @@ class LoadArchiveInfoTests(unittest.TestCase):
     dead/unfit, swap which link renders as primary."""
 
     def setUp(self):
-        self._orig_path = tf.ARCHIVE_CACHE_PATH
+        self._orig_path = tf.EVIDENCE_PATH
         self.addCleanup(self._restore_path)
 
     def _restore_path(self):
-        tf.ARCHIVE_CACHE_PATH = self._orig_path
+        tf.EVIDENCE_PATH = self._orig_path
 
     def _write_cache(self, tmp_path, data):
         import json
         with open(tmp_path, "w", encoding="utf-8") as f:
             json.dump(data, f)
-        tf.ARCHIVE_CACHE_PATH = tmp_path
+        tf.EVIDENCE_PATH = tmp_path
 
     def test_missing_cache_file_returns_empty(self):
-        tf.ARCHIVE_CACHE_PATH = "/nonexistent/path/does-not-exist.json"
+        tf.EVIDENCE_PATH = "/nonexistent/path/does-not-exist.json"
         self.assertEqual(tf.load_archive_info(), {})
         self.assertEqual(tf.load_archive_urls(), {})
 
@@ -504,7 +504,7 @@ class LoadArchiveInfoTests(unittest.TestCase):
             f.write("{not valid json")
             path = f.name
         self.addCleanup(lambda: os.remove(path))
-        tf.ARCHIVE_CACHE_PATH = path
+        tf.EVIDENCE_PATH = path
         self.assertEqual(tf.load_archive_info(), {})
 
 

@@ -326,7 +326,7 @@ only if a concrete downstream consumer actually needs it.
   something automated end-to-end.
 - **2026-08-22:** Added `url_status` (`dead`/`unfit`, manually set via
   `check_fragments.py --set-url-status`, never inferred) to
-  `docs/data/event-evidence-cache.json`, and a corresponding `url-status`
+  `docs/data/citation-evidence.json`, and a corresponding `url-status`
   DOD extension field on `citations.json`. Also fixed a real gap found
   while designing this: `archive`/`archive_location` had been sitting
   unpopulated (0 of 328 entries) since the 2026-08-12 changelog entry
@@ -334,11 +334,11 @@ only if a concrete downstream consumer actually needs it.
   thing that ever wrote them — had never actually been run, while the
   archive-box *rendering* added that same day was wired to a completely
   different, independently-populated cache
-  (`event-evidence-cache.json`'s `archive_url`, written by
+  (`citation-evidence.json`'s `archive_url`, written by
   `check_fragments.py --save-to-wayback`). Two write paths for the same
   data, neither one populating the CSL export. Fixed by making
   `citations.json`'s `archive`/`archive_location`/`url-status` fields a
-  **read-only projection** of `event-evidence-cache.json`, generated
+  **read-only projection** of `citation-evidence.json`, generated
   fresh by `hooks/citation_export.py` on every build rather than carried
   forward from the file's own previous output — `citations_tool.py
   --archive` remains valid for a third-party citations.json (its

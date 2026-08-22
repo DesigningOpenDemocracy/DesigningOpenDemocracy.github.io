@@ -13,11 +13,17 @@ docs/data/org-concepts.csv
 docs/data/events.json
 docs/calendar.ics
 docs/calendar-*.ics
+docs/data/citations.json
 # Re-generated at every build from in-repo data:
 # - events.json + calendar.ics are derived from docs/data/events/<slug>.json
 #   (the committed iCal sync cache) so they don't need to be versioned.
-# - citations.json IS committed — it captures the last known verification
-#   state from util/.event_evidence_cache.json, which is also committed.
+# - citations.json is a read-only CSL-JSON projection of markdown quotes
+#   plus docs/data/citation-evidence.json (both committed) — see
+#   hooks/citation_export.py and CLAUDE.md's "Citation archival" section.
+#   Was committed until 2026-08-22; stopped once citation_export.py
+#   became a strict projection with zero information not already in the
+#   two committed sources, at which point committing it was pure
+#   regenerable-build-output noise with no upside, same as events.json.
 manual-dump/
 # Local working state for the manual page-dump workflow (see
 # util/manual_dump.py) — human-saved browser snapshots for citation URLs

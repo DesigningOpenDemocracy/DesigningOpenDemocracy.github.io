@@ -7,7 +7,7 @@ Output: docs/data/citations.json
 Flow:
   1. Extract quotes from markdown (events + footnotes)
   2. Load existing citations.json (if any) to preserve verification data
-  3. Load docs/data/event-evidence-cache.json for archive/url-status data
+  3. Load docs/data/citation-evidence.json for archive/url-status data
   4. Merge: add new quotes, drop removed ones, carry forward enrichment
   5. Write back
 
@@ -18,7 +18,7 @@ Evidence fields (per-claim, nested under evidence: array):
   type: quote-match, quote, status, last-verified, verified-by, context
 
 archive/archive_location/url-status are a read-only projection of
-docs/data/event-evidence-cache.json — see on_pre_build()'s comment for
+docs/data/citation-evidence.json — see on_pre_build()'s comment for
 why this file never independently writes those three fields itself.
 """
 
@@ -90,7 +90,7 @@ def on_pre_build(config):
                 existing[cite["URL"]] = cite
 
     # archive/archive_location/url-status are a *projection* of
-    # docs/data/event-evidence-cache.json, not carried forward from this
+    # docs/data/citation-evidence.json, not carried forward from this
     # file's own previous output — that cache is the one place anything
     # ever writes a Wayback snapshot or a liveness verdict
     # (check_fragments.py's --save-to-wayback / --set-url-status), so
