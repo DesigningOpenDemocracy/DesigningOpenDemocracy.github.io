@@ -28,6 +28,34 @@ class NormalizeWsTests(unittest.TestCase):
         self.assertEqual(tf.normalize_ws(""), "")
 
 
+class NormalizeWsParenSpacingTests(unittest.TestCase):
+    """html_to_text() can insert a space just inside a parenthesis where the
+    rendered page has none — inline-tag boundaries like `(<i>N</i> = 5734)`
+    extract as '( N = 5734)'. Human-pasted quotes always carry the rendered
+    form, so matching drops whitespace immediately inside parens."""
+
+    def test_drops_space_after_open_paren(self):
+        self.assertEqual(tf.normalize_ws("Participants ( N = 5734) preferred"),
+                         "Participants (N = 5734) preferred")
+
+    def test_drops_space_before_close_paren(self):
+        self.assertEqual(tf.normalize_ws("(see this thing ) here"),
+                         "(see this thing) here")
+
+    def test_keeps_legitimate_space_before_open_paren(self):
+        self.assertEqual(tf.normalize_ws("word (with space) unchanged"),
+                         "word (with space) unchanged")
+
+    def test_multiline_artifact_form(self):
+        self.assertEqual(tf.normalize_ws("(\n  N = 5734\n)"), "(N = 5734)")
+
+    def test_quote_matches_across_paren_spacing_difference(self):
+        page = tf.html_to_text("<p>Participants (<i>N</i> = 5734) preferred "
+                               "AI-generated statements.</p>")
+        quote = "Participants (N = 5734) preferred AI-generated statements."
+        self.assertTrue(tf.quote_matches(page, quote))
+
+
 class CountOccurrencesTests(unittest.TestCase):
 
     def test_counts_whitespace_tolerant_matches(self):

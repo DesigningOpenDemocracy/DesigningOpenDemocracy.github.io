@@ -72,8 +72,14 @@ def html_to_text(raw_html):
 
 
 def normalize_ws(text):
-    """Collapse whitespace for forgiving substring matching."""
-    return " ".join(text.split())
+    """Collapse whitespace for forgiving substring matching. Also drops
+    whitespace immediately *inside* parentheses: html_to_text()'s handling
+    of inline-tag boundaries can insert a space where the rendered page has
+    none (confirmed on science.org — `(<i>N</i> = 5734)` extracted as
+    '( N = 5734)'), while human-pasted quotes always carry the rendered
+    form. The legitimate space *before* an open-paren is left alone."""
+    text = re.sub(r"\(\s+", "(", text)
+    return re.sub(r"\s+\)", ")", " ".join(text.split()))
 
 
 def count_occurrences(page_text, quote_text):

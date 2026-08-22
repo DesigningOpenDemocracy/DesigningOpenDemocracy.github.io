@@ -102,7 +102,7 @@ The Sortition Foundation is the UK's leading organisation specifically dedicated
 
 [^hennig]: Brett Hennig, *The End of Politicians: Democratic Alternatives to Them*, Scribe Publications, 2017.
 
-[^updates]: "2026 Frontiers of Democratic Lotteries Workshop" (18 June 2026) and "We're looking for a new Independent Director" — [Updates page](https://www.sortitionfoundation.org/updates), Sortition Foundation. Fetched 12 August 2026, active with posts through June 2026.
+[^updates]: "Frontiers of Democratic Lotteries Workshop 18 June, 2026 We're looking for a new Independent Director" — [Updates page](https://www.sortitionfoundation.org/updates), Sortition Foundation. Fetched 12 August 2026, active with posts through June 2026.
 
 [^poll-lords]: "43% of British adults, including 46% of adults living in the North, say that replacing the House of Lords with a citizens' assembly would increase their trust in politics" [New poll finds widespread support for replacing the House of Lords](https://www.sortitionfoundation.org/uk_poll_may_2025), Sortition Foundation, 8 May 2025.
 
@@ -110,4 +110,4 @@ The Sortition Foundation is the UK's leading organisation specifically dedicated
 
 [^odlp]: "Last year we secured funding to build OpenDLP, a brand new open-source digital platform that will make democratic lotteries more inclusive by automating the process for selecting participants for citizens' assemblies." [Introducing the Open Democratic Lottery Platform](https://www.sortitionfoundation.org/introducing_the_open_democratic_lottery_platform), Sortition Foundation, 8 July 2025.
 
-[^ecps]: "As we continue our work across the continent, we remain committed to upholding the democratic potential of sortition-based processes — bringing real people into meaningful dialogue and decision-making about Europe's future." [Empowering Citizens Across Europe: Sortition in the European Citizens' Panels](https://www.sortitionfoundation.org/ecps_2025), Sortition Foundation, 10 June 2025.
+[^ecps]: "As we continue our work across the continent, we remain committed to upholding the democratic potential of sortition-based processes—bringing real people into meaningful dialogue and decision-making about Europe’s future." [Empowering Citizens Across Europe: Sortition in the European Citizens' Panels](https://www.sortitionfoundation.org/ecps_2025), Sortition Foundation, 10 June 2025.

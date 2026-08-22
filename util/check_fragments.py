@@ -35,6 +35,15 @@ hash — this doesn't save the request, but it does tell you whether the
 article actually changed since your last check, which is the signal that
 matters for "has this citation drifted."
 
+Separately from that verification state, every full page body fetched here is
+also written through to .pagecache/ (gitignored; see util/pagecache.py) so a
+later human/AI session can read what a cited page said without re-pinging the
+site. Those copies never feed back into verification — pass --no-page-cache
+to skip writing them (the weekly cron does). The reverse direction exists as
+--offline: check evidence against those stored copies alone, no network and
+no effect on official verification state — the cite-adjustment workflow
+(does my reworded quote still match what the page said at last fetch?).
+
 A URL that returns 403/429 (bot protection, not a transient failure) has
 that recorded against it (cache[url]["blocked"]/["blocked_since"]) and is
 skipped entirely — no network call — on every subsequent run, reported as
@@ -65,6 +74,8 @@ Usage:
     python util/check_fragments.py --slug mosaiclab  # single org
     python util/check_fragments.py --slug g0v --slug namfrel  # multiple orgs
     python util/check_fragments.py --no-cache        # ignore cache, re-fetch everything
+    python util/check_fragments.py --offline         # check against .pagecache/ copies only (no network)
+    python util/check_fragments.py --verbose (-v)    # also print one line per quiet GOOD result
     python util/check_fragments.py --save-to-wayback # archive each URL to Wayback Machine
     python util/check_fragments.py --footnotes-only  # only check footnotes
 
@@ -98,6 +109,7 @@ from text_fragment import (  # noqa: E402
     normalize_ws, quote_matches, spacing_autofix,
 )
 import manual_dump  # noqa: E402 — the manual-dump request queue (see util/manual_dump.py)
+import pagecache  # noqa: E402 — local reading copies of fetched pages (see util/pagecache.py)
 import reorder_frontmatter  # noqa: E402 — canonical frontmatter re-serialization for the autofix fallback
 from robots_check import robots_allowed  # noqa: E402
 
@@ -250,6 +262,56 @@ def _extract_pdf_text(content):
         return None
 
 
+def _extract_zip_xml_text(content):
+    """Extract plain text from zip-packaged XML documents — .docx (OOXML,
+    text in word/document.xml <w:t> runs) and .odt/.ods/.odp (OpenDocument,
+    text in content.xml <text:p>/<text:span> elements). Stdlib-only: a
+    zip is a zip, and ElementTree handles the namespaces. Detected by the
+    PK zip magic bytes, not by URL extension (a .docx URL may serve
+    anything after a site redesign; the bytes don't lie). Returns None if
+    the bytes aren't a readable zip or contain none of the known document
+    members — the caller turns that into an explicit OFFICE_PARSE_ERROR
+    rather than a false MISMATCH. Formatting is lost deliberately:
+    verification only ever needs the words."""
+    try:
+        import xml.etree.ElementTree as ET
+        import zipfile
+
+        def local(tag):
+            return tag.rsplit("}", 1)[-1] if isinstance(tag, str) else ""
+
+        def walk(el, out):
+            tag = local(el.tag)
+            if tag in ("t", "span"):          # w:t / text:span (spans nest)
+                out.append(el.text or "")
+                for child in el:
+                    walk(child, out)
+            elif tag in ("tab", "br"):
+                out.append(" ")
+            elif tag in ("p", "h"):           # w:p / text:p, plus headings
+                # Mixed-content order preserved: the paragraph's own leading
+                # text, then each child in turn, then the break AFTER them.
+                out.append(el.text or "")
+                for child in el:
+                    walk(child, out)
+                out.append("\n")
+            else:                              # document/body/run containers
+                for child in el:
+                    walk(child, out)
+
+        with zipfile.ZipFile(io.BytesIO(content)) as z:
+            for member in ("word/document.xml",   # .docx (OOXML)
+                           "content.xml"):         # .odt/.ods/.odp (OpenDocument)
+                if member not in z.namelist():
+                    continue
+                parts = []
+                walk(ET.fromstring(z.read(member)), parts)
+                return "".join(parts)
+    except Exception:
+        return None
+    return None
+
+
 def _fetch_page_text(url, headers):
     """One unconditional or conditional GET. Returns (text_or_None, resp_or_None, error_or_None).
     text is None with resp set when the server returned 304 (unchanged, no body)."""
@@ -268,7 +330,9 @@ def _fetch_page_text(url, headers):
             r = requests.get(api_url, headers={"User-Agent": USER_AGENT}, timeout=15)
             r.raise_for_status()
             pages = r.json().get("query", {}).get("pages", {})
-            return next(iter(pages.values())).get("extract", ""), r, None
+            extract = next(iter(pages.values())).get("extract", "")
+            pagecache.store(url, extract)
+            return extract, r, None
         # Wikipedia's own REST/action API is deliberately not gated above —
         # it's designed for exactly this kind of programmatic access (see
         # CLAUDE.md's "Sourcing from Wikipedia"). Every other citation URL
@@ -286,7 +350,24 @@ def _fetch_page_text(url, headers):
             text = _extract_pdf_text(r.content)
             if text is None:
                 return None, None, "PDF_PARSE_ERROR"
-            return re.sub(r"\s+", " ", text).strip(), r, None
+            text = re.sub(r"\s+", " ", text).strip()
+            pagecache.store(url, text)
+            return text, r, None
+
+        # Zip-packaged office documents (.docx/.odt/...), detected by magic
+        # bytes rather than URL extension — after a site redesign a .docx
+        # link may serve anything, and the bytes don't lie. A readable zip
+        # that isn't a known document format reports OFFICE_PARSE_ERROR
+        # rather than falling through to the HTML path: decoding compressed
+        # bytes as text would just false-MISMATCH every quote (the same
+        # failure mode issue #149 fixed for PDFs).
+        if r.content[:2] == b"PK":
+            text = _extract_zip_xml_text(r.content)
+            if text is None:
+                return None, None, "OFFICE_PARSE_ERROR"
+            text = re.sub(r"\s+", " ", text).strip()
+            pagecache.store(url, text)
+            return text, r, None
 
         # Extraction itself (tag-stripping, script/style removal, entity
         # decoding, paragraph-break preservation, the 2MB sanity cap) lives
@@ -294,7 +375,25 @@ def _fetch_page_text(url, headers):
         # import path (util/import_manual_dump.py) so a live fetch and a
         # browser-saved snapshot of the same page always produce identical
         # text. See that function's docstring for the "why" of each step.
-        return html_to_text(r.text), r, None
+        #
+        # Charset gotcha, confirmed on climateassembly.uk (2026-08-22): the
+        # site serves UTF-8 bytes but declares no charset, and requests'
+        # RFC-default for unlabelled text/* is ISO-8859-1 — so r.text came
+        # back mojibake'd ("â€™" for "’") and every curly-apostrophe quote
+        # false-MISMATCHed against it. Browsers sniff and render these fine.
+        # When the declared encoding is absent or a Latin-1 family default,
+        # prefer a clean UTF-8 decode of the raw bytes; fall back to r.text
+        # if that fails (a genuinely non-UTF-8 legacy page).
+        body = r.text
+        declared = (r.encoding or "").lower()
+        if declared in ("", "iso-8859-1", "latin-1", "windows-1252"):
+            try:
+                body = r.content.decode("utf-8")
+            except UnicodeDecodeError:
+                pass
+        text = html_to_text(body)
+        pagecache.store(url, text)
+        return text, r, None
     except requests.HTTPError as e:
         return None, None, f"HTTP_{e.response.status_code if e.response is not None else '?'}"
     except requests.RequestException:
@@ -303,7 +402,7 @@ def _fetch_page_text(url, headers):
         return None, None, "FETCH_ERROR"
 
 
-def check_evidence(url, evidence, cache, use_cache=True):
+def check_evidence(url, evidence, cache, use_cache=True, from_pagecache=False):
     """Verify one piece of evidence text against a URL, using the cache to
     avoid redundant fetches. The cache stores ETag/Last-Modified/content
     hash plus a small per-evidence-string good/bad map — deliberately NOT
@@ -336,6 +435,24 @@ def check_evidence(url, evidence, cache, use_cache=True):
     entry = cache.get(url, {}) if use_cache else {}
     ev_key = sha256(normalize_ws(evidence))
     is_wikipedia = wikipedia_title(url) is not None
+
+    # --offline: answer from the .pagecache/ reading copy only — no network,
+    # no evidence-cache writes, no manual-dump queueing. The cite-adjustment
+    # use case: "does my reworded quote match what this page said last time
+    # we actually fetched it?" Deliberately bypasses the sticky-blocked cache
+    # too (a URL whose live fetch is blocked can still have a stored copy),
+    # and returns the stored text as page_text so --autofix-spaces works
+    # against it. The cache dict is left untouched: offline answers never
+    # become official verification state — the live run owns that.
+    if from_pagecache:
+        stored = pagecache.get(url)
+        if stored is None:
+            return None, False, "NOT_CACHED", False, None, None
+        text, meta = stored
+        result = quote_matches(text, evidence)
+        ambiguous = result and count_occurrences(text, evidence) > 1
+        hint = None if result else closest_match_hint(text, evidence)
+        return ("good" if result else "bad"), False, None, ambiguous, hint, text
 
     # A URL already confirmed BLOCKED (403/429) on a prior run is skipped
     # entirely — no network call this run at all — until --no-cache forces
@@ -677,6 +794,22 @@ def main():
                         help="Check a single org (repeatable: pass --slug once per org)")
     parser.add_argument("--no-cache", action="store_true",
                         help="Ignore the evidence cache")
+    parser.add_argument("--no-page-cache", action="store_true",
+                        help="Don't write fetched page text to the local .pagecache/ "
+                             "reading archive (util/pagecache.py). Used by the weekly "
+                             "cron, where the artifact would be discarded with the "
+                             "runner anyway; locally it's how you opt out.")
+    parser.add_argument("--offline", action="store_true",
+                        help="Check evidence against .pagecache/ copies only — no "
+                             "network, no writes to the evidence cache or the "
+                             "manual-dump queue. For cite adjustment: verifies a "
+                             "reworded quote against what its page said at last "
+                             "fetch; URLs with no stored copy are reported as "
+                             "NOT CACHED and don't fail the run.")
+    parser.add_argument("--verbose", "-v", action="store_true",
+                        help="Print one line per checked item, including the quiet "
+                             "GOOD results (problems always print regardless). "
+                             "Useful as progress output on long --no-cache runs.")
     parser.add_argument("--save-to-wayback", action="store_true",
                         help="Archive each URL to Wayback Machine's Save Page Now")
     parser.add_argument("--footnotes-only", action="store_true",
@@ -701,6 +834,9 @@ def main():
                              "for ad hoc/manual review. Purely additive: never "
                              "changes stdout or the exit code.")
     args = parser.parse_args()
+    if args.offline and args.save_to_wayback:
+        parser.error("--offline cannot be combined with --save-to-wayback")
+    pagecache.enabled = not args.no_page_cache
 
     # Always start from the committed cache, even with --no-cache: that flag
     # means "don't use cached data to answer *this run's* checks" (handled
@@ -722,6 +858,7 @@ def main():
     ambiguous_count = 0
     autofixed = 0
     autofix_pending = 0
+    not_cached = 0
     wayback_saved = 0
     wayback_failed = 0
     by_kind = {"event": {"good": 0, "bad": 0, "errors": 0},
@@ -733,7 +870,8 @@ def main():
 
     for url, evidence, source_label, kind, path in evidence_items:
         result, unchanged_hit, error, ambiguous, hint, page_text = check_evidence(
-            url, evidence, cache, use_cache=not args.no_cache
+            url, evidence, cache, use_cache=not args.no_cache,
+            from_pagecache=args.offline
         )
 
         if args.save_to_wayback:
@@ -750,20 +888,32 @@ def main():
             time.sleep(0.5)
 
         if error:
-            by_kind[kind]["errors"] += 1
             if unchanged_hit:
                 # Already confirmed BLOCKED on a prior run — skipped
                 # entirely this run, no network call made. See
                 # check_evidence()'s "blocked" cache field.
                 still_blocked += 1
+                by_kind[kind]["errors"] += 1
                 blocked_since = cache.get(url, {}).get("blocked_since", "?")
                 report_fetch_errors.append({"source": source_label, "url": url, "error": error,
                                              "blocked_since": blocked_since})
                 print("  STILL BLOCKED  " + source_label)
                 print("               " + url + "  (" + error + ", confirmed blocked since " +
                       blocked_since + " — skipped, use --no-cache to recheck)")
+            elif error == "NOT_CACHED":
+                # --offline mode only: no .pagecache copy for this URL yet.
+                # A coverage gap, not a fetch failure or a bad quote — so it
+                # gets its own counter, is excluded from the per-kind error
+                # tallies, and never affects the exit code.
+                not_cached += 1
+                report_fetch_errors.append({"source": source_label, "url": url, "error": error})
+                print("  NOT CACHED  " + source_label)
+                print("              " + url)
+                print("              no .pagecache copy yet — do one fetching pass "
+                      "(e.g. --no-cache) before relying on --offline here")
             else:
                 errors += 1
+                by_kind[kind]["errors"] += 1
                 report_fetch_errors.append({"source": source_label, "url": url, "error": error})
                 print("  FETCH ERROR  " + source_label)
                 print("               " + url + "  (" + error + ")")
@@ -775,6 +925,17 @@ def main():
         if result == "good":
             good += 1
             by_kind[kind]["good"] += 1
+            if args.verbose:
+                # page_text non-None means this run had a full body in hand
+                # (a live fetch, or the stored copy in --offline mode);
+                # None means answered without one (evidence-cache hit or a
+                # 304) — the suffix makes that distinction visible.
+                if page_text:
+                    origin = "from .pagecache" if args.offline else "fetched"
+                    suffix = f"  ({origin}, {len(page_text):,} chars)"
+                else:
+                    suffix = ""
+                print("  ok  " + source_label + suffix)
             if ambiguous:
                 ambiguous_count += 1
                 report_ambiguous.append({"source": source_label, "url": url, "evidence": evidence[:200]})
@@ -822,7 +983,11 @@ def main():
                     print("            diff (page − / quote +):")
                     print(diff)
 
-    save_cache(cache)
+    # Offline answers never touch the cache dict (check_evidence returns
+    # before any mutation), but guard the save anyway so that invariant
+    # holds even if future code paths start writing.
+    if not args.offline:
+        save_cache(cache)
 
     print()
     print("Evidence checked: " + str(good) + " good, " + str(bad) + " mismatch, " +
@@ -831,6 +996,9 @@ def main():
     if still_blocked:
         print("  (" + str(still_blocked) + " more skipped — already confirmed BLOCKED on a "
               "prior run; pass --no-cache to recheck)")
+    if not_cached:
+        print("  (" + str(not_cached) + " more had no local copy — offline mode checks "
+              ".pagecache/ only)")
     if autofixed:
         print("  (" + str(autofixed) + " auto-fixed in place (spacing-only differences))")
     if autofix_pending:
@@ -863,10 +1031,12 @@ def main():
             f.write("\n")
 
     if bad:
-        print("\n" + str(bad) + " piece(s) of evidence no longer match their live source.")
+        print("\n" + str(bad) + " piece(s) of evidence no longer match their " +
+              ("stored .pagecache copy" if args.offline else "live source") + ".")
         sys.exit(1)
     else:
-        print("All checkable evidence matches live pages.")
+        print("All checkable evidence matches " +
+              ("stored .pagecache copies." if args.offline else "live pages."))
         if errors:
             print("(" + str(errors) + " fetch errors — re-run later)")
         sys.exit(0)

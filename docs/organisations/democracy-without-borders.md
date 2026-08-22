@@ -30,8 +30,8 @@ events:
   title: Co-launched the Campaign for a UN World Citizens' Initiative at a meeting
     opposite the UN headquarters in New York
   url: https://www.democracywithoutborders.org/12106/campaign-for-a-un-world-citizens-initiative-launched-in-new-york/
-  quote: The Campaign for the World Citizens' Initiative was formally launched at
-    a meeting opposite the UN's headquarters in New York on Thursday, 14 November
+  quote: The Campaign for the World Citizens’ Initiative was formally launched at
+    a meeting opposite the UN’s headquarters in New York on Thursday, 14 November
     2019.
   proof_level: high
   url_checked: '2026-08-21'
@@ -58,7 +58,7 @@ last_checked: '2026-08-21'
 
 Democracy Without Borders (DWB) is an international nongovernmental organization established in 2017, with its legal seat in Berlin and national chapters across the world, that promotes "global democracy, global governance and global citizenship".[^dwb-wiki]
 
-[^dwb-wiki]: "Democracy Without Borders, or DWB is an international nongovernmental organization established in 2017 with national chapters across the world and a legal seat in Berlin that promotes 'global democracy, global governance and global citizenship.'" [Democracy Without Borders](https://en.wikipedia.org/wiki/Democracy_Without_Borders), Wikipedia.
+[^dwb-wiki]: "Democracy Without Borders, or DWB is an international nongovernmental organization established in 2017 with national chapters across the world and a legal seat in Berlin" [Democracy Without Borders](https://en.wikipedia.org/wiki/Democracy_Without_Borders), Wikipedia.
 
 The organisation grew out of the Committee for a Democratic UN, founded in 2003, and is led by co-founder Andreas Bummel. Its core proposal is a United Nations Parliamentary Assembly — initially a consultative body whose powers could grow as public support rises — on which DWB coordinates a campaign backed by over 1,600 current and former members of parliament from around 150 countries.[^unpa]
 

@@ -28,7 +28,7 @@ events:
   url: https://www.involve.org.uk/about/about-involve
   quote: Since 2003, we have been working with governments, parliaments, civil society,
     academics and members of the public to create, advocate for and deliver new forms
-    of public participation that re-vitalise democracy, improve decision-making, and
+    of public participation that re-vitalise democracy, improve decision making, and
     enable people to shape the decisions that affect their lives.
   proof_level: high
   url_checked: '2026-08-12'

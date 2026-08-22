@@ -769,6 +769,30 @@
     ]
   },
   {
+    "id": "8b97aa34",
+    "type": "webpage",
+    "URL": "https://digitalrightswatch.org.au/2018/05/14/the-state-of-digital-rights/",
+    "title": "Published the inaugural \"State of Digital Rights\" report assessing Australia's digital rights landscape",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Today, we’re proud to release the State of Digital Rights report, which outlines the many ways Australians’ rights are being impacted by the activities of private companies and governments in the online world."
+      }
+    ]
+  },
+  {
+    "id": "df0cf937",
+    "type": "webpage",
+    "URL": "https://digitalrightswatch.org.au/2018/10/03/slow-down-stop-and-listen-consumers-human-rights-groups-industry-telcos-and-technology-companies-join-forces-to-sound-alarm-at-governments-spyware-legislation/",
+    "title": "Co-founded the \"Alliance for a Safe and Secure Internet\" coalition opposing the Assistance and Access encryption bill",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Consumers, human rights groups, industry, telcos and technology companies join forces to sound alarm at Government’s spyware legislation"
+      }
+    ]
+  },
+  {
     "id": "b0e8d64b",
     "type": "webpage",
     "URL": "https://ec.europa.eu/newsroom/cc-demos/items/741221/en",
@@ -1053,7 +1077,7 @@
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "Democracy Without Borders, or DWB is an international nongovernmental organization established in 2017 with national chapters across the world and a legal seat in Berlin that promotes 'global democracy, global governance and global citizenship.'"
+        "quote": "Democracy Without Borders, or DWB is an international nongovernmental organization established in 2017 with national chapters across the world and a legal seat in Berlin"
       },
       {
         "type": "quote-match",
@@ -1086,6 +1110,18 @@
     ]
   },
   {
+    "id": "c664e4b3",
+    "type": "webpage",
+    "URL": "https://en.wikipedia.org/wiki/Digital_Rights_Watch",
+    "title": "Founded in Melbourne, largely in response to Australia's mandatory telecommunications data retention scheme",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "In 2016, largely in response to the introduction of Australia's mandatory telecommunications data retention scheme, Digital Rights Watch was created at a meeting of representatives from Australian digital and human rights organisations, activists, political advisers, technology consultants and academics."
+      }
+    ]
+  },
+  {
     "id": "435c3955",
     "type": "webpage",
     "URL": "https://en.wikipedia.org/wiki/Electoral_Institute_for_Sustainable_Democracy_in_Africa",
@@ -1114,6 +1150,34 @@
       {
         "type": "quote-match",
         "quote": "was founded in January 1884 as the Proportional Representation Society by"
+      }
+    ]
+  },
+  {
+    "id": "2f109edd",
+    "type": "webpage",
+    "URL": "https://en.wikipedia.org/wiki/Electronic_Frontiers_Australia",
+    "title": "Established, inspired by (but not affiliated with) the US Electronic Frontier Foundation",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "EFA and other privacy organisations lodged complaints with the Office of the Australian Information Commissioner regarding the use of facial recognition technology by major Australian retailers. Following an investigation, the regulator found that the use of facial recognition technology breached privacy laws, and retailers including Bunnings were directed to cease the practice."
+      },
+      {
+        "type": "quote-match",
+        "quote": "EFA was established on 1 January 1994, influenced at the time by the work of the Electronic Frontier Foundation (EFF) in the United States, but they are not affiliated."
+      },
+      {
+        "type": "quote-match",
+        "quote": "Part of the fundamental problem with adopting AI to make decisions is that the law is designed for human decision-makers. If an AI tool forms part of government decision making in any way, it could expose the government to legal actions similar to the robodebt administrative law actions."
+      },
+      {
+        "type": "quote-match",
+        "quote": "The EFA presented a petition against mandatory internet filtering with 19,000 signatures to the Australian Senate."
+      },
+      {
+        "type": "quote-match",
+        "quote": "the organisation’s chair, Lyndsey Jackson, was also involved in the creation of the “Not My Debt” website, an online platform that collected accounts from individuals affected by the scheme"
       }
     ]
   },
@@ -2264,6 +2328,18 @@
     ]
   },
   {
+    "id": "a3c23e57",
+    "type": "webpage",
+    "URL": "https://governancehubafrica.org/about",
+    "title": "Formalises strategic partnership with Youth Agenda on youth participation in governance",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "22nd April 2026 GHA & Youth Agenda Formalise Strategic Partnership A meaningful stride for youth in democratic governance as Youth Agenda and Governance Hub Africa formalise a strategic collaboration focused on advancing youth participation, strengthening democratic engagement, and amplifying policy influence."
+      }
+    ]
+  },
+  {
     "id": "161214bc",
     "type": "webpage",
     "URL": "https://grattan.edu.au/about-us/",
@@ -2412,30 +2488,6 @@
     ]
   },
   {
-    "id": "600b19ec",
-    "type": "webpage",
-    "URL": "https://horizonstate.com/hst-faq/",
-    "title": "Returned under new management after a community group purchased the platform's IP assets",
-    "evidence": [
-      {
-        "type": "quote-match",
-        "quote": "Award-winning tech company Horizon State today (1/11/2019) announced it is returning under new management."
-      }
-    ]
-  },
-  {
-    "id": "2c5867d8",
-    "type": "webpage",
-    "URL": "https://horizonstate.com/hst-token/",
-    "title": "Relaunched its token as Horizon State Token (HST) on the Base network, with an airdrop to prior Decision Token holders",
-    "evidence": [
-      {
-        "type": "quote-match",
-        "quote": "Horizon State Token is a continuation of the Decision Token that came to an end in 2019. We are a new ownership and management team who have airdropped tokens to prior holders as goodwill."
-      }
-    ]
-  },
-  {
     "id": "47fa6bdf",
     "type": "webpage",
     "URL": "https://ia.acs.org.au/article/2018/blockchain-to-revolutionise-e-voting.html",
@@ -2467,7 +2519,7 @@
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "What kind of 'democracy' do new government-led digital initiatives facilitate? This paper discusses the issue by investigating the open government data policy in Taiwan in the 2010s"
+        "quote": "What kind of “democracy"
       }
     ]
   },
@@ -3170,6 +3222,42 @@
     ]
   },
   {
+    "id": "c29b69b1",
+    "type": "webpage",
+    "URL": "https://web.archive.org/web/20250531195416/https://mckinnon.co/",
+    "title": "Rebranded from Susan McKinnon Foundation to McKinnon",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Introducing McKinnon, formerly the Susan McKinnon Foundation. A new name for a renewed commitment to enabling better governments for a stronger Australia."
+      }
+    ]
+  },
+  {
+    "id": "1f4557ea",
+    "type": "webpage",
+    "URL": "https://web.archive.org/web/20260419134339/https://horizonstate.com/hst-faq/",
+    "title": "Returned under new management after a community group purchased the platform's IP assets",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Award-winning tech company Horizon State today (1/11/2019) announced it is returning under new management."
+      }
+    ]
+  },
+  {
+    "id": "eb1ed2da",
+    "type": "webpage",
+    "URL": "https://web.archive.org/web/20260419153549/https://horizonstate.com/hst-token/",
+    "title": "Relaunched its token as Horizon State Token (HST) on the Base network, with an airdrop to prior Decision Token holders",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Horizon State Token is a continuation of the Decision Token that came to an end in 2019. We are a new ownership and management team who have airdropped tokens to prior holders as goodwill."
+      }
+    ]
+  },
+  {
     "id": "a3bc0169",
     "type": "webpage",
     "URL": "https://wecollect.ch/ueber-uns/",
@@ -3273,7 +3361,7 @@
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "The Australian Government worked with civil society to develop a Third National Action Plan(NAP3), which was published on 15 December 2023 and captures an ambitious plan for open government, transparency and accountability."
+        "quote": "The Australian Government worked with civil society to develop a Third National Action Plan (NAP3), which was published on 15 December 2023. It captures an ambitious plan for open government, transparency and accountability."
       }
     ]
   },
@@ -3615,7 +3703,7 @@
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "The Campaign for the World Citizens' Initiative was formally launched at a meeting opposite the UN's headquarters in New York on Thursday, 14 November 2019."
+        "quote": "The Campaign for the World Citizens’ Initiative was formally launched at a meeting opposite the UN’s headquarters in New York on Thursday, 14 November 2019."
       }
     ]
   },
@@ -3700,9 +3788,9 @@
     ]
   },
   {
-    "id": "447c5be9",
+    "id": "143a9cef",
     "type": "webpage",
-    "URL": "https://www.devex.com/news/q-a-tim-lo-surdo-on-how-to-bring-a-voice-to-australia-s-communities-of-color-90674",
+    "URL": "https://www.devex.com/news/sponsored/q-a-tim-lo-surdo-on-how-to-bring-a-voice-to-australia-s-communities-of-color-90674",
     "title": "Launched in Canberra by founder Tim Lo Surdo as Australia's first national racial-justice advocacy organisation led by people of colour",
     "evidence": [
       {
@@ -3895,7 +3983,7 @@
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "Since 2003, we have been working with governments, parliaments, civil society, academics and members of the public to create, advocate for and deliver new forms of public participation that re-vitalise democracy, improve decision-making, and enable people to shape the decisions that affect their lives."
+        "quote": "Since 2003, we have been working with governments, parliaments, civil society, academics and members of the public to create, advocate for and deliver new forms of public participation that re-vitalise democracy, improve decision making, and enable people to shape the decisions that affect their lives."
       }
     ]
   },
@@ -4248,14 +4336,14 @@
     ]
   },
   {
-    "id": "bc0de320",
+    "id": "300c0652",
     "type": "webpage",
-    "URL": "https://www.parliament.vic.gov.au/get-involved/inquiries/electoralsysteminquiry/reports",
-    "title": "reports page",
+    "URL": "https://www.parliament.vic.gov.au/4a42b9/contentassets/ef9b956f759e4dc1ad5f601f71a29823/3ab-response-to-upper-house-electoral-system.pdf",
+    "title": "\"Response to the Electoral Matters Committee report on Victoria's Upper House electoral system\"",
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "That, following the 2026 election, a new process be established to consider and negotiate different views about the best electoral structure for Victoria’s Upper House and make a recommendation if it reaches general agreement. The independent process could be: an expert panel, a citizens’ assembly, a constitutional convention."
+        "quote": "That, following the 2026 election, a new process be established to consider and negotiate different views about the best electoral structure for Victoria’s Upper House and make a recommendation if it reaches general agreement."
       }
     ]
   },
@@ -4566,7 +4654,7 @@
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "As we continue our work across the continent, we remain committed to upholding the democratic potential of sortition-based processes — bringing real people into meaningful dialogue and decision-making about Europe's future."
+        "quote": "As we continue our work across the continent, we remain committed to upholding the democratic potential of sortition-based processes—bringing real people into meaningful dialogue and decision-making about Europe’s future."
       }
     ]
   },
@@ -4626,7 +4714,7 @@
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "2026 Frontiers of Democratic Lotteries Workshop"
+        "quote": "Frontiers of Democratic Lotteries Workshop 18 June, 2026 We're looking for a new Independent Director"
       }
     ]
   },
@@ -4690,7 +4778,7 @@
     "evidence": [
       {
         "type": "quote-match",
-        "quote": "Susan McKinnon Foundation Co-Founder Grant Rule said: &ldquo;Now, more than ever, we need to publicly recognise political leadership that shows vision and courage and has had a constructive impact for"
+        "quote": "Susan McKinnon Foundation Co-Founder Grant Rule said: “Now, more than ever, we need to publicly recognise political leadership that shows vision and courage and has had a constructive impact for our country.”"
       }
     ]
   },

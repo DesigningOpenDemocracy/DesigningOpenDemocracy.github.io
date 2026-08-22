@@ -56,7 +56,7 @@ events:
     engagement after the post-2020 dormancy
   url: https://www.ag.gov.au/integrity/australias-open-government-partnership
   quote: The Australian Government worked with civil society to develop a Third National
-    Action Plan(NAP3), which was published on 15 December 2023 and captures an ambitious
+    Action Plan (NAP3), which was published on 15 December 2023. It captures an ambitious
     plan for open government, transparency and accountability.
   proof_level: high
   url_checked: '2026-08-21'

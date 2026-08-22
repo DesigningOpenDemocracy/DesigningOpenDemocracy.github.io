@@ -53,30 +53,31 @@ events:
 - date: '2019-11-01'
   title: Returned under new management after a community group purchased the platform's
     IP assets
-  url: https://horizonstate.com/hst-faq/
+  url: https://web.archive.org/web/20260419134339/https://horizonstate.com/hst-faq/
   quote: Award-winning tech company Horizon State today (1/11/2019) announced it is
     returning under new management.
   proof_level: high
-  url_checked: '2026-08-21'
+  url_checked: '2026-08-22'
   notable: true
 - date: '2024-12-04'
   title: Relaunched its token as Horizon State Token (HST) on the Base network, with
     an airdrop to prior Decision Token holders
-  url: https://horizonstate.com/hst-token/
+  url: https://web.archive.org/web/20260419153549/https://horizonstate.com/hst-token/
   quote: Horizon State Token is a continuation of the Decision Token that came to
     an end in 2019. We are a new ownership and management team who have airdropped
     tokens to prior holders as goodwill.
   proof_level: high
-  url_checked: '2026-08-21'
+  url_checked: '2026-08-22'
   notable: false
 activity:
   dod:
-    date: 2026-08-21
-    note: 'Status corrected inactive→active: site live (archived monthly through Jun
-      2026), community-buyout relaunch Nov 2019, HST token relaunched Dec 2024 on
-      Base; page updated with two new sourced events'
-    url: https://horizonstate.com/hst-token/
-    checked: 2026-08-21
+    date: 2026-08-22
+    note: Domain observed redirecting to a registrar parking page on 2026-08-22 (was
+      live with archived monthly copies through Jun 2026). Event citations for the
+      Nov 2019 relaunch and Dec 2024 HST token launch repointed to their Wayback captures;
+      status left active pending a recheck in case the parking is transient
+    url: https://web.archive.org/web/20260419153549/https://horizonstate.com/hst-token/
+    checked: 2026-08-22
 last_checked: '2026-08-21'
 ---
 

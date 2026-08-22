@@ -24,3 +24,10 @@ manual-dump/
 # no automated fetch can reach. Never committed: the durable, shareable
 # archive of a citation is Wayback Machine, not this. util/import_manual_dump.py
 # distills whatever's useful out of it into the committed evidence cache.
+.pagecache/
+# Local reading copies of cited pages, written through by
+# util/check_fragments.py at fetch time (see util/pagecache.py) so a later
+# human/AI session can re-read what a page said without re-pinging the site.
+# Never committed — unlike manual-dump/ these pages ARE script-fetchable, so
+# anyone can regenerate them locally with one `check_fragments --no-cache`
+# run; verification state lives in the committed evidence cache either way.

@@ -350,6 +350,16 @@ class FetchPageTextRobotsTests(unittest.TestCase):
     Wikipedia"), and gating it would need a robots.txt lookup against a
     path this function never actually requests directly."""
 
+    def setUp(self):
+        # These tests call the REAL _fetch_page_text() with mocked HTTP, so
+        # its pagecache.store() hook would otherwise write through to the
+        # real .pagecache/ at the repo root (confirmed happening: the
+        # Wikipedia fixture below left a "Test" entry behind). These tests
+        # are about robots gating, not the reading archive.
+        patcher = mock.patch.object(cf.pagecache, "enabled", False)
+        patcher.start()
+        self.addCleanup(patcher.stop)
+
     def test_disallowed_url_is_not_fetched(self):
         with mock.patch.object(cf, "robots_allowed", return_value=False) as fake_robots, \
              mock.patch.object(cf.requests, "get") as fake_get:
@@ -378,6 +388,133 @@ class FetchPageTextRobotsTests(unittest.TestCase):
                 "https://en.wikipedia.org/wiki/Test", {"User-Agent": cf.USER_AGENT})
         fake_robots.assert_not_called()
         self.assertEqual(text, "some text")
+
+
+class FetchPageTextEncodingTests(unittest.TestCase):
+    """A page serving UTF-8 bytes under an absent or Latin-1-family charset
+    label must be decoded as UTF-8, not requests' RFC default for unlabelled
+    text/*. Confirmed broken on climateassembly.uk: it declares no charset,
+    so every curly apostrophe came back as "â€™" and its quotes
+    false-MISMATCHed even though browsers rendered the page correctly."""
+
+    UTF8_BODY = ("<html><body><p>Assembly ’quoted’ – done</p></body></html>").encode("utf-8")
+
+    def _fetch(self, resp):
+        with mock.patch.object(cf, "robots_allowed", return_value=True), \
+             mock.patch.object(cf.pagecache, "enabled", False), \
+             mock.patch.object(cf.requests, "get", return_value=resp):
+            return cf._fetch_page_text("https://example.org/page",
+                                       {"User-Agent": cf.USER_AGENT})
+
+    def _mojibake_response(self, encoding):
+        resp = mock.Mock(status_code=200, headers={}, content=self.UTF8_BODY,
+                         encoding=encoding)
+        # What requests' r.text would hand back if the label were trusted:
+        resp.text = self.UTF8_BODY.decode("iso-8859-1")
+        return resp
+
+    def test_utf8_bytes_under_latin1_label_decode_as_utf8(self):
+        text, _r, error = self._fetch(self._mojibake_response("iso-8859-1"))
+        self.assertIsNone(error)
+        self.assertIn("\u2019quoted\u2019 \u2013 done", text)
+        self.assertNotIn("\u00e2", text)  # the mojibake tell
+
+    def test_absent_charset_label_also_prefers_utf8(self):
+        text, _r, error = self._fetch(self._mojibake_response(None))
+        self.assertIsNone(error)
+        self.assertIn("\u2019quoted\u2019 \u2013 done", text)
+
+    def test_genuinely_non_utf8_page_falls_back_to_declared_decoding(self):
+        latin1_src = "<html><body><p>café résumé</p></body></html>"
+        raw = latin1_src.encode("windows-1252")  # 0xE9 alone — invalid UTF-8
+        resp = mock.Mock(status_code=200, headers={}, content=raw,
+                         encoding="windows-1252")
+        resp.text = latin1_src
+        text, _r, error = self._fetch(resp)
+        self.assertIsNone(error)
+        self.assertIn("café résumé", text)  # declared decoding used intact
+
+
+def _zip_bytes(members):
+    """Build an in-memory zip file with the given {name: content} members."""
+    import io as _io
+    import zipfile
+    buf = _io.BytesIO()
+    with zipfile.ZipFile(buf, "w") as z:
+        for name, content in members.items():
+            z.writestr(name, content)
+    return buf.getvalue()
+
+
+class ZipXmlExtractionTests(unittest.TestCase):
+    """_extract_zip_xml_text handles citation URLs that are direct document
+    downloads (.docx/.odt) — detected by the PK zip magic bytes, never by
+    URL extension, since a redesigned site can serve anything at a .docx
+    URL. Regression-anchored on Local Government Victoria's Local Government
+    Act 2020 community-engagement principles .docx."""
+
+    DOCX_XML = (
+        '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>'
+        '<w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main">'
+        '<w:body>'
+        '<w:p><w:r><w:t>Councils must apply their</w:t><w:br/><w:t>engagement policy</w:t></w:r></w:p>'
+        '<w:p><w:r><w:tab/><w:t>to decisions.</w:t></w:r></w:p>'
+        '</w:body></w:document>')
+
+    def test_docx_text_runs_joined_with_paragraph_breaks_after_text(self):
+        # Breaks come after each paragraph's own runs; <w:br/> and <w:tab/>
+        # render as spaces (whitespace-normalised away by verification).
+        text = cf._extract_zip_xml_text(_zip_bytes({"word/document.xml": self.DOCX_XML}))
+        self.assertEqual(text,
+                         "Councils must apply their engagement policy\n to decisions.\n")
+
+    def test_odt_content_xml_extracted_the_same_way(self):
+        odt_xml = (
+            '<office:document-content '
+            'xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" '
+            'xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0">'
+            '<office:body><office:text>'
+            '<text:p>Engagement principles <text:span>for councils.</text:span></text:p>'
+            '</office:text></office:body></office:document-content>')
+        text = cf._extract_zip_xml_text(_zip_bytes({"content.xml": odt_xml}))
+        self.assertEqual(text, "Engagement principles for councils.\n")
+
+    def test_prefers_document_xml_over_content_xml(self):
+        text = cf._extract_zip_xml_text(_zip_bytes({
+            "content.xml": "<p>odt side</p>",
+            "word/document.xml": self.DOCX_XML}))
+        self.assertIn("Councils must", text)
+
+    def test_unknown_zip_archive_returns_none(self):
+        self.assertIsNone(cf._extract_zip_xml_text(
+            _zip_bytes({"some/other.xml": "<data/>"})))
+
+    def test_corrupt_bytes_return_none(self):
+        self.assertIsNone(cf._extract_zip_xml_text(b"PK\x03\x04not-really-a-zip"))
+
+    def test_empty_zip_returns_none(self):
+        self.assertIsNone(cf._extract_zip_xml_text(_zip_bytes({})))
+
+    def _fetch(self, resp):
+        with mock.patch.object(cf, "robots_allowed", return_value=True), \
+             mock.patch.object(cf.pagecache, "enabled", False), \
+             mock.patch.object(cf.requests, "get", return_value=resp):
+            return cf._fetch_page_text("https://example.gov/doc.docx",
+                                       {"User-Agent": cf.USER_AGENT})
+
+    def test_fetch_dispatches_zip_magic_to_the_extractor(self):
+        resp = mock.Mock(status_code=200, headers={},
+                         content=_zip_bytes({"word/document.xml": self.DOCX_XML}))
+        text, _r, error = self._fetch(resp)
+        self.assertIsNone(error)
+        self.assertIn("engagement policy", text)
+
+    def test_fetch_reports_office_parse_error_for_non_document_zip(self):
+        resp = mock.Mock(status_code=200, headers={},
+                         content=_zip_bytes({"META-INF/x": "junk"}))
+        text, _r, error = self._fetch(resp)
+        self.assertIsNone(text)
+        self.assertEqual(error, "OFFICE_PARSE_ERROR")
 
 
 class WriteQuoteFixTests(unittest.TestCase):

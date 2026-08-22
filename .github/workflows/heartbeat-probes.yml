@@ -35,7 +35,7 @@ jobs:
       - name: Verify event and footnote evidence still matches live pages
         run: |
           set -o pipefail
-          python util/check_fragments.py --save-to-wayback | tee /tmp/fragments.log
+          python util/check_fragments.py --save-to-wayback --no-page-cache | tee /tmp/fragments.log
         continue-on-error: true  # report-only: stale evidence shouldn't block the RSS/scrape commit below
 
       - name: Check event citation URLs are still live
