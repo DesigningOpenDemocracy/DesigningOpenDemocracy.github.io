@@ -812,6 +812,18 @@ def main():
                              "Useful as progress output on long --no-cache runs.")
     parser.add_argument("--save-to-wayback", action="store_true",
                         help="Archive each URL to Wayback Machine's Save Page Now")
+    parser.add_argument("--set-url-status", type=str, nargs=2, default=None,
+                        metavar=("URL", "STATUS"),
+                        help="Manually record a citation URL's liveness in "
+                             "the evidence cache: STATUS is 'dead' (site is "
+                             "gone/404s), 'unfit' (resolves, but to a parked "
+                             "domain/spam — check_event_urls.py can't tell "
+                             "this from a healthy 200 automatically), or "
+                             "'live' (clears the field back to the implicit "
+                             "default). Never auto-set by any script — a "
+                             "human judgment call, same spirit as "
+                             "proof_level_locked. Exits immediately after "
+                             "writing; does not run verification.")
     parser.add_argument("--footnotes-only", action="store_true",
                         help="Only check footnote evidence (skip events)")
     parser.add_argument("--events-only", action="store_true",
@@ -836,6 +848,24 @@ def main():
     args = parser.parse_args()
     if args.offline and args.save_to_wayback:
         parser.error("--offline cannot be combined with --save-to-wayback")
+
+    if args.set_url_status:
+        url, status = args.set_url_status
+        status = status.strip().lower()
+        if status not in ("dead", "unfit", "live"):
+            parser.error("--set-url-status STATUS must be one of: dead, unfit, live")
+        cache = load_cache()
+        entry = cache.get(url, {})
+        if status == "live":
+            entry.pop("url_status", None)
+            print(f"Cleared url_status for {url} (back to implicit live/unset)")
+        else:
+            entry["url_status"] = status
+            print(f"Set url_status={status} for {url}")
+        cache[url] = entry
+        save_cache(cache)
+        return
+
     pagecache.enabled = not args.no_page_cache
 
     # Always start from the committed cache, even with --no-cache: that flag

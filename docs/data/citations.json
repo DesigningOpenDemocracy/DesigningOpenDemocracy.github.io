@@ -793,6 +793,18 @@
     ]
   },
   {
+    "id": "1a30f3e1",
+    "type": "webpage",
+    "URL": "https://digitalrightswatch.org.au/about/",
+    "title": "About",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Australians are equipped, empowered and enabled to uphold their digital rights,"
+      }
+    ]
+  },
+  {
     "id": "b0e8d64b",
     "type": "webpage",
     "URL": "https://ec.europa.eu/newsroom/cc-demos/items/741221/en",
@@ -1497,6 +1509,18 @@
       {
         "type": "quote-match",
         "quote": "The software was first published in October 2009 by Public Software Group e. V. after being suggested by some members of Germany's Pirate Party unsatisfied with conventional means of political opinion formation."
+      }
+    ]
+  },
+  {
+    "id": "48ae6180",
+    "type": "webpage",
+    "URL": "https://en.wikipedia.org/wiki/Local_government_in_Victoria",
+    "title": "Local government in Victoria",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "The City of Melbourne has a Lord Mayor and Deputy Lord Mayor, who are directly elected, and in the other councils a mayor and deputy mayor are elected by fellow Councillors from among their own number,"
       }
     ]
   },
@@ -3270,6 +3294,38 @@
     ]
   },
   {
+    "id": "f6af5554",
+    "type": "webpage",
+    "URL": "https://www.abc.net.au/news/2020-02-18/city-of-casey-sacked-administrators-could-run-council-until-2024/11976104",
+    "title": "City of Casey could be without elected council until 2024 after damning report prompts sacking",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "The State Government on Tuesday passed legislation to sack the entire council, after an independent monitor's report recommended it be dismissed over allegations of corruption linked to property developer John Woodman,"
+      }
+    ]
+  },
+  {
+    "id": "01af9ebe",
+    "type": "webpage",
+    "URL": "https://www.abc.net.au/news/2025-09-03/operation-sandon-casey-council-ibac-charges/105730716",
+    "title": "Two charged by Victorian corruption watchdog after Operation Sandon investigation into Casey council",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "IBAC has not named those charged and said it would not be providing any further comment as the matter was now before the courts,"
+      },
+      {
+        "type": "quote-match",
+        "quote": "IBAC uncovered a web of well-orchestrated strategies designed to manipulate Casey Council decision-making processes, buy influence and undermine the effectiveness of the Victorian planning system in exchange for certain benefits,"
+      },
+      {
+        "type": "quote-match",
+        "quote": "The report named councillors Sam Aziz and Geoff Ablett as receiving more than $550,000 each from Mr Woodman in exchange for support for his plans to rezone tracts of land in Cranbourne West,"
+      }
+    ]
+  },
+  {
     "id": "e847d647",
     "type": "webpage",
     "URL": "https://www.accountabilityrt.org/fiona-mcleod-sc-to-head-up-art/",
@@ -3596,6 +3652,18 @@
       {
         "type": "quote-match",
         "quote": "The pilot program sets aside $9 million from the city’s capital budget, with $1 million allocated to each of Columbus’ nine City Council districts."
+      }
+    ]
+  },
+  {
+    "id": "fa5bc038",
+    "type": "webpage",
+    "URL": "https://www.councilwatch.com.au",
+    "title": "Council Watch",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "Registered since 2001,"
       }
     ]
   },
@@ -4048,6 +4116,50 @@
       {
         "type": "quote-match",
         "quote": "contributing to formulating the 2006 Boutros draft electoral law"
+      }
+    ]
+  },
+  {
+    "id": "9d9c60ee",
+    "type": "webpage",
+    "URL": "https://www.lgi.vic.gov.au/managing-employment-cycle-council-ceo",
+    "title": "Managing the employment cycle of a council CEO",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "is employed and managed by an entity comprised of elected community representatives who make decisions by democratic vote,"
+      }
+    ]
+  },
+  {
+    "id": "5971dcb3",
+    "type": "webpage",
+    "URL": "https://www.lgi.vic.gov.au/managing-employment-cycle-council-ceo/current-employment-arrangements",
+    "title": "Current employment arrangements",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "A CEO’s contract cannot extend beyond five years but there is no limit on how many times a CEO can be reappointed and enter into a new contract,"
+      },
+      {
+        "type": "quote-match",
+        "quote": "The CEO’s contract must specify performance criteria, and the council must review the CEO’s performance at least once a year,"
+      },
+      {
+        "type": "quote-match",
+        "quote": "There were also reforms proposed that required the Mayor and/or council to obtain independent advice in overseeing CEO recruitment, contractual arrangements and performance monitoring,"
+      }
+    ]
+  },
+  {
+    "id": "525022b7",
+    "type": "webpage",
+    "URL": "https://www.lgi.vic.gov.au/winter-2024-local-government-integrity-matters/local-government-amendment-governance-and-integrity-bill-2024",
+    "title": "Local Government Amendment (Governance and Integrity) Bill 2024",
+    "evidence": [
+      {
+        "type": "quote-match",
+        "quote": "The Bill includes reforms to strengthen council leadership, capability and councillor conduct, improve early intervention and effective dispute resolution and strengthen oversight mechanisms,"
       }
     ]
   },

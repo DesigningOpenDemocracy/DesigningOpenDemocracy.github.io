@@ -234,12 +234,22 @@ def with_fragment(url, quote_text):
     return add_fragment_to_url(url, quote_text) or url
 
 
-def load_archive_urls():
-    """Read the committed evidence cache and return {url: archive_url} for
-    every citation that has a recorded Wayback Machine snapshot. Used at
-    render time (hooks/org_events.py, hooks/footnote_fragments.py) to add a
-    Robust-Links-style archive link alongside the normal citation link —
-    see internal-heartbeat/machine-verifiable-citation.md's Open question 5.
+def load_archive_info():
+    """Read the committed evidence cache and return {url: {"archive_url":,
+    "url_status":}} for every citation that has a recorded Wayback Machine
+    snapshot and/or an explicit url_status. Used at render time
+    (hooks/org_events.py, hooks/footnote_fragments.py, hooks/citation_export.py)
+    both to add a Robust-Links-style archive link alongside the normal
+    citation link, and — once url_status is anything but the implicit
+    "live" — to swap which link renders as primary, matching
+    Wikipedia's own Help:Citation Style 1 convention (see
+    internal-heartbeat/2026-08-22-citation-archival-design-decisions.md).
+
+    url_status is written by check_fragments.py's --set-url-status flag,
+    never inferred here — this function only reads what's already
+    recorded. Valid stored values: "dead", "unfit". "live" is never
+    stored explicitly; its absence from an entry (or the entry itself
+    being absent) means live/unset.
 
     Returns {} if the cache doesn't exist or is unreadable — this must
     never break a build, since archive links are a pure enhancement on top
@@ -250,10 +260,26 @@ def load_archive_urls():
             cache = json.load(f)
     except (OSError, ValueError):
         return {}
+    result = {}
+    for url, entry in cache.items():
+        if not isinstance(entry, dict):
+            continue
+        archive_url = entry.get("archive_url")
+        url_status = entry.get("url_status")
+        if archive_url or url_status:
+            result[url] = {"archive_url": archive_url, "url_status": url_status}
+    return result
+
+
+def load_archive_urls():
+    """Back-compat convenience wrapper over load_archive_info(): returns
+    just {url: archive_url} for every citation with a recorded snapshot,
+    dropping url_status. Prefer load_archive_info() for any caller that
+    needs to know liveness, not just whether a backup exists."""
     return {
-        url: entry["archive_url"]
-        for url, entry in cache.items()
-        if isinstance(entry, dict) and entry.get("archive_url")
+        url: info["archive_url"]
+        for url, info in load_archive_info().items()
+        if info.get("archive_url")
     }
 
 

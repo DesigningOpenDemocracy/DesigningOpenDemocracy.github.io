@@ -418,5 +418,95 @@ class HtmlToTextTests(unittest.TestCase):
         self.assertIn("\n\n", text)
 
 
+class LoadArchiveInfoTests(unittest.TestCase):
+    """load_archive_info()/load_archive_urls() read the committed evidence
+    cache's archive_url/url_status fields — used at render time by
+    hooks/org_events.py, hooks/footnote_fragments.py, and
+    hooks/citation_export.py to add archive links and, once url_status is
+    dead/unfit, swap which link renders as primary."""
+
+    def setUp(self):
+        self._orig_path = tf.ARCHIVE_CACHE_PATH
+        self.addCleanup(self._restore_path)
+
+    def _restore_path(self):
+        tf.ARCHIVE_CACHE_PATH = self._orig_path
+
+    def _write_cache(self, tmp_path, data):
+        import json
+        with open(tmp_path, "w", encoding="utf-8") as f:
+            json.dump(data, f)
+        tf.ARCHIVE_CACHE_PATH = tmp_path
+
+    def test_missing_cache_file_returns_empty(self):
+        tf.ARCHIVE_CACHE_PATH = "/nonexistent/path/does-not-exist.json"
+        self.assertEqual(tf.load_archive_info(), {})
+        self.assertEqual(tf.load_archive_urls(), {})
+
+    def test_entry_with_only_archive_url(self):
+        import tempfile
+        with tempfile.NamedTemporaryFile(suffix=".json", delete=False) as f:
+            path = f.name
+        self.addCleanup(lambda: os.remove(path))
+        self._write_cache(path, {
+            "https://example.org/a": {"archive_url": "https://web.archive.org/web/20260101000000/https://example.org/a"},
+        })
+        info = tf.load_archive_info()
+        self.assertEqual(
+            info["https://example.org/a"]["archive_url"],
+            "https://web.archive.org/web/20260101000000/https://example.org/a",
+        )
+        self.assertIsNone(info["https://example.org/a"]["url_status"])
+        self.assertEqual(
+            tf.load_archive_urls()["https://example.org/a"],
+            "https://web.archive.org/web/20260101000000/https://example.org/a",
+        )
+
+    def test_entry_with_url_status_but_no_archive(self):
+        # A citation can be flagged dead before any snapshot is recorded —
+        # load_archive_info() must still surface it (rendering logic
+        # decides what to do when archive_url is absent).
+        import tempfile
+        with tempfile.NamedTemporaryFile(suffix=".json", delete=False) as f:
+            path = f.name
+        self.addCleanup(lambda: os.remove(path))
+        self._write_cache(path, {
+            "https://example.org/b": {"url_status": "dead"},
+        })
+        info = tf.load_archive_info()
+        self.assertEqual(info["https://example.org/b"]["url_status"], "dead")
+        self.assertIsNone(info["https://example.org/b"]["archive_url"])
+        # load_archive_urls() only surfaces entries with an actual archive_url
+        self.assertNotIn("https://example.org/b", tf.load_archive_urls())
+
+    def test_entry_with_neither_field_is_excluded(self):
+        import tempfile
+        with tempfile.NamedTemporaryFile(suffix=".json", delete=False) as f:
+            path = f.name
+        self.addCleanup(lambda: os.remove(path))
+        self._write_cache(path, {
+            "https://example.org/c": {"checked": "2026-08-22", "content_hash": "abc"},
+        })
+        info = tf.load_archive_info()
+        self.assertNotIn("https://example.org/c", info)
+
+    def test_non_dict_entries_are_skipped(self):
+        import tempfile
+        with tempfile.NamedTemporaryFile(suffix=".json", delete=False) as f:
+            path = f.name
+        self.addCleanup(lambda: os.remove(path))
+        self._write_cache(path, {"https://example.org/d": "not-a-dict"})
+        self.assertEqual(tf.load_archive_info(), {})
+
+    def test_corrupt_json_returns_empty(self):
+        import tempfile
+        with tempfile.NamedTemporaryFile(suffix=".json", mode="w", delete=False) as f:
+            f.write("{not valid json")
+            path = f.name
+        self.addCleanup(lambda: os.remove(path))
+        tf.ARCHIVE_CACHE_PATH = path
+        self.assertEqual(tf.load_archive_info(), {})
+
+
 if __name__ == "__main__":
     unittest.main()

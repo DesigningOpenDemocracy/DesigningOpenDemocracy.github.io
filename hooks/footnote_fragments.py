@@ -17,7 +17,16 @@ If a Wayback Machine snapshot for that same url has been recorded
 docs/data/event-evidence-cache.json), a second, visible archive-box
 link is added right after the citation link — in addition to it, not
 replacing it — pointing at the archived copy as a Robust-Links-style
-fallback. See util/text_fragment.py's load_archive_urls().
+fallback. See util/text_fragment.py's load_archive_info().
+
+If that same URL also has an explicit url_status of "dead" or "unfit"
+(set by `util/check_fragments.py --set-url-status`, never inferred),
+the citation link itself is swapped to point at the archived copy
+instead — matching Wikipedia's own Help:Citation Style 1 convention of
+linking the archive as primary once the original is known bad — and the
+original is demoted to a small "(original: no longer live)" trailer
+rather than getting a #:~:text= fragment nobody can safely follow. See
+internal-heartbeat/2026-08-22-citation-archival-design-decisions.md.
 
 Two hooks:
   on_page_markdown — parse footnotes, store label→(url, quote) map on page
@@ -28,7 +37,7 @@ import os
 import sys
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "util"))
-from text_fragment import add_fragment_to_url, iter_footnote_citations, load_archive_urls  # noqa: E402
+from text_fragment import add_fragment_to_url, iter_footnote_citations, load_archive_info  # noqa: E402
 
 FN_ID_PREFIX = 'id="fn:'
 FN_LI = "<li "
@@ -38,6 +47,13 @@ ARCHIVE_LINK_TEMPLATE = (
     ' <a href="{url}" target="_blank" rel="noopener" class="org-event-archive-btn"'
     ' title="Archived snapshot (Wayback Machine)">🗃️</a>'
 )
+
+ORIGINAL_DEAD_TEMPLATE = (
+    ' <span class="org-event-source-cited">(original, no longer live: '
+    '<a href="{url}" target="_blank" rel="noopener">{url}</a>)</span>'
+)
+
+ROTTED_STATUSES = ("dead", "unfit")
 
 
 def _parse_footnotes(markdown_source):
@@ -77,18 +93,18 @@ def _find_li_end(html, start):
     return pos - len(LI_CLOSE)  # position of the closing </li>
 
 
-_archive_urls_cache = None
+_archive_info_cache = None
 
 
-def _get_archive_urls():
-    """Lazily load and cache the archive-url map for the life of the build
+def _get_archive_info():
+    """Lazily load and cache the archive-info map for the life of the build
     process — the hooks module is imported once per `mkdocs build`, and the
     cache file doesn't change mid-build, so there's no need to re-read it
     per page."""
-    global _archive_urls_cache
-    if _archive_urls_cache is None:
-        _archive_urls_cache = load_archive_urls()
-    return _archive_urls_cache
+    global _archive_info_cache
+    if _archive_info_cache is None:
+        _archive_info_cache = load_archive_info()
+    return _archive_info_cache
 
 
 def on_page_markdown(markdown, page, config, files):
@@ -101,7 +117,7 @@ def on_page_content(html, page, config, files):
     if not citations:
         return html
 
-    archive_urls = _get_archive_urls()
+    archive_info = _get_archive_info()
 
     result = []
     pos = 0
@@ -136,10 +152,20 @@ def on_page_content(html, page, config, files):
                 href_end = block.find('"', href_attr_start)
                 href = block[href_attr_start:href_end]
 
-                new_url = add_fragment_to_url(href, quote)
-                if new_url and new_url != href:
+                # href is the citation's raw url (never the fragment-bearing
+                # one at this point — markdown rendering doesn't add
+                # fragments itself), so it's exactly the key
+                # load_archive_info() stores.
+                info = archive_info.get(href) or {}
+                archive_url = info.get("archive_url")
+                is_rotted = info.get("url_status") in ROTTED_STATUSES and archive_url
+
+                primary_target = archive_url if is_rotted else href
+                new_url = add_fragment_to_url(primary_target, quote)
+                display_url = new_url or primary_target
+                if display_url != href:
                     old_link = '<a href="' + href + '"'
-                    new_link = '<a href="' + new_url + '"'
+                    new_link = '<a href="' + display_url + '"'
                     block = block[:a_idx] + new_link + block[a_idx + len(old_link):]
                     href_end += len(new_link) - len(old_link)
 
@@ -149,19 +175,23 @@ def on_page_content(html, page, config, files):
                     a_start = href_end
                     continue
 
-                # href is the citation's raw url (never the fragment-bearing
-                # one — add_fragment_to_url only appends, never rewrites the
-                # base url), so it's exactly the key load_archive_urls()
-                # stores. The Wayback link is additive, next to the normal
-                # citation link, never in place of it.
-                archive_url = archive_urls.get(href)
-                if archive_url:
-                    insert_at = a_close + len("</a>")
+                insert_at = a_close + len("</a>")
+                if is_rotted:
+                    # Archive is now the primary, clickable link (above);
+                    # the original is demoted to plain, clearly-labeled
+                    # text rather than a second live link, since it's
+                    # known not to resolve (or to resolve to junk).
+                    trailer = ORIGINAL_DEAD_TEMPLATE.format(url=href)
+                    block = block[:insert_at] + trailer + block[insert_at:]
+                    a_start = insert_at + len(trailer)
+                elif archive_url:
+                    # Original still primary; archive is a pure additive
+                    # Robust-Links-style fallback next to it.
                     archive_link = ARCHIVE_LINK_TEMPLATE.format(url=archive_url)
                     block = block[:insert_at] + archive_link + block[insert_at:]
                     a_start = insert_at + len(archive_link)
                 else:
-                    a_start = a_close + len("</a>")
+                    a_start = insert_at
 
         result.append(block)
         pos = li_end

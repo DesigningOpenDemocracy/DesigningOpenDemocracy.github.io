@@ -7,12 +7,19 @@ Output: docs/data/citations.json
 Flow:
   1. Extract quotes from markdown (events + footnotes)
   2. Load existing citations.json (if any) to preserve verification data
-  3. Merge: add new quotes, drop removed ones, carry forward enrichment
-  4. Write back
+  3. Load docs/data/event-evidence-cache.json for archive/url-status data
+  4. Merge: add new quotes, drop removed ones, carry forward enrichment
+  5. Write back
 
 CSL-JSON fields: type, URL, title, accessed, archive, archive_location
+DOD extension field: url-status (dead/unfit — see text_fragment.py's
+  load_archive_info() docstring; absent means live/unset)
 Evidence fields (per-claim, nested under evidence: array):
   type: quote-match, quote, status, last-verified, verified-by, context
+
+archive/archive_location/url-status are a read-only projection of
+docs/data/event-evidence-cache.json — see on_pre_build()'s comment for
+why this file never independently writes those three fields itself.
 """
 
 import glob
@@ -22,7 +29,7 @@ import os
 import sys
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "util"))
-from text_fragment import iter_footnote_citations  # noqa: E402
+from text_fragment import iter_footnote_citations, load_archive_info  # noqa: E402
 
 try:
     import frontmatter
@@ -82,6 +89,18 @@ def on_pre_build(config):
             for cite in json.load(f):
                 existing[cite["URL"]] = cite
 
+    # archive/archive_location/url-status are a *projection* of
+    # docs/data/event-evidence-cache.json, not carried forward from this
+    # file's own previous output — that cache is the one place anything
+    # ever writes a Wayback snapshot or a liveness verdict
+    # (check_fragments.py's --save-to-wayback / --set-url-status), so
+    # citations.json here is read-only with respect to those three
+    # fields. See internal-heartbeat/2026-08-22-citation-archival-
+    # design-decisions.md for why: two independent writers (this file's
+    # old carry-forward plus a separate citations_tool.py --archive path)
+    # could otherwise silently disagree about the same URL.
+    archive_info = load_archive_info()
+
     # Group new items by URL
     by_url = {}
     for url, title, quote, _source, _kind in items:
@@ -102,9 +121,21 @@ def on_pre_build(config):
         }
 
         # Carry forward CSL-level fields from previous enrichment
-        for field in ("accessed", "archive", "archive_location"):
-            if old.get(field):
-                cite[field] = old[field]
+        # (accessed comes from citations_tool.py --augment, run against
+        # this file directly — a separate, still-valid mechanism)
+        if old.get("accessed"):
+            cite["accessed"] = old["accessed"]
+
+        # archive/archive_location/url-status: freshly projected from the
+        # evidence cache on every build, never carried forward from this
+        # file's own prior output — see the comment above.
+        info = archive_info.get(url)
+        if info:
+            if info.get("archive_url"):
+                cite["archive"] = "Internet Archive Wayback Machine"
+                cite["archive_location"] = info["archive_url"]
+            if info.get("url_status"):
+                cite["url-status"] = info["url_status"]
 
         # Build evidence: preserve per-quote enrichment, drop removed quotes
         old_evidence = {e["quote"]: e for e in old.get("evidence", [])}

@@ -227,6 +227,14 @@ def main():
                 dead.append((title, event_date, event_title, url, status))
                 print(f"  DEAD ({status})  {title}  [{event_date}]  {event_title}")
                 print(f"           {url}")
+                if cache.get(url, {}).get("url_status") != "dead":
+                    # Never auto-set — a human decides, same as
+                    # proof_level_locked elsewhere in this repo. This is a
+                    # suggestion, not a verdict: url_status also covers
+                    # "unfit" (a parked domain, still 200s) which this
+                    # liveness check can't distinguish from healthy.
+                    print(f"           suggest: python util/check_fragments.py "
+                          f"--set-url-status \"{url}\" dead")
             elif final_url and strip_fragment(url).rstrip("/") != final_url.rstrip("/"):
                 redirected.append((title, event_date, event_title, url, final_url))
                 print(f"  REDIRECT {title}  [{event_date}]  {event_title}")

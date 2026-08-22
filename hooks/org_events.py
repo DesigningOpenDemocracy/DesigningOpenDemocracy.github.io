@@ -19,10 +19,15 @@ Also registers two Jinja filters (via on_env):
     href. A #:~:text= fragment is derived from quote: at render time here
     rather than stored in url: — see util/text_fragment.py's docstring for
     why (single source of truth, no risk of the two drifting apart).
-  - `archive_url_for` — looks up a citation url's Wayback Machine snapshot
-    (recorded by `util/check_fragments.py --save-to-wayback`), for
-    rendering an additional Robust-Links-style archive link alongside the
-    normal citation link. Loaded once at env setup, not per-page, since
+  - `archive_info_for` — looks up a citation url's recorded Wayback
+    Machine snapshot and url_status (both written by
+    `util/check_fragments.py`'s `--save-to-wayback`/`--set-url-status`
+    flags), returning {"archive_url":, "url_status":} or None.
+    organisation.html uses this both to render an additional
+    Robust-Links-style archive link alongside the normal citation link,
+    and — once url_status is "dead"/"unfit" — to swap which link renders
+    as primary (see internal-heartbeat/2026-08-22-citation-archival-
+    design-decisions.md). Loaded once at env setup, not per-page, since
     the cache is a single shared file.
 """
 
@@ -31,7 +36,7 @@ import sys
 from datetime import date
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "util"))
-from text_fragment import load_archive_urls, with_fragment  # noqa: E402
+from text_fragment import load_archive_info, with_fragment  # noqa: E402
 
 
 def _parse_date(val):
@@ -71,5 +76,5 @@ def on_page_context(context, page, config, nav):
 
 def on_env(env, config, files):
     env.filters["with_fragment"] = with_fragment
-    archive_urls = load_archive_urls()
-    env.filters["archive_url_for"] = lambda url: archive_urls.get(url)
+    archive_info = load_archive_info()
+    env.filters["archive_info_for"] = lambda url: archive_info.get(url)

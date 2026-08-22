@@ -324,6 +324,32 @@ only if a concrete downstream consumer actually needs it.
   tracking stays a periodic, manual, human/AI-reviewed judgment call (see
   HEARTBEAT.md's note on `check_fragments.py`/`check_event_urls.py`), not
   something automated end-to-end.
+- **2026-08-22:** Added `url_status` (`dead`/`unfit`, manually set via
+  `check_fragments.py --set-url-status`, never inferred) to
+  `docs/data/event-evidence-cache.json`, and a corresponding `url-status`
+  DOD extension field on `citations.json`. Also fixed a real gap found
+  while designing this: `archive`/`archive_location` had been sitting
+  unpopulated (0 of 328 entries) since the 2026-08-12 changelog entry
+  above added them, because `citations_tool.py --archive` — the only
+  thing that ever wrote them — had never actually been run, while the
+  archive-box *rendering* added that same day was wired to a completely
+  different, independently-populated cache
+  (`event-evidence-cache.json`'s `archive_url`, written by
+  `check_fragments.py --save-to-wayback`). Two write paths for the same
+  data, neither one populating the CSL export. Fixed by making
+  `citations.json`'s `archive`/`archive_location`/`url-status` fields a
+  **read-only projection** of `event-evidence-cache.json`, generated
+  fresh by `hooks/citation_export.py` on every build rather than carried
+  forward from the file's own previous output — `citations_tool.py
+  --archive` remains valid for a third-party citations.json (its
+  original use case) but is now discouraged on DOD's own file. Rendering
+  also gained a Wikipedia `Help:Citation Style 1`-style behavior: once
+  `url_status` is `dead`/`unfit` and an archive exists, the archive link
+  becomes primary and the original is demoted to a plain trailer, instead
+  of always showing the (possibly dead) original as primary with the
+  archive as a secondary "🗃️" button. See
+  `internal-heartbeat/2026-08-22-citation-archival-design-decisions.md`
+  for the full design conversation.
 
 ---
 

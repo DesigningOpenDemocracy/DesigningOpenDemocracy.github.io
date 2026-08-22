@@ -42,8 +42,23 @@ Two independent, uncoordinated places already write Wayback archive URLs:
    `archive_location` set.** This path exists in code and has never been
    exercised.
 
-Neither renders anywhere on the site. Nobody had reconciled that there
-were two.
+**Correction, made during implementation (same session):** the line that
+originally stood here — "Neither renders anywhere on the site" — was
+wrong, from searching for the wrong string (`archive_location`) in
+`docs/overrides/*.html` instead of the actual naming used. Mechanism 1's
+data (`archive_url`) was, in fact, **already rendered**: `hooks/
+org_events.py` had an `archive_url_for` Jinja filter and
+`organisation.html` already showed a "🗃️ Archived copy" button for
+events; `hooks/footnote_fragments.py` did the same for footnote
+citations. Both were genuinely built and shipped, just fed by Mechanism 1
+— which is why Mechanism 2's `citations.json` fields stayed empty:
+nothing was rendering from them, so nobody noticed they were never
+populated. What was actually still missing, once this was found: a
+liveness/`url_status` field (neither mechanism had one), the
+Wikipedia-style primary-link swap, and reconciling the two write paths.
+See the "2026-08-22" entry in `internal-heartbeat/
+machine-verifiable-citation.md`'s changelog and the implementation itself
+(same-day, this PR) for what was actually built once this was corrected.
 
 ## Wikipedia's model (Help:Citation Style 1, pulled via API, not memory)
 
@@ -145,9 +160,55 @@ duplicate).
 
 ## Status
 
-Design converged in conversation with the maintainer this session. Not yet
-implemented. Task 1 (horizon-state.md provenance notes) and the CI fix
-(digital-rights-watch.md footnote reflow) from the companion handoff entry
-are both pushed to PR #183 (open, CI green, not yet merged as of this
-writing). This design itself has not started implementation — next
-session should build per the sequencing above, once #183 lands.
+Design converged in conversation with the maintainer, and — after the
+maintainer asked to implement rather than wait for a separate merge —
+**built the same session**, on the same branch/PR (#183):
+
+- `util/text_fragment.py`: `load_archive_info()` (returns `{url:
+  {"archive_url":, "url_status":}}`), `load_archive_urls()` kept as a
+  back-compat wrapper.
+- `util/check_fragments.py`: `--set-url-status <url> <dead|unfit|live>`,
+  writing/clearing `url_status` in `event-evidence-cache.json`. Never
+  auto-called by anything.
+- `util/check_event_urls.py`: prints a suggested `--set-url-status ... dead`
+  command on a fresh `DEAD` verdict; does not write it itself.
+- `hooks/org_events.py` / `docs/overrides/organisation.html`: the
+  `archive_url_for` filter became `archive_info_for`; the event timeline
+  now flips to Wikipedia-style primary-link-is-the-archive once
+  `url_status` is `dead`/`unfit` and an archive exists, demoting the
+  original to a plain "(original, no longer live: ...)" trailer.
+  Confirmed end-to-end against real horizon-state.md data in a local
+  build (temporarily injecting a test cache entry, then reverting it —
+  never committed).
+- `hooks/footnote_fragments.py`: same swap for prose footnote citations.
+- `hooks/citation_export.py`: `citations.json`'s `archive`/
+  `archive_location`/`url-status` are now a **read-only projection** of
+  the evidence cache, generated fresh every build — replacing the old
+  carry-forward-from-previous-output logic that let `citations_tool.py
+  --archive`'s independent write path silently diverge.
+- `util/citations_tool.py`: `--archive` documented as discouraged on
+  DOD's own `citations.json` (would just be overwritten by the next
+  build); still valid for a third-party file via `--file`.
+- Tests: `tests/test_text_fragment.py` (`LoadArchiveInfoTests`, 6),
+  `tests/test_footnote_fragments.py` (new file, 6 — covers live-additive,
+  dead-swap, unfit-swap, no-archive, status-without-archive, and
+  `live`-clears-back-to-default), `tests/test_check_fragments.py`
+  (`SetUrlStatusCliTests`, 6), `tests/test_citation_export.py` (new file,
+  5 — including a regression test that a stale prior `citations.json`
+  entry does NOT survive when the evidence cache disagrees, which is the
+  exact bug this change fixes). 258 tests passing total (was 235 at
+  session start). `mkdocs build --strict` passes; a full local build
+  before/after a temporary real-data injection confirmed the rendering
+  end-to-end, then the injection was reverted before committing.
+- CLAUDE.md: new "Citation archival: Wayback links and url_status"
+  section, plus updates to the Hooks list, Data exports table, and the
+  `check_fragments.py`/`check_event_urls.py` utility-script entries.
+- `internal-heartbeat/machine-verifiable-citation.md`: Appendix C
+  changelog entry recording the fix and why it was needed.
+
+Not done in this pass (see "Known gaps" above): loosening
+`citation_export.py`'s quote-only `_collect_items()` filter, and any
+automated `unfit`/`deviated` detection (neither has a workable detector
+yet). No real Wayback captures exist for any DOD citation as of this
+writing — the whole feature is built and tested but dormant until
+someone actually runs `check_fragments.py --save-to-wayback` for real.
