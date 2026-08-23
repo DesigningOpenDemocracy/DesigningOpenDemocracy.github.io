@@ -183,19 +183,21 @@ class OnPreBuildArchiveProjectionTests(unittest.TestCase):
         self.assertEqual(cites[0]["evidence"][0]["id"], expected_id)
         self.assertEqual(len(expected_id), 64)
 
-    def test_url_level_id_is_sha256_based_not_md5(self):
-        # Consistency fix: this id used to be md5(url)[:8] while
-        # evidence[].id is sha256-based — no reason to mix hash
-        # primitives in one small format. Short on purpose (a CSL/
-        # Pandoc-style citation key a human may type), unlike
-        # evidence[].id which is machine-only.
+    def test_url_level_id_is_full_untruncated_sha256(self):
+        # Consistency fix: this id used to be md5(url)[:8], and briefly
+        # sha256(url)[:12]. Both mixed a truncation decision into stored
+        # data that has no byte-budget reason for one — the same
+        # reasoning that keeps evidence[].id full-length applies here.
+        # Truncating for a shorter display/citation key is a render-time
+        # choice, not baked into the file.
         self._set_archive_cache({})
         ce.on_pre_build(None)
         cites = self._read_citations()
         expected_id = hashlib.sha256(
             "https://example.org/founding".encode("utf-8")
-        ).hexdigest()[:12]
+        ).hexdigest()
         self.assertEqual(cites[0]["id"], expected_id)
+        self.assertEqual(len(cites[0]["id"]), 64)
 
     def test_evidence_id_is_stable_across_rebuilds_with_no_state_carried(self):
         # A hash-derived id must reproduce identically from source on every

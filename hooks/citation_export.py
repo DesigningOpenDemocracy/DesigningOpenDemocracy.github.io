@@ -12,9 +12,10 @@ Flow:
   5. Write back
 
 CSL-JSON fields: id, type, URL, title, accessed, archive, archive_location
-  (id: sha256(url) hex digest truncated to 12 chars — short by design,
-  a CSL/Pandoc-style citation key a human may type, unlike evidence[].id
-  below which is machine-only)
+  (id: full sha256(url) hex digest, 64 chars, never truncated here —
+  same reasoning as evidence[].id below: this file stores the canonical
+  identity, truncation for a shorter human-facing citation key is a
+  display-time choice for whoever renders one, not baked into the data)
 DOD extension field: url-status (dead/unfit — see text_fragment.py's
   load_archive_info() docstring; absent means live/unset)
 Evidence fields (per-claim, nested under evidence: array):
@@ -126,14 +127,17 @@ def on_pre_build(config):
     for url, group in sorted(by_url.items()):
         old = existing.get(url, {})
         cite = {
-            # Short by design (a CSL/Pandoc-style citation key a human may
-            # actually type), unlike evidence[].id below which nobody
-            # types by hand — see internal-heartbeat/
-            # machine-verifiable-citation.md's "Evidence id length" for
-            # why the two ids have different length/hash choices despite
-            # looking similar. sha256, not md5, for consistency with
-            # evidence[].id — nothing here depends on md5 specifically.
-            "id": hashlib.sha256(url.encode("utf-8")).hexdigest()[:12],
+            # Full, untruncated hash — same reasoning as evidence[].id
+            # below: this file stores the canonical identity, and a JSON
+            # field has no byte-budget pressure pushing toward truncation
+            # (unlike the dod_evidence COinS-span pointer, which does).
+            # Truncating for a shorter human-facing citation key is a
+            # display-time choice for whoever renders one, not something
+            # baked into the stored data. See internal-heartbeat/
+            # machine-verifiable-citation.md's "Evidence id length".
+            # sha256, not md5, for consistency with evidence[].id —
+            # nothing here depends on md5 specifically.
+            "id": hashlib.sha256(url.encode("utf-8")).hexdigest(),
             "type": "webpage",
             "URL": url,
             "title": group["title"] or old.get("title", ""),
