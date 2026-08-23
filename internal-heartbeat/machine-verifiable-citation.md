@@ -521,6 +521,69 @@ There's no equivalent "why not now" blocker here the way there was for
 CSL-JSON's evolving field set, since this is purely additive to a spec
 DOD doesn't control and isn't asking anyone to adopt.
 
+## Appendix F: Point-to-point verification via a browser extension (idea, not scoped)
+
+Raised 2026-08-23, in the same conversation as Appendix E. Sharpened into
+the framing that makes it click: **`citations.json` + `check_fragments.py`
+is bulk verification** — one server, on a schedule, sweeping the entire
+corpus at once, limited to whatever a script is *allowed* to reach.
+**This idea is point-to-point verification** — one person, one moment,
+one specific citation they're already looking at, using their own
+browser's access, which a bot-defended site can't distinguish from any
+other real visitor. Different shape, not a competing mechanism: bulk
+trades reach for coverage (checks everything, but bounces off anything
+that blocks scripts); point-to-point trades coverage for reach (checks
+almost nothing on its own, but can reach exactly the things bulk
+structurally can't — the entire reason `STILL BLOCKED`, robots.txt gates,
+and `PAGE_TOO_SHORT` SPA shells exist as categories in this repo).
+
+**This isn't actually a new idea for DOD — it's an unautomated version of
+one that already ships.** `util/manual_dump.py` *is* point-to-point
+verification today: a maintainer deliberately opens a `STILL BLOCKED` URL
+from `manual-dump/requests.txt` in a real browser, saves the rendered
+page, and `import_manual_dump.py` checks the stored quote against it —
+exactly "a human's real browser sees past what the script can't," just
+triggered by a maintainer working through a worklist rather than by
+ordinary browsing. A browser extension would be the passive/automatic
+version of the same mechanism: any visitor's normal click-through to a
+citation's original source becomes a verification opportunity, with
+nobody having to remember to run the manual-dump workflow at all.
+
+**What it would actually require, honestly:**
+
+- **Bespoke software, not a COinS tweak.** Zotero/EndNote have no notion
+  of DOD's `quote:`/evidence semantics — this needs its own extension,
+  built and maintained by DOD, not an add-on behavior of an existing tool.
+- **A live backend, which does not currently exist.** This site is fully
+  static (GitHub Pages, `mkdocs gh-deploy`) with no server component at
+  all. For an extension to report "I just saw this quote is still there"
+  anywhere useful, something has to receive that report — an API
+  endpoint, storage, ongoing hosting. This is the single biggest gap, well
+  past the surface size of anything else in this document — every other
+  mechanism here (COinS, citations.json, `.pagecache/`, the evidence file)
+  is static-site-compatible; this one structurally isn't.
+- **A trust story for self-reported results.** An anonymous "verified:
+  true" ping is spoofable with no integrity check — it can't be trusted
+  at the same tier as DOD's own server-side verification (a known,
+  reviewable, git-committed algorithm run on a schedule). Right treatment:
+  same tier as `manual_verified` already gets — a distinct, separately-
+  labeled signal that can unblock a `STILL BLOCKED` citation or corroborate
+  a stale one, but never silently promoted to the same trust level as an
+  automated `MATCH`.
+- **Sparse, opportunistic coverage.** Rare or low-traffic citations might
+  never get a passive check — this supplements the bulk sweep for the
+  specific subset it can't reach, it doesn't replace it as primary
+  coverage.
+
+**Not scoped or committed to** — recorded here so the bulk/point-to-point
+distinction and the `manual_dump.py` precedent don't have to be
+re-derived if this becomes worth actually building later. If pursued, the
+natural sequencing mirrors this whole file's own history: ship the
+extension against a minimal backend, prove it resolves real `STILL
+BLOCKED`/`BLOCKED` cases faster than the manual worklist does, and only
+then decide whether the trust-tier question needs more design than "treat
+it like `manual_verified`."
+
 ## References
 
 - CSL-JSON schema: https://github.com/citation-style-language/schema
