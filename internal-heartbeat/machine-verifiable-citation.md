@@ -2,6 +2,32 @@
 
 A citation format that tells you what the source said and how to check if it still says it. Ships as a `citations.json` alongside your content. No academic infrastructure required.
 
+## Why this exists
+
+Every existing citation format tells you *where* to find a source and
+*when* you accessed it — a URL, a DOI, an access date. None of them tell
+you *what the source actually said*, or give you a mechanical way to
+check whether it still says it (see Appendix A's standards survey — this
+is a real gap, not an oversight in the formats surveyed). A citation is
+usually a trust-me link: correct the day it was written, then silently
+rotting afterward as pages get edited, moved, or taken down, with
+nothing to signal the drift to a reader and no way for a publisher to
+catch it at scale beyond re-reading every citation by hand.
+
+This format closes that gap with one addition layered on standard
+CSL-JSON: an `evidence` array carrying the verbatim quote a claim
+actually rests on, plus enough metadata — a status, a content hash, a
+verification date — for a script to re-check that quote against the
+live page and report, mechanically, whether the citation still holds.
+
+This isn't a proposal in the abstract. DOD runs it today across 336
+cited pages and 443 evidence entries, re-verified on a weekly schedule
+(`check_fragments.py`), and this document is the working record of
+building it — including the real failure modes that showed up doing so
+and how they were fixed (Appendix C), and the ones still open (Appendix
+B's "DOD-specific notes"). See Appendix A for what else was surveyed and
+ruled out, Appendix B for the reference implementation and its numbers.
+
 ## Format
 
 Layered on standard CSL-JSON. The `evidence` array groups per-claim data
@@ -234,22 +260,23 @@ specified, mandatory field to populate, without this document silently
 assuming its own default is the only valid choice.
 
 **Why it's a wrapper object, named after its algorithm inside, not a
-flat purpose-named field.** An earlier draft called this field
-`convergence-id`, flat. Renamed twice: `id` is opaque by design — a
-consumer only ever compares it for equality, never recomputes it, so it
-has no need to declare how it was generated. This field is the opposite
-kind of value — its entire job is "recompute this from the current
-content and check it still matches," which is meaningless unless the
-field itself says which algorithm to use. And it's a wrapper (`convergence`)
-with the algorithm named inside (`sha256`) rather than a flat field,
-because that's the exact shape `evidence[].context` already uses a few
-paragraphs up: the wrapper says *what's being hashed and why*, the value
-inside says *how*. Consistent naming avoids a real failure mode: if this
-format, or an adopter of it, ever needs a second algorithm — a migration,
-a stronger hash, a per-quote choice — it becomes a sibling key
-(`convergence.blake3`, say) inside the same wrapper, rather than forcing
-either a second top-level field or an ambiguous flat field that can no
-longer be trusted to mean one specific thing.
+flat purpose-named field.** `id` is opaque by design — a consumer only
+ever compares it for equality, never recomputes it, so it has no need to
+declare how it was generated. This field is the opposite kind of value —
+its entire job is "recompute this from the current content and check it
+still matches," which is meaningless unless the field itself says which
+algorithm to use. And it's a wrapper (`convergence`) with the algorithm
+named inside (`sha256`) rather than a flat field, because that's the
+exact shape `evidence[].context` already uses a few paragraphs up: the
+wrapper says *what's being hashed and why*, the value inside says *how*.
+Consistent naming avoids a real failure mode: if this format, or an
+adopter of it, ever needs a second algorithm — a migration, a stronger
+hash, a per-quote choice — it becomes a sibling key (`convergence.blake3`,
+say) inside the same wrapper, rather than forcing either a second
+top-level field or an ambiguous flat field that can no longer be trusted
+to mean one specific thing. (See Appendix C for how this field's shape
+evolved — a flat `convergence-id`, then a flat `sha256`, before settling
+here; the history isn't repeated in this section.)
 
 **A hash of the URL and a hash of the cited content are different
 things, and this format currently only standardizes the former.** The
@@ -276,9 +303,8 @@ aspirational documentation for a field never built, or a stale
 description of something removed, wasn't determined here. Flagged, not
 fixed in passing.
 
-**If this is ever built, it belongs with `context`, not `convergence` —
-correcting a misplacement in an earlier revision of this section.** A
-whole-file hash answers "has this exact file's bytes changed since I
+**If this is ever built, it belongs with `context`, not `convergence`.**
+A whole-file hash answers "has this exact file's bytes changed since I
 last looked" — an integrity/drift question, the same family as
 `context.sha256` ("did the surrounding text change around an otherwise-
 intact quote"), not an identity/agreement question like `convergence`
@@ -689,6 +715,43 @@ only if a concrete downstream consumer actually needs it.
   a structurally dead branch, since the file is gitignored and rebuilt
   from empty every time. Same failure mode as the 2026-08-22 archive
   entry below.
+- **2026-08-23:** Added a second, deterministic content-hash field
+  alongside `id`, motivated by a real tension: `id`'s self-verification
+  and cross-site convergence properties both hold only because DOD made
+  `id` itself content-derived, but an implementation needing `id` to
+  survive a routine quote edit (a typo fix, a lengthened excerpt) needs
+  it to be a persisted local key instead — which drops convergence.
+  Introduced the split (`id`'s generation is implementation-defined;
+  the new field is the one thing that must stay standardized), initially
+  named `convergence-id`, present only when `id` wasn't already
+  content-derived. Reconsidered twice in the same pass: (1) a conditional
+  presence rule forces every consumer to branch on whether the field
+  exists before knowing which one to read, so it's now always emitted,
+  even when byte-identical to `id` for DOD's own implementation; (2) a
+  purpose-named field (`convergence-id`) can't declare which algorithm to
+  recompute it with, so it was renamed to `sha256`, matching
+  `evidence[].context.sha256`'s own naming precedent; (3) that broke the
+  same precedent's *shape* — `context` is a named wrapper object with
+  `sha256` nested inside, not a flat field — so it became
+  `convergence: {"sha256": "..."}` at both the item and evidence level.
+- **2026-08-23:** While checking whether a hash of a URL and a hash of
+  cited content were the same concept, found `CLAUDE.md`'s Data exports
+  table describes `citations.json` as having a `content-sha256` field
+  that `citation_export.py` has never written — flagged as stale
+  documentation, not corrected in passing. Also specified where a
+  whole-file hash (for a fixed artifact like a PDF, as opposed to a
+  living HTML page) would belong if ever built: with `context`
+  (integrity/drift), not `convergence` (identity/agreement) — an initial
+  placement inside `convergence` was corrected the same day once the
+  distinction was made explicit.
+- **2026-08-23:** Flagged that a quote going `MISMATCH` on an otherwise
+  completely live, legitimate page never triggers the archive-preferred
+  rendering that `url_status: dead`/`unfit` does — `check_fragments.py`
+  already computes and caches this verdict weekly, but neither render
+  path (`organisation.html`, `hooks/footnote_fragments.py`) reads it;
+  both key their decision purely off the item-level `url_status`. Not a
+  new `url_status` value — the gap is evidence-scoped, not URL-scoped.
+  See "DOD-specific notes" in Appendix B.
 
 ---
 
