@@ -274,10 +274,29 @@ whole-file hash computed anywhere in this pipeline today. **This means
 the codebase turns up nothing that ever computed one. Whether that was
 aspirational documentation for a field never built, or a stale
 description of something removed, wasn't determined here. Flagged, not
-fixed in passing — either `CLAUDE.md` needs correcting, or a
-`convergence.file-sha256` sibling key (scoped to binary/document sources
-specifically, inside the same wrapper rather than a new top-level field)
-is a real, small, currently-unbuilt extension worth its own decision.
+fixed in passing.
+
+**If this is ever built, it belongs with `context`, not `convergence` —
+correcting a misplacement in an earlier revision of this section.** A
+whole-file hash answers "has this exact file's bytes changed since I
+last looked" — an integrity/drift question, the same family as
+`context.sha256` ("did the surrounding text change around an otherwise-
+intact quote"), not an identity/agreement question like `convergence`
+("do we agree this is the same referenced thing"). Convergence doesn't
+need it: URL plus normalized excerpt already fully identifies "the same
+claim" for a PDF exactly as for an HTML page, since `check_fragments.py`
+quote-matches extracted PDF text the same way it does rendered HTML —
+nothing about convergence goes deeper than that today, or needs to. A
+whole-file hash would be a *third*, separate signal, sitting at the item
+level (a property of the whole cited resource, not of one quote) —
+something like a top-level `context: {"sha256": "<hash of the file's
+raw bytes>", "checked": "<date>"}`, sibling to `archive`/`url-status`,
+not a key inside `convergence`. **Not sure yet whether it's worth
+building** — check_fragments.py would need to hash the raw bytes before
+extraction (a small addition to its existing PDF/`.docx` fetch path) and
+citation_export.py would need to project it from wherever that hash gets
+cached, same pattern as `archive_url`. Recorded here as a properly-scoped
+idea, same treatment as Appendix F — not committed to, not scheduled.
 
 #### The id is not an anti-spoofing mechanism
 
