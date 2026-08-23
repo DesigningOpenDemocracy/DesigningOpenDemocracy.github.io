@@ -466,12 +466,23 @@ MediaWiki's own Cite templates.
 1. *A private, additive DOD convention, usable now* — the actual target
    of this appendix.
 2. *A genuine registered OpenURL extension/profile* — a real
-   NISO-adjacent process. Lower priority than the Appendix D CSL-JSON
-   path, since CSL/citeproc (Zotero, Pandoc) is the actively-maintained
+   NISO-adjacent process, and a categorically different ask from (1):
+   (1) needs no one's cooperation, since `rft_id` already lets any
+   DOD-built tool resolve full verification data from `citations.json`
+   without touching Zotero/EndNote/RefWorks at all; (2) is specifically
+   about getting *those external tools themselves* to parse and surface
+   DOD's verification semantics in their own UI, which only they can
+   decide to build. Lower priority than the Appendix D CSL-JSON path,
+   since CSL/citeproc (Zotero, Pandoc) is the actively-maintained
    ecosystem DOD's tooling already targets; OpenURL/COinS is comparatively
-   legacy library-science infrastructure. Not pursued here; recorded only
-   so a future session doesn't have to re-derive that COinS *does* have an
-   analogous escape hatch if this ever becomes worth doing properly.
+   legacy library-science infrastructure. **Deliberately not scoped
+   here** — the concrete trigger for picking it up would be DOD deciding
+   it specifically wants citation-manager-native visibility (not just
+   DOD's own tools reading DOD's own data), which is its own decision
+   with its own cost/benefit case, not a natural extension of anything
+   already committed to. Recorded only so a future session doesn't have
+   to re-derive that COinS *does* have an analogous escape hatch if that
+   decision is ever made.
 
 **Why (1) is safe to just do, backwards-compatibly, with no upstream
 involvement:** a COinS `title` attribute is nothing more than a
@@ -536,6 +547,18 @@ that blocks scripts); point-to-point trades coverage for reach (checks
 almost nothing on its own, but can reach exactly the things bulk
 structurally can't — the entire reason `STILL BLOCKED`, robots.txt gates,
 and `PAGE_TOO_SHORT` SPA shells exist as categories in this repo).
+
+**To be clear about what "verification" means here — same mechanical bar
+as everywhere else in this file, not human judgment.** The extension
+would run the identical substring-match check `check_fragments.py`
+already runs server-side — "is this exact quote still present on this
+page" — just executed inside the visitor's own browser instead of a
+scheduled server fetch, so it inherits their real session/IP/fingerprint
+and gets past bot-defenses a script can't. It is not a human manually
+re-reading the source to judge whether the citation actually *supports*
+the claim it's attached to — that editorial judgment call is made once,
+at authorship, and stays out of scope for every part of this pipeline,
+bulk or point-to-point alike.
 
 **This isn't actually a new idea for DOD — it's an unautomated version of
 one that already ships.** `util/manual_dump.py` *is* point-to-point
