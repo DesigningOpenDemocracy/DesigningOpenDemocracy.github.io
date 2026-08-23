@@ -160,7 +160,7 @@ def on_pre_build(config):
         # Full, untruncated hash — same reasoning as evidence[].id below:
         # this file stores the canonical identity, and a JSON field has
         # no byte-budget pressure pushing toward truncation (unlike the
-        # dod_evidence COinS-span pointer, which does). Truncating for a
+        # evidence_sha256 COinS-span pointer, which does). Truncating for a
         # shorter human-facing citation key is a display-time choice for
         # whoever renders one, not something baked into the stored data.
         # sha256, not md5, for consistency with evidence[].id — nothing
