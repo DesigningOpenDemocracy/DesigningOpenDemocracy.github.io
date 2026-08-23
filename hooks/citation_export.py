@@ -12,17 +12,27 @@ Flow:
   5. Write back
 
 CSL-JSON fields: id, type, URL, title, accessed, archive, archive_location
-DOD extension field: url-status (dead/unfit — see text_fragment.py's
-  load_archive_info() docstring; absent means live/unset)
+DOD extension fields: convergence-id (see below), url-status (dead/unfit
+  — see text_fragment.py's load_archive_info() docstring; absent means
+  live/unset)
 Evidence fields (per-claim, nested under evidence: array):
-  id, type, quote, status, last-verified, verified-by, context
+  id, convergence-id, type, quote, status, last-verified, verified-by,
+  context
 
-Both id fields are full-length lowercase sha256 hex digests, never
-truncated here — item id over the URL, evidence id over the normalized
-quote. See "Identifier construction" in
-internal-heartbeat/machine-verifiable-citation.md for the normative
-rules, including the quote normalization an external implementer needs
-to reproduce these ids.
+id and convergence-id are both full-length lowercase sha256 hex digests,
+never truncated here — item-level over the URL, evidence-level over the
+normalized quote. For DOD's own implementation the two are byte-identical
+at both levels, since DOD's id is itself content-derived; convergence-id
+is emitted anyway rather than omitted as a "redundant" duplicate, so
+consumers never need conditional presence-checking logic to know which
+field to read — a uniform schema is worth more than the few bytes saved
+by leaving it out. See "id vs convergence-id" in
+internal-heartbeat/machine-verifiable-citation.md for why the two fields
+exist at all (an implementation using a non-content-derived id still
+needs convergence-id to stay comparable with everyone else), and
+"Identifier construction" for the normative hash rules, including the
+quote normalization an external implementer needs to reproduce these
+values.
 
 archive/archive_location/url-status are a read-only projection of
 docs/data/citation-evidence.json — see on_pre_build()'s comment for
@@ -132,18 +142,23 @@ def on_pre_build(config):
     citations = []
     for url, group in sorted(by_url.items()):
         old = existing.get(url, {})
+        # Full, untruncated hash — same reasoning as evidence[].id below:
+        # this file stores the canonical identity, and a JSON field has
+        # no byte-budget pressure pushing toward truncation (unlike the
+        # dod_evidence COinS-span pointer, which does). Truncating for a
+        # shorter human-facing citation key is a display-time choice for
+        # whoever renders one, not something baked into the stored data.
+        # sha256, not md5, for consistency with evidence[].id — nothing
+        # here depends on md5 specifically.
+        url_hash = hashlib.sha256(url.encode("utf-8")).hexdigest()
         cite = {
-            # Full, untruncated hash — same reasoning as evidence[].id
-            # below: this file stores the canonical identity, and a JSON
-            # field has no byte-budget pressure pushing toward truncation
-            # (unlike the dod_evidence COinS-span pointer, which does).
-            # Truncating for a shorter human-facing citation key is a
-            # display-time choice for whoever renders one, not something
-            # baked into the stored data. See internal-heartbeat/
-            # machine-verifiable-citation.md's "Identifier construction".
-            # sha256, not md5, for consistency with evidence[].id —
-            # nothing here depends on md5 specifically.
-            "id": hashlib.sha256(url.encode("utf-8")).hexdigest(),
+            "id": url_hash,
+            # Byte-identical to id here, since DOD's id is itself
+            # content-derived — emitted anyway rather than omitted, so
+            # every consumer can read convergence-id unconditionally. See
+            # "id vs convergence-id" in internal-heartbeat/
+            # machine-verifiable-citation.md.
+            "convergence-id": url_hash,
             "type": "webpage",
             "URL": url,
             "title": group["title"] or old.get("title", ""),
@@ -177,7 +192,15 @@ def on_pre_build(config):
             # unlike the per-URL id above, so it gets no byte-budget
             # trim the way a value embedded in page markup would.
             ev_id = hashlib.sha256(normalize_ws(quote).encode("utf-8")).hexdigest()
-            ev = {"id": ev_id, "type": "quote-match", "quote": quote}
+            # Byte-identical to id here, same reasoning as the item-level
+            # convergence-id above — always emitted, never treated as a
+            # redundant duplicate to skip.
+            ev = {
+                "id": ev_id,
+                "convergence-id": ev_id,
+                "type": "quote-match",
+                "quote": quote,
+            }
             for field in ("status", "last-verified", "verified-by", "context"):
                 if old_ev.get(field):
                     ev[field] = old_ev[field]

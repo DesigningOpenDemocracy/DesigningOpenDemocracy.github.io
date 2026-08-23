@@ -13,6 +13,7 @@ validator* will reject it, since `csl-data.json` sets
 ```json
 {
   "id": "b5e1a04c9d2f7318e6c0a45b8f1d93e27a6c4051d8b3f9e2c7a0d64185b3f2c9",
+  "convergence-id": "b5e1a04c9d2f7318e6c0a45b8f1d93e27a6c4051d8b3f9e2c7a0d64185b3f2c9",
   "type": "webpage",
   "URL": "https://en.wikipedia.org/wiki/MySociety",
   "title": "mySociety",
@@ -22,6 +23,7 @@ validator* will reject it, since `csl-data.json` sets
   "evidence": [
     {
       "id": "7f3a9c2e1b4d6f80c3e5a1b9d2f4680e91c7a3b5d0f2e4c6a8b0d2f4e6a8c0e2",
+      "convergence-id": "7f3a9c2e1b4d6f80c3e5a1b9d2f4680e91c7a3b5d0f2e4c6a8b0d2f4e6a8c0e2",
       "type": "quote-match",
       "quote": "mySociety was founded by Tom Steinberg in September 2003",
       "last-verified": "2026-08-12",
@@ -44,7 +46,8 @@ validator* will reject it, since `csl-data.json` sets
 
 | Field | Purpose |
 |---|---|
-| `id` | Standard CSL-JSON citation key. `sha256(URL)`, full 64-char lowercase hex — see "Identifier construction". |
+| `id` | Standard CSL-JSON citation key. `sha256(URL)`, full 64-char lowercase hex for DOD's own implementation — see "Identifier construction" for why another implementation may generate this differently. |
+| `convergence-id` | DOD extension. `sha256(URL)`, full 64-char lowercase hex. Always present, even though it is byte-identical to `id` in DOD's own file — see "id vs convergence-id". |
 | Standard CSL-JSON (`type`, `URL`, `title`, `accessed`, `archive`, `archive_location`) | Interoperable with Zotero, Pandoc, citeproc. `archive`/`archive_location` are standard CSL fields — a Wayback Machine snapshot (or equivalent) of the page at the time it was cited, so a reader can inspect what the citation originally pointed to even if the live page has changed or disappeared. |
 | `url-status` | DOD extension. `dead` \| `unfit`; absent means live. Set by hand, never inferred — a parked domain returns HTTP 200, so this is not machine-detectable. |
 
@@ -52,7 +55,8 @@ validator* will reject it, since `csl-data.json` sets
 
 | Field | Required? | Purpose |
 |---|---|---|
-| `id` | No | Identifier for *this specific evidence entry*. `sha256(normalize(quote))`, full 64-char lowercase hex — see "Identifier construction". Addressable from outside the file (a URL's `evidence` array can hold several quotes, so the URL alone doesn't identify a claim) and self-verifying (recompute from the quote to confirm pointer and text still agree). |
+| `id` | No | Identifier for *this specific evidence entry*, for DOD's own implementation `sha256(normalize(quote))`, full 64-char lowercase hex — see "Identifier construction". Addressable from outside the file (a URL's `evidence` array can hold several quotes, so the URL alone doesn't identify a claim). |
+| `convergence-id` | Yes | DOD extension. `sha256(normalize(quote))`, full 64-char lowercase hex. Always present alongside `id`, even when byte-identical to it — self-verifying (recompute from the quote to confirm the pointer and text still agree) and the field any implementation must compute identically to answer "same underlying fact." See "id vs convergence-id". |
 | `type` | Yes | Evidence kind. `"quote-match"` for web-page text verification. Extensible: `screenshot`, `pdf-page`, `timestamp`. |
 | `quote` | Yes | Verbatim excerpt from the source. Gate tier — must match the live page to keep the citation green. |
 | `last-verified` | No | ISO date of last confirmation that `quote` matched the live page. |
@@ -102,12 +106,15 @@ than changed in passing.
 
 ### Identifier construction
 
-Both `id` fields are content-derived hashes, constructed the same way:
+Both `id` fields are content-derived hashes in DOD's own implementation,
+constructed the same way `convergence-id` always is (see "id vs
+convergence-id" below for why the two coincide here but aren't the same
+concept):
 
 | Field | Hash input |
 |---|---|
-| item `id` | the item's `URL`, verbatim |
-| `evidence[].id` | the evidence `quote`, normalized (below) |
+| item `id` / `convergence-id` | the item's `URL`, verbatim |
+| `evidence[].id` / `convergence-id` | the evidence `quote`, normalized (below) |
 
 Normative rules for both:
 
@@ -205,17 +212,25 @@ same way, which is what `convergence-id` is for:
 
 - `convergence-id` = `sha256(normalize_ws(quote))`, full 64-char lowercase
   hex — identical construction to `id` above.
-- **Required only when `id` is not itself content-derived.** If `id`
-  already is `sha256(normalize_ws(quote))` — DOD's own case — a separate
-  `convergence-id` would just duplicate it, so it's omitted. An
-  implementation using a persisted local key for `id` emits
-  `convergence-id` alongside it to stay comparable with everyone else.
+- **Always present, on every entry, regardless of what `id` is.** Even
+  when `id` is already content-derived and `convergence-id` would be a
+  byte-identical duplicate — DOD's own case — it is emitted anyway rather
+  than omitted as "redundant." A conditional presence rule ("only emit
+  this when it differs from `id`") pushes a branch onto every consumer,
+  who now has to check whether `convergence-id` exists before knowing
+  which field actually answers the convergence question. A uniform
+  schema — the field is simply always there — costs a duplicated 64-char
+  string per entry and buys every consumer one less thing to get wrong.
+  Same judgment already applied to truncation above: optimizing away a
+  few bytes is not worth it in a JSON export with no byte-budget
+  pressure.
 
-DOD's own `citations.json` needs no code change for this: `id` already
-serves as `convergence-id` by construction. This section exists so a
-future implementation choosing the other path — a stable local `id` — has
-a specified way to stay interoperable, without this document silently
-assuming its own default is the only valid choice.
+DOD's own `citations.json` needs no logic change for this beyond emitting
+the field: `id` already equals what `convergence-id` computes, so the two
+values are simply written side by side. This section exists so a future
+implementation choosing a non-content-derived `id` still has a specified,
+mandatory field to populate, without this document silently assuming its
+own default is the only valid choice.
 
 #### The id is not an anti-spoofing mechanism
 

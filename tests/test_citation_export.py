@@ -199,6 +199,21 @@ class OnPreBuildArchiveProjectionTests(unittest.TestCase):
         self.assertEqual(cites[0]["id"], expected_id)
         self.assertEqual(len(cites[0]["id"]), 64)
 
+    def test_convergence_id_always_present_even_when_identical_to_id(self):
+        # See internal-heartbeat/machine-verifiable-citation.md's "id vs
+        # convergence-id": always emitted, never omitted as a "redundant"
+        # duplicate when id is already content-derived — a uniform schema
+        # beats saving a few bytes, so consumers never need conditional
+        # presence-checking logic.
+        self._set_archive_cache({})
+        ce.on_pre_build(None)
+        cites = self._read_citations()
+        self.assertEqual(cites[0]["convergence-id"], cites[0]["id"])
+        self.assertEqual(
+            cites[0]["evidence"][0]["convergence-id"],
+            cites[0]["evidence"][0]["id"],
+        )
+
     def test_evidence_id_is_stable_across_rebuilds_with_no_state_carried(self):
         # A hash-derived id must reproduce identically from source on every
         # build with zero persisted state — unlike a UUID, which would need
