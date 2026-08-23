@@ -423,6 +423,46 @@ URL and a hash of the cited content are different things" above for
 `document.sha256` and why it belongs on this axis rather than under
 `convergence`.
 
+### Archive integrity: a second resource, not a third axis
+
+`archived_document.sha256` (built 2026-08-23 — see Appendix B) does not
+belong as a new cell on the map above; it answers a related but
+different question about a *different* resource. The map's resource row
+is about the *cited* URL: has it drifted, is it dead. This field is
+about a second, independent resource — the archive provider's own copy
+of that URL, taken at whatever moment `--save-to-wayback` last ran — and
+the question it answers isn't "did the live page change" (that's
+`document.sha256`'s job, and the two are *expected* to diverge over
+time: an archive exists precisely to freeze content the live page later
+changes) but "is the archived copy still exactly what was archived."
+
+Two concrete uses for that:
+
+- **Corruption/tamper detection on the archive itself.** Vanishingly
+  rare in practice — the Internet Archive is a serious institution, not
+  an adversarial host — but a hash recorded once at archive time can't
+  be silently altered later without a re-check surfacing the mismatch.
+  There's a public-good angle here too, not just a defensive one: an
+  archive whose copies are independently checkable is easier for anyone
+  (not just DOD) to trust, which is the same spirit as the radical-
+  transparency stance this project already takes elsewhere.
+- **Archive-migration safety.** If DOD — or any other implementer of
+  this format — ever needs to move a citation's archived reference to a
+  different provider, the new snapshot can be hashed and compared
+  against the recorded value before being trusted as a faithful
+  replacement for the one it's superseding, rather than swapping the
+  link on faith.
+
+Like `document.sha256`, this is hash-only: the archived page's actual
+text is never fetched-and-kept, matching the same copyright-driven
+reason the evidence cache never stores any full page body (see
+`CLAUDE.md`'s "Citation archival" section). It is recorded independently
+of `archive_url`/`archive_location` — a snapshot can be found (so
+`archive_url` gets set) on a run where the follow-up fetch to hash its
+content fails, which must read as "not yet hashed," not "no archive
+exists," so a later successful run can fill it in without contradicting
+anything already recorded.
+
 ## Minimal viable implementation
 
 The format is designed for **produce → augment → verify**. A human
@@ -611,6 +651,29 @@ papered over. `document.sha256` (resource-level review) is populated
 separately, and only once `check_fragments.py` has re-fetched a URL
 since the field was introduced — see "Built 2026-08-23" above for why
 the real corpus shows 0/336 today rather than a backfilled number.
+
+**`archived_document.sha256`: built 2026-08-23**, the same day as
+`document.sha256` above, in direct response to that field's own gap:
+once a resource-level hash of the *live* page existed, the asymmetry
+with the archived copy became obvious — a snapshot could be triggered
+and linked (`archive_url`) with no way to independently confirm its own
+content later. `save_to_wayback()` now does three things instead of two:
+(1) trigger a fresh snapshot via Save Page Now, (2) query the
+Availability API for a snapshot URL, (3) fetch that snapshot's own
+content — via the "id_" raw-replay variant, which strips Wayback's
+injected toolbar so the hash reflects only the archived resource itself
+— and hash it through the same extraction pipeline `document.sha256`
+uses, stored as `archive_sha256` and projected as item-level
+`archived_document.sha256`, a sibling of `document`, not nested inside
+it (see "Archive integrity: a second resource, not a third axis" above
+for why they don't share a wrapper). The three steps are independent:
+a failed hash on this run leaves whatever a prior successful run
+recorded untouched, rather than treating "couldn't reach Wayback for
+the hashing step" as "no archive exists." Real-corpus effect at build
+time: 0/336 items carry it yet, for the same self-healing reason
+`document.sha256` shows 0/336 — this field, too, is populated only on
+citations `--save-to-wayback` has actually run against and successfully
+hashed since the field was introduced, not backfilled.
 
 **A known limitation the signal map makes visible:** for 74 of 332
 projected contexts, `context.sha256` equals the entry's own
@@ -922,6 +985,32 @@ only if a concrete downstream consumer actually needs it.
   position string, and flagged a reverse-index idea (evidence entries
   optionally listing which locations cite them) as a follow-on, not
   built.
+- **2026-08-23:** Built `archived_document.sha256` — a hash of the
+  Wayback snapshot's own content, distinct from `document.sha256` (the
+  live page). Motivated by three converged arguments: an archived
+  snapshot's content shouldn't drift once taken, unlike a live page, so
+  a hash of it is a genuinely stable reference; it lets a mismatch on
+  re-check surface if the archive copy itself were ever corrupted or
+  altered, in the same spirit as this project's radical-transparency
+  stance — checkable archives keep the archive provider honest too, not
+  just the cited site; and it lets a future archive-provider migration
+  verify a replacement snapshot is a faithful copy before trusting it in
+  the original's place. `save_to_wayback()` gained a third step — after
+  triggering the snapshot and querying the Availability API, it now
+  fetches the snapshot's raw ("id_" — strips Wayback's injected toolbar)
+  content and hashes it through the same extraction pipeline
+  `document.sha256` uses, stored as `archive_sha256` alongside
+  `archive_url`/`archive_checked` and projected as item-level
+  `archived_document.sha256`. Deliberately a sibling field to `document`,
+  not nested inside it: the two hash different resources (the archived
+  copy vs. the live page) and are expected to diverge as the live page's
+  content moves on from what was archived — see "Archive integrity: a
+  second resource, not a third axis". Hash-only, same copyright-driven
+  reason the evidence cache never stores any full page body; the hash
+  step is independent of the trigger/availability steps, so a
+  successfully-found snapshot with a failed hashing fetch leaves
+  `archive_sha256` unset rather than clobbering a value a prior run
+  recorded.
 
 ---
 

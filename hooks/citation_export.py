@@ -14,7 +14,9 @@ Flow:
 CSL-JSON fields: id, type, URL, title, accessed, archive, archive_location
 DOD extension fields: convergence (see below), url-status (dead/unfit —
   see text_fragment.py's load_archive_info() docstring; absent means
-  live/unset)
+  live/unset), document (resource-level hash of the live page),
+  archived_document (resource-level hash of the Wayback snapshot's own
+  content — distinct from document; see on_pre_build()'s comment)
 Evidence fields (per-claim, nested under evidence: array):
   id, convergence, type, quote, status, last-verified, verified-by,
   context
@@ -262,6 +264,27 @@ def on_pre_build(config):
                 cite["archive_location"] = info["archive_url"]
             if info.get("url_status"):
                 cite["url-status"] = info["url_status"]
+
+        # archived_document.sha256: a hash of the Wayback snapshot's OWN
+        # content (util/check_fragments.py's --save-to-wayback), distinct
+        # from document.sha256 below (a hash of the LIVE page). The two are
+        # expected to diverge over time as a cited site's content changes
+        # out from under a snapshot taken earlier — that's not drift to
+        # flag, it's exactly what an archive is for. Named separately from
+        # `document` rather than nested inside it: they hash two different
+        # resources (the archived copy vs. the live page), and `archive` is
+        # already taken by the standard CSL string field above, so it can't
+        # be repurposed into a wrapper. Once recorded, an archived
+        # snapshot's hash shouldn't change — a mismatch on a later
+        # re-check would mean the archive copy itself was altered, or (if
+        # DOD ever migrates off archive.org) lets a replacement snapshot be
+        # confirmed as a faithful copy before it's trusted in this one's
+        # place. Absent until check_fragments.py successfully fetches and
+        # hashes the snapshot — the trigger+availability steps can succeed
+        # while the hashing fetch fails independently, same "absence means
+        # not yet known" semantics as document.sha256 below.
+        if ev_entry.get("archive_sha256"):
+            cite["archived_document"] = {"sha256": ev_entry["archive_sha256"]}
 
         # document.sha256: resource-level integrity — has this page's
         # full fetched text changed at all, independent of whether any

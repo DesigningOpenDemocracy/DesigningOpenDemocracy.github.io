@@ -1050,5 +1050,120 @@ class UncheckedOnlyFilterTests(unittest.TestCase):
         self.assertEqual(self._run("--unchecked-only", "--no-cache"), 2)
 
 
+class HashSnapshotTests(unittest.TestCase):
+    """_hash_snapshot() fetches a Wayback snapshot's own content and hashes
+    it — the archive_sha256 signal, distinct from document_sha256 (the live
+    page). These tests mock HTTP entirely; no network calls."""
+
+    ARCHIVE_URL = "https://web.archive.org/web/20260810120000/https://example.org/page"
+    RAW_URL = "https://web.archive.org/web/20260810120000id_/https://example.org/page"
+
+    def test_requests_the_raw_id_variant(self):
+        with mock.patch.object(cf, "robots_allowed", return_value=True), \
+             mock.patch.object(cf.requests, "get") as fake_get:
+            fake_get.return_value = mock.Mock(
+                status_code=200, headers={}, content=b"<html><body>hi</body></html>",
+                text="<html><body>hi</body></html>")
+            cf._hash_snapshot(self.ARCHIVE_URL)
+        fake_get.assert_called_once()
+        self.assertEqual(fake_get.call_args[0][0], self.RAW_URL)
+
+    def test_hash_matches_extracted_text_of_the_snapshot(self):
+        html = "<html><body><p>Hello world</p></body></html>"
+        with mock.patch.object(cf, "robots_allowed", return_value=True), \
+             mock.patch.object(cf.requests, "get") as fake_get:
+            fake_get.return_value = mock.Mock(
+                status_code=200, headers={}, content=html.encode(), text=html)
+            result = cf._hash_snapshot(self.ARCHIVE_URL)
+        self.assertEqual(result, cf.sha256(cf.html_to_text(html)))
+
+    def test_robots_disallowed_returns_none_without_fetching(self):
+        with mock.patch.object(cf, "robots_allowed", return_value=False) as fake_robots, \
+             mock.patch.object(cf.requests, "get") as fake_get:
+            result = cf._hash_snapshot(self.ARCHIVE_URL)
+        fake_robots.assert_called_once()
+        fake_get.assert_not_called()
+        self.assertIsNone(result)
+
+    def test_network_error_returns_none_not_raises(self):
+        with mock.patch.object(cf, "robots_allowed", return_value=True), \
+             mock.patch.object(cf.requests, "get",
+                               side_effect=cf.requests.RequestException("boom")):
+            result = cf._hash_snapshot(self.ARCHIVE_URL)
+        self.assertIsNone(result)
+
+    def test_pdf_snapshot_uses_pdf_extraction(self):
+        with mock.patch.object(cf, "robots_allowed", return_value=True), \
+             mock.patch.object(cf.requests, "get") as fake_get, \
+             mock.patch.object(cf, "_extract_pdf_text", return_value="pdf body") as fake_pdf:
+            fake_get.return_value = mock.Mock(
+                status_code=200, headers={"Content-Type": "application/pdf"},
+                content=b"%PDF-1.4 ...", text="")
+            result = cf._hash_snapshot(self.ARCHIVE_URL)
+        fake_pdf.assert_called_once()
+        self.assertEqual(result, cf.sha256("pdf body"))
+
+    def test_url_without_web_timestamp_segment_falls_back_unchanged(self):
+        odd_url = "https://web.archive.org/some/other/shape"
+        with mock.patch.object(cf, "robots_allowed", return_value=True), \
+             mock.patch.object(cf.requests, "get") as fake_get:
+            fake_get.return_value = mock.Mock(
+                status_code=200, headers={}, content=b"<p>x</p>", text="<p>x</p>")
+            cf._hash_snapshot(odd_url)
+        self.assertEqual(fake_get.call_args[0][0], odd_url)
+
+
+class SaveToWaybackTests(unittest.TestCase):
+    """save_to_wayback() returns (archive_url, archive_sha256) — the two
+    are independent: a snapshot can be found without its content being
+    successfully hashed this run."""
+
+    def setUp(self):
+        patcher = mock.patch.object(cf.time, "sleep")
+        patcher.start()
+        self.addCleanup(patcher.stop)
+
+    def test_no_snapshot_available_returns_none_none(self):
+        with mock.patch.object(cf.requests, "get") as fake_get:
+            fake_get.return_value = mock.Mock(
+                status_code=200,
+                json=lambda: {"archived_snapshots": {}})
+            result = cf.save_to_wayback("https://example.org/page")
+        self.assertEqual(result, (None, None))
+
+    def test_snapshot_found_and_hashed(self):
+        archive_url = "https://web.archive.org/web/20260810120000/https://example.org/page"
+
+        def fake_get(url, **kwargs):
+            if url == "https://archive.org/wayback/available":
+                return mock.Mock(
+                    status_code=200,
+                    json=lambda: {"archived_snapshots": {
+                        "closest": {"available": True, "url": archive_url}}})
+            return mock.Mock(status_code=200)
+
+        with mock.patch.object(cf.requests, "get", side_effect=fake_get), \
+             mock.patch.object(cf, "_hash_snapshot", return_value="deadbeef") as fake_hash:
+            result = cf.save_to_wayback("https://example.org/page")
+        fake_hash.assert_called_once_with(archive_url, timeout=30)
+        self.assertEqual(result, (archive_url, "deadbeef"))
+
+    def test_snapshot_found_but_hashing_fails_still_returns_the_url(self):
+        archive_url = "https://web.archive.org/web/20260810120000/https://example.org/page"
+
+        def fake_get(url, **kwargs):
+            if url == "https://archive.org/wayback/available":
+                return mock.Mock(
+                    status_code=200,
+                    json=lambda: {"archived_snapshots": {
+                        "closest": {"available": True, "url": archive_url}}})
+            return mock.Mock(status_code=200)
+
+        with mock.patch.object(cf.requests, "get", side_effect=fake_get), \
+             mock.patch.object(cf, "_hash_snapshot", return_value=None):
+            result = cf.save_to_wayback("https://example.org/page")
+        self.assertEqual(result, (archive_url, None))
+
+
 if __name__ == "__main__":
     unittest.main()

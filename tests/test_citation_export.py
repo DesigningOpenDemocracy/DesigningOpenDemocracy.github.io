@@ -351,6 +351,50 @@ class VerificationProjectionTests(_ExportFixture):
         ce.on_pre_build(None)
         self.assertNotIn("document", self._read_citations()[0])
 
+    def test_archived_document_sha256_projected_at_item_level(self):
+        # The Wayback snapshot's own content hash — distinct from
+        # document.sha256 (the live page). Sibling field, not nested
+        # inside document, since the two hash different resources.
+        self._set_archive_cache({
+            "https://example.org/founding": {
+                "archive_url": "https://web.archive.org/web/20260101000000/"
+                               "https://example.org/founding",
+                "archive_sha256": "cafef00d" * 8,
+            },
+        })
+        ce.on_pre_build(None)
+        cite = self._read_citations()[0]
+        self.assertEqual(cite["archived_document"], {"sha256": "cafef00d" * 8})
+
+    def test_archived_document_sha256_absent_when_snapshot_not_yet_hashed(self):
+        # A snapshot can exist (archive_url set) with hashing having
+        # failed on every run so far — absence must not be conflated
+        # with "no archive exists at all".
+        self._set_archive_cache({
+            "https://example.org/founding": {
+                "archive_url": "https://web.archive.org/web/20260101000000/"
+                               "https://example.org/founding",
+            },
+        })
+        ce.on_pre_build(None)
+        cite = self._read_citations()[0]
+        self.assertEqual(cite["archive_location"],
+                         "https://web.archive.org/web/20260101000000/"
+                         "https://example.org/founding")
+        self.assertNotIn("archived_document", cite)
+
+    def test_archived_document_and_document_are_independent(self):
+        self._set_archive_cache({
+            "https://example.org/founding": {
+                "document_sha256": "deadbeef" * 8,
+                "archive_sha256": "cafef00d" * 8,
+            },
+        })
+        ce.on_pre_build(None)
+        cite = self._read_citations()[0]
+        self.assertEqual(cite["document"], {"sha256": "deadbeef" * 8})
+        self.assertEqual(cite["archived_document"], {"sha256": "cafef00d" * 8})
+
     def test_nothing_recorded_leaves_all_verification_fields_absent(self):
         # Absent means "not yet verified" per the spec — an honest gap,
         # not something to paper over with a default.
