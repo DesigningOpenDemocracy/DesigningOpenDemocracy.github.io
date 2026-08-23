@@ -17,7 +17,7 @@ The `evidence` array groups per-claim data under each URL.
   "archive_location": "https://web.archive.org/web/20260812123456/https://en.wikipedia.org/wiki/MySociety",
   "evidence": [
     {
-      "id": "7f3a9c2e1b4d6f80",
+      "id": "7f3a9c2e1b4d6f80c3e5a1b9d2f4680e91c7a3b5d0f2e4c6a8b0d2f4e6a8c0e2",
       "type": "quote-match",
       "quote": "mySociety was founded by Tom Steinberg in September 2003",
       "last-verified": "2026-08-12",
@@ -46,7 +46,7 @@ The `evidence` array groups per-claim data under each URL.
 
 | Field | Required? | Purpose |
 |---|---|---|
-| `id` | No (added 2026-08-23) | Deterministic identifier for *this specific evidence entry* — `sha256(normalize_ws(quote))`, hex-encoded and truncated (see "Evidence id length" below). Two jobs at once: (1) a stable pointer something outside this file can address — a URL's `evidence` array can hold more than one quote, so "the URL" alone doesn't say which claim a given citation instance is vouching for; (2) self-verifying — recomputing the hash from a candidate quote and comparing confirms the pointer and the text it names still agree, unlike an arbitrary sequential or random id, which carries no relationship to the content it labels. |
+| `id` | No (added 2026-08-23) | Deterministic identifier for *this specific evidence entry* — the **full** `sha256(normalize_ws(quote))` hex digest, 64 characters, never truncated in this file (see "Evidence id length" below for why truncation belongs only at the COinS embedding site, not here). Two jobs at once: (1) a stable pointer something outside this file can address — a URL's `evidence` array can hold more than one quote, so "the URL" alone doesn't say which claim a given citation instance is vouching for; (2) self-verifying — recomputing the hash from a candidate quote and comparing confirms the pointer and the text it names still agree, unlike an arbitrary sequential or random id, which carries no relationship to the content it labels. |
 | `type` | Yes | Evidence kind. `"quote-match"` for web-page text verification. Extensible: `screenshot`, `pdf-page`, `timestamp`. |
 | `quote` | Yes | Verbatim excerpt from the source. Gate tier — must match the live page to keep the citation green. |
 | `last-verified` | No | ISO date of last confirmation that `quote` matched the live page. |
@@ -70,30 +70,39 @@ anchor itself without context.
 
 ### Evidence id length
 
-`evidence[].id` truncates `sha256(normalize_ws(quote))` rather than using
-the full 64-character hex digest — but not as aggressively as this file's
-existing per-*URL* `id` (`md5(url)[:8]`, 32 bits, in `citation_export.py`).
-The two ids serve different jobs and shouldn't share a length just
-because they look similar:
+`evidence[].id` in `citations.json` is the **full, untruncated**
+`sha256(normalize_ws(quote))` hex digest — 64 characters. `citations.json`
+is a public data export meant for external consumption (Zotero, Pandoc,
+any researcher's own tooling), not an internal DOD-only cache, so it
+should carry whatever a downstream consumer might one day need to rely
+on for as long as it's published — and unlike a value embedded in page
+markup, a JSON field has no meaningful byte-budget pressure pushing
+toward truncation. There's no cost to storing the full hash here, and
+real upside: it's future-proof against corpus growth this site can't
+predict today, and it never needs migrating to a longer form later the
+way a truncated id would if collisions ever became a live risk.
 
-- The URL-level `id` is a display/dedup convenience inside a file DOD
-  itself generates and consumes — a collision there just means two
-  entries briefly share a label in a JSON file only DOD's own tooling
-  reads.
-- The evidence-level `id` is meant to be **referenced from outside this
-  file** — see Appendix E — so a collision there means two *different*
-  quotes resolve to the same pointer, silently misattributing evidence.
-  That is a correctness bug, not a security hole (see below), but it's
-  one nothing would ever detect once it happened.
+This deliberately follows Git's own convention, more precisely than an
+earlier draft of this section put it: **Git never truncates what it
+*stores*** — every commit hash on disk is the full 40 (SHA-1) or 64
+(SHA-256) hex characters — it only *abbreviates for display*, and
+resolves a short form back to the full hash by prefix match, lengthening
+the displayed abbreviation automatically if the repository ever grows
+enough for a short prefix to become ambiguous. The full hash is always
+the source of truth; the short form is a convenience with an explicit,
+well-defined resolution path back to it.
 
-Recommended default: 16 hex characters (64 bits). For a corpus in the
-hundreds-to-low-thousands of quotes (this site's actual scale), the
-birthday-bound collision probability at 64 bits is astronomically small
-— the same order of reasoning Git uses for its own abbreviated commit
-hashes, which start short and grow only if the repository's object count
-ever makes that necessary. 16 hex characters is still tiny next to a
-typical COinS span's existing `rft.*` query string, so it doesn't
-reopen the page-bloat concern that ruled out embedding the quote itself.
+`evidence[].id` should work the same way: full hash stored here, and
+only the one place with an actual size constraint — the `dod_evidence`
+key inside a COinS span (see Appendix E) — carries a short *prefix* of
+it, resolved back to the matching full-length `evidence[].id` by prefix
+match. That keeps the span small without ever making the stored record
+itself lossy. (This file's separate, existing per-*URL* `id` —
+`md5(url)[:8]`, in `citation_export.py` — is a narrower-purpose display
+key for deduplicating entries within this file and isn't referenced as
+a cross-document pointer the way `evidence[].id` now is; it's called
+out here only to avoid conflating the two, not because either one's
+audience is DOD-internal.)
 
 **This id is not an anti-spoofing mechanism, and doesn't need to be.**
 Anyone can see and copy it, the same as a URL or a DOI — that's fine,
@@ -105,7 +114,53 @@ claim it doesn't actually support), exactly as they could misuse a real
 URL today — nothing about id length changes that, and nothing here tries
 to solve it. The id's only job is helping a resolver find the right
 array entry; the actual trust boundary is "who can write to
-`citations.json`," not "how many hex characters long is the pointer."
+`citations.json`," not "how many hex characters long the pointer is."
+
+**Why a content hash and not a UUID.** `citations.json` is fully
+regenerated from source markdown on every build — nothing in it is
+carried forward from its own prior output (see `on_pre_build()`'s
+comment in `hooks/citation_export.py` and the "Citation archival"
+section of `CLAUDE.md` for why that's deliberate elsewhere in this
+pipeline too). A hash of the quote text reproduces identically every
+time with zero extra state. A UUID can't: it's random by construction,
+so assigning one at build time would mint a *different* id for the same
+unchanged evidence on every rebuild, breaking any external reference
+(a `dod_evidence` prefix already baked into a rendered page, a
+researcher's saved citation) the moment the site redeploys. Making a
+UUID stable would require persisting an id registry (quote text →
+assigned UUID) somewhere permanent — reintroducing exactly the
+second-write-path, "two things that can silently disagree" shape this
+whole citation-archival redesign already removed once (see the
+`internal-heartbeat/2026-08-22-citation-archival-design-decisions.md`
+writeup on the two independent, uncoordinated archive-write mechanisms
+that used to exist). A hash also self-verifies — recomputing it from a
+candidate quote confirms the two still agree, so an edited quote's id
+changes automatically and a stale external pointer just fails to
+resolve rather than silently drifting. A UUID carries no relationship
+to content at all and can't do either of these.
+
+It also matters that established bibliographic identifiers (DOI, ISBN,
+ISSN, ORCID) don't use UUIDs either, but for a different reason than
+DOD's case: they're centrally-allocated registry numbers naming a whole
+*work* — a book, an article, a researcher — which can span editions,
+formats, or get minted before final content exists, so there's no single
+canonical byte string to hash in the first place. Their actual product
+is a stable name resolved through a registry (`doi.org` redirecting to a
+URL that can change over time), a problem neither a hash nor a UUID
+solves on its own — so UUIDs were never really in contention for them,
+and most of these standards predate common UUID usage anyway (ISBN:
+1970, ISSN: 1971). `evidence[].id` is a narrower problem those standards
+never had to solve: identifying one exact, already-fixed string. That's
+precisely the case content-addressing (Git object hashes, IPFS CIDs,
+Subresource Integrity hashes) is the standard tool for, not the
+exception — because it lets independent, non-communicating parties
+converge on the same identifier for the same content with zero
+coordination. That property matters more here than it looks: if this
+appendix's design is ever adopted by another site citing the same quote
+from the same URL, a content hash gives the same id on both sides for
+free. A UUID would give each site an incompatible, independently-random
+id for identical evidence — the opposite of what a standard meant to be
+usable across independently-run citation databases needs.
 
 ### Content hash
 
@@ -551,18 +606,22 @@ on. So:
   in the span (next bullet), resolving a specific citation instance
   needs a pointer to a specific `evidence[]` entry, and a URL isn't
   precise enough to be that pointer on its own. Concretely: add a single
-  key — `dod_evidence` — carrying that entry's `evidence[].id` (see the
-  "Evidence id length" section above for how that id is generated and
-  why its length is chosen independently of the existing per-URL id).
-  This is the one piece of non-standard vocabulary this appendix
-  actually asks for; everything else stays standard COinS.
+  key — `dod_evidence` — carrying a short **prefix** of that entry's
+  `evidence[].id` (see "Evidence id length" above: the full 64-character
+  hash is what's actually stored in `citations.json`; a resolver takes
+  the prefix off the span and finds the one `evidence[].id` in the
+  target URL's array that starts with it, same prefix-match resolution
+  Git uses for abbreviated commit hashes). This is the one piece of
+  non-standard vocabulary this appendix actually asks for; everything
+  else stays standard COinS.
 - **Don't embed the quote, context, or hash directly in the span.** Same
   mistake `check_evidence()`'s own docstring already warns against for
   the evidence file (storing full page text made it balloon to
   megabytes) — and COinS spans on Wikipedia already draw real complaints
-  about page bloat without DOD adding to it. `dod_evidence` stays small
-  (16 hex characters, per the length discussion above) for exactly this
-  reason — it's a pointer, not a copy of the content it points to.
+  about page bloat without DOD adding to it. `dod_evidence` stays a short
+  prefix, not the full 64-character hash, for exactly this reason — it's
+  a pointer, not a copy of the content it points to, and the span is the
+  one place in this design where byte size actually matters.
 
 **Where this would live in code, when/if implemented:** a new Jinja
 filter alongside `with_fragment`/`archive_info_for` (see
