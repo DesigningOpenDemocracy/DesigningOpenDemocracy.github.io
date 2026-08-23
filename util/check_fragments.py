@@ -994,14 +994,16 @@ def main():
             by_kind[kind]["good"] += 1
             if args.verbose:
                 # page_text non-None means this run had a full body in hand
-                # (a live fetch, or the stored copy in --offline mode);
-                # None means answered without one (evidence-cache hit or a
-                # 304) — the suffix makes that distinction visible.
+                # (a live fetch, or the stored copy in --offline mode).
+                # None means answered without one — within this no-error
+                # branch that only happens on a genuine 304 (see
+                # check_evidence()'s docstring), so say that explicitly
+                # rather than leaving it as a silent blank suffix.
                 if page_text:
                     origin = "from .pagecache" if args.offline else "fetched"
                     suffix = f"  ({origin}, {len(page_text):,} chars)"
                 else:
-                    suffix = ""
+                    suffix = "  (304, server confirmed unchanged since last check)"
                 print("  ok  " + source_label + suffix)
             if ambiguous:
                 ambiguous_count += 1
@@ -1040,6 +1042,13 @@ def main():
             by_kind[kind]["bad"] += 1
             report_mismatches.append({"source": source_label, "url": url, "evidence": evidence[:200]})
             print("  MISMATCH  " + source_label)
+            if page_text is None:
+                # Only reachable via a genuine 304 in this no-error branch —
+                # the server confirmed the page hasn't changed at all, so
+                # this MISMATCH is a repeat of an already-known failure, not
+                # something newly discovered this run.
+                print("            (304, server confirmed unchanged since last "
+                      "check — not a new failure)")
             print("            evidence: " + evidence[:80])
             print("            url: " + url)
             if hint:
