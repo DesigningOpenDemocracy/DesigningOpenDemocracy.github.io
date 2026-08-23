@@ -582,17 +582,20 @@ Measured on the real corpus, this moved the export from 313 KB to
 
 Three decisions worth recording, since none is forced by the mechanics:
 
-- **`context` ships as its `sha256` alone**, not the stored
-  `prefix`/`suffix`/`text`. Those are ~209 KB of source paragraphs
-  across this corpus — projecting them in full measured at 592 KB
-  (+89% over baseline, versus +27.8% for the hash alone). And they
-  aren't needed to *run* the check: a verifier recomputes the paragraph
-  hash from the page it must fetch anyway. They are offline
-  *diagnosis*, not the check itself. Republishing that much of other
-  organisations' prose in a bulk downloadable file is also a materially
-  different posture from quoting a sentence to verify it — a decision
-  that deserves its own justification rather than arriving as a side
-  effect. Reversible later if a real consumer asks for diagnosis.
+- **`context` ships `sha256` plus `prefix`/`suffix`, but not `text`.**
+  `prefix`/`suffix` are the TextQuoteSelector-shaped *disambiguation*
+  anchors — a verifier that finds the quote more than once on the page
+  needs them to know which occurrence the citation means, the one thing
+  a hash alone cannot convey — so they're projected. `text` (the
+  containing paragraph) is not: it's ~121 KB of other organisations'
+  prose a verifier recomputes from the page it must fetch anyway, and
+  republishing that much of someone else's writing in a bulk
+  downloadable file is a materially different posture from quoting a
+  sentence to verify it. (An earlier draft shipped *none* of the three,
+  on the reasoning that all of it was offline diagnosis; prefix/suffix
+  were split back out 2026-08-24 precisely because they are the
+  *check*, not the diagnosis — see Appendix C.) Reversible later if a
+  real consumer asks for the paragraph text too.
 - **`verified-by` is omitted for `manual_verified` entries.** A human
   who opened a bot-blocked page in a real browser and saved it (see
   `util/manual_dump.py`) genuinely verified the quote — but the spec
@@ -880,6 +883,21 @@ only if a concrete downstream consumer actually needs it.
   conversation put these at +8%/+67%; it measured value payloads
   without `indent=2` serialization overhead and was wrong — the
   ordering held, the numbers did not.
+- **2026-08-24:** Split `context`'s `prefix`/`suffix` back into the
+  `citations.json` projection, keeping `text` out. The 2026-08-23 entry
+  above shipped none of the three on the reasoning that all of it was
+  offline diagnosis a verifier doesn't need — but `prefix`/`suffix` are
+  not diagnosis: they are the TextQuoteSelector-shaped disambiguation
+  anchors that let a verifier pin *which* occurrence of a repeated
+  sentence a citation means, the one thing a `sha256` alone cannot
+  convey. Measured on the corpus: `prefix`+`suffix` ≈ 114 KB vs ~121 KB
+  for the paragraph `text`, so projecting the anchors is ~+27% rather
+  than the ~+89% the full projection measured. Also surfaced along the
+  way: 86 of 430 cache context entries store no paragraph text at all
+  (the paragraph exceeded the 1000-char cap), so for those the cache
+  alone cannot say what claim the record refers to without joining
+  against markdown — a self-description gap recorded here for a
+  possible future cache-shape change, not addressed by this one.
 - **2026-08-23:** Replaced the "Two tiers of integrity" section with a
   signal map on two axes — identity vs integrity, resource level vs
   claim level — after a conversation probing whether a `citation`/

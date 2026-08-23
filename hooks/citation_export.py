@@ -58,9 +58,11 @@ of that same cache, added 2026-08-23. They previously tried to carry
 forward from this file's own prior output — a structurally dead branch,
 since citations.json is gitignored and rebuilt from empty, so they were
 populated on zero entries despite check_fragments.py having computed them
-all along. context is projected as its sha256 alone: the stored
-prefix/suffix/text are diagnostic payload, not needed to run the drift
-check, and would grow this export by ~67%. See _verification_for().
+all along. context projects its sha256 plus prefix/suffix (the
+TextQuoteSelector disambiguation anchors) but not text: the stored
+paragraph text is bulk prose a verifier recomputes from the page it must
+fetch anyway, whereas prefix/suffix let it pin which occurrence of a
+repeated sentence a citation means. See _verification_for().
 """
 
 import glob
@@ -103,14 +105,14 @@ def _verification_for(entry, ev_key):
     re-derive it from), so claiming it from cached data would be
     asserting something never actually stored.
 
-    `context` is reduced to its sha256 alone. The stored prefix/suffix/
-    text are ~209 KB of source paragraphs across this corpus — a 67%
-    increase in the published export — and none of it is needed to run
-    the drift check: a verifier recomputes the hash from the page it has
-    to fetch anyway. Those fields are offline *diagnosis*, not the check
-    itself, and republishing that much of other organisations' prose in
-    a bulk file is a separate decision from verifying a quote. See
-    "Signal map" in internal-heartbeat/machine-verifiable-citation.md.
+    `context` projects `sha256` plus `prefix`/`suffix` — the
+    TextQuoteSelector-shaped disambiguation anchors — but not `text`:
+    the stored paragraph text is ~121 KB of other organisations' prose
+    that a verifier recomputes from the page it must fetch anyway,
+    whereas prefix/suffix let a verifier pin *which* occurrence of a
+    repeated sentence the citation means — the one thing the hash alone
+    cannot do. See "Signal map" in
+    internal-heartbeat/machine-verifiable-citation.md.
     """
     out = {}
     verified = entry.get("verified", {})
@@ -130,9 +132,13 @@ def _verification_for(entry, ev_key):
         if entry.get("manual_checked"):
             out["last-verified"] = entry["manual_checked"]
 
-    ctx_sha = (entry.get("contexts", {}).get(ev_key) or {}).get("sha256")
-    if ctx_sha:
-        out["context"] = {"sha256": ctx_sha}
+    ctx = entry.get("contexts", {}).get(ev_key) or {}
+    if ctx.get("sha256"):
+        out["context"] = {"sha256": ctx["sha256"]}
+        if "prefix" in ctx:
+            out["context"]["prefix"] = ctx["prefix"]
+        if "suffix" in ctx:
+            out["context"]["suffix"] = ctx["suffix"]
     return out
 
 try:

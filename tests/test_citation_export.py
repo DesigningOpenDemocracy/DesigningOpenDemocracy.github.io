@@ -313,10 +313,12 @@ class VerificationProjectionTests(_ExportFixture):
         self.assertEqual(ev["status"], "MATCH")
         self.assertEqual(ev["verified-by"], ce.BOT_IDENTITY)
 
-    def test_context_reduced_to_sha256_only(self):
-        # The stored prefix/suffix/text are diagnostic payload, not
-        # needed to run the drift check, and would grow the export by
-        # ~89%. Only the hash is projected.
+    def test_context_projects_sha256_prefix_suffix_but_not_text(self):
+        # context ships sha256 plus the TextQuoteSelector prefix/suffix
+        # anchors (which let a verifier pin which occurrence of a repeated
+        # sentence a citation means), but not the bulky paragraph text —
+        # that's republishing other organisations' prose a verifier
+        # recomputes from the page it fetches anyway.
         self._set_archive_cache({
             "https://example.org/founding": {
                 "verified": {self._ev_key(): True},
@@ -331,7 +333,23 @@ class VerificationProjectionTests(_ExportFixture):
         })
         ce.on_pre_build(None)
         ev = self._only_evidence()
-        self.assertEqual(ev["context"], {"sha256": "abc123"})
+        self.assertEqual(
+            ev["context"],
+            {"sha256": "abc123", "prefix": "before", "suffix": "after"},
+        )
+
+    def test_context_without_prefix_suffix_keeps_sha256_only(self):
+        # A context entry lacking prefix/suffix (older cache shape, or a
+        # quote at the very start of a page) still projects its hash alone.
+        self._set_archive_cache({
+            "https://example.org/founding": {
+                "verified": {self._ev_key(): True},
+                "checked": "2026-08-22",
+                "contexts": {self._ev_key(): {"sha256": "abc123"}},
+            },
+        })
+        ce.on_pre_build(None)
+        self.assertEqual(self._only_evidence()["context"], {"sha256": "abc123"})
 
     def test_document_sha256_projected_at_item_level(self):
         # Resource-level integrity — the one signal-map cell that was
