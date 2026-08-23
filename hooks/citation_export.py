@@ -11,10 +11,18 @@ Flow:
   4. Merge: add new quotes, drop removed ones, carry forward enrichment
   5. Write back
 
-CSL-JSON fields: type, URL, title, accessed, archive, archive_location
+CSL-JSON fields: id, type, URL, title, accessed, archive, archive_location
+  (id: sha256(url) hex digest truncated to 12 chars — short by design,
+  a CSL/Pandoc-style citation key a human may type, unlike evidence[].id
+  below which is machine-only)
 DOD extension field: url-status (dead/unfit — see text_fragment.py's
   load_archive_info() docstring; absent means live/unset)
 Evidence fields (per-claim, nested under evidence: array):
+  id: sha256(normalize_ws(quote)) hex digest, full length — a stable,
+    self-verifying pointer for something outside this file to address a
+    specific evidence entry (a URL's evidence array can hold more than
+    one quote). See internal-heartbeat/machine-verifiable-citation.md's
+    "Evidence id length" for why it's never truncated here.
   type: quote-match, quote, status, last-verified, verified-by, context
 
 archive/archive_location/url-status are a read-only projection of
@@ -29,7 +37,11 @@ import os
 import sys
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "util"))
-from text_fragment import iter_footnote_citations, load_archive_info  # noqa: E402
+from text_fragment import (  # noqa: E402
+    iter_footnote_citations,
+    load_archive_info,
+    normalize_ws,
+)
 
 try:
     import frontmatter
@@ -114,7 +126,14 @@ def on_pre_build(config):
     for url, group in sorted(by_url.items()):
         old = existing.get(url, {})
         cite = {
-            "id": hashlib.md5(url.encode("utf-8")).hexdigest()[:8],
+            # Short by design (a CSL/Pandoc-style citation key a human may
+            # actually type), unlike evidence[].id below which nobody
+            # types by hand — see internal-heartbeat/
+            # machine-verifiable-citation.md's "Evidence id length" for
+            # why the two ids have different length/hash choices despite
+            # looking similar. sha256, not md5, for consistency with
+            # evidence[].id — nothing here depends on md5 specifically.
+            "id": hashlib.sha256(url.encode("utf-8")).hexdigest()[:12],
             "type": "webpage",
             "URL": url,
             "title": group["title"] or old.get("title", ""),
@@ -142,7 +161,13 @@ def on_pre_build(config):
         cite["evidence"] = []
         for quote in sorted(set(group["quotes"])):
             old_ev = old_evidence.get(quote, {})
-            ev = {"type": "quote-match", "quote": quote}
+            # Full, untruncated hash — this id is meant to be referenced
+            # from outside this file (see internal-heartbeat/
+            # machine-verifiable-citation.md's "Evidence id length"),
+            # unlike the per-URL id above, so it gets no byte-budget
+            # trim the way a value embedded in page markup would.
+            ev_id = hashlib.sha256(normalize_ws(quote).encode("utf-8")).hexdigest()
+            ev = {"id": ev_id, "type": "quote-match", "quote": quote}
             for field in ("status", "last-verified", "verified-by", "context"):
                 if old_ev.get(field):
                     ev[field] = old_ev[field]

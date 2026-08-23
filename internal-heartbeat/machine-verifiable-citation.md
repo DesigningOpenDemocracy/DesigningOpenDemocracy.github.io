@@ -40,6 +40,7 @@ The `evidence` array groups per-claim data under each URL.
 
 | Field | Purpose |
 |---|---|
+| `id` | Standard CSL-JSON citation key — `sha256(URL)` hex digest truncated to 12 characters. Short **on purpose**: this is the field a human might actually type (a Pandoc `[@id]` reference, a Zotero citation key), unlike `evidence[].id` below which is machine-only and never hand-typed — see "Evidence id length" for why the two ids have different length/hash choices despite looking similar. sha256, not md5 (an earlier draft used `md5(url)[:8]`) — no reason to mix hash primitives across the two id fields in one small format. |
 | Standard CSL-JSON (`type`, `URL`, `title`, `accessed`, `archive`, `archive_location`) | Interoperable with Zotero, Pandoc, citeproc. `archive`/`archive_location` are standard CSL fields — a Wayback Machine snapshot (or equivalent) of the page at the time it was cited, so a reader can inspect what the citation originally pointed to even if the live page has changed or disappeared. |
 
 **Per-claim fields** (one entry per quote, nested under `evidence`):
@@ -98,11 +99,13 @@ key inside a COinS span (see Appendix E) — carries a short *prefix* of
 it, resolved back to the matching full-length `evidence[].id` by prefix
 match. That keeps the span small without ever making the stored record
 itself lossy. (This file's separate, existing per-*URL* `id` —
-`md5(url)[:8]`, in `citation_export.py` — is a narrower-purpose display
-key for deduplicating entries within this file and isn't referenced as
-a cross-document pointer the way `evidence[].id` now is; it's called
-out here only to avoid conflating the two, not because either one's
-audience is DOD-internal.)
+`sha256(url)[:12]`, in `citation_export.py` — stays short and truncated
+by design, not oversight: unlike `evidence[].id`, it's the CSL/Pandoc
+citation-key field a human may actually type, and typability is a real
+constraint a 64-character hash would fight against. It's called out
+here only to avoid conflating the two ids' different length rationales,
+not because either one's audience is DOD-internal — both are meant for
+external consumption, same as the rest of this file.)
 
 **This id is not an anti-spoofing mechanism, and doesn't need to be.**
 Anyone can see and copy it, the same as a URL or a DOI — that's fine,

@@ -21,6 +21,7 @@ the archive cache path are all monkeypatched to a tempdir). Run with:
     python -m unittest discover tests
 """
 
+import hashlib
 import json
 import os
 import shutil
@@ -167,6 +168,47 @@ class OnPreBuildArchiveProjectionTests(unittest.TestCase):
         ce.on_pre_build(None)
         cites = self._read_citations()
         self.assertEqual(cites[0]["accessed"], {"date-parts": [[2026, 1, 1]]})
+
+    def test_evidence_id_is_full_untruncated_sha256_of_quote(self):
+        # See internal-heartbeat/machine-verifiable-citation.md's "Evidence
+        # id length": evidence[].id is the full 64-char digest, never
+        # truncated in citations.json — truncation (if any) only happens
+        # at the COinS embedding site, not in this stored record.
+        self._set_archive_cache({})
+        ce.on_pre_build(None)
+        cites = self._read_citations()
+        quote = "The organisation was founded in 2020 by a group of volunteers."
+        expected_id = hashlib.sha256(tf.normalize_ws(quote).encode("utf-8")).hexdigest()
+        self.assertEqual(len(cites[0]["evidence"]), 1)
+        self.assertEqual(cites[0]["evidence"][0]["id"], expected_id)
+        self.assertEqual(len(expected_id), 64)
+
+    def test_url_level_id_is_sha256_based_not_md5(self):
+        # Consistency fix: this id used to be md5(url)[:8] while
+        # evidence[].id is sha256-based — no reason to mix hash
+        # primitives in one small format. Short on purpose (a CSL/
+        # Pandoc-style citation key a human may type), unlike
+        # evidence[].id which is machine-only.
+        self._set_archive_cache({})
+        ce.on_pre_build(None)
+        cites = self._read_citations()
+        expected_id = hashlib.sha256(
+            "https://example.org/founding".encode("utf-8")
+        ).hexdigest()[:12]
+        self.assertEqual(cites[0]["id"], expected_id)
+
+    def test_evidence_id_is_stable_across_rebuilds_with_no_state_carried(self):
+        # A hash-derived id must reproduce identically from source on every
+        # build with zero persisted state — unlike a UUID, which would need
+        # an id registry to stay stable (see the same doc section for why
+        # that reintroduces the two-writers-can-disagree problem this
+        # citation-archival redesign already removed once).
+        self._set_archive_cache({})
+        ce.on_pre_build(None)
+        first_id = self._read_citations()[0]["evidence"][0]["id"]
+        ce.on_pre_build(None)
+        second_id = self._read_citations()[0]["evidence"][0]["id"]
+        self.assertEqual(first_id, second_id)
 
 
 if __name__ == "__main__":
