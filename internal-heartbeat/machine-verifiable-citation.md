@@ -381,40 +381,52 @@ this case — a `custom` property (`"type": "object"`, no
 CSL JSON field... preferred over the note field for storing custom
 data." Nesting `evidence` under `custom.evidence` instead of at the top
 level would make `citations.json` fully schema-valid *today*, with no
-upstream involvement needed — this isn't a proposal-first situation the
-way the rest of this appendix assumed, it's a mechanical rename. Not yet
-done: `hooks/citation_export.py` (produces `cite["evidence"]`) and every
-consumer that reads it (`util/citations_tool.py`,
-`hooks/footnote_fragments.py`'s Jinja filter chain if it ever reads this
-file, any future doc/UI) would need the same key-path change together,
-otherwise reads and writes silently disagree — a small, contained
-refactor, not attempted as part of this correction pass.
+upstream involvement needed.
 
-This doesn't mean the previous framing was worthless — Pandoc's citeproc
-and Zotero don't run strict schema validation at parse time regardless,
-they just read known fields and ignore the rest, which is why the Pandoc
-round-trip claim above holds either way. And the schema repo still
-describes itself as "not yet fully normative," so even upstream doesn't
-treat it as a closed, final contract. But "not schema-valid" was simply
-wrong as originally stated.
+**Decided 2026-08-23: not doing this.** `custom` is a junk-drawer any
+implementation can read differently or ignore — nesting `evidence` there
+would make the file schema-valid but wouldn't get any other citation tool
+to understand what `evidence`/`quote-match`/`status` actually mean, and
+critically, it undercuts the actual goal: DOD wants to *push for
+`evidence` becoming a real, recognized field*, not just avoid a validator
+complaint. Hiding it in the sanctioned "doesn't fit anywhere" bucket reads
+as "we know this isn't a real proposal" before anyone's even looked at
+it. `citations.json` keeps `evidence` at the top level, and stays
+strictly non-schema-valid, on purpose.
 
-**Two different goals, not one** — worth keeping separate now that the
-`custom` finding is on the table:
-1. *Schema-valid today* — nest `evidence` under `custom.evidence`. A
-   mechanical rename, no upstream involvement, done whenever the
-   refactor above is worth doing.
-2. *`evidence` as a genuine, recognized CSL-JSON extension* — the actual
-   goal here, not settled by (1). `custom` is a junk-drawer any
-   implementation can read differently or ignore; it doesn't get other
-   citation tools to understand what `evidence`/`quote-match`/`status`
-   mean, doesn't give the concept a stable documented shape other CSL
-   consumers could build against, and doesn't make DOD's verification
-   semantics part of the actual spec. That's what the contribution path
-   below is for, and (1) doesn't substitute for it — if anything, having
-   a schema-valid file in hand strengthens the pitch when filing the
-   issue ("here's a working implementation, already passing your own
-   JSON Schema by using the sanctioned extension point"), rather than
-   removing the motivation to propose it properly.
+**Why that's an acceptable tradeoff, not just an oversight:** `citations.json`
+is an opt-in file — a consumer has to deliberately fetch and parse it, and
+the two that actually matter (Pandoc's citeproc, Zotero) don't run strict
+schema validation at parse time regardless; they read known fields and
+ignore the rest, which is why the Pandoc round-trip claim above holds
+either way. A strict validator choking on `evidence` is a real but narrow
+risk — one visible failure for a consumer who chose to engage, on a
+small, unofficial file, not silent breakage for someone who never opted
+in. The schema repo also still describes itself as "not yet fully
+normative," so even upstream doesn't treat it as a closed contract this
+would be violating. Contrast this with the COinS case in Appendix E below,
+where the equivalent risk is NOT acceptable regardless of project size —
+different consumer, different failure mode, not just a smaller version of
+the same tradeoff.
+
+**What accepting non-compliance now is actually buying:** not just "we
+didn't have to do a refactor" — a real, running reference implementation
+to point to later, which is the strongest form any standards pitch can
+make (the old IETF framing: rough consensus and running code beats a
+well-argued but untested proposal). A `custom.evidence`-nested version
+would be schema-valid but wouldn't prove anything about whether
+`evidence`/`quote-match`/`status`/`context` actually hold up as a shape —
+it'd just be data nobody's built anything real against. The top-level,
+non-compliant version is the one that's actually been exercised: produced
+by `hooks/citation_export.py`, consumed by `util/citations_tool.py`,
+mechanically verified against live pages by `check_fragments.py`, with
+real MISMATCH/AMBIGUOUS findings from real citations (see Appendix C).
+That's the artifact worth walking into `discourse.citationstyles.org`
+with — not a compliance trick, a working example of the field doing its
+actual job at real scale. Keep it clean and well-documented (this file
+*is* that documentation) specifically so it can serve as the reference
+implementation the eventual pitch points to, not just a private
+convenience.
 
 **The actual contribution path**, per the repo's `CONTRIBUTING.md`:
 1. File an issue first, following their issue template — enough detail
@@ -436,6 +448,79 @@ confirm `citations_tool.py --verify` actually round-trips a citations.json
 that DOD's own `citation_export.py` didn't produce — then file the issue
 once the shape has actually stopped moving.
 
+## Appendix E: Extending COinS for per-page discovery (do first, propose later)
+
+Raised 2026-08-23: `citations.json` is a bulk file a researcher has to know
+to look for. COinS (ContextObjects in Spans — an OpenURL/Z39.88-2004
+ContextObject embedded as `<span class="Z3988" title="ctx_ver=...">`) is
+the actual, currently-deployed mechanism reference managers (Zotero,
+EndNote, RefWorks) use to detect "there's a citable thing right here" on
+an arbitrary webpage, no separate file needed. Confirmed still live, not a
+deprecated relic — fetched `https://en.wikipedia.org/wiki/Local_government_in_Victoria`
+(a page this repo already cites in `how-victorian-councils-are-governed.md`)
+directly and found 27 `Z3988` spans, one per reference, generated by
+MediaWiki's own Cite templates.
+
+**Same two-goal split as Appendix D, same reasoning, different format:**
+
+1. *A private, additive DOD convention, usable now* — the actual target
+   of this appendix.
+2. *A genuine registered OpenURL extension/profile* — a real
+   NISO-adjacent process. Lower priority than the Appendix D CSL-JSON
+   path, since CSL/citeproc (Zotero, Pandoc) is the actively-maintained
+   ecosystem DOD's tooling already targets; OpenURL/COinS is comparatively
+   legacy library-science infrastructure. Not pursued here; recorded only
+   so a future session doesn't have to re-derive that COinS *does* have an
+   analogous escape hatch if this ever becomes worth doing properly.
+
+**Why (1) is safe to just do, backwards-compatibly, with no upstream
+involvement:** a COinS `title` attribute is nothing more than a
+URL-encoded query string. A conformant OpenURL parser reads the `rft.*`
+keys it recognizes under whichever profile (`rft_val_fmt`) is declared —
+journal, book, Dublin Core — and is expected to silently ignore keys it
+doesn't know, the same tolerance every query-string-shaped format relies
+on. So:
+
+- Emit every standard key exactly as MediaWiki does today (same
+  `rft_val_fmt`, same `rft.atitle`/`rft.date`/etc.) so Zotero/EndNote/
+  RefWorks keep working completely unmodified — this is the backwards-
+  compatibility requirement, not a nice-to-have.
+- Add DOD-prefixed keys *alongside* them in the same span for anything
+  DOD-aware that wants more, e.g. a single `dod_status` flag
+  (`live`/`dead`/`unfit`, mirroring `url_status` — see the "Citation
+  archival" section of `CLAUDE.md`).
+- **Don't embed the quote, context, or hash directly in the span.** Same
+  mistake `check_evidence()`'s own docstring already warns against for
+  the evidence file (storing full page text made it balloon to
+  megabytes) — and COinS spans on Wikipedia already draw real complaints
+  about page bloat without DOD adding to it.
+- **The actually elegant part needs no new keys at all:** `rft_id` in a
+  standard COinS span is already just the cited URL — the exact key
+  `citations.json` is indexed by. A DOD-aware tool that wants the full
+  verification record (quote, status, archive location) just takes
+  `rft_id` off the span and looks it up in the already-public
+  `citations.json`. `dod_status` above is a convenience to skip that
+  round trip for the one-bit "is this flagged" question, not a
+  requirement.
+
+**Where this would live in code, when/if implemented:** a new Jinja
+filter alongside `with_fragment`/`archive_info_for` (see
+`hooks/org_events.py`'s `on_env`), rendered into `organisation.html`'s
+event timeline and `hooks/footnote_fragments.py`'s footnote links — same
+render-time-derived, never-stored-in-frontmatter pattern as everything
+else in this file. Not yet built; this appendix is the design record, not
+an implementation.
+
+**Consistent with this repo's own working philosophy** (see Appendix D's
+"Why not now" above, and how the `evidence`/`archive` CSL-JSON fields
+themselves shipped in DOD's own tooling well before any upstream
+conversation was even considered): ship the private, additive convention
+first, let it see real use, and only look at a formal OpenURL
+registration — if ever — once the shape has actually stopped moving.
+There's no equivalent "why not now" blocker here the way there was for
+CSL-JSON's evolving field set, since this is purely additive to a spec
+DOD doesn't control and isn't asking anyone to adopt.
+
 ## References
 
 - CSL-JSON schema: https://github.com/citation-style-language/schema
@@ -451,3 +536,6 @@ once the shape has actually stopped moving.
 - Perma.cc documentation: https://perma.cc/docs/perma-link-creation
 - CSL-JSON schema CONTRIBUTING guide: https://github.com/citation-style-language/schema/blob/master/CONTRIBUTING.md
 - CSL discussion forum: https://discourse.citationstyles.org/
+- NISO Z39.88-2004, The OpenURL Framework for Context-Sensitive Services: https://www.niso.org/standards-committees/openurl
+- COinS (ContextObjects in Spans) specification: https://ocoins.info/
+- OpenURL 1.0 KEV (key/encoded-value) guidelines (defines the `rft.*`/`rft_val_fmt`/`rft_id` query-string keys COinS spans carry): https://web.archive.org/web/2019/http://alcme.oclc.org/openurl/servlet/OAIHandler/extension?identifier=info:ofi/fmt:kev:mtx:ctx
