@@ -13,7 +13,7 @@ validator* will reject it, since `csl-data.json` sets
 ```json
 {
   "id": "b5e1a04c9d2f7318e6c0a45b8f1d93e27a6c4051d8b3f9e2c7a0d64185b3f2c9",
-  "convergence-id": "b5e1a04c9d2f7318e6c0a45b8f1d93e27a6c4051d8b3f9e2c7a0d64185b3f2c9",
+  "sha256": "b5e1a04c9d2f7318e6c0a45b8f1d93e27a6c4051d8b3f9e2c7a0d64185b3f2c9",
   "type": "webpage",
   "URL": "https://en.wikipedia.org/wiki/MySociety",
   "title": "mySociety",
@@ -23,7 +23,7 @@ validator* will reject it, since `csl-data.json` sets
   "evidence": [
     {
       "id": "7f3a9c2e1b4d6f80c3e5a1b9d2f4680e91c7a3b5d0f2e4c6a8b0d2f4e6a8c0e2",
-      "convergence-id": "7f3a9c2e1b4d6f80c3e5a1b9d2f4680e91c7a3b5d0f2e4c6a8b0d2f4e6a8c0e2",
+      "sha256": "7f3a9c2e1b4d6f80c3e5a1b9d2f4680e91c7a3b5d0f2e4c6a8b0d2f4e6a8c0e2",
       "type": "quote-match",
       "quote": "mySociety was founded by Tom Steinberg in September 2003",
       "last-verified": "2026-08-12",
@@ -47,7 +47,7 @@ validator* will reject it, since `csl-data.json` sets
 | Field | Purpose |
 |---|---|
 | `id` | Standard CSL-JSON citation key. `sha256(URL)`, full 64-char lowercase hex for DOD's own implementation — see "Identifier construction" for why another implementation may generate this differently. |
-| `convergence-id` | DOD extension. `sha256(URL)`, full 64-char lowercase hex. Always present, even though it is byte-identical to `id` in DOD's own file — see "id vs convergence-id". |
+| `sha256` | DOD extension. `sha256(URL)`, full 64-char lowercase hex. Always present, even though it is byte-identical to `id` in DOD's own file — see "id vs the sha256 field". |
 | Standard CSL-JSON (`type`, `URL`, `title`, `accessed`, `archive`, `archive_location`) | Interoperable with Zotero, Pandoc, citeproc. `archive`/`archive_location` are standard CSL fields — a Wayback Machine snapshot (or equivalent) of the page at the time it was cited, so a reader can inspect what the citation originally pointed to even if the live page has changed or disappeared. |
 | `url-status` | DOD extension. `dead` \| `unfit`; absent means live. Set by hand, never inferred — a parked domain returns HTTP 200, so this is not machine-detectable. |
 
@@ -56,7 +56,7 @@ validator* will reject it, since `csl-data.json` sets
 | Field | Required? | Purpose |
 |---|---|---|
 | `id` | No | Identifier for *this specific evidence entry*, for DOD's own implementation `sha256(normalize(quote))`, full 64-char lowercase hex — see "Identifier construction". Addressable from outside the file (a URL's `evidence` array can hold several quotes, so the URL alone doesn't identify a claim). |
-| `convergence-id` | Yes | DOD extension. `sha256(normalize(quote))`, full 64-char lowercase hex. Always present alongside `id`, even when byte-identical to it — self-verifying (recompute from the quote to confirm the pointer and text still agree) and the field any implementation must compute identically to answer "same underlying fact." See "id vs convergence-id". |
+| `sha256` | Yes | DOD extension. `sha256(normalize(quote))`, full 64-char lowercase hex. Always present alongside `id`, even when byte-identical to it — self-verifying (recompute from the quote to confirm the pointer and text still agree) and the field any implementation must compute identically to answer "same underlying fact." See "id vs the sha256 field". |
 | `type` | Yes | Evidence kind. `"quote-match"` for web-page text verification. Extensible: `screenshot`, `pdf-page`, `timestamp`. |
 | `quote` | Yes | Verbatim excerpt from the source. Gate tier — must match the live page to keep the citation green. |
 | `last-verified` | No | ISO date of last confirmation that `quote` matched the live page. |
@@ -107,14 +107,13 @@ than changed in passing.
 ### Identifier construction
 
 Both `id` fields are content-derived hashes in DOD's own implementation,
-constructed the same way `convergence-id` always is (see "id vs
-convergence-id" below for why the two coincide here but aren't the same
-concept):
+constructed the same way `sha256` always is (see "id vs the sha256 field"
+below for why the two coincide here but aren't the same concept):
 
 | Field | Hash input |
 |---|---|
-| item `id` / `convergence-id` | the item's `URL`, verbatim |
-| `evidence[].id` / `convergence-id` | the evidence `quote`, normalized (below) |
+| item `id` / `sha256` | the item's `URL`, verbatim |
+| `evidence[].id` / `sha256` | the evidence `quote`, normalized (below) |
 
 Normative rules for both:
 
@@ -178,7 +177,7 @@ minted before final content exists — so there is no canonical byte
 string to hash, and their real product is registry-backed resolution
 rather than identity. Different problem.
 
-#### `id` vs `convergence-id`: what's normative, what's implementation choice
+#### `id` vs `sha256`: what's normative, what's implementation choice
 
 The reasoning above is DOD's own justification for its own choice —
 making `id` itself content-derived. That choice bundles two properties
@@ -208,16 +207,16 @@ independently-run sites, is a way to answer "are these two citations —
 possibly with different local `id`s, possibly even differently excerpted
 — pointing at the same underlying fact?" That question needs one
 deterministic, content-derived value every implementation computes the
-same way, which is what `convergence-id` is for:
+same way, which is what `sha256` is for:
 
-- `convergence-id` = `sha256(normalize_ws(quote))`, full 64-char lowercase
+- `sha256` = `sha256(normalize_ws(quote))`, full 64-char lowercase
   hex — identical construction to `id` above.
 - **Always present, on every entry, regardless of what `id` is.** Even
-  when `id` is already content-derived and `convergence-id` would be a
+  when `id` is already content-derived and `sha256` would be a
   byte-identical duplicate — DOD's own case — it is emitted anyway rather
   than omitted as "redundant." A conditional presence rule ("only emit
   this when it differs from `id`") pushes a branch onto every consumer,
-  who now has to check whether `convergence-id` exists before knowing
+  who now has to check whether `sha256` exists before knowing
   which field actually answers the convergence question. A uniform
   schema — the field is simply always there — costs a duplicated 64-char
   string per entry and buys every consumer one less thing to get wrong.
@@ -226,11 +225,54 @@ same way, which is what `convergence-id` is for:
   pressure.
 
 DOD's own `citations.json` needs no logic change for this beyond emitting
-the field: `id` already equals what `convergence-id` computes, so the two
+the field: `id` already equals what `sha256` computes, so the two
 values are simply written side by side. This section exists so a future
 implementation choosing a non-content-derived `id` still has a specified,
 mandatory field to populate, without this document silently assuming its
 own default is the only valid choice.
+
+**Why the field is named after its algorithm, not its purpose.** An
+earlier draft called this field `convergence-id`. Renamed: `id` is
+opaque by design — a consumer only ever compares it for equality, never
+recomputes it, so it has no need to declare how it was generated. This
+field is the opposite kind of value — its entire job is "recompute this
+from the current content and check it still matches," which is
+meaningless unless the field itself says which algorithm to use. Naming
+it `sha256` rather than something purpose-based follows the precedent
+`evidence[].context.sha256` already sets a few paragraphs up, and avoids
+a real failure mode a purpose-name would invite: if this format, or an
+adopter of it, ever needs a second algorithm — a migration, a stronger
+hash, a per-quote choice — a field called `sha256` cannot silently mean
+something else, whereas a field called `convergence-id` could, with
+nothing in its name to catch the mistake.
+
+**A hash of the URL and a hash of the cited content are different
+things, and this format currently only standardizes the former as
+`sha256`.** The item-level `sha256` hashes the *URL* — it identifies the
+citation entry, and says nothing about what is actually at that address;
+a page can be rewritten completely underneath an unchanged URL and this
+field never notices, by design, since verifying content is
+`evidence[].quote`/`status`'s job. For an HTML page that split is
+correct: the page is a living document, and only a specific excerpt is
+being verified, not the whole thing. A fixed, downloaded artifact — a
+PDF, a `.docx` — is a different case: the *whole file* is normally
+immutable once published, so a hash of its complete bytes would be a
+real, currently-missing signal ("has this exact file changed at all,"
+categorically stronger than "does this substring still appear in its
+extracted text"). `check_fragments.py` already extracts PDF/`.docx` text
+via pdfminer/zip-XML and quote-matches it exactly like an HTML page (see
+`util/check_fragments.py`'s entry in `CLAUDE.md`) — there is no
+whole-file hash computed anywhere in this pipeline today. **This means
+`CLAUDE.md`'s own Data exports table is currently wrong**: it describes
+`/data/citations.json` as having "per-URL entries with `content-sha256`"
+— no such field exists in `citation_export.py`'s output, and grepping
+the codebase turns up nothing that ever computed one. Whether that was
+aspirational documentation for a field never built, or a stale
+description of something removed, wasn't determined here. Flagged, not
+fixed in passing — either `CLAUDE.md` needs correcting, or a
+`file-sha256` field (scoped to binary/document sources specifically,
+alongside `id`/`sha256` rather than replacing them) is a real, small,
+currently-unbuilt extension worth its own decision.
 
 #### The id is not an anti-spoofing mechanism
 
