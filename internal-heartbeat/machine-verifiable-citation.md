@@ -17,6 +17,7 @@ The `evidence` array groups per-claim data under each URL.
   "archive_location": "https://web.archive.org/web/20260812123456/https://en.wikipedia.org/wiki/MySociety",
   "evidence": [
     {
+      "id": "7f3a9c2e1b4d6f80",
       "type": "quote-match",
       "quote": "mySociety was founded by Tom Steinberg in September 2003",
       "last-verified": "2026-08-12",
@@ -45,6 +46,7 @@ The `evidence` array groups per-claim data under each URL.
 
 | Field | Required? | Purpose |
 |---|---|---|
+| `id` | No (added 2026-08-23) | Deterministic identifier for *this specific evidence entry* — `sha256(normalize_ws(quote))`, hex-encoded and truncated (see "Evidence id length" below). Two jobs at once: (1) a stable pointer something outside this file can address — a URL's `evidence` array can hold more than one quote, so "the URL" alone doesn't say which claim a given citation instance is vouching for; (2) self-verifying — recomputing the hash from a candidate quote and comparing confirms the pointer and the text it names still agree, unlike an arbitrary sequential or random id, which carries no relationship to the content it labels. |
 | `type` | Yes | Evidence kind. `"quote-match"` for web-page text verification. Extensible: `screenshot`, `pdf-page`, `timestamp`. |
 | `quote` | Yes | Verbatim excerpt from the source. Gate tier — must match the live page to keep the citation green. |
 | `last-verified` | No | ISO date of last confirmation that `quote` matched the live page. |
@@ -65,6 +67,45 @@ A verifier extracts the same span from the page, hashes it, and compares.
 Different hash + same quote → page was edited around the claim (review
 signal, not failure). All fields absent → the quote is unique enough to
 anchor itself without context.
+
+### Evidence id length
+
+`evidence[].id` truncates `sha256(normalize_ws(quote))` rather than using
+the full 64-character hex digest — but not as aggressively as this file's
+existing per-*URL* `id` (`md5(url)[:8]`, 32 bits, in `citation_export.py`).
+The two ids serve different jobs and shouldn't share a length just
+because they look similar:
+
+- The URL-level `id` is a display/dedup convenience inside a file DOD
+  itself generates and consumes — a collision there just means two
+  entries briefly share a label in a JSON file only DOD's own tooling
+  reads.
+- The evidence-level `id` is meant to be **referenced from outside this
+  file** — see Appendix E — so a collision there means two *different*
+  quotes resolve to the same pointer, silently misattributing evidence.
+  That is a correctness bug, not a security hole (see below), but it's
+  one nothing would ever detect once it happened.
+
+Recommended default: 16 hex characters (64 bits). For a corpus in the
+hundreds-to-low-thousands of quotes (this site's actual scale), the
+birthday-bound collision probability at 64 bits is astronomically small
+— the same order of reasoning Git uses for its own abbreviated commit
+hashes, which start short and grow only if the repository's object count
+ever makes that necessary. 16 hex characters is still tiny next to a
+typical COinS span's existing `rft.*` query string, so it doesn't
+reopen the page-bloat concern that ruled out embedding the quote itself.
+
+**This id is not an anti-spoofing mechanism, and doesn't need to be.**
+Anyone can see and copy it, the same as a URL or a DOI — that's fine,
+because the thing that actually has to hold up under scrutiny is not the
+id but the record it resolves to, and that record lives in
+`citations.json`, which only DOD's own build pipeline ever writes. A
+third party can point at a real id out of context (cite it next to a
+claim it doesn't actually support), exactly as they could misuse a real
+URL today — nothing about id length changes that, and nothing here tries
+to solve it. The id's only job is helping a resolver find the right
+array entry; the actual trust boundary is "who can write to
+`citations.json`," not "how many hex characters long is the pointer."
 
 ### Content hash
 
@@ -467,9 +508,10 @@ MediaWiki's own Cite templates.
    of this appendix.
 2. *A genuine registered OpenURL extension/profile* — a real
    NISO-adjacent process, and a categorically different ask from (1):
-   (1) needs no one's cooperation, since `rft_id` already lets any
-   DOD-built tool resolve full verification data from `citations.json`
-   without touching Zotero/EndNote/RefWorks at all; (2) is specifically
+   (1) needs no one's cooperation, since `rft_id` plus the small
+   `dod_evidence` pointer (see below) already let any DOD-built tool
+   resolve the exact verification record from `citations.json` without
+   touching Zotero/EndNote/RefWorks at all; (2) is specifically
    about getting *those external tools themselves* to parse and surface
    DOD's verification semantics in their own UI, which only they can
    decide to build. Lower priority than the Appendix D CSL-JSON path,
@@ -496,23 +538,31 @@ on. So:
   `rft_val_fmt`, same `rft.atitle`/`rft.date`/etc.) so Zotero/EndNote/
   RefWorks keep working completely unmodified — this is the backwards-
   compatibility requirement, not a nice-to-have.
-- **No DOD-prefixed keys — zero new vocabulary, fully standard-compliant
-  COinS.** An earlier draft of this appendix proposed adding a
-  `dod_status` convenience key alongside the standard ones. Dropped: it's
-  not needed. `rft_id` in a standard COinS span is already just the cited
-  URL — the exact key `citations.json` is indexed by — so a DOD-aware
-  tool that wants the full verification record (quote, status, archive
-  location) just takes `rft_id` off the span and looks it up in the
-  already-public `citations.json`. That lookup is one HTTP fetch either
-  way; a one-bit flag baked into the span saves nothing worth inventing
-  non-standard vocabulary for, and emitting *only* keys a conformant
-  OpenURL parser already recognizes is a strictly cleaner backwards-
-  compatibility story than "standard keys plus some we made up."
+- **`rft_id` (standard, already present) resolves the URL; one small
+  DOD key resolves *which claim* on that URL.** An earlier draft of this
+  appendix tried to get away with adding nothing at all beyond `rft_id`,
+  on the theory that a DOD-aware tool could just look the URL up in
+  `citations.json`. That's true as far as it goes, but incomplete: a
+  single URL's `evidence` array can (and does) hold more than one quote
+  — the same source cited for two different claims elsewhere on the
+  site — so `rft_id` alone tells a resolver *which page to check*, not
+  *which of that page's several recorded quotes this particular citation
+  is vouching for*. Since the quote itself deliberately isn't embedded
+  in the span (next bullet), resolving a specific citation instance
+  needs a pointer to a specific `evidence[]` entry, and a URL isn't
+  precise enough to be that pointer on its own. Concretely: add a single
+  key — `dod_evidence` — carrying that entry's `evidence[].id` (see the
+  "Evidence id length" section above for how that id is generated and
+  why its length is chosen independently of the existing per-URL id).
+  This is the one piece of non-standard vocabulary this appendix
+  actually asks for; everything else stays standard COinS.
 - **Don't embed the quote, context, or hash directly in the span.** Same
   mistake `check_evidence()`'s own docstring already warns against for
   the evidence file (storing full page text made it balloon to
   megabytes) — and COinS spans on Wikipedia already draw real complaints
-  about page bloat without DOD adding to it.
+  about page bloat without DOD adding to it. `dod_evidence` stays small
+  (16 hex characters, per the length discussion above) for exactly this
+  reason — it's a pointer, not a copy of the content it points to.
 
 **Where this would live in code, when/if implemented:** a new Jinja
 filter alongside `with_fragment`/`archive_info_for` (see
