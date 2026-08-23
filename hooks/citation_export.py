@@ -12,23 +12,29 @@ Flow:
   5. Write back
 
 CSL-JSON fields: id, type, URL, title, accessed, archive, archive_location
-  (id: full sha256(url) hex digest, 64 chars, never truncated here —
-  same reasoning as evidence[].id below: this file stores the canonical
-  identity, truncation for a shorter human-facing citation key is a
-  display-time choice for whoever renders one, not baked into the data)
 DOD extension field: url-status (dead/unfit — see text_fragment.py's
   load_archive_info() docstring; absent means live/unset)
 Evidence fields (per-claim, nested under evidence: array):
-  id: sha256(normalize_ws(quote)) hex digest, full length — a stable,
-    self-verifying pointer for something outside this file to address a
-    specific evidence entry (a URL's evidence array can hold more than
-    one quote). See internal-heartbeat/machine-verifiable-citation.md's
-    "Evidence id length" for why it's never truncated here.
-  type: quote-match, quote, status, last-verified, verified-by, context
+  id, type, quote, status, last-verified, verified-by, context
+
+Both id fields are full-length lowercase sha256 hex digests, never
+truncated here — item id over the URL, evidence id over the normalized
+quote. See "Identifier construction" in
+internal-heartbeat/machine-verifiable-citation.md for the normative
+rules, including the quote normalization an external implementer needs
+to reproduce these ids.
 
 archive/archive_location/url-status are a read-only projection of
 docs/data/citation-evidence.json — see on_pre_build()'s comment for
 why this file never independently writes those three fields itself.
+
+KNOWN GAP: status/last-verified/verified-by/context are carried forward
+from this file's own previous output, which never exists (citations.json
+is gitignored and rebuilt from empty), so they are populated on zero
+entries despite check_fragments.py having already computed all of them
+into citation-evidence.json. Same failure mode the archive fields hit
+before they became a projection. See "Specified but unpopulated" in
+Appendix B of the design doc.
 """
 
 import glob
@@ -134,7 +140,7 @@ def on_pre_build(config):
             # Truncating for a shorter human-facing citation key is a
             # display-time choice for whoever renders one, not something
             # baked into the stored data. See internal-heartbeat/
-            # machine-verifiable-citation.md's "Evidence id length".
+            # machine-verifiable-citation.md's "Identifier construction".
             # sha256, not md5, for consistency with evidence[].id —
             # nothing here depends on md5 specifically.
             "id": hashlib.sha256(url.encode("utf-8")).hexdigest(),
@@ -167,7 +173,7 @@ def on_pre_build(config):
             old_ev = old_evidence.get(quote, {})
             # Full, untruncated hash — this id is meant to be referenced
             # from outside this file (see internal-heartbeat/
-            # machine-verifiable-citation.md's "Evidence id length"),
+            # machine-verifiable-citation.md's "Identifier construction"),
             # unlike the per-URL id above, so it gets no byte-budget
             # trim the way a value embedded in page markup would.
             ev_id = hashlib.sha256(normalize_ws(quote).encode("utf-8")).hexdigest()
