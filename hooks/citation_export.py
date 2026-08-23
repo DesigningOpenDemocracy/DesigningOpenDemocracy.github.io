@@ -254,6 +254,7 @@ def on_pre_build(config):
         # archive/archive_location/url-status: freshly projected from the
         # evidence cache on every build, never carried forward from this
         # file's own prior output — see the comment above.
+        ev_entry = evidence_cache.get(url, {})
         info = archive_info.get(url)
         if info:
             if info.get("archive_url"):
@@ -262,8 +263,20 @@ def on_pre_build(config):
             if info.get("url_status"):
                 cite["url-status"] = info["url_status"]
 
+        # document.sha256: resource-level integrity — has this page's
+        # full fetched text changed at all, independent of whether any
+        # one cited quote survived. Fills the one cell the signal map
+        # flagged as unbuilt (resource x review). Different axis from
+        # convergence (identity: which resource is this) and from
+        # evidence[].context (claim-level: did the text immediately
+        # around one quote change) — see "Signal map" in
+        # internal-heartbeat/machine-verifiable-citation.md. Absent when
+        # check_fragments.py hasn't successfully fetched this URL yet,
+        # same "absence means not yet verified" semantics as status.
+        if ev_entry.get("document_sha256"):
+            cite["document"] = {"sha256": ev_entry["document_sha256"]}
+
         # Build evidence, dropping quotes no longer present in source
-        ev_entry = evidence_cache.get(url, {})
         cite["evidence"] = []
         for quote in sorted(set(group["quotes"])):
             # Full, untruncated hash — this id is meant to be referenced

@@ -333,6 +333,24 @@ class VerificationProjectionTests(_ExportFixture):
         ev = self._only_evidence()
         self.assertEqual(ev["context"], {"sha256": "abc123"})
 
+    def test_document_sha256_projected_at_item_level(self):
+        # Resource-level integrity — the one signal-map cell that was
+        # unbuilt. Sibling to archive/url-status, not nested under
+        # convergence (identity) or evidence[].context (claim-level).
+        self._set_archive_cache({
+            "https://example.org/founding": {
+                "document_sha256": "deadbeef" * 8,
+            },
+        })
+        ce.on_pre_build(None)
+        cite = self._read_citations()[0]
+        self.assertEqual(cite["document"], {"sha256": "deadbeef" * 8})
+
+    def test_document_sha256_absent_when_not_yet_fetched(self):
+        self._set_archive_cache({})
+        ce.on_pre_build(None)
+        self.assertNotIn("document", self._read_citations()[0])
+
     def test_nothing_recorded_leaves_all_verification_fields_absent(self):
         # Absent means "not yet verified" per the spec — an honest gap,
         # not something to paper over with a default.

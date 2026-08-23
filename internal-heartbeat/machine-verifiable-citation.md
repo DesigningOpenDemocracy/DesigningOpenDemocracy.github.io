@@ -331,12 +331,29 @@ considered — it would retroactively justify `CLAUDE.md`'s phantom
 at adjacent levels of the same structure, is a confusion waiting to
 happen in exactly the code that has to tell them apart.
 
-**Not sure yet whether it's worth building** — `check_fragments.py`
-would need to hash the raw bytes before extraction (a small addition to
-its existing PDF/`.docx` fetch path) and `citation_export.py` would need
-to project it from wherever that hash gets cached, same pattern as
-`archive_url`. Recorded here as a properly-scoped idea, same treatment as
-Appendix F — not committed to, not scheduled.
+**Built 2026-08-23.** `check_fragments.py`'s `check_evidence()` computes
+`sha256(text)` unconditionally on every successful fetch and stores it
+as `document_sha256`; `citation_export.py` projects it as item-level
+`document.sha256`, exactly the `archive_url` pattern. One deviation from
+the sketch above, made deliberately rather than silently: `text` here is
+the already-*extracted* plain text `quote_matches()`/`paragraph_hash()`
+operate on, not the raw pre-extraction bytes this note originally
+proposed hashing. Raw bytes would flag markup-only edits — a script tag
+changed, an `alt` attribute tweaked, whitespace reflowed — as resource
+drift, which is exactly the false-positive-review-signal problem already
+flagged for a hypothetical section-wide `context` hash. Hashing the same
+extracted text every other check in this pipeline already operates on
+keeps this signal consistent with the rest of the format: it fires when
+the visible content changes, not when the markup around it does.
+
+This replaced a field named `content_hash` that turned out to be
+computing something else entirely and was never read anywhere — see
+`check_evidence()`'s docstring for the full account. Measured on the
+real corpus: **0 of 336 items carry `document.sha256` yet**, not a bug —
+the committed cache still holds the old field name on 322 entries, and
+it self-heals the same way `PAGE_TOO_SHORT` does elsewhere in this
+pipeline: the next scheduled `check_fragments.py` run that successfully
+re-fetches a URL writes the new key, no backfill script needed.
 
 #### The id is not an anti-spoofing mechanism
 
@@ -368,7 +385,7 @@ code that only reads the row above it).
 
 | Level | **Identity** — "what is this?" | **Integrity, gate** — "is the citation broken?" | **Integrity, review** — "did something shift around it?" |
 |---|---|---|---|
-| **Resource** (item) | `convergence.sha256` = hash of `URL` | `url-status`: `dead` \| `unfit` | *(unbuilt — `document.sha256`, see below)* |
+| **Resource** (item) | `convergence.sha256` = hash of `URL` | `url-status`: `dead` \| `unfit` | `document.sha256` = hash of extracted page text |
 | **Claim** (`evidence[]`) | `convergence.sha256` = hash of normalized `quote` | `status`: `MISMATCH` | `context.sha256` = hash of containing paragraph |
 
 All cells but one are populated in the published export as of
@@ -396,16 +413,15 @@ sentence is intact" — and, with the level axis, distinguish *which*
 level died: the whole resource, or one claim within a resource that is
 otherwise perfectly healthy.
 
-**The one empty cell is resource-level review**, and its emptiness is
-load-bearing rather than incidental: resource integrity today has only
-a coarse, hand-set gate (`url-status`) and no fine, machine-computed
-review signal, while claim integrity has both. That asymmetry is why a
-PDF whose bytes changed wholesale can pass every check this format
-runs, so long as the one cited sentence survived the edit. Filling it
-means hashing the fetched document itself — see "A hash of the URL and
-a hash of the cited content are different things" above for the
-proposed `document.sha256`, why it belongs on this axis rather than
-under `convergence`, and why it stays unbuilt for now.
+**The map had one empty cell — resource-level review — filled
+2026-08-23.** Before that, resource integrity had only a coarse,
+hand-set gate (`url-status`) and no fine, machine-computed review
+signal, while claim integrity had both. That asymmetry meant a document
+whose content changed wholesale could pass every check this format ran,
+so long as the one cited sentence survived the edit. See "A hash of the
+URL and a hash of the cited content are different things" above for
+`document.sha256` and why it belongs on this axis rather than under
+`convergence`.
 
 ## Minimal viable implementation
 
@@ -591,8 +607,10 @@ Three decisions worth recording, since none is forced by the mechanics:
 **Still empty after this:** the ~103 entries with no cached verdict
 (blocked, never fetched, or errored) carry no `status` — the spec reads
 absence as "not yet verified", so the gap is honest rather than
-papered over. And the *resource-level review* cell of the signal map is
-still unbuilt (`document.sha256`).
+papered over. `document.sha256` (resource-level review) is populated
+separately, and only once `check_fragments.py` has re-fetched a URL
+since the field was introduced — see "Built 2026-08-23" above for why
+the real corpus shows 0/336 today rather than a backfilled number.
 
 **A known limitation the signal map makes visible:** for 74 of 332
 projected contexts, `context.sha256` equals the entry's own
@@ -824,6 +842,25 @@ only if a concrete downstream consumer actually needs it.
   distinction was made explicit, and a second near-miss (naming it
   top-level `context`, colliding with `evidence[].context`) was caught
   and settled on `document.sha256`.
+- **2026-08-23:** Built `document.sha256`, filling the signal map's one
+  remaining empty cell (resource-level review-tier integrity).
+  `check_evidence()` now computes `sha256(text)` unconditionally on
+  every successful fetch — the same *extracted* text `quote_matches()`/
+  `paragraph_hash()` already operate on, not raw pre-extraction bytes as
+  an earlier note in this file sketched, specifically to avoid flagging
+  markup-only edits (a changed script tag, a tweaked `alt` attribute) as
+  content drift. This replaced a field named `content_hash` that
+  computed `paragraph_hash(text, evidence)` — the hash of whichever
+  quote's paragraph was checked most recently — falling back to a whole-
+  page hash only when that quote couldn't be located; since the function
+  runs once per evidence string, a multi-quote URL had it silently
+  overwritten by iteration order, not page identity, and it was never
+  read anywhere. `citation_export.py` projects it as item-level
+  `document.sha256`, the same pattern as `archive_url`. On the real
+  corpus this shows 0/336 items populated today, not a bug — the
+  committed cache still holds the old field name, and it self-heals the
+  next time `check_fragments.py` successfully re-fetches each URL, same
+  as `PAGE_TOO_SHORT` elsewhere in this pipeline.
 - **2026-08-23:** Projected `status`/`last-verified`/`verified-by`/
   `context` from `citation-evidence.json` into `citations.json`,
   closing the "specified but unpopulated" gap recorded earlier the same
@@ -856,7 +893,7 @@ only if a concrete downstream consumer actually needs it.
   entries, so `rft_id` alone really is ambiguous for a large minority of
   citations and Appendix E's `evidence_sha256` is justified. The map's
   value is diagnostic: it has exactly one empty cell (resource-level
-  review-tier integrity, the unbuilt `document.sha256`), and it explains
+  review-tier integrity, `document.sha256`, built the same day), and it explains
   the MISMATCH-rendering gap below as a populated cell that the render
   code simply never reads. A speed argument for scoping quote search to
   a section was measured and dropped: ~5µs substring search on the

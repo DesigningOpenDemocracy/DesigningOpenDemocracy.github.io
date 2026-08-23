@@ -261,7 +261,7 @@ class CheckEvidenceBlockedCacheTests(unittest.TestCase):
         cache = {
             "https://example.org/paper": {
                 "etag": "abc123",
-                "content_hash": "deadbeef",
+                "document_sha256": "deadbeef",
                 "verified": {"somehash": True},
                 "contexts": {"somehash": {"prefix": "before ", "text": "some evidence", "suffix": " after"}},
                 "checked": "2026-01-01",
@@ -277,7 +277,7 @@ class CheckEvidenceBlockedCacheTests(unittest.TestCase):
         # The prior good evidence must survive the failed recheck.
         self.assertEqual(entry["verified"], {"somehash": True})
         self.assertEqual(entry["contexts"], {"somehash": {"prefix": "before ", "text": "some evidence", "suffix": " after"}})
-        self.assertEqual(entry["content_hash"], "deadbeef")
+        self.assertEqual(entry["document_sha256"], "deadbeef")
 
     def test_empty_body_is_reported_as_fetch_error_not_mismatch(self):
         # Regression: glenweyl.com returns HTTP 202 with a completely empty
@@ -340,6 +340,65 @@ class CheckEvidenceBlockedCacheTests(unittest.TestCase):
         self.assertEqual(result, "bad")
         self.assertIsNone(error)
         self.mock_queue_request.assert_not_called()
+
+
+class DocumentSha256Tests(unittest.TestCase):
+    """document_sha256 is the resource-level integrity signal projected
+    into citations.json as item-level document.sha256 — sha256 of the
+    full fetched page text, unconditional. Replaced a field named
+    content_hash that computed paragraph_hash(text, evidence) instead:
+    the hash of whichever quote's paragraph was checked most recently,
+    which meant a multi-quote URL got it overwritten by iteration order,
+    not page identity, on every check. See check_evidence()'s docstring.
+    """
+
+    def setUp(self):
+        patcher = mock.patch.object(cf.manual_dump, "queue_request")
+        self.mock_queue_request = patcher.start()
+        self.addCleanup(patcher.stop)
+
+    def test_is_full_page_hash_not_quote_paragraph_hash(self):
+        page = "Some preamble.\n\nThe claim is right here in this paragraph.\n\nSome trailer."
+        quote = "The claim is right here in this paragraph."
+        cache = {}
+        with mock.patch.object(cf, "_fetch_page_text", return_value=(page, mock.Mock(headers={}), None)):
+            cf.check_evidence("https://example.org/paper", quote, cache, use_cache=True)
+        expected = cf.sha256(page)
+        self.assertEqual(cache["https://example.org/paper"]["document_sha256"], expected)
+        # Not the paragraph hash — a real, different value for this page.
+        self.assertNotEqual(expected, cf.paragraph_hash(page, quote))
+
+    def test_stable_across_different_quotes_on_the_same_page(self):
+        # The bug this replaces: checking two different quotes against
+        # the same fetched page used to leave document_sha256 (then
+        # named content_hash) holding whichever quote's paragraph was
+        # checked last — a value that depended on call order, not page
+        # identity. It must now be identical regardless of which quote
+        # triggered the check.
+        page = "First paragraph with claim one.\n\nSecond paragraph with claim two."
+        with mock.patch.object(cf, "_fetch_page_text", return_value=(page, mock.Mock(headers={}), None)):
+            cache_a = {}
+            cf.check_evidence("https://example.org/paper", "First paragraph with claim one.", cache_a, use_cache=True)
+            cache_b = {}
+            cf.check_evidence("https://example.org/paper", "Second paragraph with claim two.", cache_b, use_cache=True)
+        self.assertEqual(
+            cache_a["https://example.org/paper"]["document_sha256"],
+            cache_b["https://example.org/paper"]["document_sha256"],
+        )
+
+    def test_computed_even_when_quote_not_found(self):
+        # The old content_hash fell back to sha256(text) only when
+        # paragraph_hash() couldn't locate the quote — an inconsistency
+        # in when a whole-page hash was even available. document_sha256
+        # is unconditional: present on every successful fetch regardless
+        # of match result.
+        page = "A real page that does not contain the claimed sentence at all."
+        with mock.patch.object(cf, "_fetch_page_text", return_value=(page, mock.Mock(headers={}), None)):
+            cache = {}
+            result, *_ = cf.check_evidence(
+                "https://example.org/paper", "a sentence nowhere on this page", cache, use_cache=True)
+        self.assertEqual(result, "bad")
+        self.assertEqual(cache["https://example.org/paper"]["document_sha256"], cf.sha256(page))
 
 
 class FetchPageTextRobotsTests(unittest.TestCase):

@@ -485,7 +485,7 @@ class LoadArchiveInfoTests(unittest.TestCase):
             path = f.name
         self.addCleanup(lambda: os.remove(path))
         self._write_cache(path, {
-            "https://example.org/c": {"checked": "2026-08-22", "content_hash": "abc"},
+            "https://example.org/c": {"checked": "2026-08-22", "document_sha256": "abc"},
         })
         info = tf.load_archive_info()
         self.assertNotIn("https://example.org/c", info)

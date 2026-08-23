@@ -440,9 +440,23 @@ def check_evidence(url, evidence, cache, use_cache=True, from_pagecache=False):
 
     Any existing archive_url/archive_checked fields on the cache entry
     are preserved across a fresh-fetch write — this function only owns
-    the fetch-verification fields (etag/last_modified/content_hash/
+    the fetch-verification fields (etag/last_modified/document_sha256/
     verified/checked); --save-to-wayback owns the archive fields and
     writes them separately in main().
+
+    document_sha256 is sha256 of the full fetched page text, unconditional
+    — the resource-level integrity signal projected into citations.json
+    as item-level document.sha256 (see "Signal map" in
+    internal-heartbeat/machine-verifiable-citation.md). It replaced a
+    field named content_hash that computed paragraph_hash(text, evidence)
+    — i.e. the hash of whichever quote's paragraph happened to be checked
+    most recently — falling back to a whole-page hash only when that
+    quote couldn't be located. Since this function runs once per evidence
+    string, a multi-quote URL had that field overwritten on every check
+    with a value that depended on iteration order, not page identity, and
+    it was never actually read anywhere. Confirmed broken on a real
+    multi-quote URL before being replaced: the stored value matched
+    neither quote's own context hash.
     """
     entry = cache.get(url, {}) if use_cache else {}
     ev_key = sha256(normalize_ws(evidence))
@@ -560,7 +574,7 @@ def check_evidence(url, evidence, cache, use_cache=True, from_pagecache=False):
         manual_dump.queue_request(url)
         return None, False, "EMPTY_RESPONSE" if not text else "PAGE_TOO_SHORT", False, None, None
 
-    new_hash = paragraph_hash(text, evidence) or sha256(text)
+    document_hash = sha256(text)
     verified = dict(entry.get("verified", {}))
     result = quote_matches(text, evidence)
     verified[ev_key] = result
@@ -571,11 +585,11 @@ def check_evidence(url, evidence, cache, use_cache=True, from_pagecache=False):
             contexts[ev_key] = ctx
     cache[url] = {
         **{k: v for k, v in entry.items() if k not in
-           ("etag", "last_modified", "content_hash", "verified", "checked",
-            "blocked", "blocked_since")},
+           ("etag", "last_modified", "document_sha256", "content_hash",
+            "verified", "checked", "blocked", "blocked_since")},
         "etag": resp.headers.get("ETag") if resp is not None and not is_wikipedia else entry.get("etag"),
         "last_modified": resp.headers.get("Last-Modified") if resp is not None and not is_wikipedia else entry.get("last_modified"),
-        "content_hash": new_hash,
+        "document_sha256": document_hash,
         "verified": verified,
         "contexts": contexts,
         "checked": date.today().isoformat(),
