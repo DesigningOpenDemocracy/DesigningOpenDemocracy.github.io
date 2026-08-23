@@ -21,6 +21,7 @@ the archive cache path are all monkeypatched to a tempdir). Run with:
     python -m unittest discover tests
 """
 
+import hashlib
 import json
 import os
 import shutil
@@ -167,6 +168,67 @@ class OnPreBuildArchiveProjectionTests(unittest.TestCase):
         ce.on_pre_build(None)
         cites = self._read_citations()
         self.assertEqual(cites[0]["accessed"], {"date-parts": [[2026, 1, 1]]})
+
+    def test_evidence_id_is_full_untruncated_sha256_of_quote(self):
+        # See internal-heartbeat/machine-verifiable-citation.md's "Evidence
+        # id length": evidence[].id is the full 64-char digest, never
+        # truncated in citations.json — truncation (if any) only happens
+        # at the COinS embedding site, not in this stored record.
+        self._set_archive_cache({})
+        ce.on_pre_build(None)
+        cites = self._read_citations()
+        quote = "The organisation was founded in 2020 by a group of volunteers."
+        expected_id = hashlib.sha256(tf.normalize_ws(quote).encode("utf-8")).hexdigest()
+        self.assertEqual(len(cites[0]["evidence"]), 1)
+        self.assertEqual(cites[0]["evidence"][0]["id"], expected_id)
+        self.assertEqual(len(expected_id), 64)
+
+    def test_url_level_id_is_full_untruncated_sha256(self):
+        # Consistency fix: this id used to be md5(url)[:8], and briefly
+        # sha256(url)[:12]. Both mixed a truncation decision into stored
+        # data that has no byte-budget reason for one — the same
+        # reasoning that keeps evidence[].id full-length applies here.
+        # Truncating for a shorter display/citation key is a render-time
+        # choice, not baked into the file.
+        self._set_archive_cache({})
+        ce.on_pre_build(None)
+        cites = self._read_citations()
+        expected_id = hashlib.sha256(
+            "https://example.org/founding".encode("utf-8")
+        ).hexdigest()
+        self.assertEqual(cites[0]["id"], expected_id)
+        self.assertEqual(len(cites[0]["id"]), 64)
+
+    def test_convergence_sha256_always_present_even_when_identical_to_id(self):
+        # See internal-heartbeat/machine-verifiable-citation.md's "id vs
+        # the sha256 field": always emitted, never omitted as a
+        # "redundant" duplicate when id is already content-derived — a
+        # uniform schema beats saving a few bytes, so consumers never
+        # need conditional presence-checking logic. A wrapper object
+        # (matching evidence[].context's own shape), not a flat field
+        # or a purpose-based name like "convergence-id" — the wrapper
+        # names what's hashed and why, sha256 inside it says how.
+        self._set_archive_cache({})
+        ce.on_pre_build(None)
+        cites = self._read_citations()
+        self.assertEqual(cites[0]["convergence"]["sha256"], cites[0]["id"])
+        self.assertEqual(
+            cites[0]["evidence"][0]["convergence"]["sha256"],
+            cites[0]["evidence"][0]["id"],
+        )
+
+    def test_evidence_id_is_stable_across_rebuilds_with_no_state_carried(self):
+        # A hash-derived id must reproduce identically from source on every
+        # build with zero persisted state — unlike a UUID, which would need
+        # an id registry to stay stable (see the same doc section for why
+        # that reintroduces the two-writers-can-disagree problem this
+        # citation-archival redesign already removed once).
+        self._set_archive_cache({})
+        ce.on_pre_build(None)
+        first_id = self._read_citations()[0]["evidence"][0]["id"]
+        ce.on_pre_build(None)
+        second_id = self._read_citations()[0]["evidence"][0]["id"]
+        self.assertEqual(first_id, second_id)
 
 
 if __name__ == "__main__":

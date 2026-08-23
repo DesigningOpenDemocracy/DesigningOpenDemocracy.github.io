@@ -2,13 +2,44 @@
 
 A citation format that tells you what the source said and how to check if it still says it. Ships as a `citations.json` alongside your content. No academic infrastructure required.
 
+## Why this exists
+
+Every existing citation format tells you *where* to find a source and
+*when* you accessed it — a URL, a DOI, an access date. None of them tell
+you *what the source actually said*, or give you a mechanical way to
+check whether it still says it (see Appendix A's standards survey — this
+is a real gap, not an oversight in the formats surveyed). A citation is
+usually a trust-me link: correct the day it was written, then silently
+rotting afterward as pages get edited, moved, or taken down, with
+nothing to signal the drift to a reader and no way for a publisher to
+catch it at scale beyond re-reading every citation by hand.
+
+This format closes that gap with one addition layered on standard
+CSL-JSON: an `evidence` array carrying the verbatim quote a claim
+actually rests on, plus enough metadata — a status, a content hash, a
+verification date — for a script to re-check that quote against the
+live page and report, mechanically, whether the citation still holds.
+
+This isn't a proposal in the abstract. DOD runs it today across 336
+cited pages and 443 evidence entries, re-verified on a weekly schedule
+(`check_fragments.py`), and this document is the working record of
+building it — including the real failure modes that showed up doing so
+and how they were fixed (Appendix C), and the ones still open (Appendix
+B's "DOD-specific notes"). See Appendix A for what else was surveyed and
+ruled out, Appendix B for the reference implementation and its numbers.
+
 ## Format
 
-Layered on standard CSL-JSON — ignored by Zotero, Pandoc, citeproc.
-The `evidence` array groups per-claim data under each URL.
+Layered on standard CSL-JSON. The `evidence` array groups per-claim data
+under each URL. Standard processors (Zotero, Pandoc, citeproc) ignore
+unknown fields and consume the item normally; a *strict schema
+validator* will reject it, since `csl-data.json` sets
+`additionalProperties: false` — a deliberate tradeoff, see Appendix D.
 
 ```json
 {
+  "id": "b5e1a04c9d2f7318e6c0a45b8f1d93e27a6c4051d8b3f9e2c7a0d64185b3f2c9",
+  "convergence": {"sha256": "b5e1a04c9d2f7318e6c0a45b8f1d93e27a6c4051d8b3f9e2c7a0d64185b3f2c9"},
   "type": "webpage",
   "URL": "https://en.wikipedia.org/wiki/MySociety",
   "title": "mySociety",
@@ -17,6 +48,8 @@ The `evidence` array groups per-claim data under each URL.
   "archive_location": "https://web.archive.org/web/20260812123456/https://en.wikipedia.org/wiki/MySociety",
   "evidence": [
     {
+      "id": "7f3a9c2e1b4d6f80c3e5a1b9d2f4680e91c7a3b5d0f2e4c6a8b0d2f4e6a8c0e2",
+      "convergence": {"sha256": "7f3a9c2e1b4d6f80c3e5a1b9d2f4680e91c7a3b5d0f2e4c6a8b0d2f4e6a8c0e2"},
       "type": "quote-match",
       "quote": "mySociety was founded by Tom Steinberg in September 2003",
       "last-verified": "2026-08-12",
@@ -26,7 +59,7 @@ The `evidence` array groups per-claim data under each URL.
         "text": "mySociety was founded by Tom Steinberg in September 2003 and started with TheyWorkForYou, a parliamentary monitoring website that makes it easy for people to keep tabs on their elected representatives.",
         "prefix": "mySociety is a UK-based not-for-profit social enterprise,",
         "suffix": "and started with TheyWorkForYou, a parliamentary monitoring website.",
-        "sha256": "abc789..."
+        "sha256": "9c1185a5c5e9fc54612808977ee8f548b2258d31ddcae9e3a3e9e0b1f2c4d7a6"
       }
     }
   ]
@@ -39,12 +72,17 @@ The `evidence` array groups per-claim data under each URL.
 
 | Field | Purpose |
 |---|---|
+| `id` | Standard CSL-JSON citation key. `sha256(URL)`, full 64-char lowercase hex for DOD's own implementation — see "Identifier construction" for why another implementation may generate this differently. |
+| `convergence` | DOD extension, a wrapper object (mirrors `evidence[].context`'s shape: the wrapper names what's hashed and why, the value inside says how). `{"sha256": "<sha256(URL)>"}`, full 64-char lowercase hex. Always present, even though it is byte-identical to `id` in DOD's own file — see "id vs the sha256 field". |
 | Standard CSL-JSON (`type`, `URL`, `title`, `accessed`, `archive`, `archive_location`) | Interoperable with Zotero, Pandoc, citeproc. `archive`/`archive_location` are standard CSL fields — a Wayback Machine snapshot (or equivalent) of the page at the time it was cited, so a reader can inspect what the citation originally pointed to even if the live page has changed or disappeared. |
+| `url-status` | DOD extension. `dead` \| `unfit`; absent means live. Set by hand, never inferred — a parked domain returns HTTP 200, so this is not machine-detectable. |
 
 **Per-claim fields** (one entry per quote, nested under `evidence`):
 
 | Field | Required? | Purpose |
 |---|---|---|
+| `id` | No | Identifier for *this specific evidence entry*, for DOD's own implementation `sha256(normalize(quote))`, full 64-char lowercase hex — see "Identifier construction". Addressable from outside the file (a URL's `evidence` array can hold several quotes, so the URL alone doesn't identify a claim). |
+| `convergence` | Yes | DOD extension, same wrapper shape as the item-level field above. `{"sha256": "<sha256(normalize(quote))>"}`, full 64-char lowercase hex. Always present alongside `id`, even when byte-identical to it — self-verifying (recompute from the quote to confirm the pointer and text still agree) and the value any implementation must compute identically to answer "same underlying fact." Not the same thing as `context.sha256` below: this hashes the quote alone; `context.sha256` hashes the surrounding span. See "id vs the sha256 field". |
 | `type` | Yes | Evidence kind. `"quote-match"` for web-page text verification. Extensible: `screenshot`, `pdf-page`, `timestamp`. |
 | `quote` | Yes | Verbatim excerpt from the source. Gate tier — must match the live page to keep the citation green. |
 | `last-verified` | No | ISO date of last confirmation that `quote` matched the live page. |
@@ -66,6 +104,235 @@ Different hash + same quote → page was edited around the claim (review
 signal, not failure). All fields absent → the quote is unique enough to
 anchor itself without context.
 
+### Naming and value conventions
+
+This is a machine-read format; consumers compare these strings exactly,
+so the conventions are normative, not cosmetic.
+
+- **Field names.** Standard CSL-JSON names are inherited verbatim,
+  including `archive_location`'s underscore — that is CSL's own
+  inconsistency and not ours to correct. New DOD extension fields are
+  lowercase, hyphen-separated (`url-status`).
+- **Enumerated values** are lowercase, hyphen-separated: `webpage`,
+  `quote-match`, `dead`, `unfit`.
+- **Hex digests** are lowercase; see "Identifier construction".
+
+**One known violation, flagged rather than silently tolerated:**
+`evidence[].status` uses uppercase (`MATCH` / `MISMATCH` / `AMBIGUOUS`)
+against every rule above. It reads as console output that leaked into
+the data model — those are exactly the strings DOD's verifier prints.
+The case for normalizing it to `match` / `mismatch` / `ambiguous` is
+unusually strong *right now*: no published entry carries the field at
+all (see Appendix B, "Specified but unpopulated"), so there is currently
+nothing to break, and that stops being true the moment anything writes
+it. The case against is that `util/citations_tool.py` also reads
+third-party `citations.json` files, so the value vocabulary is not
+purely DOD's to redefine. Unresolved — deliberately recorded here rather
+than changed in passing.
+
+### Identifier construction
+
+Both `id` fields are content-derived hashes in DOD's own implementation,
+constructed the same way `convergence.sha256` always is (see "id vs the
+sha256 field" below for why the two coincide here but aren't the same
+concept):
+
+| Field | Hash input |
+|---|---|
+| item `id` / `convergence.sha256` | the item's `URL`, verbatim |
+| `evidence[].id` / `evidence[].convergence.sha256` | the evidence `quote`, normalized (below) |
+
+Normative rules for both:
+
+- **SHA-256**, hex-encoded, **lowercase**, **full 64 characters**, input
+  encoded as **UTF-8**.
+- **Never truncated in the file.** A stored short form bakes a
+  truncation decision into the canonical identity with no way back to a
+  longer one. Truncate only where a named cost actually scales with
+  length — in this whole design that is exactly one place: the
+  `evidence_sha256` prefix inside a COinS span (Appendix E), which ships in
+  HTML to every visitor on every page load. Resolve a short form by
+  prefix match against the full id, the way Git resolves an abbreviated
+  commit hash — Git likewise never truncates what it *stores*, only what
+  it displays.
+- Consumers may abbreviate for display. That is a rendering choice and
+  carries no meaning in the data.
+
+#### Quote normalization
+
+`evidence[].id` hashes a *normalized* quote so that two parties holding
+the same quote agree on the same id. The normalization is part of the
+format: an implementation that skips it computes different ids for
+identical evidence, which defeats the purpose. Applied in this order:
+
+1. Remove whitespace immediately following `(`.
+2. Collapse every run of whitespace to a single space (U+0020); strip
+   leading and trailing whitespace.
+3. Remove whitespace immediately preceding `)`.
+
+DOD's implementation is `normalize_ws()` in `util/text_fragment.py`.
+
+**Known wart, flagged rather than hidden:** rules 1 and 3 exist to
+absorb an artifact of *one* HTML-to-text extractor — DOD's
+`html_to_text()` renders `(<i>N</i> = 5734)` as `( N = 5734)` at
+inline-tag boundaries. That is a reasonable tolerance when *matching* a
+quote against page text, but here it does double duty as part of an
+*identity*, where a lossy rule justified by a single implementation's
+quirk is harder to defend. It is specified explicitly, rather than left
+implicit in DOD's code, so an independent implementer can reproduce
+these ids exactly. Separating the matching normalization from the
+identity normalization is the first thing to revisit if this format is
+adopted elsewhere — it would change every `evidence[].id`, so it is not
+a change to make casually.
+
+#### Why a content hash, not a UUID
+
+`citations.json` is regenerated from source on every build and carries
+nothing forward from its own prior output. A hash reproduces identically
+with zero persisted state. A random UUID would mint a new id for
+unchanged evidence on every rebuild, breaking any external reference to
+it; making one stable would require persisting an id registry, which
+reintroduces exactly the second-writer drift this pipeline already
+removed once (Appendix C, 2026-08-22). A hash is also self-verifying,
+and it *converges*: two independently-run sites citing the same quote
+compute the same id with no coordination — the property a format meant
+to span separate citation databases actually needs.
+
+Centrally-allocated bibliographic identifiers (DOI, ISBN, ORCID) are not
+a counter-example: they name mutable *works* — editions, formats, items
+minted before final content exists — so there is no canonical byte
+string to hash, and their real product is registry-backed resolution
+rather than identity. Different problem.
+
+#### `id` vs `convergence.sha256`: what's normative, what's implementation choice
+
+The reasoning above is DOD's own justification for its own choice —
+making `id` itself content-derived. That choice bundles two properties
+into one field for free: self-verification (recompute from the quote,
+compare) and the cross-site convergence just described. Both hold *only
+because* `id` here happens to be a pure content hash — they are not the
+same requirement in general, and conflating them stops working the
+moment `id` isn't content-derived.
+
+That can legitimately happen: a content-hash-based `id` changes on any edit
+to the quote — a typo fix, a lengthened excerpt to disambiguate an
+`AMBIGUOUS` match — with no forwarding path, because it has no notion of
+"the same claim, re-transcribed." An implementation that needs a
+citation instance to survive that kind of routine copy-edit (for a
+stable pointer *into* it, like `evidence_sha256` in Appendix E, or its own
+internal referencing) needs `id` to instead be a persisted, publisher-
+local key, assigned once and carried forward independent of the quote's
+current wording. Both are legitimate engineering choices for what `id`
+*is*, and — same as CSL-JSON's own `id` already works across Zotero,
+BetterBibTeX, and Pandoc today, with zero expectation that two libraries
+agree on a value for "the same" reference — this format does not mandate
+one. **How a program chooses to generate and store `id` is its own
+business.**
+
+What isn't optional, if this format is to mean anything across
+independently-run sites, is a way to answer "are these two citations —
+possibly with different local `id`s, possibly even differently excerpted
+— pointing at the same underlying fact?" That question needs one
+deterministic, content-derived value every implementation computes the
+same way, which is what `convergence.sha256` is for:
+
+- `convergence` = `{"sha256": "<sha256(normalize_ws(quote))>"}`, full
+  64-char lowercase hex inside a wrapper object — identical hash
+  construction to `id` above.
+- **Always present, on every entry, regardless of what `id` is.** Even
+  when `id` is already content-derived and `convergence.sha256` would be
+  a byte-identical duplicate — DOD's own case — it is emitted anyway
+  rather than omitted as "redundant." A conditional presence rule ("only
+  emit this when it differs from `id`") pushes a branch onto every
+  consumer, who now has to check whether `convergence` exists before
+  knowing which field actually answers the convergence question. A
+  uniform schema — the field is simply always there — costs a duplicated
+  64-char string per entry and buys every consumer one less thing to get
+  wrong. Same judgment already applied to truncation above: optimizing
+  away a few bytes is not worth it in a JSON export with no byte-budget
+  pressure.
+
+DOD's own `citations.json` needs no logic change for this beyond emitting
+the field: `id` already equals what `convergence.sha256` computes, so
+the two values are simply written side by side. This section exists so
+a future implementation choosing a non-content-derived `id` still has a
+specified, mandatory field to populate, without this document silently
+assuming its own default is the only valid choice.
+
+**Why it's a wrapper object, named after its algorithm inside, not a
+flat purpose-named field.** `id` is opaque by design — a consumer only
+ever compares it for equality, never recomputes it, so it has no need to
+declare how it was generated. This field is the opposite kind of value —
+its entire job is "recompute this from the current content and check it
+still matches," which is meaningless unless the field itself says which
+algorithm to use. And it's a wrapper (`convergence`) with the algorithm
+named inside (`sha256`) rather than a flat field, because that's the
+exact shape `evidence[].context` already uses a few paragraphs up: the
+wrapper says *what's being hashed and why*, the value inside says *how*.
+Consistent naming avoids a real failure mode: if this format, or an
+adopter of it, ever needs a second algorithm — a migration, a stronger
+hash, a per-quote choice — it becomes a sibling key (`convergence.blake3`,
+say) inside the same wrapper, rather than forcing either a second
+top-level field or an ambiguous flat field that can no longer be trusted
+to mean one specific thing. (See Appendix C for how this field's shape
+evolved — a flat `convergence-id`, then a flat `sha256`, before settling
+here; the history isn't repeated in this section.)
+
+**A hash of the URL and a hash of the cited content are different
+things, and this format currently only standardizes the former.** The
+item-level `convergence.sha256` hashes the *URL* — it identifies the
+citation entry, and says nothing about what is actually at that address;
+a page can be rewritten completely underneath an unchanged URL and this
+field never notices, by design, since verifying content is
+`evidence[].quote`/`status`'s job. For an HTML page that split is
+correct: the page is a living document, and only a specific excerpt is
+being verified, not the whole thing. A fixed, downloaded artifact — a
+PDF, a `.docx` — is a different case: the *whole file* is normally
+immutable once published, so a hash of its complete bytes would be a
+real, currently-missing signal ("has this exact file changed at all,"
+categorically stronger than "does this substring still appear in its
+extracted text"). `check_fragments.py` already extracts PDF/`.docx` text
+via pdfminer/zip-XML and quote-matches it exactly like an HTML page (see
+`util/check_fragments.py`'s entry in `CLAUDE.md`) — there is no
+whole-file hash computed anywhere in this pipeline today. **This means
+`CLAUDE.md`'s own Data exports table is currently wrong**: it describes
+`/data/citations.json` as having "per-URL entries with `content-sha256`"
+— no such field exists in `citation_export.py`'s output, and grepping
+the codebase turns up nothing that ever computed one. Whether that was
+aspirational documentation for a field never built, or a stale
+description of something removed, wasn't determined here. Flagged, not
+fixed in passing.
+
+**If this is ever built, it belongs with `context`, not `convergence`.**
+A whole-file hash answers "has this exact file's bytes changed since I
+last looked" — an integrity/drift question, the same family as
+`context.sha256` ("did the surrounding text change around an otherwise-
+intact quote"), not an identity/agreement question like `convergence`
+("do we agree this is the same referenced thing"). Convergence doesn't
+need it: URL plus normalized excerpt already fully identifies "the same
+claim" for a PDF exactly as for an HTML page, since `check_fragments.py`
+quote-matches extracted PDF text the same way it does rendered HTML —
+nothing about convergence goes deeper than that today, or needs to. A
+whole-file hash would be a *third*, separate signal, sitting at the item
+level (a property of the whole cited resource, not of one quote) —
+something like a top-level `context: {"sha256": "<hash of the file's
+raw bytes>", "checked": "<date>"}`, sibling to `archive`/`url-status`,
+not a key inside `convergence`. **Not sure yet whether it's worth
+building** — check_fragments.py would need to hash the raw bytes before
+extraction (a small addition to its existing PDF/`.docx` fetch path) and
+citation_export.py would need to project it from wherever that hash gets
+cached, same pattern as `archive_url`. Recorded here as a properly-scoped
+idea, same treatment as Appendix F — not committed to, not scheduled.
+
+#### The id is not an anti-spoofing mechanism
+
+It is public and copyable, like a URL or a DOI. What has to hold up
+under scrutiny is the record it resolves to, and that record is only
+ever written by the publisher's own build pipeline. A third party can
+quote a real id next to a claim it doesn't support, exactly as they can
+misuse a real URL — id length changes nothing about that, and nothing
+here tries to solve it. The trust boundary is who can write
+`citations.json`.
 ### Content hash
 
 `context.sha256` pins the evidence to a specific span of source text.
@@ -224,6 +491,72 @@ intermediate caches or markdown-specific extraction.
 markdown. The build hook produces CSL-JSON. The JSON is never
 hand-edited — it's consumed by Zotero, Pandoc, or a verifier.
 
+**Specified but unpopulated (open gap, 2026-08-23).** Measured against
+the actual built file — 336 items, 443 evidence entries — the only
+fields present are item `id`/`type`/`URL`/`title` and evidence
+`id`/`type`/`quote`. Every mechanical-verification field this format
+exists for is absent: no `status`, `last-verified`, `verified-by`, or
+`context` on any entry, and no `accessed`/`archive`/`archive_location`
+either. So the "Two tiers of integrity" model above describes something
+the published artifact does not currently carry.
+
+The data itself is not missing — it is in the wrong file.
+`check_fragments.py` verifies every quote on a schedule and writes the
+results to `docs/data/citation-evidence.json`, whose entries hold
+`verified` (per-quote pass/fail), `contexts` (`prefix`/`text`/`suffix`/
+`sha256` — exactly the `context` shape specified above), and `checked`
+(the date `last-verified` wants). None of it is projected into the CSL
+export.
+
+This is the same failure already caught once for `archive`/
+`archive_location` (Appendix C, 2026-08-22: two write paths, neither
+populating the export), and the mechanism is the same one that entry
+identified as the anti-pattern — `citation_export.py` *carries these
+fields forward from its own previous output* instead of projecting them
+from the cache. Since `citations.json` is gitignored and rebuilt from
+scratch every time, there is never a previous output to carry anything
+forward from, so the branch is structurally dead.
+
+The fix is the pattern already established for the archive fields:
+project from `citation-evidence.json` on every build. That is now
+cheap, because the cache is keyed by `sha256(normalize_ws(quote))` —
+byte-identical to `evidence[].id` — so the join requires no new
+plumbing. The one real design question is `context`: projecting every
+`contexts` blob would add a paragraph of source text per quote and
+materially change the file's size, so whether `context` ships always,
+never, or behind a flag is a judgment call, not a mechanical port.
+Deliberately not done in passing.
+
+**A drifted-but-live page never gets the archive-preferred treatment
+`dead`/`unfit` gets (open gap, 2026-08-23).** `check_fragments.py`
+already detects this exact case every week — `check_evidence()` computes
+`result = quote_matches(text, evidence)` and stores it as a plain
+boolean in `citation-evidence.json`'s `verified` map, keyed by the same
+`sha256(normalize_ws(quote))` hash `evidence[].id`/`convergence.sha256`
+already use. So a MISMATCH — the cited sentence is gone, but the site is
+completely live and legitimate — is known and cached. Nothing downstream
+ever sees it: it isn't projected into `citations.json`'s `evidence[].
+status` (the gap just above), and separately, neither render path
+(`organisation.html`'s `render_event` macro, `hooks/footnote_fragments.
+py`) reads `citation-evidence.json`'s `verified` map at all — both
+compute `is_rotted` from `url_status in ('dead', 'unfit')` only. Today's
+actual behavior: a reader clicks through to a normal, working, entirely
+legitimate page that simply no longer contains what's quoted, with no
+visual signal at all — even when an `archive_url` from an earlier
+snapshot already exists and would show them the real proof.
+
+This is a third case, distinct from both existing `url_status` values,
+and arguably the more common one in practice — pages get lightly edited
+far more often than domains go fully dead or get parked. It isn't a new
+`url_status` value, either: `url_status` is inherently about the *site*
+(reachable? legitimate?), and a MISMATCH says nothing about that — the
+site can be perfectly fine while one specific claim has drifted out of
+it. The fix is evidence-scoped, not URL-scoped: extend `is_rotted` in
+both render paths to also trigger per evidence entry when that entry's
+`status` is `MISMATCH` and an `archive_url` exists for its URL,
+independent of whatever `url_status` says at the item level. Flagged,
+not built — same treatment as the gap above it.
+
 **Multi-citation footnotes:** footnotes citing more than one source are
 treated as citation-only — no quote is extracted for verification,
 fragment rendering, or export, even if a quoted phrase is present.
@@ -351,6 +684,90 @@ only if a concrete downstream consumer actually needs it.
   `internal-heartbeat/2026-08-22-citation-archival-design-decisions.md`
   for the full design conversation.
 
+- **2026-08-23:** Added `evidence[].id` — `sha256(normalize_ws(quote))`,
+  full 64-char lowercase hex — so a specific *claim* is addressable from
+  outside the file, not just the URL it came from (a URL's `evidence`
+  array routinely holds several quotes). Needed by Appendix E's COinS
+  pointer, which cannot embed the quote itself. The item-level `id`
+  moved to full `sha256(URL)` in the same pass: it had been `md5(url)[:8]`,
+  briefly became `sha256(url)[:12]`, and both truncations were
+  optimizations for a constraint that does not exist — CSL-JSON `id`
+  values are tool-generated, not hand-typed, and a JSON field has no
+  byte budget. Settled rule, now stated normatively under "Identifier
+  construction": store the full digest everywhere; truncate only where a
+  named cost scales with length, which in this design is exactly one
+  place (the COinS span), resolved by Git-style prefix match.
+- **2026-08-23:** Specified quote normalization normatively instead of
+  leaving it as a reference to DOD's `normalize_ws()`. Without this an
+  independent implementer cannot reproduce `evidence[].id`, which breaks
+  the cross-site convergence that is the main argument for using a
+  content hash at all. Also flagged the wart it exposes: the paren rules
+  inside that function are compensating for one HTML-to-text extractor's
+  artifact, and are now doing double duty as part of an identity.
+- **2026-08-23:** Recorded two consistency findings without changing
+  them, both in Appendix B / "Naming and value conventions": `status`
+  uses uppercase values against the format's own lowercase convention,
+  and the entire mechanical-verification field set (`status`,
+  `last-verified`, `verified-by`, `context`, plus `accessed`/`archive*`)
+  is specified but present on zero published entries, because
+  `citation_export.py` carries those fields forward from its own prior
+  output rather than projecting them from `citation-evidence.json` —
+  a structurally dead branch, since the file is gitignored and rebuilt
+  from empty every time. Same failure mode as the 2026-08-22 archive
+  entry below.
+- **2026-08-23:** Added a second, deterministic content-hash field
+  alongside `id`, motivated by a real tension: `id`'s self-verification
+  and cross-site convergence properties both hold only because DOD made
+  `id` itself content-derived, but an implementation needing `id` to
+  survive a routine quote edit (a typo fix, a lengthened excerpt) needs
+  it to be a persisted local key instead — which drops convergence.
+  Introduced the split (`id`'s generation is implementation-defined;
+  the new field is the one thing that must stay standardized), initially
+  named `convergence-id`, present only when `id` wasn't already
+  content-derived. Reconsidered twice in the same pass: (1) a conditional
+  presence rule forces every consumer to branch on whether the field
+  exists before knowing which one to read, so it's now always emitted,
+  even when byte-identical to `id` for DOD's own implementation; (2) a
+  purpose-named field (`convergence-id`) can't declare which algorithm to
+  recompute it with, so it was renamed to `sha256`, matching
+  `evidence[].context.sha256`'s own naming precedent; (3) that broke the
+  same precedent's *shape* — `context` is a named wrapper object with
+  `sha256` nested inside, not a flat field — so it became
+  `convergence: {"sha256": "..."}` at both the item and evidence level.
+- **2026-08-23:** While checking whether a hash of a URL and a hash of
+  cited content were the same concept, found `CLAUDE.md`'s Data exports
+  table describes `citations.json` as having a `content-sha256` field
+  that `citation_export.py` has never written — flagged as stale
+  documentation, not corrected in passing. Also specified where a
+  whole-file hash (for a fixed artifact like a PDF, as opposed to a
+  living HTML page) would belong if ever built: with `context`
+  (integrity/drift), not `convergence` (identity/agreement) — an initial
+  placement inside `convergence` was corrected the same day once the
+  distinction was made explicit.
+- **2026-08-23:** Flagged that a quote going `MISMATCH` on an otherwise
+  completely live, legitimate page never triggers the archive-preferred
+  rendering that `url_status: dead`/`unfit` does — `check_fragments.py`
+  already computes and caches this verdict weekly, but neither render
+  path (`organisation.html`, `hooks/footnote_fragments.py`) reads it;
+  both key their decision purely off the item-level `url_status`. Not a
+  new `url_status` value — the gap is evidence-scoped, not URL-scoped.
+  See "DOD-specific notes" in Appendix B.
+- **2026-08-23:** Renamed Appendix E's proposed COinS key from
+  `dod_evidence` to `evidence_sha256`. This document proposes a standard
+  extension by example, not a DOD-local convention, and an org-branded
+  key name contradicted that on its face — no other field in this format
+  carries a `dod_` prefix in the key itself (`url-status` etc. are only
+  ever called "DOD extension fields" in prose). Also softened
+  surrounding language in the same appendix ("private, additive DOD
+  convention" → "additive convention... usable by any implementation")
+  for the same reason. Also added a cross-reference making explicit that
+  a COinS span *is* DOD's version of a CSL `citation`/`citationItem`'s
+  cite-location concept, with `evidence_sha256` playing `locator`'s role
+  but resolving to mechanically-checkable text instead of a human-read
+  position string, and flagged a reverse-index idea (evidence entries
+  optionally listing which locations cite them) as a follow-on, not
+  built.
+
 ---
 
 ## Appendix D: Promoting this to upstream CSL-JSON (not yet — how-to for later)
@@ -381,40 +798,52 @@ this case — a `custom` property (`"type": "object"`, no
 CSL JSON field... preferred over the note field for storing custom
 data." Nesting `evidence` under `custom.evidence` instead of at the top
 level would make `citations.json` fully schema-valid *today*, with no
-upstream involvement needed — this isn't a proposal-first situation the
-way the rest of this appendix assumed, it's a mechanical rename. Not yet
-done: `hooks/citation_export.py` (produces `cite["evidence"]`) and every
-consumer that reads it (`util/citations_tool.py`,
-`hooks/footnote_fragments.py`'s Jinja filter chain if it ever reads this
-file, any future doc/UI) would need the same key-path change together,
-otherwise reads and writes silently disagree — a small, contained
-refactor, not attempted as part of this correction pass.
+upstream involvement needed.
 
-This doesn't mean the previous framing was worthless — Pandoc's citeproc
-and Zotero don't run strict schema validation at parse time regardless,
-they just read known fields and ignore the rest, which is why the Pandoc
-round-trip claim above holds either way. And the schema repo still
-describes itself as "not yet fully normative," so even upstream doesn't
-treat it as a closed, final contract. But "not schema-valid" was simply
-wrong as originally stated.
+**Decided 2026-08-23: not doing this.** `custom` is a junk-drawer any
+implementation can read differently or ignore — nesting `evidence` there
+would make the file schema-valid but wouldn't get any other citation tool
+to understand what `evidence`/`quote-match`/`status` actually mean, and
+critically, it undercuts the actual goal: DOD wants to *push for
+`evidence` becoming a real, recognized field*, not just avoid a validator
+complaint. Hiding it in the sanctioned "doesn't fit anywhere" bucket reads
+as "we know this isn't a real proposal" before anyone's even looked at
+it. `citations.json` keeps `evidence` at the top level, and stays
+strictly non-schema-valid, on purpose.
 
-**Two different goals, not one** — worth keeping separate now that the
-`custom` finding is on the table:
-1. *Schema-valid today* — nest `evidence` under `custom.evidence`. A
-   mechanical rename, no upstream involvement, done whenever the
-   refactor above is worth doing.
-2. *`evidence` as a genuine, recognized CSL-JSON extension* — the actual
-   goal here, not settled by (1). `custom` is a junk-drawer any
-   implementation can read differently or ignore; it doesn't get other
-   citation tools to understand what `evidence`/`quote-match`/`status`
-   mean, doesn't give the concept a stable documented shape other CSL
-   consumers could build against, and doesn't make DOD's verification
-   semantics part of the actual spec. That's what the contribution path
-   below is for, and (1) doesn't substitute for it — if anything, having
-   a schema-valid file in hand strengthens the pitch when filing the
-   issue ("here's a working implementation, already passing your own
-   JSON Schema by using the sanctioned extension point"), rather than
-   removing the motivation to propose it properly.
+**Why that's an acceptable tradeoff, not just an oversight:** `citations.json`
+is an opt-in file — a consumer has to deliberately fetch and parse it, and
+the two that actually matter (Pandoc's citeproc, Zotero) don't run strict
+schema validation at parse time regardless; they read known fields and
+ignore the rest, which is why the Pandoc round-trip claim above holds
+either way. A strict validator choking on `evidence` is a real but narrow
+risk — one visible failure for a consumer who chose to engage, on a
+small, unofficial file, not silent breakage for someone who never opted
+in. The schema repo also still describes itself as "not yet fully
+normative," so even upstream doesn't treat it as a closed contract this
+would be violating. Contrast this with the COinS case in Appendix E below,
+where the equivalent risk is NOT acceptable regardless of project size —
+different consumer, different failure mode, not just a smaller version of
+the same tradeoff.
+
+**What accepting non-compliance now is actually buying:** not just "we
+didn't have to do a refactor" — a real, running reference implementation
+to point to later, which is the strongest form any standards pitch can
+make (the old IETF framing: rough consensus and running code beats a
+well-argued but untested proposal). A `custom.evidence`-nested version
+would be schema-valid but wouldn't prove anything about whether
+`evidence`/`quote-match`/`status`/`context` actually hold up as a shape —
+it'd just be data nobody's built anything real against. The top-level,
+non-compliant version is the one that's actually been exercised: produced
+by `hooks/citation_export.py`, consumed by `util/citations_tool.py`,
+mechanically verified against live pages by `check_fragments.py`, with
+real MISMATCH/AMBIGUOUS findings from real citations (see Appendix C).
+That's the artifact worth walking into `discourse.citationstyles.org`
+with — not a compliance trick, a working example of the field doing its
+actual job at real scale. Keep it clean and well-documented (this file
+*is* that documentation) specifically so it can serve as the reference
+implementation the eventual pitch points to, not just a private
+convenience.
 
 **The actual contribution path**, per the repo's `CONTRIBUTING.md`:
 1. File an issue first, following their issue template — enough detail
@@ -436,6 +865,216 @@ confirm `citations_tool.py --verify` actually round-trips a citations.json
 that DOD's own `citation_export.py` didn't produce — then file the issue
 once the shape has actually stopped moving.
 
+## Appendix E: Extending COinS for per-page discovery (do first, propose later)
+
+Raised 2026-08-23: `citations.json` is a bulk file a researcher has to know
+to look for. COinS (ContextObjects in Spans — an OpenURL/Z39.88-2004
+ContextObject embedded as `<span class="Z3988" title="ctx_ver=...">`) is
+the actual, currently-deployed mechanism reference managers (Zotero,
+EndNote, RefWorks) use to detect "there's a citable thing right here" on
+an arbitrary webpage, no separate file needed. Confirmed still live, not a
+deprecated relic — fetched `https://en.wikipedia.org/wiki/Local_government_in_Victoria`
+(a page this repo already cites in `how-victorian-councils-are-governed.md`)
+directly and found 27 `Z3988` spans, one per reference, generated by
+MediaWiki's own Cite templates.
+
+**Same two-goal split as Appendix D, same reasoning, different format.**
+This is a proposed extension, not a DOD-private convention — the point
+is that any implementation of this standard can adopt the same key with
+no coordination, the same way the rest of this format is meant to work:
+
+1. *An additive convention, backwards-compatible, usable now by any
+   implementation* — the actual target of this appendix.
+2. *A genuine registered OpenURL extension/profile* — a real
+   NISO-adjacent process, and a categorically different ask from (1):
+   (1) needs no one's cooperation, since `rft_id` plus the small
+   `evidence_sha256` pointer (see below) already let any tool that
+   understands this standard resolve the exact verification record from
+   `citations.json` without touching Zotero/EndNote/RefWorks at all; (2)
+   is specifically
+   about getting *those external tools themselves* to parse and surface
+   DOD's verification semantics in their own UI, which only they can
+   decide to build. Lower priority than the Appendix D CSL-JSON path,
+   since CSL/citeproc (Zotero, Pandoc) is the actively-maintained
+   ecosystem DOD's tooling already targets; OpenURL/COinS is comparatively
+   legacy library-science infrastructure. **Deliberately not scoped
+   here** — the concrete trigger for picking it up would be DOD deciding
+   it specifically wants citation-manager-native visibility (not just
+   DOD's own tools reading DOD's own data), which is its own decision
+   with its own cost/benefit case, not a natural extension of anything
+   already committed to. Recorded only so a future session doesn't have
+   to re-derive that COinS *does* have an analogous escape hatch if that
+   decision is ever made.
+
+**Why (1) is safe to just do, backwards-compatibly, with no upstream
+involvement:** a COinS `title` attribute is nothing more than a
+URL-encoded query string. A conformant OpenURL parser reads the `rft.*`
+keys it recognizes under whichever profile (`rft_val_fmt`) is declared —
+journal, book, Dublin Core — and is expected to silently ignore keys it
+doesn't know, the same tolerance every query-string-shaped format relies
+on. So:
+
+- Emit every standard key exactly as MediaWiki does today (same
+  `rft_val_fmt`, same `rft.atitle`/`rft.date`/etc.) so Zotero/EndNote/
+  RefWorks keep working completely unmodified — this is the backwards-
+  compatibility requirement, not a nice-to-have.
+- **`rft_id` (standard, already present) resolves the URL; one small
+  extension key resolves *which claim* on that URL.** An earlier draft of
+  this appendix tried to get away with adding nothing at all beyond
+  `rft_id`, on the theory that a resolver could just look the URL up in
+  `citations.json`. That's true as far as it goes, but incomplete: a
+  single URL's `evidence` array can (and does) hold more than one quote
+  — the same source cited for two different claims elsewhere on the
+  site — so `rft_id` alone tells a resolver *which page to check*, not
+  *which of that page's several recorded quotes this particular citation
+  is vouching for*. Since the quote itself deliberately isn't embedded
+  in the span (next bullet), resolving a specific citation instance
+  needs a pointer to a specific `evidence[]` entry, and a URL isn't
+  precise enough to be that pointer on its own. Concretely: add a single
+  key — `evidence_sha256` — carrying a short **prefix** of that entry's
+  `evidence[].id` (see "Identifier construction" above: the full 64-character
+  hash is what's actually stored in `citations.json`; a resolver takes
+  the prefix off the span and finds the one `evidence[].id` in the
+  target URL's array that starts with it, same prefix-match resolution
+  Git uses for abbreviated commit hashes). This is the one piece of
+  non-standard vocabulary this appendix actually asks for; everything
+  else stays standard COinS. Named after what it carries, not who
+  implemented it first — same convention as `convergence.sha256`/
+  `context.sha256` in the JSON format, and underscore-joined to match
+  the existing `rft_val_fmt`/`rft_id` key style in this span rather than
+  the hyphenated style DOD's own `citations.json` extension fields use.
+  Any implementation of this standard can emit and resolve the same key;
+  nothing about it is DOD-specific.
+- **Don't embed the quote, context, or hash directly in the span.** Same
+  mistake `check_evidence()`'s own docstring already warns against for
+  the evidence file (storing full page text made it balloon to
+  megabytes) — and COinS spans on Wikipedia already draw real complaints
+  about page bloat without adding to it. `evidence_sha256` stays a short
+  prefix, not the full 64-character hash, for exactly this reason — it's
+  a pointer, not a copy of the content it points to, and the span is the
+  one place in this design where byte size actually matters.
+
+**Where this would live in code, when/if implemented:** a new Jinja
+filter alongside `with_fragment`/`archive_info_for` (see
+`hooks/org_events.py`'s `on_env`), rendered into `organisation.html`'s
+event timeline and `hooks/footnote_fragments.py`'s footnote links — same
+render-time-derived, never-stored-in-frontmatter pattern as everything
+else in this file. Not yet built; this appendix is the design record, not
+an implementation.
+
+**This is, concretely, a location-links-to-evidence relationship** — the
+rendered citation the COinS span sits next to (a footnote link, an
+org-page timeline entry) *is* the "cite location," in the same sense
+CSL's own `citation`/`citationItems` objects represent one citing
+occurrence in a document. `evidence_sha256` is the pointer from that
+location to the one canonical evidence entry backing it, the same job
+`locator` does in a CSL `citationItem` — except `locator` is a
+human-readable position string ("page 42") built for manual
+verification, while `evidence_sha256` resolves to actual verbatim text a
+script can mechanically re-check. DOD didn't adopt CSL's `citation`
+object model to get this: those objects are citeproc processor state (a
+Word/LibreOffice plugin's in-document cursor state), not something
+published as a portable, fetchable file, so there's no natural home for
+them in a static-site pipeline. The rendered page element already *is*
+the location; COinS lets it carry a pointer without inventing a second,
+parallel citation-tracking structure alongside the markdown that already
+exists.
+
+The link only runs one direction here — location knows which evidence
+backs it, evidence doesn't know which locations cite it. A reverse index
+(each evidence entry optionally listing which citing locations reference
+it) would be the other direction, and wouldn't reintroduce the bloat
+problem the bullet above rules out, since it's metadata about usage, not
+a copy of the quote re-embedded per location. Nothing like it exists
+today. Not scoped — recorded here as the natural follow-on if a concrete
+use ever needs "everywhere this exact sentence is cited from" answered
+without re-scanning every markdown file.
+
+**Consistent with this repo's own working philosophy** (see Appendix D's
+"Why not now" above, and how the `evidence`/`archive` CSL-JSON fields
+themselves shipped in DOD's own tooling well before any upstream
+conversation was even considered): ship the additive convention as a
+proposal-by-example first, let it see real use, and only look at a formal OpenURL
+registration — if ever — once the shape has actually stopped moving.
+There's no equivalent "why not now" blocker here the way there was for
+CSL-JSON's evolving field set, since this is purely additive to a spec
+DOD doesn't control and isn't asking anyone to adopt.
+
+## Appendix F: Point-to-point verification via a browser extension (idea, not scoped)
+
+Raised 2026-08-23, in the same conversation as Appendix E. Sharpened into
+the framing that makes it click: **`citations.json` + `check_fragments.py`
+is bulk verification** — one server, on a schedule, sweeping the entire
+corpus at once, limited to whatever a script is *allowed* to reach.
+**This idea is point-to-point verification** — one person, one moment,
+one specific citation they're already looking at, using their own
+browser's access, which a bot-defended site can't distinguish from any
+other real visitor. Different shape, not a competing mechanism: bulk
+trades reach for coverage (checks everything, but bounces off anything
+that blocks scripts); point-to-point trades coverage for reach (checks
+almost nothing on its own, but can reach exactly the things bulk
+structurally can't — the entire reason `STILL BLOCKED`, robots.txt gates,
+and `PAGE_TOO_SHORT` SPA shells exist as categories in this repo).
+
+**To be clear about what "verification" means here — same mechanical bar
+as everywhere else in this file, not human judgment.** The extension
+would run the identical substring-match check `check_fragments.py`
+already runs server-side — "is this exact quote still present on this
+page" — just executed inside the visitor's own browser instead of a
+scheduled server fetch, so it inherits their real session/IP/fingerprint
+and gets past bot-defenses a script can't. It is not a human manually
+re-reading the source to judge whether the citation actually *supports*
+the claim it's attached to — that editorial judgment call is made once,
+at authorship, and stays out of scope for every part of this pipeline,
+bulk or point-to-point alike.
+
+**This isn't actually a new idea for DOD — it's an unautomated version of
+one that already ships.** `util/manual_dump.py` *is* point-to-point
+verification today: a maintainer deliberately opens a `STILL BLOCKED` URL
+from `manual-dump/requests.txt` in a real browser, saves the rendered
+page, and `import_manual_dump.py` checks the stored quote against it —
+exactly "a human's real browser sees past what the script can't," just
+triggered by a maintainer working through a worklist rather than by
+ordinary browsing. A browser extension would be the passive/automatic
+version of the same mechanism: any visitor's normal click-through to a
+citation's original source becomes a verification opportunity, with
+nobody having to remember to run the manual-dump workflow at all.
+
+**What it would actually require, honestly:**
+
+- **Bespoke software, not a COinS tweak.** Zotero/EndNote have no notion
+  of DOD's `quote:`/evidence semantics — this needs its own extension,
+  built and maintained by DOD, not an add-on behavior of an existing tool.
+- **A live backend, which does not currently exist.** This site is fully
+  static (GitHub Pages, `mkdocs gh-deploy`) with no server component at
+  all. For an extension to report "I just saw this quote is still there"
+  anywhere useful, something has to receive that report — an API
+  endpoint, storage, ongoing hosting. This is the single biggest gap, well
+  past the surface size of anything else in this document — every other
+  mechanism here (COinS, citations.json, `.pagecache/`, the evidence file)
+  is static-site-compatible; this one structurally isn't.
+- **A trust story for self-reported results.** An anonymous "verified:
+  true" ping is spoofable with no integrity check — it can't be trusted
+  at the same tier as DOD's own server-side verification (a known,
+  reviewable, git-committed algorithm run on a schedule). Right treatment:
+  same tier as `manual_verified` already gets — a distinct, separately-
+  labeled signal that can unblock a `STILL BLOCKED` citation or corroborate
+  a stale one, but never silently promoted to the same trust level as an
+  automated `MATCH`.
+- **Sparse, opportunistic coverage.** Rare or low-traffic citations might
+  never get a passive check — this supplements the bulk sweep for the
+  specific subset it can't reach, it doesn't replace it as primary
+  coverage.
+
+**Not scoped or committed to** — recorded here so the bulk/point-to-point
+distinction and the `manual_dump.py` precedent don't have to be
+re-derived if this becomes worth actually building later. If pursued, the
+natural sequencing mirrors this whole file's own history: ship the
+extension against a minimal backend, prove it resolves real `STILL
+BLOCKED`/`BLOCKED` cases faster than the manual worklist does, and only
+then decide whether the trust-tier question needs more design than "treat
+it like `manual_verified`."
+
 ## References
 
 - CSL-JSON schema: https://github.com/citation-style-language/schema
@@ -451,3 +1090,6 @@ once the shape has actually stopped moving.
 - Perma.cc documentation: https://perma.cc/docs/perma-link-creation
 - CSL-JSON schema CONTRIBUTING guide: https://github.com/citation-style-language/schema/blob/master/CONTRIBUTING.md
 - CSL discussion forum: https://discourse.citationstyles.org/
+- NISO Z39.88-2004, The OpenURL Framework for Context-Sensitive Services: https://www.niso.org/standards-committees/openurl
+- COinS (ContextObjects in Spans) specification: https://ocoins.info/
+- OpenURL 1.0 KEV (key/encoded-value) guidelines (defines the `rft.*`/`rft_val_fmt`/`rft_id` query-string keys COinS spans carry): https://web.archive.org/web/2019/http://alcme.oclc.org/openurl/servlet/OAIHandler/extension?identifier=info:ofi/fmt:kev:mtx:ctx
