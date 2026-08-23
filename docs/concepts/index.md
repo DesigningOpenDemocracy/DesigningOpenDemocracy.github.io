@@ -22,6 +22,7 @@ These pages are discovery aids — brief orientations to help you find better so
 | [Utopian Realpolitik](utopian-realpolitik.md) | A working disposition for democracy practitioners engaging across systems — holding idealistic goals while finding genuine common ground in good faith with systems that hold very different democratic values |
 | [Buen Vivir (Sumak Kawsay)](buen-vivir.md) | Andean indigenous governance philosophy constitutionalised in Bolivia and Ecuador — reframes governance around collective wellbeing and ecological balance rather than GDP growth |
 | [Democratic Confederalism](democratic-confederalism.md) | Bottom-up theory of governance rejecting the nation-state, building from the commune upward with gender co-governance as a structural principle — the operating framework of AANES/Rojava |
+| [Stable Totalitarianism and Unrecoverable Dystopia](stable-totalitarianism.md) | Toby Ord's term for a civilisation permanently locked under one regime — a limit case for why broken feedback loops and structural inflexibility are disqualifying |
 
 ## Core democracy concepts
 
