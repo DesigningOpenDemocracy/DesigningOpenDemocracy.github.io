@@ -501,6 +501,36 @@ materially change the file's size, so whether `context` ships always,
 never, or behind a flag is a judgment call, not a mechanical port.
 Deliberately not done in passing.
 
+**A drifted-but-live page never gets the archive-preferred treatment
+`dead`/`unfit` gets (open gap, 2026-08-23).** `check_fragments.py`
+already detects this exact case every week — `check_evidence()` computes
+`result = quote_matches(text, evidence)` and stores it as a plain
+boolean in `citation-evidence.json`'s `verified` map, keyed by the same
+`sha256(normalize_ws(quote))` hash `evidence[].id`/`convergence.sha256`
+already use. So a MISMATCH — the cited sentence is gone, but the site is
+completely live and legitimate — is known and cached. Nothing downstream
+ever sees it: it isn't projected into `citations.json`'s `evidence[].
+status` (the gap just above), and separately, neither render path
+(`organisation.html`'s `render_event` macro, `hooks/footnote_fragments.
+py`) reads `citation-evidence.json`'s `verified` map at all — both
+compute `is_rotted` from `url_status in ('dead', 'unfit')` only. Today's
+actual behavior: a reader clicks through to a normal, working, entirely
+legitimate page that simply no longer contains what's quoted, with no
+visual signal at all — even when an `archive_url` from an earlier
+snapshot already exists and would show them the real proof.
+
+This is a third case, distinct from both existing `url_status` values,
+and arguably the more common one in practice — pages get lightly edited
+far more often than domains go fully dead or get parked. It isn't a new
+`url_status` value, either: `url_status` is inherently about the *site*
+(reachable? legitimate?), and a MISMATCH says nothing about that — the
+site can be perfectly fine while one specific claim has drifted out of
+it. The fix is evidence-scoped, not URL-scoped: extend `is_rotted` in
+both render paths to also trigger per evidence entry when that entry's
+`status` is `MISMATCH` and an `archive_url` exists for its URL,
+independent of whatever `url_status` says at the item level. Flagged,
+not built — same treatment as the gap above it.
+
 **Multi-citation footnotes:** footnotes citing more than one source are
 treated as citation-only — no quote is extracted for verification,
 fragment rendering, or export, even if a quoted phrase is present.
