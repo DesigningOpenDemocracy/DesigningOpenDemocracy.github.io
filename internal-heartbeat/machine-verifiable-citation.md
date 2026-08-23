@@ -496,23 +496,23 @@ on. So:
   `rft_val_fmt`, same `rft.atitle`/`rft.date`/etc.) so Zotero/EndNote/
   RefWorks keep working completely unmodified — this is the backwards-
   compatibility requirement, not a nice-to-have.
-- Add DOD-prefixed keys *alongside* them in the same span for anything
-  DOD-aware that wants more, e.g. a single `dod_status` flag
-  (`live`/`dead`/`unfit`, mirroring `url_status` — see the "Citation
-  archival" section of `CLAUDE.md`).
+- **No DOD-prefixed keys — zero new vocabulary, fully standard-compliant
+  COinS.** An earlier draft of this appendix proposed adding a
+  `dod_status` convenience key alongside the standard ones. Dropped: it's
+  not needed. `rft_id` in a standard COinS span is already just the cited
+  URL — the exact key `citations.json` is indexed by — so a DOD-aware
+  tool that wants the full verification record (quote, status, archive
+  location) just takes `rft_id` off the span and looks it up in the
+  already-public `citations.json`. That lookup is one HTTP fetch either
+  way; a one-bit flag baked into the span saves nothing worth inventing
+  non-standard vocabulary for, and emitting *only* keys a conformant
+  OpenURL parser already recognizes is a strictly cleaner backwards-
+  compatibility story than "standard keys plus some we made up."
 - **Don't embed the quote, context, or hash directly in the span.** Same
   mistake `check_evidence()`'s own docstring already warns against for
   the evidence file (storing full page text made it balloon to
   megabytes) — and COinS spans on Wikipedia already draw real complaints
   about page bloat without DOD adding to it.
-- **The actually elegant part needs no new keys at all:** `rft_id` in a
-  standard COinS span is already just the cited URL — the exact key
-  `citations.json` is indexed by. A DOD-aware tool that wants the full
-  verification record (quote, status, archive location) just takes
-  `rft_id` off the span and looks it up in the already-public
-  `citations.json`. `dod_status` above is a convenience to skip that
-  round trip for the one-bit "is this flagged" question, not a
-  requirement.
 
 **Where this would live in code, when/if implemented:** a new Jinja
 filter alongside `with_fragment`/`archive_info_for` (see
