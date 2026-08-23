@@ -199,22 +199,21 @@ class OnPreBuildArchiveProjectionTests(unittest.TestCase):
         self.assertEqual(cites[0]["id"], expected_id)
         self.assertEqual(len(cites[0]["id"]), 64)
 
-    def test_sha256_field_always_present_even_when_identical_to_id(self):
+    def test_convergence_sha256_always_present_even_when_identical_to_id(self):
         # See internal-heartbeat/machine-verifiable-citation.md's "id vs
         # the sha256 field": always emitted, never omitted as a
         # "redundant" duplicate when id is already content-derived — a
         # uniform schema beats saving a few bytes, so consumers never
-        # need conditional presence-checking logic. Named after its
-        # algorithm (matching evidence[].context.sha256's precedent), not
-        # a purpose-based name like the "convergence-id" an earlier draft
-        # used — recomputing it only means something if the field itself
-        # says which algorithm to use.
+        # need conditional presence-checking logic. A wrapper object
+        # (matching evidence[].context's own shape), not a flat field
+        # or a purpose-based name like "convergence-id" — the wrapper
+        # names what's hashed and why, sha256 inside it says how.
         self._set_archive_cache({})
         ce.on_pre_build(None)
         cites = self._read_citations()
-        self.assertEqual(cites[0]["sha256"], cites[0]["id"])
+        self.assertEqual(cites[0]["convergence"]["sha256"], cites[0]["id"])
         self.assertEqual(
-            cites[0]["evidence"][0]["sha256"],
+            cites[0]["evidence"][0]["convergence"]["sha256"],
             cites[0]["evidence"][0]["id"],
         )
 

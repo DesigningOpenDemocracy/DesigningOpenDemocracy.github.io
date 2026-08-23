@@ -12,35 +12,42 @@ Flow:
   5. Write back
 
 CSL-JSON fields: id, type, URL, title, accessed, archive, archive_location
-DOD extension fields: sha256 (see below), url-status (dead/unfit — see
-  text_fragment.py's load_archive_info() docstring; absent means
+DOD extension fields: convergence (see below), url-status (dead/unfit —
+  see text_fragment.py's load_archive_info() docstring; absent means
   live/unset)
 Evidence fields (per-claim, nested under evidence: array):
-  id, sha256, type, quote, status, last-verified, verified-by, context
+  id, convergence, type, quote, status, last-verified, verified-by,
+  context
 
 `id` is an opaque identifier: compared for equality, never recomputed, so
-it doesn't need to name an algorithm. `sha256` is the opposite kind of
-field — its entire job is "recompute this from the current content and
-check it still matches," which is meaningless unless the field itself
-says which algorithm to use. Naming it after the algorithm rather than
-after its purpose (an earlier draft called it `convergence-id`) follows
-the precedent `evidence[].context.sha256` already sets elsewhere in this
-format, and avoids the ambiguity a purpose-named field would carry the
-moment a second algorithm or a migration ever enters the picture.
+it doesn't need to name an algorithm. `convergence.sha256` is the
+opposite kind of field — its entire job is "recompute this from the
+current content and check it still matches," which is meaningless unless
+the field itself says which algorithm to use, so it's named after the
+algorithm rather than its purpose (an earlier draft called the field
+itself `convergence-id`, flat, before that). `convergence` is a wrapper
+object rather than a flat `sha256` field for the same reason
+`evidence[].context` is one: the wrapper names *what's being hashed and
+why*, `sha256` inside it says *how*. This also leaves room to add a
+sibling key later — e.g. `convergence.file-sha256` for a whole-file hash
+of a downloaded PDF/.docx, a real but currently-unbuilt gap (see the
+design doc) — without a second top-level field to invent when that day
+comes.
 
-`id` and `sha256` are both full-length lowercase sha256 hex digests,
-never truncated here — item-level over the URL, evidence-level over the
-normalized quote. For DOD's own implementation the two are byte-identical
-at both levels, since DOD's `id` is itself content-derived; `sha256` is
-emitted anyway rather than omitted as a "redundant" duplicate, so
-consumers never need conditional presence-checking logic to know which
-field to read — a uniform schema is worth more than the few bytes saved
-by leaving it out. See "id vs the sha256 field" in
-internal-heartbeat/machine-verifiable-citation.md for why both fields
+`id` and `convergence.sha256` are both full-length lowercase sha256 hex
+digests, never truncated here — item-level over the URL, evidence-level
+over the normalized quote. For DOD's own implementation the two are
+byte-identical at both levels, since DOD's `id` is itself content-
+derived; `convergence` is emitted anyway rather than omitted as a
+"redundant" duplicate, so consumers never need conditional presence-
+checking logic to know which field to read — a uniform schema is worth
+more than the few bytes saved by leaving it out. See "id vs the sha256
+field" in internal-heartbeat/machine-verifiable-citation.md for why both
 exist (an implementation using a non-content-derived `id` still needs
-`sha256` to stay comparable with everyone else), and "Identifier
-construction" for the normative hash rules, including the quote
-normalization an external implementer needs to reproduce these values.
+`convergence.sha256` to stay comparable with everyone else), and
+"Identifier construction" for the normative hash rules, including the
+quote normalization an external implementer needs to reproduce these
+values.
 
 archive/archive_location/url-status are a read-only projection of
 docs/data/citation-evidence.json — see on_pre_build()'s comment for
@@ -163,12 +170,13 @@ def on_pre_build(config):
             "id": url_hash,
             # Byte-identical to id here, since DOD's id is itself
             # content-derived — emitted anyway rather than omitted, so
-            # every consumer can read sha256 unconditionally. Named after
-            # its algorithm, not its purpose, since recomputing it only
-            # means anything if the consumer knows which function to use.
-            # See "id vs the sha256 field" in internal-heartbeat/
+            # every consumer can read convergence.sha256 unconditionally.
+            # A wrapper object, not a flat field, matching
+            # evidence[].context's own shape: the wrapper names what's
+            # being hashed and why, sha256 says how. See "id vs the
+            # sha256 field" in internal-heartbeat/
             # machine-verifiable-citation.md.
-            "sha256": url_hash,
+            "convergence": {"sha256": url_hash},
             "type": "webpage",
             "URL": url,
             "title": group["title"] or old.get("title", ""),
@@ -203,11 +211,15 @@ def on_pre_build(config):
             # trim the way a value embedded in page markup would.
             ev_id = hashlib.sha256(normalize_ws(quote).encode("utf-8")).hexdigest()
             # Byte-identical to id here, same reasoning as the item-level
-            # sha256 above — always emitted, never treated as a redundant
-            # duplicate to skip.
+            # convergence object above — always emitted, never treated as
+            # a redundant duplicate to skip. Not the same thing as
+            # context.sha256 below: convergence hashes the quote alone
+            # (identity/agreement across implementations); context.sha256
+            # hashes the surrounding span (did the page change around an
+            # otherwise-intact claim).
             ev = {
                 "id": ev_id,
-                "sha256": ev_id,
+                "convergence": {"sha256": ev_id},
                 "type": "quote-match",
                 "quote": quote,
             }
