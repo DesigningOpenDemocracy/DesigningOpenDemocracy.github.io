@@ -1,26 +1,37 @@
 ---
-title: "Could a Global Dictatorship Last Forever? A Video Worth Sharing With DOD"
-date: 2026-08-23
-summary: "A video essay from Rational Animations asks whether a permanent, world-spanning totalitarian regime is achievable — and surveys the surveillance, censorship, and brain-reading technologies that could make it newly possible. It lines up neatly with a question the Accountability Framework already asks: what does a system's capacity to correct itself actually stand between it and, at the limit?"
-authors:
-  - Brian Khuu
-  - Claude
 ai_assist: drafted
+authors:
+- Brian Khuu
+- Claude
+categories:
+- Democratic Theory
+- Philosophy
+date: 2026-08-23
 origin: world-commentary
 shared_link:
-  url: https://www.youtube.com/watch?v=2Wv3p9WCs6M
-  title: "Could a Global Dictatorship Last Forever?"
+  description: 'Could a totalitarian regime conquer the entire world and lock in its
+    power forever? This is a particular type of unrecoverable dystopia: a future in
+    which humanity survives, but forever loses its potential to grow and flourish.
+    In this video, we explore which technologies might make this possibility more
+    likely, but also how we might shape technological development in order to prevent
+    it, without giving up the global coordination we need against threats like misaligned
+    AI and engineered pandemics.'
+  image: https://i.ytimg.com/vi/2Wv3p9WCs6M/hqdefault.jpg
+  note: The video essay this post responds to
   source: Rational Animations
-  description: "Could a totalitarian regime conquer the entire world and lock in its power forever? This is a particular type of unrecoverable dystopia: a future in which humanity survives, but forever loses its potential to grow and flourish. In this video, we explore which technologies might make this possibility more likely, but also how we might shape technological development in order to prevent it, without giving up the global coordination we need against threats like misaligned AI and engineered pandemics."
-  note: "The video essay this post responds to"
-categories:
-  - Democratic Theory
-  - Philosophy
+  title: Could a Global Dictatorship Last Forever?
+  url: https://www.youtube.com/watch?v=2Wv3p9WCs6M
+summary: 'A video essay from Rational Animations asks whether a permanent, world-spanning
+  totalitarian regime is achievable — and surveys the surveillance, censorship, and
+  brain-reading technologies that could make it newly possible. It lines up neatly
+  with a question the Accountability Framework already asks: what does a system''s
+  capacity to correct itself actually stand between it and, at the limit?'
 tags:
-  - Existential Risk
-  - AI
-  - Accountability
-  - Philosophy
+- Existential Risk
+- AI
+- Accountability
+- Philosophy
+title: Could a Global Dictatorship Last Forever? A Video Worth Sharing With DOD
 ---
 
 [Rational Animations' "Could a Global Dictatorship Last Forever?"](https://www.youtube.com/watch?v=2Wv3p9WCs6M) (22 August 2026, ~20 min) asks whether a totalitarian regime could ever become genuinely permanent — global enough that no rival state can grow into a counterweight, stable enough that no internal reform ever succeeds. Philosopher Toby Ord calls this an **unrecoverable dystopia**: humanity survives, but permanently loses its capacity to grow, adapt, and self-correct. Ord, quoted in the video from *The Precipice*: a world "locked under the rule of an oppressive totalitarian regime... would have much in common with extinction: just a narrow range of terrible futures remaining, and no way out."

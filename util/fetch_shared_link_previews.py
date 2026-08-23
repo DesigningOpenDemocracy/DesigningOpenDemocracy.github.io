@@ -69,7 +69,7 @@ import html
 import os
 import sys
 from html.parser import HTMLParser
-from urllib.parse import urljoin, urlparse
+from urllib.parse import quote, urljoin, urlparse
 from urllib.robotparser import RobotFileParser
 
 sys.path.insert(0, os.path.dirname(__file__))
@@ -87,6 +87,55 @@ from text_fragment import count_occurrences  # noqa: E402
 DOCS_DIR = os.path.join(os.path.dirname(__file__), "..", "docs")
 POSTS_DIR = os.path.join(DOCS_DIR, "blog", "posts")
 USER_AGENT = "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+
+# YouTube's watch page reliably redirects a scripted fetch to a Google
+# bot-check interstitial (302 -> google.com/sorry, confirmed 2026-08-23) —
+# the generic oEmbed-discovery-via-page-HTML path below never finds
+# anything for this host, silently returning a blank "- YouTube" title/no
+# image rather than an error. YouTube's oEmbed REST endpoint itself isn't
+# blocked, so these hosts are fetched directly (fetch_youtube_oembed())
+# instead — same "use the API, not scraped page HTML" principle CLAUDE.md
+# documents for Wikipedia.
+_YOUTUBE_HOSTS = {"youtube.com", "www.youtube.com", "m.youtube.com", "youtu.be"}
+
+
+def _youtube_watch_url(url):
+    """Normalise a youtu.be short link to the youtube.com/watch?v= form
+    YouTube's oEmbed endpoint expects in its url= param."""
+    parsed = urlparse(url)
+    if parsed.netloc.lower() == "youtu.be":
+        return f"https://www.youtube.com/watch?v={parsed.path.lstrip('/')}"
+    return url
+
+
+def fetch_youtube_oembed(url, timeout=10, session=None):
+    """Fetch title/thumbnail_url directly from YouTube's oEmbed endpoint.
+    No description field exists in an oEmbed response — same limitation
+    fetch_preview() already documents for the generic oEmbed-bonus path."""
+    session = session or requests
+    oembed_url = f"https://www.youtube.com/oembed?url={quote(_youtube_watch_url(url), safe='')}&format=json"
+
+    if not robots_allowed(oembed_url, timeout=timeout, session=session):
+        return {"error": "ROBOTS_DISALLOWED"}
+
+    try:
+        r = session.get(oembed_url, headers={"User-Agent": USER_AGENT}, timeout=timeout)
+        r.raise_for_status()
+        data = r.json()
+    except requests.HTTPError as e:
+        status = e.response.status_code if e.response is not None else None
+        return {"error": f"HTTP_{status}" if status else "NETWORK_ERROR"}
+    except requests.RequestException:
+        return {"error": "NETWORK_ERROR"}
+    except ValueError:
+        return {"error": "PARSE_ERROR"}
+
+    result = {}
+    if data.get("title"):
+        result["title"] = data["title"]
+    if data.get("thumbnail_url"):
+        result["image"] = data["thumbnail_url"]
+    return result
 
 
 def robots_allowed(url, timeout=5, session=None):
@@ -152,8 +201,13 @@ def fetch_preview(url, timeout=10, session=None):
     page advertises an oEmbed endpoint, its title/thumbnail_url take
     priority over og:title/og:image (video platforms like YouTube publish
     a proper oEmbed response with a cleaner thumbnail than og:image often
-    gives; oEmbed has no description field, so that's OG-only)."""
+    gives; oEmbed has no description field, so that's OG-only). YouTube
+    hosts skip straight to fetch_youtube_oembed() — see that function's
+    docstring for why the generic page-scrape path never works there."""
     session = session or requests
+
+    if urlparse(url).netloc.lower() in _YOUTUBE_HOSTS:
+        return fetch_youtube_oembed(url, timeout=timeout, session=session)
 
     if not robots_allowed(url, timeout=timeout, session=session):
         return {"error": "ROBOTS_DISALLOWED"}

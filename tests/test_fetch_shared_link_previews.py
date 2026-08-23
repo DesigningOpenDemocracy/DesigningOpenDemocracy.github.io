@@ -177,6 +177,60 @@ class FetchPreviewTests(unittest.TestCase):
         self.assertEqual(result["title"], "OG Title")  # oEmbed failure doesn't clobber it
 
 
+class YoutubeOembedTests(unittest.TestCase):
+    """YouTube's watch page reliably redirects a scripted fetch to a Google
+    bot-check interstitial rather than erroring, so fetch_preview()'s
+    generic oEmbed-discovery-via-page-HTML path silently finds nothing for
+    this host (confirmed 2026-08-23 — see fetch_youtube_oembed()'s
+    docstring). These hosts must skip straight to the oEmbed REST endpoint
+    instead, without ever touching the watch page."""
+
+    def test_fetch_preview_routes_youtube_watch_url_to_oembed(self):
+        oembed_url = (
+            "https://www.youtube.com/oembed?"
+            "url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dabc123&format=json"
+        )
+        session = _FakeSession({
+            oembed_url: _FakeResponse(json_data={
+                "title": "A Video Title",
+                "thumbnail_url": "https://i.ytimg.com/vi/abc123/hqdefault.jpg",
+            }),
+        })
+        with mock.patch.object(fsp, "robots_allowed", return_value=True):
+            result = fsp.fetch_preview("https://www.youtube.com/watch?v=abc123", session=session)
+        self.assertEqual(result["title"], "A Video Title")
+        self.assertEqual(result["image"], "https://i.ytimg.com/vi/abc123/hqdefault.jpg")
+        self.assertNotIn("description", result)  # oEmbed has no description field
+
+    def test_youtu_be_short_link_normalised_before_oembed_call(self):
+        oembed_url = (
+            "https://www.youtube.com/oembed?"
+            "url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dabc123&format=json"
+        )
+        session = _FakeSession({
+            oembed_url: _FakeResponse(json_data={"title": "Short Link Video"}),
+        })
+        with mock.patch.object(fsp, "robots_allowed", return_value=True):
+            result = fsp.fetch_youtube_oembed("https://youtu.be/abc123", session=session)
+        self.assertEqual(result["title"], "Short Link Video")
+
+    def test_oembed_http_error_reported_in_check_fragments_format(self):
+        oembed_url = (
+            "https://www.youtube.com/oembed?"
+            "url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dabc123&format=json"
+        )
+        session = _FakeSession({oembed_url: _FakeResponse(status_code=404)})
+        with mock.patch.object(fsp, "robots_allowed", return_value=True):
+            result = fsp.fetch_youtube_oembed("https://www.youtube.com/watch?v=abc123", session=session)
+        self.assertEqual(result, {"error": "HTTP_404"})
+
+    def test_robots_disallowed_skips_oembed_fetch_entirely(self):
+        session = _FakeSession({})  # any .get() call would raise AssertionError
+        with mock.patch.object(fsp, "robots_allowed", return_value=False):
+            result = fsp.fetch_youtube_oembed("https://www.youtube.com/watch?v=abc123", session=session)
+        self.assertEqual(result, {"error": "ROBOTS_DISALLOWED"})
+
+
 class FetchPreviewCachedTests(unittest.TestCase):
     """fetch_preview_cached() must skip a URL already confirmed BLOCKED —
     no request at all — until use_cache=False forces a recheck, sharing
