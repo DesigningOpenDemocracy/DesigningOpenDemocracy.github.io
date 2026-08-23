@@ -171,6 +171,52 @@ minted before final content exists — so there is no canonical byte
 string to hash, and their real product is registry-backed resolution
 rather than identity. Different problem.
 
+#### `id` vs `convergence-id`: what's normative, what's implementation choice
+
+The reasoning above is DOD's own justification for its own choice —
+making `id` itself content-derived. That choice bundles two properties
+into one field for free: self-verification (recompute from the quote,
+compare) and the cross-site convergence just described. Both hold *only
+because* `id` here happens to be a pure content hash — they are not the
+same requirement in general, and conflating them stops working the
+moment `id` isn't content-derived.
+
+That can legitimately happen: a `sha256`-based `id` changes on any edit
+to the quote — a typo fix, a lengthened excerpt to disambiguate an
+`AMBIGUOUS` match — with no forwarding path, because it has no notion of
+"the same claim, re-transcribed." An implementation that needs a
+citation instance to survive that kind of routine copy-edit (for a
+stable pointer *into* it, like `dod_evidence` in Appendix E, or its own
+internal referencing) needs `id` to instead be a persisted, publisher-
+local key, assigned once and carried forward independent of the quote's
+current wording. Both are legitimate engineering choices for what `id`
+*is*, and — same as CSL-JSON's own `id` already works across Zotero,
+BetterBibTeX, and Pandoc today, with zero expectation that two libraries
+agree on a value for "the same" reference — this format does not mandate
+one. **How a program chooses to generate and store `id` is its own
+business.**
+
+What isn't optional, if this format is to mean anything across
+independently-run sites, is a way to answer "are these two citations —
+possibly with different local `id`s, possibly even differently excerpted
+— pointing at the same underlying fact?" That question needs one
+deterministic, content-derived value every implementation computes the
+same way, which is what `convergence-id` is for:
+
+- `convergence-id` = `sha256(normalize_ws(quote))`, full 64-char lowercase
+  hex — identical construction to `id` above.
+- **Required only when `id` is not itself content-derived.** If `id`
+  already is `sha256(normalize_ws(quote))` — DOD's own case — a separate
+  `convergence-id` would just duplicate it, so it's omitted. An
+  implementation using a persisted local key for `id` emits
+  `convergence-id` alongside it to stay comparable with everyone else.
+
+DOD's own `citations.json` needs no code change for this: `id` already
+serves as `convergence-id` by construction. This section exists so a
+future implementation choosing the other path — a stable local `id` — has
+a specified way to stay interoperable, without this document silently
+assuming its own default is the only valid choice.
+
 #### The id is not an anti-spoofing mechanism
 
 It is public and copyable, like a URL or a DOI. What has to hold up
