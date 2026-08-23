@@ -53,13 +53,14 @@ archive/archive_location/url-status are a read-only projection of
 docs/data/citation-evidence.json — see on_pre_build()'s comment for
 why this file never independently writes those three fields itself.
 
-KNOWN GAP: status/last-verified/verified-by/context are carried forward
-from this file's own previous output, which never exists (citations.json
-is gitignored and rebuilt from empty), so they are populated on zero
-entries despite check_fragments.py having already computed all of them
-into citation-evidence.json. Same failure mode the archive fields hit
-before they became a projection. See "Specified but unpopulated" in
-Appendix B of the design doc.
+status/last-verified/verified-by/context are also a read-only projection
+of that same cache, added 2026-08-23. They previously tried to carry
+forward from this file's own prior output — a structurally dead branch,
+since citations.json is gitignored and rebuilt from empty, so they were
+populated on zero entries despite check_fragments.py having computed them
+all along. context is projected as its sha256 alone: the stored
+prefix/suffix/text are diagnostic payload, not needed to run the drift
+check, and would grow this export by ~67%. See _verification_for().
 """
 
 import glob
@@ -72,8 +73,67 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "util"))
 from text_fragment import (  # noqa: E402
     iter_footnote_citations,
     load_archive_info,
+    load_evidence_cache,
     normalize_ws,
 )
+
+# Identity string recorded as evidence[].verified-by for anything this
+# pipeline's own bot verified. Mirrors check_fragments.py's USER_AGENT —
+# the thing that actually made the request. Per the format spec, presence
+# of verified-by means "mechanically verified"; its absence means a human
+# claim, which is why manual_verified entries deliberately omit it.
+BOT_IDENTITY = "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
+
+
+def _verification_for(entry, ev_key):
+    """Project one evidence entry's cached verification verdict into
+    CSL-JSON fields: {status, last-verified, verified-by, context}.
+
+    Reads docs/data/citation-evidence.json's per-URL entry, which holds
+    `verified` {hash: bool} for automated checks, `manual_verified`
+    {hash: bool} for human browser-saved snapshots (see
+    util/manual_dump.py), and `contexts` {hash: {...}}. Returns {} when
+    nothing is recorded for this quote — absent fields mean "not yet
+    verified", which is the spec's own semantics, so a gap is honest
+    rather than something to paper over.
+
+    Only MATCH/MISMATCH are ever projected. AMBIGUOUS is deliberately
+    unreachable here: check_fragments.py only detects it on a fresh
+    fetch and never persists it (a cache hit retains no page text to
+    re-derive it from), so claiming it from cached data would be
+    asserting something never actually stored.
+
+    `context` is reduced to its sha256 alone. The stored prefix/suffix/
+    text are ~209 KB of source paragraphs across this corpus — a 67%
+    increase in the published export — and none of it is needed to run
+    the drift check: a verifier recomputes the hash from the page it has
+    to fetch anyway. Those fields are offline *diagnosis*, not the check
+    itself, and republishing that much of other organisations' prose in
+    a bulk file is a separate decision from verifying a quote. See
+    "Signal map" in internal-heartbeat/machine-verifiable-citation.md.
+    """
+    out = {}
+    verified = entry.get("verified", {})
+    manual = entry.get("manual_verified", {})
+
+    if ev_key in verified:
+        out["status"] = "MATCH" if verified[ev_key] else "MISMATCH"
+        if entry.get("checked"):
+            out["last-verified"] = entry["checked"]
+        out["verified-by"] = BOT_IDENTITY
+    elif ev_key in manual:
+        # A human opened the page in a real browser and saved it; the
+        # bot never reached it. Real verification, different provenance
+        # — so status is projected but verified-by is omitted, matching
+        # the spec's "absent = human claim".
+        out["status"] = "MATCH" if manual[ev_key] else "MISMATCH"
+        if entry.get("manual_checked"):
+            out["last-verified"] = entry["manual_checked"]
+
+    ctx_sha = (entry.get("contexts", {}).get(ev_key) or {}).get("sha256")
+    if ctx_sha:
+        out["context"] = {"sha256": ctx_sha}
+    return out
 
 try:
     import frontmatter
@@ -144,6 +204,9 @@ def on_pre_build(config):
     # old carry-forward plus a separate citations_tool.py --archive path)
     # could otherwise silently disagree about the same URL.
     archive_info = load_archive_info()
+    # Same cache, unnarrowed — per-quote verification verdicts are
+    # projected from it below by _verification_for().
+    evidence_cache = load_evidence_cache()
 
     # Group new items by URL
     by_url = {}
@@ -199,11 +262,10 @@ def on_pre_build(config):
             if info.get("url_status"):
                 cite["url-status"] = info["url_status"]
 
-        # Build evidence: preserve per-quote enrichment, drop removed quotes
-        old_evidence = {e["quote"]: e for e in old.get("evidence", [])}
+        # Build evidence, dropping quotes no longer present in source
+        ev_entry = evidence_cache.get(url, {})
         cite["evidence"] = []
         for quote in sorted(set(group["quotes"])):
-            old_ev = old_evidence.get(quote, {})
             # Full, untruncated hash — this id is meant to be referenced
             # from outside this file (see internal-heartbeat/
             # machine-verifiable-citation.md's "Identifier construction"),
@@ -223,9 +285,14 @@ def on_pre_build(config):
                 "type": "quote-match",
                 "quote": quote,
             }
-            for field in ("status", "last-verified", "verified-by", "context"):
-                if old_ev.get(field):
-                    ev[field] = old_ev[field]
+            # status/last-verified/verified-by/context: freshly projected
+            # from the evidence cache every build, exactly like the
+            # archive fields above. These used to be carried forward from
+            # this file's own prior output — a structurally dead branch,
+            # since citations.json is gitignored and rebuilt from empty,
+            # so they were populated on zero entries despite
+            # check_fragments.py having computed them all along.
+            ev.update(_verification_for(ev_entry, ev_id))
             cite["evidence"].append(ev)
 
         citations.append(cite)

@@ -255,20 +255,37 @@ def load_archive_info():
     never break a build, since archive links are a pure enhancement on top
     of the normal citation url, never a replacement for it.
     """
-    try:
-        with open(EVIDENCE_PATH, encoding="utf-8") as f:
-            cache = json.load(f)
-    except (OSError, ValueError):
-        return {}
     result = {}
-    for url, entry in cache.items():
-        if not isinstance(entry, dict):
-            continue
+    for url, entry in load_evidence_cache().items():
         archive_url = entry.get("archive_url")
         url_status = entry.get("url_status")
         if archive_url or url_status:
             result[url] = {"archive_url": archive_url, "url_status": url_status}
     return result
+
+
+def load_evidence_cache():
+    """Read the committed evidence cache (docs/data/citation-evidence.json)
+    and return it as {url: entry}, with non-dict entries dropped.
+
+    The raw form, for callers that need more than the archive fields
+    load_archive_info() narrows to — currently hooks/citation_export.py,
+    which projects each entry's per-quote verification verdicts into
+    citations.json. Shaping those into CSL-JSON fields is deliberately
+    the caller's job: this stays the file-access layer, so there's one
+    place that knows where the cache lives and how it fails.
+
+    Returns {} if the cache doesn't exist or is unreadable — same
+    contract as load_archive_info(): a missing or corrupt cache must
+    never break a build, it just means nothing is projected."""
+    try:
+        with open(EVIDENCE_PATH, encoding="utf-8") as f:
+            cache = json.load(f)
+    except (OSError, ValueError):
+        return {}
+    if not isinstance(cache, dict):
+        return {}
+    return {url: entry for url, entry in cache.items() if isinstance(entry, dict)}
 
 
 def load_archive_urls():

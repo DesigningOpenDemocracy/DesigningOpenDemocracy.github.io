@@ -55,7 +55,11 @@ Body text here.
 """
 
 
-class OnPreBuildArchiveProjectionTests(unittest.TestCase):
+class _ExportFixture(unittest.TestCase):
+    """Shared tempdir fixture: one org page with one quoted event, with
+    DOCS_DIR/OUT_PATH and the evidence-cache path all redirected away
+    from the real repo. Holds no tests of its own, so subclassing it
+    doesn't re-run another class's cases."""
 
     def setUp(self):
         self.tmpdir = tempfile.mkdtemp()
@@ -88,6 +92,9 @@ class OnPreBuildArchiveProjectionTests(unittest.TestCase):
     def _read_citations(self):
         with open(ce.OUT_PATH, encoding="utf-8") as f:
             return json.load(f)
+
+
+class OnPreBuildArchiveProjectionTests(_ExportFixture):
 
     def test_no_evidence_cache_entry_leaves_archive_fields_absent(self):
         self._set_archive_cache({})
@@ -229,6 +236,130 @@ class OnPreBuildArchiveProjectionTests(unittest.TestCase):
         ce.on_pre_build(None)
         second_id = self._read_citations()[0]["evidence"][0]["id"]
         self.assertEqual(first_id, second_id)
+
+
+class VerificationProjectionTests(_ExportFixture):
+    """status/last-verified/verified-by/context are projected fresh from
+    citation-evidence.json on every build, exactly like the archive
+    fields — they used to carry forward from citations.json's own prior
+    output, a structurally dead branch that left them populated on zero
+    entries. See "Signal map" in internal-heartbeat/
+    machine-verifiable-citation.md.
+
+    Uses the shared _ExportFixture (same org page, same one quote).
+    """
+
+    QUOTE = "The organisation was founded in 2020 by a group of volunteers."
+
+    def _ev_key(self):
+        return hashlib.sha256(
+            tf.normalize_ws(self.QUOTE).encode("utf-8")
+        ).hexdigest()
+
+    def _only_evidence(self):
+        return self._read_citations()[0]["evidence"][0]
+
+    def test_match_projected_with_bot_identity(self):
+        self._set_archive_cache({
+            "https://example.org/founding": {
+                "verified": {self._ev_key(): True},
+                "checked": "2026-08-22",
+            },
+        })
+        ce.on_pre_build(None)
+        ev = self._only_evidence()
+        self.assertEqual(ev["status"], "MATCH")
+        self.assertEqual(ev["last-verified"], "2026-08-22")
+        self.assertEqual(ev["verified-by"], ce.BOT_IDENTITY)
+
+    def test_mismatch_projected(self):
+        self._set_archive_cache({
+            "https://example.org/founding": {
+                "verified": {self._ev_key(): False},
+                "checked": "2026-08-22",
+            },
+        })
+        ce.on_pre_build(None)
+        self.assertEqual(self._only_evidence()["status"], "MISMATCH")
+
+    def test_manual_verification_omits_verified_by(self):
+        # A human's browser reached a page the bot cannot. Real
+        # verification, different provenance — the spec reads an absent
+        # verified-by as "human claim", so it must not be stamped with
+        # the bot's identity.
+        self._set_archive_cache({
+            "https://example.org/founding": {
+                "manual_verified": {self._ev_key(): True},
+                "manual_checked": "2026-08-20",
+            },
+        })
+        ce.on_pre_build(None)
+        ev = self._only_evidence()
+        self.assertEqual(ev["status"], "MATCH")
+        self.assertEqual(ev["last-verified"], "2026-08-20")
+        self.assertNotIn("verified-by", ev)
+
+    def test_automated_verdict_wins_over_manual(self):
+        self._set_archive_cache({
+            "https://example.org/founding": {
+                "verified": {self._ev_key(): True},
+                "checked": "2026-08-22",
+                "manual_verified": {self._ev_key(): False},
+                "manual_checked": "2026-08-01",
+            },
+        })
+        ce.on_pre_build(None)
+        ev = self._only_evidence()
+        self.assertEqual(ev["status"], "MATCH")
+        self.assertEqual(ev["verified-by"], ce.BOT_IDENTITY)
+
+    def test_context_reduced_to_sha256_only(self):
+        # The stored prefix/suffix/text are diagnostic payload, not
+        # needed to run the drift check, and would grow the export by
+        # ~89%. Only the hash is projected.
+        self._set_archive_cache({
+            "https://example.org/founding": {
+                "verified": {self._ev_key(): True},
+                "checked": "2026-08-22",
+                "contexts": {self._ev_key(): {
+                    "sha256": "abc123",
+                    "text": "a whole paragraph of someone else's prose",
+                    "prefix": "before",
+                    "suffix": "after",
+                }},
+            },
+        })
+        ce.on_pre_build(None)
+        ev = self._only_evidence()
+        self.assertEqual(ev["context"], {"sha256": "abc123"})
+
+    def test_nothing_recorded_leaves_all_verification_fields_absent(self):
+        # Absent means "not yet verified" per the spec — an honest gap,
+        # not something to paper over with a default.
+        self._set_archive_cache({})
+        ce.on_pre_build(None)
+        ev = self._only_evidence()
+        for field in ("status", "last-verified", "verified-by", "context"):
+            self.assertNotIn(field, ev)
+
+    def test_stale_prior_output_does_not_survive(self):
+        # The regression that motivated this: these fields must come
+        # from the evidence cache, never from citations.json's own
+        # previous build.
+        os.makedirs(os.path.dirname(ce.OUT_PATH), exist_ok=True)
+        with open(ce.OUT_PATH, "w", encoding="utf-8") as f:
+            json.dump([{
+                "id": "stale", "type": "webpage",
+                "URL": "https://example.org/founding", "title": "stale",
+                "evidence": [{"quote": self.QUOTE, "status": "MATCH",
+                              "verified-by": "ghost/9.9",
+                              "last-verified": "1999-01-01"}],
+            }], f)
+        self._set_archive_cache({})
+        ce.on_pre_build(None)
+        ev = self._only_evidence()
+        self.assertNotIn("status", ev)
+        self.assertNotIn("verified-by", ev)
 
 
 if __name__ == "__main__":
