@@ -294,35 +294,49 @@ categorically stronger than "does this substring still appear in its
 extracted text"). `check_fragments.py` already extracts PDF/`.docx` text
 via pdfminer/zip-XML and quote-matches it exactly like an HTML page (see
 `util/check_fragments.py`'s entry in `CLAUDE.md`) — there is no
-whole-file hash computed anywhere in this pipeline today. **This means
-`CLAUDE.md`'s own Data exports table is currently wrong**: it describes
-`/data/citations.json` as having "per-URL entries with `content-sha256`"
-— no such field exists in `citation_export.py`'s output, and grepping
-the codebase turns up nothing that ever computed one. Whether that was
-aspirational documentation for a field never built, or a stale
-description of something removed, wasn't determined here. Flagged, not
-fixed in passing.
+whole-file hash computed anywhere in this pipeline today. This also
+turned up a documentation bug: `CLAUDE.md`'s Data exports table
+described `/data/citations.json` as having "per-URL entries with
+`content-sha256`" — no such field has ever existed in
+`citation_export.py`'s output, and nothing in the codebase ever computed
+one. Corrected 2026-08-23 to describe the fields the export actually
+carries (`id`/`convergence.sha256` at both levels), with the
+still-unpopulated verification fields called out as such.
 
-**If this is ever built, it belongs with `context`, not `convergence`.**
-A whole-file hash answers "has this exact file's bytes changed since I
-last looked" — an integrity/drift question, the same family as
-`context.sha256` ("did the surrounding text change around an otherwise-
-intact quote"), not an identity/agreement question like `convergence`
-("do we agree this is the same referenced thing"). Convergence doesn't
-need it: URL plus normalized excerpt already fully identifies "the same
-claim" for a PDF exactly as for an HTML page, since `check_fragments.py`
-quote-matches extracted PDF text the same way it does rendered HTML —
-nothing about convergence goes deeper than that today, or needs to. A
-whole-file hash would be a *third*, separate signal, sitting at the item
-level (a property of the whole cited resource, not of one quote) —
-something like a top-level `context: {"sha256": "<hash of the file's
-raw bytes>", "checked": "<date>"}`, sibling to `archive`/`url-status`,
-not a key inside `convergence`. **Not sure yet whether it's worth
-building** — check_fragments.py would need to hash the raw bytes before
-extraction (a small addition to its existing PDF/`.docx` fetch path) and
-citation_export.py would need to project it from wherever that hash gets
-cached, same pattern as `archive_url`. Recorded here as a properly-scoped
-idea, same treatment as Appendix F — not committed to, not scheduled.
+**If this is ever built, it's an integrity signal, not an identity one —
+and it needs its own name.** A whole-file hash answers "have this exact
+file's bytes changed since I last looked": integrity/drift, the same
+*axis* as `context.sha256`, not identity/agreement like `convergence`.
+Convergence doesn't need it — URL plus normalized excerpt already fully
+identifies "the same claim" for a PDF exactly as for an HTML page, since
+`check_fragments.py` quote-matches extracted PDF text the same way it
+does rendered HTML. In the signal map above it fills exactly one empty
+cell: **resource-level review-tier integrity**, sitting at the item level
+(a property of the whole cited resource, not of one quote), sibling to
+`archive`/`url-status`.
+
+**Naming: `document.sha256`, not `context.sha256`.** An earlier revision
+of this note proposed a top-level `context: {...}` — wrong, and worth
+recording as a near-miss rather than silently fixing, since it's the
+same class of error this document has corrected twice already
+(`convergence-id` vs `sha256`, flat vs wrapper). `evidence[].context`
+already means "the text surrounding the quote"; reusing `context` at the
+item level for "the whole document's bytes" would put two different
+concepts behind one word at two different levels — precisely the
+ambiguity the wrapper-naming convention exists to prevent. The wrapper
+should name *what is hashed*: at claim level that's the surrounding
+`context`; at resource level it's the `document` itself. `content` was
+considered — it would retroactively justify `CLAUDE.md`'s phantom
+`content-sha256` reference — and rejected: one letter from `context`,
+at adjacent levels of the same structure, is a confusion waiting to
+happen in exactly the code that has to tell them apart.
+
+**Not sure yet whether it's worth building** — `check_fragments.py`
+would need to hash the raw bytes before extraction (a small addition to
+its existing PDF/`.docx` fetch path) and `citation_export.py` would need
+to project it from wherever that hash gets cached, same pattern as
+`archive_url`. Recorded here as a properly-scoped idea, same treatment as
+Appendix F — not committed to, not scheduled.
 
 #### The id is not an anti-spoofing mechanism
 
@@ -344,16 +358,50 @@ The `sha256` is computed over `context.text` directly (paragraph form)
 or `prefix + quote + suffix` concatenated (prefix/suffix form).
 Plain-text substring slices — no HTML parsing needed.
 
-### Two tiers of integrity
+### Signal map: identity × integrity, at two levels
 
-| Tier | Field | What it catches | Action |
+Every field in this format answers one of two questions, at one of two
+levels. Laying them out this way is not decoration — it is what makes it
+obvious when a signal exists but nothing consults it (see the MISMATCH
+gap in Appendix B, which is exactly a populated cell being ignored by
+code that only reads the row above it).
+
+| Level | **Identity** — "what is this?" | **Integrity, gate** — "is the citation broken?" | **Integrity, review** — "did something shift around it?" |
 |---|---|---|---|
-| **Gate** | `quote`, `status` | Quote no longer matches source → citation broken | Fix or remove |
-| **Review** | `context.sha256` | Hash changed but quote survived → page edited around claim | Open review ticket, human checks framing |
+| **Resource** (item) | `convergence.sha256` = hash of `URL` | `url-status`: `dead` \| `unfit` | *(unbuilt — see below)* |
+| **Claim** (`evidence[]`) | `convergence.sha256` = hash of normalized `quote` | `status`: `MISMATCH` | `context.sha256` = hash of containing paragraph |
 
-A reader or bot checking `citations.json` knows the difference between
-"this citation is dead" (status: MISMATCH) and "this page was edited but
-the cited sentence is intact" (context hash changed, quote survived).
+**Identity fields are names, not checks.** They never change because a
+page changed — only because the thing being named changed. They're what
+lets two independently-run implementations agree they're talking about
+the same resource or the same claim.
+
+**Integrity fields are checks**, and they come in two severities:
+
+- **Gate** — the citation is broken; fix or remove it. A `MISMATCH`
+  means the cited sentence is no longer on the page. A `url-status` of
+  `dead`/`unfit` means the resource itself is gone or replaced.
+- **Review** — the cited thing survived, but its surroundings moved.
+  Not a failure; a prompt for a human to check whether the framing still
+  supports the claim. `context.sha256` changing while `quote` still
+  matches is the canonical case: the page was edited *around* the claim.
+
+A reader or bot checking `citations.json` can therefore distinguish
+"this citation is dead" from "this page was edited but the cited
+sentence is intact" — and, with the level axis, distinguish *which*
+level died: the whole resource, or one claim within a resource that is
+otherwise perfectly healthy.
+
+**The one empty cell is resource-level review**, and its emptiness is
+load-bearing rather than incidental: resource integrity today has only
+a coarse, hand-set gate (`url-status`) and no fine, machine-computed
+review signal, while claim integrity has both. That asymmetry is why a
+PDF whose bytes changed wholesale can pass every check this format
+runs, so long as the one cited sentence survived the edit. Filling it
+means hashing the fetched document itself — see "A hash of the URL and
+a hash of the cited content are different things" above for the
+proposed `document.sha256`, why it belongs on this axis rather than
+under `convergence`, and why it stays unbuilt for now.
 
 ## Minimal viable implementation
 
@@ -493,12 +541,15 @@ hand-edited — it's consumed by Zotero, Pandoc, or a verifier.
 
 **Specified but unpopulated (open gap, 2026-08-23).** Measured against
 the actual built file — 336 items, 443 evidence entries — the only
-fields present are item `id`/`type`/`URL`/`title` and evidence
-`id`/`type`/`quote`. Every mechanical-verification field this format
-exists for is absent: no `status`, `last-verified`, `verified-by`, or
-`context` on any entry, and no `accessed`/`archive`/`archive_location`
-either. So the "Two tiers of integrity" model above describes something
-the published artifact does not currently carry.
+fields present are item `id`/`convergence`/`type`/`URL`/`title` and
+evidence `id`/`convergence`/`type`/`quote`. Every mechanical-verification
+field this format exists for is absent: no `status`, `last-verified`,
+`verified-by`, or `context` on any entry, and no
+`accessed`/`archive`/`archive_location` either. In the terms of the
+signal map above, the *identity* column is fully populated at both
+levels while the *integrity* columns are almost entirely empty — the
+published artifact can say what each citation is, but not whether it
+still holds.
 
 The data itself is not missing — it is in the wrong file.
 `check_fragments.py` verifies every quote on a schedule and writes the
@@ -737,13 +788,34 @@ only if a concrete downstream consumer actually needs it.
 - **2026-08-23:** While checking whether a hash of a URL and a hash of
   cited content were the same concept, found `CLAUDE.md`'s Data exports
   table describes `citations.json` as having a `content-sha256` field
-  that `citation_export.py` has never written — flagged as stale
-  documentation, not corrected in passing. Also specified where a
-  whole-file hash (for a fixed artifact like a PDF, as opposed to a
-  living HTML page) would belong if ever built: with `context`
-  (integrity/drift), not `convergence` (identity/agreement) — an initial
-  placement inside `convergence` was corrected the same day once the
-  distinction was made explicit.
+  that `citation_export.py` has never written. Corrected the same day to
+  list the fields actually exported, with the specified-but-unpopulated
+  verification fields called out. Also specified where a whole-file hash
+  (for a fixed artifact like a PDF, as opposed to a living HTML page)
+  would belong if ever built — integrity/drift, not identity/agreement;
+  an initial placement inside `convergence` was corrected once the
+  distinction was made explicit, and a second near-miss (naming it
+  top-level `context`, colliding with `evidence[].context`) was caught
+  and settled on `document.sha256`.
+- **2026-08-23:** Replaced the "Two tiers of integrity" section with a
+  signal map on two axes — identity vs integrity, resource level vs
+  claim level — after a conversation probing whether a `citation`/
+  `locator`-style level belonged between source and evidence. Two
+  findings from measuring the corpus rather than reasoning about it:
+  (1) a first-class "passage" level would be ceremony — of 327 URLs with
+  stored contexts, exactly one has two quotes sharing a paragraph, so a
+  passage wrapper would hold exactly one quote 99.7% of the time;
+  (2) the existing item/evidence split is load-bearing — 20.2% of URLs
+  carry more than one quote, accounting for 39.5% of all evidence
+  entries, so `rft_id` alone really is ambiguous for a large minority of
+  citations and Appendix E's `evidence_sha256` is justified. The map's
+  value is diagnostic: it has exactly one empty cell (resource-level
+  review-tier integrity, the unbuilt `document.sha256`), and it explains
+  the MISMATCH-rendering gap below as a populated cell that the render
+  code simply never reads. A speed argument for scoping quote search to
+  a section was measured and dropped: ~5µs substring search on the
+  largest real page (47,000 chars) against a deliberate
+  `FETCH_DELAY = 0.5s` plus network round-trip.
 - **2026-08-23:** Flagged that a quote going `MISMATCH` on an otherwise
   completely live, legitimate page never triggers the archive-preferred
   rendering that `url_status: dead`/`unfit` does — `check_fragments.py`
