@@ -45,14 +45,23 @@ discussion this was designed in:
   language as organisation.html's existing proof_warning/url_status
   warnings. This is new coverage, not a rename: until now a MISMATCH was
   only ever visible in the weekly cron log, never on the live site, for
-  footnotes or events alike. A citation never checked yet (no verdict on
-  file) gets neither badge — "not yet verified" is not a warning.
+  footnotes or events alike.
+- A quoted footnote whose stored verdict is a confirmed MATCH gets a
+  green "✓ Verified" badge — completing the traffic-light set alongside
+  grey/red above, added once COinS (below) started marking these
+  citations as machine-importable: pairing "you can pull this into
+  Zotero" with "and its quote is currently confirmed accurate" is more
+  useful than the import affordance alone.
+- A citation never checked yet (no verdict on file) gets none of the
+  three — "not yet verified" is not the same claim as either "verified"
+  or "a warning."
 
-These two are deliberately separate signals, not one three-state badge:
-sourcing shape (is there a quote at all) and live accuracy (does the
-page still say it) can move independently — a citation-only footnote is
-never "wrong," just unrated, and a quoted footnote can drift to MISMATCH
-regardless of how strong its sourcing looked at authoring time.
+These are deliberately separate signals, not one shared score: sourcing
+shape (is there a quote at all) and live accuracy (does the page still
+say it) can move independently — a citation-only footnote is never
+"wrong," just unrated, and a quoted footnote can drift to MISMATCH (or
+recover to MATCH) regardless of how strong its sourcing looked at
+authoring time.
 
 Every quoted footnote also gets a COinS <span class="Z3988"> appended
 after its citation link — the OpenURL mechanism Zotero/EndNote/RefWorks
@@ -109,6 +118,12 @@ MISMATCH_WARNING_BADGE = (
     '⚠ Quote drifted</span>'
 )
 
+VERIFIED_BADGE = (
+    ' <span class="org-event-verified" '
+    'title="The stored quote was confirmed against the live page as of the last check.">'
+    '✓ Verified</span>'
+)
+
 ROTTED_STATUSES = ("dead", "unfit")
 
 
@@ -116,22 +131,21 @@ def _sha256(text):
     return hashlib.sha256(text.encode("utf-8")).hexdigest()
 
 
-def _quote_drifted(state, url, quote):
-    """True only if this quote's most recently recorded verification (in
-    docs/data/citation-state.json) came back negative. Automated
-    'verified' takes precedence over 'manual_verified' when both are
-    present, same as hooks/citation_export.py's _verification_for() —
-    a fresh automated recheck should win over a stale manual one.
-    Returns False (no warning) when nothing has ever been recorded for
-    this quote — "not yet checked" is not the same claim as "checked and
-    wrong."""
+def _quote_status(state, url, quote):
+    """The most recently recorded verification verdict (in
+    docs/data/citation-state.json) for this quote: True (MATCH), False
+    (MISMATCH), or None (never checked — distinct from either verdict,
+    not a synonym for "wrong"). Automated 'verified' takes precedence
+    over 'manual_verified' when both are present, same as
+    hooks/citation_export.py's _verification_for() — a fresh automated
+    recheck should win over a stale manual one."""
     entry = state.get(url) or {}
     ev = find_evidence(entry, _sha256(normalize_ws(quote))) or {}
     if "verified" in ev:
-        return ev["verified"] is False
+        return ev["verified"]
     if "manual_verified" in ev:
-        return ev["manual_verified"] is False
-    return False
+        return ev["manual_verified"]
+    return None
 
 
 def _first_link_end(block):
@@ -319,8 +333,12 @@ def on_page_content(html, page, config, files):
                 else:
                     a_start = insert_at
 
-            if link_found and _quote_drifted(state, url, quote):
-                block = block[:a_start] + MISMATCH_WARNING_BADGE + block[a_start:]
+            if link_found:
+                status = _quote_status(state, url, quote)
+                if status is False:
+                    block = block[:a_start] + MISMATCH_WARNING_BADGE + block[a_start:]
+                elif status is True:
+                    block = block[:a_start] + VERIFIED_BADGE + block[a_start:]
             # COinS span — no per-citation date field exists for footnotes
             # (unlike org events' date:), so cite_date is omitted; Zotero
             # et al. handle a missing rft.date fine, same as any other

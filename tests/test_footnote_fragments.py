@@ -149,11 +149,12 @@ class OnPageContentTests(_FootnoteFragmentsTestBase):
 
 
 class ProofBadgeTests(_FootnoteFragmentsTestBase):
-    """The two "traffic light" badges added 2026-08-24: a grey 'Citation
-    only' pill for a footnote with no verbatim quote to check, and a red
-    '⚠ Quote drifted' warning for a quoted footnote whose stored
-    verification verdict is a MISMATCH. Deliberately separate signals —
-    see hooks/footnote_fragments.py's module docstring."""
+    """The three "traffic light" badges: a grey 'Citation only' pill for
+    a footnote with no verbatim quote to check, a red '⚠ Quote drifted'
+    warning for a quoted footnote whose stored verification verdict is a
+    MISMATCH, and a green '✓ Verified' badge for a confirmed MATCH.
+    Deliberately separate signals from sourcing shape — see
+    hooks/footnote_fragments.py's module docstring."""
 
     QUOTED_MD = ('[^a]: "quoted text here," [Title](https://example.org/x), '
                  'Source.')
@@ -179,12 +180,15 @@ class ProofBadgeTests(_FootnoteFragmentsTestBase):
         result = self._render(self.QUOTED_MD, self.QUOTED_HTML)
         self.assertNotIn("proof-citation", result)
         self.assertNotIn("Quote drifted", result)
+        self.assertNotIn("Verified", result)
 
-    def test_quoted_footnote_with_match_gets_no_badge(self):
+    def test_quoted_footnote_with_match_gets_verified_badge(self):
         self._set_archive_cache({
             "https://example.org/x": {"evidence": [{"id": self._ev_key(), "verified": True}]},
         })
         result = self._render(self.QUOTED_MD, self.QUOTED_HTML)
+        self.assertIn("org-event-verified", result)
+        self.assertIn("✓ Verified", result)
         self.assertNotIn("proof-citation", result)
         self.assertNotIn("Quote drifted", result)
 
@@ -195,6 +199,7 @@ class ProofBadgeTests(_FootnoteFragmentsTestBase):
         result = self._render(self.QUOTED_MD, self.QUOTED_HTML)
         self.assertIn("⚠ Quote drifted", result)
         self.assertNotIn("proof-citation", result)
+        self.assertNotIn("Verified", result)
 
     def test_manual_verified_false_also_warns_when_no_automated_verdict(self):
         self._set_archive_cache({
@@ -202,6 +207,13 @@ class ProofBadgeTests(_FootnoteFragmentsTestBase):
         })
         result = self._render(self.QUOTED_MD, self.QUOTED_HTML)
         self.assertIn("⚠ Quote drifted", result)
+
+    def test_manual_verified_true_also_shows_verified_badge_when_no_automated_verdict(self):
+        self._set_archive_cache({
+            "https://example.org/x": {"evidence": [{"id": self._ev_key(), "manual_verified": True}]},
+        })
+        result = self._render(self.QUOTED_MD, self.QUOTED_HTML)
+        self.assertIn("✓ Verified", result)
 
     def test_automated_verdict_wins_over_stale_manual_verdict(self):
         self._set_archive_cache({
@@ -211,6 +223,7 @@ class ProofBadgeTests(_FootnoteFragmentsTestBase):
         })
         result = self._render(self.QUOTED_MD, self.QUOTED_HTML)
         self.assertNotIn("Quote drifted", result)
+        self.assertIn("✓ Verified", result)
 
     def test_multi_source_footnote_is_treated_as_citation_only(self):
         md = ('[^a]: [First](https://example.org/a) and '

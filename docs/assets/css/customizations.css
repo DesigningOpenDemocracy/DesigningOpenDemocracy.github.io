@@ -1886,6 +1886,23 @@
   background: rgba(255,82,82,0.12);
   color: #ff5252;
 }
+/* .org-event-verified is .org-event-warning's positive counterpart —
+   footnotes only (see hooks/footnote_fragments.py): a quoted citation
+   whose stored citation-state.json verdict is a confirmed MATCH. Not
+   reused on org events, which already show a proof_level pill on every
+   event regardless of live-check status — a different axis (sourcing
+   shape vs. current accuracy), so mixing this in there needs its own
+   design pass rather than reusing this class as-is. */
+.org-event-verified {
+  margin-left: 0.4em;
+  font-size: 0.65em;
+  font-weight: 600;
+  padding: 0.15em 0.5em;
+  border-radius: 3px;
+  white-space: nowrap;
+  background: rgba(0,200,83,0.12);
+  color: #00c853;
+}
 .org-events-timeline li.org-event--notable .org-event-title {
   font-weight: 500;
 }
