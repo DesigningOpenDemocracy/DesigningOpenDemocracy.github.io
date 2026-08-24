@@ -615,3 +615,49 @@ def iter_footnote_citations(markdown_source):
         if cite:
             url, title, quote = cite
             yield label, url, title, quote
+
+
+def citation_only_link(body_text):
+    """Extract (url, title) from a footnote's body text IF it is
+    "citation-only" in the sense hooks/footnote_fragments.py's grey
+    badge and util/check_footnote_quotes.py's gate already use — no
+    verbatim quote — but still names exactly one unambiguous URL to
+    attribute the citation to. Returns None when:
+
+    - footnote_citation() already matches (it has a quote — not
+      citation-only, use that function's richer result instead), or
+    - the footnote has zero or more than one markdown link. A
+      multi-source footnote (`[First](url1) and [Second](url2)`) has no
+      single URL this citation is *about* — the same "ambiguous, don't
+      guess" reasoning footnote_citation() applies to the quote-pairing
+      case applies here to the URL-attribution case, so it's skipped
+      rather than arbitrarily picking the first link.
+
+    Used by hooks/citation_export.py to give a citation-only footnote a
+    bare CSL-JSON item (id/type/URL/title, no evidence array) in
+    citations.json — previously such a footnote had no representation
+    there at all, even though it's a perfectly real citation, just not
+    a machine-verifiable one."""
+    if footnote_citation(body_text) is not None:
+        return None
+    links = MD_LINK_RE.findall(body_text)
+    if len(links) != 1:
+        return None
+    title, url = links[0]
+    if not url.startswith(("http://", "https://")):
+        return None
+    return url, title
+
+
+def iter_citation_only_footnotes(markdown_source):
+    """Yield (label, url, title) for every footnote definition in
+    markdown_source that is citation-only per citation_only_link()."""
+    for line in markdown_source.split("\n"):
+        parsed = parse_footnote_def(line)
+        if not parsed:
+            continue
+        label, body = parsed
+        cite = citation_only_link(body)
+        if cite:
+            url, title = cite
+            yield label, url, title

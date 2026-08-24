@@ -404,5 +404,77 @@ class VerificationProjectionTests(_ExportFixture):
         self.assertNotIn("verified-by", ev)
 
 
+class CitationOnlyFootnoteTests(_ExportFixture):
+    """A citation-only footnote (no verbatim quote) now gets a bare
+    CSL-JSON item — id/convergence/type/URL/title, evidence: [] —
+    instead of no representation in citations.json at all. See this
+    file's module docstring and util/text_fragment.py's
+    citation_only_link()/iter_citation_only_footnotes()."""
+
+    CITATION_ONLY_MD = """---
+title: Another Org
+type: ngo
+status: active
+country: France
+website: https://example.org
+summary: Another test org.
+---
+
+Some prose with a citation.[^plain]
+
+[^plain]: [Council Watch](https://www.councilwatch.com.au), Council Watch website footer. <!-- unquoted: legacy: n/a -->
+"""
+
+    def _write_extra_org(self, content):
+        orgs_dir = os.path.join(self.tmpdir, "docs", "organisations")
+        with open(os.path.join(orgs_dir, "extra-org.md"), "w", encoding="utf-8") as f:
+            f.write(content)
+
+    def test_citation_only_footnote_gets_bare_item(self):
+        self._write_extra_org(self.CITATION_ONLY_MD)
+        self._set_archive_cache({})
+        ce.on_pre_build(None)
+        cites = self._read_citations()
+        by_url = {c["URL"]: c for c in cites}
+        self.assertIn("https://www.councilwatch.com.au", by_url)
+        cite = by_url["https://www.councilwatch.com.au"]
+        self.assertEqual(cite["title"], "Council Watch")
+        self.assertEqual(cite["evidence"], [])
+        self.assertIn("id", cite)
+        self.assertIn("convergence", cite)
+
+    def test_multi_source_footnote_is_not_exported(self):
+        md = self.CITATION_ONLY_MD.replace(
+            "[^plain]: [Council Watch](https://www.councilwatch.com.au), "
+            "Council Watch website footer. <!-- unquoted: legacy: n/a -->",
+            "[^plain]: [First](https://a.example.org) and "
+            "[Second](https://b.example.org), two sources. "
+            "<!-- unquoted: multi-source: two links -->",
+        )
+        self._write_extra_org(md)
+        self._set_archive_cache({})
+        ce.on_pre_build(None)
+        cites = self._read_citations()
+        urls = {c["URL"] for c in cites}
+        self.assertNotIn("https://a.example.org", urls)
+        self.assertNotIn("https://b.example.org", urls)
+
+    def test_citation_only_and_quoted_citation_of_same_url_merge(self):
+        # The fixture org (ORG_MD) already cites this exact URL WITH a
+        # quote via its event. A second, citation-only mention of the
+        # same URL elsewhere must not create a duplicate bare entry —
+        # one citation entry per URL, real evidence intact.
+        md = self.CITATION_ONLY_MD.replace(
+            "https://www.councilwatch.com.au", "https://example.org/founding")
+        self._write_extra_org(md)
+        self._set_archive_cache({})
+        ce.on_pre_build(None)
+        cites = self._read_citations()
+        urls = [c["URL"] for c in cites]
+        self.assertEqual(urls.count("https://example.org/founding"), 1)
+        cite = next(c for c in cites if c["URL"] == "https://example.org/founding")
+        self.assertEqual(len(cite["evidence"]), 1)
+
+
 if __name__ == "__main__":
     unittest.main()

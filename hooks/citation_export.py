@@ -63,6 +63,23 @@ TextQuoteSelector disambiguation anchors) but not text: the stored
 paragraph text is bulk prose a verifier recomputes from the page it must
 fetch anyway, whereas prefix/suffix let it pin which occurrence of a
 repeated sentence a citation means. See _verification_for().
+
+Citation-only footnotes (added 2026-08-24): a prose footnote with no
+verbatim quote — the ones util/check_footnote_quotes.py gates on
+carrying an `unquoted:` justification instead — used to have zero
+representation in this file, even though it's a perfectly real citation
+someone might want in a bibliography, just not a machine-verifiable one.
+It now gets a bare item (id/convergence/type/URL/title) with an empty
+`evidence: []` array, via util/text_fragment.py's
+citation_only_link()/iter_citation_only_footnotes() — same "single
+canonical implementation" pattern as footnote_citation() itself. Only
+footnotes naming exactly one unambiguous URL qualify; a multi-source
+footnote is skipped for the same "don't guess which URL" reason
+footnote_citation() skips it for quote-pairing. An `evidence: []` array
+is the honest signal here — "checked, and there is genuinely no
+machine-verifiable claim recorded for this citation" — not to be
+confused with a missing `evidence` key, which never happens in this
+file's own output.
 """
 
 import glob
@@ -74,6 +91,7 @@ import sys
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "util"))
 from text_fragment import (  # noqa: E402
     find_evidence,
+    iter_citation_only_footnotes,
     iter_footnote_citations,
     load_archive_info,
     load_state,
@@ -156,9 +174,17 @@ def _extract_footnote_urls(markdown):
         yield url, title, quote
 
 
+def _extract_citation_only_footnote_urls(markdown):
+    for _label, url, title in iter_citation_only_footnotes(markdown):
+        yield url, title
+
+
 def _collect_items():
     """Walk org pages + blog posts + concept pages, return list of
-    (url, title, quote) tuples."""
+    (url, title, quote, source_title, kind) tuples. quote is None for a
+    citation-only footnote (kind "footnote-citation-only") — every other
+    kind always has one, since events/footnotes-with-quotes are only
+    collected when a quote: is present in the first place."""
     items = []
     md_files = sorted(glob.glob(os.path.join(DOCS_DIR, "**", "*.md"), recursive=True))
 
@@ -184,6 +210,13 @@ def _collect_items():
         # --- prose footnotes with verbatim quotes ---
         for url, title, quote in _extract_footnote_urls(content):
             items.append((url, title, quote, source_title, "footnote"))
+
+        # --- prose footnotes with no quote, but one unambiguous URL ---
+        # See citation_only_link()'s docstring for the eligibility rule
+        # and the module docstring above for why this gets a bare item
+        # (evidence: []) rather than no representation at all.
+        for url, title in _extract_citation_only_footnote_urls(content):
+            items.append((url, title, None, source_title, "footnote-citation-only"))
 
     return items
 
@@ -215,14 +248,19 @@ def on_pre_build(config):
     # projected from it below by _verification_for().
     evidence_cache = load_state()
 
-    # Group new items by URL
+    # Group new items by URL. A citation-only footnote contributes quote=
+    # None — it still earns a by_url entry (so the URL gets a bare item
+    # below, evidence: []) but nothing is appended to "quotes", since
+    # None can't be sorted alongside real quote strings and doesn't
+    # represent a claim to verify.
     by_url = {}
     for url, title, quote, _source, _kind in items:
         if url not in by_url:
             by_url[url] = {"title": "", "quotes": []}
         if not by_url[url]["title"] and title:
             by_url[url]["title"] = title
-        by_url[url]["quotes"].append(quote)
+        if quote:
+            by_url[url]["quotes"].append(quote)
 
     citations = []
     for url, group in sorted(by_url.items()):
