@@ -2,7 +2,7 @@
 """Regression tests for hooks/citation_export.py's on_pre_build(): the
 CSL-JSON citations.json export, and specifically that archive/
 archive_location/url-status are a fresh *projection* of
-docs/data/citation-evidence.json on every build, never carried
+docs/data/citation-state.json on every build, never carried
 forward from citations.json's own previous output.
 
 That's the fix for the drift risk recorded in internal-heartbeat/
@@ -73,7 +73,7 @@ class _ExportFixture(unittest.TestCase):
 
         self._orig_docs_dir = ce.DOCS_DIR
         self._orig_out_path = ce.OUT_PATH
-        self._orig_archive_cache_path = tf.EVIDENCE_PATH
+        self._orig_archive_cache_path = tf.STATE_PATH
         ce.DOCS_DIR = docs_dir
         ce.OUT_PATH = os.path.join(docs_dir, "data", "citations.json")
         self.addCleanup(self._restore)
@@ -81,13 +81,13 @@ class _ExportFixture(unittest.TestCase):
     def _restore(self):
         ce.DOCS_DIR = self._orig_docs_dir
         ce.OUT_PATH = self._orig_out_path
-        tf.EVIDENCE_PATH = self._orig_archive_cache_path
+        tf.STATE_PATH = self._orig_archive_cache_path
 
     def _set_archive_cache(self, data):
         path = os.path.join(self.tmpdir, "evidence-cache.json")
         with open(path, "w", encoding="utf-8") as f:
             json.dump(data, f)
-        tf.EVIDENCE_PATH = path
+        tf.STATE_PATH = path
 
     def _read_citations(self):
         with open(ce.OUT_PATH, encoding="utf-8") as f:
@@ -240,7 +240,7 @@ class OnPreBuildArchiveProjectionTests(_ExportFixture):
 
 class VerificationProjectionTests(_ExportFixture):
     """status/last-verified/verified-by/context are projected fresh from
-    citation-evidence.json on every build, exactly like the archive
+    citation-state.json on every build, exactly like the archive
     fields — they used to carry forward from citations.json's own prior
     output, a structurally dead branch that left them populated on zero
     entries. See "Signal map" in internal-heartbeat/
@@ -262,7 +262,7 @@ class VerificationProjectionTests(_ExportFixture):
     def test_match_projected_with_bot_identity(self):
         self._set_archive_cache({
             "https://example.org/founding": {
-                "verified": {self._ev_key(): True},
+                "evidence": [{"id": self._ev_key(), "verified": True}],
                 "checked": "2026-08-22",
             },
         })
@@ -275,7 +275,7 @@ class VerificationProjectionTests(_ExportFixture):
     def test_mismatch_projected(self):
         self._set_archive_cache({
             "https://example.org/founding": {
-                "verified": {self._ev_key(): False},
+                "evidence": [{"id": self._ev_key(), "verified": False}],
                 "checked": "2026-08-22",
             },
         })
@@ -289,7 +289,7 @@ class VerificationProjectionTests(_ExportFixture):
         # the bot's identity.
         self._set_archive_cache({
             "https://example.org/founding": {
-                "manual_verified": {self._ev_key(): True},
+                "evidence": [{"id": self._ev_key(), "manual_verified": True}],
                 "manual_checked": "2026-08-20",
             },
         })
@@ -302,9 +302,9 @@ class VerificationProjectionTests(_ExportFixture):
     def test_automated_verdict_wins_over_manual(self):
         self._set_archive_cache({
             "https://example.org/founding": {
-                "verified": {self._ev_key(): True},
+                "evidence": [{"id": self._ev_key(), "verified": True,
+                              "manual_verified": False}],
                 "checked": "2026-08-22",
-                "manual_verified": {self._ev_key(): False},
                 "manual_checked": "2026-08-01",
             },
         })
@@ -321,14 +321,17 @@ class VerificationProjectionTests(_ExportFixture):
         # recomputes from the page it fetches anyway.
         self._set_archive_cache({
             "https://example.org/founding": {
-                "verified": {self._ev_key(): True},
+                "evidence": [{
+                    "id": self._ev_key(),
+                    "verified": True,
+                    "context": {
+                        "sha256": "abc123",
+                        "text": "a whole paragraph of someone else's prose",
+                        "prefix": "before",
+                        "suffix": "after",
+                    },
+                }],
                 "checked": "2026-08-22",
-                "contexts": {self._ev_key(): {
-                    "sha256": "abc123",
-                    "text": "a whole paragraph of someone else's prose",
-                    "prefix": "before",
-                    "suffix": "after",
-                }},
             },
         })
         ce.on_pre_build(None)
@@ -343,9 +346,12 @@ class VerificationProjectionTests(_ExportFixture):
         # quote at the very start of a page) still projects its hash alone.
         self._set_archive_cache({
             "https://example.org/founding": {
-                "verified": {self._ev_key(): True},
+                "evidence": [{
+                    "id": self._ev_key(),
+                    "verified": True,
+                    "context": {"sha256": "abc123"},
+                }],
                 "checked": "2026-08-22",
-                "contexts": {self._ev_key(): {"sha256": "abc123"}},
             },
         })
         ce.on_pre_build(None)

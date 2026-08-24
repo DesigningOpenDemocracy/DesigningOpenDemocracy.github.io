@@ -91,7 +91,7 @@ ROBOTS_STATUS = "ROBOTS_DISALLOWED"  # sentinel status value, not a real HTTP co
 
 def check_url_cached(url, session, timeout, cache, use_cache=True):
     """Wraps check_url() with the same shared "blocked" cache
-    check_fragments.py writes to (docs/data/citation-evidence.json,
+    check_fragments.py writes to (docs/data/citation-state.json,
     keyed the same way — cache[url]["blocked"] is either the "HTTP_403"/
     "HTTP_429" string format that script already uses, or "ROBOTS_DISALLOWED"
     when the site's own robots.txt says no — so a write by either script
@@ -148,7 +148,7 @@ def main():
 
     session = requests.Session()
     session.headers.update({"User-Agent": DOD_USER_AGENT})
-    cache = cf.load_evidence()
+    cache = cf.load_state()
 
     checked = 0
     skipped_blocked = 0
@@ -240,7 +240,7 @@ def main():
                 print(f"  REDIRECT {title}  [{event_date}]  {event_title}")
                 print(f"           {url}  ->  {final_url}")
 
-    cf.save_evidence(cache)
+    cf.save_state(cache)
 
     print()
     print(f"Unique URLs checked: {checked}"

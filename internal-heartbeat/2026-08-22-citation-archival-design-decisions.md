@@ -26,7 +26,7 @@ Two independent, uncoordinated places already write Wayback archive URLs:
    cache[url] = {**cache.get(url, {}), "archive_url": archive_url,
                  "archive_checked": date.today().isoformat()}
    ```
-   — i.e. `docs/data/citation-evidence.json`, already committed,
+   — i.e. `docs/data/citation-state.json`, already committed,
    already the file the weekly heartbeat cron and `manual_dump.py` key off.
 
 2. **`util/citations_tool.py --augment --archive`** (built, wired, **never
@@ -83,7 +83,7 @@ machine-verifiable-citation.md`'s changelog and the implementation itself
 
 ## Settled architecture
 
-**`citation-evidence.json` stays the one internal source of truth.**
+**`citation-state.json` stays the one internal source of truth.**
 Only `check_fragments.py` (via `--save-to-wayback`) ever talks to Wayback
 and writes `archive_url`/`archive_checked`. `citations_tool.py`'s
 independent `--archive` path should be retired or repointed to read from
@@ -111,7 +111,7 @@ directly. This is the file CLAUDE.md already documents as
 "linked from the bottom of the org index table for researcher download,"
 so it's the right place for an external consumer to get a self-contained
 answer ("is this a known-dead link, and if so where's the fallback")
-without needing to know `citation-evidence.json` exists. Populate the
+without needing to know `citation-state.json` exists. Populate the
 real CSL-JSON `archive`/`archive_location` fields (already plumbed, just
 empty) plus one small DOD extension field, `url-status`, mirroring the
 `evidence` array's own precedent as a DOD addition on top of standard
@@ -148,7 +148,7 @@ auto-flipping it — same human-in-the-loop precedent as `proof_level`'s
 ## Recommended sequencing
 
 1. Reconcile the two writers (retire/repoint `citations_tool.py --archive`),
-   add `url-status` to `citation-evidence.json`'s schema, loosen
+   add `url-status` to `citation-state.json`'s schema, loosen
    `_collect_items()`'s quote-only filter if full coverage is wanted.
 2. Build the `citations.json` projection (`archive`/`archive_location`/
    `url-status`) + rendering (timeline, footnote fragments, cards).
@@ -168,7 +168,7 @@ maintainer asked to implement rather than wait for a separate merge —
   {"archive_url":, "url_status":}}`), `load_archive_urls()` kept as a
   back-compat wrapper.
 - `util/check_fragments.py`: `--set-url-status <url> <dead|unfit|live>`,
-  writing/clearing `url_status` in `citation-evidence.json`. Never
+  writing/clearing `url_status` in `citation-state.json`. Never
   auto-called by anything.
 - `util/check_event_urls.py`: prints a suggested `--set-url-status ... dead`
   command on a fresh `DEAD` verdict; does not write it itself.

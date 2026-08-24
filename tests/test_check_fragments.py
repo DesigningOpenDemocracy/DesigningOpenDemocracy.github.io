@@ -174,7 +174,7 @@ class CheckEvidenceBlockedCacheTests(unittest.TestCase):
         ev_key = cf.sha256(cf.normalize_ws("some evidence"))
         cache = {"https://example.org/paper": {
             "blocked": "HTTP_403", "blocked_since": "2026-01-01",
-            "manual_verified": {ev_key: True},
+            "evidence": [{"id": ev_key, "manual_verified": True}],
         }}
         with mock.patch.object(cf, "_fetch_page_text") as fake_fetch:
             result, unchanged, error, ambiguous, hint, text = cf.check_evidence(
@@ -189,7 +189,7 @@ class CheckEvidenceBlockedCacheTests(unittest.TestCase):
         ev_key = cf.sha256(cf.normalize_ws("some evidence"))
         cache = {"https://example.org/paper": {
             "blocked": "HTTP_403", "blocked_since": "2026-01-01",
-            "manual_verified": {ev_key: False},
+            "evidence": [{"id": ev_key, "manual_verified": False}],
         }}
         result, unchanged, error, ambiguous, hint, text = cf.check_evidence(
             "https://example.org/paper", "some evidence", cache, use_cache=True)
@@ -204,7 +204,7 @@ class CheckEvidenceBlockedCacheTests(unittest.TestCase):
         other_key = cf.sha256(cf.normalize_ws("other evidence"))
         cache = {"https://example.org/paper": {
             "blocked": "HTTP_403", "blocked_since": "2026-01-01",
-            "manual_verified": {other_key: True},
+            "evidence": [{"id": other_key, "manual_verified": True}],
         }}
         result, unchanged, error, ambiguous, hint, text = cf.check_evidence(
             "https://example.org/paper", "some evidence", cache, use_cache=True)
@@ -253,7 +253,7 @@ class CheckEvidenceBlockedCacheTests(unittest.TestCase):
         # environment (a different IP a site's bot-protection blocks, one
         # that a prior run's environment could reach fine) must not let its
         # own failed fetch wipe out a previously-successful verification's
-        # "verified"/"contexts" evidence. Confirmed happening in practice —
+        # "evidence" records. Confirmed happening in practice —
         # a --no-cache run overwrote real prefix/suffix/text context data
         # with a bare {"blocked": ...} stub. --no-cache means "don't use the
         # cache to SKIP the check," not "discard prior good evidence if this
@@ -262,8 +262,11 @@ class CheckEvidenceBlockedCacheTests(unittest.TestCase):
             "https://example.org/paper": {
                 "etag": "abc123",
                 "document_sha256": "deadbeef",
-                "verified": {"somehash": True},
-                "contexts": {"somehash": {"prefix": "before ", "text": "some evidence", "suffix": " after"}},
+                "evidence": [{"id": "somehash", "quote": "some evidence",
+                              "verified": True,
+                              "context": {"prefix": "before ",
+                                          "text": "some evidence",
+                                          "suffix": " after"}}],
                 "checked": "2026-01-01",
             }
         }
@@ -275,8 +278,9 @@ class CheckEvidenceBlockedCacheTests(unittest.TestCase):
         entry = cache["https://example.org/paper"]
         self.assertEqual(entry["blocked"], "HTTP_403")
         # The prior good evidence must survive the failed recheck.
-        self.assertEqual(entry["verified"], {"somehash": True})
-        self.assertEqual(entry["contexts"], {"somehash": {"prefix": "before ", "text": "some evidence", "suffix": " after"}})
+        self.assertEqual(entry["evidence"], [{
+            "id": "somehash", "quote": "some evidence", "verified": True,
+            "context": {"prefix": "before ", "text": "some evidence", "suffix": " after"}}])
         self.assertEqual(entry["document_sha256"], "deadbeef")
 
     def test_empty_body_is_reported_as_fetch_error_not_mismatch(self):
@@ -317,7 +321,7 @@ class CheckEvidenceBlockedCacheTests(unittest.TestCase):
         # so their snapshot's verdict stands in for the unreadable fetch.
         ev_key = cf.sha256(cf.normalize_ws("a quote much longer than the shell text"))
         cache = {"https://example.org/about": {
-            "manual_verified": {ev_key: True},
+            "evidence": [{"id": ev_key, "manual_verified": True}],
         }}
         shell = "Governance Hub Africa"
         with mock.patch.object(cf, "_fetch_page_text", return_value=(shell, mock.Mock(headers={}), None)):
@@ -913,12 +917,12 @@ class SetUrlStatusCliTests(unittest.TestCase):
         self.tmpdir = tempfile.mkdtemp()
         self.addCleanup(shutil.rmtree, self.tmpdir, ignore_errors=True)
         self.cache_path = os.path.join(self.tmpdir, "cache.json")
-        self._orig_cache_path = cf.EVIDENCE_PATH
-        cf.EVIDENCE_PATH = self.cache_path
+        self._orig_cache_path = cf.STATE_PATH
+        cf.STATE_PATH = self.cache_path
         self.addCleanup(self._restore)
 
     def _restore(self):
-        cf.EVIDENCE_PATH = self._orig_cache_path
+        cf.STATE_PATH = self._orig_cache_path
 
     def _run(self, *argv):
         with mock.patch.object(sys, "argv", ["check_fragments.py", *argv]):
@@ -926,27 +930,27 @@ class SetUrlStatusCliTests(unittest.TestCase):
 
     def test_sets_dead_status_on_new_url(self):
         self._run("--set-url-status", "https://example.org/x", "dead")
-        cache = cf.load_evidence()
+        cache = cf.load_state()
         self.assertEqual(cache["https://example.org/x"]["url_status"], "dead")
 
     def test_sets_unfit_status_preserving_other_fields(self):
-        cf.save_evidence({"https://example.org/x": {"checked": "2026-08-01"}})
+        cf.save_state({"https://example.org/x": {"checked": "2026-08-01"}})
         self._run("--set-url-status", "https://example.org/x", "unfit")
-        cache = cf.load_evidence()
+        cache = cf.load_state()
         self.assertEqual(cache["https://example.org/x"]["url_status"], "unfit")
         self.assertEqual(cache["https://example.org/x"]["checked"], "2026-08-01")
 
     def test_live_clears_the_field(self):
-        cf.save_evidence({"https://example.org/x": {"url_status": "dead",
+        cf.save_state({"https://example.org/x": {"url_status": "dead",
                                                    "checked": "2026-08-01"}})
         self._run("--set-url-status", "https://example.org/x", "live")
-        cache = cf.load_evidence()
+        cache = cf.load_state()
         self.assertNotIn("url_status", cache["https://example.org/x"])
         self.assertEqual(cache["https://example.org/x"]["checked"], "2026-08-01")
 
     def test_status_is_case_insensitive(self):
         self._run("--set-url-status", "https://example.org/x", "DEAD")
-        cache = cf.load_evidence()
+        cache = cf.load_state()
         self.assertEqual(cache["https://example.org/x"]["url_status"], "dead")
 
     def test_invalid_status_rejected(self):
@@ -978,10 +982,10 @@ class UncheckedOnlyFilterTests(unittest.TestCase):
         self.addCleanup(shutil.rmtree, self.tmpdir, ignore_errors=True)
         self._orig_org_dir = cf.ORG_DIR
         self._orig_docs_dir = cf.DOCS_DIR
-        self._orig_evidence_path = cf.EVIDENCE_PATH
+        self._orig_evidence_path = cf.STATE_PATH
         cf.ORG_DIR = self.tmpdir
         cf.DOCS_DIR = self.tmpdir
-        cf.EVIDENCE_PATH = os.path.join(self.tmpdir, "evidence.json")
+        cf.STATE_PATH = os.path.join(self.tmpdir, "evidence.json")
         self.addCleanup(self._restore)
 
         make_org_file(self.tmpdir, "already-checked-org", (
@@ -1000,7 +1004,8 @@ class UncheckedOnlyFilterTests(unittest.TestCase):
         ))
 
         ev_key = cf.sha256(cf.normalize_ws(self.CHECKED_QUOTE))
-        cf.save_evidence({self.CHECKED_URL: {"verified": {ev_key: True}}})
+        cf.save_state({self.CHECKED_URL: {
+            "evidence": [{"id": ev_key, "quote": self.CHECKED_QUOTE, "verified": True}]}})
 
         sleep_patcher = mock.patch.object(cf.time, "sleep")
         sleep_patcher.start()
@@ -1009,7 +1014,7 @@ class UncheckedOnlyFilterTests(unittest.TestCase):
     def _restore(self):
         cf.ORG_DIR = self._orig_org_dir
         cf.DOCS_DIR = self._orig_docs_dir
-        cf.EVIDENCE_PATH = self._orig_evidence_path
+        cf.STATE_PATH = self._orig_evidence_path
 
     def _run(self, *argv):
         # main() always calls sys.exit() on its normal completion path

@@ -24,12 +24,13 @@ For each manual-dump/snapshots/* file (url-map.txt itself excluded):
       documents, pdfminer extraction for PDFs — all shared with
       check_fragments.py's _fetch_page_text so a snapshot and a live fetch
       verify identically.
-  3. Check every piece of evidence (event/footnote/shared-link quotes)
-     that cites this URL against the extracted text, and record each
-     result in the shared evidence cache as manual_verified[hash] = bool,
-     plus one {filename: url, source, checked, good, mismatch} entry in
-     manual-dump/import.json — the greppable index of what's in imported/
-     backing which URL.
+   3. Check every piece of evidence (event/footnote/shared-link quotes)
+      that cites this URL against the extracted text, and record each
+      result in the shared evidence cache as
+      evidence[hash].manual_verified = bool, plus one
+      {filename: url, source, checked, good, mismatch} entry in
+      manual-dump/import.json — the greppable index of what's in imported/
+      backing which URL.
  4. Remove the URL from manual-dump/requests.txt and move the file into
     manual-dump/imported/ (a sibling of snapshots/, so the inbox only ever
     holds unprocessed saves), along with its companion <name>_files/
@@ -43,11 +44,11 @@ citation is left in place (not moved) and reported, since that's more
 likely a mistake (wrong page saved, or the citation was since removed) than
 something to silently discard.
 
-manual_verified is deliberately a separate field from the automated
-verified map, not merged into it — stale automated data captured before a
-site started blocking scripts must never be silently presented as if it
-were reconfirmed just because a human happened to import an unrelated
-snapshot later. Only entries this script itself writes go in
+manual_verified is deliberately a separate flag from the automated
+verified verdict, not merged into it — stale automated data captured
+before a site started blocking scripts must never be silently presented
+as if it were reconfirmed just because a human happened to import an
+unrelated snapshot later. Only entries this script itself writes go in
 manual_verified.
 
 A snapshot whose URL doesn't match any known citation is left in place
@@ -75,10 +76,10 @@ sys.path.insert(0, os.path.dirname(__file__))
 import manual_dump  # noqa: E402
 import pagecache  # noqa: E402
 from check_fragments import (  # noqa: E402
-    EVIDENCE_PATH, _extract_pdf_text, _extract_zip_xml_text, collect_evidence,
-    context_for_quote, load_evidence, save_evidence, sha256,
+    STATE_PATH, _extract_pdf_text, _extract_zip_xml_text, collect_evidence,
+    context_for_quote, load_state, save_state, sha256,
 )
-from text_fragment import html_to_text, normalize_ws, quote_matches  # noqa: E402
+from text_fragment import find_evidence, html_to_text, normalize_ws, quote_matches  # noqa: E402
 
 
 def import_snapshot(path, cache, evidence_by_url, url_map, imp_map, dry_run=False):
@@ -167,18 +168,22 @@ def import_snapshot(path, cache, evidence_by_url, url_map, imp_map, dry_run=Fals
         return False
 
     entry = cache.get(url, {})
-    manual_verified = dict(entry.get("manual_verified", {}))
-    contexts = dict(entry.get("contexts", {}))
+    evidence_list = list(entry.get("evidence", []))
     good = bad = 0
     for evidence, source_label, kind in items:
         ev_key = sha256(normalize_ws(evidence))
         result = quote_matches(text, evidence)
-        manual_verified[ev_key] = result
+        q = find_evidence(entry, ev_key)
+        if q is None:
+            q = {"id": ev_key}
+            evidence_list.append(q)
+        q["quote"] = evidence
+        q["manual_verified"] = result
         if result:
             good += 1
             ctx = context_for_quote(text, evidence)
             if ctx:
-                contexts[ev_key] = ctx
+                q["context"] = ctx
         else:
             bad += 1
         print(("  MANUAL GOOD  " if result else "  MANUAL MISMATCH  ") + source_label)
@@ -189,8 +194,8 @@ def import_snapshot(path, cache, evidence_by_url, url_map, imp_map, dry_run=Fals
     if dry_run:
         return True
 
-    cache[url] = {**entry, "manual_verified": manual_verified,
-                  "manual_checked": date.today().isoformat(), "contexts": contexts}
+    cache[url] = {**entry, "evidence": evidence_list,
+                  "manual_checked": date.today().isoformat()}
     manual_dump.dequeue_request(url)
     # The human-obtained copy is also the best text this URL has ever yielded
     # to us (bot-blocked and SPA sites give script fetches shells — confirmed
@@ -278,7 +283,9 @@ def rebuild_import_map(cache, url_map):
             if not url:
                 url = manual_dump.parse_meta_url(html)
                 source = "meta tag" if url else None
-        mv = cache.get(url, {}).get("manual_verified", {}) if url else {}
+        evidence_list = cache.get(url, {}).get("evidence", []) if url else []
+        mv = {e["id"]: e.get("manual_verified") for e in evidence_list
+              if e.get("manual_verified") is not None}
         entries[name] = {
             "url": url,
             "source": source or "unknown",
@@ -303,7 +310,7 @@ def main():
     args = parser.parse_args()
 
     if args.rebuild_map:
-        entries = rebuild_import_map(load_evidence(), manual_dump.load_url_map())
+        entries = rebuild_import_map(load_state(), manual_dump.load_url_map())
         save_import_map(entries)
         known = sum(1 for e in entries.values() if e["url"])
         print("Manifest rebuilt from imported/: " +
@@ -338,7 +345,7 @@ def main():
     for url, evidence, source_label, kind, _path in collect_evidence(fake_args):
         evidence_by_url.setdefault(url, []).append((evidence, source_label, kind))
 
-    cache = load_evidence()
+    cache = load_state()
     url_map = manual_dump.load_url_map()
     imp_map = load_import_map()
     imported = 0
@@ -348,13 +355,13 @@ def main():
             imported += 1
 
     if not args.dry_run:
-        save_evidence(cache)
+        save_state(cache)
         save_import_map(imp_map)
 
     print()
     print(str(imported) + " of " + str(len(snapshots)) + " snapshot(s) imported" +
           (" (dry run — nothing written)" if args.dry_run else ""))
-    print("Evidence file: " + EVIDENCE_PATH)
+    print("Evidence file: " + STATE_PATH)
     if not args.dry_run:
         print("Import map: " + manual_dump.IMPORT_MAP_PATH)
 

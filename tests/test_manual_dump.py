@@ -223,10 +223,15 @@ class RebuildImportMapTests(ManualDumpPathIsolationMixin, unittest.TestCase):
     UNSTAMPED = ('<html><head><link rel="canonical" '
                  'href="https://example.org/b"></head><body>page b</body></html>')
     CACHE = {
-        "https://example.org/a": {"manual_verified": {"h1": True, "h2": False},
-                                  "manual_checked": "2026-08-22"},
-        "https://example.org/b": {"manual_verified": {"h3": True},
-                                  "manual_checked": "2026-08-21"},
+        "https://example.org/a": {
+            "evidence": [{"id": "h1", "manual_verified": True},
+                         {"id": "h2", "manual_verified": False}],
+            "manual_checked": "2026-08-22",
+        },
+        "https://example.org/b": {
+            "evidence": [{"id": "h3", "manual_verified": True}],
+            "manual_checked": "2026-08-21",
+        },
     }
 
     def setUp(self):
@@ -318,15 +323,18 @@ class ImportSnapshotPdfTests(ManualDumpPathIsolationMixin, unittest.TestCase):
         cache = {}
         ok = self._import(self.QUOTE, cache=cache)
         self.assertTrue(ok)
-        mv = cache[self.URL]["manual_verified"]
-        self.assertEqual(list(mv.values()), [True])
+        evidence = cache[self.URL]["evidence"]
+        self.assertEqual([e.get("manual_verified") for e in evidence], [True])
+        self.assertEqual([e.get("quote") for e in evidence], [self.QUOTE])
         self.assertEqual(cache[self.URL]["manual_checked"], date.today().isoformat())
 
     def test_mismatching_evidence_records_false_not_failure(self):
         cache = {}
         ok = self._import("A sentence that appears nowhere in the PDF.", cache=cache)
         self.assertTrue(ok)
-        self.assertEqual(list(cache[self.URL]["manual_verified"].values()), [False])
+        self.assertEqual(
+            [e.get("manual_verified") for e in cache[self.URL]["evidence"]],
+            [False])
 
     def test_dry_run_leaves_cache_and_file_untouched(self):
         cache = {}

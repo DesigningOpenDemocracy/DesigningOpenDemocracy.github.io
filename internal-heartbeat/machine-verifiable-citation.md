@@ -564,9 +564,11 @@ For most of this format's life the mechanical-verification fields it
 exists for were present on zero published entries. The data was never
 missing — it was in the wrong file. `check_fragments.py` verifies every
 quote on a schedule and writes results to
-`docs/data/citation-evidence.json` (`verified` per-quote pass/fail,
-`contexts` carrying `prefix`/`text`/`suffix`/`sha256`, `checked` for the
-date) — and `citation_export.py` tried to *carry those fields forward
+`docs/data/citation-state.json` (a `evidence` map keyed by
+`sha256(normalize_ws(quote))`, each value carrying the claim text plus a
+`verified`/`manual_verified` verdict and a `context` holding
+`prefix`/`text`/`suffix`/`sha256`, with a URL-level `checked` date) — and
+`citation_export.py` tried to *carry those fields forward
 from its own previous output* rather than projecting them from that
 cache. Since `citations.json` is gitignored and rebuilt from empty every
 build, there was never a previous output to carry anything forward from:
@@ -629,15 +631,15 @@ suppressing it would be indistinguishable from "no context recorded".
 `dead`/`unfit` gets (open gap, 2026-08-23).** `check_fragments.py`
 already detects this exact case every week — `check_evidence()` computes
 `result = quote_matches(text, evidence)` and stores it as a plain
-boolean in `citation-evidence.json`'s `verified` map, keyed by the same
-`sha256(normalize_ws(quote))` hash `evidence[].id`/`convergence.sha256`
-already use. So a MISMATCH — the cited sentence is gone, but the site is
+boolean (`evidence[hash].verified`) in `citation-state.json`, keyed by
+the same `sha256(normalize_ws(quote))` hash `evidence[].id`/
+`convergence.sha256` already use. So a MISMATCH — the cited sentence is gone, but the site is
 completely live and legitimate — is known and cached. Half of this is now fixed: as of
 2026-08-23 the verdict *is* projected into `citations.json`'s
 `evidence[].status` (see above), so a consumer reading the export can
 see it. The rendering half is not — neither render path
 (`organisation.html`'s `render_event` macro, `hooks/footnote_fragments.
-py`) reads `citation-evidence.json`'s `verified` map at all — both
+py`) reads `citation-state.json`'s per-quote verdict at all — both
 compute `is_rotted` from `url_status in ('dead', 'unfit')` only. Today's
 actual behavior: a reader clicks through to a normal, working, entirely
 legitimate page that simply no longer contains what's quoted, with no
@@ -758,7 +760,7 @@ only if a concrete downstream consumer actually needs it.
   something automated end-to-end.
 - **2026-08-22:** Added `url_status` (`dead`/`unfit`, manually set via
   `check_fragments.py --set-url-status`, never inferred) to
-  `docs/data/citation-evidence.json`, and a corresponding `url-status`
+  `docs/data/citation-state.json`, and a corresponding `url-status`
   DOD extension field on `citations.json`. Also fixed a real gap found
   while designing this: `archive`/`archive_location` had been sitting
   unpopulated (0 of 328 entries) since the 2026-08-12 changelog entry
@@ -766,11 +768,11 @@ only if a concrete downstream consumer actually needs it.
   thing that ever wrote them — had never actually been run, while the
   archive-box *rendering* added that same day was wired to a completely
   different, independently-populated cache
-  (`citation-evidence.json`'s `archive_url`, written by
+  (`citation-state.json`'s `archive_url`, written by
   `check_fragments.py --save-to-wayback`). Two write paths for the same
   data, neither one populating the CSL export. Fixed by making
   `citations.json`'s `archive`/`archive_location`/`url-status` fields a
-  **read-only projection** of `citation-evidence.json`, generated
+  **read-only projection** of `citation-state.json`, generated
   fresh by `hooks/citation_export.py` on every build rather than carried
   forward from the file's own previous output — `citations_tool.py
   --archive` remains valid for a third-party citations.json (its
@@ -810,7 +812,7 @@ only if a concrete downstream consumer actually needs it.
   `last-verified`, `verified-by`, `context`, plus `accessed`/`archive*`)
   is specified but present on zero published entries, because
   `citation_export.py` carries those fields forward from its own prior
-  output rather than projecting them from `citation-evidence.json` —
+  output rather than projecting them from `citation-state.json` —
   a structurally dead branch, since the file is gitignored and rebuilt
   from empty every time. Same failure mode as the 2026-08-22 archive
   entry below.
@@ -865,7 +867,7 @@ only if a concrete downstream consumer actually needs it.
   next time `check_fragments.py` successfully re-fetches each URL, same
   as `PAGE_TOO_SHORT` elsewhere in this pipeline.
 - **2026-08-23:** Projected `status`/`last-verified`/`verified-by`/
-  `context` from `citation-evidence.json` into `citations.json`,
+  `context` from `citation-state.json` into `citations.json`,
   closing the "specified but unpopulated" gap recorded earlier the same
   day. These had tried to carry forward from the export's own prior
   output — structurally dead, since the file is gitignored and rebuilt
@@ -896,8 +898,28 @@ only if a concrete downstream consumer actually needs it.
   way: 86 of 430 cache context entries store no paragraph text at all
   (the paragraph exceeded the 1000-char cap), so for those the cache
   alone cannot say what claim the record refers to without joining
-  against markdown — a self-description gap recorded here for a
-  possible future cache-shape change, not addressed by this one.
+  against markdown — a self-description gap closed by the cache-shape
+  change below.
+- **2026-08-24:** Restructured `citation-state.json` from three
+  parallel per-quote maps (`verified`, `manual_verified`, `contexts`,
+  all keyed by `sha256(normalize_ws(quote))`) into one `evidence` map
+  whose values carry the claim text plus `verified`/`manual_verified`
+  and `context` in place. Two reasons, both surfaced while deciding
+  whether the export should ship context anchors: (1) the parallel
+  maps split one claim's facts across three places, a drift risk the
+  nested shape removes; (2) the cache couldn't say *what* a quote
+  claimed without a join against markdown — and for the 86 entries
+  whose paragraph exceeded the 1000-char cap it couldn't even do that,
+  since the paragraph text was absent and the quote lived only in
+  markdown. Each `evidence[hash]` entry now stores `quote` so it is
+  self-describing and self-verifying (`sha256(normalize_ws(quote))`
+  must equal its own key — asserted over all 439 entries during the
+  one-time migration). The migration also dropped 23 orphaned quotes
+  (removed from markdown since being cached — never projected by
+  `citation_export.py` anyway, so a no-op for the export) and 59
+  legacy `content_hash` fields (superseded by `document_sha256`).
+  Head-to-head check confirmed byte-identical `citations.json`
+  projection before vs after for all 439 surviving quotes.
 - **2026-08-23:** Replaced the "Two tiers of integrity" section with a
   signal map on two axes — identity vs integrity, resource level vs
   claim level — after a conversation probing whether a `citation`/

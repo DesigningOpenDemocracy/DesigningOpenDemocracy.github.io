@@ -248,10 +248,10 @@ python util/import_manual_dump.py --dry-run
 python util/import_manual_dump.py
 
 # 4. Skim what changed before committing
-git diff docs/data/citation-evidence.json
+git diff docs/data/citation-state.json
 ```
 
 See **CLAUDE.md**'s "Utility scripts" section for the full mechanism (why
 `manual-dump/` is gitignored, how the source URL is recovered from the saved
 file, why `manual_verified` is kept separate from the automated `verified`
-map) if anything above is unclear.
+verdict) if anything above is unclear.

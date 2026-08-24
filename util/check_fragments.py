@@ -25,10 +25,10 @@ Verifies three sources of evidence through the same pipeline:
 
 All three sources share the same store, fetch machinery, and reporting.
 
-Results are kept in docs/data/citation-evidence.json (committed, so state
+Results are kept in docs/data/citation-state.json (committed, so state
 survives across weekly cron runs on fresh checkouts) keyed by URL. Named
-"evidence," not "cache," on purpose (renamed 2026-08-22 — see
-internal-heartbeat/2026-08-22-citation-archival-design-decisions.md): most
+"state," not "cache," on purpose (renamed from "evidence" 2026-08-24 — see
+internal-heartbeat/machine-verifiable-citation.md's changelog): most
 of what it holds (content hashes, matched contexts, the sticky blocked
 flag below) IS re-derivable by re-fetching, but --set-url-status's
 url_status field is not — a human-curated verdict (most acutely "unfit,"
@@ -71,14 +71,14 @@ util/manual_dump.py) — a plain-text worklist for a human to open each URL
 in a real browser and save it, since bot-protection and rate limits (both
 the origin site's own and Wayback Machine's Save Page Now) can make a page
 unreachable to every automated path here even though a human can still
-read it fine. util/import_manual_dump.py turns a saved snapshot into a
-cache[url]["manual_verified"] entry, which check_evidence() checks before
-falling back to STILL BLOCKED — and also when a fetch succeeds but returns
-less text than the evidence string is long (a JS-rendered SPA shell or a
-bot-challenge holding page: the quote can't possibly be there, so that's
-a fetch failure, not evidence drift) — so a manually-resolved citation
-stops being reported as blocked without ever needing the origin site
-itself to start cooperating again.
+read it fine. util/import_manual_dump.py turns a saved snapshot into an
+`evidence` entry with a `manual_verified` flag, which check_evidence()
+checks before falling back to STILL BLOCKED — and also when a fetch
+succeeds but returns less text than the evidence string is long (a
+JS-rendered SPA shell or a bot-challenge holding page: the quote can't
+possibly be there, so that's a fetch failure, not evidence drift) — so a
+manually-resolved citation stops being reported as blocked without ever
+needing the origin site itself to start cooperating again.
 
 Usage:
     python util/check_fragments.py           # verify all events + footnotes
@@ -117,8 +117,8 @@ except ImportError as e:
 
 sys.path.insert(0, os.path.dirname(__file__))
 from text_fragment import (  # noqa: E402
-    closest_match_hint, count_occurrences, find_span, html_to_text, iter_footnote_citations,
-    normalize_ws, quote_matches, spacing_autofix,
+    closest_match_hint, count_occurrences, find_evidence, find_span, html_to_text,
+    iter_footnote_citations, normalize_ws, quote_matches, spacing_autofix,
 )
 import manual_dump  # noqa: E402 — the manual-dump request queue (see util/manual_dump.py)
 import pagecache  # noqa: E402 — local reading copies of fetched pages (see util/pagecache.py)
@@ -127,7 +127,7 @@ from robots_check import robots_allowed  # noqa: E402
 
 DOCS_DIR = os.path.join(os.path.dirname(__file__), "..", "docs")
 ORG_DIR = os.path.join(DOCS_DIR, "organisations")
-EVIDENCE_PATH = os.path.join(os.path.dirname(__file__), "..", "docs", "data", "citation-evidence.json")
+STATE_PATH = os.path.join(os.path.dirname(__file__), "..", "docs", "data", "citation-state.json")
 USER_AGENT = "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
 FETCH_DELAY = 0.5  # seconds between requests — same rate limit as before
 
@@ -139,18 +139,18 @@ FETCH_DELAY = 0.5  # seconds between requests — same rate limit as before
 BLOCKED_ERRORS = {"HTTP_403", "HTTP_429", "ROBOTS_DISALLOWED"}
 
 
-def load_evidence():
-    if os.path.exists(EVIDENCE_PATH):
+def load_state():
+    if os.path.exists(STATE_PATH):
         try:
-            with open(EVIDENCE_PATH) as f:
+            with open(STATE_PATH) as f:
                 return json.load(f)
         except (json.JSONDecodeError, OSError):
             return {}
     return {}
 
 
-def save_evidence(evidence):
-    with open(EVIDENCE_PATH, "w") as f:
+def save_state(evidence):
+    with open(STATE_PATH, "w") as f:
         json.dump(evidence, f, indent=2, sort_keys=True)
         f.write("\n")
 
@@ -441,7 +441,7 @@ def check_evidence(url, evidence, cache, use_cache=True, from_pagecache=False):
     Any existing archive_url/archive_checked fields on the cache entry
     are preserved across a fresh-fetch write — this function only owns
     the fetch-verification fields (etag/last_modified/document_sha256/
-    verified/checked); --save-to-wayback owns the archive fields and
+    evidence/checked); --save-to-wayback owns the archive fields and
     writes them separately in main().
 
     document_sha256 is sha256 of the full fetched page text, unconditional
@@ -463,7 +463,7 @@ def check_evidence(url, evidence, cache, use_cache=True, from_pagecache=False):
     is_wikipedia = wikipedia_title(url) is not None
 
     # --offline: answer from the .pagecache/ reading copy only — no network,
-    # no evidence-cache writes, no manual-dump queueing. The cite-adjustment
+    # no state-file writes, no manual-dump queueing. The cite-adjustment
     # use case: "does my reworded quote match what this page said last time
     # we actually fetched it?" Deliberately bypasses the sticky-blocked cache
     # too (a URL whose live fetch is blocked can still have a stored copy),
@@ -492,7 +492,7 @@ def check_evidence(url, evidence, cache, use_cache=True, from_pagecache=False):
     # can't, so that result is used instead of reporting STILL BLOCKED
     # forever. Otherwise, queue this URL for a manual dump.
     if use_cache and entry.get("blocked"):
-        manual_result = entry.get("manual_verified", {}).get(ev_key)
+        manual_result = (find_evidence(entry, ev_key) or {}).get("manual_verified")
         if manual_result is not None:
             return ("good" if manual_result else "bad"), True, None, False, None, None
         manual_dump.queue_request(url)
@@ -511,8 +511,8 @@ def check_evidence(url, evidence, cache, use_cache=True, from_pagecache=False):
         if error in BLOCKED_ERRORS:
             # Merge into whatever is already on disk for this URL (not the
             # possibly-emptied `entry` above) — a failed re-check must never
-            # destroy a previously-successful verification's "verified"/
-            # "contexts" data just because *this* run's environment (a
+            # destroy a previously-successful verification's evidence data just
+            # because *this* run's environment (a
             # different IP, a stricter bot filter) couldn't reach the page.
             # Confirmed happening in practice: a --no-cache run from a
             # network-disadvantaged sandbox overwrote real prefix/suffix/text
@@ -522,7 +522,7 @@ def check_evidence(url, evidence, cache, use_cache=True, from_pagecache=False):
             prior = cache.get(url, {})
             cache[url] = {**prior, "blocked": error,
                           "blocked_since": prior.get("blocked_since", date.today().isoformat())}
-            if prior.get("manual_verified", {}).get(ev_key) is None:
+            if (find_evidence(prior, ev_key) or {}).get("manual_verified") is None:
                 manual_dump.queue_request(url)
         return None, False, error, False, None, None
 
@@ -533,7 +533,7 @@ def check_evidence(url, evidence, cache, use_cache=True, from_pagecache=False):
         # at an already-cached, unchanged URL) fall through to a fresh
         # unconditional fetch — correctness for the rare case beats trying
         # to be clever with a body we don't have.
-        cached_result = entry.get("verified", {}).get(ev_key)
+        cached_result = (find_evidence(entry, ev_key) or {}).get("verified")
         if cached_result is not None:
             cache[url] = {**entry, "checked": date.today().isoformat()}
             return ("good" if cached_result else "bad"), True, None, False, None, None
@@ -546,7 +546,7 @@ def check_evidence(url, evidence, cache, use_cache=True, from_pagecache=False):
                 prior = cache.get(url, {})
                 cache[url] = {**prior, "blocked": error,
                               "blocked_since": prior.get("blocked_since", date.today().isoformat())}
-                if prior.get("manual_verified", {}).get(ev_key) is None:
+                if (find_evidence(prior, ev_key) or {}).get("manual_verified") is None:
                     manual_dump.queue_request(url)
             return None, False, error, False, None, None
 
@@ -568,30 +568,33 @@ def check_evidence(url, evidence, cache, use_cache=True, from_pagecache=False):
         # and surface an error. Deliberately NOT cached as sticky-blocked:
         # unlike a 403, a shell-to-server-rendered switch is a realistic
         # recovery, so each run re-fetches and self-heals if the site changes.
-        manual_result = entry.get("manual_verified", {}).get(ev_key)
+        manual_result = (find_evidence(entry, ev_key) or {}).get("manual_verified")
         if manual_result is not None:
             return ("good" if manual_result else "bad"), True, None, False, None, None
         manual_dump.queue_request(url)
         return None, False, "EMPTY_RESPONSE" if not text else "PAGE_TOO_SHORT", False, None, None
 
     document_hash = sha256(text)
-    verified = dict(entry.get("verified", {}))
+    evidence_list = list(entry.get("evidence", []))
     result = quote_matches(text, evidence)
-    verified[ev_key] = result
-    contexts = dict(entry.get("contexts", {}))
+    q = find_evidence(entry, ev_key)
+    if q is None:
+        q = {"id": ev_key}
+        evidence_list.append(q)
+    q["quote"] = evidence
+    q["verified"] = result
     if result:
         ctx = context_for_quote(text, evidence)
         if ctx:
-            contexts[ev_key] = ctx
+            q["context"] = ctx
     cache[url] = {
         **{k: v for k, v in entry.items() if k not in
            ("etag", "last_modified", "document_sha256", "content_hash",
-            "verified", "checked", "blocked", "blocked_since")},
+            "evidence", "checked", "blocked", "blocked_since")},
         "etag": resp.headers.get("ETag") if resp is not None and not is_wikipedia else entry.get("etag"),
         "last_modified": resp.headers.get("Last-Modified") if resp is not None and not is_wikipedia else entry.get("last_modified"),
         "document_sha256": document_hash,
-        "verified": verified,
-        "contexts": contexts,
+        "evidence": evidence_list,
         "checked": date.today().isoformat(),
     }
     ambiguous = result and count_occurrences(text, evidence) > 1
@@ -819,7 +822,7 @@ def main():
     parser.add_argument("--slug", type=str, action="append",
                         help="Check a single org (repeatable: pass --slug once per org)")
     parser.add_argument("--no-cache", action="store_true",
-                        help="Ignore the evidence cache")
+                        help="Ignore the state file")
     parser.add_argument("--no-page-cache", action="store_true",
                         help="Don't write fetched page text to the local .pagecache/ "
                              "reading archive (util/pagecache.py). Used by the weekly "
@@ -827,7 +830,7 @@ def main():
                              "runner anyway; locally it's how you opt out.")
     parser.add_argument("--offline", action="store_true",
                         help="Check evidence against .pagecache/ copies only — no "
-                             "network, no writes to the evidence cache or the "
+                             "network, no writes to the state file or the "
                              "manual-dump queue. For cite adjustment: verifies a "
                              "reworded quote against what its page said at last "
                              "fetch; URLs with no stored copy are reported as "
@@ -841,7 +844,7 @@ def main():
     parser.add_argument("--set-url-status", type=str, nargs=2, default=None,
                         metavar=("URL", "STATUS"),
                         help="Manually record a citation URL's liveness in "
-                             "the evidence cache: STATUS is 'dead' (site is "
+                             "the state file: STATUS is 'dead' (site is "
                              "gone/404s), 'unfit' (resolves, but to a parked "
                              "domain/spam — check_event_urls.py can't tell "
                              "this from a healthy 200 automatically), or "
@@ -852,8 +855,9 @@ def main():
                              "writing; does not run verification.")
     parser.add_argument("--unchecked-only", action="store_true",
                         help="Skip any evidence already verified in a prior run "
-                             "(present in citation-evidence.json's verified map for "
-                             "that URL) with zero network calls — not even a "
+                             "(its quote hash holds a 'verified' verdict in "
+                             "citation-state.json's evidence list for that URL) "
+                             "with zero network calls — not even a "
                              "conditional-GET 304 like the default cache-aware path "
                              "still makes. Only fetches evidence that has never been "
                              "checked before: a newly-added quote, or a newly-added "
@@ -895,7 +899,7 @@ def main():
         status = status.strip().lower()
         if status not in ("dead", "unfit", "live"):
             parser.error("--set-url-status STATUS must be one of: dead, unfit, live")
-        evidence = load_evidence()
+        evidence = load_state()
         entry = evidence.get(url, {})
         if status == "live":
             entry.pop("url_status", None)
@@ -904,20 +908,20 @@ def main():
             entry["url_status"] = status
             print(f"Set url_status={status} for {url}")
         evidence[url] = entry
-        save_evidence(evidence)
+        save_state(evidence)
         return
 
     pagecache.enabled = not args.no_page_cache
 
-    # Always start from the committed evidence file, even with --no-cache:
+    # Always start from the committed state file, even with --no-cache:
     # that flag means "don't use cached data to answer *this run's* checks"
     # (handled per-URL via use_cache= below, which check_evidence() already
-    # respects), not "discard the file." save_evidence() at the end writes
+    # respects), not "discard the file." save_state() at the end writes
     # this same dict back out — starting from {} here silently dropped
     # every entry not touched by this run's (possibly --slug-narrowed)
     # evidence set, which wiped ~500 unrelated entries the one time this
     # was run with --no-cache --slug together.
-    cache = load_evidence()
+    cache = load_state()
 
     evidence_items = collect_evidence(args)
 
@@ -926,7 +930,7 @@ def main():
         def _already_checked(item):
             url, evidence_text = item[0], item[1]
             ev_key = sha256(normalize_ws(evidence_text))
-            return ev_key in cache.get(url, {}).get("verified", {})
+            return "verified" in (find_evidence(cache.get(url, {}), ev_key) or {})
         before = len(evidence_items)
         evidence_items = [item for item in evidence_items if not _already_checked(item)]
         skipped_unchecked_only = before - len(evidence_items)
@@ -1043,9 +1047,14 @@ def main():
                         # result, not an unverified claim.
                         new_key = sha256(normalize_ws(corrected))
                         entry = cache.get(url, {})
-                        verified = dict(entry.get("verified", {}))
-                        verified[new_key] = True
-                        cache[url] = {**entry, "verified": verified}
+                        evidence_list = list(entry.get("evidence", []))
+                        q = find_evidence(entry, new_key)
+                        if q is None:
+                            q = {"id": new_key}
+                            evidence_list.append(q)
+                        q["quote"] = corrected
+                        q["verified"] = True
+                        cache[url] = {**entry, "evidence": evidence_list}
                         autofixed += 1
                         print("  AUTOFIXED (spacing only)  " + source_label)
                         print("            quote: " + evidence[:80])
@@ -1077,7 +1086,7 @@ def main():
     # before any mutation), but guard the save anyway so that invariant
     # holds even if future code paths start writing.
     if not args.offline:
-        save_evidence(cache)
+        save_state(cache)
 
     print()
     print("Evidence checked: " + str(good) + " good, " + str(bad) + " mismatch, " +

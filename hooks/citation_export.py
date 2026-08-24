@@ -7,7 +7,7 @@ Output: docs/data/citations.json
 Flow:
   1. Extract quotes from markdown (events + footnotes)
   2. Load existing citations.json (if any) to preserve verification data
-  3. Load docs/data/citation-evidence.json for archive/url-status data
+  3. Load docs/data/citation-state.json for archive/url-status data
   4. Merge: add new quotes, drop removed ones, carry forward enrichment
   5. Write back
 
@@ -50,7 +50,7 @@ quote normalization an external implementer needs to reproduce these
 values.
 
 archive/archive_location/url-status are a read-only projection of
-docs/data/citation-evidence.json — see on_pre_build()'s comment for
+docs/data/citation-state.json — see on_pre_build()'s comment for
 why this file never independently writes those three fields itself.
 
 status/last-verified/verified-by/context are also a read-only projection
@@ -73,9 +73,10 @@ import sys
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "util"))
 from text_fragment import (  # noqa: E402
+    find_evidence,
     iter_footnote_citations,
     load_archive_info,
-    load_evidence_cache,
+    load_state,
     normalize_ws,
 )
 
@@ -91,13 +92,14 @@ def _verification_for(entry, ev_key):
     """Project one evidence entry's cached verification verdict into
     CSL-JSON fields: {status, last-verified, verified-by, context}.
 
-    Reads docs/data/citation-evidence.json's per-URL entry, which holds
-    `verified` {hash: bool} for automated checks, `manual_verified`
-    {hash: bool} for human browser-saved snapshots (see
-    util/manual_dump.py), and `contexts` {hash: {...}}. Returns {} when
-    nothing is recorded for this quote — absent fields mean "not yet
-    verified", which is the spec's own semantics, so a gap is honest
-    rather than something to paper over.
+    Reads docs/data/citation-state.json's per-URL entry, which holds an
+    `evidence` map keyed by quote hash — each value carrying `quote` (the
+    claim text), a `verified` bool for automated checks, a
+    `manual_verified` bool for human browser-saved snapshots (see
+    util/manual_dump.py), and a `context` {prefix, suffix, text, sha256}.
+    Returns {} when nothing is recorded for this quote — absent fields
+    mean "not yet verified", which is the spec's own semantics, so a gap
+    is honest rather than something to paper over.
 
     Only MATCH/MISMATCH are ever projected. AMBIGUOUS is deliberately
     unreachable here: check_fragments.py only detects it on a fresh
@@ -115,24 +117,23 @@ def _verification_for(entry, ev_key):
     internal-heartbeat/machine-verifiable-citation.md.
     """
     out = {}
-    verified = entry.get("verified", {})
-    manual = entry.get("manual_verified", {})
+    q = find_evidence(entry, ev_key) or {}
 
-    if ev_key in verified:
-        out["status"] = "MATCH" if verified[ev_key] else "MISMATCH"
+    if "verified" in q:
+        out["status"] = "MATCH" if q["verified"] else "MISMATCH"
         if entry.get("checked"):
             out["last-verified"] = entry["checked"]
         out["verified-by"] = BOT_IDENTITY
-    elif ev_key in manual:
+    elif "manual_verified" in q:
         # A human opened the page in a real browser and saved it; the
         # bot never reached it. Real verification, different provenance
         # — so status is projected but verified-by is omitted, matching
         # the spec's "absent = human claim".
-        out["status"] = "MATCH" if manual[ev_key] else "MISMATCH"
+        out["status"] = "MATCH" if q["manual_verified"] else "MISMATCH"
         if entry.get("manual_checked"):
             out["last-verified"] = entry["manual_checked"]
 
-    ctx = entry.get("contexts", {}).get(ev_key) or {}
+    ctx = q.get("context") or {}
     if ctx.get("sha256"):
         out["context"] = {"sha256": ctx["sha256"]}
         if "prefix" in ctx:
@@ -200,7 +201,7 @@ def on_pre_build(config):
                 existing[cite["URL"]] = cite
 
     # archive/archive_location/url-status are a *projection* of
-    # docs/data/citation-evidence.json, not carried forward from this
+    # docs/data/citation-state.json, not carried forward from this
     # file's own previous output — that cache is the one place anything
     # ever writes a Wayback snapshot or a liveness verdict
     # (check_fragments.py's --save-to-wayback / --set-url-status), so
@@ -212,7 +213,7 @@ def on_pre_build(config):
     archive_info = load_archive_info()
     # Same cache, unnarrowed — per-quote verification verdicts are
     # projected from it below by _verification_for().
-    evidence_cache = load_evidence_cache()
+    evidence_cache = load_state()
 
     # Group new items by URL
     by_url = {}
