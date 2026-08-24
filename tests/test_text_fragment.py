@@ -508,5 +508,61 @@ class LoadArchiveInfoTests(unittest.TestCase):
         self.assertEqual(tf.load_archive_info(), {})
 
 
+class CoinsContextTests(unittest.TestCase):
+    """coins_context()/coins_span_html() — the COinS <span class="Z3988">
+    Zotero/EndNote/RefWorks scan any webpage for. See Appendix E of
+    internal-heartbeat/machine-verifiable-citation.md."""
+
+    def test_no_url_returns_none(self):
+        self.assertIsNone(tf.coins_context(None))
+        self.assertIsNone(tf.coins_context(""))
+
+    def test_minimal_context_has_required_keys_only(self):
+        ctx = tf.coins_context("https://example.org/x")
+        self.assertIn("ctx_ver=Z39.88-2004", ctx)
+        self.assertIn("rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal", ctx)
+        self.assertIn("rft.genre=unknown", ctx)
+        self.assertIn("rft_id=https%3A%2F%2Fexample.org%2Fx", ctx)
+        self.assertNotIn("rft.atitle", ctx)
+        self.assertNotIn("rft.date", ctx)
+        self.assertNotIn("evidence_sha256", ctx)
+
+    def test_title_and_date_are_kev_encoded_matching_mediawiki_style(self):
+        # Cross-checked against a real Z3988 span fetched from a live
+        # Wikipedia citations page — same key set, same percent-encoding
+        # (spaces as '+', unicode as %XX), same rft_val_fmt/genre.
+        ctx = tf.coins_context(
+            "http://www.abs.gov.au/x?y",
+            title="Local Government Areas – Alphabetic",
+            cite_date="2008-09-26",
+        )
+        self.assertIn(
+            "rft.atitle=Local+Government+Areas+%E2%80%93+Alphabetic", ctx)
+        self.assertIn("rft.date=2008-09-26", ctx)
+        self.assertIn("rft_id=http%3A%2F%2Fwww.abs.gov.au%2Fx%3Fy", ctx)
+
+    def test_evidence_id_is_truncated_to_prefix(self):
+        full_hash = "a" * 64
+        ctx = tf.coins_context("https://example.org/x", evidence_id=full_hash)
+        self.assertIn("evidence_sha256=" + "a" * tf.EVIDENCE_SHA256_PREFIX_LEN, ctx)
+        self.assertNotIn(full_hash, ctx)
+
+    def test_span_html_escapes_ampersand_for_the_attribute(self):
+        html_out = tf.coins_span_html("https://example.org/x")
+        self.assertIn('class="Z3988"', html_out)
+        self.assertIn("&amp;", html_out)
+        # The attribute value itself must not contain a bare, unescaped &
+        # between the title="..." quotes (that would be invalid HTML).
+        start = html_out.index('title="') + len('title="')
+        end = html_out.index('"', start)
+        attr = html_out[start:end]
+        self.assertNotIn("& ", attr)  # sanity: no raw '&' survived escaping
+        self.assertIn("&amp;rft_val_fmt", attr)
+
+    def test_span_html_empty_string_when_no_url(self):
+        self.assertEqual(tf.coins_span_html(None), "")
+        self.assertEqual(tf.coins_span_html(""), "")
+
+
 if __name__ == "__main__":
     unittest.main()

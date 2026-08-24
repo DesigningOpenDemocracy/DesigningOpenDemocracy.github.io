@@ -14,7 +14,7 @@ every org for the site-wide calendar page. This hook only concerns a single
 org's own page: it shows both directions (past and future), the aggregator
 only ever shows future.
 
-Also registers two Jinja filters (via on_env):
+Also registers three Jinja filters (via on_env):
   - `with_fragment` — organisation.html uses this to build an event's link
     href. A #:~:text= fragment is derived from quote: at render time here
     rather than stored in url: — see util/text_fragment.py's docstring for
@@ -29,14 +29,32 @@ Also registers two Jinja filters (via on_env):
     as primary (see internal-heartbeat/2026-08-22-citation-archival-
     design-decisions.md). Loaded once at env setup, not per-page, since
     the cache is a single shared file.
+  - `coins_for` — builds a COinS <span class="Z3988"> for an event with a
+    url:, the mechanism Zotero/EndNote/RefWorks already scan any page for
+    to detect a citable reference with no separate file needed. When the
+    event also carries a quote:, the span's evidence_sha256 key points at
+    that quote's specific evidence[] entry in citations.json — see
+    util/text_fragment.py's coins_context() and Appendix E of
+    internal-heartbeat/machine-verifiable-citation.md for the full design
+    this implements. Events without url: get no span (nothing to cite).
 """
 
+import hashlib
 import os
 import sys
 from datetime import date
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "util"))
-from text_fragment import load_archive_info, with_fragment  # noqa: E402
+from text_fragment import (  # noqa: E402
+    coins_span_html, load_archive_info, normalize_ws, with_fragment,
+)
+
+
+def _coins_for_event(e):
+    quote = e.get("quote")
+    evidence_id = (hashlib.sha256(normalize_ws(quote).encode("utf-8")).hexdigest()
+                   if quote else None)
+    return coins_span_html(e.get("url"), e.get("title"), e.get("date"), evidence_id)
 
 
 def _parse_date(val):
@@ -78,3 +96,4 @@ def on_env(env, config, files):
     env.filters["with_fragment"] = with_fragment
     archive_info = load_archive_info()
     env.filters["archive_info_for"] = lambda url: archive_info.get(url)
+    env.filters["coins_for"] = _coins_for_event

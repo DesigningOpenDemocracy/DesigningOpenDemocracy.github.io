@@ -21,7 +21,7 @@ import json
 import os
 import re
 from urllib.parse import quote as url_quote
-from urllib.parse import unquote, urlparse, urlunparse
+from urllib.parse import quote_plus, unquote, urlparse, urlunparse
 
 STATE_PATH = os.path.join(
     os.path.dirname(__file__), "..", "docs", "data", "citation-state.json"
@@ -232,6 +232,69 @@ def with_fragment(url, quote_text):
     """Jinja-filter-friendly wrapper: always returns a usable url — the
     fragment-bearing version when derivable, otherwise the url unchanged."""
     return add_fragment_to_url(url, quote_text) or url
+
+
+# COinS (ContextObjects in Spans) — an OpenURL/Z39.88-2004 ContextObject
+# embedded as <span class="Z3988" title="...">. This is the actual,
+# currently-deployed mechanism Zotero/EndNote/RefWorks already scan any
+# webpage for to detect "there's a citable thing right here," with no
+# separate file to know about. See Appendix E of
+# internal-heartbeat/machine-verifiable-citation.md for the full design
+# record this implements.
+EVIDENCE_SHA256_PREFIX_LEN = 12  # ~48 bits — collision odds among one
+# URL's own handful of evidence[] entries are negligible; short enough to
+# keep spans small, the one place in this design where byte size matters
+# (see the appendix's own warning about COinS page-bloat complaints on
+# Wikipedia). Same spirit as Git's abbreviated commit hashes.
+
+
+def coins_context(url, title=None, cite_date=None, evidence_id=None):
+    """Build the `title=` attribute value for a COinS <span class="Z3988">
+    — an OpenURL 1.0 KEV (key/encoded-value) ContextObject query string.
+
+    Emits the same rft_val_fmt=...:journal / rft.genre=unknown profile
+    MediaWiki's own Cite extension uses for a generic (untyped) web
+    citation — confirmed by fetching a live Wikipedia citations page and
+    reading its own Z3988 spans directly — so this is byte-for-byte
+    compatible with what Zotero/EndNote/RefWorks already parse from
+    Wikipedia today; no new profile for them to support.
+
+    evidence_id, if given, is added as `evidence_sha256` — DOD's one
+    non-standard key (a short prefix of the specific evidence[] entry's
+    full id in citations.json that this citation instance vouches for,
+    not the full 64-char hash — see EVIDENCE_SHA256_PREFIX_LEN). A
+    conformant OpenURL parser silently ignores keys it doesn't
+    recognize, so this is purely additive: Zotero/EndNote/RefWorks work
+    identically whether or not they understand it.
+
+    Returns None if there's no url — nothing to cite."""
+    if not url:
+        return None
+    parts = [
+        ("ctx_ver", "Z39.88-2004"),
+        ("rft_val_fmt", "info:ofi/fmt:kev:mtx:journal"),
+        ("rft.genre", "unknown"),
+    ]
+    if title:
+        parts.append(("rft.atitle", title))
+    if cite_date:
+        parts.append(("rft.date", str(cite_date)))
+    parts.append(("rft_id", url))
+    if evidence_id:
+        parts.append(("evidence_sha256", evidence_id[:EVIDENCE_SHA256_PREFIX_LEN]))
+    return "&".join(k + "=" + quote_plus(v) for k, v in parts)
+
+
+def coins_span_html(url, title=None, cite_date=None, evidence_id=None):
+    """Render the full <span class="Z3988" ...></span> tag, HTML-attribute-
+    escaped (the KEV string's own `&`-joined keys must become `&amp;`
+    inside an HTML attribute — exactly what MediaWiki's own spans do).
+    Returns "" if there's no url, so callers can splice this in
+    unconditionally without an extra presence check."""
+    ctx = coins_context(url, title, cite_date, evidence_id)
+    if not ctx:
+        return ""
+    return '<span class="Z3988" title="' + html.escape(ctx) + '"></span>'
 
 
 def load_archive_info():

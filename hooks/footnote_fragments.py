@@ -28,16 +28,60 @@ original is demoted to a small "(original: no longer live)" trailer
 rather than getting a #:~:text= fragment nobody can safely follow. See
 internal-heartbeat/2026-08-22-citation-archival-design-decisions.md.
 
-Two hooks:
-  on_page_markdown — parse footnotes, store label→(url, quote) map on page
-  on_page_content  — post-process HTML to add fragments + archive links
+Two more badges, added 2026-08-24 as the prose-footnote counterpart of
+organisation.html's event proof_level pills — see the "traffic lights"
+discussion this was designed in:
+
+- A citation-only footnote (no verbatim quote — see text_fragment.py's
+  footnote_citation() eligibility rule, and the CLAUDE.md "Prose footnote
+  citations" convention) gets a neutral grey "Citation only" badge. This
+  is NOT a fourth confidence tier alongside high/medium/low — footnotes
+  don't have a computed proof_level the way org events do — it's a
+  distinct "off" state meaning "nothing to mechanically check here,"
+  parallel to how a grey CI badge means "not run," not "failing."
+- A quoted footnote whose stored verification verdict (in
+  docs/data/citation-state.json, written by check_fragments.py) is a
+  MISMATCH gets a red "⚠ Quote drifted" warning — the same visual
+  language as organisation.html's existing proof_warning/url_status
+  warnings. This is new coverage, not a rename: until now a MISMATCH was
+  only ever visible in the weekly cron log, never on the live site, for
+  footnotes or events alike. A citation never checked yet (no verdict on
+  file) gets neither badge — "not yet verified" is not a warning.
+
+These two are deliberately separate signals, not one three-state badge:
+sourcing shape (is there a quote at all) and live accuracy (does the
+page still say it) can move independently — a citation-only footnote is
+never "wrong," just unrated, and a quoted footnote can drift to MISMATCH
+regardless of how strong its sourcing looked at authoring time.
+
+Every quoted footnote also gets a COinS <span class="Z3988"> appended
+after its citation link — the OpenURL mechanism Zotero/EndNote/RefWorks
+already scan any webpage for to detect a citable reference, no separate
+file needed. Its evidence_sha256 key points at this quote's specific
+evidence[] entry in citations.json. See util/text_fragment.py's
+coins_context()/coins_span_html() and Appendix E of
+internal-heartbeat/machine-verifiable-citation.md for the full design.
+Scoped to quoted footnotes only for now, not citation-only ones — a
+citation-only footnote has no evidence[] entry to point at yet (see the
+"vanilla CSL-JSON" gap noted alongside this feature), and a multi-source
+citation-only footnote has no single unambiguous url to cite anyway.
+
+Four hooks:
+  on_page_markdown — parse footnotes, store label→(url, quote) map and
+                      citation-only label set on page
+  on_page_content  — post-process HTML to add fragments, archive links,
+                      and the two badges above
 """
 
+import hashlib
 import os
 import sys
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "util"))
-from text_fragment import add_fragment_to_url, iter_footnote_citations, load_archive_info  # noqa: E402
+from text_fragment import (  # noqa: E402
+    add_fragment_to_url, coins_span_html, find_evidence, iter_footnote_citations,
+    load_archive_info, load_state, normalize_ws, parse_footnote_def,
+)
 
 FN_ID_PREFIX = 'id="fn:'
 FN_LI = "<li "
@@ -53,18 +97,83 @@ ORIGINAL_DEAD_TEMPLATE = (
     '<a href="{url}" target="_blank" rel="noopener">{url}</a>)</span>'
 )
 
+CITATION_ONLY_BADGE = (
+    ' <span class="org-event-proof proof-citation" '
+    'title="No verbatim quote to mechanically verify — see the citation itself.">'
+    'Citation only</span>'
+)
+
+MISMATCH_WARNING_BADGE = (
+    ' <span class="org-event-warning" '
+    'title="The stored quote no longer matches the live page as of the last check — needs a recheck.">'
+    '⚠ Quote drifted</span>'
+)
+
 ROTTED_STATUSES = ("dead", "unfit")
 
 
+def _sha256(text):
+    return hashlib.sha256(text.encode("utf-8")).hexdigest()
+
+
+def _quote_drifted(state, url, quote):
+    """True only if this quote's most recently recorded verification (in
+    docs/data/citation-state.json) came back negative. Automated
+    'verified' takes precedence over 'manual_verified' when both are
+    present, same as hooks/citation_export.py's _verification_for() —
+    a fresh automated recheck should win over a stale manual one.
+    Returns False (no warning) when nothing has ever been recorded for
+    this quote — "not yet checked" is not the same claim as "checked and
+    wrong."""
+    entry = state.get(url) or {}
+    ev = find_evidence(entry, _sha256(normalize_ws(quote))) or {}
+    if "verified" in ev:
+        return ev["verified"] is False
+    if "manual_verified" in ev:
+        return ev["manual_verified"] is False
+    return False
+
+
+def _first_link_end(block):
+    """Return the block index right after the first <a href="...">...</a>
+    closes, or None if no link is found (shouldn't happen for a footnote
+    definition, but this is post-processing of already-rendered HTML —
+    fail quiet rather than crash the build over a malformed block)."""
+    a_idx = block.find('<a href="')
+    if a_idx == -1:
+        return None
+    tag_close = block.find(">", a_idx)
+    if tag_close == -1:
+        return None
+    a_close = block.find("</a>", tag_close)
+    if a_close == -1:
+        return None
+    return a_close + len("</a>")
+
+
 def _parse_footnotes(markdown_source):
-    """Return {label: (url, quote_text)} for footnotes that qualify for the
-    machine-verifiable quote convention. See text_fragment.py's
-    footnote_citation() for the exactly-one-citation eligibility rule —
-    a footnote citing more than one source is skipped here entirely
-    (citation-only, no fragment), rather than guessing which quote goes
-    with which link."""
-    return {label: (url, quote) for label, url, title, quote
-            in iter_footnote_citations(markdown_source)}
+    """Return (citations, citation_only):
+
+    citations — {label: (url, title, quote_text)} for footnotes that
+    qualify for the machine-verifiable quote convention. See
+    text_fragment.py's footnote_citation() for the exactly-one-citation
+    eligibility rule — a footnote citing more than one source is
+    citation-only here too (see below), rather than guessing which quote
+    goes with which link. title is the link's own text (e.g. the page
+    title), carried through for the COinS rft.atitle key — see
+    coins_html().
+
+    citation_only — the set of every other footnote-definition label on
+    the page: no quote to check, fragment, or drift-warn — badged grey
+    instead (see CITATION_ONLY_BADGE)."""
+    citations = {label: (url, title, quote) for label, url, title, quote
+                 in iter_footnote_citations(markdown_source)}
+    citation_only = set()
+    for line in markdown_source.split("\n"):
+        parsed = parse_footnote_def(line)
+        if parsed and parsed[0] not in citations:
+            citation_only.add(parsed[0])
+    return citations, citation_only
 
 
 def _find_li_end(html, start):
@@ -94,6 +203,7 @@ def _find_li_end(html, start):
 
 
 _archive_info_cache = None
+_state_cache = None
 
 
 def _get_archive_info():
@@ -107,17 +217,31 @@ def _get_archive_info():
     return _archive_info_cache
 
 
+def _get_state():
+    """Lazily load and cache the raw citation-state.json map (unlike
+    _get_archive_info(), the full per-URL entries, needed here for
+    per-quote 'verified'/'manual_verified' lookups via find_evidence())."""
+    global _state_cache
+    if _state_cache is None:
+        _state_cache = load_state()
+    return _state_cache
+
+
 def on_page_markdown(markdown, page, config, files):
-    page._fn_citations = _parse_footnotes(markdown)
+    citations, citation_only = _parse_footnotes(markdown)
+    page._fn_citations = citations
+    page._fn_citation_only = citation_only
     return markdown
 
 
 def on_page_content(html, page, config, files):
     citations = getattr(page, "_fn_citations", None)
-    if not citations:
+    citation_only = getattr(page, "_fn_citation_only", None)
+    if not citations and not citation_only:
         return html
 
     archive_info = _get_archive_info()
+    state = _get_state()
 
     result = []
     pos = 0
@@ -142,12 +266,14 @@ def on_page_content(html, page, config, files):
         block = html[li_start:li_end]
 
         if label in citations:
-            url, quote = citations[label]
+            url, title, quote = citations[label]
             a_start = 0
+            link_found = False
             while True:
                 a_idx = block.find('<a href="', a_start)
                 if a_idx == -1:
                     break
+                link_found = True
                 href_attr_start = a_idx + len('<a href="')
                 href_end = block.find('"', href_attr_start)
                 href = block[href_attr_start:href_end]
@@ -192,6 +318,19 @@ def on_page_content(html, page, config, files):
                     a_start = insert_at + len(archive_link)
                 else:
                     a_start = insert_at
+
+            if link_found and _quote_drifted(state, url, quote):
+                block = block[:a_start] + MISMATCH_WARNING_BADGE + block[a_start:]
+            # COinS span — no per-citation date field exists for footnotes
+            # (unlike org events' date:), so cite_date is omitted; Zotero
+            # et al. handle a missing rft.date fine, same as any other
+            # optional KEV key.
+            evidence_id = _sha256(normalize_ws(quote))
+            block += coins_span_html(url, title, None, evidence_id)
+        elif citation_only and label in citation_only:
+            insert_at = _first_link_end(block)
+            if insert_at is not None:
+                block = block[:insert_at] + CITATION_ONLY_BADGE + block[insert_at:]
 
         result.append(block)
         pos = li_end

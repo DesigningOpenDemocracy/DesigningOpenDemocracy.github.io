@@ -96,6 +96,28 @@ exception, which never queries your site at all). Alternatively,
 [contact us](https://github.com/DesigningOpenDemocracy/DesigningOpenDemocracy.github.io/issues)
 and we will remove your organisation from automated checks.
 
+## Citation data
+
+Every event and prose-footnote quote `check_fragments.py` verifies (see
+above) is exported as a machine-readable [CSL-JSON](https://citationstyles.org/)
+file: [/data/citations.json](/data/citations.json). Each entry carries
+the standard bibliographic fields (`id`, `type`, `URL`, `title`,
+`archive`/`archive_location` for a Wayback Machine snapshot when one
+exists) plus a DOD extension `evidence` array recording, per quote, its
+last verification result (`MATCH`/`MISMATCH`), when it was last checked,
+and whether the check was automated or a human-confirmed browser
+snapshot. This is the same evidence check_fragments.py itself checks —
+the file is a read-only projection of it, regenerated fresh on every
+build, so it's never stale relative to what the bot last confirmed.
+
+Individual citations are also directly discoverable from the pages that
+cite them: a quoted org-timeline event or footnote embeds a
+[COinS](https://ocoins.info/) `<span class="Z3988">` next to its
+citation link — the same mechanism Wikipedia uses, and the one Zotero,
+EndNote, and RefWorks already scan any webpage for — so a citation can
+be imported straight into a reference manager without knowing
+`citations.json` exists at all.
+
 ## Source code
 
 The scripts are open source: [util/](https://github.com/DesigningOpenDemocracy/DesigningOpenDemocracy.github.io/tree/main/util)
