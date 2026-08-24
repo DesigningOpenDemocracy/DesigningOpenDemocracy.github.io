@@ -54,6 +54,18 @@ page still say it) can move independently — a citation-only footnote is
 never "wrong," just unrated, and a quoted footnote can drift to MISMATCH
 regardless of how strong its sourcing looked at authoring time.
 
+Every quoted footnote also gets a COinS <span class="Z3988"> appended
+after its citation link — the OpenURL mechanism Zotero/EndNote/RefWorks
+already scan any webpage for to detect a citable reference, no separate
+file needed. Its evidence_sha256 key points at this quote's specific
+evidence[] entry in citations.json. See util/text_fragment.py's
+coins_context()/coins_span_html() and Appendix E of
+internal-heartbeat/machine-verifiable-citation.md for the full design.
+Scoped to quoted footnotes only for now, not citation-only ones — a
+citation-only footnote has no evidence[] entry to point at yet (see the
+"vanilla CSL-JSON" gap noted alongside this feature), and a multi-source
+citation-only footnote has no single unambiguous url to cite anyway.
+
 Four hooks:
   on_page_markdown — parse footnotes, store label→(url, quote) map and
                       citation-only label set on page
@@ -67,7 +79,7 @@ import sys
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "util"))
 from text_fragment import (  # noqa: E402
-    add_fragment_to_url, find_evidence, iter_footnote_citations,
+    add_fragment_to_url, coins_span_html, find_evidence, iter_footnote_citations,
     load_archive_info, load_state, normalize_ws, parse_footnote_def,
 )
 
@@ -142,16 +154,19 @@ def _first_link_end(block):
 def _parse_footnotes(markdown_source):
     """Return (citations, citation_only):
 
-    citations — {label: (url, quote_text)} for footnotes that qualify for
-    the machine-verifiable quote convention. See text_fragment.py's
-    footnote_citation() for the exactly-one-citation eligibility rule —
-    a footnote citing more than one source is citation-only here too
-    (see below), rather than guessing which quote goes with which link.
+    citations — {label: (url, title, quote_text)} for footnotes that
+    qualify for the machine-verifiable quote convention. See
+    text_fragment.py's footnote_citation() for the exactly-one-citation
+    eligibility rule — a footnote citing more than one source is
+    citation-only here too (see below), rather than guessing which quote
+    goes with which link. title is the link's own text (e.g. the page
+    title), carried through for the COinS rft.atitle key — see
+    coins_html().
 
     citation_only — the set of every other footnote-definition label on
     the page: no quote to check, fragment, or drift-warn — badged grey
     instead (see CITATION_ONLY_BADGE)."""
-    citations = {label: (url, quote) for label, url, title, quote
+    citations = {label: (url, title, quote) for label, url, title, quote
                  in iter_footnote_citations(markdown_source)}
     citation_only = set()
     for line in markdown_source.split("\n"):
@@ -251,7 +266,7 @@ def on_page_content(html, page, config, files):
         block = html[li_start:li_end]
 
         if label in citations:
-            url, quote = citations[label]
+            url, title, quote = citations[label]
             a_start = 0
             link_found = False
             while True:
@@ -306,6 +321,12 @@ def on_page_content(html, page, config, files):
 
             if link_found and _quote_drifted(state, url, quote):
                 block = block[:a_start] + MISMATCH_WARNING_BADGE + block[a_start:]
+            # COinS span — no per-citation date field exists for footnotes
+            # (unlike org events' date:), so cite_date is omitted; Zotero
+            # et al. handle a missing rft.date fine, same as any other
+            # optional KEV key.
+            evidence_id = _sha256(normalize_ws(quote))
+            block += coins_span_html(url, title, None, evidence_id)
         elif citation_only and label in citation_only:
             insert_at = _first_link_end(block)
             if insert_at is not None:

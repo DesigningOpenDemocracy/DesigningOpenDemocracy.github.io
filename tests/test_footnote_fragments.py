@@ -222,6 +222,19 @@ class ProofBadgeTests(_FootnoteFragmentsTestBase):
         result = self._render(md, html)
         self.assertIn("proof-citation", result)
 
+    def test_quoted_footnote_gets_coins_span_with_evidence_pointer(self):
+        self._set_archive_cache({})
+        result = self._render(self.QUOTED_MD, self.QUOTED_HTML)
+        self.assertIn('class="Z3988"', result)
+        self.assertIn("rft.atitle=Title", result)
+        self.assertIn(
+            "evidence_sha256=" + self._ev_key()[:12], result)
+
+    def test_citation_only_footnote_gets_no_coins_span(self):
+        self._set_archive_cache({})
+        result = self._render(self.CITATION_ONLY_MD, self.CITATION_ONLY_HTML)
+        self.assertNotIn("Z3988", result)
+
 
 if __name__ == "__main__":
     unittest.main()
