@@ -11,6 +11,7 @@ cache is monkeypatched per test via a temp JSON file. Run with:
     python -m unittest discover tests
 """
 
+import hashlib
 import json
 import os
 import sys
@@ -28,15 +29,20 @@ class FakePage:
     pass
 
 
-class OnPageContentTests(unittest.TestCase):
+class _FootnoteFragmentsTestBase(unittest.TestCase):
+    """Shared setup for both test classes below — not itself collected by
+    unittest (no test_* methods), so subclassing it doesn't duplicate
+    cases the way subclassing OnPageContentTests directly would."""
 
     def setUp(self):
         self._orig_cache = ff._archive_info_cache
+        self._orig_state = ff._state_cache
         self._orig_path = tf.STATE_PATH
         self.addCleanup(self._restore)
 
     def _restore(self):
         ff._archive_info_cache = self._orig_cache
+        ff._state_cache = self._orig_state
         tf.STATE_PATH = self._orig_path
 
     def _set_archive_cache(self, data):
@@ -47,11 +53,15 @@ class OnPageContentTests(unittest.TestCase):
         self.addCleanup(lambda: os.remove(path))
         tf.STATE_PATH = path
         ff._archive_info_cache = None  # force a reload from the new path
+        ff._state_cache = None  # both caches read the same underlying file
 
     def _render(self, markdown_src, html_src):
         page = FakePage()
         ff.on_page_markdown(markdown_src, page, None, None)
         return ff.on_page_content(html_src, page, None, None)
+
+
+class OnPageContentTests(_FootnoteFragmentsTestBase):
 
     MARKDOWN = ('[^a]: "quoted text here," [Title](https://example.org/x), '
                 'Source.')
@@ -136,6 +146,81 @@ class OnPageContentTests(unittest.TestCase):
         self.assertIn('<a href="https://example.org/x#:~:text=', result)
         self.assertIn("🗃️", result)
         self.assertNotIn("no longer live", result)
+
+
+class ProofBadgeTests(_FootnoteFragmentsTestBase):
+    """The two "traffic light" badges added 2026-08-24: a grey 'Citation
+    only' pill for a footnote with no verbatim quote to check, and a red
+    '⚠ Quote drifted' warning for a quoted footnote whose stored
+    verification verdict is a MISMATCH. Deliberately separate signals —
+    see hooks/footnote_fragments.py's module docstring."""
+
+    QUOTED_MD = ('[^a]: "quoted text here," [Title](https://example.org/x), '
+                 'Source.')
+    QUOTED_HTML = '<li id="fn:a"><a href="https://example.org/x">Title</a></li>'
+
+    CITATION_ONLY_MD = ('[^a]: [Title](https://example.org/x), Source, '
+                         'no quote. <!-- unquoted: legacy: n/a -->')
+    CITATION_ONLY_HTML = QUOTED_HTML
+
+    @staticmethod
+    def _ev_key():
+        return hashlib.sha256(tf.normalize_ws("quoted text here,").encode()).hexdigest()
+
+    def test_citation_only_footnote_gets_grey_badge(self):
+        self._set_archive_cache({})
+        result = self._render(self.CITATION_ONLY_MD, self.CITATION_ONLY_HTML)
+        self.assertIn("proof-citation", result)
+        self.assertIn("Citation only", result)
+        self.assertNotIn("Quote drifted", result)
+
+    def test_quoted_footnote_with_no_recorded_verdict_gets_no_badge(self):
+        self._set_archive_cache({})
+        result = self._render(self.QUOTED_MD, self.QUOTED_HTML)
+        self.assertNotIn("proof-citation", result)
+        self.assertNotIn("Quote drifted", result)
+
+    def test_quoted_footnote_with_match_gets_no_badge(self):
+        self._set_archive_cache({
+            "https://example.org/x": {"evidence": [{"id": self._ev_key(), "verified": True}]},
+        })
+        result = self._render(self.QUOTED_MD, self.QUOTED_HTML)
+        self.assertNotIn("proof-citation", result)
+        self.assertNotIn("Quote drifted", result)
+
+    def test_quoted_footnote_with_mismatch_gets_warning_badge(self):
+        self._set_archive_cache({
+            "https://example.org/x": {"evidence": [{"id": self._ev_key(), "verified": False}]},
+        })
+        result = self._render(self.QUOTED_MD, self.QUOTED_HTML)
+        self.assertIn("⚠ Quote drifted", result)
+        self.assertNotIn("proof-citation", result)
+
+    def test_manual_verified_false_also_warns_when_no_automated_verdict(self):
+        self._set_archive_cache({
+            "https://example.org/x": {"evidence": [{"id": self._ev_key(), "manual_verified": False}]},
+        })
+        result = self._render(self.QUOTED_MD, self.QUOTED_HTML)
+        self.assertIn("⚠ Quote drifted", result)
+
+    def test_automated_verdict_wins_over_stale_manual_verdict(self):
+        self._set_archive_cache({
+            "https://example.org/x": {"evidence": [
+                {"id": self._ev_key(), "verified": True, "manual_verified": False},
+            ]},
+        })
+        result = self._render(self.QUOTED_MD, self.QUOTED_HTML)
+        self.assertNotIn("Quote drifted", result)
+
+    def test_multi_source_footnote_is_treated_as_citation_only(self):
+        md = ('[^a]: [First](https://example.org/a) and '
+              '[Second](https://example.org/b), two sources. '
+              '<!-- unquoted: multi-source: two links -->')
+        html = ('<li id="fn:a"><a href="https://example.org/a">First</a> and '
+                '<a href="https://example.org/b">Second</a></li>')
+        self._set_archive_cache({})
+        result = self._render(md, html)
+        self.assertIn("proof-citation", result)
 
 
 if __name__ == "__main__":

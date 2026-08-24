@@ -1843,26 +1843,40 @@
   font-size: 0.82em;
   opacity: 0.65;
 }
-.org-events-timeline .org-event-proof {
+/* .org-event-proof and .org-event-warning are shared by two render paths —
+   org event citations (docs/overrides/organisation.html, inside
+   .org-events-timeline) and prose footnote citations
+   (hooks/footnote_fragments.py, inline in ordinary page/footnote content)
+   — so the base rules are unscoped, matching .org-event-archive-btn
+   below. proof-citation is footnote-only: a neutral grey "off" state for
+   a citation-only footnote with no quote to mechanically verify, not a
+   fourth confidence tier alongside high/medium/low — nothing computes a
+   proof_level for footnotes the way check_event_sourcing.py does for
+   events. */
+.org-event-proof {
   font-size: 0.65em;
   font-weight: 600;
   padding: 0.15em 0.5em;
   border-radius: 3px;
   white-space: nowrap;
 }
-.org-events-timeline .proof-high {
+.proof-high {
   background: rgba(0,200,83,0.15);
   color: #00c853;
 }
-.org-events-timeline .proof-medium {
+.proof-medium {
   background: rgba(255,171,64,0.15);
   color: #ffab40;
 }
-.org-events-timeline .proof-low {
+.proof-low {
   background: rgba(255,82,82,0.15);
   color: #ff5252;
 }
-.org-events-timeline .org-event-warning {
+.proof-citation {
+  background: rgba(158,158,158,0.15);
+  color: #9e9e9e;
+}
+.org-event-warning {
   margin-left: 0.4em;
   font-size: 0.65em;
   font-weight: 600;
