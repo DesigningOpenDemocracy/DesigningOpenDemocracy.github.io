@@ -2051,7 +2051,7 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/International_Day_of_Democracy": {
-    "checked": "2026-08-26",
+    "checked": "2026-08-25",
     "document_sha256": "755891c15c272a450c2c36f8dec320bfc51a178f974ce15d6c1167715114620b",
     "etag": null,
     "evidence": [
@@ -2059,6 +2059,17 @@
         "id": "1d3cb593811b9d3c9dfb23636865d6b1446a80a56518d729162a7c280b288b1f",
         "quote": "In 2007 the United Nations General Assembly resolved to observe 15 September as the International Day of Democracy\u2014with the purpose of promoting and upholding the principles of democracy.",
         "verified": false
+      },
+      {
+        "context": {
+          "prefix": "",
+          "sha256": "14e8637368d07b2a69a3c9143da83be1006589567b2db1ec6f324de24e48f2b6",
+          "suffix": "\u2026while democracies share common features, there is no single model of democracy and that democracy does not belong to any country or region... \u2026demo",
+          "text": "In 2007 the United Nations General Assembly resolved to observe 15 September as the International Day of Democracy \u2014 with the purpose of promoting and upholding the principles of democracy \u2014 and invited all member states and organizations to commemorate the day in an appropriate manner that contributes to raising public awareness."
+        },
+        "id": "14e8637368d07b2a69a3c9143da83be1006589567b2db1ec6f324de24e48f2b6",
+        "quote": "In 2007 the United Nations General Assembly resolved to observe 15 September as the International Day of Democracy \u2014 with the purpose of promoting and upholding the principles of democracy \u2014 and invited all member states and organizations to commemorate the day in an appropriate manner that contributes to raising public awareness.",
+        "verified": true
       }
     ],
     "last_modified": null

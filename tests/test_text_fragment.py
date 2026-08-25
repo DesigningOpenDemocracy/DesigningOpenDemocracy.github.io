@@ -56,6 +56,67 @@ class NormalizeWsParenSpacingTests(unittest.TestCase):
         self.assertTrue(tf.quote_matches(page, quote))
 
 
+class NormalizeWsDashSpacingTests(unittest.TestCase):
+    """Regression for a real incident (2026-08-26): Wikipedia's explaintext
+    API renders a sentence's em-dashes with no surrounding whitespace
+    ("Democracy—with"), while the same sentence on the actual rendered
+    article page has spaces around them ("Democracy — with"). A quote
+    drafted/verified against one form silently failed the reader-facing
+    #:~:text= highlight against the other, even though check_fragments.py
+    reported it as a confirmed MATCH — because it verifies Wikipedia
+    citations against the API text, not the rendered page a real click
+    lands on. See International Day of Democracy's [^unday] footnote on
+    the 2026-08-25 blog post for the concrete case."""
+
+    def test_adds_spaces_around_bare_em_dash(self):
+        self.assertEqual(tf.normalize_ws("Democracy—with participation"),
+                         "Democracy — with participation")
+
+    def test_leaves_already_spaced_em_dash_unchanged(self):
+        self.assertEqual(tf.normalize_ws("Democracy — with participation"),
+                         "Democracy — with participation")
+
+    def test_collapses_asymmetric_spacing(self):
+        self.assertEqual(tf.normalize_ws("Democracy —with participation"),
+                         "Democracy — with participation")
+        self.assertEqual(tf.normalize_ws("Democracy— with participation"),
+                         "Democracy — with participation")
+
+    def test_en_dash_too(self):
+        self.assertEqual(tf.normalize_ws("pages 12–14"), "pages 12 – 14")
+
+    def test_quote_matches_across_em_dash_spacing_difference(self):
+        api_style = ("International Day of Democracy—with the purpose of "
+                     "promoting democracy—and invited all states.")
+        rendered_style = ("International Day of Democracy — with the "
+                          "purpose of promoting democracy — and invited "
+                          "all states.")
+        self.assertTrue(tf.quote_matches(api_style, rendered_style))
+        self.assertTrue(tf.quote_matches(rendered_style, api_style))
+
+
+class FindSpanDashSpacingTests(unittest.TestCase):
+    """find_span() must tolerate the same em/en-dash spacing difference as
+    normalize_ws() (see NormalizeWsDashSpacingTests) — it matches against
+    RAW page_text, not a normalized copy (see FindSpanTests' offset tests
+    below for why), so the \\s+ used between ordinary words would reject a
+    dash with zero surrounding whitespace on the page unless relaxed."""
+
+    def test_matches_bare_em_dash_on_page_against_spaced_quote(self):
+        page = "Intro.\n\nDemocracy—with participation, works well."
+        span = tf.find_span(page, "Democracy — with participation")
+        self.assertIsNotNone(span)
+        start, end = span
+        self.assertEqual(page[start:end], "Democracy—with participation")
+
+    def test_matches_spaced_em_dash_on_page_against_bare_quote(self):
+        page = "Intro.\n\nDemocracy — with participation, works well."
+        span = tf.find_span(page, "Democracy—with participation")
+        self.assertIsNotNone(span)
+        start, end = span
+        self.assertEqual(page[start:end], "Democracy — with participation")
+
+
 class CountOccurrencesTests(unittest.TestCase):
 
     def test_counts_whitespace_tolerant_matches(self):
@@ -223,11 +284,26 @@ class SpacingAutofixTests(unittest.TestCase):
         quote = "Democracy — with participation, works."
         self.assertIsNone(tf.spacing_autofix(page, quote))
 
-    def test_fixes_missing_space_around_em_dash(self):
+    def test_none_for_missing_space_around_em_dash(self):
+        # normalize_ws() now canonicalises em-dash spacing itself (see
+        # NormalizeWsDashSpacingTests), so this is no longer a MISMATCH at
+        # all — quote_matches() already accepts it, and spacing_autofix()
+        # correctly has nothing to fix, same as an already-exact match.
         page = "Democracy — with participation, works."
         quote = "Democracy —with participation, works."
+        self.assertIsNone(tf.spacing_autofix(page, quote))
+
+    def test_fixes_missing_space_around_plain_hyphen(self):
+        # Unlike em/en dashes, a plain ASCII hyphen isn't in _DASH_CHARS —
+        # normalize_ws() doesn't canonicalise spacing around it (a
+        # legitimately unspaced hyphen, as in "twenty-first", is far more
+        # common than a spaced one used as a makeshift dash), so this case
+        # is still a genuine MISMATCH for spacing_autofix() to fix, unlike
+        # the em-dash case above.
+        page = "Democracy - with participation, works."
+        quote = "Democracy -with participation, works."
         corrected = tf.spacing_autofix(page, quote)
-        self.assertEqual(corrected, "Democracy — with participation, works.")
+        self.assertEqual(corrected, "Democracy - with participation, works.")
 
     def test_none_for_real_content_difference(self):
         page = "The event happened in 2020."
