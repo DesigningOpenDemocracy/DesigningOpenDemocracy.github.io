@@ -3392,6 +3392,36 @@
     ],
     "manual_checked": "2026-08-22"
   },
+  "https://forum.effectivealtruism.org/posts/qfDeCGxBTFhJANAWm/a-new-x-risk-factor-brain-computer-interfaces-1": {
+    "checked": "2026-08-25",
+    "document_sha256": "4806860df4bdd4195a12f3a99a8a4195fa6aef65a4123b1827c677a5be08cb1d",
+    "etag": null,
+    "evidence": [
+      {
+        "context": {
+          "prefix": "nity. 2.5 Higher Scale Risks: BCI as a Risk Factor for Totalitarianism 2.5.1 Risk From Neural Scanning: Ability to Surveil Subjects",
+          "sha256": "87275d57357eaa04554d8f0875ef6ebfc0e940010809fc4851ea9d16d83f34bb",
+          "suffix": "Increases in abilities for surveillance would make it easier to identify and root out dissent, or root out skeptics who might betray the party, and t",
+          "text": "Dissent from within is one of the major weaknesses of totalitarian dictatorships. BCIs offer a powerful tool to mitigate this weakness. Increases in abilities for surveillance would make it easier to identify and root out dissent, or root out skeptics who might betray the party, and thus would make it easier to maintain totalitarian control. While conventional surveillance may allow for a high level of monitoring, and tracking of citizens behaviour and actions, it provides no way for a dictator to peer inside the minds of their subjects. Because of this, the difficulty of identifying the attitudes of careful defectors remains high. BCIs provide an unprecedented threat here. Surveillance through already existing methods may fail to expose some threats to a totalitarian regime, such as party members who carefully hide their skepticism. But BCI based surveillance would have no such flaw."
+        },
+        "id": "d086f7b1052e055293d1047570b2e01e3c5aef071b5ff104849f5807642c85b9",
+        "quote": "Dissent from within is one of the major weaknesses of totalitarian dictatorships. BCIs offer a powerful tool to mitigate this weakness.",
+        "verified": true
+      },
+      {
+        "context": {
+          "prefix": "dictator to peer inside the minds of their subjects. Because of this, the difficulty of identifying the attitudes of careful defectors remains high.",
+          "sha256": "87275d57357eaa04554d8f0875ef6ebfc0e940010809fc4851ea9d16d83f34bb",
+          "suffix": "The level of intrusion here is potentially quite severe. With the advancement of BCIs, it is highly likely that in the near future we will see",
+          "text": "Dissent from within is one of the major weaknesses of totalitarian dictatorships. BCIs offer a powerful tool to mitigate this weakness. Increases in abilities for surveillance would make it easier to identify and root out dissent, or root out skeptics who might betray the party, and thus would make it easier to maintain totalitarian control. While conventional surveillance may allow for a high level of monitoring, and tracking of citizens behaviour and actions, it provides no way for a dictator to peer inside the minds of their subjects. Because of this, the difficulty of identifying the attitudes of careful defectors remains high. BCIs provide an unprecedented threat here. Surveillance through already existing methods may fail to expose some threats to a totalitarian regime, such as party members who carefully hide their skepticism. But BCI based surveillance would have no such flaw."
+        },
+        "id": "901f1a911290b1361af0be031b9479af076865217729b9bec0ff4385c758b97b",
+        "quote": "BCIs provide an unprecedented threat here. Surveillance through already existing methods may fail to expose some threats to a totalitarian regime, such as party members who carefully hide their skepticism. But BCI based surveillance would have no such flaw.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
   "https://fr.wikipedia.org/wiki/AfricTivistes": {
     "checked": "2026-08-23",
     "document_sha256": "afb91c4e572c3db02e223ad17f4a24b9c9ada4e476ee81935a2f8a0b1c1cc414",
@@ -6095,6 +6125,10 @@
     ],
     "last_modified": null
   },
+  "https://www.lesswrong.com/posts/oqvsR2LmHWamyKDcj/large-language-models-will-be-great-for-censorship": {
+    "blocked": "HTTP_429",
+    "blocked_since": "2026-08-25"
+  },
   "https://www.lgi.vic.gov.au/managing-employment-cycle-council-ceo": {
     "checked": "2026-08-23",
     "document_sha256": "ad6a8853fbae5dec560f04cc47268f505a8a459488f7badabd8d9016dcf4092f",
@@ -6348,6 +6382,24 @@
         },
         "id": "386cf456651ac8ec5c84521090f481775dc04a2623290a7dbdc4f61798f30752",
         "quote": "mySociety is a trusted, collaborative and evidence-driven organisation with a long history of leading in civic tech.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://www.nature.com/articles/s41593-023-01304-9": {
+    "checked": "2026-08-25",
+    "document_sha256": "e7311a394e027c65d674463933417b0127d6a3f25cae2b36a2b38a773b472920",
+    "etag": null,
+    "evidence": [
+      {
+        "context": {
+          "prefix": "and practical applications. Currently, however, non-invasive language decoders can only identify stimuli from among a small set of words or phrases.",
+          "sha256": "162a85097074d152c4a054daefda5cb5d9dad4d4ca041e303c3aa05eb2a18ed5",
+          "suffix": "Given novel brain recordings, this decoder generates intelligible word sequences that recover the meaning of perceived speech, imagined speech and ev"
+        },
+        "id": "f3a7a5b0ee35abbd2fbc0496bacfc5c24c28ce162beeed4e601331433439efc8",
+        "quote": "Here we introduce a non-invasive decoder that reconstructs continuous language from cortical semantic representations recorded using functional magnetic resonance imaging (fMRI).",
         "verified": true
       }
     ],
@@ -6657,8 +6709,9 @@
     "last_modified": null
   },
   "https://www.peoplepowered.org/news-content/digital-participation-case-study-taiwan": {
-    "checked": "2026-08-23",
-    "etag": "W/\"36676bceabca2d85f4dc033158553867--gzip\"",
+    "checked": "2026-08-25",
+    "document_sha256": "d86d8e3006b3e0b2a656649eebfc735ea9466ebf67cee3360fb76eb210e17c0e",
+    "etag": "W/\"9442e43e005ff2663e1dfa3b0648fe41--gzip\"",
     "evidence": [
       {
         "context": {
@@ -6669,6 +6722,17 @@
         },
         "id": "8fa827287576f5877acfab08abf40a049d3a085a3267d7b2782ea8ee282613fa",
         "quote": "vTaiwan has always demonstrated how civic communities can innovate in democratic participation by combining open-source platforms, commercial tools, and AI. Currently, the community integrates tools such as Pol.is for large-scale opinion mapping",
+        "verified": true
+      },
+      {
+        "context": {
+          "prefix": "policymaking. Today, vTaiwan is still dedicated to experimenting with new methods of public deliberation. However, unlike in its earlier years,",
+          "sha256": "9312c163b9913f557b6a11bcf507f0927762f65e8ec69481f18aaa9920f9a291",
+          "suffix": "Previously, the Taiwanese government supported vTaiwan as a public-private collaborative project. Despite the reduced governmental support, the commu",
+          "text": "However, unlike in its earlier years, vTaiwan is now fully volunteer-driven, without direct government support, and serves as a civic laboratory for participatory democracy. Previously, the Taiwanese government supported vTaiwan as a public-private collaborative project. Despite the reduced governmental support, the community remains motivated to continue developing and using digital tools to enable citizens to provide input on policy issues."
+        },
+        "id": "49fbe94b0df015b00aea2ce6fa4167dc51bc56c06af9081ea63f77f500c51ef5",
+        "quote": "vTaiwan is now fully volunteer-driven, without direct government support, and serves as a civic laboratory for participatory democracy.",
         "verified": true
       }
     ],
@@ -7365,5 +7429,9 @@
       }
     ],
     "last_modified": null
+  },
+  "https://www.youtube.com/watch?v=2Wv3p9WCs6M": {
+    "blocked": "HTTP_429",
+    "blocked_since": "2026-08-25"
   }
 }
