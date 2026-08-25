@@ -16,6 +16,7 @@ import shutil
 import sys
 import tempfile
 import unittest
+from datetime import date
 from unittest import mock
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "util"))
@@ -942,6 +943,154 @@ class CollectEvidenceSlugFilterTests(unittest.TestCase):
         seen = self._slugs_seen(self._args(slug=["alpha-org", "gamma-org"]))
         self.assertEqual(seen, {"alpha-org", "gamma-org"})
         self.assertNotIn("beta-org", seen)
+
+
+class StalenessGateTests(unittest.TestCase):
+    """The default run re-verifies a quote only once its own verdict has aged
+    past --max-age, instead of issuing a conditional GET for every citation on
+    every run forever.
+
+    Two things this has to get right. (1) Age is per-quote, not per-URL: a
+    URL's `checked` refreshes whenever any quote on it is fetched, but only
+    collected quotes are re-evaluated, and 43% of this corpus's quotes sit on
+    multi-quote URLs. (2) Due dates must be spread — 297 of 367 URLs shared a
+    single `checked` date, so an unjittered window would age the whole corpus
+    out on one day and re-stamp it to one day again."""
+
+    URL = "https://example.org/page"
+    TODAY = date(2026, 8, 26)
+
+    def _cache(self, checked=None, url_checked=None, quote="a quote"):
+        ev = {"id": cf.sha256(cf.normalize_ws(quote)),
+              "quote": quote, "verified": True}
+        if checked:
+            ev["checked"] = checked
+        entry = {"evidence": [ev]}
+        if url_checked:
+            entry["checked"] = url_checked
+        return {self.URL: entry}
+
+    def test_never_checked_evidence_is_always_due(self):
+        self.assertTrue(cf.is_due({}, self.URL, "a quote", 90, self.TODAY))
+
+    def test_never_checked_is_due_even_with_a_huge_window(self):
+        self.assertTrue(cf.is_due({}, self.URL, "a quote", 100000, self.TODAY))
+
+    def test_recently_checked_evidence_is_not_due(self):
+        cache = self._cache(checked="2026-08-20")
+        self.assertFalse(cf.is_due(cache, self.URL, "a quote", 90, self.TODAY))
+
+    def test_evidence_older_than_the_window_is_due(self):
+        # Well past 90d + the largest possible offset (<90d), so this is due
+        # regardless of where the URL's deterministic offset falls.
+        cache = self._cache(checked="2025-01-01")
+        self.assertTrue(cf.is_due(cache, self.URL, "a quote", 90, self.TODAY))
+
+    def test_max_age_zero_checks_everything(self):
+        cache = self._cache(checked=self.TODAY.isoformat())
+        self.assertTrue(cf.is_due(cache, self.URL, "a quote", 0, self.TODAY))
+
+    def test_per_quote_date_wins_over_the_url_level_date(self):
+        # The regression this whole design exists for: a sibling quote's
+        # check refreshed the URL date, but THIS quote was last verified
+        # long ago and must still come due.
+        cache = self._cache(checked="2025-01-01",
+                            url_checked=self.TODAY.isoformat())
+        self.assertTrue(cf.is_due(cache, self.URL, "a quote", 90, self.TODAY))
+
+    def test_url_level_date_is_the_fallback_for_pre_field_entries(self):
+        # Entries written before per-quote stamping have no quote date; the
+        # URL date is the best available and must not read as "never checked".
+        cache = self._cache(checked=None, url_checked="2026-08-20")
+        self.assertEqual(
+            cf.evidence_age_days(cache, self.URL,
+                                 cf.sha256(cf.normalize_ws("a quote")),
+                                 self.TODAY), 6)
+        self.assertFalse(cf.is_due(cache, self.URL, "a quote", 90, self.TODAY))
+
+    def test_unparseable_date_reads_as_never_checked(self):
+        cache = self._cache(checked="not-a-date")
+        self.assertIsNone(cf.evidence_age_days(
+            cache, self.URL, cf.sha256(cf.normalize_ws("a quote")), self.TODAY))
+        self.assertTrue(cf.is_due(cache, self.URL, "a quote", 90, self.TODAY))
+
+    def test_offset_is_deterministic_and_within_the_window(self):
+        for url in ("https://a.example/x", "https://b.example/y",
+                    "https://c.example/z"):
+            first = cf.staleness_offset(url, 90)
+            self.assertEqual(first, cf.staleness_offset(url, 90))
+            self.assertGreaterEqual(first, 0)
+            self.assertLess(first, 90)
+
+    def test_offset_spreads_a_corpus_checked_on_one_day(self):
+        # The thundering-herd guard: URLs sharing an identical checked date
+        # must not all fall due together.
+        offsets = {cf.staleness_offset("https://example.org/page%d" % i, 90)
+                   for i in range(200)}
+        self.assertGreater(len(offsets), 50)
+
+
+class FullScanModeTests(unittest.TestCase):
+    """--full is the discoverable spelling of "no age window" — normalised to
+    max_age=0 at parse time so the gate only ever reads args.max_age. It stays
+    cache-aware (conditional GETs, blocked URLs still skipped); --no-cache is
+    the separate, harder reset."""
+
+    URL = "https://example.org/page"
+    TODAY = date(2026, 8, 26)
+
+    def _fresh_cache(self):
+        return {self.URL: {"evidence": [
+            {"id": cf.sha256(cf.normalize_ws("a quote")), "quote": "a quote",
+             "verified": True, "checked": self.TODAY.isoformat()}]}}
+
+    def test_window_skips_freshly_checked_evidence(self):
+        self.assertFalse(
+            cf.is_due(self._fresh_cache(), self.URL, "a quote", 90, self.TODAY))
+
+    def test_full_scan_checks_even_freshly_checked_evidence(self):
+        # max_age=0 is what --full normalises to.
+        self.assertTrue(
+            cf.is_due(self._fresh_cache(), self.URL, "a quote", 0, self.TODAY))
+
+    def test_negative_window_is_treated_as_full_not_as_skip_everything(self):
+        # Guards against a negative --max-age silently disabling verification.
+        self.assertTrue(
+            cf.is_due(self._fresh_cache(), self.URL, "a quote", -5, self.TODAY))
+
+
+class SpotCheckSampleTests(unittest.TestCase):
+    """When nothing is due, sample a few fresh items anyway — a scheduled run
+    that checks nothing detects nothing, and a page rewritten the day after
+    its last check would otherwise go unnoticed for the rest of the window."""
+
+    def _items(self, n):
+        return [("https://example.org/%d" % i, "quote %d" % i, "label", "event", "p")
+                for i in range(n)]
+
+    def test_sample_is_stable_within_a_day(self):
+        pool = self._items(50)
+        day = date(2026, 8, 26)
+        self.assertEqual(cf.spot_check_sample(pool, 5, day),
+                         cf.spot_check_sample(pool, 5, day))
+
+    def test_sample_rotates_across_days(self):
+        pool = self._items(50)
+        a = cf.spot_check_sample(pool, 5, date(2026, 8, 26))
+        b = cf.spot_check_sample(pool, 5, date(2026, 8, 27))
+        self.assertNotEqual(a, b)
+
+    def test_sample_is_capped_by_pool_size(self):
+        self.assertEqual(len(cf.spot_check_sample(self._items(3), 10)), 3)
+
+    def test_zero_or_negative_want_samples_nothing(self):
+        # The caller passes (spot_check - len(due)), which goes negative once
+        # more than N items are already due — that must not wrap around.
+        self.assertEqual(cf.spot_check_sample(self._items(50), 0), [])
+        self.assertEqual(cf.spot_check_sample(self._items(50), -7), [])
+
+    def test_empty_pool_is_safe(self):
+        self.assertEqual(cf.spot_check_sample([], 5), [])
 
 
 class CollectEvidenceSlugScopeTests(unittest.TestCase):

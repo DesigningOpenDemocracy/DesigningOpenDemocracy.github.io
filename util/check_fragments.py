@@ -85,6 +85,9 @@ Usage:
     python util/check_fragments.py --slug mosaiclab  # single org (events + that page's footnotes)
     python util/check_fragments.py --slug g0v --slug namfrel  # multiple orgs
     python util/check_fragments.py --no-cache        # ignore cache, re-fetch everything
+    python util/check_fragments.py           # ...but only those due for re-verification (see --max-age)
+    python util/check_fragments.py --max-age 30      # tighter window: re-verify anything older than 30d
+    python util/check_fragments.py --full            # full scan: every citation this run (still cache-aware)
     python util/check_fragments.py --unchecked-only  # skip anything already verified — zero requests for it
     python util/check_fragments.py --offline         # check against .pagecache/ copies only (no network)
     python util/check_fragments.py --verbose (-v)    # also print one line per quiet GOOD result
@@ -100,6 +103,7 @@ import hashlib
 import io
 import json
 import os
+import random
 import re
 import sys
 import time
@@ -535,7 +539,14 @@ def check_evidence(url, evidence, cache, use_cache=True, from_pagecache=False):
         # to be clever with a body we don't have.
         cached_result = (find_evidence(entry, ev_key) or {}).get("verified")
         if cached_result is not None:
-            cache[url] = {**entry, "checked": date.today().isoformat()}
+            # Stamp this quote too, not just the URL: a 304 re-establishes
+            # *this* verdict, and evidence_age_days() reads the per-quote
+            # date so a sibling quote's check can't make this one look fresh.
+            disk = cache.get(url, {})
+            q = find_evidence(disk, ev_key)
+            if q is not None:
+                q["checked"] = date.today().isoformat()
+            cache[url] = {**disk, "checked": date.today().isoformat()}
             return ("good" if cached_result else "bad"), True, None, False, None, None
         time.sleep(FETCH_DELAY)
         text, resp, error = _fetch_page_text(url, {"User-Agent": USER_AGENT})
@@ -595,6 +606,7 @@ def check_evidence(url, evidence, cache, use_cache=True, from_pagecache=False):
         evidence_list.append(q)
     q["quote"] = evidence
     q["verified"] = result
+    q["checked"] = date.today().isoformat()
     if result:
         ctx = context_for_quote(text, evidence)
         if ctx:
@@ -786,6 +798,90 @@ def save_to_wayback(url, timeout=30):
     return None
 
 
+DEFAULT_MAX_AGE_DAYS = 90
+DEFAULT_SPOT_CHECK = 10
+
+
+def evidence_age_days(cache, url, ev_key, today=None):
+    """Days since this specific quote was last verified against this URL,
+    or None if it never has been.
+
+    Reads the per-quote `checked` date, falling back to the URL-level one
+    for entries written before that field existed. The distinction is not
+    academic: a URL's `checked` refreshes whenever *any* quote on it is
+    fetched, but only the quotes a run actually collected get re-evaluated.
+    43% of this corpus's quotes (204 of 479) sit on multi-quote URLs, so
+    keying staleness off the URL date alone would mark a quote fresh
+    because a sibling was checked.
+    """
+    entry = cache.get(url, {})
+    q = find_evidence(entry, ev_key) or {}
+    stamp = q.get("checked") or entry.get("checked")
+    if not stamp:
+        return None
+    try:
+        then = date.fromisoformat(stamp)
+    except ValueError:
+        return None
+    return ((today or date.today()) - then).days
+
+
+def staleness_offset(url, max_age_days):
+    """A deterministic 0..max_age-1 day offset, so a corpus checked in one
+    batch doesn't all fall due on the same day.
+
+    Without this the window degenerates: 297 of this repo's 367 URLs share a
+    single `checked` date, so they would age out together, re-check together,
+    and land on one identical date again — the weekly cron alternating
+    between zero requests and the entire corpus rather than a steady trickle.
+    Keyed on the URL's own hash (not random) so a given URL's due date is
+    stable across runs and machines — the same deterministic-jitter trick
+    home.html uses to spread coincident map markers.
+    """
+    if max_age_days <= 0:
+        return 0
+    digest = hashlib.sha256(url.encode("utf-8")).digest()
+    return int.from_bytes(digest[:4], "big") % max_age_days
+
+
+def is_due(cache, url, evidence_text, max_age_days, today=None):
+    """True if this quote should be fetched this run.
+
+    Never-checked evidence is always due, whatever the window. Otherwise it
+    is due once its own age exceeds the window plus its deterministic
+    offset. max_age_days <= 0 means "check everything" (the pre-window
+    behaviour, still available as --max-age 0); a negative window is treated
+    the same rather than being a way to skip everything.
+    """
+    age = evidence_age_days(cache, url, sha256(normalize_ws(evidence_text)), today)
+    if age is None:
+        return True
+    if max_age_days <= 0:
+        return True
+    return age >= max_age_days + staleness_offset(url, max_age_days)
+
+
+def spot_check_sample(not_due, want, today=None):
+    """Pick `want` items from the not-due pile so a run is never a no-op.
+
+    Once the corpus is fully fresh the staleness gate legitimately returns
+    nothing, and a scheduled run that checks nothing detects nothing — a page
+    can be rewritten the day after its last check and go unnoticed for the
+    rest of the window. Sampling a handful anyway keeps a floor under drift
+    detection for a fixed, small request cost.
+
+    Seeded on today's date, so re-running on the same day re-checks the same
+    sample (running twice doesn't hit twice as many servers) while the sample
+    rotates day to day. Sorted by URL first so the seeding — not dict order —
+    is what decides the pick.
+    """
+    if want <= 0 or not not_due:
+        return []
+    pool = sorted(not_due, key=lambda item: (item[0], item[1]))
+    rng = random.Random((today or date.today()).isoformat())
+    return rng.sample(pool, min(want, len(pool)))
+
+
 def collect_evidence(args):
     """Return list of (url, quote, source_label, kind, path) tuples from
     events, footnotes, and shared-link descriptions. 'kind' is 'event',
@@ -848,6 +944,26 @@ def main():
                         help="Check a single org — its events and its own page's "
                              "footnotes; blog shared links are skipped "
                              "(repeatable: pass --slug once per org)")
+    parser.add_argument("--max-age", type=int, default=DEFAULT_MAX_AGE_DAYS,
+                        metavar="DAYS",
+                        help="Re-verify a quote only once its last verdict is "
+                             "this many days old (default: %(default)s). Evidence "
+                             "never checked before is always verified, whatever "
+                             "the window. Pass 0 to check everything every run "
+                             "(the pre-2026-08-26 behaviour).")
+    parser.add_argument("--full", action="store_true",
+                        help="Full scan: verify every citation this run, ignoring "
+                             "the --max-age window. Still cache-aware — conditional "
+                             "GETs, and URLs already confirmed BLOCKED stay skipped. "
+                             "Use --no-cache instead to also distrust stored verdicts "
+                             "and retry blocked URLs.")
+    parser.add_argument("--spot-check", type=int, default=DEFAULT_SPOT_CHECK,
+                        metavar="N",
+                        help="When fewer than N items are due, top the run up "
+                             "to N by sampling already-fresh evidence, so a run "
+                             "is never a no-op (default: %(default)s). The "
+                             "sample is seeded on today's date: stable within a "
+                             "day, rotating across days. 0 disables it.")
     parser.add_argument("--no-cache", action="store_true",
                         help="Ignore the state file")
     parser.add_argument("--no-page-cache", action="store_true",
@@ -918,6 +1034,21 @@ def main():
     args = parser.parse_args()
     if args.offline and args.save_to_wayback:
         parser.error("--offline cannot be combined with --save-to-wayback")
+    if args.full and args.unchecked_only:
+        parser.error("--full and --unchecked-only are opposites: one verifies every "
+                     "citation, the other only never-verified ones.")
+    if args.full and args.max_age != DEFAULT_MAX_AGE_DAYS:
+        parser.error("--full already means 'ignore the age window' — passing "
+                     "--max-age as well is contradictory.")
+    if args.full:
+        # --full is the discoverable spelling of "no window"; everything
+        # downstream reads args.max_age, so normalise here rather than
+        # threading a second flag through the gate.
+        args.max_age = 0
+    if args.unchecked_only and args.max_age != DEFAULT_MAX_AGE_DAYS:
+        parser.error("--unchecked-only and --max-age are two settings of the same "
+                     "dial: --unchecked-only already means 'never re-verify'. "
+                     "Pass one or the other.")
     if args.unchecked_only and args.no_cache:
         parser.error("--unchecked-only cannot be combined with --no-cache")
 
@@ -952,15 +1083,39 @@ def main():
 
     evidence_items = collect_evidence(args)
 
-    skipped_unchecked_only = 0
-    if args.unchecked_only:
-        def _already_checked(item):
-            url, evidence_text = item[0], item[1]
-            ev_key = sha256(normalize_ws(evidence_text))
-            return "verified" in (find_evidence(cache.get(url, {}), ev_key) or {})
+    # Freshness gate. --no-cache means "re-verify everything regardless", so
+    # it bypasses this entirely. Otherwise: evidence that has never been
+    # checked is always due, and evidence already carrying a verdict is
+    # re-fetched only once it ages past --max-age (plus its deterministic
+    # per-URL offset). --unchecked-only is the max-age-of-infinity end of the
+    # same rule, kept as its own flag because "catch up on new citations
+    # only" is a distinct intent from "re-verify on a schedule".
+    skipped_stale_gate = 0
+    spot_checked = 0
+    if not args.no_cache:
         before = len(evidence_items)
-        evidence_items = [item for item in evidence_items if not _already_checked(item)]
-        skipped_unchecked_only = before - len(evidence_items)
+        if args.unchecked_only:
+            # Deliberately keyed on the presence of a verdict, NOT on age.
+            # Evidence written before per-quote stamping carries `verified`
+            # with no date at all, and an age-based predicate would read
+            # every one of those as never-checked and re-fetch the entire
+            # corpus — the exact opposite of what this flag is for.
+            def _already_checked(item):
+                ev_key = sha256(normalize_ws(item[1]))
+                return "verified" in (find_evidence(cache.get(item[0], {}), ev_key) or {})
+            evidence_items = [item for item in evidence_items
+                              if not _already_checked(item)]
+        else:
+            due, not_due = [], []
+            for item in evidence_items:
+                (due if is_due(cache, item[0], item[1], args.max_age)
+                 else not_due).append(item)
+            # Top the run up to --spot-check items so a fully-fresh corpus
+            # still gets sampled rather than checking nothing at all.
+            topup = spot_check_sample(not_due, args.spot_check - len(due))
+            spot_checked = len(topup)
+            evidence_items = due + topup
+        skipped_stale_gate = before - len(evidence_items)
 
     good = 0
     bad = 0
@@ -1081,6 +1236,7 @@ def main():
                             evidence_list.append(q)
                         q["quote"] = corrected
                         q["verified"] = True
+                        q["checked"] = date.today().isoformat()
                         cache[url] = {**entry, "evidence": evidence_list}
                         autofixed += 1
                         print("  AUTOFIXED (spacing only)  " + source_label)
@@ -1143,9 +1299,15 @@ def main():
     if args.save_to_wayback:
         print("Wayback Machine: " + str(wayback_saved) + " saved, " +
               str(wayback_failed) + " failed")
-    if args.unchecked_only:
-        print(str(skipped_unchecked_only) + " already-checked evidence item(s) "
-              "skipped (--unchecked-only)")
+    if spot_checked:
+        print(str(spot_checked) + " of the above were not due — spot-checked "
+              "anyway to keep the run from being a no-op (--spot-check)")
+    if skipped_stale_gate:
+        reason = ("--unchecked-only" if args.unchecked_only
+                  else "verified within the last " + str(args.max_age) +
+                       "d — pass --max-age 0 or --no-cache to force")
+        print(str(skipped_stale_gate) + " already-verified evidence item(s) "
+              "skipped (" + reason + ")")
 
     if args.report:
         with open(args.report, "w", encoding="utf-8") as f:

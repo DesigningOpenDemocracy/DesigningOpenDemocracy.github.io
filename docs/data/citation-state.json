@@ -328,10 +328,11 @@
   },
   "https://budgit.org/about-us/": {
     "checked": "2026-08-25",
-    "document_sha256": "02c109648c3d739de60ca29f89224efc098eb1cb642c9ada5207416d81031739",
+    "document_sha256": "7f5125740016cfbc8f2cd1929b181a487b250f50fc128f61c547583e9251e732",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-25",
         "context": {
           "prefix": "A decade of budget transparency",
           "sha256": "03448bf654101704b988b2f240ede27711b66f06f39513bc7bf6584b50099008",
@@ -343,6 +344,7 @@
         "verified": true
       },
       {
+        "checked": "2026-08-25",
         "context": {
           "prefix": "t attracts 4,000 users in 60 hrs. 2013 BudgIT publishes its first research document",
           "sha256": "bb2c0f9ed954684a5569466fb554f54d0f440b895f01de1055099e59544abc86",
@@ -354,6 +356,7 @@
         "verified": true
       },
       {
+        "checked": "2026-08-25",
         "context": {
           "prefix": "cacy for OpenNASS project 2016 BudgIT raises $3m grant from institutional partners.",
           "sha256": "d318041358c35ce3c119724855a751654ec2831150b294ae8ee1febfad6d192f",
@@ -365,6 +368,7 @@
         "verified": true
       },
       {
+        "checked": "2026-08-25",
         "context": {
           "prefix": "ms in 14 public institutions. Our Mission",
           "sha256": "03ef39ba1166e7aadda10cde7408dd154a04c6e47f2c7ea45c38f3d86bc46a21",
@@ -380,10 +384,11 @@
   },
   "https://budgit.org/contact/": {
     "checked": "2026-08-25",
-    "document_sha256": "9fbf613068c81be560a796b0eb40cf0a76a3b675d2b7d0d8ee8252b71d5c5d3e",
+    "document_sha256": "d3dd1a6b177ad09acecb57388e432dbccddb48f59f6e22d2ebf76a1511125276",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-25",
         "context": {
           "prefix": "E extension, Plot 1856, Road 9, Apo resettlement Abuja (+234) 908 333 1633 [email protected]",
           "sha256": "c78fa9facdec7fda94d4426e3e004589983efd63b3e2c5b91b5df51e19a253b2",
@@ -601,6 +606,7 @@
         "verified": true
       },
       {
+        "checked": "2026-08-25",
         "context": {
           "prefix": "push solutions that connect citizens to the government, foster institutional efficiency, and raise citizens\u2019 awareness of social issues around them.",
           "sha256": "6cc7a740a4429449d277ef3730f1b98b7abdb03cd86fcf99730b4bc4a740ff4f",

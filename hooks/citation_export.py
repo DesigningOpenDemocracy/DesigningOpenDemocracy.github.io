@@ -147,8 +147,17 @@ def _verification_for(entry, ev_key):
 
     if "verified" in q:
         out["status"] = "MATCH" if q["verified"] else "MISMATCH"
-        if entry.get("checked"):
-            out["last-verified"] = entry["checked"]
+        # Prefer this quote's own verification date over the URL-level one.
+        # They are not the same fact: a URL's `checked` refreshes whenever
+        # *any* quote on it is fetched, but only the quotes a run collected
+        # are re-evaluated — so on a multi-quote URL (43% of this corpus's
+        # quotes) the URL date overstates when this specific quote was last
+        # confirmed, and last-verified is a per-evidence field in the spec.
+        # Falls back to the URL date for entries written before
+        # check_fragments.py started stamping quotes individually.
+        stamp = q.get("checked") or entry.get("checked")
+        if stamp:
+            out["last-verified"] = stamp
         out["verified-by"] = BOT_IDENTITY
     elif "manual_verified" in q:
         # A human opened the page in a real browser and saved it; the
