@@ -93,7 +93,7 @@ reorder-frontmatter *args="": _deps
 
 # --- Citation verification (network-dependent, not in CI) ---
 
-# Verify quotes against live pages (--slug repeatable; --offline = stored .pagecache copies, no network)
+# Verify quotes against live pages (--slug repeatable; --offline = stored .pagecache copies, no network; --unchecked-only)
 verify-quotes *args="": _deps
     {{python}} util/check_fragments.py {{args}}
 
