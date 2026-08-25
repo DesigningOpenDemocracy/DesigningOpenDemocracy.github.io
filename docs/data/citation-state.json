@@ -286,7 +286,7 @@
     "last_modified": null
   },
   "https://bonds.coop/about-us/our-story/": {
-    "checked": "2026-08-23",
+    "checked": "2026-08-25",
     "document_sha256": "8de59da11b0b3186f83993ee3f449118503ba392596e8f1064fed5399804f2ed",
     "etag": null,
     "evidence": [
@@ -311,9 +311,20 @@
         "id": "e7ffcaa0c1357d088fb509ced6334a1cc45468affe79436ede9aab8e83434f6d",
         "quote": "888 Co-operative Causeway\u2014Victoria\u2019s first registered co-operative co-working space",
         "verified": true
+      },
+      {
+        "context": {
+          "prefix": "od. Photo by Glynn Jarrett Co-operative Bonds HQ operates from its sister co-op,",
+          "sha256": "5514564e069a65c0b26959bb7794c2145186abf497d1e41a1fef3eeecb904c95",
+          "suffix": ". Located in Melbourne\u2019s vibrant CBD, it offers a unique environment for small enterprises and organisations. The co-operative also hosts regular even",
+          "text": "Co-operative Bonds HQ operates from its sister co-op, 888 Co-operative Causeway \u2014 Victoria\u2019s first registered co-operative co-working space. Located in Melbourne\u2019s vibrant CBD, it offers a unique environment for small enterprises and organisations. The co-operative also hosts regular events at the Kelvin Club, covering a range of topics aimed at building a thriving social economy."
+        },
+        "id": "04298cb6dec86e7adc64f123e9dbea14751633fc7956c8347bdecbcdfe295a17",
+        "quote": "888 Co-operative Causeway\u2014Victoria\u2019s first registered co-operative co-working space",
+        "verified": true
       }
     ],
-    "last_modified": "Sun, 23 Aug 2026 05:45:18 GMT"
+    "last_modified": "Tue, 25 Aug 2026 00:16:46 GMT"
   },
   "https://budgit.org/about-us/": {
     "checked": "2026-08-25",
@@ -890,7 +901,7 @@
     "last_modified": "Sat, 22 Aug 2026 08:59:19 GMT"
   },
   "https://ct-citizens-assembly.org/": {
-    "checked": "2026-08-23",
+    "checked": "2026-08-25",
     "document_sha256": "bfa948eb79148ac215a15f4344f9da08ede61d2b0576c6a0d4b83ae71102ffb3",
     "etag": null,
     "evidence": [
@@ -902,6 +913,17 @@
           "text": "July 11\u201312 2-Day In-Person Session New Haven \u2014 Yale Campus"
         },
         "id": "8e2f15ad60d1306cdd296405371dc95711f00bea8d319b00a589b64b99f15bf6",
+        "quote": "July 11\u201312 2-Day In-Person Session New Haven \u2014 Yale Campus",
+        "verified": true
+      },
+      {
+        "context": {
+          "prefix": "30 In-Person New Haven Sep 19 Virtual Online Sep 26 In-Person New Haven",
+          "sha256": "4f2eda2a89bc13065e7990490aae6459a18abca24ca84a08c93318c4d8904e09",
+          "suffix": "July 25 1-Day In-Person Session New Haven \u2014 Yale Campus August 8 1-Day",
+          "text": "July 11 \u2013 12 2-Day In-Person Session New Haven \u2014 Yale Campus"
+        },
+        "id": "4f2eda2a89bc13065e7990490aae6459a18abca24ca84a08c93318c4d8904e09",
         "quote": "July 11\u201312 2-Day In-Person Session New Haven \u2014 Yale Campus",
         "verified": true
       }
@@ -2115,7 +2137,7 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/Hong_Kong_Democracy_Council": {
-    "checked": "2026-08-23",
+    "checked": "2026-08-25",
     "document_sha256": "0f115eef5212b7cb0f1b94fde6ce70fb0b1664ecf9b38f0be29c66d733deacbb",
     "etag": null,
     "evidence": [
@@ -2126,6 +2148,16 @@
           "suffix": "Along with 52 Hong Kong diaspora groups and advocacy organizations, HKDC urged President Joe Biden to bar Hong Kong Chief Executive John Lee from att"
         },
         "id": "cd52d43d867673771ea3eba9122e8da149e307b24954276e0f5398515a7249ae",
+        "quote": "In January 2021, HKDC assisted in the rescue of five Hong Kong protesters, aged 18\u201326 who fled by boat to Taiwan in July 2020 soon after the national security law was imposed, by sponsoring the first set of humanitarian parole visas to the US.",
+        "verified": true
+      },
+      {
+        "context": {
+          "prefix": "s Congress. HKDC has also pushed for the broad-based Hong Kong People's Freedom and Choice Act and the immigration-focused Hong Kong Safe Harbor Act.",
+          "sha256": "046ba79730d27e5423c99cbd8d7eb286b783337e4e0122009681e6d84a362b4d",
+          "suffix": "Along with 52 Hong Kong diaspora groups and advocacy organizations, HKDC urged President Joe Biden to bar Hong Kong Chief Executive John Lee from att"
+        },
+        "id": "ede7c5e12f7b4967782fb5cec84357f4673408db4110bd3c5f0e2e2ffb69ccf0",
         "quote": "In January 2021, HKDC assisted in the rescue of five Hong Kong protesters, aged 18\u201326 who fled by boat to Taiwan in July 2020 soon after the national security law was imposed, by sponsoring the first set of humanitarian parole visas to the US.",
         "verified": true
       }
@@ -2157,7 +2189,7 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/International_Institute_for_Democracy_and_Electoral_Assistance": {
-    "checked": "2026-08-23",
+    "checked": "2026-08-25",
     "document_sha256": "4d59f056f0197ca454288fe9c1b24f6c7ce84d12275a94c6ec688382afd7587b",
     "etag": null,
     "evidence": [
@@ -2178,6 +2210,16 @@
           "suffix": "and involved 14 founding states: Australia, Barbados, Belgium, Chile, Costa Rica, Denmark, Finland, India, the Netherlands, Norway, Portugal, South A"
         },
         "id": "5f80002617aaf191548e23593a8cd6bb976b825ee2fabd82f464a5b2d8da82c5",
+        "quote": "The Founding Conference of International IDEA took place on 27\u201328 February 1995",
+        "verified": true
+      },
+      {
+        "context": {
+          "prefix": "n, along with 13 other countries took the initiative to found The International Institute for Democracy and Electoral Assistance, International IDEA.",
+          "sha256": "59415fbb9ef6fa231e9cc812d9345ff5db694ace4eea45f514cc4527fadd604c",
+          "suffix": "and involved 14 founding states: Australia, Barbados, Belgium, Chile, Costa Rica, Denmark, Finland, India, the Netherlands, Norway, Portugal, South A"
+        },
+        "id": "ed64334da6b6b26710343d7ea2dfa00200fa9bc85b2c0ef2a288bf12395e67ce",
         "quote": "The Founding Conference of International IDEA took place on 27\u201328 February 1995",
         "verified": true
       }
@@ -5600,7 +5642,7 @@
     "manual_checked": "2026-08-22"
   },
   "https://www.buildaballot.org.au/about": {
-    "checked": "2026-08-23",
+    "checked": "2026-08-25",
     "document_sha256": "8741925b19fa9a3b0fe85029b310a584731707fa2027eb8d750abbd3ce829f4e",
     "etag": null,
     "evidence": [
@@ -5646,9 +5688,20 @@
         "id": "bca897fecd269434703d2f7e9b62d73411bb837f4b3b4ba0d4999695b6ecf137",
         "quote": "Over the next three years, we\u2019re expanding Build a Ballot to state elections in:...New South Wales in 2027",
         "verified": true
+      },
+      {
+        "context": {
+          "prefix": ", or harder to navigate than it should be. We created Build a Ballot to make it clearer. How it began",
+          "sha256": "72bea5c8fe5d71647fe872812a2995cae021eabd635ce8eba84c40c567301112",
+          "suffix": "What began as two separate Instagram accounts sharing climate news quickly evolved into a shared mission: helping everyday Australians engage with ac",
+          "text": "Project Planet was co-founded by Lizzie Hedding and Tegan Lerm after connecting online during the 2019 \u2013 20 bushfires. What began as two separate Instagram accounts sharing climate news quickly evolved into a shared mission: helping everyday Australians engage with action to build a better future."
+        },
+        "id": "47750700a7bebaf2b21d166c8937b8ca119af77c3ee2bb97a7b448817aed2279",
+        "quote": "Project Planet was co-founded by Lizzie Hedding and Tegan Lerm after connecting online during the 2019\u201320 bushfires.",
+        "verified": true
       }
     ],
-    "last_modified": "Tue, 18 Aug 2026 03:52:57 GMT"
+    "last_modified": "Mon, 24 Aug 2026 04:35:19 GMT"
   },
   "https://www.buildaballot.org.au/transparency/candidate-and-party-assessments": {
     "checked": "2026-08-23",
@@ -6777,6 +6830,36 @@
     ],
     "last_modified": null
   },
+  "https://www.ndi.org/declaration-parliamentary-openness": {
+    "checked": "2026-08-25",
+    "document_sha256": "e37448c530390d606a3802446cf4eb4397f6a1d182a632dbc785a10344fc0adb",
+    "etag": null,
+    "evidence": [
+      {
+        "context": {
+          "prefix": "worldwide for stronger collaboration to improve openness, transparency and citizen participation in the legislative process.",
+          "sha256": "b67d63a56d7cd2ec9a0c10150e77b7ac2081e935b4be0f453ca98ac12b6da2c5",
+          "suffix": "in the presence of more than 400 parliamentarians and parliamentary staff. The conference was co-organized by the Inter-Parliamentary Union (IPU) and",
+          "text": "With support from more than 90 civil society parliamentary monitoring organizations (PMOs) from over 60 countries, the Declaration on Parliamentary Openness was launched at the World e-Parliament Conference 2012 in Rome in the presence of more than 400 parliamentarians and parliamentary staff. The conference was co-organized by the Inter-Parliamentary Union (IPU) and the United Nations through the Global Centre for ICT in Parliament and hosted by Italy\u2019s Chamber of Deputies."
+        },
+        "id": "8508869ee9985042849c5e5bcd2898cedfa594475c0dbc08c697504cd4a54567",
+        "quote": "With support from more than 90 civil society parliamentary monitoring organizations (PMOs) from over 60 countries, the Declaration on Parliamentary Openness was launched at the World e-Parliament Conference 2012 in Rome",
+        "verified": true
+      },
+      {
+        "context": {
+          "prefix": "aris, hosted by the French PMO Regards Citoyens, and the Center for European Studies of Sciences Po and M\u00e9dialab Sciences Po.",
+          "sha256": "4116766dc3163f3e35953045ead2b320d6cf98a8cad6b80ffc388fd5a340366e",
+          "suffix": "The declaration\u2019s launch comes as civil society organizations are increasingly seeking opportunities to engage collaboratively with parliaments to re",
+          "text": "The declaration, along with commentary documenting good practices on parliamentary openness, can be found on the website OpeningParliament.org, a joint initiative of NDI, Sunlight and the LALT Network. The declaration\u2019s launch comes as civil society organizations are increasingly seeking opportunities to engage collaboratively with parliaments to respond to increased citizen interest in accessing parliamentary and governmental information. By participating in the Open Government Partnership (OGP), some 55 governments have agreed to develop national action plans, supported by civil society input and monitoring."
+        },
+        "id": "4be3f670b5a173b7bea85bd329e77c6e76f552372487c03b0da648b0e5db2f2a",
+        "quote": "The declaration, along with commentary documenting good practices on parliamentary openness, can be found on the website OpeningParliament.org, a joint initiative of NDI, Sunlight and the LALT Network.",
+        "verified": true
+      }
+    ],
+    "last_modified": "Tue, 25 Aug 2026 15:58:07 GMT"
+  },
   "https://www.ndi.org/sites/default/files/2025-04/No-6-Lessons-from-Namfrel-and-Gong---NDI-Sustaining-the-Fight-for-Democracy-Lessons-from-Citizen-Election-Monitoring-Organizations-Around-the-World.pdf": {
     "checked": "2026-08-23",
     "etag": "\"70742-6326cd5015c1f\"",
@@ -7051,8 +7134,9 @@
     "last_modified": null
   },
   "https://www.peoplepowered.org/events-content/oidp-2026": {
-    "checked": "2026-08-23",
-    "etag": "W/\"6fe3b29231ff548c07f51bbf7d9168fa\"",
+    "checked": "2026-08-25",
+    "document_sha256": "200bb853be09702bda77ca879cc6808b84d20018487a69fb034e063d34e9ff57",
+    "etag": "W/\"b7dceb994aa78aeaad5ba5c020781edb--gzip\"",
     "evidence": [
       {
         "context": {
@@ -7064,16 +7148,33 @@
         "id": "ecde6a2ee95a466cc9941e7950d391dcb400f52e53a0cd759b4a4ed9e0ce40a3",
         "quote": "The International Observatory on Participatory Democracy (OIDP) will return for its 25th annual conference in Krak\u00f3w from 21\u201323 September 2026",
         "verified": true
+      },
+      {
+        "context": {
+          "prefix": "6 11:00 AM 11:00 krakow Poland (map) Google Calendar ICS",
+          "sha256": "e98baa5dbaae3e6f843802d30b74d7dd38e4e9aa48e9b0de4563fa872a304df8",
+          "suffix": ", under the theme \u201cHope and renewal in the face of a global crisis of democracy.\u201d This milestone event invites political leaders, practitioners, acade",
+          "text": "The International Observatory on Participatory Democracy (OIDP) will return for its 25th annual conference in Krak\u00f3w from 21 \u2013 23 September 2026, under the theme \u201cHope and renewal in the face of a global crisis of democracy.\u201d This milestone event invites political leaders, practitioners, academics and civil society from around the world to reflect on how participatory democracy can respond to pressing global challenges like polarization, climate change, migration and declining trust in democratic institutions \u2014 and how local innovation can inform broader democratic futures."
+        },
+        "id": "0a15646e2993af88a85a9eafe015d51f94ff72f903633285587c34a78976e874",
+        "quote": "The International Observatory on Participatory Democracy (OIDP) will return for its 25th annual conference in Krak\u00f3w from 21\u201323 September 2026",
+        "verified": true
       }
     ],
     "last_modified": null
   },
   "https://www.peoplepowered.org/events-content/world-forum-for-democracy-2026": {
-    "checked": "2026-08-23",
-    "etag": "W/\"26131933b5ab805567e159a70e54f54c\"",
+    "checked": "2026-08-25",
+    "document_sha256": "a6be8446eeab07c07de4f8699f0a56f3169c0eabf29fc801d9fc38c7b732b202",
+    "etag": "W/\"f2e4c48c57b9e59e935ad0e6447a8448--gzip\"",
     "evidence": [
       {
         "id": "d39140481410db1394c64a21facfdbd7605cc549c80ab12b17c5a38ad308e582",
+        "quote": "The 14th World Forum for Democracy... will take place in Strasbourg from 2\u20134 November 2026 under the theme \"Democratic Foresight.\"",
+        "verified": true
+      },
+      {
+        "id": "c6c96fb6ac6c9f638e48d735399b74b0e78d25bc66478b6c36425b93a268bd19",
         "quote": "The 14th World Forum for Democracy... will take place in Strasbourg from 2\u20134 November 2026 under the theme \"Democratic Foresight.\"",
         "verified": true
       }
@@ -7447,6 +7548,8 @@
     "last_modified": null
   },
   "https://www.sortitionfoundation.org/ecps_2025": {
+    "blocked": "HTTP_403",
+    "blocked_since": "2026-08-25",
     "checked": "2026-08-23",
     "document_sha256": "e68c639682af8645dfa561c38b58792fdec558d0e0b5255062b2c9424363b318",
     "etag": null,
