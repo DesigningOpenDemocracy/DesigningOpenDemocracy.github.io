@@ -92,6 +92,7 @@ hooks:
   - hooks/citation_export.py
   - hooks/activity_selector.py
   - hooks/org_events.py
+  - hooks/tag_links.py
   - hooks/footnote_fragments.py
   - hooks/calendar_export.py
   - hooks/heartbeat_current.py
@@ -99,6 +100,7 @@ hooks:
 not_in_nav: |
   llms.txt
   bot.md
+  tags.md
 
 extra_javascript:
   - https://unpkg.com/leaflet@1.9.4/dist/leaflet.js

@@ -2239,4 +2239,38 @@
   margin: 0.5em 0 0;
 }
 
+/* Colored pill treatment + click target, matching the .concept-tag chip
+   language used on org/concept pages (same shape, deliberately a
+   different hue — 199 vs concept-tag's 230 — so the two chip families
+   read as related but distinct at a glance) rather than a per-tag-name
+   palette: with hundreds of free-text tags accumulated since 2016,
+   a fixed manual color map (like .activity-method-chip's small closed
+   set) isn't practical here. Both partials/post.html's excerpt-card
+   tags and Material's own stock partials/tags.html (single-post page)
+   render an <a> once its href resolves to something (tag_url filter on
+   the excerpt cards, the tags plugin's own {name,url} resolution on the
+   single-post page — see hooks/tag_links.py and docs/tags.md), so this
+   rule doubles as the "still a plain span with no destination" fallback
+   for a page rendered before tags.md/hooks/tag_links.py existed. */
+.md-content--post .md-tags .md-tag,
+.md-post--excerpt .md-tags .md-tag {
+  display: inline-block;
+  padding: 1px 7px;
+  margin: 1px 2px 1px 0;
+  border-radius: 10px;
+  font-size: 0.72em;
+  font-weight: 600;
+  background: hsl(199, 55%, 14%);
+  color: rgba(255,255,255,0.80);
+  text-decoration: none;
+  white-space: nowrap;
+  border: 1px solid hsl(199, 35%, 24%);
+}
+.md-content--post .md-tags a.md-tag:hover,
+.md-post--excerpt .md-tags a.md-tag:hover {
+  background: hsl(199, 60%, 22%);
+  color: #fff;
+  text-decoration: none;
+}
+
 
