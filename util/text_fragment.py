@@ -615,3 +615,50 @@ def iter_footnote_citations(markdown_source):
         if cite:
             url, title, quote = cite
             yield label, url, title, quote
+
+
+def citation_only_links(body_text):
+    """Extract [(url, title), ...] from a footnote's body text IF it is
+    "citation-only" in the sense hooks/footnote_fragments.py's grey
+    badge and util/check_footnote_quotes.py's gate already use — no
+    verbatim quote. Returns [] when footnote_citation() already matches
+    (it has a quote — not citation-only, use that function's richer
+    result instead) or when the footnote has no markdown link at all.
+
+    A footnote with more than one link (`[First](url1) and
+    [Second](url2)`) yields one (url, title) pair per link, not one
+    combined entry — CSL-JSON items are inherently single-URL (see
+    hooks/citation_export.py's module docstring on why DOD didn't adopt
+    CSL's separate citation/citationItems multi-cite object model for
+    this file), so "cites two sources" is represented as two ordinary
+    bare items, the same shape a single-source citation-only footnote
+    already gets. This only works because there's no quote to pair with
+    either link — footnote_citation()'s own "exactly one link" rule is
+    about a different, harder problem (which URL does *this specific
+    quote* verify against), which doesn't arise here.
+
+    Used by hooks/citation_export.py to give a citation-only footnote
+    one or more bare CSL-JSON items (id/type/URL/title, no evidence
+    array) in citations.json — previously such a footnote had no
+    representation there at all, even though it's a perfectly real
+    citation, just not a machine-verifiable one."""
+    if footnote_citation(body_text) is not None:
+        return []
+    out = []
+    for title, url in MD_LINK_RE.findall(body_text):
+        if url.startswith(("http://", "https://")):
+            out.append((url, title))
+    return out
+
+
+def iter_citation_only_footnotes(markdown_source):
+    """Yield (label, url, title) for every (footnote, link) pair in
+    markdown_source that is citation-only per citation_only_links() —
+    more than one yield per label for a multi-source footnote."""
+    for line in markdown_source.split("\n"):
+        parsed = parse_footnote_def(line)
+        if not parsed:
+            continue
+        label, body = parsed
+        for url, title in citation_only_links(body):
+            yield label, url, title

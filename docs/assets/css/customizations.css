@@ -2217,4 +2217,26 @@
   border-color: var(--pill-color);
 }
 
+/****************************************/
+/* Blog post hashtag list */
+
+/* Scoped to blog contexts only (.md-content--post = a single blog/
+   heartbeat post's own page; .md-post--excerpt = an excerpt card on a
+   blog/heartbeat index or category/archive listing) — concept and org
+   pages also use tags: frontmatter and share Material's generic
+   .md-tag component, so this must not become a global .md-tag rule or
+   it would put "#" in front of concept tags too, which wasn't asked
+   for. .md-post--excerpt's tags nav is DOD's own addition
+   (docs/overrides/partials/post.html); .md-content--post's is
+   Material's own stock partials/tags.html include, inherited
+   unmodified — only the "#" prefix here is new. */
+.md-content--post .md-tags .md-tag::before,
+.md-post--excerpt .md-tags .md-tag::before {
+  content: "#";
+  opacity: 0.7;
+}
+.md-post--excerpt .md-tags {
+  margin: 0.5em 0 0;
+}
+
 

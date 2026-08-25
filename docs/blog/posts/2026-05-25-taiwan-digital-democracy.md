@@ -45,19 +45,19 @@ Gruen's line from his [2017 DOD presentation](../2017-08-21-podcast.md) fits exa
 
 When the state built its own version — **Join** (join.gov.tw), run by the Digital Affairs Ministry — it had what vTaiwan structurally lacked: government legitimacy. Join reached older, less tech-savvy citizens and ranged well beyond digital policy into drunk-driving law, sexual assault legislation, child abuse policy. In effect, vTaiwan proved the model and the state absorbed it. COVID severed the in-person deliberation the four-stage process depended on, and participation fell.
 
-Not everyone reads this as failure. Beth Noveck (GovLab) argues that enabling 200,000 people to shape 26 pieces of legislation is a genuine achievement, and that a process genuinely threatening to traditional political power will face institutional resistance — which is itself an explanation for why official support stayed thin. She places vTaiwan alongside Madrid's Decide platform, which drew nearly half a million sign-ups but turned just one of 28,000 citizen proposals into policy ([Noveck, 2023](https://bethnoveck.medium.com/was-vtaiwan-such-a-big-flop-after-all-d6b365f916dc)).
+Not everyone reads this as failure. Beth Noveck (GovLab) argues that enabling 200,000 people to shape 26 pieces of legislation is a genuine achievement, and that a process genuinely threatening to traditional political power will face institutional resistance — which is itself an explanation for why official support stayed thin. She places vTaiwan alongside Madrid's Decide platform, which drew nearly half a million sign-ups but turned just one of 28,000 citizen proposals into policy.[^noveck-vtaiwan]
 
 The tradeoff is real either way. The government version traded g0v's civic energy and independence for legitimacy and reach. Whether that's a net gain depends on what you think deliberation is for.
 
 ## vTaiwan and the isegoria gap
 
-Terrence Chen's 2024 study of Taiwan's digital-government initiatives provides the sharpest framing. He distinguishes *strong* democracy — citizens as co-governing partners in actual decisions — from *thin* democracy, where citizens are *monitorial* (watchful but not deciding) or treated as *entrepreneurs and consumers*. His verdict: even Taiwan's admired platforms mostly delivered the thin version, because binding decision-making power never left officials' hands ([Chen, 2024](https://journals.sagepub.com/doi/10.1177/20539517241296038)).
+Terrence Chen's 2024 study of Taiwan's digital-government initiatives provides the sharpest framing. He distinguishes *strong* democracy — citizens as co-governing partners in actual decisions — from *thin* democracy, where citizens are *monitorial* (watchful but not deciding) or treated as *entrepreneurs and consumers*. His verdict: even Taiwan's admired platforms mostly delivered the thin version, because binding decision-making power never left officials' hands.[^chen-2024]
 
 This maps directly onto [what DOD was asking in 2017](../2017-08-25.md), and onto Gruen's isegoria frame. vTaiwan created isegoria in the input phase — equality of speech, consensus surfaced, minority views made visible. Then it handed the output back to a system running on the opposite logic: competitive, aristocratic, emotionally amplified. The isegoria evaporated at the threshold between deliberation and decision.
 
 That gap — between surfacing a public will and enacting it — is the design problem vTaiwan solved halfway. Closing the second half requires a binding mandate, which is a political question as much as a design one. No civic-tech tool substitutes for it.
 
-vTaiwan continues as a volunteer laboratory, experimenting with AI-assisted deliberation and informing Taiwan's AI governance processes. The method got institutionalised. The gap it couldn't close remains open — and is the same gap that citizens' juries, participatory budgeting, and every other deliberative process has to reckon with sooner or later.
+vTaiwan continues as a volunteer laboratory[^pp-volunteer], experimenting with AI-assisted deliberation and informing Taiwan's AI governance processes. The method got institutionalised. The gap it couldn't close remains open — and is the same gap that citizens' juries, participatory budgeting, and every other deliberative process has to reckon with sooner or later.
 
 ---
 
@@ -79,6 +79,12 @@ What this post doesn't cover: the AI governance angle (Alignment Assemblies, the
 [^tiger-no-teeth]: "vTaiwan has been criticised for being, as one policymaker described it," a tiger without teeth. Sebastian Cushing Rodriguez, ["Consensus Building in Taiwan, the Poster Child of Digital Democracy"](https://democracy-technologies.org/participation/consensus-building-in-taiwan/), *Democracy Technologies*, 2023.
 
 [^hsu-quote]: "legislators don't take it seriously." Since the government is not mandated to adopt recommendations coming from vTaiwan, vTaiwan co-creator and former Taiwanese legislator Jason Hsu told The Daily Beast, quoted in ["Taiwan Tried to Digitize Democracy. It Was a Huge Flop."](https://au.finance.yahoo.com/news/taiwan-tried-digitize-democracy-huge-084810185.html), Yahoo Finance (republishing the original, paywalled *Daily Beast* report).
+
+[^noveck-vtaiwan]: "vTaiwan enabled over two hundred thousand people to participate in crafting 26 pieces of national legislation" Beth Simone Noveck, ["Was vTaiwan such a big flop, after all?"](https://bethnoveck.medium.com/was-vtaiwan-such-a-big-flop-after-all-d6b365f916dc), *Reboot Democracy / Medium*, 22 November 2023.
+
+[^chen-2024]: Terrence Ting-Yen Chen, ["Strong or thin digital democracy? The democratic implications of Taiwan's open government data policy in the 2010s"](https://journals.sagepub.com/doi/10.1177/20539517241296038), *Big Data & Society*, 2024. <!-- unquoted: bot-blocked: SAGE Journals returns 403 to a direct fetch and resets the connection for a headless-browser request alike, confirmed 2026-08-25 -->
+
+[^pp-volunteer]: "vTaiwan is now fully volunteer-driven, without direct government support, and serves as a civic laboratory for participatory democracy." People Powered, ["vTaiwan's hybrid approach to digital deliberation with AI"](https://www.peoplepowered.org/news-content/digital-participation-case-study-taiwan), 20 October 2025.
 
 ## Sources & further reading
 
