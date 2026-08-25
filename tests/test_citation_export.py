@@ -443,7 +443,11 @@ Some prose with a citation.[^plain]
         self.assertIn("id", cite)
         self.assertIn("convergence", cite)
 
-    def test_multi_source_footnote_is_not_exported(self):
+    def test_multi_source_footnote_exports_one_bare_item_per_link(self):
+        # No quote exists to mispair with either link, so unlike a
+        # multi-source footnote WITH a quote (genuinely ambiguous, still
+        # skipped by footnote_citation()), this isn't ambiguous — it's
+        # just two ordinary citations, both get their own bare item.
         md = self.CITATION_ONLY_MD.replace(
             "[^plain]: [Council Watch](https://www.councilwatch.com.au), "
             "Council Watch website footer. <!-- unquoted: legacy: n/a -->",
@@ -455,9 +459,13 @@ Some prose with a citation.[^plain]
         self._set_archive_cache({})
         ce.on_pre_build(None)
         cites = self._read_citations()
-        urls = {c["URL"] for c in cites}
-        self.assertNotIn("https://a.example.org", urls)
-        self.assertNotIn("https://b.example.org", urls)
+        by_url = {c["URL"]: c for c in cites}
+        self.assertIn("https://a.example.org", by_url)
+        self.assertIn("https://b.example.org", by_url)
+        self.assertEqual(by_url["https://a.example.org"]["title"], "First")
+        self.assertEqual(by_url["https://a.example.org"]["evidence"], [])
+        self.assertEqual(by_url["https://b.example.org"]["title"], "Second")
+        self.assertEqual(by_url["https://b.example.org"]["evidence"], [])
 
     def test_citation_only_and_quoted_citation_of_same_url_merge(self):
         # The fixture org (ORG_MD) already cites this exact URL WITH a

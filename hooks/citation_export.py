@@ -70,13 +70,21 @@ carrying an `unquoted:` justification instead — used to have zero
 representation in this file, even though it's a perfectly real citation
 someone might want in a bibliography, just not a machine-verifiable one.
 It now gets a bare item (id/convergence/type/URL/title) with an empty
-`evidence: []` array, via util/text_fragment.py's
-citation_only_link()/iter_citation_only_footnotes() — same "single
-canonical implementation" pattern as footnote_citation() itself. Only
-footnotes naming exactly one unambiguous URL qualify; a multi-source
-footnote is skipped for the same "don't guess which URL" reason
-footnote_citation() skips it for quote-pairing. An `evidence: []` array
-is the honest signal here — "checked, and there is genuinely no
+`evidence: []` array per link named, via util/text_fragment.py's
+citation_only_links()/iter_citation_only_footnotes() — same "single
+canonical implementation" pattern as footnote_citation() itself. A
+multi-source footnote (`[First](url1) and [Second](url2)`) yields one
+bare item per link rather than being skipped: CSL-JSON items are
+inherently single-URL, so DOD didn't adopt CSL's separate `citation`/
+`citationItems` object model (citeproc processor state tied to one
+document's cursor position, not portable bibliographic data — see
+Appendix E of internal-heartbeat/machine-verifiable-citation.md) to
+represent "this footnote cites two sources" as one combined entry;
+"two ordinary items" already says the same thing without it. This is a
+different, easier problem than footnote_citation()'s own "exactly one
+link" rule, which is about pairing a specific *quote* to a URL — no
+quote exists here, so there's nothing to mispair. An `evidence: []`
+array is the honest signal here — "checked, and there is genuinely no
 machine-verifiable claim recorded for this citation" — not to be
 confused with a missing `evidence` key, which never happens in this
 file's own output.
@@ -211,10 +219,10 @@ def _collect_items():
         for url, title, quote in _extract_footnote_urls(content):
             items.append((url, title, quote, source_title, "footnote"))
 
-        # --- prose footnotes with no quote, but one unambiguous URL ---
-        # See citation_only_link()'s docstring for the eligibility rule
+        # --- prose footnotes with no quote (one item per link named) ---
+        # See citation_only_links()'s docstring for the eligibility rule
         # and the module docstring above for why this gets a bare item
-        # (evidence: []) rather than no representation at all.
+        # per link (evidence: []) rather than no representation at all.
         for url, title in _extract_citation_only_footnote_urls(content):
             items.append((url, title, None, source_title, "footnote-citation-only"))
 

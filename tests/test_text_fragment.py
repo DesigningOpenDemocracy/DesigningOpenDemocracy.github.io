@@ -365,8 +365,8 @@ class FootnoteParsingTests(unittest.TestCase):
         self.assertEqual(quote, "founded in 2015,")
 
 
-class CitationOnlyLinkTests(unittest.TestCase):
-    """citation_only_link()/iter_citation_only_footnotes() — the bare-item
+class CitationOnlyLinksTests(unittest.TestCase):
+    """citation_only_links()/iter_citation_only_footnotes() — the bare-item
     counterpart of footnote_citation()/iter_footnote_citations() for a
     footnote with no verbatim quote. See hooks/citation_export.py's
     module docstring for why this exists: such a footnote used to have
@@ -374,29 +374,39 @@ class CitationOnlyLinkTests(unittest.TestCase):
 
     def test_extracts_url_and_title_when_no_quote(self):
         body = "[About](https://example.org/about), Example Org, accessed 2026."
-        result = tf.citation_only_link(body)
-        self.assertEqual(result, ("https://example.org/about", "About"))
+        result = tf.citation_only_links(body)
+        self.assertEqual(result, [("https://example.org/about", "About")])
 
-    def test_none_when_footnote_citation_already_matches(self):
+    def test_empty_when_footnote_citation_already_matches(self):
         # Has a quote — footnote_citation() owns this case, not this one.
         body = '"founded in 2015," [About](https://example.org/about).'
-        self.assertIsNone(tf.citation_only_link(body))
+        self.assertEqual(tf.citation_only_links(body), [])
 
-    def test_none_with_multiple_links(self):
-        # Same "don't guess which URL" reasoning footnote_citation() uses
-        # for quote-pairing, applied here to URL attribution.
+    def test_multiple_links_yields_one_pair_per_link(self):
+        # No quote exists to mispair, so unlike footnote_citation()'s
+        # "exactly one link" rule (which is about quote-pairing), a
+        # multi-source citation-only footnote isn't ambiguous — it's
+        # just two ordinary citations, each gets represented.
         body = "[First](https://a.example.org) and [Second](https://b.example.org)."
-        self.assertIsNone(tf.citation_only_link(body))
+        result = tf.citation_only_links(body)
+        self.assertEqual(result, [
+            ("https://a.example.org", "First"),
+            ("https://b.example.org", "Second"),
+        ])
 
-    def test_none_with_zero_links(self):
+    def test_empty_with_zero_links(self):
         body = "A citation with no link at all, just prose."
-        self.assertIsNone(tf.citation_only_link(body))
+        self.assertEqual(tf.citation_only_links(body), [])
 
-    def test_none_for_non_http_link(self):
+    def test_non_http_link_excluded(self):
         body = "[ref](mailto:info@example.org)."
-        self.assertIsNone(tf.citation_only_link(body))
+        self.assertEqual(tf.citation_only_links(body), [])
 
-    def test_iter_citation_only_footnotes_yields_only_unquoted_single_link(self):
+    def test_non_http_link_excluded_alongside_a_valid_one(self):
+        body = "[Web](https://example.org/about) and [Email](mailto:info@example.org)."
+        self.assertEqual(tf.citation_only_links(body), [("https://example.org/about", "Web")])
+
+    def test_iter_citation_only_footnotes_yields_unquoted_footnotes_only(self):
         source = "\n".join([
             "Some prose.",
             '[^quoted]: "founded in 2015," [About](https://example.org/about).',
@@ -406,11 +416,10 @@ class CitationOnlyLinkTests(unittest.TestCase):
             "[Second](https://b.example.org). <!-- unquoted: multi-source: two links -->",
         ])
         results = list(tf.iter_citation_only_footnotes(source))
-        self.assertEqual(len(results), 1)
-        label, url, title = results[0]
-        self.assertEqual(label, "plain")
-        self.assertEqual(url, "https://www.councilwatch.com.au")
-        self.assertEqual(title, "Council Watch")
+        self.assertEqual(len(results), 3)
+        self.assertEqual(results[0], ("plain", "https://www.councilwatch.com.au", "Council Watch"))
+        self.assertEqual(results[1], ("multi", "https://a.example.org", "First"))
+        self.assertEqual(results[2], ("multi", "https://b.example.org", "Second"))
 
 
 class HtmlToTextTests(unittest.TestCase):
