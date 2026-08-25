@@ -58,9 +58,11 @@ jobs:
             )
             git commit -m "chore: automated activity probe — $(date -u +%Y-%m-%d)" -m "$SUMMARY"
           fi
-          # The job above can run for a couple of hours (check_fragments.py verifies
-          # every citation live and archives each to the Wayback Machine), so `main`
-          # has often moved by the time we get here — rebase onto its tip before
+          # This job used to run for a couple of hours, when check_fragments.py
+          # verified every citation live on every run. It now re-verifies only
+          # what has aged past its --max-age window (plus a --spot-check
+          # top-up), so a typical week is tens of citations, not ~500. `main`
+          # can still move underneath a long run, so rebase onto its tip before
           # pushing rather than risk a rejected push discarding this run's results.
           git fetch origin main
           git rebase origin/main
