@@ -11,15 +11,16 @@ and `check_concepts.py`.
   claim) was replaced with a sourced April 2026 partnership event instead.
 - [ ] 0 WEAK URLs (was 7) — the last one (Prediki's 2012 launch) now cites a dated
   Wayback snapshot bracketing the launch instead of the bare homepage
-- [ ] 27 footnote citations without machine-verifiable quotes (129/156 have them):
+- [ ] 39 footnote citations without machine-verifiable quotes (170/209 have them, as of
+  2026-08-25):
   - folio.org.au — site unreachable to scripts (5 footnotes)
   - multi-source footnotes — parser deliberately treats these as citation-only until
     split one-citation-per-footnote (loomio, taiwan-post, china, russia, …)
   - books/journal articles with no URL to verify against (hennig, theatre, …)
   - internal DOD references (demos, join-gov-tw)
-- [ ] 4 orphaned concepts — not referenced by any org's `concepts:`:
-  employee-stock-ownership-plans, equity-compensation-plans, utopian-realpolitik,
-  what-is-democracy
+- [ ] 5 orphaned concepts — not referenced by any org's `concepts:`:
+  employee-stock-ownership-plans, equity-compensation-plans, stable-totalitarianism,
+  utopian-realpolitik, what-is-democracy
 
 ## Done
 

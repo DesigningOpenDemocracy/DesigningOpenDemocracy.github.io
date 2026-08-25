@@ -43,6 +43,7 @@ These pages are discovery aids — brief orientations to help you find better so
 | [Consensus Mapping](consensus-mapping.md) | Surfacing areas of public agreement at scale rather than amplifying disagreement — used in Taiwan's vTaiwan process |
 | [Issue-Based Direct Democracy](issue-based-direct-democracy.md) | The Flux Party's mechanism — voting on individual bills with delegable votes and political capital for abstaining |
 | [Radical Transparency](radical-transparency.md) | Governance practice of making all processes and decisions public by default and in real time |
+| [Parliamentary Monitoring](parliamentary-monitoring.md) | Independent, systematic observation of a legislature — turning a technically-public record nobody can search into one citizens can actually use |
 | [Liquid Democracy](liquid-democracy.md) | Voting system combining direct participation with transitive, revocable delegation |
 | [Prediction Markets](prediction-markets.md) | Markets where participants bet on policy outcomes to aggregate dispersed knowledge — applied to democratic deliberation |
 | [Sortition](sortition.md) | Selection of officials or jurors by random lot |

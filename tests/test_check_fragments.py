@@ -127,6 +127,86 @@ class WikipediaTitleTests(unittest.TestCase):
         self.assertIsNone(cf.wikipedia_title("https://en.wikipedia.org/w/index.php"))
 
 
+class CheckEvidenceNoCachePreservesOtherEvidenceTests(unittest.TestCase):
+    """A successful --no-cache fetch must not erase the other quotes already
+    recorded against the same URL.
+
+    check_evidence() empties its local `entry` when use_cache=False, and the
+    success path used to rebuild cache[url]["evidence"] from that empty dict.
+    Since a run only ever re-checks the quotes it collected, every *other*
+    verified quote on that URL was silently dropped from the state file.
+    Confirmed on 2026-08-25: one `--no-cache --slug ...` run dropped 28
+    verified event quotes belonging to orgs outside the slug list. The two
+    BLOCKED_ERRORS paths already merged from disk; the success path now does
+    too. --no-cache means "don't trust the cached verdict for the quote I'm
+    checking now," not "erase what's known about the others."."""
+
+    URL = "https://example.org/shared-source"
+
+    def setUp(self):
+        patcher = mock.patch.object(cf.time, "sleep")
+        patcher.start()
+        self.addCleanup(patcher.stop)
+
+    def _cache_with_two_quotes(self):
+        return {self.URL: {
+            "checked": "2026-01-01",
+            "document_sha256": "stale",
+            "archive_url": "https://web.archive.org/web/2026/example",
+            "url_status": "live",
+            "evidence": [
+                {"id": cf.sha256(cf.normalize_ws("quote one")),
+                 "quote": "quote one", "verified": True},
+                {"id": cf.sha256(cf.normalize_ws("quote two")),
+                 "quote": "quote two", "verified": True},
+            ],
+        }}
+
+    def _recheck_one(self, cache):
+        page = "preamble quote one middle quote two tail"
+        with mock.patch.object(cf, "_fetch_page_text",
+                               return_value=(page, None, None)):
+            return cf.check_evidence(self.URL, "quote one", cache, use_cache=False)
+
+    def test_no_cache_recheck_keeps_the_other_quotes_verdict(self):
+        cache = self._cache_with_two_quotes()
+        result, _, error, _, _, _ = self._recheck_one(cache)
+        self.assertEqual(result, "good")
+        self.assertIsNone(error)
+        kept = {e["id"]: e for e in cache[self.URL]["evidence"]}
+        self.assertEqual(len(kept), 2)
+        other = kept[cf.sha256(cf.normalize_ws("quote two"))]
+        self.assertEqual(other["quote"], "quote two")
+        self.assertTrue(other["verified"])
+
+    def test_no_cache_recheck_still_refreshes_the_checked_quote(self):
+        cache = self._cache_with_two_quotes()
+        self._recheck_one(cache)
+        entry = cache[self.URL]
+        checked = {e["id"]: e for e in entry["evidence"]}[
+            cf.sha256(cf.normalize_ws("quote one"))]
+        self.assertTrue(checked["verified"])
+        self.assertNotEqual(entry["document_sha256"], "stale")
+
+    def test_no_cache_recheck_keeps_archive_and_url_status(self):
+        # These are human/Wayback-owned fields on the URL, not per-quote
+        # verdicts — a re-fetch has no business dropping them either.
+        cache = self._cache_with_two_quotes()
+        self._recheck_one(cache)
+        self.assertEqual(cache[self.URL]["archive_url"],
+                         "https://web.archive.org/web/2026/example")
+        self.assertEqual(cache[self.URL]["url_status"], "live")
+
+    def test_new_quote_on_known_url_is_appended_not_substituted(self):
+        cache = self._cache_with_two_quotes()
+        page = "preamble quote one middle quote two tail plus a brand new quote here"
+        with mock.patch.object(cf, "_fetch_page_text",
+                               return_value=(page, None, None)):
+            cf.check_evidence(self.URL, "a brand new quote", cache, use_cache=False)
+        quotes = {e.get("quote") for e in cache[self.URL]["evidence"]}
+        self.assertEqual(quotes, {"quote one", "quote two", "a brand new quote"})
+
+
 class CheckEvidenceBlockedCacheTests(unittest.TestCase):
     """A URL confirmed BLOCKED (403/429) must be skipped on later runs — no
     network call — until --no-cache forces a recheck, and must NOT stay
@@ -862,6 +942,95 @@ class CollectEvidenceSlugFilterTests(unittest.TestCase):
         seen = self._slugs_seen(self._args(slug=["alpha-org", "gamma-org"]))
         self.assertEqual(seen, {"alpha-org", "gamma-org"})
         self.assertNotIn("beta-org", seen)
+
+
+class CollectEvidenceSlugScopeTests(unittest.TestCase):
+    """--slug must narrow footnotes and shared links too, not just events.
+
+    Regression for a real cost: --slug only ever filtered the events loop,
+    so `check_fragments.py --slug one-org --no-cache` still collected every
+    footnote citation on the entire site and re-fetched all of them — one
+    request to every cited webserver in the landscape to verify three
+    quotes on one page. Asking about one org now means fetching only what
+    that org's page cites."""
+
+    def setUp(self):
+        self.tmpdir = tempfile.mkdtemp()
+        self.addCleanup(shutil.rmtree, self.tmpdir, ignore_errors=True)
+        self._orig_org_dir = cf.ORG_DIR
+        self._orig_docs_dir = cf.DOCS_DIR
+        cf.ORG_DIR = os.path.join(self.tmpdir, "organisations")
+        cf.DOCS_DIR = self.tmpdir
+        os.makedirs(cf.ORG_DIR, exist_ok=True)
+
+        one_event = (
+            "- date: '2020-01-01'\n"
+            "  title: Founded\n"
+            "  url: https://example.org/about\n"
+            "  quote: some quote text\n"
+            "  note: Test event.\n"
+            "  proof_level: high\n"
+        )
+        for slug in ("alpha-org", "beta-org"):
+            path = make_org_file(cf.ORG_DIR, slug, one_event)
+            with open(path, "a", encoding="utf-8") as f:
+                f.write(
+                    '\n[^%s-ref]: "a %s footnote excerpt" '
+                    '[Page](https://example.org/%s), Example.\n' % (slug, slug, slug))
+
+        # A non-org page with its own footnote, plus a blog shared link:
+        # neither belongs to any org, so --slug must exclude both.
+        with open(os.path.join(self.tmpdir, "concept.md"), "w", encoding="utf-8") as f:
+            f.write('---\ntitle: A Concept\n---\n\nBody.\n\n'
+                    '[^c]: "an unrelated concept excerpt" '
+                    '[Page](https://elsewhere.example/c), Elsewhere.\n')
+        posts_dir = os.path.join(self.tmpdir, "blog", "posts")
+        os.makedirs(posts_dir, exist_ok=True)
+        make_blog_post_file(
+            posts_dir, "test-post",
+            "  url: https://example.org/paper\n"
+            "  title: A Paper\n"
+            "  description: The abstract text goes here.\n",
+        )
+
+    def tearDown(self):
+        cf.ORG_DIR = self._orig_org_dir
+        cf.DOCS_DIR = self._orig_docs_dir
+
+    def _items(self, slug):
+        return cf.collect_evidence(
+            argparse.Namespace(slug=slug, events_only=False))
+
+    def test_without_slug_everything_is_collected(self):
+        kinds = {}
+        for _, _, _, kind, _ in self._items(None):
+            kinds[kind] = kinds.get(kind, 0) + 1
+        self.assertEqual(kinds.get("event"), 2)
+        self.assertEqual(kinds.get("footnote"), 3)   # two org pages + the concept
+        self.assertEqual(kinds.get("shared_link"), 1)
+
+    def test_slug_limits_footnotes_to_that_orgs_page(self):
+        urls = {url for url, _, _, kind, _ in self._items(["alpha-org"])
+                if kind == "footnote"}
+        self.assertEqual(urls, {"https://example.org/alpha-org"})
+
+    def test_slug_excludes_non_org_footnotes_and_shared_links(self):
+        items = self._items(["alpha-org"])
+        self.assertFalse([i for i in items if i[3] == "shared_link"])
+        self.assertFalse([i for i in items
+                          if i[0] == "https://elsewhere.example/c"])
+
+    def test_repeated_slug_collects_each_orgs_footnotes(self):
+        urls = {url for url, _, _, kind, _ in self._items(["alpha-org", "beta-org"])
+                if kind == "footnote"}
+        self.assertEqual(urls, {"https://example.org/alpha-org",
+                                "https://example.org/beta-org"})
+
+    def test_unknown_slug_is_skipped_not_crashed(self):
+        # A typo'd slug has no page on disk; collect_evidence must not
+        # raise on the missing file.
+        self.assertFalse([i for i in self._items(["no-such-org"])
+                          if i[3] == "footnote"])
 
 
 class CollectEvidenceSharedLinkTests(unittest.TestCase):

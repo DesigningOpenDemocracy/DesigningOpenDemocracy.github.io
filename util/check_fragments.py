@@ -82,7 +82,7 @@ needing the origin site itself to start cooperating again.
 
 Usage:
     python util/check_fragments.py           # verify all events + footnotes
-    python util/check_fragments.py --slug mosaiclab  # single org
+    python util/check_fragments.py --slug mosaiclab  # single org (events + that page's footnotes)
     python util/check_fragments.py --slug g0v --slug namfrel  # multiple orgs
     python util/check_fragments.py --no-cache        # ignore cache, re-fetch everything
     python util/check_fragments.py --unchecked-only  # skip anything already verified — zero requests for it
@@ -575,9 +575,21 @@ def check_evidence(url, evidence, cache, use_cache=True, from_pagecache=False):
         return None, False, "EMPTY_RESPONSE" if not text else "PAGE_TOO_SHORT", False, None, None
 
     document_hash = sha256(text)
-    evidence_list = list(entry.get("evidence", []))
+    # Merge into whatever is already on disk for this URL, not the local
+    # `entry` — which --no-cache deliberately empties. Same non-regression
+    # guard the two BLOCKED_ERRORS paths above already carry, which the
+    # success path was missing: rebuilding "evidence" from an emptied
+    # `entry` silently drops every *other* quote recorded against this URL,
+    # since one run only ever re-checks the quotes it collected. Confirmed
+    # in practice on 2026-08-25: a --no-cache run narrowed with --slug
+    # dropped 28 verified event quotes belonging to orgs outside the slug
+    # list, on URLs those orgs share with a checked page. --no-cache means
+    # "don't trust the cached verdict for the quote I'm checking now," not
+    # "erase what's known about the others."
+    disk = cache.get(url, {})
+    evidence_list = list(disk.get("evidence", []))
     result = quote_matches(text, evidence)
-    q = find_evidence(entry, ev_key)
+    q = find_evidence(disk, ev_key)
     if q is None:
         q = {"id": ev_key}
         evidence_list.append(q)
@@ -588,7 +600,7 @@ def check_evidence(url, evidence, cache, use_cache=True, from_pagecache=False):
         if ctx:
             q["context"] = ctx
     cache[url] = {
-        **{k: v for k, v in entry.items() if k not in
+        **{k: v for k, v in disk.items() if k not in
            ("etag", "last_modified", "document_sha256", "content_hash",
             "evidence", "checked", "blocked", "blocked_since")},
         "etag": resp.headers.get("ETag") if resp is not None and not is_wikipedia else entry.get("etag"),
@@ -804,14 +816,27 @@ def collect_evidence(args):
                          "event", path))
 
     if not args.events_only:
-        for path in sorted(glob.glob(os.path.join(DOCS_DIR, "**", "*.md"),
-                                     recursive=True)):
+        # --slug narrows footnotes to those orgs' own pages, and drops blog
+        # shared links entirely. Before this, --slug only filtered events:
+        # asking for one org still re-fetched every footnote citation on the
+        # whole site, which on --no-cache means a request to every cited
+        # webserver in the landscape to check three quotes.
+        if args.slug:
+            footnote_paths = [os.path.join(ORG_DIR, slug + ".md")
+                              for slug in args.slug]
+            footnote_paths = [p for p in footnote_paths if os.path.exists(p)]
+        else:
+            footnote_paths = sorted(glob.glob(
+                os.path.join(DOCS_DIR, "**", "*.md"), recursive=True))
+
+        for path in footnote_paths:
             for url, quote, source_label, path in find_footnote_evidence(path):
                 items.append((url, quote, source_label, "footnote", path))
 
-        for path in sorted(glob.glob(os.path.join(DOCS_DIR, "blog", "posts", "*.md"))):
-            for url, quote, source_label, path in find_shared_link_evidence(path):
-                items.append((url, quote, source_label, "shared_link", path))
+        if not args.slug:
+            for path in sorted(glob.glob(os.path.join(DOCS_DIR, "blog", "posts", "*.md"))):
+                for url, quote, source_label, path in find_shared_link_evidence(path):
+                    items.append((url, quote, source_label, "shared_link", path))
 
     return items
 
@@ -820,7 +845,9 @@ def main():
     parser = argparse.ArgumentParser(
         description="Verify event and footnote evidence against live pages")
     parser.add_argument("--slug", type=str, action="append",
-                        help="Check a single org (repeatable: pass --slug once per org)")
+                        help="Check a single org — its events and its own page's "
+                             "footnotes; blog shared links are skipped "
+                             "(repeatable: pass --slug once per org)")
     parser.add_argument("--no-cache", action="store_true",
                         help="Ignore the state file")
     parser.add_argument("--no-page-cache", action="store_true",
