@@ -7,12 +7,12 @@ website: https://www.designingopendemocracy.com
 logo: /assets/dodlogo_transparent.png
 contact:
   channels:
-  - type: telegram
-    url: https://t.me/joinchat/HNk_UBX8A7jBPJPbAZU5Zg
-    label: Telegram
+  - label: Telegram
     note: main point of contact; day-to-day discussion and coordination
-  source: https://www.designingopendemocracy.com
+    type: telegram
+    url: https://t.me/joinchat/HNk_UBX8A7jBPJPbAZU5Zg
   checked: '2026-08-13'
+  source: https://www.designingopendemocracy.com
 summary: An Australian-operated, nonpartisan forum of process engineers, social architects,
   and philosophers exploring how technology, engineering, and social-systems design
   can improve democracy — running since December 2016. This is DOD's own site, so
@@ -49,16 +49,31 @@ events:
   proof_level: high
   url_checked: '2026-08-12'
   notable: false
+- date: '2026-09-15'
+  title: 'Co-hosting "International Day of Democracy: democracy beyond the ballot
+    box" panel with 888 Co-operative Causeway'
+  url: https://events.humanitix.com/international-day-of-democracy
+  quote: To celebrate International Day of Democracy and in the lead up to a Victorian
+    State election, 888 Co-operative Causeway and Designing Open Democracy are pleased
+    to host a Melbourne discussion on democracy beyond the ballot box.
+  note: Panel at The Kelvin Club, Melbourne, on democratic practices beyond voting
+    (citizens' juries, deliberative technologies, co-operative enterprise), with Nicholas
+    Gruen (CEO, Lateral Economics) as first announced speaker.
+  proof_level: high
+  url_checked: '2026-08-25'
+  time: '18:00'
+  end_time: '20:00'
+  notable: true
 activity:
   manual:
     checked: 2026-08-07
     date: 2026-08-07
     note: This entry, and everything else on this site, is evidence of its own activity.
   sitemap:
+    checked: 2026-08-17
     date: 2026-08-17
     note: Page last modified (from sitemap)
     url: https://designingopendemocracy.com/sitemap.xml
-    checked: 2026-08-17
 last_checked: '2026-08-09'
 ---
 
