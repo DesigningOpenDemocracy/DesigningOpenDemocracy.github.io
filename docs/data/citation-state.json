@@ -1246,6 +1246,25 @@
     ],
     "last_modified": null
   },
+  "https://en.wikipedia.org/wiki/2026_Victorian_state_election": {
+    "checked": "2026-08-26",
+    "document_sha256": "c4a47cfde8f12bf291805f1481a9973243df8bb9cbed96c01d7cc6dd34f34211",
+    "etag": null,
+    "evidence": [
+      {
+        "context": {
+          "prefix": "",
+          "sha256": "d120dfd91940c3b5a384795617abfa254b71808715df6a248e80dffd3245d6bd",
+          "suffix": "All 88 seats in the Legislative Assembly and all 40 seats in the Legislative Council will be up for election. The incumbent Labor government, led by",
+          "text": "A state general election is scheduled to be held on 28 November 2026 to elect members of the 61st Parliament of Victoria. All 88 seats in the Legislative Assembly and all 40 seats in the Legislative Council will be up for election. The incumbent Labor government, led by Premier Ben Carroll, will seek to win a fourth consecutive four-year term against the opposition, the Liberal\u2013National Coalition, led by Opposition Leader Jess Wilson. Other parties including One Nation, the Greens and independents will also participate in the election. The election will be administered by the Victorian Electoral Commission (VEC)."
+        },
+        "id": "ef26285f101aed34b9a1633aacd7ae5e8c982e64f354eca031d5a467918d7a33",
+        "quote": "A state general election is scheduled to be held on 28 November 2026 to elect members of the 61st Parliament of Victoria.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
   "https://en.wikipedia.org/wiki/Anne_Twomey_(academic)": {
     "checked": "2026-08-23",
     "document_sha256": "a2a25b71e35c308b12f0df2e97a058315cc86bfacebe2e5e623a669609a457d3",
@@ -2027,6 +2046,19 @@
         "id": "cd52d43d867673771ea3eba9122e8da149e307b24954276e0f5398515a7249ae",
         "quote": "In January 2021, HKDC assisted in the rescue of five Hong Kong protesters, aged 18\u201326 who fled by boat to Taiwan in July 2020 soon after the national security law was imposed, by sponsoring the first set of humanitarian parole visas to the US.",
         "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://en.wikipedia.org/wiki/International_Day_of_Democracy": {
+    "checked": "2026-08-26",
+    "document_sha256": "755891c15c272a450c2c36f8dec320bfc51a178f974ce15d6c1167715114620b",
+    "etag": null,
+    "evidence": [
+      {
+        "id": "1d3cb593811b9d3c9dfb23636865d6b1446a80a56518d729162a7c280b288b1f",
+        "quote": "In 2007 the United Nations General Assembly resolved to observe 15 September as the International Day of Democracy\u2014with the purpose of promoting and upholding the principles of democracy.",
+        "verified": false
       }
     ],
     "last_modified": null
