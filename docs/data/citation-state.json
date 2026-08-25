@@ -3207,6 +3207,10 @@
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-18"
   },
+  "https://events.humanitix.com/international-day-of-democracy": {
+    "blocked": "HTTP_403",
+    "blocked_since": "2026-08-25"
+  },
   "https://events.humanitix.com/radicalxchange-foundation-in-melbourne": {
     "checked": "2026-08-23",
     "document_sha256": "292c569f9372cd7907063b7a74fa890960b1937cc970b42bd64ad823cd61e503",
@@ -5638,9 +5642,9 @@
     "last_modified": "Sat, 22 Aug 2026 09:00:41 GMT"
   },
   "https://www.designingopendemocracy.com/blog/2016/12/19/inaugural-designing-open-democracy-meeting/": {
-    "checked": "2026-08-23",
-    "document_sha256": "bea27835f5d67eee5d0e8a50c517c8e49045d5bb8ce382bce005a967c2277bc5",
-    "etag": "W/\"6a8ad401-4c174\"",
+    "checked": "2026-08-25",
+    "document_sha256": "68b4abdb57e33f12a39aed56fe2236392d8ff84f8eae3aa8df9269ee4cace6c5",
+    "etag": "W/\"6a8d80f9-4c46d\"",
     "evidence": [
       {
         "context": {
@@ -5654,12 +5658,12 @@
         "verified": true
       }
     ],
-    "last_modified": "Sun, 23 Aug 2026 11:05:37 GMT"
+    "last_modified": "Tue, 25 Aug 2026 11:48:09 GMT"
   },
   "https://www.designingopendemocracy.com/blog/2018/02/10/proposed-initial-strategy-of-designing-open-democracy/": {
-    "checked": "2026-08-23",
-    "document_sha256": "37dca48cd1e5db17b6584332fb7cc5f662b2779957527bbe5277d347cdb87f8e",
-    "etag": "W/\"6a8ad401-379b0\"",
+    "checked": "2026-08-25",
+    "document_sha256": "11363642de6bdfc6f31365ab74ff3f8f606cd89aca4bf13985d4d1480bd9c4e8",
+    "etag": "W/\"6a8d80f9-37ca9\"",
     "evidence": [
       {
         "context": {
@@ -5673,7 +5677,7 @@
         "verified": true
       }
     ],
-    "last_modified": "Sun, 23 Aug 2026 11:05:37 GMT"
+    "last_modified": "Tue, 25 Aug 2026 11:48:09 GMT"
   },
   "https://www.designingopendemocracy.com/blog/2018/12/18/designing-open-democracy-state-of-democracy-in-australia-in-2018/": {
     "checked": "2026-08-23",
