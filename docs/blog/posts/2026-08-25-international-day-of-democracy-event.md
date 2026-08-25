@@ -34,32 +34,23 @@ This one's ours: on Tuesday 15 September, DOD is co-hosting a Melbourne panel wi
 
 <!-- more -->
 
-
 - International Day of Democracy is a UN-designated day, and this event is DOD's contribution to it.[^unday]
 - It's timed ahead of Victoria's 28 November state election[^vicelection] to ask what democracy looks like between elections.
-- DOD appears as host rather than observer this time.
+- Light catering included with entry ticket.
 
 ## What it is
 
-["International Day of Democracy: democracy beyond the ballot box"](https://events.humanitix.com/international-day-of-democracy) runs 6–8pm on Tuesday 15 September 2026 at [The Kelvin Club](https://www.888causeway.coop) in Melbourne, the same members' club 888 Causeway's co-working membership already grants access to.[^humanitix] The billing is direct about the timing: it's pitched "to celebrate International Day of Democracy and in the lead up to a Victorian State election."[^humanitix]
+["International Day of Democracy: democracy beyond the ballot box"](https://events.humanitix.com/international-day-of-democracy) runs 6–8pm on Tuesday 15 September 2026 at [The Kelvin Club](https://www.888causeway.coop) in Melbourne.[^humanitix]
 
-The panel covers practices and institutions that can deepen democracy beyond the ballot box: citizens' juries, deliberative technologies, and new iterations of co-operative enterprise.[^humanitix] Nicholas Gruen, CEO of Lateral Economics and a long-time advocate for citizens' juries, is the first confirmed speaker, with further panellists still to be announced.[^humanitix] Light catering is included with registration; drinks and meals are available at bar prices, with networking afterward.[^humanitix]
+To mark International Day of Democracy in the lead up to a Victorian State election, Designing Open Democracy and 888 Co-operative Causeway are hosting a Melbourne panel on emerging democratic practice — citizens' juries in local government, new deliberative technologies, and cooperative ownership models.
+
+Australia has a track record here, from the secret ballot to a long history of unions, clubs and co-ops. This event brings together practitioners, researchers and civic technologists to talk about what's being built now and what it would take to go further.
+
+The panel covers practices and institutions that can deepen democracy beyond the ballot box: citizens' juries, deliberative technologies, and new iterations of co-operative enterprise.[^humanitix]
 
 <p style="text-align:center; margin: 1.5rem 0;">
   <a class="hero-cta-btn hero-cta-primary" href="https://events.humanitix.com/international-day-of-democracy" target="_blank" rel="noopener">RSVP for 15 September →</a>
 </p>
-
-## Why DOD is co-hosting, not just covering
-
-DOD's usual role in this Democracy Landscape is external and arm's-length: tracking what other organisations are doing, not doing it ourselves. This event is the exception: DOD is named directly alongside 888 Co-operative Causeway as co-host.[^humanitix]
-
-The connection isn't new. 888 Causeway chair Antony McMullen has appeared on DOD's own podcast twice before, in [2020](../../blog/posts/2020-02-20-podcast.md) and [2023](../../blog/posts/2023-01-21-podcast.md), talking co-operative economics and economic democracy. Full background on the co-op is in its [Democracy Landscape entry](../../organisations/888-cooperative-causeway.md).
-
-## Why it's on our radar
-
-Citizens' juries, deliberative process design, and co-operative governance are exactly the territory this site exists to track. These are mechanisms for people to have a say in the systems that affect them, beyond the single act of voting every few years. Doing that discussion out loud, in person, in the run-up to a real state election, is a chance to make the case directly rather than just writing about it.
-
-If you're a DOD member (or want to be), [join the coordination thread on Telegram](https://t.me/joinchat/HNk_UBX8A7jBPJPbAZU5Zg). Some of us are planning to be there.
 
 ## Sources & further reading
 
