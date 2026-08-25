@@ -1903,6 +1903,13 @@
   background: rgba(0,200,83,0.12);
   color: #00c853;
 }
+/* Same trust tier as .org-event-verified (a real check happened, it
+   passed) — a dashed border is enough to flag "different provenance"
+   (a human-obtained snapshot, not the automated checker) without
+   introducing a whole new color into the traffic-light system. */
+.org-event-verified--manual {
+  border: 1px dashed rgba(0,200,83,0.5);
+}
 .org-events-timeline li.org-event--notable .org-event-title {
   font-weight: 500;
 }

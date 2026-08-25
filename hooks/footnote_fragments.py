@@ -56,6 +56,24 @@ discussion this was designed in:
   three — "not yet verified" is not the same claim as either "verified"
   or "a warning."
 
+Both the MATCH and MISMATCH badges also say when the verdict was last
+confirmed (the tooltip's "...on {date}" — see docs/data/citation-state.json's
+URL-level 'checked'/'manual_checked' field), and distinguish *how* it was
+confirmed: check_fragments.py's own automated fetch ("✓ Verified"/
+"⚠ Quote drifted"), or a human-obtained snapshot for a page otherwise
+blocked to automated checks ("👤 Verified"/"⚠ Quote drifted (manual)" —
+see util/manual_dump.py). Deliberately not a distinct trust tier/color:
+both sources mean "a real check happened, here's the result," just with
+different provenance — see _quote_verification()'s docstring for the
+same MATCH/MISMATCH precedence rule hooks/citation_export.py's
+_verification_for() uses for the CSL-JSON export, kept in sync with it.
+A bot-blocked citation with no manual snapshot yet gets no badge at
+all, same as any other never-checked citation — see CLAUDE.md's blog
+convention note on why that's a deliberate reader-facing choice, not a
+gap: it's a maintainer signal (manual_check_worklist.py already
+surfaces it as a worklist), not something a general reader needs
+flagged.
+
 These are deliberately separate signals, not one shared score: sourcing
 shape (is there a quote at all) and live accuracy (does the page still
 say it) can move independently — a citation-only footnote is never
@@ -114,14 +132,28 @@ CITATION_ONLY_BADGE = (
 
 MISMATCH_WARNING_BADGE = (
     ' <span class="org-event-warning" '
-    'title="The stored quote no longer matches the live page as of the last check — needs a recheck.">'
+    'title="The stored quote no longer matched the live page as of the last automated check on {date} — needs a recheck.">'
     '⚠ Quote drifted</span>'
+)
+
+MANUAL_MISMATCH_WARNING_BADGE = (
+    ' <span class="org-event-warning" '
+    'title="A human-obtained snapshot of the page did not contain this quote as of {date} — needs a recheck. '
+    'See util/manual_dump.py.">'
+    '⚠ Quote drifted (manual)</span>'
 )
 
 VERIFIED_BADGE = (
     ' <span class="org-event-verified" '
-    'title="The stored quote was confirmed against the live page as of the last check.">'
+    'title="Confirmed against the live page by the automated checker on {date}.">'
     '✓ Verified</span>'
+)
+
+MANUAL_VERIFIED_BADGE = (
+    ' <span class="org-event-verified org-event-verified--manual" '
+    'title="Confirmed against a human-obtained snapshot of the page on {date} — '
+    'the page is otherwise blocked to automated checks. See util/manual_dump.py.">'
+    '👤 Verified</span>'
 )
 
 ROTTED_STATUSES = ("dead", "unfit")
@@ -131,21 +163,32 @@ def _sha256(text):
     return hashlib.sha256(text.encode("utf-8")).hexdigest()
 
 
-def _quote_status(state, url, quote):
-    """The most recently recorded verification verdict (in
-    docs/data/citation-state.json) for this quote: True (MATCH), False
-    (MISMATCH), or None (never checked — distinct from either verdict,
-    not a synonym for "wrong"). Automated 'verified' takes precedence
-    over 'manual_verified' when both are present, same as
-    hooks/citation_export.py's _verification_for() — a fresh automated
-    recheck should win over a stale manual one."""
+def _quote_verification(state, url, quote):
+    """The most recently recorded verification verdict for this quote, as
+    (status, source, date):
+
+    - status — True (MATCH), False (MISMATCH), or None (never checked —
+      distinct from either verdict, not a synonym for "wrong").
+    - source — "auto" (check_fragments.py's own fetch) or "manual" (a
+      human-obtained snapshot via util/manual_dump.py, for a page
+      otherwise blocked to automated checks), or None alongside a None
+      status.
+    - date — the ISO date this verdict was last (re)confirmed (the
+      URL-level 'checked'/'manual_checked' field, not per-evidence — see
+      docs/data/citation-state.json's shape), or None if unavailable.
+
+    Automated 'verified' takes precedence over 'manual_verified' when
+    both are present, same as hooks/citation_export.py's
+    _verification_for() — a fresh automated recheck should win over a
+    stale manual one. Mirrors that function's field-reading exactly;
+    keep the two in sync if citation-state.json's shape ever changes."""
     entry = state.get(url) or {}
     ev = find_evidence(entry, _sha256(normalize_ws(quote))) or {}
     if "verified" in ev:
-        return ev["verified"]
+        return ev["verified"], "auto", entry.get("checked")
     if "manual_verified" in ev:
-        return ev["manual_verified"]
-    return None
+        return ev["manual_verified"], "manual", entry.get("manual_checked")
+    return None, None, None
 
 
 def _first_link_end(block):
@@ -334,11 +377,15 @@ def on_page_content(html, page, config, files):
                     a_start = insert_at
 
             if link_found:
-                status = _quote_status(state, url, quote)
+                status, source, checked_date = _quote_verification(state, url, quote)
+                date_text = checked_date or "an unknown date"
                 if status is False:
-                    block = block[:a_start] + MISMATCH_WARNING_BADGE + block[a_start:]
+                    template = (MANUAL_MISMATCH_WARNING_BADGE if source == "manual"
+                                else MISMATCH_WARNING_BADGE)
+                    block = block[:a_start] + template.format(date=date_text) + block[a_start:]
                 elif status is True:
-                    block = block[:a_start] + VERIFIED_BADGE + block[a_start:]
+                    template = MANUAL_VERIFIED_BADGE if source == "manual" else VERIFIED_BADGE
+                    block = block[:a_start] + template.format(date=date_text) + block[a_start:]
             # COinS span — no per-citation date field exists for footnotes
             # (unlike org events' date:), so cite_date is omitted; Zotero
             # et al. handle a missing rft.date fine, same as any other
