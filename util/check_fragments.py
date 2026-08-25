@@ -798,7 +798,20 @@ def save_to_wayback(url, timeout=30):
     return None
 
 
+# The repo already has a staleness vocabulary — check_event_sourcing.py's
+# STALE_CHECK_DAYS = 365 (a citation older than this is flagged for recheck),
+# and activity_selector.py's 730/365/180 tiers. This window is deliberately
+# derived from that bar rather than being a fourth unexplained number: a
+# verifier that runs at the same period as the deadline it enforces is always
+# marginally late, so it runs at roughly a quarter of it. Raise it toward 365
+# to trade detection latency for traffic; it should not exceed 365, or
+# check_event_sourcing.py would start flagging citations this script is
+# supposed to be keeping fresh.
 DEFAULT_MAX_AGE_DAYS = 90
+
+# A floor on each run, not a cap: if more than this many are due, all of them
+# run. Small enough to be free on a weekly cron, large enough that a
+# fully-fresh corpus is still sampled.
 DEFAULT_SPOT_CHECK = 10
 
 
@@ -827,8 +840,8 @@ def evidence_age_days(cache, url, ev_key, today=None):
 
 
 def staleness_offset(url, max_age_days):
-    """A deterministic 0..max_age-1 day offset, so a corpus checked in one
-    batch doesn't all fall due on the same day.
+    """A deterministic 0..(max_age/2) day offset, subtracted from the window
+    so a corpus checked in one batch doesn't all fall due on the same day.
 
     Without this the window degenerates: 297 of this repo's 367 URLs share a
     single `checked` date, so they would age out together, re-check together,
@@ -837,28 +850,38 @@ def staleness_offset(url, max_age_days):
     Keyed on the URL's own hash (not random) so a given URL's due date is
     stable across runs and machines — the same deterministic-jitter trick
     home.html uses to spread coincident map markers.
+
+    Subtracted, never added: `--max-age` names a *ceiling* on how stale a
+    verdict may get, the same sense HTTP Cache-Control's max-age carries, so
+    no quote may exceed it. Spreading by adding would have made --max-age 90
+    mean "90 to 179 days, averaging 135" — a flag that silently misses its own
+    stated bound. Capping the offset at half the window keeps re-checks inside
+    [max_age/2, max_age] (mean ~0.75x) rather than letting a large offset make
+    everything due almost immediately.
     """
     if max_age_days <= 0:
         return 0
     digest = hashlib.sha256(url.encode("utf-8")).digest()
-    return int.from_bytes(digest[:4], "big") % max_age_days
+    return int.from_bytes(digest[:4], "big") % max(1, max_age_days // 2)
 
 
 def is_due(cache, url, evidence_text, max_age_days, today=None):
     """True if this quote should be fetched this run.
 
     Never-checked evidence is always due, whatever the window. Otherwise it
-    is due once its own age exceeds the window plus its deterministic
-    offset. max_age_days <= 0 means "check everything" (the pre-window
-    behaviour, still available as --max-age 0); a negative window is treated
-    the same rather than being a way to skip everything.
+    is due once its own age reaches the window *minus* its deterministic
+    offset — so max_age is a genuine ceiling, never exceeded, with the offset
+    spreading due dates across the back half of the window. max_age_days <= 0
+    means "check everything" (the pre-window behaviour, still available as
+    --max-age 0 or --full); a negative window is treated the same rather than
+    being a way to skip everything.
     """
     age = evidence_age_days(cache, url, sha256(normalize_ws(evidence_text)), today)
     if age is None:
         return True
     if max_age_days <= 0:
         return True
-    return age >= max_age_days + staleness_offset(url, max_age_days)
+    return age >= max_age_days - staleness_offset(url, max_age_days)
 
 
 def spot_check_sample(not_due, want, today=None):

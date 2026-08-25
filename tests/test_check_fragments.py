@@ -1014,20 +1014,42 @@ class StalenessGateTests(unittest.TestCase):
             cache, self.URL, cf.sha256(cf.normalize_ws("a quote")), self.TODAY))
         self.assertTrue(cf.is_due(cache, self.URL, "a quote", 90, self.TODAY))
 
-    def test_offset_is_deterministic_and_within_the_window(self):
+    def test_offset_is_deterministic_and_at_most_half_the_window(self):
         for url in ("https://a.example/x", "https://b.example/y",
                     "https://c.example/z"):
             first = cf.staleness_offset(url, 90)
             self.assertEqual(first, cf.staleness_offset(url, 90))
             self.assertGreaterEqual(first, 0)
-            self.assertLess(first, 90)
+            self.assertLess(first, 45)
 
     def test_offset_spreads_a_corpus_checked_on_one_day(self):
         # The thundering-herd guard: URLs sharing an identical checked date
-        # must not all fall due together.
+        # must not all fall due together. Capped at half the window, so ~45
+        # distinct due dates is the most 90 days can produce.
         offsets = {cf.staleness_offset("https://example.org/page%d" % i, 90)
-                   for i in range(200)}
-        self.assertGreater(len(offsets), 50)
+                   for i in range(400)}
+        self.assertGreater(len(offsets), 30)
+
+    def test_max_age_is_a_ceiling_not_a_floor(self):
+        # --max-age names the most staleness tolerated, the same sense
+        # HTTP Cache-Control's max-age carries. The offset is subtracted, so
+        # nothing may sit unverified for longer than the stated window;
+        # spreading by *adding* would have made --max-age 90 mean "90 to 179
+        # days, averaging 135" — a flag quietly missing its own bound.
+        cache = self._cache(checked="2026-05-28")   # exactly 90 days before TODAY
+        self.assertTrue(cf.is_due(cache, self.URL, "a quote", 90, self.TODAY))
+
+    def test_nothing_exceeds_the_window_across_many_urls(self):
+        for i in range(500):
+            url = "https://example.org/page%d" % i
+            self.assertLessEqual(90 - cf.staleness_offset(url, 90), 90)
+
+    def test_tiny_windows_do_not_divide_to_a_zero_modulus(self):
+        # max_age of 1 would make the offset modulus 1//2 == 0; guarded so
+        # this raises nothing and simply yields no spread.
+        self.assertEqual(cf.staleness_offset("https://example.org/x", 1), 0)
+        self.assertTrue(cf.is_due(self._cache(checked="2026-08-25"),
+                                  self.URL, "a quote", 1, self.TODAY))
 
 
 class FullScanModeTests(unittest.TestCase):
