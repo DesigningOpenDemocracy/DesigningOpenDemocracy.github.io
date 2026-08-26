@@ -1709,6 +1709,21 @@
   color: #42a5f5;
   background: rgba(66, 165, 245, 0.2);
 }
+/* Multi-day span ("26–30 Aug · 5 days") on the details line. Outlined
+   rather than filled, so it reads as a fact about the event next to the
+   countdown's filled, colour-coded pill rather than competing with it. */
+.calendar-event-range {
+  font-weight: 600;
+  font-size: 0.92em;
+  padding: 0.05em 0.45em;
+  border-radius: 3px;
+  border: 1px solid var(--md-default-fg-color--lighter);
+  color: var(--md-default-fg-color);
+  white-space: nowrap;
+}
+.calendar-event--notable .calendar-event-range {
+  border-color: rgba(255, 179, 0, 0.5);
+}
 /* Countdown pill on each event's details line — text is written by
    docs/overrides/calendar.html's renderCountdowns() from the viewer's own
    clock, so it is empty in the built HTML and hidden until JS fills it. */

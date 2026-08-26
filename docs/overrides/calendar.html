@@ -80,12 +80,15 @@
 <h2 class="calendar-month-heading">{{ month_key }}</h2>
 <ul class="calendar-event-list">
   {%- for e in month_events %}
-  <li class="calendar-event{% if e.notable %} calendar-event--notable{% endif %}" data-country="{{ e.country or '' }}" data-country-label="{{ e.country | country_flag }} {{ e.country | country_name }}" data-date="{{ e.date.isoformat() }}"{% if e.end_date %} data-end-date="{{ e.end_date.isoformat() if e.end_date is not string else e.end_date }}"{% endif %}{% if e.time %} data-time="{{ e.time }}"{% endif %}{% if e.end_time %} data-end-time="{{ e.end_time }}"{% endif %}>
+  {#- A trailing end_date is only a real span when it is actually later:
+      an equal (or bad) end_date is a single-day event, not a range. -#}
+  {%- set multiday = e.end_date and e.end_date is not string and e.end_date > e.date %}
+  <li class="calendar-event{% if multiday %} calendar-event--multiday{% endif %}{% if e.notable %} calendar-event--notable{% endif %}" data-country="{{ e.country or '' }}" data-country-label="{{ e.country | country_flag }} {{ e.country | country_name }}" data-date="{{ e.date.isoformat() }}"{% if e.end_date %} data-end-date="{{ e.end_date.isoformat() if e.end_date is not string else e.end_date }}"{% endif %}{% if e.time %} data-time="{{ e.time }}"{% endif %}{% if e.end_time %} data-end-time="{{ e.end_time }}"{% endif %}>
 
     <div class="calendar-date-block">
       <span class="calendar-date-month">{{ e.date.strftime('%b') }}</span>
       <span class="calendar-date-day">{{ e.date.strftime('%d') }}</span>
-      <span class="calendar-date-weekday">{{ e.date.strftime('%a') }}</span>
+      <span class="calendar-date-weekday">{{ e.date.strftime('%a') }}{% if multiday %}–{{ e.end_date.strftime('%a') }}{% endif %}</span>
       <span class="activity-method-chip method-{{ e.source }} calendar-source-chip--mini">{{ e.source }}</span>
     </div>
 
@@ -113,6 +116,20 @@
         {#- Filled in client-side by renderCountdowns(); empty (and hidden by
             CSS) for anyone without JS, since a countdown baked in at build
             time would be wrong by the time the page is read. -#}
+        {%- if multiday %}
+        {#- The date block can only anchor the first day, so the span is
+            spelled out here — a third of the calendar's events run for more
+            than one day, and end_date rendered nowhere a reader could see
+            it. Year and month are repeated only when the range actually
+            crosses one, which is what keeps the common same-month case
+            down to "26–30 Aug". -#}
+        {%- set span_days = (e.end_date - e.date).days + 1 %}
+        <span class="calendar-event-range">📆
+          {%- if e.date.year != e.end_date.year %} {{ e.date.day }} {{ e.date.strftime('%b') }} {{ e.date.year }} – {{ e.end_date.day }} {{ e.end_date.strftime('%b') }} {{ e.end_date.year }}
+          {%- elif e.date.month != e.end_date.month %} {{ e.date.day }} {{ e.date.strftime('%b') }} – {{ e.end_date.day }} {{ e.end_date.strftime('%b') }}
+          {%- else %} {{ e.date.day }}–{{ e.end_date.day }} {{ e.date.strftime('%b') }}
+          {%- endif %} · {{ span_days }} days</span>
+        {%- endif %}
         <span class="calendar-countdown" aria-live="off"></span>
         {%- if e.time %}
         <span class="calendar-event-time">{{ e.time }}{%- if e.end_time %}&thinsp;–&thinsp;{{ e.end_time }}{% endif %}</span>
