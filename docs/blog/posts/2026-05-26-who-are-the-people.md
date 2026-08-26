@@ -9,10 +9,10 @@ categories:
   - Democratic Theory
 date: 2026-05-26 00:00:00
 tags:
-  - Democracy
-  - Philosophy
-  - History
-  - Accountability
+  - democracy
+  - philosophy
+  - history
+  - accountability
 title: "Who Are 'The People'? A Question Democracy Has Always Had to Answer"
 summary: "Every democratic system makes a claim to govern for 'the people.' The question of who that actually includes has been contested, expanded, and fought over since Athens. That history matters for how we evaluate democratic systems today."
 ---

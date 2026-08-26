@@ -93,6 +93,7 @@ hooks:
   - hooks/activity_selector.py
   - hooks/org_events.py
   - hooks/tag_links.py
+  - hooks/normalize_tags.py
   - hooks/footnote_fragments.py
   - hooks/calendar_export.py
   - hooks/heartbeat_current.py

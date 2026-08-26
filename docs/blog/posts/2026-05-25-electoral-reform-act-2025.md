@@ -10,10 +10,10 @@ categories:
   - Australia
 date: 2026-05-25 00:00:00
 tags:
-  - Electoral Reform
-  - Campaign Finance
-  - Australia
-  - Legislation
+  - electoral-reform
+  - campaign-finance
+  - australia
+  - legislation
 title: "Australia's Electoral Reform Act 2025: What Changed and What's Still Contested"
 summary: "The Electoral Legislation Amendment (Electoral Reform) Act 2025 — royal assent February 2025, commencement deferred to January 2027 — introduces donation caps and lower disclosure thresholds for the first time in federal Australian politics. Here's a summary of the key changes and the ongoing debate."
 ---

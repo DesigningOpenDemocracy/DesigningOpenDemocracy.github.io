@@ -6,11 +6,11 @@ categories:
   - Resources
 date: 2026-05-20 00:00:00
 tags:
-  - Civics
-  - Cooperative
-  - Toolkit
-  - Australia
-  - Democracy
+  - civics
+  - cooperative
+  - toolkit
+  - australia
+  - democracy
 title: "Civics Ecosystem Toolkit v1.2 Released"
 summary: "The Civics Ecosystem Toolkit v1.2 is now public — a practical guide for building participatory civic structures in the Australian context."
 ---
