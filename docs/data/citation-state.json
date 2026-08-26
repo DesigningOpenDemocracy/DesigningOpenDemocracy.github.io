@@ -4842,11 +4842,12 @@
     "last_modified": "Fri, 06 Mar 2026 04:46:29 GMT"
   },
   "https://reclaim.org.au/1-lismore-peoples-assembly-housing/": {
-    "checked": "2026-08-23",
+    "checked": "2026-08-26",
     "document_sha256": "4fd1f1a7ef8ab364b5c8b13e115793e151db378fbad304ab6a7c5d651028bc57",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-26",
         "context": {
           "prefix": "for their house including safety and facility audits of bought back houses to identify their potential for different kinds of tenancy.",
           "sha256": "c32ff80280689420b855efd6209762b535e60b88091d0669f8ceff73e226e820",
@@ -4861,11 +4862,12 @@
     "last_modified": null
   },
   "https://reclaim.org.au/inaugural-lismore-peoples-assembly/": {
-    "checked": "2026-08-23",
+    "checked": "2026-08-26",
     "document_sha256": "b5a2ba91b9e9443a253acc4659c00e59e38792d2f78c6248bdeac7cc3587c1c6",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-26",
         "context": {
           "prefix": "own, those with power, the elites, the rich, or self-interested politicians\u2019 who are being represented. Reinventing democracy",
           "sha256": "d6f51366e8b60fa798347718bf5438e92ff008ae6ff9f84b2d0205ec1d01e77e",
@@ -4877,6 +4879,7 @@
         "verified": true
       },
       {
+        "checked": "2026-08-26",
         "context": {
           "prefix": "Reclaim our Recovery (ROR) say they have been pushing for robust, democratic, community involvement in the flood recovery since the start of 2022.",
           "sha256": "373bb0e4d16734a171c543938e80826235ca1a271cdef7b41f66582a057d6190",
@@ -4891,11 +4894,12 @@
     "last_modified": null
   },
   "https://reclaim.org.au/lismore-peoples-assembly-on-housing/": {
-    "checked": "2026-08-23",
+    "checked": "2026-08-26",
     "document_sha256": "2af8bbb725d1abf3277ab8ff59218111d8bcc3f9bcc6ad42e0b5df159a982b2c",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-26",
         "context": {
           "prefix": "project of grassroots, participatory democracy with the first of two public assemblies on housing. What happened:",
           "sha256": "962246259b6a487def673b4ca2f1ccccb76cdf98ebf9ec8ca07b6e77a8f1ff9e",
@@ -4910,11 +4914,12 @@
     "last_modified": null
   },
   "https://reclaim.org.au/the-year-ahead-for-the-lismore-peoples-assembly/": {
-    "checked": "2026-08-23",
+    "checked": "2026-08-26",
     "document_sha256": "1e8257f69ee04eadf902cf0f7bdd03e0f5d9d005f1e3e0e2acc3b4f45ed5c6d1",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-26",
         "context": {
           "prefix": "ended by 17 humans and 2 Canines (with plenty of Turkeys and ducks out in the yard!) we came up with a few priority projects we are keen on:",
           "sha256": "20e6e6902c0a0287a487e72910cf53a6f385b53c10413bfe63c121e7dee87b21",
