@@ -83,6 +83,13 @@
     "source": "https://en.wikipedia.org/wiki/File:Bersih_Coalition_Logo.png",
     "title": "Bersih"
   },
+  "bhive": {
+    "license": "Fair use",
+    "note": "org's official Facebook profile picture (bHive.coop's own site logo was only available at low-res 150x50); fetched via Facebook Graph API at 650x650",
+    "path": "bhive.png",
+    "source": "https://www.facebook.com/bhive.coop/",
+    "title": "bHive"
+  },
   "budgit": {
     "license": "Fair use",
     "note": "site asset, auto-detected apple-touch-icon",
