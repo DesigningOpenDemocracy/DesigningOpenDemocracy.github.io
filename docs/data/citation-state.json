@@ -114,7 +114,7 @@
         "verified": true
       }
     ],
-    "last_modified": "Sun, 23 Aug 2026 12:14:26 GMT"
+    "last_modified": null
   },
   "https://astanatimes.com/2026/07/kazakhstans-new-constitution-takes-effect-heres-what-changes/": {
     "checked": "2026-08-26",
@@ -137,8 +137,8 @@
   },
   "https://au.finance.yahoo.com/news/taiwan-tried-digitize-democracy-huge-084810185.html": {
     "checked": "2026-08-26",
-    "document_sha256": "a79494892ad7948230c1d8f613e0ff31aae595a4da26a292da40886a730eba12",
-    "etag": "\"rba536\"",
+    "document_sha256": "40c2fb8ab2bd30751ae4027bf9be5036ab0538ac77d5839783b5c527ebb1f73b",
+    "etag": "\"3cfr1y\"",
     "evidence": [
       {
         "context": {
@@ -189,7 +189,7 @@
         "verified": true
       }
     ],
-    "last_modified": "Wed, 26 Aug 2026 11:12:16 GMT"
+    "last_modified": "Wed, 26 Aug 2026 11:41:39 GMT"
   },
   "https://australiainstitute.org.au/events/dr-hugh-saddler-memorial-lecture/": {
     "checked": "2026-08-20",
@@ -370,7 +370,7 @@
         "verified": true
       }
     ],
-    "last_modified": "Wed, 26 Aug 2026 22:13:07 GMT"
+    "last_modified": "Wed, 26 Aug 2026 11:13:07 GMT"
   },
   "https://canberra-alliance.org.au/event/community-assembly-following-up-our-mp-asks-for-2026/": {
     "checked": "2026-08-26",
@@ -389,7 +389,7 @@
         "verified": true
       }
     ],
-    "last_modified": "Wed, 26 Aug 2026 22:13:09 GMT"
+    "last_modified": "Wed, 26 Aug 2026 11:13:09 GMT"
   },
   "https://canberra-alliance.org.au/event/expanding-the-act-assembly-is-it-time/": {
     "checked": "2026-08-26",
@@ -408,7 +408,7 @@
         "verified": true
       }
     ],
-    "last_modified": "Wed, 26 Aug 2026 22:13:06 GMT"
+    "last_modified": "Wed, 26 Aug 2026 11:13:06 GMT"
   },
   "https://chinademocrats.org/en": {
     "checked": "2026-08-26",
@@ -688,7 +688,7 @@
   },
   "https://connecticut.news12.com/connecticut-lottery-selects-members-for-property-tax-assembly": {
     "checked": "2026-08-26",
-    "document_sha256": "811688e0669b775d606c759ebe0f3e9286ce4c4674582c3863185aa32971a900",
+    "document_sha256": "f3ff427a9caaed9c6374ac9edc10e89f5a4c9dcaf726a9167f958012689b7399",
     "etag": null,
     "evidence": [
       {
@@ -718,7 +718,7 @@
   },
   "https://constitutionnet.org/news/hungarys-parliament-passes-constitutional-amendment-limiting-prime-ministerial-terms": {
     "checked": "2026-08-26",
-    "document_sha256": "a282962bd32f76356ab0ac67c0cf17f7fb7f17fe795d374132b0b6763799fa2d",
+    "document_sha256": "18d4e3e2e1d3e37dc2815bd1e7f0df85d0ad204bdfb34495c1d3f805441bd7ed",
     "etag": null,
     "evidence": [
       {
@@ -866,7 +866,7 @@
         "verified": true
       }
     ],
-    "last_modified": "Sun, 23 Aug 2026 12:27:08 GMT"
+    "last_modified": "Wed, 26 Aug 2026 11:25:18 GMT"
   },
   "https://de.wikipedia.org/wiki/Jede_Stimme_GILT": {
     "checked": "2026-08-26",
@@ -3357,8 +3357,8 @@
   },
   "https://finance.yahoo.com/news/blockchain-voting-platform-horizon-state-140552054.html": {
     "checked": "2026-08-26",
-    "document_sha256": "9bc112a57d5cdaa8ceb337a111944a7c88cca20e02785dfb3cd864daeb79b404",
-    "etag": "\"x5nqj7\"",
+    "document_sha256": "0d95abd1c4da713ac574dccaa269df31dc1e3a3a8ed3671c0b949bd3b53d58ba",
+    "etag": "\"1lh8h1b\"",
     "evidence": [
       {
         "context": {
@@ -3439,6 +3439,8 @@
     "manual_checked": "2026-08-22"
   },
   "https://forum.effectivealtruism.org/posts/qfDeCGxBTFhJANAWm/a-new-x-risk-factor-brain-computer-interfaces-1": {
+    "blocked": "HTTP_403",
+    "blocked_since": "2026-08-26",
     "checked": "2026-08-26",
     "document_sha256": "f5a4da9c30d1f2b58b24ad73724fdd4796856bbdda63e619404a7077055a36a6",
     "etag": null,
@@ -3509,7 +3511,7 @@
   "https://github.com/consuldemocracy/consuldemocracy": {
     "checked": "2026-08-26",
     "document_sha256": "d45a901baaa0e2d7c4274723bb8d32ef15b0aaba82798d0b2a87188a05fbd979",
-    "etag": "W/\"1dd3fda270cba257f13db2a234b366d8\"",
+    "etag": "W/\"9df114b0066d74a8190d962fd4e13aeb\"",
     "evidence": [
       {
         "context": {
@@ -3832,7 +3834,7 @@
   },
   "https://icodrops.com/horizon-state/": {
     "checked": "2026-08-26",
-    "document_sha256": "8112218c01932d6d48dc0443024d10bc4ab08e41e11c931857da224da9ca6fca",
+    "document_sha256": "54da53a5f9609f20cc452a2ad9eefdc2ec47304675ad0e78e1b1e50f0aec1df4",
     "etag": null,
     "evidence": [
       {
@@ -3891,7 +3893,7 @@
   },
   "https://liqd.net/en/projects/meinberlin/": {
     "checked": "2026-08-26",
-    "document_sha256": "9732b81a6d38a8dd5882da911d48d00a27c2ebc8dabace8e8800f7424ec875ff",
+    "document_sha256": "5d3233ee8e4a3136a388b6b8561db16a247f07ebbe157cc5a58ef28b2e6405b9",
     "etag": null,
     "evidence": [
       {
@@ -4054,7 +4056,7 @@
   "https://mosaiclab.com.au/case-study-1-participatory-budgeting": {
     "checked": "2026-08-26",
     "document_sha256": "727db2ce2c974962c6396baf12e48bb88c03b81f3ecbe7ba12290fd9c8a7f308",
-    "etag": "W/\"d370490a774e03e6642bf6a6e1490f26--gzip\"",
+    "etag": "W/\"d370490a774e03e6642bf6a6e1490f26\"",
     "evidence": [
       {
         "context": {
@@ -4092,7 +4094,7 @@
   "https://mosaiclab.com.au/news-all-posts/2016/8/16/meet-a-co-founder-kimbra-white": {
     "checked": "2026-08-26",
     "document_sha256": "02e3172ad32654e67fdb5e776f06d7882b787304fc240d96f290754785115160",
-    "etag": "W/\"0f55aa2bc4c2f12de63c9273b67c57c3--gzip\"",
+    "etag": "W/\"0f55aa2bc4c2f12de63c9273b67c57c3\"",
     "evidence": [
       {
         "context": {
@@ -4253,7 +4255,7 @@
         "verified": true
       }
     ],
-    "last_modified": null
+    "last_modified": "Wed, 26 Aug 2026 11:20:18 GMT"
   },
   "https://oaf.org.au/2009/12/21/launching-our-new-website-planning-alerts/": {
     "checked": "2026-08-26",
@@ -4291,7 +4293,7 @@
         "verified": true
       }
     ],
-    "last_modified": null
+    "last_modified": "Wed, 26 Aug 2026 11:49:38 GMT"
   },
   "https://opennorth.ca/resources/citizen-budget/": {
     "checked": "2026-08-26",
@@ -4630,7 +4632,7 @@
         "verified": true
       }
     ],
-    "last_modified": "Wed, 26 Aug 2026 11:22:12 GMT"
+    "last_modified": "Wed, 26 Aug 2026 11:51:28 GMT"
   },
   "https://theconversation.com/as-the-latrobe-valley-moves-away-from-coal-jobs-could-a-green-workers-cooperative-offer-a-solution-245850": {
     "checked": "2026-08-26",
@@ -4720,7 +4722,7 @@
   },
   "https://topics.amcham.com.tw/2017/02/make-full-use-of-join-gov-tw/": {
     "checked": "2026-08-26",
-    "document_sha256": "6ce31c5755b2cc7e3270362da065c164976a646a39c236d2bbbe557d1685603c",
+    "document_sha256": "5b9ba4ae5bfa4e34d4d9de7f72417b929f251f29cd22ab99bcd554b9be9e29a4",
     "etag": null,
     "evidence": [
       {
@@ -4843,7 +4845,7 @@
     "last_modified": null
   },
   "https://web.archive.org/web/20250531195416/https://mckinnon.co/": {
-    "checked": "2026-08-23",
+    "checked": "2026-08-26",
     "document_sha256": "a19f9ea7137ff638c4624607b458e6e89fd599b80d065a92f1ffe884e8a8555b",
     "etag": null,
     "evidence": [
@@ -4920,8 +4922,8 @@
   },
   "https://www.abc.net.au/news/2020-02-18/city-of-casey-sacked-administrators-could-run-council-until-2024/11976104": {
     "checked": "2026-08-26",
-    "document_sha256": "711e1274db6d7988aa40940fc946dfdf6613dc9893212f759376ffb6457e2eb1",
-    "etag": "\"15o4wit1gcy7ul1\"",
+    "document_sha256": "a3c9ad011d1aaf4228f3dfda66745d8d4eb45bfe4859dc06dfbe13f761b8424d",
+    "etag": "\"vxghbl7pv47uje\"",
     "evidence": [
       {
         "context": {
@@ -4939,8 +4941,8 @@
   },
   "https://www.abc.net.au/news/2025-09-03/operation-sandon-casey-council-ibac-charges/105730716": {
     "checked": "2026-08-26",
-    "document_sha256": "ef194b742a78cbec13f8f718984ddb947cdee0e834c561a800f7a5c14ddac67b",
-    "etag": "\"w55jphka017b4o\"",
+    "document_sha256": "b8a31129cd77da7d2912af10b356122f92771448723857ecb1b3161865ce4682",
+    "etag": "\"5tkcovbwwu7b10\"",
     "evidence": [
       {
         "context": {
@@ -5159,7 +5161,7 @@
   "https://www.aljazeera.com/news/2026/7/17/israel-headed-for-october-election-as-parliament-dissolved": {
     "checked": "2026-08-26",
     "document_sha256": "1850fba0b5020bed62e56ee637592c2b3f01fc5af5049ff915193a65e9a24818",
-    "etag": "W/\"2e1ce-l9097LUGb7gkTSqXYS/co2IVSQE\"",
+    "etag": "W/\"2e1ce-P0HoPPXjj6Jc2f0fJgH/nOEZuws\"",
     "evidence": [
       {
         "context": {
@@ -5424,7 +5426,7 @@
   "https://www.code4japan.org/aboutus": {
     "checked": "2026-08-26",
     "document_sha256": "76bc2e9826958dbba007a79591879f3434820300b2550781fb4a557ca7cae82b",
-    "etag": "W/\"5ccb774b61a714814f9e5475f316ead9\"",
+    "etag": "W/\"c1115e3bd7c8a23718539d0adc9c28d8\"",
     "evidence": [
       {
         "context": {
@@ -5691,7 +5693,7 @@
   "https://www.designingopendemocracy.com/blog/2016/12/19/inaugural-designing-open-democracy-meeting/": {
     "checked": "2026-08-26",
     "document_sha256": "4d10870f9dbff0ce1a01dc75c80077ae59fdb26e5b7354467c53034ab8047bd2",
-    "etag": "W/\"6a8ec98e-4cc58\"",
+    "etag": "W/\"6a8ecf1a-4cc58\"",
     "evidence": [
       {
         "context": {
@@ -5705,12 +5707,12 @@
         "verified": true
       }
     ],
-    "last_modified": "Wed, 26 Aug 2026 11:10:06 GMT"
+    "last_modified": "Wed, 26 Aug 2026 11:33:46 GMT"
   },
   "https://www.designingopendemocracy.com/blog/2018/02/10/proposed-initial-strategy-of-designing-open-democracy/": {
     "checked": "2026-08-26",
     "document_sha256": "0e1142f1bd39ad036404240759537fb32418c417eb0275d67126d4e20fdf9a4d",
-    "etag": "W/\"6a8ec98e-3856b\"",
+    "etag": "W/\"6a8ecf1a-3856b\"",
     "evidence": [
       {
         "context": {
@@ -5724,12 +5726,12 @@
         "verified": true
       }
     ],
-    "last_modified": "Wed, 26 Aug 2026 11:10:06 GMT"
+    "last_modified": "Wed, 26 Aug 2026 11:33:46 GMT"
   },
   "https://www.designingopendemocracy.com/blog/2018/12/18/designing-open-democracy-state-of-democracy-in-australia-in-2018/": {
     "checked": "2026-08-26",
     "document_sha256": "798deb96a08bde5f3f272bdce43fd31d6e64820681ac93c3e636c19f4b7f3edc",
-    "etag": "W/\"6a8ec98e-3d9f6\"",
+    "etag": "W/\"6a8ecf1a-3d9f6\"",
     "evidence": [
       {
         "context": {
@@ -5743,12 +5745,12 @@
         "verified": true
       }
     ],
-    "last_modified": "Wed, 26 Aug 2026 11:10:06 GMT"
+    "last_modified": "Wed, 26 Aug 2026 11:33:46 GMT"
   },
   "https://www.designingopendemocracy.com/blog/2021/08/07/podcast-catching-up-with-adam-jacoby-founder-of-mivote/": {
     "checked": "2026-08-26",
     "document_sha256": "d80e5db1f872683a0fd182c3b2b3d0a9d83e788545b3efc0bf7bdf7cfeb75c4d",
-    "etag": "W/\"6a8ec98e-3feba\"",
+    "etag": "W/\"6a8ecf1a-3feba\"",
     "evidence": [
       {
         "context": {
@@ -5762,7 +5764,7 @@
         "verified": true
       }
     ],
-    "last_modified": "Wed, 26 Aug 2026 11:10:06 GMT"
+    "last_modified": "Wed, 26 Aug 2026 11:33:46 GMT"
   },
   "https://www.devex.com/news/q-a-tim-lo-surdo-on-how-to-bring-a-voice-to-australia-s-communities-of-color-90674": {
     "blocked": "HTTP_403",
@@ -6394,7 +6396,7 @@
   },
   "https://www.miragenews.com/lviv-assembly-yields-19-water-protection-1710540/": {
     "checked": "2026-08-26",
-    "document_sha256": "6c6355c3f7819a1498e58de5a580a9c6a369f52e4682065f249e45815eb0d98d",
+    "document_sha256": "f8b95368dfd4babb7f800cb650a87e638be05b601fc3c94eb701caf8b434e9a1",
     "etag": null,
     "evidence": [
       {
@@ -6409,7 +6411,7 @@
         "verified": true
       }
     ],
-    "last_modified": "Wed, 26 Aug 2026 11:25:10 GMT"
+    "last_modified": "Wed, 26 Aug 2026 11:54:05 GMT"
   },
   "https://www.mmzy.org.cn/mmgk/jianjie/11796.aspx": {
     "checked": "2026-08-26",
@@ -6623,12 +6625,12 @@
         "verified": true
       }
     ],
-    "last_modified": "Sun, 23 Aug 2026 12:29:27 GMT"
+    "last_modified": null
   },
   "https://www.opendemocracy.net/en/can-europe-make-it/agora-votingnvotes/": {
     "checked": "2026-08-26",
     "document_sha256": "0749c8911e9a28c9532d9ae250ea934baf6a8e177deae8bfbd57051117309af5",
-    "etag": "W/\"246b5-grZp2idWC2vffc0Ym9UlgG5/HgI\"",
+    "etag": "W/\"246b5-y1JI95xNpefnLfAxLcdpuRqnjm0\"",
     "evidence": [
       {
         "context": {
@@ -6832,12 +6834,12 @@
         "verified": true
       }
     ],
-    "last_modified": "Wed, 26 Aug 2026 11:22:25 GMT"
+    "last_modified": "Wed, 26 Aug 2026 11:51:41 GMT"
   },
   "https://www.prediki.com/meta/en/Legal-information": {
     "checked": "2026-08-26",
     "document_sha256": "d16a90e0a3ab9c013c82b610ce69f4c46ae95405dabcf8fbc9eaf952b7cbb2c9",
-    "etag": "W/\"a1d79b9097713b975e6eb4ea488d2832\"",
+    "etag": "W/\"761aa520afa72b1a24d81bd324d9fefc\"",
     "evidence": [
       {
         "context": {
@@ -6856,7 +6858,7 @@
   "https://www.prediki.com/meta/en/Prediction-Markets-A-Better-Alternative/": {
     "checked": "2026-08-26",
     "document_sha256": "f42adba46469f98ccdf3ffa97a92fa7f4378245612fecd52ef9802b74365c2df",
-    "etag": "W/\"a40e961ebd269754ef1935638cb7a177\"",
+    "etag": "W/\"10de8187ff36cdedd7fdbd3d78452725\"",
     "evidence": [
       {
         "context": {
@@ -7275,7 +7277,7 @@
         "verified": true
       }
     ],
-    "last_modified": "Wed, 26 Aug 2026 11:23:38 GMT"
+    "last_modified": "Wed, 26 Aug 2026 11:52:48 GMT"
   },
   "https://www.taipeitimes.com/News/feat/archives/2024/10/19/2003825522": {
     "checked": "2026-08-26",
@@ -7447,7 +7449,7 @@
   "https://www.ycombinator.com/companies/democracy-earth": {
     "checked": "2026-08-26",
     "document_sha256": "64104d8daab13cb2523f85696563b81f169bea7bbbbbc8fe39ad09edc004fb64",
-    "etag": "W/\"590212e4c7d0f3abf88f6119a841e903\"",
+    "etag": "W/\"4c0d2b37d1d210e75ff2fe9494025f9a\"",
     "evidence": [
       {
         "context": {
@@ -7465,7 +7467,7 @@
   },
   "https://www.ynetnews.com/article/r17pwltnmg": {
     "checked": "2026-08-26",
-    "document_sha256": "3469ef9377c401998efe5490f647750cd1e179377f602b33804af0be9164060e",
+    "document_sha256": "e7a3c4dc5a491a2f82297cf2e77e2963ff275cd160ea874ff8c03a3b7a1414e5",
     "etag": null,
     "evidence": [
       {
@@ -7480,7 +7482,7 @@
         "verified": true
       }
     ],
-    "last_modified": "Wed, 26 Aug 2026 11:25:26 GMT"
+    "last_modified": "Wed, 26 Aug 2026 11:54:23 GMT"
   },
   "https://www.yourparty.uk/sortition/": {
     "checked": "2026-08-26",
