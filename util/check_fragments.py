@@ -135,6 +135,17 @@ STATE_PATH = os.path.join(os.path.dirname(__file__), "..", "docs", "data", "cita
 USER_AGENT = "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
 FETCH_DELAY = 0.5  # seconds between requests — same rate limit as before
 
+# A citation URL's body is downloaded in full before any extraction can
+# happen — text_fragment.html_to_text()'s 2MB cap only trims the *result*
+# after the whole page is already in memory, and a PDF/docx has no
+# equivalent cap at all: pdfminer and the zip-XML walk both need the
+# complete file, not just a prefix, so nothing short of not downloading it
+# stops an oversized one. This corpus's actual PDF/docx citations run under
+# 2MB; 20MB is generous headroom for a legitimate large report, sized to
+# stop a mislinked large file (a dataset dump, a video, an ISO) from being
+# pulled down in full just to be discarded as unparseable moments later.
+MAX_FETCH_BYTES = 20 * 1024 * 1024
+
 # Page bodies already fetched during *this* run, keyed by URL. check_evidence()
 # runs once per evidence string, so a URL carrying several quotes used to be
 # downloaded once per quote: 499 evidence items sit on 358 distinct URLs, and
@@ -376,14 +387,37 @@ def _fetch_page_text(url, headers):
         # way docs/bot.md promises for the rest of DOD's bot.
         if not robots_allowed(url, USER_AGENT, timeout=15, session=requests):
             return None, None, "ROBOTS_DISALLOWED"
-        r = requests.get(url, headers=headers, timeout=15)
+        r = requests.get(url, headers=headers, timeout=15, stream=True)
         if r.status_code == 304:
+            r.close()
             return None, r, None
         r.raise_for_status()
 
+        # Enforce MAX_FETCH_BYTES before committing to the download: a
+        # server-declared Content-Length over the cap skips the body
+        # entirely, and iter_content() enforces the same cap while reading
+        # in case the header is absent, wrong, or lying (chunked transfer
+        # has no length to check up front).
+        declared_length = r.headers.get("Content-Length")
+        if declared_length is not None:
+            try:
+                if int(declared_length) > MAX_FETCH_BYTES:
+                    r.close()
+                    return None, None, "TOO_LARGE"
+            except ValueError:
+                pass
+
+        chunks = bytearray()
+        for chunk in r.iter_content(chunk_size=65536):
+            chunks.extend(chunk)
+            if len(chunks) > MAX_FETCH_BYTES:
+                r.close()
+                return None, None, "TOO_LARGE"
+        content_bytes = bytes(chunks)
+
         content_type = r.headers.get("Content-Type", "")
-        if "application/pdf" in content_type.lower() or r.content[:5] == b"%PDF-":
-            text = _extract_pdf_text(r.content)
+        if "application/pdf" in content_type.lower() or content_bytes[:5] == b"%PDF-":
+            text = _extract_pdf_text(content_bytes)
             if text is None:
                 return None, None, "PDF_PARSE_ERROR"
             text = re.sub(r"\s+", " ", text).strip()
@@ -397,8 +431,8 @@ def _fetch_page_text(url, headers):
         # rather than falling through to the HTML path: decoding compressed
         # bytes as text would just false-MISMATCH every quote (the same
         # failure mode issue #149 fixed for PDFs).
-        if r.content[:2] == b"PK":
-            text = _extract_zip_xml_text(r.content)
+        if content_bytes[:2] == b"PK":
+            text = _extract_zip_xml_text(content_bytes)
             if text is None:
                 return None, None, "OFFICE_PARSE_ERROR"
             text = re.sub(r"\s+", " ", text).strip()
@@ -420,11 +454,18 @@ def _fetch_page_text(url, headers):
         # When the declared encoding is absent or a Latin-1 family default,
         # prefer a clean UTF-8 decode of the raw bytes; fall back to r.text
         # if that fails (a genuinely non-UTF-8 legacy page).
-        body = r.text
+        # r.text isn't available once the body's been read via iter_content
+        # above rather than the r.content property — decode content_bytes
+        # the same way r.text would (per r.encoding, replacing anything
+        # that doesn't fit) rather than reading r.text itself.
+        try:
+            body = str(content_bytes, r.encoding or "utf-8", errors="replace")
+        except LookupError:
+            body = str(content_bytes, errors="replace")
         declared = (r.encoding or "").lower()
         if declared in ("", "iso-8859-1", "latin-1", "windows-1252"):
             try:
-                body = r.content.decode("utf-8")
+                body = content_bytes.decode("utf-8")
             except UnicodeDecodeError:
                 pass
         text = html_to_text(body)

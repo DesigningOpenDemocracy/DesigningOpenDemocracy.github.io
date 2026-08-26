@@ -621,6 +621,17 @@ class FetchPageTextRobotsTests(unittest.TestCase):
         self.assertEqual(text, "some text")
 
 
+def _streaming_mock(content, headers=None, encoding=None, status_code=200, text=None):
+    """A fake requests.Response for _fetch_page_text(), which streams the
+    body via iter_content() under check_fragments.py's MAX_FETCH_BYTES cap
+    rather than reading .content/.text directly."""
+    resp = mock.Mock(status_code=status_code, headers=headers or {}, content=content,
+                     encoding=encoding, iter_content=lambda chunk_size=None: [content])
+    if text is not None:
+        resp.text = text
+    return resp
+
+
 class FetchPageTextEncodingTests(unittest.TestCase):
     """A page serving UTF-8 bytes under an absent or Latin-1-family charset
     label must be decoded as UTF-8, not requests' RFC default for unlabelled
@@ -638,11 +649,9 @@ class FetchPageTextEncodingTests(unittest.TestCase):
                                        {"User-Agent": cf.USER_AGENT})
 
     def _mojibake_response(self, encoding):
-        resp = mock.Mock(status_code=200, headers={}, content=self.UTF8_BODY,
-                         encoding=encoding)
         # What requests' r.text would hand back if the label were trusted:
-        resp.text = self.UTF8_BODY.decode("iso-8859-1")
-        return resp
+        return _streaming_mock(self.UTF8_BODY, encoding=encoding,
+                               text=self.UTF8_BODY.decode("iso-8859-1"))
 
     def test_utf8_bytes_under_latin1_label_decode_as_utf8(self):
         text, _r, error = self._fetch(self._mojibake_response("iso-8859-1"))
@@ -658,9 +667,7 @@ class FetchPageTextEncodingTests(unittest.TestCase):
     def test_genuinely_non_utf8_page_falls_back_to_declared_decoding(self):
         latin1_src = "<html><body><p>café résumé</p></body></html>"
         raw = latin1_src.encode("windows-1252")  # 0xE9 alone — invalid UTF-8
-        resp = mock.Mock(status_code=200, headers={}, content=raw,
-                         encoding="windows-1252")
-        resp.text = latin1_src
+        resp = _streaming_mock(raw, encoding="windows-1252", text=latin1_src)
         text, _r, error = self._fetch(resp)
         self.assertIsNone(error)
         self.assertIn("café résumé", text)  # declared decoding used intact
@@ -675,6 +682,64 @@ def _zip_bytes(members):
         for name, content in members.items():
             z.writestr(name, content)
     return buf.getvalue()
+
+
+class MaxFetchBytesTests(unittest.TestCase):
+    """A citation body is downloaded in full before any extraction can
+    happen — PDF/docx extraction needs the complete file, not just a
+    prefix, so a mislinked large file (a dataset dump, a video, an ISO)
+    would otherwise be pulled down whole just to be discarded as
+    unparseable. MAX_FETCH_BYTES bounds that: a declared Content-Length
+    over the cap skips the download outright, and iter_content() enforces
+    the same cap while reading in case the header is absent, wrong, or a
+    server lies about it (chunked transfer has no length to check up
+    front)."""
+
+    def _fetch(self, resp):
+        with mock.patch.object(cf, "robots_allowed", return_value=True), \
+             mock.patch.object(cf.pagecache, "enabled", False), \
+             mock.patch.object(cf.requests, "get", return_value=resp):
+            return cf._fetch_page_text("https://example.org/huge.pdf",
+                                       {"User-Agent": cf.USER_AGENT})
+
+    def test_declared_content_length_over_cap_skips_the_download(self):
+        resp = mock.Mock(status_code=200,
+                         headers={"Content-Length": str(cf.MAX_FETCH_BYTES + 1)})
+        # If the cap didn't bite before the body was read, iterating this
+        # would raise — proving the declared-length check is what stopped it.
+        resp.iter_content = mock.Mock(side_effect=AssertionError("body was read"))
+        text, _r, error = self._fetch(resp)
+        self.assertIsNone(text)
+        self.assertEqual(error, "TOO_LARGE")
+        resp.iter_content.assert_not_called()
+
+    def test_body_under_the_cap_is_fetched_normally(self):
+        body = b"<html><body>" + b"a" * 1000 + b"</body></html>"
+        resp = _streaming_mock(body, text=body.decode())
+        text, _r, error = self._fetch(resp)
+        self.assertIsNone(error)
+        self.assertIn("a" * 1000, text)
+
+    def test_body_exceeding_the_cap_without_a_length_header_is_stopped(self):
+        # No Content-Length (as chunked transfer-encoding would send), so the
+        # cap can only be enforced by counting bytes as they stream in.
+        chunk = b"x" * (1024 * 1024)
+        chunks_needed = cf.MAX_FETCH_BYTES // len(chunk) + 2
+        resp = mock.Mock(status_code=200, headers={},
+                         iter_content=lambda chunk_size=None: iter([chunk] * chunks_needed))
+        text, _r, error = self._fetch(resp)
+        self.assertIsNone(text)
+        self.assertEqual(error, "TOO_LARGE")
+
+    def test_a_non_numeric_content_length_does_not_crash(self):
+        # Malformed header — fall through to the streamed byte-count check
+        # rather than raising on int().
+        body = b"<html><body>fine</body></html>"
+        resp = _streaming_mock(body, headers={"Content-Length": "not-a-number"},
+                               text=body.decode())
+        text, _r, error = self._fetch(resp)
+        self.assertIsNone(error)
+        self.assertIn("fine", text)
 
 
 class ZipXmlExtractionTests(unittest.TestCase):
@@ -734,15 +799,13 @@ class ZipXmlExtractionTests(unittest.TestCase):
                                        {"User-Agent": cf.USER_AGENT})
 
     def test_fetch_dispatches_zip_magic_to_the_extractor(self):
-        resp = mock.Mock(status_code=200, headers={},
-                         content=_zip_bytes({"word/document.xml": self.DOCX_XML}))
+        resp = _streaming_mock(_zip_bytes({"word/document.xml": self.DOCX_XML}))
         text, _r, error = self._fetch(resp)
         self.assertIsNone(error)
         self.assertIn("engagement policy", text)
 
     def test_fetch_reports_office_parse_error_for_non_document_zip(self):
-        resp = mock.Mock(status_code=200, headers={},
-                         content=_zip_bytes({"META-INF/x": "junk"}))
+        resp = _streaming_mock(_zip_bytes({"META-INF/x": "junk"}))
         text, _r, error = self._fetch(resp)
         self.assertIsNone(text)
         self.assertEqual(error, "OFFICE_PARSE_ERROR")
