@@ -168,7 +168,7 @@
   var headings = document.querySelectorAll('.calendar-month-heading');
   var countEl = document.getElementById('calendar-filter-count');
 
-  var MINUTE_MS = 60000, HOUR_MS = 3600000, DAY_MS = 86400000;
+  var DAY_MS = 86400000;
 
   var countryMap = {};
   events.forEach(function (el) {
@@ -328,10 +328,11 @@
   // ladder slides one unit at a time as the event nears:
   //
   //   1y+   in 1y 7mo 12d
-  //   1mo+  in 3mo 12d 04h
-  //   1d+   in 12d 04h 30m 09s  ┐
-  //   1h+   in 4h 30m 09s       ├ these tick every second
-  //   <1h   in 12m 09s          ┘
+  //   1mo+  in 3mo 1w 5d
+  //   1w+   in 3w 2d 04h
+  //   1d+   in 5d 04h 30m 09s  ┐
+  //   1h+   in 4h 30m 09s      ├ these tick every second
+  //   <1h   in 12m 09s         ┘
   function formatCountdown(el, now) {
     var start = eventStart(el);
     var end = eventEnd(el);
@@ -358,19 +359,26 @@
       return { text: 'on now', state: 'now' };
     }
 
-    var ms = start - now;
     var b = breakdown(now, start);
 
     // A ladder of composites, each tier dropping the smallest unit and
     // picking up the next larger one, so the precision on show always
     // matches how far away the event is: seconds matter in the last hour
     // and are pure distraction next to something two years out.
+    // Weeks are how people actually plan a month or two ahead ("three
+    // weeks away" lands where "in 23 days" has to be counted out), so the
+    // day column is split into weeks + remainder from a week out.
+    var weeks = Math.floor(b.days / 7), oddDays = b.days % 7;
+
     if (b.years) return { text: fmt([[b.years, 'y'], [b.months, 'mo'], [b.days, 'd']]), state: '' };
-    if (b.months) return { text: fmt([[b.months, 'mo'], [b.days, 'd'], [b.hours, 'h']]), state: '' };
+    if (b.months) return { text: fmt([[b.months, 'mo'], [weeks, 'w'], [oddDays, 'd']]), state: '' };
+    if (weeks) return { text: fmt([[weeks, 'w'], [oddDays, 'd'], [b.hours, 'h']]), state: '' };
     if (b.days) {
+      // Below a week the day column no longer needs splitting, and this is
+      // near enough that a live second hand is worth having.
       return {
         text: fmt([[b.days, 'd'], [b.hours, 'h'], [b.minutes, 'm'], [b.seconds, 's']], true),
-        state: ms < 7 * DAY_MS ? 'soon' : '',
+        state: 'soon',
         live: true
       };
     }
@@ -380,21 +388,18 @@
     return { text: fmt([[b.minutes, 'm'], [b.seconds, 's']], true), state: 'imminent', live: true };
   }
 
-  // Zero units in the middle of a countdown are noise ("in 2y 0mo 3d"), so
-  // trailing zeros are dropped — but never the leading unit, which is the
-  // tier itself, and never a zero between two shown units ("in 3d 0h 12m"
-  // must not collapse to "in 3d 12m", which reads as a much shorter wait).
-  // `keepLast` holds the smallest unit on screen even at zero: it is the
-  // one that ticks, and a row that drops it mid-countdown changes width
-  // every minute. Hours/minutes/seconds are zero-padded for the same
-  // reason — with tabular figures the row then never reflows as it counts
-  // down. Years and months aren't padded; "in 1y 07mo" just reads oddly.
-  function fmt(units, keepLast) {
-    var last = keepLast ? units.length - 1 : 0;
-    if (!keepLast) units.forEach(function (u, idx) { if (u[0]) last = idx; });
+  // On a ticking row (`tick`) every unit is held, zeros included, and
+  // hours/minutes/seconds are zero-padded: against tabular figures the row
+  // then never reflows as it counts down, and an interior zero must stay
+  // regardless ("in 3d 0h 12m 05s" collapsing to "in 3d 12m 05s" would
+  // read as a far shorter wait). A row that doesn't tick has neither
+  // problem, so there the zeros are just noise — "in 4mo 0w 5d" — and
+  // every one of them is dropped except the leading unit, which is the
+  // tier itself and always shown.
+  function fmt(units, tick) {
     var out = [];
     units.forEach(function (u, idx) {
-      if (idx > last) return;
+      if (!tick && idx > 0 && !u[0]) return;
       var padded = idx > 0 && (u[1] === 'h' || u[1] === 'm' || u[1] === 's');
       out.push((padded ? pad(u[0]) : u[0]) + u[1]);
     });
