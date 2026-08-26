@@ -135,6 +135,26 @@ STATE_PATH = os.path.join(os.path.dirname(__file__), "..", "docs", "data", "cita
 USER_AGENT = "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
 FETCH_DELAY = 0.5  # seconds between requests — same rate limit as before
 
+# Page bodies already fetched during *this* run, keyed by URL. check_evidence()
+# runs once per evidence string, so a URL carrying several quotes used to be
+# downloaded once per quote: 499 evidence items sit on 358 distinct URLs, and
+# pmg.org.za/page/what-is-pmg alone was fetched 11 times in a single run — 141
+# redundant downloads, 28% of the run, all of them re-asking a server for a
+# body this process already had in memory. Conditional GET cannot help here
+# (only 31% of these URLs send an ETag or Last-Modified at all, and a 304 is
+# still a request); not asking twice in the first place is the fix.
+#
+# Only ever holds bodies fetched in the current process, so it cannot serve a
+# stale page the way the on-disk cache deliberately might — which is why
+# --no-cache still uses it: that flag means "don't trust the stored verdict",
+# not "fetch the same page twice in one run".
+_RUN_PAGES = {}
+
+
+def reset_run_pages():
+    """Drop this run's in-memory page bodies (used by tests)."""
+    _RUN_PAGES.clear()
+
 # Errors that mean "this site's bot protection (or its own robots.txt)
 # said no," not "try again later" — 500s, timeouts, and DNS errors are
 # transient and should still be retried every run, but a 403/429 (or a
@@ -502,64 +522,74 @@ def check_evidence(url, evidence, cache, use_cache=True, from_pagecache=False):
         manual_dump.queue_request(url)
         return None, True, entry["blocked"], False, None, None
 
-    headers = {"User-Agent": USER_AGENT}
-    if not is_wikipedia:
-        if entry.get("etag"):
-            headers["If-None-Match"] = entry["etag"]
-        if entry.get("last_modified"):
-            headers["If-Modified-Since"] = entry["last_modified"]
+    # Already downloaded this URL for a sibling quote in this same run? Then
+    # the body in hand is this run's fetch — verify against it rather than
+    # asking the server again. `validators` carries forward exactly what that
+    # fetch would have written for etag/last_modified, so a second quote can't
+    # blank them out (`entry` is deliberately empty under --no-cache).
+    fetched = _RUN_PAGES.get(url)
+    if fetched is not None:
+        text, resp, validators = fetched["text"], None, fetched["validators"]
+    else:
+        validators = None
+        headers = {"User-Agent": USER_AGENT}
+        if not is_wikipedia:
+            if entry.get("etag"):
+                headers["If-None-Match"] = entry["etag"]
+            if entry.get("last_modified"):
+                headers["If-Modified-Since"] = entry["last_modified"]
 
-    time.sleep(FETCH_DELAY)
-    text, resp, error = _fetch_page_text(url, headers)
-    if error:
-        if error in BLOCKED_ERRORS:
-            # Merge into whatever is already on disk for this URL (not the
-            # possibly-emptied `entry` above) — a failed re-check must never
-            # destroy a previously-successful verification's evidence data just
-            # because *this* run's environment (a
-            # different IP, a stricter bot filter) couldn't reach the page.
-            # Confirmed happening in practice: a --no-cache run from a
-            # network-disadvantaged sandbox overwrote real prefix/suffix/text
-            # evidence a prior run had captured from an unblocked network,
-            # with a bare {"blocked": ...} stub — see git history around
-            # 2026-08-20 for the incident this guards against.
-            prior = cache.get(url, {})
-            cache[url] = {**prior, "blocked": error,
-                          "blocked_since": prior.get("blocked_since", date.today().isoformat())}
-            if (find_evidence(prior, ev_key) or {}).get("manual_verified") is None:
-                manual_dump.queue_request(url)
-        return None, False, error, False, None, None
-
-    if text is None:
-        # 304 — server confirms unchanged. If we've already verified this
-        # exact evidence string against this URL before, trust that result
-        # without needing the body at all. Otherwise (a new event pointing
-        # at an already-cached, unchanged URL) fall through to a fresh
-        # unconditional fetch — correctness for the rare case beats trying
-        # to be clever with a body we don't have.
-        cached_result = (find_evidence(entry, ev_key) or {}).get("verified")
-        if cached_result is not None:
-            # Stamp this quote too, not just the URL: a 304 re-establishes
-            # *this* verdict, and evidence_age_days() reads the per-quote
-            # date so a sibling quote's check can't make this one look fresh.
-            disk = cache.get(url, {})
-            q = find_evidence(disk, ev_key)
-            if q is not None:
-                q["checked"] = date.today().isoformat()
-            cache[url] = {**disk, "checked": date.today().isoformat()}
-            return ("good" if cached_result else "bad"), True, None, False, None, None
         time.sleep(FETCH_DELAY)
-        text, resp, error = _fetch_page_text(url, {"User-Agent": USER_AGENT})
+        text, resp, error = _fetch_page_text(url, headers)
         if error:
             if error in BLOCKED_ERRORS:
-                # Same non-regression guard as above — merge into the entry
-                # already on disk, not the possibly-emptied local `entry`.
+                # Merge into whatever is already on disk for this URL (not the
+                # possibly-emptied `entry` above) — a failed re-check must never
+                # destroy a previously-successful verification's evidence data just
+                # because *this* run's environment (a
+                # different IP, a stricter bot filter) couldn't reach the page.
+                # Confirmed happening in practice: a --no-cache run from a
+                # network-disadvantaged sandbox overwrote real prefix/suffix/text
+                # evidence a prior run had captured from an unblocked network,
+                # with a bare {"blocked": ...} stub — see git history around
+                # 2026-08-20 for the incident this guards against.
                 prior = cache.get(url, {})
                 cache[url] = {**prior, "blocked": error,
                               "blocked_since": prior.get("blocked_since", date.today().isoformat())}
                 if (find_evidence(prior, ev_key) or {}).get("manual_verified") is None:
                     manual_dump.queue_request(url)
             return None, False, error, False, None, None
+
+        if text is None:
+            # 304 — server confirms unchanged. If we've already verified this
+            # exact evidence string against this URL before, trust that result
+            # without needing the body at all. Otherwise (a new event pointing
+            # at an already-cached, unchanged URL) fall through to a fresh
+            # unconditional fetch — correctness for the rare case beats trying
+            # to be clever with a body we don't have.
+            cached_result = (find_evidence(entry, ev_key) or {}).get("verified")
+            if cached_result is not None:
+                # Stamp this quote too, not just the URL: a 304 re-establishes
+                # *this* verdict, and evidence_age_days() reads the per-quote
+                # date so a sibling quote's check can't make this one look fresh.
+                disk = cache.get(url, {})
+                q = find_evidence(disk, ev_key)
+                if q is not None:
+                    q["checked"] = date.today().isoformat()
+                cache[url] = {**disk, "checked": date.today().isoformat()}
+                return ("good" if cached_result else "bad"), True, None, False, None, None
+            time.sleep(FETCH_DELAY)
+            text, resp, error = _fetch_page_text(url, {"User-Agent": USER_AGENT})
+            if error:
+                if error in BLOCKED_ERRORS:
+                    # Same non-regression guard as above — merge into the entry
+                    # already on disk, not the possibly-emptied local `entry`.
+                    prior = cache.get(url, {})
+                    cache[url] = {**prior, "blocked": error,
+                                  "blocked_since": prior.get("blocked_since", date.today().isoformat())}
+                    if (find_evidence(prior, ev_key) or {}).get("manual_verified") is None:
+                        manual_dump.queue_request(url)
+                return None, False, error, False, None, None
 
     if len(text) < len(evidence):
         # A 200/202-range response whose extracted text is shorter than the
@@ -584,6 +614,18 @@ def check_evidence(url, evidence, cache, use_cache=True, from_pagecache=False):
             return ("good" if manual_result else "bad"), True, None, False, None, None
         manual_dump.queue_request(url)
         return None, False, "EMPTY_RESPONSE" if not text else "PAGE_TOO_SHORT", False, None, None
+
+    # What this run's fetch established for the URL's validators — computed
+    # once, so a sibling quote reusing the body writes the same values rather
+    # than falling back to `entry` (empty under --no-cache) and blanking them.
+    if validators is None:
+        if resp is not None and not is_wikipedia:
+            validators = {"etag": resp.headers.get("ETag"),
+                          "last_modified": resp.headers.get("Last-Modified")}
+        else:
+            validators = {"etag": entry.get("etag"),
+                          "last_modified": entry.get("last_modified")}
+        _RUN_PAGES[url] = {"text": text, "validators": validators}
 
     document_hash = sha256(text)
     # Merge into whatever is already on disk for this URL, not the local
@@ -615,8 +657,8 @@ def check_evidence(url, evidence, cache, use_cache=True, from_pagecache=False):
         **{k: v for k, v in disk.items() if k not in
            ("etag", "last_modified", "document_sha256", "content_hash",
             "evidence", "checked", "blocked", "blocked_since")},
-        "etag": resp.headers.get("ETag") if resp is not None and not is_wikipedia else entry.get("etag"),
-        "last_modified": resp.headers.get("Last-Modified") if resp is not None and not is_wikipedia else entry.get("last_modified"),
+        "etag": validators["etag"],
+        "last_modified": validators["last_modified"],
         "document_sha256": document_hash,
         "evidence": evidence_list,
         "checked": date.today().isoformat(),
@@ -961,6 +1003,9 @@ def collect_evidence(args):
 
 
 def main():
+    # Bodies are only ever reused within one run; a second main() in the same
+    # process starts from an empty store rather than last run's pages.
+    reset_run_pages()
     parser = argparse.ArgumentParser(
         description="Verify event and footnote evidence against live pages")
     parser.add_argument("--slug", type=str, action="append",
@@ -1157,12 +1202,24 @@ def main():
     report_mismatches = []
     report_ambiguous = []
     report_fetch_errors = []
+    # URLs this run has already downloaded — purely so the verbose line can
+    # say a body was reused rather than claiming a fetch that didn't happen.
+    # check_evidence()'s own _RUN_PAGES store is what actually does the
+    # reusing; this just mirrors what it will have found.
+    fetched_urls = set()
+    reused_fetches = 0
 
     for url, evidence, source_label, kind, path in evidence_items:
+        reused = url in fetched_urls
         result, unchanged_hit, error, ambiguous, hint, page_text = check_evidence(
             url, evidence, cache, use_cache=not args.no_cache,
             from_pagecache=args.offline
         )
+
+        if page_text is not None and not args.offline:
+            if reused:
+                reused_fetches += 1
+            fetched_urls.add(url)
 
         if args.save_to_wayback:
             archive_url = save_to_wayback(url)
@@ -1223,7 +1280,12 @@ def main():
                 # check_evidence()'s docstring), so say that explicitly
                 # rather than leaving it as a silent blank suffix.
                 if page_text:
-                    origin = "from .pagecache" if args.offline else "fetched"
+                    if args.offline:
+                        origin = "from .pagecache"
+                    elif reused:
+                        origin = "reused this run's fetch"
+                    else:
+                        origin = "fetched"
                     suffix = f"  ({origin}, {len(page_text):,} chars)"
                 else:
                     suffix = "  (304, server confirmed unchanged since last check)"
@@ -1325,6 +1387,10 @@ def main():
     if spot_checked:
         print(str(spot_checked) + " of the above were not due — spot-checked "
               "anyway to keep the run from being a no-op (--spot-check)")
+    if reused_fetches:
+        print(str(reused_fetches) + " evidence item(s) verified against a page "
+              "this run had already downloaded for another quote — no second "
+              "request made")
     if skipped_stale_gate:
         reason = ("--unchecked-only" if args.unchecked_only
                   else "verified within the last " + str(args.max_age) +

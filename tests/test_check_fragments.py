@@ -145,6 +145,7 @@ class CheckEvidenceNoCachePreservesOtherEvidenceTests(unittest.TestCase):
     URL = "https://example.org/shared-source"
 
     def setUp(self):
+        cf.reset_run_pages()
         patcher = mock.patch.object(cf.time, "sleep")
         patcher.start()
         self.addCleanup(patcher.stop)
@@ -216,6 +217,7 @@ class CheckEvidenceBlockedCacheTests(unittest.TestCase):
     403/429 mean "this server doesn't want scripted requests."."""
 
     def setUp(self):
+        cf.reset_run_pages()
         # check_evidence() sleeps FETCH_DELAY before a real fetch attempt —
         # only mocking _fetch_page_text still leaves that real 0.5s sleep
         # in every test that reaches it. Patch it out so this stays a fast
@@ -427,6 +429,89 @@ class CheckEvidenceBlockedCacheTests(unittest.TestCase):
         self.mock_queue_request.assert_not_called()
 
 
+class RunPageReuseTests(unittest.TestCase):
+    """check_evidence() runs once per evidence string, so a URL carrying
+    several quotes used to be downloaded once per quote — 141 redundant
+    downloads across a full run (499 evidence items on 358 distinct URLs),
+    with pmg.org.za/page/what-is-pmg fetched 11 times in one run. Conditional
+    GET can't help: only 31% of these URLs send an ETag or Last-Modified at
+    all, and a 304 is still a request. The body from this run's own fetch is
+    reused instead.
+    """
+
+    def setUp(self):
+        cf.reset_run_pages()
+        patcher = mock.patch.object(cf.time, "sleep")
+        patcher.start()
+        self.addCleanup(patcher.stop)
+        self.addCleanup(cf.reset_run_pages)
+
+    def _fake_page(self, text="Alpha sentence here. Beta sentence there.", etag='"v1"'):
+        resp = mock.Mock()
+        resp.headers = {"ETag": etag, "Last-Modified": "Wed, 20 Aug 2026 00:00:00 GMT"}
+        return mock.Mock(return_value=(text, resp, None))
+
+    def test_second_quote_on_the_same_url_is_not_re_fetched(self):
+        cache = {}
+        fake = self._fake_page()
+        with mock.patch.object(cf, "_fetch_page_text", fake):
+            first = cf.check_evidence("https://example.org/about", "Alpha sentence here.", cache)
+            second = cf.check_evidence("https://example.org/about", "Beta sentence there.", cache)
+        self.assertEqual(fake.call_count, 1)
+        self.assertEqual(first[0], "good")
+        self.assertEqual(second[0], "good")
+        # Both verdicts are recorded, not just the one that did the fetching.
+        quotes = {e["quote"] for e in cache["https://example.org/about"]["evidence"]}
+        self.assertEqual(quotes, {"Alpha sentence here.", "Beta sentence there."})
+
+    def test_a_different_url_is_still_fetched(self):
+        cache = {}
+        fake = self._fake_page()
+        with mock.patch.object(cf, "_fetch_page_text", fake):
+            cf.check_evidence("https://example.org/about", "Alpha sentence here.", cache)
+            cf.check_evidence("https://example.org/other", "Alpha sentence here.", cache)
+        self.assertEqual(fake.call_count, 2)
+
+    def test_reused_body_still_reports_a_mismatch(self):
+        cache = {}
+        fake = self._fake_page()
+        with mock.patch.object(cf, "_fetch_page_text", fake):
+            cf.check_evidence("https://example.org/about", "Alpha sentence here.", cache)
+            result, _, error, _, _, _ = cf.check_evidence(
+                "https://example.org/about", "Text the page never carried.", cache)
+        self.assertEqual(fake.call_count, 1)
+        self.assertIsNone(error)
+        self.assertEqual(result, "bad")
+
+    def test_reuse_under_no_cache_does_not_blank_the_validators(self):
+        # --no-cache empties check_evidence's local view of the entry, so a
+        # reusing sibling that fell back to it would write etag/last_modified
+        # as None — throwing away the validators this run's own fetch just
+        # established, and with them the next run's chance of a 304.
+        cache = {}
+        fake = self._fake_page()
+        with mock.patch.object(cf, "_fetch_page_text", fake):
+            cf.check_evidence("https://example.org/about", "Alpha sentence here.",
+                              cache, use_cache=False)
+            cf.check_evidence("https://example.org/about", "Beta sentence there.",
+                              cache, use_cache=False)
+        self.assertEqual(fake.call_count, 1)
+        entry = cache["https://example.org/about"]
+        self.assertEqual(entry["etag"], '"v1"')
+        self.assertEqual(entry["last_modified"], "Wed, 20 Aug 2026 00:00:00 GMT")
+
+    def test_blocked_url_is_never_stored_as_a_reusable_page(self):
+        cache = {}
+        fake = mock.Mock(return_value=(None, None, "HTTP_403"))
+        with mock.patch.object(cf.manual_dump, "queue_request"), \
+                mock.patch.object(cf, "_fetch_page_text", fake):
+            cf.check_evidence("https://example.org/about", "Alpha sentence here.", cache)
+            cf.check_evidence("https://example.org/about", "Beta sentence there.",
+                              cache, use_cache=False)
+        # Second call still attempts a fetch — a failure is not a body.
+        self.assertEqual(fake.call_count, 2)
+
+
 class DocumentSha256Tests(unittest.TestCase):
     """document_sha256 is the resource-level integrity signal projected
     into citations.json as item-level document.sha256 — sha256 of the
@@ -438,6 +523,7 @@ class DocumentSha256Tests(unittest.TestCase):
     """
 
     def setUp(self):
+        cf.reset_run_pages()
         patcher = mock.patch.object(cf.manual_dump, "queue_request")
         self.mock_queue_request = patcher.start()
         self.addCleanup(patcher.stop)
@@ -495,6 +581,7 @@ class FetchPageTextRobotsTests(unittest.TestCase):
     path this function never actually requests directly."""
 
     def setUp(self):
+        cf.reset_run_pages()
         # These tests call the REAL _fetch_page_text() with mocked HTTP, so
         # its pagecache.store() hook would otherwise write through to the
         # real .pagecache/ at the repo root (confirmed happening: the
@@ -664,6 +751,7 @@ class ZipXmlExtractionTests(unittest.TestCase):
 class WriteQuoteFixTests(unittest.TestCase):
 
     def setUp(self):
+        cf.reset_run_pages()
         self.tmpdir = tempfile.mkdtemp()
         self.addCleanup(shutil.rmtree, self.tmpdir, ignore_errors=True)
 
@@ -794,6 +882,7 @@ class WriteQuoteFixTests(unittest.TestCase):
 class FindSharedLinkEvidenceTests(unittest.TestCase):
 
     def setUp(self):
+        cf.reset_run_pages()
         self.tmpdir = tempfile.mkdtemp()
         self.addCleanup(shutil.rmtree, self.tmpdir, ignore_errors=True)
 
@@ -837,6 +926,7 @@ class FindSharedLinkEvidenceTests(unittest.TestCase):
 class WriteSharedLinkFixTests(unittest.TestCase):
 
     def setUp(self):
+        cf.reset_run_pages()
         self.tmpdir = tempfile.mkdtemp()
         self.addCleanup(shutil.rmtree, self.tmpdir, ignore_errors=True)
 
@@ -897,6 +987,7 @@ class CollectEvidenceSlugFilterTests(unittest.TestCase):
     as if it checked both. args.slug is now a list (action="append")."""
 
     def setUp(self):
+        cf.reset_run_pages()
         self.tmpdir = tempfile.mkdtemp()
         self.addCleanup(shutil.rmtree, self.tmpdir, ignore_errors=True)
         self._orig_org_dir = cf.ORG_DIR
@@ -1126,6 +1217,7 @@ class CollectEvidenceSlugScopeTests(unittest.TestCase):
     that org's page cites."""
 
     def setUp(self):
+        cf.reset_run_pages()
         self.tmpdir = tempfile.mkdtemp()
         self.addCleanup(shutil.rmtree, self.tmpdir, ignore_errors=True)
         self._orig_org_dir = cf.ORG_DIR
@@ -1210,6 +1302,7 @@ class CollectEvidenceSharedLinkTests(unittest.TestCase):
     footnotes — not just org pages directly under DOCS_DIR."""
 
     def setUp(self):
+        cf.reset_run_pages()
         self.tmpdir = tempfile.mkdtemp()
         self.addCleanup(shutil.rmtree, self.tmpdir, ignore_errors=True)
         self._orig_org_dir = cf.ORG_DIR
@@ -1254,6 +1347,7 @@ class SetUrlStatusCliTests(unittest.TestCase):
     2026-08-22-citation-archival-design-decisions.md."""
 
     def setUp(self):
+        cf.reset_run_pages()
         self.tmpdir = tempfile.mkdtemp()
         self.addCleanup(shutil.rmtree, self.tmpdir, ignore_errors=True)
         self.cache_path = os.path.join(self.tmpdir, "cache.json")
@@ -1318,6 +1412,7 @@ class UncheckedOnlyFilterTests(unittest.TestCase):
     NEW_QUOTE = "this quote has never been checked"
 
     def setUp(self):
+        cf.reset_run_pages()
         self.tmpdir = tempfile.mkdtemp()
         self.addCleanup(shutil.rmtree, self.tmpdir, ignore_errors=True)
         self._orig_org_dir = cf.ORG_DIR
