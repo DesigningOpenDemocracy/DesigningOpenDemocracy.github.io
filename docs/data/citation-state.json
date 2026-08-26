@@ -2492,11 +2492,12 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/Make_It_16_(New_Zealand)": {
-    "checked": "2026-08-23",
+    "checked": "2026-08-26",
     "document_sha256": "a990711ddc1b95c698e0edbb8bef9a0ad9690931d5669f46293e32886ff24288",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-26",
         "context": {
           "prefix": "s has been the third time Youth Parliament was used as a medium to call for lowering the voting age. === Legal action === In late 2019, Make It 16",
           "sha256": "7355fb7e268741949b9929c506c747e4d0df0733c6e3aa7f7ea13ebdec2d18dd",
@@ -2507,6 +2508,7 @@
         "verified": true
       },
       {
+        "checked": "2026-08-26",
         "context": {
           "prefix": "ign group led by youth in New Zealand that campaigns for the lowering the voting age in general and local elections to 16. == History == Make It 16",
           "sha256": "c41291a3589d30714666edd72fa0e639ae2a5e084191ea0c703bb15ce1dbac5d",
@@ -2517,6 +2519,7 @@
         "verified": true
       },
       {
+        "checked": "2026-08-26",
         "context": {
           "prefix": "e voting age was age discrimination, it was a justified limitation. Make It 16 appealled the decision by the High Court, and on 14 December 2020, the",
           "sha256": "63bdbf8b9dc621ddb752747d53f98b8376d23be8119db961d715977d582b10a5",
@@ -2527,6 +2530,7 @@
         "verified": true
       },
       {
+        "checked": "2026-08-26",
         "context": {
           "prefix": "Te P\u0101ti M\u0101ori candidate Hana-Rawhiti Maipi-Clarke, Make It 16 co-director Thomas Brocherie, and Young Greens equity officer Johnny Bentley-Cribb The",
           "sha256": "45ea23a861a056d62420869446187078c0e3913a7ed11ed8558cd6ade6c5e43f",
@@ -2537,6 +2541,7 @@
         "verified": true
       },
       {
+        "checked": "2026-08-26",
         "context": {
           "prefix": "aking the court's ruling as a win and would likely be appealing to the Supreme Court to seek a declaration of inconsistency. On 21 November 2022, the",
           "sha256": "cead3e250b926ccf51a5af5b8a07e5642946a7c514af5bba8928cce5566b3fa9",
