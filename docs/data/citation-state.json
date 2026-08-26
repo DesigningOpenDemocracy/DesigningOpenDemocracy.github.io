@@ -311,9 +311,96 @@
         "id": "e7ffcaa0c1357d088fb509ced6334a1cc45468affe79436ede9aab8e83434f6d",
         "quote": "888 Co-operative Causeway\u2014Victoria\u2019s first registered co-operative co-working space",
         "verified": true
+      },
+      {
+        "context": {
+          "prefix": "od. Photo by Glynn Jarrett Co-operative Bonds HQ operates from its sister co-op,",
+          "sha256": "5514564e069a65c0b26959bb7794c2145186abf497d1e41a1fef3eeecb904c95",
+          "suffix": ". Located in Melbourne\u2019s vibrant CBD, it offers a unique environment for small enterprises and organisations. The co-operative also hosts regular even",
+          "text": "Co-operative Bonds HQ operates from its sister co-op, 888 Co-operative Causeway \u2014 Victoria\u2019s first registered co-operative co-working space. Located in Melbourne\u2019s vibrant CBD, it offers a unique environment for small enterprises and organisations. The co-operative also hosts regular events at the Kelvin Club, covering a range of topics aimed at building a thriving social economy."
+        },
+        "id": "04298cb6dec86e7adc64f123e9dbea14751633fc7956c8347bdecbcdfe295a17",
+        "quote": "888 Co-operative Causeway\u2014Victoria\u2019s first registered co-operative co-working space",
+        "verified": true
       }
     ],
     "last_modified": "Wed, 26 Aug 2026 11:11:38 GMT"
+  },
+  "https://budgit.org/about-us/": {
+    "checked": "2026-08-25",
+    "document_sha256": "7f5125740016cfbc8f2cd1929b181a487b250f50fc128f61c547583e9251e732",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-25",
+        "context": {
+          "prefix": "A decade of budget transparency",
+          "sha256": "03448bf654101704b988b2f240ede27711b66f06f39513bc7bf6584b50099008",
+          "suffix": "2012 Occupy Nigeria, Budget Cut attracts 4,000 users in 60 hrs. 2013",
+          "text": "2011 Oluseun meets Joseph, BudgIT joins CcHUB pre-incubation programme"
+        },
+        "id": "03448bf654101704b988b2f240ede27711b66f06f39513bc7bf6584b50099008",
+        "quote": "2011 Oluseun meets Joseph, BudgIT joins CcHUB pre-incubation programme",
+        "verified": true
+      },
+      {
+        "checked": "2026-08-25",
+        "context": {
+          "prefix": "t attracts 4,000 users in 60 hrs. 2013 BudgIT publishes its first research document",
+          "sha256": "bb2c0f9ed954684a5569466fb554f54d0f440b895f01de1055099e59544abc86",
+          "suffix": "2015 BudgIT commences advocacy for OpenNASS project 2016 BudgIT r",
+          "text": "2014 BudgIT receives $400k grant from Omidyar Network, launches Tracka"
+        },
+        "id": "bb2c0f9ed954684a5569466fb554f54d0f440b895f01de1055099e59544abc86",
+        "quote": "2014 BudgIT receives $400k grant from Omidyar Network, launches Tracka",
+        "verified": true
+      },
+      {
+        "checked": "2026-08-25",
+        "context": {
+          "prefix": "cacy for OpenNASS project 2016 BudgIT raises $3m grant from institutional partners.",
+          "sha256": "d318041358c35ce3c119724855a751654ec2831150b294ae8ee1febfad6d192f",
+          "suffix": "2018 BudgIT engages policymakers; holds Investing in People project 2019",
+          "text": "2017 The Budget Padding Saga and Civic Hive Launch"
+        },
+        "id": "d318041358c35ce3c119724855a751654ec2831150b294ae8ee1febfad6d192f",
+        "quote": "2017 The Budget Padding Saga and Civic Hive Launch",
+        "verified": true
+      },
+      {
+        "checked": "2026-08-25",
+        "context": {
+          "prefix": "ms in 14 public institutions. Our Mission",
+          "sha256": "03ef39ba1166e7aadda10cde7408dd154a04c6e47f2c7ea45c38f3d86bc46a21",
+          "suffix": "Learn more about our mission, vision and core values",
+          "text": "To use creative technology to simplify public information, stimulating a community of active citizens and enabling their right to demand accountability, institutional reforms, efficient service delivery and an equitable society."
+        },
+        "id": "03ef39ba1166e7aadda10cde7408dd154a04c6e47f2c7ea45c38f3d86bc46a21",
+        "quote": "To use creative technology to simplify public information, stimulating a community of active citizens and enabling their right to demand accountability, institutional reforms, efficient service delivery and an equitable society.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://budgit.org/contact/": {
+    "checked": "2026-08-25",
+    "document_sha256": "d3dd1a6b177ad09acecb57388e432dbccddb48f59f6e22d2ebf76a1511125276",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-25",
+        "context": {
+          "prefix": "E extension, Plot 1856, Road 9, Apo resettlement Abuja (+234) 908 333 1633 [email protected]",
+          "sha256": "c78fa9facdec7fda94d4426e3e004589983efd63b3e2c5b91b5df51e19a253b2",
+          "suffix": "+1 (202) 847-5513 budgit.us Freetown 364B Bai Bureh Road, Calaba Town, Fre",
+          "text": "Washington United States Open Gov Hub, 1100 13th St NW Suite 800, Washington, DC 20005"
+        },
+        "id": "c78fa9facdec7fda94d4426e3e004589983efd63b3e2c5b91b5df51e19a253b2",
+        "quote": "Washington United States Open Gov Hub, 1100 13th St NW Suite 800, Washington, DC 20005",
+        "verified": true
+      }
+    ],
+    "last_modified": null
   },
   "https://cafsa.org.au/cafsa/": {
     "checked": "2026-08-26",
@@ -518,6 +605,18 @@
         },
         "id": "67ce0166bba34c1ac6dc47214ec2e5da1eb25890c25dd0259ba97992ea97afe2",
         "quote": "Founded in 2017 as the innovation centre of BudgIT",
+        "verified": true
+      },
+      {
+        "checked": "2026-08-25",
+        "context": {
+          "prefix": "push solutions that connect citizens to the government, foster institutional efficiency, and raise citizens\u2019 awareness of social issues around them.",
+          "sha256": "6cc7a740a4429449d277ef3730f1b98b7abdb03cd86fcf99730b4bc4a740ff4f",
+          "suffix": "We aim to stimulate citizens\u2019 interests around public data and hence trigger discussions towards better governance. We are committed to the pri",
+          "text": "Civichive has incubated 24 civic start-ups and supported over 107 organizations in Nigeria. Civic Hive has continued its support for existing and new organizations to push solutions that connect citizens to the government, foster institutional efficiency, and raise citizens\u2019 awareness of social issues around them. Civic exists as an extension of BudgIT as a creative civic tech organization driven to retell the Nigerian budget and public data in a finer detail across every literacy span."
+        },
+        "id": "ed5cf0881e4632c55ed03c84d1bf5843fc1d82fc3eb8fc253a737d3458ae6263",
+        "quote": "Civic exists as an extension of BudgIT as a creative civic tech organization driven to retell the Nigerian budget and public data in a finer detail across every literacy span.",
         "verified": true
       }
     ],
@@ -824,6 +923,17 @@
           "text": "July 11\u201312 2-Day In-Person Session New Haven \u2014 Yale Campus"
         },
         "id": "8e2f15ad60d1306cdd296405371dc95711f00bea8d319b00a589b64b99f15bf6",
+        "quote": "July 11\u201312 2-Day In-Person Session New Haven \u2014 Yale Campus",
+        "verified": true
+      },
+      {
+        "context": {
+          "prefix": "30 In-Person New Haven Sep 19 Virtual Online Sep 26 In-Person New Haven",
+          "sha256": "4f2eda2a89bc13065e7990490aae6459a18abca24ca84a08c93318c4d8904e09",
+          "suffix": "July 25 1-Day In-Person Session New Haven \u2014 Yale Campus August 8 1-Day",
+          "text": "July 11 \u2013 12 2-Day In-Person Session New Haven \u2014 Yale Campus"
+        },
+        "id": "4f2eda2a89bc13065e7990490aae6459a18abca24ca84a08c93318c4d8904e09",
         "quote": "July 11\u201312 2-Day In-Person Session New Haven \u2014 Yale Campus",
         "verified": true
       }
@@ -2055,6 +2165,16 @@
         "id": "cd52d43d867673771ea3eba9122e8da149e307b24954276e0f5398515a7249ae",
         "quote": "In January 2021, HKDC assisted in the rescue of five Hong Kong protesters, aged 18\u201326 who fled by boat to Taiwan in July 2020 soon after the national security law was imposed, by sponsoring the first set of humanitarian parole visas to the US.",
         "verified": true
+      },
+      {
+        "context": {
+          "prefix": "s Congress. HKDC has also pushed for the broad-based Hong Kong People's Freedom and Choice Act and the immigration-focused Hong Kong Safe Harbor Act.",
+          "sha256": "046ba79730d27e5423c99cbd8d7eb286b783337e4e0122009681e6d84a362b4d",
+          "suffix": "Along with 52 Hong Kong diaspora groups and advocacy organizations, HKDC urged President Joe Biden to bar Hong Kong Chief Executive John Lee from att"
+        },
+        "id": "ede7c5e12f7b4967782fb5cec84357f4673408db4110bd3c5f0e2e2ffb69ccf0",
+        "quote": "In January 2021, HKDC assisted in the rescue of five Hong Kong protesters, aged 18\u201326 who fled by boat to Taiwan in July 2020 soon after the national security law was imposed, by sponsoring the first set of humanitarian parole visas to the US.",
+        "verified": true
       }
     ],
     "last_modified": null
@@ -2068,6 +2188,17 @@
         "id": "1d3cb593811b9d3c9dfb23636865d6b1446a80a56518d729162a7c280b288b1f",
         "quote": "In 2007 the United Nations General Assembly resolved to observe 15 September as the International Day of Democracy\u2014with the purpose of promoting and upholding the principles of democracy.",
         "verified": false
+      },
+      {
+        "context": {
+          "prefix": "",
+          "sha256": "14e8637368d07b2a69a3c9143da83be1006589567b2db1ec6f324de24e48f2b6",
+          "suffix": "\u2026while democracies share common features, there is no single model of democracy and that democracy does not belong to any country or region... \u2026demo",
+          "text": "In 2007 the United Nations General Assembly resolved to observe 15 September as the International Day of Democracy \u2014 with the purpose of promoting and upholding the principles of democracy \u2014 and invited all member states and organizations to commemorate the day in an appropriate manner that contributes to raising public awareness."
+        },
+        "id": "14e8637368d07b2a69a3c9143da83be1006589567b2db1ec6f324de24e48f2b6",
+        "quote": "In 2007 the United Nations General Assembly resolved to observe 15 September as the International Day of Democracy \u2014 with the purpose of promoting and upholding the principles of democracy \u2014 and invited all member states and organizations to commemorate the day in an appropriate manner that contributes to raising public awareness.",
+        "verified": true
       }
     ],
     "last_modified": null
@@ -2094,6 +2225,16 @@
           "suffix": "and involved 14 founding states: Australia, Barbados, Belgium, Chile, Costa Rica, Denmark, Finland, India, the Netherlands, Norway, Portugal, South A"
         },
         "id": "5f80002617aaf191548e23593a8cd6bb976b825ee2fabd82f464a5b2d8da82c5",
+        "quote": "The Founding Conference of International IDEA took place on 27\u201328 February 1995",
+        "verified": true
+      },
+      {
+        "context": {
+          "prefix": "n, along with 13 other countries took the initiative to found The International Institute for Democracy and Electoral Assistance, International IDEA.",
+          "sha256": "59415fbb9ef6fa231e9cc812d9345ff5db694ace4eea45f514cc4527fadd604c",
+          "suffix": "and involved 14 founding states: Australia, Barbados, Belgium, Chile, Costa Rica, Denmark, Finland, India, the Netherlands, Norway, Portugal, South A"
+        },
+        "id": "ed64334da6b6b26710343d7ea2dfa00200fa9bc85b2c0ef2a288bf12395e67ce",
         "quote": "The Founding Conference of International IDEA took place on 27\u201328 February 1995",
         "verified": true
       }
@@ -2365,6 +2506,7 @@
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-26",
         "context": {
           "prefix": "s has been the third time Youth Parliament was used as a medium to call for lowering the voting age. === Legal action === In late 2019, Make It 16",
           "sha256": "7355fb7e268741949b9929c506c747e4d0df0733c6e3aa7f7ea13ebdec2d18dd",
@@ -2375,6 +2517,7 @@
         "verified": true
       },
       {
+        "checked": "2026-08-26",
         "context": {
           "prefix": "ign group led by youth in New Zealand that campaigns for the lowering the voting age in general and local elections to 16. == History == Make It 16",
           "sha256": "c41291a3589d30714666edd72fa0e639ae2a5e084191ea0c703bb15ce1dbac5d",
@@ -2385,6 +2528,7 @@
         "verified": true
       },
       {
+        "checked": "2026-08-26",
         "context": {
           "prefix": "e voting age was age discrimination, it was a justified limitation. Make It 16 appealled the decision by the High Court, and on 14 December 2020, the",
           "sha256": "63bdbf8b9dc621ddb752747d53f98b8376d23be8119db961d715977d582b10a5",
@@ -2395,6 +2539,7 @@
         "verified": true
       },
       {
+        "checked": "2026-08-26",
         "context": {
           "prefix": "Te P\u0101ti M\u0101ori candidate Hana-Rawhiti Maipi-Clarke, Make It 16 co-director Thomas Brocherie, and Young Greens equity officer Johnny Bentley-Cribb The",
           "sha256": "45ea23a861a056d62420869446187078c0e3913a7ed11ed8558cd6ade6c5e43f",
@@ -2405,6 +2550,7 @@
         "verified": true
       },
       {
+        "checked": "2026-08-26",
         "context": {
           "prefix": "aking the court's ruling as a win and would likely be appealing to the Supreme Court to seek a declaration of inconsistency. On 21 November 2022, the",
           "sha256": "cead3e250b926ccf51a5af5b8a07e5642946a7c514af5bba8928cce5566b3fa9",
@@ -4148,6 +4294,123 @@
     ],
     "last_modified": null
   },
+  "https://mzalendo.com/about/": {
+    "checked": "2026-08-25",
+    "document_sha256": "7652deda482eb57e75079ef9bbfa6f55bed379996333afd9c64d0132c1d26e09",
+    "etag": null,
+    "evidence": [
+      {
+        "context": {
+          "prefix": "y person has a right to petition Parliament to consider any matter within its authority, including to protest\" Our History",
+          "sha256": "8ee7102a7410931fa5da6eddac2f637248073d4631a11c84e26cacf0c048ab67",
+          "suffix": "and whose mission is to \u2018promote open, inclusive, and accountable Parliaments in Kenya and Africa.\u2019 We do so by creating and managing civic tech tool",
+          "text": "Mzalendo is a Kenyan non-partisan Parliamentary Monitoring Organization (PMO) started in 2005 and whose mission is to \u2018promote open, inclusive, and accountable Parliaments in Kenya and Africa.\u2019 We do so by creating and managing civic tech tools, producing evidence-based research, and leading and facilitating advocacy and partnerships with Parliaments, citizens, and other relevant stakeholders. We believe that success in our work will build more effective and responsive legislation and political processes that ultimately support Kenya\u2019s national development goals. In line with our Strategic Plan 2021-2025, we anchor our work on three main pillars: Openness, Inclusion, and Accountability."
+        },
+        "id": "7d86e65298f4f62ef76c174633af0a51f90e9b6c17eb71440ec4418c74a8d8b5",
+        "quote": "Mzalendo is a Kenyan non-partisan Parliamentary Monitoring Organization (PMO) started in 2005",
+        "verified": true
+      },
+      {
+        "context": {
+          "prefix": "inclusion and accountability that are at its core. The principles are variously provided for in the COK, 2010. openness +",
+          "sha256": "608526af7e3429b18961d6ff46403a86cb9d3cbd226134d928e7e8de7dc45ea4",
+          "suffix": "\u201d. (Art. 118 (1)) \u201cA County Assembly shall (a) conduct its business in an open manner and hold its sittings and those of its committees in pu",
+          "text": "Parliament shall (a) conduct its business in an open manner, and its sittings and those of its committees shall be in public; and (b) facilitate public participation and involvement in the legislative and other business of Parliament and its committees\u201d. (Art. 118 (1))"
+        },
+        "id": "7fe6af2f8543dee7d2dd24cb099dc8adfd66f968258b4c93a3e52561f257b6c3",
+        "quote": "Parliament shall (a) conduct its business in an open manner, and its sittings and those of its committees shall be in public; and (b) facilitate public participation and involvement in the legislative and other business of Parliament and its committees",
+        "verified": true
+      },
+      {
+        "context": {
+          "prefix": "Jefferson Gathumbi Finance and Administration Officer Viola Adisa Finance and Administration Assistant",
+          "sha256": "b6c7449b93e83271160bff3e12059c52f03d40489087976d0ab244685b453d7e",
+          "suffix": "Conrad Akung\u2019a Ken Opalo Natasha Kimani Mugambi Laibuta Mzalendo Style Guide",
+          "text": "Our Board Ory Okolloh"
+        },
+        "id": "b6c7449b93e83271160bff3e12059c52f03d40489087976d0ab244685b453d7e",
+        "quote": "Our Board Ory Okolloh",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://mzalendo.com/about/our-work/": {
+    "checked": "2026-08-25",
+    "document_sha256": "9497b0128605f93df0db146d2d13fe8a1f92d6ad4816ff556da4525a53854c44",
+    "etag": null,
+    "evidence": [
+      {
+        "context": {
+          "prefix": "of virtual and physical platforms. 6. Social media amplification + of public hearings or key debates in Parliament. 7.",
+          "sha256": "c268e48efdc5d52aa800b3ed3f67b9dcfa95643cedd8180e43da97a46711a6cd",
+          "suffix": "+ in the region. B. Promoting Inclusive Parliaments and Political Processes We champion the inclusion of marginalize",
+          "text": "7. Sharing lessons and experiences with Parliamentary monitoring organisations +"
+        },
+        "id": "36075da2d8acf20df20f6c47f32b8b354fa2e6b9c3cb997e5accebb74c5219c6",
+        "quote": "Sharing lessons and experiences with Parliamentary monitoring organisations",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://mzalendo.com/democracy-tools/bonga/": {
+    "checked": "2026-08-25",
+    "document_sha256": "a8fabfba4957bd258f788a5a30a7d0230df793948aa8a6bd3ca116474457d072",
+    "etag": null,
+    "evidence": [
+      {
+        "context": {
+          "prefix": "Home \u00bb Democracy Tools \u00bb Bonga Bonga na Mzalendo Speaking Patriotically",
+          "sha256": "7165cc4ac6943bc1eaf5d685f9f8b35b8224a020fed8c1f3fe4bf6a2edd8ec9d",
+          "suffix": "Have your say on the Bills and decisions that affect you. Submit your views on a Bill 14 submissions received so far What happens to y",
+          "text": "Bonga na Mzalendo is how citizens and Parliament talk to each other \u2014 safely and securely. Have your say on the Bills and decisions that affect you."
+        },
+        "id": "7de37bd516576bafe53a0f9468317def7d2f65fe20fd37332c7f3cd66e31d162",
+        "quote": "Bonga na Mzalendo is how citizens and Parliament talk to each other \u2014 safely and securely.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://mzalendo.com/eye-on-elections/": {
+    "checked": "2026-08-25",
+    "document_sha256": "289bb4bce94e6352cd256f46f09d6fdd394750225a1f89a3236679675f63cc2b",
+    "etag": null,
+    "evidence": [
+      {
+        "context": {
+          "prefix": "Newsletters Contact Kenya General Election \u00b7 2022 Elections Watch 2027 \u2014 2022 Gazetted Results",
+          "sha256": "4f99495ce9469a766c586b0fa5c3b6d75064a14b391c69d9bac4088af0d9e232",
+          "suffix": "Coverage Declared winners loaded for 2022, by office President 1 seat Governor 45 seats Senator 47 seats",
+          "text": "The declared winner of each seat Mzalendo has reviewed from the IEBC Kenya Gazette \u2014 their party, recorded votes and the area they represent \u2014 with a link to the source notice on every row."
+        },
+        "id": "4f99495ce9469a766c586b0fa5c3b6d75064a14b391c69d9bac4088af0d9e232",
+        "quote": "The declared winner of each seat Mzalendo has reviewed from the IEBC Kenya Gazette \u2014 their party, recorded votes and the area they represent \u2014 with a link to the source notice on every row.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://mzalendo.com/research-and-knowledge/scorecard/": {
+    "checked": "2026-08-25",
+    "document_sha256": "8df690cd20136a313e83e5e9cd79075168ee0b5694a598c973ed1021ab9044f4",
+    "etag": null,
+    "evidence": [
+      {
+        "context": {
+          "prefix": "Research & Knowledge \u00bb Scorecard Annual Parliamentary Score Cards 2024 Parliamentary Scorecard",
+          "sha256": "47fa89071d78c1d04b2f162344df43e2e2c513a9d1f9460336c1999025df8b85",
+          "suffix": "View 2023 Parliamentary Scorecard The 2023 Parliamentary Scorecard was an interesting look at the performance of the 13th Parliamen",
+          "text": "The 2024 Parliamentary Scorecard was the second look at the performance of the 13th Parliament of Kenya."
+        },
+        "id": "47fa89071d78c1d04b2f162344df43e2e2c513a9d1f9460336c1999025df8b85",
+        "quote": "The 2024 Parliamentary Scorecard was the second look at the performance of the 13th Parliament of Kenya.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
   "https://newvote.org/the-institute": {
     "checked": "2026-08-26",
     "document_sha256": "ec64c0d32eff492f351e1c76d75e90d0ecff301ff550e2bbc6f787812bb1b436",
@@ -4389,6 +4652,121 @@
     ],
     "last_modified": "Wed, 19 Aug 2026 06:37:41 GMT"
   },
+  "https://pmg.org.za/blog/": {
+    "checked": "2026-08-25",
+    "document_sha256": "e6e3847dd83a071aa0214a13184cca41d577268b52b314bebd23da8e6782f6db",
+    "etag": null,
+    "evidence": [
+      {
+        "context": {
+          "prefix": "ills Petitions Questions and Replies Calls for Comments Attendance Blog Provincial Legislatures",
+          "sha256": "ede77b1399e4ff72d52f98b6bd7c4ad6151d1b7835a499715ff57642d1f16603",
+          "suffix": "Share this page: Blog 23 August 2026 From the Government Gazette and Media Statements (24 August 2026",
+          "text": "Premium content from before 2025 is now available for everyone!"
+        },
+        "id": "ede77b1399e4ff72d52f98b6bd7c4ad6151d1b7835a499715ff57642d1f16603",
+        "quote": "Premium content from before 2025 is now available for everyone!",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://pmg.org.za/page/what-is-pmg": {
+    "checked": "2026-08-25",
+    "document_sha256": "af96e7ccf0574964b2239c41e4d1237f6687fcb9d8cb9fa591f1f2e4db9cd542",
+    "etag": null,
+    "evidence": [
+      {
+        "context": {
+          "prefix": "deo on \"Youth Monitoring Parliament\": PMG enables youth to be at the rockface of government and three of our alumni have gone on to become MPs!",
+          "sha256": "af0f6649c8b7242321a1102ac0b60636e14d091f68ddac7a3378c99a7fdfade2",
+          "suffix": "with the aim of providing a type of Hansard for the proceedings of the more than fifty South African Parliamentary Committees for these three advocac",
+          "text": "The Parliamentary Monitoring Group, an information service, was established in 1995 as a partnership between Black Sash, Human Rights Committee and Idasa with the aim of providing a type of Hansard for the proceedings of the more than fifty South African Parliamentary Committees for these three advocacy organisations. This was because there is no official record publicly available of the committee proceedings - the engine room of Parliament - and this type of information is needed by social justice organisations to lobby the Parliament of South Africa on pieces of legislation, matters of democratic processes and parliamentary oversight of the executive."
+        },
+        "id": "d43a8996eb50e1c9b55cc5834f04d9514a9e7db8cdaa6ea0b84b07080b617bdf",
+        "quote": "The Parliamentary Monitoring Group, an information service, was established in 1995 as a partnership between Black Sash, Human Rights Committee and Idasa",
+        "verified": true
+      },
+      {
+        "context": {
+          "prefix": "to lobby the Parliament of South Africa on pieces of legislation, matters of democratic processes and parliamentary oversight of the executive.",
+          "sha256": "e21f208818966c85c7b910d8a9bbb6abf64b041abbb6e6c9015eb4951e0abe73",
+          "suffix": "Presently this is the only source for this type of information. We hope that the PMG committee reports and other documents will provide the public wi",
+          "text": "This website was set up at the beginning of 1998 to make the information generated available to a wider audience. Presently this is the only source for this type of information. We hope that the PMG committee reports and other documents will provide the public with an insight into the Parliament of South Africa and its daily activity. Importantly it provides a window into the performance of each government department and public entity over which each parliamentary committee has oversight."
+        },
+        "id": "2aed52503d3fd534d3c594aa2bbb4f0c2c5de1cec645a34ff3c42d402a4f87b4",
+        "quote": "This website was set up at the beginning of 1998 to make the information generated available to a wider audience.",
+        "verified": true
+      },
+      {
+        "context": {
+          "prefix": "arliamentary monitoring organisations globally. Read: 25 Years of PMG How to navigate the PMG website: What We Do",
+          "sha256": "3bc9ae463c1728997cd3cd9f71f068732fe9c12ff4d74cf450417c6fd614990a",
+          "suffix": "PMG\u2019s key activity is the attending of all Parliamentary Committee meetings, where a monitor will tape and minute the proceedings and obtain al",
+          "text": "PMG aims to provide accurate, objective, and current information on all parliamentary committee proceedings in the form of detailed, unofficial minutes and documents and since 2007, sound recordings of the meeting."
+        },
+        "id": "3bc9ae463c1728997cd3cd9f71f068732fe9c12ff4d74cf450417c6fd614990a",
+        "quote": "PMG aims to provide accurate, objective, and current information on all parliamentary committee proceedings in the form of detailed, unofficial minutes and documents and since 2007, sound recordings of the meeting.",
+        "verified": true
+      },
+      {
+        "context": {
+          "prefix": "t provides a window into the performance of each government department and public entity over which each parliamentary committee has oversight.",
+          "sha256": "38090afcb09a99294b59668126422e606e9dc3306ab0150d33a157a7f5febdbf",
+          "suffix": "For a case study of PMG, go here: Getting Information to the People - Case Study of PMG including a comparison of parliamentary monitoring orga",
+          "text": "PMG became a fully fledged independent NGO in July 2009."
+        },
+        "id": "38090afcb09a99294b59668126422e606e9dc3306ab0150d33a157a7f5febdbf",
+        "quote": "PMG became a fully fledged independent NGO in July 2009.",
+        "verified": true
+      },
+      {
+        "context": {
+          "prefix": "ding of all Parliamentary Committee meetings, where a monitor will tape and minute the proceedings and obtain all documents tabled in the committees.",
+          "sha256": "631daa24a78c636ac3b3ed909b11e5aa71dd382548839edab339c123e03cf237",
+          "suffix": "Once a detailed written report has been compiled, it passes through an editorial and quality control process. It is then published on the PMG website",
+          "text": "PMG\u2019s key activity is the attending of all Parliamentary Committee meetings, where a monitor will tape and minute the proceedings and obtain all documents tabled in the committees. Immediately after the meeting, the audio recording is published on the PMG website. Once a detailed written report has been compiled, it passes through an editorial and quality control process. It is then published on the PMG website within three working days of the committee proceedings along with all the relevant committee documents such as such as public submissions, working drafts of bills and briefings on policy & legislation."
+        },
+        "id": "4619b290618eda558fee91d9bea79b3dc66f4a49f676e6b2920ea72ed11197b9",
+        "quote": "Immediately after the meeting, the audio recording is published on the PMG website.",
+        "verified": true
+      },
+      {
+        "context": {
+          "prefix": "interested in. We email you committee meeting reports and documents, new bills, request for submissions, ministry media briefings and speeches.",
+          "sha256": "7bbe5390015e6af55ff55b36e0fb93cf29badea990ef497017deed51021e832d",
+          "suffix": "However certain committees were not covered prior to 2000. If you cannot find what you are looking for, please contact [email protected]. Wo",
+          "text": "Currently PMG covers all parliamentary committees (except Intelligence which is closed to the public) and the PMG website has a record of all meeting proceedings and other documents between January 1998 and the present. However certain committees were not covered prior to 2000. If you cannot find what you are looking for, please contact [email protected]."
+        },
+        "id": "dd845a9b3d5dfc20f2b815ffcf56515d5d89df5174507c6c1b4ff922038435f2",
+        "quote": "Currently PMG covers all parliamentary committees (except Intelligence which is closed to the public) and the PMG website has a record of all meeting proceedings and other documents between January 1998 and the present.",
+        "verified": true
+      },
+      {
+        "context": {
+          "prefix": "currently funded by the: Claude Leon Foundation Millennium Trust European Union Standard Bank In addition,",
+          "sha256": "c299e8f6fdf8174bfab10deca1dc06207311bc068c5e841c40268d887b2cb2b4",
+          "suffix": "Credits The National Assembly photo on our landing page is by GovernmentZA on flickr and is licensed under a CC-BY-ND-2.0 license. The",
+          "text": "In addition, the free access enjoyed by civil society is cross-subsidised by subscriptions paid by commercial and government users."
+        },
+        "id": "836b8c30024cf01e756a5248225968d82b7536cc06726abe577ee9bfa7a64477",
+        "quote": "the free access enjoyed by civil society is cross-subsidised by subscriptions paid by commercial and government users.",
+        "verified": true
+      },
+      {
+        "context": {
+          "prefix": "mmittees were not covered prior to 2000. If you cannot find what you are looking for, please contact [email protected]. Work Opportunities -",
+          "sha256": "a126defc7f40348574be729ec911b19f34718f828846e7c1a3818b58e3facce4",
+          "suffix": "Earn up to R4800 pm working two days a week during parliamentary session. This position is ideal for those who have a background or are interested in",
+          "text": "Work Opportunities - We are recruiting people of all ages to write detailed reports on Parliamentary Committee meetings. Earn up to R4800 pm working two days a week during parliamentary session. This position is ideal for those who have a background or are interested in politics and law, can write well (accuracy is essential also) and meet deadlines. Cape Town only. Send CV & letter to [email protected]"
+        },
+        "id": "9dfb2181caacffae8fae02403061575fbbcccac76cb00f63b2ad62670149b9e6",
+        "quote": "We are recruiting people of all ages to write detailed reports on Parliamentary Committee meetings.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
   "https://podnews.net/press-release/lamestream-podcast": {
     "checked": "2026-08-26",
     "etag": "\"7f2628fe5cf613c4293cb07ec2a39ac4-gzip\"",
@@ -4485,6 +4863,7 @@
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-26",
         "context": {
           "prefix": "for their house including safety and facility audits of bought back houses to identify their potential for different kinds of tenancy.",
           "sha256": "c32ff80280689420b855efd6209762b535e60b88091d0669f8ceff73e226e820",
@@ -4504,6 +4883,7 @@
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-26",
         "context": {
           "prefix": "own, those with power, the elites, the rich, or self-interested politicians\u2019 who are being represented. Reinventing democracy",
           "sha256": "d6f51366e8b60fa798347718bf5438e92ff008ae6ff9f84b2d0205ec1d01e77e",
@@ -4515,6 +4895,7 @@
         "verified": true
       },
       {
+        "checked": "2026-08-26",
         "context": {
           "prefix": "Reclaim our Recovery (ROR) say they have been pushing for robust, democratic, community involvement in the flood recovery since the start of 2022.",
           "sha256": "373bb0e4d16734a171c543938e80826235ca1a271cdef7b41f66582a057d6190",
@@ -4534,6 +4915,7 @@
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-26",
         "context": {
           "prefix": "project of grassroots, participatory democracy with the first of two public assemblies on housing. What happened:",
           "sha256": "962246259b6a487def673b4ca2f1ccccb76cdf98ebf9ec8ca07b6e77a8f1ff9e",
@@ -4553,6 +4935,7 @@
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-26",
         "context": {
           "prefix": "ended by 17 humans and 2 Canines (with plenty of Turkeys and ducks out in the yard!) we came up with a few priority projects we are keen on:",
           "sha256": "20e6e6902c0a0287a487e72910cf53a6f385b53c10413bfe63c121e7dee87b21",
@@ -5177,6 +5560,26 @@
     ],
     "last_modified": null
   },
+  "https://www.aljazeera.com/news/2026/7/29/nicaraguas-daniel-ortega-aims-to-bar-traitors-from-future-elections": {
+    "checked": "2026-08-26",
+    "document_sha256": "94580db0922fae7e36ee94b650caf7508c6662344af62dc6de8bf708a0068ef7",
+    "etag": "W/\"2d9ab-+GcGhG3nIOOZ4wvYR4r4wSA/aSs\"",
+    "evidence": [
+      {
+        "checked": "2026-08-26",
+        "context": {
+          "prefix": "sident that there would be no elections in the Central American nation, as a means of preventing the opposition from \u201cseizing the government\u201d. \u201c",
+          "sha256": "cf8192070c436692741a3acfff1d5b4e7fc8671cf57e468fbc942f3679e8ded1",
+          "suffix": "\u201d Porras said as he read the proposal. Criticism and sanctions A previous constitutional amendment was passe",
+          "text": "\u201cOur system of government, under the presidency of the people, proposes to be organised with an effective term of seven renewable years,\u201d Porras said as he read the proposal."
+        },
+        "id": "61b281d0ed0b796078271bd286bc4c1856ad39124ef434fce1a7a7f35b1986cd",
+        "quote": "Our system of government, under the presidency of the people, proposes to be organised with an effective term of seven renewable years,",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
   "https://www.aman-palestine.org/en/about-aman/5.html": {
     "checked": "2026-08-26",
     "document_sha256": "b56652591977ddef9cb4c2ac85c014f9c9c7f404bfeaafa3905077dde20edda7",
@@ -5336,6 +5739,17 @@
       {
         "id": "bca897fecd269434703d2f7e9b62d73411bb837f4b3b4ba0d4999695b6ecf137",
         "quote": "Over the next three years, we\u2019re expanding Build a Ballot to state elections in:...New South Wales in 2027",
+        "verified": true
+      },
+      {
+        "context": {
+          "prefix": ", or harder to navigate than it should be. We created Build a Ballot to make it clearer. How it began",
+          "sha256": "72bea5c8fe5d71647fe872812a2995cae021eabd635ce8eba84c40c567301112",
+          "suffix": "What began as two separate Instagram accounts sharing climate news quickly evolved into a shared mission: helping everyday Australians engage with ac",
+          "text": "Project Planet was co-founded by Lizzie Hedding and Tegan Lerm after connecting online during the 2019 \u2013 20 bushfires. What began as two separate Instagram accounts sharing climate news quickly evolved into a shared mission: helping everyday Australians engage with action to build a better future."
+        },
+        "id": "47750700a7bebaf2b21d166c8937b8ca119af77c3ee2bb97a7b448817aed2279",
+        "quote": "Project Planet was co-founded by Lizzie Hedding and Tegan Lerm after connecting online during the 2019\u201320 bushfires.",
         "verified": true
       }
     ],
@@ -6469,6 +6883,36 @@
     ],
     "last_modified": null
   },
+  "https://www.ndi.org/declaration-parliamentary-openness": {
+    "checked": "2026-08-25",
+    "document_sha256": "e37448c530390d606a3802446cf4eb4397f6a1d182a632dbc785a10344fc0adb",
+    "etag": null,
+    "evidence": [
+      {
+        "context": {
+          "prefix": "worldwide for stronger collaboration to improve openness, transparency and citizen participation in the legislative process.",
+          "sha256": "b67d63a56d7cd2ec9a0c10150e77b7ac2081e935b4be0f453ca98ac12b6da2c5",
+          "suffix": "in the presence of more than 400 parliamentarians and parliamentary staff. The conference was co-organized by the Inter-Parliamentary Union (IPU) and",
+          "text": "With support from more than 90 civil society parliamentary monitoring organizations (PMOs) from over 60 countries, the Declaration on Parliamentary Openness was launched at the World e-Parliament Conference 2012 in Rome in the presence of more than 400 parliamentarians and parliamentary staff. The conference was co-organized by the Inter-Parliamentary Union (IPU) and the United Nations through the Global Centre for ICT in Parliament and hosted by Italy\u2019s Chamber of Deputies."
+        },
+        "id": "8508869ee9985042849c5e5bcd2898cedfa594475c0dbc08c697504cd4a54567",
+        "quote": "With support from more than 90 civil society parliamentary monitoring organizations (PMOs) from over 60 countries, the Declaration on Parliamentary Openness was launched at the World e-Parliament Conference 2012 in Rome",
+        "verified": true
+      },
+      {
+        "context": {
+          "prefix": "aris, hosted by the French PMO Regards Citoyens, and the Center for European Studies of Sciences Po and M\u00e9dialab Sciences Po.",
+          "sha256": "4116766dc3163f3e35953045ead2b320d6cf98a8cad6b80ffc388fd5a340366e",
+          "suffix": "The declaration\u2019s launch comes as civil society organizations are increasingly seeking opportunities to engage collaboratively with parliaments to re",
+          "text": "The declaration, along with commentary documenting good practices on parliamentary openness, can be found on the website OpeningParliament.org, a joint initiative of NDI, Sunlight and the LALT Network. The declaration\u2019s launch comes as civil society organizations are increasingly seeking opportunities to engage collaboratively with parliaments to respond to increased citizen interest in accessing parliamentary and governmental information. By participating in the Open Government Partnership (OGP), some 55 governments have agreed to develop national action plans, supported by civil society input and monitoring."
+        },
+        "id": "4be3f670b5a173b7bea85bd329e77c6e76f552372487c03b0da648b0e5db2f2a",
+        "quote": "The declaration, along with commentary documenting good practices on parliamentary openness, can be found on the website OpeningParliament.org, a joint initiative of NDI, Sunlight and the LALT Network.",
+        "verified": true
+      }
+    ],
+    "last_modified": "Tue, 25 Aug 2026 15:58:07 GMT"
+  },
   "https://www.ndi.org/sites/default/files/2025-04/No-6-Lessons-from-Namfrel-and-Gong---NDI-Sustaining-the-Fight-for-Democracy-Lessons-from-Citizen-Election-Monitoring-Organizations-Around-the-World.pdf": {
     "checked": "2026-08-26",
     "etag": "\"70742-6326cd5015c1f\"",
@@ -6759,6 +7203,17 @@
         "id": "ecde6a2ee95a466cc9941e7950d391dcb400f52e53a0cd759b4a4ed9e0ce40a3",
         "quote": "The International Observatory on Participatory Democracy (OIDP) will return for its 25th annual conference in Krak\u00f3w from 21\u201323 September 2026",
         "verified": true
+      },
+      {
+        "context": {
+          "prefix": "6 11:00 AM 11:00 krakow Poland (map) Google Calendar ICS",
+          "sha256": "e98baa5dbaae3e6f843802d30b74d7dd38e4e9aa48e9b0de4563fa872a304df8",
+          "suffix": ", under the theme \u201cHope and renewal in the face of a global crisis of democracy.\u201d This milestone event invites political leaders, practitioners, acade",
+          "text": "The International Observatory on Participatory Democracy (OIDP) will return for its 25th annual conference in Krak\u00f3w from 21 \u2013 23 September 2026, under the theme \u201cHope and renewal in the face of a global crisis of democracy.\u201d This milestone event invites political leaders, practitioners, academics and civil society from around the world to reflect on how participatory democracy can respond to pressing global challenges like polarization, climate change, migration and declining trust in democratic institutions \u2014 and how local innovation can inform broader democratic futures."
+        },
+        "id": "0a15646e2993af88a85a9eafe015d51f94ff72f903633285587c34a78976e874",
+        "quote": "The International Observatory on Participatory Democracy (OIDP) will return for its 25th annual conference in Krak\u00f3w from 21\u201323 September 2026",
+        "verified": true
       }
     ],
     "last_modified": null
@@ -6770,6 +7225,11 @@
     "evidence": [
       {
         "id": "d39140481410db1394c64a21facfdbd7605cc549c80ab12b17c5a38ad308e582",
+        "quote": "The 14th World Forum for Democracy... will take place in Strasbourg from 2\u20134 November 2026 under the theme \"Democratic Foresight.\"",
+        "verified": true
+      },
+      {
+        "id": "c6c96fb6ac6c9f638e48d735399b74b0e78d25bc66478b6c36425b93a268bd19",
         "quote": "The 14th World Forum for Democracy... will take place in Strasbourg from 2\u20134 November 2026 under the theme \"Democratic Foresight.\"",
         "verified": true
       }
@@ -7358,6 +7818,26 @@
       }
     ],
     "manual_checked": "2026-08-22"
+  },
+  "https://www.upi.com/Top_News/World-News/2026/07/24/nicarague-electoral-system-reform/4981784924000/": {
+    "checked": "2026-08-26",
+    "document_sha256": "ffb7981d3deb14f524709286ee251e53fdda315b78bf2363897cd0c095e6bdd9",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-26",
+        "context": {
+          "prefix": "ess Friday of reforming the Constitution and the legal framework governing the electoral system, days after President Daniel Ortega said the country \"",
+          "sha256": "1bce133ac8811608f35158522482f36eac09b08cf5bd04ceb5016822a716804c",
+          "suffix": "\" that would allow the opposition to return to power. According to an official statement released by the Government of Reconciliation and Nation",
+          "text": "July 24 (UPI) -- Nicaragua's government began the process Friday of reforming the Constitution and the legal framework governing the electoral system, days after President Daniel Ortega said the country \"will never again hold elections\" that would allow the opposition to return to power."
+        },
+        "id": "873d2e0f5d2e2bc3bd8f63ab1857c739f94c0c2329d0939815cadfc4bba83f79",
+        "quote": "will never again hold elections",
+        "verified": true
+      }
+    ],
+    "last_modified": null
   },
   "https://www.v-dem.net/news/press-release-democratic-backsliding-reaches-western-democracies-with-us-decline-unprecedented/": {
     "checked": "2026-08-26",

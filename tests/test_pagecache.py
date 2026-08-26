@@ -149,6 +149,14 @@ class FetchHookTests(unittest.TestCase):
         def raise_for_status(self):
             pass
 
+        def iter_content(self, chunk_size=None):
+            # _fetch_page_text streams the body under check_fragments.py's
+            # MAX_FETCH_BYTES cap rather than reading .content directly.
+            yield self.content
+
+        def close(self):
+            pass
+
     def test_html_fetch_writes_through(self):
         resp = self.FakeResponse()
         resp.text = self.HTML

@@ -16,6 +16,7 @@ concepts:
 - radical-transparency
 - representative-democracy
 - democracy-tools
+- parliamentary-monitoring
 location:
   latitude: 4.711
   longitude: -74.0721

@@ -1709,6 +1709,62 @@
   color: #42a5f5;
   background: rgba(66, 165, 245, 0.2);
 }
+/* Multi-day span ("26–30 Aug · 5 days") on the details line. Outlined
+   rather than filled, so it reads as a fact about the event next to the
+   countdown's filled, colour-coded pill rather than competing with it. */
+.calendar-event-range {
+  font-weight: 600;
+  font-size: 0.92em;
+  padding: 0.05em 0.45em;
+  border-radius: 3px;
+  border: 1px solid var(--md-default-fg-color--lighter);
+  color: var(--md-default-fg-color);
+  white-space: nowrap;
+}
+.calendar-event--notable .calendar-event-range {
+  border-color: rgba(255, 179, 0, 0.5);
+}
+/* Countdown pill on each event's details line — text is written by
+   docs/overrides/calendar.html's renderCountdowns() from the viewer's own
+   clock, so it is empty in the built HTML and hidden until JS fills it. */
+.calendar-countdown:empty {
+  display: none;
+}
+.calendar-countdown {
+  font-weight: 700;
+  font-size: 0.92em;
+  padding: 0.05em 0.45em;
+  border-radius: 3px;
+  background: var(--md-default-fg-color--lightest);
+  color: var(--md-default-fg-color--light);
+  /* Seconds tick in the final hour; without a fixed-width figure the row
+     jitters sideways on every tick as digit widths change. */
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.calendar-countdown--soon {
+  color: #42a5f5;
+  background: rgba(66, 165, 245, 0.16);
+}
+.calendar-countdown--imminent,
+.calendar-countdown--now {
+  color: #4caf50;
+  background: rgba(76, 175, 80, 0.18);
+}
+.calendar-countdown--past {
+  opacity: 0.7;
+}
+/* A multi-day event that has started but not finished — same green
+   treatment as today's events, since it is equally "happening now". */
+.calendar-event.calendar-event--ongoing {
+  border-left: 4px solid #4caf50;
+  background: rgba(76, 175, 80, 0.1);
+  padding-left: 0.5em;
+}
+.calendar-event-badge--now {
+  color: #4caf50;
+  background: rgba(76, 175, 80, 0.2);
+}
 /* "This week" (day 2-7 out) is badge-only, deliberately without the
    colored border+background today/tomorrow get — a lighter third tier
    so it doesn't dilute the "truly imminent" signal those two carry. */
@@ -1902,6 +1958,13 @@
   white-space: nowrap;
   background: rgba(0,200,83,0.12);
   color: #00c853;
+}
+/* Same trust tier as .org-event-verified (a real check happened, it
+   passed) — a dashed border is enough to flag "different provenance"
+   (a human-obtained snapshot, not the automated checker) without
+   introducing a whole new color into the traffic-light system. */
+.org-event-verified--manual {
+  border: 1px dashed rgba(0,200,83,0.5);
 }
 .org-events-timeline li.org-event--notable .org-event-title {
   font-weight: 500;
@@ -2237,6 +2300,46 @@
 }
 .md-post--excerpt .md-tags {
   margin: 0.5em 0 0;
+}
+
+/* Colored pill treatment + click target, matching the .concept-tag chip
+   language used on org/concept pages (same shape, deliberately a
+   different hue — 199 vs concept-tag's 230 — so the two chip families
+   read as related but distinct at a glance) rather than a per-tag-name
+   palette: with hundreds of free-text tags accumulated since 2016,
+   a fixed manual color map (like .activity-method-chip's small closed
+   set) isn't practical here. Both partials/post.html's excerpt-card
+   tags and Material's own stock partials/tags.html (single-post page)
+   render an <a> once its href resolves to something (tag_url filter on
+   the excerpt cards, the tags plugin's own {name,url} resolution on the
+   single-post page — see hooks/tag_links.py and docs/tags.md), so this
+   rule doubles as the "still a plain span with no destination" fallback
+   for a page rendered before tags.md/hooks/tag_links.py existed. */
+/* Sized in rem, not em: the excerpt card's tag nav inherits a much
+   smaller font context than a single post page's does, so one `em` value
+   rendered the same chip at two very different sizes — 7.2px on /blog/
+   against 11.52px on the post itself, less than half the 14px meta line
+   directly above it and barely legible. A rem is fixed against the root,
+   so both contexts now render the chip identically. */
+.md-content--post .md-tags .md-tag,
+.md-post--excerpt .md-tags .md-tag {
+  display: inline-block;
+  padding: 2px 8px;
+  margin: 1px 2px 1px 0;
+  border-radius: 11px;
+  font-size: 0.65rem;
+  font-weight: 600;
+  background: hsl(199, 55%, 14%);
+  color: rgba(255,255,255,0.80);
+  text-decoration: none;
+  white-space: nowrap;
+  border: 1px solid hsl(199, 35%, 24%);
+}
+.md-content--post .md-tags a.md-tag:hover,
+.md-post--excerpt .md-tags a.md-tag:hover {
+  background: hsl(199, 60%, 22%);
+  color: #fff;
+  text-decoration: none;
 }
 
 

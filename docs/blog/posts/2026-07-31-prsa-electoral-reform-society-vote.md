@@ -12,10 +12,10 @@ date: 2026-07-31
 title: "PRSA Members to Vote on Rebrand to Australian Electoral Reform Society — AGM 12 November 2026"
 summary: "After a 130-year run as a single-issue STV advocacy body, the Proportional Representation Society of Australia is putting a 17-motion constitutional overhaul to members at its 12 November 2026 AGM: a rename to the Australian Electoral Reform Society, a broadened remit, modernised governance, and authorisation to spend from its ~$80,000 reserve on a rebrand. Passing requires a 75% majority, and — under the rules as they currently stand — no proxy votes."
 tags:
-  - Electoral Reform
-  - Proportional Representation
-  - Australia
-  - PRSA
+  - electoral-reform
+  - proportional-representation
+  - australia
+  - prsa
 ---
 
 The [Proportional Representation Society of Australia (PRSA)](../../organisations/prsa.md) — tracing its history back to the 1890s and describing itself as Australia's oldest continuing electoral reform coalition — has circulated a formal notice of motion for its **12 November 2026 AGM**: a 17-motion package that would rename the organisation, broaden its remit far beyond its traditional single-issue focus, and modernise its governance from the ground up.

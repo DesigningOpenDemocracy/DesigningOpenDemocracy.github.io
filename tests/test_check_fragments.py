@@ -16,6 +16,7 @@ import shutil
 import sys
 import tempfile
 import unittest
+from datetime import date
 from unittest import mock
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "util"))
@@ -127,6 +128,87 @@ class WikipediaTitleTests(unittest.TestCase):
         self.assertIsNone(cf.wikipedia_title("https://en.wikipedia.org/w/index.php"))
 
 
+class CheckEvidenceNoCachePreservesOtherEvidenceTests(unittest.TestCase):
+    """A successful --no-cache fetch must not erase the other quotes already
+    recorded against the same URL.
+
+    check_evidence() empties its local `entry` when use_cache=False, and the
+    success path used to rebuild cache[url]["evidence"] from that empty dict.
+    Since a run only ever re-checks the quotes it collected, every *other*
+    verified quote on that URL was silently dropped from the state file.
+    Confirmed on 2026-08-25: one `--no-cache --slug ...` run dropped 28
+    verified event quotes belonging to orgs outside the slug list. The two
+    BLOCKED_ERRORS paths already merged from disk; the success path now does
+    too. --no-cache means "don't trust the cached verdict for the quote I'm
+    checking now," not "erase what's known about the others."."""
+
+    URL = "https://example.org/shared-source"
+
+    def setUp(self):
+        cf.reset_run_pages()
+        patcher = mock.patch.object(cf.time, "sleep")
+        patcher.start()
+        self.addCleanup(patcher.stop)
+
+    def _cache_with_two_quotes(self):
+        return {self.URL: {
+            "checked": "2026-01-01",
+            "document_sha256": "stale",
+            "archive_url": "https://web.archive.org/web/2026/example",
+            "url_status": "live",
+            "evidence": [
+                {"id": cf.sha256(cf.normalize_ws("quote one")),
+                 "quote": "quote one", "verified": True},
+                {"id": cf.sha256(cf.normalize_ws("quote two")),
+                 "quote": "quote two", "verified": True},
+            ],
+        }}
+
+    def _recheck_one(self, cache):
+        page = "preamble quote one middle quote two tail"
+        with mock.patch.object(cf, "_fetch_page_text",
+                               return_value=(page, None, None)):
+            return cf.check_evidence(self.URL, "quote one", cache, use_cache=False)
+
+    def test_no_cache_recheck_keeps_the_other_quotes_verdict(self):
+        cache = self._cache_with_two_quotes()
+        result, _, error, _, _, _ = self._recheck_one(cache)
+        self.assertEqual(result, "good")
+        self.assertIsNone(error)
+        kept = {e["id"]: e for e in cache[self.URL]["evidence"]}
+        self.assertEqual(len(kept), 2)
+        other = kept[cf.sha256(cf.normalize_ws("quote two"))]
+        self.assertEqual(other["quote"], "quote two")
+        self.assertTrue(other["verified"])
+
+    def test_no_cache_recheck_still_refreshes_the_checked_quote(self):
+        cache = self._cache_with_two_quotes()
+        self._recheck_one(cache)
+        entry = cache[self.URL]
+        checked = {e["id"]: e for e in entry["evidence"]}[
+            cf.sha256(cf.normalize_ws("quote one"))]
+        self.assertTrue(checked["verified"])
+        self.assertNotEqual(entry["document_sha256"], "stale")
+
+    def test_no_cache_recheck_keeps_archive_and_url_status(self):
+        # These are human/Wayback-owned fields on the URL, not per-quote
+        # verdicts — a re-fetch has no business dropping them either.
+        cache = self._cache_with_two_quotes()
+        self._recheck_one(cache)
+        self.assertEqual(cache[self.URL]["archive_url"],
+                         "https://web.archive.org/web/2026/example")
+        self.assertEqual(cache[self.URL]["url_status"], "live")
+
+    def test_new_quote_on_known_url_is_appended_not_substituted(self):
+        cache = self._cache_with_two_quotes()
+        page = "preamble quote one middle quote two tail plus a brand new quote here"
+        with mock.patch.object(cf, "_fetch_page_text",
+                               return_value=(page, None, None)):
+            cf.check_evidence(self.URL, "a brand new quote", cache, use_cache=False)
+        quotes = {e.get("quote") for e in cache[self.URL]["evidence"]}
+        self.assertEqual(quotes, {"quote one", "quote two", "a brand new quote"})
+
+
 class CheckEvidenceBlockedCacheTests(unittest.TestCase):
     """A URL confirmed BLOCKED (403/429) must be skipped on later runs — no
     network call — until --no-cache forces a recheck, and must NOT stay
@@ -135,6 +217,7 @@ class CheckEvidenceBlockedCacheTests(unittest.TestCase):
     403/429 mean "this server doesn't want scripted requests."."""
 
     def setUp(self):
+        cf.reset_run_pages()
         # check_evidence() sleeps FETCH_DELAY before a real fetch attempt —
         # only mocking _fetch_page_text still leaves that real 0.5s sleep
         # in every test that reaches it. Patch it out so this stays a fast
@@ -346,6 +429,89 @@ class CheckEvidenceBlockedCacheTests(unittest.TestCase):
         self.mock_queue_request.assert_not_called()
 
 
+class RunPageReuseTests(unittest.TestCase):
+    """check_evidence() runs once per evidence string, so a URL carrying
+    several quotes used to be downloaded once per quote — 141 redundant
+    downloads across a full run (499 evidence items on 358 distinct URLs),
+    with pmg.org.za/page/what-is-pmg fetched 11 times in one run. Conditional
+    GET can't help: only 31% of these URLs send an ETag or Last-Modified at
+    all, and a 304 is still a request. The body from this run's own fetch is
+    reused instead.
+    """
+
+    def setUp(self):
+        cf.reset_run_pages()
+        patcher = mock.patch.object(cf.time, "sleep")
+        patcher.start()
+        self.addCleanup(patcher.stop)
+        self.addCleanup(cf.reset_run_pages)
+
+    def _fake_page(self, text="Alpha sentence here. Beta sentence there.", etag='"v1"'):
+        resp = mock.Mock()
+        resp.headers = {"ETag": etag, "Last-Modified": "Wed, 20 Aug 2026 00:00:00 GMT"}
+        return mock.Mock(return_value=(text, resp, None))
+
+    def test_second_quote_on_the_same_url_is_not_re_fetched(self):
+        cache = {}
+        fake = self._fake_page()
+        with mock.patch.object(cf, "_fetch_page_text", fake):
+            first = cf.check_evidence("https://example.org/about", "Alpha sentence here.", cache)
+            second = cf.check_evidence("https://example.org/about", "Beta sentence there.", cache)
+        self.assertEqual(fake.call_count, 1)
+        self.assertEqual(first[0], "good")
+        self.assertEqual(second[0], "good")
+        # Both verdicts are recorded, not just the one that did the fetching.
+        quotes = {e["quote"] for e in cache["https://example.org/about"]["evidence"]}
+        self.assertEqual(quotes, {"Alpha sentence here.", "Beta sentence there."})
+
+    def test_a_different_url_is_still_fetched(self):
+        cache = {}
+        fake = self._fake_page()
+        with mock.patch.object(cf, "_fetch_page_text", fake):
+            cf.check_evidence("https://example.org/about", "Alpha sentence here.", cache)
+            cf.check_evidence("https://example.org/other", "Alpha sentence here.", cache)
+        self.assertEqual(fake.call_count, 2)
+
+    def test_reused_body_still_reports_a_mismatch(self):
+        cache = {}
+        fake = self._fake_page()
+        with mock.patch.object(cf, "_fetch_page_text", fake):
+            cf.check_evidence("https://example.org/about", "Alpha sentence here.", cache)
+            result, _, error, _, _, _ = cf.check_evidence(
+                "https://example.org/about", "Text the page never carried.", cache)
+        self.assertEqual(fake.call_count, 1)
+        self.assertIsNone(error)
+        self.assertEqual(result, "bad")
+
+    def test_reuse_under_no_cache_does_not_blank_the_validators(self):
+        # --no-cache empties check_evidence's local view of the entry, so a
+        # reusing sibling that fell back to it would write etag/last_modified
+        # as None — throwing away the validators this run's own fetch just
+        # established, and with them the next run's chance of a 304.
+        cache = {}
+        fake = self._fake_page()
+        with mock.patch.object(cf, "_fetch_page_text", fake):
+            cf.check_evidence("https://example.org/about", "Alpha sentence here.",
+                              cache, use_cache=False)
+            cf.check_evidence("https://example.org/about", "Beta sentence there.",
+                              cache, use_cache=False)
+        self.assertEqual(fake.call_count, 1)
+        entry = cache["https://example.org/about"]
+        self.assertEqual(entry["etag"], '"v1"')
+        self.assertEqual(entry["last_modified"], "Wed, 20 Aug 2026 00:00:00 GMT")
+
+    def test_blocked_url_is_never_stored_as_a_reusable_page(self):
+        cache = {}
+        fake = mock.Mock(return_value=(None, None, "HTTP_403"))
+        with mock.patch.object(cf.manual_dump, "queue_request"), \
+                mock.patch.object(cf, "_fetch_page_text", fake):
+            cf.check_evidence("https://example.org/about", "Alpha sentence here.", cache)
+            cf.check_evidence("https://example.org/about", "Beta sentence there.",
+                              cache, use_cache=False)
+        # Second call still attempts a fetch — a failure is not a body.
+        self.assertEqual(fake.call_count, 2)
+
+
 class DocumentSha256Tests(unittest.TestCase):
     """document_sha256 is the resource-level integrity signal projected
     into citations.json as item-level document.sha256 — sha256 of the
@@ -357,6 +523,7 @@ class DocumentSha256Tests(unittest.TestCase):
     """
 
     def setUp(self):
+        cf.reset_run_pages()
         patcher = mock.patch.object(cf.manual_dump, "queue_request")
         self.mock_queue_request = patcher.start()
         self.addCleanup(patcher.stop)
@@ -414,6 +581,7 @@ class FetchPageTextRobotsTests(unittest.TestCase):
     path this function never actually requests directly."""
 
     def setUp(self):
+        cf.reset_run_pages()
         # These tests call the REAL _fetch_page_text() with mocked HTTP, so
         # its pagecache.store() hook would otherwise write through to the
         # real .pagecache/ at the repo root (confirmed happening: the
@@ -453,6 +621,17 @@ class FetchPageTextRobotsTests(unittest.TestCase):
         self.assertEqual(text, "some text")
 
 
+def _streaming_mock(content, headers=None, encoding=None, status_code=200, text=None):
+    """A fake requests.Response for _fetch_page_text(), which streams the
+    body via iter_content() under check_fragments.py's MAX_FETCH_BYTES cap
+    rather than reading .content/.text directly."""
+    resp = mock.Mock(status_code=status_code, headers=headers or {}, content=content,
+                     encoding=encoding, iter_content=lambda chunk_size=None: [content])
+    if text is not None:
+        resp.text = text
+    return resp
+
+
 class FetchPageTextEncodingTests(unittest.TestCase):
     """A page serving UTF-8 bytes under an absent or Latin-1-family charset
     label must be decoded as UTF-8, not requests' RFC default for unlabelled
@@ -470,11 +649,9 @@ class FetchPageTextEncodingTests(unittest.TestCase):
                                        {"User-Agent": cf.USER_AGENT})
 
     def _mojibake_response(self, encoding):
-        resp = mock.Mock(status_code=200, headers={}, content=self.UTF8_BODY,
-                         encoding=encoding)
         # What requests' r.text would hand back if the label were trusted:
-        resp.text = self.UTF8_BODY.decode("iso-8859-1")
-        return resp
+        return _streaming_mock(self.UTF8_BODY, encoding=encoding,
+                               text=self.UTF8_BODY.decode("iso-8859-1"))
 
     def test_utf8_bytes_under_latin1_label_decode_as_utf8(self):
         text, _r, error = self._fetch(self._mojibake_response("iso-8859-1"))
@@ -490,9 +667,7 @@ class FetchPageTextEncodingTests(unittest.TestCase):
     def test_genuinely_non_utf8_page_falls_back_to_declared_decoding(self):
         latin1_src = "<html><body><p>café résumé</p></body></html>"
         raw = latin1_src.encode("windows-1252")  # 0xE9 alone — invalid UTF-8
-        resp = mock.Mock(status_code=200, headers={}, content=raw,
-                         encoding="windows-1252")
-        resp.text = latin1_src
+        resp = _streaming_mock(raw, encoding="windows-1252", text=latin1_src)
         text, _r, error = self._fetch(resp)
         self.assertIsNone(error)
         self.assertIn("café résumé", text)  # declared decoding used intact
@@ -507,6 +682,64 @@ def _zip_bytes(members):
         for name, content in members.items():
             z.writestr(name, content)
     return buf.getvalue()
+
+
+class MaxFetchBytesTests(unittest.TestCase):
+    """A citation body is downloaded in full before any extraction can
+    happen — PDF/docx extraction needs the complete file, not just a
+    prefix, so a mislinked large file (a dataset dump, a video, an ISO)
+    would otherwise be pulled down whole just to be discarded as
+    unparseable. MAX_FETCH_BYTES bounds that: a declared Content-Length
+    over the cap skips the download outright, and iter_content() enforces
+    the same cap while reading in case the header is absent, wrong, or a
+    server lies about it (chunked transfer has no length to check up
+    front)."""
+
+    def _fetch(self, resp):
+        with mock.patch.object(cf, "robots_allowed", return_value=True), \
+             mock.patch.object(cf.pagecache, "enabled", False), \
+             mock.patch.object(cf.requests, "get", return_value=resp):
+            return cf._fetch_page_text("https://example.org/huge.pdf",
+                                       {"User-Agent": cf.USER_AGENT})
+
+    def test_declared_content_length_over_cap_skips_the_download(self):
+        resp = mock.Mock(status_code=200,
+                         headers={"Content-Length": str(cf.MAX_FETCH_BYTES + 1)})
+        # If the cap didn't bite before the body was read, iterating this
+        # would raise — proving the declared-length check is what stopped it.
+        resp.iter_content = mock.Mock(side_effect=AssertionError("body was read"))
+        text, _r, error = self._fetch(resp)
+        self.assertIsNone(text)
+        self.assertEqual(error, "TOO_LARGE")
+        resp.iter_content.assert_not_called()
+
+    def test_body_under_the_cap_is_fetched_normally(self):
+        body = b"<html><body>" + b"a" * 1000 + b"</body></html>"
+        resp = _streaming_mock(body, text=body.decode())
+        text, _r, error = self._fetch(resp)
+        self.assertIsNone(error)
+        self.assertIn("a" * 1000, text)
+
+    def test_body_exceeding_the_cap_without_a_length_header_is_stopped(self):
+        # No Content-Length (as chunked transfer-encoding would send), so the
+        # cap can only be enforced by counting bytes as they stream in.
+        chunk = b"x" * (1024 * 1024)
+        chunks_needed = cf.MAX_FETCH_BYTES // len(chunk) + 2
+        resp = mock.Mock(status_code=200, headers={},
+                         iter_content=lambda chunk_size=None: iter([chunk] * chunks_needed))
+        text, _r, error = self._fetch(resp)
+        self.assertIsNone(text)
+        self.assertEqual(error, "TOO_LARGE")
+
+    def test_a_non_numeric_content_length_does_not_crash(self):
+        # Malformed header — fall through to the streamed byte-count check
+        # rather than raising on int().
+        body = b"<html><body>fine</body></html>"
+        resp = _streaming_mock(body, headers={"Content-Length": "not-a-number"},
+                               text=body.decode())
+        text, _r, error = self._fetch(resp)
+        self.assertIsNone(error)
+        self.assertIn("fine", text)
 
 
 class ZipXmlExtractionTests(unittest.TestCase):
@@ -566,15 +799,13 @@ class ZipXmlExtractionTests(unittest.TestCase):
                                        {"User-Agent": cf.USER_AGENT})
 
     def test_fetch_dispatches_zip_magic_to_the_extractor(self):
-        resp = mock.Mock(status_code=200, headers={},
-                         content=_zip_bytes({"word/document.xml": self.DOCX_XML}))
+        resp = _streaming_mock(_zip_bytes({"word/document.xml": self.DOCX_XML}))
         text, _r, error = self._fetch(resp)
         self.assertIsNone(error)
         self.assertIn("engagement policy", text)
 
     def test_fetch_reports_office_parse_error_for_non_document_zip(self):
-        resp = mock.Mock(status_code=200, headers={},
-                         content=_zip_bytes({"META-INF/x": "junk"}))
+        resp = _streaming_mock(_zip_bytes({"META-INF/x": "junk"}))
         text, _r, error = self._fetch(resp)
         self.assertIsNone(text)
         self.assertEqual(error, "OFFICE_PARSE_ERROR")
@@ -583,6 +814,7 @@ class ZipXmlExtractionTests(unittest.TestCase):
 class WriteQuoteFixTests(unittest.TestCase):
 
     def setUp(self):
+        cf.reset_run_pages()
         self.tmpdir = tempfile.mkdtemp()
         self.addCleanup(shutil.rmtree, self.tmpdir, ignore_errors=True)
 
@@ -713,6 +945,7 @@ class WriteQuoteFixTests(unittest.TestCase):
 class FindSharedLinkEvidenceTests(unittest.TestCase):
 
     def setUp(self):
+        cf.reset_run_pages()
         self.tmpdir = tempfile.mkdtemp()
         self.addCleanup(shutil.rmtree, self.tmpdir, ignore_errors=True)
 
@@ -756,6 +989,7 @@ class FindSharedLinkEvidenceTests(unittest.TestCase):
 class WriteSharedLinkFixTests(unittest.TestCase):
 
     def setUp(self):
+        cf.reset_run_pages()
         self.tmpdir = tempfile.mkdtemp()
         self.addCleanup(shutil.rmtree, self.tmpdir, ignore_errors=True)
 
@@ -816,6 +1050,7 @@ class CollectEvidenceSlugFilterTests(unittest.TestCase):
     as if it checked both. args.slug is now a list (action="append")."""
 
     def setUp(self):
+        cf.reset_run_pages()
         self.tmpdir = tempfile.mkdtemp()
         self.addCleanup(shutil.rmtree, self.tmpdir, ignore_errors=True)
         self._orig_org_dir = cf.ORG_DIR
@@ -864,12 +1099,273 @@ class CollectEvidenceSlugFilterTests(unittest.TestCase):
         self.assertNotIn("beta-org", seen)
 
 
+class StalenessGateTests(unittest.TestCase):
+    """The default run re-verifies a quote only once its own verdict has aged
+    past --max-age, instead of issuing a conditional GET for every citation on
+    every run forever.
+
+    Two things this has to get right. (1) Age is per-quote, not per-URL: a
+    URL's `checked` refreshes whenever any quote on it is fetched, but only
+    collected quotes are re-evaluated, and 43% of this corpus's quotes sit on
+    multi-quote URLs. (2) Due dates must be spread — 297 of 367 URLs shared a
+    single `checked` date, so an unjittered window would age the whole corpus
+    out on one day and re-stamp it to one day again."""
+
+    URL = "https://example.org/page"
+    TODAY = date(2026, 8, 26)
+
+    def _cache(self, checked=None, url_checked=None, quote="a quote"):
+        ev = {"id": cf.sha256(cf.normalize_ws(quote)),
+              "quote": quote, "verified": True}
+        if checked:
+            ev["checked"] = checked
+        entry = {"evidence": [ev]}
+        if url_checked:
+            entry["checked"] = url_checked
+        return {self.URL: entry}
+
+    def test_never_checked_evidence_is_always_due(self):
+        self.assertTrue(cf.is_due({}, self.URL, "a quote", 90, self.TODAY))
+
+    def test_never_checked_is_due_even_with_a_huge_window(self):
+        self.assertTrue(cf.is_due({}, self.URL, "a quote", 100000, self.TODAY))
+
+    def test_recently_checked_evidence_is_not_due(self):
+        cache = self._cache(checked="2026-08-20")
+        self.assertFalse(cf.is_due(cache, self.URL, "a quote", 90, self.TODAY))
+
+    def test_evidence_older_than_the_window_is_due(self):
+        # Well past 90d + the largest possible offset (<90d), so this is due
+        # regardless of where the URL's deterministic offset falls.
+        cache = self._cache(checked="2025-01-01")
+        self.assertTrue(cf.is_due(cache, self.URL, "a quote", 90, self.TODAY))
+
+    def test_max_age_zero_checks_everything(self):
+        cache = self._cache(checked=self.TODAY.isoformat())
+        self.assertTrue(cf.is_due(cache, self.URL, "a quote", 0, self.TODAY))
+
+    def test_per_quote_date_wins_over_the_url_level_date(self):
+        # The regression this whole design exists for: a sibling quote's
+        # check refreshed the URL date, but THIS quote was last verified
+        # long ago and must still come due.
+        cache = self._cache(checked="2025-01-01",
+                            url_checked=self.TODAY.isoformat())
+        self.assertTrue(cf.is_due(cache, self.URL, "a quote", 90, self.TODAY))
+
+    def test_url_level_date_is_the_fallback_for_pre_field_entries(self):
+        # Entries written before per-quote stamping have no quote date; the
+        # URL date is the best available and must not read as "never checked".
+        cache = self._cache(checked=None, url_checked="2026-08-20")
+        self.assertEqual(
+            cf.evidence_age_days(cache, self.URL,
+                                 cf.sha256(cf.normalize_ws("a quote")),
+                                 self.TODAY), 6)
+        self.assertFalse(cf.is_due(cache, self.URL, "a quote", 90, self.TODAY))
+
+    def test_unparseable_date_reads_as_never_checked(self):
+        cache = self._cache(checked="not-a-date")
+        self.assertIsNone(cf.evidence_age_days(
+            cache, self.URL, cf.sha256(cf.normalize_ws("a quote")), self.TODAY))
+        self.assertTrue(cf.is_due(cache, self.URL, "a quote", 90, self.TODAY))
+
+    def test_offset_is_deterministic_and_at_most_half_the_window(self):
+        for url in ("https://a.example/x", "https://b.example/y",
+                    "https://c.example/z"):
+            first = cf.staleness_offset(url, 90)
+            self.assertEqual(first, cf.staleness_offset(url, 90))
+            self.assertGreaterEqual(first, 0)
+            self.assertLess(first, 45)
+
+    def test_offset_spreads_a_corpus_checked_on_one_day(self):
+        # The thundering-herd guard: URLs sharing an identical checked date
+        # must not all fall due together. Capped at half the window, so ~45
+        # distinct due dates is the most 90 days can produce.
+        offsets = {cf.staleness_offset("https://example.org/page%d" % i, 90)
+                   for i in range(400)}
+        self.assertGreater(len(offsets), 30)
+
+    def test_max_age_is_a_ceiling_not_a_floor(self):
+        # --max-age names the most staleness tolerated, the same sense
+        # HTTP Cache-Control's max-age carries. The offset is subtracted, so
+        # nothing may sit unverified for longer than the stated window;
+        # spreading by *adding* would have made --max-age 90 mean "90 to 179
+        # days, averaging 135" — a flag quietly missing its own bound.
+        cache = self._cache(checked="2026-05-28")   # exactly 90 days before TODAY
+        self.assertTrue(cf.is_due(cache, self.URL, "a quote", 90, self.TODAY))
+
+    def test_nothing_exceeds_the_window_across_many_urls(self):
+        for i in range(500):
+            url = "https://example.org/page%d" % i
+            self.assertLessEqual(90 - cf.staleness_offset(url, 90), 90)
+
+    def test_tiny_windows_do_not_divide_to_a_zero_modulus(self):
+        # max_age of 1 would make the offset modulus 1//2 == 0; guarded so
+        # this raises nothing and simply yields no spread.
+        self.assertEqual(cf.staleness_offset("https://example.org/x", 1), 0)
+        self.assertTrue(cf.is_due(self._cache(checked="2026-08-25"),
+                                  self.URL, "a quote", 1, self.TODAY))
+
+
+class FullScanModeTests(unittest.TestCase):
+    """--full is the discoverable spelling of "no age window" — normalised to
+    max_age=0 at parse time so the gate only ever reads args.max_age. It stays
+    cache-aware (conditional GETs, blocked URLs still skipped); --no-cache is
+    the separate, harder reset."""
+
+    URL = "https://example.org/page"
+    TODAY = date(2026, 8, 26)
+
+    def _fresh_cache(self):
+        return {self.URL: {"evidence": [
+            {"id": cf.sha256(cf.normalize_ws("a quote")), "quote": "a quote",
+             "verified": True, "checked": self.TODAY.isoformat()}]}}
+
+    def test_window_skips_freshly_checked_evidence(self):
+        self.assertFalse(
+            cf.is_due(self._fresh_cache(), self.URL, "a quote", 90, self.TODAY))
+
+    def test_full_scan_checks_even_freshly_checked_evidence(self):
+        # max_age=0 is what --full normalises to.
+        self.assertTrue(
+            cf.is_due(self._fresh_cache(), self.URL, "a quote", 0, self.TODAY))
+
+    def test_negative_window_is_treated_as_full_not_as_skip_everything(self):
+        # Guards against a negative --max-age silently disabling verification.
+        self.assertTrue(
+            cf.is_due(self._fresh_cache(), self.URL, "a quote", -5, self.TODAY))
+
+
+class SpotCheckSampleTests(unittest.TestCase):
+    """When nothing is due, sample a few fresh items anyway — a scheduled run
+    that checks nothing detects nothing, and a page rewritten the day after
+    its last check would otherwise go unnoticed for the rest of the window."""
+
+    def _items(self, n):
+        return [("https://example.org/%d" % i, "quote %d" % i, "label", "event", "p")
+                for i in range(n)]
+
+    def test_sample_is_stable_within_a_day(self):
+        pool = self._items(50)
+        day = date(2026, 8, 26)
+        self.assertEqual(cf.spot_check_sample(pool, 5, day),
+                         cf.spot_check_sample(pool, 5, day))
+
+    def test_sample_rotates_across_days(self):
+        pool = self._items(50)
+        a = cf.spot_check_sample(pool, 5, date(2026, 8, 26))
+        b = cf.spot_check_sample(pool, 5, date(2026, 8, 27))
+        self.assertNotEqual(a, b)
+
+    def test_sample_is_capped_by_pool_size(self):
+        self.assertEqual(len(cf.spot_check_sample(self._items(3), 10)), 3)
+
+    def test_zero_or_negative_want_samples_nothing(self):
+        # The caller passes (spot_check - len(due)), which goes negative once
+        # more than N items are already due — that must not wrap around.
+        self.assertEqual(cf.spot_check_sample(self._items(50), 0), [])
+        self.assertEqual(cf.spot_check_sample(self._items(50), -7), [])
+
+    def test_empty_pool_is_safe(self):
+        self.assertEqual(cf.spot_check_sample([], 5), [])
+
+
+class CollectEvidenceSlugScopeTests(unittest.TestCase):
+    """--slug must narrow footnotes and shared links too, not just events.
+
+    Regression for a real cost: --slug only ever filtered the events loop,
+    so `check_fragments.py --slug one-org --no-cache` still collected every
+    footnote citation on the entire site and re-fetched all of them — one
+    request to every cited webserver in the landscape to verify three
+    quotes on one page. Asking about one org now means fetching only what
+    that org's page cites."""
+
+    def setUp(self):
+        cf.reset_run_pages()
+        self.tmpdir = tempfile.mkdtemp()
+        self.addCleanup(shutil.rmtree, self.tmpdir, ignore_errors=True)
+        self._orig_org_dir = cf.ORG_DIR
+        self._orig_docs_dir = cf.DOCS_DIR
+        cf.ORG_DIR = os.path.join(self.tmpdir, "organisations")
+        cf.DOCS_DIR = self.tmpdir
+        os.makedirs(cf.ORG_DIR, exist_ok=True)
+
+        one_event = (
+            "- date: '2020-01-01'\n"
+            "  title: Founded\n"
+            "  url: https://example.org/about\n"
+            "  quote: some quote text\n"
+            "  note: Test event.\n"
+            "  proof_level: high\n"
+        )
+        for slug in ("alpha-org", "beta-org"):
+            path = make_org_file(cf.ORG_DIR, slug, one_event)
+            with open(path, "a", encoding="utf-8") as f:
+                f.write(
+                    '\n[^%s-ref]: "a %s footnote excerpt" '
+                    '[Page](https://example.org/%s), Example.\n' % (slug, slug, slug))
+
+        # A non-org page with its own footnote, plus a blog shared link:
+        # neither belongs to any org, so --slug must exclude both.
+        with open(os.path.join(self.tmpdir, "concept.md"), "w", encoding="utf-8") as f:
+            f.write('---\ntitle: A Concept\n---\n\nBody.\n\n'
+                    '[^c]: "an unrelated concept excerpt" '
+                    '[Page](https://elsewhere.example/c), Elsewhere.\n')
+        posts_dir = os.path.join(self.tmpdir, "blog", "posts")
+        os.makedirs(posts_dir, exist_ok=True)
+        make_blog_post_file(
+            posts_dir, "test-post",
+            "  url: https://example.org/paper\n"
+            "  title: A Paper\n"
+            "  description: The abstract text goes here.\n",
+        )
+
+    def tearDown(self):
+        cf.ORG_DIR = self._orig_org_dir
+        cf.DOCS_DIR = self._orig_docs_dir
+
+    def _items(self, slug):
+        return cf.collect_evidence(
+            argparse.Namespace(slug=slug, events_only=False))
+
+    def test_without_slug_everything_is_collected(self):
+        kinds = {}
+        for _, _, _, kind, _ in self._items(None):
+            kinds[kind] = kinds.get(kind, 0) + 1
+        self.assertEqual(kinds.get("event"), 2)
+        self.assertEqual(kinds.get("footnote"), 3)   # two org pages + the concept
+        self.assertEqual(kinds.get("shared_link"), 1)
+
+    def test_slug_limits_footnotes_to_that_orgs_page(self):
+        urls = {url for url, _, _, kind, _ in self._items(["alpha-org"])
+                if kind == "footnote"}
+        self.assertEqual(urls, {"https://example.org/alpha-org"})
+
+    def test_slug_excludes_non_org_footnotes_and_shared_links(self):
+        items = self._items(["alpha-org"])
+        self.assertFalse([i for i in items if i[3] == "shared_link"])
+        self.assertFalse([i for i in items
+                          if i[0] == "https://elsewhere.example/c"])
+
+    def test_repeated_slug_collects_each_orgs_footnotes(self):
+        urls = {url for url, _, _, kind, _ in self._items(["alpha-org", "beta-org"])
+                if kind == "footnote"}
+        self.assertEqual(urls, {"https://example.org/alpha-org",
+                                "https://example.org/beta-org"})
+
+    def test_unknown_slug_is_skipped_not_crashed(self):
+        # A typo'd slug has no page on disk; collect_evidence must not
+        # raise on the missing file.
+        self.assertFalse([i for i in self._items(["no-such-org"])
+                          if i[3] == "footnote"])
+
+
 class CollectEvidenceSharedLinkTests(unittest.TestCase):
     """collect_evidence() must pick up blog posts' shared_link.description:
     under docs/blog/posts/, tagged kind='shared_link', alongside events and
     footnotes — not just org pages directly under DOCS_DIR."""
 
     def setUp(self):
+        cf.reset_run_pages()
         self.tmpdir = tempfile.mkdtemp()
         self.addCleanup(shutil.rmtree, self.tmpdir, ignore_errors=True)
         self._orig_org_dir = cf.ORG_DIR
@@ -914,6 +1410,7 @@ class SetUrlStatusCliTests(unittest.TestCase):
     2026-08-22-citation-archival-design-decisions.md."""
 
     def setUp(self):
+        cf.reset_run_pages()
         self.tmpdir = tempfile.mkdtemp()
         self.addCleanup(shutil.rmtree, self.tmpdir, ignore_errors=True)
         self.cache_path = os.path.join(self.tmpdir, "cache.json")
@@ -978,6 +1475,7 @@ class UncheckedOnlyFilterTests(unittest.TestCase):
     NEW_QUOTE = "this quote has never been checked"
 
     def setUp(self):
+        cf.reset_run_pages()
         self.tmpdir = tempfile.mkdtemp()
         self.addCleanup(shutil.rmtree, self.tmpdir, ignore_errors=True)
         self._orig_org_dir = cf.ORG_DIR

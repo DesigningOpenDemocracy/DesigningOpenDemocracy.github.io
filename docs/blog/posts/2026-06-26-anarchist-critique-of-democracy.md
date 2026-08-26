@@ -18,9 +18,9 @@ categories:
   - Democratic Theory
   - Philosophy
 tags:
-  - Anarchism
-  - Democratic Theory
-  - Philosophy
+  - anarchism
+  - democratic-theory
+  - philosophy
 ---
 
 [Andrewism's "We Need To Rethink Democracy"](https://www.youtube.com/watch?v=W5JEJ_L_Zjg) (June 2026) argues that democracy — even "real," direct, consensus-based democracy — is not a fellow traveller of anarchism but one of its obstacles. It's a substantial, well-sourced essay, and the argument is worth engaging with directly, including the parts that cut against how DOD itself talks about its work.

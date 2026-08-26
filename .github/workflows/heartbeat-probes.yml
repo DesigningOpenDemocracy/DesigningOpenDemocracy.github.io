@@ -33,16 +33,21 @@ jobs:
           python util/scrape_news.py | tee /tmp/scrape.log
 
       - name: Verify event and footnote evidence still matches live pages
+        id: fragments
         run: |
           set -o pipefail
           python util/check_fragments.py --save-to-wayback --no-page-cache | tee /tmp/fragments.log
-        continue-on-error: true  # report-only: stale evidence shouldn't block the RSS/scrape commit below
+        # Non-fatal HERE so a stale citation can't stop the commit below from
+        # persisting this run's work — but no longer silently swallowed: the
+        # final step fails the job on this step's outcome, after the push.
+        continue-on-error: true
 
       - name: Check event citation URLs are still live
+        id: urls
         run: |
           set -o pipefail
           python util/check_event_urls.py | tee /tmp/urls.log
-        continue-on-error: true  # report-only, same reasoning — see job summary/log for findings
+        continue-on-error: true  # same reasoning as above; surfaced by the final step
 
       - name: Commit any updates
         run: |
@@ -58,10 +63,84 @@ jobs:
             )
             git commit -m "chore: automated activity probe — $(date -u +%Y-%m-%d)" -m "$SUMMARY"
           fi
-          # The job above can run for a couple of hours (check_fragments.py verifies
-          # every citation live and archives each to the Wayback Machine), so `main`
-          # has often moved by the time we get here — rebase onto its tip before
+          # This job used to run for a couple of hours, when check_fragments.py
+          # verified every citation live on every run. It now re-verifies only
+          # what has aged past its --max-age window (plus a --spot-check
+          # top-up), so a typical week is tens of citations, not ~500. `main`
+          # can still move underneath a long run, so rebase onto its tip before
           # pushing rather than risk a rejected push discarding this run's results.
+          #
+          # citation-state.json is one machine-generated JSON blob, so any
+          # concurrent edit to it collides on rebase and git cannot resolve it
+          # line-by-line. That killed 9 of the first 10 scheduled runs — each
+          # discarded its own commit after hours of work, which is why no
+          # citation ever carried an archive_url despite --save-to-wayback
+          # running since day one. Resolve that one file by merging both sides'
+          # evidence (util/merge_citation_state.py); anything else conflicting
+          # is a real problem and still fails loudly.
           git fetch origin main
-          git rebase origin/main
-          git push
+          if git rebase origin/main; then
+            :
+          else
+            STATE=docs/data/citation-state.json
+            CONFLICTS=$(git diff --name-only --diff-filter=U)
+            if [ "$CONFLICTS" = "$STATE" ]; then
+              echo "Auto-resolving $STATE by merging both sides"
+              git show :2:"$STATE" > /tmp/state-ours.json
+              git show :3:"$STATE" > /tmp/state-theirs.json
+              python util/merge_citation_state.py \
+                /tmp/state-ours.json /tmp/state-theirs.json --out "$STATE"
+              git add "$STATE"
+              GIT_EDITOR=true git rebase --continue
+            else
+              echo "::error::Rebase conflict outside the citation state file:"
+              echo "$CONFLICTS"
+              git rebase --abort
+              exit 1
+            fi
+          fi
+          # main can move again between the fetch above and this push; one
+          # retry through the same resolution path rather than losing the run.
+          git push || {
+            echo "Push rejected — main moved again; retrying once"
+            git fetch origin main
+            if ! git rebase origin/main; then
+              STATE=docs/data/citation-state.json
+              if [ "$(git diff --name-only --diff-filter=U)" = "$STATE" ]; then
+                git show :2:"$STATE" > /tmp/state-ours.json
+                git show :3:"$STATE" > /tmp/state-theirs.json
+                python util/merge_citation_state.py \
+                  /tmp/state-ours.json /tmp/state-theirs.json --out "$STATE"
+                git add "$STATE"
+                GIT_EDITOR=true git rebase --continue
+              else
+                git rebase --abort
+                exit 1
+              fi
+            fi
+            git push
+          }
+
+      - name: Surface verification failures
+        # Runs after the push, so a failing citation check is visible in the
+        # Actions UI without ever costing the run its committed data. Before
+        # this, continue-on-error meant a red verification step looked green.
+        if: always()
+        run: |
+          # if/fi rather than `[ ... ] && VAR=...`: these run blocks execute
+          # under `bash -e`, where a false test as the last command of an &&
+          # chain returns 1 and aborts the step.
+          FAILED=""
+          if [ "${{ steps.fragments.outcome }}" = "failure" ]; then
+            FAILED="$FAILED check_fragments.py"
+          fi
+          if [ "${{ steps.urls.outcome }}" = "failure" ]; then
+            FAILED="$FAILED check_event_urls.py"
+          fi
+          if [ -n "$FAILED" ]; then
+            echo "::error::Citation verification reported problems in:$FAILED"
+            echo "--- check_fragments.py ---"; tail -n 25 /tmp/fragments.log 2>/dev/null || true
+            echo "--- check_event_urls.py ---"; tail -n 25 /tmp/urls.log 2>/dev/null || true
+            exit 1
+          fi
+          echo "Citation verification clean."

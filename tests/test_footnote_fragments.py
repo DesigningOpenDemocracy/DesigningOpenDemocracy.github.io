@@ -184,36 +184,69 @@ class ProofBadgeTests(_FootnoteFragmentsTestBase):
 
     def test_quoted_footnote_with_match_gets_verified_badge(self):
         self._set_archive_cache({
-            "https://example.org/x": {"evidence": [{"id": self._ev_key(), "verified": True}]},
+            "https://example.org/x": {
+                "checked": "2026-08-25",
+                "evidence": [{"id": self._ev_key(), "verified": True}],
+            },
         })
         result = self._render(self.QUOTED_MD, self.QUOTED_HTML)
         self.assertIn("org-event-verified", result)
         self.assertIn("✓ Verified", result)
         self.assertNotIn("proof-citation", result)
         self.assertNotIn("Quote drifted", result)
+        # The last-checked date is surfaced, at minimum in the tooltip.
+        self.assertIn("2026-08-25", result)
 
     def test_quoted_footnote_with_mismatch_gets_warning_badge(self):
         self._set_archive_cache({
-            "https://example.org/x": {"evidence": [{"id": self._ev_key(), "verified": False}]},
+            "https://example.org/x": {
+                "checked": "2026-08-25",
+                "evidence": [{"id": self._ev_key(), "verified": False}],
+            },
         })
         result = self._render(self.QUOTED_MD, self.QUOTED_HTML)
         self.assertIn("⚠ Quote drifted", result)
+        self.assertIn("2026-08-25", result)
         self.assertNotIn("proof-citation", result)
         self.assertNotIn("Verified", result)
 
-    def test_manual_verified_false_also_warns_when_no_automated_verdict(self):
+    def test_badge_falls_back_to_placeholder_when_no_date_recorded(self):
+        # A malformed/legacy cache entry with a verdict but no checked
+        # date shouldn't crash str.format() or render a literal "{date}".
         self._set_archive_cache({
-            "https://example.org/x": {"evidence": [{"id": self._ev_key(), "manual_verified": False}]},
-        })
-        result = self._render(self.QUOTED_MD, self.QUOTED_HTML)
-        self.assertIn("⚠ Quote drifted", result)
-
-    def test_manual_verified_true_also_shows_verified_badge_when_no_automated_verdict(self):
-        self._set_archive_cache({
-            "https://example.org/x": {"evidence": [{"id": self._ev_key(), "manual_verified": True}]},
+            "https://example.org/x": {"evidence": [{"id": self._ev_key(), "verified": True}]},
         })
         result = self._render(self.QUOTED_MD, self.QUOTED_HTML)
         self.assertIn("✓ Verified", result)
+        self.assertNotIn("{date}", result)
+        self.assertIn("an unknown date", result)
+
+    def test_manual_verified_false_shows_distinct_manual_warning(self):
+        self._set_archive_cache({
+            "https://example.org/x": {
+                "manual_checked": "2026-08-20",
+                "evidence": [{"id": self._ev_key(), "manual_verified": False}],
+            },
+        })
+        result = self._render(self.QUOTED_MD, self.QUOTED_HTML)
+        self.assertIn("⚠ Quote drifted (manual)", result)
+        self.assertIn("2026-08-20", result)
+
+    def test_manual_verified_true_shows_distinct_manual_badge(self):
+        # Manual verification is a real check with different provenance —
+        # rendered distinctly ("👤 Verified", not "✓ Verified") rather
+        # than merged into the automated badge's text.
+        self._set_archive_cache({
+            "https://example.org/x": {
+                "manual_checked": "2026-08-20",
+                "evidence": [{"id": self._ev_key(), "manual_verified": True}],
+            },
+        })
+        result = self._render(self.QUOTED_MD, self.QUOTED_HTML)
+        self.assertIn("👤 Verified", result)
+        self.assertIn("org-event-verified--manual", result)
+        self.assertNotIn("✓ Verified", result)
+        self.assertIn("2026-08-20", result)
 
     def test_automated_verdict_wins_over_stale_manual_verdict(self):
         self._set_archive_cache({

@@ -6,11 +6,11 @@ categories:
   - Resources
 date: 2026-05-24 00:00:00
 tags:
-  - Citizens Assembly
-  - Electoral Reform
-  - Victoria
-  - Australia
-  - Proportional Representation
+  - citizens-assembly
+  - electoral-reform
+  - victoria
+  - australia
+  - proportional-representation
 title: "Victoria's Upper House inquiry: the case for a citizens' assembly"
 summary: "A recent Victorian parliamentary inquiry recommended using a citizens' assembly to decide Upper House electoral reform. The AES 2025 shows 48% of Australians now support the idea."
 ---

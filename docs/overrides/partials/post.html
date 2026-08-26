@@ -4,11 +4,15 @@
   excerpt card on the blog index — Material's own default template
   renders categories/date/readtime here but never tags (that only
   otherwise shows up via partials/tags.html on the post's own page).
-  Unlinked (post.meta here is raw frontmatter, not the tags plugin's
-  resolved {name, url} objects, which are only populated for the page
-  actually being rendered — not for excerpt entries on the index).
+  Linked via the tag_url filter (hooks/tag_links.py) rather than the
+  tags plugin's own {name, url} resolution — post.meta here is raw
+  frontmatter, and that resolution only happens for the page actually
+  being rendered, not for excerpt entries on the index. tag_url points
+  at the same site-wide listing (docs/tags.md) the plugin itself links
+  tags to elsewhere, so both paths land on the same page.
   See customizations.css's ".md-post--excerpt .md-tags" rule for the
-  "#" prefix that makes this read as a hashtag list.
+  "#" prefix that makes this read as a hashtag list, and the "Blog post
+  hashtag list" rule further down for the colored-pill styling.
 -#}
 <article class="md-post md-post--excerpt">
   <header class="md-post__header">
@@ -63,7 +67,7 @@
     {% if post.meta.tags %}
       <nav class="md-tags">
         {% for tag in post.meta.tags %}
-          <span class="md-tag">{{ tag }}</span>
+          <a href="{{ tag | tag_url }}" class="md-tag">{{ tag }}</a>
         {% endfor %}
       </nav>
     {% endif %}

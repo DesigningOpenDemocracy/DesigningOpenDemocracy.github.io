@@ -17,6 +17,7 @@ concepts:
 - radical-transparency
 - democracy
 - accountability-sink
+- parliamentary-monitoring
 location:
   latitude: 51.5074
   longitude: -0.1278

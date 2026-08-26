@@ -83,6 +83,13 @@
     "source": "https://en.wikipedia.org/wiki/File:Bersih_Coalition_Logo.png",
     "title": "Bersih"
   },
+  "budgit": {
+    "license": "Fair use",
+    "note": "site asset, auto-detected apple-touch-icon",
+    "path": "budgit.png",
+    "source": "https://budgit.org/wp-content/uploads/2022/12/cropped-Favicon-180x180.png",
+    "title": "BudgIT"
+  },
   "build-a-ballot": {
     "license": "Fair use",
     "note": "site asset, auto-detected apple-touch-icon",
@@ -762,6 +769,13 @@
     "source": "https://www.mysociety.org/wp-content/themes/mysociety-new/assets/img/mysociety-logo-white@2.png",
     "title": "mySociety"
   },
+  "mzalendo": {
+    "license": "Fair use",
+    "note": "site asset, auto-detected img-logo",
+    "path": "mzalendo.png",
+    "source": "https://mzalendo.com/static/img/mzalendo@20.e953f3d3703d.png",
+    "title": "Mzalendo"
+  },
   "namfrel": {
     "license": "Fair use",
     "note": null,
@@ -866,6 +880,13 @@
     "path": "pirate-party.svg",
     "source": "https://commons.wikimedia.org/wiki/File:Pirate_Party_Australia_logo.svg",
     "title": "Pirate Party Australia"
+  },
+  "pmg": {
+    "license": "Fair use",
+    "note": "site favicon; wide wordmark also saved as pmg.png and used as banner:",
+    "path": "pmg-icon.png",
+    "source": "https://pmg.org.za/static/resources/images/favicon.png",
+    "title": "Parliamentary Monitoring Group (PMG)"
   },
   "polis": {
     "license": "Fair use",

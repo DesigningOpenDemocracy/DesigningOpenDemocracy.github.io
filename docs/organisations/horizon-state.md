@@ -13,6 +13,11 @@ summary: An Australian blockchain voting platform bringing secure, transparent d
 concepts:
 - end-to-end-verifiable-voting-system
 - e-government
+location:
+  latitude: -37.8136
+  longitude: 144.9631
+  name: Melbourne, Australia
+  precision: city
 events:
 - date: '2017-01-01'
   title: Founded by Jamie Skella and Nimo Naamani as a Melbourne-based blockchain

@@ -11,9 +11,9 @@ categories:
   - Philosophy
   - Maintenance
 tags:
-  - Philosophy
-  - Accountability
-  - Community
+  - philosophy
+  - accountability
+  - community
 summary: "DOD's Philosophy page used to host the full accountability framework — a long, AI-reviewed standard gated by a 'read this first' document. A member pointed out that's a bad front door for open discussion. Here's what moved, where, and why."
 ---
 

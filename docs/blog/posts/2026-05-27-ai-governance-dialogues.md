@@ -9,10 +9,10 @@ categories:
   - Democratic Theory
 date: 2026-05-27 00:00:00
 tags:
-  - Philosophy
-  - AI
-  - Democracy
-  - Accountability
+  - philosophy
+  - ai
+  - democracy
+  - accountability
 title: "What Happens When You Ask AIs from Different Countries to Review Your Democracy Framework"
 summary: "DOD's philosophy framework claims to apply a consistent accountability standard across all governance systems. We tested that claim by asking AI systems from the US, China, and France to scrutinise it. Here's what they found — and what we found when we turned the lens on ourselves."
 ---

@@ -56,7 +56,7 @@ The panel covers practices and institutions that can deepen democracy beyond the
 - [International Day of Democracy](https://en.wikipedia.org/wiki/International_Day_of_Democracy) — Wikipedia
 - [2026 Victorian state election](https://en.wikipedia.org/wiki/2026_Victorian_state_election) — Wikipedia
 
-[^unday]: "In 2007 the United Nations General Assembly resolved to observe 15 September as the International Day of Democracy—with the purpose of promoting and upholding the principles of democracy." [International Day of Democracy](https://en.wikipedia.org/wiki/International_Day_of_Democracy), Wikipedia.
+[^unday]: "In 2007 the United Nations General Assembly resolved to observe 15 September as the International Day of Democracy — with the purpose of promoting and upholding the principles of democracy — and invited all member states and organizations to commemorate the day in an appropriate manner that contributes to raising public awareness." [International Day of Democracy](https://en.wikipedia.org/wiki/International_Day_of_Democracy), Wikipedia.
 
 [^vicelection]: "A state general election is scheduled to be held on 28 November 2026 to elect members of the 61st Parliament of Victoria." [2026 Victorian state election](https://en.wikipedia.org/wiki/2026_Victorian_state_election), Wikipedia.
 

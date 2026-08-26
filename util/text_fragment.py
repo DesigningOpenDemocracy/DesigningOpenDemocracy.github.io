@@ -71,15 +71,33 @@ def html_to_text(raw_html):
     return text[:2_000_000]
 
 
+_DASH_CHARS = "—–"  # em dash U+2014, en dash U+2013
+
+
 def normalize_ws(text):
     """Collapse whitespace for forgiving substring matching. Also drops
     whitespace immediately *inside* parentheses: html_to_text()'s handling
     of inline-tag boundaries can insert a space where the rendered page has
     none (confirmed on science.org — `(<i>N</i> = 5734)` extracted as
     '( N = 5734)'), while human-pasted quotes always carry the rendered
-    form. The legitimate space *before* an open-paren is left alone."""
+    form. The legitimate space *before* an open-paren is left alone.
+
+    Also canonicalises spacing around em/en dashes to a single space on
+    each side. Confirmed divergence: Wikipedia's `explaintext` API (see
+    CLAUDE.md's "Sourcing from Wikipedia") renders a sentence's em-dashes
+    with no surrounding whitespace at all ("Democracy—with"), while the
+    same sentence on the actual rendered article page — what a reader's
+    browser #:~:text= match runs against, and what a human copying a
+    quote by hand would paste — has spaces around them ("Democracy — with").
+    Same sentence, two serializations depending on which source a citation
+    happens to be checked against; without this, a quote verified as a
+    MATCH against one source silently fails Text Fragment highlighting for
+    every real reader landing on the other. Confirmed live 2026-08-26 on
+    International Day of Democracy's Wikipedia article."""
     text = re.sub(r"\(\s+", "(", text)
-    return re.sub(r"\s+\)", ")", " ".join(text.split()))
+    text = re.sub(r"\s+\)", ")", " ".join(text.split()))
+    text = re.sub(r"\s*([" + _DASH_CHARS + r"])\s*", r" \1 ", text)
+    return text.strip()
 
 
 def count_occurrences(page_text, quote_text):
@@ -117,7 +135,19 @@ def find_span(page_text, quote_text):
     if not page_text or not quote_text:
         return None
     words = normalize_ws(quote_text).split(" ")
-    pattern = r"\s+".join(re.escape(w) for w in words)
+    parts = [re.escape(words[0])]
+    for prev, cur in zip(words, words[1:]):
+        # normalize_ws() always isolates a dash as its own token with a
+        # single space on each side, regardless of how much (if any)
+        # whitespace surrounded it in the original quote — but page_text
+        # here is the RAW, unnormalized page text, which may have zero
+        # whitespace around the dash (see normalize_ws()'s docstring on
+        # Wikipedia's explaintext API). \s* rather than \s+ around a dash
+        # token lets either shape match.
+        sep = r"\s*" if (prev in _DASH_CHARS or cur in _DASH_CHARS) else r"\s+"
+        parts.append(sep)
+        parts.append(re.escape(cur))
+    pattern = "".join(parts)
     m = re.search(pattern, page_text)
     if not m:
         return None
@@ -457,9 +487,17 @@ def closest_match_hint(page_text, quote_text, min_ratio=0.6):
 def spacing_autofix(page_text, quote_text):
     """Return the corrected version of quote_text to store, if the ONLY
     differences between it and the page are space-run insertions/deletions
-    (the page renders '— with', the pasted quote has '—with') — otherwise
-    None. Caller applies the result (writes it into the source file) and
-    re-verifies; this function never mutates anything itself.
+    (the page renders 'foo  bar', the pasted quote has 'foo bar') —
+    otherwise None. Caller applies the result (writes it into the source
+    file) and re-verifies; this function never mutates anything itself.
+
+    Em-dash/en-dash spacing (page 'X — Y', quote 'X—Y') used to be this
+    function's own motivating example, but normalize_ws() now
+    canonicalises that difference away before quote_matches() ever sees
+    it — such a quote is no longer a MISMATCH in the first place, so
+    check_fragments.py never calls this function for it. This function
+    still exists for every other pure-whitespace divergence (double
+    spaces, tabs, stray non-breaking spaces).
 
     Why this class is safe to auto-apply, and the others are not: if the
     only differences are spaces, then the quote's word content is a
