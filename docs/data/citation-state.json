@@ -5534,6 +5534,26 @@
     ],
     "last_modified": null
   },
+  "https://www.aljazeera.com/news/2026/7/29/nicaraguas-daniel-ortega-aims-to-bar-traitors-from-future-elections": {
+    "checked": "2026-08-26",
+    "document_sha256": "94580db0922fae7e36ee94b650caf7508c6662344af62dc6de8bf708a0068ef7",
+    "etag": "W/\"2d9ab-+GcGhG3nIOOZ4wvYR4r4wSA/aSs\"",
+    "evidence": [
+      {
+        "checked": "2026-08-26",
+        "context": {
+          "prefix": "sident that there would be no elections in the Central American nation, as a means of preventing the opposition from \u201cseizing the government\u201d. \u201c",
+          "sha256": "cf8192070c436692741a3acfff1d5b4e7fc8671cf57e468fbc942f3679e8ded1",
+          "suffix": "\u201d Porras said as he read the proposal. Criticism and sanctions A previous constitutional amendment was passe",
+          "text": "\u201cOur system of government, under the presidency of the people, proposes to be organised with an effective term of seven renewable years,\u201d Porras said as he read the proposal."
+        },
+        "id": "61b281d0ed0b796078271bd286bc4c1856ad39124ef434fce1a7a7f35b1986cd",
+        "quote": "Our system of government, under the presidency of the people, proposes to be organised with an effective term of seven renewable years,",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
   "https://www.aman-palestine.org/en/about-aman/5.html": {
     "checked": "2026-08-23",
     "document_sha256": "b56652591977ddef9cb4c2ac85c014f9c9c7f404bfeaafa3905077dde20edda7",
@@ -7767,6 +7787,26 @@
       }
     ],
     "manual_checked": "2026-08-22"
+  },
+  "https://www.upi.com/Top_News/World-News/2026/07/24/nicarague-electoral-system-reform/4981784924000/": {
+    "checked": "2026-08-26",
+    "document_sha256": "ffb7981d3deb14f524709286ee251e53fdda315b78bf2363897cd0c095e6bdd9",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-26",
+        "context": {
+          "prefix": "ess Friday of reforming the Constitution and the legal framework governing the electoral system, days after President Daniel Ortega said the country \"",
+          "sha256": "1bce133ac8811608f35158522482f36eac09b08cf5bd04ceb5016822a716804c",
+          "suffix": "\" that would allow the opposition to return to power. According to an official statement released by the Government of Reconciliation and Nation",
+          "text": "July 24 (UPI) -- Nicaragua's government began the process Friday of reforming the Constitution and the legal framework governing the electoral system, days after President Daniel Ortega said the country \"will never again hold elections\" that would allow the opposition to return to power."
+        },
+        "id": "873d2e0f5d2e2bc3bd8f63ab1857c739f94c0c2329d0939815cadfc4bba83f79",
+        "quote": "will never again hold elections",
+        "verified": true
+      }
+    ],
+    "last_modified": null
   },
   "https://www.v-dem.net/news/press-release-democratic-backsliding-reaches-western-democracies-with-us-decline-unprecedented/": {
     "checked": "2026-08-23",
