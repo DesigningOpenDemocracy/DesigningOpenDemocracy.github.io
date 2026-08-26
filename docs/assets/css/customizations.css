@@ -2315,13 +2315,19 @@
    single-post page — see hooks/tag_links.py and docs/tags.md), so this
    rule doubles as the "still a plain span with no destination" fallback
    for a page rendered before tags.md/hooks/tag_links.py existed. */
+/* Sized in rem, not em: the excerpt card's tag nav inherits a much
+   smaller font context than a single post page's does, so one `em` value
+   rendered the same chip at two very different sizes — 7.2px on /blog/
+   against 11.52px on the post itself, less than half the 14px meta line
+   directly above it and barely legible. A rem is fixed against the root,
+   so both contexts now render the chip identically. */
 .md-content--post .md-tags .md-tag,
 .md-post--excerpt .md-tags .md-tag {
   display: inline-block;
-  padding: 1px 7px;
+  padding: 2px 8px;
   margin: 1px 2px 1px 0;
-  border-radius: 10px;
-  font-size: 0.72em;
+  border-radius: 11px;
+  font-size: 0.65rem;
   font-weight: 600;
   background: hsl(199, 55%, 14%);
   color: rgba(255,255,255,0.80);
