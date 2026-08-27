@@ -4,4 +4,42 @@
   {{ super() }}
   <meta name="darkreader-lock">
   <link type="text/plain" rel="llms" href="/llms.txt">
+
+  {#- Open Graph / Twitter Card metadata, so a link to any page on this site
+      unfurls into a rich preview (Slack, Discord, Twitter/X, iMessage, etc.)
+      instead of a bare title. Sourced from each page's own frontmatter where
+      available, falling back to the page body and finally the site defaults
+      below — no separate og:-specific fields need to be authored per page. #}
+  {%- set site_url = config.site_url.rstrip("/") %}
+  {%- set meta = page.meta if page and page.meta else {} %}
+  {%- set social_title = config.site_name if page and page.is_homepage
+      else (meta.title or (page.title if page else none) or config.site_name) %}
+  {%- set social_description_raw = meta.summary or meta.description
+      or (page.content | striptags | trim | truncate(200) if page and page.content else none)
+      or config.site_description or "" %}
+  {%- set social_description = social_description_raw | replace("\n", " ") | replace("\r", " ") | trim %}
+  {%- set social_image_raw = meta.banner or meta.logo
+      or (meta.shared_link.image if meta.shared_link else none)
+      or (meta.event.image if meta.event else none) %}
+  {%- if social_image_raw and (social_image_raw.startswith("http://") or social_image_raw.startswith("https://")) %}
+    {%- set social_image = social_image_raw %}
+  {%- elif social_image_raw %}
+    {%- set social_image = site_url ~ "/" ~ social_image_raw.lstrip("/") %}
+  {%- else %}
+    {%- set social_image = site_url ~ "/assets/dodlogo_transparent.png" %}
+  {%- endif %}
+  {%- set social_url = page.canonical_url if page and page.canonical_url else site_url %}
+  {%- set social_type = "article" if meta.date else "website" %}
+
+  <meta property="og:type" content="{{ social_type }}">
+  <meta property="og:site_name" content="{{ config.site_name }}">
+  <meta property="og:title" content="{{ social_title }}">
+  <meta property="og:description" content="{{ social_description }}">
+  <meta property="og:url" content="{{ social_url }}">
+  <meta property="og:image" content="{{ social_image }}">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ social_title }}">
+  <meta name="twitter:description" content="{{ social_description }}">
+  <meta name="twitter:image" content="{{ social_image }}">
 {% endblock %}

@@ -532,8 +532,8 @@
   // https:// .ics link, which most OSes just download. Google Calendar's
   // equivalent is its "Add by URL" screen, keyed off a ?cid= query param.
   // Both need an *absolute* URL, built from the real page origin rather
-  // than mkdocs.yml's site_url (which is http://, not https://, and isn't
-  // guaranteed to match wherever this actually ends up deployed).
+  // than mkdocs.yml's site_url — safer against wherever a given build
+  // actually ends up deployed (a preview build, a fork, etc.).
   function appleUrl(path) {
     return (window.location.origin + path).replace(/^https?:\/\//, 'webcal://');
   }
