@@ -27,11 +27,15 @@ events:
     Independents Convention)
   url: https://events.humanitix.com/communities-rising-action-by-the-people-for-the-times
   quote: the sixth annual Convention of the Community Independents Movement
+  note: 'As of 2026-08-28: original event page now 404s, and this convention no longer
+    appears on the org''s own /events listing (which lists two smaller September webinars
+    instead) or its blog RSS feed. No Wayback snapshot exists to fall back on. Status
+    unconfirmed — possibly postponed or cancelled; downgraded from notable pending
+    confirmation.'
   proof_level: high
   url_checked: '2026-08-10'
   end_date: '2026-09-12'
-  notable: true
-  notable_reason: Flagship conference/summit
+  notable: false
   type: conference
   location: Online
 activity:
