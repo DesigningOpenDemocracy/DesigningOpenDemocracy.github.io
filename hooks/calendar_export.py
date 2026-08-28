@@ -127,6 +127,17 @@ def _org_country(slug):
 _events: list = []
 
 
+def _notable_tier(entry):
+    """Normalize an events: entry's notable: field to True (major),
+    "medium", or False. Any other value (a typo, a stray truthy string)
+    reads as False rather than silently getting the major-event
+    highlight — see CLAUDE.md's notable: docs for the true/"medium"/
+    absent distinction and why it isn't just about frequency (an AGM is
+    just as annual as a flagship conference, but isn't major)."""
+    v = entry.get("notable")
+    return v if v is True or v == "medium" else False
+
+
 def _parse_date(val):
     if val is None:
         return None
@@ -161,7 +172,7 @@ def _load_manual_events(today):
                     "org_slug": slug,
                     "org_title": m.get("title", slug),
                     "source": "manual",
-                    "notable": bool(entry.get("notable")),
+                    "notable": _notable_tier(entry),
                     "logo": _org_logo(slug),
                     "logo_bg": _org_logo_bg(slug),
                     "country": entry.get("country") or m.get("country"),
@@ -363,16 +374,18 @@ def on_pre_build(config):
 
 
 def _next_notable_event(org_slug):
-    """First upcoming *notable* event for a given org slug, or None.
+    """First upcoming *major* (notable: true, not "medium") event for a
+    given org slug, or None.
 
-    Powers home.html's "Next DOD event" banner: restricted to
-    notable: true so a routine meetup isn't promoted to the homepage —
-    same notable: true = "major event" convention calendar.html's own
-    star badge already uses. Reads the same _events list calendar_events
-    is bound to, already sorted ascending by date at on_pre_build, so the
-    first match is the soonest one."""
+    Powers home.html's "Next DOD event" banner: restricted to the major
+    tier specifically — see CLAUDE.md's notable: docs — so a merely
+    "medium" borderline event doesn't get promoted to the homepage
+    banner, which is reserved for genuinely major (rare, flagship-scale)
+    occasions. Reads the same _events list calendar_events is bound to,
+    already sorted ascending by date at on_pre_build, so the first match
+    is the soonest one."""
     for e in _events:
-        if e.get("org_slug") == org_slug and e.get("notable"):
+        if e.get("org_slug") == org_slug and e.get("notable") is True:
             return e
     return None
 

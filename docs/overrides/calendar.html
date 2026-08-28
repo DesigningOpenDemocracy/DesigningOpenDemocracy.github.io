@@ -85,7 +85,7 @@
   {#- A trailing end_date is only a real span when it is actually later:
       an equal (or bad) end_date is a single-day event, not a range. -#}
   {%- set multiday = e.end_date and e.end_date is not string and e.end_date > e.date %}
-  <li class="calendar-event{% if multiday %} calendar-event--multiday{% endif %}{% if e.notable %} calendar-event--notable{% endif %}" data-country="{{ e.country or '' }}" data-country-label="{{ e.country | country_flag }} {{ e.country | country_name }}" data-date="{{ e.date.isoformat() }}"{% if e.end_date %} data-end-date="{{ e.end_date.isoformat() if e.end_date is not string else e.end_date }}"{% endif %}{% if e.time %} data-time="{{ e.time }}"{% endif %}{% if e.end_time %} data-end-time="{{ e.end_time }}"{% endif %}>
+  <li class="calendar-event{% if multiday %} calendar-event--multiday{% endif %}{% if e.notable is true %} calendar-event--notable{% elif e.notable == 'medium' %} calendar-event--medium{% endif %}" data-country="{{ e.country or '' }}" data-country-label="{{ e.country | country_flag }} {{ e.country | country_name }}" data-date="{{ e.date.isoformat() }}"{% if e.end_date %} data-end-date="{{ e.end_date.isoformat() if e.end_date is not string else e.end_date }}"{% endif %}{% if e.time %} data-time="{{ e.time }}"{% endif %}{% if e.end_time %} data-end-time="{{ e.end_time }}"{% endif %}>
 
     <div class="calendar-date-block">
       <span class="calendar-date-month">{{ e.date.strftime('%b') }}</span>
@@ -108,8 +108,9 @@
 
     <div class="calendar-event-body">
       <div class="calendar-event-header">
+        {%- if e.notable is true %}<span class="calendar-event-badge">★ Major event</span>
+        {%- elif e.notable == 'medium' %}<span class="calendar-event-badge calendar-event-badge--medium">● Notable</span>{% endif %}
         {%- if e.type %}<span class="calendar-event-type">{{ type_icons.get(e.type, '📅') }} {{ e.type }}</span>{% endif %}
-        {%- if e.notable %}<span class="calendar-event-badge">★ Major event</span>{% endif %}
         {%- if e.country %}<span class="calendar-event-country">{{ e.country | country_flag }} {{ e.country | country_name }}</span>{% endif %}
       </div>
 

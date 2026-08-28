@@ -42,7 +42,7 @@ events:
     Democracy Bean'
   proof_level: high
   url_checked: '2026-08-13'
-  notable: true
+  notable: medium
   type: meetup
   location: Irish Club, Weston ACT
 - date: '2026-11-16'
@@ -54,7 +54,7 @@ events:
     the ACT.
   proof_level: high
   url_checked: '2026-08-13'
-  notable: true
+  notable: medium
   type: meetup
   location: Irish Club, Weston ACT
 - date: '2026-12-06'

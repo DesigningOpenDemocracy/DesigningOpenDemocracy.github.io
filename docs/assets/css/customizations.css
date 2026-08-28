@@ -1644,6 +1644,20 @@
   padding: 0.65em 0.8em;
   margin: 0.45em 0;
 }
+/* "medium" tier: a real event worth calling out, but not the rare,
+   flagship-scale occasion notable: true is reserved for (an annual
+   conference/summit, not just anything that only happens once a year —
+   an AGM is annual too, and isn't major). Deliberately a cooler, much
+   quieter treatment than .calendar-event--notable's amber card, so the
+   two tiers stay visually distinct rather than the badge text alone
+   doing all the work. */
+.calendar-event--medium {
+  background: rgba(79, 195, 247, 0.08);
+  border: 1px solid rgba(79, 195, 247, 0.3);
+  border-radius: 6px;
+  padding: 0.65em 0.8em;
+  margin: 0.45em 0;
+}
 .calendar-date-block {
   flex: 0 0 auto;
   width: 4.75em;
@@ -1703,8 +1717,13 @@
   color: inherit;
 }
 .calendar-date-org-logo {
-  width: 32px;
-  height: 32px;
+  /* Fills the date block's own width; capped on height rather than left
+     square, so a wide wordmark logo genuinely spans the bubble while a
+     square/portrait one is constrained by height instead (object-fit:
+     contain letterboxes it — narrower than the bubble, not stretched)
+     rather than blowing out how tall every row on the page is. */
+  width: 100%;
+  height: 48px;
   object-fit: contain;
   border-radius: 5px;
   background: none;
@@ -1802,6 +1821,10 @@
   background: rgba(255, 179, 0, 0.2);
   border-radius: 3px;
   padding: 0.15em 0.5em;
+}
+.calendar-event-badge--medium {
+  color: #4fc3f7;
+  background: rgba(79, 195, 247, 0.2);
 }
 .calendar-event-coverage {
   font-size: 0.85em;
