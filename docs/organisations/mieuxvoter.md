@@ -43,6 +43,7 @@ events:
   proof_level: high
   url_checked: '2026-08-14'
   notable: true
+  notable_reason: Landmark legal/court win
 activity:
   manual:
     checked: 2026-06-08

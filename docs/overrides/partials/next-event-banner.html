@@ -1,0 +1,36 @@
+<!-- "Next DOD event" banner — shared by home.html and calendar.html.
+     Only renders when DOD has an upcoming notable: true event of its own
+     in designing-open-democracy.md's events: frontmatter (see
+     hooks/calendar_export.py's next_notable_event() global). Absent
+     entirely otherwise, so this never shows a stale or empty bar.
+
+     On the home page it sits full-bleed above the hero (the including
+     template sets next_event_banner_flush=true beforehand, which drops
+     the card border/radius/margin below in favour of a flush edge-to-
+     edge bar); on the calendar page — an aggregate of every tracked
+     org's events — it renders as a bordered card inside the normal
+     content column instead, there to make DOD's own next event easy to
+     spot rather than buried in the all-orgs list below. -->
+{%- set next_dod_event = next_notable_event("designing-open-democracy") %}
+{%- if next_dod_event %}
+<section id="next-event-banner" class="mdx-container{% if next_event_banner_flush %} next-event-banner--flush{% endif %}">
+  <a id="next-event-banner-link" href="{{ next_dod_event.url }}" target="_blank" rel="noopener">
+    <img id="next-event-banner-logo" src="/assets/dodlogo_transparent.png" alt="Designing Open Democracy logo">
+    <span id="next-event-banner-body">
+      <span id="next-event-banner-eyebrow">★ Next Designing Open Democracy event</span>
+      {#- short_title: is an optional per-event override for this one-line
+          banner — an event's title: is often written as a narrative log
+          entry ("Co-hosting 'X' panel with Y", matching how the rest of
+          an org's history/upcoming timeline reads), which is too long
+          and not what a banner should say. Falls back to title: when
+          short_title: isn't set. -#}
+      <span id="next-event-banner-title">{{ next_dod_event.short_title or next_dod_event.title }}</span>
+      <span id="next-event-banner-meta">
+        {{ next_dod_event.date | format_event_date }}{% if next_dod_event.time %} · {{ next_dod_event.time | format_event_time }}{% endif -%}
+        {%- if next_dod_event.location and next_dod_event.location.name %} · {{ next_dod_event.location.name }}{%- endif %}
+      </span>
+    </span>
+    <span id="next-event-banner-cta">Details →</span>
+  </a>
+</section>
+{%- endif %}

@@ -40,6 +40,7 @@ events:
   proof_level: high
   url_checked: '2026-08-14'
   notable: true
+  notable_reason: Platform/product launch
 - date: '2024-12-01'
   title: Citizen OS Indonesia co-organised the 4th Indonesia Opinion Festival with
     the Indonesian House of Representatives

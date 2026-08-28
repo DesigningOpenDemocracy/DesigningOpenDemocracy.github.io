@@ -33,6 +33,7 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
+  notable_reason: Founding of the organisation
 - date: '2010-02-01'
   title: Launched Shadow Parliament, importing real Icelandic Parliament proposals
     for citizens to vote on
@@ -49,6 +50,7 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
+  notable_reason: Platform/product launch
 activity:
   manual:
     checked: 2026-06-07

@@ -24,6 +24,7 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
+  notable_reason: Rebrand
 - date: '2020-12-01'
   title: Deregistered as a political party
   url: https://en.wikipedia.org/wiki/Online_Direct_Democracy
@@ -32,6 +33,7 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
+  notable_reason: Org deregistered / wound up
 activity:
   dod:
     date: 2026-08-21

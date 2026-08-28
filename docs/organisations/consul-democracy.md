@@ -32,6 +32,7 @@ events:
   proof_level: high
   url_checked: '2026-08-21'
   notable: true
+  notable_reason: Platform/product launch
   type: launch
 - date: '2019-01-01'
   title: CONSUL DEMOCRACY Foundation established in the Netherlands to steward the
@@ -50,6 +51,7 @@ events:
   url_checked: '2026-08-13'
   end_date: '2026-09-17'
   notable: true
+  notable_reason: Flagship conference/summit
   type: conference
   location: Munich, Germany
   country: DE

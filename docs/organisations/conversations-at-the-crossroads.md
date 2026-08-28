@@ -32,6 +32,7 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
+  notable_reason: Inaugural flagship annual lecture
 - date: '2026-05-09'
   title: Convened "Reclaiming Democracy Together" national launch at Melbourne Town
     Hall, marking the 125th anniversary of Australia's first federal parliament
@@ -42,6 +43,7 @@ events:
   proof_level: high
   url_checked: '2026-08-12'
   notable: true
+  notable_reason: Platform/product launch
 activity:
   manual:
     checked: 2026-06-07

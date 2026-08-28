@@ -1,6 +1,8 @@
 {% extends "main.html" %}
 {% block tabs %}
 {{ super() }}
+{% set next_event_banner_flush = true %}
+{% include "partials/next-event-banner.html" %}
 <section id="hero-container" class="mdx-container">
     <div id="hero-card" class="mdx-hero md-typeset">
       <!-- Hero Image -->

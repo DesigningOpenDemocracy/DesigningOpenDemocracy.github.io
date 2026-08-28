@@ -34,6 +34,7 @@ events:
   proof_level: high
   url_checked: '2026-08-14'
   notable: true
+  notable_reason: Death of a founding/senior leader
 - date: '2011-01-01'
   title: First three PRSA members admitted as Honorary Life Members
   url: https://www.prsa.org.au/qn/2011a_.html
@@ -54,13 +55,15 @@ events:
   proof_level: high
   url_checked: '2026-08-14'
   notable: true
+  notable_reason: Death of a founding/senior leader
 - date: '2026-11-12'
   title: 2026 AGM — vote on 17-motion package to rename to Australian Electoral Reform
     Society and broaden remit beyond STV
   url: https://www.designingopendemocracy.com/blog/2026/07/31/prsa-members-to-vote-on-rebrand-to-australian-electoral-reform-society--agm-12-november-2026/
   proof_level: medium
   url_checked: '2026-08-10'
-  notable: false
+  notable: true
+  notable_reason: 'Structural vote: org rename + remit change'
   type: meeting
   proof_warning: true
 activity:

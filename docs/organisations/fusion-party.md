@@ -29,6 +29,7 @@ events:
   proof_level: high
   url_checked: '2026-08-15'
   notable: true
+  notable_reason: Merger of organisations
 activity:
   dod:
     checked: 2026-08-15

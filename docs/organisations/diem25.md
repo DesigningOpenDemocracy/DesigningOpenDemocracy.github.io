@@ -28,6 +28,7 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
+  notable_reason: Platform/product launch
 - date: '2017-03-25'
   title: First pan-European convention in Rome, adopting the founding declaration
   url: https://en.wikipedia.org/wiki/Democracy_in_Europe_Movement_2025
@@ -43,6 +44,7 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
+  notable_reason: First transnational EU election campaign
 activity:
   dod:
     checked: 2026-08-08

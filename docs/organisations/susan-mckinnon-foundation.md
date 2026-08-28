@@ -34,6 +34,7 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
+  notable_reason: Founding of the organisation
 - date: '2017-11-01'
   title: McKinnon Prize in Political Leadership established, in partnership with the
     University of Melbourne
@@ -44,6 +45,7 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
+  notable_reason: Major award
 - date: '2019-01-01'
   title: McKinnon Institute for Political Leadership established, in partnership with
     Monash University
@@ -53,6 +55,7 @@ events:
   proof_level: high
   url_checked: '2026-08-15'
   notable: true
+  notable_reason: Founding of the organisation
 - date: '2021-06-09'
   title: Co-founder Grant Rule's company MessageMedia sold to Sinch for a total enterprise
     value of US$1.3 billion
@@ -83,6 +86,7 @@ events:
   proof_level: high
   url_checked: '2026-08-21'
   notable: true
+  notable_reason: Rebrand
 activity:
   manual:
     checked: 2026-06-07

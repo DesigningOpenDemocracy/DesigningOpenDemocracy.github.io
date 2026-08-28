@@ -149,9 +149,10 @@
   {%- set url_status = archive_info.url_status if archive_info else none %}
   {%- set is_rotted = url_status in ('dead', 'unfit') and archive_href %}
   {%- set href = archive_href if is_rotted else original_href %}
-  <li class="{% if e.notable %}org-event--notable{% endif %}">
+  <li class="{% if e.notable is true %}org-event--notable{% elif e.notable == 'medium' %}org-event--medium{% endif %}">
     <span class="org-event-date">{{ e.date }}{% if e.end_date %}–{{ e.end_date }}{% endif %}</span>
     <span class="org-event-title">{% if href %}<a href="{{ href }}" target="_blank" rel="noopener">{{ e.title }}</a>{% else %}{{ e.title }}{% endif %}</span>
+    {%- if e.notable and e.notable_reason %}<span class="org-event-reason">{{ e.notable_reason }}</span>{% endif %}
     {%- if e.coverage_url %}<span class="org-event-coverage"> — <a href="{{ e.coverage_url }}">DOD coverage</a></span>{%- endif %}
     {%- if e.proof_level or e.url or e.source %}
     <details class="org-event-detail">

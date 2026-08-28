@@ -3392,7 +3392,8 @@
   },
   "https://events.humanitix.com/communities-rising-action-by-the-people-for-the-times": {
     "blocked": "HTTP_403",
-    "blocked_since": "2026-08-18"
+    "blocked_since": "2026-08-18",
+    "url_status": "dead"
   },
   "https://events.humanitix.com/international-day-of-democracy": {
     "blocked": "HTTP_403",

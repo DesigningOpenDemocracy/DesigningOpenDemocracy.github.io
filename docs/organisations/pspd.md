@@ -31,6 +31,7 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
+  notable_reason: Founding of the organisation
 - date: '2004-01-01'
   title: Obtains UN ECOSOC special consultative status
   url: https://en.wikipedia.org/wiki/People%27s_Solidarity_for_Participatory_Democracy

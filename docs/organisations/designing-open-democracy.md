@@ -39,6 +39,7 @@ events:
   proof_level: high
   url_checked: '2026-08-12'
   notable: true
+  notable_reason: Founding meetup
 - date: '2018-02-10'
   title: Published its "Proposed (Initial) Strategy" outlining the group's founding
     direction
@@ -52,6 +53,7 @@ events:
 - date: '2026-09-15'
   title: 'Co-hosting "International Day of Democracy: democracy beyond the ballot
     box" panel with 888 Co-operative Causeway'
+  short_title: 'International Day of Democracy: democracy beyond the ballot box'
   url: https://events.humanitix.com/international-day-of-democracy
   quote: To celebrate International Day of Democracy and in the lead up to a Victorian
     State election, 888 Co-operative Causeway and Designing Open Democracy are pleased
@@ -64,6 +66,7 @@ events:
   time: '18:00'
   end_time: '20:00'
   notable: true
+  notable_reason: Public panel co-hosted for International Day of Democracy
 activity:
   manual:
     checked: 2026-08-07

@@ -45,6 +45,7 @@ events:
   proof_level: high
   url_checked: '2026-08-14'
   notable: true
+  notable_reason: Commissioned to build Berlin's flagship participation platform
 activity:
   manual:
     date: 2026-05-28

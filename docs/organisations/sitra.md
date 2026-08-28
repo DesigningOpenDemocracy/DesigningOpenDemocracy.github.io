@@ -31,6 +31,7 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
+  notable_reason: Founding of the organisation
 activity:
   dod:
     checked: 2026-08-09

@@ -31,6 +31,7 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
+  notable_reason: Founding of the organisation
 - date: '2025-07-20'
   title: Wins 1 seat in House of Councillors with 1.5 million votes (2.6%)
   url: https://en.wikipedia.org/wiki/Team_Mirai
@@ -38,6 +39,7 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
+  notable_reason: Election result
 - date: '2026-02-08'
   title: Wins 11 seats in House of Representatives with 3.8 million votes (~6.9%)
   url: https://en.wikipedia.org/wiki/Team_Mirai
@@ -45,6 +47,7 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
+  notable_reason: Election result
 activity:
   dod:
     checked: 2026-08-09

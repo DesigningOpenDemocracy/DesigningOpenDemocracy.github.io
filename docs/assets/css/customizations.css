@@ -256,6 +256,111 @@
 
 /****************************************/
 
+/* Home page: "Next DOD event" banner, injected above the hero only when
+   an upcoming notable: true DOD event exists (docs/overrides/home.html,
+   hooks/calendar_export.py's next_notable_event()). Colours are hard-
+   coded rather than using Material's CSS variables, same deliberate
+   choice #hero-container below makes — this bar sits on the same
+   forced-light hero backdrop regardless of the site's light/dark theme. */
+#next-event-banner {
+    display: flex;
+    justify-content: center;
+    /* Opaque, not a translucent tint — same deliberate "ignore the
+       site's light/dark theme" choice #hero-container below makes.
+       A gradient over the page's own background looked fine in light
+       mode but made the near-black text below unreadable in dark mode
+       (confirmed by sampling rendered pixels: ~rgb(12,10,6) text on an
+       equally dark backdrop). An opaque warm-cream backing guarantees
+       the same contrast regardless of which theme the visitor is on. */
+    background: rgb(255, 244, 214);
+    border: 1px solid rgba(255, 179, 0, 0.4);
+    border-radius: 8px;
+    margin: 0 0 1.25rem 0;
+}
+
+/* On the home page (partials/next-event-banner.html included with
+   flush=true) this sits full-bleed above #hero-container, outside the
+   normal content column — a flush edge-to-edge bar reads better there
+   than a "card" floating with its own border/radius, which is what the
+   default styling above renders on the calendar page instead. */
+#next-event-banner.next-event-banner--flush {
+    border-width: 0 0 1px 0;
+    border-radius: 0;
+    margin: 0;
+}
+
+#next-event-banner-link {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    width: 100%;
+    max-width: 1100px;
+    padding: 0.55rem 1.25rem;
+    color: inherit;
+    text-decoration: none;
+}
+
+#next-event-banner-link:hover #next-event-banner-title {
+    text-decoration: underline;
+}
+
+#next-event-banner-logo {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 4px;
+    box-sizing: border-box;
+}
+
+#next-event-banner-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 0;
+}
+
+#next-event-banner-eyebrow {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #b8860b;
+}
+
+#next-event-banner-title {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #000000d0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#next-event-banner-meta {
+    font-size: 0.8rem;
+    color: #000000a0;
+}
+
+#next-event-banner-cta {
+    flex-shrink: 0;
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: #b8860b;
+    white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+    #next-event-banner-title {
+        white-space: normal;
+    }
+    #next-event-banner-cta {
+        display: none;
+    }
+}
+
 #hero-container {
     min-height:100vh; 
     background-color: rgba(255, 255, 255, 0.90);
@@ -1539,9 +1644,23 @@
   padding: 0.65em 0.8em;
   margin: 0.45em 0;
 }
+/* "medium" tier: a real event worth calling out, but not the rare,
+   flagship-scale occasion notable: true is reserved for (an annual
+   conference/summit, not just anything that only happens once a year —
+   an AGM is annual too, and isn't major). Deliberately a cooler, much
+   quieter treatment than .calendar-event--notable's amber card, so the
+   two tiers stay visually distinct rather than the badge text alone
+   doing all the work. */
+.calendar-event--medium {
+  background: rgba(79, 195, 247, 0.08);
+  border: 1px solid rgba(79, 195, 247, 0.3);
+  border-radius: 6px;
+  padding: 0.65em 0.8em;
+  margin: 0.45em 0;
+}
 .calendar-date-block {
   flex: 0 0 auto;
-  width: 4em;
+  width: 4.75em;
   text-align: center;
   background: var(--md-default-fg-color--lightest);
   border-radius: 5px;
@@ -1581,6 +1700,52 @@
 }
 .calendar-event--notable .calendar-date-day {
   color: #ffb300;
+}
+/* Org identity anchor inside the date block — see the comment in
+   calendar.html for why this lives here rather than down in
+   .calendar-event-orgline (which used to carry a much smaller version
+   of the same logo). */
+.calendar-date-org {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2em;
+  margin-top: 0.35em;
+  padding-top: 0.35em;
+  border-top: 1px solid var(--md-default-fg-color--lighter);
+  text-decoration: none;
+  color: inherit;
+}
+.calendar-date-org-logo {
+  /* Fills the date block's own width; capped on height rather than left
+     square, so a wide wordmark logo genuinely spans the bubble while a
+     square/portrait one is constrained by height instead (object-fit:
+     contain letterboxes it — narrower than the bubble, not stretched)
+     rather than blowing out how tall every row on the page is. */
+  width: 100%;
+  height: 48px;
+  object-fit: contain;
+  border-radius: 5px;
+  background: none;
+}
+.calendar-date-org-logo.org-logo-needs-dark {
+  background: rgba(0, 0, 0, 0.45);
+}
+.calendar-date-org-logo.org-logo-needs-light {
+  background: white;
+}
+.calendar-date-org-name {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-size: 0.62em;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--md-default-fg-color--light);
+}
+.calendar-date-org:hover .calendar-date-org-name {
+  text-decoration: underline;
 }
 .calendar-event-body {
   flex: 1 1 auto;
@@ -1638,12 +1803,6 @@
   margin-top: 0.25em;
   font-size: 0.82em;
 }
-.calendar-event-logo {
-  width: 16px;
-  height: 16px;
-  object-fit: contain;
-  flex-shrink: 0;
-}
 .calendar-event-type {
   display: inline-block;
   font-size: 0.7em;
@@ -1662,6 +1821,21 @@
   background: rgba(255, 179, 0, 0.2);
   border-radius: 3px;
   padding: 0.15em 0.5em;
+}
+.calendar-event-badge--medium {
+  color: #4fc3f7;
+  background: rgba(79, 195, 247, 0.2);
+}
+/* notable_reason: shown directly, not hidden behind a hover tooltip —
+   the whole point is a reader (or a future editor auditing the tier)
+   sees the "why" without an extra interaction. Small and muted so it
+   reads as a caption under the badge row, not competing with the
+   event's own title. */
+.calendar-event-reason {
+  font-size: 0.78em;
+  font-style: italic;
+  color: var(--md-default-fg-color--light);
+  margin: 0.15em 0 0.1em 0;
 }
 .calendar-event-coverage {
   font-size: 0.85em;
@@ -1885,6 +2059,14 @@
   background: #ffb300;
   box-shadow: 0 0 0 3px rgba(255, 179, 0, 0.25);
 }
+/* "medium" tier's counterpart on an org's own history/upcoming timeline —
+   same blue used for .calendar-event--medium/.calendar-event-badge--medium,
+   but deliberately just the dot colour, no title-weight bump, so it stays
+   the quieter of the two tiers here too. */
+.org-events-timeline li.org-event--medium::before {
+  background: #4fc3f7;
+  box-shadow: 0 0 0 3px rgba(79, 195, 247, 0.25);
+}
 .org-events-timeline .org-event-date {
   display: block;
   font-size: 0.78em;
@@ -1894,6 +2076,15 @@
 }
 .org-events-timeline .org-event-title {
   display: block;
+}
+/* notable_reason:'s counterpart here — same "short caption, always
+   visible" treatment as .calendar-event-reason. */
+.org-event-reason {
+  display: block;
+  font-size: 0.82em;
+  font-style: italic;
+  color: var(--md-default-fg-color--light);
+  margin-top: 0.1em;
 }
 .org-events-timeline .org-event-coverage {
   font-size: 0.82em;

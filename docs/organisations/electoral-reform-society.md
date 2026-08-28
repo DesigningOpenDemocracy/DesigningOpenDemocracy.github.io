@@ -36,6 +36,7 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
+  notable_reason: Founding of the organisation
 - date: '1959-01-01'
   title: Defended STV in Ireland — future director Enid Lakeman led successful campaigns
     against referendums to abolish proportional representation
@@ -46,6 +47,7 @@ events:
   proof_level: high
   url_checked: '2026-08-20'
   notable: true
+  notable_reason: Referendum campaign/result
 - date: '2011-05-05'
   title: Led the Yes campaign in the UK's Alternative Vote referendum — the first
     UK-wide electoral system referendum
@@ -54,6 +56,7 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
+  notable_reason: Referendum campaign/result
 activity:
   rss:
     checked: 2026-08-09

@@ -33,7 +33,8 @@ events:
   proof_level: high
   url_checked: '2026-08-12'
   end_date: '2026-09-10'
-  notable: true
+  notable: medium
+  notable_reason: Facilitator training camp, not a public conference
 - date: '2026-09-22'
   title: Launch of recommendations from Citizens' Assembly on Future Tourism — Copenhagen
   url: https://www.wedodemocracy.dk/vores-kalender/

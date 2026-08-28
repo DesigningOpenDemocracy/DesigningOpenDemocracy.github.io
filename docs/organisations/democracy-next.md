@@ -36,6 +36,7 @@ events:
   proof_level: high
   url_checked: '2026-08-14'
   notable: true
+  notable_reason: Platform/product launch
 - date: '2025-09-15'
   title: Published the 2024 Impact Report on the institute's third anniversary
   url: https://demnext.substack.com/p/looking-back-moving-forward-democracynexts

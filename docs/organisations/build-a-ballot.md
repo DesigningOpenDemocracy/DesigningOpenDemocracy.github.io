@@ -39,6 +39,7 @@ events:
   proof_level: high
   url_checked: '2026-08-16'
   notable: true
+  notable_reason: Platform/product launch
 - date: '2025-05-03'
   title: Scaled up for the 2025 federal election, growing the team from two to four
   url: https://www.buildaballot.org.au/about
@@ -47,6 +48,7 @@ events:
   proof_level: high
   url_checked: '2026-08-16'
   notable: true
+  notable_reason: Crowdfunded expansion for federal election
 - date: '2026-03-21'
   title: Tool live for the 2026 South Australian state election
   url: https://www.buildaballot.org.au/transparency/candidate-and-party-assessments

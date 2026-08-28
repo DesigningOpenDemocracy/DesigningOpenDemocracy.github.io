@@ -21,18 +21,6 @@ location:
   name: Melbourne, Australia
   precision: city
 rss_feed: https://www.communityindependentsproject.org/blog/rss.xml
-events:
-- date: '2026-09-11'
-  title: Communities Rising — Action by the People for the Times (6th annual Community
-    Independents Convention)
-  url: https://events.humanitix.com/communities-rising-action-by-the-people-for-the-times
-  quote: the sixth annual Convention of the Community Independents Movement
-  proof_level: high
-  url_checked: '2026-08-10'
-  end_date: '2026-09-12'
-  notable: true
-  type: conference
-  location: Online
 activity:
   manual:
     checked: 2026-06-07

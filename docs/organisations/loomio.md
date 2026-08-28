@@ -33,6 +33,7 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
+  notable_reason: Platform/product launch
 - date: '2014-01-01'
   title: Raises $100,000 via crowdfunding for Loomio 1.0 release
   url: https://en.wikipedia.org/wiki/Loomio
@@ -40,6 +41,7 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
+  notable_reason: Crowdfunded flagship 1.0 release
 - date: '2014-04-01'
   title: Wins MIX Prize Digital Freedom Challenge
   url: https://en.wikipedia.org/wiki/Loomio

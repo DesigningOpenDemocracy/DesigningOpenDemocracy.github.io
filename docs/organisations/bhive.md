@@ -30,6 +30,7 @@ events:
   proof_level: high
   url_checked: '2026-08-12'
   notable: true
+  notable_reason: First platform cooperative in Australia
 last_checked: '2026-05-29'
 ---
 

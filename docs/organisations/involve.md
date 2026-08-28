@@ -33,6 +33,7 @@ events:
   proof_level: high
   url_checked: '2026-08-12'
   notable: true
+  notable_reason: Founding of the organisation
 - date: '2017-09-01'
   title: Delivered the Citizens' Assembly on Brexit — 50 members over two weekends
     in Manchester
@@ -46,6 +47,7 @@ events:
   proof_level: high
   url_checked: '2026-08-21'
   notable: true
+  notable_reason: Delivered UK's Brexit Citizens' Assembly
 - date: '2020-01-01'
   title: Ran Climate Assembly UK for six House of Commons select committees
   url: https://www.climateassembly.uk/about/
@@ -57,6 +59,7 @@ events:
   proof_level: high
   url_checked: '2026-08-21'
   notable: true
+  notable_reason: Ran UK Parliament's Climate Assembly
 activity:
   dod:
     date: 2026-08-21

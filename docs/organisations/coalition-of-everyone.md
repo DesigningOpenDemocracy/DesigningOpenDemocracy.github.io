@@ -23,6 +23,7 @@ events:
   proof_level: high
   url_checked: '2026-08-13'
   notable: true
+  notable_reason: Founding of the organisation
 - date: '2020-02-04'
   title: Ran four mock Citizens' Assemblies at Melbourne's Sustainable Living Festival
   url: https://web.archive.org/web/20201025045936/https://www.coalitionofeveryone.com/post/citizens-assembly

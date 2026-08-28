@@ -99,6 +99,21 @@ def _org_logo(slug):
         return None
 
 
+def _org_logo_bg(slug):
+    """Return logo_bg ('dark'/'light') for an org slug, or None. Needed
+    alongside _org_logo() so calendar.html can apply the same
+    org-logo-needs-dark/-light backing-card treatment org pages and the
+    home page map already use for transparent-background logos — see
+    CLAUDE.md's logo_bg: convention."""
+    path = os.path.join(ORGS_DIR, f"{slug}.md")
+    if not os.path.exists(path):
+        return None
+    try:
+        return frontmatter.load(path).metadata.get("logo_bg")
+    except Exception:
+        return None
+
+
 def _org_country(slug):
     """Return country ISO code for an org slug, or None."""
     path = os.path.join(ORGS_DIR, f"{slug}.md")
@@ -110,6 +125,17 @@ def _org_country(slug):
         return None
 
 _events: list = []
+
+
+def _notable_tier(entry):
+    """Normalize an events: entry's notable: field to True (major),
+    "medium", or False. Any other value (a typo, a stray truthy string)
+    reads as False rather than silently getting the major-event
+    highlight — see CLAUDE.md's notable: docs for the true/"medium"/
+    absent distinction and why it isn't just about frequency (an AGM is
+    just as annual as a flagship conference, but isn't major)."""
+    v = entry.get("notable")
+    return v if v is True or v == "medium" else False
 
 
 def _parse_date(val):
@@ -141,12 +167,15 @@ def _load_manual_events(today):
                     "date": d,
                     "end_date": _parse_date(entry.get("end_date")),
                     "title": entry.get("title", "Untitled event"),
+                    "short_title": entry.get("short_title"),
                     "url": entry.get("url", ""),
                     "org_slug": slug,
                     "org_title": m.get("title", slug),
                     "source": "manual",
-                    "notable": bool(entry.get("notable")),
+                    "notable": _notable_tier(entry),
+                    "notable_reason": entry.get("notable_reason"),
                     "logo": _org_logo(slug),
+                    "logo_bg": _org_logo_bg(slug),
                     "country": entry.get("country") or m.get("country"),
                     "type": entry.get("type"),
                     "location": entry.get("location"),
@@ -193,6 +222,7 @@ def _load_synced_events(today):
                     "source": "ical",
                     "notable": False,
                     "logo": _org_logo(slug),
+                    "logo_bg": _org_logo_bg(slug),
                     "country": _org_country(slug),
                 }
                 _maybe_add_translation(evt, evt["title"], evt["org_title"])
@@ -344,10 +374,53 @@ def on_pre_build(config):
         )
 
 
+def _next_notable_event(org_slug):
+    """First upcoming *major* (notable: true, not "medium") event for a
+    given org slug, or None.
+
+    Powers home.html's "Next DOD event" banner: restricted to the major
+    tier specifically — see CLAUDE.md's notable: docs — so a merely
+    "medium" borderline event doesn't get promoted to the homepage
+    banner, which is reserved for genuinely major (rare, flagship-scale)
+    occasions. Reads the same _events list calendar_events is bound to,
+    already sorted ascending by date at on_pre_build, so the first match
+    is the soonest one."""
+    for e in _events:
+        if e.get("org_slug") == org_slug and e.get("notable") is True:
+            return e
+    return None
+
+
+def _format_event_date(d):
+    """'2026-09-15' (a date object) -> 'Tuesday, 15 September 2026'.
+    Built without strftime's %-d (a GNU/BSD extension, not portable to
+    every platform strftime might run on) — same approach as
+    hooks/event_card.py's _format_date, duplicated rather than imported
+    since mkdocs hooks are registered/loaded as standalone files, not a
+    package other hooks import from."""
+    if not isinstance(d, date):
+        return str(d)
+    return d.strftime("%A, ") + str(d.day) + d.strftime(" %B %Y")
+
+
+def _format_event_time(t):
+    """'18:00' -> '6:00 PM'. Same strict HH:MM shape as event_card.py's
+    _format_time; falls back to the raw string if it doesn't match."""
+    try:
+        parsed = datetime.strptime(str(t), "%H:%M")
+    except ValueError:
+        return str(t)
+    hour12 = parsed.strftime("%I").lstrip("0") or "12"
+    return hour12 + parsed.strftime(":%M %p")
+
+
 def on_env(env, config, files):
     env.globals["calendar_events"] = _events
+    env.globals["next_notable_event"] = _next_notable_event
     env.filters["country_name"] = lambda c: _COUNTRY_NAMES.get(str(c).upper(), str(c)) if c else ""
     env.filters["country_flag"] = lambda c: _flag_emoji(str(c)) if c else ""
+    env.filters["format_event_date"] = _format_event_date
+    env.filters["format_event_time"] = _format_event_time
 
 
 def _flag_emoji(code):

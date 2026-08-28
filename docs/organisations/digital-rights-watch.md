@@ -42,6 +42,7 @@ events:
     activists, political advisers, technology consultants and academics.
   proof_level: high
   notable: true
+  notable_reason: Founding of the organisation
 - date: '2018-10-10'
   title: Lodged a formal submission opposing the Assistance and Access Bill 2018 (the
     encryption "backdoor" legislation)

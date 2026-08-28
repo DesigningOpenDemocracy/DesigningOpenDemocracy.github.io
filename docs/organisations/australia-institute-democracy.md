@@ -47,6 +47,7 @@ events:
   proof_level: high
   url_checked: '2026-08-20'
   notable: true
+  notable_reason: Flagship conference/summit
   type: conference
   location: Parliament of NSW, Sydney
 activity:

@@ -36,6 +36,7 @@ events:
   proof_level: high
   url_checked: '2026-08-25'
   notable: true
+  notable_reason: Founding of the organisation
 - date: '1998-01-01'
   title: Launched its website, opening the committee record beyond the three founding
     advocacy organisations
@@ -60,6 +61,7 @@ events:
   proof_level: high
   url_checked: '2026-08-25'
   notable: true
+  notable_reason: Became a fully independent NGO
 activity:
   dod:
     date: 2026-08-25

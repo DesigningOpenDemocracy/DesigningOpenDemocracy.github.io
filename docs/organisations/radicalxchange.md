@@ -33,6 +33,7 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
+  notable_reason: Major publication
 - date: '2019-03-01'
   title: First RadicalxChange conference in Detroit — movement formally launched
   url: https://www.radicalxchange.org/events/2019-conference
@@ -41,6 +42,7 @@ events:
   proof_level: high
   url_checked: '2026-08-12'
   notable: true
+  notable_reason: Flagship conference
 - date: '2024-04-16'
   title: 'Plurality: The Future of Collaborative Technology and Democracy published
     (Weyl, Tang & community)'
@@ -49,6 +51,7 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
+  notable_reason: Major publication
 - date: '2026-08-27'
   title: Melbourne chapter launch event — first Australian RadicalxChange chapter
   url: https://events.humanitix.com/radicalxchange-foundation-in-melbourne
@@ -59,6 +62,7 @@ events:
   time: '18:00'
   end_time: '20:00'
   notable: true
+  notable_reason: First chapter launch
   coverage_url: /blog/2026/08/07/radicalxchange-is-launching-a-melbourne-chapter--heres-what-it-is/
   country: AU
 activity:

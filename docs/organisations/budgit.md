@@ -38,6 +38,7 @@ events:
   proof_level: high
   url_checked: '2026-08-25'
   notable: true
+  notable_reason: Founding of the organisation
 - date: '2014-01-01'
   title: Received a $400,000 Omidyar Network grant and launched Tracka, its citizen
     project-monitoring platform
@@ -48,6 +49,7 @@ events:
   proof_level: high
   url_checked: '2026-08-25'
   notable: true
+  notable_reason: Flagship platform launch (Tracka)
 - date: '2017-01-01'
   title: Launched Civic Hive as its innovation centre, and challenged N500bn of insertions
     in the 2017 federal budget

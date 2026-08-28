@@ -31,6 +31,7 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
+  notable_reason: Founding of the organisation
 - date: '2002-05-02'
   title: Supreme Court judgment mandating candidate disclosure of criminal, financial,
     and educational background
@@ -40,6 +41,7 @@ events:
   proof_level: high
   url_checked: '2026-08-21'
   notable: true
+  notable_reason: Landmark legal/court win
 - date: '2003-03-13'
   title: Second Supreme Court judgment striking down a watered-down disclosure amendment
     and restoring the original order

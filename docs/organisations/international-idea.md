@@ -33,6 +33,7 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
+  notable_reason: Founding of the organisation
 - date: '2006-01-01'
   title: Launched the Global State of Democracy indices — a flagship annual assessment
     covering 160+ countries
@@ -41,6 +42,7 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
+  notable_reason: Platform/product launch
 activity:
   rss:
     date: 2026-08-14
