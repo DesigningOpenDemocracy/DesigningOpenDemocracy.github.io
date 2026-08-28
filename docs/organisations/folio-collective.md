@@ -32,7 +32,8 @@ events:
     let the sunshine in and strengthen public integrity.
   proof_level: high
   url_checked: '2026-08-20'
-  notable: true
+  notable: medium
+  notable_reason: Regular Folio Conversation panel talk
 - date: 2023-03-20
   title: (Un)ethical design — Robodebt, accountability, and equity in a digital society
   url: https://www.folio.org.au/event-5200127
@@ -62,7 +63,8 @@ events:
     outcome, and democracy in Australia.
   proof_level: high
   url_checked: '2026-08-20'
-  notable: true
+  notable: medium
+  notable_reason: Regular Folio Conversation panel talk
 - date: 2025-02-26
   title: Election 2025 — how will independents shape our future Parliament?
   url: https://www.folio.org.au/event-6065606

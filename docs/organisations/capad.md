@@ -31,6 +31,7 @@ events:
   proof_level: high
   url_checked: '2026-08-13'
   notable: medium
+  notable_reason: Routine annual governance meeting
   type: meeting
   location: Online via Zoom
 - date: '2026-10-19'
@@ -43,6 +44,7 @@ events:
   proof_level: high
   url_checked: '2026-08-13'
   notable: medium
+  notable_reason: One-off local public forum
   type: meetup
   location: Irish Club, Weston ACT
 - date: '2026-11-16'
@@ -55,6 +57,7 @@ events:
   proof_level: high
   url_checked: '2026-08-13'
   notable: medium
+  notable_reason: Local meetup, not a flagship event
   type: meetup
   location: Irish Club, Weston ACT
 - date: '2026-12-06'

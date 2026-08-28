@@ -50,7 +50,8 @@ events:
     Forum is open to feedback until Friday, 6 November 2020.
   proof_level: high
   url_checked: '2026-08-10'
-  notable: true
+  notable: medium
+  notable_reason: Process setback, not a delivered outcome
 - date: '2023-12-15'
   title: Third National Action Plan (2023–25) published, renewing Australia's OGP
     engagement after the post-2020 dormancy
@@ -69,7 +70,8 @@ events:
     the panel, with successful candidates announced on 8 May 2026.
   proof_level: high
   url_checked: '2026-08-21'
-  notable: true
+  notable: medium
+  notable_reason: Committee formation, not itself an outcome
 activity:
   dod:
     date: 2026-08-21

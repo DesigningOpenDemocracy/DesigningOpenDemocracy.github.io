@@ -173,6 +173,7 @@ def _load_manual_events(today):
                     "org_title": m.get("title", slug),
                     "source": "manual",
                     "notable": _notable_tier(entry),
+                    "notable_reason": entry.get("notable_reason"),
                     "logo": _org_logo(slug),
                     "logo_bg": _org_logo_bg(slug),
                     "country": entry.get("country") or m.get("country"),

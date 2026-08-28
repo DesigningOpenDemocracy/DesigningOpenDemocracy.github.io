@@ -152,6 +152,7 @@
   <li class="{% if e.notable is true %}org-event--notable{% elif e.notable == 'medium' %}org-event--medium{% endif %}">
     <span class="org-event-date">{{ e.date }}{% if e.end_date %}–{{ e.end_date }}{% endif %}</span>
     <span class="org-event-title">{% if href %}<a href="{{ href }}" target="_blank" rel="noopener">{{ e.title }}</a>{% else %}{{ e.title }}{% endif %}</span>
+    {%- if e.notable and e.notable_reason %}<span class="org-event-reason">{{ e.notable_reason }}</span>{% endif %}
     {%- if e.coverage_url %}<span class="org-event-coverage"> — <a href="{{ e.coverage_url }}">DOD coverage</a></span>{%- endif %}
     {%- if e.proof_level or e.url or e.source %}
     <details class="org-event-detail">

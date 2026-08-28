@@ -61,6 +61,7 @@ events:
   proof_level: medium
   url_checked: '2026-08-10'
   notable: true
+  notable_reason: 'Structural vote: org rename + remit change'
   type: meeting
   proof_warning: true
 activity:

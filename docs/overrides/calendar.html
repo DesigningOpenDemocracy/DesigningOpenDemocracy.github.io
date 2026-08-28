@@ -113,6 +113,7 @@
         {%- if e.type %}<span class="calendar-event-type">{{ type_icons.get(e.type, '📅') }} {{ e.type }}</span>{% endif %}
         {%- if e.country %}<span class="calendar-event-country">{{ e.country | country_flag }} {{ e.country | country_name }}</span>{% endif %}
       </div>
+      {%- if e.notable and e.notable_reason %}<div class="calendar-event-reason">{{ e.notable_reason }}</div>{% endif %}
 
       <div class="calendar-event-title">
         {%- if e.title_en -%}

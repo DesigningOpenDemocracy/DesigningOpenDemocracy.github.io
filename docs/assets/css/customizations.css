@@ -1826,6 +1826,17 @@
   color: #4fc3f7;
   background: rgba(79, 195, 247, 0.2);
 }
+/* notable_reason: shown directly, not hidden behind a hover tooltip —
+   the whole point is a reader (or a future editor auditing the tier)
+   sees the "why" without an extra interaction. Small and muted so it
+   reads as a caption under the badge row, not competing with the
+   event's own title. */
+.calendar-event-reason {
+  font-size: 0.78em;
+  font-style: italic;
+  color: var(--md-default-fg-color--light);
+  margin: 0.15em 0 0.1em 0;
+}
 .calendar-event-coverage {
   font-size: 0.85em;
   margin-left: 0.3em;
@@ -2065,6 +2076,15 @@
 }
 .org-events-timeline .org-event-title {
   display: block;
+}
+/* notable_reason:'s counterpart here — same "short caption, always
+   visible" treatment as .calendar-event-reason. */
+.org-event-reason {
+  display: block;
+  font-size: 0.82em;
+  font-style: italic;
+  color: var(--md-default-fg-color--light);
+  margin-top: 0.1em;
 }
 .org-events-timeline .org-event-coverage {
   font-size: 0.82em;

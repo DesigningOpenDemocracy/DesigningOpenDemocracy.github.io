@@ -37,8 +37,8 @@ CANONICAL_TOP = [
 # Per-event canonical field order
 EVENT_FIELD_ORDER = [
     "date", "title", "short_title", "url", "source", "quote", "note", "proof_level",
-    "url_checked", "end_date", "time", "end_time", "notable", "type", "location",
-    "proof_warning", "coverage_url",
+    "url_checked", "end_date", "time", "end_time", "notable", "notable_reason", "type",
+    "location", "proof_warning", "coverage_url",
 ]
 
 # Activity sub-key canonical order
