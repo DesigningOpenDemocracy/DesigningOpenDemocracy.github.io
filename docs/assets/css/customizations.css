@@ -2048,6 +2048,14 @@
   background: #ffb300;
   box-shadow: 0 0 0 3px rgba(255, 179, 0, 0.25);
 }
+/* "medium" tier's counterpart on an org's own history/upcoming timeline —
+   same blue used for .calendar-event--medium/.calendar-event-badge--medium,
+   but deliberately just the dot colour, no title-weight bump, so it stays
+   the quieter of the two tiers here too. */
+.org-events-timeline li.org-event--medium::before {
+  background: #4fc3f7;
+  box-shadow: 0 0 0 3px rgba(79, 195, 247, 0.25);
+}
 .org-events-timeline .org-event-date {
   display: block;
   font-size: 0.78em;

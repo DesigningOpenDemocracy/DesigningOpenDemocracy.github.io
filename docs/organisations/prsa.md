@@ -60,7 +60,7 @@ events:
   url: https://www.designingopendemocracy.com/blog/2026/07/31/prsa-members-to-vote-on-rebrand-to-australian-electoral-reform-society--agm-12-november-2026/
   proof_level: medium
   url_checked: '2026-08-10'
-  notable: false
+  notable: true
   type: meeting
   proof_warning: true
 activity:

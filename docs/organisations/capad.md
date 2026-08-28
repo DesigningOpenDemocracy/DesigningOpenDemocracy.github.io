@@ -30,7 +30,7 @@ events:
   quote: Be part of setting the future for CAPaD for another year.
   proof_level: high
   url_checked: '2026-08-13'
-  notable: false
+  notable: medium
   type: meeting
   location: Online via Zoom
 - date: '2026-10-19'
