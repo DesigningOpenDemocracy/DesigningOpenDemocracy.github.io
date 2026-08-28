@@ -31,6 +31,24 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Founding of the organisation
+- date: '2026-07-01'
+  title: Hosted the West Africa CivicTech Conference 2026, convening 400+ participants
+    from across the region
+  url: https://civichive.org/west-africa-civictech-conference-2026-shaping-the-future-of-governance-through-youth-and-technology/
+  quote: 'For two days, the conference became a meeting point for civic innovators,
+    policymakers, civil society organisations, students, researchers, social entrepreneurs,
+    development partners, and technology enthusiasts committed to one shared vision:
+    building a more accountable, inclusive, and digitally enabled West Africa.'
+  note: Month-only date — the recap post (published 26 July 2026) doesn't state the
+    exact conference dates in its own text, though other coverage places the 2026
+    edition around 24 July. Theme was "Youth, Technology & the Future of Governance
+    in West Africa."
+  proof_level: high
+  url_checked: '2026-08-29'
+  notable: true
+  notable_reason: Flagship regional civic-tech conference
+  type: conference
+  location: Lagos, Nigeria
 activity:
   rss:
     date: 2026-08-10

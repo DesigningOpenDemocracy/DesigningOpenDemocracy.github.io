@@ -39,10 +39,10 @@ events:
   title: Designed and delivered the first Australian Citizens' Parliament at Old Parliament
     House
   url: https://www.canberra.edu.au/research/centres/cdd/about-cdd/our-history
-  quote: In 2008, the Centre designed and delivered the first Australian Citizens'
+  quote: 'In 2008, the Centre designed and delivered the first Australian Citizens’
     Parliament at Old Parliament House, bringing together 150 citizens from across
-    Australia to deliberate on the question, How can Australia's political system
-    be strengthened to serve us better?
+    Australia to deliberate on the question: How can Australia’s political system
+    be strengthened to serve us better?'
   note: newdemocracy.md dates the same Citizens' Parliament to 2009 (when co-organiser
     newDemocracy Foundation's own source places the actual deliberation) — this page
     dates it to 2008 instead ("designed and delivered"), possibly the design/setup

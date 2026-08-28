@@ -31,6 +31,23 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Founding of the organisation
+- date: '1948-01-01'
+  title: Publicly announced cooperation with the Chinese Communist Party after the
+    Kuomintang declared it an "illegal organization"
+  url: https://en.wikipedia.org/wiki/China_Democratic_League
+  quote: The KMT's repression of the CDL directly led the League, at its Third Plenary
+    Session of the First Central Committee in January 1948, to publicly announce cooperation
+    with the CCP. From that point onward, the CCP and the CDL established an alliance.
+  note: Followed the KMT's October 1947 declaration of the CDL as an "illegal organization"
+    and the CDL's boycott (alongside the CCP) of KMT-led National Assembly elections
+    that November. This alliance is the origin of the CDL's post-1949 role as one
+    of the eight CCP-led "democratic parties" — directly relevant to the "bounded
+    articulation" framing in this page's note above.
+  proof_level: high
+  url_checked: '2026-08-29'
+  notable: true
+  notable_reason: Foundational political alliance shaping the org's modern role
+  type: milestone
 activity:
   dod:
     checked: 2026-06-29

@@ -33,6 +33,21 @@ events:
   url_checked: '2026-08-12'
   notable: true
   notable_reason: Founding of the organisation
+- date: '2025-01-20'
+  title: Operations transferred to Portable, with co-founder Alvaro Maz joining its
+    advisory board
+  url: https://portable.com.au/articles/code-for-australia-announcement/
+  quote: Portable is proud to announce that it will be supporting the operation and
+    management of Code for Australia going into 2025.
+  note: CfA's mission and vision stay unchanged under the arrangement; Managing Director
+    Matt Sawkill joined the Portable team as lead technologist. Over its history to
+    this point, the fellowship/advisory program had produced ~100 Fellows and Advisors
+    and 100+ project partners.
+  proof_level: high
+  url_checked: '2026-08-29'
+  notable: medium
+  notable_reason: Operational restructuring, mission unchanged
+  type: milestone
 activity:
   manual:
     checked: 2026-06-07
