@@ -29,6 +29,7 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
+  notable_reason: Founding of the organisation
 - date: '2022-10-07'
   title: Awarded the Nobel Peace Prize jointly with Ales Bialiatski and Center for
     Civil Liberties
@@ -37,6 +38,7 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
+  notable_reason: Nobel Peace Prize
 activity:
   manual:
     checked: 2026-06-07

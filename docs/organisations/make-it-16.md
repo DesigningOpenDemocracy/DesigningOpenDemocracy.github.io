@@ -28,6 +28,7 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
+  notable_reason: Platform/product launch
 - date: '2020-10-07'
   title: High Court rules voting age of 18 is age discrimination but a justified limit
   url: https://en.wikipedia.org/wiki/Make_It_16_(New_Zealand)
@@ -51,6 +52,7 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
+  notable_reason: Landmark legal/court win
 - date: '2023-08-29'
   title: Electoral (Lowering Voting Age) Bill passes first reading in Parliament
   url: https://en.wikipedia.org/wiki/Make_It_16_(New_Zealand)

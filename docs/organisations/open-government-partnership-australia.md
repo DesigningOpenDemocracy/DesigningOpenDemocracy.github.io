@@ -26,6 +26,7 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
+  notable_reason: Origin of Australia's OGP membership
 - date: '2016-12-01'
   title: Australia's first Open Government National Action Plan released
   url: https://www.opengovpartnership.org/members/australia/
@@ -62,6 +63,7 @@ events:
   proof_level: high
   url_checked: '2026-08-21'
   notable: true
+  notable_reason: Major publication
 - date: '2026-05-08'
   title: Australia's fourth Open Government Forum appointed, with co-creation of the
     fourth National Action Plan beginning

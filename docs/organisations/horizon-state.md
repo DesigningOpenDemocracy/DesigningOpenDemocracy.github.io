@@ -28,6 +28,7 @@ events:
   proof_level: high
   url_checked: '2026-08-12'
   notable: true
+  notable_reason: Founding of the organisation
 - date: '2017-11-19'
   title: Token Generation Event (ICO) concluded, raising approximately $1.4M
   url: https://icodrops.com/horizon-state/
@@ -45,6 +46,7 @@ events:
   proof_level: high
   url_checked: '2026-08-12'
   notable: true
+  notable_reason: First government election deployment
 - date: '2019-08-21'
   title: Company shut down after legal costs from a lawsuit
   url: https://finance.yahoo.com/news/blockchain-voting-platform-horizon-state-140552054.html
@@ -55,6 +57,7 @@ events:
   proof_level: high
   url_checked: '2026-08-12'
   notable: true
+  notable_reason: Org deregistered / wound up
 - date: '2019-11-01'
   title: Returned under new management after a community group purchased the platform's
     IP assets
@@ -65,6 +68,7 @@ events:
   proof_level: high
   url_checked: '2026-08-22'
   notable: true
+  notable_reason: Revived under new ownership after shutdown
 - date: '2024-12-04'
   title: Relaunched its token as Horizon State Token (HST) on the Base network, with
     an airdrop to prior Decision Token holders

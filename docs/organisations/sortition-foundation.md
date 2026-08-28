@@ -43,6 +43,7 @@ events:
   proof_level: high
   url_checked: '2026-08-12'
   notable: true
+  notable_reason: Founding of the organisation
 activity:
   manual:
     checked: 2026-08-08

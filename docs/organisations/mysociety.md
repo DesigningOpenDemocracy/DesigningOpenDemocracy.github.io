@@ -33,6 +33,7 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
+  notable_reason: Founding of the organisation
 - date: '2004-06-01'
   title: Launched TheyWorkForYou — making parliamentary activity searchable and accessible
     to UK citizens
@@ -42,6 +43,7 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
+  notable_reason: Platform/product launch
 - date: '2005-02-01'
   title: Launched WriteToThem — enabling citizens to contact their elected representatives
     online
@@ -51,6 +53,7 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
+  notable_reason: Platform/product launch
 activity:
   rss:
     date: 2026-08-17

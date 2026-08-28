@@ -31,6 +31,7 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
+  notable_reason: Platform/product launch
 activity:
   rss:
     checked: 2026-08-17

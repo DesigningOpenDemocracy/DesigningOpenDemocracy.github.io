@@ -36,6 +36,7 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
+  notable_reason: Platform/product launch
 - date: '2021-06-01'
   title: Phase 2 launched under SSHRC Partnership Grant funding
   url: https://participedia.net/about

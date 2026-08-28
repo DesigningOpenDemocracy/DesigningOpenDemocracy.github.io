@@ -34,6 +34,7 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
+  notable_reason: Founding of the organisation
 - date: '2011-07-21'
   title: Oregon House Bill 2634 signed into law, making the Citizens' Initiative Review
     a permanent part of the state's initiative process
@@ -44,6 +45,7 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
+  notable_reason: Legislative win
 activity:
   dod:
     checked: 2026-07-16

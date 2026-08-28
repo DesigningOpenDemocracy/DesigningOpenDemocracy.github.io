@@ -31,6 +31,7 @@ events:
   url_checked: '2026-08-10'
   end_date: '2026-09-12'
   notable: true
+  notable_reason: Flagship conference/summit
   type: conference
   location: Online
 activity:

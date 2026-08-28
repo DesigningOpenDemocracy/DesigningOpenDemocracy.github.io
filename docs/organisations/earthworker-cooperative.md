@@ -34,6 +34,7 @@ events:
   proof_level: high
   url_checked: '2026-08-12'
   notable: true
+  notable_reason: Founding of the organisation
 - date: '2016-01-01'
   title: Bought a hot water tank manufacturer in Morwell, becoming the Earthworker
     Energy Manufacturing Cooperative — its flagship worker-owned enterprise
@@ -44,6 +45,7 @@ events:
   proof_level: high
   url_checked: '2026-08-12'
   notable: true
+  notable_reason: Became a worker-owned manufacturing co-op
 activity:
   rss:
     checked: 2026-08-17

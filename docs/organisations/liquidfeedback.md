@@ -38,6 +38,7 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
+  notable_reason: Major publication
 - date: '2010-01-01'
   title: Pirate Party Berlin becomes the first political organisation to adopt LiquidFeedback,
     to draft new statutes
@@ -48,6 +49,7 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
+  notable_reason: First political party adopts the platform
 - date: '2010-06-01'
   title: Developers establish Interaktive Demokratie e.V., an independent research
     institute for digital-democracy research

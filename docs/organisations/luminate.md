@@ -33,6 +33,7 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
+  notable_reason: Platform/product launch
 activity:
   manual:
     checked: 2026-06-07

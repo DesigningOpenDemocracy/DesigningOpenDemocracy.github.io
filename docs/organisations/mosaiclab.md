@@ -31,6 +31,7 @@ events:
   proof_level: high
   url_checked: '2026-08-12'
   notable: true
+  notable_reason: First citizens' jury delivered
 - date: '2015-01-01'
   title: City of Melbourne Urban Forest Strategy wins IAP2 Australasian Environment
     Project of the Year
@@ -46,6 +47,7 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
+  notable_reason: Founding of the organisation
 - date: '2018-01-01'
   title: Critical Thinking Research with Dr Lyn Carson wins IAP2 Core Values Award
     for Research
@@ -79,6 +81,7 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
+  notable_reason: Major publication
 - date: '2023-01-01'
   title: Water Works Across 2021-23 named IAP2 Awards Finalist
   source: IAP2 Australasia, Core Values Awards finalists 2023 — mosaiclab.com.au/projects

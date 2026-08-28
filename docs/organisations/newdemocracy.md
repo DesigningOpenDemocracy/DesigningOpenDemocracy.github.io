@@ -34,6 +34,7 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
+  notable_reason: Platform/product launch
 - date: '2009-01-01'
   title: Australian Citizens' Parliament — 150 citizens deliberate on strengthening
     Australia's democracy
@@ -44,6 +45,7 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
+  notable_reason: First flagship citizens' assembly project
 - date: '2017-01-01'
   title: Democracy R&D international network founded with newDemocracy as a founding
     member
@@ -64,6 +66,7 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
+  notable_reason: World-first permanent parliamentary citizens council
 activity:
   rss:
     date: 2026-07-03

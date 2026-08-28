@@ -28,6 +28,7 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
+  notable_reason: Flagship conference
 activity:
   dod:
     checked: 2026-06-29

@@ -41,6 +41,7 @@ events:
   proof_level: high
   url_checked: '2026-08-15'
   notable: true
+  notable_reason: Founding of the organisation
 - date: '2019-09-27'
   title: ACT Greens push a truth-in-political-advertising bill modelled on South Australia's
     law
@@ -62,6 +63,7 @@ events:
   proof_level: high
   url_checked: '2026-08-15'
   notable: true
+  notable_reason: Legislative win
 - date: '2026-02-05'
   title: Reintroduces a Bill to cap political donations at $3,000 per term and ban
     donations from "dirty industries"

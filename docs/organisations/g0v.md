@@ -31,6 +31,7 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
+  notable_reason: Founding hackathon
 - date: '2016-01-01'
   title: g0vhk (Hong Kong branch) founded
   url: https://en.wikipedia.org/wiki/G0v_movement

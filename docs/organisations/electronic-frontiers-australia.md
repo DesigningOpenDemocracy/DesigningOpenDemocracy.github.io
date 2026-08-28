@@ -35,6 +35,7 @@ events:
     not affiliated.
   proof_level: high
   notable: true
+  notable_reason: Founding of the organisation
 - date: '2006-01-01'
   title: Presented a 19,000-signature petition to the Senate opposing mandatory internet
     filtering
@@ -51,6 +52,7 @@ events:
     individuals affected by the scheme
   proof_level: high
   notable: true
+  notable_reason: Founding of the organisation
 - date: '2024-11-19'
   title: Facial recognition complaint EFA co-lodged led to a finding that Bunnings
     breached the Privacy Act
@@ -62,6 +64,7 @@ events:
     retailers including Bunnings were directed to cease the practice.
   proof_level: high
   notable: true
+  notable_reason: Landmark legal/court win
 - date: '2025-09-01'
   title: Chair warned against using AI (ChatGPT) in government decision-making, drawing
     a direct parallel to the Robodebt litigation

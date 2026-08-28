@@ -31,6 +31,7 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
+  notable_reason: Founding of the organisation
 - date: '2014-06-01'
   title: First used by the Taiwanese government for vTaiwan — the first large-scale
     deployment for public policy deliberation
@@ -39,6 +40,7 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
+  notable_reason: First large-scale government deployment (vTaiwan)
 activity:
   manual:
     checked: 2026-06-07

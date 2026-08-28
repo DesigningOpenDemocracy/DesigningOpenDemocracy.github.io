@@ -36,6 +36,7 @@ events:
   proof_level: high
   url_checked: '2026-08-25'
   notable: true
+  notable_reason: Founding of the organisation
 - date: '2022-01-01'
   title: Published gazetted results for every seat in Kenya's 2022 general election,
     linked to the source notice

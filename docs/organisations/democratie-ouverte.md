@@ -61,6 +61,7 @@ events:
   proof_level: high
   url_checked: '2026-08-14'
   notable: true
+  notable_reason: National citizens' climate assembly announced
 activity:
   manual:
     date: 2026-05-18
