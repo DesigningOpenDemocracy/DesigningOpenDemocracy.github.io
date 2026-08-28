@@ -52,6 +52,7 @@ events:
 - date: '2026-09-15'
   title: 'Co-hosting "International Day of Democracy: democracy beyond the ballot
     box" panel with 888 Co-operative Causeway'
+  short_title: 'International Day of Democracy: democracy beyond the ballot box'
   url: https://events.humanitix.com/international-day-of-democracy
   quote: To celebrate International Day of Democracy and in the lead up to a Victorian
     State election, 888 Co-operative Causeway and Designing Open Democracy are pleased

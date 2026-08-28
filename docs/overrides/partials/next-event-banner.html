@@ -18,7 +18,13 @@
     <img id="next-event-banner-logo" src="/assets/dodlogo_transparent.png" alt="Designing Open Democracy logo">
     <span id="next-event-banner-body">
       <span id="next-event-banner-eyebrow">★ Next Designing Open Democracy event</span>
-      <span id="next-event-banner-title">{{ next_dod_event.title }}</span>
+      {#- short_title: is an optional per-event override for this one-line
+          banner — an event's title: is often written as a narrative log
+          entry ("Co-hosting 'X' panel with Y", matching how the rest of
+          an org's history/upcoming timeline reads), which is too long
+          and not what a banner should say. Falls back to title: when
+          short_title: isn't set. -#}
+      <span id="next-event-banner-title">{{ next_dod_event.short_title or next_dod_event.title }}</span>
       <span id="next-event-banner-meta">
         {{ next_dod_event.date | format_event_date }}{% if next_dod_event.time %} · {{ next_dod_event.time | format_event_time }}{% endif -%}
         {%- if next_dod_event.location and next_dod_event.location.name %} · {{ next_dod_event.location.name }}{%- endif %}

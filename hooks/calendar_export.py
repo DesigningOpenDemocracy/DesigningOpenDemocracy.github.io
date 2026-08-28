@@ -99,6 +99,21 @@ def _org_logo(slug):
         return None
 
 
+def _org_logo_bg(slug):
+    """Return logo_bg ('dark'/'light') for an org slug, or None. Needed
+    alongside _org_logo() so calendar.html can apply the same
+    org-logo-needs-dark/-light backing-card treatment org pages and the
+    home page map already use for transparent-background logos — see
+    CLAUDE.md's logo_bg: convention."""
+    path = os.path.join(ORGS_DIR, f"{slug}.md")
+    if not os.path.exists(path):
+        return None
+    try:
+        return frontmatter.load(path).metadata.get("logo_bg")
+    except Exception:
+        return None
+
+
 def _org_country(slug):
     """Return country ISO code for an org slug, or None."""
     path = os.path.join(ORGS_DIR, f"{slug}.md")
@@ -141,12 +156,14 @@ def _load_manual_events(today):
                     "date": d,
                     "end_date": _parse_date(entry.get("end_date")),
                     "title": entry.get("title", "Untitled event"),
+                    "short_title": entry.get("short_title"),
                     "url": entry.get("url", ""),
                     "org_slug": slug,
                     "org_title": m.get("title", slug),
                     "source": "manual",
                     "notable": bool(entry.get("notable")),
                     "logo": _org_logo(slug),
+                    "logo_bg": _org_logo_bg(slug),
                     "country": entry.get("country") or m.get("country"),
                     "type": entry.get("type"),
                     "location": entry.get("location"),
@@ -193,6 +210,7 @@ def _load_synced_events(today):
                     "source": "ical",
                     "notable": False,
                     "logo": _org_logo(slug),
+                    "logo_bg": _org_logo_bg(slug),
                     "country": _org_country(slug),
                 }
                 _maybe_add_translation(evt, evt["title"], evt["org_title"])
