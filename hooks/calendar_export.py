@@ -344,10 +344,51 @@ def on_pre_build(config):
         )
 
 
+def _next_notable_event(org_slug):
+    """First upcoming *notable* event for a given org slug, or None.
+
+    Powers home.html's "Next DOD event" banner: restricted to
+    notable: true so a routine meetup isn't promoted to the homepage —
+    same notable: true = "major event" convention calendar.html's own
+    star badge already uses. Reads the same _events list calendar_events
+    is bound to, already sorted ascending by date at on_pre_build, so the
+    first match is the soonest one."""
+    for e in _events:
+        if e.get("org_slug") == org_slug and e.get("notable"):
+            return e
+    return None
+
+
+def _format_event_date(d):
+    """'2026-09-15' (a date object) -> 'Tuesday, 15 September 2026'.
+    Built without strftime's %-d (a GNU/BSD extension, not portable to
+    every platform strftime might run on) — same approach as
+    hooks/event_card.py's _format_date, duplicated rather than imported
+    since mkdocs hooks are registered/loaded as standalone files, not a
+    package other hooks import from."""
+    if not isinstance(d, date):
+        return str(d)
+    return d.strftime("%A, ") + str(d.day) + d.strftime(" %B %Y")
+
+
+def _format_event_time(t):
+    """'18:00' -> '6:00 PM'. Same strict HH:MM shape as event_card.py's
+    _format_time; falls back to the raw string if it doesn't match."""
+    try:
+        parsed = datetime.strptime(str(t), "%H:%M")
+    except ValueError:
+        return str(t)
+    hour12 = parsed.strftime("%I").lstrip("0") or "12"
+    return hour12 + parsed.strftime(":%M %p")
+
+
 def on_env(env, config, files):
     env.globals["calendar_events"] = _events
+    env.globals["next_notable_event"] = _next_notable_event
     env.filters["country_name"] = lambda c: _COUNTRY_NAMES.get(str(c).upper(), str(c)) if c else ""
     env.filters["country_flag"] = lambda c: _flag_emoji(str(c)) if c else ""
+    env.filters["format_event_date"] = _format_event_date
+    env.filters["format_event_time"] = _format_event_time
 
 
 def _flag_emoji(code):

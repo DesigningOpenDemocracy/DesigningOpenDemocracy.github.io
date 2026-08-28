@@ -1,6 +1,28 @@
 {% extends "main.html" %}
 {% block tabs %}
 {{ super() }}
+<!-- Next DOD event banner: only appears when DOD has an upcoming
+     notable: true event of its own in designing-open-democracy.md's
+     events: frontmatter (see hooks/calendar_export.py's
+     next_notable_event() global). Absent entirely otherwise, so this
+     never shows a stale or empty bar. -->
+{%- set next_dod_event = next_notable_event("designing-open-democracy") %}
+{%- if next_dod_event %}
+<section id="next-event-banner" class="mdx-container">
+  <a id="next-event-banner-link" href="{{ next_dod_event.url }}" target="_blank" rel="noopener">
+    <img id="next-event-banner-logo" src="assets/dodlogo_transparent.png" alt="Designing Open Democracy logo">
+    <span id="next-event-banner-body">
+      <span id="next-event-banner-eyebrow">★ Next Designing Open Democracy event</span>
+      <span id="next-event-banner-title">{{ next_dod_event.title }}</span>
+      <span id="next-event-banner-meta">
+        {{ next_dod_event.date | format_event_date }}{% if next_dod_event.time %} · {{ next_dod_event.time | format_event_time }}{% endif -%}
+        {%- if next_dod_event.location and next_dod_event.location.name %} · {{ next_dod_event.location.name }}{%- endif %}
+      </span>
+    </span>
+    <span id="next-event-banner-cta">Details →</span>
+  </a>
+</section>
+{%- endif %}
 <section id="hero-container" class="mdx-container">
     <div id="hero-card" class="mdx-hero md-typeset">
       <!-- Hero Image -->
