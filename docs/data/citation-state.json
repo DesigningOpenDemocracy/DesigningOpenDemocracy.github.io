@@ -286,7 +286,7 @@
     "last_modified": null
   },
   "https://bonds.coop/about-us/our-story/": {
-    "checked": "2026-08-26",
+    "checked": "2026-08-28",
     "document_sha256": "8de59da11b0b3186f83993ee3f449118503ba392596e8f1064fed5399804f2ed",
     "etag": null,
     "evidence": [
@@ -313,6 +313,7 @@
         "verified": true
       },
       {
+        "checked": "2026-08-28",
         "context": {
           "prefix": "od. Photo by Glynn Jarrett Co-operative Bonds HQ operates from its sister co-op,",
           "sha256": "5514564e069a65c0b26959bb7794c2145186abf497d1e41a1fef3eeecb904c95",
@@ -324,7 +325,7 @@
         "verified": true
       }
     ],
-    "last_modified": "Wed, 26 Aug 2026 11:11:38 GMT"
+    "last_modified": "Fri, 28 Aug 2026 05:12:58 GMT"
   },
   "https://budgit.org/about-us/": {
     "checked": "2026-08-25",
@@ -403,11 +404,12 @@
     "last_modified": null
   },
   "https://cafsa.org.au/cafsa/": {
-    "checked": "2026-08-26",
+    "checked": "2026-08-28",
     "document_sha256": "938c71c61cb749a3d7740205f1ae3c71d9b966a95cb114cab8811ddfd73a7d5c",
-    "etag": "\"16762-1787661578;gz\"",
+    "etag": "\"22601-1787928227;gz\"",
     "evidence": [
       {
+        "checked": "2026-08-28",
         "context": {
           "prefix": "Resources Contact Citizen Assemblies for South Australia",
           "sha256": "df929ab5566c473eff41117725d048245c949170398782267afecefb68f6f213",
@@ -592,11 +594,12 @@
     "last_modified": null
   },
   "https://civichive.org/about-us/": {
-    "checked": "2026-08-26",
+    "checked": "2026-08-28",
     "document_sha256": "5c14942f4be70fe7c181da81a2eb562d1bc6f367a4e9ec482092637c6b65d014",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-28",
         "context": {
           "prefix": "Donate Election Result Portal About us",
           "sha256": "aee7e1dc3880e8ec6b1c12e3c9c5fe4c6c50ef9e9673b5c2a409de2b9ebfafa1",
@@ -617,6 +620,26 @@
         },
         "id": "ed5cf0881e4632c55ed03c84d1bf5843fc1d82fc3eb8fc253a737d3458ae6263",
         "quote": "Civic exists as an extension of BudgIT as a creative civic tech organization driven to retell the Nigerian budget and public data in a finer detail across every literacy span.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://civichive.org/west-africa-civictech-conference-2026-shaping-the-future-of-governance-through-youth-and-technology/": {
+    "checked": "2026-08-28",
+    "document_sha256": "baa11a6aaf1b791e8c28d906254bad7e71019e8fcc433686c92c39e64d0243b7",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-28",
+        "context": {
+          "prefix": "e heart of the West Africa CivicTech Conference 2026, which convened more than 400 participants from nearly different countries in West Africa.",
+          "sha256": "802e863f2ee39976f35ccbcb6c37286b8513449a6867cac49c0a18c38c330c42",
+          "suffix": "Centred on the theme, \u201cYouth, Technology & the Future of Governance in West Africa,\u201d this year\u2019s conference explored one of the region\u2019s most p",
+          "text": "For two days, the conference became a meeting point for civic innovators, policymakers, civil society organisations, students, researchers, social entrepreneurs, development partners, and technology enthusiasts committed to one shared vision: building a more accountable, inclusive, and digitally enabled West Africa."
+        },
+        "id": "802e863f2ee39976f35ccbcb6c37286b8513449a6867cac49c0a18c38c330c42",
+        "quote": "For two days, the conference became a meeting point for civic innovators, policymakers, civil society organisations, students, researchers, social entrepreneurs, development partners, and technology enthusiasts committed to one shared vision: building a more accountable, inclusive, and digitally enabled West Africa.",
         "verified": true
       }
     ],
@@ -1552,6 +1575,25 @@
     ],
     "last_modified": null
   },
+  "https://en.wikipedia.org/wiki/China_Democratic_League": {
+    "checked": "2026-08-28",
+    "document_sha256": "e139b468a2ce4f43c62bef74220d1a44bbd4097ddc845219921a2ba7ceadfa06",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-28",
+        "context": {
+          "prefix": "gainst it. In November 1947, elections were held nationwide for delegates to the National Assembly, which were boycotted by both the CCP and the CDL.",
+          "sha256": "8b7284f470386ca6ea9d6762bf19eeeaeaabb76a4ffd84678d855f97a31d65bb",
+          "suffix": "=== People's Republic of China === After the founding of the People's Republic of China in 1949, the Chinese Communist Party (CCP) became the rulin"
+        },
+        "id": "c2603411e1d3d7332d5a77f1843b83ddb871de3b340b14abe4657f3742384952",
+        "quote": "The KMT's repression of the CDL directly led the League, at its Third Plenary Session of the First Central Committee in January 1948, to publicly announce cooperation with the CCP. From that point onward, the CCP and the CDL established an alliance.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
   "https://en.wikipedia.org/wiki/Chinese_People%27s_Political_Consultative_Conference": {
     "checked": "2026-08-26",
     "document_sha256": "1dc9af679c6f13580beaac6f2bd71c082b56e084e9fff382ce4eef3888f08373",
@@ -1976,6 +2018,26 @@
         },
         "id": "b928b77f00aef5a573cab550ecf58b461e57e3b4d06415caadc078691a6c6ffa",
         "quote": "Flux parties were registered",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://en.wikipedia.org/wiki/Fundaci%C3%B3n_Ciudadano_Inteligente": {
+    "checked": "2026-08-28",
+    "document_sha256": "37b7637783a832e3dcd52671011a75b0d393b99846d742669a6d92d6be34a08f",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-28",
+        "context": {
+          "prefix": "Mobarec, Sebastian Echeverria, Alfonso Tapia, Juan Covarrubias, Pablo Carvacho, Boris De Los Rios, Valentina Insulza, and Milenko Bertrand- Galindo.",
+          "sha256": "4404f05dae78ef7a33a65ecd911b44f1b26c35b7d350279d906c4dc919e820d3",
+          "suffix": "The first drafts of the organization\u2019s mission focused on the promotion of transparency and social accountability. Web technology later also became a",
+          "text": "== History == Fundaci\u00f3n Ciudadan\u00eda Inteligente was registered as a non-governmental organization in Chile on December 22, 2009. Fundaci\u00f3n Ciudadano Inteligente is the current Fundaci\u00f3n Ciudadan\u00eda Inteligente (was started on December 28, 2009, by its Founding Directors; Felipe Heusser, Erich Schnake, Rodrigo Saffirio, Rodrigo Mobarec, Sebastian Echeverria, Alfonso Tapia, Juan Covarrubias, Pablo Carvacho, Boris De Los Rios, Valentina Insulza, and Milenko Bertrand- Galindo. Vota Inteligente was publicly launched on October 22 of that same year in preparation for the Chilean Presidential elections. The first drafts of the organization\u2019s mission focused on the promotion of transparency and social accountability. Web technology later also became an essential element to the organization, mainly due to the influence of other organizations that had already successfully been using the internet to pursue transparency and accountability."
+        },
+        "id": "8a23c3b81e42a0df724e05de09ed36b0d6c00e0aea30d8cb742b898df41584f5",
+        "quote": "Vota Inteligente was publicly launched on October 22 of that same year in preparation for the Chilean Presidential elections.",
         "verified": true
       }
     ],
@@ -3390,6 +3452,10 @@
     ],
     "last_modified": null
   },
+  "https://events.humanitix.com/citizen-assemblies-policy-without-politics-national-conference": {
+    "blocked": "HTTP_403",
+    "blocked_since": "2026-08-28"
+  },
   "https://events.humanitix.com/communities-rising-action-by-the-people-for-the-times": {
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-18",
@@ -3618,11 +3684,12 @@
     "last_modified": null
   },
   "https://fr.wikipedia.org/wiki/AfricTivistes": {
-    "checked": "2026-08-26",
+    "checked": "2026-08-28",
     "document_sha256": "afb91c4e572c3db02e223ad17f4a24b9c9ada4e476ee81935a2f8a0b1c1cc414",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-28",
         "context": {
           "prefix": "\u00e0 Dakar, qui \u0153uvre \u00e0 la promotion et \u00e0 la d\u00e9fense des valeurs d\u00e9mocratiques, des droits humains et de la bonne gouvernance par le biais du num\u00e9rique.",
           "sha256": "252b5333c69d722536f81e7d16d535608eda6ec1b68943076d0eb749e44e1ea4",
@@ -3631,6 +3698,18 @@
         },
         "id": "aa02804f9b03b04becd68c1fb447c92d34ad98571b605ab024cd52ecbf790b6d",
         "quote": "Fond\u00e9e le 26 novembre 2015 par Cheikh Fall, AfricTivistes compte \u00e0 ce jour plus de 400 membres r\u00e9partis dans 40 pays du continent africain.",
+        "verified": true
+      },
+      {
+        "checked": "2026-08-28",
+        "context": {
+          "prefix": "net\u00e9 num\u00e9rique en Afrique. Ils plaident pour l'engagement de divers acteurs dans les processus de transformation socio-politique. === Plaidoyer ===",
+          "sha256": "3bb2b89dc0f741d640cbc34f2453d4d45e0149488c9be732b267e95a553cd040",
+          "suffix": "=== Formations === En 2021, AfricTivistes a \u00e9labor\u00e9 un MOOC dans le cadre du Charter Project Africa, visant \u00e0 faciliter la mise en \u0153uvre et l'appro",
+          "text": "=== Plaidoyer === En f\u00e9vrier 2024, AfricTivistes a saisi la Cour de justice de la CEDEAO pour d\u00e9noncer les coupures r\u00e9p\u00e9t\u00e9es impos\u00e9es d'Internet par les autorit\u00e9s s\u00e9n\u00e9galaises."
+        },
+        "id": "e04332777815010675f3dd4de66bcef8da937ce130b7817f0964835f3c30df45",
+        "quote": "En f\u00e9vrier 2024, AfricTivistes a saisi la Cour de justice de la CEDEAO pour d\u00e9noncer les coupures r\u00e9p\u00e9t\u00e9es impos\u00e9es d'Internet par les autorit\u00e9s s\u00e9n\u00e9galaises.",
         "verified": true
       }
     ],
@@ -4787,22 +4866,36 @@
     "last_modified": "Sun, 27 Apr 2025 23:33:05 GMT"
   },
   "https://portable.com.au/articles/code-for-australia-announcement/": {
-    "checked": "2026-08-26",
-    "etag": "W/\"f439157b8c49ee723a996b2903c8b27a\"",
+    "checked": "2026-08-28",
+    "document_sha256": "957258e2cda32cd145cd5296040eb521aa930803d50486c9bc4616d06cca08b1",
+    "etag": "W/\"66e7a82878c5e3dd214637a915c8dde6\"",
     "evidence": [
       {
+        "checked": "2026-08-28",
         "context": {
           "prefix": "rtable is proud to announce that it will be supporting the operation and management of Code for Australia going into 2025.",
-          "sha256": "b33a7ba3fa2e231e3a823e4f9330c0225ddb4f927271c8e1a9e2c7688c9dd79f",
+          "sha256": "9efc0084145068a0afe0766f0a8c4130bac1e82cfe113386ca9402b275921d96",
           "suffix": "They partner with government and not-for-profit organisations to support them with expert technical advice, digital capability, and the development o",
-          "text": "Code for Australia is a nationwide civic technology organisation founded in 2014 by Alvaro Maz, Jacob Lindsay and Daniel Groch. They partner with government and not-for-profit organisations to support them with expert technical advice, digital capability, and the development of digital solutions that are accessible, inclusive, sustainable and effective. Code for Australia began as part of a global network of like-minded organisations called \u00e2\u0080\u009cCode for All\u00e2\u0080\u009d and is well known for its Fellowship program for early-mid career technologists."
+          "text": "Code for Australia is a nationwide civic technology organisation founded in 2014 by Alvaro Maz, Jacob Lindsay and Daniel Groch. They partner with government and not-for-profit organisations to support them with expert technical advice, digital capability, and the development of digital solutions that are accessible, inclusive, sustainable and effective. Code for Australia began as part of a global network of like-minded organisations called \u201cCode for All\u201d and is well known for its Fellowship program for early-mid career technologists."
         },
         "id": "9814534926a98c30bc7124d2d12012b27b3b33ea17fa6537fbc73964ea7f5f7d",
         "quote": "Code for Australia is a nationwide civic technology organisation founded in 2014 by Alvaro Maz, Jacob Lindsay and Daniel Groch.",
         "verified": true
+      },
+      {
+        "checked": "2026-08-28",
+        "context": {
+          "prefix": "o Ngunnawal Country 1/33 Allara Street, Canberra Code for Australia Finds a New Home with Portable",
+          "sha256": "3d3c333c086ff168ada9293dbc8ac674b6085baeade5f78a7c5e2d36f3112961",
+          "suffix": "Code for Australia is a nationwide civic technology organisation founded in 2014 by Alvaro Maz, Jacob Lindsay and Daniel G",
+          "text": "Portable is proud to announce that it will be supporting the operation and management of Code for Australia going into 2025."
+        },
+        "id": "3d3c333c086ff168ada9293dbc8ac674b6085baeade5f78a7c5e2d36f3112961",
+        "quote": "Portable is proud to announce that it will be supporting the operation and management of Code for Australia going into 2025.",
+        "verified": true
       }
     ],
-    "last_modified": "Fri, 21 Aug 2026 06:51:53 GMT"
+    "last_modified": "Fri, 28 Aug 2026 04:40:26 GMT"
   },
   "https://projects.propublica.org/nonprofits/organizations/832183139": {
     "checked": "2026-08-26",
@@ -4842,10 +4935,12 @@
     "last_modified": null
   },
   "https://raisely-images.imgix.net/australian-democracy-network/uploads/adn-annual-report-23-pdf-531f03.pdf": {
-    "checked": "2026-08-26",
+    "checked": "2026-08-28",
+    "document_sha256": "ba7946c361b12c574734c0542f8efe428014a0c250fc0a091d765da6d428a3e9",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-28",
         "context": {
           "prefix": "es that can shift a whole system, we need collective power, strategically directed. Australian Democracy Network (ADN) was created to meet that need.",
           "sha256": "57abd28a13bfbae5988e0b6885591cc4cb61c5e36ccbe60470607f5f3b9c8970",
@@ -5781,11 +5876,12 @@
     "last_modified": null
   },
   "https://www.canberra.edu.au/research/centres/cdd/about-cdd/our-history": {
-    "checked": "2026-08-26",
-    "document_sha256": "b5bc743c018c8edc1ec2e1ce8186633bb58bfc7e04f4d99df06a3e5a27692d93",
+    "checked": "2026-08-28",
+    "document_sha256": "6b75262fd1fc3678f4a2ff1d1fbcb3836e34b17a97c4feda297c413711069e8f",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-28",
         "context": {
           "prefix": "Our history The Centre was founded in 2004 at the Australian National University by John Dryzek and Simon Niemeyer.",
           "sha256": "9f2547a64d78df55c5d5907f7d11ea0169e200be08c7f247d88c4a5da82b20af",
@@ -5795,16 +5891,41 @@
         "id": "63f61418f6bdb086840adc46930793ba15107771302dc88df65958c67cd4f4dc",
         "quote": "It relocated to the University of Canberra in 2014, where it has since been consolidated and expanded through the collective efforts of its members",
         "verified": true
+      },
+      {
+        "checked": "2026-08-28",
+        "context": {
+          "prefix": "2024 2023 2022 2021 2020 2019 2018 2017 Our history",
+          "sha256": "9f2547a64d78df55c5d5907f7d11ea0169e200be08c7f247d88c4a5da82b20af",
+          "suffix": "It relocated to the University of Canberra in 2014, where it has since been consolidated and expanded through the collective efforts of its members,",
+          "text": "The Centre was founded in 2004 at the Australian National University by John Dryzek and Simon Niemeyer. It relocated to the University of Canberra in 2014, where it has since been consolidated and expanded through the collective efforts of its members, most recently under the leadership of Selen Ercan, alongside many staff, students, associates, and partners."
+        },
+        "id": "527c779188658f86ef64c59b9e1d673a448bf730522ffe4b44ed90a7dce7a91a",
+        "quote": "The Centre was founded in 2004 at the Australian National University by John Dryzek and Simon Niemeyer.",
+        "verified": true
+      },
+      {
+        "checked": "2026-08-28",
+        "context": {
+          "prefix": "s. Additional resources flowed in through ARC grants and a Future Fellowship awarded to Simon Niemeyer for his work on scaling up deliberation.",
+          "sha256": "ef474faa6be1f98dd32ad3f1994fb1e91a9772cd7bf13a25eda34ef3551ab479",
+          "suffix": "Alongside the founding group of scholars and students, Centre members in 2008 included postdoctoral research fellows Luisa Batalha, Nicole Cura",
+          "text": "In 2008, the Centre designed and delivered the first Australian Citizens\u2019 Parliament at Old Parliament House, bringing together 150 citizens from across Australia to deliberate on the question: How can Australia\u2019s political system be strengthened to serve us better?"
+        },
+        "id": "ef474faa6be1f98dd32ad3f1994fb1e91a9772cd7bf13a25eda34ef3551ab479",
+        "quote": "In 2008, the Centre designed and delivered the first Australian Citizens\u2019 Parliament at Old Parliament House, bringing together 150 citizens from across Australia to deliberate on the question: How can Australia\u2019s political system be strengthened to serve us better?",
+        "verified": true
       }
     ],
     "last_modified": null
   },
   "https://www.cddwestafrica.org/about-us/": {
-    "checked": "2026-08-26",
+    "checked": "2026-08-28",
     "document_sha256": "d81dbafc05febd7eba432d0c3d8459ae92b9160665305e1347fb3336520a65c5",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-28",
         "context": {
           "prefix": "HIS About the Centre for Democracy & Development (CDD-West Africa) SHARE THIS",
           "sha256": "39f16719c192f7b17c396e2daff9c54a393dc48d63a425d0e96c0863a672ec03",
@@ -5813,6 +5934,18 @@
         },
         "id": "a6dd36394b455564e8b2149b566c47366b1268142c34238968b75c9f58c146d7",
         "quote": "The Centre for Democracy and Development (CDD) was established in the United Kingdom in 1997",
+        "verified": true
+      },
+      {
+        "checked": "2026-08-28",
+        "context": {
+          "prefix": "rica) SHARE THIS The Centre for Democracy and Development (CDD) was established in the United Kingdom in 1997 and",
+          "sha256": "39f16719c192f7b17c396e2daff9c54a393dc48d63a425d0e96c0863a672ec03",
+          "suffix": "The Centre was established to mobilise global opinion and resources for democratic development and provide an independent space to reflect crit",
+          "text": "The Centre for Democracy and Development (CDD) was established in the United Kingdom in 1997 and subsequently registered in Lagos \u2013 Nigeria in 1999 as an independent, not-for-profit, research, training, advocacy and capacity building organisation"
+        },
+        "id": "dd316c4a5055b6a219a061e7c2ad87d10db0ebc48d10ca58dcce952a8da58a94",
+        "quote": "subsequently registered in Lagos \u2013 Nigeria in 1999 as an independent, not-for-profit, research, training, advocacy and capacity building organisation",
         "verified": true
       }
     ],
@@ -5911,6 +6044,26 @@
       }
     ],
     "last_modified": "Wed, 26 Aug 2026 10:38:28 GMT"
+  },
+  "https://www.communityindependentsproject.org/blog/the-second-national-community-independents-convention-august-2022": {
+    "checked": "2026-08-28",
+    "document_sha256": "95595702574d1290361046f07eb366e0b487face916c1984f1ea9ee848a90369",
+    "etag": "W/\"bcc83cdcd66c03ec3578b4e0d46c7b3a--gzip\"",
+    "evidence": [
+      {
+        "checked": "2026-08-28",
+        "context": {
+          "prefix": "unity Independents Convention, August 2022 4 Sept Written By CIP Team by Alana Johnson",
+          "sha256": "10aab1fb5bcc7069c43e3a8deaef9a1412280d7b14bcc5f5a6ba8a9d60c76aa3",
+          "suffix": "What ensued was the formation of Voices for Indi, the election and re-election of Cathy McGowan as the Community Independent member for Indi, Helen H",
+          "text": "The \u201cEmpowered Communities: Next Steps\u201d Convention marks 10 years since Cathy McGowan called together of group of people to talk about what could be done about the parlous state of democracy in the electorate of Indi. What ensued was the formation of Voices for Indi, the election and re-election of Cathy McGowan as the Community Independent member for Indi, Helen Haines holding the seat in the 2019 election and Zali Steggall winning the Sydney seat of Warringah. 2021/22 saw the blossoming of the Community Independent movement in electorates across Australia, with some 38 \u2018Voices 4\u2019 type groups formed and Community Independent candidates standing in 24 federal electorates."
+        },
+        "id": "89337ac58de02c64d93e3143f400a0852eb2a0efe126e3b22e7136a91a4011fb",
+        "quote": "The \u201cEmpowered Communities: Next Steps\u201d Convention marks 10 years since Cathy McGowan called together of group of people to talk about what could be done about the parlous state of democracy in the electorate of Indi.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
   },
   "https://www.councilwatch.com.au": {
     "checked": "2026-08-26",
@@ -6829,11 +6982,12 @@
     "last_modified": "Wed, 26 Aug 2026 11:54:05 GMT"
   },
   "https://www.mmzy.org.cn/mmgk/jianjie/11796.aspx": {
-    "checked": "2026-08-26",
+    "checked": "2026-08-28",
     "document_sha256": "c8fdc591d274c06f9417201e9b5c6eec7e44e88931bf0cbb04e2fde335218b14",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-28",
         "context": {
           "prefix": "tp://www.mmzy.org.cn [\u5927] [\u5c0f] 2023-02-09 \u4e2d\u56fd\u6c11\u4e3b\u540c\u76df\u662f\u4e3b\u8981\u7531\u6587\u5316\u6559\u80b2\u4ee5\u53ca\u76f8\u5173\u7684\u79d1\u5b66\u6280\u672f\u9886\u57df\u9ad8\u3001\u4e2d\u7ea7\u77e5\u8bc6\u5206\u5b50\u7ec4\u6210\u7684\uff0c\u5177\u6709\u653f\u6cbb\u8054\u76df\u7279\u70b9\u7684\uff0c\u63a5\u53d7\u4e2d\u56fd\u5171\u4ea7\u515a\u9886\u5bfc\u3001\u540c\u4e2d\u56fd\u5171\u4ea7\u515a\u901a\u529b\u5408\u4f5c\uff0c\u8fdb\u6b65\u6027\u4e0e\u5e7f\u6cdb\u6027\u76f8\u7edf\u4e00\u7684\u4e2d\u56fd\u7279\u8272\u793e\u4f1a\u4e3b\u4e49\u53c2\u653f\u515a\u3002",
           "sha256": "f4bd3fd3b32f0c1cb42d485a26ed67a2e99278d96b879b0d4527463f89fe1a0a",
@@ -7720,6 +7874,26 @@
       }
     ],
     "last_modified": null
+  },
+  "https://www.strongercharities.org.au/2024/06/26/mr-advocacy-bill/": {
+    "checked": "2026-08-28",
+    "document_sha256": "7fc3254916fc50c55a26bf4d09b9d0bd99439a576673ee6de1cd23903b87b37a",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-28",
+        "context": {
+          "prefix": "s Media Join the alliance June 26, 2024 FUTURE PROOFING THE ROLE OF AUSTRALIAN CHARITY ADVOCACY",
+          "sha256": "7984389ebd550442c9aff4edf02a390faa36b3e3b140578ca01471d88eac7a34",
+          "suffix": "The Alliance, in collaboration with leading charity experts, has developed a Bill that would resolve urgent issues facing the sector. The Bill",
+          "text": "Today, the Stronger Charities Alliance, a coalition of nearly 140 charities, is launching critical legislation to protect the sector\u2019s right to engage in advocacy. The Alliance, in collaboration with leading charity experts, has developed a Bill that would resolve urgent issues facing the sector."
+        },
+        "id": "3dc12031c31e55adaf44650eea0cc58a49c1a781949c0641ed38f5e10141ce88",
+        "quote": "Today, the Stronger Charities Alliance, a coalition of nearly 140 charities, is launching critical legislation to protect the sector\u2019s right to engage in advocacy.",
+        "verified": true
+      }
+    ],
+    "last_modified": "Fri, 28 Aug 2026 14:43:43 GMT"
   },
   "https://www.strongercharities.org.au/2025/02/11/media-release-charities-call-for-critical-amendments-to-the-electoral-reform-bill/": {
     "checked": "2026-08-26",
