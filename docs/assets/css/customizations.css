@@ -1646,7 +1646,7 @@
 }
 .calendar-date-block {
   flex: 0 0 auto;
-  width: 4em;
+  width: 4.75em;
   text-align: center;
   background: var(--md-default-fg-color--lightest);
   border-radius: 5px;
@@ -1686,6 +1686,47 @@
 }
 .calendar-event--notable .calendar-date-day {
   color: #ffb300;
+}
+/* Org identity anchor inside the date block — see the comment in
+   calendar.html for why this lives here rather than down in
+   .calendar-event-orgline (which used to carry a much smaller version
+   of the same logo). */
+.calendar-date-org {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2em;
+  margin-top: 0.35em;
+  padding-top: 0.35em;
+  border-top: 1px solid var(--md-default-fg-color--lighter);
+  text-decoration: none;
+  color: inherit;
+}
+.calendar-date-org-logo {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  border-radius: 5px;
+  background: none;
+}
+.calendar-date-org-logo.org-logo-needs-dark {
+  background: rgba(0, 0, 0, 0.45);
+}
+.calendar-date-org-logo.org-logo-needs-light {
+  background: white;
+}
+.calendar-date-org-name {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-size: 0.62em;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--md-default-fg-color--light);
+}
+.calendar-date-org:hover .calendar-date-org-name {
+  text-decoration: underline;
 }
 .calendar-event-body {
   flex: 1 1 auto;
@@ -1742,12 +1783,6 @@
   gap: 0.35em;
   margin-top: 0.25em;
   font-size: 0.82em;
-}
-.calendar-event-logo {
-  width: 16px;
-  height: 16px;
-  object-fit: contain;
-  flex-shrink: 0;
 }
 .calendar-event-type {
   display: inline-block;

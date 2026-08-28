@@ -92,6 +92,18 @@
       <span class="calendar-date-day">{{ e.date.strftime('%d') }}</span>
       <span class="calendar-date-weekday">{{ e.date.strftime('%a') }}{% if multiday %}–{{ e.end_date.strftime('%a') }}{% endif %}</span>
       <span class="activity-method-chip method-{{ e.source }} calendar-source-chip--mini">{{ e.source }}</span>
+      {#- The org identity anchor for this row — this calendar aggregates
+          every tracked org's events, so a reader scanning down the date
+          column needs a "whose event is this" cue at least as much as
+          the date itself. A larger logo here (vs. the tiny inline one
+          that used to sit in .calendar-event-orgline below) is legible
+          at a glance without reading the title. -#}
+      {%- if e.org_slug %}
+      <a class="calendar-date-org" href="/organisations/{{ e.org_slug }}/">
+        {%- if e.logo %}<img class="calendar-date-org-logo{% if e.logo_bg == 'dark' %} org-logo-needs-dark{% elif e.logo_bg == 'light' %} org-logo-needs-light{% endif %}" src="{{ e.logo }}" alt="" loading="lazy">{% endif %}
+        <span class="calendar-date-org-name">{{ e.org_title }}</span>
+      </a>
+      {%- endif %}
     </div>
 
     <div class="calendar-event-body">
@@ -141,15 +153,19 @@
         {%- endif %}
       </div>
 
+      {#- Org name/logo used to be repeated here too — dropped once the
+          date-block gained its own org.logo/name anchor above, which
+          replaces it rather than duplicating it. This line now carries
+          only the two secondary links that don't fit up there. -#}
+      {%- if e.coverage_url or (e.url and e.url.startswith('http')) %}
       <div class="calendar-event-orgline">
-        {%- if e.logo %}<img class="calendar-event-logo" src="{{ e.logo }}" alt="{{ e.org_title }} logo" loading="lazy">{% endif %}
-        {%- if e.org_slug %}<a href="/organisations/{{ e.org_slug }}/">{{ e.org_title }}</a>
-        {%- elif e.org_title %}{{ e.org_title }}{% endif %}
+        {%- if not e.org_slug and e.org_title %}{{ e.org_title }}{% endif %}
         {%- if e.coverage_url %}<a class="calendar-event-coverage" href="{{ e.coverage_url }}">DOD coverage →</a>{% endif %}
         {%- if e.url and e.url.startswith('http') %}
         <a class="calendar-event-action" href="{{ e.url }}" target="_blank" rel="noopener">{{ 'RSVP →' if 'humanitix' in e.url or 'eventbrite' in e.url or 'lu.ma' in e.url or 'ticket' in e.url else 'More info →' }}</a>
         {%- endif %}
       </div>
+      {%- endif %}
     </div>
 
   </li>
