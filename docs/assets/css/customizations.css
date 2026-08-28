@@ -265,8 +265,28 @@
 #next-event-banner {
     display: flex;
     justify-content: center;
-    background: linear-gradient(90deg, rgba(255, 179, 0, 0.20), rgba(255, 179, 0, 0.08));
-    border-bottom: 1px solid rgba(255, 179, 0, 0.4);
+    /* Opaque, not a translucent tint — same deliberate "ignore the
+       site's light/dark theme" choice #hero-container below makes.
+       A gradient over the page's own background looked fine in light
+       mode but made the near-black text below unreadable in dark mode
+       (confirmed by sampling rendered pixels: ~rgb(12,10,6) text on an
+       equally dark backdrop). An opaque warm-cream backing guarantees
+       the same contrast regardless of which theme the visitor is on. */
+    background: rgb(255, 244, 214);
+    border: 1px solid rgba(255, 179, 0, 0.4);
+    border-radius: 8px;
+    margin: 0 0 1.25rem 0;
+}
+
+/* On the home page (partials/next-event-banner.html included with
+   flush=true) this sits full-bleed above #hero-container, outside the
+   normal content column — a flush edge-to-edge bar reads better there
+   than a "card" floating with its own border/radius, which is what the
+   default styling above renders on the calendar page instead. */
+#next-event-banner.next-event-banner--flush {
+    border-width: 0 0 1px 0;
+    border-radius: 0;
+    margin: 0;
 }
 
 #next-event-banner-link {
