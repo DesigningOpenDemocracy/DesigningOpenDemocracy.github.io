@@ -34,6 +34,20 @@ events:
   url_checked: '2026-08-12'
   notable: true
   notable_reason: Platform/product launch
+- date: '2024-06-26'
+  title: Stronger Charities Alliance launched a private member's Bill at Parliament
+    House to protect charity advocacy rights
+  url: https://www.strongercharities.org.au/2024/06/26/mr-advocacy-bill/
+  quote: Today, the Stronger Charities Alliance, a coalition of nearly 140 charities,
+    is launching critical legislation to protect the sector's right to engage in advocacy.
+  note: ADN coordinates the Stronger Charities Alliance; ADN's own CEO Saffron Zomer
+    is quoted on the page. Launched at a press conference at Parliament House Mural
+    Hall, joined by Assistant Minister Andrew Leigh MP and independent MP Kate Chaney.
+  proof_level: high
+  url_checked: '2026-08-28'
+  notable: medium
+  notable_reason: Coalition-led federal advocacy Bill launch
+  type: milestone
 activity:
   manual:
     checked: 2026-06-07
