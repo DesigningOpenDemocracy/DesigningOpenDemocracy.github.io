@@ -37,6 +37,11 @@ activity:
     checked: 2026-08-09
     date: 2026-08-09
     note: Site live and actively publishing as of August 2026
+  rss:
+    date: 2026-08-28
+    note: "Latest post: Kirjailija Iida Turpeisen tulevaisuuskuva vuodelta 2060 Turun Eurooppa-foorumist"
+    url: https://www.sitra.fi/artikkelit/kirjailija-iida-turpeisen-tulevaisuuskuva-vuodelta-2060/
+    checked: 2026-08-28
 last_checked: '2026-08-09'
 ---
 

@@ -58,10 +58,10 @@ activity:
       Judgment advocacy focus confirmed on homepage'
     url: https://mieuxvoter.fr/presse
   rss:
-    checked: 2026-08-17
+    checked: 2026-08-28
     note: No feed found
   scrape:
-    checked: 2026-08-17
+    checked: 2026-08-28
     date: 2022-04-06
     note: Scraper only finds URL-embedded dates; page shows 2025 items
     url: https://mieuxvoter.fr/presse

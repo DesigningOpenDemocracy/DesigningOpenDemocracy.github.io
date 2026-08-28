@@ -40,10 +40,10 @@ activity:
     date: 2026-07-05
     note: Site confirmed active; news article dated 23 June 2026
   rss:
-    checked: 2026-08-17
-    date: 2026-06-23
-    note: 'Latest post: The Complaint She Never Files'
-    url: https://www.eisa.org/the-complaint-she-never-files/
+    date: 2026-08-26
+    note: "Latest post: From Coalition Chaos to Democratic Stability: Reforming South Africa’s Local Gov"
+    url: https://www.eisa.org/from-coalition-chaos-to-democratic-stability-reforming-south-africas-local-government/
+    checked: 2026-08-28
 last_checked: '2026-07-05'
 ---
 

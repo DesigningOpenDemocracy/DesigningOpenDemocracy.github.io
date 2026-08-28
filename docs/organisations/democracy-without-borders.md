@@ -55,6 +55,11 @@ activity:
     note: Page created and verified against live sources (org website, Wikipedia)
       during landscape gap research
     checked: 2026-08-21
+  rss:
+    date: 2026-08-28
+    note: "RSS feed active"
+    url: https://www.democracywithoutborders.org/feed
+    checked: 2026-08-28
 last_checked: '2026-08-21'
 ---
 

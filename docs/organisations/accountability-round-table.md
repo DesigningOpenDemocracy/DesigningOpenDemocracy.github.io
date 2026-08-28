@@ -44,7 +44,7 @@ activity:
     date: 2026-06-08
     note: website loaded. Saw them meet in person
   rss:
-    checked: 2026-08-17
+    checked: 2026-08-28
     date: 2026-07-28
     note: 'Latest post: Enhancing government accountability'
     url: https://www.accountabilityrt.org/enhancing-government-accountability/

@@ -42,7 +42,7 @@ activity:
     checked: 2026-06-07
     note: No feed found
   sitemap:
-    checked: 2026-08-17
+    checked: 2026-08-28
     note: Sitemap found, no lastmod
   url: https://www.mmzy.org.cn/mmyw/default.aspx
 last_checked: '2026-06-29'

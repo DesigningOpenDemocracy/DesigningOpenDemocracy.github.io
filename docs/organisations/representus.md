@@ -41,6 +41,11 @@ activity:
     note: Page created and verified against live sources (org website, Wikipedia)
       during landscape gap research
     checked: 2026-08-21
+  rss:
+    date: 2026-06-04
+    note: "Latest post: Tell Congress: Trump Shouldn’t Be Immune from the IRS"
+    url: https://represent.us/news/irs-immune/
+    checked: 2026-08-28
 last_checked: '2026-08-21'
 ---
 

@@ -61,7 +61,7 @@ activity:
       2018-2019 activity (UQ Student Voice pilot); no evidence of shutdown.
     url: https://newvote.org
   rss:
-    checked: 2026-08-17
+    checked: 2026-08-28
     date: 2019-11-11
     note: 'Latest post: How''s SpeakUp @ the University of Queensland going?'
     url: https://newvote.org/blog/2019/11/10/hows-speakup-the-university-of-queensland-going

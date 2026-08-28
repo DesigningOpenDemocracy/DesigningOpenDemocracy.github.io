@@ -40,7 +40,7 @@ activity:
     note: 'website loaded. It mentioned that it was in the news פורסם: 17.11.25, 15:30
       | עודכן: 02.12.25, 15:50 ''חנוכה 2025: כל מה שאפשר לעשות עם הילדים בחג'''
   rss:
-    checked: 2026-08-17
+    checked: 2026-08-28
     note: No feed found
 last_checked: '2026-06-29'
 ---

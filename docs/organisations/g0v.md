@@ -49,7 +49,7 @@ activity:
       be various events.
     url: https://g0v.tw/intl/en/event/
   rss:
-    checked: 2026-08-17
+    checked: 2026-08-28
     note: No feed found
   ical:
     date: 2026-08-08
@@ -58,7 +58,7 @@ activity:
     checked: 2026-08-17
   scrape:
     hint: no_markup
-    checked: 2026-08-17
+    checked: 2026-08-28
     note: News page found, no machine-readable date
 last_checked: '2026-05-30'
 ---

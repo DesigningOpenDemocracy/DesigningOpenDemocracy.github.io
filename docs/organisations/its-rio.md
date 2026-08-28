@@ -43,10 +43,10 @@ activity:
     url: https://consuldemocracy.org/about-us/
     checked: 2026-08-21
   sitemap:
-    date: 2026-08-14
-    note: Page last modified (from sitemap)
+    date: 2026-08-27
+    note: "Page last modified (from sitemap)"
     url: https://itsrio.org/sitemap.xml
-    checked: 2026-08-17
+    checked: 2026-08-28
 last_checked: '2026-08-21'
 ---
 

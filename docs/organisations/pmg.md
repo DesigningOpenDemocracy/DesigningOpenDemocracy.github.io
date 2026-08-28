@@ -69,6 +69,14 @@ activity:
       and gazette digests, most recent dated 23 August 2026'
     url: https://pmg.org.za/blog/
     checked: 2026-08-25
+  rss:
+    note: "No feed found"
+    checked: 2026-08-28
+  scrape:
+    date: 2026-08-24
+    note: "Latest news page scraped"
+    url: https://pmg.org.za/blog/
+    checked: 2026-08-28
 last_checked: '2026-08-25'
 ---
 

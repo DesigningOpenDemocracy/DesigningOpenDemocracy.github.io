@@ -73,10 +73,10 @@ activity:
     date: 2026-08-07
     note: This entry, and everything else on this site, is evidence of its own activity.
   sitemap:
-    checked: 2026-08-17
-    date: 2026-08-17
-    note: Page last modified (from sitemap)
+    date: 2026-08-28
+    note: "Page last modified (from sitemap)"
     url: https://designingopendemocracy.com/sitemap.xml
+    checked: 2026-08-28
 last_checked: '2026-08-09'
 ---
 

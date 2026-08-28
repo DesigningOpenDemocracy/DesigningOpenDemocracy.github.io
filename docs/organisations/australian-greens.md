@@ -80,6 +80,11 @@ activity:
     note: Page created and sourced directly against greens.org.au primary documents
       (media releases, campaign pages, "Our Story"), following up on internal research
       into Australian parties' democracy-reform records.
+  rss:
+    date: 2026-08-28
+    note: "Latest post: Merri-Bek Campaign Office Warming!"
+    url: https://greens.org.au/node/3037061
+    checked: 2026-08-28
 last_checked: '2026-08-15'
 ---
 

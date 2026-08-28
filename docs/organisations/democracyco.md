@@ -40,7 +40,7 @@ activity:
     date: 2026-07-05
     note: Site confirmed active and current, team/contact details match page
   rss:
-    checked: 2026-08-17
+    checked: 2026-08-28
     date: 2026-05-02
     note: 'Latest post: Housing Amplifcation'
     url: https://www.democracyco.com.au/housing-amplifcation/?utm_source=rss&utm_medium=rss&utm_campaign=housing-amplifcation

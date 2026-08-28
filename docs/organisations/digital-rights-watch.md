@@ -77,6 +77,11 @@ activity:
       a "Right to Refuse AI Scribes in Healthcare" petition, and work on technology-facilitated
       gender-based violence.
     url: https://digitalrightswatch.org.au/
+  rss:
+    date: 2026-08-04
+    note: "Latest post: Smart glasses are a covert surveillance regime in a wearable disguise"
+    url: /2026/08/04/smart-glasses-are-a-covert-surveillance-regime-in-a-wearable-disguise/
+    checked: 2026-08-28
 last_checked: '2026-08-21'
 ---
 

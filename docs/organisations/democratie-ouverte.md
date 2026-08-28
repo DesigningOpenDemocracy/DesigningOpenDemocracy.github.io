@@ -73,11 +73,11 @@ activity:
     note: Site confirmed active; DémocraNews newsletter launched 17 June 2026, new
       co-presidency announced 18 May 2026
   rss:
-    checked: 2026-08-17
+    checked: 2026-08-28
     note: No feed found
   scrape:
     hint: no_markup
-    checked: 2026-08-17
+    checked: 2026-08-28
     note: News page found, no machine-readable date
 last_checked: '2026-07-05'
 ---

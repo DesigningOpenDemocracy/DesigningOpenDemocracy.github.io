@@ -39,7 +39,7 @@ activity:
     date: 2026-06-07
     note: personally know it exist and still running
   sitemap:
-    checked: 2026-08-17
+    checked: 2026-08-28
     date: 2024-06-28
     note: Page last modified (from sitemap)
 last_checked: '2026-06-29'

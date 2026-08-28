@@ -36,6 +36,11 @@ activity:
     checked: 2026-08-02
     date: 2026-07-30
     note: Confirmed active via official site during landscape research
+  rss:
+    date: 2026-08-27
+    note: "Latest post: “Borders are opening…prices are soaring”: rising rapper found to be AI propagand"
+    url: https://www.ettemedia.com/borders-are-opening-prices-are-soaring-rising-rapper-found-to-be-ai-propaganda-tool/
+    checked: 2026-08-28
 last_checked: '2026-08-02'
 contributors:
 - BrianKhuu

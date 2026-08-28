@@ -36,7 +36,7 @@ events:
   notable_reason: Founding of the organisation
 activity:
   rss:
-    checked: 2026-08-17
+    checked: 2026-08-28
     date: 2026-08-09
     note: RSS feed active
     url: https://www.institutoupdate.org.br/feed

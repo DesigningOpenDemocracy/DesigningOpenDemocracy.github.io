@@ -66,12 +66,12 @@ activity:
       Conviction of Anna Kwok''s Father'' dated Feb 10, 2026'
     url: https://www.hkdc.us/news
   scrape:
-    checked: 2026-08-17
+    checked: 2026-08-28
     date: 2026-02-09
     note: Latest news page scraped
     url: https://www.hkdc.us/news
   sitemap:
-    checked: 2026-08-17
+    checked: 2026-08-28
     date: 2026-07-15
     note: Page last modified (from sitemap)
     url: https://www.hkdc.us/sitemap.xml

@@ -34,7 +34,7 @@ events:
   notable_reason: Founding of the organisation
 activity:
   rss:
-    checked: 2026-08-17
+    checked: 2026-08-28
     date: 2026-04-21
     note: 'Latest post: Informe Cuatro. Observatorio de la participación ciudadana
       en la implementación '

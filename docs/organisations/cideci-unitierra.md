@@ -53,6 +53,9 @@ activity:
     checked: 2026-08-09
     date: 2024-05-21
     note: Page last modified (from sitemap)
+  rss:
+    note: "No feed found"
+    checked: 2026-08-28
 last_checked: '2026-06-28'
 ---
 

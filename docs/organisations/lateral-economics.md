@@ -47,7 +47,7 @@ activity:
       Substack/Club Troppo commentary continuing into 2026
     url: https://www.lateraleconomics.com.au
   sitemap:
-    checked: 2026-08-17
+    checked: 2026-08-28
     date: 2026-06-09
     note: Page last modified (from sitemap)
     url: https://www.lateraleconomics.com.au/sitemap.xml

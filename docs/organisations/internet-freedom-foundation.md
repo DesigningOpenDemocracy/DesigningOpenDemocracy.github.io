@@ -51,10 +51,10 @@ activity:
       and Delhi HC litigation
     url: https://x.com/internetfreedom/status/2038604152318644237
   rss:
-    date: 2026-08-14
-    note: 'Latest post: Flagging data protection violations in Har Ghar Tiranga 5.0'
-    url: https://internetfreedom.in/flagging-data-protection-violations-in-har-ghar-tiranga-5-0/
-    checked: 2026-08-17
+    date: 2026-08-27
+    note: "Latest post: HC Directs GAC to decide an appeal in 30 days. Is there a Capacity issue?"
+    url: https://internetfreedom.in/hc-directs-gac-to-decide-an-appeal-in-30-days-is-there-a-capacity-issue/
+    checked: 2026-08-28
 last_checked: '2026-07-16'
 ---
 
