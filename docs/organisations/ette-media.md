@@ -31,6 +31,20 @@ events:
   url_checked: '2026-08-20'
   notable: true
   notable_reason: Platform/product launch
+- date: '2026-04-16'
+  title: Reported an audience of 20,000+ weekly listens and a completed nationwide
+    live tour, nine months post-launch
+  url: https://www.acast.com/en/blog/meet-the-podcasters-antoinette-lattouf-jan-fran
+  quote: Just nine months post-launch, the duo have built a loyal and engaged audience
+    of more than 20,000 listens per week, completed a nationwide live tour, and even
+    launched sustainably made t-shirts off the back of fan demand.
+  note: Date is the Acast interview's publish date, reporting on the podcast's growth
+    since the June 2025 launch.
+  proof_level: high
+  url_checked: '2026-08-29'
+  notable: medium
+  notable_reason: Audience growth and live tour milestone
+  type: milestone
 activity:
   dod:
     checked: 2026-08-02

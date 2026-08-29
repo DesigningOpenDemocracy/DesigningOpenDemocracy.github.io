@@ -37,6 +37,22 @@ events:
   url_checked: '2026-08-12'
   notable: true
   notable_reason: Founding of the organisation
+- date: '2024-03-09'
+  title: Led Sweden's first national citizens' council on climate policy
+  url: https://digidemlab.org/news/Digidem-Lab-leder-i-Sveriges-frsta-nationella-medborgarrd-om-klimatet/
+  quote: Den 9-10 mars samlas Sveriges första nationella medborgarråd om klimatet.
+  note: 'Translation: "On 9-10 March, Sweden''s first national citizens'' council
+    on climate convenes." 60 randomly selected people from across the country deliberated
+    on how Sweden should cut emissions in line with the Paris Agreement, part of the
+    Fairtrans research programme with Stockholm University, University of Gävle, Uppsala
+    University, Lund University and IVL. Digidem Lab designed and facilitated the
+    process.'
+  proof_level: high
+  url_checked: '2026-08-29'
+  end_date: '2024-03-10'
+  notable: true
+  notable_reason: First national citizens' council of its kind in Sweden
+  type: deliberation
 activity:
   rss:
     checked: 2026-08-17

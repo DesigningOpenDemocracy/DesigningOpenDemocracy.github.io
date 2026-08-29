@@ -24,6 +24,23 @@ location:
   precision: city
 rss_feed: https://www.democracyco.com.au/feed/
 events:
+- date: '2016-11-11'
+  title: Facilitated the SA Nuclear Fuel Cycle Citizens' Jury on storing international
+    nuclear waste
+  url: https://www.indailysa.com.au/news/archive/2016/11/11/inside-the-chaos-and-bias-of-the-citizens-jury
+  quote: 'a citizens’ jury established by Premier Jay Weatherill has just concluded.
+    It provided advice to the State Government on the question: “Under what circumstances,
+    if any, could South Australia pursue the opportunity to store and dispose of nuclear
+    waste from other countries?” ... including the organising body, democracyCo'
+  note: Date is the article's publish date (the jury itself "has just concluded" at
+    time of writing); described elsewhere on this page as the world's largest citizens'
+    jury on nuclear waste storage at the time, involving 350 South Australians in
+    the final stage.
+  proof_level: high
+  url_checked: '2026-08-29'
+  notable: true
+  notable_reason: Landmark large-scale citizens' jury
+  type: deliberation
 - date: '2026-09-01'
   title: Building Common Ground — online training on social licence for complex public
     policy through deliberative engagement

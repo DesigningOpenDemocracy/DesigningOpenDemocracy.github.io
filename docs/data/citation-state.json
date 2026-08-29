@@ -1265,11 +1265,12 @@
     "last_modified": null
   },
   "https://digidemlab.org/en/about/": {
-    "checked": "2026-08-26",
+    "checked": "2026-08-29",
     "document_sha256": "0313bdfb2858973c5b5604ca8142bb0c21817682f485330469baec1d3e91659a",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-29",
         "context": {
           "prefix": "--> Work Services About Contact sv | en We are Digidem Lab",
           "sha256": "e4877b3468c72c479a011f77f1c920735a7e56908c54f57bbd5462f5ae696925",
@@ -1278,6 +1279,26 @@
         },
         "id": "e4877b3468c72c479a011f77f1c920735a7e56908c54f57bbd5462f5ae696925",
         "quote": "Digidem Lab is an independent democracy lab that supports neighbourhoods, municipalities and public institutions in conducting effective and inclusive citizen dialogues.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://digidemlab.org/news/Digidem-Lab-leder-i-Sveriges-frsta-nationella-medborgarrd-om-klimatet/": {
+    "checked": "2026-08-29",
+    "document_sha256": "2837130c5d7de381d73cef94b8a5d3171937e13b7affbbf32eabdebf675d7b95",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": "an Medborgarr\u00e5d om Klimatet f\u00f6r Stockholms universitet 2024.03.07 Digidem Lab leder nationellt medborgarr\u00e5d om klimatet",
+          "sha256": "794c3d000709b2cd3877d5a7435d7fb278854f1f32448116ac5044ef0510b850",
+          "suffix": "60 slumpm\u00e4ssigt utvalda personer fr\u00e5n hela landet ska under v\u00e5ren ta sig an fr\u00e5gan Hur b\u00f6r Sverige s\u00e4nka utsl\u00e4ppen i enlighet med Parisavtal",
+          "text": "Den 9-10 mars samlas Sveriges f\u00f6rsta nationella medborgarr\u00e5d om klimatet."
+        },
+        "id": "794c3d000709b2cd3877d5a7435d7fb278854f1f32448116ac5044ef0510b850",
+        "quote": "Den 9-10 mars samlas Sveriges f\u00f6rsta nationella medborgarr\u00e5d om klimatet.",
         "verified": true
       }
     ],
@@ -1905,6 +1926,8 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/Electoral_Institute_for_Sustainable_Democracy_in_Africa": {
+    "blocked": "HTTP_429",
+    "blocked_since": "2026-08-29",
     "checked": "2026-08-26",
     "document_sha256": "f5f7e1d943e85576c2c31d16ac6eefed19a14d9e11c52e37787d9dc8d3263756",
     "etag": null,
@@ -2413,11 +2436,12 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/Jan_Fran": {
-    "checked": "2026-08-26",
+    "checked": "2026-08-29",
     "document_sha256": "08aefbba23ff4851588f3b085380539ba1a37f3c73a2638d065190e3b4ce0da7",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-29",
         "context": {
           "prefix": "emoir, Of Middle Eastern Appearance, to be published by Hachette Australia. In 2021, Fran began hosting Question Everything with Wil Anderson on ABC.",
           "sha256": "98d9add825a41e270bc271089adad0ff0e3783e1221a0f986c7d47263afbe2b1",
@@ -3464,6 +3488,26 @@
       }
     ],
     "last_modified": null
+  },
+  "https://espaciopublico.cl/en/espacio-publico-fue-destacado-entre-los-100-think-tanks-to-watch-2025/": {
+    "checked": "2026-08-29",
+    "document_sha256": "838694d4ea2e073e2efe70443616e42f7d18a81fab4aebb3657a57605706fde1",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": "ado entre los 100 Think Tanks to Watch 2025 29 de October de 2025 Share",
+          "sha256": "f5c9c0eb5e7febac269719860946605ef724390366331646170c2a69c86265c9",
+          "suffix": "Esta selecci\u00f3n no corresponde a una lista de ranking, sino a un reconocimiento al trabajo conjunto de una comunidad global que aprende, colabor",
+          "text": "Espacio P\u00fablico fue incluido entre los 100 Think Tanks to Watch 2025, una iniciativa de On Think Tanks que destaca a centros de estudio de todo el mundo por su innovaci\u00f3n, colaboraci\u00f3n e impacto."
+        },
+        "id": "f5c9c0eb5e7febac269719860946605ef724390366331646170c2a69c86265c9",
+        "quote": "Espacio P\u00fablico fue incluido entre los 100 Think Tanks to Watch 2025, una iniciativa de On Think Tanks que destaca a centros de estudio de todo el mundo por su innovaci\u00f3n, colaboraci\u00f3n e impacto.",
+        "verified": true
+      }
+    ],
+    "last_modified": "Sat, 29 Aug 2026 01:41:05 GMT"
   },
   "https://ethelo.com/case-study/engaged-california-program/": {
     "checked": "2026-08-26",
@@ -5563,6 +5607,26 @@
     ],
     "last_modified": null
   },
+  "https://www.acast.com/en/blog/meet-the-podcasters-antoinette-lattouf-jan-fran": {
+    "checked": "2026-08-29",
+    "document_sha256": "298c4dba0c5f6ff1cf7292417f4d3f2b66be952e63deb2bcda447a59c48deb22",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": "e Journos, award-winning journalists Antoinette Lattouf and Jan Fran are part of a new wave of independent journalism on the rise in Australia.",
+          "sha256": "80eb641118be655598359a0c2c6baf482ff035151d0492e7feed4d595c315e1e",
+          "suffix": "We caught up with them to talk podcasting, audiences, and what makes the Etterati community tick. Acast: You\u2019ve both had extensive career",
+          "text": "Just nine months post-launch, the duo have built a loyal and engaged audience of more than 20,000 listens per week, completed a nationwide live tour, and even launched sustainably made t-shirts off the back of fan demand."
+        },
+        "id": "80eb641118be655598359a0c2c6baf482ff035151d0492e7feed4d595c315e1e",
+        "quote": "Just nine months post-launch, the duo have built a loyal and engaged audience of more than 20,000 listens per week, completed a nationwide live tour, and even launched sustainably made t-shirts off the back of fan demand.",
+        "verified": true
+      }
+    ],
+    "last_modified": "Sat, 29 Aug 2026 01:41:27 GMT"
+  },
   "https://www.accountabilityrt.org/fiona-mcleod-sc-to-head-up-art/": {
     "checked": "2026-08-26",
     "etag": "\"245835-1787389022;gz\"",
@@ -6500,6 +6564,26 @@
     ],
     "last_modified": null
   },
+  "https://www.eisa.org/eisa-enhances-pan-african-parliaments-capacity-for-democratic-oversight-through-au-election-observation-training/": {
+    "checked": "2026-08-29",
+    "document_sha256": "edeeaddc3b62af02881a5f742fa6a99c089bd29574a4d4cd21f2b9802ec4309c",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": "through AU Election Observation Training Categories Elections 20 November 2025 20 November 2025 By EISA",
+          "sha256": "a8e86fa5081dc9bf6ad2611b5ae5947fffd451d04a21e98fc14be15dae013995",
+          "suffix": "The training, attended by over forty PAP Members and Secretariat staff, forms part of EISA\u2019s broader mandate to strengthen continental democratic gov",
+          "text": "The Electoral Institute for Sustainable Democracy in Africa (EISA), in partnership with the African Union Commission\u2019s Department of Political Affairs, Peace and Security (DPAPS) through its Democracy and Elections Unit (DEU), successfully delivered a three-day Election Observation Training for Members of the Pan-African Parliament (PAP) from 12 \u2013 14 November 2025 in Pretoria, South Africa. The training, attended by over forty PAP Members and Secretariat staff, forms part of EISA\u2019s broader mandate to strengthen continental democratic governance by building the technical capacity of regional and continental bodies involved in election oversight."
+        },
+        "id": "ce385c9077504d13dea9992fd8851d4497561f70495f98d9de9499eac5b7c0ae",
+        "quote": "The Electoral Institute for Sustainable Democracy in Africa (EISA), in partnership with the African Union Commission\u2019s Department of Political Affairs, Peace and Security (DPAPS) through its Democracy and Elections Unit (DEU), successfully delivered a three-day Election Observation Training for Members of the Pan-African Parliament (PAP) from 12\u201314 November 2025 in Pretoria, South Africa.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
   "https://www.elcomercio.com/actualidad/politica/marlon-vargas-gana-la-presidencia-de-la-conaie-tras-imponerse-a-leonidas-iza/": {
     "checked": "2026-08-29",
     "document_sha256": "d53fc27795611975c0d8a938c66808535d782a8587a879d8851ec1275553d0eb",
@@ -6724,6 +6808,20 @@
       }
     ],
     "last_modified": null
+  },
+  "https://www.indailysa.com.au/news/archive/2016/11/11/inside-the-chaos-and-bias-of-the-citizens-jury": {
+    "checked": "2026-08-29",
+    "document_sha256": "725772b132f4a80fdd05d747ccf679d746a31c649d2ee585f36de9ba0d028e0e",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "id": "160408d0fca467365059c5fcd27283eb3d70c5b877df27fb2acd68994faf6f1f",
+        "quote": "a citizens\u2019 jury established by Premier Jay Weatherill has just concluded. It provided advice to the State Government on the question: \u201cUnder what circumstances, if any, could South Australia pursue the opportunity to store and dispose of nuclear waste from other countries?\u201d ... including the organising body, democracyCo",
+        "verified": true
+      }
+    ],
+    "last_modified": "Sat, 29 Aug 2026 01:41:55 GMT"
   },
   "https://www.influencewatch.org/non-profit/healthy-democracy/": {
     "checked": "2026-08-26",
