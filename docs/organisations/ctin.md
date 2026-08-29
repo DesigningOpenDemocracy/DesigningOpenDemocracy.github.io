@@ -32,6 +32,24 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Platform/product launch
+- date: '2024-10-28'
+  title: Hosted the Civic Tech Innovation Forum 2024 (#UnderTheHood) at the Tshimologong
+    Digital Innovation Precinct
+  url: https://civictech.africa/ctif/underthehood/
+  quote: You are invited to exhibit yours or your organisation’s civic tech innovation
+    initiatives at the Civic Tech Innovation Forum being held on the 28 th – 31 st
+    October 2024. The Civic Tech Innovation Network is once again hosting its annual
+    civic tech conference at the Tshimologong Digital Innovation Precinct in Johannesburg,
+    South Africa.
+  note: The 2024 edition of CTIN's annual flagship conference, themed "#UnderTheHood"
+    and exploring the interconnectedness of community, technology, and self (per this
+    page's body text).
+  proof_level: high
+  url_checked: '2026-08-29'
+  end_date: '2024-10-31'
+  notable: true
+  notable_reason: Flagship annual conference
+  type: conference
 activity:
   rss:
     checked: 2026-08-28

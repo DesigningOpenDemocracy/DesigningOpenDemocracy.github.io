@@ -26,6 +26,22 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Founding of the organisation
+- date: '2016-03-17'
+  title: Announced the establishment of the Democratic Federal System of Rojava/Northern
+    Syria
+  url: https://rojavainformationcenter.org/background/political-system-documents/
+  quote: Final Declaration of the Rojava – Northern Syria Democratic Federal System
+    Constituent Assembly announcing the establishment of a federal democratic Rojava/Northern
+    Syria, 17 March 2016.
+  note: A revised Social Contract for the Democratic Federation of Northern Syria
+    was issued the same year, superseding the original 2014 Charter of the Autonomous
+    Regions of Afrin, Jazeera, and Kobane; the system was revised again in 2018 (Autonomous
+    Administration of North and East Syria) and 2023.
+  proof_level: high
+  url_checked: '2026-08-29'
+  notable: true
+  notable_reason: Formal declaration establishing the federal governance system
+  type: other
 activity:
   manual:
     checked: 2026-06-07

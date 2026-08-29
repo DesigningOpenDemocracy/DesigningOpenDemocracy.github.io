@@ -33,6 +33,23 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Founding of the organisation
+- date: '2016-02-01'
+  title: Launched as Darkenu, rebranding from the OneVoice Israel/V15 get-out-the-vote
+    campaign into a standing movement of Israeli moderates
+  url: https://fathomjournal.org/darkenu-keeping-the-dream-of-israel-alive/
+  quote: Darkenu means ‘our way,’ but also ‘through us,’ a movement of moderate Israelis
+    who are now waking up. We launched in early 2016, mounting a quietly effective
+    campaign on the Gaza border
+  note: Month-only date estimate ("early 2016" per source; the source article is dated
+    Summer 2016). First-person account by then-Darkenu leader Polly Bronstein, published
+    in Fathom Journal. Distinct from the 2002 OneVoice founding and the December 2014
+    V15 get-out-the-vote effort described elsewhere in this article — Darkenu itself
+    launched as a standing movement in early 2016.
+  proof_level: high
+  url_checked: '2026-08-29'
+  notable: true
+  notable_reason: Relaunch as a standing movement
+  type: launch
 activity:
   manual:
     checked: 2026-06-07

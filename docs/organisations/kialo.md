@@ -31,6 +31,23 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Founding of the organisation
+- date: '2025-01-22'
+  title: Kialo Edu won the Bett Award 2025 for Best Free Digital Content, App, or
+    Open Education Resource
+  url: https://hundred.org/en/innovations/6-kialo-edu
+  quote: In the last two years, we were honored to be selected for the HundrED Global
+    Collection 2025, the American Association of School Librarian's Best Digital Tools
+    for Teaching and Learning 2025, and earned recognition at the Bett Awards 2025,
+    winning in the category Best Free Digital Content, App, or Open Education Resource.
+  note: Exact ceremony date (22 January 2025, The Brewery, London) per earlier web-search
+    corroboration; this source (Kialo's own HundrED profile) confirms the win without
+    stating the day. By this point Kialo had grown to 1M+ users across 150+ countries
+    and 400,000+ discussions in 49+ languages, per the same page.
+  proof_level: high
+  url_checked: '2026-08-29'
+  notable: medium
+  notable_reason: Notable education-technology award
+  type: recognition
 activity:
   manual:
     checked: 2026-06-07

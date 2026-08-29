@@ -33,6 +33,23 @@ events:
   url_checked: '2026-08-12'
   notable: true
   notable_reason: Founding of the organisation
+- date: '2026-07-23'
+  title: Held a Media Briefing and Civil Society Workshop with International IDEA
+    on its Mixed-Member Proportional electoral system simulation
+  url: https://perludem.or.id/perludem-and-international-idea-discuss-mixed-member-proportional-electoral-system-simulation-with-journalists-and-civil-society/
+  quote: 'Perludem, in collaboration with International IDEA, held the Media Briefing
+    and Civil Society Workshop: Understanding the Mixed Member Proportional Electoral
+    System and Its Simulation Results in Indonesia at the Indonesia Corruption Watch
+    (ICW) Learning House in Jakarta on 23 July.'
+  note: Simulation used data from Indonesia's 2024 General Election and drew on the
+    MMP experiences of New Zealand and Germany; per Perludem Executive Director Heroik
+    M. Pratama, intended as a technical tool to assess electoral-system design implications,
+    not to predict outcomes.
+  proof_level: high
+  url_checked: '2026-08-29'
+  notable: medium
+  notable_reason: Flagship electoral-reform research event with an international partner
+  type: conference
 activity:
   dod:
     checked: 2026-08-09
@@ -40,7 +57,7 @@ activity:
     note: Site live and actively publishing as of August 2026
   rss:
     date: 2026-08-06
-    note: "Latest post: Democracy Academy Anthology: Nurturing Reason, Fostering Democracy"
+    note: 'Latest post: Democracy Academy Anthology: Nurturing Reason, Fostering Democracy'
     url: https://perludem.or.id/democracy-academy-anthology-nurturing-reason-fostering-democracy/
     checked: 2026-08-28
 last_checked: '2026-08-09'

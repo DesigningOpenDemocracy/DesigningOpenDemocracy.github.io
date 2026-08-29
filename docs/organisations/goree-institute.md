@@ -33,6 +33,24 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Founding of the organisation
+- date: '2026-04-02'
+  title: Hosted its 9th Annual Symposium, refocusing its strategic priorities on youth
+    and women
+  url: https://goreeinstitut.org/symposium-annuel-2026-de-la-reflexion-a-laction-un-tournant-strategique/
+  quote: Pour cette édition 2026, le Gorée Institute a fait le choix stratégique de
+    recentrer ses priorités sur les jeunes et les femmes, qui représentent près de
+    70 % de la population.
+  note: 'Translation: "For this 2026 edition, the Gorée Institute made the strategic
+    choice to refocus its priorities on youth and women, who represent nearly 70%
+    of the population." Per Executive Director Doudou Dia, the first eight editions
+    were mainly academic reflection; the 9th marks a deliberate pivot toward action,
+    inclusion, and youth/women-led co-construction of solutions to democratic challenges
+    in West Africa and the Sahel.'
+  proof_level: high
+  url_checked: '2026-08-29'
+  notable: medium
+  notable_reason: Strategic pivot of the Institute's flagship annual symposium
+  type: conference
 activity:
   rss:
     checked: 2026-08-28

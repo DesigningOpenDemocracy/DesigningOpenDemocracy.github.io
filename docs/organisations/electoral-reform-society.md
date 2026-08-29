@@ -60,12 +60,13 @@ events:
 activity:
   rss:
     date: 2026-08-12
-    note: "Latest post: Questioning New Zealand’s proportional system led to questions about the prime m"
+    note: 'Latest post: Questioning New Zealand’s proportional system led to questions
+      about the prime m'
     url: https://electoral-reform.org.uk/questioning-new-zealands-proportional-system-led-to-questions-about-the-prime-ministers-position/
     checked: 2026-08-28
   scrape:
     date: 2026-08-12
-    note: "Latest news page scraped"
+    note: Latest news page scraped
     url: https://www.electoral-reform.org.uk/latest-news-and-research/blog/
     checked: 2026-08-28
 last_checked: '2026-06-15'

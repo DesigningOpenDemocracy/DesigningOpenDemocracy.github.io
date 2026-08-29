@@ -23,15 +23,33 @@ location:
   precision: city
 rss_feed: https://www.yourparty.uk/feed
 events:
-- date: '2009-01-01'
-  title: Founded by Yoshimi Watanabe, a former Liberal Democratic Party minister,
-    as a reformist Japanese political party
-  url: https://en.wikipedia.org/wiki/Your_Party_(Japan)
-  quote: party was founded on August 8, 2009
+- date: '2025-07-24'
+  title: Announced by Jeremy Corbyn and Zarah Sultana, registered with the Electoral
+    Commission that September
+  url: https://en.wikipedia.org/wiki/Your_Party_(UK)
+  quote: Your Party is a socialist political party in the United Kingdom announced
+    in July 2025 by Jeremy Corbyn and Zarah Sultana. It was registered with the Electoral
+    Commission on 30 September 2025.
+  note: Corrects a citation mix-up on this page — the previously-recorded founding
+    event cited the unrelated, much older "Your Party (Japan)" (Yoshimi Watanabe's
+    2009 reformist party), rather than this UK party. Date used is Wikipedia's infobox
+    "Founded" date (24 July 2025); the body text gives only "July 2025."
   proof_level: high
-  url_checked: '2026-08-10'
+  url_checked: '2026-08-29'
   notable: true
   notable_reason: Founding of the organisation
+- date: '2025-11-29'
+  title: Held its founding conference in Liverpool, using sortition to select delegates
+  url: https://leftfootforward.org/2025/11/everything-you-need-to-know-about-your-partys-founding-conference/
+  quote: Your Party’s Conference is taking place from 29-30 November in Liverpool.
+  note: See this page's own "How they use sortition" section for the two-round Sortition
+    Foundation delegate-selection process used to choose attendees for this conference.
+  proof_level: high
+  url_checked: '2026-08-29'
+  end_date: '2025-11-30'
+  notable: true
+  notable_reason: Founding conference using novel sortition-based delegate selection
+  type: conference
 activity:
   dod:
     checked: 2026-07-19

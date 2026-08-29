@@ -24,15 +24,28 @@ location:
 news_page: https://www.cddwestafrica.org/blog/
 events:
 - date: '1997-01-01'
-  title: Founded in Lagos as a research and advocacy organisation on democracy and
-    development in West Africa
+  title: Established in the United Kingdom as a research, training, advocacy and capacity-building
+    organisation on West African democracy and development
   url: https://www.cddwestafrica.org/about-us/
   quote: The Centre for Democracy and Development (CDD) was established in the United
     Kingdom in 1997
+  note: 'Correction to the previous title here, which said "Founded in Lagos" — contradicting
+    its own cited quote. Per the same source: founded in the UK in 1997, registered
+    in Lagos, Nigeria in 1999 (see the following event).'
   proof_level: high
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Founding of the organisation
+- date: '1999-01-01'
+  title: Registered in Lagos, Nigeria
+  url: https://www.cddwestafrica.org/about-us/
+  quote: subsequently registered in Lagos – Nigeria in 1999 as an independent, not-for-profit,
+    research, training, advocacy and capacity building organisation
+  proof_level: high
+  url_checked: '2026-08-28'
+  notable: medium
+  notable_reason: Formal registration in Nigeria, its long-term operating base
+  type: milestone
 activity:
   dod:
     checked: 2026-06-29

@@ -54,7 +54,7 @@ activity:
     note: Confirmed live (HTTP 200), site current
   rss:
     date: 2026-08-28
-    note: "Latest post: [2026 정기국회 입법·정책과제] 우발적 충돌 방지 및 위기 관리, 한반도 평화정착 방안 마련"
+    note: 'Latest post: [2026 정기국회 입법·정책과제] 우발적 충돌 방지 및 위기 관리, 한반도 평화정착 방안 마련'
     url: https://peoplepower21.org/peace/2028405
     checked: 2026-08-28
 last_checked: '2026-08-09'

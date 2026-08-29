@@ -33,6 +33,21 @@ events:
   url_checked: '2026-08-12'
   notable: true
   notable_reason: Founding of the organisation
+- date: '2025-06-14'
+  title: Hosted national conference "Citizen Assemblies — Policy without Politics"
+    at Woodville Town Hall, Adelaide
+  url: https://events.humanitix.com/citizen-assemblies-policy-without-politics-national-conference
+  quote: Join us for an unmissable day of bold ideas, honest conversations, and fresh
+    thinking about the future of democracy.
+  note: Full-day national conference featuring Nick Gruen, Iain Walker, and Jay Weatherill,
+    plus a presentation by David Van Reybrouck (author of "Against Elections"), chaired
+    by Elizabeth Farrelly.
+  proof_level: high
+  url_checked: '2026-08-28'
+  notable: medium
+  notable_reason: National conference with prominent deliberative-democracy speakers
+  type: conference
+  location: Woodville Town Hall, Adelaide
 activity:
   rss:
     checked: 2026-08-28

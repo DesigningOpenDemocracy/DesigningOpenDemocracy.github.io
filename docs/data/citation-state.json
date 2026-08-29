@@ -155,8 +155,6 @@
     "last_modified": null
   },
   "https://australiainstitute.org.au/event/dr-hugh-saddler-memorial-lecture-2026-shane-rattenbury/": {
-    "blocked": "HTTP_403",
-    "blocked_since": "2026-08-28",
     "checked": "2026-08-26",
     "etag": null,
     "evidence": [
@@ -175,8 +173,6 @@
     "last_modified": "Thu, 20 Aug 2026 15:45:45 GMT"
   },
   "https://australiainstitute.org.au/events/climate-integrity-summit/": {
-    "blocked": "HTTP_403",
-    "blocked_since": "2026-08-28",
     "checked": "2026-08-26",
     "document_sha256": "cc2b59b109f0dbe08f4e74bcfbfabd20a591c5d99dba592a351e78f834d203fa",
     "etag": null,
@@ -292,11 +288,12 @@
     "last_modified": null
   },
   "https://bonds.coop/about-us/our-story/": {
-    "checked": "2026-08-26",
+    "checked": "2026-08-29",
     "document_sha256": "8de59da11b0b3186f83993ee3f449118503ba392596e8f1064fed5399804f2ed",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-29",
         "context": {
           "prefix": "Connect with us Connect Join us",
           "sha256": "64133499a5f3dbacf5a0feb85ac302ff31c33d8b56de113d2db1792612dd6492",
@@ -319,6 +316,7 @@
         "verified": true
       },
       {
+        "checked": "2026-08-28",
         "context": {
           "prefix": "od. Photo by Glynn Jarrett Co-operative Bonds HQ operates from its sister co-op,",
           "sha256": "5514564e069a65c0b26959bb7794c2145186abf497d1e41a1fef3eeecb904c95",
@@ -330,7 +328,27 @@
         "verified": true
       }
     ],
-    "last_modified": "Wed, 26 Aug 2026 11:11:38 GMT"
+    "last_modified": "Sat, 29 Aug 2026 01:27:52 GMT"
+  },
+  "https://bonds.coop/the-castlemaine-hub-community-debentures-in-action/": {
+    "checked": "2026-08-29",
+    "document_sha256": "8f736a03655764750d45d0b9844f6e5d0fe907d2cc378fe05d4ba34f4fb22a1d",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": "Facebook Twitter LinkedIn",
+          "sha256": "edea5845654868ca2ac94c42fd32ac985c8319b0e6588ce5a4f837127788d6ca",
+          "suffix": "They established an investment co-op to buy and manage local property in the regional town so that key assets such as the Hub could be taken ou",
+          "text": "When the \u2018Hub\u2019, a beautiful heritage building in Castlemaine, faced the risk of being sold to unsympathetic developers, the community feared it would disrupt the small enterprises and community organisations it was home to. But they needed $1.95 million to secure the building."
+        },
+        "id": "edea5845654868ca2ac94c42fd32ac985c8319b0e6588ce5a4f837127788d6ca",
+        "quote": "When the \u2018Hub\u2019, a beautiful heritage building in Castlemaine, faced the risk of being sold to unsympathetic developers, the community feared it would disrupt the small enterprises and community organisations it was home to. But they needed $1.95 million to secure the building.",
+        "verified": true
+      }
+    ],
+    "last_modified": "Sat, 29 Aug 2026 01:28:34 GMT"
   },
   "https://budgit.org/about-us/": {
     "checked": "2026-08-25",
@@ -409,11 +427,12 @@
     "last_modified": null
   },
   "https://cafsa.org.au/cafsa/": {
-    "checked": "2026-08-26",
+    "checked": "2026-08-28",
     "document_sha256": "938c71c61cb749a3d7740205f1ae3c71d9b966a95cb114cab8811ddfd73a7d5c",
-    "etag": "\"16762-1787661578;gz\"",
+    "etag": "\"22601-1787928227;gz\"",
     "evidence": [
       {
+        "checked": "2026-08-28",
         "context": {
           "prefix": "Resources Contact Citizen Assemblies for South Australia",
           "sha256": "df929ab5566c473eff41117725d048245c949170398782267afecefb68f6f213",
@@ -598,11 +617,12 @@
     "last_modified": null
   },
   "https://civichive.org/about-us/": {
-    "checked": "2026-08-26",
+    "checked": "2026-08-28",
     "document_sha256": "5c14942f4be70fe7c181da81a2eb562d1bc6f367a4e9ec482092637c6b65d014",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-28",
         "context": {
           "prefix": "Donate Election Result Portal About us",
           "sha256": "aee7e1dc3880e8ec6b1c12e3c9c5fe4c6c50ef9e9673b5c2a409de2b9ebfafa1",
@@ -628,11 +648,33 @@
     ],
     "last_modified": null
   },
-  "https://civictech.africa/about-ctin": {
-    "checked": "2026-08-26",
+  "https://civichive.org/west-africa-civictech-conference-2026-shaping-the-future-of-governance-through-youth-and-technology/": {
+    "checked": "2026-08-28",
+    "document_sha256": "baa11a6aaf1b791e8c28d906254bad7e71019e8fcc433686c92c39e64d0243b7",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-28",
+        "context": {
+          "prefix": "e heart of the West Africa CivicTech Conference 2026, which convened more than 400 participants from nearly different countries in West Africa.",
+          "sha256": "802e863f2ee39976f35ccbcb6c37286b8513449a6867cac49c0a18c38c330c42",
+          "suffix": "Centred on the theme, \u201cYouth, Technology & the Future of Governance in West Africa,\u201d this year\u2019s conference explored one of the region\u2019s most p",
+          "text": "For two days, the conference became a meeting point for civic innovators, policymakers, civil society organisations, students, researchers, social entrepreneurs, development partners, and technology enthusiasts committed to one shared vision: building a more accountable, inclusive, and digitally enabled West Africa."
+        },
+        "id": "802e863f2ee39976f35ccbcb6c37286b8513449a6867cac49c0a18c38c330c42",
+        "quote": "For two days, the conference became a meeting point for civic innovators, policymakers, civil society organisations, students, researchers, social entrepreneurs, development partners, and technology enthusiasts committed to one shared vision: building a more accountable, inclusive, and digitally enabled West Africa.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://civictech.africa/about-ctin": {
+    "checked": "2026-08-29",
+    "document_sha256": "a1ea3d023725607b5e9b544ce244ec52af65a37ba2ce98176a1c568e465610c8",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-29",
         "context": {
           "prefix": "t and citizens, in public participation, in transparency and accountability and in delivering public services.",
           "sha256": "74ae83bfa42253f65e7cfb42d5de7ad8dd8030366ec6dc44063bce6e59e827e5",
@@ -644,7 +686,27 @@
         "verified": true
       }
     ],
-    "last_modified": "Thu, 20 Aug 2026 11:44:28 GMT"
+    "last_modified": "Thu, 27 Aug 2026 10:49:55 GMT"
+  },
+  "https://civictech.africa/ctif/underthehood/": {
+    "checked": "2026-08-29",
+    "document_sha256": "2d9c02b639fd443e52ffb1625986e222a57448b06b138733058391a9dcd7937e",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": "diverse array of voices from various industries and backgrounds. View Speakers Exhibitors",
+          "sha256": "fa40dbafcb910423620f6d510b7fde98d3a2a093d6568a5bb427d6c7fc68726e",
+          "suffix": "Online Exhibitions Additional Info Are you looking to stay in Johannesburg during the week of t",
+          "text": "You are invited to exhibit yours or your organisation\u2019s civic tech innovation initiatives at the Civic Tech Innovation Forum being held on the 28 th \u2013 31 st October 2024. The Civic Tech Innovation Network is once again hosting its annual civic tech conference at the Tshimologong Digital Innovation Precinct in Johannesburg, South Africa."
+        },
+        "id": "fa40dbafcb910423620f6d510b7fde98d3a2a093d6568a5bb427d6c7fc68726e",
+        "quote": "You are invited to exhibit yours or your organisation\u2019s civic tech innovation initiatives at the Civic Tech Innovation Forum being held on the 28 th \u2013 31 st October 2024. The Civic Tech Innovation Network is once again hosting its annual civic tech conference at the Tshimologong Digital Innovation Precinct in Johannesburg, South Africa.",
+        "verified": true
+      }
+    ],
+    "last_modified": "Thu, 27 Aug 2026 10:43:57 GMT"
   },
   "https://civictech.guide/about": {
     "checked": "2026-08-26",
@@ -746,11 +808,12 @@
     "last_modified": null
   },
   "https://congresovisible.uniandes.edu.co/quesomos": {
-    "checked": "2026-08-26",
+    "checked": "2026-08-29",
     "document_sha256": "4ed870e60a69f4aa64d27e25930abe1d328953fb76b1a767b4250d40bd787ff4",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-29",
         "context": {
           "prefix": "Qu\u00e9 es Congreso Visible",
           "sha256": "dda0e7cca4c21947259bb3b665c62bf3b375cea3f13dfe688cec218b5281df0c",
@@ -1084,8 +1147,6 @@
     "last_modified": null
   },
   "https://demnext.substack.com/p/looking-back-moving-forward-democracynexts": {
-    "blocked": "HTTP_403",
-    "blocked_since": "2026-08-28",
     "checked": "2026-08-26",
     "document_sha256": "4100b9025ff216a9e360f71c2cdb0fef792ba3c64c0f3874fe7cf384458ccf7b",
     "etag": null,
@@ -1207,12 +1268,27 @@
     ],
     "last_modified": null
   },
+  "https://democracyincolour.org/democracy-in-colour-welcomes-court-ruling-upholding-racial-discrimination-finding-against-pauline-hanson/": {
+    "checked": "2026-08-29",
+    "document_sha256": "baa0c9ae85f284d36f3ad5cba3a1559ef02b4e70f845bf2de0ede60bd50aaf95",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "id": "d1357d9fe8039b617f39bfd51b2b5df9ef61105770137234c2ae5bcbe0fbcead",
+        "quote": "Democracy in Colour welcomes the Federal Court\u2019s decision to uphold the racial discrimination finding against One Nation leader Pauline Hanson. ... The court dismissed Hanson\u2019s appeal on the ruling that found she breached the racial discrimination act against Greens Senator Mehreen Faruqi on social media in September 2022.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
   "https://digidemlab.org/en/about/": {
-    "checked": "2026-08-26",
+    "checked": "2026-08-29",
     "document_sha256": "0313bdfb2858973c5b5604ca8142bb0c21817682f485330469baec1d3e91659a",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-29",
         "context": {
           "prefix": "--> Work Services About Contact sv | en We are Digidem Lab",
           "sha256": "e4877b3468c72c479a011f77f1c920735a7e56908c54f57bbd5462f5ae696925",
@@ -1221,6 +1297,26 @@
         },
         "id": "e4877b3468c72c479a011f77f1c920735a7e56908c54f57bbd5462f5ae696925",
         "quote": "Digidem Lab is an independent democracy lab that supports neighbourhoods, municipalities and public institutions in conducting effective and inclusive citizen dialogues.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://digidemlab.org/news/Digidem-Lab-leder-i-Sveriges-frsta-nationella-medborgarrd-om-klimatet/": {
+    "checked": "2026-08-29",
+    "document_sha256": "2837130c5d7de381d73cef94b8a5d3171937e13b7affbbf32eabdebf675d7b95",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": "an Medborgarr\u00e5d om Klimatet f\u00f6r Stockholms universitet 2024.03.07 Digidem Lab leder nationellt medborgarr\u00e5d om klimatet",
+          "sha256": "794c3d000709b2cd3877d5a7435d7fb278854f1f32448116ac5044ef0510b850",
+          "suffix": "60 slumpm\u00e4ssigt utvalda personer fr\u00e5n hela landet ska under v\u00e5ren ta sig an fr\u00e5gan Hur b\u00f6r Sverige s\u00e4nka utsl\u00e4ppen i enlighet med Parisavtal",
+          "text": "Den 9-10 mars samlas Sveriges f\u00f6rsta nationella medborgarr\u00e5d om klimatet."
+        },
+        "id": "794c3d000709b2cd3877d5a7435d7fb278854f1f32448116ac5044ef0510b850",
+        "quote": "Den 9-10 mars samlas Sveriges f\u00f6rsta nationella medborgarr\u00e5d om klimatet.",
         "verified": true
       }
     ],
@@ -1413,11 +1509,14 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/Anti-Corruption_Foundation": {
-    "checked": "2026-08-26",
+    "blocked": "HTTP_429",
+    "blocked_since": "2026-08-29",
+    "checked": "2026-08-29",
     "document_sha256": "0cefabe5c97a574f68d38140a9e7866f9f4de711856cb72ed12f72d8d9d7b5dc",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-29",
         "context": {
           "prefix": "ns in which government structures will feel pressure, and creating a real alternative to the current power system. == History == === Creation ===",
           "sha256": "a8e4becb59b91507cdcd5157ce9c1438c7e39f1cd7b2fbcf51592cd2e1bfe4a3",
@@ -1562,7 +1661,28 @@
     ],
     "last_modified": null
   },
+  "https://en.wikipedia.org/wiki/China_Democratic_League": {
+    "checked": "2026-08-28",
+    "document_sha256": "e139b468a2ce4f43c62bef74220d1a44bbd4097ddc845219921a2ba7ceadfa06",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-28",
+        "context": {
+          "prefix": "gainst it. In November 1947, elections were held nationwide for delegates to the National Assembly, which were boycotted by both the CCP and the CDL.",
+          "sha256": "8b7284f470386ca6ea9d6762bf19eeeaeaabb76a4ffd84678d855f97a31d65bb",
+          "suffix": "=== People's Republic of China === After the founding of the People's Republic of China in 1949, the Chinese Communist Party (CCP) became the rulin"
+        },
+        "id": "c2603411e1d3d7332d5a77f1843b83ddb871de3b340b14abe4657f3742384952",
+        "quote": "The KMT's repression of the CDL directly led the League, at its Third Plenary Session of the First Central Committee in January 1948, to publicly announce cooperation with the CCP. From that point onward, the CCP and the CDL established an alliance.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
   "https://en.wikipedia.org/wiki/Chinese_People%27s_Political_Consultative_Conference": {
+    "blocked": "HTTP_429",
+    "blocked_since": "2026-08-29",
     "checked": "2026-08-26",
     "document_sha256": "1dc9af679c6f13580beaac6f2bd71c082b56e084e9fff382ce4eef3888f08373",
     "etag": null,
@@ -1620,6 +1740,8 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/Confederation_of_Indigenous_Nationalities_of_Ecuador": {
+    "blocked": "HTTP_429",
+    "blocked_since": "2026-08-29",
     "checked": "2026-08-26",
     "document_sha256": "7f7ad365c426dbc34364dd2d05cce4de26f2b9076265b3a0aefaf678e86e4095",
     "etag": null,
@@ -1825,6 +1947,8 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/Electoral_Institute_for_Sustainable_Democracy_in_Africa": {
+    "blocked": "HTTP_429",
+    "blocked_since": "2026-08-29",
     "checked": "2026-08-26",
     "document_sha256": "f5f7e1d943e85576c2c31d16ac6eefed19a14d9e11c52e37787d9dc8d3263756",
     "etag": null,
@@ -1991,8 +2115,28 @@
     ],
     "last_modified": null
   },
+  "https://en.wikipedia.org/wiki/Fundaci%C3%B3n_Ciudadano_Inteligente": {
+    "checked": "2026-08-28",
+    "document_sha256": "37b7637783a832e3dcd52671011a75b0d393b99846d742669a6d92d6be34a08f",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-28",
+        "context": {
+          "prefix": "Mobarec, Sebastian Echeverria, Alfonso Tapia, Juan Covarrubias, Pablo Carvacho, Boris De Los Rios, Valentina Insulza, and Milenko Bertrand- Galindo.",
+          "sha256": "4404f05dae78ef7a33a65ecd911b44f1b26c35b7d350279d906c4dc919e820d3",
+          "suffix": "The first drafts of the organization\u2019s mission focused on the promotion of transparency and social accountability. Web technology later also became a",
+          "text": "== History == Fundaci\u00f3n Ciudadan\u00eda Inteligente was registered as a non-governmental organization in Chile on December 22, 2009. Fundaci\u00f3n Ciudadano Inteligente is the current Fundaci\u00f3n Ciudadan\u00eda Inteligente (was started on December 28, 2009, by its Founding Directors; Felipe Heusser, Erich Schnake, Rodrigo Saffirio, Rodrigo Mobarec, Sebastian Echeverria, Alfonso Tapia, Juan Covarrubias, Pablo Carvacho, Boris De Los Rios, Valentina Insulza, and Milenko Bertrand- Galindo. Vota Inteligente was publicly launched on October 22 of that same year in preparation for the Chilean Presidential elections. The first drafts of the organization\u2019s mission focused on the promotion of transparency and social accountability. Web technology later also became an essential element to the organization, mainly due to the influence of other organizations that had already successfully been using the internet to pursue transparency and accountability."
+        },
+        "id": "8a23c3b81e42a0df724e05de09ed36b0d6c00e0aea30d8cb742b898df41584f5",
+        "quote": "Vota Inteligente was publicly launched on October 22 of that same year in preparation for the Chilean Presidential elections.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
   "https://en.wikipedia.org/wiki/Fusion_Party_(Australia)": {
-    "checked": "2026-08-26",
+    "checked": "2026-08-29",
     "document_sha256": "8e8b46ad71e5e9741af34300b344e6b51f4f30c28e588309099b9a30bc81a352",
     "etag": null,
     "evidence": [
@@ -2004,6 +2148,17 @@
         },
         "id": "6097de949a98fce4a99d85fc79ee0b17ef1f9f2781d8a614e93ac8f6833f32d4",
         "quote": "was formed in 2021 following the passing of the Electoral Legislation Amendment (Party Registration Integrity) Bill 2021",
+        "verified": true
+      },
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": "y and Secular Party were deregistered in January 2022 by the Australian Electoral Commission (AEC). The Pirate Party was deregistered in April 2021.",
+          "sha256": "f66cbd9f1fd72bdade6cd69291a488d812d1904d49d49d2b9898f6cbeda47a03",
+          "suffix": "Fusion has a federated structure, with the merging former parties retaining a degree of autonomy as formal branches. == Ideology and policies == Th"
+        },
+        "id": "188118d9f4f64ceedbc5b1802f2b93723e90d94dcd19dd338947e7abff69a20b",
+        "quote": "Fusion underwent a name change to FUSION | Planet Rescue | Whistleblower Protection | Innovation in January 2025.",
         "verified": true
       }
     ],
@@ -2084,11 +2239,12 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/Goree_Institute": {
-    "checked": "2026-08-26",
+    "checked": "2026-08-29",
     "document_sha256": "7fb96f7dbd6db04f4a6e95cb3ac170e85867d3c9ddeea86dbbc64ba59ddecffd",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-29",
         "context": {
           "prefix": "nization located on Gor\u00e9e Island in Dakar, Senegal. == History == The institute, born from an idea formulated by Senegalese president Abdou Diouf,",
           "sha256": "982e6de61abdcaf25a2bd8560c21aae638ae0e08a2b1753e7076edf94e950b6f",
@@ -2313,11 +2469,12 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/Jan_Fran": {
-    "checked": "2026-08-26",
+    "checked": "2026-08-29",
     "document_sha256": "08aefbba23ff4851588f3b085380539ba1a37f3c73a2638d065190e3b4ce0da7",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-29",
         "context": {
           "prefix": "emoir, Of Middle Eastern Appearance, to be published by Hachette Australia. In 2021, Fran began hosting Question Everything with Wil Anderson on ABC.",
           "sha256": "98d9add825a41e270bc271089adad0ff0e3783e1221a0f986c7d47263afbe2b1",
@@ -2331,11 +2488,12 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/Janaagraha": {
-    "checked": "2026-08-26",
+    "checked": "2026-08-29",
     "document_sha256": "aa91fca253f585210311e6256b178c2df823d05e5c9289b145c49847bb6ecc76",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-29",
         "context": {
           "prefix": "Janaagraha Centre for Citizenship and Democracy is a Bengaluru-based non-profit working to improve the quality of life in India's cities and towns.",
           "sha256": "d6aa70e91fde60faa7f3e974b647221689066de26eb3d828feefd793518fd9a9",
@@ -2349,11 +2507,12 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/Kialo": {
-    "checked": "2026-08-26",
+    "checked": "2026-08-29",
     "document_sha256": "954f1114f09b201937f1344e4b975ad7fe5ead9cf5fba3dbae5ee6f4d2ed45bf",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-29",
         "context": {
           "prefix": "nd 1628 debates, related to over 1120 categories, with 124,312 unique claims as of June 26, 2020. == Kialo Inc. == The site is run by Kialo Inc. It",
           "sha256": "12e9507b78c839b9897170b7ef209a5ea45fb3e0d1fa63604c102afd631d5834",
@@ -2368,11 +2527,12 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/Kongra_Star": {
-    "checked": "2026-08-26",
+    "checked": "2026-08-29",
     "document_sha256": "870b1a0997e3331ed1ccaee029ac6b0846d7de1729bc215c2630e3ace6bbd522",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-29",
         "context": {
           "prefix": "",
           "sha256": "45536d40c4f30592bbaab66487fe215aeb8b22d4179f6c84babf948670bcd054",
@@ -2638,6 +2798,8 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/Movement_for_Quality_Government_in_Israel": {
+    "blocked": "HTTP_429",
+    "blocked_since": "2026-08-29",
     "checked": "2026-08-26",
     "document_sha256": "e12b56f60f8c5858ec4cab7a16fc6d0cd2383d66d39f066375bd93f871c92c5c",
     "etag": null,
@@ -2656,11 +2818,12 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/Movement_for_a_Democratic_Society": {
-    "checked": "2026-08-26",
+    "checked": "2026-08-29",
     "document_sha256": "6782844aa5036eb1e0983fae8038b5f46acd43a231b0308d7b35ec16cd4560e1",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-29",
         "context": {
           "prefix": ": Tevgera Civaka Demokrat\u00eek, TEV-DEM; Arabic: \u062d\u0631\u0643\u0629 \u0627\u0644\u0645\u062c\u062a\u0645\u0639 \u0627\u0644\u062f\u064a\u0645\u0642\u0631\u0627\u0637\u064a; Classical Syriac: \u0719\u0718\u0725\u0710 \u0715\u071f\u0722\u072b\u0710 \u0715\u071d\u0721\u0729\u072a\u0710\u071b\u071d\u0710, romanized: Zaw'o d'Kensho Demoqra\u1e6doyo)",
           "sha256": "723407162fd857fad45f78285f40182125f7e4062780cce6fb8f02477a411989",
@@ -2742,11 +2905,12 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/Nicholas_Gruen": {
-    "checked": "2026-08-26",
+    "checked": "2026-08-29",
     "document_sha256": "c6cc3560787fdc68d42cf67a2d703d47d4c1d2e2564d28f4c294e6d224d1f38c",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-29",
         "context": {
           "prefix": "roductivity Commission on which he served until the late 1990s when he joined the Business Council of Australia directing its New Directions project.",
           "sha256": "66b2c89a7be6ee16e3b0cba45b03a15412d3376812fec63ec6bed29e65b54a7e",
@@ -2801,6 +2965,8 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/OneVoice_Movement": {
+    "blocked": "HTTP_429",
+    "blocked_since": "2026-08-29",
     "checked": "2026-08-26",
     "document_sha256": "6c1db82b3af2dbc336e3f03aacb72d1543570150c0ad2662fbf3db11bd0b678c",
     "etag": null,
@@ -2927,11 +3093,12 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/PRS_Legislative_Research": {
-    "checked": "2026-08-26",
+    "checked": "2026-08-29",
     "document_sha256": "7ebd72733e454ec445768bbc069d9e62547ae01963060f1dc482ed7da53ea1eb",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-29",
         "context": {
           "prefix": "PRS Legislative Research, commonly referred to as PRS, is an Indian non-profit organisation that",
           "sha256": "825d531a7973ed01a163dfe6cbd15b4342dca1d6b1e803a33b1e65710970624f",
@@ -2940,6 +3107,18 @@
         },
         "id": "c8e33bf627761470e3fed004a375537e23607f962fa9968d6057c04b8a397746",
         "quote": "was established in September 2005 as an independent research institute",
+        "verified": true
+      },
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": "0-11 LAMP Fellows 2011-12 LAMP Fellows 2012-13 LAMP Fellows 2014-15 == Recognition == Business Standard's Social Entrepreneur of the Year 2019.",
+          "sha256": "b9759ac6c64c3c16b320b486250a6975b369869cd024835b485cc48fc1e26ba2",
+          "suffix": "Marico Innovation Foundation\u2019s Social Innovation Award, 2010. == See also == Democracy in India Election Commission of India List of think tanks in",
+          "text": "== Recognition == Business Standard's Social Entrepreneur of the Year 2019. NDTV\u2019s Indian of the Year Award in the Public Service category for the year 2013. Marico Innovation Foundation\u2019s Social Innovation Award, 2010."
+        },
+        "id": "f31cb7a513db84d4461874078b479a05f3b777e6018b1a7dac25f9652a68d9ff",
+        "quote": "NDTV\u2019s Indian of the Year Award in the Public Service category for the year 2013.",
         "verified": true
       }
     ],
@@ -2976,11 +3155,12 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/Pirate_Party_Australia": {
-    "checked": "2026-08-26",
+    "checked": "2026-08-29",
     "document_sha256": "830f5cf703045d06e23599c4d1bc2c30ff6516ea3930774de260ff10a647198d",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-29",
         "context": {
           "prefix": "stralia's president, Miles Whiticker stood as the Fusion Party candidate during the 2025 Australian Senate election. == History == The Pirate Party",
           "sha256": "6ede1abce4be770de5705036a7afdd8564c7b2cb61262b3ab9cc1dc7e63e7257",
@@ -2989,6 +3169,12 @@
         },
         "id": "df4b0b1a904c336946576a29110f8081dd950fda90cfbb941e3be97d90184a49",
         "quote": "was founded in 2008 by Rodney Serkowski",
+        "verified": true
+      },
+      {
+        "checked": "2026-08-29",
+        "id": "faa16482961b3f22a3bb643235a3d6bdab99e575e81c31389c2a4f42b0248d24",
+        "quote": "The party voluntarily deregistered on 28 April 2021. ... It later merged with other parties to become the Fusion Party.",
         "verified": true
       }
     ],
@@ -3148,11 +3334,12 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/SITRA": {
-    "checked": "2026-08-26",
+    "checked": "2026-08-29",
     "document_sha256": "cfcb1c3677c327642eceb4f9cf3465cf255bea824ba69aa5405be3fcbe592bfe",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-29",
         "context": {
           "prefix": "mprove the level of education or research, or study future development scenarios\". Sitra functions both as a think tank and as an investment company.",
           "sha256": "865af2677fb94943d56fa89c9abc2a53dfb4878534e5596a14ac4eea3c8712ca",
@@ -3225,6 +3412,8 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/The_Helen_Clark_Foundation": {
+    "blocked": "HTTP_429",
+    "blocked_since": "2026-08-29",
     "checked": "2026-08-26",
     "document_sha256": "dde1b94f7062820d8406a099744fc03544be53fadfb5a1a0eec6d14fbd0039e2",
     "etag": null,
@@ -3290,6 +3479,8 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/Vietnam_Fatherland_Front": {
+    "blocked": "HTTP_429",
+    "blocked_since": "2026-08-29",
     "checked": "2026-08-26",
     "document_sha256": "d618309a00269a18de1fdc87d9032bf1ad9a0fa4e4c76c46f7e20f87b03344f0",
     "etag": null,
@@ -3325,6 +3516,25 @@
     ],
     "last_modified": null
   },
+  "https://en.wikipedia.org/wiki/Your_Party_(UK)": {
+    "checked": "2026-08-29",
+    "document_sha256": "69008816b3a0deb9e41fe203a014b7d0c863ab93676dc1165781fdad9843ab5b",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": "",
+          "sha256": "496795b4df499f35177b4f850a82e744e66fc400d1084115fd46ecf2cce49f66",
+          "suffix": "The party is led by its Central Executive Committee, under a system of collective leadership. Corbyn has served as the party's parliamentary leader s"
+        },
+        "id": "bad3b92485da2140c662d8f75ff2afd2e56e7a1715efae9070e867cb8361750d",
+        "quote": "Your Party is a socialist political party in the United Kingdom announced in July 2025 by Jeremy Corbyn and Zarah Sultana. It was registered with the Electoral Commission on 30 September 2025.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
   "https://enlacezapatista.ezln.org.mx/2013/07/18/nuevas-fechas-para-la-escuelita-informacion-de-videoconferencias-y-de-otras-cosas/": {
     "checked": "2026-08-26",
     "document_sha256": "3fa0f792e39069abfbad70b629a8a3a474de3b14203deb337e509e5430bea7bc",
@@ -3345,11 +3555,12 @@
     "last_modified": null
   },
   "https://es.wikipedia.org/wiki/Transparencia_Internacional#Transparencia_por_Colombia:~:text=Transparencia%20por%20Colombia%2C%20la%20Delegaci%C3%B3n%20Nacional%20de%20Transparencia%20Internacional%20en%20Colombia%2C%20surge%20en%201998": {
-    "checked": "2026-08-26",
+    "checked": "2026-08-29",
     "document_sha256": "8d0794ce4e58a153a04991ac5cc3725f216805fa1c4d57bd4411f9c300651a59",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-29",
         "context": {
           "prefix": "idad de los Programas Sociales, a trav\u00e9s del cual las dependencias federales y estatales rinden cuentas de sus programas sociales. === Colombia ===",
           "sha256": "68b301d6f8259e0aadf888ae3ca1146e4a93d73682dd868ce3f0ae8314758f69",
@@ -3362,6 +3573,26 @@
       }
     ],
     "last_modified": null
+  },
+  "https://espaciopublico.cl/en/espacio-publico-fue-destacado-entre-los-100-think-tanks-to-watch-2025/": {
+    "checked": "2026-08-29",
+    "document_sha256": "838694d4ea2e073e2efe70443616e42f7d18a81fab4aebb3657a57605706fde1",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": "ado entre los 100 Think Tanks to Watch 2025 29 de October de 2025 Share",
+          "sha256": "f5c9c0eb5e7febac269719860946605ef724390366331646170c2a69c86265c9",
+          "suffix": "Esta selecci\u00f3n no corresponde a una lista de ranking, sino a un reconocimiento al trabajo conjunto de una comunidad global que aprende, colabor",
+          "text": "Espacio P\u00fablico fue incluido entre los 100 Think Tanks to Watch 2025, una iniciativa de On Think Tanks que destaca a centros de estudio de todo el mundo por su innovaci\u00f3n, colaboraci\u00f3n e impacto."
+        },
+        "id": "f5c9c0eb5e7febac269719860946605ef724390366331646170c2a69c86265c9",
+        "quote": "Espacio P\u00fablico fue incluido entre los 100 Think Tanks to Watch 2025, una iniciativa de On Think Tanks que destaca a centros de estudio de todo el mundo por su innovaci\u00f3n, colaboraci\u00f3n e impacto.",
+        "verified": true
+      }
+    ],
+    "last_modified": "Sat, 29 Aug 2026 01:41:05 GMT"
   },
   "https://ethelo.com/case-study/engaged-california-program/": {
     "checked": "2026-08-26",
@@ -3382,11 +3613,12 @@
     "last_modified": "Fri, 07 Aug 2026 04:38:34 GMT"
   },
   "https://europeandemocracyhub.epd.eu/exploring-worldwide-democratic-innovations-taiwan/": {
-    "checked": "2026-08-26",
+    "checked": "2026-08-29",
     "document_sha256": "b299a8690eb67421642afc18e7ea038d736c117ac0e56ef113ca1608e843387d",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-29",
         "context": {
           "prefix": "and its website claims to have resulted in \u201cdecisive government action\u201d in 80 percent of cases. In 2015, a government-operated platform, JOIN,",
           "sha256": "67e9fe3e74d10ed92d44c34d19a38ccd92d4972e52ac5998a034d2fc368a49a9",
@@ -3400,22 +3632,21 @@
     ],
     "last_modified": null
   },
+  "https://events.humanitix.com/citizen-assemblies-policy-without-politics-national-conference": {
+    "blocked": "HTTP_403",
+    "blocked_since": "2026-08-28"
+  },
   "https://events.humanitix.com/communities-rising-action-by-the-people-for-the-times": {
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-18",
     "url_status": "dead"
   },
-  "https://events.humanitix.com/finding-common-ground-with-democracyco-improving-the-legitimacy-of-public-policy": {
-    "blocked": "HTTP_403",
-    "blocked_since": "2026-08-28"
-  },
+  "https://events.humanitix.com/finding-common-ground-with-democracyco-improving-the-legitimacy-of-public-policy": {},
   "https://events.humanitix.com/international-day-of-democracy": {
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-25"
   },
   "https://events.humanitix.com/radicalxchange-foundation-in-melbourne": {
-    "blocked": "HTTP_403",
-    "blocked_since": "2026-08-28",
     "checked": "2026-08-26",
     "document_sha256": "3faf2cc54c69d79dff39ad326b6cd5987d76396b96a90a19e404980a4bb7271e",
     "etag": null,
@@ -3494,6 +3725,26 @@
     ],
     "last_modified": "Wed, 26 Aug 2026 11:26:57 GMT"
   },
+  "https://fathomjournal.org/darkenu-keeping-the-dream-of-israel-alive/": {
+    "checked": "2026-08-29",
+    "document_sha256": "b882c85d839eca7c20bbc540ddfeff3f2d867f710b059e20bcfedba2e2bb1f7d",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": "ly, there was a recognition that each of us could achieve a greater impact if we worked separately and independently as two distinct movements.",
+          "sha256": "49ae8da5b5e9d264a17945b84e77c130026295b40f92e6bdf6c49b66367467e3",
+          "suffix": "\u2013 a place most of Israel ignores unless a war breaks out \u2013 building alliances and signing up 5,000 new supporters who are not from the stereotypical",
+          "text": "Darkenu means \u2018our way,\u2019 but also \u2018through us,\u2019 a movement of moderate Israelis who are now waking up. We launched in early 2016, mounting a quietly effective campaign on the Gaza border \u2013 a place most of Israel ignores unless a war breaks out \u2013 building alliances and signing up 5,000 new supporters who are not from the stereotypical \u2018peace camp\u2019 but who, due to where they live, have a greater interest in peace than almost anyone else in the country."
+        },
+        "id": "1dfd34bd9010a6b24081627599b59d84c8b6c641c36825ead30e1fd43b77cbd2",
+        "quote": "Darkenu means \u2018our way,\u2019 but also \u2018through us,\u2019 a movement of moderate Israelis who are now waking up. We launched in early 2016, mounting a quietly effective campaign on the Gaza border",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
   "https://fidemocracy.org/europe-forum-2026-from-novel-to-normal": {
     "checked": "2026-08-26",
     "document_sha256": "f1b5d44558c47a031362b60ccf4f231ec21e9678f59e316af0dd8e49463a2ad4",
@@ -3565,8 +3816,6 @@
     "last_modified": "Thu, 27 Nov 2025 19:42:57 GMT"
   },
   "https://focusweb.org/press-statement-social-movements-united-in-defiance-of-false-solutions-being-negotiated-at-paris-cop/": {
-    "blocked": "HTTP_403",
-    "blocked_since": "2026-08-28",
     "checked": "2026-08-26",
     "document_sha256": "a531689563bedb10620eb9286b125084a1274c182dc093b4389caa3fc8f2814e",
     "etag": null,
@@ -3584,6 +3833,10 @@
       }
     ],
     "last_modified": null
+  },
+  "https://foro.org.co/no-bote-el-voto/": {
+    "blocked": "ROBOTS_DISALLOWED",
+    "blocked_since": "2026-08-29"
   },
   "https://foro.org.co/quienes-somos/": {
     "archive_checked": "2026-08-28",
@@ -3638,11 +3891,12 @@
     "last_modified": null
   },
   "https://fr.wikipedia.org/wiki/AfricTivistes": {
-    "checked": "2026-08-26",
+    "checked": "2026-08-28",
     "document_sha256": "afb91c4e572c3db02e223ad17f4a24b9c9ada4e476ee81935a2f8a0b1c1cc414",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-28",
         "context": {
           "prefix": "\u00e0 Dakar, qui \u0153uvre \u00e0 la promotion et \u00e0 la d\u00e9fense des valeurs d\u00e9mocratiques, des droits humains et de la bonne gouvernance par le biais du num\u00e9rique.",
           "sha256": "252b5333c69d722536f81e7d16d535608eda6ec1b68943076d0eb749e44e1ea4",
@@ -3651,6 +3905,18 @@
         },
         "id": "aa02804f9b03b04becd68c1fb447c92d34ad98571b605ab024cd52ecbf790b6d",
         "quote": "Fond\u00e9e le 26 novembre 2015 par Cheikh Fall, AfricTivistes compte \u00e0 ce jour plus de 400 membres r\u00e9partis dans 40 pays du continent africain.",
+        "verified": true
+      },
+      {
+        "checked": "2026-08-28",
+        "context": {
+          "prefix": "net\u00e9 num\u00e9rique en Afrique. Ils plaident pour l'engagement de divers acteurs dans les processus de transformation socio-politique. === Plaidoyer ===",
+          "sha256": "3bb2b89dc0f741d640cbc34f2453d4d45e0149488c9be732b267e95a553cd040",
+          "suffix": "=== Formations === En 2021, AfricTivistes a \u00e9labor\u00e9 un MOOC dans le cadre du Charter Project Africa, visant \u00e0 faciliter la mise en \u0153uvre et l'appro",
+          "text": "=== Plaidoyer === En f\u00e9vrier 2024, AfricTivistes a saisi la Cour de justice de la CEDEAO pour d\u00e9noncer les coupures r\u00e9p\u00e9t\u00e9es impos\u00e9es d'Internet par les autorit\u00e9s s\u00e9n\u00e9galaises."
+        },
+        "id": "e04332777815010675f3dd4de66bcef8da937ce130b7817f0964835f3c30df45",
+        "quote": "En f\u00e9vrier 2024, AfricTivistes a saisi la Cour de justice de la CEDEAO pour d\u00e9noncer les coupures r\u00e9p\u00e9t\u00e9es impos\u00e9es d'Internet par les autorit\u00e9s s\u00e9n\u00e9galaises.",
         "verified": true
       }
     ],
@@ -3708,6 +3974,26 @@
         },
         "id": "a010f2e8072c84a697d2cd73667f7a7b9d4436b8e6a29df63775be7e70d14445",
         "quote": "Founded by economist Glen Weyl in 2018, the RadicalxChange Foundation is a 501(c)(3) nonprofit dedicated to advancing the RxC movement, to building community, and to education about democratic innovation.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://goreeinstitut.org/symposium-annuel-2026-de-la-reflexion-a-laction-un-tournant-strategique/": {
+    "checked": "2026-08-29",
+    "document_sha256": "d710be8ed4e1b4847aeba9a1df7dbf59440848bd402bc24a215b87dedde50edf",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": "l\u00e9 le Directeur ex\u00e9cutif, Doudou Dia, les huit premi\u00e8res \u00e9ditions du Symposium annuel ont principalement \u00e9t\u00e9 marqu\u00e9es par des r\u00e9flexions acad\u00e9miques.",
+          "sha256": "1e13824e19c6e1ec0e68b3c00f3c8c5c9e87fba07c0d61b58d145702bc57cc0a",
+          "suffix": "Une r\u00e9orientation qui r\u00e9pond \u00e0 une r\u00e9alit\u00e9 de plus en plus manifeste, \u00e0 savoir les remises en question actuelles de la d\u00e9mocratie \u00e9manent en grande p",
+          "text": "Comme l\u2019a rappel\u00e9 le Directeur ex\u00e9cutif, Doudou Dia, les huit premi\u00e8res \u00e9ditions du Symposium annuel ont principalement \u00e9t\u00e9 marqu\u00e9es par des r\u00e9flexions acad\u00e9miques. Pour cette \u00e9dition 2026, le Gor\u00e9e Institute a fait le choix strat\u00e9gique de recentrer ses priorit\u00e9s sur les jeunes et les femmes, qui repr\u00e9sentent pr\u00e8s de 70 % de la population. Une r\u00e9orientation qui r\u00e9pond \u00e0 une r\u00e9alit\u00e9 de plus en plus manifeste, \u00e0 savoir les remises en question actuelles de la d\u00e9mocratie \u00e9manent en grande partie de cette majorit\u00e9 d\u00e9mographique."
+        },
+        "id": "4f650d335ae40c025aae0dee3ca30b41503b038cb58d03810be7f8c9a04f1000",
+        "quote": "Pour cette \u00e9dition 2026, le Gor\u00e9e Institute a fait le choix strat\u00e9gique de recentrer ses priorit\u00e9s sur les jeunes et les femmes, qui repr\u00e9sentent pr\u00e8s de 70 % de la population.",
         "verified": true
       }
     ],
@@ -3958,6 +4244,26 @@
     "etag": null,
     "last_modified": "Wed, 05 Aug 2026 03:53:40 GMT"
   },
+  "https://hawarnews.com/en/in-its-20th-year-kongra-star-continues-to-complete-its-mission-to-liberate-women": {
+    "checked": "2026-08-29",
+    "document_sha256": "f095036df3fe67d46d50de7fd2c1d120f1625dac371521186a3c12e9ff9b5ffa",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": "BDUL RAHMAN Listen to article 0:00 0:00 1\u00d7 +",
+          "sha256": "b2154e80f3178d2f308d93b6848d75e1843fae5de5f047562bdc672f2af1273d",
+          "suffix": "Last year (2023), the Kongra Star held, in conjunction with the anniversary of its founding, its ninth conference in the city of al-Hasakah under",
+          "text": "(January 15) marks the 19th anniversary of the Kongra Star, which has worked since its founding in 2005 under the name (Star Union) to organize and train women in all fields in accordance with the ideology of women\u2019s liberation."
+        },
+        "id": "b2154e80f3178d2f308d93b6848d75e1843fae5de5f047562bdc672f2af1273d",
+        "quote": "(January 15) marks the 19th anniversary of the Kongra Star, which has worked since its founding in 2005 under the name (Star Union) to organize and train women in all fields in accordance with the ideology of women\u2019s liberation.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
   "https://home.treasury.gov/news/press-releases/sb0603": {
     "blocked": "ROBOTS_DISALLOWED",
     "blocked_since": "2026-08-22",
@@ -3980,6 +4286,26 @@
     "last_modified": null,
     "manual_checked": "2026-08-22"
   },
+  "https://hundred.org/en/innovations/6-kialo-edu": {
+    "checked": "2026-08-29",
+    "document_sha256": "1cc4569020e65d17444074cb369e198004dfc994e31fd6bb8b37f745e9628e1f",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": "to more than 1 million users. We have hosted more than 400,000 discussions in at least 49 different languages and over 150 different countries.",
+          "sha256": "638c06ac609f12d2399274dc59801348d08a7044f5fcdc3a197fc39beed87508",
+          "suffix": "We also established official partnerships with Moodle and Google for Education, enabling LMS users to seamlessly integrate our free tool into their t",
+          "text": "In the last two years, we were honored to be selected for the HundrED Global Collection 2025, the American Association of School Librarian's Best Digital Tools for Teaching and Learning 2025, and earned recognition at the Bett Awards 2025, winning in the category Best Free Digital Content, App, or Open Education Resource. We also established official partnerships with Moodle and Google for Education, enabling LMS users to seamlessly integrate our free tool into their teaching practice."
+        },
+        "id": "76a2b7f120d950801a637099e4814618064c4ed8a73c404b2978ddd8a77cc751",
+        "quote": "In the last two years, we were honored to be selected for the HundrED Global Collection 2025, the American Association of School Librarian's Best Digital Tools for Teaching and Learning 2025, and earned recognition at the Bett Awards 2025, winning in the category Best Free Digital Content, App, or Open Education Resource.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
   "https://ia.acs.org.au/article/2018/blockchain-to-revolutionise-e-voting.html": {
     "checked": "2026-08-26",
     "document_sha256": "b487ff02d201e9c05ebfeba374be0dbd48576a7b90e2e100eec6460a6876e011",
@@ -3994,6 +4320,20 @@
         },
         "id": "3c37246d83e4a5392f7029ce3447911a6476b8a1d604e07af291b08c9ddd7a44",
         "quote": "A deal with Silicon Valley start-up Swarm Fund is a big win for an Australian firm working to revolutionise the democratic process using blockchain",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://ibs.org.pl/jak-walczyc-z-ubostwem-energetycznym-narada-obywatelska-o-kosztach-energii/": {
+    "checked": "2026-08-29",
+    "document_sha256": "9c0371c474e99918d46bb675700f0e24da7fc80aac0a7478af37b600c1b5bd1b",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "id": "aaa8db6461dde58f010b4fe3c91b15a009a9945f6af5453a443d7b70739a8277",
+        "quote": "Fundacja Stocznia w 2022 roku zrealizowa\u0142a projekt Narada obywatelska o kosztach energii. By\u0142 to og\u00f3lnopolski proces, kt\u00f3ry mia\u0142 na celu wsp\u00f3lny namys\u0142 nad problemem ub\u00f3stwa energetycznego w naszym kraju. ... W ramach procesu zorganizowano: narady lokalne i pierwszy w kraju Og\u00f3lnopolski panel obywatelski.",
         "verified": true
       }
     ],
@@ -4058,6 +4398,46 @@
     ],
     "last_modified": "Wed, 26 Aug 2026 11:24:45 GMT"
   },
+  "https://lateraleconomics.com.au/outputs": {
+    "checked": "2026-08-29",
+    "document_sha256": "8008e4ac98a656c92fd7193c00ad68b246e68f89e78766e1656c93cfe1b446a0",
+    "etag": "W/\"9252f851408779de746dd94fd91e2e30\"",
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": "llbeing for Australia and discuss the policy alternatives. The Herald/Age - Lateral Economics (HALE) Index of Australia's Wellbeing",
+          "sha256": "36ea2a3a955bbadb78eb731ad02f2dc215615fabf75b90109c18039c1b373115",
+          "suffix": "Understanding the Value of Public Sector Information in Australia Increased access to public sector information produces many",
+          "text": "Lateral Economics has developed the Herald/Age \u2013 Lateral Economics(HALE) Index of wellbeing which builds a measure of wellbeing by correcting GDP for the numerous ways in which it fails to reflect wellbeing."
+        },
+        "id": "36ea2a3a955bbadb78eb731ad02f2dc215615fabf75b90109c18039c1b373115",
+        "quote": "Lateral Economics has developed the Herald/Age \u2013 Lateral Economics(HALE) Index of wellbeing which builds a measure of wellbeing by correcting GDP for the numerous ways in which it fails to reflect wellbeing.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://leftfootforward.org/2025/11/everything-you-need-to-know-about-your-partys-founding-conference/": {
+    "checked": "2026-08-29",
+    "document_sha256": "0539ad15cd93770f5d79b8c1177a5e24067da9f6249af913cb5bca31d67e7090",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": "\u2019s happening there? What are the key decisions and debates? This is everything you need to know. When and where is Your Party Conference?",
+          "sha256": "56d2600d750ccb007716e5d7be3bc752889995fc6b2426d1d5cd6695c399d003",
+          "suffix": "Who will be attending Your Party Conference? Because there are currently no local parties and no branch structure exists, attendees for t",
+          "text": "Your Party\u2019s Conference is taking place from 29-30 November in Liverpool."
+        },
+        "id": "56d2600d750ccb007716e5d7be3bc752889995fc6b2426d1d5cd6695c399d003",
+        "quote": "Your Party\u2019s Conference is taking place from 29-30 November in Liverpool.",
+        "verified": true
+      }
+    ],
+    "last_modified": "Sat, 29 Aug 2026 02:21:46 GMT"
+  },
   "https://liqd.net/en/projects/meinberlin/": {
     "checked": "2026-08-26",
     "document_sha256": "5d3233ee8e4a3136a388b6b8561db16a247f07ebbe157cc5a58ef28b2e6405b9",
@@ -4091,6 +4471,40 @@
         },
         "id": "d57608b88e2c6d9b5e113c0a7fc1b6873cd230617a0f64c41e7251c0f114ae0f",
         "quote": "Liquid Democracy e.V. ist im Vereinsregister des Amtsgerichtes Charlottenburg (Berlin) unter der VR-Nummer 28939 B eingetragen. Der Liquid Democracy e.V. ist ein gemeinn\u00fctziger Verein.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://luminategroup.com/posts/news/eaisf-grant-2024": {
+    "checked": "2026-08-29",
+    "document_sha256": "0b953d0b217d3535ddc967cdb370bc54014baa00a84bec9be7ac0a173aaba3bf",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": "uminate to drive democratic accountability of AI deployment Share",
+          "sha256": "6d57ead80baf5637a151febcac7518e37131ed6a2c16503aed7284f7faf4a5b0",
+          "suffix": "The Fund is a collaboration between 14 foundations empowering civil society groups across Europe to shape AI policy and debates. This grant wil",
+          "text": "The European AI & Society Fund has received a $1 million grant from Luminate to advance its work in ensuring that Artificial Intelligence (AI) is developed and deployed in Europe in ways that prioritise the public good, human rights, and social justice."
+        },
+        "id": "6d57ead80baf5637a151febcac7518e37131ed6a2c16503aed7284f7faf4a5b0",
+        "quote": "The European AI & Society Fund has received a $1 million grant from Luminate to advance its work in ensuring that Artificial Intelligence (AI) is developed and deployed in Europe in ways that prioritise the public good, human rights, and social justice.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://marcozero.org/recife-recebe-encontro-internacional-de-liderancas-femininas-e-lgbtqia-da-america-latina/": {
+    "checked": "2026-08-29",
+    "document_sha256": "f7a417b34bd3d4e8f676282eac65edd57e23bb5040d329589aef09f00d253d45",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "id": "614dd307d39b0a313b209b422eba326b8a271a9eabbe1bc59bceb8e719ffbd24",
+        "quote": "Desta quinta-feira, 22 de maio, at\u00e9 domingo, dia 25, o Recife ser\u00e1 palco do Conecta Latinas, um encontro internacional que reunir\u00e1 aproximadamente 200 mulheres negras, ind\u00edgenas e LGBTQIA+ de mais de 20 pa\u00edses da Am\u00e9rica Latina e Caribe. ... Promovido pelo Instituto Update em parceria com 12 organiza\u00e7\u00f5es internacionais",
         "verified": true
       }
     ],
@@ -4561,11 +4975,12 @@
     "last_modified": null
   },
   "https://oaf.org.au/2014/10/21/they-vote-for-you/": {
-    "checked": "2026-08-26",
+    "checked": "2026-08-29",
     "document_sha256": "e7cafbb369cb0740279b5143e4c9a34d5038e6d810b4e9a9845ac52512eacb9b",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-29",
         "context": {
           "prefix": "the Senate and try to make sense of it all. This is not something anyone can do easily. Parliament should be easy, and accessible. That is why",
           "sha256": "4b1e7122c01530f06f8fb4fef9bf4fc5cca13534c4972e185d4ec8aab6a19b7c",
@@ -4577,7 +4992,27 @@
         "verified": true
       }
     ],
-    "last_modified": "Wed, 26 Aug 2026 11:49:38 GMT"
+    "last_modified": null
+  },
+  "https://ok.org.br/noticia/operacao-serenata-de-amor-5-anos-do-maior-projeto-de-inovacao-civica-brasileiro/": {
+    "checked": "2026-08-29",
+    "document_sha256": "cb83c1b11548d6f382437c6be39c562a6e1ed5507579f1a3ade716c29b886345",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": "e premia\u00e7\u00f5es \u2014 dentro e fora do pa\u00eds! O projeto \u00e9 objeto de estudo acad\u00eamico at\u00e9 hoje e segue influenciando a cria\u00e7\u00e3o de novas ideias na \u00e1rea.",
+          "sha256": "6156fce90f358160b4c2d8fa966f71ed5d9db49feb6446f0774a806f05c1ce25",
+          "suffix": "Desde ent\u00e3o, foram lan\u00e7adas v\u00e1rias iniciativas que estenderam a ideia original de se usar tecnologia e dados abertos para ampliar o acesso \u00e0 informa\u00e7",
+          "text": "Em 2018, a Serenata passou a ser gerida e monitorada pela Open Knowledge Brasil, momento em que se criou o Programa Ci\u00eancia de Dados para Inova\u00e7\u00e3o C\u00edvica. Desde ent\u00e3o, foram lan\u00e7adas v\u00e1rias iniciativas que estenderam a ideia original de se usar tecnologia e dados abertos para ampliar o acesso \u00e0 informa\u00e7\u00e3o e fortalecer a democracia. Tivemos o Perfil Pol\u00edtico, o Justa, o V\u00edtimas da Intoler\u00e2ncia e o Parlametria. Tamb\u00e9m criamos uma rede de pessoas Embaixadoras que colabora para espalhar o conceito de inova\u00e7\u00e3o c\u00edvica pelo pa\u00eds."
+        },
+        "id": "b9b3c9b742c19af5193e232378dec36ae828e8a4512ce6917d0d1281ef984051",
+        "quote": "Em 2018, a Serenata passou a ser gerida e monitorada pela Open Knowledge Brasil, momento em que se criou o Programa Ci\u00eancia de Dados para Inova\u00e7\u00e3o C\u00edvica.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
   },
   "https://opennorth.ca/resources/citizen-budget/": {
     "checked": "2026-08-26",
@@ -4656,10 +5091,12 @@
     "last_modified": null
   },
   "https://perludem.or.id/id/profil/": {
-    "checked": "2026-08-26",
+    "checked": "2026-08-29",
+    "document_sha256": "1860af1fc7cdf5c8c3d228b3fd0600ccb6bcdee52be91de19c7c0f479121febb",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-29",
         "context": {
           "prefix": "hgunakan kedaulatan rakyat yang diberikan kepadanya. Menyadari bahwa kondisi-kondisi tersebut membutuhkan partisipasi setiap warga negara, maka",
           "sha256": "fbbd297c5e6d02e1747f9fc502388d5db50117034a2bf610e391a19959d24d6b",
@@ -4672,6 +5109,40 @@
       }
     ],
     "last_modified": "Wed, 19 Aug 2026 06:37:41 GMT"
+  },
+  "https://perludem.or.id/perludem-and-international-idea-discuss-mixed-member-proportional-electoral-system-simulation-with-journalists-and-civil-society/": {
+    "checked": "2026-08-29",
+    "document_sha256": "ab8fd76409a9239e8d568c8094a4fd9d23e3435372b0e0db7808453bbaf2f4bd",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": "nd Civil Society Workshop: Understanding the Mixed Member Proportional Electoral System and Its Simulation Results in Indonesia, Jakarta (23/7)",
+          "sha256": "e5aa0fa112b93f1070363e2fcf58fbc77eee07811b7368691fc16ce929319acd",
+          "suffix": "The event brought together journalists and civil society organizations to deepen their understanding of the Mixed Member Proportional (MMP) electoral",
+          "text": "Perludem, in collaboration with International IDEA, held the Media Briefing and Civil Society Workshop: Understanding the Mixed Member Proportional Electoral System and Its Simulation Results in Indonesia at the Indonesia Corruption Watch (ICW) Learning House in Jakarta on 23 July. The event brought together journalists and civil society organizations to deepen their understanding of the Mixed Member Proportional (MMP) electoral system and the findings of its simulation in the Indonesian context."
+        },
+        "id": "1478ce0e83b2bf94e4d6fc6f35834985039c6cf5205fe127c1d88b6650f1606b",
+        "quote": "Perludem, in collaboration with International IDEA, held the Media Briefing and Civil Society Workshop: Understanding the Mixed Member Proportional Electoral System and Its Simulation Results in Indonesia at the Indonesia Corruption Watch (ICW) Learning House in Jakarta on 23 July.",
+        "verified": true
+      }
+    ],
+    "last_modified": "Wed, 19 Aug 2026 08:53:25 GMT"
+  },
+  "https://pmc.ncbi.nlm.nih.gov/articles/PMC8416191/": {
+    "checked": "2026-08-29",
+    "document_sha256": "27e1ecdd798010c13bccda83cef9d693019690081283cb21b3a191275da2b54a",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "id": "08807a74eeae5df8bb84b16ccd0e4866a413e0e2206c682a5eb7ea7710cbc866",
+        "quote": "the Tokyo Metropolitan Government commissioned a non-government organization, Code for Japan (CfJ), to build a website to display their open-data ... on COVID-19 on February 26. CfJ developed and launched the website ... on March 3 after only five days.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
   },
   "https://pmg.org.za/blog/": {
     "checked": "2026-08-25",
@@ -4789,10 +5260,12 @@
     "last_modified": null
   },
   "https://podnews.net/press-release/lamestream-podcast": {
-    "checked": "2026-08-26",
+    "checked": "2026-08-29",
+    "document_sha256": "536ad0f8229ff907db2d733eb5c131180ac48f7fff69f97397d713618a047d3a",
     "etag": "\"7f2628fe5cf613c4293cb07ec2a39ac4-gzip\"",
     "evidence": [
       {
+        "checked": "2026-08-29",
         "context": {
           "prefix": "s Award-winning journalists Osman Faruqi and Scott Mitchell launch new podcast to tackle the crisis in Australian media",
           "sha256": "f0118f7c11e028ae89a861bb290d491d50a00569481952a73ba3be722b261ff6",
@@ -4807,22 +5280,36 @@
     "last_modified": "Sun, 27 Apr 2025 23:33:05 GMT"
   },
   "https://portable.com.au/articles/code-for-australia-announcement/": {
-    "checked": "2026-08-26",
-    "etag": "W/\"f439157b8c49ee723a996b2903c8b27a\"",
+    "checked": "2026-08-28",
+    "document_sha256": "957258e2cda32cd145cd5296040eb521aa930803d50486c9bc4616d06cca08b1",
+    "etag": "W/\"66e7a82878c5e3dd214637a915c8dde6\"",
     "evidence": [
       {
+        "checked": "2026-08-28",
         "context": {
           "prefix": "rtable is proud to announce that it will be supporting the operation and management of Code for Australia going into 2025.",
-          "sha256": "b33a7ba3fa2e231e3a823e4f9330c0225ddb4f927271c8e1a9e2c7688c9dd79f",
+          "sha256": "9efc0084145068a0afe0766f0a8c4130bac1e82cfe113386ca9402b275921d96",
           "suffix": "They partner with government and not-for-profit organisations to support them with expert technical advice, digital capability, and the development o",
-          "text": "Code for Australia is a nationwide civic technology organisation founded in 2014 by Alvaro Maz, Jacob Lindsay and Daniel Groch. They partner with government and not-for-profit organisations to support them with expert technical advice, digital capability, and the development of digital solutions that are accessible, inclusive, sustainable and effective. Code for Australia began as part of a global network of like-minded organisations called \u00e2\u0080\u009cCode for All\u00e2\u0080\u009d and is well known for its Fellowship program for early-mid career technologists."
+          "text": "Code for Australia is a nationwide civic technology organisation founded in 2014 by Alvaro Maz, Jacob Lindsay and Daniel Groch. They partner with government and not-for-profit organisations to support them with expert technical advice, digital capability, and the development of digital solutions that are accessible, inclusive, sustainable and effective. Code for Australia began as part of a global network of like-minded organisations called \u201cCode for All\u201d and is well known for its Fellowship program for early-mid career technologists."
         },
         "id": "9814534926a98c30bc7124d2d12012b27b3b33ea17fa6537fbc73964ea7f5f7d",
         "quote": "Code for Australia is a nationwide civic technology organisation founded in 2014 by Alvaro Maz, Jacob Lindsay and Daniel Groch.",
         "verified": true
+      },
+      {
+        "checked": "2026-08-28",
+        "context": {
+          "prefix": "o Ngunnawal Country 1/33 Allara Street, Canberra Code for Australia Finds a New Home with Portable",
+          "sha256": "3d3c333c086ff168ada9293dbc8ac674b6085baeade5f78a7c5e2d36f3112961",
+          "suffix": "Code for Australia is a nationwide civic technology organisation founded in 2014 by Alvaro Maz, Jacob Lindsay and Daniel G",
+          "text": "Portable is proud to announce that it will be supporting the operation and management of Code for Australia going into 2025."
+        },
+        "id": "3d3c333c086ff168ada9293dbc8ac674b6085baeade5f78a7c5e2d36f3112961",
+        "quote": "Portable is proud to announce that it will be supporting the operation and management of Code for Australia going into 2025.",
+        "verified": true
       }
     ],
-    "last_modified": "Fri, 21 Aug 2026 06:51:53 GMT"
+    "last_modified": "Fri, 28 Aug 2026 04:40:26 GMT"
   },
   "https://projects.propublica.org/nonprofits/organizations/832183139": {
     "checked": "2026-08-26",
@@ -4844,11 +5331,12 @@
     "last_modified": null
   },
   "https://pt.wikipedia.org/wiki/Open_Knowledge_Brasil": {
-    "checked": "2026-08-26",
+    "checked": "2026-08-29",
     "document_sha256": "7430e432fbdeb0de72e336361263372ee6f4b7feb7a708418ad09423eb5f61dd",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-29",
         "context": {
           "prefix": "tornar mais transparentes as rela\u00e7\u00f5es entre governo e sociedade. Conhecida em seus prim\u00f3rdios como Rede pelo Conhecimento Livre, \u00e9 uma organiza\u00e7\u00e3o da",
           "sha256": "3140fb0a4720e265dd6519e81b90a3e77907f7fd533bc3ac8b15d4ab7fe81573",
@@ -4862,10 +5350,12 @@
     "last_modified": null
   },
   "https://raisely-images.imgix.net/australian-democracy-network/uploads/adn-annual-report-23-pdf-531f03.pdf": {
-    "checked": "2026-08-26",
+    "checked": "2026-08-28",
+    "document_sha256": "ba7946c361b12c574734c0542f8efe428014a0c250fc0a091d765da6d428a3e9",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-28",
         "context": {
           "prefix": "es that can shift a whole system, we need collective power, strategically directed. Australian Democracy Network (ADN) was created to meet that need.",
           "sha256": "57abd28a13bfbae5988e0b6885591cc4cb61c5e36ccbe60470607f5f3b9c8970",
@@ -4899,7 +5389,7 @@
     "last_modified": null
   },
   "https://reclaim.org.au/inaugural-lismore-peoples-assembly/": {
-    "checked": "2026-08-26",
+    "checked": "2026-08-29",
     "document_sha256": "b5a2ba91b9e9443a253acc4659c00e59e38792d2f78c6248bdeac7cc3587c1c6",
     "etag": null,
     "evidence": [
@@ -4916,7 +5406,7 @@
         "verified": true
       },
       {
-        "checked": "2026-08-26",
+        "checked": "2026-08-29",
         "context": {
           "prefix": "Reclaim our Recovery (ROR) say they have been pushing for robust, democratic, community involvement in the flood recovery since the start of 2022.",
           "sha256": "373bb0e4d16734a171c543938e80826235ca1a271cdef7b41f66582a057d6190",
@@ -4951,7 +5441,7 @@
     "last_modified": null
   },
   "https://reclaim.org.au/the-year-ahead-for-the-lismore-peoples-assembly/": {
-    "checked": "2026-08-26",
+    "checked": "2026-08-29",
     "document_sha256": "1e8257f69ee04eadf902cf0f7bdd03e0f5d9d005f1e3e0e2acc3b4f45ed5c6d1",
     "etag": null,
     "evidence": [
@@ -4965,6 +5455,58 @@
         },
         "id": "20e6e6902c0a0287a487e72910cf53a6f385b53c10413bfe63c121e7dee87b21",
         "quote": "Support local tiny house production (one of the solutions from the housing assembly)",
+        "verified": true
+      },
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": "been important conversations for the community and we believe coming together and talking with strangers is a critical step to getting action.",
+          "sha256": "2ad4813b3a4c5103b5d3553f9934a2a282d405f200358e6bc20fd84219d21421",
+          "suffix": ": Support local tiny house production (one of the solutions from the housing assembly) Erect 2022 Flood Signage up on Poles \u2013 if the co",
+          "text": "The team behind the LPA recently got together to see where our energy lies for the year ahead. At a planning day attended by 17 humans and 2 Canines (with plenty of Turkeys and ducks out in the yard!) we came up with a few priority projects we are keen on:"
+        },
+        "id": "ac66d3b95719c30d55ae3a90c113f94b0ecc0f25f53d5da3041cffa1953e17ba",
+        "quote": "The team behind the LPA recently got together to see where our energy lies for the year ahead. At a planning day attended by 17 humans and 2 Canines (with plenty of Turkeys and ducks out in the yard!) we came up with a few priority projects we are keen on",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://regional.chinadaily.com.cn/cppcc/2026-03/04/c_1164300.htm": {
+    "checked": "2026-08-29",
+    "document_sha256": "7853151c1a83faf1d10d7c7f2d828e4d8741b1a54edc781cc6257e4fc2160f4a",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": "ssion 48 33860 Top News /enpproperty--> CPPCC National Committee starts annual session Updated: 2026-03-04 Xinhua",
+          "sha256": "b2b031da4c267afb1843027935fadb60c227733fb4432fa2ab6a11aab0e479ed",
+          "suffix": "Chinese President Xi Jinping and other leaders including Li Qiang, Zhao Leji, Cai Qi, Ding Xuexiang, Li Xi and Han Zheng were seated on the rostrum.",
+          "text": "The fourth session of the 14th National Committee of the Chinese People's Political Consultative Conference (CPPCC) kicks off at the Great Hall of the People in Beijing, capital of China, March 4, 2026. Chinese President Xi Jinping and other leaders including Li Qiang, Zhao Leji, Cai Qi, Ding Xuexiang, Li Xi and Han Zheng were seated on the rostrum. [Photo/Xinhua]"
+        },
+        "id": "dbda507b19de9fd5a2a7334a2d7130d00f8797752b9a10eadc071fed305cafe3",
+        "quote": "The fourth session of the 14th National Committee of the Chinese People's Political Consultative Conference (CPPCC) kicks off at the Great Hall of the People in Beijing, capital of China, March 4, 2026.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://rojavainformationcenter.org/background/political-system-documents/": {
+    "checked": "2026-08-29",
+    "document_sha256": "d7896e6399a920e50b6b54440de0ca6b516af8ddeb5303824f1e3be1bc3a503b",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": "th and East Syria General Documents Proposal by the Self-Administration of Rojava for a solution to the conflict in Syria. May 2014",
+          "sha256": "6f4ae87170b2d18d4ada87a7abaf39c64c4b38e72c1d0780a06c9eaacba60c58",
+          "suffix": "The Social contract for Rojava: Charter of the Autonomous Regions of Afrin, Jazeera, and Kobane 2014. The Social contract for the Democra",
+          "text": "Final Declaration of the Rojava \u2013 Northern Syria Democratic Federal System Constituent Assembly announcing the establishment of a federal democratic Rojava/Northern Syria, 17 March 2016."
+        },
+        "id": "6f4ae87170b2d18d4ada87a7abaf39c64c4b38e72c1d0780a06c9eaacba60c58",
+        "quote": "Final Declaration of the Rojava \u2013 Northern Syria Democratic Federal System Constituent Assembly announcing the establishment of a federal democratic Rojava/Northern Syria, 17 March 2016.",
         "verified": true
       }
     ],
@@ -4990,11 +5532,12 @@
     "last_modified": null
   },
   "https://stocznia.org.pl/en/about-shipyard/": {
-    "checked": "2026-08-26",
+    "checked": "2026-08-29",
     "document_sha256": "3adf37635408bd7855b93870332381f55fb1f945e9b1e4eda981a2049839b29b",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-29",
         "context": {
           "prefix": "About Shipyard Share Close Facebook facebook LinkedIn linkedin mail Copy link",
           "sha256": "6686a58250e335ed90f716edfd4130f33a471e120ffbc9a84a32a69da589567a",
@@ -5127,8 +5670,8 @@
     "manual_checked": "2026-08-22"
   },
   "https://topics.amcham.com.tw/2017/02/make-full-use-of-join-gov-tw/": {
-    "checked": "2026-08-26",
-    "document_sha256": "5b9ba4ae5bfa4e34d4d9de7f72417b929f251f29cd22ab99bcd554b9be9e29a4",
+    "checked": "2026-08-29",
+    "document_sha256": "888c2a824bb6d37a5ab25059c12c35f8b122d3f1468afc55b5603ea05c40f8ec",
     "etag": null,
     "evidence": [
       {
@@ -5140,6 +5683,38 @@
         },
         "id": "f2bc1350fab07763d03538042100f87084a4a232f7caa8b0f69e0187361eae48",
         "quote": "a well-designed online portal called Join to facilitate two-way communication between government offices and members of the public on regulatory matters.",
+        "verified": true
+      },
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": "he Join platform will be truly meaningful only if both government officials and the private sector utilize it to the fullest. On the government side,",
+          "sha256": "903d5475ee4f5748055a14326f22eec82ac3187f4426dca6d8a49dae113c4d58",
+          "suffix": "Now it is incumbent on business to help monitor how well relevant government agencies are fulfilling this function and to provide well-thought-",
+          "text": "As welcome as this development is to the local and foreign business communities operating in Taiwan, the Join platform will be truly meaningful only if both government officials and the private sector utilize it to the fullest. On the government side, the Executive Yuan on January 10 issued instructions to the government agencies under its jurisdiction to post all proposed regulatory initiatives on the Join platform (as well as on their own websites if they wish), allow the promised 60 days for public comment, and provide their overall response to the public feedback at the end of that period."
+        },
+        "id": "8be62ba2d43f636ac50ba6c0723f09b291a458b87c598503b42dfaa02d620069",
+        "quote": "the Executive Yuan on January 10 issued instructions to the government agencies under its jurisdiction to post all proposed regulatory initiatives on the Join platform (as well as on their own websites if they wish), allow the promised 60 days for public comment, and provide their overall response to the public feedback at the end of that period.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://transparenciacolombia.org.co/algo-tiene-que-pasar-cuarto-informe-sobre-el-escandalo-de-la-ungrd-avances-y-retos/": {
+    "checked": "2026-08-29",
+    "document_sha256": "f3a9e61fd6e7b0e01de9b6a181101210005543770b12eab12f28c9100586c693",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": "\u00a1Algo tiene que pasar! Cuarto informe sobre el esc\u00e1ndalo de la UNGRD: avances y retos",
+          "sha256": "da16c13e8ace58ed8ef1f50951c7f4c5219b4562629e8c865165118d469ebf0f",
+          "suffix": "Estos informes buscan dar cuenta de los avances en los procesos de sanci\u00f3n del caso de corrupci\u00f3n de la UNGRD, al tiempo que permiten identificar los",
+          "text": "Bogot\u00e1 D.C., 20 de marzo de 2025. Transparencia por Colombia presenta una nueva versi\u00f3n del informe de seguimiento al caso de la UNGRD \u201c\u00a1Algo tiene que pasar!\u201d. Estos informes buscan dar cuenta de los avances en los procesos de sanci\u00f3n del caso de corrupci\u00f3n de la UNGRD, al tiempo que permiten identificar los escenarios en los que no se presentan avances en la investigaci\u00f3n."
+        },
+        "id": "d1657c6e799ed382213c4e7497c35e55e9677599a25bf2c7840c018cf3d2b60b",
+        "quote": "Bogot\u00e1 D.C., 20 de marzo de 2025. Transparencia por Colombia presenta una nueva versi\u00f3n del informe de seguimiento al caso de la UNGRD \u201c\u00a1Algo tiene que pasar!\u201d.",
         "verified": true
       }
     ],
@@ -5162,6 +5737,26 @@
       }
     ],
     "manual_checked": "2026-08-22"
+  },
+  "https://vietnamnet.vn/en/bui-thi-minh-hoai-appointed-to-lead-vietnam-fatherland-front-2459124.html": {
+    "checked": "2026-08-29",
+    "document_sha256": "96950657e851a0189592a4269eacd7d17b5ff374a5f371563f2c6fdb9458b5f5",
+    "etag": "W/\"134324438039325970\"",
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": "GMT+07:00) Bui Thi Minh Hoai appointed to lead Vietnam Fatherland Front Copy link 04/11/2025 09:43 (GMT+07:00)",
+          "sha256": "a21dd7361e792f173d5c38f6f13cc5b4211ce31240c47bb171ade9bb7bc8d359",
+          "suffix": "On the morning of November 4, the Party Committee of the Vietnam Fatherland Front and Central Mass Organizations held a conference to announ",
+          "text": "The Politburo has assigned Hanoi Party Secretary Bui Thi Minh Hoai to lead the Party Committee of the Vietnam Fatherland Front and Central Mass Organizations for the 2025 \u2013 2030 term."
+        },
+        "id": "a21dd7361e792f173d5c38f6f13cc5b4211ce31240c47bb171ade9bb7bc8d359",
+        "quote": "The Politburo has assigned Hanoi Party Secretary Bui Thi Minh Hoai to lead the Party Committee of the Vietnam Fatherland Front and Central Mass Organizations for the 2025\u20132030 term.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
   },
   "https://web.archive.org/web/20190718131041/https://policyincubator.com/home/about_us": {
     "checked": "2026-08-26",
@@ -5308,11 +5903,12 @@
     "last_modified": null
   },
   "https://wecollect.ch/ueber-uns/": {
-    "checked": "2026-08-26",
+    "checked": "2026-08-29",
     "document_sha256": "84b6a86ad8a983ced5b3b38abcc8b5acd1c0cbe05572eb2e74b212b04f040927",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-29",
         "context": {
           "prefix": "st\u00e4rkere Stimme! Die Schweizer Demokratie-Plattform hilft mit, Volksinitiativen und Referenden erfolgreich zu starten und ins Ziel zu bringen.",
           "sha256": "8e0a28a64f26b45fa4327e68277647b8ac6bbc05aaee98dc977496d5baf984fa",
@@ -5385,6 +5981,26 @@
       }
     ],
     "last_modified": null
+  },
+  "https://www.acast.com/en/blog/meet-the-podcasters-antoinette-lattouf-jan-fran": {
+    "checked": "2026-08-29",
+    "document_sha256": "298c4dba0c5f6ff1cf7292417f4d3f2b66be952e63deb2bcda447a59c48deb22",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": "e Journos, award-winning journalists Antoinette Lattouf and Jan Fran are part of a new wave of independent journalism on the rise in Australia.",
+          "sha256": "80eb641118be655598359a0c2c6baf482ff035151d0492e7feed4d595c315e1e",
+          "suffix": "We caught up with them to talk podcasting, audiences, and what makes the Etterati community tick. Acast: You\u2019ve both had extensive career",
+          "text": "Just nine months post-launch, the duo have built a loyal and engaged audience of more than 20,000 listens per week, completed a nationwide live tour, and even launched sustainably made t-shirts off the back of fan demand."
+        },
+        "id": "80eb641118be655598359a0c2c6baf482ff035151d0492e7feed4d595c315e1e",
+        "quote": "Just nine months post-launch, the duo have built a loyal and engaged audience of more than 20,000 listens per week, completed a nationwide live tour, and even launched sustainably made t-shirts off the back of fan demand.",
+        "verified": true
+      }
+    ],
+    "last_modified": "Sat, 29 Aug 2026 01:41:27 GMT"
   },
   "https://www.accountabilityrt.org/fiona-mcleod-sc-to-head-up-art/": {
     "checked": "2026-08-26",
@@ -5807,11 +6423,12 @@
     "last_modified": null
   },
   "https://www.canberra.edu.au/research/centres/cdd/about-cdd/our-history": {
-    "checked": "2026-08-26",
-    "document_sha256": "b5bc743c018c8edc1ec2e1ce8186633bb58bfc7e04f4d99df06a3e5a27692d93",
+    "checked": "2026-08-28",
+    "document_sha256": "6b75262fd1fc3678f4a2ff1d1fbcb3836e34b17a97c4feda297c413711069e8f",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-28",
         "context": {
           "prefix": "Our history The Centre was founded in 2004 at the Australian National University by John Dryzek and Simon Niemeyer.",
           "sha256": "9f2547a64d78df55c5d5907f7d11ea0169e200be08c7f247d88c4a5da82b20af",
@@ -5821,16 +6438,41 @@
         "id": "63f61418f6bdb086840adc46930793ba15107771302dc88df65958c67cd4f4dc",
         "quote": "It relocated to the University of Canberra in 2014, where it has since been consolidated and expanded through the collective efforts of its members",
         "verified": true
+      },
+      {
+        "checked": "2026-08-28",
+        "context": {
+          "prefix": "2024 2023 2022 2021 2020 2019 2018 2017 Our history",
+          "sha256": "9f2547a64d78df55c5d5907f7d11ea0169e200be08c7f247d88c4a5da82b20af",
+          "suffix": "It relocated to the University of Canberra in 2014, where it has since been consolidated and expanded through the collective efforts of its members,",
+          "text": "The Centre was founded in 2004 at the Australian National University by John Dryzek and Simon Niemeyer. It relocated to the University of Canberra in 2014, where it has since been consolidated and expanded through the collective efforts of its members, most recently under the leadership of Selen Ercan, alongside many staff, students, associates, and partners."
+        },
+        "id": "527c779188658f86ef64c59b9e1d673a448bf730522ffe4b44ed90a7dce7a91a",
+        "quote": "The Centre was founded in 2004 at the Australian National University by John Dryzek and Simon Niemeyer.",
+        "verified": true
+      },
+      {
+        "checked": "2026-08-28",
+        "context": {
+          "prefix": "s. Additional resources flowed in through ARC grants and a Future Fellowship awarded to Simon Niemeyer for his work on scaling up deliberation.",
+          "sha256": "ef474faa6be1f98dd32ad3f1994fb1e91a9772cd7bf13a25eda34ef3551ab479",
+          "suffix": "Alongside the founding group of scholars and students, Centre members in 2008 included postdoctoral research fellows Luisa Batalha, Nicole Cura",
+          "text": "In 2008, the Centre designed and delivered the first Australian Citizens\u2019 Parliament at Old Parliament House, bringing together 150 citizens from across Australia to deliberate on the question: How can Australia\u2019s political system be strengthened to serve us better?"
+        },
+        "id": "ef474faa6be1f98dd32ad3f1994fb1e91a9772cd7bf13a25eda34ef3551ab479",
+        "quote": "In 2008, the Centre designed and delivered the first Australian Citizens\u2019 Parliament at Old Parliament House, bringing together 150 citizens from across Australia to deliberate on the question: How can Australia\u2019s political system be strengthened to serve us better?",
+        "verified": true
       }
     ],
     "last_modified": null
   },
   "https://www.cddwestafrica.org/about-us/": {
-    "checked": "2026-08-26",
+    "checked": "2026-08-28",
     "document_sha256": "d81dbafc05febd7eba432d0c3d8459ae92b9160665305e1347fb3336520a65c5",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-28",
         "context": {
           "prefix": "HIS About the Centre for Democracy & Development (CDD-West Africa) SHARE THIS",
           "sha256": "39f16719c192f7b17c396e2daff9c54a393dc48d63a425d0e96c0863a672ec03",
@@ -5839,6 +6481,18 @@
         },
         "id": "a6dd36394b455564e8b2149b566c47366b1268142c34238968b75c9f58c146d7",
         "quote": "The Centre for Democracy and Development (CDD) was established in the United Kingdom in 1997",
+        "verified": true
+      },
+      {
+        "checked": "2026-08-28",
+        "context": {
+          "prefix": "rica) SHARE THIS The Centre for Democracy and Development (CDD) was established in the United Kingdom in 1997 and",
+          "sha256": "39f16719c192f7b17c396e2daff9c54a393dc48d63a425d0e96c0863a672ec03",
+          "suffix": "The Centre was established to mobilise global opinion and resources for democratic development and provide an independent space to reflect crit",
+          "text": "The Centre for Democracy and Development (CDD) was established in the United Kingdom in 1997 and subsequently registered in Lagos \u2013 Nigeria in 1999 as an independent, not-for-profit, research, training, advocacy and capacity building organisation"
+        },
+        "id": "dd316c4a5055b6a219a061e7c2ad87d10db0ebc48d10ca58dcce952a8da58a94",
+        "quote": "subsequently registered in Lagos \u2013 Nigeria in 1999 as an independent, not-for-profit, research, training, advocacy and capacity building organisation",
         "verified": true
       }
     ],
@@ -5865,11 +6519,12 @@
     "manual_checked": "2026-08-22"
   },
   "https://www.code4japan.org/aboutus": {
-    "checked": "2026-08-26",
+    "checked": "2026-08-29",
     "document_sha256": "76bc2e9826958dbba007a79591879f3434820300b2550781fb4a557ca7cae82b",
-    "etag": "W/\"c1115e3bd7c8a23718539d0adc9c28d8\"",
+    "etag": "W/\"86106f67359871ad0ad9a711cd005096\"",
     "evidence": [
       {
+        "checked": "2026-08-29",
         "context": {
           "prefix": "\u6cd5\u4eba\u5354\u8cdb \u5bc4\u4ed8 Overview \u56e3\u4f53\u6982\u8981 \u56e3\u4f53\u540d \u4e00\u822c\u793e\u56e3\u6cd5\u4eba\u30b3\u30fc\u30c9\u30fb\u30d5\u30a9\u30fc\u30fb\u30b8\u30e3\u30d1\u30f3 \u304a\u554f\u3044\u5408\u308f\u305b\u5148 \u304a\u554f\u3044\u5408\u308f\u305b\u30d5\u30a9\u30fc\u30e0",
           "sha256": "da27dacd83bcf74aa79100c2a63503c93e8217cf7c6d094e3842e322ffe289f3",
@@ -5940,6 +6595,26 @@
     ],
     "last_modified": "Wed, 26 Aug 2026 10:38:28 GMT"
   },
+  "https://www.communityindependentsproject.org/blog/the-second-national-community-independents-convention-august-2022": {
+    "checked": "2026-08-28",
+    "document_sha256": "95595702574d1290361046f07eb366e0b487face916c1984f1ea9ee848a90369",
+    "etag": "W/\"bcc83cdcd66c03ec3578b4e0d46c7b3a--gzip\"",
+    "evidence": [
+      {
+        "checked": "2026-08-28",
+        "context": {
+          "prefix": "unity Independents Convention, August 2022 4 Sept Written By CIP Team by Alana Johnson",
+          "sha256": "10aab1fb5bcc7069c43e3a8deaef9a1412280d7b14bcc5f5a6ba8a9d60c76aa3",
+          "suffix": "What ensued was the formation of Voices for Indi, the election and re-election of Cathy McGowan as the Community Independent member for Indi, Helen H",
+          "text": "The \u201cEmpowered Communities: Next Steps\u201d Convention marks 10 years since Cathy McGowan called together of group of people to talk about what could be done about the parlous state of democracy in the electorate of Indi. What ensued was the formation of Voices for Indi, the election and re-election of Cathy McGowan as the Community Independent member for Indi, Helen Haines holding the seat in the 2019 election and Zali Steggall winning the Sydney seat of Warringah. 2021/22 saw the blossoming of the Community Independent movement in electorates across Australia, with some 38 \u2018Voices 4\u2019 type groups formed and Community Independent candidates standing in 24 federal electorates."
+        },
+        "id": "89337ac58de02c64d93e3143f400a0852eb2a0efe126e3b22e7136a91a4011fb",
+        "quote": "The \u201cEmpowered Communities: Next Steps\u201d Convention marks 10 years since Cathy McGowan called together of group of people to talk about what could be done about the parlous state of democracy in the electorate of Indi.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
   "https://www.councilwatch.com.au": {
     "checked": "2026-08-26",
     "document_sha256": "11fd3db63d2eef89fc031a0379b41e09044ccbdbb9e27a16feb244fb7cf0d61b",
@@ -5954,6 +6629,26 @@
         },
         "id": "f7cdf9d106d78051f754ba20069af51f09bfe1a7276a473f5c5b246b51a4a53f",
         "quote": "Registered since 2001.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://www.councilwatch.com.au/post/national-council-census-blows-the-doors-off-town-hall": {
+    "checked": "2026-08-29",
+    "document_sha256": "409cd4d3fc1dfe4ef8b097a650017febf89bcf384a5bb58fa058403b72a1a248",
+    "etag": "W/\"a4202a2ebdffe02183888f29f991b9ed\"",
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": "Rated NaN out of 5 stars.",
+          "sha256": "6beea1c020c257fb7578761d930d2f7ec5e628cec3a2a07bc1f2b91bdac2dd41",
+          "suffix": "Around 5,000 participants nationwide have had your say. This is not a m",
+          "text": "The first results from the National Council Census 2026 are in - and they are savage."
+        },
+        "id": "6beea1c020c257fb7578761d930d2f7ec5e628cec3a2a07bc1f2b91bdac2dd41",
+        "quote": "The first results from the National Council Census 2026 are in - and they are savage.",
         "verified": true
       }
     ],
@@ -6133,6 +6828,26 @@
     ],
     "last_modified": "Wed, 26 Aug 2026 11:15:42 GMT"
   },
+  "https://www.demokratie.ch/blog/wecollect-ist-gerettet": {
+    "checked": "2026-08-29",
+    "document_sha256": "224af54b9c48ec0435c249cbac8fd371bcef964f368bb90b536f8aff8e20a3c6",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": "Wir k\u00f6nnen aufatmen: Dank \u00fcber 4\u2019000 Unterst\u00fctzer:innen bleibt WeCollect als Plattform f\u00fcr Volksinitiativen und Referenden erhalten.",
+          "sha256": "0df987ea6ea4bf23e621cbea0b02c2005a7f18b8641a20ba3add01f12f4b4036",
+          "suffix": "Mit diesem starken R\u00fcckenwind startet WeCollect ins neue Jahr. Bis heute haben 4\u2019079 Menschen die Ret",
+          "text": "Wir k\u00f6nnen aufatmen: Dank \u00fcber 4\u2019000 Unterst\u00fctzer:innen bleibt WeCollect als Plattform f\u00fcr Volksinitiativen und Referenden erhalten. In zwei Monaten sind die n\u00f6tigen 250\u2019000 Franken zusammengekommen, um das Defizit des laufenden Jahres zu decken und den Betrieb bis Ende M\u00e4rz 2025 zu sichern. Mit diesem starken R\u00fcckenwind startet WeCollect ins neue Jahr."
+        },
+        "id": "e5547f44afacfbf5d62b942f09e08dd59e291335c02f135f8ba2ac9c02b0206b",
+        "quote": "In zwei Monaten sind die n\u00f6tigen 250\u2019000 Franken zusammengekommen, um das Defizit des laufenden Jahres zu decken und den Betrieb bis Ende M\u00e4rz 2025 zu sichern.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
   "https://www.designingopendemocracy.com/blog/2016/12/19/inaugural-designing-open-democracy-meeting/": {
     "checked": "2026-08-26",
     "document_sha256": "4d10870f9dbff0ce1a01dc75c80077ae59fdb26e5b7354467c53034ab8047bd2",
@@ -6250,6 +6965,66 @@
     ],
     "last_modified": null
   },
+  "https://www.eisa.org/eisa-enhances-pan-african-parliaments-capacity-for-democratic-oversight-through-au-election-observation-training/": {
+    "checked": "2026-08-29",
+    "document_sha256": "edeeaddc3b62af02881a5f742fa6a99c089bd29574a4d4cd21f2b9802ec4309c",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": "through AU Election Observation Training Categories Elections 20 November 2025 20 November 2025 By EISA",
+          "sha256": "a8e86fa5081dc9bf6ad2611b5ae5947fffd451d04a21e98fc14be15dae013995",
+          "suffix": "The training, attended by over forty PAP Members and Secretariat staff, forms part of EISA\u2019s broader mandate to strengthen continental democratic gov",
+          "text": "The Electoral Institute for Sustainable Democracy in Africa (EISA), in partnership with the African Union Commission\u2019s Department of Political Affairs, Peace and Security (DPAPS) through its Democracy and Elections Unit (DEU), successfully delivered a three-day Election Observation Training for Members of the Pan-African Parliament (PAP) from 12 \u2013 14 November 2025 in Pretoria, South Africa. The training, attended by over forty PAP Members and Secretariat staff, forms part of EISA\u2019s broader mandate to strengthen continental democratic governance by building the technical capacity of regional and continental bodies involved in election oversight."
+        },
+        "id": "ce385c9077504d13dea9992fd8851d4497561f70495f98d9de9499eac5b7c0ae",
+        "quote": "The Electoral Institute for Sustainable Democracy in Africa (EISA), in partnership with the African Union Commission\u2019s Department of Political Affairs, Peace and Security (DPAPS) through its Democracy and Elections Unit (DEU), successfully delivered a three-day Election Observation Training for Members of the Pan-African Parliament (PAP) from 12\u201314 November 2025 in Pretoria, South Africa.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://www.elcomercio.com/actualidad/politica/marlon-vargas-gana-la-presidencia-de-la-conaie-tras-imponerse-a-leonidas-iza/": {
+    "checked": "2026-08-29",
+    "document_sha256": "d53fc27795611975c0d8a938c66808535d782a8587a879d8851ec1275553d0eb",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": "a Conaie tras imponerse a Leonidas Iza Conaie eligi\u00f3 a su nuevo presidente entre m\u00e1s de 1 400 votantes de las bases ind\u00edgenas del pa\u00eds",
+          "sha256": "9aef5b308e29c9fd49f65a76a2dc79a257498350a119ee12509235e49bcaf1e2",
+          "suffix": "M\u00e1s noticias Retrasos en la reparaci\u00f3n de la tuber\u00eda afectan el suministro de agua en el sur de Quito Estados Unidos procesar\u00e1 a",
+          "text": "Marlon Vargas fue electo como nuevo presidente del Consejo de Gobierno de la Confederaci\u00f3n de Nacionalidades Ind\u00edgenas del Ecuador (Conaie), tras vencer a Leonidas Iza, presidente saliente, en las elecciones internas realizadas este 20 de julio de 2025."
+        },
+        "id": "9aef5b308e29c9fd49f65a76a2dc79a257498350a119ee12509235e49bcaf1e2",
+        "quote": "Marlon Vargas fue electo como nuevo presidente del Consejo de Gobierno de la Confederaci\u00f3n de Nacionalidades Ind\u00edgenas del Ecuador (Conaie), tras vencer a Leonidas Iza, presidente saliente, en las elecciones internas realizadas este 20 de julio de 2025.",
+        "verified": true
+      }
+    ],
+    "last_modified": "Sat, 29 Aug 2026 01:25:00 GMT"
+  },
+  "https://www.elpais.com.co/economia/colombia-se-destaco-en-davos-2026-organizacion-movilizatorio-recibio-premio-a-la-innovacion-social-2110.html": {
+    "checked": "2026-08-29",
+    "document_sha256": "534b49216b674d233d44ad36a7359dd556ced5fe8ae9bf1aea56f399e4918dbc",
+    "etag": "W/\"391a3-pGKWDW12SOwz9olrsPF3LfQKyIQ\"",
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": "arios y l\u00edderes de poder global, una organizaci\u00f3n nacida en Colombia logr\u00f3 abrirse paso con una propuesta construida desde la ciudadan\u00eda.",
+          "sha256": "c4b789e5b712c13b3f4f8b8975d8c20b80131edde9a49034b7a7dde6ddfa879e",
+          "suffix": "Este hecho la convierte en la primera organizaci\u00f3n colombiana en obtener este premio en su categor\u00eda. El galard\u00f3n fue entregado a Juliana",
+          "text": "Se trata de la organizaci\u00f3n Movilizatorio que recibi\u00f3 el Schwab Foundation Social Innovation Award 2026, uno de los reconocimientos m\u00e1s importantes del mundo en innovaci\u00f3n y emprendimiento social, entregado en alianza con el Foro Econ\u00f3mico Mundial durante su Reuni\u00f3n Anual en Davos, Suiza. Este hecho la convierte en la primera organizaci\u00f3n colombiana en obtener este premio en su categor\u00eda."
+        },
+        "id": "6d6fb2889c3fedafe5c9c1c8a7147ef95d75e692a8c45b27c37599c81a7de9ff",
+        "quote": "Se trata de la organizaci\u00f3n Movilizatorio que recibi\u00f3 el Schwab Foundation Social Innovation Award 2026, uno de los reconocimientos m\u00e1s importantes del mundo en innovaci\u00f3n y emprendimiento social, entregado en alianza con el Foro Econ\u00f3mico Mundial durante su Reuni\u00f3n Anual en Davos, Suiza.",
+        "verified": true
+      }
+    ],
+    "last_modified": "Sat, 29 Aug 2026 02:07:05 GMT"
+  },
   "https://www.folio.org.au/event-4941291": {
     "checked": "2026-08-26",
     "document_sha256": "d5597fc74b49abbd5925d93ebcb56dd97d62762c50c3e579f3573558db0f46b8",
@@ -6365,11 +7140,12 @@
     "last_modified": null
   },
   "https://www.govtech.com/civic/New-Global-Civic-Tech-Group-Emerges-from-The-Omidyar-Group.html": {
-    "checked": "2026-08-26",
+    "checked": "2026-08-29",
     "document_sha256": "d2fbab176845a73461ab9faa65399b24ab5755065889e98cb08db29382baa7ab",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-29",
         "context": {
           "prefix": ", Luminate, a global philanthropic organization, has emerged from Omidyar Network\u2019s long-standing governance and citizen engagement initiative.",
           "sha256": "5739cf6dbe8712a5009711e87e8ab0803df92b1c7c79276d3d8ba6ce59d733fe",
@@ -6378,6 +7154,26 @@
         },
         "id": "b760e0c84485e81c48f2e2736d61b2b8c93b021ba2280b9c00eabb9487273a25",
         "quote": "Officially launched in recent weeks, Luminate aims to fund projects and organizations that can drive changes that fall into one of four categories: civic empowerment, data and digital rights, transparency and independent media.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://www.helenclark.foundation/facing-up-to-our-future": {
+    "checked": "2026-08-29",
+    "document_sha256": "6758b437b62c2761fa1ebf97397302e976b20e12cf0456d72c239b99907cf400",
+    "etag": "W/\"inn306w2hk5a0h\"",
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": "Emeritus Professor Peter Davis Forewords by Rt Hon Helen Clark and Professor Toeolesulusulu Damon Salesa",
+          "sha256": "a3ea4d40d3f92b51289a17288ce943e3dda81dd7a37ecc01258e3d9f6861181e",
+          "suffix": "Edited by Emeritus Professor Peter Davis, the collection ranges widely, covering issues as diverse as climate change and the energy transition, demog",
+          "text": "Facing Up to Our Future: Challenges and Choices for New Zealand brings together 21 of the country's leading thinkers to confront the long-term pressures shaping the nation's next decades. Edited by Emeritus Professor Peter Davis, the collection ranges widely, covering issues as diverse as climate change and the energy transition, demographics, the cost of living, housing and home ownership, health, environmental decline, fiscal sustainability, infrastructure, transparency and democracy, race relations and the Crown \u2013 M\u0101ori relationship, and the future of Pacific communities in Aotearoa. Its central argument is that these are not passing storms to be ridden out on the country's traditional \u201cshe'll be right\u201d optimism, but decades-long structural challenges that no single government can solve alone."
+        },
+        "id": "1b1549f878f1311e26a5b847b9b9c45292076d738dadd473b7f4ca67d2ed3d22",
+        "quote": "Facing Up to Our Future: Challenges and Choices for New Zealand brings together 21 of the country's leading thinkers to confront the long-term pressures shaping the nation's next decades.",
         "verified": true
       }
     ],
@@ -6437,11 +7233,12 @@
     "last_modified": null
   },
   "https://www.icnl.org/resources/civic-freedom-monitor/rwanda": {
-    "checked": "2026-08-26",
-    "document_sha256": "bc1e85d034a4f11e86b45aac63336392191b189b3e3950edafd893eca4f21e31",
+    "checked": "2026-08-29",
+    "document_sha256": "eb135fa24bf597445ee4620667b2cc12db396b376a0860fb576c1be4cef5fe6b",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-29",
         "context": {
           "prefix": "receipt of provisional permit from local authority (collaboration letter from the District). There are also excessive documentation requirements.",
           "sha256": "b3bdb7ecb644bffa1bf4b7516d2c69833b80f69cacb5e7cd80aedc931dc77a39",
@@ -6454,6 +7251,20 @@
       }
     ],
     "last_modified": null
+  },
+  "https://www.indailysa.com.au/news/archive/2016/11/11/inside-the-chaos-and-bias-of-the-citizens-jury": {
+    "checked": "2026-08-29",
+    "document_sha256": "725772b132f4a80fdd05d747ccf679d746a31c649d2ee585f36de9ba0d028e0e",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "id": "160408d0fca467365059c5fcd27283eb3d70c5b877df27fb2acd68994faf6f1f",
+        "quote": "a citizens\u2019 jury established by Premier Jay Weatherill has just concluded. It provided advice to the State Government on the question: \u201cUnder what circumstances, if any, could South Australia pursue the opportunity to store and dispose of nuclear waste from other countries?\u201d ... including the organising body, democracyCo",
+        "verified": true
+      }
+    ],
+    "last_modified": "Sat, 29 Aug 2026 01:41:55 GMT"
   },
   "https://www.influencewatch.org/non-profit/healthy-democracy/": {
     "checked": "2026-08-26",
@@ -6509,13 +7320,12 @@
     "last_modified": null
   },
   "https://www.institutoupdate.org.br/quem-somos/": {
-    "blocked": "HTTP_403",
-    "blocked_since": "2026-08-28",
-    "checked": "2026-08-26",
-    "document_sha256": "21bdaad2c08b77cfc9be85577e4951bfdbcf1d234443e2c5ebdf79e1369a9226",
+    "checked": "2026-08-29",
+    "document_sha256": "5b8616cf50ca1e0d45d6ee1f1bf254d7843990bac65f8e5df6bcac8af5c8e711",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-29",
         "context": {
           "prefix": "Projetos Midiateca es pt en Da Am\u00e9rica Latina para todo o Sul Global",
           "sha256": "ce7de03943e79e28f9fd0e1cb206901aabd883e35b18d25e115c697936d8d906",
@@ -6572,9 +7382,27 @@
     ],
     "last_modified": null
   },
+  "https://www.janaagraha.org/i-change-my-city/": {
+    "checked": "2026-08-29",
+    "document_sha256": "8584310a0a279afddfbfdff7e04fa571b91fac8c09a1783fb961d25e8ea1a29a",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": "als to connect with civic agencies. IChangeMycity.com tries to address this problem by being a seamless bridge between government and citizens.",
+          "sha256": "78ca62c799e558a3ab4998fc3380900109906f3a0707e640369aa3c37ffffdd7",
+          "suffix": "ICMyC has also been instrumental in taking the city budget to people by providing information on how much funds have been allocated to Wards and Cons",
+          "text": "Since its inception in Bangalore in 2012, ICMyC has helped in addressing problems like garbage disposal, poor road conditions, street safety and security related issues. ICMyC has also been instrumental in taking the city budget to people by providing information on how much funds have been allocated to Wards and Constituencies and how the same has been utilised."
+        },
+        "id": "472f306a2a2f3b67714505385089f88b353f2458f68ce1547cc7518a9dc4d662",
+        "quote": "Since its inception in Bangalore in 2012, ICMyC has helped in addressing problems like garbage disposal, poor road conditions, street safety and security related issues.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
   "https://www.jornada.com.mx/2006/01/03/index.php?article=003n1pol&section=politica": {
-    "blocked": "HTTP_403",
-    "blocked_since": "2026-08-28",
     "checked": "2026-08-26",
     "document_sha256": "35451413dd98f92e350f7fa2132f11697ab3e4567e60a0bb52ef10096d9e2601",
     "etag": null,
@@ -6593,12 +7421,38 @@
     ],
     "last_modified": "Wed, 26 Aug 2026 11:13:25 GMT"
   },
+  "https://www.labsus.org/2026/04/assisi-2026-la-bellezza-di-stare-insieme/": {
+    "checked": "2026-08-29",
+    "document_sha256": "4e8a8944035f90cb45a53ac6120a799935f642a97e2205b1b95186be2f6f4196",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "id": "128dbf3d398207251cdaab6fee1ff2044425e400f14b132c500f734e28131195",
+        "quote": "Anche quest\u2019anno ci siamo ritrovati ad Assisi per la seconda edizione del \"Festival dell\u2019Amministrazione condivisa dei beni comuni\", dal 26 al 28 marzo, con l\u2019obiettivo di creare e rendere sempre pi\u00f9 solide le relazioni fra cittadini, istituzioni, enti pubblici e privati, Terzo settore e organizzazioni collettive.",
+        "verified": false
+      },
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": "istrazione condivisa dei beni comuni. Dibattiti, lavoro di gruppo, eventi culturali per favorire scambi, relazioni, elaborazione politica",
+          "sha256": "24a9d9d082bb6a1f541c22de6ecf51a32355edef48a06aa137a62b5c139f5a91",
+          "suffix": "Al Teatro Lyrick e nel centro storico di Assisi oltre 350 persone provenienti da tutta Italia -sindaci e amministratori pubblici, studiosi, giuristi,"
+        },
+        "id": "3fd9c803bc65f8b1131988cfa390fda0b2a0fe4bfc8eb50a9e202ccedb1dfda9",
+        "quote": "Anche quest\u2019anno ci siamo ritrovati ad Assisi per la seconda edizione del \u201cFestival dell\u2019Amministrazione condivisa dei beni comuni\u201d, dal 26 al 28 marzo, con l\u2019obiettivo di creare e rendere sempre pi\u00f9 solide le relazioni fra cittadini, istituzioni, enti pubblici e privati, Terzo settore e organizzazioni collettive.",
+        "verified": true
+      }
+    ],
+    "last_modified": "Tue, 25 Aug 2026 16:41:12 GMT"
+  },
   "https://www.labsus.org/chi-siamo/": {
-    "checked": "2026-08-26",
+    "checked": "2026-08-29",
     "document_sha256": "041e714816932802e02786ab83492a53a491e31c04ed717f12c0d85ec5f3b075",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-29",
         "context": {
           "prefix": "Chi siamo",
           "sha256": "e1fde2cce5c1c2c169de201bbc72f56013fc9be23a1a46259023f63de009ca0d",
@@ -6611,6 +7465,46 @@
       }
     ],
     "last_modified": "Tue, 07 Jul 2026 09:28:55 GMT"
+  },
+  "https://www.lamestream.com.au/exclusive-how-israel-weapons-and-greed-drove-jeffrey-epsteins-mongolia-obsession/": {
+    "checked": "2026-08-29",
+    "document_sha256": "4b9233b3585846d820e25127f7a83d6ae104b06b3d169a42c2b4d60f7fa6135e",
+    "etag": "W/\"1d8ee-Nw5kGwwRmlMAEBm3RnM74Uw52OQ\"",
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": "Articles \u2014 Epstein Files Exclusive: Why Did Epstein Want to be on the Mongolia Board? Greed, Weapons and Israel",
+          "sha256": "39573583823565955f0916f45d260658d95e7fe244d2568951bb58db37c29abc",
+          "suffix": ", and Scott Mitchell, and Osman Faruqi 6 February 2026. 11:57 AM 12 min read \ud835\udd4f Share on Facebook Share on Pi",
+          "text": "For years, Jeffrey Epstein used his connections to build a network of influence aimed at Mongolia. Now Lamestream can reveal what drove his obsession."
+        },
+        "id": "39573583823565955f0916f45d260658d95e7fe244d2568951bb58db37c29abc",
+        "quote": "For years, Jeffrey Epstein used his connections to build a network of influence aimed at Mongolia. Now Lamestream can reveal what drove his obsession.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://www.lawfaremedia.org/article/the-hcj-strikes-back-israel-s-supreme-court-pulls-the-plug-on-judicial-reform": {
+    "checked": "2026-08-29",
+    "document_sha256": "56dc1c4c46800611be3fda6cd692d6d35576cb450f8d407e6eb7598efc1355bb",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": "certainly have a long-lasting effect on Israeli constitutional law, as well as on the country\u2019s political future. The Reasonableness Case",
+          "sha256": "7ca509947d81d867ddbae75cef8a70e8384698e2a685b82fa3e8c3fdc7f7d4a9",
+          "suffix": "As discussed in detail here, the petitioners in the case asked the HCJ to strike down an amendment to a basic law, removing the power of Israeli cour",
+          "text": "The most important of the two judgments is the Movement for Quality Government in Israel v. the Knesset judgment issued on Jan. 1 on the reasonableness constitutional amendment. As discussed in detail here, the petitioners in the case asked the HCJ to strike down an amendment to a basic law, removing the power of Israeli courts to use the \u201cpatently unreasonable\u201d doctrine when judicially reviewing executive branch decisions taken at the ministerial level. The challenged law passed on July 26, 2023, as an amendment to the Basic Law: Adjudication."
+        },
+        "id": "22cf397c42e4246c2d3e0d372c0f3e00b1f324f2b4ff0eb5b7354af2fb40bca0",
+        "quote": "The most important of the two judgments is the Movement for Quality Government in Israel v. the Knesset judgment issued on Jan. 1 on the reasonableness constitutional amendment.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
   },
   "https://www.lcps-lebanon.org/en/about": {
     "checked": "2026-08-26",
@@ -6801,8 +7695,6 @@
     "last_modified": null
   },
   "https://www.mcguinnessinstitute.org/about-us/history/": {
-    "blocked": "HTTP_403",
-    "blocked_since": "2026-08-28",
     "checked": "2026-08-26",
     "document_sha256": "7d0f0d9039bd2e75a08aa7517b2d6376ed42d244451d0300900f73ab868c8aa9",
     "etag": null,
@@ -6833,8 +7725,6 @@
     "last_modified": null
   },
   "https://www.mcguinnessinstitute.org/research-projects/civics-nz/": {
-    "blocked": "HTTP_403",
-    "blocked_since": "2026-08-28",
     "checked": "2026-08-26",
     "document_sha256": "b2278eee18be373e122cc90349d4c215415230719b1d8e665917a2e8638d4966",
     "etag": null,
@@ -6873,11 +7763,12 @@
     "last_modified": "Wed, 26 Aug 2026 11:54:05 GMT"
   },
   "https://www.mmzy.org.cn/mmgk/jianjie/11796.aspx": {
-    "checked": "2026-08-26",
+    "checked": "2026-08-28",
     "document_sha256": "c8fdc591d274c06f9417201e9b5c6eec7e44e88931bf0cbb04e2fde335218b14",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-28",
         "context": {
           "prefix": "tp://www.mmzy.org.cn [\u5927] [\u5c0f] 2023-02-09 \u4e2d\u56fd\u6c11\u4e3b\u540c\u76df\u662f\u4e3b\u8981\u7531\u6587\u5316\u6559\u80b2\u4ee5\u53ca\u76f8\u5173\u7684\u79d1\u5b66\u6280\u672f\u9886\u57df\u9ad8\u3001\u4e2d\u7ea7\u77e5\u8bc6\u5206\u5b50\u7ec4\u6210\u7684\uff0c\u5177\u6709\u653f\u6cbb\u8054\u76df\u7279\u70b9\u7684\uff0c\u63a5\u53d7\u4e2d\u56fd\u5171\u4ea7\u515a\u9886\u5bfc\u3001\u540c\u4e2d\u56fd\u5171\u4ea7\u515a\u901a\u529b\u5408\u4f5c\uff0c\u8fdb\u6b65\u6027\u4e0e\u5e7f\u6cdb\u6027\u76f8\u7edf\u4e00\u7684\u4e2d\u56fd\u7279\u8272\u793e\u4f1a\u4e3b\u4e49\u53c2\u653f\u515a\u3002",
           "sha256": "f4bd3fd3b32f0c1cb42d485a26ed67a2e99278d96b879b0d4527463f89fe1a0a",
@@ -7100,11 +7991,12 @@
     "manual_checked": "2026-08-22"
   },
   "https://www.oaf.org.au/2022/03/23/senator-for-nsw-andrew-bragg-threatens-openaustralia-foundation-with-legal-action/": {
-    "checked": "2026-08-26",
+    "checked": "2026-08-29",
     "document_sha256": "896464ad95de397d8a71073c47f810b2e68decccc6b1cf7dc23fac27c1f1360d",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-29",
         "context": {
           "prefix": "rs. The legal threat Now back to where they are threatening to sue us under Australian Consumer Law. For this we defer to the letter that",
           "sha256": "d29f03044da8e598f3eeb34d7ac6f647fe999c30fb763f295c66e4d61773149a",
@@ -7345,6 +8237,26 @@
     ],
     "last_modified": "Wed, 26 Aug 2026 11:51:41 GMT"
   },
+  "https://www.pr.com/press-release/729330": {
+    "checked": "2026-08-29",
+    "document_sha256": "b43d9295e650bf2d40c74ad19dd6bd63146e8c4d2027a6500268a1c2c6665def",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": "rm and vote cyptocurrency. Get Email Alert RSS San Francisco, CA, September 10, 2017 --(PR.com)--",
+          "sha256": "f7616fcb1165938cc4c6890854dde5fcaa3bd948ce7fd92151c50b3409830473",
+          "suffix": "The nonprofit and its open source software are featured in the recent editions of New Scientist (\u201cBlockchain Voting App Puts Democracy in the Hands o",
+          "text": "San Francisco, CA, September 10, 2017 --(PR.com)-- Democracy Earth Foundation (\u201cDemocracy.Earth,\u201d \u201cDEF\u201d) today released its white paper \u201cThe Social Smart Contract\u201d describing the technology behind its blockchain-based voting platform \u201cSovereign.\u201d The nonprofit and its open source software are featured in the recent editions of New Scientist (\u201cBlockchain Voting App Puts Democracy in the Hands of the People\u201d) and Futurism (\u201cA New Blockchain App Is Poised to Radically Change How People Vote\u201d)"
+        },
+        "id": "2cc86c145e708af6e21592915ebdc9242efaa313acb517c6b461c9d417415c75",
+        "quote": "Democracy Earth Foundation (\u201cDemocracy.Earth,\u201d \u201cDEF\u201d) today released its white paper \u201cThe Social Smart Contract\u201d describing the technology behind its blockchain-based voting platform \u201cSovereign.\u201d",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
   "https://www.prediki.com/meta/en/Legal-information": {
     "checked": "2026-08-26",
     "document_sha256": "d16a90e0a3ab9c013c82b610ce69f4c46ae95405dabcf8fbc9eaf952b7cbb2c9",
@@ -7543,6 +8455,26 @@
     ],
     "last_modified": null
   },
+  "https://www.rgb.rw/1/about-rgb": {
+    "checked": "2026-08-29",
+    "document_sha256": "601c32c4f6b523fd0b523d828233381d8b913c868c67bba7e3a9916a2f561908",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": "About RGB Senior management Employee of the Year Organization structure About RGB",
+          "sha256": "3787952415643a1f6255a149ca58ef4b8d5b5987de3ec149a0d18f511c0bc5db",
+          "suffix": "RGB is independent and doesn't receive instructions from any other institution in exercising its mission. RGB submits its Annual Report and Action Pl",
+          "text": "The Rwanda Governance Board (RGB) is a public institution established by law N\u00b056/2016 of 16/12/2016, generally mandated to promote good governance principles and monitor service delivery across public and private sector institutions as well as Civil Society Organizations. RGB is independent and doesn't receive instructions from any other institution in exercising its mission. RGB submits its Annual Report and Action Plan to the President of the Republic and to the Parliament, Both Chambers, with a Copy to the President of the Supreme Court and Prime Minister."
+        },
+        "id": "3b0505322e7e7b25a2fbf8a174128f31fdfd8301d9513405465652274d62f445",
+        "quote": "The Rwanda Governance Board (RGB) is a public institution established by law N\u00b056/2016 of 16/12/2016, generally mandated to promote good governance principles and monitor service delivery across public and private sector institutions as well as Civil Society Organizations.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
   "https://www.science.org/doi/10.1126/science.adq2852": {
     "archive_checked": "2026-08-28",
     "archive_url": "http://web.archive.org/web/20251212073459/https://www.science.org/doi/10.1126/science.adq2852",
@@ -7556,6 +8488,26 @@
       }
     ],
     "manual_checked": "2026-08-22"
+  },
+  "https://www.sitra.fi/en/articles/sitras-statement-on-the-european-democracy-shield-initiative-of-the-european-commission/": {
+    "checked": "2026-08-29",
+    "document_sha256": "3a675b49c40fe5d1c700c5d1435a9639a5321a67acdb53af3e9e9d36681664b5",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": "ean\u2026 Article Sitra\u2019s statement on the European Democracy Shield initiative of the European Commission",
+          "sha256": "0e3b296adc942db9d09b6470918d771d90200b2f413fff37bc0a96b9e4b81fff",
+          "suffix": "Kirjoittaja Hannu-Pekka Ik\u00e4heimo Programme Director, Democratic Innovations Ilkka R\u00e4s\u00e4",
+          "text": "To scale up participatory democracy and make it mainstream at all levels of governance, stronger European commitment is needed to foster European Civic Tech. Sitra proposes the creation of a European Civic Tech Hub."
+        },
+        "id": "0e3b296adc942db9d09b6470918d771d90200b2f413fff37bc0a96b9e4b81fff",
+        "quote": "To scale up participatory democracy and make it mainstream at all levels of governance, stronger European commitment is needed to foster European Civic Tech. Sitra proposes the creation of a European Civic Tech Hub.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
   },
   "https://www.socentral.no/aktuelt": {
     "checked": "2026-08-26",
@@ -7601,8 +8553,6 @@
     "last_modified": "Wed, 26 Aug 2026 11:22:17 GMT"
   },
   "https://www.sortitionfoundation.org/amplifying_voices_on_housing": {
-    "blocked": "HTTP_403",
-    "blocked_since": "2026-08-28",
     "checked": "2026-08-26",
     "document_sha256": "dc20bba6d1bbf2a5d9d1533884eb5aaee40056a861c17fbb549c996394b6dcf9",
     "etag": null,
@@ -7622,8 +8572,6 @@
     "last_modified": null
   },
   "https://www.sortitionfoundation.org/australia_update": {
-    "blocked": "HTTP_403",
-    "blocked_since": "2026-08-28",
     "checked": "2026-08-26",
     "document_sha256": "0aa0aca991c6e863dfbdb89bd988ce3dcb9dd93fbb80c74ae9a7b4596f1186bc",
     "etag": null,
@@ -7700,8 +8648,6 @@
     "last_modified": null
   },
   "https://www.sortitionfoundation.org/history": {
-    "blocked": "HTTP_403",
-    "blocked_since": "2026-08-28",
     "checked": "2026-08-26",
     "document_sha256": "9c745e73756808de096aa3655b071384c2d8c1571041595613228cd9f39a8eef",
     "etag": null,
@@ -7777,6 +8723,26 @@
     ],
     "last_modified": null
   },
+  "https://www.strongercharities.org.au/2024/06/26/mr-advocacy-bill/": {
+    "checked": "2026-08-28",
+    "document_sha256": "7fc3254916fc50c55a26bf4d09b9d0bd99439a576673ee6de1cd23903b87b37a",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-28",
+        "context": {
+          "prefix": "s Media Join the alliance June 26, 2024 FUTURE PROOFING THE ROLE OF AUSTRALIAN CHARITY ADVOCACY",
+          "sha256": "7984389ebd550442c9aff4edf02a390faa36b3e3b140578ca01471d88eac7a34",
+          "suffix": "The Alliance, in collaboration with leading charity experts, has developed a Bill that would resolve urgent issues facing the sector. The Bill",
+          "text": "Today, the Stronger Charities Alliance, a coalition of nearly 140 charities, is launching critical legislation to protect the sector\u2019s right to engage in advocacy. The Alliance, in collaboration with leading charity experts, has developed a Bill that would resolve urgent issues facing the sector."
+        },
+        "id": "3dc12031c31e55adaf44650eea0cc58a49c1a781949c0641ed38f5e10141ce88",
+        "quote": "Today, the Stronger Charities Alliance, a coalition of nearly 140 charities, is launching critical legislation to protect the sector\u2019s right to engage in advocacy.",
+        "verified": true
+      }
+    ],
+    "last_modified": "Fri, 28 Aug 2026 14:43:43 GMT"
+  },
   "https://www.strongercharities.org.au/2025/02/11/media-release-charities-call-for-critical-amendments-to-the-electoral-reform-bill/": {
     "checked": "2026-08-26",
     "document_sha256": "fff175ae940f24007d214b18846979074f59e93115af213d310ec860c2802f67",
@@ -7810,6 +8776,26 @@
         },
         "id": "46ccffac9e18bfa51ab10733c173cb9ae7161bf5f553df9c958b8fefa8fafdb8",
         "quote": "the Habermas Machine does not offer participants the chance to explain their feelings, and hence develop empathy with those of a different view",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://www.themoscowtimes.com/2025/11/27/supreme-court-designates-navalnys-anti-corruption-group-a-terrorist-organization-a91256": {
+    "checked": "2026-08-29",
+    "document_sha256": "c9456c1bde94e16d7d10424c614574ef5ed5936b2b0260122d58d5f2865dc47a",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": ", 2025 Alexi Navalny\u2019s widow Yulia Navalnaya and fellow activist Leonid Volkov. belgium24.eu",
+          "sha256": "3f594b1cc9282821524b9271158726db67ca53ece1015ce9206c44ccf9986c95",
+          "suffix": "The ruling specifically targeted Anti-Corruption Foundation (ACF), Inc., a U.S.-registered entity that has served as the main vehicle for Naval",
+          "text": "Russia\u2019s Supreme Court on Thursday designated Alexei Navalny\u2019s Anti-Corruption Foundation as a terrorist organization, escalating a yearslong crackdown on the late opposition leader\u2019s network and exposing its members and supporters to even harsher penalties."
+        },
+        "id": "3f594b1cc9282821524b9271158726db67ca53ece1015ce9206c44ccf9986c95",
+        "quote": "Russia\u2019s Supreme Court on Thursday designated Alexei Navalny\u2019s Anti-Corruption Foundation as a terrorist organization, escalating a yearslong crackdown on the late opposition leader\u2019s network and exposing its members and supporters to even harsher penalties.",
         "verified": true
       }
     ],
@@ -7990,11 +8976,12 @@
     "last_modified": "Wed, 26 Aug 2026 11:24:40 GMT"
   },
   "https://www.ycombinator.com/companies/democracy-earth": {
-    "checked": "2026-08-26",
+    "checked": "2026-08-29",
     "document_sha256": "64104d8daab13cb2523f85696563b81f169bea7bbbbbc8fe39ad09edc004fb64",
-    "etag": "W/\"4c0d2b37d1d210e75ff2fe9494025f9a\"",
+    "etag": "W/\"62d096e4722e7a7ad565ce346d0daca5\"",
     "evidence": [
       {
+        "checked": "2026-08-29",
         "context": {
           "prefix": "nd Singularity University (2016). We did research for Alphabet, World Economic Forum and the University of Berkeley.",
           "sha256": "c90ae5009c68609175d2ffdf4bbd2a6e9e059cbef1a72cfb6e371fb42fc70d88",

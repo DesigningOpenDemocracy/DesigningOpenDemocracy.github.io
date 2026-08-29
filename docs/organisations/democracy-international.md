@@ -69,7 +69,7 @@ activity:
       EU CERV Framework Partner 2026-2028
   rss:
     date: 2026-08-28
-    note: "RSS feed active"
+    note: RSS feed active
     url: https://www.democracy-international.org/rss.xml
     checked: 2026-08-28
   scrape:

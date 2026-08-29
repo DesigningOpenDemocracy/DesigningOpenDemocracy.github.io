@@ -37,6 +37,21 @@ events:
     Times).
   proof_level: high
   url_checked: '2026-08-17'
+- date: '2025-05-30'
+  title: Held a planning day setting priorities for the year ahead, including tiny-house
+    production support and "Neighbourocracy" picnics
+  url: https://reclaim.org.au/the-year-ahead-for-the-lismore-peoples-assembly/
+  quote: The team behind the LPA recently got together to see where our energy lies
+    for the year ahead. At a planning day attended by 17 humans and 2 Canines (with
+    plenty of Turkeys and ducks out in the yard!) we came up with a few priority projects
+    we are keen on
+  note: Priorities included supporting local tiny house production, erecting 2022
+    flood-level signage, "Neighbourocracy" neighbourhood picnics explicitly modelled
+    on Rojava's democratic communes, and a regular market stall presence.
+  proof_level: high
+  url_checked: '2026-08-29'
+  notable: false
+  type: other
 activity:
   dod:
     checked: 2026-07-16

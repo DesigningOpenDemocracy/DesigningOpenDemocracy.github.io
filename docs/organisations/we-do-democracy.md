@@ -51,7 +51,7 @@ activity:
     note: Site live and actively publishing as of August 2026
   rss:
     date: 2026-06-17
-    note: "Latest post: Hvordan bygger man stærk frivillighed i klimaorganisationer?"
+    note: 'Latest post: Hvordan bygger man stærk frivillighed i klimaorganisationer?'
     url: https://www.wedodemocracy.dk/hvordan-bygger-man-staerk-frivillighed-i-klimaorganisationer/
     checked: 2026-08-28
 last_checked: '2026-08-09'

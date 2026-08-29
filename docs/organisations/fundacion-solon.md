@@ -51,7 +51,7 @@ activity:
       policy
   rss:
     date: 2026-08-26
-    note: "Latest post: Detrás del humo de La Asunta"
+    note: 'Latest post: Detrás del humo de La Asunta'
     url: https://fundacionsolon.org/detras-del-humo-de-la-asunta/
     checked: 2026-08-28
 last_checked: '2026-07-05'

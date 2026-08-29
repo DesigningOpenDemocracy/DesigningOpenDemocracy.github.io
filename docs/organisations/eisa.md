@@ -34,6 +34,25 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Founding of the organisation
+- date: '2025-11-12'
+  title: Delivered election observation training for Pan-African Parliament members
+    in Pretoria
+  url: https://www.eisa.org/eisa-enhances-pan-african-parliaments-capacity-for-democratic-oversight-through-au-election-observation-training/
+  quote: The Electoral Institute for Sustainable Democracy in Africa (EISA), in partnership
+    with the African Union Commission’s Department of Political Affairs, Peace and
+    Security (DPAPS) through its Democracy and Elections Unit (DEU), successfully
+    delivered a three-day Election Observation Training for Members of the Pan-African
+    Parliament (PAP) from 12–14 November 2025 in Pretoria, South Africa.
+  note: Attended by over forty PAP Members and Secretariat staff; part of EISA's broader
+    mandate building continental bodies' technical capacity for election oversight,
+    aligning parliamentarians' understanding with African Union Election Observation
+    Mission (AUEOM) methodology and code of conduct.
+  proof_level: high
+  url_checked: '2026-08-29'
+  end_date: '2025-11-14'
+  notable: medium
+  notable_reason: Continental capacity-building training for AU election observers
+  type: training
 activity:
   dod:
     checked: 2026-07-05
@@ -41,7 +60,8 @@ activity:
     note: Site confirmed active; news article dated 23 June 2026
   rss:
     date: 2026-08-26
-    note: "Latest post: From Coalition Chaos to Democratic Stability: Reforming South Africa’s Local Gov"
+    note: 'Latest post: From Coalition Chaos to Democratic Stability: Reforming South
+      Africa’s Local Gov'
     url: https://www.eisa.org/from-coalition-chaos-to-democratic-stability-reforming-south-africas-local-government/
     checked: 2026-08-28
 last_checked: '2026-07-05'

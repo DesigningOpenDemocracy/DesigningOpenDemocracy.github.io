@@ -23,6 +23,23 @@ location:
   name: Santiago, Chile
   precision: city
 events:
+- date: '2025-10-29'
+  title: Named among the "100 Think Tanks to Watch 2025" by On Think Tanks — the only
+    Chilean think tank on the list
+  url: https://espaciopublico.cl/en/espacio-publico-fue-destacado-entre-los-100-think-tanks-to-watch-2025/
+  quote: Espacio Público fue incluido entre los 100 Think Tanks to Watch 2025, una
+    iniciativa de On Think Tanks que destaca a centros de estudio de todo el mundo
+    por su innovación, colaboración e impacto.
+  note: 'Translation: "Espacio Público was included among the 100 Think Tanks to Watch
+    2025, an On Think Tanks initiative that highlights research centres worldwide
+    for their innovation, collaboration and impact." The page states Espacio Público
+    is the only Chilean think tank in this edition. A peer-nominated recognition,
+    not a ranking.'
+  proof_level: high
+  url_checked: '2026-08-29'
+  notable: medium
+  notable_reason: International peer recognition
+  type: recognition
 - date: '2026-08-20'
   title: Book launch 'Los dueños de la libertad' by Soledad Vallejos — Santiago
   url: https://espaciopublico.cl/eventos/
@@ -35,7 +52,8 @@ events:
 activity:
   rss:
     date: 2026-08-26
-    note: "Latest post: Más valor desde el cobre: expertos analizan desafíos para el desarrollo producti"
+    note: 'Latest post: Más valor desde el cobre: expertos analizan desafíos para
+      el desarrollo producti'
     url: https://espaciopublico.cl/mas-valor-desde-el-cobre-expertos-analizan-desafios-para-el-desarrollo-productivo-en-chile/
     checked: 2026-08-28
 last_checked: '2026-08-09'

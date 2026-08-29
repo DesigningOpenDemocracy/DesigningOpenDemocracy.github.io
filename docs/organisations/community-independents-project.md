@@ -21,6 +21,22 @@ location:
   name: Melbourne, Australia
   precision: city
 rss_feed: https://www.communityindependentsproject.org/blog/rss.xml
+events:
+- date: '2022-08-01'
+  title: 'Hosted the second national Community Independents Convention ("Empowered
+    Communities: Next Steps")'
+  url: https://www.communityindependentsproject.org/blog/the-second-national-community-independents-convention-august-2022
+  quote: 'The “Empowered Communities: Next Steps” Convention marks 10 years since
+    Cathy McGowan called together of group of people to talk about what could be done
+    about the parlous state of democracy in the electorate of Indi.'
+  note: Month-only date (title/URL say "August 2022"; the recap post itself is dated
+    4 September 2022). Marked the 10th anniversary of Cathy McGowan's original Indi
+    meeting that started the movement.
+  proof_level: high
+  url_checked: '2026-08-29'
+  notable: true
+  notable_reason: Flagship national convention
+  type: conference
 activity:
   manual:
     checked: 2026-06-07

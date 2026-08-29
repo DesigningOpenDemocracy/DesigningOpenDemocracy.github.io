@@ -29,6 +29,21 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Founding of the organisation
+- date: '2017-09-10'
+  title: Released "The Social Smart Contract" white paper, detailing its Sovereign
+    blockchain voting platform
+  url: https://www.pr.com/press-release/729330
+  quote: Democracy Earth Foundation (“Democracy.Earth,” “DEF”) today released its
+    white paper “The Social Smart Contract” describing the technology behind its blockchain-based
+    voting platform “Sovereign.”
+  note: Sovereign is Democracy Earth's open-source blockchain voting/identity platform,
+    still referenced on the org's own page today. Coverage at the time also appeared
+    in New Scientist and Futurism per the same press release.
+  proof_level: high
+  url_checked: '2026-08-29'
+  notable: true
+  notable_reason: Platform/product launch
+  type: publication
 activity:
   manual:
     checked: 2026-06-09

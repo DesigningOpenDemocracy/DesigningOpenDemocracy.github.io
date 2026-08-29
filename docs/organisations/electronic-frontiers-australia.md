@@ -85,7 +85,8 @@ activity:
     url: https://securitybrief.com.au/story/electronic-frontiers-australia-joins-internet-control-fight
   rss:
     date: 2026-08-27
-    note: "Latest post: Feeding the Machine: How Copyright Became a Weapon Against AI Training"
+    note: 'Latest post: Feeding the Machine: How Copyright Became a Weapon Against
+      AI Training'
     url: https://efa.org.au/copyright-ai-training/
     checked: 2026-08-28
 last_checked: '2026-08-21'

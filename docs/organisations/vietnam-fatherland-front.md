@@ -29,6 +29,21 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Founding of the organisation
+- date: '2025-11-04'
+  title: Bùi Thị Minh Hoài appointed to lead the Front for the 2025–2030 term, succeeding
+    Đỗ Văn Chiến
+  url: https://vietnamnet.vn/en/bui-thi-minh-hoai-appointed-to-lead-vietnam-fatherland-front-2459124.html
+  quote: The Politburo has assigned Hanoi Party Secretary Bui Thi Minh Hoai to lead
+    the Party Committee of the Vietnam Fatherland Front and Central Mass Organizations
+    for the 2025–2030 term.
+  note: General Secretary To Lam personally presented the appointment decision. Hoài
+    stepped down as Hanoi Party Secretary to take up the role; she assumed the formal
+    Chairwoman title 7 November 2025 per earlier web-search corroboration.
+  proof_level: high
+  url_checked: '2026-08-29'
+  notable: medium
+  notable_reason: Top leadership transition within the single-party consultative body
+  type: other
 activity:
   manual:
     checked: 2026-06-07
@@ -44,7 +59,7 @@ activity:
     url: https://mattran.org.vn
   sitemap:
     date: 2026-08-28
-    note: "Page last modified (from sitemap)"
+    note: Page last modified (from sitemap)
     url: https://mattran.org.vn/sitemaps.xml
     checked: 2026-08-28
 last_checked: '2026-07-19'

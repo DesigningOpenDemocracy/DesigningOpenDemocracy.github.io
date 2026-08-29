@@ -31,6 +31,20 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Founding of the organisation
+- date: '2009-10-22'
+  title: Publicly launched Vota Inteligente, its flagship voter-information platform,
+    ahead of the Chilean presidential election
+  url: https://en.wikipedia.org/wiki/Fundaci%C3%B3n_Ciudadano_Inteligente
+  quote: Vota Inteligente was publicly launched on October 22 of that same year in
+    preparation for the Chilean Presidential elections.
+  note: '"That same year" refers to 2009, the org''s founding year (registered as
+    an NGO 22 December 2009; Vota Inteligente launched about two months earlier, in
+    the run-up to the election).'
+  proof_level: high
+  url_checked: '2026-08-29'
+  notable: true
+  notable_reason: Flagship platform launch
+  type: launch
 activity:
   rss:
     checked: 2026-08-28

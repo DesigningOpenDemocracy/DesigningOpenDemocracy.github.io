@@ -34,6 +34,22 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Platform/product launch
+- date: '2022-03-23'
+  title: Published Senator Andrew Bragg's legal-action threat letter and rebutted
+    it point by point, defending its independence
+  url: https://www.oaf.org.au/2022/03/23/senator-for-nsw-andrew-bragg-threatens-openaustralia-foundation-with-legal-action/
+  quote: Michael Bradley from Marque Lawyers wrote. He is generously helping us pro-bono.
+  note: Published despite the letter's "confidential" marking, after Bragg's lawyer
+    threatened action under the Australian Consumer Law for "misleading and deceptive
+    conduct" over how the site characterised his voting record. The foundation's legal
+    advice ("Our legal advice is that Senator Bragg has no cause of action") is quoted
+    in this page's own footnote [^oaf-bragg].
+  proof_level: high
+  url_checked: '2026-08-29'
+  notable: true
+  notable_reason: Defended editorial independence against a legal threat from a sitting
+    Senator
+  type: other
 activity:
   manual:
     checked: 2026-06-22

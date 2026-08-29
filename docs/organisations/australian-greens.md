@@ -82,7 +82,7 @@ activity:
       into Australian parties' democracy-reform records.
   rss:
     date: 2026-08-28
-    note: "Latest post: Merri-Bek Campaign Office Warming!"
+    note: 'Latest post: Merri-Bek Campaign Office Warming!'
     url: https://greens.org.au/node/3037061
     checked: 2026-08-28
 last_checked: '2026-08-15'

@@ -32,6 +32,21 @@ events:
   url_checked: '2026-08-12'
   notable: true
   notable_reason: Platform/product launch
+- date: '2026-02-06'
+  title: Published an Epstein Files investigation into Jeffrey Epstein's advisory
+    role in Mongolia
+  url: https://www.lamestream.com.au/exclusive-how-israel-weapons-and-greed-drove-jeffrey-epsteins-mongolia-obsession/
+  quote: For years, Jeffrey Epstein used his connections to build a network of influence
+    aimed at Mongolia. Now Lamestream can reveal what drove his obsession.
+  note: Part of a multi-part investigation (with a companion piece on a 2013 dinner
+    between Epstein and Ehud Barak); also named former Australian PM Kevin Rudd as
+    a fellow board member on Epstein's Mongolia advisory board (Rudd denies meeting
+    Epstein), per this page's own body text.
+  proof_level: high
+  url_checked: '2026-08-29'
+  notable: true
+  notable_reason: Original investigative journalism naming a former PM
+  type: publication
 activity:
   dod:
     checked: 2026-08-02
@@ -40,7 +55,7 @@ activity:
       research
   sitemap:
     date: 2026-08-28
-    note: "Page last modified (from sitemap)"
+    note: Page last modified (from sitemap)
     url: https://www.lamestream.com.au/sitemap.xml
     checked: 2026-08-28
 last_checked: '2026-08-02'

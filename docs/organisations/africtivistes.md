@@ -33,6 +33,19 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Founding of the organisation
+- date: '2024-02-01'
+  title: Filed suit with the ECOWAS Court of Justice over repeated Senegalese government
+    internet shutdowns
+  url: https://fr.wikipedia.org/wiki/AfricTivistes
+  quote: En février 2024, AfricTivistes a saisi la Cour de justice de la CEDEAO pour
+    dénoncer les coupures répétées imposées d'Internet par les autorités sénégalaises.
+  note: Month-only date, per the source ("En février 2024"). The CEDEAO/ECOWAS Court
+    of Justice hears cross-border human rights claims across West African member states.
+  proof_level: high
+  url_checked: '2026-08-28'
+  notable: medium
+  notable_reason: Legal action against government internet shutdowns
+  type: milestone
 activity:
   rss:
     checked: 2026-08-28

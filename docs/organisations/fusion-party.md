@@ -30,6 +30,21 @@ events:
   url_checked: '2026-08-15'
   notable: true
   notable_reason: Merger of organisations
+- date: '2025-01-01'
+  title: Renamed to "FUSION | Planet Rescue | Whistleblower Protection | Innovation"
+    after forming an alliance with the Australian Progressives and Democracy First
+  url: https://en.wikipedia.org/wiki/Fusion_Party_(Australia)
+  quote: Fusion underwent a name change to FUSION | Planet Rescue | Whistleblower
+    Protection | Innovation in January 2025.
+  note: Month-only date estimate ("January 2025" per source). AEC approved the name
+    change 16 January 2025 (per earlier web-search corroboration of the AEC's own
+    Statement of Reasons). The party contested the 2025 federal election under this
+    ballot name, fielding 24 candidates.
+  proof_level: high
+  url_checked: '2026-08-29'
+  notable: medium
+  notable_reason: Party rebrand following a new alliance
+  type: other
 activity:
   dod:
     checked: 2026-08-15
@@ -39,7 +54,7 @@ activity:
     url: https://en.wikipedia.org/wiki/Fusion_Party_(Australia)
   sitemap:
     date: 2026-08-28
-    note: "Page last modified (from sitemap)"
+    note: Page last modified (from sitemap)
     url: https://www.fusionparty.org.au/sitemap_index.xml
     checked: 2026-08-28
 last_checked: '2026-08-15'

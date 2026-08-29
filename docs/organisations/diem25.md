@@ -55,7 +55,7 @@ activity:
     url: https://diem25.org/news/
   rss:
     date: 2026-08-28
-    note: "RSS feed active"
+    note: RSS feed active
     url: https://diem25.org/news/feed
     checked: 2026-08-28
   scrape:

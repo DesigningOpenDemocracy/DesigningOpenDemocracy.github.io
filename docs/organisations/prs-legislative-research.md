@@ -32,6 +32,20 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Founding of the organisation
+- date: '2013-01-01'
+  title: Won NDTV's Indian of the Year Award in the Public Service category, shared
+    with the Association for Democratic Reforms
+  url: https://en.wikipedia.org/wiki/PRS_Legislative_Research
+  quote: NDTV’s Indian of the Year Award in the Public Service category for the year
+    2013.
+  note: Also won the Marico Innovation Foundation's Social Innovation Award (2010)
+    and was named Business Standard's Social Entrepreneur of the Year (2019), per
+    the same page's "Recognition" section.
+  proof_level: high
+  url_checked: '2026-08-29'
+  notable: medium
+  notable_reason: National recognition shared with a peer accountability organisation
+  type: recognition
 activity:
   manual:
     checked: 2026-06-07
