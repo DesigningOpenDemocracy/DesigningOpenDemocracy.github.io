@@ -32,6 +32,21 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Founding of the organisation
+- date: '2025-05-30'
+  title: Proposed a European Civic Tech Hub in its statement on the European Commission's
+    Democracy Shield initiative
+  url: https://www.sitra.fi/en/articles/sitras-statement-on-the-european-democracy-shield-initiative-of-the-european-commission/
+  quote: To scale up participatory democracy and make it mainstream at all levels
+    of governance, stronger European commitment is needed to foster European Civic
+    Tech. Sitra proposes the creation of a European Civic Tech Hub.
+  note: Sitra focused its statement on the Democracy Shield's fourth theme (fostering
+    citizens' participation and engagement), also urging close alignment with the
+    EU's Data Union, Digital Europe and AI initiatives.
+  proof_level: high
+  url_checked: '2026-08-29'
+  notable: medium
+  notable_reason: Formal policy input to a major EU democracy initiative
+  type: other
 activity:
   dod:
     checked: 2026-08-09

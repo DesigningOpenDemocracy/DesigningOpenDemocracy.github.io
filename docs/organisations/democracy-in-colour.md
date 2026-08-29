@@ -35,6 +35,22 @@ events:
   url_checked: '2026-08-22'
   notable: true
   notable_reason: Platform/product launch
+- date: '2026-07-29'
+  title: Welcomed the Federal Court's dismissal of Pauline Hanson's appeal against
+    a racial discrimination finding
+  url: https://democracyincolour.org/democracy-in-colour-welcomes-court-ruling-upholding-racial-discrimination-finding-against-pauline-hanson/
+  quote: Democracy in Colour welcomes the Federal Court’s decision to uphold the racial
+    discrimination finding against One Nation leader Pauline Hanson. ... The court
+    dismissed Hanson’s appeal on the ruling that found she breached the racial discrimination
+    act against Greens Senator Mehreen Faruqi on social media in September 2022.
+  note: Statement by National Director Noura Mansour, described as drawing "a clear
+    boundary, demonstrating that racial abuse is not acceptable in our parliament
+    or anywhere else in our community."
+  proof_level: high
+  url_checked: '2026-08-29'
+  notable: medium
+  notable_reason: Advocacy response to a significant court ruling
+  type: other
 activity:
   dod:
     checked: 2026-07-05

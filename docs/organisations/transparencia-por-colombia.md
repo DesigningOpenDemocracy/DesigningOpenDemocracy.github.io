@@ -32,6 +32,23 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Founding of the organisation
+- date: '2025-03-20'
+  title: Published its fourth monitoring report on the UNGRD corruption scandal
+  url: https://transparenciacolombia.org.co/algo-tiene-que-pasar-cuarto-informe-sobre-el-escandalo-de-la-ungrd-avances-y-retos/
+  quote: Bogotá D.C., 20 de marzo de 2025. Transparencia por Colombia presenta una
+    nueva versión del informe de seguimiento al caso de la UNGRD “¡Algo tiene que
+    pasar!”.
+  note: 'Translation: "Bogotá D.C., 20 March 2025. Transparencia por Colombia presents
+    a new version of its monitoring report on the UNGRD case, ''Something has to happen!''."
+    Part of a recurring report series tracking the disaster-relief agency corruption
+    scandal (46.8 billion pesos misappropriated from water-tanker procurement for
+    La Guajira); this edition covered pre-agreements with former officials Sneyder
+    Pinilla and Olmedo López.'
+  proof_level: high
+  url_checked: '2026-08-29'
+  notable: medium
+  notable_reason: Ongoing accountability monitoring of a major corruption scandal
+  type: publication
 activity:
   dod:
     checked: 2026-08-09

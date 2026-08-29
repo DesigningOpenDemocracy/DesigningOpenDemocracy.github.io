@@ -1264,6 +1264,20 @@
     ],
     "last_modified": null
   },
+  "https://democracyincolour.org/democracy-in-colour-welcomes-court-ruling-upholding-racial-discrimination-finding-against-pauline-hanson/": {
+    "checked": "2026-08-29",
+    "document_sha256": "baa0c9ae85f284d36f3ad5cba3a1559ef02b4e70f845bf2de0ede60bd50aaf95",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "id": "d1357d9fe8039b617f39bfd51b2b5df9ef61105770137234c2ae5bcbe0fbcead",
+        "quote": "Democracy in Colour welcomes the Federal Court\u2019s decision to uphold the racial discrimination finding against One Nation leader Pauline Hanson. ... The court dismissed Hanson\u2019s appeal on the ruling that found she breached the racial discrimination act against Greens Senator Mehreen Faruqi on social media in September 2022.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
   "https://digidemlab.org/en/about/": {
     "checked": "2026-08-29",
     "document_sha256": "0313bdfb2858973c5b5604ca8142bb0c21817682f485330469baec1d3e91659a",
@@ -2800,11 +2814,12 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/Movement_for_a_Democratic_Society": {
-    "checked": "2026-08-26",
+    "checked": "2026-08-29",
     "document_sha256": "6782844aa5036eb1e0983fae8038b5f46acd43a231b0308d7b35ec16cd4560e1",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-29",
         "context": {
           "prefix": ": Tevgera Civaka Demokrat\u00eek, TEV-DEM; Arabic: \u062d\u0631\u0643\u0629 \u0627\u0644\u0645\u062c\u062a\u0645\u0639 \u0627\u0644\u062f\u064a\u0645\u0642\u0631\u0627\u0637\u064a; Classical Syriac: \u0719\u0718\u0725\u0710 \u0715\u071f\u0722\u072b\u0710 \u0715\u071d\u0721\u0729\u072a\u0710\u071b\u071d\u0710, romanized: Zaw'o d'Kensho Demoqra\u1e6doyo)",
           "sha256": "723407162fd857fad45f78285f40182125f7e4062780cce6fb8f02477a411989",
@@ -3315,11 +3330,12 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/SITRA": {
-    "checked": "2026-08-26",
+    "checked": "2026-08-29",
     "document_sha256": "cfcb1c3677c327642eceb4f9cf3465cf255bea824ba69aa5405be3fcbe592bfe",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-29",
         "context": {
           "prefix": "mprove the level of education or research, or study future development scenarios\". Sitra functions both as a think tank and as an investment company.",
           "sha256": "865af2677fb94943d56fa89c9abc2a53dfb4878534e5596a14ac4eea3c8712ca",
@@ -3514,11 +3530,12 @@
     "last_modified": null
   },
   "https://es.wikipedia.org/wiki/Transparencia_Internacional#Transparencia_por_Colombia:~:text=Transparencia%20por%20Colombia%2C%20la%20Delegaci%C3%B3n%20Nacional%20de%20Transparencia%20Internacional%20en%20Colombia%2C%20surge%20en%201998": {
-    "checked": "2026-08-26",
+    "checked": "2026-08-29",
     "document_sha256": "8d0794ce4e58a153a04991ac5cc3725f216805fa1c4d57bd4411f9c300651a59",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-29",
         "context": {
           "prefix": "idad de los Programas Sociales, a trav\u00e9s del cual las dependencias federales y estatales rinden cuentas de sus programas sociales. === Colombia ===",
           "sha256": "68b301d6f8259e0aadf888ae3ca1146e4a93d73682dd868ce3f0ae8314758f69",
@@ -4910,11 +4927,12 @@
     "last_modified": null
   },
   "https://oaf.org.au/2014/10/21/they-vote-for-you/": {
-    "checked": "2026-08-26",
+    "checked": "2026-08-29",
     "document_sha256": "e7cafbb369cb0740279b5143e4c9a34d5038e6d810b4e9a9845ac52512eacb9b",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-29",
         "context": {
           "prefix": "the Senate and try to make sense of it all. This is not something anyone can do easily. Parliament should be easy, and accessible. That is why",
           "sha256": "4b1e7122c01530f06f8fb4fef9bf4fc5cca13534c4972e185d4ec8aab6a19b7c",
@@ -4926,7 +4944,7 @@
         "verified": true
       }
     ],
-    "last_modified": "Wed, 26 Aug 2026 11:49:38 GMT"
+    "last_modified": null
   },
   "https://ok.org.br/noticia/operacao-serenata-de-amor-5-anos-do-maior-projeto-de-inovacao-civica-brasileiro/": {
     "checked": "2026-08-29",
@@ -5426,6 +5444,26 @@
     ],
     "last_modified": null
   },
+  "https://rojavainformationcenter.org/background/political-system-documents/": {
+    "checked": "2026-08-29",
+    "document_sha256": "d7896e6399a920e50b6b54440de0ca6b516af8ddeb5303824f1e3be1bc3a503b",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": "th and East Syria General Documents Proposal by the Self-Administration of Rojava for a solution to the conflict in Syria. May 2014",
+          "sha256": "6f4ae87170b2d18d4ada87a7abaf39c64c4b38e72c1d0780a06c9eaacba60c58",
+          "suffix": "The Social contract for Rojava: Charter of the Autonomous Regions of Afrin, Jazeera, and Kobane 2014. The Social contract for the Democra",
+          "text": "Final Declaration of the Rojava \u2013 Northern Syria Democratic Federal System Constituent Assembly announcing the establishment of a federal democratic Rojava/Northern Syria, 17 March 2016."
+        },
+        "id": "6f4ae87170b2d18d4ada87a7abaf39c64c4b38e72c1d0780a06c9eaacba60c58",
+        "quote": "Final Declaration of the Rojava \u2013 Northern Syria Democratic Federal System Constituent Assembly announcing the establishment of a federal democratic Rojava/Northern Syria, 17 March 2016.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
   "https://solve.mit.edu/solutions/51507": {
     "checked": "2026-08-26",
     "document_sha256": "c68aae8614cd2bae7dff40644036508b4af1e17ac362a313b605718d2eeb6d79",
@@ -5607,6 +5645,26 @@
         },
         "id": "8be62ba2d43f636ac50ba6c0723f09b291a458b87c598503b42dfaa02d620069",
         "quote": "the Executive Yuan on January 10 issued instructions to the government agencies under its jurisdiction to post all proposed regulatory initiatives on the Join platform (as well as on their own websites if they wish), allow the promised 60 days for public comment, and provide their overall response to the public feedback at the end of that period.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://transparenciacolombia.org.co/algo-tiene-que-pasar-cuarto-informe-sobre-el-escandalo-de-la-ungrd-avances-y-retos/": {
+    "checked": "2026-08-29",
+    "document_sha256": "f3a9e61fd6e7b0e01de9b6a181101210005543770b12eab12f28c9100586c693",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": "\u00a1Algo tiene que pasar! Cuarto informe sobre el esc\u00e1ndalo de la UNGRD: avances y retos",
+          "sha256": "da16c13e8ace58ed8ef1f50951c7f4c5219b4562629e8c865165118d469ebf0f",
+          "suffix": "Estos informes buscan dar cuenta de los avances en los procesos de sanci\u00f3n del caso de corrupci\u00f3n de la UNGRD, al tiempo que permiten identificar los",
+          "text": "Bogot\u00e1 D.C., 20 de marzo de 2025. Transparencia por Colombia presenta una nueva versi\u00f3n del informe de seguimiento al caso de la UNGRD \u201c\u00a1Algo tiene que pasar!\u201d. Estos informes buscan dar cuenta de los avances en los procesos de sanci\u00f3n del caso de corrupci\u00f3n de la UNGRD, al tiempo que permiten identificar los escenarios en los que no se presentan avances en la investigaci\u00f3n."
+        },
+        "id": "d1657c6e799ed382213c4e7497c35e55e9677599a25bf2c7840c018cf3d2b60b",
+        "quote": "Bogot\u00e1 D.C., 20 de marzo de 2025. Transparencia por Colombia presenta una nueva versi\u00f3n del informe de seguimiento al caso de la UNGRD \u201c\u00a1Algo tiene que pasar!\u201d.",
         "verified": true
       }
     ],
@@ -7826,11 +7884,12 @@
     "manual_checked": "2026-08-22"
   },
   "https://www.oaf.org.au/2022/03/23/senator-for-nsw-andrew-bragg-threatens-openaustralia-foundation-with-legal-action/": {
-    "checked": "2026-08-26",
+    "checked": "2026-08-29",
     "document_sha256": "896464ad95de397d8a71073c47f810b2e68decccc6b1cf7dc23fac27c1f1360d",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-29",
         "context": {
           "prefix": "rs. The legal threat Now back to where they are threatening to sue us under Australian Consumer Law. For this we defer to the letter that",
           "sha256": "d29f03044da8e598f3eeb34d7ac6f647fe999c30fb763f295c66e4d61773149a",
@@ -8318,6 +8377,26 @@
       }
     ],
     "manual_checked": "2026-08-22"
+  },
+  "https://www.sitra.fi/en/articles/sitras-statement-on-the-european-democracy-shield-initiative-of-the-european-commission/": {
+    "checked": "2026-08-29",
+    "document_sha256": "3a675b49c40fe5d1c700c5d1435a9639a5321a67acdb53af3e9e9d36681664b5",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": "ean\u2026 Article Sitra\u2019s statement on the European Democracy Shield initiative of the European Commission",
+          "sha256": "0e3b296adc942db9d09b6470918d771d90200b2f413fff37bc0a96b9e4b81fff",
+          "suffix": "Kirjoittaja Hannu-Pekka Ik\u00e4heimo Programme Director, Democratic Innovations Ilkka R\u00e4s\u00e4",
+          "text": "To scale up participatory democracy and make it mainstream at all levels of governance, stronger European commitment is needed to foster European Civic Tech. Sitra proposes the creation of a European Civic Tech Hub."
+        },
+        "id": "0e3b296adc942db9d09b6470918d771d90200b2f413fff37bc0a96b9e4b81fff",
+        "quote": "To scale up participatory democracy and make it mainstream at all levels of governance, stronger European commitment is needed to foster European Civic Tech. Sitra proposes the creation of a European Civic Tech Hub.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
   },
   "https://www.socentral.no/aktuelt": {
     "checked": "2026-08-26",
