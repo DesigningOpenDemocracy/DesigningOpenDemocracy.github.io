@@ -35,6 +35,23 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Founding of the organisation
+- date: '2024-01-01'
+  title: Won the landmark "Reasonableness Case," striking down the government's Basic
+    Law amendment eliminating judicial review of ministerial decisions
+  url: https://www.lawfaremedia.org/article/the-hcj-strikes-back-israel-s-supreme-court-pulls-the-plug-on-judicial-reform
+  quote: The most important of the two judgments is the Movement for Quality Government
+    in Israel v. the Knesset judgment issued on Jan. 1 on the reasonableness constitutional
+    amendment.
+  note: MQG was the named petitioner. An 8-of-15-justice majority of Israel's High
+    Court of Justice struck down the amendment (passed 26 July 2023) that had eliminated
+    judicial review of the "patently unreasonable" doctrine for ministerial-level
+    executive decisions — the first time Israel's Supreme Court had ever struck down
+    a Basic Law amendment.
+  proof_level: high
+  url_checked: '2026-08-29'
+  notable: true
+  notable_reason: First-ever Israeli Supreme Court invalidation of a Basic Law amendment
+  type: other
 activity:
   dod:
     checked: 2026-07-16

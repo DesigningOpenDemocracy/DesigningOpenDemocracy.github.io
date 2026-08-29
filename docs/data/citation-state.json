@@ -2780,6 +2780,8 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/Movement_for_Quality_Government_in_Israel": {
+    "blocked": "HTTP_429",
+    "blocked_since": "2026-08-29",
     "checked": "2026-08-26",
     "document_sha256": "e12b56f60f8c5858ec4cab7a16fc6d0cd2383d66d39f066375bd93f871c92c5c",
     "etag": null,
@@ -2884,11 +2886,12 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/Nicholas_Gruen": {
-    "checked": "2026-08-26",
+    "checked": "2026-08-29",
     "document_sha256": "c6cc3560787fdc68d42cf67a2d703d47d4c1d2e2564d28f4c294e6d224d1f38c",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-29",
         "context": {
           "prefix": "roductivity Commission on which he served until the late 1990s when he joined the Business Council of Australia directing its New Directions project.",
           "sha256": "66b2c89a7be6ee16e3b0cba45b03a15412d3376812fec63ec6bed29e65b54a7e",
@@ -4330,6 +4333,26 @@
     ],
     "last_modified": "Wed, 26 Aug 2026 11:24:45 GMT"
   },
+  "https://lateraleconomics.com.au/outputs": {
+    "checked": "2026-08-29",
+    "document_sha256": "8008e4ac98a656c92fd7193c00ad68b246e68f89e78766e1656c93cfe1b446a0",
+    "etag": "W/\"9252f851408779de746dd94fd91e2e30\"",
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": "llbeing for Australia and discuss the policy alternatives. The Herald/Age - Lateral Economics (HALE) Index of Australia's Wellbeing",
+          "sha256": "36ea2a3a955bbadb78eb731ad02f2dc215615fabf75b90109c18039c1b373115",
+          "suffix": "Understanding the Value of Public Sector Information in Australia Increased access to public sector information produces many",
+          "text": "Lateral Economics has developed the Herald/Age \u2013 Lateral Economics(HALE) Index of wellbeing which builds a measure of wellbeing by correcting GDP for the numerous ways in which it fails to reflect wellbeing."
+        },
+        "id": "36ea2a3a955bbadb78eb731ad02f2dc215615fabf75b90109c18039c1b373115",
+        "quote": "Lateral Economics has developed the Herald/Age \u2013 Lateral Economics(HALE) Index of wellbeing which builds a measure of wellbeing by correcting GDP for the numerous ways in which it fails to reflect wellbeing.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
   "https://liqd.net/en/projects/meinberlin/": {
     "checked": "2026-08-26",
     "document_sha256": "5d3233ee8e4a3136a388b6b8561db16a247f07ebbe157cc5a58ef28b2e6405b9",
@@ -4363,6 +4386,26 @@
         },
         "id": "d57608b88e2c6d9b5e113c0a7fc1b6873cd230617a0f64c41e7251c0f114ae0f",
         "quote": "Liquid Democracy e.V. ist im Vereinsregister des Amtsgerichtes Charlottenburg (Berlin) unter der VR-Nummer 28939 B eingetragen. Der Liquid Democracy e.V. ist ein gemeinn\u00fctziger Verein.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://luminategroup.com/posts/news/eaisf-grant-2024": {
+    "checked": "2026-08-29",
+    "document_sha256": "0b953d0b217d3535ddc967cdb370bc54014baa00a84bec9be7ac0a173aaba3bf",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": "uminate to drive democratic accountability of AI deployment Share",
+          "sha256": "6d57ead80baf5637a151febcac7518e37131ed6a2c16503aed7284f7faf4a5b0",
+          "suffix": "The Fund is a collaboration between 14 foundations empowering civil society groups across Europe to shape AI policy and debates. This grant wil",
+          "text": "The European AI & Society Fund has received a $1 million grant from Luminate to advance its work in ensuring that Artificial Intelligence (AI) is developed and deployed in Europe in ways that prioritise the public good, human rights, and social justice."
+        },
+        "id": "6d57ead80baf5637a151febcac7518e37131ed6a2c16503aed7284f7faf4a5b0",
+        "quote": "The European AI & Society Fund has received a $1 million grant from Luminate to advance its work in ensuring that Artificial Intelligence (AI) is developed and deployed in Europe in ways that prioritise the public good, human rights, and social justice.",
         "verified": true
       }
     ],
@@ -5217,7 +5260,7 @@
     "last_modified": null
   },
   "https://reclaim.org.au/inaugural-lismore-peoples-assembly/": {
-    "checked": "2026-08-26",
+    "checked": "2026-08-29",
     "document_sha256": "b5a2ba91b9e9443a253acc4659c00e59e38792d2f78c6248bdeac7cc3587c1c6",
     "etag": null,
     "evidence": [
@@ -5234,7 +5277,7 @@
         "verified": true
       },
       {
-        "checked": "2026-08-26",
+        "checked": "2026-08-29",
         "context": {
           "prefix": "Reclaim our Recovery (ROR) say they have been pushing for robust, democratic, community involvement in the flood recovery since the start of 2022.",
           "sha256": "373bb0e4d16734a171c543938e80826235ca1a271cdef7b41f66582a057d6190",
@@ -5269,7 +5312,7 @@
     "last_modified": null
   },
   "https://reclaim.org.au/the-year-ahead-for-the-lismore-peoples-assembly/": {
-    "checked": "2026-08-26",
+    "checked": "2026-08-29",
     "document_sha256": "1e8257f69ee04eadf902cf0f7bdd03e0f5d9d005f1e3e0e2acc3b4f45ed5c6d1",
     "etag": null,
     "evidence": [
@@ -5283,6 +5326,18 @@
         },
         "id": "20e6e6902c0a0287a487e72910cf53a6f385b53c10413bfe63c121e7dee87b21",
         "quote": "Support local tiny house production (one of the solutions from the housing assembly)",
+        "verified": true
+      },
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": "been important conversations for the community and we believe coming together and talking with strangers is a critical step to getting action.",
+          "sha256": "2ad4813b3a4c5103b5d3553f9934a2a282d405f200358e6bc20fd84219d21421",
+          "suffix": ": Support local tiny house production (one of the solutions from the housing assembly) Erect 2022 Flood Signage up on Poles \u2013 if the co",
+          "text": "The team behind the LPA recently got together to see where our energy lies for the year ahead. At a planning day attended by 17 humans and 2 Canines (with plenty of Turkeys and ducks out in the yard!) we came up with a few priority projects we are keen on:"
+        },
+        "id": "ac66d3b95719c30d55ae3a90c113f94b0ecc0f25f53d5da3041cffa1953e17ba",
+        "quote": "The team behind the LPA recently got together to see where our energy lies for the year ahead. At a planning day attended by 17 humans and 2 Canines (with plenty of Turkeys and ducks out in the yard!) we came up with a few priority projects we are keen on",
         "verified": true
       }
     ],
@@ -6732,6 +6787,26 @@
     ],
     "last_modified": "Sat, 29 Aug 2026 01:25:00 GMT"
   },
+  "https://www.elpais.com.co/economia/colombia-se-destaco-en-davos-2026-organizacion-movilizatorio-recibio-premio-a-la-innovacion-social-2110.html": {
+    "checked": "2026-08-29",
+    "document_sha256": "534b49216b674d233d44ad36a7359dd556ced5fe8ae9bf1aea56f399e4918dbc",
+    "etag": "W/\"391a3-pGKWDW12SOwz9olrsPF3LfQKyIQ\"",
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": "arios y l\u00edderes de poder global, una organizaci\u00f3n nacida en Colombia logr\u00f3 abrirse paso con una propuesta construida desde la ciudadan\u00eda.",
+          "sha256": "c4b789e5b712c13b3f4f8b8975d8c20b80131edde9a49034b7a7dde6ddfa879e",
+          "suffix": "Este hecho la convierte en la primera organizaci\u00f3n colombiana en obtener este premio en su categor\u00eda. El galard\u00f3n fue entregado a Juliana",
+          "text": "Se trata de la organizaci\u00f3n Movilizatorio que recibi\u00f3 el Schwab Foundation Social Innovation Award 2026, uno de los reconocimientos m\u00e1s importantes del mundo en innovaci\u00f3n y emprendimiento social, entregado en alianza con el Foro Econ\u00f3mico Mundial durante su Reuni\u00f3n Anual en Davos, Suiza. Este hecho la convierte en la primera organizaci\u00f3n colombiana en obtener este premio en su categor\u00eda."
+        },
+        "id": "6d6fb2889c3fedafe5c9c1c8a7147ef95d75e692a8c45b27c37599c81a7de9ff",
+        "quote": "Se trata de la organizaci\u00f3n Movilizatorio que recibi\u00f3 el Schwab Foundation Social Innovation Award 2026, uno de los reconocimientos m\u00e1s importantes del mundo en innovaci\u00f3n y emprendimiento social, entregado en alianza con el Foro Econ\u00f3mico Mundial durante su Reuni\u00f3n Anual en Davos, Suiza.",
+        "verified": true
+      }
+    ],
+    "last_modified": "Sat, 29 Aug 2026 02:07:05 GMT"
+  },
   "https://www.folio.org.au/event-4941291": {
     "checked": "2026-08-26",
     "document_sha256": "d5597fc74b49abbd5925d93ebcb56dd97d62762c50c3e579f3573558db0f46b8",
@@ -6847,11 +6922,12 @@
     "last_modified": null
   },
   "https://www.govtech.com/civic/New-Global-Civic-Tech-Group-Emerges-from-The-Omidyar-Group.html": {
-    "checked": "2026-08-26",
+    "checked": "2026-08-29",
     "document_sha256": "d2fbab176845a73461ab9faa65399b24ab5755065889e98cb08db29382baa7ab",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-29",
         "context": {
           "prefix": ", Luminate, a global philanthropic organization, has emerged from Omidyar Network\u2019s long-standing governance and citizen engagement initiative.",
           "sha256": "5739cf6dbe8712a5009711e87e8ab0803df92b1c7c79276d3d8ba6ce59d733fe",
@@ -7180,6 +7256,26 @@
         },
         "id": "39573583823565955f0916f45d260658d95e7fe244d2568951bb58db37c29abc",
         "quote": "For years, Jeffrey Epstein used his connections to build a network of influence aimed at Mongolia. Now Lamestream can reveal what drove his obsession.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://www.lawfaremedia.org/article/the-hcj-strikes-back-israel-s-supreme-court-pulls-the-plug-on-judicial-reform": {
+    "checked": "2026-08-29",
+    "document_sha256": "56dc1c4c46800611be3fda6cd692d6d35576cb450f8d407e6eb7598efc1355bb",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": "certainly have a long-lasting effect on Israeli constitutional law, as well as on the country\u2019s political future. The Reasonableness Case",
+          "sha256": "7ca509947d81d867ddbae75cef8a70e8384698e2a685b82fa3e8c3fdc7f7d4a9",
+          "suffix": "As discussed in detail here, the petitioners in the case asked the HCJ to strike down an amendment to a basic law, removing the power of Israeli cour",
+          "text": "The most important of the two judgments is the Movement for Quality Government in Israel v. the Knesset judgment issued on Jan. 1 on the reasonableness constitutional amendment. As discussed in detail here, the petitioners in the case asked the HCJ to strike down an amendment to a basic law, removing the power of Israeli courts to use the \u201cpatently unreasonable\u201d doctrine when judicially reviewing executive branch decisions taken at the ministerial level. The challenged law passed on July 26, 2023, as an amendment to the Basic Law: Adjudication."
+        },
+        "id": "22cf397c42e4246c2d3e0d372c0f3e00b1f324f2b4ff0eb5b7354af2fb40bca0",
+        "quote": "The most important of the two judgments is the Movement for Quality Government in Israel v. the Knesset judgment issued on Jan. 1 on the reasonableness constitutional amendment.",
         "verified": true
       }
     ],

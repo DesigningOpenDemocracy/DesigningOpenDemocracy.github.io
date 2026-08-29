@@ -34,6 +34,23 @@ events:
   url_checked: '2026-08-20'
   notable: true
   notable_reason: Founding of the organisation
+- date: '2011-12-01'
+  title: Published the Herald/Age–Lateral Economics (HALE) Index, correcting GDP for
+    wellbeing
+  url: https://lateraleconomics.com.au/outputs
+  quote: Lateral Economics has developed the Herald/Age – Lateral Economics(HALE)
+    Index of wellbeing which builds a measure of wellbeing by correcting GDP for the
+    numerous ways in which it fails to reflect wellbeing.
+  note: Month-only date estimate — the outputs listing page itself carries no publish
+    date; per earlier web-search corroboration, the Final Report was published December
+    2011. A quarterly-updated national wellbeing index commissioned with Fairfax/Herald
+    and The Age, adjusting GDP for inequality, human capital, natural capital, and
+    health.
+  proof_level: high
+  url_checked: '2026-08-29'
+  notable: true
+  notable_reason: Flagship national wellbeing index
+  type: publication
 activity:
   manual:
     checked: 2026-06-07

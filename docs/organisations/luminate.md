@@ -34,6 +34,22 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Platform/product launch
+- date: '2024-11-25'
+  title: Gave $1 million to the European AI & Society Fund to drive democratic accountability
+    of AI deployment
+  url: https://luminategroup.com/posts/news/eaisf-grant-2024
+  quote: The European AI & Society Fund has received a $1 million grant from Luminate
+    to advance its work in ensuring that Artificial Intelligence (AI) is developed
+    and deployed in Europe in ways that prioritise the public good, human rights,
+    and social justice.
+  note: The Fund is a collaboration of 14 foundations empowering civil society groups
+    to shape AI policy across Europe. Consistent with the increasing focus on tech
+    accountability described elsewhere on this page.
+  proof_level: high
+  url_checked: '2026-08-29'
+  notable: medium
+  notable_reason: Major grant advancing the organisation's tech-accountability focus
+  type: other
 activity:
   manual:
     checked: 2026-06-07
