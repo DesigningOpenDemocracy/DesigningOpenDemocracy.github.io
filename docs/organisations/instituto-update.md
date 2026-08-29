@@ -34,6 +34,27 @@ events:
   url_checked: '2026-08-12'
   notable: true
   notable_reason: Founding of the organisation
+- date: '2025-05-22'
+  title: Hosted the first Conecta Latinas international gathering in Recife, drawing
+    ~200 leaders from 20+ countries
+  url: https://marcozero.org/recife-recebe-encontro-internacional-de-liderancas-femininas-e-lgbtqia-da-america-latina/
+  quote: Desta quinta-feira, 22 de maio, até domingo, dia 25, o Recife será palco
+    do Conecta Latinas, um encontro internacional que reunirá aproximadamente 200
+    mulheres negras, indígenas e LGBTQIA+ de mais de 20 países da América Latina e
+    Caribe. ... Promovido pelo Instituto Update em parceria com 12 organizações internacionais
+  note: 'Translation: "From this Thursday, 22 May, until Sunday, 25 May, Recife will
+    host Conecta Latinas, an international gathering bringing together approximately
+    200 Black, Indigenous and LGBTQIA+ women from more than 20 countries across Latin
+    America and the Caribbean. ... Promoted by Instituto Update in partnership with
+    12 international organisations." Also launched the first Mapeamento (mapping)
+    of political-leadership support initiatives across Latin America, identifying
+    207 initiatives, produced with the Better Politics Foundation.'
+  proof_level: high
+  url_checked: '2026-08-29'
+  end_date: '2025-05-25'
+  notable: true
+  notable_reason: First edition of the flagship Conecta Latinas gathering
+  type: conference
 activity:
   rss:
     checked: 2026-08-17

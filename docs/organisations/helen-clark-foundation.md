@@ -36,6 +36,22 @@ events:
   url_checked: '2026-08-12'
   notable: true
   notable_reason: Founding of the organisation
+- date: '2026-06-01'
+  title: Published "Facing Up to Our Future," a 21-contributor book on New Zealand's
+    long-term structural challenges ahead of the general election
+  url: https://www.helenclark.foundation/facing-up-to-our-future
+  quote: 'Facing Up to Our Future: Challenges and Choices for New Zealand brings together
+    21 of the country''s leading thinkers to confront the long-term pressures shaping
+    the nation''s next decades.'
+  note: Month-only date estimate ("June 2026" per web-search corroboration; the Foundation's
+    own page carries no publish date). Edited by Emeritus Professor Peter Davis, with
+    forewords by Helen Clark and Professor Toeolesulusulu Damon Salesa; released ahead
+    of New Zealand's November 2026 general election.
+  proof_level: high
+  url_checked: '2026-08-29'
+  notable: true
+  notable_reason: Flagship publication ahead of a general election
+  type: publication
 activity:
   sitemap:
     checked: 2026-08-17

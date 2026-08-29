@@ -32,6 +32,22 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Founding of the organisation
+- date: '2012-07-22'
+  title: Launched I Change My City (ICMyC), a civic-participation platform for reporting
+    and tracking local issues
+  url: https://www.janaagraha.org/i-change-my-city/
+  quote: Since its inception in Bangalore in 2012, ICMyC has helped in addressing
+    problems like garbage disposal, poor road conditions, street safety and security
+    related issues.
+  note: Exact launch date (22 July 2012) per earlier web-search corroboration; the
+    org's own page confirms only the year. ICMyC went on to underpin the Swachhata
+    Technology Platform, later adopted by India's Ministry of Housing and Urban Affairs
+    across 4,000+ cities.
+  proof_level: high
+  url_checked: '2026-08-29'
+  notable: true
+  notable_reason: Flagship civic-tech platform launch
+  type: launch
 activity:
   dod:
     checked: 2026-07-16

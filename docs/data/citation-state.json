@@ -2470,11 +2470,12 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/Janaagraha": {
-    "checked": "2026-08-26",
+    "checked": "2026-08-29",
     "document_sha256": "aa91fca253f585210311e6256b178c2df823d05e5c9289b145c49847bb6ecc76",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-29",
         "context": {
           "prefix": "Janaagraha Centre for Citizenship and Democracy is a Bengaluru-based non-profit working to improve the quality of life in India's cities and towns.",
           "sha256": "d6aa70e91fde60faa7f3e974b647221689066de26eb3d828feefd793518fd9a9",
@@ -3366,6 +3367,8 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/The_Helen_Clark_Foundation": {
+    "blocked": "HTTP_429",
+    "blocked_since": "2026-08-29",
     "checked": "2026-08-26",
     "document_sha256": "dde1b94f7062820d8406a099744fc03544be53fadfb5a1a0eec6d14fbd0039e2",
     "etag": null,
@@ -4317,6 +4320,20 @@
         },
         "id": "d57608b88e2c6d9b5e113c0a7fc1b6873cd230617a0f64c41e7251c0f114ae0f",
         "quote": "Liquid Democracy e.V. ist im Vereinsregister des Amtsgerichtes Charlottenburg (Berlin) unter der VR-Nummer 28939 B eingetragen. Der Liquid Democracy e.V. ist ein gemeinn\u00fctziger Verein.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://marcozero.org/recife-recebe-encontro-internacional-de-liderancas-femininas-e-lgbtqia-da-america-latina/": {
+    "checked": "2026-08-29",
+    "document_sha256": "f7a417b34bd3d4e8f676282eac65edd57e23bb5040d329589aef09f00d253d45",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "id": "614dd307d39b0a313b209b422eba326b8a271a9eabbe1bc59bceb8e719ffbd24",
+        "quote": "Desta quinta-feira, 22 de maio, at\u00e9 domingo, dia 25, o Recife ser\u00e1 palco do Conecta Latinas, um encontro internacional que reunir\u00e1 aproximadamente 200 mulheres negras, ind\u00edgenas e LGBTQIA+ de mais de 20 pa\u00edses da Am\u00e9rica Latina e Caribe. ... Promovido pelo Instituto Update em parceria com 12 organiza\u00e7\u00f5es internacionais",
         "verified": true
       }
     ],
@@ -6791,6 +6808,26 @@
     ],
     "last_modified": null
   },
+  "https://www.helenclark.foundation/facing-up-to-our-future": {
+    "checked": "2026-08-29",
+    "document_sha256": "6758b437b62c2761fa1ebf97397302e976b20e12cf0456d72c239b99907cf400",
+    "etag": "W/\"inn306w2hk5a0h\"",
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": "Emeritus Professor Peter Davis Forewords by Rt Hon Helen Clark and Professor Toeolesulusulu Damon Salesa",
+          "sha256": "a3ea4d40d3f92b51289a17288ce943e3dda81dd7a37ecc01258e3d9f6861181e",
+          "suffix": "Edited by Emeritus Professor Peter Davis, the collection ranges widely, covering issues as diverse as climate change and the energy transition, demog",
+          "text": "Facing Up to Our Future: Challenges and Choices for New Zealand brings together 21 of the country's leading thinkers to confront the long-term pressures shaping the nation's next decades. Edited by Emeritus Professor Peter Davis, the collection ranges widely, covering issues as diverse as climate change and the energy transition, demographics, the cost of living, housing and home ownership, health, environmental decline, fiscal sustainability, infrastructure, transparency and democracy, race relations and the Crown \u2013 M\u0101ori relationship, and the future of Pacific communities in Aotearoa. Its central argument is that these are not passing storms to be ridden out on the country's traditional \u201cshe'll be right\u201d optimism, but decades-long structural challenges that no single government can solve alone."
+        },
+        "id": "1b1549f878f1311e26a5b847b9b9c45292076d738dadd473b7f4ca67d2ed3d22",
+        "quote": "Facing Up to Our Future: Challenges and Choices for New Zealand brings together 21 of the country's leading thinkers to confront the long-term pressures shaping the nation's next decades.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
   "https://www.hkdc.us/biannual-report": {
     "checked": "2026-08-26",
     "document_sha256": "edfeaec31824a8fbb82ed0561fbe75553bcfa12d9284ac4d1a48e7b07acd0705",
@@ -6931,11 +6968,12 @@
     "last_modified": null
   },
   "https://www.institutoupdate.org.br/quem-somos/": {
-    "checked": "2026-08-26",
-    "document_sha256": "21bdaad2c08b77cfc9be85577e4951bfdbcf1d234443e2c5ebdf79e1369a9226",
+    "checked": "2026-08-29",
+    "document_sha256": "5b8616cf50ca1e0d45d6ee1f1bf254d7843990bac65f8e5df6bcac8af5c8e711",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-29",
         "context": {
           "prefix": "Projetos Midiateca es pt en Da Am\u00e9rica Latina para todo o Sul Global",
           "sha256": "ce7de03943e79e28f9fd0e1cb206901aabd883e35b18d25e115c697936d8d906",
@@ -6981,6 +7019,26 @@
         },
         "id": "153ff53c86858b22df96775d102645cb5eebb91159c387a2fa85100bb6be6b26",
         "quote": "acts against the ideology, sovereignty, security or public order of Pakistan",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://www.janaagraha.org/i-change-my-city/": {
+    "checked": "2026-08-29",
+    "document_sha256": "8584310a0a279afddfbfdff7e04fa571b91fac8c09a1783fb961d25e8ea1a29a",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": "als to connect with civic agencies. IChangeMycity.com tries to address this problem by being a seamless bridge between government and citizens.",
+          "sha256": "78ca62c799e558a3ab4998fc3380900109906f3a0707e640369aa3c37ffffdd7",
+          "suffix": "ICMyC has also been instrumental in taking the city budget to people by providing information on how much funds have been allocated to Wards and Cons",
+          "text": "Since its inception in Bangalore in 2012, ICMyC has helped in addressing problems like garbage disposal, poor road conditions, street safety and security related issues. ICMyC has also been instrumental in taking the city budget to people by providing information on how much funds have been allocated to Wards and Constituencies and how the same has been utilised."
+        },
+        "id": "472f306a2a2f3b67714505385089f88b353f2458f68ce1547cc7518a9dc4d662",
+        "quote": "Since its inception in Bangalore in 2012, ICMyC has helped in addressing problems like garbage disposal, poor road conditions, street safety and security related issues.",
         "verified": true
       }
     ],
