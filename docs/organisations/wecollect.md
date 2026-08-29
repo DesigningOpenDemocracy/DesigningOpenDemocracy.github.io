@@ -31,6 +31,21 @@ events:
   url_checked: '2026-08-12'
   notable: true
   notable_reason: Platform/product launch
+- date: '2024-12-18'
+  title: Ran a successful "Save WeCollect" fundraising campaign, closing a funding
+    gap threatening operations
+  url: https://www.demokratie.ch/blog/wecollect-ist-gerettet
+  quote: In zwei Monaten sind die nötigen 250’000 Franken zusammengekommen, um das
+    Defizit des laufenden Jahres zu decken und den Betrieb bis Ende März 2025 zu sichern.
+  note: 'Translation: "In two months, the needed 250,000 francs came together, covering
+    the current year''s deficit and securing operations through the end of March 2025."
+    Over 4,000 people donated to the rescue campaign, 1,755 of them first-time donors
+    to WeCollect. Run by the operating foundation, Stiftung für direkte Demokratie.'
+  proof_level: high
+  url_checked: '2026-08-29'
+  notable: medium
+  notable_reason: Community-funded rescue of the platform's operations
+  type: other
 activity:
   dod:
     checked: 2026-08-09

@@ -3475,6 +3475,8 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/Vietnam_Fatherland_Front": {
+    "blocked": "HTTP_429",
+    "blocked_since": "2026-08-29",
     "checked": "2026-08-26",
     "document_sha256": "d618309a00269a18de1fdc87d9032bf1ad9a0fa4e4c76c46f7e20f87b03344f0",
     "etag": null,
@@ -3505,6 +3507,25 @@
         },
         "id": "7119e2602c6b658dcc60b51019a44b6582063ea3485d51f2a750b32e3461314b",
         "quote": "party was founded on August 8, 2009",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://en.wikipedia.org/wiki/Your_Party_(UK)": {
+    "checked": "2026-08-29",
+    "document_sha256": "69008816b3a0deb9e41fe203a014b7d0c863ab93676dc1165781fdad9843ab5b",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": "",
+          "sha256": "496795b4df499f35177b4f850a82e744e66fc400d1084115fd46ecf2cce49f66",
+          "suffix": "The party is led by its Central Executive Committee, under a system of collective leadership. Corbyn has served as the party's parliamentary leader s"
+        },
+        "id": "bad3b92485da2140c662d8f75ff2afd2e56e7a1715efae9070e867cb8361750d",
+        "quote": "Your Party is a socialist political party in the United Kingdom announced in July 2025 by Jeremy Corbyn and Zarah Sultana. It was registered with the Electoral Commission on 30 September 2025.",
         "verified": true
       }
     ],
@@ -4389,6 +4410,26 @@
       }
     ],
     "last_modified": null
+  },
+  "https://leftfootforward.org/2025/11/everything-you-need-to-know-about-your-partys-founding-conference/": {
+    "checked": "2026-08-29",
+    "document_sha256": "0539ad15cd93770f5d79b8c1177a5e24067da9f6249af913cb5bca31d67e7090",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": "\u2019s happening there? What are the key decisions and debates? This is everything you need to know. When and where is Your Party Conference?",
+          "sha256": "56d2600d750ccb007716e5d7be3bc752889995fc6b2426d1d5cd6695c399d003",
+          "suffix": "Who will be attending Your Party Conference? Because there are currently no local parties and no branch structure exists, attendees for t",
+          "text": "Your Party\u2019s Conference is taking place from 29-30 November in Liverpool."
+        },
+        "id": "56d2600d750ccb007716e5d7be3bc752889995fc6b2426d1d5cd6695c399d003",
+        "quote": "Your Party\u2019s Conference is taking place from 29-30 November in Liverpool.",
+        "verified": true
+      }
+    ],
+    "last_modified": "Sat, 29 Aug 2026 02:21:46 GMT"
   },
   "https://liqd.net/en/projects/meinberlin/": {
     "checked": "2026-08-26",
@@ -5688,6 +5729,26 @@
     ],
     "manual_checked": "2026-08-22"
   },
+  "https://vietnamnet.vn/en/bui-thi-minh-hoai-appointed-to-lead-vietnam-fatherland-front-2459124.html": {
+    "checked": "2026-08-29",
+    "document_sha256": "96950657e851a0189592a4269eacd7d17b5ff374a5f371563f2c6fdb9458b5f5",
+    "etag": "W/\"134324438039325970\"",
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": "GMT+07:00) Bui Thi Minh Hoai appointed to lead Vietnam Fatherland Front Copy link 04/11/2025 09:43 (GMT+07:00)",
+          "sha256": "a21dd7361e792f173d5c38f6f13cc5b4211ce31240c47bb171ade9bb7bc8d359",
+          "suffix": "On the morning of November 4, the Party Committee of the Vietnam Fatherland Front and Central Mass Organizations held a conference to announ",
+          "text": "The Politburo has assigned Hanoi Party Secretary Bui Thi Minh Hoai to lead the Party Committee of the Vietnam Fatherland Front and Central Mass Organizations for the 2025 \u2013 2030 term."
+        },
+        "id": "a21dd7361e792f173d5c38f6f13cc5b4211ce31240c47bb171ade9bb7bc8d359",
+        "quote": "The Politburo has assigned Hanoi Party Secretary Bui Thi Minh Hoai to lead the Party Committee of the Vietnam Fatherland Front and Central Mass Organizations for the 2025\u20132030 term.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
   "https://web.archive.org/web/20190718131041/https://policyincubator.com/home/about_us": {
     "checked": "2026-08-26",
     "document_sha256": "78278081a9ed9f12ee99bf00da78ef2624836654e49b1b945bbd0edc195d7490",
@@ -5833,11 +5894,12 @@
     "last_modified": null
   },
   "https://wecollect.ch/ueber-uns/": {
-    "checked": "2026-08-26",
+    "checked": "2026-08-29",
     "document_sha256": "84b6a86ad8a983ced5b3b38abcc8b5acd1c0cbe05572eb2e74b212b04f040927",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-29",
         "context": {
           "prefix": "st\u00e4rkere Stimme! Die Schweizer Demokratie-Plattform hilft mit, Volksinitiativen und Referenden erfolgreich zu starten und ins Ziel zu bringen.",
           "sha256": "8e0a28a64f26b45fa4327e68277647b8ac6bbc05aaee98dc977496d5baf984fa",
@@ -6750,6 +6812,26 @@
       }
     ],
     "last_modified": "Wed, 26 Aug 2026 11:15:42 GMT"
+  },
+  "https://www.demokratie.ch/blog/wecollect-ist-gerettet": {
+    "checked": "2026-08-29",
+    "document_sha256": "224af54b9c48ec0435c249cbac8fd371bcef964f368bb90b536f8aff8e20a3c6",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": "Wir k\u00f6nnen aufatmen: Dank \u00fcber 4\u2019000 Unterst\u00fctzer:innen bleibt WeCollect als Plattform f\u00fcr Volksinitiativen und Referenden erhalten.",
+          "sha256": "0df987ea6ea4bf23e621cbea0b02c2005a7f18b8641a20ba3add01f12f4b4036",
+          "suffix": "Mit diesem starken R\u00fcckenwind startet WeCollect ins neue Jahr. Bis heute haben 4\u2019079 Menschen die Ret",
+          "text": "Wir k\u00f6nnen aufatmen: Dank \u00fcber 4\u2019000 Unterst\u00fctzer:innen bleibt WeCollect als Plattform f\u00fcr Volksinitiativen und Referenden erhalten. In zwei Monaten sind die n\u00f6tigen 250\u2019000 Franken zusammengekommen, um das Defizit des laufenden Jahres zu decken und den Betrieb bis Ende M\u00e4rz 2025 zu sichern. Mit diesem starken R\u00fcckenwind startet WeCollect ins neue Jahr."
+        },
+        "id": "e5547f44afacfbf5d62b942f09e08dd59e291335c02f135f8ba2ac9c02b0206b",
+        "quote": "In zwei Monaten sind die n\u00f6tigen 250\u2019000 Franken zusammengekommen, um das Defizit des laufenden Jahres zu decken und den Betrieb bis Ende M\u00e4rz 2025 zu sichern.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
   },
   "https://www.designingopendemocracy.com/blog/2016/12/19/inaugural-designing-open-democracy-meeting/": {
     "checked": "2026-08-26",
