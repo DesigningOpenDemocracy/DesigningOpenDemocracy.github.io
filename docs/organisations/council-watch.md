@@ -9,6 +9,22 @@ summary: Victorian citizen watchdog on local council governance — tracks counc
   councillor wellbeing data.
 concepts:
 - accountability-sink
+events:
+- date: '2026-06-21'
+  title: Published first results from its National Council Census 2026, drawing ~5,000
+    respondents nationwide
+  url: https://www.councilwatch.com.au/post/national-council-census-blows-the-doors-off-town-hall
+  quote: The first results from the National Council Census 2026 are in - and they
+    are savage.
+  note: Around 5,000 participants nationwide responded; the article reports early
+    no-confidence indicators including 89.4% agreeing council wastes money and 85.2%
+    saying council does not represent them. Self-compiled advocacy data — see the
+    page's own Sourcing note.
+  proof_level: high
+  url_checked: '2026-08-29'
+  notable: medium
+  notable_reason: Self-run national survey of council trust
+  type: publication
 activity:
   dod:
     checked: '2026-08-21'

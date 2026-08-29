@@ -667,10 +667,12 @@
     "last_modified": null
   },
   "https://civictech.africa/about-ctin": {
-    "checked": "2026-08-26",
+    "checked": "2026-08-29",
+    "document_sha256": "a1ea3d023725607b5e9b544ce244ec52af65a37ba2ce98176a1c568e465610c8",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-29",
         "context": {
           "prefix": "t and citizens, in public participation, in transparency and accountability and in delivering public services.",
           "sha256": "74ae83bfa42253f65e7cfb42d5de7ad8dd8030366ec6dc44063bce6e59e827e5",
@@ -682,7 +684,27 @@
         "verified": true
       }
     ],
-    "last_modified": "Thu, 20 Aug 2026 11:44:28 GMT"
+    "last_modified": "Thu, 27 Aug 2026 10:49:55 GMT"
+  },
+  "https://civictech.africa/ctif/underthehood/": {
+    "checked": "2026-08-29",
+    "document_sha256": "2d9c02b639fd443e52ffb1625986e222a57448b06b138733058391a9dcd7937e",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": "diverse array of voices from various industries and backgrounds. View Speakers Exhibitors",
+          "sha256": "fa40dbafcb910423620f6d510b7fde98d3a2a093d6568a5bb427d6c7fc68726e",
+          "suffix": "Online Exhibitions Additional Info Are you looking to stay in Johannesburg during the week of t",
+          "text": "You are invited to exhibit yours or your organisation\u2019s civic tech innovation initiatives at the Civic Tech Innovation Forum being held on the 28 th \u2013 31 st October 2024. The Civic Tech Innovation Network is once again hosting its annual civic tech conference at the Tshimologong Digital Innovation Precinct in Johannesburg, South Africa."
+        },
+        "id": "fa40dbafcb910423620f6d510b7fde98d3a2a093d6568a5bb427d6c7fc68726e",
+        "quote": "You are invited to exhibit yours or your organisation\u2019s civic tech innovation initiatives at the Civic Tech Innovation Forum being held on the 28 th \u2013 31 st October 2024. The Civic Tech Innovation Network is once again hosting its annual civic tech conference at the Tshimologong Digital Innovation Precinct in Johannesburg, South Africa.",
+        "verified": true
+      }
+    ],
+    "last_modified": "Thu, 27 Aug 2026 10:43:57 GMT"
   },
   "https://civictech.guide/about": {
     "checked": "2026-08-26",
@@ -1617,6 +1639,8 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/Chinese_People%27s_Political_Consultative_Conference": {
+    "blocked": "HTTP_429",
+    "blocked_since": "2026-08-29",
     "checked": "2026-08-26",
     "document_sha256": "1dc9af679c6f13580beaac6f2bd71c082b56e084e9fff382ce4eef3888f08373",
     "etag": null,
@@ -2877,6 +2901,8 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/OneVoice_Movement": {
+    "blocked": "HTTP_429",
+    "blocked_since": "2026-08-29",
     "checked": "2026-08-26",
     "document_sha256": "6c1db82b3af2dbc336e3f03aacb72d1543570150c0ad2662fbf3db11bd0b678c",
     "etag": null,
@@ -3567,6 +3593,26 @@
       }
     ],
     "last_modified": "Wed, 26 Aug 2026 11:26:57 GMT"
+  },
+  "https://fathomjournal.org/darkenu-keeping-the-dream-of-israel-alive/": {
+    "checked": "2026-08-29",
+    "document_sha256": "b882c85d839eca7c20bbc540ddfeff3f2d867f710b059e20bcfedba2e2bb1f7d",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": "ly, there was a recognition that each of us could achieve a greater impact if we worked separately and independently as two distinct movements.",
+          "sha256": "49ae8da5b5e9d264a17945b84e77c130026295b40f92e6bdf6c49b66367467e3",
+          "suffix": "\u2013 a place most of Israel ignores unless a war breaks out \u2013 building alliances and signing up 5,000 new supporters who are not from the stereotypical",
+          "text": "Darkenu means \u2018our way,\u2019 but also \u2018through us,\u2019 a movement of moderate Israelis who are now waking up. We launched in early 2016, mounting a quietly effective campaign on the Gaza border \u2013 a place most of Israel ignores unless a war breaks out \u2013 building alliances and signing up 5,000 new supporters who are not from the stereotypical \u2018peace camp\u2019 but who, due to where they live, have a greater interest in peace than almost anyone else in the country."
+        },
+        "id": "1dfd34bd9010a6b24081627599b59d84c8b6c641c36825ead30e1fd43b77cbd2",
+        "quote": "Darkenu means \u2018our way,\u2019 but also \u2018through us,\u2019 a movement of moderate Israelis who are now waking up. We launched in early 2016, mounting a quietly effective campaign on the Gaza border",
+        "verified": true
+      }
+    ],
+    "last_modified": null
   },
   "https://fidemocracy.org/europe-forum-2026-from-novel-to-normal": {
     "checked": "2026-08-26",
@@ -5083,6 +5129,26 @@
     ],
     "last_modified": null
   },
+  "https://regional.chinadaily.com.cn/cppcc/2026-03/04/c_1164300.htm": {
+    "checked": "2026-08-29",
+    "document_sha256": "7853151c1a83faf1d10d7c7f2d828e4d8741b1a54edc781cc6257e4fc2160f4a",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": "ssion 48 33860 Top News /enpproperty--> CPPCC National Committee starts annual session Updated: 2026-03-04 Xinhua",
+          "sha256": "b2b031da4c267afb1843027935fadb60c227733fb4432fa2ab6a11aab0e479ed",
+          "suffix": "Chinese President Xi Jinping and other leaders including Li Qiang, Zhao Leji, Cai Qi, Ding Xuexiang, Li Xi and Han Zheng were seated on the rostrum.",
+          "text": "The fourth session of the 14th National Committee of the Chinese People's Political Consultative Conference (CPPCC) kicks off at the Great Hall of the People in Beijing, capital of China, March 4, 2026. Chinese President Xi Jinping and other leaders including Li Qiang, Zhao Leji, Cai Qi, Ding Xuexiang, Li Xi and Han Zheng were seated on the rostrum. [Photo/Xinhua]"
+        },
+        "id": "dbda507b19de9fd5a2a7334a2d7130d00f8797752b9a10eadc071fed305cafe3",
+        "quote": "The fourth session of the 14th National Committee of the Chinese People's Political Consultative Conference (CPPCC) kicks off at the Great Hall of the People in Beijing, capital of China, March 4, 2026.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
   "https://solve.mit.edu/solutions/51507": {
     "checked": "2026-08-26",
     "document_sha256": "c68aae8614cd2bae7dff40644036508b4af1e17ac362a313b605718d2eeb6d79",
@@ -6118,6 +6184,26 @@
         },
         "id": "f7cdf9d106d78051f754ba20069af51f09bfe1a7276a473f5c5b246b51a4a53f",
         "quote": "Registered since 2001.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://www.councilwatch.com.au/post/national-council-census-blows-the-doors-off-town-hall": {
+    "checked": "2026-08-29",
+    "document_sha256": "409cd4d3fc1dfe4ef8b097a650017febf89bcf384a5bb58fa058403b72a1a248",
+    "etag": "W/\"a4202a2ebdffe02183888f29f991b9ed\"",
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": "Rated NaN out of 5 stars.",
+          "sha256": "6beea1c020c257fb7578761d930d2f7ec5e628cec3a2a07bc1f2b91bdac2dd41",
+          "suffix": "Around 5,000 participants nationwide have had your say. This is not a m",
+          "text": "The first results from the National Council Census 2026 are in - and they are savage."
+        },
+        "id": "6beea1c020c257fb7578761d930d2f7ec5e628cec3a2a07bc1f2b91bdac2dd41",
+        "quote": "The first results from the National Council Census 2026 are in - and they are savage.",
         "verified": true
       }
     ],
@@ -7510,6 +7596,26 @@
     ],
     "last_modified": "Wed, 26 Aug 2026 11:51:41 GMT"
   },
+  "https://www.pr.com/press-release/729330": {
+    "checked": "2026-08-29",
+    "document_sha256": "b43d9295e650bf2d40c74ad19dd6bd63146e8c4d2027a6500268a1c2c6665def",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": "rm and vote cyptocurrency. Get Email Alert RSS San Francisco, CA, September 10, 2017 --(PR.com)--",
+          "sha256": "f7616fcb1165938cc4c6890854dde5fcaa3bd948ce7fd92151c50b3409830473",
+          "suffix": "The nonprofit and its open source software are featured in the recent editions of New Scientist (\u201cBlockchain Voting App Puts Democracy in the Hands o",
+          "text": "San Francisco, CA, September 10, 2017 --(PR.com)-- Democracy Earth Foundation (\u201cDemocracy.Earth,\u201d \u201cDEF\u201d) today released its white paper \u201cThe Social Smart Contract\u201d describing the technology behind its blockchain-based voting platform \u201cSovereign.\u201d The nonprofit and its open source software are featured in the recent editions of New Scientist (\u201cBlockchain Voting App Puts Democracy in the Hands of the People\u201d) and Futurism (\u201cA New Blockchain App Is Poised to Radically Change How People Vote\u201d)"
+        },
+        "id": "2cc86c145e708af6e21592915ebdc9242efaa313acb517c6b461c9d417415c75",
+        "quote": "Democracy Earth Foundation (\u201cDemocracy.Earth,\u201d \u201cDEF\u201d) today released its white paper \u201cThe Social Smart Contract\u201d describing the technology behind its blockchain-based voting platform \u201cSovereign.\u201d",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
   "https://www.prediki.com/meta/en/Legal-information": {
     "checked": "2026-08-26",
     "document_sha256": "d16a90e0a3ab9c013c82b610ce69f4c46ae95405dabcf8fbc9eaf952b7cbb2c9",
@@ -8161,11 +8267,12 @@
     "last_modified": "Wed, 26 Aug 2026 11:24:40 GMT"
   },
   "https://www.ycombinator.com/companies/democracy-earth": {
-    "checked": "2026-08-26",
+    "checked": "2026-08-29",
     "document_sha256": "64104d8daab13cb2523f85696563b81f169bea7bbbbbc8fe39ad09edc004fb64",
-    "etag": "W/\"4c0d2b37d1d210e75ff2fe9494025f9a\"",
+    "etag": "W/\"62d096e4722e7a7ad565ce346d0daca5\"",
     "evidence": [
       {
+        "checked": "2026-08-29",
         "context": {
           "prefix": "nd Singularity University (2016). We did research for Alphabet, World Economic Forum and the University of Berkeley.",
           "sha256": "c90ae5009c68609175d2ffdf4bbd2a6e9e059cbef1a72cfb6e371fb42fc70d88",

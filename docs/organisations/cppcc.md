@@ -29,6 +29,22 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Flagship conference
+- date: '2026-03-04'
+  title: Opened the fourth session of the 14th National Committee's annual plenary
+    session in Beijing
+  url: https://regional.chinadaily.com.cn/cppcc/2026-03/04/c_1164300.htm
+  quote: The fourth session of the 14th National Committee of the Chinese People's
+    Political Consultative Conference (CPPCC) kicks off at the Great Hall of the People
+    in Beijing, capital of China, March 4, 2026.
+  note: More than 2,000 of the National Committee's members convened to review the
+    Standing Committee's work report and deliberate the 15th Five-Year Plan (2026-30);
+    per earlier web-search corroboration, 2,078 of 2,125 members attended in person.
+    Session closed 11 March 2026.
+  proof_level: high
+  url_checked: '2026-08-29'
+  notable: medium
+  notable_reason: Routine annual plenary session
+  type: conference
 activity:
   dod:
     checked: 2026-06-29
