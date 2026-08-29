@@ -31,6 +31,22 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Founding of the organisation
+- date: '2024-01-15'
+  title: Marked its 19th anniversary of organising women in Rojava
+  url: https://hawarnews.com/en/in-its-20th-year-kongra-star-continues-to-complete-its-mission-to-liberate-women
+  quote: (January 15) marks the 19th anniversary of the Kongra Star, which has worked
+    since its founding in 2005 under the name (Star Union) to organize and train women
+    in all fields in accordance with the ideology of women’s liberation.
+  note: The article (a Kurdish-affiliated outlet, Hawar News Agency/ANHA) frames 2023
+    as a year that "sought to join women hands together" around the cause of Abdullah
+    Öcalan — the phrasing is the article's own and not independently verified beyond
+    this citation, so it is not restated here as a separate factual claim about Öcalan's
+    custodial status.
+  proof_level: high
+  url_checked: '2026-08-29'
+  notable: medium
+  notable_reason: Anniversary milestone marking two decades of organising
+  type: other
 activity:
   rss:
     checked: 2026-08-09

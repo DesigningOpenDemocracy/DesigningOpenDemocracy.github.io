@@ -36,6 +36,25 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Platform/product launch
+- date: '2016-01-10'
+  title: Executive Yuan mandated agencies post proposed regulations to Join for a
+    60-day public comment period
+  url: https://topics.amcham.com.tw/2017/02/make-full-use-of-join-gov-tw/
+  quote: the Executive Yuan on January 10 issued instructions to the government agencies
+    under its jurisdiction to post all proposed regulatory initiatives on the Join
+    platform (as well as on their own websites if they wish), allow the promised 60
+    days for public comment, and provide their overall response to the public feedback
+    at the end of that period.
+  note: Year per this page's body text, sourced separately to the same AmCham article
+    (see footnote [^amcham]); the article itself (Feb 2017) does not restate the year
+    alongside "January 10." Institutionalised the practice already central to Join's
+    petition mechanism, extending it to government-initiated regulatory proposals
+    as well as citizen-initiated ones.
+  proof_level: high
+  url_checked: '2026-08-29'
+  notable: medium
+  notable_reason: Formal government mandate extending the platform's remit
+  type: other
 activity:
   manual:
     checked: 2026-08-07

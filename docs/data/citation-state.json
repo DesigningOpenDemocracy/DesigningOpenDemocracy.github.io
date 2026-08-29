@@ -2489,11 +2489,12 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/Kialo": {
-    "checked": "2026-08-26",
+    "checked": "2026-08-29",
     "document_sha256": "954f1114f09b201937f1344e4b975ad7fe5ead9cf5fba3dbae5ee6f4d2ed45bf",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-29",
         "context": {
           "prefix": "nd 1628 debates, related to over 1120 categories, with 124,312 unique claims as of June 26, 2020. == Kialo Inc. == The site is run by Kialo Inc. It",
           "sha256": "12e9507b78c839b9897170b7ef209a5ea45fb3e0d1fa63604c102afd631d5834",
@@ -2508,11 +2509,12 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/Kongra_Star": {
-    "checked": "2026-08-26",
+    "checked": "2026-08-29",
     "document_sha256": "870b1a0997e3331ed1ccaee029ac6b0846d7de1729bc215c2630e3ace6bbd522",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-29",
         "context": {
           "prefix": "",
           "sha256": "45536d40c4f30592bbaab66487fe215aeb8b22d4179f6c84babf948670bcd054",
@@ -3546,11 +3548,12 @@
     "last_modified": "Fri, 07 Aug 2026 04:38:34 GMT"
   },
   "https://europeandemocracyhub.epd.eu/exploring-worldwide-democratic-innovations-taiwan/": {
-    "checked": "2026-08-26",
+    "checked": "2026-08-29",
     "document_sha256": "b299a8690eb67421642afc18e7ea038d736c117ac0e56ef113ca1608e843387d",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-29",
         "context": {
           "prefix": "and its website claims to have resulted in \u201cdecisive government action\u201d in 80 percent of cases. In 2015, a government-operated platform, JOIN,",
           "sha256": "67e9fe3e74d10ed92d44c34d19a38ccd92d4972e52ac5998a034d2fc368a49a9",
@@ -4173,6 +4176,26 @@
     "etag": null,
     "last_modified": "Wed, 05 Aug 2026 03:53:40 GMT"
   },
+  "https://hawarnews.com/en/in-its-20th-year-kongra-star-continues-to-complete-its-mission-to-liberate-women": {
+    "checked": "2026-08-29",
+    "document_sha256": "f095036df3fe67d46d50de7fd2c1d120f1625dac371521186a3c12e9ff9b5ffa",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": "BDUL RAHMAN Listen to article 0:00 0:00 1\u00d7 +",
+          "sha256": "b2154e80f3178d2f308d93b6848d75e1843fae5de5f047562bdc672f2af1273d",
+          "suffix": "Last year (2023), the Kongra Star held, in conjunction with the anniversary of its founding, its ninth conference in the city of al-Hasakah under",
+          "text": "(January 15) marks the 19th anniversary of the Kongra Star, which has worked since its founding in 2005 under the name (Star Union) to organize and train women in all fields in accordance with the ideology of women\u2019s liberation."
+        },
+        "id": "b2154e80f3178d2f308d93b6848d75e1843fae5de5f047562bdc672f2af1273d",
+        "quote": "(January 15) marks the 19th anniversary of the Kongra Star, which has worked since its founding in 2005 under the name (Star Union) to organize and train women in all fields in accordance with the ideology of women\u2019s liberation.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
   "https://home.treasury.gov/news/press-releases/sb0603": {
     "blocked": "ROBOTS_DISALLOWED",
     "blocked_since": "2026-08-22",
@@ -4194,6 +4217,26 @@
     ],
     "last_modified": null,
     "manual_checked": "2026-08-22"
+  },
+  "https://hundred.org/en/innovations/6-kialo-edu": {
+    "checked": "2026-08-29",
+    "document_sha256": "1cc4569020e65d17444074cb369e198004dfc994e31fd6bb8b37f745e9628e1f",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": "to more than 1 million users. We have hosted more than 400,000 discussions in at least 49 different languages and over 150 different countries.",
+          "sha256": "638c06ac609f12d2399274dc59801348d08a7044f5fcdc3a197fc39beed87508",
+          "suffix": "We also established official partnerships with Moodle and Google for Education, enabling LMS users to seamlessly integrate our free tool into their t",
+          "text": "In the last two years, we were honored to be selected for the HundrED Global Collection 2025, the American Association of School Librarian's Best Digital Tools for Teaching and Learning 2025, and earned recognition at the Bett Awards 2025, winning in the category Best Free Digital Content, App, or Open Education Resource. We also established official partnerships with Moodle and Google for Education, enabling LMS users to seamlessly integrate our free tool into their teaching practice."
+        },
+        "id": "76a2b7f120d950801a637099e4814618064c4ed8a73c404b2978ddd8a77cc751",
+        "quote": "In the last two years, we were honored to be selected for the HundrED Global Collection 2025, the American Association of School Librarian's Best Digital Tools for Teaching and Learning 2025, and earned recognition at the Bett Awards 2025, winning in the category Best Free Digital Content, App, or Open Education Resource.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
   },
   "https://ia.acs.org.au/article/2018/blockchain-to-revolutionise-e-voting.html": {
     "checked": "2026-08-26",
@@ -5046,10 +5089,12 @@
     "last_modified": null
   },
   "https://podnews.net/press-release/lamestream-podcast": {
-    "checked": "2026-08-26",
+    "checked": "2026-08-29",
+    "document_sha256": "536ad0f8229ff907db2d733eb5c131180ac48f7fff69f97397d713618a047d3a",
     "etag": "\"7f2628fe5cf613c4293cb07ec2a39ac4-gzip\"",
     "evidence": [
       {
+        "checked": "2026-08-29",
         "context": {
           "prefix": "s Award-winning journalists Osman Faruqi and Scott Mitchell launch new podcast to tackle the crisis in Australian media",
           "sha256": "f0118f7c11e028ae89a861bb290d491d50a00569481952a73ba3be722b261ff6",
@@ -5419,8 +5464,8 @@
     "manual_checked": "2026-08-22"
   },
   "https://topics.amcham.com.tw/2017/02/make-full-use-of-join-gov-tw/": {
-    "checked": "2026-08-26",
-    "document_sha256": "5b9ba4ae5bfa4e34d4d9de7f72417b929f251f29cd22ab99bcd554b9be9e29a4",
+    "checked": "2026-08-29",
+    "document_sha256": "888c2a824bb6d37a5ab25059c12c35f8b122d3f1468afc55b5603ea05c40f8ec",
     "etag": null,
     "evidence": [
       {
@@ -5432,6 +5477,18 @@
         },
         "id": "f2bc1350fab07763d03538042100f87084a4a232f7caa8b0f69e0187361eae48",
         "quote": "a well-designed online portal called Join to facilitate two-way communication between government offices and members of the public on regulatory matters.",
+        "verified": true
+      },
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": "he Join platform will be truly meaningful only if both government officials and the private sector utilize it to the fullest. On the government side,",
+          "sha256": "903d5475ee4f5748055a14326f22eec82ac3187f4426dca6d8a49dae113c4d58",
+          "suffix": "Now it is incumbent on business to help monitor how well relevant government agencies are fulfilling this function and to provide well-thought-",
+          "text": "As welcome as this development is to the local and foreign business communities operating in Taiwan, the Join platform will be truly meaningful only if both government officials and the private sector utilize it to the fullest. On the government side, the Executive Yuan on January 10 issued instructions to the government agencies under its jurisdiction to post all proposed regulatory initiatives on the Join platform (as well as on their own websites if they wish), allow the promised 60 days for public comment, and provide their overall response to the public feedback at the end of that period."
+        },
+        "id": "8be62ba2d43f636ac50ba6c0723f09b291a458b87c598503b42dfaa02d620069",
+        "quote": "the Executive Yuan on January 10 issued instructions to the government agencies under its jurisdiction to post all proposed regulatory initiatives on the Join platform (as well as on their own websites if they wish), allow the promised 60 days for public comment, and provide their overall response to the public feedback at the end of that period.",
         "verified": true
       }
     ],
@@ -7063,12 +7120,38 @@
     ],
     "last_modified": "Wed, 26 Aug 2026 11:13:25 GMT"
   },
+  "https://www.labsus.org/2026/04/assisi-2026-la-bellezza-di-stare-insieme/": {
+    "checked": "2026-08-29",
+    "document_sha256": "4e8a8944035f90cb45a53ac6120a799935f642a97e2205b1b95186be2f6f4196",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "id": "128dbf3d398207251cdaab6fee1ff2044425e400f14b132c500f734e28131195",
+        "quote": "Anche quest\u2019anno ci siamo ritrovati ad Assisi per la seconda edizione del \"Festival dell\u2019Amministrazione condivisa dei beni comuni\", dal 26 al 28 marzo, con l\u2019obiettivo di creare e rendere sempre pi\u00f9 solide le relazioni fra cittadini, istituzioni, enti pubblici e privati, Terzo settore e organizzazioni collettive.",
+        "verified": false
+      },
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": "istrazione condivisa dei beni comuni. Dibattiti, lavoro di gruppo, eventi culturali per favorire scambi, relazioni, elaborazione politica",
+          "sha256": "24a9d9d082bb6a1f541c22de6ecf51a32355edef48a06aa137a62b5c139f5a91",
+          "suffix": "Al Teatro Lyrick e nel centro storico di Assisi oltre 350 persone provenienti da tutta Italia -sindaci e amministratori pubblici, studiosi, giuristi,"
+        },
+        "id": "3fd9c803bc65f8b1131988cfa390fda0b2a0fe4bfc8eb50a9e202ccedb1dfda9",
+        "quote": "Anche quest\u2019anno ci siamo ritrovati ad Assisi per la seconda edizione del \u201cFestival dell\u2019Amministrazione condivisa dei beni comuni\u201d, dal 26 al 28 marzo, con l\u2019obiettivo di creare e rendere sempre pi\u00f9 solide le relazioni fra cittadini, istituzioni, enti pubblici e privati, Terzo settore e organizzazioni collettive.",
+        "verified": true
+      }
+    ],
+    "last_modified": "Tue, 25 Aug 2026 16:41:12 GMT"
+  },
   "https://www.labsus.org/chi-siamo/": {
-    "checked": "2026-08-26",
+    "checked": "2026-08-29",
     "document_sha256": "041e714816932802e02786ab83492a53a491e31c04ed717f12c0d85ec5f3b075",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-29",
         "context": {
           "prefix": "Chi siamo",
           "sha256": "e1fde2cce5c1c2c169de201bbc72f56013fc9be23a1a46259023f63de009ca0d",
@@ -7081,6 +7164,26 @@
       }
     ],
     "last_modified": "Tue, 07 Jul 2026 09:28:55 GMT"
+  },
+  "https://www.lamestream.com.au/exclusive-how-israel-weapons-and-greed-drove-jeffrey-epsteins-mongolia-obsession/": {
+    "checked": "2026-08-29",
+    "document_sha256": "4b9233b3585846d820e25127f7a83d6ae104b06b3d169a42c2b4d60f7fa6135e",
+    "etag": "W/\"1d8ee-Nw5kGwwRmlMAEBm3RnM74Uw52OQ\"",
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": "Articles \u2014 Epstein Files Exclusive: Why Did Epstein Want to be on the Mongolia Board? Greed, Weapons and Israel",
+          "sha256": "39573583823565955f0916f45d260658d95e7fe244d2568951bb58db37c29abc",
+          "suffix": ", and Scott Mitchell, and Osman Faruqi 6 February 2026. 11:57 AM 12 min read \ud835\udd4f Share on Facebook Share on Pi",
+          "text": "For years, Jeffrey Epstein used his connections to build a network of influence aimed at Mongolia. Now Lamestream can reveal what drove his obsession."
+        },
+        "id": "39573583823565955f0916f45d260658d95e7fe244d2568951bb58db37c29abc",
+        "quote": "For years, Jeffrey Epstein used his connections to build a network of influence aimed at Mongolia. Now Lamestream can reveal what drove his obsession.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
   },
   "https://www.lcps-lebanon.org/en/about": {
     "checked": "2026-08-26",

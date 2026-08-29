@@ -32,6 +32,26 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Founding of the organisation
+- date: '2026-03-26'
+  title: Hosted the second edition of the Festival dell'Amministrazione Condivisa
+    in Assisi, drawing 350+ participants
+  url: https://www.labsus.org/2026/04/assisi-2026-la-bellezza-di-stare-insieme/
+  quote: Anche quest’anno ci siamo ritrovati ad Assisi per la seconda edizione del
+    “Festival dell’Amministrazione condivisa dei beni comuni”, dal 26 al 28 marzo,
+    con l’obiettivo di creare e rendere sempre più solide le relazioni fra cittadini,
+    istituzioni, enti pubblici e privati, Terzo settore e organizzazioni collettive.
+  note: 'Translation: "This year too we gathered in Assisi for the second edition
+    of the ''Festival for Shared Administration of Common Goods,'' from 26 to 28 March,
+    with the goal of building and strengthening relationships between citizens, institutions,
+    public and private bodies, the Third Sector, and collective organisations." Over
+    350 people attended from across Italy, promoted jointly by the Municipality of
+    Assisi, Labsus, and the University of Perugia''s Department of Political Sciences.'
+  proof_level: high
+  url_checked: '2026-08-29'
+  end_date: '2026-03-28'
+  notable: medium
+  notable_reason: Flagship annual festival, second edition
+  type: conference
 activity:
   rss:
     checked: 2026-08-17
