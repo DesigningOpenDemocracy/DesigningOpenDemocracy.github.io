@@ -3074,11 +3074,12 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/PRS_Legislative_Research": {
-    "checked": "2026-08-26",
+    "checked": "2026-08-29",
     "document_sha256": "7ebd72733e454ec445768bbc069d9e62547ae01963060f1dc482ed7da53ea1eb",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-29",
         "context": {
           "prefix": "PRS Legislative Research, commonly referred to as PRS, is an Indian non-profit organisation that",
           "sha256": "825d531a7973ed01a163dfe6cbd15b4342dca1d6b1e803a33b1e65710970624f",
@@ -3087,6 +3088,18 @@
         },
         "id": "c8e33bf627761470e3fed004a375537e23607f962fa9968d6057c04b8a397746",
         "quote": "was established in September 2005 as an independent research institute",
+        "verified": true
+      },
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": "0-11 LAMP Fellows 2011-12 LAMP Fellows 2012-13 LAMP Fellows 2014-15 == Recognition == Business Standard's Social Entrepreneur of the Year 2019.",
+          "sha256": "b9759ac6c64c3c16b320b486250a6975b369869cd024835b485cc48fc1e26ba2",
+          "suffix": "Marico Innovation Foundation\u2019s Social Innovation Award, 2010. == See also == Democracy in India Election Commission of India List of think tanks in",
+          "text": "== Recognition == Business Standard's Social Entrepreneur of the Year 2019. NDTV\u2019s Indian of the Year Award in the Public Service category for the year 2013. Marico Innovation Foundation\u2019s Social Innovation Award, 2010."
+        },
+        "id": "f31cb7a513db84d4461874078b479a05f3b777e6018b1a7dac25f9652a68d9ff",
+        "quote": "NDTV\u2019s Indian of the Year Award in the Public Service category for the year 2013.",
         "verified": true
       }
     ],
@@ -3123,11 +3136,12 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/Pirate_Party_Australia": {
-    "checked": "2026-08-26",
+    "checked": "2026-08-29",
     "document_sha256": "830f5cf703045d06e23599c4d1bc2c30ff6516ea3930774de260ff10a647198d",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-29",
         "context": {
           "prefix": "stralia's president, Miles Whiticker stood as the Fusion Party candidate during the 2025 Australian Senate election. == History == The Pirate Party",
           "sha256": "6ede1abce4be770de5705036a7afdd8564c7b2cb61262b3ab9cc1dc7e63e7257",
@@ -3136,6 +3150,12 @@
         },
         "id": "df4b0b1a904c336946576a29110f8081dd950fda90cfbb941e3be97d90184a49",
         "quote": "was founded in 2008 by Rodney Serkowski",
+        "verified": true
+      },
+      {
+        "checked": "2026-08-29",
+        "id": "faa16482961b3f22a3bb643235a3d6bdab99e575e81c31389c2a4f42b0248d24",
+        "quote": "The party voluntarily deregistered on 28 April 2021. ... It later merged with other parties to become the Fusion Party.",
         "verified": true
       }
     ],
@@ -4908,6 +4928,26 @@
     ],
     "last_modified": "Wed, 26 Aug 2026 11:49:38 GMT"
   },
+  "https://ok.org.br/noticia/operacao-serenata-de-amor-5-anos-do-maior-projeto-de-inovacao-civica-brasileiro/": {
+    "checked": "2026-08-29",
+    "document_sha256": "cb83c1b11548d6f382437c6be39c562a6e1ed5507579f1a3ade716c29b886345",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": "e premia\u00e7\u00f5es \u2014 dentro e fora do pa\u00eds! O projeto \u00e9 objeto de estudo acad\u00eamico at\u00e9 hoje e segue influenciando a cria\u00e7\u00e3o de novas ideias na \u00e1rea.",
+          "sha256": "6156fce90f358160b4c2d8fa966f71ed5d9db49feb6446f0774a806f05c1ce25",
+          "suffix": "Desde ent\u00e3o, foram lan\u00e7adas v\u00e1rias iniciativas que estenderam a ideia original de se usar tecnologia e dados abertos para ampliar o acesso \u00e0 informa\u00e7",
+          "text": "Em 2018, a Serenata passou a ser gerida e monitorada pela Open Knowledge Brasil, momento em que se criou o Programa Ci\u00eancia de Dados para Inova\u00e7\u00e3o C\u00edvica. Desde ent\u00e3o, foram lan\u00e7adas v\u00e1rias iniciativas que estenderam a ideia original de se usar tecnologia e dados abertos para ampliar o acesso \u00e0 informa\u00e7\u00e3o e fortalecer a democracia. Tivemos o Perfil Pol\u00edtico, o Justa, o V\u00edtimas da Intoler\u00e2ncia e o Parlametria. Tamb\u00e9m criamos uma rede de pessoas Embaixadoras que colabora para espalhar o conceito de inova\u00e7\u00e3o c\u00edvica pelo pa\u00eds."
+        },
+        "id": "b9b3c9b742c19af5193e232378dec36ae828e8a4512ce6917d0d1281ef984051",
+        "quote": "Em 2018, a Serenata passou a ser gerida e monitorada pela Open Knowledge Brasil, momento em que se criou o Programa Ci\u00eancia de Dados para Inova\u00e7\u00e3o C\u00edvica.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
   "https://opennorth.ca/resources/citizen-budget/": {
     "checked": "2026-08-26",
     "document_sha256": "57cda6c886cc1dfbd0b1fb3e51856e21114a6f90c0b45076d2696526207d57e7",
@@ -4985,10 +5025,12 @@
     "last_modified": null
   },
   "https://perludem.or.id/id/profil/": {
-    "checked": "2026-08-26",
+    "checked": "2026-08-29",
+    "document_sha256": "1860af1fc7cdf5c8c3d228b3fd0600ccb6bcdee52be91de19c7c0f479121febb",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-29",
         "context": {
           "prefix": "hgunakan kedaulatan rakyat yang diberikan kepadanya. Menyadari bahwa kondisi-kondisi tersebut membutuhkan partisipasi setiap warga negara, maka",
           "sha256": "fbbd297c5e6d02e1747f9fc502388d5db50117034a2bf610e391a19959d24d6b",
@@ -5001,6 +5043,26 @@
       }
     ],
     "last_modified": "Wed, 19 Aug 2026 06:37:41 GMT"
+  },
+  "https://perludem.or.id/perludem-and-international-idea-discuss-mixed-member-proportional-electoral-system-simulation-with-journalists-and-civil-society/": {
+    "checked": "2026-08-29",
+    "document_sha256": "ab8fd76409a9239e8d568c8094a4fd9d23e3435372b0e0db7808453bbaf2f4bd",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": "nd Civil Society Workshop: Understanding the Mixed Member Proportional Electoral System and Its Simulation Results in Indonesia, Jakarta (23/7)",
+          "sha256": "e5aa0fa112b93f1070363e2fcf58fbc77eee07811b7368691fc16ce929319acd",
+          "suffix": "The event brought together journalists and civil society organizations to deepen their understanding of the Mixed Member Proportional (MMP) electoral",
+          "text": "Perludem, in collaboration with International IDEA, held the Media Briefing and Civil Society Workshop: Understanding the Mixed Member Proportional Electoral System and Its Simulation Results in Indonesia at the Indonesia Corruption Watch (ICW) Learning House in Jakarta on 23 July. The event brought together journalists and civil society organizations to deepen their understanding of the Mixed Member Proportional (MMP) electoral system and the findings of its simulation in the Indonesian context."
+        },
+        "id": "1478ce0e83b2bf94e4d6fc6f35834985039c6cf5205fe127c1d88b6650f1606b",
+        "quote": "Perludem, in collaboration with International IDEA, held the Media Briefing and Civil Society Workshop: Understanding the Mixed Member Proportional Electoral System and Its Simulation Results in Indonesia at the Indonesia Corruption Watch (ICW) Learning House in Jakarta on 23 July.",
+        "verified": true
+      }
+    ],
+    "last_modified": "Wed, 19 Aug 2026 08:53:25 GMT"
   },
   "https://pmc.ncbi.nlm.nih.gov/articles/PMC8416191/": {
     "checked": "2026-08-29",
@@ -5203,11 +5265,12 @@
     "last_modified": null
   },
   "https://pt.wikipedia.org/wiki/Open_Knowledge_Brasil": {
-    "checked": "2026-08-26",
+    "checked": "2026-08-29",
     "document_sha256": "7430e432fbdeb0de72e336361263372ee6f4b7feb7a708418ad09423eb5f61dd",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-29",
         "context": {
           "prefix": "tornar mais transparentes as rela\u00e7\u00f5es entre governo e sociedade. Conhecida em seus prim\u00f3rdios como Rede pelo Conhecimento Livre, \u00e9 uma organiza\u00e7\u00e3o da",
           "sha256": "3140fb0a4720e265dd6519e81b90a3e77907f7fd533bc3ac8b15d4ab7fe81573",
@@ -7015,11 +7078,12 @@
     "last_modified": null
   },
   "https://www.icnl.org/resources/civic-freedom-monitor/rwanda": {
-    "checked": "2026-08-26",
-    "document_sha256": "bc1e85d034a4f11e86b45aac63336392191b189b3e3950edafd893eca4f21e31",
+    "checked": "2026-08-29",
+    "document_sha256": "eb135fa24bf597445ee4620667b2cc12db396b376a0860fb576c1be4cef5fe6b",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-29",
         "context": {
           "prefix": "receipt of provisional permit from local authority (collaboration letter from the District). There are also excessive documentation requirements.",
           "sha256": "b3bdb7ecb644bffa1bf4b7516d2c69833b80f69cacb5e7cd80aedc931dc77a39",
@@ -8218,6 +8282,26 @@
         },
         "id": "d3a3d62f5a46a4d90930a332cc63859711e441182f58754d2c62e0211868ade6",
         "quote": "Jess Scully is Executive Director of RadicalxChange and an advocate for civic imagination.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://www.rgb.rw/1/about-rgb": {
+    "checked": "2026-08-29",
+    "document_sha256": "601c32c4f6b523fd0b523d828233381d8b913c868c67bba7e3a9916a2f561908",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": "About RGB Senior management Employee of the Year Organization structure About RGB",
+          "sha256": "3787952415643a1f6255a149ca58ef4b8d5b5987de3ec149a0d18f511c0bc5db",
+          "suffix": "RGB is independent and doesn't receive instructions from any other institution in exercising its mission. RGB submits its Annual Report and Action Pl",
+          "text": "The Rwanda Governance Board (RGB) is a public institution established by law N\u00b056/2016 of 16/12/2016, generally mandated to promote good governance principles and monitor service delivery across public and private sector institutions as well as Civil Society Organizations. RGB is independent and doesn't receive instructions from any other institution in exercising its mission. RGB submits its Annual Report and Action Plan to the President of the Republic and to the Parliament, Both Chambers, with a Copy to the President of the Supreme Court and Prime Minister."
+        },
+        "id": "3b0505322e7e7b25a2fbf8a174128f31fdfd8301d9513405465652274d62f445",
+        "quote": "The Rwanda Governance Board (RGB) is a public institution established by law N\u00b056/2016 of 16/12/2016, generally mandated to promote good governance principles and monitor service delivery across public and private sector institutions as well as Civil Society Organizations.",
         "verified": true
       }
     ],

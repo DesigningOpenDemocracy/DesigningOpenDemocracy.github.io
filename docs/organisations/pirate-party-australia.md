@@ -34,6 +34,20 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Founding of the organisation
+- date: '2021-04-28'
+  title: Voluntarily deregistered as an independent AEC party, later merging into
+    the Fusion Party's federated structure
+  url: https://en.wikipedia.org/wiki/Pirate_Party_Australia
+  quote: The party voluntarily deregistered on 28 April 2021. ... It later merged
+    with other parties to become the Fusion Party.
+  note: See this page's own "Note on status" for the full picture — PPAU continued
+    as a distinct internal grouping within Fusion (separate membership, infrastructure,
+    and activity) rather than dissolving.
+  proof_level: high
+  url_checked: '2026-08-29'
+  notable: true
+  notable_reason: Structural change in registration status
+  type: other
 activity:
   manual:
     checked: 2026-06-07

@@ -33,6 +33,23 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Founding of the organisation
+- date: '2018-01-01'
+  title: Took over managing Operação Serenata de Amor, launching the Data Science
+    for Civic Innovation programme
+  url: https://ok.org.br/noticia/operacao-serenata-de-amor-5-anos-do-maior-projeto-de-inovacao-civica-brasileiro/
+  quote: Em 2018, a Serenata passou a ser gerida e monitorada pela Open Knowledge
+    Brasil, momento em que se criou o Programa Ciência de Dados para Inovação Cívica.
+  note: 'Translation: "In 2018, Serenata came to be managed and monitored by Open
+    Knowledge Brasil, the moment at which the Data Science for Civic Innovation Programme
+    was created." Operação Serenata de Amor (an AI system auditing federal deputies''
+    public spending reimbursements) itself launched 7 September 2016, before OKBR
+    took it over; this retrospective article (published on its 5th anniversary) is
+    the source for both dates.'
+  proof_level: high
+  url_checked: '2026-08-29'
+  notable: true
+  notable_reason: Absorbed an early, influential civic-tech project
+  type: other
 activity:
   dod:
     checked: 2026-08-09

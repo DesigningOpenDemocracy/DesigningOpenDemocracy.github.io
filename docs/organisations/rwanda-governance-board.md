@@ -41,6 +41,22 @@ events:
   url_checked: '2026-08-12'
   notable: true
   notable_reason: Merger of organisations
+- date: '2016-12-16'
+  title: Re-established by law N°56/2016, confirming its current legal mandate
+  url: https://www.rgb.rw/1/about-rgb
+  quote: The Rwanda Governance Board (RGB) is a public institution established by
+    law N°56/2016 of 16/12/2016, generally mandated to promote good governance principles
+    and monitor service delivery across public and private sector institutions as
+    well as Civil Society Organizations.
+  note: Directly resolves the date discrepancy flagged on the 2011 event above — this
+    is RGB's own official About page confirming its current establishing law. RGB
+    reports directly to the President of the Republic and Parliament rather than any
+    intermediate ministry.
+  proof_level: high
+  url_checked: '2026-08-29'
+  notable: medium
+  notable_reason: Current legal mandate confirmed by statute
+  type: other
 activity:
   manual:
     checked: 2026-06-07
