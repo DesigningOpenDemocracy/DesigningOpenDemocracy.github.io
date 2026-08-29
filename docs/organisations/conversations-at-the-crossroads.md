@@ -54,12 +54,12 @@ activity:
     url: https://www.crossroadsconversation.com.au/events
   scrape:
     date: 2026-08-27
-    note: "Latest news page scraped"
+    note: Latest news page scraped
     url: https://www.crossroadsconversation.com.au/events
     checked: 2026-08-28
   sitemap:
     date: 2026-08-24
-    note: "Page last modified (from sitemap)"
+    note: Page last modified (from sitemap)
     url: https://www.crossroadsconversation.com.au/sitemap.xml
     checked: 2026-08-28
 last_checked: '2026-06-29'

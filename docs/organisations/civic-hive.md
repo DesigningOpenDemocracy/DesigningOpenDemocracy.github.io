@@ -52,7 +52,7 @@ events:
 activity:
   rss:
     date: 2026-08-25
-    note: "Latest post: APPLY: Creative Changemakers Fellowship 2026"
+    note: 'Latest post: APPLY: Creative Changemakers Fellowship 2026'
     url: https://civichive.org/ccmf2026/?utm_source=rss&utm_medium=rss&utm_campaign=ccmf2026
     checked: 2026-08-28
   url: https://civichive.org/2026-osun-state-governorship-election/?utm_source=rss&utm_medium=rss&utm_campaign=2026-osun-state-governorship-election

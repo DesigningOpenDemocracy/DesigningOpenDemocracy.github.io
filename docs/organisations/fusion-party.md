@@ -54,7 +54,7 @@ activity:
     url: https://en.wikipedia.org/wiki/Fusion_Party_(Australia)
   sitemap:
     date: 2026-08-28
-    note: "Page last modified (from sitemap)"
+    note: Page last modified (from sitemap)
     url: https://www.fusionparty.org.au/sitemap_index.xml
     checked: 2026-08-28
 last_checked: '2026-08-15'

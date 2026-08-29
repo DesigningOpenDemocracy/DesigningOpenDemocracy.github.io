@@ -57,7 +57,7 @@ events:
 activity:
   rss:
     date: 2026-08-27
-    note: "Latest post: The problem with making public data pay for itself"
+    note: 'Latest post: The problem with making public data pay for itself'
     url: https://www.mysociety.org/2026/08/27/the-problem-with-making-public-data-pay-for-itself/
     checked: 2026-08-28
 last_checked: '2026-05-29'

@@ -57,7 +57,7 @@ activity:
       (de) corroborates party still exists, no evidence of dissolution
   rss:
     date: 2026-08-28
-    note: "RSS feed active"
+    note: RSS feed active
     url: https://www.gilt.at/feed
     checked: 2026-08-28
 last_checked: '2026-07-05'

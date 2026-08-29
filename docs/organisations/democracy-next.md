@@ -62,7 +62,7 @@ activity:
     checked: 2026-08-28
   sitemap:
     date: 2026-08-27
-    note: "Page last modified (from sitemap)"
+    note: Page last modified (from sitemap)
     url: https://www.demnext.org/sitemaps-1-sitemap.xml
     checked: 2026-08-28
 last_checked: '2026-06-15'

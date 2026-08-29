@@ -52,7 +52,8 @@ events:
 activity:
   rss:
     date: 2026-08-26
-    note: "Latest post: Más valor desde el cobre: expertos analizan desafíos para el desarrollo producti"
+    note: 'Latest post: Más valor desde el cobre: expertos analizan desafíos para
+      el desarrollo producti'
     url: https://espaciopublico.cl/mas-valor-desde-el-cobre-expertos-analizan-desafios-para-el-desarrollo-productivo-en-chile/
     checked: 2026-08-28
 last_checked: '2026-08-09'

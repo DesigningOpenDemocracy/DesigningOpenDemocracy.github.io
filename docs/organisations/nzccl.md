@@ -55,7 +55,8 @@ activity:
     note: Site live and actively publishing as of August 2026
   rss:
     date: 2026-08-24
-    note: "Latest post: Media Release: NZCCL opposes social media ban for the under 16s"
+    note: 'Latest post: Media Release: NZCCL opposes social media ban for the under
+      16s'
     url: https://nzccl.org.nz/media-release-nzccl-opposes-social-media-ban-for-the-under-16s/
     checked: 2026-08-28
 last_checked: '2026-08-09'

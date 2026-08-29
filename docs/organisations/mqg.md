@@ -62,7 +62,7 @@ activity:
     url: https://mqg.org.il/en
   rss:
     date: 2026-08-27
-    note: "Latest post: עדכון בחירות:"
+    note: 'Latest post: עדכון בחירות:'
     url: https://mqg.org.il/%d7%a2%d7%93%d7%9b%d7%95%d7%9f-%d7%91%d7%97%d7%99%d7%a8%d7%95%d7%aa/
     checked: 2026-08-28
 last_checked: '2026-07-16'

@@ -58,7 +58,7 @@ activity:
     note: No feed found
   sitemap:
     date: 2026-08-22
-    note: "Page last modified (from sitemap)"
+    note: Page last modified (from sitemap)
     url: https://conaie.org/sitemap_index.xml
     checked: 2026-08-28
 last_checked: '2026-06-28'

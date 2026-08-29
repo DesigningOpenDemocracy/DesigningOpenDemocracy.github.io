@@ -60,7 +60,8 @@ activity:
     note: Site live and actively publishing as of August 2026
   rss:
     date: 2026-05-11
-    note: "Latest post: La conferencia para el abandono de los combustibles fósiles: más allá del discur"
+    note: 'Latest post: La conferencia para el abandono de los combustibles fósiles:
+      más allá del discur'
     url: https://www.movilizatorio.org/conferencia-combustibles-fosiles-hoja-ruta/
     checked: 2026-08-28
 last_checked: '2026-08-09'

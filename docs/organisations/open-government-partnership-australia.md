@@ -83,7 +83,7 @@ activity:
     url: https://www.ag.gov.au/integrity/australias-open-government-partnership
     checked: 2026-08-21
   rss:
-    note: "No feed found"
+    note: No feed found
     checked: 2026-08-28
 last_checked: '2026-08-21'
 ---
