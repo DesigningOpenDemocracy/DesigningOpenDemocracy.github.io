@@ -50,13 +50,13 @@ activity:
     note: Website live; ongoing blog posts and active climate/governance project pages.
     url: https://www.ushahidi.com
   scrape:
-    checked: 2026-08-17
+    checked: 2026-08-28
     date: 2024-11-12
     note: 'Latest post: The End; and the Means to that End (Angela Oduor Lungati)'
     url: https://www.ushahidi.com/about/blog
   sitemap:
     note: Sitemap found, no lastmod
-    checked: 2026-08-17
+    checked: 2026-08-28
 last_checked: '2026-07-19'
 ---
 

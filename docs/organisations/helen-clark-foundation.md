@@ -54,7 +54,7 @@ events:
   type: publication
 activity:
   sitemap:
-    checked: 2026-08-17
+    checked: 2026-08-28
     note: Sitemap found, no lastmod
 last_checked: '2026-08-09'
 ---

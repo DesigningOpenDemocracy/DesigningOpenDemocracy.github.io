@@ -66,7 +66,7 @@ activity:
     note: 'Latest post: Decidim and the New York City Civic Engagement Commission
       formalise Partnership '
     url: https://decidim.org/blog/2026-07-06-decidim-and-the-new-york-city-civic-engagement-commission-formalise-partnership-with-a-memorandum-of-understanding/
-    checked: 2026-08-17
+    checked: 2026-08-28
 last_checked: '2026-06-15'
 ---
 

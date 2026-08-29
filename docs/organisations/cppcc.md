@@ -53,7 +53,7 @@ activity:
       Committee's annual session ran 4–11 March 2026 (2,078 of 2,125 members attended),
       consistent with continued operation.
   rss:
-    checked: 2026-08-17
+    checked: 2026-08-28
     note: No feed found
 last_checked: '2026-06-29'
 ---

@@ -76,6 +76,9 @@ activity:
     checked: 2026-08-09
     date: 2026-08-09
     note: Confirmed live (HTTP 200), site current
+  rss:
+    note: "No feed found"
+    checked: 2026-08-28
 last_checked: '2026-08-09'
 ---
 

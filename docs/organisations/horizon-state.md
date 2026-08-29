@@ -89,6 +89,9 @@ activity:
       status left active pending a recheck in case the parking is transient
     url: https://web.archive.org/web/20260419153549/https://horizonstate.com/hst-token/
     checked: 2026-08-22
+  sitemap:
+    note: "Sitemap found, no lastmod"
+    checked: 2026-08-28
 last_checked: '2026-08-21'
 ---
 

@@ -55,10 +55,10 @@ activity:
     note: Homepage is JS-rendered (loading placeholder); sitemap.xml lastmod shows
       2026-07-05, confirming active
   sitemap:
-    date: 2026-08-17
-    note: Page last modified (from sitemap)
+    date: 2026-08-28
+    note: "Page last modified (from sitemap)"
     url: https://www.democracylab.org/sitemap.xml
-    checked: 2026-08-17
+    checked: 2026-08-28
 last_checked: '2026-07-05'
 ---
 

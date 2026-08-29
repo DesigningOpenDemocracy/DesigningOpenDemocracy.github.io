@@ -57,15 +57,15 @@ events:
   type: milestone
 activity:
   rss:
-    date: 2026-08-17
-    note: RSS feed active
+    date: 2026-08-28
+    note: "RSS feed active"
     url: https://bonds.coop/feed
-    checked: 2026-08-17
+    checked: 2026-08-28
   scrape:
     date: 2026-07-30
     note: Latest news page scraped
     url: https://bonds.coop/resources/co-op-news/
-    checked: 2026-08-17
+    checked: 2026-08-28
 last_checked: '2026-06-29'
 ---
 

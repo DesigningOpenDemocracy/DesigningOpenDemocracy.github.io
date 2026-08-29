@@ -54,6 +54,11 @@ activity:
     checked: 2026-08-09
     date: 2026-08-09
     note: Site live and actively publishing as of August 2026
+  rss:
+    date: 2026-08-19
+    note: "Latest post: Recomendaciones en materia de transparencia y lucha contra la corrupción para at"
+    url: https://transparenciacolombia.org.co/recomendaciones-atender-emergencia-terremoto-agosto-2026/
+    checked: 2026-08-28
 last_checked: '2026-08-09'
 ---
 

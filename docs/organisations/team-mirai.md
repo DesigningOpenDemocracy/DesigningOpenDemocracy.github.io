@@ -55,7 +55,7 @@ activity:
     note: Confirmed live (HTTP 200), site current
   rss:
     note: No feed found
-    checked: 2026-08-17
+    checked: 2026-08-28
 last_checked: '2026-08-09'
 ---
 

@@ -67,6 +67,11 @@ activity:
       current'
     url: https://budgit.org/publications/
     checked: 2026-08-25
+  rss:
+    date: 2026-08-19
+    note: "Latest post: How Digital Tools Like the PHC Accountability Tracka Are Closing the Gap Between"
+    url: https://budgit.org/role-of-technology-in-improving-phc-service-delivery-how-digital-tools-like-the-phc-accountability-tracka-are-closing-the-gap-between-government-commitments-and-community-level-healthcare-re/
+    checked: 2026-08-28
 last_checked: '2026-08-25'
 ---
 

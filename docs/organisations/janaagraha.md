@@ -56,10 +56,10 @@ activity:
       and site actively promoting current programs
     url: https://www.janaagraha.org
   rss:
-    date: 2026-08-17
-    note: RSS feed active
-    url: https://www.janaagraha.org/feed
-    checked: 2026-08-17
+    date: 2026-05-14
+    note: "Latest post: Too Many Cooks in the Urban Services Kitchen"
+    url: https://www.janaagraha.org/too-many-cooks-in-the-urban-services-kitchen/
+    checked: 2026-08-28
 last_checked: '2026-07-16'
 ---
 

@@ -40,6 +40,11 @@ activity:
     note: Page created and verified against live sources (org website, Wikipedia)
       during landscape gap research
     checked: 2026-08-21
+  rss:
+    date: 2026-08-24
+    note: "Latest post: FairVote news update: Aug 24, 2026"
+    url: https://fairvote.org/fairvote-news-update-aug-24-2026/
+    checked: 2026-08-28
 last_checked: '2026-08-21'
 ---
 

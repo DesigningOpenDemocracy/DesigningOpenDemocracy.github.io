@@ -76,9 +76,10 @@ activity:
     date: 2026-06-07
     note: was definitely active last year, as noted by a dod member
   sitemap:
-    checked: 2026-08-17
-    date: 2026-06-05
-    note: Server still up (sitemap detected)
+    date: 2026-08-27
+    note: "Page last modified (from sitemap)"
+    url: https://www.buildaballot.org.au/sitemap.xml
+    checked: 2026-08-28
 last_checked: '2026-06-28'
 ---
 

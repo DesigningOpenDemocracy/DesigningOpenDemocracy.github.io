@@ -50,10 +50,10 @@ activity:
     note: Site confirmed active; articles dated through 3 July 2026 on Bolivian mining
       policy
   rss:
-    checked: 2026-08-09
-    date: 2026-08-05
-    note: 'Latest post: Cultura es lo que queda cuando ya no queda nada'
-    url: https://fundacionsolon.org/cultura-es-lo-que-queda-cuando-ya-no-queda-nada/
+    date: 2026-08-26
+    note: "Latest post: Detrás del humo de La Asunta"
+    url: https://fundacionsolon.org/detras-del-humo-de-la-asunta/
+    checked: 2026-08-28
 last_checked: '2026-07-05'
 ---
 

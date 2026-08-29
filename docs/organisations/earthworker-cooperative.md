@@ -48,7 +48,7 @@ events:
   notable_reason: Became a worker-owned manufacturing co-op
 activity:
   rss:
-    checked: 2026-08-17
+    checked: 2026-08-28
     date: 2026-07-13
     note: 'Latest post: Remembering Katherine Cunningham'
     url: https://earthworker.coop/remembering-katherine-cunningham/

@@ -60,7 +60,7 @@ activity:
       NR Floods, the community is given a (small) chance to be heard'''
     url: https://reclaim.org.au/nearly-four-years-after-the-nr-floods-the-community-is-given-a-small-chance-to-be-heard/
   rss:
-    checked: 2026-08-17
+    checked: 2026-08-28
     date: 2026-02-09
     note: 'Latest post: Nearly four years after the NR Floods, the community is given
       a (small) chance t'
@@ -69,7 +69,7 @@ activity:
     date: 2026-02-01
     note: 'Latest post: Gallery'
     url: https://reclaim.org.au/category/lpa-resources/
-    checked: 2026-08-17
+    checked: 2026-08-28
 last_checked: '2026-07-16'
 ---
 

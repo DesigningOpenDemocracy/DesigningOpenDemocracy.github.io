@@ -62,7 +62,7 @@ activity:
       as Fusion Party members for AEC registration purposes. Kept active.'
     url: https://pirateparty.org.au
   rss:
-    checked: 2026-08-17
+    checked: 2026-08-28
     date: 2024-05-14
     note: 'Latest post: Pirate Party Australia raises alarm over miscarriage of justice
       in David McBride'

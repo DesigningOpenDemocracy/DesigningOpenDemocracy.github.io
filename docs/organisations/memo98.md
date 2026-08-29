@@ -55,12 +55,12 @@ activity:
       2026 formal complaint on public broadcaster impartiality and press freedom monitoring
     url: https://memo98.sk/articles/blog
   scrape:
-    checked: 2026-08-17
+    checked: 2026-08-28
     date: 2025-12-20
     note: Latest news page scraped
     url: https://memo98.sk/articles/blog
   sitemap:
-    checked: 2026-08-17
+    checked: 2026-08-28
     date: 2025-12-15
     note: Page last modified (from sitemap)
 last_checked: '2026-07-16'

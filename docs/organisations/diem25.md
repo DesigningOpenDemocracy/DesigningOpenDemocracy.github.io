@@ -54,10 +54,10 @@ activity:
       MERA25 Berlin campaign launch for Sep 2026 elections'
     url: https://diem25.org/news/
   rss:
-    date: 2026-08-17
-    note: RSS feed active
+    date: 2026-08-28
+    note: "RSS feed active"
     url: https://diem25.org/news/feed
-    checked: 2026-08-17
+    checked: 2026-08-28
   scrape:
     checked: 2026-06-08
     date: 2026-06-04

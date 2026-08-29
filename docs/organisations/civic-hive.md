@@ -51,11 +51,10 @@ events:
   location: Lagos, Nigeria
 activity:
   rss:
-    date: 2026-08-10
-    note: 'Latest post: Navigating Technology and Inclusion in Nigeria’s Electoral
-      Future'
-    url: https://civichive.org/navigating-technology-and-inclusion-in-nigerias-electoral-future/?utm_source=rss&utm_medium=rss&utm_campaign=navigating-technology-and-inclusion-in-nigerias-electoral-future
-    checked: 2026-08-17
+    date: 2026-08-25
+    note: "Latest post: APPLY: Creative Changemakers Fellowship 2026"
+    url: https://civichive.org/ccmf2026/?utm_source=rss&utm_medium=rss&utm_campaign=ccmf2026
+    checked: 2026-08-28
   url: https://civichive.org/2026-osun-state-governorship-election/?utm_source=rss&utm_medium=rss&utm_campaign=2026-osun-state-governorship-election
 last_checked: '2026-08-09'
 ---

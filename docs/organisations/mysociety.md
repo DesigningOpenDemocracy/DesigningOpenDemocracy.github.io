@@ -56,10 +56,10 @@ events:
   notable_reason: Platform/product launch
 activity:
   rss:
-    date: 2026-08-17
-    note: 'Latest post: The ICO is changing: it’s an ideal time to demand better'
-    url: https://www.mysociety.org/2026/08/17/the-ico-is-changing-its-an-ideal-time-to-demand-better/
-    checked: 2026-08-17
+    date: 2026-08-27
+    note: "Latest post: The problem with making public data pay for itself"
+    url: https://www.mysociety.org/2026/08/27/the-problem-with-making-public-data-pay-for-itself/
+    checked: 2026-08-28
 last_checked: '2026-05-29'
 ---
 

@@ -45,10 +45,10 @@ events:
   notable_reason: Platform/product launch
 activity:
   rss:
-    date: 2026-08-14
-    note: 'Latest post: ans_9388_818839906'
-    url: https://www.idea.int/node/161776
-    checked: 2026-08-17
+    date: 2026-08-28
+    note: "Latest post: La Protección de los Procesos Electorales en Honduras"
+    url: https://www.idea.int/publications/catalogue/html/la-proteccion-de-los-procesos-electorales-en-honduras
+    checked: 2026-08-28
 last_checked: '2026-05-29'
 ---
 

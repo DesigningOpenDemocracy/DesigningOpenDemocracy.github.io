@@ -55,7 +55,7 @@ events:
   type: deliberation
 activity:
   rss:
-    checked: 2026-08-17
+    checked: 2026-08-28
     date: 2026-06-02
     note: 'Latest post: Panelsamtal med Audrey Tang'
     url: https://digidemlab.org/news/panelsamtal-kan-deltagandedemokrati-bli-en-motkraft-i-en-orolig-tid/

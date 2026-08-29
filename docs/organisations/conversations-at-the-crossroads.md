@@ -53,15 +53,15 @@ activity:
       the far-right'
     url: https://www.crossroadsconversation.com.au/events
   scrape:
-    date: 2026-08-06
-    note: Latest news page scraped
+    date: 2026-08-27
+    note: "Latest news page scraped"
     url: https://www.crossroadsconversation.com.au/events
-    checked: 2026-08-17
+    checked: 2026-08-28
   sitemap:
-    date: 2026-08-12
-    note: Page last modified (from sitemap)
+    date: 2026-08-24
+    note: "Page last modified (from sitemap)"
     url: https://www.crossroadsconversation.com.au/sitemap.xml
-    checked: 2026-08-17
+    checked: 2026-08-28
 last_checked: '2026-06-29'
 ---
 

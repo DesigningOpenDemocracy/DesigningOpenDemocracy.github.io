@@ -249,6 +249,8 @@
     "last_modified": "Tue, 25 Nov 2025 21:34:43 GMT"
   },
   "https://bethnoveck.medium.com/was-vtaiwan-such-a-big-flop-after-all-d6b365f916dc": {
+    "archive_checked": "2026-08-28",
+    "archive_url": "http://web.archive.org/web/20250916173243/https://bethnoveck.medium.com/was-vtaiwan-such-a-big-flop-after-all-d6b365f916dc",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-20",
     "evidence": [
@@ -767,6 +769,8 @@
     "last_modified": null
   },
   "https://commonslibrary.parliament.uk/research-briefings/cbp-10876/": {
+    "archive_checked": "2026-08-28",
+    "archive_url": "http://web.archive.org/web/20260828153521/https://commonslibrary.parliament.uk/research-briefings/cbp-10876/",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-20",
     "evidence": [
@@ -3637,6 +3641,7 @@
     "blocked_since": "2026-08-18",
     "url_status": "dead"
   },
+  "https://events.humanitix.com/finding-common-ground-with-democracyco-improving-the-legitimacy-of-public-policy": {},
   "https://events.humanitix.com/international-day-of-democracy": {
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-25"
@@ -3834,6 +3839,8 @@
     "blocked_since": "2026-08-29"
   },
   "https://foro.org.co/quienes-somos/": {
+    "archive_checked": "2026-08-28",
+    "archive_url": "http://web.archive.org/web/20260828152842/https://foro.org.co/quienes-somos/",
     "blocked": "ROBOTS_DISALLOWED",
     "blocked_since": "2026-08-20",
     "evidence": [
@@ -5643,6 +5650,8 @@
     "last_modified": null
   },
   "https://theyvoteforyou.org.au/about": {
+    "archive_checked": "2026-08-28",
+    "archive_url": "http://web.archive.org/web/20260812053340/https://theyvoteforyou.org.au/about",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-20",
     "evidence": [
@@ -6140,6 +6149,8 @@
     "last_modified": null
   },
   "https://www.ag.gov.au/integrity/australias-open-government-partnership": {
+    "archive_checked": "2026-08-28",
+    "archive_url": "http://web.archive.org/web/20251112013637/https://www.ag.gov.au/integrity/australias-open-government-partnership",
     "evidence": [
       {
         "context": {
@@ -6307,6 +6318,8 @@
     "last_modified": null
   },
   "https://www.britannica.com/topic/slavery-sociology/Slave-societies": {
+    "archive_checked": "2026-08-28",
+    "archive_url": "http://web.archive.org/web/20260721132550/https://www.britannica.com/topic/slavery-sociology/Slave-societies",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-20",
     "evidence": [
@@ -6526,6 +6539,8 @@
     "last_modified": null
   },
   "https://www.coe.int/en/web/congress/-/deliberative-democracy-in-ukraine-congress-to-support-three-citizens-assemblies-in-2025-2026": {
+    "archive_checked": "2026-08-28",
+    "archive_url": "http://web.archive.org/web/20260817141651/https://www.coe.int/en/web/congress/-/deliberative-democracy-in-ukraine-congress-to-support-three-citizens-assemblies-in-2025-2026",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-20",
     "evidence": [
@@ -7325,6 +7340,8 @@
     "last_modified": null
   },
   "https://www.involve.org.uk/about/about-involve": {
+    "archive_checked": "2026-08-28",
+    "archive_url": "http://web.archive.org/web/20260816153423/https://www.involve.org.uk/about/about-involve",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-20",
     "evidence": [
@@ -7341,6 +7358,10 @@
       }
     ],
     "manual_checked": "2026-08-22"
+  },
+  "https://www.ipc.nsw.gov.au/news/open-government-partnership-final-public-consultation-draft-commitments-australias-third-national-action-plan": {
+    "archive_checked": "2026-08-28",
+    "archive_url": "http://web.archive.org/web/20250524182833/https://www.ipc.nsw.gov.au/news/open-government-partnership-final-public-consultation-draft-commitments-australias-third-national-action-plan"
   },
   "https://www.ipsnews.net/2026/08/pakistans-crackdown-on-journalists-comes-under-heavy-fire/": {
     "checked": "2026-08-26",
@@ -7516,6 +7537,8 @@
     "last_modified": null
   },
   "https://www.lesswrong.com/posts/oqvsR2LmHWamyKDcj/large-language-models-will-be-great-for-censorship": {
+    "archive_checked": "2026-08-28",
+    "archive_url": "http://web.archive.org/web/20260520051548/https://www.lesswrong.com/posts/oqvsR2LmHWamyKDcj/large-language-models-will-be-great-for-censorship",
     "blocked": "HTTP_429",
     "blocked_since": "2026-08-25"
   },
@@ -7950,6 +7973,8 @@
     "last_modified": null
   },
   "https://www.npr.org/2021/01/12/956020789/israeli-human-rights-group-says-the-country-pursues-nondemocratic-apartheid-regi": {
+    "archive_checked": "2026-08-28",
+    "archive_url": "http://web.archive.org/web/20260821060852/https://www.npr.org/2021/01/12/956020789/israeli-human-rights-group-says-the-country-pursues-nondemocratic-apartheid-regi",
     "evidence": [
       {
         "context": {
@@ -8005,6 +8030,8 @@
     "last_modified": null
   },
   "https://www.opengovpartnership.org/documents/australia-letter-of-intent-to-join-ogp/": {
+    "archive_checked": "2026-08-28",
+    "archive_url": "http://web.archive.org/web/20250118073839/https://www.opengovpartnership.org/documents/australia-letter-of-intent-to-join-ogp/",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-20",
     "evidence": [
@@ -8449,6 +8476,8 @@
     "last_modified": null
   },
   "https://www.science.org/doi/10.1126/science.adq2852": {
+    "archive_checked": "2026-08-28",
+    "archive_url": "http://web.archive.org/web/20251212073459/https://www.science.org/doi/10.1126/science.adq2852",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-20",
     "evidence": [
@@ -8816,6 +8845,8 @@
     "last_modified": "Wed, 26 Aug 2026 11:18:10 GMT"
   },
   "https://www.unimelb.edu.au/newsroom/news/2017/november/susan-mckinnon-foundation-and-university-of-melbourne-establish-prestigious-award-for-political-leadership": {
+    "archive_checked": "2026-08-28",
+    "archive_url": "http://web.archive.org/web/20250103063217/https://www.unimelb.edu.au/newsroom/news/2017/november/susan-mckinnon-foundation-and-university-of-melbourne-establish-prestigious-award-for-political-leadership",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-20",
     "evidence": [
@@ -8892,6 +8923,8 @@
     "last_modified": "Wed, 26 Aug 2026 03:10:53 GMT"
   },
   "https://www.weforum.org/organizations/movilizatorio/": {
+    "archive_checked": "2026-08-28",
+    "archive_url": "http://web.archive.org/web/20260513195149/https://www.weforum.org/organizations/movilizatorio/",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-20",
     "evidence": [
@@ -8910,6 +8943,8 @@
     "manual_checked": "2026-08-22"
   },
   "https://www.whitehouse.senate.gov/news/release/whitehouse-grassley-issue-statement-on-treasury-departments-final-rule-dismantling-key-element-of-corporate-transparency-act/": {
+    "archive_checked": "2026-08-28",
+    "archive_url": "http://web.archive.org/web/20260821062609/https://www.whitehouse.senate.gov/news/release/whitehouse-grassley-issue-statement-on-treasury-departments-final-rule-dismantling-key-element-of-corporate-transparency-act/",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-20",
     "evidence": [

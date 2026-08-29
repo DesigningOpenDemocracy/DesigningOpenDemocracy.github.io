@@ -47,7 +47,7 @@ events:
   type: launch
 activity:
   rss:
-    checked: 2026-08-17
+    checked: 2026-08-28
     note: No feed found
 last_checked: '2026-08-09'
 ---

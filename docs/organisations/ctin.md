@@ -52,7 +52,7 @@ events:
   type: conference
 activity:
   rss:
-    checked: 2026-08-17
+    checked: 2026-08-28
     date: 2025-04-30
     note: 'Latest post: Civic Tech Innovation Network Annual Report: 2024/25'
     url: https://civictech.africa/civic-tech-innovation-network-annual-report-2024-25/

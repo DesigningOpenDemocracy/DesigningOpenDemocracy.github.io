@@ -47,7 +47,7 @@ events:
   notable_reason: Founding of the organisation
 activity:
   rss:
-    checked: 2026-08-17
+    checked: 2026-08-28
     date: 2026-07-31
     note: 'Latest post: Mapping Northern Ireland''s proposed polling places'
     url: https://democracyclub.org.uk/blog/2026/07/31/mapping-northern-irelands-proposed-polling-places/
@@ -55,7 +55,7 @@ activity:
     date: 2026-07-31
     note: Latest news page scraped
     url: https://democracyclub.org.uk/blog/
-    checked: 2026-08-17
+    checked: 2026-08-28
 last_checked: '2026-06-15'
 ---
 

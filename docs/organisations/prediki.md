@@ -65,11 +65,11 @@ activity:
       footer copyright dated 2012-2022 but platform is operating.
     url: https://www.prediki.com
   rss:
-    checked: 2026-08-17
+    checked: 2026-08-28
     note: No feed found
   scrape:
     hint: unreachable
-    checked: 2026-08-17
+    checked: 2026-08-28
     date: 2022-09-30
     note: Latest news page scraped
     url: https://www.prediki.com/meta/en/Management-by-Predictions-(Prediki-Blog-in-English)/

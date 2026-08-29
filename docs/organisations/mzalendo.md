@@ -64,6 +64,11 @@ activity:
       next general election'
     url: https://mzalendo.com/about/
     checked: 2026-08-25
+  sitemap:
+    date: 2026-08-17
+    note: "Page last modified (from sitemap)"
+    url: https://mzalendo.com/sitemap.xml
+    checked: 2026-08-28
 last_checked: '2026-08-25'
 ---
 

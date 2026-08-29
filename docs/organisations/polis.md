@@ -48,7 +48,7 @@ activity:
     note: website loaded. No obvious news pages. But copy right is set to © 2026 on
       the page.
   rss:
-    checked: 2026-08-17
+    checked: 2026-08-28
     note: No feed found
 last_checked: '2026-05-30'
 ---

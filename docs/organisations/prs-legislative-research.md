@@ -59,7 +59,7 @@ activity:
       and bill commentary.
     url: https://prsindia.org
   sitemap:
-    checked: 2026-08-17
+    checked: 2026-08-28
     date: 2021-07-17
     note: Page last modified (from sitemap)
 last_checked: '2026-07-19'

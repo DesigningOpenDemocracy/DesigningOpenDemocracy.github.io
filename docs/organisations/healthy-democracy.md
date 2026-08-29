@@ -55,7 +55,7 @@ activity:
       assembly'), operating since 2007
     url: https://healthydemocracy.org
   rss:
-    checked: 2026-08-17
+    checked: 2026-08-28
     date: 2026-02-17
     note: 'Latest post: Want residents, not politicians, to find answers to LA’s thorniest
       problems? Try'

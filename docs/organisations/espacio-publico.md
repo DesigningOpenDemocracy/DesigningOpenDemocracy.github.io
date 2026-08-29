@@ -51,10 +51,10 @@ events:
   proof_warning: true
 activity:
   rss:
-    checked: 2026-08-17
-    date: 2026-07-23
-    note: 'Latest post: Más rigor, menos ruido'
-    url: https://espaciopublico.cl/mas-rigor-menos-ruido/
+    date: 2026-08-26
+    note: "Latest post: Más valor desde el cobre: expertos analizan desafíos para el desarrollo producti"
+    url: https://espaciopublico.cl/mas-valor-desde-el-cobre-expertos-analizan-desafios-para-el-desarrollo-productivo-en-chile/
+    checked: 2026-08-28
 last_checked: '2026-08-09'
 ---
 

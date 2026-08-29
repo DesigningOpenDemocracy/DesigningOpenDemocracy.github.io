@@ -43,7 +43,7 @@ activity:
     date: 2026-06-07
     note: website loaded. Last convention at 2025
   rss:
-    checked: 2026-08-17
+    checked: 2026-08-28
     date: 2022-09-04
     note: 'Latest post: The second national Community Independents Convention, August
       2022'

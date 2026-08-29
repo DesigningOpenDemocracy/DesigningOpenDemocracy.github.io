@@ -42,7 +42,7 @@ events:
   url_checked: '2026-08-17'
 activity:
   rss:
-    checked: 2026-08-09
+    checked: 2026-08-28
     date: 2026-08-04
     note: 'Latest post: Centro Gumilla, FUNDACEDEAP y Excuela consolidan alianza estratégica
       para formar'

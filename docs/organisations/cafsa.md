@@ -50,7 +50,7 @@ events:
   location: Woodville Town Hall, Adelaide
 activity:
   rss:
-    checked: 2026-08-09
+    checked: 2026-08-28
     date: 2026-07-09
     note: 'Latest post: CAfSA News Bulletin no. 8'
     url: https://cafsa.org.au/news-bulletin-no-8/?utm_source=rss&utm_medium=rss&utm_campaign=news-bulletin-no-8

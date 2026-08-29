@@ -80,16 +80,16 @@ activity:
       electoral-reform advocacy.
     url: https://www.prsa.org.au
   rss:
-    checked: 2026-08-17
+    checked: 2026-08-28
     date: 2020-07-09
     note: 'Latest post: Orders in Council gazetted for single-councillor wards have
       taken effect'
     url: https://prsa.org.au/news/2020/#2020-07b
   scrape:
-    date: 2026-03-01
-    note: Latest news page scraped
+    date: 2026-06-01
+    note: "Latest news page scraped"
     url: https://www.prsa.org.au/qn/indexqn.htm
-    checked: 2026-08-17
+    checked: 2026-08-28
 last_checked: '2026-07-19'
 ---
 

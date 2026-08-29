@@ -57,7 +57,7 @@ activity:
     note: 'Latest commit: update GitHub Actions to Node.js 24-compatible versions'
     url: https://github.com/demokratie-live/democracy-client/commits/main
   rss:
-    checked: 2026-08-17
+    checked: 2026-08-28
     note: No feed found
 last_checked: '2026-06-29'
 ---

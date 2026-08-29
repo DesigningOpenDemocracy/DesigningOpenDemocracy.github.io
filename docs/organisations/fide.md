@@ -51,10 +51,10 @@ events:
   country: AT
 activity:
   sitemap:
-    checked: 2026-08-17
-    date: 2026-08-07
-    note: Page last modified (from sitemap)
+    date: 2026-08-21
+    note: "Page last modified (from sitemap)"
     url: https://fidemocracy.org/sitemap.xml
+    checked: 2026-08-28
 last_checked: '2026-08-09'
 ---
 

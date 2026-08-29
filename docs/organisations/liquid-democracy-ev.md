@@ -59,15 +59,15 @@ activity:
       relocation); adhocracy+, meinBerlin, Zukunft D projects all current
     url: https://liqd.net/en/
   scrape:
-    date: 2026-07-07
-    note: Latest news page scraped
+    date: 2026-08-26
+    note: "Latest news page scraped"
     url: https://liqd.net/en/blog/
-    checked: 2026-08-17
+    checked: 2026-08-28
   sitemap:
-    date: 2026-08-17
-    note: Page last modified (from sitemap)
+    date: 2026-08-28
+    note: "Page last modified (from sitemap)"
     url: https://liqd.net/en/sitemap.xml
-    checked: 2026-08-17
+    checked: 2026-08-28
 last_checked: '2026-07-16'
 ---
 

@@ -51,10 +51,10 @@ events:
   notable_reason: Platform/product launch
 activity:
   rss:
-    date: 2026-08-10
-    note: 'Latest post: Why does democracy need a library?'
-    url: https://oaf.org.au/2026/08/10/why-does-democracy-need-a-library/
-    checked: 2026-08-17
+    date: 2026-08-13
+    note: "Latest post: This is what our library is for"
+    url: https://oaf.org.au/2026/08/13/this-is-what-our-library-is-for/
+    checked: 2026-08-28
 last_checked: '2026-06-02'
 ---
 

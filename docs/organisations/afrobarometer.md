@@ -59,10 +59,10 @@ activity:
     url: https://consuldemocracy.org/about-us/
     checked: 2026-08-21
   rss:
-    date: 2026-08-08
-    note: 'Latest post: AB Update July 2026'
-    url: https://www.afrobarometer.org/articles/ab-update-july-2026/
-    checked: 2026-08-17
+    date: 2026-08-21
+    note: "Latest post: More than half of African youth consider emigration, but better opportunities at"
+    url: https://www.afrobarometer.org/articles/more-than-half-of-african-youth-consider-emigration-but-better-opportunities-at-home-could-make-staying-a-choice-advocates-say/
+    checked: 2026-08-28
 last_checked: '2026-08-21'
 ---
 
