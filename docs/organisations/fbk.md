@@ -34,6 +34,23 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Founding of the organisation
+- date: '2025-11-27'
+  title: Designated a "terrorist organisation" by Russia's Supreme Court, the harshest
+    legal classification available
+  url: https://www.themoscowtimes.com/2025/11/27/supreme-court-designates-navalnys-anti-corruption-group-a-terrorist-organization-a91256
+  quote: Russia’s Supreme Court on Thursday designated Alexei Navalny’s Anti-Corruption
+    Foundation as a terrorist organization, escalating a yearslong crackdown on the
+    late opposition leader’s network and exposing its members and supporters to even
+    harsher penalties.
+  note: The ruling targeted Anti-Corruption Foundation (ACF), Inc., the US-registered
+    successor entity to the original Russia-based FBK (declared an "undesirable organization"
+    in 2021). Escalates a years-long designation crackdown; Russian authorities have
+    opened over 100 criminal cases against donors to Navalny-linked groups.
+  proof_level: high
+  url_checked: '2026-08-29'
+  notable: true
+  notable_reason: Harshest legal designation escalation against the organisation
+  type: other
 activity:
   manual:
     checked: 2026-06-07

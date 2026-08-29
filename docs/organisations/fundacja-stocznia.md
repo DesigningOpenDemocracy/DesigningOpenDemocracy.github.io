@@ -32,6 +32,26 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Founding of the organisation
+- date: '2022-01-01'
+  title: Ran Poland's first National Citizens' Panel, on energy poverty
+  url: https://ibs.org.pl/jak-walczyc-z-ubostwem-energetycznym-narada-obywatelska-o-kosztach-energii/
+  quote: 'Fundacja Stocznia w 2022 roku zrealizowała projekt Narada obywatelska o
+    kosztach energii. Był to ogólnopolski proces, który miał na celu wspólny namysł
+    nad problemem ubóstwa energetycznego w naszym kraju. ... W ramach procesu zorganizowano:
+    narady lokalne i pierwszy w kraju Ogólnopolski panel obywatelski.'
+  note: 'Translation: "In 2022, Fundacja Stocznia carried out the Citizens'' Deliberation
+    on Energy Costs project. It was a nationwide process aimed at joint reflection
+    on the problem of energy poverty in our country. ... The process included local
+    deliberations and the country''s first National Citizens'' Panel." Year-only date
+    estimate (source published 30 October 2022, describing the year''s project); local
+    deliberations ran through mid-2022 with the first national panel in autumn. Coordinated
+    by Maria Belina Brzozowska, with research input from the Institute for Structural
+    Research (IBS), the source of this citation.'
+  proof_level: high
+  url_checked: '2026-08-29'
+  notable: true
+  notable_reason: First national citizens' panel of its kind in Poland
+  type: deliberation
 activity:
   rss:
     checked: 2026-08-17

@@ -1491,11 +1491,14 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/Anti-Corruption_Foundation": {
-    "checked": "2026-08-26",
+    "blocked": "HTTP_429",
+    "blocked_since": "2026-08-29",
+    "checked": "2026-08-29",
     "document_sha256": "0cefabe5c97a574f68d38140a9e7866f9f4de711856cb72ed12f72d8d9d7b5dc",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-29",
         "context": {
           "prefix": "ns in which government structures will feel pressure, and creating a real alternative to the current power system. == History == === Creation ===",
           "sha256": "a8e4becb59b91507cdcd5157ce9c1438c7e39f1cd7b2fbcf51592cd2e1bfe4a3",
@@ -2115,7 +2118,7 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/Fusion_Party_(Australia)": {
-    "checked": "2026-08-26",
+    "checked": "2026-08-29",
     "document_sha256": "8e8b46ad71e5e9741af34300b344e6b51f4f30c28e588309099b9a30bc81a352",
     "etag": null,
     "evidence": [
@@ -2127,6 +2130,17 @@
         },
         "id": "6097de949a98fce4a99d85fc79ee0b17ef1f9f2781d8a614e93ac8f6833f32d4",
         "quote": "was formed in 2021 following the passing of the Electoral Legislation Amendment (Party Registration Integrity) Bill 2021",
+        "verified": true
+      },
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": "y and Secular Party were deregistered in January 2022 by the Australian Electoral Commission (AEC). The Pirate Party was deregistered in April 2021.",
+          "sha256": "f66cbd9f1fd72bdade6cd69291a488d812d1904d49d49d2b9898f6cbeda47a03",
+          "suffix": "Fusion has a federated structure, with the merging former parties retaining a degree of autonomy as formal branches. == Ideology and policies == Th"
+        },
+        "id": "188118d9f4f64ceedbc5b1802f2b93723e90d94dcd19dd338947e7abff69a20b",
+        "quote": "Fusion underwent a name change to FUSION | Planet Rescue | Whistleblower Protection | Innovation in January 2025.",
         "verified": true
       }
     ],
@@ -2207,11 +2221,12 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/Goree_Institute": {
-    "checked": "2026-08-26",
+    "checked": "2026-08-29",
     "document_sha256": "7fb96f7dbd6db04f4a6e95cb3ac170e85867d3c9ddeea86dbbc64ba59ddecffd",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-29",
         "context": {
           "prefix": "nization located on Gor\u00e9e Island in Dakar, Senegal. == History == The institute, born from an idea formulated by Senegalese president Abdou Diouf,",
           "sha256": "982e6de61abdcaf25a2bd8560c21aae638ae0e08a2b1753e7076edf94e950b6f",
@@ -3747,6 +3762,10 @@
     ],
     "last_modified": null
   },
+  "https://foro.org.co/no-bote-el-voto/": {
+    "blocked": "ROBOTS_DISALLOWED",
+    "blocked_since": "2026-08-29"
+  },
   "https://foro.org.co/quienes-somos/": {
     "blocked": "ROBOTS_DISALLOWED",
     "blocked_since": "2026-08-20",
@@ -3881,6 +3900,26 @@
         },
         "id": "a010f2e8072c84a697d2cd73667f7a7b9d4436b8e6a29df63775be7e70d14445",
         "quote": "Founded by economist Glen Weyl in 2018, the RadicalxChange Foundation is a 501(c)(3) nonprofit dedicated to advancing the RxC movement, to building community, and to education about democratic innovation.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://goreeinstitut.org/symposium-annuel-2026-de-la-reflexion-a-laction-un-tournant-strategique/": {
+    "checked": "2026-08-29",
+    "document_sha256": "d710be8ed4e1b4847aeba9a1df7dbf59440848bd402bc24a215b87dedde50edf",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": "l\u00e9 le Directeur ex\u00e9cutif, Doudou Dia, les huit premi\u00e8res \u00e9ditions du Symposium annuel ont principalement \u00e9t\u00e9 marqu\u00e9es par des r\u00e9flexions acad\u00e9miques.",
+          "sha256": "1e13824e19c6e1ec0e68b3c00f3c8c5c9e87fba07c0d61b58d145702bc57cc0a",
+          "suffix": "Une r\u00e9orientation qui r\u00e9pond \u00e0 une r\u00e9alit\u00e9 de plus en plus manifeste, \u00e0 savoir les remises en question actuelles de la d\u00e9mocratie \u00e9manent en grande p",
+          "text": "Comme l\u2019a rappel\u00e9 le Directeur ex\u00e9cutif, Doudou Dia, les huit premi\u00e8res \u00e9ditions du Symposium annuel ont principalement \u00e9t\u00e9 marqu\u00e9es par des r\u00e9flexions acad\u00e9miques. Pour cette \u00e9dition 2026, le Gor\u00e9e Institute a fait le choix strat\u00e9gique de recentrer ses priorit\u00e9s sur les jeunes et les femmes, qui repr\u00e9sentent pr\u00e8s de 70 % de la population. Une r\u00e9orientation qui r\u00e9pond \u00e0 une r\u00e9alit\u00e9 de plus en plus manifeste, \u00e0 savoir les remises en question actuelles de la d\u00e9mocratie \u00e9manent en grande partie de cette majorit\u00e9 d\u00e9mographique."
+        },
+        "id": "4f650d335ae40c025aae0dee3ca30b41503b038cb58d03810be7f8c9a04f1000",
+        "quote": "Pour cette \u00e9dition 2026, le Gor\u00e9e Institute a fait le choix strat\u00e9gique de recentrer ses priorit\u00e9s sur les jeunes et les femmes, qui repr\u00e9sentent pr\u00e8s de 70 % de la population.",
         "verified": true
       }
     ],
@@ -4167,6 +4206,20 @@
         },
         "id": "3c37246d83e4a5392f7029ce3447911a6476b8a1d604e07af291b08c9ddd7a44",
         "quote": "A deal with Silicon Valley start-up Swarm Fund is a big win for an Australian firm working to revolutionise the democratic process using blockchain",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://ibs.org.pl/jak-walczyc-z-ubostwem-energetycznym-narada-obywatelska-o-kosztach-energii/": {
+    "checked": "2026-08-29",
+    "document_sha256": "9c0371c474e99918d46bb675700f0e24da7fc80aac0a7478af37b600c1b5bd1b",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "id": "aaa8db6461dde58f010b4fe3c91b15a009a9945f6af5453a443d7b70739a8277",
+        "quote": "Fundacja Stocznia w 2022 roku zrealizowa\u0142a projekt Narada obywatelska o kosztach energii. By\u0142 to og\u00f3lnopolski proces, kt\u00f3ry mia\u0142 na celu wsp\u00f3lny namys\u0142 nad problemem ub\u00f3stwa energetycznego w naszym kraju. ... W ramach procesu zorganizowano: narady lokalne i pierwszy w kraju Og\u00f3lnopolski panel obywatelski.",
         "verified": true
       }
     ],
@@ -5213,11 +5266,12 @@
     "last_modified": null
   },
   "https://stocznia.org.pl/en/about-shipyard/": {
-    "checked": "2026-08-26",
+    "checked": "2026-08-29",
     "document_sha256": "3adf37635408bd7855b93870332381f55fb1f945e9b1e4eda981a2049839b29b",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-29",
         "context": {
           "prefix": "About Shipyard Share Close Facebook facebook LinkedIn linkedin mail Copy link",
           "sha256": "6686a58250e335ed90f716edfd4130f33a471e120ffbc9a84a32a69da589567a",
@@ -8191,6 +8245,26 @@
         },
         "id": "46ccffac9e18bfa51ab10733c173cb9ae7161bf5f553df9c958b8fefa8fafdb8",
         "quote": "the Habermas Machine does not offer participants the chance to explain their feelings, and hence develop empathy with those of a different view",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://www.themoscowtimes.com/2025/11/27/supreme-court-designates-navalnys-anti-corruption-group-a-terrorist-organization-a91256": {
+    "checked": "2026-08-29",
+    "document_sha256": "c9456c1bde94e16d7d10424c614574ef5ed5936b2b0260122d58d5f2865dc47a",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": ", 2025 Alexi Navalny\u2019s widow Yulia Navalnaya and fellow activist Leonid Volkov. belgium24.eu",
+          "sha256": "3f594b1cc9282821524b9271158726db67ca53ece1015ce9206c44ccf9986c95",
+          "suffix": "The ruling specifically targeted Anti-Corruption Foundation (ACF), Inc., a U.S.-registered entity that has served as the main vehicle for Naval",
+          "text": "Russia\u2019s Supreme Court on Thursday designated Alexei Navalny\u2019s Anti-Corruption Foundation as a terrorist organization, escalating a yearslong crackdown on the late opposition leader\u2019s network and exposing its members and supporters to even harsher penalties."
+        },
+        "id": "3f594b1cc9282821524b9271158726db67ca53ece1015ce9206c44ccf9986c95",
+        "quote": "Russia\u2019s Supreme Court on Thursday designated Alexei Navalny\u2019s Anti-Corruption Foundation as a terrorist organization, escalating a yearslong crackdown on the late opposition leader\u2019s network and exposing its members and supporters to even harsher penalties.",
         "verified": true
       }
     ],
