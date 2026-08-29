@@ -31,6 +31,22 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Founding of the organisation
+- date: '2020-03-03'
+  title: Built and launched Tokyo's official COVID-19 data dashboard for the metropolitan
+    government in 5 days
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8416191/
+  quote: the Tokyo Metropolitan Government commissioned a non-government organization,
+    Code for Japan (CfJ), to build a website to display their open-data ... on COVID-19
+    on February 26. CfJ developed and launched the website ... on March 3 after only
+    five days.
+  note: Peer-reviewed source (Frontiers in Public Health, via PMC/NCBI). The dashboard's
+    open-source code was widely forked — 30+ regional adaptations by other Japanese
+    prefectures and by Taiwan — and translated into 8 languages.
+  proof_level: high
+  url_checked: '2026-08-29'
+  notable: true
+  notable_reason: Widely-replicated flagship civic-tech product
+  type: launch
 activity:
   sitemap:
     checked: 2026-08-17

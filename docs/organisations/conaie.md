@@ -31,6 +31,21 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Founding of the organisation
+- date: '2025-07-20'
+  title: Marlon Vargas elected president, defeating outgoing president Leonidas Iza
+  url: https://www.elcomercio.com/actualidad/politica/marlon-vargas-gana-la-presidencia-de-la-conaie-tras-imponerse-a-leonidas-iza/
+  quote: Marlon Vargas fue electo como nuevo presidente del Consejo de Gobierno de
+    la Confederación de Nacionalidades Indígenas del Ecuador (Conaie), tras vencer
+    a Leonidas Iza, presidente saliente, en las elecciones internas realizadas este
+    20 de julio de 2025.
+  note: Held at CONAIE's eighth congress; Vargas won 617 votes to 540 (per the body's
+    "Key people" section). Iza had led the 2022 national uprising and went on to place
+    third in the 2025 presidential election.
+  proof_level: high
+  url_checked: '2026-08-29'
+  notable: true
+  notable_reason: Contested leadership transition at the confederation's congress
+  type: milestone
 activity:
   dod:
     checked: 2026-06-28

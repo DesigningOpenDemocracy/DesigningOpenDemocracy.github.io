@@ -32,6 +32,22 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Platform/product launch
+- date: '2026-02-01'
+  title: Co-developed "Populus Senado 2026," a voter-matching tool for the March 2026
+    legislative elections
+  url: https://www.uniandes.edu.co/es/noticias/gobierno-y-politica/juegue-y-encuentre-su-candidato-de-afinidad
+  quote: Desarrollado por KeepUp junto con Congreso Visible y el laboratorio GPD,
+    el test propone al ciudadano responder preguntas sobre temas públicos y recibir
+    como resultado tres candidatos con mayor afinidad.
+  note: Month-only date estimate — the article carries no publish-date metadata; Colombia's
+    2026 legislative elections were held 8 March 2026 and the tool is framed as pre-election.
+    Latest instance of the recurring "Candidatos Visibles" voter-information tradition
+    described elsewhere on this page.
+  proof_level: high
+  url_checked: '2026-08-29'
+  notable: medium
+  notable_reason: Latest edition of the recurring voter-information campaign
+  type: launch
 activity:
   rss:
     checked: 2026-08-17

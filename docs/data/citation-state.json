@@ -286,11 +286,12 @@
     "last_modified": null
   },
   "https://bonds.coop/about-us/our-story/": {
-    "checked": "2026-08-28",
+    "checked": "2026-08-29",
     "document_sha256": "8de59da11b0b3186f83993ee3f449118503ba392596e8f1064fed5399804f2ed",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-29",
         "context": {
           "prefix": "Connect with us Connect Join us",
           "sha256": "64133499a5f3dbacf5a0feb85ac302ff31c33d8b56de113d2db1792612dd6492",
@@ -325,7 +326,27 @@
         "verified": true
       }
     ],
-    "last_modified": "Fri, 28 Aug 2026 05:12:58 GMT"
+    "last_modified": "Sat, 29 Aug 2026 01:27:52 GMT"
+  },
+  "https://bonds.coop/the-castlemaine-hub-community-debentures-in-action/": {
+    "checked": "2026-08-29",
+    "document_sha256": "8f736a03655764750d45d0b9844f6e5d0fe907d2cc378fe05d4ba34f4fb22a1d",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": "Facebook Twitter LinkedIn",
+          "sha256": "edea5845654868ca2ac94c42fd32ac985c8319b0e6588ce5a4f837127788d6ca",
+          "suffix": "They established an investment co-op to buy and manage local property in the regional town so that key assets such as the Hub could be taken ou",
+          "text": "When the \u2018Hub\u2019, a beautiful heritage building in Castlemaine, faced the risk of being sold to unsympathetic developers, the community feared it would disrupt the small enterprises and community organisations it was home to. But they needed $1.95 million to secure the building."
+        },
+        "id": "edea5845654868ca2ac94c42fd32ac985c8319b0e6588ce5a4f837127788d6ca",
+        "quote": "When the \u2018Hub\u2019, a beautiful heritage building in Castlemaine, faced the risk of being sold to unsympathetic developers, the community feared it would disrupt the small enterprises and community organisations it was home to. But they needed $1.95 million to secure the building.",
+        "verified": true
+      }
+    ],
+    "last_modified": "Sat, 29 Aug 2026 01:28:34 GMT"
   },
   "https://budgit.org/about-us/": {
     "checked": "2026-08-25",
@@ -761,11 +782,12 @@
     "last_modified": null
   },
   "https://congresovisible.uniandes.edu.co/quesomos": {
-    "checked": "2026-08-26",
+    "checked": "2026-08-29",
     "document_sha256": "4ed870e60a69f4aa64d27e25930abe1d328953fb76b1a767b4250d40bd787ff4",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-08-29",
         "context": {
           "prefix": "Qu\u00e9 es Congreso Visible",
           "sha256": "dda0e7cca4c21947259bb3b665c62bf3b375cea3f13dfe688cec218b5281df0c",
@@ -1652,6 +1674,8 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/Confederation_of_Indigenous_Nationalities_of_Ecuador": {
+    "blocked": "HTTP_429",
+    "blocked_since": "2026-08-29",
     "checked": "2026-08-26",
     "document_sha256": "7f7ad365c426dbc34364dd2d05cce4de26f2b9076265b3a0aefaf678e86e4095",
     "etag": null,
@@ -4732,6 +4756,20 @@
     ],
     "last_modified": "Wed, 19 Aug 2026 06:37:41 GMT"
   },
+  "https://pmc.ncbi.nlm.nih.gov/articles/PMC8416191/": {
+    "checked": "2026-08-29",
+    "document_sha256": "27e1ecdd798010c13bccda83cef9d693019690081283cb21b3a191275da2b54a",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "id": "08807a74eeae5df8bb84b16ccd0e4866a413e0e2206c682a5eb7ea7710cbc866",
+        "quote": "the Tokyo Metropolitan Government commissioned a non-government organization, Code for Japan (CfJ), to build a website to display their open-data ... on COVID-19 on February 26. CfJ developed and launched the website ... on March 3 after only five days.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
   "https://pmg.org.za/blog/": {
     "checked": "2026-08-25",
     "document_sha256": "e6e3847dd83a071aa0214a13184cca41d577268b52b314bebd23da8e6782f6db",
@@ -5972,11 +6010,12 @@
     "manual_checked": "2026-08-22"
   },
   "https://www.code4japan.org/aboutus": {
-    "checked": "2026-08-26",
+    "checked": "2026-08-29",
     "document_sha256": "76bc2e9826958dbba007a79591879f3434820300b2550781fb4a557ca7cae82b",
-    "etag": "W/\"c1115e3bd7c8a23718539d0adc9c28d8\"",
+    "etag": "W/\"86106f67359871ad0ad9a711cd005096\"",
     "evidence": [
       {
+        "checked": "2026-08-29",
         "context": {
           "prefix": "\u6cd5\u4eba\u5354\u8cdb \u5bc4\u4ed8 Overview \u56e3\u4f53\u6982\u8981 \u56e3\u4f53\u540d \u4e00\u822c\u793e\u56e3\u6cd5\u4eba\u30b3\u30fc\u30c9\u30fb\u30d5\u30a9\u30fc\u30fb\u30b8\u30e3\u30d1\u30f3 \u304a\u554f\u3044\u5408\u308f\u305b\u5148 \u304a\u554f\u3044\u5408\u308f\u305b\u30d5\u30a9\u30fc\u30e0",
           "sha256": "da27dacd83bcf74aa79100c2a63503c93e8217cf7c6d094e3842e322ffe289f3",
@@ -6374,6 +6413,26 @@
       }
     ],
     "last_modified": null
+  },
+  "https://www.elcomercio.com/actualidad/politica/marlon-vargas-gana-la-presidencia-de-la-conaie-tras-imponerse-a-leonidas-iza/": {
+    "checked": "2026-08-29",
+    "document_sha256": "d53fc27795611975c0d8a938c66808535d782a8587a879d8851ec1275553d0eb",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-08-29",
+        "context": {
+          "prefix": "a Conaie tras imponerse a Leonidas Iza Conaie eligi\u00f3 a su nuevo presidente entre m\u00e1s de 1 400 votantes de las bases ind\u00edgenas del pa\u00eds",
+          "sha256": "9aef5b308e29c9fd49f65a76a2dc79a257498350a119ee12509235e49bcaf1e2",
+          "suffix": "M\u00e1s noticias Retrasos en la reparaci\u00f3n de la tuber\u00eda afectan el suministro de agua en el sur de Quito Estados Unidos procesar\u00e1 a",
+          "text": "Marlon Vargas fue electo como nuevo presidente del Consejo de Gobierno de la Confederaci\u00f3n de Nacionalidades Ind\u00edgenas del Ecuador (Conaie), tras vencer a Leonidas Iza, presidente saliente, en las elecciones internas realizadas este 20 de julio de 2025."
+        },
+        "id": "9aef5b308e29c9fd49f65a76a2dc79a257498350a119ee12509235e49bcaf1e2",
+        "quote": "Marlon Vargas fue electo como nuevo presidente del Consejo de Gobierno de la Confederaci\u00f3n de Nacionalidades Ind\u00edgenas del Ecuador (Conaie), tras vencer a Leonidas Iza, presidente saliente, en las elecciones internas realizadas este 20 de julio de 2025.",
+        "verified": true
+      }
+    ],
+    "last_modified": "Sat, 29 Aug 2026 01:25:00 GMT"
   },
   "https://www.folio.org.au/event-4941291": {
     "checked": "2026-08-26",

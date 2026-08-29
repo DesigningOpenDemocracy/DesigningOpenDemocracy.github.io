@@ -38,6 +38,23 @@ events:
   url_checked: '2026-08-12'
   notable: true
   notable_reason: Founding of the organisation
+- date: '2026-07-30'
+  title: Published a case study on the Castlemaine Hub's $2 million community debenture
+    campaign
+  url: https://bonds.coop/the-castlemaine-hub-community-debentures-in-action/
+  quote: When the ‘Hub’, a beautiful heritage building in Castlemaine, faced the risk
+    of being sold to unsympathetic developers, the community feared it would disrupt
+    the small enterprises and community organisations it was home to. But they needed
+    $1.95 million to secure the building.
+  note: Educational case study (by co-founder Antony McMullen) explaining member-debenture
+    financing via the Castlemaine Community Investment Co-operative's real 2025 campaign,
+    which raised $2 million to buy the heritage Hub building out of the speculative
+    property market — not a claim that Co-operative Bonds ran the campaign itself.
+  proof_level: high
+  url_checked: '2026-08-29'
+  notable: medium
+  notable_reason: Case study on a notable community-ownership financing model
+  type: milestone
 activity:
   rss:
     date: 2026-08-17
