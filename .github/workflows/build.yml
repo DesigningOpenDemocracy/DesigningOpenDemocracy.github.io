@@ -43,6 +43,9 @@ jobs:
       - name: Check event sourcing
         run: python util/check_event_sourcing.py
 
+      - name: Check election dates
+        run: python util/check_elections.py
+
       - name: Check frontmatter ordering
         run: python util/reorder_frontmatter.py --check
 

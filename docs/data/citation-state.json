@@ -1471,6 +1471,166 @@
     ],
     "last_modified": null
   },
+  "https://en.wikipedia.org/wiki/2026_Bosnian_general_election": {
+    "checked": "2026-09-02",
+    "document_sha256": "3c660f297d52117352a62852e6592fd3d673be172d99992a2e449f61973e4faa",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-09-02",
+        "context": {
+          "prefix": "",
+          "sha256": "d8737d1387ff59f7c209b81cc93ed9d8b370c98ce5abe8f2c60a3b3907c0e3d3",
+          "suffix": "They will decide the makeup of the presidency as well as national, entity and cantonal governments. == Background == === Amendment to the Electio",
+          "text": "General elections are scheduled to be held in Bosnia and Herzegovina on 4 October 2026. They will decide the makeup of the presidency as well as national, entity and cantonal governments."
+        },
+        "id": "681c0856272b89bcdae578bb64abecb3458de3cdca80cf33f2641dd5cd5fefc3",
+        "quote": "General elections are scheduled to be held in Bosnia and Herzegovina on 4 October 2026.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://en.wikipedia.org/wiki/2026_Brazilian_general_election": {
+    "checked": "2026-09-02",
+    "document_sha256": "c823e5532af0c025ea38c6566204311ae31600108b68f92ba3f52a462d6f6e84",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-09-02",
+        "context": {
+          "prefix": "",
+          "sha256": "d3159d8b092e9075de36c06702826d8429a8877b028029f40060d966b9f196b5",
+          "suffix": "If no candidate for president or governor receives the majority of the valid votes in the first round, a runoff election will be held on 25 October 2",
+          "text": "General elections will be held in Brazil on 4 October 2026 to elect the president, vice president, members of the National Congress, the governors, vice governors and legislative assemblies of all federative units, and the district council of Fernando de Noronha. If no candidate for president or governor receives the majority of the valid votes in the first round, a runoff election will be held on 25 October 2026. Incumbent president Luiz In\u00e1cio Lula da Silva of the Workers' Party is eligible for a fourth term (second consecutively), and has announced his intention to seek re-election."
+        },
+        "id": "aef147cb8f6b500792db55dfdbfc09b883847c573dbe8e86218a35ac43ae6424",
+        "quote": "General elections will be held in Brazil on 4 October 2026 to elect the president, vice president, members of the National Congress, the governors, vice governors and legislative assemblies of all federative units, and the district council of Fernando de Noronha.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://en.wikipedia.org/wiki/2026_Israeli_legislative_election": {
+    "checked": "2026-09-02",
+    "document_sha256": "6d28784d1fdba05b7cdc33b32321148f56e353fe32b6b23009a41c8242b71fc0",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-09-02",
+        "context": {
+          "prefix": "",
+          "sha256": "851f710f820adf28770d3ee589c13f05c00b85ac6cb5829dc419c77d6014a6a1",
+          "suffix": "and determine the governing coalition that succeeds the 37th government led by Prime Minister Benjamin Netanyahu. The outgoing 25th Knesset became th",
+          "text": "Legislative elections are scheduled to be held in Israel on 27 October 2026, to elect all 120 members of the 26th Knesset and determine the governing coalition that succeeds the 37th government led by Prime Minister Benjamin Netanyahu. The outgoing 25th Knesset became the first Israeli legislature to complete its full four-year term without early dissolution since 1988, ending the prolonged political crisis of 2018 \u2013 2022 that saw five consecutive snap elections. However, the government's tenure was marked by political turmoil, including mass protests over judicial reform, the 7 October attacks and subsequent Gaza war, and recurring coalition crises over Haredi military conscription. In this proportional representation system, parties must meet a 3.25% electoral threshold to enter the legislature."
+        },
+        "id": "3e2b212c0a391eafd35329d4f05cd2477084d328186e86499d5e977930bc896a",
+        "quote": "Legislative elections are scheduled to be held in Israel on 27 October 2026, to elect all 120 members of the 26th Knesset",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://en.wikipedia.org/wiki/2026_Latvian_parliamentary_election": {
+    "checked": "2026-09-02",
+    "document_sha256": "71f7e5c64672fb1dec37cc2673b335283c5c2f5bd1e083536cd86e65167ca6ad",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-09-02",
+        "context": {
+          "prefix": "",
+          "sha256": "875807676ac46d861495249a2f86e93f714d4fc6800f5c22297c2f148d9c5b71",
+          "suffix": "== Electoral system == The 100 members of the Saeima are elected by open list proportional representation from five multi-member constituencies ran",
+          "text": "Parliamentary elections are scheduled to be held in Latvia on 3 October 2026, following the end of the term of the fourteenth Saeima elected in 2022."
+        },
+        "id": "875807676ac46d861495249a2f86e93f714d4fc6800f5c22297c2f148d9c5b71",
+        "quote": "Parliamentary elections are scheduled to be held in Latvia on 3 October 2026, following the end of the term of the fourteenth Saeima elected in 2022.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://en.wikipedia.org/wiki/2026_New_Zealand_general_election": {
+    "checked": "2026-09-02",
+    "document_sha256": "d1dcc1f1cff8ad9a3ff9307d4611f192df14d3abf14908247f02a05450b42f9b",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-09-02",
+        "context": {
+          "prefix": "",
+          "sha256": "9abd3c1caf2d96ebd61a1b3cb6d02cc1c0730d0220630eb07d121725344ffc12",
+          "suffix": "Voters will elect 120 members to the House of Representatives under New Zealand's mixed-member proportional (MMP) voting system, comprising 71 member",
+          "text": "The 2026 New Zealand general election is scheduled to be held on 7 November 2026. Voters will elect 120 members to the House of Representatives under New Zealand's mixed-member proportional (MMP) voting system, comprising 71 members elected from single-member electorates and 49 members elected from closed party lists to achieve proportionality. After the previous election, the centre-right National Party, led by prime minister Christopher Luxon, formed a coalition government with the ACT and New Zealand First parties. The official Opposition to the government is the centre-left Labour Party, led by former prime minister Chris Hipkins. Other opposition parties are the left-wing Green Party and the indigenous rights-based Te P\u0101ti M\u0101ori."
+        },
+        "id": "ac90cb862759b07e3bb063a37494e14bb5a166212f21bf1c7ff0bc710b43f597",
+        "quote": "The 2026 New Zealand general election is scheduled to be held on 7 November 2026.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://en.wikipedia.org/wiki/2026_Philippine_barangay_and_Sangguniang_Kabataan_elections": {
+    "checked": "2026-09-02",
+    "document_sha256": "7a394903956b48fdee4844d8524d515feb06d5e5df398ede631bc99c72467e3f",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-09-02",
+        "context": {
+          "prefix": "Barangay (transl. villages) and Sangguniang Kabataan (SK; transl. youth council)",
+          "sha256": "c8b1217c7f683b209a559cb1244a248d7fc980908f8e2d42fad24e1b2aa9dfa7",
+          "suffix": "(transl. village council) and Sangguniang Kabataan in each of the 42,010 barangays in the country. Originally scheduled to be held on December 1, 202",
+          "text": "Barangay (transl. villages) and Sangguniang Kabataan (SK; transl. youth council) elections (BSKE) in the Philippines will be held on November 2, 2026. The elections will determine the barangay captain, SK chairperson, and the composition of the Sangguniang Barangay (transl. village council) and Sangguniang Kabataan in each of the 42,010 barangays in the country. Originally scheduled to be held on December 1, 2025, the elections were postponed to November 2026 by law signed by President Marcos. Aside from barangay and SK elections, voters in Naga, Camarines Sur will also vote in a plebiscite to approve or reject the proclamation of their city as a highly urbanized city."
+        },
+        "id": "fbd7ae3fbcfb83dd19780ba5cfaaf8561d0cd7269e33e085b7b6f3454389ffcc",
+        "quote": "elections (BSKE) in the Philippines will be held on November 2, 2026. The elections will determine the barangay captain, SK chairperson, and the composition of the Sangguniang Barangay",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://en.wikipedia.org/wiki/2026_South_African_municipal_elections": {
+    "checked": "2026-09-02",
+    "document_sha256": "4bd2ffb7330b4d7b8955e4fa80e2d881a5ed90cc893442feafda41413aad10b3",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-09-02",
+        "context": {
+          "prefix": "",
+          "sha256": "1df1485c4005044877b6be5c99bb8be548e3579574ee9cddfc524cdc227b8a21",
+          "suffix": "A total of 620 political parties registered to participate in the elections. The total number of voting districts heading into the elections was 4,48",
+          "text": "The 2026 South African municipal elections will be held on 4 November 2026 across South Africa, to elect councils for all district, metropolitan and local municipalities in each of the country's nine provinces. A total of 620 political parties registered to participate in the elections. The total number of voting districts heading into the elections was 4,488. As of August 2026, approximately 29 million South Africans were registered to vote, according to the Electoral Commission. The largest age category for registered voters in late 2025 was 30 through 39. In terms of gender, 55% of registered voters were female. A significant number of new voters registered in the lead up to the elections. The Commission's two voter registration weekends, held in June and August 2026 respectively, recorded over 754,000 new voter registrations, 46% of which came from those under 29 years old."
+        },
+        "id": "fb0eb026dba1b2e39f2415a1518190d27a2b25804739d6c56518e1c895f2875b",
+        "quote": "The 2026 South African municipal elections will be held on 4 November 2026 across South Africa, to elect councils for all district, metropolitan and local municipalities in each of the country's nine provinces.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://en.wikipedia.org/wiki/2026_Swedish_general_election": {
+    "checked": "2026-09-02",
+    "document_sha256": "71e590828b10335e9c95f69d46f757ad63360537d5b963d0fb7da04f9e9bc79d",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-09-02",
+        "context": {
+          "prefix": "",
+          "sha256": "a7da6cbf21e81ad8d05dc330fc1fe187a412e2317b3c16178adb9f7aa2a16a40",
+          "suffix": "They in turn will elect the prime minister. == Background == After the 2022 general election, a right-wing bloc consisting of the Moderates (M), Ch",
+          "text": "General elections will be held in Sweden on 13 September 2026 to elect the 349 members of the Riksdag. They in turn will elect the prime minister."
+        },
+        "id": "6eea2fcda528f9066818340acb7d2c94dda36912f3e7dbaa75b91c7729bd367a",
+        "quote": "General elections will be held in Sweden on 13 September 2026 to elect the 349 members of the Riksdag.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
   "https://en.wikipedia.org/wiki/2026_Victorian_state_election": {
     "checked": "2026-08-26",
     "document_sha256": "c4a47cfde8f12bf291805f1481a9973243df8bb9cbed96c01d7cc6dd34f34211",
@@ -1485,6 +1645,165 @@
         },
         "id": "ef26285f101aed34b9a1633aacd7ae5e8c982e64f354eca031d5a467918d7a33",
         "quote": "A state general election is scheduled to be held on 28 November 2026 to elect members of the 61st Parliament of Victoria.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://en.wikipedia.org/wiki/2027_Argentine_general_election": {
+    "checked": "2026-09-02",
+    "document_sha256": "f7e2777834808fb57b3d7bce619f30a273a3a0cd0f4f3c74d379158129cba7d2",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-09-02",
+        "context": {
+          "prefix": "",
+          "sha256": "ea9530bdd37223767218ce07192662507c05d69ed53e66438cee56f5d6614ff1",
+          "suffix": "Incumbent president Javier Milei is running for re-election for a second term. == Electoral system == === President === The election of the presi",
+          "text": "General elections are scheduled to take place in Argentina on 24 October 2027. Voters will elect the president and vice president of Argentina, members in the Chamber of Deputies and Senate, and the governors of most provinces. Incumbent president Javier Milei is running for re-election for a second term."
+        },
+        "id": "2cf39fbe2e7947af6b4c06c8233852f53eb8a974231557d7b48e38e8bf8b08bc",
+        "quote": "General elections are scheduled to take place in Argentina on 24 October 2027. Voters will elect the president and vice president of Argentina, members in the Chamber of Deputies and Senate, and the governors of most provinces.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://en.wikipedia.org/wiki/2027_Kenyan_general_election": {
+    "checked": "2026-09-02",
+    "document_sha256": "5de741061caf0a77f1bb346a62cc16c4a8f2da31cea1df3a6bb4a1f22da33b9e",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-09-02",
+        "context": {
+          "prefix": "",
+          "sha256": "1f2b5a77f5e789431de70810a863cbb854e7f036e0765153a46210d211f70694",
+          "suffix": "Incumbent President William Ruto is seeking a second term in office. == Electoral system == The president of Kenya is elected using a modified vers",
+          "text": "General elections are scheduled to be held in Kenya on 10 August 2027. Voters will elect the president, and members of the National Assembly and Senate. Incumbent President William Ruto is seeking a second term in office."
+        },
+        "id": "4abf3e3d03efb520131429f8cd2b2e5458210e6912db5bd336aa7fb1580ccc5d",
+        "quote": "General elections are scheduled to be held in Kenya on 10 August 2027. Voters will elect the president, and members of the National Assembly and Senate.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://en.wikipedia.org/wiki/2027_Mexican_legislative_election": {
+    "checked": "2026-09-02",
+    "document_sha256": "8960a14d86fc14d385a4c88abca844a2691c272c94e2d2611e1a145b98c2468d",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-09-02",
+        "context": {
+          "prefix": "",
+          "sha256": "b1cd1bf8e3f7a288b5ec5a755392d55640e574068ad57c77257b5994ffd5625c",
+          "suffix": "(2027 \u2013 2030). These elections will take place concurrently with the 2027 state elections. == Background == === Political background === In the 202",
+          "text": "Legislative elections are scheduled to be held in Mexico on 6 June 2027. Voters will elect all 500 members of the Chamber of Deputies, who will serve during the LXVII Legislature (2027 \u2013 2030). These elections will take place concurrently with the 2027 state elections."
+        },
+        "id": "f3f8c995ff95c2e21582fb53e64e16eca5ffc056cc4e41b71ebeb3aba958cfa4",
+        "quote": "Legislative elections are scheduled to be held in Mexico on 6 June 2027. Voters will elect all 500 members of the Chamber of Deputies, who will serve during the LXVII Legislature",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://en.wikipedia.org/wiki/2027_New_South_Wales_state_election": {
+    "checked": "2026-09-02",
+    "document_sha256": "c5ea06956cfd37f40d3ff884ad416b75f900a12e16ecd7b70ee3fda3c0932468",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-09-02",
+        "context": {
+          "prefix": "",
+          "sha256": "56c4d0db7768331cc591186556ca56112c915ce4e40dd0c2737dd71b7473431d",
+          "suffix": "All 93 seats in the Legislative Assembly will be up for election, along with 21 of the 42 seats in the Legislative Council. The election will be cond",
+          "text": "A state general election is scheduled to be held on 13 March 2027 to elect members of the 59th Parliament of New South Wales. All 93 seats in the Legislative Assembly will be up for election, along with 21 of the 42 seats in the Legislative Council. The election will be conducted by the NSW Electoral Commission (NSWEC). The incumbent Labor minority government, led by Premier Chris Minns, is expected to seek to win a second four-year term in office. They will be challenged by the Liberal \u2013 National Coalition, led by Opposition Leader Kellie Sloane. The Greens, the Shooters, Fishers and Farmers Party, other minor parties and several independents will also contest the election. New South Wales has compulsory voting, with optional preferential, instant runoff voting in single-member seats for the lower house (Legislative Assembly), and single transferable voting with an optional system of preferences that voters can mark in the proportionally represented upper house (Legislative Council)."
+        },
+        "id": "702ac8aaa832d020e53c5faf9f4f7f3571e716200c1268d429bcfd03eb7cb087",
+        "quote": "A state general election is scheduled to be held on 13 March 2027 to elect members of the 59th Parliament of New South Wales.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://en.wikipedia.org/wiki/2027_United_Kingdom_local_elections": {
+    "checked": "2026-09-02",
+    "document_sha256": "0c8a695adabf2fb037ba39fc8b0148fb7d527a5b5f0c77d562679f93196aaf29",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-09-02",
+        "context": {
+          "prefix": "",
+          "sha256": "ff88a146dec074d021616be722559d4077a39389d35755d39d9a9ec0eb440f8a",
+          "suffix": "The next Northern Ireland Assembly election is expected to happen at the same time. == Background == This will be the first set of local elections",
+          "text": "Local elections in the United Kingdom will be held on 6 May 2027. These include all local authorities in Northern Ireland, Scotland and Wales, some local authorities in England, and some directly elected mayors in England. The next Northern Ireland Assembly election is expected to happen at the same time."
+        },
+        "id": "3a05f0360bf1f2b1771f0ce585cac96d94734c0ccc5eebb1edf3e7ff69af6bb2",
+        "quote": "Local elections in the United Kingdom will be held on 6 May 2027. These include all local authorities in Northern Ireland, Scotland and Wales, some local authorities in England, and some directly elected mayors in England.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://en.wikipedia.org/wiki/2028_Queensland_state_election": {
+    "checked": "2026-09-02",
+    "document_sha256": "a26ceeb3cf6d2747398b1b854ddabb03ddd6a0bda0ba81b279a7af677d1e6f6a",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-09-02",
+        "context": {
+          "prefix": "",
+          "sha256": "09487a3d1fdffbdb40a0cf664ab2ec37902ecd7c308e24a3536c9213e7149e7c",
+          "suffix": "The Electoral Commission of Queensland (ECQ) will conduct the election. The incumbent Liberal National majority government, led by Premier David Cris",
+          "text": "The 2028 Queensland state election will be held on or before 28 October 2028 to elect the 59th Parliament of Queensland and its 93 seats. The Electoral Commission of Queensland (ECQ) will conduct the election. The incumbent Liberal National majority government, led by Premier David Crisafulli, will seek a second four-year term in government. They will be challenged by the Queensland Labor Party, led by Leader of the Opposition and former Premier Steven Miles. It is expected that the Queensland Greens, Pauline Hanson's One Nation, Katter's Australian Party, and other minor parties and independents will contest the election. Queensland has compulsory voting, with preferential instant runoff voting in single-member seats. However, premier David Crisafulli has pledged to reinstate optional preferential voting after Labor reinstated full compulsory preferential voting in 2016, returning the system to the recommendations from the Fitzgerald Inquiry."
+        },
+        "id": "dd993a8cac16fb8fa15d60f75b11a59b2780e601670e01a8d6cb789d159808e3",
+        "quote": "The 2028 Queensland state election will be held on or before 28 October 2028 to elect the 59th Parliament of Queensland and its 93 seats.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://en.wikipedia.org/wiki/2029_Western_Australian_state_election": {
+    "checked": "2026-09-02",
+    "document_sha256": "1055c2aeb47f8ddf90b30f9bd822ed9f511729336bf80eb4f31cd45578db36d0",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-09-02",
+        "context": {
+          "prefix": "",
+          "sha256": "e8e1e5cba8a6d7c894b6e8534f31b75c4920da5d7009debf78ee8551a6f75f8e",
+          "suffix": "== Background == The 2025 Western Australian state election saw Labor win one of the largest majorities of any state or territory government, despi",
+          "text": "The 2029 Western Australian state election is to be held on 10 March 2029, where all 59 seats in the Legislative Assembly and 37 members in the Legislative Council will be contested."
+        },
+        "id": "e8e1e5cba8a6d7c894b6e8534f31b75c4920da5d7009debf78ee8551a6f75f8e",
+        "quote": "The 2029 Western Australian state election is to be held on 10 March 2029, where all 59 seats in the Legislative Assembly and 37 members in the Legislative Council will be contested.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://en.wikipedia.org/wiki/2030_South_Australian_state_election": {
+    "checked": "2026-09-02",
+    "document_sha256": "d444f80e66b8d95488da89e418127e41a9e094c48196f7684058a01dd98467c6",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-09-02",
+        "context": {
+          "prefix": "",
+          "sha256": "8845f2ddd6d7c3c07d922c207cd2e404031ce0dd53bd6254f0911818e30deaba",
+          "suffix": "All 47 seats in the House of Assembly (lower house) will be up for election, along with 11 of the 22 seats in the Legislative Council (upper house)."
+        },
+        "id": "4d574dbfc3715fed15b774fea8dc032025846b63381a24865d945063cfaffb58",
+        "quote": "A state election will be held on 16 March 2030 to elect the members of the 57th Parliament of South Australia.",
         "verified": true
       }
     ],
@@ -2899,6 +3218,45 @@
         },
         "id": "8532e801a42b444e919d4e9f4afccc5d251d885d2c9ea702ea61f5fc604ed2dd",
         "quote": "NAMFREL mobilized 500,000 volunteers nationwide",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://en.wikipedia.org/wiki/Next_Australian_Capital_Territory_election": {
+    "checked": "2026-09-02",
+    "document_sha256": "40374130b39d0b276aa5a1acbbd3315e7526067327620671d484a1052abe9abd",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-09-02",
+        "context": {
+          "prefix": "",
+          "sha256": "2feae92c6d771a1ca74e3f9e8462c9980702c302549cfdf5a01b461b36620c3c",
+          "suffix": "The Labor Party, led by chief minister Andrew Barr, has been in government in the ACT since 2001 and will be seeking an eighth consecutive term in of",
+          "text": "An election is expected to be held in the Australian Capital Territory on 21 October 2028 to elect all 25 members of the unicameral ACT Legislative Assembly. The Labor Party, led by chief minister Andrew Barr, has been in government in the ACT since 2001 and will be seeking an eighth consecutive term in office. They are expected to be challenged by the Liberal Party, the Greens, several other minor parties and independents."
+        },
+        "id": "a9fe4c6bcb61939fbb6b924d610675410f5be3879b405565e22f9736784e2d27",
+        "quote": "An election is expected to be held in the Australian Capital Territory on 21 October 2028 to elect all 25 members of the unicameral ACT Legislative Assembly.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://en.wikipedia.org/wiki/Next_Australian_federal_election": {
+    "checked": "2026-09-02",
+    "document_sha256": "4cf6b858971bedb85c28ca97aaef4eed39ceb82d9f4e085cef829752bcbe0efb",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-09-02",
+        "context": {
+          "prefix": "ince campaigns are for a minimum of 33 days, the earliest possible date for a simultaneous House and half-Senate election is Saturday, 7 August 2027.",
+          "sha256": "0ef27650e4137e6bbb760aa492b24300c6aec15e194dc42ca0a54fb0b37a556a",
+          "suffix": "The latest possible election for the House of Representatives will be subject to the conditions above, with the house scheduled to first meet on 22 J"
+        },
+        "id": "115345b7ca3a907339c8b9288a210aa1b95e5a23147667bfd0a33eb1c8230ab4",
+        "quote": "Given that the elections for the new senators must take place by 30 June 2028, the latest possible date for a half-Senate election is 20 May 2028.",
         "verified": true
       }
     ],

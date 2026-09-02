@@ -5,8 +5,12 @@
 
 {% include "partials/next-event-banner.html" %}
 
+{%- set has_elections = calendar_events | selectattr('source', 'equalto', 'election') | list | length > 0 %}
 <p class="calendar-data-links">
   <a href="/calendar.ics">📅 iCal feed</a> ·
+  {%- if has_elections %}
+  <a href="/calendar-elections.ics">🗳️ Elections only</a> ·
+  {%- endif %}
   <a href="/data/events.json">📋 JSON export</a> ·
   <a href="/data/organisations.json">🏛 Org data</a>
 </p>
@@ -21,7 +25,7 @@
 {% set type_icons = {
   'conference': '🎤', 'workshop': '🛠️', 'meetup': '🤝',
   'meeting': '📋', 'assembly': '🏛️', 'lecture': '🎓',
-  'launch': '🚀', 'rally': '📢', 'milestone': '📌'
+  'launch': '🚀', 'rally': '📢', 'milestone': '📌', 'election': '🗳️'
 } %}
 {%- set grouped = {} %}
 {%- for e in calendar_events %}
@@ -53,6 +57,13 @@
 {%- set country_entries = country_entries | sort(attribute='name') %}
 
 {%- set feed_rows = [{'flag': '📅', 'name': 'All countries', 'path': '/calendar.ics'}] %}
+{%- if has_elections %}
+  {#- Elections cut across the country rows below rather than sitting among
+      them: a reader who wants polling days in their own calendar usually
+      does not want every meetup in the landscape alongside them, and a
+      subscribed .ics cannot be filtered after the fact. -#}
+  {%- set _ = feed_rows.append({'flag': '🗳️', 'name': 'Elections (all countries)', 'path': '/calendar-elections.ics'}) %}
+{%- endif %}
 {%- for c in country_entries %}
   {%- set _ = feed_rows.append({'flag': c.flag, 'name': c.name, 'path': '/calendar-' + c.code + '.ics'}) %}
 {%- endfor %}
@@ -85,7 +96,7 @@
   {#- A trailing end_date is only a real span when it is actually later:
       an equal (or bad) end_date is a single-day event, not a range. -#}
   {%- set multiday = e.end_date and e.end_date is not string and e.end_date > e.date %}
-  <li class="calendar-event{% if multiday %} calendar-event--multiday{% endif %}{% if e.notable is true %} calendar-event--notable{% elif e.notable == 'medium' %} calendar-event--medium{% endif %}" data-country="{{ e.country or '' }}" data-country-label="{{ e.country | country_flag }} {{ e.country | country_name }}" data-date="{{ e.date.isoformat() }}"{% if e.end_date %} data-end-date="{{ e.end_date.isoformat() if e.end_date is not string else e.end_date }}"{% endif %}{% if e.time %} data-time="{{ e.time }}"{% endif %}{% if e.end_time %} data-end-time="{{ e.end_time }}"{% endif %}>
+  <li class="calendar-event{% if multiday %} calendar-event--multiday{% endif %}{% if e.source == 'election' %} calendar-event--election{% endif %}{% if e.notable is true %} calendar-event--notable{% elif e.notable == 'medium' %} calendar-event--medium{% endif %}" data-country="{{ e.country or '' }}" data-country-label="{{ e.country | country_flag }} {{ e.country | country_name }}" data-date="{{ e.date.isoformat() }}"{% if e.end_date %} data-end-date="{{ e.end_date.isoformat() if e.end_date is not string else e.end_date }}"{% endif %}{% if e.time %} data-time="{{ e.time }}"{% endif %}{% if e.end_time %} data-end-time="{{ e.end_time }}"{% endif %}>
 
     <div class="calendar-date-block">
       <span class="calendar-date-month">{{ e.date.strftime('%b') }}</span>
@@ -103,17 +114,31 @@
         {%- if e.logo %}<img class="calendar-date-org-logo{% if e.logo_bg == 'dark' %} org-logo-needs-dark{% elif e.logo_bg == 'light' %} org-logo-needs-light{% endif %}" src="{{ e.logo }}" alt="" loading="lazy">{% endif %}
         <span class="calendar-date-org-name">{{ e.org_title }}</span>
       </a>
+      {%- elif e.source == 'election' %}
+      {#- An election has no organisation behind it and so nothing to link
+          to, but the same slot still has to answer "whose is this" for a
+          reader scanning the date column — here that is the electorate
+          voting, not an org. -#}
+      <span class="calendar-date-org calendar-date-org--election">
+        <span class="calendar-date-org-flag" aria-hidden="true">{{ e.country | country_flag }}</span>
+        <span class="calendar-date-org-name">{{ e.org_title }}</span>
+      </span>
       {%- endif %}
     </div>
 
     <div class="calendar-event-body">
       <div class="calendar-event-header">
-        {%- if e.notable is true %}<span class="calendar-event-badge">★ Major event</span>
+        {%- if e.source == 'election' %}<span class="calendar-event-badge calendar-event-badge--election">🗳️ {{ e.level_label }}</span>
+        {%- elif e.notable is true %}<span class="calendar-event-badge">★ Major event</span>
         {%- elif e.notable == 'medium' %}<span class="calendar-event-badge calendar-event-badge--medium">● Notable</span>{% endif %}
-        {%- if e.type %}<span class="calendar-event-type">{{ type_icons.get(e.type, '📅') }} {{ e.type }}</span>{% endif %}
+        {#- The election badge above already says "election" in words, so the
+            generic type chip would only repeat it. -#}
+        {%- if e.type and e.source != 'election' %}<span class="calendar-event-type">{{ type_icons.get(e.type, '📅') }} {{ e.type }}</span>{% endif %}
+        {%- if e.date_status_label %}<span class="calendar-event-datestatus">{{ e.date_status_label }}</span>{% endif %}
         {%- if e.country %}<span class="calendar-event-country">{{ e.country | country_flag }} {{ e.country | country_name }}</span>{% endif %}
       </div>
-      {%- if e.notable and e.notable_reason %}<div class="calendar-event-reason">{{ e.notable_reason }}</div>{% endif %}
+      {%- if e.notable and e.notable_reason %}<div class="calendar-event-reason">{{ e.notable_reason }}</div>
+      {%- elif e.date_note %}<div class="calendar-event-reason">{{ e.date_note }}</div>{% endif %}
 
       <div class="calendar-event-title">
         {%- if e.title_en -%}
@@ -161,7 +186,9 @@
           only the two secondary links that don't fit up there. -#}
       {%- if e.coverage_url or (e.url and e.url.startswith('http')) %}
       <div class="calendar-event-orgline">
-        {%- if not e.org_slug and e.org_title %}{{ e.org_title }}{% endif %}
+        {#- An election's electorate is already named in the date block
+            above, so only a non-election orgless entry needs it here. -#}
+        {%- if not e.org_slug and e.org_title and e.source != 'election' %}{{ e.org_title }}{% endif %}
         {%- if e.coverage_url %}<a class="calendar-event-coverage" href="{{ e.coverage_url }}">DOD coverage →</a>{% endif %}
         {%- if e.url and e.url.startswith('http') %}
         <a class="calendar-event-action" href="{{ e.url }}" target="_blank" rel="noopener">{{ 'RSVP →' if 'humanitix' in e.url or 'eventbrite' in e.url or 'lu.ma' in e.url or 'ticket' in e.url else 'More info →' }}</a>
@@ -186,12 +213,19 @@
   {
     "@context": "https://schema.org",
     "@type": "Event",
-    "name": "{{ e.title | replace('"', '\"') }}",
+    {#- tojson, not a hand-rolled replace(): `'\"'` is just `"` in a Jinja
+        string literal, so the escaping this used to do was a no-op and any
+        title containing a quote mark broke the whole block — confirmed on
+        DOD's own "International Day of Democracy: democracy beyond the
+        ballot box" panel, which left every event on this page invisible to
+        anything reading the structured data. tojson emits the surrounding
+        quotes itself. -#}
+    "name": {{ e.title | tojson }},
     "startDate": "{{ e.date }}",
     {%- if e.end_date %}"endDate": "{{ (e.end_date.isoformat() if e.end_date is mapping else e.end_date) }}",{% endif %}
     {%- if e.url %}"url": "{{ e.url }}",{% endif %}
-    {%- if e.location %}"location": {"@type": "Place", "name": "{{ e.location | replace('"', '\"') }}", "address": {"@type": "PostalAddress", "addressCountry": "{{ e.country or '' }}"}},{% endif %}
-    "organizer": {"@type": "Organization", "name": "{{ e.org_title | replace('"', '\"') }}"},
+    {%- if e.location %}"location": {"@type": "Place", "name": {{ e.location | tojson }}, "address": {"@type": "PostalAddress", "addressCountry": "{{ e.country or '' }}"}},{% endif %}
+    {%- if e.org_slug %}"organizer": {"@type": "Organization", "name": {{ e.org_title | tojson }}},{% endif %}
     "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
     "eventStatus": "https://schema.org/EventScheduled"
   }{% if not loop.last %},{% endif %}

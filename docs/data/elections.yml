@@ -1,0 +1,322 @@
+# elections.yml — curated election dates for the site-wide calendar.
+#
+# Elections are the one kind of date on this calendar that belongs to no
+# organisation, so they can't ride on an org page's `events:` list the way
+# every other calendar entry does (see CLAUDE.md's Calendar section). They
+# live here instead, in one hand-curated file, and are merged into the
+# calendar by hooks/calendar_export.py as a third source alongside org
+# `events:` and the `ics_feed:` sync cache.
+#
+# WHAT BELONGS HERE
+#   - Australian elections at every level DOD's readers actually vote in:
+#     federal, state/territory, and local government where a date is set.
+#     DOD is Australian-based, so this part of the list aims to be
+#     complete rather than selective.
+#   - Elsewhere: national general/presidential elections and a small number
+#     of subnational votes of clear interest to this landscape (Taiwan's
+#     local elections, say, where two orgs we track do their work). This
+#     part is deliberately a curated selection, not a world index —
+#     Wikipedia's "List of elections in <year>" already does the complete
+#     version far better than we could maintain.
+#
+#   Listing an election is a statement about the date, not about the
+#   election. Nothing here should be read as DOD judging a given contest
+#   free, fair, or competitive — and nothing here is a partisan comment on
+#   any of them.
+#
+# WHAT DOESN'T
+#   - An election with no date yet. The Tasmanian state election expected
+#     in 2029 is the standing example: a calendar entry needs a day, and
+#     inventing one to fill the gap would be worse than the omission.
+#     Add it once a date exists.
+#   - Anything already held. Once an election passes, replace its entry
+#     with the next one for that jurisdiction rather than accumulating a
+#     history here — the calendar is future-facing, and an org's own page
+#     is where history lives. util/check_elections.py prints past entries
+#     as a reminder.
+#
+# FINDING ELECTIONS TO ADD
+#   util/discover_elections.py queries Wikidata for upcoming elections and
+#   prints the ones this file doesn't list yet. It never writes here, and
+#   shouldn't: on 2026-09-02 it gave 30 January 2027 for the NSW state
+#   election — the earliest date that election could legally be held, not
+#   the 13 March the government actually announced — alongside an item
+#   labelled "2022 Bosnian presidential election" dated 2026. It is very
+#   good at telling you an election EXISTS (it is how the Tasmanian local
+#   elections below got found); the date and the citation still come from
+#   reading a real page.
+#
+# SCHEMA (util/check_elections.py enforces it; CLAUDE.md documents it)
+#   date          required, YYYY-MM-DD. The polling day.
+#   end_date      optional, inclusive last day for a multi-day poll.
+#   country       required, ISO 3166-1 alpha-2, known to calendar_export.py.
+#   jurisdiction  optional; the state/region voting, for a subnational one.
+#   level         required: national | state | local | supranational
+#   title         required; how it reads on the calendar.
+#   date_status   required: fixed | expected | deadline
+#                   fixed    — the polling day is set (by statute or by a
+#                              writ that has been issued).
+#                   expected — the date follows from a rule (a fixed term,
+#                              a "fourth Saturday" clause) but has not been
+#                              formally called. Rendered with a caveat.
+#                   deadline — no date called; this is the LAST lawful day
+#                              it can be held. Rendered as "due by".
+#   date_note     optional; one line on why the date is expected/a deadline.
+#   url           required unless `source` is given; the citation.
+#   source        required unless `url` is given; a non-URL citation.
+#   quote         verbatim sentence from `url` stating the date.
+#   note          editorial paraphrase, when no single sentence carries it.
+#                 At least one of quote/note is required — same rule org
+#                 events follow, for the same reason.
+#   url_checked   optional, YYYY-MM-DD; when the citation was last read.
+
+elections:
+
+  # ---- Australia ---------------------------------------------------------
+
+  - date: 2026-11-28
+    country: AU
+    jurisdiction: Victoria
+    level: state
+    title: Victorian state election
+    date_status: fixed
+    url: https://en.wikipedia.org/wiki/2026_Victorian_state_election
+    quote: "A state general election is scheduled to be held on 28 November 2026 to elect members of the 61st Parliament of Victoria."
+    url_checked: 2026-09-02
+
+  - date: 2026-10-01
+    country: AU
+    jurisdiction: Tasmania
+    level: local
+    title: Tasmanian local elections
+    date_status: month
+    date_note: "An all-postal ballot the Tasmanian Electoral Commission runs across September and October 2026 rather than on one polling day; the calendar shows the month the election is held in."
+    url: https://en.wikipedia.org/wiki/2026_Tasmanian_local_elections
+    quote: "The 2026 Tasmanian local elections will be held in October 2026 to elect the councils, mayors and deputy mayors of the 29 local government areas (LGAs) in Tasmania."
+    url_checked: 2026-09-02
+
+  - date: 2027-03-13
+    country: AU
+    jurisdiction: New South Wales
+    level: state
+    title: New South Wales state election
+    date_status: fixed
+    url: https://en.wikipedia.org/wiki/2027_New_South_Wales_state_election
+    date_note: "The fourth-Saturday-in-March default would fall on Holy Saturday in 2027, so the government announced the fortnight earlier date instead."
+    quote: "A state general election is scheduled to be held on 13 March 2027 to elect members of the 59th Parliament of New South Wales."
+    url_checked: 2026-09-02
+
+  - date: 2028-05-20
+    country: AU
+    level: national
+    title: Federal election
+    date_status: deadline
+    date_note: "Not yet called. This is the last lawful date for a simultaneous House and half-Senate election; a House-only election could run as late as 23 September 2028."
+    url: https://en.wikipedia.org/wiki/Next_Australian_federal_election
+    quote: "Given that the elections for the new senators must take place by 30 June 2028, the latest possible date for a half-Senate election is 20 May 2028."
+    url_checked: 2026-09-02
+
+  - date: 2028-08-26
+    country: AU
+    jurisdiction: Northern Territory
+    level: state
+    title: Northern Territory general election
+    date_status: expected
+    date_note: "Fixed four-year terms set the polling day by rule rather than by announcement; the fourth Saturday of August 2028 is 26 August."
+    url: https://en.wikipedia.org/wiki/2024_Northern_Territory_general_election
+    quote: "The Legislative Assembly has fixed four-year terms, with elections to be held on the fourth Saturday of August every four years."
+    url_checked: 2026-09-02
+
+  - date: 2028-10-21
+    country: AU
+    jurisdiction: Australian Capital Territory
+    level: state
+    title: ACT Legislative Assembly election
+    date_status: expected
+    date_note: "Fixed four-year terms put the poll on the third Saturday of October; the source states the date as expected rather than called."
+    url: https://en.wikipedia.org/wiki/Next_Australian_Capital_Territory_election
+    quote: "An election is expected to be held in the Australian Capital Territory on 21 October 2028 to elect all 25 members of the unicameral ACT Legislative Assembly."
+    url_checked: 2026-09-02
+
+  - date: 2028-10-28
+    country: AU
+    jurisdiction: Queensland
+    level: state
+    title: Queensland state election
+    date_status: deadline
+    date_note: "Queensland's fixed-term law sets a last possible date rather than a called one."
+    url: https://en.wikipedia.org/wiki/2028_Queensland_state_election
+    quote: "The 2028 Queensland state election will be held on or before 28 October 2028 to elect the 59th Parliament of Queensland and its 93 seats."
+    url_checked: 2026-09-02
+
+  - date: 2029-03-10
+    country: AU
+    jurisdiction: Western Australia
+    level: state
+    title: Western Australian state election
+    date_status: fixed
+    url: https://en.wikipedia.org/wiki/2029_Western_Australian_state_election
+    quote: "The 2029 Western Australian state election is to be held on 10 March 2029, where all 59 seats in the Legislative Assembly and 37 members in the Legislative Council will be contested."
+    url_checked: 2026-09-02
+
+  - date: 2030-03-16
+    country: AU
+    jurisdiction: South Australia
+    level: state
+    title: South Australian state election
+    date_status: fixed
+    url: https://en.wikipedia.org/wiki/2030_South_Australian_state_election
+    quote: "A state election will be held on 16 March 2030 to elect the members of the 57th Parliament of South Australia."
+    url_checked: 2026-09-02
+
+  # ---- Rest of the world -------------------------------------------------
+  #
+  # A selection, not an index — see this file's header. Ordered by date.
+
+  - date: 2026-09-13
+    country: SE
+    level: national
+    title: Swedish general election
+    date_status: fixed
+    url: https://en.wikipedia.org/wiki/2026_Swedish_general_election
+    quote: "General elections will be held in Sweden on 13 September 2026 to elect the 349 members of the Riksdag."
+    url_checked: 2026-09-02
+
+  - date: 2026-10-03
+    country: LV
+    level: national
+    title: Latvian parliamentary election
+    date_status: fixed
+    url: https://en.wikipedia.org/wiki/2026_Latvian_parliamentary_election
+    quote: "Parliamentary elections are scheduled to be held in Latvia on 3 October 2026, following the end of the term of the fourteenth Saeima elected in 2022."
+    url_checked: 2026-09-02
+
+  - date: 2026-10-04
+    country: BR
+    level: national
+    title: Brazilian general election
+    date_status: fixed
+    date_note: "A runoff for president or governor follows on 25 October where no candidate wins a majority in the first round."
+    url: https://en.wikipedia.org/wiki/2026_Brazilian_general_election
+    quote: "General elections will be held in Brazil on 4 October 2026 to elect the president, vice president, members of the National Congress, the governors, vice governors and legislative assemblies of all federative units, and the district council of Fernando de Noronha."
+    url_checked: 2026-09-02
+
+  - date: 2026-10-04
+    country: BA
+    level: national
+    title: Bosnian general election
+    date_status: fixed
+    url: https://en.wikipedia.org/wiki/2026_Bosnian_general_election
+    quote: "General elections are scheduled to be held in Bosnia and Herzegovina on 4 October 2026."
+    url_checked: 2026-09-02
+
+  - date: 2026-10-27
+    country: IL
+    level: national
+    title: Israeli legislative election
+    date_status: fixed
+    url: https://en.wikipedia.org/wiki/2026_Israeli_legislative_election
+    quote: "Legislative elections are scheduled to be held in Israel on 27 October 2026, to elect all 120 members of the 26th Knesset"
+    url_checked: 2026-09-02
+
+  - date: 2026-11-02
+    country: PH
+    level: local
+    title: Barangay and Sangguniang Kabataan elections
+    date_status: fixed
+    url: https://en.wikipedia.org/wiki/2026_Philippine_barangay_and_Sangguniang_Kabataan_elections
+    quote: "elections (BSKE) in the Philippines will be held on November 2, 2026. The elections will determine the barangay captain, SK chairperson, and the composition of the Sangguniang Barangay"
+    url_checked: 2026-09-02
+
+  - date: 2026-11-03
+    country: US
+    level: national
+    title: United States midterm elections
+    date_status: fixed
+    url: https://en.wikipedia.org/wiki/2026_United_States_elections
+    quote: "Elections are scheduled to be held, in large part, on November 3, 2026, in the United States."
+    url_checked: 2026-09-02
+
+  - date: 2026-11-04
+    country: ZA
+    level: local
+    title: South African municipal elections
+    date_status: fixed
+    url: https://en.wikipedia.org/wiki/2026_South_African_municipal_elections
+    quote: "The 2026 South African municipal elections will be held on 4 November 2026 across South Africa, to elect councils for all district, metropolitan and local municipalities in each of the country's nine provinces."
+    url_checked: 2026-09-02
+
+  - date: 2026-11-07
+    country: NZ
+    level: national
+    title: New Zealand general election
+    date_status: fixed
+    url: https://en.wikipedia.org/wiki/2026_New_Zealand_general_election
+    quote: "The 2026 New Zealand general election is scheduled to be held on 7 November 2026."
+    url_checked: 2026-09-02
+
+  - date: 2026-11-28
+    country: TW
+    level: local
+    title: Taiwanese local elections
+    date_status: fixed
+    url: https://en.wikipedia.org/wiki/2026_Taiwanese_local_elections
+    quote: "Local elections will be held in Taiwan on 28 November 2026 to elect county magistrates (city mayors), county (city) councilors, township mayors, township councilors and chiefs of villages (boroughs) in 6 municipalities and 16 counties (cities)."
+    url_checked: 2026-09-02
+
+  - date: 2027-01-16
+    country: NG
+    level: national
+    title: Nigerian general election
+    date_status: fixed
+    date_note: "Governorship and state assembly elections follow on 6 February 2027."
+    url: https://en.wikipedia.org/wiki/2027_Nigerian_general_election
+    quote: "General elections will be held in Nigeria on 16 January 2027 to elect the president and vice president, members of the Senate and House of Representatives."
+    url_checked: 2026-09-02
+
+  - date: 2027-04-18
+    country: FR
+    level: national
+    title: French presidential election
+    date_status: fixed
+    date_note: "Second round on 2 May 2027 if no candidate wins a majority in the first."
+    url: https://en.wikipedia.org/wiki/2027_French_presidential_election
+    quote: "Presidential elections are scheduled to be held in France on 18 April 2027, with a second round on 2 May if no candidate secures a majority vote."
+    url_checked: 2026-09-02
+
+  - date: 2027-05-06
+    country: GB
+    level: local
+    title: United Kingdom local elections
+    date_status: fixed
+    date_note: "The Northern Ireland Assembly election is expected on the same day."
+    url: https://en.wikipedia.org/wiki/2027_United_Kingdom_local_elections
+    quote: "Local elections in the United Kingdom will be held on 6 May 2027. These include all local authorities in Northern Ireland, Scotland and Wales, some local authorities in England, and some directly elected mayors in England."
+    url_checked: 2026-09-02
+
+  - date: 2027-06-06
+    country: MX
+    level: national
+    title: Mexican legislative election
+    date_status: fixed
+    url: https://en.wikipedia.org/wiki/2027_Mexican_legislative_election
+    quote: "Legislative elections are scheduled to be held in Mexico on 6 June 2027. Voters will elect all 500 members of the Chamber of Deputies, who will serve during the LXVII Legislature"
+    url_checked: 2026-09-02
+
+  - date: 2027-08-10
+    country: KE
+    level: national
+    title: Kenyan general election
+    date_status: fixed
+    url: https://en.wikipedia.org/wiki/2027_Kenyan_general_election
+    quote: "General elections are scheduled to be held in Kenya on 10 August 2027. Voters will elect the president, and members of the National Assembly and Senate."
+    url_checked: 2026-09-02
+
+  - date: 2027-10-24
+    country: AR
+    level: national
+    title: Argentine general election
+    date_status: fixed
+    url: https://en.wikipedia.org/wiki/2027_Argentine_general_election
+    quote: "General elections are scheduled to take place in Argentina on 24 October 2027. Voters will elect the president and vice president of Argentina, members in the Chamber of Deputies and Senate, and the governors of most provinces."
+    url_checked: 2026-09-02

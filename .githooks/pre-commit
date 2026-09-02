@@ -23,6 +23,16 @@ if [ -n "$STAGED_ORGS" ]; then
     echo "→ Done."
 fi
 
+# Election dates live in one data file rather than in any org page's
+# frontmatter (an election belongs to an electorate, not an organisation),
+# so this gate keys off that file being staged rather than off STAGED_ORGS.
+STAGED_ELECTIONS=$(git diff --cached --name-only --diff-filter=ACM -- docs/data/elections.yml 2>/dev/null || true)
+
+if [ -n "$STAGED_ELECTIONS" ]; then
+    echo "→ Checking election dates are sourced and well-formed (local/offline, no network)..."
+    python util/check_elections.py
+fi
+
 # Any staged docs page (not just org pages) can carry prose footnotes, so
 # this check runs whenever any docs/**/*.md is staged — not gated behind
 # STAGED_ORGS above.

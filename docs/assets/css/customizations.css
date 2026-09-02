@@ -1322,6 +1322,7 @@
 .method-social   { background: rgba(136,14,79,0.25);   color: #f48fb1; }
 .method-scrape   { background: rgba(0,105,92,0.25);    color: #80cbc4; }
 .method-blog     { background: rgba(191,54,12,0.25);   color: #ff8a65; }
+.method-election { background: rgba(103,58,183,0.28);  color: #b39ddb; }
 .activity-note {
   font-size: 0.85em;
   color: var(--md-default-fg-color--light);
@@ -1658,6 +1659,42 @@
   padding: 0.65em 0.8em;
   margin: 0.45em 0;
 }
+/* Elections are a third card tier alongside the notable/medium pair
+   above, on a deliberately different axis: not "this matters more" but
+   "this is a different kind of thing" — a polling day belongs to an
+   electorate rather than to any organisation on this calendar. Violet
+   keeps it clear of amber (major) and blue (medium/tomorrow), so an
+   election never reads as competing with them for the same attention. */
+.calendar-event--election {
+  background: rgba(149, 117, 205, 0.1);
+  border: 1px solid rgba(149, 117, 205, 0.35);
+  border-radius: 6px;
+  padding: 0.65em 0.8em;
+  margin: 0.45em 0;
+}
+.calendar-event--election .calendar-date-day {
+  color: #b39ddb;
+}
+.calendar-event-badge--election {
+  color: #b39ddb;
+  background: rgba(149, 117, 205, 0.22);
+}
+/* date_status: an election's date can be genuinely unsettled — expected
+   under a fixed-term rule, or a "last lawful day" deadline for one not
+   yet called. Sits in the badge row rather than beside the date itself,
+   since it qualifies the whole entry: an outlined chip, so it reads as a
+   caveat on the event and not as another tier of highlight. */
+.calendar-event-datestatus {
+  display: inline-block;
+  font-size: 0.6em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--md-default-fg-color--light);
+  border: 1px solid var(--md-default-fg-color--lighter);
+  border-radius: 3px;
+  padding: 0.15em 0.5em;
+}
 .calendar-date-block {
   flex: 0 0 auto;
   width: 4.75em;
@@ -1746,6 +1783,16 @@
 }
 .calendar-date-org:hover .calendar-date-org-name {
   text-decoration: underline;
+}
+/* The same slot for an election, where there is no org page to link to —
+   a flag and the electorate's name instead of a logo and an org name.
+   Not a link, so it gets none of the hover affordance above. */
+.calendar-date-org--election {
+  cursor: default;
+}
+.calendar-date-org-flag {
+  font-size: 1.5em;
+  line-height: 1;
 }
 .calendar-event-body {
   flex: 1 1 auto;
