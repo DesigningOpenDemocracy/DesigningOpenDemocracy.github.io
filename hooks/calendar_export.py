@@ -1,7 +1,7 @@
 """
 calendar_export.py — MkDocs hook: build the site-wide future-events calendar.
 
-Merges two sources of *future* events into one list at build time (no
+Merges three sources of *future* events into one list at build time (no
 network calls here — see util/sync_events.py for the fetch step that
 populates the cache this reads):
 
@@ -11,8 +11,12 @@ populates the cache this reads):
      the same as any other org, so there's no separate "DOD's events" path.
   2. Cached iCal-synced events in docs/data/events/<slug>.json, written by
      util/sync_events.py for orgs with `ics_feed:` set (date >= today)
+  3. Curated election dates in docs/data/elections.yml (date >= today) —
+     polling days belong to no organisation, so they have no org page to
+     hang an `events:` entry off; they are the one calendar entry with no
+     org behind it. See that file's header for what belongs in it.
 
-A third source — an optional `event_date:` field on blog posts — existed
+A fourth source — an optional `event_date:` field on blog posts — existed
 briefly but was removed: every blog post that set it was DOD *covering*
 another org's event, not hosting its own, so the same event ended up on
 the calendar twice (once from the org's own `events:` entry, once from
@@ -27,6 +31,10 @@ Output:
     one per country actually present, since most calendar apps (Google
     Calendar included) offer no way to filter a subscribed feed after the
     fact — CATEGORIES is ignored on import
+  - docs/calendar-elections.ics — every election on the calendar, for
+    readers who want polling days without the rest of the landscape's
+    meetups (the same all-or-nothing subscription problem the per-country
+    feeds solve, along a different axis)
   - docs/data/events.json   — same data as JSON, for reference/download
   - `calendar_events` Jinja2 global — consumed by docs/overrides/calendar.html
 
@@ -47,10 +55,41 @@ try:
 except ImportError:
     frontmatter = None
 
+try:
+    import yaml
+except ImportError:  # pragma: no cover - pyyaml ships with python-frontmatter
+    yaml = None
+
 DOCS_DIR = os.path.join(os.path.dirname(__file__), "..", "docs")
 ORGS_DIR = os.path.join(DOCS_DIR, "organisations")
 SYNCED_EVENTS_DIR = os.path.join(DOCS_DIR, "data", "events")
+ELECTIONS_FILE = os.path.join(DOCS_DIR, "data", "elections.yml")
 SKIP_FILES = {"index.md"}
+
+# How an election's level reads on the calendar badge. Anything outside
+# this map is dropped rather than guessed at — util/check_elections.py
+# gates the same vocabulary, so an unknown level is a lint failure, not a
+# rendering decision to make here.
+ELECTION_LEVEL_LABELS = {
+    "national": "National election",
+    "state": "State / territory election",
+    "local": "Local election",
+    "supranational": "Supranational election",
+}
+
+# Elections are the only calendar entry whose date can legitimately be
+# something other than a settled fact, so the date itself has to carry a
+# qualifier. See docs/data/elections.yml's schema notes.
+ELECTION_DATE_STATUS_LABELS = {
+    "fixed": "",
+    "expected": "expected date",
+    "deadline": "due by this date",
+    # Some elections genuinely have no single polling day published — a
+    # postal ballot run across a month, say. Showing the first of that
+    # month with no qualifier would invent a precision the source never
+    # claimed, and dropping the entry loses a real election.
+    "month": "day not yet set",
+}
 
 # Known recurring CJK event patterns → English translation (for calendar readability)
 _CJK_PATTERNS = [
@@ -230,6 +269,95 @@ def _load_synced_events(today):
     return out
 
 
+def _load_elections(today):
+    """Future polling days from docs/data/elections.yml.
+
+    The third calendar source, and the only one with no organisation
+    behind it: an election belongs to a whole electorate, so there is no
+    org page to hang an `events:` entry off the way every other calendar
+    entry does. Shaped into the same event dict the other two loaders
+    produce — same keys, same rendering path — with the election-specific
+    fields (level, jurisdiction, date_status) carried alongside for
+    calendar.html to badge.
+
+    `org_title` is the electorate voting — the jurisdiction for a
+    subnational vote, the country otherwise — which is what fills the
+    identity slot the org name and logo occupy on every other row of the
+    calendar. There is deliberately no org_slug: nothing to link to, and
+    both calendar.html and the .ics writer key off that field's absence
+    (no org anchor on the card, no JSON-LD organizer, and a SUMMARY built
+    from ics_summary below rather than the "<org>: <title>" shape).
+
+    Malformed entries are skipped rather than raised on — a bad date here
+    should not take the whole site build down, and util/check_elections.py
+    is the gate that actually fails on them (offline, in CI and the
+    pre-commit hook), the same division of labour check_event_sourcing.py
+    has with the org `events:` loader above.
+    """
+    if yaml is None or not os.path.exists(ELECTIONS_FILE):
+        return []
+    try:
+        with open(ELECTIONS_FILE, encoding="utf-8") as f:
+            data = yaml.safe_load(f) or {}
+    except (OSError, yaml.YAMLError):
+        return []
+
+    out = []
+    for entry in (data.get("elections") or []):
+        if not isinstance(entry, dict):
+            continue
+        d = _parse_date(entry.get("date"))
+        if not d or d < today:
+            continue
+        level = entry.get("level")
+        if level not in ELECTION_LEVEL_LABELS:
+            continue
+        country = entry.get("country")
+        jurisdiction = entry.get("jurisdiction")
+        date_status = entry.get("date_status", "fixed")
+        country_name = _COUNTRY_NAMES.get(country, country or "")
+        # A subscriber's calendar app shows one line with none of the
+        # page's context around it, so the country has to be in it — but
+        # "New South Wales: New South Wales state election" is what the
+        # org-event shape ("<org>: <title>") produces here, and a national
+        # entry would read "New Zealand: New Zealand general election".
+        # Suffixing the country, and only where the title doesn't already
+        # name it, gives "New South Wales state election — Australia" and
+        # leaves "New Zealand general election" alone.
+        title = entry.get("title", "Election")
+        # Whole-word, not substring: "Australia" is inside "Australian", so a
+        # plain `in` test drops the country from "South Australian state
+        # election" while keeping it on its Victorian and Queensland
+        # siblings — an inconsistency a subscriber sorting or searching
+        # their calendar would trip over.
+        names_country = bool(country_name) and re.search(
+            r"\b" + re.escape(country_name) + r"\b", title, re.IGNORECASE) is not None
+        ics_summary = title if names_country else f"{title} — {country_name}".strip(" —")
+        out.append({
+            "date": d,
+            "end_date": _parse_date(entry.get("end_date")),
+            "title": title,
+            "url": entry.get("url", ""),
+            "ics_summary": ics_summary,
+            "ics_category": country_name or "Elections",
+            "org_slug": None,
+            "org_title": jurisdiction or _COUNTRY_NAMES.get(country, country or "Election"),
+            "source": "election",
+            "notable": False,
+            "logo": None,
+            "logo_bg": None,
+            "country": country,
+            "type": "election",
+            "level": level,
+            "level_label": ELECTION_LEVEL_LABELS[level],
+            "jurisdiction": jurisdiction,
+            "date_status": date_status,
+            "date_status_label": ELECTION_DATE_STATUS_LABELS.get(date_status, ""),
+            "date_note": entry.get("date_note"),
+        })
+    return out
+
+
 def _ics_escape(s):
     return (s or "").replace("\\", "\\\\").replace(",", "\\,").replace(";", "\\;").replace("\n", "\\n")
 
@@ -291,7 +419,12 @@ def _write_ics(events, path, calname="Designing Open Democracy — Democracy Lan
     now_stamp = datetime.utcnow().strftime("%Y%m%dT%H%M%SZ")
     for e in events:
         dt = e["date"].strftime("%Y%m%d")
-        uid = uuid.uuid5(uuid.NAMESPACE_URL, f"dod-calendar:{e['org_slug']}:{dt}:{e['title']}")
+        # An election has no org_slug — it belongs to an electorate, not an
+        # organisation — so it keys off its country instead. Org events keep
+        # exactly the UID they had: changing one would land in every existing
+        # subscriber's calendar as a delete plus a re-add.
+        uid_scope = e.get("org_slug") or f"election:{e.get('country') or ''}"
+        uid = uuid.uuid5(uuid.NAMESPACE_URL, f"dod-calendar:{uid_scope}:{dt}:{e['title']}")
         lines += [
             "BEGIN:VEVENT",
             f"UID:{uid}@designingopendemocracy.com",
@@ -320,9 +453,16 @@ def _write_ics(events, path, calname="Designing Open Democracy — Democracy Lan
             if e.get("end_date"):
                 # DTEND is exclusive for all-day VEVENTs per RFC 5545 §3.6.1.
                 lines.append(f"DTEND;VALUE=DATE:{(e['end_date'] + timedelta(days=1)).strftime('%Y%m%d')}")
+        # A subscriber sees only this line in their own calendar app, with
+        # none of the page's badges around it, so an election whose date
+        # isn't settled has to say so here or it reads as a fixed
+        # appointment — which for a "due by" deadline it flatly isn't.
+        summary = e.get("ics_summary") or (e["org_title"] + ": " + e["title"])
+        if e.get("date_status_label"):
+            summary += f" ({e['date_status_label']})"
         lines += [
-            f"SUMMARY:{_ics_escape(e['org_title'] + ': ' + e['title'])}",
-            f"CATEGORIES:{_ics_escape(e['org_title'])}",
+            f"SUMMARY:{_ics_escape(summary)}",
+            f"CATEGORIES:{_ics_escape(e.get('ics_category') or e['org_title'])}",
         ]
         if e.get("url"):
             lines.append(f"URL:{_ics_escape(e['url'])}")
@@ -336,7 +476,7 @@ def on_pre_build(config):
     if frontmatter is None:
         return
     today = date.today()
-    events = _load_manual_events(today) + _load_synced_events(today)
+    events = _load_manual_events(today) + _load_synced_events(today) + _load_elections(today)
     events.sort(key=lambda e: e["date"])
 
     _events.clear()
@@ -364,11 +504,28 @@ def on_pre_build(config):
             calname=f"Designing Open Democracy — {country_name} Events",
         )
 
+    # Elections-only feed. Same all-or-nothing subscription problem the
+    # per-country feeds solve, along the other axis: someone who wants
+    # polling days in their calendar rarely wants every meetup in the
+    # landscape alongside them, and a subscribed .ics can't be filtered
+    # after the fact.
+    election_events = [e for e in events if e.get("source") == "election"]
+    if election_events:
+        _write_ics(
+            election_events, os.path.join(DOCS_DIR, "calendar-elections.ics"),
+            calname="Designing Open Democracy — Election Dates",
+        )
+
     os.makedirs(os.path.join(DOCS_DIR, "data"), exist_ok=True)
     with open(os.path.join(DOCS_DIR, "data", "events.json"), "w", encoding="utf-8") as f:
+        # ics_summary/ics_category are internal to the .ics writer — a
+        # subscriber's one-line view of an event, not a fact about it — so
+        # they stay out of the published data export.
         json.dump(
-            [{**e, "date": e["date"].isoformat(),
-              "end_date": e["end_date"].isoformat() if e.get("end_date") else None}
+            [{k: v for k, v in
+              {**e, "date": e["date"].isoformat(),
+               "end_date": e["end_date"].isoformat() if e.get("end_date") else None}.items()
+              if k not in ("ics_summary", "ics_category")}
              for e in events],
             f, ensure_ascii=False, indent=2,
         )
@@ -432,7 +589,8 @@ def _flag_emoji(code):
 
 
 _COUNTRY_NAMES = {
-    "AR": "Argentina", "AT": "Austria", "AU": "Australia", "BE": "Belgium",
+    "AR": "Argentina", "AT": "Austria", "AU": "Australia",
+    "BA": "Bosnia and Herzegovina", "BE": "Belgium",
     "BG": "Bulgaria", "BO": "Bolivia", "BR": "Brazil", "BW": "Botswana",
     "CA": "Canada", "CH": "Switzerland", "CL": "Chile", "CN": "China",
     "CO": "Colombia", "CU": "Cuba", "DE": "Germany", "DK": "Denmark",
@@ -440,6 +598,7 @@ _COUNTRY_NAMES = {
     "FI": "Finland", "FR": "France", "GB": "United Kingdom", "GH": "Ghana",
     "GR": "Greece", "ID": "Indonesia", "IL": "Israel", "IN": "India",
     "IS": "Iceland", "IT": "Italy", "JP": "Japan", "KE": "Kenya",
+    "LV": "Latvia",
     "KR": "South Korea", "LB": "Lebanon", "MX": "Mexico", "MY": "Malaysia",
     "NG": "Nigeria", "NO": "Norway", "NZ": "New Zealand", "PH": "Philippines",
     "PL": "Poland", "PS": "Palestine", "RO": "Romania", "RU": "Russia",

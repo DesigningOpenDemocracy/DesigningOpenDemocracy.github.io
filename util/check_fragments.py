@@ -2,7 +2,7 @@
 """
 check_fragments.py — mechanically re-verify evidence against live pages.
 
-Verifies three sources of evidence through the same pipeline:
+Verifies four sources of evidence through the same pipeline:
 
 1. Event quotes — from org frontmatter `events:` entries. An event's
    "mechanical proof" is the exact text in its `quote:` field — this must
@@ -23,7 +23,14 @@ Verifies three sources of evidence through the same pipeline:
    — checked against `shared_link.url` the same way a footnote quote is
    checked against its citation URL.
 
-All three sources share the same store, fetch machinery, and reporting.
+4. Election quotes — from docs/data/elections.yml, the curated polling
+   days the site-wide calendar carries (see CLAUDE.md's Calendar section).
+   Same rule as an event quote: the sentence stating the date has to be
+   verbatim on the cited page. Scoped like shared links rather than like
+   events — an election belongs to no organisation, so --slug (org-scoped)
+   skips them; --elections-only checks just these ~20 citations.
+
+All four sources share the same store, fetch machinery, and reporting.
 
 Results are kept in docs/data/citation-state.json (committed, so state
 survives across weekly cron runs on fresh checkouts) keyed by URL. Named
@@ -93,6 +100,7 @@ Usage:
     python util/check_fragments.py --verbose (-v)    # also print one line per quiet GOOD result
     python util/check_fragments.py --save-to-wayback # archive each URL to Wayback Machine
     python util/check_fragments.py --footnotes-only  # only check footnotes
+    python util/check_fragments.py --elections-only  # only check election dates
 
 Requirements: python-frontmatter, requests (util/requirements.txt)
 """
@@ -990,9 +998,13 @@ def spot_check_sample(not_due, want, today=None):
 
 def collect_evidence(args):
     """Return list of (url, quote, source_label, kind, path) tuples from
-    events, footnotes, and shared-link descriptions. 'kind' is 'event',
-    'footnote', or 'shared_link' for reporting."""
+    events, footnotes, shared-link descriptions, and election dates.
+    'kind' is 'event', 'footnote', 'shared_link', or 'election' for
+    reporting."""
     items = []
+
+    if getattr(args, "elections_only", False):
+        return collect_election_evidence()
 
     event_paths = sorted(glob.glob(os.path.join(ORG_DIR, "*.md")))
     for path in event_paths:
@@ -1040,6 +1052,44 @@ def collect_evidence(args):
                 for url, quote, source_label, path in find_shared_link_evidence(path):
                     items.append((url, quote, source_label, "shared_link", path))
 
+            # Election dates (docs/data/elections.yml) — the calendar's one
+            # source with no organisation behind it, so --slug (which is
+            # org-scoped) skips them the same way it skips blog shared
+            # links. --elections-only is the way to check just these.
+            items.extend(collect_election_evidence())
+
+    return items
+
+
+def collect_election_evidence():
+    """Evidence items for every election date carrying a quote:.
+
+    Same treatment org event quotes get, for the same reason: an election
+    date is a factual claim about someone else's page, and pages get
+    rewritten. util/check_elections.py gates that the quote *exists*
+    (offline, in CI); this is what checks it still says what we say it
+    says."""
+    items = []
+    # Resolved from DOCS_DIR at call time, not pinned at import: the tests
+    # point DOCS_DIR at a temp tree, and a module-level constant would keep
+    # reading the repo's real election list into their runs.
+    elections_file = os.path.join(DOCS_DIR, "data", "elections.yml")
+    if not os.path.exists(elections_file):
+        return items
+    try:
+        with open(elections_file, encoding="utf-8") as f:
+            data = yaml.safe_load(f) or {}
+    except (OSError, yaml.YAMLError):
+        return items
+    for entry in (data.get("elections") or []):
+        if not isinstance(entry, dict):
+            continue
+        url = str(entry.get("url", ""))
+        quote = entry.get("quote")
+        if not url or not quote:
+            continue
+        label = "election [" + str(entry.get("date", "?")) + "] " + str(entry.get("title", ""))[:50]
+        items.append((url, quote, label, "election", elections_file))
     return items
 
 
@@ -1122,7 +1172,12 @@ def main():
     parser.add_argument("--footnotes-only", action="store_true",
                         help="Only check footnote evidence (skip events)")
     parser.add_argument("--events-only", action="store_true",
-                        help="Only check event evidence (skip footnotes and shared links)")
+                        help="Only check event evidence (skip footnotes, shared links and elections)")
+    parser.add_argument("--elections-only", action="store_true",
+                        help="Only check docs/data/elections.yml's quotes — the ~20 "
+                             "citations behind the calendar's polling days, rather than "
+                             "every cited page on the site. Cannot be combined with "
+                             "--events-only or --slug, which scope to orgs.")
     parser.add_argument("--autofix-spaces", action="store_true",
                         help="Fix MISMATCHes that differ from the page only by "
                              "spacing (em-dash spacing, stray spaces): rewrite the "
@@ -1160,6 +1215,10 @@ def main():
                      "Pass one or the other.")
     if args.unchecked_only and args.no_cache:
         parser.error("--unchecked-only cannot be combined with --no-cache")
+    if args.elections_only and (args.events_only or args.slug):
+        parser.error("--elections-only cannot be combined with --events-only or --slug: "
+                     "elections belong to no organisation, so an org-scoped run never "
+                     "includes them")
 
     if args.set_url_status:
         url, status = args.set_url_status
@@ -1239,7 +1298,8 @@ def main():
     wayback_failed = 0
     by_kind = {"event": {"good": 0, "bad": 0, "errors": 0},
                "footnote": {"good": 0, "bad": 0, "errors": 0},
-               "shared_link": {"good": 0, "bad": 0, "errors": 0}}
+               "shared_link": {"good": 0, "bad": 0, "errors": 0},
+               "election": {"good": 0, "bad": 0, "errors": 0}}
     report_mismatches = []
     report_ambiguous = []
     report_fetch_errors = []
@@ -1422,6 +1482,9 @@ def main():
     print("  Shared links: " + str(by_kind["shared_link"]["good"]) + " good, " +
           str(by_kind["shared_link"]["bad"]) + " bad, " +
           str(by_kind["shared_link"]["errors"]) + " errors")
+    print("  Elections: " + str(by_kind["election"]["good"]) + " good, " +
+          str(by_kind["election"]["bad"]) + " bad, " +
+          str(by_kind["election"]["errors"]) + " errors")
     if args.save_to_wayback:
         print("Wayback Machine: " + str(wayback_saved) + " saved, " +
               str(wayback_failed) + " failed")
