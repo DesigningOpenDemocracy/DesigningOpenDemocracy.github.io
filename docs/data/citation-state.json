@@ -155,6 +155,8 @@
     "last_modified": null
   },
   "https://australiainstitute.org.au/event/dr-hugh-saddler-memorial-lecture-2026-shane-rattenbury/": {
+    "blocked": "HTTP_403",
+    "blocked_since": "2026-09-04",
     "checked": "2026-08-26",
     "etag": null,
     "evidence": [
@@ -173,6 +175,8 @@
     "last_modified": "Thu, 20 Aug 2026 15:45:45 GMT"
   },
   "https://australiainstitute.org.au/events/climate-integrity-summit/": {
+    "blocked": "HTTP_403",
+    "blocked_since": "2026-09-04",
     "checked": "2026-08-26",
     "document_sha256": "cc2b59b109f0dbe08f4e74bcfbfabd20a591c5d99dba592a351e78f834d203fa",
     "etag": null,
@@ -249,7 +253,7 @@
     "last_modified": "Tue, 25 Nov 2025 21:34:43 GMT"
   },
   "https://bethnoveck.medium.com/was-vtaiwan-such-a-big-flop-after-all-d6b365f916dc": {
-    "archive_checked": "2026-08-28",
+    "archive_checked": "2026-09-04",
     "archive_url": "http://web.archive.org/web/20250916173243/https://bethnoveck.medium.com/was-vtaiwan-such-a-big-flop-after-all-d6b365f916dc",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-20",
@@ -427,6 +431,8 @@
     "last_modified": null
   },
   "https://cafsa.org.au/cafsa/": {
+    "blocked": "HTTP_403",
+    "blocked_since": "2026-09-04",
     "checked": "2026-08-28",
     "document_sha256": "938c71c61cb749a3d7740205f1ae3c71d9b966a95cb114cab8811ddfd73a7d5c",
     "etag": "\"22601-1787928227;gz\"",
@@ -769,7 +775,7 @@
     "last_modified": null
   },
   "https://commonslibrary.parliament.uk/research-briefings/cbp-10876/": {
-    "archive_checked": "2026-08-28",
+    "archive_checked": "2026-09-04",
     "archive_url": "http://web.archive.org/web/20260828153521/https://commonslibrary.parliament.uk/research-briefings/cbp-10876/",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-20",
@@ -981,6 +987,28 @@
     ],
     "last_modified": "Wed, 26 Aug 2026 11:14:23 GMT"
   },
+  "https://cpj.org/2026/08/kazakhstan-sentences-journalist-gulnara-bazhkenova-to-eight-years-in-prison-as-pre-election-press-crackdown-intensifies/": {
+    "archive_checked": "2026-09-04",
+    "archive_url": "http://web.archive.org/web/20260828133536/https://cpj.org/2026/08/kazakhstan-sentences-journalist-gulnara-bazhkenova-to-eight-years-in-prison-as-pre-election-press-crackdown-intensifies/",
+    "checked": "2026-09-04",
+    "document_sha256": "466cd9969adc2da84f57a2b452ea3b978f06403b32512878395b052901f0c71f",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-09-04",
+        "context": {
+          "prefix": "er forms of public engagement, as well as on holding managerial or financially responsible positions in media-related organizations,\u201d it said. \u201c",
+          "sha256": "558375095b7d7387e7711010ecf111ca731e09679429ceda44828665f9b5f9b5",
+          "suffix": "\u201d said Carlos Mart\u00ednez de la Serna, CPJ\u2019s program director in New York. \u201cKazakh authorities must end their escalating crackdown on the press and allow",
+          "text": "\u201cThe draconian eight-year prison sentence handed down to Gulnara Bazhkenova is part of an alarming pattern of arrests and convictions that reveal the authorities\u2019 determination to silence the press ahead of upcoming parliamentary elections in Kazakhstan on August 23,\u201d said Carlos Mart\u00ednez de la Serna, CPJ\u2019s program director in New York. \u201cKazakh authorities must end their escalating crackdown on the press and allow Bazhkenova and other targeted journalists to work freely.\u201d"
+        },
+        "id": "472e0dbfc9f37bb685d979de934d32c9eeafc48c27032511de8fc00dd83fb45c",
+        "quote": "The draconian eight-year prison sentence handed down to Gulnara Bazhkenova is part of an alarming pattern of arrests and convictions that reveal the authorities\u2019 determination to silence the press ahead of upcoming parliamentary elections in Kazakhstan on August 23,",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
   "https://ct-citizens-assembly.org/": {
     "checked": "2026-08-26",
     "document_sha256": "bfa948eb79148ac215a15f4344f9da08ede61d2b0576c6a0d4b83ae71102ffb3",
@@ -1147,6 +1175,8 @@
     "last_modified": null
   },
   "https://demnext.substack.com/p/looking-back-moving-forward-democracynexts": {
+    "blocked": "HTTP_403",
+    "blocked_since": "2026-09-04",
     "checked": "2026-08-26",
     "document_sha256": "4100b9025ff216a9e360f71c2cdb0fef792ba3c64c0f3874fe7cf384458ccf7b",
     "etag": null,
@@ -1453,6 +1483,28 @@
     ],
     "last_modified": null
   },
+  "https://en.wikipedia.org/wiki/2024_Northern_Territory_general_election": {
+    "archive_checked": "2026-09-04",
+    "archive_url": "http://web.archive.org/web/20260830025406/https://en.wikipedia.org/wiki/2024_Northern_Territory_general_election",
+    "checked": "2026-09-04",
+    "document_sha256": "e0f15f08204dee968de16dfeae12c1ffd19595d5d3c22e7351f54a0947ba6737",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-09-04",
+        "context": {
+          "prefix": "t minor changes were also made to electorates outside the town. The first redistribution proposal was published on 23 May 2023. == Election date ==",
+          "sha256": "46b67bb5a27de0b7d6815eadc56cfdfa9d12ba306debc6efb16e8f1ef1c5bedf",
+          "suffix": "== Pendulum == === Pre-election pendulum === === Notes === This pre-election pendulum is based on post-redistribution estimates of margins calc",
+          "text": "== Election date == The Legislative Assembly has fixed four-year terms, with elections to be held on the fourth Saturday of August every four years."
+        },
+        "id": "4ffc8e0b2069c88678e0e4543bfb0c66f26026dea956df386087ac923cf04e26",
+        "quote": "The Legislative Assembly has fixed four-year terms, with elections to be held on the fourth Saturday of August every four years.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
   "https://en.wikipedia.org/wiki/2026_Bangladeshi_constitutional_referendum": {
     "checked": "2026-08-26",
     "document_sha256": "14b07f0a4253feed87e5aa5a3fbe7f35fae2e81b6870875bf454183d957d072b",
@@ -1631,6 +1683,71 @@
     ],
     "last_modified": null
   },
+  "https://en.wikipedia.org/wiki/2026_Taiwanese_local_elections": {
+    "archive_checked": "2026-09-04",
+    "archive_url": "http://web.archive.org/web/20260824203633/https://en.wikipedia.org/wiki/2026_Taiwanese_local_elections",
+    "checked": "2026-09-04",
+    "document_sha256": "ec080fcd72df74a8f05e57fe3bcab2dde82ebb865bf74d147db189ff8b90e845",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-09-04",
+        "context": {
+          "prefix": "",
+          "sha256": "576b68c7bad9613772b1967f1d072ce2fb913d14c331003aef95bc97f8877a70",
+          "suffix": "Elected officials would serve a four-year term. == Background == The Democratic Progressive Party discussed candidate nomination procedures for the",
+          "text": "Local elections will be held in Taiwan on 28 November 2026 to elect county magistrates (city mayors), county (city) councilors, township mayors, township councilors and chiefs of villages (boroughs) in 6 municipalities and 16 counties (cities). Elected officials would serve a four-year term."
+        },
+        "id": "7043e482f36e6108a24fb8e9b9182a4be33c361af4a42363dad2cb1b563166dc",
+        "quote": "Local elections will be held in Taiwan on 28 November 2026 to elect county magistrates (city mayors), county (city) councilors, township mayors, township councilors and chiefs of villages (boroughs) in 6 municipalities and 16 counties (cities).",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://en.wikipedia.org/wiki/2026_Tasmanian_local_elections": {
+    "archive_checked": "2026-09-04",
+    "archive_url": "http://web.archive.org/web/20260904080024/https://en.wikipedia.org/wiki/2026_Tasmanian_local_elections",
+    "checked": "2026-09-04",
+    "document_sha256": "17261bb1af619af99910d34feff7cc55eccf3701eb028c2355d1f459b5a42dae",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-09-04",
+        "context": {
+          "prefix": "",
+          "sha256": "1d44f235c344841fb58efc62b45e7e52afb145118b06fef14c6d855f347694a5",
+          "suffix": "== Electoral system == Like at state and federal elections, voting in Tasmanian local elections is compulsory and has been since 2022. All voting i",
+          "text": "The 2026 Tasmanian local elections will be held in October 2026 to elect the councils, mayors and deputy mayors of the 29 local government areas (LGAs) in Tasmania."
+        },
+        "id": "1d44f235c344841fb58efc62b45e7e52afb145118b06fef14c6d855f347694a5",
+        "quote": "The 2026 Tasmanian local elections will be held in October 2026 to elect the councils, mayors and deputy mayors of the 29 local government areas (LGAs) in Tasmania.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://en.wikipedia.org/wiki/2026_United_States_elections": {
+    "archive_checked": "2026-09-04",
+    "archive_url": "http://web.archive.org/web/20260901225426/https://en.wikipedia.org/wiki/2026_United_States_elections",
+    "checked": "2026-09-04",
+    "document_sha256": "68095c0d930d62cdab404b174909bcefb243420af58f8527e8c602a323d70725",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-09-04",
+        "context": {
+          "prefix": "",
+          "sha256": "f190cf5b4d91008b729704eaafcd9fda843b9fb8e68cb543916c111edfc7d974",
+          "suffix": "In these midterm elections, scheduled to occur during Republican president Donald Trump's nonconsecutive second term, all 435 seats in the U.S. House"
+        },
+        "id": "300aa1e6ff21116d030baccb2e593532626c7113b957442c96754778945d6202",
+        "quote": "Elections are scheduled to be held, in large part, on November 3, 2026, in the United States.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
   "https://en.wikipedia.org/wiki/2026_Victorian_state_election": {
     "checked": "2026-08-26",
     "document_sha256": "c4a47cfde8f12bf291805f1481a9973243df8bb9cbed96c01d7cc6dd34f34211",
@@ -1665,6 +1782,28 @@
         },
         "id": "2cf39fbe2e7947af6b4c06c8233852f53eb8a974231557d7b48e38e8bf8b08bc",
         "quote": "General elections are scheduled to take place in Argentina on 24 October 2027. Voters will elect the president and vice president of Argentina, members in the Chamber of Deputies and Senate, and the governors of most provinces.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://en.wikipedia.org/wiki/2027_French_presidential_election": {
+    "archive_checked": "2026-09-04",
+    "archive_url": "http://web.archive.org/web/20260825043542/https://en.wikipedia.org/wiki/2027_French_presidential_election",
+    "checked": "2026-09-04",
+    "document_sha256": "cf7ff33986fa509c6fae816f2fe79435b7f584a66d5a8598dd31b8e1e199a9b9",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-09-04",
+        "context": {
+          "prefix": "",
+          "sha256": "01448f87c63901344aa12ca8a5c9f8133e489cff7149d739c03e01b11fcf7428",
+          "suffix": "The election may be held earlier under exceptional circumstances if the presidency falls vacant before then. Incumbent president Emmanuel Macron is",
+          "text": "Presidential elections are scheduled to be held in France on 18 April 2027, with a second round on 2 May if no candidate secures a majority vote. The election may be held earlier under exceptional circumstances if the presidency falls vacant before then. Incumbent president Emmanuel Macron is ineligible to stand, as the French constitution limits presidents to two consecutive terms, after which he may not serve again."
+        },
+        "id": "dd50d5605a7987b7f05048749f5cea485e990f472ffcbb7514ec79a0d1eb7628",
+        "quote": "Presidential elections are scheduled to be held in France on 18 April 2027, with a second round on 2 May if no candidate secures a majority vote.",
         "verified": true
       }
     ],
@@ -1725,6 +1864,28 @@
         },
         "id": "702ac8aaa832d020e53c5faf9f4f7f3571e716200c1268d429bcfd03eb7cb087",
         "quote": "A state general election is scheduled to be held on 13 March 2027 to elect members of the 59th Parliament of New South Wales.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://en.wikipedia.org/wiki/2027_Nigerian_general_election": {
+    "archive_checked": "2026-09-04",
+    "archive_url": "http://web.archive.org/web/20260829150925/https://en.wikipedia.org/wiki/2027_Nigerian_general_election",
+    "checked": "2026-09-04",
+    "document_sha256": "d27e940c4e40d4625631eb263380362578e41327658fb938bf3b77e8982350c9",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-09-04",
+        "context": {
+          "prefix": "",
+          "sha256": "31b3aa9b2661b38c5c98085055b7b72dd0a2acfe64424105c43ede6f6f8dd0a5",
+          "suffix": "Elections to elect state governors, and members of the house of assembly will be held on 6 February 2027. The Incumbent president Bola Tinubu has mad",
+          "text": "General elections will be held in Nigeria on 16 January 2027 to elect the president and vice president, members of the Senate and House of Representatives. Elections to elect state governors, and members of the house of assembly will be held on 6 February 2027. The Incumbent president Bola Tinubu has made his intentions known to run for a 2nd term under the All Progressives Congress."
+        },
+        "id": "a08bc6aa90c4d382e9bd8c87e733253e58aada06c64ce655c47b36aa5497cb67",
+        "quote": "General elections will be held in Nigeria on 16 January 2027 to elect the president and vice president, members of the Senate and House of Representatives.",
         "verified": true
       }
     ],
@@ -3991,6 +4152,8 @@
     "last_modified": null
   },
   "https://events.humanitix.com/citizen-assemblies-policy-without-politics-national-conference": {
+    "archive_checked": "2026-09-04",
+    "archive_url": "http://web.archive.org/web/20260904074804/https://events.humanitix.com/citizen-assemblies-policy-without-politics-national-conference",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-28"
   },
@@ -3999,12 +4162,19 @@
     "blocked_since": "2026-08-18",
     "url_status": "dead"
   },
-  "https://events.humanitix.com/finding-common-ground-with-democracyco-improving-the-legitimacy-of-public-policy": {},
+  "https://events.humanitix.com/finding-common-ground-with-democracyco-improving-the-legitimacy-of-public-policy": {
+    "blocked": "HTTP_403",
+    "blocked_since": "2026-09-04"
+  },
   "https://events.humanitix.com/international-day-of-democracy": {
+    "archive_checked": "2026-09-04",
+    "archive_url": "http://web.archive.org/web/20260904074911/https://events.humanitix.com/international-day-of-democracy",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-25"
   },
   "https://events.humanitix.com/radicalxchange-foundation-in-melbourne": {
+    "blocked": "HTTP_403",
+    "blocked_since": "2026-09-04",
     "checked": "2026-08-26",
     "document_sha256": "3faf2cc54c69d79dff39ad326b6cd5987d76396b96a90a19e404980a4bb7271e",
     "etag": null,
@@ -4084,6 +4254,8 @@
     "last_modified": "Wed, 26 Aug 2026 11:26:57 GMT"
   },
   "https://fathomjournal.org/darkenu-keeping-the-dream-of-israel-alive/": {
+    "blocked": "HTTP_403",
+    "blocked_since": "2026-09-04",
     "checked": "2026-08-29",
     "document_sha256": "b882c85d839eca7c20bbc540ddfeff3f2d867f710b059e20bcfedba2e2bb1f7d",
     "etag": null,
@@ -4174,6 +4346,8 @@
     "last_modified": "Thu, 27 Nov 2025 19:42:57 GMT"
   },
   "https://focusweb.org/press-statement-social-movements-united-in-defiance-of-false-solutions-being-negotiated-at-paris-cop/": {
+    "blocked": "HTTP_403",
+    "blocked_since": "2026-09-04",
     "checked": "2026-08-26",
     "document_sha256": "a531689563bedb10620eb9286b125084a1274c182dc093b4389caa3fc8f2814e",
     "etag": null,
@@ -4197,8 +4371,8 @@
     "blocked_since": "2026-08-29"
   },
   "https://foro.org.co/quienes-somos/": {
-    "archive_checked": "2026-08-28",
-    "archive_url": "http://web.archive.org/web/20260828152842/https://foro.org.co/quienes-somos/",
+    "archive_checked": "2026-09-04",
+    "archive_url": "http://web.archive.org/web/20260904074937/https://foro.org.co/quienes-somos/",
     "blocked": "ROBOTS_DISALLOWED",
     "blocked_since": "2026-08-20",
     "evidence": [
@@ -4722,6 +4896,8 @@
     "last_modified": "Thu, 20 Aug 2026 11:47:41 GMT"
   },
   "https://journals.sagepub.com/doi/10.1177/20539517241296038": {
+    "archive_checked": "2026-09-04",
+    "archive_url": "http://web.archive.org/web/20260904075947/https://journals.sagepub.com/doi/10.1177/20539517241296038",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-20",
     "evidence": [
@@ -4777,6 +4953,8 @@
     "last_modified": null
   },
   "https://leftfootforward.org/2025/11/everything-you-need-to-know-about-your-partys-founding-conference/": {
+    "blocked": "HTTP_403",
+    "blocked_since": "2026-09-04",
     "checked": "2026-08-29",
     "document_sha256": "0539ad15cd93770f5d79b8c1177a5e24067da9f6249af913cb5bca31d67e7090",
     "etag": null,
@@ -6008,7 +6186,7 @@
     "last_modified": null
   },
   "https://theyvoteforyou.org.au/about": {
-    "archive_checked": "2026-08-28",
+    "archive_checked": "2026-09-04",
     "archive_url": "http://web.archive.org/web/20260812053340/https://theyvoteforyou.org.au/about",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-20",
@@ -6028,6 +6206,8 @@
     "manual_checked": "2026-08-22"
   },
   "https://topics.amcham.com.tw/2017/02/make-full-use-of-join-gov-tw/": {
+    "blocked": "HTTP_403",
+    "blocked_since": "2026-09-04",
     "checked": "2026-08-29",
     "document_sha256": "888c2a824bb6d37a5ab25059c12c35f8b122d3f1468afc55b5603ea05c40f8ec",
     "etag": null,
@@ -6507,8 +6687,8 @@
     "last_modified": null
   },
   "https://www.ag.gov.au/integrity/australias-open-government-partnership": {
-    "archive_checked": "2026-08-28",
-    "archive_url": "http://web.archive.org/web/20251112013637/https://www.ag.gov.au/integrity/australias-open-government-partnership",
+    "archive_checked": "2026-09-04",
+    "archive_url": "http://web.archive.org/web/20260828153433/https://www.ag.gov.au/integrity/australias-open-government-partnership",
     "evidence": [
       {
         "context": {
@@ -6676,7 +6856,7 @@
     "last_modified": null
   },
   "https://www.britannica.com/topic/slavery-sociology/Slave-societies": {
-    "archive_checked": "2026-08-28",
+    "archive_checked": "2026-09-04",
     "archive_url": "http://web.archive.org/web/20260721132550/https://www.britannica.com/topic/slavery-sociology/Slave-societies",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-20",
@@ -6897,7 +7077,7 @@
     "last_modified": null
   },
   "https://www.coe.int/en/web/congress/-/deliberative-democracy-in-ukraine-congress-to-support-three-citizens-assemblies-in-2025-2026": {
-    "archive_checked": "2026-08-28",
+    "archive_checked": "2026-09-04",
     "archive_url": "http://web.archive.org/web/20260817141651/https://www.coe.int/en/web/congress/-/deliberative-democracy-in-ukraine-congress-to-support-three-citizens-assemblies-in-2025-2026",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-20",
@@ -6917,6 +7097,8 @@
     "manual_checked": "2026-08-22"
   },
   "https://www.coe.int/en/web/congress/-/ukraine-s-first-metropolitan-citizens-assembly-launched-in-lviv": {
+    "archive_checked": "2026-09-04",
+    "archive_url": "http://web.archive.org/web/20260821061702/https://www.coe.int/en/web/congress/-/ukraine-s-first-metropolitan-citizens-assembly-launched-in-lviv",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-20",
     "evidence": [
@@ -7678,6 +7860,8 @@
     "last_modified": null
   },
   "https://www.institutoupdate.org.br/quem-somos/": {
+    "blocked": "HTTP_403",
+    "blocked_since": "2026-09-04",
     "checked": "2026-08-29",
     "document_sha256": "5b8616cf50ca1e0d45d6ee1f1bf254d7843990bac65f8e5df6bcac8af5c8e711",
     "etag": null,
@@ -7698,7 +7882,7 @@
     "last_modified": null
   },
   "https://www.involve.org.uk/about/about-involve": {
-    "archive_checked": "2026-08-28",
+    "archive_checked": "2026-09-04",
     "archive_url": "http://web.archive.org/web/20260816153423/https://www.involve.org.uk/about/about-involve",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-20",
@@ -7718,7 +7902,7 @@
     "manual_checked": "2026-08-22"
   },
   "https://www.ipc.nsw.gov.au/news/open-government-partnership-final-public-consultation-draft-commitments-australias-third-national-action-plan": {
-    "archive_checked": "2026-08-28",
+    "archive_checked": "2026-09-04",
     "archive_url": "http://web.archive.org/web/20250524182833/https://www.ipc.nsw.gov.au/news/open-government-partnership-final-public-consultation-draft-commitments-australias-third-national-action-plan"
   },
   "https://www.ipsnews.net/2026/08/pakistans-crackdown-on-journalists-comes-under-heavy-fire/": {
@@ -7761,6 +7945,8 @@
     "last_modified": null
   },
   "https://www.jornada.com.mx/2006/01/03/index.php?article=003n1pol&section=politica": {
+    "blocked": "HTTP_403",
+    "blocked_since": "2026-09-04",
     "checked": "2026-08-26",
     "document_sha256": "35451413dd98f92e350f7fa2132f11697ab3e4567e60a0bb52ef10096d9e2601",
     "etag": null,
@@ -7895,7 +8081,7 @@
     "last_modified": null
   },
   "https://www.lesswrong.com/posts/oqvsR2LmHWamyKDcj/large-language-models-will-be-great-for-censorship": {
-    "archive_checked": "2026-08-28",
+    "archive_checked": "2026-09-04",
     "archive_url": "http://web.archive.org/web/20260520051548/https://www.lesswrong.com/posts/oqvsR2LmHWamyKDcj/large-language-models-will-be-great-for-censorship",
     "blocked": "HTTP_429",
     "blocked_since": "2026-08-25"
@@ -7980,6 +8166,8 @@
     "last_modified": null
   },
   "https://www.localgovernment.vic.gov.au/__data/assets/word_doc/0027/167913/Local-Government-Act-2020-Principles-Community-Engagement.docx": {
+    "archive_checked": "2026-09-04",
+    "archive_url": "http://web.archive.org/web/20260727123829/https://www.localgovernment.vic.gov.au/__data/assets/word_doc/0027/167913/Local-Government-Act-2020-Principles-Community-Engagement.docx",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-20",
     "evidence": [
@@ -8053,6 +8241,8 @@
     "last_modified": null
   },
   "https://www.mcguinnessinstitute.org/about-us/history/": {
+    "blocked": "HTTP_403",
+    "blocked_since": "2026-09-04",
     "checked": "2026-08-26",
     "document_sha256": "7d0f0d9039bd2e75a08aa7517b2d6376ed42d244451d0300900f73ab868c8aa9",
     "etag": null,
@@ -8083,6 +8273,8 @@
     "last_modified": null
   },
   "https://www.mcguinnessinstitute.org/research-projects/civics-nz/": {
+    "blocked": "HTTP_403",
+    "blocked_since": "2026-09-04",
     "checked": "2026-08-26",
     "document_sha256": "b2278eee18be373e122cc90349d4c215415230719b1d8e665917a2e8638d4966",
     "etag": null,
@@ -8331,8 +8523,8 @@
     "last_modified": null
   },
   "https://www.npr.org/2021/01/12/956020789/israeli-human-rights-group-says-the-country-pursues-nondemocratic-apartheid-regi": {
-    "archive_checked": "2026-08-28",
-    "archive_url": "http://web.archive.org/web/20260821060852/https://www.npr.org/2021/01/12/956020789/israeli-human-rights-group-says-the-country-pursues-nondemocratic-apartheid-regi",
+    "archive_checked": "2026-09-04",
+    "archive_url": "http://web.archive.org/web/20260904075526/https://www.npr.org/2021/01/12/956020789/israeli-human-rights-group-says-the-country-pursues-nondemocratic-apartheid-regi",
     "evidence": [
       {
         "context": {
@@ -8388,7 +8580,7 @@
     "last_modified": null
   },
   "https://www.opengovpartnership.org/documents/australia-letter-of-intent-to-join-ogp/": {
-    "archive_checked": "2026-08-28",
+    "archive_checked": "2026-09-04",
     "archive_url": "http://web.archive.org/web/20250118073839/https://www.opengovpartnership.org/documents/australia-letter-of-intent-to-join-ogp/",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-20",
@@ -8834,8 +9026,8 @@
     "last_modified": null
   },
   "https://www.science.org/doi/10.1126/science.adq2852": {
-    "archive_checked": "2026-08-28",
-    "archive_url": "http://web.archive.org/web/20251212073459/https://www.science.org/doi/10.1126/science.adq2852",
+    "archive_checked": "2026-09-04",
+    "archive_url": "http://web.archive.org/web/20260904080012/https://www.science.org/doi/10.1126/science.adq2852",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-20",
     "evidence": [
@@ -8911,6 +9103,8 @@
     "last_modified": "Wed, 26 Aug 2026 11:22:17 GMT"
   },
   "https://www.sortitionfoundation.org/amplifying_voices_on_housing": {
+    "blocked": "HTTP_403",
+    "blocked_since": "2026-09-04",
     "checked": "2026-08-26",
     "document_sha256": "dc20bba6d1bbf2a5d9d1533884eb5aaee40056a861c17fbb549c996394b6dcf9",
     "etag": null,
@@ -8930,6 +9124,8 @@
     "last_modified": null
   },
   "https://www.sortitionfoundation.org/australia_update": {
+    "blocked": "HTTP_403",
+    "blocked_since": "2026-09-04",
     "checked": "2026-08-26",
     "document_sha256": "0aa0aca991c6e863dfbdb89bd988ce3dcb9dd93fbb80c74ae9a7b4596f1186bc",
     "etag": null,
@@ -9006,6 +9202,8 @@
     "last_modified": null
   },
   "https://www.sortitionfoundation.org/history": {
+    "blocked": "HTTP_403",
+    "blocked_since": "2026-09-04",
     "checked": "2026-08-26",
     "document_sha256": "9c745e73756808de096aa3655b071384c2d8c1571041595613228cd9f39a8eef",
     "etag": null,
@@ -9202,8 +9400,30 @@
     ],
     "last_modified": "Wed, 26 Aug 2026 11:18:10 GMT"
   },
+  "https://www.uniandes.edu.co/es/noticias/gobierno-y-politica/juegue-y-encuentre-su-candidato-de-afinidad": {
+    "archive_checked": "2026-09-04",
+    "archive_url": "http://web.archive.org/web/20260904074834/https://www.uniandes.edu.co/es/noticias/gobierno-y-politica/juegue-y-encuentre-su-candidato-de-afinidad",
+    "checked": "2026-09-04",
+    "document_sha256": "1a6cd37d1984646c5837aa7f00c586ef73c7524aad0e29909f311fec0c7fb885",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-09-04",
+        "context": {
+          "prefix": "anorama, una alianza entre academia y tecnolog\u00eda cre\u00f3 una herramienta para simplificar la decisi\u00f3n en pocos minutos: Populus Senado 2026.",
+          "sha256": "05495b30c737ff07e0e63341b25b82c0a4068c533c3ced65c98f4bc92680f679",
+          "suffix": "La herramienta est\u00e1 disponible en l\u00ednea y se puede completar en aproximadamente tres minutos: https://survey.thalamuslab.ai/populus",
+          "text": "Desarrollado por KeepUp junto con Congreso Visible y el laboratorio GPD, el test propone al ciudadano responder preguntas sobre temas p\u00fablicos y recibir como resultado tres candidatos con mayor afinidad."
+        },
+        "id": "05495b30c737ff07e0e63341b25b82c0a4068c533c3ced65c98f4bc92680f679",
+        "quote": "Desarrollado por KeepUp junto con Congreso Visible y el laboratorio GPD, el test propone al ciudadano responder preguntas sobre temas p\u00fablicos y recibir como resultado tres candidatos con mayor afinidad.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
   "https://www.unimelb.edu.au/newsroom/news/2017/november/susan-mckinnon-foundation-and-university-of-melbourne-establish-prestigious-award-for-political-leadership": {
-    "archive_checked": "2026-08-28",
+    "archive_checked": "2026-09-04",
     "archive_url": "http://web.archive.org/web/20250103063217/https://www.unimelb.edu.au/newsroom/news/2017/november/susan-mckinnon-foundation-and-university-of-melbourne-establish-prestigious-award-for-political-leadership",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-20",
@@ -9281,7 +9501,7 @@
     "last_modified": "Wed, 26 Aug 2026 03:10:53 GMT"
   },
   "https://www.weforum.org/organizations/movilizatorio/": {
-    "archive_checked": "2026-08-28",
+    "archive_checked": "2026-09-04",
     "archive_url": "http://web.archive.org/web/20260513195149/https://www.weforum.org/organizations/movilizatorio/",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-20",
@@ -9301,7 +9521,7 @@
     "manual_checked": "2026-08-22"
   },
   "https://www.whitehouse.senate.gov/news/release/whitehouse-grassley-issue-statement-on-treasury-departments-final-rule-dismantling-key-element-of-corporate-transparency-act/": {
-    "archive_checked": "2026-08-28",
+    "archive_checked": "2026-09-04",
     "archive_url": "http://web.archive.org/web/20260821062609/https://www.whitehouse.senate.gov/news/release/whitehouse-grassley-issue-statement-on-treasury-departments-final-rule-dismantling-key-element-of-corporate-transparency-act/",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-20",
