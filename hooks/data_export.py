@@ -12,6 +12,7 @@ Generates docs/data/ during on_pre_build so files are served as static assets:
 import csv
 import datetime
 import glob
+import html
 import json
 import os
 import sys
@@ -139,16 +140,17 @@ def write_orgs_geojson(orgs, meta):
                  if k not in ("latitude", "longitude", "location_name", "title")}
         props["name"] = o["title"]
         props["location_name"] = o["location_name"]
-        concepts_str = ", ".join(o["concepts"]) if o["concepts"] else "—"
+        concepts_str = html.escape(", ".join(o["concepts"])) if o["concepts"] else "—"
         website = o["website"]
-        website_html = f'<a href="{website}">{website}</a>' if website else "—"
+        escaped_website = html.escape(website, quote=True) if website else ""
+        website_html = f'<a href="{escaped_website}">{escaped_website}</a>' if website else "—"
         props["description"] = (
-            f"<b>Status:</b> {o['status']}<br>"
-            f"<b>Country:</b> {o['country']}<br>"
-            f"<b>Type:</b> {o['type']}<br>"
+            f"<b>Status:</b> {html.escape(str(o['status']))}<br>"
+            f"<b>Country:</b> {html.escape(str(o['country']))}<br>"
+            f"<b>Type:</b> {html.escape(str(o['type']))}<br>"
             f"<b>Website:</b> {website_html}<br>"
             f"<b>Concepts:</b> {concepts_str}<br><br>"
-            f"{o['summary']}"
+            f"{html.escape(str(o['summary']))}"
         )
         features.append({
             "type": "Feature",
