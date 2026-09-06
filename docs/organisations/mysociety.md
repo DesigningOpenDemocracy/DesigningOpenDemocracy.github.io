@@ -55,12 +55,18 @@ events:
   notable: true
   notable_reason: Platform/product launch
 activity:
+  dod:
+    date: 2026-09-06
+    note: Site active with 2025-26 impact report and Sept 2026 blog post; flagship
+      tools (TheyWorkForYou, FixMyStreet, WhatDoTheyKnow) still live.
+    url: https://www.mysociety.org
+    checked: 2026-09-06
   rss:
     date: 2026-08-27
     note: 'Latest post: The problem with making public data pay for itself'
     url: https://www.mysociety.org/2026/08/27/the-problem-with-making-public-data-pay-for-itself/
     checked: 2026-08-28
-last_checked: '2026-05-29'
+last_checked: '2026-09-06'
 ---
 
 mySociety is a UK registered charity and social enterprise, founded in 2003, that builds digital tools to make it easier for citizens to participate in democracy, hold governments accountable, and access public services. It operates on the principle that well-designed technology can reduce the friction between citizens and the state.

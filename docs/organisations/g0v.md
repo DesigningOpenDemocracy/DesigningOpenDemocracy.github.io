@@ -48,6 +48,12 @@ activity:
       . In https://g0v.tw/intl/en/event/ there is a calendar where there appears to
       be various events.
     url: https://g0v.tw/intl/en/event/
+  dod:
+    date: 2026-09-06
+    note: Site active with community updates and bimonthly hackathons; confirmed Taiwanese
+      civic tech community, scope broader than just forking gov sites.
+    url: https://g0v.tw
+    checked: 2026-09-06
   rss:
     checked: 2026-08-28
     note: No feed found
@@ -60,7 +66,7 @@ activity:
     hint: no_markup
     checked: 2026-08-28
     note: News page found, no machine-readable date
-last_checked: '2026-05-30'
+last_checked: '2026-09-06'
 ---
 
 g0v (pronounced "gov zero") is a decentralised, volunteer-driven civic tech community founded in Taiwan in 2012. The name is a pun: replacing the "o" in "gov" with "0" (zero) to create an alternative domain — `g0v.tw` versus `gov.tw` — signalling a parallel, open, citizen-built version of government infrastructure.

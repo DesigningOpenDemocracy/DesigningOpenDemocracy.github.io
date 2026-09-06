@@ -53,11 +53,17 @@ activity:
     checked: 2026-06-07
     date: 2024-09-04
     note: website loaded. Last article at September 4, 2024 AI-Washing Is an Opportunity
+  dod:
+    date: 2026-09-06
+    note: Site active, recent articles present; still an online magazine + database
+      mapping democratic innovation tools.
+    url: https://democracy-technologies.org
+    checked: 2026-09-06
   sitemap:
     checked: 2026-08-28
     date: 2025-09-03
     note: Page last modified (from sitemap)
-last_checked: '2026-05-29'
+last_checked: '2026-09-06'
 ---
 
 Democracy Technologies is a research initiative and curated database that maps the global landscape of digital tools and platforms for democratic participation. It is part of the **Innovation in Politics Institute**, based in Vienna and Berlin.

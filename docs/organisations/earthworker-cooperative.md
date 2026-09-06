@@ -47,12 +47,18 @@ events:
   notable: true
   notable_reason: Became a worker-owned manufacturing co-op
 activity:
+  dod:
+    date: 2026-09-06
+    note: Site active with recent news; confirmed Victorian worker-cooperative network,
+      scope spans clean energy plus other cooperatives.
+    url: https://earthworker.coop
+    checked: 2026-09-06
   rss:
     checked: 2026-08-28
     date: 2026-07-13
     note: 'Latest post: Remembering Katherine Cunningham'
     url: https://earthworker.coop/remembering-katherine-cunningham/
-last_checked: '2026-05-29'
+last_checked: '2026-09-06'
 ---
 
 Earthworker Cooperative is a grassroots network of worker-owned cooperatives based in Victoria, Australia. Founded as a response to both the climate crisis and economic inequality, its model is to build community wealth by structuring enterprises as worker cooperatives — where employees are co-owners with equal voice, and profits are distributed locally rather than extracted by external shareholders.

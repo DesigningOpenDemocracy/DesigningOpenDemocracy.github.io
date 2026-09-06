@@ -9,6 +9,11 @@ summary: Victorian citizen watchdog on local council governance — tracks counc
   councillor wellbeing data.
 concepts:
 - accountability-sink
+location:
+  latitude: -37.8136
+  longitude: 144.9631
+  name: Melbourne, Victoria, Australia
+  precision: city
 events:
 - date: '2026-06-21'
   title: Published first results from its National Council Census 2026, drawing ~5,000

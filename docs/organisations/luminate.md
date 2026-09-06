@@ -59,12 +59,11 @@ activity:
       justice'
     url: https://luminategroup.com/news-and-insights
   dod:
-    checked: 2026-08-08
-    date: 2026-08-08
-    note: 'News page fetched 8 Aug 2026; active publishing — recent topics: AI accountability,
-      European AI & Society Fund ($1M grant), strategy shift toward tech accountability,
-      new CEO announced, global polling on AI perceptions'
-    url: https://luminategroup.com/news-and-insights
+    date: 2026-09-06
+    note: Site active, 2026 copyright; 252 current partners, $370M distributed since
+      2018; confirmed philanthropic funder in civic tech/digital rights space.
+    url: https://www.luminategroup.com
+    checked: 2026-09-06
   rss:
     checked: 2026-06-07
     note: No feed found
@@ -75,7 +74,7 @@ activity:
   sitemap:
     note: Sitemap found, no lastmod
     checked: 2026-08-28
-last_checked: '2026-05-29'
+last_checked: '2026-09-06'
 ---
 
 Luminate is a global philanthropic organisation established in 2018, spun out from the Omidyar Network (founded by eBay co-founder Pierre Omidyar) to focus specifically on civic empowerment and open governance. It operates globally with offices in London, Washington DC, Nairobi, São Paulo, and other cities.

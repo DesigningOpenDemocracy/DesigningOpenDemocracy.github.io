@@ -46,6 +46,12 @@ activity:
       'We’re aiming to expand our team this fall by adding a new Coordinator at MASS.
       We are looking for a candidate with the right mix of qualities, skills and experience
       to help us build our practice and raise our game.'
+  dod:
+    date: 2026-09-06
+    note: Site active with current initiatives (Canadian Youth Climate Assembly, Victoria-Saanich
+      Citizens' Assembly); '50+ panels' figure unchanged.
+    url: https://www.masslbp.com
+    checked: 2026-09-06
   social:
     date: 2025-07-21
     note: 'Latest video: What is MASS LBP?'
@@ -54,7 +60,7 @@ activity:
     checked: 2026-08-28
     date: 2026-05-22
     note: Page last modified (from sitemap)
-last_checked: '2026-05-29'
+last_checked: '2026-09-06'
 ---
 
 MASS LBP is a Toronto-based civic design firm founded in 2007 that specialises in designing and running citizens' assemblies, civic lotteries, and deliberative public engagement processes. It takes its name from the French phrase *masse de manœuvre* — a reserve force held back for decisive deployment.

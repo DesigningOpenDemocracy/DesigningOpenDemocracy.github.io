@@ -56,6 +56,12 @@ activity:
       is June 5, 2026 'vTaiwan Newsletter Issue Zero'. Its a mirror of their substack
       located at https://vtaiwantw.substack.com/p/vtaiwan-newsletter-issue-zero
     url: https://vtaiwantw.substack.com/p/vtaiwan-newsletter-issue-zero
+  dod:
+    date: 2026-09-06
+    note: Site reachable (200 OK); known SPA shell limits automated content confirmation,
+      but no evidence of discontinuation.
+    url: https://vtaiwan.tw
+    checked: 2026-09-06
   rss:
     checked: 2026-06-07
     note: No feed found
@@ -66,7 +72,7 @@ activity:
   sitemap:
     note: Sitemap found, no lastmod
     checked: 2026-08-28
-last_checked: '2026-05-30'
+last_checked: '2026-09-06'
 ---
 
 vTaiwan is a civic-technology platform for structured public consultation, developed collaboratively by the Taiwanese government's digital ministry and the **g0v** civic-tech community. It grew out of the 2014 Sunflower Movement: at the end of that year, minister Jaclyn Tsai attended a g0v hackathon and invited the community to design a neutral platform for large-scale deliberation on specific policy questions. vTaiwan launched in 2015, built around **Pol.is**, an opinion-mapping tool that surfaces consensus rather than amplifying disagreement.[^demtech]
