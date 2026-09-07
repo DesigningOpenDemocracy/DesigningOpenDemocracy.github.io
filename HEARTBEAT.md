@@ -292,16 +292,23 @@ automatically — nothing to reset by hand.
 
 ## In the world  ← omit entirely if nothing notable
 
-[1–3 items, each with:
- - A one-sentence statement of what happened
- - A linked source (title, outlet, date)
- - 1–2 sentences on why it's relevant to governance design / how it relates
-   to concepts or orgs in the landscape
- - Opinion is fine here if it's grounded in the accountability framework —
+[1–3 items, each its own `###` sub-heading — a short, scannable headline
+(what happened, not a full citation-bearing sentence), so a reader skimming
+the section sees a list of headlines before committing to any one item's
+detail. Under the heading, 2–3 short paragraphs rather than one dense
+block:
+ - **What happened** — the event itself, sourced (title, outlet, date)
+ - **Why it matters** — 1–2 sentences on the governance-design angle, how
+   it relates to concepts or orgs in the landscape
+ - **Framework lens** (can merge into the paragraph above if short) —
+   opinion is fine here if it's grounded in the accountability framework —
    say what you think rather than hedging into false neutrality (see Voice
    in Step 5)
- - If notability is genuinely uncertain, mark the item
-   `<!-- tentative: revisit next run -->` right after it (see Step 5/6)]
+ If notability is genuinely uncertain, mark the item
+   `<!-- tentative: revisit next run -->` right after its heading (see
+   Step 5/6). This is a formatting change only (added 2026-09) — it does
+   not relax the sourcing/voice rules above, and doesn't need to be
+   retrofitted onto already-released posts.]
 
 ## DOD itself  ← omit entirely if nothing new since the last run
 
