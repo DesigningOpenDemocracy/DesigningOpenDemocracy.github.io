@@ -268,17 +268,19 @@ needs to change unless something in it is now stale.
   `draft: true`.
 
   **"In the world" isn't append-only.** The 1–3 item target above is a
-  real ceiling to weigh against, not just a drafting suggestion — once the
-  section holds around 3 items, judge a new one against the *weakest*
-  item already there rather than defaulting to appending a 4th. If the new
-  item is clearly more significant, replace the weaker one (dropping it
-  from the post, not the research behind it — a bumped item that's still
-  worth keeping a record of can go to `internal-heartbeat/` instead of
-  being lost outright). If every item currently listed is still genuinely
-  important, append anyway rather than force a cut that would mean
-  dropping something that still matters — the target is a scannable,
-  prioritized set of stories, not a hard cap enforced past the point
-  where it stops making the post better. This mirrors the same
+  soft boundary, not a hard cap — but it's a real boundary to weigh
+  against, not just a drafting suggestion, and going past it needs an
+  actual reason rather than defaulting to appending a 4th because
+  appending is easier than judging. Once the section holds around 3
+  items, a new one should first be weighed against the *weakest* item
+  already there: if the new one is clearly more significant, replace the
+  weaker one (dropping it from the post, not the research behind it — a
+  bumped item still worth a record can go to `internal-heartbeat/`
+  instead of being lost outright). Only run past the target when the
+  honest call is that every item currently listed, the new one included,
+  is genuinely important enough to justify it — and say so briefly in
+  Working notes when that happens, so a reader can see the section grew
+  on purpose rather than by drift. This mirrors the same
   say-nothing-rather-than-force-it discipline the notability threshold
   already applies per-item (Step 5) — applied here to the section as a
   whole once it's no longer empty.
