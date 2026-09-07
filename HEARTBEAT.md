@@ -408,6 +408,26 @@ If this run also drafts a post idea for the human-facing blog
 Push permissions. Never set `draft: false` on a blog post yourself; that's
 the human's call.
 
+**After pushing, check that CI actually went green — don't assume it from a
+local build.** CI runs `mkdocs build --strict` (`.github/workflows/build.yml`),
+which turns broken-link notices into a hard failure. `make check-links` runs
+that same `--strict` build locally; `make build` (what CLAUDE.md's pre-push
+checklist currently lists) does not, and can pass locally on a change that
+still fails CI — confirmed the hard way: two heartbeat-workflow commits
+landed on `main` with a broken link neither `make build` nor
+`check_internal_links.py` caught, discovered only from the CI log after the
+fact. Run `make check-links` before pushing, not just `make build`, and
+confirm the run on `main` (`mcp__github__actions_list` /
+`actions_get`, or the Actions tab) actually completed green rather than
+trusting the local check alone. One known trap this catches: a doc-relative
+link inside a heartbeat post that's correct for `docs/heartbeat/posts/`
+breaks once `hooks/heartbeat_current.py` mirrors the same markdown into
+`docs/heartbeat/current.md`, a shallower path — link to the production URL
+(`https://designingopendemocracy.com/...`) for anything a heartbeat post
+links to outside its own footnotes, not a relative doc link. If CI comes
+back red, fix and push again before ending the run — a push isn't done
+until the run on `main` is confirmed green.
+
 ---
 
 ## Escalation — open a PR instead of pushing direct if
