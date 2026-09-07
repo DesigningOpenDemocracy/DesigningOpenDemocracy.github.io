@@ -263,9 +263,25 @@ needs to change unless something in it is now stale.
   Resolve any tentative items from a prior run before adding new ones —
   decide, in light of whatever has surfaced since, whether each still holds
   up. Then refine in place: update "Landscape update" with this run's
-  numbers, append genuinely new "In the world" items (don't repeat ones
+  numbers, add genuinely new "In the world" items (don't repeat ones
   already listed, tentative or not), and tighten "What's next." Keep
   `draft: true`.
+
+  **"In the world" isn't append-only.** The 1–3 item target above is a
+  real ceiling to weigh against, not just a drafting suggestion — once the
+  section holds around 3 items, judge a new one against the *weakest*
+  item already there rather than defaulting to appending a 4th. If the new
+  item is clearly more significant, replace the weaker one (dropping it
+  from the post, not the research behind it — a bumped item that's still
+  worth keeping a record of can go to `internal-heartbeat/` instead of
+  being lost outright). If every item currently listed is still genuinely
+  important, append anyway rather than force a cut that would mean
+  dropping something that still matters — the target is a scannable,
+  prioritized set of stories, not a hard cap enforced past the point
+  where it stops making the post better. This mirrors the same
+  say-nothing-rather-than-force-it discipline the notability threshold
+  already applies per-item (Step 5) — applied here to the section as a
+  whole once it's no longer empty.
 - **Doesn't exist yet:** `python util/heartbeat_post.py` creates it fresh
   with `draft: true` and the required frontmatter/disclaimer scaffolded —
   fill in the TODO sections.
