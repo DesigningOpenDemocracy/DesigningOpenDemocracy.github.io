@@ -17,6 +17,23 @@ For a full run the agent needs:
 
 **Without network access:** skip step 2 (URL verification) and step 5 (commentary research). Run the maintenance scripts and produce a stats-only post. Note the limitation in the post.
 
+**If `pip install -r requirements.txt` fails building `mkdocs-ezlinks-plugin`** with
+`AttributeError: install_layout` — some ephemeral session containers ship a
+Debian-patched `distutils` that breaks the legacy `setup.py`-only build path
+0.1.14 requires (it has no wheel on PyPI; 0.1.13 does). This is a sandbox
+quirk, not a real dependency problem — CI installs the pinned 0.1.14 fine, and
+0.1.13 isn't a drop-in (real code differences between the two), so **don't
+"fix" this by downgrading the pin in `requirements.txt`.** Instead, work
+around it for this session only:
+```
+pip install -q --only-binary=:all: mkdocs-ezlinks-plugin  # grabs 0.1.13's wheel, skips the broken build
+grep -v -i ezlinks requirements.txt > /tmp/req_no_ezlinks.txt
+pip install -q --prefer-binary -r /tmp/req_no_ezlinks.txt
+```
+Confirmed the resulting `mkdocs build` runs clean either way (0.1.13's ezlinks
+behaviour didn't affect any actual link resolution in a full build during the
+run that found this).
+
 **Without write access to `main`:** fall back to opening a PR for everything.
 
 ---
