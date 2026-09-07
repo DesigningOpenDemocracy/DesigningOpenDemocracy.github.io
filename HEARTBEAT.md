@@ -108,6 +108,22 @@ in `CLAUDE.md`) turns up something worth tracking, that's this brief's judgment
 call to make (fold it into the Maintenance log below, or open an issue by hand),
 not a mechanism running unattended between runs.
 
+**Also check what DOD itself is up to.** DOD is a tracked org like any
+other (`docs/organisations/designing-open-democracy.md`) with its own
+`events:` list, and it has a human-curated blog
+(`docs/blog/posts/`) separate from this heartbeat log. Neither is
+external research — it's already-structured data this brief otherwise
+never looks at:
+```bash
+grep -A3 "^events:" -A40 docs/organisations/designing-open-democracy.md   # upcoming/recent DOD events
+ls -t docs/blog/posts/*.md | head -10                                     # newest human posts
+```
+Note anything genuinely new since the last heartbeat run — an upcoming
+event, a published post — for the optional "DOD itself" section in Step 6.
+Same discipline as every other optional section: skip it entirely if
+nothing's changed, rather than restating what's already on the calendar
+or already covered in a prior sync post.
+
 ### 2. Work the staleness queue
 
 ```bash
@@ -286,6 +302,16 @@ automatically — nothing to reset by hand.
    in Step 5)
  - If notability is genuinely uncertain, mark the item
    `<!-- tentative: revisit next run -->` right after it (see Step 5/6)]
+
+## DOD itself  ← omit entirely if nothing new since the last run
+
+[Not commentary on the world — what DOD itself has done or has coming up,
+pulled from `designing-open-democracy.md`'s own `events:` list and any new
+`docs/blog/posts/` entries since the last heartbeat run (see Step 1). A
+sentence or two per item is enough; this is a pointer, not a retelling —
+link to the blog post or event page rather than re-explaining it here.
+Skip anything already covered in a prior sync post. Omit the section
+entirely on a run where nothing's changed, same as Framework notes below.]
 
 ## Landscape update
 
