@@ -39,8 +39,8 @@
 {%- else %}
 
 <div class="calendar-filter-bar">
-  <label class="calendar-filter-label">Filter by country:</label>
-  <select id="calendar-country-filter" class="org-filter-select">
+  <label class="calendar-filter-label" for="calendar-country-filter">Filter by country:</label>
+  <select id="calendar-country-filter" class="org-filter-select" aria-label="Filter events by country">
     <option value="all">All countries</option>
   </select>
   <button id="calendar-country-reset" class="calendar-reset-btn" title="Show all countries" aria-label="Reset country filter">✕ Reset</button>
