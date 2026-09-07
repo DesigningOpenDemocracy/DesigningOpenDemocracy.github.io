@@ -12,11 +12,23 @@ page always reflects whatever that file currently says.
 
 If no draft: true post exists (nothing accumulating, or this month's post
 was just released), the page falls back to a placeholder.
+
+A metadata line (date, ai_generated badge, tags) is prepended above the
+mirrored body — a real released post shows this in its sidebar via the
+blog plugin's own post decoration, which this page never gets since it
+isn't a blog-plugin post, just a plain doc page. Built directly from the
+draft's frontmatter rather than trying to reuse docs/overrides/blog-post.html's
+sidebar markup, since that template relies on page.authors/page.categories
+objects the blog plugin populates only for actual posts.
 """
 
 import glob
 import os
 import re
+import sys
+
+sys.path.insert(0, os.path.dirname(__file__))
+from tag_links import tag_url  # noqa: E402
 
 MARKER = "<!-- HEARTBEAT_CURRENT_BODY -->"
 
@@ -24,6 +36,14 @@ PLACEHOLDER = (
     "*No draft is currently accumulating. Check back after the next scheduled\n"
     "heartbeat run.*\n"
 )
+
+AI_LABELS = {
+    "generated": "AI-generated",
+    "drafted": "AI-drafted, human-reviewed & revised",
+    "collaborated": "Human-AI collaboration",
+    "reviewed": "Human-authored, AI-reviewed & edited",
+    "assisted": "AI-assisted",
+}
 
 
 def _find_active_draft(docs_dir):
@@ -61,9 +81,33 @@ def _extract_body(post):
     return post.content[m.start():].rstrip() + "\n" if m else post.content.rstrip() + "\n"
 
 
+def _meta_block(post):
+    """Date/AI-badge/tags line, mirroring what a released post's sidebar shows."""
+    meta = post.metadata
+    parts = []
+
+    date_val = meta.get("date")
+    if date_val:
+        parts.append(f"<strong>Started:</strong> {date_val}")
+
+    ai_level = meta.get("ai_assist") or ("generated" if meta.get("ai_generated") else None)
+    if ai_level:
+        label = AI_LABELS.get(ai_level, ai_level)
+        parts.append(f'<span class="ai-assist-badge ai-assist-{ai_level}">{label}</span>')
+
+    tags = meta.get("tags") or []
+    if tags:
+        chips = " ".join(f'<a class="concept-tag" href="{tag_url(t)}">{t}</a>' for t in tags)
+        parts.append(f"<strong>Tags:</strong> {chips}")
+
+    if not parts:
+        return ""
+    return '<p class="heartbeat-current-meta">' + " &nbsp;·&nbsp; ".join(parts) + "</p>\n\n"
+
+
 def on_page_markdown(markdown, *, page, config, files):
     if page.file.src_path != "heartbeat/current.md" or MARKER not in markdown:
         return markdown
     post = _find_active_draft(config["docs_dir"])
-    body = _extract_body(post) if post else PLACEHOLDER
+    body = (_meta_block(post) + _extract_body(post)) if post else PLACEHOLDER
     return markdown.replace(MARKER, body)

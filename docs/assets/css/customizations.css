@@ -1361,6 +1361,18 @@
 .origin-milestone       { background: rgba(158,157,36,0.25); color: #dce775; border: 1px solid rgba(158,157,36,0.35); }
 .origin-reader-question { background: rgba(0,131,143,0.25);  color: #4dd0e1; border: 1px solid rgba(0,131,143,0.35); }
 
+/* Metadata line on docs/heartbeat/current.md (hooks/heartbeat_current.py) —
+   the date/AI-badge/tags a released post shows in its sidebar, reproduced
+   inline since this page isn't a blog-plugin post and gets no sidebar. */
+.heartbeat-current-meta {
+  font-size: 0.85em;
+  color: var(--md-default-fg-color--light);
+  margin-bottom: 1.4em;
+}
+.heartbeat-current-meta .concept-tag {
+  margin: 0 2px;
+}
+
 /* Shared-link card: auto-injected at the top of blog posts with
    shared_link: frontmatter (hooks/shared_link_card.py) — the specific
    external resource a post exists to point at, made prominent instead of
