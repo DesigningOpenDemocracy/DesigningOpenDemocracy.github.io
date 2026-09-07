@@ -50,10 +50,10 @@
   </div>
 
   <div class="org-activity-filters" role="group" aria-label="Filter by recency">
-    <button class="org-activity-btn active" data-days="0">All time</button>
-    <button class="org-activity-btn" data-days="180">6 months</button>
-    <button class="org-activity-btn" data-days="365">1 year</button>
-    <button class="org-activity-btn" data-days="730">2 years</button>
+    <button type="button" class="org-activity-btn active" data-days="0" aria-pressed="true">All time</button>
+    <button type="button" class="org-activity-btn" data-days="180" aria-pressed="false">6 months</button>
+    <button type="button" class="org-activity-btn" data-days="365" aria-pressed="false">1 year</button>
+    <button type="button" class="org-activity-btn" data-days="730" aria-pressed="false">2 years</button>
   </div>
 
   <button type="button" id="org-clear-filters" class="org-clear-btn">Clear filters</button>
@@ -357,8 +357,12 @@
 
   activityBtns.forEach(function (btn) {
     btn.addEventListener('click', function () {
-      activityBtns.forEach(function (b) { b.classList.remove('active'); });
+      activityBtns.forEach(function (b) {
+        b.classList.remove('active');
+        b.setAttribute('aria-pressed', 'false');
+      });
       btn.classList.add('active');
+      btn.setAttribute('aria-pressed', 'true');
       activeDays = parseInt(btn.dataset.days, 10);
       applyFilters();
     });
@@ -367,7 +371,11 @@
   clearBtn.addEventListener('click', function () {
     search.value = '';
     activeDays = 0;
-    activityBtns.forEach(function (b) { b.classList.toggle('active', b.dataset.days === '0'); });
+    activityBtns.forEach(function (b) {
+      var isAllTime = b.dataset.days === '0';
+      b.classList.toggle('active', isAllTime);
+      b.setAttribute('aria-pressed', isAllTime ? 'true' : 'false');
+    });
     facets.forEach(function (f) {
       Object.keys(f.checked).forEach(function (k) { delete f.checked[k]; });
       if (f.key === 'status') f.checked.active = true;
