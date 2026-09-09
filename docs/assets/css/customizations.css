@@ -1016,6 +1016,12 @@
     background: rgba(128, 128, 128, 0.08);
 }
 
+.org-sortable-table th.sortable:focus-visible {
+    outline: 2px solid var(--md-accent-fg-color, #49a7e9);
+    outline-offset: -2px;
+    background: rgba(128, 128, 128, 0.12);
+}
+
 .org-sortable-table th:nth-child(1) { width: 24%; }
 .org-sortable-table th:nth-child(2) { width: 10%; }
 .org-sortable-table th:nth-child(3) { width: 8%; }
