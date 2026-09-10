@@ -759,6 +759,12 @@
     background: rgba(128, 128, 128, 0.12);
 }
 
+.org-clear-btn:focus-visible {
+    opacity: 1;
+    outline: 2px solid var(--md-accent-fg-color, var(--md-primary-fg-color));
+    outline-offset: 2px;
+}
+
 .org-facet-bar {
     display: flex;
     flex-wrap: wrap;
