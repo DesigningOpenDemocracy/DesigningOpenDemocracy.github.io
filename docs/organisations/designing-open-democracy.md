@@ -55,14 +55,15 @@ events:
     box" panel with 888 Co-operative Causeway'
   short_title: 'International Day of Democracy: democracy beyond the ballot box'
   url: https://events.humanitix.com/international-day-of-democracy
-  quote: To celebrate International Day of Democracy and in the lead up to a Victorian
-    State election, 888 Co-operative Causeway and Designing Open Democracy are pleased
-    to host a Melbourne discussion on democracy beyond the ballot box.
-  note: Panel at The Kelvin Club, Melbourne, on democratic practices beyond voting
-    (citizens' juries, deliberative technologies, co-operative enterprise), with Nicholas
-    Gruen (CEO, Lateral Economics) as first announced speaker.
+  quote: Together they will explore citizens’ juries, deliberative democracy, co-operative
+    enterprise and practical ways of making decisions with people who may not agree
+    with us - with plenty of time for questions and conversation.
+  note: Panel at The Kelvin Club, Melbourne, on democratic practices beyond voting.
+    Confirmed panel of four — Nicholas Gruen (CEO, Lateral Economics), Anitra Nelson
+    (University of Melbourne), Godfrey Moase (co-founder, CoPower), and Nicole Hunter
+    (co-founder, MosaicLab).
   proof_level: high
-  url_checked: '2026-08-25'
+  url_checked: '2026-09-11'
   time: '18:00'
   end_time: '20:00'
   notable: true

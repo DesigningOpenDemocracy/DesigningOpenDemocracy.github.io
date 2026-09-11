@@ -7389,11 +7389,12 @@
     "last_modified": null
   },
   "https://www.designingopendemocracy.com/blog/2016/12/19/inaugural-designing-open-democracy-meeting/": {
-    "checked": "2026-08-26",
-    "document_sha256": "4d10870f9dbff0ce1a01dc75c80077ae59fdb26e5b7354467c53034ab8047bd2",
-    "etag": "W/\"6a8ecf1a-4cc58\"",
+    "checked": "2026-09-11",
+    "document_sha256": "835cf1675c29262df0ef764e30628352c28926de51e94e4555ea42f571240dab",
+    "etag": "W/\"6a9ec5ea-4cda7\"",
     "evidence": [
       {
+        "checked": "2026-09-11",
         "context": {
           "prefix": "This is a historical post from meetup.com where we sent the first message after our very first meeting at 19/12/2016 Hello Everyone!",
           "sha256": "596d09e225107816bbb960ce2d396ba03012597f3e3c7239777d350befe04331",
@@ -7405,14 +7406,15 @@
         "verified": true
       }
     ],
-    "last_modified": "Wed, 26 Aug 2026 11:33:46 GMT"
+    "last_modified": "Mon, 07 Sep 2026 14:10:50 GMT"
   },
   "https://www.designingopendemocracy.com/blog/2018/02/10/proposed-initial-strategy-of-designing-open-democracy/": {
-    "checked": "2026-08-26",
-    "document_sha256": "0e1142f1bd39ad036404240759537fb32418c417eb0275d67126d4e20fdf9a4d",
-    "etag": "W/\"6a8ecf1a-3856b\"",
+    "checked": "2026-09-11",
+    "document_sha256": "9895fd0d7e92cee9446115bebe11f6dd3fda77cd18564b8670c21bc7a6359b13",
+    "etag": "W/\"6a9ec5ea-386ba\"",
     "evidence": [
       {
+        "checked": "2026-09-11",
         "context": {
           "prefix": "tical-alliances political-discourse public-awareness workshops Proposed (Initial) Strategy of Designing Open Democracy Rationale & Vision",
           "sha256": "d61364727cdb81b6061a95993507e41502ef3dcbe47b4bc1fff372b8f5e158be",
@@ -7424,7 +7426,7 @@
         "verified": true
       }
     ],
-    "last_modified": "Wed, 26 Aug 2026 11:33:46 GMT"
+    "last_modified": "Mon, 07 Sep 2026 14:10:50 GMT"
   },
   "https://www.designingopendemocracy.com/blog/2018/12/18/designing-open-democracy-state-of-democracy-in-australia-in-2018/": {
     "checked": "2026-08-26",

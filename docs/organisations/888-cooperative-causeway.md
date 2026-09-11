@@ -36,6 +36,22 @@ events:
   url_checked: '2026-08-12'
   notable: true
   notable_reason: Founding of the organisation
+- date: '2026-09-15'
+  title: 'Co-hosting "International Day of Democracy: democracy beyond the ballot
+    box" panel with Designing Open Democracy'
+  short_title: 'International Day of Democracy: democracy beyond the ballot box'
+  url: https://events.humanitix.com/international-day-of-democracy
+  quote: Hosted by 888 Co-operative Causeway in partnership with Designing Open Democracy.
+  note: Panel at the Kelvin Club — the members' club 888 provides workspace access
+    to — on democratic practices beyond voting. Confirmed panel of four — Nicholas
+    Gruen (Lateral Economics), Anitra Nelson (University of Melbourne), Godfrey Moase
+    (CoPower), and Nicole Hunter (MosaicLab).
+  proof_level: high
+  url_checked: '2026-09-11'
+  time: '18:00'
+  end_time: '20:00'
+  notable: true
+  notable_reason: Public panel co-hosted for International Day of Democracy
 activity:
   manual:
     checked: 2026-06-07
