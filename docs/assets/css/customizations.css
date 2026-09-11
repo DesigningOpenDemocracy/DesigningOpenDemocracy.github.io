@@ -754,9 +754,20 @@
     white-space: nowrap;
 }
 
-.org-clear-btn:hover {
+.org-clear-btn:hover:not(:disabled) {
     opacity: 1;
     background: rgba(128, 128, 128, 0.12);
+}
+
+.org-clear-btn:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+    border-color: rgba(128, 128, 128, 0.2);
+}
+
+.org-clear-btn:focus-visible {
+    outline: 2px solid var(--md-accent-fg-color);
+    outline-offset: 2px;
 }
 
 .org-facet-bar {

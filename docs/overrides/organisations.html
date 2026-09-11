@@ -56,7 +56,7 @@
     <button class="org-activity-btn" data-days="730">2 years</button>
   </div>
 
-  <button type="button" id="org-clear-filters" class="org-clear-btn">Clear filters</button>
+  <button type="button" id="org-clear-filters" class="org-clear-btn" aria-label="Clear all active filters" disabled>Clear filters</button>
 </div>
 
   <div class="org-results">
@@ -320,6 +320,21 @@
     });
   }
 
+  function isAnyFilterActive() {
+    if (search.value.trim() !== '') return true;
+    if (activeDays !== 0) return true;
+    for (var i = 0; i < facets.length; i++) {
+      var f = facets[i];
+      var checkedKeys = Object.keys(f.checked).filter(function (k) { return f.checked[k]; });
+      if (f.key === 'status') {
+        if (checkedKeys.length !== 1 || checkedKeys[0] !== 'active') return true;
+      } else {
+        if (checkedKeys.length > 0) return true;
+      }
+    }
+    return false;
+  }
+
   function applyFilters() {
     var visible = 0;
     rows().forEach(function (r) {
@@ -328,6 +343,7 @@
       if (show) visible++;
     });
     countEl.textContent = visible + ' organisation' + (visible !== 1 ? 's' : '');
+    clearBtn.disabled = !isAnyFilterActive();
     updateFacetCounts();
     updateFacetBadges();
   }
