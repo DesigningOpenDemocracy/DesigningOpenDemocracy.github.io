@@ -39,11 +39,22 @@ This one's ours: on Tuesday 15 September, DOD is co-hosting a Melbourne panel wi
 
 ## What it is
 
-["International Day of Democracy: democracy beyond the ballot box"](https://events.humanitix.com/international-day-of-democracy) runs 6–8pm on Tuesday 15 September 2026 at [The Kelvin Club](https://www.888causeway.coop) in Melbourne.[^humanitix] Light catering is included with entry; drinks and meals are otherwise available at bar prices.[^catering]
+["International Day of Democracy: democracy beyond the ballot box"](https://events.humanitix.com/international-day-of-democracy) runs 6–8pm on Tuesday 15 September 2026 at [The Kelvin Club](https://www.888causeway.coop) in Melbourne — a private members' club established in 1865, in the heart of the Melbourne CBD, that has hosted many of 888's past discussions.[^venue] Light catering is included with entry; drinks and meals are otherwise available at bar prices.[^catering]
 
 To mark International Day of Democracy in the lead up to a Victorian State election, Designing Open Democracy and 888 Co-operative Causeway are hosting a Melbourne panel on emerging democratic practice — citizens' juries in local government, new deliberative technologies, and cooperative ownership models. This event brings together practitioners, researchers and civic technologists to talk about what's being built now and what it would take to go further.
 
-The panel covers practices and institutions that can deepen democracy beyond the ballot box: citizens' juries, deliberative technologies, and new iterations of co-operative enterprise.[^humanitix]
+Together, the panel will explore citizens' juries, deliberative democracy, co-operative enterprise, and practical ways of making decisions with people who may not agree with us — with time for questions and conversation afterwards.[^humanitix]
+
+## Who's on the panel
+
+Four speakers are confirmed, each working on a different facet of participation beyond voting:
+
+- **[Nicholas Gruen](../../organisations/lateral-economics.md)** — policy economist and leading advocate for citizens' juries and deliberative reform; CEO of Lateral Economics.[^panel-gruen]
+- **Anitra Nelson** — University of Melbourne scholar and writer on housing, degrowth, and democratic alternatives.[^panel-nelson]
+- **Godfrey Moase** — former Executive Director of the United Workers Union and co-founder of the energy co-operative CoPower.[^panel-moase]
+- **[Nicole Hunter](../../organisations/mosaiclab.md)** — co-founder and Managing Director of MosaicLab, and one of Australia's most experienced practitioners of deliberative engagement.[^panel-hunter]
+
+Why come along? "This is a unique opportunity to hear from and engage with democratic practitioners and thinkers across different silos."[^whyattend]
 
 <p style="text-align:center; margin: 1.5rem 0;">
   <a class="hero-cta-btn hero-cta-primary" href="https://events.humanitix.com/international-day-of-democracy" target="_blank" rel="noopener">RSVP for 15 September →</a>
@@ -60,6 +71,18 @@ The panel covers practices and institutions that can deepen democracy beyond the
 
 [^vicelection]: "A state general election is scheduled to be held on 28 November 2026 to elect members of the 61st Parliament of Victoria." [2026 Victorian state election](https://en.wikipedia.org/wiki/2026_Victorian_state_election), Wikipedia.
 
-[^humanitix]: "To celebrate International Day of Democracy and in the lead up to a Victorian State election, 888 Co-operative Causeway and Designing Open Democracy are pleased to host a Melbourne discussion on democracy beyond the ballot box." ["International Day of Democracy: democracy beyond the ballot box"](https://events.humanitix.com/international-day-of-democracy), Humanitix, accessed 25 August 2026.
+[^humanitix]: "Together they will explore citizens’ juries, deliberative democracy, co-operative enterprise and practical ways of making decisions with people who may not agree with us - with plenty of time for questions and conversation." ["International Day of Democracy: democracy beyond the ballot box"](https://events.humanitix.com/international-day-of-democracy), Humanitix, accessed 11 September 2026.
 
-[^catering]: "Light catering included with registration. Drinks and meals at bar prices." ["International Day of Democracy: democracy beyond the ballot box"](https://events.humanitix.com/international-day-of-democracy), Humanitix, accessed 25 August 2026.
+[^catering]: "Light catering is included with registration. Drinks and meals available at bar prices." ["International Day of Democracy: democracy beyond the ballot box"](https://events.humanitix.com/international-day-of-democracy), Humanitix, accessed 11 September 2026.
+
+[^venue]: "Established in 1865, the Kelvin Club is a private club located in the heart of the Melbourne CBD and has been the venue for many 888-hosted discussions." ["International Day of Democracy: democracy beyond the ballot box"](https://events.humanitix.com/international-day-of-democracy), Humanitix, accessed 11 September 2026.
+
+[^panel-gruen]: "policy economist and leading advocate for citizens’ juries and deliberative reform" ["International Day of Democracy: democracy beyond the ballot box"](https://events.humanitix.com/international-day-of-democracy), Humanitix, accessed 11 September 2026.
+
+[^panel-nelson]: "University of Melbourne scholar and writer on housing, degrowth and democratic alternatives" ["International Day of Democracy: democracy beyond the ballot box"](https://events.humanitix.com/international-day-of-democracy), Humanitix, accessed 11 September 2026.
+
+[^panel-moase]: "former Executive Director of the United Workers Union and co-founder of energy co-operative CoPower" ["International Day of Democracy: democracy beyond the ballot box"](https://events.humanitix.com/international-day-of-democracy), Humanitix, accessed 11 September 2026.
+
+[^panel-hunter]: "co-founder and Managing Director of MosaicLab and one of Australia’s most experienced practitioners of deliberative engagement" ["International Day of Democracy: democracy beyond the ballot box"](https://events.humanitix.com/international-day-of-democracy), Humanitix, accessed 11 September 2026.
+
+[^whyattend]: "This is a unique opportunity to hear from and engage with democratic practitioners and thinkers across different silos." ["International Day of Democracy: democracy beyond the ballot box"](https://events.humanitix.com/international-day-of-democracy), Humanitix, accessed 11 September 2026.
