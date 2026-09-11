@@ -64,13 +64,13 @@
     <table id="org-table" class="org-sortable-table">
       <thead>
         <tr>
-          <th class="sortable" data-col="0">Name <span class="sort-icon">↕</span></th>
-          <th class="sortable" data-col="1">Type <span class="sort-icon">↕</span></th>
-          <th class="sortable" data-col="2">Country <span class="sort-icon">↕</span></th>
-          <th class="sortable" data-col="3">Status <span class="sort-icon">↕</span></th>
-          <th class="sortable" data-col="4">Last active <span class="sort-icon">↕</span></th>
-          <th>Contact</th>
-          <th>Concepts</th>
+          <th class="sortable" data-col="0" scope="col" tabindex="0" aria-sort="none" aria-label="Name, sort column">Name <span class="sort-icon" aria-hidden="true">↕</span></th>
+          <th class="sortable" data-col="1" scope="col" tabindex="0" aria-sort="none" aria-label="Type, sort column">Type <span class="sort-icon" aria-hidden="true">↕</span></th>
+          <th class="sortable" data-col="2" scope="col" tabindex="0" aria-sort="none" aria-label="Country, sort column">Country <span class="sort-icon" aria-hidden="true">↕</span></th>
+          <th class="sortable" data-col="3" scope="col" tabindex="0" aria-sort="none" aria-label="Status, sort column">Status <span class="sort-icon" aria-hidden="true">↕</span></th>
+          <th class="sortable" data-col="4" scope="col" tabindex="0" aria-sort="none" aria-label="Last active, sort column">Last active <span class="sort-icon" aria-hidden="true">↕</span></th>
+          <th scope="col">Contact</th>
+          <th scope="col">Concepts</th>
         </tr>
       </thead>
       <tbody>
@@ -341,14 +341,32 @@
     sorted.forEach(function (r) { tbody.appendChild(r); });
   }
 
+  function handleSort(th) {
+    var col = parseInt(th.dataset.col, 10);
+    sortAsc = (sortCol === col) ? !sortAsc : true;
+    sortCol = col;
+    headers.forEach(function (h) {
+      h.querySelector('.sort-icon').textContent = '↕';
+      h.setAttribute('aria-sort', 'none');
+      var colName = h.childNodes[0].textContent.trim();
+      h.setAttribute('aria-label', colName + ', sort column');
+    });
+    th.querySelector('.sort-icon').textContent = sortAsc ? '↑' : '↓';
+    th.setAttribute('aria-sort', sortAsc ? 'ascending' : 'descending');
+    var colName = th.childNodes[0].textContent.trim();
+    th.setAttribute('aria-label', colName + ', sorted ' + (sortAsc ? 'ascending' : 'descending'));
+    applySort(col, sortAsc);
+  }
+
   headers.forEach(function (th) {
     th.addEventListener('click', function () {
-      var col = parseInt(th.dataset.col, 10);
-      sortAsc = (sortCol === col) ? !sortAsc : true;
-      sortCol = col;
-      headers.forEach(function (h) { h.querySelector('.sort-icon').textContent = '↕'; });
-      th.querySelector('.sort-icon').textContent = sortAsc ? '↑' : '↓';
-      applySort(col, sortAsc);
+      handleSort(th);
+    });
+    th.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        handleSort(th);
+      }
     });
     th.style.cursor = 'pointer';
   });
