@@ -51,7 +51,8 @@ activity:
     note: Site live and actively publishing as of August 2026
   rss:
     date: 2026-09-02
-    note: "Latest post: Borgerpanel afleverer otte gennembearbejdede anbefalinger til Folketinget"
+    note: 'Latest post: Borgerpanel afleverer otte gennembearbejdede anbefalinger
+      til Folketinget'
     url: https://www.wedodemocracy.dk/nationalt-borgerpanel-kommer-med-anbefalinger-til-fremtidens-dyrevelfaerd/
     checked: 2026-09-11
 last_checked: '2026-08-09'

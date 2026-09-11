@@ -82,7 +82,7 @@ activity:
       into Australian parties' democracy-reform records.
   rss:
     date: 2026-09-11
-    note: "Latest post: test"
+    note: 'Latest post: test'
     url: https://greens.org.au/node/3038613
     checked: 2026-09-11
 last_checked: '2026-08-15'

@@ -54,7 +54,7 @@ activity:
     note: Site live and actively publishing as of August 2026
   rss:
     date: 2026-09-11
-    note: "Latest post: Toimintaympäristökatsaus touko-elokuu 2026"
+    note: 'Latest post: Toimintaympäristökatsaus touko-elokuu 2026'
     url: https://www.sitra.fi/artikkelit/toimintaymparistokatsaus-touko-elokuu-2026/
     checked: 2026-09-11
 last_checked: '2026-08-09'

@@ -65,7 +65,7 @@ activity:
     checked: 2026-09-11
   sitemap:
     date: 2026-09-08
-    note: "Page last modified (from sitemap)"
+    note: Page last modified (from sitemap)
     url: https://liqd.net/en/sitemap.xml
     checked: 2026-09-11
 last_checked: '2026-07-16'

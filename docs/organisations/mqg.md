@@ -62,7 +62,7 @@ activity:
     url: https://mqg.org.il/en
   rss:
     date: 2026-09-07
-    note: "Latest post: עצומה – מוציאים אותם מלשכת ראש הממשלה!"
+    note: 'Latest post: עצומה – מוציאים אותם מלשכת ראש הממשלה!'
     url: https://petition.mqg.org.il/qatargate_pm_office/
     checked: 2026-09-11
 last_checked: '2026-07-16'

@@ -63,7 +63,7 @@ activity:
     checked: 2026-09-06
   rss:
     date: 2026-09-09
-    note: "Latest post: They work for you (and we do too)"
+    note: 'Latest post: They work for you (and we do too)'
     url: https://www.mysociety.org/2026/09/09/they-work-for-you-and-we-do-too/
     checked: 2026-09-11
 last_checked: '2026-09-06'

@@ -54,7 +54,7 @@ activity:
     url: https://www.crossroadsconversation.com.au/events
   scrape:
     date: 2026-09-01
-    note: "Latest news page scraped"
+    note: Latest news page scraped
     url: https://www.crossroadsconversation.com.au/events
     checked: 2026-09-11
   sitemap:

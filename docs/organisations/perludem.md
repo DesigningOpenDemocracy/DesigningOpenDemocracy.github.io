@@ -57,7 +57,7 @@ activity:
     note: Site live and actively publishing as of August 2026
   rss:
     date: 2026-09-01
-    note: "Latest post: Safeguarding The Rule Of The Democratic Game"
+    note: 'Latest post: Safeguarding The Rule Of The Democratic Game'
     url: https://perludem.or.id/safeguarding-the-rule-of-the-democratic-game/
     checked: 2026-09-11
 last_checked: '2026-08-09'

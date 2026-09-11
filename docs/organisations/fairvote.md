@@ -42,7 +42,7 @@ activity:
     checked: 2026-08-21
   rss:
     date: 2026-09-08
-    note: "Latest post: Three cities to vote on ranked choice voting this November"
+    note: 'Latest post: Three cities to vote on ranked choice voting this November'
     url: https://fairvote.org/three-cities-to-vote-on-ranked-choice-voting-this-november/
     checked: 2026-09-11
 last_checked: '2026-08-21'

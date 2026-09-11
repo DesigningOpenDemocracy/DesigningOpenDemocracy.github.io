@@ -52,7 +52,8 @@ events:
 activity:
   rss:
     date: 2026-09-10
-    note: "Latest post: Fondos generacionales: expertos abordan desafíos de su implementación en Espacio"
+    note: 'Latest post: Fondos generacionales: expertos abordan desafíos de su implementación
+      en Espacio'
     url: https://espaciopublico.cl/fondos-generacionales-expertos-abordan-desafios-de-su-implementacion-en-espacio-publico/
     checked: 2026-09-11
 last_checked: '2026-08-09'

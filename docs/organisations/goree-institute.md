@@ -54,7 +54,8 @@ events:
 activity:
   rss:
     date: 2026-09-07
-    note: "Latest post: Renforcement du dialogue stratégique entre le Sénégal et l’Allemagne autour des "
+    note: 'Latest post: Renforcement du dialogue stratégique entre le Sénégal et l’Allemagne
+      autour des '
     url: https://goreeinstitut.org/renforcement-du-dialogue-strategique-entre-le-senegal-et-lallemagne-autour-des-enjeux-de-paix-de-securite-et-de-gouvernance/
     checked: 2026-09-11
 last_checked: '2026-08-09'

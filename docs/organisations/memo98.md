@@ -56,7 +56,7 @@ activity:
     url: https://memo98.sk/articles/blog
   scrape:
     date: 2026-09-05
-    note: "Latest news page scraped"
+    note: Latest news page scraped
     url: https://memo98.sk/articles/blog
     checked: 2026-09-11
   sitemap:

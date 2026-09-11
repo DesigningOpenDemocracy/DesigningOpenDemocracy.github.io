@@ -55,7 +55,7 @@ activity:
       state repression through mid-2026.'
   rss:
     date: 2025-04-04
-    note: "Latest post: Esmeraldas derramada: una historia de Las Piedras"
+    note: 'Latest post: Esmeraldas derramada: una historia de Las Piedras'
     url: https://radiojatarikichwa.com/?p=7656
     checked: 2026-09-11
   sitemap:

@@ -54,7 +54,7 @@ activity:
     note: Confirmed live (HTTP 200), site current
   rss:
     date: 2026-09-11
-    note: "Latest post: 홍지선 국토부장관 후보자에게 정책 질의서를 발송했습니다"
+    note: 'Latest post: 홍지선 국토부장관 후보자에게 정책 질의서를 발송했습니다'
     url: https://peoplepower21.org/stablelife/2029235
     checked: 2026-09-11
 last_checked: '2026-08-09'

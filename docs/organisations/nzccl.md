@@ -55,7 +55,7 @@ activity:
     note: Site live and actively publishing as of August 2026
   rss:
     date: 2026-09-02
-    note: "Latest post: Submission: Concealment of Location of Victim Remains Bill"
+    note: 'Latest post: Submission: Concealment of Location of Victim Remains Bill'
     url: https://nzccl.org.nz/submission-concealment-of-location-of-victim-remains-bill/
     checked: 2026-09-11
 last_checked: '2026-08-09'

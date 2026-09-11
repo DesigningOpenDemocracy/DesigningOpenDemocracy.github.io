@@ -51,7 +51,7 @@ activity:
       policy
   rss:
     date: 2026-09-07
-    note: "Latest post: 40% de Bolivia para los mineros"
+    note: 'Latest post: 40% de Bolivia para los mineros'
     url: https://fundacionsolon.org/40-de-bolivia-para-los-mineros/
     checked: 2026-09-11
 last_checked: '2026-07-05'

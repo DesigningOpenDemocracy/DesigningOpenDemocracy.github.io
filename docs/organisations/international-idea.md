@@ -52,7 +52,7 @@ activity:
     checked: 2026-09-06
   rss:
     date: 2026-09-10
-    note: "Latest post: Brazil - General Elections, 4 and 25 October 2026"
+    note: 'Latest post: Brazil - General Elections, 4 and 25 October 2026'
     url: https://www.idea.int/node/161838
     checked: 2026-09-11
 last_checked: '2026-09-06'

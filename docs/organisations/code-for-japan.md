@@ -50,7 +50,7 @@ events:
 activity:
   sitemap:
     date: 2026-09-11
-    note: "Page last modified (from sitemap)"
+    note: Page last modified (from sitemap)
     url: https://www.code4japan.org/sitemap.xml
     checked: 2026-09-11
 last_checked: '2026-08-09'

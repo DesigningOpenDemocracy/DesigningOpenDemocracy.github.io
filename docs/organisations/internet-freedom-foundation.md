@@ -52,7 +52,7 @@ activity:
     url: https://x.com/internetfreedom/status/2038604152318644237
   rss:
     date: 2026-09-11
-    note: "RSS feed active"
+    note: RSS feed active
     url: https://internetfreedom.in/rss
     checked: 2026-09-11
 last_checked: '2026-07-16'

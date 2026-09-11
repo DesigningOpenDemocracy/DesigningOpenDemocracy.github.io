@@ -108,7 +108,7 @@ activity:
     checked: 2026-09-11
   sitemap:
     date: 2026-09-10
-    note: "Page last modified (from sitemap)"
+    note: Page last modified (from sitemap)
     url: https://mckinnon.co/sitemap.xml
     checked: 2026-09-11
 last_checked: '2026-08-15'

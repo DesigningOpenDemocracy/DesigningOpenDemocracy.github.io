@@ -79,7 +79,7 @@ activity:
     url: https://digitalrightswatch.org.au/
   rss:
     date: 2026-09-10
-    note: "Latest post: Submission to AUKUS Inquiry"
+    note: 'Latest post: Submission to AUKUS Inquiry'
     url: /2026/09/10/submission-to-aukus-inquiry/
     checked: 2026-09-11
 last_checked: '2026-08-21'

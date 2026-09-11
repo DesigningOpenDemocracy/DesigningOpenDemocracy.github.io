@@ -52,7 +52,8 @@ activity:
     note: Confirmed active via official site during landscape research
   rss:
     date: 2026-09-10
-    note: "Latest post: A timeline of media reports Netanyahu knew about October 7 before it happened"
+    note: 'Latest post: A timeline of media reports Netanyahu knew about October 7
+      before it happened'
     url: https://www.ettemedia.com/a-timeline-of-media-reports-netanyahu-knew-about-october-7-before-it-happened/
     checked: 2026-09-11
 last_checked: '2026-08-02'

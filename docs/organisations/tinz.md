@@ -47,7 +47,7 @@ activity:
     note: Site live and actively publishing as of August 2026
   sitemap:
     date: 2026-09-03
-    note: "Page last modified (from sitemap)"
+    note: Page last modified (from sitemap)
     url: https://www.transparency.org.nz/sitemap.xml
     checked: 2026-09-11
 last_checked: '2026-08-09'

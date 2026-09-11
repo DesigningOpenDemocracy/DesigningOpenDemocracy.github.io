@@ -64,7 +64,8 @@ activity:
     checked: 2026-08-21
   rss:
     date: 2026-09-09
-    note: "Latest post: Protected: Towards a digital commons: improving our governance model"
+    note: 'Latest post: Protected: Towards a digital commons: improving our governance
+      model'
     url: https://consuldemocracy.org/2026/09/towards-a-digital-commons-improving-our-governance-model/
     checked: 2026-09-11
 last_checked: '2026-08-21'
