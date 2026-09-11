@@ -58,13 +58,19 @@ activity:
     note: Unsure how to read the blog section for year last posted. However https://github.com/CitizensFoundation/your-priorities-app
       has activity 3 weeks ago.
     url: https://github.com/CitizensFoundation/your-priorities-app
+  dod:
+    date: 2026-09-11
+    note: Site live, Your Priorities/Better Reykjavik content confirmed, summary still
+      accurate.
+    url: https://citizens.is
+    checked: 2026-09-11
   rss:
     checked: 2026-06-07
     date: 2023-10-01
     note: 'Latest post: The Power of Citizen Engagement: Why “Your Priorities” is
       the World’s Leading Pl'
     url: https://citizens.is/2023/10/01/the-power-of-citizen-engagement-why-your-priorities-is-the-worlds-leading-platform/
-last_checked: '2026-06-15'
+last_checked: '2026-09-11'
 ---
 
 The Citizens Foundation is an Icelandic non-profit founded in 2008 that develops **Your Priorities**, an open-source platform for idea generation, deliberation, and citizen–government engagement. The platform surfaces the most broadly supported ideas rather than amplifying the loudest voices — closer in spirit to consensus mapping than to open comment threads.

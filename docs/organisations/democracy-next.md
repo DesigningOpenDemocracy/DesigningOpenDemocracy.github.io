@@ -55,6 +55,12 @@ activity:
       2 January 2026 'How UK museums are embracing citizens’ assemblies to help frame
       their futures'
     url: https://www.demnext.org/news
+  dod:
+    date: 2026-09-11
+    note: Site live, sortition/assembly research content confirmed, summary still
+      accurate.
+    url: https://www.demnext.org
+    checked: 2026-09-11
   scrape:
     date: 2026-06-24
     note: Latest news page scraped
@@ -65,7 +71,7 @@ activity:
     note: Page last modified (from sitemap)
     url: https://www.demnext.org/sitemaps-1-sitemap.xml
     checked: 2026-09-11
-last_checked: '2026-06-15'
+last_checked: '2026-09-11'
 ---
 
 DemocracyNext (demnext.org) is a research institute whose position is that sortition should *replace* elections as the central mechanism of democratic governance — not merely complement them. This distinguishes it from organisations that treat citizens' assemblies as an add-on to existing representative systems.

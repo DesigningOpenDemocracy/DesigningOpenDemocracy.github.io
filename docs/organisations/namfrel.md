@@ -35,7 +35,15 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Mass protest/mobilisation
-last_checked: '2026-06-02'
+activity:
+  dod:
+    date: 2026-09-11
+    note: 'namfrel.com.ph still unreachable (connection timeout), consistent with
+      prior known Wayback-URL exception; status: active retained per SOUL.md convention,
+      no change needed.'
+    url: https://web.archive.org/web/*/https://namfrel.com.ph
+    checked: 2026-09-11
+last_checked: '2026-09-11'
 ---
 
 NAMFREL (National Citizens' Movement for Free Elections) was founded in October 1983 and is widely regarded as the world's first citizen-led election monitoring organisation. It draws on a volunteer base of over 250,000 members from religious, civic, business, professional, labour, and youth organisations across the Philippines.

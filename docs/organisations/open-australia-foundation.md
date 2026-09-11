@@ -50,12 +50,18 @@ events:
   notable: true
   notable_reason: Platform/product launch
 activity:
+  dod:
+    date: 2026-09-11
+    note: Site live, OpenAustralia Foundation civic-tech content confirmed, summary
+      still accurate.
+    url: https://www.openaustraliafoundation.org.au
+    checked: 2026-09-11
   rss:
     date: 2026-08-13
     note: 'Latest post: This is what our library is for'
     url: https://oaf.org.au/2026/08/13/this-is-what-our-library-is-for/
     checked: 2026-09-11
-last_checked: '2026-06-02'
+last_checked: '2026-09-11'
 ---
 
 The OpenAustralia Foundation is a non-partisan charity whose work centres on making Australian parliamentary and government information accessible and usable. They build and maintain several well-known tools:

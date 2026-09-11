@@ -53,10 +53,16 @@ activity:
     checked: 2026-06-07
     date: 2026-06-07
     note: Website loaded. Its a web app. Copyright at bottom mention © Kialo 2026
+  dod:
+    date: 2026-09-11
+    note: Site live, argument-mapping/debate platform content confirmed, summary still
+      accurate.
+    url: https://www.kialo.com
+    checked: 2026-09-11
   rss:
     checked: 2026-09-11
     note: No feed found
-last_checked: '2026-06-15'
+last_checked: '2026-09-11'
 ---
 
 Kialo is an online platform for structured argument mapping and deliberation, using a tree-based format in which central claims are supported or challenged by sub-arguments that can themselves be evaluated. This structure prevents discussion from collapsing into unanchored opinion streams and makes it possible to see the shape of a debate at a glance.

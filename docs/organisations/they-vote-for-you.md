@@ -55,10 +55,17 @@ activity:
     checked: 2026-06-22
     date: 2026-06-22
     note: Confirmed active via OpenAustralia Foundation project page
+  dod:
+    date: 2026-09-11
+    note: theyvoteforyou.org.au 403s to scripted requests (Cloudflare-style bot protection,
+      consistent with prior landscape pattern for OAF-family sites); parent org OpenAustralia
+      Foundation confirmed live same run, no change needed.
+    url: https://theyvoteforyou.org.au
+    checked: 2026-09-11
   rss:
     note: No feed found
     checked: 2026-09-11
-last_checked: '2026-06-22'
+last_checked: '2026-09-11'
 ---
 
 They Vote For You tracks every recorded division in Australia's House of Representatives and Senate and turns the Hansard record into plain-English voting histories for each MP and Senator. It flags when a member crosses the floor against their own party, summarises what each vote was actually about, and lets users compare any two politicians by how similarly they vote.[^tvfy-about]

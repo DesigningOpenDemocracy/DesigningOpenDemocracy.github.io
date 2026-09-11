@@ -58,17 +58,24 @@ events:
   notable: true
   notable_reason: Referendum campaign/result
 activity:
+  dod:
+    date: 2026-09-11
+    note: Site live, proportional representation/electoral reform content confirmed,
+      summary still accurate.
+    url: https://www.electoral-reform.org.uk
+    checked: 2026-09-11
   rss:
     date: 2026-09-10
-    note: "Latest post: First Past the Post would have given the AfD nearly every seat in Saxony-Anhalt"
+    note: 'Latest post: First Past the Post would have given the AfD nearly every
+      seat in Saxony-Anhalt'
     url: https://electoral-reform.org.uk/first-past-the-post-would-have-given-the-afd-nearly-every-seat-in-saxony-anhalt/
     checked: 2026-09-11
   scrape:
     date: 2026-09-10
-    note: "Latest news page scraped"
+    note: Latest news page scraped
     url: https://www.electoral-reform.org.uk/latest-news-and-research/blog/
     checked: 2026-09-11
-last_checked: '2026-06-15'
+last_checked: '2026-09-11'
 ---
 
 The Electoral Reform Society (ERS) was founded in 1884, making it one of the world's oldest advocacy organisations dedicated to democratic reform. It is a membership organisation and registered charity headquartered in London, with a staff of around 30 and a substantial public profile in UK political debate.

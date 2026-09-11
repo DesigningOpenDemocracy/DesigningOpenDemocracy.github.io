@@ -48,13 +48,18 @@ events:
   notable_reason: Anniversary milestone marking two decades of organising
   type: other
 activity:
+  dod:
+    date: 2026-09-11
+    note: Site live, Kongra Star content confirmed active, summary still accurate.
+    url: https://kongra-star.org/eng/
+    checked: 2026-09-11
   rss:
     checked: 2026-08-09
     date: 2026-08-08
     note: 'Latest post: Şêrîn Abbas :Azadiya Rêber Abdullah Ocalan şertê bingehîn
       e ji bo serkeftina pêv'
     url: https://kongra-star.org/?p=33202
-last_checked: '2026-06-02'
+last_checked: '2026-09-11'
 ---
 
 > **Note on context:** Kongra Star operates within the AANES, which is not internationally recognised. See the [TEV-DEM](tev-dem.md) entry for context on the broader governance framework.
