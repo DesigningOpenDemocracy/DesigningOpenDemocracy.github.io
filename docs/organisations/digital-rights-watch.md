@@ -78,11 +78,10 @@ activity:
       gender-based violence.
     url: https://digitalrightswatch.org.au/
   rss:
-    date: 2026-08-04
-    note: 'Latest post: Smart glasses are a covert surveillance regime in a wearable
-      disguise'
-    url: /2026/08/04/smart-glasses-are-a-covert-surveillance-regime-in-a-wearable-disguise/
-    checked: 2026-08-28
+    date: 2026-09-10
+    note: "Latest post: Submission to AUKUS Inquiry"
+    url: /2026/09/10/submission-to-aukus-inquiry/
+    checked: 2026-09-11
 last_checked: '2026-08-21'
 ---
 

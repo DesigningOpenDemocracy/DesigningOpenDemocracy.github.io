@@ -62,10 +62,10 @@ activity:
     url: https://www.mysociety.org
     checked: 2026-09-06
   rss:
-    date: 2026-08-27
-    note: 'Latest post: The problem with making public data pay for itself'
-    url: https://www.mysociety.org/2026/08/27/the-problem-with-making-public-data-pay-for-itself/
-    checked: 2026-08-28
+    date: 2026-09-09
+    note: "Latest post: They work for you (and we do too)"
+    url: https://www.mysociety.org/2026/09/09/they-work-for-you-and-we-do-too/
+    checked: 2026-09-11
 last_checked: '2026-09-06'
 ---
 

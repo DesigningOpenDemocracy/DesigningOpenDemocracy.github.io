@@ -58,13 +58,13 @@ activity:
     url: https://www.opensocietyfoundations.org
     checked: 2026-09-06
   rss:
-    checked: 2026-08-28
+    checked: 2026-09-11
     note: No feed found
   scrape:
     date: 2026-08-26
     note: Latest news page scraped
     url: https://www.opensocietyfoundations.org/newsroom
-    checked: 2026-08-28
+    checked: 2026-09-11
 last_checked: '2026-09-06'
 ---
 

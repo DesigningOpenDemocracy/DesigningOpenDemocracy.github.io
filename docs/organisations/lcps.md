@@ -52,10 +52,10 @@ activity:
       System Withstand Wartime Shocks?' dated July 15, 2026
     url: https://www.lcps-lebanon.org
   rss:
-    checked: 2026-08-28
+    checked: 2026-09-11
     note: No feed found
   scrape:
-    checked: 2026-08-28
+    checked: 2026-09-11
     date: 2026-03-05
     note: Latest news page scraped
     url: https://www.lcps-lebanon.org/en/press

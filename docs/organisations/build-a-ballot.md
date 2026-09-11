@@ -79,7 +79,7 @@ activity:
     date: 2026-08-27
     note: Page last modified (from sitemap)
     url: https://www.buildaballot.org.au/sitemap.xml
-    checked: 2026-08-28
+    checked: 2026-09-11
 last_checked: '2026-06-28'
 ---
 

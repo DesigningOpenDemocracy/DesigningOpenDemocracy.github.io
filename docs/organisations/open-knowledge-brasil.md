@@ -56,10 +56,10 @@ activity:
     date: 2026-08-09
     note: Site live and actively publishing as of August 2026
   rss:
-    date: 2026-08-20
-    note: 'Latest post: Participe da campanha #CartaPorUmGovernoEstadualAberto'
-    url: https://ok.org.br/noticia/okbr-lanca-campanha-por-comprometimento-de-candidaturas-com-cidades-mais-abertas-2/
-    checked: 2026-08-28
+    date: 2026-09-10
+    note: "Latest post: OKBR assina relatório que analisa o papel das plataformas na proteção da integri"
+    url: https://ok.org.br/noticia/okbr-assina-relatorio-que-analisa-o-papel-das-plataformas-na-protecao-da-integridade-eleitoral/
+    checked: 2026-09-11
 last_checked: '2026-08-09'
 ---
 

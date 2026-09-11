@@ -58,10 +58,10 @@ activity:
       18-19 2026.
     url: https://mattran.org.vn
   sitemap:
-    date: 2026-08-28
-    note: Page last modified (from sitemap)
+    date: 2026-09-11
+    note: "Page last modified (from sitemap)"
     url: https://mattran.org.vn/sitemaps.xml
-    checked: 2026-08-28
+    checked: 2026-09-11
 last_checked: '2026-07-19'
 ---
 

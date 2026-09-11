@@ -59,7 +59,7 @@ activity:
     note: 'Latest post: Recomendaciones en materia de transparencia y lucha contra
       la corrupción para at'
     url: https://transparenciacolombia.org.co/recomendaciones-atender-emergencia-terremoto-agosto-2026/
-    checked: 2026-08-28
+    checked: 2026-09-11
 last_checked: '2026-08-09'
 ---
 

@@ -51,10 +51,10 @@ activity:
     url: https://www.idea.int
     checked: 2026-09-06
   rss:
-    date: 2026-08-28
-    note: 'Latest post: La Protección de los Procesos Electorales en Honduras'
-    url: https://www.idea.int/publications/catalogue/html/la-proteccion-de-los-procesos-electorales-en-honduras
-    checked: 2026-08-28
+    date: 2026-09-10
+    note: "Latest post: Brazil - General Elections, 4 and 25 October 2026"
+    url: https://www.idea.int/node/161838
+    checked: 2026-09-11
 last_checked: '2026-09-06'
 ---
 

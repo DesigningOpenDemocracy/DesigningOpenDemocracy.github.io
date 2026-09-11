@@ -83,7 +83,7 @@ activity:
     date: 2026-08-25
     note: Page last modified (from sitemap)
     url: https://www.peoplepowered.org/sitemap.xml
-    checked: 2026-08-28
+    checked: 2026-09-11
 last_checked: '2026-08-09'
 ---
 

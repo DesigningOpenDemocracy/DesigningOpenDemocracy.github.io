@@ -72,7 +72,7 @@ activity:
     date: 2026-07-03
     note: 'Latest post: A New Political Party: Why?'
     url: https://www.newdemocracy.com.au/2026/07/03/a-new-political-party-why/?utm_source=rss&utm_medium=rss&utm_campaign=a-new-political-party-why
-    checked: 2026-08-28
+    checked: 2026-09-11
 last_checked: '2026-06-15'
 ---
 

@@ -59,10 +59,10 @@ activity:
       activity
     url: https://chinademocrats.org/?cat=8
   rss:
-    date: 2026-08-22
-    note: 'Latest post: 苏珊·斯托克斯 | 为什么民选领导人颠覆民主'
-    url: https://chinademocrats.org/?p=6972
-    checked: 2026-08-28
+    date: 2026-09-09
+    note: "Latest post: 王天成 | 异议人士有门必修课：《革命蓝图》中文版序"
+    url: https://chinademocrats.org/?p=7010
+    checked: 2026-09-11
 last_checked: '2026-07-16'
 ---
 

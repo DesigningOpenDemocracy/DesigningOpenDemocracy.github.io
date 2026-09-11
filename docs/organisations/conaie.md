@@ -54,8 +54,10 @@ activity:
       elected president, July 2025) and ongoing protest/advocacy on extractivism and
       state repression through mid-2026.'
   rss:
-    checked: 2026-08-09
-    note: No feed found
+    date: 2025-04-04
+    note: "Latest post: Esmeraldas derramada: una historia de Las Piedras"
+    url: https://radiojatarikichwa.com/?p=7656
+    checked: 2026-09-11
   sitemap:
     date: 2026-08-22
     note: Page last modified (from sitemap)

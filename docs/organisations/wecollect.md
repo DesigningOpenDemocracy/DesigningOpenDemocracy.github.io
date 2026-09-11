@@ -53,7 +53,7 @@ activity:
     note: Site live and actively publishing as of August 2026
   rss:
     note: No feed found
-    checked: 2026-08-28
+    checked: 2026-09-11
 last_checked: '2026-08-09'
 ---
 

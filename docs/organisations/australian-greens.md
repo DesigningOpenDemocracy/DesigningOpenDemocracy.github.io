@@ -81,10 +81,10 @@ activity:
       (media releases, campaign pages, "Our Story"), following up on internal research
       into Australian parties' democracy-reform records.
   rss:
-    date: 2026-08-28
-    note: 'Latest post: Merri-Bek Campaign Office Warming!'
-    url: https://greens.org.au/node/3037061
-    checked: 2026-08-28
+    date: 2026-09-11
+    note: "Latest post: test"
+    url: https://greens.org.au/node/3038613
+    checked: 2026-09-11
 last_checked: '2026-08-15'
 ---
 

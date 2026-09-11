@@ -63,7 +63,7 @@ activity:
     note: 'Latest post: La conferencia para el abandono de los combustibles fósiles:
       más allá del discur'
     url: https://www.movilizatorio.org/conferencia-combustibles-fosiles-hoja-ruta/
-    checked: 2026-08-28
+    checked: 2026-09-11
 last_checked: '2026-08-09'
 ---
 

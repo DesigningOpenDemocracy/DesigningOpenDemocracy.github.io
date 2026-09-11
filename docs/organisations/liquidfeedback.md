@@ -84,7 +84,7 @@ activity:
       kept active but development activity uncertain
     url: https://liquidfeedback.com/en/
   rss:
-    checked: 2026-08-28
+    checked: 2026-09-11
     note: No feed found
 last_checked: '2026-07-16'
 ---

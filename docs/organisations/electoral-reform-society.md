@@ -59,16 +59,15 @@ events:
   notable_reason: Referendum campaign/result
 activity:
   rss:
-    date: 2026-08-12
-    note: 'Latest post: Questioning New Zealand’s proportional system led to questions
-      about the prime m'
-    url: https://electoral-reform.org.uk/questioning-new-zealands-proportional-system-led-to-questions-about-the-prime-ministers-position/
-    checked: 2026-08-28
+    date: 2026-09-10
+    note: "Latest post: First Past the Post would have given the AfD nearly every seat in Saxony-Anhalt"
+    url: https://electoral-reform.org.uk/first-past-the-post-would-have-given-the-afd-nearly-every-seat-in-saxony-anhalt/
+    checked: 2026-09-11
   scrape:
-    date: 2026-08-12
-    note: Latest news page scraped
+    date: 2026-09-10
+    note: "Latest news page scraped"
     url: https://www.electoral-reform.org.uk/latest-news-and-research/blog/
-    checked: 2026-08-28
+    checked: 2026-09-11
 last_checked: '2026-06-15'
 ---
 

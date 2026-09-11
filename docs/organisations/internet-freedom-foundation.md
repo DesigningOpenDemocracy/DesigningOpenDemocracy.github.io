@@ -51,11 +51,10 @@ activity:
       and Delhi HC litigation
     url: https://x.com/internetfreedom/status/2038604152318644237
   rss:
-    date: 2026-08-27
-    note: 'Latest post: HC Directs GAC to decide an appeal in 30 days. Is there a
-      Capacity issue?'
-    url: https://internetfreedom.in/hc-directs-gac-to-decide-an-appeal-in-30-days-is-there-a-capacity-issue/
-    checked: 2026-08-28
+    date: 2026-09-11
+    note: "RSS feed active"
+    url: https://internetfreedom.in/rss
+    checked: 2026-09-11
 last_checked: '2026-07-16'
 ---
 

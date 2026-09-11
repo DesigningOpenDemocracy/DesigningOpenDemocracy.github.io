@@ -54,7 +54,7 @@ activity:
     url: https://earthworker.coop
     checked: 2026-09-06
   rss:
-    checked: 2026-08-28
+    checked: 2026-09-11
     date: 2026-07-13
     note: 'Latest post: Remembering Katherine Cunningham'
     url: https://earthworker.coop/remembering-katherine-cunningham/

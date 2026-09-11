@@ -38,10 +38,10 @@ activity:
       complaints tracker, and Councillor Resilience Survey.
     url: https://www.councilwatch.com.au
   sitemap:
-    date: 2026-08-24
-    note: Page last modified (from sitemap)
+    date: 2026-09-11
+    note: "Page last modified (from sitemap)"
     url: https://www.councilwatch.com.au/el_el-sitemap.xml
-    checked: 2026-08-28
+    checked: 2026-09-11
 last_checked: '2026-08-21'
 ---
 

@@ -60,7 +60,7 @@ activity:
     url: https://democracy-technologies.org
     checked: 2026-09-06
   sitemap:
-    checked: 2026-08-28
+    checked: 2026-09-11
     date: 2025-09-03
     note: Page last modified (from sitemap)
 last_checked: '2026-09-06'

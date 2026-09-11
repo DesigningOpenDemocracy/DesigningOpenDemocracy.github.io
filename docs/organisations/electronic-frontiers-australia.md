@@ -84,11 +84,10 @@ activity:
       17 other digital-rights, privacy and child-safety organisations.
     url: https://securitybrief.com.au/story/electronic-frontiers-australia-joins-internet-control-fight
   rss:
-    date: 2026-08-27
-    note: 'Latest post: Feeding the Machine: How Copyright Became a Weapon Against
-      AI Training'
-    url: https://efa.org.au/copyright-ai-training/
-    checked: 2026-08-28
+    date: 2026-09-10
+    note: "Latest post: International Day of Democracy 2026 and the Business of Outrage: How Social Medi"
+    url: https://efa.org.au/international-day-of-democracy-2026/
+    checked: 2026-09-11
 last_checked: '2026-08-21'
 ---
 

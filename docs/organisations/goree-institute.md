@@ -53,11 +53,10 @@ events:
   type: conference
 activity:
   rss:
-    checked: 2026-08-28
-    date: 2026-06-01
-    note: 'Latest post: Lancement de l’étude sur la mise en œuvre de l’Agenda 1325 :
-      après 25 ans de la '
-    url: https://goreeinstitut.org/lancement-de-letude-sur-la-mise-en-oeuvre-de-lagenda-1325-apres-25-ans-de-la-resolution-quel-futur-feministe-pour-la-paix-en-afrique-de-louest-et-au-sahel/
+    date: 2026-09-07
+    note: "Latest post: Renforcement du dialogue stratégique entre le Sénégal et l’Allemagne autour des "
+    url: https://goreeinstitut.org/renforcement-du-dialogue-strategique-entre-le-senegal-et-lallemagne-autour-des-enjeux-de-paix-de-securite-et-de-gouvernance/
+    checked: 2026-09-11
 last_checked: '2026-08-09'
 ---
 

@@ -54,11 +54,10 @@ events:
   type: conference
 activity:
   rss:
-    checked: 2026-08-28
-    date: 2026-07-07
-    note: 'Latest post: Oltre la rigenerazione urbana: la cura dei custodi come nuovo
-      bene comune'
-    url: https://www.labsus.org/2026/07/oltre-la-rigenerazione-urbana-la-cura-dei-custodi-come-nuovo-bene-comune/
+    date: 2026-09-08
+    note: "Latest post: Quando le parole si fanno cura: collaborazioni inaspettate per la nuova vita di "
+    url: https://www.labsus.org/2026/09/quando-le-parole-si-fanno-cura-collaborazioni-inaspettate-per-la-nuova-vita-di-una-baita-trentina/
+    checked: 2026-09-11
 last_checked: '2026-08-09'
 ---
 

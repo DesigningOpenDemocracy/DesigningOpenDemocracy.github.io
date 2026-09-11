@@ -60,10 +60,10 @@ activity:
     note: Confirmed live and active — 2025 project updates on climate assemblies in
       Pará/Mozambique and Osasco minipublic
   rss:
-    date: 2026-08-28
-    note: RSS feed active
+    date: 2026-09-11
+    note: "RSS feed active"
     url: https://deliberabrasil.org/feed
-    checked: 2026-08-28
+    checked: 2026-09-11
 last_checked: '2026-08-09'
 ---
 

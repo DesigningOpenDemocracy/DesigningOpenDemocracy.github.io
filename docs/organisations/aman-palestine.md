@@ -49,15 +49,15 @@ events:
   url_checked: '2026-08-17'
 activity:
   rss:
-    date: 2026-08-28
-    note: RSS feed active
+    date: 2026-09-11
+    note: "RSS feed active"
     url: https://www.aman-palestine.org/rss
-    checked: 2026-08-28
+    checked: 2026-09-11
   scrape:
-    date: 2026-08-24
-    note: Latest news page scraped
+    date: 2026-09-07
+    note: "Latest news page scraped"
     url: https://www.aman-palestine.org/en/activities/
-    checked: 2026-08-28
+    checked: 2026-09-11
 last_checked: '2026-06-28'
 ---
 

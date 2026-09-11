@@ -51,7 +51,7 @@ activity:
       Commission.'
   rss:
     note: No feed found
-    checked: 2026-08-28
+    checked: 2026-09-11
   sitemap:
     checked: 2026-08-09
     date: 2024-05-21

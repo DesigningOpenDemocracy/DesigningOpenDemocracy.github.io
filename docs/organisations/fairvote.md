@@ -41,10 +41,10 @@ activity:
       during landscape gap research
     checked: 2026-08-21
   rss:
-    date: 2026-08-24
-    note: 'Latest post: FairVote news update: Aug 24, 2026'
-    url: https://fairvote.org/fairvote-news-update-aug-24-2026/
-    checked: 2026-08-28
+    date: 2026-09-08
+    note: "Latest post: Three cities to vote on ranked choice voting this November"
+    url: https://fairvote.org/three-cities-to-vote-on-ranked-choice-voting-this-november/
+    checked: 2026-09-11
 last_checked: '2026-08-21'
 ---
 

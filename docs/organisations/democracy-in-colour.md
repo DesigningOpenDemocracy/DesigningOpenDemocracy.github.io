@@ -58,7 +58,7 @@ activity:
     note: Site confirmed active; Noura Mansour still National Director per LinkedIn/site,
       matching existing page
   rss:
-    checked: 2026-08-28
+    checked: 2026-09-11
     date: 2026-07-29
     note: 'Latest post: Democracy in Colour welcomes court ruling upholding racial
       discrimination findin'

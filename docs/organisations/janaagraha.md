@@ -59,7 +59,7 @@ activity:
     date: 2026-05-14
     note: 'Latest post: Too Many Cooks in the Urban Services Kitchen'
     url: https://www.janaagraha.org/too-many-cooks-in-the-urban-services-kitchen/
-    checked: 2026-08-28
+    checked: 2026-09-11
 last_checked: '2026-07-16'
 ---
 

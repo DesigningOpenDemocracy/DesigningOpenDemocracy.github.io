@@ -53,10 +53,10 @@ activity:
     date: 2026-08-09
     note: Confirmed live (HTTP 200), site current
   rss:
-    date: 2026-08-28
-    note: 'Latest post: [2026 정기국회 입법·정책과제] 우발적 충돌 방지 및 위기 관리, 한반도 평화정착 방안 마련'
-    url: https://peoplepower21.org/peace/2028405
-    checked: 2026-08-28
+    date: 2026-09-11
+    note: "Latest post: 홍지선 국토부장관 후보자에게 정책 질의서를 발송했습니다"
+    url: https://peoplepower21.org/stablelife/2029235
+    checked: 2026-09-11
 last_checked: '2026-08-09'
 ---
 

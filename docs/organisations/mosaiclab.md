@@ -114,7 +114,7 @@ activity:
     date: 2026-08-26
     note: Page last modified (from sitemap)
     url: https://mosaiclab.com.au/sitemap.xml
-    checked: 2026-08-28
+    checked: 2026-09-11
 last_checked: '2026-07-16'
 ---
 
