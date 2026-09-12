@@ -1,6 +1,17 @@
 # Missouri redistricting referendum fight — research note, not yet public
 
-**Status:** Research lead. Not promoted to a public heartbeat item this run —
+**Status (2026-09-12 update):** Promoted to the public September sync post.
+By 10 September the U.S. Supreme Court had twice declined, on its emergency
+docket, to disturb the Missouri Supreme Court's referendum ruling — the
+practical question of which map governs November's election has settled
+(the 2022 map), even though the underlying litigation continues. That was
+enough certainty on the concrete, citable point (which map, which
+referendum, which court did what) to write the structural angle — whether
+a citizen referendum's suspending effect actually binds — without asserting
+the whole case is over. See the 2026-09-sync.md post for the published
+item and its sourcing (PBS NewsHour 4 Sep, Roll Call 10 Sep).
+
+**Status (original, 2026-09-11):** Research lead. Not promoted to a public heartbeat item this run —
 see reasoning below. Revisit on a future run once the legal sequence has
 actually settled; as of this writing it flipped three times in eight days.
 

@@ -50,11 +50,11 @@ events:
   type: milestone
 activity:
   dod:
-    checked: 2026-06-29
-    date: 2026-06-29
-    note: Direct fetch blocked (503) this run; web search confirms ongoing activity
-      — Central Committee research on urban/rural land system reform and the continuing
-      'Serving the Public, Practicing for the People' education campaign.
+    date: 2026-09-12
+    note: Website confirmed active (200 via browser UA); 2026 NPC/CPPCC session coverage
+      and Central Committee research seminar visible.
+    url: https://www.mmzy.org.cn
+    checked: 2026-09-12
   rss:
     checked: 2026-06-07
     note: No feed found
@@ -62,7 +62,7 @@ activity:
     checked: 2026-09-11
     note: Sitemap found, no lastmod
   url: https://www.mmzy.org.cn/mmyw/default.aspx
-last_checked: '2026-06-29'
+last_checked: '2026-09-12'
 ---
 
 > **Note:** The CDL and the other seven officially designated minor parties — collectively referred to in Chinese political terminology as the "democratic parties" (民主党派) — are not opposition parties and do not push for structural democratic reform. Their constitutions affirm commitment to CCP guidance; membership is pre-approved by the United Front Work Department. Scholars describe their role as "bounded articulation" — they express sectoral interests within approved channels and cannot challenge the structure of CPC authority. They are included here as a documented example of managed pluralism, and where it falls short of genuine accountability to its own stated ideals.

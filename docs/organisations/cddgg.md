@@ -65,17 +65,22 @@ events:
   notable_reason: Relocation to its long-term host university
 activity:
   dod:
-    checked: 2026-06-29
-    date: 2026-06-29
-    note: Website confirmed active. Hans Asenbaum remains director; weekly seminar
-      series running, Summer School and Journal of Deliberative Democracy ongoing.
+    date: 2026-09-12
+    note: 'Website confirmed active (director Hans Asenbaum, weekly seminar series,
+      Journal of Deliberative Democracy). Note: the University of Canberra page now
+      titles the centre simply ''Centre for Deliberative Democracy'' (dropped ''...and
+      Global Governance'' from the page title/short URL /research/centres/cdd), though
+      the centre''s own domain delibdem.org still uses the full name in its title
+      tag -- worth rechecking on a future pass whether this is a completed rebrand.'
+    url: https://www.canberra.edu.au/research/centres/cddgg
+    checked: 2026-09-12
   rss:
     checked: 2026-06-07
     note: No feed found
   sitemap:
     checked: 2026-09-11
     note: Sitemap found, no lastmod
-last_checked: '2026-06-29'
+last_checked: '2026-09-12'
 ---
 
 The Centre for Deliberative Democracy and Global Governance (CDDGG) is a research centre within the University of Canberra's Faculty of Business, Government and Law. Founded in 2004 at the Australian National University, it relocated to the University of Canberra in 2014 and is one of the leading academic centres for deliberative democracy research globally.

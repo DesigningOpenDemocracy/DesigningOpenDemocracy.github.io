@@ -72,12 +72,18 @@ events:
   type: assembly
   location: Woden Valley Uniting Church, Curtin ACT
 activity:
+  dod:
+    date: 2026-09-12
+    note: Website confirmed active; Kitchen Table Conversations, Genuine Engagement
+      Tool, MP priorities report current.
+    url: https://canberra-alliance.org.au
+    checked: 2026-09-12
   rss:
     checked: 2026-09-11
     date: 2026-01-03
     note: 'Latest post: Redescribing Democracy: a Review'
     url: https://canberra-alliance.org.au/redescribing-democracy-a-review/?utm_source=rss&utm_medium=rss&utm_campaign=redescribing-democracy-a-review
-last_checked: '2026-06-28'
+last_checked: '2026-09-12'
 ---
 
 CAPaD is an ACT-based community organisation founded in 2015, focused on making elected representatives more accountable and democratic participation more meaningful for Canberra residents. It is independently funded — not by political parties, government, or corporations — and run by a voluntary committee.

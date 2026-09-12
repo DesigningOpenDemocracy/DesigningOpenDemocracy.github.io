@@ -48,6 +48,12 @@ events:
   proof_level: high
   url_checked: '2026-08-17'
 activity:
+  dod:
+    date: 2026-09-12
+    note: Website confirmed active; latest news items dated 2026-09-12 and 2026-09-07,
+      coalition and integrity work ongoing.
+    url: https://www.aman-palestine.org/en
+    checked: 2026-09-12
   rss:
     date: 2026-09-11
     note: RSS feed active
@@ -58,7 +64,7 @@ activity:
     note: Latest news page scraped
     url: https://www.aman-palestine.org/en/activities/
     checked: 2026-09-11
-last_checked: '2026-06-28'
+last_checked: '2026-09-12'
 ---
 
 AMAN (Coalition for Accountability and Integrity) is a Palestinian civil society coalition established in 2000 to promote integrity, transparency, and accountability in Palestinian society. In 2006, AMAN was accredited as Transparency International's official Palestinian national chapter.

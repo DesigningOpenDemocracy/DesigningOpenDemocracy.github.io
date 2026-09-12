@@ -48,11 +48,12 @@ events:
   type: milestone
 activity:
   dod:
-    checked: 2026-06-28
-    date: 2026-06-28
-    note: 'Web search confirms continued activity: leadership change (Marlon Vargas
-      elected president, July 2025) and ongoing protest/advocacy on extractivism and
-      state repression through mid-2026.'
+    date: 2026-09-12
+    note: Direct fetch blocked by Cloudflare bot challenge (429); websearch corroborates
+      CONAIE remains active, with a VIII Congress mandate for a 2026 national uprising
+      against mining/oil plunder.
+    url: https://conaie.org
+    checked: 2026-09-12
   rss:
     date: 2025-04-04
     note: 'Latest post: Esmeraldas derramada: una historia de Las Piedras'
@@ -63,7 +64,7 @@ activity:
     note: Page last modified (from sitemap)
     url: https://conaie.org/sitemap_index.xml
     checked: 2026-08-28
-last_checked: '2026-06-28'
+last_checked: '2026-09-12'
 ---
 
 The Confederation of Indigenous Nationalities of Ecuador (Confederación de Nacionalidades Indígenas del Ecuador, CONAIE) was founded in 1986 and represents 14 indigenous nationalities and 18 peoples across the Ecuadorian Amazon, highlands, and coast. It is one of the most influential indigenous governance bodies in Latin America, operating not only as an advocacy organisation but as a governance actor with territorial jurisdiction and a recognised parallel justice system.

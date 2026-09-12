@@ -75,12 +75,17 @@ activity:
     checked: 2026-06-07
     date: 2026-06-07
     note: was definitely active last year, as noted by a dod member
+  dod:
+    date: 2026-09-12
+    note: Website confirmed active; live for SA 2026 election and Farrer by-election.
+    url: https://www.buildaballot.org.au
+    checked: 2026-09-12
   sitemap:
     date: 2026-08-27
     note: Page last modified (from sitemap)
     url: https://www.buildaballot.org.au/sitemap.xml
     checked: 2026-09-11
-last_checked: '2026-06-28'
+last_checked: '2026-09-12'
 ---
 
 Build a Ballot is a voter advice application (VAA) built and maintained by Project Planet Inc., an Australian charity focused on climate change. The tool launches a few weeks before each state and federal election, presenting voters with a short series of policy questions and calculating a "match score" with candidates and parties in their electorate.
