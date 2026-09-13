@@ -5,3 +5,7 @@
 ## 2026-09-08 - [Keyboard Accessible Sortable Table Headers]
 **Learning:** Custom interactive table headers (`th.sortable`) in static site overrides require `tabindex="0"`, `scope="col"`, `aria-sort`, `aria-label`, and `Enter`/`Space` keydown event handlers. Without these, keyboard users cannot focus or activate table sorting, and screen readers cannot announce sort state.
 **Action:** When adding sortable tables, ensure `th.sortable` elements have `tabindex="0"`, `aria-sort` updated dynamically (`none`, `ascending`, `descending`), keydown listeners for `Enter`/`Space`, and CSS `:focus-visible` outlines.
+
+## 2026-09-10 - [Focus Visible Outlines for Custom Details Summaries & Toggle Button Groups]
+**Learning:** Custom interactive `<summary>` elements in `<details>` dropdowns and button filter groups override default browser outlines with custom padding/borders, rendering keyboard focus invisible unless explicit `:focus-visible` styles are declared. In addition, single-select button filter groups need `aria-pressed="true"`/`"false"` attributes to inform screen reader users of the currently active filter state.
+**Action:** Always add explicit `:focus-visible` outline rules for custom `<summary>` and filter button elements, and maintain dynamic `aria-pressed` states on button filter toggles.
