@@ -63,10 +63,11 @@ events:
   notable_reason: Founding of the organisation
 activity:
   dod:
-    checked: 2026-07-05
-    date: 2026-07-05
-    note: Site confirmed active; news page shows articles dated through 28 June 2026,
-      EU CERV Framework Partner 2026-2028
+    date: 2026-09-13
+    note: Website confirmed active — news/events through Oct 2026; contact form and
+      phone confirmed, no separate public email found.
+    url: https://www.democracy-international.org
+    checked: 2026-09-13
   rss:
     date: 2026-09-11
     note: RSS feed active
@@ -77,7 +78,7 @@ activity:
     note: Latest news page scraped
     url: https://www.democracy-international.org/news
     checked: 2026-09-11
-last_checked: '2026-07-05'
+last_checked: '2026-09-13'
 ---
 
 Democracy International is a Cologne-based NGO registered as a German e.V. (Eingetragener Verein), founded in 2011. It advocates for direct democracy and citizen participation at local, national, and global levels, combining policy advocacy, support for activists, published research, and international convening.

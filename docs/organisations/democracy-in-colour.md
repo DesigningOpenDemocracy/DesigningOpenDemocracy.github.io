@@ -53,17 +53,18 @@ events:
   type: other
 activity:
   dod:
-    checked: 2026-07-05
-    date: 2026-07-05
-    note: Site confirmed active; Noura Mansour still National Director per LinkedIn/site,
-      matching existing page
+    date: 2026-09-13
+    note: Website confirmed active — current Racism Out and Thriving in Colour campaigns;
+      contact email confirmed.
+    url: https://democracyincolour.org
+    checked: 2026-09-13
   rss:
     checked: 2026-09-11
     date: 2026-07-29
     note: 'Latest post: Democracy in Colour welcomes court ruling upholding racial
       discrimination findin'
     url: https://democracyincolour.org/democracy-in-colour-welcomes-court-ruling-upholding-racial-discrimination-finding-against-pauline-hanson/
-last_checked: '2026-07-05'
+last_checked: '2026-09-13'
 ---
 
 Democracy in Colour is a registered charity and advocacy organisation focused on racial justice in Australian democracy. Its focus is on *who* participates in democracy — addressing the structural barriers and systemic racism that shape whose voices are heard in political, media, and civic life — rather than procedural democratic reform.

@@ -50,14 +50,15 @@ activity:
     date: 2026-06-09
     note: Site confirmed active; no blog or news feed found
   dod:
-    checked: 2026-07-05
-    date: 2026-07-05
-    note: Direct site fetch returned 503; corroborated active via WEF org profile,
-      GitHub org, and press coverage of new SAIRI autonomous AI-agent project
+    date: 2026-09-13
+    note: Website confirmed active (2015-2026 copyright, current SAIRI/AI-agent coverage);
+      no public email or contact form found on site.
+    url: https://democracy.earth
+    checked: 2026-09-13
   rss:
     checked: 2026-09-11
     note: No feed found
-last_checked: '2026-07-05'
+last_checked: '2026-09-13'
 ---
 
 Democracy Earth Foundation is a San Francisco–registered nonprofit that grew out of the Buenos Aires civic tech scene. Founded by Santiago Siri and Pia Mancini (also co-founders of the Partido de la Red / Net Party), it focuses on building open-source infrastructure for democratic participation that works independently of national governments and legacy institutions.

@@ -45,12 +45,11 @@ events:
   notable_reason: Large-scale election observation deployment
 activity:
   dod:
-    checked: 2026-06-29
-    date: 2026-06-29
-    note: Website confirmed active, with recent reports on voter registration amid
-      wartime migration and a January 2026 analysis of the challenges of holding a
-      referendum on territorial changes.
-    url: https://oporaua.org/en/announce
+    date: 2026-09-13
+    note: Website confirmed active — Sept 2026 content incl. international voter-register-accuracy
+      workshop; contact info matches frontmatter.
+    url: https://oporaua.org/en
+    checked: 2026-09-13
   rss:
     checked: 2026-09-11
     note: No feed found
@@ -59,7 +58,7 @@ activity:
     note: Latest news page scraped
     url: https://oporaua.org/en/announce
     checked: 2026-09-11
-last_checked: '2026-06-29'
+last_checked: '2026-09-13'
 ---
 
 Civil Network OPORA is Ukraine's primary independent election observation and civic oversight organisation, founded in 2006. It conducts comprehensive long-term and short-term election observation for presidential, parliamentary, and local elections, and publishes detailed analytical reports on each electoral cycle.
