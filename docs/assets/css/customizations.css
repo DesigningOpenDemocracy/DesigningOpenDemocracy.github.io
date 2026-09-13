@@ -836,6 +836,11 @@
     border-color: var(--md-primary-fg-color) !important;
 }
 
+.md-typeset .org-facet-dd > summary:focus-visible {
+    outline: 2px solid var(--md-accent-fg-color, #49a7e9);
+    outline-offset: 2px;
+}
+
 .org-facet-badge {
     font-size: 0.9em;
     opacity: 0.9;
@@ -920,6 +925,11 @@
     background: var(--md-primary-fg-color);
     color: var(--md-primary-bg-color);
     border-color: var(--md-primary-fg-color);
+}
+
+.org-activity-btn:focus-visible {
+    outline: 2px solid var(--md-accent-fg-color, #49a7e9);
+    outline-offset: 2px;
 }
 
 .org-count {
@@ -1606,6 +1616,11 @@
 .calendar-feed-btn.calendar-feed-btn--ics:hover {
   border-color: var(--md-default-fg-color--light);
   color: var(--md-default-fg-color);
+}
+
+.calendar-reset-btn:focus-visible {
+  outline: 2px solid var(--md-accent-fg-color, #49a7e9);
+  outline-offset: 2px;
 }
 .calendar-feed-btn.calendar-feed-btn--apple {
   background: var(--md-default-fg-color);
