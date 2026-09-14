@@ -922,6 +922,12 @@
     border-color: var(--md-primary-fg-color);
 }
 
+.org-activity-btn:focus-visible,
+.md-typeset .org-facet-dd > summary:focus-visible {
+    outline: 2px solid var(--md-accent-fg-color, var(--md-primary-fg-color));
+    outline-offset: 2px;
+}
+
 .org-count {
     font-size: 0.82em;
     opacity: 0.6;
