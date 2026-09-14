@@ -836,6 +836,11 @@
     border-color: var(--md-primary-fg-color) !important;
 }
 
+.md-typeset .org-facet-dd > summary:focus-visible {
+    outline: 2px solid var(--md-accent-fg-color, #49a7e9);
+    outline-offset: 2px;
+}
+
 .org-facet-badge {
     font-size: 0.9em;
     opacity: 0.9;
@@ -916,6 +921,11 @@
     background: rgba(128, 128, 128, 0.12);
 }
 
+.org-activity-btn:focus-visible {
+    outline: 2px solid var(--md-accent-fg-color, #49a7e9);
+    outline-offset: 2px;
+}
+
 .org-activity-btn.active {
     background: var(--md-primary-fg-color);
     color: var(--md-primary-bg-color);
@@ -960,6 +970,11 @@
 
 .org-export-filtered-btn:hover {
     text-decoration: none;
+}
+
+.org-export-filtered-btn:focus-visible {
+    outline: 2px solid var(--md-accent-fg-color, #49a7e9);
+    outline-offset: 2px;
 }
 
 .org-ext-link {
