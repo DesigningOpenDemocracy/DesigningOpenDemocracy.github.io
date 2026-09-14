@@ -188,6 +188,39 @@ updates. Search for recent news (past 30–180 days depending on run cadence) on
 - Broader geopolitical shifts with structural governance implications, even
   outside that list, if you can source them properly
 
+**Sources to check, not just generic search terms.** A run that only fires
+generic phrase searches ("citizens' assembly announced 2026", "democratic
+backsliding news") mostly surfaces evergreen explainer content and stale
+roundups rather than this week's actual news — confirmed on 2026-09-13,
+where three differently-worded generic searches found nothing usable before
+a fourth turned up Guinea-Bissau's constitutional referendum, which had
+already been resolved for two weeks by the time it was caught. Check these
+directly before falling back to open-ended search, since a tracker's own
+latest-items page beats guessing phrasing:
+- [ConstitutionNet — Constitutions in the News](https://constitutionnet.org/news)
+- [V-Dem Institute news](https://www.v-dem.net/news/)
+- [International IDEA news](https://www.idea.int/news)
+- A general wire/regional scan (Reuters, AP, AllAfrica, RFI) for the
+  specific topics listed above, rather than the topics alone
+Add to this list as new good sources are found; the point is a stable set
+of places to check every run, not a closed or exhaustive one.
+
+**Recency and language are real blind spots, not just a search-phrasing
+problem.** WebSearch here is US-backed and English-only by default, so a
+story only covered in the country's own language can sit undiscovered even
+after a source that clears the notability bar is already in hand — the
+2026-09-13 Guinea-Bissau item never surfaced the referendum's own
+Portuguese-language local coverage even though it was sitting in the
+citing Wikipedia article's own reference list. When a story's home country
+doesn't primarily publish in English, spend one extra search specifically
+in that language (or ask a fetched wire piece what its non-English sources
+say) before treating an English-language wire pickup as the full picture.
+On recency: prefer a tracker's own "latest" listing over a broad date-range
+search term, and check a candidate item's actual publish date before
+treating it as fresh — a several-week-old story is still worth including if
+it clears the notability bar, but say how old it is rather than writing it
+up as if it just happened.
+
 **Threshold for inclusion:** something is worth commenting on only if it is
 genuinely notable from a governance-design perspective AND you can link a
 primary or reputable secondary source. If nothing clears that bar, skip the
