@@ -122,7 +122,7 @@ def on_page_markdown(markdown, *, page, config, files):
     if title:
         parts.append(f'<div class="event-card-title">{title}</div>')
     if when:
-        parts.append(f'<div class="event-card-when">{_CALENDAR_ICON}{when}</div>')
+        parts.append(f'<div class="event-card-when">{_CALENDAR_ICON}{html.escape(when)}</div>')
     if loc_name:
         parts.append(f'<div class="event-card-location">{_MAP_MARKER_ICON}{loc_name}</div>')
     if note:
