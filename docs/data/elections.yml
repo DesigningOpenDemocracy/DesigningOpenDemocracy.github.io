@@ -173,15 +173,6 @@ elections:
   #
   # A selection, not an index — see this file's header. Ordered by date.
 
-  - date: 2026-09-13
-    country: SE
-    level: national
-    title: Swedish general election
-    date_status: fixed
-    url: https://en.wikipedia.org/wiki/2026_Swedish_general_election
-    quote: "General elections will be held in Sweden on 13 September 2026 to elect the 349 members of the Riksdag."
-    url_checked: 2026-09-02
-
   - date: 2026-10-03
     country: LV
     level: national
@@ -320,3 +311,13 @@ elections:
     url: https://en.wikipedia.org/wiki/2027_Argentine_general_election
     quote: "General elections are scheduled to take place in Argentina on 24 October 2027. Voters will elect the president and vice president of Argentina, members in the Chamber of Deputies and Senate, and the governors of most provinces."
     url_checked: 2026-09-02
+
+  - date: 2030-09-08
+    country: SE
+    level: national
+    title: Swedish general election
+    date_status: expected
+    date_note: "The Instrument of Government fixes polling day as the second Sunday in September every four years; the 2030 date follows from that rule rather than a formal announcement."
+    url: https://en.wikipedia.org/wiki/Elections_in_Sweden
+    quote: "Elections to Sweden's county councils occur simultaneously with the general elections on the second Sunday of September."
+    url_checked: 2026-09-14

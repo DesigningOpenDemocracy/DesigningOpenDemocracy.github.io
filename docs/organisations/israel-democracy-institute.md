@@ -57,17 +57,17 @@ activity:
       2026 | Recap '
     url: https://en.idi.org.il/hurvitz/2026/
   dod:
-    checked: 2026-07-16
-    date: 2026-07-15
-    note: 'Website loaded directly; recent publications dated July 2026 including
-      ''Explainer: Basic Law: Torah Study and Its Implications'' (July 15, 2026)'
+    date: 2026-09-14
+    note: Site live (curl returned 503 bot-block; content confirmed via browser-rendered
+      fetch showing Sept 2026 articles)
     url: https://en.idi.org.il
+    checked: 2026-09-14
   sitemap:
     date: 2026-09-11
     note: Page last modified (from sitemap)
     url: https://www.idi.org.il/sitemap.xml
     checked: 2026-09-11
-last_checked: '2026-07-16'
+last_checked: '2026-09-14'
 ---
 
 The Israel Democracy Institute (IDI) is an independent, nonpartisan research and policy institute founded in 1991. It is the primary academic body studying Israeli democratic governance, producing rigorous empirical research on institutional design, electoral systems, rule of law, and civic participation.
