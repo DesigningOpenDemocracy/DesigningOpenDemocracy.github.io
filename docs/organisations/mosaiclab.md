@@ -104,18 +104,17 @@ activity:
     note: website loaded. Latest blog post is on December 8, 2025 'SHIFTS SHAPING
       ENGAGEMENT NEXT YEAR'
   dod:
-    checked: 2026-07-16
-    date: 2026-07-16
-    note: Site active; recent posts include Victorian Government engagement inquiry
-      analysis and a 2025 year-end/2026 trends post covering AI integration and representativeness
-      in deliberative practice
+    date: 2026-09-15
+    note: Site live; December 2025/November 2025 blog posts on engagement trends and
+      ML Giving donations confirm ongoing operations.
     url: https://mosaiclab.com.au
+    checked: 2026-09-15
   sitemap:
     date: 2026-08-26
     note: Page last modified (from sitemap)
     url: https://mosaiclab.com.au/sitemap.xml
     checked: 2026-09-11
-last_checked: '2026-07-16'
+last_checked: '2026-09-15'
 ---
 
 MosaicLab is a professional practice specialising in public deliberation. It designs and runs deliberative engagement processes: citizens' juries, standing panels, deliberative polls, and citizens' assemblies for government clients across Australia.

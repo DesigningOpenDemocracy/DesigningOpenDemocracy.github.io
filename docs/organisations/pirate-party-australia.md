@@ -54,20 +54,19 @@ activity:
     date: 2026-06-07
     note: Known personally to be active
   dod:
-    checked: 2026-07-19
-    date: 2026-07-19
-    note: 'Status ambiguity resolved by a DOD member with direct knowledge: PPAU deregistered
-      as an independent AEC party in 2021 but continues as a distinct internal grouping
-      within the Fusion Party (own membership, own infrastructure); members also count
-      as Fusion Party members for AEC registration purposes. Kept active.'
+    date: 2026-09-15
+    note: Site blocks scripted fetch (403) but web search confirms PPAU continues
+      as a distinct internal grouping within Fusion Party's federated structure, own
+      membership/infrastructure intact as of 2026.
     url: https://pirateparty.org.au
+    checked: 2026-09-15
   rss:
     checked: 2026-09-11
     date: 2024-05-14
     note: 'Latest post: Pirate Party Australia raises alarm over miscarriage of justice
       in David McBride'
     url: https://pirateparty.org.au/2024/05/15/pirate-party-australia-raises-alarm-over-miscarriage-of-justice-in-david-mcbride-case-lengthy-prison-term/
-last_checked: '2026-07-19'
+last_checked: '2026-09-15'
 ---
 
 Pirate Party Australia is the Australian branch of the international Pirate Party movement, which originated in Sweden in 2006 around issues of copyright reform and internet freedom. The Australian chapter has broadened its platform to include democratic reform, government transparency, and civil liberties.

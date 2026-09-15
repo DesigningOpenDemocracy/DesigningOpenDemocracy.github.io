@@ -53,16 +53,16 @@ activity:
     note: website loaded. Has blog in main page under a tab. Last one is at  May 20,
       2024 'A note of gratitude to Mr. N. Vaghul
   dod:
-    checked: 2026-07-19
-    date: 2026-07-19
-    note: Website live with July 2026 content; Monsoon session tracking, active blog
-      and bill commentary.
+    date: 2026-09-15
+    note: Site live; homepage content current to 15 Sep 2026 (Rajya Sabha Monsoon
+      Session 2026 coverage).
     url: https://prsindia.org
+    checked: 2026-09-15
   sitemap:
     checked: 2026-09-11
     date: 2021-07-17
     note: Page last modified (from sitemap)
-last_checked: '2026-07-19'
+last_checked: '2026-09-15'
 ---
 
 PRS Legislative Research was founded in September 2005 and is housed within the Centre for Policy Research in New Delhi. It provides non-partisan research support to Members of Parliament and state legislators, and makes India's legislative process more accessible to citizens through open tracking tools.
