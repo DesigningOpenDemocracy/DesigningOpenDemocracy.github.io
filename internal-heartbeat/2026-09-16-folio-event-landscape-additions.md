@@ -6,6 +6,10 @@ parked) — see "What shipped" at the bottom. This note exists for the one thing
 this month's `docs/heartbeat/posts/2026-09-sync.md` already carries its three "In
 the world" items.
 
+**Update, same day:** a follow-up conversation with the user led to a second concept
+page, `docs/concepts/democratic-infrastructure.md`, and a live catch worth recording
+here — see "Source drift caught mid-session" below.
+
 ## What was asked
 
 The user forwarded a Folio Collective event page and, separately, a Folio email
@@ -83,3 +87,50 @@ straight into World commentary using the two quotes above (already
 mechanically-verified against their live sources as part of shipping the org pages,
 so no re-fetching needed) — just check first whether V-Dem/EIU have published
 anything newer that would date this contrast by the time it runs.
+
+## A second concept page, and source drift caught mid-session
+
+A follow-up conversation (same session) asked whether "democratic infrastructure" —
+a phrase [`better-politics-foundation.md`](../docs/organisations/better-politics-foundation.md)'s
+Folio bio used — was a real enough term to track as a concept. Research found it
+isn't one settled term: Hollie Russon Gilman & K. Sabeel Rahman coined a civic-
+capacity sense across SSIR (2018), New America, and Demos (all the same two
+authors, not independent corroboration), and Democratic Society/FDSD published an
+unrelated deliberation-capacity sense in 2022 with no citation to the first. Wrote
+this up as [`docs/concepts/democratic-infrastructure.md`](../docs/concepts/democratic-infrastructure.md)
+— a dictionary-style page with attributed senses instead of one merged definition,
+a first for this site's concept pages (every other one picks a single definition).
+
+**The catch:** while drafting the page's third sense — Better Politics Foundation's
+own usage, sourced to the same Folio event bio the original org page cited —
+`check_fragments.py --no-cache` came back MISMATCH on both `apolitical.md`'s and
+`better-politics-foundation.md`'s existing `[^folio-event]` footnotes, which had
+verified clean a few hours earlier. Direct re-fetch confirmed why: Folio had
+rewritten Lisa Witter's bio on the live event page in the intervening hours. The
+new copy drops the "Better Politics Index ... as key democratic infrastructure"
+sentence entirely — the exact sentence the third sense depended on — and reframes
+the co-founder claims (new figures: "40 million worldwide," "178 Political
+Leadership Incubators across 60 countries," replacing the old "500,000 public
+servants" / index-and-fund framing). Confirmed via raw `diff`-by-eye against the
+HTML saved earlier this session, not just the extracted text, so this is a real
+edit, not an extraction artifact.
+
+Fixed by updating both org pages' footnotes to the new live text (mechanically
+re-verified good) and dropping the third concept-page sense rather than shipping a
+citation already known not to verify — noted in the concept page itself as
+supporting evidence for its own thesis (this is unstable, loosely-coined language)
+rather than silently deleted. Also found and removed six orphaned evidence entries
+in `citation-state.json` from *before* an earlier punctuation fix this session
+(comma-vs-period at quote boundaries) that had never been cleaned up — same root
+cause as the "quote ends with a comma the source doesn't have" bug class, not a
+new issue.
+
+**Worth remembering:** a page fetched and verified once earlier in a session is not
+guaranteed to still verify hours later, even within the same session, even for a
+brand-new citation. `check_fragments.py`'s own `--max-age`/staleness-window design
+already assumes this at the multi-day timescale; this is a same-session instance
+of the identical problem. No process change proposed — the existing gate
+(`check_fragments.py` before every push) caught it correctly and cheaply. Flagging
+here only because "I already verified this two hours ago" turned out not to be a
+safe shortcut, worth remembering next time a long session touches the same citation
+twice.

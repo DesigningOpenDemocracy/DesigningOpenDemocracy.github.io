@@ -48,7 +48,7 @@ Apolitical describes itself as "the social learning network for government," tru
 
 ## Why it's on our radar
 
-Co-founder Lisa Witter appeared as a Conversation Leader at [Folio Collective](folio-collective.md)'s September 2026 event on democracy's present and future, where she was introduced as co-founder of Apolitical, "a global peer-to-peer learning platform used by over 500,000 public servants across more than 170 countries."[^folio-event] Apolitical sits in the "democratic infrastructure" corner of the landscape — its bet is that governments make better decisions when public servants can learn from peers elsewhere, rather than reinventing solutions in isolation.
+Co-founder Lisa Witter appeared as a Conversation Leader at [Folio Collective](folio-collective.md)'s September 2026 event on democracy's present and future, where she was introduced as having "co-founded Apolitical.co, the world's largest peer-to-peer learning network for public servants, reaching more than 40 million worldwide and with 500,000+ members in 170 countries."[^folio-event] Apolitical's bet is that governments make better decisions when public servants can learn from peers elsewhere, rather than reinventing solutions in isolation — capacity-building for the people who implement governance day to day, distinct from the citizen-participation mechanisms most of the rest of this landscape focuses on.
 
 ## Links
 
@@ -65,4 +65,4 @@ Co-founder Lisa Witter appeared as a Conversation Leader at [Folio Collective](f
 
 [^witter-wiki]: "With Robyn Scott, she co-founded Apolitical, a global platform for policymakers." ["Lisa Witter"](https://en.wikipedia.org/wiki/Lisa_Witter), Wikipedia, accessed 16 September 2026.
 
-[^folio-event]: "She is the co-founder and Board Member of Apolitical, a global peer-to-peer learning platform used by over 500,000 public servants across more than 170 countries." Folio Collective's introduction to ["Should we celebrate democracy today — or reimagine it for tomorrow?"](https://www.folio.org.au/event-6840311), accessed 16 September 2026.
+[^folio-event]: "She co-founded Apolitical.co, the world's largest peer-to-peer learning network for public servants, reaching more than 40 million worldwide and with 500,000+ members in 170 countries." Folio Collective's introduction to ["Should we celebrate democracy today — or reimagine it for tomorrow?"](https://www.folio.org.au/event-6840311), accessed 16 September 2026.

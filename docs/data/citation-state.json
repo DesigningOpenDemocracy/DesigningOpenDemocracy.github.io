@@ -959,6 +959,26 @@
     ],
     "last_modified": null
   },
+  "https://constitutionnet.org/news/referendum-guinea-bissau-approves-new-constitution-expanding-presidential-powers": {
+    "checked": "2026-09-16",
+    "document_sha256": "8a06f8be23141c6e40097936b79ef295a85e3c2b03b1be842064c0aff95be8df",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-09-16",
+        "context": {
+          "prefix": "Voters in Guinea-Bissau have approved a new constitution that significantly expands presidential powers ahead of a general election later this year.",
+          "sha256": "9da96923ed795f2465febde9a8ef5dd3e03d64ae3e9377fee5394f4bd482aa80",
+          "suffix": "Voters have agreed to sweeping reforms allowing the president to appoint and dismiss the \u200bprime minister and cabinet, create or abolish ministries an",
+          "text": "Voters in Guinea-Bissau have approved a new constitution that significantly expands presidential powers ahead of a general election later this year. The referendum was organised by the military government that seized power in the West African nation last November following a disputed election. Voters have agreed to sweeping reforms allowing the president to appoint and dismiss the \u200bprime minister and cabinet, create or abolish ministries and dissolve parliament in \u2060the event of a grave political crisis. [... ] The new constitution strengthens the presidency at the expense of the prime minister, altering the balance of power under Guinea-Bissau's semi-presidential system. Previously, Guinea-Bissau's legislature appointed a prime minister from the parliamentary majority, who then formed a cabinet - an arrangement the ruling military authorities said had contributed to political instability. The changes now give the president greater authority over the government."
+        },
+        "id": "0f997250741cc403881cc40ea5ae3ca6a5651ee9938e3aa9372075f822e782e7",
+        "quote": "The referendum was organised by the military government that seized power in the West African nation last November following a disputed election.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
   "https://constitutionnet.org/news/voices/new-constitution-kazakhstan-parliamentary-reform-facade-presidential-monopoly": {
     "checked": "2026-08-26",
     "document_sha256": "c8db2f24a938ac20f6c330945983f99bb4ed043af3ec529b06aca9e27265a5b8",
@@ -1606,6 +1626,40 @@
         },
         "id": "aef147cb8f6b500792db55dfdbfc09b883847c573dbe8e86218a35ac43ae6424",
         "quote": "General elections will be held in Brazil on 4 October 2026 to elect the president, vice president, members of the National Congress, the governors, vice governors and legislative assemblies of all federative units, and the district council of Fernando de Noronha.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://en.wikipedia.org/wiki/2026_Guinea-Bissau_constitutional_referendum": {
+    "checked": "2026-09-16",
+    "document_sha256": "b237bf0c4fd39b591f2494a6666d20c8c423ba5ae1c4aa7e094d86c18c213efe",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-09-16",
+        "id": "8adb4a0fe69e3da09e74a2554c4bd0746773ec106ebf0042126edbac578c7bd2",
+        "quote": "A constitutional referendum on expanding presidential powers was held on 30 August 2026 by the ruling military junta. The proposal was accepted with a majority of 70%.",
+        "verified": false
+      }
+    ],
+    "last_modified": null
+  },
+  "https://en.wikipedia.org/wiki/2026_Guinea-Bissau_general_election": {
+    "checked": "2026-09-16",
+    "document_sha256": "f53c9766d9b54d7e595a9c5ecd730786add42235b9a9ae86004b16717d526f3b",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-09-16",
+        "context": {
+          "prefix": "eader of a junta calling itself the High Military Command for the Restoration of Order that would run the country for a one-year transitional period.",
+          "sha256": "00bcf35aee757ecb020d3095739fed50eefaca740e5c617d5ecd9dc61c6a9443",
+          "suffix": "On 21 January 2026, the junta issued a decree authorising elections for the legislature and the presidency to be held on 6 December 2026, after it de",
+          "text": "== Background == General elections were held in Guinea-Bissau on 23 November 2025 to elect the president and members of the National People's Assembly. A few days later, the Revolutionary Armed Forces of the People staged a coup d'\u00e9tat that overthrew president Umaro Sissoco Embal\u00f3, suspended the electoral protest and installed General Horta Inta-A Na Man as leader of a junta calling itself the High Military Command for the Restoration of Order that would run the country for a one-year transitional period. The junta released a transitional charter in December 2025 that banned Horta from running for election. On 21 January 2026, the junta issued a decree authorising elections for the legislature and the presidency to be held on 6 December 2026, after it deemed that \"all the conditions for organising free, fair and transparent elections have been met\"."
+        },
+        "id": "68ed0d1611f5592ab2e4c07ac2f9c206991b47bff46ec8ed53c61ce8ffa47f60",
+        "quote": "The junta released a transitional charter in December 2025 that banned Horta from running for election.",
         "verified": true
       }
     ],
@@ -2469,6 +2523,26 @@
         },
         "id": "3557564e2ab04770101061f5e09983d23517ea695b9577d3d046f6f296425082",
         "quote": "In 2016, largely in response to the introduction of Australia's mandatory telecommunications data retention scheme, Digital Rights Watch was created at a meeting of representatives from Australian digital and human rights organisations, activists, political advisers, technology consultants and academics.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://en.wikipedia.org/wiki/Elections_in_Sweden": {
+    "checked": "2026-09-16",
+    "document_sha256": "c78282cbbedd6b9122d0248be5e5ab78b6846084a88745ec0992294681447013",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-09-16",
+        "context": {
+          "prefix": "d on 13 September 2026. The most recent Swedish election to the European Parliament was held on 9 June 2024. == Electoral system == === Dates ===",
+          "sha256": "6e83d8781dacddd10ba9b15687259010a1e9f8cd91e06f4f670b38708449d05b",
+          "suffix": "Elections to the municipal councils also occur on the second Sunday of September. Elections to the European Parliament occur every five years in May",
+          "text": "=== Dates === Elections to Sweden's county councils occur simultaneously with the general elections on the second Sunday of September. Elections to the municipal councils also occur on the second Sunday of September. Elections to the European Parliament occur every five years in May or June throughout the entire European Union; the exact day of the election varies by country according to the local tradition, thus in Sweden they happen on a Sunday."
+        },
+        "id": "faabc2964a3928f19c8412dae909062ed757eeb0a582ef1b5ffa3b5765d99f45",
+        "quote": "Elections to Sweden's county councils occur simultaneously with the general elections on the second Sunday of September.",
         "verified": true
       }
     ],
@@ -4398,6 +4472,26 @@
     ],
     "last_modified": null
   },
+  "https://fdsd.org/democratic-infrastructure/": {
+    "checked": "2026-09-16",
+    "document_sha256": "03e73aaf71d18e870cdaf600b5699e4cee18b2bf4ac6e2d164e3dfb7a4213b73",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-09-16",
+        "context": {
+          "prefix": "ach to our work; one aimed at building and maintaining more and better \u2018Democratic Infrastructures\u2019. What is \u2018Democratic Infrastructure\u2019?",
+          "sha256": "c5c062f608aa0928bcb01b946ea8003808abffaa249d089dd8cfaa6fd30d5886",
+          "suffix": "More specifically, Democratic Infrastructure exists when there is a mix of elements, including but not limited to: (1) a contextualised p",
+          "text": "We define Democratic Infrastructure as: persistent, generally available sets of elements that enable the continuous development, reinforcement and reimagination of democracy in a defined context."
+        },
+        "id": "c5c062f608aa0928bcb01b946ea8003808abffaa249d089dd8cfaa6fd30d5886",
+        "quote": "We define Democratic Infrastructure as: persistent, generally available sets of elements that enable the continuous development, reinforcement and reimagination of democracy in a defined context.",
+        "verified": true
+      }
+    ],
+    "last_modified": "Mon, 03 Mar 2025 15:32:56 GMT"
+  },
   "https://fidemocracy.org/europe-forum-2026-from-novel-to-normal": {
     "checked": "2026-08-26",
     "document_sha256": "f1b5d44558c47a031362b60ccf4f231ec21e9678f59e316af0dd8e49463a2ad4",
@@ -6171,6 +6265,20 @@
     ],
     "last_modified": null
   },
+  "https://rollcall.com/2026/09/10/republicans-scotus-bid-new-missouri-map/": {
+    "checked": "2026-09-16",
+    "document_sha256": "536571b22a17515cc4b7edc2bc2170baf56e54bb7ad79b6d5ffcbeb62ab16119",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-09-16",
+        "id": "ae9509dd992aebfcc69c7bc985907144fbd237ceff45710da4ba2fb60fdf4887",
+        "quote": "This latest development likely means the state will use lines adopted in 2022 for this fall's election.",
+        "verified": false
+      }
+    ],
+    "last_modified": null
+  },
   "https://solve.mit.edu/solutions/51507": {
     "checked": "2026-08-26",
     "document_sha256": "c68aae8614cd2bae7dff40644036508b4af1e17ac362a313b605718d2eeb6d79",
@@ -6189,6 +6297,26 @@
       }
     ],
     "last_modified": null
+  },
+  "https://ssir.org/articles/entry/building_democratic_infrastructure": {
+    "checked": "2026-09-16",
+    "document_sha256": "47ac786a4bf3ea8e6ffbfb01fb71f74faff28c411033e87386270a579968ce90",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-09-16",
+        "context": {
+          "prefix": "ver. And such tactics often do little to address the background conditions that make participation more difficult for marginalized communities.",
+          "sha256": "025a3da211e917242d38fc85a0ff8e2c5e479d9b4d36925ca9cabfab9fcc4813",
+          "suffix": "In our work with groups like the Center for Rural Strategies in Appalachia and the Chicago-based Inner-City Muslim Action Network, as well as w",
+          "text": "To address these issues, civil society organization and local governments should build more long-term and durable democratic infrastructure, with the aim of empowering constituencies to participate in meaningful and concrete ways, overcoming division within our societies, and addressing a general distrust of government by enhancing accountability."
+        },
+        "id": "025a3da211e917242d38fc85a0ff8e2c5e479d9b4d36925ca9cabfab9fcc4813",
+        "quote": "To address these issues, civil society organization and local governments should build more long-term and durable democratic infrastructure, with the aim of empowering constituencies to participate in meaningful and concrete ways, overcoming division within our societies, and addressing a general distrust of government by enhancing accountability.",
+        "verified": true
+      }
+    ],
+    "last_modified": "Sat, 22 Aug 2026 08:21:33 GMT"
   },
   "https://stocznia.org.pl/en/about-shipyard/": {
     "checked": "2026-08-29",
@@ -6812,6 +6940,8 @@
   "https://www.ag.gov.au/integrity/australias-open-government-partnership": {
     "archive_checked": "2026-09-11",
     "archive_url": "http://web.archive.org/web/20260828153433/https://www.ag.gov.au/integrity/australias-open-government-partnership",
+    "blocked": "HTTP_403",
+    "blocked_since": "2026-09-16",
     "evidence": [
       {
         "context": {
@@ -6828,6 +6958,8 @@
     "manual_checked": "2026-08-22"
   },
   "https://www.ag.gov.au/rights-and-protections/australias-open-government-partnership/open-government-forum": {
+    "blocked": "HTTP_403",
+    "blocked_since": "2026-09-16",
     "evidence": [
       {
         "context": {
@@ -6961,8 +7093,8 @@
   },
   "https://www.betterpolitics.foundation/": {
     "checked": "2026-09-16",
-    "document_sha256": "db01539bcd4bdb4a960d01ec3279652adab6ae18afd844e2df0e18829f194ac4",
-    "etag": "W/\"9770d1785f4aba02af1da39c83e872c4\"",
+    "document_sha256": "bd713b51989677c70461a0826e4b7bf19391fad503308297c4bf585f52e617d4",
+    "etag": "W/\"b638a8a4ff2e004d3060f1aeef8392ea\"",
     "evidence": [
       {
         "checked": "2026-09-16",
@@ -7795,7 +7927,7 @@
   },
   "https://www.folio.org.au/event-6840311": {
     "checked": "2026-09-16",
-    "document_sha256": "577fa7981796512b0011be496181d475121b242ac41115cb8986d1bb33342af3",
+    "document_sha256": "6ae3806cfe90ad594d493ad881b4621ae36e7b25a4491ae27ba76d81036b6f8f",
     "etag": null,
     "evidence": [
       {
@@ -7809,36 +7941,6 @@
         "id": "76993a819c9cf307b3e16b41aa3d98aa71c1eae4f3307a120da4614a31e3ad2a",
         "quote": "we\u2019re joined by Lisa Witter and Josh Lerner, two leading democratic innovators whose work traverses continents and the democratic ecosystem, from communities to public servants and elected representatives",
         "verified": true
-      },
-      {
-        "checked": "2026-09-16",
-        "id": "c7fca72f5c8202decd519164b416876be78167159603070d02fdb251a32272a5",
-        "quote": "The Democracy Report 2026 by V-Dem Institute paints a gloomy global picture: democracy is \u2018facing existential challenges around the world\u2019,",
-        "verified": false
-      },
-      {
-        "checked": "2026-09-16",
-        "id": "8b0ee013b0dddc0d602b9f61afb5b95b14d9c62774c1a3d919b6b7e42b8f9cda",
-        "quote": "Yet, the Economist Intelligence Unit\u2019s latest Democracy Index indicates that, \u2018following 8 years of decline, 2025 marks a stabilisation of democracy scores that suggests an end to the global democratic recession\u2019,",
-        "verified": false
-      },
-      {
-        "checked": "2026-09-16",
-        "id": "018a333ae3f064a602aa2cadace2f2ef24b35f9fffa77b57f602b8367b09db34",
-        "quote": "She is the co-founder and Board Member of Apolitical, a global peer-to-peer learning platform used by over 500,000 public servants across more than 170 countries,",
-        "verified": false
-      },
-      {
-        "checked": "2026-09-16",
-        "id": "c1f79abde924603488839255715d475c27caee783bd6f3d328083ca12af1513d",
-        "quote": "She is the co-founder and the Executive Chair of the Better Politics Foundation (formerly, Apolitical Foundation), a global, non-partisan initiative working to update politics for the 21st century. Among other work, its Better Politics Index is the world's first index measuring the support and development of political leaders as key democratic infrastructure, and the Better Politics Fund is the first global fund backing political leadership innovation,",
-        "verified": false
-      },
-      {
-        "checked": "2026-09-16",
-        "id": "41e3e55c8e0c3f30d27c9c11dd5721b7c662ac73558ea02f487d16d6d1edc9b4",
-        "quote": "Josh is the founder of People Powered, the global hub for participatory democracy. He has 20 years of experience developing, researching, and supporting innovative democracy programs around the world. He previously founded and directed the Participatory Budgeting Project, a not-for-profit organisation that empowers people to decide together how to spend public money,",
-        "verified": false
       },
       {
         "checked": "2026-09-16",
@@ -7874,7 +7976,7 @@
         },
         "id": "eaf4ca0d1d9c5227b155d66d30b7b07d880f4ce153fd8efe594a9c13c6c2d79f",
         "quote": "She is the co-founder and Board Member of Apolitical, a global peer-to-peer learning platform used by over 500,000 public servants across more than 170 countries.",
-        "verified": true
+        "verified": false
       },
       {
         "checked": "2026-09-16",
@@ -7886,7 +7988,7 @@
         },
         "id": "1de380170b94b4100e1c837b3c5c3aee77fe7056c29034fe3abcb61fc9319dbc",
         "quote": "She is the co-founder and the Executive Chair of the Better Politics Foundation (formerly, Apolitical Foundation), a global, non-partisan initiative working to update politics for the 21st century. Among other work, its Better Politics Index is the world's first index measuring the support and development of political leaders as key democratic infrastructure, and the Better Politics Fund is the first global fund backing political leadership innovation.",
-        "verified": true
+        "verified": false
       },
       {
         "checked": "2026-09-16",
@@ -7898,6 +8000,30 @@
         },
         "id": "83e85f1db2f13d166fc52bcfabf6356faebdbc3c00e24085552cf607eabc2e30",
         "quote": "Josh is the founder of People Powered, the global hub for participatory democracy. He has 20 years of experience developing, researching, and supporting innovative democracy programs around the world. He previously founded and directed the Participatory Budgeting Project, a not-for-profit organisation that empowers people to decide together how to spend public money.",
+        "verified": true
+      },
+      {
+        "checked": "2026-09-16",
+        "context": {
+          "prefix": "avioural science expert, and certified brain-based coach who weaves neuroscience, psychology, and behavioural science into everything she does.",
+          "sha256": "340dd87d058e26a8bbc928f7cc49cbcd3e496a9e4acd24db712b13e374c1ea58",
+          "suffix": "It was named one of Fast Company's Most Impactful Companies in the World. She is the co-founder and Executive Chair of the Better Politics Foundation",
+          "text": "She co-founded Apolitical.co, the world's largest peer-to-peer learning network for public servants, reaching more than 40 million worldwide and with 500,000+ members in 170 countries. It was named one of Fast Company's Most Impactful Companies in the World. She is the co-founder and Executive Chair of the Better Politics Foundation (formerly the Apolitical Foundation), a global, non-partisan initiative dedicated to renewing leadership, reimagining politics, and rebuilding trust, which has helped spark 178 Political Leadership Incubators across 60 countries."
+        },
+        "id": "2d63e742692b514fc56735a49f45e06addee24fd5c90816b4b594a706e4dd5f1",
+        "quote": "She co-founded Apolitical.co, the world's largest peer-to-peer learning network for public servants, reaching more than 40 million worldwide and with 500,000+ members in 170 countries.",
+        "verified": true
+      },
+      {
+        "checked": "2026-09-16",
+        "context": {
+          "prefix": "more than 40 million worldwide and with 500,000+ members in 170 countries. It was named one of Fast Company's Most Impactful Companies in the World.",
+          "sha256": "340dd87d058e26a8bbc928f7cc49cbcd3e496a9e4acd24db712b13e374c1ea58",
+          "suffix": "A former public servant, Lisa has advised CEOs, Nobel Peace Prize winners, philanthropists, politicians, scientists, and explorers. She is a Wo",
+          "text": "She co-founded Apolitical.co, the world's largest peer-to-peer learning network for public servants, reaching more than 40 million worldwide and with 500,000+ members in 170 countries. It was named one of Fast Company's Most Impactful Companies in the World. She is the co-founder and Executive Chair of the Better Politics Foundation (formerly the Apolitical Foundation), a global, non-partisan initiative dedicated to renewing leadership, reimagining politics, and rebuilding trust, which has helped spark 178 Political Leadership Incubators across 60 countries."
+        },
+        "id": "46daf9224b0ba4d02a968b6ceafdf9c4823772462cf52dc263426e48335f0ccf",
+        "quote": "She is the co-founder and Executive Chair of the Better Politics Foundation (formerly the Apolitical Foundation), a global, non-partisan initiative dedicated to renewing leadership, reimagining politics, and rebuilding trust, which has helped spark 178 Political Leadership Incubators across 60 countries.",
         "verified": true
       }
     ],
@@ -8203,7 +8329,9 @@
   },
   "https://www.ipc.nsw.gov.au/news/open-government-partnership-final-public-consultation-draft-commitments-australias-third-national-action-plan": {
     "archive_checked": "2026-09-11",
-    "archive_url": "http://web.archive.org/web/20250524182833/https://www.ipc.nsw.gov.au/news/open-government-partnership-final-public-consultation-draft-commitments-australias-third-national-action-plan"
+    "archive_url": "http://web.archive.org/web/20250524182833/https://www.ipc.nsw.gov.au/news/open-government-partnership-final-public-consultation-draft-commitments-australias-third-national-action-plan",
+    "blocked": "HTTP_403",
+    "blocked_since": "2026-09-16"
   },
   "https://www.ipsnews.net/2026/08/pakistans-crackdown-on-journalists-comes-under-heavy-fire/": {
     "checked": "2026-08-26",
@@ -8746,6 +8874,26 @@
     ],
     "last_modified": "Wed, 26 Aug 2026 11:14:57 GMT"
   },
+  "https://www.newamerica.org/political-reform/reports/rebuilding-democratic-infrastructure/i-democratic-infrastructure-a-theoretical-framework/": {
+    "checked": "2026-09-16",
+    "document_sha256": "42d1567fc4c25ae5972d22e6e632fe939b5e3fba9be0ffd31ac32cddad4dda01",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-09-16",
+        "context": {
+          "prefix": "nfrastructures \u2014 political, economic, and social \u2014 needed to facilitate democratic functioning. Sociologist Charles Tilly offers a useful starting point.",
+          "sha256": "48c47b2bd464d43ec77ab52f38a6b1ca0965eb5c781b7deff2c3bc9eb9aa5278",
+          "suffix": "\u201d between state actors and the public. 2 This definition can be further sharpened into several key dimensions that are each interrelated and mutually-",
+          "text": "One way we can approach understanding the gap between the current state of American democracy and our aspirations for a more inclusive and responsive democratic polity is by unpacking the kinds of underlying institutional infrastructures \u2014 political, economic, and social \u2014 needed to facilitate democratic functioning. Sociologist Charles Tilly offers a useful starting point. Democracy, as Tilly notes, is best understood not as a specific institutional form (of, say, elections or party systems or the separation of powers), but rather by a wider set of social, economic, and political institutions that make possible \u201cbroad, equal, protected, and mutually binding consultation\u201d between state actors and the public. 2 This definition can be further sharpened into several key dimensions that are each interrelated and mutually-dependent. 3"
+        },
+        "id": "45352f296d4f8409bff2f4ca7497934529169d086028d80798d3a76b9670a602",
+        "quote": "Democracy, as Tilly notes, is best understood not as a specific institutional form (of, say, elections or party systems or the separation of powers), but rather by a wider set of social, economic, and political institutions that make possible \u201cbroad, equal, protected, and mutually binding consultation",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
   "https://www.newdemocracy.com.au/board-and-executive/": {
     "checked": "2026-08-26",
     "document_sha256": "f82fb37738cf86f81a3f595391ff5b26fa3727e20672f5e910b8899dc2578be2",
@@ -8941,6 +9089,20 @@
       }
     ],
     "last_modified": "Wed, 16 Sep 2026 02:21:16 GMT"
+  },
+  "https://www.pbs.org/newshour/politics/missouri-court-blocks-trump-backed-u-s-house-map-and-orders-it-to-be-put-to-a-vote": {
+    "checked": "2026-09-16",
+    "document_sha256": "0ccdb9cbffabd7d01eb55375b92688044aa1b358fa1d328ad4f931094e772c2d",
+    "etag": "W/\"027a1ae17ce6dfbebc6b6879500af7d5\"",
+    "evidence": [
+      {
+        "checked": "2026-09-16",
+        "id": "9cb2865aabddd053948a3bb06ecb10d93ade36c9c6376661114f070b05b8e0a0",
+        "quote": "The referendum petition was legal, sufficient, and timely, and the secretary incorrectly concluded otherwise.",
+        "verified": false
+      }
+    ],
+    "last_modified": "Wed, 16 Sep 2026 13:00:02 GMT"
   },
   "https://www.peoplepowered.org/about": {
     "checked": "2026-09-16",
@@ -9569,6 +9731,8 @@
     "last_modified": null
   },
   "https://www.sortitionfoundation.org/ecps_2025": {
+    "blocked": "HTTP_403",
+    "blocked_since": "2026-09-16",
     "checked": "2026-08-26",
     "document_sha256": "e68c639682af8645dfa561c38b58792fdec558d0e0b5255062b2c9424363b318",
     "etag": null,
