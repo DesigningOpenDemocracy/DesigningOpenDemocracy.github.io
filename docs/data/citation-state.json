@@ -138,6 +138,32 @@
     ],
     "last_modified": null
   },
+  "https://apolitical.co/": {
+    "checked": "2026-09-16",
+    "document_sha256": "aa1cc8091617088cca4dad6db9a6df5511ba8c761552826b39d131ba96141b53",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-09-16",
+        "id": "8a6a2d3878c1feb99256ff3218f15de9cb9546d725b09554fdd43edf498e14fc",
+        "quote": "From purpose-built tools that fix real government pain points to a global community of 500,000+ public servants sharing what works \u2014 Apolitical combines cutting-edge AI with deep public sector expertise to drive measurable impact,",
+        "verified": false
+      },
+      {
+        "checked": "2026-09-16",
+        "context": {
+          "prefix": "te at their own pace. Book a demo AI-powered tools, community and insight for the public sector",
+          "sha256": "07b22230a53882767b6814fdd34b452894b6ceb4ecae639d9c725e3cf003e67c",
+          "suffix": "Join the Apolitical network Making governments around the world smarter globe-icon 500k+ member",
+          "text": "From purpose-built tools that fix real government pain points to a global community of 500,000+ public servants sharing what works \u2014 Apolitical combines cutting-edge AI with deep public sector expertise to drive measurable impact."
+        },
+        "id": "07b22230a53882767b6814fdd34b452894b6ceb4ecae639d9c725e3cf003e67c",
+        "quote": "From purpose-built tools that fix real government pain points to a global community of 500,000+ public servants sharing what works \u2014 Apolitical combines cutting-edge AI with deep public sector expertise to drive measurable impact.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
   "https://astanatimes.com/2026/07/kazakhstans-new-constitution-takes-effect-heres-what-changes/": {
     "checked": "2026-08-26",
     "document_sha256": "396828a4d7e11857942bfed3f617e3d3df6488ec76deec0484975c0560f158d3",
@@ -3114,6 +3140,25 @@
     ],
     "last_modified": null
   },
+  "https://en.wikipedia.org/wiki/Lisa_Witter": {
+    "checked": "2026-09-16",
+    "document_sha256": "182cc9be4668758dfb19a06382242c367f787385ea46c483565134feefbb5c4d",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-09-16",
+        "context": {
+          "prefix": "national advisory board for MomsRising.org, the Op-Ed Project, Vittana.org and the communications advisory council for Women for Women International.",
+          "sha256": "4f9bcae8086380b4c25be63284c1aae115e36fa4db6803d0660000efbbe37318",
+          "suffix": "With Lisa Chen, Witter wrote the 2008 book The She Spot: Why Women are the Market for Changing the World and How to Reach Them, which was reviewed po"
+        },
+        "id": "0a2b46b7027c025a77d5cea3bd96da12c869a68f10d0e9303089211a8c0e7276",
+        "quote": "With Robyn Scott, she co-founded Apolitical, a global platform for policymakers.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
   "https://en.wikipedia.org/wiki/Local_government_in_Victoria": {
     "blocked": "HTTP_429",
     "blocked_since": "2026-08-22",
@@ -3952,6 +3997,42 @@
     ],
     "last_modified": null
   },
+  "https://en.wikipedia.org/wiki/The_Economist_Democracy_Index": {
+    "checked": "2026-09-16",
+    "document_sha256": "fc2b41eb436ceb3e837de3dd36da5daaee4f2b9486052ef2ddc2becf17dcf9a9",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-09-16",
+        "context": {
+          "prefix": "g, the index categorizes each country into one of four regime types: full democracies, flawed democracies, hybrid regimes, and authoritarian regimes.",
+          "sha256": "9dce1b567f1ea419562796d24e90cee34b114377548a61bafd6c6a0ad6d1c66a",
+          "suffix": "Reports were published every two years until 2010 and annually thereafter. The index includes 167 countries and territories, of which 165 are soverei"
+        },
+        "id": "c473216068306377f321c6147b7205ecd48f51cf7eb2d7a388417762f6348b38",
+        "quote": "The first Democracy Index report was published in 2006.",
+        "verified": true
+      },
+      {
+        "checked": "2026-09-16",
+        "id": "bfabbe437c98ac6d63b8500d841b342c70fc247bb18197da3564330b79bf04fa",
+        "quote": "The Democracy Index published by the British media company the Economist Group is an index measuring the quality of democracy across the world,",
+        "verified": false
+      },
+      {
+        "checked": "2026-09-16",
+        "context": {
+          "prefix": "",
+          "sha256": "2cc7bac4966fe9de2f556b751c599b3b3761fa16eb163fae7d2a2ced217ade17",
+          "suffix": "This quantitative and comparative assessment is centrally concerned with democratic rights and democratic institutions. The methodology for assessing"
+        },
+        "id": "c391141be27bad29247614b59f38da1130a9f3dfce04cc0f96c0d180e2f4ecc0",
+        "quote": "The Democracy Index published by the British media company the Economist Group is an index measuring the quality of democracy across the world.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
   "https://en.wikipedia.org/wiki/The_Helen_Clark_Foundation": {
     "blocked": "HTTP_429",
     "blocked_since": "2026-08-29",
@@ -4014,6 +4095,26 @@
         },
         "id": "3b13ce71d4df8c67de54e04e14c553a2d27598760c7d7d898e8bbbf6f1bb5e71",
         "quote": "was created in the aftermath of Kenya's disputed 2007 presidential election",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://en.wikipedia.org/wiki/V-Dem_Institute": {
+    "checked": "2026-09-16",
+    "document_sha256": "118b0a442d1b35c6f62985655c796c7680ac4539c56fcafb46c56d96e8463106",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-09-16",
+        "context": {
+          "prefix": "",
+          "sha256": "1c127e8985ec482edcb79a27d04f6acc766fd5ad0df2d1f99af1e70132d1f13b",
+          "suffix": "V-Dem defines democracy using seven key principles (electoral, liberal, participatory, deliberative, egalitarian, majoritarian, and consensual) that",
+          "text": "The V-Dem Institute (an abbreviation of Varieties of Democracy Institute), founded by Staffan I. Lindberg in 2014, is an independent research institute that serves as the headquarters of the V-Dem Project, a database that seeks to conceptualize and measure democracy. V-Dem defines democracy using seven key principles (electoral, liberal, participatory, deliberative, egalitarian, majoritarian, and consensual) that emphasize the concept of \"rule of the people\". As part of its work, it publishes a dataset known as the V-Dem Democracy Indices that is based on its key principles. The headquarters of the project is based at the department of political science, University of Gothenburg, Sweden."
+        },
+        "id": "3516065ed74a6274a8104ad91bbce597a4cb7ab15b9896b4ea6d48742dfd99f0",
+        "quote": "The V-Dem Institute (an abbreviation of Varieties of Democracy Institute), founded by Staffan I. Lindberg in 2014, is an independent research institute that serves as the headquarters of the V-Dem Project, a database that seeks to conceptualize and measure democracy.",
         "verified": true
       }
     ],
@@ -6858,6 +6959,50 @@
     ],
     "last_modified": null
   },
+  "https://www.betterpolitics.foundation/": {
+    "checked": "2026-09-16",
+    "document_sha256": "db01539bcd4bdb4a960d01ec3279652adab6ae18afd844e2df0e18829f194ac4",
+    "etag": "W/\"9770d1785f4aba02af1da39c83e872c4\"",
+    "evidence": [
+      {
+        "checked": "2026-09-16",
+        "id": "799d52dc67f04e2280ab56a3d6f9b9b68343aa238d1221d68a594457b47f42be",
+        "quote": "We focus on equipping courageous leaders with new tools and ideas to reimagine political systems,",
+        "verified": false
+      },
+      {
+        "checked": "2026-09-16",
+        "id": "d7168f1456b9417264c4737f56a799a8b0d63864b841da70e22b84558a6200f2",
+        "quote": "This report examines how newly elected Members of the German Bundestag can be better supported as they transition into parliamentary work,",
+        "verified": false
+      },
+      {
+        "checked": "2026-09-16",
+        "context": {
+          "prefix": "",
+          "sha256": "b7e087d93f2493f14eab470989c6e26f570167588d828f22ca25ead1ab2a06d0",
+          "suffix": "\u200b As the world\u2019s leading convener of political leadership entrepreneurs and innovators, we serve as a: Convening spa",
+          "text": "We focus on equipping courageous leaders with new tools and ideas to reimagine political systems. \u200b As the world\u2019s leading convener of political leadership entrepreneurs and innovators, we serve as a:"
+        },
+        "id": "7504f18d4ffc6a111b0a16cef9fd985da643e5868d48114095d0d138edca1b15",
+        "quote": "We focus on equipping courageous leaders with new tools and ideas to reimagine political systems.",
+        "verified": true
+      },
+      {
+        "checked": "2026-09-16",
+        "context": {
+          "prefix": "ore this year! Learn more New report: Elected. Now What?",
+          "sha256": "602c7d889843f155bbf21093ef1c6d265464f5f21c0e35c316a31642334382d6",
+          "suffix": "The aim: to identify concrete starting points for improving the transition into office and strengthening political leadership over the long term.",
+          "text": "This report examines how newly elected Members of the German Bundestag can be better supported as they transition into parliamentary work. The aim: to identify concrete starting points for improving the transition into office and strengthening political leadership over the long term."
+        },
+        "id": "7601aa76861e759e9ea5bf34765a9a548e51411ec7e399a8f952ec02010a55bf",
+        "quote": "This report examines how newly elected Members of the German Bundestag can be better supported as they transition into parliamentary work.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
   "https://www.bienpublic.com/elections/2022/01/27/primaire-populaire-qu-est-ce-que-le-jugement-majoritaire": {
     "checked": "2026-08-26",
     "document_sha256": "a6ec53623f0f07dfa7eca0a2d5ba15c301b883cb82b8e028b1ea9285e1dc46eb",
@@ -7663,6 +7808,96 @@
         },
         "id": "76993a819c9cf307b3e16b41aa3d98aa71c1eae4f3307a120da4614a31e3ad2a",
         "quote": "we\u2019re joined by Lisa Witter and Josh Lerner, two leading democratic innovators whose work traverses continents and the democratic ecosystem, from communities to public servants and elected representatives",
+        "verified": true
+      },
+      {
+        "checked": "2026-09-16",
+        "id": "c7fca72f5c8202decd519164b416876be78167159603070d02fdb251a32272a5",
+        "quote": "The Democracy Report 2026 by V-Dem Institute paints a gloomy global picture: democracy is \u2018facing existential challenges around the world\u2019,",
+        "verified": false
+      },
+      {
+        "checked": "2026-09-16",
+        "id": "8b0ee013b0dddc0d602b9f61afb5b95b14d9c62774c1a3d919b6b7e42b8f9cda",
+        "quote": "Yet, the Economist Intelligence Unit\u2019s latest Democracy Index indicates that, \u2018following 8 years of decline, 2025 marks a stabilisation of democracy scores that suggests an end to the global democratic recession\u2019,",
+        "verified": false
+      },
+      {
+        "checked": "2026-09-16",
+        "id": "018a333ae3f064a602aa2cadace2f2ef24b35f9fffa77b57f602b8367b09db34",
+        "quote": "She is the co-founder and Board Member of Apolitical, a global peer-to-peer learning platform used by over 500,000 public servants across more than 170 countries,",
+        "verified": false
+      },
+      {
+        "checked": "2026-09-16",
+        "id": "c1f79abde924603488839255715d475c27caee783bd6f3d328083ca12af1513d",
+        "quote": "She is the co-founder and the Executive Chair of the Better Politics Foundation (formerly, Apolitical Foundation), a global, non-partisan initiative working to update politics for the 21st century. Among other work, its Better Politics Index is the world's first index measuring the support and development of political leaders as key democratic infrastructure, and the Better Politics Fund is the first global fund backing political leadership innovation,",
+        "verified": false
+      },
+      {
+        "checked": "2026-09-16",
+        "id": "41e3e55c8e0c3f30d27c9c11dd5721b7c662ac73558ea02f487d16d6d1edc9b4",
+        "quote": "Josh is the founder of People Powered, the global hub for participatory democracy. He has 20 years of experience developing, researching, and supporting innovative democracy programs around the world. He previously founded and directed the Participatory Budgeting Project, a not-for-profit organisation that empowers people to decide together how to spend public money,",
+        "verified": false
+      },
+      {
+        "checked": "2026-09-16",
+        "context": {
+          "prefix": "te democracy when it is at a crossroads? That question occupied our minds as we marked International Day of Democracy (15 September) this year.",
+          "sha256": "e228344f95641aa44428741c2f7343491d5a2936cfe4582f833f6a254bdf4233",
+          "suffix": "Only 7% of people (0.6 billion) live in liberal democracies like Australia, and \u2018almost all aspects of democracy register far-reaching declines durin",
+          "text": "The Democracy Report 2026 by V-Dem Institute paints a gloomy global picture: democracy is \u2018facing existential challenges around the world\u2019. Only 7% of people (0.6 billion) live in liberal democracies like Australia, and \u2018almost all aspects of democracy register far-reaching declines during the last decade\u2019."
+        },
+        "id": "d298b214924816e5d9216ac14d5db93dc69df1441e7bd10f6408d6aecaa9e2b5",
+        "quote": "The Democracy Report 2026 by V-Dem Institute paints a gloomy global picture: democracy is \u2018facing existential challenges around the world\u2019.",
+        "verified": true
+      },
+      {
+        "checked": "2026-09-16",
+        "context": {
+          "prefix": "llion) live in liberal democracies like Australia, and \u2018almost all aspects of democracy register far-reaching declines during the last decade\u2019.",
+          "sha256": "2b31000db8822a13edb224b246d88a2e6dec1e2dbf389e856f4163fa8bed6d8c",
+          "suffix": "Almost 75% of countries either improved their score over 12 months or remained constant. The United States is presented as the glaring exception.",
+          "text": "Yet, the Economist Intelligence Unit\u2019s latest Democracy Index indicates that, \u2018following 8 years of decline, 2025 marks a stabilisation of democracy scores that suggests an end to the global democratic recession\u2019. Almost 75% of countries either improved their score over 12 months or remained constant. The United States is presented as the glaring exception."
+        },
+        "id": "5d1ab8ce67e4e51ee3af94557f7c3112f282389917c803586bbe68ba84b708b0",
+        "quote": "Yet, the Economist Intelligence Unit\u2019s latest Democracy Index indicates that, \u2018following 8 years of decline, 2025 marks a stabilisation of democracy scores that suggests an end to the global democratic recession\u2019.",
+        "verified": true
+      },
+      {
+        "checked": "2026-09-16",
+        "context": {
+          "prefix": "ial futures. Conversation Leader - Lisa Witter Lisa is a serial (political) entrepreneur, executive, writer, and public speaker.",
+          "sha256": "a51d6bc20c81cde62d2fc5896f1fe78977ac287f1e44de8832917abf20d79bbe",
+          "suffix": "This platform is recognised as one of Fast Company's Most Innovative Companies in the World. She is the co-founder and the Executive Chair of t",
+          "text": "She is the co-founder and Board Member of Apolitical, a global peer-to-peer learning platform used by over 500,000 public servants across more than 170 countries. This platform is recognised as one of Fast Company's Most Innovative Companies in the World."
+        },
+        "id": "eaf4ca0d1d9c5227b155d66d30b7b07d880f4ce153fd8efe594a9c13c6c2d79f",
+        "quote": "She is the co-founder and Board Member of Apolitical, a global peer-to-peer learning platform used by over 500,000 public servants across more than 170 countries.",
+        "verified": true
+      },
+      {
+        "checked": "2026-09-16",
+        "context": {
+          "prefix": "00 public servants across more than 170 countries. This platform is recognised as one of Fast Company's Most Innovative Companies in the World.",
+          "sha256": "1de380170b94b4100e1c837b3c5c3aee77fe7056c29034fe3abcb61fc9319dbc",
+          "suffix": "Beyond her entrepreneurial endeavours, Lisa is a World Economic Forum Young Global Leader, the recipient of the Creative Bureaucracy Award, and",
+          "text": "She is the co-founder and the Executive Chair of the Better Politics Foundation (formerly, Apolitical Foundation), a global, non-partisan initiative working to update politics for the 21st century. Among other work, its Better Politics Index is the world's first index measuring the support and development of political leaders as key democratic infrastructure, and the Better Politics Fund is the first global fund backing political leadership innovation."
+        },
+        "id": "1de380170b94b4100e1c837b3c5c3aee77fe7056c29034fe3abcb61fc9319dbc",
+        "quote": "She is the co-founder and the Executive Chair of the Better Politics Foundation (formerly, Apolitical Foundation), a global, non-partisan initiative working to update politics for the 21st century. Among other work, its Better Politics Index is the world's first index measuring the support and development of political leaders as key democratic infrastructure, and the Better Politics Fund is the first global fund backing political leadership innovation.",
+        "verified": true
+      },
+      {
+        "checked": "2026-09-16",
+        "context": {
+          "prefix": "and counselled CEOs, Nobel Peace Prize winners, politicians, philanthropists, scientists and academics. Conversation Leader - Josh Lerner",
+          "sha256": "83e85f1db2f13d166fc52bcfabf6356faebdbc3c00e24085552cf607eabc2e30",
+          "suffix": "Josh completed a PhD in Politics at the New School for Social Research and a Masters in Planning from the University of Toronto. He is the auth",
+          "text": "Josh is the founder of People Powered, the global hub for participatory democracy. He has 20 years of experience developing, researching, and supporting innovative democracy programs around the world. He previously founded and directed the Participatory Budgeting Project, a not-for-profit organisation that empowers people to decide together how to spend public money."
+        },
+        "id": "83e85f1db2f13d166fc52bcfabf6356faebdbc3c00e24085552cf607eabc2e30",
+        "quote": "Josh is the founder of People Powered, the global hub for participatory democracy. He has 20 years of experience developing, researching, and supporting innovative democracy programs around the world. He previously founded and directed the Participatory Budgeting Project, a not-for-profit organisation that empowers people to decide together how to spend public money.",
         "verified": true
       }
     ],
@@ -8688,11 +8923,12 @@
     "manual_checked": "2026-08-22"
   },
   "https://www.participatorybudgeting.org/about/": {
-    "checked": "2026-08-26",
+    "checked": "2026-09-16",
     "document_sha256": "6d7422f0a900e6bf8b0b0a693a741770219790cba3bf2f6911433a800d303bc6",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-09-16",
         "context": {
           "prefix": "participatory budgeting (PB) processes that deepen democracy, build stronger communities, and make public budgets more equitable and effective.",
           "sha256": "9caecfe4a8b685cef6c9963bd4658b0495569e80536ad3c4c8f43b9e90ca8ce1",
@@ -8704,14 +8940,71 @@
         "verified": true
       }
     ],
-    "last_modified": "Wed, 26 Aug 2026 00:21:32 GMT"
+    "last_modified": "Wed, 16 Sep 2026 02:21:16 GMT"
   },
-  "https://www.peoplepowered.org/events-content/athens-democracy-forum-2026": {
-    "checked": "2026-08-26",
-    "document_sha256": "50b8f84a4aeb9b01530381c5f481002cb2c351de1e30b8c4524b9c5f73772152",
-    "etag": "W/\"63ced8952b45df37038a56e4f12acf30\"",
+  "https://www.peoplepowered.org/about": {
+    "checked": "2026-09-16",
+    "document_sha256": "843ccc435a1059517a5d062e9847f85b084e54783701c70b4a601451b1d8d73f",
+    "etag": "W/\"2ae4f73859d88761fc1bce7ec9447144--gzip\"",
     "evidence": [
       {
+        "checked": "2026-09-16",
+        "context": {
+          "prefix": "ng, participatory policy-making, participatory planning, and citizen assemblies. We\u2019re like a global union for participatory democracy workers.",
+          "sha256": "1f9ed76aca377266f705c9d0ba9d16736bbef276c15f6dd301c9facc7415fdae",
+          "suffix": "In 2020, 58 participatory democracy leaders from 28 countries engaged in a planning process to build out the Global PB Hub into a new and broader org",
+          "text": "We began to grow the organization in 2019, launching a Global Participatory Budgeting Hub as a fiscally sponsored initiative of the Participatory Budgeting Project, a nonprofit organization in the United States. In 2020, 58 participatory democracy leaders from 28 countries engaged in a planning process to build out the Global PB Hub into a new and broader organization. They decided on the mission, vision, values, and commitments below, along with our name and work priorities."
+        },
+        "id": "3011ced1e593080e0ef8a24a400b8e20700bfb8dc57dfe57a0b577ee8adee28c",
+        "quote": "We began to grow the organization in 2019, launching a Global Participatory Budgeting Hub as a fiscally sponsored initiative of the Participatory Budgeting Project, a nonprofit organization in the United States.",
+        "verified": true
+      },
+      {
+        "checked": "2026-09-16",
+        "context": {
+          "prefix": "Participatory Budgeting Hub as a fiscally sponsored initiative of the Participatory Budgeting Project, a nonprofit organization in the United States.",
+          "sha256": "1f9ed76aca377266f705c9d0ba9d16736bbef276c15f6dd301c9facc7415fdae",
+          "suffix": "They decided on the mission, vision, values, and commitments below, along with our name and work priorities. We are a member-driven global orga",
+          "text": "We began to grow the organization in 2019, launching a Global Participatory Budgeting Hub as a fiscally sponsored initiative of the Participatory Budgeting Project, a nonprofit organization in the United States. In 2020, 58 participatory democracy leaders from 28 countries engaged in a planning process to build out the Global PB Hub into a new and broader organization. They decided on the mission, vision, values, and commitments below, along with our name and work priorities."
+        },
+        "id": "978a0ff5e990eb4059892e93ab08e5be54426921d84d33a0e4a9d2498790c4eb",
+        "quote": "In 2020, 58 participatory democracy leaders from 28 countries engaged in a planning process to build out the Global PB Hub into a new and broader organization.",
+        "verified": true
+      },
+      {
+        "checked": "2026-09-16",
+        "id": "59cf102f7dadaba24307222af9d7fa437ba26a1d718ca61e0fa088aeb00a0284",
+        "quote": "We began to grow the organization in 2019, launching a Global Participatory Budgeting Hub as a fiscally sponsored initiative of the Participatory Budgeting Project, a nonprofit organization in the United States,",
+        "verified": false
+      },
+      {
+        "checked": "2026-09-16",
+        "id": "664d39a2c7b90a147ca95671eef9617b87d4396ff8f019b0ec10462afed24fc6",
+        "quote": "We began to grow the organization in 2019, launching a Global Participatory Budgeting Hub as a fiscally sponsored initiative of the Participatory Budgeting Project, a nonprofit organization in the United States. In 2020, 58 participatory democracy leaders from 28 countries engaged in a planning process to build out the Global PB Hub into a new and broader organization,",
+        "verified": false
+      },
+      {
+        "checked": "2026-09-16",
+        "context": {
+          "prefix": "ng, participatory policy-making, participatory planning, and citizen assemblies. We\u2019re like a global union for participatory democracy workers.",
+          "sha256": "1f9ed76aca377266f705c9d0ba9d16736bbef276c15f6dd301c9facc7415fdae",
+          "suffix": "They decided on the mission, vision, values, and commitments below, along with our name and work priorities. We are a member-driven global orga",
+          "text": "We began to grow the organization in 2019, launching a Global Participatory Budgeting Hub as a fiscally sponsored initiative of the Participatory Budgeting Project, a nonprofit organization in the United States. In 2020, 58 participatory democracy leaders from 28 countries engaged in a planning process to build out the Global PB Hub into a new and broader organization. They decided on the mission, vision, values, and commitments below, along with our name and work priorities."
+        },
+        "id": "4c68b87e6f15b1a95ffbd07f3ebe1ca3032d4a09bde6b47e798942cc18a7b063",
+        "quote": "We began to grow the organization in 2019, launching a Global Participatory Budgeting Hub as a fiscally sponsored initiative of the Participatory Budgeting Project, a nonprofit organization in the United States. In 2020, 58 participatory democracy leaders from 28 countries engaged in a planning process to build out the Global PB Hub into a new and broader organization.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://www.peoplepowered.org/events-content/athens-democracy-forum-2026": {
+    "checked": "2026-09-16",
+    "document_sha256": "50b8f84a4aeb9b01530381c5f481002cb2c351de1e30b8c4524b9c5f73772152",
+    "etag": "W/\"9670e9446ae7550a104bb0b31bfa4ba4\"",
+    "evidence": [
+      {
+        "checked": "2026-09-16",
         "context": {
           "prefix": "\ud83d\udcc5 September 29 \u2013 October 1, 2026 \ud83d\udccd Athens, Greece \ud83d\udd17 https://www.athensdemocracyforum.com/",
           "sha256": "e3d0e071556ae2a7a7d9b507eb0ce2f3fc3442e66dac4591ba168f9b89d167b4",
@@ -8726,11 +9019,12 @@
     "last_modified": null
   },
   "https://www.peoplepowered.org/events-content/gdc-global-forum-2026": {
-    "checked": "2026-08-26",
+    "checked": "2026-09-16",
     "document_sha256": "169b7ed964e47ef0b56c2390f1473e0d34e4de7d676492d4a71ed627d92717ed",
-    "etag": "W/\"b09790afb86e8284ec9b8a35c6d9ed8a\"",
+    "etag": "W/\"95f221d99e36e886a1a74419426f2a86\"",
     "evidence": [
       {
+        "checked": "2026-09-16",
         "context": {
           "prefix": "vatoire Amphitheater, Greece (hybrid \u2014 livestreamed on Zoom and YouTube) \ud83d\udd17 https://globaldemocracycoalition.org/event/gdc-global-forum-2026/",
           "sha256": "ef02486981b2b65b203557409510c3c5b53692a15e37691785c348135a3dc4f7",
@@ -8745,9 +9039,9 @@
     "last_modified": null
   },
   "https://www.peoplepowered.org/events-content/oidp-2026": {
-    "checked": "2026-08-26",
-    "document_sha256": "200bb853be09702bda77ca879cc6808b84d20018487a69fb034e063d34e9ff57",
-    "etag": "W/\"b7dceb994aa78aeaad5ba5c020781edb\"",
+    "checked": "2026-09-16",
+    "document_sha256": "ad11e24dfb2d71d273c86bf73ffc6eb115e4a297cccfd98b6345ab95e558b055",
+    "etag": "W/\"c177dcfba60cdfd3136bc5a52bb8c723\"",
     "evidence": [
       {
         "context": {
@@ -8761,6 +9055,7 @@
         "verified": true
       },
       {
+        "checked": "2026-09-16",
         "context": {
           "prefix": "6 11:00 AM 11:00 krakow Poland (map) Google Calendar ICS",
           "sha256": "e98baa5dbaae3e6f843802d30b74d7dd38e4e9aa48e9b0de4563fa872a304df8",
@@ -8775,9 +9070,9 @@
     "last_modified": null
   },
   "https://www.peoplepowered.org/events-content/world-forum-for-democracy-2026": {
-    "checked": "2026-08-26",
+    "checked": "2026-09-16",
     "document_sha256": "a6be8446eeab07c07de4f8699f0a56f3169c0eabf29fc801d9fc38c7b732b202",
-    "etag": "W/\"717566beb518714c8b281f9000ad5b2c\"",
+    "etag": "W/\"386a30726dc9264b8351181ba68aae8c\"",
     "evidence": [
       {
         "id": "d39140481410db1394c64a21facfdbd7605cc549c80ab12b17c5a38ad308e582",
@@ -8785,6 +9080,7 @@
         "verified": true
       },
       {
+        "checked": "2026-09-16",
         "id": "c6c96fb6ac6c9f638e48d735399b74b0e78d25bc66478b6c36425b93a268bd19",
         "quote": "The 14th World Forum for Democracy... will take place in Strasbourg from 2\u20134 November 2026 under the theme \"Democratic Foresight.\"",
         "verified": true
@@ -8940,8 +9236,34 @@
     ],
     "last_modified": null
   },
+  "https://www.prnewswire.com/news-releases/apolitical-launches-first-of-its-kind-peer-to-peer-platform-for-governments-everywhere-300478032.html": {
+    "checked": "2026-09-16",
+    "document_sha256": "f2bb89039f6aa8547e9fe0f2da31f128fd025a211904acffcac5b641e275af55",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-09-16",
+        "context": {
+          "prefix": "Share to X LONDON, June 22, 2017 /PRNewswire/ --",
+          "sha256": "899a4ced4d3e3ac35087bdf7248b601204f8fc3bf939448114f09a29f43077af",
+          "suffix": "The platform is the first of its kind. About the platform Apolitical's online platform is designed around the critical policy topics of o",
+          "text": "LONDON, June 22, 2017 /PRNewswire/ -- Today, Apolitical launched a global platform for government and its partners at Admiralty House, Whitehall in collaboration with the UK Cabinet Office. The platform is the first of its kind."
+        },
+        "id": "2fb5882c995703db7ce0fb7932d381db48ac430517719a0a42d9361ba1960813",
+        "quote": "Today, Apolitical launched a global platform for government and its partners at Admiralty House, Whitehall in collaboration with the UK Cabinet Office.",
+        "verified": true
+      },
+      {
+        "checked": "2026-09-16",
+        "id": "b9caf0676571dcb0c8955c96a73dc96dadec6352aa00c2758fc0aaa982b99589",
+        "quote": "Today, Apolitical launched a global platform for government and its partners at Admiralty House, Whitehall in collaboration with the UK Cabinet Office,",
+        "verified": false
+      }
+    ],
+    "last_modified": "Wed, 16 Sep 2026 07:52:38 GMT"
+  },
   "https://www.prnewswire.com/news-releases/eiu-democracy-index-2025-democracy-stabilises-after-eight-years-of-decline-302734863.html": {
-    "checked": "2026-08-26",
+    "checked": "2026-09-16",
     "document_sha256": "8f611ac19d34368db530ea1b83b93c7a10231626d4f57ad0442a8ebdb20b3892",
     "etag": null,
     "evidence": [
@@ -8955,9 +9277,27 @@
         "id": "af23cbf0ae3bafbbbb5531809c026baf4d8595c0db87d1cdb843a288390bea75",
         "quote": "the average score in the 2025 Democracy Index rose less than a half of a percent from 5.17 to 5.19",
         "verified": true
+      },
+      {
+        "checked": "2026-09-16",
+        "context": {
+          "prefix": "Share to X LONDON, April 7, 2026 /PRNewswire/ --",
+          "sha256": "f9b9b42e2f6ccc6fd99f6f286d8df47c1c52da445a106bf70df9768efe94e022",
+          "suffix": "The index shows remarkable stability in the higher-ranked \"full democracies\" and the lower-ranked \"authoritarian regimes\". Movement in the lowe",
+          "text": "Following eight years of decline, 2025 marks a stabilisation of democracy scores that suggests an end to the global democratic recession."
+        },
+        "id": "f9b9b42e2f6ccc6fd99f6f286d8df47c1c52da445a106bf70df9768efe94e022",
+        "quote": "Following eight years of decline, 2025 marks a stabilisation of democracy scores that suggests an end to the global democratic recession.",
+        "verified": true
+      },
+      {
+        "checked": "2026-09-16",
+        "id": "a26be0111940fa54fa5ece911bf8d6dac28f67d7e4afc6ca8facc000f69a7cbc",
+        "quote": "Following eight years of decline, 2025 marks a stabilisation of democracy scores that suggests an end to the global democratic recession,",
+        "verified": false
       }
     ],
-    "last_modified": "Sun, 23 Aug 2026 13:37:35 GMT"
+    "last_modified": "Wed, 09 Sep 2026 09:33:12 GMT"
   },
   "https://www.prsa.org.au/qn/2011a_.html": {
     "checked": "2026-08-26",
@@ -9527,8 +9867,34 @@
     ],
     "last_modified": null
   },
+  "https://www.v-dem.net/about/": {
+    "checked": "2026-09-16",
+    "document_sha256": "f87c5cecab77d395e9241cc9e1f384f514a40fe4ca12dad6952ea2167e0062e8",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-09-16",
+        "id": "d2c3b459537da26a69d2c017b5ddedef60af634d153900b82d830276057e9ce8",
+        "quote": "The V-Dem Institute is the executive management arm of V-Dem with responsibility for most aspects of the data collection efforts, management and coordination of several large research programs, and for most of the outreach, dissemination, and collaborations with policy/practitioners\u2019 organizations,",
+        "verified": false
+      },
+      {
+        "checked": "2026-09-16",
+        "context": {
+          "prefix": "a to measure these principles. Learn more about our global team and methodology V-Dem Institute",
+          "sha256": "5cc5e8a430bae46ca79c155c320a63a6eab826db890df0c594cd4923fa57bfce",
+          "suffix": "Learn more about the V-Dem Institute's research and employees Regional Centers B",
+          "text": "The V-Dem Institute is the executive management arm of V-Dem with responsibility for most aspects of the data collection efforts, management and coordination of several large research programs, and for most of the outreach, dissemination, and collaborations with policy/practitioners\u2019 organizations."
+        },
+        "id": "5cc5e8a430bae46ca79c155c320a63a6eab826db890df0c594cd4923fa57bfce",
+        "quote": "The V-Dem Institute is the executive management arm of V-Dem with responsibility for most aspects of the data collection efforts, management and coordination of several large research programs, and for most of the outreach, dissemination, and collaborations with policy/practitioners\u2019 organizations.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
   "https://www.v-dem.net/news/press-release-democratic-backsliding-reaches-western-democracies-with-us-decline-unprecedented/": {
-    "checked": "2026-08-26",
+    "checked": "2026-09-16",
     "document_sha256": "eacbb4c31bac1e049e163e7e78b1472e59242d498612e145189354cb641938a2",
     "etag": null,
     "evidence": [
@@ -9542,6 +9908,24 @@
         "id": "79de61ccb5acd6cff63f799f78957058e8cee0857ddd49de79194029a6061145",
         "quote": "Nearly a quarter of the world\u2019s nations are going through democratic backsliding, or autocratization, in 2025, and six out of the ten new autocratizing countries identified in the 2026 Democracy Report are in Europe and North America.",
         "verified": true
+      },
+      {
+        "checked": "2026-09-16",
+        "context": {
+          "prefix": "Democracies, with U.S. Decline \u201cUnprecedented\u201d 17 March 2026 Tags Press Release Publications",
+          "sha256": "d779ba043e1be2566c68df3ad38e4a37da025e18edcf55f128f2222eff8a5aed",
+          "suffix": "This, and more, is reported in the latest Democracy Report from the V-Dem Institute at the University of Gothenburg. Nearly a quarter of the wo",
+          "text": "Democratic backsliding is now happening in well-established democracies. Democracy in the USA is deteriorating at unprecedented speed, and media and journalists are increasingly targeted across the world. This, and more, is reported in the latest Democracy Report from the V-Dem Institute at the University of Gothenburg."
+        },
+        "id": "d2a7960fdb866627273026b96ff90daa7b1244439c6c532d68fb53c5704bd560",
+        "quote": "Democratic backsliding is now happening in well-established democracies. Democracy in the USA is deteriorating at unprecedented speed, and media and journalists are increasingly targeted across the world.",
+        "verified": true
+      },
+      {
+        "checked": "2026-09-16",
+        "id": "3f6306eba9256e2c0df8384caadcce4326bc470b7833931a9fdc9d4bed56e500",
+        "quote": "Democratic backsliding is now happening in well-established democracies. Democracy in the USA is deteriorating at unprecedented speed, and media and journalists are increasingly targeted across the world,",
+        "verified": false
       }
     ],
     "last_modified": null

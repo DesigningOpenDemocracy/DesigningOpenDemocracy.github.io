@@ -22,6 +22,8 @@ location:
   longitude: -73.9442
   name: Brooklyn, New York, USA
 rss_feed: https://www.participatorybudgeting.org/feed
+related_orgs:
+- people-powered
 events:
 - date: '2009-01-01'
   title: Founded by Josh Lerner and collaborators, launching the first PB process
@@ -64,6 +66,8 @@ PBP's model emphasises equity and inclusion: PB processes are designed to engage
 
 Beyond direct implementation, PBP publishes toolkits, research, and case studies, and advocates for PB as a standard feature of public governance.
 
+In 2019, PBP fiscally sponsored a Global Participatory Budgeting Hub that, after a 2020 planning process involving leaders from 28 countries, became the independent global organisation [People Powered](people-powered.md).[^pp-about]
+
 ## Links
 
 - Website: [participatorybudgeting.org](https://www.participatorybudgeting.org)
@@ -77,3 +81,6 @@ Beyond direct implementation, PBP publishes toolkits, research, and case studies
 - [Decidim](decidim.md)
 - [Consul Democracy](consul-democracy.md)
 - [Ethelo](ethelo.md)
+- [People Powered](people-powered.md)
+
+[^pp-about]: "We began to grow the organization in 2019, launching a Global Participatory Budgeting Hub as a fiscally sponsored initiative of the Participatory Budgeting Project, a nonprofit organization in the United States. In 2020, 58 participatory democracy leaders from 28 countries engaged in a planning process to build out the Global PB Hub into a new and broader organization." [About Us](https://www.peoplepowered.org/about), People Powered, accessed 16 September 2026.
