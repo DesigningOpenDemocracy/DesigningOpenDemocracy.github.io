@@ -84,16 +84,17 @@ elections:
     quote: "A state general election is scheduled to be held on 28 November 2026 to elect members of the 61st Parliament of Victoria."
     url_checked: 2026-09-02
 
-  - date: 2026-10-01
+  - date: 2026-10-05
+    end_date: 2026-10-27
     country: AU
     jurisdiction: Tasmania
     level: local
     title: Tasmanian local elections
-    date_status: month
-    date_note: "An all-postal ballot the Tasmanian Electoral Commission runs across September and October 2026 rather than on one polling day; the calendar shows the month the election is held in."
+    date_status: fixed
+    date_note: "An all-postal ballot the Tasmanian Electoral Commission runs over these three weeks rather than on one polling day; counting begins 28 October."
     url: https://en.wikipedia.org/wiki/2026_Tasmanian_local_elections
-    quote: "The 2026 Tasmanian local elections will be held in October 2026 to elect the councils, mayors and deputy mayors of the 29 local government areas (LGAs) in Tasmania."
-    url_checked: 2026-09-02
+    quote: "5 October — Voting begins ... 27 October — Voting closes"
+    url_checked: 2026-09-16
 
   - date: 2027-03-13
     country: AU
