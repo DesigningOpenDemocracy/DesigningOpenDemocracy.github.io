@@ -29,14 +29,16 @@ events:
   notable_reason: Founding launch of the channel
 activity:
   dod:
-    checked: 2026-08-02
-    date: 2026-08-02
-    note: Confirmed active — YouTube channel live, recent episodes verified
+    date: 2026-09-16
+    note: YouTube channel confirmed still active in 2026 — a specific new video ('The
+      Challenge By White Australia To The Prohibited Hate Group Law') corroborated
+      via web search; direct channel-page fetch blocked by YouTube's script restrictions.
     url: https://www.youtube.com/@constitutionalclarion1901
+    checked: 2026-09-16
   sitemap:
     checked: 2026-09-11
     note: Sitemap found, no lastmod
-last_checked: '2026-08-02'
+last_checked: '2026-09-16'
 contributors:
 - BrianKhuu
 ---

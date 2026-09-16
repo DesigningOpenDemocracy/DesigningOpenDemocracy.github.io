@@ -48,12 +48,19 @@ events:
   notable_reason: Widely-replicated flagship civic-tech product
   type: launch
 activity:
+  dod:
+    date: 2026-09-16
+    note: Site live with news dated 22 Jul-9 Sep 2026 (Code for Japan Summit 2026
+      program, monthly Civic Tech Fun! Fun! reports); Google Form contact confirmed
+      current.
+    url: https://www.code4japan.org
+    checked: 2026-09-16
   sitemap:
     date: 2026-09-11
     note: Page last modified (from sitemap)
     url: https://www.code4japan.org/sitemap.xml
     checked: 2026-09-11
-last_checked: '2026-08-09'
+last_checked: '2026-09-16'
 ---
 
 Code for Japan is the Japanese node of the international Code for All network, bringing the civic-tech model — citizens using technology to solve local problems in partnership with government — to Japan. The organisation runs an open community on Slack and Notion where anyone can participate in projects spanning open data, disaster response technology, and digital government transformation.

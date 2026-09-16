@@ -46,10 +46,17 @@ events:
   notable_reason: Flagship platform launch
   type: launch
 activity:
+  dod:
+    date: 2026-09-16
+    note: 'Site live: featured articles on AI legislative early-warning system and
+      Josefina Correa columns; footer copyright 2009-2026; info@ciudadaniai.org contact
+      confirmed via /contacto page.'
+    url: https://www.ciudadaniai.org
+    checked: 2026-09-16
   rss:
     checked: 2026-09-11
     note: No feed found
-last_checked: '2026-08-09'
+last_checked: '2026-09-16'
 ---
 
 Fundación Ciudadano Inteligente (Ciudadanía Inteligente) develops digital tools and advocacy strategies to make democracy more participatory, transparent, and responsive across Latin America and the Caribbean. Founded in 2009, it was one of the earliest civic-tech organisations in the region and has influenced a generation of open-government and citizen-participation initiatives.

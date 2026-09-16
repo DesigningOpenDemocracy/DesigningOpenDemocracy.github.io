@@ -5,6 +5,12 @@ status: active
 country: EU
 website: https://diem25.org
 logo: /assets/org-logos/diem25.png
+contact:
+  email: press@diem25.org
+  source: https://diem25.org/press-room/
+  checked: 2026-09-16
+  note: Press/media contact listed on the Press Room page; no general info@ address
+    found on-site
 summary: A pan-European political movement founded by Yanis Varoufakis in 2016, calling
   for radical democratisation of EU institutions through transparency, a transnational
   constitutional assembly, and coordinated progressive politics across member states.
@@ -47,12 +53,12 @@ events:
   notable_reason: First transnational EU election campaign
 activity:
   dod:
-    checked: 2026-08-08
-    date: 2026-08-08
-    note: 'News page source fetched 8 Aug 2026; active publishing — latest: Yanis
-      Varoufakis on Brexit/Project Smear (3 Aug), ICE-ification of Europe (5 Aug),
-      MERA25 Berlin campaign launch for Sep 2026 elections'
-    url: https://diem25.org/news/
+    date: 2026-09-16
+    note: 'Site live with fresh Sep 2026 content: 2026 Coordinating Collective election
+      results (15 Sep), Axel Springer Award protest (16 Sep), Serbia commentary (14
+      Sep). Press-room page confirms press@diem25.org as active media contact.'
+    url: https://diem25.org
+    checked: 2026-09-16
   rss:
     date: 2026-09-11
     note: RSS feed active
@@ -64,7 +70,7 @@ activity:
     hint: bot_blocked
     note: Latest news page scraped
     url: https://diem25.org/news
-last_checked: '2026-08-08'
+last_checked: '2026-09-16'
 ---
 
 DiEM25 (Democracy in Europe Movement 2025) was founded by economist and former Greek Finance Minister Yanis Varoufakis in 2016, with the stated goal of democratising the European Union before it disintegrated — the "2025" being an original deadline, since passed. The movement has since evolved into a sustained transnational political organisation with chapters across Europe and affiliated national political parties: **MERA25** (MeRA25), operating in Germany, Greece, Italy, Sweden, and the Netherlands. Varoufakis continues to publish regularly on the site.

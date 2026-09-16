@@ -49,10 +49,16 @@ events:
   notable_reason: Latest edition of the recurring voter-information campaign
   type: launch
 activity:
+  dod:
+    date: 2026-09-16
+    note: 'Site live: legislative calendar populated through Sep-Oct 2026 with scheduled
+      commission meetings/votes; 339 laws enacted / 2,610 bills tracked stats current.'
+    url: https://congresovisible.uniandes.edu.co
+    checked: 2026-09-16
   rss:
     checked: 2026-09-11
     note: No feed found
-last_checked: '2026-08-09'
+last_checked: '2026-09-16'
 ---
 
 Congreso Visible is a legislative transparency project housed in the Department of Political Science at the Universidad de los Andes, tracking and publishing Colombian congressional activity since 1998. It is one of the longest-running parliamentary monitoring initiatives in Latin America and a model of university-hosted accountability infrastructure.
