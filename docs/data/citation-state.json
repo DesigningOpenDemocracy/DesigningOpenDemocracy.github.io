@@ -7609,11 +7609,12 @@
     "last_modified": "Sat, 29 Aug 2026 02:07:05 GMT"
   },
   "https://www.folio.org.au/event-4941291": {
-    "checked": "2026-08-26",
+    "checked": "2026-09-16",
     "document_sha256": "d5597fc74b49abbd5925d93ebcb56dd97d62762c50c3e579f3573558db0f46b8",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-09-16",
         "context": {
           "prefix": "rs that the trust bubble has burst, with the Edelman survey revealing sharp declines in trust across the board. We are extremely fortunate to have",
           "sha256": "1df16e4aa765339cade7c5c150a36c5238dd0bdf91958ca7d409a27b54e6858a",
@@ -7628,11 +7629,12 @@
     "last_modified": null
   },
   "https://www.folio.org.au/event-5773784": {
-    "checked": "2026-08-26",
+    "checked": "2026-09-16",
     "document_sha256": "7f84c2c4503dcba9e4bde2bf95d7e4623e0c1ae3e9beb89b7bf080306b4902d1",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-09-16",
         "context": {
           "prefix": "t Islander peoples. While the outcome is clear, what did the Voice Referendum reveal about our democratic institutions and culture?",
           "sha256": "5382a717ca1f49c3cfd26722588fe036be02e41d9083e4c1d69f69c792a7d8ca",
@@ -7641,6 +7643,26 @@
         },
         "id": "5382a717ca1f49c3cfd26722588fe036be02e41d9083e4c1d69f69c792a7d8ca",
         "quote": "This Folio Conversation with Mary Crooks and Lauren Crystal will help us unpack the Voice Referendum, drawing on their direct experience in community conversations across the country and personal reflections on the Yes and No campaigns, the referendum outcome, and democracy in Australia.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://www.folio.org.au/event-6840311": {
+    "checked": "2026-09-16",
+    "document_sha256": "577fa7981796512b0011be496181d475121b242ac41115cb8986d1bb33342af3",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-09-16",
+        "context": {
+          "prefix": "e room. Should we be celebrating democracy today \u2014 flaws and all \u2014 or reimagining it for tomorrow? Or both? To help us explore these questions,",
+          "sha256": "7878ac352a94997ec5c96c4d4bfff79593e1b83e78a62e62d1a40eb77fa7ebb7",
+          "suffix": ". What better way to celebrate International Day of Democracy than bringing citizens together across the world for an interactive dialogue about",
+          "text": "To help us explore these questions, we\u2019re joined by Lisa Witter and Josh Lerner, two leading democratic innovators whose work traverses continents and the democratic ecosystem, from communities to public servants and elected representatives."
+        },
+        "id": "76993a819c9cf307b3e16b41aa3d98aa71c1eae4f3307a120da4614a31e3ad2a",
+        "quote": "we\u2019re joined by Lisa Witter and Josh Lerner, two leading democratic innovators whose work traverses continents and the democratic ecosystem, from communities to public servants and elected representatives",
         "verified": true
       }
     ],
