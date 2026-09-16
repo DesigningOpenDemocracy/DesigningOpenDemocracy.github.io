@@ -361,6 +361,31 @@
     }
 }
 
+/* Client-side "event just ended" treatment — set by the inline script in
+   partials/next-event-banner.html once the viewer's own clock shows the
+   event is over. A finished event drops out of next_notable_event()'s
+   selection on the *next* build (hooks/calendar_export.py only ever
+   selects date >= today), but this exact static page can still be served
+   for a while before that build lands — greyed out here rather than
+   removed outright for its first week, since "DOD was just at this"
+   remains useful context; the same script removes the banner entirely
+   once it's a week past the event's end. */
+#next-event-banner.next-event-banner--past {
+    background: rgb(238, 238, 238);
+    border-color: rgba(0, 0, 0, 0.12);
+}
+#next-event-banner.next-event-banner--past #next-event-banner-eyebrow,
+#next-event-banner.next-event-banner--past #next-event-banner-cta {
+    color: #6b6b6b;
+}
+#next-event-banner.next-event-banner--past #next-event-banner-title {
+    color: #000000a0;
+}
+#next-event-banner.next-event-banner--past #next-event-banner-logo {
+    filter: grayscale(1);
+    opacity: 0.8;
+}
+
 #hero-container {
     min-height:100vh; 
     background-color: rgba(255, 255, 255, 0.90);
