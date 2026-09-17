@@ -65,10 +65,11 @@ activity:
       29 May, 2026  'Former Ethipia Prime Minister H.E. Hailemariam visits RGB'
     url: https://www.rgb.rw/updates/news
   dod:
-    checked: 2026-07-19
-    date: 2026-05-29
-    note: Website live with May 2026 news (RGB leadership meetings, governance commemorations).
+    date: 2026-09-15
+    note: Site live; news items dated through 26 Aug 2026 (Africa Mindset Reset panel,
+      SIGNIS World Congress, NGO legal framework statement).
     url: https://www.rgb.rw
+    checked: 2026-09-15
   rss:
     checked: 2026-09-11
     note: No feed found
@@ -77,7 +78,7 @@ activity:
     note: Latest news page scraped
     url: https://www.rgb.rw/updates/news
     checked: 2026-09-11
-last_checked: '2026-07-19'
+last_checked: '2026-09-15'
 ---
 
 > **Note on scope:** The RGB is a government body, not an independent civil society organisation. It is included here because it publishes substantive governance research — on decentralisation, citizen participation mechanisms, and Rwanda's distinctive governance innovations — rather than as a source of critical accountability. Rwanda's national political system under President Kagame does not meet DOD's accountability standard at the top level; elections are not genuinely competitive. The governance mechanisms documented by RGB are analytically interesting and separable from an overall assessment of the Rwandan political system.

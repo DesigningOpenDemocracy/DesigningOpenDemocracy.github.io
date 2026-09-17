@@ -49,16 +49,17 @@ events:
   type: publication
 activity:
   dod:
-    checked: 2026-08-02
-    date: 2026-07-30
-    note: Confirmed active via official site and podcast platforms during landscape
-      research
+    date: 2026-09-16
+    note: Site live with posts dated 11-16 Sep 2026 (ABC executive cuts, Swans saga);
+      podcast/YouTube/RSS all active.
+    url: https://www.lamestream.com.au/
+    checked: 2026-09-16
   sitemap:
     date: 2026-09-11
     note: Page last modified (from sitemap)
     url: https://www.lamestream.com.au/sitemap.xml
     checked: 2026-09-11
-last_checked: '2026-08-02'
+last_checked: '2026-09-16'
 contributors:
 - BrianKhuu
 ---

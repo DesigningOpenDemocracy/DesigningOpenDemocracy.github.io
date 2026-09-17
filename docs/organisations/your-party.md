@@ -52,10 +52,12 @@ events:
   type: conference
 activity:
   dod:
-    checked: 2026-07-19
-    date: 2026-07-16
-    note: Website live; article:modified_time 2026-07-16, active UK political party.
+    date: 2026-09-16
+    note: 'Site live at yourparty.uk: describes CEC elections scheduled Feb 2026,
+      active fundraising/join CTAs, address The Atrium, Fonthill Road London; social
+      channels active under @thisisyourparty.'
     url: https://www.yourparty.uk
+    checked: 2026-09-16
   social:
     date: 2026-06-05
     note: 'Latest tweet: police accountability post'
@@ -65,7 +67,7 @@ activity:
     date: 2026-06-07
     note: RSS feed active
     url: https://www.yourparty.uk/feed
-last_checked: '2026-07-19'
+last_checked: '2026-09-16'
 ---
 
 Your Party is a UK political party ([Wikipedia](https://en.wikipedia.org/wiki/Your_Party_(UK))) registered with the Electoral Commission in September 2025. It was announced by Jeremy Corbyn and Zarah Sultana following their departures from Labour, reaching 55,000 members by December 2025.

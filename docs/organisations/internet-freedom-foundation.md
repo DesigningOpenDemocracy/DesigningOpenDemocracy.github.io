@@ -43,19 +43,16 @@ events:
   notable_reason: Landmark legal/court win
 activity:
   dod:
-    checked: 2026-07-16
-    date: 2026-03-30
-    note: Site returned 403 to direct fetch (bot protection); web-search fallback
-      found IFF's Second Strategic Plan (2026-2028) and active March 2026 IT Rules
-      Amendment advocacy, plus reported July 2026 Supreme Court AI Committee submission
-      and Delhi HC litigation
-    url: https://x.com/internetfreedom/status/2038604152318644237
+    date: 2026-09-14
+    note: Site live, confirmed active
+    url: https://internetfreedom.in
+    checked: 2026-09-14
   rss:
     date: 2026-09-11
     note: RSS feed active
     url: https://internetfreedom.in/rss
     checked: 2026-09-11
-last_checked: '2026-07-16'
+last_checked: '2026-09-14'
 ---
 
 > **Note on scope:** IFF's work sits at the edge of DOD's landscape. Its focus is on defending the digital conditions for democratic participation — internet access, freedom from surveillance — rather than designing governance mechanisms directly. It is included because those conditions are a direct prerequisite for how citizens engage with governance in an increasingly digital public sphere.

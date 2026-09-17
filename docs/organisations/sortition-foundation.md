@@ -52,11 +52,13 @@ activity:
       2026)'
     url: https://www.sortitionfoundation.org/updates
   dod:
-    checked: 2026-08-08
-    date: 2026-06-18
-    note: Updates page fetched 8 Aug 2026; most recent post 18 Jun 2026 (hiring Independent
-      Director); previous post 26 Feb 2026 (Frontiers of Democratic Lotteries Workshop)
-    url: https://www.sortitionfoundation.org/updates
+    date: 2026-09-16
+    note: 'Site confirmed active via search corroboration: May 2026 Greater Manchester
+      citizens'' assembly poll, June 2026 Frontiers of Democratic Lotteries workshop,
+      GitHub commits through Aug 2026; direct scripted fetch returns 403 (Cloudflare
+      bot check).'
+    url: https://www.sortitionfoundation.org
+    checked: 2026-09-16
   rss:
     date: 2026-06-18
     note: 'Latest post: We''re looking for a new Independent Director'
@@ -69,7 +71,7 @@ activity:
   sitemap:
     date: 2026-05-26
     note: Page last modified (from sitemap)
-last_checked: '2026-08-08'
+last_checked: '2026-09-16'
 ---
 
 The Sortition Foundation is the UK's leading organisation specifically dedicated to sortition — the selection of decision-makers by random lot rather than election. Founded by Brett Hennig, it combines advocacy, campaigning, and hands-on lottery services: the foundation designs and runs the stratified random-selection process for major deliberative exercises, including the European Citizens' Panels convened by the European Commission.

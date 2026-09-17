@@ -6,8 +6,10 @@ country: NZ
 website: https://www.mcguinnessinstitute.org
 logo: /assets/org-logos/mcguinness-institute.png
 contact:
-  checked: 2026-08-09
+  checked: 2026-09-17
+  email: enquiries@mcguinnessinstitute.org
   form: https://www.mcguinnessinstitute.org/contact
+  phone: +64 4 499 8888
   source: https://www.mcguinnessinstitute.org
 summary: A non-partisan New Zealand think tank applying foresight methods to long-term
   governance challenges — runs Project CivicsNZ (civic education, political agreements,
@@ -44,15 +46,32 @@ events:
   quote: Our 2012 name change was for several reasons.
   proof_level: high
   url_checked: '2026-08-17'
+- date: '2026-09-30'
+  title: 'Discussion paper launch: "After the Election" — conversation with Wendy
+    McGuinness on the architecture of the 55th Government of New Zealand'
+  url: https://www.mcguinnessinstitute.org/events/upcoming-events/
+  quote: 'which invites readers to consider a simple but important question: if you
+    were Prime Minister and tasked with designing New Zealand’s machinery of government,
+    what would it look like? Wendy will share her thoughts at the Institute’s Wellington
+    office. Wednesday 30 September 12pm–1:30pm (starts at 12:15pm)'
+  proof_level: high
+  url_checked: '2026-09-17'
+  notable: false
+  type: launch
+  location: Wellington, New Zealand
 activity:
   dod:
-    checked: 2026-08-09
-    date: 2026-08-09
-    note: Site live and actively publishing as of August 2026
+    checked: 2026-09-17
+    date: 2026-09-17
+    note: Homepage confirms org still active with events through September 2026, including
+      public launch of the 'On the Fence' voter-advice tool with Massey University;
+      foresight/CivicsNZ mission matches. Contact audit found a public email and phone
+      not previously recorded, added to contact:.
+    url: https://www.mcguinnessinstitute.org
   rss:
-    note: No feed found
     checked: 2026-09-11
-last_checked: '2026-08-09'
+    note: No feed found
+last_checked: '2026-09-17'
 ---
 
 The McGuinness Institute is a non-partisan think tank that applies "hindsight, insight, and foresight" to New Zealand's long-term governance challenges. Its distinctive contribution to the democracy landscape is a focus on institutional design and strategic foresight — not the mechanics of elections or the practice of deliberation, but the architecture of the governance systems themselves: how government departments set strategy, how political agreements are structured, how royal commissions and public inquiries function, and how civic education prepares citizens for democratic participation.

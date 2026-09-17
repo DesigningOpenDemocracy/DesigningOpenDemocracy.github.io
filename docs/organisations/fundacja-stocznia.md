@@ -53,13 +53,20 @@ events:
   notable_reason: First national citizens' panel of its kind in Poland
   type: deliberation
 activity:
+  dod:
+    date: 2026-09-17
+    note: Homepage confirms org still active (105 incubated social innovations, 2026/2027
+      course enrolment); citizen-participation/social-innovation/research mission
+      matches. Recorded contact (email + form) still current.
+    url: https://stocznia.org.pl
+    checked: 2026-09-17
   rss:
     checked: 2026-09-11
     date: 2026-06-25
     note: 'Latest post: Wspólne oświadczenie polskich i ukraińskich organizacji, działaczy
       i działaczek '
     url: https://stocznia.org.pl/2026/06/25/wspolne-oswiadczenie-polskich-i-ukrainskich-organizacji-dzialaczy-i-dzialaczek-spolecznych/
-last_checked: '2026-08-09'
+last_checked: '2026-09-17'
 ---
 
 Fundacja Stocznia operates across three pillars: citizen participation, social innovation, and research — treating them as interdependent rather than separate workstreams. The participation pillar advocates for and builds the infrastructure of public deliberation: it ran Poland's first citizens' assembly (the "Narada obywatelska o kosztach energii," a citizens' deliberation on energy costs) and hosts the annual Forum Praktyków Partycypacji (Participation Practitioners' Forum), whose 13th edition in June 2026 drew over 300 participants across 40 sessions.

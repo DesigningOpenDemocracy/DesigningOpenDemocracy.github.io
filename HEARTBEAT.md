@@ -134,6 +134,15 @@ Pick the oldest 10–15 pages. For each:
 - Visit the org's website; confirm it loads and the org is still active
 - Check the summary and status are still accurate
 - Fix anything stale (summary, concepts, location, status)
+- Check for upcoming events not yet in `events:` — most orgs' own site (a
+  news/events page, a homepage banner) is the first place a future event
+  surfaces, often before an `ics_feed:` sync would pick it up. If you find
+  one, add it to `events:` with a `url:`/`source:` and a `note:`/`quote:`
+  per CLAUDE.md's `events:` sourcing convention — this is what actually
+  populates the site-wide calendar (`docs/calendar.md`), not a separate
+  step; see CLAUDE.md's Calendar section for how `hooks/calendar_export.py`
+  merges it in at build time. Run `python util/check_event_sourcing.py
+  --calculate` afterward so new entries get a `proof_level`.
 - Record the check: `python util/record_dod.py <slug> --note "..." [--url ...] [--date ...]`
   (this writes `activity.dod` and stamps `last_checked` in one step; use `--date` when
   you found evidence dated earlier than today, e.g. a publication date)
@@ -149,6 +158,18 @@ on pages that aren't in `CONTACT_PATHS`, and sites behind Cloudflare JS challeng
 that block bot access. A quick human spot-check catches these. When you find one,
 add a `contact:` block with the source URL and today's date. If the contact point
 is non-obvious (popup button, footer, mirror site), add a `note:` field.
+
+**Sync `ics_feed:` events, every run:** run `python util/sync_events.py`
+(active orgs only — the default) before or alongside the staleness-queue
+pass. It's a separate, cheap mechanism from the events-check above — it
+fetches each org's own iCal feed rather than relying on a human/AI noticing
+an event on the site — and it's currently the one piece of the calendar
+pipeline with no automated owner: it isn't in the weekly
+`heartbeat-probes.yml` cron, so if this step skips it, an org's `ics_feed:`
+cache (`docs/data/events/<slug>.json`) only gets refreshed when someone
+happens to run it by hand. Cheap because only orgs with `ics_feed:` set are
+touched (one, as of 2026-09) — this scales with adoption, not with the
+size of the staleness queue.
 
 ### 3. Surface tag gaps
 
@@ -187,6 +208,39 @@ updates. Search for recent news (past 30–180 days depending on run cadence) on
 - Major academic or policy publications directly relevant to the landscape
 - Broader geopolitical shifts with structural governance implications, even
   outside that list, if you can source them properly
+
+**Sources to check, not just generic search terms.** A run that only fires
+generic phrase searches ("citizens' assembly announced 2026", "democratic
+backsliding news") mostly surfaces evergreen explainer content and stale
+roundups rather than this week's actual news — confirmed on 2026-09-13,
+where three differently-worded generic searches found nothing usable before
+a fourth turned up Guinea-Bissau's constitutional referendum, which had
+already been resolved for two weeks by the time it was caught. Check these
+directly before falling back to open-ended search, since a tracker's own
+latest-items page beats guessing phrasing:
+- [ConstitutionNet — Constitutions in the News](https://constitutionnet.org/news)
+- [V-Dem Institute news](https://www.v-dem.net/news/)
+- [International IDEA news](https://www.idea.int/news)
+- A general wire/regional scan (Reuters, AP, AllAfrica, RFI) for the
+  specific topics listed above, rather than the topics alone
+Add to this list as new good sources are found; the point is a stable set
+of places to check every run, not a closed or exhaustive one.
+
+**Recency and language are real blind spots, not just a search-phrasing
+problem.** WebSearch here is US-backed and English-only by default, so a
+story only covered in the country's own language can sit undiscovered even
+after a source that clears the notability bar is already in hand — the
+2026-09-13 Guinea-Bissau item never surfaced the referendum's own
+Portuguese-language local coverage even though it was sitting in the
+citing Wikipedia article's own reference list. When a story's home country
+doesn't primarily publish in English, spend one extra search specifically
+in that language (or ask a fetched wire piece what its non-English sources
+say) before treating an English-language wire pickup as the full picture.
+On recency: prefer a tracker's own "latest" listing over a broad date-range
+search term, and check a candidate item's actual publish date before
+treating it as fresh — a several-week-old story is still worth including if
+it clears the notability bar, but say how old it is rather than writing it
+up as if it just happened.
 
 **Threshold for inclusion:** something is worth commenting on only if it is
 genuinely notable from a governance-design perspective AND you can link a

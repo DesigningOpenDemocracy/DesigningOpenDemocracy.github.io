@@ -52,18 +52,16 @@ activity:
     note: website loaded. Unsure if active... non of the social media links loaded.
       No news or blog.
   dod:
-    checked: 2026-07-16
-    date: 2026-07-16
-    note: China Journal of Democracy issue archive loaded directly; current 2026 Q3
-      issue listed (quarterly journal up to date), confirming ongoing publication
-      activity
-    url: https://chinademocrats.org/?cat=8
+    date: 2026-09-14
+    note: Site live, confirmed active
+    url: https://chinademocrats.org/en
+    checked: 2026-09-14
   rss:
     date: 2026-09-09
     note: 'Latest post: 王天成 | 异议人士有门必修课：《革命蓝图》中文版序'
     url: https://chinademocrats.org/?p=7010
     checked: 2026-09-11
-last_checked: '2026-07-16'
+last_checked: '2026-09-14'
 ---
 
 > **Note:** ICDT operates in diaspora — its focus is China, but its researchers work from outside mainland China where this kind of work cannot be done freely. It is included here because its work is specifically about governance system design, not human rights documentation.

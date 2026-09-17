@@ -71,18 +71,31 @@ events:
   proof_level: medium
   url_checked: '2026-08-10'
   proof_warning: true
+- date: 2026-09-24
+  title: Should we celebrate democracy today — or reimagine it for tomorrow?
+  url: https://www.folio.org.au/event-6840311
+  quote: we’re joined by Lisa Witter and Josh Lerner, two leading democratic innovators
+    whose work traverses continents and the democratic ecosystem, from communities
+    to public servants and elected representatives
+  proof_level: high
+  url_checked: '2026-09-16'
+  time: '21:00'
+  end_time: '22:00'
+  notable: medium
+  notable_reason: Global dialogue marking International Day of Democracy
+  location: Virtual
 activity:
   manual:
     checked: 2026-08-09
     date: 2026-08-09
     note: 'Confirmed active via own website: past events list runs to 29 Jul 2026'
   dod:
+    checked: 2026-08-12
     date: 2025-12-03
     note: Site unreachable (connection error) as of 2026-08-12. Wayback Machine shows
       last capture Nov 2025 with events scheduled through Dec 2025. May be temporarily
       down or dormant.
     url: https://web.archive.org/web/20251130042451/https://www.folio.org.au/
-    checked: 2026-08-12
 last_checked: '2026-08-12'
 ---
 

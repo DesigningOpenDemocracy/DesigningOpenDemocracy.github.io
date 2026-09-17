@@ -55,17 +55,17 @@ activity:
       . So uncertain on newvote status
     url: https://x.com/newvote/status/1261440493004615681
   dod:
-    checked: 2026-07-19
-    date: 2026-07-19
-    note: Website live, confirmed active civic-tech institute. Content largely references
-      2018-2019 activity (UQ Student Voice pilot); no evidence of shutdown.
+    date: 2026-09-15
+    note: Site live; content dated to 2019 but no evidence of shutdown, consistent
+      with prior checks.
     url: https://newvote.org
+    checked: 2026-09-15
   rss:
     checked: 2026-09-11
     date: 2019-11-11
     note: 'Latest post: How''s SpeakUp @ the University of Queensland going?'
     url: https://newvote.org/blog/2019/11/10/hows-speakup-the-university-of-queensland-going
-last_checked: '2026-07-19'
+last_checked: '2026-09-15'
 ---
 
 NewVote is built on a simple philosophy: the world is better when everyone is empowered. The institute uses technology to operate across three democratic modes simultaneously:

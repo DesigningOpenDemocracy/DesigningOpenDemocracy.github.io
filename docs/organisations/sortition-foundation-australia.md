@@ -58,12 +58,12 @@ activity:
       26 February, 2026 'Frontiers of Democratic Lotteries Workshop'
     url: https://www.sortitionfoundation.org/updates
   dod:
-    checked: 2026-07-19
-    date: 2026-07-19
-    note: Parent org (Sortition Foundation) confirmed active; Australia chapter page
-      returns 403 to automated fetch (Cloudflare bot-block) but is indexed and referenced
-      live; monthly Zoom meetings ongoing per site copy.
+    date: 2026-09-15
+    note: Site blocks scripted fetch (403); web search confirms Sortition Foundation
+      Australia chapter (Melbourne) continues running assembly lottery selection services,
+      consistent with existing summary.
     url: https://www.sortitionfoundation.org/become_a_member_australia
+    checked: 2026-09-15
   rss:
     date: 2026-06-18
     note: 'Latest post: We''re looking for a new Independent Director'
@@ -76,7 +76,7 @@ activity:
   sitemap:
     date: 2026-05-26
     note: Page last modified (from sitemap)
-last_checked: '2026-07-19'
+last_checked: '2026-09-15'
 ---
 
 The Sortition Foundation is a UK-based organisation that campaigns for the use of stratified random selection (sortition) in government, primarily through citizens' assemblies. The Australian chapter operates within that global structure and is established by **Dr Sonia Randhawa**, based in Preston, Victoria, who works as a Project Manager at the Foundation.

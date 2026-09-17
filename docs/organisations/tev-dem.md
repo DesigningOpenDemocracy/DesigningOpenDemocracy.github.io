@@ -51,14 +51,13 @@ activity:
       ku bibe roja vekirina dergihê azadiya gelên Sûriyayê û aramiya wan.'
     url: https://tev-dem.com/
   dod:
-    checked: 2026-07-19
-    date: 2026-02-21
-    note: 'Website (tev-dem.com) live, publishing through Feb 2026. Updated context
-      note: Jan 2026 Damascus offensive against SDF-held territory + Jan 30 2026 ceasefire/integration
-      agreement is phasing AANES civil institutions into Syrian state structures —
-      governance model description may not fully reflect current on-the-ground reality.'
-    url: https://tev-dem.com/
-last_checked: '2026-07-19'
+    date: 2026-09-15
+    note: Web search confirms TEV-DEM website remains active and the organisation
+      continues coordinating Rojava's communal-council structure amid 2026 conflict
+      pressure; co-chairs named as Zalal Jagar and Kharib Heso.
+    url: https://en.wikipedia.org/wiki/Movement_for_a_Democratic_Society
+    checked: 2026-09-15
+last_checked: '2026-09-15'
 ---
 
 > **Note on context:** AANES is not internationally recognised as a state. Following a January 2026 Syrian government offensive against SDF-held territory and a January 30, 2026 ceasefire/integration agreement with Damascus, AANES's autonomous civil institutions are being phased into national state structures, with Kurdish political autonomy narrowed from territorial control toward local administrative and cultural guarantees. TEV-DEM's website remains active as of February 2026, and the commune-council structure described below reflects the model as documented prior to integration — it may not fully describe current on-the-ground governance. TEV-DEM is the civilian governance arm — distinct from the military structures (YPG/YPJ/SDF). It is included here because the governance design it implements is one of the most extensively documented non-statist democratic experiments in the region.

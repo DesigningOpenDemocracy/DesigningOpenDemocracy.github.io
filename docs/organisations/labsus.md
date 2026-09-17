@@ -53,13 +53,20 @@ events:
   notable_reason: Flagship annual festival, second edition
   type: conference
 activity:
+  dod:
+    date: 2026-09-17
+    note: Homepage confirms org still active (2026/2027 course enrolment open, second
+      Festival dell'Amministrazione Condivisa already recorded); shared-administration/subsidiarity
+      mission matches. Recorded contact (form only) still current.
+    url: https://www.labsus.org
+    checked: 2026-09-17
   rss:
     date: 2026-09-08
     note: 'Latest post: Quando le parole si fanno cura: collaborazioni inaspettate
       per la nuova vita di '
     url: https://www.labsus.org/2026/09/quando-le-parole-si-fanno-cura-collaborazioni-inaspettate-per-la-nuova-vita-di-una-baita-trentina/
     checked: 2026-09-11
-last_checked: '2026-08-09'
+last_checked: '2026-09-17'
 ---
 
 Labsus — the Laboratory for Subsidiarity — has spent two decades developing and advocating for "amministrazione condivisa" (shared administration), a framework in which citizens and local government enter formal collaboration pacts to co-manage common goods: parks, cultural spaces, social services, confiscated mafia properties, and other shared resources. The model is grounded in the Italian constitution's principle of subsidiarity and has been adopted by hundreds of municipalities, producing what Labsus calls a parallel governance layer — not replacing representative institutions but supplementing them with structured citizen co-management.

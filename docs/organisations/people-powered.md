@@ -6,9 +6,11 @@ country: US
 website: https://www.peoplepowered.org
 logo: /assets/org-logos/people-powered.webp
 contact:
-  checked: 2026-08-09
+  checked: '2026-09-16'
+  email: info@peoplepowered.org
+  phone: (201) 431-5646
   form: https://www.peoplepowered.org/connect
-  source: https://www.peoplepowered.org
+  source: https://www.peoplepowered.org/about
 summary: A global hub for participatory democracy — connecting government practitioners,
   researchers, and advocates through mentorship, training, accelerator programmes,
   and a resource centre. Serves as a membership organisation for the participatory
@@ -23,7 +25,30 @@ location:
   longitude: -73.9442
   name: Brooklyn, New York, USA
   precision: city
+related_orgs:
+- participatory-budgeting-project
 events:
+- date: '2019-01-01'
+  title: Launches as the Global Participatory Budgeting Hub, a fiscally sponsored
+    initiative of the Participatory Budgeting Project
+  url: https://www.peoplepowered.org/about
+  quote: We began to grow the organization in 2019, launching a Global Participatory
+    Budgeting Hub as a fiscally sponsored initiative of the Participatory Budgeting
+    Project, a nonprofit organization in the United States.
+  proof_level: high
+  url_checked: '2026-09-16'
+  notable: true
+  notable_reason: Founding of the organisation
+- date: '2020-01-01'
+  title: Reorganises into an independent global organisation after a member planning
+    process spanning 28 countries
+  url: https://www.peoplepowered.org/about
+  quote: In 2020, 58 participatory democracy leaders from 28 countries engaged in
+    a planning process to build out the Global PB Hub into a new and broader organization.
+  proof_level: high
+  url_checked: '2026-09-16'
+  notable: medium
+  notable_reason: Reorganised as an independent global organisation
 - date: '2026-09-21'
   title: International Observatory on Participatory Democracy Conference (OIDP 2026)
     — 25th annual, 'Hope and renewal in the face of a global crisis of democracy,'
@@ -93,6 +118,10 @@ Programmes include the Climate Democracy Accelerator, the Mainstreaming Particip
 
 People Powered's role in the landscape is meta-level: it is the connective infrastructure for the field rather than a frontline practitioner. Its membership model (organisations join, access resources, and shape strategy collectively) makes it structurally similar to FIDE or Democracy R&D but with a broader scope — covering the full range of participatory mechanisms rather than focusing on citizens' assemblies specifically.
 
+## Key people
+
+Folio Collective, introducing Josh Lerner as a Conversation Leader for its September 2026 event, describes him as "the founder of People Powered, the global hub for participatory democracy," who "previously founded and directed the Participatory Budgeting Project, a not-for-profit organisation that empowers people to decide together how to spend public money."[^folio-event] That earlier organisation is indeed the one whose fiscal sponsorship launched what became People Powered in 2019.[^about] Lerner is the author of *[Making Democracy Fun: How Game Design Can Empower Citizens and Transform Politics](https://mitpress.mit.edu/9780262551144/making-democracy-fun/)* (MIT Press) and *[Everyone Counts: Could Participatory Budgeting Change Democracy?](https://cornellpress.cornell.edu/book/9780801456657/everyone-counts/)* (Cornell University Press), and stepped down as Co-Executive Director of People Powered in 2026 to write his next book on the future of democracy.[^folio-event]
+
 ## Links
 
 - Website: [peoplepowered.org](https://www.peoplepowered.org)
@@ -102,5 +131,10 @@ People Powered's role in the landscape is meta-level: it is the connective infra
 - [Participatory Budgeting](../concepts/participatory-budgeting.md)
 - [Citizens' Assembly](../concepts/citizens-assembly.md)
 - [Deliberative Democracy](../concepts/deliberative-democracy.md)
+- [Participatory Budgeting Project](participatory-budgeting-project.md)
 - [FIDE](fide.md)
 - [Digidem Lab](digidem-lab.md)
+
+[^about]: "We began to grow the organization in 2019, launching a Global Participatory Budgeting Hub as a fiscally sponsored initiative of the Participatory Budgeting Project, a nonprofit organization in the United States." [About Us](https://www.peoplepowered.org/about), People Powered, accessed 16 September 2026.
+
+[^folio-event]: "Josh is the founder of People Powered, the global hub for participatory democracy. He has 20 years of experience developing, researching, and supporting innovative democracy programs around the world. He previously founded and directed the Participatory Budgeting Project, a not-for-profit organisation that empowers people to decide together how to spend public money." Folio Collective's introduction to ["Should we celebrate democracy today — or reimagine it for tomorrow?"](https://www.folio.org.au/event-6840311), accessed 16 September 2026.

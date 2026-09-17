@@ -101,6 +101,7 @@ Four hooks:
 """
 
 import hashlib
+from html import escape as _html_escape
 import os
 import sys
 
@@ -121,7 +122,7 @@ ARCHIVE_LINK_TEMPLATE = (
 
 ORIGINAL_DEAD_TEMPLATE = (
     ' <span class="org-event-source-cited">(original, no longer live: '
-    '<a href="{url}" target="_blank" rel="noopener">{url}</a>)</span>'
+    '<a href="{url}" target="_blank" rel="noopener">{text}</a>)</span>'
 )
 
 CITATION_ONLY_BADGE = (
@@ -364,13 +365,18 @@ def on_page_content(html, page, config, files):
                     # the original is demoted to plain, clearly-labeled
                     # text rather than a second live link, since it's
                     # known not to resolve (or to resolve to junk).
-                    trailer = ORIGINAL_DEAD_TEMPLATE.format(url=href)
+                    trailer = ORIGINAL_DEAD_TEMPLATE.format(
+                        url=_html_escape(href, quote=True),
+                        text=_html_escape(href)
+                    )
                     block = block[:insert_at] + trailer + block[insert_at:]
                     a_start = insert_at + len(trailer)
                 elif archive_url:
                     # Original still primary; archive is a pure additive
                     # Robust-Links-style fallback next to it.
-                    archive_link = ARCHIVE_LINK_TEMPLATE.format(url=archive_url)
+                    archive_link = ARCHIVE_LINK_TEMPLATE.format(
+                        url=_html_escape(archive_url, quote=True)
+                    )
                     block = block[:insert_at] + archive_link + block[insert_at:]
                     a_start = insert_at + len(archive_link)
                 else:

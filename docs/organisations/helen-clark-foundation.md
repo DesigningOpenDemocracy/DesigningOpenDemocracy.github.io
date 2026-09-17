@@ -52,11 +52,30 @@ events:
   notable: true
   notable_reason: Flagship publication ahead of a general election
   type: publication
+- date: '2026-09-29'
+  title: 'Playing the Long Game: public webinar with Simon Bridges on durable policy-making'
+  url: https://helenclark.foundation/events/playing-the-long-game-simon-bridges
+  quote: 'Playing the Long Game is a new webinar series from the Helen Clark Foundation
+    bringing together some of New Zealand''s most experienced political, economic,
+    and public-sector leaders to ask: how do we build policy that lasts? 29 September
+    2026 at 12:00'
+  proof_level: high
+  url_checked: '2026-09-17'
+  notable: false
+  type: other
 activity:
+  dod:
+    checked: 2026-09-17
+    date: 2026-09-17
+    note: Homepage confirms org still active with Aug-Sep 2026 research output; public-policy/governance/democracy
+      research-stream mission confirmed current via web search (Jonathan Boston-led
+      stream still named 'public policy, governance and the future of democracy').
+      Recorded contact still current.
+    url: https://helenclark.foundation
   sitemap:
     checked: 2026-09-11
     note: Sitemap found, no lastmod
-last_checked: '2026-08-09'
+last_checked: '2026-09-17'
 ---
 
 The Helen Clark Foundation is an independent public policy think tank based at Auckland University of Technology (AUT). Its research spans four streams: public policy, governance and the future of democracy; sustainability and climate change; inclusive economic development; and a fourth focusing on social wellbeing. The governance and democracy stream positions the Foundation as New Zealand's most prominent institutional voice on democratic reform — distinct from the transparency-and-integrity focus of TINZ and the youth-voting-rights focus of Make It 16.

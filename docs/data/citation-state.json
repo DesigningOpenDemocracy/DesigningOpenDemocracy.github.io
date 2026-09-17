@@ -138,6 +138,32 @@
     ],
     "last_modified": null
   },
+  "https://apolitical.co/": {
+    "checked": "2026-09-16",
+    "document_sha256": "aa1cc8091617088cca4dad6db9a6df5511ba8c761552826b39d131ba96141b53",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-09-16",
+        "id": "8a6a2d3878c1feb99256ff3218f15de9cb9546d725b09554fdd43edf498e14fc",
+        "quote": "From purpose-built tools that fix real government pain points to a global community of 500,000+ public servants sharing what works \u2014 Apolitical combines cutting-edge AI with deep public sector expertise to drive measurable impact,",
+        "verified": false
+      },
+      {
+        "checked": "2026-09-16",
+        "context": {
+          "prefix": "te at their own pace. Book a demo AI-powered tools, community and insight for the public sector",
+          "sha256": "07b22230a53882767b6814fdd34b452894b6ceb4ecae639d9c725e3cf003e67c",
+          "suffix": "Join the Apolitical network Making governments around the world smarter globe-icon 500k+ member",
+          "text": "From purpose-built tools that fix real government pain points to a global community of 500,000+ public servants sharing what works \u2014 Apolitical combines cutting-edge AI with deep public sector expertise to drive measurable impact."
+        },
+        "id": "07b22230a53882767b6814fdd34b452894b6ceb4ecae639d9c725e3cf003e67c",
+        "quote": "From purpose-built tools that fix real government pain points to a global community of 500,000+ public servants sharing what works \u2014 Apolitical combines cutting-edge AI with deep public sector expertise to drive measurable impact.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
   "https://astanatimes.com/2026/07/kazakhstans-new-constitution-takes-effect-heres-what-changes/": {
     "checked": "2026-08-26",
     "document_sha256": "396828a4d7e11857942bfed3f617e3d3df6488ec76deec0484975c0560f158d3",
@@ -933,6 +959,26 @@
     ],
     "last_modified": null
   },
+  "https://constitutionnet.org/news/referendum-guinea-bissau-approves-new-constitution-expanding-presidential-powers": {
+    "checked": "2026-09-16",
+    "document_sha256": "8a06f8be23141c6e40097936b79ef295a85e3c2b03b1be842064c0aff95be8df",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-09-16",
+        "context": {
+          "prefix": "Voters in Guinea-Bissau have approved a new constitution that significantly expands presidential powers ahead of a general election later this year.",
+          "sha256": "9da96923ed795f2465febde9a8ef5dd3e03d64ae3e9377fee5394f4bd482aa80",
+          "suffix": "Voters have agreed to sweeping reforms allowing the president to appoint and dismiss the \u200bprime minister and cabinet, create or abolish ministries an",
+          "text": "Voters in Guinea-Bissau have approved a new constitution that significantly expands presidential powers ahead of a general election later this year. The referendum was organised by the military government that seized power in the West African nation last November following a disputed election. Voters have agreed to sweeping reforms allowing the president to appoint and dismiss the \u200bprime minister and cabinet, create or abolish ministries and dissolve parliament in \u2060the event of a grave political crisis. [... ] The new constitution strengthens the presidency at the expense of the prime minister, altering the balance of power under Guinea-Bissau's semi-presidential system. Previously, Guinea-Bissau's legislature appointed a prime minister from the parliamentary majority, who then formed a cabinet - an arrangement the ruling military authorities said had contributed to political instability. The changes now give the president greater authority over the government."
+        },
+        "id": "0f997250741cc403881cc40ea5ae3ca6a5651ee9938e3aa9372075f822e782e7",
+        "quote": "The referendum was organised by the military government that seized power in the West African nation last November following a disputed election.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
   "https://constitutionnet.org/news/voices/new-constitution-kazakhstan-parliamentary-reform-facade-presidential-monopoly": {
     "checked": "2026-08-26",
     "document_sha256": "c8db2f24a938ac20f6c330945983f99bb4ed043af3ec529b06aca9e27265a5b8",
@@ -1580,6 +1626,40 @@
         },
         "id": "aef147cb8f6b500792db55dfdbfc09b883847c573dbe8e86218a35ac43ae6424",
         "quote": "General elections will be held in Brazil on 4 October 2026 to elect the president, vice president, members of the National Congress, the governors, vice governors and legislative assemblies of all federative units, and the district council of Fernando de Noronha.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://en.wikipedia.org/wiki/2026_Guinea-Bissau_constitutional_referendum": {
+    "checked": "2026-09-16",
+    "document_sha256": "b237bf0c4fd39b591f2494a6666d20c8c423ba5ae1c4aa7e094d86c18c213efe",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-09-16",
+        "id": "8adb4a0fe69e3da09e74a2554c4bd0746773ec106ebf0042126edbac578c7bd2",
+        "quote": "A constitutional referendum on expanding presidential powers was held on 30 August 2026 by the ruling military junta. The proposal was accepted with a majority of 70%.",
+        "verified": false
+      }
+    ],
+    "last_modified": null
+  },
+  "https://en.wikipedia.org/wiki/2026_Guinea-Bissau_general_election": {
+    "checked": "2026-09-16",
+    "document_sha256": "f53c9766d9b54d7e595a9c5ecd730786add42235b9a9ae86004b16717d526f3b",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-09-16",
+        "context": {
+          "prefix": "eader of a junta calling itself the High Military Command for the Restoration of Order that would run the country for a one-year transitional period.",
+          "sha256": "00bcf35aee757ecb020d3095739fed50eefaca740e5c617d5ecd9dc61c6a9443",
+          "suffix": "On 21 January 2026, the junta issued a decree authorising elections for the legislature and the presidency to be held on 6 December 2026, after it de",
+          "text": "== Background == General elections were held in Guinea-Bissau on 23 November 2025 to elect the president and members of the National People's Assembly. A few days later, the Revolutionary Armed Forces of the People staged a coup d'\u00e9tat that overthrew president Umaro Sissoco Embal\u00f3, suspended the electoral protest and installed General Horta Inta-A Na Man as leader of a junta calling itself the High Military Command for the Restoration of Order that would run the country for a one-year transitional period. The junta released a transitional charter in December 2025 that banned Horta from running for election. On 21 January 2026, the junta issued a decree authorising elections for the legislature and the presidency to be held on 6 December 2026, after it deemed that \"all the conditions for organising free, fair and transparent elections have been met\"."
+        },
+        "id": "68ed0d1611f5592ab2e4c07ac2f9c206991b47bff46ec8ed53c61ce8ffa47f60",
+        "quote": "The junta released a transitional charter in December 2025 that banned Horta from running for election.",
         "verified": true
       }
     ],
@@ -2448,6 +2528,26 @@
     ],
     "last_modified": null
   },
+  "https://en.wikipedia.org/wiki/Elections_in_Sweden": {
+    "checked": "2026-09-16",
+    "document_sha256": "c78282cbbedd6b9122d0248be5e5ab78b6846084a88745ec0992294681447013",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-09-16",
+        "context": {
+          "prefix": "d on 13 September 2026. The most recent Swedish election to the European Parliament was held on 9 June 2024. == Electoral system == === Dates ===",
+          "sha256": "6e83d8781dacddd10ba9b15687259010a1e9f8cd91e06f4f670b38708449d05b",
+          "suffix": "Elections to the municipal councils also occur on the second Sunday of September. Elections to the European Parliament occur every five years in May",
+          "text": "=== Dates === Elections to Sweden's county councils occur simultaneously with the general elections on the second Sunday of September. Elections to the municipal councils also occur on the second Sunday of September. Elections to the European Parliament occur every five years in May or June throughout the entire European Union; the exact day of the election varies by country according to the local tradition, thus in Sweden they happen on a Sunday."
+        },
+        "id": "faabc2964a3928f19c8412dae909062ed757eeb0a582ef1b5ffa3b5765d99f45",
+        "quote": "Elections to Sweden's county councils occur simultaneously with the general elections on the second Sunday of September.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
   "https://en.wikipedia.org/wiki/Electoral_Institute_for_Sustainable_Democracy_in_Africa": {
     "blocked": "HTTP_429",
     "blocked_since": "2026-08-29",
@@ -3109,6 +3209,25 @@
         },
         "id": "efe411c66ca31c2815d935d5c144e0bf43b1da4f3973190f4e5bd88a6eb876f0",
         "quote": "The initial implementation of LiquidFeedback for public engagement occurred in Friesland County, Germany, in September 2012.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://en.wikipedia.org/wiki/Lisa_Witter": {
+    "checked": "2026-09-16",
+    "document_sha256": "182cc9be4668758dfb19a06382242c367f787385ea46c483565134feefbb5c4d",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-09-16",
+        "context": {
+          "prefix": "national advisory board for MomsRising.org, the Op-Ed Project, Vittana.org and the communications advisory council for Women for Women International.",
+          "sha256": "4f9bcae8086380b4c25be63284c1aae115e36fa4db6803d0660000efbbe37318",
+          "suffix": "With Lisa Chen, Witter wrote the 2008 book The She Spot: Why Women are the Market for Changing the World and How to Reach Them, which was reviewed po"
+        },
+        "id": "0a2b46b7027c025a77d5cea3bd96da12c869a68f10d0e9303089211a8c0e7276",
+        "quote": "With Robyn Scott, she co-founded Apolitical, a global platform for policymakers.",
         "verified": true
       }
     ],
@@ -3952,6 +4071,42 @@
     ],
     "last_modified": null
   },
+  "https://en.wikipedia.org/wiki/The_Economist_Democracy_Index": {
+    "checked": "2026-09-16",
+    "document_sha256": "fc2b41eb436ceb3e837de3dd36da5daaee4f2b9486052ef2ddc2becf17dcf9a9",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-09-16",
+        "context": {
+          "prefix": "g, the index categorizes each country into one of four regime types: full democracies, flawed democracies, hybrid regimes, and authoritarian regimes.",
+          "sha256": "9dce1b567f1ea419562796d24e90cee34b114377548a61bafd6c6a0ad6d1c66a",
+          "suffix": "Reports were published every two years until 2010 and annually thereafter. The index includes 167 countries and territories, of which 165 are soverei"
+        },
+        "id": "c473216068306377f321c6147b7205ecd48f51cf7eb2d7a388417762f6348b38",
+        "quote": "The first Democracy Index report was published in 2006.",
+        "verified": true
+      },
+      {
+        "checked": "2026-09-16",
+        "id": "bfabbe437c98ac6d63b8500d841b342c70fc247bb18197da3564330b79bf04fa",
+        "quote": "The Democracy Index published by the British media company the Economist Group is an index measuring the quality of democracy across the world,",
+        "verified": false
+      },
+      {
+        "checked": "2026-09-16",
+        "context": {
+          "prefix": "",
+          "sha256": "2cc7bac4966fe9de2f556b751c599b3b3761fa16eb163fae7d2a2ced217ade17",
+          "suffix": "This quantitative and comparative assessment is centrally concerned with democratic rights and democratic institutions. The methodology for assessing"
+        },
+        "id": "c391141be27bad29247614b59f38da1130a9f3dfce04cc0f96c0d180e2f4ecc0",
+        "quote": "The Democracy Index published by the British media company the Economist Group is an index measuring the quality of democracy across the world.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
   "https://en.wikipedia.org/wiki/The_Helen_Clark_Foundation": {
     "blocked": "HTTP_429",
     "blocked_since": "2026-08-29",
@@ -4014,6 +4169,26 @@
         },
         "id": "3b13ce71d4df8c67de54e04e14c553a2d27598760c7d7d898e8bbbf6f1bb5e71",
         "quote": "was created in the aftermath of Kenya's disputed 2007 presidential election",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://en.wikipedia.org/wiki/V-Dem_Institute": {
+    "checked": "2026-09-16",
+    "document_sha256": "118b0a442d1b35c6f62985655c796c7680ac4539c56fcafb46c56d96e8463106",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-09-16",
+        "context": {
+          "prefix": "",
+          "sha256": "1c127e8985ec482edcb79a27d04f6acc766fd5ad0df2d1f99af1e70132d1f13b",
+          "suffix": "V-Dem defines democracy using seven key principles (electoral, liberal, participatory, deliberative, egalitarian, majoritarian, and consensual) that",
+          "text": "The V-Dem Institute (an abbreviation of Varieties of Democracy Institute), founded by Staffan I. Lindberg in 2014, is an independent research institute that serves as the headquarters of the V-Dem Project, a database that seeks to conceptualize and measure democracy. V-Dem defines democracy using seven key principles (electoral, liberal, participatory, deliberative, egalitarian, majoritarian, and consensual) that emphasize the concept of \"rule of the people\". As part of its work, it publishes a dataset known as the V-Dem Democracy Indices that is based on its key principles. The headquarters of the project is based at the department of political science, University of Gothenburg, Sweden."
+        },
+        "id": "3516065ed74a6274a8104ad91bbce597a4cb7ab15b9896b4ea6d48742dfd99f0",
+        "quote": "The V-Dem Institute (an abbreviation of Varieties of Democracy Institute), founded by Staffan I. Lindberg in 2014, is an independent research institute that serves as the headquarters of the V-Dem Project, a database that seeks to conceptualize and measure democracy.",
         "verified": true
       }
     ],
@@ -4194,6 +4369,10 @@
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-25"
   },
+  "https://events.humanitix.com/protecting-victoria-s-democracy-ahead-of-state-s-largest-ever-election": {
+    "blocked": "HTTP_403",
+    "blocked_since": "2026-09-17"
+  },
   "https://events.humanitix.com/radicalxchange-foundation-in-melbourne": {
     "blocked": "HTTP_403",
     "blocked_since": "2026-09-04",
@@ -4296,6 +4475,26 @@
       }
     ],
     "last_modified": null
+  },
+  "https://fdsd.org/democratic-infrastructure/": {
+    "checked": "2026-09-16",
+    "document_sha256": "03e73aaf71d18e870cdaf600b5699e4cee18b2bf4ac6e2d164e3dfb7a4213b73",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-09-16",
+        "context": {
+          "prefix": "ach to our work; one aimed at building and maintaining more and better \u2018Democratic Infrastructures\u2019. What is \u2018Democratic Infrastructure\u2019?",
+          "sha256": "c5c062f608aa0928bcb01b946ea8003808abffaa249d089dd8cfaa6fd30d5886",
+          "suffix": "More specifically, Democratic Infrastructure exists when there is a mix of elements, including but not limited to: (1) a contextualised p",
+          "text": "We define Democratic Infrastructure as: persistent, generally available sets of elements that enable the continuous development, reinforcement and reimagination of democracy in a defined context."
+        },
+        "id": "c5c062f608aa0928bcb01b946ea8003808abffaa249d089dd8cfaa6fd30d5886",
+        "quote": "We define Democratic Infrastructure as: persistent, generally available sets of elements that enable the continuous development, reinforcement and reimagination of democracy in a defined context.",
+        "verified": true
+      }
+    ],
+    "last_modified": "Mon, 03 Mar 2025 15:32:56 GMT"
   },
   "https://fidemocracy.org/europe-forum-2026-from-novel-to-normal": {
     "checked": "2026-08-26",
@@ -5404,6 +5603,38 @@
     ],
     "last_modified": null
   },
+  "https://newdemocracyfoundation.substack.com/p/a-new-chapter-for-newdemocracy": {
+    "checked": "2026-09-17",
+    "document_sha256": "7cc29b4538163ac528e4b3b540e20a7dfd6883d937c4fe8e9387d0d52dcd182a",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-09-17",
+        "context": {
+          "prefix": "ettis. But before handing over the reins, Iain has one particularly significant engagement ahead. From Sydney to the United Nations",
+          "sha256": "7edc7fabb1331bfa54c52b8e357012f7800b5808b227d825a4cd22a05b7e11e5",
+          "suffix": "Produced in partnership with the United Nations Development Programme and United Nations Democracy Fund, the handbook brings together practical",
+          "text": "On 15 September, International Day of Democracy, Iain will travel to New York to launch the second edition of our book, Democracy Beyond Elections: A Handbook on Citizens\u2019 Assemblies."
+        },
+        "id": "7edc7fabb1331bfa54c52b8e357012f7800b5808b227d825a4cd22a05b7e11e5",
+        "quote": "On 15 September, International Day of Democracy, Iain will travel to New York to launch the second edition of our book, Democracy Beyond Elections: A Handbook on Citizens\u2019 Assemblies.",
+        "verified": true
+      },
+      {
+        "checked": "2026-09-17",
+        "context": {
+          "prefix": "baton to Kyle Redman. Sep 14, 2026 6 2 Share",
+          "sha256": "1ddee8729e7677c027e5fb5ece88be051764aaaecb912843f583b507334dd75b",
+          "suffix": "It marks the beginning of a new chapter in our two decades of work to strengthen democracy by giving citizens a more meaningful role in public",
+          "text": "After 15 years at the helm of the newDemocracy Foundation, Executive Director Iain Walker is stepping aside, and the Board is pleased to announce that Kyle Redman has been appointed Executive Director."
+        },
+        "id": "1ddee8729e7677c027e5fb5ece88be051764aaaecb912843f583b507334dd75b",
+        "quote": "After 15 years at the helm of the newDemocracy Foundation, Executive Director Iain Walker is stepping aside, and the Board is pleased to announce that Kyle Redman has been appointed Executive Director.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
   "https://newvote.org/the-institute": {
     "checked": "2026-08-26",
     "document_sha256": "ec64c0d32eff492f351e1c76d75e90d0ecff301ff550e2bbc6f787812bb1b436",
@@ -6070,6 +6301,20 @@
     ],
     "last_modified": null
   },
+  "https://rollcall.com/2026/09/10/republicans-scotus-bid-new-missouri-map/": {
+    "checked": "2026-09-16",
+    "document_sha256": "536571b22a17515cc4b7edc2bc2170baf56e54bb7ad79b6d5ffcbeb62ab16119",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-09-16",
+        "id": "ae9509dd992aebfcc69c7bc985907144fbd237ceff45710da4ba2fb60fdf4887",
+        "quote": "This latest development likely means the state will use lines adopted in 2022 for this fall's election.",
+        "verified": false
+      }
+    ],
+    "last_modified": null
+  },
   "https://solve.mit.edu/solutions/51507": {
     "checked": "2026-08-26",
     "document_sha256": "c68aae8614cd2bae7dff40644036508b4af1e17ac362a313b605718d2eeb6d79",
@@ -6088,6 +6333,26 @@
       }
     ],
     "last_modified": null
+  },
+  "https://ssir.org/articles/entry/building_democratic_infrastructure": {
+    "checked": "2026-09-16",
+    "document_sha256": "47ac786a4bf3ea8e6ffbfb01fb71f74faff28c411033e87386270a579968ce90",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-09-16",
+        "context": {
+          "prefix": "ver. And such tactics often do little to address the background conditions that make participation more difficult for marginalized communities.",
+          "sha256": "025a3da211e917242d38fc85a0ff8e2c5e479d9b4d36925ca9cabfab9fcc4813",
+          "suffix": "In our work with groups like the Center for Rural Strategies in Appalachia and the Chicago-based Inner-City Muslim Action Network, as well as w",
+          "text": "To address these issues, civil society organization and local governments should build more long-term and durable democratic infrastructure, with the aim of empowering constituencies to participate in meaningful and concrete ways, overcoming division within our societies, and addressing a general distrust of government by enhancing accountability."
+        },
+        "id": "025a3da211e917242d38fc85a0ff8e2c5e479d9b4d36925ca9cabfab9fcc4813",
+        "quote": "To address these issues, civil society organization and local governments should build more long-term and durable democratic infrastructure, with the aim of empowering constituencies to participate in meaningful and concrete ways, overcoming division within our societies, and addressing a general distrust of government by enhancing accountability.",
+        "verified": true
+      }
+    ],
+    "last_modified": "Sat, 22 Aug 2026 08:21:33 GMT"
   },
   "https://stocznia.org.pl/en/about-shipyard/": {
     "checked": "2026-08-29",
@@ -6711,6 +6976,8 @@
   "https://www.ag.gov.au/integrity/australias-open-government-partnership": {
     "archive_checked": "2026-09-11",
     "archive_url": "http://web.archive.org/web/20260828153433/https://www.ag.gov.au/integrity/australias-open-government-partnership",
+    "blocked": "HTTP_403",
+    "blocked_since": "2026-09-16",
     "evidence": [
       {
         "context": {
@@ -6727,6 +6994,8 @@
     "manual_checked": "2026-08-22"
   },
   "https://www.ag.gov.au/rights-and-protections/australias-open-government-partnership/open-government-forum": {
+    "blocked": "HTTP_403",
+    "blocked_since": "2026-09-16",
     "evidence": [
       {
         "context": {
@@ -6853,6 +7122,50 @@
         },
         "id": "2bb69c560807cf0c7be8d767dccd92457b40f1d32e94a61557df80263877489e",
         "quote": "The Join platform is a government-run participation hub that is most notable for its petitioning function but also offers several feedback and discussion options.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://www.betterpolitics.foundation/": {
+    "checked": "2026-09-16",
+    "document_sha256": "bd713b51989677c70461a0826e4b7bf19391fad503308297c4bf585f52e617d4",
+    "etag": "W/\"b638a8a4ff2e004d3060f1aeef8392ea\"",
+    "evidence": [
+      {
+        "checked": "2026-09-16",
+        "id": "799d52dc67f04e2280ab56a3d6f9b9b68343aa238d1221d68a594457b47f42be",
+        "quote": "We focus on equipping courageous leaders with new tools and ideas to reimagine political systems,",
+        "verified": false
+      },
+      {
+        "checked": "2026-09-16",
+        "id": "d7168f1456b9417264c4737f56a799a8b0d63864b841da70e22b84558a6200f2",
+        "quote": "This report examines how newly elected Members of the German Bundestag can be better supported as they transition into parliamentary work,",
+        "verified": false
+      },
+      {
+        "checked": "2026-09-16",
+        "context": {
+          "prefix": "",
+          "sha256": "b7e087d93f2493f14eab470989c6e26f570167588d828f22ca25ead1ab2a06d0",
+          "suffix": "\u200b As the world\u2019s leading convener of political leadership entrepreneurs and innovators, we serve as a: Convening spa",
+          "text": "We focus on equipping courageous leaders with new tools and ideas to reimagine political systems. \u200b As the world\u2019s leading convener of political leadership entrepreneurs and innovators, we serve as a:"
+        },
+        "id": "7504f18d4ffc6a111b0a16cef9fd985da643e5868d48114095d0d138edca1b15",
+        "quote": "We focus on equipping courageous leaders with new tools and ideas to reimagine political systems.",
+        "verified": true
+      },
+      {
+        "checked": "2026-09-16",
+        "context": {
+          "prefix": "ore this year! Learn more New report: Elected. Now What?",
+          "sha256": "602c7d889843f155bbf21093ef1c6d265464f5f21c0e35c316a31642334382d6",
+          "suffix": "The aim: to identify concrete starting points for improving the transition into office and strengthening political leadership over the long term.",
+          "text": "This report examines how newly elected Members of the German Bundestag can be better supported as they transition into parliamentary work. The aim: to identify concrete starting points for improving the transition into office and strengthening political leadership over the long term."
+        },
+        "id": "7601aa76861e759e9ea5bf34765a9a548e51411ec7e399a8f952ec02010a55bf",
+        "quote": "This report examines how newly elected Members of the German Bundestag can be better supported as they transition into parliamentary work.",
         "verified": true
       }
     ],
@@ -7609,11 +7922,12 @@
     "last_modified": "Sat, 29 Aug 2026 02:07:05 GMT"
   },
   "https://www.folio.org.au/event-4941291": {
-    "checked": "2026-08-26",
+    "checked": "2026-09-16",
     "document_sha256": "d5597fc74b49abbd5925d93ebcb56dd97d62762c50c3e579f3573558db0f46b8",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-09-16",
         "context": {
           "prefix": "rs that the trust bubble has burst, with the Edelman survey revealing sharp declines in trust across the board. We are extremely fortunate to have",
           "sha256": "1df16e4aa765339cade7c5c150a36c5238dd0bdf91958ca7d409a27b54e6858a",
@@ -7628,11 +7942,12 @@
     "last_modified": null
   },
   "https://www.folio.org.au/event-5773784": {
-    "checked": "2026-08-26",
+    "checked": "2026-09-16",
     "document_sha256": "7f84c2c4503dcba9e4bde2bf95d7e4623e0c1ae3e9beb89b7bf080306b4902d1",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-09-16",
         "context": {
           "prefix": "t Islander peoples. While the outcome is clear, what did the Voice Referendum reveal about our democratic institutions and culture?",
           "sha256": "5382a717ca1f49c3cfd26722588fe036be02e41d9083e4c1d69f69c792a7d8ca",
@@ -7641,6 +7956,110 @@
         },
         "id": "5382a717ca1f49c3cfd26722588fe036be02e41d9083e4c1d69f69c792a7d8ca",
         "quote": "This Folio Conversation with Mary Crooks and Lauren Crystal will help us unpack the Voice Referendum, drawing on their direct experience in community conversations across the country and personal reflections on the Yes and No campaigns, the referendum outcome, and democracy in Australia.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://www.folio.org.au/event-6840311": {
+    "checked": "2026-09-16",
+    "document_sha256": "6ae3806cfe90ad594d493ad881b4621ae36e7b25a4491ae27ba76d81036b6f8f",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-09-16",
+        "context": {
+          "prefix": "e room. Should we be celebrating democracy today \u2014 flaws and all \u2014 or reimagining it for tomorrow? Or both? To help us explore these questions,",
+          "sha256": "7878ac352a94997ec5c96c4d4bfff79593e1b83e78a62e62d1a40eb77fa7ebb7",
+          "suffix": ". What better way to celebrate International Day of Democracy than bringing citizens together across the world for an interactive dialogue about",
+          "text": "To help us explore these questions, we\u2019re joined by Lisa Witter and Josh Lerner, two leading democratic innovators whose work traverses continents and the democratic ecosystem, from communities to public servants and elected representatives."
+        },
+        "id": "76993a819c9cf307b3e16b41aa3d98aa71c1eae4f3307a120da4614a31e3ad2a",
+        "quote": "we\u2019re joined by Lisa Witter and Josh Lerner, two leading democratic innovators whose work traverses continents and the democratic ecosystem, from communities to public servants and elected representatives",
+        "verified": true
+      },
+      {
+        "checked": "2026-09-16",
+        "context": {
+          "prefix": "te democracy when it is at a crossroads? That question occupied our minds as we marked International Day of Democracy (15 September) this year.",
+          "sha256": "e228344f95641aa44428741c2f7343491d5a2936cfe4582f833f6a254bdf4233",
+          "suffix": "Only 7% of people (0.6 billion) live in liberal democracies like Australia, and \u2018almost all aspects of democracy register far-reaching declines durin",
+          "text": "The Democracy Report 2026 by V-Dem Institute paints a gloomy global picture: democracy is \u2018facing existential challenges around the world\u2019. Only 7% of people (0.6 billion) live in liberal democracies like Australia, and \u2018almost all aspects of democracy register far-reaching declines during the last decade\u2019."
+        },
+        "id": "d298b214924816e5d9216ac14d5db93dc69df1441e7bd10f6408d6aecaa9e2b5",
+        "quote": "The Democracy Report 2026 by V-Dem Institute paints a gloomy global picture: democracy is \u2018facing existential challenges around the world\u2019.",
+        "verified": true
+      },
+      {
+        "checked": "2026-09-16",
+        "context": {
+          "prefix": "llion) live in liberal democracies like Australia, and \u2018almost all aspects of democracy register far-reaching declines during the last decade\u2019.",
+          "sha256": "2b31000db8822a13edb224b246d88a2e6dec1e2dbf389e856f4163fa8bed6d8c",
+          "suffix": "Almost 75% of countries either improved their score over 12 months or remained constant. The United States is presented as the glaring exception.",
+          "text": "Yet, the Economist Intelligence Unit\u2019s latest Democracy Index indicates that, \u2018following 8 years of decline, 2025 marks a stabilisation of democracy scores that suggests an end to the global democratic recession\u2019. Almost 75% of countries either improved their score over 12 months or remained constant. The United States is presented as the glaring exception."
+        },
+        "id": "5d1ab8ce67e4e51ee3af94557f7c3112f282389917c803586bbe68ba84b708b0",
+        "quote": "Yet, the Economist Intelligence Unit\u2019s latest Democracy Index indicates that, \u2018following 8 years of decline, 2025 marks a stabilisation of democracy scores that suggests an end to the global democratic recession\u2019.",
+        "verified": true
+      },
+      {
+        "checked": "2026-09-16",
+        "context": {
+          "prefix": "ial futures. Conversation Leader - Lisa Witter Lisa is a serial (political) entrepreneur, executive, writer, and public speaker.",
+          "sha256": "a51d6bc20c81cde62d2fc5896f1fe78977ac287f1e44de8832917abf20d79bbe",
+          "suffix": "This platform is recognised as one of Fast Company's Most Innovative Companies in the World. She is the co-founder and the Executive Chair of t",
+          "text": "She is the co-founder and Board Member of Apolitical, a global peer-to-peer learning platform used by over 500,000 public servants across more than 170 countries. This platform is recognised as one of Fast Company's Most Innovative Companies in the World."
+        },
+        "id": "eaf4ca0d1d9c5227b155d66d30b7b07d880f4ce153fd8efe594a9c13c6c2d79f",
+        "quote": "She is the co-founder and Board Member of Apolitical, a global peer-to-peer learning platform used by over 500,000 public servants across more than 170 countries.",
+        "verified": false
+      },
+      {
+        "checked": "2026-09-16",
+        "context": {
+          "prefix": "00 public servants across more than 170 countries. This platform is recognised as one of Fast Company's Most Innovative Companies in the World.",
+          "sha256": "1de380170b94b4100e1c837b3c5c3aee77fe7056c29034fe3abcb61fc9319dbc",
+          "suffix": "Beyond her entrepreneurial endeavours, Lisa is a World Economic Forum Young Global Leader, the recipient of the Creative Bureaucracy Award, and",
+          "text": "She is the co-founder and the Executive Chair of the Better Politics Foundation (formerly, Apolitical Foundation), a global, non-partisan initiative working to update politics for the 21st century. Among other work, its Better Politics Index is the world's first index measuring the support and development of political leaders as key democratic infrastructure, and the Better Politics Fund is the first global fund backing political leadership innovation."
+        },
+        "id": "1de380170b94b4100e1c837b3c5c3aee77fe7056c29034fe3abcb61fc9319dbc",
+        "quote": "She is the co-founder and the Executive Chair of the Better Politics Foundation (formerly, Apolitical Foundation), a global, non-partisan initiative working to update politics for the 21st century. Among other work, its Better Politics Index is the world's first index measuring the support and development of political leaders as key democratic infrastructure, and the Better Politics Fund is the first global fund backing political leadership innovation.",
+        "verified": false
+      },
+      {
+        "checked": "2026-09-16",
+        "context": {
+          "prefix": "and counselled CEOs, Nobel Peace Prize winners, politicians, philanthropists, scientists and academics. Conversation Leader - Josh Lerner",
+          "sha256": "83e85f1db2f13d166fc52bcfabf6356faebdbc3c00e24085552cf607eabc2e30",
+          "suffix": "Josh completed a PhD in Politics at the New School for Social Research and a Masters in Planning from the University of Toronto. He is the auth",
+          "text": "Josh is the founder of People Powered, the global hub for participatory democracy. He has 20 years of experience developing, researching, and supporting innovative democracy programs around the world. He previously founded and directed the Participatory Budgeting Project, a not-for-profit organisation that empowers people to decide together how to spend public money."
+        },
+        "id": "83e85f1db2f13d166fc52bcfabf6356faebdbc3c00e24085552cf607eabc2e30",
+        "quote": "Josh is the founder of People Powered, the global hub for participatory democracy. He has 20 years of experience developing, researching, and supporting innovative democracy programs around the world. He previously founded and directed the Participatory Budgeting Project, a not-for-profit organisation that empowers people to decide together how to spend public money.",
+        "verified": true
+      },
+      {
+        "checked": "2026-09-16",
+        "context": {
+          "prefix": "avioural science expert, and certified brain-based coach who weaves neuroscience, psychology, and behavioural science into everything she does.",
+          "sha256": "340dd87d058e26a8bbc928f7cc49cbcd3e496a9e4acd24db712b13e374c1ea58",
+          "suffix": "It was named one of Fast Company's Most Impactful Companies in the World. She is the co-founder and Executive Chair of the Better Politics Foundation",
+          "text": "She co-founded Apolitical.co, the world's largest peer-to-peer learning network for public servants, reaching more than 40 million worldwide and with 500,000+ members in 170 countries. It was named one of Fast Company's Most Impactful Companies in the World. She is the co-founder and Executive Chair of the Better Politics Foundation (formerly the Apolitical Foundation), a global, non-partisan initiative dedicated to renewing leadership, reimagining politics, and rebuilding trust, which has helped spark 178 Political Leadership Incubators across 60 countries."
+        },
+        "id": "2d63e742692b514fc56735a49f45e06addee24fd5c90816b4b594a706e4dd5f1",
+        "quote": "She co-founded Apolitical.co, the world's largest peer-to-peer learning network for public servants, reaching more than 40 million worldwide and with 500,000+ members in 170 countries.",
+        "verified": true
+      },
+      {
+        "checked": "2026-09-16",
+        "context": {
+          "prefix": "more than 40 million worldwide and with 500,000+ members in 170 countries. It was named one of Fast Company's Most Impactful Companies in the World.",
+          "sha256": "340dd87d058e26a8bbc928f7cc49cbcd3e496a9e4acd24db712b13e374c1ea58",
+          "suffix": "A former public servant, Lisa has advised CEOs, Nobel Peace Prize winners, philanthropists, politicians, scientists, and explorers. She is a Wo",
+          "text": "She co-founded Apolitical.co, the world's largest peer-to-peer learning network for public servants, reaching more than 40 million worldwide and with 500,000+ members in 170 countries. It was named one of Fast Company's Most Impactful Companies in the World. She is the co-founder and Executive Chair of the Better Politics Foundation (formerly the Apolitical Foundation), a global, non-partisan initiative dedicated to renewing leadership, reimagining politics, and rebuilding trust, which has helped spark 178 Political Leadership Incubators across 60 countries."
+        },
+        "id": "46daf9224b0ba4d02a968b6ceafdf9c4823772462cf52dc263426e48335f0ccf",
+        "quote": "She is the co-founder and Executive Chair of the Better Politics Foundation (formerly the Apolitical Foundation), a global, non-partisan initiative dedicated to renewing leadership, reimagining politics, and rebuilding trust, which has helped spark 178 Political Leadership Incubators across 60 countries.",
         "verified": true
       }
     ],
@@ -7946,7 +8365,9 @@
   },
   "https://www.ipc.nsw.gov.au/news/open-government-partnership-final-public-consultation-draft-commitments-australias-third-national-action-plan": {
     "archive_checked": "2026-09-11",
-    "archive_url": "http://web.archive.org/web/20250524182833/https://www.ipc.nsw.gov.au/news/open-government-partnership-final-public-consultation-draft-commitments-australias-third-national-action-plan"
+    "archive_url": "http://web.archive.org/web/20250524182833/https://www.ipc.nsw.gov.au/news/open-government-partnership-final-public-consultation-draft-commitments-australias-third-national-action-plan",
+    "blocked": "HTTP_403",
+    "blocked_since": "2026-09-16"
   },
   "https://www.ipsnews.net/2026/08/pakistans-crackdown-on-journalists-comes-under-heavy-fire/": {
     "checked": "2026-08-26",
@@ -8489,9 +8910,29 @@
     ],
     "last_modified": "Wed, 26 Aug 2026 11:14:57 GMT"
   },
+  "https://www.newamerica.org/political-reform/reports/rebuilding-democratic-infrastructure/i-democratic-infrastructure-a-theoretical-framework/": {
+    "checked": "2026-09-16",
+    "document_sha256": "42d1567fc4c25ae5972d22e6e632fe939b5e3fba9be0ffd31ac32cddad4dda01",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-09-16",
+        "context": {
+          "prefix": "nfrastructures \u2014 political, economic, and social \u2014 needed to facilitate democratic functioning. Sociologist Charles Tilly offers a useful starting point.",
+          "sha256": "48c47b2bd464d43ec77ab52f38a6b1ca0965eb5c781b7deff2c3bc9eb9aa5278",
+          "suffix": "\u201d between state actors and the public. 2 This definition can be further sharpened into several key dimensions that are each interrelated and mutually-",
+          "text": "One way we can approach understanding the gap between the current state of American democracy and our aspirations for a more inclusive and responsive democratic polity is by unpacking the kinds of underlying institutional infrastructures \u2014 political, economic, and social \u2014 needed to facilitate democratic functioning. Sociologist Charles Tilly offers a useful starting point. Democracy, as Tilly notes, is best understood not as a specific institutional form (of, say, elections or party systems or the separation of powers), but rather by a wider set of social, economic, and political institutions that make possible \u201cbroad, equal, protected, and mutually binding consultation\u201d between state actors and the public. 2 This definition can be further sharpened into several key dimensions that are each interrelated and mutually-dependent. 3"
+        },
+        "id": "45352f296d4f8409bff2f4ca7497934529169d086028d80798d3a76b9670a602",
+        "quote": "Democracy, as Tilly notes, is best understood not as a specific institutional form (of, say, elections or party systems or the separation of powers), but rather by a wider set of social, economic, and political institutions that make possible \u201cbroad, equal, protected, and mutually binding consultation",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
   "https://www.newdemocracy.com.au/board-and-executive/": {
-    "checked": "2026-08-26",
-    "document_sha256": "f82fb37738cf86f81a3f595391ff5b26fa3727e20672f5e910b8899dc2578be2",
+    "checked": "2026-09-17",
+    "document_sha256": "d0f0bf565fac253a19acdafbf3fe9ea23c6d88324d568729769700ff62eb2891",
     "etag": null,
     "evidence": [
       {
@@ -8504,21 +8945,47 @@
         "id": "94fe21be6bb2347c6982d6c48e46edb15757d4bcc6490a6dc7603082a7db11d7",
         "quote": "Iain Walker is Executive Director of the newDemocracy Foundation (nDF) in Australia, a role he has held since 2011.",
         "verified": true
+      },
+      {
+        "checked": "2026-09-17",
+        "context": {
+          "prefix": "rsity. He is a pro bono Director of The newDemocracy Foundation. Kyle Redman Executive Director",
+          "sha256": "e2aa0a2d08192d7f1ce7f7f89cf1a4b85a3bdf2267e2b113a72aacfd95309d9a",
+          "suffix": "He has contributed to over 20 deliberative processes in Australia and abroad, including in places as diverse as Spain, Brazil, Ukraine and the United",
+          "text": "Kyle Redman is Executive Director of the New Democracy Foundation. He has contributed to over 20 deliberative processes in Australia and abroad, including in places as diverse as Spain, Brazil, Ukraine and the United States. He collaborates with the AI & Democracy Foundation, and has previously worked for and held an executive board position at the Federation for Innovation in Democracy \u2013 Europe, and was once the Director of Research at New Democracy."
+        },
+        "id": "ff3a172280316e80ac203ab72352f6bc7fb6f95f932916c8ded5012256488dd8",
+        "quote": "Kyle Redman is Executive Director of the New Democracy Foundation.",
+        "verified": true
+      },
+      {
+        "checked": "2026-09-17",
+        "context": {
+          "prefix": "She is a pro bono Director of The newDemocracy Foundation. Iain Walker Director, Advocacy",
+          "sha256": "d639b6eb31097d557d3525a3787eab2c3667ad2b24fa6418e84bfdd478136d77",
+          "suffix": "Iain has led over 30 deliberative projects at local government and state government level including projects for State Premiers on both sides of poli",
+          "text": "Iain Walker is Director of Advocacy. Iain has led over 30 deliberative projects at local government and state government level including projects for State Premiers on both sides of politics. The topics have ranged from long-term budgeting for the $4bn City of Melbourne Financial Plan to the potential for a high-level nuclear waste storage facility in South Australia. From 2011-2026 he was Executive Director of New Democracy. He now serves on the Board."
+        },
+        "id": "bdd8e0328cab116779229e70a130bfa32a7bcd3ac3736cc0402f4477cfab6d1d",
+        "quote": "Iain Walker is Director of Advocacy.",
+        "verified": true
       }
     ],
     "last_modified": null
   },
   "https://www.newdemocracy.com.au/history/": {
-    "checked": "2026-08-26",
+    "checked": "2026-09-17",
     "document_sha256": "3edb657c20fca0f0a9cdadc1ef77a88b61171ac8ba192143400233fa5bfa776b",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-09-17",
         "id": "16875b3a7fbc11dc2b9fed805ea528795b884dd7535d92fe438880445db482d6",
         "quote": "The newDemocracy Foundation was launched in 2007, with Luca Belgiorno-Nettis... as the inaugural directors.",
         "verified": true
       },
       {
+        "checked": "2026-09-17",
         "context": {
           "prefix": "tary and a handbook. Based on that guide, Kyle and Luca wrote a modest little book in 2021, with an immodest title: \u2018The A,B & C of Democracy\u2019.",
           "sha256": "b032384e6b226735fac8f0882e54c4ceef7dc3c2dd726c8508110dfbd2115101",
@@ -8530,6 +8997,7 @@
         "verified": true
       },
       {
+        "checked": "2026-09-17",
         "context": {
           "prefix": "search The story so far (and the route ahead) Australia, Europe and elsewhere",
           "sha256": "b73ba4eaf03a69d08166d2d887e8b5fccc7bc2bc7bad2951386affc055578898",
@@ -8541,6 +9009,7 @@
         "verified": true
       },
       {
+        "checked": "2026-09-17",
         "context": {
           "prefix": "lt her business into one of Australia\u2019s foremost consultancies. Ian was a well-respected academic and political adviser to various Federal Ministers.",
           "sha256": "e34739f08d9203fc55e4dd0282920f9ca4e1d29dc6a7c276558ecf94e784e229",
@@ -8552,6 +9021,7 @@
         "verified": true
       },
       {
+        "checked": "2026-09-17",
         "context": {
           "prefix": "er to various Federal Ministers. Luca had a 30-year career in Transfield, a large infrastructure and engineering company founded by his father.",
           "sha256": "132f0898f4592633ade7c0ba3440c72374fddeff3062d4c355f5efaa2373c347",
@@ -8560,6 +9030,18 @@
         },
         "id": "e84567dc0ad975cc7a82a955c502f06d673cc33abf48b5c40cc77a70d2a89af5",
         "quote": "Our first big project was the Australian Citizens\u2019 Parliament in 2009, which was an Australian Research Centre-funded citizens\u2019 assembly involving 150 Australians deliberating on how to strengthen Australia\u2019s system of government.",
+        "verified": true
+      },
+      {
+        "checked": "2026-09-17",
+        "context": {
+          "prefix": "dertook more than 30 citizens\u2019 juries/assemblies. During this period, as the number of like-minded people and organisations grew substantially,",
+          "sha256": "4da31112e30f7189e55424fffd35084c919d820ecdf4783951fe14bef8a311a1",
+          "suffix": "David Schecter became the co-ordinator, based in San Francisco. Carson also began producing research notes with support from Kyle Redman, David Schec",
+          "text": "During this period, as the number of like-minded people and organisations grew substantially, Carson prompted newDemocracy to establish a global hub for communication and learning, and thus Democracy R&D was born in 2017 as an international network, with over 120 affiliates reaching across all 5 continents and nearly 50 countries. David Schecter became the co-ordinator, based in San Francisco. Carson also began producing research notes with support from Kyle Redman, David Schecter and many international practitioners and scholars; and then a podcast series, Facilitating Public Deliberations, with Nivek Thompson."
+        },
+        "id": "eb6ad5634d7e8db025e59b9702ec572cf8dd9d9260ab7926ebd0f5d000046b98",
+        "quote": "Carson prompted newDemocracy to establish a global hub for communication and learning, and thus Democracy R&D was born in 2017 as an international network, with over 120 affiliates reaching across all 5 continents and nearly 50 countries.",
         "verified": true
       }
     ],
@@ -8666,11 +9148,12 @@
     "manual_checked": "2026-08-22"
   },
   "https://www.participatorybudgeting.org/about/": {
-    "checked": "2026-08-26",
+    "checked": "2026-09-16",
     "document_sha256": "6d7422f0a900e6bf8b0b0a693a741770219790cba3bf2f6911433a800d303bc6",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-09-16",
         "context": {
           "prefix": "participatory budgeting (PB) processes that deepen democracy, build stronger communities, and make public budgets more equitable and effective.",
           "sha256": "9caecfe4a8b685cef6c9963bd4658b0495569e80536ad3c4c8f43b9e90ca8ce1",
@@ -8682,14 +9165,85 @@
         "verified": true
       }
     ],
-    "last_modified": "Wed, 26 Aug 2026 00:21:32 GMT"
+    "last_modified": "Wed, 16 Sep 2026 02:21:16 GMT"
   },
-  "https://www.peoplepowered.org/events-content/athens-democracy-forum-2026": {
-    "checked": "2026-08-26",
-    "document_sha256": "50b8f84a4aeb9b01530381c5f481002cb2c351de1e30b8c4524b9c5f73772152",
-    "etag": "W/\"63ced8952b45df37038a56e4f12acf30\"",
+  "https://www.pbs.org/newshour/politics/missouri-court-blocks-trump-backed-u-s-house-map-and-orders-it-to-be-put-to-a-vote": {
+    "checked": "2026-09-16",
+    "document_sha256": "0ccdb9cbffabd7d01eb55375b92688044aa1b358fa1d328ad4f931094e772c2d",
+    "etag": "W/\"027a1ae17ce6dfbebc6b6879500af7d5\"",
     "evidence": [
       {
+        "checked": "2026-09-16",
+        "id": "9cb2865aabddd053948a3bb06ecb10d93ade36c9c6376661114f070b05b8e0a0",
+        "quote": "The referendum petition was legal, sufficient, and timely, and the secretary incorrectly concluded otherwise.",
+        "verified": false
+      }
+    ],
+    "last_modified": "Wed, 16 Sep 2026 13:00:02 GMT"
+  },
+  "https://www.peoplepowered.org/about": {
+    "checked": "2026-09-16",
+    "document_sha256": "843ccc435a1059517a5d062e9847f85b084e54783701c70b4a601451b1d8d73f",
+    "etag": "W/\"2ae4f73859d88761fc1bce7ec9447144--gzip\"",
+    "evidence": [
+      {
+        "checked": "2026-09-16",
+        "context": {
+          "prefix": "ng, participatory policy-making, participatory planning, and citizen assemblies. We\u2019re like a global union for participatory democracy workers.",
+          "sha256": "1f9ed76aca377266f705c9d0ba9d16736bbef276c15f6dd301c9facc7415fdae",
+          "suffix": "In 2020, 58 participatory democracy leaders from 28 countries engaged in a planning process to build out the Global PB Hub into a new and broader org",
+          "text": "We began to grow the organization in 2019, launching a Global Participatory Budgeting Hub as a fiscally sponsored initiative of the Participatory Budgeting Project, a nonprofit organization in the United States. In 2020, 58 participatory democracy leaders from 28 countries engaged in a planning process to build out the Global PB Hub into a new and broader organization. They decided on the mission, vision, values, and commitments below, along with our name and work priorities."
+        },
+        "id": "3011ced1e593080e0ef8a24a400b8e20700bfb8dc57dfe57a0b577ee8adee28c",
+        "quote": "We began to grow the organization in 2019, launching a Global Participatory Budgeting Hub as a fiscally sponsored initiative of the Participatory Budgeting Project, a nonprofit organization in the United States.",
+        "verified": true
+      },
+      {
+        "checked": "2026-09-16",
+        "context": {
+          "prefix": "Participatory Budgeting Hub as a fiscally sponsored initiative of the Participatory Budgeting Project, a nonprofit organization in the United States.",
+          "sha256": "1f9ed76aca377266f705c9d0ba9d16736bbef276c15f6dd301c9facc7415fdae",
+          "suffix": "They decided on the mission, vision, values, and commitments below, along with our name and work priorities. We are a member-driven global orga",
+          "text": "We began to grow the organization in 2019, launching a Global Participatory Budgeting Hub as a fiscally sponsored initiative of the Participatory Budgeting Project, a nonprofit organization in the United States. In 2020, 58 participatory democracy leaders from 28 countries engaged in a planning process to build out the Global PB Hub into a new and broader organization. They decided on the mission, vision, values, and commitments below, along with our name and work priorities."
+        },
+        "id": "978a0ff5e990eb4059892e93ab08e5be54426921d84d33a0e4a9d2498790c4eb",
+        "quote": "In 2020, 58 participatory democracy leaders from 28 countries engaged in a planning process to build out the Global PB Hub into a new and broader organization.",
+        "verified": true
+      },
+      {
+        "checked": "2026-09-16",
+        "id": "59cf102f7dadaba24307222af9d7fa437ba26a1d718ca61e0fa088aeb00a0284",
+        "quote": "We began to grow the organization in 2019, launching a Global Participatory Budgeting Hub as a fiscally sponsored initiative of the Participatory Budgeting Project, a nonprofit organization in the United States,",
+        "verified": false
+      },
+      {
+        "checked": "2026-09-16",
+        "id": "664d39a2c7b90a147ca95671eef9617b87d4396ff8f019b0ec10462afed24fc6",
+        "quote": "We began to grow the organization in 2019, launching a Global Participatory Budgeting Hub as a fiscally sponsored initiative of the Participatory Budgeting Project, a nonprofit organization in the United States. In 2020, 58 participatory democracy leaders from 28 countries engaged in a planning process to build out the Global PB Hub into a new and broader organization,",
+        "verified": false
+      },
+      {
+        "checked": "2026-09-16",
+        "context": {
+          "prefix": "ng, participatory policy-making, participatory planning, and citizen assemblies. We\u2019re like a global union for participatory democracy workers.",
+          "sha256": "1f9ed76aca377266f705c9d0ba9d16736bbef276c15f6dd301c9facc7415fdae",
+          "suffix": "They decided on the mission, vision, values, and commitments below, along with our name and work priorities. We are a member-driven global orga",
+          "text": "We began to grow the organization in 2019, launching a Global Participatory Budgeting Hub as a fiscally sponsored initiative of the Participatory Budgeting Project, a nonprofit organization in the United States. In 2020, 58 participatory democracy leaders from 28 countries engaged in a planning process to build out the Global PB Hub into a new and broader organization. They decided on the mission, vision, values, and commitments below, along with our name and work priorities."
+        },
+        "id": "4c68b87e6f15b1a95ffbd07f3ebe1ca3032d4a09bde6b47e798942cc18a7b063",
+        "quote": "We began to grow the organization in 2019, launching a Global Participatory Budgeting Hub as a fiscally sponsored initiative of the Participatory Budgeting Project, a nonprofit organization in the United States. In 2020, 58 participatory democracy leaders from 28 countries engaged in a planning process to build out the Global PB Hub into a new and broader organization.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://www.peoplepowered.org/events-content/athens-democracy-forum-2026": {
+    "checked": "2026-09-16",
+    "document_sha256": "50b8f84a4aeb9b01530381c5f481002cb2c351de1e30b8c4524b9c5f73772152",
+    "etag": "W/\"9670e9446ae7550a104bb0b31bfa4ba4\"",
+    "evidence": [
+      {
+        "checked": "2026-09-16",
         "context": {
           "prefix": "\ud83d\udcc5 September 29 \u2013 October 1, 2026 \ud83d\udccd Athens, Greece \ud83d\udd17 https://www.athensdemocracyforum.com/",
           "sha256": "e3d0e071556ae2a7a7d9b507eb0ce2f3fc3442e66dac4591ba168f9b89d167b4",
@@ -8704,11 +9258,12 @@
     "last_modified": null
   },
   "https://www.peoplepowered.org/events-content/gdc-global-forum-2026": {
-    "checked": "2026-08-26",
+    "checked": "2026-09-16",
     "document_sha256": "169b7ed964e47ef0b56c2390f1473e0d34e4de7d676492d4a71ed627d92717ed",
-    "etag": "W/\"b09790afb86e8284ec9b8a35c6d9ed8a\"",
+    "etag": "W/\"95f221d99e36e886a1a74419426f2a86\"",
     "evidence": [
       {
+        "checked": "2026-09-16",
         "context": {
           "prefix": "vatoire Amphitheater, Greece (hybrid \u2014 livestreamed on Zoom and YouTube) \ud83d\udd17 https://globaldemocracycoalition.org/event/gdc-global-forum-2026/",
           "sha256": "ef02486981b2b65b203557409510c3c5b53692a15e37691785c348135a3dc4f7",
@@ -8723,9 +9278,9 @@
     "last_modified": null
   },
   "https://www.peoplepowered.org/events-content/oidp-2026": {
-    "checked": "2026-08-26",
-    "document_sha256": "200bb853be09702bda77ca879cc6808b84d20018487a69fb034e063d34e9ff57",
-    "etag": "W/\"b7dceb994aa78aeaad5ba5c020781edb\"",
+    "checked": "2026-09-16",
+    "document_sha256": "ad11e24dfb2d71d273c86bf73ffc6eb115e4a297cccfd98b6345ab95e558b055",
+    "etag": "W/\"c177dcfba60cdfd3136bc5a52bb8c723\"",
     "evidence": [
       {
         "context": {
@@ -8739,6 +9294,7 @@
         "verified": true
       },
       {
+        "checked": "2026-09-16",
         "context": {
           "prefix": "6 11:00 AM 11:00 krakow Poland (map) Google Calendar ICS",
           "sha256": "e98baa5dbaae3e6f843802d30b74d7dd38e4e9aa48e9b0de4563fa872a304df8",
@@ -8753,9 +9309,9 @@
     "last_modified": null
   },
   "https://www.peoplepowered.org/events-content/world-forum-for-democracy-2026": {
-    "checked": "2026-08-26",
+    "checked": "2026-09-16",
     "document_sha256": "a6be8446eeab07c07de4f8699f0a56f3169c0eabf29fc801d9fc38c7b732b202",
-    "etag": "W/\"717566beb518714c8b281f9000ad5b2c\"",
+    "etag": "W/\"386a30726dc9264b8351181ba68aae8c\"",
     "evidence": [
       {
         "id": "d39140481410db1394c64a21facfdbd7605cc549c80ab12b17c5a38ad308e582",
@@ -8763,6 +9319,7 @@
         "verified": true
       },
       {
+        "checked": "2026-09-16",
         "id": "c6c96fb6ac6c9f638e48d735399b74b0e78d25bc66478b6c36425b93a268bd19",
         "quote": "The 14th World Forum for Democracy... will take place in Strasbourg from 2\u20134 November 2026 under the theme \"Democratic Foresight.\"",
         "verified": true
@@ -8918,8 +9475,34 @@
     ],
     "last_modified": null
   },
+  "https://www.prnewswire.com/news-releases/apolitical-launches-first-of-its-kind-peer-to-peer-platform-for-governments-everywhere-300478032.html": {
+    "checked": "2026-09-16",
+    "document_sha256": "f2bb89039f6aa8547e9fe0f2da31f128fd025a211904acffcac5b641e275af55",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-09-16",
+        "context": {
+          "prefix": "Share to X LONDON, June 22, 2017 /PRNewswire/ --",
+          "sha256": "899a4ced4d3e3ac35087bdf7248b601204f8fc3bf939448114f09a29f43077af",
+          "suffix": "The platform is the first of its kind. About the platform Apolitical's online platform is designed around the critical policy topics of o",
+          "text": "LONDON, June 22, 2017 /PRNewswire/ -- Today, Apolitical launched a global platform for government and its partners at Admiralty House, Whitehall in collaboration with the UK Cabinet Office. The platform is the first of its kind."
+        },
+        "id": "2fb5882c995703db7ce0fb7932d381db48ac430517719a0a42d9361ba1960813",
+        "quote": "Today, Apolitical launched a global platform for government and its partners at Admiralty House, Whitehall in collaboration with the UK Cabinet Office.",
+        "verified": true
+      },
+      {
+        "checked": "2026-09-16",
+        "id": "b9caf0676571dcb0c8955c96a73dc96dadec6352aa00c2758fc0aaa982b99589",
+        "quote": "Today, Apolitical launched a global platform for government and its partners at Admiralty House, Whitehall in collaboration with the UK Cabinet Office,",
+        "verified": false
+      }
+    ],
+    "last_modified": "Wed, 16 Sep 2026 07:52:38 GMT"
+  },
   "https://www.prnewswire.com/news-releases/eiu-democracy-index-2025-democracy-stabilises-after-eight-years-of-decline-302734863.html": {
-    "checked": "2026-08-26",
+    "checked": "2026-09-16",
     "document_sha256": "8f611ac19d34368db530ea1b83b93c7a10231626d4f57ad0442a8ebdb20b3892",
     "etag": null,
     "evidence": [
@@ -8933,9 +9516,27 @@
         "id": "af23cbf0ae3bafbbbb5531809c026baf4d8595c0db87d1cdb843a288390bea75",
         "quote": "the average score in the 2025 Democracy Index rose less than a half of a percent from 5.17 to 5.19",
         "verified": true
+      },
+      {
+        "checked": "2026-09-16",
+        "context": {
+          "prefix": "Share to X LONDON, April 7, 2026 /PRNewswire/ --",
+          "sha256": "f9b9b42e2f6ccc6fd99f6f286d8df47c1c52da445a106bf70df9768efe94e022",
+          "suffix": "The index shows remarkable stability in the higher-ranked \"full democracies\" and the lower-ranked \"authoritarian regimes\". Movement in the lowe",
+          "text": "Following eight years of decline, 2025 marks a stabilisation of democracy scores that suggests an end to the global democratic recession."
+        },
+        "id": "f9b9b42e2f6ccc6fd99f6f286d8df47c1c52da445a106bf70df9768efe94e022",
+        "quote": "Following eight years of decline, 2025 marks a stabilisation of democracy scores that suggests an end to the global democratic recession.",
+        "verified": true
+      },
+      {
+        "checked": "2026-09-16",
+        "id": "a26be0111940fa54fa5ece911bf8d6dac28f67d7e4afc6ca8facc000f69a7cbc",
+        "quote": "Following eight years of decline, 2025 marks a stabilisation of democracy scores that suggests an end to the global democratic recession,",
+        "verified": false
       }
     ],
-    "last_modified": "Sun, 23 Aug 2026 13:37:35 GMT"
+    "last_modified": "Wed, 09 Sep 2026 09:33:12 GMT"
   },
   "https://www.prsa.org.au/qn/2011a_.html": {
     "checked": "2026-08-26",
@@ -9207,6 +9808,8 @@
     "last_modified": null
   },
   "https://www.sortitionfoundation.org/ecps_2025": {
+    "blocked": "HTTP_403",
+    "blocked_since": "2026-09-16",
     "checked": "2026-08-26",
     "document_sha256": "e68c639682af8645dfa561c38b58792fdec558d0e0b5255062b2c9424363b318",
     "etag": null,
@@ -9505,8 +10108,34 @@
     ],
     "last_modified": null
   },
+  "https://www.v-dem.net/about/": {
+    "checked": "2026-09-16",
+    "document_sha256": "f87c5cecab77d395e9241cc9e1f384f514a40fe4ca12dad6952ea2167e0062e8",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-09-16",
+        "id": "d2c3b459537da26a69d2c017b5ddedef60af634d153900b82d830276057e9ce8",
+        "quote": "The V-Dem Institute is the executive management arm of V-Dem with responsibility for most aspects of the data collection efforts, management and coordination of several large research programs, and for most of the outreach, dissemination, and collaborations with policy/practitioners\u2019 organizations,",
+        "verified": false
+      },
+      {
+        "checked": "2026-09-16",
+        "context": {
+          "prefix": "a to measure these principles. Learn more about our global team and methodology V-Dem Institute",
+          "sha256": "5cc5e8a430bae46ca79c155c320a63a6eab826db890df0c594cd4923fa57bfce",
+          "suffix": "Learn more about the V-Dem Institute's research and employees Regional Centers B",
+          "text": "The V-Dem Institute is the executive management arm of V-Dem with responsibility for most aspects of the data collection efforts, management and coordination of several large research programs, and for most of the outreach, dissemination, and collaborations with policy/practitioners\u2019 organizations."
+        },
+        "id": "5cc5e8a430bae46ca79c155c320a63a6eab826db890df0c594cd4923fa57bfce",
+        "quote": "The V-Dem Institute is the executive management arm of V-Dem with responsibility for most aspects of the data collection efforts, management and coordination of several large research programs, and for most of the outreach, dissemination, and collaborations with policy/practitioners\u2019 organizations.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
   "https://www.v-dem.net/news/press-release-democratic-backsliding-reaches-western-democracies-with-us-decline-unprecedented/": {
-    "checked": "2026-08-26",
+    "checked": "2026-09-16",
     "document_sha256": "eacbb4c31bac1e049e163e7e78b1472e59242d498612e145189354cb641938a2",
     "etag": null,
     "evidence": [
@@ -9519,6 +10148,148 @@
         },
         "id": "79de61ccb5acd6cff63f799f78957058e8cee0857ddd49de79194029a6061145",
         "quote": "Nearly a quarter of the world\u2019s nations are going through democratic backsliding, or autocratization, in 2025, and six out of the ten new autocratizing countries identified in the 2026 Democracy Report are in Europe and North America.",
+        "verified": true
+      },
+      {
+        "checked": "2026-09-16",
+        "context": {
+          "prefix": "Democracies, with U.S. Decline \u201cUnprecedented\u201d 17 March 2026 Tags Press Release Publications",
+          "sha256": "d779ba043e1be2566c68df3ad38e4a37da025e18edcf55f128f2222eff8a5aed",
+          "suffix": "This, and more, is reported in the latest Democracy Report from the V-Dem Institute at the University of Gothenburg. Nearly a quarter of the wo",
+          "text": "Democratic backsliding is now happening in well-established democracies. Democracy in the USA is deteriorating at unprecedented speed, and media and journalists are increasingly targeted across the world. This, and more, is reported in the latest Democracy Report from the V-Dem Institute at the University of Gothenburg."
+        },
+        "id": "d2a7960fdb866627273026b96ff90daa7b1244439c6c532d68fb53c5704bd560",
+        "quote": "Democratic backsliding is now happening in well-established democracies. Democracy in the USA is deteriorating at unprecedented speed, and media and journalists are increasingly targeted across the world.",
+        "verified": true
+      },
+      {
+        "checked": "2026-09-16",
+        "id": "3f6306eba9256e2c0df8384caadcce4326bc470b7833931a9fdc9d4bed56e500",
+        "quote": "Democratic backsliding is now happening in well-established democracies. Democracy in the USA is deteriorating at unprecedented speed, and media and journalists are increasingly targeted across the world,",
+        "verified": false
+      }
+    ],
+    "last_modified": null
+  },
+  "https://www.vec.vic.gov.au/about-us": {
+    "checked": "2026-09-17",
+    "document_sha256": "894307f824db220bd77dc3cbf943377886af1bf9267e032014f262137da69345",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-09-17",
+        "context": {
+          "prefix": "Languages Back to Home Home About us About us Listen",
+          "sha256": "d69fe0ba8abed30dbe8f36438716f1d6746223f4481ce93aac845c32b6fc1196",
+          "suffix": "We play 2 important roles in Victoria's democracy: Running elections We hold: state elections local council election",
+          "text": "We are an independent and impartial body established under Victoria's Electoral Act 2002."
+        },
+        "id": "d69fe0ba8abed30dbe8f36438716f1d6746223f4481ce93aac845c32b6fc1196",
+        "quote": "We are an independent and impartial body established under Victoria's Electoral Act 2002.",
+        "verified": true
+      },
+      {
+        "checked": "2026-09-17",
+        "context": {
+          "prefix": "out and understand voting and elections support the Electoral Boundaries Commission. Electoral Commissioner",
+          "sha256": "9a65b2779132e361baf20452e18a7f043239d1bd6e899763ca7010265b8d4662",
+          "suffix": "Mr Bluemmel practised law in the private sector in Melbourne and Perth in the areas of information and privacy law. He is a fellow of Leadership West",
+          "text": "Sven Bluemmel was appointed Electoral Commissioner in August 2023. He previously served as the inaugural Victorian Information Commissioner, Western Australian Information Commissioner and has held senior positions in the Western Australian and Commonwealth public sectors. Mr Bluemmel practised law in the private sector in Melbourne and Perth in the areas of information and privacy law. He is a fellow of Leadership Western Australia and served as President of the Institute of Public Administration in Western Australia for three years."
+        },
+        "id": "3b0c6b4249a5b887bd06de97605b7c1d4d5cdf5935fac9439e4c29b58172960c",
+        "quote": "Sven Bluemmel was appointed Electoral Commissioner in August 2023. He previously served as the inaugural Victorian Information Commissioner, Western Australian Information Commissioner and has held senior positions in the Western Australian and Commonwealth public sectors.",
+        "verified": true
+      },
+      {
+        "checked": "2026-09-17",
+        "context": {
+          "prefix": "mpartiality. Our values We are proudly independent We work as one We lead with purpose. Strategy 2027",
+          "sha256": "272cbb82a2479e31049bccd20dd550e329a227291d61dd0f5fed261434c079b3",
+          "suffix": "Our 4-year goal: we have the people and processes we need to navigate changes and build trust in democracy. Outcomes and success me",
+          "text": "We launched Strategy 2027 in August 2023. This strategy explains what's important to us as the world around our work continues to change."
+        },
+        "id": "272cbb82a2479e31049bccd20dd550e329a227291d61dd0f5fed261434c079b3",
+        "quote": "We launched Strategy 2027 in August 2023. This strategy explains what's important to us as the world around our work continues to change.",
+        "verified": true
+      },
+      {
+        "checked": "2026-09-17",
+        "context": {
+          "prefix": "ner Sven Bluemmel Our vision All Victorians actively participating in their democracy. Our purpose",
+          "sha256": "0068367f59e682069cddcee0696305cd5ad77dc72e1708dfc6f2f11f50644e63",
+          "suffix": "Our commitment Delivering a trusted democratic process through excellence and impartiality. Our values We are proudly inde",
+          "text": "Building a stronger future for Victorian democracy."
+        },
+        "id": "0068367f59e682069cddcee0696305cd5ad77dc72e1708dfc6f2f11f50644e63",
+        "quote": "Building a stronger future for Victorian democracy.",
+        "verified": true
+      },
+      {
+        "checked": "2026-09-17",
+        "context": {
+          "prefix": "uality services during elections. Our reputation, media coverage, and feedback show that the public and the people we work with trust us.",
+          "sha256": "d05805d35763be2f81fbbecc520bf8bf81b73067b1d263ec1942a8d53c0f63aa",
+          "suffix": "Voters We deliver a great voter experience. What success means to us: People",
+          "text": "We put electoral integrity at the heart of all our work."
+        },
+        "id": "d05805d35763be2f81fbbecc520bf8bf81b73067b1d263ec1942a8d53c0f63aa",
+        "quote": "We put electoral integrity at the heart of all our work.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://www.vec.vic.gov.au/voting/electoral-misinformation": {
+    "checked": "2026-09-17",
+    "document_sha256": "5170620c54496672d69ad6291bec2931694cbd1321b2a2d7218ce1ead18540b0",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-09-17",
+        "context": {
+          "prefix": "vote Supporting people with disability to have their say. Learn more Verifying information about elections",
+          "sha256": "31a81577962a43b8daf6a945cf2d934f5490ebc2ec7fa4a1408e5bede68ee346",
+          "suffix": "Verify election information Working together to correct misinformation We maintain fair elections by working with",
+          "text": "We can help you check the facts about election information you receive."
+        },
+        "id": "31a81577962a43b8daf6a945cf2d934f5490ebc2ec7fa4a1408e5bede68ee346",
+        "quote": "We can help you check the facts about election information you receive.",
+        "verified": true
+      },
+      {
+        "checked": "2026-09-17",
+        "context": {
+          "prefix": "by: candidates political parties, or non-party campaigners (influencers). Laws around electoral campaign material",
+          "sha256": "7fc2de2b9734872f82f71a03cc8befa9b2b0f5b7f50fff74978dee9c624aa615",
+          "suffix": "However, all electoral campaign material must be authorised. This needs to include the authoriser's name and address. This lets everyone know the ori",
+          "text": "There are no laws in Victoria that regulate truth in political advertising. However, all electoral campaign material must be authorised. This needs to include the authoriser's name and address. This lets everyone know the origins of the electoral campaign material."
+        },
+        "id": "173e0ceb270653135faa5f5fd3dca55ac37ad237615bc42125972c8bf03e3a01",
+        "quote": "There are no laws in Victoria that regulate truth in political advertising.",
+        "verified": true
+      },
+      {
+        "checked": "2026-09-17",
+        "context": {
+          "prefix": "ers (influencers). Laws around electoral campaign material There are no laws in Victoria that regulate truth in political advertising.",
+          "sha256": "7fc2de2b9734872f82f71a03cc8befa9b2b0f5b7f50fff74978dee9c624aa615",
+          "suffix": "This lets everyone know the origins of the electoral campaign material. More information about authorisation can be found on our Authorising st",
+          "text": "There are no laws in Victoria that regulate truth in political advertising. However, all electoral campaign material must be authorised. This needs to include the authoriser's name and address. This lets everyone know the origins of the electoral campaign material."
+        },
+        "id": "d321b4682560d951d30989288c351aa9da26bb7544c6624629d2c4f9e4b29190",
+        "quote": "However, all electoral campaign material must be authorised. This needs to include the authoriser's name and address.",
+        "verified": true
+      },
+      {
+        "checked": "2026-09-17",
+        "context": {
+          "prefix": "ion statement. Generative AI in campaign material Some campaigners may use generative AI to create or modify electoral campaign material.",
+          "sha256": "af44d625831c3bd1712cf840a934b92f545071c3e48dc0d2fd7dcecb72f6faff",
+          "suffix": "Knowing this information upfront will help you make an informed decision or lead you to undertake further research. Learn more about elec",
+          "text": "Some campaigners may use generative AI to create or modify electoral campaign material. We expect that all campaigners carry out their role of informing voters in a responsible and transparent manner by properly authorising all electoral campaign material."
+        },
+        "id": "597dba44e659d05c358f8509d5ae34feaa919eb53270ab9f1d74a17e67a867f0",
+        "quote": "We expect that all campaigners carry out their role of informing voters in a responsible and transparent manner by properly authorising all electoral campaign material.",
         "verified": true
       }
     ],

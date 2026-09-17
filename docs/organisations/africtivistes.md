@@ -47,10 +47,17 @@ events:
   notable_reason: Legal action against government internet shutdowns
   type: milestone
 activity:
+  dod:
+    date: 2026-09-16
+    note: Site live with news dated 21 Jun-21 Aug 2026 (Jokkondiral election-observation
+      tool launch, CEDEAO commentary, Election Civic Tech Fund); info@africtivistes.org
+      / phone contact confirmed current.
+    url: https://www.africtivistes.com
+    checked: 2026-09-16
   rss:
     checked: 2026-09-11
     note: No feed found
-last_checked: '2026-08-09'
+last_checked: '2026-09-16'
 ---
 
 AfricTivistes is a pan-African network of bloggers, cyber-activists, and civic-tech practitioners working across 45 countries. Founded in 2015 and headquartered in Dakar, its mission is to use digital tools and new technologies to strengthen democracy, promote good governance, and support sustainable development on the continent.

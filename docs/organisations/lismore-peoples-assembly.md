@@ -54,11 +54,10 @@ events:
   type: other
 activity:
   dod:
-    checked: 2026-07-16
-    date: 2026-02-09
-    note: 'RSS feed''s latest entry dated Feb 9, 2026: ''Nearly four years after the
-      NR Floods, the community is given a (small) chance to be heard'''
-    url: https://reclaim.org.au/nearly-four-years-after-the-nr-floods-the-community-is-given-a-small-chance-to-be-heard/
+    date: 2026-09-14
+    note: Site live, confirmed active
+    url: https://reclaim.org.au/lpa-home/
+    checked: 2026-09-14
   rss:
     checked: 2026-09-11
     date: 2026-02-09
@@ -70,7 +69,7 @@ activity:
     note: 'Latest post: Gallery'
     url: https://reclaim.org.au/category/lpa-resources/
     checked: 2026-09-11
-last_checked: '2026-07-16'
+last_checked: '2026-09-14'
 ---
 
 The Lismore People's Assembly emerged from the 2022 flood crisis, when conventional governance structures were seen as failing the community. It runs as a project of [Reclaim Our Recovery](https://reclaim.org.au/), a grassroots flood-recovery advocacy group, and describes its aim explicitly as reinventing democracy from the ground up: bypassing vested interests and giving everyday people a direct voice in decisions that affect them.[^inaugural]

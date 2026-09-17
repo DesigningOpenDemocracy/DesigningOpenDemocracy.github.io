@@ -42,13 +42,19 @@ activity:
     checked: 2026-06-07
     date: 2026-06-07
     note: website loaded. Last convention at 2025
+  dod:
+    date: 2026-09-13
+    note: Website confirmed active — 2025 Candidates section and upcoming events listed;
+      summary and contact info still accurate.
+    url: https://www.communityindependentsproject.org
+    checked: 2026-09-13
   rss:
     checked: 2026-09-11
     date: 2022-09-04
     note: 'Latest post: The second national Community Independents Convention, August
       2022'
     url: https://www.communityindependentsproject.org/blog/the-second-national-community-independents-convention-august-2022
-last_checked: '2026-06-29'
+last_checked: '2026-09-13'
 ---
 
 The Community Independents Project (CIP) is the coordinating body for Australia's community independent candidate movement — a network of locally organised, non-partisan groups that support community-driven independent candidates at federal, state, and local elections.

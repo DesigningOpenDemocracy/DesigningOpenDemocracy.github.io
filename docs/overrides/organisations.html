@@ -102,7 +102,7 @@
               {%- endif %}
               <a href="/{{ file.page.url }}">{{ file.page.title }}</a>
               {%- if website and not website.startswith('https://web.archive.org') %}
-              <a href="{{ website }}" class="org-ext-link" target="_blank" rel="noopener" title="{{ website }}">↗</a>
+              <a href="{{ website }}" class="org-ext-link" target="_blank" rel="noopener" title="{{ website }}" aria-label="Visit {{ file.page.title }} website">↗</a>
               {%- endif %}
             </td>
             <td data-sort="{{ org_type }}">{{ type_icons.get(org_type, '🏛️') }} {{ org_type }}</td>
@@ -390,9 +390,15 @@
     search.value = '';
     activeDays = 0;
     activityBtns.forEach(function (b) {
+<<<<<<< HEAD
+      var isDefault = b.dataset.days === '0';
+      b.classList.toggle('active', isDefault);
+      b.setAttribute('aria-pressed', isDefault ? 'true' : 'false');
+=======
       var isAll = b.dataset.days === '0';
       b.classList.toggle('active', isAll);
       b.setAttribute('aria-pressed', isAll ? 'true' : 'false');
+>>>>>>> 4951f46 (🎨 Palette: Add focus visible indicators and ARIA pressed states for filter controls)
     });
     facets.forEach(function (f) {
       Object.keys(f.checked).forEach(function (k) { delete f.checked[k]; });

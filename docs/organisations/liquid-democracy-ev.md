@@ -53,11 +53,10 @@ activity:
       e.V.'
     url: https://liqd.net/en/blog/
   dod:
-    checked: 2026-07-16
-    date: 2026-07-16
-    note: Site actively maintained; most recent blog post dated July 7, 2026 (office
-      relocation); adhocracy+, meinBerlin, Zukunft D projects all current
+    date: 2026-09-14
+    note: Site live, confirmed active
     url: https://liqd.net/en/
+    checked: 2026-09-14
   scrape:
     date: 2026-08-26
     note: Latest news page scraped
@@ -68,7 +67,7 @@ activity:
     note: Page last modified (from sitemap)
     url: https://liqd.net/en/sitemap.xml
     checked: 2026-09-11
-last_checked: '2026-07-16'
+last_checked: '2026-09-14'
 ---
 
 Liquid Democracy e.V. is a Berlin-based non-profit association founded in 2009 to develop free and open-source digital participation tools and support their deployment in governments, NGOs, and public institutions. The organisation combines software development with consulting, workshops, and policy research.

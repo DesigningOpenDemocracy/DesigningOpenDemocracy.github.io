@@ -50,13 +50,20 @@ events:
   type: conference
   location: Lagos, Nigeria
 activity:
+  dod:
+    date: 2026-09-16
+    note: Site live with news dated 6-25 Aug 2026 (Creative Changemakers Fellowship,
+      Osun State election coverage); info@civichive.org / phone contact confirmed
+      current.
+    url: https://civichive.org
+    checked: 2026-09-16
   rss:
     date: 2026-08-25
     note: 'Latest post: APPLY: Creative Changemakers Fellowship 2026'
     url: https://civichive.org/ccmf2026/?utm_source=rss&utm_medium=rss&utm_campaign=ccmf2026
     checked: 2026-09-11
   url: https://civichive.org/2026-osun-state-governorship-election/?utm_source=rss&utm_medium=rss&utm_campaign=2026-osun-state-governorship-election
-last_checked: '2026-08-09'
+last_checked: '2026-09-16'
 ---
 
 Civic Hive is a Lagos-based civic-tech innovation hub that runs a fellowship programme training civic-tech practitioners — 36 fellows have launched 26 organisations through the programme — alongside building platforms for electoral transparency and citizen participation. Its portfolio includes the Nigeria Election Portal, a Live Results Map, and the West Africa CivicTech Conference, a convening space for the region's civic-tech community.

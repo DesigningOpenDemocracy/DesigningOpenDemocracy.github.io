@@ -56,6 +56,12 @@ events:
   notable_reason: Case study on a notable community-ownership financing model
   type: milestone
 activity:
+  dod:
+    date: 2026-09-13
+    note: Website confirmed active — current programs, resources, and contact info
+      match frontmatter.
+    url: https://bonds.coop
+    checked: 2026-09-13
   rss:
     date: 2026-09-11
     note: RSS feed active
@@ -66,7 +72,7 @@ activity:
     note: Latest news page scraped
     url: https://bonds.coop/resources/co-op-news/
     checked: 2026-09-11
-last_checked: '2026-06-29'
+last_checked: '2026-09-13'
 ---
 
 Co-operative Bonds is a cooperative development consultancy structured as a cooperative itself. Founded by Antony McMullen, Clare Fountain, and Paul Saeki, it provides education and development services to help purpose-driven member-based organisations build financially viable and sustainable models.

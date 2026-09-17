@@ -47,16 +47,18 @@ events:
   type: milestone
 activity:
   dod:
-    checked: 2026-08-02
-    date: 2026-07-30
-    note: Confirmed active via official site during landscape research
+    date: 2026-09-16
+    note: Site live with posts dated 15-16 Sep 2026 (pay-for-play smart TV story,
+      Ettention Please roundup); admin@ettemedia.com contact confirmed current.
+    url: https://www.ettemedia.com/
+    checked: 2026-09-16
   rss:
     date: 2026-09-10
     note: 'Latest post: A timeline of media reports Netanyahu knew about October 7
       before it happened'
     url: https://www.ettemedia.com/a-timeline-of-media-reports-netanyahu-knew-about-october-7-before-it-happened/
     checked: 2026-09-11
-last_checked: '2026-08-02'
+last_checked: '2026-09-16'
 contributors:
 - BrianKhuu
 ---

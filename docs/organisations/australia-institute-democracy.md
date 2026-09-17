@@ -52,16 +52,18 @@ events:
   location: Parliament of NSW, Sydney
 activity:
   dod:
-    checked: 2026-07-19
-    date: 2026-07-19
-    note: Website live; Democracy & Accountability program page current.
+    date: 2026-09-15
+    note: Site blocks scripted fetch (403) but web search confirms Democracy & Accountability
+      Program active in 2026 under director Bill Browne, with publications in April/May/June
+      2026.
     url: https://australiainstitute.org.au/about/structure/democracy-accountability/
+    checked: 2026-09-15
   rss:
     date: 2026-08-17
     note: 'Latest post: What’s the point of gambling reform?'
     url: https://australiainstitute.org.au/post/whats-the-point-of-gambling-reform/?utm_source=rss&utm_medium=rss&utm_campaign=whats-the-point-of-gambling-reform
     checked: 2026-08-17
-last_checked: '2026-07-19'
+last_checked: '2026-09-15'
 ---
 
 The Democracy & Accountability Program is a dedicated research and advocacy program within [The Australia Institute](https://australiainstitute.org.au), a Canberra-based progressive think tank. Established in 2021, it builds on the Institute's longer history of democracy-related research.

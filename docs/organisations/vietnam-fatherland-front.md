@@ -52,17 +52,17 @@ activity:
       mạc phiên thứ nhất Đại hội đại biểu toàn quốc Hội Nông dân Việt Nam lần thứ
       IX: Gần 600 đại biểu chính thức về dự'''
   dod:
-    checked: 2026-07-19
-    date: 2026-07-18
-    note: Website live with July 2026 content; homepage timestamp and news dated July
-      18-19 2026.
+    date: 2026-09-15
+    note: Site live; content current to 15 Sep 2026, including coverage of the 11th
+      National Congress (May 2026) and ongoing disaster-relief coordination.
     url: https://mattran.org.vn
+    checked: 2026-09-15
   sitemap:
     date: 2026-09-11
     note: Page last modified (from sitemap)
     url: https://mattran.org.vn/sitemaps.xml
     checked: 2026-09-11
-last_checked: '2026-07-19'
+last_checked: '2026-09-15'
 ---
 
 > **Note:** The VFF operates within Vietnam's single-party system under Vietnamese Communist Party (VCP) guidance. Its role is constitutionally defined as consultative — representing organised social interests within approved channels, not as an independent political actor. Scholars describe its function as similar to China's [CPPCC](cppcc.md): genuine aggregation of sectoral interests within structurally bounded limits. It is included here as a documented example of managed consultation and as a comparative case alongside the Chinese model.

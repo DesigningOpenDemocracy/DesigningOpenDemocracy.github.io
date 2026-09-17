@@ -52,14 +52,15 @@ events:
   notable_reason: Platform/product launch
 activity:
   dod:
-    checked: 2026-06-08
-    date: 2026-03-15
-    note: 'Latest commit: update GitHub Actions to Node.js 24-compatible versions'
-    url: https://github.com/demokratie-live/democracy-client/commits/main
+    date: 2026-09-13
+    note: Website confirmed active — live Bundestag session tracker showing Sept 21-25
+      2026 sitting week; contact info unchanged.
+    url: https://democracy-app.de
+    checked: 2026-09-13
   rss:
     checked: 2026-09-11
     note: No feed found
-last_checked: '2026-06-29'
+last_checked: '2026-09-13'
 ---
 
 DEMOCRACY Deutschland e.V. is a German nonprofit building open-source civic technology to close the gap between parliamentary decisions and the citizens affected by them. Their flagship product is the **DEMOCRACY app**, available on Android (including [F-Droid](https://f-droid.org/en/packages/de.democracydeutschland.app/)), iOS, and as a web interface.

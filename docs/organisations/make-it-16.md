@@ -62,15 +62,18 @@ events:
   notable: false
 activity:
   dod:
-    checked: 2026-08-09
-    date: 2026-08-09
-    note: Confirmed live (HTTP 200), site current
+    date: 2026-09-17
+    note: Homepage confirms campaign still active; voting-age-16 mission and 2022
+      Supreme Court ruling (already recorded) both match. Recorded contact email (hello@makeit16.org.nz)
+      still current; a separate media@makeit16.org.nz press address also exists.
+    url: https://www.makeit16.org.nz
+    checked: 2026-09-17
   sitemap:
     date: 2026-08-17
     note: Page last modified (from sitemap)
     url: https://www.makeit16.org.nz/sitemap.xml
     checked: 2026-09-11
-last_checked: '2026-08-09'
+last_checked: '2026-09-17'
 ---
 
 Make It 16 is a youth-led campaign to lower New Zealand's voting age from 18 to 16. It is among the most legally significant voting-rights campaigns in the democratic world: in 2022, New Zealand's Supreme Court ruled that the current voting age of 18 constitutes a breach of the New Zealand Bill of Rights Act for 16- and 17-year-olds — an unjustified limit on the right to be free from age discrimination. The ruling did not itself change the law (that requires a 75% parliamentary majority or a referendum), but it established that the current law is rights-infringing, putting the onus on parliament to justify maintaining it.

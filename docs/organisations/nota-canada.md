@@ -57,18 +57,18 @@ activity:
       Ford Government in Election'
     url: https://nota.ca/news/
   dod:
-    checked: 2026-07-19
-    date: 2025-01-27
-    note: Website live and actively campaigning; Jan 2025 posts on Ontario provincial
-      election, candidate pages current.
+    date: 2026-09-15
+    note: Site live; most recent news item Jan 2025 re Ontario provincial election;
+      confirmed active.
     url: https://nota.ca
+    checked: 2026-09-15
   rss:
     checked: 2026-09-11
     date: 2025-01-28
     note: 'Latest post: None of the Above Party Calls for Referendum on Trump Tariffs,
       Strategic Voting '
     url: https://nota.ca/none-of-the-above-party-calls-for-referendum-on-trump-tariffs/
-last_checked: '2026-07-19'
+last_checked: '2026-09-15'
 ---
 
 The None of the Above Party (NOTA) is a Canadian provincial party registered in Ontario. Its candidates run as independents committed to direct democracy reforms rather than party-line voting. The party's platform centres on what it calls the 3Rs: Referendum (citizens can initiate binding referendums), Recall (voters can remove elected members between elections), and Responsible Government (structural accountability reforms).

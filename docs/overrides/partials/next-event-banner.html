@@ -10,10 +10,31 @@
      edge bar); on the calendar page — an aggregate of every tracked
      org's events — it renders as a bordered card inside the normal
      content column instead, there to make DOD's own next event easy to
-     spot rather than buried in the all-orgs list below. -->
+     spot rather than buried in the all-orgs list below.
+
+     next_notable_event() only ever selects from _events, which
+     hooks/calendar_export.py's on_pre_build already restricts to
+     date >= today — but that filter runs once, at *build* time. This is
+     a static site: the event picked as "next" can finish hours after the
+     build and this exact page keeps being served, unchanged, until the
+     next deploy — there's no server-side request to re-filter on. The
+     calendar's own event list corrects for the same staleness client-
+     side (see calendar.html's collapsePastAndHighlightNear()); the
+     inline script below does the equivalent for this banner, since it's
+     a separate template fragment with its own lifecycle (rendered before
+     calendar.html's own scripts block even runs, and included as-is on
+     the home page, which has no calendar script at all). Past the
+     event's end it greys the banner out in place rather than pretending
+     nothing happened; a week past, it removes the banner outright — by
+     then the next real deploy has near-certainly already dropped it, and
+     a week-old "recent event" bar stops being useful to a visitor. -->
 {%- set next_dod_event = next_notable_event("designing-open-democracy") %}
 {%- if next_dod_event %}
-<section id="next-event-banner" class="mdx-container{% if next_event_banner_flush %} next-event-banner--flush{% endif %}">
+<section id="next-event-banner" class="mdx-container{% if next_event_banner_flush %} next-event-banner--flush{% endif %}"
+  data-date="{{ next_dod_event.date.isoformat() }}"
+  {%- if next_dod_event.end_date %} data-end-date="{{ next_dod_event.end_date.isoformat() }}"{% endif %}
+  {%- if next_dod_event.time %} data-time="{{ next_dod_event.time }}"{% endif %}
+  {%- if next_dod_event.end_time %} data-end-time="{{ next_dod_event.end_time }}"{% endif %}>
   <a id="next-event-banner-link" href="{{ next_dod_event.url }}" target="_blank" rel="noopener">
     <img id="next-event-banner-logo" src="/assets/dodlogo_transparent.png" alt="Designing Open Democracy logo">
     <span id="next-event-banner-body">
@@ -33,4 +54,48 @@
     <span id="next-event-banner-cta">Details →</span>
   </a>
 </section>
+<script>
+(function () {
+  var banner = document.getElementById('next-event-banner');
+  if (!banner) return;
+  var dateStr = banner.getAttribute('data-date');
+  if (!dateStr) return;
+
+  // Same local-midnight parsing and HH:MM handling as calendar.html's
+  // eventEnd() — duplicated rather than shared, since this fragment is
+  // included on pages that don't load calendar.html's script at all.
+  function parseLocalDate(s) {
+    var parts = s.split('-');
+    return new Date(Number(parts[0]), Number(parts[1]) - 1, Number(parts[2]));
+  }
+  var HHMM = /^\s*(\d{1,2}):(\d{2})\s*$/;
+  function applyTime(d, raw) {
+    var m = raw && HHMM.exec(raw);
+    if (!m || Number(m[1]) > 23 || Number(m[2]) > 59) return false;
+    d.setHours(Number(m[1]), Number(m[2]), 0, 0);
+    return true;
+  }
+
+  var end = parseLocalDate(banner.getAttribute('data-end-date') || dateStr);
+  // No end time means an all-day event, which runs until the end of its
+  // last day, not until midnight starting it.
+  if (!applyTime(end, banner.getAttribute('data-end-time'))) end.setHours(23, 59, 59, 999);
+
+  var now = new Date();
+  if (now < end) return; // still upcoming — leave the banner as-is
+
+  var HIDE_AFTER_MS = 7 * 86400000; // one week
+
+  if (now - end >= HIDE_AFTER_MS) {
+    banner.remove();
+    return;
+  }
+
+  banner.classList.add('next-event-banner--past');
+  var eyebrow = document.getElementById('next-event-banner-eyebrow');
+  if (eyebrow) eyebrow.textContent = '✓ Recent Designing Open Democracy event';
+  var cta = document.getElementById('next-event-banner-cta');
+  if (cta) cta.textContent = 'Recap →';
+})();
+</script>
 {%- endif %}

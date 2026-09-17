@@ -47,15 +47,15 @@ events:
   type: conference
 activity:
   dod:
-    checked: 2026-06-29
-    date: 2026-06-29
-    note: Direct fetch blocked (503) this run; web search confirms the 14th National
-      Committee's annual session ran 4–11 March 2026 (2,078 of 2,125 members attended),
-      consistent with continued operation.
+    date: 2026-09-13
+    note: Site loads (200 via browser UA; plain fetch got 503) — content/structure
+      unchanged from prior review; no public contact info found.
+    url: http://en.cppcc.gov.cn
+    checked: 2026-09-13
   rss:
     checked: 2026-09-11
     note: No feed found
-last_checked: '2026-06-29'
+last_checked: '2026-09-13'
 ---
 
 > **Note:** The CPPCC is not an independent institution. Scholars of Chinese politics characterise it as a **"flower vase"** — decorative rather than functional — and describe its members as operating under **["bounded articulation"](https://link.springer.com/article/10.1007/s11366-015-9329-3)**: they can raise proposals within preset CPC limits but cannot challenge the structure of CPC authority. Membership is pre-approved by the United Front Work Department. It is included here not as a functioning accountability mechanism, but as a documented case of where managed consultation fails the good-faith test — and as context for understanding China's own democratic theory.

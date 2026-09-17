@@ -73,12 +73,19 @@ activity:
     checked: 2026-08-07
     date: 2026-08-07
     note: This entry, and everything else on this site, is evidence of its own activity.
+  dod:
+    date: 2026-09-17
+    note: Self-authored entry; site confirmed live, latest blog post is the 25 Aug
+      2026 International Day of Democracy panel announcement (event already recorded).
+      Mission description and links unchanged.
+    url: https://www.designingopendemocracy.com
+    checked: 2026-09-17
   sitemap:
     date: 2026-09-11
     note: Page last modified (from sitemap)
     url: https://designingopendemocracy.com/sitemap.xml
     checked: 2026-09-11
-last_checked: '2026-08-09'
+last_checked: '2026-09-17'
 ---
 
 *A note on this entry: every other page in the Democracy Landscape is DOD monitoring an organisation from the outside, arm's length, no formal relationship. This one is different — DOD writing about itself, on its own site. Read it with that in mind rather than as independent verification.*

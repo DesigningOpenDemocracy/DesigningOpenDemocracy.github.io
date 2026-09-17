@@ -147,6 +147,31 @@ class OnPageContentTests(_FootnoteFragmentsTestBase):
         self.assertIn("🗃️", result)
         self.assertNotIn("no longer live", result)
 
+    def test_dead_status_escapes_demoted_url(self):
+        raw_url = 'https://example.org/x?a=1&b=2'
+        html_src = f'<li id="fn:a"><a href="{raw_url}">Title</a></li>'
+        md_src = f'[^a]: "quoted text here," [Title]({raw_url}), Source.'
+        self._set_archive_cache({
+            raw_url: {
+                "archive_url": self.ARCHIVE_URL,
+                "url_status": "dead",
+            },
+        })
+        result = self._render(md_src, html_src)
+        self.assertIn('https://example.org/x?a=1&amp;b=2', result)
+        self.assertIn("no longer live", result)
+
+    def test_archive_link_escapes_url(self):
+        unsafe_archive = 'https://web.archive.org/web/2026/https://example.org?a=1&b=2" onclick="alert(1)'
+        self._set_archive_cache({
+            "https://example.org/x": {
+                "archive_url": unsafe_archive,
+            },
+        })
+        result = self._render(self.MARKDOWN, self.HTML)
+        self.assertIn('href="https://web.archive.org/web/2026/https://example.org?a=1&amp;b=2&quot; onclick=&quot;alert(1)"', result)
+        self.assertNotIn('onclick="alert(1)"', result)
+
 
 class ProofBadgeTests(_FootnoteFragmentsTestBase):
     """The three "traffic light" badges: a grey 'Citation only' pill for

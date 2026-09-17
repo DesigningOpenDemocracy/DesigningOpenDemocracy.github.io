@@ -54,18 +54,17 @@ events:
   type: other
 activity:
   dod:
-    checked: 2026-07-16
-    date: 2026-07-16
-    note: 'Site active with current campaigns: opposing Attorney General dismissal,
-      equal conscription law, and demanding a State Commission of Inquiry into Oct
-      7 failures; confirms ongoing watchdog/litigation activity'
+    date: 2026-09-15
+    note: Site live; upcoming events listed into 2026, current campaigns (Attorney
+      General dismissal, equal conscription) confirm ongoing operations.
     url: https://mqg.org.il/en
+    checked: 2026-09-15
   rss:
     date: 2026-09-07
     note: 'Latest post: עצומה – מוציאים אותם מלשכת ראש הממשלה!'
     url: https://petition.mqg.org.il/qatargate_pm_office/
     checked: 2026-09-11
-last_checked: '2026-07-16'
+last_checked: '2026-09-15'
 ---
 
 The Movement for Quality Government in Israel (MQG) has operated since 1990 as Israel's primary watchdog organisation for government accountability, anti-corruption, and rule of law. Its approach combines strategic litigation, Supreme Court petitions, investigative research, and civic education — holding the Israeli government accountable to its own stated legal and democratic standards.

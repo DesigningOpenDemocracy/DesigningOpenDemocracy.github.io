@@ -361,6 +361,31 @@
     }
 }
 
+/* Client-side "event just ended" treatment — set by the inline script in
+   partials/next-event-banner.html once the viewer's own clock shows the
+   event is over. A finished event drops out of next_notable_event()'s
+   selection on the *next* build (hooks/calendar_export.py only ever
+   selects date >= today), but this exact static page can still be served
+   for a while before that build lands — greyed out here rather than
+   removed outright for its first week, since "DOD was just at this"
+   remains useful context; the same script removes the banner entirely
+   once it's a week past the event's end. */
+#next-event-banner.next-event-banner--past {
+    background: rgb(238, 238, 238);
+    border-color: rgba(0, 0, 0, 0.12);
+}
+#next-event-banner.next-event-banner--past #next-event-banner-eyebrow,
+#next-event-banner.next-event-banner--past #next-event-banner-cta {
+    color: #6b6b6b;
+}
+#next-event-banner.next-event-banner--past #next-event-banner-title {
+    color: #000000a0;
+}
+#next-event-banner.next-event-banner--past #next-event-banner-logo {
+    filter: grayscale(1);
+    opacity: 0.8;
+}
+
 #hero-container {
     min-height:100vh; 
     background-color: rgba(255, 255, 255, 0.90);
@@ -921,14 +946,25 @@
     background: rgba(128, 128, 128, 0.12);
 }
 
+.org-activity-btn:focus-visible {
+    outline: 2px solid var(--md-accent-fg-color, #49a7e9);
+    outline-offset: 2px;
+}
+
 .org-activity-btn.active {
     background: var(--md-primary-fg-color);
     color: var(--md-primary-bg-color);
     border-color: var(--md-primary-fg-color);
 }
 
+<<<<<<< HEAD
+.org-activity-btn:focus-visible,
+.md-typeset .org-facet-dd > summary:focus-visible {
+    outline: 2px solid var(--md-accent-fg-color, var(--md-primary-fg-color));
+=======
 .org-activity-btn:focus-visible {
     outline: 2px solid var(--md-accent-fg-color, #49a7e9);
+>>>>>>> 4951f46 (🎨 Palette: Add focus visible indicators and ARIA pressed states for filter controls)
     outline-offset: 2px;
 }
 
@@ -970,6 +1006,11 @@
 
 .org-export-filtered-btn:hover {
     text-decoration: none;
+}
+
+.org-export-filtered-btn:focus-visible {
+    outline: 2px solid var(--md-accent-fg-color, #49a7e9);
+    outline-offset: 2px;
 }
 
 .org-ext-link {
@@ -1922,6 +1963,54 @@
   font-style: italic;
   color: var(--md-default-fg-color--light);
   margin: 0.15em 0 0.1em 0;
+}
+/* Expandable description for a curated event, mirroring the <details> the org
+   page wraps the same note/quote pair in. */
+.calendar-event-detail {
+  display: block;
+  margin-top: 0.35em;
+}
+.calendar-event-detail summary {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  list-style: none;
+  font-size: 0.8em;
+  color: var(--md-default-fg-color--light);
+}
+.calendar-event-detail summary::-webkit-details-marker {
+  display: none;
+}
+.calendar-event-detail summary::before {
+  content: "▸";
+  margin-right: 0.4em;
+  font-size: 0.8em;
+  opacity: 0.5;
+}
+.calendar-event-detail[open] summary::before {
+  content: "▾";
+}
+.calendar-event-detail summary:hover {
+  color: var(--md-default-fg-color);
+}
+.calendar-event-note {
+  margin: 0.4em 0 0;
+  font-size: 0.85em;
+  color: var(--md-default-fg-color--light);
+}
+.calendar-event-quote {
+  margin: 0.4em 0 0;
+  padding: 0.3em 0.7em;
+  border-left: 2px solid var(--md-default-fg-color--lighter);
+  font-size: 0.85em;
+  font-style: italic;
+  color: var(--md-default-fg-color--light);
+}
+.calendar-event-quote::before {
+  content: "\201C";
+}
+.calendar-event-quote::after {
+  content: "\201D";
 }
 .calendar-event-coverage {
   font-size: 0.85em;

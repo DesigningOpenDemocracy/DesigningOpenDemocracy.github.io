@@ -84,16 +84,17 @@ elections:
     quote: "A state general election is scheduled to be held on 28 November 2026 to elect members of the 61st Parliament of Victoria."
     url_checked: 2026-09-02
 
-  - date: 2026-10-01
+  - date: 2026-10-05
+    end_date: 2026-10-27
     country: AU
     jurisdiction: Tasmania
     level: local
     title: Tasmanian local elections
-    date_status: month
-    date_note: "An all-postal ballot the Tasmanian Electoral Commission runs across September and October 2026 rather than on one polling day; the calendar shows the month the election is held in."
+    date_status: fixed
+    date_note: "An all-postal ballot the Tasmanian Electoral Commission runs over these three weeks rather than on one polling day; counting begins 28 October."
     url: https://en.wikipedia.org/wiki/2026_Tasmanian_local_elections
-    quote: "The 2026 Tasmanian local elections will be held in October 2026 to elect the councils, mayors and deputy mayors of the 29 local government areas (LGAs) in Tasmania."
-    url_checked: 2026-09-02
+    quote: "5 October — Voting begins ... 27 October — Voting closes"
+    url_checked: 2026-09-16
 
   - date: 2027-03-13
     country: AU
@@ -172,15 +173,6 @@ elections:
   # ---- Rest of the world -------------------------------------------------
   #
   # A selection, not an index — see this file's header. Ordered by date.
-
-  - date: 2026-09-13
-    country: SE
-    level: national
-    title: Swedish general election
-    date_status: fixed
-    url: https://en.wikipedia.org/wiki/2026_Swedish_general_election
-    quote: "General elections will be held in Sweden on 13 September 2026 to elect the 349 members of the Riksdag."
-    url_checked: 2026-09-02
 
   - date: 2026-10-03
     country: LV
@@ -320,3 +312,13 @@ elections:
     url: https://en.wikipedia.org/wiki/2027_Argentine_general_election
     quote: "General elections are scheduled to take place in Argentina on 24 October 2027. Voters will elect the president and vice president of Argentina, members in the Chamber of Deputies and Senate, and the governors of most provinces."
     url_checked: 2026-09-02
+
+  - date: 2030-09-08
+    country: SE
+    level: national
+    title: Swedish general election
+    date_status: expected
+    date_note: "The Instrument of Government fixes polling day as the second Sunday in September every four years; the 2030 date follows from that rule rather than a formal announcement."
+    url: https://en.wikipedia.org/wiki/Elections_in_Sweden
+    quote: "Elections to Sweden's county councils occur simultaneously with the general elections on the second Sunday of September."
+    url_checked: 2026-09-14

@@ -54,12 +54,20 @@ events:
   notable_reason: First national citizens' council of its kind in Sweden
   type: deliberation
 activity:
+  dod:
+    date: 2026-09-17
+    note: About page confirms org still active as an official Decidim partner running
+      citizen dialogues for Nordic municipalities; mission summary matches. Recorded
+      contact email (support@digidemlab.org) still current; a named director address
+      was also found but a general address is already on file.
+    url: https://digidemlab.org/en/about/
+    checked: 2026-09-17
   rss:
     checked: 2026-09-11
     date: 2026-06-02
     note: 'Latest post: Panelsamtal med Audrey Tang'
     url: https://digidemlab.org/news/panelsamtal-kan-deltagandedemokrati-bli-en-motkraft-i-en-orolig-tid/
-last_checked: '2026-08-09'
+last_checked: '2026-09-17'
 ---
 
 Digidem Lab is a Gothenburg-based democracy innovation organisation that designs and implements digital participatory processes. It is an official partner and provider of the Decidim platform (the Barcelona-originated open-source participatory democracy framework) for the Nordic market, adapting the platform's citizen proposals, participatory budgeting, and consultation tools to Swedish and Nordic governance contexts.
