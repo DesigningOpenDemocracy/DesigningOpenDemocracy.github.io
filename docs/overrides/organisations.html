@@ -130,11 +130,17 @@
           </tr>
           {%- endif %}
         {%- endfor %}
+        <tr id="org-empty-row" class="org-empty-row" hidden>
+          <td colspan="7">
+            No organisations match your search or filter criteria.
+            <button type="button" id="org-empty-clear" class="org-empty-clear-btn">Clear filters</button>
+          </td>
+        </tr>
       </tbody>
     </table>
     </div>
     <div class="org-table-footer">
-      <p id="org-count" class="org-count"></p>
+      <p id="org-count" class="org-count" aria-live="polite"></p>
       <p class="org-export-links">
         <button type="button" id="org-export-filtered" class="org-export-filtered-btn">Export filtered view (CSV)</button>
         &nbsp;·&nbsp; Download full dataset:
@@ -196,7 +202,7 @@
   var sortCol = -1, sortAsc = true;
   var activeDays = 0;
 
-  function rows() { return Array.from(tbody.querySelectorAll('tr')); }
+  function rows() { return Array.from(tbody.querySelectorAll('tr:not(.org-empty-row)')); }
 
   // Replace country code text with emoji flag + full name in table cells
   rows().forEach(function (r) {
@@ -327,6 +333,8 @@
       r.hidden = !show;
       if (show) visible++;
     });
+    var emptyRow = document.getElementById('org-empty-row');
+    if (emptyRow) emptyRow.hidden = (visible > 0);
     countEl.textContent = visible + ' organisation' + (visible !== 1 ? 's' : '');
     updateFacetCounts();
     updateFacetBadges();
@@ -385,6 +393,13 @@
       applyFilters();
     });
   });
+
+  var emptyClearBtn = document.getElementById('org-empty-clear');
+  if (emptyClearBtn) {
+    emptyClearBtn.addEventListener('click', function () {
+      clearBtn.click();
+    });
+  }
 
   clearBtn.addEventListener('click', function () {
     search.value = '';
