@@ -52,7 +52,43 @@ equal weight, not just build a case for inclusion.
 | Animal Justice Party | No | Platform states general "transparency" and "participatory democracy" commitments only as applied to animal-welfare decision-making, not as an independent governance-reform campaign |
 | Legalise Cannabis Australia | No | Confirmed single-issue party; no sourced record on electoral reform, donations transparency, or internal democracy |
 | Socialist Alliance | No | Very marginal (~0.08% of the 2022 House vote); self-describes commitment to "radical democracy" but no sourced specifics found |
-| Shooters, Fishers and Farmers | Cuts against | Documented as a paying participant (2013 federal election) in Glenn Druery's "Minor Party Alliance" preference-harvesting operation — reported by the Daily Telegraph ("Alliance of micro parties boosts odds for likes of One Nation or Shooters and Fishers," Sep 2013) as cited in [Wikipedia: Glenn Druery](https://en.wikipedia.org/wiki/Glenn_Druery). Group-voting-ticket arrangements that election-integrity advocates like Antony Green have campaigned to abolish. The opposite of transparency reform, not neutral. |
+| Shooters, Fishers and Farmers | Cuts against — but see the sourcing correction below | Participated in Glenn Druery's "Minor Party Alliance" preference-harvesting operation at the 2013 federal election, and had Druery on the party's own payroll. Per [Wikipedia: Shooters, Fishers and Farmers Party](https://en.wikipedia.org/wiki/Shooters,_Fishers_and_Farmers_Party), which attributes the MPA involvement to [ABC News](http://www.abc.net.au/news/2013-09-05/bitter-dispute-erupts-over-senate-preferences-in-queensland/4939300) and the [Daily Telegraph](http://www.dailytelegraph.com.au/news/special-features/alliance-of-micro-parties-boosts-odds-for-likes-of-one-nation-or-shooters-and-fishers-gaining-senate-spot-through-preferences/story-fnho52jp-1226713114765) (both 5 September 2013), and the remuneration specifically to [InDaily](http://indaily.com.au/news/2014/02/21/preference-whisper-gon-fishin/) (21 February 2014). Group-voting-ticket arrangements are what election-integrity advocates campaigned to abolish; DOD's reading is that this cuts against a governance-reform record rather than sitting neutral to it. |
+
+### SFF sourcing correction (2026-09-17)
+
+The Shooters, Fishers and Farmers row above was rewritten after a review
+found three problems with how it had been sourced. Recorded here rather
+than silently patched, since the verdict is the most accusatory in the
+table and the original was the weakest-sourced claim in it.
+
+1. **Wrong article cited.** The row cited [Wikipedia: Glenn
+   Druery](https://en.wikipedia.org/wiki/Glenn_Druery) — which does not
+   mention Shooters at all, and carries neither the Daily Telegraph
+   reference nor any claim about the party. The material is on the
+   *Shooters, Fishers and Farmers Party* article instead. The Telegraph
+   headline the row quoted is real; it was simply attached to the wrong
+   page.
+2. **Payment direction reversed.** The row said SFF was "a paying
+   participant … in Druery's operation", implying the party paid a fee to
+   join the alliance — the arrangement Fiona Patten later described to the
+   VEC ($5,000 up front, $50,000 per member elected). What the source
+   actually says is the opposite direction: Druery "was on its payroll"
+   and "was remunerated by the Shooters and Fishers Party for assisting in
+   organising preference meetings". SFF employed him; it did not buy in.
+3. **Misattributed within the sources.** The Telegraph and ABC references
+   support the *MPA involvement*. The *remuneration* claim is sourced
+   solely to InDaily. The row credited the payment claim to the Telegraph.
+
+**Evidentiary standing after the fix.** MPA participation is the
+better-attested half — two independent outlets, and it carries the verdict
+on its own. The payroll detail is single-sourced to InDaily. None of the
+three has been verified against the original reporting: all return HTTP 403
+to scripted fetches as of 2026-09-17, and the Wayback Machine was returning
+429/500/523 that day, so no archived copy could be reached either. This
+finding therefore rests on Wikipedia's summary of those sources, which
+CLAUDE.md's own rule treats as a lead rather than a source. Worth
+confirming in a browser before this verdict is ever repeated outside this
+note.
 
 ### VS analysis
 
