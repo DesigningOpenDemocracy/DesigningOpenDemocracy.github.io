@@ -1056,6 +1056,13 @@
     "source": "https://www.v-dem.net/static/website/img/apple-touch-icon.44005a76ca0b.png",
     "title": "V-Dem Institute"
   },
+  "victorian-electoral-commission": {
+    "license": "Fair use",
+    "note": "site favicon, auto-detected apple-touch-icon",
+    "path": "victorian-electoral-commission-icon.png",
+    "source": "https://www.vec.vic.gov.au/assets/img/favicons/apple-touch-icon.png",
+    "title": "Victorian Electoral Commission"
+  },
   "vietnam-fatherland-front": {
     "license": "Fair use",
     "note": "official emblem, site favicon",
