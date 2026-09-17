@@ -71,7 +71,7 @@ CAfSA's advisory board is notably cross-partisan:
 
 - **Jay Weatherill AO** — former SA Premier (Labor, 2011–2018)
 - **Simon Birmingham** — former Liberal Senator for SA (2007–2025)
-- **Iain Walker** — Executive Director, [newDemocracy Foundation](newdemocracy.md)
+- **Iain Walker** — Director, Advocacy and Board member, [newDemocracy Foundation](newdemocracy.md) (Executive Director 2011–2026)
 - **Dr Sonia Randhawa** — [Sortition Foundation Australia](sortition-foundation-australia.md)
 - **David Van Reybrouck** — Belgian cultural historian, founded the G1000 Citizens' Summit, author of *Against Elections*
 

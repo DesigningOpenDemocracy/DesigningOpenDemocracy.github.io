@@ -5603,6 +5603,38 @@
     ],
     "last_modified": null
   },
+  "https://newdemocracyfoundation.substack.com/p/a-new-chapter-for-newdemocracy": {
+    "checked": "2026-09-17",
+    "document_sha256": "7cc29b4538163ac528e4b3b540e20a7dfd6883d937c4fe8e9387d0d52dcd182a",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-09-17",
+        "context": {
+          "prefix": "ettis. But before handing over the reins, Iain has one particularly significant engagement ahead. From Sydney to the United Nations",
+          "sha256": "7edc7fabb1331bfa54c52b8e357012f7800b5808b227d825a4cd22a05b7e11e5",
+          "suffix": "Produced in partnership with the United Nations Development Programme and United Nations Democracy Fund, the handbook brings together practical",
+          "text": "On 15 September, International Day of Democracy, Iain will travel to New York to launch the second edition of our book, Democracy Beyond Elections: A Handbook on Citizens\u2019 Assemblies."
+        },
+        "id": "7edc7fabb1331bfa54c52b8e357012f7800b5808b227d825a4cd22a05b7e11e5",
+        "quote": "On 15 September, International Day of Democracy, Iain will travel to New York to launch the second edition of our book, Democracy Beyond Elections: A Handbook on Citizens\u2019 Assemblies.",
+        "verified": true
+      },
+      {
+        "checked": "2026-09-17",
+        "context": {
+          "prefix": "baton to Kyle Redman. Sep 14, 2026 6 2 Share",
+          "sha256": "1ddee8729e7677c027e5fb5ece88be051764aaaecb912843f583b507334dd75b",
+          "suffix": "It marks the beginning of a new chapter in our two decades of work to strengthen democracy by giving citizens a more meaningful role in public",
+          "text": "After 15 years at the helm of the newDemocracy Foundation, Executive Director Iain Walker is stepping aside, and the Board is pleased to announce that Kyle Redman has been appointed Executive Director."
+        },
+        "id": "1ddee8729e7677c027e5fb5ece88be051764aaaecb912843f583b507334dd75b",
+        "quote": "After 15 years at the helm of the newDemocracy Foundation, Executive Director Iain Walker is stepping aside, and the Board is pleased to announce that Kyle Redman has been appointed Executive Director.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
   "https://newvote.org/the-institute": {
     "checked": "2026-08-26",
     "document_sha256": "ec64c0d32eff492f351e1c76d75e90d0ecff301ff550e2bbc6f787812bb1b436",
@@ -8899,8 +8931,8 @@
     "last_modified": null
   },
   "https://www.newdemocracy.com.au/board-and-executive/": {
-    "checked": "2026-08-26",
-    "document_sha256": "f82fb37738cf86f81a3f595391ff5b26fa3727e20672f5e910b8899dc2578be2",
+    "checked": "2026-09-17",
+    "document_sha256": "d0f0bf565fac253a19acdafbf3fe9ea23c6d88324d568729769700ff62eb2891",
     "etag": null,
     "evidence": [
       {
@@ -8913,21 +8945,47 @@
         "id": "94fe21be6bb2347c6982d6c48e46edb15757d4bcc6490a6dc7603082a7db11d7",
         "quote": "Iain Walker is Executive Director of the newDemocracy Foundation (nDF) in Australia, a role he has held since 2011.",
         "verified": true
+      },
+      {
+        "checked": "2026-09-17",
+        "context": {
+          "prefix": "rsity. He is a pro bono Director of The newDemocracy Foundation. Kyle Redman Executive Director",
+          "sha256": "e2aa0a2d08192d7f1ce7f7f89cf1a4b85a3bdf2267e2b113a72aacfd95309d9a",
+          "suffix": "He has contributed to over 20 deliberative processes in Australia and abroad, including in places as diverse as Spain, Brazil, Ukraine and the United",
+          "text": "Kyle Redman is Executive Director of the New Democracy Foundation. He has contributed to over 20 deliberative processes in Australia and abroad, including in places as diverse as Spain, Brazil, Ukraine and the United States. He collaborates with the AI & Democracy Foundation, and has previously worked for and held an executive board position at the Federation for Innovation in Democracy \u2013 Europe, and was once the Director of Research at New Democracy."
+        },
+        "id": "ff3a172280316e80ac203ab72352f6bc7fb6f95f932916c8ded5012256488dd8",
+        "quote": "Kyle Redman is Executive Director of the New Democracy Foundation.",
+        "verified": true
+      },
+      {
+        "checked": "2026-09-17",
+        "context": {
+          "prefix": "She is a pro bono Director of The newDemocracy Foundation. Iain Walker Director, Advocacy",
+          "sha256": "d639b6eb31097d557d3525a3787eab2c3667ad2b24fa6418e84bfdd478136d77",
+          "suffix": "Iain has led over 30 deliberative projects at local government and state government level including projects for State Premiers on both sides of poli",
+          "text": "Iain Walker is Director of Advocacy. Iain has led over 30 deliberative projects at local government and state government level including projects for State Premiers on both sides of politics. The topics have ranged from long-term budgeting for the $4bn City of Melbourne Financial Plan to the potential for a high-level nuclear waste storage facility in South Australia. From 2011-2026 he was Executive Director of New Democracy. He now serves on the Board."
+        },
+        "id": "bdd8e0328cab116779229e70a130bfa32a7bcd3ac3736cc0402f4477cfab6d1d",
+        "quote": "Iain Walker is Director of Advocacy.",
+        "verified": true
       }
     ],
     "last_modified": null
   },
   "https://www.newdemocracy.com.au/history/": {
-    "checked": "2026-08-26",
+    "checked": "2026-09-17",
     "document_sha256": "3edb657c20fca0f0a9cdadc1ef77a88b61171ac8ba192143400233fa5bfa776b",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-09-17",
         "id": "16875b3a7fbc11dc2b9fed805ea528795b884dd7535d92fe438880445db482d6",
         "quote": "The newDemocracy Foundation was launched in 2007, with Luca Belgiorno-Nettis... as the inaugural directors.",
         "verified": true
       },
       {
+        "checked": "2026-09-17",
         "context": {
           "prefix": "tary and a handbook. Based on that guide, Kyle and Luca wrote a modest little book in 2021, with an immodest title: \u2018The A,B & C of Democracy\u2019.",
           "sha256": "b032384e6b226735fac8f0882e54c4ceef7dc3c2dd726c8508110dfbd2115101",
@@ -8939,6 +8997,7 @@
         "verified": true
       },
       {
+        "checked": "2026-09-17",
         "context": {
           "prefix": "search The story so far (and the route ahead) Australia, Europe and elsewhere",
           "sha256": "b73ba4eaf03a69d08166d2d887e8b5fccc7bc2bc7bad2951386affc055578898",
@@ -8950,6 +9009,7 @@
         "verified": true
       },
       {
+        "checked": "2026-09-17",
         "context": {
           "prefix": "lt her business into one of Australia\u2019s foremost consultancies. Ian was a well-respected academic and political adviser to various Federal Ministers.",
           "sha256": "e34739f08d9203fc55e4dd0282920f9ca4e1d29dc6a7c276558ecf94e784e229",
@@ -8961,6 +9021,7 @@
         "verified": true
       },
       {
+        "checked": "2026-09-17",
         "context": {
           "prefix": "er to various Federal Ministers. Luca had a 30-year career in Transfield, a large infrastructure and engineering company founded by his father.",
           "sha256": "132f0898f4592633ade7c0ba3440c72374fddeff3062d4c355f5efaa2373c347",
