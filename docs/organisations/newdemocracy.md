@@ -50,8 +50,9 @@ events:
   title: Democracy R&D international network founded with newDemocracy as a founding
     member
   url: https://www.newdemocracy.com.au/history/
-  quote: Luca had a 30-year career in Transfield, a large infrastructure and engineering
-    company founded by his father.
+  quote: Carson prompted newDemocracy to establish a global hub for communication
+    and learning, and thus Democracy R&D was born in 2017 as an international network,
+    with over 120 affiliates reaching across all 5 continents and nearly 50 countries.
   proof_level: high
   url_checked: '2026-08-10'
   notable: false

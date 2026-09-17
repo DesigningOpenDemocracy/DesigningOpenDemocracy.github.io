@@ -9031,6 +9031,18 @@
         "id": "e84567dc0ad975cc7a82a955c502f06d673cc33abf48b5c40cc77a70d2a89af5",
         "quote": "Our first big project was the Australian Citizens\u2019 Parliament in 2009, which was an Australian Research Centre-funded citizens\u2019 assembly involving 150 Australians deliberating on how to strengthen Australia\u2019s system of government.",
         "verified": true
+      },
+      {
+        "checked": "2026-09-17",
+        "context": {
+          "prefix": "dertook more than 30 citizens\u2019 juries/assemblies. During this period, as the number of like-minded people and organisations grew substantially,",
+          "sha256": "4da31112e30f7189e55424fffd35084c919d820ecdf4783951fe14bef8a311a1",
+          "suffix": "David Schecter became the co-ordinator, based in San Francisco. Carson also began producing research notes with support from Kyle Redman, David Schec",
+          "text": "During this period, as the number of like-minded people and organisations grew substantially, Carson prompted newDemocracy to establish a global hub for communication and learning, and thus Democracy R&D was born in 2017 as an international network, with over 120 affiliates reaching across all 5 continents and nearly 50 countries. David Schecter became the co-ordinator, based in San Francisco. Carson also began producing research notes with support from Kyle Redman, David Schecter and many international practitioners and scholars; and then a podcast series, Facilitating Public Deliberations, with Nivek Thompson."
+        },
+        "id": "eb6ad5634d7e8db025e59b9702ec572cf8dd9d9260ab7926ebd0f5d000046b98",
+        "quote": "Carson prompted newDemocracy to establish a global hub for communication and learning, and thus Democracy R&D was born in 2017 as an international network, with over 120 affiliates reaching across all 5 continents and nearly 50 countries.",
+        "verified": true
       }
     ],
     "last_modified": null
