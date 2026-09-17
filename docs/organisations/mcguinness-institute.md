@@ -46,18 +46,31 @@ events:
   quote: Our 2012 name change was for several reasons.
   proof_level: high
   url_checked: '2026-08-17'
+- date: '2026-09-30'
+  title: 'Discussion paper launch: "After the Election" — conversation with Wendy
+    McGuinness on the architecture of the 55th Government of New Zealand'
+  url: https://www.mcguinnessinstitute.org/events/upcoming-events/
+  quote: 'which invites readers to consider a simple but important question: if you
+    were Prime Minister and tasked with designing New Zealand’s machinery of government,
+    what would it look like? Wendy will share her thoughts at the Institute’s Wellington
+    office. Wednesday 30 September 12pm–1:30pm (starts at 12:15pm)'
+  proof_level: high
+  url_checked: '2026-09-17'
+  notable: false
+  type: launch
+  location: Wellington, New Zealand
 activity:
   dod:
+    checked: 2026-09-17
     date: 2026-09-17
     note: Homepage confirms org still active with events through September 2026, including
       public launch of the 'On the Fence' voter-advice tool with Massey University;
       foresight/CivicsNZ mission matches. Contact audit found a public email and phone
       not previously recorded, added to contact:.
     url: https://www.mcguinnessinstitute.org
-    checked: 2026-09-17
   rss:
-    note: No feed found
     checked: 2026-09-11
+    note: No feed found
 last_checked: '2026-09-17'
 ---
 
