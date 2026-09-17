@@ -6,9 +6,14 @@ country: KE
 website: https://governancehubafrica.org
 logo: /assets/org-logos/governance-hub-africa.png
 contact:
-  checked: 2026-08-09
+  checked: 2026-09-17
+  email: info@governancehubafrica.org
   form: https://governancehubafrica.org/contact
-  source: https://governancehubafrica.org
+  note: Site was previously JS-rendered/unreadable to plain scripted fetches (see
+    the org's events note) — email/phone recovered from a rendered fetch of the contact
+    page on 2026-09-17.
+  phone: +233 256 124 067
+  source: https://governancehubafrica.org/contact
 summary: A non-partisan regional platform working at the intersection of democratic
   governance, elections, digital innovation, and policy reform across all 55 AU member
   states — active through 2026 with programmes on civic empowerment, electoral integrity,
@@ -40,10 +45,18 @@ events:
   url_checked: '2026-08-21'
   notable: false
 activity:
+  dod:
+    date: 2026-09-17
+    note: Contact page rendered via fetch (still a JS-only shell to plain curl) confirms
+      org still active; civic-empowerment/electoral-integrity/digital-democracy mission
+      matches. Contact audit found a public email and phone not previously recorded,
+      added to contact:.
+    url: https://governancehubafrica.org
+    checked: 2026-09-17
   rss:
     checked: 2026-09-11
     note: No feed found
-last_checked: '2026-08-09'
+last_checked: '2026-09-17'
 ---
 
 Governance Hub Africa is a Nairobi-based regional platform working on democratic governance across the 55 member states of the African Union. It operates at the intersection of elections, digital innovation, policy advisory, and institutional reform — treating these not as separate domains but as interconnected elements of a governance system.

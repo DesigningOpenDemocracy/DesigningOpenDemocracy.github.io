@@ -56,12 +56,19 @@ events:
   notable_reason: First edition of the flagship Conecta Latinas gathering
   type: conference
 activity:
+  dod:
+    date: 2026-09-17
+    note: Homepage confirms org still active; regional political-innovation-for-women
+      mission summary matches. Recorded contact email still current (site footer shows
+      a mailto link to the same address family).
+    url: https://www.institutoupdate.org.br
+    checked: 2026-09-17
   rss:
     checked: 2026-09-11
     date: 2026-08-09
     note: RSS feed active
     url: https://www.institutoupdate.org.br/feed
-last_checked: '2026-08-09'
+last_checked: '2026-09-17'
 ---
 
 Instituto Update describes itself as "the missing infrastructure for the democracy we want" — a regional platform for political innovation and imagination in the Global South. Its focus is on expanding political participation for women who are underrepresented in conventional democratic institutions: Black, Indigenous, and LGBTQIA+ women, particularly in Latin America and increasingly in Africa.

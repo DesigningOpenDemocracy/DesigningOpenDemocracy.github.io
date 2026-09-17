@@ -52,13 +52,22 @@ events:
   notable_reason: Strategic pivot of the Institute's flagship annual symposium
   type: conference
 activity:
+  dod:
+    date: 2026-09-17
+    note: Direct fetch timed out twice (network issue reaching goreeinstitut.org);
+      corroborated active via web search — org's own site indexes a 24-26 Mar 2026
+      Annual Symposium (9th edition, 'Youth and Inclusive Governance', already recorded
+      as an event) and a 16-17 Feb 2026 Dakar regional democracy conference. Mission/location
+      unchanged.
+    url: https://goreeinstitut.org
+    checked: 2026-09-17
   rss:
     date: 2026-09-07
     note: 'Latest post: Renforcement du dialogue stratégique entre le Sénégal et l’Allemagne
       autour des '
     url: https://goreeinstitut.org/renforcement-du-dialogue-strategique-entre-le-senegal-et-lallemagne-autour-des-enjeux-de-paix-de-securite-et-de-gouvernance/
     checked: 2026-09-11
-last_checked: '2026-08-09'
+last_checked: '2026-09-17'
 ---
 
 The Gorée Institute was founded in 1992 on Gorée Island — the symbolic heart of the Atlantic slave trade, now a UNESCO World Heritage site — as a Centre for Democracy, Development and Culture in Africa. It holds diplomatic status and has been a fixture of West African democratic civil society for nearly 35 years.

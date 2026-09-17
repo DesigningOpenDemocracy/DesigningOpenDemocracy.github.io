@@ -6,8 +6,8 @@ country: CO
 website: https://foro.org.co
 logo: /assets/org-logos/foro-nacional-por-colombia.svg
 contact:
-  checked: 2026-08-09
-  email: foro@foro.org.co
+  checked: 2026-09-17
+  email: contactenos@foro.org.co
   source: https://foro.org.co
 summary: A long-established Colombian civil society foundation working on citizen
   participation, peace accord implementation monitoring, and extractive industry governance
@@ -33,13 +33,20 @@ events:
   notable: true
   notable_reason: Founding of the organisation
 activity:
+  dod:
+    date: 2026-09-17
+    note: Homepage confirms org still active with 2025-2026 events/publications; citizen-participation/peace-accord-monitoring
+      mission matches. Contact email had gone stale (foro@foro.org.co no longer appears
+      on site) — updated to the site's current general address, contactenos@foro.org.co.
+    url: https://foro.org.co
+    checked: 2026-09-17
   rss:
     checked: 2026-09-11
     date: 2026-04-21
     note: 'Latest post: Informe Cuatro. Observatorio de la participación ciudadana
       en la implementación '
     url: https://foro.org.co/informe-cuatro-observatorio-de-la-participacion-ciudadana-en-la-implementacion-del-acuerdo-final/
-last_checked: '2026-08-09'
+last_checked: '2026-09-17'
 ---
 
 Foro Nacional por Colombia is one of Colombia's longest-established civil society organisations, working on citizen participation, peace accord implementation (through the OPIAF observatory — Observatorio de la Participación Ciudadana en la Implementación del Acuerdo de Paz), extractive industry governance, and youth civic education. Its institutional longevity — decades rather than years — is itself significant in a country where many civil society organisations are project-funded and short-lived.

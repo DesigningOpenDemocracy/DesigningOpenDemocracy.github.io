@@ -50,12 +50,20 @@ events:
   location: Vienna, Austria
   country: AT
 activity:
+  dod:
+    date: 2026-09-17
+    note: Homepage confirms org still active with 2026 news and training programmes;
+      deliberative-democracy/citizens'-assembly mission matches. Recorded contact
+      (europe@fidemocracy.org + form) still current; a separate north.america@fidemocracy.org
+      address also exists but a general channel is already on file.
+    url: https://fidemocracy.org
+    checked: 2026-09-17
   sitemap:
     date: 2026-09-01
     note: Page last modified (from sitemap)
     url: https://fidemocracy.org/sitemap.xml
     checked: 2026-09-11
-last_checked: '2026-08-09'
+last_checked: '2026-09-17'
 ---
 
 FIDE — the Federation for Innovation in Democracy — is an independent network of democratic innovators working to embed deliberative processes in the machinery of governance. Its three pillars are training (capacity-building schools, masterclasses for lead facilitators), design (process architecture for governments at every level, from municipalities to international bodies), and evaluation (learning series, publications, quality standards).

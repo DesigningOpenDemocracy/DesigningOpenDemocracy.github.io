@@ -55,16 +55,18 @@ events:
   notable: false
 activity:
   dod:
-    checked: 2026-08-09
-    date: 2026-08-09
-    note: Confirmed live and active — 2025 project updates on climate assemblies in
-      Pará/Mozambique and Osasco minipublic
+    date: 2026-09-17
+    note: Homepage confirms org still active; mission summary matches (sortition-based
+      minipublics, climate assemblies in Pará/Mozambique, São Paulo urban-safety deliberation).
+      Contact info (email/phone) on site matches recorded contact:.
+    url: https://deliberabrasil.org
+    checked: 2026-09-17
   rss:
     date: 2026-09-11
     note: RSS feed active
     url: https://deliberabrasil.org/feed
     checked: 2026-09-11
-last_checked: '2026-08-09'
+last_checked: '2026-09-17'
 ---
 
 Delibera Brasil designs and facilitates citizens' assemblies and minipublics — randomly selected groups of ordinary citizens who undergo an intensive learning process with experts, deliberate together, and produce policy recommendations. The method treats democracy not as a spectator sport but as something citizens do: given time, balanced information, and a structured process, laypeople reach substantive, considered conclusions on hard policy questions.

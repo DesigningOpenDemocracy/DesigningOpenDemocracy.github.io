@@ -50,13 +50,21 @@ events:
   location: Santiago, Chile
   proof_warning: true
 activity:
+  dod:
+    date: 2026-09-17
+    note: Homepage confirms org still active with August 2026 opinion columns and
+      September 2024/2026 seminars; nine-theme think-tank mission and '100 Think Tanks
+      to Watch 2025' recognition (already recorded) both match. Contact email matches
+      recorded contact:.
+    url: https://www.espaciopublico.cl
+    checked: 2026-09-17
   rss:
     date: 2026-09-10
     note: 'Latest post: Fondos generacionales: expertos abordan desafíos de su implementación
       en Espacio'
     url: https://espaciopublico.cl/fondos-generacionales-expertos-abordan-desafios-de-su-implementacion-en-espacio-publico/
     checked: 2026-09-11
-last_checked: '2026-08-09'
+last_checked: '2026-09-17'
 ---
 
 Espacio Público is an independent research centre in Santiago working across nine thematic areas: democracy and anti-corruption, innovation and ICT, diversity and human rights, cities and territory, youth and education, sustainable growth, social security (health and pensions), sustainability and natural resources, and public opinion. Its Democracy and Anti-Corruption stream includes Lupa Electoral, a campaign finance transparency tool that has been tracking the flow of money into Chilean elections since the post-2015 reforms to political financing.

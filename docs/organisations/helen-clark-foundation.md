@@ -53,10 +53,18 @@ events:
   notable_reason: Flagship publication ahead of a general election
   type: publication
 activity:
+  dod:
+    date: 2026-09-17
+    note: Homepage confirms org still active with Aug-Sep 2026 research output; public-policy/governance/democracy
+      research-stream mission confirmed current via web search (Jonathan Boston-led
+      stream still named 'public policy, governance and the future of democracy').
+      Recorded contact still current.
+    url: https://helenclark.foundation
+    checked: 2026-09-17
   sitemap:
     checked: 2026-09-11
     note: Sitemap found, no lastmod
-last_checked: '2026-08-09'
+last_checked: '2026-09-17'
 ---
 
 The Helen Clark Foundation is an independent public policy think tank based at Auckland University of Technology (AUT). Its research spans four streams: public policy, governance and the future of democracy; sustainability and climate change; inclusive economic development; and a fourth focusing on social wellbeing. The governance and democracy stream positions the Foundation as New Zealand's most prominent institutional voice on democratic reform — distinct from the transparency-and-integrity focus of TINZ and the youth-voting-rights focus of Make It 16.

@@ -62,12 +62,20 @@ activity:
     note: Site loaded, active proposals visible on homepage across a range of policy
       areas.
     url: https://join.gov.tw/
+  dod:
+    date: 2026-09-17
+    note: Platform confirmed active and operational (dynamic data updates every 10
+      minutes; proposal/co-sign/public-consultation/oversight/participatory-budgeting
+      sections all live). Recorded contact (form only) still current — a government
+      platform, no public email listed.
+    url: https://join.gov.tw
+    checked: 2026-09-17
   rss:
     date: 2026-09-11
     note: RSS feed active
     url: https://join.gov.tw/?feed=rss2
     checked: 2026-09-11
-last_checked: '2026-08-09'
+last_checked: '2026-09-17'
 ---
 
 Join (join.gov.tw, officially the Public Policy Online Participation Platform / 公共政策網路參與平臺) is a government-run civic participation platform operated by Taiwan's National Development Council, launched in 2015 with assistance from Digital Minister Audrey Tang's office.[^amcham] It grew out of the same 2014 Sunflower Movement moment that produced [vTaiwan](vtaiwan.md) and [g0v](g0v.md), but took a different institutional path: rather than a volunteer civic-tech collaboration, Join was built and is run directly by government, giving its recommendations formal procedural weight that vTaiwan's advisory-only model never had.
