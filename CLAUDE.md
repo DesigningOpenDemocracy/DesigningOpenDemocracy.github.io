@@ -602,18 +602,38 @@ pushed direct to main — no PR — if they meet all of the following:
 
 ### Internal heartbeat (`internal-heartbeat/`)
 
-A private counterpart to the public heartbeat log, for research and draft
-editorial reasoning that isn't (yet, or ever) ready to be public — e.g.
-assessing whether a politically sensitive org (a political party, say)
-meets the accountability framework's bar for the Democracy Landscape. Lives
-outside `docs/`, so mkdocs never builds it — nothing there can accidentally
-reach the site, unlike a blog post relying on `draft: true` staying set.
+A **semi-private** counterpart to the public heartbeat log — an open
+discussion area for research and draft editorial reasoning that isn't (yet,
+or ever) ready to be presented as a DOD publication, e.g. assessing whether
+a politically sensitive org (a political party, say) meets the
+accountability framework's bar for the Democracy Landscape. Lives outside
+`docs/`, so mkdocs never builds it — nothing there can accidentally reach
+the site, unlike a blog post relying on `draft: true` staying set.
+
+**"Semi-private" means unpublished, not unreadable.** This repo is public,
+so `internal-heartbeat/` is world-readable on GitHub right now; it is simply
+never *rendered* as site content — no page, no feed, no sitemap, no search.
+That is obscurity, not access control. (This section used to open "A private
+counterpart…", and that single word is how an AI session came to propose
+filing genuinely sensitive reasoning here. "Private" reads as a protection
+this directory does not provide.)
+
+So the line to hold: material whose exposure would matter against an actor
+with real capability — a government, or an org with substantial reach — does
+not go here at all. It belongs off-repo entirely. Obscurity is adequate for
+low-stakes working notes and for nothing else.
+
+The call also has to be made **before** committing, not after: a public repo
+is forked, cached and crawled, so there is no practical un-commit. The same
+refusal-to-forget that makes git trustworthy for `document_sha256` integrity
+(see "Citation archival" above) makes it unforgiving about regret.
+
 See `internal-heartbeat/README.md` for conventions and how an entry gets
 promoted to a real public post later, if it ever does. Writable by
 interactive sessions and, per `HEARTBEAT.md`'s Push permissions, the
 scheduled heartbeat bot itself during maintenance runs — lower-stakes than
-anything else the bot direct-pushes, since nothing here can go live
-regardless of what's written.
+anything else the bot direct-pushes, since nothing here is presented as
+DOD's public word regardless of what's written.
 
 ### Concept pages (`docs/concepts/`)
 
