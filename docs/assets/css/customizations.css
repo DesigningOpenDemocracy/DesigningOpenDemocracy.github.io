@@ -1088,6 +1088,35 @@
     text-overflow: ellipsis;
 }
 
+.org-empty-row td {
+    text-align: center;
+    padding: 2.5rem 1rem;
+    color: var(--md-default-fg-color--light);
+    font-size: 0.9em;
+}
+
+.org-empty-clear-btn {
+    display: inline-block;
+    margin-left: 0.5rem;
+    padding: 0.2rem 0.6rem;
+    border: 1px solid rgba(128, 128, 128, 0.4);
+    border-radius: 6px;
+    background: transparent;
+    color: var(--md-typeset-a-color, var(--md-primary-fg-color));
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+
+.org-empty-clear-btn:hover {
+    background: rgba(128, 128, 128, 0.12);
+}
+
+.org-empty-clear-btn:focus-visible {
+    outline: 2px solid var(--md-accent-fg-color, var(--md-primary-fg-color));
+    outline-offset: 2px;
+}
+
 .org-contact-cell {
     font-size: 0.85em;
 }
