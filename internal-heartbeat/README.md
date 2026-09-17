@@ -1,10 +1,20 @@
 # Internal heartbeat
 
-This is a private diary, not a publication. It lives outside `docs/`, so
-mkdocs never builds it — nothing here reaches the site, the sitemap, or
-search, no matter what's written. It's tracked in git like everything else
-in the repo, so it's visible to anyone reading the source, but it is not
-presented as content.
+This is a semi-private working area, not a publication — and "semi-private"
+means *unpublished*, not *unreadable*. It lives outside `docs/`, so mkdocs
+never builds it: nothing here reaches the site, the sitemap, or search, no
+matter what's written. But the repo itself is public, so everything in this
+folder is world-readable on GitHub. It is obscure, not protected.
+
+**Nothing belongs here whose exposure would matter against an actor with
+real capability** — a government, or an org with substantial reach. That
+material goes off-repo entirely; this folder is for low-stakes working notes
+and nothing more. The call has to be made *before* you commit, too: a public
+repo is forked, cached and crawled, so there is no practical un-commit.
+
+(This file used to open "This is a private diary" — accurate about intent,
+misleading about protection, and enough on its own to get sensitive
+reasoning proposed for this folder.)
 
 ## What goes here vs. `docs/heartbeat/`
 
@@ -63,8 +73,8 @@ pass.
 ## Promoting an entry to public
 
 DOD's default is transparency (see the Soul Document's own framing), so an
-entry here staying private is a decision, not a default that should be
-assumed to last forever. "Private for now" and "private forever" are
+entry here staying unpublished is a decision, not a default that should be
+assumed to last forever. "Unpublished for now" and "unpublished forever" are
 different calls — this folder only handles the first. Nothing here
 publishes itself, on purpose: promotion is a deliberate act, not a flag
 (like a blog post's `draft: true`) that could silently lapse.
