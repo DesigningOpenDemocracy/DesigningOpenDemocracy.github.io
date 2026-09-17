@@ -4369,6 +4369,10 @@
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-25"
   },
+  "https://events.humanitix.com/protecting-victoria-s-democracy-ahead-of-state-s-largest-ever-election": {
+    "blocked": "HTTP_403",
+    "blocked_since": "2026-09-17"
+  },
   "https://events.humanitix.com/radicalxchange-foundation-in-melbourne": {
     "blocked": "HTTP_403",
     "blocked_since": "2026-09-04",
@@ -10090,6 +10094,130 @@
         "id": "3f6306eba9256e2c0df8384caadcce4326bc470b7833931a9fdc9d4bed56e500",
         "quote": "Democratic backsliding is now happening in well-established democracies. Democracy in the USA is deteriorating at unprecedented speed, and media and journalists are increasingly targeted across the world,",
         "verified": false
+      }
+    ],
+    "last_modified": null
+  },
+  "https://www.vec.vic.gov.au/about-us": {
+    "checked": "2026-09-17",
+    "document_sha256": "894307f824db220bd77dc3cbf943377886af1bf9267e032014f262137da69345",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-09-17",
+        "context": {
+          "prefix": "Languages Back to Home Home About us About us Listen",
+          "sha256": "d69fe0ba8abed30dbe8f36438716f1d6746223f4481ce93aac845c32b6fc1196",
+          "suffix": "We play 2 important roles in Victoria's democracy: Running elections We hold: state elections local council election",
+          "text": "We are an independent and impartial body established under Victoria's Electoral Act 2002."
+        },
+        "id": "d69fe0ba8abed30dbe8f36438716f1d6746223f4481ce93aac845c32b6fc1196",
+        "quote": "We are an independent and impartial body established under Victoria's Electoral Act 2002.",
+        "verified": true
+      },
+      {
+        "checked": "2026-09-17",
+        "context": {
+          "prefix": "out and understand voting and elections support the Electoral Boundaries Commission. Electoral Commissioner",
+          "sha256": "9a65b2779132e361baf20452e18a7f043239d1bd6e899763ca7010265b8d4662",
+          "suffix": "Mr Bluemmel practised law in the private sector in Melbourne and Perth in the areas of information and privacy law. He is a fellow of Leadership West",
+          "text": "Sven Bluemmel was appointed Electoral Commissioner in August 2023. He previously served as the inaugural Victorian Information Commissioner, Western Australian Information Commissioner and has held senior positions in the Western Australian and Commonwealth public sectors. Mr Bluemmel practised law in the private sector in Melbourne and Perth in the areas of information and privacy law. He is a fellow of Leadership Western Australia and served as President of the Institute of Public Administration in Western Australia for three years."
+        },
+        "id": "3b0c6b4249a5b887bd06de97605b7c1d4d5cdf5935fac9439e4c29b58172960c",
+        "quote": "Sven Bluemmel was appointed Electoral Commissioner in August 2023. He previously served as the inaugural Victorian Information Commissioner, Western Australian Information Commissioner and has held senior positions in the Western Australian and Commonwealth public sectors.",
+        "verified": true
+      },
+      {
+        "checked": "2026-09-17",
+        "context": {
+          "prefix": "mpartiality. Our values We are proudly independent We work as one We lead with purpose. Strategy 2027",
+          "sha256": "272cbb82a2479e31049bccd20dd550e329a227291d61dd0f5fed261434c079b3",
+          "suffix": "Our 4-year goal: we have the people and processes we need to navigate changes and build trust in democracy. Outcomes and success me",
+          "text": "We launched Strategy 2027 in August 2023. This strategy explains what's important to us as the world around our work continues to change."
+        },
+        "id": "272cbb82a2479e31049bccd20dd550e329a227291d61dd0f5fed261434c079b3",
+        "quote": "We launched Strategy 2027 in August 2023. This strategy explains what's important to us as the world around our work continues to change.",
+        "verified": true
+      },
+      {
+        "checked": "2026-09-17",
+        "context": {
+          "prefix": "ner Sven Bluemmel Our vision All Victorians actively participating in their democracy. Our purpose",
+          "sha256": "0068367f59e682069cddcee0696305cd5ad77dc72e1708dfc6f2f11f50644e63",
+          "suffix": "Our commitment Delivering a trusted democratic process through excellence and impartiality. Our values We are proudly inde",
+          "text": "Building a stronger future for Victorian democracy."
+        },
+        "id": "0068367f59e682069cddcee0696305cd5ad77dc72e1708dfc6f2f11f50644e63",
+        "quote": "Building a stronger future for Victorian democracy.",
+        "verified": true
+      },
+      {
+        "checked": "2026-09-17",
+        "context": {
+          "prefix": "uality services during elections. Our reputation, media coverage, and feedback show that the public and the people we work with trust us.",
+          "sha256": "d05805d35763be2f81fbbecc520bf8bf81b73067b1d263ec1942a8d53c0f63aa",
+          "suffix": "Voters We deliver a great voter experience. What success means to us: People",
+          "text": "We put electoral integrity at the heart of all our work."
+        },
+        "id": "d05805d35763be2f81fbbecc520bf8bf81b73067b1d263ec1942a8d53c0f63aa",
+        "quote": "We put electoral integrity at the heart of all our work.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://www.vec.vic.gov.au/voting/electoral-misinformation": {
+    "checked": "2026-09-17",
+    "document_sha256": "5170620c54496672d69ad6291bec2931694cbd1321b2a2d7218ce1ead18540b0",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-09-17",
+        "context": {
+          "prefix": "vote Supporting people with disability to have their say. Learn more Verifying information about elections",
+          "sha256": "31a81577962a43b8daf6a945cf2d934f5490ebc2ec7fa4a1408e5bede68ee346",
+          "suffix": "Verify election information Working together to correct misinformation We maintain fair elections by working with",
+          "text": "We can help you check the facts about election information you receive."
+        },
+        "id": "31a81577962a43b8daf6a945cf2d934f5490ebc2ec7fa4a1408e5bede68ee346",
+        "quote": "We can help you check the facts about election information you receive.",
+        "verified": true
+      },
+      {
+        "checked": "2026-09-17",
+        "context": {
+          "prefix": "by: candidates political parties, or non-party campaigners (influencers). Laws around electoral campaign material",
+          "sha256": "7fc2de2b9734872f82f71a03cc8befa9b2b0f5b7f50fff74978dee9c624aa615",
+          "suffix": "However, all electoral campaign material must be authorised. This needs to include the authoriser's name and address. This lets everyone know the ori",
+          "text": "There are no laws in Victoria that regulate truth in political advertising. However, all electoral campaign material must be authorised. This needs to include the authoriser's name and address. This lets everyone know the origins of the electoral campaign material."
+        },
+        "id": "173e0ceb270653135faa5f5fd3dca55ac37ad237615bc42125972c8bf03e3a01",
+        "quote": "There are no laws in Victoria that regulate truth in political advertising.",
+        "verified": true
+      },
+      {
+        "checked": "2026-09-17",
+        "context": {
+          "prefix": "ers (influencers). Laws around electoral campaign material There are no laws in Victoria that regulate truth in political advertising.",
+          "sha256": "7fc2de2b9734872f82f71a03cc8befa9b2b0f5b7f50fff74978dee9c624aa615",
+          "suffix": "This lets everyone know the origins of the electoral campaign material. More information about authorisation can be found on our Authorising st",
+          "text": "There are no laws in Victoria that regulate truth in political advertising. However, all electoral campaign material must be authorised. This needs to include the authoriser's name and address. This lets everyone know the origins of the electoral campaign material."
+        },
+        "id": "d321b4682560d951d30989288c351aa9da26bb7544c6624629d2c4f9e4b29190",
+        "quote": "However, all electoral campaign material must be authorised. This needs to include the authoriser's name and address.",
+        "verified": true
+      },
+      {
+        "checked": "2026-09-17",
+        "context": {
+          "prefix": "ion statement. Generative AI in campaign material Some campaigners may use generative AI to create or modify electoral campaign material.",
+          "sha256": "af44d625831c3bd1712cf840a934b92f545071c3e48dc0d2fd7dcecb72f6faff",
+          "suffix": "Knowing this information upfront will help you make an informed decision or lead you to undertake further research. Learn more about elec",
+          "text": "Some campaigners may use generative AI to create or modify electoral campaign material. We expect that all campaigners carry out their role of informing voters in a responsible and transparent manner by properly authorising all electoral campaign material."
+        },
+        "id": "597dba44e659d05c358f8509d5ae34feaa919eb53270ab9f1d74a17e67a867f0",
+        "quote": "We expect that all campaigners carry out their role of informing voters in a responsible and transparent manner by properly authorising all electoral campaign material.",
+        "verified": true
       }
     ],
     "last_modified": null

@@ -208,6 +208,12 @@ def _load_manual_events(today):
                     "title": entry.get("title", "Untitled event"),
                     "short_title": entry.get("short_title"),
                     "url": entry.get("url", ""),
+                    # The org page's own timeline already expands note/quote in a
+                    # <details>; carrying them here lets the calendar do the same
+                    # rather than stranding an event's only description on a page
+                    # the calendar reader may never open.
+                    "note": entry.get("note"),
+                    "quote": entry.get("quote"),
                     "org_slug": slug,
                     "org_title": m.get("title", slug),
                     "source": "manual",
