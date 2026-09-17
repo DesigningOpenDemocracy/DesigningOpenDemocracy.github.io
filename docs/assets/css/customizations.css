@@ -1954,6 +1954,54 @@
   color: var(--md-default-fg-color--light);
   margin: 0.15em 0 0.1em 0;
 }
+/* Expandable description for a curated event, mirroring the <details> the org
+   page wraps the same note/quote pair in. */
+.calendar-event-detail {
+  display: block;
+  margin-top: 0.35em;
+}
+.calendar-event-detail summary {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  list-style: none;
+  font-size: 0.8em;
+  color: var(--md-default-fg-color--light);
+}
+.calendar-event-detail summary::-webkit-details-marker {
+  display: none;
+}
+.calendar-event-detail summary::before {
+  content: "▸";
+  margin-right: 0.4em;
+  font-size: 0.8em;
+  opacity: 0.5;
+}
+.calendar-event-detail[open] summary::before {
+  content: "▾";
+}
+.calendar-event-detail summary:hover {
+  color: var(--md-default-fg-color);
+}
+.calendar-event-note {
+  margin: 0.4em 0 0;
+  font-size: 0.85em;
+  color: var(--md-default-fg-color--light);
+}
+.calendar-event-quote {
+  margin: 0.4em 0 0;
+  padding: 0.3em 0.7em;
+  border-left: 2px solid var(--md-default-fg-color--lighter);
+  font-size: 0.85em;
+  font-style: italic;
+  color: var(--md-default-fg-color--light);
+}
+.calendar-event-quote::before {
+  content: "\201C";
+}
+.calendar-event-quote::after {
+  content: "\201D";
+}
 .calendar-event-coverage {
   font-size: 0.85em;
   margin-left: 0.3em;

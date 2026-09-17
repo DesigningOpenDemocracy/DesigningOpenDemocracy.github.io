@@ -180,6 +180,19 @@
         {%- endif %}
       </div>
 
+      {#- A curated event's note/quote is its only real description, and until
+          now it rendered on the org's own timeline and nowhere else — a reader
+          browsing the calendar saw a bare title. Collapsed by default so a
+          long-form note can't push the next event off the screen, matching the
+          <details> the org page already wraps the same two fields in. -#}
+      {%- if e.note or e.quote %}
+      <details class="calendar-event-detail">
+        <summary>More about this event</summary>
+        {%- if e.note %}<p class="calendar-event-note">{{ e.note | e }}</p>{% endif %}
+        {%- if e.quote %}<blockquote class="calendar-event-quote">{{ e.quote | e }}</blockquote>{% endif %}
+      </details>
+      {%- endif %}
+
       {#- Org name/logo used to be repeated here too — dropped once the
           date-block gained its own org.logo/name anchor above, which
           replaces it rather than duplicating it. This line now carries
