@@ -4,6 +4,9 @@ type: government
 status: active
 country: AU
 website: https://www.vec.vic.gov.au/
+logo: /assets/org-logos/victorian-electoral-commission-icon.png
+logo_bg: light
+banner: /assets/org-logos/victorian-electoral-commission.svg
 contact:
   checked: 2026-09-17
   email: info@vec.vic.gov.au
