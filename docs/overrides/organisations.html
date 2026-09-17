@@ -102,7 +102,7 @@
               {%- endif %}
               <a href="/{{ file.page.url }}">{{ file.page.title }}</a>
               {%- if website and not website.startswith('https://web.archive.org') %}
-              <a href="{{ website }}" class="org-ext-link" target="_blank" rel="noopener" title="{{ website }}">↗</a>
+              <a href="{{ website }}" class="org-ext-link" target="_blank" rel="noopener" title="{{ website }}" aria-label="Visit {{ file.page.title }} website">↗</a>
               {%- endif %}
             </td>
             <td data-sort="{{ org_type }}">{{ type_icons.get(org_type, '🏛️') }} {{ org_type }}</td>
