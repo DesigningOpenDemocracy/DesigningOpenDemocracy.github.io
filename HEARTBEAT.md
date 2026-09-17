@@ -134,6 +134,15 @@ Pick the oldest 10–15 pages. For each:
 - Visit the org's website; confirm it loads and the org is still active
 - Check the summary and status are still accurate
 - Fix anything stale (summary, concepts, location, status)
+- Check for upcoming events not yet in `events:` — most orgs' own site (a
+  news/events page, a homepage banner) is the first place a future event
+  surfaces, often before an `ics_feed:` sync would pick it up. If you find
+  one, add it to `events:` with a `url:`/`source:` and a `note:`/`quote:`
+  per CLAUDE.md's `events:` sourcing convention — this is what actually
+  populates the site-wide calendar (`docs/calendar.md`), not a separate
+  step; see CLAUDE.md's Calendar section for how `hooks/calendar_export.py`
+  merges it in at build time. Run `python util/check_event_sourcing.py
+  --calculate` afterward so new entries get a `proof_level`.
 - Record the check: `python util/record_dod.py <slug> --note "..." [--url ...] [--date ...]`
   (this writes `activity.dod` and stamps `last_checked` in one step; use `--date` when
   you found evidence dated earlier than today, e.g. a publication date)
@@ -149,6 +158,18 @@ on pages that aren't in `CONTACT_PATHS`, and sites behind Cloudflare JS challeng
 that block bot access. A quick human spot-check catches these. When you find one,
 add a `contact:` block with the source URL and today's date. If the contact point
 is non-obvious (popup button, footer, mirror site), add a `note:` field.
+
+**Sync `ics_feed:` events, every run:** run `python util/sync_events.py`
+(active orgs only — the default) before or alongside the staleness-queue
+pass. It's a separate, cheap mechanism from the events-check above — it
+fetches each org's own iCal feed rather than relying on a human/AI noticing
+an event on the site — and it's currently the one piece of the calendar
+pipeline with no automated owner: it isn't in the weekly
+`heartbeat-probes.yml` cron, so if this step skips it, an org's `ics_feed:`
+cache (`docs/data/events/<slug>.json`) only gets refreshed when someone
+happens to run it by hand. Cheap because only orgs with `ics_feed:` set are
+touched (one, as of 2026-09) — this scales with adoption, not with the
+size of the staleness queue.
 
 ### 3. Surface tag gaps
 
