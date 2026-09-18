@@ -96,7 +96,19 @@ hooks:
   - hooks/normalize_tags.py
   - hooks/footnote_fragments.py
   - hooks/calendar_export.py
+  - hooks/sitemap_extras.py
   - hooks/heartbeat_current.py
+
+# docs/overrides/ is the theme's custom_dir AND a subdirectory of docs_dir, so
+# everything in it is also copied into the site as a static file. That is
+# long-standing (the .html templates are published at /overrides/*.html and
+# harmless — nothing links to them), but sitemap.xml must not join them: an
+# unrendered Jinja template served at /overrides/sitemap.xml is a second file
+# named sitemap.xml on this domain, and a broken one. Excluding it here keeps
+# it out of the build output only — the Jinja loader reads custom_dir from
+# disk directly, so the template still overrides MkDocs' own.
+exclude_docs: |
+  overrides/sitemap.xml
 
 not_in_nav: |
   llms.txt
