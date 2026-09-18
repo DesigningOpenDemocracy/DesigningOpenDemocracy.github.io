@@ -723,6 +723,8 @@
     "last_modified": null
   },
   "https://civictech.africa/about-ctin": {
+    "blocked": "HTTP_403",
+    "blocked_since": "2026-09-18",
     "checked": "2026-08-29",
     "document_sha256": "a1ea3d023725607b5e9b544ce244ec52af65a37ba2ce98176a1c568e465610c8",
     "etag": null,
@@ -743,6 +745,8 @@
     "last_modified": "Thu, 27 Aug 2026 10:49:55 GMT"
   },
   "https://civictech.africa/ctif/underthehood/": {
+    "blocked": "HTTP_403",
+    "blocked_since": "2026-09-18",
     "checked": "2026-08-29",
     "document_sha256": "2d9c02b639fd443e52ffb1625986e222a57448b06b138733058391a9dcd7937e",
     "etag": null,
@@ -823,8 +827,8 @@
     "last_modified": null
   },
   "https://commonslibrary.parliament.uk/research-briefings/cbp-10876/": {
-    "archive_checked": "2026-09-11",
-    "archive_url": "http://web.archive.org/web/20260828153521/https://commonslibrary.parliament.uk/research-briefings/cbp-10876/",
+    "archive_checked": "2026-09-18",
+    "archive_url": "http://web.archive.org/web/20260914150106/https://commonslibrary.parliament.uk/research-briefings/cbp-10876/",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-20",
     "evidence": [
@@ -4349,8 +4353,8 @@
     "last_modified": null
   },
   "https://events.humanitix.com/citizen-assemblies-policy-without-politics-national-conference": {
-    "archive_checked": "2026-09-04",
-    "archive_url": "http://web.archive.org/web/20260904074804/https://events.humanitix.com/citizen-assemblies-policy-without-politics-national-conference",
+    "archive_checked": "2026-09-18",
+    "archive_url": "http://web.archive.org/web/20260911081444/https://events.humanitix.com/citizen-assemblies-policy-without-politics-national-conference",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-28"
   },
@@ -4496,6 +4500,40 @@
     ],
     "last_modified": "Mon, 03 Mar 2025 15:32:56 GMT"
   },
+  "https://fidemocracy.org/deliberative-facilitation-training": {
+    "archive_checked": "2026-09-18",
+    "archive_url": "http://web.archive.org/web/20260821044658/https://fidemocracy.org/deliberative-facilitation-training",
+    "checked": "2026-09-18",
+    "document_sha256": "d3a30bc96a5e8353f721f76ceea1979896dc2f4ea1f453c65d6ec6af0eb7fd58",
+    "etag": "W/\"270fc2d9367b6decce2c6d4bd94d64fc\"",
+    "evidence": [
+      {
+        "checked": "2026-09-18",
+        "context": {
+          "prefix": "TORS HOW TO APPLY DESCRIPTION",
+          "sha256": "9eb07706ae02085d9bad10d27d346d328c8f9039ac98a2a758e312d36c0d8e03",
+          "suffix": "San Francisco, CA \u2013 October 22-24 A 3-day masterclass for practitioners ready to take responsibility for th",
+          "text": "Washington, D.C. \u2013 October 15-17"
+        },
+        "id": "9eb07706ae02085d9bad10d27d346d328c8f9039ac98a2a758e312d36c0d8e03",
+        "quote": "Washington, D.C. \u2013 October 15-17",
+        "verified": true
+      },
+      {
+        "checked": "2026-09-18",
+        "context": {
+          "prefix": "DESCRIPTION Washington, D.C. \u2013 October 15-17",
+          "sha256": "d2efb9a0b031151d9d830fb3cddc431e43ba0c021ceeb7f6df5cd4b3c8a9da41",
+          "suffix": "A 3-day masterclass for practitioners ready to take responsibility for the integrity of a full deliberative proce",
+          "text": "San Francisco, CA \u2013 October 22-24"
+        },
+        "id": "d2efb9a0b031151d9d830fb3cddc431e43ba0c021ceeb7f6df5cd4b3c8a9da41",
+        "quote": "San Francisco, CA \u2013 October 22-24",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
   "https://fidemocracy.org/europe-forum-2026-from-novel-to-normal": {
     "checked": "2026-08-26",
     "document_sha256": "f1b5d44558c47a031362b60ccf4f231ec21e9678f59e316af0dd8e49463a2ad4",
@@ -4518,6 +4556,26 @@
   "https://fidemocracy.org/news": {
     "checked": "2026-08-13",
     "etag": "W/\"6eedc7502cbc116b632a1d85741fcef0\"",
+    "last_modified": null
+  },
+  "https://fidemocracy.org/news/the-case-for-democracy-in-the-next-2-trillion-eu-budget": {
+    "checked": "2026-09-18",
+    "document_sha256": "a6b7f2a5a38373b2eb0a56998cfab7f52ec0c8581defb137d25a909b86439500",
+    "etag": "W/\"1de0adb3cb50213770d2fff87549db21--gzip\"",
+    "evidence": [
+      {
+        "checked": "2026-09-18",
+        "context": {
+          "prefix": "ormation, shrinking civic space, and rising authoritarianism, especially at a time when other major funders have been pulling back from Europe.",
+          "sha256": "e12db65a165a09b25c8e522973c21c038ed087ed9941c5636131758f3e69a93f",
+          "suffix": "Democratic resilience is not separate from the EU's other priorities like competitiveness or defense. It is what makes them possible: without f",
+          "text": "Save the date | Join us on October 9 for a webinar on what the EU budget means for civil society and local governments."
+        },
+        "id": "e12db65a165a09b25c8e522973c21c038ed087ed9941c5636131758f3e69a93f",
+        "quote": "Save the date | Join us on October 9 for a webinar on what the EU budget means for civil society and local governments.",
+        "verified": true
+      }
+    ],
     "last_modified": null
   },
   "https://finance.yahoo.com/news/blockchain-voting-platform-horizon-state-140552054.html": {
@@ -4592,7 +4650,7 @@
     "blocked_since": "2026-08-29"
   },
   "https://foro.org.co/quienes-somos/": {
-    "archive_checked": "2026-09-04",
+    "archive_checked": "2026-09-18",
     "archive_url": "http://web.archive.org/web/20260904074937/https://foro.org.co/quienes-somos/",
     "blocked": "ROBOTS_DISALLOWED",
     "blocked_since": "2026-08-20",
@@ -5017,6 +5075,26 @@
     ],
     "last_modified": null
   },
+  "https://helenclark.foundation/events/playing-the-long-game-simon-bridges": {
+    "checked": "2026-09-18",
+    "document_sha256": "a3d6934d681a9d0c9e700f856ea34dc3fd768132e02996cb23423e97b429d38c",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-09-18",
+        "context": {
+          "prefix": "rk Back to Events Upcoming Public Webinar Webinar Playing the Long Game: Simon Bridges",
+          "sha256": "a835cf0906d208eecc949b15b58b3825247cbbae1c4f7e4ec6796afa03bd15ce",
+          "suffix": "Online Webinar Register for this Event New Zealand's biggest challenges, climate change, housin",
+          "text": "Playing the Long Game is a new webinar series from the Helen Clark Foundation bringing together some of New Zealand's most experienced political, economic, and public-sector leaders to ask: how do we build policy that lasts? 29 September 2026 at 12:00"
+        },
+        "id": "a835cf0906d208eecc949b15b58b3825247cbbae1c4f7e4ec6796afa03bd15ce",
+        "quote": "Playing the Long Game is a new webinar series from the Helen Clark Foundation bringing together some of New Zealand's most experienced political, economic, and public-sector leaders to ask: how do we build policy that lasts? 29 September 2026 at 12:00",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
   "https://home.treasury.gov/news/press-releases/sb0603": {
     "blocked": "ROBOTS_DISALLOWED",
     "blocked_since": "2026-08-22",
@@ -5117,7 +5195,7 @@
     "last_modified": "Thu, 20 Aug 2026 11:47:41 GMT"
   },
   "https://journals.sagepub.com/doi/10.1177/20539517241296038": {
-    "archive_checked": "2026-09-11",
+    "archive_checked": "2026-09-18",
     "archive_url": "http://web.archive.org/web/20260904075947/https://journals.sagepub.com/doi/10.1177/20539517241296038",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-20",
@@ -5604,6 +5682,8 @@
     "last_modified": null
   },
   "https://newdemocracyfoundation.substack.com/p/a-new-chapter-for-newdemocracy": {
+    "blocked": "HTTP_403",
+    "blocked_since": "2026-09-18",
     "checked": "2026-09-17",
     "document_sha256": "7cc29b4538163ac528e4b3b540e20a7dfd6883d937c4fe8e9387d0d52dcd182a",
     "etag": null,
@@ -6473,7 +6553,7 @@
     "last_modified": null
   },
   "https://theyvoteforyou.org.au/about": {
-    "archive_checked": "2026-09-11",
+    "archive_checked": "2026-09-18",
     "archive_url": "http://web.archive.org/web/20260812053340/https://theyvoteforyou.org.au/about",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-20",
@@ -6747,6 +6827,28 @@
     ],
     "last_modified": null
   },
+  "https://wtop.com/world/2026/09/police-fire-tear-gas-to-break-up-congo-protests-against-constitutional-changes": {
+    "archive_checked": "2026-09-18",
+    "archive_url": "http://web.archive.org/web/20260916165245/https://wtop.com/world/2026/09/police-fire-tear-gas-to-break-up-congo-protests-against-constitutional-changes/",
+    "checked": "2026-09-18",
+    "document_sha256": "3f8b4e7005eb0dcee7ac0db8f3ba38256d86b12851cbb611f2315cf94e1533d7",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-09-18",
+        "context": {
+          "prefix": "wever, a bill under consideration in the National Assembly, the lower chamber, would allow the president to amend those provisions in the event of a \u201c",
+          "sha256": "e758d9c79a4f7db64580f60c77d7198cb33c6a8270a138c76c3c3d5aba44ffe9",
+          "suffix": "\u201d that paralyzes state institutions, potentially following a referendum. The country\u2019s main opposition parties, which have been divided in recen",
+          "text": "The Congolese Constitution bars any revision of presidential term limits. However, a bill under consideration in the National Assembly, the lower chamber, would allow the president to amend those provisions in the event of a \u201cmajor dysfunction\u201d that paralyzes state institutions, potentially following a referendum."
+        },
+        "id": "316fd396a43bb234fe2794d9ba5610f63d41e709891852488e5a7382802b3494",
+        "quote": "major dysfunction",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
   "https://www.abc.net.au/news/2020-02-18/city-of-casey-sacked-administrators-could-run-council-until-2024/11976104": {
     "checked": "2026-08-26",
     "document_sha256": "a3c9ad011d1aaf4228f3dfda66745d8d4eb45bfe4859dc06dfbe13f761b8424d",
@@ -6974,7 +7076,7 @@
     "last_modified": null
   },
   "https://www.ag.gov.au/integrity/australias-open-government-partnership": {
-    "archive_checked": "2026-09-11",
+    "archive_checked": "2026-09-18",
     "archive_url": "http://web.archive.org/web/20260828153433/https://www.ag.gov.au/integrity/australias-open-government-partnership",
     "blocked": "HTTP_403",
     "blocked_since": "2026-09-16",
@@ -6994,6 +7096,8 @@
     "manual_checked": "2026-08-22"
   },
   "https://www.ag.gov.au/rights-and-protections/australias-open-government-partnership/open-government-forum": {
+    "archive_checked": "2026-09-18",
+    "archive_url": "http://web.archive.org/web/20260911082148/https://www.ag.gov.au/rights-and-protections/australias-open-government-partnership/open-government-forum",
     "blocked": "HTTP_403",
     "blocked_since": "2026-09-16",
     "evidence": [
@@ -7046,6 +7150,22 @@
         "id": "61b281d0ed0b796078271bd286bc4c1856ad39124ef434fce1a7a7f35b1986cd",
         "quote": "Our system of government, under the presidency of the people, proposes to be organised with an effective term of seven renewable years,",
         "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://www.aljazeera.com/news/2026/9/15/police-crack-down-on-protests-against-constitutional-change-in-dr-congo": {
+    "archive_checked": "2026-09-18",
+    "archive_url": "http://web.archive.org/web/20260916140414/https://www.aljazeera.com/news/2026/9/15/police-crack-down-on-protests-against-constitutional-change-in-dr-congo",
+    "checked": "2026-09-18",
+    "document_sha256": "90d12c038351a25e9116aeac1253fb1cfbf565b60e06ec733bbd6fe813a5c501",
+    "etag": "W/\"313e3-5yLuCipKf8tmIfvfWa09IQK9eWU\"",
+    "evidence": [
+      {
+        "checked": "2026-09-18",
+        "id": "e9bd8f4655d7336a8e0214e7e1c7b884f72844219b73f08f01a723ae8acfa8c8",
+        "quote": "Many of our activists were unfortunately and arbitrarily arrested.",
+        "verified": false
       }
     ],
     "last_modified": null
@@ -7191,7 +7311,7 @@
     "last_modified": null
   },
   "https://www.britannica.com/topic/slavery-sociology/Slave-societies": {
-    "archive_checked": "2026-09-04",
+    "archive_checked": "2026-09-18",
     "archive_url": "http://web.archive.org/web/20260721132550/https://www.britannica.com/topic/slavery-sociology/Slave-societies",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-20",
@@ -7412,8 +7532,8 @@
     "last_modified": null
   },
   "https://www.coe.int/en/web/congress/-/deliberative-democracy-in-ukraine-congress-to-support-three-citizens-assemblies-in-2025-2026": {
-    "archive_checked": "2026-09-11",
-    "archive_url": "http://web.archive.org/web/20260911082907/https://www.coe.int/en/web/congress/-/deliberative-democracy-in-ukraine-congress-to-support-three-citizens-assemblies-in-2025-2026",
+    "archive_checked": "2026-09-18",
+    "archive_url": "http://web.archive.org/web/20260918080901/https://www.coe.int/en/web/congress/-/deliberative-democracy-in-ukraine-congress-to-support-three-citizens-assemblies-in-2025-2026",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-20",
     "evidence": [
@@ -8364,7 +8484,7 @@
     "manual_checked": "2026-08-22"
   },
   "https://www.ipc.nsw.gov.au/news/open-government-partnership-final-public-consultation-draft-commitments-australias-third-national-action-plan": {
-    "archive_checked": "2026-09-11",
+    "archive_checked": "2026-09-18",
     "archive_url": "http://web.archive.org/web/20250524182833/https://www.ipc.nsw.gov.au/news/open-government-partnership-final-public-consultation-draft-commitments-australias-third-national-action-plan",
     "blocked": "HTTP_403",
     "blocked_since": "2026-09-16"
@@ -8545,7 +8665,7 @@
     "last_modified": null
   },
   "https://www.lesswrong.com/posts/oqvsR2LmHWamyKDcj/large-language-models-will-be-great-for-censorship": {
-    "archive_checked": "2026-09-11",
+    "archive_checked": "2026-09-18",
     "archive_url": "http://web.archive.org/web/20260520051548/https://www.lesswrong.com/posts/oqvsR2LmHWamyKDcj/large-language-models-will-be-great-for-censorship",
     "blocked": "HTTP_429",
     "blocked_since": "2026-08-25"
@@ -8630,7 +8750,7 @@
     "last_modified": null
   },
   "https://www.localgovernment.vic.gov.au/__data/assets/word_doc/0027/167913/Local-Government-Act-2020-Principles-Community-Engagement.docx": {
-    "archive_checked": "2026-09-11",
+    "archive_checked": "2026-09-18",
     "archive_url": "http://web.archive.org/web/20260727123829/https://www.localgovernment.vic.gov.au/__data/assets/word_doc/0027/167913/Local-Government-Act-2020-Principles-Community-Engagement.docx",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-20",
@@ -8735,6 +8855,12 @@
       }
     ],
     "last_modified": null
+  },
+  "https://www.mcguinnessinstitute.org/events/upcoming-events/": {
+    "archive_checked": "2026-09-18",
+    "archive_url": "http://web.archive.org/web/20250717192156/https://www.mcguinnessinstitute.org/events/upcoming-events/",
+    "blocked": "HTTP_403",
+    "blocked_since": "2026-09-18"
   },
   "https://www.mcguinnessinstitute.org/research-projects/civics-nz/": {
     "blocked": "HTTP_403",
@@ -9048,8 +9174,8 @@
     "last_modified": null
   },
   "https://www.npr.org/2021/01/12/956020789/israeli-human-rights-group-says-the-country-pursues-nondemocratic-apartheid-regi": {
-    "archive_checked": "2026-09-04",
-    "archive_url": "http://web.archive.org/web/20260904075526/https://www.npr.org/2021/01/12/956020789/israeli-human-rights-group-says-the-country-pursues-nondemocratic-apartheid-regi",
+    "archive_checked": "2026-09-18",
+    "archive_url": "http://web.archive.org/web/20260911082536/https://www.npr.org/2021/01/12/956020789/israeli-human-rights-group-says-the-country-pursues-nondemocratic-apartheid-regi",
     "evidence": [
       {
         "context": {
@@ -9670,8 +9796,8 @@
     "last_modified": null
   },
   "https://www.science.org/doi/10.1126/science.adq2852": {
-    "archive_checked": "2026-09-04",
-    "archive_url": "http://web.archive.org/web/20260904080012/https://www.science.org/doi/10.1126/science.adq2852",
+    "archive_checked": "2026-09-18",
+    "archive_url": "http://web.archive.org/web/20251212073459/https://www.science.org/doi/10.1126/science.adq2852",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-20",
     "evidence": [
@@ -10069,7 +10195,7 @@
     "last_modified": null
   },
   "https://www.unimelb.edu.au/newsroom/news/2017/november/susan-mckinnon-foundation-and-university-of-melbourne-establish-prestigious-award-for-political-leadership": {
-    "archive_checked": "2026-09-11",
+    "archive_checked": "2026-09-18",
     "archive_url": "http://web.archive.org/web/20250103063217/https://www.unimelb.edu.au/newsroom/news/2017/november/susan-mckinnon-foundation-and-university-of-melbourne-establish-prestigious-award-for-political-leadership",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-20",
@@ -10315,7 +10441,7 @@
     "last_modified": "Wed, 26 Aug 2026 03:10:53 GMT"
   },
   "https://www.weforum.org/organizations/movilizatorio/": {
-    "archive_checked": "2026-09-04",
+    "archive_checked": "2026-09-18",
     "archive_url": "http://web.archive.org/web/20260513195149/https://www.weforum.org/organizations/movilizatorio/",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-20",

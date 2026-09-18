@@ -25,6 +25,11 @@ activity:
     note: Site live; "Elected. Now What?" report and Better Politics Week 2026 (Brussels)
       current as of September 2026
     url: https://www.betterpolitics.foundation/
+  sitemap:
+    date: 2026-01-29
+    note: "Page last modified (from sitemap)"
+    url: https://www.betterpolitics.foundation/sitemap.xml
+    checked: 2026-09-18
 last_checked: '2026-09-16'
 ---
 

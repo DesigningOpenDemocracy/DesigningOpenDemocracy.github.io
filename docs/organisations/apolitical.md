@@ -37,6 +37,9 @@ activity:
     note: Site live and actively promoting its Futura AI platform as of September
       2026
     url: https://apolitical.co/
+  sitemap:
+    note: "Sitemap found, no lastmod"
+    checked: 2026-09-18
 last_checked: '2026-09-16'
 ---
 

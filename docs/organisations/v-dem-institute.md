@@ -51,6 +51,9 @@ activity:
     note: Site live; Democracy Report 2026 and press coverage current as of September
       2026
     url: https://www.v-dem.net/publications/democracy-reports/
+  rss:
+    note: "No feed found"
+    checked: 2026-09-18
 last_checked: '2026-09-16'
 ---
 
