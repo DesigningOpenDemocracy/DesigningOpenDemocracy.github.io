@@ -79,7 +79,8 @@ events:
   note: newDemocracy announced that outgoing Executive Director Iain Walker would
     launch the handbook’s second edition at UN Headquarters on International Day of
     Democracy. The handbook itself was published on newDemocracy’s site on 14 September
-    2026 and is free to download.
+    2026 and is free to download. newDemocracy has since advised that a short video
+    edit of the launch will be published (newDemocracy correspondence, September 2026).
   proof_level: high
   url_checked: '2026-09-17'
   notable: true
