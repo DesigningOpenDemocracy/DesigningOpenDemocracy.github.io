@@ -29,7 +29,7 @@
 {%- endif %}
 {%- if page.meta.status or page.meta.type or page.meta.country or page.meta.website %}
 {%- set has_details = (page.meta.contact and (page.meta.contact.email or page.meta.contact.phone or page.meta.contact.form)) or page.meta.rss_feed or page.meta.ics_feed or page.meta.news_page or page.meta.concepts or page.meta.computed_activity %}
-{%- if has_details %}<details class="org-meta-details md-typeset">{% else %}<div class="org-meta-details md-typeset org-meta-details--plain">{% endif %}
+{%- if has_details %}<details class="plain-details org-meta-details md-typeset">{% else %}<div class="plain-details org-meta-details md-typeset org-meta-details--plain">{% endif %}
   <summary class="org-meta-summary">
     {%- if page.meta.status %}<span class="org-meta-pill">Status: <span class="project-status-badge status-{{ page.meta.status }}">{{ page.meta.status }}</span></span>{% endif %}
     {%- if page.meta.type %}<span class="org-meta-pill">Type: {{ type_icons.get(page.meta.type, '🏛️') }} {{ page.meta.type }}</span>{% endif %}
@@ -155,7 +155,7 @@
     {%- if e.notable and e.notable_reason %}<span class="org-event-reason">{{ e.notable_reason }}</span>{% endif %}
     {%- if e.coverage_url %}<span class="org-event-coverage"> — <a href="{{ e.coverage_url }}">DOD coverage</a></span>{%- endif %}
     {%- if e.proof_level or e.url or e.source %}
-    <details class="org-event-detail">
+    <details class="plain-details org-event-detail">
       <summary>
         {%- if e.proof_level %}<span class="org-event-proof proof-{{ e.proof_level }}">Sourcing: {{ e.proof_level | capitalize }}</span>{% endif %}
         {%- if e.proof_warning %}<span class="org-event-warning">⚠ Unverified</span>{% endif %}
