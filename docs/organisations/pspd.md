@@ -49,15 +49,16 @@ events:
   notable: false
 activity:
   dod:
-    checked: 2026-08-09
-    date: 2026-08-09
-    note: Confirmed live (HTTP 200), site current
+    date: 2026-09-19
+    note: Site live, actively publishing through Sept 2026
+    url: https://www.peoplepower21.org
+    checked: 2026-09-19
   rss:
     date: 2026-09-11
     note: 'Latest post: 홍지선 국토부장관 후보자에게 정책 질의서를 발송했습니다'
     url: https://peoplepower21.org/stablelife/2029235
     checked: 2026-09-11
-last_checked: '2026-08-09'
+last_checked: '2026-09-19'
 ---
 
 People's Solidarity for Participatory Democracy (PSPD, 참여연대) was founded in 1994 and has grown into one of South Korea's most influential civil society institutions, with approximately 13,000 members and UN ECOSOC consultative status. The organisation describes its mission as monitoring power (legislative, judicial, executive), proposing alternatives, and organising participation and solidarity — treating watchdog, think-tank, and movement-building functions as interdependent rather than separate activities.

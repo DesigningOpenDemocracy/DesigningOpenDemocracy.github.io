@@ -46,16 +46,17 @@ events:
   proof_warning: true
 activity:
   dod:
-    checked: 2026-08-09
-    date: 2026-08-09
-    note: Site live and actively publishing as of August 2026
+    date: 2026-09-19
+    note: Site live, actively publishing through Sept 2026
+    url: https://www.wedodemocracy.dk
+    checked: 2026-09-19
   rss:
     date: 2026-09-02
     note: 'Latest post: Borgerpanel afleverer otte gennembearbejdede anbefalinger
       til Folketinget'
     url: https://www.wedodemocracy.dk/nationalt-borgerpanel-kommer-med-anbefalinger-til-fremtidens-dyrevelfaerd/
     checked: 2026-09-11
-last_checked: '2026-08-09'
+last_checked: '2026-09-19'
 ---
 
 We Do Democracy is Copenhagen-based and describes itself as the Nordics' leading professional advisor on democracy and participation. The organisation designs and facilitates deliberative processes — citizens' assemblies, panels, and participatory strategy — for municipalities, political organisations, membership bodies, foundations, and businesses. Its practice is built on the premise that society's hardest challenges need more voices at the table, not fewer, and that professional facilitation infrastructure is what turns that principle from aspiration into results.

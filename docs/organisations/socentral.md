@@ -52,15 +52,16 @@ events:
   notable_reason: Founding of the organisation
 activity:
   dod:
-    checked: 2026-08-09
-    date: 2026-08-09
-    note: Site live and actively publishing as of August 2026
+    date: 2026-09-19
+    note: Site live, actively publishing through Sept 2026
+    url: https://www.socentral.no
+    checked: 2026-09-19
   sitemap:
     date: 2026-09-11
     note: Page last modified (from sitemap)
     url: https://www.socentral.no/sitemap.xml
     checked: 2026-09-11
-last_checked: '2026-08-09'
+last_checked: '2026-09-19'
 ---
 
 SoCentral is an Oslo-based social innovation platform whose core insight is structural: many of society's hardest problems fall into gaps where no single actor — public, private, or civic — has a clear mandate to act, even though everyone agrees something needs to be done. SoCentral's role is to occupy those gaps: initiating, coordinating, and driving forward collaborative projects with over 100 different partners from all three sectors, having launched more than 50 new solutions.

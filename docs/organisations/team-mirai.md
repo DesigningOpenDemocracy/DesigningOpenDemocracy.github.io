@@ -50,13 +50,15 @@ events:
   notable_reason: Election result
 activity:
   dod:
-    checked: 2026-08-09
-    date: 2026-08-09
-    note: Confirmed live (HTTP 200), site current
+    date: 2026-09-19
+    note: Site live, confirmed active (11 lower house seats, nationwide caravan 2026
+      underway)
+    url: https://team-mir.ai
+    checked: 2026-09-19
   rss:
     note: No feed found
     checked: 2026-09-11
-last_checked: '2026-08-09'
+last_checked: '2026-09-19'
 ---
 
 Team Mirai (チームみらい, "Team Future") is a Japanese political party founded in May 2025 by Takahiro Anno, an AI engineer and entrepreneur. It frames itself as a technology-native political force: the mission is to use technology to make politics more transparent, efficient, and accessible — replacing opaque processes with open ones, and closing the distance between citizens and the decisions that shape their lives.

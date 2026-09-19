@@ -49,15 +49,16 @@ events:
   type: other
 activity:
   dod:
-    checked: 2026-08-09
-    date: 2026-08-09
-    note: Site live and actively publishing as of August 2026
+    date: 2026-09-19
+    note: Site live, actively publishing through Sept 2026
+    url: https://www.sitra.fi/en/
+    checked: 2026-09-19
   rss:
     date: 2026-09-11
     note: 'Latest post: Toimintaympäristökatsaus touko-elokuu 2026'
     url: https://www.sitra.fi/artikkelit/toimintaymparistokatsaus-touko-elokuu-2026/
     checked: 2026-09-11
-last_checked: '2026-08-09'
+last_checked: '2026-09-19'
 ---
 
 Sitra (the Finnish Innovation Fund) is an unusual institution: a public foundation operating under parliamentary supervision, with an independent mandate to invest in and build Finland's future. Among its workstreams — circular economy (including the World Circular Economy Forum), health data (TEHDAS2), data and AI — is a dedicated Democracy programme that develops and advocates for democratic innovations.

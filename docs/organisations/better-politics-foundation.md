@@ -27,7 +27,7 @@ activity:
     url: https://www.betterpolitics.foundation/
   sitemap:
     date: 2026-01-29
-    note: "Page last modified (from sitemap)"
+    note: Page last modified (from sitemap)
     url: https://www.betterpolitics.foundation/sitemap.xml
     checked: 2026-09-18
 last_checked: '2026-09-16'

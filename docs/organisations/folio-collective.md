@@ -90,13 +90,12 @@ activity:
     date: 2026-08-09
     note: 'Confirmed active via own website: past events list runs to 29 Jul 2026'
   dod:
-    checked: 2026-08-12
-    date: 2025-12-03
-    note: Site unreachable (connection error) as of 2026-08-12. Wayback Machine shows
-      last capture Nov 2025 with events scheduled through Dec 2025. May be temporarily
-      down or dormant.
-    url: https://web.archive.org/web/20251130042451/https://www.folio.org.au/
-last_checked: '2026-08-12'
+    date: 2026-09-19
+    note: Site back up (www.folio.org.au reachable; apex folio.org.au returned 503);
+      Sept 24 virtual event confirmed live with registration open
+    url: https://www.folio.org.au
+    checked: 2026-09-19
+last_checked: '2026-09-19'
 ---
 
 Folio Collective (trading as "Folio") is a Melbourne-based, member-supported forum that runs a recurring program of small-group public conversations — "Folio Conversations" — pairing diverse citizens with invited expert "Conversation Leaders" to discuss civic and democratic issues.[^home] Folio describes its purpose plainly: "Democracy evolves one conversation at a time. Let's have better conversations, more often."[^home] It positions itself as an independent, non-partisan, not-for-profit social enterprise that exists "to strengthen democracy through connected, citizen-led dialogue."[^event-state-of-nature]

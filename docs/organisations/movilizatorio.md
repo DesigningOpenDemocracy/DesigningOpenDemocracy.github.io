@@ -55,16 +55,18 @@ events:
   type: recognition
 activity:
   dod:
-    checked: 2026-08-09
-    date: 2026-08-09
-    note: Site live and actively publishing as of August 2026
+    date: 2026-09-19
+    note: Site live, actively publishing (Schwab Foundation Award coverage, Jan 2026);
+      contact via /contacto form confirmed
+    url: https://www.movilizatorio.org
+    checked: 2026-09-19
   rss:
     date: 2026-05-11
     note: 'Latest post: La conferencia para el abandono de los combustibles fósiles:
       más allá del discur'
     url: https://www.movilizatorio.org/conferencia-combustibles-fosiles-hoja-ruta/
     checked: 2026-09-11
-last_checked: '2026-08-09'
+last_checked: '2026-09-19'
 ---
 
 Movilizatorio is a citizen participation and social innovation laboratory founded in Colombia with offices in Bogotá, Santiago de Chile, and operations reaching Mexico, Spain, Madagascar, and South Africa. Its practice spans six capabilities — knowledge, leadership, experimentation, communication, social design, and mobilisation — treating the pipeline from research to action as a single integrated process rather than separate phases.

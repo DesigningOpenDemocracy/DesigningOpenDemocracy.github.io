@@ -40,17 +40,33 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: false
+- date: '2026-09-28'
+  title: 'Report launch and online talanoa: "Who has access? Environmental information
+    in the Pacific" (Fiji, Solomon Islands)'
+  url: https://www.transparency.org.nz/blog/event-who-has-access-environmental-information-in-the-pacific
+  quote: Monday 28 September 2026 11am Fiji | 12pm Aotearoa New Zealand Online via
+    Zoom | Free
+  note: Marks International Access to Information Day; researchers present findings
+    on environmental information access in Fiji and Solomon Islands.
+  proof_level: high
+  url_checked: '2026-09-19'
+  notable: medium
+  notable_reason: Research launch marking International Access to Information Day
+  type: launch
+  location: Online (Fiji / Aotearoa New Zealand)
 activity:
   dod:
-    checked: 2026-08-09
-    date: 2026-08-09
-    note: Site live and actively publishing as of August 2026
+    checked: 2026-09-19
+    date: 2026-09-19
+    note: Site live; added 28 Sept 2026 Pacific environmental-information report launch
+      event
+    url: https://www.transparency.org.nz
   sitemap:
+    checked: 2026-09-11
     date: 2026-09-03
     note: Page last modified (from sitemap)
     url: https://www.transparency.org.nz/sitemap.xml
-    checked: 2026-09-11
-last_checked: '2026-08-09'
+last_checked: '2026-09-19'
 ---
 
 Transparency International New Zealand (TINZ) is the New Zealand chapter of the global Transparency International coalition. Its work focuses on the institutional integrity of democratic governance: lobbying transparency (New Zealand is substantially behind peers on regulating who influences policy and law), political donation reform (real-time reporting, donation caps, disclosure of beneficial ownership), limits on the use of parliamentary urgency (which bypasses select committee scrutiny and public submission), and a campaign for a beneficial ownership register to close the gap that allows opaque financial structures to be exploited.

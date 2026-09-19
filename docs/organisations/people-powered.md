@@ -8,8 +8,8 @@ logo: /assets/org-logos/people-powered.webp
 contact:
   checked: '2026-09-16'
   email: info@peoplepowered.org
-  phone: (201) 431-5646
   form: https://www.peoplepowered.org/connect
+  phone: (201) 431-5646
   source: https://www.peoplepowered.org/about
 summary: A global hub for participatory democracy — connecting government practitioners,
   researchers, and advocates through mentorship, training, accelerator programmes,
@@ -87,6 +87,20 @@ events:
   type: conference
   location: Athens, Greece
   country: GR
+- date: '2026-10-07'
+  title: Global Forum on Modern Direct Democracy 2026 — first time in Southern Africa,
+    hosted at the University of Botswana, Gaborone
+  url: https://www.peoplepowered.org/events-content/global-forum-on-modern-direct-democracy-2026
+  note: The largest gathering devoted to direct democracy worldwide; examines constitutional
+    reform, youth inclusion, democratic resilience, and Botswana's Kgotla system of
+    open community assemblies.
+  proof_level: medium
+  url_checked: '2026-09-19'
+  end_date: '2026-10-10'
+  notable: false
+  type: conference
+  location: Gaborone, Botswana
+  country: BW
 - date: '2026-11-02'
   title: World Forum for Democracy 2026 (Council of Europe) — 14th edition, 'Democratic
     Foresight,' Strasbourg
@@ -101,15 +115,17 @@ events:
   country: FR
 activity:
   dod:
-    checked: 2026-08-09
-    date: 2026-08-09
-    note: Site live and actively publishing as of August 2026
+    checked: 2026-09-19
+    date: 2026-09-19
+    note: Site live; added Global Forum on Modern Direct Democracy 2026 (Gaborone)
+      event, confirmed OIDP/Athens/GDC/World Forum events still current
+    url: https://www.peoplepowered.org
   sitemap:
+    checked: 2026-09-11
     date: 2026-08-25
     note: Page last modified (from sitemap)
     url: https://www.peoplepowered.org/sitemap.xml
-    checked: 2026-09-11
-last_checked: '2026-08-09'
+last_checked: '2026-09-19'
 ---
 
 People Powered is a global membership hub for participatory democracy, serving as a field-building organisation for the practitioners, governments, researchers, and advocates working on citizen participation worldwide. It does not itself run participatory processes — it builds the capacity of those who do, bridging the gap between isolated local experiments and a coherent global field with shared standards, evidence, and infrastructure.

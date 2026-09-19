@@ -56,7 +56,7 @@ activity:
     note: 'Sourced org page from vec.vic.gov.au: About us, Contact us, and the electoral
       misinformation section'
   sitemap:
-    note: "Sitemap found, no lastmod"
+    note: Sitemap found, no lastmod
     checked: 2026-09-18
 last_checked: '2026-09-17'
 ---

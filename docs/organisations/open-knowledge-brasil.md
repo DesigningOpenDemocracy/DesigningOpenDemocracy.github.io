@@ -52,16 +52,17 @@ events:
   type: other
 activity:
   dod:
-    checked: 2026-08-09
-    date: 2026-08-09
-    note: Site live and actively publishing as of August 2026
+    date: 2026-09-19
+    note: Site live, actively publishing through Sept 2026
+    url: https://ok.org.br
+    checked: 2026-09-19
   rss:
     date: 2026-09-10
     note: 'Latest post: OKBR assina relatório que analisa o papel das plataformas
       na proteção da integri'
     url: https://ok.org.br/noticia/okbr-assina-relatorio-que-analisa-o-papel-das-plataformas-na-protecao-da-integridade-eleitoral/
     checked: 2026-09-11
-last_checked: '2026-08-09'
+last_checked: '2026-09-19'
 ---
 
 Open Knowledge Brasil (OKBR) is the Brazilian chapter of the Open Knowledge network, operating as an independent organisation that promotes transparency, open data, and civic technology. Its work spans advocacy and research, civic innovation (using automation and AI with public data), data literacy (the Escola de Dados programme), and partnerships with government and civil society.

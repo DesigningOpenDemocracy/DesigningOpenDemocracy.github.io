@@ -50,15 +50,16 @@ events:
   url_checked: '2026-08-17'
 activity:
   dod:
-    checked: 2026-08-09
-    date: 2026-08-09
-    note: Site live and actively publishing as of August 2026
+    date: 2026-09-19
+    note: Site live, actively publishing submissions through Sept 2026
+    url: https://nzccl.org.nz
+    checked: 2026-09-19
   rss:
     date: 2026-09-02
     note: 'Latest post: Submission: Concealment of Location of Victim Remains Bill'
     url: https://nzccl.org.nz/submission-concealment-of-location-of-victim-remains-bill/
     checked: 2026-09-11
-last_checked: '2026-08-09'
+last_checked: '2026-09-19'
 ---
 
 The New Zealand Council for Civil Liberties (NZCCL) is an independent watchdog defending freedom of thought, expression, and action from government interference or restriction. Its work is primarily conducted through parliamentary submissions — a dense, consistent programme of legislative scrutiny that constitutes one of the most sustained civil-society oversight operations in New Zealand.

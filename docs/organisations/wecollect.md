@@ -48,13 +48,14 @@ events:
   type: other
 activity:
   dod:
-    checked: 2026-08-09
-    date: 2026-08-09
-    note: Site live and actively publishing as of August 2026
+    date: 2026-09-19
+    note: Site live, 920k+ signatures across 123 campaigns, 6 active initiatives
+    url: https://www.wecollect.ch
+    checked: 2026-09-19
   rss:
     note: No feed found
     checked: 2026-09-11
-last_checked: '2026-08-09'
+last_checked: '2026-09-19'
 ---
 
 WeCollect is the digital infrastructure layer of Swiss direct democracy. The platform supports the full lifecycle of a popular initiative or referendum: developing the idea, building a supporting coalition, launching the campaign, and collecting the required signatures — moving signature-gathering from clipboard-and-market-stall to digital. Since 2015 it has gathered over 915,000 signatures across 123 campaigns.

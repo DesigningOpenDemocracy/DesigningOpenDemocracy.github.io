@@ -52,15 +52,16 @@ events:
   type: conference
 activity:
   dod:
-    checked: 2026-08-09
-    date: 2026-08-09
-    note: Site live and actively publishing as of August 2026
+    date: 2026-09-19
+    note: Site live, actively publishing through Sept 2026; contact info confirmed
+    url: https://perludem.or.id
+    checked: 2026-09-19
   rss:
     date: 2026-09-01
     note: 'Latest post: Safeguarding The Rule Of The Democratic Game'
     url: https://perludem.or.id/safeguarding-the-rule-of-the-democratic-game/
     checked: 2026-09-11
-last_checked: '2026-08-09'
+last_checked: '2026-09-19'
 ---
 
 Perludem (Perkumpulan untuk Pemilu dan Demokrasi — the Association for Elections and Democracy) was founded in 2005 by former Indonesian election supervisors who believed that elections must produce governments that genuinely represent the people. It has since become Indonesia's leading civil society organisation on electoral integrity and democratic reform.

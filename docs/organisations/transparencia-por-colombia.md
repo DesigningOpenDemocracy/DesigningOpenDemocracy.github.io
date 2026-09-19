@@ -6,7 +6,9 @@ country: CO
 website: https://transparenciacolombia.org.co
 logo: /assets/org-logos/transparencia-por-colombia.png
 contact:
-  checked: 2026-08-09
+  checked: '2026-09-19'
+  email: transparenciatpc@transparenciacolombia.org.co
+  phone: +57 (601) 4778282
   form: https://transparenciacolombia.org.co/contacto
   source: https://transparenciacolombia.org.co
 summary: The Colombian chapter of Transparency International — running the Monitor
@@ -51,16 +53,17 @@ events:
   type: publication
 activity:
   dod:
-    checked: 2026-08-09
-    date: 2026-08-09
-    note: Site live and actively publishing as of August 2026
+    date: 2026-09-19
+    note: 'Site live; confirmed and added published email/phone to contact:'
+    url: https://transparenciacolombia.org.co
+    checked: 2026-09-19
   rss:
     date: 2026-08-19
     note: 'Latest post: Recomendaciones en materia de transparencia y lucha contra
       la corrupción para at'
     url: https://transparenciacolombia.org.co/recomendaciones-atender-emergencia-terremoto-agosto-2026/
     checked: 2026-09-11
-last_checked: '2026-08-09'
+last_checked: '2026-09-19'
 ---
 
 Transparencia por Colombia, founded in 1998, is the Colombian chapter of Transparency International. It operates at a scale and depth that makes it more than a national branch of a global network: its Monitor Ciudadano de la Corrupción is an open data and analytics platform tracking public contracting, campaign finance, judicial processes, and institutional integrity indicators — making corruption legible as a structural pattern rather than a series of isolated scandals.
