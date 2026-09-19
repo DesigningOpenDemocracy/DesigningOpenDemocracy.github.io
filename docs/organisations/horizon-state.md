@@ -85,11 +85,10 @@ activity:
     date: 2026-09-19
     note: Domain recovered from the 2026-08-22 parking-page state — hst-faq/ and hst-token/
       (both 200 again) — but the hst-faq/ 'returning under new management' announcement
-      now reads '(1/11/2025)' where our citation quotes '(1/11/2019)', a content
-      drift (likely a dynamic-date template quirk, not a re-post) that confirms
-      the existing Wayback-pinned event citations should stay as-is rather than
-      being repointed to the live, now-mismatched text. No content/status change
-      to this page.
+      now reads '(1/11/2025)' where our citation quotes '(1/11/2019)', a content drift
+      (likely a dynamic-date template quirk, not a re-post) that confirms the existing
+      Wayback-pinned event citations should stay as-is rather than being repointed
+      to the live, now-mismatched text. No content/status change to this page.
     url: https://horizonstate.com/
     checked: 2026-09-19
   sitemap:
