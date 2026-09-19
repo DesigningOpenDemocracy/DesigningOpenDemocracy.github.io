@@ -68,7 +68,7 @@
   {%- set _ = feed_rows.append({'flag': c.flag, 'name': c.name, 'path': '/calendar-' + c.code + '.ics'}) %}
 {%- endfor %}
 
-<details class="calendar-feeds-details">
+<details class="plain-details calendar-feeds-details">
   <summary>📡 All iCal feeds ({{ feed_rows | length }})</summary>
   <table class="calendar-feeds-table">
     <thead>
@@ -186,7 +186,7 @@
           long-form note can't push the next event off the screen, matching the
           <details> the org page already wraps the same two fields in. -#}
       {%- if e.note or e.quote %}
-      <details class="calendar-event-detail">
+      <details class="plain-details calendar-event-detail">
         <summary>More about this event</summary>
         {%- if e.note %}<p class="calendar-event-note">{{ e.note | e }}</p>{% endif %}
         {%- if e.quote %}<blockquote class="calendar-event-quote">{{ e.quote | e }}</blockquote>{% endif %}
@@ -385,7 +385,7 @@
 
     var slot = document.getElementById('calendar-past-events-slot');
     var details = document.createElement('details');
-    details.className = 'calendar-past-events-details';
+    details.className = 'plain-details calendar-past-events-details';
     var summary = document.createElement('summary');
     summary.textContent = pastEvents.length + ' event' + (pastEvents.length !== 1 ? 's' : '') +
       ' already passed since this page was last built — click to show';

@@ -80,7 +80,113 @@
     color: var(--md-default-fg-color--light);
 }
 
+/* ── Quiet disclosures: <details class="plain-details"> ──────────────────
+   Material styles EVERY `.md-typeset details` as a blue-bordered admonition
+   box: border, tinted bold summary bar, an absolutely-positioned note icon
+   in `summary::before` and an open/close chevron in `summary::after`. Its
+   `.md-typeset details` (0,1,1) and `[dir=ltr] .md-typeset summary` (0,2,1)
+   selectors outrank a bare class, so a rule like
+   `.calendar-event-detail summary { font-size: .8em }` silently does nothing.
+
+   Every disclosure in this repo that was written as a quiet inline
+   "▸ More about this event" line was rendering as a full-width blue
+   admonition bar instead — inside a calendar card, inside an org's event
+   timeline (a bar wrapped around one small "Sourcing: High" badge), and on
+   the org metadata bar, which was also losing its own border and background
+   to the theme's. Each had hand-written marker/size/colour rules that never
+   took effect. The same theme override is documented further down this file,
+   above `.org-facet-dd`, where it was worked around with !important for that
+   one case; those are pill buttons rather than quiet disclosures, so they
+   keep their own reset rather than adopting this one.
+
+   This opts a <details> out of the admonition treatment. It is opt-IN so the
+   ones that genuinely want a box keep it — the podcast transcripts in
+   docs/blog/posts/ are plain <details> and are deliberately untouched.
+
+   Specificity, not !important: `.md-typeset details.plain-details` is (0,2,2)
+   and outranks everything Material sets here. This block sits early in the
+   file on purpose, so an adopter's own rules further down win ties at equal
+   specificity — which is why those are written `.md-typeset details.<class>`
+   and `.md-typeset .<class> > summary` rather than as bare classes. The
+   summary selector also has to match a <summary> that is NOT inside a
+   <details>: organisation.html renders the metadata bar as a plain <div>
+   when there is nothing to expand, and `.md-typeset summary` styles that one
+   too.
+   -------------------------------------------------------------------- */
+.md-typeset details.plain-details {
+    background: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    color: inherit;
+    display: block;
+    font-size: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+.md-typeset details.plain-details:focus-within {
+    box-shadow: none;
+}
+
+.md-typeset .plain-details > summary {
+    align-items: center;
+    background: none;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: inherit;
+    gap: 0.4em;
+    list-style: none;
+    margin: 0;
+    min-height: 0;
+    overflow: visible;
+    padding: 0;
+}
+
+/* One inline triangle in place of Material's icon/chevron pair, rotated
+   rather than swapped for a second glyph so it animates and there is only
+   one character to keep in step. */
+.md-typeset .plain-details > summary::before {
+    background: none;
+    content: "▸";
+    display: inline-block;
+    flex-shrink: 0;
+    font-size: 0.8em;
+    height: auto;
+    -webkit-mask-image: none;
+    mask-image: none;
+    opacity: 0.55;
+    position: static;
+    transition: transform 0.15s;
+    width: auto;
+}
+
+.md-typeset .plain-details[open] > summary::before {
+    transform: rotate(90deg);
+}
+
+.md-typeset .plain-details > summary::after {
+    content: none;
+    display: none;
+}
+
+.md-typeset .plain-details > summary::marker,
+.md-typeset .plain-details > summary::-webkit-details-marker {
+    content: none;
+    display: none;
+}
+
+/* Material gives a details' last child a .6rem bottom margin to clear the
+   box's padding; with no box there is nothing to clear. */
+html .md-typeset details.plain-details > :last-child {
+    margin-bottom: 0;
+}
+
 /* Org page — collapsible metadata bar */
+.md-typeset details.org-meta-details,
 .org-meta-details {
     border: 1px solid var(--md-default-fg-color--lightest);
     border-radius: 8px;
@@ -93,6 +199,7 @@
     /* same visual but no open/close interaction */
 }
 
+.md-typeset .org-meta-details > .org-meta-summary,
 .org-meta-summary {
     display: flex;
     flex-wrap: wrap;
@@ -114,34 +221,15 @@
     white-space: nowrap;
 }
 
-.org-meta-summary::-webkit-details-marker {
-    display: none;
-}
-
-.org-meta-summary::marker {
-    display: none;
-    content: none;
-}
-
-.org-meta-summary::before {
-    content: "▸";
-    display: inline-block;
-    font-size: 0.75em;
-    margin-right: 0.1rem;
-    transition: transform 0.15s;
-    color: var(--md-default-fg-color--light);
-    flex-shrink: 0;
-}
-
-.org-meta-details[open] > .org-meta-summary::before {
-    transform: rotate(90deg);
-}
-
-.org-meta-details--plain .org-meta-summary {
+/* The plain-details reset above supplies the ▸ marker, its rotation on open
+   and the marker suppression this used to repeat. What is left is the one
+   case that differs: with nothing to expand, organisation.html renders the
+   bar as a <div>, so there is no toggle to point at. */
+.md-typeset .org-meta-details--plain > .org-meta-summary {
     cursor: default;
 }
 
-.org-meta-details--plain .org-meta-summary::before {
+.md-typeset .plain-details.org-meta-details--plain > .org-meta-summary::before {
     content: none;
 }
 
@@ -1629,23 +1717,23 @@
    orienting prose (.calendar-about-details, in calendar.md — only really
    needed on a first visit, so a returning reader lands on the events rather
    than scrolling past the same explanation every time) and the per-country
-   feed table. Note that font-size/margin here lose to Material's own
-   `.md-typeset details` admonition rules, which are more specific — both
-   render as the theme's standard bordered box, same as every other <details>
-   on this page. Only the summary's opacity/cursor actually take effect. */
-.calendar-about-details,
-.calendar-feeds-details {
+   feed table. Both carry plain-details; see that block for why these
+   selectors are written out in full rather than as bare classes. */
+.md-typeset details.calendar-about-details,
+.md-typeset details.calendar-feeds-details {
   font-size: 0.85em;
   margin: 0 0 1.5em;
 }
-.calendar-about-details summary,
-.calendar-feeds-details summary {
-  cursor: pointer;
+.md-typeset .calendar-about-details > summary,
+.md-typeset .calendar-feeds-details > summary {
   opacity: 0.75;
 }
-.calendar-about-details summary:hover,
-.calendar-feeds-details summary:hover {
+.md-typeset .calendar-about-details > summary:hover,
+.md-typeset .calendar-feeds-details > summary:hover {
   opacity: 1;
+}
+.md-typeset .calendar-about-details > p {
+  margin: 0.6em 0 0;
 }
 .calendar-feeds-table {
   margin: 0.6em 0 0;
@@ -1996,31 +2084,14 @@
 }
 /* Expandable description for a curated event, mirroring the <details> the org
    page wraps the same note/quote pair in. */
-.calendar-event-detail {
-  display: block;
+.md-typeset details.calendar-event-detail {
   margin-top: 0.35em;
 }
-.calendar-event-detail summary {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  list-style: none;
+.md-typeset .calendar-event-detail > summary {
   font-size: 0.8em;
   color: var(--md-default-fg-color--light);
 }
-.calendar-event-detail summary::-webkit-details-marker {
-  display: none;
-}
-.calendar-event-detail summary::before {
-  content: "▸";
-  margin-right: 0.4em;
-  font-size: 0.8em;
-  opacity: 0.5;
-}
-.calendar-event-detail[open] summary::before {
-  content: "▾";
-}
-.calendar-event-detail summary:hover {
+.md-typeset .calendar-event-detail > summary:hover {
   color: var(--md-default-fg-color);
 }
 .calendar-event-note {
@@ -2154,15 +2225,14 @@
 /* Past events, collapsed out of the main list so the still-relevant ones
    stay on top — see collapsePastAndHighlightNear() for why a static site
    needs this client-side rather than relying on build-time filtering. */
-.calendar-past-events-details {
+.md-typeset details.calendar-past-events-details {
   font-size: 0.85em;
   margin: 0 0 1.5em;
 }
-.calendar-past-events-details summary {
-  cursor: pointer;
+.md-typeset .calendar-past-events-details > summary {
   opacity: 0.75;
 }
-.calendar-past-events-details summary:hover {
+.md-typeset .calendar-past-events-details > summary:hover {
   opacity: 1;
 }
 .calendar-past-events-details .calendar-event {
@@ -2365,27 +2435,8 @@
 .org-events-timeline li.org-event--notable .org-event-title {
   font-weight: 500;
 }
-.org-events-timeline .org-event-detail {
-  display: block;
+.md-typeset .org-events-timeline details.org-event-detail {
   margin-top: 0.3em;
-}
-.org-events-timeline .org-event-detail summary {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  list-style: none;
-}
-.org-events-timeline .org-event-detail summary::-webkit-details-marker {
-  display: none;
-}
-.org-events-timeline .org-event-detail summary::before {
-  content: "▸";
-  margin-right: 0.4em;
-  font-size: 0.7em;
-  opacity: 0.5;
-}
-.org-events-timeline .org-event-detail[open] summary::before {
-  content: "▾";
 }
 .org-events-timeline .org-event-detail summary:hover .org-event-proof,
 .org-events-timeline .org-event-detail summary:hover .org-event-warning {

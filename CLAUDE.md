@@ -210,13 +210,11 @@ has to be written as raw HTML** (`<p>`, `<a href="/...">`, `<code>`,
 `<strong>`): only the `footnotes` markdown extension is enabled on this site,
 so without `md_in_html` a markdown link or `**bold**` inside a block-level
 HTML element renders as literal source text — confirmed, not theoretical.
-Two consequences worth knowing: `util/check_internal_links.py` only scans
-markdown link syntax, so links written this way are no longer link-checked;
-and the box renders as Material's standard bordered admonition regardless of
-what `.calendar-about-details` sets for font-size/margin (the theme's
-`.md-typeset details` rules are more specific — the same override documented
-above `.org-facet-dd` in `customizations.css`), which at least keeps it
-consistent with the feeds and past-events disclosures on the same page.
+One consequence worth knowing: `util/check_internal_links.py` only scans
+markdown link syntax, so links written this way are no longer link-checked.
+It carries `class="plain-details"` alongside its own class — see the CSS
+conventions section below for why every quiet `<details>` on this site needs
+that.
 
 Three deliberately separate mechanisms handle "events," each for a different purpose — don't collapse them:
 
@@ -792,6 +790,35 @@ more than a bare link.
 - `.org-export-links` — download links row below the table (CSV / JSON / GeoJSON)
 - `.activity-method-chip.method-<source>` — coloured chip showing the activity evidence source (rss=orange, sitemap=purple, manual=green, dod=blue, social=pink, scrape=teal)
 - `.hero-cta-btn` / `.hero-cta-primary` — home page call-to-action buttons
+- `.plain-details` — **opt-in on every `<details>` that should read as a quiet
+  inline disclosure** (`▸ More about this event`) rather than a box. Material
+  styles *every* `.md-typeset details` as a blue-bordered admonition — border,
+  tinted bold summary bar, a note icon in `summary::before`, a chevron in
+  `summary::after` — and its selectors (`.md-typeset details` at (0,1,1),
+  `[dir=ltr] .md-typeset summary` at (0,2,1)) outrank a bare class, so a rule
+  like `.calendar-event-detail summary { font-size: .8em }` silently does
+  nothing. Every disclosure written as a quiet line in this repo was rendering
+  as a full-width blue bar instead — inside calendar cards, inside org event
+  timelines (a bar around one small "Sourcing: High" badge), and on the org
+  metadata bar, which was also losing its own border/background. Current
+  adopters: `.calendar-about-details`, `.calendar-feeds-details`,
+  `.calendar-event-detail`, `.calendar-past-events-details` (added in
+  `calendar.html`'s JS, not markup), `.org-meta-details`, `.org-event-detail`.
+  - **Opt-in, not a blanket `.md-typeset details` override**, because the
+    `<details>` blocks in `docs/blog/posts/` podcast transcripts genuinely want
+    the theme's box and are deliberately left alone.
+  - **An adopter's own rules must out-rank the reset**, which sits at (0,2,2) —
+    write them `.md-typeset details.<class>` and `.md-typeset .<class> > summary`,
+    not as bare classes, or they will be as dead as the ones this replaced. The
+    reset is placed early in `customizations.css` so equal-specificity ties go
+    to the adopter below it.
+  - The summary selector deliberately doesn't require a `<details>` parent:
+    `organisation.html` renders the metadata bar as a `<div>` when there's
+    nothing to expand, and `.md-typeset summary` styles that orphan `<summary>`
+    too.
+  - `.org-facet-dd` (the org index facet pills) solves the same theme override
+    with `!important` and is **not** migrated — those are pill buttons, not
+    quiet disclosures, and their reset carries its own documented gotchas.
 
 ### URL gotcha
 
