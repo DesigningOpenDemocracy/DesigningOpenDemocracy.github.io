@@ -1713,26 +1713,32 @@ html .md-typeset details.plain-details > :last-child {
 .calendar-data-links a {
   color: var(--md-default-fg-color--light);
 }
-/* Two collapsed disclosures that share one quiet treatment: the page's
-   orienting prose (.calendar-about-details, in calendar.md — only really
-   needed on a first visit, so a returning reader lands on the events rather
-   than scrolling past the same explanation every time) and the per-country
-   feed table. Both carry plain-details; see that block for why these
-   selectors are written out in full rather than as bare classes. */
-.md-typeset details.calendar-about-details,
+/* A page's own orienting prose, collapsed: what this page lists, what it
+   isn't, how to contribute to it. Only really needed on a first visit, so a
+   returning reader lands on the results — the calendar's events, the
+   landscape's table — rather than scrolling past the same explanation every
+   time. Used by /calendar/ and /organisations/; it is deliberately one class
+   rather than one per page, since the two want the same treatment and a
+   second copy of these rules would be the thing that drifts.
+
+   Sits beside .calendar-feeds-details, which is a different thing (a feed
+   table, not prose) but wants the same quiet summary. Both carry
+   plain-details; see that block for why these selectors are written out in
+   full rather than as bare classes. */
+.md-typeset details.page-about-details,
 .md-typeset details.calendar-feeds-details {
   font-size: 0.85em;
   margin: 0 0 1.5em;
 }
-.md-typeset .calendar-about-details > summary,
+.md-typeset .page-about-details > summary,
 .md-typeset .calendar-feeds-details > summary {
   opacity: 0.75;
 }
-.md-typeset .calendar-about-details > summary:hover,
+.md-typeset .page-about-details > summary:hover,
 .md-typeset .calendar-feeds-details > summary:hover {
   opacity: 1;
 }
-.md-typeset .calendar-about-details > p {
+.md-typeset .page-about-details > p {
   margin: 0.6em 0 0;
 }
 .calendar-feeds-table {

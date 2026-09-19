@@ -203,18 +203,17 @@ Top-level nav tab, next to Blog — promoted there deliberately (not left nested
 
 The page's own prose intro — what's listed here, what the violet election
 cards and their date qualifiers mean — lives inside a collapsed
-`<details class="calendar-about-details">` in `docs/calendar.md`, above a
-one-line lead sentence, because that orientation is only really needed on a
-first visit and a returning reader wants the events themselves. **Its body
-has to be written as raw HTML** (`<p>`, `<a href="/...">`, `<code>`,
-`<strong>`): only the `footnotes` markdown extension is enabled on this site,
-so without `md_in_html` a markdown link or `**bold**` inside a block-level
-HTML element renders as literal source text — confirmed, not theoretical.
-One consequence worth knowing: `util/check_internal_links.py` only scans
-markdown link syntax, so links written this way are no longer link-checked.
-It carries `class="plain-details"` alongside its own class — see the CSS
-conventions section below for why every quiet `<details>` on this site needs
-that.
+`<details class="plain-details page-about-details">` under a one-line lead
+sentence, because that orientation is only really needed on a first visit and
+a returning reader wants the events themselves. `/organisations/` does the
+same with the same class; see the CSS conventions section below for both
+classes. **Its body has to be written as raw HTML** (`<p>`,
+`<a href="/...">`, `<code>`, `<strong>`): only the `footnotes` markdown
+extension is enabled on this site, so without `md_in_html` a markdown link or
+`**bold**` inside a block-level HTML element renders as literal source text —
+confirmed, not theoretical. One consequence worth knowing:
+`util/check_internal_links.py` only scans markdown link syntax, so links
+written this way are no longer link-checked.
 
 Three deliberately separate mechanisms handle "events," each for a different purpose — don't collapse them:
 
@@ -801,9 +800,15 @@ more than a bare link.
   as a full-width blue bar instead — inside calendar cards, inside org event
   timelines (a bar around one small "Sourcing: High" badge), and on the org
   metadata bar, which was also losing its own border/background. Current
-  adopters: `.calendar-about-details`, `.calendar-feeds-details`,
+  adopters: `.page-about-details`, `.calendar-feeds-details`,
   `.calendar-event-detail`, `.calendar-past-events-details` (added in
   `calendar.html`'s JS, not markup), `.org-meta-details`, `.org-event-detail`.
+- `.page-about-details` — a page's own collapsed orienting prose (what this
+  page lists, what it isn't, how to contribute), sitting under a one-line lead
+  sentence. Used by `docs/calendar.md` and `docs/organisations/index.md`;
+  deliberately one shared class rather than one per page, since a second copy
+  of the same rules is the thing that drifts. Always carries `plain-details`
+  too. Its body is raw HTML — see the Calendar section above for why.
   - **Opt-in, not a blanket `.md-typeset details` override**, because the
     `<details>` blocks in `docs/blog/posts/` podcast transcripts genuinely want
     the theme's box and are deliberately left alone.
@@ -837,7 +842,7 @@ Generated at build time by `hooks/data_export.py`. Served as static assets:
 | `/data/org-concepts.csv` | Edge list (`org_slug`, `concept_slug`) for network/graph analysis. |
 | `/data/citations.json` | CSL-JSON — per-URL entries with `id` + `convergence.sha256` (both the full 64-char `sha256(URL)`), `type`, `URL`, `title`, and an `evidence` array (`id` + `convergence.sha256`, both `sha256(normalize_ws(quote))`, plus `type` and `quote`), plus `archive`/`archive_location`/`url-status` and `document` (`{sha256}` — hash of the extracted page text, resource-level integrity) when recorded (a read-only projection of `citation-state.json` — see "Citation archival" above). Evidence's `last-verified` is projected from that quote's own `checked` date, falling back to the URL-level one for entries predating per-quote stamping (they are different facts — a URL's date refreshes when any quote on it is fetched, so on a multi-quote URL it overstates when this specific quote was last confirmed). `status` (`MATCH`/`MISMATCH`), `verified-by`, and `context` (`{sha256, prefix, suffix}`) are projected from the same cache, added 2026-08-23 — absent on any quote `check_fragments.py` hasn't successfully checked yet, which the spec reads as "not yet verified". `verified-by` is deliberately omitted for quotes confirmed from a human's browser snapshot (`manual_verified`), since the spec reads its absence as a human claim rather than a mechanical check. `context` ships `sha256` plus the TextQuoteSelector `prefix`/`suffix` disambiguation anchors but not the paragraph `text`: the anchors let a verifier pin which occurrence of a repeated sentence a citation means, while the paragraph text is ~121 KB of others' prose a verifier recomputes from the page it fetches anyway (anchors-only ~+27% vs full ~+89% — see the 2026-08-24 changelog entry in `internal-heartbeat/machine-verifiable-citation.md`). (This row previously described a `content-sha256` field that has never existed in this file's output.) A citation-only footnote (no verbatim quote, per the "Prose footnote citations" convention below — the ones gated on carrying an `unquoted:` justification) still gets a bare item here — `id`/`convergence`/`type`/`URL`/`title` with `evidence: []` — rather than no representation at all, one item per link named; a multi-source citation-only footnote (`[First](url1) and [Second](url2)`) isn't skipped the way a multi-source *quoted* footnote is (there's no quote to mispair with either link, so `footnote_citation()`'s "don't guess which URL" reasoning doesn't apply here) — it exports as two ordinary bare items instead of one combined entry, since CSL-JSON items are inherently single-URL. Added 2026-08-24 via `util/text_fragment.py`'s `citation_only_links()`/`iter_citation_only_footnotes()`. **Gitignored, regenerated at every build** — same treatment as `events.json`/`calendar.ics` below, since it's now a strict projection of two committed sources (markdown quotes + `citation-state.json`) with zero information that isn't already versioned elsewhere. Was committed until 2026-08-22; stopped once that projection became lossless, at which point committing it was pure build-output noise. |
 
-These are linked from the bottom of the org index table for researcher download, from `/calendar/`'s data-links row (`events.json` + `organisations.json`), and from `llms.txt`'s "Data downloads" section. They are also listed individually in `sitemap.xml` — see `hooks/sitemap_extras.py` above — so a crawler learns the URLs exist without having to reach the pages that link them first.
+These are linked from the row under the org index table for researcher download (all five, beside the "Export filtered view (CSV)" button — `organisations/index.md` used to carry a second, near-duplicate copy of the same row above the table, which is where KML and the org–concept edge list lived until that row was folded into this one), from `/calendar/`'s data-links row (`events.json` + `organisations.json`), and from `llms.txt`'s "Data downloads" section. They are also listed individually in `sitemap.xml` — see `hooks/sitemap_extras.py` above — so a crawler learns the URLs exist without having to reach the pages that link them first.
 
 ### Utility scripts (`util/`)
 
@@ -1042,7 +1047,20 @@ These are linked from the bottom of the org index table for researcher download,
   python util/check_contact_deep.py                   # all active orgs missing contact.email (very slow)
   ```
 
-### Org index table filters (`docs/overrides/organisations.html`)
+### Org index page (`docs/organisations/index.md` + `docs/overrides/organisations.html`)
+
+The page's markdown is rendered by `{{ super() }}` at the *top* of the
+template's content block, so everything in `index.md` sits above the search
+box and the table — which is why it is kept to one lead sentence plus a
+collapsed `.page-about-details` (see the Calendar section above for the
+pattern and the raw-HTML requirement). It used to run to two paragraphs, a
+contribute note and a data-download row separated by `---` rules, ~290px of
+scenery before the toolbar on a 1400px viewport.
+
+The template sets `.md-sidebar--secondary { display: none }` because this page
+has no headings and the table of contents is therefore always empty — a
+`<summary>` is not a heading, so the About disclosure doesn't change that, but
+adding a real `##` here would.
 
 The `/organisations/` index table has four combinable filters:
 
