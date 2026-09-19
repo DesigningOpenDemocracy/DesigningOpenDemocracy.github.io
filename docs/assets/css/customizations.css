@@ -583,6 +583,11 @@
     justify-content: center;
 }
 
+#map-expand-btn:focus-visible {
+    outline: 2px solid var(--md-accent-fg-color, #49a7e9);
+    outline-offset: 2px;
+}
+
 #map-wrapper.is-expanded {
     position: fixed;
     inset: 0;
