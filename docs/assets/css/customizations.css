@@ -1625,14 +1625,25 @@
 .calendar-data-links a {
   color: var(--md-default-fg-color--light);
 }
+/* Two collapsed disclosures that share one quiet treatment: the page's
+   orienting prose (.calendar-about-details, in calendar.md — only really
+   needed on a first visit, so a returning reader lands on the events rather
+   than scrolling past the same explanation every time) and the per-country
+   feed table. Note that font-size/margin here lose to Material's own
+   `.md-typeset details` admonition rules, which are more specific — both
+   render as the theme's standard bordered box, same as every other <details>
+   on this page. Only the summary's opacity/cursor actually take effect. */
+.calendar-about-details,
 .calendar-feeds-details {
   font-size: 0.85em;
   margin: 0 0 1.5em;
 }
+.calendar-about-details summary,
 .calendar-feeds-details summary {
   cursor: pointer;
   opacity: 0.75;
 }
+.calendar-about-details summary:hover,
 .calendar-feeds-details summary:hover {
   opacity: 1;
 }

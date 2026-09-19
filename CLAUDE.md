@@ -201,6 +201,23 @@ The invariants recorded there are not immutable. Any document in this repo — i
 
 Top-level nav tab, next to Blog — promoted there deliberately (not left nested under Community) since "what's coming up" is a distinct, equally prominent use-case to "what we've written about."
 
+The page's own prose intro — what's listed here, what the violet election
+cards and their date qualifiers mean — lives inside a collapsed
+`<details class="calendar-about-details">` in `docs/calendar.md`, above a
+one-line lead sentence, because that orientation is only really needed on a
+first visit and a returning reader wants the events themselves. **Its body
+has to be written as raw HTML** (`<p>`, `<a href="/...">`, `<code>`,
+`<strong>`): only the `footnotes` markdown extension is enabled on this site,
+so without `md_in_html` a markdown link or `**bold**` inside a block-level
+HTML element renders as literal source text — confirmed, not theoretical.
+Two consequences worth knowing: `util/check_internal_links.py` only scans
+markdown link syntax, so links written this way are no longer link-checked;
+and the box renders as Material's standard bordered admonition regardless of
+what `.calendar-about-details` sets for font-size/margin (the theme's
+`.md-typeset details` rules are more specific — the same override documented
+above `.org-facet-dd` in `customizations.css`), which at least keeps it
+consistent with the feeds and past-events disclosures on the same page.
+
 Three deliberately separate mechanisms handle "events," each for a different purpose — don't collapse them:
 
 1. **External event links** — an org's own calendar/events page, linked from its org page (e.g. `news_page:`, or just a link in prose). No parsing, no sync — a pointer, nothing more.
