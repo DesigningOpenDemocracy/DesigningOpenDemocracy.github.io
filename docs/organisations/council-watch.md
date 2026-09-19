@@ -4,6 +4,13 @@ type: advocacy
 status: active
 country: AU
 website: https://www.councilwatch.com.au
+contact:
+  email: info@councilwatch.com.au
+  phone: 0427 862 103
+  form: https://www.councilwatch.com.au/contact
+  source: https://www.councilwatch.com.au/contact
+  checked: 2026-09-19
+  note: Phone is for media inquiries only (President Dean Hurlston)
 summary: Victorian citizen watchdog on local council governance — tracks council CEO
   salary disclosures, campaigns on rate caps, and compiles council complaints and
   councillor wellbeing data.
@@ -32,17 +39,17 @@ events:
   type: publication
 activity:
   dod:
-    checked: '2026-08-21'
-    date: '2026-08-21'
-    note: Website live; active CEO salary transparency table, rate-cap campaign pages,
-      complaints tracker, and Councillor Resilience Survey.
+    date: 2026-09-19
+    note: Site live; latest article 21 Jun 2026 on VLGA and council census, active
+      council-oversight coverage
     url: https://www.councilwatch.com.au
+    checked: 2026-09-19
   sitemap:
     date: 2026-09-11
     note: Page last modified (from sitemap)
     url: https://www.councilwatch.com.au/el_el-sitemap.xml
     checked: 2026-09-11
-last_checked: '2026-08-21'
+last_checked: '2026-09-19'
 ---
 
 Council Watch is a Victorian citizen watchdog focused on local council governance. It has operated as a registered incorporated association (A0040924M) since 2001.[^cw-about]

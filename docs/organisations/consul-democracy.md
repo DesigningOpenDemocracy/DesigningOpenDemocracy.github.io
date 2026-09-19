@@ -57,18 +57,18 @@ events:
   country: DE
 activity:
   dod:
-    date: 2026-08-21
-    note: 'Deep-dive history pass: added sourced milestone events (founding, major
-      judgments/launches) with verbatim quotes verified against live pages'
-    url: https://consuldemocracy.org/about-us/
-    checked: 2026-08-21
+    date: 2026-09-19
+    note: Site live; Consul Conference 2026 Munich announced, v2.5.0 released Apr
+      2026, WSIS Champion Award Jun 2026
+    url: https://consuldemocracy.org
+    checked: 2026-09-19
   rss:
     date: 2026-09-09
     note: 'Latest post: Protected: Towards a digital commons: improving our governance
       model'
     url: https://consuldemocracy.org/2026/09/towards-a-digital-commons-improving-our-governance-model/
     checked: 2026-09-11
-last_checked: '2026-08-21'
+last_checked: '2026-09-19'
 ---
 
 Consul Democracy is an open-source e-participation platform first deployed as Decide Madrid in September 2015 by Madrid City Council to let citizens submit proposals, vote on participatory budgeting, and collaborate on legislation. The Consul Democracy Foundation, a non-profit incorporated in the Netherlands, was established in 2019 to steward the project independently of the Madrid city government.

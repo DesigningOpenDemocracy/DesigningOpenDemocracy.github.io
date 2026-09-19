@@ -53,17 +53,17 @@ events:
   url_checked: '2026-08-21'
 activity:
   dod:
-    date: 2026-08-21
-    note: 'Deep-dive history pass: added sourced milestone events (founding, major
-      judgments/launches) with verbatim quotes verified against live pages'
-    url: https://consuldemocracy.org/about-us/
-    checked: 2026-08-21
+    date: 2026-09-19
+    note: Site live; news release 15 Sep 2026 on democracy trends in Africa, dispatches
+      16 Sep 2026
+    url: https://www.afrobarometer.org
+    checked: 2026-09-19
   rss:
     date: 2026-09-07
     note: 'Latest post: AB Update August 2026'
     url: https://www.afrobarometer.org/articles/ab-update-august-2026/
     checked: 2026-09-11
-last_checked: '2026-08-21'
+last_checked: '2026-09-19'
 ---
 
 Afrobarometer is a nonpartisan pan-African survey research network founded in 1999 and headquartered in Accra, Ghana. It conducts nationally representative face-to-face surveys in 35+ African countries (covering roughly three-quarters of the continent's population) every two to three years, producing freely accessible data on how Africans experience democracy and governance.

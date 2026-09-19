@@ -71,18 +71,17 @@ events:
   end_date: '2018-12-06'
 activity:
   dod:
-    checked: 2026-08-21
-    date: 2026-08-21
-    note: Site fetched directly; current campaigns include an "AI Harms Register",
-      a "Right to Refuse AI Scribes in Healthcare" petition, and work on technology-facilitated
-      gender-based violence.
-    url: https://digitalrightswatch.org.au/
+    date: 2026-09-19
+    note: Site live; latest submission 18 Sep 2026 on Privacy Amendment (Personal
+      Data Protection) Bill 2026
+    url: https://digitalrightswatch.org.au
+    checked: 2026-09-19
   rss:
     date: 2026-09-10
     note: 'Latest post: Submission to AUKUS Inquiry'
     url: /2026/09/10/submission-to-aukus-inquiry/
     checked: 2026-09-11
-last_checked: '2026-08-21'
+last_checked: '2026-09-19'
 ---
 
 Digital Rights Watch (DRW) is an Australian charity, founded in 2016 at a meeting

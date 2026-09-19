@@ -82,17 +82,20 @@ events:
   notable: false
 activity:
   dod:
-    date: 2026-08-22
-    note: Domain observed redirecting to a registrar parking page on 2026-08-22 (was
-      live with archived monthly copies through Jun 2026). Event citations for the
-      Nov 2019 relaunch and Dec 2024 HST token launch repointed to their Wayback captures;
-      status left active pending a recheck in case the parking is transient
-    url: https://web.archive.org/web/20260419153549/https://horizonstate.com/hst-token/
-    checked: 2026-08-22
+    date: 2026-09-19
+    note: Domain recovered from the 2026-08-22 parking-page state — hst-faq/ and hst-token/
+      (both 200 again) — but the hst-faq/ 'returning under new management' announcement
+      now reads '(1/11/2025)' where our citation quotes '(1/11/2019)', a content
+      drift (likely a dynamic-date template quirk, not a re-post) that confirms
+      the existing Wayback-pinned event citations should stay as-is rather than
+      being repointed to the live, now-mismatched text. No content/status change
+      to this page.
+    url: https://horizonstate.com/
+    checked: 2026-09-19
   sitemap:
     note: Sitemap found, no lastmod
     checked: 2026-09-11
-last_checked: '2026-08-21'
+last_checked: '2026-09-19'
 ---
 
 Horizon State is an Australian company that built a blockchain-based voting and decision-making platform. The system used distributed ledger technology to record votes on a permanent, publicly auditable record — aiming to solve problems of vote integrity, transparency, and accessibility.

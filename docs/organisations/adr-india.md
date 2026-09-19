@@ -65,15 +65,15 @@ activity:
     note: website is present and loaded. Last report released by them is at 5 June,
       2026
   dod:
-    date: 2026-08-21
-    note: 'Deep-dive history pass: added sourced milestone events (founding, major
-      judgments/launches) with verbatim quotes verified against live pages'
-    url: https://consuldemocracy.org/about-us/
-    checked: 2026-08-21
+    date: 2026-09-19
+    note: Site live; latest report 14 Sep 2026 on Assam Assembly election expenditure,
+      multiple 2026 assembly election analyses
+    url: https://adrindia.org
+    checked: 2026-09-19
   rss:
     checked: 2026-09-11
     note: No feed found
-last_checked: '2026-08-21'
+last_checked: '2026-09-19'
 ---
 
 The Association for Democratic Reforms (ADR) was founded in 1999 by professors from IIM Ahmedabad and the National Institute of Design. It focuses on electoral transparency, political party accountability, and civic engagement, combining litigation, research, and citizen mobilisation.

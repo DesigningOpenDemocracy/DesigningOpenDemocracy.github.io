@@ -75,17 +75,17 @@ events:
   notable: false
 activity:
   dod:
-    checked: 2026-08-15
-    date: 2026-08-15
-    note: Page created and sourced directly against greens.org.au primary documents
-      (media releases, campaign pages, "Our Story"), following up on internal research
-      into Australian parties' democracy-reform records.
+    date: 2026-09-19
+    note: Site live, active campaigning content (tax/housing/healthcare/climate priorities);
+      tribute notice for late Victorian MP Tim Read
+    url: https://greens.org.au
+    checked: 2026-09-19
   rss:
     date: 2026-09-11
     note: 'Latest post: test'
     url: https://greens.org.au/node/3038613
     checked: 2026-09-11
-last_checked: '2026-08-15'
+last_checked: '2026-09-19'
 ---
 
 The Australian Greens are a major Australian political party, formally established in 1992 through the federation of state-based Greens parties that had grown out of the environmental movement since the 1970s. Nationally, the party is best known for climate and environmental policy — but it also holds a specific, sourced record of governance-reform activity, distinct from that broader platform.

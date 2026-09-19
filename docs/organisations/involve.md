@@ -62,17 +62,18 @@ events:
   notable_reason: Ran UK Parliament's Climate Assembly
 activity:
   dod:
-    date: 2026-08-21
-    note: 'Deep-dive history pass: added sourced milestone events (founding, major
-      judgments/launches) with verbatim quotes verified against live pages'
-    url: https://consuldemocracy.org/about-us/
-    checked: 2026-08-21
+    date: 2026-09-19
+    note: 'Site returned 403 to scripted fetch; corroborated via web search: Sue Tibballs
+      OBE became CEO Apr 2026, running Democratic Engagement Fund and School for Everyday
+      Democracy in 2026'
+    url: https://www.involve.org.uk
+    checked: 2026-09-19
   rss:
     date: 2026-08-13
     note: 'Latest post: We''re hiring! Digital Communication Officer'
     url: https://www.involve.org.uk/news-opinion/jobs/were-hiring-digital-communication-officer
     checked: 2026-09-11
-last_checked: '2026-08-21'
+last_checked: '2026-09-19'
 ---
 
 Involve is a UK charity at the intersection of research and practice in public participation. They work with governments, public institutions, and communities to design participation processes that actually influence decisions — as opposed to the tokenistic consultation that often passes for engagement.

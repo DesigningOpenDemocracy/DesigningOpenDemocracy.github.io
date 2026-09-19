@@ -76,20 +76,19 @@ events:
   proof_level: high
 activity:
   dod:
-    checked: 2026-08-21
-    date: 2026-08-21
-    note: EFA's own site blocks automated fetches; web-search fallback found active
-      2026 involvement in the "Stop Killing the Internet" coalition (launched July
-      2026) opposing internet age-verification/identity measures, alongside DRW and
-      17 other digital-rights, privacy and child-safety organisations.
-    url: https://securitybrief.com.au/story/electronic-frontiers-australia-joins-internet-control-fight
+    date: 2026-09-19
+    note: 'Site returned 403 to scripted fetch; corroborated via web search: recent
+      posts Jul-Aug 2026 (Kmart smart-glasses warning 19 Aug, WA Police surveillance
+      vans Jul)'
+    url: https://efa.org.au
+    checked: 2026-09-19
   rss:
     date: 2026-09-10
     note: 'Latest post: International Day of Democracy 2026 and the Business of Outrage:
       How Social Medi'
     url: https://efa.org.au/international-day-of-democracy-2026/
     checked: 2026-09-11
-last_checked: '2026-08-21'
+last_checked: '2026-09-19'
 ---
 
 Electronic Frontiers Australia (EFA) is Australia's longest-running digital

@@ -4,6 +4,10 @@ type: advocacy
 status: active
 country: DE
 website: https://www.democracywithoutborders.org
+contact:
+  email: hello@democracywithoutborders.org
+  source: https://www.democracywithoutborders.org
+  checked: 2026-09-19
 summary: An international NGO seated in Berlin promoting global democracy through
   institutional reform of the United Nations — coordinator of the campaigns for a
   UN Parliamentary Assembly and a UN World Citizens' Initiative.
@@ -51,16 +55,16 @@ events:
   notable: false
 activity:
   dod:
-    date: 2026-08-21
-    note: Page created and verified against live sources (org website, Wikipedia)
-      during landscape gap research
-    checked: 2026-08-21
+    date: 2026-09-19
+    note: Site live; latest post 18 Sep 2026 on UN post-2030 agenda and democracy
+    url: https://www.democracywithoutborders.org
+    checked: 2026-09-19
   rss:
     date: 2026-09-11
     note: RSS feed active
     url: https://www.democracywithoutborders.org/feed
     checked: 2026-09-11
-last_checked: '2026-08-21'
+last_checked: '2026-09-19'
 ---
 
 Democracy Without Borders (DWB) is an international nongovernmental organization established in 2017, with its legal seat in Berlin and national chapters across the world, that promotes "global democracy, global governance and global citizenship".[^dwb-wiki]

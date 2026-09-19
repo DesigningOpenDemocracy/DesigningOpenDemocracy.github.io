@@ -96,11 +96,11 @@ activity:
       nominees'
     url: https://mckinnon.co/insights
   dod:
-    checked: 2026-08-15
-    date: 2026-08-15
-    note: Added sourced History section (founding 2015, McKinnon Prize 2017, McKinnon
-      Institute 2019, MessageMedia/Sinch sale 2021, Monash renewal 2024, rebrand 2025)
-      after verifying each claim against directly-fetched primary sources
+    date: 2026-09-19
+    note: Site live; 2025 McKinnon Political Leader of the Year announced, Tasmania
+      school reform trial, McKinnon Exchange quarterly publication
+    url: https://mckinnon.co
+    checked: 2026-09-19
   scrape:
     date: 2026-08-21
     note: Latest news page scraped
@@ -111,7 +111,7 @@ activity:
     note: Page last modified (from sitemap)
     url: https://mckinnon.co/sitemap.xml
     checked: 2026-09-11
-last_checked: '2026-08-15'
+last_checked: '2026-09-19'
 ---
 
 The Susan McKinnon Foundation, rebranded as McKinnon in 2025, is a private philanthropic foundation focused on strengthening Australian democracy and governance. It funds and supports work on electoral reform, parliamentary integrity, public sector capability, and cross-party collaboration.

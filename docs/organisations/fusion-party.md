@@ -47,17 +47,18 @@ events:
   type: other
 activity:
   dod:
-    checked: 2026-08-15
-    date: 2026-08-15
-    note: Wikipedia and party site confirm active registration; fielded candidates
-      in the 2025 federal election
-    url: https://en.wikipedia.org/wiki/Fusion_Party_(Australia)
+    date: 2026-09-19
+    note: 'Site returned 403 to scripted fetch; corroborated via web search: held
+      AGM 13 Sep 2026 (Zoom, 21 RSVPs), active under Fusion/Progressives/Democracy
+      First alliance'
+    url: https://www.fusionparty.org.au
+    checked: 2026-09-19
   sitemap:
     date: 2026-09-11
     note: Page last modified (from sitemap)
     url: https://www.fusionparty.org.au/sitemap_index.xml
     checked: 2026-09-11
-last_checked: '2026-08-15'
+last_checked: '2026-09-19'
 ---
 
 Fusion is a federated Australian political party formed in 2021, when the Science Party, Pirate Party, Secular Party, Vote Planet, and Climate Change Justice Party merged in response to legislation that raised the minimum party membership threshold from 500 to 1,500 members. Rather than dissolving into a single organisation, the founding parties retained a degree of autonomy as formal internal branches — [Pirate Party Australia](pirate-party-australia.md) is the most active of these on democracy-reform issues specifically.

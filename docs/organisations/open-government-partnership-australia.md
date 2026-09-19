@@ -76,16 +76,15 @@ events:
   notable_reason: Committee formation, not itself an outcome
 activity:
   dod:
-    date: 2026-08-21
-    note: 'Status corrected inactive→active: OGP participation renewed — NAP3 published
-      Dec 2023, fourth Open Government Forum appointed May 2026 under Attorney-General''s
-      Department'
+    date: 2026-09-19
+    note: 'Site returned 503 to scripted fetch; corroborated via web search: NAP4
+      co-creation timeline agreed 19 May 2026, NAP3 concluded 31 Dec 2025'
     url: https://www.ag.gov.au/integrity/australias-open-government-partnership
-    checked: 2026-08-21
+    checked: 2026-09-19
   rss:
     note: No feed found
     checked: 2026-09-11
-last_checked: '2026-08-21'
+last_checked: '2026-09-19'
 ---
 
 Australia participates in the [Open Government Partnership](https://www.opengovpartnership.org/) (OGP) — an international multilateral initiative in which governments commit to concrete reforms on transparency, civic participation, and accountability. Australia's first National Action Plan (2016–18) comprised 15 commitments across four themes: transparency, citizen empowerment, anti-corruption, and technology to strengthen governance.

@@ -37,17 +37,17 @@ events:
   notable_reason: Founding of the organisation
 activity:
   dod:
-    date: 2026-08-21
-    note: 'Deep-dive history pass: added sourced milestone events (founding, major
-      judgments/launches) with verbatim quotes verified against live pages'
-    url: https://consuldemocracy.org/about-us/
-    checked: 2026-08-21
+    date: 2026-09-19
+    note: Site live; course enrollment open through 13 Oct, recent publications on
+      Rio 2027 tech/data and digital public infrastructure
+    url: https://itsrio.org
+    checked: 2026-09-19
   sitemap:
     date: 2026-09-04
     note: Page last modified (from sitemap)
     url: https://itsrio.org/sitemap.xml
     checked: 2026-09-11
-last_checked: '2026-08-21'
+last_checked: '2026-09-19'
 ---
 
 ITS Rio (Instituto de Tecnologia e Sociedade do Rio) is a non-profit research institute studying the impact and future of technology on Brazil and the world. Among its four research areas — Democracy and Technology, Law and Technology, Education, and Rethinking Innovation — the Democracy track is directly engaged with how technological change reshapes democratic governance.

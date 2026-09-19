@@ -64,20 +64,19 @@ events:
   notable_reason: Leadership transition
 activity:
   dod:
-    date: 2026-08-15
-    note: 'Expanded page: real logo wordmark extracted from site header SVG (previous
-      logo: was just the favicon), founding funding detail, CEO succession timeline
-      (Daley to Wood to Sathanapally), corrected publication titles/links, added Electoral
-      Reform Act critique with direct quote, linked Susan McKinnon Foundation as a
-      funder'
-    checked: 2026-08-15
+    date: 2026-09-19
+    note: 'Site returned 403 to scripted fetch; corroborated via web search: published
+      critical Future Pharmacy report early Sep 2026 drawing Pharmacy Guild pushback,
+      plus energy publications 10-11 Sep 2026'
+    url: https://grattan.edu.au
+    checked: 2026-09-19
   rss:
     checked: 2026-09-11
     date: 2026-07-26
     note: 'Latest post: Reform the system so disabled Australians can have better
       jobs and fairer wages'
     url: https://grattan.edu.au/reform-the-system-so-disabled-australians-can-have-better-jobs-and-fairer-wages/
-last_checked: '2026-08-15'
+last_checked: '2026-09-19'
 ---
 
 The Grattan Institute is a Melbourne-based public policy think tank covering a broad range of policy areas including energy, housing, education, health, and governance. It is independent of government, political parties, and industry.

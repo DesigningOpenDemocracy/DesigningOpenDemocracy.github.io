@@ -36,16 +36,17 @@ events:
   notable: false
 activity:
   dod:
-    date: 2026-08-21
-    note: Page created and verified against live sources (org website, Wikipedia)
-      during landscape gap research
-    checked: 2026-08-21
+    date: 2026-09-19
+    note: Site live; news update 24 Aug 2026 covering ranked choice voting ballot
+      measures and 2026 election cycle
+    url: https://fairvote.org
+    checked: 2026-09-19
   rss:
     date: 2026-09-08
     note: 'Latest post: Three cities to vote on ranked choice voting this November'
     url: https://fairvote.org/three-cities-to-vote-on-ranked-choice-voting-this-november/
     checked: 2026-09-11
-last_checked: '2026-08-21'
+last_checked: '2026-09-19'
 ---
 
 FairVote is a US 501(c)(3) nonprofit that campaigns to reform American elections through ranked-choice voting (RCV) and proportional representation. It was founded in June 1992 in Cincinnati as Citizens for Proportional Representation, became the Center for Voting and Democracy in 1993, and took its current name in 2004.[^founding]
