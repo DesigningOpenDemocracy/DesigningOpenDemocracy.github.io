@@ -50,7 +50,7 @@ activity:
     url: https://www.eiu.com/n/campaigns/democracy-index-2025/
   sitemap:
     date: 2026-09-16
-    note: "Page last modified (from sitemap)"
+    note: Page last modified (from sitemap)
     url: https://www.eiu.com/n/sitemap_index.xml
     checked: 2026-09-18
 last_checked: '2026-09-16'

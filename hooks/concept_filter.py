@@ -1,3 +1,6 @@
+import html
+
+
 def on_page_markdown(markdown, *, page, config, files):
     """Auto-inject Democracy Landscape filter bubble on concept pages."""
     src = page.file.src_path
@@ -5,8 +8,10 @@ def on_page_markdown(markdown, *, page, config, files):
         return markdown
 
     slug = src.split('/')[-1].replace('.md', '')
-    slug_title = slug.replace('-', ' ').title()
-    bubble = f'\n<div class="concept-org-bubble">\n<span class="twemoji">\n  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"/><path d="M18 12H6v-2h12z"/></svg>\n</span>\n<a href="/organisations/?concept={slug}">Search organisations working on <strong>{slug_title}</strong> in the Democracy Landscape →</a>\n</div>'
+    # Security: Escape slug and slug_title before inserting into raw HTML markup
+    escaped_slug = html.escape(slug, quote=True)
+    slug_title = html.escape(slug.replace('-', ' ').title())
+    bubble = f'\n<div class="concept-org-bubble">\n<span class="twemoji">\n  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"/><path d="M18 12H6v-2h12z"/></svg>\n</span>\n<a href="/organisations/?concept={escaped_slug}">Search organisations working on <strong>{slug_title}</strong> in the Democracy Landscape →</a>\n</div>'
 
     lines = markdown.split('\n')
     for i, line in enumerate(lines):

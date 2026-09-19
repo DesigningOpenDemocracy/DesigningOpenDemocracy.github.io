@@ -23,6 +23,7 @@ objects the blog plugin populates only for actual posts.
 """
 
 import glob
+import html
 import os
 import re
 import sys
@@ -88,16 +89,24 @@ def _meta_block(post):
 
     date_val = meta.get("date")
     if date_val:
-        parts.append(f"<strong>Started:</strong> {date_val}")
+        # Security: Escape frontmatter date to prevent XSS/HTML injection
+        parts.append(f"<strong>Started:</strong> {html.escape(str(date_val))}")
 
     ai_level = meta.get("ai_assist") or ("generated" if meta.get("ai_generated") else None)
     if ai_level:
         label = AI_LABELS.get(ai_level, ai_level)
-        parts.append(f'<span class="ai-assist-badge ai-assist-{ai_level}">{label}</span>')
+        # Security: Escape badge level attribute and label text
+        escaped_level = html.escape(str(ai_level), quote=True)
+        escaped_label = html.escape(str(label))
+        parts.append(f'<span class="ai-assist-badge ai-assist-{escaped_level}">{escaped_label}</span>')
 
     tags = meta.get("tags") or []
     if tags:
-        chips = " ".join(f'<a class="concept-tag" href="{tag_url(t)}">{t}</a>' for t in tags)
+        # Security: Escape tag names and URLs before inserting into HTML markup
+        chips = " ".join(
+            f'<a class="concept-tag" href="{html.escape(tag_url(t), quote=True)}">{html.escape(str(t))}</a>'
+            for t in tags
+        )
         parts.append(f"<strong>Tags:</strong> {chips}")
 
     if not parts:
