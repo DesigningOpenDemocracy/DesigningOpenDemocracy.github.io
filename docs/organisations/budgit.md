@@ -61,19 +61,17 @@ events:
   url_checked: '2026-08-25'
 activity:
   dod:
-    date: 2026-08-25
-    note: 'Site checked and page created: publications library updated 19 August 2026,
-      headlines and country offices (Nigeria, Ghana, Liberia, Sierra Leone, US) all
-      current'
-    url: https://budgit.org/publications/
-    checked: 2026-08-25
+    date: 2026-09-20
+    note: Site active, Nigeria budget-transparency content current.
+    url: https://budgit.org
+    checked: 2026-09-20
   rss:
     date: 2026-08-19
     note: 'Latest post: How Digital Tools Like the PHC Accountability Tracka Are Closing
       the Gap Between'
     url: https://budgit.org/role-of-technology-in-improving-phc-service-delivery-how-digital-tools-like-the-phc-accountability-tracka-are-closing-the-gap-between-government-commitments-and-community-level-healthcare-re/
     checked: 2026-09-11
-last_checked: '2026-08-25'
+last_checked: '2026-09-20'
 ---
 
 BudgIT is a Nigerian civic-tech organisation founded in 2011 with a narrow, stubborn premise: a public budget nobody can read is not public. Its founding work was reformatting Nigeria's federal budget — a document technically available and practically impenetrable — into infographics, plain-language summaries and interactive dashboards.[^bg-found]

@@ -37,17 +37,19 @@ events:
   notable_reason: Founding of the organisation
 activity:
   dod:
-    date: 2026-08-21
-    note: Page created and verified against live sources (org website, Wikipedia)
-      during landscape gap research
-    checked: 2026-08-21
+    date: 2026-09-20
+    note: Site active with current campaigns (Trump Corruption Tracker, ranked-choice
+      voting pushes); no public contact channel found beyond a name/email/zip action-network
+      petition form, no genuine message-based contact form or published address.
+    url: https://represent.us
+    checked: 2026-09-20
   rss:
     date: 2026-09-01
     note: 'Latest post: Why Do Prediction Markets Fuel Corruption, Crime, and Insider
       Trading?'
     url: https://represent.us/news/prediction-markets-explained/
     checked: 2026-09-11
-last_checked: '2026-08-21'
+last_checked: '2026-09-20'
 ---
 
 RepresentUs is a US nonpartisan anti-corruption organisation co-founded in 2012 by Josh Silver and Joshua Graham Lynn,[^founders] structured as a 501(c)(4) advocacy group with a 501(c)(3) education fund. It describes itself as "America's leading nonpartisan grassroots organization fighting for a government accountable to the people."

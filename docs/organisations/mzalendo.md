@@ -58,18 +58,16 @@ events:
   url_checked: '2026-08-25'
 activity:
   dod:
-    date: 2026-08-25
-    note: 'Site checked and page created: about, our-work, scorecard, elections and
-      contact pages all live; Elections Watch 2027 tooling published ahead of Kenya''s
-      next general election'
-    url: https://mzalendo.com/about/
-    checked: 2026-08-25
+    date: 2026-09-20
+    note: Site active, Kenyan parliamentary-monitoring content current.
+    url: https://mzalendo.com
+    checked: 2026-09-20
   sitemap:
     date: 2026-09-07
     note: Page last modified (from sitemap)
     url: https://mzalendo.com/sitemap.xml
     checked: 2026-09-11
-last_checked: '2026-08-25'
+last_checked: '2026-09-20'
 ---
 
 Mzalendo — *patriot* in Swahili — is a Kenyan parliamentary monitoring organisation (PMO) founded in 2005 and run by Mzalendo Trust from Nairobi.[^mz-about] It exists to make the work of Kenya's National Assembly and Senate legible to the people those chambers represent: what each member said, how they voted, which committees they sat on, and what happened to the constituency development funds allocated in their name.

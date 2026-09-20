@@ -8261,6 +8261,10 @@
     ],
     "last_modified": null
   },
+  "https://www.google.com/calendar/event?eid=MWFnbGhoZmhxOHNubnIxcGRtcmIzZ2QwbDUgOXVxdTNiYnFjZGFxZWs2bGtpdWI0NDJkaTRAZw": {
+    "blocked": "ROBOTS_DISALLOWED",
+    "blocked_since": "2026-09-20"
+  },
   "https://www.govtech.com/civic/New-Global-Civic-Tech-Group-Emerges-from-The-Omidyar-Group.html": {
     "checked": "2026-08-29",
     "document_sha256": "d2fbab176845a73461ab9faa65399b24ab5755065889e98cb08db29382baa7ab",

@@ -64,11 +64,10 @@ events:
   notable_reason: Became a fully independent NGO
 activity:
   dod:
-    date: 2026-08-25
-    note: 'Site checked and page created: blog publishing weekly "The Week Ahead"
-      and gazette digests, most recent dated 23 August 2026'
-    url: https://pmg.org.za/blog/
-    checked: 2026-08-25
+    date: 2026-09-20
+    note: Site active with Sept 2026 briefings and committee reports current.
+    url: https://pmg.org.za
+    checked: 2026-09-20
   rss:
     note: No feed found
     checked: 2026-09-11
@@ -77,7 +76,7 @@ activity:
     note: Latest news page scraped
     url: https://pmg.org.za/blog/
     checked: 2026-09-11
-last_checked: '2026-08-25'
+last_checked: '2026-09-20'
 ---
 
 The Parliamentary Monitoring Group is an information service in Cape Town that does one thing, and has done it since 1995: send a monitor into every open committee meeting of South Africa's Parliament, record it, minute it, and publish the result.

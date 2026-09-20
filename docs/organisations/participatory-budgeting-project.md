@@ -44,18 +44,16 @@ events:
   proof_warning: true
 activity:
   dod:
-    date: 2026-09-06
-    note: Site active with Dec 2025/Mar 2026 blog posts; confirmed North American
-      PB nonprofit (stats widget on homepage showing zeros appears to be a display
-      bug, not a content issue).
+    date: 2026-09-20
+    note: Site active, North American PB program content current.
     url: https://www.participatorybudgeting.org
-    checked: 2026-09-06
+    checked: 2026-09-20
   rss:
     checked: 2026-09-11
     date: 2026-03-05
     note: 'Latest post: PB Grows in New Jersey'
     url: https://www.participatorybudgeting.org/pb-seeds-eval/
-last_checked: '2026-09-06'
+last_checked: '2026-09-20'
 ---
 
 The Participatory Budgeting Project (PBP) is a nonprofit organisation founded in 2009 that has been the primary driver of participatory budgeting (PB) adoption in the United States and Canada. It works with governments, schools, housing authorities, and other institutions to design and run PB processes — where community members directly propose and vote on how to spend a portion of the public budget.

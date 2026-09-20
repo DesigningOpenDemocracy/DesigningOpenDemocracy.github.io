@@ -45,17 +45,16 @@ events:
   notable_reason: Platform/product launch
 activity:
   dod:
-    date: 2026-09-06
-    note: Site active with August/September 2026 publications and events; confirmed
-      intergovernmental org supporting democracy worldwide.
+    date: 2026-09-20
+    note: Site active, intergovernmental democracy-support content current.
     url: https://www.idea.int
-    checked: 2026-09-06
+    checked: 2026-09-20
   rss:
     date: 2026-09-10
     note: 'Latest post: Brazil - General Elections, 4 and 25 October 2026'
     url: https://www.idea.int/node/161838
     checked: 2026-09-11
-last_checked: '2026-09-06'
+last_checked: '2026-09-20'
 ---
 
 International IDEA (the International Institute for Democracy and Electoral Assistance) is an intergovernmental organisation founded in 1995 with a mandate to support sustainable democratic governance across the globe. It has 35 member states and is headquartered in Stockholm, with regional offices across Africa, Asia-Pacific, Latin America, the Middle East, and Europe.

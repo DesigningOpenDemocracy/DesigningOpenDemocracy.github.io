@@ -54,19 +54,47 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Platform/product launch
+- date: '2026-09-28'
+  title: Hosting "Delivering ATI in practice" webinar for International Right to Know
+    Day
+  short_title: Delivering ATI in practice
+  url: https://www.google.com/calendar/event?eid=MWFnbGhoZmhxOHNubnIxcGRtcmIzZ2QwbDUgOXVxdTNiYnFjZGFxZWs2bGtpdWI0NDJkaTRAZw
+  note: International Right to Know Day webinar with Aiden Clarkson (UK Information
+    Commissioner's Office) and Christian Anker (Chile's Council for Transparency)
+    on how regulators can help people use their right to information.
+  proof_level: medium
+  url_checked: '2026-09-20'
+  notable: false
+- date: '2027-03-11'
+  title: Co-organising "TICTeC Presents Digital Democracy Edinburgh" with the Scottish
+    Government and University of Edinburgh
+  short_title: TICTeC Presents Digital Democracy Edinburgh
+  url: https://www.mysociety.org/2026/09/14/tictec-presents-digital-democracy-edinburgh-11-12-march-2027/
+  quote: Digital Democracy Edinburgh will take place on 11 & 12 March 2027 in Edinburgh,
+    Scotland.
+  note: Two-day TICTeC conference on how digital tools can make democratic decision-making
+    more effective, inclusive and participatory, run jointly with the Scottish Government,
+    the University of Edinburgh Futures Institute and the AI for Collective Intelligence
+    (AI4CI) Hub.
+  proof_level: high
+  url_checked: '2026-09-20'
+  end_date: '2027-03-12'
+  notable: true
+  notable_reason: mySociety's flagship TICTeC civic-tech conference
 activity:
   dod:
-    date: 2026-09-06
-    note: Site active with 2025-26 impact report and Sept 2026 blog post; flagship
-      tools (TheyWorkForYou, FixMyStreet, WhatDoTheyKnow) still live.
+    date: 2026-09-20
+    note: Site active; two new events found on homepage diary — 28 Sep International
+      Right to Know Day webinar and TICTeC's 11-12 March 2027 Digital Democracy Edinburgh
+      conference — added to events:.
     url: https://www.mysociety.org
-    checked: 2026-09-06
+    checked: 2026-09-20
   rss:
     date: 2026-09-09
     note: 'Latest post: They work for you (and we do too)'
     url: https://www.mysociety.org/2026/09/09/they-work-for-you-and-we-do-too/
     checked: 2026-09-11
-last_checked: '2026-09-06'
+last_checked: '2026-09-20'
 ---
 
 mySociety is a UK registered charity and social enterprise, founded in 2003, that builds digital tools to make it easier for citizens to participate in democracy, hold governments accountable, and access public services. It operates on the principle that well-designed technology can reduce the friction between citizens and the state.

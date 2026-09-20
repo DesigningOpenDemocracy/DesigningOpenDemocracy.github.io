@@ -54,11 +54,11 @@ activity:
       where latest is Jan 6, 2026 'Participedia Schools 2025 Summary Reports'
     url: https://participediaproject.medium.com/
   dod:
-    date: 2026-08-21
-    note: 'Deep-dive history pass: added sourced milestone events (founding, major
-      judgments/launches) with verbatim quotes verified against live pages'
-    url: https://consuldemocracy.org/about-us/
-    checked: 2026-08-21
+    date: 2026-09-20
+    note: Site active; homepage confirms global deliberation-case database and Medium
+      news blog current.
+    url: https://participedia.net
+    checked: 2026-09-20
   rss:
     checked: 2026-09-11
     date: 2026-01-05
@@ -69,7 +69,7 @@ activity:
     date: 2025-06-02
     note: Latest news page scraped
     url: https://participediaproject.medium.com/
-last_checked: '2026-08-21'
+last_checked: '2026-09-20'
 ---
 
 Participedia is a collaborative academic platform hosted by the University of British Columbia and Harvard University. It functions as a living encyclopaedia of participatory democracy — cataloguing case studies, methods, and organisations from across the world with structured, comparable data.
