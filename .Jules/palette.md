@@ -9,3 +9,7 @@
 ## 2026-09-17 - [Dynamic Table Empty State and Screen Reader Live Region]
 **Learning:** In client-side filtered tables, when 0 rows match, displaying an explicit empty state row (`<tr class="org-empty-row">`) with a direct "Clear filters" action improves usability. Crucially, query selectors for data rows must exclude the empty state (`tr:not(.org-empty-row)`), and the result count element needs `aria-live="polite"` so screen reader users receive immediate verbal feedback as filters change.
 **Action:** Always add `aria-live="polite"` to live search counters, exclude placeholder/empty rows from data row selectors, and provide a clear reset button in table empty states.
+
+## 2026-09-18 - [Interactive Graph Controls and Search Feedback]
+**Learning:** Canvas-based graph visualizations like Cytoscape require screen reader accessible status feedback (`aria-live="polite"`) because canvas nodes are not directly read by assistive tech. Pairing dynamic node/match counters with explicit `type="button"`, ARIA labels, and `:focus-visible` outline styles ensures interactive visualization toolbars are fully navigable and informative.
+**Action:** When working with canvas/webgl visualizations, provide external DOM counters with `aria-live="polite"` and ensure custom toolbar buttons have explicit `type="button"`, `aria-label`, and `:focus-visible` focus rings.

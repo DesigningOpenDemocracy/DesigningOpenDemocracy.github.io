@@ -42,17 +42,18 @@
     </div>
     <div class="kg-search-group">
       <input type="search" id="kg-search" placeholder="Search nodes…" autocomplete="off" aria-label="Search graph nodes">
+      <span id="kg-count" class="kg-count" aria-live="polite"></span>
     </div>
     <div class="kg-action-group">
-      <button id="kg-fit" class="kg-btn">Fit</button>
-      <button id="kg-reset" class="kg-btn">Reset</button>
-      <button id="kg-fullscreen" class="kg-btn">⛶ Fullscreen</button>
+      <button type="button" id="kg-fit" class="kg-btn" aria-label="Fit graph to viewport">Fit</button>
+      <button type="button" id="kg-reset" class="kg-btn" aria-label="Reset graph filters, search, and zoom">Reset</button>
+      <button type="button" id="kg-fullscreen" class="kg-btn" aria-label="Toggle fullscreen mode">⛶ Fullscreen</button>
     </div>
   </div>
 
   <div id="kg-container">
     <div id="kg-info" class="kg-info kg-info--hidden">
-      <button id="kg-info-close" class="kg-info__close" aria-label="Close">&times;</button>
+      <button type="button" id="kg-info-close" class="kg-info__close" aria-label="Close details panel">&times;</button>
       <span id="kg-info-badge" class="kg-info__badge"></span>
       <h3 id="kg-info-title" class="kg-info__title"></h3>
       <p id="kg-info-meta" class="kg-info__meta"></p>
@@ -366,7 +367,17 @@
       if (url) window.location.href = url;
     });
 
-    // ── filters ───────────────────────────────────────────────────────────
+    // ── status & filters ──────────────────────────────────────────────────
+    var countEl = document.getElementById('kg-count');
+
+    function updateCount() {
+      var visible = cy.nodes(':unselected').filter(function(n) { return !n.hasClass('hidden'); }).length;
+      var q = (document.getElementById('kg-search').value || '').trim().toLowerCase();
+      var matches = q ? cy.nodes('.highlighted').length : 0;
+      countEl.textContent = visible + ' node' + (visible !== 1 ? 's' : '') +
+        (q ? ' (' + matches + ' match' + (matches !== 1 ? 'es' : '') + ')' : '');
+    }
+
     function applyFilters() {
       var showConcepts = document.getElementById('kg-show-concepts').checked;
       var showOrgs     = document.getElementById('kg-show-orgs').checked;
@@ -388,6 +399,7 @@
           cy.getElementById(edge.data('source')).hasClass('hidden') ||
           cy.getElementById(edge.data('target')).hasClass('hidden'));
       });
+      updateCount();
     }
 
     ['kg-show-concepts', 'kg-show-orgs', 'kg-show-projects', 'kg-active-only']
@@ -402,10 +414,11 @@
       if (q) {
         cy.elements().addClass('faded');
         cy.nodes().filter(function(n) {
-          return n.data('label').toLowerCase().indexOf(q) !== -1;
+          return !n.hasClass('hidden') && (n.data('full_label') || n.data('label') || '').toLowerCase().indexOf(q) !== -1;
         }).removeClass('faded').addClass('highlighted')
           .connectedEdges().removeClass('faded');
       }
+      updateCount();
     });
 
     // ── fit / reset ───────────────────────────────────────────────────────
