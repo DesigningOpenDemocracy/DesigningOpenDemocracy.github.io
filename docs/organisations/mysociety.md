@@ -55,12 +55,17 @@ events:
   notable: true
   notable_reason: Platform/product launch
 activity:
+  dod:
+    date: 2026-09-20
+    note: Fetched site, confirmed active — 2025-26 impact report published
+    url: https://www.mysociety.org
+    checked: 2026-09-20
   rss:
     date: 2026-08-17
     note: 'Latest post: The ICO is changing: it’s an ideal time to demand better'
     url: https://www.mysociety.org/2026/08/17/the-ico-is-changing-its-an-ideal-time-to-demand-better/
     checked: 2026-08-17
-last_checked: '2026-05-29'
+last_checked: '2026-09-20'
 ---
 
 mySociety is a UK registered charity and social enterprise, founded in 2003, that builds digital tools to make it easier for citizens to participate in democracy, hold governments accountable, and access public services. It operates on the principle that well-designed technology can reduce the friction between citizens and the state.

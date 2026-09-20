@@ -51,6 +51,11 @@ activity:
       20, 2026 'Open Society Foundations Launch $300 Million Initiative to Advance
       Economic Security and Defend Civil Liberties in the United States'
     url: https://www.opensocietyfoundations.org/newsroom
+  dod:
+    date: 2026-09-20
+    note: Fetched site, confirmed active — programs and grants pages live
+    url: https://www.opensocietyfoundations.org
+    checked: 2026-09-20
   rss:
     checked: 2026-08-17
     note: No feed found
@@ -59,7 +64,7 @@ activity:
     note: Latest news page scraped
     url: https://www.opensocietyfoundations.org/newsroom
     checked: 2026-08-17
-last_checked: '2026-05-29'
+last_checked: '2026-09-20'
 ---
 
 The Open Society Foundations (OSF) are a global network of foundations founded by George Soros in 1979. Beginning with scholarships for Black South African students and support for East European dissidents, OSF grew into the world's largest private funder of independent civil society organisations working on democracy, human rights, justice, and equity.
