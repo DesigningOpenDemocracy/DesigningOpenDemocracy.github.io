@@ -44,15 +44,15 @@
       <input type="search" id="kg-search" placeholder="Search nodes…" autocomplete="off" aria-label="Search graph nodes">
     </div>
     <div class="kg-action-group">
-      <button id="kg-fit" class="kg-btn">Fit</button>
-      <button id="kg-reset" class="kg-btn">Reset</button>
-      <button id="kg-fullscreen" class="kg-btn">⛶ Fullscreen</button>
+      <button type="button" id="kg-fit" class="kg-btn" aria-label="Fit graph to viewport">Fit</button>
+      <button type="button" id="kg-reset" class="kg-btn" aria-label="Reset graph view and filters">Reset</button>
+      <button type="button" id="kg-fullscreen" class="kg-btn" aria-label="Toggle fullscreen mode">⛶ Fullscreen</button>
     </div>
   </div>
 
   <div id="kg-container">
     <div id="kg-info" class="kg-info kg-info--hidden">
-      <button id="kg-info-close" class="kg-info__close" aria-label="Close">&times;</button>
+      <button type="button" id="kg-info-close" class="kg-info__close" aria-label="Close details panel">&times;</button>
       <span id="kg-info-badge" class="kg-info__badge"></span>
       <h3 id="kg-info-title" class="kg-info__title"></h3>
       <p id="kg-info-meta" class="kg-info__meta"></p>
@@ -434,8 +434,10 @@
     });
 
     document.addEventListener('fullscreenchange', function() {
-      document.getElementById('kg-fullscreen').textContent =
-        document.fullscreenElement ? '✕ Exit fullscreen' : '⛶ Fullscreen';
+      var fsBtn = document.getElementById('kg-fullscreen');
+      var isFs = !!document.fullscreenElement;
+      fsBtn.textContent = isFs ? '✕ Exit fullscreen' : '⛶ Fullscreen';
+      fsBtn.setAttribute('aria-label', isFs ? 'Exit fullscreen mode' : 'Toggle fullscreen mode');
       cy.fit();
     });
   }
