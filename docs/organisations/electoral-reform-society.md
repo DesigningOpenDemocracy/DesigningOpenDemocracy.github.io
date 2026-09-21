@@ -59,11 +59,10 @@ events:
   notable_reason: Referendum campaign/result
 activity:
   dod:
-    date: 2026-09-11
-    note: Site live, proportional representation/electoral reform content confirmed,
-      summary still accurate.
+    date: 2026-09-21
+    note: Site loads fine (electoral-reform.org.uk, 200), confirmed active
     url: https://www.electoral-reform.org.uk
-    checked: 2026-09-11
+    checked: 2026-09-21
   rss:
     date: 2026-09-10
     note: 'Latest post: First Past the Post would have given the AfD nearly every
@@ -75,7 +74,7 @@ activity:
     note: Latest news page scraped
     url: https://www.electoral-reform.org.uk/latest-news-and-research/blog/
     checked: 2026-09-11
-last_checked: '2026-09-11'
+last_checked: '2026-09-21'
 ---
 
 The Electoral Reform Society (ERS) was founded in 1884, making it one of the world's oldest advocacy organisations dedicated to democratic reform. It is a membership organisation and registered charity headquartered in London, with a staff of around 30 and a substantial public profile in UK political debate.

@@ -44,17 +44,16 @@ activity:
     date: 2026-06-08
     note: website loaded. Saw them meet in person
   dod:
-    date: 2026-09-11
-    note: Site live, content matches summary (accountability/integrity advocacy content
-      confirmed).
+    date: 2026-09-21
+    note: Site loads fine (accountabilityrt.org, 200), confirmed active
     url: http://accountabilityrt.org
-    checked: 2026-09-11
+    checked: 2026-09-21
   rss:
     checked: 2026-09-11
     date: 2026-07-28
     note: 'Latest post: Enhancing government accountability'
     url: https://www.accountabilityrt.org/enhancing-government-accountability/
-last_checked: '2026-09-11'
+last_checked: '2026-09-21'
 ---
 
 The Accountability Round Table is a non-partisan coalition of professionals with backgrounds across academia, law, politics, and journalism. Its focus is on the structural conditions that allow democratic accountability to function: transparency laws, integrity commissions, ministerial conduct standards, and parliamentary oversight.

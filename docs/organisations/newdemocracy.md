@@ -100,17 +100,16 @@ events:
   notable_reason: Leadership transition
 activity:
   dod:
-    checked: 2026-09-11
-    date: 2026-09-11
-    note: Site live (406 to bare scripted UA, 200 with full browser headers — bot-sensitive,
-      not down), deliberative-democracy trial content confirmed, summary still accurate.
+    date: 2026-09-21
+    note: Site loads fine (newdemocracy.com.au, 200), confirmed active
     url: https://www.newdemocracy.com.au
+    checked: 2026-09-21
   rss:
     checked: 2026-09-11
     date: 2026-07-03
     note: 'Latest post: A New Political Party: Why?'
     url: https://www.newdemocracy.com.au/2026/07/03/a-new-political-party-why/?utm_source=rss&utm_medium=rss&utm_campaign=a-new-political-party-why
-last_checked: '2026-09-11'
+last_checked: '2026-09-21'
 ---
 
 newDemocracy is one of Australia's most active organisations in the deliberative democracy space. It conducts real-world trials using random selection and deliberation — the jury model — to show that citizens, given good information and time to deliberate, can reach considered decisions on complex public issues.

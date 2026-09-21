@@ -56,11 +56,10 @@ activity:
       their futures'
     url: https://www.demnext.org/news
   dod:
-    date: 2026-09-11
-    note: Site live, sortition/assembly research content confirmed, summary still
-      accurate.
+    date: 2026-09-21
+    note: Site loads fine (demnext.org, 200), confirmed active
     url: https://www.demnext.org
-    checked: 2026-09-11
+    checked: 2026-09-21
   scrape:
     date: 2026-06-24
     note: Latest news page scraped
@@ -71,7 +70,7 @@ activity:
     note: Page last modified (from sitemap)
     url: https://www.demnext.org/sitemaps-1-sitemap.xml
     checked: 2026-09-11
-last_checked: '2026-09-11'
+last_checked: '2026-09-21'
 ---
 
 DemocracyNext (demnext.org) is a research institute whose position is that sortition should *replace* elections as the central mechanism of democratic governance — not merely complement them. This distinguishes it from organisations that treat citizens' assemblies as an add-on to existing representative systems.

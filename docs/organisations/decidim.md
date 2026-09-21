@@ -62,18 +62,18 @@ events:
   notable: false
 activity:
   dod:
-    date: 2026-09-11
-    note: Site live, participatory-democracy framework content confirmed, summary
-      still accurate.
+    date: 2026-09-21
+    note: Site loads fine (decidim.org, 200); recent news includes June 2026 NYC Civic
+      Engagement Commission MoU and July 2026 Release 0.32, confirmed active
     url: https://decidim.org
-    checked: 2026-09-11
+    checked: 2026-09-21
   rss:
     date: 2026-09-03
     note: 'Latest post: Decidim and the New York City Civic Engagement Commission
       formalise Partnership '
     url: https://decidim.org/blog/2026-07-06-decidim-and-the-new-york-city-civic-engagement-commission-formalise-partnership-with-a-memorandum-of-understanding/
     checked: 2026-09-11
-last_checked: '2026-09-11'
+last_checked: '2026-09-21'
 ---
 
 Decidim ("we decide" in Catalan) is a free, open-source participatory democracy framework built in Ruby on Rails, originally developed by Barcelona City Council and first deployed in January 2016 for the city's participatory action plan. It is now governed by the Decidim Association, an independent body separate from the city.

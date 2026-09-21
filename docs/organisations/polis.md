@@ -48,15 +48,14 @@ activity:
     note: website loaded. No obvious news pages. But copy right is set to © 2026 on
       the page.
   dod:
-    date: 2026-09-06
-    note: Site reachable (200 OK); JS-rendered homepage limits automated content confirmation,
-      but no evidence of discontinuation.
+    date: 2026-09-21
+    note: Site loads fine (pol.is, 200), confirmed active open-source consensus platform
     url: https://pol.is
-    checked: 2026-09-06
+    checked: 2026-09-21
   rss:
     checked: 2026-09-11
     note: No feed found
-last_checked: '2026-09-06'
+last_checked: '2026-09-21'
 ---
 
 Pol.is (pronounced "polis") is an open-source platform for large-scale online deliberation, developed by the Computational Democracy Project. Since its launch in 2012 it has hosted tens of thousands of conversations with over 10 million participants worldwide, and is now embedded as national democratic infrastructure in Taiwan.

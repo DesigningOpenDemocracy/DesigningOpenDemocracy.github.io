@@ -47,11 +47,12 @@ activity:
       wehere latest news is 04.06.2026 'Asat Miftachov wird im Lager gefoltert'
     url: https://www.memorial.de/nachrichten
   dod:
-    date: 2026-09-11
-    note: Site live, Memorial content confirmed, summary (exile status, German chapter)
-      still accurate.
+    date: 2026-09-21
+    note: Site loads fine (memorial.de, 200); recent items include a Sep 2026 memorial
+      event, a status report on expelled Belarusian political prisoners, and a Frankfurt
+      Book Fair Oct 2026 appearance, confirmed active
     url: https://www.memorial.de
-    checked: 2026-09-11
+    checked: 2026-09-21
   scrape:
     date: 2026-08-21
     note: Latest news page scraped
@@ -61,7 +62,7 @@ activity:
     checked: 2026-09-11
     date: 2026-06-05
     note: Server still up (sitemap detected)
-last_checked: '2026-09-11'
+last_checked: '2026-09-21'
 ---
 
 Memorial (Мемориал) was founded in the late 1980s during the Glasnost era to document and preserve memory of Soviet political repression — labour camps, executions, and mass deportations. It became one of Russia's most prominent civil society organisations, documenting abuses in Chechnya and other conflict zones, maintaining databases of political prisoners, and providing legal support to victims of state violence.
