@@ -96,7 +96,7 @@
               data-email="{{ contact.get('email', '') }}"
               data-phone="{{ contact.get('phone', '') }}"
               data-form="{{ contact.get('form', '') }}">
-            <td>
+            <td data-sort="{{ file.page.title }}">
               {%- if file.page.meta.get('logo') %}
                <img src="{{ file.page.meta.logo }}" alt="" class="org-row-logo{% if file.page.meta.get('logo_bg') == 'dark' %} org-logo-needs-dark{% elif file.page.meta.get('logo_bg') == 'light' %} org-logo-needs-light{% endif %}" loading="lazy" decoding="async" width="40" height="40">
               {%- endif %}
@@ -104,6 +104,7 @@
               {%- if website and not website.startswith('https://web.archive.org') %}
               <a href="{{ website }}" class="org-ext-link" target="_blank" rel="noopener" title="{{ website }}" aria-label="Visit {{ file.page.title }} website">↗</a>
               {%- endif %}
+              <button type="button" class="org-info-btn" data-org-slug="{{ slug }}" aria-expanded="false" aria-controls="org-info-card" aria-label="Quick profile: {{ file.page.title }}" title="Quick profile — what they do, and their next or last major event">ℹ️</button>
             </td>
             <td data-sort="{{ org_type }}">{{ type_icons.get(org_type, '🏛️') }} {{ org_type }}</td>
             <td data-sort="{{ country }}">{{ country }}</td>
@@ -151,6 +152,81 @@
         <a href="/data/org-concepts.csv">Org–concept edge list</a>
       </p>
     </div>
+  </div>
+
+  <!-- Quick-profile card content, one block per org.
+       Rendered OUTSIDE the table on purpose: the search filter matches on a
+       row's textContent, so parking these inside a <td> would silently make
+       the search box also match summary and event prose without showing the
+       reader why a row matched. Hidden here, cloned into #org-info-card on
+       demand by the script below. -->
+  <div id="org-info-sources" hidden>
+    {%- for file in pages %}
+    {%- if file.page and file.page.url and file.page.url.startswith('organisations/') and file.page.url != page.url %}
+    {%- set slug = file.page.file.src_path | replace('organisations/', '') | replace('.md', '') %}
+    {%- set org_type = file.page.meta.get('type', '') %}
+    {%- set website = file.page.meta.get('website', '') %}
+    {%- set ca = org_activity_cache.get(slug) %}
+    {%- set hl = org_event_highlight.get(slug) %}
+    <div class="org-info-body" data-org-slug="{{ slug }}">
+      <div class="org-info-head">
+        {%- if file.page.meta.get('logo') %}
+        <img src="{{ file.page.meta.logo }}" alt="" class="org-info-logo{% if file.page.meta.get('logo_bg') == 'dark' %} org-logo-needs-dark{% elif file.page.meta.get('logo_bg') == 'light' %} org-logo-needs-light{% endif %}" loading="lazy" decoding="async" width="48" height="48">
+        {%- endif %}
+        <div class="org-info-head-text">
+          <a class="org-info-name" href="/{{ file.page.url }}">{{ file.page.title }}</a>
+          <p class="org-info-meta">
+            {%- if org_type %}<span>{{ type_icons.get(org_type, '🏛️') }} {{ org_type }}</span>{% endif %}
+            {#- Filled in by the script below, so the flag/name table stays a
+                single copy rather than a second one in Jinja. -#}
+            {%- if file.page.meta.get('country') %}<span data-cc="{{ file.page.meta.country }}">{{ file.page.meta.country }}</span>{% endif %}
+            {%- if file.page.meta.get('status') %}<span class="project-status-badge status-{{ file.page.meta.status }}">{{ file.page.meta.status }}</span>{% endif %}
+          </p>
+        </div>
+      </div>
+
+      {%- if file.page.meta.get('summary') %}
+      <p class="org-info-summary">{{ file.page.meta.summary }}</p>
+      {%- endif %}
+
+      {%- if hl %}
+      <div class="org-info-event{% if hl.notable is true %} org-info-event--notable{% elif hl.notable == 'medium' %} org-info-event--medium{% endif %}">
+        <p class="org-info-event-label">
+          {%- if hl.kind == 'upcoming' %}Next event{% else %}Last major event{% endif %}
+          {%- if hl.notable is true %}<span class="org-info-badge">★ Major</span>
+          {%- elif hl.notable == 'medium' %}<span class="org-info-badge org-info-badge--medium">● Notable</span>{% endif %}
+        </p>
+        <p class="org-info-event-when">{{ hl.date_display }}{% if hl.end_date_display %} – {{ hl.end_date_display }}{% endif %}{% if hl.time %} · {{ hl.time }}{% endif %}</p>
+        <p class="org-info-event-title">
+          {%- if hl.url %}<a href="{{ hl.url }}" target="_blank" rel="noopener">{{ hl.title }}</a>{% else %}{{ hl.title }}{% endif %}
+        </p>
+        {%- if hl.notable_reason %}<p class="org-info-event-reason">{{ hl.notable_reason }}</p>{% endif %}
+        {%- if hl.blurb %}
+        {%- if hl.blurb_is_quote %}<blockquote class="org-info-event-quote">{{ hl.blurb }}</blockquote>
+        {%- else %}<p class="org-info-event-note">{{ hl.blurb }}</p>{% endif %}
+        {%- endif %}
+      </div>
+      {%- else %}
+      <p class="org-info-event-empty">No dated events recorded yet.</p>
+      {%- endif %}
+
+      <div class="org-info-foot">
+        <a class="org-info-more" href="/{{ file.page.url }}">Full profile →</a>
+        {%- if website and not website.startswith('https://web.archive.org') %}
+        <a href="{{ website }}" target="_blank" rel="noopener">Website ↗</a>
+        {%- endif %}
+        {%- if ca %}
+        <span class="org-info-lastactive">Last active {{ ca.date }}<span class="activity-method-chip method-{{ ca.method }}">{{ ca.method }}</span></span>
+        {%- endif %}
+      </div>
+    </div>
+    {%- endif %}
+    {%- endfor %}
+  </div>
+
+  <div id="org-info-card" class="org-info-card" role="dialog" aria-label="Organisation quick profile" hidden>
+    <button type="button" class="org-info-close" aria-label="Close quick profile">×</button>
+    <div class="org-info-card-inner"></div>
   </div>
 
 </div>
@@ -337,6 +413,9 @@
     });
     var emptyRow = document.getElementById('org-empty-row');
     if (emptyRow) emptyRow.hidden = (visible > 0);
+    // A filter change can hide the row whose card is open, which would
+    // leave it floating over a table that no longer lists that org.
+    if (infoBtn && infoBtn.closest('tr').hidden) closeInfo(false);
     countEl.textContent = visible + ' organisation' + (visible !== 1 ? 's' : '');
     updateFacetCounts();
     updateFacetBadges();
@@ -478,6 +557,170 @@
       if (conceptFacet) conceptFacet.checked[conceptParam] = true;
     }
   })();
+
+  // -- Quick-profile cards (the row's info button) ----------------------
+  // The point is to answer "what is this org, and is anything happening
+  // with them?" without leaving the landscape page, so the card opens on
+  // hover as well as on click/focus and can itself be hovered into (it
+  // holds links).
+  //
+  // One shared card, moved to <body>: .org-table-scroll sets overflow-x,
+  // which per spec computes overflow-y to auto as well, so anything
+  // absolutely positioned inside a cell is clipped at the table's edge.
+  // position: fixed on a <body> child escapes that, and also any ancestor
+  // that later grows a transform (which would otherwise re-anchor it).
+  var infoCard    = document.getElementById('org-info-card');
+  var infoInner   = infoCard.querySelector('.org-info-card-inner');
+  var infoSources = document.getElementById('org-info-sources');
+  document.body.appendChild(infoCard);
+
+  var infoBodies = {};
+  Array.prototype.forEach.call(infoSources.querySelectorAll('.org-info-body'), function (body) {
+    infoBodies[body.dataset.orgSlug] = body;
+  });
+  // Reuse the one country table above rather than keeping a second copy.
+  Array.prototype.forEach.call(infoSources.querySelectorAll('[data-cc]'), function (el) {
+    el.textContent = countryDisplay(el.dataset.cc);
+  });
+
+  var OPEN_DELAY = 140;   // don't flash a card at every pointer that crosses a row
+  var CLOSE_DELAY = 220;  // long enough to move the pointer into the card
+  var infoBtn = null, infoPinned = false, openTimer = null, closeTimer = null;
+  var suppressFocusOpen = false, suppressHoverUntilMove = false;
+
+  function clearInfoTimers() {
+    clearTimeout(openTimer); clearTimeout(closeTimer);
+    openTimer = closeTimer = null;
+  }
+
+  function positionInfoCard(btn) {
+    var r = btn.getBoundingClientRect();
+    var gap = 8;
+    // Measure after unhiding but before the browser paints, so there is no
+    // frame where the card sits at its previous position.
+    infoCard.style.maxHeight = '';
+    var below = window.innerHeight - r.bottom - gap * 2;
+    var above = r.top - gap * 2;
+    var room  = Math.max(below, above);
+    infoCard.style.maxHeight = Math.max(180, room) + 'px';
+    var w = infoCard.offsetWidth, h = infoCard.offsetHeight;
+    var left = Math.max(gap, Math.min(r.left - 12, window.innerWidth - w - gap));
+    var top  = (h <= below || below >= above) ? r.bottom + gap
+                                              : Math.max(gap, r.top - gap - h);
+    infoCard.style.left = left + 'px';
+    infoCard.style.top  = top + 'px';
+  }
+
+  function openInfo(btn, pin) {
+    var body = infoBodies[btn.dataset.orgSlug];
+    if (!body) return;
+    if (infoBtn && infoBtn !== btn) infoBtn.setAttribute('aria-expanded', 'false');
+    if (infoBtn !== btn) infoInner.innerHTML = body.innerHTML;
+    infoBtn = btn;
+    infoPinned = !!pin;
+    infoCard.hidden = false;
+    infoCard.classList.toggle('org-info-card--pinned', infoPinned);
+    btn.setAttribute('aria-expanded', 'true');
+    positionInfoCard(btn);
+  }
+
+  function closeInfo(refocus) {
+    clearInfoTimers();
+    var btn = infoBtn;
+    infoCard.hidden = true;
+    infoCard.classList.remove('org-info-card--pinned');
+    infoBtn = null;
+    infoPinned = false;
+    if (!btn) return;
+    btn.setAttribute('aria-expanded', 'false');
+    if (refocus) {
+      // Escape and the close button are deliberate dismissals, and both
+      // leave the pointer wherever it was — often still resting on the
+      // trigger, since the card it was hovering has just stopped covering
+      // it. The browser then re-fires mouseenter on that now-uncovered
+      // button from a pointer that never moved, and the card the reader
+      // just dismissed comes straight back. Hover stays off until a real
+      // pointer movement asks for it again.
+      suppressHoverUntilMove = true;
+      // Putting focus back on the trigger would otherwise trip its own
+      // focus handler and reopen what this call just closed — the
+      // Escape-key path, where the card was opened by hover and the button
+      // never had focus to begin with. focus() dispatches synchronously,
+      // so the flag is only up for the duration of that one call.
+      suppressFocusOpen = true;
+      btn.focus();
+      suppressFocusOpen = false;
+    }
+  }
+
+  function scheduleClose() {
+    if (infoPinned) return;
+    clearTimeout(closeTimer);
+    closeTimer = setTimeout(function () { closeInfo(false); }, CLOSE_DELAY);
+  }
+
+  Array.prototype.forEach.call(document.querySelectorAll('.org-info-btn'), function (btn) {
+    btn.addEventListener('mouseenter', function () {
+      clearInfoTimers();
+      if (suppressHoverUntilMove) return;
+      if (infoPinned && infoBtn !== btn) return;  // a pinned card stays put
+      openTimer = setTimeout(function () { openInfo(btn, false); }, OPEN_DELAY);
+    });
+    btn.addEventListener('mouseleave', function () {
+      clearTimeout(openTimer);
+      scheduleClose();
+    });
+    // Keyboard: tabbing to the button is the same intent as hovering it,
+    // minus the accidental-crossing problem the open delay guards against.
+    btn.addEventListener('focus', function () {
+      if (suppressFocusOpen) return;
+      clearInfoTimers();
+      openInfo(btn, false);
+    });
+    btn.addEventListener('blur', scheduleClose);
+    // Click pins, so a touch user (no hover at all) gets the card, and a
+    // mouse user can park it open to click through to a link.
+    btn.addEventListener('click', function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      if (infoPinned && infoBtn === btn) closeInfo(false);
+      else openInfo(btn, true);
+    });
+  });
+
+  infoCard.addEventListener('mouseenter', clearInfoTimers);
+  infoCard.addEventListener('mouseleave', scheduleClose);
+  infoCard.querySelector('.org-info-close').addEventListener('click', function () {
+    closeInfo(true);
+  });
+
+  document.addEventListener('mousemove', function () {
+    suppressHoverUntilMove = false;
+  }, { passive: true });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && !infoCard.hidden) closeInfo(true);
+  });
+  document.addEventListener('click', function (e) {
+    if (infoCard.hidden) return;
+    if (e.target.closest('#org-info-card') || e.target.closest('.org-info-btn')) return;
+    closeInfo(false);
+  });
+  // Follow the button rather than stranding the card mid-page. Passive so
+  // this never blocks scrolling, and rAF-coalesced so a fling doesn't run
+  // a layout read per scroll event.
+  var repositionQueued = false;
+  function queueReposition() {
+    if (infoCard.hidden || repositionQueued) return;
+    repositionQueued = true;
+    requestAnimationFrame(function () {
+      repositionQueued = false;
+      if (!infoCard.hidden && infoBtn) positionInfoCard(infoBtn);
+    });
+  }
+  window.addEventListener('scroll', queueReposition, { passive: true });
+  window.addEventListener('resize', queueReposition);
+  var tableScroll = document.querySelector('.org-table-scroll');
+  if (tableScroll) tableScroll.addEventListener('scroll', queueReposition, { passive: true });
 
   facets.forEach(renderFacet);
   applyFilters();
