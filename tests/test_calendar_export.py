@@ -16,6 +16,7 @@ needs. Run with:
 """
 
 import datetime
+import json
 import os
 import sys
 import tempfile
@@ -79,6 +80,57 @@ class ManualEventDescriptionTests(unittest.TestCase):
                     if e["title"] == "An event with no description at all")
         self.assertFalse(bare["note"])
         self.assertFalse(bare["quote"])
+
+
+class CalendarJsonLdEscapingTests(unittest.TestCase):
+    """calendar.html's JSON-LD block must safely encode special characters in event fields."""
+
+    def test_jsonld_escaping(self):
+        try:
+            import jinja2
+        except ImportError:
+            self.skipTest("jinja2 not installed")
+
+        cal_template_path = os.path.join(
+            os.path.dirname(__file__), "..", "docs", "overrides", "calendar.html"
+        )
+        with open(cal_template_path, encoding="utf-8") as f:
+            content = f.read()
+
+        start_idx = content.find('<script type="application/ld+json">')
+        end_idx = content.find("</script>", start_idx)
+        self.assertNotEqual(start_idx, -1)
+        self.assertNotEqual(end_idx, -1)
+
+        snippet = content[start_idx + len('<script type="application/ld+json">'):end_idx]
+        env = jinja2.Environment()
+        tpl = env.from_string(snippet)
+
+        events = [
+            {
+                "title": 'Special "Title" & <script>',
+                "date": datetime.date(2026, 10, 1),
+                "end_date": datetime.date(2026, 10, 2),
+                "url": 'https://example.com/test?q="</script><script>alert(1)</script>',
+                "location": 'Melbourne "Office"',
+                "country": 'AU"</script><script>alert(2)</script>',
+                "org_slug": "test-org",
+                "org_title": 'Test "Org" & Co.',
+            }
+        ]
+
+        rendered = tpl.render(calendar_events=events)
+
+        # Must not contain literal </script> inside JSON-LD payload
+        self.assertNotIn("</script>", rendered)
+
+        # Must parse cleanly as JSON
+        data = json.loads(rendered)
+        self.assertEqual(len(data), 1)
+        item = data[0]
+        self.assertEqual(item["name"], 'Special "Title" & <script>')
+        self.assertEqual(item["url"], 'https://example.com/test?q="</script><script>alert(1)</script>')
+        self.assertEqual(item["location"]["address"]["addressCountry"], 'AU"</script><script>alert(2)</script>')
 
 
 if __name__ == "__main__":

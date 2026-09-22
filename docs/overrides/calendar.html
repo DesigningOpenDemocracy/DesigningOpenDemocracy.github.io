@@ -234,10 +234,10 @@
         anything reading the structured data. tojson emits the surrounding
         quotes itself. -#}
     "name": {{ e.title | tojson }},
-    "startDate": "{{ e.date }}",
-    {%- if e.end_date %}"endDate": "{{ (e.end_date.isoformat() if e.end_date is mapping else e.end_date) }}",{% endif %}
-    {%- if e.url %}"url": "{{ e.url }}",{% endif %}
-    {%- if e.location %}"location": {"@type": "Place", "name": {{ e.location | tojson }}, "address": {"@type": "PostalAddress", "addressCountry": "{{ e.country or '' }}"}},{% endif %}
+    "startDate": {{ (e.date.isoformat() if e.date.isoformat is defined else e.date | string) | tojson }},
+    {%- if e.end_date %}"endDate": {{ (e.end_date.isoformat() if e.end_date.isoformat is defined else e.end_date | string) | tojson }},{% endif %}
+    {%- if e.url %}"url": {{ e.url | tojson }},{% endif %}
+    {%- if e.location %}"location": {"@type": "Place", "name": {{ e.location | tojson }}, "address": {"@type": "PostalAddress", "addressCountry": {{ (e.country or '') | tojson }}}},{% endif %}
     {%- if e.org_slug %}"organizer": {"@type": "Organization", "name": {{ e.org_title | tojson }}},{% endif %}
     "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
     "eventStatus": "https://schema.org/EventScheduled"
