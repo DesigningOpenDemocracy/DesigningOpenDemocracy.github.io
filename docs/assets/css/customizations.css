@@ -1649,6 +1649,11 @@ html .md-typeset details.plain-details > :last-child {
   user-select: none;
 }
 
+.kg-toggle input:focus-visible {
+  outline: 2px solid var(--md-accent-fg-color, #49a7e9);
+  outline-offset: 2px;
+}
+
 .kg-swatch {
   display: inline-block;
   width: 10px;

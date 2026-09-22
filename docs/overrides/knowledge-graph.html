@@ -342,6 +342,11 @@
     }
 
     document.getElementById('kg-info-close').addEventListener('click', hideInfo);
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && !infoEl.classList.contains('kg-info--hidden')) {
+        hideInfo();
+      }
+    });
 
     cy.on('tap', 'node', function(evt) {
       var node = evt.target;
