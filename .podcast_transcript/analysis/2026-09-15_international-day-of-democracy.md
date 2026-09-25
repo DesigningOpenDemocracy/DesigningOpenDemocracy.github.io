@@ -50,14 +50,17 @@
 
 Speaker labels were fixed in the reviewed transcript. The `Nicholas Gruen`
 fragments that had been split out of Basil's opening and closing now belong to
-Basil. The 00:07:39 line is now Anitra's. The 00:42:47 exchange is now split
-correctly: Nicole says "and this is democracy", and Nicholas adds the 7.30
-Report line.
+Basil. The 00:07:39 line is now Anitra's. At 00:42:47, Nicholas cuts into
+Nicole's answer with "and they say, and this is democracy… not the 7.30
+Report" (label corrected from Nicole on a second listen, 2026-09-26).
 
 **Corrected in the reviewed transcript** (no action needed): 888 Co-operative
 Causeway (Basil's spoken "Triple 8" is kept, since that's what he said), Yarra
 Valley Water, Carl Schmitt, Hannah Arendt, *res publica*, Kallistos, Jo
-Freeman, Vincent Liegey (Anitra's degrowth co-editor), CPC (Audience Q4,
+Freeman, Vincent Liegey (Anitra's degrowth co-editor), *Routledge Handbook
+of Degrowth* (corrected from "Hangbook"; co-edited by Nelson and Liegey, 2025,
+per [her site](https://anitranelson.info/routledge-handbook-of-degrowth/),
+distinct from their co-written *Exploring Degrowth*, 2020), CPC (Audience Q4,
 previously "CSEP"), Pauline Hanson.
 
 **Still as transcribed — check before quoting in DOD's own voice:**
@@ -66,7 +69,6 @@ previously "CSEP"), Pauline Hanson.
 |---|---|---|
 | "Copower" / "Co-Power" | CoPower (house style for the org name) | high |
 | "the inform. Formal Urbanism Research Hub" | Informal Urbanism Research Hub | high |
-| "Routledge Hangbook of Degrowth" (Anthony reading the bio) | a degrowth handbook co-edited with Vincent Liegey (Anitra: "about 35 chapters"). **Verify the exact title** | medium |
 | "Stating Deliberation A Practice Guide" | a deliberation practice guide Nicole co-authored. **Verify the title** | low |
 | "Kallistos" | presumably Kallistos Ware (theologian). **Verify** before naming him in full | medium |
 | "Pope and his son Hugh Pope" | unclear source for the Chesterton line. **Verify or drop** | low |
@@ -212,9 +214,9 @@ The panel's practical voice: what deliberation actually looks like in the room.
     dental money and became "the best participant I've ever had", still an
     advocate for the organisation.
   - "Just about at every closing session I run… I cry." Participants say
-    "I can make a difference. I am powerful… and this is democracy." Nicholas
-    cuts in (00:42:51): "Not… the 7.30 Report with Sarah Ferguson trying to
-    trap whoever she's trying to trap that night."
+    "I can make a difference. I am powerful." Nicholas cuts in (00:42:47):
+    "And they say, and they say, and this is democracy. Not… the 7.30 Report
+    with Sarah Ferguson trying to trap whoever she's trying to trap that night."
 - **"Learning to be free": the mechanics (01:00:04).**
   - Experts are prepared to "let go control": they're a resource and an
     observer, not a participant.
@@ -464,7 +466,8 @@ the speaker's view and don't repeat them in DOD's voice:
 - [ ] *The Conversation* data-centres "nine questions" article (Anitra). Find the link.
 - [ ] AUKUS fifth anniversary on 15 Sep 2026. Confirmed (announced 15 Sep 2021); cite.
 - [ ] Samuel Johnson, "Reason dies alone" (Godfrey). Verify the attribution.
-- [ ] Book titles in the bios (Anitra's degrowth handbook, Nicole's practice guide, *Beyond Money*). Verify against publisher pages.
+- [x] ~~Anitra's degrowth handbook~~: *Routledge Handbook of Degrowth* (2025), co-edited with Vincent Liegey — confirmed on anitranelson.info.
+- [ ] Book titles in the bios still to verify: Nicole's practice guide, *Beyond Money*.
 - [ ] Yarra Valley Water citizens' jury. Link a public source (YVW or MosaicLab case study) for the six days, stratified selection and price submission.
 
 ## Notes for the recap post itself
