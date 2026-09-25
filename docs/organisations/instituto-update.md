@@ -64,7 +64,7 @@ activity:
     url: https://www.institutoupdate.org.br
     checked: 2026-09-17
   rss:
-    checked: 2026-09-11
+    checked: 2026-09-25
     date: 2026-08-09
     note: RSS feed active
     url: https://www.institutoupdate.org.br/feed

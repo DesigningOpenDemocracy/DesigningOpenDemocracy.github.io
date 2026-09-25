@@ -53,11 +53,10 @@ activity:
     url: https://www.ettemedia.com/
     checked: 2026-09-16
   rss:
-    date: 2026-09-10
-    note: 'Latest post: A timeline of media reports Netanyahu knew about October 7
-      before it happened'
-    url: https://www.ettemedia.com/a-timeline-of-media-reports-netanyahu-knew-about-october-7-before-it-happened/
-    checked: 2026-09-11
+    date: 2026-09-24
+    note: "Latest post: The Monthly Booklette: September edition"
+    url: https://www.ettemedia.com/the-monthly-booklette-september-edition/
+    checked: 2026-09-25
 last_checked: '2026-09-16'
 contributors:
 - BrianKhuu

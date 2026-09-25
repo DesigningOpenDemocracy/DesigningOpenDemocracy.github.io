@@ -67,7 +67,7 @@ activity:
     url: https://ethelo.com
     checked: 2026-09-13
   rss:
-    checked: 2026-09-11
+    checked: 2026-09-25
     date: 2026-03-30
     note: 'Latest post: Engaged California Program'
     url: https://ethelo.com/case-study/engaged-california-program/

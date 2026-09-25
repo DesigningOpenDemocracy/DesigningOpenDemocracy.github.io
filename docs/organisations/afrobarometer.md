@@ -59,10 +59,10 @@ activity:
     url: https://www.afrobarometer.org
     checked: 2026-09-19
   rss:
-    date: 2026-09-07
-    note: 'Latest post: AB Update August 2026'
-    url: https://www.afrobarometer.org/articles/ab-update-august-2026/
-    checked: 2026-09-11
+    date: 2026-09-24
+    note: "Latest post: Les habitants d’Afrique Centrale et de l’Ouest soutiennent l’autonomie des femme"
+    url: https://www.afrobarometer.org/articles/les-habitants-dafrique-centrale-et-de-louest-soutiennent-lautonomie-des-femmes-et-leducation-a-la-sexualite-mais-sont-divises-sur-lacces-aux-contraceptifs/
+    checked: 2026-09-25
 last_checked: '2026-09-19'
 ---
 

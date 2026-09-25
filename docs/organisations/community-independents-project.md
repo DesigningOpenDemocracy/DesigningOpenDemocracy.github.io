@@ -49,7 +49,7 @@ activity:
     url: https://www.communityindependentsproject.org
     checked: 2026-09-13
   rss:
-    checked: 2026-09-11
+    checked: 2026-09-25
     date: 2022-09-04
     note: 'Latest post: The second national Community Independents Convention, August
       2022'

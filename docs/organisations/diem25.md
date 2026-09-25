@@ -60,10 +60,10 @@ activity:
     url: https://diem25.org
     checked: 2026-09-16
   rss:
-    date: 2026-09-11
-    note: RSS feed active
+    date: 2026-09-25
+    note: "RSS feed active"
     url: https://diem25.org/news/feed
-    checked: 2026-09-11
+    checked: 2026-09-25
   scrape:
     checked: 2026-06-08
     date: 2026-06-04

@@ -56,10 +56,10 @@ activity:
     url: https://www.code4japan.org
     checked: 2026-09-16
   sitemap:
-    date: 2026-09-11
-    note: Page last modified (from sitemap)
+    date: 2026-09-18
+    note: "Page last modified (from sitemap)"
     url: https://www.code4japan.org/sitemap.xml
-    checked: 2026-09-11
+    checked: 2026-09-25
 last_checked: '2026-09-16'
 ---
 

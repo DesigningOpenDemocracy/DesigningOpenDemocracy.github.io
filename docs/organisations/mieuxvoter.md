@@ -56,10 +56,10 @@ activity:
     url: https://mieuxvoter.fr
     checked: 2026-09-14
   rss:
-    checked: 2026-09-11
+    checked: 2026-09-25
     note: No feed found
   scrape:
-    checked: 2026-09-11
+    checked: 2026-09-25
     date: 2022-04-06
     note: Scraper only finds URL-embedded dates; page shows 2025 items
     url: https://mieuxvoter.fr/presse

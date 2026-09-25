@@ -110,10 +110,10 @@ activity:
     url: https://mosaiclab.com.au
     checked: 2026-09-15
   sitemap:
-    date: 2026-08-26
-    note: Page last modified (from sitemap)
+    date: 2026-08-28
+    note: "Page last modified (from sitemap)"
     url: https://mosaiclab.com.au/sitemap.xml
-    checked: 2026-09-11
+    checked: 2026-09-25
 last_checked: '2026-09-15'
 ---
 

@@ -44,11 +44,10 @@ activity:
     url: https://represent.us
     checked: 2026-09-20
   rss:
-    date: 2026-09-01
-    note: 'Latest post: Why Do Prediction Markets Fuel Corruption, Crime, and Insider
-      Trading?'
-    url: https://represent.us/news/prediction-markets-explained/
-    checked: 2026-09-11
+    date: 2026-09-23
+    note: "RSS feed active"
+    url: https://represent.us/news/50398/
+    checked: 2026-09-25
 last_checked: '2026-09-20'
 ---
 

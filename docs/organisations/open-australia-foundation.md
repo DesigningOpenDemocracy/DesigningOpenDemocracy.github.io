@@ -60,7 +60,7 @@ activity:
     date: 2026-08-13
     note: 'Latest post: This is what our library is for'
     url: https://oaf.org.au/2026/08/13/this-is-what-our-library-is-for/
-    checked: 2026-09-11
+    checked: 2026-09-25
 last_checked: '2026-09-11'
 ---
 

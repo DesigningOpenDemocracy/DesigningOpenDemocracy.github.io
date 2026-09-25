@@ -93,7 +93,7 @@ activity:
     checked: 2026-09-19
   sitemap:
     note: Sitemap found, no lastmod
-    checked: 2026-09-11
+    checked: 2026-09-25
 last_checked: '2026-09-19'
 ---
 

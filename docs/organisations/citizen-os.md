@@ -61,12 +61,12 @@ activity:
     url: https://citizenos.com
     checked: 2026-09-12
   rss:
-    date: 2026-09-11
-    note: RSS feed active
+    date: 2026-09-25
+    note: "RSS feed active"
     url: https://citizenos.com/feed
-    checked: 2026-09-11
+    checked: 2026-09-25
   scrape:
-    checked: 2026-09-11
+    checked: 2026-09-25
     date: 2023-06-19
     note: Latest news page scraped
     url: https://citizenos.com/news/

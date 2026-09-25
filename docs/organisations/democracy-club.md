@@ -52,15 +52,15 @@ activity:
     url: https://democracyclub.org.uk
     checked: 2026-09-21
   rss:
-    checked: 2026-09-11
-    date: 2026-07-31
-    note: 'Latest post: Mapping Northern Ireland''s proposed polling places'
-    url: https://democracyclub.org.uk/blog/2026/07/31/mapping-northern-irelands-proposed-polling-places/
+    date: 2026-09-21
+    note: "Latest post: Why are UK elections so different each year?"
+    url: https://democracyclub.org.uk/blog/2026/09/21/why-are-uk-elections-so-different-each-year/
+    checked: 2026-09-25
   scrape:
-    date: 2026-07-31
-    note: Latest news page scraped
+    date: 2026-09-21
+    note: "Latest news page scraped"
     url: https://democracyclub.org.uk/blog/
-    checked: 2026-09-11
+    checked: 2026-09-25
 last_checked: '2026-09-21'
 ---
 

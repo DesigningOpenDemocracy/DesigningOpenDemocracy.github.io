@@ -74,11 +74,11 @@ activity:
     url: https://www.democratieouverte.org
     checked: 2026-09-13
   rss:
-    checked: 2026-09-11
+    checked: 2026-09-25
     note: No feed found
   scrape:
     hint: no_markup
-    checked: 2026-09-11
+    checked: 2026-09-25
     note: News page found, no machine-readable date
 last_checked: '2026-09-13'
 ---

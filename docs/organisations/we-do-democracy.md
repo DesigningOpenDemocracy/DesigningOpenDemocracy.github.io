@@ -51,11 +51,10 @@ activity:
     url: https://www.wedodemocracy.dk
     checked: 2026-09-19
   rss:
-    date: 2026-09-02
-    note: 'Latest post: Borgerpanel afleverer otte gennembearbejdede anbefalinger
-      til Folketinget'
-    url: https://www.wedodemocracy.dk/nationalt-borgerpanel-kommer-med-anbefalinger-til-fremtidens-dyrevelfaerd/
-    checked: 2026-09-11
+    date: 2026-09-17
+    note: "Latest post: Ny Skole for Fremtidens Demokrati samler borgernes demokratiske dannelse i et ny"
+    url: https://www.wedodemocracy.dk/ny-skole-for-fremtidens-demokrati-samler-borgernes-demokratiske-dannelse-i-et-nyt-laeringsrum/
+    checked: 2026-09-25
 last_checked: '2026-09-19'
 ---
 

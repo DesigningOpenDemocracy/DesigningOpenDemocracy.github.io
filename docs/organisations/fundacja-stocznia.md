@@ -61,7 +61,7 @@ activity:
     url: https://stocznia.org.pl
     checked: 2026-09-17
   rss:
-    checked: 2026-09-11
+    checked: 2026-09-25
     date: 2026-06-25
     note: 'Latest post: Wspólne oświadczenie polskich i ukraińskich organizacji, działaczy
       i działaczek '

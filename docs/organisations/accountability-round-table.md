@@ -49,7 +49,7 @@ activity:
     url: http://accountabilityrt.org
     checked: 2026-09-21
   rss:
-    checked: 2026-09-11
+    checked: 2026-09-25
     date: 2026-07-28
     note: 'Latest post: Enhancing government accountability'
     url: https://www.accountabilityrt.org/enhancing-government-accountability/

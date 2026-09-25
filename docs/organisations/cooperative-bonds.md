@@ -63,15 +63,15 @@ activity:
     url: https://bonds.coop
     checked: 2026-09-13
   rss:
-    date: 2026-09-11
-    note: RSS feed active
+    date: 2026-09-25
+    note: "RSS feed active"
     url: https://bonds.coop/feed
-    checked: 2026-09-11
+    checked: 2026-09-25
   scrape:
     date: 2026-07-30
     note: Latest news page scraped
     url: https://bonds.coop/resources/co-op-news/
-    checked: 2026-09-11
+    checked: 2026-09-25
 last_checked: '2026-09-13'
 ---
 

@@ -51,8 +51,10 @@ activity:
     url: https://seminarioscideci.org
     checked: 2026-09-12
   rss:
-    note: No feed found
-    checked: 2026-09-11
+    date: 2019-06-03
+    note: "Latest post: Conversatorio con Rita Segato y Raúl Zibechi"
+    url: https://seminarioscideci.org/conversatorio-con-rita-segato-y-raul-zibechi/
+    checked: 2026-09-25
   sitemap:
     checked: 2026-08-09
     date: 2024-05-21

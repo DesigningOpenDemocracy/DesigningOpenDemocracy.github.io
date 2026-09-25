@@ -70,12 +70,12 @@ activity:
     checked: 2026-09-20
   rss:
     note: No feed found
-    checked: 2026-09-11
+    checked: 2026-09-25
   scrape:
-    date: 2026-09-08
-    note: Latest news page scraped
+    date: 2026-09-21
+    note: "Latest news page scraped"
     url: https://pmg.org.za/blog/
-    checked: 2026-09-11
+    checked: 2026-09-25
 last_checked: '2026-09-20'
 ---
 

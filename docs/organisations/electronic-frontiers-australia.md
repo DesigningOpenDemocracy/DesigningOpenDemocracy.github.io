@@ -83,11 +83,10 @@ activity:
     url: https://efa.org.au
     checked: 2026-09-19
   rss:
-    date: 2026-09-10
-    note: 'Latest post: International Day of Democracy 2026 and the Business of Outrage:
-      How Social Medi'
-    url: https://efa.org.au/international-day-of-democracy-2026/
-    checked: 2026-09-11
+    date: 2026-09-22
+    note: "Latest post: Privacy Act Reform – Public Consultation on Exposure Draft Legislation"
+    url: https://efa.org.au/privacy-act-reform-public-consultation-on-exposure-draft-legislation/
+    checked: 2026-09-25
 last_checked: '2026-09-19'
 ---
 

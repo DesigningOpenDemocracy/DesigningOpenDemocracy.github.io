@@ -62,7 +62,7 @@ activity:
     url: https://australiandemocracy.org.au
     checked: 2026-09-12
   sitemap:
-    checked: 2026-09-11
+    checked: 2026-09-25
     date: 2026-06-05
     note: Server still up (sitemap detected)
 last_checked: '2026-09-12'

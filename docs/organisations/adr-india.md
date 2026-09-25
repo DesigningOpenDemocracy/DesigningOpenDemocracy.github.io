@@ -71,7 +71,7 @@ activity:
     url: https://adrindia.org
     checked: 2026-09-19
   rss:
-    checked: 2026-09-11
+    checked: 2026-09-25
     note: No feed found
 last_checked: '2026-09-19'
 ---

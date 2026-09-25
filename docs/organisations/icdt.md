@@ -57,10 +57,10 @@ activity:
     url: https://chinademocrats.org/en
     checked: 2026-09-14
   rss:
-    date: 2026-09-09
-    note: 'Latest post: 王天成 | 异议人士有门必修课：《革命蓝图》中文版序'
-    url: https://chinademocrats.org/?p=7010
-    checked: 2026-09-11
+    date: 2026-09-22
+    note: "Latest post: 美国政治暴力为何越来越难看清"
+    url: https://chinademocrats.org/?p=7123
+    checked: 2026-09-25
 last_checked: '2026-09-14'
 ---
 

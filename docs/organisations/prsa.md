@@ -79,7 +79,7 @@ activity:
     url: https://www.prsa.org.au
     checked: 2026-09-15
   rss:
-    checked: 2026-09-11
+    checked: 2026-09-25
     date: 2020-07-09
     note: 'Latest post: Orders in Council gazetted for single-councillor wards have
       taken effect'
@@ -88,7 +88,7 @@ activity:
     date: 2026-06-01
     note: Latest news page scraped
     url: https://www.prsa.org.au/qn/indexqn.htm
-    checked: 2026-09-11
+    checked: 2026-09-25
 last_checked: '2026-09-15'
 ---
 

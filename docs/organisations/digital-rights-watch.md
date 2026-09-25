@@ -77,10 +77,10 @@ activity:
     url: https://digitalrightswatch.org.au
     checked: 2026-09-19
   rss:
-    date: 2026-09-10
-    note: 'Latest post: Submission to AUKUS Inquiry'
-    url: /2026/09/10/submission-to-aukus-inquiry/
-    checked: 2026-09-11
+    date: 2026-09-22
+    note: "Latest post: Submission on the Online Safety Amendment (Digital Duty of Care) Bill 2026"
+    url: /2026/09/22/submission-on-the-online-safety-amendment-digital-duty-of-care-bill-2026/
+    checked: 2026-09-25
 last_checked: '2026-09-19'
 ---
 

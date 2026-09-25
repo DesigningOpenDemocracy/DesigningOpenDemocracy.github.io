@@ -57,10 +57,10 @@ activity:
     url: https://perludem.or.id
     checked: 2026-09-19
   rss:
-    date: 2026-09-01
-    note: 'Latest post: Safeguarding The Rule Of The Democratic Game'
-    url: https://perludem.or.id/safeguarding-the-rule-of-the-democratic-game/
-    checked: 2026-09-11
+    date: 2026-09-15
+    note: "Latest post: Assessing the Constitutionality of E-Voting, Perludem Calls for a Needs-Based Ap"
+    url: https://perludem.or.id/assessing-the-constitutionality-of-e-voting-perludem-calls-for-a-needs-based-approach/
+    checked: 2026-09-25
 last_checked: '2026-09-19'
 ---
 

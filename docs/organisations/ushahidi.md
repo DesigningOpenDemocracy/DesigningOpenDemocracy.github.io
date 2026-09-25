@@ -51,13 +51,13 @@ activity:
     url: https://www.ushahidi.com
     checked: 2026-09-15
   scrape:
-    checked: 2026-09-11
+    checked: 2026-09-25
     date: 2024-11-12
     note: 'Latest post: The End; and the Means to that End (Angela Oduor Lungati)'
     url: https://www.ushahidi.com/about/blog
   sitemap:
     note: Sitemap found, no lastmod
-    checked: 2026-09-11
+    checked: 2026-09-25
 last_checked: '2026-09-15'
 ---
 

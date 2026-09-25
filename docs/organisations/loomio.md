@@ -64,7 +64,7 @@ activity:
     date: 2026-09-07
     note: Page last modified (from sitemap)
     url: https://www.loomio.com/marketing-sitemap.xml
-    checked: 2026-09-11
+    checked: 2026-09-25
 last_checked: '2026-09-21'
 ---
 

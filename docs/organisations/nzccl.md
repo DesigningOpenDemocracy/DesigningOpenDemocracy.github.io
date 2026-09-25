@@ -55,10 +55,10 @@ activity:
     url: https://nzccl.org.nz
     checked: 2026-09-19
   rss:
-    date: 2026-09-02
-    note: 'Latest post: Submission: Concealment of Location of Victim Remains Bill'
-    url: https://nzccl.org.nz/submission-concealment-of-location-of-victim-remains-bill/
-    checked: 2026-09-11
+    date: 2026-09-20
+    note: "Latest post: New website features: Your Rights and Laws limiting the OIA"
+    url: https://nzccl.org.nz/new-website-features-your-rights-and-laws-limiting-the-oia/
+    checked: 2026-09-25
 last_checked: '2026-09-19'
 ---
 

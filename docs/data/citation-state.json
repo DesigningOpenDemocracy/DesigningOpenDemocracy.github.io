@@ -1,4 +1,36 @@
 {
+  "https://actualite.cd/2026/08/13/rdc-tshisekedi-demande-une-nouvelle-deliberation-de-la-loi-sur-lorganisation-du": {
+    "archive_checked": "2026-09-25",
+    "archive_url": "http://web.archive.org/web/20260816045341/https://actualite.cd/2026/08/13/rdc-tshisekedi-demande-une-nouvelle-deliberation-de-la-loi-sur-lorganisation-du",
+    "checked": "2026-09-25",
+    "document_sha256": "87bc04dda3324e37f5d02537f6b1e900bb8c528712048c74ddfc63fb98f4cb4b",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-09-25",
+        "id": "178e48c31b943d42b7339bd619c99761493148c1fbbeb84b3cf4a34ca283ef64",
+        "quote": "[F\u00e9lix Tshisekedi] a demand\u00e9 au Parlement une nouvelle d\u00e9lib\u00e9ration de la loi fixant les conditions d\u2019organisation du r\u00e9f\u00e9rendum, apr\u00e8s sa validation sous r\u00e9serves par la Cour constitutionnelle.",
+        "verified": false
+      }
+    ],
+    "last_modified": "Fri, 25 Sep 2026 09:10:48 GMT"
+  },
+  "https://actualite.cd/2026/09/18/ludpstshisekedi-qualifie-d-echec-la-manifestation-de-la-c64-et-annonce-son-tour-une": {
+    "archive_checked": "2026-09-25",
+    "archive_url": "http://web.archive.org/web/20260919044415/https://actualite.cd/2026/09/18/ludpstshisekedi-qualifie-d-echec-la-manifestation-de-la-c64-et-annonce-son-tour-une",
+    "checked": "2026-09-25",
+    "document_sha256": "3de894f93dc021fbfc27b5d96f35b7caa0103647cee232572d70b0bc52e7cef6",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-09-25",
+        "id": "a8e60838ce677295a00fcdc524ec5f112213b0806322dfe1684536cc6cc9f1a6",
+        "quote": "Ces gens-l\u00e0 (NDLR: Coalition C64) repr\u00e9sentent une poign\u00e9e d\u2019individus qui fonctionnent uniquement sur la base des r\u00e9seaux sociaux et des manipulations... Il s\u2019agit d\u2019une opposition affaiblie qui n\u2019existe que sur les r\u00e9seaux sociaux.",
+        "verified": false
+      }
+    ],
+    "last_modified": "Fri, 25 Sep 2026 09:11:45 GMT"
+  },
   "https://adrindia.org/about-adr/mission-and-vision": {
     "checked": "2026-08-26",
     "document_sha256": "ff62602758e2414fe8052c2d6948da21628891e6f1bc4d13e7e90d384dbea7c9",
@@ -164,6 +196,22 @@
     ],
     "last_modified": null
   },
+  "https://asiapacificreport.nz/2026/09/18/fiji-targets-new-constitution-by-christmas-eve-as-watchdog-warns-of-self-coup-risk/": {
+    "archive_checked": "2026-09-25",
+    "archive_url": "http://web.archive.org/web/20260919201148/https://asiapacificreport.nz/2026/09/18/fiji-targets-new-constitution-by-christmas-eve-as-watchdog-warns-of-self-coup-risk/",
+    "checked": "2026-09-25",
+    "document_sha256": "1a9e6962f92999d2565c12e8b8fb91a0cf5b959e69ac1c53d380595439444b8c",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-09-25",
+        "id": "1114c3289887921fd43fdf507413139521acbb5e7e19e4078e74735c32769933",
+        "quote": "between November and mid-December 2026,",
+        "verified": false
+      }
+    ],
+    "last_modified": "Fri, 25 Sep 2026 00:27:01 GMT"
+  },
   "https://astanatimes.com/2026/07/kazakhstans-new-constitution-takes-effect-heres-what-changes/": {
     "checked": "2026-08-26",
     "document_sha256": "396828a4d7e11857942bfed3f617e3d3df6488ec76deec0484975c0560f158d3",
@@ -301,7 +349,7 @@
     "last_modified": "Tue, 25 Nov 2025 21:34:43 GMT"
   },
   "https://bethnoveck.medium.com/was-vtaiwan-such-a-big-flop-after-all-d6b365f916dc": {
-    "archive_checked": "2026-09-11",
+    "archive_checked": "2026-09-25",
     "archive_url": "http://web.archive.org/web/20260904075928/https://bethnoveck.medium.com/was-vtaiwan-such-a-big-flop-after-all-d6b365f916dc",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-20",
@@ -827,7 +875,7 @@
     "last_modified": null
   },
   "https://commonslibrary.parliament.uk/research-briefings/cbp-10876/": {
-    "archive_checked": "2026-09-18",
+    "archive_checked": "2026-09-25",
     "archive_url": "http://web.archive.org/web/20260914150106/https://commonslibrary.parliament.uk/research-briefings/cbp-10876/",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-20",
@@ -4368,8 +4416,8 @@
     "blocked_since": "2026-09-04"
   },
   "https://events.humanitix.com/international-day-of-democracy": {
-    "archive_checked": "2026-09-11",
-    "archive_url": "http://web.archive.org/web/20260904074911/https://events.humanitix.com/international-day-of-democracy",
+    "archive_checked": "2026-09-25",
+    "archive_url": "http://web.archive.org/web/20260918080358/https://events.humanitix.com/international-day-of-democracy",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-25"
   },
@@ -4578,6 +4626,28 @@
     ],
     "last_modified": null
   },
+  "https://fijisun.com.fj/news/nation/csos-warn-against-rushed-constitution-reform": {
+    "archive_checked": "2026-09-25",
+    "archive_url": "http://web.archive.org/web/20260920065914/https://fijisun.com.fj/news/nation/csos-warn-against-rushed-constitution-reform",
+    "checked": "2026-09-25",
+    "document_sha256": "4b685b0bf9cadbd0bb5433dda8a81d80b368caa893c445b2fde7dbd061e073f1",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-09-25",
+        "context": {
+          "prefix": "lf-coup\u201d, or autogolpe, happens when a government uses legal and institutional processes to stay in power without a fresh mandate from voters. \u201c",
+          "sha256": "15e13b68be30474746dd8b1964ff7534b9a54c66942645b277ff0843bfe25aa8",
+          "suffix": "\u201d the groups said. They pointed to the Constitution Review Commission\u2019s own figures, saying less than one per cent of Fijians took part in consu",
+          "text": "\u201cNo Government has the moral, legal or democratic authority to use constitutional reform to create uncertainty around an election that is constitutionally due,\u201d the groups said."
+        },
+        "id": "91a4b7662c771e65bf0005f92b9712c3ec41aa04134dead07bc6db960738d048",
+        "quote": "No Government has the moral, legal or democratic authority to use constitutional reform to create uncertainty around an election that is constitutionally due,",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
   "https://finance.yahoo.com/news/blockchain-voting-platform-horizon-state-140552054.html": {
     "checked": "2026-08-26",
     "document_sha256": "0d95abd1c4da713ac574dccaa269df31dc1e3a3a8ed3671c0b949bd3b53d58ba",
@@ -4650,8 +4720,8 @@
     "blocked_since": "2026-08-29"
   },
   "https://foro.org.co/quienes-somos/": {
-    "archive_checked": "2026-09-18",
-    "archive_url": "http://web.archive.org/web/20260904074937/https://foro.org.co/quienes-somos/",
+    "archive_checked": "2026-09-25",
+    "archive_url": "http://web.archive.org/web/20260925085948/https://foro.org.co/quienes-somos/",
     "blocked": "ROBOTS_DISALLOWED",
     "blocked_since": "2026-08-20",
     "evidence": [
@@ -5195,7 +5265,7 @@
     "last_modified": "Thu, 20 Aug 2026 11:47:41 GMT"
   },
   "https://journals.sagepub.com/doi/10.1177/20539517241296038": {
-    "archive_checked": "2026-09-18",
+    "archive_checked": "2026-09-25",
     "archive_url": "http://web.archive.org/web/20260904075947/https://journals.sagepub.com/doi/10.1177/20539517241296038",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-20",
@@ -6553,7 +6623,7 @@
     "last_modified": null
   },
   "https://theyvoteforyou.org.au/about": {
-    "archive_checked": "2026-09-18",
+    "archive_checked": "2026-09-25",
     "archive_url": "http://web.archive.org/web/20260812053340/https://theyvoteforyou.org.au/about",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-20",
@@ -7076,7 +7146,7 @@
     "last_modified": null
   },
   "https://www.ag.gov.au/integrity/australias-open-government-partnership": {
-    "archive_checked": "2026-09-18",
+    "archive_checked": "2026-09-25",
     "archive_url": "http://web.archive.org/web/20260828153433/https://www.ag.gov.au/integrity/australias-open-government-partnership",
     "blocked": "HTTP_403",
     "blocked_since": "2026-09-16",
@@ -7311,8 +7381,8 @@
     "last_modified": null
   },
   "https://www.britannica.com/topic/slavery-sociology/Slave-societies": {
-    "archive_checked": "2026-09-18",
-    "archive_url": "http://web.archive.org/web/20260721132550/https://www.britannica.com/topic/slavery-sociology/Slave-societies",
+    "archive_checked": "2026-09-25",
+    "archive_url": "http://web.archive.org/web/20260921202834/https://www.britannica.com/topic/slavery-sociology/Slave-societies",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-20",
     "evidence": [
@@ -7532,7 +7602,7 @@
     "last_modified": null
   },
   "https://www.coe.int/en/web/congress/-/deliberative-democracy-in-ukraine-congress-to-support-three-citizens-assemblies-in-2025-2026": {
-    "archive_checked": "2026-09-18",
+    "archive_checked": "2026-09-25",
     "archive_url": "http://web.archive.org/web/20260918080901/https://www.coe.int/en/web/congress/-/deliberative-democracy-in-ukraine-congress-to-support-three-citizens-assemblies-in-2025-2026",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-20",
@@ -7552,8 +7622,8 @@
     "manual_checked": "2026-08-22"
   },
   "https://www.coe.int/en/web/congress/-/ukraine-s-first-metropolitan-citizens-assembly-launched-in-lviv": {
-    "archive_checked": "2026-09-11",
-    "archive_url": "http://web.archive.org/web/20260911082955/https://www.coe.int/en/web/congress/-/ukraine-s-first-metropolitan-citizens-assembly-launched-in-lviv",
+    "archive_checked": "2026-09-25",
+    "archive_url": "http://web.archive.org/web/20260918080920/https://www.coe.int/en/web/congress/-/ukraine-s-first-metropolitan-citizens-assembly-launched-in-lviv",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-20",
     "evidence": [
@@ -8002,6 +8072,8 @@
     "last_modified": null
   },
   "https://www.elcomercio.com/actualidad/politica/marlon-vargas-gana-la-presidencia-de-la-conaie-tras-imponerse-a-leonidas-iza/": {
+    "blocked": "HTTP_403",
+    "blocked_since": "2026-09-25",
     "checked": "2026-08-29",
     "document_sha256": "d53fc27795611975c0d8a938c66808535d782a8587a879d8851ec1275553d0eb",
     "etag": null,
@@ -8468,7 +8540,7 @@
     "last_modified": null
   },
   "https://www.involve.org.uk/about/about-involve": {
-    "archive_checked": "2026-09-11",
+    "archive_checked": "2026-09-25",
     "archive_url": "http://web.archive.org/web/20260816153423/https://www.involve.org.uk/about/about-involve",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-20",
@@ -8488,7 +8560,7 @@
     "manual_checked": "2026-08-22"
   },
   "https://www.ipc.nsw.gov.au/news/open-government-partnership-final-public-consultation-draft-commitments-australias-third-national-action-plan": {
-    "archive_checked": "2026-09-18",
+    "archive_checked": "2026-09-25",
     "archive_url": "http://web.archive.org/web/20250524182833/https://www.ipc.nsw.gov.au/news/open-government-partnership-final-public-consultation-draft-commitments-australias-third-national-action-plan",
     "blocked": "HTTP_403",
     "blocked_since": "2026-09-16"
@@ -8754,7 +8826,7 @@
     "last_modified": null
   },
   "https://www.localgovernment.vic.gov.au/__data/assets/word_doc/0027/167913/Local-Government-Act-2020-Principles-Community-Engagement.docx": {
-    "archive_checked": "2026-09-18",
+    "archive_checked": "2026-09-25",
     "archive_url": "http://web.archive.org/web/20260727123829/https://www.localgovernment.vic.gov.au/__data/assets/word_doc/0027/167913/Local-Government-Act-2020-Principles-Community-Engagement.docx",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-20",
@@ -8861,8 +8933,8 @@
     "last_modified": null
   },
   "https://www.mcguinnessinstitute.org/events/upcoming-events/": {
-    "archive_checked": "2026-09-18",
-    "archive_url": "http://web.archive.org/web/20250717192156/https://www.mcguinnessinstitute.org/events/upcoming-events/",
+    "archive_checked": "2026-09-25",
+    "archive_url": "http://web.archive.org/web/20260918080556/https://www.mcguinnessinstitute.org/events/upcoming-events/",
     "blocked": "HTTP_403",
     "blocked_since": "2026-09-18"
   },
@@ -8921,6 +8993,28 @@
         },
         "id": "4cb187c2805ff536c6187505c77bc60560fbfdd1c128edf34ad67c1534fd3423",
         "quote": "\u6c11\u76df\u4e8e1941\u5e743\u670819\u65e5\u5728\u91cd\u5e86\u79d8\u5bc6\u6210\u7acb",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://www.mysociety.org/2026/09/14/tictec-presents-digital-democracy-edinburgh-11-12-march-2027/": {
+    "archive_checked": "2026-09-25",
+    "archive_url": "http://web.archive.org/web/20260915155154/https://www.mysociety.org/2026/09/14/tictec-presents-digital-democracy-edinburgh-11-12-march-2027/",
+    "checked": "2026-09-25",
+    "document_sha256": "10c56840fa1537865d69e0295b6a37a759eedc93283c37176a431c4a1510aa72",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-09-25",
+        "context": {
+          "prefix": "h (11 & 12 March 2027) Posted by Gemma 14th September 2026 Posted in Events, TICTeC",
+          "sha256": "7140b0ef45651e2e566466c2874bbf59d8210b118beee54dc5028cad8cc92879",
+          "suffix": "Save the date to join us for two days of exploring how digital tools can help make democratic systems more effective, inclusive and participato",
+          "text": "Digital Democracy Edinburgh will take place on 11 & 12 March 2027 in Edinburgh, Scotland."
+        },
+        "id": "7140b0ef45651e2e566466c2874bbf59d8210b118beee54dc5028cad8cc92879",
+        "quote": "Digital Democracy Edinburgh will take place on 11 & 12 March 2027 in Edinburgh, Scotland.",
         "verified": true
       }
     ],
@@ -9235,8 +9329,8 @@
     "last_modified": null
   },
   "https://www.opengovpartnership.org/documents/australia-letter-of-intent-to-join-ogp/": {
-    "archive_checked": "2026-09-11",
-    "archive_url": "http://web.archive.org/web/20250118073839/https://www.opengovpartnership.org/documents/australia-letter-of-intent-to-join-ogp/",
+    "archive_checked": "2026-09-25",
+    "archive_url": "http://web.archive.org/web/20250718135710/https://www.opengovpartnership.org/documents/australia-letter-of-intent-to-join-ogp/",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-20",
     "evidence": [
@@ -9779,6 +9873,26 @@
     ],
     "last_modified": null
   },
+  "https://www.radiookapi.net/2026/09/14/actualite/politique/dialogue-national-felix-tshisekedi-cree-un-comite-dorganisation": {
+    "checked": "2026-09-25",
+    "document_sha256": "542aa337e3870942efcd70e6130d1dc404d480f30db98108eec4c0973287bd70",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-09-25",
+        "context": {
+          "prefix": "alit\u00e9 National share tweet",
+          "sha256": "bf628721387f93cb4aabae231ea98d67a853d80cfa74468bfbf5b69784e539d9",
+          "suffix": "L\u2019ordonnance pr\u00e9sidentielle instituant ce comit\u00e9 a \u00e9t\u00e9 lue dimanche 13 septembre sur les antennes de la Radio T\u00e9l\u00e9vision nationale congolaise (",
+          "text": "Un comit\u00e9 d\u2019organisation pr\u00e9liminaire \u00e0 la mise en place de la commission pr\u00e9paratoire du dialogue national pour la paix, la coh\u00e9sion et la refondation de l\u2019\u00c9tat est institu\u00e9 sous l\u2019autorit\u00e9 du Pr\u00e9sident de la R\u00e9publique, F\u00e9lix Tshisekedi."
+        },
+        "id": "bf628721387f93cb4aabae231ea98d67a853d80cfa74468bfbf5b69784e539d9",
+        "quote": "Un comit\u00e9 d\u2019organisation pr\u00e9liminaire \u00e0 la mise en place de la commission pr\u00e9paratoire du dialogue national pour la paix, la coh\u00e9sion et la refondation de l\u2019\u00c9tat est institu\u00e9 sous l\u2019autorit\u00e9 du Pr\u00e9sident de la R\u00e9publique, F\u00e9lix Tshisekedi.",
+        "verified": true
+      }
+    ],
+    "last_modified": "Fri, 25 Sep 2026 09:11:21 GMT"
+  },
   "https://www.rgb.rw/1/about-rgb": {
     "checked": "2026-08-29",
     "document_sha256": "601c32c4f6b523fd0b523d828233381d8b913c868c67bba7e3a9916a2f561908",
@@ -10133,6 +10247,26 @@
     ],
     "last_modified": null
   },
+  "https://www.transparency.org.nz/blog/event-who-has-access-environmental-information-in-the-pacific": {
+    "checked": "2026-09-25",
+    "document_sha256": "2646c3a32f524c90ab8b92c3097d6d7295633410eed98cc8ae34e4b118801032",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-09-25",
+        "context": {
+          "prefix": "ences from across the Pacific: what is working, what gets in the way, and what could help communities obtain and use the information they need.",
+          "sha256": "1f5a17ca07fa2f2f266393f087377743a8409c97060ea71daa93b71488b7a6f4",
+          "suffix": "Join the talanoa \u2192 \u200d Related articles Pacific Blog Post written by:",
+          "text": "Monday 28 September 2026 11am Fiji | 12pm Aotearoa New Zealand Online via Zoom | Free"
+        },
+        "id": "1f5a17ca07fa2f2f266393f087377743a8409c97060ea71daa93b71488b7a6f4",
+        "quote": "Monday 28 September 2026 11am Fiji | 12pm Aotearoa New Zealand Online via Zoom | Free",
+        "verified": true
+      }
+    ],
+    "last_modified": "Fri, 25 Sep 2026 09:04:26 GMT"
+  },
   "https://www.transparency.org.nz/our-story": {
     "checked": "2026-08-26",
     "document_sha256": "9e1ac26cd0bdf1a3851e6a0d8b1972c15faabc01be4c75e09ee815abee4c8238",
@@ -10465,8 +10599,8 @@
     "manual_checked": "2026-08-22"
   },
   "https://www.whitehouse.senate.gov/news/release/whitehouse-grassley-issue-statement-on-treasury-departments-final-rule-dismantling-key-element-of-corporate-transparency-act/": {
-    "archive_checked": "2026-09-11",
-    "archive_url": "http://web.archive.org/web/20260911083046/https://www.whitehouse.senate.gov/news/release/whitehouse-grassley-issue-statement-on-treasury-departments-final-rule-dismantling-key-element-of-corporate-transparency-act/",
+    "archive_checked": "2026-09-25",
+    "archive_url": "http://web.archive.org/web/20260918081002/https://www.whitehouse.senate.gov/news/release/whitehouse-grassley-issue-statement-on-treasury-departments-final-rule-dismantling-key-element-of-corporate-transparency-act/",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-20",
     "evidence": [

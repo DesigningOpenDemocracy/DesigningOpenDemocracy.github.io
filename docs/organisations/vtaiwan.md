@@ -70,7 +70,7 @@ activity:
     note: News page found, no machine-readable date
   sitemap:
     note: Sitemap found, no lastmod
-    checked: 2026-09-11
+    checked: 2026-09-25
 last_checked: '2026-09-21'
 ---
 

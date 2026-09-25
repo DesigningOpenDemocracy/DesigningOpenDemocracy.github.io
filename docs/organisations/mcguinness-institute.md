@@ -69,7 +69,7 @@ activity:
       not previously recorded, added to contact:.
     url: https://www.mcguinnessinstitute.org
   rss:
-    checked: 2026-09-11
+    checked: 2026-09-25
     note: No feed found
 last_checked: '2026-09-17'
 ---

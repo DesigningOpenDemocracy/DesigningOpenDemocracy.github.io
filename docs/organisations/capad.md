@@ -79,7 +79,7 @@ activity:
     url: https://canberra-alliance.org.au
     checked: 2026-09-12
   rss:
-    checked: 2026-09-11
+    checked: 2026-09-25
     date: 2026-01-03
     note: 'Latest post: Redescribing Democracy: a Review'
     url: https://canberra-alliance.org.au/redescribing-democracy-a-review/?utm_source=rss&utm_medium=rss&utm_campaign=redescribing-democracy-a-review

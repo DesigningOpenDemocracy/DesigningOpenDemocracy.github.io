@@ -71,11 +71,10 @@ activity:
     url: https://grattan.edu.au
     checked: 2026-09-19
   rss:
-    checked: 2026-09-11
-    date: 2026-07-26
-    note: 'Latest post: Reform the system so disabled Australians can have better
-      jobs and fairer wages'
-    url: https://grattan.edu.au/reform-the-system-so-disabled-australians-can-have-better-jobs-and-fairer-wages/
+    date: 2026-09-22
+    note: "Latest post: Reduce money in politics to strengthen our democracy"
+    url: https://grattan.edu.au/reduce-money-in-politics-to-strengthen-our-democracy/
+    checked: 2026-09-25
 last_checked: '2026-09-19'
 ---
 

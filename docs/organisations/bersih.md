@@ -67,7 +67,7 @@ activity:
     url: https://bersih.org
     checked: 2026-09-16
   rss:
-    checked: 2026-09-11
+    checked: 2026-09-25
     note: No feed found
   scrape:
     checked: 2026-06-28

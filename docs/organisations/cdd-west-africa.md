@@ -55,10 +55,10 @@ activity:
     checked: 2026-09-12
   scrape:
     hint: no_markup
-    checked: 2026-09-11
+    checked: 2026-09-25
     note: News page found, no machine-readable date
   sitemap:
-    checked: 2026-09-11
+    checked: 2026-09-25
     date: 2026-06-05
     note: Server still up (sitemap detected)
   url: https://www.cddwestafrica.org/blog/

@@ -57,11 +57,10 @@ activity:
     url: https://ok.org.br
     checked: 2026-09-19
   rss:
-    date: 2026-09-10
-    note: 'Latest post: OKBR assina relatório que analisa o papel das plataformas
-      na proteção da integri'
-    url: https://ok.org.br/noticia/okbr-assina-relatorio-que-analisa-o-papel-das-plataformas-na-protecao-da-integridade-eleitoral/
-    checked: 2026-09-11
+    date: 2026-09-24
+    note: "Latest post: Restrição de acesso a microdados do Censo 2022 é inadequada e excessiva"
+    url: https://ok.org.br/noticia/restricao-de-acesso-a-microdados-do-censo-2022-e-inadequada-e-excessiva/
+    checked: 2026-09-25
 last_checked: '2026-09-19'
 ---
 

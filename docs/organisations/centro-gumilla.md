@@ -48,11 +48,10 @@ activity:
     url: https://gumilla.org
     checked: 2026-09-12
   rss:
-    checked: 2026-09-11
-    date: 2026-08-04
-    note: 'Latest post: Centro Gumilla, FUNDACEDEAP y Excuela consolidan alianza estratégica
-      para formar'
-    url: https://gumilla.org/alianza-gumilla-formacion-mujeres-emprendedoras/
+    date: 2026-08-21
+    note: "Latest post: 80 educadores del Zulia fortalecieron sus competencias en participación ciudadan"
+    url: https://gumilla.org/80-educadores-del-zulia-se-forman-en-participacion-ciudadana/
+    checked: 2026-09-25
 last_checked: '2026-09-12'
 ---
 

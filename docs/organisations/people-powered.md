@@ -121,10 +121,10 @@ activity:
       event, confirmed OIDP/Athens/GDC/World Forum events still current
     url: https://www.peoplepowered.org
   sitemap:
-    checked: 2026-09-11
-    date: 2026-08-25
-    note: Page last modified (from sitemap)
+    date: 2026-09-23
+    note: "Page last modified (from sitemap)"
     url: https://www.peoplepowered.org/sitemap.xml
+    checked: 2026-09-25
 last_checked: '2026-09-19'
 ---
 

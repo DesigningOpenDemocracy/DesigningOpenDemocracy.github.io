@@ -66,11 +66,11 @@ activity:
     url: https://www.prediki.com
     checked: 2026-09-15
   rss:
-    checked: 2026-09-11
+    checked: 2026-09-25
     note: No feed found
   scrape:
     hint: unreachable
-    checked: 2026-09-11
+    checked: 2026-09-25
     date: 2022-09-30
     note: Latest news page scraped
     url: https://www.prediki.com/meta/en/Management-by-Predictions-(Prediki-Blog-in-English)/

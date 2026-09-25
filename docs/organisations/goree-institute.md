@@ -66,7 +66,7 @@ activity:
     note: 'Latest post: Renforcement du dialogue stratégique entre le Sénégal et l’Allemagne
       autour des '
     url: https://goreeinstitut.org/renforcement-du-dialogue-strategique-entre-le-senegal-et-lallemagne-autour-des-enjeux-de-paix-de-securite-et-de-gouvernance/
-    checked: 2026-09-11
+    checked: 2026-09-25
 last_checked: '2026-09-17'
 ---
 

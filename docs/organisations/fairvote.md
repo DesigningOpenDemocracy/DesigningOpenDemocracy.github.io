@@ -42,10 +42,10 @@ activity:
     url: https://fairvote.org
     checked: 2026-09-19
   rss:
-    date: 2026-09-08
-    note: 'Latest post: Three cities to vote on ranked choice voting this November'
-    url: https://fairvote.org/three-cities-to-vote-on-ranked-choice-voting-this-november/
-    checked: 2026-09-11
+    date: 2026-09-21
+    note: "Latest post: FairVote news update: Sep. 21, 2026"
+    url: https://fairvote.org/fairvote-news-update-sep-21-2026/
+    checked: 2026-09-25
 last_checked: '2026-09-19'
 ---
 

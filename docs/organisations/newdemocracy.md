@@ -105,10 +105,10 @@ activity:
     url: https://www.newdemocracy.com.au
     checked: 2026-09-21
   rss:
-    checked: 2026-09-11
-    date: 2026-07-03
-    note: 'Latest post: A New Political Party: Why?'
-    url: https://www.newdemocracy.com.au/2026/07/03/a-new-political-party-why/?utm_source=rss&utm_medium=rss&utm_campaign=a-new-political-party-why
+    date: 2026-09-15
+    note: "Latest post: Democracy Can Do Better Than Political Parties"
+    url: https://www.newdemocracy.com.au/2026/09/15/democracy-can-do-better-than-political-parties/?utm_source=rss&utm_medium=rss&utm_campaign=democracy-can-do-better-than-political-parties
+    checked: 2026-09-25
 last_checked: '2026-09-21'
 ---
 

@@ -60,10 +60,10 @@ activity:
     url: https://www.democracywithoutborders.org
     checked: 2026-09-19
   rss:
-    date: 2026-09-11
-    note: RSS feed active
+    date: 2026-09-25
+    note: "RSS feed active"
     url: https://www.democracywithoutborders.org/feed
-    checked: 2026-09-11
+    checked: 2026-09-25
 last_checked: '2026-09-19'
 ---
 

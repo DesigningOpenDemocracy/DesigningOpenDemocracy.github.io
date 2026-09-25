@@ -59,7 +59,7 @@ activity:
     url: https://prsindia.org
     checked: 2026-09-15
   sitemap:
-    checked: 2026-09-11
+    checked: 2026-09-25
     date: 2021-07-17
     note: Page last modified (from sitemap)
 last_checked: '2026-09-15'

@@ -64,7 +64,7 @@ activity:
     url: https://www.888causeway.coop
     checked: 2026-09-12
   rss:
-    checked: 2026-09-11
+    checked: 2026-09-25
     date: 2019-06-26
     note: 'Latest post: Corner and connect'
     url: https://www.888causeway.coop/corner-and-connect/

@@ -63,7 +63,7 @@ activity:
     url: https://nota.ca
     checked: 2026-09-15
   rss:
-    checked: 2026-09-11
+    checked: 2026-09-25
     date: 2025-01-28
     note: 'Latest post: None of the Above Party Calls for Referendum on Trump Tariffs,
       Strategic Voting '

@@ -48,10 +48,10 @@ activity:
     url: https://internetfreedom.in
     checked: 2026-09-14
   rss:
-    date: 2026-09-11
-    note: RSS feed active
+    date: 2026-09-25
+    note: "RSS feed active"
     url: https://internetfreedom.in/rss
-    checked: 2026-09-11
+    checked: 2026-09-25
 last_checked: '2026-09-14'
 ---
 

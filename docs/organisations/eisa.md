@@ -65,7 +65,7 @@ activity:
     note: 'Latest post: From Coalition Chaos to Democratic Stability: Reforming South
       Africa’s Local Gov'
     url: https://www.eisa.org/from-coalition-chaos-to-democratic-stability-reforming-south-africas-local-government/
-    checked: 2026-09-11
+    checked: 2026-09-25
 last_checked: '2026-09-13'
 ---
 

@@ -56,10 +56,10 @@ activity:
     url: https://www.gilt.at
     checked: 2026-09-14
   rss:
-    date: 2026-09-11
-    note: RSS feed active
+    date: 2026-09-25
+    note: "RSS feed active"
     url: https://www.gilt.at/feed
-    checked: 2026-09-11
+    checked: 2026-09-25
 last_checked: '2026-09-14'
 ---
 

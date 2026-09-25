@@ -63,7 +63,7 @@ activity:
     date: 2026-08-22
     note: Page last modified (from sitemap)
     url: https://conaie.org/sitemap_index.xml
-    checked: 2026-08-28
+    checked: 2026-09-25
 last_checked: '2026-09-12'
 ---
 

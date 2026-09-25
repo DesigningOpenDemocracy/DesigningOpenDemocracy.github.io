@@ -59,11 +59,10 @@ activity:
     url: https://democracyincolour.org
     checked: 2026-09-13
   rss:
-    checked: 2026-09-11
-    date: 2026-07-29
-    note: 'Latest post: Democracy in Colour welcomes court ruling upholding racial
-      discrimination findin'
-    url: https://democracyincolour.org/democracy-in-colour-welcomes-court-ruling-upholding-racial-discrimination-finding-against-pauline-hanson/
+    date: 2026-09-15
+    note: "Latest post: Democracy in Colour, GetUp and anti-racist groups call for unity and hope, not h"
+    url: https://democracyincolour.org/democracy-in-colour-getup-and-anti-racist-groups-call-for-unity-and-hope-not-hate/
+    checked: 2026-09-25
 last_checked: '2026-09-13'
 ---
 

@@ -60,10 +60,10 @@ activity:
     url: https://mqg.org.il/en
     checked: 2026-09-15
   rss:
-    date: 2026-09-07
-    note: 'Latest post: עצומה – מוציאים אותם מלשכת ראש הממשלה!'
-    url: https://petition.mqg.org.il/qatargate_pm_office/
-    checked: 2026-09-11
+    date: 2026-09-22
+    note: "Latest post: עצומה – גרוניס הציבור מחכה לתשובות!"
+    url: https://petition.mqg.org.il/subs_invest/
+    checked: 2026-09-25
 last_checked: '2026-09-15'
 ---
 

@@ -55,10 +55,10 @@ activity:
     url: https://www.lamestream.com.au/
     checked: 2026-09-16
   sitemap:
-    date: 2026-09-11
-    note: Page last modified (from sitemap)
+    date: 2026-09-25
+    note: "Page last modified (from sitemap)"
     url: https://www.lamestream.com.au/sitemap.xml
-    checked: 2026-09-11
+    checked: 2026-09-25
 last_checked: '2026-09-16'
 contributors:
 - BrianKhuu

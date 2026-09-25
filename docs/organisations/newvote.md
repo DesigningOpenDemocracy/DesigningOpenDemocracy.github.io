@@ -61,7 +61,7 @@ activity:
     url: https://newvote.org
     checked: 2026-09-15
   rss:
-    checked: 2026-09-11
+    checked: 2026-09-25
     date: 2019-11-11
     note: 'Latest post: How''s SpeakUp @ the University of Queensland going?'
     url: https://newvote.org/blog/2019/11/10/hows-speakup-the-university-of-queensland-going

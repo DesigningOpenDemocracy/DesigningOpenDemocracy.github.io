@@ -61,7 +61,7 @@ activity:
     url: https://pirateparty.org.au
     checked: 2026-09-15
   rss:
-    checked: 2026-09-11
+    checked: 2026-09-25
     date: 2024-05-14
     note: 'Latest post: Pirate Party Australia raises alarm over miscarriage of justice
       in David McBride'

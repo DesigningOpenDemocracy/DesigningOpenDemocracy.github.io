@@ -58,10 +58,10 @@ activity:
     url: https://civichive.org
     checked: 2026-09-16
   rss:
-    date: 2026-08-25
-    note: 'Latest post: APPLY: Creative Changemakers Fellowship 2026'
-    url: https://civichive.org/ccmf2026/?utm_source=rss&utm_medium=rss&utm_campaign=ccmf2026
-    checked: 2026-09-11
+    date: 2026-09-23
+    note: "Latest post: Unlearning the Past to Propel a New Future"
+    url: https://civichive.org/unlearning-the-past-to-propel-a-new-future/?utm_source=rss&utm_medium=rss&utm_campaign=unlearning-the-past-to-propel-a-new-future
+    checked: 2026-09-25
   url: https://civichive.org/2026-osun-state-governorship-election/?utm_source=rss&utm_medium=rss&utm_campaign=2026-osun-state-governorship-election
 last_checked: '2026-09-16'
 ---

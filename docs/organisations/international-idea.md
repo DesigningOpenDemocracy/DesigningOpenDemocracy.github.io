@@ -50,10 +50,10 @@ activity:
     url: https://www.idea.int
     checked: 2026-09-20
   rss:
-    date: 2026-09-10
-    note: 'Latest post: Brazil - General Elections, 4 and 25 October 2026'
-    url: https://www.idea.int/node/161838
-    checked: 2026-09-11
+    date: 2026-09-24
+    note: "Latest post: The Role of Youth in Climate Litigation in the Republic of Korea"
+    url: https://www.idea.int/publications/catalogue/html/role-youth-climate-litigation-republic-korea
+    checked: 2026-09-25
 last_checked: '2026-09-20'
 ---
 

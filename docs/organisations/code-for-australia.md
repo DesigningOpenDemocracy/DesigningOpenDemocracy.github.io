@@ -60,7 +60,7 @@ activity:
     url: https://www.codeforaustralia.org
     checked: 2026-09-12
   sitemap:
-    checked: 2026-09-11
+    checked: 2026-09-25
     date: 2024-06-28
     note: Page last modified (from sitemap)
 last_checked: '2026-09-12'

@@ -69,15 +69,15 @@ activity:
     url: https://www.democracy-international.org
     checked: 2026-09-13
   rss:
-    date: 2026-09-11
-    note: RSS feed active
+    date: 2026-09-25
+    note: "RSS feed active"
     url: https://www.democracy-international.org/rss.xml
-    checked: 2026-09-11
+    checked: 2026-09-25
   scrape:
-    date: 2026-08-13
-    note: Latest news page scraped
+    date: 2026-09-24
+    note: "Latest news page scraped"
     url: https://www.democracy-international.org/news
-    checked: 2026-09-11
+    checked: 2026-09-25
 last_checked: '2026-09-13'
 ---
 

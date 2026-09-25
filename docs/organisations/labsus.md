@@ -61,11 +61,10 @@ activity:
     url: https://www.labsus.org
     checked: 2026-09-17
   rss:
-    date: 2026-09-08
-    note: 'Latest post: Quando le parole si fanno cura: collaborazioni inaspettate
-      per la nuova vita di '
-    url: https://www.labsus.org/2026/09/quando-le-parole-si-fanno-cura-collaborazioni-inaspettate-per-la-nuova-vita-di-una-baita-trentina/
-    checked: 2026-09-11
+    date: 2026-09-16
+    note: "Latest post: Elogio dei tre saperi di Marianella Sclavi"
+    url: https://www.labsus.org/2026/09/elogio-dei-tre-saperi-di-marianella-sclavi/
+    checked: 2026-09-25
 last_checked: '2026-09-17'
 ---
 

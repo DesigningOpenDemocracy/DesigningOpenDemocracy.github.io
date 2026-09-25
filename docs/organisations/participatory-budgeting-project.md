@@ -49,7 +49,7 @@ activity:
     url: https://www.participatorybudgeting.org
     checked: 2026-09-20
   rss:
-    checked: 2026-09-11
+    checked: 2026-09-25
     date: 2026-03-05
     note: 'Latest post: PB Grows in New Jersey'
     url: https://www.participatorybudgeting.org/pb-seeds-eval/

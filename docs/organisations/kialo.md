@@ -59,7 +59,7 @@ activity:
     url: https://www.kialo.com
     checked: 2026-09-21
   rss:
-    checked: 2026-09-11
+    checked: 2026-09-25
     note: No feed found
 last_checked: '2026-09-21'
 ---

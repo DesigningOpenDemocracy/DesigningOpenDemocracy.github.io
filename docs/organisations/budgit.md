@@ -66,11 +66,10 @@ activity:
     url: https://budgit.org
     checked: 2026-09-20
   rss:
-    date: 2026-08-19
-    note: 'Latest post: How Digital Tools Like the PHC Accountability Tracka Are Closing
-      the Gap Between'
-    url: https://budgit.org/role-of-technology-in-improving-phc-service-delivery-how-digital-tools-like-the-phc-accountability-tracka-are-closing-the-gap-between-government-commitments-and-community-level-healthcare-re/
-    checked: 2026-09-11
+    date: 2026-09-21
+    note: "Latest post: Perhaps Frustration is not Apathy: my reflection from monitoring the 2026 Osun S"
+    url: https://budgit.org/perhaps-frustration-is-not-apathy-my-reflection-from-monitoring-the-2026-osun-state-governorship-elections/
+    checked: 2026-09-25
 last_checked: '2026-09-20'
 ---
 

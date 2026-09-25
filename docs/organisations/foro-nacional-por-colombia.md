@@ -41,7 +41,7 @@ activity:
     url: https://foro.org.co
     checked: 2026-09-17
   rss:
-    checked: 2026-09-11
+    checked: 2026-09-25
     date: 2026-04-21
     note: 'Latest post: Informe Cuatro. Observatorio de la participación ciudadana
       en la implementación '

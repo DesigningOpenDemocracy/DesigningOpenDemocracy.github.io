@@ -81,10 +81,10 @@ activity:
     url: https://greens.org.au
     checked: 2026-09-19
   rss:
-    date: 2026-09-11
-    note: 'Latest post: test'
-    url: https://greens.org.au/node/3038613
-    checked: 2026-09-11
+    date: 2026-09-25
+    note: "Latest post: Regent Station Stall"
+    url: https://greens.org.au/node/3040227
+    checked: 2026-09-25
 last_checked: '2026-09-19'
 ---
 

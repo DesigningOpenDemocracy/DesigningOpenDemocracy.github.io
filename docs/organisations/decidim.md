@@ -68,11 +68,10 @@ activity:
     url: https://decidim.org
     checked: 2026-09-21
   rss:
-    date: 2026-09-03
-    note: 'Latest post: Decidim and the New York City Civic Engagement Commission
-      formalise Partnership '
+    date: 2026-09-21
+    note: "Latest post: Decidim and the New York City Civic Engagement Commission formalise Partnership "
     url: https://decidim.org/blog/2026-07-06-decidim-and-the-new-york-city-civic-engagement-commission-formalise-partnership-with-a-memorandum-of-understanding/
-    checked: 2026-09-11
+    checked: 2026-09-25
 last_checked: '2026-09-21'
 ---
 

@@ -54,10 +54,10 @@ activity:
     url: https://www.sitra.fi/en/
     checked: 2026-09-19
   rss:
-    date: 2026-09-11
-    note: 'Latest post: Toimintaympäristökatsaus touko-elokuu 2026'
-    url: https://www.sitra.fi/artikkelit/toimintaymparistokatsaus-touko-elokuu-2026/
-    checked: 2026-09-11
+    date: 2026-09-24
+    note: "Latest post: Sitran toimintakatsaus 2/2026"
+    url: https://www.sitra.fi/artikkelit/sitran-toimintakatsaus-2-2026/
+    checked: 2026-09-25
 last_checked: '2026-09-19'
 ---
 
