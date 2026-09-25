@@ -70,7 +70,7 @@ An activist scholar with the University of Melbourne's [Informal Urbanism Resear
 **Also on the night:**
 
 - She did her PhD on Marx's concept of money: "Money is about more and less." She said the average Australian consumes at the rate of "about five Earths", so "we actually have to be more democratic".
-- She noted that 15 September was the fifth anniversary of [AUKUS](https://en.wikipedia.org/wiki/AUKUS). On how change happens, she said "we're going to have to break the rules of this society in order to change things".
+- She noted that 15 September was the fifth anniversary of [AUKUS](https://en.wikipedia.org/wiki/AUKUS). On urgency, she said "we're the ones who actually have to decide that yes, it is urgent, and we're going to have to break the rules of this society in order to change things".
 
 ### Godfrey Moase
 
@@ -85,7 +85,7 @@ Co-founder of the energy co-op CoPower and former Executive Director of the Unit
 
 ### How they got here
 
-Asked what first drew them to democracy, Godfrey's answer was cheese pizza, from a night at the Cheese Board Collective, a Berkeley workers' co-op: "I thought, you know what, this is a pretty good way of running the world… sometimes bread can be very persuasive." Anitra's was living in a commune, "and finding that direct democracy can actually work in practice". Nicholas went for provocation: "if by democracy you mean the system we have today, this is the system that brought you Donald Trump and Adolf Hitler."
+Asked what first drew them to democracy, Godfrey's answer was cheese pizza, from a night at the Cheese Board Collective, a Berkeley workers' co-op: "I thought, you know what, this is a pretty good way of running the world… sometimes bread can be very persuasive." Anitra's was living in a commune, "and finding that direct democracy can actually work in practice". Nicholas started from a warning: "if by democracy you mean the system we have today, this is the system that brought you Donald Trump and Adolf Hitler. So it matters what kind of democracy we have."
 
 ## "Is tech gonna save us?"
 
@@ -120,7 +120,7 @@ Every speaker also insisted that shared power needs structure. Antony raised Jo 
 
 ## A standing citizens' assembly, no permission needed
 
-Nicholas's proposal was the biggest idea of the night: a privately funded, standing assembly of around a hundred randomly selected Australians, shadowing federal parliament.
+Nicholas's main proposal was a privately funded, standing assembly of around a hundred randomly selected Australians, shadowing federal parliament.
 
 > "No, don't ask for any permission. Just run it, turn people over every six months or two years or whatever you decide."
 > — Nicholas Gruen
@@ -162,7 +162,7 @@ The aim, she said, is to live "as modestly as we can, but also as convivially as
 > "How do we move from sitting in a fringe corner talking about what democracy could look like theoretically into something… urgent… how do we do it?"
 > — Audience question
 
-The questioner pointed to the AfD in Germany and One Nation at home, and asked how to get from theory to action. The answers showed the night's one real disagreement:
+The questioner pointed to the AfD in Germany and One Nation at home, and asked how to get from theory to action. The answers showed the clearest difference between the panellists:
 
 - **Nicholas**: fund the assembly and "organize collisions" between today's politics and another way of doing it.
 - **Godfrey**: alienated people reach for "a flashing red button that they can hit", which only reinforces the system. What's missing is organisations that give people something else to do. His own push to shift union power to rank-and-file delegates stalled as "an incredibly threatening proposition".
