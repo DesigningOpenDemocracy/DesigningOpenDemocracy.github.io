@@ -161,14 +161,14 @@ Basil Varghese, 888's patron, closed with a childhood memory from Kerala. His gr
 > "Tonight we have had four people coming out of their wells and creating and croaking, and now hopefully creating great song."
 > — Basil Varghese
 
-Nicholas made the case for citizens' juries at DOD events in [2017](2017-08-21-podcast.md) and [2020](2020-03-20.md). This time he went a step further: stop asking and run one. With a Victorian election two months away, the open question is who pays for the first one.
+Nicholas made the case for citizens' juries at a [2017 DOD event](2017-08-21-podcast.md) and on [DOD's podcast in 2020](2020-03-20.md). This time he went a step further: stop asking and run one. With a Victorian election two months away, the open question is who pays for the first one.
 
 ## What you can do
 
-With the Victorian election on 28 November, here are ways to follow up on what the panel said. Most come from the handbooks and resources the speakers shared with attendees afterwards.
+With the Victorian election on 28 November, here are ways to follow up on what the panel said. Most come from the follow-up newsletter 888 and DOD sent to attendees.
 
 - **Learn how a citizens' jury actually works.** MosaicLab's [deliberative democracy resource hub](https://mosaiclab.com.au/deliberative-democracy-resource-hub) and Nicole's co-written *Facilitating Deliberation* cover the process she described, from random invitation to the group's own report. For the international view, newDemocracy's handbook on citizens' assemblies is new in a second edition (see In the news below).
-- **See the idea in action.** Nicholas recommended the film [*Goodbye Politicians, Hello Democracy*](https://goodbyepoliticians.movie/), about legislatures of citizens chosen by lottery. His video series at The Shared Centre makes the full case behind his standing-assembly proposal.
+- **See the idea in action.** Nicholas recommended the film [*Goodbye Politicians, Hello Democracy*](https://goodbyepoliticians.movie/), about legislatures of citizens chosen by lottery. His video series at The Shared Centre outlines the deep drivers of political dysfunction and the alternative institutions he proposes.
 - **Ask your candidates.** A Victorian parliamentary inquiry has already [recommended a citizens' assembly](2026-05-24-vic-upper-house-citizens-assembly.md) to decide Upper House electoral reform. Ask every candidate in your electorate whether they'd support one, whoever you vote for.
 - **Read up on horizontal organising.** [*Horizontalism: A degrowth strategy*](https://degrowth.info/en/blog/horizontalism-a-degrowth-strategy), by Vincent Liegey, Anitra Nelson and Terry Leahy, sets out the approach Anitra described on the night. Godfrey's Substack, The Solidarity Wedge, covers labour-movement strategy and building worker power.
 - **Organise where you already are.** Godfrey's point was that people need organisations that give them something to do. A co-op like CoPower, a union, or a local group is somewhere to start.
