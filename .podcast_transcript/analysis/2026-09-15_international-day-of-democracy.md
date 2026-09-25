@@ -57,7 +57,8 @@ Report" (label corrected from Nicole on a second listen, 2026-09-26).
 **Corrected in the reviewed transcript** (no action needed): 888 Co-operative
 Causeway (Basil's spoken "Triple 8" is kept, since that's what he said), Yarra
 Valley Water, Carl Schmitt, Hannah Arendt, *res publica*, Kallistos, Jo
-Freeman, Vincent Liegey (Anitra's degrowth co-editor), *Routledge Handbook
+Freeman, [Degrowth Network Australia](https://www.degrowthnetwork.au/), Naarm Degrowth,
+"festivals in series" (was misheard as "at Ceres"), Vincent Liegey (Anitra's degrowth co-editor), *Routledge Handbook
 of Degrowth* (corrected from "Hangbook"; co-edited by Nelson and Liegey, 2025,
 per [her site](https://anitranelson.info/routledge-handbook-of-degrowth/),
 distinct from their co-written *Exploring Degrowth*, 2020), CPC (Audience Q4,
@@ -70,14 +71,12 @@ previously "CSEP"), Pauline Hanson.
 | "Copower" / "Co-Power" | CoPower (house style for the org name) | high |
 | "the inform. Formal Urbanism Research Hub" | Informal Urbanism Research Hub | high |
 | "Stating Deliberation A Practice Guide" | a deliberation practice guide Nicole co-authored. **Verify the title** | low |
-| "Kallistos" | presumably Kallistos Ware (theologian). **Verify** before naming him in full | medium |
-| "Pope and his son Hugh Pope" | unclear source for the Chesterton line. **Verify or drop** | low |
+| "Kallistos" | Kallistos Ware. The line matches his lecture *How to Study Theology*: "We want you to learn to be free" (Brian, 2026-09-26, via [Scribd copy](https://www.scribd.com/document/695148676/08-03-04-L-Kallistos-Ware-How-Study-Theology)). Ware says it of his own teaching at Oxford, so it's his own line, not him quoting someone | high |
+| "Pope and his son Hugh Pope" | confirmed as what Gruen said (audio-checked 2026-09-26). Whether his recollection of the source is right is unverified: keep as his recollection, or drop | — |
 | "morteen" | Mortein (insect spray) | certain |
 | "730 report" | *7.30* (ABC) | certain |
 | "AFT elsewhere" (Godfrey) | AfD | high |
-| "D-Growth Network Australia" | Degrowth Network Australia? **Verify the name** | medium |
-| "NAM DG Growth" / "NAM DGrowth" | probably "Naarm Degrowth" (Naarm = Melbourne). **Verify** | medium |
-| "Ceres", "Well Being Alliance" | CERES (Brunswick East); Wellbeing Alliance? **Verify** | medium |
+| "Well Being Alliance" | Wellbeing Alliance? **Verify** | medium |
 | "The Shared Centre" | Gruen's project, named as in his bio. **Verify the spelling/URL** | medium |
 | "Labour Party" (Gruen, Godfrey) | Australian Labor Party (spelling) when it's the party; "labour movement" is fine | certain |
 
@@ -197,8 +196,12 @@ The panel's practical voice: what deliberation actually looks like in the room.
   people". She has watched a fully automated global "deliberation" run by
   Meta: "you get a time, you fill out a thing, you move on… it is terrifying
   in my eyes. Because there is no meeting of the minds." She also mentions
-  "the news today" as a sign of a turning point with technology. **Unclear
-  which story. Don't guess.**
+  "the news today" as a sign of a turning point with technology. **Unconfirmed
+  which story.** The likeliest candidate, from the context (social media) and
+  Brian's recollection, is the federal government's 8 September proposal to let
+  users switch off algorithmic feeds ([NPR](https://www.npr.org/2026/09/08/g-s1-142311/australian-social-media-users-to-be-offered-choice-to-opt-out-of-algorithms),
+  [US News](https://www.usnews.com/news/world/articles/2026-09-08/australia-targets-social-media-algorithms-with-new-user-choice-rules)).
+  But that was a week before "today", so don't name it in a recap as what she meant.
 - **How the Yarra Valley Water citizens' jury works (00:39:05).**
   - Two-stage random selection from the customer base, stratified by age,
     gender, location and so on: "a mini version of the customers in the room".
@@ -333,7 +336,7 @@ His framing devices are worth keeping in a recap:
 - Jo Freeman's *The Tyranny of Structurelessness* (1970s), which he found
   through Nathan Schneider's co-op work (00:34:25).
 - "We need to learn to be free", attributed to "a theologian
-  Kallistos" (presumably Kallistos Ware; **verify**) (00:58:29).
+  Kallistos" (Kallistos Ware, *How to Study Theology*) (00:58:29).
 - Closing on 888 itself (01:36:40): a small, democratically run, volunteer
   co-working space in the CBD that hosts events like this one.
 
@@ -459,7 +462,7 @@ the speaker's view and don't repeat them in DOD's voice:
 - [ ] Aristotle's *Politics* on elections as oligarchic and lot as democratic. Cite book and section if quoted in DOD's voice.
 - [ ] Robert Michels, iron law of oligarchy. Easy cite.
 - [ ] Arendt on the secret ballot. Find the passage or keep it as Gruen's paraphrase.
-- [ ] Chesterton line on "shy people" (via "Pope"). Probably keep as Gruen's recollection, or drop.
+- [ ] Chesterton line on "shy people" (via "Pope"). Transcript confirmed as what he said; the source is unverified. Keep as Gruen's recollection, or drop.
 - [ ] Meta's automated global "deliberation" (Nicole). Probably Meta's Community Forums; confirm before naming.
 - [ ] Japan "future voice" process: Future Design? Confirm.
 - [ ] "About five Earths" per average Australian (Anitra). Check against the Global Footprint Network or similar.
