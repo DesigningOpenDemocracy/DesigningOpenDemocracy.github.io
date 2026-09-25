@@ -61,9 +61,9 @@ Co-founder of the energy co-op CoPower and former Executive Director of the Unit
 
 **Follow his work:** [The Solidarity Wedge](https://godfreymoase.substack.com/), his Substack on solidarity and labour-movement strategy · [CoPower](https://cooperativepower.org.au/).
 
-### How they got here
+### What drew them to democracy
 
-Asked what first drew them to democracy, Godfrey's answer was cheese pizza, from a night at the Cheese Board Collective, a Berkeley workers' co-op: "I thought, you know what, this is a pretty good way of running the world… sometimes bread can be very persuasive." Anitra's was living in a commune, "and finding that direct democracy can actually work in practice". Nicholas started from a warning: "if by democracy you mean the system we have today, this is the system that brought you Donald Trump and Adolf Hitler. So it matters what kind of democracy we have."
+Antony opened by asking each panellist "what drew you personally to democratic ways of living and being?" Godfrey's answer was cheese pizza, from a night at the Cheese Board Collective, a Berkeley workers' co-op: "I thought, you know what, this is a pretty good way of running the world… sometimes bread can be very persuasive." Anitra's was living in a commune, "and finding that direct democracy can actually work in practice". Nicole's came from years of government engagement work that was, "to be really honest… really boring", until she saw what a deeper process could do: "this has got possibility everywhere". Nicholas started from a warning: "if by democracy you mean the system we have today, this is the system that brought you Donald Trump and Adolf Hitler. So it matters what kind of democracy we have."
 
 ## "Is tech gonna save us?"
 
