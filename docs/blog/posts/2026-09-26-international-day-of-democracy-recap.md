@@ -131,7 +131,10 @@ He estimated "maybe two million to run a citizen assembly for six months to a ye
 
 The second half went to the floor. We didn't choose these questions, which makes them a good guide to what the people in the room actually cared about.
 
-### "Aren't we going to end up with people who just keep voting in their own current self-interest against future generations?"
+### Future generations
+
+> "Aren't we going to end up with people who just keep voting in their own current self-interest against future generations?"
+> — Audience question
 
 This is a standard objection to sortition: any process only includes people alive now, so won't a random jury just vote its own short-term interest? The panel gave four different answers:
 
@@ -140,7 +143,10 @@ This is a standard objection to sortition: any process only includes people aliv
 - **Change what's being counted.** Nicholas said a jury isn't racing to 51%: "you're saying what can we live with?" He contrasted that with elections framed around "what is in it for me". He drew on Hannah Arendt's point that the secret ballot "leans heavily on the idea of privacy and therefore of the individual rather than the res publica".
 - **Look at the pressure people are under.** Godfrey: "I think capitalism gives democracy a bad name." People who won't vote for a lower quality of life, he said, are scrambling to make a living in a system he called "parasitic upon our present now as well as our future".
 
-### "Do you live in a tiny house?"
+### Degrowth in practice
+
+> "Do you live in a tiny house? How do you negotiate degrowth? How do you apply it in Melbourne?"
+> — Audience question
 
 An urban planner asked Anitra how degrowth plays out in Melbourne, where "as urban planners we're all grappling with" it. Her answer was more concrete than the word suggests:
 
@@ -151,7 +157,10 @@ An urban planner asked Anitra how degrowth plays out in Melbourne, where "as urb
 
 The aim, she said, is to live "as modestly as we can, but also as convivially as we can". She pointed to [Degrowth Network Australia](https://www.degrowthnetwork.au/), which she said meets online every month, and to Melbourne's Naarm Degrowth.
 
-### "How do we move from sitting in a fringe corner talking about what democracy could look like theoretically…?"
+### From theory to action
+
+> "How do we move from sitting in a fringe corner talking about what democracy could look like theoretically into something… urgent… how do we do it?"
+> — Audience question
 
 The questioner pointed to the AfD in Germany and One Nation at home, and asked how to get from theory to action. The answers showed the night's one real disagreement:
 
@@ -161,7 +170,10 @@ The questioner pointed to the AfD in Germany and One Nation at home, and asked h
 
 Parliament, the workplace, or capital? The panel didn't settle it.
 
-### "Should it be more broad strokes?"
+### Where to start a standing assembly
+
+> "When we do the first standing citizen assembly in whichever form it is… should it be more broad strokes?"
+> — Audience question
 
 The last question took Nicholas's standing assembly seriously and asked how to start one. Should Australia's first standing assembly shadow parliament as it is now, or be "a vision setting citizens' assembly" asking what Australia should look like in 80 years? The questioner pointed to Taiwan's experiments and to the CPC's long-range goal of an "ecological civilization" in China. And "what would be the smaller citizens' assemblies that we would need to run before we get to like the federal level?"
 
