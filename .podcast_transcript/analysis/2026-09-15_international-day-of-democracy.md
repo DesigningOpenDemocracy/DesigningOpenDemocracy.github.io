@@ -1,7 +1,8 @@
 # Transcript breakdown — International Day of Democracy panel (15 September 2026)
 
-**Status:** raw material for a post-event recap blog post — not yet used.
-When the recap ships, link it here.
+**Status:** used as the basis for the recap post
+[`docs/blog/posts/2026-09-26-international-day-of-democracy-recap.md`](../../docs/blog/posts/2026-09-26-international-day-of-democracy-recap.md)
+(drafted 2026-09-26, awaiting human review before merge).
 
 - **Source transcript:** [`../2026-09-15_DesigningOpenDemocracy_InternationalDayOfDemocracy_labeled.srt`](../2026-09-15_DesigningOpenDemocracy_InternationalDayOfDemocracy_labeled.srt)
   (speaker-labelled transcript, ~1h43m of recorded audio). Automated first,
