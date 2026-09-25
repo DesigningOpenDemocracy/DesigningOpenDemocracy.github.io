@@ -39,9 +39,9 @@ On 15 September, International Day of Democracy,[^unday] DOD and [888 Co-operati
 
 [888 Co-operative Causeway](../../organisations/888-cooperative-causeway.md)'s chair, Antony McMullen, moderated. 888's patron, Basil Varghese, opened with an Acknowledgement of Country and closed the night. The panellists:
 
-- **Nicholas Gruen**, CEO of [Lateral Economics](../../organisations/lateral-economics.md), and a long-time advocate of citizens' juries and assemblies chosen by lot
-- **Nicole Hunter**, co-founder and Managing Director of [MosaicLab](../../organisations/mosaiclab.md), who led the Yarra Valley Water citizens' jury
-- **Anitra Nelson**, an activist scholar at the University of Melbourne who writes on degrowth, housing and post-money economies
+- **Nicholas Gruen**, CEO of [Lateral Economics](../../organisations/lateral-economics.md), and a long-time advocate of citizens' juries and assemblies chosen by lot. His current project is [The Shared Centre](https://www.thesharedcentre.com/).[^sharedcentre]
+- **Nicole Hunter**, co-founder and Managing Director of [MosaicLab](../../organisations/mosaiclab.md), who led the Yarra Valley Water citizens' jury. She co-wrote MosaicLab's [*Facilitating Deliberation: A Practical Guide*](https://mosaiclab.com.au/the-big-book).[^mosaicbook]
+- **Anitra Nelson**, an activist scholar with the University of Melbourne's [Informal Urbanism Research Hub](https://infur.msd.unimelb.edu.au/) (InfUr-)[^infur] who writes on degrowth, housing and post-money economies. With Vincent Liegey she co-edited the [*Routledge Handbook of Degrowth*](https://anitranelson.info/routledge-handbook-of-degrowth/) (2025).[^handbook]
 - **Godfrey Moase**, co-founder of the energy co-op CoPower and former Executive Director of the United Workers Union
 
 The event was timed for the run-up to Victoria's state election on 28 November.[^vicelection]
@@ -83,7 +83,7 @@ Nicole described how MosaicLab runs a jury, using the Yarra Valley Water process
 - **Pay.** A minimum-wage stipend. One woman signed up for the money because she needed dental work. "Oh my god, she was the best participant I've ever had." She still advocates for that organisation today.
 - **Ownership.** Participants write their own report. The utility commits to including it "to the maximum extent possible" in its price submission to the regulator.
 
-Antony asked how people chosen by lot "learn to be free" without being steered. Nicole's answer was the most practical of the night:
+Antony asked how people chosen by lot "learn to be free", a phrase he took from the theologian Kallistos Ware,[^ware] without being steered. Nicole's answer was the most practical of the night:
 
 - Experts are prepared in advance to "let go control". In the room they're a resource and an observer, not a participant.
 - Learning builds up from pairs, to threes, to the whole group. She uses "speed dialogue… like speed dating, but better", with an expert rotating between small groups.
@@ -150,7 +150,7 @@ Another audience member asked whether randomly selected citizens would simply vo
 - **Nicholas** said a jury isn't a vote-counting contest. Rather than asking "who's got 51% of the votes", a jury asks "what can we live with?". He drew on Hannah Arendt: the secret ballot, while not a bad idea, "leans heavily on the idea of privacy and therefore of the individual rather than the res publica".
 - **Godfrey**: "I think capitalism gives democracy a bad name." If people won't vote for a lower quality of life, he said, that's because they're scrambling to make a living in a system that is "parasitic upon our present now as well as our future". The good life isn't a ready-made meal, or "always feeling so freaking tired".
 
-A third question, from someone who works in urban planning, asked how degrowth works in practice. Anitra described "commoning", universal basic services with limits, planning rules that set a *maximum* rather than a minimum on housing space, and rules that enable people to build and repair their own homes rather than rules written for industry.
+A third question, from someone who works in urban planning, asked how degrowth works in practice. Anitra described "commoning", universal basic services with limits, planning rules that set a *maximum* rather than a minimum on housing space, and rules that enable people to build and repair their own homes rather than rules written for industry. For anyone wanting to get involved locally, she pointed to [Degrowth Network Australia](https://www.degrowthnetwork.au/), which she said meets online every month, and to Melbourne's Naarm Degrowth.
 
 ## Closing: the frog in the well
 
@@ -179,6 +179,16 @@ Several threads here reach back years in DOD's own archive. Nicholas made the ca
 [^unday]: "In 2007 the United Nations General Assembly resolved to observe 15 September as the International Day of Democracy — with the purpose of promoting and upholding the principles of democracy — and invited all member states and organizations to commemorate the day in an appropriate manner that contributes to raising public awareness." [International Day of Democracy](https://en.wikipedia.org/wiki/International_Day_of_Democracy), Wikipedia.
 
 [^vicelection]: "A state general election is scheduled to be held on 28 November 2026 to elect members of the 61st Parliament of Victoria." [2026 Victorian state election](https://en.wikipedia.org/wiki/2026_Victorian_state_election), Wikipedia.
+
+[^sharedcentre]: "It's time to reawaken the better angels of our nature" [The Shared Centre](https://www.thesharedcentre.com/), Nicholas Gruen.
+
+[^mosaicbook]: "Nicole Hunter and Keith Greaves as they take you behind the scenes of a public deliberation" [Facilitating Deliberation: A Practical Guide](https://mosaiclab.com.au/the-big-book), MosaicLab.
+
+[^infur]: "InfUr- is an assemblage of researchers and projects focused on the role of urban informality in the creative production of cities of both the Global South and North." [InfUr- The Informal Urbanism Research Hub](https://infur.msd.unimelb.edu.au/), Melbourne School of Design, University of Melbourne.
+
+[^handbook]: "Anitra Nelson and Vincent Liegey have assembled a groundbreaking collection" [Routledge Handbook of Degrowth](https://anitranelson.info/routledge-handbook-of-degrowth/), anitranelson.info (endorsement by Giorgos Kallis).
+
+[^ware]: "We want you to learn to be free." Kallistos Ware, [How to Study Theology](https://www.scribd.com/document/695148676/08-03-04-L-Kallistos-Ware-How-Study-Theology), Scribd copy, where Ware says this was his answer to his Oxford students. Read in a browser on 2026-09-26; Scribd serves no document text to scripts, so this quote can only be checked by hand.
 
 [^aukus]: "Initially announced on 15 September 2021, the partnership involves two lines of effort referred to as pillars." [AUKUS](https://en.wikipedia.org/wiki/AUKUS), Wikipedia.
 

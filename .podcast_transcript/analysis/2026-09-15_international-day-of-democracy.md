@@ -57,7 +57,12 @@ Report" (label corrected from Nicole on a second listen, 2026-09-26).
 **Corrected in the reviewed transcript** (no action needed): 888 Co-operative
 Causeway (Basil's spoken "Triple 8" is kept, since that's what he said), Yarra
 Valley Water, Carl Schmitt, Hannah Arendt, *res publica*, Kallistos, Jo
-Freeman, [Degrowth Network Australia](https://www.degrowthnetwork.au/), Naarm Degrowth,
+Freeman, *Facilitating Deliberation: A Practical Guide* (was "Stating
+Deliberation"; [MosaicLab](https://mosaiclab.com.au/the-big-book), co-written by
+Kimbra White, Nicole Hunter and Keith Greaves), the [Informal Urbanism Research
+Hub](https://infur.msd.unimelb.edu.au/) (InfUr-), [The Shared
+Centre](https://www.thesharedcentre.com/) (Gruen's project; spelling confirmed),
+[Degrowth Network Australia](https://www.degrowthnetwork.au/), Naarm Degrowth,
 "festivals in series" (was misheard as "at Ceres"), Vincent Liegey (Anitra's degrowth co-editor), *Routledge Handbook
 of Degrowth* (corrected from "Hangbook"; co-edited by Nelson and Liegey, 2025,
 per [her site](https://anitranelson.info/routledge-handbook-of-degrowth/),
@@ -69,15 +74,12 @@ previously "CSEP"), Pauline Hanson.
 | Transcript says | Probably | Confidence |
 |---|---|---|
 | "Copower" / "Co-Power" | CoPower (house style for the org name) | high |
-| "the inform. Formal Urbanism Research Hub" | Informal Urbanism Research Hub | high |
-| "Stating Deliberation A Practice Guide" | a deliberation practice guide Nicole co-authored. **Verify the title** | low |
 | "Kallistos" | Kallistos Ware. The line matches his lecture *How to Study Theology*: "We want you to learn to be free" (Brian, 2026-09-26, via [Scribd copy](https://www.scribd.com/document/695148676/08-03-04-L-Kallistos-Ware-How-Study-Theology)). Ware says it of his own teaching at Oxford, so it's his own line, not him quoting someone | high |
 | "Pope and his son Hugh Pope" | confirmed as what Gruen said (audio-checked 2026-09-26). Whether his recollection of the source is right is unverified: keep as his recollection, or drop | — |
 | "morteen" | Mortein (insect spray) | certain |
 | "730 report" | *7.30* (ABC) | certain |
 | "AFT elsewhere" (Godfrey) | AfD | high |
 | "Well Being Alliance" | Wellbeing Alliance? **Verify** | medium |
-| "The Shared Centre" | Gruen's project, named as in his bio. **Verify the spelling/URL** | medium |
 | "Labour Party" (Gruen, Godfrey) | Australian Labor Party (spelling) when it's the party; "labour movement" is fine | certain |
 
 ## Run of show
@@ -431,7 +433,7 @@ is not a recommendation):
   confirm). A **degrowth** concept page could also work.
 - **Future Design** (Japan): a possible concept page, if the reference is
   confirmed.
-- Nicholas Gruen's standing-assembly project (bio: "The Shared Centre"). It
+- Nicholas Gruen's standing-assembly project ([The Shared Centre](https://www.thesharedcentre.com/)). It
   might belong on the Lateral Economics page, or become a page of its own.
 
 Check [`internal-heartbeat/orgs-not-included.md`](../../internal-heartbeat/orgs-not-included.md)
@@ -470,7 +472,8 @@ the speaker's view and don't repeat them in DOD's voice:
 - [ ] AUKUS fifth anniversary on 15 Sep 2026. Confirmed (announced 15 Sep 2021); cite.
 - [ ] Samuel Johnson, "Reason dies alone" (Godfrey). Verify the attribution.
 - [x] ~~Anitra's degrowth handbook~~: *Routledge Handbook of Degrowth* (2025), co-edited with Vincent Liegey — confirmed on anitranelson.info.
-- [ ] Book titles in the bios still to verify: Nicole's practice guide, *Beyond Money*.
+- [x] Nicole's book: *Facilitating Deliberation: A Practical Guide* (MosaicLab). Confirmed.
+- [ ] *Beyond Money* (Anitra's bio). Still to verify.
 - [ ] Yarra Valley Water citizens' jury. Link a public source (YVW or MosaicLab case study) for the six days, stratified selection and price submission.
 
 ## Notes for the recap post itself
