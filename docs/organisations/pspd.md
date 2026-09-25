@@ -55,7 +55,7 @@ activity:
     checked: 2026-09-19
   rss:
     date: 2026-09-23
-    note: "Latest post: [논평] 재제청 거부 조희대 대법원장 헌법 위에 서려하나"
+    note: 'Latest post: [논평] 재제청 거부 조희대 대법원장 헌법 위에 서려하나'
     url: https://peoplepower21.org/judiciary/2029874
     checked: 2026-09-25
 last_checked: '2026-09-19'

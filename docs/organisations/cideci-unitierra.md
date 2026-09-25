@@ -52,7 +52,7 @@ activity:
     checked: 2026-09-12
   rss:
     date: 2019-06-03
-    note: "Latest post: Conversatorio con Rita Segato y Raúl Zibechi"
+    note: 'Latest post: Conversatorio con Rita Segato y Raúl Zibechi'
     url: https://seminarioscideci.org/conversatorio-con-rita-segato-y-raul-zibechi/
     checked: 2026-09-25
   sitemap:

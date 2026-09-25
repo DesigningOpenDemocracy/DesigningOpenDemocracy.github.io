@@ -212,7 +212,7 @@
 
 54
 00:04:37,988 --> 00:04:50,967
-[Anthony (Host)] She is a fellow and certified trainer at the Engagement Institute and a former board member and co-authored for Stating Deliberation A Practice Guide.
+[Anthony (Host)] She is a fellow and certified trainer at the Engagement Institute and a former board member and co-authored Facilitating Deliberation: A Practical Guide.
 
 55
 00:04:50,967 --> 00:04:51,400
@@ -224,11 +224,11 @@
 
 57
 00:04:53,649 --> 00:04:57,543
-[Anthony (Host)] And we have Anitra who is part of the inform.
+[Anthony (Host)] And we have Anitra who is part of the Informal
 
 58
 00:04:57,543 --> 00:05:02,735
-[Anthony (Host)] Formal Urbanism Research Hub at the University of Melbourne.
+[Anthony (Host)] Urbanism Research Hub at the University of Melbourne.
 
 59
 00:05:02,735 --> 00:05:08,965
@@ -236,7 +236,7 @@
 
 60
 00:05:08,965 --> 00:05:17,444
-[Anthony (Host)] Key recent works include Routledge Hangbook of Degrowth, Beyond Money, a post-capitalist strategy.
+[Anthony (Host)] Key recent works include Routledge Handbook of Degrowth, Beyond Money: A Postcapitalist Strategy.
 
 61
 00:05:17,444 --> 00:05:28,000
@@ -367,9 +367,7 @@
 [Anthony (Host)] Anyway,
 
 93
-00:07:49,040 --> 00:07:49,929
-[Anitra] 95
-00:07:49,929 --> 00:07:52,003
+00:07:49,040 --> 00:07:52,003
 [Anitra] They've all said yes.
 
 94
@@ -1354,7 +1352,7 @@
 
 339
 00:42:47,822 --> 00:42:51,040
-[Nicole] And they say, and they say, and this is democracy.
+[Nicholas Gruen] And they say, and they say, and this is democracy.
 
 340
 00:42:51,520 --> 00:42:58,240
@@ -2198,11 +2196,11 @@
 
 550
 01:14:13,037 --> 01:14:31,530
-[Anitra] Um in terms of Australia and trying to and trying to do degrowth, there um is D-Growth Network Australia, which meets um online um different parts of Australia every month.
+[Anitra] Um in terms of Australia and trying to and trying to do degrowth, there um is Degrowth Network Australia, which meets um online um different parts of Australia every month.
 
 551
 01:14:31,530 --> 01:14:50,239
-[Anitra] There's a NAM DG Growth, um, and NAM DGrowth does really great things like have festivals at Ceres with a lot of like groups like Well Being Alliance and the kinds of policy.
+[Anitra] There's a Naarm Degrowth, um, and Naarm Degrowth does really great things like have festivals in series with a lot of like groups like Well Being Alliance and the kinds of policy.
 
 552
 01:14:50,239 --> 01:15:11,527

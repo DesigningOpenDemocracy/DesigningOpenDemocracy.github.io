@@ -72,7 +72,7 @@ activity:
     checked: 2026-09-19
   rss:
     date: 2026-09-22
-    note: "Latest post: Reduce money in politics to strengthen our democracy"
+    note: 'Latest post: Reduce money in politics to strengthen our democracy'
     url: https://grattan.edu.au/reduce-money-in-politics-to-strengthen-our-democracy/
     checked: 2026-09-25
 last_checked: '2026-09-19'

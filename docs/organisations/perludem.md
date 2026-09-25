@@ -58,7 +58,8 @@ activity:
     checked: 2026-09-19
   rss:
     date: 2026-09-15
-    note: "Latest post: Assessing the Constitutionality of E-Voting, Perludem Calls for a Needs-Based Ap"
+    note: 'Latest post: Assessing the Constitutionality of E-Voting, Perludem Calls
+      for a Needs-Based Ap'
     url: https://perludem.or.id/assessing-the-constitutionality-of-e-voting-perludem-calls-for-a-needs-based-approach/
     checked: 2026-09-25
 last_checked: '2026-09-19'

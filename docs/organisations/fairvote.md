@@ -43,7 +43,7 @@ activity:
     checked: 2026-09-19
   rss:
     date: 2026-09-21
-    note: "Latest post: FairVote news update: Sep. 21, 2026"
+    note: 'Latest post: FairVote news update: Sep. 21, 2026'
     url: https://fairvote.org/fairvote-news-update-sep-21-2026/
     checked: 2026-09-25
 last_checked: '2026-09-19'

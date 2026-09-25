@@ -67,7 +67,8 @@ activity:
     checked: 2026-09-20
   rss:
     date: 2026-09-21
-    note: "Latest post: Perhaps Frustration is not Apathy: my reflection from monitoring the 2026 Osun S"
+    note: 'Latest post: Perhaps Frustration is not Apathy: my reflection from monitoring
+      the 2026 Osun S'
     url: https://budgit.org/perhaps-frustration-is-not-apathy-my-reflection-from-monitoring-the-2026-osun-state-governorship-elections/
     checked: 2026-09-25
 last_checked: '2026-09-20'

@@ -66,7 +66,8 @@ activity:
     checked: 2026-09-15
   rss:
     date: 2026-09-17
-    note: "Latest post: We're looking for a Director of International Democratic Lottery Services"
+    note: 'Latest post: We''re looking for a Director of International Democratic
+      Lottery Services'
     url: http://www.sortitionfoundation.org/director-international-democratic-lottery-services
     checked: 2026-09-25
   scrape:

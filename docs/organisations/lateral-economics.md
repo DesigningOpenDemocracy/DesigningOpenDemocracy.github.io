@@ -91,3 +91,4 @@ He has advocated for a philanthropically funded standing citizens' jury that wou
 - [Prediction Markets](../concepts/prediction-markets.md)
 - [Citizens' Assembly](../concepts/citizens-assembly.md)
 - [Tribal Epistemology](../concepts/tribal-epistemology.md)
+- [Democracy beyond the ballot box: recap of our International Day of Democracy panel](../../blog/posts/2026-09-26-international-day-of-democracy-recap.md) — Nicholas Gruen's case for a standing citizens' assembly that shadows federal parliament, 2026

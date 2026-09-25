@@ -461,6 +461,7 @@ acquire supplies and services, or advertise their products and services.
 ## DOD coverage
 
 - [Civics Ecosystem Toolkit v1.2](../../blog/posts/2026-05-20-civics-ecosystem-toolkit.md) — a practical guide to cooperative governance in the Australian civic context
+- [Democracy beyond the ballot box: recap of our International Day of Democracy panel](../../blog/posts/2026-09-26-international-day-of-democracy-recap.md) — CoPower co-founder Godfrey Moase on co-ops, union democracy and authority without hierarchy, 2026
 
 
 ## See also

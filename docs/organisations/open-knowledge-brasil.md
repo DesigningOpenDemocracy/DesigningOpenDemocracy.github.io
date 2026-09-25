@@ -58,7 +58,8 @@ activity:
     checked: 2026-09-19
   rss:
     date: 2026-09-24
-    note: "Latest post: Restrição de acesso a microdados do Censo 2022 é inadequada e excessiva"
+    note: 'Latest post: Restrição de acesso a microdados do Censo 2022 é inadequada
+      e excessiva'
     url: https://ok.org.br/noticia/restricao-de-acesso-a-microdados-do-censo-2022-e-inadequada-e-excessiva/
     checked: 2026-09-25
 last_checked: '2026-09-19'

@@ -59,7 +59,7 @@ activity:
     checked: 2026-09-15
   sitemap:
     date: 2026-09-25
-    note: "Page last modified (from sitemap)"
+    note: Page last modified (from sitemap)
     url: https://mattran.org.vn/sitemaps.xml
     checked: 2026-09-25
 last_checked: '2026-09-15'

@@ -84,7 +84,8 @@ activity:
     checked: 2026-09-19
   rss:
     date: 2026-09-22
-    note: "Latest post: Privacy Act Reform – Public Consultation on Exposure Draft Legislation"
+    note: 'Latest post: Privacy Act Reform – Public Consultation on Exposure Draft
+      Legislation'
     url: https://efa.org.au/privacy-act-reform-public-consultation-on-exposure-draft-legislation/
     checked: 2026-09-25
 last_checked: '2026-09-19'

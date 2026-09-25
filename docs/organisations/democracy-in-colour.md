@@ -60,7 +60,8 @@ activity:
     checked: 2026-09-13
   rss:
     date: 2026-09-15
-    note: "Latest post: Democracy in Colour, GetUp and anti-racist groups call for unity and hope, not h"
+    note: 'Latest post: Democracy in Colour, GetUp and anti-racist groups call for
+      unity and hope, not h'
     url: https://democracyincolour.org/democracy-in-colour-getup-and-anti-racist-groups-call-for-unity-and-hope-not-hate/
     checked: 2026-09-25
 last_checked: '2026-09-13'

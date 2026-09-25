@@ -64,7 +64,7 @@ activity:
     checked: 2026-09-13
   rss:
     date: 2026-09-25
-    note: "RSS feed active"
+    note: RSS feed active
     url: https://bonds.coop/feed
     checked: 2026-09-25
   scrape:

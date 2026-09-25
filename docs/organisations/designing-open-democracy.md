@@ -82,7 +82,7 @@ activity:
     checked: 2026-09-17
   sitemap:
     date: 2026-09-25
-    note: "Page last modified (from sitemap)"
+    note: Page last modified (from sitemap)
     url: https://designingopendemocracy.com/sitemap.xml
     checked: 2026-09-25
 last_checked: '2026-09-17'
@@ -122,3 +122,4 @@ Some in the group describe DOD as a [meta-organisation](../concepts/meta-organis
 - [Accountability Framework](../projects/accountability-framework/index.md)
 - [Meta-Organisation](../concepts/meta-organisation.md)
 - [Occupy to Plurality: what the 2010s civic-tech wave built, and where it stalled](../blog/posts/2026-08-07-civic-tech-wave-2010s.md)
+- [Democracy beyond the ballot box: recap of our International Day of Democracy panel](../blog/posts/2026-09-26-international-day-of-democracy-recap.md) — the panel DOD co-hosted with 888 Co-operative Causeway, September 2026

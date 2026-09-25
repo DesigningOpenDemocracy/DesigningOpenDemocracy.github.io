@@ -82,7 +82,7 @@ activity:
     checked: 2026-09-19
   rss:
     date: 2026-09-25
-    note: "Latest post: Regent Station Stall"
+    note: 'Latest post: Regent Station Stall'
     url: https://greens.org.au/node/3040227
     checked: 2026-09-25
 last_checked: '2026-09-19'

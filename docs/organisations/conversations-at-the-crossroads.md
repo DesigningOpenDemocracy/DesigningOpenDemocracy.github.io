@@ -65,7 +65,7 @@ activity:
     checked: 2026-09-25
   sitemap:
     date: 2026-08-30
-    note: "Page last modified (from sitemap)"
+    note: Page last modified (from sitemap)
     url: https://www.crossroadsconversation.com.au/sitemap.xml
     checked: 2026-09-25
 last_checked: '2026-09-13'
