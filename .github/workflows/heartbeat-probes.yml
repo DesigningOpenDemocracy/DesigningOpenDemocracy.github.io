@@ -49,6 +49,18 @@ jobs:
           python util/check_event_urls.py | tee /tmp/urls.log
         continue-on-error: true  # same reasoning as above; surfaced by the final step
 
+      # The probe scripts above splice activity entries into org frontmatter
+      # as raw text (notes written as quoted JSON strings), which is valid
+      # YAML but not the canonical form build.yml's
+      # `reorder_frontmatter.py --check` requires. Locally the pre-commit
+      # hook normalises this on every commit; a workflow commit runs no
+      # hooks, so without this step each probe run left main failing that
+      # CI check (59 org pages after the 2026-09-25 run). Normalise here
+      # instead, so every writer is covered rather than fixing each one's
+      # quoting separately.
+      - name: Normalise org frontmatter
+        run: python util/reorder_frontmatter.py
+
       - name: Commit any updates
         run: |
           git config user.name "github-actions[bot]"
