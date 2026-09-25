@@ -37,55 +37,53 @@ On 15 September, International Day of Democracy,[^unday] DOD and [888 Co-operati
 
 Antony McMullen, 888's chair, moderated. The panellists were:
 
-**Nicholas Gruen**, CEO of [Lateral Economics](../../organisations/lateral-economics.md), long-time advocate of assemblies chosen by lot, whose current project is [The Shared Centre](https://www.thesharedcentre.com/).[^sharedcentre]
+### Nicholas Gruen
 
-<details class="plain-details speaker-details">
-<summary>More on Nicholas Gruen</summary>
-<p><strong>Follow his work:</strong> <a href="https://nicholasgruen.substack.com/">Substack</a> · <a href="https://www.thesharedcentre.com/">The Shared Centre</a> (his video series on the deep drivers of political dysfunction) · the film he recommended, <a href="https://goodbyepoliticians.movie/"><em>Goodbye Politicians, Hello Democracy</em></a>, about legislatures of citizens chosen by lottery.</p>
-<p><strong>Also on the night:</strong></p>
-<ul>
-<li>On cost, he first said he couldn't run a standing assembly himself because "I don't have $10 million". Later he put a six-month-to-a-year assembly at "maybe two million", with fundraising to follow on the back of it.</li>
-<li>His example of what one could do: had a standing assembly existed in 2013, the prime minister set on abolishing carbon pricing would have faced "a bigger challenge on his hands than getting through a 10-minute radio interview".</li>
-<li>On the media, he said competitive coverage does to politics "what happens to a fly when you spray Mortein on it… you dissolve its nervous system". On deliberation, he said "we evolved on the African savannah to do that".</li>
-<li>Michigan's redistricting commission, his main example, came from a campaign led by Katie Fahey. On the night he couldn't recall her name.</li>
-</ul>
-</details>
+CEO of [Lateral Economics](../../organisations/lateral-economics.md), long-time advocate of assemblies chosen by lot, whose current project is [The Shared Centre](https://www.thesharedcentre.com/).[^sharedcentre]
 
-**Nicole Hunter**, co-founder of [MosaicLab](../../organisations/mosaiclab.md), who led the Yarra Valley Water citizens' jury and co-wrote [*Facilitating Deliberation: A Practical Guide*](https://mosaiclab.com.au/the-big-book).[^mosaicbook]
+**Follow his work:** [Substack](https://nicholasgruen.substack.com/) · The Shared Centre's video series on the deep drivers of political dysfunction · the film he recommended, [*Goodbye Politicians, Hello Democracy*](https://goodbyepoliticians.movie/), about legislatures of citizens chosen by lottery.
 
-<details class="plain-details speaker-details">
-<summary>More on Nicole Hunter</summary>
-<p><strong>Follow her work:</strong> MosaicLab's <a href="https://mosaiclab.com.au/deliberative-democracy-resource-hub">deliberative democracy resource hub</a> · <a href="https://mosaiclab.com.au/the-big-book"><em>Facilitating Deliberation: A Practical Guide</em></a>, which she co-wrote with fellow directors Kimbra White and Keith Greaves.</p>
-<p><strong>Also on the night:</strong></p>
-<ul>
-<li>What keeps her going is participants' commitment. One called in from "the hospital room where my wife's having a baby", and others kept attending through dialysis and cancer treatment.</li>
-<li>"Just about at every closing session I run for a deliberative process, I cry."</li>
-</ul>
-</details>
+**Also on the night:**
 
-**Anitra Nelson**, an activist scholar with the University of Melbourne's [Informal Urbanism Research Hub](https://infur.msd.unimelb.edu.au/), who writes on degrowth, housing and [post-money economies](https://anitranelson.info/beyond-money/).
+- On cost, he first said he couldn't run a standing assembly himself because "I don't have $10 million". Later he put a six-month-to-a-year assembly at "maybe two million", with fundraising to follow on the back of it.
+- His example of what one could do: had a standing assembly existed in 2013, the prime minister set on abolishing carbon pricing would have faced "a bigger challenge on his hands than getting through a 10-minute radio interview".
+- On the media, he said competitive coverage does to politics "what happens to a fly when you spray Mortein on it… you dissolve its nervous system". On deliberation, he said "we evolved on the African savannah to do that".
+- Michigan's redistricting commission, his main example, came from a campaign led by Katie Fahey. On the night he couldn't recall her name.
 
-<details class="plain-details speaker-details">
-<summary>More on Anitra Nelson</summary>
-<p><strong>Follow her work:</strong> <a href="https://anitranelson.info/">anitranelson.info</a> · <a href="https://anitranelson.info/beyond-money/"><em>Beyond Money: A Postcapitalist Strategy</em></a> (Pluto Press, 2022) · the <a href="https://anitranelson.info/routledge-handbook-of-degrowth/"><em>Routledge Handbook of Degrowth</em></a> (2025), which she co-edited with Vincent Liegey · <a href="https://degrowth.info/en/blog/horizontalism-a-degrowth-strategy"><em>Horizontalism: A degrowth strategy</em></a>, co-written with Liegey and Terry Leahy (March 2026). </p>
-<p><strong>Also on the night:</strong></p>
-<ul>
-<li>She did her PhD on Marx's concept of money: "Money is about more and less." She said the average Australian consumes at the rate of "about five Earths", so "we actually have to be more democratic".</li>
-<li>She noted that 15 September was the fifth anniversary of <a href="https://en.wikipedia.org/wiki/AUKUS">AUKUS</a>. She argued that capital, not parliament, makes the biggest decisions, and that "we're going to have to break the rules of this society in order to change things".</li>
-</ul>
-</details>
+### Nicole Hunter
 
-**Godfrey Moase**, co-founder of the energy co-op CoPower and former Executive Director of the United Workers Union.
+Co-founder of [MosaicLab](../../organisations/mosaiclab.md), who led the Yarra Valley Water citizens' jury and co-wrote [*Facilitating Deliberation: A Practical Guide*](https://mosaiclab.com.au/the-big-book).[^mosaicbook]
 
-<details class="plain-details speaker-details">
-<summary>More on Godfrey Moase</summary>
-<p><strong>Follow his work:</strong> <a href="https://godfreymoase.substack.com/">The Solidarity Wedge</a>, his Substack on solidarity and labour-movement strategy · <a href="https://cooperativepower.org.au/">CoPower</a>.</p>
-<p><strong>Also on the night:</strong></p>
-<ul>
-<li>He said CoPower was set up "as an intervention in the market to try and eat the market" and return value to the commons. Electricity retailers' advertising, he noted, is a cost passed through to customers' bills.</li>
-<li>He argued that "authority shouldn't be dependent on hierarchy". In his view the best leadership sits "on the border between systems", translating between, say, an ecosystem and a village.</li>
-</ul>
-</details>
+**Follow her work:** MosaicLab's [deliberative democracy resource hub](https://mosaiclab.com.au/deliberative-democracy-resource-hub). Her book is co-written with fellow MosaicLab directors Kimbra White and Keith Greaves.
+
+**Also on the night:**
+
+- What keeps her going is participants' commitment. One called in from "the hospital room where my wife's having a baby", and others kept attending through dialysis and cancer treatment.
+- "Just about at every closing session I run for a deliberative process, I cry."
+
+### Anitra Nelson
+
+An activist scholar with the University of Melbourne's [Informal Urbanism Research Hub](https://infur.msd.unimelb.edu.au/), who writes on degrowth, housing and [post-money economies](https://anitranelson.info/beyond-money/).
+
+**Follow her work:** [anitranelson.info](https://anitranelson.info/) · *Beyond Money: A Postcapitalist Strategy* (Pluto Press, 2022) · the [*Routledge Handbook of Degrowth*](https://anitranelson.info/routledge-handbook-of-degrowth/) (2025), which she co-edited with Vincent Liegey · [*Horizontalism: A degrowth strategy*](https://degrowth.info/en/blog/horizontalism-a-degrowth-strategy), co-written with Liegey and Terry Leahy (March 2026).
+
+**Also on the night:**
+
+- She did her PhD on Marx's concept of money: "Money is about more and less." She said the average Australian consumes at the rate of "about five Earths", so "we actually have to be more democratic".
+- She noted that 15 September was the fifth anniversary of [AUKUS](https://en.wikipedia.org/wiki/AUKUS). On how change happens, she said "we're going to have to break the rules of this society in order to change things".
+
+### Godfrey Moase
+
+Co-founder of the energy co-op CoPower and former Executive Director of the United Workers Union.
+
+**Follow his work:** [The Solidarity Wedge](https://godfreymoase.substack.com/), his Substack on solidarity and labour-movement strategy · [CoPower](https://cooperativepower.org.au/).
+
+**Also on the night:**
+
+- He said CoPower was set up "as an intervention in the market to try and eat the market" and return value to the commons. Electricity retailers' advertising, he noted, is a cost passed through to customers' bills.
+- He said the best leadership sits "on the border between systems", translating between, say, an ecosystem and a village.
+
+### How they got here
 
 Asked what first drew them to democracy, Godfrey's answer was cheese pizza, from a night at the Cheese Board Collective, a Berkeley workers' co-op: "I thought, you know what, this is a pretty good way of running the world… sometimes bread can be very persuasive." Anitra's was living in a commune, "and finding that direct democracy can actually work in practice". Nicholas went for provocation: "if by democracy you mean the system we have today, this is the system that brought you Donald Trump and Adolf Hitler."
 
