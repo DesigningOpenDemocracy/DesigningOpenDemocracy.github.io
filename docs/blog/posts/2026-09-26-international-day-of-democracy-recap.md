@@ -103,6 +103,17 @@ Basil Varghese, 888's patron, closed with a childhood memory from Kerala. His gr
 
 Nicholas has been making the case for juries to DOD since [2017](2017-08-21-podcast.md) and [2020](2020-03-20.md). This time he went a step further: stop asking and run one. With a Victorian election two months away, the open question is who pays for the first one.
 
+## Keep in touch with the panel
+
+After the event, 888 and DOD sent attendees a follow-up communique. These are its pointers for going further:
+
+- **Nicholas Gruen** writes on [Substack](https://nicholasgruen.substack.com/), and [The Shared Centre](https://www.thesharedcentre.com/) hosts his video series on the deep drivers of political dysfunction. He also recommended the film [*Goodbye Politicians, Hello Democracy*](https://goodbyepoliticians.movie/), about legislatures of citizens chosen by lottery.
+- **MosaicLab** has a [deliberative democracy resource hub](https://mosaiclab.com.au/deliberative-democracy-resource-hub), and has published its [response to Victoria's Inquiry into Community Consultation Practices](https://mosaiclab.com.au/news-all-posts/vic-gov-inquiry).
+- **Anitra Nelson**'s publications are at [anitranelson.info](https://anitranelson.info/). [*Horizontalism: A degrowth strategy*](https://degrowth.info/en/blog/horizontalism-a-degrowth-strategy), which she wrote with Vincent Liegey and Terry Leahy, sets out the horizontalist approach she described on the night.
+- **Godfrey Moase** writes [The Solidarity Wedge](https://godfreymoase.substack.com/) on Substack about solidarity and labour-movement strategy. He co-founded [CoPower](https://cooperativepower.org.au/).
+- **From the wider network:** newDemocracy's handbook for the UN Democracy Fund, [*Democracy Beyond Elections*](https://www.newdemocracy.com.au/2018/10/17/united-nations-democracy-fund-democracy-beyond-elections/), on applying representative deliberation at national level.
+- **DOD:** our events are on [Meetup](https://www.meetup.com/designingopendemocracy/), and the [Democracy Landscape](../../organisations/index.md) tracks reform and civic-tech organisations and their latest activity. We're looking for volunteers. See [Community](../../community/community.md) to get involved.
+
 ## How this recap was made
 
 The recording was transcribed automatically. A DOD member then checked the transcript against the audio, with Claude flagging likely mishearings and misattributed lines to listen for. The member resolved names, speaker turns and book titles, and together they confirmed the sources for them. The fuller [breakdown of the evening](https://github.com/DesigningOpenDemocracy/DesigningOpenDemocracy.github.io/blob/main/.podcast_transcript/analysis/2026-09-15_international-day-of-democracy.md) covers every answer and audience question, including future generations and degrowth in practice, which this post leaves out. It also has a fact-check list for speakers' claims. Quotes here are from the [checked transcript](https://github.com/DesigningOpenDemocracy/DesigningOpenDemocracy.github.io/blob/main/.podcast_transcript/2026-09-15_DesigningOpenDemocracy_InternationalDayOfDemocracy_labeled.srt), lightly trimmed (`…` marks a cut).

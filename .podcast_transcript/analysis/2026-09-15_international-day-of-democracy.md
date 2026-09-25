@@ -508,6 +508,24 @@ from each page's raw text unless noted.
   on LinkedIn (Brian, 2026-09-26). She didn't say which WEAll hub, so the
   transcript keeps her words, and a recap shouldn't name a specific hub.
 
+**Post-event communique (888 + DOD, sent to attendees)**
+- The recap's "Keep in touch with the panel" section carries its
+  democracy-related links: Gruen's Substack, The Shared Centre videos and the
+  *Goodbye Politicians, Hello Democracy* film; MosaicLab's resource hub and
+  Victorian inquiry response; anitranelson.info and *Horizontalism: A degrowth
+  strategy* (Liegey, Nelson, Leahy, degrowth.info, 20 March 2026); The
+  Solidarity Wedge and CoPower; newDemocracy's UNDEF handbook; DOD's Meetup
+  and landscape tracker.
+- Deliberately left out of the public post: 888's co-working and membership
+  pitch, 888's Patreon (advance release of the audio), a personal volunteer
+  email address (the post points to the Community page instead), and the Folio
+  24 September event (already past, and covered on the landscape's
+  folio-collective.md page).
+- The communique calls newDemocracy's handbook "just released", but its page
+  is dated 2018, so the recap doesn't make a recency claim.
+- Several of the communique's links were Outlook "safelinks" wrappers. The
+  post uses the clean underlying URLs.
+
 **Antony McMullen's "learn to be free"**
 - Kallistos Ware, *How to Study Theology*: "If I was asked by my students of
   Oxford, 'What are you trying to do for us,' then I felt my best answer was to
