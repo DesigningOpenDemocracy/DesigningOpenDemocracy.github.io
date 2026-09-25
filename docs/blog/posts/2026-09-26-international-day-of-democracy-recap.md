@@ -111,8 +111,7 @@ After the event, 888 and DOD sent attendees a follow-up communique. These are it
 - **MosaicLab** has a [deliberative democracy resource hub](https://mosaiclab.com.au/deliberative-democracy-resource-hub), and has published its [response to Victoria's Inquiry into Community Consultation Practices](https://mosaiclab.com.au/news-all-posts/vic-gov-inquiry).
 - **Anitra Nelson**'s publications are at [anitranelson.info](https://anitranelson.info/). [*Horizontalism: A degrowth strategy*](https://degrowth.info/en/blog/horizontalism-a-degrowth-strategy), which she wrote with Vincent Liegey and Terry Leahy, sets out the horizontalist approach she described on the night.
 - **Godfrey Moase** writes [The Solidarity Wedge](https://godfreymoase.substack.com/) on Substack about solidarity and labour-movement strategy. He co-founded [CoPower](https://cooperativepower.org.au/).
-- **From the wider network:** newDemocracy's handbook for the UN Democracy Fund, [*Democracy Beyond Elections*](https://www.newdemocracy.com.au/2018/10/17/united-nations-democracy-fund-democracy-beyond-elections/), on applying representative deliberation at national level.
-- **DOD:** our events are on [Meetup](https://www.meetup.com/designingopendemocracy/), and the [Democracy Landscape](../../organisations/index.md) tracks reform and civic-tech organisations and their latest activity. We're looking for volunteers. See [Community](../../community/community.md) to get involved.
+- **From the wider network:** the [newDemocracy Foundation](../../organisations/newdemocracy.md) has just released the second edition of [*Democracy Beyond Elections: A Handbook on Citizens' Assemblies*](https://www.newdemocracy.com.au/wp-content/uploads/2026/09/UNDEF_Handbook-2nd-Edition-Sept-2026.pdf) (PDF, September 2026), produced with the UN Democracy Fund and UNDP.
 
 ## How this recap was made
 

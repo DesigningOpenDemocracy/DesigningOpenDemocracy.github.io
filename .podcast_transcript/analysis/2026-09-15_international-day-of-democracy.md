@@ -514,15 +514,19 @@ from each page's raw text unless noted.
   *Goodbye Politicians, Hello Democracy* film; MosaicLab's resource hub and
   Victorian inquiry response; anitranelson.info and *Horizontalism: A degrowth
   strategy* (Liegey, Nelson, Leahy, degrowth.info, 20 March 2026); The
-  Solidarity Wedge and CoPower; newDemocracy's UNDEF handbook; DOD's Meetup
-  and landscape tracker.
+  Solidarity Wedge and CoPower; newDemocracy's UNDEF handbook.
 - Deliberately left out of the public post: 888's co-working and membership
-  pitch, 888's Patreon (advance release of the audio), a personal volunteer
-  email address (the post points to the Community page instead), and the Folio
+  pitch, 888's Patreon (advance release of the audio), the DOD section (Meetup,
+  landscape tracker and a volunteer call with a personal email: readers of the
+  post are already on DOD's site), and the Folio
   24 September event (already past, and covered on the landscape's
   folio-collective.md page).
-- The communique calls newDemocracy's handbook "just released", but its page
-  is dated 2018, so the recap doesn't make a recency claim.
+- The communique's newDemocracy link went to the 2018 announcement of the
+  first edition. The "just released" handbook is the 2nd edition, *Democracy
+  Beyond Elections: A Handbook on Citizens' Assemblies*
+  ([PDF](https://www.newdemocracy.com.au/wp-content/uploads/2026/09/UNDEF_Handbook-2nd-Edition-Sept-2026.pdf),
+  September 2026, with UNDEF and UNDP; title confirmed from the PDF's cover).
+  The recap links the PDF.
 - Several of the communique's links were Outlook "safelinks" wrappers. The
   post uses the clean underlying URLs.
 
