@@ -25,4 +25,6 @@ Where the date came from:
   2022-12-06  2023-01-21-podcast.md                        "held on 6 December 2022"
   2026-09-15  2026-08-25-international-day-of-democracy-event.md   event date (speaker-labelled .srt only)
 
-Analysis notes derived from these transcripts live in analysis/.
+Analysis notes derived from these transcripts live in analysis/ (one file per
+recording; start with analysis/README.md for the index, cross-episode threads,
+and a list of blog-post issues found while checking the posts).

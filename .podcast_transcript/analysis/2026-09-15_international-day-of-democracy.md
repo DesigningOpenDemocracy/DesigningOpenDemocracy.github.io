@@ -439,7 +439,8 @@ is not a recommendation):
 Check [`internal-heartbeat/orgs-not-included.md`](../../internal-heartbeat/orgs-not-included.md)
 before assessing any of these.
 
-Earlier DOD recordings with the same people:
+Earlier DOD recordings with the same people (each now has its own notes
+file in this folder; see [`README.md`](README.md) for the index):
 - Nicholas Gruen: [`2017-08-21` Citizens' Democracy](../../docs/blog/posts/2017-08-21-podcast.md),
   [`2020-03-03` Isegoria](../../docs/blog/posts/2020-03-20.md). He was already
   arguing in 2020 that elections destroy isegoria. A recap can show how the
