@@ -41,7 +41,7 @@ On 15 September, International Day of Democracy,[^unday] DOD and [888 Co-operati
 
 - **Nicholas Gruen**, CEO of [Lateral Economics](../../organisations/lateral-economics.md), and a long-time advocate of citizens' juries and assemblies chosen by lot. His current project is [The Shared Centre](https://www.thesharedcentre.com/).[^sharedcentre]
 - **Nicole Hunter**, co-founder and Managing Director of [MosaicLab](../../organisations/mosaiclab.md), who led the Yarra Valley Water citizens' jury. She co-wrote MosaicLab's [*Facilitating Deliberation: A Practical Guide*](https://mosaiclab.com.au/the-big-book).[^mosaicbook]
-- **Anitra Nelson**, an activist scholar with the University of Melbourne's [Informal Urbanism Research Hub](https://infur.msd.unimelb.edu.au/) (InfUr-)[^infur] who writes on degrowth, housing and post-money economies. With Vincent Liegey she co-edited the [*Routledge Handbook of Degrowth*](https://anitranelson.info/routledge-handbook-of-degrowth/) (2025).[^handbook]
+- **Anitra Nelson**, an activist scholar with the University of Melbourne's [Informal Urbanism Research Hub](https://infur.msd.unimelb.edu.au/), who writes on degrowth, housing and post-money economies
 - **Godfrey Moase**, co-founder of the energy co-op CoPower and former Executive Director of the United Workers Union
 
 The event was timed for the run-up to Victoria's state election on 28 November.[^vicelection]
@@ -183,10 +183,6 @@ Several threads here reach back years in DOD's own archive. Nicholas made the ca
 [^sharedcentre]: "It's time to reawaken the better angels of our nature" [The Shared Centre](https://www.thesharedcentre.com/), Nicholas Gruen.
 
 [^mosaicbook]: "Nicole Hunter and Keith Greaves as they take you behind the scenes of a public deliberation" [Facilitating Deliberation: A Practical Guide](https://mosaiclab.com.au/the-big-book), MosaicLab.
-
-[^infur]: "InfUr- is an assemblage of researchers and projects focused on the role of urban informality in the creative production of cities of both the Global South and North." [InfUr- The Informal Urbanism Research Hub](https://infur.msd.unimelb.edu.au/), Melbourne School of Design, University of Melbourne.
-
-[^handbook]: "Anitra Nelson and Vincent Liegey have assembled a groundbreaking collection" [Routledge Handbook of Degrowth](https://anitranelson.info/routledge-handbook-of-degrowth/), anitranelson.info (endorsement by Giorgos Kallis).
 
 [^ware]: "We want you to learn to be free." Kallistos Ware, [How to Study Theology](https://www.scribd.com/document/695148676/08-03-04-L-Kallistos-Ware-How-Study-Theology), Scribd copy, where Ware says this was his answer to his Oxford students. Read in a browser on 2026-09-26; Scribd serves no document text to scripts, so this quote can only be checked by hand.
 

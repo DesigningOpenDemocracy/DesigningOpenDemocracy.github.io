@@ -451,6 +451,68 @@ Earlier DOD recordings with the same people:
   [`2022-12-06` Basil's Table (tech bros)](../../docs/blog/posts/2023-01-21-podcast.md).
   MosaicLab also came up at the [`2020-02-21` Primer](../../docs/blog/posts/2022-02-24-podcast.md) (Kimbra White).
 
+## Reference details (for this and future analysis)
+
+Background on the people, works and groups named on the night, gathered while
+checking the transcript (2026-09-26). The recap uses only what explains
+something said. The rest is kept here so it isn't lost. Quotes were taken
+from each page's raw text unless noted.
+
+**Nicholas Gruen**
+- Project: [The Shared Centre](https://www.thesharedcentre.com/), named in the
+  bio Anthony read out. Tagline: "It's time to reawaken the better angels of
+  our nature". Its pitch ends with changes that might let us, "as if passing
+  through a portal", renew modernity. That's the same "portal" image Gruen used
+  on the night (00:50:14), so the site is a good source for his
+  standing-assembly argument in his own framing.
+- Earlier roles, from the bio: visiting professor at King's College London,
+  adjunct professor at UTS Business School, chair of Kaggle.
+
+**Nicole Hunter**
+- Co-author, with fellow MosaicLab directors Kimbra White and Keith Greaves, of
+  [*Facilitating Deliberation: A Practical Guide*](https://mosaiclab.com.au/the-big-book).
+  It's "Drawn from the authors' experience delivering 39 deliberative
+  engagement processes". It's a natural further-reading link for her
+  jury-process answers (00:39:05, 01:00:04).
+- From the bio: Fellow and certified trainer at the Engagement Institute
+  (former board member), with 25+ years across government and private sector.
+
+**Anitra Nelson**
+- Affiliation: [InfUr- (Informal Urbanism Research Hub)](https://infur.msd.unimelb.edu.au/),
+  Melbourne School of Design. The site says: "InfUr- is an assemblage of
+  researchers and projects focused on the role of urban informality in the
+  creative production of cities of both the Global South and North." Its
+  co-directors (per the site) are Kim Dovey, Crystal Legacy, Patrick Cobbinah
+  and Ashraful Alam.
+- [*Routledge Handbook of Degrowth*](https://anitranelson.info/routledge-handbook-of-degrowth/)
+  (released late July 2025, open access and hardcover), co-edited with
+  Vincent Liegey. This is the "about 35 chapters" handbook she mentioned
+  (01:11:11). Giorgos Kallis's endorsement on her site: "Anitra Nelson and
+  Vincent Liegey have assembled a groundbreaking collection".
+- Not to be confused with [*Exploring Degrowth: A Critical Guide*](https://anitranelson.info/exploring-degrowth/)
+  (2020). That book is co-*written* by the same pair ("Written by spokesperson
+  for the French and international degrowth movements Vincent Liegey and
+  Australian degrowth activist-scholar Anitra Nelson").
+- *Beyond Money: A Postcapitalist Strategy*, from the bio. Not yet checked.
+- Groups she named: [Degrowth Network Australia](https://www.degrowthnetwork.au/)
+  ("Towards a sustainable and just economy that works for us!"; she said it
+  meets online monthly), and Naarm Degrowth (Melbourne), which runs "festivals
+  in series". "Well Being Alliance" is still unconfirmed.
+
+**Antony McMullen's "learn to be free"**
+- Kallistos Ware, *How to Study Theology*: "If I was asked by my students of
+  Oxford, 'What are you trying to do for us,' then I felt my best answer was to
+  say no more that this: 'We want you to learn to be free.'"
+  ([Scribd copy](https://www.scribd.com/document/695148676/08-03-04-L-Kallistos-Ware-How-Study-Theology),
+  read in a browser by Brian. Scribd serves no document text to scripts.) Ware
+  is describing his own teaching, not quoting someone else.
+
+**Nicole's "the news today" (about 00:25)**
+- Unconfirmed. The likeliest candidate is the federal government's 8 September
+  2026 proposal to let users switch off algorithmic feeds
+  ([NPR](https://www.npr.org/2026/09/08/g-s1-142311/australian-social-media-users-to-be-offered-choice-to-opt-out-of-algorithms)).
+  See the note in Nicole's section.
+
 ## Fact-check list before publishing a recap
 
 Claims made *by speakers*. Either verify them, or attribute them clearly as
