@@ -45,10 +45,9 @@ CEO of [Lateral Economics](../../organisations/lateral-economics.md), long-time 
 
 **Also on the night:**
 
-- On cost, he first said he couldn't run a standing assembly himself because "I don't have $10 million". Later he put a six-month-to-a-year assembly at "maybe two million", with fundraising to follow on the back of it.
 - His example of what one could do: had a standing assembly existed in 2013, the prime minister set on abolishing carbon pricing would have faced "a bigger challenge on his hands than getting through a 10-minute radio interview".
 - On the media, he said competitive coverage does to politics "what happens to a fly when you spray Mortein on it… you dissolve its nervous system". On deliberation, he said "we evolved on the African savannah to do that".
-- Michigan's redistricting commission, his main example, came from a campaign led by Katie Fahey. On the night he couldn't recall her name.
+- He was generous to leaders who have used one-off assemblies and then struggled with the recommendations: "I'm not telling you this story on the basis that Emmanuel Macron is a bad guy. He's facing a bunch of incentives."
 
 ### Nicole Hunter
 
@@ -58,8 +57,8 @@ Co-founder of [MosaicLab](../../organisations/mosaiclab.md), who led the Yarra V
 
 **Also on the night:**
 
-- What keeps her going is participants' commitment. One called in from "the hospital room where my wife's having a baby", and others kept attending through dialysis and cancer treatment.
-- "Just about at every closing session I run for a deliberative process, I cry."
+- What moves her is how much participants commit. People have taken part in juries from hospital while their wife was having a baby, and through dialysis and cancer treatment: "It's that commitment to something that they believe is bigger than them and that they're making a difference in the world."
+- Closing sessions still move her after hundreds of processes, "because you see the shift in people. They are like, I can make a difference. I am powerful."
 
 ### Anitra Nelson
 
@@ -70,7 +69,7 @@ An activist scholar with the University of Melbourne's [Informal Urbanism Resear
 **Also on the night:**
 
 - She did her PhD on Marx's concept of money: "Money is about more and less." She said the average Australian consumes at the rate of "about five Earths", so "we actually have to be more democratic".
-- She noted that 15 September was the fifth anniversary of [AUKUS](https://en.wikipedia.org/wiki/AUKUS). On urgency, she said "we're the ones who actually have to decide that yes, it is urgent, and we're going to have to break the rules of this society in order to change things".
+- Her example of big decisions made without the public was the recent wave of data centres, where people asked how they never knew it was coming: "we don't know things are going to happen because we're never involved". She also noted that 15 September was the fifth anniversary of [AUKUS](https://en.wikipedia.org/wiki/AUKUS), another decision made far from the public.
 
 ### Godfrey Moase
 
@@ -125,7 +124,7 @@ Nicholas's main proposal was a privately funded, standing assembly of around a h
 > "No, don't ask for any permission. Just run it, turn people over every six months or two years or whatever you decide."
 > — Nicholas Gruen
 
-He estimated "maybe two million to run a citizen assembly for six months to a year".
+And, he argued, it's within reach: "It's not that expensive, maybe two million to run a citizen assembly for six months to a year", with fundraising to follow on the back of it.
 
 ## Audience Q&A
 
@@ -165,7 +164,7 @@ The aim, she said, is to live "as modestly as we can, but also as convivially as
 The questioner pointed to the AfD in Germany and One Nation at home, and asked how to get from theory to action. The answers showed the clearest difference between the panellists:
 
 - **Nicholas**: fund the assembly and "organize collisions" between today's politics and another way of doing it.
-- **Godfrey**: alienated people reach for "a flashing red button that they can hit", which only reinforces the system. What's missing is organisations that give people something else to do. His own push to shift union power to rank-and-file delegates stalled as "an incredibly threatening proposition".
+- **Godfrey**: people feeling "a sense of frustration with the system" are offered "a flashing red button that they can hit", and pressing it only reinforces the system. What's missing is organisations that give people something else to do. He was frank about how hard that is. From his own time as a union leader, he said real change means shifting power from leaders like him to rank-and-file delegates, and that's "an incredibly threatening proposition".
 - **Anitra**: "It's a trap to think that the political realm is where… the decisions are being made. The biggest decisions… are being made by capitalists."
 
 Parliament, the workplace, or capital? The panel didn't settle it.
@@ -179,10 +178,10 @@ The last question took Nicholas's standing assembly seriously and asked how to s
 
 Nicholas's answer was to go federal straight away, and let the assembly set its own agenda:
 
-> "I'm not arguing for starting small. I'm saying we go to a standing citizen, federal citizen assembly. Um you ask what should it focus on, I'm going to ask the Citizen Assembly."
+> "I'm not arguing for starting small. I'm saying we go to a standing citizen, federal citizen assembly. You ask what should it focus on, I'm going to ask the Citizen Assembly."
 > — Nicholas Gruen
 
-He'd seed it with one idea from economics, opportunity cost ("immortalized in the words of the Spice Girls. Tell me what you want, what you really, really want"), because an assembly can't focus on everything. Starting small, he said, "is the opiate of activists everywhere." He calls his approach "radical incrementalism": one body with a different institutional logic, dropped into the system "like a bit of ink in a bit of water". His example was Michigan, where a ballot initiative handed electoral boundaries to a commission of randomly drawn citizens.[^michigan]
+He'd seed it with one idea from economics, opportunity cost ("immortalized in the words of the Spice Girls. Tell me what you want, what you really, really want"), because an assembly can't focus on everything. He was careful not to knock people who work at smaller scales ("I don't want to be critical of those people", as he put it earlier in the night), but he sees starting small as a trap: "the opiate of activists everywhere". He calls his approach "radical incrementalism": one body with a different institutional logic, dropped into the system "like a bit of ink in a bit of water". His example was Michigan, where a ballot initiative handed electoral boundaries to a commission of randomly drawn citizens.[^michigan]
 
 ## Closing: the frog in the well
 
