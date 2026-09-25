@@ -35,12 +35,62 @@ On 15 September, International Day of Democracy,[^unday] DOD and [888 Co-operati
 
 ## The panel
 
-Antony McMullen, 888's chair, moderated. The panellists:
+Antony McMullen, 888's chair, moderated. The panellists were:
 
-- **Nicholas Gruen**, CEO of [Lateral Economics](../../organisations/lateral-economics.md), long-time advocate of assemblies chosen by lot, whose current project is [The Shared Centre](https://www.thesharedcentre.com/)[^sharedcentre]
-- **Nicole Hunter**, co-founder of [MosaicLab](../../organisations/mosaiclab.md), who led the Yarra Valley Water citizens' jury and co-wrote [*Facilitating Deliberation: A Practical Guide*](https://mosaiclab.com.au/the-big-book)[^mosaicbook]
-- **Anitra Nelson**, an activist scholar with the University of Melbourne's [Informal Urbanism Research Hub](https://infur.msd.unimelb.edu.au/), who writes on degrowth, housing and [post-money economies](https://anitranelson.info/beyond-money/)
-- **Godfrey Moase**, co-founder of the energy co-op CoPower and former Executive Director of the United Workers Union
+**Nicholas Gruen**, CEO of [Lateral Economics](../../organisations/lateral-economics.md), long-time advocate of assemblies chosen by lot, whose current project is [The Shared Centre](https://www.thesharedcentre.com/).[^sharedcentre]
+
+<details class="plain-details speaker-details">
+<summary>More on Nicholas Gruen</summary>
+<p><strong>Follow his work:</strong> <a href="https://nicholasgruen.substack.com/">Substack</a> · <a href="https://www.thesharedcentre.com/">The Shared Centre</a> (his video series on the deep drivers of political dysfunction) · the film he recommended, <a href="https://goodbyepoliticians.movie/"><em>Goodbye Politicians, Hello Democracy</em></a>, about legislatures of citizens chosen by lottery.</p>
+<p><strong>Also on the night:</strong></p>
+<ul>
+<li>On cost, he first said he couldn't run a standing assembly himself because "I don't have $10 million". Later he put a six-month-to-a-year assembly at "maybe two million", with fundraising to follow on the back of it.</li>
+<li>His example of what one could do: had a standing assembly existed in 2013, the prime minister set on abolishing carbon pricing would have faced "a bigger challenge on his hands than getting through a 10-minute radio interview".</li>
+<li>On why juries decide differently, he said a jury isn't counting to 51%: "you're saying what can we live with?" He drew on Hannah Arendt's point that the secret ballot "leans heavily on the idea of privacy and therefore of the individual rather than the res publica".</li>
+<li>On the media, he said competitive coverage does to politics "what happens to a fly when you spray Mortein on it… you dissolve its nervous system". On deliberation, he said "we evolved on the African savannah to do that".</li>
+<li>Michigan's redistricting commission, his main example, came from a campaign led by Katie Fahey. On the night he couldn't recall her name.</li>
+</ul>
+</details>
+
+**Nicole Hunter**, co-founder of [MosaicLab](../../organisations/mosaiclab.md), who led the Yarra Valley Water citizens' jury and co-wrote [*Facilitating Deliberation: A Practical Guide*](https://mosaiclab.com.au/the-big-book).[^mosaicbook]
+
+<details class="plain-details speaker-details">
+<summary>More on Nicole Hunter</summary>
+<p><strong>Follow her work:</strong> MosaicLab's <a href="https://mosaiclab.com.au/deliberative-democracy-resource-hub">deliberative democracy resource hub</a> · its <a href="https://mosaiclab.com.au/news-all-posts/vic-gov-inquiry">response to Victoria's Inquiry into Community Consultation Practices</a> · <a href="https://mosaiclab.com.au/the-big-book"><em>Facilitating Deliberation: A Practical Guide</em></a>, which she co-wrote with fellow directors Kimbra White and Keith Greaves.</p>
+<p><strong>Also on the night:</strong></p>
+<ul>
+<li>What keeps her going is participants' commitment. One called in from "the hospital room where my wife's having a baby", and others kept attending through dialysis and cancer treatment.</li>
+<li>"Just about at every closing session I run for a deliberative process, I cry."</li>
+<li>An audience member asked whether randomly selected citizens would vote against future generations. She described processes, which she said are used a lot in Japan, where a few participants are asked "to act like you're the future, or to act like you're the trees". "I'm not saying it's perfect."</li>
+</ul>
+</details>
+
+**Anitra Nelson**, an activist scholar with the University of Melbourne's [Informal Urbanism Research Hub](https://infur.msd.unimelb.edu.au/), who writes on degrowth, housing and [post-money economies](https://anitranelson.info/beyond-money/).
+
+<details class="plain-details speaker-details">
+<summary>More on Anitra Nelson</summary>
+<p><strong>Follow her work:</strong> <a href="https://anitranelson.info/">anitranelson.info</a> · <a href="https://anitranelson.info/beyond-money/"><em>Beyond Money: A Postcapitalist Strategy</em></a> (Pluto Press, 2022) · the <a href="https://anitranelson.info/routledge-handbook-of-degrowth/"><em>Routledge Handbook of Degrowth</em></a> (2025), which she co-edited with Vincent Liegey · <a href="https://degrowth.info/en/blog/horizontalism-a-degrowth-strategy"><em>Horizontalism: A degrowth strategy</em></a>, co-written with Liegey and Terry Leahy (March 2026). Locally, she pointed to <a href="https://www.degrowthnetwork.au/">Degrowth Network Australia</a>, which she said meets online monthly, and to Melbourne's Naarm Degrowth.</p>
+<p><strong>Also on the night:</strong></p>
+<ul>
+<li>She did her PhD on Marx's concept of money: "Money is about more and less." She said the average Australian consumes at the rate of "about five Earths", so "we actually have to be more democratic".</li>
+<li>An urban planner in the audience asked what degrowth means in practice. Her answer: "commoning"; universal basic services with limits; planning rules that set "the maximum amount of space that people occupy" rather than a minimum; and rules that let people build and repair their own homes. The aim is to live "as modestly as we can, but also as convivially as we can".</li>
+<li>On future generations, she said framing a question around "a one planet lifestyle" already builds them in.</li>
+<li>She noted that 15 September was the fifth anniversary of <a href="https://en.wikipedia.org/wiki/AUKUS">AUKUS</a>. She argued that capital, not parliament, makes the biggest decisions, and that "we're going to have to break the rules of this society in order to change things".</li>
+</ul>
+</details>
+
+**Godfrey Moase**, co-founder of the energy co-op CoPower and former Executive Director of the United Workers Union.
+
+<details class="plain-details speaker-details">
+<summary>More on Godfrey Moase</summary>
+<p><strong>Follow his work:</strong> <a href="https://godfreymoase.substack.com/">The Solidarity Wedge</a>, his Substack on solidarity and labour-movement strategy · <a href="https://cooperativepower.org.au/">CoPower</a>.</p>
+<p><strong>Also on the night:</strong></p>
+<ul>
+<li>He said CoPower was set up "as an intervention in the market to try and eat the market" and return value to the commons. Electricity retailers' advertising, he noted, is a cost passed through to customers' bills.</li>
+<li>He argued that "authority shouldn't be dependent on hierarchy". In his view the best leadership sits "on the border between systems", translating between, say, an ecosystem and a village.</li>
+<li>On future generations: "I think capitalism gives democracy a bad name." He said people who won't vote for a lower quality of life are scrambling to make a living in a system he called "parasitic upon our present now as well as our future".</li>
+</ul>
+</details>
 
 Asked what first drew them to democracy, Godfrey's answer was cheese pizza, from a night at the Cheese Board Collective, a Berkeley workers' co-op: "I thought, you know what, this is a pretty good way of running the world… sometimes bread can be very persuasive." Anitra's was living in a commune, "and finding that direct democracy can actually work in practice". Nicholas went for provocation: "if by democracy you mean the system we have today, this is the system that brought you Donald Trump and Adolf Hitler."
 
@@ -103,27 +153,16 @@ Basil Varghese, 888's patron, closed with a childhood memory from Kerala. His gr
 
 Nicholas has been making the case for juries to DOD since [2017](2017-08-21-podcast.md) and [2020](2020-03-20.md). This time he went a step further: stop asking and run one. With a Victorian election two months away, the open question is who pays for the first one.
 
-## Keep in touch with the panel
-
-After the event, 888 and DOD sent attendees a follow-up communique. These are its pointers for going further:
-
-- **Nicholas Gruen** writes on [Substack](https://nicholasgruen.substack.com/), and [The Shared Centre](https://www.thesharedcentre.com/) hosts his video series on the deep drivers of political dysfunction. He also recommended the film [*Goodbye Politicians, Hello Democracy*](https://goodbyepoliticians.movie/), about legislatures of citizens chosen by lottery.
-- **MosaicLab** has a [deliberative democracy resource hub](https://mosaiclab.com.au/deliberative-democracy-resource-hub), and has published its [response to Victoria's Inquiry into Community Consultation Practices](https://mosaiclab.com.au/news-all-posts/vic-gov-inquiry).
-- **Anitra Nelson**'s publications are at [anitranelson.info](https://anitranelson.info/). [*Horizontalism: A degrowth strategy*](https://degrowth.info/en/blog/horizontalism-a-degrowth-strategy), which she wrote with Vincent Liegey and Terry Leahy, sets out the horizontalist approach she described on the night.
-- **Godfrey Moase** writes [The Solidarity Wedge](https://godfreymoase.substack.com/) on Substack about solidarity and labour-movement strategy. He co-founded [CoPower](https://cooperativepower.org.au/).
-- **From the wider network:** the [newDemocracy Foundation](../../organisations/newdemocracy.md) has just released the second edition of [*Democracy Beyond Elections: A Handbook on Citizens' Assemblies*](https://www.newdemocracy.com.au/wp-content/uploads/2026/09/UNDEF_Handbook-2nd-Edition-Sept-2026.pdf) (PDF, September 2026), produced with the UN Democracy Fund and UNDP.
-
 ## How this recap was made
 
-The recording was transcribed automatically. A DOD member then checked the transcript against the audio, with Claude flagging likely mishearings and misattributed lines to listen for. The member resolved names, speaker turns and book titles, and together they confirmed the sources for them. The fuller [breakdown of the evening](https://github.com/DesigningOpenDemocracy/DesigningOpenDemocracy.github.io/blob/main/.podcast_transcript/analysis/2026-09-15_international-day-of-democracy.md) covers every answer and audience question, including future generations and degrowth in practice, which this post leaves out. It also has a fact-check list for speakers' claims. Quotes here are from the [checked transcript](https://github.com/DesigningOpenDemocracy/DesigningOpenDemocracy.github.io/blob/main/.podcast_transcript/2026-09-15_DesigningOpenDemocracy_InternationalDayOfDemocracy_labeled.srt), lightly trimmed (`…` marks a cut).
+The recording was transcribed automatically. A DOD member then checked the transcript against the audio, with Claude flagging likely mishearings and misattributed lines to listen for. The member resolved names, speaker turns and book titles, and together they confirmed the sources for them. The fuller [breakdown of the evening](https://github.com/DesigningOpenDemocracy/DesigningOpenDemocracy.github.io/blob/main/.podcast_transcript/analysis/2026-09-15_international-day-of-democracy.md) covers every answer and audience question, including the audience questions this post only touches on in the speaker notes above. It also has a fact-check list for speakers' claims. Quotes here are from the [checked transcript](https://github.com/DesigningOpenDemocracy/DesigningOpenDemocracy.github.io/blob/main/.podcast_transcript/2026-09-15_DesigningOpenDemocracy_InternationalDayOfDemocracy_labeled.srt), lightly trimmed (`…` marks a cut).
 
 ## Sources & further reading
 
 - [DOD is co-hosting a Melbourne panel for International Day of Democracy](2026-08-25-international-day-of-democracy-event.md) — our announcement, with the panel's bios
 - [888 Co-operative Causeway](../../organisations/888-cooperative-causeway.md), [Lateral Economics](../../organisations/lateral-economics.md), [MosaicLab](../../organisations/mosaiclab.md) — Democracy Landscape entries
 - [Citizens' Assembly](../../concepts/citizens-assembly.md), [Sortition](../../concepts/sortition.md), [Deliberative Democracy](../../concepts/deliberative-democracy.md), [Cooperative](../../concepts/cooperative.md) — concept pages
-- [*Routledge Handbook of Degrowth*](https://anitranelson.info/routledge-handbook-of-degrowth/) — co-edited by Anitra Nelson and Vincent Liegey (2025)
-- [Degrowth Network Australia](https://www.degrowthnetwork.au/) — one of the local degrowth groups Anitra recommended, alongside Melbourne's Naarm Degrowth
+- [*Democracy Beyond Elections: A Handbook on Citizens' Assemblies*](https://www.newdemocracy.com.au/wp-content/uploads/2026/09/UNDEF_Handbook-2nd-Edition-Sept-2026.pdf) — the [newDemocracy Foundation](../../organisations/newdemocracy.md)'s just-released 2nd edition (PDF, September 2026), with the UN Democracy Fund and UNDP
 
 [^unday]: "In 2007 the United Nations General Assembly resolved to observe 15 September as the International Day of Democracy — with the purpose of promoting and upholding the principles of democracy — and invited all member states and organizations to commemorate the day in an appropriate manner that contributes to raising public awareness." [International Day of Democracy](https://en.wikipedia.org/wiki/International_Day_of_Democracy), Wikipedia.
 
