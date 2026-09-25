@@ -35,31 +35,31 @@ On 15 September, International Day of Democracy,[^unday] DOD and [888 Co-operati
 
 ## The panel
 
-Antony McMullen, 888's chair, moderated. The panellists were:
+Antony McMullen, 888's chair, moderated a panel of four.
 
 ### Nicholas Gruen
 
-CEO of [Lateral Economics](../../organisations/lateral-economics.md), long-time advocate of assemblies chosen by lot, whose current project is [The Shared Centre](https://www.thesharedcentre.com/).[^sharedcentre] He writes on [Substack](https://nicholasgruen.substack.com/).
+Nicholas is CEO of [Lateral Economics](../../organisations/lateral-economics.md) and a long-time advocate of assemblies chosen by lot. His current project is [The Shared Centre](https://www.thesharedcentre.com/),[^sharedcentre] and he writes on [Substack](https://nicholasgruen.substack.com/).
 
 ### Nicole Hunter
 
-Co-founder of [MosaicLab](../../organisations/mosaiclab.md), who led the Yarra Valley Water citizens' jury and co-wrote [*Facilitating Deliberation: A Practical Guide*](https://mosaiclab.com.au/the-big-book) with fellow MosaicLab directors Kimbra White and Keith Greaves.[^mosaicbook]
+Nicole is co-founder of [MosaicLab](../../organisations/mosaiclab.md). She led the Yarra Valley Water citizens' jury and co-wrote [*Facilitating Deliberation: A Practical Guide*](https://mosaiclab.com.au/the-big-book) with fellow MosaicLab directors Kimbra White and Keith Greaves.[^mosaicbook]
 
 ### Anitra Nelson
 
-An activist scholar with the University of Melbourne's [Informal Urbanism Research Hub](https://infur.msd.unimelb.edu.au/), who writes on degrowth, housing and [post-money economies](https://anitranelson.info/beyond-money/). With Vincent Liegey she co-edited the [*Routledge Handbook of Degrowth*](https://anitranelson.info/routledge-handbook-of-degrowth/) (2025). Her other work is at [anitranelson.info](https://anitranelson.info/).
+Anitra is an activist scholar with the University of Melbourne's [Informal Urbanism Research Hub](https://infur.msd.unimelb.edu.au/). She writes on degrowth, housing and [post-money economies](https://anitranelson.info/beyond-money/). With Vincent Liegey she co-edited the [*Routledge Handbook of Degrowth*](https://anitranelson.info/routledge-handbook-of-degrowth/) (2025). Her other work is at [anitranelson.info](https://anitranelson.info/).
 
 ### Godfrey Moase
 
-Co-founder of the energy co-op [CoPower](https://cooperativepower.org.au/) and former Executive Director of the United Workers Union. He writes [The Solidarity Wedge](https://godfreymoase.substack.com/) on Substack.
+Godfrey is co-founder of the energy co-op [CoPower](https://cooperativepower.org.au/) and a former Executive Director of the United Workers Union. He writes [The Solidarity Wedge](https://godfreymoase.substack.com/) on Substack.
 
 ### What drew them to democracy
 
-Antony opened by asking each panellist "what drew you personally to democratic ways of living and being?" Godfrey's answer was cheese pizza, from a night at the Cheese Board Collective, a Berkeley workers' co-op: "I thought, you know what, this is a pretty good way of running the world… sometimes bread can be very persuasive." Anitra's was living in a commune, "and finding that direct democracy can actually work in practice". Nicole's came from years of government engagement work that was, "to be really honest… really boring", until she saw what a deeper process could do: "this has got possibility everywhere". Nicholas started from a warning: "if by democracy you mean the system we have today, this is the system that brought you Donald Trump and Adolf Hitler. So it matters what kind of democracy we have."
+Antony opened by asking each panellist "what drew you personally to democratic ways of living and being?" Godfrey's answer was cheese pizza, from a night at the Cheese Board Collective, a Berkeley workers' co-op: "I thought, you know what, this is a pretty good way of running the world… sometimes bread can be very persuasive." Anitra's was living in a commune, "and finding that direct democracy can actually work in practice". Nicole's came from years of government engagement work that was "to be really honest… really boring", until she saw what a deeper process could do: "this has got possibility everywhere". Nicholas started from a warning: "if by democracy you mean the system we have today, this is the system that brought you Donald Trump and Adolf Hitler. So it matters what kind of democracy we have."
 
 ## "Is tech gonna save us?"
 
-None of the panellists thought technology was the answer. Nicole has watched a fully automated global "deliberation" run by Meta: "you get a time, you fill out a thing, you move on… it is terrifying in my eyes. Because there is no meeting of the minds." Godfrey said technology "displaces social cooperation". The real shortage is time, and the fix is shorter working hours "so that participation is not bounded by privilege". Nicholas questioned the premise that everyone should be involved in everything. We already trust an institution most of us never sit on, the jury: "There needs to be a division of labor."
+None of the panellists thought technology was the answer. Nicole has watched a fully automated global "deliberation" run by Meta: "you get a time, you fill out a thing, you move on… it is terrifying in my eyes. Because there is no meeting of the minds." Godfrey said technology "displaces social cooperation". The real shortage, he said, is time, and the fix is shorter working hours "so that participation is not bounded by privilege". Nicholas questioned the premise that everyone should be involved in everything. As he pointed out, we already trust an institution most of us never sit on, the jury: "There needs to be a division of labor."
 
 ## Inside a citizens' jury
 
@@ -84,13 +84,13 @@ Godfrey made the evening's key historical point almost in passing:
 > "If you read Aristotle's politics, elections weren't in the section on democracy. Elections were in the section on oligarchy."
 > — Godfrey Moase
 
-Nicholas built on it. Elections "separate the governed from the governing". Selection by lot means "people taking turns in governing and being governed, which is exactly what happens in juries". His key distinction is "representation by sampling rather than representation by elections".
+Nicholas built on it. Elections "separate the governed from the governing". Selection by lot means "people taking turns in governing and being governed, which is exactly what happens in juries". His central distinction is "representation by sampling rather than representation by elections".
 
 Several speakers also insisted that shared power needs structure. Antony raised Jo Freeman's [*The Tyranny of Structurelessness*](https://www.jofreeman.com/joreen/tyranny.htm), on how "flat" collectives still had hidden decision-makers. Anitra agreed: "Anarchy is really self-governance. And you have to have processes and they have to be transparent and everything has to be accountable." Godfrey argued that "authority shouldn't be dependent on hierarchy".
 
 ## A standing citizens' assembly, no permission needed
 
-Nicholas's main proposal was a privately funded, standing assembly of around a hundred randomly selected Australians, shadowing federal parliament.
+Nicholas's main proposal was a privately funded standing assembly of around a hundred randomly selected Australians, shadowing federal parliament.
 
 > "No, don't ask for any permission. Just run it, turn people over every six months or two years or whatever you decide."
 > — Nicholas Gruen
@@ -108,7 +108,7 @@ The second half went to the floor. We didn't choose these questions, which makes
 
 This is a standard objection to sortition: any process only includes people alive now, so won't a random jury just vote its own short-term interest? The panel gave four different answers:
 
-- **Give the future a seat.** Nicole described processes, used a lot in Japan she said, where a few participants are asked "to act like you're the future, or to act like you're the trees". "I'm not saying it's perfect."
+- **Give the future a seat.** Nicole described processes, which she said are used a lot in Japan, where a few participants are asked "to act like you're the future, or to act like you're the trees". "I'm not saying it's perfect."
 - **Frame the question.** Anitra said that asking about "a one planet lifestyle" builds future generations into the question from the start.
 - **Change what's being counted.** Nicholas said a jury isn't racing to 51%: "you're saying what can we live with?" He contrasted that with elections framed around "what is in it for me". He drew on Hannah Arendt's point that the secret ballot "leans heavily on the idea of privacy and therefore of the individual rather than the res publica".
 - **Look at the pressure people are under.** Godfrey: "I think capitalism gives democracy a bad name." People who won't vote for a lower quality of life, he said, are scrambling to make a living in a system he called "parasitic upon our present now as well as our future".
@@ -118,11 +118,11 @@ This is a standard objection to sortition: any process only includes people aliv
 > "Do you live in a tiny house? How do you negotiate degrowth? How do you apply it in Melbourne?"
 > — Audience question
 
-An urban planner asked Anitra how degrowth plays out in Melbourne, where "as urban planners we're all grappling with" it. Her answer was more concrete than the word suggests:
+The questioner, an urban planner, called degrowth something "as urban planners we're all grappling with". Anitra's answer was more concrete than the word suggests:
 
 - **Commoning**, meaning shared ownership and care of resources, run through assemblies and working groups.
 - **Universal basic services** that everyone can access, with limits.
-- **Maximum rather than minimum** housing sizes. Planning rules set "the maximum amount of space that people occupy", the reverse of today's minimums.
+- **Maximum rather than minimum** housing sizes. Planning rules would set "the maximum amount of space that people occupy", the reverse of today's minimums.
 - **Enabling rules** that let people build and repair their own homes and grow their own food, rather than rules written for industry.
 
 The aim, she said, is to live "as modestly as we can, but also as convivially as we can". She pointed to [Degrowth Network Australia](https://www.degrowthnetwork.au/), which she said meets online every month, and to Melbourne's Naarm Degrowth.
@@ -132,7 +132,7 @@ The aim, she said, is to live "as modestly as we can, but also as convivially as
 > "How do we move from sitting in a fringe corner talking about what democracy could look like theoretically into something… urgent… how do we do it?"
 > — Audience question
 
-The questioner pointed to the AfD in Germany and One Nation at home, and asked how to get from theory to action. The answers showed the clearest difference between the panellists:
+The questioner pointed to the AfD in Germany and One Nation at home. The answers showed the clearest difference between the panellists:
 
 - **Nicholas**: fund the assembly and "organize collisions" between today's politics and another way of doing it.
 - **Godfrey**: people feeling "a sense of frustration with the system" are offered "a flashing red button that they can hit", and pressing it only reinforces the system. What's missing is organisations that give people something else to do. He was frank about how hard that is. From his own time as a union leader, he said real change means shifting power from leaders like him to rank-and-file delegates, and that's "an incredibly threatening proposition".
@@ -145,9 +145,9 @@ Parliament, the workplace, or capital? The panel didn't settle it.
 > "When we do the first standing citizen assembly in whichever form it is… should it be more broad strokes?"
 > — Audience question
 
-The last question took Nicholas's standing assembly seriously and asked how to start one. Should Australia's first standing assembly shadow parliament as it is now, or be "a vision setting citizens' assembly" asking what Australia should look like in 80 years? The questioner pointed to Taiwan's experiments and to the CPC's long-range goal of an "ecological civilization" in China. And "what would be the smaller citizens' assemblies that we would need to run before we get to like the federal level?"
+The last question picked up Nicholas's proposal and asked how to start one. Should Australia's first standing assembly shadow parliament as it is now, or be "a vision setting citizens' assembly" asking what Australia should look like in 80 years? The questioner pointed to Taiwan's experiments and to the CPC's long-range goal of an "ecological civilization" in China. They also asked "what would be the smaller citizens' assemblies that we would need to run before we get to like the federal level?"
 
-Nicholas's answer was to go federal straight away, and let the assembly set its own agenda:
+Nicholas's answer was to go federal straight away and let the assembly set its own agenda:
 
 > "I'm not arguing for starting small. I'm saying we go to a standing citizen, federal citizen assembly. You ask what should it focus on, I'm going to ask the Citizen Assembly."
 > — Nicholas Gruen
@@ -161,7 +161,7 @@ Basil Varghese, 888's patron, closed with a childhood memory from Kerala. His gr
 > "Tonight we have had four people coming out of their wells and creating and croaking, and now hopefully creating great song."
 > — Basil Varghese
 
-Nicholas has been making the case for juries to DOD since [2017](2017-08-21-podcast.md) and [2020](2020-03-20.md). This time he went a step further: stop asking and run one. With a Victorian election two months away, the open question is who pays for the first one.
+Nicholas made the case for citizens' juries at DOD events in [2017](2017-08-21-podcast.md) and [2020](2020-03-20.md). This time he went a step further: stop asking and run one. With a Victorian election two months away, the open question is who pays for the first one.
 
 ## What you can do
 
@@ -169,13 +169,13 @@ With the Victorian election on 28 November, here are ways to follow up on what t
 
 - **Learn how a citizens' jury actually works.** MosaicLab's [deliberative democracy resource hub](https://mosaiclab.com.au/deliberative-democracy-resource-hub) and Nicole's co-written *Facilitating Deliberation* cover the process she described, from random invitation to the group's own report. For the international view, newDemocracy's handbook on citizens' assemblies is new in a second edition (see In the news below).
 - **See the idea in action.** Nicholas recommended the film [*Goodbye Politicians, Hello Democracy*](https://goodbyepoliticians.movie/), about legislatures of citizens chosen by lottery. His video series at The Shared Centre makes the full case behind his standing-assembly proposal.
-- **Ask your candidates.** Victoria's upper house has already looked at [the case for a citizens' assembly](2026-05-24-vic-upper-house-citizens-assembly.md). Ask every candidate in your electorate whether they'd support one, whoever you vote for.
-- **Read up on horizontal organising.** [*Horizontalism: A degrowth strategy*](https://degrowth.info/en/blog/horizontalism-a-degrowth-strategy), by Vincent Liegey, Anitra Nelson and Terry Leahy, sets out the approach Anitra described on the night. Godfrey's Substack, The Solidarity Wedge, makes the case for rebuilding the labour movement from the rank and file.
+- **Ask your candidates.** A Victorian parliamentary inquiry has already [recommended a citizens' assembly](2026-05-24-vic-upper-house-citizens-assembly.md) to decide Upper House electoral reform. Ask every candidate in your electorate whether they'd support one, whoever you vote for.
+- **Read up on horizontal organising.** [*Horizontalism: A degrowth strategy*](https://degrowth.info/en/blog/horizontalism-a-degrowth-strategy), by Vincent Liegey, Anitra Nelson and Terry Leahy, sets out the approach Anitra described on the night. Godfrey's Substack, The Solidarity Wedge, covers labour-movement strategy and building worker power.
 - **Organise where you already are.** Godfrey's point was that people need organisations that give them something to do. A co-op like CoPower, a union, or a local group is somewhere to start.
 
 ## In the news
 
-The attendee newsletter also flagged these recent developments, which is what's on our radar right now:
+The attendee newsletter also flagged these recent developments. They're what's on our radar right now:
 
 - **newDemocracy's handbook, second edition.** The newDemocracy Foundation has released the second edition of [*Democracy Beyond Elections: A Handbook on Citizens' Assemblies*](https://www.newdemocracy.com.au/wp-content/uploads/2026/09/UNDEF_Handbook-2nd-Edition-Sept-2026.pdf) (PDF, September 2026), produced with the UN Democracy Fund and UNDP.[^undef]
 - **Victoria's community consultation inquiry.** Earlier this year the Legislative Council's Environment and Planning Committee reported on Victoria's community consultation practices, with 28 recommendations. Nicole Hunter's [response for MosaicLab](https://mosaiclab.com.au/news-all-posts/vic-gov-inquiry) asks whether it will shift real practice.[^vicinquiry]
