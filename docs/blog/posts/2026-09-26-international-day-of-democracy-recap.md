@@ -39,27 +39,19 @@ Antony McMullen, 888's chair, moderated. The panellists were:
 
 ### Nicholas Gruen
 
-CEO of [Lateral Economics](../../organisations/lateral-economics.md), long-time advocate of assemblies chosen by lot, whose current project is [The Shared Centre](https://www.thesharedcentre.com/).[^sharedcentre]
-
-**Follow his work:** [Substack](https://nicholasgruen.substack.com/) · The Shared Centre's video series on the deep drivers of political dysfunction · the film he recommended, [*Goodbye Politicians, Hello Democracy*](https://goodbyepoliticians.movie/), about legislatures of citizens chosen by lottery.
+CEO of [Lateral Economics](../../organisations/lateral-economics.md), long-time advocate of assemblies chosen by lot, whose current project is [The Shared Centre](https://www.thesharedcentre.com/).[^sharedcentre] He writes on [Substack](https://nicholasgruen.substack.com/).
 
 ### Nicole Hunter
 
-Co-founder of [MosaicLab](../../organisations/mosaiclab.md), who led the Yarra Valley Water citizens' jury and co-wrote [*Facilitating Deliberation: A Practical Guide*](https://mosaiclab.com.au/the-big-book).[^mosaicbook]
-
-**Follow her work:** MosaicLab's [deliberative democracy resource hub](https://mosaiclab.com.au/deliberative-democracy-resource-hub). Her book is co-written with fellow MosaicLab directors Kimbra White and Keith Greaves.
+Co-founder of [MosaicLab](../../organisations/mosaiclab.md), who led the Yarra Valley Water citizens' jury and co-wrote [*Facilitating Deliberation: A Practical Guide*](https://mosaiclab.com.au/the-big-book) with fellow MosaicLab directors Kimbra White and Keith Greaves.[^mosaicbook]
 
 ### Anitra Nelson
 
-An activist scholar with the University of Melbourne's [Informal Urbanism Research Hub](https://infur.msd.unimelb.edu.au/), who writes on degrowth, housing and [post-money economies](https://anitranelson.info/beyond-money/).
-
-**Follow her work:** [anitranelson.info](https://anitranelson.info/) · *Beyond Money: A Postcapitalist Strategy* (Pluto Press, 2022) · the [*Routledge Handbook of Degrowth*](https://anitranelson.info/routledge-handbook-of-degrowth/) (2025), which she co-edited with Vincent Liegey · [*Horizontalism: A degrowth strategy*](https://degrowth.info/en/blog/horizontalism-a-degrowth-strategy), co-written with Liegey and Terry Leahy (March 2026).
+An activist scholar with the University of Melbourne's [Informal Urbanism Research Hub](https://infur.msd.unimelb.edu.au/), who writes on degrowth, housing and [post-money economies](https://anitranelson.info/beyond-money/). With Vincent Liegey she co-edited the [*Routledge Handbook of Degrowth*](https://anitranelson.info/routledge-handbook-of-degrowth/) (2025). Her other work is at [anitranelson.info](https://anitranelson.info/).
 
 ### Godfrey Moase
 
-Co-founder of the energy co-op CoPower and former Executive Director of the United Workers Union.
-
-**Follow his work:** [The Solidarity Wedge](https://godfreymoase.substack.com/), his Substack on solidarity and labour-movement strategy · [CoPower](https://cooperativepower.org.au/).
+Co-founder of the energy co-op [CoPower](https://cooperativepower.org.au/) and former Executive Director of the United Workers Union. He writes [The Solidarity Wedge](https://godfreymoase.substack.com/) on Substack.
 
 ### What drew them to democracy
 
@@ -175,11 +167,11 @@ Nicholas has been making the case for juries to DOD since [2017](2017-08-21-podc
 
 With the Victorian election on 28 November, here are ways to follow up on what the panel said. Most come from the handbooks and resources the speakers shared with attendees afterwards.
 
-- **Learn how a citizens' jury actually works.** MosaicLab's [deliberative democracy resource hub](https://mosaiclab.com.au/deliberative-democracy-resource-hub) and Nicole's co-written [*Facilitating Deliberation: A Practical Guide*](https://mosaiclab.com.au/the-big-book) cover the process she described, from random invitation to the group's own report. For the international view, the newDemocracy Foundation's [*Democracy Beyond Elections: A Handbook on Citizens' Assemblies*](https://www.newdemocracy.com.au/wp-content/uploads/2026/09/UNDEF_Handbook-2nd-Edition-Sept-2026.pdf) is new in a second edition (see below).
-- **See the idea in action.** Nicholas recommended the film [*Goodbye Politicians, Hello Democracy*](https://goodbyepoliticians.movie/), about legislatures of citizens chosen by lottery. His video series at [The Shared Centre](https://www.thesharedcentre.com/) makes the full case behind his standing-assembly proposal.
+- **Learn how a citizens' jury actually works.** MosaicLab's [deliberative democracy resource hub](https://mosaiclab.com.au/deliberative-democracy-resource-hub) and Nicole's co-written *Facilitating Deliberation* cover the process she described, from random invitation to the group's own report. For the international view, newDemocracy's handbook on citizens' assemblies is new in a second edition (see In the news below).
+- **See the idea in action.** Nicholas recommended the film [*Goodbye Politicians, Hello Democracy*](https://goodbyepoliticians.movie/), about legislatures of citizens chosen by lottery. His video series at The Shared Centre makes the full case behind his standing-assembly proposal.
 - **Ask your candidates.** Victoria's upper house has already looked at [the case for a citizens' assembly](2026-05-24-vic-upper-house-citizens-assembly.md). Ask every candidate in your electorate whether they'd support one, whoever you vote for.
-- **Read up on horizontal organising.** [*Horizontalism: A degrowth strategy*](https://degrowth.info/en/blog/horizontalism-a-degrowth-strategy), by Vincent Liegey, Anitra Nelson and Terry Leahy, sets out the approach Anitra described on the night. Godfrey's Substack, [The Solidarity Wedge](https://godfreymoase.substack.com/), makes the case for rebuilding the labour movement from the rank and file.
-- **Organise where you already are.** Godfrey's point was that people need organisations that give them something to do. A co-op like [CoPower](https://cooperativepower.org.au/), a union, or a local group is somewhere to start.
+- **Read up on horizontal organising.** [*Horizontalism: A degrowth strategy*](https://degrowth.info/en/blog/horizontalism-a-degrowth-strategy), by Vincent Liegey, Anitra Nelson and Terry Leahy, sets out the approach Anitra described on the night. Godfrey's Substack, The Solidarity Wedge, makes the case for rebuilding the labour movement from the rank and file.
+- **Organise where you already are.** Godfrey's point was that people need organisations that give them something to do. A co-op like CoPower, a union, or a local group is somewhere to start.
 
 ## In the news
 
