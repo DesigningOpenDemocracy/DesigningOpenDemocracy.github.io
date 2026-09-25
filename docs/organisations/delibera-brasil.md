@@ -63,7 +63,7 @@ activity:
     checked: 2026-09-17
   rss:
     date: 2026-09-25
-    note: "RSS feed active"
+    note: RSS feed active
     url: https://deliberabrasil.org/feed
     checked: 2026-09-25
 last_checked: '2026-09-17'

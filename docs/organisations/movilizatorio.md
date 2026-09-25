@@ -62,7 +62,7 @@ activity:
     checked: 2026-09-19
   rss:
     date: 2026-09-21
-    note: "Latest post: Movilizatorio es parte de los 100 Nuevos Líderes de Colombia"
+    note: 'Latest post: Movilizatorio es parte de los 100 Nuevos Líderes de Colombia'
     url: https://www.movilizatorio.org/movilizatorio-es-parte-de-los-100-nuevos-lideres-de-colombia/
     checked: 2026-09-25
 last_checked: '2026-09-19'

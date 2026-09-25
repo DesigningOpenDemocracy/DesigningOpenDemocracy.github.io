@@ -56,12 +56,12 @@ activity:
     checked: 2026-09-12
   rss:
     date: 2026-09-25
-    note: "RSS feed active"
+    note: RSS feed active
     url: https://www.aman-palestine.org/rss
     checked: 2026-09-25
   scrape:
     date: 2026-09-22
-    note: "Latest news page scraped"
+    note: Latest news page scraped
     url: https://www.aman-palestine.org/en/activities/
     checked: 2026-09-25
 last_checked: '2026-09-12'

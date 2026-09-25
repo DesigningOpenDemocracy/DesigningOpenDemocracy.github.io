@@ -59,7 +59,7 @@ activity:
     checked: 2026-09-16
   rss:
     date: 2026-09-23
-    note: "Latest post: Unlearning the Past to Propel a New Future"
+    note: 'Latest post: Unlearning the Past to Propel a New Future'
     url: https://civichive.org/unlearning-the-past-to-propel-a-new-future/?utm_source=rss&utm_medium=rss&utm_campaign=unlearning-the-past-to-propel-a-new-future
     checked: 2026-09-25
   url: https://civichive.org/2026-osun-state-governorship-election/?utm_source=rss&utm_medium=rss&utm_campaign=2026-osun-state-governorship-election

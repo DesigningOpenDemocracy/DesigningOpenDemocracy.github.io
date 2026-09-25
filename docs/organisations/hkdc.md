@@ -71,7 +71,7 @@ activity:
     url: https://www.hkdc.us/news
   sitemap:
     date: 2026-09-16
-    note: "Page last modified (from sitemap)"
+    note: Page last modified (from sitemap)
     url: https://www.hkdc.us/sitemap.xml
     checked: 2026-09-25
 last_checked: '2026-09-14'

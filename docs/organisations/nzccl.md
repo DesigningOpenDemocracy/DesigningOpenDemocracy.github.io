@@ -56,7 +56,7 @@ activity:
     checked: 2026-09-19
   rss:
     date: 2026-09-20
-    note: "Latest post: New website features: Your Rights and Laws limiting the OIA"
+    note: 'Latest post: New website features: Your Rights and Laws limiting the OIA'
     url: https://nzccl.org.nz/new-website-features-your-rights-and-laws-limiting-the-oia/
     checked: 2026-09-25
 last_checked: '2026-09-19'

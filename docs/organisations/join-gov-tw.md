@@ -72,7 +72,7 @@ activity:
     checked: 2026-09-17
   rss:
     date: 2026-09-25
-    note: "RSS feed active"
+    note: RSS feed active
     url: https://join.gov.tw/?feed=rss2
     checked: 2026-09-25
 last_checked: '2026-09-17'

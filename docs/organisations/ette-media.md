@@ -54,7 +54,7 @@ activity:
     checked: 2026-09-16
   rss:
     date: 2026-09-24
-    note: "Latest post: The Monthly Booklette: September edition"
+    note: 'Latest post: The Monthly Booklette: September edition'
     url: https://www.ettemedia.com/the-monthly-booklette-september-edition/
     checked: 2026-09-25
 last_checked: '2026-09-16'

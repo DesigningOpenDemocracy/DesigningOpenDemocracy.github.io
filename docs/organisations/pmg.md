@@ -73,7 +73,7 @@ activity:
     checked: 2026-09-25
   scrape:
     date: 2026-09-21
-    note: "Latest news page scraped"
+    note: Latest news page scraped
     url: https://pmg.org.za/blog/
     checked: 2026-09-25
 last_checked: '2026-09-20'

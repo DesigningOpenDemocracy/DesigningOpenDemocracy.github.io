@@ -62,7 +62,7 @@ activity:
     checked: 2026-09-12
   rss:
     date: 2026-09-25
-    note: "RSS feed active"
+    note: RSS feed active
     url: https://citizenos.com/feed
     checked: 2026-09-25
   scrape:
