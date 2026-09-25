@@ -4,22 +4,25 @@
 When the recap ships, link it here.
 
 - **Source transcript:** [`../2026-09-15_DesigningOpenDemocracy_InternationalDayOfDemocracy_labeled.srt`](../2026-09-15_DesigningOpenDemocracy_InternationalDayOfDemocracy_labeled.srt)
-  (speaker-labelled automated transcript, ~1h43m of recorded audio)
+  (speaker-labelled transcript, ~1h43m of recorded audio). Automated first,
+  then reviewed against the audio by hand in commit `2412ad4` (2026-09-26):
+  names and terms fixed, speaker labels fixed, re-cut into sentence-level cues.
 - **Event announcement:** [`docs/blog/posts/2026-08-25-international-day-of-democracy-event.md`](../../docs/blog/posts/2026-08-25-international-day-of-democracy-event.md)
 - **Calendar entries:** `events:` on [`designing-open-democracy.md`](../../docs/organisations/designing-open-democracy.md)
   and [`888-cooperative-causeway.md`](../../docs/organisations/888-cooperative-causeway.md)
-- **Prepared:** 2026-09-25, by Claude Code, from the transcript alone. Nobody
-  checked it against the audio.
+- **Prepared:** 2026-09-25 by Claude Code from the automated transcript.
+  Revised 2026-09-26 against the hand-reviewed transcript: quotes re-read from
+  it and resolved corrections removed from the table below. Compare the two
+  versions in this file's commit history to see what the audio review changed.
 
 ## Read this first: what this document is and isn't
 
-- **It's a map of the recording, not a record of it.** Everything here comes
-  from an automated transcript, and those mishear names, merge speakers and
-  drop words. Every quote below is **transcript-verbatim** (lightly trimmed,
-  with `…` marking cuts). Before any of them appears in a public post, check
-  it against the audio at the timestamp given. The blog convention for
-  podcast posts, "Quotes are reconstructed from an auto-generated transcript —
-  verify against the recording before citing", applies here in full.
+- **It's a map of the recording, not a record of it.** Every quote below is
+  verbatim from the reviewed transcript (lightly trimmed: `…` marks cuts,
+  and fillers like "um"/"uh" and repeated words are dropped without a mark), with a timestamp to find it in the audio. The transcript has been
+  checked against the audio for mis-hearings and speaker attribution, so
+  quotes can be used as they stand. The terms in "Still as transcribed"
+  below are the exception: check those before they go into DOD's own words.
 - **Why it lives here rather than in `internal-heartbeat/` or `docs/heartbeat/`.**
   It is a derived artefact of one recording, so it stays next to its source.
   It holds no DOD editorial judgment (that's `internal-heartbeat/`'s job) and
@@ -42,35 +45,38 @@ When the recap ships, link it here.
 | `Anitra` | Anitra Nelson | Informal Urbanism Research Hub (InfUr-), University of Melbourne |
 | `Godfrey` | Godfrey Moase | Co-founder of CoPower; former Executive Director, United Workers Union |
 | `Audience Q1`–`Q4` | anonymous | Q&A |
-| `Unclear/Crosstalk` | — | usually fragments; ignore |
+| `Unclear/Crosstalk` | — | one cue: an inaudible audience quip (01:30:09) |
 
-**Known labelling errors.** Several short `Nicholas Gruen` fragments sit
-inside Basil's opening (00:01:33–00:01:44) and closing (01:37:47, 01:40:02–01:40:17).
-They are Basil's own words, split off by the diariser. `Audience Q1` at
-00:07:39 and 00:38:25 is almost certainly a panellist or Anthony, not an
-audience member. The real Q1 starts at 01:03:48.
+Speaker labels were fixed in the reviewed transcript. The `Nicholas Gruen`
+fragments that had been split out of Basil's opening and closing now belong to
+Basil. The 00:07:39 line is now Anitra's. The 00:42:47 exchange is now split
+correctly: Nicole says "and this is democracy", and Nicholas adds the 7.30
+Report line.
 
-**Mis-transcriptions to correct before quoting:**
+**Corrected in the reviewed transcript** (no action needed): 888 Co-operative
+Causeway (Basil's spoken "Triple 8" is kept, since that's what he said), Yarra
+Valley Water, Carl Schmitt, Hannah Arendt, *res publica*, Kallistos, Jo
+Freeman, Vincent Liegey (Anitra's degrowth co-editor), CPC (Audience Q4,
+previously "CSEP"), Pauline Hanson.
 
-| Transcript says | Almost certainly | Confidence |
+**Still as transcribed — check before quoting in DOD's own voice:**
+
+| Transcript says | Probably | Confidence |
 |---|---|---|
-| "AAA Cooperative Causeway", "Triple 8" | 888 Co-operative Causeway | certain |
-| "Yarrow Valley Water", "Yarrowilly", "Yarrow Belly" | Yarra Valley Water | certain |
-| "Copower" | CoPower | certain |
-| "Kagil" | Kaggle (Gruen was its chair) | certain |
-| "Carl Schmidt" | Carl Schmitt | certain |
-| "Hannah R. Rent" | Hannah Arendt | certain |
-| "morteen" | Mortein (insect spray) | certain |
-| "raise publica" | *res publica* | certain |
+| "Copower" / "Co-Power" | CoPower (house style for the org name) | high |
 | "the inform. Formal Urbanism Research Hub" | Informal Urbanism Research Hub | high |
-| "Routledge Hangbook of Degrowth" | a degrowth handbook Anitra co-edited — **verify exact title and co-editor** ("Un Saint-Lygie" in the transcript is unrecoverable) | low |
-| "Stating Deliberation A Practice Guide" | a deliberation practice guide Nicole co-authored — **verify title** | low |
-| "Calistos" | probably Kallistos Ware (theologian) — **verify** | medium |
-| "Pope and his son Hugh Pope" | unclear source for the Chesterton line — **verify or drop** | low |
-| "NAM DG Growth" | probably "Naarm Degrowth" (Naarm = Melbourne) — **verify** | medium |
-| "D-Growth Network Australia" | Degrowth Network Australia? — **verify name** | medium |
-| "The Shared Centre" | Gruen's project name as read from his bio — **verify spelling/URL** | medium |
-| "The Solidarity Wedge" | Godfrey's Substack | high |
+| "Routledge Hangbook of Degrowth" (Anthony reading the bio) | a degrowth handbook co-edited with Vincent Liegey (Anitra: "about 35 chapters"). **Verify the exact title** | medium |
+| "Stating Deliberation A Practice Guide" | a deliberation practice guide Nicole co-authored. **Verify the title** | low |
+| "Kallistos" | presumably Kallistos Ware (theologian). **Verify** before naming him in full | medium |
+| "Pope and his son Hugh Pope" | unclear source for the Chesterton line. **Verify or drop** | low |
+| "morteen" | Mortein (insect spray) | certain |
+| "730 report" | *7.30* (ABC) | certain |
+| "AFT elsewhere" (Godfrey) | AfD | high |
+| "D-Growth Network Australia" | Degrowth Network Australia? **Verify the name** | medium |
+| "NAM DG Growth" / "NAM DGrowth" | probably "Naarm Degrowth" (Naarm = Melbourne). **Verify** | medium |
+| "Ceres", "Well Being Alliance" | CERES (Brunswick East); Wellbeing Alliance? **Verify** | medium |
+| "The Shared Centre" | Gruen's project, named as in his bio. **Verify the spelling/URL** | medium |
+| "Labour Party" (Gruen, Godfrey) | Australian Labor Party (spelling) when it's the party; "labour movement" is fine | certain |
 
 ## Run of show
 
@@ -205,9 +211,9 @@ The panel's practical voice: what deliberation actually looks like in the room.
     dental money and became "the best participant I've ever had", still an
     advocate for the organisation.
   - "Just about at every closing session I run… I cry." Participants say
-    "I can make a difference. I am powerful." The transcript gives the next line (00:42:47) to Nicholas, but it may be Nicole continuing, so **check the audio**: "and
-    this is democracy… not the 7.30 Report with Sarah Ferguson trying to trap
-    whoever she's trying to trap that night."
+    "I can make a difference. I am powerful… and this is democracy." Nicholas
+    cuts in (00:42:51): "Not… the 7.30 Report with Sarah Ferguson trying to
+    trap whoever she's trying to trap that night."
 - **"Learning to be free": the mechanics (01:00:04).**
   - Experts are prepared to "let go control": they're a resource and an
     observer, not a participant.
@@ -235,7 +241,7 @@ The panel's practical voice: what deliberation actually looks like in the room.
 - **Money and democracy (00:30:18).** From Latin American history to
   economics, then a PhD on Marx's concept of money. The women's movement
   introduced her to horizontalism: assemblies, working groups,
-  self-governance. Money "generates and makes more complex all of the
+  self-governance. Money "generate and make more complex all of the
   inequities". "Money is about more and less." Ecologically, the average
   Australian consumes at a rate of "about five Earths". **Check this against
   a footprint source if the recap uses it.** Conclusion: "We actually have to
@@ -305,11 +311,11 @@ The panel's practical voice: what deliberation actually looks like in the room.
   quotable systems argument of the night. His radical strategy for the labour
   movement "just died" because it needed a shift in internal power from
   leaders (himself included) to rank-and-file delegates, which is "an
-  incredibly threatening proposition". That led him to a "cybernetic question
-  about organizational design". Radical-right support is a symptom: alienated
+  incredibly threatening proposition". That led him to a "cybernetic question here about organizational
+  design". Radical-right support is a symptom: alienated
   people find "a flashing red button that they can hit… One Nation, and then
-  AfD elsewhere, and Trump". Pressing it "reinforc[es] the existing
-  structures… a brilliantly designed negative feedback loop". "People need
+  [AfD] elsewhere, and Trump". Pressing it means "just reinforcing the
+  existing… structures", a "brilliantly designed negative feedback loop". "People need
   something else that they can do." Note: a loop that *reinforces* the status
   quo is technically a negative (stabilising) feedback loop, so his usage is
   right. Keep his words.
@@ -323,12 +329,12 @@ His framing devices are worth keeping in a recap:
   that" (00:16:59).
 - Jo Freeman's *The Tyranny of Structurelessness* (1970s), which he found
   through Nathan Schneider's co-op work (00:34:25).
-- "We need to learn to be free", attributed to a theologian (probably
-  Kallistos Ware; **verify**) (00:58:29).
+- "We need to learn to be free", attributed to "a theologian
+  Kallistos" (presumably Kallistos Ware; **verify**) (00:58:29).
 - Closing on 888 itself (01:36:40): a small, democratically run, volunteer
   co-working space in the CBD that hosts events like this one.
 
-### Basil Varghese — closing reflection (01:37:48)
+### Basil Varghese — closing reflection (01:37:45)
 
 - Aristotle is "limited… because it's predominantly a Western mind", yet to
   come to terms with Indian or Chinese philosophy.
@@ -353,7 +359,7 @@ His framing devices are worth keeping in a recap:
 | Q1 | Random juries only include the living. Won't they vote their own self-interest against future generations? | Nicole, Anitra, Nicholas, Godfrey | Assign "future voice" roles (Japan); frame questions as one-planet living; juries ask "what can we live with?", not 51%; capitalism, not democracy, is what degrades the good life |
 | Q2 | Degrowth in practice. Tiny houses? Melbourne urban planning? | Anitra | Commoning, universal basic services, maximum dwelling sizes, enabling self-build, local degrowth groups |
 | Q3 | Urgency. Democracy gave us Hitler, Trump, AfD "two weeks ago", One Nation. How do we get from the fringe to action? | Nicholas, Godfrey, Anitra | Fund a standing assembly now (~$2m) and "organize collisions"; build organisations that offer something other than the flashing red button; real power sits with capital |
-| Q4 | What should a first standing assembly focus on: shadowing parliament or long-term vision (Taiwan, China's "ecological civilisation")? Smaller ones first? | Nicholas | Go straight to federal level and let the assembly choose its focus; "radical incrementalism"; Michigan redistricting |
+| Q4 | What should a first standing assembly focus on: shadowing parliament or long-term vision (Taiwan; the CPC's "ecological civilisation" goal)? Smaller ones first? | Nicholas | Go straight to federal level and let the assembly choose its focus; "radical incrementalism"; Michigan redistricting |
 
 Context for Q3: "two weeks ago" matches the 6 September 2026 Saxony-Anhalt
 state election, where the AfD won 43.8%. See
@@ -428,9 +434,9 @@ before assessing any of these.
 Earlier DOD recordings with the same people:
 - Nicholas Gruen: [`2017-08-21` Citizens' Democracy](../../docs/blog/posts/2017-08-21-podcast.md),
   [`2020-03-03` Isegoria](../../docs/blog/posts/2020-03-20.md). He was already
-  arguing "elections destroy isegoria" in 2020. A recap can show how the
-  argument has moved on, from the case for juries to "just run a standing one
-  without permission".
+  arguing in 2020 that elections destroy isegoria. A recap can show how the
+  argument has moved on, from the case for juries to "don't ask for any
+  permission. Just run it".
 - Antony McMullen and Basil Varghese / 888:
   [`2020-02-25` Basil's Table (banking)](../../docs/blog/posts/2020-02-20-podcast.md),
   [`2020-03-27` Beyond CSR](../../docs/blog/posts/2020-06-20-podcast.md),
@@ -443,7 +449,7 @@ Claims made *by speakers*. Either verify them, or attribute them clearly as
 the speaker's view and don't repeat them in DOD's voice:
 
 - [ ] "25–30% of younger people" doubt democracy (Gruen). Find the survey or drop the number.
-- [ ] "$12bn, maybe $15bn" a year in tax from the carbon-price repeal (Gruen's own estimate). Attribute only.
+- [ ] "$12 billion… it may be $15 billion" a year in tax from the carbon-price repeal (Gruen's own estimate). Attribute only.
 - [ ] "$10 million" vs "two million… six months to a year" standing-assembly costs (Gruen). Report both with their scope.
 - [ ] Victorian juries: "nine out of twelve"? (Gruen was unsure himself.) Check the *Juries Act 2000* (Vic) majority-verdict rules, or cut.
 - [ ] Michigan redistricting commission: 13 members, founded by citizen initiative (Proposal 2, 2018); the poll figures of 92% Democrats / 88% Republicans; the founder's name (Katie Fahey, not "Nicole").
