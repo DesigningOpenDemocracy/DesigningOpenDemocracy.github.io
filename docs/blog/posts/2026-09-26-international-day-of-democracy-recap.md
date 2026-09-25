@@ -43,22 +43,11 @@ CEO of [Lateral Economics](../../organisations/lateral-economics.md), long-time 
 
 **Follow his work:** [Substack](https://nicholasgruen.substack.com/) · The Shared Centre's video series on the deep drivers of political dysfunction · the film he recommended, [*Goodbye Politicians, Hello Democracy*](https://goodbyepoliticians.movie/), about legislatures of citizens chosen by lottery.
 
-**Also on the night:**
-
-- His example of what one could do: had a standing assembly existed in 2013, the prime minister set on abolishing carbon pricing would have faced "a bigger challenge on his hands than getting through a 10-minute radio interview".
-- On the media, he said competitive coverage does to politics "what happens to a fly when you spray Mortein on it… you dissolve its nervous system". On deliberation, he said "we evolved on the African savannah to do that".
-- He was generous to leaders who have used one-off assemblies and then struggled with the recommendations: "I'm not telling you this story on the basis that Emmanuel Macron is a bad guy. He's facing a bunch of incentives."
-
 ### Nicole Hunter
 
 Co-founder of [MosaicLab](../../organisations/mosaiclab.md), who led the Yarra Valley Water citizens' jury and co-wrote [*Facilitating Deliberation: A Practical Guide*](https://mosaiclab.com.au/the-big-book).[^mosaicbook]
 
 **Follow her work:** MosaicLab's [deliberative democracy resource hub](https://mosaiclab.com.au/deliberative-democracy-resource-hub). Her book is co-written with fellow MosaicLab directors Kimbra White and Keith Greaves.
-
-**Also on the night:**
-
-- What moves her is how much participants commit. People have taken part in juries from hospital while their wife was having a baby, and through dialysis and cancer treatment: "It's that commitment to something that they believe is bigger than them and that they're making a difference in the world."
-- Closing sessions still move her after hundreds of processes, "because you see the shift in people. They are like, I can make a difference. I am powerful."
 
 ### Anitra Nelson
 
@@ -66,21 +55,11 @@ An activist scholar with the University of Melbourne's [Informal Urbanism Resear
 
 **Follow her work:** [anitranelson.info](https://anitranelson.info/) · *Beyond Money: A Postcapitalist Strategy* (Pluto Press, 2022) · the [*Routledge Handbook of Degrowth*](https://anitranelson.info/routledge-handbook-of-degrowth/) (2025), which she co-edited with Vincent Liegey · [*Horizontalism: A degrowth strategy*](https://degrowth.info/en/blog/horizontalism-a-degrowth-strategy), co-written with Liegey and Terry Leahy (March 2026).
 
-**Also on the night:**
-
-- She did her PhD on Marx's concept of money: "Money is about more and less." She said the average Australian consumes at the rate of "about five Earths", so "we actually have to be more democratic".
-- Her example of big decisions made without the public was the recent wave of data centres, where people asked how they never knew it was coming: "we don't know things are going to happen because we're never involved". She also noted that 15 September was the fifth anniversary of [AUKUS](https://en.wikipedia.org/wiki/AUKUS), another decision made far from the public.
-
 ### Godfrey Moase
 
 Co-founder of the energy co-op CoPower and former Executive Director of the United Workers Union.
 
 **Follow his work:** [The Solidarity Wedge](https://godfreymoase.substack.com/), his Substack on solidarity and labour-movement strategy · [CoPower](https://cooperativepower.org.au/).
-
-**Also on the night:**
-
-- He said CoPower was set up "as an intervention in the market to try and eat the market" and return value to the commons. Electricity retailers' advertising, he noted, is a cost passed through to customers' bills.
-- He said the best leadership sits "on the border between systems", translating between, say, an ecosystem and a village.
 
 ### How they got here
 

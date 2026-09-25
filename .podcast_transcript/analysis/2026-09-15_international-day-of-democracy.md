@@ -451,6 +451,39 @@ Earlier DOD recordings with the same people:
   [`2022-12-06` Basil's Table (tech bros)](../../docs/blog/posts/2023-01-21-podcast.md).
   MosaicLab also came up at the [`2020-02-21` Primer](../../docs/blog/posts/2022-02-24-podcast.md) (Kimbra White).
 
+## Memorable quotes (cut from the recap for length)
+
+These were in the recap's per-speaker notes before they were trimmed. They're
+verbatim from the checked transcript, with fillers dropped. Timestamps mark
+the cue where each starts.
+
+- **Nicholas Gruen**
+  - (01:22:08) Had a standing assembly existed in 2013, abolishing carbon
+    pricing would have been "a bigger challenge on his hands than getting
+    through a 10-minute radio interview".
+  - (00:54:59) Competitive media does to politics "what happens to a fly when
+    you spray Mortein on it… you dissolve its nervous system".
+  - (00:55:38) On deliberation: "we evolved on the African savannah to do that".
+  - (01:23:09) On leaders who ran one-off assemblies: "I'm not telling you this
+    story on the basis that Emmanuel Macron is a bad guy. He's facing a bunch of
+    incentives."
+- **Nicole Hunter**
+  - (00:15:37) On participants: "It's that commitment to something that they
+    believe is bigger than them and that they're making a difference in the
+    world."
+  - (00:42:34) On closing sessions: "because you see the shift in people. They
+    are like, I can make a difference. I am powerful."
+- **Anitra Nelson**
+  - (00:33:15) "Money is about more and less."
+  - (00:33:24) The average Australian consumes at the rate of "about five
+    Earths". This is her figure and hasn't been verified.
+  - (01:28:24) On data centres: "we don't know things are going to happen
+    because we're never involved".
+- **Godfrey Moase**
+  - (00:44:31) CoPower was set up "as an intervention in the market to try and
+    eat the market".
+  - (00:48:26) The best leadership sits "on the border between systems".
+
 ## Reference details (for this and future analysis)
 
 Background on the people, works and groups named on the night, gathered while
