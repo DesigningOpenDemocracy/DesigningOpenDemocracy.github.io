@@ -59,7 +59,7 @@ Antony opened by asking each panellist "what drew you personally to democratic w
 
 ## "Is tech gonna save us?"
 
-Nobody thought so. Nicole has watched a fully automated global "deliberation" run by Meta: "you get a time, you fill out a thing, you move on… it is terrifying in my eyes. Because there is no meeting of the minds." Godfrey said technology "displaces social cooperation". The real shortage is time, and the fix is shorter working hours "so that participation is not bounded by privilege". Nicholas questioned the premise that everyone should be involved in everything. We already trust an institution most of us never sit on, the jury: "There needs to be a division of labor."
+None of the panellists thought technology was the answer. Nicole has watched a fully automated global "deliberation" run by Meta: "you get a time, you fill out a thing, you move on… it is terrifying in my eyes. Because there is no meeting of the minds." Godfrey said technology "displaces social cooperation". The real shortage is time, and the fix is shorter working hours "so that participation is not bounded by privilege". Nicholas questioned the premise that everyone should be involved in everything. We already trust an institution most of us never sit on, the jury: "There needs to be a division of labor."
 
 ## Inside a citizens' jury
 
@@ -67,8 +67,8 @@ Nicole walked through the Yarra Valley Water jury:
 
 - A random draw of customers, stratified to be "a mini version of the customers in the room". A personal invitation works better than a public notice.
 - At least six days together, half of it learning, with participants picking their own speakers.
-- A minimum-wage stipend. One woman who signed up for dental money became "the best participant I've ever had".
-- Participants write their own report, which the utility includes "to the maximum extent possible" in its price submission to the regulator.
+- A minimum-wage stipend. In one process, for an energy organisation, a woman who signed up for the money to pay for dental work became "the best participant I've ever had".
+- Participants write their own report, and the utility commits to including it "to the maximum extent possible" in its price submission to the regulator.
 
 Antony asked how people chosen by lot "learn to be free" (a line from the theologian Kallistos Ware[^ware]) without being steered. Nicole described experts told to "let go control", learning built up from pairs to the whole room, and "speed dialogue… like speed dating, but better". Then comes the step she won't hand over:
 
@@ -86,7 +86,7 @@ Godfrey made the evening's key historical point almost in passing:
 
 Nicholas built on it. Elections "separate the governed from the governing". Selection by lot means "people taking turns in governing and being governed, which is exactly what happens in juries". His key distinction is "representation by sampling rather than representation by elections".
 
-Every speaker also insisted that shared power needs structure. Antony raised Jo Freeman's [*The Tyranny of Structurelessness*](https://www.jofreeman.com/joreen/tyranny.htm), on how "flat" collectives still had hidden decision-makers. Anitra agreed: "Anarchy is really self-governance. And you have to have processes and they have to be transparent and everything has to be accountable." Godfrey argued that "authority shouldn't be dependent on hierarchy".
+Several speakers also insisted that shared power needs structure. Antony raised Jo Freeman's [*The Tyranny of Structurelessness*](https://www.jofreeman.com/joreen/tyranny.htm), on how "flat" collectives still had hidden decision-makers. Anitra agreed: "Anarchy is really self-governance. And you have to have processes and they have to be transparent and everything has to be accountable." Godfrey argued that "authority shouldn't be dependent on hierarchy".
 
 ## A standing citizens' assembly, no permission needed
 
