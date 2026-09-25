@@ -41,7 +41,7 @@ On 15 September, International Day of Democracy,[^unday] DOD and [888 Co-operati
 
 - **Nicholas Gruen**, CEO of [Lateral Economics](../../organisations/lateral-economics.md), and a long-time advocate of citizens' juries and assemblies chosen by lot. His current project is [The Shared Centre](https://www.thesharedcentre.com/).[^sharedcentre]
 - **Nicole Hunter**, co-founder and Managing Director of [MosaicLab](../../organisations/mosaiclab.md), who led the Yarra Valley Water citizens' jury. She co-wrote MosaicLab's [*Facilitating Deliberation: A Practical Guide*](https://mosaiclab.com.au/the-big-book).[^mosaicbook]
-- **Anitra Nelson**, an activist scholar with the University of Melbourne's [Informal Urbanism Research Hub](https://infur.msd.unimelb.edu.au/), who writes on degrowth, housing and post-money economies
+- **Anitra Nelson**, an activist scholar with the University of Melbourne's [Informal Urbanism Research Hub](https://infur.msd.unimelb.edu.au/), who writes on degrowth, housing and [post-money economies](https://anitranelson.info/beyond-money/)
 - **Godfrey Moase**, co-founder of the energy co-op CoPower and former Executive Director of the United Workers Union
 
 The event was timed for the run-up to Victoria's state election on 28 November.[^vicelection]

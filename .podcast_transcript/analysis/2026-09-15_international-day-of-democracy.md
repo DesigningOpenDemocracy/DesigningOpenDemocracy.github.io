@@ -79,7 +79,7 @@ previously "CSEP"), Pauline Hanson.
 | "morteen" | Mortein (insect spray) | certain |
 | "730 report" | *7.30* (ABC) | certain |
 | "AFT elsewhere" (Godfrey) | AfD | high |
-| "Well Being Alliance" | Wellbeing Alliance? **Verify** | medium |
+| "Well Being Alliance" | probably the Wellbeing Economy Alliance (WEAll); hub unspecified. See Reference details | medium |
 | "Labour Party" (Gruen, Godfrey) | Australian Labor Party (spelling) when it's the party; "labour movement" is fine | certain |
 
 ## Run of show
@@ -493,11 +493,20 @@ from each page's raw text unless noted.
   (2020). That book is co-*written* by the same pair ("Written by spokesperson
   for the French and international degrowth movements Vincent Liegey and
   Australian degrowth activist-scholar Anitra Nelson").
-- *Beyond Money: A Postcapitalist Strategy*, from the bio. Not yet checked.
+- [*Beyond Money: A Postcapitalist Strategy*](https://anitranelson.info/beyond-money/)
+  (Pluto Press, 20 January 2022; free PDF via Knowledge Unlatched). Her site
+  says it "argues for it [money] to be abolished, rather than repurposed, to
+  achieve a postcapitalist future". That's the background to her money answer
+  (00:30:18) and her PhD on Marx's concept of money. It's linked from the
+  recap's bio line as "post-money economies".
 - Groups she named: [Degrowth Network Australia](https://www.degrowthnetwork.au/)
   ("Towards a sustainable and just economy that works for us!"; she said it
   meets online monthly), and Naarm Degrowth (Melbourne), which runs "festivals
-  in series". "Well Being Alliance" is still unconfirmed.
+  in series". "Well Being Alliance" is
+  most likely the Wellbeing Economy Alliance (WEAll). Anitra has reshared
+  [WEAll Aotearoa NZ](https://www.linkedin.com/company/wellbeing-economy-alliance-aotearoa-nz/)
+  on LinkedIn (Brian, 2026-09-26). She didn't say which WEAll hub, so the
+  transcript keeps her words, and a recap shouldn't name a specific hub.
 
 **Antony McMullen's "learn to be free"**
 - Kallistos Ware, *How to Study Theology*: "If I was asked by my students of
@@ -535,7 +544,7 @@ the speaker's view and don't repeat them in DOD's voice:
 - [ ] Samuel Johnson, "Reason dies alone" (Godfrey). Verify the attribution.
 - [x] ~~Anitra's degrowth handbook~~: *Routledge Handbook of Degrowth* (2025), co-edited with Vincent Liegey — confirmed on anitranelson.info.
 - [x] Nicole's book: *Facilitating Deliberation: A Practical Guide* (MosaicLab). Confirmed.
-- [ ] *Beyond Money* (Anitra's bio). Still to verify.
+- [x] *Beyond Money: A Postcapitalist Strategy* (Pluto Press, 2022). Confirmed.
 - [ ] Yarra Valley Water citizens' jury. Link a public source (YVW or MosaicLab case study) for the six days, stratified selection and price submission.
 
 ## Notes for the recap post itself
