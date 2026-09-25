@@ -159,5 +159,6 @@ MosaicLab's pro-bono arm provides each recipient project **$5,000** toward costs
 - [Consensus Mapping](../concepts/consensus-mapping.md)
 - [DemocracyCo](democracyco.md)
 - [Designing Open Democracy 2020 Primer](../../blog/posts/2022-02-24-podcast.md) — Kimbra White from MosaicLab appeared at this DOD meetup
+- [Democracy beyond the ballot box: recap of our International Day of Democracy panel](../../blog/posts/2026-09-26-international-day-of-democracy-recap.md) — Nicole Hunter on how a citizens' jury is run, from random invitation to the group writing its own report, 2026
 
 [^mosaiclab]: "Kimbra co-founded MosaicLab in 2013 and sees the group as a platform for continuous learning about participation." [Kimbra White](https://mosaiclab.com.au/news-all-posts/2016/8/16/meet-a-co-founder-kimbra-white) co-founder bio. See also Nicole Hunter and Keith Greaves bios.
