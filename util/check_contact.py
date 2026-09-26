@@ -688,19 +688,43 @@ def main():
 
         print(f"  [{i:3d}/{len(orgs)}] {slug} … ", end="", flush=True)
         found = probe_contact(org["website"], timeout=args.timeout, session=session)
-        results.append({"slug": slug, **found})
         state[slug] = {"checked": TODAY}
         save_state(state)
+
+        # A field that's already set is never overwritten without --force (see
+        # module docstring) — but if the probe's own finding disagrees with
+        # what's on file, that disagreement produces no write and therefore no
+        # git diff for anyone to notice later. Flag it here instead (and carry
+        # it into --output JSON) so a human or an LLM doing a deliberate
+        # review pass has something to act on without cross-referencing the
+        # file by hand. Phone is only flagged at high confidence (a tel: link)
+        # — the free-text phone regex has too many real false positives (see
+        # module docstring) to flag every disagreement without drowning
+        # genuine ones in noise.
+        conflicts = {}
+        if found["email"] and existing.get("email") and existing["email"] != found["email"]:
+            conflicts["email"] = existing["email"]
+        if (found["phone"] and found["phone_confidence"] == "high"
+                and existing.get("phone") and existing["phone"] != found["phone"]):
+            conflicts["phone"] = existing["phone"]
+        if found["form"] and existing.get("form") and existing["form"] != found["form"]:
+            conflicts["form"] = existing["form"]
+        results.append({"slug": slug, **found, "conflicts": conflicts})
 
         parts = []
         if found["email"]:
             tag = "" if found["email_confidence"] == "high" else " [low-confidence, verify manually]"
+            if "email" in conflicts:
+                tag += f" [CONFLICTS with existing: {conflicts['email']} — verify manually]"
             parts.append(f"email={found['email']}{tag}")
         if found["phone"]:
             tag = "" if found["phone_confidence"] == "high" else " [low-confidence, verify manually]"
+            if "phone" in conflicts:
+                tag += f" [CONFLICTS with existing: {conflicts['phone']} — verify manually]"
             parts.append(f"phone={found['phone']}{tag}")
         if found["form"]:
-            parts.append(f"form={found['form']}")
+            tag = f" [CONFLICTS with existing: {conflicts['form']} — verify manually]" if "form" in conflicts else ""
+            parts.append(f"form={found['form']}{tag}")
         new_channel_types = set(found["channels"]) - existing_channel_types
         for channel_type in sorted(new_channel_types):
             parts.append(f"{channel_type}={found['channels'][channel_type]} [verify it's this org's own account, not a shared parent's]")
