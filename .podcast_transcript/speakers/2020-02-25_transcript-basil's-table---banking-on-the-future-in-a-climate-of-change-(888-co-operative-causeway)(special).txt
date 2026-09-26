@@ -1,0 +1,68 @@
+# Speaker map: Basil's Table, banking (25 February 2020)
+# Best-effort, from contextual clues; not audio-checked. Three main voices:
+# Antony McMullen (MC; "My name is Antony" at 10), Basil Varghese (host of the
+# conversation; takes the mic at 94) and Rowan Dowland of Bank Australia
+# (answers "Thanks, Basil" at 119). Audience questioners stay [Audience],
+# including one named on the recording.
+
+@ 1 Antony McMullen
+@ 12 Audience?                   # "Who thought of that?"
+@ 13 Antony McMullen
+@ 72 Audience
+@ 73 Antony McMullen
+@ 94 Basil Varghese
+@ 101 Audience                   # sound check
+@ 102 Basil Varghese
+@ 104 Audience
+@ 105 Basil Varghese
+@ 119 Rowan Dowland              # "Thanks, Basil"
+@ 239 Basil Varghese?            # "What? That's amazing." (average age 34)
+@ 241 Rowan Dowland
+@ 262 Unidentified               # "The meaning of life, really."
+@ 263 Rowan Dowland
+@ 269 Basil Varghese             # no mutuals at the Royal Commission
+@ 270 Rowan Dowland
+@ 322 Basil Varghese?
+@ 323 Rowan Dowland              # turns the question on Basil
+@ 333 Basil Varghese             # "the pursuit of wealth for the sake of wealth… is obscene"
+@ 374 Rowan Dowland?             # "We go." (Bank Australia does fund homelessness work)
+@ 375 Basil Varghese
+@ 418 Rowan Dowland              # "can I give you some hope?"
+@ 420 Basil Varghese
+@ 421 Rowan Dowland?
+@ 422 Basil Varghese             # young people, circles of elders
+@ 449 Rowan Dowland?             # "a troubled egg when it comes to technology"
+@ 452 Basil Varghese?            # "Oh, good. Okay."
+@ 454 Rowan Dowland              # from community to movement; housing
+@ 526 Basil Varghese             # "Yeah, but don't retire."
+@ 528 Rowan Dowland              # Italy
+@ 529 Antony McMullen            # opens the floor
+@ 534 Audience                   # a bank for kids?
+@ 539 Rowan Dowland
+@ 541 Basil Varghese?            # "a friend of mine wanted to do that"
+@ 542 Rowan Dowland
+@ 590 Antony McMullen
+@ 593 Audience                   # the $75,000 credit-union loan
+@ 622 Antony McMullen
+@ 623 Audience
+@ 624 Antony McMullen
+@ 625 Audience
+@ 626 Antony McMullen?
+@ 628 Audience                   # how do you keep purpose?
+@ 634 Rowan Dowland
+@ 659 Audience
+@ 660 Rowan Dowland
+@ 661 Audience
+@ 663 Rowan Dowland
+@ 666 Audience                   # is co-operation taught in schools?
+@ 672 Rowan Dowland
+@ 722 Antony McMullen
+@ 726 Audience                   # how do we expand the model fast?
+@ 730 Rowan Dowland
+@ 748 Basil Varghese             # closing thanks and one last question
+@ 759 Rowan Dowland              # word of mouth; "we want nothing from you"
+@ 783 Basil Varghese             # the Power of Five
+@ 787 Rowan Dowland
+@ 790 Antony McMullen
+@ 793 Audience                   # "Five."
+@ 794 Antony McMullen

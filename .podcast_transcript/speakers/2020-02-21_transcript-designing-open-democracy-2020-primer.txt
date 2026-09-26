@@ -1,0 +1,75 @@
+# Speaker map: DOD 2020 Primer (21 February 2020)
+# Best-effort, from contextual clues; not audio-checked. Brian and Alexar
+# present from slides; Kimbra White (MosaicLab) and Willow Berzin (Coalition
+# of Everyone) speak from the audience and are identified by what they
+# describe. Other questioners stay [Audience].
+
+@ 1 Brian Khuu                   # "I'm your host, Brian Koo"
+@ 13 Alexar Pendashteh           # runs the show of hands
+@ 35 Brian Khuu
+@ 40 Alexar Pendashteh           # "for the sake of those who are just listening"
+@ 49 Brian Khuu
+@ 55 Alexar Pendashteh?          # "MiVote wasn't a party"
+@ 59 Brian Khuu
+@ 66 Alexar Pendashteh?          # "we're lucky to have Kimbra with us"
+@ 68 Kimbra White                # MosaicLab's juries since 2014
+@ 73 Alexar Pendashteh?
+@ 74 Audience
+@ 77 Kimbra White
+@ 80 Audience
+@ 81 Kimbra White
+@ 87 Audience
+@ 88 Kimbra White                # Australia Post database
+@ 93 Audience
+@ 94 Kimbra White
+@ 98 Brian Khuu                  # introduces Willow
+@ 101 Willow Berzin
+@ 105 Unidentified               # knows about CoE's festival events
+@ 106 Willow Berzin
+@ 110 Alexar Pendashteh?
+@ 112 Willow Berzin
+@ 115 Alexar Pendashteh?
+@ 118 Willow Berzin
+@ 119 Alexar Pendashteh?
+@ 121 Willow Berzin
+@ 125 Alexar Pendashteh?
+@ 127 Willow Berzin              # "You have to do it, then you get it"
+@ 136 Alexar Pendashteh          # collaborate on the August workshop
+@ 142 Brian Khuu                 # participatory budgeting
+@ 144 Kimbra White
+@ 145 Brian Khuu
+@ 146 Alexar Pendashteh?         # "Is Kimbra speaking, yeah?" (for the recording)
+@ 147 Kimbra White               # PB: Brazil, the UK, Pick My Project, Melville
+@ 167 Brian Khuu?
+@ 169 Kimbra White
+@ 179 Alexar Pendashteh          # SOUP
+@ 185 Audience?                  # the Kinfolk café
+@ 188 Alexar Pendashteh
+@ 193 Kimbra White
+@ 197 Alexar Pendashteh
+@ 203 Brian Khuu                 # October workshop; "Bank the Table"
+@ 207 Kimbra White
+@ 208 Brian Khuu
+@ 209 Kimbra White
+@ 211 Brian Khuu
+@ 216 Alexar Pendashteh          # the foundation proposal
+@ 255 Brian Khuu
+@ 256 Alexar Pendashteh
+@ 262 Brian Khuu?
+@ 263 Alexar Pendashteh
+@ 270 Brian Khuu
+@ 273 Kimbra White               # "I don't know enough. I'm sorry"
+@ 276 Audience
+@ 277 Brian Khuu?
+@ 279 Alexar Pendashteh?
+@ 281 Audience?
+@ 283 Brian Khuu
+@ 285 Audience
+@ 286 Brian Khuu
+@ 289 Alexar Pendashteh?
+@ 290 Brian Khuu
+@ 295 Alexar Pendashteh
+@ 296 Brian Khuu?
+@ 297 Alexar Pendashteh?
+@ 306 Brian Khuu?
+@ 311 Brian Khuu                 # outro narration
