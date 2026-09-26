@@ -71,19 +71,32 @@ events:
   notable: false
   type: assembly
   location: Woden Valley Uniting Church, Curtin ACT
+- date: '2027-06-19'
+  title: Festival of ACT Democracy 2027 — multi-day event concluding the 2026 Re-imagining
+    Governance for the ACT series
+  url: https://canberra-alliance.org.au/event/festival-of-act-democracy-2027/
+  quote: bring together, sort and prioritise all the ideas that have come up during
+    the 2026 Re-imagining Governance for the ACT event series
+  proof_level: high
+  url_checked: '2026-09-26'
+  end_date: '2027-06-21'
+  notable: medium
+  notable_reason: Multi-day festival concluding the 2026 governance series
+  type: festival
 activity:
   dod:
-    date: 2026-09-12
-    note: Website confirmed active; Kitchen Table Conversations, Genuine Engagement
-      Tool, MP priorities report current.
+    date: 2026-09-26
+    note: Site confirmed active; added a genuinely new event (Festival of ACT Democracy
+      2027) found on its own events page — the other three events checked were already
+      tracked.
     url: https://canberra-alliance.org.au
-    checked: 2026-09-12
+    checked: 2026-09-26
   rss:
     checked: 2026-09-25
     date: 2026-01-03
     note: 'Latest post: Redescribing Democracy: a Review'
     url: https://canberra-alliance.org.au/redescribing-democracy-a-review/?utm_source=rss&utm_medium=rss&utm_campaign=redescribing-democracy-a-review
-last_checked: '2026-09-12'
+last_checked: '2026-09-26'
 ---
 
 CAPaD is an ACT-based community organisation founded in 2015, focused on making elected representatives more accountable and democratic participation more meaningful for Canberra residents. It is independently funded — not by political parties, government, or corporations — and run by a voluntary committee.

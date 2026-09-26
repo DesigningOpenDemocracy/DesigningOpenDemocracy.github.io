@@ -44,12 +44,13 @@ events:
   url_checked: '2026-08-17'
 activity:
   dod:
-    date: 2026-09-12
-    note: Direct fetch returned 503/connection reset; websearch corroborates active
-      recent programming, incl. a Seedbed Seminar 'War Against Humanity' held 20-24
-      July 2026 at CIDECI-UniTierra.
-    url: https://seminarioscideci.org
-    checked: 2026-09-12
+    date: 2026-09-26
+    note: 'The seminarioscideci.org site itself looks stale (no visible content newer
+      than ~2019), but the venue/network is confirmed active via Enlace Zapatista:
+      hosted a Zapatista Sixth Commission seminar there 20-24 Jul 2026 — recorded
+      as confirmed active on that basis, not the tracked site''s own freshness.'
+    url: https://enlacezapatista.ezln.org.mx/2026/08/17/semillero-guerra-contra-la-humanidad-las-poblaciones-y-la-naturaleza-bajo-asedio-del-20-al-de-julio-de-2026-cideci-unitierra-chiapas-mexico/
+    checked: 2026-09-26
   rss:
     date: 2019-06-03
     note: 'Latest post: Conversatorio con Rita Segato y Raúl Zibechi'
@@ -59,7 +60,7 @@ activity:
     checked: 2026-08-09
     date: 2024-05-21
     note: Page last modified (from sitemap)
-last_checked: '2026-09-12'
+last_checked: '2026-09-26'
 ---
 
 The Centro Indígena de Capacitación Integral – Universidad de la Tierra (CIDECI-Unitierra) is an indigenous education and documentation centre based in San Cristóbal de las Casas, Chiapas. It operates in close alignment with the Zapatista autonomous communities and serves as the primary hub for the Zapatista *Escuelitas* (Little Schools) — structured learning exchanges in which participants live with Zapatista families and study the autonomous governance system directly.

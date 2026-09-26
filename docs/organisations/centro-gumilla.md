@@ -42,18 +42,18 @@ events:
   url_checked: '2026-08-17'
 activity:
   dod:
-    date: 2026-09-12
-    note: Website confirmed active; recent 2026 posts on civic participation and political-moment
-      forums in Lara/Caracas.
+    date: 2026-09-26
+    note: Site confirmed active with August 2026 news; mission (Jesuit social research,
+      community participation, political formation) unchanged.
     url: https://gumilla.org
-    checked: 2026-09-12
+    checked: 2026-09-26
   rss:
     date: 2026-08-21
     note: 'Latest post: 80 educadores del Zulia fortalecieron sus competencias en
       participación ciudadan'
     url: https://gumilla.org/80-educadores-del-zulia-se-forman-en-participacion-ciudadana/
     checked: 2026-09-25
-last_checked: '2026-09-12'
+last_checked: '2026-09-26'
 ---
 
 > **Note on scope:** Centro Gumilla meets DOD criteria as an independent research organisation studying governance mechanisms — not because Venezuela's national political system does. Maduro's Venezuela clearly fails the good-faith test; Centro Gumilla is included as a credible independent analyst operating inside that context.

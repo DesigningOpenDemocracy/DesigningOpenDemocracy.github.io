@@ -50,17 +50,17 @@ events:
   notable: false
 activity:
   dod:
-    date: 2026-09-12
-    note: Site returns a Cloudflare challenge to scripted fetches; websearch corroborates
-      the party is actively registering for 2026 state elections (Victoria, NSW).
+    date: 2026-09-26
+    note: Direct fetch 403-blocked; corroborated via web search — Keep the Bastards
+      Honest podcast and Substack newsletter both carry 2026 posts.
     url: https://democrats.org.au
-    checked: 2026-09-12
+    checked: 2026-09-26
   rss:
     checked: 2026-06-08
     date: 2026-05-24
     note: 'Latest post: We took part in a Facebook Q&A'
     url: https://www.democrats.org.au/posts/6v15DUfhxyWNVoSqBBFje4/we-took-part-in-a-facebook-q-a
-last_checked: '2026-09-12'
+last_checked: '2026-09-26'
 ---
 
 The Australian Democrats were originally founded in 1977 by Don Chipp with the stated aim to "keep the bastards honest" — a positioning as a principled centrist force holding the major parties accountable. The party held the balance of power in the Senate for many years before collapsing around 2008. It has since been re-established and is rebuilding a presence at state and federal levels.

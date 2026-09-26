@@ -58,17 +58,19 @@ activity:
     date: 2026-06-07
     note: directly known to be operating by a dod person
   dod:
-    date: 2026-09-12
-    note: Website confirmed active; co-working space, events, podcast, membership
-      all current.
+    date: 2026-09-26
+    note: Site and contact confirmed current, but own events page shows nothing upcoming
+      and no dated news since June 2024 — weaker activity signal than the podcast/space's
+      continued existence suggests; not enough to change status, worth a closer look
+      on a future pass.
     url: https://www.888causeway.coop
-    checked: 2026-09-12
+    checked: 2026-09-26
   rss:
     checked: 2026-09-25
     date: 2019-06-26
     note: 'Latest post: Corner and connect'
     url: https://www.888causeway.coop/corner-and-connect/
-last_checked: '2026-09-12'
+last_checked: '2026-09-26'
 ---
 
 888 Co-operative Causeway is a not-for-profit member-run co-working space at Level 5, 306 Little Collins Street, Melbourne — the first registered co-operative co-working space in Victoria, founded in 2018. It describes itself as "a network of micro-organisations and freelancers active in the social economy."

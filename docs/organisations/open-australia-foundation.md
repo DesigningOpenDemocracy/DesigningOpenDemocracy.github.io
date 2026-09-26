@@ -3,13 +3,13 @@ title: OpenAustralia Foundation
 type: civic tech
 status: active
 country: AU
-website: https://www.openaustraliafoundation.org.au
+website: https://oaf.org.au
 logo: /assets/org-logos/open-australia-foundation.png
 contact:
   checked: 2026-08-01
   email: contact@oaf.org.au
-  form: https://www.openaustraliafoundation.org.au/contact
-  source: https://www.openaustraliafoundation.org.au/contact-us
+  form: https://oaf.org.au/contact
+  source: https://oaf.org.au/contact-us
 summary: An Australian civic technology charity building tools that help citizens
   understand and engage with their parliament and government.
 concepts:
@@ -51,17 +51,18 @@ events:
   notable_reason: Platform/product launch
 activity:
   dod:
-    date: 2026-09-11
-    note: Site live, OpenAustralia Foundation civic-tech content confirmed, summary
-      still accurate.
-    url: https://www.openaustraliafoundation.org.au
-    checked: 2026-09-11
+    date: 2026-09-26
+    note: 'Website confirmed active (redirects to canonical oaf.org.au, updated website:
+      field); tools (PlanningAlerts, Right to Know, TheyVoteForYou, Hansard search)
+      all current, blog posts as recent as Aug 2026.'
+    url: https://oaf.org.au
+    checked: 2026-09-26
   rss:
     date: 2026-08-13
     note: 'Latest post: This is what our library is for'
     url: https://oaf.org.au/2026/08/13/this-is-what-our-library-is-for/
     checked: 2026-09-25
-last_checked: '2026-09-11'
+last_checked: '2026-09-26'
 ---
 
 The OpenAustralia Foundation is a non-partisan charity whose work centres on making Australian parliamentary and government information accessible and usable. They build and maintain several well-known tools:

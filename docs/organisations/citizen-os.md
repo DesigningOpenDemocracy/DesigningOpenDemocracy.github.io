@@ -56,10 +56,11 @@ activity:
       Space for Good?'
     url: https://citizenos.com/news/
   dod:
-    date: 2026-09-12
-    note: Website confirmed active; platform stats current (14,705 users, 5,468 discussions).
+    date: 2026-09-26
+    note: Site confirmed active; participation metrics and mission unchanged, no dated
+      upcoming events found.
     url: https://citizenos.com
-    checked: 2026-09-12
+    checked: 2026-09-26
   rss:
     date: 2026-09-25
     note: RSS feed active
@@ -70,7 +71,7 @@ activity:
     date: 2023-06-19
     note: Latest news page scraped
     url: https://citizenos.com/news/
-last_checked: '2026-09-12'
+last_checked: '2026-09-26'
 ---
 
 Citizen OS is an Estonian open-source platform for civic participation — group discussions, co-creation of proposals, online petitions, and consultations. Built by a non-profit foundation, it integrates with Estonia's national e-ID infrastructure to support binding digital signatures in the Estonian context. The platform was relaunched with a new design in 2024.

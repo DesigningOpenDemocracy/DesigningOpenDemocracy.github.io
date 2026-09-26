@@ -50,17 +50,17 @@ events:
   location: Woodville Town Hall, Adelaide
 activity:
   dod:
-    date: 2026-09-12
-    note: Website confirmed active; current board (incl. former SA Premier Jay Weatherill),
-      2026 copyright notice.
+    date: 2026-09-26
+    note: Site confirmed active; advisory board and mission unchanged, no public email
+      published (form only, as recorded).
     url: https://cafsa.org.au
-    checked: 2026-09-12
+    checked: 2026-09-26
   rss:
     checked: 2026-09-25
     date: 2026-07-09
     note: 'Latest post: CAfSA News Bulletin no. 8'
     url: https://cafsa.org.au/news-bulletin-no-8/?utm_source=rss&utm_medium=rss&utm_campaign=news-bulletin-no-8
-last_checked: '2026-09-12'
+last_checked: '2026-09-26'
 ---
 
 CAfSA is an incorporated association founded in Adelaide in 2023, advocating for randomly selected, broadly representative citizens' assemblies as a policy-making tool in South Australia. The organisation distinguishes citizens' assemblies from traditional consultation, positioning them as particularly suited to contested issues that are difficult for elected politicians to handle directly.

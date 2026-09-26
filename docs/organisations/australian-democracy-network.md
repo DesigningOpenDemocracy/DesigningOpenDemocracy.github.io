@@ -56,16 +56,17 @@ activity:
       Organisations call on Victorian Political Parties to Commit Now to Donation
       Transparency'
   dod:
-    date: 2026-09-12
-    note: Site is a JS-rendered SPA that plain fetch cannot render; websearch corroborates
-      ADN as an active 200+ org coalition (registered charity, founded 2020).
+    date: 2026-09-26
+    note: 'Confirmed active via web search (homepage is JS-rendered, a plain fetch
+      returns an empty shell) — #OurDemocracy campaign finance reform push and a Declaration
+      of the Right to Protest with the Human Rights Law Centre both current in 2026.'
     url: https://australiandemocracy.org.au
-    checked: 2026-09-12
+    checked: 2026-09-26
   sitemap:
     checked: 2026-09-25
     date: 2026-06-05
     note: Server still up (sitemap detected)
-last_checked: '2026-09-12'
+last_checked: '2026-09-26'
 ---
 
 The Australian Democracy Network (ADN) is a registered charity and coalition infrastructure body for the Australian democracy reform sector. Founded in 2020 by the Human Rights Law Centre, Australian Conservation Foundation, and Australian Council of Social Service (ACOSS), it operates as a connector and convener — sharing resources, strategy, and campaigns across member organisations rather than acting primarily as a direct-action group.
