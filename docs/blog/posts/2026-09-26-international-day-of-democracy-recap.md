@@ -10,6 +10,7 @@ origin: milestone
 categories:
   - event
 tags:
+  - podcast
   - deliberative-democracy
   - citizens-assembly
   - sortition
