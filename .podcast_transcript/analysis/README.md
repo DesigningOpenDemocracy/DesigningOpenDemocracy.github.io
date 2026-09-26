@@ -164,7 +164,38 @@ Not done here; listed so they aren't lost.
   [`orgs-not-included.md`](../../internal-heartbeat/orgs-not-included.md)
   first; Forensic Architecture, for one, has already been assessed and
   excluded.
-- **Audio review.** The IDoD transcript was reviewed against the audio by
-  hand; none of these were. If any recording is going to be quoted heavily,
-  that's the one to review first; 2017-10-21 (the Gruen quote) and
-  2022-12-06 (the misattributed quote) are the obvious candidates.
+- **Audio review: spot-checks, not full passes.** Full speaker labelling of
+  these older recordings isn't worth the effort: four are two-person
+  interviews where attribution is already reliable, and the rest are
+  mostly paraphrased in their posts. A handful of specific lines do matter,
+  and each one needs only a minute or two of listening. Timestamps are
+  from the podcast cuts, i.e. the `.srt` files:
+
+  | Recording | Timestamp | What to settle | Why it matters |
+  |---|---|---|---|
+  | 2017-10-21 part 3 (Q&A) | 00:49:07 | Gruen: "…unless people respect it and pay it legitimacy" or "…unless you consider it properly"? | Quoted in two published posts |
+  | 2019-12-11 Trust | 00:39:21–00:41:52 | Who speculates about Gillard and Penny Wong (the post implies Andrew Kay) | Speculation about named politicians; needs the right name on it, or cutting |
+  | 2019-12-11 Trust | 00:41:52 and 01:22:19 | Who introduces tribal epistemology; who says the feedback-loop lines | Both are quoted in the post and linked from concept pages |
+  | 2022-12-06 Basil's Table | 00:03:12 and 00:15:42 | Is "Jacques" José Ramos, or a different person? | Affects who told the shoelace story |
+  | 2017-05-19 go-round | 00:13:06 | Is the closing speaker Kevin or David? | The post names Kevin as the likely speaker |
+  | 2020-03-27 Beyond CSR | 00:59:49 | Is the "systems thinker" Andrew Downing? | The post names him |
+
+  The misquote in the 2022 post (Bridgette) needs no audio: the words aren't
+  in the transcript, so the fix is to quote what she did say.
+
+## For future recordings
+
+What made the IDoD panel easy to analyse, and worth making the default:
+
+1. **Get a speaker-labelled transcript at the start**, from a tool that does
+   diarisation (the IDoD file came in as `…_labeled.srt`). Name it
+   `<event-date>_<name>_labeled.srt`, alongside the audio-derived plain
+   transcript if one exists.
+2. **Do one hand pass against the audio** before any quoting: speaker labels,
+   names and terms, and anything likely to be quoted. Commit it as its own
+   commit (as `2412ad4` was for IDoD), so the diff shows what the review
+   changed.
+3. **Then write the breakdown** in this folder, and only then the recap post.
+   The breakdown keeps everything; the post selects from it.
+4. **Record the event date** in the transcript README table, with where it came
+   from (the event page, not the post's publish date; see the 2017 date error).
