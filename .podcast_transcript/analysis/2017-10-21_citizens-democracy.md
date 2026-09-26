@@ -336,9 +336,13 @@ marks cuts). Check against the audio before quoting in DOD's own voice.
    it legitimacy."* The transcript version fits the surrounding argument
    better (the next sentences are about legitimacy and press combat, and he
    goes on to call his project building "the legitimacy of… slow democracy").
-   **Listen to the audio before either post quotes it again.** If the
-   transcript is right, the Taiwan post's use of the line still works, and
-   arguably works better.
+   **Resolved (2026-09-26):** the maintainer confirmed the live notes were
+   written down by ear during the talk and may have been misheard or
+   paraphrased in the moment. The recording's wording is treated as the
+   authoritative one, and both posts now quote it; the live-notes version
+   is kept in the post's original notes as a record. (Still an automated
+   transcript, so a quick listen would make it exact, but it's no longer a
+   choice between two equally good sources.)
 2. **"Both speakers, independently, cite the post-Brexit spike in Britons
    googling 'what is the EU?'"**: only Hofkirchner does, in these cuts. Gruen
    uses Brexit (the £350m bus) but not the Google search.
