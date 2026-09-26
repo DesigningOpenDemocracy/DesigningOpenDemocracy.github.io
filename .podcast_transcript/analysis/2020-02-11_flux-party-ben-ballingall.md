@@ -6,8 +6,8 @@ posts left out. See [`README.md`](README.md) for conventions.
 
 - **Source transcripts** (automated, from pod-transcript.com; **not** checked
   against the audio; no speaker labels):
-  - Main talk (≈28 min): [`../2020-02-11_transcript-talk-with-ben-ballingall-about-flux-party-and-issue-based-direct-democracy-system.srt`](../2020-02-11_transcript-talk-with-ben-ballingall-about-flux-party-and-issue-based-direct-democracy-system.srt)
-  - Bonus warm-up (≈12 min): [`../2020-02-11_transcript-(bonus-content)-talk-with-ben-ballingall-about-flux-party-and-issue-based-direct-democracy-system.srt`](<../2020-02-11_transcript-(bonus-content)-talk-with-ben-ballingall-about-flux-party-and-issue-based-direct-democracy-system.srt>)
+  - Main talk (≈28 min): [`../2020-02-11_talk-with-ben-ballingall-flux-party-issue-based-direct-democracy.srt`](../2020-02-11_talk-with-ben-ballingall-flux-party-issue-based-direct-democracy.srt)
+  - Bonus warm-up (≈12 min): [`../2020-02-11_talk-with-ben-ballingall-flux-party-issue-based-direct-democracy_bonus.srt`](<../2020-02-11_talk-with-ben-ballingall-flux-party-issue-based-direct-democracy_bonus.srt>)
 - **Blog posts:** main [`2020-02-13-podcast.md`](../../docs/blog/posts/2020-02-13-podcast.md);
   bonus [`2020-02-29-podcast.md`](../../docs/blog/posts/2020-02-29-podcast.md).
 - **Speakers:** Brian Khuu ("Brian Koo") hosting; Ben Ballingall, Flux Party

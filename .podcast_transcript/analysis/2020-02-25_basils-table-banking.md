@@ -4,7 +4,7 @@ A reference file for future posts and wiki pages, not a post itself: it
 keeps everything worth keeping from the recording, including what the blog
 post left out. See [`README.md`](README.md) for conventions.
 
-- **Source transcript:** [`../2020-02-25_transcript-basil's-table---banking-on-the-future-in-a-climate-of-change-(888-co-operative-causeway)(special).srt`](<../2020-02-25_transcript-basil's-table---banking-on-the-future-in-a-climate-of-change-(888-co-operative-causeway)(special).srt>)
+- **Source transcript:** [`../2020-02-25_basils-table_banking-on-the-future-in-a-climate-of-change.srt`](<../2020-02-25_basils-table_banking-on-the-future-in-a-climate-of-change.srt>)
   (automated, from pod-transcript.com; **not** checked against the audio; no
   speaker labels). ≈1h18m.
 - **Blog post:** [`docs/blog/posts/2020-02-20-podcast.md`](../../docs/blog/posts/2020-02-20-podcast.md)

@@ -4,7 +4,7 @@
 # The narrator names "Brian Koo and Nicholas Morange" as hosts in the third
 # person; Brian narrates later episodes in the first person, so probably him.
 
-source 2017-10-21_transcript-citizens'-democracy-(part-1)_-nicholas-gruen.srt
+source 2017-10-21_citizens-democracy-part-1_nicholas-gruen.srt
 
 @ 1 Narrator (Brian Khuu?)
 @ 11 Nicholas Gruen

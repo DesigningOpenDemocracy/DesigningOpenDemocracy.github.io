@@ -4,13 +4,13 @@ The 2017–2022 transcripts were machine-transcribed without speaker
 detection. This folder adds speaker labels to **copies** of them, worked out
 from context, without touching the originals.
 
-- **`<slug>.txt`**: the speaker map for one recording. Its first directive,
-  `source <file>.srt`, names the original transcript; then one line per turn:
+- **`<stem>.txt`**: the speaker map for `../<stem>.srt`. Its first directive,
+  `source <stem>.srt`, names that transcript explicitly; then one line per turn:
   `@ <cue number> <Speaker>`. Comments (`#`) record the evidence: who
   introduces whom, who is addressed by name, what a speaker's known topics
   are. A `?` in a name marks an inferred attribution; `[Audience]` and
   `[Unidentified]` are used when there's nothing to go on.
-- **`apply.py`**: writes `../<slug>_inferred-speakers.srt` from the map, in the
+- **`apply.py`**: writes `../<stem>_inferred-speakers.srt` from the map, in the
   same `[Speaker] text` style as the hand-reviewed
   `2026-09-15_…_labeled.srt`. Cue timings are copied unchanged.
 
@@ -19,11 +19,12 @@ python speakers/apply.py            # regenerate every labelled copy
 python speakers/apply.py --check    # validate the maps and print stats only
 ```
 
-Slugs match the notes in `../analysis/` (e.g. `2020-03-03_isegoria-nicholas-gruen`)
-and are kept short deliberately. The original transcript names run to 140
-bytes, and some filesystems (eCryptfs encrypted home folders on Ubuntu, for
-one) refuse names over about 143 bytes, so appending `_inferred-speakers` to
-the original names broke checkouts there. Don't lengthen them.
+**Keep filenames short.** Some filesystems (eCryptfs encrypted home folders
+on Ubuntu, for one) refuse names over about 143 bytes, and a name that long
+makes `git checkout` fail for anyone on them. The original transcript names
+used to run to 140 bytes, so appending `_inferred-speakers` broke. They were
+shortened (keeping the episode titles) so the longest is now under 90, and
+`apply.py` refuses to write an output name over 120 bytes.
 
 To correct an attribution (e.g. after listening to the audio), edit the map,
 not the generated `.srt`, then re-run `apply.py`. Remove the `?` once a line

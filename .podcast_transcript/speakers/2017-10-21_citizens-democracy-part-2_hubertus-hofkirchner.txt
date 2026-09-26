@@ -3,7 +3,7 @@
 # video link from Austria. Interjections are from the room; the time check
 # ("can we wrap this up") is the host, probably Nick Merange, who ran the Q&A.
 
-source 2017-10-21_transcript-citizens'-democracy-(part-2)_-hubertus-hofkirchner.srt
+source 2017-10-21_citizens-democracy-part-2_hubertus-hofkirchner.srt
 
 @ 1 Narrator (Brian Khuu?)
 @ 13 Hubertus Hofkirchner

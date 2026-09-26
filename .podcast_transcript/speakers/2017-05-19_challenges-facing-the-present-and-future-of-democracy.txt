@@ -6,7 +6,7 @@
 # at 148 gives the order Tom, Francisco, David, Kevin, Brian, Andrew.
 # See analysis/2017-05-19_challenges-facing-democracy.md.
 
-source 2017-05-19_transcript-challenges-facing-the-present-and-future-of-democracy.srt
+source 2017-05-19_challenges-facing-the-present-and-future-of-democracy.srt
 
 @ 1 Narrator (Brian Khuu?)     # same narration style as the 2017-10-21 intros
 @ 9 Nick Merange?                # asks the round question

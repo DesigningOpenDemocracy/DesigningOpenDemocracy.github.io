@@ -2,11 +2,11 @@
 """Apply a best-effort speaker map to an unlabelled .srt transcript.
 
 The original transcript is never modified. For each map file
-`speakers/<slug>.txt`, this writes `<slug>_inferred-speakers.srt` next to the
-original transcript, prefixing every cue with `[Speaker]` in the same style as
-the hand-reviewed 2026-09-15 `_labeled.srt`. Slugs are kept short on purpose:
-some filesystems (eCryptfs home folders, notably) cap filenames at ~143 bytes,
-and the original transcript names are already close to that.
+`speakers/<stem>.txt`, this writes `<stem>_inferred-speakers.srt` next to the
+original `<stem>.srt`, prefixing every cue with `[Speaker]` in the same style
+as the hand-reviewed 2026-09-15 `_labeled.srt`. Output names are refused over
+MAX_NAME_BYTES: some filesystems (eCryptfs home folders, notably) cap
+filenames at ~143 bytes, and a longer name breaks `git checkout` there.
 
 Map file format (one directive per line; `#` starts a comment):
 
@@ -26,7 +26,7 @@ range, divided in proportion to text length.
 
 Usage:
     python speakers/apply.py            # every map in speakers/
-    python speakers/apply.py <slug>     # one recording
+    python speakers/apply.py <stem>     # one recording
     python speakers/apply.py --check    # validate maps, report stats, write nothing
 """
 import re
@@ -34,6 +34,7 @@ import sys
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
+MAX_NAME_BYTES = 120  # headroom under eCryptfs's ~143-byte filename limit
 ROOT = HERE.parent
 
 
@@ -145,8 +146,11 @@ def main(argv):
         unsure = sum(v for k, v in speakers.items() if "?" in k)
         print(f"{stem}: {len(cues)} cues -> {len(out)}; {len(turns)} turns, "
               f"{sum(len(v) for v in splits.values())} splits; {unsure} cues uncertain")
+        dst = ROOT / f"{stem}_inferred-speakers.srt"
+        if len(dst.name.encode("utf-8")) > MAX_NAME_BYTES:
+            sys.exit(f"{mp.name}: output name is {len(dst.name.encode())} bytes "
+                     f"(limit {MAX_NAME_BYTES}); rename the transcript and map to a shorter stem")
         if not check:
-            dst = ROOT / f"{stem}_inferred-speakers.srt"
             dst.write_text("\n\n".join(f"{i}\n{s} --> {e}\n{t}" for i, (s, e, t) in enumerate(out, 1)) + "\n",
                            encoding="utf-8")
 

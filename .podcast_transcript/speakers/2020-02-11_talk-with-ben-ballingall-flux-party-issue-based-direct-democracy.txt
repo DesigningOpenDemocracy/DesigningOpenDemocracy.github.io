@@ -3,7 +3,7 @@
 # attribution is reliable except for one-word interjections, which are
 # marked "?" where either could have said them.
 
-source 2020-02-11_transcript-talk-with-ben-ballingall-about-flux-party-and-issue-based-direct-democracy-system.srt
+source 2020-02-11_talk-with-ben-ballingall-flux-party-issue-based-direct-democracy.srt
 
 @ 1 Brian Khuu
 @ 6 Ben Ballingall               # "It was at federation Square… just before I met you"

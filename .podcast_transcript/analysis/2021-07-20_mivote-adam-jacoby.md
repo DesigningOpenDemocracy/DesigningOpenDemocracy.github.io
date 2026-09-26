@@ -4,7 +4,7 @@ A reference file for future posts and wiki pages, not a post itself: it
 keeps everything worth keeping from the recording, including what the blog
 post left out. See [`README.md`](README.md) for conventions.
 
-- **Source transcript:** [`../2021-07-20_transcript-catching-up-with-adam-jacoby.-founder-of-mivote.srt`](../2021-07-20_transcript-catching-up-with-adam-jacoby.-founder-of-mivote.srt)
+- **Source transcript:** [`../2021-07-20_catching-up-with-adam-jacoby-founder-of-mivote.srt`](../2021-07-20_catching-up-with-adam-jacoby-founder-of-mivote.srt)
   (automated, from pod-transcript.com; **not** checked against the audio). A
   two-hander, Brian Khuu interviewing Adam Jacoby online during a Melbourne
   lockdown, so attribution is reliable. ≈28 min.

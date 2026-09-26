@@ -6,7 +6,7 @@
 # "Jacques" in Basil's introduction (around cue 20) is probably Jose Ramos
 # misheard; see analysis/2022-12-06_basils-table-tech-bros.md.
 
-source 2022-12-06_transcript-basil’s-table_-building-co-operative-futures-in-the-tech-bros-era-(december-6,-2022).srt
+source 2022-12-06_basils-table_building-co-operative-futures-in-the-tech-bros-era.srt
 
 @ 1 Basil Varghese
 @ 41 Alexar Pendashteh           # "Yeah." (Linux Users of Victoria pronunciation)

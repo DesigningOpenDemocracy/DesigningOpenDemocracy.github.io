@@ -5,7 +5,7 @@
 # clip from the video he fact-checked) playing through the screen share; they
 # stay under [Austin] because they're his demo.
 
-source 2021-07-31_transcript-interview-with-austin.-founder-of-write-in-stone.srt
+source 2021-07-31_interview-with-austin-founder-of-write-in-stone.srt
 
 @ 1 Brian Khuu
 @ 2 Austin

@@ -4,7 +4,7 @@ A reference file for future posts and wiki pages, not a post itself: it
 keeps everything worth keeping from the recording, including what the blog
 post left out. See [`README.md`](README.md) for conventions.
 
-- **Source transcript:** [`../2020-03-03_transcript-isegoria_-the-way-citizens'-juries-deliver-it,-how-elections-destroy-it-(nicholas-gruen_-ceo-of-lateral-economics).srt`](<../2020-03-03_transcript-isegoria_-the-way-citizens'-juries-deliver-it,-how-elections-destroy-it-(nicholas-gruen_-ceo-of-lateral-economics).srt>)
+- **Source transcript:** [`../2020-03-03_isegoria-citizens-juries-deliver-it-elections-destroy-it_nicholas-gruen.srt`](<../2020-03-03_isegoria-citizens-juries-deliver-it-elections-destroy-it_nicholas-gruen.srt>)
   (automated, from pod-transcript.com; **not** checked against the audio). A
   two-hander, Brian Khuu interviewing Nicholas Gruen, so attribution is
   reliable. ≈1h19m.

@@ -4,7 +4,7 @@ A reference file for future posts and wiki pages, not a post itself: it
 keeps everything worth keeping from the recording, including what the blog
 post left out. See [`README.md`](README.md) for conventions.
 
-- **Source transcript:** [`../2017-05-19_transcript-challenges-facing-the-present-and-future-of-democracy.srt`](../2017-05-19_transcript-challenges-facing-the-present-and-future-of-democracy.srt)
+- **Source transcript:** [`../2017-05-19_challenges-facing-the-present-and-future-of-democracy.srt`](../2017-05-19_challenges-facing-the-present-and-future-of-democracy.srt)
   (automated, from pod-transcript.com; **not** checked against the audio, and
   has no speaker labels).
 - **Blog post:** [`docs/blog/posts/2017-05-19-podcast.md`](../../docs/blog/posts/2017-05-19-podcast.md)

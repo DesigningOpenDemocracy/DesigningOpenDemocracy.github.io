@@ -4,7 +4,7 @@ A reference file for future posts and wiki pages, not a post itself: it
 keeps everything worth keeping from the recording, including what the blog
 post left out. See [`README.md`](README.md) for conventions.
 
-- **Source transcript:** [`../2021-07-31_transcript-interview-with-austin.-founder-of-write-in-stone.srt`](../2021-07-31_transcript-interview-with-austin.-founder-of-write-in-stone.srt)
+- **Source transcript:** [`../2021-07-31_interview-with-austin-founder-of-write-in-stone.srt`](../2021-07-31_interview-with-austin-founder-of-write-in-stone.srt)
   (automated, from pod-transcript.com; **not** checked against the audio). A
   two-hander over Zoom, Brian Khuu interviewing Austin, with screen shares that
   audio listeners can't see. ≈44 min.

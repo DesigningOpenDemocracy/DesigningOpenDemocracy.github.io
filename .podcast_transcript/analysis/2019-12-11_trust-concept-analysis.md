@@ -4,7 +4,7 @@ A reference file for future posts and wiki pages, not a post itself: it
 keeps everything worth keeping from the recording, including what the blog
 post left out. See [`README.md`](README.md) for conventions.
 
-- **Source transcript:** [`../2019-12-11_transcript-trust,-a-concept-analysis.srt`](<../2019-12-11_transcript-trust,-a-concept-analysis.srt>)
+- **Source transcript:** [`../2019-12-11_trust-a-concept-analysis.srt`](<../2019-12-11_trust-a-concept-analysis.srt>)
   (automated, from pod-transcript.com; **not** checked against the audio; no
   speaker labels). ~1h25m.
 - **Blog post:** [`docs/blog/posts/2019-12-11-podcast.md`](../../docs/blog/posts/2019-12-11-podcast.md)

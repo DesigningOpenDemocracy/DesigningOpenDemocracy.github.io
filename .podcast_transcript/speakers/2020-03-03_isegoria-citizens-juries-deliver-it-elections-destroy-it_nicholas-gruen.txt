@@ -5,7 +5,7 @@
 # short exchanges where either could be speaking (e.g. the NewVote aside at
 # 348-362, and who mentions Fishkin at 538-539).
 
-source 2020-03-03_transcript-isegoria_-the-way-citizens'-juries-deliver-it,-how-elections-destroy-it-(nicholas-gruen_-ceo-of-lateral-economics).srt
+source 2020-03-03_isegoria-citizens-juries-deliver-it-elections-destroy-it_nicholas-gruen.srt
 
 @ 1 Brian Khuu
 @ 7 Nicholas Gruen

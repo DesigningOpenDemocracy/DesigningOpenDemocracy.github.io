@@ -6,9 +6,9 @@ post left out. See [`README.md`](README.md) for conventions.
 
 - **Source transcripts** (automated, from pod-transcript.com; **not** checked
   against the audio; no speaker labels):
-  - Part 1, Gruen's talk: [`../2017-10-21_transcript-citizens'-democracy-(part-1)_-nicholas-gruen.srt`](<../2017-10-21_transcript-citizens'-democracy-(part-1)_-nicholas-gruen.srt>)
-  - Part 2, Hofkirchner's talk: [`../2017-10-21_transcript-citizens'-democracy-(part-2)_-hubertus-hofkirchner.srt`](<../2017-10-21_transcript-citizens'-democracy-(part-2)_-hubertus-hofkirchner.srt>)
-  - Part 3, Q&A: [`../2017-10-21_transcript-citizens'-democracy-(part-3)_-question-&-answers.srt`](<../2017-10-21_transcript-citizens'-democracy-(part-3)_-question-&-answers.srt>)
+  - Part 1, Gruen's talk: [`../2017-10-21_citizens-democracy-part-1_nicholas-gruen.srt`](<../2017-10-21_citizens-democracy-part-1_nicholas-gruen.srt>)
+  - Part 2, Hofkirchner's talk: [`../2017-10-21_citizens-democracy-part-2_hubertus-hofkirchner.srt`](<../2017-10-21_citizens-democracy-part-2_hubertus-hofkirchner.srt>)
+  - Part 3, Q&A: [`../2017-10-21_citizens-democracy-part-3_questions-and-answers.srt`](<../2017-10-21_citizens-democracy-part-3_questions-and-answers.srt>)
 - **Blog post:** [`docs/blog/posts/2017-08-21-podcast.md`](../../docs/blog/posts/2017-08-21-podcast.md).
   Its collapsed "Original event notes" section holds a human-written
   timestamp index of the full 2-hour recording, which uses different

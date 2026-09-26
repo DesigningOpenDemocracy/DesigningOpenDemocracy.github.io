@@ -2,7 +2,7 @@
 # Best-effort, from contextual clues; not audio-checked. A two-hander over a
 # video call: Brian asks, Adam answers.
 
-source 2021-07-20_transcript-catching-up-with-adam-jacoby.-founder-of-mivote.srt
+source 2021-07-20_catching-up-with-adam-jacoby-founder-of-mivote.srt
 
 @ 1 Brian Khuu
 @ 2 Adam Jacoby
