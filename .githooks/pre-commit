@@ -4,15 +4,33 @@
 
 set -e
 
+# Use the repo's venv when there is one (it's what `make` uses, and where
+# util/requirements.txt gets installed). A system python usually lacks
+# python-frontmatter, and the hook used to fail on that with no message.
+REPO_ROOT=$(git rev-parse --show-toplevel)
+if [ -x "$REPO_ROOT/venv/bin/python" ]; then
+    PY="$REPO_ROOT/venv/bin/python"
+elif command -v python3 >/dev/null 2>&1; then
+    PY=python3
+else
+    PY=python
+fi
+
 # Get list of staged org pages
 STAGED_ORGS=$(git diff --cached --name-only --diff-filter=ACM docs/organisations/*.md 2>/dev/null || true)
 
 if [ -n "$STAGED_ORGS" ]; then
     echo "→ Reordering frontmatter in staged org pages..."
-    python util/reorder_frontmatter.py
+    "$PY" util/reorder_frontmatter.py
 
     echo "→ Refreshing proof_level on staged org pages (local/offline, no network)..."
-    python util/check_event_sourcing.py --recalculate >/dev/null
+    # Quiet on success, but show the output if it fails: a bare exit from
+    # `set -e` gives no clue why the commit was refused.
+    if ! OUT=$("$PY" util/check_event_sourcing.py --recalculate 2>&1); then
+        echo "$OUT" >&2
+        echo "✗ check_event_sourcing.py --recalculate failed (python: $PY)" >&2
+        exit 1
+    fi
     # --recalculate skips any event carrying proof_level_locked: true, so a
     # deliberate manual override survives an unrelated commit to that file.
 
@@ -30,7 +48,7 @@ STAGED_ELECTIONS=$(git diff --cached --name-only --diff-filter=ACM -- docs/data/
 
 if [ -n "$STAGED_ELECTIONS" ]; then
     echo "→ Checking election dates are sourced and well-formed (local/offline, no network)..."
-    python util/check_elections.py
+    "$PY" util/check_elections.py
 fi
 
 # Any staged docs page (not just org pages) can carry prose footnotes, so
@@ -40,5 +58,5 @@ STAGED_DOCS=$(git diff --cached --name-only --diff-filter=ACM -- 'docs/**/*.md' 
 
 if [ -n "$STAGED_DOCS" ]; then
     echo "→ Checking footnote citations are quoted or justified (local/offline, no network)..."
-    python util/check_footnote_quotes.py
+    "$PY" util/check_footnote_quotes.py
 fi
