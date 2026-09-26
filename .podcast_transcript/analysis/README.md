@@ -60,9 +60,22 @@ recording names them.
 
 ## Blog-post issues found
 
-Found while checking posts against transcripts. **None of these posts has
-been edited**: blog posts are human-owned (see CLAUDE.md), so these are for a
-human to act on. Ordered roughly by importance.
+Found while checking posts against transcripts. Ordered roughly by importance.
+
+**Status (2026-09-26): all addressed in the posts**, at the maintainer's
+request, in the same PR as these notes (blog posts are human-owned, so the
+edits go through review like any other). Two items are only partly closed:
+
+- **#1**: the post's heading, prose and `link:` now say 21 October 2017, but
+  its `date:` (and so its URL) was deliberately kept at 21 August so existing
+  links don't break. The post explains the discrepancy.
+- **#2**: the Gruen line now uses the automated transcript's wording in both
+  posts, with a note on the other version. Only the audio can settle it.
+
+The same pass also brought every blockquote in these posts into line with the
+automated transcript's wording (fillers dropped, `…` for cuts), added a few
+passages the posts had dropped, and gave each post a "Detailed notes" link to
+its file here. The list below is kept as the record of what was found.
 
 1. **The Citizens' Democracy event was 21 October 2017, not 21 August.**
    Meetup's own event page (243645818) says 2017-10-21 18:30; all three audio

@@ -39,7 +39,7 @@ On the 2017 criteria: Pol.is scores well on *crushing minorities* (the design su
 
 **Does it accrue decisions?** No. vTaiwan's recommendations were never legally binding. In its early phase — roughly 2015–2018 — around 80% of its ~26 deliberations led to some government action, by its own count. But that track record ran almost entirely on political novelty and on [Audrey Tang](https://en.wikipedia.org/wiki/Audrey_Tang), then the platform's champion inside government. The platform hasn't driven a major decision since 2018. One policymaker described it as "a tiger without teeth."[^tiger-no-teeth] vTaiwan co-creator and former legislator Jason Hsu made the same point in his own words: because the government isn't required to act on recommendations, "legislators don't take it seriously."[^hsu-quote]
 
-Gruen's line from his [2017 DOD presentation](../2017-08-21-podcast.md) fits exactly: *"in political combat, the considered opinion of the people amounts to nothing unless you consider it properly."* vTaiwan could surface a considered public view. It was never wired to compel anyone to act on it.
+Gruen's line from his [2017 DOD presentation](../2017-08-21-podcast.md) fits exactly: *"in political combat, in our system, the considered opinion of the people amounts to nothing unless people respect it and pay it legitimacy."* vTaiwan could surface a considered public view. It was never wired to compel anyone to act on it.
 
 ## Institutionalisation as partial victory — and partial defeat
 
@@ -64,7 +64,7 @@ vTaiwan continues as a volunteer laboratory[^pp-volunteer], experimenting with A
 <details>
 <summary>About this analysis</summary>
 
-The isegoria frame used here isn't imported from the vTaiwan literature — it came from reading DOD's own 2017 meeting transcript, where Gruen's quote ("in political combat, the considered opinion of the people amounts to nothing unless you consider it properly") appeared verbatim in the notes. That grounded the analysis in DOD's own intellectual history rather than treating vTaiwan as an external case study.
+The isegoria frame used here isn't imported from the vTaiwan literature — it came from reading DOD's own 2017 meeting transcript, where Gruen's quote appears in the live meeting notes as "…amounts to nothing unless you consider it properly". The automated transcript of the recording ends it "…unless people respect it and pay it legitimacy", which is the version quoted above; the audio hasn't been checked. That grounded the analysis in DOD's own intellectual history rather than treating vTaiwan as an external case study.
 
 One claim worth scrutinising: the "80% action rate" on 26 deliberations (2015–2018) comes from vTaiwan's own tally, not independent verification. It's frequently cited but self-reported.
 
