@@ -1,0 +1,46 @@
+# Speaker map: Catching up with Adam Jacoby of MiVote (20 July 2021)
+# Best-effort, from contextual clues; not audio-checked. A two-hander over a
+# video call: Brian asks, Adam answers.
+
+@ 1 Brian Khuu
+@ 2 Adam Jacoby
+@ 3 Brian Khuu
+@ 7 Adam Jacoby
+@ 11 Brian Khuu
+@ 16 Adam Jacoby
+@ 26 Brian Khuu
+@ 30 Adam Jacoby
+@ 66 Brian Khuu
+@ 69 Adam Jacoby
+@ 88 Brian Khuu
+@ 92 Adam Jacoby
+@ 135 Brian Khuu
+@ 136 Adam Jacoby
+@ 143 Brian Khuu
+@ 145 Adam Jacoby
+@ 152 Brian Khuu
+@ 157 Adam Jacoby
+@ 187 Brian Khuu
+@ 192 Adam Jacoby
+@ 193 Brian Khuu
+@ 194 Adam Jacoby
+@ 196 Brian Khuu
+@ 197 Adam Jacoby
+@ 199 Brian Khuu
+@ 200 Adam Jacoby
+@ 209 Brian Khuu
+@ 212 Adam Jacoby
+@ 230 Brian Khuu
+@ 234 Adam Jacoby
+@ 245 Brian Khuu
+@ 246 Adam Jacoby
+@ 249 Brian Khuu
+@ 251 Adam Jacoby
+@ 272 Brian Khuu
+@ 276 Adam Jacoby
+@ 280 Brian Khuu
+@ 281 Adam Jacoby
+@ 294 Brian Khuu
+@ 300 Adam Jacoby
+@ 309 Brian Khuu
+@ 312 Adam Jacoby

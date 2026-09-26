@@ -1,0 +1,69 @@
+# Speaker map: Interview with Austin, founder of Write In Stone (31 July 2021)
+# Best-effort, from contextual clues; not audio-checked. A two-hander over Zoom;
+# Austin screen-shares for much of it. His surname isn't given on the
+# recording. Cues 186-193 are Austin's own recorded research highlight (and a
+# clip from the video he fact-checked) playing through the screen share; they
+# stay under [Austin] because they're his demo.
+
+@ 1 Brian Khuu
+@ 2 Austin
+@ 3 Brian Khuu
+@ 9 Austin?
+@ 10 Brian Khuu?
+@ 11 Austin
+@ 22 Brian Khuu
+@ 25 Austin
+@ 35 Brian Khuu
+@ 37 Austin
+@ 39 Brian Khuu
+@ 41 Austin
+@ 42 Brian Khuu?
+@ 43 Austin
+@ 63 Brian Khuu
+@ 65 Austin
+@ 127 Brian Khuu?
+@ 128 Austin
+@ 145 Brian Khuu
+@ 146 Austin
+@ 153 Brian Khuu?
+@ 154 Austin
+@ 159 Brian Khuu
+@ 162 Austin
+@ 163 Brian Khuu
+@ 166 Austin
+@ 177 Brian Khuu
+@ 178 Austin
+@ 221 Brian Khuu
+@ 222 Austin
+@ 244 Brian Khuu
+@ 245 Austin
+@ 262 Brian Khuu
+@ 265 Austin
+@ 283 Brian Khuu
+@ 288 Austin
+@ 310 Brian Khuu
+@ 311 Austin
+@ 336 Brian Khuu
+@ 337 Austin
+@ 364 Brian Khuu
+@ 365 Austin
+@ 390 Brian Khuu
+@ 391 Austin
+@ 408 Brian Khuu
+@ 416 Austin
+@ 418 Brian Khuu
+@ 419 Austin
+@ 423 Brian Khuu
+@ 425 Austin
+@ 443 Brian Khuu
+@ 444 Austin
+@ 457 Brian Khuu
+@ 461 Austin
+@ 469 Brian Khuu
+@ 471 Austin
+@ 490 Brian Khuu
+@ 492 Austin
+@ 494 Brian Khuu
+@ 495 Austin
+@ 517 Brian Khuu
+@ 521 Austin

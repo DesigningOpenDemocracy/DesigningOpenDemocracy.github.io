@@ -34,7 +34,10 @@ here has only the **automated** pod-transcript.com transcript: no speaker
 labels, misheard names, the occasional wrong word. So in these notes:
 
 - Speaker attribution is inferred from turn-taking and content, and flagged
-  where it's uncertain.
+  where it's uncertain. Those inferences are now also applied to copies of
+  the transcripts: `../*_inferred-speakers.srt`, generated from the editable
+  maps in [`../speakers/`](../speakers/README.md). Correct a speaker there,
+  not in the notes or the generated `.srt`.
 - Every quote needs checking against the audio before it goes into DOD's own
   voice. Fillers are dropped without a mark, `…` marks cuts, `[brackets]`
   mark an obvious correction of the transcript.

@@ -25,6 +25,10 @@ Where the date came from:
   2022-12-06  2023-01-21-podcast.md                        "held on 6 December 2022"
   2026-09-15  2026-08-25-international-day-of-democracy-event.md   event date (speaker-labelled .srt only)
 
+Speaker-labelled copies of the 2017-2022 transcripts are the
+*_inferred-speakers.srt files: labels inferred from context, not audio-checked.
+The originals are unchanged. See speakers/README.md.
+
 Analysis notes derived from these transcripts live in analysis/ (one file per
 recording; start with analysis/README.md for the index, cross-episode threads,
 and a list of blog-post issues found while checking the posts).
