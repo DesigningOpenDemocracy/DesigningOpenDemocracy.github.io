@@ -97,8 +97,15 @@ that mentioned it goes stale.
 | [Open Source Industry Australia](https://en.wikipedia.org/wiki/Open_Source_Industry_Australia) | AU | 2026-09-26 | Recurring DOD co-organiser Alexar Pendashteh is a director — [2019-12-11 podcast](../docs/blog/posts/2019-12-11-podcast.md) | FOSS industry advocacy, not participation mechanisms. [Sweep notes](2026-09-26-podcast-archive-weak-fit-sweep.md) |
 | [Action Foresight](https://actionforesight.net/) | AU | 2026-09-26 | Director Jose Ramos, panellist — [2023-01-21 podcast](../docs/blog/posts/2023-01-21-podcast.md) | Futures/foresight consultancy, adjacent but not governance-mechanism-focused. [Sweep notes](2026-09-26-podcast-archive-weak-fit-sweep.md) |
 | [Small Giants Academy](https://www.smallgiants.com.au/about) | AU | 2026-09-26 | Co-host, RadicalxChange Melbourne launch + Wisdom & Action Forum — [2026-08-07 post](../docs/blog/posts/2026-08-07-radicalxchange-melbourne.md) | Leadership-development academy, not governance-mechanism work itself. [Sweep notes](2026-09-26-podcast-archive-weak-fit-sweep.md) |
-| [Bank Australia](https://www.bankaust.com.au/) | AU | 2026-09-26 | Rowan Dowland (Head of Strategy) spoke at Basil's Table's inaugural event — [2020-02-20 podcast](../docs/blog/posts/2020-02-20-podcast.md) | **Flagged as possibly stronger than weak-fit** — cooperative bank, one-member-one-vote governance, comparable to existing cooperative Landscape entries. [Sweep notes](2026-09-26-podcast-archive-weak-fit-sweep.md) |
-| [Cohousing Australia](https://www.cohousingaustralia.org.au/about) | AU | 2026-09-26 | Panellist Elena Pereyra's "collective housing as a model for collective governance" — [2023-01-21 podcast](../docs/blog/posts/2023-01-21-podcast.md) | **Flagged as possibly stronger than weak-fit** — national advocacy/coordinating network for collaboratively-governed housing. [Sweep notes](2026-09-26-podcast-archive-weak-fit-sweep.md) |
+
+~~[Bank Australia](https://www.bankaust.com.au/)~~ and ~~[Cohousing
+Australia](https://www.cohousingaustralia.org.au/about)~~ — both flagged in
+the 2026-09-26 sweep as possibly stronger than weak-fit, were promoted the
+same day to full pages: [`docs/organisations/bank-australia.md`](../docs/organisations/bank-australia.md)
+and [`docs/organisations/cohousing-australia.md`](../docs/organisations/cohousing-australia.md).
+Removed from this table per the README's promotion convention. See the
+[sweep notes](2026-09-26-podcast-archive-weak-fit-sweep.md)'s "Open question
+for a future pass" for what shipped.
 
 ## Possible spinoff: a rights-documentation/advocacy tracker
 

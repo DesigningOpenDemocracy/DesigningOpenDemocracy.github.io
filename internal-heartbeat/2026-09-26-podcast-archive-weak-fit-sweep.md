@@ -117,8 +117,27 @@ movement, not just a research lens on it (contrast with InfUr-, which is
 academic research rather than movement advocacy/coordination) — also reads
 as a stronger candidate than a plain weak-fit watch entry.
 
-## Open question for a future pass
+## Update: both promoted, 2026-09-26
 
-If either Bank Australia or Cohousing Australia gets a full
-`docs/organisations/` page, remove its row from the weak-fit watch list and
-note here what shipped, per the README's promotion convention.
+The user confirmed both should get full pages. Added
+[`docs/organisations/bank-australia.md`](../docs/organisations/bank-australia.md)
+and [`docs/organisations/cohousing-australia.md`](../docs/organisations/cohousing-australia.md)
+the same day, sourced directly (Bank Australia's own site + the Wikipedia
+extracts API for its history; CoHousing Australia's own site for its
+structure and mission) rather than from the podcast transcripts alone.
+Removed both rows from `orgs-not-included.md`'s weak-fit watch list per the
+README's promotion convention. `reorder_frontmatter.py`,
+`check_event_sourcing.py --calculate`, `check_footnote_quotes.py`,
+`check_internal_links.py` and a full `mkdocs build --strict` all pass
+clean.
+
+Bank Australia's page notes an open governance question of its own — its
+2025 mergers (Qudos Bank, Australian Unity) and a further one under
+exploration (P&N Bank) raise whether one-member-one-vote control survives
+consolidation at that scale. Worth a recheck alongside its `last_checked`
+date rather than assumed settled.
+
+CoHousing Australia has no confirmed founding date (checked its own site;
+not stated) — its page has no `events:` frontmatter as a result, which is
+fine per convention (`events:` is optional), but worth filling in if a
+founding date ever surfaces.
