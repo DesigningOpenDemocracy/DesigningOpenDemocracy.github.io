@@ -71,6 +71,7 @@ Usage:
     python util/check_contact.py --write           # write high-confidence email/phone/form to contact:
     python util/check_contact.py --slug X --write --write-channels  # also write social channels, one org at a time, after reading the report
     python util/check_contact.py --force           # re-check/overwrite orgs that already have contact info
+    python util/check_contact.py --skip-existing   # fast pass: skip any org with an existing email/phone/form, gap-fill only
     python util/check_contact.py --output results.json
 
 Requirements: requests, python-frontmatter (util/requirements.txt)
@@ -652,6 +653,7 @@ def main():
     parser.add_argument("--write", action="store_true", help="Write high-confidence email/phone/form findings to contact: frontmatter (default: report only)")
     parser.add_argument("--write-channels", action="store_true", help="Also write social/chat channel findings (Telegram, Instagram, etc.) — only after reviewing the report; see module docstring for why these aren't included in plain --write")
     parser.add_argument("--force", action="store_true", help="Re-check orgs that already have contact.email and a full set of known channel types, and overwrite existing email/phone/form/channel values")
+    parser.add_argument("--skip-existing", action="store_true", help="Skip any org with an existing email/phone/form on file, regardless of how long ago it was checked — for a fast pass that only fills gaps. Overridden by --force.")
     parser.add_argument("--output", metavar="FILE", help="Write JSON results to FILE")
     args = parser.parse_args()
 
@@ -676,6 +678,11 @@ def main():
         already_full = existing.get("email") and SOCIAL_URL_TYPES <= existing_channel_types
         if not args.force and already_full:
             print(f"  [{i:3d}/{len(orgs)}] SKIP  {slug} (already has email + all known channel types)")
+            continue
+
+        if (args.skip_existing and not args.force
+                and (existing.get("email") or existing.get("phone") or existing.get("form"))):
+            print(f"  [{i:3d}/{len(orgs)}] SKIP  {slug} (has a contact record — pass --force, or drop --skip-existing, to recheck)")
             continue
 
         last_checked = parse_date(state.get(slug, {}).get("checked"))
