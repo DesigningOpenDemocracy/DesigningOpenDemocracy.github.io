@@ -1,6 +1,7 @@
 # Speaker map: Trust, a concept analysis (11 December 2019)
 # Best-effort, from contextual clues. Audio-checked by the maintainer
-# (2026-09-26): cues 332-333 (Brian), 384 (Andrew), 812 (Alexar); marked
+# (2026-09-26): cues 332-333 (Brian), 340-361 (Andrew), 384 (Andrew),
+# 812 (Alexar); marked
 # "checked" below. Everything else is still inferred. A free-flowing
 # discussion with at least five voices, so expect errors in the fast
 # exchanges. How each is recognised:
@@ -74,7 +75,7 @@ source 2019-12-11_trust-a-concept-analysis.srt
 @ 332 Brian Khuu                 # raises Penny Wong (checked)
 fix 332 | Penny Rong | Penny Wong
 fix 333 | Penny Rong | Penny Wong
-@ 340 Andrew Kay?                # the Gillard/Wong speculation (see analysis: check the audio)
+@ 340 Andrew Kay                 # the Gillard/Wong speculation (checked)
 @ 362 Audience?
 @ 366 Andrew Kay?
 @ 375 Brian Khuu?
