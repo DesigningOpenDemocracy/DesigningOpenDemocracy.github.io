@@ -14,7 +14,7 @@ transcripts didn't already.
 | Recorded | Recording | Notes | Blog post |
 |---|---|---|---|
 | 2017-05-19 | Challenges facing the present and future of democracy | [notes](2017-05-19_challenges-facing-democracy.md) | [2017-05-19-podcast](../../docs/blog/posts/2017-05-19-podcast.md) |
-| 2017-10-21 | Citizens' Democracy: Nicholas Gruen, Hubertus Hofkirchner, Q&A | [notes](2017-10-21_citizens-democracy.md) | [2017-08-21-podcast](../../docs/blog/posts/2017-08-21-podcast.md) (date wrong, see below) |
+| 2017-10-21 | Citizens' Democracy: Nicholas Gruen, Hubertus Hofkirchner, Q&A | [notes](2017-10-21_citizens-democracy.md) | [2017-08-21-podcast](../../docs/blog/posts/2017-10-21-podcast.md) (date wrong, see below) |
 | 2019-12-11 | Trust, a concept analysis | [notes](2019-12-11_trust-concept-analysis.md) | [2019-12-11-podcast](../../docs/blog/posts/2019-12-11-podcast.md) |
 | 2020-02-11 | Ben Ballingall on Flux and IBDD (main + bonus) | [notes](2020-02-11_flux-party-ben-ballingall.md) | [2020-02-13](../../docs/blog/posts/2020-02-13-podcast.md), [2020-02-29](../../docs/blog/posts/2020-02-29-podcast.md) |
 | 2020-02-21 | DOD 2020 Primer | [notes](2020-02-21_dod-2020-primer.md) | [2022-02-24-podcast](../../docs/blog/posts/2022-02-24-podcast.md) |
@@ -64,11 +64,11 @@ Found while checking posts against transcripts. Ordered roughly by importance.
 
 **Status (2026-09-26): all addressed in the posts**, at the maintainer's
 request, in the same PR as these notes (blog posts are human-owned, so the
-edits go through review like any other). Two items are only partly closed:
+edits go through review like any other). One item is only partly closed, and one needed a redirect:
 
-- **#1**: the post's heading, prose and `link:` now say 21 October 2017, but
-  its `date:` (and so its URL) was deliberately kept at 21 August so existing
-  links don't break. The post explains the discrepancy.
+- **#1**: now fully fixed. The post is dated 21 October 2017, its old
+  21 August URL redirects to the new one, and it keeps a short note that it
+  used to be filed under August.
 - **#2**: the Gruen line now uses the automated transcript's wording in both
   posts, with a note on the other version. Only the audio can settle it.
 

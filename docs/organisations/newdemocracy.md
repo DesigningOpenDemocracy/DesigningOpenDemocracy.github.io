@@ -125,7 +125,7 @@ newDemocracy's core argument is that the adversarial, partisan nature of represe
 - **Luca Belgiorno-Nettis** — founder and principal funder of the newDemocracy Foundation. A Sydney-based infrastructure developer and philanthropist who became a significant advocate for deliberative democracy in Australia after growing disillusioned with conventional politics.[^newdem]
 - **Kyle Redman** — Executive Director, appointed September 2026. Previously joint Research Director at newDemocracy, and returned after an 18-month secondment with the Federation for Innovation in Democracy – Europe and the AI & Democracy Foundation.[^ndf-exec]
 - **Iain Walker** — Director, Advocacy, and a Board member. Executive Director from 2011 to 2026, during which he led over 30 deliberative projects for state and local governments.[^ndf-iain]
-- **[Nicholas Gruen](https://en.wikipedia.org/wiki/Nicholas_Gruen)** — prominent economist and longstanding collaborator, who has presented to DOD on deliberative democracy and the concept of isegoria. One of newDemocracy's most visible intellectual contributors. [See 2017 presentation](../../blog/posts/2017-08-21-podcast.md)
+- **[Nicholas Gruen](https://en.wikipedia.org/wiki/Nicholas_Gruen)** — prominent economist and longstanding collaborator, who has presented to DOD on deliberative democracy and the concept of isegoria. One of newDemocracy's most visible intellectual contributors. [See 2017 presentation](../../blog/posts/2017-10-21-podcast.md)
 
 ## Links
 
@@ -137,7 +137,7 @@ newDemocracy's core argument is that the adversarial, partisan nature of represe
 - [Sortition](../concepts/sortition.md)
 - [Isegoria](../concepts/isegoria.md)
 - [Cognitive Division of Labour](../concepts/cognitive-division-of-labour.md)
-- [Citizens' Democracy: Presentations and Q&A](../../blog/posts/2017-08-21-podcast.md) — Nicholas Gruen and Hubertus Hofkirchner present to DOD, 2017
+- [Citizens' Democracy: Presentations and Q&A](../../blog/posts/2017-10-21-podcast.md) — Nicholas Gruen and Hubertus Hofkirchner present to DOD, 2017
 - [Isegoria: The Way Citizens' Juries Deliver It, How Elections Destroy It](../../blog/posts/2020-03-20-podcast.md) — Nicholas Gruen in conversation with DOD, 2020
 - [G1000](g1000.md)
 - [MASS LBP](mass-lbp.md)

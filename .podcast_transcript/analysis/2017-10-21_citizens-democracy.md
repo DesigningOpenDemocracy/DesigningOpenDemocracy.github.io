@@ -9,7 +9,7 @@ post left out. See [`README.md`](README.md) for conventions.
   - Part 1, Gruen's talk: [`../2017-10-21_citizens-democracy-part-1_nicholas-gruen.srt`](<../2017-10-21_citizens-democracy-part-1_nicholas-gruen.srt>)
   - Part 2, Hofkirchner's talk: [`../2017-10-21_citizens-democracy-part-2_hubertus-hofkirchner.srt`](<../2017-10-21_citizens-democracy-part-2_hubertus-hofkirchner.srt>)
   - Part 3, Q&A: [`../2017-10-21_citizens-democracy-part-3_questions-and-answers.srt`](<../2017-10-21_citizens-democracy-part-3_questions-and-answers.srt>)
-- **Blog post:** [`docs/blog/posts/2017-08-21-podcast.md`](../../docs/blog/posts/2017-08-21-podcast.md).
+- **Blog post:** [`docs/blog/posts/2017-10-21-podcast.md`](../../docs/blog/posts/2017-10-21-podcast.md).
   Its collapsed "Original event notes" section holds a human-written
   timestamp index of the full 2-hour recording, which uses different
   timestamps from these three podcast cuts.
@@ -36,11 +36,13 @@ this pass all said 21 August 2017. Three independent sources say otherwise:
    the talk can't predate it.
 
 The transcript files have been renamed to `2017-10-21_…` and the README
-table updated. **The blog post itself has not been changed**: its `date:`
-feeds the post URL, so moving it is a call for a human. Also note the post's
-frontmatter `link:` points at event 239625786, which is the May 2017 Meetup
-No. 5 (see [`2017-05-19_challenges-facing-democracy.md`](2017-05-19_challenges-facing-democracy.md)),
-not this one.
+table updated. **The post has since been moved** (September 2026): it is now
+`2017-10-21-podcast.md` with `date: 2017-10-21`, the old `/blog/2017/08/21/…`
+URL redirects to it (`mkdocs.yml`'s `redirect_maps`), and a short "A note on
+the date" section records that it used to be filed under 21 August. Its
+frontmatter `link:` used to point at event 239625786, the May 2017 Meetup
+No. 5 (see [`2017-05-19_challenges-facing-democracy.md`](2017-05-19_challenges-facing-democracy.md));
+that is fixed too.
 
 ## Who's who
 

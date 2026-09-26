@@ -441,7 +441,7 @@ before assessing any of these.
 
 Earlier DOD recordings with the same people (each now has its own notes
 file in this folder; see [`README.md`](README.md) for the index):
-- Nicholas Gruen: [`2017-08-21` Citizens' Democracy](../../docs/blog/posts/2017-08-21-podcast.md),
+- Nicholas Gruen: [`2017-08-21` Citizens' Democracy](../../docs/blog/posts/2017-10-21-podcast.md),
   [`2020-03-03` Isegoria](../../docs/blog/posts/2020-03-20-podcast.md). He was already
   arguing in 2020 that elections destroy isegoria. A recap can show how the
   argument has moved on, from the case for juries to "don't ask for any

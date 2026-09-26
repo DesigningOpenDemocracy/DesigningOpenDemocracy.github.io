@@ -170,4 +170,4 @@ assemblies work at both state and federal levels in Australia.
 - [Q&A on deliberative democracy for council candidates (Victoria, Australia)](../../blog/posts/2024-09-28-deliberative-democracy-council-candidates-qa.md)
 - [Democracy beyond the ballot box: recap of our International Day of Democracy panel](../../blog/posts/2026-09-26-international-day-of-democracy-recap.md) — Gruen's standing-assembly proposal revisited, and Nicole Hunter (MosaicLab) on how a jury is run, 2026
 - [Isegoria: how citizens' juries deliver it (Gruen, 2020)](../../blog/posts/2020-03-20-podcast.md) — Gruen's proposal for a standing, crowd-funded citizens' assembly
-- [Citizens' Democracy (Gruen & Hofkirchner, 2017)](../../blog/posts/2017-08-21-podcast.md)
+- [Citizens' Democracy (Gruen & Hofkirchner, 2017)](../../blog/posts/2017-10-21-podcast.md)

@@ -11,8 +11,8 @@ Where the date came from:
   Event date  Blog post (docs/blog/posts/)                 Date source
   ----------  -------------------------------------------  ------------------------------------------
   2017-05-19  2017-05-19-podcast.md                        meetup date (audio is a retrospective recorded afterwards)
-  2017-10-21  2017-08-21-podcast.md (parts 1-3)            Meetup event page + audio intros (the post's
-                                                           own 21 Aug date is wrong; see analysis/)
+  2017-10-21  2017-10-21-podcast.md (parts 1-3)            Meetup event page + audio intros (post was
+                                                           filed as 21 Aug until 2026-09; see analysis/)
   2019-12-11  2019-12-11-podcast.md                        event date in post heading
   2020-02-11  2020-02-13-podcast.md                        "recorded on 11 February 2020"
   2020-02-11  2020-02-29-podcast.md (bonus content)        warm-up recorded ahead of the 11 Feb main conversation

@@ -27,7 +27,7 @@ This framing reframes the standard AI-in-democracy debate. The criterion is not 
 
 ## Prediction markets as CI platforms
 
-Hubertus Hofkirchner, presenting Prediki at the [2017 Citizens' Democracy event](../blog/posts/2017-08-21-podcast.md), framed prediction markets explicitly as collective-intelligence infrastructure: markets that aggregate dispersed private knowledge by rewarding accuracy, moving the price toward what the crowd-as-whole knows better than any expert. The Prediki platform added argument capture and sentiment analysis on top of the market mechanism, attempting to surface not just the probability estimate but the reasoning behind it.
+Hubertus Hofkirchner, presenting Prediki at the [2017 Citizens' Democracy event](../blog/posts/2017-10-21-podcast.md), framed prediction markets explicitly as collective-intelligence infrastructure: markets that aggregate dispersed private knowledge by rewarding accuracy, moving the price toward what the crowd-as-whole knows better than any expert. The Prediki platform added argument capture and sentiment analysis on top of the market mechanism, attempting to surface not just the probability estimate but the reasoning behind it.
 
 Nicholas Gruen's response at the same event drew a boundary: prediction markets surface CI on *what will be* (factual, resolvable questions); they cannot resolve *what shall be* (value questions) — which he argued requires a deliberating citizens' jury.
 
@@ -47,5 +47,5 @@ Alexar Pendashteh's analysis in the [2019 DOD Trust discussion](../blog/posts/20
 ## DOD discussions
 
 - [Basil's Table: Cooperative Democracy Design (Dec 2022)](../blog/posts/2023-01-21-podcast.md) — Pendashteh on CI vs AI and the emergence-layer model
-- [Citizens' Democracy (Gruen & Hofkirchner, 2017)](../blog/posts/2017-08-21-podcast.md) — Hofkirchner on Prediki as CI infrastructure; Gruen on the limits of CI markets for value questions
+- [Citizens' Democracy (Gruen & Hofkirchner, 2017)](../blog/posts/2017-10-21-podcast.md) — Hofkirchner on Prediki as CI infrastructure; Gruen on the limits of CI markets for value questions
 - [Trust: A Concept Analysis (2019)](../blog/posts/2019-12-11-podcast.md) — trust as substrate for emergent CI; feedback loops and accountability sinks as CI blockers
