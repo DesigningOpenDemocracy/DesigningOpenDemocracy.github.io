@@ -540,6 +540,27 @@ event:
   same event** — migrate the post onto `event:` instead, same spirit as `shared_link:`'s
   equivalent rule above.
 
+**Convention — inline Democracy Landscape cards (optional):**
+
+Put `<!-- org-card: <slug> -->` on its own line in a blog post (e.g. under a
+panellist's bio) to render a compact card for that org: logo, name,
+type/country, a trimmed `summary:`, a "Landscape profile →" link and a
+"Website ↗" link, all read from the org page's frontmatter at build time by
+`hooks/org_cards.py`. Only the slug lives in the post, so the card never goes
+stale. An unknown slug fails the build. The marker is an HTML comment, so
+without the hook the post still reads cleanly. Use it where an organisation
+is part of the post's story (a co-host, a speaker's organisation), not for
+every passing mention; that's what an ordinary link is for. Deliberately not
+a logo strip: a row of logos beside an event reads as sponsorship, while a
+card placed with the person it belongs to reads as a reference. Styled by
+`.org-card-*` in `customizations.css`, with the same opt-in `logo_bg:`
+backing as everywhere else. `tests/test_org_cards.py` covers it.
+
+In blog posts, ordinary links into `/organisations/` and `/concepts/` also get
+a small "Landscape" / "Concept" tag (CSS `::after`, scoped to post pages via
+`:has(.md-post__back)`), so readers can tell DOD's own wiki pages from
+external citations.
+
 **Convention — main lesson (optional):**
 
 Each blog post should include a `**Main lesson** —` section positioned directly after
@@ -769,6 +790,7 @@ more than a bare link.
 - `hooks/calendar_export.py` — fires on `on_pre_build`/`on_env`; merges every org's future `events:` entries with every org's cached `ics_feed` sync (`docs/data/events/<slug>.json`) and the curated polling days in `docs/data/elections.yml` into one sorted list, writes `docs/calendar.ics` + `docs/calendar-elections.ics` + `docs/data/events.json`, and injects the list as the `calendar_events` Jinja global used by `docs/overrides/calendar.html`. Makes no network calls itself — see Calendar section below for the fetch step.
 - `hooks/sitemap_extras.py` — fires on `on_env`; sets the `sitemap_extra_urls` Jinja global that `docs/overrides/sitemap.xml` appends to MkDocs' own page entries. MkDocs builds sitemap.xml by iterating `pages`, so nothing that isn't a rendered markdown page is ever listed — every data export under "Data exports" below was reachable only by crawling the pages that link it, never from a search result — which is what made them unfetchable for tools acting on search results, AI assistants included. The list is curated in `DATA_ENDPOINTS`, not globbed from `docs/data/`: that directory also holds build *input* and internal state (the per-org `events/<slug>.json` sync cache, `citation-state.json`, `elections.yml`) which is not published interface. **Keep `DATA_ENDPOINTS` in step with the Data exports table** when an export is added or dropped. Each path is checked against `docs_dir` before it's emitted, so a generator that was skipped or failed drops out of the sitemap rather than advertising a 404. Deliberately absent: the per-country `/calendar-<CC>.ics` slices (all listed on `/calendar/` already, and derived from `/calendar.ics`), and `graph.json` (written straight to `site_dir` during `on_post_build` — after the sitemap has already been rendered, so there'd be nothing on disk to check it against). No `<lastmod>` is emitted on these: they're rewritten on every build whether or not their content changed, so a build-time date would assert a change on every deploy.
 - `hooks/shared_link_card.py` — fires on `on_page_markdown`; injects a reader-facing card at the top of a blog post's body from `shared_link:` frontmatter. See "Convention — shared_link" above.
+- `hooks/org_cards.py` — fires on `on_page_markdown`; expands `<!-- org-card: <slug> -->` markers in blog posts into inline Democracy Landscape cards. See "Convention — inline Democracy Landscape cards" above.
 - `hooks/event_card.py` — fires on `on_page_markdown`; injects a reader-facing card at the top of a blog post's body from `event:` frontmatter, reusing the page's own `location:` for an embedded map. Presentational only — deliberately never read by `hooks/calendar_export.py`. See "Convention — event" above.
 - `hooks/normalize_tags.py` — fires on `on_page_markdown` at `event_priority(100)`, i.e. before mkdocs-material's tags plugin collects `page.meta["tags"]` in its own `on_page_markdown` (priority -50); folds every tag to the lowercase-hyphen slug the plugin anchors on, deduplicating. **Tags are matched case-insensitively because of this hook, not by the plugin.** The plugin treats each distinct tag *string* as its own tag while slugifying them all into one anchor id, so `Deliberative Democracy` and `deliberative-democracy` emitted two `<h2>` sections sharing `id="tag:deliberative-democracy"` — and because the plugin sorts case-sensitively, every Title Case tag sorted above every lowercase one, putting the halves ~45 KB apart on the page. A browser jumps to the first of two duplicate ids, so `/tags/#tag:deliberative-democracy` showed one 2021 podcast while the five pages actually carrying that tag were unreachable by the link. 18 slugs were split this way (`#democracy` 5 vs 13 pages, `#podcast` 7 vs 5, `#sortition` 1 vs 6). The source frontmatter was normalised to slug form in the same pass, so the hook is a guard against re-drift rather than a live crutch — but it is what makes a future `Citizens Assembly` fold in rather than split the tag again. It shares `hooks/tag_links.py`'s import of the plugin's own `pymdownx.slugs.slugify`; keep those two in step, since folding on a different rule than the plugin anchors on would put the duplicate sections straight back. `tags_allowed:` (fails the build on any tag outside a listed vocabulary) was considered and rejected — new topics get tagged here all the time, and blocking them is the wrong trade for what is really a spelling problem. `tests/test_normalize_tags.py` covers it.
   - **Blog `categories:` do not have this problem** — checked while fixing it: four category slugs are also written two ways (`Podcast`/`podcast`, `Deliberative Democracy`/`deliberative democracy`, …), but the blog plugin merges spellings into a single generated category page (confirmed: `/blog/category/deliberative-democracy/` lists all six posts across both spellings), picking one spelling for the heading. Cosmetic, no posts lost, so categories were deliberately left alone.

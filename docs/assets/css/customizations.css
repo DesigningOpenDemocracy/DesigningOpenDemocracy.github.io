@@ -3084,3 +3084,71 @@ html .md-typeset details.plain-details > :last-child {
 }
 
 
+
+/* Inline Democracy Landscape card (hooks/org_cards.py): replaces a
+   `<!-- org-card: slug -->` marker in a blog post, e.g. under a panellist's
+   bio. Deliberately quieter than .shared-link-card / .event-card-*: it's a
+   reference to a Landscape profile, not the thing the post points at.
+   Logo backing follows the same opt-in logo_bg rule as everywhere else
+   (.org-logo-needs-dark / -light) -- transparent by default; see the long
+   comment above .org-page-header-logo before changing that. */
+.md-typeset .org-card {
+    display: flex;
+    gap: 0.9em;
+    align-items: flex-start;
+    margin: 0.6em 0 1.2em 0;
+    padding: 0.7em 0.9em;
+    border: 1px solid var(--md-default-fg-color--lightest);
+    border-radius: 8px;
+    font-size: 0.85em;
+    line-height: 1.45;
+}
+.md-typeset .org-card-logo-link {
+    flex: 0 0 auto;
+    line-height: 0;
+}
+.md-typeset .org-card-logo {
+    /* Wider than tall: most stored logos are wordmarks, which a square
+       box shrinks to an unreadable strip. */
+    width: 96px;
+    height: 56px;
+    object-fit: contain;
+    background: none;
+    border-radius: 4px;
+    padding: 2px;
+    box-sizing: border-box;
+}
+.md-typeset .org-card-logo.org-logo-needs-dark { background: rgba(0,0,0,0.45); }
+.md-typeset .org-card-logo.org-logo-needs-light { background: white; }
+.md-typeset .org-card-body { min-width: 0; }
+.md-typeset .org-card-eyebrow {
+    font-size: 0.78em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--md-accent-fg-color);
+}
+.md-typeset .org-card-title { font-weight: 600; font-size: 1.05em; }
+.md-typeset .org-card-facts { color: var(--md-default-fg-color--light); }
+.md-typeset .org-card-summary { margin: 0.3em 0; }
+.md-typeset .org-card-links { display: flex; flex-wrap: wrap; gap: 0.3em 1.2em; }
+
+/* In blog posts, mark links into DOD's own wiki so they don't read as
+   external citations: a small "Landscape" / "Concept" tag after the link.
+   Scoped with :has(.md-post__back), which only blog post pages carry, and
+   skipped inside the org cards above, which already say where they go. */
+.md-main:has(.md-post__back) .md-content a[href*="/organisations/"]:not([href$="/organisations/"])::after,
+.md-main:has(.md-post__back) .md-content a[href*="/concepts/"]:not([href$="/concepts/"])::after {
+    font-size: 0.68em;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    margin-left: 0.3em;
+    padding: 0 0.35em;
+    border-radius: 3px;
+    vertical-align: 0.15em;
+    color: var(--md-default-fg-color--light);
+    border: 1px solid var(--md-default-fg-color--lightest);
+}
+.md-main:has(.md-post__back) .md-content a[href*="/organisations/"]:not([href$="/organisations/"])::after { content: "Landscape"; }
+.md-main:has(.md-post__back) .md-content a[href*="/concepts/"]:not([href$="/concepts/"])::after { content: "Concept"; }
+.md-main:has(.md-post__back) .md-content .org-card a::after { content: none !important; }

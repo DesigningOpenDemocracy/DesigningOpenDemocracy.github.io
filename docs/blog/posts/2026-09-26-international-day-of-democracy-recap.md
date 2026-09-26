@@ -37,13 +37,19 @@ On 15 September, International Day of Democracy,[^unday] DOD and [888 Co-operati
 
 Antony McMullen, 888's chair, moderated a panel of four.
 
+<!-- org-card: 888-cooperative-causeway -->
+
 ### Nicholas Gruen
 
 Nicholas is CEO of [Lateral Economics](../../organisations/lateral-economics.md) and a long-time advocate of assemblies chosen by lot. His current project is [The Shared Centre](https://www.thesharedcentre.com/),[^sharedcentre] and he writes on [Substack](https://nicholasgruen.substack.com/).
 
+<!-- org-card: lateral-economics -->
+
 ### Nicole Hunter
 
 Nicole is co-founder of [MosaicLab](../../organisations/mosaiclab.md). She led the Yarra Valley Water citizens' jury and co-wrote [*Facilitating Deliberation: A Practical Guide*](https://mosaiclab.com.au/the-big-book) with fellow MosaicLab directors Kimbra White and Keith Greaves.[^mosaicbook]
+
+<!-- org-card: mosaiclab -->
 
 ### Anitra Nelson
 
@@ -84,13 +90,13 @@ Godfrey made the evening's key historical point almost in passing:
 > "If you read Aristotle's politics, elections weren't in the section on democracy. Elections were in the section on oligarchy."
 > — Godfrey Moase
 
-Nicholas built on it. Elections "separate the governed from the governing". Selection by lot means "people taking turns in governing and being governed, which is exactly what happens in juries". His central distinction is "representation by sampling rather than representation by elections".
+Nicholas built on it. Elections "separate the governed from the governing". [Selection by lot](../../concepts/sortition.md) means "people taking turns in governing and being governed, which is exactly what happens in juries". His central distinction is "representation by sampling rather than representation by elections".
 
 Several speakers also insisted that shared power needs structure. Antony raised Jo Freeman's [*The Tyranny of Structurelessness*](https://www.jofreeman.com/joreen/tyranny.htm), on how "flat" collectives still had hidden decision-makers. Anitra agreed: "Anarchy is really self-governance. And you have to have processes and they have to be transparent and everything has to be accountable." Godfrey argued that "authority shouldn't be dependent on hierarchy".
 
 ## A standing citizens' assembly, no permission needed
 
-Nicholas's main proposal was a privately funded standing assembly of around a hundred randomly selected Australians, shadowing federal parliament.
+Nicholas's main proposal was a privately funded standing [citizens' assembly](../../concepts/citizens-assembly.md) of around a hundred randomly selected Australians, shadowing federal parliament.
 
 > "No, don't ask for any permission. Just run it, turn people over every six months or two years or whatever you decide."
 > — Nicholas Gruen
@@ -171,7 +177,7 @@ Several of the evening's threads run back through DOD's older recordings. Quotes
 
 ### Nicholas Gruen's assembly, 2017 to now
 
-- **2017**, at [Citizens' Democracy](2017-10-21-podcast.md), he proposed a citizens' chamber alongside the Senate, "some kind of citizen oversight of the Parliament", able to force a secret ballot in the other chamber. He also set out where he parted company with the newDemocracy Foundation, then managed by Iain Walker: "the difference between me and Iain Walker is… you're the good cop, I'm the bad cop… I want to use Citizens juries as a form of political activism." newDemocracy, he said, "goes to one government after another and says, could we run a Citizens Jury for you to solve a little problem that you've got? Now, good on them. I'm not critical of them."
+- **2017**, at [Citizens' Democracy](2017-10-21-podcast.md), he proposed a citizens' chamber alongside the Senate, "some kind of citizen oversight of the Parliament", able to force a secret ballot in the other chamber. He also set out where he parted company with the [newDemocracy Foundation](../../organisations/newdemocracy.md), then managed by Iain Walker: "the difference between me and Iain Walker is… you're the good cop, I'm the bad cop… I want to use Citizens juries as a form of political activism." newDemocracy, he said, "goes to one government after another and says, could we run a Citizens Jury for you to solve a little problem that you've got? Now, good on them. I'm not critical of them."
 - **2020**, on [DOD's podcast](2020-03-20-podcast.md), the chamber had moved outside Parliament: "we don't have to go to the political system and ask for permission to do any of this", with crowdfunding or philanthropy paying for a standing chamber run "as a form of activism. So it's not a pilot project or a demonstration project, it is a form of activism." He cited Aristotle then too, on democracy as "a system in which people take turns in governing and being governed."
 - **2026**: "don't ask for any permission. Just run it", now with a price attached, and the same courtesy to people working at a smaller scale ("I don't want to be critical of those people").
 
@@ -179,7 +185,7 @@ Over nine years the proposal went from a chamber designed into Parliament, to a 
 
 ### How a jury gets its members
 
-Nicole's account of recruiting the Yarra Valley Water jury has an earlier version in DOD's archive. At the [2020 Primer](2022-02-24-podcast.md), her fellow MosaicLab director Kimbra White, in the audience, walked through the two ways of recruiting: a physical invitation to a random sample, or an open call that needs "hundreds and hundreds of people" to keep the next random step honest, with letters addressed "to the householder" so renters aren't left out. MosaicLab had been running citizens' juries in Melbourne since 2014, starting with the City of Melbourne's 10-year financial plan, which Nicholas sat in on. Hubertus Hofkirchner had described the same jury at DOD in 2017 as a newDemocracy project: "the council sent out 5,000 invitations, 500 came back and said they were interested", and a random draw from those made the representative panel.
+Nicole's account of recruiting the Yarra Valley Water jury has an earlier version in DOD's archive. At the [2020 Primer](2022-02-24-podcast.md), her fellow [MosaicLab](../../organisations/mosaiclab.md) director Kimbra White, in the audience, walked through the two ways of recruiting: a physical invitation to a random sample, or an open call that needs "hundreds and hundreds of people" to keep the next random step honest, with letters addressed "to the householder" so renters aren't left out. MosaicLab had been running citizens' juries in Melbourne since 2014, starting with the City of Melbourne's 10-year financial plan, which Nicholas sat in on. Hubertus Hofkirchner had described the same jury at DOD in 2017 as a newDemocracy project: "the council sent out 5,000 invitations, 500 came back and said they were interested", and a random draw from those made the representative panel.
 
 ### An old argument about where power sits
 
@@ -187,7 +193,7 @@ The panel's unresolved split, between parliament, the workplace and capital, is 
 
 ### Technology, then and now
 
-"Is tech gonna save us?" got a unanimous no this year. DOD's earlier guests were more hopeful. Flux Party's Ben Ballingall made the case for [blockchain-backed issue voting](2020-02-13-podcast.md) in 2020 ("you can't prove us wrong", he said of its security in the [bonus episode](2020-02-29-podcast.md)). MiVote's Adam Jacoby described [app-based voting that reached 60% consensus](2021-08-07-podcast.md) in 2021. At [Basil's Table in 2022](2023-01-21-podcast.md), DOD's Alexar Pendashteh argued that tapping collective intelligence over the internet was "100% feasible". Nicole's objection is aimed at something narrower: handing a group's choosing to a machine. But it's a useful test for all of them: does the tool help people meet minds, or replace the meeting?
+"Is tech gonna save us?" got a unanimous no this year. DOD's earlier guests were more hopeful. [Flux Party](../../organisations/flux-party.md)'s Ben Ballingall made the case for [blockchain-backed issue voting](2020-02-13-podcast.md) in 2020 ("you can't prove us wrong", he said of its security in the [bonus episode](2020-02-29-podcast.md)). [MiVote](../../organisations/mivote.md)'s Adam Jacoby described [app-based voting that reached 60% consensus](2021-08-07-podcast.md) in 2021. At [Basil's Table in 2022](2023-01-21-podcast.md), DOD's Alexar Pendashteh argued that tapping [collective intelligence](../../concepts/collective-intelligence.md) over the internet was "100% feasible". Nicole's objection is aimed at something narrower: handing a group's choosing to a machine. But it's a useful test for all of them: does the tool help people meet minds, or replace the meeting?
 
 ## What you can do
 
@@ -215,9 +221,9 @@ The recording was transcribed automatically. The event's recorder then checked t
 
 - [DOD is co-hosting a Melbourne panel for International Day of Democracy](2026-08-25-international-day-of-democracy-event.md) — our announcement, with the panel's bios
 - [888 Co-operative Causeway](../../organisations/888-cooperative-causeway.md), [Lateral Economics](../../organisations/lateral-economics.md), [MosaicLab](../../organisations/mosaiclab.md) — Democracy Landscape entries
-- [Citizens' Assembly](../../concepts/citizens-assembly.md), [Sortition](../../concepts/sortition.md), [Deliberative Democracy](../../concepts/deliberative-democracy.md), [Cooperative](../../concepts/cooperative.md) — concept pages
+- [Citizens' Assembly](../../concepts/citizens-assembly.md), [Sortition](../../concepts/sortition.md), [Deliberative Democracy](../../concepts/deliberative-democracy.md), [Cooperative](../../concepts/cooperative.md), [Economic Democracy](../../concepts/economic-democracy.md), [Cognitive Division of Labour](../../concepts/cognitive-division-of-labour.md), [Collective Intelligence](../../concepts/collective-intelligence.md) — concept pages
 - From DOD's archive: [Citizens' Democracy with Nicholas Gruen and Hubertus Hofkirchner (2017)](2017-10-21-podcast.md), [Isegoria with Nicholas Gruen (2020)](2020-03-20-podcast.md), [the 2020 Primer, with Kimbra White of MosaicLab](2022-02-24-podcast.md), [Beyond Corporate Social Responsibility, on co-operatives (2020)](2020-06-20-podcast.md), [Basil's Table (2022)](2023-01-21-podcast.md)
-- [newDemocracy Foundation](../../organisations/newdemocracy.md) — Democracy Landscape entry
+- [newDemocracy Foundation](../../organisations/newdemocracy.md), [Flux Party](../../organisations/flux-party.md), [MiVote](../../organisations/mivote.md) — Democracy Landscape entries
 
 [^unday]: "In 2007 the United Nations General Assembly resolved to observe 15 September as the International Day of Democracy — with the purpose of promoting and upholding the principles of democracy — and invited all member states and organizations to commemorate the day in an appropriate manner that contributes to raising public awareness." [International Day of Democracy](https://en.wikipedia.org/wiki/International_Day_of_Democracy), Wikipedia.
 
