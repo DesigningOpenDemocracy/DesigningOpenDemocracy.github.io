@@ -143,6 +143,7 @@ That is, in some ways, what DOD's landscape is about: the ongoing argument, acro
 ## See also
 
 - [We Need to Rethink Democracy: An Anarchist Critique, and What It Means for DOD](2026-06-26-anarchist-critique-of-democracy.md) — covers the same Athenian exclusion problem from an anarchist perspective, arguing that the demos boundary is structural to democracy itself
+- [DOD 2020 Primer](2022-02-24-podcast.md) — the same question in practice: MosaicLab's Kimbra White on why deliberation practitioners sometimes avoid the word "citizens", "because there's an assumption that they have got the paperwork"
 
 ---
 

@@ -30,6 +30,12 @@ What's notable here is the *process* question as much as the *outcome* question:
 - [Australian Election Study 2025](https://australianelectionstudy.org) — the 2025 Election Report and Trends report include the trust and citizens' assembly polling figures cited above.
 - [Victorian Democrats policy page](https://vic.democrats.org.au/policies/make-victoria-s-upper-house-the-citizens-house-of-review) — independently cites and confirms the same AES 2025 figures.
 
+**From DOD's archive:**
+- [Citizens' Democracy (2017)](2017-10-21-podcast.md) — Nicholas Gruen's proposal for a citizens' chamber alongside the Senate, and Hubertus Hofkirchner on how the City of Melbourne recruited its 2014 citizens' jury.
+- [DOD 2020 Primer](2022-02-24-podcast.md) — MosaicLab's Kimbra White on how citizens' jury members are recruited in practice.
+- [Isegoria (2020)](2020-03-20-podcast.md) — Gruen on why a standing citizens' assembly doesn't need Parliament's permission.
+- [International Day of Democracy recap (2026)](2026-09-26-international-day-of-democracy-recap.md) — Gruen and MosaicLab's Nicole Hunter, ahead of the Victorian election.
+
 [^inquiry-recommendation]: "That, following the 2026 election, a new process be established to consider and negotiate different views about the best electoral structure for Victoria’s Upper House and make a recommendation if it reaches general agreement." The forms the committee names for this independent process are an expert panel, a citizens’ assembly or a constitutional convention. Quoted from the Victorian Electoral Commission's ["Response to the Electoral Matters Committee report on Victoria's Upper House electoral system"](https://www.parliament.vic.gov.au/4a42b9/contentassets/ef9b956f759e4dc1ad5f601f71a29823/3ab-response-to-upper-house-electoral-system.pdf) (PDF), linked from the inquiry's reports page, Parliament of Victoria (March 2026).
 
 [^aes-trust]: "Trust in government (32 percent) and satisfaction with democracy (70 percent) have remained stable since the last election." Sarah Cameron, Ian McAllister, Simon Jackman, Jill Sheppard, ["The 2025 Australian Federal Election: Results from the Australian Election Study"](https://australianelectionstudy.org/wp-content/uploads/The-2025-Australian-Federal-Election-Results-from-the-Australian-Election-Study.pdf), Australian Election Study, November 2025, p.1.

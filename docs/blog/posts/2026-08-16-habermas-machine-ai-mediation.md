@@ -60,6 +60,8 @@ Not as an endorsement — just as a live, well-resourced experiment in the exact
 - Beth Simone Noveck, ["Research Radar: The Peacemaking Machine? How AI can help humans find common ground in democratic deliberation"](https://rebootdemocracy.ai/blog/habermas-machine), RebootDemocracy.ai — a different angle: whether this kind of research is aimed at the right problem
 - [Sortition Foundation](../../organisations/sortition-foundation.md), [Citizens' Assembly](../../concepts/citizens-assembly.md), [Consensus Mapping](../../concepts/consensus-mapping.md), [Collective Intelligence](../../concepts/collective-intelligence.md), [Deliberative Democracy](../../concepts/deliberative-democracy.md) — DOD entries
 - [Occupy to Plurality: what the 2010s civic-tech wave built, and where it stalled](2026-08-07-civic-tech-wave-2010s.md) — DOD, August 2026
+- [International Day of Democracy recap](2026-09-26-international-day-of-democracy-recap.md) — DOD, September 2026: MosaicLab's Nicole Hunter on why she won't let AI theme a jury's ideas for it
+- [Basil's Table: Building Co-operative Futures in the Tech Bros Era](2023-01-21-podcast.md) — DOD podcast, 2022: Alexar Pendashteh on collective intelligence as the missing term next to AI
 
 [^science-paper]: Michael Henry Tessler et al., "AI can help humans find common ground in democratic deliberation," *Science* 386, eadq2852, published 18 October 2024. Full text is paywalled at the DOI (confirmed inaccessible while researching this post) — facts and quotes here are drawn entirely from the secondary sources listed below and from the team's own August 2025 follow-up essay, not from the paper itself. <!-- unquoted: legacy: predates the unquoted: justification convention (added 2026-08-21); not individually reviewed -->
 

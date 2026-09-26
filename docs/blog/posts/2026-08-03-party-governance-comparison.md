@@ -93,7 +93,7 @@ Both axes are symmetric: 4 negative bands, a zero band, 4 positive bands. The ne
 
 21 parties total. 16 Australian (11 active, 5 historical or deregistered) plus 5 international comparators.
 
-Historical parties are included because Flux and MiVote are genuinely interesting governance experiments (even though both deregistered), and the DLP, UAP, and Australia Party give a wider slice of Australian party history for comparison.
+Historical parties are included because Flux and MiVote are genuinely interesting governance experiments (even though both deregistered; DOD interviewed [Flux's Ben Ballingall](2020-02-13-podcast.md) in 2020 and [MiVote's Adam Jacoby](2021-08-07-podcast.md) in 2021), and the DLP, UAP, and Australia Party give a wider slice of Australian party history for comparison.
 
 The Libertarian Party (formerly Liberal Democratic Party) was added specifically to check whether right-of-centre parties score low on external reform in general, or only the populist ones. Turns out it's the latter — the Libertarian Party scores +1, not negative.
 
