@@ -1,0 +1,153 @@
+# Speaker map: Trust, a concept analysis (11 December 2019)
+# Best-effort, from contextual clues. Audio-checked by the maintainer
+# (2026-09-26): cues 332-333 (Brian), 384 (Andrew), 812 (Alexar); marked
+# "checked" below. Everything else is still inferred. A free-flowing
+# discussion with at least five voices, so expect errors in the fast
+# exchanges. How each is recognised:
+#   Brian Khuu - host; narrates the intro/inserts in the first person
+#                ("I'll be your host, Brian Koo", "Hi, this is your host"),
+#                reality-TV and robot examples, the audio note at 455.
+#   Alexar Pendashteh - main speaker; emergence, perception, "harmony",
+#                layers, "use cases", blockchain-as-governance, feedback loop.
+#   Andrew Kay - looks things up on his phone during the talk (Dunbar at 72,
+#                tribal epistemology at 381, "trust but verify" at 685);
+#                US-politics knowledge ("a little bit obsessive about it").
+#   Antony McMullen - introduced at 165; co-op ownership and law.
+#   Older audience member - "Because I'm the oldest person here" (246);
+#                constitutional history, Criminal Code, "flea car".
+# Unnamed voices are [Audience]. See analysis/2019-12-11_trust-concept-analysis.md.
+
+source 2019-12-11_trust-a-concept-analysis.srt
+
+@ 1 Brian Khuu
+@ 24 Alexar Pendashteh
+@ 42 Brian Khuu?
+@ 45 Alexar Pendashteh
+@ 50 Brian Khuu?
+@ 51 Alexar Pendashteh
+@ 52 Audience
+@ 53 Alexar Pendashteh
+@ 60 Andrew Kay?
+@ 62 Alexar Pendashteh
+@ 72 Andrew Kay                  # Dunbar's number; "busy looking up"
+@ 82 Alexar Pendashteh?
+@ 83 Brian Khuu?
+@ 84 Andrew Kay?
+@ 86 Alexar Pendashteh?          # "Bigger tribe."
+@ 87 Andrew Kay?
+@ 89 Alexar Pendashteh           # company held together by law; Chomsky
+@ 100 Brian Khuu?                # "what if I interrupt?"
+@ 105 Alexar Pendashteh
+@ 116 Brian Khuu?                # non-zero-sum; the game show
+@ 120 Andrew Kay?                # "Survival."
+@ 121 Brian Khuu?
+@ 128 Andrew Kay?                # "we've moved on from reality shows"; "as Brian pointed out"
+@ 134 Alexar Pendashteh          # use case 1: work designed for distrust
+@ 150 Andrew Kay                 # answers "Andrew, what do you think"
+@ 157 Alexar Pendashteh
+@ 162 Brian Khuu                 # host insert: introduces Antony
+@ 166 Antony McMullen
+@ 193 Audience                   # equal non-saleable shares
+@ 198 Antony McMullen?
+@ 199 Audience
+@ 200 Antony McMullen
+@ 207 Audience
+@ 208 Antony McMullen            # the 20% rule
+@ 216 Brian Khuu                 # host insert: moving to party integrity
+@ 221 Andrew Kay?                # the Southern Strategy
+@ 243 Audience
+@ 245 Andrew Kay?                # "a little bit obsessive about it, yes"
+@ 246 Older audience member      # "Because I'm the oldest person here"
+@ 249 Andrew Kay?
+@ 255 Older audience member?
+@ 258 Andrew Kay?                # Elizabeth Warren
+@ 261 Antony McMullen?           # White Australia and the labour movement; the Twitter pile-on
+@ 269 Audience
+@ 270 Andrew Kay?
+@ 271 Audience
+@ 272 Andrew Kay?                # cognitive dissonance; Leigh Sales; "sides are stupid"
+@ 289 Alexar Pendashteh          # identity anchors
+@ 305 Andrew Kay?
+@ 308 Alexar Pendashteh          # impeachment as trust
+@ 319 Audience?
+@ 320 Alexar Pendashteh          # "I'm just looking from outside"
+@ 332 Brian Khuu                 # raises Penny Wong (checked)
+fix 332 | Penny Rong | Penny Wong
+fix 333 | Penny Rong | Penny Wong
+@ 340 Andrew Kay?                # the Gillard/Wong speculation (see analysis: check the audio)
+@ 362 Audience?
+@ 366 Andrew Kay?
+@ 375 Brian Khuu?
+@ 376 Andrew Kay                 # tribalism's two edges; "I looked something up" (checked at 384)
+@ 393 Audience
+@ 394 Andrew Kay?
+@ 398 Audience?                  # impeachment
+@ 401 Andrew Kay?
+@ 403 Audience?                  # "the left being blindly supporting something"
+@ 409 Audience
+@ 411 Andrew Kay?                # Putin, fake Facebook pages
+@ 414 Audience
+@ 415 Andrew Kay?
+@ 418 Audience?
+@ 420 Andrew Kay?
+@ 422 Alexar Pendashteh          # why reformers can't unite
+@ 437 Audience
+@ 438 Alexar Pendashteh
+@ 442 Brian Khuu?
+@ 443 Alexar Pendashteh
+@ 453 Brian Khuu
+@ 454 Andrew Kay?                # "Tribalism is about power."
+@ 455 Brian Khuu                 # "Just a note for the audio"
+@ 457 Alexar Pendashteh          # farmer co-ops
+@ 479 Brian Khuu?                # $1 milk
+@ 481 Alexar Pendashteh?
+@ 483 Andrew Kay?                # milk and wool price support
+@ 500 Audience
+@ 501 Andrew Kay?
+@ 513 Antony McMullen?
+@ 519 Antony McMullen            # Wesfarmers, Murray Goulburn, the prisoner's dilemma
+@ 531 Andrew Kay?
+@ 538 Alexar Pendashteh?
+@ 540 Andrew Kay?
+@ 544 Alexar Pendashteh          # the Brisbane ledger startup; superorganism
+@ 562 Audience
+@ 563 Alexar Pendashteh
+@ 565 Older audience member      # price-control referendums
+@ 580 Audience
+@ 581 Older audience member?
+@ 584 Andrew Kay?                # floating the dollar
+@ 596 Brian Khuu?
+@ 597 Andrew Kay?
+@ 604 Antony McMullen?           # "the money is to do stuff"
+@ 608 Brian Khuu?                # Asimov's three laws
+@ 615 Alexar Pendashteh
+@ 619 Andrew Kay?                # fiat money, spears
+@ 631 Alexar Pendashteh
+@ 636 Brian Khuu?
+@ 640 Andrew Kay?                # hyperinflation
+@ 649 Brian Khuu?
+@ 652 Andrew Kay?                # Bitcoin's founder; trust but verify
+@ 675 Andrew Kay?
+@ 676 Older audience member      # Criminal Code, RFI and nuclear reactors
+@ 682 Andrew Kay?
+@ 683 Older audience member?
+@ 684 Andrew Kay?
+@ 694 Audience?
+@ 699 Brian Khuu?                # science rests on assumptions
+@ 704 Alexar Pendashteh          # Bitcoin grounded in mathematics; governance
+@ 747 Brian Khuu?                # "corporate sovereignty"
+@ 748 Alexar Pendashteh
+@ 753 Older audience member?
+@ 756 Alexar Pendashteh?
+@ 760 Andrew Kay?                # Uber operating illegally
+@ 768 Older audience member?
+@ 769 Antony McMullen?           # who owns the platforms
+@ 780 Older audience member      # "flea car"
+@ 784 Antony McMullen?           # Airbnb in Tasmania
+@ 789 Andrew Kay?                # "real political cowardice"
+@ 791 Audience
+@ 792 Alexar Pendashteh          # network effect; feedback loop
+@ 807 Audience                   # "De-stabilize?"
+@ 808 Alexar Pendashteh          # "The feedback loop is not there" (checked at 812)
+@ 814 Audience
+@ 816 Brian Khuu

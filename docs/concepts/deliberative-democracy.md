@@ -11,8 +11,8 @@ In practice, deliberative democracy is implemented through mechanisms like **cit
 
 ## DOD coverage
 
-- [Citizens' Democracy: Presentations and Q&A](../../blog/posts/2017-08-21-podcast.md) — Nicholas Gruen and Hubertus Hofkirchner on deliberative mechanisms, 2017
-- [Isegoria: The Way Citizens' Juries Deliver It, How Elections Destroy It](../../blog/posts/2020-03-20.md) — Nicholas Gruen on why elections undermine the quality of public voice, 2020
+- [Citizens' Democracy: Presentations and Q&A](../../blog/posts/2017-10-21-podcast.md) — Nicholas Gruen and Hubertus Hofkirchner on deliberative mechanisms, 2017
+- [Isegoria: The Way Citizens' Juries Deliver It, How Elections Destroy It](../../blog/posts/2020-03-20-podcast.md) — Nicholas Gruen on why elections undermine the quality of public voice, 2020
 - [Victoria's Upper House inquiry: the case for a citizens' assembly](../../blog/posts/2026-05-24-vic-upper-house-citizens-assembly.md)
 - [Q&A on deliberative democracy for council candidates (Victoria, Australia)](../../blog/posts/2024-09-28-deliberative-democracy-council-candidates-qa.md)
 - [Democracy beyond the ballot box: recap of our International Day of Democracy panel](../../blog/posts/2026-09-26-international-day-of-democracy-recap.md) — practitioners and critics on citizens' juries, sortition and automated "deliberation", 2026

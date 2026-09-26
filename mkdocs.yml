@@ -39,6 +39,8 @@ plugins:
       redirect_maps:
         'organisations/organisations.md': 'organisations/index.md'
         'concepts/concepts.md': 'concepts/index.md'
+        # Post was filed under 21 Aug 2017 until 2026-09; the event was 21 Oct 2017.
+        'blog/2017/08/21/designing-open-democracy-citizens-democracy---presentations-and-qa.md': 'blog/posts/2017-10-21-podcast.md'
   - blog:
       post_excerpt: required
       archive: true

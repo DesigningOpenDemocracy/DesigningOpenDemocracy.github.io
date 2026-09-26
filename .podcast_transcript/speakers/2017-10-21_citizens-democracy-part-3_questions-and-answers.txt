@@ -1,0 +1,71 @@
+# Speaker map: Citizens' Democracy part 3, Q&A (21 October 2017)
+# Best-effort, from contextual clues; not audio-checked. Questioners are not
+# named on the recording and stay anonymous. Gruen is in the room; Hofkirchner
+# is on a video link (hence "our internet problem" at 316). Answers are told
+# apart by content (Prediki, G!LT, Austria vs juries, Australia) and by
+# address ("Well, Nick, let me tell you" at 185; "Thanks, Hubertus" at 159).
+# The Q&A was run by Nick Merange per the intro (cue 17).
+
+source 2017-10-21_citizens-democracy-part-3_questions-and-answers.srt
+
+@ 1 Narrator (Brian Khuu?)
+@ 18 Audience
+@ 24 Hubertus Hofkirchner
+@ 40 Audience
+@ 41 Hubertus Hofkirchner
+@ 43 Audience
+@ 45 Hubertus Hofkirchner
+@ 77 Audience                    # the elect-ministers-for-expertise question
+@ 83 Nicholas Gruen              # US judges, Athenian strategoi
+@ 94 Nicholas Gruen?             # hands over to Hubertus (transcribed "Yusuf")
+@ 95 Hubertus Hofkirchner
+@ 117 Audience                   # donors and interest groups
+@ 121 Nicholas Gruen
+@ 123 Audience?                  # "Of course, it's not criminal"
+@ 124 Nicholas Gruen
+@ 129 Audience                   # branch stacking
+@ 131 Nicholas Gruen?
+@ 132 Audience
+@ 133 Nicholas Gruen             # scrutineers
+@ 147 Hubertus Hofkirchner       # fighter jets, Ireland
+@ 159 Nicholas Gruen             # "Thanks, Hubertus… a brief kind of debate"
+@ 169 Hubertus Hofkirchner       # what is / will be / shall be
+@ 180 Nicholas Gruen
+@ 185 Hubertus Hofkirchner       # "Well, Nick, let me tell you"
+@ 214 Unidentified               # "And Hubert what?"
+@ 215 Hubertus Hofkirchner
+@ 233 Nicholas Gruen?            # asks how the prediction market shows education is a problem
+@ 235 Hubertus Hofkirchner
+@ 241 Nicholas Gruen?            # "that is a value statement, not a predictive statement"
+@ 243 Hubertus Hofkirchner       # reflexive questions
+@ 250 Host (Nick Merange?)
+@ 251 Audience                   # who sets the agenda?
+@ 259 Hubertus Hofkirchner
+@ 280 Audience                   # how would a G!LT MP work in parliament?
+@ 282 Hubertus Hofkirchner
+@ 300 Audience                   # how do you police the MP?
+@ 301 Hubertus Hofkirchner
+@ 302 Audience
+@ 305 Hubertus Hofkirchner?      # link audio breaks up here
+@ 313 Host (Nick Merange?)       # "We just missed the first because of our internet problem"
+@ 317 Hubertus Hofkirchner
+@ 323 Audience?
+@ 324 Host (Nick Merange?)
+@ 326 Hubertus Hofkirchner       # SA nuclear jury
+@ 331 Audience?
+@ 332 Hubertus Hofkirchner
+@ 333 Nicholas Gruen?
+@ 334 Hubertus Hofkirchner
+@ 343 Nicholas Gruen             # doubts the referendum claim
+@ 345 Hubertus Hofkirchner
+@ 346 Nicholas Gruen
+@ 352 Crosstalk                  # mic handover; speakers unclear
+@ 364 Nicholas Gruen?            # "We agree about the moral. I'm not sure about the facts"
+@ 369 Audience                   # replace the Senate?
+@ 373 Nicholas Gruen
+@ 427 DOD organiser (Brian Khuu?)  # Iain Walker's point; "one of our Designing Open Democracy meetings"
+@ 430 Nicholas Gruen?
+@ 431 DOD organiser (Brian Khuu?)
+@ 433 Nicholas Gruen
+@ 467 Host (Nick Merange?)
+@ 470 Narrator (Brian Khuu?)

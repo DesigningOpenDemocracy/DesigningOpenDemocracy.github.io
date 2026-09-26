@@ -1,0 +1,72 @@
+# Speaker map: Basil's Table, co-operative futures in the tech bros era (6 December 2022)
+# Best-effort, from contextual clues; not audio-checked. Basil introduces the
+# panel and closes; Antony McMullen moderates and hands each speaker the floor
+# by name (Alexar at 102, Elena at 141, then Bridgette introduces herself at
+# 177 and Jose follows). Panel surnames are from the blog post.
+# "Jacques" in Basil's introduction (around cue 20) is probably Jose Ramos
+# misheard; see analysis/2022-12-06_basils-table-tech-bros.md.
+
+source 2022-12-06_basils-table_building-co-operative-futures-in-the-tech-bros-era.srt
+
+@ 1 Basil Varghese
+@ 41 Alexar Pendashteh           # "Yeah." (Linux Users of Victoria pronunciation)
+@ 42 Basil Varghese
+@ 57 Basil Varghese?
+@ 59 Antony McMullen
+@ 70 Unidentified                # sound desk
+@ 71 Antony McMullen
+@ 104 Alexar Pendashteh          # "potential"
+@ 132 Antony McMullen
+@ 134 Alexar Pendashteh?
+@ 135 Antony McMullen?
+@ 138 Alexar Pendashteh?
+@ 141 Antony McMullen            # "Elena, I was watching the TV"
+@ 147 Elena Pereyra
+@ 174 Antony McMullen?
+@ 175 Bridgette Engeler          # "That's me being the fatalist"
+@ 204 Antony McMullen?
+@ 206 Antony McMullen?           # "Not the immediate future."
+@ 207 Bridgette Engeler
+@ 208 Antony McMullen?
+@ 209 Bridgette Engeler
+@ 214 Jose Ramos                 # burnout, two narratives
+@ 253 Antony McMullen
+@ 260 Jose Ramos                 # the billionaire problem; the commons
+@ 279 Audience?                  # answers "White Australia"
+@ 280 Jose Ramos
+@ 335 Antony McMullen            # "woke" and "the great awakening"
+@ 341 Bridgette Engeler          # 260 students; co-design
+@ 393 Antony McMullen
+@ 395 Bridgette Engeler?
+@ 396 Antony McMullen            # "isn't there an app for that?"
+@ 400 Alexar Pendashteh
+@ 401 Unidentified               # "Not for me."
+@ 402 Alexar Pendashteh
+@ 414 Antony McMullen            # to Elena: Airbnb
+@ 431 Elena Pereyra
+@ 468 Antony McMullen
+@ 484 Audience                   # tiny houses
+@ 493 Elena Pereyra
+@ 503 Audience                   # "We don't want homes. We want investments."
+@ 510 Elena Pereyra
+@ 522 Alexar Pendashteh          # housing as an economic lever
+@ 538 Antony McMullen?           # "he knows I live in Kew"
+@ 541 Audience                   # techno-feudalism
+@ 548 Jose Ramos
+@ 584 Antony McMullen?
+@ 585 Bridgette Engeler          # business schools
+@ 618 Antony McMullen
+@ 619 Audience                   # transparency; the AI images
+@ 629 Antony McMullen?
+@ 631 Elena Pereyra              # co-housing meetings
+@ 649 Jose Ramos                 # Loab; "we are technology"
+@ 685 Antony McMullen?
+@ 686 Alexar Pendashteh          # CI
+@ 697 Audience
+@ 698 Alexar Pendashteh
+@ 700 Audience                   # "Collective, I've got one."
+@ 701 Alexar Pendashteh
+@ 724 Bridgette Engeler
+@ 735 Antony McMullen
+@ 742 Basil Varghese             # closing reflection
+@ 795 Antony McMullen            # RMIT bursaries

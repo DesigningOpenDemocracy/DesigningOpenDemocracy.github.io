@@ -1,0 +1,62 @@
+# Speaker map: Beyond CSR towards Economic Democracy, online panel (27 March 2020)
+# Best-effort, from contextual clues; not audio-checked. A video call hosted by
+# Alexar Pendashteh; Brian Khuu narrates the intro and outro. Panellists are
+# handed the floor by name ("over to you, Sean", "thank you, Sean" -> Ian).
+# Surnames for Sean and Ian are from the blog post, not the recording.
+# The "Andrew" invited to speak at 573 is taken to be Andrew Downing, who is
+# named as a questioner at 280; the recording doesn't confirm they're the same.
+
+source 2020-03-27_beyond-corporate-social-responsibility-towards-economic-democracy.srt
+
+@ 1 Brian Khuu                   # narrated intro
+@ 11 Antony McMullen             # co-ops 101
+@ 163 Alexar Pendashteh          # introduces Sean
+@ 169 Sean Bezard
+@ 211 Alexar Pendashteh?         # "Alright, Ian's back."
+@ 212 Sean Bezard
+@ 215 Ian McBurney               # bHive
+@ 266 Alexar Pendashteh          # asks about Localised
+@ 269 Ian McBurney
+@ 270 Alexar Pendashteh
+@ 272 Ian McBurney
+@ 276 Alexar Pendashteh          # reads Andrew Downing's question
+@ 283 Antony McMullen
+@ 284 Sean Bezard                # non-member directors
+@ 302 Antony McMullen
+@ 312 Alexar Pendashteh          # reads Anouk's question
+@ 316 Ian McBurney
+@ 340 Antony McMullen            # co-operative capital units
+@ 352 Ian McBurney
+@ 354 Alexar Pendashteh
+@ 364 Brian Khuu?                # "as Brian is mentioning" (366)
+@ 366 Alexar Pendashteh
+@ 375 Sean Bezard?
+@ 376 Antony McMullen?
+@ 377 Sean Bezard                # "move slow and repair things"
+@ 390 Antony McMullen            # recession; Mondragon
+@ 426 Alexar Pendashteh          # second-tier co-ops
+@ 431 Antony McMullen
+@ 434 Alexar Pendashteh
+@ 435 Antony McMullen
+@ 443 Alexar Pendashteh          # network weavers
+@ 452 Ian McBurney               # identity and reputation
+@ 469 Alexar Pendashteh
+@ 479 Nick Merange               # limited liability
+@ 483 Antony McMullen
+@ 490 Nick Merange
+@ 491 Antony McMullen?
+@ 492 Nick Merange               # follow-up on decision-making
+@ 499 Antony McMullen
+@ 507 Nick Merange
+@ 510 Alexar Pendashteh          # Sid's pre-sales question
+@ 517 Antony McMullen
+@ 531 Ian McBurney               # Pre-Pay Solar
+@ 536 Alexar Pendashteh          # also floats a food co-op
+@ 551 Ian McBurney               # "two or three weeks away from poverty"
+@ 567 Brian Khuu                 # GameStop
+@ 571 Unidentified
+@ 572 Brian Khuu
+@ 574 Andrew Downing?            # "a very much a systems thinker"
+@ 627 Brian Khuu?
+@ 631 Antony McMullen            # market failure vs co-operative commonwealth
+@ 647 Brian Khuu                 # narrated outro

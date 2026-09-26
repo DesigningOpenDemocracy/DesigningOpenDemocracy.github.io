@@ -1,0 +1,15 @@
+# Speaker map: Citizens' Democracy part 1, Nicholas Gruen's talk (21 October 2017)
+# Best-effort, from contextual clues; not audio-checked. A single talk, so
+# attribution is reliable apart from the narrator and one audience interjection.
+# The narrator names "Brian Koo and Nicholas Morange" as hosts in the third
+# person; Brian narrates later episodes in the first person, so probably him.
+
+source 2017-10-21_citizens-democracy-part-1_nicholas-gruen.srt
+
+@ 1 Narrator (Brian Khuu?)
+@ 11 Nicholas Gruen
+@ 85 Audience                    # supplies "the motive force"
+@ 86 Nicholas Gruen
+@ 87 Audience
+@ 88 Nicholas Gruen
+@ 241 Narrator (Brian Khuu?)

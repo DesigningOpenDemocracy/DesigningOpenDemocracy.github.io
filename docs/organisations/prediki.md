@@ -79,7 +79,7 @@ last_checked: '2026-09-15'
 
 Prediki (Prediki Prediction Markets GmbH) is a peer-to-peer platform for opinion research and collective intelligence, built around prediction market methodology. Rather than simple polling, participants make structured predictions about outcomes, stake a position, and provide reasons — the system aggregates these into probability estimates while tracking the quality of each contributor's predictions over time.
 
-The platform was developed by Hubertus Hofkirchner, a DOD member who presented it at the [2017 Designing Open Democracy event](../../blog/posts/2017-08-21-podcast.md) alongside Nicolas Gruen.
+The platform was developed by Hubertus Hofkirchner, a DOD member who presented it at the [2017 Designing Open Democracy event](../../blog/posts/2017-10-21-podcast.md) alongside Nicolas Gruen.
 
 ## How it differs from polling
 
