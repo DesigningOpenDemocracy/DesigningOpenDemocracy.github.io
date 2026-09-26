@@ -7,9 +7,10 @@ website: https://canberra-alliance.org.au
 logo: /assets/org-logos/capad-icon.png
 banner: /assets/org-logos/capad.jpg
 contact:
-  checked: 2026-07-24
   email: secretary@canberra-alliance.org.au
-  source: https://canberra-alliance.org.au
+  form: https://canberra-alliance.org.au/contact
+  source: https://canberra-alliance.org.au/contact
+  checked: 2026-09-26
 summary: A Canberra-based community nonprofit promoting good governance and civic
   participation in the ACT through candidate accountability forums, deliberative conversations,
   and civic education — independently funded and member-run since 2015.

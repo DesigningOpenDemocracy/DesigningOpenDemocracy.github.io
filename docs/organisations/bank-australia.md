@@ -5,9 +5,10 @@ status: active
 country: AU
 website: https://www.bankaust.com.au
 contact:
-  checked: '2026-09-26'
   phone: 132 888
-  source: https://www.bankaust.com.au/contact-us
+  form: https://www.bankaust.com.au/contact
+  source: https://www.bankaust.com.au/contact-us/
+  checked: 2026-09-26
 summary: Australia's first customer-owned bank — every customer holds one equal share
   and one vote at the AGM, with profits returned as better rates and fees rather than
   shareholder dividends.
