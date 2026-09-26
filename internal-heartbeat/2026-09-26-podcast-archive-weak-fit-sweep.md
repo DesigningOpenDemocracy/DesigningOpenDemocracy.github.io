@@ -141,3 +141,28 @@ CoHousing Australia has no confirmed founding date (checked its own site;
 not stated) — its page has no `events:` frontmatter as a result, which is
 fine per convention (`events:` is optional), but worth filling in if a
 founding date ever surfaces.
+
+## Update: Cohousing Australia reverted, same day
+
+On a second look, prompted by the user asking two follow-up questions —
+whether this reading of the framework was getting too loose, and whether
+the entry was actually useful to DOD's readership — Cohousing Australia's
+promotion doesn't hold up on either count, while Bank Australia's does:
+
+- **Framework fit**: CoHA's own self-description leads with advocacy for a
+  housing model ("advancing resident-driven collaborative housing"); the
+  "collective governance" framing used to justify the page was Elena
+  Pereyra's own gloss on her work, not CoHA's self-description. That's a
+  weaker case than Bank Australia's AGM one-member-one-vote mechanism,
+  which is squarely governance-mechanism work in CLAUDE.md's own terms.
+- **Readership usefulness** (a second, separate gate this session's
+  discussion led to formalising in `CLAUDE.md`'s Organisation pages
+  Curation standard bullet): Bank Australia is actionable for DOD's
+  audience (switch banking to a democratically-governed institution, at
+  real scale) in a way Cohousing Australia isn't — its practical hook
+  (find/start a cohousing community) serves a housing-movement interest
+  more than a democracy-movement one.
+
+`docs/organisations/cohousing-australia.md` was removed and the entry
+restored to `orgs-not-included.md`'s weak-fit watch list, with both
+reasons noted there. Bank Australia's page stands unchanged.

@@ -97,15 +97,15 @@ that mentioned it goes stale.
 | [Open Source Industry Australia](https://en.wikipedia.org/wiki/Open_Source_Industry_Australia) | AU | 2026-09-26 | Recurring DOD co-organiser Alexar Pendashteh is a director — [2019-12-11 podcast](../docs/blog/posts/2019-12-11-podcast.md) | FOSS industry advocacy, not participation mechanisms. [Sweep notes](2026-09-26-podcast-archive-weak-fit-sweep.md) |
 | [Action Foresight](https://actionforesight.net/) | AU | 2026-09-26 | Director Jose Ramos, panellist — [2023-01-21 podcast](../docs/blog/posts/2023-01-21-podcast.md) | Futures/foresight consultancy, adjacent but not governance-mechanism-focused. [Sweep notes](2026-09-26-podcast-archive-weak-fit-sweep.md) |
 | [Small Giants Academy](https://www.smallgiants.com.au/about) | AU | 2026-09-26 | Co-host, RadicalxChange Melbourne launch + Wisdom & Action Forum — [2026-08-07 post](../docs/blog/posts/2026-08-07-radicalxchange-melbourne.md) | Leadership-development academy, not governance-mechanism work itself. [Sweep notes](2026-09-26-podcast-archive-weak-fit-sweep.md) |
+| [Cohousing Australia](https://www.cohousingaustralia.org.au/about) | AU | 2026-09-26 | Panellist Elena Pereyra's "collective housing as a model for collective governance" — [2023-01-21 podcast](../docs/blog/posts/2023-01-21-podcast.md) | Briefly promoted to a full page, then reverted the same day on a second look: CoHA's own self-description leads with advocacy for a housing model, not governance-mechanism work in its own right — the "collective governance" framing was Elena Pereyra's gloss, not CoHA's. Also weaker on the readership-usefulness check `CLAUDE.md`'s Curation standard note now names: DOD's audience is the democracy/governance-reform space, and cohousing's practical hook is a housing-movement interest, not a democracy-movement one. [Sweep notes](2026-09-26-podcast-archive-weak-fit-sweep.md) |
 
-~~[Bank Australia](https://www.bankaust.com.au/)~~ and ~~[Cohousing
-Australia](https://www.cohousingaustralia.org.au/about)~~ — both flagged in
-the 2026-09-26 sweep as possibly stronger than weak-fit, were promoted the
-same day to full pages: [`docs/organisations/bank-australia.md`](../docs/organisations/bank-australia.md)
-and [`docs/organisations/cohousing-australia.md`](../docs/organisations/cohousing-australia.md).
+~~[Bank Australia](https://www.bankaust.com.au/)~~ was flagged in the
+2026-09-26 sweep as possibly stronger than weak-fit and promoted the same
+day to a full page: [`docs/organisations/bank-australia.md`](../docs/organisations/bank-australia.md).
 Removed from this table per the README's promotion convention. See the
 [sweep notes](2026-09-26-podcast-archive-weak-fit-sweep.md)'s "Open question
-for a future pass" for what shipped.
+for a future pass" for what shipped, and the same file's follow-up note for
+why Cohousing Australia (also promoted that day) was reverted instead.
 
 ## Possible spinoff: a rights-documentation/advocacy tracker
 
