@@ -150,7 +150,8 @@ marks cuts). Check against the audio before quoting in DOD's own voice.
 - **Libra** (01:17:43). IT let rival corporates "trust each other, to form
   alliance… to take over something that… traditionally belonged to… the
   government, issuance of money".
-- **The feedback loop** (01:22:19–01:24:08). Opens with "Can I just augment your
+- **The feedback loop** (01:22:19–01:24:08). Alexar's (audio-checked
+  2026-09-26 at 01:24:00, "The feedback loop is not there"). Opens with "Can I just augment your
   conversation? I think the key word you're looking for is… the network effect":
   platforms become hard to leave. "Who is influenced is not who is influencing it… the team behind
   Uber, Facebook… are influencing the platform by decisions they make. But an
@@ -182,7 +183,9 @@ marks cuts). Check against the audio before quoting in DOD's own voice.
   Australians had "their awakening moment" about Aboriginal people.
 - **"Sides are stupid"** (00:32:59). "Calling yourself left or right is so
   ludicrous, because there are a million issues."
-- **Penny Wong** (00:39:21–00:41:52). His speculation that Gillard, in minority
+- **Penny Wong** (00:39:21–00:41:52). Raised by Brian (00:38:42, audio-checked
+  2026-09-26: "it reminds me of Penny Wong"). The speculation that follows,
+  from 00:39:42, is still only *inferred* to be Andrew's: that Gillard, in minority
   government, asked Wong to hold the party line against marriage equality: "pure
   tribalism… I am going with the tribe over my own short-term needs." **This is
   his guess about a private conversation. Don't repeat it as fact.**
@@ -190,7 +193,8 @@ marks cuts). Check against the audio before quoting in DOD's own voice.
   the bad points are the same thing… A tribe is loyal to each other. That is
   good. A tribe can end up being loyal… in a way that flies in the face of logic
   or decency, that is bad."
-- **Tribal epistemology** (00:41:52–00:42:42). Looked up on the night: "when the
+- **Tribal epistemology** (00:41:52–00:42:42). Andrew's (audio-checked
+  2026-09-26 at 00:42:33). Looked up on the night: "when the
   tribal bond rejects actual epistemological principles. In fact, you stop trying
   to find an objective truth because it could weaken the tribe… It's not limited
   to the right… It's not limited to the US, but you really see it… in the extreme

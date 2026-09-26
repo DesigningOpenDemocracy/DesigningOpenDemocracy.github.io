@@ -29,7 +29,11 @@ shortened (keeping the episode titles) so the longest is now under 90, and
 To correct an attribution (e.g. after listening to the audio), edit the map,
 not the generated `.srt`, then re-run `apply.py`. Remove the `?` once a line
 is confirmed by ear. The `split` directive (see `apply.py`) handles a turn
-change in the middle of a cue; none of the current maps needed one.
+change in the middle of a cue; none of the current maps needed one. The
+`fix` directive corrects a mishearing in the generated copy only (e.g. the
+Trust map turns "Penny Rong" into "Penny Wong"); use it for errors
+confirmed by ear or beyond doubt, such as a person's name, and leave the
+rest to the analysis notes' correction tables.
 
 ## How far to trust them
 

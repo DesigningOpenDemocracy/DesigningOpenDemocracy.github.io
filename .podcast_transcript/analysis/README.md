@@ -14,7 +14,7 @@ transcripts didn't already.
 | Recorded | Recording | Notes | Blog post |
 |---|---|---|---|
 | 2017-05-19 | Challenges facing the present and future of democracy | [notes](2017-05-19_challenges-facing-democracy.md) | [2017-05-19-podcast](../../docs/blog/posts/2017-05-19-podcast.md) |
-| 2017-10-21 | Citizens' Democracy: Nicholas Gruen, Hubertus Hofkirchner, Q&A | [notes](2017-10-21_citizens-democracy.md) | [2017-08-21-podcast](../../docs/blog/posts/2017-10-21-podcast.md) (date wrong, see below) |
+| 2017-10-21 | Citizens' Democracy: Nicholas Gruen, Hubertus Hofkirchner, Q&A | [notes](2017-10-21_citizens-democracy.md) | [2017-10-21-podcast](../../docs/blog/posts/2017-10-21-podcast.md) (was filed under 21 Aug; see below) |
 | 2019-12-11 | Trust, a concept analysis | [notes](2019-12-11_trust-concept-analysis.md) | [2019-12-11-podcast](../../docs/blog/posts/2019-12-11-podcast.md) |
 | 2020-02-11 | Ben Ballingall on Flux and IBDD (main + bonus) | [notes](2020-02-11_flux-party-ben-ballingall.md) | [2020-02-13](../../docs/blog/posts/2020-02-13-podcast.md), [2020-02-29](../../docs/blog/posts/2020-02-29-podcast.md) |
 | 2020-02-21 | DOD 2020 Primer | [notes](2020-02-21_dod-2020-primer.md) | [2022-02-24-podcast](../../docs/blog/posts/2022-02-24-podcast.md) |
@@ -192,8 +192,8 @@ Not done here; listed so they aren't lost.
   | Recording | Timestamp | What to settle | Why it matters |
   |---|---|---|---|
   | 2017-10-21 part 3 (Q&A) | 00:49:44 | Gruen: "…unless people respect it and pay it legitimacy" (recording) vs "…unless you consider it properly" (live notes, taken by ear). **Verified 2026-09-26**: the recording's wording is correct word for word (cues 416–418) | Done |
-  | 2019-12-11 Trust | 00:39:21–00:41:52 | Who speculates about Gillard and Penny Wong (the post implies Andrew Kay) | Speculation about named politicians; needs the right name on it, or cutting |
-  | 2019-12-11 Trust | 00:41:52 and 01:22:19 | Who introduces tribal epistemology; who says the feedback-loop lines | Both are quoted in the post and linked from concept pages |
+  | 2019-12-11 Trust | 00:39:42–00:41:52 | Who speculates about Gillard and Penny Wong. **Partly checked 2026-09-26**: Brian raises Wong (00:38:42); the speculation itself is still inferred as Andrew Kay | Speculation about named politicians; the post doesn't repeat it, so only matters if a future post does |
+  | 2019-12-11 Trust | 00:41:52 and 01:22:19 | Who introduces tribal epistemology; who says the feedback-loop lines. **Checked 2026-09-26**: Andrew Kay (00:42:33) and Alexar Pendashteh (01:24:00) | Done |
   | 2022-12-06 Basil's Table | 00:03:12 and 00:15:42 | Is "Jacques" José Ramos, or a different person? | Affects who told the shoelace story |
   | 2017-05-19 go-round | 00:13:06 | Is the closing speaker Kevin or David? | The post names Kevin as the likely speaker |
   | 2020-03-27 Beyond CSR | 00:59:49 | Is the "systems thinker" Andrew Downing? | The post names him |

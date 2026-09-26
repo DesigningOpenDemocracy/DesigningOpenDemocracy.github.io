@@ -18,6 +18,12 @@ Map file format (one directive per line; `#` starts a comment):
                                  occurrence of <text>; the text before it stays
                                  with the current speaker, <text> onwards goes
                                  to <Speaker>, who stays current afterwards
+    fix <cue> | <wrong> | <right>
+                                 correct a mishearing in this cue's text
+                                 (every occurrence); applied before splits,
+                                 so a split marker should use the corrected
+                                 text. Only for errors confirmed by ear or
+                                 beyond doubt from context (a person's name)
 
 Cue numbers are the original file's. Directives must be in ascending cue
 order. A `?` in a speaker name (e.g. `Andrew Kay?`, `Narrator (Brian Khuu?)`) marks the attribution as uncertain;
@@ -63,13 +69,14 @@ def from_ms(ms):
 
 
 def parse_map(path):
-    turns, splits, last, source = {}, {}, 0, None
+    turns, splits, fixes, last, source = {}, {}, {}, 0, None
     for i, raw in enumerate(path.read_text(encoding="utf-8").splitlines(), 1):
-        line = raw.split("#", 1)[0].strip() if not raw.lstrip().startswith("split") else raw.strip()
+        piped = raw.lstrip().startswith(("split", "fix"))
+        line = raw.strip() if piped else raw.split("#", 1)[0].strip()
         if not line or line.startswith("#"):
             continue
         if line.startswith("source "):
-            if turns or splits or source:
+            if turns or splits or fixes or source:
                 sys.exit(f"{path.name}:{i}: 'source' must appear once, before any turn")
             source = line[len("source "):].strip()
             continue
@@ -89,6 +96,12 @@ def parse_map(path):
                 sys.exit(f"{path.name}:{i}: bad split: {raw}")
             n = int(m.group(1))
             splits.setdefault(n, []).append((m.group(2), m.group(3).strip()))
+        elif line.startswith("fix"):
+            m = re.match(r"fix\s+(\d+)\s*\|\s*(.+?)\s*\|\s*(.+?)\s*(#.*)?$", line)
+            if not m:
+                sys.exit(f"{path.name}:{i}: bad fix: {raw}")
+            n = int(m.group(1))
+            fixes.setdefault(n, []).append((m.group(2), m.group(3).strip()))
         else:
             sys.exit(f"{path.name}:{i}: unknown directive: {raw}")
         if n < last:
@@ -96,20 +109,25 @@ def parse_map(path):
         last = n
     if source is None:
         sys.exit(f"{path.name}: missing 'source <file>.srt' line")
-    return source, turns, splits
+    return source, turns, splits, fixes
 
 
-def label(cues, turns, splits, name):
+def label(cues, turns, splits, fixes, name):
     out, current = [], None
     if cues and cues[0]["n"] not in turns:
         sys.exit(f"{name}: first cue {cues[0]['n']} has no speaker")
     known = {c["n"] for c in cues}
-    for n in list(turns) + list(splits):
+    for n in list(turns) + list(splits) + list(fixes):
         if n not in known:
             sys.exit(f"{name}: cue {n} does not exist")
     for c in cues:
         current = turns.get(c["n"], current)
-        pieces = [(c["text"], current)]
+        text = c["text"]
+        for wrong, right in fixes.get(c["n"], []):
+            if wrong not in text:
+                sys.exit(f"{name}: cue {c['n']}: fix text not found: {wrong!r}")
+            text = text.replace(wrong, right)
+        pieces = [(text, current)]
         for marker, who in splits.get(c["n"], []):
             text, prev = pieces[-1]
             idx = text.find(marker)
@@ -133,19 +151,20 @@ def main(argv):
     maps = [HERE / f"{s}.txt" for s in stems] if stems else sorted(HERE.glob("20*.txt"))
     for mp in maps:
         stem = mp.stem
-        source, turns, splits = parse_map(mp)
+        source, turns, splits, fixes = parse_map(mp)
         src = ROOT / source
         if not src.exists():
             sys.exit(f"{mp.name}: no transcript {source}")
         cues = parse_srt(src)
-        out = label(cues, turns, splits, mp.name)
+        out = label(cues, turns, splits, fixes, mp.name)
         speakers = {}
         for _, _, t in out:
             who = t[1:t.index("]")]
             speakers[who] = speakers.get(who, 0) + 1
         unsure = sum(v for k, v in speakers.items() if "?" in k)
         print(f"{stem}: {len(cues)} cues -> {len(out)}; {len(turns)} turns, "
-              f"{sum(len(v) for v in splits.values())} splits; {unsure} cues uncertain")
+              f"{sum(len(v) for v in splits.values())} splits, "
+              f"{sum(len(v) for v in fixes.values())} fixes; {unsure} cues uncertain")
         dst = ROOT / f"{stem}_inferred-speakers.srt"
         if len(dst.name.encode("utf-8")) > MAX_NAME_BYTES:
             sys.exit(f"{mp.name}: output name is {len(dst.name.encode())} bytes "

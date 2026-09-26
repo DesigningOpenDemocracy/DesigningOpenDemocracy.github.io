@@ -1,5 +1,7 @@
 # Speaker map: Trust, a concept analysis (11 December 2019)
-# Best-effort, from contextual clues; not audio-checked. A free-flowing
+# Best-effort, from contextual clues. Audio-checked by the maintainer
+# (2026-09-26): cues 332-333 (Brian), 384 (Andrew), 812 (Alexar); marked
+# "checked" below. Everything else is still inferred. A free-flowing
 # discussion with at least five voices, so expect errors in the fast
 # exchanges. How each is recognised:
 #   Brian Khuu - host; narrates the intro/inserts in the first person
@@ -69,12 +71,14 @@ source 2019-12-11_trust-a-concept-analysis.srt
 @ 308 Alexar Pendashteh          # impeachment as trust
 @ 319 Audience?
 @ 320 Alexar Pendashteh          # "I'm just looking from outside"
-@ 332 Brian Khuu?                # raises Penny Wong
+@ 332 Brian Khuu                 # raises Penny Wong (checked)
+fix 332 | Penny Rong | Penny Wong
+fix 333 | Penny Rong | Penny Wong
 @ 340 Andrew Kay?                # the Gillard/Wong speculation (see analysis: check the audio)
 @ 362 Audience?
 @ 366 Andrew Kay?
 @ 375 Brian Khuu?
-@ 376 Andrew Kay?                # tribalism's two edges; "I looked something up"
+@ 376 Andrew Kay                 # tribalism's two edges; "I looked something up" (checked at 384)
 @ 393 Audience
 @ 394 Andrew Kay?
 @ 398 Audience?                  # impeachment
@@ -144,6 +148,6 @@ source 2019-12-11_trust-a-concept-analysis.srt
 @ 791 Audience
 @ 792 Alexar Pendashteh          # network effect; feedback loop
 @ 807 Audience                   # "De-stabilize?"
-@ 808 Alexar Pendashteh
+@ 808 Alexar Pendashteh          # "The feedback loop is not there" (checked at 812)
 @ 814 Audience
 @ 816 Brian Khuu
