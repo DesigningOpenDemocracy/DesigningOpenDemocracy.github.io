@@ -19,9 +19,30 @@ default:
 # the printed next-steps for those. A few minutes to ~15min depending on how
 # many orgs are due for a recheck.
 #
+# Gap-filling only: an org that already has a contact record on file is
+# trusted and skipped outright, no matter how long ago it was checked — no
+# one's watching, so there's no one to act on a `[CONFLICTS with existing:
+# ...]` flag if a re-check turned one up. Use `maintenance-human-in-loop`
+# for a pass that also re-verifies existing records.
+#
 # One-shot local maintenance pass — read nothing, just run this.
 [group('quick start')]
-maintenance: _deps
+maintenance: (_maintenance-pass "--skip-existing")
+
+# Same as `maintenance`, but also re-checks orgs that already have a contact
+# record instead of trusting it forever — still skips ones checked within the
+# last 180 days (check_contact.py's own staleness gate), so it's not a full
+# re-probe of everything either. The difference from `maintenance` is who's
+# watching: re-checking an existing record can surface a `[CONFLICTS with
+# existing: ...]` flag that needs a human (or an LLM doing a deliberate
+# review pass) to look at the diff and decide, so only reach for this when
+# you intend to actually read the output afterward.
+#
+# Also re-checks orgs with an existing contact record — for when a human's watching.
+[group('quick start')]
+maintenance-human-in-loop: (_maintenance-pass "")
+
+_maintenance-pass contact_skip_flag: _deps
     @echo "=== 1/8  RSS & sitemap activity ==="
     just rss-probe --update-activity
     @echo "=== 2/8  News page scrape ==="
@@ -31,7 +52,7 @@ maintenance: _deps
     @echo "=== 4/8  Calendar (ics_feed) sync ==="
     just sync-events
     @echo "=== 5/8  Contact info probe ==="
-    just contact-probe --write
+    just contact-probe --write {{contact_skip_flag}}
     @echo "=== 6/8  Logo probe ==="
     just logo-probe --write
     @echo "=== 7/8  Shared-link preview metadata (blog posts) ==="
@@ -43,10 +64,11 @@ maintenance: _deps
     @echo "  git status && git diff docs/organisations/ docs/data/ docs/blog/"
     @echo ""
     @echo "Still worth doing by hand:"
-    @echo "  just review-orgs          # interactive: opens each org site in your browser"
-    @echo "  just discover-elections   # report-only: elections.yml gaps"
+    @echo "  just review-orgs               # interactive: opens each org site in your browser"
+    @echo "  just discover-elections        # report-only: elections.yml gaps"
+    @echo "  just maintenance-human-in-loop  # also re-checks orgs that already have a contact record, not just gaps"
     @echo "  just contact-probe-deep --slug <org>   # SPA org site still missing contact info? (needs: just setup-playwright, once)"
-    @echo "  just check                # full pre-push checklist (mkdocs --strict + lint gates)"
+    @echo "  just check                     # full pre-push checklist (mkdocs --strict + lint gates)"
 
 # --- Setup ---
 

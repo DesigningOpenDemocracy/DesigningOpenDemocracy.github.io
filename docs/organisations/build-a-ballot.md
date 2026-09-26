@@ -6,9 +6,10 @@ country: AU
 website: https://www.buildaballot.org.au
 logo: /assets/org-logos/build-a-ballot.png
 contact:
-  checked: 2026-07-24
   email: tool@buildaballot.org.au
-  source: https://www.buildaballot.org.au
+  form: https://www.buildaballot.org.au/contact
+  source: https://www.buildaballot.org.au/contact
+  checked: 2026-09-26
 summary: An Australian voter advice tool that helps citizens match their values to
   candidates before elections — launched before each state and federal election by
   Project Planet, a climate-focused charity.

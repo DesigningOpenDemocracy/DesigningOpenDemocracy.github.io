@@ -6,9 +6,10 @@ country: AU
 website: https://www.888causeway.coop
 logo: /assets/org-logos/888-cooperative-causeway.png
 contact:
-  checked: 2026-07-24
   email: coopcauseway@gmail.com
-  source: https://www.888causeway.coop/contact/
+  form: https://www.888causeway.coop/contact
+  source: https://www.888causeway.coop/contact
+  checked: 2026-09-26
 summary: Victoria's first registered co-operative co-working space, based in Melbourne
   CBD, providing affordable member-run workspace for social economy organisations
   alongside a podcast and events network focused on cooperative and mutual enterprise.

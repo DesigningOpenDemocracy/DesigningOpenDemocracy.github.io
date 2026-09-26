@@ -6,9 +6,10 @@ country: US
 website: https://civictech.guide
 logo: /assets/org-logos/civic-tech-field-guide.svg
 contact:
-  checked: 2026-08-09
   email: info@civictech.guide
+  form: https://civictech.guide/contact
   source: https://civictech.guide/contact
+  checked: 2026-09-26
 summary: A crowdsourced directory describing itself as the world's most complete collection
   of projects, tools, and organisations using technology for democracy — founded 2016,
   now helping 50,000+ people a month find civic-tech work, tools, and collaborators

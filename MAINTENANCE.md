@@ -8,9 +8,15 @@ Read **CLAUDE.md** first for site conventions and curation standards.
 > **Didn't read any of this? Run `just maintenance`.** It scripts the automated
 > data-collection pass (step 2 below) end to end — RSS/news/website probes,
 > calendar sync, contact/logo/shared-link discovery — and prints what's still
-> left for a human: the interactive review pass (step 3), and committing.
-> Read on if you want to know what it's actually doing, need per-org flags
-> (`--slug`, `--force`), or are doing the manual review pass by hand.
+> left for a human: the interactive review pass (step 3), and committing. It
+> trusts any org that already has a contact record on file and skips
+> re-checking it, no matter how old — nobody's watching a bare automated run
+> to act on a discrepancy it might turn up. Run `just maintenance-human-in-loop`
+> instead when you intend to actually read the output afterward: it also
+> re-verifies existing contact records (still skipping ones checked in the
+> last 180 days) and can surface a `[CONFLICTS with existing: ...]` flag for
+> you to judge. Read on if you want to know what it's actually doing, need
+> per-org flags (`--slug`, `--force`), or are doing the manual review pass by hand.
 
 ---
 

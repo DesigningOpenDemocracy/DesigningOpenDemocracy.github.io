@@ -6,9 +6,10 @@ country: AU
 website: https://www.communityindependentsproject.org
 logo: /assets/org-logos/community-independents-project.webp
 contact:
-  checked: 2026-07-24
   email: info@communityindependentsproject.org
+  form: https://www.communityindependentsproject.org/contact
   source: https://www.communityindependentsproject.org/contact-us
+  checked: 2026-09-26
 summary: The national support and capacity-building body for Australia's community
   independent candidate movement — a decentralised network of locally organised, non-partisan
   groups that support community-driven independent candidates for parliament.

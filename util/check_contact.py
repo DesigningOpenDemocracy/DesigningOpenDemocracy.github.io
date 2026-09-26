@@ -71,6 +71,7 @@ Usage:
     python util/check_contact.py --write           # write high-confidence email/phone/form to contact:
     python util/check_contact.py --slug X --write --write-channels  # also write social channels, one org at a time, after reading the report
     python util/check_contact.py --force           # re-check/overwrite orgs that already have contact info
+    python util/check_contact.py --skip-existing   # fast pass: skip any org with an existing email/phone/form, gap-fill only
     python util/check_contact.py --output results.json
 
 Requirements: requests, python-frontmatter (util/requirements.txt)
@@ -110,6 +111,44 @@ ORGS_DIR = os.path.join(DOCS_DIR, "organisations")
 SKIP_FILES = {"index.md"}
 WAYBACK_PREFIX = "https://web.archive.org"
 TODAY = datetime.today().strftime("%Y-%m-%d")
+
+# Contact info changes far less often than RSS/news activity — a published
+# email/phone/form is rarely revised, so re-crawling ~20 candidate paths per
+# org on every maintenance run (157 orgs and growing) buys almost nothing
+# over last quarter's result for the vast majority of them. check_rss.py
+# already skips orgs checked within its own staleness window; this script
+# had no equivalent, so a full run re-probed every org, every time, forever
+# — including orgs where nothing was ever found, since those never
+# accumulate any contact: field for an "already has it" skip to key off.
+# Tracked in a separate state file rather than contact.checked: frontmatter
+# because CLAUDE.md's contact: convention is explicit that an org with
+# nothing publicly published gets no contact: block at all — "checked, found
+# nothing" still needs to be remembered somewhere for the skip to work.
+STATE_FILE = os.path.join(DOCS_DIR, "data", "contact-check-state.json")
+STALE_DAYS = 180
+
+
+def load_state():
+    if os.path.exists(STATE_FILE):
+        with open(STATE_FILE, encoding="utf-8") as f:
+            return json.load(f)
+    return {}
+
+
+def save_state(state):
+    os.makedirs(os.path.dirname(STATE_FILE), exist_ok=True)
+    with open(STATE_FILE, "w", encoding="utf-8") as f:
+        json.dump(state, f, indent=2, sort_keys=True, ensure_ascii=False)
+        f.write("\n")
+
+
+def parse_date(val):
+    if not val:
+        return None
+    try:
+        return datetime.fromisoformat(str(val).strip()).date()
+    except ValueError:
+        return None
 
 # Likely contact-info paths, tried in order after the homepage.
 CONTACT_PATHS = [
@@ -614,6 +653,7 @@ def main():
     parser.add_argument("--write", action="store_true", help="Write high-confidence email/phone/form findings to contact: frontmatter (default: report only)")
     parser.add_argument("--write-channels", action="store_true", help="Also write social/chat channel findings (Telegram, Instagram, etc.) — only after reviewing the report; see module docstring for why these aren't included in plain --write")
     parser.add_argument("--force", action="store_true", help="Re-check orgs that already have contact.email and a full set of known channel types, and overwrite existing email/phone/form/channel values")
+    parser.add_argument("--skip-existing", action="store_true", help="Skip any org with an existing email/phone/form on file, regardless of how long ago it was checked — for a fast pass that only fills gaps. Overridden by --force.")
     parser.add_argument("--output", metavar="FILE", help="Write JSON results to FILE")
     args = parser.parse_args()
 
@@ -625,8 +665,10 @@ def main():
     session = requests.Session()
     session.headers.update({"User-Agent": DOD_USER_AGENT})
 
+    state = load_state()
     results = []
     written = 0
+    skipped_stale = 0
     print(f"\nProbing {len(orgs)} org website(s) for contact info (timeout={args.timeout}s)…\n")
 
     for i, org in enumerate(orgs, 1):
@@ -638,19 +680,58 @@ def main():
             print(f"  [{i:3d}/{len(orgs)}] SKIP  {slug} (already has email + all known channel types)")
             continue
 
+        if (args.skip_existing and not args.force
+                and (existing.get("email") or existing.get("phone") or existing.get("form"))):
+            print(f"  [{i:3d}/{len(orgs)}] SKIP  {slug} (has a contact record — pass --force, or drop --skip-existing, to recheck)")
+            continue
+
+        last_checked = parse_date(state.get(slug, {}).get("checked"))
+        if not args.force and last_checked:
+            age = (datetime.today().date() - last_checked).days
+            if age <= STALE_DAYS:
+                print(f"  [{i:3d}/{len(orgs)}] SKIP  {slug} (contact-checked {age}d ago)")
+                skipped_stale += 1
+                continue
+
         print(f"  [{i:3d}/{len(orgs)}] {slug} … ", end="", flush=True)
         found = probe_contact(org["website"], timeout=args.timeout, session=session)
-        results.append({"slug": slug, **found})
+        state[slug] = {"checked": TODAY}
+        save_state(state)
+
+        # A field that's already set is never overwritten without --force (see
+        # module docstring) — but if the probe's own finding disagrees with
+        # what's on file, that disagreement produces no write and therefore no
+        # git diff for anyone to notice later. Flag it here instead (and carry
+        # it into --output JSON) so a human or an LLM doing a deliberate
+        # review pass has something to act on without cross-referencing the
+        # file by hand. Phone is only flagged at high confidence (a tel: link)
+        # — the free-text phone regex has too many real false positives (see
+        # module docstring) to flag every disagreement without drowning
+        # genuine ones in noise.
+        conflicts = {}
+        if found["email"] and existing.get("email") and existing["email"] != found["email"]:
+            conflicts["email"] = existing["email"]
+        if (found["phone"] and found["phone_confidence"] == "high"
+                and existing.get("phone") and existing["phone"] != found["phone"]):
+            conflicts["phone"] = existing["phone"]
+        if found["form"] and existing.get("form") and existing["form"] != found["form"]:
+            conflicts["form"] = existing["form"]
+        results.append({"slug": slug, **found, "conflicts": conflicts})
 
         parts = []
         if found["email"]:
             tag = "" if found["email_confidence"] == "high" else " [low-confidence, verify manually]"
+            if "email" in conflicts:
+                tag += f" [CONFLICTS with existing: {conflicts['email']} — verify manually]"
             parts.append(f"email={found['email']}{tag}")
         if found["phone"]:
             tag = "" if found["phone_confidence"] == "high" else " [low-confidence, verify manually]"
+            if "phone" in conflicts:
+                tag += f" [CONFLICTS with existing: {conflicts['phone']} — verify manually]"
             parts.append(f"phone={found['phone']}{tag}")
         if found["form"]:
-            parts.append(f"form={found['form']}")
+            tag = f" [CONFLICTS with existing: {conflicts['form']} — verify manually]" if "form" in conflicts else ""
+            parts.append(f"form={found['form']}{tag}")
         new_channel_types = set(found["channels"]) - existing_channel_types
         for channel_type in sorted(new_channel_types):
             parts.append(f"{channel_type}={found['channels'][channel_type]} [verify it's this org's own account, not a shared parent's]")
@@ -676,7 +757,9 @@ def main():
                 print(f"           → wrote contact: block ({source})")
 
     print(f"\n{'=' * 60}")
-    print(f"Checked {len(results)} org(s)")
+    print(f"Checked {len(results)} org(s)"
+          + (f", skipped {skipped_stale} (contact-checked within {STALE_DAYS}d — pass --force to recheck)"
+             if skipped_stale else ""))
     if args.write:
         print(f"Wrote contact: block for {written} org(s) — high-confidence email/tel: findings and "
               f"detected public contact forms are auto-written; free-text phone matches never are"

@@ -6,9 +6,10 @@ country: AU
 website: https://www.codeforaustralia.org
 logo: /assets/org-logos/code-for-australia.png
 contact:
-  checked: 2026-07-24
   email: info@codeforaustralia.org
-  source: https://www.codeforaustralia.org/contact-us/
+  form: https://www.codeforaustralia.org/contact-us
+  source: https://www.codeforaustralia.org/contact-us
+  checked: 2026-09-26
 summary: An Australian civic technology organisation that partners with government
   and non-profits to deliver digital solutions — through a fellowship program placing
   technologists inside public institutions.
