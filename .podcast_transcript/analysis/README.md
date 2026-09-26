@@ -19,7 +19,7 @@ transcripts didn't already.
 | 2020-02-11 | Ben Ballingall on Flux and IBDD (main + bonus) | [notes](2020-02-11_flux-party-ben-ballingall.md) | [2020-02-13](../../docs/blog/posts/2020-02-13-podcast.md), [2020-02-29](../../docs/blog/posts/2020-02-29-podcast.md) |
 | 2020-02-21 | DOD 2020 Primer | [notes](2020-02-21_dod-2020-primer.md) | [2022-02-24-podcast](../../docs/blog/posts/2022-02-24-podcast.md) |
 | 2020-02-25 | Basil's Table: banking on the future | [notes](2020-02-25_basils-table-banking.md) | [2020-02-20-podcast](../../docs/blog/posts/2020-02-20-podcast.md) |
-| 2020-03-03 | Isegoria: Nicholas Gruen | [notes](2020-03-03_isegoria-nicholas-gruen.md) | [2020-03-20](../../docs/blog/posts/2020-03-20.md) |
+| 2020-03-03 | Isegoria: Nicholas Gruen | [notes](2020-03-03_isegoria-nicholas-gruen.md) | [2020-03-20](../../docs/blog/posts/2020-03-20-podcast.md) |
 | 2020-03-27 | Beyond CSR towards economic democracy (co-ops panel) | [notes](2020-03-27_beyond-csr-economic-democracy.md) | [2020-06-20-podcast](../../docs/blog/posts/2020-06-20-podcast.md) |
 | 2021-07-20 | Catching up with Adam Jacoby (MiVote) | [notes](2021-07-20_mivote-adam-jacoby.md) | [2021-08-07-podcast](../../docs/blog/posts/2021-08-07-podcast.md) |
 | 2021-07-31 | Austin, founder of Write In Stone | [notes](2021-07-31_write-in-stone-austin.md) | [2021-08-08-podcast](../../docs/blog/posts/2021-08-08-podcast.md) |

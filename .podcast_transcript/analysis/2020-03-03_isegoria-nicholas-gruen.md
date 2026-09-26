@@ -8,7 +8,7 @@ post left out. See [`README.md`](README.md) for conventions.
   (automated, from pod-transcript.com; **not** checked against the audio). A
   two-hander, Brian Khuu interviewing Nicholas Gruen, so attribution is
   reliable. ≈1h19m.
-- **Blog post:** [`docs/blog/posts/2020-03-20.md`](../../docs/blog/posts/2020-03-20.md).
+- **Blog post:** [`docs/blog/posts/2020-03-20-podcast.md`](../../docs/blog/posts/2020-03-20-podcast.md).
 - **Prepared:** 2026-09-25 by Claude Code from the automated transcript.
 
 The middle of Gruen's three DOD recordings: after the

@@ -27,7 +27,7 @@ vTaiwan — the Taiwanese consultation platform built around Pol.is — gives co
 
 ## What Pol.is actually does to deliberation
 
-[Nicholas Gruen](https://en.wikipedia.org/wiki/Nicholas_Gruen), who presented to DOD on isegoria and citizens' juries in [2017](../2017-08-21-podcast.md) and [2020](../2020-03-20.md), has a frame that maps cleanly onto this. Elections are *competitive* and *aristocratic* — you win by beating opponents, and the people who rise are a self-selected political class. Juries are *unitary* and *democratic in the Greek sense* — your job is to reach a conclusion together, and equality of speech (*isegoria*) is the design principle, not freedom to out-shout.
+[Nicholas Gruen](https://en.wikipedia.org/wiki/Nicholas_Gruen), who presented to DOD on isegoria and citizens' juries in [2017](../2017-08-21-podcast.md) and [2020](../2020-03-20-podcast.md), has a frame that maps cleanly onto this. Elections are *competitive* and *aristocratic* — you win by beating opponents, and the people who rise are a self-selected political class. Juries are *unitary* and *democratic in the Greek sense* — your job is to reach a conclusion together, and equality of speech (*isegoria*) is the design principle, not freedom to out-shout.
 
 Pol.is is, at its core, an isegoria machine. Instead of threaded argument (which rewards combative voices), participants vote agree/disagree/pass on each other's statements. The algorithm surfaces cross-cluster consensus — points of agreement between groups that disagree on most things. Minority views that cut across conventional divides become visible rather than drowned out. The 2015 Uber consultation showed this clearly: taxi drivers and Uber supporters converged on shared positions about registration and fair regulation that open debate had buried under noise.[^uber-consensus]
 
@@ -95,4 +95,4 @@ What this post doesn't cover: the AI governance angle (Alignment Assemblies, the
 - Chris Horton, ["The simple but ingenious system Taiwan uses to crowdsource its laws"](https://www.technologyreview.com/2018/08/21/240284/the-simple-but-ingenious-system-taiwan-uses-to-crowdsource-its-laws/), *MIT Technology Review*, 2018 — the early, optimistic account.
 - [DOD August 2017 meetup](../2017-08-25.md) — Pol.is first discussed alongside other technologies changing democracy, with criteria for evaluating democratic tech.
 - [Nicholas Gruen at DOD, August 2017](../2017-08-21-podcast.md) — presentation on isegoria, elections as aristocratic, and citizens' juries as the democratic alternative.
-- [Nicholas Gruen at DOD, March 2020](../2020-03-20.md) — podcast on isegoria and the case for citizens' juries in Australia.
+- [Nicholas Gruen at DOD, March 2020](../2020-03-20-podcast.md) — podcast on isegoria and the case for citizens' juries in Australia.

@@ -161,7 +161,7 @@ Basil Varghese, 888's patron, closed with a childhood memory from Kerala. His gr
 > "Tonight we have had four people coming out of their wells and creating and croaking, and now hopefully creating great song."
 > — Basil Varghese
 
-Nicholas made the case for citizens' juries at a [2017 DOD event](2017-08-21-podcast.md) and on [DOD's podcast in 2020](2020-03-20.md). This time he went a step further: stop asking and run one. With a Victorian election two months away, the open question is who pays for the first one.
+Nicholas made the case for citizens' juries at a [2017 DOD event](2017-08-21-podcast.md) and on [DOD's podcast in 2020](2020-03-20-podcast.md). This time he went a step further: stop asking and run one. With a Victorian election two months away, the open question is who pays for the first one.
 
 ## What you can do
 

@@ -18,7 +18,7 @@ Where the date came from:
   2020-02-11  2020-02-29-podcast.md (bonus content)        warm-up recorded ahead of the 11 Feb main conversation
   2020-02-21  2022-02-24-podcast.md                        "held on 2020-02-21"
   2020-02-25  2020-02-20-podcast.md                        "recorded live ... February 25 @ 6:00 pm" (Kelvin Club)
-  2020-03-03  2020-03-20.md                                "recorded on the 3rd of March 2020"
+  2020-03-03  2020-03-20-podcast.md                                "recorded on the 3rd of March 2020"
   2020-03-27  2020-06-20-podcast.md                        online event replacing the 27 March 2020 meetup
   2021-07-20  2021-08-07-podcast.md                        "recorded 20 July 2021"
   2021-07-31  2021-08-08-podcast.md                        "recorded on 31 July 2021"
