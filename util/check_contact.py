@@ -111,6 +111,44 @@ SKIP_FILES = {"index.md"}
 WAYBACK_PREFIX = "https://web.archive.org"
 TODAY = datetime.today().strftime("%Y-%m-%d")
 
+# Contact info changes far less often than RSS/news activity — a published
+# email/phone/form is rarely revised, so re-crawling ~20 candidate paths per
+# org on every maintenance run (157 orgs and growing) buys almost nothing
+# over last quarter's result for the vast majority of them. check_rss.py
+# already skips orgs checked within its own staleness window; this script
+# had no equivalent, so a full run re-probed every org, every time, forever
+# — including orgs where nothing was ever found, since those never
+# accumulate any contact: field for an "already has it" skip to key off.
+# Tracked in a separate state file rather than contact.checked: frontmatter
+# because CLAUDE.md's contact: convention is explicit that an org with
+# nothing publicly published gets no contact: block at all — "checked, found
+# nothing" still needs to be remembered somewhere for the skip to work.
+STATE_FILE = os.path.join(DOCS_DIR, "data", "contact-check-state.json")
+STALE_DAYS = 180
+
+
+def load_state():
+    if os.path.exists(STATE_FILE):
+        with open(STATE_FILE, encoding="utf-8") as f:
+            return json.load(f)
+    return {}
+
+
+def save_state(state):
+    os.makedirs(os.path.dirname(STATE_FILE), exist_ok=True)
+    with open(STATE_FILE, "w", encoding="utf-8") as f:
+        json.dump(state, f, indent=2, sort_keys=True, ensure_ascii=False)
+        f.write("\n")
+
+
+def parse_date(val):
+    if not val:
+        return None
+    try:
+        return datetime.fromisoformat(str(val).strip()).date()
+    except ValueError:
+        return None
+
 # Likely contact-info paths, tried in order after the homepage.
 CONTACT_PATHS = [
     "/contact", "/contact/", "/contact-us", "/contact-us/", "/contactus",
@@ -625,8 +663,10 @@ def main():
     session = requests.Session()
     session.headers.update({"User-Agent": DOD_USER_AGENT})
 
+    state = load_state()
     results = []
     written = 0
+    skipped_stale = 0
     print(f"\nProbing {len(orgs)} org website(s) for contact info (timeout={args.timeout}s)…\n")
 
     for i, org in enumerate(orgs, 1):
@@ -638,9 +678,19 @@ def main():
             print(f"  [{i:3d}/{len(orgs)}] SKIP  {slug} (already has email + all known channel types)")
             continue
 
+        last_checked = parse_date(state.get(slug, {}).get("checked"))
+        if not args.force and last_checked:
+            age = (datetime.today().date() - last_checked).days
+            if age <= STALE_DAYS:
+                print(f"  [{i:3d}/{len(orgs)}] SKIP  {slug} (contact-checked {age}d ago)")
+                skipped_stale += 1
+                continue
+
         print(f"  [{i:3d}/{len(orgs)}] {slug} … ", end="", flush=True)
         found = probe_contact(org["website"], timeout=args.timeout, session=session)
         results.append({"slug": slug, **found})
+        state[slug] = {"checked": TODAY}
+        save_state(state)
 
         parts = []
         if found["email"]:
@@ -676,7 +726,9 @@ def main():
                 print(f"           → wrote contact: block ({source})")
 
     print(f"\n{'=' * 60}")
-    print(f"Checked {len(results)} org(s)")
+    print(f"Checked {len(results)} org(s)"
+          + (f", skipped {skipped_stale} (contact-checked within {STALE_DAYS}d — pass --force to recheck)"
+             if skipped_stale else ""))
     if args.write:
         print(f"Wrote contact: block for {written} org(s) — high-confidence email/tel: findings and "
               f"detected public contact forms are auto-written; free-text phone matches never are"
