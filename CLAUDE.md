@@ -74,6 +74,7 @@ The invariants recorded there are not immutable. Any document in this repo — i
 
 ### Organisation pages (`docs/organisations/`)
 
+- **Never run parallel agents that read-then-write the same org file(s).** Each agent's `frontmatter.load(path)` captures a snapshot at load time; if two agents touch overlapping files, whichever writes back last (`frontmatter.dump(post, path)`) silently overwrites the other's changes with no error. A batch of ~40 notes was lost this way during an early event-sourcing backfill (noticed only when the hard gate still showed events as undocumented). Either serialize the writes (one batch at a time) or give parallel agents non-overlapping file sets — never the same org page from two agents at once.
 - The section is framed as a **Democracy Landscape reference** — organisations we monitor, not formal affiliates
 - Use `type`, `status`, `country`, `website`, `summary` in frontmatter
 - **Frontmatter field order** — org pages use a canonical key ordering. All org frontmatter should follow this order. Scripts that write or modify frontmatter MUST preserve it:

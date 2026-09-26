@@ -1,10 +1,11 @@
 # 2026-08-22 — citation-archival design: settled shape
 
-Follow-on to `2026-08-22-citation-archival-handoff.md` (Task 2). That entry
-preserved the prior session's open sketch and four open questions. This
-entry records the actual design conversation with the maintainer
-(mofosyne) that resolved them — and it lands somewhere much narrower than
-the original sketch, because it turned out this repo already has half the
+Follow-on to a prior session's handoff note (Task 2, since removed as
+superseded — its open sketch and four open questions are resolved below,
+so it no longer carries any information this entry doesn't). This entry
+records the actual design conversation with the maintainer (mofosyne) that
+resolved them — and it lands somewhere much narrower than the original
+sketch, because it turned out this repo already has half the
 infrastructure built and just never wired it up.
 
 ## Conclusion up front
