@@ -64,7 +64,7 @@ vTaiwan continues as a volunteer laboratory[^pp-volunteer], experimenting with A
 <details>
 <summary>About this analysis</summary>
 
-The isegoria frame used here isn't imported from the vTaiwan literature — it came from reading DOD's own 2017 meeting transcript, where Gruen's line was first noted down live as "…amounts to nothing unless you consider it properly". The recording itself ends it "…unless people respect it and pay it legitimacy", which is the version quoted above — the live note was taken by ear and appears to have paraphrased the ending. That grounded the analysis in DOD's own intellectual history rather than treating vTaiwan as an external case study.
+The isegoria frame used here isn't imported from the vTaiwan literature — it came from reading DOD's own 2017 meeting transcript, where Gruen's line was first noted down live as "…amounts to nothing unless you consider it properly". The recording itself ends it "…unless people respect it and pay it legitimacy" (checked against the audio), which is the version quoted above — the live note was taken by ear and paraphrased the ending. That grounded the analysis in DOD's own intellectual history rather than treating vTaiwan as an external case study.
 
 One claim worth scrutinising: the "80% action rate" on 26 deliberations (2015–2018) comes from vTaiwan's own tally, not independent verification. It's frequently cited but self-reported.
 

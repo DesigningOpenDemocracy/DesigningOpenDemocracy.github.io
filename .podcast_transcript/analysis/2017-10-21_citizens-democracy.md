@@ -340,9 +340,9 @@ marks cuts). Check against the audio before quoting in DOD's own voice.
    written down by ear during the talk and may have been misheard or
    paraphrased in the moment. The recording's wording is treated as the
    authoritative one, and both posts now quote it; the live-notes version
-   is kept in the post's original notes as a record. (Still an automated
-   transcript, so a quick listen would make it exact, but it's no longer a
-   choice between two equally good sources.)
+   is kept in the post's original notes as a record. **Verified against the
+   audio on 2026-09-26** by the maintainer: cues 416–418 (00:49:32, 00:49:44,
+   00:49:56) are word-for-word correct in the automated transcript.
 2. **"Both speakers, independently, cite the post-Brexit spike in Britons
    googling 'what is the EU?'"**: only Hofkirchner does, in these cuts. Gruen
    uses Brexit (the £350m bus) but not the Google search.

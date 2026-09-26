@@ -69,9 +69,10 @@ edits go through review like any other). Two needed more than a text edit:
 - **#1**: now fully fixed. The post is dated 21 October 2017, its old
   21 August URL redirects to the new one, and it keeps a short note that it
   used to be filed under August.
-- **#2**: resolved in favour of the recording. The live notes were taken by
-  ear during the talk, so both posts now quote the transcript's wording and
-  mention the live-notes version only as a record.
+- **#2**: resolved in favour of the recording, and verified against the
+  audio (00:49:44 in the Q&A episode). The live notes were taken by ear
+  during the talk; both posts now quote the recording and keep the
+  live-notes version only as a record.
 
 The same pass also brought every blockquote in these posts into line with the
 automated transcript's wording (fillers dropped, `…` for cuts), added a few
@@ -190,7 +191,7 @@ Not done here; listed so they aren't lost.
 
   | Recording | Timestamp | What to settle | Why it matters |
   |---|---|---|---|
-  | 2017-10-21 part 3 (Q&A) | 00:49:44 | Gruen: "…unless people respect it and pay it legitimacy" (recording) vs "…unless you consider it properly" (live notes, taken by ear). Recording's wording adopted; a listen would confirm the exact words | Quoted in two published posts. Low priority now |
+  | 2017-10-21 part 3 (Q&A) | 00:49:44 | Gruen: "…unless people respect it and pay it legitimacy" (recording) vs "…unless you consider it properly" (live notes, taken by ear). **Verified 2026-09-26**: the recording's wording is correct word for word (cues 416–418) | Done |
   | 2019-12-11 Trust | 00:39:21–00:41:52 | Who speculates about Gillard and Penny Wong (the post implies Andrew Kay) | Speculation about named politicians; needs the right name on it, or cutting |
   | 2019-12-11 Trust | 00:41:52 and 01:22:19 | Who introduces tribal epistemology; who says the feedback-loop lines | Both are quoted in the post and linked from concept pages |
   | 2022-12-06 Basil's Table | 00:03:12 and 00:15:42 | Is "Jacques" José Ramos, or a different person? | Affects who told the shoelace story |
