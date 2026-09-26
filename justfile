@@ -61,7 +61,17 @@ _maintenance-pass contact_skip_flag: _deps
     just reorder-frontmatter
     @echo ""
     @echo "Automated pass done. Review before committing:"
-    @echo "  git status && git diff docs/organisations/ docs/data/ docs/blog/"
+    @echo "  git status && git diff docs/organisations/ docs/data/ docs/blog/ docs/assets/org-logos/"
+    @FILES=$(git status --porcelain -- docs/organisations/ docs/data/ docs/blog/ docs/assets/org-logos/ 2>/dev/null | wc -l | tr -d ' '); \
+    if [ "$FILES" -gt 0 ]; then \
+        echo ""; \
+        echo "Suggested commit (after you've reviewed the diff above):"; \
+        echo "  git add docs/organisations/ docs/data/ docs/blog/ docs/assets/org-logos/"; \
+        echo "  git commit -m \"chore: automated maintenance pass — $(date +%Y-%m-%d)\" -m \"$FILES file(s) touched — activity/contact/logo/calendar/shared-link data refreshed by just maintenance\""; \
+    else \
+        echo ""; \
+        echo "Nothing changed — everything was already fresh (or skipped). Nothing to commit."; \
+    fi
     @echo ""
     @echo "Still worth doing by hand:"
     @echo "  just review-orgs               # interactive: opens each org site in your browser"
