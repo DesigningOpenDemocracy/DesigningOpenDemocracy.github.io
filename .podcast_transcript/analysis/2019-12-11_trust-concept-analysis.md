@@ -150,8 +150,9 @@ marks cuts). Check against the audio before quoting in DOD's own voice.
 - **Libra** (01:17:43). IT let rival corporates "trust each other, to form
   alliance… to take over something that… traditionally belonged to… the
   government, issuance of money".
-- **The feedback loop** (01:22:19–01:24:08). Network effects make platforms hard
-  to leave. "Who is influenced is not who is influencing it… the team behind
+- **The feedback loop** (01:22:19–01:24:08). Opens with "Can I just augment your
+  conversation? I think the key word you're looking for is… the network effect":
+  platforms become hard to leave. "Who is influenced is not who is influencing it… the team behind
   Uber, Facebook… are influencing the platform by decisions they make. But an
   entirely different group of people are influenced by the platform… And this
   disconnect is the root cause of issues, which is something like cooperatives
@@ -251,7 +252,6 @@ marks cuts). Check against the audio before quoting in DOD's own voice.
   at the same time, some humans act like that as well… they optimize themselves
   to actually [game] the system."
 - Science rests on trusting the universe is consistent (01:12:55).
-- Network effects (01:22:19).
 
 ### Audience
 

@@ -57,6 +57,8 @@ source 2020-02-21_designing-open-democracy-2020-primer.srt
 @ 216 Alexar Pendashteh          # the foundation proposal
 @ 255 Brian Khuu
 @ 256 Alexar Pendashteh
+@ 258 Brian Khuu?                # "as you'll see in our podcast… One of the last one we covered is Flux"; could still be Alexar continuing
+@ 261 Alexar Pendashteh?          # "Did that cover all the things that we discussed?"
 @ 262 Brian Khuu?
 @ 263 Alexar Pendashteh
 @ 270 Brian Khuu
