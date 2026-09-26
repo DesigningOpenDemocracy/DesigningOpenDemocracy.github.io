@@ -190,7 +190,7 @@ Not done here; listed so they aren't lost.
 
   | Recording | Timestamp | What to settle | Why it matters |
   |---|---|---|---|
-  | 2017-10-21 part 3 (Q&A) | 00:49:07 | Gruen: "…unless people respect it and pay it legitimacy" (recording) vs "…unless you consider it properly" (live notes, taken by ear). Recording's wording adopted; a listen would confirm the exact words | Quoted in two published posts. Low priority now |
+  | 2017-10-21 part 3 (Q&A) | 00:49:44 | Gruen: "…unless people respect it and pay it legitimacy" (recording) vs "…unless you consider it properly" (live notes, taken by ear). Recording's wording adopted; a listen would confirm the exact words | Quoted in two published posts. Low priority now |
   | 2019-12-11 Trust | 00:39:21–00:41:52 | Who speculates about Gillard and Penny Wong (the post implies Andrew Kay) | Speculation about named politicians; needs the right name on it, or cutting |
   | 2019-12-11 Trust | 00:41:52 and 01:22:19 | Who introduces tribal epistemology; who says the feedback-loop lines | Both are quoted in the post and linked from concept pages |
   | 2022-12-06 Basil's Table | 00:03:12 and 00:15:42 | Is "Jacques" José Ramos, or a different person? | Affects who told the shoelace story |

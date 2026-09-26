@@ -226,7 +226,7 @@ marks cuts). Check against the audio before quoting in DOD's own voice.
   campaign committee. **Unverified; don't repeat without checking.**
   "They're egotists and idealists… here they are in this toxic show. And
   they're trying their best" (00:49:07).
-- **The line DOD quotes** (00:49:07), per the automated transcript: "in
+- **The line DOD quotes** (00:49:44), per the automated transcript: "in
   political combat, in our system, the considered opinion of the people
   amounts to nothing unless people respect it and pay it legitimacy." See
   "Checking the blog post" below: DOD has been quoting a different ending.
@@ -331,7 +331,7 @@ marks cuts). Check against the audio before quoting in DOD's own voice.
    twice) quote: *"In political combat, the considered opinion of the people
    amounts to nothing unless you consider it properly."* That wording comes
    from the human live notes (post line ~480). The automated transcript
-   (part 3, 00:49:07) has: *"in political combat, in our system, the considered
+   (part 3, 00:49:44) has: *"in political combat, in our system, the considered
    opinion of the people amounts to nothing unless people respect it and pay
    it legitimacy."* The transcript version fits the surrounding argument
    better (the next sentences are about legitimacy and press combat, and he
