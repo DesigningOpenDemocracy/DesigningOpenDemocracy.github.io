@@ -4,6 +4,12 @@ type: party
 status: active
 country: AU
 website: https://www.fusionparty.org.au
+logo: /assets/org-logos/fusion-party.svg
+contact:
+  email: contact@fusionparty.org.au
+  phone: 0410249574
+  source: https://www.fusionparty.org.au/contact
+  checked: 2026-09-27
 summary: An Australian political party formed in 2021 from the merger of five minor
   parties (Science, Pirate, Secular, Vote Planet, Climate Change Justice), retaining
   them as semi-autonomous internal branches. Platform includes political donation

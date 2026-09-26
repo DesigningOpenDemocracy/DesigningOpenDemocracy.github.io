@@ -63,10 +63,10 @@ activity:
     note: 'Latest tweet: police accountability post'
     url: https://x.com/thisisyourparty
   rss:
-    checked: 2026-06-07
-    date: 2026-06-07
+    date: 2026-09-27
     note: RSS feed active
     url: https://www.yourparty.uk/feed
+    checked: 2026-09-27
 last_checked: '2026-09-16'
 ---
 

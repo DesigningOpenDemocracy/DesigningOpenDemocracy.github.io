@@ -83,6 +83,13 @@
     "source": "https://commons.wikimedia.org/wiki/File:AustralianGreensLogo_official.svg",
     "title": "Australian Greens"
   },
+  "bank-australia": {
+    "license": "Fair use",
+    "note": "site asset, auto-detected img-logo",
+    "path": "bank-australia.webp",
+    "source": "https://cdn.prod.website-files.com/64d5d5beb2a67e9491ecdff8/6859675ea65a040bf1c7c63a_bank-aus-logo-white.webp",
+    "title": "Bank Australia"
+  },
   "bersih": {
     "license": "Fair use",
     "note": null,
@@ -272,6 +279,13 @@
     "source": "https://bonds.coop/wp-content/uploads/2024/10/blue-tree-100.png",
     "title": "Co-operative Bonds"
   },
+  "council-watch": {
+    "license": "Fair use",
+    "note": "site asset, auto-detected apple-touch-icon",
+    "path": "council-watch.png",
+    "source": "https://static.wixstatic.com/media/d1d8f9_c4b708b996b1486c982db8f499cfc52f%7Emv2.png/v1/fill/w_180%2Ch_180%2Clg_1%2Cusm_0.66_1.00_0.01/d1d8f9_c4b708b996b1486c982db8f499cfc52f%7Emv2.png",
+    "title": "Council Watch"
+  },
   "cppcc": {
     "license": "Fair use",
     "note": null,
@@ -363,6 +377,13 @@
     "source": "https://democracy-technologies.org/wp-content/uploads/2024/07/cropped-favicon-180x180.png",
     "title": "Democracy Technologies"
   },
+  "democracy-without-borders": {
+    "license": "Fair use",
+    "note": "site asset, auto-detected apple-touch-icon",
+    "path": "democracy-without-borders.png",
+    "source": "https://www.democracywithoutborders.org/files/cropped-dwb_symbol_RGB.png",
+    "title": "Democracy Without Borders"
+  },
   "democracyco": {
     "license": "Fair use",
     "note": "site asset, auto-detected img-logo",
@@ -404,6 +425,13 @@
     "path": "digidem-lab.png",
     "source": "https://digidemlab.org/wp-content/uploads/2025/05/digidemlab-logo-XL.png",
     "title": "Digidem Lab"
+  },
+  "digital-rights-watch": {
+    "license": "Fair use",
+    "note": "site asset, auto-detected apple-touch-icon",
+    "path": "digital-rights-watch.png",
+    "source": "https://digitalrightswatch.org.au/images/apple-touch-icon.png",
+    "title": "Digital Rights Watch (DRW)"
   },
   "earthworker-cooperative": {
     "license": "Fair use",
@@ -454,6 +482,13 @@
     "source": "https://storage.ghost.io/c/3a/b9/3ab98359-2edd-44f0-abae-34759c5d6d5b/content/images/2026/03/logo-motto3.png",
     "title": "Ette Media"
   },
+  "fairvote": {
+    "license": "Fair use",
+    "note": "site asset, auto-detected apple-touch-icon",
+    "path": "fairvote.png",
+    "source": "https://fairvote.org/wp-content/uploads/2022/09/cropped-Group-502-180x180.png",
+    "title": "FairVote"
+  },
   "fbk": {
     "license": "Fair use",
     "note": "site asset, auto-detected og-image",
@@ -467,6 +502,13 @@
     "path": "fide.webp",
     "source": "http://static1.squarespace.com/static/6881f170e22de75639597035/t/692d8822704a776c868f1604/1764591650146/Social+Icon.png?format=1500w",
     "title": "FIDE — Federation for Innovation in Democracy"
+  },
+  "flacso-cuba": {
+    "license": "Fair use",
+    "note": "site asset, auto-detected img-logo",
+    "path": "flacso-cuba.png",
+    "source": "https://flacso.org/assets/img/logo/logo.png",
+    "title": "FLACSO-Cuba"
   },
   "flux-party": {
     "license": "Fair use",
@@ -502,6 +544,13 @@
     "path": "fundacja-stocznia.png",
     "source": "https://stocznia.org.pl/fav/apple-touch-icon.png",
     "title": "Fundacja Stocznia"
+  },
+  "fusion-party": {
+    "license": "Fair use",
+    "note": "site asset, auto-detected img-logo",
+    "path": "fusion-party.svg",
+    "source": "https://fusionparty.space/images/solo_colour.svg",
+    "title": "Fusion Party"
   },
   "g0v": {
     "license": "Fair use",
@@ -957,6 +1006,13 @@
     "path": "radicalxchange.png",
     "source": "https://www.radicalxchange.org/images/logos/favicon.png",
     "title": "RadicalxChange Foundation"
+  },
+  "representus": {
+    "license": "Fair use",
+    "note": "site asset, auto-detected img-logo",
+    "path": "representus.svg",
+    "source": "https://represent.us/images/logo_repus3-text-ko.svg",
+    "title": "RepresentUs"
   },
   "rwanda-governance-board": {
     "license": "Fair use",

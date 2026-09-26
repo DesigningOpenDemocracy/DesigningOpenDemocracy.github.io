@@ -4,6 +4,7 @@ type: advocacy
 status: active
 country: DE
 website: https://www.democracywithoutborders.org
+logo: /assets/org-logos/democracy-without-borders.png
 contact:
   email: hello@democracywithoutborders.org
   source: https://www.democracywithoutborders.org

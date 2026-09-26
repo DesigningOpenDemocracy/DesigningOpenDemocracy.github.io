@@ -39,7 +39,7 @@ activity:
     url: https://apolitical.co/
   sitemap:
     note: Sitemap found, no lastmod
-    checked: 2026-09-18
+    checked: 2026-09-27
 last_checked: '2026-09-16'
 ---
 

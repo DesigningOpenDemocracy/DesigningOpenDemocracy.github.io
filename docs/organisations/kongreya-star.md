@@ -54,11 +54,10 @@ activity:
     url: https://kongra-star.org/eng/
     checked: 2026-09-21
   rss:
-    checked: 2026-08-09
-    date: 2026-08-08
-    note: 'Latest post: Şêrîn Abbas :Azadiya Rêber Abdullah Ocalan şertê bingehîn
-      e ji bo serkeftina pêv'
-    url: https://kongra-star.org/?p=33202
+    date: 2026-09-22
+    note: 'Latest post: Gelê Herêma Cizîrê ,Zimanê me Hebûna meye daketin qadan'
+    url: https://kongra-star.org/?p=33688
+    checked: 2026-09-27
 last_checked: '2026-09-21'
 ---
 

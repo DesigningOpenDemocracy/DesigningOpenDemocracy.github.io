@@ -4,6 +4,7 @@ type: advocacy
 status: active
 country: AU
 website: https://www.councilwatch.com.au
+logo: /assets/org-logos/council-watch.png
 contact:
   email: info@councilwatch.com.au
   phone: 0427 862 103

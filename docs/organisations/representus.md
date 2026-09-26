@@ -4,6 +4,12 @@ type: advocacy
 status: active
 country: US
 website: https://represent.us
+logo: /assets/org-logos/representus.svg
+contact:
+  email: info@represent.us
+  form: https://represent.us/contact
+  source: https://represent.us/contact
+  checked: 2026-09-27
 summary: America's largest grassroots anti-corruption organisation, co-founded in
   2012, winning state and local reforms on ranked-choice voting, independent redistricting,
   campaign finance, and lobbying rules across partisan lines.

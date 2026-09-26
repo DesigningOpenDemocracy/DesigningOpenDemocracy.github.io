@@ -4,6 +4,11 @@ type: advocacy
 status: active
 country: US
 website: https://fairvote.org
+logo: /assets/org-logos/fairvote.png
+contact:
+  email: hello@fairvote.org
+  source: https://fairvote.org/get-involved
+  checked: 2026-09-27
 summary: A US electoral-reform advocacy organisation founded in 1992, campaigning
   for ranked-choice voting and proportional representation — the national driving
   force behind RCV adoption in American elections.

@@ -49,10 +49,10 @@ activity:
     note: Site live; Democracy Index 2025 campaign page current as of September 2026
     url: https://www.eiu.com/n/campaigns/democracy-index-2025/
   sitemap:
-    date: 2026-09-16
+    date: 2026-09-24
     note: Page last modified (from sitemap)
     url: https://www.eiu.com/n/sitemap_index.xml
-    checked: 2026-09-18
+    checked: 2026-09-27
 last_checked: '2026-09-16'
 ---
 

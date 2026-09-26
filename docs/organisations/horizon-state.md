@@ -6,6 +6,11 @@ country: AU
 website: https://horizonstate.com/
 logo: /assets/org-logos/horizon-state.png
 logo_bg: light
+contact:
+  email: team@serpnames.com
+  form: https://horizonstate.com/contact
+  source: https://horizonstate.com/contact
+  checked: 2026-09-27
 summary: An Australian blockchain voting platform bringing secure, transparent digital
   voting to governments and organisations. Collapsed in 2019 under legal costs, was
   bought out by its community, and relaunched — relaunching its token in 2024 and

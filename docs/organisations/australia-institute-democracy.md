@@ -59,10 +59,11 @@ activity:
     url: https://australiainstitute.org.au/about/structure/democracy-accountability/
     checked: 2026-09-15
   rss:
-    date: 2026-08-17
-    note: 'Latest post: What’s the point of gambling reform?'
-    url: https://australiainstitute.org.au/post/whats-the-point-of-gambling-reform/?utm_source=rss&utm_medium=rss&utm_campaign=whats-the-point-of-gambling-reform
-    checked: 2026-08-17
+    date: 2026-09-24
+    note: 'Latest post: Will Australia “keep up and succeed”? Lessons from the Intergenerational
+      Report'
+    url: https://australiainstitute.org.au/post/will-australia-keep-up-and-succeed-lessons-from-the-intergenerational-report/?utm_source=rss&utm_medium=rss&utm_campaign=will-australia-keep-up-and-succeed-lessons-from-the-intergenerational-report
+    checked: 2026-09-27
 last_checked: '2026-09-15'
 ---
 

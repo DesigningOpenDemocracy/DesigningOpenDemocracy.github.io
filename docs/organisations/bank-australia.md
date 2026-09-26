@@ -4,6 +4,7 @@ type: cooperative
 status: active
 country: AU
 website: https://www.bankaust.com.au
+logo: /assets/org-logos/bank-australia.webp
 contact:
   phone: 132 888
   form: https://www.bankaust.com.au/contact
@@ -52,6 +53,12 @@ activity:
       contact details and B Corp/Global Alliance for Banking on Values membership
       all current.
     url: https://www.bankaust.com.au/about-us/customer-owned
+  rss:
+    date: 2026-09-25
+    note: 'Latest post: Bank Australia and P&N Group to explore merger to create a
+      leading national cust'
+    url: https://www.bankaust.com.au/blog/pn-merger
+    checked: 2026-09-27
 last_checked: '2026-09-26'
 ---
 

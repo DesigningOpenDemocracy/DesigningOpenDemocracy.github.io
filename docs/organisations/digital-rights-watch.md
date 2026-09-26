@@ -4,6 +4,7 @@ type: advocacy
 status: active
 country: AU
 website: https://digitalrightswatch.org.au
+logo: /assets/org-logos/digital-rights-watch.png
 contact:
   channels:
   - type: instagram

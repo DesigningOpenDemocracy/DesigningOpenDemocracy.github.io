@@ -1,19 +1,33 @@
 ---
+ai_assist: collaborated
 authors:
 - Brian Khuu
 - ChatGPT
-ai_assist: collaborated
 categories: []
 date: 2024-02-23 00:00:00
-summary: 'Sharing this podcast episode which details the application of peace polls, initially inspired by Inuit consensus practices, to facilitate peace in Northern Ireland and proposes their potential in addressing the Israel-Palestine conflict. Despite challenges in engaging all parties, notably an unresponsive Israeli leadership, the methodology''s success in inclusively gauging public opinion on contentious issues highlights its relevance for promoting democratic dialogues and reform efforts globally, resonating with our focus on exploring innovative democratic processes.'
+shared_link:
+  description: Amid the death and suffering unleashed by Israel’s war on Gaza and
+    the Hamas attack on Israel on October 7, prospects for lasting peace between Israelis
+    and Palestinians appear ever more elusive. But when the war eventually ends, pressure
+    will mount for negotiations to begin for a deal. When that day comes, how can
+    opposing sides in such an intractable conflict find enough common ground to reach
+    an agreement?
+  image: https://images.theconversation.com/files/577035/original/file-20240221-18-e5s3rn.jpg?ixlib=rb-4.1.1&rect=0%2C851%2C5406%2C2703&q=45&auto=format&w=1356&h=668&fit=crop
+  source: The Conversation
+  title: 'Israel-Gaza: how opinion polls used in Northern Ireland could pave a way
+    to peace'
+  url: https://theconversation.com/israel-gaza-how-opinion-polls-used-in-northern-ireland-could-pave-a-way-to-peace-224085
+summary: Sharing this podcast episode which details the application of peace polls,
+  initially inspired by Inuit consensus practices, to facilitate peace in Northern
+  Ireland and proposes their potential in addressing the Israel-Palestine conflict.
+  Despite challenges in engaging all parties, notably an unresponsive Israeli leadership,
+  the methodology's success in inclusively gauging public opinion on contentious issues
+  highlights its relevance for promoting democratic dialogues and reform efforts globally,
+  resonating with our focus on exploring innovative democratic processes.
 tags:
 - peace polling
-title: "Israel-Gaza: how opinion polls used in Northern Ireland could pave a way to peace"
-shared_link:
-  url: https://theconversation.com/israel-gaza-how-opinion-polls-used-in-northern-ireland-could-pave-a-way-to-peace-224085
-  title: "Israel-Gaza: how opinion polls used in Northern Ireland could pave a way to peace"
-  source: The Conversation
-  description: "Amid the death and suffering unleashed by Israel’s war on Gaza and the Hamas attack on Israel on October 7, prospects for lasting peace between Israelis and Palestinians appear ever more elusive. But when the war eventually ends, pressure will mount for negotiations to begin for a deal. When that day comes, how can opposing sides in such an intractable conflict find enough common ground to reach an agreement?"
+title: 'Israel-Gaza: how opinion polls used in Northern Ireland could pave a way to
+  peace'
 ---
 
 # Israel-Gaza: how opinion polls used in Northern Ireland could pave a way to peace
