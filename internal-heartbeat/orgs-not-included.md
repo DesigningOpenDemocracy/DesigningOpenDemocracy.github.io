@@ -58,6 +58,42 @@ their own reasons as real cases show up rather than being pre-guessed here.
 | [Amnesty International (Australia)](https://www.amnesty.org.au/) | AU | 2026-08-21 | `human-rights-observatory` | `marginal-mechanism-work` | [Full reasoning](2026-08-21-amnesty-international-not-included.md) |
 | [Forensic Architecture](https://forensic-architecture.org/) | GB | 2026-08-21 (recorded retroactively — a DOD member recalled this being rejected previously, no prior written record found) | `human-rights-observatory` | `documentation-only` | [Full reasoning](2026-08-21-forensic-architecture-not-included.md) |
 
+## Weak-fit watch list
+
+A separate, distinct list from the registry above. The registry above is a
+settled *no* — assessed and declined. This one is for organisations whose
+fit is genuinely weak-not-zero: some relevance to self-governance or
+participation, but not clearly "working on *how* people participate in
+governance" the way a landscape entry needs to be, so not worth a page
+yet — without being a clean `out-of-scope` miss either. Not a rejection,
+so it doesn't get a `Type`/`Reason` from the vocabulary above; it's an
+open call, logged so it isn't silently forgotten.
+
+Only logged when both are true: (1) DOD has had a genuine interaction with
+the org — hosted them, cited their work, one of their people spoke at a
+DOD event — not just "this org sounds vaguely adjacent"; and (2) the fit
+is weak-not-zero, not a clear miss (a clear miss with an interaction still
+goes in the registry above as usual, just with a note on how DOD
+encountered it). The interaction is what makes this worth tracking at
+all: a speaker's or co-host's own institutional home is the kind of thing
+that accumulates evidence over repeat encounters in a way a stranger's org
+never will, and losing that thread each time is the failure mode this
+list exists to prevent.
+
+The underlying bet is Granovetter's [strength of weak
+ties](https://en.wikipedia.org/wiki/The_Strength_of_Weak_Ties): the useful
+next lead — a co-host worth approaching, a research angle worth citing, an
+org that turns out to be doing more governance-relevant work than its
+public summary suggests — is more likely to come through a loose,
+already-existing connection than a cold one. A weak fit DOD has actually
+brushed up against is exactly that kind of tie, which is why it's worth
+keeping a thread on rather than letting it evaporate the moment the post
+that mentioned it goes stale.
+
+| Org | Country | Date considered | Interacted via | Notes |
+|---|---|---|---|---|
+| [Informal Urbanism Research Hub](https://infur.msd.unimelb.edu.au/) | AU | 2026-09-26 | Panellist Anitra Nelson's institutional affiliation — [International Day of Democracy panel recap](../docs/blog/posts/2026-09-26-international-day-of-democracy-recap.md) | [Full reasoning](2026-09-26-informal-urbanism-research-hub-weak-fit.md) |
+
 ## Possible spinoff: a rights-documentation/advocacy tracker
 
 Two entries in a row now tagged `human-rights-observatory` (Amnesty,

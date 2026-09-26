@@ -40,7 +40,12 @@ Typical uses:
 `orgs-not-included.md`** — a running registry of orgs already considered
 and rejected, with a typed reason (mirroring the framework's disqualifiers
 plus its scope-exclusions) and a link to the fuller reasoning note for
-any non-trivial call. Saves re-litigating the same org from scratch.
+any non-trivial call. Saves re-litigating the same org from scratch. That
+file also holds a second, distinct "Weak-fit watch list" for orgs DOD has
+actually interacted with (a speaker's own institutional home, a co-host)
+whose fit is weak-not-zero rather than a settled no — logged rather than
+dropped, on a strength-of-weak-ties bet that a real tie is worth keeping
+even when it doesn't clear the bar yet.
 
 ## Who writes here
 
