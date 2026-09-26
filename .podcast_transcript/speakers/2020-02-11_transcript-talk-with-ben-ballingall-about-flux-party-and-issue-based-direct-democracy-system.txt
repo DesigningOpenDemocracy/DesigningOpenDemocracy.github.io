@@ -1,0 +1,89 @@
+# Speaker map: Flux main talk, Brian Khuu and Ben Ballingall (11 February 2020)
+# Best-effort, from contextual clues; not audio-checked. A two-hander, so
+# attribution is reliable except for one-word interjections, which are
+# marked "?" where either could have said them.
+
+@ 1 Brian Khuu
+@ 6 Ben Ballingall               # "It was at federation Square… just before I met you"
+@ 8 Brian Khuu
+@ 11 Ben Ballingall
+@ 15 Brian Khuu
+@ 16 Ben Ballingall
+@ 23 Brian Khuu
+@ 26 Ben Ballingall
+@ 36 Brian Khuu                  # the bus and "what is the EU?"
+@ 38 Ben Ballingall
+@ 39 Brian Khuu
+@ 41 Ben Ballingall
+@ 44 Ben Ballingall?             # "Is it a true representation of democracy…"
+@ 46 Brian Khuu
+@ 50 Ben Ballingall
+@ 53 Brian Khuu
+@ 56 Ben Ballingall
+@ 62 Brian Khuu?                 # compulsory voting aside for overseas listeners
+@ 65 Ben Ballingall
+@ 67 Brian Khuu?
+@ 68 Ben Ballingall
+@ 75 Brian Khuu?
+@ 76 Ben Ballingall
+@ 79 Brian Khuu?
+@ 80 Ben Ballingall
+@ 83 Brian Khuu
+@ 84 Ben Ballingall              # "Dr. Carl is my science and tech guy"
+@ 93 Brian Khuu
+@ 94 Ben Ballingall?
+@ 95 Brian Khuu                  # the Christian/atheist example
+@ 99 Ben Ballingall
+@ 104 Brian Khuu                 # the cable-TV analogy
+@ 105 Ben Ballingall
+@ 109 Brian Khuu?
+@ 110 Ben Ballingall
+@ 118 Brian Khuu                 # why not citizens' juries?
+@ 123 Ben Ballingall
+@ 132 Brian Khuu
+@ 133 Ben Ballingall
+@ 136 Brian Khuu                 # patent juries
+@ 137 Ben Ballingall
+@ 138 Brian Khuu
+@ 140 Ben Ballingall
+@ 142 Brian Khuu
+@ 143 Ben Ballingall
+@ 153 Brian Khuu
+@ 155 Ben Ballingall
+@ 157 Brian Khuu
+@ 158 Ben Ballingall
+@ 159 Brian Khuu
+@ 160 Ben Ballingall
+@ 163 Brian Khuu                 # the Pirate Party's liquid democracy
+@ 169 Ben Ballingall
+@ 173 Brian Khuu?
+@ 174 Ben Ballingall
+@ 176 Brian Khuu
+@ 181 Ben Ballingall
+@ 193 Brian Khuu
+@ 195 Ben Ballingall
+@ 200 Brian Khuu
+@ 203 Ben Ballingall
+@ 214 Brian Khuu                 # donors
+@ 217 Ben Ballingall
+@ 224 Brian Khuu?
+@ 225 Ben Ballingall
+@ 226 Brian Khuu?                # media concentration
+@ 228 Ben Ballingall
+@ 236 Brian Khuu                 # Clive Palmer
+@ 237 Ben Ballingall
+@ 238 Brian Khuu?
+@ 239 Ben Ballingall
+@ 251 Brian Khuu
+@ 254 Ben Ballingall
+@ 273 Brian Khuu                 # "isn't it more that I no longer believe in the system"
+@ 277 Ben Ballingall
+@ 285 Brian Khuu
+@ 288 Ben Ballingall
+@ 297 Brian Khuu?
+@ 298 Ben Ballingall
+@ 303 Brian Khuu
+@ 306 Ben Ballingall
+@ 309 Brian Khuu
+@ 311 Ben Ballingall
+@ 314 Brian Khuu

@@ -1,0 +1,41 @@
+# Speaker map: Challenges Facing the Present and Future of Democracy (19 May 2017)
+# Best-effort, from contextual clues in the automated transcript; not audio-checked.
+# Evidence: the round is run by Nick ("Thanks to you, Nick" at cue 150 answers
+# his thank-you list at 148); each participant is introduced by name
+# ("So we'll move on to Francisco", "And Brian", "yeah, Andrew"); the roll-call
+# at 148 gives the order Tom, Francisco, David, Kevin, Brian, Andrew.
+# See analysis/2017-05-19_challenges-facing-democracy.md.
+
+@ 1 Narrator (Brian Khuu?)     # same narration style as the 2017-10-21 intros
+@ 9 Nick Merange?                # asks the round question
+@ 13 Unidentified
+@ 14 Tom Sesselman?              # first answer; first in the roll-call
+@ 15 Nick Merange?
+@ 16 Tom Sesselman?
+@ 24 Kevin Woods                 # thanked for this question at cue 30
+@ 27 Nick Merange?
+@ 33 Francisco
+@ 36 Nick Merange?
+@ 38 Francisco
+@ 52 David?                      # rights/constitution content fits his meeting-notes bio
+@ 62 Nick Merange?
+@ 65 Brian Khuu
+@ 71 Nick Merange?
+@ 73 Andrew Downing
+@ 79 Unidentified
+@ 83 Nick Merange?               # mentions "Nicola" writing a PhD on trust
+@ 85 Andrew Downing?             # objects to "trustless"
+@ 87 Nick Merange?
+@ 90 Andrew Downing?
+@ 94 Nick Merange?
+@ 95 Andrew Downing?
+@ 99 Nick Merange?
+@ 107 Unidentified
+@ 108 Nick Merange?
+@ 124 Unidentified
+@ 125 Nick Merange?
+@ 130 Kevin Woods or David?      # the post guesses Kevin; unresolved
+@ 140 Nick Merange?
+@ 150 Unidentified
+@ 151 Nick Merange?
+@ 154 Narrator (Brian Khuu?)

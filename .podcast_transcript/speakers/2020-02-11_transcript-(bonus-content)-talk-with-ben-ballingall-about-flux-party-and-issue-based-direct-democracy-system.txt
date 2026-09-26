@@ -1,0 +1,40 @@
+# Speaker map: Flux bonus warm-up, Brian Khuu and Ben Ballingall (11 February 2020)
+# Best-effort, from contextual clues; not audio-checked. A two-hander, so
+# attribution is reliable except where a short acknowledgement ("Yeah") could
+# belong to either. Brian narrates the intro and outro.
+
+@ 1 Brian Khuu
+@ 7 Ben Ballingall
+@ 9 Brian Khuu
+@ 11 Ben Ballingall
+@ 17 Brian Khuu
+@ 19 Ben Ballingall
+@ 21 Brian Khuu
+@ 24 Ben Ballingall
+@ 30 Brian Khuu                  # "Late 2016?"
+@ 31 Ben Ballingall
+@ 32 Brian Khuu
+@ 35 Ben Ballingall
+@ 42 Brian Khuu
+@ 43 Ben Ballingall              # "Flux is one element… of designing an open democracy"
+@ 50 Brian Khuu
+@ 51 Ben Ballingall
+@ 58 Brian Khuu
+@ 60 Ben Ballingall
+@ 61 Brian Khuu
+@ 63 Ben Ballingall
+@ 66 Brian Khuu                  # "Tribalism."
+@ 67 Ben Ballingall
+@ 70 Brian Khuu?
+@ 72 Ben Ballingall
+@ 80 Brian Khuu
+@ 81 Ben Ballingall?
+@ 82 Brian Khuu?                 # rephrases the question
+@ 84 Ben Ballingall              # the app walkthrough
+@ 101 Brian Khuu
+@ 103 Ben Ballingall
+@ 106 Brian Khuu?                # the Iowa caucus
+@ 109 Ben Ballingall
+@ 123 Brian Khuu?
+@ 125 Ben Ballingall
+@ 138 Brian Khuu

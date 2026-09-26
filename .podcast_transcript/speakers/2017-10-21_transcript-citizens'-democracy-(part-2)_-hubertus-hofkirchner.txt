@@ -1,0 +1,18 @@
+# Speaker map: Citizens' Democracy part 2, Hubertus Hofkirchner's talk (21 October 2017)
+# Best-effort, from contextual clues; not audio-checked. Hofkirchner spoke by
+# video link from Austria. Interjections are from the room; the time check
+# ("can we wrap this up") is the host, probably Nick Merange, who ran the Q&A.
+
+@ 1 Narrator (Brian Khuu?)
+@ 13 Hubertus Hofkirchner
+@ 97 Audience                    # "In Australia, we make them" (compulsory voting)
+@ 99 Hubertus Hofkirchner
+@ 181 Host (Nick Merange?)
+@ 182 Hubertus Hofkirchner?
+@ 183 Host (Nick Merange?)
+@ 185 Hubertus Hofkirchner
+@ 186 Host (Nick Merange?)
+@ 187 Hubertus Hofkirchner
+@ 189 Host (Nick Merange?)
+@ 190 Hubertus Hofkirchner
+@ 212 Narrator (Brian Khuu?)

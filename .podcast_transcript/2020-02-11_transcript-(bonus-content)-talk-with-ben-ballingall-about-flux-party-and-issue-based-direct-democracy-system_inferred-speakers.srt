@@ -1,0 +1,575 @@
+1
+00:00:00,760 --> 00:00:04,840
+[Brian Khuu] Hi, and welcome to a bonus content from Designing Open Democracy.
+
+2
+00:00:04,840 --> 00:00:18,320
+[Brian Khuu] We previously held a recording on the 11th of March 2020 for a warm up with Ben Ballingall on the talk about his party and how it implements Issues Based Direct Democracy system.
+
+3
+00:00:18,320 --> 00:00:21,860
+[Brian Khuu] Being that this is a warm up, it is a bit more free-flowing.
+
+4
+00:00:21,860 --> 00:00:37,940
+[Brian Khuu] However, it explores a bit more into how Flux Party itself works, so you may be finding this to be quite an interesting talk that goes into more details in some aspects of Flux Party that the original talk did not go into.
+
+5
+00:00:37,940 --> 00:00:40,800
+[Brian Khuu] Hi, and welcome to Designing Open Democracy.
+
+6
+00:00:40,820 --> 00:00:45,300
+[Brian Khuu] And who we have here is Ben Ballingall from Flux Party.
+
+7
+00:00:45,300 --> 00:00:45,820
+[Ben Ballingall] Hey, Brian.
+
+8
+00:00:45,820 --> 00:00:47,820
+[Ben Ballingall] Thanks for letting me on.
+
+9
+00:00:47,820 --> 00:00:49,100
+[Brian Khuu] Yes.
+
+10
+00:00:49,100 --> 00:00:53,460
+[Brian Khuu] So tell me a bit more about Flux Party and what is it?
+
+11
+00:00:53,460 --> 00:00:54,300
+[Ben Ballingall] Ah, cool.
+
+12
+00:00:54,300 --> 00:00:56,540
+[Ben Ballingall] So yeah, I'm with the Flux Party.
+
+13
+00:00:56,800 --> 00:01:03,920
+[Ben Ballingall] We're a political party registered in Australia and also throughout various states throughout Australia.
+
+14
+00:01:03,920 --> 00:01:10,240
+[Ben Ballingall] We're a political party that believes in or proposes issue based direct democracy.
+
+15
+00:01:10,240 --> 00:01:22,680
+[Ben Ballingall] So that's a way for all the citizens or all the citizenry to vote on the issues that come up in parliament and have those results aggregated and shown to a representative.
+
+16
+00:01:23,080 --> 00:01:28,220
+[Ben Ballingall] And our representatives will do what their community votes in parliament.
+
+17
+00:01:28,220 --> 00:01:38,100
+[Brian Khuu] So if I understand correctly, what you're saying is that it's going to be a system where people will get to do a bit more direct democracy in their government.
+
+18
+00:01:38,100 --> 00:01:39,260
+[Brian Khuu] Is that correct?
+
+19
+00:01:39,260 --> 00:01:40,060
+[Ben Ballingall] Yeah, truly.
+
+20
+00:01:40,980 --> 00:01:45,720
+[Ben Ballingall] It's a very straight up and down democracy, the people voting on every single issue.
+
+21
+00:01:45,720 --> 00:01:46,620
+[Brian Khuu] I see.
+
+22
+00:01:46,620 --> 00:01:49,060
+[Brian Khuu] So tell me a bit more about the history of Flux.
+
+23
+00:01:49,260 --> 00:01:54,380
+[Brian Khuu] Like you mentioned, Max Kane was a big part of Flux.
+
+24
+00:01:54,380 --> 00:01:54,760
+[Ben Ballingall] Yeah.
+
+25
+00:01:54,760 --> 00:01:57,200
+[Ben Ballingall] So, was it 2000?
+
+26
+00:01:57,200 --> 00:02:00,420
+[Ben Ballingall] Middle of 2015, I believe it was.
+
+27
+00:02:00,420 --> 00:02:16,280
+[Ben Ballingall] Max Kane and Nathan Spataro, who are the co-founders, came together because they had both an idea for this new form of democracy, but most importantly, or perhaps secondly, most importantly, they had the ability and the code behind being able to develop the app.
+
+28
+00:02:16,760 --> 00:02:28,120
+[Ben Ballingall] So, they developed a prototype of the app and then used, I guess, that to generate enough buzz to get the party registered before the 2016 federal election.
+
+29
+00:02:28,120 --> 00:02:33,780
+[Ben Ballingall] So, yeah, late 2015 would have been the true start of vote Flux for just the two of them.
+
+30
+00:02:33,780 --> 00:02:34,960
+[Brian Khuu] Late 2016?
+
+31
+00:02:34,960 --> 00:02:35,660
+[Ben Ballingall] Yep.
+
+32
+00:02:36,100 --> 00:02:36,920
+[Brian Khuu] Okay.
+
+33
+00:02:36,920 --> 00:02:47,440
+[Brian Khuu] Why did we choose to start with, say, electronic voting, rather than, say, like, um, what can I say?
+
+34
+00:02:47,440 --> 00:02:50,180
+[Brian Khuu] Why is there a need to switch?
+
+35
+00:02:50,180 --> 00:02:53,320
+[Ben Ballingall] Um, I think, well, we've...
+
+36
+00:02:53,320 --> 00:03:22,720
+[Ben Ballingall] Depends on your views of representative government, is one way I'll start that, but for at least a lot of us in Flux, yeah, we see the flaws in representative democracy and the governmental systems we have right now, and that, frankly, a lot of the flaws that we face politically, as, you know, the people, if we can call that, come from a lack of representation, a lack of transparency, and a lack of accountability of our representatives.
+
+37
+00:03:22,720 --> 00:03:28,140
+[Ben Ballingall] So, you know, generating some sort of system, especially one that's democratic and gives...
+
+38
+00:03:28,140 --> 00:03:30,920
+[Ben Ballingall] empowers everybody, you know, it's, it's, I...
+
+39
+00:03:30,920 --> 00:03:34,860
+[Ben Ballingall] personally, I think it's something people have been doing for the entirety of history.
+
+40
+00:03:34,900 --> 00:03:39,460
+[Ben Ballingall] Ours just happens to be based on blockchain tech and the internet.
+
+41
+00:03:39,460 --> 00:03:44,440
+[Ben Ballingall] But, you know, technological innovation has sort of always progressed some sort of political change.
+
+42
+00:03:44,440 --> 00:03:44,880
+[Brian Khuu] Yeah, I see.
+
+43
+00:03:44,880 --> 00:03:46,940
+[Ben Ballingall] It's just something that everybody sort of felt.
+
+44
+00:03:46,940 --> 00:03:49,420
+[Ben Ballingall] And this is how it manifested more than anything.
+
+45
+00:03:49,920 --> 00:03:59,660
+[Ben Ballingall] I guess it can come out where we're designing open democracy, or at least what I understand of what you're doing, because I'm not fully across designing open democracy.
+
+46
+00:03:59,660 --> 00:04:01,580
+[Ben Ballingall] But it's certainly like, yeah, for sure.
+
+47
+00:04:01,580 --> 00:04:12,860
+[Ben Ballingall] So I see this as like, Flux is one element, if I can, of designing an open democracy, in that Flux posits a true democratic form.
+
+48
+00:04:12,860 --> 00:04:15,040
+[Ben Ballingall] It allows everybody to vote on issues.
+
+49
+00:04:15,040 --> 00:04:20,620
+[Ben Ballingall] Right now, it's contingent on parliament, what is put up in parliament primarily.
+
+50
+00:04:20,620 --> 00:04:23,240
+[Brian Khuu] So like three-year electoral cycle.
+
+51
+00:04:23,240 --> 00:04:23,680
+[Ben Ballingall] Exactly.
+
+52
+00:04:23,680 --> 00:04:28,240
+[Ben Ballingall] Three-year electoral cycle, we need to get this person in to do this thing.
+
+53
+00:04:28,240 --> 00:04:37,000
+[Ben Ballingall] But what it doesn't sort of, or what will grow, hopefully, symbiotically is how are people going to be informed about these decisions they're going to make?
+
+54
+00:04:37,920 --> 00:04:51,820
+[Ben Ballingall] You know, how do we decide once we've released all these old political parties of leading us, how do we decide what facets of their ideology were good and what were bad?
+
+55
+00:04:52,040 --> 00:04:53,960
+[Ben Ballingall] And how do we actually have these discussions?
+
+56
+00:04:56,060 --> 00:04:57,600
+[Ben Ballingall] That's something that needs to grow.
+
+57
+00:04:57,600 --> 00:05:05,900
+[Ben Ballingall] That's a societal, the people need to develop this thing in tandem with the ability to vote on issues and control their MP.
+
+58
+00:05:06,420 --> 00:05:11,680
+[Brian Khuu] So, what you're saying is that is Flux only one component of what is needed in the society?
+
+59
+00:05:11,680 --> 00:05:13,680
+[Brian Khuu] There's a cultural element, is that correct?
+
+60
+00:05:13,680 --> 00:05:13,920
+[Ben Ballingall] Yeah.
+
+61
+00:05:13,920 --> 00:05:25,200
+[Brian Khuu] because like I think maybe what some people might have a concern is that you could try to fix the way people vote, but is that going to really fundamentally change this conflict we have?
+
+62
+00:05:25,200 --> 00:05:31,940
+[Brian Khuu] because there's also issue of like say media representation or cultural representation and et cetera.
+
+63
+00:05:31,940 --> 00:05:37,460
+[Ben Ballingall] I think that's the million, billion, trillion dollar question.
+
+64
+00:05:38,680 --> 00:05:39,960
+[Ben Ballingall] And you know, we don't know.
+
+65
+00:05:39,960 --> 00:05:46,240
+[Ben Ballingall] Like when we think of voting, especially nowadays, we think of this voting for a team, voting for a team that has...
+
+66
+00:05:46,240 --> 00:05:46,860
+[Brian Khuu] Tribalism.
+
+67
+00:05:46,860 --> 00:05:51,320
+[Ben Ballingall] Yeah, this tribal team that's always been this way.
+
+68
+00:05:51,320 --> 00:05:55,500
+[Ben Ballingall] They've always held this ideology that comes with these 50 points.
+
+69
+00:05:56,240 --> 00:06:07,260
+[Ben Ballingall] So, really changing how culture and society looks at politics, looks at it via every issue and how those issues actually relate individually.
+
+70
+00:06:07,260 --> 00:06:09,660
+[Brian Khuu?] Yeah, you know, that's a huge cultural change.
+
+71
+00:06:09,660 --> 00:06:12,800
+[Brian Khuu?] So, it's a huge cultural shift and mentality.
+
+72
+00:06:13,220 --> 00:06:21,900
+[Ben Ballingall] For sure, yeah, the actual mentality, you know, it's totally acceptable to only like one initiative that the Greens put forward.
+
+73
+00:06:21,900 --> 00:06:29,200
+[Ben Ballingall] And then the next week to like a One Nation initiative, people could not even comprehend how that could ever work.
+
+74
+00:06:29,200 --> 00:06:34,420
+[Ben Ballingall] But when you look at individual issues, you know, that Greens issue could be a great environmental issue.
+
+75
+00:06:34,420 --> 00:06:39,180
+[Ben Ballingall] And the One Nation issue is something to do with rural infrastructure.
+
+76
+00:06:39,180 --> 00:06:40,940
+[Ben Ballingall] Like, they can both be right.
+
+77
+00:06:41,400 --> 00:06:46,240
+[Ben Ballingall] And in today's politics, you can't, that's completely, you know, absurd.
+
+78
+00:06:46,660 --> 00:06:52,200
+[Ben Ballingall] So that's a huge change that isn't solved by people being able to vote.
+
+79
+00:06:52,200 --> 00:06:53,540
+[Ben Ballingall] That's not what will come.
+
+80
+00:06:53,540 --> 00:07:04,640
+[Brian Khuu] So I have this device that you're talking about, like how would the ordinary voter and the Australian public participate in your system?
+
+81
+00:07:04,640 --> 00:07:05,280
+[Ben Ballingall?] Yeah, for sure.
+
+82
+00:07:05,820 --> 00:07:07,440
+[Brian Khuu?] I mean, real bad one.
+
+83
+00:07:07,440 --> 00:07:17,680
+[Brian Khuu?] I think a great way to ask this question would be like, could you give me a rundown as to how this system will work in typical use case of the public?
+
+84
+00:07:17,680 --> 00:07:18,580
+[Ben Ballingall] Yeah, for sure.
+
+85
+00:07:18,580 --> 00:07:24,720
+[Ben Ballingall] So, you know, it takes a little bit of a, the things we have to suspend our disbelief.
+
+86
+00:07:24,720 --> 00:07:28,140
+[Ben Ballingall] First, a Flux MP has been voted in in your electorate.
+
+87
+00:07:28,140 --> 00:07:30,100
+[Ben Ballingall] So that's important.
+
+88
+00:07:30,100 --> 00:07:35,300
+[Ben Ballingall] But, you know, you're sitting on your couch, in your NICs, and an issue comes up.
+
+89
+00:07:35,300 --> 00:07:39,380
+[Ben Ballingall] You're scrolling through your Facebook feed, and an issue comes up that's being debated.
+
+90
+00:07:39,380 --> 00:07:46,280
+[Ben Ballingall] You would go to the App Store, or you can go to the website, either or, but specifically the App Store, and you download an app.
+
+91
+00:07:46,280 --> 00:07:54,420
+[Ben Ballingall] The app allows you to login, create a user, or create a password, create an account, and you login using your federal electoral role details.
+
+92
+00:07:54,420 --> 00:07:58,420
+[Ben Ballingall] So these are all verified by the government that you are one person.
+
+93
+00:07:58,420 --> 00:08:06,040
+[Ben Ballingall] Then it would tell you, you know, obviously you're electorates, state level, federal level, and then the upcoming bills in parliament.
+
+94
+00:08:06,040 --> 00:08:15,440
+[Ben Ballingall] So this is going to be voted on in four days, this is going to be voted in three days, and it would allow you to vote, yes, no, or choose not to vote on those ones.
+
+95
+00:08:15,440 --> 00:08:19,220
+[Ben Ballingall] Then obviously say you really like an issue, click on it.
+
+96
+00:08:19,220 --> 00:08:31,800
+[Ben Ballingall] It'll give you the synopsis of the bill, maybe give you some links to the parties, like the proposing party's information, maybe some counter information proposed by other political parties.
+
+97
+00:08:31,800 --> 00:08:40,059
+[Ben Ballingall] This is definitely a level where we don't want to be proposing any information, so you won't find information from Flux, but you might be able to find the information that the other parties have put up.
+
+98
+00:08:40,059 --> 00:08:43,059
+[Ben Ballingall] And then, yeah, you would vote yes or no if you wanted to.
+
+99
+00:08:43,059 --> 00:08:51,380
+[Ben Ballingall] You'd be given the results of your entire electorate, and then a little button down the bottom to post to Twitter, post to Facebook, email my representative.
+
+100
+00:08:51,380 --> 00:08:56,840
+[Ben Ballingall] That'd be a really basic being hit by a bill that you really cared about and acting on that bill.
+
+101
+00:08:58,120 --> 00:09:02,220
+[Brian Khuu] So, I am kind of curious as to one key aspects.
+
+102
+00:09:02,220 --> 00:09:16,640
+[Brian Khuu] Your system relies on the use of technology and smartphones, and there will be concerns from the public about the security and viability of technology-based electoral system.
+
+103
+00:09:16,640 --> 00:09:17,440
+[Ben Ballingall] Yeah, for sure.
+
+104
+00:09:17,440 --> 00:09:18,460
+[Ben Ballingall] It's a big tech one.
+
+105
+00:09:18,460 --> 00:09:28,760
+[Ben Ballingall] Tech security is something that I guess is initially very scary, and especially if you're not in that industry, you know, even I am, quote unquote, in the industry, but I can't read the code.
+
+106
+00:09:28,760 --> 00:09:32,900
+[Brian Khuu?] We could tie it to, say, like the Iowa election scandal.
+
+107
+00:09:32,900 --> 00:09:34,000
+[Brian Khuu?] Is it scandal?
+
+108
+00:09:34,000 --> 00:09:35,680
+[Brian Khuu?] Or kerfuffle in America?
+
+109
+00:09:35,680 --> 00:09:37,080
+[Ben Ballingall] Kerfuffle, good term.
+
+110
+00:09:37,080 --> 00:09:43,980
+[Ben Ballingall] Yeah, that's pretty perfect, because that exact fault was an actual fault in the code.
+
+111
+00:09:43,980 --> 00:09:46,020
+[Ben Ballingall] Like it had been coded poorly.
+
+112
+00:09:46,020 --> 00:09:51,800
+[Ben Ballingall] But it'll still, in people's psyche, just be an app broke and it screwed up the vote.
+
+113
+00:09:52,140 --> 00:09:56,220
+[Ben Ballingall] You know, the tech gets reduced down so quickly.
+
+114
+00:09:56,220 --> 00:09:59,440
+[Ben Ballingall] On a tech forefront, it is blockchain based voting.
+
+115
+00:09:59,440 --> 00:10:02,040
+[Ben Ballingall] So you know the ledger is immutable.
+
+116
+00:10:02,040 --> 00:10:06,800
+[Ben Ballingall] We do have the strongest security and anonymization in industry.
+
+117
+00:10:06,800 --> 00:10:08,260
+[Ben Ballingall] You know, there is no other way.
+
+118
+00:10:08,260 --> 00:10:13,640
+[Ben Ballingall] It's the same stuff that protects your bank, gets your banking and all your online communication.
+
+119
+00:10:15,720 --> 00:10:18,980
+[Ben Ballingall] There is a level where it's open source.
+
+120
+00:10:18,980 --> 00:10:19,720
+[Ben Ballingall] You can read it.
+
+121
+00:10:21,000 --> 00:10:24,840
+[Ben Ballingall] If it's got a flaw, people will find it.
+
+122
+00:10:24,840 --> 00:10:27,980
+[Ben Ballingall] And right now, we are telling you, there are no flaws.
+
+123
+00:10:27,980 --> 00:10:34,180
+[Brian Khuu?] And you got to understand that, like most people are probably not technologically literate in the idea of the blockchain.
+
+124
+00:10:34,180 --> 00:10:51,340
+[Brian Khuu?] And so I imagine part of the aspects to getting your story out there and getting traction in the public about your Flux system is you probably need to have a bit more acceptance in the idea of relying in blockchain.
+
+125
+00:10:51,340 --> 00:10:57,060
+[Ben Ballingall] Yeah, it's funny, even in just three years, I've been with Flux.
+
+126
+00:10:57,060 --> 00:11:04,340
+[Ben Ballingall] It's even how much we have to explain blockchain now compared to back three years ago is markedly less.
+
+127
+00:11:04,340 --> 00:11:05,720
+[Ben Ballingall] We definitely still have to.
+
+128
+00:11:05,720 --> 00:11:09,140
+[Ben Ballingall] There is a certain, it is still freaky new technology.
+
+129
+00:11:09,140 --> 00:11:10,460
+[Ben Ballingall] But I think there's at least enough acceptance.
+
+130
+00:11:10,720 --> 00:11:17,840
+[Ben Ballingall] People understand crypto, blockchain, it's something to do with saving and storing money and being anonymous.
+
+131
+00:11:17,840 --> 00:11:20,840
+[Ben Ballingall] People at least have this rough idea of how it works now.
+
+132
+00:11:20,840 --> 00:11:27,700
+[Ben Ballingall] Yeah, and with that acceptance, it's a lot easier to be like, so you can see how that could be used for voting, yes?
+
+133
+00:11:27,700 --> 00:11:33,940
+[Ben Ballingall] As opposed to having to really explain how the vote worked, and how the security works, and how the works.
+
+134
+00:11:33,940 --> 00:11:35,340
+[Ben Ballingall] It's getting there.
+
+135
+00:11:35,560 --> 00:11:42,160
+[Ben Ballingall] It's one of those ones you really just have to put up and be like, it works, and you can't prove us wrong.
+
+136
+00:11:42,160 --> 00:11:44,840
+[Ben Ballingall] And the people that can prove us wrong agree with us.
+
+137
+00:11:44,840 --> 00:11:47,480
+[Ben Ballingall] So what do you want?
+
+138
+00:11:47,480 --> 00:11:54,660
+[Brian Khuu] Hi, and thanks for listening to this bonus content of Designing Open Democracy, talk with Ben Ballingall.
+
+139
+00:11:54,660 --> 00:12:02,700
+[Brian Khuu] If you are interested in this talk and you haven't heard the original talk, I recommend you to check out the last episode and give it a listen.
+
+140
+00:12:02,700 --> 00:12:06,940
+[Brian Khuu] Oh, and if you are in Melbourne, Australia, don't forget to check out our physical meetup.
+
+141
+00:12:06,940 --> 00:12:11,780
+[Brian Khuu] Each month, we cover a different topic on relating to democracy.
+
+142
+00:12:11,780 --> 00:12:17,020
+[Brian Khuu] Our next meetup will be likely to be about cooperatives, so I hope to see you then.
+
+143
+00:12:17,040 --> 00:12:20,020
+[Brian Khuu] Else, see you in the next podcast episode.
+
+144
+00:12:20,020 --> 00:12:20,320
+[Brian Khuu] Cheers.
