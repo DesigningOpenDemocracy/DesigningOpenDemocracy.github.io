@@ -185,7 +185,7 @@ marks cuts). Check against the audio before quoting in DOD's own voice.
   ludicrous, because there are a million issues."
 - **Penny Wong** (00:39:21–00:41:52). Raised by Brian (00:38:42, audio-checked
   2026-09-26: "it reminds me of Penny Wong"). The speculation that follows,
-  from 00:39:42, is still only *inferred* to be Andrew's: that Gillard, in minority
+  from 00:39:42, is Andrew's (audio-checked 2026-09-26): that Gillard, in minority
   government, asked Wong to hold the party line against marriage equality: "pure
   tribalism… I am going with the tribe over my own short-term needs." **Handling: omit**:
   a guess about a private conversation. Wong's public record can be cited instead (see
