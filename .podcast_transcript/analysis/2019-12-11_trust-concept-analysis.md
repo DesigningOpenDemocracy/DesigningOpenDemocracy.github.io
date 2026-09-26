@@ -187,8 +187,9 @@ marks cuts). Check against the audio before quoting in DOD's own voice.
   2026-09-26: "it reminds me of Penny Wong"). The speculation that follows,
   from 00:39:42, is still only *inferred* to be Andrew's: that Gillard, in minority
   government, asked Wong to hold the party line against marriage equality: "pure
-  tribalism… I am going with the tribe over my own short-term needs." **This is
-  his guess about a private conversation. Don't repeat it as fact.**
+  tribalism… I am going with the tribe over my own short-term needs." **Handling: omit**:
+  a guess about a private conversation. Wong's public record can be cited instead (see
+  the register in `README.md`).
 - **Tribalism's two edges** (00:41:52). "In almost any system, the good points and
   the bad points are the same thing… A tribe is loyal to each other. That is
   good. A tribe can end up being loyal… in a way that flies in the face of logic
@@ -323,17 +324,17 @@ marks cuts). Check against the audio before quoting in DOD's own voice.
 | Chomsky calls corporations "dictatorship bubbles" | Alexar | Chomsky's phrase is "private tyrannies"; possibly misremembered or misheard |
 | LBJ said "we've lost the South for two generations" on signing the Civil Rights Act | Andrew | The usual version is "for a generation", reported second-hand (Bill Moyers); apocryphal-leaning. Don't quote as fact |
 | Elizabeth Warren was a Republican | Andrew | Correct (until the mid-1990s) |
-| Gillard asked Wong to hold the line on marriage equality | Andrew | Speculation. Don't repeat |
+| Gillard asked Wong to hold the line on marriage equality | Andrew | Speculation about a private conversation. Handling: omit |
 | A rumour about a Greek loan crashed the euro "around 10 years ago" | Alexar | Vague; the euro did fall on Greek-debt news in 2010. Specific rumour unidentified |
 | Australian milk price fell to "$1 a litre", half in real terms | Andrew/Antony | Coles' $1/litre milk (2011) is right; "half in real terms" is his estimate |
-| Wool price scheme stockpiled "20 years of wool"; conservatives broke it up | Andrew | The wool reserve price scheme collapsed in 1991 under the Hawke **Labor** government; the stockpile was about 4.7m bales. The claim as stated is wrong |
+| Wool price scheme stockpiled "20 years of wool"; conservatives broke it up | Andrew | The wool reserve price scheme collapsed in 1991 under the Hawke **Labor** government; the stockpile was about 4.7m bales. Told from memory decades later, so the party detail is an understandable slip; if a post uses it, state the correct record rather than his version |
 | Dairy price regulation ended by conservatives | Andrew | National dairy deregulation (2000) was under the Howard Coalition government; this part is roughly right |
 | Wesfarmers was originally a co-op | Antony | Correct (Westralian Farmers Co-operative, 1914; listed 1984) |
 | Murray Goulburn took external investment and took risks | Antony | Consistent with its 2015 unit-trust listing and 2016–17 collapse |
 | Co-op members capped at 20% of share capital | Antony | Consistent with the Co-operatives National Law default; check the specific state |
 | A Brisbane startup's co-op ledger tripled Kenyan coffee farmers' income | Alexar | Probably AgUnity (Brisbane-founded, works with Kenyan co-ops). "300%" is the founders' claim as he relayed it |
 | Monkeys "hate losing more than they like winning" | Antony | Consistent with capuchin loss-aversion studies (Chen, Lakshminarayanan & Santos, 2006) |
-| Two price-control referendums: one opposed by Labor, one proposed by Hawke's Labor | audience | Wrong on details: 1948 (Chifley **Labor** proposed, Liberals opposed) and 1973 (**Whitlam** Labor). Both failed |
+| Two price-control referendums: one opposed by Labor, one proposed by Hawke's Labor | audience | The details differ from the record (a from-memory aside): 1948 (Chifley **Labor** proposed, Liberals opposed) and 1973 (**Whitlam** Labor). Both failed |
 | The dollar was pegged to US$1 before the float | Andrew | Before December 1983 it was a crawling peg to a trade-weighted basket. Its low was about US$0.48 (2001) |
 | German hyperinflation "after World War II" | Andrew | After World War **I** (1923) |
 | Zimbabwe's $100 trillion notes worth under US$1 | Andrew | Correct in substance |

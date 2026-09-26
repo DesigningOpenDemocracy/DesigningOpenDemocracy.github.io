@@ -256,8 +256,8 @@ marks cuts). Check against the audio before quoting in DOD's own voice.
   sort." So politicians use "battle-hardened language… without color, without much
   commitment… it's fast food language."
 - Thatcher's "no such thing as society" and Kellyanne Conway's "alternative facts" as
-  misrepresented phrases. (His characterisation of Conway is personal and shouldn't
-  be repeated.)
+  misrepresented phrases. (**Handling: omit** his characterisation of Conway, which
+  is personal; his reading of the phrase can stand.)
 
 **Funding and neutrality** (01:09:15–01:15:05)
 
@@ -351,7 +351,7 @@ marks cuts). Check against the audio before quoting in DOD's own voice.
 | East Belgium: "two provinces… a council… of 50" | It's the German-speaking Community's Permanent Citizens' Council (24 members, from 2019), which convenes citizens' assemblies. Correct him if quoting |
 | Madrid has a randomly selected council | The City Observatory (2019); later abolished. Check |
 | Abbott repealed carbon pricing in "2012… 2013… 2014" | Repeal passed July 2014 |
-| Morrison "said that we should spend less money on bushfire readiness" before the fires | Contested characterisation; don't repeat without a source |
+| Morrison "said that we should spend less money on bushfire readiness" before the fires | Contested characterisation. Handling: omit unless a source for what was actually said is found |
 | Jeff Bezos pledged $10bn to climate | Correct (Bezos Earth Fund, February 2020) |
 | COP in Glasgow in November | COP26 was due November 2020 and postponed to 2021 |
 | ~55% of Britons want to rejoin; Britain back within 20 years | Prediction/opinion |

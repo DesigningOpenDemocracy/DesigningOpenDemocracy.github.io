@@ -58,6 +58,67 @@ silently dropped, so a future editor can make the call.
 Audience members stay anonymous, as in the IDoD breakdown, even where the
 recording names them.
 
+## Handling sensitive material
+
+**Read everyone in the best light.** These are unscripted conversations,
+some nearly a decade old, transcribed by machine. People misremember a date
+or a party, reach for a name that's nearly right, or say something that
+exists but can't easily be found now. A note should say *what the record
+shows* and *what a post should do about it*, never that someone lied or
+made something up. The same goes for DOD's own older posts: a line that
+can't be found in a transcript was most likely a summary that drifted into
+quote marks during drafting, or words the automated transcript garbled.
+
+Wording to use: "couldn't be found in the transcript", "differs from the
+record", "from memory", "probably meant", "his/her view". Wording to avoid:
+"wrong", "made up", "false", "misreported", or any guess at motive.
+
+Every item involving a named public figure, or correcting a speaker, gets
+one of four handling labels, so a future post knows what to do:
+
+| Label | Use for | In a post |
+|---|---|---|
+| **Omit** | Speculation about a named person's private conduct or motives; mocking nicknames; sweeping partisan labels for a government or party | Leave it out. If the point matters, make it without the name |
+| **Attribute** | A speaker's opinion or characterisation of a public figure | Only as the speaker's view, in their words, with enough context; consider whether the post needs it at all |
+| **Clarify** | A factual slip, misremembered detail, or unconfirmed claim | State the correct record (with a source) in neutral words, or leave the detail out |
+| **Fine** | Passing mention, uncontroversial public fact, or checked | No special handling |
+
+### Register
+
+Named public figures and speaker corrections across the archive. "Checked"
+means against a source named in the file's claims table or below; anything
+else is unchecked.
+
+| Recording | Item | Label | Notes |
+|---|---|---|---|
+| 2017-05-19 | Francisco: Kim Jong-un "a dictator", Trump "a populist" | Attribute | Opinion, attributed in the post |
+| 2017-10-21 | Gruen: Pauline Hanson "an authentic politician" | Attribute | His view; not a criticism of her |
+| 2017-10-21 | Gruen: the 2008 Obama transition's online policy vote ranked marijuana, "the birth certificate" and "alien abductions" top | Clarify | Marijuana topping change.gov's Citizen's Briefing Book is well reported; the other two are his recollection. Use only the marijuana detail, or attribute the rest as his memory |
+| 2017-10-21 | Hofkirchner: G!LT won "double" the Communists | Clarify | Roughly level (about 0.96% vs 0.8%) |
+| 2019-12-11 | Speculation that Gillard asked Penny Wong to hold the party line on marriage equality | **Omit** | A guess about a private conversation. Brian raised Wong (audio-checked); the speaker of the speculation (00:39:42) is only inferred to be Andrew Kay. Wong's *public* position at the time is on the record and can be cited instead: Wikipedia's Penny Wong article says she was "an instrumental figure in the legalisation of same-sex marriage in Australia in 2017, reversing her previous endorsement of Labor Party policy that had opposed it" (checked 2026-09-26 via a summarising fetch; confirm the wording on the page before quoting) |
+| 2019-12-11 | Johnson's "we've lost the South" | Clarify | Widely repeated, but reported second-hand (Bill Moyers' account) and not firmly documented. "Reportedly", if used at all. Not found in Wikipedia's *Southern strategy* article in this pass; the usual attribution is to Bill Moyers' recollection, unconfirmed here |
+| 2019-12-11 | Putin and fake Facebook pages on both extremes | Attribute | Consistent with published findings on Russian social-media operations around 2016; cite a source if a post uses it |
+| 2019-12-11 | Wool stockpile and price-control referendums, told from memory | Clarify | See the file's claims table: the party details differ from the record. The party and date details in that table weren't re-checked in this pass (Wikipedia was rate-limiting this environment); confirm before a post relies on them |
+| 2020-02-11 | Ben: Clive Palmer's 2019 ads were "idiotic" | Attribute | Opinion about advertising, mild; paraphrase is fine. Spend figure: Wikipedia's United Australia Party article gives "$60 million at the 2019 election" (checked 2026-09-26 via a summarising fetch); some later reports put it higher, unconfirmed here, so Adam's "$87 million" may reflect those. Say "reported at around $60 million" with a source, or leave the figure out |
+| 2020-02-11 | Ben: MPs like Cory Bernardi are "able to backstab their party" | Attribute (paraphrase) | "Backstab" is Ben's word for leaving the party one was elected with. The public record: "On 7 February 2017… Bernardi left the Liberal Party to form a separate party, the Australian Conservatives" (Wikipedia, checked 2026-09-26 via a summarising fetch). A post should describe the act neutrally. A second name ("Santafond") is unidentified; don't guess |
+| 2020-02-21 | Brian and Alexar on whether MiVote was a party | Clarify | Each remembered part of it; see the file |
+| 2020-03-03 | Gruen: Abbott's carbon-price stance "simply isn't a policy" (what he thinks a jury would say) | Attribute | His hypothetical; keep it framed that way |
+| 2020-03-03 | Gruen: Alan Jones and Rush Limbaugh treat "anyone who doesn't agree with them" as "a fool" | Attribute | His characterisation of broadcasters; consider omitting names |
+| 2020-03-03 | Gruen: the Coalition is "funded by the coal lobby", with his caveat that it's "sort of true on both sides" | Attribute | Only with his both-sides caveat, or omit |
+| 2020-03-03 | Gruen: Morrison "said that we should spend less money on bushfire readiness" | **Omit** | Contested characterisation; don't repeat without a source for what was actually said |
+| 2020-03-03 | Gruen's characterisation of Kellyanne Conway | **Omit** | Personal remark; his reading of "alternative facts" can be kept without it |
+| 2020-03-03 | Gruen: Howard was "trying to gerrymander the system in his own favor" with the 1999 referendum question | Attribute | His view of question design; the post uses the neutral version |
+| 2020-03-03 | Gruen's description of the Belgian citizens' council ("two provinces", "50 people") | Clarify | From memory; the post names the actual body |
+| 2021-07-20 | Adam: "the Morrison government is basically a fascist government" | **Omit** | Sweeping partisan label. The post leaves it out |
+| 2021-07-20 | Adam on the US ("not a democracy… a republic") and China | Attribute | Omit unless a post is about comparative systems, and then with context |
+| 2021-07-20 | Adam: Palmer spent "$87 million… in Queensland" | Clarify | Wikipedia's United Australia Party article gives "$60 million at the 2019 election" (checked 2026-09-26 via a summarising fetch); some later reports put it higher, unconfirmed here, so Adam's "$87 million" may reflect those. Say "reported at around $60 million" with a source, or leave the figure out; the campaign was national |
+| 2021-07-20 | The "PEG" programme | Clarify | Probably the Global Entrepreneur Programme; see the file |
+| 2021-07-31 | A satirical video's nickname for Scott Morrison | **Omit** | Mocking nickname; name the video's subject plainly if needed |
+| 2022-12-06 | Jose: AI regurgitates "Putin, Trump and the Kardashians" | Attribute | Rhetorical; quoted in the post with attribution |
+| 2022-12-06 | Jose/Alexar on billionaires and Jeff Bezos | Attribute | Their view |
+| 2022-12-06 | Bridgette Engeler quote in the post | Clarify | Couldn't be found in the transcript; replaced with her recorded words |
+| 2022-12-06 | Post's summary of Jose Ramos's position | Clarify | Now reported as he stated it |
+
 ## Blog-post issues found
 
 Found while checking posts against transcripts. Ordered roughly by importance.
@@ -92,10 +153,11 @@ its file here. The list below is kept as the record of what was found.
    (twice) quote "the considered opinion of the people amounts to nothing
    unless you consider it properly". The automated transcript has "…unless
    people respect it and pay it legitimacy". Listen before quoting again.
-3. **2022 Basil's Table post:** a quote attributed to Bridgette Engeler isn't
-   in the transcript (a composite), and Jose Ramos's position is reported as
-   "not a left critique" when he explicitly says he's a socialist and that the
-   left is right about equity. [Details](2022-12-06_basils-table-tech-bros.md#checking-the-blog-post-against-the-transcript)
+3. **2022 Basil's Table post:** a quote attributed to Bridgette Engeler
+   couldn't be found in the transcript (most likely a summary that ended up in
+   quote marks during drafting), and the post summarised Jose Ramos's position
+   as "not a left critique", where he states plainly that he's a socialist and
+   that the left is right about equity. [Details](2022-12-06_basils-table-tech-bros.md#checking-the-blog-post-against-the-transcript)
 4. **Flux main post:** says it was recorded "a few weeks after" the 2020
    Primer (the Primer was ten days *later*), and that the Fed Square encounter
    was "a few days" earlier (it was the same day). Also names a member of the

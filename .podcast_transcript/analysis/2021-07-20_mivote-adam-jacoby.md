@@ -180,9 +180,10 @@ swears freely on the recording; quotes below keep it where it's the point.
 - Australia: "our success is by default, not by design… our luck might be running out."
 - **"I would argue that the Morrison government is basically a fascist government…
   controlled by media interests… by the Minerals Council… neoliberal… which is why
-  Sydney wouldn't lock down for ages."** **Partisan and inflammatory; DOD is
-  nonpartisan. A post should not quote this, or should only with clear attribution and
-  context.** His evidence: "somebody… spent $87 million to try and swing the outcome of
+  Sydney wouldn't lock down for ages."** **Handling: omit** (see the
+  register in `README.md`): a sweeping partisan label for a government, and DOD is
+  nonpartisan. His underlying concerns (money in elections, enforcement) can be
+  discussed without it. His evidence: "somebody… spent $87 million to try and swing the outcome of
   an election in Queensland" and the AEC "identified over 70 breaches of electoral law,
   but they don't have any power". "It's a bloody long way from a democracy."
 
@@ -201,10 +202,11 @@ swears freely on the recording; quotes below keep it where it's the point.
 1. **"Jamie Skeller"**: the Horizon State co-founder is **Jamie Skella**. The
    transcript's spelling carried into the post.
 2. **"the UK government's Entrepreneurs Programme (PEG)"**: Adam's description ("PEG…
-   Department of Prime Minister and Cabinet… Innovation Council") doesn't match any UK
-   department. The UK scheme that relocates overseas founders is the **Global
-   Entrepreneur Programme**, run by the Department for International Trade. Probably
-   what he meant; soften the post's wording or name it correctly.
+   Department of Prime Minister and Cabinet… Innovation Council") is hard to match
+   to a UK department; the names may have been misheard, or mixed up with Australian
+   ones in conversation. The UK scheme that relocates overseas founders is the
+   **Global Entrepreneur Programme**, run by the Department for International Trade,
+   which is probably what he meant. *Handling: clarify* (done in the post).
 3. **"Trials were underway with a Federal Parliament member"**: Adam says the contract
    was signed and the votes would run "over the next six months". "Planned" is more
    accurate than "underway".
@@ -245,7 +247,7 @@ swears freely on the recording; quotes below keep it where it's the point.
 | Taiwan "enacted about 150 pieces of legislation… crafted by the citizens" | Overstated. vTaiwan handled a few dozen cases, most leading to some government action; Join has more petitions. See DOD's [Taiwan post](../../docs/blog/posts/2026-05-25-taiwan-digital-democracy.md) |
 | It costs "$2 billion to become the president" | Loose; 2020 campaigns each raised over $1bn |
 | China lifted more people out of poverty than any country in history | Commonly cited (World Bank); fine as attributed |
-| Palmer spent "$87 million" on the 2019 election | Reported UAP spending was about $84m by later disclosures; he says "in Queensland", but it was national |
+| Palmer spent "$87 million" on the 2019 election | Wikipedia gives "$60 million at the 2019 election"; some later reports are higher (unconfirmed here). He says "in Queensland", but the campaign was national. Handling: clarify |
 | The AEC "identified over 70 breaches of electoral law" in 2019 | Unverified |
 | Sydney delayed its 2021 lockdown for business reasons | Opinion |
 

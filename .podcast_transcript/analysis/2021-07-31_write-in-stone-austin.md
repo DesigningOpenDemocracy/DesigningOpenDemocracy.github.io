@@ -217,7 +217,7 @@ marks cuts). Check against the audio before quoting in DOD's own voice.
 | "no Chomsky" | Noam Chomsky | certain |
 | "Chomsky and counter propagandist" | Chomskyan counter-propagandist | high |
 | "didn't get tracked any engineers" | didn't attract any engineers | high |
-| "Scott Borrissett" | the Friendly Jordies video's name for Scott Morrison | medium |
+| "Scott Borrissett" | the Friendly Jordies video's mocking name for Scott Morrison (handling: omit; say "Scott Morrison" if needed) | medium |
 | "Hunchley" | Hunchly | certain |
 | "the Forensic News… Forensic Nils" | Forensic News | certain |
 | "little finger" | Littlefinger (*Game of Thrones*) | certain |

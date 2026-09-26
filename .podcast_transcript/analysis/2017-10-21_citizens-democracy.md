@@ -403,7 +403,7 @@ marks cuts). Check against the audio before quoting in DOD's own voice.
 | Oregon: 21 of 24 against Measure 73; yes vote fell from ~70% to "56 or 7" | Gruen | Broadly matches accounts of the 2010 CIR; check exact figures. He says it went into "the Oregon Constitution" in 2011; the 2011 change was a statute making the CIR permanent |
 | On Gavin Newsom's campaign committee | Gruen | Unverified; possibly mis-transcribed |
 | Joe Trippi is "a friend of mine"; they had "part of a bet" | Gruen | His account |
-| G!LT won about 1%, "double" the Communists; Greens 12% → 3.8% | Hofkirchner | G!LT ~0.96% and the Greens' collapse are right; the KPÖ got ~0.8%, so "double" is wrong |
+| G!LT won about 1%, "double" the Communists; Greens 12% → 3.8% | Hofkirchner | G!LT ~0.96% and the Greens' collapse are right; the KPÖ got ~0.8%, so the two were roughly level rather than one "double" the other; an easy slip when quoting results from memory a week after an election |
 | 4% threshold for the Austrian parliament | Hofkirchner | Correct |
 | G!LT campaign budget €120,000 | Hofkirchner | His figure |
 | Melbourne: "when the council went… bankrupt"; 5,000 invitations, 500 replies, 42 selected; voted to raise rates and drop a market redevelopment | Hofkirchner | Blends the Melbourne People's Panel (10-year financial plan, 2014; council not bankrupt) with Geelong (council dismissed 2016). Don't repeat as stated |

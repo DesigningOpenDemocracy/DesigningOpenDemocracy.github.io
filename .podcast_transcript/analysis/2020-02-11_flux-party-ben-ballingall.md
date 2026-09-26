@@ -199,10 +199,13 @@ marks cuts). Check against the audio before quoting in DOD's own voice.
 
 - The freedom of MPs to vote as they like is "actually a really nice thing" in
   normal politics: it stops a party making them "sign this contract that says
-  you'll vote how I tell you". For Flux it's a weakness, but a defector "can't
-  ever come back": a party defector like Cory Bernardi can say "the party has
+  you'll vote how I tell you". For Flux it's a weakness, but a defector is "not able
+  to ever come back": a party defector like Cory Bernardi can say "the party has
   changed", but a Flux MP who defects is saying "I believe I'm smarter than the
-  people".
+  people". (Ben calls such MPs "able to backstab their party". **Handling:
+  attribute, and describe the act neutrally**: Bernardi left the Liberal Party
+  in February 2017 to form the Australian Conservatives. See the register in
+  `README.md`.)
 - Brian reframes: defection means "I no longer believe in the system". Ben: "it
   would look shit… But it wouldn't kill flux. It wouldn't kill the idea of being
   represented by the community voting."

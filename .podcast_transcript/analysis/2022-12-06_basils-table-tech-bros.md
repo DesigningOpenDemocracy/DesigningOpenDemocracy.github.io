@@ -265,18 +265,21 @@ marks cuts). Check against the audio before quoting in DOD's own voice.
 
 ## Checking the blog post against the transcript
 
-1. **Bridgette's quote is not in the transcript.** The post has *"I don't think I'll see a
-   positive outcome in my lifetime, but I'm working on 150 years."* What she says is "helping
-   people ask better questions might help shape a better world in 150 years… Not the immediate
-   future", and earlier "I think it's about as good as it's gonna get for them right now". The
-   quoted sentence is a composite and should be replaced with her words or turned into
-   paraphrase.
-2. **Jose's billionaire point is misframed.** The post says "This isn't a left critique of the
-   right or vice versa — it's a structural observation." Jose says the opposite: "I'm a
+1. **Bridgette's quote couldn't be found in the transcript.** The post had *"I don't think
+   I'll see a positive outcome in my lifetime, but I'm working on 150 years."* The closest
+   recorded words are "helping people ask better questions might help shape a better world in
+   150 years… Not the immediate future", and earlier "I think it's about as good as it's gonna
+   get for them right now". Most likely a fair summary of those that ended up in quote marks
+   when the post was drafted; it's also possible she said it in a part the automated
+   transcript garbled. Either way, a post should quote her recorded words or paraphrase.
+   *Handling: clarify* (done in the post, 2026-09-26).
+2. **The post's summary of Jose's billionaire point doesn't match how he put it.** The post
+   said "This isn't a left critique of the right or vice versa — it's a structural
+   observation." In the recording Jose states his own position plainly: "I'm a
    socialist… the truth to left and right is that there is a side that is squarely for equity…
    I don't think you can argue against that." His argument is that left-right is *real on
    equity* but breaks down elsewhere, and that both are products of Western modernity. The post
-   should report his position as his.
+   should report his position as he stated it. *Handling: clarify* (done).
 3. **Twitter under Musk and Deliveroo's collapse** are presented as the event's framing, but
    neither is mentioned in the recording. They're accurate context for December 2022; label them
    as context, not as what was said.
