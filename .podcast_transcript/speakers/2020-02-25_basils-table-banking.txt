@@ -5,6 +5,8 @@
 # (answers "Thanks, Basil" at 119). Audience questioners stay [Audience],
 # including one named on the recording.
 
+source 2020-02-25_transcript-basil's-table---banking-on-the-future-in-a-climate-of-change-(888-co-operative-causeway)(special).srt
+
 @ 1 Antony McMullen
 @ 12 Audience?                   # "Who thought of that?"
 @ 13 Antony McMullen

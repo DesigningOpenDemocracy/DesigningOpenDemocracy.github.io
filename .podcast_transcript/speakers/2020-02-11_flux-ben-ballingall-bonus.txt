@@ -3,6 +3,8 @@
 # attribution is reliable except where a short acknowledgement ("Yeah") could
 # belong to either. Brian narrates the intro and outro.
 
+source 2020-02-11_transcript-(bonus-content)-talk-with-ben-ballingall-about-flux-party-and-issue-based-direct-democracy-system.srt
+
 @ 1 Brian Khuu
 @ 7 Ben Ballingall
 @ 9 Brian Khuu

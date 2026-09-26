@@ -2,12 +2,16 @@
 """Apply a best-effort speaker map to an unlabelled .srt transcript.
 
 The original transcript is never modified. For each map file
-`speakers/<stem>.txt`, this writes `<stem>_inferred-speakers.srt` next to
-the original `<stem>.srt`, prefixing every cue with `[Speaker]` in the same
-style as the hand-reviewed 2026-09-15 `_labeled.srt`.
+`speakers/<slug>.txt`, this writes `<slug>_inferred-speakers.srt` next to the
+original transcript, prefixing every cue with `[Speaker]` in the same style as
+the hand-reviewed 2026-09-15 `_labeled.srt`. Slugs are kept short on purpose:
+some filesystems (eCryptfs home folders, notably) cap filenames at ~143 bytes,
+and the original transcript names are already close to that.
 
 Map file format (one directive per line; `#` starts a comment):
 
+    source <file>.srt            the original transcript, relative to the
+                                 transcript folder (must come first)
     @ <cue> <Speaker>            speaker turn starts at this cue number
     split <cue> | <text> | <Speaker>
                                  turn changes *inside* this cue, at the first
@@ -22,7 +26,7 @@ range, divided in proportion to text length.
 
 Usage:
     python speakers/apply.py            # every map in speakers/
-    python speakers/apply.py <stem>     # one recording
+    python speakers/apply.py <slug>     # one recording
     python speakers/apply.py --check    # validate maps, report stats, write nothing
 """
 import re
@@ -58,11 +62,18 @@ def from_ms(ms):
 
 
 def parse_map(path):
-    turns, splits, last = {}, {}, 0
+    turns, splits, last, source = {}, {}, 0, None
     for i, raw in enumerate(path.read_text(encoding="utf-8").splitlines(), 1):
         line = raw.split("#", 1)[0].strip() if not raw.lstrip().startswith("split") else raw.strip()
         if not line or line.startswith("#"):
             continue
+        if line.startswith("source "):
+            if turns or splits or source:
+                sys.exit(f"{path.name}:{i}: 'source' must appear once, before any turn")
+            source = line[len("source "):].strip()
+            continue
+        if source is None:
+            sys.exit(f"{path.name}:{i}: missing 'source <file>.srt' line")
         if line.startswith("@"):
             m = re.match(r"@\s+(\d+)\s+(.+)$", line)
             if not m:
@@ -82,7 +93,9 @@ def parse_map(path):
         if n < last:
             sys.exit(f"{path.name}:{i}: cue {n} out of order (after {last})")
         last = n
-    return turns, splits
+    if source is None:
+        sys.exit(f"{path.name}: missing 'source <file>.srt' line")
+    return source, turns, splits
 
 
 def label(cues, turns, splits, name):
@@ -116,21 +129,21 @@ def label(cues, turns, splits, name):
 def main(argv):
     check = "--check" in argv
     stems = [a for a in argv if not a.startswith("--")]
-    maps = [HERE / f"{s}.txt" for s in stems] if stems else sorted(HERE.glob("*.txt"))
+    maps = [HERE / f"{s}.txt" for s in stems] if stems else sorted(HERE.glob("20*.txt"))
     for mp in maps:
         stem = mp.stem
-        src = ROOT / f"{stem}.srt"
+        source, turns, splits = parse_map(mp)
+        src = ROOT / source
         if not src.exists():
-            sys.exit(f"{mp.name}: no transcript {src.name}")
+            sys.exit(f"{mp.name}: no transcript {source}")
         cues = parse_srt(src)
-        turns, splits = parse_map(mp)
         out = label(cues, turns, splits, mp.name)
         speakers = {}
         for _, _, t in out:
             who = t[1:t.index("]")]
             speakers[who] = speakers.get(who, 0) + 1
         unsure = sum(v for k, v in speakers.items() if "?" in k)
-        print(f"{stem[:60]}: {len(cues)} cues -> {len(out)}; {len(turns)} turns, "
+        print(f"{stem}: {len(cues)} cues -> {len(out)}; {len(turns)} turns, "
               f"{sum(len(v) for v in splits.values())} splits; {unsure} cues uncertain")
         if not check:
             dst = ROOT / f"{stem}_inferred-speakers.srt"

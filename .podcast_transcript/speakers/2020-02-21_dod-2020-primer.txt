@@ -4,6 +4,8 @@
 # of Everyone) speak from the audience and are identified by what they
 # describe. Other questioners stay [Audience].
 
+source 2020-02-21_transcript-designing-open-democracy-2020-primer.srt
+
 @ 1 Brian Khuu                   # "I'm your host, Brian Koo"
 @ 13 Alexar Pendashteh           # runs the show of hands
 @ 35 Brian Khuu

@@ -6,6 +6,8 @@
 # The "Andrew" invited to speak at 573 is taken to be Andrew Downing, who is
 # named as a questioner at 280; the recording doesn't confirm they're the same.
 
+source 2020-03-27_transcript-beyond-corporate-social-responsibility-towards-economic-democracy.srt
+
 @ 1 Brian Khuu                   # narrated intro
 @ 11 Antony McMullen             # co-ops 101
 @ 163 Alexar Pendashteh          # introduces Sean

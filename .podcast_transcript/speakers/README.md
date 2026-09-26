@@ -4,12 +4,13 @@ The 2017–2022 transcripts were machine-transcribed without speaker
 detection. This folder adds speaker labels to **copies** of them, worked out
 from context, without touching the originals.
 
-- **`<stem>.txt`**: the speaker map for `../<stem>.srt`. One line per turn:
+- **`<slug>.txt`**: the speaker map for one recording. Its first directive,
+  `source <file>.srt`, names the original transcript; then one line per turn:
   `@ <cue number> <Speaker>`. Comments (`#`) record the evidence: who
   introduces whom, who is addressed by name, what a speaker's known topics
   are. A `?` in a name marks an inferred attribution; `[Audience]` and
   `[Unidentified]` are used when there's nothing to go on.
-- **`apply.py`**: writes `../<stem>_inferred-speakers.srt` from the map, in the
+- **`apply.py`**: writes `../<slug>_inferred-speakers.srt` from the map, in the
   same `[Speaker] text` style as the hand-reviewed
   `2026-09-15_…_labeled.srt`. Cue timings are copied unchanged.
 
@@ -17,6 +18,12 @@ from context, without touching the originals.
 python speakers/apply.py            # regenerate every labelled copy
 python speakers/apply.py --check    # validate the maps and print stats only
 ```
+
+Slugs match the notes in `../analysis/` (e.g. `2020-03-03_isegoria-nicholas-gruen`)
+and are kept short deliberately. The original transcript names run to 140
+bytes, and some filesystems (eCryptfs encrypted home folders on Ubuntu, for
+one) refuse names over about 143 bytes, so appending `_inferred-speakers` to
+the original names broke checkouts there. Don't lengthen them.
 
 To correct an attribution (e.g. after listening to the audio), edit the map,
 not the generated `.srt`, then re-run `apply.py`. Remove the `?` once a line

@@ -6,6 +6,8 @@
 # address ("Well, Nick, let me tell you" at 185; "Thanks, Hubertus" at 159).
 # The Q&A was run by Nick Merange per the intro (cue 17).
 
+source 2017-10-21_transcript-citizens'-democracy-(part-3)_-question-&-answers.srt
+
 @ 1 Narrator (Brian Khuu?)
 @ 18 Audience
 @ 24 Hubertus Hofkirchner

@@ -15,6 +15,8 @@
 #                constitutional history, Criminal Code, "flea car".
 # Unnamed voices are [Audience]. See analysis/2019-12-11_trust-concept-analysis.md.
 
+source 2019-12-11_transcript-trust,-a-concept-analysis.srt
+
 @ 1 Brian Khuu
 @ 24 Alexar Pendashteh
 @ 42 Brian Khuu?
