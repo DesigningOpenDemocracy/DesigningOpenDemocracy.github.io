@@ -642,6 +642,37 @@ html .md-typeset details.plain-details > :last-child {
 }
 
 /* Home page teaser for the Democracy Map, which is its own page (/map/). */
+.map-teaser-visual {
+    display: block;
+    max-width: 1000px;
+    margin: 0.4rem auto 0;
+}
+
+.map-teaser-visual svg {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Land dots are zero-length strokes; the round cap is what draws them. */
+.map-teaser-land {
+    fill: none;
+    stroke: #5f6b75;
+    stroke-opacity: 0.35;
+    stroke-width: 1.1;
+    stroke-linecap: round;
+}
+
+/* Dot colours double as the legend: each matches its count below. */
+.map-teaser-orgs circle {
+    fill: #d24f2e;
+    fill-opacity: 0.75;
+}
+
+.map-teaser-posts circle {
+    fill: #3949ab;
+}
+
 .map-teaser-stats {
     display: flex;
     flex-wrap: wrap;
@@ -658,9 +689,17 @@ html .md-typeset details.plain-details > :last-child {
 }
 
 .map-teaser-stat strong {
-    color: #3949ab;
+    color: #444;
     font-size: 2.4rem;
     line-height: 1.15;
+}
+
+.map-teaser-stat--orgs strong {
+    color: #d24f2e;
+}
+
+.map-teaser-stat--posts strong {
+    color: #3949ab;
 }
 
 .map-teaser-stat span {

@@ -48,25 +48,47 @@
      paid by every visitor whether or not they scrolled to it. The section
      keeps its old id so that links to /#activity-map-container still land
      somewhere that points on to the map. -->
-{%- set map_ns = namespace(orgs=0, posts=0, countries=[]) %}
+{%- set map_ns = namespace(orgs=0, posts=0, countries=[], org_dots=[], post_dots=[]) %}
 {%- for file in pages %}
   {%- if file.page and file.page.url.startswith('organisations/') and file.page.meta is on_democracy_map %}
+    {%- set loc = file.page.meta.location %}
     {%- set map_ns.orgs = map_ns.orgs + 1 %}
+    {%- set map_ns.org_dots = map_ns.org_dots + [[loc.longitude, loc.latitude]] %}
     {%- if file.page.meta.country and file.page.meta.country not in map_ns.countries %}
       {%- set map_ns.countries = map_ns.countries + [file.page.meta.country] %}
     {%- endif %}
   {%- elif file.page and file.page.url.startswith('blog/') and file.page.meta.location and file.page.meta.location.latitude and file.page.meta.location.longitude %}
+    {%- set loc = file.page.meta.location %}
     {%- set map_ns.posts = map_ns.posts + 1 %}
+    {%- set map_ns.post_dots = map_ns.post_dots + [[loc.longitude, loc.latitude]] %}
   {%- endif %}
 {%- endfor %}
 <section id="activity-map-container" class="mdx-container">
   <div id="activity-map-card" class="mdx-hero md-typeset">
     <h1 id="activity-map-title">Democracy Map</h1>
     <p id="activity-map-subtitle">Who is working on democracy, and where</p>
+    {#- A picture of the map, not the map: every dot is a real pin, drawn
+        from the same frontmatter at build time, over a dotted world outline
+        (partials/world-land-dots.html, from util/make_world_dots.py). No
+        placeholder pins: a reader takes a dot on a map as a data point.
+        viewBox is plain degrees (x = longitude, y = -latitude) and must
+        match the latitude band that script draws. Decorative: the counts
+        below carry the same information as text. #}
+    <a class="map-teaser-visual" href="/map/" tabindex="-1" aria-hidden="true">
+      <svg viewBox="-180 -76 360 134" focusable="false">
+        {% include "partials/world-land-dots.html" %}
+        <g class="map-teaser-orgs">
+          {%- for lon, lat in map_ns.org_dots %}<circle cx="{{ lon | round(1) }}" cy="{{ (-lat) | round(1) }}" r="1.1"/>{% endfor -%}
+        </g>
+        <g class="map-teaser-posts">
+          {%- for lon, lat in map_ns.post_dots %}<circle cx="{{ lon | round(1) }}" cy="{{ (-lat) | round(1) }}" r="1.1"/>{% endfor -%}
+        </g>
+      </svg>
+    </a>
     <div class="map-teaser-stats">
-      <div class="map-teaser-stat"><strong>{{ map_ns.orgs }}</strong><span>organisations</span></div>
+      <div class="map-teaser-stat map-teaser-stat--orgs"><strong>{{ map_ns.orgs }}</strong><span>organisations</span></div>
       <div class="map-teaser-stat"><strong>{{ map_ns.countries | length }}</strong><span>countries and regions</span></div>
-      <div class="map-teaser-stat"><strong>{{ map_ns.posts }}</strong><span>DOD blog posts, pinned where they happened</span></div>
+      <div class="map-teaser-stat map-teaser-stat--posts"><strong>{{ map_ns.posts }}</strong><span>DOD blog posts, pinned where they happened</span></div>
     </div>
     <div class="map-teaser-cta">
       <a class="hero-cta-btn hero-cta-primary" href="/map/">Explore the map →</a>
