@@ -401,27 +401,9 @@ def _fetch_page_text(url, headers):
             return None, r, None
         r.raise_for_status()
 
-        # Enforce MAX_FETCH_BYTES before committing to the download: a
-        # server-declared Content-Length over the cap skips the body
-        # entirely, and iter_content() enforces the same cap while reading
-        # in case the header is absent, wrong, or lying (chunked transfer
-        # has no length to check up front).
-        declared_length = r.headers.get("Content-Length")
-        if declared_length is not None:
-            try:
-                if int(declared_length) > MAX_FETCH_BYTES:
-                    r.close()
-                    return None, None, "TOO_LARGE"
-            except ValueError:
-                pass
-
-        chunks = bytearray()
-        for chunk in r.iter_content(chunk_size=65536):
-            chunks.extend(chunk)
-            if len(chunks) > MAX_FETCH_BYTES:
-                r.close()
-                return None, None, "TOO_LARGE"
-        content_bytes = bytes(chunks)
+        content_bytes = _read_capped(r)
+        if content_bytes is None:
+            return None, None, "TOO_LARGE"
 
         content_type = r.headers.get("Content-Type", "")
         if "application/pdf" in content_type.lower() or content_bytes[:5] == b"%PDF-":
@@ -462,21 +444,8 @@ def _fetch_page_text(url, headers):
         # When the declared encoding is absent or a Latin-1 family default,
         # prefer a clean UTF-8 decode of the raw bytes; fall back to r.text
         # if that fails (a genuinely non-UTF-8 legacy page).
-        # r.text isn't available once the body's been read via iter_content
-        # above rather than the r.content property — decode content_bytes
-        # the same way r.text would (per r.encoding, replacing anything
-        # that doesn't fit) rather than reading r.text itself.
-        try:
-            body = str(content_bytes, r.encoding or "utf-8", errors="replace")
-        except LookupError:
-            body = str(content_bytes, errors="replace")
-        declared = (r.encoding or "").lower()
-        if declared in ("", "iso-8859-1", "latin-1", "windows-1252"):
-            try:
-                body = content_bytes.decode("utf-8")
-            except UnicodeDecodeError:
-                pass
-        text = html_to_text(body)
+        # (_decode_html() below does that.)
+        text = html_to_text(_decode_html(content_bytes, r))
         pagecache.store(url, text)
         return text, r, None
     except requests.HTTPError as e:
@@ -485,6 +454,52 @@ def _fetch_page_text(url, headers):
         return None, None, "NETWORK_ERROR"
     except Exception:
         return None, None, "FETCH_ERROR"
+
+
+def _read_capped(r):
+    """Read a streamed (stream=True) response body, or return None if it
+    exceeds MAX_FETCH_BYTES. A server-declared Content-Length over the cap
+    skips the body entirely, and iter_content() enforces the same cap while
+    reading in case the header is absent, wrong, or lying (chunked transfer
+    has no length to check up front). Shared by _fetch_page_text() and
+    _hash_snapshot() so a live page and its archived copy are read under
+    the same limit."""
+    declared_length = r.headers.get("Content-Length")
+    if declared_length is not None:
+        try:
+            if int(declared_length) > MAX_FETCH_BYTES:
+                r.close()
+                return None
+        except ValueError:
+            pass
+    chunks = bytearray()
+    for chunk in r.iter_content(chunk_size=65536):
+        chunks.extend(chunk)
+        if len(chunks) > MAX_FETCH_BYTES:
+            r.close()
+            return None
+    return bytes(chunks)
+
+
+def _decode_html(content_bytes, r):
+    """Decode an HTML body read via _read_capped(). r.text isn't available
+    once the body's been read via iter_content rather than the r.content
+    property, so decode content_bytes the same way r.text would (per
+    r.encoding, replacing anything that doesn't fit), then apply the
+    UTF-8-preference charset fix described at its call site in
+    _fetch_page_text(). Shared with _hash_snapshot() so archive_sha256 and
+    document_sha256 come from identically decoded text."""
+    try:
+        body = str(content_bytes, r.encoding or "utf-8", errors="replace")
+    except LookupError:
+        body = str(content_bytes, errors="replace")
+    declared = (r.encoding or "").lower()
+    if declared in ("", "iso-8859-1", "latin-1", "windows-1252"):
+        try:
+            body = content_bytes.decode("utf-8")
+        except UnicodeDecodeError:
+            pass
+    return body
 
 
 def check_evidence(url, evidence, cache, use_cache=True, from_pagecache=False):
@@ -511,11 +526,11 @@ def check_evidence(url, evidence, cache, use_cache=True, from_pagecache=False):
     derives a corrected quote from the live text and must never do so from
     a cache answer. hint is diagnostic only — it never changes result.
 
-    Any existing archive_url/archive_checked fields on the cache entry
-    are preserved across a fresh-fetch write — this function only owns
-    the fetch-verification fields (etag/last_modified/document_sha256/
-    evidence/checked); --save-to-wayback owns the archive fields and
-    writes them separately in main().
+    Any existing archive_url/archive_checked/archive_sha256 fields on the
+    cache entry are preserved across a fresh-fetch write — this function
+    only owns the fetch-verification fields (etag/last_modified/
+    document_sha256/evidence/checked); --save-to-wayback owns the archive
+    fields and writes them separately in main().
 
     document_sha256 is sha256 of the full fetched page text, unconditional
     — the resource-level integrity signal projected into citations.json
@@ -855,20 +870,83 @@ def find_shared_link_evidence(path):
     yield url, description, "".join([rel, " shared_link (", title, ")"]), path
 
 
+def _hash_snapshot(archive_url, timeout=30):
+    """Fetch a Wayback Machine snapshot's own content and return its
+    sha256, or None on any failure. Requests the raw ("id_") variant of
+    the replay URL — inserting id_ right after the timestamp segment
+    (https://web.archive.org/web/<ts>id_/<original-url>) tells Wayback to
+    serve the archived bytes unmodified, without the toolbar/banner it
+    injects into a normal replay page, so the hash reflects only the
+    archived resource itself, not Wayback's own UI chrome. Runs the same
+    extraction pipeline _fetch_page_text() uses for a live page (PDF/zip
+    sniffing, html_to_text() otherwise) so archive_sha256 and
+    document_sha256 are directly comparable in kind. If the URL doesn't
+    match the expected /web/<digits>/ shape, falls back to the URL as
+    given — a normal replay page still hashes, just with extra chrome.
+
+    The extracted text is hashed and discarded immediately — never
+    written to disk, .pagecache/, or the evidence cache itself. This
+    module already never stores full page bodies for copyright reasons
+    (see the module docstring); an archived copy of someone else's page
+    is exactly the same concern, so only the hash is ever kept, the same
+    as for a live fetch.
+    """
+    raw_url = re.sub(r"(/web/\d+)/", r"\1id_/", archive_url, count=1)
+    try:
+        if not robots_allowed(raw_url, USER_AGENT, timeout=15, session=requests):
+            return None
+        r = requests.get(raw_url, headers={"User-Agent": USER_AGENT},
+                         timeout=timeout, stream=True)
+        r.raise_for_status()
+        content_bytes = _read_capped(r)
+        if content_bytes is None:
+            return None
+        # Branch for branch what _fetch_page_text() does, including which
+        # outputs get their whitespace collapsed (PDF and office text do,
+        # html_to_text() output doesn't), so the text hashed here is the
+        # same kind of text document_sha256 is taken over.
+        content_type = r.headers.get("Content-Type", "")
+        if "application/pdf" in content_type.lower() or content_bytes[:5] == b"%PDF-":
+            text = _extract_pdf_text(content_bytes)
+            text = re.sub(r"\s+", " ", text).strip() if text else text
+        elif content_bytes[:2] == b"PK":
+            text = _extract_zip_xml_text(content_bytes)
+            text = re.sub(r"\s+", " ", text).strip() if text else text
+        else:
+            text = html_to_text(_decode_html(content_bytes, r))
+        return sha256(text) if text else None
+    except Exception:
+        return None
+
+
 def save_to_wayback(url, timeout=30):
-    """Best-effort archival, in two steps: (1) trigger a fresh snapshot via
-    Save Page Now, (2) ask the read-only Availability API for a snapshot
-    URL to actually record — the one just triggered if indexing was fast
-    enough, otherwise the most recent existing one. Either way this
-    returns a real, browsable Robust-Links-style fallback URL rather than
-    just a yes/no on whether the trigger request succeeded (the old
+    """Best-effort archival, in three steps: (1) trigger a fresh snapshot
+    via Save Page Now, (2) ask the read-only Availability API for a
+    snapshot URL to actually record — the one just triggered if indexing
+    was fast enough, otherwise the most recent existing one, (3) fetch
+    that snapshot's own content and hash it (_hash_snapshot() above) so
+    the archived copy's identity is independently checkable later. Step
+    (2) returns a real, browsable Robust-Links-style fallback URL rather
+    than just a yes/no on whether the trigger request succeeded (the old
     behavior — a 200 from /save/ doesn't mean a snapshot exists or tells
     you where to find it, and the trigger endpoint's own redirect chain
     isn't reliable enough to parse for the snapshot URL directly).
 
-    Returns the snapshot URL (str) on success, None on failure. Never
-    raises — both steps are best-effort and independent; a failed trigger
-    doesn't prevent returning a URL from a snapshot that already existed.
+    Unlike document_sha256 (the live page — expected to drift as a cited
+    site's own content changes over time), an archived snapshot's content
+    shouldn't drift once taken: archive_sha256 is a stable reference,
+    useful both to detect the rare case of an archive.org copy itself
+    being corrupted/altered and, if DOD ever needs to migrate to a
+    different archive provider, to confirm a replacement snapshot is
+    actually a faithful copy before trusting it in place of this one.
+
+    Returns (archive_url, archive_sha256) — archive_url is None if no
+    snapshot could be found at all (nothing to hash then either).
+    archive_sha256 can independently be None even when archive_url isn't
+    — the snapshot exists but hashing it failed this run (a transient
+    fetch error) — callers should treat that as "not yet known," not
+    "confirmed absent," and avoid clobbering a previously-recorded hash.
+    Never raises — every step is best-effort and independent.
     """
     try:
         requests.get("https://web.archive.org/save/" + url,
@@ -876,6 +954,7 @@ def save_to_wayback(url, timeout=30):
     except requests.RequestException:
         pass  # trigger is best-effort; the availability check below is what matters
 
+    archive_url = None
     try:
         r = requests.get("https://archive.org/wayback/available",
                          params={"url": url},
@@ -883,10 +962,13 @@ def save_to_wayback(url, timeout=30):
         r.raise_for_status()
         closest = r.json().get("archived_snapshots", {}).get("closest", {})
         if closest.get("available") and closest.get("url"):
-            return closest["url"]
+            archive_url = closest["url"]
     except (requests.RequestException, ValueError):
         pass
-    return None
+
+    if not archive_url:
+        return None, None
+    return archive_url, _hash_snapshot(archive_url, timeout=timeout)
 
 
 # The repo already has a staleness vocabulary — check_event_sourcing.py's
@@ -1142,7 +1224,10 @@ def main():
                              "GOOD results (problems always print regardless). "
                              "Useful as progress output on long --no-cache runs.")
     parser.add_argument("--save-to-wayback", action="store_true",
-                        help="Archive each URL to Wayback Machine's Save Page Now")
+                        help="Archive each URL to Wayback Machine's Save Page Now, "
+                             "and hash the resulting snapshot's content "
+                             "(archive_sha256) so it can be independently "
+                             "re-checked later")
     parser.add_argument("--set-url-status", type=str, nargs=2, default=None,
                         metavar=("URL", "STATUS"),
                         help="Manually record a citation URL's liveness in "
@@ -1296,6 +1381,7 @@ def main():
     not_cached = 0
     wayback_saved = 0
     wayback_failed = 0
+    wayback_hashed = 0
     by_kind = {"event": {"good": 0, "bad": 0, "errors": 0},
                "footnote": {"good": 0, "bad": 0, "errors": 0},
                "shared_link": {"good": 0, "bad": 0, "errors": 0},
@@ -1323,14 +1409,22 @@ def main():
             fetched_urls.add(url)
 
         if args.save_to_wayback:
-            archive_url = save_to_wayback(url)
+            archive_url, archive_sha256_hash = save_to_wayback(url)
             if archive_url:
                 wayback_saved += 1
-                cache[url] = {
+                entry = {
                     **cache.get(url, {}),
                     "archive_url": archive_url,
                     "archive_checked": date.today().isoformat(),
                 }
+                # A failed hash this run (transient fetch error) leaves
+                # whatever was already recorded in place — "not yet known
+                # this run," not "confirmed absent" — rather than clobbering
+                # a hash a prior successful run already established.
+                if archive_sha256_hash:
+                    wayback_hashed += 1
+                    entry["archive_sha256"] = archive_sha256_hash
+                cache[url] = entry
             else:
                 wayback_failed += 1
             time.sleep(0.5)
@@ -1487,7 +1581,8 @@ def main():
           str(by_kind["election"]["errors"]) + " errors")
     if args.save_to_wayback:
         print("Wayback Machine: " + str(wayback_saved) + " saved, " +
-              str(wayback_failed) + " failed")
+              str(wayback_failed) + " failed, " +
+              str(wayback_hashed) + " snapshot(s) hashed")
     if spot_checked:
         print(str(spot_checked) + " of the above were not due — spot-checked "
               "anyway to keep the run from being a no-op (--spot-check)")

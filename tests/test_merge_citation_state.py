@@ -103,6 +103,31 @@ class MergeUrlFieldTests(unittest.TestCase):
             {"https://x/": {"checked": "2026-06-01"}})
         self.assertEqual(out["archive_url"], "https://web.archive.org/snap")
 
+    def test_archive_hash_travels_with_its_own_snapshot(self):
+        # archive_sha256 hashes the snapshot at the archive_url beside it.
+        # Here the side that fetched the live page later is the one that
+        # archived *earlier*; field-by-field merging would pair its snapshot
+        # URL with the other side's hash of a different snapshot.
+        out = self._merge(
+            {"https://x/": {"checked": "2026-01-01",
+                            "archive_url": "https://web.archive.org/web/2026-05/x",
+                            "archive_checked": "2026-05-01", "archive_sha256": "new"}},
+            {"https://x/": {"checked": "2026-06-01",
+                            "archive_url": "https://web.archive.org/web/2026-02/x",
+                            "archive_checked": "2026-02-01", "archive_sha256": "old"}})
+        self.assertEqual((out["archive_url"], out["archive_sha256"]),
+                         ("https://web.archive.org/web/2026-05/x", "new"))
+
+    def test_archive_hash_kept_when_both_sides_share_the_snapshot(self):
+        # A newer run that found the same snapshot but failed to hash it
+        # must not cost the hash the other side already has for it.
+        snap = "https://web.archive.org/web/2026-05/x"
+        out = self._merge(
+            {"https://x/": {"archive_url": snap, "archive_checked": "2026-05-01",
+                            "archive_sha256": "h"}},
+            {"https://x/": {"archive_url": snap, "archive_checked": "2026-06-01"}})
+        self.assertEqual((out["archive_checked"], out["archive_sha256"]), ("2026-06-01", "h"))
+
     def test_url_status_survives_from_the_older_side(self):
         out = self._merge(
             {"https://x/": {"checked": "2026-01-01", "url_status": "dead"}},

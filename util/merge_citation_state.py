@@ -30,9 +30,16 @@ Merge semantics, per URL:
     own document. A cleared `blocked` on the newer side is a real signal (the
     site started answering again), so the newer side simply wins.
   * Additive/human-owned fields (`archive_url`, `archive_checked`,
-    `url_status`, `manual_checked`) survive from either side rather than
-    riding on the fetch-state winner — an archive snapshot recorded by one
-    run must not be dropped because the other side fetched more recently.
+    `archive_sha256`, `url_status`, `manual_checked`) survive from either
+    side rather than riding on the fetch-state winner — an archive snapshot
+    recorded by one run must not be dropped because the other side fetched
+    more recently.
+  * The three archive fields also move as a unit, from whichever side
+    archived more recently (`archive_checked`): `archive_sha256` is the hash
+    of the snapshot at the `archive_url` beside it, so taking the URL from
+    one side and the hash from the other would record a hash of a different
+    snapshot. When both sides point at the same snapshot, a hash either side
+    knows is kept.
 
 `url_status` is the one field a human sets by hand (check_fragments.py
 --set-url-status), so a genuine disagreement between the two sides is never
@@ -54,8 +61,12 @@ import sys
 FETCH_STATE_FIELDS = ("checked", "etag", "last_modified", "document_sha256",
                       "content_hash", "blocked", "blocked_since")
 
+# Written together by one --save-to-wayback run: the hash belongs to the
+# snapshot URL beside it, so these move as a unit (see the module docstring).
+ARCHIVE_FIELDS = ("archive_url", "archive_checked", "archive_sha256")
+
 # Recorded independently of any single fetch, so they survive from either side.
-ADDITIVE_FIELDS = ("archive_url", "archive_checked", "url_status", "manual_checked")
+ADDITIVE_FIELDS = ARCHIVE_FIELDS + ("url_status", "manual_checked")
 
 # Set by hand only — a real disagreement here is reported, never silently dropped.
 HUMAN_FIELDS = ("url_status",)
@@ -112,15 +123,37 @@ def merge_entry(url, ours, theirs, warn):
             out[field] = fresher[field]
 
     for field in ADDITIVE_FIELDS:
+        if field in ARCHIVE_FIELDS:
+            continue
         if field in fresher:
             out[field] = fresher[field]
         elif field in staler:
             out[field] = staler[field]
 
+    archive_src = _archive_side(ours, theirs)
+    if archive_src is not None:
+        for field in ARCHIVE_FIELDS:
+            if field in archive_src:
+                out[field] = archive_src[field]
+        other = theirs if archive_src is ours else ours
+        if ("archive_sha256" not in out and other.get("archive_sha256")
+                and other.get("archive_url") == out.get("archive_url")):
+            out["archive_sha256"] = other["archive_sha256"]
+
     evidence = merge_evidence(ours.get("evidence"), theirs.get("evidence"), warn)
     if evidence or "evidence" in ours or "evidence" in theirs:
         out["evidence"] = evidence
     return out
+
+
+def _archive_side(ours, theirs):
+    """The side whose archive fields to keep: the only one with an
+    archive_url, else the one that archived more recently."""
+    if not theirs.get("archive_url"):
+        return ours if ours.get("archive_url") else None
+    if not ours.get("archive_url"):
+        return theirs
+    return theirs if _newer(theirs.get("archive_checked"), ours.get("archive_checked")) else ours
 
 
 def merge_states(ours, theirs, warn=None):
