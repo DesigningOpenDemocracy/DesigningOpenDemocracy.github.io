@@ -1,8 +1,6 @@
 ---
 title: Landscape News
 template: news.html
-hide:
-  - navigation
 ---
 
 Major and notable news from organisations across the Democracy Landscape over the past year: new publications, launches, leadership changes, landmark results. Subscribe by RSS, or narrow it to a country or topic. For what's coming up rather than what's happened, see the [calendar](calendar.md).

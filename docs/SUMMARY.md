@@ -4,7 +4,9 @@
 - [About](about.md)
     - [Philosophy](philosophy/index.md)
 - [Blog](/blog/)
-- [Calendar](calendar.md)
+- Calendar & News
+    - [Calendar](calendar.md)
+    - [Landscape News](news.md)
 - [Community](community/index.md)
     - community/*.md
     - [Projects](projects/index.md)
@@ -18,7 +20,6 @@
     - concepts/*.md
 - [Democracy Landscape](organisations/index.md)
     - [Democracy Map](map.md)
-    - [Landscape News](news.md)
     - organisations/*.md
 - [Heartbeat](/heartbeat/)
 - [Research](research/index.md)
