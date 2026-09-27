@@ -13,6 +13,9 @@ docs/data/org-concepts.csv
 docs/data/events.json
 docs/calendar.ics
 docs/calendar-*.ics
+docs/news.xml
+docs/news-*.xml
+docs/news.json
 docs/data/citations.json
 # Re-generated at every build from in-repo data:
 # - events.json + calendar.ics are derived from docs/data/events/<slug>.json

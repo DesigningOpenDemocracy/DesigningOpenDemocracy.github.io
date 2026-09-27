@@ -18,6 +18,7 @@
     - concepts/*.md
 - [Democracy Landscape](organisations/index.md)
     - [Democracy Map](map.md)
+    - [Landscape News](news.md)
     - organisations/*.md
 - [Heartbeat](/heartbeat/)
 - [Research](research/research.md)

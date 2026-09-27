@@ -101,6 +101,7 @@ hooks:
   - hooks/normalize_tags.py
   - hooks/footnote_fragments.py
   - hooks/calendar_export.py
+  - hooks/news_export.py
   - hooks/sitemap_extras.py
   - hooks/heartbeat_current.py
 

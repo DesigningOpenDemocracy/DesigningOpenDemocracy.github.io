@@ -5,7 +5,8 @@ in sitemap.xml.
 MkDocs builds sitemap.xml by iterating `pages` — the rendered markdown
 documentation pages — so nothing that isn't a page is ever listed, including
 every data export the build itself generates (hooks/data_export.py,
-hooks/calendar_export.py, hooks/citation_export.py, hooks/llms_txt.py).
+hooks/calendar_export.py, hooks/news_export.py, hooks/citation_export.py,
+hooks/llms_txt.py).
 They are linked from /organisations/ and /calendar/, so a crawler that walks
 those pages does reach them, but a tool acting on a search result rather than
 on a crawl has no way to learn the URLs exist at all. That's the gap this
@@ -17,15 +18,18 @@ directory also holds build *input* and internal state that is not published
 interface: the per-org iCal sync cache (data/events/<slug>.json, one file per
 org), the citation evidence cache, elections.yml. Listing those would dilute
 the sitemap rather than add to it. What's here is exactly the set CLAUDE.md
-documents under "Data exports", plus the calendar feed and llms.txt — keep
-the two in step when an export is added or dropped.
+documents under "Data exports", plus the calendar and news feeds and
+llms.txt — keep the two in step when an export is added or dropped.
 
-Two deliberate omissions:
+Deliberate omissions:
 
   - The per-country calendar feeds (/calendar-<CC>.ics, one per country with
     an upcoming event, plus /calendar-elections.ics) are slices of
     /calendar.ics, and /calendar/ already lists every one of them in its
     feeds table. The canonical feed is the one worth a sitemap entry.
+  - The per-country and per-topic news feeds (/news-<CC>.xml,
+    /news-topic-<slug>.xml), for the same reason: slices of /news.xml, all
+    listed on /news/.
   - graph.json, which hooks/graph_builder.py writes straight into site_dir
     during on_post_build — after this hook runs and after sitemap.xml has
     been rendered. There would be nothing on disk to check it against at the
@@ -42,7 +46,8 @@ the same grounds unless a page carries a real update_date.
 import os
 
 # Published data endpoints, as paths relative to docs_dir. Mirrors CLAUDE.md's
-# "Data exports" table plus the calendar feed and the llms.txt index.
+# "Data exports" table plus the calendar feed, the Landscape News feeds and
+# the llms.txt index.
 DATA_ENDPOINTS = (
     "llms.txt",
     "data/organisations.csv",
@@ -53,6 +58,8 @@ DATA_ENDPOINTS = (
     "data/citations.json",
     "data/events.json",
     "calendar.ics",
+    "news.xml",
+    "news.json",
 )
 
 

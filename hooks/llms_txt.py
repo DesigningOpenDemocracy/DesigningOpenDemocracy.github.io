@@ -144,6 +144,7 @@ def build_llms_txt(site_url):
         f"- Knowledge graph (org↔concept relationships): {site_url}/graph/",
         f"- Blog (event posts, meetup summaries): {site_url}/blog/",
         f"- Blog RSS feed (subscribe for new posts): {site_url}/feed_rss_created.xml",
+        f"- Landscape News (past year's major/notable org news, filterable by country and topic): {site_url}/news/",
         f"- About / philosophy: {site_url}/about/",
         f"- DOD's own projects (wiki, tools, research): {site_url}/community/",
         "",
@@ -158,6 +159,8 @@ def build_llms_txt(site_url):
         f"- org-concepts.csv (edge list for network analysis): {site_url}/data/org-concepts.csv",
         f"- events.json (upcoming events from the calendar): {site_url}/data/events.json",
         f"- calendar.ics (subscribable iCal feed): {site_url}/calendar.ics",
+        f"- news.xml (RSS 2.0, Landscape News): {site_url}/news.xml",
+        f"- news.json (JSON Feed 1.1, Landscape News, with structured per-item fields): {site_url}/news.json",
     ]
     lines += [
         "",
@@ -166,6 +169,13 @@ def build_llms_txt(site_url):
         "A site-wide future events calendar is at {site_url}/calendar/ — filterable by country,".replace("{site_url}", site_url),
         "with RSVP links and .ics subscription. The page includes Schema.org Event JSON-LD",
         "for search crawlers. Same data available at {site_url}/data/events.json.".replace("{site_url}", site_url),
+        "",
+        "## Landscape News (recent notable news)",
+        "",
+        "The past-facing counterpart: {site_url}/news/ lists the last year's org events flagged".replace("{site_url}", site_url),
+        "major or notable, newest first. Feeds: {site_url}/news.xml (everything),".replace("{site_url}", site_url),
+        "{site_url}/news-<CC>.xml (one per ISO 3166-1 country code) and".replace("{site_url}", site_url),
+        "{site_url}/news-topic-<concept-slug>.xml (one per concept), plus {site_url}/news.json.".replace("{site_url}", site_url),
         "",
     ]
 
