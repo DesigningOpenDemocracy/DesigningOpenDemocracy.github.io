@@ -131,6 +131,7 @@ exclude_docs: |
 
 not_in_nav: |
   llms.txt
+  organisations/*.md
   bot.md
   tags.md
 
