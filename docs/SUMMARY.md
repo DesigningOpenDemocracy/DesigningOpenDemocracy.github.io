@@ -4,9 +4,8 @@
 - [About](about.md)
     - [Philosophy](philosophy/index.md)
 - [Blog](/blog/)
-- Calendar & News
-    - [Calendar](calendar.md)
-    - [Landscape News](news.md)
+- [News](news.md)
+- [Calendar](calendar.md)
 - [Community](community/index.md)
     - community/*.md
     - [Projects](projects/index.md)

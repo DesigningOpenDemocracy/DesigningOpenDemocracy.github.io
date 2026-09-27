@@ -204,7 +204,7 @@ The invariants recorded there are not immutable. Any document in this repo — i
 
 ### Calendar (`docs/calendar.md`)
 
-Top-level nav tab, next to Blog — promoted there deliberately (not left nested under Community) since "what's coming up" is a distinct, equally prominent use-case to "what we've written about." Since 2026-09 the tab is "Calendar & News": it still opens on this page, with [Landscape News](#landscape-news-docsnewsmd) as its sibling in the same section (see that section's nav bullet).
+Top-level nav tab, next to Blog — promoted there deliberately (not left nested under Community) since "what's coming up" is a distinct, equally prominent use-case to "what we've written about." Since 2026-09 it sits directly after the [News](#landscape-news-docsnewsmd) tab, the backward-looking half of the same view (see that section's nav bullet).
 
 The page's own prose intro — what's listed here, what the violet election
 cards and their date qualifiers mean — lives inside a collapsed
@@ -376,18 +376,17 @@ done, without reading 170 org pages to find it.
   and swaps the subscribe button to the matching feed. It also carries
   `<link rel="alternate">` feed autodiscovery in its head. There is no
   major-only feed: every item carries its tier as an RSS `<category>`.
-- **Nav placement: shares the Calendar's tab.** `SUMMARY.md` groups the
-  two under one "Calendar & News" section: the tab row was already crowded,
-  and the pages are two halves of one view, so they share a tab instead of
-  adding one. The tab opens on the Calendar (the first child), and both pages
-  list each other in the sidebar and the mobile menu. News was first nested
-  under Democracy Landscape, following the Map's precedent, but that section
-  hides its sidebar on every page (`hooks/org_template.py`, so 170 org pages
-  aren't listed down the left). Anything nested there appears in no menu at
-  all, and News was invisible in the nav until it moved. (The Landscape tab
-  has since been given its own two-entry menu, Directory and Map, with an
-  in-page switcher standing in for the sidebar: see the Org index page
-  section.) Also linked from the `/organisations/` lead, `/calendar/`
+- **Nav placement: its own top-level tab, "News", directly before
+  Calendar.** Two earlier placements didn't hold. Nested under Democracy
+  Landscape (the Map's precedent at the time), it appeared in no menu at
+  all, because that section hides its sidebar. It was then grouped with the
+  Calendar under one "Calendar & News" tab, and split back out into two
+  tabs, News first, at the maintainer's request. The tab label is
+  just "News" to keep the row short (11 tabs, and the last still ends
+  ~260 px short of the edge at 1240 px, just above Material's 1220 px
+  cut-over to the mobile menu), so `docs/news.md` carries an explicit
+  `# Landscape News` heading: without one, Material prints the nav label as
+  the page title. Also linked from the `/organisations/` lead, `/calendar/`
   (lead and About), the site-wide footer's Subscribe row, `llms.txt`, and
   `sitemap.xml` (`news.xml`/`news.json` only; the slices are listed on
   `/news/`, same reasoning as the calendar's).
