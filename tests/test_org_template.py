@@ -69,7 +69,7 @@ class OrgTemplateNavTests(unittest.TestCase):
 
     def test_later_pages_are_not_left_highlighted(self):
         self.render(page("organisations/newdemocracy.md"))
-        self.assertEqual(self.render(page("research/research.md")), (False, False))
+        self.assertEqual(self.render(page("research/index.md")), (False, False))
 
     def test_pages_in_the_nav_are_left_to_mkdocs(self):
         # The directory is in the nav; MkDocs activates its section itself,
