@@ -5,6 +5,7 @@ status: active
 country: AU
 website: https://www.bankaust.com.au
 logo: /assets/org-logos/bank-australia.webp
+logo_bg: dark
 contact:
   phone: 132 888
   form: https://www.bankaust.com.au/contact

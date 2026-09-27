@@ -921,6 +921,123 @@ html .md-typeset details.plain-details > :last-child {
   color: #555;
 }
 
+/* Democracy Map popup cards (home.html). Leaflet popups are always white
+   whatever the site theme, so colours here are fixed rather than theme
+   variables, like the map's other controls. The popup sits inside the
+   .md-typeset map card, so paragraph margins and link colours are reset. */
+.leaflet-popup-content .map-popup {
+  color: #333;
+  font-size: 0.7rem;
+  line-height: 1.45;
+  text-align: left;
+}
+.leaflet-popup-content .map-popup p {
+  margin: 0.5em 0 0;
+}
+.leaflet-popup-content .map-popup a {
+  color: #1565c0;
+}
+.map-popup-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.map-popup-logo {
+  display: block;
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+.map-popup-logo.org-logo-needs-dark {
+  background: rgba(0, 0, 0, 0.45);
+  padding: 2px;
+  box-sizing: border-box;
+}
+.map-popup-head-text {
+  min-width: 0;
+}
+.leaflet-popup-content .map-popup-title {
+  font-size: 1.12em;
+  font-weight: 700;
+  line-height: 1.25;
+  text-decoration: none;
+}
+.leaflet-popup-content .map-popup-title:hover {
+  text-decoration: underline;
+}
+.map-popup-facts {
+  margin-top: 1px;
+  color: #666;
+}
+.map-popup-eyebrow {
+  margin-bottom: 2px;
+  color: #666;
+  font-size: 0.85em;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+/* Event tiers use the calendar's colour language (amber major, blue
+   notable), darkened to stay readable on white. */
+.map-popup-event {
+  margin-top: 0.6em;
+  padding: 0.35em 0.6em;
+  border-left: 3px solid #b0bec5;
+  border-radius: 0 4px 4px 0;
+  background: #f4f6f7;
+}
+.map-popup-event--major {
+  border-left-color: #ffb300;
+  background: #fff8e1;
+}
+.map-popup-event--medium {
+  border-left-color: #4fc3f7;
+  background: #eef8fd;
+}
+.map-popup-event-label {
+  color: #666;
+  font-size: 0.9em;
+}
+.map-popup-badge {
+  margin-left: 0.4em;
+  font-weight: 700;
+  color: #a15c00;
+}
+.map-popup-badge--medium {
+  color: #0277bd;
+}
+.map-popup-event-title {
+  font-weight: 600;
+}
+.map-popup-event-reason {
+  color: #666;
+  font-size: 0.9em;
+  font-style: italic;
+}
+.leaflet-popup-content .map-popup-place {
+  color: #555;
+}
+.leaflet-popup-content .map-popup .org-map-approx-note {
+  margin-top: 0;
+}
+/* Controls an open popup overlaps are faded out of its way (home.html). */
+#map-wrapper .leaflet-control,
+#map-expand-btn {
+  transition: opacity 0.15s;
+}
+#map-wrapper .is-under-popup {
+  opacity: 0;
+  pointer-events: none;
+}
+.map-popup-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2em 1em;
+  margin-top: 0.6em;
+  font-weight: 600;
+}
+
 /****************************************/
 /* Organisations index — top filter toolbar + sortable table */
 
