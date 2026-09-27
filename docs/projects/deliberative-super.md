@@ -50,7 +50,7 @@ Early development — Craig is actively seeking a co-founder to help build this 
 
 - Website: [deliberativesuper.com.au](https://deliberativesuper.com.au)
 - Contact: [craiglambie.com/links](https://craiglambie.com/links)
-- Raise it in the [DOD community channels](../community/community.md)
+- Raise it in the [DOD community channels](../community/index.md)
 
 ## See also
 

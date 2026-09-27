@@ -10,7 +10,7 @@ We are **nonpartisan** and do not presume any single democratic model to be supe
 
 → *For how we assess organisations and what we expect from any system regardless of its ideological label, see the [Accountability Framework](projects/accountability-framework/index.md). For an open space to discuss democracy and governance ideas with other DOD members, see [Philosophy](philosophy/index.md).*
 
-→ *To get involved, see the [Community](community/community.md) page.*
+→ *To get involved, see the [Community](community/index.md) page.*
 
 → *[Join the DOD Telegram](https://t.me/joinchat/HNk_UBX8A7jBPJPbAZU5Zg) — where we coordinate meetups, share events, and discuss what's next.*
 

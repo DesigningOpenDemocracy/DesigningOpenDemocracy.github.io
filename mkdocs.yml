@@ -1,5 +1,15 @@
 site_name: Designing Open Democracy
-site_url: http://designingopendemocracy.com
+# The address the site is actually served from: the bare domain and plain
+# http both 301 here. Canonical links, the sitemap, llms.txt, the data
+# exports and the og:url/og:image preview tags in main.html are all built
+# from it, so a value that redirects makes every one of them redirect too.
+site_url: https://www.designingopendemocracy.com
+# Fallback link-preview description for pages with no summary: of their own.
+# Kept in step with the home page's pitch (home.html's #hero-pitch).
+site_description: >-
+  A nonpartisan community of engineers, social architects, and philosophers
+  asking how design and technology can make democracy work better, from local
+  cooperatives to national governments.
 repo_url: https://github.com/DesigningOpenDemocracy/DesigningOpenDemocracy.github.io
 repo_name: DesigningOpenDemocracy/DesigningOpenDemocracy.github.io
 theme:
@@ -39,6 +49,9 @@ plugins:
       redirect_maps:
         'organisations/organisations.md': 'organisations/index.md'
         'concepts/concepts.md': 'concepts/index.md'
+        'community/community.md': 'community/index.md'
+        'projects/projects.md': 'projects/index.md'
+        'research/research.md': 'research/index.md'
         # Post was filed under 21 Aug 2017 until 2026-09; the event was 21 Oct 2017.
         'blog/2017/08/21/designing-open-democracy-citizens-democracy---presentations-and-qa.md': 'blog/posts/2017-10-21-podcast.md'
   - blog:

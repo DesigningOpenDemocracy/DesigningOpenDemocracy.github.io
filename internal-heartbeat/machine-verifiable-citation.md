@@ -423,6 +423,46 @@ URL and a hash of the cited content are different things" above for
 `document.sha256` and why it belongs on this axis rather than under
 `convergence`.
 
+### Archive integrity: a second resource, not a third axis
+
+`archived_document.sha256` (built 2026-08-23 — see Appendix B) does not
+belong as a new cell on the map above; it answers a related but
+different question about a *different* resource. The map's resource row
+is about the *cited* URL: has it drifted, is it dead. This field is
+about a second, independent resource — the archive provider's own copy
+of that URL, taken at whatever moment `--save-to-wayback` last ran — and
+the question it answers isn't "did the live page change" (that's
+`document.sha256`'s job, and the two are *expected* to diverge over
+time: an archive exists precisely to freeze content the live page later
+changes) but "is the archived copy still exactly what was archived."
+
+Two concrete uses for that:
+
+- **Corruption/tamper detection on the archive itself.** Vanishingly
+  rare in practice — the Internet Archive is a serious institution, not
+  an adversarial host — but a hash recorded once at archive time can't
+  be silently altered later without a re-check surfacing the mismatch.
+  There's a public-good angle here too, not just a defensive one: an
+  archive whose copies are independently checkable is easier for anyone
+  (not just DOD) to trust, which is the same spirit as the radical-
+  transparency stance this project already takes elsewhere.
+- **Archive-migration safety.** If DOD — or any other implementer of
+  this format — ever needs to move a citation's archived reference to a
+  different provider, the new snapshot can be hashed and compared
+  against the recorded value before being trusted as a faithful
+  replacement for the one it's superseding, rather than swapping the
+  link on faith.
+
+Like `document.sha256`, this is hash-only: the archived page's actual
+text is never fetched-and-kept, matching the same copyright-driven
+reason the evidence cache never stores any full page body (see
+`CLAUDE.md`'s "Citation archival" section). It is recorded independently
+of `archive_url`/`archive_location` — a snapshot can be found (so
+`archive_url` gets set) on a run where the follow-up fetch to hash its
+content fails, which must read as "not yet hashed," not "no archive
+exists," so a later successful run can fill it in without contradicting
+anything already recorded.
+
 ## Minimal viable implementation
 
 The format is designed for **produce → augment → verify**. A human
@@ -616,6 +656,29 @@ papered over. `document.sha256` (resource-level review) is populated
 separately, and only once `check_fragments.py` has re-fetched a URL
 since the field was introduced — see "Built 2026-08-23" above for why
 the real corpus shows 0/336 today rather than a backfilled number.
+
+**`archived_document.sha256`: built 2026-08-23**, the same day as
+`document.sha256` above, in direct response to that field's own gap:
+once a resource-level hash of the *live* page existed, the asymmetry
+with the archived copy became obvious — a snapshot could be triggered
+and linked (`archive_url`) with no way to independently confirm its own
+content later. `save_to_wayback()` now does three things instead of two:
+(1) trigger a fresh snapshot via Save Page Now, (2) query the
+Availability API for a snapshot URL, (3) fetch that snapshot's own
+content — via the "id_" raw-replay variant, which strips Wayback's
+injected toolbar so the hash reflects only the archived resource itself
+— and hash it through the same extraction pipeline `document.sha256`
+uses, stored as `archive_sha256` and projected as item-level
+`archived_document.sha256`, a sibling of `document`, not nested inside
+it (see "Archive integrity: a second resource, not a third axis" above
+for why they don't share a wrapper). The three steps are independent:
+a failed hash on this run leaves whatever a prior successful run
+recorded untouched, rather than treating "couldn't reach Wayback for
+the hashing step" as "no archive exists." Real-corpus effect at build
+time: 0/336 items carry it yet, for the same self-healing reason
+`document.sha256` shows 0/336 — this field, too, is populated only on
+citations `--save-to-wayback` has actually run against and successfully
+hashed since the field was introduced, not backfilled.
 
 **A known limitation the signal map makes visible:** for 74 of 332
 projected contexts, `context.sha256` equals the entry's own
@@ -962,6 +1025,70 @@ only if a concrete downstream consumer actually needs it.
   position string, and flagged a reverse-index idea (evidence entries
   optionally listing which locations cite them) as a follow-on, not
   built.
+- **2026-08-23:** Built `archived_document.sha256` (on a branch that
+  never got a PR; ported 2026-09-27, see that entry) — a hash of the
+  Wayback snapshot's own content, distinct from `document.sha256` (the
+  live page). Motivated by three converged arguments: an archived
+  snapshot's content shouldn't drift once taken, unlike a live page, so
+  a hash of it is a genuinely stable reference; it lets a mismatch on
+  re-check surface if the archive copy itself were ever corrupted or
+  altered, in the same spirit as this project's radical-transparency
+  stance — checkable archives keep the archive provider honest too, not
+  just the cited site; and it lets a future archive-provider migration
+  verify a replacement snapshot is a faithful copy before trusting it in
+  the original's place. `save_to_wayback()` gained a third step — after
+  triggering the snapshot and querying the Availability API, it now
+  fetches the snapshot's raw ("id_" — strips Wayback's injected toolbar)
+  content and hashes it through the same extraction pipeline
+  `document.sha256` uses, stored as `archive_sha256` alongside
+  `archive_url`/`archive_checked` and projected as item-level
+  `archived_document.sha256`. Deliberately a sibling field to `document`,
+  not nested inside it: the two hash different resources (the archived
+  copy vs. the live page) and are expected to diverge as the live page's
+  content moves on from what was archived — see "Archive integrity: a
+  second resource, not a third axis". Hash-only, same copyright-driven
+  reason the evidence cache never stores any full page body; the hash
+  step is independent of the trigger/availability steps, so a
+  successfully-found snapshot with a failed hashing fetch leaves
+  `archive_sha256` unset rather than clobbering a value a prior run
+  recorded.
+- **2026-09-08:** Added Appendix G, proposing a `work-status` field for
+  scholarly-source validity (`retracted`/`withdrawn`/`corrected`/
+  `concern`/`not-found`), after a conversation about what changes when
+  this format is pointed at journal articles and PDFs rather than
+  organisation websites. The finding that motivated it: **a retracted
+  paper passes every check this format currently runs, and is reported as
+  fully healthy.** It resolves normally (so `url-status` stays absent,
+  meaning live), it is the genuine paper at the genuine publisher URL (so
+  it is not `unfit`), and the cited sentence is usually still verbatim on
+  the page (so `evidence[].status` is a green `MATCH`). Affirmatively
+  misreporting a retracted citation as verified is a worse failure than
+  not covering the case at all, which is what moved this from "worth
+  considering later" to a recorded gap. It is structurally new rather
+  than another `url-status` value: every signal in this format today is
+  computed by fetching the cited resource and inspecting it, whereas
+  retraction is an assertion a *third party* makes about the work, so it
+  needs a registry lookup — a new class of evidence source in this
+  pipeline, not a new enum member. Field shapes were confirmed against
+  the live CrossRef API rather than recalled (the appendix quotes the
+  actual `updated-by` payload from a known-retracted DOI), per this
+  repo's own "a lead, not a source" rule. Also corrected a claim made in
+  the same conversation: the corpus was asserted to carry zero
+  DOI-bearing citations and actually carries three journal articles, so
+  this is a live gap rather than the pure future-proofing it was first
+  taken for.
+- **2026-09-27:** Ported the 2026-08-23 `archived_document.sha256` work
+  from its unmerged branch. Three adjustments on the way in, all to keep
+  the snapshot hash comparable in kind to `document.sha256`, which is the
+  only reason to have it: the snapshot fetch now goes through the same
+  20 MB `MAX_FETCH_BYTES` cap as a live fetch (added after the branch was
+  cut), the same undeclared-charset UTF-8 handling (also added after, on
+  2026-08-22's mojibake finding), and the same PDF/office whitespace
+  normalisation. Both paths now share `_read_capped()`/`_decode_html()`,
+  and a test pins that one body hashes identically through either.
+  `util/merge_citation_state.py` (also newer than the branch) now moves
+  `archive_url`/`archive_checked`/`archive_sha256` as a unit, so a merge
+  can't pair one side's snapshot with the other side's hash.
 
 ---
 
@@ -1270,6 +1397,263 @@ BLOCKED`/`BLOCKED` cases faster than the manual worklist does, and only
 then decide whether the trust-tier question needs more design than "treat
 it like `manual_verified`."
 
+## Appendix G: Publication-integrity states for scholarly sources (spec-only, not built)
+
+Raised 2026-09-08, from a question about what changes when this format is
+pointed at journal articles, PDFs, and other formally-published works
+rather than the organisation websites, news pages, and Wikipedia articles
+that make up almost all of DOD's corpus. Two states were proposed —
+"paper was retracted" and "paper does not exist" — and neither is
+expressible today.
+
+### The failure this closes: a retracted paper currently reports as healthy
+
+The sharp version, and the reason this is a recorded gap rather than a
+someday-nice-to-have. Walk a retracted paper through every check this
+format runs:
+
+| Check | Result on a retracted paper | Why |
+|---|---|---|
+| `url-status` | absent, i.e. **live** | The publisher's page resolves normally — HTTP 200. |
+| `unfit`? | **No** | It is the genuine paper at the genuine publisher URL. Not parked, not spam, not unrelated content. |
+| `evidence[].status` | **`MATCH`** | The cited sentence is usually still verbatim on the page — publishers overlay a retraction banner or a watermark rather than deleting the text. |
+| `document.sha256` | Changes once, then stable | Fires as a review signal when the banner is added, indistinguishable from any other page edit, and only if the URL happened to be re-fetched across that boundary. |
+
+So a citation to retracted work renders with no warning, exports with
+`status: MATCH`, and passes the weekly sweep indefinitely. **The pipeline
+does not merely fail to represent the case — it affirmatively asserts the
+citation is verified.** That is a worse failure than an uncovered case,
+and it is the whole argument for this appendix.
+
+### Why it isn't a new `url-status` value
+
+`url-status` answers *"can this address be reached, and is what's there
+the legitimate resource?"* Retraction answers *"is this work still valid
+to cite?"* — and the two are independently true, which is exactly the
+test the signal map already applies elsewhere in this document. A
+retracted paper is simultaneously perfectly live (`url-status` absent)
+and no longer citable for its claim. Folding one into the other would put
+two orthogonal facts behind one field, the same class of error this file
+caught twice before (`convergence` vs `document`, and the near-miss of
+naming a resource-level hash `context`).
+
+**The deeper structural difference — this needs a new evidence source,
+not a new enum member.** Every signal this format computes today is
+obtained by *fetching the cited resource and inspecting it*: quote
+matching, context hashing, document hashing, liveness. Retraction cannot
+be obtained that way. It is an assertion a **third party** — the
+publisher, CrossRef, Retraction Watch — makes *about* the work, and the
+work itself frequently does not carry it in machine-readable form. So
+supporting this means the pipeline gains a second kind of check: a
+**registry lookup**, keyed on a persistent identifier rather than on
+quote text. That is a genuinely new capability alongside
+`check_fragments.py`'s fetch-and-match, not a variation on it.
+
+### Why `not-found` isn't `dead` either
+
+`dead` carries a claim: *this existed and is now gone* — which is why the
+archive-preferred rendering makes sense for it (there was something real
+to have archived). "Does not exist" is the different and more serious
+claim that **no evidence this was ever real** can be found: a fabricated
+or hallucinated DOI, a title that resolves to nothing, a citation
+invented wholesale.
+
+The remedies diverge completely. A `dead` citation is repaired by
+promoting its archive snapshot. A fabricated one cannot be repaired at
+all — the claim it supports has no source and must be removed, and
+whatever produced it needs auditing. Collapsing the two would let the
+second hide inside the first, presented to a reader as a link that merely
+rotted.
+
+This is not hypothetical for this repo specifically. `check_footnote_
+quotes.py`'s `unquoted:` gate exists because of a real incident where an
+AI-authored footnote's claim came from a summarizing tool's paraphrase
+rather than the page's actual text (see the "Prose footnote citations"
+section of `CLAUDE.md`). A fabricated citation is the same failure one
+step further along, and this repo publishes AI-drafted material under
+`ai_assist:` markers as a matter of routine.
+
+### Unlike `unfit`, this is machine-detectable — verified, not recalled
+
+`url-status` is human-set-only for a stated reason: a parked domain
+returns HTTP 200, so `unfit` genuinely cannot be inferred. **Retraction
+is the opposite case**, and the difference matters because it means this
+field would not have to inherit the human-in-the-loop precedent.
+
+Confirmed against the live CrossRef REST API on 2026-09-08 rather than
+asserted from memory (per `CLAUDE.md`'s "WebSearch/WebFetch output is a
+*lead*, not a *source*" rule — which applies just as much to a model's
+recall of an API's field names). Querying
+`https://api.crossref.org/works/10.1016/S0140-6736(97)11096-0` — the 1998
+Wakefield MMR paper, retracted by *The Lancet* in 2010 — returns:
+
+```json
+"title": ["RETRACTED: Ileal-lymphoid-nodular hyperplasia, non-specific colitis, ..."],
+"updated-by": [
+  {"DOI": "10.1016/s0140-6736(04)15715-2", "type": "correction",
+   "label": "Correction", "source": "retraction-watch",
+   "updated": {"date-parts": [[2004, 3, 6]]}, "record-id": "17269"},
+  {"DOI": "10.1016/s0140-6736(10)60175-4", "type": "retraction",
+   "label": "Retraction", "source": "retraction-watch",
+   "updated": {"date-parts": [[2010, 2, 6]]}, "record-id": "4036"}
+]
+```
+
+Findings that matter for a design:
+
+- **`updated-by` is the field to read**, on the retracted record itself.
+  (`update-to`, its mirror, sits on the *notice* pointing back — the
+  wrong direction for this use.) It is an array: a work can be corrected
+  and later retracted, as this one was, so a consumer must reduce several
+  entries to one verdict rather than reading the first.
+- **`type` is the vocabulary**, already lowercase and hyphen/underscore
+  shaped, carrying `retraction`, `correction`, and (in CrossRef's wider
+  set) expressions of concern, withdrawals, and removals. Adopting these
+  names rather than inventing parallel ones is nearly free.
+- **`source: "retraction-watch"`** confirms the Retraction Watch database
+  is served through this API directly, so no separate feed, licence, or
+  scrape is needed to reach it.
+- **Free, no authentication**, standard polite-pool `User-Agent` with a
+  contact address — the same etiquette this repo's fetchers already
+  practice.
+- **A fabricated DOI returns HTTP 404**, checked with a made-up
+  `10.1126/science.fake9999999`. So `not-found` has a real detection path
+  too, though a 404 alone is weaker evidence than a retraction record and
+  should read as "could not confirm this work exists," not a proof of
+  fabrication.
+- **The publisher's own `title` is prefixed `"RETRACTED: "`** — a second,
+  weaker signal, useful as corroboration but not to depend on, since it
+  is a per-publisher convention rather than a guarantee.
+
+**Checked against DOD's actual corpus the same day**, all three DOI
+citations resolve cleanly with no `updated-by` key at all — CrossRef
+records exist, none retracted or corrected:
+
+| DOI | Work | `updated-by` |
+|---|---|---|
+| `10.1126/science.adq2852` | AI can help humans find common ground in democratic deliberation | absent |
+| `10.1177/20539517241296038` | Strong or thin digital democracy? … Taiwan's open government | absent |
+| `10.1080/13608746.2022.2161973` | Two Steps Forward, One Step Back … Democratic Digital Innovation | absent |
+
+Absence of the key is the healthy state, which makes the check cheap to
+express: one request per DOI, one key to test.
+
+### Prior art: Zotero already does the library-side half
+
+Worth crediting rather than writing this section as though nobody has
+touched it. **Zotero ships retraction alerts**, using Retraction Watch
+data, flagging items in a user's own library with a prominent warning.
+That is real, deployed, and validates the underlying idea — while sitting
+on the other side of the boundary this format cares about:
+
+- **Zotero's alert is library-scoped.** It warns *the researcher whose
+  library holds the item*, at the moment they open their own reference
+  manager.
+- **This proposal is publication-scoped.** It would warn *a reader of the
+  published page* — someone who never had a reference manager open and
+  has no relationship with the citing author's tooling.
+
+Nothing in the reference-manager ecosystem does the second, for the same
+reason nothing does live quote re-verification: the tools are built
+around a private library of things you intend to cite, not around
+citations already published to the public. Same gap as the rest of this
+document, one field further along.
+
+### Proposed shape
+
+Item-level, a sibling to `url-status`, not a value inside it:
+
+```json
+{
+  "URL": "https://www.science.org/doi/10.1126/science.adq2852",
+  "url-status": "dead",
+  "work-status": "retracted",
+  "work-status-source": "https://doi.org/10.1016/s0140-6736(10)60175-4",
+  "work-status-checked": "2026-09-08"
+}
+```
+
+- **Name.** `url-status` names what it is about (the address);
+  `work-status` names what *this* is about (the work at that address).
+  The pair reads as a matched set and each says which question it
+  answers. "Work" is also the standard bibliographic term for the thing
+  as distinct from a particular instance of it.
+- **Values**, lowercase-hyphen per this document's own convention, mapped
+  onto CrossRef's `type` vocabulary rather than invented: `retracted`,
+  `withdrawn`, `corrected`, `concern` (expression of concern),
+  `not-found`. Absent means no adverse finding — matching how absent
+  `url-status` means live.
+- **Provenance siblings.** `work-status-source` is the URL of the
+  retraction notice or registry record, so a reader can click through to
+  the thing that says so, and `work-status-checked` dates the lookup.
+  Both matter more here than for `url-status`, because the assertion
+  originates outside the cited resource and a reader has no other way to
+  reach it.
+
+**One naming question deliberately left open** rather than quietly
+settled, since this document has twice had to walk back a shape it picked
+in passing: flat scalar plus two sibling keys (above, consistent with
+`url-status`) versus a wrapper object
+(`work-status: {value, source, checked}`, consistent with `convergence`
+and `context`). The wrapper convention as stated is for fields that must
+declare *how to recompute* them; this field's extra data is *who says
+so*, which is provenance rather than algorithm — so the flat form is the
+better fit by the existing rule, and it is written that way above. It is
+flagged because three loose keys sharing a prefix is the kind of thing
+that reads fine when added and awkward two fields later.
+
+### What this deliberately does not change
+
+**`evidence[].status` semantics stay exactly as they are.** A retracted
+paper's quote genuinely does still match its page, and reporting `MATCH`
+for it remains correct — the quote-level check is answering "is this
+sentence still there," and it is. Retraction is a separate fact layered
+above it, not a correction to it. Any attempt to make the quote checker
+"know about" retraction would overload a claim-level content check with a
+resource-level validity judgment, and would also lie in the other
+direction: the sentence really is on the page.
+
+**Where it lands on the signal map:** resource level, gate tier — the
+same cell as `url-status`, which already holds a gate that is set by hand
+rather than computed from a fetch. It joins that cell rather than needing
+a new one; what is new is the *source* of the verdict, not its position.
+
+### Reality check, and the trigger for building it
+
+**Not built, and not urgent.** Three DOI-bearing citations exist in the
+corpus today, all in blog-post `shared_link:`/footnote positions, all
+currently clean. A retraction among three known-good papers is unlikely
+enough that shipping a CrossRef client, a cache field, a linter, and two
+render paths for it now would be building well ahead of the need — the
+same judgment that keeps Appendices D through F unbuilt.
+
+*(Recount 2026-09-27, when this appendix was ported from an unmerged
+2026-09-08 branch: the corpus now carries five DOIs. The two added since,
+`10.1007/s11366-015-9329-3` and `10.1186/s13174-021-00139-6`, have not
+been checked against CrossRef. Still far short of the trigger below.)*
+
+**What would trigger it:** DOD citing journal literature at any real
+volume — the accountability framework leaning on published research, or
+blog posts moving from linking papers to arguing from them. The natural
+first increment is also the smallest: a report-only script in the weekly
+probe cron that resolves each DOI-bearing citation URL against CrossRef
+and prints any `updated-by` entry, writing nothing. That is one HTTP
+request per DOI against a free API, it needs no schema change at all, and
+it would answer the only question that actually matters at this corpus
+size — *has anything we cite been retracted?* — without committing to a
+field shape before there is anything to put in it.
+
+**The rendering half will need the same fix that is already outstanding
+one section up.** Appendix B records that a `MISMATCH` on a live page
+never reaches a reader, because both render paths compute `is_rotted`
+from `url_status` alone — verified still true on 2026-09-08
+(`docs/overrides/organisation.html:150`,
+`hooks/footnote_fragments.py:344`). A `work-status` field would land in
+exactly the same blind spot on arrival: recorded in the cache, projected
+into `citations.json`, and invisible on the page. Whichever of the two is
+built first should generalize that check rather than adding a third
+special case to it.
+
 ## References
 
 - CSL-JSON schema: https://github.com/citation-style-language/schema
@@ -1288,3 +1672,8 @@ it like `manual_verified`."
 - NISO Z39.88-2004, The OpenURL Framework for Context-Sensitive Services: https://www.niso.org/standards-committees/openurl
 - COinS (ContextObjects in Spans) specification: https://ocoins.info/
 - OpenURL 1.0 KEV (key/encoded-value) guidelines (defines the `rft.*`/`rft_val_fmt`/`rft_id` query-string keys COinS spans carry): https://web.archive.org/web/2019/http://alcme.oclc.org/openurl/servlet/OAIHandler/extension?identifier=info:ofi/fmt:kev:mtx:ctx
+- CrossRef REST API (serves the `updated-by` retraction/correction relations used in Appendix G): https://api.crossref.org/
+- CrossRef REST API documentation: https://api.crossref.org/swagger-ui/index.html
+- Crossmark (CrossRef's publisher-facing mechanism for depositing corrections, retractions, and expressions of concern): https://www.crossref.org/services/crossmark/
+- Retraction Watch database, acquired by CrossRef and served through the REST API: https://retractionwatch.com/retraction-watch-database-user-guide/
+- Zotero retraction alerts (library-scoped prior art for Appendix G): https://www.zotero.org/blog/retracted-item-notifications/

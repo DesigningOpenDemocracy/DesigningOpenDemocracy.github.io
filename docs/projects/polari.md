@@ -51,7 +51,7 @@ The platform is at an early version (0.0.1) and primarily seeking contributors a
 - **Backend:** [github.com/dausume/Polari-Framework](https://github.com/dausume/Polari-Framework) (Python, GPL-3.0)
 - **Frontend:** [github.com/dausume/polari-platform-angular](https://github.com/dausume/polari-platform-angular) (TypeScript/Angular)
 - **Deployment:** [github.com/dausume/polari-node](https://github.com/dausume/polari-node) (Docker Compose)
-- Raise it in the [DOD community channels](../community/community.md)
+- Raise it in the [DOD community channels](../community/index.md)
 
 See also the [original introduction post from September 2023](../blog/posts/2023-09-10.md).
 

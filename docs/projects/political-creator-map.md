@@ -36,7 +36,7 @@ Many voters now get political information from independent creators rather than 
 
 ## Status
 
-This is an idea-stage proposal with no committed owner. If you want to develop it — even just as a literature-review concept page on existing media-landscape trackers — raise it in the [DOD community channels](../community/community.md), then update this page's `status` to `active` and add yourself under `contributors`.
+This is an idea-stage proposal with no committed owner. If you want to develop it — even just as a literature-review concept page on existing media-landscape trackers — raise it in the [DOD community channels](../community/index.md), then update this page's `status` to `active` and add yourself under `contributors`.
 
 ## See also
 

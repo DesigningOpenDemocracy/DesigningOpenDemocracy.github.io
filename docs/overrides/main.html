@@ -4,4 +4,65 @@
   {{ super() }}
   <meta name="darkreader-lock">
   <link type="text/plain" rel="llms" href="/llms.txt">
+
+  {#- Open Graph / Twitter Card metadata, so a link to any page on this site
+      unfurls into a rich preview (Slack, Discord, Twitter/X, iMessage, etc.)
+      instead of a bare title. Sourced from each page's own frontmatter where
+      available, falling back to the page body and finally the site defaults
+      below — no separate og:-specific fields need to be authored per page.
+      Every value is |e-escaped: MkDocs templates don't autoescape, and a
+      summary containing a double quote would otherwise end the content=""
+      attribute early and garble the tag. #}
+  {%- set site_url = config.site_url.rstrip("/") %}
+  {%- set meta = page.meta if page and page.meta else {} %}
+  {%- set is_home = page and page.is_homepage %}
+  {%- set social_title = config.site_name if is_home
+      else (meta.title or (page.title if page else none) or config.site_name) %}
+  {#- The home page's own body opens with its headings ("Designing Open
+      Democracy About Us ..."), so it gets the site description instead. -#}
+  {%- set social_description_raw = (config.site_description if is_home else none)
+      or meta.summary or meta.description
+      or (page.content | striptags | trim | truncate(200) if page and page.content else none)
+      or config.site_description or "" %}
+  {%- set social_description = social_description_raw | replace("\n", " ") | replace("\r", " ") | trim %}
+  {#- First usable image, wide ones before the org's square logo (a wide
+      image suits the large preview card). Link unfurlers broadly skip .ico
+      and .svg (28 org logos are SVG, 5 are .ico), so those are passed over
+      for the next candidate, and the site logo is the last resort. -#}
+  {%- set img = namespace(src=none, wide=false) %}
+  {%- for cand, is_wide in [
+        (meta.banner, true),
+        (meta.shared_link.image if meta.shared_link else none, true),
+        (meta.event.image if meta.event else none, true),
+        (meta.logo, false)] %}
+    {%- if not img.src and cand and not cand.split("?")[0].lower().endswith((".ico", ".svg")) %}
+      {%- set img.src = cand %}
+      {%- set img.wide = is_wide %}
+    {%- endif %}
+  {%- endfor %}
+  {%- set social_image_raw = img.src %}
+  {%- if social_image_raw and (social_image_raw.startswith("http://") or social_image_raw.startswith("https://")) %}
+    {%- set social_image = social_image_raw %}
+  {%- elif social_image_raw %}
+    {%- set social_image = site_url ~ "/" ~ social_image_raw.lstrip("/") %}
+  {%- else %}
+    {%- set social_image = site_url ~ "/assets/dodlogo_transparent.png" %}
+  {%- endif %}
+  {%- set social_url = page.canonical_url if page and page.canonical_url else site_url %}
+  {%- set social_type = "article" if meta.date else "website" %}
+  {#- A square logo in the large card gets cropped to a strip; only wide
+      images get it. -#}
+  {%- set twitter_card = "summary_large_image" if img.wide else "summary" %}
+
+  <meta property="og:type" content="{{ social_type | e }}">
+  <meta property="og:site_name" content="{{ config.site_name | e }}">
+  <meta property="og:title" content="{{ social_title | e }}">
+  <meta property="og:description" content="{{ social_description | e }}">
+  <meta property="og:url" content="{{ social_url | e }}">
+  <meta property="og:image" content="{{ social_image | e }}">
+
+  <meta name="twitter:card" content="{{ twitter_card }}">
+  <meta name="twitter:title" content="{{ social_title | e }}">
+  <meta name="twitter:description" content="{{ social_description | e }}">
+  <meta name="twitter:image" content="{{ social_image | e }}">
 {% endblock %}
