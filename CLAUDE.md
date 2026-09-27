@@ -18,7 +18,7 @@ Stdlib `unittest` regression coverage for the citation-verification tooling (`ut
 ```
 python -m unittest discover tests   # or: just test
 ```
-Wired into CI (`.github/workflows/build.yml`) as its own step, before the build/lint jobs. Covers the pure functions in `text_fragment.py` (`normalize_ws`, `find_span`, `quote_matches`, `_split_ellipsis`, `make_text_fragment`/`add_fragment_to_url`/`with_fragment`, `spacing_autofix`, `closest_match_hint`, footnote parsing) directly, plus the I/O-adjacent parts of `check_fragments.py` via fixture files in a tempdir: `paragraph_hash` (regression test for the offset-drift bug — see its docstring), `wikipedia_title` (including the non-English-subdomain regression), `write_quote_fix`/`_write_quote_fix_yaml` (the plain-scalar and YAML-scalar success paths, plus all three refusal cases: no frontmatter, ambiguous quote across events, non-canonical existing frontmatter), `collect_evidence`'s `--slug` filtering (the exact `--slug a --slug b` regression from 2026-08-14, plus the 2026-08-25 scoping fix that stopped `--slug` from silently re-fetching every footnote on the site), the `--max-age` freshness gate (`StalenessGateTests` — per-quote vs URL-level dating, the deterministic jitter that stops the corpus falling due on one day, and unparseable/missing dates reading as never-checked), `--full` scan mode and the not-a-no-op top-up (`FullScanModeTests`, `SpotCheckSampleTests` — including that a negative window means full scan, never skip-everything), `check_evidence`'s no-cache write path (`CheckEvidenceNoCachePreservesOtherEvidenceTests` — a successful `--no-cache` re-fetch must merge into the URL's stored evidence rather than rebuilding it, the 2026-08-25 28-quote data-loss regression — see the "Utility scripts" `check_fragments.py` entry below), and `_fetch_page_text`'s robots.txt gate (disallowed URLs are never requested; Wikipedia's own API is deliberately not gated). `test_robots_check.py` covers `robots_check.py` directly, including the regression that motivated it: an unreachable/unparseable robots.txt must resolve to "allow everything," not the `RobotFileParser` default of "deny everything" for a parser that never had `parse()`/`read()` called successfully. `test_normalize_tags.py` covers `hooks/normalize_tags.py`'s tag folding, including the invariant that its slug always matches the anchor `hooks/tag_links.py` builds — if those two ever disagree a tag chip links to an anchor no section carries, which is the duplicate-anchor bug in a new form. `test_check_event_urls.py`'s `CheckUrlCachedTests` covers the same sticky-cache treatment for a robots.txt disallow that `HTTP_403`/`429` already got (shared cache format, see `check_event_urls.py`'s entry below). `test_sitemap_extras.py` covers `hooks/sitemap_extras.py` and renders `docs/overrides/sitemap.xml` against the hook's own output — the two agree on a Jinja global name, and renaming it on one side alone yields a sitemap that builds, validates as XML, and silently contains none of the data endpoints. It also pins the drop-if-missing rule (an entry for a file the build never wrote is a 404 advertised to every crawler) and the upstream page loop the override is carrying. `test_calendar_export.py` pins `_load_manual_events()` carrying an event's `note:`/`quote:` through to the site-wide calendar — the hook builds its event dict field by field, so a field it stops reading vanishes from the calendar with nothing failing (see the Calendar section's expandable-description bullet). When adding new verification logic to either file, add a test alongside it rather than validating by hand-running against real org files — see issue #155 for the motivating history of bugs this would have caught.
+Wired into CI (`.github/workflows/build.yml`) as its own step, before the build/lint jobs. Covers the pure functions in `text_fragment.py` (`normalize_ws`, `find_span`, `quote_matches`, `_split_ellipsis`, `make_text_fragment`/`add_fragment_to_url`/`with_fragment`, `spacing_autofix`, `closest_match_hint`, footnote parsing) directly, plus the I/O-adjacent parts of `check_fragments.py` via fixture files in a tempdir: `paragraph_hash` (regression test for the offset-drift bug — see its docstring), `wikipedia_title` (including the non-English-subdomain regression), `write_quote_fix`/`_write_quote_fix_yaml` (the plain-scalar and YAML-scalar success paths, plus all three refusal cases: no frontmatter, ambiguous quote across events, non-canonical existing frontmatter), `collect_evidence`'s `--slug` filtering (the exact `--slug a --slug b` regression from 2026-08-14, plus the 2026-08-25 scoping fix that stopped `--slug` from silently re-fetching every footnote on the site), the `--max-age` freshness gate (`StalenessGateTests` — per-quote vs URL-level dating, the deterministic jitter that stops the corpus falling due on one day, and unparseable/missing dates reading as never-checked), `--full` scan mode and the not-a-no-op top-up (`FullScanModeTests`, `SpotCheckSampleTests` — including that a negative window means full scan, never skip-everything), `check_evidence`'s no-cache write path (`CheckEvidenceNoCachePreservesOtherEvidenceTests` — a successful `--no-cache` re-fetch must merge into the URL's stored evidence rather than rebuilding it, the 2026-08-25 28-quote data-loss regression — see the "Utility scripts" `check_fragments.py` entry below), and `_fetch_page_text`'s robots.txt gate (disallowed URLs are never requested; Wikipedia's own API is deliberately not gated). `test_robots_check.py` covers `robots_check.py` directly, including the regression that motivated it: an unreachable/unparseable robots.txt must resolve to "allow everything," not the `RobotFileParser` default of "deny everything" for a parser that never had `parse()`/`read()` called successfully. `test_normalize_tags.py` covers `hooks/normalize_tags.py`'s tag folding, including the invariant that its slug always matches the anchor `hooks/tag_links.py` builds — if those two ever disagree a tag chip links to an anchor no section carries, which is the duplicate-anchor bug in a new form. `test_check_event_urls.py`'s `CheckUrlCachedTests` covers the same sticky-cache treatment for a robots.txt disallow that `HTTP_403`/`429` already got (shared cache format, see `check_event_urls.py`'s entry below). `test_sitemap_extras.py` covers `hooks/sitemap_extras.py` and renders `docs/overrides/sitemap.xml` against the hook's own output — the two agree on a Jinja global name, and renaming it on one side alone yields a sitemap that builds, validates as XML, and silently contains none of the data endpoints. It also pins the drop-if-missing rule (an entry for a file the build never wrote is a 404 advertised to every crawler) and the upstream page loop the override is carrying. `test_calendar_export.py` pins `_load_manual_events()` carrying an event's `note:`/`quote:` through to the site-wide calendar — the hook builds its event dict field by field, so a field it stops reading vanishes from the calendar with nothing failing (see the Calendar section's expandable-description bullet). `test_news_export.py` covers `hooks/news_export.py` (see the Landscape News section): which events count as news (the `< today` boundary with the calendar has to be exact, or an event lands on both pages or neither), co-hosted events merging into one item, item ids surviving a title rewording or a co-host merging in (a changed id reaches every subscriber as a new item), a feed existing for every country and topic even with nothing in the window, and the feeds parsing and escaping correctly. When adding new verification logic to either file, add a test alongside it rather than validating by hand-running against real org files — see issue #155 for the motivating history of bugs this would have caught.
 
 ## Known Watch Items
 
@@ -312,6 +312,78 @@ which are about importance.
   `docs/calendar-elections.ics` (gitignored/regenerated, same as the
   others) for readers who want polling days without the landscape's
   meetups — a subscribed `.ics` can't be filtered after the fact.
+
+### Landscape News (`docs/news.md`)
+
+The past-facing counterpart to the calendar: the last year's **major and
+notable** events from across the Democracy Landscape, newest first — a
+launch, a handbook's new edition, a leadership change, a flagship report.
+The point is what one org in the landscape would want to know another had
+done, without reading 170 org pages to find it.
+
+- **It is a view, not a data source.** Items are org `events:` entries with
+  `notable: true` or `notable: "medium"`, dated before today and within
+  `NEWS_WINDOW_DAYS` (365) of it, built by `hooks/news_export.py`. There is
+  no `news:` field and no second place to write an item: to add news, add a
+  notable event to the org's own page, where it gets the same sourcing gates
+  (`check_event_sourcing.py`, `check_fragments.py`) as any other event. An
+  item can never say more than the timeline it came from. Un-tiered events
+  never appear, and neither does anything older than the window (a 2011
+  founding is history, not news).
+- **Deliberately not an aggregation of org RSS feeds** (`rss_feed:`). Those
+  are every post an org publishes, the firehose this page exists to spare
+  readers from.
+- **No overlap with the calendar.** The calendar takes `date >= today`, and
+  news takes `date < today`, so at any build an event is on exactly one of the
+  two. A notable upcoming event moves from one to the other on the first
+  build after it starts. Both pages are built only on push, so an event that
+  happened since the last build is still on the calendar (collapsed as past
+  by its client-side JS) until the next one.
+- **Co-hosted events merge.** Two entries with the same date and `url:` (the
+  same event recorded on each co-host's page, like DOD and 888 Co-operative
+  Causeway's International Day of Democracy panel) become one item listing
+  both orgs, rather than reaching a subscriber twice. The first org in
+  filename order supplies the title/note/quote, the stronger tier wins, and
+  countries and concepts are the union. Entries with no URL never merge.
+- **Links** follow the org timeline's rule: the source with a `#:~:text=`
+  fragment from `quote:`, or the Wayback snapshot once `url_status` is
+  `dead`/`unfit` (see "Citation archival"). An event cited only by
+  `source:` links its feed item to the org's Landscape profile instead.
+- **Feeds** (all gitignored, regenerated every build): `/news.xml` (RSS 2.0),
+  `/news.json` (JSON Feed 1.1, with a `_dod` extension object carrying the
+  structured fields: tier, orgs, countries, concepts, note, quote),
+  `/news-<CC>.xml` per country and `/news-topic-<concept-slug>.xml` per
+  topic. Each item's `guid` is keyed on date + source URL (falling back to
+  org + date + title when there's no URL), not on the title, because titles
+  get reworded far more often than citations change and a changed id reaches
+  every subscriber as a new item. **Unlike the calendar's per-country
+  `.ics` files, a feed is written for every country and every concept any
+  org carries, not just those with a current item.** News in one country is
+  a few items a year, and a subscribed URL that 404s through a quiet year
+  would be worse than an empty channel. Unchanged feeds aren't rewritten
+  (their mtime is left alone), since nearly all ~100 are identical from one
+  build to the next.
+- **"Topic" means the org's `concepts:`, not the item's.** Events carry no
+  concepts of their own, so a topic feed follows organisations working in
+  that field rather than stories about it. The page says so. If per-event
+  topics are ever wanted, that's a new `events:` field, not a change here.
+- **Page**: `docs/overrides/news.html` reuses the calendar's `.calendar-event`
+  card styling wholesale (amber major, blue notable), with only
+  `.news-*` rules of its own in `customizations.css`. It has country, topic
+  and "Major only" filters, reads and writes `?country=`/`?topic=`/`?tier=major`
+  (each per-slice feed's channel `<link>` points at its own filtered view),
+  and swaps the subscribe button to the matching feed. It also carries
+  `<link rel="alternate">` feed autodiscovery in its head. There is no
+  major-only feed: every item carries its tier as an RSS `<category>`.
+- **Nav placement: under Democracy Landscape, not a new top-level tab.** The
+  tab row was already crowded, and news is a view of Landscape data the same
+  way the Democracy Map is, so it follows the Map's precedent
+  (`docs/news.md` at the docs root, listed under Democracy Landscape in
+  `SUMMARY.md`, `hide: [navigation]`). Because that section hides its
+  sidebar, the nav entry alone doesn't make it findable. It's linked from the
+  `/organisations/` lead, `/calendar/` (lead and About), the site-wide footer's
+  Subscribe row, `llms.txt`, and `sitemap.xml` (`news.xml`/`news.json`
+  only; the slices are listed on `/news/`, same reasoning as the calendar's).
 
 ### Blog posts (`docs/blog/posts/`)
 
@@ -780,6 +852,7 @@ more than a bare link.
 | `democracy-map.html` | `docs/overrides/` | `docs/map.md` (`/map/`) — the Democracy Map: Landscape orgs and located blog posts, with the type filter and popup cards; set via `template:` frontmatter. Listed in `SUMMARY.md` under Democracy Landscape, so that tab stays highlighted on it. Deliberately `docs/map.md`, not `docs/organisations/map.md`: several scripts (`reorder_frontmatter.py`, `check_event_sourcing.py`, `tests/test_org_types.py`'s corpus check) treat every `.md` in `docs/organisations/` as an org profile. |
 | `knowledge-graph.html` | `docs/overrides/` | `docs/knowledge-graph.md` — interactive Cytoscape.js graph; set via `template:` frontmatter |
 | `calendar.html` | `docs/overrides/` | `docs/calendar.md` — site-wide future events list + `.ics` subscribe link; set via `template:` frontmatter |
+| `news.html` | `docs/overrides/` | `docs/news.md` — Landscape News: the past year's notable org events, with country/topic filters and RSS/JSON Feed links; set via `template:` frontmatter. See the Landscape News section. |
 | `sitemap.xml` | `docs/overrides/` | Not a page template — overrides MkDocs' own `sitemap.xml` (Material ships none). Its page loop is upstream's, kept verbatim; the loop after it emits `hooks/sitemap_extras.py`'s data endpoints. `mkdocs.yml`'s `exclude_docs` keeps this one file from also being copied out as a raw template, since `docs/overrides/` is inside `docs_dir` — a second, unrendered `sitemap.xml` on the domain is worth avoiding even though nothing links to it. |
 
 ### Hooks
@@ -795,7 +868,8 @@ more than a bare link.
 - `hooks/citation_export.py` — fires on `on_pre_build`; exports all event and footnote citations to `/data/citations.json` in CSL-JSON format with `evidence` array (machine-verifiable citation standard), plus a read-only projection of `archive`/`archive_location`/`url-status`/`archived_document` from the evidence cache (see "Citation archival" above). See `internal-heartbeat/machine-verifiable-citation.md` for the original design and `internal-heartbeat/2026-08-22-citation-archival-design-decisions.md` for the archive-projection addition.
 - `hooks/footnote_fragments.py` — fires on `on_page_markdown` and `on_page_content`; parses prose footnotes for verbatim quoted excerpts (same convention as event `quote:`), then post-processes the rendered HTML to add `#:~:text=` fragments to footnote citation links. The counterpart of `with_fragment` for the prose footnote world — derives fragments at build time, never stores them in markdown. Also adds/swaps in Wayback archive links the same way `hooks/org_events.py` does for events — see "Citation archival" above.
 - `hooks/calendar_export.py` — fires on `on_pre_build`/`on_env`; merges every org's future `events:` entries with every org's cached `ics_feed` sync (`docs/data/events/<slug>.json`) and the curated polling days in `docs/data/elections.yml` into one sorted list, writes `docs/calendar.ics` + `docs/calendar-elections.ics` + `docs/data/events.json`, and injects the list as the `calendar_events` Jinja global used by `docs/overrides/calendar.html`. Makes no network calls itself — see Calendar section below for the fetch step.
-- `hooks/sitemap_extras.py` — fires on `on_env`; sets the `sitemap_extra_urls` Jinja global that `docs/overrides/sitemap.xml` appends to MkDocs' own page entries. MkDocs builds sitemap.xml by iterating `pages`, so nothing that isn't a rendered markdown page is ever listed — every data export under "Data exports" below was reachable only by crawling the pages that link it, never from a search result — which is what made them unfetchable for tools acting on search results, AI assistants included. The list is curated in `DATA_ENDPOINTS`, not globbed from `docs/data/`: that directory also holds build *input* and internal state (the per-org `events/<slug>.json` sync cache, `citation-state.json`, `elections.yml`) which is not published interface. **Keep `DATA_ENDPOINTS` in step with the Data exports table** when an export is added or dropped. Each path is checked against `docs_dir` before it's emitted, so a generator that was skipped or failed drops out of the sitemap rather than advertising a 404. Deliberately absent: the per-country `/calendar-<CC>.ics` slices (all listed on `/calendar/` already, and derived from `/calendar.ics`), and `graph.json` (written straight to `site_dir` during `on_post_build` — after the sitemap has already been rendered, so there'd be nothing on disk to check it against). No `<lastmod>` is emitted on these: they're rewritten on every build whether or not their content changed, so a build-time date would assert a change on every deploy.
+- `hooks/news_export.py` — fires on `on_pre_build`/`on_env`; builds Landscape News from org `events:` entries with a `notable:` tier dated in the past year, writes `docs/news.xml`, `docs/news.json` and one `docs/news-<CC>.xml`/`docs/news-topic-<slug>.xml` per country and concept in the landscape, and injects `news_items`/`news_feeds`/`news_window_days` plus a `topic_label` filter for `docs/overrides/news.html`. Loads `hooks/calendar_export.py` by path for its country names and notable/date parsing rather than keeping second copies (the same way `util/check_elections.py` does). See the Landscape News section above.
+- `hooks/sitemap_extras.py` — fires on `on_env`; sets the `sitemap_extra_urls` Jinja global that `docs/overrides/sitemap.xml` appends to MkDocs' own page entries. MkDocs builds sitemap.xml by iterating `pages`, so nothing that isn't a rendered markdown page is ever listed — every data export under "Data exports" below was reachable only by crawling the pages that link it, never from a search result — which is what made them unfetchable for tools acting on search results, AI assistants included. The list is curated in `DATA_ENDPOINTS`, not globbed from `docs/data/`: that directory also holds build *input* and internal state (the per-org `events/<slug>.json` sync cache, `citation-state.json`, `elections.yml`) which is not published interface. **Keep `DATA_ENDPOINTS` in step with the Data exports table** when an export is added or dropped. Each path is checked against `docs_dir` before it's emitted, so a generator that was skipped or failed drops out of the sitemap rather than advertising a 404. Deliberately absent: the per-country `/calendar-<CC>.ics` slices (all listed on `/calendar/` already, and derived from `/calendar.ics`), the per-country/per-topic `/news-*.xml` slices (listed on `/news/`, derived from `/news.xml`), and `graph.json` (written straight to `site_dir` during `on_post_build` — after the sitemap has already been rendered, so there'd be nothing on disk to check it against). No `<lastmod>` is emitted on these: they're rewritten on every build whether or not their content changed, so a build-time date would assert a change on every deploy.
 - `hooks/shared_link_card.py` — fires on `on_page_markdown`; injects a reader-facing card at the top of a blog post's body from `shared_link:` frontmatter. See "Convention — shared_link" above.
 - `hooks/org_cards.py` — fires on `on_page_markdown`; expands `<!-- org-card: <slug> -->` markers in blog posts into inline Democracy Landscape cards. See "Convention — inline Democracy Landscape cards" above.
 - `hooks/event_card.py` — fires on `on_page_markdown`; injects a reader-facing card at the top of a blog post's body from `event:` frontmatter, reusing the page's own `location:` for an embedded map. Presentational only — deliberately never read by `hooks/calendar_export.py`. See "Convention — event" above.

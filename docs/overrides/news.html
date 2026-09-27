@@ -1,0 +1,264 @@
+{% extends "main.html" %}
+{#- Landscape News: the past year's major and notable events from across the
+    Democracy Landscape, newest first. The data is hooks/news_export.py's
+    `news_items` — a view of org `events:` entries, never a source of its
+    own — and the cards reuse the calendar's .calendar-event styling on
+    purpose, so the two pages read as the forward and backward halves of
+    the same thing. -#}
+{% block extrahead %}
+{{ super() }}
+{#- Feed autodiscovery: a reader pointed at /news/ finds the feeds itself. -#}
+<link rel="alternate" type="application/rss+xml" title="DOD — Landscape News (RSS)" href="/news.xml">
+<link rel="alternate" type="application/feed+json" title="DOD — Landscape News (JSON Feed)" href="/news.json">
+{% endblock %}
+{% block content %}
+{{ super() }}
+<div class="md-typeset">
+
+<p class="calendar-data-links">
+  <a href="/news.xml">📡 RSS feed</a> ·
+  <a href="/news.json">🧾 JSON Feed</a> ·
+  <a href="/calendar/">📅 Upcoming events</a> ·
+  <a href="/data/organisations.json">🏛 Org data</a>
+</p>
+
+<p class="calendar-subscribe">
+  <a href="/news.xml" id="news-subscribe-link" class="hero-cta-btn hero-cta-primary">📡 Subscribe (RSS)</a>
+  <a href="/news.xml" id="news-subscribe-topic" class="hero-cta-btn" hidden></a>
+  <span id="news-subscribe-hint" class="calendar-subscribe-hint">Paste the link into any feed reader. Filter by country or topic below to get a feed of just that.</span>
+</p>
+
+{%- if not news_items %}
+<p><em>No major or notable news in the past {{ 'year' if news_window_days == 365 else news_window_days ~ ' days' }}. Items appear here when an organisation's page records an event flagged <code>notable:</code> — see the <a href="/organisations/">Democracy Landscape</a>.</em></p>
+{%- else %}
+
+{%- set country_entries = [] %}
+{%- for i in news_items %}
+  {%- for c in i.countries %}
+    {%- set entry = {'code': c, 'name': c | country_name, 'flag': c | country_flag} %}
+    {%- if entry not in country_entries %}{% set _ = country_entries.append(entry) %}{% endif %}
+  {%- endfor %}
+{%- endfor %}
+{%- set topic_entries = [] %}
+{%- for i in news_items %}
+  {%- for t in i.concepts %}
+    {%- set entry = {'slug': t, 'label': t | topic_label} %}
+    {%- if entry not in topic_entries %}{% set _ = topic_entries.append(entry) %}{% endif %}
+  {%- endfor %}
+{%- endfor %}
+
+<div class="calendar-filter-bar news-filter-bar">
+  <label class="calendar-filter-label" for="news-country-filter">Country:</label>
+  <select id="news-country-filter" class="org-filter-select" aria-label="Filter news by country">
+    <option value="all">All countries</option>
+    {%- for c in country_entries | sort(attribute='name') %}
+    <option value="{{ c.code }}">{{ c.flag }} {{ c.name }}</option>
+    {%- endfor %}
+  </select>
+  <label class="calendar-filter-label" for="news-topic-filter">Topic:</label>
+  <select id="news-topic-filter" class="org-filter-select" aria-label="Filter news by topic">
+    <option value="all">All topics</option>
+    {%- for t in topic_entries | sort(attribute='label') %}
+    <option value="{{ t.slug }}">{{ t.label }}</option>
+    {%- endfor %}
+  </select>
+  <label class="calendar-filter-label" for="news-tier-filter">Show:</label>
+  <select id="news-tier-filter" class="org-filter-select" aria-label="Filter news by significance">
+    <option value="all">Major and notable</option>
+    <option value="major">Major only</option>
+  </select>
+  <button type="button" id="news-filter-reset" class="calendar-reset-btn" aria-label="Reset filters">✕ Reset</button>
+  <span id="news-filter-count" class="calendar-filter-count"></span>
+</div>
+
+{#- Every country and topic in the landscape has a feed, including those
+    with nothing in the window right now — a subscription has to survive a
+    quiet year. Listed in full here since the filters above only offer what
+    currently has items. -#}
+<details class="plain-details calendar-feeds-details">
+  <summary>📡 All news feeds ({{ news_feeds.countries | length + news_feeds.topics | length + 1 }})</summary>
+  <p class="news-feed-group"><strong>Everything:</strong> <a href="/news.xml">RSS</a> · <a href="/news.json">JSON Feed</a></p>
+  <p class="news-feed-group"><strong>By country:</strong>
+    {%- for r in news_feeds.countries %}
+    <a href="/news-{{ r.code }}.xml" class="news-feed-link{% if not r.count %} news-feed-link--quiet{% endif %}">{{ r.code | country_flag }} {{ r.name }}{% if r.count %} ({{ r.count }}){% endif %}</a>{% if not loop.last %} ·{% endif %}
+    {%- endfor %}
+  </p>
+  <p class="news-feed-group"><strong>By topic:</strong>
+    {%- for r in news_feeds.topics %}
+    <a href="/news-topic-{{ r.slug }}.xml" class="news-feed-link{% if not r.count %} news-feed-link--quiet{% endif %}">{{ r.label }}{% if r.count %} ({{ r.count }}){% endif %}</a>{% if not loop.last %} ·{% endif %}
+    {%- endfor %}
+  </p>
+  <p class="news-feed-note">Counts are items in the current window; a feed without one is quiet, not missing. Topics are the concepts each organisation works on, so a topic feed follows organisations in that field rather than individual stories about it.</p>
+</details>
+
+{%- set grouped = {} %}
+{%- for i in news_items %}
+  {%- set month_key = i.date.strftime('%B %Y') %}
+  {%- if month_key not in grouped %}{% set _ = grouped.update({month_key: []}) %}{% endif %}
+  {%- set _ = grouped[month_key].append(i) %}
+{%- endfor %}
+
+{%- for month_key, month_items in grouped.items() %}
+<h2 class="calendar-month-heading">{{ month_key }}</h2>
+<ul class="calendar-event-list">
+  {%- for i in month_items %}
+  <li class="calendar-event news-item{% if i.notable is true %} calendar-event--notable{% else %} calendar-event--medium{% endif %}" data-countries="{{ i.countries | join(' ') }}" data-topics="{{ i.concepts | join(' ') }}" data-tier="{{ 'major' if i.notable is true else 'medium' }}">
+
+    <div class="calendar-date-block">
+      <span class="calendar-date-month">{{ i.date.strftime('%b') }}</span>
+      <span class="calendar-date-day">{{ i.date.strftime('%d') }}</span>
+      <span class="calendar-date-weekday">{{ i.date.year }}</span>
+      <a class="calendar-date-org" href="/organisations/{{ i.org_slug }}/">
+        {%- if i.logo %}<img class="calendar-date-org-logo{% if i.logo_bg == 'dark' %} org-logo-needs-dark{% elif i.logo_bg == 'light' %} org-logo-needs-light{% endif %}" src="{{ i.logo }}" alt="" loading="lazy">{% endif %}
+        <span class="calendar-date-org-name">{{ i.org_title }}</span>
+      </a>
+    </div>
+
+    <div class="calendar-event-body">
+      <div class="calendar-event-header">
+        {%- if i.notable is true %}<span class="calendar-event-badge">★ Major</span>
+        {%- else %}<span class="calendar-event-badge calendar-event-badge--medium">● Notable</span>{% endif %}
+        {%- if i.type %}<span class="calendar-event-type">{{ i.type }}</span>{% endif %}
+        {%- if i.proof_warning %}<span class="org-event-warning" title="No note or quote behind this citation yet">⚠ Unverified</span>{% endif %}
+        {%- if i.url_status == 'dead' %}<span class="org-event-warning" title="The original URL no longer resolves; the link below is an archived copy">⚠ Original link dead</span>
+        {%- elif i.url_status == 'unfit' %}<span class="org-event-warning" title="The original domain no longer hosts this content; the link below is an archived copy">⚠ Original domain parked</span>{% endif %}
+        {%- if i.countries %}<span class="calendar-event-country">{% for c in i.countries %}{{ c | country_flag }} {{ c | country_name }}{% if not loop.last %}, {% endif %}{% endfor %}</span>{% endif %}
+      </div>
+      {%- if i.notable_reason %}<div class="calendar-event-reason">{{ i.notable_reason }}</div>{% endif %}
+
+      <div class="calendar-event-title">
+        {%- if i.href %}<a href="{{ i.href }}" target="_blank" rel="noopener">{{ i.title }}</a>{% else %}{{ i.title }}{% endif %}
+      </div>
+
+      {%- if i.orgs | length > 1 %}
+      <div class="calendar-event-details news-item-orgs">With
+        {%- for o in i.orgs[1:] %} <a href="/organisations/{{ o.slug }}/">{{ o.title }}</a>{% if not loop.last %},{% endif %}{% endfor %}
+      </div>
+      {%- endif %}
+      {%- if i.location %}
+      <div class="calendar-event-details"><span class="calendar-event-location">📍 {{ i.location }}</span></div>
+      {%- endif %}
+
+      {%- if i.note or i.quote %}
+      <details class="plain-details calendar-event-detail">
+        <summary>More about this</summary>
+        {%- if i.note %}<p class="calendar-event-note">{{ i.note | e }}</p>{% endif %}
+        {%- if i.quote %}<blockquote class="calendar-event-quote">{{ i.quote | e }}</blockquote>{% endif %}
+      </details>
+      {%- endif %}
+
+      <div class="calendar-event-orgline">
+        {%- for t in i.concepts[:4] %}<a href="/concepts/{{ t }}/" class="concept-tag">{{ t | topic_label }}</a>{% endfor %}
+        {%- if i.concepts | length > 4 %}<span class="news-item-more-topics" title="{% for t in i.concepts[4:] %}{{ t | topic_label }}{% if not loop.last %}, {% endif %}{% endfor %}">+{{ i.concepts | length - 4 }}</span>{% endif %}
+        {%- if i.coverage_url %}<a class="calendar-event-coverage" href="{{ i.coverage_url }}">DOD coverage →</a>{% endif %}
+        {%- if i.href %}<a class="calendar-event-action" href="{{ i.href }}" target="_blank" rel="noopener">{{ 'Archived copy →' if i.url_status in ('dead', 'unfit') else 'Source →' }}</a>
+        {%- elif i.source %}<span class="news-item-cited">Cited: {{ i.source | e }}</span>{% endif %}
+      </div>
+    </div>
+
+  </li>
+  {%- endfor %}
+</ul>
+{%- endfor %}
+{%- endif %}
+
+</div>
+{% endblock %}
+{% block scripts %}
+{{ super() }}
+<script>
+(function () {
+  var countrySel = document.getElementById('news-country-filter');
+  if (!countrySel) return;
+  var topicSel = document.getElementById('news-topic-filter');
+  var tierSel = document.getElementById('news-tier-filter');
+  var resetBtn = document.getElementById('news-filter-reset');
+  var countEl = document.getElementById('news-filter-count');
+  var subLink = document.getElementById('news-subscribe-link');
+  var topicLink = document.getElementById('news-subscribe-topic');
+  var items = document.querySelectorAll('.news-item');
+  var headings = document.querySelectorAll('.calendar-month-heading');
+
+  // Same per-concept hue the org pages give their concept chips.
+  document.querySelectorAll('.news-item .concept-tag').forEach(function (el) {
+    var slug = el.getAttribute('href').split('/')[2] || '';
+    var hash = 0;
+    for (var i = 0; i < slug.length; i++) hash = ((hash << 5) - hash) + slug.charCodeAt(i);
+    el.style.setProperty('--concept-hue', Math.abs(hash) % 360);
+  });
+
+  function hasOption(sel, value) {
+    return Array.prototype.some.call(sel.options, function (o) { return o.value === value; });
+  }
+
+  // ?country=AU&topic=sortition&tier=major — the per-country and per-topic
+  // feeds use these as their channel <link>, so a reader clicking through
+  // from a feed lands on the same slice of the page.
+  var params = new URLSearchParams(window.location.search);
+  if (params.get('country') && hasOption(countrySel, params.get('country'))) countrySel.value = params.get('country');
+  if (params.get('topic') && hasOption(topicSel, params.get('topic'))) topicSel.value = params.get('topic');
+  if (params.get('tier') === 'major') tierSel.value = 'major';
+
+  function optionLabel(sel) {
+    return sel.options[sel.selectedIndex].textContent.trim();
+  }
+
+  function apply() {
+    var country = countrySel.value, topic = topicSel.value, tier = tierSel.value;
+    var shown = 0;
+    items.forEach(function (el) {
+      var ok = (country === 'all' || (' ' + el.getAttribute('data-countries') + ' ').indexOf(' ' + country + ' ') !== -1)
+        && (topic === 'all' || (' ' + el.getAttribute('data-topics') + ' ').indexOf(' ' + topic + ' ') !== -1)
+        && (tier === 'all' || el.getAttribute('data-tier') === 'major');
+      el.style.display = ok ? '' : 'none';
+      if (ok) shown++;
+    });
+    headings.forEach(function (h) {
+      var list = h.nextElementSibling;
+      var any = list && Array.prototype.some.call(list.children, function (li) { return li.style.display !== 'none'; });
+      h.style.display = any ? '' : 'none';
+      if (list) list.style.display = any ? '' : 'none';
+    });
+    countEl.textContent = shown + ' item' + (shown !== 1 ? 's' : '');
+    resetBtn.classList.toggle('visible', country !== 'all' || topic !== 'all' || tier !== 'all');
+
+    // There is one feed per country and one per topic, not one per
+    // combination, so each active filter gets its own button. The major-only
+    // toggle has no feed of its own: every item carries its tier as an RSS
+    // <category>, which is where a reader that can filter will look.
+    if (country !== 'all') {
+      subLink.href = '/news-' + country + '.xml';
+      subLink.textContent = '📡 Subscribe: ' + optionLabel(countrySel);
+    } else {
+      subLink.href = '/news.xml';
+      subLink.textContent = '📡 Subscribe (RSS)';
+    }
+    if (topic !== 'all') {
+      topicLink.href = '/news-topic-' + topic + '.xml';
+      topicLink.textContent = '📡 Subscribe: ' + optionLabel(topicSel);
+      topicLink.hidden = false;
+    } else {
+      topicLink.hidden = true;
+    }
+
+    var next = new URLSearchParams();
+    if (country !== 'all') next.set('country', country);
+    if (topic !== 'all') next.set('topic', topic);
+    if (tier !== 'all') next.set('tier', tier);
+    var qs = next.toString();
+    history.replaceState(null, '', window.location.pathname + (qs ? '?' + qs : '') + window.location.hash);
+  }
+
+  countrySel.addEventListener('change', apply);
+  topicSel.addEventListener('change', apply);
+  tierSel.addEventListener('change', apply);
+  resetBtn.addEventListener('click', function () {
+    countrySel.value = 'all';
+    topicSel.value = 'all';
+    tierSel.value = 'all';
+    apply();
+  });
+  apply();
+})();
+</script>
+{% endblock %}

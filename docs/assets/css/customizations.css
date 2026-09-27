@@ -2838,6 +2838,54 @@ html .md-typeset details.plain-details > :last-child {
   color: var(--md-default-fg-color);
 }
 
+/* Landscape News (/news/, docs/overrides/news.html). Its cards reuse the
+   calendar's .calendar-event rules wholesale, so the two pages read as the
+   forward and backward halves of one view; only what the calendar has no
+   equivalent for lives here. */
+/* The per-topic subscribe button is toggled with the `hidden` attribute,
+   which .hero-cta-btn's own display rule would otherwise override —
+   leaving an empty outlined button on the page. */
+#news-subscribe-topic[hidden] {
+  display: none;
+}
+/* A <select> sizes to its longest option, and concept titles run long
+   ("Mixed-member proportional representation"). */
+.news-filter-bar .org-filter-select {
+  max-width: 15em;
+}
+.md-typeset .news-feed-group {
+  margin: 0.6em 0 0;
+  line-height: 1.7;
+}
+.news-feed-link {
+  white-space: nowrap;
+}
+/* A feed with nothing in the window right now: still a real, subscribable
+   URL (see hooks/news_export.py), just quiet, so it recedes rather than
+   disappearing. */
+.news-feed-link--quiet {
+  opacity: 0.6;
+}
+.md-typeset .news-feed-note {
+  margin: 0.6em 0 0;
+  opacity: 0.7;
+}
+.news-item-more-topics {
+  font-size: 0.72em;
+  opacity: 0.65;
+  cursor: help;
+}
+.news-item-cited {
+  font-size: 0.85em;
+  opacity: 0.7;
+  margin-left: 0.3em;
+}
+/* The source link sits at the end of the chip row, however many chips. */
+.news-item .calendar-event-orgline .calendar-event-action,
+.news-item .calendar-event-orgline .news-item-cited {
+  margin-left: auto;
+}
+
 /* Footer subscribe links */
 .footer-subscribe {
   display: flex;
