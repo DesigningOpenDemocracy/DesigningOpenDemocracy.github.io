@@ -6,10 +6,10 @@ country: AU
 website: https://www.communityindependentsproject.org
 logo: /assets/org-logos/community-independents-project.webp
 contact:
+  checked: 2026-09-26
   email: info@communityindependentsproject.org
   form: https://www.communityindependentsproject.org/contact
   source: https://www.communityindependentsproject.org/contact-us
-  checked: 2026-09-26
 summary: The national support and capacity-building body for Australia's community
   independent candidate movement — a decentralised network of locally organised, non-partisan
   groups that support community-driven independent candidates for parliament.
@@ -38,24 +38,34 @@ events:
   notable: true
   notable_reason: Flagship national convention
   type: conference
+- date: '2026-09-23'
+  title: Hosted a webinar on turning election-campaign energy into lasting community
+    organising power
+  url: https://events.humanitix.com/from-campaigns-to-community-power
+  note: 'Free online webinar, "From campaigns to community power," per CIP''s own
+    events page: international organising scholar Hahrie Han and Australian community
+    organiser Amanda Tattersall discussed how Community Electorate Groups (like Voices)
+    can retain relationships and build organising capacity between elections.'
+  proof_level: medium
+  url_checked: '2026-09-27'
 activity:
   manual:
     checked: 2026-06-07
     date: 2026-06-07
     note: website loaded. Last convention at 2025
   dod:
-    date: 2026-09-13
-    note: Website confirmed active — 2025 Candidates section and upcoming events listed;
-      summary and contact info still accurate.
+    checked: 2026-09-27
+    date: 2026-09-27
+    note: Website confirmed active — hosted a 23 Sept 2026 webinar (added to events:);
+      2025 Candidates section current; contact info unchanged.
     url: https://www.communityindependentsproject.org
-    checked: 2026-09-13
   rss:
     checked: 2026-09-25
     date: 2022-09-04
     note: 'Latest post: The second national Community Independents Convention, August
       2022'
     url: https://www.communityindependentsproject.org/blog/the-second-national-community-independents-convention-august-2022
-last_checked: '2026-09-13'
+last_checked: '2026-09-27'
 ---
 
 The Community Independents Project (CIP) is the coordinating body for Australia's community independent candidate movement — a network of locally organised, non-partisan groups that support community-driven independent candidates at federal, state, and local elections.

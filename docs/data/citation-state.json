@@ -6289,12 +6289,14 @@
     "last_modified": null
   },
   "https://raisely-images.imgix.net/australian-democracy-network/uploads/adn-annual-report-23-pdf-531f03.pdf": {
-    "checked": "2026-08-28",
+    "archive_checked": "2026-09-27",
+    "archive_url": "http://web.archive.org/web/20260821040404/https://raisely-images.imgix.net/australian-democracy-network/uploads/adn-annual-report-23-pdf-531f03.pdf",
+    "checked": "2026-09-27",
     "document_sha256": "ba7946c361b12c574734c0542f8efe428014a0c250fc0a091d765da6d428a3e9",
     "etag": null,
     "evidence": [
       {
-        "checked": "2026-08-28",
+        "checked": "2026-09-27",
         "context": {
           "prefix": "es that can shift a whole system, we need collective power, strategically directed. Australian Democracy Network (ADN) was created to meet that need.",
           "sha256": "57abd28a13bfbae5988e0b6885591cc4cb61c5e36ccbe60470607f5f3b9c8970",
@@ -10170,6 +10172,8 @@
     "last_modified": null
   },
   "https://www.strongercharities.org.au/2024/06/26/mr-advocacy-bill/": {
+    "archive_checked": "2026-09-27",
+    "archive_url": "http://web.archive.org/web/20260521203935/https://www.strongercharities.org.au/2024/06/26/mr-advocacy-bill/",
     "checked": "2026-08-28",
     "document_sha256": "7fc3254916fc50c55a26bf4d09b9d0bd99439a576673ee6de1cd23903b87b37a",
     "etag": null,
@@ -10187,7 +10191,8 @@
         "verified": true
       }
     ],
-    "last_modified": "Fri, 28 Aug 2026 14:43:43 GMT"
+    "last_modified": "Fri, 28 Aug 2026 14:43:43 GMT",
+    "url_status": "dead"
   },
   "https://www.strongercharities.org.au/2025/02/11/media-release-charities-call-for-critical-amendments-to-the-electoral-reform-bill/": {
     "checked": "2026-08-26",

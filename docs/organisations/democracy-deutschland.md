@@ -52,15 +52,15 @@ events:
   notable_reason: Platform/product launch
 activity:
   dod:
-    date: 2026-09-13
-    note: Website confirmed active — live Bundestag session tracker showing Sept 21-25
-      2026 sitting week; contact info unchanged.
+    date: 2026-09-27
+    note: Website confirmed active — live Bundestag session tracker showing current
+      sitting-week data; no new dated events found; contact info unchanged.
     url: https://democracy-app.de
-    checked: 2026-09-13
+    checked: 2026-09-27
   rss:
     checked: 2026-09-25
     note: No feed found
-last_checked: '2026-09-13'
+last_checked: '2026-09-27'
 ---
 
 DEMOCRACY Deutschland e.V. is a German nonprofit building open-source civic technology to close the gap between parliamentary decisions and the citizens affected by them. Their flagship product is the **DEMOCRACY app**, available on Android (including [F-Droid](https://f-droid.org/en/packages/de.democracydeutschland.app/)), iOS, and as a web interface.

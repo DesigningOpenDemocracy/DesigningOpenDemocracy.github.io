@@ -44,6 +44,20 @@ events:
   url_checked: '2026-08-12'
   notable: true
   notable_reason: Platform/product launch
+- date: '2026-09-30'
+  title: Hosting "Protecting Human Rights in a Time of Global Conflict" forum at The
+    Wheeler Centre, Melbourne
+  url: https://www.crossroadsconversation.com.au/events/human-rights-at-the-breaking-point
+  quote: Presently, our world is beset by conflicts more serious than at any time
+    since World War II.
+  note: Panel with former UN Deputy High Commissioner for Human Rights Kate Gilmore,
+    Human Rights Watch Australia Director Daniela Gavshon, Human Rights Law Centre
+    CEO Caitlin Reiger, and Emeritus Professor Spencer Zifcak, moderated by convener
+    Joseph Camilleri.
+  proof_level: high
+  url_checked: '2026-09-27'
+  notable: medium
+  notable_reason: Specific named public forum
 activity:
   manual:
     checked: 2026-06-07
@@ -53,22 +67,23 @@ activity:
       the far-right'
     url: https://www.crossroadsconversation.com.au/events
   dod:
-    date: 2026-09-13
-    note: Website confirmed active — Reclaiming Democracy Together (May 2026, 1,700+
-      attendees) and ongoing events; contact email confirmed.
+    checked: 2026-09-27
+    date: 2026-09-27
+    note: Website confirmed active — found and added an upcoming 30 Sept 2026 forum,
+      'Protecting Human Rights in a Time of Global Conflict', at The Wheeler Centre;
+      contact info unchanged.
     url: https://www.crossroadsconversation.com.au
-    checked: 2026-09-13
   scrape:
+    checked: 2026-09-25
     date: 2026-09-01
     note: Latest news page scraped
     url: https://www.crossroadsconversation.com.au/events
-    checked: 2026-09-25
   sitemap:
+    checked: 2026-09-25
     date: 2026-08-30
     note: Page last modified (from sitemap)
     url: https://www.crossroadsconversation.com.au/sitemap.xml
-    checked: 2026-09-25
-last_checked: '2026-09-13'
+last_checked: '2026-09-27'
 ---
 
 Conversations at the Crossroads is an independent Australian civic network focused on democratic renewal through thoughtful, informed conversation. Founded around 2020 by Professor Joseph Camilleri (Professor Emeritus, La Trobe University) and colleagues, the network runs public events, citizens assemblies, educational series, and podcasts aimed at connecting progressive social movements and scaling deliberative participation.

@@ -53,18 +53,18 @@ events:
   type: other
 activity:
   dod:
-    date: 2026-09-13
-    note: Website confirmed active — current Racism Out and Thriving in Colour campaigns;
-      contact email confirmed.
+    date: 2026-09-27
+    note: Website confirmed active — Racism Out, Thriving in Colour and Climate Justice
+      campaigns still current; no new dated events found; contact info unchanged.
     url: https://democracyincolour.org
-    checked: 2026-09-13
+    checked: 2026-09-27
   rss:
     date: 2026-09-15
     note: 'Latest post: Democracy in Colour, GetUp and anti-racist groups call for
       unity and hope, not h'
     url: https://democracyincolour.org/democracy-in-colour-getup-and-anti-racist-groups-call-for-unity-and-hope-not-hate/
     checked: 2026-09-25
-last_checked: '2026-09-13'
+last_checked: '2026-09-27'
 ---
 
 Democracy in Colour is a registered charity and advocacy organisation focused on racial justice in Australian democracy. Its focus is on *who* participates in democracy — addressing the structural barriers and systemic racism that shape whose voices are heard in political, media, and civic life — rather than procedural democratic reform.

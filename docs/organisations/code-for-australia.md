@@ -55,16 +55,17 @@ activity:
     date: 2026-06-07
     note: personally know it exist and still running
   dod:
-    date: 2026-09-12
-    note: Website confirmed active; fellowship program, 12+ live products, B-Corp
-      status.
+    date: 2026-09-27
+    note: Website confirmed active — B-Corp certified, fellowship program continuing
+      (70+ Fellows/Advisors, 12+ live products, 80+ teams transformed, 4,200+ community
+      members); contact info unchanged.
     url: https://www.codeforaustralia.org
-    checked: 2026-09-12
+    checked: 2026-09-27
   sitemap:
     checked: 2026-09-25
     date: 2024-06-28
     note: Page last modified (from sitemap)
-last_checked: '2026-09-12'
+last_checked: '2026-09-27'
 ---
 
 Code for Australia (CfA) is a civic tech organisation founded in 2014, modelled on Code for America. Its primary program is a **fellowship**: placing technologists (developers, designers, data scientists) inside government agencies and non-profits for short-term engagements to help solve civic problems through digital tools.

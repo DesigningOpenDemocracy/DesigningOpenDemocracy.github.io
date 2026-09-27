@@ -57,11 +57,12 @@ events:
   type: milestone
 activity:
   dod:
-    date: 2026-09-13
-    note: Website confirmed active — current programs, resources, and contact info
-      match frontmatter.
+    date: 2026-09-27
+    note: Website confirmed active — latest news post still 30 July 2026 (Castlemaine
+      Hub case study / NENA podcast interview), no new dated content since prior check;
+      contact info unchanged.
     url: https://bonds.coop
-    checked: 2026-09-13
+    checked: 2026-09-27
   rss:
     date: 2026-09-25
     note: RSS feed active
@@ -72,7 +73,7 @@ activity:
     note: Latest news page scraped
     url: https://bonds.coop/resources/co-op-news/
     checked: 2026-09-25
-last_checked: '2026-09-13'
+last_checked: '2026-09-27'
 ---
 
 Co-operative Bonds is a cooperative development consultancy structured as a cooperative itself. Founded by Antony McMullen, Clare Fountain, and Paul Saeki, it provides education and development services to help purpose-driven member-based organisations build financially viable and sustainable models.
