@@ -246,7 +246,7 @@ def on_pre_build(config):
     last_activity_date = max((d for d in all_activity_dates if d), default="")
     meta = {
         "generated_at": datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"),
-        "source": site_url or "https://designingopendemocracy.com",
+        "source": site_url or "https://www.designingopendemocracy.com",
         "org_count": len(orgs),
         "last_activity_date": last_activity_date,
     }

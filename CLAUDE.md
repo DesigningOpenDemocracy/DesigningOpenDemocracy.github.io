@@ -856,6 +856,22 @@ more than a bare link.
     with `!important` and is **not** migrated — those are pill buttons, not
     quiet disclosures, and their reset carries its own documented gotchas.
 
+### Link previews (`docs/overrides/main.html`)
+
+Every page carries Open Graph and Twitter Card tags, so a link pasted into
+Telegram, Slack, Discord or X unfurls into a titled preview instead of a bare
+URL. Nothing is authored per page: `extrahead` derives them from frontmatter
+(`summary:`, then `banner:`/`shared_link.image:`/`event.image:`/`logo:` for the
+image), falling back to the page text and then `site_description`. The first
+image that isn't `.ico` or `.svg` wins, since unfurlers broadly skip those;
+wide images get Twitter's large card and square logos the small one. Values
+are `|e`-escaped because MkDocs templates don't autoescape. `og:url` and
+absolute image URLs come from `mkdocs.yml`'s `site_url`, which must stay the
+address the site is really served from (`https://www.designingopendemocracy.com`;
+the bare domain and plain http 301 there). It was `http://` apex until
+2026-09-27, so every canonical link, sitemap entry and RSS item ID redirected;
+correcting it changed the RSS item IDs once.
+
 ### URL gotcha
 
 `file.page.url` in MkDocs Jinja2 templates is **root-relative without a leading `/`**. Always prefix with `/` in `href` attributes: `href="/{{ file.page.url }}"`. Omitting the slash causes triple-nested 404s when navigating from deep pages.
