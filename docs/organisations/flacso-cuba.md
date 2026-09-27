@@ -5,6 +5,7 @@ status: active
 country: CU
 website: https://flacso.org/pa%C3%ADs/cuba
 logo: /assets/org-logos/flacso-cuba.png
+logo_bg: dark
 summary: The Cuban chapter of the Latin American Social Sciences Faculty (FLACSO),
   based at the University of Havana — one of the few academic bodies in Cuba publishing
   empirical research on Cuba's Poder Popular governance system, electoral participation,

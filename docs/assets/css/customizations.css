@@ -740,6 +740,10 @@ html .md-typeset details.plain-details > :last-child {
   border: 1px solid rgba(0, 0, 0, 0.3);
   font-size: 0.78rem;
   line-height: 1.8;
+  /* Native checkboxes follow the page's scheme, and in the slate theme an
+     unchecked one renders as a filled dark square — on this fixed-white
+     panel that reads as checked. */
+  color-scheme: light;
 }
 .map-legend strong {
   display: block;
@@ -747,10 +751,97 @@ html .md-typeset details.plain-details > :last-child {
   color: #333;
 }
 
+/* Organisation type filter (home.html) — the legend above, grown checkboxes.
+   Fixed white/#333 like the rest of the map chrome, since Leaflet controls
+   sit on map tiles rather than the themed page background. */
+.map-type-filter {
+  padding: 6px 10px;
+  line-height: 1.4;
+  max-width: 16rem;
+  text-align: left; /* the map card centres its text */
+}
+.map-type-filter-body {
+  overflow-y: auto; /* max-height is set from the map's height in home.html */
+}
+.map-type-filter.is-inactive .map-type-filter-body {
+  opacity: 0.45;
+}
+.map-type-filter-toggle {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  width: 100%;
+  padding: 2px 0;
+  border: 0;
+  background: none;
+  color: #333;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+.map-type-filter-toggle strong {
+  display: inline;
+  margin: 0;
+}
+.map-type-filter-count {
+  color: #666;
+  font-variant-numeric: tabular-nums;
+}
+.map-type-filter-chevron {
+  margin-left: auto;
+  color: #666;
+  transition: transform 0.15s;
+}
+.map-type-filter.is-collapsed .map-type-filter-chevron {
+  transform: rotate(-90deg);
+}
+.map-type-filter.is-collapsed .map-type-filter-body {
+  display: none;
+}
+.map-type-filter-bulk {
+  margin: 2px 0 4px;
+  color: #666;
+}
+.map-type-filter-bulk button {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: #1565c0;
+  font: inherit;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.map-type-filter-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 1px 0;
+  color: #333;
+  cursor: pointer;
+}
+.map-type-filter-row input[type="checkbox"] {
+  display: inline-block;
+  margin: 0;
+  flex-shrink: 0;
+}
+.map-type-filter-icon {
+  width: 1.3em;
+  text-align: center;
+  flex-shrink: 0;
+}
+.map-type-filter-label {
+  flex: 1;
+}
+.map-type-filter-n {
+  color: #666;
+  font-variant-numeric: tabular-nums;
+}
+
 /* Layer toggle control — readable colours and left-aligned labels */
 .leaflet-control-layers {
   background: white !important;
   color: #333 !important;
+  color-scheme: light; /* same reason as .map-legend above */
 }
 .leaflet-control-layers-overlays label {
   display: flex !important;
@@ -828,6 +919,123 @@ html .md-typeset details.plain-details > :last-child {
   border-top: 1px dashed rgba(128, 128, 128, 0.4);
   font-size: 0.85em;
   color: #555;
+}
+
+/* Democracy Map popup cards (home.html). Leaflet popups are always white
+   whatever the site theme, so colours here are fixed rather than theme
+   variables, like the map's other controls. The popup sits inside the
+   .md-typeset map card, so paragraph margins and link colours are reset. */
+.leaflet-popup-content .map-popup {
+  color: #333;
+  font-size: 0.7rem;
+  line-height: 1.45;
+  text-align: left;
+}
+.leaflet-popup-content .map-popup p {
+  margin: 0.5em 0 0;
+}
+.leaflet-popup-content .map-popup a {
+  color: #1565c0;
+}
+.map-popup-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.map-popup-logo {
+  display: block;
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+.map-popup-logo.org-logo-needs-dark {
+  background: rgba(0, 0, 0, 0.45);
+  padding: 2px;
+  box-sizing: border-box;
+}
+.map-popup-head-text {
+  min-width: 0;
+}
+.leaflet-popup-content .map-popup-title {
+  font-size: 1.12em;
+  font-weight: 700;
+  line-height: 1.25;
+  text-decoration: none;
+}
+.leaflet-popup-content .map-popup-title:hover {
+  text-decoration: underline;
+}
+.map-popup-facts {
+  margin-top: 1px;
+  color: #666;
+}
+.map-popup-eyebrow {
+  margin-bottom: 2px;
+  color: #666;
+  font-size: 0.85em;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+/* Event tiers use the calendar's colour language (amber major, blue
+   notable), darkened to stay readable on white. */
+.map-popup-event {
+  margin-top: 0.6em;
+  padding: 0.35em 0.6em;
+  border-left: 3px solid #b0bec5;
+  border-radius: 0 4px 4px 0;
+  background: #f4f6f7;
+}
+.map-popup-event--major {
+  border-left-color: #ffb300;
+  background: #fff8e1;
+}
+.map-popup-event--medium {
+  border-left-color: #4fc3f7;
+  background: #eef8fd;
+}
+.map-popup-event-label {
+  color: #666;
+  font-size: 0.9em;
+}
+.map-popup-badge {
+  margin-left: 0.4em;
+  font-weight: 700;
+  color: #a15c00;
+}
+.map-popup-badge--medium {
+  color: #0277bd;
+}
+.map-popup-event-title {
+  font-weight: 600;
+}
+.map-popup-event-reason {
+  color: #666;
+  font-size: 0.9em;
+  font-style: italic;
+}
+.leaflet-popup-content .map-popup-place {
+  color: #555;
+}
+.leaflet-popup-content .map-popup .org-map-approx-note {
+  margin-top: 0;
+}
+/* Controls an open popup overlaps are faded out of its way (home.html). */
+#map-wrapper .leaflet-control,
+#map-expand-btn {
+  transition: opacity 0.15s;
+}
+#map-wrapper .is-under-popup {
+  opacity: 0;
+  pointer-events: none;
+}
+.map-popup-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2em 1em;
+  margin-top: 0.6em;
+  font-weight: 600;
 }
 
 /****************************************/

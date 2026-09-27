@@ -1,12 +1,4 @@
 {% extends "main.html" %}
-{% set type_icons = {
-  'research': '🔬', 'education': '🔬',
-  'advocacy': '📢',
-  'platform': '💻', 'civic_tech': '💻',
-  'practice': '🤝', 'philanthropy': '🤝', 'cooperative': '🤝',
-  'party': '🗳️', 'political_party': '🗳️', 'political-party': '🗳️', 'political_movement': '🗳️',
-  'governance': '⚖️', 'government': '⚖️'
-} %}
 {% set country_names = {
   'AR': 'Argentina', 'AT': 'Austria', 'AU': 'Australia', 'BE': 'Belgium',
   'BO': 'Bolivia', 'BR': 'Brazil', 'CA': 'Canada', 'CN': 'China',
@@ -32,7 +24,7 @@
 {%- if has_details %}<details class="plain-details org-meta-details md-typeset">{% else %}<div class="plain-details org-meta-details md-typeset org-meta-details--plain">{% endif %}
   <summary class="org-meta-summary">
     {%- if page.meta.status %}<span class="org-meta-pill">Status: <span class="project-status-badge status-{{ page.meta.status }}">{{ page.meta.status }}</span></span>{% endif %}
-    {%- if page.meta.type %}<span class="org-meta-pill">Type: {{ type_icons.get(page.meta.type, '🏛️') }} {{ page.meta.type }}</span>{% endif %}
+    {%- if page.meta.type %}<span class="org-meta-pill">Type: {{ page.meta.type | org_type_icon }} {{ page.meta.type }}</span>{% endif %}
     {%- if page.meta.country %}<span class="org-meta-pill">Country: {{ country_names.get(page.meta.country.upper(), page.meta.country) }}</span>{% endif %}
     {%- if page.meta.website %}
     <span class="org-meta-pill">Website:
@@ -56,7 +48,7 @@
       {%- if page.meta.type %}
       <tr>
         <th>Type</th>
-        <td>{{ type_icons.get(page.meta.type, '🏛️') }} {{ page.meta.type }}</td>
+        <td>{{ page.meta.type | org_type_icon }} {{ page.meta.type }}</td>
       </tr>
       {%- endif %}
       {%- if page.meta.country %}
