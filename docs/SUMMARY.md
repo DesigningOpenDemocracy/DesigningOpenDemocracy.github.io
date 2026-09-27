@@ -18,9 +18,9 @@
                 - projects/accountability-framework/ai-dialogues/*.md
 - [Concepts](concepts/index.md)
     - concepts/*.md
-- [Democracy Landscape](organisations/index.md)
+- Democracy Landscape
+    - [Directory](organisations/index.md)
     - [Democracy Map](map.md)
-    - organisations/*.md
 - [Heartbeat](/heartbeat/)
 - [Research](research/index.md)
     - research/*.md

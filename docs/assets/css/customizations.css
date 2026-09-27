@@ -2838,6 +2838,34 @@ html .md-typeset details.plain-details > :last-child {
   color: var(--md-default-fg-color);
 }
 
+/* In-page sibling links (partials/section-tabs.html) for pages that hide the
+   left sidebar to keep their width: the Democracy Landscape directory and
+   map. Drawn as a quiet second tab row rather than buttons, since that is
+   the job it's doing: the sidebar's section list, laid on its side. */
+.md-typeset .section-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2em;
+  margin: 0 0 1.2em;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  font-size: 0.8rem;
+}
+.md-typeset .section-tabs__link {
+  padding: 0.4em 0.9em;
+  margin-bottom: -1px;
+  border-bottom: 2px solid transparent;
+  color: var(--md-default-fg-color--light);
+  font-weight: 600;
+  text-decoration: none;
+}
+.md-typeset .section-tabs__link:hover {
+  color: var(--md-accent-fg-color);
+}
+.md-typeset .section-tabs__link--active {
+  color: var(--md-default-fg-color);
+  border-bottom-color: var(--md-accent-fg-color);
+}
+
 /* Landscape News (/news/, docs/overrides/news.html). Its cards reuse the
    calendar's .calendar-event rules wholesale, so the two pages read as the
    forward and backward halves of one view; only what the calendar has no

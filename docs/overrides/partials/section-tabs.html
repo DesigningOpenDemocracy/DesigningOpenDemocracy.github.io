@@ -1,0 +1,14 @@
+{#- A row of links to the current page's siblings in the nav, for pages that
+    hide the left sidebar to keep their width (the Democracy Landscape
+    directory and map). It stands in for that sidebar on desktop: one line of
+    height instead of a column of width. Built from the nav itself, so adding
+    a page to the section in SUMMARY.md adds it here too. The mobile menu
+    already lists the same siblings, so this is shown everywhere as a
+    shortcut rather than only above some breakpoint. -#}
+{%- if page.parent and page.parent.children | length > 1 %}
+<nav class="section-tabs" aria-label="{{ page.parent.title }}">
+  {%- for item in page.parent.children %}
+  <a href="{{ item.url | url }}" class="section-tabs__link{% if item.active %} section-tabs__link--active{% endif %}"{% if item.active %} aria-current="page"{% endif %}>{{ item.title }}</a>
+  {%- endfor %}
+</nav>
+{%- endif %}

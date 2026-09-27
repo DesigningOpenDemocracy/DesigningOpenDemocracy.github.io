@@ -3,6 +3,12 @@ title: Democracy Landscape
 template: organisations.html
 ---
 
+# Democracy Landscape
+
+<!-- An explicit heading because the nav labels this page "Directory" (its
+     entry under the Democracy Landscape tab, beside the Map), and with no
+     heading of its own Material prints the nav label as the page title. -->
+
 A reference directory of organisations active in democracy, civic technology and democratic reform. Search, filter and sort the table below — or hover the ℹ️ beside any name for a quick profile without leaving this page. To see where they are, open the [Democracy Map](../map.md); each profile links to its own pin. For what they've been doing lately, see [Landscape News](../news.md).
 
 <!-- Collapsed for the same reason the calendar's intro is: this orients a
