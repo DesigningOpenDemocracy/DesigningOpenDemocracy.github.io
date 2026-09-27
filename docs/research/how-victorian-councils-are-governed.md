@@ -4,7 +4,7 @@ contributors:
   - Claude
 ---
 
-> *This is a raw working note, not a maintained reference page — see [docs/research/research.md](research.md)'s
+> *This is a raw working note, not a maintained reference page — see [docs/research/index.md](index.md)'s
 > own disclaimer. It was compiled by Claude from public government and council sources to support the
 > [Council Watch](../organisations/council-watch.md) entry and the
 > [City of Casey case study](case-study-city-of-casey-operation-sandon.md). It has not been reviewed or

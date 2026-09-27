@@ -4,7 +4,7 @@ contributors:
   - Claude
 ---
 
-> *This is a raw working note, not a maintained reference page — see [docs/research/research.md](research.md)'s
+> *This is a raw working note, not a maintained reference page — see [docs/research/index.md](index.md)'s
 > own disclaimer. It was compiled by Claude from IBAC and news reporting to support the
 > [How Victorian Councils Are Governed](how-victorian-councils-are-governed.md) explainer and the
 > [Council Watch](../organisations/council-watch.md) entry. It has not been reviewed or promoted by a human

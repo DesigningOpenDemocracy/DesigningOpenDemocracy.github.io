@@ -41,7 +41,7 @@ This is structurally similar to how this wiki already aggregates organisation ac
 
 ## Status
 
-This is an idea-stage proposal with no committed owner. If you want to develop it — even just drafting the feed schema as a concept page — raise it in the [DOD community channels](../community/community.md), then update this page's `status` to `active` and add yourself under `contributors`.
+This is an idea-stage proposal with no committed owner. If you want to develop it — even just drafting the feed schema as a concept page — raise it in the [DOD community channels](../community/index.md), then update this page's `status` to `active` and add yourself under `contributors`.
 
 ## See also
 
