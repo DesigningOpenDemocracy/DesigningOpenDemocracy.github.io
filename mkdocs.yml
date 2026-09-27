@@ -89,6 +89,7 @@ hooks:
   - hooks/event_card.py
   - hooks/org_cards.py
   - hooks/org_template.py
+  - hooks/org_types.py
   - hooks/graph_builder.py
   - hooks/llms_txt.py
   - hooks/data_export.py

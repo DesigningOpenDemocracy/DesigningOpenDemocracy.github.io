@@ -1,13 +1,4 @@
 {% extends "main.html" %}
-{% set type_icons = {
-  'research': '🔬', 'education': '🔬',
-  'advocacy': '📢',
-  'platform': '💻', 'civic tech': '💻',
-  'practice': '🤝', 'philanthropy': '🤝', 'cooperative': '🤝',
-  'party': '🗳️', 'movement': '🗳️',
-  'governance': '⚖️', 'government': '⚖️',
-  'media': '📺'
-} %}
 {% block styles %}
 {{ super() }}
 <style>
@@ -106,7 +97,7 @@
               {%- endif %}
               <button type="button" class="org-info-btn" data-org-slug="{{ slug }}" aria-expanded="false" aria-controls="org-info-card" aria-label="Quick profile: {{ file.page.title }}" title="Quick profile — what they do, and their next or last major event">ℹ️</button>
             </td>
-            <td data-sort="{{ org_type }}">{{ type_icons.get(org_type, '🏛️') }} {{ org_type }}</td>
+            <td data-sort="{{ org_type }}">{{ org_type | org_type_icon }} {{ org_type }}</td>
             <td data-sort="{{ country }}">{{ country }}</td>
             <td><span class="project-status-badge status-{{ file.page.meta.get('status', '') }}">{{ file.page.meta.get('status', '') }}</span></td>
             <td data-sort="{{ ca_date }}">
@@ -176,7 +167,7 @@
         <div class="org-info-head-text">
           <a class="org-info-name" href="/{{ file.page.url }}">{{ file.page.title }}</a>
           <p class="org-info-meta">
-            {%- if org_type %}<span>{{ type_icons.get(org_type, '🏛️') }} {{ org_type }}</span>{% endif %}
+            {%- if org_type %}<span>{{ org_type | org_type_icon }} {{ org_type }}</span>{% endif %}
             {#- Filled in by the script below, so the flag/name table stays a
                 single copy rather than a second one in Jinja. -#}
             {%- if file.page.meta.get('country') %}<span data-cc="{{ file.page.meta.country }}">{{ file.page.meta.country }}</span>{% endif %}

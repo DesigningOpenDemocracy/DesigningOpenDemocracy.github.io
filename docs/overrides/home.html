@@ -155,16 +155,12 @@ document.addEventListener("DOMContentLoaded", function() {
     ];
   }
 
-  // Organisation markers — active orgs with location data
-  var orgTypeIcons = {
-    research: '🔬', education: '🔬',
-    advocacy: '📢',
-    platform: '💻', civic_tech: '💻',
-    practice: '🤝', philanthropy: '🤝', cooperative: '🤝',
-    party: '🗳️', political_party: '🗳️', 'political-party': '🗳️', political_movement: '🗳️',
-    governance: '⚖️', government: '⚖️',
-  };
-  function makeOrgIcon(type, logo, approximate, logoBg) {
+  // Organisation markers — active orgs with location data. Each marker is
+  // filed under its type category (hooks/org_types.py, shared with the
+  // Democracy Landscape pages) so the type filter below can show and hide a
+  // whole category at once.
+  var orgTypeCategories = {{ org_type_categories | tojson }};
+  function makeOrgIcon(typeIcon, logo, approximate, logoBg) {
     var approxClass = approximate ? ' org-map-icon-approx' : '';
     var darkClass = (logoBg === 'dark') ? ' org-logo-needs-dark' : '';
     if (logo) {
@@ -177,7 +173,7 @@ document.addEventListener("DOMContentLoaded", function() {
       });
     }
     return L.divIcon({
-      html: orgTypeIcons[type] || '🏛️',
+      html: typeIcon,
       className: 'org-map-icon' + approxClass,
       iconSize: [28, 28],
       iconAnchor: [14, 14],
@@ -185,20 +181,22 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   }
   var orgMarkers = new L.MarkerClusterGroup();
+  var orgMarkersByCategory = {};
 
   {%- for file in pages %}
     {%- if file.page and file.page.meta.location and file.page.meta.location.latitude and file.page.meta.location.longitude and file.page.url.startswith('organisations/') and file.page.meta.status == 'active' %}
       {
         var approximate = {{ (file.page.meta.location.precision == 'city') | tojson }};
+        var category = {{ file.page.meta.type | org_type_category | tojson }};
         var latLng = approximate
           ? jitterLatLng({{ file.page.meta.location.latitude }}, {{ file.page.meta.location.longitude }}, {{ file.page.url | tojson }})
           : [{{ file.page.meta.location.latitude }}, {{ file.page.meta.location.longitude }}];
         var marker = L.marker(
           latLng,
-          { icon: makeOrgIcon({{ (file.page.meta.type or '') | tojson }}, {{ (file.page.meta.logo or '') | tojson }}, approximate, {{ (file.page.meta.logo_bg or '') | tojson }}) }
+          { icon: makeOrgIcon({{ file.page.meta.type | org_type_icon | tojson }}, {{ (file.page.meta.logo or '') | tojson }}, approximate, {{ (file.page.meta.logo_bg or '') | tojson }}) }
         ).bindPopup(`
           <a style="font-weight:bold" href="/{{ file.page.url }}">{{ file.page.title }}</a>
-          <br/><i>{{ file.page.meta.type }}{% if file.page.meta.country %} · {{ file.page.meta.country }}{% endif %}</i>
+          <br/><i>{% if file.page.meta.type %}{{ file.page.meta.type | org_type_icon }} {{ file.page.meta.type }}{% endif %}{% if file.page.meta.country %} · {{ file.page.meta.country }}{% endif %}</i>
           {%- if file.page.meta.location.name %}
             <br/>${approximate ? '~ near ' : ''}{{ file.page.meta.location.name }}
           {%- endif %}
@@ -207,11 +205,14 @@ document.addEventListener("DOMContentLoaded", function() {
             <br/><a target="_blank" href="{{ file.page.meta.website }}">Website ↗</a>
           {%- endif %}
         `);
-        orgMarkers.addLayer(marker);
+        (orgMarkersByCategory[category] = orgMarkersByCategory[category] || []).push(marker);
       }
     {%- endif %}
   {%- endfor %}
 
+  Object.keys(orgMarkersByCategory).forEach(function (key) {
+    orgMarkers.addLayers(orgMarkersByCategory[key]);
+  });
   map.addLayer(orgMarkers);
 
   L.control.layers(null, {
@@ -219,19 +220,123 @@ document.addEventListener("DOMContentLoaded", function() {
     "Organisations": orgMarkers
   }, { collapsed: false, position: 'topleft' }).addTo(map);
 
-  // Organisation type legend
-  var legend = L.control({ position: 'bottomright' });
-  legend.onAdd = function() {
-    var div = L.DomUtil.create('div', 'map-legend');
+  // Organisation type filter. This used to be a static legend keying the
+  // type emoji, but 156 of the 158 mapped orgs render their logo instead of
+  // an emoji, so the key described icons that were almost never on screen.
+  // As a filter it answers what the legend couldn't: where are the parties,
+  // the funders, the civic-tech groups? Categories with no mapped org are
+  // left out. Collapsed by default on narrow screens, where ten rows would
+  // cover most of the map.
+  var hiddenCategories = {};
+  var orgTotal = 0;
+  Object.keys(orgMarkersByCategory).forEach(function (key) {
+    orgTotal += orgMarkersByCategory[key].length;
+  });
+  var typeFilter = L.control({ position: 'bottomright' });
+  typeFilter.onAdd = function () {
+    var div = L.DomUtil.create('div', 'map-legend map-type-filter');
+    L.DomEvent.disableClickPropagation(div);
+    L.DomEvent.disableScrollPropagation(div);
+
+    var rows = orgTypeCategories
+      .filter(function (c) { return orgMarkersByCategory[c.key]; })
+      .map(function (c) {
+        return '<label class="map-type-filter-row">' +
+          '<input type="checkbox" value="' + c.key + '" checked>' +
+          '<span class="map-type-filter-icon" aria-hidden="true">' + c.icon + '</span>' +
+          '<span class="map-type-filter-label">' + c.label + '</span>' +
+          '<span class="map-type-filter-n">' + orgMarkersByCategory[c.key].length + '</span>' +
+          '</label>';
+      }).join('');
+
     div.innerHTML =
-      '<strong>Organisation type</strong>' +
-      [['🔬','Research'],['📢','Advocacy'],['💻','Technology'],
-       ['🤝','Practice'],['🗳️','Political'],['⚖️','Governance']]
-      .map(function(c){ return '<div>' + c[0] + ' ' + c[1] + '</div>'; }).join('') +
-      '<div class="map-legend-approx-note">Dashed pin = approximate location</div>';
+      '<button type="button" class="map-type-filter-toggle" aria-expanded="true" aria-controls="map-type-filter-body">' +
+        '<strong>Organisation type</strong>' +
+        '<span class="map-type-filter-count"></span>' +
+        '<span class="map-type-filter-chevron" aria-hidden="true">▾</span>' +
+      '</button>' +
+      '<div class="map-type-filter-body" id="map-type-filter-body">' +
+        '<div class="map-type-filter-bulk">' +
+          'Show <button type="button" data-bulk="all">all</button> · ' +
+          '<button type="button" data-bulk="none">none</button>' +
+        '</div>' +
+        rows +
+        '<div class="map-legend-approx-note">Dashed pin = approximate location</div>' +
+      '</div>';
+
+    var toggle = div.querySelector('.map-type-filter-toggle');
+    var count = div.querySelector('.map-type-filter-count');
+    var body = div.querySelector('.map-type-filter-body');
+    var boxes = div.querySelectorAll('input[type="checkbox"]');
+
+    // Keep the open panel inside the map: on the 320px-tall mobile map the
+    // full list is taller than the map itself. 125px leaves room for the
+    // header row, the attribution strip, the control's own margins and the
+    // ⛶ expand button in the top-right corner above it.
+    function fitToMap() {
+      body.style.maxHeight = Math.max(100, map.getSize().y - 125) + 'px';
+    }
+    map.on('resize', fitToMap);
+
+    function setCollapsed(collapsed) {
+      div.classList.toggle('is-collapsed', collapsed);
+      toggle.setAttribute('aria-expanded', collapsed ? 'false' : 'true');
+      if (!collapsed) fitToMap();
+    }
+    toggle.addEventListener('click', function () {
+      setCollapsed(!div.classList.contains('is-collapsed'));
+    });
+    setCollapsed(window.matchMedia('(max-width: 768px)').matches);
+
+    function updateCount() {
+      var shown = 0;
+      Object.keys(orgMarkersByCategory).forEach(function (key) {
+        if (!hiddenCategories[key]) shown += orgMarkersByCategory[key].length;
+      });
+      count.textContent = shown === orgTotal ? orgTotal : shown + ' of ' + orgTotal;
+    }
+
+    function setCategoryVisible(key, visible) {
+      if (!hiddenCategories[key] === visible) return;
+      var markers = orgMarkersByCategory[key] || [];
+      if (visible) {
+        delete hiddenCategories[key];
+        orgMarkers.addLayers(markers);
+      } else {
+        hiddenCategories[key] = true;
+        markers.forEach(function (m) { if (m.isPopupOpen()) m.closePopup(); });
+        orgMarkers.removeLayers(markers);
+      }
+    }
+
+    Array.prototype.forEach.call(boxes, function (box) {
+      box.addEventListener('change', function () {
+        setCategoryVisible(box.value, box.checked);
+        updateCount();
+      });
+    });
+
+    Array.prototype.forEach.call(div.querySelectorAll('[data-bulk]'), function (btn) {
+      btn.addEventListener('click', function () {
+        var visible = btn.getAttribute('data-bulk') === 'all';
+        Array.prototype.forEach.call(boxes, function (box) {
+          box.checked = visible;
+          setCategoryVisible(box.value, visible);
+        });
+        updateCount();
+      });
+    });
+
+    // The filter only acts on the Organisations layer, so grey it out while
+    // that layer is switched off in the layer control above.
+    map.on('overlayadd overlayremove', function (e) {
+      if (e.layer === orgMarkers) div.classList.toggle('is-inactive', e.type === 'overlayremove');
+    });
+
+    updateCount();
     return div;
   };
-  legend.addTo(map);
+  typeFilter.addTo(map);
 
   var allLayers = myFGMarker.getLayers().concat(orgMarkers.getLayers());
   if (allLayers.length > 0) {
