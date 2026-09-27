@@ -3,7 +3,7 @@ title: Democracy Landscape
 template: organisations.html
 ---
 
-A reference directory of organisations active in democracy, civic technology and democratic reform. Search, filter and sort the table below — or hover the ℹ️ beside any name for a quick profile without leaving this page. To see where they are, open the <a href="/#activity-map-container">Democracy Map</a>; each profile links to its own pin.
+A reference directory of organisations active in democracy, civic technology and democratic reform. Search, filter and sort the table below — or hover the ℹ️ beside any name for a quick profile without leaving this page. To see where they are, open the [Democracy Map](../map.md); each profile links to its own pin.
 
 <!-- Collapsed for the same reason the calendar's intro is: this orients a
      first-time visitor and is scenery on every visit after that, and the

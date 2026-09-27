@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """Regression tests for hooks/democracy_map.py.
 
-The hook decides which orgs the home page's Democracy Map shows, and three
-templates act on that decision: home.html places the pins, organisation.html
-and organisations.html render "Show on map" links to them. A link rendered
+The hook decides which orgs the Democracy Map (/map/) shows, and four
+templates act on that decision: democracy-map.html places the pins, home.html
+counts them for its teaser, and organisation.html and organisations.html
+render "Show on map" links to them. A link rendered
 for an org the map left out opens the map on nothing, and nothing says why,
 so the rule is pinned here and the templates are checked for using the
 shared test rather than a copy of the condition.
@@ -52,7 +53,7 @@ class OnEnvTests(unittest.TestCase):
         tmpl = env.from_string(
             "{% if meta is on_democracy_map %}{{ 'bank-australia' | democracy_map_url }}{% endif %}"
         )
-        self.assertEqual(tmpl.render(meta=ON_MAP), "/?org=bank-australia")
+        self.assertEqual(tmpl.render(meta=ON_MAP), "/map/?org=bank-australia")
         self.assertEqual(tmpl.render(meta={"status": "inactive"}), "")
 
     def test_no_stray_event_handlers(self):
@@ -65,7 +66,7 @@ class OnEnvTests(unittest.TestCase):
 
 class TemplatesShareTheRuleTests(unittest.TestCase):
     def test_each_template_uses_the_shared_test(self):
-        for name in ("home.html", "organisation.html", "organisations.html"):
+        for name in ("democracy-map.html", "home.html", "organisation.html", "organisations.html"):
             with open(os.path.join(OVERRIDES, name), encoding="utf-8") as f:
                 self.assertIn("is on_democracy_map", f.read(), name)
 
