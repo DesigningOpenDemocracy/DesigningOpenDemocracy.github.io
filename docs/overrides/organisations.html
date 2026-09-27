@@ -203,6 +203,9 @@
 
       <div class="org-info-foot">
         <a class="org-info-more" href="/{{ file.page.url }}">Full profile →</a>
+        {%- if file.page.meta is on_democracy_map %}
+        <a href="{{ slug | democracy_map_url }}">📍 On the map</a>
+        {%- endif %}
         {%- if website and not website.startswith('https://web.archive.org') %}
         <a href="{{ website }}" target="_blank" rel="noopener">Website ↗</a>
         {%- endif %}

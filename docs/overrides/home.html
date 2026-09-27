@@ -42,459 +42,58 @@
     </div>
   </div>
 </section>
-<!-- Democracy Map: blog activity markers + organisation landscape markers -->
+<!-- Democracy Map teaser. The map itself is its own page, /map/
+     (democracy-map.html): at the bottom of this page it sat about three
+     screens down and made up roughly half of the page's compressed weight,
+     paid by every visitor whether or not they scrolled to it. The section
+     keeps its old id so that links to /#activity-map-container still land
+     somewhere that points on to the map. -->
+{%- set map_ns = namespace(orgs=0, posts=0, countries=[], org_dots=[], post_dots=[]) %}
+{%- for file in pages %}
+  {%- if file.page and file.page.url.startswith('organisations/') and file.page.meta is on_democracy_map %}
+    {%- set loc = file.page.meta.location %}
+    {%- set map_ns.orgs = map_ns.orgs + 1 %}
+    {%- set map_ns.org_dots = map_ns.org_dots + [[loc.longitude, loc.latitude]] %}
+    {%- if file.page.meta.country and file.page.meta.country not in map_ns.countries %}
+      {%- set map_ns.countries = map_ns.countries + [file.page.meta.country] %}
+    {%- endif %}
+  {%- elif file.page and file.page.url.startswith('blog/') and file.page.meta.location and file.page.meta.location.latitude and file.page.meta.location.longitude %}
+    {%- set loc = file.page.meta.location %}
+    {%- set map_ns.posts = map_ns.posts + 1 %}
+    {%- set map_ns.post_dots = map_ns.post_dots + [[loc.longitude, loc.latitude]] %}
+  {%- endif %}
+{%- endfor %}
 <section id="activity-map-container" class="mdx-container">
   <div id="activity-map-card" class="mdx-hero md-typeset">
     <h1 id="activity-map-title">Democracy Map</h1>
-    <p id="activity-map-subtitle">Activities and organisations</p>
-    <div id="map-wrapper">
-      <div class="leaflet-container" id="map"></div>
-      <button type="button" id="map-expand-btn" aria-label="Expand map">⛶</button>
+    <p id="activity-map-subtitle">Who is working on democracy, and where</p>
+    {#- A picture of the map, not the map: every dot is a real pin, drawn
+        from the same frontmatter at build time, over a dotted world outline
+        (partials/world-land-dots.html, from util/make_world_dots.py). No
+        placeholder pins: a reader takes a dot on a map as a data point.
+        viewBox is plain degrees (x = longitude, y = -latitude) and must
+        match the latitude band that script draws. Decorative: the counts
+        below carry the same information as text. #}
+    <a class="map-teaser-visual" href="/map/" tabindex="-1" aria-hidden="true">
+      <svg viewBox="-180 -76 360 134" focusable="false">
+        {% include "partials/world-land-dots.html" %}
+        <g class="map-teaser-orgs">
+          {%- for lon, lat in map_ns.org_dots %}<circle cx="{{ lon | round(1) }}" cy="{{ (-lat) | round(1) }}" r="1.1"/>{% endfor -%}
+        </g>
+        <g class="map-teaser-posts">
+          {%- for lon, lat in map_ns.post_dots %}<circle cx="{{ lon | round(1) }}" cy="{{ (-lat) | round(1) }}" r="1.1"/>{% endfor -%}
+        </g>
+      </svg>
+    </a>
+    <div class="map-teaser-stats">
+      <div class="map-teaser-stat map-teaser-stat--orgs"><strong>{{ map_ns.orgs }}</strong><span>organisations</span></div>
+      <div class="map-teaser-stat"><strong>{{ map_ns.countries | length }}</strong><span>countries and regions</span></div>
+      <div class="map-teaser-stat map-teaser-stat--posts"><strong>{{ map_ns.posts }}</strong><span>DOD blog posts, pinned where they happened</span></div>
     </div>
-    <p id="map-hint">Click a marker for details · Scroll to zoom · ⛶ to expand</p>
-    <p id="map-footer"><a href="/organisations/">View all organisations →</a></p>
+    <div class="map-teaser-cta">
+      <a class="hero-cta-btn hero-cta-primary" href="/map/">Explore the map →</a>
+      <a class="hero-cta-btn" href="/organisations/">Browse the directory</a>
+    </div>
   </div>
 </section>
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-  const map = L.map('map', { scrollWheelZoom: true }).setView([-27.41, 134.77], 3);
-
-  const mapWrapper = document.getElementById('map-wrapper');
-  const mapSection = document.getElementById('activity-map-container');
-  const expandBtn = document.getElementById('map-expand-btn');
-  const mapHint = document.getElementById('map-hint');
-
-  function setExpanded(expand) {
-    mapWrapper.classList.toggle('is-expanded', expand);
-    // Release the isolation stacking context so the fixed overlay clears the nav bar
-    mapSection.style.isolation = expand ? 'auto' : '';
-    expandBtn.textContent = expand ? '✕' : '⛶';
-    expandBtn.setAttribute('aria-label', expand ? 'Collapse map' : 'Expand map');
-    mapHint.textContent = expand
-      ? 'Scroll to zoom · Esc to close'
-      : 'Click a marker for details · Scroll to zoom · ⛶ to expand';
-    setTimeout(() => map.invalidateSize(), 50);
-  }
-
-  expandBtn.addEventListener('click', function() {
-    setExpanded(!mapWrapper.classList.contains('is-expanded'));
-  });
-
-  document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape' && mapWrapper.classList.contains('is-expanded')) {
-      setExpanded(false);
-    }
-  });
-  const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-  }).addTo(map);
-
-  // Fade a blog activity marker as its post ages (fully faded after two
-  // years). Takes 'YYYY-MM-DD'; anything unparseable gets no fade.
-  function getFadeRatioBasedOnTime(postDateStr) {
-    const postDate = new Date(postDateStr);
-    if (isNaN(postDate)) return 0;
-    const fadeDuration = 2 * 365 * 24 * 60 * 60 * 1000;
-    return Math.min(Math.max((new Date() - postDate) / fadeDuration, 0), 1);
-  }
-
-  // Popup cards. Their content arrives as JSON (tojson) and is escaped here.
-  // It used to be pasted straight into a JS template literal, where a title
-  // containing a backtick or "${" would have broken the whole map script.
-  function esc(s) {
-    return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
-      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
-    });
-  }
-  var MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-  // 'YYYY-MM-DD' -> '7 Dec 2025'. Parsed by hand: new Date('YYYY-MM-DD') is
-  // UTC midnight, which is the previous day for anyone west of Greenwich.
-  function formatDay(iso) {
-    var m = /^(\d{4})-(\d{2})-(\d{2})/.exec(iso || '');
-    return m ? (+m[3]) + ' ' + MONTHS[+m[2] - 1] + ' ' + m[1] : '';
-  }
-  function toFlag(code) {
-    if (!code || code.length !== 2) return '';
-    var base = 0x1F1E6 - 65, up = code.toUpperCase();
-    return String.fromCodePoint(up.charCodeAt(0) + base, up.charCodeAt(1) + base);
-  }
-  var POPUP_OPTIONS = { minWidth: 240, maxWidth: 300 };
-  // A full card is taller than the 320px mobile map, so cap each popup to
-  // the map's current height (which changes when the map is expanded) and
-  // let Leaflet scroll it. 70px clears the popup tip and the map edge.
-  map.on('popupopen', function (e) {
-    var h = Math.max(160, map.getSize().y - 70);
-    if (e.popup.options.maxHeight !== h) {
-      e.popup.options.maxHeight = h;
-      e.popup.update();
-    }
-  });
-
-  // Leaflet always draws its controls (and the ⛶ button) above popups, so an
-  // open card could sit half under the layer switcher or the type filter,
-  // and on the small mobile map it always did. Fade out just the controls
-  // the open popup actually overlaps, re-checking as the map pans (autoPan
-  // included), and bring them back when it closes.
-  var openPopup = null;
-  function mapOverlays() {
-    return mapWrapper.querySelectorAll('.leaflet-control, #map-expand-btn');
-  }
-  function fadeControlsUnderPopup() {
-    var el = openPopup && openPopup.getElement();
-    var r = el && el.getBoundingClientRect();
-    Array.prototype.forEach.call(mapOverlays(), function (c) {
-      var b = c.getBoundingClientRect();
-      var hit = !!r && b.right > r.left && b.left < r.right && b.bottom > r.top && b.top < r.bottom;
-      c.classList.toggle('is-under-popup', hit);
-    });
-  }
-  map.on('popupopen', function (e) {
-    openPopup = e.popup;
-    fadeControlsUnderPopup();
-  });
-  map.on('popupclose', function () {
-    openPopup = null;
-    fadeControlsUnderPopup();
-  });
-  map.on('move moveend resize', function () {
-    if (openPopup) fadeControlsUnderPopup();
-  });
-
-  function placeLine(parts) {
-    var text = parts.filter(Boolean).map(esc).join(' — ');
-    return text ? '<p class="map-popup-place">📍 ' + text + '</p>' : '';
-  }
-
-  // Blog activity markers — posts with a location:
-  var myFGMarker = new L.MarkerClusterGroup();
-
-  function activityPopup(a) {
-    var h = [
-      '<div class="map-popup">',
-      '<div class="map-popup-eyebrow">DOD activity' + (a.date ? ' · ' + esc(formatDay(a.date)) : '') + '</div>',
-      '<a class="map-popup-title" href="' + esc(a.url) + '">' + esc(a.title) + '</a>'
-    ];
-    if (a.summary) h.push('<p class="map-popup-summary">' + esc(a.summary) + '</p>');
-    h.push(placeLine([a.place, a.placeNote]));
-    var links = '<a href="' + esc(a.url) + '">Read the post →</a>';
-    if (a.address) {
-      links += '<a href="https://www.openstreetmap.org/?mlat=' + a.lat + '&amp;mlon=' + a.lon +
-        '" target="_blank" rel="noopener">' + esc(a.address) + ' ↗</a>';
-    }
-    h.push('<div class="map-popup-links">' + links + '</div></div>');
-    return h.join('');
-  }
-
-  function addActivity(a) {
-    var marker = L.marker([a.lat, a.lon], { opacity: 1.0 - getFadeRatioBasedOnTime(a.date) / 2 });
-    marker.bindPopup(function () { return activityPopup(a); }, POPUP_OPTIONS);
-    myFGMarker.addLayer(marker);
-  }
-
-  {%- for file in pages %}
-    {%- if file.page and file.page.url.startswith('blog/') and file.page.meta.location and file.page.meta.location.latitude and file.page.meta.location.longitude %}
-    {%- set loc = file.page.meta.location %}
-  addActivity({{ {
-    'url': '/' ~ file.page.url,
-    'title': file.page.title,
-    'date': (file.page.meta.date | string)[:10] if file.page.meta.date else '',
-    'summary': (file.page.meta.summary or '') | striptags | truncate(170, False, '…', 0),
-    'lat': loc.latitude,
-    'lon': loc.longitude,
-    'place': loc.name or '',
-    'placeNote': loc.description or '',
-    'address': loc.address or ''
-  } | tojson }});
-    {%- endif %}
-  {%- endfor %}
-
-  map.addLayer(myFGMarker);
-
-  // Deterministic per-org jitter for approximate (precision: city) org locations —
-  // spreads pins that would otherwise sit exactly on top of each other (a shared
-  // city-centroid guess, not a real address — see CLAUDE.md's location: convention)
-  // onto a small ring around the stated point. Seeded from the org's own URL so the
-  // same org always lands in the same spot across reloads/builds rather than jumping
-  // around, without needing to coordinate with whichever other orgs share that point.
-  function seededUnit(seedStr) {
-    var h = 0;
-    for (var i = 0; i < seedStr.length; i++) {
-      h = (h * 31 + seedStr.charCodeAt(i)) | 0;
-    }
-    return (Math.abs(h) % 3600) / 3600; // [0, 1)
-  }
-  var JITTER_RADIUS_DEG = 0.015; // ~1.6km — visible once zoomed to city level, still reads as "this city"
-  function jitterLatLng(lat, lon, seedStr) {
-    // Spread across a filled disk (angle + radius both seeded, independently
-    // salted) rather than just a ring — two orgs need to collide on BOTH axes
-    // to land close together, not just share a similar hash bucket on one.
-    var angle = seededUnit(seedStr + ':angle') * 2 * Math.PI;
-    var radius = JITTER_RADIUS_DEG * (0.35 + 0.65 * seededUnit(seedStr + ':radius'));
-    var lonScale = Math.cos(lat * Math.PI / 180) || 1;
-    return [
-      lat + radius * Math.cos(angle),
-      lon + (radius * Math.sin(angle)) / lonScale
-    ];
-  }
-
-  // Organisation markers — active orgs with location data. Each marker is
-  // filed under its type category (hooks/org_types.py, shared with the
-  // Democracy Landscape pages) so the type filter below can show and hide a
-  // whole category at once.
-  var orgTypeCategories = {{ org_type_categories | tojson }};
-  function makeOrgIcon(typeIcon, logo, approximate, logoBg) {
-    var approxClass = approximate ? ' org-map-icon-approx' : '';
-    var darkClass = (logoBg === 'dark') ? ' org-logo-needs-dark' : '';
-    if (logo) {
-      return L.divIcon({
-        html: '<img src="' + logo + '" alt="" loading="lazy">',
-        className: 'org-map-icon org-map-icon-logo' + approxClass + darkClass,
-        iconSize: [30, 30],
-        iconAnchor: [15, 15],
-        popupAnchor: [0, -15]
-      });
-    }
-    return L.divIcon({
-      html: typeIcon,
-      className: 'org-map-icon' + approxClass,
-      iconSize: [28, 28],
-      iconAnchor: [14, 14],
-      popupAnchor: [0, -14]
-    });
-  }
-  var orgMarkers = new L.MarkerClusterGroup();
-  var orgMarkersByCategory = {};
-
-  // The same one event the Democracy Landscape index's quick-profile card
-  // shows (select_highlight() in hooks/org_events.py): the soonest upcoming
-  // event, else the most notable past one. "Upcoming" was decided at build
-  // time, so re-check it against the viewer's clock.
-  var today = new Date();
-  var todayIso = today.getFullYear() + '-' + String(today.getMonth() + 1).padStart(2, '0') + '-' +
-    String(today.getDate()).padStart(2, '0');
-  function eventBlock(e) {
-    var label = e.kind !== 'upcoming' ? 'Milestone' : e.date >= todayIso ? 'Next event' : 'Recent event';
-    var tier = e.notable === true ? ' map-popup-event--major' : e.notable === 'medium' ? ' map-popup-event--medium' : '';
-    var badge = e.notable === true ? '<span class="map-popup-badge">★ Major</span>'
-      : e.notable === 'medium' ? '<span class="map-popup-badge map-popup-badge--medium">● Notable</span>' : '';
-    var title = e.url
-      ? '<a href="' + esc(e.url) + '" target="_blank" rel="noopener">' + esc(e.title) + '</a>'
-      : esc(e.title);
-    return '<div class="map-popup-event' + tier + '">' +
-      '<div class="map-popup-event-label">' + label + ' · ' +
-        esc(e.dateDisplay + (e.endDateDisplay ? ' – ' + e.endDateDisplay : '')) + badge + '</div>' +
-      '<div class="map-popup-event-title">' + title + '</div>' +
-      (e.reason ? '<div class="map-popup-event-reason">' + esc(e.reason) + '</div>' : '') +
-      '</div>';
-  }
-
-  function orgPopup(o) {
-    var logo = '';
-    if (o.logo) {
-      var src = /^(https?:)?\//.test(o.logo) ? o.logo : '/' + o.logo;
-      logo = '<a href="' + esc(o.url) + '" tabindex="-1"><img class="map-popup-logo' +
-        (o.logoBg === 'dark' ? ' org-logo-needs-dark' : '') + '" src="' + esc(src) + '" alt=""></a>';
-    }
-    var facts = [];
-    if (o.type) facts.push(esc(o.typeIcon + ' ' + o.type));
-    if (o.country) facts.push(esc((toFlag(o.country) + ' ' + (o.countryName || o.country)).trim()));
-    var h = [
-      '<div class="map-popup map-popup-org">',
-      '<div class="map-popup-head">', logo, '<div class="map-popup-head-text">',
-      '<a class="map-popup-title" href="' + esc(o.url) + '">' + esc(o.title) + '</a>',
-      facts.length ? '<div class="map-popup-facts">' + facts.join(' · ') + '</div>' : '',
-      '</div></div>'
-    ];
-    if (o.summary) h.push('<p class="map-popup-summary">' + esc(o.summary) + '</p>');
-    if (o.event) h.push(eventBlock(o.event));
-    h.push(placeLine([(o.approximate ? '~ near ' : '') + o.place]));
-    if (o.approximate) {
-      h.push('<p class="org-map-approx-note">Approximate — precise address not confirmed</p>');
-    }
-    var links = '<a href="' + esc(o.url) + '">Landscape profile →</a>';
-    if (o.website) links += '<a href="' + esc(o.website) + '" target="_blank" rel="noopener">Website ↗</a>';
-    h.push('<div class="map-popup-links">' + links + '</div></div>');
-    return h.join('');
-  }
-
-  function addOrg(o) {
-    // Seeded on the page URL without its leading slash, as it always has
-    // been; changing the seed would move every approximate pin.
-    var latLng = o.approximate ? jitterLatLng(o.lat, o.lon, o.url.slice(1)) : [o.lat, o.lon];
-    var marker = L.marker(latLng, { icon: makeOrgIcon(o.typeIcon, o.logo, o.approximate, o.logoBg) });
-    marker.bindPopup(function () { return orgPopup(o); }, POPUP_OPTIONS);
-    (orgMarkersByCategory[o.category] = orgMarkersByCategory[o.category] || []).push(marker);
-  }
-
-  {%- for file in pages %}
-    {%- if file.page and file.page.meta.location and file.page.meta.location.latitude and file.page.meta.location.longitude and file.page.url.startswith('organisations/') and file.page.meta.status == 'active' %}
-    {%- set loc = file.page.meta.location %}
-    {%- set slug = file.page.file.src_path | replace('organisations/', '') | replace('.md', '') %}
-    {%- set hl = org_event_highlight.get(slug) %}
-    {%- set website = file.page.meta.website or '' %}
-  addOrg({{ {
-    'url': '/' ~ file.page.url,
-    'title': file.page.title,
-    'type': file.page.meta.type or '',
-    'typeIcon': file.page.meta.type | org_type_icon,
-    'category': file.page.meta.type | org_type_category,
-    'country': file.page.meta.country or '',
-    'countryName': file.page.meta.country | country_name,
-    'logo': file.page.meta.logo or '',
-    'logoBg': file.page.meta.logo_bg or '',
-    'summary': (file.page.meta.summary or '') | striptags | truncate(170, False, '…', 0),
-    'website': '' if website.startswith('https://web.archive.org') else website,
-    'lat': loc.latitude,
-    'lon': loc.longitude,
-    'approximate': loc.precision == 'city',
-    'place': loc.name or '',
-    'event': {
-      'kind': hl.kind,
-      'date': hl.date,
-      'dateDisplay': hl.date_display,
-      'endDateDisplay': hl.end_date_display,
-      'title': hl.title,
-      'url': hl.url,
-      'notable': hl.notable,
-      'reason': hl.notable_reason
-    } if hl else none
-  } | tojson }});
-    {%- endif %}
-  {%- endfor %}
-
-  Object.keys(orgMarkersByCategory).forEach(function (key) {
-    orgMarkers.addLayers(orgMarkersByCategory[key]);
-  });
-  map.addLayer(orgMarkers);
-
-  L.control.layers(null, {
-    "Activities": myFGMarker,
-    "Organisations": orgMarkers
-  }, { collapsed: false, position: 'topleft' }).addTo(map);
-
-  // Organisation type filter. This used to be a static legend keying the
-  // type emoji, but 156 of the 158 mapped orgs render their logo instead of
-  // an emoji, so the key described icons that were almost never on screen.
-  // As a filter it answers what the legend couldn't: where are the parties,
-  // the funders, the civic-tech groups? Categories with no mapped org are
-  // left out. Collapsed by default on narrow screens, where ten rows would
-  // cover most of the map.
-  var hiddenCategories = {};
-  var orgTotal = 0;
-  Object.keys(orgMarkersByCategory).forEach(function (key) {
-    orgTotal += orgMarkersByCategory[key].length;
-  });
-  var typeFilter = L.control({ position: 'bottomright' });
-  typeFilter.onAdd = function () {
-    var div = L.DomUtil.create('div', 'map-legend map-type-filter');
-    L.DomEvent.disableClickPropagation(div);
-    L.DomEvent.disableScrollPropagation(div);
-
-    var rows = orgTypeCategories
-      .filter(function (c) { return orgMarkersByCategory[c.key]; })
-      .map(function (c) {
-        return '<label class="map-type-filter-row">' +
-          '<input type="checkbox" value="' + c.key + '" checked>' +
-          '<span class="map-type-filter-icon" aria-hidden="true">' + c.icon + '</span>' +
-          '<span class="map-type-filter-label">' + c.label + '</span>' +
-          '<span class="map-type-filter-n">' + orgMarkersByCategory[c.key].length + '</span>' +
-          '</label>';
-      }).join('');
-
-    div.innerHTML =
-      '<button type="button" class="map-type-filter-toggle" aria-expanded="true" aria-controls="map-type-filter-body">' +
-        '<strong>Organisation type</strong>' +
-        '<span class="map-type-filter-count"></span>' +
-        '<span class="map-type-filter-chevron" aria-hidden="true">▾</span>' +
-      '</button>' +
-      '<div class="map-type-filter-body" id="map-type-filter-body">' +
-        '<div class="map-type-filter-bulk">' +
-          'Show <button type="button" data-bulk="all">all</button> · ' +
-          '<button type="button" data-bulk="none">none</button>' +
-        '</div>' +
-        rows +
-        '<div class="map-legend-approx-note">Dashed pin = approximate location</div>' +
-      '</div>';
-
-    var toggle = div.querySelector('.map-type-filter-toggle');
-    var count = div.querySelector('.map-type-filter-count');
-    var body = div.querySelector('.map-type-filter-body');
-    var boxes = div.querySelectorAll('input[type="checkbox"]');
-
-    // Keep the open panel inside the map: on the 320px-tall mobile map the
-    // full list is taller than the map itself. 125px leaves room for the
-    // header row, the attribution strip, the control's own margins and the
-    // ⛶ expand button in the top-right corner above it.
-    function fitToMap() {
-      body.style.maxHeight = Math.max(100, map.getSize().y - 125) + 'px';
-    }
-    map.on('resize', fitToMap);
-
-    function setCollapsed(collapsed) {
-      div.classList.toggle('is-collapsed', collapsed);
-      toggle.setAttribute('aria-expanded', collapsed ? 'false' : 'true');
-      if (!collapsed) fitToMap();
-    }
-    toggle.addEventListener('click', function () {
-      setCollapsed(!div.classList.contains('is-collapsed'));
-    });
-    setCollapsed(window.matchMedia('(max-width: 768px)').matches);
-
-    function updateCount() {
-      var shown = 0;
-      Object.keys(orgMarkersByCategory).forEach(function (key) {
-        if (!hiddenCategories[key]) shown += orgMarkersByCategory[key].length;
-      });
-      count.textContent = shown === orgTotal ? orgTotal : shown + ' of ' + orgTotal;
-    }
-
-    function setCategoryVisible(key, visible) {
-      if (!hiddenCategories[key] === visible) return;
-      var markers = orgMarkersByCategory[key] || [];
-      if (visible) {
-        delete hiddenCategories[key];
-        orgMarkers.addLayers(markers);
-      } else {
-        hiddenCategories[key] = true;
-        markers.forEach(function (m) { if (m.isPopupOpen()) m.closePopup(); });
-        orgMarkers.removeLayers(markers);
-      }
-    }
-
-    Array.prototype.forEach.call(boxes, function (box) {
-      box.addEventListener('change', function () {
-        setCategoryVisible(box.value, box.checked);
-        updateCount();
-      });
-    });
-
-    Array.prototype.forEach.call(div.querySelectorAll('[data-bulk]'), function (btn) {
-      btn.addEventListener('click', function () {
-        var visible = btn.getAttribute('data-bulk') === 'all';
-        Array.prototype.forEach.call(boxes, function (box) {
-          box.checked = visible;
-          setCategoryVisible(box.value, visible);
-        });
-        updateCount();
-      });
-    });
-
-    // The filter only acts on the Organisations layer, so grey it out while
-    // that layer is switched off in the layer control above.
-    map.on('overlayadd overlayremove', function (e) {
-      if (e.layer === orgMarkers) div.classList.toggle('is-inactive', e.type === 'overlayremove');
-    });
-
-    updateCount();
-    return div;
-  };
-  typeFilter.addTo(map);
-
-  var allLayers = myFGMarker.getLayers().concat(orgMarkers.getLayers());
-  if (allLayers.length > 0) {
-    map.fitBounds(L.featureGroup(allLayers).getBounds(), {padding: [50, 50]});
-  }
-});
-</script>
 {% endblock %}

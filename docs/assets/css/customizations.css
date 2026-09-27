@@ -641,14 +641,95 @@ html .md-typeset details.plain-details > :last-child {
     color: #000000b0;
 }
 
+/* Home page teaser for the Democracy Map, which is its own page (/map/). */
+.map-teaser-visual {
+    display: block;
+    max-width: 1000px;
+    margin: 0.4rem auto 0;
+}
+
+.map-teaser-visual svg {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Land dots are zero-length strokes; the round cap is what draws them. */
+.map-teaser-land {
+    fill: none;
+    stroke: #5f6b75;
+    stroke-opacity: 0.35;
+    stroke-width: 1.1;
+    stroke-linecap: round;
+}
+
+/* Dot colours double as the legend: each matches its count below. */
+.map-teaser-orgs circle {
+    fill: #d24f2e;
+    fill-opacity: 0.75;
+}
+
+.map-teaser-posts circle {
+    fill: #3949ab;
+}
+
+.map-teaser-stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem 3rem;
+    margin: 1.2rem 0 1.6rem;
+}
+
+.map-teaser-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 12rem;
+}
+
+.map-teaser-stat strong {
+    color: #444;
+    font-size: 2.4rem;
+    line-height: 1.15;
+}
+
+.map-teaser-stat--orgs strong {
+    color: #d24f2e;
+}
+
+.map-teaser-stat--posts strong {
+    color: #3949ab;
+}
+
+.map-teaser-stat span {
+    color: #000000b0;
+    font-size: 0.8rem;
+}
+
+.map-teaser-cta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.6rem;
+}
+
+/* The Democracy Map page (democracy-map.html). isolation scopes Leaflet's
+   z-indices so its panes and controls don't paint over the sticky header. */
+#democracy-map {
+    isolation: isolate;
+}
+
 #map-wrapper {
     position: relative;
-    width: min(900px, 100%);
+    width: 100%;
     margin: 0 auto;
 }
 
+/* The map is the page, so it takes the viewport height left under the
+   header, title and intro, with a floor for short or landscape screens. */
 .leaflet-container {
-    height: min(600px, 60vh);
+    height: max(360px, calc(100vh - 17rem));
     width: 100%;
 }
 
@@ -691,22 +772,9 @@ html .md-typeset details.plain-details > :last-child {
     width: 100vw;
 }
 
-@media (min-width: 1400px) {
-    #map-wrapper {
-        width: 100%;
-        max-width: 1400px;
-    }
-    .leaflet-container {
-        height: min(750px, 70vh);
-    }
-}
-
 @media (max-width: 768px) {
     #activity-map-container {
         padding: 1.5rem 0.5rem;
-    }
-    .leaflet-container {
-        height: 320px;
     }
 }
 
@@ -717,18 +785,13 @@ html .md-typeset details.plain-details > :last-child {
  * These overrides lower both thresholds to 60em (960px) so the top-bar tabs
  * and the inline sidebar both appear at normal desktop widths.
  */
-/* Map usage hint and footer link below the map */
+/* Map usage hint below the map. A theme colour: it sits on the page
+   background now, not on the home page's fixed white card. */
 #map-hint {
   font-size: 0.78rem;
-  color: #0000008a;
+  color: var(--md-default-fg-color--light);
   margin-top: 0.4rem;
   text-align: center;
-}
-
-#map-footer {
-  margin-top: 0.5rem;
-  text-align: center;
-  font-size: 0.9rem;
 }
 
 /* Organisation type legend */

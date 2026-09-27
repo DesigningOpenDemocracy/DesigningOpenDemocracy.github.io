@@ -12,6 +12,7 @@
   'US': 'United States', 'VE': 'Venezuela', 'VN': 'Vietnam', 'ZA': 'South Africa'
 } %}
 {% block content %}
+{%- set org_slug = page.file.src_path | replace('organisations/', '') | replace('.md', '') %}
 {%- set header_img = page.meta.banner or page.meta.logo %}
 {%- set is_banner = page.meta.banner and true or false %}
 {%- if header_img %}
@@ -26,6 +27,9 @@
     {%- if page.meta.status %}<span class="org-meta-pill">Status: <span class="project-status-badge status-{{ page.meta.status }}">{{ page.meta.status }}</span></span>{% endif %}
     {%- if page.meta.type %}<span class="org-meta-pill">Type: {{ page.meta.type | org_type_icon }} {{ page.meta.type }}</span>{% endif %}
     {%- if page.meta.country %}<span class="org-meta-pill">Country: {{ country_names.get(page.meta.country.upper(), page.meta.country) }}</span>{% endif %}
+    {%- if page.meta is on_democracy_map %}
+    <span class="org-meta-pill">📍 <a href="{{ org_slug | democracy_map_url }}" onclick="event.stopPropagation()">Show on map</a></span>
+    {%- endif %}
     {%- if page.meta.website %}
     <span class="org-meta-pill">Website:
       {%- if 'web.archive.org' in page.meta.website %}
@@ -55,6 +59,15 @@
       <tr>
         <th>Country</th>
         <td>{{ country_names.get(page.meta.country.upper(), page.meta.country) }}</td>
+      </tr>
+      {%- endif %}
+      {%- if page.meta is on_democracy_map %}
+      <tr>
+        <th>Location</th>
+        <td>
+          {%- if page.meta.location.name %}{% if page.meta.location.precision == 'city' %}~ near {% endif %}{{ page.meta.location.name }} · {% endif -%}
+          <a href="{{ org_slug | democracy_map_url }}">Show on the Democracy Map →</a>
+        </td>
       </tr>
       {%- endif %}
       {%- if page.meta.website %}
