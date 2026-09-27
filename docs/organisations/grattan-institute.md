@@ -1,6 +1,7 @@
 ---
 title: Grattan Institute
 type: research
+democracy_focus: partial
 status: active
 country: AU
 website: https://grattan.edu.au

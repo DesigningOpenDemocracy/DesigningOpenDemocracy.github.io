@@ -1,6 +1,7 @@
 ---
 title: Ushahidi
 type: platform
+democracy_focus: partial
 status: active
 country: KE
 website: https://www.ushahidi.com

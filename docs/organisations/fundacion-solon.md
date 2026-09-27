@@ -1,6 +1,7 @@
 ---
 title: Fundación Solón
 type: research
+democracy_focus: partial
 status: active
 country: BO
 website: https://fundacionsolon.org

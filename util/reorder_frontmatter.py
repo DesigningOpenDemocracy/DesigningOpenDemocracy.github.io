@@ -28,7 +28,7 @@ SKIP_FILES = {"index.md"}
 
 # Canonical ordering (fields not listed are appended at end in original order)
 CANONICAL_TOP = [
-    "title", "type", "status", "country", "website",
+    "title", "type", "democracy_focus", "status", "country", "website",
     "logo", "logo_bg", "banner", "contact", "summary", "concepts",
     "location", "news_page", "rss_feed", "ics_feed", "related_orgs",
     "events", "activity", "last_checked",
@@ -37,7 +37,8 @@ CANONICAL_TOP = [
 # Per-event canonical field order
 EVENT_FIELD_ORDER = [
     "date", "title", "short_title", "url", "source", "quote", "note", "proof_level",
-    "url_checked", "end_date", "time", "end_time", "notable", "notable_reason", "type",
+    "url_checked", "end_date", "time", "end_time", "notable", "notable_reason",
+    "democracy_related", "type",
     "location", "proof_warning", "coverage_url",
 ]
 

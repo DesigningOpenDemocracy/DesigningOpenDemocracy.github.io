@@ -167,6 +167,32 @@ def _link_for(url, quote, archive_info):
     return _tf.with_fragment(url, quote), archive_url, url_status
 
 
+def is_democracy_news(org_meta, entry):
+    """Whether an event is on-topic for Landscape News.
+
+    Some organisations are in the landscape because they *also* cover
+    democracy: a customer-owned bank, a media-literacy podcast, a
+    social-innovation fund. Their notable events are notable for them, and
+    usually about something else (a climate summit, an audience milestone).
+    Those orgs carry `democracy_focus: partial`, and only their events
+    marked `democracy_related: true` count as news. Every other org's
+    notable events count as they always have. See CLAUDE.md's Landscape
+    News section.
+    """
+    if (org_meta or {}).get("democracy_focus") != "partial":
+        return True
+    return entry.get("democracy_related") is True
+
+
+def _merge_cohost(item, org_ref, country, concepts, tier):
+    item["orgs"].append(org_ref)
+    if country and country not in item["countries"]:
+        item["countries"].append(country)
+    item["concepts"] += [c for c in concepts if c not in item["concepts"]]
+    if tier is True:
+        item["notable"] = True
+
+
 def collect_news(orgs, today, window_days=NEWS_WINDOW_DAYS, archive_info=None):
     """Recent notable events across every org, newest first.
 
@@ -182,9 +208,15 @@ def collect_news(orgs, today, window_days=NEWS_WINDOW_DAYS, archive_info=None):
     subscriber twice. The first org in filename order supplies the title,
     note and quote; the stronger of the tiers wins; countries and concepts
     are the union.
+
+    An off-topic event from a partial-focus org (see is_democracy_news) never
+    creates an item, but still joins one as a co-host: if the same event is
+    on a democracy-focused org's page it is news regardless, and leaving a
+    co-host off would misreport who ran it.
     """
     items = []
     by_key = {}
+    held = []
     for slug, m in orgs:
         for entry in m.get("events") or []:
             if not isinstance(entry, dict):
@@ -202,14 +234,12 @@ def collect_news(orgs, today, window_days=NEWS_WINDOW_DAYS, archive_info=None):
             org_ref = {"slug": slug, "title": org_title}
 
             key = (d, url) if url else None
+            if not is_democracy_news(m, entry):
+                if key:
+                    held.append((key, org_ref, country, concepts, tier))
+                continue
             if key and key in by_key:
-                item = by_key[key]
-                item["orgs"].append(org_ref)
-                if country and country not in item["countries"]:
-                    item["countries"].append(country)
-                item["concepts"] += [c for c in concepts if c not in item["concepts"]]
-                if tier is True:
-                    item["notable"] = True
+                _merge_cohost(by_key[key], org_ref, country, concepts, tier)
                 continue
 
             title = entry.get("title", "Untitled")
@@ -244,6 +274,9 @@ def collect_news(orgs, today, window_days=NEWS_WINDOW_DAYS, archive_info=None):
             items.append(item)
             if key:
                 by_key[key] = item
+    for key, org_ref, country, concepts, tier in held:
+        if key in by_key:
+            _merge_cohost(by_key[key], org_ref, country, concepts, tier)
     items.sort(key=lambda i: (-i["date"].toordinal(), i["notable"] is not True, i["org_title"].lower()))
     return items
 

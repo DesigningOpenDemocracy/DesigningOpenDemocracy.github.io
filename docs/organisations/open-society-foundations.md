@@ -1,6 +1,7 @@
 ---
 title: Open Society Foundations
 type: philanthropy
+democracy_focus: partial
 status: active
 country: US
 website: https://www.opensocietyfoundations.org

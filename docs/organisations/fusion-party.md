@@ -1,6 +1,7 @@
 ---
 title: Fusion Party
 type: party
+democracy_focus: partial
 status: active
 country: AU
 website: https://www.fusionparty.org.au

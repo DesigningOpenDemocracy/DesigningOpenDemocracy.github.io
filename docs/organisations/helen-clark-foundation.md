@@ -1,6 +1,7 @@
 ---
 title: Helen Clark Foundation
 type: think-tank
+democracy_focus: partial
 status: active
 country: NZ
 website: https://helenclark.foundation
@@ -51,6 +52,7 @@ events:
   url_checked: '2026-08-29'
   notable: true
   notable_reason: Flagship publication ahead of a general election
+  democracy_related: false
   type: publication
 - date: '2026-09-29'
   title: 'Playing the Long Game: public webinar with Simon Bridges on durable policy-making'

@@ -1,6 +1,7 @@
 ---
 title: Movilizatorio
 type: ngo
+democracy_focus: partial
 status: active
 country: CO
 website: https://www.movilizatorio.org
@@ -52,6 +53,7 @@ events:
   url_checked: '2026-08-29'
   notable: true
   notable_reason: Major international recognition
+  democracy_related: false
   type: recognition
 activity:
   dod:

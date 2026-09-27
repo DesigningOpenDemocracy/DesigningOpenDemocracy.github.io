@@ -1,6 +1,7 @@
 ---
 title: 888 Co-operative Causeway
 type: cooperative
+democracy_focus: partial
 status: active
 country: AU
 website: https://www.888causeway.coop
@@ -53,6 +54,7 @@ events:
   end_time: '20:00'
   notable: true
   notable_reason: Public panel co-hosted for International Day of Democracy
+  democracy_related: true
 activity:
   manual:
     checked: 2026-06-07

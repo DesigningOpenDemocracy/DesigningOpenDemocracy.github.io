@@ -1,6 +1,7 @@
 ---
 title: Memorial
 type: research
+democracy_focus: partial
 status: active
 country: RU
 website: https://www.memorial.de

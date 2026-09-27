@@ -1,6 +1,7 @@
 ---
 title: Earthworker Cooperative
 type: cooperative
+democracy_focus: partial
 status: active
 country: AU
 website: https://earthworker.coop

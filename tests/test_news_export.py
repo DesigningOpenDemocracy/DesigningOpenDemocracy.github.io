@@ -122,6 +122,47 @@ class MergeTests(unittest.TestCase):
         self.assertEqual(len(items), 2)
 
 
+class TopicTests(unittest.TestCase):
+    """Orgs that only partly work on democracy (democracy_focus: partial)
+    contribute only events marked democracy_related: true."""
+
+    def titles(self, orgs):
+        return [i["title"] for i in ne.collect_news(orgs, TODAY)]
+
+    def test_partial_org_needs_an_explicit_yes(self):
+        partial = org("Bank", democracy_focus="partial", events=[
+            ev(5, "Unmarked"),
+            ev(6, "Marked no", democracy_related=False),
+            ev(7, "Marked yes", democracy_related=True),
+            ev(8, "Truthy string is not a yes", democracy_related="yes"),
+        ])
+        self.assertEqual(self.titles([("bank", partial)]), ["Marked yes"])
+
+    def test_democracy_focused_org_is_unaffected(self):
+        core = org("Core", events=[ev(5, "Any notable event"),
+                                   ev(6, "Even one marked no", democracy_related=False)])
+        self.assertEqual(self.titles([("core", core)]), ["Any notable event", "Even one marked no"])
+
+    def test_off_topic_cohost_still_joins_a_news_item(self):
+        # The 888 / DOD case, in both filename orders: the partial org's
+        # unmarked copy of the event can't create an item, but it is still
+        # listed as a co-host of the democracy-focused org's item.
+        url = "https://tickets.example/panel"
+        for first, second in (("a-coop", "z-dod"), ("z-coop", "a-dod")):
+            coop = org("Co-op", democracy_focus="partial", events=[ev(5, "Coop copy", url=url)])
+            dod = org("DOD", events=[ev(5, "DOD copy", url=url)])
+            orgs = sorted([(first, coop), (second, dod)])
+            items = ne.collect_news(orgs, TODAY)
+            self.assertEqual(len(items), 1)
+            self.assertEqual(items[0]["title"], "DOD copy")
+            self.assertEqual(sorted(o["title"] for o in items[0]["orgs"]), ["Co-op", "DOD"])
+
+    def test_off_topic_event_alone_creates_nothing(self):
+        coop = org("Co-op", democracy_focus="partial",
+                   events=[ev(5, "Coop only", url="https://x.example/1")])
+        self.assertEqual(self.titles([("coop", coop)]), [])
+
+
 class GuidTests(unittest.TestCase):
 
     def guid(self, orgs):

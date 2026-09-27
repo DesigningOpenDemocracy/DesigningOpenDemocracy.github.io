@@ -1,6 +1,7 @@
 ---
 title: FLACSO-Cuba
 type: research
+democracy_focus: partial
 status: active
 country: CU
 website: https://flacso.org/pa%C3%ADs/cuba

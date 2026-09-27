@@ -1,6 +1,7 @@
 ---
 title: Bank Australia
 type: cooperative
+democracy_focus: partial
 status: active
 country: AU
 website: https://www.bankaust.com.au

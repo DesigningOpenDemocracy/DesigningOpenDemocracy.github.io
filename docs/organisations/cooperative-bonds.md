@@ -1,6 +1,7 @@
 ---
 title: Co-operative Bonds
 type: practice
+democracy_focus: partial
 status: active
 country: AU
 website: https://bonds.coop
@@ -54,6 +55,7 @@ events:
   url_checked: '2026-08-29'
   notable: medium
   notable_reason: Case study on a notable community-ownership financing model
+  democracy_related: false
   type: milestone
 activity:
   dod:

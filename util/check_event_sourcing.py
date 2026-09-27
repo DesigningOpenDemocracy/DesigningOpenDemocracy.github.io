@@ -25,6 +25,7 @@ Requirements: python-frontmatter, pyyaml (util/requirements.txt)
 
 import argparse
 import glob
+import importlib.util
 import os
 import sys
 from datetime import date, datetime
@@ -41,6 +42,17 @@ from reorder_frontmatter import reorder_frontmatter as _canonical_reorder  # noq
 
 DOCS_DIR = os.path.join(os.path.dirname(__file__), "..", "docs")
 ORGS_DIR = os.path.join(DOCS_DIR, "organisations")
+
+
+def _news_window_days():
+    """Landscape News' window, read from hooks/news_export.py rather than
+    copied, so the NEWS UNDECIDED check can't drift from what the page
+    actually shows."""
+    path = os.path.join(os.path.dirname(__file__), "..", "hooks", "news_export.py")
+    spec = importlib.util.spec_from_file_location("news_export", path)
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module.NEWS_WINDOW_DAYS
 SKIP_FILES = {"index.md"}
 MIN_SOURCE_LENGTH = 20
 STALE_CHECK_DAYS = 365
@@ -225,15 +237,31 @@ def main():
     weak_url = 0
     no_proof = 0
     notable_soft = 0
+    bad_topic = 0
+    news_undecided = 0
     mismatched_proof_level = 0
     stale_checked = 0
     total = 0
     has_issues = False
+    news_window_days = _news_window_days()
     proof_counts = {"high": 0, "medium": 0, "low": 0}
     calculated = 0
 
     for p in pages:
         events = p["events"]
+
+        # Landscape News topic gate (see hooks/news_export.py's
+        # is_democracy_news). A misspelt value would silently read as a
+        # democracy-focused org and let its off-topic events back into the
+        # news, so anything but the one valid value fails.
+        focus = p["post"].metadata.get("democracy_focus")
+        partial = focus == "partial"
+        if focus is not None and not partial:
+            bad_topic += 1
+            has_issues = True
+            print(f"  BAD DEMOCRACY_FOCUS {p['title']}  democracy_focus: {focus!r} "
+                  f"(the only value is \"partial\"; omit it for a democracy-focused org)")
+
         if not events:
             no_events.append(p["title"])
             continue
@@ -314,6 +342,25 @@ def main():
                 has_issues = True
                 print(f"  NO PROOF        {p['title']}  [{e.get('date','?')}]  {e.get('title','?')}")
 
+            related = e.get("democracy_related")
+            if "democracy_related" in e and not isinstance(related, bool):
+                bad_topic += 1
+                has_issues = True
+                print(f"  BAD DEMOCRACY_RELATED {p['title']}  [{e.get('date','?')}]  "
+                      f"{e.get('title','?')}  (must be true or false, got {related!r})")
+            # Soft: a partial-focus org's notable event stays out of Landscape
+            # News until someone decides. Surfaced so that's a choice, not an
+            # accident; democracy_related: false records "decided, not news".
+            # Only for events that can still reach the page (inside its window,
+            # or upcoming): a 1957 founding will never be news either way.
+            event_day = parse_date(e.get("date"))
+            could_be_news = event_day is not None and (date.today() - event_day).days <= news_window_days
+            if partial and e.get("notable") and "democracy_related" not in e and could_be_news:
+                news_undecided += 1
+                print(f"  NEWS UNDECIDED  {p['title']}  [{e.get('date','?')}]  {e.get('title','?')}")
+                print(f"                   democracy_focus: partial, so this stays out of Landscape "
+                      f"News until marked democracy_related: true (or false to confirm)")
+
             # Soft warning: notable events should have mechanical proof (quote),
             # not just a note. proof_warning also counts as a gap — notable + override = flagged.
             if e.get("notable") and not has_quote:
@@ -348,6 +395,11 @@ def main():
         print(f"Events lacking proof (no quote, note, or proof_warning): {no_proof}")
     if notable_soft:
         print(f"Notable events without mechanical proof (no quote): {notable_soft}")
+    if news_undecided:
+        print(f"Notable events from partial-focus orgs with no democracy_related decision "
+              f"(kept out of Landscape News): {news_undecided}")
+    if bad_topic:
+        print(f"Invalid democracy_focus / democracy_related values: {bad_topic}")
     if weak_url:
         print(f"Weak URLs (homepage or generic list page, e.g. /events/): {weak_url}")
     if vague_source:
@@ -360,7 +412,10 @@ def main():
         print(f"Active orgs with {THIN_HISTORY_MAX_EVENTS} or fewer events (thin history, info only): {len(thin_history)}")
 
     if has_issues:
-        print(f"\n{no_proof} event(s) need evidence (quote, note, or proof_warning). Add one to each.")
+        if no_proof:
+            print(f"\n{no_proof} event(s) need evidence (quote, note, or proof_warning). Add one to each.")
+        if bad_topic:
+            print(f"\n{bad_topic} invalid democracy_focus/democracy_related value(s) — see BAD lines above.")
         sys.exit(1)
     else:
         print("All events have a url: or source:.")

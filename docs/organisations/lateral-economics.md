@@ -1,6 +1,7 @@
 ---
 title: Lateral Economics
 type: research
+democracy_focus: partial
 status: active
 country: AU
 website: https://www.lateraleconomics.com.au

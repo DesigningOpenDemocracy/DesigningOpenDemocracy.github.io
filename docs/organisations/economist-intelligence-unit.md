@@ -1,6 +1,7 @@
 ---
 title: Economist Intelligence Unit (EIU)
 type: research
+democracy_focus: partial
 status: active
 country: GB
 website: https://www.eiu.com
@@ -42,6 +43,7 @@ events:
   url_checked: '2026-09-16'
   notable: medium
   notable_reason: Flagship annual Democracy Index release
+  democracy_related: true
 activity:
   dod:
     checked: '2026-09-16'

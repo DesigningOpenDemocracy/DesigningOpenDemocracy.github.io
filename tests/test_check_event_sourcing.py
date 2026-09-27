@@ -17,6 +17,7 @@ monkeypatched, so the real docs/ tree is never touched. Run with:
 
 import contextlib
 import io
+from datetime import date, timedelta
 import os
 import sys
 import tempfile
@@ -119,6 +120,69 @@ class ThinHistoryReportTests(unittest.TestCase):
                       events_yaml=ONE_EVENT + SECOND_EVENT)
             out, _ = self.run_main(tmp)
         self.assertIn("thin history, info only): 2", out)
+
+
+class NewsTopicGateTests(unittest.TestCase):
+    """democracy_focus / democracy_related, the Landscape News topic gate
+    (hooks/news_export.py's is_democracy_news). A misspelt value would read
+    as a democracy-focused org and let off-topic events into the news, so
+    invalid values fail; an undecided event that could still reach the page
+    is surfaced."""
+
+    run_main = ThinHistoryReportTests.run_main
+
+    def write(self, tmp, focus_line="", events_yaml=ONE_EVENT):
+        path = write_org(tmp, "some-org", events_yaml=events_yaml)
+        with open(path, encoding="utf-8") as f:
+            text = f.read()
+        if focus_line:
+            text = text.replace("type: ngo\n", "type: ngo\n" + focus_line + "\n", 1)
+        with open(path, "w", encoding="utf-8") as f:
+            f.write(text)
+
+    def recent(self, extra=""):
+        d = (date.today() - timedelta(days=30)).isoformat()
+        return (f"- date: '{d}'\n  title: Recent notable thing\n"
+                f"  url: https://example.org/recent\n  note: The site says so.\n"
+                f"  notable: true\n{extra}")
+
+    def test_misspelt_focus_fails(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            self.write(tmp, "democracy_focus: partail")
+            out, code = self.run_main(tmp)
+        self.assertIn("BAD DEMOCRACY_FOCUS", out)
+        self.assertEqual(code, 1)
+
+    def test_non_boolean_related_fails(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            self.write(tmp, "democracy_focus: partial",
+                       events_yaml=self.recent("  democracy_related: 'yes'\n"))
+            out, code = self.run_main(tmp)
+        self.assertIn("BAD DEMOCRACY_RELATED", out)
+        self.assertEqual(code, 1)
+
+    def test_recent_undecided_event_is_surfaced_not_failed(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            self.write(tmp, "democracy_focus: partial", events_yaml=self.recent())
+            out, code = self.run_main(tmp)
+        self.assertIn("NEWS UNDECIDED", out)
+        self.assertEqual(code, 0)
+
+    def test_a_decision_either_way_silences_it(self):
+        for value in ("true", "false"):
+            with tempfile.TemporaryDirectory() as tmp:
+                self.write(tmp, "democracy_focus: partial",
+                           events_yaml=self.recent(f"  democracy_related: {value}\n"))
+                out, code = self.run_main(tmp)
+            self.assertNotIn("NEWS UNDECIDED", out, value)
+            self.assertEqual(code, 0)
+
+    def test_history_outside_the_window_is_not_nagged(self):
+        old = ONE_EVENT + "  notable: true\n"   # dated 2020 — never news again
+        with tempfile.TemporaryDirectory() as tmp:
+            self.write(tmp, "democracy_focus: partial", events_yaml=old)
+            out, _ = self.run_main(tmp)
+        self.assertNotIn("NEWS UNDECIDED", out)
 
 
 if __name__ == "__main__":

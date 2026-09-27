@@ -1,6 +1,7 @@
 ---
 title: Sitra
 type: foundation
+democracy_focus: partial
 status: active
 country: FI
 website: https://www.sitra.fi/en/

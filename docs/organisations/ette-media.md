@@ -1,6 +1,7 @@
 ---
 title: Ette Media
 type: media
+democracy_focus: partial
 status: active
 country: AU
 website: https://www.ettemedia.com/
@@ -44,6 +45,7 @@ events:
   url_checked: '2026-08-29'
   notable: medium
   notable_reason: Audience growth and live tour milestone
+  democracy_related: false
   type: milestone
 activity:
   dod:

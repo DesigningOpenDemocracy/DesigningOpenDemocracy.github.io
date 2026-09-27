@@ -1,6 +1,7 @@
 ---
 title: Australian Greens
 type: party
+democracy_focus: partial
 status: active
 country: AU
 website: https://greens.org.au

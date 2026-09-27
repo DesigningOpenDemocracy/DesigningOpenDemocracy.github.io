@@ -1,6 +1,7 @@
 ---
 title: ITS Rio
 type: research
+democracy_focus: partial
 status: active
 country: BR
 website: https://itsrio.org

@@ -1,6 +1,7 @@
 ---
 title: Espacio Público
 type: think-tank
+democracy_focus: partial
 status: active
 country: CL
 website: https://www.espaciopublico.cl
@@ -39,6 +40,7 @@ events:
   url_checked: '2026-08-29'
   notable: medium
   notable_reason: International peer recognition
+  democracy_related: false
   type: recognition
 - date: '2026-08-20'
   title: Book launch 'Los dueños de la libertad' by Soledad Vallejos — Santiago

@@ -1,6 +1,7 @@
 ---
 title: The Australia Institute — Democracy & Accountability Program
 type: research
+democracy_focus: partial
 status: active
 country: AU
 website: https://australiainstitute.org.au/about/structure/democracy-accountability/
@@ -48,6 +49,7 @@ events:
   url_checked: '2026-08-20'
   notable: true
   notable_reason: Flagship conference/summit
+  democracy_related: false
   type: conference
   location: Parliament of NSW, Sydney
 activity:

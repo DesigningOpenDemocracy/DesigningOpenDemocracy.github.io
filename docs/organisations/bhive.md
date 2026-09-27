@@ -1,6 +1,7 @@
 ---
 title: bHive
 type: cooperative
+democracy_focus: partial
 status: inactive
 country: AU
 website: https://web.archive.org/web/*/https://bhive.coop

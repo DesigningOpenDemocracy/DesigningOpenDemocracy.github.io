@@ -1,6 +1,7 @@
 ---
 title: Lamestream
 type: media
+democracy_focus: partial
 status: active
 country: AU
 website: https://www.lamestream.com.au/
@@ -46,6 +47,7 @@ events:
   url_checked: '2026-08-29'
   notable: true
   notable_reason: Original investigative journalism naming a former PM
+  democracy_related: false
   type: publication
 activity:
   dod:

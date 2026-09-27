@@ -1,6 +1,7 @@
 ---
 title: SoCentral
 type: foundation
+democracy_focus: partial
 status: active
 country: 'NO'
 website: https://www.socentral.no
@@ -35,6 +36,7 @@ events:
   end_date: '2026-08-13'
   notable: true
   notable_reason: Flagship conference/summit
+  democracy_related: false
   type: conference
   location: Arendal, Norway
   country: 'NO'

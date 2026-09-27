@@ -1,6 +1,7 @@
 ---
 title: Your Party
 type: party
+democracy_focus: partial
 status: active
 country: GB
 website: https://www.yourparty.uk
@@ -49,6 +50,7 @@ events:
   end_date: '2025-11-30'
   notable: true
   notable_reason: Founding conference using novel sortition-based delegate selection
+  democracy_related: true
   type: conference
 activity:
   dod:
