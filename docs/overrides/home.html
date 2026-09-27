@@ -265,6 +265,7 @@ document.addEventListener("DOMContentLoaded", function() {
   }
   var orgMarkers = new L.MarkerClusterGroup();
   var orgMarkersByCategory = {};
+  var orgMarkerBySlug = {};
 
   // The same one event the Democracy Landscape index's quick-profile card
   // shows (select_highlight() in hooks/org_events.py): the soonest upcoming
@@ -325,15 +326,19 @@ document.addEventListener("DOMContentLoaded", function() {
     var marker = L.marker(latLng, { icon: makeOrgIcon(o.typeIcon, o.logo, o.approximate, o.logoBg) });
     marker.bindPopup(function () { return orgPopup(o); }, POPUP_OPTIONS);
     (orgMarkersByCategory[o.category] = orgMarkersByCategory[o.category] || []).push(marker);
+    orgMarkerBySlug[o.slug] = marker;
   }
 
   {%- for file in pages %}
-    {%- if file.page and file.page.meta.location and file.page.meta.location.latitude and file.page.meta.location.longitude and file.page.url.startswith('organisations/') and file.page.meta.status == 'active' %}
+    {#- The inclusion rule is hooks/democracy_map.py's, shared with the
+        "Show on map" links on org pages and the Landscape index. -#}
+    {%- if file.page and file.page.url.startswith('organisations/') and file.page.meta is on_democracy_map %}
     {%- set loc = file.page.meta.location %}
     {%- set slug = file.page.file.src_path | replace('organisations/', '') | replace('.md', '') %}
     {%- set hl = org_event_highlight.get(slug) %}
     {%- set website = file.page.meta.website or '' %}
   addOrg({{ {
+    'slug': slug,
     'url': '/' ~ file.page.url,
     'title': file.page.title,
     'type': file.page.meta.type or '',
@@ -491,8 +496,24 @@ document.addEventListener("DOMContentLoaded", function() {
   };
   typeFilter.addTo(map);
 
+  // Deep link from an org page or the Landscape index's quick-profile card
+  // (hooks/democracy_map.py): /?org=<slug> brings the map into view, zooms
+  // to that organisation — out of its cluster if need be — and opens its
+  // card. It replaces the fit-everything view rather than following it:
+  // that fitBounds animates, and one still in flight finishes after the zoom
+  // here and undoes it. An unknown slug just gets the usual view.
+  var focusSlug = new URLSearchParams(window.location.search).get('org');
+  var focusMarker = focusSlug && orgMarkerBySlug[focusSlug];
   var allLayers = myFGMarker.getLayers().concat(orgMarkers.getLayers());
-  if (allLayers.length > 0) {
+  if (focusMarker) {
+    mapWrapper.scrollIntoView({ block: 'center' });
+    orgMarkers.zoomToShowLayer(focusMarker, function () {
+      // An org with no near neighbours is already unclustered at the world
+      // view, so nothing above zoomed in; get close enough to read the region.
+      if (map.getZoom() < 6) map.setView(focusMarker.getLatLng(), 6, { animate: false });
+      focusMarker.openPopup();
+    });
+  } else if (allLayers.length > 0) {
     map.fitBounds(L.featureGroup(allLayers).getBounds(), {padding: [50, 50]});
   }
 });
