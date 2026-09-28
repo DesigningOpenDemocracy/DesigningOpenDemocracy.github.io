@@ -1,6 +1,7 @@
 {
   "feed": "https://kongra-star.org/?feed=rss2",
   "latest": "2026-09-28",
+  "span_days": 14,
   "items": [
     {
       "date": "2026-09-28",

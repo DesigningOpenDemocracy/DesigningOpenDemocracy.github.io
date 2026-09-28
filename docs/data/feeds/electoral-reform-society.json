@@ -1,6 +1,7 @@
 {
   "feed": "https://www.electoral-reform.org.uk/feed/",
   "latest": "2026-09-10",
+  "span_days": 52,
   "items": [
     {
       "date": "2026-09-10",

@@ -1,6 +1,7 @@
 {
   "feed": "https://www.openaustraliafoundation.org.au/feed",
   "latest": "2026-08-13",
+  "span_days": 51,
   "items": [
     {
       "date": "2026-08-13",

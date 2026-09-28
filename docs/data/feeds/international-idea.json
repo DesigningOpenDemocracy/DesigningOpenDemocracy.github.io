@@ -1,6 +1,7 @@
 {
   "feed": "https://www.idea.int/rss.xml",
   "latest": "2026-09-24",
+  "span_days": 164,
   "items": [
     {
       "date": "2026-09-24",

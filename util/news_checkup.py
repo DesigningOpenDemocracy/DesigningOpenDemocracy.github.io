@@ -71,9 +71,11 @@ SKIP_FILES = {"index.md"}
 # to catch what's current without the first checkup being a wall of posts.
 DEFAULT_DAYS = 30
 
-# A feed the weekly probe hasn't read for this long is flagged: its cache is
-# going stale, so "no new posts" may just mean "not read lately".
-STALE_READ_DAYS = 21
+# A feed the probe hasn't read for this long is flagged: its cache is going
+# stale, so "no new posts" may just mean "not read lately". Feeds are read
+# monthly (see check_rss.py's FEED_RECHECK_DAYS), so this is a month plus two
+# weekly runs of slack. Dormant feeds, read quarterly, aren't flagged.
+STALE_READ_DAYS = 45
 
 # A feed whose newest post is older than this is listed as dormant, which is
 # worth a look at the org's status: it may have moved its posts elsewhere,
@@ -321,9 +323,9 @@ def render_markdown(report):
         out.append("")
 
     if report["quiet"]:
-        stale = [s for s in report["quiet"] if s["stale"]]
         dormant = [s for s in report["quiet"] if (today - s["latest"]).days > DORMANT_DAYS]
         active = [s for s in report["quiet"] if s not in dormant]
+        stale = [s for s in active if s["stale"]]
         out += ["## Quiet", ""]
         if active:
             out += ["No new posts: " + ", ".join(

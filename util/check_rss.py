@@ -60,19 +60,33 @@ TODAY = datetime.today().strftime("%Y-%m-%d")
 # last read (activity.<method>.checked), and an org is skipped while that's
 # under the interval; --force overrides all of it.
 #
-# RECHECK_DAYS: an org with a live feed. Strictly less-than on purpose: the
-# weekly cron fires exactly 7 days after the run that stamped `checked:`,
-# and a `<= 7` here skipped every org on alternate weeks, so feeds were
-# really read fortnightly (the 2026-09-18 run touched 4 org pages; the runs
-# either side, 139). A scheduled run can start late but never early, so the
-# next one sees an age of at least 7 unless this one was delayed past
-# midnight UTC (it's scheduled for 03:00).
+# FEED_RECHECK_DAYS: an org with a live feed, by default. Most orgs in the
+# landscape post a few times a month at most: of the 22 feeds with posts in
+# the six months to 2026-09-28, 20 listed more than a month of posts at
+# once, so a monthly read misses nothing.
+FEED_RECHECK_DAYS = 28
+# RECHECK_DAYS: a feed that turns over faster than that, whose listed posts
+# (at least BUSY_MIN_POSTS of them) span under BUSY_SPAN_DAYS, is read
+# weekly, or posts would drop off it between reads: Afrobarometer listed 10
+# posts in 10 days, Kongra Star 10 in 14. Judged from the feed's own last
+# read (`span_days` in its state file), so it adjusts as an org gets busier
+# or quieter. Also the interval for ics_feed: activity reads.
+#
+# Strictly less-than on purpose: the weekly cron fires exactly 7 days after
+# the run that stamped `checked:`, and a `<= 7` here skipped every org on
+# alternate weeks, so feeds were really read fortnightly (the 2026-09-18 run
+# touched 4 org pages; the runs either side, 139). A scheduled run can start
+# late but never early, so the next one sees an age of at least 7 unless
+# this one was delayed past midnight UTC (it's scheduled for 03:00). The
+# same holds for 28: a monthly read lands on every fourth weekly run.
 RECHECK_DAYS = 7
+BUSY_SPAN_DAYS = 35
+BUSY_MIN_POSTS = 5
 # A feed whose newest post is older than DORMANT_FEED_DAYS, or that lists no
-# posts at all, is read monthly instead: weekly reads of a feed that last
-# changed in 2019 are just traffic.
+# posts at all, is read quarterly: monthly reads of a feed that last changed
+# in 2019 are just traffic, and a quarter is soon enough to notice it's back.
 DORMANT_FEED_DAYS = 180
-DORMANT_RECHECK_DAYS = 28
+DORMANT_RECHECK_DAYS = 90
 # An org with no feed: the 23-path discovery probe (plus robots.txt and
 # sitemap guesses) runs at most this often, spread per org by
 # backoff.spread_days() so a batch probed on one day doesn't all fall due
@@ -487,6 +501,10 @@ def merge_feed_items(existing, entries, today, keep_days=None, max_items=None):
 #   latest   newest post the feed listed on its last successful read, even
 #            one old enough to be pruned from `items`; null when it listed
 #            nothing. How the checkup tells a dormant feed from an empty one.
+#   span_days  days between the oldest and newest post the feed listed on
+#            that read, when it listed at least BUSY_MIN_POSTS. How
+#            feed_due() tells a feed that turns over within a month (read
+#            weekly) from the usual kind (read monthly).
 #   items    recent posts, [{date, title, url}] (see merge_feed_items)
 #   fetch    {etag, last_modified} from the last successful read, sent back
 #            as a conditional GET
@@ -501,7 +519,7 @@ def merge_feed_items(existing, entries, today, keep_days=None, max_items=None):
 # pass. One file per org rather than one shared file, so a local run and the
 # cron rarely touch the same file.
 
-_STATE_KEYS = ("feed", "latest", "items", "fetch", "failing", "probed", "sitemap")
+_STATE_KEYS = ("feed", "latest", "span_days", "items", "fetch", "failing", "probed", "sitemap")
 
 
 def _as_date(value):
@@ -547,6 +565,11 @@ def save_feed_items(slug, feed_url, entries, today=None, feeds_dir=None, validat
     latest = max((e["published"] for e in entries), default=None)
     state["feed"] = feed_url
     state["latest"] = latest.isoformat() if latest else None
+    if len(entries) >= BUSY_MIN_POSTS:
+        published = [e["published"] for e in entries]
+        state["span_days"] = (max(published) - min(published)).days
+    else:
+        state.pop("span_days", None)
     state["items"] = merge_feed_items(state.get("items"), entries, today)
     if validators:
         state["fetch"] = dict(validators)
@@ -589,19 +612,23 @@ def record_discovery(slug, sitemap_url, today=None, feeds_dir=None):
 
 def feed_due(state, rss_checked, today):
     """(due, why) for an org with a feed. A failing feed waits out its
-    backoff; otherwise the feed is read weekly, or monthly once it's dormant
-    or empty (see DORMANT_FEED_DAYS)."""
+    backoff. Otherwise a feed is read monthly; weekly if it turns over
+    within BUSY_SPAN_DAYS, and quarterly once it's dormant or empty (see the
+    constants at the top of this file)."""
     failing = state.get("failing")
     if failing:
         if backoff.backing_off(failing, today):
             return False, (f"failing ({failing.get('error')}) since {failing.get('since')}, "
                            f"next try {backoff.next_try(failing)}")
         return True, f"retrying, failing since {failing.get('since')}"
-    interval = RECHECK_DAYS
+    interval = FEED_RECHECK_DAYS
     if "latest" in state:
         latest = _as_date(state["latest"])
+        span = state.get("span_days")
         if latest is None or (today - latest).days > DORMANT_FEED_DAYS:
             interval = DORMANT_RECHECK_DAYS
+        elif isinstance(span, int) and span < BUSY_SPAN_DAYS:
+            interval = RECHECK_DAYS
     checked = _as_date(rss_checked)
     if checked and (today - checked).days < interval:
         return False, f"checked {(today - checked).days}d ago"
@@ -975,10 +1002,11 @@ def main():
         feed_url = org["rss_feed"]
         sitemap_url = None
 
-        # Is this org due? A feed is read weekly (monthly once dormant) and a
-        # failing one waits out its backoff; an org with no feed is probed at
-        # most every FEED_REPROBE_DAYS and otherwise only has its known
-        # sitemap read. See feed_due() / discovery_action().
+        # Is this org due? A feed is read monthly (weekly if it turns over
+        # faster, quarterly once dormant) and a failing one waits out its
+        # backoff; an org with no feed is probed at most every
+        # FEED_REPROBE_DAYS and otherwise only has its known sitemap read.
+        # See feed_due() / discovery_action().
         if args.update_activity and not args.force:
             if feed_url:
                 due, why = feed_due(state, (activity.get("rss") or {}).get("checked"), today)

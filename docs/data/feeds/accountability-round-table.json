@@ -1,6 +1,7 @@
 {
   "feed": "http://accountabilityrt.org/feed",
   "latest": "2026-07-28",
+  "span_days": 109,
   "items": [
     {
       "date": "2026-07-28",

@@ -1,6 +1,7 @@
 {
   "feed": "https://www.afrobarometer.org/feed",
   "latest": "2026-09-25",
+  "span_days": 10,
   "items": [
     {
       "date": "2026-09-25",

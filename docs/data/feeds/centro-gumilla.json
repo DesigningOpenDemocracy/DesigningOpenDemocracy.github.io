@@ -1,6 +1,7 @@
 {
   "feed": "https://gumilla.org/feed",
   "latest": "2026-08-21",
+  "span_days": 98,
   "items": [
     {
       "date": "2026-08-21",

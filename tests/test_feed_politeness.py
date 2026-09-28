@@ -13,7 +13,11 @@ What's pinned, and why each is worth pinning rather than eyeballing:
   - A feed body over the cap is abandoned, not downloaded in full: the
     landscape had a 22 MB malformed feed read in full every week.
   - "Not XML" (a failure, backed off) is told apart from "valid but empty"
-    (a feed, read monthly).
+    (a feed, read quarterly).
+  - Feeds are read monthly; weekly only when a feed turns over within about
+    five weeks (posts would otherwise drop off it between reads), and
+    quarterly once dormant or empty. Most orgs post a few times a month at
+    most, so weekly reads of every feed were mostly redundant.
   - An org with no feed is probed at most every FEED_REPROBE_DAYS (spread
     per org), with only its known sitemap read in between. Until
     2026-09-28 discovery re-ran 23 paths for every such org on every run.
@@ -186,16 +190,34 @@ class FeedStateTests(unittest.TestCase):
 
 
 class ScheduleTests(unittest.TestCase):
-    def test_weekly_is_strictly_less_than_seven(self):
-        state = {"latest": "2026-09-20"}
+    def test_usual_feed_is_read_monthly(self):
+        state = {"latest": "2026-09-20", "span_days": 120}
+        self.assertFalse(cr.feed_due(state, "2026-09-01", TODAY)[0])  # 27 days
+        self.assertTrue(cr.feed_due(state, "2026-08-31", TODAY)[0])   # 28: every fourth weekly run
+
+    def test_feed_with_too_few_posts_to_judge_is_read_monthly(self):
+        self.assertFalse(cr.feed_due({"latest": "2026-09-20"}, "2026-09-14", TODAY)[0])
+
+    def test_busy_feed_is_read_weekly_strictly_less_than_seven(self):
+        state = {"latest": "2026-09-25", "span_days": 10}
         self.assertFalse(cr.feed_due(state, "2026-09-22", TODAY)[0])  # 6 days
         self.assertTrue(cr.feed_due(state, "2026-09-21", TODAY)[0])   # 7 days: the next weekly run
 
-    def test_dormant_and_empty_feeds_are_read_monthly(self):
+    def test_dormant_and_empty_feeds_are_read_quarterly(self):
+        # A dormant feed isn't busy, whatever its old posts' spacing was.
         for latest in ("2019-06-26", None):
-            state = {"latest": latest}
-            self.assertFalse(cr.feed_due(state, "2026-09-14", TODAY)[0])  # 14 days
-            self.assertTrue(cr.feed_due(state, "2026-08-31", TODAY)[0])   # 28 days
+            state = {"latest": latest, "span_days": 3}
+            self.assertFalse(cr.feed_due(state, "2026-07-01", TODAY)[0])  # 89 days
+            self.assertTrue(cr.feed_due(state, "2026-06-30", TODAY)[0])   # 90 days
+
+    def test_span_is_recorded_only_with_enough_posts(self):
+        with tempfile.TemporaryDirectory() as d:
+            posts = [{"date": date(2026, 9, n), "published": date(2026, 9, n),
+                      "title": f"p{n}", "link": f"https://ex.org/{n}"} for n in (10, 14, 18, 22, 25)]
+            cr.save_feed_items("busy", "u", posts, TODAY, d)
+            cr.save_feed_items("sparse", "u", posts[:4], TODAY, d)
+            self.assertEqual(cr.load_feed_state("busy", d)["span_days"], 15)
+            self.assertNotIn("span_days", cr.load_feed_state("sparse", d))
 
     def test_never_read_feed_is_due(self):
         self.assertTrue(cr.feed_due({}, None, TODAY)[0])

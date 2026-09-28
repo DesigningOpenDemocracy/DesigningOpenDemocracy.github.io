@@ -124,9 +124,10 @@ Reads each org's `rss_feed:` and writes `activity.rss` with the latest
 post date and title. For an org with no feed it tries 23 common feed paths,
 saves any feed it finds as `rss_feed:`, and otherwise falls back to
 `activity.sitemap`. Also writes `activity.*.checked` with today's date on
-every org read. Re-runs skip orgs that aren't due: a feed is read weekly (a
-dormant one monthly), a failing one waits out a widening backoff, and an org
-with no feed is only re-probed every couple of months. See CLAUDE.md's
+every org read. Re-runs skip orgs that aren't due: a feed is read monthly
+(weekly if it posts faster than that, quarterly once dormant), a failing one
+waits out a widening backoff, and an org with no feed is only re-probed every
+couple of months. See CLAUDE.md's
 "Request politeness" for the full schedule. Use `--force` to probe everything.
 
 **Scrape news pages** (orgs that have `news_page:` set):

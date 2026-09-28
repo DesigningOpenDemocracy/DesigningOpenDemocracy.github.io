@@ -1,6 +1,7 @@
 {
   "feed": "https://mqg.org.il/feed",
   "latest": "2026-09-22",
+  "span_days": 68,
   "items": [
     {
       "date": "2026-09-22",

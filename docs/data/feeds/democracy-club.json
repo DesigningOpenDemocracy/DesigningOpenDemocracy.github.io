@@ -1,6 +1,7 @@
 {
   "feed": "https://democracyclub.org.uk/blog/feed/",
   "latest": "2026-09-21",
+  "span_days": 136,
   "items": [
     {
       "date": "2026-09-21",

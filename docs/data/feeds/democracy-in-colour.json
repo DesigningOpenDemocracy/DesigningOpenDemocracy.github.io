@@ -1,6 +1,7 @@
 {
   "feed": "https://democracyincolour.org/feed",
   "latest": "2026-09-15",
+  "span_days": 153,
   "items": [
     {
       "date": "2026-09-15",

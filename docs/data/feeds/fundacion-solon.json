@@ -1,6 +1,7 @@
 {
   "feed": "https://fundacionsolon.org/feed",
   "latest": "2026-09-07",
+  "span_days": 33,
   "items": [
     {
       "date": "2026-09-07",
