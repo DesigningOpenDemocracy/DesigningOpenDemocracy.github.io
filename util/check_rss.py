@@ -32,6 +32,7 @@ from xml.etree import ElementTree as ET
 
 sys.path.insert(0, os.path.dirname(__file__))
 import backoff  # noqa: E402
+import news_signals  # noqa: E402
 from frontmatter_io import split_frontmatter, write_rss_feed  # noqa: E402
 from robots_check import load_robots, robots_allowed  # noqa: E402
 
@@ -481,11 +482,19 @@ def merge_feed_items(existing, entries, today, keep_days=None, max_items=None):
     posts: an org that publishes more than that between two reads would
     otherwise lose the middle ones before anyone reviewed them. A post the
     feed still lists wins over its stored copy, so a retitled post updates.
+
+    An entry's triage labels (`signals`, `routine`, `mentions`, set by
+    news_signals.annotate()) are kept when non-empty; its text never is.
     """
     keep_days = FEED_ITEMS_KEEP_DAYS if keep_days is None else keep_days
     max_items = FEED_ITEMS_MAX if max_items is None else max_items
-    fresh = [{"date": e["published"].isoformat(), "title": e["title"], "url": strip_tracking(e["link"])}
-             for e in entries]
+    fresh = []
+    for e in entries:
+        item = {"date": e["published"].isoformat(), "title": e["title"], "url": strip_tracking(e["link"])}
+        for key in ("signals", "routine", "mentions"):
+            if e.get(key):
+                item[key] = list(e[key])
+        fresh.append(item)
     merged = {}
     for item in list(existing or []) + fresh:
         merged[_feed_item_key(item)] = item
@@ -654,6 +663,7 @@ def discovery_action(slug, state, sitemap_checked, today):
 
 
 _DC_DATE = "{http://purl.org/dc/elements/1.1/}date"
+_CONTENT_ENCODED = "{http://purl.org/rss/1.0/modules/content/}encoded"
 
 
 def _atom_post_link(entry, ns):
@@ -672,12 +682,15 @@ def _atom_post_link(entry, ns):
 
 def parse_feed_entries(content):
     """Every dated item in an RSS 2.0 or Atom document, in feed order, as
-    dicts: date, published, title, link.
+    dicts: date, published, title, link, summary_html, body_html.
 
     `date` is what the activity check has always keyed on (Atom's <updated>
     before <published>). `published` is when the post first went out, where
     the feed says so separately; it's what a news checkup wants, since an
-    old post edited today isn't new. Undated items are dropped.
+    old post edited today isn't new. `summary_html`/`body_html` are the
+    feed's excerpt and full post (RSS <description>/<content:encoded>, Atom
+    <summary>/<content>), empty when absent. They're only read in memory, by
+    news_signals.annotate(), and never saved. Undated items are dropped.
     Returns [] for anything that doesn't parse as XML.
     """
     return _parse_feed(content) or []
@@ -705,7 +718,9 @@ def _parse_feed(content):
                 if guid.startswith(("http://", "https://")):
                     link = guid
             if d:
-                entries.append({"date": d, "published": d, "title": title, "link": link})
+                entries.append({"date": d, "published": d, "title": title, "link": link,
+                                "summary_html": item.findtext("description") or "",
+                                "body_html": item.findtext(_CONTENT_ENCODED) or ""})
     elif local == "feed":
         for entry in root.findall(f"{ns}entry"):
             title_el = entry.find(f"{ns}title")
@@ -714,8 +729,16 @@ def _parse_feed(content):
             d = parse_date(entry.findtext(f"{ns}updated")) or published
             if d:
                 entries.append({"date": d, "published": published or d, "title": title,
-                                "link": _atom_post_link(entry, ns)})
+                                "link": _atom_post_link(entry, ns),
+                                "summary_html": _element_text(entry.find(f"{ns}summary")),
+                                "body_html": _element_text(entry.find(f"{ns}content"))})
     return entries
+
+
+def _element_text(el):
+    """An Atom text construct's content: escaped HTML for type="html", the
+    text of its child elements for type="xhtml"."""
+    return "".join(el.itertext()) if el is not None else ""
 
 
 def update_activity_source(path, date_str, note, feed_url, post_url=None, method="rss"):
@@ -989,6 +1012,14 @@ def main():
     print(f"\nProbing {len(orgs)} org websites for feeds (timeout={args.timeout}s)…\n")
 
     today = date.today()
+    # Every org's name, for tagging posts that mention another Landscape org
+    # (news_signals.annotate), and which orgs share each feed, so a feed's own
+    # orgs don't count as mentions of themselves.
+    names = news_signals.landscape_names() if args.update_activity else []
+    feed_orgs = {}
+    for slug_, _forms, feed_ in names:
+        if feed_:
+            feed_orgs.setdefault(feed_, set()).add(slug_)
     for i, org in enumerate(orgs, 1):
         slug = org["slug"]
         prefix = f"  [{i:3d}/{len(orgs)}] {slug} … "
@@ -1092,6 +1123,7 @@ def main():
                 print("UNCHANGED (304)")
             elif res["status"] == "ok":
                 entries = res["entries"]
+                news_signals.annotate(entries, names, feed_orgs.get(feed_url, set()) | {slug})
                 save_feed_items(slug, feed_url, entries, today, validators=res["validators"])
                 d, title, link = latest_entry(entries)
                 if d:

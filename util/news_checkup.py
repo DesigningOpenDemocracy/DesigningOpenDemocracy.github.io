@@ -53,6 +53,7 @@ from urllib.parse import urlsplit
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import backoff  # noqa: E402
+import news_signals  # noqa: E402
 
 try:
     import frontmatter
@@ -76,6 +77,14 @@ DEFAULT_DAYS = 30
 # monthly (see check_rss.py's FEED_RECHECK_DAYS), so this is a month plus two
 # weekly runs of slack. Dormant feeds, read quarterly, aren't flagged.
 STALE_READ_DAYS = 45
+
+# A worth-a-look label on more than half of a feed's saved posts is that org's
+# usual output, not something that singles one post out: nearly every
+# Afrobarometer post is a survey "report". Such a label stays on the post's
+# line but doesn't earn it a place in "Start here". Judged over everything
+# saved for the feed (up to 180 days), which needs this many posts to mean
+# anything.
+USUAL_MIN_POSTS = 5
 
 # A feed whose newest post is older than this is listed as dormant, which is
 # worth a look at the org's status: it may have moved its posts elsewhere,
@@ -219,6 +228,7 @@ def checkup(orgs, recorded, state, today, load_items=load_feed_items,
         section = {"orgs": members, "feed": feed, "since": since, "read": read,
                    "latest": latest,
                    "stale": read is None or (today - read).days >= STALE_READ_DAYS,
+                   "usual": usual_labels(list(items.values())),
                    "items": new}
         if new:
             report["feeds"].append(section)
@@ -270,6 +280,59 @@ def mark_reviewed(state, report):
     return marked
 
 
+def triage(item):
+    """(worth_a_look, likely_routine, mentions) for one saved post: the labels
+    check_rss.py stored when it read the post (from its title, opening lines
+    and full text), plus title-only labels recomputed now, which covers posts
+    saved before signals existed and picks up keyword changes without a
+    re-read. See util/news_signals.py."""
+    worth, routine = news_signals.signals(item.get("title"))
+    return (sorted(set(worth) | set(item.get("signals") or [])),
+            sorted(set(routine) | set(item.get("routine") or [])),
+            sorted(item.get("mentions") or []))
+
+
+def usual_labels(items):
+    """Worth-a-look labels on more than half of a feed's saved posts (see
+    USUAL_MIN_POSTS)."""
+    if len(items) < USUAL_MIN_POSTS:
+        return set()
+    counts = {}
+    for item in items:
+        for label in triage(item)[0]:
+            counts[label] = counts.get(label, 0) + 1
+    return {label for label, n in counts.items() if n * 2 > len(items)}
+
+
+def start_here(report):
+    """Posts with a worth-a-look signal (other than the feed's usual output)
+    or a mention of another Landscape org, and no routine signal, most
+    signals first, then newest. A pointer into the per-org lists, which
+    still show every post."""
+    picks = []
+    for s in report["feeds"]:
+        usual = s.get("usual") or set()
+        for item in s["items"]:
+            worth, routine, named = triage(item)
+            worth = [w for w in worth if w not in usual]
+            if (worth or named) and not routine:
+                picks.append((s, item, worth, named))
+    picks.sort(key=lambda p: (-(len(p[2]) + len(p[3])), -p[1]["date"].toordinal(),
+                              p[0]["orgs"][0]["title"].lower()))
+    return picks
+
+
+def _tags(worth, routine, named):
+    parts = []
+    if worth:
+        parts.append(", ".join(worth))
+    if named:
+        parts.append("mentions " + ", ".join(named))
+    if routine:
+        parts.append("likely routine: " + ", ".join(routine))
+    return (" · " + " · ".join(parts)) if parts else ""
+
+
 def _md_text(text):
     return " ".join(str(text or "").split()).replace("[", "\\[").replace("]", "\\]")
 
@@ -281,6 +344,8 @@ def _org_names(orgs):
 def render_markdown(report):
     today = report["today"]
     n_items = sum(len(s["items"]) for s in report["feeds"])
+    picks = start_here(report)
+    n_routine = sum(1 for s in report["feeds"] for i in s["items"] if triage(i)[1])
     out = [
         f"# Landscape news checkup — {today.isoformat()}",
         "",
@@ -300,16 +365,36 @@ def render_markdown(report):
         "",
     ]
 
+    if picks:
+        out += ["## Start here", "",
+                f"{len(picks)} of the {n_items} posts {'carries' if len(picks) == 1 else 'carry'} "
+                "a worth-a-look signal (beyond their feed's usual output) or name another "
+                f"Landscape org; {n_routine} {'looks' if n_routine == 1 else 'look'} routine. "
+                "Signals are keyword matches on each "
+                "post's title and opening lines (see `util/news_signals.py`), a hint for where to "
+                "start rather than a verdict: a post with none can still be News, and posts in "
+                "languages the keyword lists don't cover mostly get none. Every post is still "
+                "listed under its org below.", ""]
+        for s, item, worth, named in picks:
+            title = _md_text(item.get("title")) or "(untitled)"
+            line = f"[{title}]({item['url']})" if item.get("url") else title
+            out.append(f"- {item['date'].isoformat()} · **{_md_text(_org_names(s['orgs']))}** · "
+                       f"{line}{_tags(worth, [], named)}")
+        out.append("")
+
     for s in report["feeds"]:
         pages = ", ".join(f"`docs/organisations/{o['slug']}.md`" for o in s["orgs"])
         read = s["read"].isoformat() if s["read"] else "never"
         warn = f" · ⚠ feed not read for {(today - s['read']).days} days" if s["stale"] and s["read"] else ""
         out += [f"## {_md_text(_org_names(s['orgs']))} — {len(s['items'])} since {s['since'].isoformat()}",
                 "", f"{pages} · feed read {read}{warn}", ""]
+        if s.get("usual"):
+            out += [f"Most of this feed's posts are tagged {', '.join(sorted(s['usual']))}: that's "
+                    "its usual output, so the tag alone doesn't put a post in Start here.", ""]
         for item in s["items"]:
             title = _md_text(item.get("title")) or "(untitled)"
             line = f"[{title}]({item['url']})" if item.get("url") else title
-            out.append(f"- {item['date'].isoformat()} — {line}")
+            out.append(f"- {item['date'].isoformat()} — {line}{_tags(*triage(item))}")
         out.append("")
 
     if report["pages"]:
