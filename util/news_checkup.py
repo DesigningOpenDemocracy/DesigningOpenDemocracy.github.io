@@ -16,7 +16,7 @@ the `notable:` bar into the org's `events:` by hand, with a `quote:` or
 Offline. It makes no network requests: the weekly probe
 (check_rss.py --update-activity, in .github/workflows/heartbeat-probes.yml)
 already downloads every feed, and saves each org's recent posts to
-docs/data/feed-items/<slug>.json while it's at it (dates, titles and links
+docs/data/feeds/<slug>.json while it's at it (dates, titles and links
 only). Reading that cache means a checkup never fetches a feed a second
 time, and works in a session with no network.
 
@@ -51,6 +51,9 @@ import sys
 from datetime import date, datetime, timedelta
 from urllib.parse import urlsplit
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import backoff  # noqa: E402
+
 try:
     import frontmatter
 except ImportError:
@@ -60,7 +63,7 @@ except ImportError:
 UTIL_DIR = os.path.dirname(os.path.abspath(__file__))
 DOCS_DIR = os.path.join(UTIL_DIR, "..", "docs")
 ORGS_DIR = os.path.join(DOCS_DIR, "organisations")
-FEED_ITEMS_DIR = os.path.join(DOCS_DIR, "data", "feed-items")
+FEEDS_DIR = os.path.join(DOCS_DIR, "data", "feeds")
 STATE_FILE = os.path.join(DOCS_DIR, "data", "news-checkup-state.json")
 SKIP_FILES = {"index.md"}
 
@@ -131,15 +134,18 @@ def load_orgs(orgs_dir=ORGS_DIR):
     return orgs, recorded
 
 
-def load_feed_items(slug, items_dir=FEED_ITEMS_DIR):
-    """One org's saved feed cache ({"latest", "items"}), or None if the probe
-    hasn't read its feed yet."""
-    path = os.path.join(items_dir, f"{slug}.json")
+def load_feed_items(slug, feeds_dir=FEEDS_DIR):
+    """What the probe has saved about one org's feed (see check_rss.py's
+    save_feed_items), or None if there's nothing yet. `read` is whether any
+    read has ever succeeded; `failing` is the backoff record while reads are
+    failing."""
+    path = os.path.join(feeds_dir, f"{slug}.json")
     if not os.path.exists(path):
         return None
     with open(path, encoding="utf-8") as f:
         data = json.load(f)
-    return {"latest": data.get("latest"), "items": data.get("items") or []}
+    return {"latest": data.get("latest"), "items": data.get("items") or [],
+            "failing": data.get("failing"), "read": "latest" in data}
 
 
 def load_state(path=STATE_FILE):
@@ -173,13 +179,18 @@ def checkup(orgs, recorded, state, today, load_items=load_feed_items,
         if org["rss_feed"]:
             groups.setdefault(org["rss_feed"], []).append(org)
 
-    report = {"today": today, "feeds": [], "quiet": [], "empty": [], "uncollected": [],
-              "pages": [], "recorded": 0, "uncovered": 0}
+    report = {"today": today, "feeds": [], "quiet": [], "empty": [], "failing": [],
+              "uncollected": [], "pages": [], "recorded": 0, "uncovered": 0}
 
     for feed, members in groups.items():
         since = min(since_for(o["slug"], state, default_since, since_override) for o in members)
         caches = [c for c in (load_items(o["slug"]) for o in members) if c is not None]
-        if not caches:
+        failing = next((c["failing"] for c in caches if c.get("failing")), None)
+        if failing:
+            # Posts saved from earlier reads are still gone through below, so
+            # a feed that breaks doesn't take its unreviewed posts with it.
+            report["failing"].append({"orgs": members, "feed": feed, "failing": failing})
+        elif not any(c.get("read", True) for c in caches):
             report["uncollected"].append({"orgs": members, "feed": feed})
             continue
         items = {}
@@ -187,10 +198,8 @@ def checkup(orgs, recorded, state, today, load_items=load_feed_items,
             for item in cache["items"]:
                 items.setdefault(item.get("url") or f"{item.get('date')}|{item.get('title')}", item)
         latest = max((d for d in (parse_date(c.get("latest")) for c in caches) if d), default=None)
-        if latest is None:
-            # Listed nothing on its last read. Posts saved from earlier reads
-            # are still gone through below, so a feed that breaks doesn't
-            # take its unreviewed posts with it.
+        if latest is None and not failing:
+            # Listed nothing on its last read.
             report["empty"].append({"orgs": members, "feed": feed})
         new, recorded_here = [], 0
         for item in items.values():
@@ -211,7 +220,7 @@ def checkup(orgs, recorded, state, today, load_items=load_feed_items,
                    "items": new}
         if new:
             report["feeds"].append(section)
-        elif latest is not None:
+        elif latest is not None and not failing:
             report["quiet"].append(section)
 
     for org in orgs:
@@ -336,10 +345,23 @@ def render_markdown(report):
                 "`rss_feed:` URL is still the right one: " + ", ".join(
                     f"`{o['slug']}`" for s in report["empty"] for o in s["orgs"]) + ".", ""]
 
+    if report["failing"]:
+        out += ["## Failing feeds", "",
+                "The probe couldn't read these. Each is retried on a widening interval "
+                "(7, 14, 28, 56, then every 90 days) rather than every week, and a success "
+                "clears it. One that keeps failing probably means the `rss_feed:` URL needs "
+                "updating or removing.", ""]
+        for s in sorted(report["failing"], key=lambda s: str(s["failing"].get("since"))):
+            f = s["failing"]
+            out.append(f"- `{'`, `'.join(o['slug'] for o in s['orgs'])}` — {f.get('error')} since "
+                       f"{f.get('since')}, {f.get('count')} failed read(s), next try "
+                       f"{backoff.next_try(f)} ({s['feed']})")
+        out.append("")
+
     if report["uncollected"]:
         out += ["## Not collected yet", "",
-                "`rss_feed:` is set but the probe hasn't read the feed successfully yet "
-                "(unreachable, blocked, or added since the last run). Retry with "
+                "`rss_feed:` is set but the probe hasn't read the feed yet (added since "
+                "the last run). Read it now with "
                 "`python util/check_rss.py --update-activity --force --slug <slug>`: " + ", ".join(
                     f"`{o['slug']}`" for s in report["uncollected"] for o in s["orgs"]) + ".", ""]
 

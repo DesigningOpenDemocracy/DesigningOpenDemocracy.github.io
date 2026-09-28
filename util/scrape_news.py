@@ -50,7 +50,7 @@ from html.parser import HTMLParser
 from urllib.parse import urlparse, urljoin
 
 sys.path.insert(0, os.path.dirname(__file__))
-from frontmatter_io import split_frontmatter  # noqa: E402
+from frontmatter_io import split_frontmatter, write_rss_feed  # noqa: E402
 from robots_check import robots_allowed as _robots_allowed  # noqa: E402
 
 # Matches /YYYY/MM/DD/ path segments — used as a low-priority date fallback
@@ -101,6 +101,12 @@ ORGS_DIR = os.path.join(DOCS_DIR, "organisations")
 SKIP_FILES = {"index.md"}
 WAYBACK_PREFIX = "https://web.archive.org"
 TODAY = datetime.today().strftime("%Y-%m-%d")
+
+# Pages whose last scrape failed this way are retried monthly, not weekly
+# (see the recency skip in main()). spa and bot_blocked are skipped until
+# --force regardless.
+SLOW_HINTS = {"unreachable", "no_markup"}
+SLOW_RECHECK_DAYS = 28
 USER_AGENT = "DOD-Bot/1.0 (+https://www.designingopendemocracy.com/bot/)"
 
 # Pages with fewer raw links than this are almost certainly JavaScript SPAs
@@ -664,31 +670,6 @@ def write_checked_only(path, method, note=None, hint=None):
     return True
 
 
-def write_rss_feed(path, feed_url):
-    """Write rss_feed: to org frontmatter if not already present.
-
-    Inserts after the website: line when present, otherwise before news_page:.
-    Returns False (no write) if rss_feed: already exists in the file.
-    """
-    with open(path, encoding="utf-8") as f:
-        content = f.read()
-    yaml_block, rest = split_frontmatter(content)
-    if yaml_block is None:
-        return False
-    if re.search(r'^rss_feed\s*:', yaml_block, re.MULTILINE):
-        return False
-    for pattern in (r'^(website\s*:.*\n)', r'^(news_page\s*:.*\n)'):
-        m = re.search(pattern, yaml_block, re.MULTILINE)
-        if m:
-            yaml_block = yaml_block[:m.end()] + f"rss_feed: {feed_url}\n" + yaml_block[m.end():]
-            break
-    else:
-        yaml_block = yaml_block.rstrip("\n") + f"\nrss_feed: {feed_url}\n"
-    with open(path, "w", encoding="utf-8") as f:
-        f.write("---" + yaml_block + "---" + rest)
-    return True
-
-
 def write_ics_feed(path, feed_url):
     """Write ics_feed: to org frontmatter if not already present.
 
@@ -805,12 +786,18 @@ def main():
             # Recency skip: checked within the last 6 days. Strictly less
             # than 7, since the weekly cron runs exactly 7 days after the run
             # that stamped `checked:` (see check_rss.py's RECHECK_DAYS, which
-            # had the same off-by-one: `<= 7` meant every other week).
+            # had the same off-by-one: `<= 7` meant every other week). A page
+            # that was unreachable, or loaded with nothing datable on it, is
+            # only retried monthly: asking weekly for a page that's gone, or
+            # that can't give an answer, is traffic with nothing to show.
             chk_date = parse_date(str(entry.get("checked", "") or ""))
             if chk_date:
                 age = (datetime.strptime(TODAY, "%Y-%m-%d").date() - chk_date).days
-                if age < 7:
-                    print(f"SKIPPED (checked {age}d ago)")
+                interval = SLOW_RECHECK_DAYS if existing_hint in SLOW_HINTS else 7
+                if age < interval:
+                    print(f"SKIPPED (checked {age}d ago"
+                          + (f", {existing_hint}: next try in {interval - age}d" if interval != 7 else "")
+                          + ")")
                     continue
 
         if not robots_allowed(url, timeout=args.timeout, session=session):

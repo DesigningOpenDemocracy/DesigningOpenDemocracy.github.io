@@ -22,5 +22,8 @@
       "title": "Nos infrastructures démocratiques ne peuvent pas être propriétaires : à propos de l'acquisition d'Open Source Politics",
       "url": "https://decidim.org/blog/2026-04-07-nos-infrastructures-democratiques-ne-peuvent-pas-etre-proprietaires-a-propos-de-l-acquisition-d-open-source-politics/"
     }
-  ]
+  ],
+  "fetch": {
+    "etag": "\"541eb6f5598b699eb98193eef95158c7-ssl-df\""
+  }
 }

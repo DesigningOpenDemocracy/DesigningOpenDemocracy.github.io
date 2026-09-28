@@ -16,7 +16,7 @@ import shutil
 import sys
 import tempfile
 import unittest
-from datetime import date
+from datetime import date, timedelta
 from unittest import mock
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "util"))
@@ -380,7 +380,12 @@ class CheckEvidenceBlockedCacheTests(unittest.TestCase):
                 "https://example.org/paper", "some evidence", cache, use_cache=True)
         self.assertIsNone(result)
         self.assertEqual(error, "EMPTY_RESPONSE")
-        self.assertNotIn("https://example.org/paper", cache)
+        # Not a verdict and not a sticky block (the site may start serving
+        # real content again); since 2026-09-28 it's backed off instead.
+        entry = cache["https://example.org/paper"]
+        self.assertNotIn("evidence", entry)
+        self.assertNotIn("blocked", entry)
+        self.assertEqual(entry["failing"]["error"], "EMPTY_RESPONSE")
 
     def test_spa_shell_shorter_than_quote_is_fetch_error_not_mismatch(self):
         # Regression: governancehubafrica.org/about is a JS-rendered SPA that
@@ -506,10 +511,14 @@ class RunPageReuseTests(unittest.TestCase):
         with mock.patch.object(cf.manual_dump, "queue_request"), \
                 mock.patch.object(cf, "_fetch_page_text", fake):
             cf.check_evidence("https://example.org/about", "Alpha sentence here.", cache)
-            cf.check_evidence("https://example.org/about", "Beta sentence there.",
-                              cache, use_cache=False)
-        # Second call still attempts a fetch — a failure is not a body.
-        self.assertEqual(fake.call_count, 2)
+            second = cf.check_evidence("https://example.org/about", "Beta sentence there.",
+                                       cache, use_cache=False)
+        # A failure is not a body: the second quote gets the failure, never a
+        # verdict against a page nobody downloaded. It doesn't ask the server
+        # a second time either, even under --no-cache (_RUN_FAILED).
+        self.assertEqual((second[0], second[2]), (None, "HTTP_403"))
+        self.assertNotIn("https://example.org/about", cf._RUN_PAGES)
+        self.assertEqual(fake.call_count, 1)
 
 
 class DocumentSha256Tests(unittest.TestCase):
@@ -1699,6 +1708,143 @@ class SaveToWaybackTests(unittest.TestCase):
              mock.patch.object(cf, "_hash_snapshot", return_value=None):
             result = cf.save_to_wayback("https://example.org/page")
         self.assertEqual(result, (archive_url, None))
+
+
+
+class FailureBackoffTests(unittest.TestCase):
+    """Until 2026-09-28 only 403/429 were remembered; a 404, a 5xx or a host
+    that no longer answered was retried on every run, so a dead citation was
+    fetched every week for as long as it stayed cited. Now it's recorded in
+    the URL's `failing` field and backed off (util/backoff.py), a success
+    clears it, and a URL a human marked dead or unfit isn't fetched at all."""
+
+    URL = "https://example.org/gone"
+
+    def setUp(self):
+        cf.reset_run_pages()
+        for target in ((cf.time, "sleep"), (cf.manual_dump, "queue_request")):
+            patcher = mock.patch.object(*target)
+            patcher.start()
+            self.addCleanup(patcher.stop)
+
+    def days_ago(self, n):
+        return (date.today() - timedelta(days=n)).isoformat()
+
+    def test_404_is_recorded_for_backoff_not_as_blocked(self):
+        cache = {}
+        with mock.patch.object(cf, "_fetch_page_text", return_value=(None, None, "HTTP_404")):
+            cf.check_evidence(self.URL, "some evidence", cache)
+        entry = cache[self.URL]
+        self.assertNotIn("blocked", entry)
+        self.assertEqual((entry["failing"]["error"], entry["failing"]["count"]), ("HTTP_404", 1))
+
+    def test_backing_off_url_is_not_fetched(self):
+        cache = {self.URL: {"failing": {"error": "HTTP_404", "since": self.days_ago(3),
+                                        "count": 1, "last": self.days_ago(3)}}}
+        fake = mock.Mock()
+        with mock.patch.object(cf, "_fetch_page_text", fake):
+            got = cf.check_evidence(self.URL, "some evidence", cache)
+        fake.assert_not_called()
+        self.assertEqual((got[0], got[1], got[2]), (None, True, "HTTP_404"))
+
+    def test_no_cache_retries_a_backing_off_url(self):
+        cache = {self.URL: {"failing": {"error": "HTTP_404", "since": self.days_ago(1),
+                                        "count": 1, "last": self.days_ago(1)}}}
+        fake = mock.Mock(return_value=(None, None, "HTTP_404"))
+        with mock.patch.object(cf, "_fetch_page_text", fake):
+            cf.check_evidence(self.URL, "some evidence", cache, use_cache=False)
+        self.assertEqual(fake.call_count, 1)
+
+    def test_due_retry_that_succeeds_clears_the_record(self):
+        cache = {self.URL: {"failing": {"error": "HTTP_503", "since": self.days_ago(30),
+                                        "count": 1, "last": self.days_ago(30)}}}
+        page = ("Some evidence is here.", mock.Mock(headers={}), None)
+        with mock.patch.object(cf, "_fetch_page_text", return_value=page):
+            got = cf.check_evidence(self.URL, "Some evidence", cache)
+        self.assertEqual(got[0], "good")
+        self.assertNotIn("failing", cache[self.URL])
+
+    def test_304_clears_the_record_too(self):
+        ev_id = cf.sha256(cf.normalize_ws("some evidence"))
+        cache = {self.URL: {"etag": '"v1"', "checked": self.days_ago(60),
+                            "evidence": [{"id": ev_id, "quote": "some evidence", "verified": True}],
+                            "failing": {"error": "NETWORK_ERROR", "since": self.days_ago(30),
+                                        "count": 1, "last": self.days_ago(30)}}}
+        with mock.patch.object(cf, "_fetch_page_text", return_value=(None, mock.Mock(headers={}), None)):
+            got = cf.check_evidence(self.URL, "some evidence", cache)
+        self.assertEqual(got[0], "good")
+        self.assertNotIn("failing", cache[self.URL])
+
+    def test_url_marked_dead_is_never_fetched_even_without_cache(self):
+        cache = {self.URL: {"url_status": "dead"}}
+        fake = mock.Mock()
+        with mock.patch.object(cf, "_fetch_page_text", fake):
+            got = cf.check_evidence(self.URL, "some evidence", cache, use_cache=False)
+        fake.assert_not_called()
+        self.assertEqual((got[1], got[2]), (True, "MARKED_DEAD"))
+
+    def test_sibling_quote_does_not_refetch_a_failed_url(self):
+        cache = {}
+        fake = mock.Mock(return_value=(None, None, "HTTP_404"))
+        with mock.patch.object(cf, "_fetch_page_text", fake):
+            cf.check_evidence(self.URL, "first quote", cache, use_cache=False)
+            second = cf.check_evidence(self.URL, "second quote", cache, use_cache=False)
+        self.assertEqual(fake.call_count, 1)
+        self.assertEqual(second[2], "HTTP_404")
+        self.assertEqual(cache[self.URL]["failing"]["count"], 1)  # one failure per run
+
+
+class SaveToWaybackOncePerLiveUrlTests(unittest.TestCase):
+    """--save-to-wayback used to run once per quote, so a page carrying 11
+    quotes got 11 Save Page Now requests in one run, and it ran for dead
+    and hand-marked URLs too. Save Page Now has archive.org fetch the
+    origin, so that was still hammering a dead link, and a fresh capture of
+    its error page could be recorded over the good snapshot."""
+
+    MULTI = "https://example.org/many-quotes"
+    GONE = "https://example.org/gone"
+    MARKED = "https://example.org/marked-dead"
+
+    def setUp(self):
+        cf.reset_run_pages()
+        self.tmpdir = tempfile.mkdtemp()
+        self.addCleanup(shutil.rmtree, self.tmpdir, ignore_errors=True)
+        saved = (cf.ORG_DIR, cf.DOCS_DIR, cf.STATE_PATH)
+        self.addCleanup(lambda: setattr_all(cf, ("ORG_DIR", "DOCS_DIR", "STATE_PATH"), saved))
+        cf.ORG_DIR = cf.DOCS_DIR = self.tmpdir
+        cf.STATE_PATH = os.path.join(self.tmpdir, "evidence.json")
+        events = "".join(
+            f"- date: '2020-01-0{i}'\n  title: Event {i}\n  url: {url}\n  quote: {quote}\n"
+            for i, (url, quote) in enumerate([
+                (self.MULTI, "first quote here"), (self.MULTI, "second quote here"),
+                (self.GONE, "a quote on a dead page"), (self.MARKED, "a quote on a marked page")], 1))
+        make_org_file(self.tmpdir, "some-org", events)
+        cf.save_state({self.MARKED: {"url_status": "dead"}})
+        for target in ((cf.time, "sleep"), (cf.manual_dump, "queue_request")):
+            patcher = mock.patch.object(*target)
+            patcher.start()
+            self.addCleanup(patcher.stop)
+
+    def fetch(self, url, headers):
+        if url == self.GONE:
+            return None, None, "HTTP_404"
+        return "Text with first quote here and second quote here.", mock.Mock(headers={}), None
+
+    def test_archives_each_live_url_once_and_skips_dead_ones(self):
+        archive = mock.Mock(return_value=(None, None))
+        with mock.patch.object(cf, "_fetch_page_text", side_effect=self.fetch), \
+                mock.patch.object(cf, "save_to_wayback", archive), \
+                mock.patch.object(sys, "argv", ["check_fragments.py", "--events-only", "--max-age", "0",
+                                                "--spot-check", "0", "--save-to-wayback",
+                                                "--no-page-cache"]):
+            with self.assertRaises(SystemExit):
+                cf.main()
+        self.assertEqual([c.args[0] for c in archive.call_args_list], [self.MULTI])
+
+
+def setattr_all(obj, names, values):
+    for name, value in zip(names, values):
+        setattr(obj, name, value)
 
 
 if __name__ == "__main__":

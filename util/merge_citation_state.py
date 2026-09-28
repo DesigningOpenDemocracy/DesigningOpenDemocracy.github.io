@@ -40,6 +40,14 @@ Merge semantics, per URL:
     one side and the hash from the other would record a hash of a different
     snapshot. When both sides point at the same snapshot, a hash either side
     knows is kept.
+  * The `failing` record (util/backoff.py: a URL that keeps 404ing or not
+    answering, and when to try it next) is its own unit. A failure record
+    only means something relative to the last success, and a failed attempt
+    doesn't move `checked`, so it can't ride on the fetch-state winner: the
+    side with the newer `checked` may just be the side that didn't try
+    lately. The newer record of the two is kept, and only while its latest
+    attempt postdates the merged `checked`; a success since then means the
+    failure is over.
 
 `url_status` is the one field a human sets by hand (check_fragments.py
 --set-url-status), so a genuine disagreement between the two sides is never
@@ -70,6 +78,10 @@ ADDITIVE_FIELDS = ARCHIVE_FIELDS + ("url_status", "manual_checked")
 
 # Set by hand only — a real disagreement here is reported, never silently dropped.
 HUMAN_FIELDS = ("url_status",)
+
+# The backoff record for a failing URL (util/backoff.py); merged on its own
+# rule, see merge_failing().
+FAILING_FIELD = "failing"
 
 
 def _newer(a, b):
@@ -116,7 +128,7 @@ def merge_entry(url, ours, theirs, warn):
     staler = ours if fresher is theirs else theirs
 
     out = {k: v for k, v in fresher.items()
-           if k not in ("evidence",) + ADDITIVE_FIELDS}
+           if k not in ("evidence", FAILING_FIELD) + ADDITIVE_FIELDS}
     for field in FETCH_STATE_FIELDS:
         out.pop(field, None)
         if field in fresher:
@@ -140,10 +152,26 @@ def merge_entry(url, ours, theirs, warn):
                 and other.get("archive_url") == out.get("archive_url")):
             out["archive_sha256"] = other["archive_sha256"]
 
+    failing = merge_failing(ours.get(FAILING_FIELD), theirs.get(FAILING_FIELD), out.get("checked"))
+    if failing:
+        out[FAILING_FIELD] = failing
+
     evidence = merge_evidence(ours.get("evidence"), theirs.get("evidence"), warn)
     if evidence or "evidence" in ours or "evidence" in theirs:
         out["evidence"] = evidence
     return out
+
+
+def merge_failing(ours, theirs, checked):
+    """The failure record to keep: the one with the later attempt, provided
+    that attempt came after the last success (`checked`)."""
+    candidates = [f for f in (ours, theirs) if isinstance(f, dict) and f.get("last")]
+    if not candidates:
+        return None
+    newest = max(candidates, key=lambda f: f["last"])
+    if checked and not _newer(newest["last"], checked):
+        return None
+    return newest
 
 
 def _archive_side(ours, theirs):

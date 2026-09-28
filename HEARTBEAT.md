@@ -174,7 +174,7 @@ size of the staleness queue.
 **News intake, every run:** `python util/news_checkup.py` lists what orgs
 have posted to their own feeds since the last review. It's offline: it reads
 the posts the weekly cron saved while reading those feeds
-(`docs/data/feed-items/`), so it doesn't cut across the cron-owns-collection
+(`docs/data/feeds/`), so it doesn't cut across the cron-owns-collection
 rule above. The cron also prints the same list in its job summary.
 Go through it and move **only what clears the `notable:` bar** into that
 org's `events:` (see CLAUDE.md's `notable:` tiers and its Landscape News

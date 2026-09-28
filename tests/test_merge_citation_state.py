@@ -268,5 +268,34 @@ class RebaseConflictEndToEndTests(unittest.TestCase):
         self.assertEqual(merged["checked"], "2026-03-01")
 
 
+
+class MergeFailingTests(unittest.TestCase):
+    """The `failing` backoff record is its own unit: a failed attempt doesn't
+    move `checked`, so it can't ride on the fetch-state winner."""
+
+    def _merge(self, ours, theirs):
+        merged, _ = mcs.merge_states({"https://x/": ours}, {"https://x/": theirs}, warn=lambda m: None)
+        return merged["https://x/"]
+
+    def fail(self, last, count=1):
+        return {"error": "HTTP_404", "since": last, "count": count, "last": last}
+
+    def test_failure_after_the_last_success_survives(self):
+        # theirs has the newer `checked`, but ours failed after it.
+        out = self._merge({"checked": "2026-09-01", "failing": self.fail("2026-09-28")},
+                          {"checked": "2026-09-10"})
+        self.assertEqual(out["failing"]["last"], "2026-09-28")
+
+    def test_success_after_the_failure_ends_it(self):
+        out = self._merge({"checked": "2026-09-01", "failing": self.fail("2026-09-05")},
+                          {"checked": "2026-09-10"})
+        self.assertNotIn("failing", out)
+
+    def test_newer_record_wins(self):
+        out = self._merge({"checked": "2026-09-01", "failing": self.fail("2026-09-14", count=2)},
+                          {"checked": "2026-09-01", "failing": self.fail("2026-09-28", count=3)})
+        self.assertEqual(out["failing"]["count"], 3)
+
+
 if __name__ == "__main__":
     unittest.main()

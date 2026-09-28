@@ -120,8 +120,8 @@ class FeedItemCacheTests(unittest.TestCase):
     def test_save_writes_once_and_reports_no_change(self):
         with tempfile.TemporaryDirectory() as d:
             e = [entry(date(2026, 9, 1), "P", "https://ex.org/p")]
-            self.assertTrue(cr.save_feed_items("ex", "https://ex.org/feed", e, TODAY, items_dir=d))
-            self.assertFalse(cr.save_feed_items("ex", "https://ex.org/feed", e, TODAY, items_dir=d))
+            self.assertTrue(cr.save_feed_items("ex", "https://ex.org/feed", e, TODAY, feeds_dir=d))
+            self.assertFalse(cr.save_feed_items("ex", "https://ex.org/feed", e, TODAY, feeds_dir=d))
             with open(os.path.join(d, "ex.json"), encoding="utf-8") as f:
                 data = json.load(f)
             self.assertEqual(data["feed"], "https://ex.org/feed")
@@ -131,14 +131,16 @@ class FeedItemCacheTests(unittest.TestCase):
     def test_dormant_feed_keeps_its_latest_date_after_pruning(self):
         with tempfile.TemporaryDirectory() as d:
             cr.save_feed_items("ex", "https://ex.org/feed", [entry(date(2019, 6, 26), "Old", "https://ex.org/o")],
-                               TODAY, items_dir=d)
-            self.assertEqual(nc.load_feed_items("ex", items_dir=d), {"latest": "2019-06-26", "items": []})
+                               TODAY, feeds_dir=d)
+            got = nc.load_feed_items("ex", feeds_dir=d)
+            self.assertEqual((got["latest"], got["items"], got["read"]), ("2019-06-26", [], True))
 
     def test_empty_feed_is_saved_as_empty(self):
         with tempfile.TemporaryDirectory() as d:
-            cr.save_feed_items("ex", "https://ex.org/feed", [], TODAY, items_dir=d)
-            self.assertEqual(nc.load_feed_items("ex", items_dir=d), {"latest": None, "items": []})
-            self.assertIsNone(nc.load_feed_items("missing", items_dir=d))
+            cr.save_feed_items("ex", "https://ex.org/feed", [], TODAY, feeds_dir=d)
+            got = nc.load_feed_items("ex", feeds_dir=d)
+            self.assertEqual((got["latest"], got["items"], got["read"]), (None, [], True))
+            self.assertIsNone(nc.load_feed_items("missing", feeds_dir=d))
 
 
 def org(slug, rss_feed="", news_page="", rss_read=date(2026, 9, 25), scrape=None, title=None):
@@ -219,6 +221,19 @@ class CheckupTests(unittest.TestCase):
                              {"a": cache(post("2026-09-20", "Saved last week", "https://a.org/1"), latest=None)})
         self.assertEqual([s["orgs"][0]["slug"] for s in r["empty"]], ["a"])
         self.assertEqual([i["title"] for i in r["feeds"][0]["items"]], ["Saved last week"])
+
+    def test_failing_feed_is_reported_with_its_retry_and_keeps_its_posts(self):
+        failing = {"error": "HTTP_404", "since": "2026-09-21", "count": 2, "last": "2026-09-28"}
+        r = self.run_checkup([org("a", "https://a.org/feed"), org("b", "https://b.org/feed")], {
+            "a": {**cache(post("2026-09-20", "Saved before it broke", "https://a.org/1")), "failing": failing},
+            "b": {"latest": None, "items": [], "failing": failing, "read": False},
+        })
+        self.assertEqual([s["orgs"][0]["slug"] for s in r["failing"]], ["a", "b"])
+        self.assertEqual(r["uncollected"], [])  # failing, not "never tried"
+        self.assertEqual(r["empty"], [])
+        self.assertEqual([i["title"] for i in r["feeds"][0]["items"]], ["Saved before it broke"])
+        self.assertIn("HTTP_404 since 2026-09-21, 2 failed read(s), next try 2026-10-12",
+                      nc.render_markdown(r))
 
     def test_news_page_orgs_use_the_last_scrape(self):
         orgs = [
