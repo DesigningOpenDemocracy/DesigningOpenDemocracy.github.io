@@ -1,0 +1,57 @@
+{
+  "feed": "https://www.afrobarometer.org/feed",
+  "latest": "2026-09-25",
+  "span_days": 10,
+  "items": [
+    {
+      "date": "2026-09-25",
+      "title": "Southern Africans endorse women’s marital and reproductive autonomy, but are divided on abortion",
+      "url": "https://www.afrobarometer.org/articles/southern-africans-endorse-womens-marital-and-reproductive-autonomy-but-are-divided-on-abortion/"
+    },
+    {
+      "date": "2026-09-24",
+      "title": "West and Central Africans support women’s autonomy and sexuality education, but are divided on contraceptive access",
+      "url": "https://www.afrobarometer.org/articles/west-and-central-africans-support-womens-autonomy-and-sexuality-education-but-are-divided-on-contraceptive-access/"
+    },
+    {
+      "date": "2026-09-24",
+      "title": "Les habitants d’Afrique Centrale et de l’Ouest soutiennent l’autonomie des femmes et l’éducation à la sexualité, mais sont divisés sur l’accès aux contraceptifs",
+      "url": "https://www.afrobarometer.org/articles/les-habitants-dafrique-centrale-et-de-louest-soutiennent-lautonomie-des-femmes-et-leducation-a-la-sexualite-mais-sont-divises-sur-lacces-aux-contraceptifs/"
+    },
+    {
+      "date": "2026-09-24",
+      "title": "Amid rising perceptions of corruption, most Zimbabweans fear retaliation if they report it, new Afrobarometer study shows",
+      "url": "https://www.afrobarometer.org/articles/amid-rising-perceptions-of-corruption-most-zimbabweans-fear-retaliation-if-they-report-it-new-afrobarometer-study-shows/"
+    },
+    {
+      "date": "2026-09-22",
+      "title": "Zimbabweans say economic growth should be top national goal  amid widespread shortages of necessities, new Afrobarometer  study shows",
+      "url": "https://www.afrobarometer.org/articles/zimbabweans-say-economic-growth-should-be-top-national-goal-amid-widespread-shortages-of-necessities-new-afrobarometer-study-shows/"
+    },
+    {
+      "date": "2026-09-22",
+      "title": "Most East Africans support women’s autonomy in marriage and  childbearing decisions, endorse sexuality education in schools,  Afrobarometer report shows",
+      "url": "https://www.afrobarometer.org/articles/most-east-africans-support-womens-autonomy-in-marriage-and-childbearing-decisions-endorse-sexuality-education-in-schools-afrobarometer-report-shows/"
+    },
+    {
+      "date": "2026-09-22",
+      "title": "Moins de la moitié des Africains bénéficient d’une électricité fiable ; beaucoup se tournent vers des sources d’énergie alternatives, selon un nouveau rapport d’Afrobarometer",
+      "url": "https://www.afrobarometer.org/articles/moins-de-la-moitie-des-africains-beneficient-dune-electricite-fiable-beaucoup-se-tournent-vers-des-sources-denergie-alternatives-selon-un-nouveau-rapport-dafrobarometer/"
+    },
+    {
+      "date": "2026-09-22",
+      "title": "Fewer than half of Africans enjoy reliable electricity; many look to alternative energy sources, new Afrobarometer report shows",
+      "url": "https://www.afrobarometer.org/articles/fewer-than-half-of-africans-enjoy-reliable-electricity-many-look-to-alternative-energy-sources-new-afrobarometer-report-shows/"
+    },
+    {
+      "date": "2026-09-15",
+      "title": "Journée internationale de la démocratie : La demande  de démocratie s’affaiblit à travers l’Afrique, selon un nouveau rapport d’Afrobarometer",
+      "url": "https://www.afrobarometer.org/articles/journee-internationale-de-la-democratie-la-demande-de-democratie-saffaiblit-a-travers-lafrique-selon-un-nouveau-rapport-dafrobarometer/"
+    },
+    {
+      "date": "2026-09-15",
+      "title": "International Day of Democracy: Demand for democracy weakens across Africa, new Afrobarometer report shows",
+      "url": "https://www.afrobarometer.org/articles/international-day-of-democracy-demand-for-democracy-weakens-across-africa-new-afrobarometer-report-shows/"
+    }
+  ]
+}

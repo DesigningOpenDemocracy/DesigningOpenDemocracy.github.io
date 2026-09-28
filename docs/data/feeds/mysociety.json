@@ -1,0 +1,57 @@
+{
+  "feed": "https://www.mysociety.org/feed",
+  "latest": "2026-09-14",
+  "span_days": 47,
+  "items": [
+    {
+      "date": "2026-09-14",
+      "title": "TICTeC Presents: Digital Democracy Edinburgh (11 & 12 March 2027)",
+      "url": "https://www.mysociety.org/2026/09/14/tictec-presents-digital-democracy-edinburgh-11-12-march-2027/"
+    },
+    {
+      "date": "2026-09-09",
+      "title": "They work for you (and we do too)",
+      "url": "https://www.mysociety.org/2026/09/09/they-work-for-you-and-we-do-too/"
+    },
+    {
+      "date": "2026-09-03",
+      "title": "Answer all your questions about university entry — with Freedom of Information",
+      "url": "https://www.mysociety.org/2026/09/03/answer-all-your-questions-about-university-entry-with-freedom-of-information/"
+    },
+    {
+      "date": "2026-09-02",
+      "title": "Trust the evidence… especially when you obtain it through FOI",
+      "url": "https://www.mysociety.org/2026/09/02/trust-the-evidence-especially-when-you-obtain-it-through-foi/"
+    },
+    {
+      "date": "2026-09-01",
+      "title": "Buried with Michael Sheen: how FOI helped uncover a toxic waste scandal",
+      "url": "https://www.mysociety.org/2026/09/01/buried-with-michael-sheen-how-foi-helped-uncover-a-toxic-waste-scandal/"
+    },
+    {
+      "date": "2026-08-27",
+      "title": "The problem with making public data pay for itself",
+      "url": "https://www.mysociety.org/2026/08/27/the-problem-with-making-public-data-pay-for-itself/"
+    },
+    {
+      "date": "2026-08-20",
+      "title": "Kicking off now, and much-needed: the scrutiny of AI in public services",
+      "url": "https://www.mysociety.org/2026/08/20/kicking-off-now-and-much-needed-the-scrutiny-of-ai-in-public-services/"
+    },
+    {
+      "date": "2026-08-17",
+      "title": "The ICO is changing: it’s an ideal time to demand better",
+      "url": "https://www.mysociety.org/2026/08/17/the-ico-is-changing-its-an-ideal-time-to-demand-better/"
+    },
+    {
+      "date": "2026-07-30",
+      "title": "The ICO brings increased transparency around sewage discharge",
+      "url": "https://www.mysociety.org/2026/07/30/the-ico-brings-increased-transparency-around-sewage-discharge/"
+    },
+    {
+      "date": "2026-07-29",
+      "title": "Improvements to WriteToThem",
+      "url": "https://www.mysociety.org/2026/07/29/improvements-to-writetothem/"
+    }
+  ]
+}

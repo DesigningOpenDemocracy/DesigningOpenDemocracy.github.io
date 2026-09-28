@@ -132,6 +132,7 @@ from text_fragment import (  # noqa: E402
     closest_match_hint, count_occurrences, find_evidence, find_span, html_to_text,
     iter_footnote_citations, normalize_ws, quote_matches, spacing_autofix,
 )
+import backoff  # noqa: E402 — retry schedule for URLs that keep failing (see util/backoff.py)
 import manual_dump  # noqa: E402 — the manual-dump request queue (see util/manual_dump.py)
 import pagecache  # noqa: E402 — local reading copies of fetched pages (see util/pagecache.py)
 import reorder_frontmatter  # noqa: E402 — canonical frontmatter re-serialization for the autofix fallback
@@ -169,17 +170,43 @@ MAX_FETCH_BYTES = 20 * 1024 * 1024
 # not "fetch the same page twice in one run".
 _RUN_PAGES = {}
 
+# The same, for failures: a URL that failed once this run isn't asked again
+# for a sibling quote in the same run, even under --no-cache.
+_RUN_FAILED = {}
+
 
 def reset_run_pages():
-    """Drop this run's in-memory page bodies (used by tests)."""
+    """Drop this run's in-memory page bodies and failures (used by tests)."""
     _RUN_PAGES.clear()
+    _RUN_FAILED.clear()
 
 # Errors that mean "this site's bot protection (or its own robots.txt)
-# said no," not "try again later" — 500s, timeouts, and DNS errors are
-# transient and should still be retried every run, but a 403/429 (or a
-# robots.txt Disallow) from the same server, week after week, isn't new
-# information. See check_evidence()'s "blocked" cache field.
+# said no" — a 403/429 (or a robots.txt Disallow) from the same server,
+# week after week, isn't new information, so these are sticky: never
+# retried until --no-cache. See check_evidence()'s "blocked" cache field.
+#
+# Every other failure (a 404 or 410, a 5xx, a host that no longer resolves,
+# a timeout, a page that comes back as an empty shell) is backed off rather
+# than made sticky: recorded in the URL's `failing` field (see
+# util/backoff.py) and retried after 7, 14, 28, 56, then every 90 days. Until
+# 2026-09-28 these were retried on every run, so a dead citation was
+# requested every week for as long as it stayed cited.
 BLOCKED_ERRORS = {"HTTP_403", "HTTP_429", "ROBOTS_DISALLOWED"}
+
+# url_status values (set only by hand, see --set-url-status) that mean the
+# live page is no use as evidence: dead (gone) or unfit (answers, but with
+# something else, like a parked domain). Evidence on such a URL is never
+# fetched; the archived copy is what readers are sent to.
+MARKED_URL_STATUSES = {"dead", "unfit"}
+
+
+def _note_failure(cache, url, error):
+    """Record a non-blocking fetch failure for backoff, merging into what's on
+    disk rather than the possibly-emptied local view (the same guard the
+    blocked paths carry), and remember it for the rest of this run."""
+    prior = cache.get(url, {})
+    cache[url] = {**prior, "failing": backoff.record_failure(prior.get("failing"), error)}
+    _RUN_FAILED[url] = error
 
 
 def load_state():
@@ -586,6 +613,30 @@ def check_evidence(url, evidence, cache, use_cache=True, from_pagecache=False):
         manual_dump.queue_request(url)
         return None, True, entry["blocked"], False, None, None
 
+    # A human has recorded this URL as dead or unfit (--set-url-status):
+    # the live page can't confirm anything, and readers are sent to the
+    # archived copy instead. Read from the stored entry even under
+    # --no-cache, which distrusts verdicts, not a person's decision; clear
+    # it with --set-url-status <url> live to check the page again.
+    url_status = cache.get(url, {}).get("url_status")
+    if url_status in MARKED_URL_STATUSES:
+        return None, True, "MARKED_" + url_status.upper(), False, None, None
+
+    # A URL that has been failing (404, 5xx, unreachable, ...) waits out its
+    # backoff before it's asked again; see BLOCKED_ERRORS above and
+    # util/backoff.py. A human-saved snapshot of this exact evidence still
+    # answers, the same as for a blocked URL.
+    failing = entry.get("failing") if use_cache else None
+    if failing and backoff.backing_off(failing):
+        manual_result = (find_evidence(entry, ev_key) or {}).get("manual_verified")
+        if manual_result is not None:
+            return ("good" if manual_result else "bad"), True, None, False, None, None
+        return None, True, failing.get("error") or "FETCH_ERROR", False, None, None
+
+    # Already failed once this run, for a sibling quote: don't ask again.
+    if url in _RUN_FAILED:
+        return None, False, _RUN_FAILED[url], False, None, None
+
     # Already downloaded this URL for a sibling quote in this same run? Then
     # the body in hand is this run's fetch — verify against it rather than
     # asking the server again. `validators` carries forward exactly what that
@@ -622,6 +673,9 @@ def check_evidence(url, evidence, cache, use_cache=True, from_pagecache=False):
                               "blocked_since": prior.get("blocked_since", date.today().isoformat())}
                 if (find_evidence(prior, ev_key) or {}).get("manual_verified") is None:
                     manual_dump.queue_request(url)
+                _RUN_FAILED[url] = error
+            else:
+                _note_failure(cache, url, error)
             return None, False, error, False, None, None
 
         if text is None:
@@ -640,7 +694,8 @@ def check_evidence(url, evidence, cache, use_cache=True, from_pagecache=False):
                 q = find_evidence(disk, ev_key)
                 if q is not None:
                     q["checked"] = date.today().isoformat()
-                cache[url] = {**disk, "checked": date.today().isoformat()}
+                cache[url] = {**{k: v for k, v in disk.items() if k != "failing"},
+                              "checked": date.today().isoformat()}
                 return ("good" if cached_result else "bad"), True, None, False, None, None
             time.sleep(FETCH_DELAY)
             text, resp, error = _fetch_page_text(url, {"User-Agent": USER_AGENT})
@@ -653,6 +708,9 @@ def check_evidence(url, evidence, cache, use_cache=True, from_pagecache=False):
                                   "blocked_since": prior.get("blocked_since", date.today().isoformat())}
                     if (find_evidence(prior, ev_key) or {}).get("manual_verified") is None:
                         manual_dump.queue_request(url)
+                    _RUN_FAILED[url] = error
+                else:
+                    _note_failure(cache, url, error)
                 return None, False, error, False, None, None
 
     if len(text) < len(evidence):
@@ -672,12 +730,16 @@ def check_evidence(url, evidence, cache, use_cache=True, from_pagecache=False):
         # the blocked path above), otherwise queue the URL for a manual dump
         # and surface an error. Deliberately NOT cached as sticky-blocked:
         # unlike a 403, a shell-to-server-rendered switch is a realistic
-        # recovery, so each run re-fetches and self-heals if the site changes.
+        # recovery. It's backed off like any other failure instead (see
+        # BLOCKED_ERRORS), so it self-heals on the next retry if the site
+        # changes, without being asked for the same shell every week.
         manual_result = (find_evidence(entry, ev_key) or {}).get("manual_verified")
         if manual_result is not None:
             return ("good" if manual_result else "bad"), True, None, False, None, None
         manual_dump.queue_request(url)
-        return None, False, "EMPTY_RESPONSE" if not text else "PAGE_TOO_SHORT", False, None, None
+        error = "EMPTY_RESPONSE" if not text else "PAGE_TOO_SHORT"
+        _note_failure(cache, url, error)
+        return None, False, error, False, None, None
 
     # What this run's fetch established for the URL's validators — computed
     # once, so a sibling quote reusing the body writes the same values rather
@@ -720,7 +782,7 @@ def check_evidence(url, evidence, cache, use_cache=True, from_pagecache=False):
     cache[url] = {
         **{k: v for k, v in disk.items() if k not in
            ("etag", "last_modified", "document_sha256", "content_hash",
-            "evidence", "checked", "blocked", "blocked_since")},
+            "evidence", "checked", "blocked", "blocked_since", "failing")},
         "etag": validators["etag"],
         "last_modified": validators["last_modified"],
         "document_sha256": document_hash,
@@ -1374,6 +1436,8 @@ def main():
     bad = 0
     errors = 0
     still_blocked = 0
+    still_failing = 0
+    marked = 0
     unchanged = 0
     ambiguous_count = 0
     autofixed = 0
@@ -1395,6 +1459,7 @@ def main():
     # reusing; this just mirrors what it will have found.
     fetched_urls = set()
     reused_fetches = 0
+    archive_attempted = set()
 
     for url, evidence, source_label, kind, path in evidence_items:
         reused = url in fetched_urls
@@ -1408,7 +1473,17 @@ def main():
                 reused_fetches += 1
             fetched_urls.add(url)
 
-        if args.save_to_wayback:
+        # Archive each URL at most once per run (it used to be once per quote:
+        # a page carrying 11 quotes got 11 Save Page Now requests), and never
+        # one that's failing or marked dead/unfit by hand. Save Page Now has
+        # archive.org fetch the origin, so archiving a dead link is still
+        # hammering it, and a fresh capture of its error page could become
+        # the "closest" snapshot recorded over the good one. Blocked URLs
+        # are still archived: archive.org can often reach what we can't.
+        now = cache.get(url, {})
+        if (args.save_to_wayback and url not in archive_attempted
+                and not now.get("failing") and now.get("url_status") not in MARKED_URL_STATUSES):
+            archive_attempted.add(url)
             archive_url, archive_sha256_hash = save_to_wayback(url)
             if archive_url:
                 wayback_saved += 1
@@ -1430,7 +1505,27 @@ def main():
             time.sleep(0.5)
 
         if error:
-            if unchanged_hit:
+            if unchanged_hit and error.startswith("MARKED_"):
+                # A human set url_status dead/unfit: not fetched, and not a
+                # fetch error either — the decision's already been made.
+                marked += 1
+                status = error[len("MARKED_"):].lower()
+                print("  MARKED " + status.upper() + "  " + source_label)
+                print("               " + url + "  (url_status: " + status +
+                      " — not fetched; readers get the archived copy)")
+            elif unchanged_hit and not cache.get(url, {}).get("blocked"):
+                # Failing (404, 5xx, unreachable, ...) and still inside its
+                # backoff window — skipped, no network call. See util/backoff.py.
+                still_failing += 1
+                by_kind[kind]["errors"] += 1
+                failing = cache.get(url, {}).get("failing") or {}
+                report_fetch_errors.append({"source": source_label, "url": url, "error": error,
+                                            "failing_since": failing.get("since")})
+                print("  STILL FAILING  " + source_label)
+                print("               " + url + "  (" + error + " since " + str(failing.get("since")) +
+                      ", " + str(failing.get("count")) + " failed attempt(s); next try " +
+                      str(backoff.next_try(failing)) + " — skipped, use --no-cache to retry now)")
+            elif unchanged_hit:
                 # Already confirmed BLOCKED on a prior run — skipped
                 # entirely this run, no network call made. See
                 # check_evidence()'s "blocked" cache field.
@@ -1558,6 +1653,11 @@ def main():
     if still_blocked:
         print("  (" + str(still_blocked) + " more skipped — already confirmed BLOCKED on a "
               "prior run; pass --no-cache to recheck)")
+    if still_failing:
+        print("  (" + str(still_failing) + " more skipped — failing on earlier runs and "
+              "backing off before the next try; pass --no-cache to retry now)")
+    if marked:
+        print("  (" + str(marked) + " more not fetched — url_status marked dead/unfit by hand)")
     if not_cached:
         print("  (" + str(not_cached) + " more had no local copy — offline mode checks "
               ".pagecache/ only)")

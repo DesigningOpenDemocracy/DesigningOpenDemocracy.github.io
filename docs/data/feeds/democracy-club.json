@@ -1,0 +1,35 @@
+{
+  "feed": "https://democracyclub.org.uk/blog/feed/",
+  "latest": "2026-09-21",
+  "span_days": 136,
+  "items": [
+    {
+      "date": "2026-09-21",
+      "title": "Why are UK elections so different each year?",
+      "url": "https://democracyclub.org.uk/blog/2026/09/21/why-are-uk-elections-so-different-each-year/"
+    },
+    {
+      "date": "2026-07-31",
+      "title": "Mapping Northern Ireland's proposed polling places",
+      "url": "https://democracyclub.org.uk/blog/2026/07/31/mapping-northern-irelands-proposed-polling-places/"
+    },
+    {
+      "date": "2026-06-23",
+      "title": "Case study: Vote.Wales and polling place accessibility",
+      "url": "https://democracyclub.org.uk/blog/2026/06/23/case-study-votewales-and-polling-place-accessibility/"
+    },
+    {
+      "date": "2026-06-03",
+      "title": "2026 elections user feedback",
+      "url": "https://democracyclub.org.uk/blog/2026/06/03/2026-elections-user-feedback/"
+    },
+    {
+      "date": "2026-05-08",
+      "title": "2026 postcode search summary",
+      "url": "https://democracyclub.org.uk/blog/2026/05/08/2026-postcode-search-summary/"
+    }
+  ],
+  "fetch": {
+    "last_modified": "Mon, 21 Sep 2026 15:19:38 GMT"
+  }
+}

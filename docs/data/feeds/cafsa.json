@@ -1,0 +1,16 @@
+{
+  "feed": "https://cafsa.org.au/feed",
+  "latest": "2026-07-09",
+  "items": [
+    {
+      "date": "2026-07-09",
+      "title": "CAfSA News Bulletin no. 8",
+      "url": "https://cafsa.org.au/news-bulletin-no-8/"
+    },
+    {
+      "date": "2026-04-02",
+      "title": "CAfSA News no. 7 April 2026",
+      "url": "https://cafsa.org.au/cafsa-news-no-7-april-2026/"
+    }
+  ]
+}

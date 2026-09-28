@@ -1,0 +1,47 @@
+{
+  "feed": "https://consuldemocracy.org/feed",
+  "latest": "2026-09-09",
+  "span_days": 156,
+  "items": [
+    {
+      "date": "2026-09-09",
+      "title": "Protected: Towards a digital commons: improving our governance model",
+      "url": "https://consuldemocracy.org/2026/09/towards-a-digital-commons-improving-our-governance-model/"
+    },
+    {
+      "date": "2026-09-02",
+      "title": "Tech talk at COSCUP x UbuCon Asia 2026",
+      "url": "https://consuldemocracy.org/2026/09/tech-talk-at-coscup-x-ubucon-asia-2026/"
+    },
+    {
+      "date": "2026-06-29",
+      "title": "Made with Consul",
+      "url": "https://consuldemocracy.org/2026/06/made-with-consul/"
+    },
+    {
+      "date": "2026-06-22",
+      "title": "Made with Consul: Madrid",
+      "url": "https://consuldemocracy.org/2026/06/made-with-consul-madrid/"
+    },
+    {
+      "date": "2026-06-10",
+      "title": "CONSUL wins WSIS Champion Award 2026",
+      "url": "https://consuldemocracy.org/2026/06/consul-wins-wsis-champion-award-2026/"
+    },
+    {
+      "date": "2026-04-22",
+      "title": "Version release 2.5.0! 🎆",
+      "url": "https://consuldemocracy.org/2026/04/version-release-2-5-0/"
+    },
+    {
+      "date": "2026-04-09",
+      "title": "Spring 2026 Newsletter",
+      "url": "https://consuldemocracy.org/2026/04/spring-2026-newsletter/"
+    },
+    {
+      "date": "2026-04-06",
+      "title": "Developing digital participation in Nairobi County, Kenya",
+      "url": "https://consuldemocracy.org/2026/04/developing-digital-participation-in-nairobi-county-kenya/"
+    }
+  ]
+}

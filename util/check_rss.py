@@ -24,14 +24,15 @@ import os
 import re
 import sys
 import time
-from datetime import datetime
+from datetime import date, datetime, timedelta
 from email.utils import parsedate_to_datetime
-from urllib.parse import urljoin, urlparse
+from urllib.parse import urljoin, urlparse, urlsplit, urlunsplit
 from urllib.robotparser import RobotFileParser
 from xml.etree import ElementTree as ET
 
 sys.path.insert(0, os.path.dirname(__file__))
-from frontmatter_io import split_frontmatter  # noqa: E402
+import backoff  # noqa: E402
+from frontmatter_io import split_frontmatter, write_rss_feed  # noqa: E402
 from robots_check import load_robots, robots_allowed  # noqa: E402
 
 try:
@@ -54,6 +55,63 @@ ORGS_DIR = os.path.join(DOCS_DIR, "organisations")
 SKIP_FILES = {"index.md"}
 WAYBACK_PREFIX = "https://web.archive.org"
 TODAY = datetime.today().strftime("%Y-%m-%d")
+
+# How often each kind of org is read. The unit is days since the source was
+# last read (activity.<method>.checked), and an org is skipped while that's
+# under the interval; --force overrides all of it.
+#
+# FEED_RECHECK_DAYS: an org with a live feed, by default. Most orgs in the
+# landscape post a few times a month at most: of the 22 feeds with posts in
+# the six months to 2026-09-28, 20 listed more than a month of posts at
+# once, so a monthly read misses nothing.
+FEED_RECHECK_DAYS = 28
+# RECHECK_DAYS: a feed that turns over faster than that, whose listed posts
+# (at least BUSY_MIN_POSTS of them) span under BUSY_SPAN_DAYS, is read
+# weekly, or posts would drop off it between reads: Afrobarometer listed 10
+# posts in 10 days, Kongra Star 10 in 14. Judged from the feed's own last
+# read (`span_days` in its state file), so it adjusts as an org gets busier
+# or quieter. Also the interval for ics_feed: activity reads.
+#
+# Strictly less-than on purpose: the weekly cron fires exactly 7 days after
+# the run that stamped `checked:`, and a `<= 7` here skipped every org on
+# alternate weeks, so feeds were really read fortnightly (the 2026-09-18 run
+# touched 4 org pages; the runs either side, 139). A scheduled run can start
+# late but never early, so the next one sees an age of at least 7 unless
+# this one was delayed past midnight UTC (it's scheduled for 03:00). The
+# same holds for 28: a monthly read lands on every fourth weekly run.
+RECHECK_DAYS = 7
+BUSY_SPAN_DAYS = 35
+BUSY_MIN_POSTS = 5
+# A feed whose newest post is older than DORMANT_FEED_DAYS, or that lists no
+# posts at all, is read quarterly: monthly reads of a feed that last changed
+# in 2019 are just traffic, and a quarter is soon enough to notice it's back.
+DORMANT_FEED_DAYS = 180
+DORMANT_RECHECK_DAYS = 90
+# An org with no feed: the 23-path discovery probe (plus robots.txt and
+# sitemap guesses) runs at most this often, spread per org by
+# backoff.spread_days() so a batch probed on one day doesn't all fall due
+# on one day again. In between, only its known sitemap (if any) is read,
+# every SITEMAP_RECHECK_DAYS. Until 2026-09-28 the probe ran on every run
+# for every org without `rss_feed:` (108 of them, about 2,200 requests a
+# run, mostly 404s), and a feed it found was never saved, so it was
+# rediscovered each time.
+FEED_REPROBE_DAYS = 90
+SITEMAP_RECHECK_DAYS = 28
+# A feed body larger than this is abandoned mid-download and counts as a
+# failure (TOO_LARGE). The largest real feed in the landscape was a 22 MB
+# malformed one, downloaded in full every week and never parsed.
+FEED_MAX_BYTES = 5 * 1024 * 1024
+
+# What the probe knows about each org's feed, one file per org:
+# docs/data/feeds/<slug>.json. Recent posts for util/news_checkup.py, the
+# validators for conditional GET, a failure record for backoff, and for an
+# org with no feed, when discovery last ran and which sitemap it found. See
+# save_feed_items() for the layout. Posts are kept for half a year, which is
+# longer than anyone should leave a checkup, and capped so one prolific
+# feed can't grow its file without bound.
+FEEDS_DIR = os.path.join(DOCS_DIR, "data", "feeds")
+FEED_ITEMS_KEEP_DAYS = 180
+FEED_ITEMS_MAX = 50
 
 # Common feed URL paths to probe (tried in order, stop at first hit)
 FEED_PATHS = [
@@ -324,25 +382,314 @@ def latest_from_ical(url, timeout=10, session=None):
     return entries[0][0], entries[0][1], True
 
 
-def latest_from_feed(url, timeout=10, session=None):
-    """Fetch url and return (date, title, link, http_ok) of the most recent item.
+def _read_feed_body(r):
+    """A streamed response's body, or None past FEED_MAX_BYTES. A declared
+    Content-Length over the cap skips the download outright; the running
+    total catches a missing or wrong header (same approach as
+    check_fragments.py's _read_capped())."""
+    declared = r.headers.get("Content-Length")
+    if declared is not None:
+        try:
+            if int(declared) > FEED_MAX_BYTES:
+                return None
+        except ValueError:
+            pass
+    body = bytearray()
+    for chunk in r.iter_content(chunk_size=65536):
+        body.extend(chunk)
+        if len(body) > FEED_MAX_BYTES:
+            return None
+    return bytes(body)
 
-    http_ok is True when the server returned 200 (feed is reachable), False on
-    network errors or non-200 responses.  date/title/link are None when no
-    parseable items were found even though the feed was reachable.
+
+def fetch_feed(url, timeout=10, session=None, validators=None):
+    """Read a feed once. Returns a dict with `status`:
+
+      "ok"            — `entries` (see parse_feed_entries) and `validators`,
+                        the ETag/Last-Modified the server sent, if any
+      "not_modified"  — a 304: unchanged since the validators passed in
+      "error"         — `error` is HTTP_<code>, NETWORK_ERROR, TOO_LARGE
+                        (over FEED_MAX_BYTES) or UNPARSEABLE (not XML)
+
+    `validators` from the previous read go out as If-None-Match /
+    If-Modified-Since, so a feed that hasn't changed costs a 304 and no
+    body. An empty but valid feed is "ok" with no entries, not an error.
     """
     if session is None:
         session = requests.Session()
         session.headers["User-Agent"] = DOD_USER_AGENT
+    headers = {}
+    validators = validators or {}
+    if validators.get("etag"):
+        headers["If-None-Match"] = validators["etag"]
+    if validators.get("last_modified"):
+        headers["If-Modified-Since"] = validators["last_modified"]
     try:
-        r = session.get(url, timeout=timeout)
-        r.raise_for_status()
+        r = session.get(url, timeout=timeout, headers=headers, stream=True)
+        try:
+            if r.status_code == 304:
+                return {"status": "not_modified"}
+            if r.status_code >= 400:
+                return {"status": "error", "error": f"HTTP_{r.status_code}"}
+            body = _read_feed_body(r)
+        finally:
+            r.close()
     except RequestException:
-        return None, None, None, False
+        return {"status": "error", "error": "NETWORK_ERROR"}
+    if body is None:
+        return {"status": "error", "error": "TOO_LARGE"}
+    entries = _parse_feed(body)
+    if entries is None:
+        return {"status": "error", "error": "UNPARSEABLE"}
+    sent = {key: r.headers.get(header)
+            for key, header in (("etag", "ETag"), ("last_modified", "Last-Modified"))
+            if r.headers.get(header)}
+    return {"status": "ok", "entries": entries, "validators": sent}
+
+
+def latest_entry(entries):
+    """(date, title, link) of the most recent entry, or three Nones. The sort
+    is stable, so of several items on the same day the one listed first in
+    the feed wins, as it always has."""
+    if not entries:
+        return None, None, None
+    latest = sorted(entries, key=lambda e: e["date"], reverse=True)[0]
+    return latest["date"], latest["title"], latest["link"]
+
+
+def _feed_item_key(item):
+    return item.get("url") or f"{item.get('date')}|{item.get('title')}"
+
+
+def strip_tracking(url):
+    """Drop utm_* parameters (WordPress's RSS plugins add them to every
+    link), so a link copied from the news checkup into an event's `url:`
+    is the plain citation, not a campaign-tagged one."""
+    parts = urlsplit(url or "")
+    if "utm_" not in parts.query:
+        return url or ""
+    query = "&".join(p for p in parts.query.split("&") if p and not p.lower().startswith("utm_"))
+    return urlunsplit(parts._replace(query=query))
+
+
+def merge_feed_items(existing, entries, today, keep_days=None, max_items=None):
+    """The post list to store for one org: what was stored before plus what
+    the feed lists now, deduplicated by URL, pruned to posts published within
+    keep_days of today, newest first, capped at max_items.
+
+    Merged rather than replaced because a feed only lists its latest N
+    posts: an org that publishes more than that between two reads would
+    otherwise lose the middle ones before anyone reviewed them. A post the
+    feed still lists wins over its stored copy, so a retitled post updates.
+    """
+    keep_days = FEED_ITEMS_KEEP_DAYS if keep_days is None else keep_days
+    max_items = FEED_ITEMS_MAX if max_items is None else max_items
+    fresh = [{"date": e["published"].isoformat(), "title": e["title"], "url": strip_tracking(e["link"])}
+             for e in entries]
+    merged = {}
+    for item in list(existing or []) + fresh:
+        merged[_feed_item_key(item)] = item
+    cutoff = (today - timedelta(days=keep_days)).isoformat()
+    kept = [i for i in merged.values() if str(i.get("date", "")) >= cutoff]
+    kept.sort(key=lambda i: (str(i["date"]), i.get("title", ""), i.get("url", "")), reverse=True)
+    return kept[:max_items]
+
+
+# --- Per-org feed state: docs/data/feeds/<slug>.json ------------------------
+#
+#   feed     the feed URL last read (mirrors rss_feed:)
+#   latest   newest post the feed listed on its last successful read, even
+#            one old enough to be pruned from `items`; null when it listed
+#            nothing. How the checkup tells a dormant feed from an empty one.
+#   span_days  days between the oldest and newest post the feed listed on
+#            that read, when it listed at least BUSY_MIN_POSTS. How
+#            feed_due() tells a feed that turns over within a month (read
+#            weekly) from the usual kind (read monthly).
+#   items    recent posts, [{date, title, url}] (see merge_feed_items)
+#   fetch    {etag, last_modified} from the last successful read, sent back
+#            as a conditional GET
+#   failing  a backoff.py failure record while reads are failing
+#   probed   (org with no feed) the date discovery last ran
+#   sitemap  (org with no feed) the sitemap discovery found, read monthly
+#
+# Dates, titles and links only: no summaries or post text, the same reason
+# citation-state.json holds hashes rather than page bodies. There's no
+# "checked" date, so a file only changes when something in it does; when a
+# feed was last read is the org's activity.rss.checked, written in the same
+# pass. One file per org rather than one shared file, so a local run and the
+# cron rarely touch the same file.
+
+_STATE_KEYS = ("feed", "latest", "span_days", "items", "fetch", "failing", "probed", "sitemap")
+
+
+def _as_date(value):
+    return parse_date(str(value)) if value else None
+
+
+def load_feed_state(slug, feeds_dir=None):
+    path = os.path.join(feeds_dir or FEEDS_DIR, f"{slug}.json")
     try:
-        root = ET.fromstring(r.content)
+        with open(path, encoding="utf-8") as f:
+            data = json.load(f)
+    except (OSError, ValueError):
+        return {}
+    return data if isinstance(data, dict) else {}
+
+
+def write_feed_state(slug, state, feeds_dir=None):
+    """Write one org's state in a fixed key order; returns True if the file
+    changed. An unchanged state leaves the file alone, so a quiet week makes
+    no commit."""
+    feeds_dir = feeds_dir or FEEDS_DIR
+    path = os.path.join(feeds_dir, f"{slug}.json")
+    ordered = {k: state[k] for k in _STATE_KEYS if k in state}
+    text = json.dumps(ordered, indent=2, ensure_ascii=False) + "\n"
+    try:
+        with open(path, encoding="utf-8") as f:
+            if f.read() == text:
+                return False
+    except OSError:
+        pass
+    os.makedirs(feeds_dir, exist_ok=True)
+    with open(path, "w", encoding="utf-8") as f:
+        f.write(text)
+    return True
+
+
+def save_feed_items(slug, feed_url, entries, today=None, feeds_dir=None, validators=None):
+    """Record a successful read: merge its posts in, note the newest, keep
+    its validators for next time's conditional GET, and clear any failure
+    record. Returns True if the file changed."""
+    today = today or date.today()
+    state = load_feed_state(slug, feeds_dir)
+    latest = max((e["published"] for e in entries), default=None)
+    state["feed"] = feed_url
+    state["latest"] = latest.isoformat() if latest else None
+    if len(entries) >= BUSY_MIN_POSTS:
+        published = [e["published"] for e in entries]
+        state["span_days"] = (max(published) - min(published)).days
+    else:
+        state.pop("span_days", None)
+    state["items"] = merge_feed_items(state.get("items"), entries, today)
+    if validators:
+        state["fetch"] = dict(validators)
+    else:
+        state.pop("fetch", None)
+    state.pop("failing", None)
+    for key in ("probed", "sitemap"):  # discovery bookkeeping; it has a feed now
+        state.pop(key, None)
+    return write_feed_state(slug, state, feeds_dir)
+
+
+def mark_feed_unchanged(slug, feeds_dir=None):
+    """A 304: the server answered, so any failure record is over."""
+    state = load_feed_state(slug, feeds_dir)
+    if state.pop("failing", None) is not None:
+        write_feed_state(slug, state, feeds_dir)
+
+
+def record_feed_failure(slug, feed_url, error, today=None, feeds_dir=None):
+    """Record a failed read (see backoff.py) and return the failure record.
+    Posts saved by earlier reads are kept."""
+    state = load_feed_state(slug, feeds_dir)
+    state["feed"] = feed_url
+    state["failing"] = backoff.record_failure(state.get("failing"), error, today)
+    write_feed_state(slug, state, feeds_dir)
+    return state["failing"]
+
+
+def record_discovery(slug, sitemap_url, today=None, feeds_dir=None):
+    """Record that discovery ran for an org with no feed, and the sitemap it
+    found (or that it found none)."""
+    state = load_feed_state(slug, feeds_dir)
+    state["probed"] = (today or date.today()).isoformat()
+    if sitemap_url:
+        state["sitemap"] = sitemap_url
+    else:
+        state.pop("sitemap", None)
+    write_feed_state(slug, state, feeds_dir)
+
+
+def feed_due(state, rss_checked, today):
+    """(due, why) for an org with a feed. A failing feed waits out its
+    backoff. Otherwise a feed is read monthly; weekly if it turns over
+    within BUSY_SPAN_DAYS, and quarterly once it's dormant or empty (see the
+    constants at the top of this file)."""
+    failing = state.get("failing")
+    if failing:
+        if backoff.backing_off(failing, today):
+            return False, (f"failing ({failing.get('error')}) since {failing.get('since')}, "
+                           f"next try {backoff.next_try(failing)}")
+        return True, f"retrying, failing since {failing.get('since')}"
+    interval = FEED_RECHECK_DAYS
+    if "latest" in state:
+        latest = _as_date(state["latest"])
+        span = state.get("span_days")
+        if latest is None or (today - latest).days > DORMANT_FEED_DAYS:
+            interval = DORMANT_RECHECK_DAYS
+        elif isinstance(span, int) and span < BUSY_SPAN_DAYS:
+            interval = RECHECK_DAYS
+    checked = _as_date(rss_checked)
+    if checked and (today - checked).days < interval:
+        return False, f"checked {(today - checked).days}d ago"
+    return True, ""
+
+
+def discovery_action(slug, state, sitemap_checked, today):
+    """What to do this run for an org with no `rss_feed:`: ("probe", None) to
+    run discovery, ("sitemap", url) to read just its known sitemap, or
+    ("skip", why)."""
+    window = FEED_REPROBE_DAYS - backoff.spread_days(slug, FEED_REPROBE_DAYS)
+    probed = _as_date(state.get("probed"))
+    if probed is None or (today - probed).days >= window:
+        return "probe", None
+    sitemap = state.get("sitemap")
+    if sitemap:
+        checked = _as_date(sitemap_checked)
+        if checked is None or (today - checked).days >= SITEMAP_RECHECK_DAYS:
+            return "sitemap", sitemap
+        return "skip", f"no feed; sitemap read {(today - checked).days}d ago"
+    return "skip", (f"no feed found {(today - probed).days}d ago, "
+                    f"next look in {window - (today - probed).days}d")
+
+
+_DC_DATE = "{http://purl.org/dc/elements/1.1/}date"
+
+
+def _atom_post_link(entry, ns):
+    """The post's own page. Atom entries often carry several <link>s, and
+    the first isn't always the post: Blogger's list rel="replies" and
+    rel="edit" ahead of rel="alternate". Falls back to the first link,
+    then to <id>."""
+    links = entry.findall(f"{ns}link")
+    for el in links:
+        if el.get("rel") in (None, "alternate") and el.get("href"):
+            return el.get("href")
+    if links and links[0].get("href"):
+        return links[0].get("href")
+    return entry.findtext(f"{ns}id") or ""
+
+
+def parse_feed_entries(content):
+    """Every dated item in an RSS 2.0 or Atom document, in feed order, as
+    dicts: date, published, title, link.
+
+    `date` is what the activity check has always keyed on (Atom's <updated>
+    before <published>). `published` is when the post first went out, where
+    the feed says so separately; it's what a news checkup wants, since an
+    old post edited today isn't new. Undated items are dropped.
+    Returns [] for anything that doesn't parse as XML.
+    """
+    return _parse_feed(content) or []
+
+
+def _parse_feed(content):
+    """parse_feed_entries(), but None rather than [] when the document isn't
+    XML at all, so fetch_feed() can tell a broken feed from an empty one."""
+    try:
+        root = ET.fromstring(content)
     except ET.ParseError:
-        return None, None, None, True
+        return None
 
     local = re.sub(r"\{[^}]*\}", "", root.tag).lower()
     ns = root.tag.split("}")[0] + "}" if root.tag.startswith("{") else ""
@@ -351,30 +698,24 @@ def latest_from_feed(url, timeout=10, session=None):
     if local == "rss":
         for item in root.findall(".//item"):
             title = (item.findtext("title") or "").strip()
-            pubdate = (item.findtext("pubDate")
-                       or item.findtext("{http://purl.org/dc/elements/1.1/}date"))
-            link = item.findtext("link") or ""
-            d = parse_date(pubdate)
+            d = parse_date(item.findtext("pubDate") or item.findtext(_DC_DATE))
+            link = (item.findtext("link") or "").strip()
+            if not link:
+                guid = (item.findtext("guid") or "").strip()
+                if guid.startswith(("http://", "https://")):
+                    link = guid
             if d:
-                entries.append((d, title, link))
+                entries.append({"date": d, "published": d, "title": title, "link": link})
     elif local == "feed":
         for entry in root.findall(f"{ns}entry"):
             title_el = entry.find(f"{ns}title")
             title = (title_el.text or "").strip() if title_el is not None else ""
-            updated = (entry.findtext(f"{ns}updated")
-                       or entry.findtext(f"{ns}published"))
-            link_el = entry.find(f"{ns}link")
-            link = link_el.get("href", "") if link_el is not None else ""
-            if not link:
-                link = entry.findtext(f"{ns}id") or ""
-            d = parse_date(updated)
+            published = parse_date(entry.findtext(f"{ns}published"))
+            d = parse_date(entry.findtext(f"{ns}updated")) or published
             if d:
-                entries.append((d, title, link))
-
-    if not entries:
-        return None, None, None, True
-    entries.sort(key=lambda x: x[0], reverse=True)
-    return (*entries[0], True)
+                entries.append({"date": d, "published": published or d, "title": title,
+                                "link": _atom_post_link(entry, ns)})
+    return entries
 
 
 def update_activity_source(path, date_str, note, feed_url, post_url=None, method="rss"):
@@ -647,88 +988,131 @@ def main():
 
     print(f"\nProbing {len(orgs)} org websites for feeds (timeout={args.timeout}s)…\n")
 
+    today = date.today()
     for i, org in enumerate(orgs, 1):
         slug = org["slug"]
+        prefix = f"  [{i:3d}/{len(orgs)}] {slug} … "
         if args.skip_existing and org["rss_feed"]:
             skipped.append(org)
             print(f"  [{i:3d}/{len(orgs)}] SKIP  {slug} (already has rss_feed)")
             continue
 
-        # Skip orgs checked recently unless --force
-        if not args.force and args.update_activity:
-            activity = org.get("activity", {})
-            recent_age = None
-            for chk_method in ("rss", "sitemap"):
-                entry = activity.get(chk_method) or {}
-                chk_date = parse_date(str(entry.get("checked", "") or ""))
-                if chk_date:
-                    age = (datetime.today().date() - chk_date).days
-                    if age <= 7:
-                        recent_age = age
-                        break
-            if recent_age is not None:
-                print(f"  [{i:3d}/{len(orgs)}] {slug} … SKIPPED (checked {recent_age}d ago)")
+        activity = org.get("activity") or {}
+        state = load_feed_state(slug) if args.update_activity else {}
+        feed_url = org["rss_feed"]
+        sitemap_url = None
+
+        # Is this org due? A feed is read monthly (weekly if it turns over
+        # faster, quarterly once dormant) and a failing one waits out its
+        # backoff; an org with no feed is probed at most every
+        # FEED_REPROBE_DAYS and otherwise only has its known sitemap read.
+        # See feed_due() / discovery_action().
+        if args.update_activity and not args.force:
+            if feed_url:
+                due, why = feed_due(state, (activity.get("rss") or {}).get("checked"), today)
+            else:
+                action, detail = discovery_action(
+                    slug, state, (activity.get("sitemap") or {}).get("checked"), today)
+                due, why = action != "skip", detail
+                if action == "sitemap":
+                    sitemap_url = detail
+            if not due:
+                print(prefix + f"SKIPPED ({why})")
                 skipped.append(org)
                 results.append({**org, "feed_url": None, "skipped_checked": True})
                 continue
 
-        # Use existing rss_feed if present, otherwise probe
-        feed_url = org["rss_feed"] or probe_feeds(org["website"], timeout=args.timeout, session=session)
-
-        print(f"  [{i:3d}/{len(orgs)}] {slug} … ", end="", flush=True)
-
-        # An already-configured rss_feed: skips probe_feeds()'s own gating
-        # above, so re-check here — the site's robots.txt may have changed
-        # since the feed was recorded.
-        if feed_url and not robots_allowed(feed_url, DOD_USER_AGENT, timeout=args.timeout, session=session):
-            print(f"BLOCKED by robots.txt  {feed_url}")
-            skipped.append(org)
-            results.append({**org, "feed_url": None, "skipped_robots": True})
-            continue
-
-        result = {**org, "feed_url": feed_url}
-
-        if feed_url:
-            if args.update_activity:
-                if is_sitemap_url(feed_url):
-                    d = latest_sitemap_lastmod(feed_url, timeout=args.timeout, session=session)
-                    if d:
-                        if not update_activity_source(org["path"], d.isoformat(),
-                                                      "Page last modified (from sitemap)", feed_url,
-                                                      method="sitemap"):
-                            write_checked_only(org["path"], "sitemap")
-                        print(f"SITEMAP  {d}")
-                        result["latest_date"] = d.isoformat()
-                    else:
-                        write_checked_only(org["path"], "sitemap", "Sitemap found, no lastmod")
-                        print(f"SITEMAP (no lastmod)  {feed_url}")
-                else:
-                    d, title, link, http_ok = latest_from_feed(feed_url, timeout=args.timeout, session=session)
-                    if d:
-                        note = f"Latest post: {title[:80]}" if title else "RSS feed active"
-                        if not update_activity_source(org["path"], d.isoformat(), note, feed_url, link or None):
-                            write_checked_only(org["path"], "rss")
-                        print(f"UPDATED  {d}  {title[:50]}")
-                        result["latest_date"] = d.isoformat()
-                        result["latest_title"] = title
-                    elif http_ok:
-                        # Feed responded 200 but no parseable posts; upgrade any placeholder
-                        # note so the entry at least reads as "RSS feed active" rather than
-                        # "RSS feed discovered" (the old probe-only placeholder).
-                        update_activity_source(org["path"], TODAY, "RSS feed active",
-                                               feed_url, method="rss")
-                        print(f"FOUND (no parseable posts)  {feed_url}")
-                    else:
-                        print(f"UNREACHABLE (keeping existing activity)  {feed_url}")
+        # Discovery. A feed it finds is saved as rss_feed:, so from the next
+        # run on this org is read like any other feed rather than rediscovered.
+        if not feed_url and not sitemap_url:
+            found_url = probe_feeds(org["website"], timeout=args.timeout, session=session)
+            if found_url and not is_sitemap_url(found_url):
+                feed_url = found_url
+                if args.update_activity:
+                    write_rss_feed(org["path"], found_url)
             else:
-                print(f"FOUND  {feed_url}")
-            found.append(result)
-        else:
+                sitemap_url = found_url
+                if args.update_activity:
+                    record_discovery(slug, found_url, today)
+
+        print(prefix, end="", flush=True)
+        target = feed_url or sitemap_url
+        result = {**org, "feed_url": target}
+
+        if not target:
             if args.update_activity:
                 write_checked_only(org["path"], "rss", "No feed found")
             print("not found")
             not_found.append(result)
+            results.append(result)
+            time.sleep(0.3)
+            continue
 
+        # An already-configured rss_feed: skips probe_feeds()'s own gating
+        # above, so re-check here — the site's robots.txt may have changed
+        # since the feed was recorded. A disallow is backed off like any
+        # other failure, so robots.txt isn't re-asked every week either.
+        if not robots_allowed(target, DOD_USER_AGENT, timeout=args.timeout, session=session):
+            print(f"BLOCKED by robots.txt  {target}")
+            if args.update_activity and feed_url:
+                record_feed_failure(slug, feed_url, "ROBOTS_DISALLOWED", today)
+            elif args.update_activity:
+                record_discovery(slug, None, today)  # forget the sitemap until the next probe
+            skipped.append(org)
+            results.append({**org, "feed_url": None, "skipped_robots": True})
+            continue
+
+        if not args.update_activity:
+            print(f"FOUND  {target}")
+            found.append(result)
+            results.append(result)
+            time.sleep(0.3)
+            continue
+
+        if sitemap_url:
+            d = latest_sitemap_lastmod(sitemap_url, timeout=args.timeout, session=session)
+            if d:
+                if not update_activity_source(org["path"], d.isoformat(),
+                                              "Page last modified (from sitemap)", sitemap_url,
+                                              method="sitemap"):
+                    write_checked_only(org["path"], "sitemap")
+                print(f"SITEMAP  {d}")
+                result["latest_date"] = d.isoformat()
+            else:
+                write_checked_only(org["path"], "sitemap", "Sitemap found, no lastmod")
+                print(f"SITEMAP (no lastmod)  {sitemap_url}")
+        else:
+            res = fetch_feed(feed_url, timeout=args.timeout, session=session,
+                             validators=state.get("fetch"))
+            if res["status"] == "not_modified":
+                # Nothing new since the last read, and the server didn't have
+                # to send the feed again to say so.
+                mark_feed_unchanged(slug)
+                write_checked_only(org["path"], "rss")
+                print("UNCHANGED (304)")
+            elif res["status"] == "ok":
+                entries = res["entries"]
+                save_feed_items(slug, feed_url, entries, today, validators=res["validators"])
+                d, title, link = latest_entry(entries)
+                if d:
+                    note = f"Latest post: {title[:80]}" if title else "RSS feed active"
+                    if not update_activity_source(org["path"], d.isoformat(), note, feed_url, link or None):
+                        write_checked_only(org["path"], "rss")
+                    print(f"UPDATED  {d}  {title[:50]}")
+                    result["latest_date"] = d.isoformat()
+                    result["latest_title"] = title
+                else:
+                    # Feed responded but lists no dated posts; upgrade any placeholder
+                    # note so the entry at least reads as "RSS feed active" rather than
+                    # "RSS feed discovered" (the old probe-only placeholder).
+                    update_activity_source(org["path"], TODAY, "RSS feed active",
+                                           feed_url, method="rss")
+                    print(f"FOUND (no parseable posts)  {feed_url}")
+            else:
+                failing = record_feed_failure(slug, feed_url, res["error"], today)
+                print(f"FAILING ({res['error']}, {failing['count']} in a row; "
+                      f"next try {backoff.next_try(failing)})  {feed_url}")
+        found.append(result)
         results.append(result)
         time.sleep(0.3)
 
@@ -747,7 +1131,7 @@ def main():
                     chk_date = parse_date(str(entry.get("checked", "") or ""))
                     if chk_date:
                         age = (datetime.today().date() - chk_date).days
-                        if age <= 7:
+                        if age < RECHECK_DAYS:
                             print(f"SKIPPED (checked {age}d ago)")
                             continue
 
@@ -772,7 +1156,7 @@ def main():
     print(f"\n{'='*60}")
     print(f"Found feeds for {len(found)} / {len(orgs) - len(skipped)} orgs checked")
     if skipped:
-        print(f"Skipped {len(skipped)} orgs (already have rss_feed:)")
+        print(f"Skipped {len(skipped)} orgs (not due yet, backing off, robots.txt, or --skip-existing)")
 
     if args.output:
         with open(args.output, "w") as f:
