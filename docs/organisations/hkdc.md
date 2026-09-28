@@ -60,10 +60,14 @@ activity:
       10, 2026 ''Crossing a New Line: The Conviction of Anna Kwok’s Father'''
     url: https://www.hkdc.us/news
   dod:
-    date: 2026-09-14
-    note: Site live, confirmed active
+    date: 2026-09-28
+    note: Website confirmed live and reachable; news page's most recent item is still
+      10 Feb 2026 (unchanged from the 2026-06-07 manual check), so no new content
+      in 7+ months. Corroborated org is still operating via LinkedIn/Wikipedia (current
+      ED Anna Kwok, Board Chair Brian Leung) — no sign of closure, but the news gap
+      is worth another look on a future pass. Contact email matches frontmatter.
     url: https://www.hkdc.us
-    checked: 2026-09-14
+    checked: 2026-09-28
   scrape:
     checked: 2026-09-25
     date: 2026-02-09
@@ -74,7 +78,7 @@ activity:
     note: Page last modified (from sitemap)
     url: https://www.hkdc.us/sitemap.xml
     checked: 2026-09-25
-last_checked: '2026-09-14'
+last_checked: '2026-09-28'
 ---
 
 > **Note:** HKDC operates from diaspora in Washington DC. It is included here because its work is specifically about a particular governance system — the accountability structures promised to Hong Kong under One Country, Two Systems — rather than general human rights documentation.

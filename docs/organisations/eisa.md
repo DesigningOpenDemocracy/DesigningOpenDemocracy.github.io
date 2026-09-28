@@ -55,18 +55,19 @@ events:
   type: training
 activity:
   dod:
-    date: 2026-09-13
-    note: Website confirmed active — recent news and Abidjan regional office noted;
-      contact info matches frontmatter.
+    date: 2026-09-28
+    note: Website confirmed active — latest news item 26 Aug 2026 (South Africa local
+      government reform). No upcoming events advertised on homepage. Contact info
+      (email/phone/form) matches frontmatter.
     url: https://www.eisa.org
-    checked: 2026-09-13
+    checked: 2026-09-28
   rss:
     date: 2026-08-26
     note: 'Latest post: From Coalition Chaos to Democratic Stability: Reforming South
       Africa’s Local Gov'
     url: https://www.eisa.org/from-coalition-chaos-to-democratic-stability-reforming-south-africas-local-government/
     checked: 2026-09-25
-last_checked: '2026-09-13'
+last_checked: '2026-09-28'
 ---
 
 EISA (Electoral Institute for Sustainable Democracy in Africa) is an independent, non-partisan organisation founded in 1996, headquartered in Johannesburg with a regional office in Abidjan, Côte d'Ivoire. It works across sub-Saharan Africa supporting electoral processes and democratic institution-building.

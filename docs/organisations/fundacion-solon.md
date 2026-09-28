@@ -45,16 +45,18 @@ events:
   url_checked: '2026-08-17'
 activity:
   dod:
-    date: 2026-09-14
-    note: Site live, confirmed active
+    date: 2026-09-28
+    note: Website confirmed active — most recent post dated today, 28 Sept 2026 ('40%
+      de Bolivia para los mineros'). Contact email verified present on /contact page,
+      matches frontmatter. No upcoming events advertised.
     url: https://fundacionsolon.org
-    checked: 2026-09-14
+    checked: 2026-09-28
   rss:
     date: 2026-09-07
     note: 'Latest post: 40% de Bolivia para los mineros'
     url: https://fundacionsolon.org/40-de-bolivia-para-los-mineros/
     checked: 2026-09-25
-last_checked: '2026-09-14'
+last_checked: '2026-09-28'
 ---
 
 Fundación Solón is a Bolivian research and advocacy foundation established by Pablo Solón, who served as Bolivia's Ambassador to the United Nations under President Evo Morales and as a lead negotiator on climate and trade agreements. After leaving government, Solón founded the organisation to develop and critically examine **Vivir Bien** (Buen Vivir) as a governance theory — assessing both its constitutional articulation and how it functions (or fails to function) in practice.

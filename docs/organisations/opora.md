@@ -45,11 +45,14 @@ events:
   notable_reason: Large-scale election observation deployment
 activity:
   dod:
-    date: 2026-09-13
-    note: Website confirmed active — Sept 2026 content incl. international voter-register-accuracy
-      workshop; contact info matches frontmatter.
+    date: 2026-09-28
+    note: 'Website confirmed active — latest news 3 Sept 2026 (voter-register-accuracy
+      workshop). Checked /en/page/contacts: recorded info@opora.org.ua email still
+      current; also found a Poland-office phone (+48 690 848 019) for the War Crimes
+      Documentation Center specifically, not a general org line, so not added as the
+      primary contact phone. No upcoming events advertised.'
     url: https://oporaua.org/en
-    checked: 2026-09-13
+    checked: 2026-09-28
   rss:
     checked: 2026-09-25
     note: No feed found
@@ -58,7 +61,7 @@ activity:
     note: Latest news page scraped
     url: https://oporaua.org/en/announce
     checked: 2026-09-25
-last_checked: '2026-09-13'
+last_checked: '2026-09-28'
 ---
 
 Civil Network OPORA is Ukraine's primary independent election observation and civic oversight organisation, founded in 2006. It conducts comprehensive long-term and short-term election observation for presidential, parliamentary, and local elections, and publishes detailed analytical reports on each electoral cycle.

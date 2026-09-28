@@ -6,8 +6,9 @@ country: IN
 website: https://www.janaagraha.org
 logo: /assets/org-logos/janaagraha.svg
 contact:
-  checked: 2026-08-01
+  checked: 2026-09-28
   email: info@janaagraha.org
+  phone: +91 80 4120 0844
   source: https://www.janaagraha.org/get-involved
 summary: A Bangalore-based organisation working on urban civic participation and local
   government reform in India — connecting citizens to municipal processes through
@@ -50,16 +51,19 @@ events:
   type: launch
 activity:
   dod:
-    date: 2026-09-14
-    note: Site live, confirmed active
+    date: 2026-09-28
+    note: Website confirmed active. Homepage banner still promotes an 'Urban Conclave'
+      dated 18 March 2026, now 6+ months past — stale banner, not evidence of inactivity
+      (site otherwise live, contact form functional). Added phone +91 80 4120 0844,
+      found publicly on /get-involved alongside the already-recorded email.
     url: https://www.janaagraha.org
-    checked: 2026-09-14
+    checked: 2026-09-28
   rss:
     date: 2026-05-14
     note: 'Latest post: Too Many Cooks in the Urban Services Kitchen'
     url: https://www.janaagraha.org/too-many-cooks-in-the-urban-services-kitchen/
     checked: 2026-09-25
-last_checked: '2026-09-14'
+last_checked: '2026-09-28'
 ---
 
 Janaagraha Centre for Citizenship and Democracy was founded in December 2001 by Swati and Ramesh Ramanathan in Bangalore. It works to strengthen the relationship between urban citizens and local government, with a focus on ward-level democratic participation and municipal transparency.

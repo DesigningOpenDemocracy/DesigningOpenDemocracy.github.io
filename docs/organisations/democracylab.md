@@ -50,18 +50,19 @@ activity:
       Sep 2025 '10,000 Volunteers and Counting!'
     url: https://blog.democracylab.org/10-000-volunteers-and-counting/
   dod:
-    date: 2026-09-13
-    note: Site is a JS-rendered SPA (200 OK, shell only to plain fetch); corroborated
-      active via MIT Solve/blog/GitHub — 7,000+ volunteers, 300+ projects matches
-      summary.
+    date: 2026-09-28
+    note: Site is a JS-rendered SPA (loads a bare shell to a plain fetch); corroborated
+      active via LinkedIn company page, civictech.guide directory listing and esal.us
+      profile (7,000+ volunteers, 300+ projects, consistent with recorded summary).
+      No new events found.
     url: https://www.democracylab.org
-    checked: 2026-09-13
+    checked: 2026-09-28
   sitemap:
     date: 2026-09-25
     note: Page last modified (from sitemap)
     url: https://www.democracylab.org/sitemap.xml
     checked: 2026-09-25
-last_checked: '2026-09-13'
+last_checked: '2026-09-28'
 ---
 
 DemocracyLab is a Seattle-based 501(c)(3) non-profit that operates an online platform connecting skilled volunteers with civic technology projects. It functions as infrastructure for the broader civic tech movement, matching developers, designers, researchers, and communications professionals with tech-for-good initiatives that need their skills.
