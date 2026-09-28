@@ -181,7 +181,13 @@ org's `events:` (see CLAUDE.md's `notable:` tiers and its Landscape News
 section), since that is what reaches Landscape News. Feeds are not piped
 into News because they'd flood it: job ads, newsletters, petitions, event
 reminders, polling roundups and routine commentary all stay where they are.
-Expect most runs to add nothing, or one or two items. For each item you do add:
+Expect most runs to add nothing, or one or two items. The worklist opens
+with a "Start here" list of posts whose title or excerpt carries a
+worth-a-look keyword (a launch, a report, a leadership change, a court
+ruling...) or names another Landscape org, and each post below is tagged the
+same way, with routine ones (job ads, appeals, newsletters) marked. Start
+there, but read the rest of the list too: the tags are keyword hints, not a
+verdict, and a post with no tag can still be News. For each item you do add:
 - open the post itself and take the `quote:`/`note:` from its text, not
   from the feed title (a feed title is a lead, not a source);
 - set a `notable:` tier and a `notable_reason:`;
