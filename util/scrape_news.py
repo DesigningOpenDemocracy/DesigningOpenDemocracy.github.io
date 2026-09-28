@@ -802,11 +802,14 @@ def main():
             if existing_hint in ("spa", "bot_blocked"):
                 print(f"SKIP [{existing_hint}]")
                 continue
-            # Recency skip: checked within the last 7 days
+            # Recency skip: checked within the last 6 days. Strictly less
+            # than 7, since the weekly cron runs exactly 7 days after the run
+            # that stamped `checked:` (see check_rss.py's RECHECK_DAYS, which
+            # had the same off-by-one: `<= 7` meant every other week).
             chk_date = parse_date(str(entry.get("checked", "") or ""))
             if chk_date:
                 age = (datetime.strptime(TODAY, "%Y-%m-%d").date() - chk_date).days
-                if age <= 7:
+                if age < 7:
                     print(f"SKIPPED (checked {age}d ago)")
                     continue
 

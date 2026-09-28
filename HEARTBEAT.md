@@ -171,6 +171,33 @@ happens to run it by hand. Cheap because only orgs with `ics_feed:` set are
 touched (one, as of 2026-09) — this scales with adoption, not with the
 size of the staleness queue.
 
+**News intake, every run:** `python util/news_checkup.py` lists what orgs
+have posted to their own feeds since the last review. It's offline: it reads
+the posts the weekly cron saved while reading those feeds
+(`docs/data/feed-items/`), so it doesn't cut across the cron-owns-collection
+rule above. The cron also prints the same list in its job summary.
+Go through it and move **only what clears the `notable:` bar** into that
+org's `events:` (see CLAUDE.md's `notable:` tiers and its Landscape News
+section), since that is what reaches Landscape News. Feeds are not piped
+into News because they'd flood it: job ads, newsletters, petitions, event
+reminders, polling roundups and routine commentary all stay where they are.
+Expect most runs to add nothing, or one or two items. For each item you do add:
+- open the post itself and take the `quote:`/`note:` from its text, not
+  from the feed title (a feed title is a lead, not a source);
+- set a `notable:` tier and a `notable_reason:`;
+- date it the day it was published or announced — except a post announcing
+  a future event, which goes in as the event itself, on its own date (so it
+  lands on the calendar).
+
+When unsure whether something clears the bar, leave it: a missed item costs
+less than a flooded feed, and a human can still add it. Then run
+`python util/news_checkup.py --mark-reviewed` and commit
+`docs/data/news-checkup-state.json` with the run's other changes. Put the
+tally in the post's Working notes, e.g. "News intake: 49 posts reviewed,
+1 added". The worklist's "Feeds with no posts" and "Not collected yet"
+lines are maintenance findings in their own right (a moved or broken
+`rss_feed:`), worth fixing like any stale field.
+
 ### 3. Surface tag gaps
 
 ```bash
@@ -521,7 +548,9 @@ until the run on `main` is confirmed green.
 ## Push permissions
 
 **Push direct to main** for everything a routine maintenance run produces:
-- Org page edits from the staleness queue (summary, concepts, location, status)
+- Org page edits from the staleness queue (summary, concepts, location, status),
+  and notable `events:` added from the news intake, with the
+  `news-checkup-state.json` that records the review
 - Concept pages and tag additions
 - AI-authored sync posts (`docs/heartbeat/posts/YYYY-MM-sync.md`)
 - The live draft preview (`docs/heartbeat/current.md`) — never in a feed,

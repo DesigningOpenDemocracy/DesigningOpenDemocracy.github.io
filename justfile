@@ -75,6 +75,7 @@ _maintenance-pass contact_skip_flag: _deps
     @echo ""
     @echo "Still worth doing by hand:"
     @echo "  just review-orgs               # interactive: opens each org site in your browser"
+    @echo "  just news-checkup              # org posts since the last review: move any real news into events:, then --mark-reviewed"
     @echo "  just discover-elections        # report-only: elections.yml gaps"
     @echo "  just maintenance-human-in-loop  # also re-checks orgs that already have a contact record, not just gaps"
     @echo "  just contact-probe-deep --slug <org>   # SPA org site still missing contact info? (needs: just setup-playwright, once)"
@@ -287,6 +288,11 @@ discover-elections *args="": _deps
     {{python}} util/discover_elections.py {{args}}
 
 # --- Interactive / editorial tools ---
+
+# Org posts since the last review, to pick Landscape News from by hand (offline; --mark-reviewed after)
+[group('editorial tools')]
+news-checkup *args="": _deps
+    {{python}} util/news_checkup.py {{args}}
 
 # Interactive review of org statuses in your browser (writes activity.manual)
 [group('editorial tools')]

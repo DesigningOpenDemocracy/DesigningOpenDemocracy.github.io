@@ -1,0 +1,26 @@
+{
+  "feed": "https://decidim.org/blog/feed.xml",
+  "latest": "2026-07-06",
+  "items": [
+    {
+      "date": "2026-07-06",
+      "title": "Decidim and the New York City Civic Engagement Commission formalise Partnership with a Memorandum of Understanding",
+      "url": "https://decidim.org/blog/2026-07-06-decidim-and-the-new-york-city-civic-engagement-commission-formalise-partnership-with-a-memorandum-of-understanding/"
+    },
+    {
+      "date": "2026-07-03",
+      "title": "New release 0.32.",
+      "url": "https://decidim.org/blog/2026-07-03-new-release-0-32/"
+    },
+    {
+      "date": "2026-06-23",
+      "title": "The Decidim Swiss Local Chapter Is Born",
+      "url": "https://decidim.org/blog/2026-06-23-the-decidim-swiss-local-chapter-is-born/"
+    },
+    {
+      "date": "2026-04-07",
+      "title": "Nos infrastructures démocratiques ne peuvent pas être propriétaires : à propos de l'acquisition d'Open Source Politics",
+      "url": "https://decidim.org/blog/2026-04-07-nos-infrastructures-democratiques-ne-peuvent-pas-etre-proprietaires-a-propos-de-l-acquisition-d-open-source-politics/"
+    }
+  ]
+}

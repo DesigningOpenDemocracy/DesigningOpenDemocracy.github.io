@@ -24,9 +24,9 @@ import os
 import re
 import sys
 import time
-from datetime import datetime
+from datetime import datetime, timedelta
 from email.utils import parsedate_to_datetime
-from urllib.parse import urljoin, urlparse
+from urllib.parse import urljoin, urlparse, urlsplit, urlunsplit
 from urllib.robotparser import RobotFileParser
 from xml.etree import ElementTree as ET
 
@@ -54,6 +54,24 @@ ORGS_DIR = os.path.join(DOCS_DIR, "organisations")
 SKIP_FILES = {"index.md"}
 WAYBACK_PREFIX = "https://web.archive.org"
 TODAY = datetime.today().strftime("%Y-%m-%d")
+
+# An org read this many days ago or more is read again; anything more recent
+# is skipped (--force overrides). Strictly less-than on purpose: the weekly
+# cron fires exactly 7 days after the run that stamped `checked:`, and a
+# `<= 7` here skipped every org on alternate weeks, so feeds were really read
+# fortnightly (the 2026-09-18 run touched 4 org pages; the runs either side,
+# 139). A scheduled run can start late but never early, so the next one sees
+# an age of at least 7 unless this one was delayed past midnight UTC (it's
+# scheduled for 03:00).
+RECHECK_DAYS = 7
+
+# Recent posts from each org's feed, saved on every --update-activity read for
+# util/news_checkup.py (see save_feed_items). Kept for half a year, which is
+# longer than anyone should leave a checkup, and capped so one prolific feed
+# can't grow its file without bound.
+FEED_ITEMS_DIR = os.path.join(DOCS_DIR, "data", "feed-items")
+FEED_ITEMS_KEEP_DAYS = 180
+FEED_ITEMS_MAX = 50
 
 # Common feed URL paths to probe (tried in order, stop at first hit)
 FEED_PATHS = [
@@ -324,13 +342,11 @@ def latest_from_ical(url, timeout=10, session=None):
     return entries[0][0], entries[0][1], True
 
 
-def latest_from_feed(url, timeout=10, session=None):
-    """Fetch url and return (date, title, link, http_ok) of the most recent item.
-
-    http_ok is True when the server returned 200 (feed is reachable), False on
-    network errors or non-200 responses.  date/title/link are None when no
-    parseable items were found even though the feed was reachable.
-    """
+def fetch_feed_entries(url, timeout=10, session=None):
+    """Fetch url and return (entries, http_ok): every dated item the feed
+    lists (see parse_feed_entries), and whether the server answered 200.
+    entries is [] both when the fetch failed and when a reachable feed had
+    nothing parseable; http_ok tells the two apart."""
     if session is None:
         session = requests.Session()
         session.headers["User-Agent"] = DOD_USER_AGENT
@@ -338,11 +354,127 @@ def latest_from_feed(url, timeout=10, session=None):
         r = session.get(url, timeout=timeout)
         r.raise_for_status()
     except RequestException:
-        return None, None, None, False
+        return [], False
+    return parse_feed_entries(r.content), True
+
+
+def latest_entry(entries):
+    """(date, title, link) of the most recent entry, or three Nones. The sort
+    is stable, so of several items on the same day the one listed first in
+    the feed wins, as it always has."""
+    if not entries:
+        return None, None, None
+    latest = sorted(entries, key=lambda e: e["date"], reverse=True)[0]
+    return latest["date"], latest["title"], latest["link"]
+
+
+def _feed_item_key(item):
+    return item.get("url") or f"{item.get('date')}|{item.get('title')}"
+
+
+def strip_tracking(url):
+    """Drop utm_* parameters (WordPress's RSS plugins add them to every
+    link), so a link copied from the news checkup into an event's `url:`
+    is the plain citation, not a campaign-tagged one."""
+    parts = urlsplit(url or "")
+    if "utm_" not in parts.query:
+        return url or ""
+    query = "&".join(p for p in parts.query.split("&") if p and not p.lower().startswith("utm_"))
+    return urlunsplit(parts._replace(query=query))
+
+
+def merge_feed_items(existing, entries, today, keep_days=None, max_items=None):
+    """The post list to store for one org: what was stored before plus what
+    the feed lists now, deduplicated by URL, pruned to posts published within
+    keep_days of today, newest first, capped at max_items.
+
+    Merged rather than replaced because a feed only lists its latest N
+    posts: an org that publishes more than that between two reads would
+    otherwise lose the middle ones before anyone reviewed them. A post the
+    feed still lists wins over its stored copy, so a retitled post updates.
+    """
+    keep_days = FEED_ITEMS_KEEP_DAYS if keep_days is None else keep_days
+    max_items = FEED_ITEMS_MAX if max_items is None else max_items
+    fresh = [{"date": e["published"].isoformat(), "title": e["title"], "url": strip_tracking(e["link"])}
+             for e in entries]
+    merged = {}
+    for item in list(existing or []) + fresh:
+        merged[_feed_item_key(item)] = item
+    cutoff = (today - timedelta(days=keep_days)).isoformat()
+    kept = [i for i in merged.values() if str(i.get("date", "")) >= cutoff]
+    kept.sort(key=lambda i: (str(i["date"]), i.get("title", ""), i.get("url", "")), reverse=True)
+    return kept[:max_items]
+
+
+def save_feed_items(slug, feed_url, entries, today=None, items_dir=None):
+    """Merge a feed's current entries into docs/data/feed-items/<slug>.json.
+
+    The cache util/news_checkup.py reads, so the news checkup never has to
+    fetch a feed this script has already downloaded (see that script's
+    docstring). Dates, titles and links only: no summaries or post text,
+    the same reason citation-state.json holds hashes rather than page bodies.
+    `latest` is the newest post the feed listed on this read, even one old
+    enough to have been pruned from `items`, and null when the feed listed
+    nothing: that's how the checkup tells a dormant feed from an empty or
+    broken one. The file carries no "checked" date, so it only changes when
+    the posts do; when the feed was last read is the org's
+    activity.rss.checked, written in the same pass. Returns True if the file
+    changed."""
+    today = today or datetime.today().date()
+    items_dir = items_dir or FEED_ITEMS_DIR
+    path = os.path.join(items_dir, f"{slug}.json")
+    existing = []
+    if os.path.exists(path):
+        try:
+            with open(path, encoding="utf-8") as f:
+                existing = json.load(f).get("items") or []
+        except (OSError, ValueError, AttributeError):
+            existing = []
+    latest = max((e["published"] for e in entries), default=None)
+    data = {"feed": feed_url, "latest": latest.isoformat() if latest else None,
+            "items": merge_feed_items(existing, entries, today)}
+    text = json.dumps(data, indent=2, ensure_ascii=False) + "\n"
+    if os.path.exists(path):
+        with open(path, encoding="utf-8") as f:
+            if f.read() == text:
+                return False
+    os.makedirs(items_dir, exist_ok=True)
+    with open(path, "w", encoding="utf-8") as f:
+        f.write(text)
+    return True
+
+
+_DC_DATE = "{http://purl.org/dc/elements/1.1/}date"
+
+
+def _atom_post_link(entry, ns):
+    """The post's own page. Atom entries often carry several <link>s, and
+    the first isn't always the post: Blogger's list rel="replies" and
+    rel="edit" ahead of rel="alternate". Falls back to the first link,
+    then to <id>."""
+    links = entry.findall(f"{ns}link")
+    for el in links:
+        if el.get("rel") in (None, "alternate") and el.get("href"):
+            return el.get("href")
+    if links and links[0].get("href"):
+        return links[0].get("href")
+    return entry.findtext(f"{ns}id") or ""
+
+
+def parse_feed_entries(content):
+    """Every dated item in an RSS 2.0 or Atom document, in feed order, as
+    dicts: date, published, title, link.
+
+    `date` is what the activity check has always keyed on (Atom's <updated>
+    before <published>). `published` is when the post first went out, where
+    the feed says so separately; it's what a news checkup wants, since an
+    old post edited today isn't new. Undated items are dropped.
+    Returns [] for anything that doesn't parse as XML.
+    """
     try:
-        root = ET.fromstring(r.content)
+        root = ET.fromstring(content)
     except ET.ParseError:
-        return None, None, None, True
+        return []
 
     local = re.sub(r"\{[^}]*\}", "", root.tag).lower()
     ns = root.tag.split("}")[0] + "}" if root.tag.startswith("{") else ""
@@ -351,30 +483,24 @@ def latest_from_feed(url, timeout=10, session=None):
     if local == "rss":
         for item in root.findall(".//item"):
             title = (item.findtext("title") or "").strip()
-            pubdate = (item.findtext("pubDate")
-                       or item.findtext("{http://purl.org/dc/elements/1.1/}date"))
-            link = item.findtext("link") or ""
-            d = parse_date(pubdate)
+            d = parse_date(item.findtext("pubDate") or item.findtext(_DC_DATE))
+            link = (item.findtext("link") or "").strip()
+            if not link:
+                guid = (item.findtext("guid") or "").strip()
+                if guid.startswith(("http://", "https://")):
+                    link = guid
             if d:
-                entries.append((d, title, link))
+                entries.append({"date": d, "published": d, "title": title, "link": link})
     elif local == "feed":
         for entry in root.findall(f"{ns}entry"):
             title_el = entry.find(f"{ns}title")
             title = (title_el.text or "").strip() if title_el is not None else ""
-            updated = (entry.findtext(f"{ns}updated")
-                       or entry.findtext(f"{ns}published"))
-            link_el = entry.find(f"{ns}link")
-            link = link_el.get("href", "") if link_el is not None else ""
-            if not link:
-                link = entry.findtext(f"{ns}id") or ""
-            d = parse_date(updated)
+            published = parse_date(entry.findtext(f"{ns}published"))
+            d = parse_date(entry.findtext(f"{ns}updated")) or published
             if d:
-                entries.append((d, title, link))
-
-    if not entries:
-        return None, None, None, True
-    entries.sort(key=lambda x: x[0], reverse=True)
-    return (*entries[0], True)
+                entries.append({"date": d, "published": published or d, "title": title,
+                                "link": _atom_post_link(entry, ns)})
+    return entries
 
 
 def update_activity_source(path, date_str, note, feed_url, post_url=None, method="rss"):
@@ -663,7 +789,7 @@ def main():
                 chk_date = parse_date(str(entry.get("checked", "") or ""))
                 if chk_date:
                     age = (datetime.today().date() - chk_date).days
-                    if age <= 7:
+                    if age < RECHECK_DAYS:
                         recent_age = age
                         break
             if recent_age is not None:
@@ -703,7 +829,12 @@ def main():
                         write_checked_only(org["path"], "sitemap", "Sitemap found, no lastmod")
                         print(f"SITEMAP (no lastmod)  {feed_url}")
                 else:
-                    d, title, link, http_ok = latest_from_feed(feed_url, timeout=args.timeout, session=session)
+                    entries, http_ok = fetch_feed_entries(feed_url, timeout=args.timeout, session=session)
+                    d, title, link = latest_entry(entries)
+                    if http_ok:
+                        # Saved even when empty, so the news checkup can tell a
+                        # feed that answers with nothing apart from one never read.
+                        save_feed_items(slug, feed_url, entries)
                     if d:
                         note = f"Latest post: {title[:80]}" if title else "RSS feed active"
                         if not update_activity_source(org["path"], d.isoformat(), note, feed_url, link or None):
@@ -747,7 +878,7 @@ def main():
                     chk_date = parse_date(str(entry.get("checked", "") or ""))
                     if chk_date:
                         age = (datetime.today().date() - chk_date).days
-                        if age <= 7:
+                        if age < RECHECK_DAYS:
                             print(f"SKIPPED (checked {age}d ago)")
                             continue
 

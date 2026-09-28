@@ -26,7 +26,10 @@ window, since a 2011 founding is history, not news.
 
 Also deliberately not an aggregation of the orgs' own RSS feeds
 (`rss_feed:`): those are every post an org publishes, which is the
-firehose this page exists to spare readers from.
+firehose this page exists to spare readers from. They're an intake
+instead: util/news_checkup.py lists what orgs have posted since the last
+review, and the few posts that clear the notable: bar are moved into the
+org's events: by hand, which is how they reach this page.
 
 Output (all regenerated every build, gitignored):
   - docs/news.xml               — RSS 2.0, every item
