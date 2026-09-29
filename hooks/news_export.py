@@ -57,7 +57,7 @@ import os
 import re
 import uuid
 import xml.etree.ElementTree as ET
-from datetime import date, datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 from email.utils import format_datetime
 
 try:
@@ -71,11 +71,50 @@ ORGS_DIR = os.path.join(DOCS_DIR, "organisations")
 CONCEPTS_DIR = os.path.join(DOCS_DIR, "concepts")
 SKIP_FILES = {"index.md"}
 
-# How far back an item stays news. A year is long enough that a quiet
-# country's feed isn't permanently empty and short enough that the page
-# reads as "what's been happening", not an archive — the org's own page
-# already carries its full history.
-NEWS_WINDOW_DAYS = 365
+# How far back an item stays news. Three months keeps the page reading as
+# "what's been happening" rather than an archive; the org's own page already
+# carries its full history. It was a year until 2026-09, which put items
+# eleven months old on a page called News. A quiet country's feed may now
+# go empty for a while, but a feed reader keeps the items it has already
+# seen, and the feed URL itself still exists (see feed_slices).
+NEWS_WINDOW_DAYS = 90
+
+# How many days before it starts an event is announced in News, by tier.
+# Only major events are announced ahead: News is what happened, and a
+# heads-up is only worth a place there for the rare flagship-scale event a
+# reader would plan around. Everything else waits for the calendar. A tier
+# missing from this map (or set to 0) is never announced; adding
+# "medium": 7 would give notable events a week's notice. An announced
+# event stays in News while it runs and after it ends, as one item with
+# one guid, so a feed reader sees it once, when it's announced.
+ANNOUNCE_DAYS = {True: 30}
+
+# A major event can ask for more (or less) notice than its tier's default
+# with its own `announce_days:` (an international conference people need to
+# book travel for might want 90). Capped at a year: further out than that,
+# it's the calendar's job, not a news item. Only honoured on a tier
+# ANNOUNCE_DAYS lists, so a notable event can't opt itself in, and the
+# archive (which passes an empty map) never announces anything.
+# util/check_event_sourcing.py fails the build on a value outside this
+# range, since the hook otherwise falls back to the default without a word.
+MAX_ANNOUNCE_DAYS = 365
+
+
+def valid_announce_days(value):
+    """An `announce_days:` value the hook will honour: a whole number of days
+    from 1 to MAX_ANNOUNCE_DAYS. (`true` is excluded explicitly: YAML makes
+    it a bool, and Python counts a bool as an int.)"""
+    return (isinstance(value, int) and not isinstance(value, bool)
+            and 1 <= value <= MAX_ANNOUNCE_DAYS)
+
+
+def announce_lead(entry, tier, announce_days):
+    """Days of notice an event gets in News, or None if it isn't announced."""
+    default = announce_days.get(tier) if tier is not False else None
+    if not default:
+        return None
+    own = entry.get("announce_days")
+    return own if valid_announce_days(own) else default
 
 TIER_LABELS = {True: "Major", "medium": "Notable"}
 
@@ -106,6 +145,7 @@ _tf = _load_module("_news_text_fragment", os.path.join(HOOKS_DIR, "..", "util", 
 COUNTRY_NAMES = _cal._COUNTRY_NAMES
 _notable_tier = _cal._notable_tier
 _parse_date = _cal._parse_date
+_is_current = _cal._is_current
 
 
 def country_name(code):
@@ -170,13 +210,15 @@ def _link_for(url, quote, archive_info):
     return _tf.with_fragment(url, quote), archive_url, url_status
 
 
-def collect_news(orgs, today, window_days=NEWS_WINDOW_DAYS, archive_info=None):
+def collect_news(orgs, today, window_days=NEWS_WINDOW_DAYS, archive_info=None, notable_only=True,
+                 announce_days=None):
     """Recent notable events across every org, newest first.
 
-    An event qualifies when it carries a notable: tier and started before
-    `today` but within `window_days` of it. Anything dated today or later is
-    the calendar's (calendar_export.py takes date >= today), so an event is
-    on exactly one of the two pages at any build.
+    An event qualifies when it carries a notable: tier, has ended (on its
+    end_date where there is one) before `today`, and started within
+    `window_days` of it. Anything still running or ahead is the calendar's
+    (calendar_export._is_current), so an event is on exactly one of the two
+    pages at any build.
 
     Co-hosted events are recorded on each co-host's page, usually under the
     same source URL (DOD's International Day of Democracy panel sits on both
@@ -185,7 +227,21 @@ def collect_news(orgs, today, window_days=NEWS_WINDOW_DAYS, archive_info=None):
     subscriber twice. The first org in filename order supplies the title,
     note and quote; the stronger of the tiers wins; countries and concepts
     are the union.
+
+    The exception is an announcement: a tier listed in `announce_days`
+    (ANNOUNCE_DAYS by default: major events, 30 days, or the event's own
+    `announce_days:`) enters News that many days before it starts, marked `upcoming`, and so for that stretch is on
+    both News and the calendar. Its `announced` date is what the feeds
+    publish it under.
+
+    The Landscape Archive (/archive/) is the same view with the limits off:
+    window_days=None for no cut-off and notable_only=False for every
+    curated event, so the two pages can't disagree about what an item says
+    or where it links. It passes announce_days={}, since it's a record of
+    what has happened.
     """
+    if announce_days is None:
+        announce_days = ANNOUNCE_DAYS
     items = []
     by_key = {}
     for slug, m in orgs:
@@ -193,11 +249,24 @@ def collect_news(orgs, today, window_days=NEWS_WINDOW_DAYS, archive_info=None):
             if not isinstance(entry, dict):
                 continue
             tier = _notable_tier(entry)
-            if tier is False:
+            if tier is False and notable_only:
                 continue
             d = _parse_date(entry.get("date"))
-            if not d or d >= today or (today - d).days > window_days:
+            if not d:
                 continue
+            # The calendar keeps an event until it has ended
+            # (calendar_export._is_current), so news normally starts where
+            # that stops; only an announced tier comes in earlier.
+            upcoming = _is_current(d, _parse_date(entry.get("end_date")), today)
+            if upcoming:
+                lead = announce_lead(entry, tier, announce_days)
+                if not lead or (d - today).days > lead:
+                    continue
+                announced = d - timedelta(days=lead)
+            else:
+                if window_days is not None and (today - d).days > window_days:
+                    continue
+                announced = d
             url = entry.get("url") or ""
             org_title = m.get("title", slug)
             country = entry.get("country") or m.get("country")
@@ -220,6 +289,9 @@ def collect_news(orgs, today, window_days=NEWS_WINDOW_DAYS, archive_info=None):
             item = {
                 "id": news_guid(d, url, slug, title),
                 "date": d,
+                "upcoming": upcoming,
+                "ongoing": upcoming and d <= today,
+                "announced": announced,
                 "end_date": _parse_date(entry.get("end_date")),
                 "title": title,
                 "url": url,
@@ -247,7 +319,10 @@ def collect_news(orgs, today, window_days=NEWS_WINDOW_DAYS, archive_info=None):
             items.append(item)
             if key:
                 by_key[key] = item
-    items.sort(key=lambda i: (-i["date"].toordinal(), i["notable"] is not True, i["org_title"].lower()))
+    # Announcements first, soonest first; then what has happened, newest first.
+    items.sort(key=lambda i: (not i["upcoming"],
+                              i["date"].toordinal() if i["upcoming"] else -i["date"].toordinal(),
+                              i["notable"] is not True, i["org_title"].lower()))
     return items
 
 
@@ -299,7 +374,15 @@ def _item_title(item):
     # whose news it is — the same "<org>: <title>" shape the calendar's .ics
     # SUMMARY uses. A merged item names its first org; the title of a
     # co-hosted event already names the other.
-    return f"{item['org_title']}: {item['title']}"
+    title = f"{item['org_title']}: {item['title']}"
+    if item.get("upcoming"):
+        # The line a feed reader shows has to say it hasn't happened yet.
+        title += f" (coming up {_day_label(item['date'])})"
+    return title
+
+
+def _day_label(d):
+    return f"{d.day} {d.strftime('%B %Y')}"
 
 
 def _item_categories(item, concept_titles):
@@ -316,6 +399,8 @@ def item_html(item, site_url, concept_titles):
     esc = html.escape
     parts = []
     lead = f"<strong>{TIER_LABELS[item['notable']]}</strong>"
+    if item.get("upcoming"):
+        lead += f" · coming up {esc(_day_label(item['date']))}"
     if item.get("notable_reason"):
         lead += f" — {esc(str(item['notable_reason']))}"
     parts.append(f"<p>{lead}</p>")
@@ -364,7 +449,7 @@ def render_rss(items, *, title, description, page_url, feed_url, site_url, conce
         ET.SubElement(el, "title").text = _item_title(item)
         ET.SubElement(el, "link").text = _item_link(item, site_url)
         ET.SubElement(el, "guid", {"isPermaLink": "false"}).text = item["id"]
-        ET.SubElement(el, "pubDate").text = _pub_date(item["date"])
+        ET.SubElement(el, "pubDate").text = _pub_date(item.get("announced") or item["date"])
         ET.SubElement(el, "description").text = item_html(item, site_url, concept_titles)
         for cat in _item_categories(item, concept_titles):
             ET.SubElement(el, "category").text = cat
@@ -380,19 +465,21 @@ def render_json_feed(items, *, page_url, feed_url, site_url, concept_titles):
     feed_items = []
     for item in items:
         d = item["date"]
+        pub = item.get("announced") or d
         feed_items.append({
             "id": item["id"],
             "url": _item_link(item, site_url),
             "title": _item_title(item),
             "content_html": item_html(item, site_url, concept_titles),
             "summary": item.get("notable_reason") or item["title"],
-            "date_published": datetime(d.year, d.month, d.day, tzinfo=timezone.utc).isoformat(),
+            "date_published": datetime(pub.year, pub.month, pub.day, tzinfo=timezone.utc).isoformat(),
             "tags": _item_categories(item, concept_titles),
             "authors": [{"name": o["title"], "url": _abs(site_url, f"/organisations/{o['slug']}/")}
                         for o in item["orgs"]],
             "_dod": {
                 "date": d.isoformat(),
                 "end_date": item["end_date"].isoformat() if item.get("end_date") else None,
+                "upcoming": bool(item.get("upcoming")),
                 "event_title": item["title"],
                 "tier": "major" if item["notable"] is True else "medium",
                 "notable_reason": item.get("notable_reason"),
@@ -419,8 +506,11 @@ def render_json_feed(items, *, page_url, feed_url, site_url, concept_titles):
     return json.dumps(feed, ensure_ascii=False, indent=2) + "\n"
 
 
+WINDOW_PHRASES = {90: "three months", 365: "year"}
+
+
 def _window_phrase():
-    return "year" if NEWS_WINDOW_DAYS == 365 else f"{NEWS_WINDOW_DAYS} days"
+    return WINDOW_PHRASES.get(NEWS_WINDOW_DAYS, f"{NEWS_WINDOW_DAYS} days")
 
 
 def _description(scope=""):
@@ -475,6 +565,7 @@ def write_feeds(items, slices, out_dir, site_url, concept_titles):
 
 
 _items: list = []
+_archive: list = []
 _feeds: dict = {"countries": [], "topics": []}
 _concept_titles: dict = {}
 
@@ -484,7 +575,13 @@ def on_pre_build(config):
         return
     orgs = load_orgs()
     concept_titles = load_concept_titles()
-    items = collect_news(orgs, date.today(), archive_info=_tf.load_archive_info())
+    archive_info = _tf.load_archive_info()
+    items = collect_news(orgs, date.today(), archive_info=archive_info)
+    # No feed for the archive: it's for browsing and search, and every
+    # notable item in it already went out on /news.xml in its time.
+    _archive[:] = collect_news(orgs, date.today(), window_days=None,
+                               archive_info=archive_info, notable_only=False,
+                               announce_days={})
     slices = feed_slices(orgs, items, concept_titles)
     site_url = (config.get("site_url") or "").rstrip("/")
     write_feeds(items, slices, DOCS_DIR, site_url, concept_titles)
@@ -498,7 +595,36 @@ def on_pre_build(config):
 
 def on_env(env, config, files):
     env.globals["news_items"] = _items
+    env.globals["archive_items"] = _archive
     env.globals["news_feeds"] = _feeds
     env.globals["news_window_days"] = NEWS_WINDOW_DAYS
+    env.globals["news_window_phrase"] = _window_phrase()
     env.filters["topic_label"] = lambda slug: topic_label(slug, _concept_titles)
     return env
+
+
+_lit: list = []
+
+
+def on_page_context(context, *, page, config, nav):
+    """Keep the News tab highlighted on /archive/.
+
+    The archive is deliberately left out of the nav (mkdocs.yml's
+    not_in_nav) rather than made a twelfth tab, so nothing in the nav is
+    active while it renders and every tab would sit dark. It is the long
+    tail of Landscape News, so the News page is switched on for the render
+    and off again after (on_post_page) — the same thing hooks/org_template.py
+    does for org profiles under the Democracy Landscape tab. The switch-off
+    matters as much, or the tab stays lit on every page built afterwards."""
+    if page.file.src_uri == "archive.md":
+        for item in nav.pages:
+            if item.file.src_uri == "news.md" and not item.active:
+                item.active = True
+                _lit.append(item)
+    return context
+
+
+def on_post_page(output, *, page, config):
+    while _lit:
+        _lit.pop().active = False
+    return output

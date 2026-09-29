@@ -67,8 +67,16 @@ class SelectionTests(unittest.TestCase):
 
     def test_today_belongs_to_the_calendar_not_the_news(self):
         # calendar_export.py takes date >= today, so news must take < today.
-        self.assertEqual(self.titles([ev(0, "today"), ev(1, "yesterday"),
-                                      ev(-3, "future")]), ["yesterday"])
+        # Notable, not major: major events are announced ahead (below).
+        self.assertEqual(self.titles([ev(0, "today", "medium"), ev(1, "yesterday", "medium"),
+                                      ev(-3, "future", "medium")]), ["yesterday"])
+
+    def test_a_running_event_stays_on_the_calendar_until_it_ends(self):
+        # calendar_export keeps an event while it's under way, so news must
+        # not take it until its end_date has passed.
+        running = ev(3, "running", "medium", end_date=TODAY + timedelta(days=1))
+        ended = ev(5, "ended", "medium", end_date=TODAY - timedelta(days=1))
+        self.assertEqual(self.titles([running, ended]), ["ended"])
 
     def test_window_edges(self):
         w = ne.NEWS_WINDOW_DAYS
@@ -261,6 +269,110 @@ class WriteFeedsTests(unittest.TestCase):
         os.utime(path, (1, 1))
         ne.write_feeds(self.items, self.slices, self.tmp.name, SITE, {})
         self.assertEqual(os.stat(path).st_mtime, 1)
+
+
+class AnnouncementTests(unittest.TestCase):
+    """Major events enter News ANNOUNCE_DAYS before they start."""
+
+    def collect(self, events, **kw):
+        return ne.collect_news([("a", org("A", events=events))], TODAY, **kw)
+
+    def test_major_event_is_announced_inside_its_lead_time(self):
+        lead = ne.ANNOUNCE_DAYS[True]
+        items = self.collect([ev(-lead, "on the edge"), ev(-(lead + 1), "too far out")])
+        self.assertEqual([i["title"] for i in items], ["on the edge"])
+        self.assertTrue(items[0]["upcoming"])
+        self.assertEqual(items[0]["announced"], TODAY)
+
+    def test_notable_events_are_not_announced(self):
+        self.assertEqual(self.collect([ev(-3, "soon", "medium")]), [])
+
+    def test_a_running_major_event_stays_as_on_now(self):
+        items = self.collect([ev(2, "running", end_date=TODAY + timedelta(days=2))])
+        self.assertTrue(items[0]["upcoming"] and items[0]["ongoing"])
+
+    def test_announcements_lead_soonest_first_then_past_newest_first(self):
+        items = self.collect([ev(5, "past older"), ev(-20, "later"), ev(1, "past newer"),
+                              ev(-2, "sooner")])
+        self.assertEqual([i["title"] for i in items],
+                         ["sooner", "later", "past newer", "past older"])
+
+    def test_feeds_publish_it_under_the_announcement_date(self):
+        items = self.collect([ev(-10, "Summit")])
+        rss = ne.render_rss(items, title="t", description="d", page_url="p",
+                            feed_url="f", site_url="https://x", concept_titles={})
+        self.assertIn(ne._pub_date(TODAY - timedelta(days=ne.ANNOUNCE_DAYS[True] - 10)), rss)
+        self.assertIn("(coming up", rss)
+
+    def test_the_archive_takes_no_announcements(self):
+        self.assertEqual(self.collect([ev(-3, "soon")], window_days=None,
+                                      notable_only=False, announce_days={}), [])
+
+    def test_a_major_event_can_ask_for_more_notice(self):
+        items = self.collect([ev(-80, "summit", announce_days=90),
+                              ev(-80, "default notice")])
+        self.assertEqual([i["title"] for i in items], ["summit"])
+        self.assertEqual(items[0]["announced"], TODAY - timedelta(days=10))
+
+    def test_or_less(self):
+        self.assertEqual(self.collect([ev(-20, "late", announce_days=7)]), [])
+
+    def test_a_notable_event_cannot_opt_itself_in(self):
+        self.assertEqual(self.collect([ev(-3, "soon", "medium", announce_days=30)]), [])
+
+    def test_an_invalid_value_falls_back_to_the_default(self):
+        # check_event_sourcing.py fails the build on these; the hook just
+        # doesn't let them change anything.
+        for bad in (0, 400, "90", True):
+            with self.subTest(value=bad):
+                items = self.collect([ev(-80, "summit", announce_days=bad)])
+                self.assertEqual(items, [])
+
+
+class ArchiveTests(unittest.TestCase):
+    """/archive/ is collect_news() with the limits off."""
+
+    def test_every_tier_and_no_window(self):
+        events = [ev(2, "recent major", True), ev(5, "untiered", False),
+                  ev(4000, "long ago", "medium"), ev(-3, "upcoming", True)]
+        items = ne.collect_news([("a", org("A", events=events))], TODAY,
+                                window_days=None, notable_only=False, announce_days={})
+        self.assertEqual([i["title"] for i in items], ["recent major", "untiered", "long ago"])
+
+    def test_news_itself_still_skips_untiered(self):
+        items = ne.collect_news([("a", org("A", events=[ev(5, "untiered", False)]))], TODAY)
+        self.assertEqual(items, [])
+
+
+class ArchiveTabTests(unittest.TestCase):
+    """The archive is outside the nav, so the hook lights the News tab while
+    it renders, and must switch it off again after."""
+
+    def setUp(self):
+        import types
+        self.types = types
+        ne._lit.clear()
+        self.news = self.page("news.md")
+        self.nav = types.SimpleNamespace(pages=[self.page("calendar.md"), self.news])
+
+    def page(self, src):
+        return self.types.SimpleNamespace(file=self.types.SimpleNamespace(src_uri=src), active=False)
+
+    def render(self, p):
+        ne.on_page_context({}, page=p, config={}, nav=self.nav)
+        seen = self.news.active
+        ne.on_post_page("", page=p, config={})
+        return seen
+
+    def test_archive_lights_news_only_while_rendering(self):
+        self.assertTrue(self.render(self.page("archive.md")))
+        self.assertFalse(self.news.active)
+        self.assertFalse(self.render(self.page("about.md")))
+
+    def test_news_page_itself_is_left_to_mkdocs(self):
+        self.news.active = True
+        self.render(self.news)
+        self.assertTrue(self.news.active)
 
 
 if __name__ == "__main__":

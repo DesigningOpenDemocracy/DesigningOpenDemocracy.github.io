@@ -144,7 +144,8 @@ def build_llms_txt(site_url):
         f"- Knowledge graph (org↔concept relationships): {site_url}/graph/",
         f"- Blog (event posts, meetup summaries): {site_url}/blog/",
         f"- Blog RSS feed (subscribe for new posts): {site_url}/feed_rss_created.xml",
-        f"- Landscape News (past year's major/notable org news, filterable by country and topic): {site_url}/news/",
+        f"- Landscape News (past three months' major/notable org news, filterable by country and topic): {site_url}/news/",
+        f"- Landscape Archive (every past event recorded across the landscape, searchable, grouped by year): {site_url}/archive/",
         f"- About / philosophy: {site_url}/about/",
         f"- DOD's own projects (wiki, tools, research): {site_url}/community/",
         "",
@@ -172,10 +173,11 @@ def build_llms_txt(site_url):
         "",
         "## Landscape News (recent notable news)",
         "",
-        "The past-facing counterpart: {site_url}/news/ lists the last year's org events flagged".replace("{site_url}", site_url),
+        "The past-facing counterpart: {site_url}/news/ lists the last three months' org events flagged".replace("{site_url}", site_url),
         "major or notable, newest first. Feeds: {site_url}/news.xml (everything),".replace("{site_url}", site_url),
         "{site_url}/news-<CC>.xml (one per ISO 3166-1 country code) and".replace("{site_url}", site_url),
         "{site_url}/news-topic-<concept-slug>.xml (one per concept), plus {site_url}/news.json.".replace("{site_url}", site_url),
+        "Older events, notable or not, are at {site_url}/archive/.".replace("{site_url}", site_url),
         "",
     ]
 

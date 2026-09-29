@@ -51,6 +51,24 @@ STALE_CHECK_DAYS = 365
 # linter can do, so this is reported without affecting the exit code.
 THIN_HISTORY_MAX_EVENTS = 1
 
+_news_export_module = None
+
+
+def _news_export():
+    """hooks/news_export.py, loaded by path for its announce_days rule, so the
+    linter and the hook can't disagree on what a valid value is (the same
+    reason check_elections.py loads calendar_export.py). Loaded only when an
+    event actually carries announce_days, since it pulls in the rest of the
+    build's helpers."""
+    global _news_export_module
+    if _news_export_module is None:
+        import importlib.util
+        path = os.path.join(os.path.dirname(__file__), "..", "hooks", "news_export.py")
+        spec = importlib.util.spec_from_file_location("news_export", path)
+        _news_export_module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(_news_export_module)
+    return _news_export_module
+
 
 def parse_date(val):
     if val is None:
@@ -224,6 +242,7 @@ def main():
     vague_source = 0
     weak_url = 0
     no_proof = 0
+    bad_announce = 0
     notable_soft = 0
     mismatched_proof_level = 0
     stale_checked = 0
@@ -320,6 +339,23 @@ def main():
                 notable_soft += 1
                 print(f"  NOTABLE NO PROOF {p['title']}  [{e.get('date','?')}]  {e.get('title','?')}")
 
+            # announce_days: how early a major event enters Landscape News
+            # (hooks/news_export.py). A bad value fails the build, since the
+            # hook would otherwise quietly fall back to the default notice.
+            # On a non-major event it's ignored, which is worth saying but
+            # not failing on.
+            if "announce_days" in e:
+                ne = _news_export()
+                if not ne.valid_announce_days(e["announce_days"]):
+                    bad_announce += 1
+                    has_issues = True
+                    print(f"  BAD ANNOUNCE    {p['title']}  [{e.get('date','?')}]  {e.get('title','?')}")
+                    print(f"                   announce_days: {e['announce_days']!r} — needs a whole number"
+                          f" of days from 1 to {ne.MAX_ANNOUNCE_DAYS}")
+                elif e.get("notable") is not True:
+                    print(f"  ANNOUNCE IGNORED {p['title']}  [{e.get('date','?')}]  {e.get('title','?')}")
+                    print("                   announce_days only applies to major (notable: true) events")
+
             url_checked = parse_date(e.get("url_checked"))
             checked_recently = url_checked and (date.today() - url_checked).days <= STALE_CHECK_DAYS
             if e.get("proof_level") in ("high", "medium") and not checked_recently:
@@ -360,7 +396,10 @@ def main():
         print(f"Active orgs with {THIN_HISTORY_MAX_EVENTS} or fewer events (thin history, info only): {len(thin_history)}")
 
     if has_issues:
-        print(f"\n{no_proof} event(s) need evidence (quote, note, or proof_warning). Add one to each.")
+        if no_proof:
+            print(f"\n{no_proof} event(s) need evidence (quote, note, or proof_warning). Add one to each.")
+        if bad_announce:
+            print(f"\n{bad_announce} event(s) have an invalid announce_days (see BAD ANNOUNCE above).")
         sys.exit(1)
     else:
         print("All events have a url: or source:.")

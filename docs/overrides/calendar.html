@@ -27,76 +27,13 @@
   'meeting': '📋', 'assembly': '🏛️', 'lecture': '🎓',
   'launch': '🚀', 'rally': '📢', 'milestone': '📌', 'election': '🗳️'
 } %}
-{%- set grouped = {} %}
-{%- for e in calendar_events %}
-  {%- set month_key = e.date.strftime('%B %Y') %}
-  {%- if month_key not in grouped %}{% set _ = grouped.update({month_key: []}) %}{% endif %}
-  {%- set _ = grouped[month_key].append(e) %}
-{%- endfor %}
-
-{%- if not calendar_events %}
-<p><em>No upcoming events are currently known. Orgs with an <code>ics_feed:</code> or manually curated <code>events:</code> entries will appear here once synced — see <a href="/organisations/">Democracy Landscape</a>.</em></p>
-{%- else %}
-
-<div class="calendar-filter-bar">
-  <label class="calendar-filter-label" for="calendar-country-filter">Filter by country:</label>
-  <select id="calendar-country-filter" class="org-filter-select" aria-label="Filter events by country">
-    <option value="all">All countries</option>
-  </select>
-  <button type="button" id="calendar-country-reset" class="calendar-reset-btn" title="Show all countries" aria-label="Reset country filter">✕ Reset</button>
-  <span id="calendar-filter-count" class="calendar-filter-count"></span>
-</div>
-
-{%- set country_entries = [] %}
-{%- for e in calendar_events %}
-  {%- if e.country %}
-    {%- set entry = {'code': e.country, 'name': e.country | country_name, 'flag': e.country | country_flag} %}
-    {%- if entry not in country_entries %}{% set _ = country_entries.append(entry) %}{% endif %}
-  {%- endif %}
-{%- endfor %}
-{%- set country_entries = country_entries | sort(attribute='name') %}
-
-{%- set feed_rows = [{'flag': '📅', 'name': 'All countries', 'path': '/calendar.ics'}] %}
-{%- if has_elections %}
-  {#- Elections cut across the country rows below rather than sitting among
-      them: a reader who wants polling days in their own calendar usually
-      does not want every meetup in the landscape alongside them, and a
-      subscribed .ics cannot be filtered after the fact. -#}
-  {%- set _ = feed_rows.append({'flag': '🗳️', 'name': 'Elections (all countries)', 'path': '/calendar-elections.ics'}) %}
-{%- endif %}
-{%- for c in country_entries %}
-  {%- set _ = feed_rows.append({'flag': c.flag, 'name': c.name, 'path': '/calendar-' + c.code + '.ics'}) %}
-{%- endfor %}
-
-<details class="plain-details calendar-feeds-details">
-  <summary>📡 All iCal feeds ({{ feed_rows | length }})</summary>
-  <table class="calendar-feeds-table">
-    <thead>
-      <tr><th>Country</th><th>Download</th><th>Apple / Outlook</th><th>Google Calendar</th></tr>
-    </thead>
-    <tbody>
-      {%- for r in feed_rows %}
-      <tr data-ics-path="{{ r.path }}">
-        <td>{{ r.flag }} {{ r.name }}</td>
-        <td><a class="calendar-feed-btn calendar-feed-btn--ics" href="{{ r.path }}">Download .ics</a></td>
-        <td><a class="calendar-feed-btn calendar-feed-btn--apple calendar-feed-apple-link" href="webcal://">Apple / Outlook</a></td>
-        <td><a class="calendar-feed-btn calendar-feed-btn--google calendar-feed-google-link" href="https://calendar.google.com/" target="_blank" rel="noopener">Google Calendar</a></td>
-      </tr>
-      {%- endfor %}
-    </tbody>
-  </table>
-</details>
-
-<div id="calendar-past-events-slot"></div>
-
-{%- for month_key, month_events in grouped.items() %}
-<h2 class="calendar-month-heading">{{ month_key }}</h2>
-<ul class="calendar-event-list">
-  {%- for e in month_events %}
+{#- One event card, shared by the upcoming month lists and the "Recent past
+    events" list below them, so the two can never drift apart. -#}
+{%- macro event_card(e, past=false) %}
   {#- A trailing end_date is only a real span when it is actually later:
       an equal (or bad) end_date is a single-day event, not a range. -#}
   {%- set multiday = e.end_date and e.end_date is not string and e.end_date > e.date %}
-  <li class="calendar-event{% if multiday %} calendar-event--multiday{% endif %}{% if e.source == 'election' %} calendar-event--election{% endif %}{% if e.notable is true %} calendar-event--notable{% elif e.notable == 'medium' %} calendar-event--medium{% endif %}" data-country="{{ e.country or '' }}" data-country-label="{{ e.country | country_flag }} {{ e.country | country_name }}" data-date="{{ e.date.isoformat() }}"{% if e.end_date %} data-end-date="{{ e.end_date.isoformat() if e.end_date is not string else e.end_date }}"{% endif %}{% if e.time %} data-time="{{ e.time }}"{% endif %}{% if e.end_time %} data-end-time="{{ e.end_time }}"{% endif %}>
+  <li class="calendar-event{% if past %} calendar-event--past{% endif %}{% if multiday %} calendar-event--multiday{% endif %}{% if e.source == 'election' %} calendar-event--election{% endif %}{% if e.notable is true %} calendar-event--notable{% elif e.notable == 'medium' %} calendar-event--medium{% endif %}" data-country="{{ e.country or '' }}" data-country-label="{{ e.country | country_flag }} {{ e.country | country_name }}" data-date="{{ e.date.isoformat() }}"{% if e.end_date %} data-end-date="{{ e.end_date.isoformat() if e.end_date is not string else e.end_date }}"{% endif %}{% if e.time %} data-time="{{ e.time }}"{% endif %}{% if e.end_time %} data-end-time="{{ e.end_time }}"{% endif %}>
 
     <div class="calendar-date-block">
       <span class="calendar-date-month">{{ e.date.strftime('%b') }}</span>
@@ -204,13 +141,100 @@
         {%- if not e.org_slug and e.org_title and e.source != 'election' %}{{ e.org_title }}{% endif %}
         {%- if e.coverage_url %}<a class="calendar-event-coverage" href="{{ e.coverage_url }}">DOD coverage →</a>{% endif %}
         {%- if e.url and e.url.startswith('http') %}
-        <a class="calendar-event-action" href="{{ e.url }}" target="_blank" rel="noopener">{{ 'RSVP →' if 'humanitix' in e.url or 'eventbrite' in e.url or 'lu.ma' in e.url or 'ticket' in e.url else 'More info →' }}</a>
+        <a class="calendar-event-action" href="{{ e.url }}" target="_blank" rel="noopener">{{ 'Event page →' if past else 'RSVP →' if 'humanitix' in e.url or 'eventbrite' in e.url or 'lu.ma' in e.url or 'ticket' in e.url else 'More info →' }}</a>
         {%- endif %}
       </div>
       {%- endif %}
     </div>
 
   </li>
+{%- endmacro %}
+{%- set grouped = {} %}
+{%- for e in calendar_events %}
+  {%- set month_key = e.date.strftime('%B %Y') %}
+  {%- if month_key not in grouped %}{% set _ = grouped.update({month_key: []}) %}{% endif %}
+  {%- set _ = grouped[month_key].append(e) %}
+{%- endfor %}
+
+{%- if not calendar_events %}
+<p><em>No upcoming events are currently known. Orgs with an <code>ics_feed:</code> or manually curated <code>events:</code> entries will appear here once synced — see <a href="/organisations/">Democracy Landscape</a>.</em></p>
+{%- else %}
+
+<div class="calendar-filter-bar">
+  <label class="calendar-filter-label" for="calendar-country-filter">Filter by country:</label>
+  <select id="calendar-country-filter" class="org-filter-select" aria-label="Filter events by country">
+    <option value="all">All countries</option>
+  </select>
+  <button type="button" id="calendar-country-reset" class="calendar-reset-btn" title="Show all countries" aria-label="Reset country filter">✕ Reset</button>
+  <span id="calendar-filter-count" class="calendar-filter-count"></span>
+</div>
+
+{%- set country_entries = [] %}
+{%- for e in calendar_events %}
+  {%- if e.country %}
+    {%- set entry = {'code': e.country, 'name': e.country | country_name, 'flag': e.country | country_flag} %}
+    {%- if entry not in country_entries %}{% set _ = country_entries.append(entry) %}{% endif %}
+  {%- endif %}
+{%- endfor %}
+{%- set country_entries = country_entries | sort(attribute='name') %}
+
+{%- set feed_rows = [{'flag': '📅', 'name': 'All countries', 'path': '/calendar.ics'}] %}
+{%- if has_elections %}
+  {#- Elections cut across the country rows below rather than sitting among
+      them: a reader who wants polling days in their own calendar usually
+      does not want every meetup in the landscape alongside them, and a
+      subscribed .ics cannot be filtered after the fact. -#}
+  {%- set _ = feed_rows.append({'flag': '🗳️', 'name': 'Elections (all countries)', 'path': '/calendar-elections.ics'}) %}
+{%- endif %}
+{%- for c in country_entries %}
+  {%- set _ = feed_rows.append({'flag': c.flag, 'name': c.name, 'path': '/calendar-' + c.code + '.ics'}) %}
+{%- endfor %}
+
+<details class="plain-details calendar-feeds-details">
+  <summary>📡 All iCal feeds ({{ feed_rows | length }})</summary>
+  <table class="calendar-feeds-table">
+    <thead>
+      <tr><th>Country</th><th>Download</th><th>Apple / Outlook</th><th>Google Calendar</th></tr>
+    </thead>
+    <tbody>
+      {%- for r in feed_rows %}
+      <tr data-ics-path="{{ r.path }}">
+        <td>{{ r.flag }} {{ r.name }}</td>
+        <td><a class="calendar-feed-btn calendar-feed-btn--ics" href="{{ r.path }}">Download .ics</a></td>
+        <td><a class="calendar-feed-btn calendar-feed-btn--apple calendar-feed-apple-link" href="webcal://">Apple / Outlook</a></td>
+        <td><a class="calendar-feed-btn calendar-feed-btn--google calendar-feed-google-link" href="https://calendar.google.com/" target="_blank" rel="noopener">Google Calendar</a></td>
+      </tr>
+      {%- endfor %}
+    </tbody>
+  </table>
+</details>
+
+<div id="calendar-past-events-slot">
+{%- if calendar_past_events %}
+{#- Recent past events, newest first, collapsed: this page is for finding
+    things to attend, so the history stays one click away rather than in
+    the way. Limited to calendar_past_window_days and capped at
+    calendar_past_max (hooks/calendar_export.py); anything older is on each
+    organisation's own timeline, and the notable ones are in /news/.
+    Events that pass after the build are moved in here by
+    collapsePastAndHighlightNear(). -#}
+<details class="plain-details calendar-past-events-details">
+  <summary data-suffix=" · last {{ calendar_past_window_days }} days">Recent past events ({{ calendar_past_events | length }}) · last {{ calendar_past_window_days }} days</summary>
+  <ul class="calendar-event-list">
+  {%- for e in calendar_past_events %}
+  {{- event_card(e, past=true) }}
+  {%- endfor %}
+  </ul>
+  <p class="calendar-past-events-more">Older events are in the <a href="/archive/">Landscape Archive</a>, and the recent major and notable ones in <a href="/news/">Landscape News</a>.</p>
+</details>
+{%- endif %}
+</div>
+
+{%- for month_key, month_events in grouped.items() %}
+<h2 class="calendar-month-heading">{{ month_key }}</h2>
+<ul class="calendar-event-list">
+  {%- for e in month_events %}
+  {{- event_card(e) }}
   {%- endfor %}
 </ul>
 {%- endfor %}
@@ -338,6 +362,8 @@
     var pastEvents = [];
 
     events.forEach(function (el) {
+      // Already in the build-time past list.
+      if (el.classList.contains('calendar-event--past')) return;
       var dateStr = el.getAttribute('data-date');
       if (!dateStr) return;
       var eventDate = parseLocalDate(dateStr);
@@ -383,21 +409,34 @@
 
     if (pastEvents.length === 0) return;
 
+    // The build already rendered the recent past into a collapsed list
+    // (calendar_past_events); events that ended since the build join the
+    // top of it, since that list runs newest first. Without one (nothing
+    // in the past window at build time), make it here.
     var slot = document.getElementById('calendar-past-events-slot');
-    var details = document.createElement('details');
-    details.className = 'plain-details calendar-past-events-details';
-    var summary = document.createElement('summary');
-    summary.textContent = pastEvents.length + ' event' + (pastEvents.length !== 1 ? 's' : '') +
-      ' already passed since this page was last built — click to show';
-    var list = document.createElement('ul');
-    list.className = 'calendar-event-list';
-    details.appendChild(summary);
-    details.appendChild(list);
+    var details = slot.querySelector('.calendar-past-events-details');
+    var list, summary;
+    if (details) {
+      list = details.querySelector('.calendar-event-list');
+      summary = details.querySelector('summary');
+    } else {
+      details = document.createElement('details');
+      details.className = 'plain-details calendar-past-events-details';
+      summary = document.createElement('summary');
+      list = document.createElement('ul');
+      list.className = 'calendar-event-list';
+      details.appendChild(summary);
+      details.appendChild(list);
+      slot.appendChild(details);
+    }
+    // pastEvents is in ascending date order, so prepending each in turn
+    // leaves the newest on top.
     pastEvents.forEach(function (el) {
       el.classList.add('calendar-event--past');
-      list.appendChild(el);
+      list.insertBefore(el, list.firstChild);
     });
-    slot.appendChild(details);
+    var n = list.querySelectorAll('.calendar-event').length;
+    summary.textContent = 'Recent past events (' + n + ')' + (summary.getAttribute('data-suffix') || '');
   }
 
   // --- Countdown -----------------------------------------------------
