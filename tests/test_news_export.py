@@ -67,14 +67,15 @@ class SelectionTests(unittest.TestCase):
 
     def test_today_belongs_to_the_calendar_not_the_news(self):
         # calendar_export.py takes date >= today, so news must take < today.
-        self.assertEqual(self.titles([ev(0, "today"), ev(1, "yesterday"),
-                                      ev(-3, "future")]), ["yesterday"])
+        # Notable, not major: major events are announced ahead (below).
+        self.assertEqual(self.titles([ev(0, "today", "medium"), ev(1, "yesterday", "medium"),
+                                      ev(-3, "future", "medium")]), ["yesterday"])
 
     def test_a_running_event_stays_on_the_calendar_until_it_ends(self):
         # calendar_export keeps an event while it's under way, so news must
         # not take it until its end_date has passed.
-        running = ev(3, "running", end_date=TODAY + timedelta(days=1))
-        ended = ev(5, "ended", end_date=TODAY - timedelta(days=1))
+        running = ev(3, "running", "medium", end_date=TODAY + timedelta(days=1))
+        ended = ev(5, "ended", "medium", end_date=TODAY - timedelta(days=1))
         self.assertEqual(self.titles([running, ended]), ["ended"])
 
     def test_window_edges(self):
@@ -270,6 +271,44 @@ class WriteFeedsTests(unittest.TestCase):
         self.assertEqual(os.stat(path).st_mtime, 1)
 
 
+class AnnouncementTests(unittest.TestCase):
+    """Major events enter News ANNOUNCE_DAYS before they start."""
+
+    def collect(self, events, **kw):
+        return ne.collect_news([("a", org("A", events=events))], TODAY, **kw)
+
+    def test_major_event_is_announced_inside_its_lead_time(self):
+        lead = ne.ANNOUNCE_DAYS[True]
+        items = self.collect([ev(-lead, "on the edge"), ev(-(lead + 1), "too far out")])
+        self.assertEqual([i["title"] for i in items], ["on the edge"])
+        self.assertTrue(items[0]["upcoming"])
+        self.assertEqual(items[0]["announced"], TODAY)
+
+    def test_notable_events_are_not_announced(self):
+        self.assertEqual(self.collect([ev(-3, "soon", "medium")]), [])
+
+    def test_a_running_major_event_stays_as_on_now(self):
+        items = self.collect([ev(2, "running", end_date=TODAY + timedelta(days=2))])
+        self.assertTrue(items[0]["upcoming"] and items[0]["ongoing"])
+
+    def test_announcements_lead_soonest_first_then_past_newest_first(self):
+        items = self.collect([ev(5, "past older"), ev(-20, "later"), ev(1, "past newer"),
+                              ev(-2, "sooner")])
+        self.assertEqual([i["title"] for i in items],
+                         ["sooner", "later", "past newer", "past older"])
+
+    def test_feeds_publish_it_under_the_announcement_date(self):
+        items = self.collect([ev(-10, "Summit")])
+        rss = ne.render_rss(items, title="t", description="d", page_url="p",
+                            feed_url="f", site_url="https://x", concept_titles={})
+        self.assertIn(ne._pub_date(TODAY - timedelta(days=ne.ANNOUNCE_DAYS[True] - 10)), rss)
+        self.assertIn("(coming up", rss)
+
+    def test_the_archive_takes_no_announcements(self):
+        self.assertEqual(self.collect([ev(-3, "soon")], window_days=None,
+                                      notable_only=False, announce_days={}), [])
+
+
 class ArchiveTests(unittest.TestCase):
     """/archive/ is collect_news() with the limits off."""
 
@@ -277,7 +316,7 @@ class ArchiveTests(unittest.TestCase):
         events = [ev(2, "recent major", True), ev(5, "untiered", False),
                   ev(4000, "long ago", "medium"), ev(-3, "upcoming", True)]
         items = ne.collect_news([("a", org("A", events=events))], TODAY,
-                                window_days=None, notable_only=False)
+                                window_days=None, notable_only=False, announce_days={})
         self.assertEqual([i["title"] for i in items], ["recent major", "untiered", "long ago"])
 
     def test_news_itself_still_skips_untiered(self):

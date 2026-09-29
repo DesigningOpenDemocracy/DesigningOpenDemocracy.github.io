@@ -92,18 +92,10 @@
   <p class="news-feed-note">Counts are items in the current window; a feed without one is quiet, not missing. Topics are the concepts each organisation works on, so a topic feed follows organisations in that field rather than individual stories about it.</p>
 </details>
 
-{%- set grouped = {} %}
-{%- for i in news_items %}
-  {%- set month_key = i.date.strftime('%B %Y') %}
-  {%- if month_key not in grouped %}{% set _ = grouped.update({month_key: []}) %}{% endif %}
-  {%- set _ = grouped[month_key].append(i) %}
-{%- endfor %}
-
-{%- for month_key, month_items in grouped.items() %}
-<h2 class="calendar-month-heading">{{ month_key }}</h2>
-<ul class="calendar-event-list">
-  {%- for i in month_items %}
-  <li class="calendar-event news-item{% if i.notable is true %} calendar-event--notable{% else %} calendar-event--medium{% endif %}" data-countries="{{ i.countries | join(' ') }}" data-topics="{{ i.concepts | join(' ') }}" data-tier="{{ 'major' if i.notable is true else 'medium' }}">
+{#- One news card, shared by the "Coming up" announcements and the month
+    groups below them. -#}
+{%- macro news_card(i) %}
+  <li class="calendar-event news-item{% if i.upcoming %} news-item--upcoming{% endif %}{% if i.notable is true %} calendar-event--notable{% else %} calendar-event--medium{% endif %}" data-countries="{{ i.countries | join(' ') }}" data-topics="{{ i.concepts | join(' ') }}" data-tier="{{ 'major' if i.notable is true else 'medium' }}">
 
     <div class="calendar-date-block">
       <span class="calendar-date-month">{{ i.date.strftime('%b') }}</span>
@@ -117,6 +109,8 @@
 
     <div class="calendar-event-body">
       <div class="calendar-event-header">
+        {%- if i.ongoing %}<span class="calendar-event-badge calendar-event-badge--now">On now</span>
+        {%- elif i.upcoming %}<span class="calendar-event-badge calendar-event-badge--week">Coming up</span>{% endif %}
         {%- if i.notable is true %}<span class="calendar-event-badge">★ Major</span>
         {%- else %}<span class="calendar-event-badge calendar-event-badge--medium">● Notable</span>{% endif %}
         {%- if i.type %}<span class="calendar-event-type">{{ i.type }}</span>{% endif %}
@@ -158,6 +152,33 @@
     </div>
 
   </li>
+{%- endmacro %}
+
+{#- Announcements: major events inside hooks/news_export.py's ANNOUNCE_DAYS
+    lead time, soonest first. They're on the calendar too; this is the
+    heads-up, not a second listing of everything coming. -#}
+{%- set upcoming = news_items | selectattr('upcoming') | list %}
+{%- if upcoming %}
+<h2 class="calendar-month-heading news-upcoming-heading">Coming up</h2>
+<ul class="calendar-event-list">
+  {%- for i in upcoming %}
+  {{- news_card(i) }}
+  {%- endfor %}
+</ul>
+{%- endif %}
+
+{%- set grouped = {} %}
+{%- for i in news_items | rejectattr('upcoming') %}
+  {%- set month_key = i.date.strftime('%B %Y') %}
+  {%- if month_key not in grouped %}{% set _ = grouped.update({month_key: []}) %}{% endif %}
+  {%- set _ = grouped[month_key].append(i) %}
+{%- endfor %}
+
+{%- for month_key, month_items in grouped.items() %}
+<h2 class="calendar-month-heading">{{ month_key }}</h2>
+<ul class="calendar-event-list">
+  {%- for i in month_items %}
+  {{- news_card(i) }}
   {%- endfor %}
 </ul>
 {%- endfor %}

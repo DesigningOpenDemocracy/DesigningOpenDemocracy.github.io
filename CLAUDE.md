@@ -351,11 +351,23 @@ done, without reading 170 org pages to find it.
   the worklist in its job summary, and the heartbeat run works through it
   (HEARTBEAT.md, "News intake"). See the script's entry under Utility
   scripts.
-- **No overlap with the calendar.** The calendar keeps an event until it has
-  ended (`calendar_export._is_current()`, on `end_date:` where set), and news
-  takes only events that have ended, so at any build an event is on exactly
-  one of the two. A notable event moves from one to the other on the first
-  build after it ends (for a one-day event, the day after). Both pages are built only on push, so an event that
+- **Major events are announced ahead; nothing else overlaps the calendar.**
+  The calendar keeps an event until it has ended
+  (`calendar_export._is_current()`, on `end_date:` where set), and news
+  normally takes only events that have ended, so a notable event is on
+  exactly one of the two and moves across on the first build after it ends.
+  The exception is `ANNOUNCE_DAYS` in `hooks/news_export.py` (lead time by
+  tier, currently `{True: 30}`): a **major** event enters News that many days
+  before it starts, under a "Coming up" heading at the top of the page
+  (soonest first, "On now" while it runs), and is on both pages until it
+  ends. Notable (`"medium"`) events aren't announced; adding a `"medium"`
+  key would change that. Chosen by the maintainer in 2026-09: News is what
+  happened, and a heads-up belongs there only for the rare flagship event a
+  reader plans around. An announced item keeps one `guid` from announcement
+  to record, so a subscriber gets it once, when it's announced; feeds publish
+  it under the announcement date (event date minus the lead), and its title
+  carries "(coming up 7 October 2026)" while it's upcoming. The archive
+  passes `announce_days={}`, since it's a record of what happened. Both pages are built only on push, so an event that
   happened since the last build is still on the calendar (collapsed as past
   by its client-side JS) until the next one.
 - **Co-hosted events merge.** Two entries with the same date and `url:` (the
