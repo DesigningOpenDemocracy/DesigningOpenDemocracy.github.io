@@ -316,21 +316,23 @@ which are about importance.
 
 ### Landscape News (`docs/news.md`)
 
-The past-facing counterpart to the calendar: the last year's **major and
-notable** events from across the Democracy Landscape, newest first — a
+The past-facing counterpart to the calendar: the last three months' **major
+and notable** events from across the Democracy Landscape, newest first — a
 launch, a handbook's new edition, a leadership change, a flagship report.
 The point is what one org in the landscape would want to know another had
 done, without reading 170 org pages to find it.
 
 - **It is a view, not a data source.** Items are org `events:` entries with
   `notable: true` or `notable: "medium"`, dated before today and within
-  `NEWS_WINDOW_DAYS` (365) of it, built by `hooks/news_export.py`. There is
+  `NEWS_WINDOW_DAYS` (90) of it, built by `hooks/news_export.py`. There is
   no `news:` field and no second place to write an item: to add news, add a
   notable event to the org's own page, where it gets the same sourcing gates
   (`check_event_sourcing.py`, `check_fragments.py`) as any other event. An
   item can never say more than the timeline it came from. Un-tiered events
   never appear, and neither does anything older than the window (a 2011
-  founding is history, not news).
+  founding is history, not news). The window was a year until 2026-09,
+  which put items eleven months old on a page called News; the org's own
+  timeline is where older events live.
 - **Deliberately not an aggregation of org RSS feeds** (`rss_feed:`). Those
   are every post an org publishes, the firehose this page exists to spare
   readers from. No feed carries a signal for which of its posts matter, so
@@ -869,7 +871,7 @@ more than a bare link.
 | `democracy-map.html` | `docs/overrides/` | `docs/map.md` (`/map/`) — the Democracy Map: Landscape orgs and located blog posts, with the type filter and popup cards; set via `template:` frontmatter. Listed in `SUMMARY.md` under Democracy Landscape (beside the Directory), so that tab stays highlighted on it, and carries the same `partials/section-tabs.html` switcher as the Directory. Deliberately `docs/map.md`, not `docs/organisations/map.md`: several scripts (`reorder_frontmatter.py`, `check_event_sourcing.py`, `tests/test_org_types.py`'s corpus check) treat every `.md` in `docs/organisations/` as an org profile. |
 | `knowledge-graph.html` | `docs/overrides/` | `docs/knowledge-graph.md` — interactive Cytoscape.js graph; set via `template:` frontmatter |
 | `calendar.html` | `docs/overrides/` | `docs/calendar.md` — site-wide future events list + `.ics` subscribe link; set via `template:` frontmatter |
-| `news.html` | `docs/overrides/` | `docs/news.md` — Landscape News: the past year's notable org events, with country/topic filters and RSS/JSON Feed links; set via `template:` frontmatter. See the Landscape News section. |
+| `news.html` | `docs/overrides/` | `docs/news.md` — Landscape News: the past three months' notable org events, with country/topic filters and RSS/JSON Feed links; set via `template:` frontmatter. See the Landscape News section. |
 | `sitemap.xml` | `docs/overrides/` | Not a page template — overrides MkDocs' own `sitemap.xml` (Material ships none). Its page loop is upstream's, kept verbatim; the loop after it emits `hooks/sitemap_extras.py`'s data endpoints. `mkdocs.yml`'s `exclude_docs` keeps this one file from also being copied out as a raw template, since `docs/overrides/` is inside `docs_dir` — a second, unrendered `sitemap.xml` on the domain is worth avoiding even though nothing links to it. |
 
 ### Hooks
@@ -885,7 +887,7 @@ more than a bare link.
 - `hooks/citation_export.py` — fires on `on_pre_build`; exports all event and footnote citations to `/data/citations.json` in CSL-JSON format with `evidence` array (machine-verifiable citation standard), plus a read-only projection of `archive`/`archive_location`/`url-status`/`archived_document` from the evidence cache (see "Citation archival" above). See `internal-heartbeat/machine-verifiable-citation.md` for the original design and `internal-heartbeat/2026-08-22-citation-archival-design-decisions.md` for the archive-projection addition.
 - `hooks/footnote_fragments.py` — fires on `on_page_markdown` and `on_page_content`; parses prose footnotes for verbatim quoted excerpts (same convention as event `quote:`), then post-processes the rendered HTML to add `#:~:text=` fragments to footnote citation links. The counterpart of `with_fragment` for the prose footnote world — derives fragments at build time, never stores them in markdown. Also adds/swaps in Wayback archive links the same way `hooks/org_events.py` does for events — see "Citation archival" above.
 - `hooks/calendar_export.py` — fires on `on_pre_build`/`on_env`; merges every org's future `events:` entries with every org's cached `ics_feed` sync (`docs/data/events/<slug>.json`) and the curated polling days in `docs/data/elections.yml` into one sorted list, writes `docs/calendar.ics` + `docs/calendar-elections.ics` + `docs/data/events.json`, and injects the list as the `calendar_events` Jinja global used by `docs/overrides/calendar.html`. Makes no network calls itself — see Calendar section below for the fetch step.
-- `hooks/news_export.py` — fires on `on_pre_build`/`on_env`; builds Landscape News from org `events:` entries with a `notable:` tier dated in the past year, writes `docs/news.xml`, `docs/news.json` and one `docs/news-<CC>.xml`/`docs/news-topic-<slug>.xml` per country and concept in the landscape, and injects `news_items`/`news_feeds`/`news_window_days` plus a `topic_label` filter for `docs/overrides/news.html`. Loads `hooks/calendar_export.py` by path for its country names and notable/date parsing rather than keeping second copies (the same way `util/check_elections.py` does). See the Landscape News section above.
+- `hooks/news_export.py` — fires on `on_pre_build`/`on_env`; builds Landscape News from org `events:` entries with a `notable:` tier dated in the past `NEWS_WINDOW_DAYS` (90), writes `docs/news.xml`, `docs/news.json` and one `docs/news-<CC>.xml`/`docs/news-topic-<slug>.xml` per country and concept in the landscape, and injects `news_items`/`news_feeds`/`news_window_days` plus a `topic_label` filter for `docs/overrides/news.html`. Loads `hooks/calendar_export.py` by path for its country names and notable/date parsing rather than keeping second copies (the same way `util/check_elections.py` does). See the Landscape News section above.
 - `hooks/sitemap_extras.py` — fires on `on_env`; sets the `sitemap_extra_urls` Jinja global that `docs/overrides/sitemap.xml` appends to MkDocs' own page entries. MkDocs builds sitemap.xml by iterating `pages`, so nothing that isn't a rendered markdown page is ever listed — every data export under "Data exports" below was reachable only by crawling the pages that link it, never from a search result — which is what made them unfetchable for tools acting on search results, AI assistants included. The list is curated in `DATA_ENDPOINTS`, not globbed from `docs/data/`: that directory also holds build *input* and internal state (the per-org `events/<slug>.json` sync cache, `citation-state.json`, `elections.yml`) which is not published interface. **Keep `DATA_ENDPOINTS` in step with the Data exports table** when an export is added or dropped. Each path is checked against `docs_dir` before it's emitted, so a generator that was skipped or failed drops out of the sitemap rather than advertising a 404. Deliberately absent: the per-country `/calendar-<CC>.ics` slices (all listed on `/calendar/` already, and derived from `/calendar.ics`), the per-country/per-topic `/news-*.xml` slices (listed on `/news/`, derived from `/news.xml`), and `graph.json` (written straight to `site_dir` during `on_post_build` — after the sitemap has already been rendered, so there'd be nothing on disk to check it against). No `<lastmod>` is emitted on these: they're rewritten on every build whether or not their content changed, so a build-time date would assert a change on every deploy.
 - `hooks/shared_link_card.py` — fires on `on_page_markdown`; injects a reader-facing card at the top of a blog post's body from `shared_link:` frontmatter. See "Convention — shared_link" above.
 - `hooks/org_cards.py` — fires on `on_page_markdown`; expands `<!-- org-card: <slug> -->` markers in blog posts into inline Democracy Landscape cards. See "Convention — inline Democracy Landscape cards" above.

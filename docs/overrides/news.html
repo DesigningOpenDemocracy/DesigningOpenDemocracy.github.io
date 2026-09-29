@@ -1,5 +1,5 @@
 {% extends "main.html" %}
-{#- Landscape News: the past year's major and notable events from across the
+{#- Landscape News: the past three months' major and notable events from across the
     Democracy Landscape, newest first. The data is hooks/news_export.py's
     `news_items` — a view of org `events:` entries, never a source of its
     own — and the cards reuse the calendar's .calendar-event styling on
@@ -29,7 +29,7 @@
 </p>
 
 {%- if not news_items %}
-<p><em>No major or notable news in the past {{ 'year' if news_window_days == 365 else news_window_days ~ ' days' }}. Items appear here when an organisation's page records an event flagged <code>notable:</code> — see the <a href="/organisations/">Democracy Landscape</a>.</em></p>
+<p><em>No major or notable news in the past {{ news_window_phrase }}. Items appear here when an organisation's page records an event flagged <code>notable:</code> — see the <a href="/organisations/">Democracy Landscape</a>.</em></p>
 {%- else %}
 
 {%- set country_entries = [] %}

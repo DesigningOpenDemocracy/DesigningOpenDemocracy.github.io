@@ -71,11 +71,13 @@ ORGS_DIR = os.path.join(DOCS_DIR, "organisations")
 CONCEPTS_DIR = os.path.join(DOCS_DIR, "concepts")
 SKIP_FILES = {"index.md"}
 
-# How far back an item stays news. A year is long enough that a quiet
-# country's feed isn't permanently empty and short enough that the page
-# reads as "what's been happening", not an archive — the org's own page
-# already carries its full history.
-NEWS_WINDOW_DAYS = 365
+# How far back an item stays news. Three months keeps the page reading as
+# "what's been happening" rather than an archive; the org's own page already
+# carries its full history. It was a year until 2026-09, which put items
+# eleven months old on a page called News. A quiet country's feed may now
+# go empty for a while, but a feed reader keeps the items it has already
+# seen, and the feed URL itself still exists (see feed_slices).
+NEWS_WINDOW_DAYS = 90
 
 TIER_LABELS = {True: "Major", "medium": "Notable"}
 
@@ -419,8 +421,11 @@ def render_json_feed(items, *, page_url, feed_url, site_url, concept_titles):
     return json.dumps(feed, ensure_ascii=False, indent=2) + "\n"
 
 
+WINDOW_PHRASES = {90: "three months", 365: "year"}
+
+
 def _window_phrase():
-    return "year" if NEWS_WINDOW_DAYS == 365 else f"{NEWS_WINDOW_DAYS} days"
+    return WINDOW_PHRASES.get(NEWS_WINDOW_DAYS, f"{NEWS_WINDOW_DAYS} days")
 
 
 def _description(scope=""):
@@ -500,5 +505,6 @@ def on_env(env, config, files):
     env.globals["news_items"] = _items
     env.globals["news_feeds"] = _feeds
     env.globals["news_window_days"] = NEWS_WINDOW_DAYS
+    env.globals["news_window_phrase"] = _window_phrase()
     env.filters["topic_label"] = lambda slug: topic_label(slug, _concept_titles)
     return env
