@@ -308,6 +308,26 @@ class AnnouncementTests(unittest.TestCase):
         self.assertEqual(self.collect([ev(-3, "soon")], window_days=None,
                                       notable_only=False, announce_days={}), [])
 
+    def test_a_major_event_can_ask_for_more_notice(self):
+        items = self.collect([ev(-80, "summit", announce_days=90),
+                              ev(-80, "default notice")])
+        self.assertEqual([i["title"] for i in items], ["summit"])
+        self.assertEqual(items[0]["announced"], TODAY - timedelta(days=10))
+
+    def test_or_less(self):
+        self.assertEqual(self.collect([ev(-20, "late", announce_days=7)]), [])
+
+    def test_a_notable_event_cannot_opt_itself_in(self):
+        self.assertEqual(self.collect([ev(-3, "soon", "medium", announce_days=30)]), [])
+
+    def test_an_invalid_value_falls_back_to_the_default(self):
+        # check_event_sourcing.py fails the build on these; the hook just
+        # doesn't let them change anything.
+        for bad in (0, 400, "90", True):
+            with self.subTest(value=bad):
+                items = self.collect([ev(-80, "summit", announce_days=bad)])
+                self.assertEqual(items, [])
+
 
 class ArchiveTests(unittest.TestCase):
     """/archive/ is collect_news() with the limits off."""

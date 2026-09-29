@@ -121,5 +121,44 @@ class ThinHistoryReportTests(unittest.TestCase):
         self.assertIn("thin history, info only): 2", out)
 
 
+def announce_event(value, notable="true"):
+    return f"""- date: '2030-01-01'
+  title: A flagship summit
+  url: https://example.org/summit
+  note: The site announces the summit.
+  notable: {notable}
+  announce_days: {value}
+"""
+
+
+class AnnounceDaysTests(unittest.TestCase):
+    """announce_days (hooks/news_export.py) is validated here, because the
+    hook falls back to the default notice without a word on a bad value."""
+
+    run_main = ThinHistoryReportTests.run_main
+
+    def check(self, events_yaml):
+        with tempfile.TemporaryDirectory() as tmp:
+            write_org(tmp, "org", events_yaml=events_yaml)
+            return self.run_main(tmp)
+
+    def test_valid_value_on_a_major_event_passes(self):
+        out, code = self.check(announce_event(90))
+        self.assertEqual(code, 0)
+        self.assertNotIn("ANNOUNCE", out)
+
+    def test_invalid_values_fail_the_build(self):
+        for bad in ("0", "400", "'90'", "true", "2.5"):
+            with self.subTest(value=bad):
+                out, code = self.check(announce_event(bad))
+                self.assertEqual(code, 1)
+                self.assertIn("BAD ANNOUNCE", out)
+
+    def test_on_a_notable_event_it_is_flagged_as_ignored_not_failed(self):
+        out, code = self.check(announce_event(90, notable="medium"))
+        self.assertEqual(code, 0)
+        self.assertIn("ANNOUNCE IGNORED", out)
+
+
 if __name__ == "__main__":
     unittest.main()

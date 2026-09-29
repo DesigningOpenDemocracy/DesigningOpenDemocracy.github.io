@@ -89,6 +89,33 @@ NEWS_WINDOW_DAYS = 90
 # one guid, so a feed reader sees it once, when it's announced.
 ANNOUNCE_DAYS = {True: 30}
 
+# A major event can ask for more (or less) notice than its tier's default
+# with its own `announce_days:` (an international conference people need to
+# book travel for might want 90). Capped at a year: further out than that,
+# it's the calendar's job, not a news item. Only honoured on a tier
+# ANNOUNCE_DAYS lists, so a notable event can't opt itself in, and the
+# archive (which passes an empty map) never announces anything.
+# util/check_event_sourcing.py fails the build on a value outside this
+# range, since the hook otherwise falls back to the default without a word.
+MAX_ANNOUNCE_DAYS = 365
+
+
+def valid_announce_days(value):
+    """An `announce_days:` value the hook will honour: a whole number of days
+    from 1 to MAX_ANNOUNCE_DAYS. (`true` is excluded explicitly: YAML makes
+    it a bool, and Python counts a bool as an int.)"""
+    return (isinstance(value, int) and not isinstance(value, bool)
+            and 1 <= value <= MAX_ANNOUNCE_DAYS)
+
+
+def announce_lead(entry, tier, announce_days):
+    """Days of notice an event gets in News, or None if it isn't announced."""
+    default = announce_days.get(tier) if tier is not False else None
+    if not default:
+        return None
+    own = entry.get("announce_days")
+    return own if valid_announce_days(own) else default
+
 TIER_LABELS = {True: "Major", "medium": "Notable"}
 
 ATOM_NS = "http://www.w3.org/2005/Atom"
@@ -202,8 +229,8 @@ def collect_news(orgs, today, window_days=NEWS_WINDOW_DAYS, archive_info=None, n
     are the union.
 
     The exception is an announcement: a tier listed in `announce_days`
-    (ANNOUNCE_DAYS by default: major events, 30 days) enters News that many
-    days before it starts, marked `upcoming`, and so for that stretch is on
+    (ANNOUNCE_DAYS by default: major events, 30 days, or the event's own
+    `announce_days:`) enters News that many days before it starts, marked `upcoming`, and so for that stretch is on
     both News and the calendar. Its `announced` date is what the feeds
     publish it under.
 
@@ -232,7 +259,7 @@ def collect_news(orgs, today, window_days=NEWS_WINDOW_DAYS, archive_info=None, n
             # that stops; only an announced tier comes in earlier.
             upcoming = _is_current(d, _parse_date(entry.get("end_date")), today)
             if upcoming:
-                lead = announce_days.get(tier) if tier is not False else None
+                lead = announce_lead(entry, tier, announce_days)
                 if not lead or (d - today).days > lead:
                     continue
                 announced = d - timedelta(days=lead)
