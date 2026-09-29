@@ -1,0 +1,144 @@
+{% extends "main.html" %}
+{#- Landscape Archive: every past curated org event, newest first, grouped
+    by year. hooks/news_export.py's `archive_items` — the same collect_news()
+    view Landscape News uses, with no window and every tier — so an item
+    reads and links identically on both pages. One compact row per event
+    rather than News' cards: this list runs to hundreds of rows, and the
+    page has to stay light enough to scan. -#}
+{% block content %}
+{{ super() }}
+<div class="md-typeset">
+
+{%- if not archive_items %}
+<p><em>No past events are recorded yet.</em></p>
+{%- else %}
+
+{%- set country_entries = [] %}
+{%- set years = [] %}
+{%- for i in archive_items %}
+  {%- if i.date.year not in years %}{% set _ = years.append(i.date.year) %}{% endif %}
+  {%- for c in i.countries %}
+    {%- set entry = {'code': c, 'name': c | country_name, 'flag': c | country_flag} %}
+    {%- if entry not in country_entries %}{% set _ = country_entries.append(entry) %}{% endif %}
+  {%- endfor %}
+{%- endfor %}
+
+<div class="calendar-filter-bar archive-filter-bar">
+  <input type="search" id="archive-search" class="org-search-input" placeholder="Search titles and organisations…" aria-label="Search the archive">
+  <select id="archive-country-filter" class="org-filter-select" aria-label="Filter by country">
+    <option value="all">All countries</option>
+    {%- for c in country_entries | sort(attribute='name') %}
+    <option value="{{ c.code }}">{{ c.flag }} {{ c.name }}</option>
+    {%- endfor %}
+  </select>
+  <select id="archive-tier-filter" class="org-filter-select" aria-label="Filter by significance">
+    <option value="all">All events</option>
+    <option value="notable">Major and notable</option>
+    <option value="major">Major only</option>
+  </select>
+  <button type="button" id="archive-filter-reset" class="calendar-reset-btn" aria-label="Reset filters">✕ Reset</button>
+  <span id="archive-filter-count" class="calendar-filter-count">{{ archive_items | length }} events</span>
+</div>
+
+<nav class="archive-years" aria-label="Jump to year">
+  {%- for y in years %}<a href="#y{{ y }}" data-year="{{ y }}">{{ y }}</a>{% endfor %}
+</nav>
+
+{%- for y in years %}
+<section class="archive-year" data-year="{{ y }}">
+<h2 class="archive-year-heading" id="y{{ y }}">{{ y }}</h2>
+<ul class="archive-list">
+  {%- for i in archive_items if i.date.year == y %}
+  {%- set tier = 'major' if i.notable is true else ('medium' if i.notable == 'medium' else 'none') %}
+  <li class="archive-item archive-item--{{ tier }}" data-countries="{{ i.countries | join(' ') }}" data-tier="{{ tier }}">
+    <time class="archive-date" datetime="{{ i.date.isoformat() }}">{{ i.date.day }} {{ i.date.strftime('%b') }}</time>
+    <span class="archive-tier" {% if tier == 'major' %}title="Major event"{% elif tier == 'medium' %}title="Notable"{% endif %}>{% if tier == 'major' %}★{% elif tier == 'medium' %}●{% endif %}</span>
+    <span class="archive-main">
+      <span class="archive-title">
+        {%- if i.href %}<a href="{{ i.href }}" target="_blank" rel="noopener">{{ i.title }}</a>{% else %}{{ i.title }}{% endif %}
+        {%- if i.url_status in ('dead', 'unfit') %} <span class="archive-note" title="The original is gone; this links to an archived copy">(archived copy)</span>{% endif %}
+      </span>
+      <span class="archive-orgs">
+        {%- for o in i.orgs %}<a href="/organisations/{{ o.slug }}/">{{ o.title }}</a>{% if not loop.last %}, {% endif %}{% endfor %}
+        {%- if i.countries %} · {% for c in i.countries %}{{ c | country_flag }}{% endfor %}{% endif %}
+        {%- if i.notable_reason %} · <span class="archive-reason">{{ i.notable_reason }}</span>{% endif %}
+      </span>
+    </span>
+  </li>
+  {%- endfor %}
+</ul>
+</section>
+{%- endfor %}
+<p id="archive-empty" class="archive-empty" hidden><em>Nothing matches these filters.</em></p>
+{%- endif %}
+
+</div>
+{% endblock %}
+{% block scripts %}
+{{ super() }}
+<script>
+(function () {
+  var search = document.getElementById('archive-search');
+  if (!search) return;
+  var countrySel = document.getElementById('archive-country-filter');
+  var tierSel = document.getElementById('archive-tier-filter');
+  var resetBtn = document.getElementById('archive-filter-reset');
+  var countEl = document.getElementById('archive-filter-count');
+  var emptyEl = document.getElementById('archive-empty');
+  var items = Array.prototype.slice.call(document.querySelectorAll('.archive-item'));
+  var sections = document.querySelectorAll('.archive-year');
+  var yearLinks = document.querySelectorAll('.archive-years a');
+  // Lowercased once, not on every keystroke.
+  var texts = items.map(function (el) { return el.textContent.toLowerCase(); });
+
+  function hasOption(sel, value) {
+    return Array.prototype.some.call(sel.options, function (o) { return o.value === value; });
+  }
+  var params = new URLSearchParams(window.location.search);
+  if (params.get('q')) search.value = params.get('q');
+  if (params.get('country') && hasOption(countrySel, params.get('country'))) countrySel.value = params.get('country');
+  if (params.get('tier') && hasOption(tierSel, params.get('tier'))) tierSel.value = params.get('tier');
+
+  function apply() {
+    var q = search.value.trim().toLowerCase();
+    var country = countrySel.value;
+    var tier = tierSel.value;
+    var shown = 0;
+    items.forEach(function (el, n) {
+      var t = el.getAttribute('data-tier');
+      var ok = (!q || texts[n].indexOf(q) !== -1) &&
+        (country === 'all' || (' ' + el.getAttribute('data-countries') + ' ').indexOf(' ' + country + ' ') !== -1) &&
+        (tier === 'all' || (tier === 'major' ? t === 'major' : t !== 'none'));
+      el.hidden = !ok;
+      if (ok) shown++;
+    });
+    var visibleYears = {};
+    sections.forEach(function (s) {
+      var any = s.querySelector('.archive-item:not([hidden])');
+      s.hidden = !any;
+      if (any) visibleYears[s.getAttribute('data-year')] = true;
+    });
+    yearLinks.forEach(function (a) { a.hidden = !visibleYears[a.getAttribute('data-year')]; });
+    countEl.textContent = shown + ' event' + (shown !== 1 ? 's' : '');
+    emptyEl.hidden = shown !== 0;
+    resetBtn.classList.toggle('visible', !!q || country !== 'all' || tier !== 'all');
+
+    var url = new URL(window.location);
+    ['q', 'country', 'tier'].forEach(function (k) { url.searchParams.delete(k); });
+    if (q) url.searchParams.set('q', search.value.trim());
+    if (country !== 'all') url.searchParams.set('country', country);
+    if (tier !== 'all') url.searchParams.set('tier', tier);
+    window.history.replaceState({}, '', url);
+  }
+
+  search.addEventListener('input', apply);
+  countrySel.addEventListener('change', apply);
+  tierSel.addEventListener('change', apply);
+  resetBtn.addEventListener('click', function () {
+    search.value = ''; countrySel.value = 'all'; tierSel.value = 'all';
+    apply();
+  });
+  apply();
+})();
+</script>
+{% endblock %}

@@ -2914,6 +2914,76 @@ html .md-typeset details.plain-details > :last-child {
   margin-left: auto;
 }
 
+/* Landscape Archive (docs/overrides/archive.html): one compact row per
+   event, since the list runs to hundreds. Tier colours follow the
+   calendar's (amber major, blue notable). */
+.md-typeset .archive-years {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2em 0.7em;
+  margin: 0.8em 0 0.4em;
+  font-size: 0.8em;
+}
+.md-typeset .archive-years a[hidden],
+.md-typeset .archive-year[hidden],
+.md-typeset .archive-item[hidden] {
+  display: none;
+}
+.md-typeset .archive-year-heading {
+  margin: 1.4em 0 0.3em;
+  scroll-margin-top: 4rem;
+}
+.md-typeset ul.archive-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.md-typeset ul.archive-list > li.archive-item {
+  display: grid;
+  grid-template-columns: 4.2em 1.1em 1fr;
+  gap: 0 0.4em;
+  margin: 0;
+  padding: 0.35em 0;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  line-height: 1.4;
+}
+.archive-date {
+  font-variant-numeric: tabular-nums;
+  opacity: 0.7;
+  white-space: nowrap;
+}
+.archive-tier {
+  text-align: center;
+}
+.archive-item--major .archive-tier {
+  color: #ffb300;
+}
+.archive-item--medium .archive-tier {
+  color: #4fc3f7;
+}
+.archive-item--major .archive-title {
+  font-weight: 600;
+}
+.archive-main {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.archive-orgs {
+  display: block;
+  font-size: 0.8em;
+  opacity: 0.8;
+}
+.archive-reason,
+.archive-note {
+  font-style: italic;
+}
+.archive-filter-bar .org-search-input {
+  flex: 1 1 14em;
+}
+.archive-empty[hidden] {
+  display: none;
+}
+
 /* Footer subscribe links */
 .footer-subscribe {
   display: flex;

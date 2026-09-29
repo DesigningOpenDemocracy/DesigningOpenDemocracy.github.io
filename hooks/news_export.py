@@ -108,6 +108,7 @@ _tf = _load_module("_news_text_fragment", os.path.join(HOOKS_DIR, "..", "util", 
 COUNTRY_NAMES = _cal._COUNTRY_NAMES
 _notable_tier = _cal._notable_tier
 _parse_date = _cal._parse_date
+_is_current = _cal._is_current
 
 
 def country_name(code):
@@ -172,13 +173,14 @@ def _link_for(url, quote, archive_info):
     return _tf.with_fragment(url, quote), archive_url, url_status
 
 
-def collect_news(orgs, today, window_days=NEWS_WINDOW_DAYS, archive_info=None):
+def collect_news(orgs, today, window_days=NEWS_WINDOW_DAYS, archive_info=None, notable_only=True):
     """Recent notable events across every org, newest first.
 
-    An event qualifies when it carries a notable: tier and started before
-    `today` but within `window_days` of it. Anything dated today or later is
-    the calendar's (calendar_export.py takes date >= today), so an event is
-    on exactly one of the two pages at any build.
+    An event qualifies when it carries a notable: tier, has ended (on its
+    end_date where there is one) before `today`, and started within
+    `window_days` of it. Anything still running or ahead is the calendar's
+    (calendar_export._is_current), so an event is on exactly one of the two
+    pages at any build.
 
     Co-hosted events are recorded on each co-host's page, usually under the
     same source URL (DOD's International Day of Democracy panel sits on both
@@ -187,6 +189,11 @@ def collect_news(orgs, today, window_days=NEWS_WINDOW_DAYS, archive_info=None):
     subscriber twice. The first org in filename order supplies the title,
     note and quote; the stronger of the tiers wins; countries and concepts
     are the union.
+
+    The Landscape Archive (/archive/) is the same view with the limits off:
+    window_days=None for no cut-off and notable_only=False for every
+    curated event, so the two pages can't disagree about what an item says
+    or where it links.
     """
     items = []
     by_key = {}
@@ -195,10 +202,14 @@ def collect_news(orgs, today, window_days=NEWS_WINDOW_DAYS, archive_info=None):
             if not isinstance(entry, dict):
                 continue
             tier = _notable_tier(entry)
-            if tier is False:
+            if tier is False and notable_only:
                 continue
             d = _parse_date(entry.get("date"))
-            if not d or d >= today or (today - d).days > window_days:
+            if not d or (window_days is not None and (today - d).days > window_days):
+                continue
+            # The calendar keeps an event until it has ended
+            # (calendar_export._is_current), so news starts where that stops.
+            if _is_current(d, _parse_date(entry.get("end_date")), today):
                 continue
             url = entry.get("url") or ""
             org_title = m.get("title", slug)
@@ -480,6 +491,7 @@ def write_feeds(items, slices, out_dir, site_url, concept_titles):
 
 
 _items: list = []
+_archive: list = []
 _feeds: dict = {"countries": [], "topics": []}
 _concept_titles: dict = {}
 
@@ -489,7 +501,12 @@ def on_pre_build(config):
         return
     orgs = load_orgs()
     concept_titles = load_concept_titles()
-    items = collect_news(orgs, date.today(), archive_info=_tf.load_archive_info())
+    archive_info = _tf.load_archive_info()
+    items = collect_news(orgs, date.today(), archive_info=archive_info)
+    # No feed for the archive: it's for browsing and search, and every
+    # notable item in it already went out on /news.xml in its time.
+    _archive[:] = collect_news(orgs, date.today(), window_days=None,
+                               archive_info=archive_info, notable_only=False)
     slices = feed_slices(orgs, items, concept_titles)
     site_url = (config.get("site_url") or "").rstrip("/")
     write_feeds(items, slices, DOCS_DIR, site_url, concept_titles)
@@ -503,8 +520,36 @@ def on_pre_build(config):
 
 def on_env(env, config, files):
     env.globals["news_items"] = _items
+    env.globals["archive_items"] = _archive
     env.globals["news_feeds"] = _feeds
     env.globals["news_window_days"] = NEWS_WINDOW_DAYS
     env.globals["news_window_phrase"] = _window_phrase()
     env.filters["topic_label"] = lambda slug: topic_label(slug, _concept_titles)
     return env
+
+
+_lit: list = []
+
+
+def on_page_context(context, *, page, config, nav):
+    """Keep the News tab highlighted on /archive/.
+
+    The archive is deliberately left out of the nav (mkdocs.yml's
+    not_in_nav) rather than made a twelfth tab, so nothing in the nav is
+    active while it renders and every tab would sit dark. It is the long
+    tail of Landscape News, so the News page is switched on for the render
+    and off again after (on_post_page) — the same thing hooks/org_template.py
+    does for org profiles under the Democracy Landscape tab. The switch-off
+    matters as much, or the tab stays lit on every page built afterwards."""
+    if page.file.src_uri == "archive.md":
+        for item in nav.pages:
+            if item.file.src_uri == "news.md" and not item.active:
+                item.active = True
+                _lit.append(item)
+    return context
+
+
+def on_post_page(output, *, page, config):
+    while _lit:
+        _lit.pop().active = False
+    return output

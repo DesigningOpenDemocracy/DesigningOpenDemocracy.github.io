@@ -141,6 +141,7 @@ not_in_nav: |
   organisations/*.md
   bot.md
   tags.md
+  archive.md
 
 extra_javascript:
   - https://unpkg.com/leaflet@1.9.4/dist/leaflet.js

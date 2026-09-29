@@ -201,12 +201,24 @@ def _parse_date(val):
         return None
 
 
+def _is_current(d, end, today):
+    """Whether an event belongs on the calendar rather than in the past:
+    it hasn't ended yet. Judged on the end, not the start, so a multi-day
+    event that is under way stays on the calendar (calendar.html badges it
+    "On now") instead of dropping off both the calendar and News for the
+    rest of its run, which is what a start-date test did. news_export.py
+    takes the complement, so an event is on exactly one of the two."""
+    return max(d, end or d) >= today
+
+
 def _load_manual_events(today, past_days=None):
-    """Future events from each org's `events:` frontmatter list.
+    """Current events from each org's `events:` frontmatter list: not yet
+    started, or started but still running (see _is_current).
 
     With `past_days`, instead the events that *finished* before `today`
     (on their end_date where there is one) and started within `past_days`
-    of it — the calendar page's collapsed "Recent past events" list."""
+    of it: the calendar page's collapsed "Recent past events" list, and,
+    with past_days=ARCHIVE_ALL, the whole archive."""
     if frontmatter is None:
         return []
     out = []
@@ -220,10 +232,12 @@ def _load_manual_events(today, past_days=None):
             d = _parse_date(entry.get("date"))
             if not d:
                 continue
+            end = _parse_date(entry.get("end_date"))
+            if not end or end < d:
+                end = d
             if past_days is None:
-                wanted = d >= today
+                wanted = _is_current(d, end, today)
             else:
-                end = _parse_date(entry.get("end_date")) or d
                 wanted = end < today and (today - d).days <= past_days
             if wanted:
                 evt = {
@@ -280,7 +294,7 @@ def _load_synced_events(today):
             continue
         for entry in cached:
             d = _parse_date(entry.get("date"))
-            if d and d >= today:
+            if d and _is_current(d, _parse_date(entry.get("end_date")), today):
                 evt = {
                     "date": d,
                     "end_date": _parse_date(entry.get("end_date")),
@@ -337,7 +351,7 @@ def _load_elections(today):
         if not isinstance(entry, dict):
             continue
         d = _parse_date(entry.get("date"))
-        if not d or d < today:
+        if not d or not _is_current(d, _parse_date(entry.get("end_date")), today):
             continue
         level = entry.get("level")
         if level not in ELECTION_LEVEL_LABELS:

@@ -70,6 +70,13 @@ class SelectionTests(unittest.TestCase):
         self.assertEqual(self.titles([ev(0, "today"), ev(1, "yesterday"),
                                       ev(-3, "future")]), ["yesterday"])
 
+    def test_a_running_event_stays_on_the_calendar_until_it_ends(self):
+        # calendar_export keeps an event while it's under way, so news must
+        # not take it until its end_date has passed.
+        running = ev(3, "running", end_date=TODAY + timedelta(days=1))
+        ended = ev(5, "ended", end_date=TODAY - timedelta(days=1))
+        self.assertEqual(self.titles([running, ended]), ["ended"])
+
     def test_window_edges(self):
         w = ne.NEWS_WINDOW_DAYS
         self.assertEqual(self.titles([ev(w, "edge"), ev(w + 1, "too old")]), ["edge"])
@@ -261,6 +268,52 @@ class WriteFeedsTests(unittest.TestCase):
         os.utime(path, (1, 1))
         ne.write_feeds(self.items, self.slices, self.tmp.name, SITE, {})
         self.assertEqual(os.stat(path).st_mtime, 1)
+
+
+class ArchiveTests(unittest.TestCase):
+    """/archive/ is collect_news() with the limits off."""
+
+    def test_every_tier_and_no_window(self):
+        events = [ev(2, "recent major", True), ev(5, "untiered", False),
+                  ev(4000, "long ago", "medium"), ev(-3, "upcoming", True)]
+        items = ne.collect_news([("a", org("A", events=events))], TODAY,
+                                window_days=None, notable_only=False)
+        self.assertEqual([i["title"] for i in items], ["recent major", "untiered", "long ago"])
+
+    def test_news_itself_still_skips_untiered(self):
+        items = ne.collect_news([("a", org("A", events=[ev(5, "untiered", False)]))], TODAY)
+        self.assertEqual(items, [])
+
+
+class ArchiveTabTests(unittest.TestCase):
+    """The archive is outside the nav, so the hook lights the News tab while
+    it renders, and must switch it off again after."""
+
+    def setUp(self):
+        import types
+        self.types = types
+        ne._lit.clear()
+        self.news = self.page("news.md")
+        self.nav = types.SimpleNamespace(pages=[self.page("calendar.md"), self.news])
+
+    def page(self, src):
+        return self.types.SimpleNamespace(file=self.types.SimpleNamespace(src_uri=src), active=False)
+
+    def render(self, p):
+        ne.on_page_context({}, page=p, config={}, nav=self.nav)
+        seen = self.news.active
+        ne.on_post_page("", page=p, config={})
+        return seen
+
+    def test_archive_lights_news_only_while_rendering(self):
+        self.assertTrue(self.render(self.page("archive.md")))
+        self.assertFalse(self.news.active)
+        self.assertFalse(self.render(self.page("about.md")))
+
+    def test_news_page_itself_is_left_to_mkdocs(self):
+        self.news.active = True
+        self.render(self.news)
+        self.assertTrue(self.news.active)
 
 
 if __name__ == "__main__":

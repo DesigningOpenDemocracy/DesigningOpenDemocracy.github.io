@@ -19,6 +19,7 @@
   <a href="/news.xml">📡 RSS feed</a> ·
   <a href="/news.json">🧾 JSON Feed</a> ·
   <a href="/calendar/">📅 Upcoming events</a> ·
+  <a href="/archive/">🗄 Archive</a> ·
   <a href="/data/organisations.json">🏛 Org data</a>
 </p>
 
@@ -29,7 +30,7 @@
 </p>
 
 {%- if not news_items %}
-<p><em>No major or notable news in the past {{ news_window_phrase }}. Items appear here when an organisation's page records an event flagged <code>notable:</code> — see the <a href="/organisations/">Democracy Landscape</a>.</em></p>
+<p><em>No major or notable news in the past {{ news_window_phrase }}. Items appear here when an organisation's page records an event flagged <code>notable:</code> — see the <a href="/organisations/">Democracy Landscape</a>. Earlier news is in the <a href="/archive/?tier=notable">Landscape Archive</a>.</em></p>
 {%- else %}
 
 {%- set country_entries = [] %}
@@ -161,6 +162,7 @@
 </ul>
 {%- endfor %}
 {%- endif %}
+<p class="news-archive-link"><a href="/archive/?tier=notable">Older news in the Landscape Archive →</a></p>
 
 </div>
 {% endblock %}

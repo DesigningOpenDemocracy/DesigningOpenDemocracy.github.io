@@ -138,6 +138,10 @@ class RecentPastEventsTests(unittest.TestCase):
             self.today, past_days=ce.PAST_WINDOW_DAYS)}
         self.assertNotIn("Still running", titles)
 
+    def test_an_ongoing_event_stays_on_the_calendar(self):
+        titles = {e["title"] for e in ce._load_manual_events(self.today)}
+        self.assertEqual(titles, {"Today", "Still running"})
+
     def test_past_events_stay_out_of_the_upcoming_list(self):
         titles = {e["title"] for e in ce._load_manual_events(self.today)}
         self.assertIn("Today", titles)
