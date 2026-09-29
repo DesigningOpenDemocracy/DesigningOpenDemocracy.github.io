@@ -9,6 +9,11 @@ rendered on the org's own timeline (organisation.html wraps both in a
 title. Dropping a field here is silent — the calendar still builds — so
 the passthrough is pinned rather than left to review.
 
+Also pins the topic gate (is_democracy_related): an org marked
+`democracy_focus: partial` reaches the calendar only with events marked
+`democracy_related: true`, and its iCal sync not at all. Dropping an event
+is just as silent as dropping a field, in both directions.
+
 Offline, stdlib-only apart from the python-frontmatter the hook itself
 needs. Run with:
 
@@ -80,6 +85,75 @@ class ManualEventDescriptionTests(unittest.TestCase):
                     if e["title"] == "An event with no description at all")
         self.assertFalse(bare["note"])
         self.assertFalse(bare["quote"])
+
+
+TOPIC_ORG_PAGE = """---
+title: {title}
+type: advocacy
+{focus}status: active
+events:
+- date: '{date}'
+  title: {title} unmarked
+  url: https://example.org/unmarked
+  note: n
+- date: '{date}'
+  title: {title} marked no
+  url: https://example.org/no
+  note: n
+  democracy_related: false
+- date: '{date}'
+  title: {title} marked yes
+  url: https://example.org/yes
+  note: n
+  democracy_related: true
+---
+"""
+
+
+class TopicGateTests(unittest.TestCase):
+    """A partial-focus org contributes only events marked democracy_related:
+    true; a democracy-focused org is unaffected by the field."""
+
+    def setUp(self):
+        if ce.frontmatter is None:
+            self.skipTest("python-frontmatter not installed")
+        self.tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(self.tmp.cleanup)
+        self.future = datetime.date.today() + datetime.timedelta(days=30)
+        orgs = os.path.join(self.tmp.name, "orgs")
+        synced = os.path.join(self.tmp.name, "events")
+        os.makedirs(orgs)
+        os.makedirs(synced)
+        for slug, title, focus in (("bank", "Bank", "democracy_focus: partial\n"),
+                                   ("core", "Core", "")):
+            with open(os.path.join(orgs, f"{slug}.md"), "w", encoding="utf-8") as f:
+                f.write(TOPIC_ORG_PAGE.format(title=title, focus=focus,
+                                              date=self.future.isoformat()))
+            with open(os.path.join(synced, f"{slug}.json"), "w", encoding="utf-8") as f:
+                json.dump([{"date": self.future.isoformat(),
+                            "title": f"{title} feed event",
+                            "url": f"https://example.org/{slug}/feed"}], f)
+        for name, value in (("ORGS_DIR", orgs), ("SYNCED_EVENTS_DIR", synced)):
+            self.addCleanup(setattr, ce, name, getattr(ce, name))
+            setattr(ce, name, value)
+
+    def titles(self, loader):
+        return sorted(e["title"] for e in loader(datetime.date.today()))
+
+    def test_partial_org_needs_an_explicit_yes(self):
+        self.assertEqual(self.titles(ce._load_manual_events),
+                         ["Bank marked yes", "Core marked no",
+                          "Core marked yes", "Core unmarked"])
+
+    def test_partial_orgs_feed_contributes_nothing(self):
+        # A synced iCal entry has no democracy_related to carry, so a
+        # partial org's feed is out wholesale; a core org's is untouched.
+        self.assertEqual(self.titles(ce._load_synced_events), ["Core feed event"])
+
+    def test_truthy_string_is_not_a_yes(self):
+        self.assertFalse(ce.is_democracy_related(
+            {"democracy_focus": "partial"}, {"democracy_related": "yes"}))
+        self.assertTrue(ce.is_democracy_related({}, {}))
 
 
 class CalendarJsonLdEscapingTests(unittest.TestCase):

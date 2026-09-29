@@ -106,6 +106,9 @@ _tf = _load_module("_news_text_fragment", os.path.join(HOOKS_DIR, "..", "util", 
 COUNTRY_NAMES = _cal._COUNTRY_NAMES
 _notable_tier = _cal._notable_tier
 _parse_date = _cal._parse_date
+# The topic gate for orgs that only partly work on democracy is shared
+# with the calendar, so the two views can't disagree about what's on topic.
+is_democracy_related = _cal.is_democracy_related
 
 
 def country_name(code):
@@ -170,23 +173,6 @@ def _link_for(url, quote, archive_info):
     return _tf.with_fragment(url, quote), archive_url, url_status
 
 
-def is_democracy_news(org_meta, entry):
-    """Whether an event is on-topic for Landscape News.
-
-    Some organisations are in the landscape because they *also* cover
-    democracy: a customer-owned bank, a media-literacy podcast, a
-    social-innovation fund. Their notable events are notable for them, and
-    usually about something else (a climate summit, an audience milestone).
-    Those orgs carry `democracy_focus: partial`, and only their events
-    marked `democracy_related: true` count as news. Every other org's
-    notable events count as they always have. See CLAUDE.md's Landscape
-    News section.
-    """
-    if (org_meta or {}).get("democracy_focus") != "partial":
-        return True
-    return entry.get("democracy_related") is True
-
-
 def _merge_cohost(item, org_ref, country, concepts, tier):
     item["orgs"].append(org_ref)
     if country and country not in item["countries"]:
@@ -212,7 +198,7 @@ def collect_news(orgs, today, window_days=NEWS_WINDOW_DAYS, archive_info=None):
     note and quote; the stronger of the tiers wins; countries and concepts
     are the union.
 
-    An off-topic event from a partial-focus org (see is_democracy_news) never
+    An off-topic event from a partial-focus org (see is_democracy_related) never
     creates an item, but still joins one as a co-host: if the same event is
     on a democracy-focused org's page it is news regardless, and leaving a
     co-host off would misreport who ran it.
@@ -237,7 +223,7 @@ def collect_news(orgs, today, window_days=NEWS_WINDOW_DAYS, archive_info=None):
             org_ref = {"slug": slug, "title": org_title}
 
             key = (d, url) if url else None
-            if not is_democracy_news(m, entry):
+            if not is_democracy_related(m, entry):
                 if key:
                     held.append((key, org_ref, country, concepts, tier))
                 continue

@@ -122,12 +122,12 @@ class ThinHistoryReportTests(unittest.TestCase):
         self.assertIn("thin history, info only): 2", out)
 
 
-class NewsTopicGateTests(unittest.TestCase):
-    """democracy_focus / democracy_related, the Landscape News topic gate
-    (hooks/news_export.py's is_democracy_news). A misspelt value would read
-    as a democracy-focused org and let off-topic events into the news, so
-    invalid values fail; an undecided event that could still reach the page
-    is surfaced."""
+class TopicGateTests(unittest.TestCase):
+    """democracy_focus / democracy_related, the topic gate the calendar and
+    Landscape News share (hooks/calendar_export.py's is_democracy_related).
+    A misspelt value would read as a democracy-focused org and let off-topic
+    events into both, so invalid values fail; an undecided event that could
+    still reach either view is surfaced."""
 
     run_main = ThinHistoryReportTests.run_main
 
@@ -140,11 +140,11 @@ class NewsTopicGateTests(unittest.TestCase):
         with open(path, "w", encoding="utf-8") as f:
             f.write(text)
 
-    def recent(self, extra=""):
-        d = (date.today() - timedelta(days=30)).isoformat()
+    def recent(self, extra="", days_ago=30, notable="  notable: true\n"):
+        d = (date.today() - timedelta(days=days_ago)).isoformat()
         return (f"- date: '{d}'\n  title: Recent notable thing\n"
                 f"  url: https://example.org/recent\n  note: The site says so.\n"
-                f"  notable: true\n{extra}")
+                f"{notable}{extra}")
 
     def test_misspelt_focus_fails(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -165,7 +165,7 @@ class NewsTopicGateTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             self.write(tmp, "democracy_focus: partial", events_yaml=self.recent())
             out, code = self.run_main(tmp)
-        self.assertIn("NEWS UNDECIDED", out)
+        self.assertIn("TOPIC UNDECIDED", out)
         self.assertEqual(code, 0)
 
     def test_a_decision_either_way_silences_it(self):
@@ -174,7 +174,7 @@ class NewsTopicGateTests(unittest.TestCase):
                 self.write(tmp, "democracy_focus: partial",
                            events_yaml=self.recent(f"  democracy_related: {value}\n"))
                 out, code = self.run_main(tmp)
-            self.assertNotIn("NEWS UNDECIDED", out, value)
+            self.assertNotIn("TOPIC UNDECIDED", out, value)
             self.assertEqual(code, 0)
 
     def test_history_outside_the_window_is_not_nagged(self):
@@ -182,7 +182,26 @@ class NewsTopicGateTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             self.write(tmp, "democracy_focus: partial", events_yaml=old)
             out, _ = self.run_main(tmp)
-        self.assertNotIn("NEWS UNDECIDED", out)
+        self.assertNotIn("TOPIC UNDECIDED", out)
+
+    def test_any_upcoming_event_is_surfaced_for_the_calendar(self):
+        # The calendar takes every tier, so an untiered upcoming event from a
+        # partial org is dropped from it too, and needs the same nudge.
+        with tempfile.TemporaryDirectory() as tmp:
+            self.write(tmp, "democracy_focus: partial",
+                       events_yaml=self.recent(days_ago=-14, notable=""))
+            out, code = self.run_main(tmp)
+        self.assertIn("TOPIC UNDECIDED", out)
+        self.assertIn("out of the calendar", out)
+        self.assertEqual(code, 0)
+
+    def test_untiered_past_event_is_not_nagged(self):
+        # Past and untiered: on neither view whatever it's marked.
+        with tempfile.TemporaryDirectory() as tmp:
+            self.write(tmp, "democracy_focus: partial",
+                       events_yaml=self.recent(days_ago=30, notable=""))
+            out, _ = self.run_main(tmp)
+        self.assertNotIn("TOPIC UNDECIDED", out)
 
 
 if __name__ == "__main__":

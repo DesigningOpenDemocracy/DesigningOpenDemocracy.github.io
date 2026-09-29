@@ -41,6 +41,13 @@ Output:
 Org-page history/upcoming timelines (rendered from `events:` alone, past and
 future both) are handled separately in organisation.html — this hook only
 cares about the future-facing, cross-org aggregate.
+
+Topic gate: an org marked `democracy_focus: partial` (in the landscape for
+one democracy-relevant strand of broader work) contributes only events
+marked `democracy_related: true` — see is_democracy_related(). Landscape
+News (hooks/news_export.py) applies the same function, so the two
+landscape-wide views can't disagree about what's on topic. The org's own
+page still lists everything.
 """
 
 import glob
@@ -177,6 +184,25 @@ def _notable_tier(entry):
     return v if v is True or v == "medium" else False
 
 
+def is_democracy_related(org_meta, entry):
+    """Whether an org's event belongs on the landscape-wide views: this
+    calendar and Landscape News (hooks/news_export.py).
+
+    Some organisations are in the landscape because they *also* work on
+    democracy: a customer-owned bank, a media outlet, a social-innovation
+    fund. Most of what they run is about something else (a climate summit,
+    an audience milestone), so they carry `democracy_focus: partial`, and
+    only their events marked `democracy_related: true` get through. Absent
+    means no, so a new off-topic event stays out by default rather than
+    until someone notices; util/check_event_sourcing.py surfaces undecided
+    ones. Every other org is unaffected. See CLAUDE.md's Landscape News
+    section.
+    """
+    if (org_meta or {}).get("democracy_focus") != "partial":
+        return True
+    return (entry or {}).get("democracy_related") is True
+
+
 def _parse_date(val):
     if val is None:
         return None
@@ -201,7 +227,7 @@ def _load_manual_events(today):
         m = post.metadata
         for entry in m.get("events") or []:
             d = _parse_date(entry.get("date"))
-            if d and d >= today:
+            if d and d >= today and is_democracy_related(m, entry):
                 evt = {
                     "date": d,
                     "end_date": _parse_date(entry.get("end_date")),
@@ -239,12 +265,14 @@ def _load_synced_events(today):
         return []
     # Map slug -> org title and country so entries can carry a display name.
     titles = {}
+    metas = {}
     for path in glob.glob(os.path.join(ORGS_DIR, "*.md")):
         if os.path.basename(path) in SKIP_FILES:
             continue
         slug = os.path.basename(path)[:-3]
         m = frontmatter.load(path).metadata
         titles[slug] = m.get("title", slug)
+        metas[slug] = m
 
     out = []
     for path in sorted(glob.glob(os.path.join(SYNCED_EVENTS_DIR, "*.json"))):
@@ -256,7 +284,10 @@ def _load_synced_events(today):
             continue
         for entry in cached:
             d = _parse_date(entry.get("date"))
-            if d and d >= today:
+            # A synced entry never carries democracy_related, so a partial
+            # org's feed contributes nothing: a feed has no per-event topic
+            # signal to key off. Curate its democracy events into events:.
+            if d and d >= today and is_democracy_related(metas.get(slug), entry):
                 evt = {
                     "date": d,
                     "end_date": _parse_date(entry.get("end_date")),

@@ -64,6 +64,7 @@ events:
   proof_level: high
   url_checked: '2026-09-17'
   notable: false
+  democracy_related: true
   type: other
 activity:
   dod:

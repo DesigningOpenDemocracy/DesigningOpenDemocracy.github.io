@@ -46,7 +46,7 @@ ORGS_DIR = os.path.join(DOCS_DIR, "organisations")
 
 def _news_window_days():
     """Landscape News' window, read from hooks/news_export.py rather than
-    copied, so the NEWS UNDECIDED check can't drift from what the page
+    copied, so the TOPIC UNDECIDED check can't drift from what the page
     actually shows."""
     path = os.path.join(os.path.dirname(__file__), "..", "hooks", "news_export.py")
     spec = importlib.util.spec_from_file_location("news_export", path)
@@ -238,7 +238,7 @@ def main():
     no_proof = 0
     notable_soft = 0
     bad_topic = 0
-    news_undecided = 0
+    topic_undecided = 0
     mismatched_proof_level = 0
     stale_checked = 0
     total = 0
@@ -250,10 +250,11 @@ def main():
     for p in pages:
         events = p["events"]
 
-        # Landscape News topic gate (see hooks/news_export.py's
-        # is_democracy_news). A misspelt value would silently read as a
-        # democracy-focused org and let its off-topic events back into the
-        # news, so anything but the one valid value fails.
+        # Topic gate for the calendar and Landscape News (see
+        # hooks/calendar_export.py's is_democracy_related). A misspelt value
+        # would silently read as a democracy-focused org and let its
+        # off-topic events back into both, so anything but the one valid
+        # value fails.
         focus = p["post"].metadata.get("democracy_focus")
         partial = focus == "partial"
         if focus is not None and not partial:
@@ -348,18 +349,24 @@ def main():
                 has_issues = True
                 print(f"  BAD DEMOCRACY_RELATED {p['title']}  [{e.get('date','?')}]  "
                       f"{e.get('title','?')}  (must be true or false, got {related!r})")
-            # Soft: a partial-focus org's notable event stays out of Landscape
-            # News until someone decides. Surfaced so that's a choice, not an
-            # accident; democracy_related: false records "decided, not news".
-            # Only for events that can still reach the page (inside its window,
-            # or upcoming): a 1957 founding will never be news either way.
+            # Soft: a partial-focus org's event stays off the calendar and out
+            # of Landscape News until someone decides. Surfaced so that's a
+            # choice, not an accident; democracy_related: false records
+            # "decided, off topic". Only for events that can still reach one of
+            # those views: any upcoming event (the calendar takes every tier),
+            # or a notable one inside the news window. A 1957 founding will
+            # never be on either.
             event_day = parse_date(e.get("date"))
-            could_be_news = event_day is not None and (date.today() - event_day).days <= news_window_days
-            if partial and e.get("notable") and "democracy_related" not in e and could_be_news:
-                news_undecided += 1
-                print(f"  NEWS UNDECIDED  {p['title']}  [{e.get('date','?')}]  {e.get('title','?')}")
-                print(f"                   democracy_focus: partial, so this stays out of Landscape "
-                      f"News until marked democracy_related: true (or false to confirm)")
+            if partial and "democracy_related" not in e and event_day is not None:
+                age = (date.today() - event_day).days
+                upcoming = age <= 0
+                recent_news = e.get("notable") in (True, "medium") and age <= news_window_days
+                if upcoming or recent_news:
+                    topic_undecided += 1
+                    where = "the calendar" if upcoming else "Landscape News"
+                    print(f"  TOPIC UNDECIDED {p['title']}  [{e.get('date','?')}]  {e.get('title','?')}")
+                    print(f"                   democracy_focus: partial, so this stays out of {where} "
+                          f"until marked democracy_related: true (or false to confirm)")
 
             # Soft warning: notable events should have mechanical proof (quote),
             # not just a note. proof_warning also counts as a gap — notable + override = flagged.
@@ -395,9 +402,9 @@ def main():
         print(f"Events lacking proof (no quote, note, or proof_warning): {no_proof}")
     if notable_soft:
         print(f"Notable events without mechanical proof (no quote): {notable_soft}")
-    if news_undecided:
-        print(f"Notable events from partial-focus orgs with no democracy_related decision "
-              f"(kept out of Landscape News): {news_undecided}")
+    if topic_undecided:
+        print(f"Upcoming or recent notable events from partial-focus orgs with no "
+              f"democracy_related decision (kept off the calendar/news): {topic_undecided}")
     if bad_topic:
         print(f"Invalid democracy_focus / democracy_related values: {bad_topic}")
     if weak_url:
