@@ -874,6 +874,11 @@ html .md-typeset details.plain-details > :last-child {
   text-decoration: underline;
   cursor: pointer;
 }
+.map-type-filter-toggle:focus-visible,
+.map-type-filter-bulk button:focus-visible {
+  outline: 2px solid var(--md-accent-fg-color, #49a7e9);
+  outline-offset: 2px;
+}
 .map-type-filter-row {
   display: flex;
   align-items: center;
