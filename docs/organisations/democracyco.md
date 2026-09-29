@@ -53,17 +53,18 @@ events:
   proof_warning: true
 activity:
   dod:
-    date: 2026-09-13
-    note: Website confirmed active — current team leadership and both co-founders'
-      phone numbers match recorded contact.
+    date: 2026-09-28
+    note: 'Website confirmed active — current team, both co-founders'' phone numbers
+      still displayed, matching recorded contact. No new upcoming events found beyond
+      existing events: entry.'
     url: https://www.democracyco.com.au
-    checked: 2026-09-13
+    checked: 2026-09-28
   rss:
     checked: 2026-09-25
     date: 2026-05-02
     note: 'Latest post: Housing Amplifcation'
     url: https://www.democracyco.com.au/housing-amplifcation/?utm_source=rss&utm_medium=rss&utm_campaign=housing-amplifcation
-last_checked: '2026-09-13'
+last_checked: '2026-09-28'
 ---
 
 DemocracyCo is one of Australia's most established deliberative democracy practices, providing end-to-end design, facilitation, and project management for citizens' juries, panels, and assemblies. It was co-founded by Emily Jenke and Emma Fletcher — both with backgrounds in SA public service and community engagement — out of a frustration that governments were not achieving quality reform commensurate with the scale of problems faced by communities.

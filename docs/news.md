@@ -1,9 +1,12 @@
 ---
 title: Landscape News
 template: news.html
-hide:
-  - navigation
 ---
+
+# Landscape News
+
+<!-- An explicit heading because the nav tab is just "News", and with no
+     heading of its own Material prints the nav label as the page title. -->
 
 Major and notable news from organisations across the Democracy Landscape over the past year: new publications, launches, leadership changes, landmark results. Subscribe by RSS, or narrow it to a country or topic. For what's coming up rather than what's happened, see the [calendar](calendar.md).
 

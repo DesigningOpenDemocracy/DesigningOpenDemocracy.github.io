@@ -1,0 +1,26 @@
+{
+  "feed": "https://www.newdemocracy.com.au/feed",
+  "latest": "2026-09-15",
+  "items": [
+    {
+      "date": "2026-09-15",
+      "title": "Democracy Can Do Better Than Political Parties",
+      "url": "https://www.newdemocracy.com.au/2026/09/15/democracy-can-do-better-than-political-parties/"
+    },
+    {
+      "date": "2026-09-14",
+      "title": "Democracy Beyond Elections: A Handbook on Citizens’ Assemblies",
+      "url": "https://www.newdemocracy.com.au/2026/09/14/democracy-beyond-elections-a-handbook-on-citizens-assemblies/"
+    },
+    {
+      "date": "2026-07-03",
+      "title": "A New Political Party: Why?",
+      "url": "https://www.newdemocracy.com.au/2026/07/03/a-new-political-party-why/"
+    },
+    {
+      "date": "2026-06-23",
+      "title": "June Newsletter (2026)",
+      "url": "https://www.newdemocracy.com.au/2026/06/23/june-newsletter-2026/"
+    }
+  ]
+}

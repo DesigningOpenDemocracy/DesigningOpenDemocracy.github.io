@@ -48,17 +48,19 @@ events:
   notable_reason: Legislative win
 activity:
   dod:
-    date: 2026-09-14
-    note: Site live, confirmed active
+    date: 2026-09-28
+    note: Website confirmed active (2026 copyright, live site). No dated news visible
+      on homepage sample; contact (email/phone/form) matches frontmatter exactly.
+      No upcoming events advertised on homepage.
     url: https://healthydemocracy.org
-    checked: 2026-09-14
+    checked: 2026-09-28
   rss:
     checked: 2026-09-25
     date: 2026-02-17
     note: 'Latest post: Want residents, not politicians, to find answers to LA’s thorniest
       problems? Try'
     url: https://healthydemocracy.org/la-assembly-news/2026/02/16/want-residents-not-politicians-to-find-answers-to-las-thorniest-problems-try-a-civic-assembly/
-last_checked: '2026-09-14'
+last_checked: '2026-09-28'
 ---
 
 Healthy Democracy developed and institutionalised the **Citizens' Initiative Review** (CIR) — a process in which a randomly selected, representative panel of citizens spends several days intensively studying a ballot measure: hearing from proponents and opponents, questioning experts, and deliberating together. The panel's findings — a balanced statement of key arguments and evidence — are then published in the official voter's guide sent to all voters before the election.

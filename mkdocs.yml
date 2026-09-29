@@ -126,11 +126,19 @@ hooks:
 # named sitemap.xml on this domain, and a broken one. Excluding it here keeps
 # it out of the build output only — the Jinja loader reads custom_dir from
 # disk directly, so the template still overrides MkDocs' own.
+#
+# data/feeds/ is check_rss.py's per-org feed state (recent post titles and
+# links from other orgs' feeds, plus fetch bookkeeping) for the news checkup.
+# It's internal state that lives in the repo so the weekly probe can remember
+# things between runs, not a data export: serving it would read as DOD
+# republishing other orgs' post lists. Nothing in the build reads it.
 exclude_docs: |
   overrides/sitemap.xml
+  data/feeds/
 
 not_in_nav: |
   llms.txt
+  organisations/*.md
   bot.md
   tags.md
 

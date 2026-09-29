@@ -24,7 +24,7 @@ Read **CLAUDE.md** first for site conventions and curation standards.
 
 ```bash
 # 1. automated data collection (no input needed)
-# re-runs skip orgs checked within 7 days; add --force to probe everything
+# re-runs skip orgs that aren't due yet (see below); add --force to probe everything
 python util/check_rss.py --update-activity
 python util/scrape_news.py
 python util/check_urls.py
@@ -120,10 +120,15 @@ and do not require any manual input.
 python util/check_rss.py --update-activity
 ```
 
-Tries 23 common feed paths per site. Writes `activity.rss` with the latest
-post date and title, or `activity.sitemap` as a fallback. Also writes
-`activity.*.checked` with today's date on every org probed — re-runs within
-7 days skip those orgs automatically. Use `--force` to probe everything.
+Reads each org's `rss_feed:` and writes `activity.rss` with the latest
+post date and title. For an org with no feed it tries 23 common feed paths,
+saves any feed it finds as `rss_feed:`, and otherwise falls back to
+`activity.sitemap`. Also writes `activity.*.checked` with today's date on
+every org read. Re-runs skip orgs that aren't due: a feed is read monthly
+(weekly if it posts faster than that, quarterly once dormant), a failing one
+waits out a widening backoff, and an org with no feed is only re-probed every
+couple of months. See CLAUDE.md's
+"Request politeness" for the full schedule. Use `--force` to probe everything.
 
 **Scrape news pages** (orgs that have `news_page:` set):
 

@@ -22,11 +22,23 @@ same reason: retrying a server that's already told us no, every week,
 forever, produces no new information and is just unwanted traffic to a
 site that's explicitly signalled it doesn't want scripted requests.
 
+A URL that's dead (404/410/5xx) or unreachable is backed off rather than
+made sticky: the failure is recorded in the same cache's `failing` field
+(util/backoff.py, shared with check_fragments.py) and the URL isn't asked
+again for 7, 14, 28, 56, then 90 days, so a dead link costs a handful of
+requests a year rather than two (a HEAD, then a GET to double-check) every
+week. It's still reported as DEAD on every run, and still fails the run,
+until someone fixes the citation or records the decision with
+check_fragments.py --set-url-status <url> dead. Once a URL is marked dead
+it no longer fails the run, and is only rechecked quarterly, to notice if
+it comes back; an `unfit` URL (answers, but with the wrong content) isn't
+requested at all, since liveness can't say anything about it.
+
 Usage:
     python util/check_event_urls.py                  # check all event URLs
     python util/check_event_urls.py --slug mosaiclab  # single org
     python util/check_event_urls.py --timeout 8       # per-request timeout
-    python util/check_event_urls.py --no-cache        # recheck URLs already confirmed BLOCKED
+    python util/check_event_urls.py --no-cache        # recheck blocked and backing-off URLs now
 """
 
 import argparse
@@ -35,7 +47,7 @@ import json
 import os
 import sys
 import time
-from datetime import date
+from datetime import date, timedelta
 from urllib.parse import urlparse
 
 sys.path.insert(0, os.path.dirname(__file__))
@@ -47,6 +59,7 @@ except ImportError as e:
     print(f"Missing dependency: {e.name} — pip install python-frontmatter requests")
     sys.exit(1)
 
+import backoff  # noqa: E402 — retry schedule for failing URLs
 import check_fragments as cf  # noqa: E402 — shared "blocked" URL cache
 from robots_check import robots_allowed  # noqa: E402
 
@@ -87,9 +100,22 @@ def check_url(url, session, timeout):
 
 
 ROBOTS_STATUS = "ROBOTS_DISALLOWED"  # sentinel status value, not a real HTTP code
+MARKED_STATUS = "MARKED"  # sentinel: url_status set by hand, not checked this run
 
 
-def check_url_cached(url, session, timeout, cache, use_cache=True):
+def _failure_code(status, error):
+    return f"HTTP_{status}" if status is not None else "NETWORK_ERROR"
+
+
+def _from_failure_code(code):
+    """(status, error) as check_url() would have returned them, rebuilt from
+    a stored failure record for a URL skipped while backing off."""
+    if code and code.startswith("HTTP_") and code[5:].isdigit():
+        return int(code[5:]), None
+    return None, code or "NETWORK_ERROR"
+
+
+def check_url_cached(url, session, timeout, cache, use_cache=True, today=None):
     """Wraps check_url() with the same shared "blocked" cache
     check_fragments.py writes to (docs/data/citation-state.json,
     keyed the same way — cache[url]["blocked"] is either the "HTTP_403"/
@@ -100,13 +126,32 @@ def check_url_cached(url, session, timeout, cache, use_cache=True):
     Returns (status, final_url, error, skipped), where status is an int
     HTTP code, None on a network error, or the ROBOTS_STATUS sentinel;
     skipped=True means this was answered from cache without any network
-    call this run."""
-    entry = cache.get(url, {}) if use_cache else {}
+    call this run.
+
+    A URL that failed on an earlier run (see the module docstring) is
+    answered from its failure record while backing off, and one a human
+    marked with url_status returns the MARKED_STATUS sentinel: always for
+    `unfit`, and for `dead` except for a quarterly revival check."""
+    today = today or date.today()
+    stored = cache.get(url, {})
+    entry = stored if use_cache else {}
     blocked = entry.get("blocked")
     if blocked == ROBOTS_STATUS:
         return ROBOTS_STATUS, None, None, True
     if blocked:
         return int(blocked.rsplit("_", 1)[-1]), None, None, True
+
+    url_status = stored.get("url_status")
+    failing = entry.get("failing")
+    if url_status == "unfit":
+        return MARKED_STATUS, None, None, True
+    if url_status == "dead":
+        last = backoff.as_date((failing or {}).get("last"))
+        if last and today < last + timedelta(days=backoff.MAX_RETRY_DAYS):
+            return MARKED_STATUS, None, None, True
+    elif failing and backoff.backing_off(failing, today):
+        status, error = _from_failure_code(failing.get("error"))
+        return status, None, error, True
 
     if not robots_allowed(url, DOD_USER_AGENT, timeout=timeout, session=session):
         prior = cache.get(url, {})
@@ -120,12 +165,16 @@ def check_url_cached(url, session, timeout, cache, use_cache=True):
         prior = cache.get(url, {})
         cache[url] = {**prior, "blocked": f"HTTP_{status}",
                       "blocked_since": prior.get("blocked_since", date.today().isoformat())}
-    elif not error and url in cache:
-        # A real, non-blocked answer — clear a stale blocked flag (the
-        # site un-blocked itself, our UA/IP situation changed, or its
-        # robots.txt no longer disallows us).
+    elif error or status >= 400:
+        prior = cache.get(url, {})
+        cache[url] = {**prior, "failing": backoff.record_failure(
+            prior.get("failing"), _failure_code(status, error), today)}
+    elif url in cache:
+        # A real, working answer — clear a stale blocked flag (the site
+        # un-blocked itself, our UA/IP situation changed, or its robots.txt
+        # no longer disallows us) and any failure record.
         cache[url] = {k: v for k, v in cache[url].items()
-                      if k not in ("blocked", "blocked_since")}
+                      if k not in ("blocked", "blocked_since", "failing")}
         if not cache[url]:
             del cache[url]
 
@@ -157,6 +206,8 @@ def main():
     robots_blocked = []
     redirected = []
     errored = []
+    marked = []
+    revived = []
     seen_urls = {}  # url -> result, so a citation reused across orgs is only fetched once
 
     for path in sorted(glob.glob(os.path.join(ORGS_DIR, "*.md"))):
@@ -187,12 +238,27 @@ def main():
 
             event_date = e.get("date", "?")
             event_title = e.get("title", "?")
+            url_status = cache.get(url, {}).get("url_status")
+            failing = cache.get(url, {}).get("failing") or {}
+            backing_off_note = (f"  (failing since {failing.get('since')}, "
+                                f"{failing.get('count')} attempt(s); next check "
+                                f"{backoff.next_try(failing)} — skipped, no request made; "
+                                f"pass --no-cache to recheck now)")
 
-            if error:
+            not_answering = bool(error) or (isinstance(status, int) and status >= 400)
+            if status == MARKED_STATUS or (url_status in ("dead", "unfit") and not_answering):
+                # A human already decided this citation is dead/unfit (see
+                # --set-url-status), so it's not a finding to act on and
+                # doesn't fail the run.
+                marked.append((title, event_date, event_title, url, url_status))
+                print(f"  MARKED {str(url_status).upper()}  {title}  [{event_date}]  {event_title}")
+                print(f"           {url}  (url_status set by hand"
+                      + (" — not checked this run)" if status == MARKED_STATUS else "; still not answering)"))
+            elif error:
                 errored.append((title, event_date, event_title, url, error))
-                print(f"  ERROR    {title}  [{event_date}]  {event_title}")
+                print(f"  {'STILL ERRORING' if skipped else 'ERROR'}    {title}  [{event_date}]  {event_title}")
                 print(f"           {url}")
-                print(f"           {error}")
+                print(f"           {error}" + (backing_off_note if skipped else ""))
             elif status == ROBOTS_STATUS:
                 # The site's own robots.txt disallows us — we didn't even
                 # try HEAD/GET. Not a dead or broken citation, just one we
@@ -225,8 +291,8 @@ def main():
                     print(f"           {url}  (likely bot-blocking — verify manually in a browser before touching)")
             elif status is None or status >= 400:
                 dead.append((title, event_date, event_title, url, status))
-                print(f"  DEAD ({status})  {title}  [{event_date}]  {event_title}")
-                print(f"           {url}")
+                print(f"  {'STILL DEAD' if skipped else 'DEAD'} ({status})  {title}  [{event_date}]  {event_title}")
+                print(f"           {url}" + (backing_off_note if skipped else ""))
                 if cache.get(url, {}).get("url_status") != "dead":
                     # Never auto-set — a human decides, same as
                     # proof_level_locked elsewhere in this repo. This is a
@@ -235,6 +301,12 @@ def main():
                     # liveness check can't distinguish from healthy.
                     print(f"           suggest: python util/check_fragments.py "
                           f"--set-url-status \"{url}\" dead")
+            elif url_status == "dead":
+                # Marked dead by hand, but it answers now: worth a look.
+                revived.append((title, event_date, event_title, url, status))
+                print(f"  ANSWERING AGAIN ({status})  {title}  [{event_date}]  {event_title}")
+                print(f"           {url}  (marked url_status: dead; if the content is back, "
+                      f"clear it: python util/check_fragments.py --set-url-status \"{url}\" live)")
             elif final_url and strip_fragment(url).rstrip("/") != final_url.rstrip("/"):
                 redirected.append((title, event_date, event_title, url, final_url))
                 print(f"  REDIRECT {title}  [{event_date}]  {event_title}")
@@ -244,11 +316,13 @@ def main():
 
     print()
     print(f"Unique URLs checked: {checked}"
-          + (f" ({skipped_blocked} answered from cache, already confirmed BLOCKED — "
-             f"pass --no-cache to recheck)" if skipped_blocked else ""))
+          + (f" ({skipped_blocked} answered from cache with no request: blocked, backing "
+             f"off after failures, or marked by hand — pass --no-cache to recheck)"
+             if skipped_blocked else ""))
     print(f"Dead: {len(dead)}  Blocked (403/429, likely not actually dead): {len(blocked)}  "
           f"Robots-disallowed (not requested): {len(robots_blocked)}  "
-          f"Redirected: {len(redirected)}  Errored: {len(errored)}")
+          f"Redirected: {len(redirected)}  Errored: {len(errored)}  "
+          f"Marked dead/unfit by hand: {len(marked)}  Answering again: {len(revived)}")
 
     if args.report:
         def _rows(items, extra_key=None):
@@ -264,12 +338,15 @@ def main():
                 "generated": date.today().isoformat(),
                 "counts": {"checked": checked, "dead": len(dead), "blocked": len(blocked),
                            "robots_blocked": len(robots_blocked),
-                           "redirected": len(redirected), "errored": len(errored)},
+                           "redirected": len(redirected), "errored": len(errored),
+                           "marked": len(marked), "answering_again": len(revived)},
                 "dead": _rows(dead, "status"),
                 "blocked": _rows(blocked, "status"),
                 "robots_blocked": _rows(robots_blocked),
                 "redirected": _rows(redirected, "final_url"),
                 "errored": _rows(errored, "error"),
+                "marked": _rows(marked, "url_status"),
+                "answering_again": _rows(revived, "status"),
             }, f, indent=2)
             f.write("\n")
 

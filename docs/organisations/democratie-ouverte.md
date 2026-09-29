@@ -68,11 +68,12 @@ activity:
     note: 'Latest post: co-présidence engagée pour le renforcement de la démocratie'
     url: https://www.democratieouverte.org/le-blog
   dod:
-    date: 2026-09-13
-    note: Website confirmed active — 2025 Activity Report and 2026 events listed;
-      contact info matches frontmatter.
+    date: 2026-09-28
+    note: Website confirmed active — blog posts through June 2026 (DémocraNews newsletter
+      launch), General Assembly/co-presidency posts from spring 2026. No genuinely
+      upcoming (future-dated) events advertised. Contact email matches frontmatter.
     url: https://www.democratieouverte.org
-    checked: 2026-09-13
+    checked: 2026-09-28
   rss:
     checked: 2026-09-25
     note: No feed found
@@ -80,7 +81,7 @@ activity:
     hint: no_markup
     checked: 2026-09-25
     note: News page found, no machine-readable date
-last_checked: '2026-09-13'
+last_checked: '2026-09-28'
 ---
 
 Démocratie Ouverte is a French non-partisan association of general interest that has, for over ten years, tested tools and methods and made proposals to public decision-makers to make governance more transparent, cooperative, and participative. It combines practical experimentation with policy advocacy and network convening.

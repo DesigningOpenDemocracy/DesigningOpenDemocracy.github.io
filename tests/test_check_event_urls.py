@@ -12,6 +12,7 @@ methods were actually called. Run with:
 import os
 import sys
 import unittest
+from datetime import date
 from unittest import mock
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "util"))
@@ -113,10 +114,16 @@ class CheckUrlCachedTests(unittest.TestCase):
         self.assertEqual(cache["https://example.org/page"]["blocked"], "HTTP_429")
 
     def test_dead_link_is_not_recorded_as_blocked(self):
+        # A 404 isn't bot protection, so it must never become a sticky
+        # block. Since 2026-09-28 it's recorded as a failure instead, which
+        # backs off (util/backoff.py) rather than being skipped forever.
         cache = {}
         session = _FakeSession(_FakeResponse(404), _FakeResponse(404))
         ceu.check_url_cached("https://example.org/page", session, timeout=5, cache=cache, use_cache=True)
-        self.assertNotIn("https://example.org/page", cache)
+        entry = cache["https://example.org/page"]
+        self.assertNotIn("blocked", entry)
+        self.assertEqual(entry["failing"]["error"], "HTTP_404")
+        self.assertEqual(entry["failing"]["count"], 1)
 
     def test_no_cache_bypasses_the_blocked_skip(self):
         cache = {"https://example.org/page": {"blocked": "HTTP_403", "blocked_since": "2026-01-01"}}
@@ -156,6 +163,70 @@ class CheckUrlCachedTests(unittest.TestCase):
         self.assertEqual(session.calls, [])
         self.assertTrue(skipped)
         self.assertEqual(status, ceu.ROBOTS_STATUS)
+
+
+
+class FailureBackoffTests(unittest.TestCase):
+    """A dead link (404/5xx/unreachable) used to be requested every week, a
+    HEAD and then a GET to double-check, for as long as it stayed cited.
+    It's now recorded in the shared cache's `failing` field and backed off
+    (util/backoff.py); a URL a human marked dead is only rechecked
+    quarterly, and one marked unfit never."""
+
+    URL = "https://example.org/page"
+    TODAY = date(2026, 9, 28)
+
+    def failing(self, last, count=1, error="HTTP_404"):
+        return {"error": error, "since": last, "count": count, "last": last}
+
+    def test_backing_off_url_is_answered_without_a_request(self):
+        cache = {self.URL: {"failing": self.failing("2026-09-22")}}  # retry on 09-29
+        session = _FakeSession(_FakeResponse(200))
+        got = ceu.check_url_cached(self.URL, session, 5, cache, today=self.TODAY)
+        self.assertEqual(got, (404, None, None, True))
+        self.assertEqual(session.calls, [])
+
+    def test_network_failure_is_replayed_as_an_error(self):
+        cache = {self.URL: {"failing": self.failing("2026-09-22", error="NETWORK_ERROR")}}
+        got = ceu.check_url_cached(self.URL, _FakeSession(_FakeResponse(200)), 5, cache, today=self.TODAY)
+        self.assertEqual(got, (None, None, "NETWORK_ERROR", True))
+
+    def test_due_retry_that_succeeds_clears_the_record(self):
+        cache = {self.URL: {"failing": self.failing("2026-09-21")}}  # retry on 09-28
+        session = _FakeSession(_FakeResponse(200))
+        status, _, _, skipped = ceu.check_url_cached(self.URL, session, 5, cache, today=self.TODAY)
+        self.assertEqual((status, skipped, session.calls), (200, False, ["HEAD"]))
+        self.assertNotIn("failing", cache.get(self.URL, {}))
+
+    def test_repeat_failure_widens_the_interval(self):
+        cache = {self.URL: {"failing": self.failing("2026-09-21")}}
+        session = _FakeSession(_FakeResponse(404), _FakeResponse(404))
+        ceu.check_url_cached(self.URL, session, 5, cache, today=self.TODAY)
+        record = cache[self.URL]["failing"]
+        self.assertEqual((record["count"], record["since"], record["last"]), (2, "2026-09-21", "2026-09-28"))
+
+    def test_no_cache_retries_now(self):
+        cache = {self.URL: {"failing": self.failing("2026-09-27")}}
+        session = _FakeSession(_FakeResponse(200))
+        ceu.check_url_cached(self.URL, session, 5, cache, use_cache=False, today=self.TODAY)
+        self.assertEqual(session.calls, ["HEAD"])
+
+    def test_marked_unfit_is_never_requested(self):
+        cache = {self.URL: {"url_status": "unfit"}}
+        session = _FakeSession(_FakeResponse(200))
+        got = ceu.check_url_cached(self.URL, session, 5, cache, today=self.TODAY)
+        self.assertEqual(got[0], ceu.MARKED_STATUS)
+        self.assertEqual(session.calls, [])
+
+    def test_marked_dead_is_rechecked_quarterly(self):
+        cache = {self.URL: {"url_status": "dead", "failing": self.failing("2026-07-01", count=9)}}
+        quiet = _FakeSession(_FakeResponse(404), _FakeResponse(404))
+        self.assertEqual(ceu.check_url_cached(self.URL, quiet, 5, cache, today=date(2026, 9, 28))[0],
+                         ceu.MARKED_STATUS)  # 89 days
+        self.assertEqual(quiet.calls, [])
+        due = _FakeSession(_FakeResponse(404), _FakeResponse(404))
+        ceu.check_url_cached(self.URL, due, 5, cache, today=date(2026, 9, 29))  # 90 days
+        self.assertEqual(due.calls, ["HEAD", "GET"])
 
 
 if __name__ == "__main__":

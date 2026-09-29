@@ -6,9 +6,16 @@ country: CN
 website: https://chinademocrats.org/en
 logo: /assets/org-logos/icdt.png
 contact:
-  checked: 2026-07-30
-  email: office@chinademocrat.org
+  checked: 2026-09-28
+  email: chinatransition2017@gmail.com
+  phone: +1 856 248 0718
   source: https://chinademocrats.org/en
+  note: The site's own "Contact Us" block (near the footer) lists this Gmail address
+    and phone number. A second address, office@chinademocrat.org (note the missing
+    "s" — a different domain from the org's real chinademocrats.org), also appears
+    on the page but only inside leftover popup-widget markup, not the designated contact
+    section — likely template boilerplate rather than a live address, so it was dropped
+    in favour of the "Contact Us" block's own details.
 summary: A diaspora research institute focused specifically on constitutional frameworks
   and transition planning for democratic governance in China — studying separation
   of powers, institutional design, and comparative lessons from democratic transitions
@@ -52,16 +59,20 @@ activity:
     note: website loaded. Unsure if active... non of the social media links loaded.
       No news or blog.
   dod:
-    date: 2026-09-14
-    note: Site live, confirmed active
+    date: 2026-09-28
+    note: 'Website confirmed active — RSS shows a 22 Sept 2026 post. Corrected contact:
+      site''s actual ''Contact Us'' block gives chinatransition2017@gmail.com + phone
+      +1 856 248 0718; the previously recorded office@chinademocrat.org (missing the
+      ''s'') only appears inside leftover popup-widget markup, not the real contact
+      section — likely stale template boilerplate, replaced.'
     url: https://chinademocrats.org/en
-    checked: 2026-09-14
+    checked: 2026-09-28
   rss:
     date: 2026-09-22
     note: 'Latest post: 美国政治暴力为何越来越难看清'
     url: https://chinademocrats.org/?p=7123
     checked: 2026-09-25
-last_checked: '2026-09-14'
+last_checked: '2026-09-28'
 ---
 
 > **Note:** ICDT operates in diaspora — its focus is China, but its researchers work from outside mainland China where this kind of work cannot be done freely. It is included here because its work is specifically about governance system design, not human rights documentation.

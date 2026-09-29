@@ -1,0 +1,52 @@
+{
+  "feed": "https://www.idea.int/rss.xml",
+  "latest": "2026-09-24",
+  "span_days": 164,
+  "items": [
+    {
+      "date": "2026-09-24",
+      "title": "The Role of Youth in Climate Litigation in the Republic of Korea",
+      "url": "https://www.idea.int/publications/catalogue/html/role-youth-climate-litigation-republic-korea"
+    },
+    {
+      "date": "2026-09-22",
+      "title": "Climate Litigation and Democracy in Bangladesh",
+      "url": "https://www.idea.int/publications/catalogue/html/climate-litigation-and-democracy-bangladesh"
+    },
+    {
+      "date": "2026-09-17",
+      "title": "Indigenous Land Rights and Democratic Inclusion in Bangladesh",
+      "url": "https://www.idea.int/publications/catalogue/html/indigenous-land-rights-and-democratic-inclusion-bangladesh"
+    },
+    {
+      "date": "2026-09-15",
+      "title": "Currículo Sobre la Protección de los Procesos Electorales: Resumen",
+      "url": "https://www.idea.int/publications/catalogue/html/curriculo-sobre-la-proteccion-de-los-procesos-electorales-resumen"
+    },
+    {
+      "date": "2026-09-14",
+      "title": "The Global State of Democracy 2026: Democracy in an Age of Conflict",
+      "url": "https://www.idea.int/publications/catalogue/html/global-state-democracy-2026-democracy-age-conflict"
+    },
+    {
+      "date": "2026-09-10",
+      "title": "Brazil - General Elections, 4 and 25 October 2026",
+      "url": "https://www.idea.int/node/161838"
+    },
+    {
+      "date": "2026-04-28",
+      "title": "Do-Hyun Kim et al v South Korea (Constitutional Court, 2024)",
+      "url": "https://www.idea.int/climate-rulings-implementation-tracker/do-hyun-kim-et-al-v-south-korea-constitutional-court-2024"
+    },
+    {
+      "date": "2026-04-24",
+      "title": "Neubauer et al. v Germany (Federal Constitutional Court, 2021)",
+      "url": "https://www.idea.int/climate-rulings-implementation-tracker/neubauer-et-al-v-germany-federal-constitutional-court-2021"
+    },
+    {
+      "date": "2026-04-13",
+      "title": "Urgenda Foundation v State of the Netherlands (Supreme Court, 2019)",
+      "url": "https://www.idea.int/climate-rulings-implementation-tracker/urgenda-foundation-v-state-netherlands-supreme-court-2019"
+    }
+  ]
+}

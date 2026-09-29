@@ -61,17 +61,18 @@ events:
   url_checked: '2026-08-14'
 activity:
   dod:
-    date: 2026-09-13
-    note: Website confirmed active (2025-dated content); contact remains popup-form-only,
-      no direct email found, matches existing note.
+    date: 2026-09-28
+    note: Website confirmed active (case studies incl. 2025 Engaged California) though
+      homepage carries no dated news feed. Popup-form-only contact confirmed, no direct
+      email — matches existing note. No upcoming events advertised.
     url: https://ethelo.com
-    checked: 2026-09-13
+    checked: 2026-09-28
   rss:
     checked: 2026-09-25
     date: 2026-03-30
     note: 'Latest post: Engaged California Program'
     url: https://ethelo.com/case-study/engaged-california-program/
-last_checked: '2026-09-13'
+last_checked: '2026-09-28'
 ---
 
 Ethelo is a Vancouver-based collective intelligence and digital engagement platform designed for governments and organisations running public consultations. Rather than simple majority polling, Ethelo uses preference aggregation algorithms to identify options with the broadest support across different stakeholder groups — the approach is designed to minimise polarisation rather than simply count the loudest majority.

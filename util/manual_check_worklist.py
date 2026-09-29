@@ -12,7 +12,12 @@ Two categories of "can't verify automatically":
    the only way past a BLOCKED entry is a human opening the link in a real
    browser, where the network path and browser fingerprint look nothing
    like a script's. This mode makes no network calls; it just reads the
-   cache.
+   cache. It also lists citations recorded as FAILING (404, 5xx,
+   unreachable) on two or more runs in a row, which the checkers back off
+   from rather than retry weekly (see util/backoff.py): each needs someone
+   to find the page's new address, or to mark it with
+   check_fragments.py --set-url-status <url> dead so readers are sent to
+   the archived copy. URLs already marked dead or unfit are left out.
 
 2. --live — fetch every not-yet-blocked citation fresh and surface
    anything AMBIGUOUS (the quote occurs more than once on the page, so the
@@ -73,12 +78,23 @@ def build_worklist(args):
         cf.save_state(cache)
     else:
         for url, quote, source_label, kind, _path in items:
-            blocked = cache.get(url, {}).get("blocked")
-            if not blocked:
-                continue
-            since = cache.get(url, {}).get("blocked_since", "?")
-            entries.append((f"BLOCKED ({blocked} since {since})",
-                             url, quote, source_label, kind, None))
+            entry = cache.get(url, {})
+            if entry.get("url_status") in cf.MARKED_URL_STATUSES:
+                continue  # already decided by a human
+            blocked = entry.get("blocked")
+            failing = entry.get("failing")
+            if blocked:
+                since = entry.get("blocked_since", "?")
+                entries.append((f"BLOCKED ({blocked} since {since})",
+                                 url, quote, source_label, kind, None))
+            elif failing and failing.get("count", 0) >= 2:
+                # Failed on two or more runs in a row (one miss could be a
+                # blip). Either the citation needs a new URL, or it's gone
+                # and should be marked: check_fragments.py --set-url-status
+                # <url> dead, which sends readers to the archived copy.
+                entries.append((f"FAILING ({failing.get('error')} since {failing.get('since')}, "
+                                 f"{failing.get('count')} attempts)",
+                                 url, quote, source_label, kind, None))
 
     return entries
 

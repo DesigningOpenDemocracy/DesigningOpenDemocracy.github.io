@@ -39,6 +39,19 @@ events:
   location: Sofia/Veliko Tarnovo, Bulgaria
   proof_warning: true
   country: BG
+- date: '2026-10-14'
+  title: Democracy Camp 2026 — Vic, Spain — youth exchange on participation, rights,
+    inclusion and Europe
+  url: https://www.democracy-international.org/events/democracy-camp-2026-vic
+  quote: The Democracy Camp is your five-day intercultural exchange on youth participation,
+    rights, inclusion, and Europe – and the interconnections between them.
+  proof_level: high
+  url_checked: '2026-09-28'
+  end_date: '2026-10-18'
+  notable: false
+  type: workshop
+  location: Vic, Spain
+  country: ES
 - date: '2026-10-07'
   title: 2026 Global Forum on Modern Direct Democracy — Gaborone, Botswana
   url: https://www.democracy-international.org/events/2026-global-forum-modern-direct-democracy
@@ -52,6 +65,48 @@ events:
   type: conference
   location: Gaborone, Botswana
   country: BW
+- date: '2026-11-19'
+  title: Shaping Democracy 2026 — three-day conference for citizens, activists and
+    participation practitioners, Cologne
+  url: https://www.democracy-international.org/events/shaping-democracy-2026
+  quote: Through interactive workshops, discussions, exhibitions, and public events,
+    Shaping Democracy 2026 brings together citizens, activists, researchers, local
+    government representatives, and participation practitioners to share and connect.
+  proof_level: high
+  url_checked: '2026-09-28'
+  end_date: '2026-11-21'
+  notable: medium
+  notable_reason: Flagship-style public conference
+  type: conference
+  location: Cologne, Germany
+  country: DE
+- date: '2026-11-21'
+  title: General Assembly of Democracy International e.V. — coinciding with the organisation's
+    15th anniversary
+  url: https://www.democracy-international.org/events/general-assembly-DI
+  quote: We warmly invite you to Democracy International's General Assembly on Saturday,
+    21 November 2026, at 13:30 CET.
+  proof_level: high
+  url_checked: '2026-09-28'
+  notable: medium
+  notable_reason: Annual General Assembly, 15th anniversary
+  type: meeting
+  location: Cologne, Germany
+  country: DE
+- date: '2026-12-08'
+  title: Democracy Explorers — study trip to Ljubljana on direct democracy and citizen
+    participation in Slovenia
+  url: https://www.democracy-international.org/events/democracy-explorers-study-trip-ljubljana
+  quote: During our stay, we will meet with Slovenian civil society organisations,
+    researchers and other local actors working on direct democracy, participation
+    and democratic rights.
+  proof_level: high
+  url_checked: '2026-09-28'
+  end_date: '2026-12-11'
+  notable: false
+  type: workshop
+  location: Ljubljana, Slovenia
+  country: SI
 - date: '2011-06-01'
   title: Formally registered as an association, building on a loose network dating
     back to 2002
@@ -63,22 +118,24 @@ events:
   notable_reason: Founding of the organisation
 activity:
   dod:
-    date: 2026-09-13
-    note: Website confirmed active — news/events through Oct 2026; contact form and
-      phone confirmed, no separate public email found.
+    date: 2026-09-28
+    note: Website confirmed active — news through Sept 2026. Added 4 upcoming events
+      from events page (Democracy Camp Vic, Shaping Democracy 2026, General Assembly/15th
+      anniversary, Democracy Explorers Ljubljana) not previously in events:. Contact
+      block already complete, no change.
     url: https://www.democracy-international.org
-    checked: 2026-09-13
+    checked: 2026-09-28
   rss:
+    checked: 2026-09-25
     date: 2026-09-25
     note: RSS feed active
     url: https://www.democracy-international.org/rss.xml
-    checked: 2026-09-25
   scrape:
+    checked: 2026-09-25
     date: 2026-09-24
     note: Latest news page scraped
     url: https://www.democracy-international.org/news
-    checked: 2026-09-25
-last_checked: '2026-09-13'
+last_checked: '2026-09-28'
 ---
 
 Democracy International is a Cologne-based NGO registered as a German e.V. (Eingetragener Verein), founded in 2011. It advocates for direct democracy and citizen participation at local, national, and global levels, combining policy advocacy, support for activists, published research, and international convening.
