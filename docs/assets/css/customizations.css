@@ -2913,6 +2913,13 @@ html .md-typeset details.plain-details > :last-child {
 .news-item .calendar-event-orgline .news-item-cited {
   margin-left: auto;
 }
+/* A major event announced ahead of its date (hooks/news_export.py's
+   ANNOUNCE_LEAD_DAYS). Green, the calendar's "today" colour, so it reads as
+   "current" next to the amber major badge rather than as a third tier. */
+.news-upcoming-badge {
+  color: #4caf50;
+  background: rgba(76, 175, 80, 0.2);
+}
 
 /* Footer subscribe links */
 .footer-subscribe {

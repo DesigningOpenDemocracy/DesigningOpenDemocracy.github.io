@@ -1,6 +1,7 @@
 {% extends "main.html" %}
 {#- Landscape News: the past year's major and notable events from across the
-    Democracy Landscape, newest first. The data is hooks/news_export.py's
+    Democracy Landscape, newest first, under the major events announced for
+    the coming month (hooks/news_export.py's ANNOUNCE_LEAD_DAYS). The data is hooks/news_export.py's
     `news_items` — a view of org `events:` entries, never a source of its
     own — and the cards reuse the calendar's .calendar-event styling on
     purpose, so the two pages read as the forward and backward halves of
@@ -93,16 +94,18 @@
 
 {%- set grouped = {} %}
 {%- for i in news_items %}
-  {%- set month_key = i.date.strftime('%B %Y') %}
+  {#- Announced upcoming events come first in news_items, so this group is
+      created first and renders at the top. -#}
+  {%- set month_key = 'Coming up' if i.upcoming else i.date.strftime('%B %Y') %}
   {%- if month_key not in grouped %}{% set _ = grouped.update({month_key: []}) %}{% endif %}
   {%- set _ = grouped[month_key].append(i) %}
 {%- endfor %}
 
 {%- for month_key, month_items in grouped.items() %}
-<h2 class="calendar-month-heading">{{ month_key }}</h2>
+<h2 class="calendar-month-heading{% if month_key == 'Coming up' %} news-coming-up-heading{% endif %}">{{ month_key }}</h2>
 <ul class="calendar-event-list">
   {%- for i in month_items %}
-  <li class="calendar-event news-item{% if i.notable is true %} calendar-event--notable{% else %} calendar-event--medium{% endif %}" data-countries="{{ i.countries | join(' ') }}" data-topics="{{ i.concepts | join(' ') }}" data-tier="{{ 'major' if i.notable is true else 'medium' }}">
+  <li class="calendar-event news-item{% if i.notable is true %} calendar-event--notable{% else %} calendar-event--medium{% endif %}{% if i.upcoming %} news-item--upcoming{% endif %}" data-date="{{ i.date.isoformat() }}" data-countries="{{ i.countries | join(' ') }}" data-topics="{{ i.concepts | join(' ') }}" data-tier="{{ 'major' if i.notable is true else 'medium' }}">
 
     <div class="calendar-date-block">
       <span class="calendar-date-month">{{ i.date.strftime('%b') }}</span>
@@ -116,6 +119,7 @@
 
     <div class="calendar-event-body">
       <div class="calendar-event-header">
+        {%- if i.upcoming %}<span class="calendar-event-badge news-upcoming-badge">📅 Coming up</span>{% endif %}
         {%- if i.notable is true %}<span class="calendar-event-badge">★ Major</span>
         {%- else %}<span class="calendar-event-badge calendar-event-badge--medium">● Notable</span>{% endif %}
         {%- if i.type %}<span class="calendar-event-type">{{ i.type }}</span>{% endif %}
@@ -151,6 +155,7 @@
         {%- for t in i.concepts[:4] %}<a href="/concepts/{{ t }}/" class="concept-tag">{{ t | topic_label }}</a>{% endfor %}
         {%- if i.concepts | length > 4 %}<span class="news-item-more-topics" title="{% for t in i.concepts[4:] %}{{ t | topic_label }}{% if not loop.last %}, {% endif %}{% endfor %}">+{{ i.concepts | length - 4 }}</span>{% endif %}
         {%- if i.coverage_url %}<a class="calendar-event-coverage" href="{{ i.coverage_url }}">DOD coverage →</a>{% endif %}
+        {%- if i.upcoming %}<a class="calendar-event-coverage" href="/calendar/">On the calendar →</a>{% endif %}
         {%- if i.href %}<a class="calendar-event-action" href="{{ i.href }}" target="_blank" rel="noopener">{{ 'Archived copy →' if i.url_status in ('dead', 'unfit') else 'Source →' }}</a>
         {%- elif i.source %}<span class="news-item-cited">Cited: {{ i.source | e }}</span>{% endif %}
       </div>
@@ -178,6 +183,17 @@
   var topicLink = document.getElementById('news-subscribe-topic');
   var items = document.querySelectorAll('.news-item');
   var headings = document.querySelectorAll('.calendar-month-heading');
+  // The page is built on push, so an event announced as coming up can have
+  // happened by the time someone reads it. Say so from the reader's own
+  // clock rather than leave a stale "Coming up" until the next build.
+  var now = new Date();
+  var todayIso = now.getFullYear() + '-' + String(now.getMonth() + 1).padStart(2, '0') + '-' + String(now.getDate()).padStart(2, '0');
+  document.querySelectorAll('.news-item--upcoming').forEach(function (el) {
+    if (el.getAttribute('data-date') < todayIso) {
+      var badge = el.querySelector('.news-upcoming-badge');
+      if (badge) badge.textContent = '✓ Just happened';
+    }
+  });
 
   // Same per-concept hue the org pages give their concept chips.
   document.querySelectorAll('.news-item .concept-tag').forEach(function (el) {

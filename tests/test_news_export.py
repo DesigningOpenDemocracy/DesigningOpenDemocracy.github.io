@@ -65,10 +65,12 @@ class SelectionTests(unittest.TestCase):
                          ev(5, "typo", "high")]),
             ["major", "medium"])
 
-    def test_today_belongs_to_the_calendar_not_the_news(self):
-        # calendar_export.py takes date >= today, so news must take < today.
-        self.assertEqual(self.titles([ev(0, "today"), ev(1, "yesterday"),
-                                      ev(-3, "future")]), ["yesterday"])
+    def test_upcoming_is_the_calendars_unless_major_and_announced(self):
+        # calendar_export.py takes date >= today. Of those, only a major event
+        # inside its announcement window is news too (AnnouncementTests).
+        self.assertEqual(self.titles([ev(0, "today, notable", "medium"),
+                                      ev(-3, "future, notable", "medium"),
+                                      ev(1, "yesterday", "medium")]), ["yesterday"])
 
     def test_window_edges(self):
         w = ne.NEWS_WINDOW_DAYS
@@ -85,6 +87,68 @@ class SelectionTests(unittest.TestCase):
         items = ne.collect_news([("a", org("A", country="US",
                                            events=[ev(3, country="AU")]))], TODAY)
         self.assertEqual(items[0]["countries"], ["AU"])
+
+
+class AnnouncementTests(unittest.TestCase):
+    """Major events are announced ANNOUNCE_LEAD_DAYS ahead; nothing else is."""
+
+    lead = ne.ANNOUNCE_LEAD_DAYS[True]
+
+    def collect(self, events, today=TODAY):
+        return ne.collect_news([("a", org("A", events=events))], today)
+
+    def test_major_event_inside_the_window_is_announced(self):
+        items = self.collect([ev(-self.lead, "edge"), ev(-self.lead - 1, "too early"),
+                              ev(0, "today")])
+        self.assertEqual([(i["title"], i["upcoming"]) for i in items],
+                         [("today", True), ("edge", True)])
+
+    def test_notable_tier_is_never_announced(self):
+        self.assertEqual(self.collect([ev(-1, "soon", "medium"), ev(0, "today", "medium")]), [])
+
+    def test_publish_date_is_the_announcement_then_the_event(self):
+        url = "https://x.example/forum"
+        before = self.collect([ev(-10, url=url)])[0]
+        self.assertEqual(before["published"], before["date"] - timedelta(days=self.lead))
+        after = self.collect([ev(-10, url=url)], today=TODAY + timedelta(days=11))[0]
+        self.assertFalse(after["upcoming"])
+        self.assertEqual(after["published"], after["date"])
+        # Same item to a subscriber, before and after.
+        self.assertEqual(before["id"], after["id"])
+
+    def test_coming_up_first_soonest_first_then_newest_first(self):
+        items = self.collect([ev(3, "past recent"), ev(-20, "later"), ev(40, "past old"),
+                              ev(-2, "sooner")])
+        self.assertEqual([i["title"] for i in items],
+                         ["sooner", "later", "past recent", "past old"])
+
+    def test_unannounced_cohost_is_still_credited(self):
+        # The major copy is announced; the co-host's notable-tier copy of the
+        # same event can't be announced on its own, but it's the same event.
+        url = "https://tickets.example/summit"
+        items = ne.collect_news([
+            ("a-cohost", org("Cohost", events=[ev(-5, "Cohost copy", "medium", url=url)])),
+            ("b-host", org("Host", events=[ev(-5, "Host copy", True, url=url)])),
+        ], TODAY)
+        self.assertEqual(len(items), 1)
+        self.assertEqual(items[0]["title"], "Host copy")
+        self.assertEqual(sorted(o["title"] for o in items[0]["orgs"]), ["Cohost", "Host"])
+
+    def test_feed_marks_an_announcement(self):
+        items = self.collect([ev(-10, "Forum", url="https://x.example/f",
+                                 end_date=TODAY + timedelta(days=12))])
+        with tempfile.TemporaryDirectory() as tmp:
+            ne.write_feeds(items, ne.feed_slices([], items, {}), tmp, SITE, {})
+            item = ET.parse(os.path.join(tmp, "news.xml")).getroot().find("channel/item")
+            with open(os.path.join(tmp, "news.json"), encoding="utf-8") as f:
+                feed = json.load(f)
+        self.assertEqual(item.findtext("title"), "A: Forum (coming up 7 Oct 2026)")
+        # Announced 30 days before 7 Oct; never a future pubDate.
+        self.assertEqual(item.findtext("pubDate"), "Mon, 07 Sep 2026 00:00:00 +0000")
+        self.assertIn("Coming up:</strong> Wednesday, 7 October 2026 to Friday, 9 October 2026",
+                      item.findtext("description"))
+        self.assertIs(feed["items"][0]["_dod"]["upcoming"], True)
+        self.assertEqual(feed["items"][0]["date_published"], "2026-09-07T00:00:00+00:00")
 
 
 class MergeTests(unittest.TestCase):

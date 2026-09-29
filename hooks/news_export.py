@@ -24,6 +24,17 @@ reader for (see CLAUDE.md), which is exactly the bar a news feed needs;
 un-tiered events never appear, and neither does anything older than the
 window, since a 2011 founding is history, not news.
 
+Major events are also announced ahead of time. A `notable: true` event
+joins the news ANNOUNCE_LEAD_DAYS[True] days before it happens, as an
+upcoming item, so a subscriber hears about a flagship conference while
+there's still time to go. The lead is keyed by tier, and "medium" events
+get none: the upcoming half of the landscape is the calendar's job, and
+only the rare flagship event is worth a news reader's attention before it
+happens. Once the event is past it stays on as the same item (same id, so
+no reader shows it twice), dated by the event rather than the
+announcement. While upcoming, its publish date is the announce date, since
+a publish date in the future is something feed readers handle badly.
+
 Also deliberately not an aggregation of the orgs' own RSS feeds
 (`rss_feed:`): those are every post an org publishes, which is the
 firehose this page exists to spare readers from. They're an intake
@@ -57,7 +68,7 @@ import os
 import re
 import uuid
 import xml.etree.ElementTree as ET
-from datetime import date, datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 from email.utils import format_datetime
 
 try:
@@ -76,6 +87,22 @@ SKIP_FILES = {"index.md"}
 # reads as "what's been happening", not an archive — the org's own page
 # already carries its full history.
 NEWS_WINDOW_DAYS = 365
+
+# How many days before its date an event is announced in the news, by tier.
+# Only major events are announced ahead; a tier missing here waits until
+# the event has happened. See the module docstring.
+ANNOUNCE_LEAD_DAYS = {True: 30}
+
+
+def announce_lead(tier):
+    return ANNOUNCE_LEAD_DAYS.get(tier, 0)
+
+
+def is_announced(tier, d, today):
+    """Whether an upcoming event (d >= today) is inside its tier's
+    announcement window. A tier with no lead is never announced."""
+    lead = announce_lead(tier)
+    return lead > 0 and (d - today).days <= lead
 
 TIER_LABELS = {True: "Major", "medium": "Notable"}
 
@@ -183,12 +210,16 @@ def _merge_cohost(item, org_ref, country, concepts, tier):
 
 
 def collect_news(orgs, today, window_days=NEWS_WINDOW_DAYS, archive_info=None):
-    """Recent notable events across every org, newest first.
+    """Recent notable events across every org: announced upcoming ones first,
+    soonest first, then the past, newest first.
 
     An event qualifies when it carries a notable: tier and started before
-    `today` but within `window_days` of it. Anything dated today or later is
-    the calendar's (calendar_export.py takes date >= today), so an event is
-    on exactly one of the two pages at any build.
+    `today` but within `window_days` of it, or when it's still to come and
+    inside its tier's announcement window (is_announced: major events only,
+    ANNOUNCE_LEAD_DAYS ahead). An announced event is on the calendar and in
+    the news at once, on purpose; everything else upcoming is the calendar's
+    alone. Each item's `published` date is the announce date while it's
+    upcoming and the event date after.
 
     Co-hosted events are recorded on each co-host's page, usually under the
     same source URL (DOD's International Day of Democracy panel sits on both
@@ -214,8 +245,9 @@ def collect_news(orgs, today, window_days=NEWS_WINDOW_DAYS, archive_info=None):
             if tier is False:
                 continue
             d = _parse_date(entry.get("date"))
-            if not d or d >= today or (today - d).days > window_days:
+            if not d or (today - d).days > window_days:
                 continue
+            upcoming = d >= today
             url = entry.get("url") or ""
             org_title = m.get("title", slug)
             country = entry.get("country") or m.get("country")
@@ -223,7 +255,9 @@ def collect_news(orgs, today, window_days=NEWS_WINDOW_DAYS, archive_info=None):
             org_ref = {"slug": slug, "title": org_title}
 
             key = (d, url) if url else None
-            if not is_democracy_related(m, entry):
+            # Off-topic, or upcoming but not (yet) announced: can't make an
+            # item of its own, but can still be credited as a co-host.
+            if not is_democracy_related(m, entry) or (upcoming and not is_announced(tier, d, today)):
                 if key:
                     held.append((key, org_ref, country, concepts, tier))
                 continue
@@ -237,6 +271,7 @@ def collect_news(orgs, today, window_days=NEWS_WINDOW_DAYS, archive_info=None):
                 "id": news_guid(d, url, slug, title),
                 "date": d,
                 "end_date": _parse_date(entry.get("end_date")),
+                "upcoming": upcoming,
                 "title": title,
                 "url": url,
                 "href": href,
@@ -266,7 +301,14 @@ def collect_news(orgs, today, window_days=NEWS_WINDOW_DAYS, archive_info=None):
     for key, org_ref, country, concepts, tier in held:
         if key in by_key:
             _merge_cohost(by_key[key], org_ref, country, concepts, tier)
-    items.sort(key=lambda i: (-i["date"].toordinal(), i["notable"] is not True, i["org_title"].lower()))
+    for item in items:
+        # After the merge, since a co-host can raise the tier.
+        lead = announce_lead(item["notable"]) if item["upcoming"] else 0
+        item["published"] = item["date"] - timedelta(days=lead)
+    # Upcoming items first, soonest first; then the past, newest first.
+    items.sort(key=lambda i: (not i["upcoming"],
+                              (1 if i["upcoming"] else -1) * i["date"].toordinal(),
+                              i["notable"] is not True, i["org_title"].lower()))
     return items
 
 
@@ -313,12 +355,20 @@ def _item_link(item, site_url):
     return item["href"] or _abs(site_url, f"/organisations/{item['org_slug']}/")
 
 
+def _short_date(d):
+    return f"{d.day} {d.strftime('%b %Y')}"
+
+
 def _item_title(item):
     # A feed reader shows this line with nothing around it, so it has to say
     # whose news it is — the same "<org>: <title>" shape the calendar's .ics
     # SUMMARY uses. A merged item names its first org; the title of a
-    # co-hosted event already names the other.
-    return f"{item['org_title']}: {item['title']}"
+    # co-hosted event already names the other. An announcement carries its
+    # date too, since without it the line reads as something that happened.
+    title = f"{item['org_title']}: {item['title']}"
+    if item.get("upcoming"):
+        title += f" (coming up {_short_date(item['date'])})"
+    return title
 
 
 def _item_categories(item, concept_titles):
@@ -338,6 +388,11 @@ def item_html(item, site_url, concept_titles):
     if item.get("notable_reason"):
         lead += f" — {esc(str(item['notable_reason']))}"
     parts.append(f"<p>{lead}</p>")
+    if item.get("upcoming"):
+        when = _cal._format_event_date(item["date"])
+        if item.get("end_date") and item["end_date"] != item["date"]:
+            when += " to " + _cal._format_event_date(item["end_date"])
+        parts.append(f"<p>📅 <strong>Coming up:</strong> {esc(when)}</p>")
     if item.get("note"):
         parts.append(f"<p>{esc(str(item['note']))}</p>")
     if item.get("quote"):
@@ -383,7 +438,7 @@ def render_rss(items, *, title, description, page_url, feed_url, site_url, conce
         ET.SubElement(el, "title").text = _item_title(item)
         ET.SubElement(el, "link").text = _item_link(item, site_url)
         ET.SubElement(el, "guid", {"isPermaLink": "false"}).text = item["id"]
-        ET.SubElement(el, "pubDate").text = _pub_date(item["date"])
+        ET.SubElement(el, "pubDate").text = _pub_date(item["published"])
         ET.SubElement(el, "description").text = item_html(item, site_url, concept_titles)
         for cat in _item_categories(item, concept_titles):
             ET.SubElement(el, "category").text = cat
@@ -399,13 +454,14 @@ def render_json_feed(items, *, page_url, feed_url, site_url, concept_titles):
     feed_items = []
     for item in items:
         d = item["date"]
+        p = item["published"]
         feed_items.append({
             "id": item["id"],
             "url": _item_link(item, site_url),
             "title": _item_title(item),
             "content_html": item_html(item, site_url, concept_titles),
             "summary": item.get("notable_reason") or item["title"],
-            "date_published": datetime(d.year, d.month, d.day, tzinfo=timezone.utc).isoformat(),
+            "date_published": datetime(p.year, p.month, p.day, tzinfo=timezone.utc).isoformat(),
             "tags": _item_categories(item, concept_titles),
             "authors": [{"name": o["title"], "url": _abs(site_url, f"/organisations/{o['slug']}/")}
                         for o in item["orgs"]],
@@ -413,6 +469,7 @@ def render_json_feed(items, *, page_url, feed_url, site_url, concept_titles):
                 "date": d.isoformat(),
                 "end_date": item["end_date"].isoformat() if item.get("end_date") else None,
                 "event_title": item["title"],
+                "upcoming": item["upcoming"],
                 "tier": "major" if item["notable"] is True else "medium",
                 "notable_reason": item.get("notable_reason"),
                 "orgs": [o["slug"] for o in item["orgs"]],
@@ -445,7 +502,8 @@ def _window_phrase():
 def _description(scope=""):
     who = f"organisations {scope}" if scope else "organisations"
     return (f"Major and notable news from {who} across the Democracy Landscape, "
-            f"over the past {_window_phrase()}. Drawn from each organisation's "
+            f"over the past {_window_phrase()}, plus major events coming up in the "
+            f"next {ANNOUNCE_LEAD_DAYS[True]} days. Drawn from each organisation's "
             "curated, sourced timeline — not a firehose.")
 
 
@@ -519,5 +577,6 @@ def on_env(env, config, files):
     env.globals["news_items"] = _items
     env.globals["news_feeds"] = _feeds
     env.globals["news_window_days"] = NEWS_WINDOW_DAYS
+    env.globals["news_announce_days"] = ANNOUNCE_LEAD_DAYS[True]
     env.filters["topic_label"] = lambda slug: topic_label(slug, _concept_titles)
     return env
