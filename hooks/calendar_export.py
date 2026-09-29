@@ -37,10 +37,14 @@ Output:
     feeds solve, along a different axis)
   - docs/data/events.json   — same data as JSON, for reference/download
   - `calendar_events` Jinja2 global — consumed by docs/overrides/calendar.html
+  - `calendar_past_events` Jinja2 global — the page's collapsed "Recent past
+    events" list (curated org events that ended in the last
+    PAST_WINDOW_DAYS, newest first, at most PAST_MAX_EVENTS). Page-only:
+    the .ics feeds and events.json stay future-only.
 
 Org-page history/upcoming timelines (rendered from `events:` alone, past and
 future both) are handled separately in organisation.html — this hook only
-cares about the future-facing, cross-org aggregate.
+cares about the cross-org aggregate.
 """
 
 import glob
@@ -164,6 +168,15 @@ def _org_country(slug):
         return None
 
 _events: list = []
+_past_events: list = []
+
+# How far back the calendar page's "Recent past events" list reaches, and
+# its cap. The same 90 days as Landscape News (hooks/news_export.py), but
+# every curated event rather than only notable ones; the cap keeps a busy
+# quarter from turning the page into an archive. Older events live on each
+# org's own timeline.
+PAST_WINDOW_DAYS = 90
+PAST_MAX_EVENTS = 50
 
 
 def _notable_tier(entry):
@@ -188,8 +201,12 @@ def _parse_date(val):
         return None
 
 
-def _load_manual_events(today):
-    """Future events from each org's `events:` frontmatter list."""
+def _load_manual_events(today, past_days=None):
+    """Future events from each org's `events:` frontmatter list.
+
+    With `past_days`, instead the events that *finished* before `today`
+    (on their end_date where there is one) and started within `past_days`
+    of it — the calendar page's collapsed "Recent past events" list."""
     if frontmatter is None:
         return []
     out = []
@@ -201,7 +218,14 @@ def _load_manual_events(today):
         m = post.metadata
         for entry in m.get("events") or []:
             d = _parse_date(entry.get("date"))
-            if d and d >= today:
+            if not d:
+                continue
+            if past_days is None:
+                wanted = d >= today
+            else:
+                end = _parse_date(entry.get("end_date")) or d
+                wanted = end < today and (today - d).days <= past_days
+            if wanted:
                 evt = {
                     "date": d,
                     "end_date": _parse_date(entry.get("end_date")),
@@ -488,6 +512,16 @@ def on_pre_build(config):
     _events.clear()
     _events.extend(events)
 
+    # Page-only: never written to the .ics feeds or events.json, which stay
+    # future-only (a subscriber doesn't want last month in their calendar).
+    # Curated org events only: an ics_feed cache holds whatever was upcoming
+    # at its last sync, so its past entries would be an accident of timing,
+    # and a held election is replaced in elections.yml by the next one.
+    past = _load_manual_events(today, past_days=PAST_WINDOW_DAYS)
+    past.sort(key=lambda e: e["date"], reverse=True)
+    _past_events.clear()
+    _past_events.extend(past[:PAST_MAX_EVENTS])
+
     _write_ics(events, os.path.join(DOCS_DIR, "calendar.ics"))
 
     # Per-country subscribe feeds. Google Calendar (and most other clients)
@@ -579,6 +613,8 @@ def _format_event_time(t):
 
 def on_env(env, config, files):
     env.globals["calendar_events"] = _events
+    env.globals["calendar_past_events"] = _past_events
+    env.globals["calendar_past_window_days"] = PAST_WINDOW_DAYS
     env.globals["next_notable_event"] = _next_notable_event
     env.filters["country_name"] = lambda c: _COUNTRY_NAMES.get(str(c).upper(), str(c)) if c else ""
     env.filters["country_flag"] = lambda c: _flag_emoji(str(c)) if c else ""

@@ -82,6 +82,68 @@ class ManualEventDescriptionTests(unittest.TestCase):
         self.assertFalse(bare["quote"])
 
 
+PAST_ORG_PAGE = """---
+title: Past Org
+type: advocacy
+status: active
+events:
+- date: '{yesterday}'
+  title: Yesterday
+  url: https://example.org/y
+- date: '{last_week}'
+  end_date: '{next_week}'
+  title: Still running
+  url: https://example.org/running
+- date: '{edge}'
+  title: On the window edge
+  url: https://example.org/edge
+- date: '{too_old}'
+  title: Too old
+  url: https://example.org/old
+- date: '{today}'
+  title: Today
+  url: https://example.org/today
+---
+"""
+
+
+class RecentPastEventsTests(unittest.TestCase):
+    """The page's "Recent past events" list: ended before today, started
+    within PAST_WINDOW_DAYS, and never an ongoing or upcoming event."""
+
+    def setUp(self):
+        if ce.frontmatter is None:
+            self.skipTest("python-frontmatter not installed")
+        self.tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(self.tmp.cleanup)
+        self.today = datetime.date(2026, 9, 29)
+        day = datetime.timedelta(days=1)
+        w = ce.PAST_WINDOW_DAYS
+        with open(os.path.join(self.tmp.name, "past-org.md"), "w", encoding="utf-8") as f:
+            f.write(PAST_ORG_PAGE.format(
+                yesterday=self.today - day, last_week=self.today - 7 * day,
+                next_week=self.today + 7 * day, edge=self.today - w * day,
+                too_old=self.today - (w + 1) * day, today=self.today))
+        self._orig_dir = ce.ORGS_DIR
+        ce.ORGS_DIR = self.tmp.name
+        self.addCleanup(lambda: setattr(ce, "ORGS_DIR", self._orig_dir))
+
+    def test_window(self):
+        titles = {e["title"] for e in ce._load_manual_events(
+            self.today, past_days=ce.PAST_WINDOW_DAYS)}
+        self.assertEqual(titles, {"Yesterday", "On the window edge"})
+
+    def test_an_ongoing_event_is_not_past(self):
+        titles = {e["title"] for e in ce._load_manual_events(
+            self.today, past_days=ce.PAST_WINDOW_DAYS)}
+        self.assertNotIn("Still running", titles)
+
+    def test_past_events_stay_out_of_the_upcoming_list(self):
+        titles = {e["title"] for e in ce._load_manual_events(self.today)}
+        self.assertIn("Today", titles)
+        self.assertFalse(titles & {"Yesterday", "On the window edge", "Too old"})
+
+
 class CalendarJsonLdEscapingTests(unittest.TestCase):
     """calendar.html's JSON-LD block must safely encode special characters in event fields."""
 
