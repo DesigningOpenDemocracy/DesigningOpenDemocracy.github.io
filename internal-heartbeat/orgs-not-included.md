@@ -92,7 +92,6 @@ that mentioned it goes stale.
 
 | Org | Country | Date considered | Interacted via | Notes |
 |---|---|---|---|---|
-| [Informal Urbanism Research Hub](https://infur.msd.unimelb.edu.au/) | AU | 2026-09-26 | Panellist Anitra Nelson's institutional affiliation — [International Day of Democracy panel recap](../docs/blog/posts/2026-09-26-international-day-of-democracy-recap.md) | [Full reasoning](2026-09-26-informal-urbanism-research-hub-weak-fit.md) |
 | [Write In Stone](https://www.writeinstone.com) | AU | 2026-09-26 | Founder Austin interviewed — [2021-08-08 podcast](../docs/blog/posts/2021-08-08-podcast.md) | Journalism-transparency tooling, not governance-mechanism work. [Sweep notes](2026-09-26-podcast-archive-weak-fit-sweep.md) |
 | [Open Source Industry Australia](https://en.wikipedia.org/wiki/Open_Source_Industry_Australia) | AU | 2026-09-26 | Recurring DOD co-organiser Alexar Pendashteh is a director — [2019-12-11 podcast](../docs/blog/posts/2019-12-11-podcast.md) | FOSS industry advocacy, not participation mechanisms. [Sweep notes](2026-09-26-podcast-archive-weak-fit-sweep.md) |
 | [Action Foresight](https://actionforesight.net/) | AU | 2026-09-26 | Director Jose Ramos, panellist — [2023-01-21 podcast](../docs/blog/posts/2023-01-21-podcast.md) | Futures/foresight consultancy, adjacent but not governance-mechanism-focused. [Sweep notes](2026-09-26-podcast-archive-weak-fit-sweep.md) |
@@ -106,6 +105,17 @@ Removed from this table per the README's promotion convention. See the
 [sweep notes](2026-09-26-podcast-archive-weak-fit-sweep.md)'s "Open question
 for a future pass" for what shipped, and the same file's follow-up note for
 why Cohousing Australia (also promoted that day) was reverted instead.
+
+~~[Informal Urbanism Research Hub](https://infur.msd.unimelb.edu.au/)~~, this
+list's first entry, was promoted on 2026-09-30 to a full page:
+[`docs/organisations/informal-urbanism-research-hub.md`](../docs/organisations/informal-urbanism-research-hub.md).
+It was the maintainer's call, made on reading the panel recap's "Not in the
+Democracy Landscape" card. The trigger the original note named had arrived by
+then too: the hub's 9 September 2026 roundtable framed co-design as "sharing
+authority" with communities. That is participation-mechanism work, not just an
+urban-planning lens on it. See the [original
+assessment](2026-09-26-informal-urbanism-research-hub-weak-fit.md)'s
+follow-up section.
 
 ## Possible spinoff: a rights-documentation/advocacy tracker
 

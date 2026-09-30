@@ -1,8 +1,8 @@
 # Informal Urbanism Research Hub — weak-fit assessment
 
-**Status: logged to the weak-fit watch list, not added to the Democracy
-Landscape.** See [`orgs-not-included.md`](orgs-not-included.md)'s "Weak-fit
-watch list" section.
+**Status: promoted to the Democracy Landscape on 2026-09-30**
+([`docs/organisations/informal-urbanism-research-hub.md`](../docs/organisations/informal-urbanism-research-hub.md)).
+It was first logged to the weak-fit watch list. See the follow-up at the end.
 
 ## What prompted this
 
@@ -70,3 +70,20 @@ live without pretending it's a settled inclusion.
 If InfUr- publishes work that more explicitly frames informal
 self-organisation as a governance mechanism (rather than an urban-planning
 lens on it), that's the trigger to re-run this assessment.
+
+## Follow-up (2026-09-30): promoted
+
+The maintainer read the recap's "Not in the Democracy Landscape" card and
+thought the exclusion unfair. They asked for the hub to be added, with a logo.
+The trigger this note set had in fact been met. The hub's 9 September 2026
+roundtable, "Co-design across the Global South and North: Participatory Design
+within and beyond Australia", says it will "examine co-design as a process of
+listening, learning, negotiating and sharing authority". That is about how
+communities take part in decisions over their own space, which is the
+Landscape's bar. The page files the hub as `type: research` and cites that
+roundtable as a sourced event. The recap post now uses the standard
+`<!-- org-card: -->` marker in place of the hand-built card.
+
+In hindsight, the earlier call gave too much weight to the discipline label
+("urban planning") and too little to what the hub says it studies: power
+practised through self-organisation.
