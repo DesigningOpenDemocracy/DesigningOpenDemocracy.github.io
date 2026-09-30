@@ -32,6 +32,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Founding of the organisation
+  kind: news
 - date: '2026-01-20'
   title: Won the Schwab Foundation Social Innovation Award 2026 at Davos, the first
     Colombian organisation to do so in its category
@@ -52,6 +53,7 @@ events:
   url_checked: '2026-08-29'
   notable: true
   notable_reason: Major international recognition
+  kind: news
   type: recognition
 activity:
   dod:

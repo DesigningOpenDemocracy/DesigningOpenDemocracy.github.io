@@ -33,6 +33,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Founding of the organisation
+  kind: news
 - date: '2001-01-01'
   title: Round 1 surveys completed across 12 countries
   url: https://www.afrobarometer.org/feature/ab25-the-first-quarter-century-of-giving-voice-to-african-citizens/
@@ -42,6 +43,7 @@ events:
   note: Round 1 fieldwork spanned 1999–2001.
   proof_level: high
   url_checked: '2026-08-21'
+  kind: news
 - date: '2019-01-01'
   title: Registered as an independent legal entity headquartered in Accra
   url: https://www.afrobarometer.org/about/history/
@@ -51,6 +53,7 @@ events:
   note: History page places this milestone in its 2019–2021 section.
   proof_level: high
   url_checked: '2026-08-21'
+  kind: news
 activity:
   dod:
     date: 2026-09-19

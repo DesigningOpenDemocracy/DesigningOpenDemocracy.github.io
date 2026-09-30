@@ -26,6 +26,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Council's founding appointment by PM and Opposition Leader
+  kind: news
 - date: '2017-05-26'
   title: Uluru Statement from the Heart issued at the First Nations National Constitutional
     Convention
@@ -36,6 +37,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Uluru Statement issued - landmark national outcome
+  kind: news
 - date: '2017-06-30'
   title: Final Report published, incorporating the Uluru Statement
   url: https://en.wikipedia.org/wiki/Referendum_Council
@@ -46,6 +48,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Major publication
+  kind: news
 activity:
   dod:
     date: 2026-08-21

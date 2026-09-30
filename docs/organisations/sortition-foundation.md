@@ -34,6 +34,7 @@ events:
   proof_level: medium
   url_checked: '2026-08-10'
   notable: false
+  kind: news
   proof_warning: true
 - date: '2017-03-04'
   title: Incorporated as a UK company
@@ -44,6 +45,7 @@ events:
   url_checked: '2026-08-12'
   notable: true
   notable_reason: Founding of the organisation
+  kind: news
 activity:
   manual:
     checked: 2026-08-08

@@ -27,6 +27,7 @@ events:
   url_checked: '2026-08-12'
   notable: true
   notable_reason: Founding launch of the channel
+  kind: news
 activity:
   dod:
     date: 2026-09-16

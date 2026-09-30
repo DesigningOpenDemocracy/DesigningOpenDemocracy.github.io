@@ -36,6 +36,7 @@ events:
   proof_level: high
   notable: true
   notable_reason: Founding of the organisation
+  kind: news
 - date: '2006-01-01'
   title: Presented a 19,000-signature petition to the Senate opposing mandatory internet
     filtering
@@ -43,6 +44,7 @@ events:
   quote: The EFA presented a petition against mandatory internet filtering with 19,000
     signatures to the Australian Senate.
   proof_level: high
+  kind: news
 - date: '2016-01-01'
   title: Chair co-founded the "Not My Debt" website documenting harm from the Robodebt
     automated debt-recovery scheme
@@ -53,6 +55,7 @@ events:
   proof_level: high
   notable: true
   notable_reason: Founding of the organisation
+  kind: news
 - date: '2024-11-19'
   title: Facial recognition complaint EFA co-lodged led to a finding that Bunnings
     breached the Privacy Act
@@ -65,6 +68,7 @@ events:
   proof_level: high
   notable: true
   notable_reason: Landmark legal/court win
+  kind: news
 - date: '2025-09-01'
   title: Chair warned against using AI (ChatGPT) in government decision-making, drawing
     a direct parallel to the Robodebt litigation
@@ -74,6 +78,7 @@ events:
     decision making in any way, it could expose the government to legal actions similar
     to the robodebt administrative law actions.
   proof_level: high
+  kind: news
 activity:
   dod:
     date: 2026-09-19

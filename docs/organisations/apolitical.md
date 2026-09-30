@@ -30,6 +30,7 @@ events:
   url_checked: '2026-09-16'
   notable: true
   notable_reason: Public platform launch
+  kind: news
 activity:
   dod:
     checked: '2026-09-16'

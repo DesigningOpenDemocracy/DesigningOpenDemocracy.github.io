@@ -38,6 +38,7 @@ events:
     States."'
   proof_level: medium
   url_checked: '2026-08-17'
+  kind: news
 - date: '2017-04-15'
   title: Public launch at Princeton University
   url: https://www.rfa.org/mandarin/zhuanlan/zhongguotoushi/panel-04212017105345.html
@@ -45,6 +46,7 @@ events:
     at Princeton University on 15 April 2017.
   proof_level: medium
   url_checked: '2026-08-17'
+  kind: news
 - date: '2023-01-01'
   title: Launches the China Journal of Democracy
   url: https://chinademocrats.org/en
@@ -52,6 +54,7 @@ events:
     publication for pro-democracy Chinese intellectuals.
   proof_level: high
   url_checked: '2026-08-17'
+  kind: news
 activity:
   manual:
     checked: 2026-06-07

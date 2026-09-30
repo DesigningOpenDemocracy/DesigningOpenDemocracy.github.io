@@ -32,6 +32,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Founding of the organisation
+  kind: news
 - date: '2013-01-01'
   title: Won NDTV's Indian of the Year Award in the Public Service category, shared
     with the Association for Democratic Reforms
@@ -45,6 +46,7 @@ events:
   url_checked: '2026-08-29'
   notable: medium
   notable_reason: National recognition shared with a peer accountability organisation
+  kind: news
   type: recognition
 activity:
   manual:

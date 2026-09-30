@@ -32,6 +32,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Founding of the organisation
+  kind: news
 - date: '2026-03-26'
   title: Hosted the second edition of the Festival dell'Amministrazione Condivisa
     in Assisi, drawing 350+ participants
@@ -51,6 +52,7 @@ events:
   end_date: '2026-03-28'
   notable: medium
   notable_reason: Flagship annual festival, second edition
+  kind: gathering
   type: conference
 activity:
   dod:

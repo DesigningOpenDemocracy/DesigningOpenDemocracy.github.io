@@ -29,6 +29,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Flagship conference
+  kind: news
 - date: '2026-03-04'
   title: Opened the fourth session of the 14th National Committee's annual plenary
     session in Beijing
@@ -44,6 +45,7 @@ events:
   url_checked: '2026-08-29'
   notable: medium
   notable_reason: Routine annual plenary session
+  kind: gathering
   type: conference
 activity:
   dod:

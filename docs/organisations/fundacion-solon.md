@@ -34,6 +34,7 @@ events:
     spirits."'
   proof_level: high
   url_checked: '2026-08-17'
+  kind: news
 - date: '2015-12-11'
   title: Executive director Pablo Solón speaks at COP21 against the Paris agreement
   url: https://focusweb.org/press-statement-social-movements-united-in-defiance-of-false-solutions-being-negotiated-at-paris-cop/
@@ -43,6 +44,7 @@ events:
     to live.”'
   proof_level: high
   url_checked: '2026-08-17'
+  kind: news
 activity:
   dod:
     date: 2026-09-28

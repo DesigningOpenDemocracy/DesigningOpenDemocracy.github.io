@@ -33,6 +33,7 @@ events:
     parties.
   proof_level: high
   url_checked: '2026-08-17'
+  kind: news
 - date: '2014-06-01'
   title: Nominates its first candidates in eight ridings in the 2014 Ontario provincial
     election
@@ -40,6 +41,7 @@ events:
   quote: NOTA nominated candidates in eight ridings in the 2014 provincial election
   proof_level: high
   url_checked: '2026-08-17'
+  kind: news
 - date: '2018-06-01'
   title: Runs 42 candidates in the 2018 Ontario general election
   url: https://nota.ca/ontario/about/
@@ -48,6 +50,7 @@ events:
     government.
   proof_level: high
   url_checked: '2026-08-17'
+  kind: news
 activity:
   manual:
     checked: 2026-06-07

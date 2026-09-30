@@ -190,6 +190,33 @@ def _notable_tier(entry):
     return v if v is True or v == "medium" else False
 
 
+# What an events: entry is, which decides whether it belongs on the calendar
+# or in Landscape News (hooks/news_export.py). The two are kept separate on
+# purpose: a conference is something to put in a diary, a handbook's
+# release is something to hear about, and neither page should be padded
+# with the other's items.
+#   gathering — something people attend: a conference, AGM, forum, meetup,
+#               workshop, webinar. Calendar while upcoming, then the
+#               calendar's past list. Never News, except a major one's
+#               heads-up before it starts (news_export.ANNOUNCE_DAYS).
+#   news      — something that happened: a publication, a platform or
+#               campaign launch, an appointment, a ruling, a result, a
+#               founding. News (when notable), never the calendar.
+#   launch    — an attendable event that releases something, like a report
+#               launch webinar: the calendar until it happens, News after.
+# A missing or unknown value reads as "gathering", the calendar's behaviour
+# before the field existed; util/check_event_sourcing.py fails the build on
+# either, so this default is a fallback, not a convention.
+EVENT_KINDS = ("gathering", "news", "launch")
+CALENDAR_KINDS = frozenset({"gathering", "launch"})
+NEWS_KINDS = frozenset({"news", "launch"})
+
+
+def _event_kind(entry):
+    v = entry.get("kind")
+    return v if v in EVENT_KINDS else "gathering"
+
+
 def _parse_date(val):
     if val is None:
         return None
@@ -229,6 +256,10 @@ def _load_manual_events(today, past_days=None):
         post = frontmatter.load(path)
         m = post.metadata
         for entry in m.get("events") or []:
+            # News items (a publication, an appointment) aren't things to
+            # attend, so they stay off the calendar and its past list.
+            if _event_kind(entry) not in CALENDAR_KINDS:
+                continue
             d = _parse_date(entry.get("date"))
             if not d:
                 continue
@@ -260,6 +291,7 @@ def _load_manual_events(today, past_days=None):
                     "logo": _org_logo(slug),
                     "logo_bg": _org_logo_bg(slug),
                     "country": entry.get("country") or m.get("country"),
+                    "kind": _event_kind(entry),
                     "type": entry.get("type"),
                     "location": entry.get("location"),
                     "time": entry.get("time"),

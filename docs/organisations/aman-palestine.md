@@ -33,6 +33,7 @@ events:
     Palestinian society.
   proof_level: high
   url_checked: '2026-08-17'
+  kind: news
 - date: '2006-01-01'
   title: Accredited as Transparency International's Palestine chapter
   url: https://www.aman-palestine.org/en/about-aman/5.html
@@ -40,6 +41,7 @@ events:
     International.
   proof_level: high
   url_checked: '2026-08-17'
+  kind: news
 - date: '2017-01-01'
   title: Holds the first Integrity School in the West Bank and Gaza Strip
   url: https://www.aman-palestine.org/en/about-aman/5.html
@@ -47,6 +49,7 @@ events:
     School was held for the first time in the West Bank and Gaza Strip in 2017.
   proof_level: high
   url_checked: '2026-08-17'
+  kind: gathering
 activity:
   dod:
     date: 2026-09-26

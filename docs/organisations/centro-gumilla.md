@@ -32,6 +32,7 @@ events:
     in 1966.'
   proof_level: medium
   url_checked: '2026-08-17'
+  kind: news
 - date: '1975-01-01'
   title: Revista Comunicación becomes an integral part of the Centre
   url: https://gumilla.org/tenemos-historia/
@@ -40,6 +41,7 @@ events:
     and reflections."'
   proof_level: medium
   url_checked: '2026-08-17'
+  kind: news
 activity:
   dod:
     date: 2026-09-26

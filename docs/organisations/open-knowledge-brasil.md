@@ -33,6 +33,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Founding of the organisation
+  kind: news
 - date: '2018-01-01'
   title: Took over managing Operação Serenata de Amor, launching the Data Science
     for Civic Innovation programme
@@ -49,6 +50,7 @@ events:
   url_checked: '2026-08-29'
   notable: true
   notable_reason: Absorbed an early, influential civic-tech project
+  kind: news
   type: other
 activity:
   dod:

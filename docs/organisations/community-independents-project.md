@@ -37,6 +37,7 @@ events:
   url_checked: '2026-08-29'
   notable: true
   notable_reason: Flagship national convention
+  kind: gathering
   type: conference
 - date: '2026-09-23'
   title: Hosted a webinar on turning election-campaign energy into lasting community
@@ -48,6 +49,7 @@ events:
     can retain relationships and build organising capacity between elections.'
   proof_level: medium
   url_checked: '2026-09-27'
+  kind: gathering
 activity:
   manual:
     checked: 2026-06-07

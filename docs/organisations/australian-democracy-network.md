@@ -34,6 +34,7 @@ events:
   url_checked: '2026-08-12'
   notable: true
   notable_reason: Platform/product launch
+  kind: news
 - date: '2024-06-26'
   title: Stronger Charities Alliance launched a private member's Bill at Parliament
     House to protect charity advocacy rights
@@ -47,6 +48,7 @@ events:
   url_checked: '2026-08-28'
   notable: medium
   notable_reason: Coalition-led federal advocacy Bill launch
+  kind: news
   type: milestone
 activity:
   manual:

@@ -32,6 +32,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Founding of the organisation
+  kind: news
 - date: '2004-01-01'
   title: Obtains UN ECOSOC special consultative status
   url: https://en.wikipedia.org/wiki/People%27s_Solidarity_for_Participatory_Democracy
@@ -39,6 +40,7 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: false
+  kind: news
 - date: '2026-08-07'
   title: Launches Civil Society Joint Action for Strengthening Accountability and
   url: https://peoplepower21.org/English
@@ -47,6 +49,7 @@ events:
   proof_level: high
   url_checked: '2026-08-12'
   notable: false
+  kind: news
 activity:
   dod:
     date: 2026-09-19

@@ -34,6 +34,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: First-ever Decidim deployment
+  kind: news
 - date: '2017-02-01'
   title: Rewritten as new modular Decidim software, Barcelona city deployment begins
   url: https://en.wikipedia.org/wiki/Decidim
@@ -43,6 +44,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Rewrite into new Decidim software
+  kind: news
 - date: '2019-01-01'
   title: Decidim Association formed — Barcelona transfers trademark and code to community
     governance
@@ -53,6 +55,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Founding of the organisation
+  kind: news
 - date: '2023-01-01'
   title: Recognised as Digital Public Good by UN Digital Public Goods Alliance
   url: https://en.wikipedia.org/wiki/Decidim
@@ -60,6 +63,7 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: false
+  kind: news
 activity:
   dod:
     date: 2026-09-21

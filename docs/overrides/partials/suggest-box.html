@@ -1,0 +1,20 @@
+{#- "Seen something we missed?" call to action on News and the Calendar.
+    Set `suggest_kind` to 'news' or 'event' before including. It goes to a
+    GitHub issue form (.github/ISSUE_TEMPLATE/landscape-suggestion.yml)
+    rather than straight to a pull request, so suggesting something doesn't
+    mean learning the events: frontmatter; an editor turns it into a
+    sourced entry. The Telegram link is for anyone without a GitHub account. -#}
+{%- set _issue = "https://github.com/DesigningOpenDemocracy/DesigningOpenDemocracy.github.io/issues/new?template=landscape-suggestion.yml" %}
+<aside class="suggest-box" aria-label="Suggest {{ 'news' if suggest_kind == 'news' else 'an event' }}">
+  <div class="suggest-box-text">
+    {%- if suggest_kind == 'news' %}
+    <strong>Seen something we missed?</strong> A new report, a launch, a leadership change, a ruling: if an organisation in the Landscape did it, suggest it with a link to the source.
+    {%- else %}
+    <strong>Know of an event we're missing?</strong> A conference, forum, meetup or webinar from an organisation in the Landscape: suggest it with a link to its page.
+    {%- endif %}
+  </div>
+  <div class="suggest-box-actions">
+    <a class="hero-cta-btn hero-cta-primary" href="{{ _issue }}" target="_blank" rel="noopener">{{ '✍️ Suggest news' if suggest_kind == 'news' else '✍️ Suggest an event' }}</a>
+    <a class="suggest-box-alt" href="https://t.me/joinchat/HNk_UBX8A7jBPJPbAZU5Zg" target="_blank" rel="noopener">or tell us on Telegram</a>
+  </div>
+</aside>

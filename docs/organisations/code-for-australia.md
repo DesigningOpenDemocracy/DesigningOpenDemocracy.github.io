@@ -34,6 +34,7 @@ events:
   url_checked: '2026-08-12'
   notable: true
   notable_reason: Founding of the organisation
+  kind: news
 - date: '2025-01-20'
   title: Operations transferred to Portable, with co-founder Alvaro Maz joining its
     advisory board
@@ -48,6 +49,7 @@ events:
   url_checked: '2026-08-29'
   notable: medium
   notable_reason: Operational restructuring, mission unchanged
+  kind: news
   type: milestone
 activity:
   manual:

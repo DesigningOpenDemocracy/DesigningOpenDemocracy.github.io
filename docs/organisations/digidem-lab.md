@@ -37,6 +37,7 @@ events:
   url_checked: '2026-08-12'
   notable: true
   notable_reason: Founding of the organisation
+  kind: news
 - date: '2024-03-09'
   title: Led Sweden's first national citizens' council on climate policy
   url: https://digidemlab.org/news/Digidem-Lab-leder-i-Sveriges-frsta-nationella-medborgarrd-om-klimatet/
@@ -52,6 +53,7 @@ events:
   end_date: '2024-03-10'
   notable: true
   notable_reason: First national citizens' council of its kind in Sweden
+  kind: news
   type: deliberation
 activity:
   dod:

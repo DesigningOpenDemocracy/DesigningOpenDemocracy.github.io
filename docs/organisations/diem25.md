@@ -35,6 +35,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Platform/product launch
+  kind: news
 - date: '2017-03-25'
   title: First pan-European convention in Rome, adopting the founding declaration
   url: https://en.wikipedia.org/wiki/Democracy_in_Europe_Movement_2025
@@ -42,6 +43,7 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: false
+  kind: gathering
 - date: '2019-05-26'
   title: Contested European Parliament elections with a transnational list across
     multiple member states
@@ -51,6 +53,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: First transnational EU election campaign
+  kind: news
 activity:
   dod:
     date: 2026-09-16

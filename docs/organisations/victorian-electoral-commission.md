@@ -47,6 +47,7 @@ events:
   end_time: '14:00'
   notable: medium
   notable_reason: Electoral Commissioner on election integrity before the state poll
+  kind: gathering
   type: lecture
   location: University of Melbourne, Parkville VIC
 activity:

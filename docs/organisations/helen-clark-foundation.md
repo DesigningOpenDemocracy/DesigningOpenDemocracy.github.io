@@ -36,6 +36,7 @@ events:
   url_checked: '2026-08-12'
   notable: true
   notable_reason: Founding of the organisation
+  kind: news
 - date: '2026-06-01'
   title: Published "Facing Up to Our Future," a 21-contributor book on New Zealand's
     long-term structural challenges ahead of the general election
@@ -51,6 +52,7 @@ events:
   url_checked: '2026-08-29'
   notable: true
   notable_reason: Flagship publication ahead of a general election
+  kind: news
   type: publication
 - date: '2026-09-29'
   title: 'Playing the Long Game: public webinar with Simon Bridges on durable policy-making'
@@ -62,6 +64,7 @@ events:
   proof_level: high
   url_checked: '2026-09-17'
   notable: false
+  kind: gathering
   type: other
 activity:
   dod:

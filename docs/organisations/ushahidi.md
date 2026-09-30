@@ -34,6 +34,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Founding of the organisation
+  kind: news
 - date: '2010-01-12'
   title: Deployed for Haiti earthquake response — mapped tens of thousands of reports,
     establishing the platform's global humanitarian use case
@@ -43,6 +44,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Platform/product launch
+  kind: news
 activity:
   dod:
     date: 2026-09-15

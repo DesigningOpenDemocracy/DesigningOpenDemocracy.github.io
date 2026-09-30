@@ -23,6 +23,7 @@ events:
     Dr Raymundo Sánchez Barraza.'
   proof_level: high
   url_checked: '2026-08-17'
+  kind: news
 - date: '2006-01-02'
   title: La Otra Campaña holds its first public encounter (delegate Zero) at Unitierra-Cideci
   url: https://www.jornada.com.mx/2006/01/03/index.php?article=003n1pol&section=politica
@@ -33,6 +34,7 @@ events:
     Other Campaign at CIDECI-Unitierra on 2 January 2006 (La Jornada).
   proof_level: high
   url_checked: '2026-08-17'
+  kind: gathering
 - date: '2013-08-10'
   title: Hosts registration for the first Zapatista Escuelita (little school)
   url: https://enlacezapatista.ezln.org.mx/2013/07/18/nuevas-fechas-para-la-escuelita-informacion-de-videoconferencias-y-de-otras-cosas/
@@ -42,6 +44,7 @@ events:
     classes ran 12–16 August 2013.'
   proof_level: high
   url_checked: '2026-08-17'
+  kind: gathering
 activity:
   dod:
     date: 2026-09-26

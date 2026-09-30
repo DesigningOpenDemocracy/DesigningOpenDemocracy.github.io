@@ -29,6 +29,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Founding of the organisation
+  kind: news
 - date: '2017-09-10'
   title: Released "The Social Smart Contract" white paper, detailing its Sovereign
     blockchain voting platform
@@ -43,6 +44,7 @@ events:
   url_checked: '2026-08-29'
   notable: true
   notable_reason: Platform/product launch
+  kind: news
   type: publication
 activity:
   manual:

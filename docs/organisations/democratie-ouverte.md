@@ -35,6 +35,7 @@ events:
     professionals, elected officials and citizens.
   proof_level: high
   url_checked: '2026-08-14'
+  kind: news
 - date: '2016-01-01'
   title: Launched Système D, the first democratic-innovation incubator in France
   url: https://www.democratieouverte.org/qui-sommes-nous
@@ -47,6 +48,7 @@ events:
     and private partners including the Caisse des Dépôts.
   proof_level: high
   url_checked: '2026-08-14'
+  kind: news
 - date: '2019-04-25'
   title: France's Convention Citoyenne pour le Climat announced after the Gilets Citoyens'
     open letter
@@ -62,6 +64,7 @@ events:
   url_checked: '2026-08-14'
   notable: true
   notable_reason: National citizens' climate assembly announced
+  kind: news
 activity:
   manual:
     date: 2026-05-18

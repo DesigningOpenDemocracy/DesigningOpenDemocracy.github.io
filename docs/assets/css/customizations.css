@@ -2871,10 +2871,180 @@ html .md-typeset details.plain-details > :last-child {
   border-bottom-color: var(--md-accent-fg-color);
 }
 
-/* Landscape News (/news/, docs/overrides/news.html). Its cards reuse the
-   calendar's .calendar-event rules wholesale, so the two pages read as the
-   forward and backward halves of one view; only what the calendar has no
-   equivalent for lives here. */
+/* Landscape News (/news/, docs/overrides/news.html). Laid out as stories —
+   meta line, headline, lede, source — rather than the calendar's
+   date-block cards, which it used to borrow and which made it read as a
+   second calendar. Badges and concept chips are still the calendar's. */
+.md-typeset .news-story-list {
+  list-style: none;
+  margin: 0 0 1.5em;
+  padding: 0;
+}
+.md-typeset .news-story-list > li.news-story {
+  margin: 0;
+  padding: 0.9em 0 1em;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+}
+.md-typeset .news-story-list > li.news-story:last-child {
+  border-bottom: none;
+}
+/* Major: a left rule in the calendar's amber, not a whole card, so the
+   tier is visible at a glance without the page turning into boxes. */
+.md-typeset .news-story-list > li.news-story--major {
+  border-left: 3px solid rgba(255, 179, 0, 0.8);
+  padding-left: 0.8em;
+}
+.news-story-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25em 0.6em;
+  font-size: 0.78em;
+  color: var(--md-default-fg-color--light);
+}
+.news-story-meta time {
+  font-weight: 700;
+  color: var(--md-default-fg-color);
+}
+.news-story-org {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35em;
+}
+.news-story-logo {
+  width: 1.4em;
+  height: 1.4em;
+  object-fit: contain;
+  border-radius: 3px;
+}
+.news-story-logo.org-logo-needs-dark  { background: rgba(0, 0, 0, 0.45); }
+.news-story-logo.org-logo-needs-light { background: #fff; }
+.md-typeset h3.news-story-title {
+  margin: 0.3em 0 0.25em;
+  font-size: 1.05em;
+  font-weight: 700;
+  line-height: 1.35;
+}
+.md-typeset .news-story--major h3.news-story-title {
+  font-size: 1.15em;
+}
+.md-typeset .news-story-title a {
+  color: var(--md-default-fg-color);
+}
+.md-typeset .news-story-title a:hover {
+  color: var(--md-accent-fg-color);
+}
+.md-typeset .news-story-lede {
+  margin: 0.2em 0 0.4em;
+  font-size: 0.88em;
+}
+.md-typeset blockquote.news-story-quote {
+  margin: 0.3em 0 0.4em;
+  font-size: 0.82em;
+}
+.md-typeset .news-story-location {
+  margin: 0.2em 0;
+  font-size: 0.8em;
+  color: var(--md-default-fg-color--light);
+}
+.news-story-foot {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.3em 0.4em;
+  font-size: 0.85em;
+}
+.news-story-reason {
+  font-size: 0.85em;
+  font-style: italic;
+  color: var(--md-default-fg-color--light);
+  margin-right: 0.3em;
+}
+/* Source links sit at the end of the row, however many chips precede them. */
+.news-story-links {
+  margin-left: auto;
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.2em 0.8em;
+  font-size: 0.9em;
+}
+
+/* "Just Australia?" country-filter suggestion on News and the Calendar
+   (docs/assets/js/country-suggest.js). A quiet chip row above the filter
+   bar, not a banner: it's a guess from the reader's time zone, so it should
+   read as an offer that's easy to ignore. */
+.country-suggest {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4em 0.6em;
+  margin: 0.4em 0 0.6em;
+  font-size: 0.8em;
+}
+.country-suggest[hidden] {
+  display: none;
+}
+.country-suggest-text {
+  color: var(--md-default-fg-color--light);
+}
+.country-suggest-apply {
+  font: inherit;
+  font-weight: 600;
+  color: var(--md-accent-fg-color);
+  background: var(--md-accent-fg-color--transparent);
+  border: 1px solid var(--md-accent-fg-color);
+  border-radius: 999px;
+  padding: 0.2em 0.8em;
+  cursor: pointer;
+}
+.country-suggest-apply:hover,
+.country-suggest-apply:focus-visible {
+  background: var(--md-accent-fg-color);
+  color: var(--md-accent-bg-color);
+}
+.country-suggest-dismiss {
+  font: inherit;
+  color: var(--md-default-fg-color--light);
+  background: none;
+  border: none;
+  padding: 0.2em 0.4em;
+  cursor: pointer;
+}
+.country-suggest-dismiss:hover {
+  color: var(--md-default-fg-color);
+}
+
+/* "Seen something we missed?" (partials/suggest-box.html), on News and the
+   Calendar. Visible rather than tucked into the About disclosure, since
+   suggestions are how these pages grow. */
+.md-typeset .suggest-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6em 1em;
+  margin: 0.8em 0 1.2em;
+  padding: 0.75em 1em;
+  border: 1px dashed var(--md-accent-fg-color);
+  border-radius: 6px;
+  background: var(--md-accent-fg-color--transparent);
+}
+.suggest-box-text {
+  flex: 1 1 22em;
+  font-size: 0.85em;
+}
+.suggest-box-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4em 0.8em;
+}
+.md-typeset .suggest-box .hero-cta-btn {
+  margin: 0;
+}
+.suggest-box-alt {
+  font-size: 0.8em;
+}
+
 /* The per-topic subscribe button is toggled with the `hidden` attribute,
    which .hero-cta-btn's own display rule would otherwise override —
    leaving an empty outlined button on the page. */
@@ -2912,11 +3082,6 @@ html .md-typeset details.plain-details > :last-child {
   font-size: 0.85em;
   opacity: 0.7;
   margin-left: 0.3em;
-}
-/* The source link sits at the end of the chip row, however many chips. */
-.news-item .calendar-event-orgline .calendar-event-action,
-.news-item .calendar-event-orgline .news-item-cited {
-  margin-left: auto;
 }
 
 /* Landscape Archive (docs/overrides/archive.html): one compact row per

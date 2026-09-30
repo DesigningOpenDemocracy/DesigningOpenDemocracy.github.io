@@ -34,6 +34,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Founding of the organisation
+  kind: news
 - date: '2007-11-10'
   title: First Bersih rally — 40,000 Malaysians march for electoral reform in Kuala
     Lumpur
@@ -43,6 +44,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Mass protest/mobilisation
+  kind: gathering
 - date: '2011-07-09'
   title: Bersih 2.0 rally — 50,000+ protestors demanding clean elections, met with
     police crackdown
@@ -52,6 +54,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Mass protest/mobilisation
+  kind: gathering
 activity:
   manual:
     checked: 2026-06-28

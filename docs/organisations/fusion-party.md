@@ -36,6 +36,7 @@ events:
   url_checked: '2026-08-15'
   notable: true
   notable_reason: Merger of organisations
+  kind: news
 - date: '2025-01-01'
   title: Renamed to "FUSION | Planet Rescue | Whistleblower Protection | Innovation"
     after forming an alliance with the Australian Progressives and Democracy First
@@ -50,6 +51,7 @@ events:
   url_checked: '2026-08-29'
   notable: medium
   notable_reason: Party rebrand following a new alliance
+  kind: news
   type: other
 activity:
   dod:

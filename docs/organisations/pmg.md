@@ -37,6 +37,7 @@ events:
   url_checked: '2026-08-25'
   notable: true
   notable_reason: Founding of the organisation
+  kind: news
 - date: '1998-01-01'
   title: Launched its website, opening the committee record beyond the three founding
     advocacy organisations
@@ -45,6 +46,7 @@ events:
     generated available to a wider audience.
   proof_level: high
   url_checked: '2026-08-25'
+  kind: news
 - date: '2007-01-01'
   title: Began publishing sound recordings of committee meetings alongside written
     minutes
@@ -54,6 +56,7 @@ events:
     and since 2007, sound recordings of the meeting.
   proof_level: high
   url_checked: '2026-08-25'
+  kind: news
 - date: '2009-07-01'
   title: Became a fully independent NGO, separating from its founding partners
   url: https://pmg.org.za/page/what-is-pmg
@@ -62,6 +65,7 @@ events:
   url_checked: '2026-08-25'
   notable: true
   notable_reason: Became a fully independent NGO
+  kind: news
 activity:
   dod:
     date: 2026-09-20

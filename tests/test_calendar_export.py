@@ -148,6 +148,58 @@ class RecentPastEventsTests(unittest.TestCase):
         self.assertFalse(titles & {"Yesterday", "On the window edge", "Too old"})
 
 
+KIND_ORG_PAGE = """---
+title: Kind Org
+events:
+- date: '{soon}'
+  title: A conference
+  kind: gathering
+- date: '{soon}'
+  title: A report comes out
+  kind: news
+- date: '{soon}'
+  title: A report launch webinar
+  kind: launch
+- date: '{soon}'
+  title: Untagged
+- date: '{recent}'
+  title: A past conference
+  kind: gathering
+- date: '{recent}'
+  title: A past appointment
+  kind: news
+---
+"""
+
+
+class EventKindTests(unittest.TestCase):
+    """News items (kind: news) are things that happened, not things to
+    attend, so they stay off the calendar and its past list; News carries
+    them instead (tests/test_news_export.py, KindTests)."""
+
+    def setUp(self):
+        if ce.frontmatter is None:
+            self.skipTest("python-frontmatter not installed")
+        self.tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(self.tmp.cleanup)
+        self.today = datetime.date(2026, 9, 29)
+        day = datetime.timedelta(days=1)
+        with open(os.path.join(self.tmp.name, "kind-org.md"), "w", encoding="utf-8") as f:
+            f.write(KIND_ORG_PAGE.format(soon=self.today + 5 * day, recent=self.today - 5 * day))
+        self._orig_dir = ce.ORGS_DIR
+        ce.ORGS_DIR = self.tmp.name
+        self.addCleanup(lambda: setattr(ce, "ORGS_DIR", self._orig_dir))
+
+    def test_upcoming_list_skips_news(self):
+        titles = {e["title"] for e in ce._load_manual_events(self.today)}
+        self.assertEqual(titles, {"A conference", "A report launch webinar", "Untagged"})
+
+    def test_past_list_skips_news(self):
+        titles = {e["title"] for e in ce._load_manual_events(
+            self.today, past_days=ce.PAST_WINDOW_DAYS)}
+        self.assertEqual(titles, {"A past conference"})
+
+
 class CalendarJsonLdEscapingTests(unittest.TestCase):
     """calendar.html's JSON-LD block must safely encode special characters in event fields."""
 

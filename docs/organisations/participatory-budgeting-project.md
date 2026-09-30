@@ -35,12 +35,14 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Founding of the organisation
+  kind: news
 - date: '2011-01-01'
   title: Incorporated as a 501(c)(3) nonprofit in Brooklyn, New York
   url: https://www.participatorybudgeting.org/about/
   proof_level: medium
   url_checked: '2026-08-10'
   notable: false
+  kind: news
   proof_warning: true
 activity:
   dod:

@@ -29,6 +29,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Founding of the organisation
+  kind: news
 - date: '2025-11-04'
   title: Bùi Thị Minh Hoài appointed to lead the Front for the 2025–2030 term, succeeding
     Đỗ Văn Chiến
@@ -43,6 +44,7 @@ events:
   url_checked: '2026-08-29'
   notable: medium
   notable_reason: Top leadership transition within the single-party consultative body
+  kind: news
   type: other
 activity:
   manual:

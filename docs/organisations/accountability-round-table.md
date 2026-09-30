@@ -30,6 +30,7 @@ events:
     of ART, which he co-founded in 2006.
   proof_level: high
   url_checked: '2026-08-17'
+  kind: news
 - date: '2011-10-20'
   title: Holds the inaugural Annual Integrity Lecture, delivered by Fred Chaney on
     integrity in Parliament
@@ -38,6 +39,7 @@ events:
     Lectures in 2016.
   proof_level: medium
   url_checked: '2026-08-17'
+  kind: gathering
 activity:
   manual:
     checked: 2026-06-08

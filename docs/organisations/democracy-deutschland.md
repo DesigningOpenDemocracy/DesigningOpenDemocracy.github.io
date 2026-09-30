@@ -31,6 +31,7 @@ events:
     e.V.
   proof_level: high
   url_checked: '2026-08-14'
+  kind: news
 - date: '2017-11-26'
   title: Crowdfunding campaign completed, securing €35,000 from 580+ supporters
   url: https://www.pressenza.com/de/2017/12/demokratie-echtzeit-neue-app-democracy-erfolgreich-crowdfinanziert/
@@ -39,6 +40,7 @@ events:
     der App
   proof_level: high
   url_checked: '2026-08-14'
+  kind: news
 - date: '2018-10-01'
   title: App launch — first app giving citizens real-time insight into Bundestag legislation,
     with shadow voting
@@ -50,6 +52,7 @@ events:
   url_checked: '2026-08-14'
   notable: true
   notable_reason: Platform/product launch
+  kind: news
 activity:
   dod:
     date: 2026-09-27

@@ -37,6 +37,7 @@ events:
     Times).
   proof_level: high
   url_checked: '2026-08-17'
+  kind: gathering
 - date: '2025-05-30'
   title: Held a planning day setting priorities for the year ahead, including tiny-house
     production support and "Neighbourocracy" picnics
@@ -51,6 +52,7 @@ events:
   proof_level: high
   url_checked: '2026-08-29'
   notable: false
+  kind: gathering
   type: other
 activity:
   dod:

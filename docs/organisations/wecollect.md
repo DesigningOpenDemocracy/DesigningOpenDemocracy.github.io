@@ -31,6 +31,7 @@ events:
   url_checked: '2026-08-12'
   notable: true
   notable_reason: Platform/product launch
+  kind: news
 - date: '2024-12-18'
   title: Ran a successful "Save WeCollect" fundraising campaign, closing a funding
     gap threatening operations
@@ -45,6 +46,7 @@ events:
   url_checked: '2026-08-29'
   notable: medium
   notable_reason: Community-funded rescue of the platform's operations
+  kind: news
   type: other
 activity:
   dod:

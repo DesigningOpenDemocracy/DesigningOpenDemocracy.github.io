@@ -21,6 +21,7 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: false
+  kind: gathering
 - date: '2017-01-01'
   title: Formally granted cooperative status by Consumer Affairs Victoria, becoming
     Australia's first platform cooperative
@@ -31,6 +32,7 @@ events:
   url_checked: '2026-08-12'
   notable: true
   notable_reason: First platform cooperative in Australia
+  kind: news
 last_checked: '2026-05-29'
 ---
 

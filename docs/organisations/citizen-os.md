@@ -32,6 +32,7 @@ events:
     Do It! Foundation (coordinators of World Cleanup Day).
   proof_level: high
   url_checked: '2026-08-14'
+  kind: news
 - date: '2024-03-18'
   title: Launched first phase of the platform redesign with a new look and feel
   url: https://citizenos.com/news/citizen-os-platform-now-has-an-improved-look-and-feel/
@@ -41,6 +42,7 @@ events:
   url_checked: '2026-08-14'
   notable: true
   notable_reason: Platform/product launch
+  kind: news
 - date: '2024-12-01'
   title: Citizen OS Indonesia co-organised the 4th Indonesia Opinion Festival with
     the Indonesian House of Representatives
@@ -49,6 +51,7 @@ events:
     Festival (IOF), in collaboration with the Indonesian House of Representatives.
   proof_level: high
   url_checked: '2026-08-14'
+  kind: gathering
 activity:
   manual:
     date: 2025-07-23

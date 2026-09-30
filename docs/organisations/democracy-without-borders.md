@@ -32,6 +32,7 @@ events:
   url_checked: '2026-08-21'
   notable: true
   notable_reason: Founding of the organisation
+  kind: news
 - date: '2019-11-14'
   title: Co-launched the Campaign for a UN World Citizens' Initiative at a meeting
     opposite the UN headquarters in New York
@@ -43,6 +44,7 @@ events:
   url_checked: '2026-08-21'
   notable: true
   notable_reason: Platform/product launch
+  kind: news
 - date: '2021-04-01'
   title: Brought its UNPA and World Citizens' Initiative campaigns under the "We The
     Peoples" umbrella for inclusive global governance, alongside a proposed UN Civil
@@ -54,6 +56,7 @@ events:
   proof_level: high
   url_checked: '2026-08-21'
   notable: false
+  kind: news
 activity:
   dod:
     date: 2026-09-19

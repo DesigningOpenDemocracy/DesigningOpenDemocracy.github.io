@@ -33,6 +33,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Platform/product launch
+  kind: news
 - date: '1999-01-01'
   title: First international election observation mission, invited by OSCE/ODIHR
   url: https://memo98.sk/about-us
@@ -41,6 +42,7 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: false
+  kind: news
 activity:
   manual:
     checked: 2026-06-07

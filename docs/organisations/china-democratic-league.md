@@ -31,6 +31,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Founding of the organisation
+  kind: news
 - date: '1948-01-01'
   title: Publicly announced cooperation with the Chinese Communist Party after the
     Kuomintang declared it an "illegal organization"
@@ -47,6 +48,7 @@ events:
   url_checked: '2026-08-29'
   notable: true
   notable_reason: Foundational political alliance shaping the org's modern role
+  kind: news
   type: milestone
 activity:
   dod:

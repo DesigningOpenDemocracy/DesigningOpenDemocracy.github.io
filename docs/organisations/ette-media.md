@@ -31,6 +31,7 @@ events:
   url_checked: '2026-08-20'
   notable: true
   notable_reason: Platform/product launch
+  kind: news
 - date: '2026-04-16'
   title: Reported an audience of 20,000+ weekly listens and a completed nationwide
     live tour, nine months post-launch
@@ -44,6 +45,7 @@ events:
   url_checked: '2026-08-29'
   notable: medium
   notable_reason: Audience growth and live tour milestone
+  kind: news
   type: milestone
 activity:
   dod:

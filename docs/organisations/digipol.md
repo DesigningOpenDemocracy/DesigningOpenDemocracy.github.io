@@ -20,6 +20,7 @@ events:
   url_checked: '2026-08-20'
   notable: true
   notable_reason: Org deregistered / wound up
+  kind: news
 activity:
   dod:
     date: 2026-08-21

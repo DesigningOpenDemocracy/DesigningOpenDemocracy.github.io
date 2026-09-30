@@ -35,6 +35,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Platform/product launch
+  kind: news
 - date: '2009-01-01'
   title: Australian Citizens' Parliament — 150 citizens deliberate on strengthening
     Australia's democracy
@@ -46,6 +47,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: First flagship citizens' assembly project
+  kind: news
 - date: '2017-01-01'
   title: Democracy R&D international network founded with newDemocracy as a founding
     member
@@ -56,6 +58,7 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: false
+  kind: news
 - date: '2018-01-01'
   title: Helps design Ostbelgien's permanent Citizens' Council — world's first embedded
     in a parliament
@@ -68,6 +71,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: World-first permanent parliamentary citizens council
+  kind: news
 - date: '2026-09-15'
   title: Launches the second edition of the "Democracy Beyond Elections" citizens’
     assemblies handbook at UN Headquarters in New York, produced with UNDP and the
@@ -85,6 +89,7 @@ events:
   url_checked: '2026-09-17'
   notable: true
   notable_reason: Publication launch with UN agencies
+  kind: news
 - date: '2026-09-14'
   title: Kyle Redman appointed Executive Director as Iain Walker steps back to Director,
     Advocacy after 15 years
@@ -98,6 +103,7 @@ events:
   url_checked: '2026-09-17'
   notable: true
   notable_reason: Leadership transition
+  kind: news
 activity:
   dod:
     date: 2026-09-21

@@ -34,6 +34,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Founding of the organisation
+  kind: news
 - date: '2023-03-07'
   title: Announced leadership transition — Alex Soros appointed chair, succeeding
     George Soros
@@ -43,6 +44,7 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: false
+  kind: news
 activity:
   manual:
     checked: 2026-06-07

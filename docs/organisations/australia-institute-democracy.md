@@ -35,6 +35,7 @@ events:
   proof_level: high
   url_checked: '2026-08-20'
   notable: false
+  kind: gathering
   type: lecture
   location: National Film and Sound Archive, Canberra ACT
 - date: '2026-09-15'
@@ -48,6 +49,7 @@ events:
   url_checked: '2026-08-20'
   notable: true
   notable_reason: Flagship conference/summit
+  kind: gathering
   type: conference
   location: Parliament of NSW, Sydney
 activity:

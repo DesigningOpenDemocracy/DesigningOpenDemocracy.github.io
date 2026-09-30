@@ -34,6 +34,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Founding of the organisation
+  kind: news
 - date: '2025-11-27'
   title: Designated a "terrorist organisation" by Russia's Supreme Court, the harshest
     legal classification available
@@ -50,6 +51,7 @@ events:
   url_checked: '2026-08-29'
   notable: true
   notable_reason: Harshest legal designation escalation against the organisation
+  kind: news
   type: other
 activity:
   manual:

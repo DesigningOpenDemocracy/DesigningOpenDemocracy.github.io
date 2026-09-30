@@ -3,7 +3,8 @@
 check_event_sourcing.py — event sourcing validator and proof-level calculator.
 
 Scans every org page's frontmatter `events:` entries and:
-  - Hard-gates: every event must have url: or source: (exit 1 if missing)
+  - Hard-gates: every event must have url: or source: (exit 1 if missing),
+    and a kind: of gathering, news or launch
   - Warns: vague source: values, weak URLs, notable events without proof
   - Reports: confidence distribution and proof_level distribution
   - Calculates: --calculate mode auto-sets proof_level from source signals
@@ -55,11 +56,10 @@ _news_export_module = None
 
 
 def _news_export():
-    """hooks/news_export.py, loaded by path for its announce_days rule, so the
-    linter and the hook can't disagree on what a valid value is (the same
-    reason check_elections.py loads calendar_export.py). Loaded only when an
-    event actually carries announce_days, since it pulls in the rest of the
-    build's helpers."""
+    """hooks/news_export.py, loaded by path for its announce_days rule and
+    (through it, calendar_export.py) the kind: vocabulary, so the linter and
+    the hooks can't disagree on what a valid value is (the same reason
+    check_elections.py loads calendar_export.py)."""
     global _news_export_module
     if _news_export_module is None:
         import importlib.util
@@ -243,6 +243,7 @@ def main():
     weak_url = 0
     no_proof = 0
     bad_announce = 0
+    bad_kind = 0
     notable_soft = 0
     mismatched_proof_level = 0
     stale_checked = 0
@@ -356,6 +357,19 @@ def main():
                     print(f"  ANNOUNCE IGNORED {p['title']}  [{e.get('date','?')}]  {e.get('title','?')}")
                     print("                   announce_days only applies to major (notable: true) events")
 
+            # kind: decides calendar vs Landscape News (see EVENT_KINDS in
+            # hooks/calendar_export.py). Required, because the hook reads a
+            # missing one as "gathering": a publication without it would sit
+            # on the calendar and never reach News, with nothing said.
+            kinds = _news_export()._cal.EVENT_KINDS
+            if e.get("kind") not in kinds:
+                bad_kind += 1
+                has_issues = True
+                label = "NO KIND        " if "kind" not in e else "BAD KIND       "
+                print(f"  {label} {p['title']}  [{e.get('date','?')}]  {e.get('title','?')}")
+                print(f"                   kind: needs one of {', '.join(kinds)}"
+                      + (f" (got {e['kind']!r})" if "kind" in e else ""))
+
             url_checked = parse_date(e.get("url_checked"))
             checked_recently = url_checked and (date.today() - url_checked).days <= STALE_CHECK_DAYS
             if e.get("proof_level") in ("high", "medium") and not checked_recently:
@@ -400,6 +414,9 @@ def main():
             print(f"\n{no_proof} event(s) need evidence (quote, note, or proof_warning). Add one to each.")
         if bad_announce:
             print(f"\n{bad_announce} event(s) have an invalid announce_days (see BAD ANNOUNCE above).")
+        if bad_kind:
+            print(f"\n{bad_kind} event(s) have a missing or unknown kind: — gathering (something to attend),"
+                  " news (something that happened) or launch (an event that releases something).")
         sys.exit(1)
     else:
         print("All events have a url: or source:.")

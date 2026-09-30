@@ -32,6 +32,7 @@ events:
     every inhabited continent.
   proof_level: high
   url_checked: '2026-08-14'
+  kind: news
 - date: '2025-09-10'
   title: Reached 10,000 connected volunteers
   url: https://blog.democracylab.org/10-000-volunteers-and-counting/
@@ -42,6 +43,7 @@ events:
     to over 300 nonprofits and tech-for-good projects through the platform.
   proof_level: high
   url_checked: '2026-08-14'
+  kind: news
 activity:
   manual:
     checked: 2026-06-07

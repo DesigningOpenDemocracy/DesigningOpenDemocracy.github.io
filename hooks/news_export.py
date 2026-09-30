@@ -3,10 +3,13 @@ news_export.py — MkDocs hook: build Landscape News, the past-facing
 counterpart to the site-wide calendar.
 
 The calendar (hooks/calendar_export.py) projects every org's *future*
-`events:` entries into one cross-org list. This hook projects the *recent
-past* of the same field, narrowed to what an editor has already flagged as
-worth a reader's attention: entries carrying `notable: true` (major) or
-`notable: "medium"` (notable), dated within the last NEWS_WINDOW_DAYS.
+gatherings from `events:` into one cross-org list. This hook projects the
+*recent past* of the same field's news (`kind: news` or `kind: launch`, see
+EVENT_KINDS in calendar_export.py), narrowed to what an editor has already
+flagged as worth a reader's attention: entries carrying `notable: true`
+(major) or `notable: "medium"` (notable), dated within the last
+NEWS_WINDOW_DAYS. Conferences and meetups are the calendar's, not news; the
+only ones here are a major one's heads-up before it starts.
 A launch, a handbook's new edition, a leadership change, a flagship
 report — the things one organisation in the landscape would want to know
 another had done, without reading 170 org pages to find them.
@@ -146,6 +149,8 @@ COUNTRY_NAMES = _cal._COUNTRY_NAMES
 _notable_tier = _cal._notable_tier
 _parse_date = _cal._parse_date
 _is_current = _cal._is_current
+_event_kind = _cal._event_kind
+NEWS_KINDS = _cal.NEWS_KINDS
 
 
 def country_name(code):
@@ -211,7 +216,7 @@ def _link_for(url, quote, archive_info):
 
 
 def collect_news(orgs, today, window_days=NEWS_WINDOW_DAYS, archive_info=None, notable_only=True,
-                 announce_days=None):
+                 announce_days=None, kinds=NEWS_KINDS):
     """Recent notable events across every org, newest first.
 
     An event qualifies when it carries a notable: tier, has ended (on its
@@ -238,7 +243,14 @@ def collect_news(orgs, today, window_days=NEWS_WINDOW_DAYS, archive_info=None, n
     window_days=None for no cut-off and notable_only=False for every
     curated event, so the two pages can't disagree about what an item says
     or where it links. It passes announce_days={}, since it's a record of
-    what has happened.
+    what has happened, and kinds=None, since it records gatherings too.
+
+    `kinds` is which event kinds (calendar_export.EVENT_KINDS) count once
+    they've happened: news and launches, not gatherings. A conference is
+    the calendar's; once it's over it's history, not news. The one place a
+    gathering reaches News is the announcement above, and it leaves again
+    when it ends. A `news` item is never announced ahead: a report due out
+    next month is news the day it's out.
     """
     if announce_days is None:
         announce_days = ANNOUNCE_DAYS
@@ -258,12 +270,17 @@ def collect_news(orgs, today, window_days=NEWS_WINDOW_DAYS, archive_info=None, n
             # (calendar_export._is_current), so news normally starts where
             # that stops; only an announced tier comes in earlier.
             upcoming = _is_current(d, _parse_date(entry.get("end_date")), today)
+            kind = _event_kind(entry)
             if upcoming:
+                if kind == "news":
+                    continue
                 lead = announce_lead(entry, tier, announce_days)
                 if not lead or (d - today).days > lead:
                     continue
                 announced = d - timedelta(days=lead)
             else:
+                if kinds is not None and kind not in kinds:
+                    continue
                 if window_days is not None and (today - d).days > window_days:
                     continue
                 announced = d
@@ -303,6 +320,7 @@ def collect_news(orgs, today, window_days=NEWS_WINDOW_DAYS, archive_info=None, n
                 "quote": entry.get("quote"),
                 "notable": tier,
                 "notable_reason": entry.get("notable_reason"),
+                "kind": kind,
                 "type": entry.get("type"),
                 "location": entry.get("location"),
                 "coverage_url": entry.get("coverage_url"),
@@ -581,7 +599,7 @@ def on_pre_build(config):
     # notable item in it already went out on /news.xml in its time.
     _archive[:] = collect_news(orgs, date.today(), window_days=None,
                                archive_info=archive_info, notable_only=False,
-                               announce_days={})
+                               announce_days={}, kinds=None)
     slices = feed_slices(orgs, items, concept_titles)
     site_url = (config.get("site_url") or "").rstrip("/")
     write_feeds(items, slices, DOCS_DIR, site_url, concept_titles)

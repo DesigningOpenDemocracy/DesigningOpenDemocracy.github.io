@@ -32,6 +32,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Platform/product launch
+  kind: news
 - date: '2026-02-01'
   title: Co-developed "Populus Senado 2026," a voter-matching tool for the March 2026
     legislative elections
@@ -47,6 +48,7 @@ events:
   url_checked: '2026-08-29'
   notable: medium
   notable_reason: Latest edition of the recurring voter-information campaign
+  kind: news
   type: launch
 activity:
   dod:

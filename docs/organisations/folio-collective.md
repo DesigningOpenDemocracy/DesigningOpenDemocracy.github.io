@@ -34,17 +34,20 @@ events:
   url_checked: '2026-08-20'
   notable: medium
   notable_reason: Regular Folio Conversation panel talk
+  kind: gathering
 - date: 2023-03-20
   title: (Un)ethical design — Robodebt, accountability, and equity in a digital society
   url: https://www.folio.org.au/event-5200127
   proof_level: medium
   url_checked: '2026-08-10'
+  kind: gathering
   proof_warning: true
 - date: 2023-04-04
   title: Atlas of Human Rights — violations and protections in Australia and abroad
   url: https://www.folio.org.au/event-5219140
   proof_level: medium
   url_checked: '2026-08-10'
+  kind: gathering
   location: CURATE Space, Melbourne CBD
   proof_warning: true
 - date: 2024-06-24
@@ -52,6 +55,7 @@ events:
   url: https://www.folio.org.au/event-5761027
   proof_level: medium
   url_checked: '2026-08-10'
+  kind: gathering
   proof_warning: true
 - date: 2024-07-01
   title: 'Democratic Crossroads — unpacking the Voice Referendum: what can we learn
@@ -65,11 +69,13 @@ events:
   url_checked: '2026-08-20'
   notable: medium
   notable_reason: Regular Folio Conversation panel talk
+  kind: gathering
 - date: 2025-02-26
   title: Election 2025 — how will independents shape our future Parliament?
   url: https://www.folio.org.au/event-6065606
   proof_level: medium
   url_checked: '2026-08-10'
+  kind: gathering
   proof_warning: true
 - date: 2026-09-24
   title: Should we celebrate democracy today — or reimagine it for tomorrow?
@@ -83,6 +89,7 @@ events:
   end_time: '22:00'
   notable: medium
   notable_reason: Global dialogue marking International Day of Democracy
+  kind: gathering
   location: Virtual
 activity:
   manual:

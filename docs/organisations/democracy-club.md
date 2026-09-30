@@ -35,6 +35,7 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: false
+  kind: news
 - date: '2015-01-01'
   title: Registered as a Community Interest Company and crowdsourced the most comprehensive
     UK election-candidate database to date, used by over a million people
@@ -45,6 +46,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Founding of the organisation
+  kind: news
 activity:
   dod:
     date: 2026-09-21

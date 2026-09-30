@@ -31,6 +31,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Founding of the organisation
+  kind: news
 - date: '2009-10-22'
   title: Publicly launched Vota Inteligente, its flagship voter-information platform,
     ahead of the Chilean presidential election
@@ -44,6 +45,7 @@ events:
   url_checked: '2026-08-29'
   notable: true
   notable_reason: Flagship platform launch
+  kind: news
   type: launch
 activity:
   dod:

@@ -31,6 +31,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Founding of the organisation
+  kind: news
 - date: '2024-01-15'
   title: Marked its 19th anniversary of organising women in Rojava
   url: https://hawarnews.com/en/in-its-20th-year-kongra-star-continues-to-complete-its-mission-to-liberate-women
@@ -46,6 +47,7 @@ events:
   url_checked: '2026-08-29'
   notable: medium
   notable_reason: Anniversary milestone marking two decades of organising
+  kind: news
   type: other
 activity:
   dod:

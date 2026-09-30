@@ -27,12 +27,14 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Origin of Australia's OGP membership
+  kind: news
 - date: '2016-12-01'
   title: Australia's first Open Government National Action Plan released
   url: https://www.opengovpartnership.org/members/australia/
   proof_level: medium
   url_checked: '2026-08-10'
   notable: false
+  kind: news
   proof_warning: true
 - date: '2018-09-21'
   title: Australia's second Open Government National Action Plan (2018-20) formally
@@ -41,6 +43,7 @@ events:
   proof_level: medium
   url_checked: '2026-08-10'
   notable: false
+  kind: news
   proof_warning: true
 - date: '2020-11-06'
   title: Draft third National Action Plan went through final consultation but was
@@ -53,6 +56,7 @@ events:
   url_checked: '2026-08-10'
   notable: medium
   notable_reason: Process setback, not a delivered outcome
+  kind: news
 - date: '2023-12-15'
   title: Third National Action Plan (2023–25) published, renewing Australia's OGP
     engagement after the post-2020 dormancy
@@ -64,6 +68,7 @@ events:
   url_checked: '2026-08-21'
   notable: true
   notable_reason: Major publication
+  kind: news
 - date: '2026-05-08'
   title: Australia's fourth Open Government Forum appointed, with co-creation of the
     fourth National Action Plan beginning
@@ -74,6 +79,7 @@ events:
   url_checked: '2026-08-21'
   notable: medium
   notable_reason: Committee formation, not itself an outcome
+  kind: news
 activity:
   dod:
     date: 2026-09-19

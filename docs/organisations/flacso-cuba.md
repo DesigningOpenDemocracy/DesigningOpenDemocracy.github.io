@@ -27,6 +27,7 @@ events:
     of the academic unit in Cuba.")
   proof_level: medium
   url_checked: '2026-08-17'
+  kind: news
 - date: '1994-01-01'
   title: Begins teaching the Master's in Social Development (Maestría en Desarrollo
     Social)
@@ -38,6 +39,7 @@ events:
     Nacional.'
   proof_level: medium
   url_checked: '2026-08-17'
+  kind: news
 activity:
   manual:
     checked: 2026-06-07

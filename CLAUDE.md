@@ -100,7 +100,7 @@ The invariants recorded there are not immutable. Any document in this repo — i
   last_checked
   ```
   Entries under `activity:` should follow: `manual`, `dod`, `social`, `rss`, `ical`, `scrape`, `sitemap`.
-  Per-event fields under `events:` should follow: `date`, `title`, `url`, `source`, `note`, `proof_level`, `url_checked`, `end_date`, `notable`, `type`, `location`.
+  Per-event fields under `events:` should follow: `date`, `title`, `url`, `source`, `note`, `proof_level`, `url_checked`, `end_date`, `notable`, `kind`, `type`, `location` (`util/reorder_frontmatter.py`'s `EVENT_FIELD_ORDER` is the full list).
   `util/check_orgs.py` validates ordering. Use the `ordered_dump` pattern when writing YAML (see `util/check_rss.py` for an example of field-order-aware writing).
 
 - `status` values: `active` | `inactive` | `deregistered`
@@ -122,11 +122,17 @@ The invariants recorded there are not immutable. Any document in this repo — i
 - `rss_feed: <url>` — optional; the org's RSS or Atom feed URL. Written by `util/check_rss.py --update-activity` when its discovery probe finds a feed (and by `scrape_news.py --update-rss`), so a feed is found once rather than rediscovered every run; the probe also saves the feed's recent posts to `docs/data/feeds/<slug>.json` for the news checkup (see the Landscape News section).
 - `news_page: <url>` — optional; URL of the org's news or blog index page. Opt-in for `util/scrape_news.py`.
 - `ics_feed: <url>` — optional; URL of an iCal/ICS calendar feed. Opt-in for `util/check_rss.py --update-activity` (writes `activity.ical`) **and** for `util/sync_events.py`, which caches the org's upcoming events into `docs/data/events/<slug>.json` for the site-wide calendar (see Calendar section below).
-- `events: [{date, title, short_title, url, source, note, quote, proof_level, proof_level_locked, proof_warning, url_checked, end_date, time, end_time, notable, notable_reason, announce_days}]` — optional (`announce_days:` is major-events-only; see the Landscape News section); a manually curated, editorial list of an org's significant milestones — **not** derived from `ics_feed:` and not meant to mirror it. `hooks/org_events.py` splits entries at build time into `page.meta.upcoming_events` (date >= today) and `page.meta.history_events` (date < today), rendered by `organisation.html` as two timeline sections. Keep each entry to one line — a terse `title`, no prose paragraph; if a milestone needs real narrative, put that in the page body instead (same judgment call as the optional "Key people" section). Future-dated entries here are also picked up by the site-wide calendar (see below) as a `manual`-source candidate alongside `ics_feed`-synced ones — no separate declaration needed. `end_date:` is optional, for events spanning more than one day (inclusive last day — same convention `util/sync_events.py` uses for iCal `DTEND`). `notable:` is optional and three-valued — absent/`false` (the default), `"medium"`, or `true` (major) — controlling the calendar's highlight tier:
+- `events: [{date, title, short_title, url, source, note, quote, proof_level, proof_level_locked, proof_warning, url_checked, end_date, time, end_time, notable, notable_reason, announce_days, kind}]` — optional (`announce_days:` is major-events-only; see the Landscape News section); a manually curated, editorial list of an org's significant milestones — **not** derived from `ics_feed:` and not meant to mirror it. `hooks/org_events.py` splits entries at build time into `page.meta.upcoming_events` (date >= today) and `page.meta.history_events` (date < today), rendered by `organisation.html` as two timeline sections. Keep each entry to one line — a terse `title`, no prose paragraph; if a milestone needs real narrative, put that in the page body instead (same judgment call as the optional "Key people" section). Future-dated entries here are also picked up by the site-wide calendar (see below) as a `manual`-source candidate alongside `ics_feed`-synced ones — no separate declaration needed. `end_date:` is optional, for events spanning more than one day (inclusive last day — same convention `util/sync_events.py` uses for iCal `DTEND`). `notable:` is optional and three-valued — absent/`false` (the default), `"medium"`, or `true` (major) — controlling the calendar's highlight tier:
   - **`notable: true` ("major")** — reserved for events that are both rare (happen only occasionally per year, typically annual at most) *and* genuinely flagship-scale for the landscape — an international/national conference, a major summit, a landmark launch, or an AGM where something structurally significant is actually being decided (e.g. PRSA's 2026 AGM votes on a 17-motion package to rename to the Australian Electoral Reform Society and broaden its remit — that vote is a major action, not routine governance). Rarity alone doesn't qualify something — an ordinary AGM is exactly as annual as a flagship conference is — so weigh both: is this rare *and* is something big actually happening at it. `notable: true` is for the small number of events per org, if any, worth interrupting a reader's scan of the whole calendar for. Renders the amber "★ Major event" badge/dot and the strongest highlight; also the only tier that can appear in the "Next DOD event" banner (`next_notable_event()` in `hooks/calendar_export.py` — see the Calendar section below).
   - **`notable: "medium"`** — for a real, worth-flagging event that doesn't clear the major bar — a specific named public talk or forum session, a one-off local event with actual content as opposed to a routine recurring meeting, or an org's own AGM in the ordinary case where nothing exceptional is on the agenda. An AGM is the organisation's central annual governance event even when it's procedurally routine, so it's "semi-major" by default — reach for `false` only for a genuinely minor/secondary recurring meeting, not for AGMs generally. Renders a distinct, deliberately quieter blue "● Notable" badge/dot, so it doesn't compete visually with true major events on the same page.
   - **absent or `false`** — the default; no badge, no highlight. Routine/secondary recurring meetings (a regular working-group check-in, a follow-up session) belong here.
   Use both non-`false` tiers sparingly — the point of either is to stand out against the rest of the calendar, which stops working if too many events claim one. Both tiers render consistently in two places: the site-wide calendar (`docs/overrides/calendar.html`, a full card treatment) and the org's own history/upcoming timeline (`docs/overrides/organisation.html`, a smaller coloured-dot marker) — the same `e.notable is true` / `e.notable == 'medium'` branching appears in both templates, so a change to the tier logic needs updating both.
+  - **`kind:` is required: `gathering` | `news` | `launch`** — what the entry *is*, which decides whether it goes on the calendar or in Landscape News. The two are kept apart on purpose (maintainer's call, 2026-09-30): a conference goes in a diary, a handbook's release is something to hear about, and neither page should be padded with the other's items.
+    - `gathering` — something people attend: conference, AGM, forum, meetup, workshop, webinar, rally. Calendar while upcoming, then the calendar's Recent past list and the Archive. **Never News**, except a major one's heads-up before it starts (see the Landscape News section).
+    - `news` — something that happened: a publication, a platform/campaign launch, an appointment, a ruling, an election result, a founding, an award, a deliberative process run. News (when notable), the Archive and the org's timeline; **never the calendar**, even when future-dated (a report due next month is news the day it's out).
+    - `launch` — an attendable event that releases something, like a report-launch webinar or a book launch at a venue: on the calendar until it happens, in News afterwards.
+    - The test is "would a reader put this in their diary to attend?" If a launch event and the thing launched both matter, `launch` covers it; if it was the release that mattered and the venue is incidental (newDemocracy's handbook launched at UN HQ), it's `news`.
+    - A missing or unknown value reads as `gathering` in the hooks (`_event_kind()` in `hooks/calendar_export.py`, where `EVENT_KINDS` lives), so `check_event_sourcing.py` fails the build on either (`NO KIND` / `BAD KIND`) rather than let a publication sit silently on the calendar. The existing free-text `type:` (`conference`, `publication`, `other`…) is descriptive only and was never consistent enough to route on; it's left as it was. All 438 existing events were classified when the field was added.
   - **`notable_reason:` is optional but expected on every `notable:` event** — a short caption (a few words to a short phrase, not a full sentence) naming *why* this event earned its tier — e.g. "Founding of the organisation", "Platform/product launch", "Leadership transition", "Structural vote: org rename + remit change". Shown directly next to the badge/dot on both the calendar and the org's own timeline — deliberately not a hover-only tooltip, so a reader scanning a long list of events can tell at a glance why each one is flagged without stopping to hover each one; think of it as that event's short description on top of being a tier marker, which is also why it's worth setting even when the reason seems obvious from the title (a consistent one-line category — "Founding of the organisation" — reads faster at a glance than re-parsing the full title every time, even if the two say almost the same thing). Only rendered when `notable:` is set — a plain (non-notable) event has no use for it. Keep it plain-scalar-safe in YAML — avoid a colon inside the text (`: ` needs quoting the whole value, and the raw-text-insertion tooling used for a bulk backfill doesn't attempt that) — reword around it instead (e.g. "National citizens' climate assembly announced" rather than "Advocacy win: ...").
   - **`short_title:` is optional** — a single-line, banner-friendly version of the event name, used only by the "Next DOD event" banner (`docs/overrides/partials/next-event-banner.html`, included on the home page and `/calendar/`), which falls back to `title:` when it's absent. Reach for it when `title:` is written the way this timeline's other entries are — a narrative log line ("Co-hosting "X" panel with Y", "Published its "Z"...") — which reads fine as one item among many in a history/upcoming list but is too long and the wrong voice for a one-line banner announcing the event itself. Set it to just the event's own name, the way an attendee would recognise it.
   - **`time:`/`end_time:` are both optional, strict 24-hour `"HH:MM"` strings** (quote them — `18:00` unquoted parses as a YAML sexagesimal number, not a time). Rendered on the site-wide calendar (`docs/overrides/calendar.html`) and — this is the part worth knowing — actually wired into the `.ics` export: `hooks/calendar_export.py`'s `_parse_time()` only accepts this exact shape and falls back to an all-day `DTSTART;VALUE=DATE` for anything else, deliberately not attempting to parse natural-language times ("6pm", "2:00 PM AEST"). Real event pages checked while sourcing citations use wildly inconsistent time/date formats for the same fact (sometimes contradicting themselves within one page), so a fuzzy parser here would produce confident, wrong calendar entries rather than a convenience — better to silently fall back to all-day than to guess. No timezone field exists, so a `.ics` subscriber sees this as floating local time, not the event's actual timezone-anchored moment — an honest limitation given nothing here currently records which IANA timezone the event is in, not a claim of full precision.
@@ -225,7 +231,7 @@ Three deliberately separate mechanisms handle "events," each for a different pur
 1. **External event links** — an org's own calendar/events page, linked from its org page (e.g. `news_page:`, or just a link in prose). No parsing, no sync — a pointer, nothing more.
 2. **Org history/upcoming timeline** (per-org, on the org's own page) — the `events:` frontmatter field, manually curated by an editor (see Organisation pages section above). Split at build time into "Upcoming events" / "History" by `hooks/org_events.py`. Purely editorial judgment about what's *significant* for that org — not a feed dump.
 3. **Site-wide future calendar** (`docs/calendar.md`, template `calendar.html`) — a forward-looking, cross-org aggregate meant to help people find events to attend, not an archive. Built from three future-only sources merged by `hooks/calendar_export.py`:
-   - Every org's `events:` entries with a future date (the same field from #2 — no separate declaration needed to appear here). This is also how DOD's own events reach the calendar: DOD is itself a tracked org (`designing-open-democracy.md`) with its own `events:` list, same as any other org — there's no separate "DOD's events" path.
+   - Every org's `events:` entries with a future date and `kind: gathering` or `kind: launch` (the same field from #2 — no separate declaration needed to appear here; `kind: news` entries never appear on the calendar, see `kind:` above). This is also how DOD's own events reach the calendar: DOD is itself a tracked org (`designing-open-democracy.md`) with its own `events:` list, same as any other org — there's no separate "DOD's events" path.
    - Every org's cached `ics_feed` sync, written by `util/sync_events.py` to `docs/data/events/<slug>.json` (committed; the build hook only reads this, it never fetches feeds itself)
    - **Election dates** from `docs/data/elections.yml` (see the Elections section below) — the one calendar entry with no organisation behind it, which is exactly why it can't ride on an org page's `events:` list like everything else here.
 
@@ -242,7 +248,7 @@ Three deliberately separate mechanisms handle "events," each for a different pur
 
    **Client-side past-event collapse and today/tomorrow highlighting.** Since the calendar page is static (built at deploy time), an event that was future-dated at build time can have already passed by the time a visitor actually loads the page — there's no server-side "now" to filter against. `calendar.html`'s JS (`collapsePastAndHighlightNear()`, run once on load before `applyFilter()`) fixes this up client-side: it walks every `<li class="calendar-event">` (each carries a `data-date="YYYY-MM-DD"` attribute for this purpose), and for any event whose date is before today, moves it out of its month's list and into a single collapsed `<details class="calendar-past-events-details">` inserted above the month groups — collapsed by default, so a returning visitor's "what's current" view isn't pushed down by events that have already happened. Today's and tomorrow's events instead get a `calendar-event--today`/`--tomorrow` class (green/blue left-border + tinted background, styled in `customizations.css`) and an inline "Today"/"Tomorrow" badge prepended to their header — collapsing would be wrong for these, since they're the most relevant events on the page, not stale ones. Events 2–7 days out get a third, lighter tier: a plain "This week" badge (`calendar-event-badge--week`) with no border/background change — deliberately weaker than today/tomorrow's treatment, since highlighting every event in the coming week as strongly would drown out the "truly imminent" signal today/tomorrow are meant to give on a calendar aggregating many orgs' events. Past-ness is judged on an event's *end* (`data-end-date`/`data-end-time`, falling back to the start date's 23:59), not its start, so a multi-day event that's currently running stays in the main list with an "On now" badge and a `calendar-event--ongoing` class instead of being collapsed away as history. `updateCount()` excludes anything inside the collapsed past-events `<details>` from its "N events" tally, matching what a visitor can actually see without expanding it. Local-midnight dates are parsed manually (`parseLocalDate()`) rather than via `new Date("YYYY-MM-DD")`, which parses as UTC midnight and off-by-ones for negative-UTC-offset viewers. Verified via a headless-browser check with `Date` monkey-patched to a fixed instant, served over a real local HTTP server (not `file://`, which has its own unrelated image-loading quirks) — confirmed correct collapse/highlight/count behaviour and that `<img loading="lazy">` calendar logos (unrelated pre-existing behaviour) load fine once scrolled into view.
 
-   **Recent past events.** Below the feeds table, a collapsed `<details>` ("Recent past events (N) · last 90 days") lists curated org `events:` that *ended* before the build date (on `end_date:` where set) and started within `PAST_WINDOW_DAYS` (90) of it, newest first, capped at `PAST_MAX_EVENTS` (50). Built by `hooks/calendar_export.py` as the `calendar_past_events` global, through the same `_load_manual_events()` as upcoming events so the two can't drift on which fields they carry, and rendered with the same `event_card` macro as the upcoming list. **Page-only**: the `.ics` feeds and `events.json` stay future-only, since a subscriber doesn't want last month in their calendar. Curated events only: an `ics_feed` cache holds whatever was upcoming at its last sync, so its past entries would be an accident of timing, and a held election is replaced in `elections.yml`. The 90 days matches Landscape News, which carries only the notable subset; anything older is on the org's own timeline. `collapsePastAndHighlightNear()` (below) moves events that end after the build into the top of this same list instead of making a second one. Older events are in the [Landscape Archive](#landscape-archive-docsarchivemd), linked from the foot of this list. `tests/test_calendar_export.py`'s `RecentPastEventsTests` pins the window.
+   **Recent past events.** Below the feeds table, a collapsed `<details>` ("Recent past events (N) · last 90 days") lists curated org `events:` that *ended* before the build date (on `end_date:` where set) and started within `PAST_WINDOW_DAYS` (90) of it, newest first, capped at `PAST_MAX_EVENTS` (50). Built by `hooks/calendar_export.py` as the `calendar_past_events` global, through the same `_load_manual_events()` as upcoming events so the two can't drift on which fields they carry, and rendered with the same `event_card` macro as the upcoming list. **Page-only**: the `.ics` feeds and `events.json` stay future-only, since a subscriber doesn't want last month in their calendar. Curated events only: an `ics_feed` cache holds whatever was upcoming at its last sync, so its past entries would be an accident of timing, and a held election is replaced in `elections.yml`. Gatherings and launches only: `kind: news` entries are News', not the calendar's. The 90 days matches Landscape News' window; anything older is on the org's own timeline. `collapsePastAndHighlightNear()` (below) moves events that end after the build into the top of this same list instead of making a second one. Older events are in the [Landscape Archive](#landscape-archive-docsarchivemd), linked from the foot of this list. `tests/test_calendar_export.py`'s `RecentPastEventsTests` pins the window.
 
    **The calendar/past boundary is an event's end, not its start** (`_is_current()` in `hooks/calendar_export.py`, applied to all three sources): an event is on the calendar until its `end_date:` (or its `date:`, for a one-day event) has passed. Until 2026-09 the calendar took `date >= today`, so a multi-day conference that had started before the build dropped off the calendar and, not yet being over, reached neither the past list nor News for the rest of its run, although the page's JS already had an "On now" badge waiting for it. `news_export.py` imports the same function and takes its complement.
 
@@ -320,14 +326,20 @@ which are about importance.
 
 ### Landscape News (`docs/news.md`)
 
-The past-facing counterpart to the calendar: the last three months' **major
-and notable** events from across the Democracy Landscape, newest first — a
-launch, a handbook's new edition, a leadership change, a flagship report.
-The point is what one org in the landscape would want to know another had
-done, without reading 170 org pages to find it.
+What organisations across the Democracy Landscape have published, launched
+or announced in the last three months, **major and notable** only, newest
+first — a handbook's new edition, a leadership change, a flagship report, a
+ruling. The point is what one org in the landscape would want to know
+another had done, without reading 170 org pages to find it. **It carries
+news, not events**: conferences and meetups are the calendar's (see
+`kind:` under Organisation pages). Until 2026-09-30 it took every notable
+past event, and about two thirds of it was conferences, AGMs and meetups
+that had already happened: a second calendar, not news. It's expected to be
+short; thin is fine.
 
 - **It is a view, not a data source.** Items are org `events:` entries with
-  `notable: true` or `notable: "medium"`, dated before today and within
+  `kind: news` or `kind: launch` and `notable: true` or `notable: "medium"`,
+  dated before today and within
   `NEWS_WINDOW_DAYS` (90) of it, built by `hooks/news_export.py`. There is
   no `news:` field and no second place to write an item: to add news, add a
   notable event to the org's own page, where it gets the same sourcing gates
@@ -352,15 +364,17 @@ done, without reading 170 org pages to find it.
   (HEARTBEAT.md, "News intake"). See the script's entry under Utility
   scripts.
 - **Major events are announced ahead; nothing else overlaps the calendar.**
-  The calendar keeps an event until it has ended
-  (`calendar_export._is_current()`, on `end_date:` where set), and news
-  normally takes only events that have ended, so a notable event is on
-  exactly one of the two and moves across on the first build after it ends.
+  A `gathering` is only ever on the calendar, a `news` item only in News,
+  and a `launch` on the calendar until it has ended
+  (`calendar_export._is_current()`, on `end_date:` where set) and in News
+  afterwards, moving across on the first build after it ends.
   The exception is `ANNOUNCE_DAYS` in `hooks/news_export.py` (lead time by
   tier, currently `{True: 30}`): a **major** event enters News that many days
   before it starts, under a "Coming up" heading at the top of the page
   (soonest first, "On now" while it runs), and is on both pages until it
-  ends. Notable (`"medium"`) events aren't announced; adding a `"medium"`
+  ends. A major **gathering** then leaves News (kept at the maintainer's
+  request as the one way a conference reaches News: a heads-up, not a
+  report); a `news` item is never announced ahead. Notable (`"medium"`) events aren't announced; adding a `"medium"`
   key would change that. **A major event can set its own notice** with an
   `announce_days:` field (a whole number, 1 to `MAX_ANNOUNCE_DAYS`, 365),
   e.g. `announce_days: 90` for an international conference people need to
@@ -375,7 +389,8 @@ done, without reading 170 org pages to find it.
   to record, so a subscriber gets it once, when it's announced; feeds publish
   it under the announcement date (event date minus the lead), and its title
   carries "(coming up 7 October 2026)" while it's upcoming. The archive
-  passes `announce_days={}`, since it's a record of what happened. Both pages are built only on push, so an event that
+  passes `announce_days={}` and `kinds=None`, since it's a record of
+  everything that happened, gatherings included. Both pages are built only on push, so an event that
   happened since the last build is still on the calendar (collapsed as past
   by its client-side JS) until the next one.
 - **Co-hosted events merge.** Two entries with the same date and `url:` (the
@@ -406,14 +421,38 @@ done, without reading 170 org pages to find it.
   concepts of their own, so a topic feed follows organisations working in
   that field rather than stories about it. The page says so. If per-event
   topics are ever wanted, that's a new `events:` field, not a change here.
-- **Page**: `docs/overrides/news.html` reuses the calendar's `.calendar-event`
-  card styling wholesale (amber major, blue notable), with only
-  `.news-*` rules of its own in `customizations.css`. It has country, topic
+- **Page**: `docs/overrides/news.html` lays items out as stories (meta line
+  with date/org/country, headline linking to the source, the `note:` as a
+  lede, the `quote:` beneath, then topics and links), styled by
+  `.news-story-*` in `customizations.css`. It used to reuse the calendar's
+  date-block cards, which is half of why it read as a second calendar;
+  majors get an amber left rule rather than a card. A "Seen something we
+  missed?" box (`partials/suggest-box.html`, also at the foot of
+  `/calendar/`) links to `.github/ISSUE_TEMPLATE/landscape-suggestion.yml`,
+  a GitHub issue form, so suggesting an item doesn't mean learning the
+  `events:` format; an editor turns it into a sourced entry. It has country, topic
   and "Major only" filters, reads and writes `?country=`/`?topic=`/`?tier=major`
   (each per-slice feed's channel `<link>` points at its own filtered view),
   and swaps the subscribe button to the matching feed. It also carries
   `<link rel="alternate">` feed autodiscovery in its head. There is no
   major-only feed: every item carries its tier as an RSS `<category>`.
+- **"Just Australia?" country suggestion** (News and the Calendar). Both
+  pages guess the reader's country from the browser's timezone
+  (`Intl.DateTimeFormat().resolvedOptions().timeZone`, looked up in
+  `docs/assets/js/tz-country.js`), falling back to a region in their
+  language setting (`en-AU`), and offer a one-click chip above the filter
+  bar that sets the existing country filter, which also swaps Subscribe to
+  that country's feed. `docs/assets/js/country-suggest.js` is shared by
+  both pages. **Never an automatic filter**, since the guess is wrong for
+  anyone travelling, on a VPN or with a UTC clock. It shows only while the
+  filter is on "all" and the country has something on the page right now
+  (upcoming events only, on the calendar), and a dismissal is remembered in
+  `localStorage` for that country. **Deliberately no IP geolocation**: that
+  would send every visitor's address to a third party, and the timezone
+  needs no request and no permission prompt. The table is generated by
+  `util/make_tz_countries.py` from tzdata's `zone.tab` plus a hand list of
+  legacy names browsers still report (`Asia/Calcutta`, `Australia/Canberra`,
+  `US/Eastern`); `tests/test_tz_countries.py` pins the common ones.
 - **Nav placement: its own top-level tab, "News", directly before
   Calendar.** Two earlier placements didn't hold. Nested under Democracy
   Landscape (the Map's precedent at the time), it appeared in no menu at
@@ -1043,6 +1082,8 @@ Generated at build time by `hooks/data_export.py`. Served as static assets:
 These are linked from the row under the org index table for researcher download (all five, beside the "Export filtered view (CSV)" button — `organisations/index.md` used to carry a second, near-duplicate copy of the same row above the table, which is where KML and the org–concept edge list lived until that row was folded into this one), from `/calendar/`'s data-links row (`events.json` + `organisations.json`), and from `llms.txt`'s "Data downloads" section. They are also listed individually in `sitemap.xml` — see `hooks/sitemap_extras.py` above — so a crawler learns the URLs exist without having to reach the pages that link them first.
 
 ### Utility scripts (`util/`)
+
+- `util/make_tz_countries.py` — generates `docs/assets/js/tz-country.js`, the IANA timezone → country table for the News/Calendar country suggestion (see the Landscape News section). Reads `/usr/share/zoneinfo/zone.tab` (`--zonetab` for another path) and adds `LEGACY_ALIASES`. Run once and commit; ~4 KB gzipped, loaded only on those two pages.
 
 - `util/make_world_dots.py` — generates `docs/overrides/partials/world-land-dots.html`, the dotted world outline behind the home page's Democracy Map teaser: one SVG path of zero-length strokes (drawn as dots by `stroke-linecap: round`), one per 2° grid point on land, in plain degrees (x = longitude, y = −latitude) between 76°N and 58°S. Source is Natural Earth 1:110m land (public domain) via the `world-atlas` npm package's TopoJSON (ISC), decoded and point-in-polygon tested in plain Python. Run once and commit the output (~3,700 dots, 1.4 KB gzipped); the build never fetches it. Only needs re-running to change the grid or the band, and a band change means updating `home.html`'s viewBox too.
   ```

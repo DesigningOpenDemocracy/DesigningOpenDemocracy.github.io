@@ -34,6 +34,7 @@ events:
   url_checked: '2026-08-12'
   notable: true
   notable_reason: Founding of the organisation
+  kind: news
 - date: '2025-05-22'
   title: Hosted the first Conecta Latinas international gathering in Recife, drawing
     ~200 leaders from 20+ countries
@@ -54,6 +55,7 @@ events:
   end_date: '2025-05-25'
   notable: true
   notable_reason: First edition of the flagship Conecta Latinas gathering
+  kind: gathering
   type: conference
 activity:
   dod:

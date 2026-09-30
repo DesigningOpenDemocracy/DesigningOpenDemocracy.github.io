@@ -1,0 +1,51 @@
+name: Suggest news or an event
+description: Something an organisation in the Democracy Landscape has done, or an upcoming event worth attending.
+title: "[Suggestion] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks! An editor turns suggestions into a sourced entry on the organisation's Landscape page, which is how they reach [News](https://www.designingopendemocracy.com/news/) and the [Calendar](https://www.designingopendemocracy.com/calendar/). You don't need to know the site's format; a link to the source is what matters most.
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What is it?
+      options:
+        - "News: something that happened (a report or book, a launch, an appointment, a ruling, a result)"
+        - "Event: something people can attend (a conference, forum, meetup, webinar)"
+    validations:
+      required: true
+  - type: input
+    id: org
+    attributes:
+      label: Organisation
+      description: Which organisation is it about? It doesn't have to be in the Landscape yet.
+      placeholder: e.g. newDemocracy Foundation
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened, or what's on?
+      description: One or two sentences is plenty.
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Source link
+      description: The organisation's own page for it if possible (an announcement, the report, the event page), not a social post about it.
+      placeholder: https://
+    validations:
+      required: true
+  - type: input
+    id: date
+    attributes:
+      label: Date
+      description: When it happened or when it's on.
+      placeholder: YYYY-MM-DD
+  - type: textarea
+    id: quote
+    attributes:
+      label: A sentence from the source (optional)
+      description: Copy a sentence from the page that says what happened, word for word. It saves an editor finding one.

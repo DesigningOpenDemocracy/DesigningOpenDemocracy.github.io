@@ -32,6 +32,7 @@ events:
   url_checked: '2026-08-12'
   notable: true
   notable_reason: Platform/product launch
+  kind: news
 - date: '2026-02-06'
   title: Published an Epstein Files investigation into Jeffrey Epstein's advisory
     role in Mongolia
@@ -46,6 +47,7 @@ events:
   url_checked: '2026-08-29'
   notable: true
   notable_reason: Original investigative journalism naming a former PM
+  kind: news
   type: publication
 activity:
   dod:

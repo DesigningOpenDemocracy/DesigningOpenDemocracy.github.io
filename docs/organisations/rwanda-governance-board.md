@@ -41,6 +41,7 @@ events:
   url_checked: '2026-08-12'
   notable: true
   notable_reason: Merger of organisations
+  kind: news
 - date: '2016-12-16'
   title: Re-established by law N°56/2016, confirming its current legal mandate
   url: https://www.rgb.rw/1/about-rgb
@@ -56,6 +57,7 @@ events:
   url_checked: '2026-08-29'
   notable: medium
   notable_reason: Current legal mandate confirmed by statute
+  kind: news
   type: other
 activity:
   manual:

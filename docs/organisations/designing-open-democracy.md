@@ -40,6 +40,7 @@ events:
   url_checked: '2026-08-12'
   notable: true
   notable_reason: Founding meetup
+  kind: gathering
 - date: '2018-02-10'
   title: Published its "Proposed (Initial) Strategy" outlining the group's founding
     direction
@@ -50,6 +51,7 @@ events:
   proof_level: high
   url_checked: '2026-08-12'
   notable: false
+  kind: news
 - date: '2026-09-15'
   title: 'Co-hosting "International Day of Democracy: democracy beyond the ballot
     box" panel with 888 Co-operative Causeway'
@@ -68,6 +70,7 @@ events:
   end_time: '20:00'
   notable: true
   notable_reason: Public panel co-hosted for International Day of Democracy
+  kind: gathering
 activity:
   manual:
     checked: 2026-08-07

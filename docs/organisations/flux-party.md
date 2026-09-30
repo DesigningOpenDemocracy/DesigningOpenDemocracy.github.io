@@ -21,6 +21,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Founding of the organisation
+  kind: news
 activity:
   dod:
     date: 2026-08-21

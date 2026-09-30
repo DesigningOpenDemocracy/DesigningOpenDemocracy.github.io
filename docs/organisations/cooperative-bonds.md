@@ -38,6 +38,7 @@ events:
   url_checked: '2026-08-12'
   notable: true
   notable_reason: Founding of the organisation
+  kind: news
 - date: '2026-07-30'
   title: Published a case study on the Castlemaine Hub's $2 million community debenture
     campaign
@@ -54,6 +55,7 @@ events:
   url_checked: '2026-08-29'
   notable: medium
   notable_reason: Case study on a notable community-ownership financing model
+  kind: news
   type: milestone
 activity:
   dod:

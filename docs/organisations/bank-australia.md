@@ -33,6 +33,7 @@ events:
   url_checked: '2026-09-26'
   notable: true
   notable_reason: Founding of the organisation
+  kind: news
 - date: '2015-01-01'
   title: Renamed Bank Australia, after trading as Bankmecu — Australia's first customer-owned
     bank — from 2011
@@ -46,6 +47,7 @@ events:
   url_checked: '2026-09-26'
   notable: medium
   notable_reason: Renamed to its current identity as a customer-owned bank
+  kind: news
 activity:
   dod:
     checked: '2026-09-26'

@@ -35,6 +35,7 @@ events:
   url_checked: '2026-08-14'
   notable: true
   notable_reason: Death of a founding/senior leader
+  kind: news
 - date: '2011-01-01'
   title: First three PRSA members admitted as Honorary Life Members
   url: https://www.prsa.org.au/qn/2011a_.html
@@ -45,6 +46,7 @@ events:
   proof_level: high
   url_checked: '2026-08-14'
   notable: false
+  kind: news
 - date: '2017-08-27'
   title: Death of long-serving National President Bogey Musidlak (President since
     1994)
@@ -56,6 +58,7 @@ events:
   url_checked: '2026-08-14'
   notable: true
   notable_reason: Death of a founding/senior leader
+  kind: news
 - date: '2026-11-12'
   title: 2026 AGM — vote on 17-motion package to rename to Australian Electoral Reform
     Society and broaden remit beyond STV
@@ -64,6 +67,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: 'Structural vote: org rename + remit change'
+  kind: gathering
   type: meeting
   proof_warning: true
 activity:

@@ -31,6 +31,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Founding of the organisation
+  kind: news
 - date: '2026-07-01'
   title: Hosted the West Africa CivicTech Conference 2026, convening 400+ participants
     from across the region
@@ -47,6 +48,7 @@ events:
   url_checked: '2026-08-29'
   notable: true
   notable_reason: Flagship regional civic-tech conference
+  kind: gathering
   type: conference
   location: Lagos, Nigeria
 activity:

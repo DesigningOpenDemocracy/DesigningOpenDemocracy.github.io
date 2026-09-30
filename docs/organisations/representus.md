@@ -32,6 +32,7 @@ events:
   url_checked: '2026-08-21'
   notable: true
   notable_reason: Founding of the organisation
+  kind: news
 - date: '2016-11-08'
   title: Maine Question 5 established ranked-choice voting for all statewide elections
   url: https://en.wikipedia.org/wiki/RepresentUs
@@ -41,6 +42,7 @@ events:
   url_checked: '2026-08-21'
   notable: true
   notable_reason: Founding of the organisation
+  kind: news
 activity:
   dod:
     date: 2026-09-20

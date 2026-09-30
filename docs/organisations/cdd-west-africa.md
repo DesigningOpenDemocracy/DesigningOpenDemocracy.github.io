@@ -36,6 +36,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Founding of the organisation
+  kind: news
 - date: '1999-01-01'
   title: Registered in Lagos, Nigeria
   url: https://www.cddwestafrica.org/about-us/
@@ -45,6 +46,7 @@ events:
   url_checked: '2026-08-28'
   notable: medium
   notable_reason: Formal registration in Nigeria, its long-term operating base
+  kind: news
   type: milestone
 activity:
   dod:

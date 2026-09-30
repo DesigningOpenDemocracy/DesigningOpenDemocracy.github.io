@@ -33,6 +33,7 @@ events:
   url_checked: '2026-08-21'
   notable: true
   notable_reason: Platform/product launch
+  kind: news
   type: launch
 - date: '2019-01-01'
   title: CONSUL DEMOCRACY Foundation established in the Netherlands to steward the
@@ -41,6 +42,7 @@ events:
   quote: The Foundation was founded in 2019 in the Netherlands and has two main objectives
   proof_level: high
   url_checked: '2026-08-21'
+  kind: news
 - date: '2026-09-15'
   title: ConsulCon 2026 — three-day gathering on digital democracy and open-source
     civic tech, Munich
@@ -52,6 +54,7 @@ events:
   end_date: '2026-09-17'
   notable: true
   notable_reason: Flagship conference/summit
+  kind: gathering
   type: conference
   location: Munich, Germany
   country: DE

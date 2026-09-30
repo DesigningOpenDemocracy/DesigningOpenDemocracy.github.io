@@ -32,6 +32,7 @@ events:
   url_checked: '2026-09-16'
   notable: true
   notable_reason: Major publication
+  kind: news
 - date: '2026-04-07'
   title: Democracy Index 2025 finds the global democratic recession has stabilised
     after eight years of decline
@@ -42,6 +43,7 @@ events:
   url_checked: '2026-09-16'
   notable: medium
   notable_reason: Flagship annual Democracy Index release
+  kind: news
 activity:
   dod:
     checked: '2026-09-16'

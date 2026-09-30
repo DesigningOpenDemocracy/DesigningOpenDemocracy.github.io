@@ -34,6 +34,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Founding of the organisation
+  kind: news
 - date: '2010-02-01'
   title: Launched Shadow Parliament, importing real Icelandic Parliament proposals
     for citizens to vote on
@@ -42,6 +43,7 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: false
+  kind: news
 - date: '2010-05-25'
   title: Launched Better Reykjavík (originally "Shadow City"); nearly 3,000 users
     and 400+ ideas within three days
@@ -51,6 +53,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Platform/product launch
+  kind: news
 activity:
   manual:
     checked: 2026-06-07

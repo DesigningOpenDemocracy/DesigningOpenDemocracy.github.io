@@ -32,6 +32,7 @@ events:
   url_checked: '2026-08-12'
   notable: true
   notable_reason: First citizens' jury delivered
+  kind: news
 - date: '2015-01-01'
   title: City of Melbourne Urban Forest Strategy wins IAP2 Australasian Environment
     Project of the Year
@@ -39,6 +40,7 @@ events:
   proof_level: medium
   url_checked: '2026-08-10'
   notable: false
+  kind: news
   proof_warning: true
 - date: '2017-01-01'
   title: Founded by Kimbra White, Nicole Hunter and Keith Greaves
@@ -48,6 +50,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Founding of the organisation
+  kind: news
 - date: '2018-01-01'
   title: Critical Thinking Research with Dr Lyn Carson wins IAP2 Core Values Award
     for Research
@@ -56,6 +59,7 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: false
+  kind: news
 - date: '2018-01-01'
   title: Contributes to Democracy Beyond Elections handbook (newDemocracy Foundation
     + UN Democracy Fund)
@@ -63,6 +67,7 @@ events:
   proof_level: medium
   url_checked: '2026-08-10'
   notable: false
+  kind: news
   proof_warning: true
 - date: '2020-01-01'
   title: Pioneers Australia's first standing citizens' panels (Mornington Peninsula
@@ -71,6 +76,7 @@ events:
   proof_level: medium
   url_checked: '2026-08-10'
   notable: false
+  kind: news
   proof_warning: true
 - date: '2022-01-01'
   title: Publishes Facilitating Deliberation — A Practical Guide, drawing on 39 deliberative
@@ -82,12 +88,14 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Major publication
+  kind: news
 - date: '2023-01-01'
   title: Water Works Across 2021-23 named IAP2 Awards Finalist
   source: IAP2 Australasia, Core Values Awards finalists 2023 — mosaiclab.com.au/projects
   proof_level: low
   url_checked: '2026-08-10'
   notable: false
+  kind: news
   proof_warning: true
 - date: '2025-01-01'
   title: Facilitating Deliberation made free to download globally; first use of AI
@@ -96,6 +104,7 @@ events:
   proof_level: medium
   url_checked: '2026-08-10'
   notable: false
+  kind: news
   proof_warning: true
 activity:
   manual:
