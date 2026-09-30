@@ -643,6 +643,13 @@
     "source": "https://chinademocrats.org/favicon.ico",
     "title": "Institute for China's Democratic Transition (ICDT)"
   },
+  "informal-urbanism-research-hub": {
+    "license": "Fair use",
+    "note": "no standalone logo file on the site; the white-on-dark \"infur-\" wordmark was cropped from the header of the hub's own seminar poster (and padded to a square). The full \"Informal Urbanism Research Hub infur-\" lockup from the same header is saved as informal-urbanism-research-hub-banner.png and used as banner:",
+    "path": "informal-urbanism-research-hub.png",
+    "source": "https://infur.msd.unimelb.edu.au/files/2026/09/KM_Poster.jpg",
+    "title": "Informal Urbanism Research Hub (InfUr-)"
+  },
   "instituto-update": {
     "license": "Fair use",
     "note": "site asset, auto-detected img-logo",

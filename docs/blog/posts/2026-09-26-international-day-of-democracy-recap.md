@@ -55,19 +55,9 @@ Nicole is co-founder of [MosaicLab](../../organisations/mosaiclab.md). She led t
 
 ### Anitra Nelson
 
-Anitra is an activist scholar with the University of Melbourne's [Informal Urbanism Research Hub](https://infur.msd.unimelb.edu.au/). She writes on degrowth, housing and [post-money economies](https://anitranelson.info/beyond-money/). With Vincent Liegey she co-edited the [*Routledge Handbook of Degrowth*](https://anitranelson.info/routledge-handbook-of-degrowth/) (2025). Her other work is at [anitranelson.info](https://anitranelson.info/).
+Anitra is an activist scholar with the University of Melbourne's [Informal Urbanism Research Hub](../../organisations/informal-urbanism-research-hub.md). She writes on degrowth, housing and [post-money economies](https://anitranelson.info/beyond-money/). With Vincent Liegey she co-edited the [*Routledge Handbook of Degrowth*](https://anitranelson.info/routledge-handbook-of-degrowth/) (2025). Her other work is at [anitranelson.info](https://anitranelson.info/).
 
-<div class="org-card">
-<div class="org-card-body">
-<div class="org-card-eyebrow">Not in the Democracy Landscape</div>
-<div class="org-card-title"><a href="https://infur.msd.unimelb.edu.au/" target="_blank" rel="noopener">Informal Urbanism Research Hub</a></div>
-<div class="org-card-facts">Research hub · University of Melbourne</div>
-<div class="org-card-summary">A group of researchers at the Melbourne School of Design studying how urban informality — self-organised, not necessarily illegal, activity outside formally authorised city planning — intersects with the formal systems that plan, design and govern cities. Anitra is one of its scholars.</div>
-<div class="org-card-links">
-<a href="https://infur.msd.unimelb.edu.au/" target="_blank" rel="noopener">Website ↗</a>
-</div>
-</div>
-</div>
+<!-- org-card: informal-urbanism-research-hub -->
 
 ### Godfrey Moase
 
