@@ -38,6 +38,7 @@ events:
   url_checked: '2026-08-29'
   notable: true
   notable_reason: Founding of the organisation
+  kind: news
 - date: '2025-11-29'
   title: Held its founding conference in Liverpool, using sortition to select delegates
   url: https://leftfootforward.org/2025/11/everything-you-need-to-know-about-your-partys-founding-conference/
@@ -49,6 +50,7 @@ events:
   end_date: '2025-11-30'
   notable: true
   notable_reason: Founding conference using novel sortition-based delegate selection
+  kind: gathering
   type: conference
 activity:
   dod:

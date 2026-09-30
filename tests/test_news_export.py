@@ -43,8 +43,13 @@ def org(title, country="AU", concepts=None, events=None, **extra):
     return m
 
 
-def ev(days_ago, title="Something happened", notable=True, url=None, **extra):
-    e = {"date": TODAY - timedelta(days=days_ago), "title": title, "notable": notable}
+def ev(days_ago, title="Something happened", notable=True, url=None, kind="launch", **extra):
+    # "launch" by default: the one kind that is both announced ahead and
+    # news once it's happened, so the tests below that aren't about kind
+    # exercise the rest of the selection rule on its own. KindTests pins
+    # what each kind does.
+    e = {"date": TODAY - timedelta(days=days_ago), "title": title, "notable": notable,
+         "kind": kind}
     if url is not None:
         e["url"] = url
     e.update(extra)
@@ -336,12 +341,48 @@ class ArchiveTests(unittest.TestCase):
         events = [ev(2, "recent major", True), ev(5, "untiered", False),
                   ev(4000, "long ago", "medium"), ev(-3, "upcoming", True)]
         items = ne.collect_news([("a", org("A", events=events))], TODAY,
-                                window_days=None, notable_only=False, announce_days={})
+                                window_days=None, notable_only=False, announce_days={},
+                                kinds=None)
         self.assertEqual([i["title"] for i in items], ["recent major", "untiered", "long ago"])
 
     def test_news_itself_still_skips_untiered(self):
         items = ne.collect_news([("a", org("A", events=[ev(5, "untiered", False)]))], TODAY)
         self.assertEqual(items, [])
+
+
+class KindTests(unittest.TestCase):
+    """kind: keeps News and the calendar apart. A gathering (something to
+    attend) is the calendar's: News carries only a major one's heads-up,
+    and drops it once it's over. A news item (something that happened) is
+    never announced ahead. A launch is both, in turn."""
+
+    def titles(self, events, **kw):
+        return [i["title"] for i in ne.collect_news([("a", org("A", events=events))], TODAY, **kw)]
+
+    def test_past_gatherings_are_not_news(self):
+        self.assertEqual(
+            self.titles([ev(3, "conference", kind="gathering"), ev(3, "handbook", kind="news"),
+                         ev(3, "report launch", kind="launch")]),
+            ["handbook", "report launch"])
+
+    def test_major_gathering_keeps_its_heads_up_until_it_ends(self):
+        running = ev(1, "running", kind="gathering", end_date=TODAY + timedelta(days=1))
+        self.assertEqual(self.titles([ev(-10, "summit", kind="gathering"), running]),
+                         ["running", "summit"])
+
+    def test_news_is_not_announced_ahead(self):
+        self.assertEqual(self.titles([ev(-10, "report due", kind="news")]), [])
+
+    def test_missing_kind_reads_as_a_gathering(self):
+        e = ev(3, "untagged")
+        del e["kind"]
+        self.assertEqual(self.titles([e]), [])
+
+    def test_archive_keeps_every_kind(self):
+        events = [ev(3, "conference", kind="gathering"), ev(4, "handbook", kind="news")]
+        self.assertEqual(self.titles(events, window_days=None, notable_only=False,
+                                     announce_days={}, kinds=None),
+                         ["conference", "handbook"])
 
 
 class ArchiveTabTests(unittest.TestCase):

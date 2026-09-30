@@ -35,6 +35,7 @@ events:
   end_date: '2026-08-13'
   notable: true
   notable_reason: Flagship conference/summit
+  kind: gathering
   type: conference
   location: Arendal, Norway
   country: 'NO'
@@ -50,6 +51,7 @@ events:
   url_checked: '2026-08-12'
   notable: true
   notable_reason: Founding of the organisation
+  kind: news
 activity:
   dod:
     date: 2026-09-19

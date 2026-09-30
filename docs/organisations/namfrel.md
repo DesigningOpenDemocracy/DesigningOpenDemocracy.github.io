@@ -26,6 +26,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Founding of the organisation
+  kind: news
 - date: '1986-02-07'
   title: Mobilised 500,000 volunteers for Operation Quick Count — demonstrated Marcos
     lost the snap election, triggering the People Power uprising
@@ -35,6 +36,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Mass protest/mobilisation
+  kind: news
 activity:
   dod:
     date: 2026-09-21

@@ -30,6 +30,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Platform/product launch
+  kind: news
 - date: '2019-01-01'
   title: Australian party deregistered before the 2019 federal election, without electing
     any senators
@@ -40,6 +41,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Org deregistered / wound up
+  kind: news
 last_checked: '2026-08-02'
 contributors:
 - BrianKhuu

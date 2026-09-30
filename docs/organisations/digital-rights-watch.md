@@ -44,6 +44,7 @@ events:
   proof_level: high
   notable: true
   notable_reason: Founding of the organisation
+  kind: news
 - date: '2018-10-10'
   title: Lodged a formal submission opposing the Assistance and Access Bill 2018 (the
     encryption "backdoor" legislation)
@@ -52,6 +53,7 @@ events:
     and Other Legislation Amendment (Assistance and Access) Bill 2018, published on
     the Department's own site.
   proof_level: medium
+  kind: news
 - date: '2018-05-14'
   title: Published the inaugural "State of Digital Rights" report assessing Australia's
     digital rights landscape
@@ -60,6 +62,7 @@ events:
     the many ways Australians’ rights are being impacted by the activities of private
     companies and governments in the online world.
   proof_level: high
+  kind: news
 - date: '2018-10-02'
   title: Co-founded the "Alliance for a Safe and Secure Internet" coalition opposing
     the Assistance and Access encryption bill
@@ -70,6 +73,7 @@ events:
     on 6 December 2018 — the coalition's stated goal was to prevent this, not achieved.
   proof_level: high
   end_date: '2018-12-06'
+  kind: news
 activity:
   dod:
     date: 2026-09-19

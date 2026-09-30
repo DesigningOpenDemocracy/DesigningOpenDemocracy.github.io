@@ -33,6 +33,7 @@ events:
   url_checked: '2026-08-12'
   notable: true
   notable_reason: Founding of the organisation
+  kind: news
 - date: '2026-07-23'
   title: Held a Media Briefing and Civil Society Workshop with International IDEA
     on its Mixed-Member Proportional electoral system simulation
@@ -49,6 +50,7 @@ events:
   url_checked: '2026-08-29'
   notable: medium
   notable_reason: Flagship electoral-reform research event with an international partner
+  kind: gathering
   type: conference
 activity:
   dod:

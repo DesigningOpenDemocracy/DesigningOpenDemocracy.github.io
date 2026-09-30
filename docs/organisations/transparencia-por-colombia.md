@@ -34,6 +34,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Founding of the organisation
+  kind: news
 - date: '2025-03-20'
   title: Published its fourth monitoring report on the UNGRD corruption scandal
   url: https://transparenciacolombia.org.co/algo-tiene-que-pasar-cuarto-informe-sobre-el-escandalo-de-la-ungrd-avances-y-retos/
@@ -50,6 +51,7 @@ events:
   url_checked: '2026-08-29'
   notable: medium
   notable_reason: Ongoing accountability monitoring of a major corruption scandal
+  kind: news
   type: publication
 activity:
   dod:

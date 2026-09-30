@@ -37,6 +37,7 @@ events:
   url_checked: '2026-08-25'
   notable: true
   notable_reason: Founding of the organisation
+  kind: news
 - date: '2022-01-01'
   title: Published gazetted results for every seat in Kenya's 2022 general election,
     linked to the source notice
@@ -48,6 +49,7 @@ events:
     and county assembly seats.
   proof_level: high
   url_checked: '2026-08-25'
+  kind: news
 - date: '2024-01-01'
   title: Published the 2024 Annual Parliamentary Scorecard, its second assessment
     of Kenya's 13th Parliament
@@ -56,6 +58,7 @@ events:
     the 13th Parliament of Kenya.
   proof_level: high
   url_checked: '2026-08-25'
+  kind: news
 activity:
   dod:
     date: 2026-09-20

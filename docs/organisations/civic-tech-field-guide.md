@@ -32,6 +32,7 @@ events:
     and Erin Simpson, then at Civic Hall Labs.
   proof_level: high
   url_checked: '2026-08-17'
+  kind: news
 - date: '2018-01-01'
   title: Developed into a full directory under Civic Hall
   url: https://civictech.guide/about
@@ -40,6 +41,7 @@ events:
     Foundation.
   proof_level: high
   url_checked: '2026-08-17'
+  kind: news
 - date: '2022-01-01'
   title: Revamped with National Endowment for Democracy support
   url: https://civictech.guide/about
@@ -48,6 +50,7 @@ events:
     fighting for democracy all over the world.
   proof_level: high
   url_checked: '2026-08-17'
+  kind: news
 activity:
   manual:
     checked: 2026-08-07

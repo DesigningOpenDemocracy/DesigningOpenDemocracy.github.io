@@ -34,6 +34,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Founding of the organisation
+  kind: news
 - date: '2025-11-12'
   title: Delivered election observation training for Pan-African Parliament members
     in Pretoria
@@ -52,6 +53,7 @@ events:
   end_date: '2025-11-14'
   notable: medium
   notable_reason: Continental capacity-building training for AU election observers
+  kind: gathering
   type: training
 activity:
   dod:

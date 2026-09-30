@@ -31,6 +31,7 @@ events:
     Future Institute.
   proof_level: high
   url_checked: '2026-08-17'
+  kind: news
 - date: '2010-01-01'
   title: CivicsNZ research project begins with a report on Māori representation in
     Parliament
@@ -40,12 +41,14 @@ events:
     Strategy (2010).'
   proof_level: high
   url_checked: '2026-08-17'
+  kind: news
 - date: '2012-01-01'
   title: Renamed the McGuinness Institute
   url: https://www.mcguinnessinstitute.org/about-us/history/
   quote: Our 2012 name change was for several reasons.
   proof_level: high
   url_checked: '2026-08-17'
+  kind: news
 - date: '2026-09-30'
   title: 'Discussion paper launch: "After the Election" — conversation with Wendy
     McGuinness on the architecture of the 55th Government of New Zealand'
@@ -57,6 +60,7 @@ events:
   proof_level: high
   url_checked: '2026-09-17'
   notable: false
+  kind: launch
   type: launch
   location: Wellington, New Zealand
 activity:

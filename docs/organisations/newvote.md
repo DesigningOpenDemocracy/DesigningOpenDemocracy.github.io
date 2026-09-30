@@ -31,12 +31,14 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Founding of the organisation
+  kind: news
 - date: '2017-11-01'
   title: Hosted the inaugural Australian Digital Democracy Forum in Melbourne
   url: https://newvote.org/the-institute
   proof_level: medium
   url_checked: '2026-08-10'
   notable: false
+  kind: gathering
   proof_warning: true
 - date: '2019-07-24'
   title: NewVote platform publicly launched
@@ -47,6 +49,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Platform/product launch
+  kind: news
 activity:
   manual:
     checked: 2026-06-07

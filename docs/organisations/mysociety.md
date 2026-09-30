@@ -34,6 +34,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Founding of the organisation
+  kind: news
 - date: '2004-06-01'
   title: Launched TheyWorkForYou — making parliamentary activity searchable and accessible
     to UK citizens
@@ -44,6 +45,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Platform/product launch
+  kind: news
 - date: '2005-02-01'
   title: Launched WriteToThem — enabling citizens to contact their elected representatives
     online
@@ -54,6 +56,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Platform/product launch
+  kind: news
 - date: '2026-09-28'
   title: Hosting "Delivering ATI in practice" webinar for International Right to Know
     Day
@@ -65,6 +68,7 @@ events:
   proof_level: medium
   url_checked: '2026-09-20'
   notable: false
+  kind: gathering
 - date: '2027-03-11'
   title: Co-organising "TICTeC Presents Digital Democracy Edinburgh" with the Scottish
     Government and University of Edinburgh
@@ -81,6 +85,7 @@ events:
   end_date: '2027-03-12'
   notable: true
   notable_reason: mySociety's flagship TICTeC civic-tech conference
+  kind: gathering
 activity:
   dod:
     date: 2026-09-20

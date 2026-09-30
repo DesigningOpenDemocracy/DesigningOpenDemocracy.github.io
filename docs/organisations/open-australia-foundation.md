@@ -33,6 +33,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Founding of the organisation
+  kind: news
 - date: '2009-12-21'
   title: Launched PlanningAlerts
   url: https://oaf.org.au/2009/12/21/launching-our-new-website-planning-alerts/
@@ -40,6 +41,7 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: false
+  kind: news
 - date: '2014-10-21'
   title: Launched They Vote For You, tracking Australian parliamentary voting records
   url: https://oaf.org.au/2014/10/21/they-vote-for-you/
@@ -49,6 +51,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Platform/product launch
+  kind: news
 activity:
   dod:
     date: 2026-09-26

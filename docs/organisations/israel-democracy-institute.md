@@ -34,6 +34,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Founding of the organisation
+  kind: news
 - date: '2003-01-01'
   title: Published the first Israeli Democracy Index — an annual survey tracking democratic
     attitudes in Israel
@@ -47,6 +48,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Major publication
+  kind: news
 activity:
   manual:
     checked: 2026-06-07

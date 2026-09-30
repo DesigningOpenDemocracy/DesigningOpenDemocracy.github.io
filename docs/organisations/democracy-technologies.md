@@ -33,6 +33,7 @@ events:
     is September 2022.
   proof_level: high
   url_checked: '2026-08-17'
+  kind: news
 - date: '2023-05-11'
   title: Co-hosts Europe's first Democracy Technology Convention in Warsaw
   url: https://democracy-technologies.org/ai-data/democracy-technology-convention-panelists-2023/
@@ -41,6 +42,7 @@ events:
     Convention in Warsaw."'
   proof_level: medium
   url_checked: '2026-08-17'
+  kind: gathering
 - date: '2024-03-17'
   title: Publishes "Democracy Technologies in Europe" report
   url: https://democracy-technologies.org/reports/
@@ -48,6 +50,7 @@ events:
     March 2024 on the site.
   proof_level: medium
   url_checked: '2026-08-17'
+  kind: news
 activity:
   manual:
     checked: 2026-06-07

@@ -35,6 +35,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Founding of the organisation
+  kind: news
 - date: '2024-01-01'
   title: Won the landmark "Reasonableness Case," striking down the government's Basic
     Law amendment eliminating judicial review of ministerial decisions
@@ -51,6 +52,7 @@ events:
   url_checked: '2026-08-29'
   notable: true
   notable_reason: First-ever Israeli Supreme Court invalidation of a Basic Law amendment
+  kind: news
   type: other
 activity:
   dod:

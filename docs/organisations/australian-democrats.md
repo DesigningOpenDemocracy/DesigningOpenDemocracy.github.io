@@ -32,6 +32,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Merger of organisations
+  kind: news
 - date: '1980-10-18'
   title: First elected to the Senate, winning balance of power — five Senators elected
     on a 9.3% vote
@@ -41,6 +42,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Election result
+  kind: news
 - date: '1990-03-24'
   title: Peak electoral result — 12.6% Senate vote in the 1990 federal election
   url: https://en.wikipedia.org/wiki/Australian_Democrats
@@ -48,6 +50,7 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: false
+  kind: news
 activity:
   dod:
     date: 2026-09-26

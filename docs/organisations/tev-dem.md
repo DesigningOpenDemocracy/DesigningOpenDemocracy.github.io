@@ -26,6 +26,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Founding of the organisation
+  kind: news
 - date: '2016-03-17'
   title: Announced the establishment of the Democratic Federal System of Rojava/Northern
     Syria
@@ -41,6 +42,7 @@ events:
   url_checked: '2026-08-29'
   notable: true
   notable_reason: Formal declaration establishing the federal governance system
+  kind: news
   type: other
 activity:
   manual:

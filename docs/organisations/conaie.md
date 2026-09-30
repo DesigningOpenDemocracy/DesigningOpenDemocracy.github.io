@@ -31,6 +31,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Founding of the organisation
+  kind: news
 - date: '2025-07-20'
   title: Marlon Vargas elected president, defeating outgoing president Leonidas Iza
   url: https://www.elcomercio.com/actualidad/politica/marlon-vargas-gana-la-presidencia-de-la-conaie-tras-imponerse-a-leonidas-iza/
@@ -45,6 +46,7 @@ events:
   url_checked: '2026-08-29'
   notable: true
   notable_reason: Contested leadership transition at the confederation's congress
+  kind: news
   type: milestone
 activity:
   dod:

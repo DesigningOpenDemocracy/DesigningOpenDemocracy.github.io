@@ -25,6 +25,7 @@ events:
   url_checked: '2026-08-20'
   notable: true
   notable_reason: Founding of the organisation
+  kind: news
 - date: '2017-11-24'
   title: Won the Cyber Security Award at the Australian Technologies Competition
   url: https://techboard.com.au/company-profile/xo-1/
@@ -32,6 +33,7 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: false
+  kind: news
 - date: '2018-01-01'
   title: Signed a deal with Silicon Valley startup Swarm Fund to use SecureVote's
     Liquid Democracy Voting Module
@@ -42,6 +44,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Major partnership deal with Silicon Valley startup
+  kind: news
 activity:
   dod:
     date: 2026-08-21

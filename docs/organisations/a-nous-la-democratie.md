@@ -42,6 +42,7 @@ events:
     registry records the movement's creation on 3 November 2016.
   proof_level: high
   url_checked: '2026-08-14'
+  kind: news
 - date: '2019-05-31'
   title: Published its platform for the 2020 municipal elections
   url: https://anouslademocratie.fr/municipales-2020/
@@ -53,6 +54,7 @@ events:
     and stronger neighbourhood councils.
   proof_level: high
   url_checked: '2026-08-14'
+  kind: news
 activity:
   manual:
     checked: 2026-06-08

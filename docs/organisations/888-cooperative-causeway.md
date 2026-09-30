@@ -37,6 +37,7 @@ events:
   url_checked: '2026-08-12'
   notable: true
   notable_reason: Founding of the organisation
+  kind: news
 - date: '2026-09-15'
   title: 'Co-hosting "International Day of Democracy: democracy beyond the ballot
     box" panel with Designing Open Democracy'
@@ -53,6 +54,7 @@ events:
   end_time: '20:00'
   notable: true
   notable_reason: Public panel co-hosted for International Day of Democracy
+  kind: gathering
 activity:
   manual:
     checked: 2026-06-07

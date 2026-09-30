@@ -31,6 +31,7 @@ events:
   url_checked: '2026-08-20'
   notable: true
   notable_reason: Founding of the organisation
+  kind: news
 - date: '2004-11-21'
   title: Deployed 1,000+ observers for Ukraine's presidential election, documenting
   url: https://en.wikipedia.org/wiki/PORA
@@ -43,6 +44,7 @@ events:
   url_checked: '2026-08-20'
   notable: true
   notable_reason: Large-scale election observation deployment
+  kind: news
 activity:
   dod:
     date: 2026-09-28

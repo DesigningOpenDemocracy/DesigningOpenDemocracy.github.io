@@ -34,6 +34,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Founding of the organisation
+  kind: news
 - date: '2021-04-28'
   title: Voluntarily deregistered as an independent AEC party, later merging into
     the Fusion Party's federated structure
@@ -47,6 +48,7 @@ events:
   url_checked: '2026-08-29'
   notable: true
   notable_reason: Structural change in registration status
+  kind: news
   type: other
 activity:
   manual:

@@ -40,6 +40,7 @@ events:
   url_checked: '2026-08-29'
   notable: true
   notable_reason: Landmark large-scale citizens' jury
+  kind: news
   type: deliberation
 - date: '2026-09-01'
   title: Building Common Ground — online training on social licence for complex public
@@ -48,6 +49,7 @@ events:
   proof_level: medium
   url_checked: '2026-08-10'
   notable: false
+  kind: gathering
   type: workshop
   location: Online
   proof_warning: true

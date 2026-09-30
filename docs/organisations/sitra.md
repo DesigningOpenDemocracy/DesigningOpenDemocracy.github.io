@@ -32,6 +32,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Founding of the organisation
+  kind: news
 - date: '2025-05-30'
   title: Proposed a European Civic Tech Hub in its statement on the European Commission's
     Democracy Shield initiative
@@ -46,6 +47,7 @@ events:
   url_checked: '2026-08-29'
   notable: medium
   notable_reason: Formal policy input to a major EU democracy initiative
+  kind: news
   type: other
 activity:
   dod:

@@ -32,6 +32,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Founding of the organisation
+  kind: news
 - date: '2022-01-01'
   title: Ran Poland's first National Citizens' Panel, on energy poverty
   url: https://ibs.org.pl/jak-walczyc-z-ubostwem-energetycznym-narada-obywatelska-o-kosztach-energii/
@@ -51,6 +52,7 @@ events:
   url_checked: '2026-08-29'
   notable: true
   notable_reason: First national citizens' panel of its kind in Poland
+  kind: news
   type: deliberation
 activity:
   dod:

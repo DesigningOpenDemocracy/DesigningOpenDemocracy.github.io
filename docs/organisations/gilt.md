@@ -33,6 +33,7 @@ events:
     Vienna."'
   proof_level: high
   url_checked: '2026-08-17'
+  kind: news
 - date: '2017-10-15'
   title: Contests the 2017 Austrian National Council election, winning 0.95% of the
     vote
@@ -43,12 +44,14 @@ events:
     seat.
   proof_level: high
   url_checked: '2026-08-17'
+  kind: news
 - date: '2020-01-01'
   title: Wins 14.23% and three seats in the Koblach municipal election
   url: https://de.wikipedia.org/wiki/Jede_Stimme_GILT
   quote: G!LT erreichte dort auf Anhieb 14,23 % der Wählerstimmen und 3 Mandate.
   proof_level: high
   url_checked: '2026-08-17'
+  kind: news
 activity:
   dod:
     date: 2026-09-28

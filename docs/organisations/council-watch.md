@@ -37,6 +37,7 @@ events:
   url_checked: '2026-08-29'
   notable: medium
   notable_reason: Self-run national survey of council trust
+  kind: news
   type: publication
 activity:
   dod:

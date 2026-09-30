@@ -34,6 +34,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Platform/product launch
+  kind: news
 - date: '2022-03-23'
   title: Published Senator Andrew Bragg's legal-action threat letter and rebutted
     it point by point, defending its independence
@@ -49,6 +50,7 @@ events:
   notable: true
   notable_reason: Defended editorial independence against a legal threat from a sitting
     Senator
+  kind: news
   type: other
 activity:
   manual:

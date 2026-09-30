@@ -36,6 +36,7 @@ events:
   url_checked: '2026-08-12'
   notable: true
   notable_reason: Founding of the organisation
+  kind: news
 - date: '2021-01-01'
   title: Climate Assemblies of Pará launched — citizen deliberation in the Amazon
     on climate policy
@@ -45,6 +46,7 @@ events:
   url_checked: '2026-08-13'
   notable: true
   notable_reason: Platform/product launch
+  kind: news
 - date: '2025-01-01'
   title: Assembleias Cidadãs de Moçambique — climate resilience assemblies launched
     in Mozambique
@@ -53,6 +55,7 @@ events:
   proof_level: high
   url_checked: '2026-08-13'
   notable: false
+  kind: news
 activity:
   dod:
     date: 2026-09-17

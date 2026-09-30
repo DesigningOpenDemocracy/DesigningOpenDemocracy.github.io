@@ -33,6 +33,7 @@ events:
     in newspapers on 19 August 1952 (per the Council's own history transcript).
   proof_level: high
   url_checked: '2026-08-17'
+  kind: news
 - date: '1959-01-01'
   title: Campaigns against the censorship and import ban on Nabokov's "Lolita"
   url: https://nzccl.org.nz/the-founding-and-early-history-of-the-new-zealand-council-for-civil-liberties/
@@ -41,6 +42,7 @@ events:
     importation and distribution.
   proof_level: high
   url_checked: '2026-08-17'
+  kind: news
 - date: '1982-01-01'
   title: Official Secrets Act 1951 repealed after 31 years of Council campaigning
   url: https://nzccl.org.nz/the-founding-and-early-history-of-the-new-zealand-council-for-civil-liberties/
@@ -48,6 +50,7 @@ events:
     Official Information Act 1982 (OIA).
   proof_level: high
   url_checked: '2026-08-17'
+  kind: news
 activity:
   dod:
     date: 2026-09-19

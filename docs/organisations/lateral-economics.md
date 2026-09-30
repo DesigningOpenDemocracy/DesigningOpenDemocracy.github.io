@@ -34,6 +34,7 @@ events:
   url_checked: '2026-08-20'
   notable: true
   notable_reason: Founding of the organisation
+  kind: news
 - date: '2011-12-01'
   title: Published the Herald/Age–Lateral Economics (HALE) Index, correcting GDP for
     wellbeing
@@ -50,6 +51,7 @@ events:
   url_checked: '2026-08-29'
   notable: true
   notable_reason: Flagship national wellbeing index
+  kind: news
   type: publication
 activity:
   manual:

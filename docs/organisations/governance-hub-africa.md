@@ -44,6 +44,7 @@ events:
   proof_level: high
   url_checked: '2026-08-21'
   notable: false
+  kind: news
 activity:
   dod:
     date: 2026-09-17

@@ -30,6 +30,7 @@ events:
     around France and the world.
   proof_level: high
   url_checked: '2026-08-14'
+  kind: news
 - date: '2022-01-27'
   title: 2022 French People's Primary conducted under Majority Judgment — the method's
     largest political election to date
@@ -44,6 +45,7 @@ events:
   url_checked: '2026-08-14'
   notable: true
   notable_reason: Landmark legal/court win
+  kind: news
 activity:
   manual:
     checked: 2026-06-08

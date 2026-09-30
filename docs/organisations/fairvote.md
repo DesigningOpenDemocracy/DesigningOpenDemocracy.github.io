@@ -31,6 +31,7 @@ events:
   url_checked: '2026-08-21'
   notable: true
   notable_reason: Flagship conference
+  kind: news
 - date: '2024-01-01'
   title: Ranked-choice voting ballot initiatives supported by FairVote passed in multiple
     cities including Washington, DC
@@ -39,6 +40,7 @@ events:
   proof_level: high
   url_checked: '2026-08-21'
   notable: false
+  kind: news
 activity:
   dod:
     date: 2026-09-19

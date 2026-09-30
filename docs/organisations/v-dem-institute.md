@@ -33,6 +33,7 @@ events:
   url_checked: '2026-09-16'
   notable: true
   notable_reason: Founding of the organisation
+  kind: news
 - date: '2026-03-17'
   title: Democracy Report 2026 finds backsliding has reached well-established Western
     democracies
@@ -44,6 +45,7 @@ events:
   url_checked: '2026-09-16'
   notable: medium
   notable_reason: Flagship annual Democracy Report release
+  kind: news
 activity:
   dod:
     checked: '2026-09-16'

@@ -39,6 +39,7 @@ events:
   url_checked: '2026-09-16'
   notable: true
   notable_reason: Founding of the organisation
+  kind: news
 - date: '2020-01-01'
   title: Reorganises into an independent global organisation after a member planning
     process spanning 28 countries
@@ -49,6 +50,7 @@ events:
   url_checked: '2026-09-16'
   notable: medium
   notable_reason: Reorganised as an independent global organisation
+  kind: news
 - date: '2026-09-21'
   title: International Observatory on Participatory Democracy Conference (OIDP 2026)
     — 25th annual, 'Hope and renewal in the face of a global crisis of democracy,'
@@ -60,6 +62,7 @@ events:
   url_checked: '2026-08-13'
   end_date: '2026-09-23'
   notable: false
+  kind: gathering
   type: conference
   location: Kraków, Poland
   country: PL
@@ -72,6 +75,7 @@ events:
   proof_level: high
   url_checked: '2026-08-13'
   notable: false
+  kind: gathering
   type: conference
   location: Athens, Greece
   country: GR
@@ -84,6 +88,7 @@ events:
   proof_level: high
   url_checked: '2026-08-13'
   notable: false
+  kind: gathering
   type: conference
   location: Athens, Greece
   country: GR
@@ -98,6 +103,7 @@ events:
   url_checked: '2026-09-19'
   end_date: '2026-10-10'
   notable: false
+  kind: gathering
   type: conference
   location: Gaborone, Botswana
   country: BW
@@ -110,6 +116,7 @@ events:
   proof_level: high
   url_checked: '2026-08-13'
   notable: false
+  kind: gathering
   type: conference
   location: Strasbourg, France
   country: FR

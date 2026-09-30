@@ -31,6 +31,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Founding of the organisation
+  kind: news
 - date: '2025-01-22'
   title: Kialo Edu won the Bett Award 2025 for Best Free Digital Content, App, or
     Open Education Resource
@@ -47,6 +48,7 @@ events:
   url_checked: '2026-08-29'
   notable: medium
   notable_reason: Notable education-technology award
+  kind: news
   type: recognition
 activity:
   manual:

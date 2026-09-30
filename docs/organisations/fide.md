@@ -31,6 +31,7 @@ events:
   url_checked: '2026-08-10'
   end_date: '2026-09-16'
   notable: false
+  kind: gathering
   type: workshop
   location: Copenhagen, Denmark
   proof_warning: true
@@ -45,6 +46,7 @@ events:
   proof_level: high
   url_checked: '2026-09-17'
   notable: false
+  kind: gathering
   type: other
 - date: '2026-10-15'
   title: Lead Facilitator Masterclass — Washington, D.C., in partnership with We Do
@@ -58,6 +60,7 @@ events:
   url_checked: '2026-09-17'
   end_date: '2026-10-17'
   notable: false
+  kind: gathering
   type: workshop
   location: Washington, D.C., United States
 - date: '2026-10-22'
@@ -71,6 +74,7 @@ events:
   url_checked: '2026-09-17'
   end_date: '2026-10-24'
   notable: false
+  kind: gathering
   type: workshop
   location: San Francisco, United States
 - date: '2026-11-18'
@@ -85,6 +89,7 @@ events:
   end_date: '2026-11-19'
   notable: true
   notable_reason: Flagship conference/summit
+  kind: gathering
   type: conference
   location: Vienna, Austria
   country: AT

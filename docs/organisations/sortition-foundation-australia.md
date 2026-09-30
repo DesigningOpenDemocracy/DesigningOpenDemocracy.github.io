@@ -35,6 +35,7 @@ events:
     to randomly selected addresses
   proof_level: high
   url_checked: '2026-08-14'
+  kind: news
 - date: '2025-02-21'
   title: AMPLIFY National Assembly on Housing — sortition selection of 120 participants
     for a Sydney deliberative weekend
@@ -50,6 +51,7 @@ events:
   url_checked: '2026-08-14'
   notable: true
   notable_reason: Ground-breaking national sortition assembly
+  kind: news
 activity:
   manual:
     checked: 2026-06-07

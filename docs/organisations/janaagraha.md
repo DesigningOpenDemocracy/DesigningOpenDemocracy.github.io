@@ -33,6 +33,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Founding of the organisation
+  kind: news
 - date: '2012-07-22'
   title: Launched I Change My City (ICMyC), a civic-participation platform for reporting
     and tracking local issues
@@ -48,6 +49,7 @@ events:
   url_checked: '2026-08-29'
   notable: true
   notable_reason: Flagship civic-tech platform launch
+  kind: news
   type: launch
 activity:
   dod:

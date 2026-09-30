@@ -32,6 +32,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Platform/product launch
+  kind: news
 - date: '2024-10-28'
   title: Hosted the Civic Tech Innovation Forum 2024 (#UnderTheHood) at the Tshimologong
     Digital Innovation Precinct
@@ -49,6 +50,7 @@ events:
   end_date: '2024-10-31'
   notable: true
   notable_reason: Flagship annual conference
+  kind: gathering
   type: conference
 activity:
   dod:

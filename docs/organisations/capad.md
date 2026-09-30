@@ -33,6 +33,7 @@ events:
   url_checked: '2026-08-13'
   notable: medium
   notable_reason: Routine annual governance meeting
+  kind: gathering
   type: meeting
   location: Online via Zoom
 - date: '2026-10-19'
@@ -46,6 +47,7 @@ events:
   url_checked: '2026-08-13'
   notable: medium
   notable_reason: One-off local public forum
+  kind: gathering
   type: meetup
   location: Irish Club, Weston ACT
 - date: '2026-11-16'
@@ -59,6 +61,7 @@ events:
   url_checked: '2026-08-13'
   notable: medium
   notable_reason: Local meetup, not a flagship event
+  kind: gathering
   type: meetup
   location: Irish Club, Weston ACT
 - date: '2026-12-06'
@@ -70,6 +73,7 @@ events:
   proof_level: high
   url_checked: '2026-08-13'
   notable: false
+  kind: gathering
   type: assembly
   location: Woden Valley Uniting Church, Curtin ACT
 - date: '2027-06-19'
@@ -83,6 +87,7 @@ events:
   end_date: '2027-06-21'
   notable: medium
   notable_reason: Multi-day festival concluding the 2026 governance series
+  kind: gathering
   type: festival
 activity:
   dod:

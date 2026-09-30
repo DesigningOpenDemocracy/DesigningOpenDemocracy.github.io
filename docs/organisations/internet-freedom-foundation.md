@@ -32,6 +32,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Founding of the organisation
+  kind: news
 - date: '2021-05-26'
   title: Successfully challenged India's IT Rules 2021 in court, securing key digital
     rights protections
@@ -41,6 +42,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Landmark legal/court win
+  kind: news
 activity:
   dod:
     date: 2026-09-28

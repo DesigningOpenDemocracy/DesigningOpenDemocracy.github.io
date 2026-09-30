@@ -33,6 +33,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Founding of the organisation
+  kind: news
 - date: '2016-02-01'
   title: Launched as Darkenu, rebranding from the OneVoice Israel/V15 get-out-the-vote
     campaign into a standing movement of Israeli moderates
@@ -49,6 +50,7 @@ events:
   url_checked: '2026-08-29'
   notable: true
   notable_reason: Relaunch as a standing movement
+  kind: news
   type: launch
 activity:
   manual:

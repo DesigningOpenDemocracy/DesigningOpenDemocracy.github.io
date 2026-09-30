@@ -31,6 +31,7 @@ events:
   quote: 'Registrar: Commercial Court of Vienna, FN 373457b, dated 30 December 2011'
   proof_level: high
   url_checked: '2026-08-17'
+  kind: news
 - date: '2012-01-01'
   title: Open prediction market platform goes online
   url: https://web.archive.org/web/20120405172546/http://www.prediki.com/
@@ -41,6 +42,7 @@ events:
     and with the GmbH registration one month prior (previous event).
   proof_level: medium
   url_checked: '2026-08-17'
+  kind: news
 - date: '2017-02-17'
   title: Publishes study showing its wahlfieber.com markets beat pollsters after Germany's
     2016 state elections
@@ -50,6 +52,7 @@ events:
     stock markets came to an excellent 2.65 percentage points.
   proof_level: high
   url_checked: '2026-08-17'
+  kind: news
 activity:
   manual:
     checked: 2026-06-07

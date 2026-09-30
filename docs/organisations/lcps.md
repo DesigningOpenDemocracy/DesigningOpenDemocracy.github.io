@@ -33,6 +33,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Founding of the organisation
+  kind: news
 - date: '2006-01-01'
   title: Contributed to drafting the Boutros electoral law
   url: https://www.lcps-lebanon.org/en/about
@@ -40,6 +41,7 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: false
+  kind: news
 activity:
   manual:
     date: 2026-03-05

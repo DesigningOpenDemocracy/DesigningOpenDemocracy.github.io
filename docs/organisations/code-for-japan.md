@@ -31,6 +31,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Founding of the organisation
+  kind: news
 - date: '2020-03-03'
   title: Built and launched Tokyo's official COVID-19 data dashboard for the metropolitan
     government in 5 days
@@ -46,6 +47,7 @@ events:
   url_checked: '2026-08-29'
   notable: true
   notable_reason: Widely-replicated flagship civic-tech product
+  kind: news
   type: launch
 activity:
   dod:

@@ -32,6 +32,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Founding of the organisation
+  kind: news
 - date: '2002-05-02'
   title: Supreme Court judgment mandating candidate disclosure of criminal, financial,
     and educational background
@@ -42,6 +43,7 @@ events:
   url_checked: '2026-08-21'
   notable: true
   notable_reason: Landmark legal/court win
+  kind: news
 - date: '2003-03-13'
   title: Second Supreme Court judgment striking down a watered-down disclosure amendment
     and restoring the original order
@@ -50,6 +52,7 @@ events:
     down the Bill as unconstitutional and restored its earlier order.
   proof_level: high
   url_checked: '2026-08-21'
+  kind: news
 - date: '2013-09-27'
   title: NOTA — Supreme Court rules for a None of the Above option on electronic voting
     machines
@@ -58,6 +61,7 @@ events:
     was inserted in the EVM machines first time during the 2014 Lok Sabha elections.
   proof_level: high
   url_checked: '2026-08-21'
+  kind: news
 activity:
   manual:
     checked: 2026-06-07

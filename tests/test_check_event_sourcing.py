@@ -45,12 +45,14 @@ ONE_EVENT = """- date: '2020-01-01'
   title: Something happened
   url: https://example.org/specific-page
   note: The site states the event happened.
+  kind: news
 """
 
 SECOND_EVENT = """- date: '2021-01-01'
   title: Something else happened
   url: https://example.org/another-page
   note: The site states the other event happened.
+  kind: news
 """
 
 
@@ -127,6 +129,7 @@ def announce_event(value, notable="true"):
   url: https://example.org/summit
   note: The site announces the summit.
   notable: {notable}
+  kind: gathering
   announce_days: {value}
 """
 
@@ -158,6 +161,32 @@ class AnnounceDaysTests(unittest.TestCase):
         out, code = self.check(announce_event(90, notable="medium"))
         self.assertEqual(code, 0)
         self.assertIn("ANNOUNCE IGNORED", out)
+
+
+class KindTests(unittest.TestCase):
+    """kind: decides calendar vs Landscape News, and the hooks read a missing
+    one as "gathering", so a publication without it would never reach News
+    and nothing would say so. Hence a hard gate here."""
+
+    run_main = ThinHistoryReportTests.run_main
+    check = AnnounceDaysTests.check
+
+    def test_every_kind_passes(self):
+        for kind in ("gathering", "news", "launch"):
+            with self.subTest(kind=kind):
+                out, code = self.check(ONE_EVENT.replace("kind: news", f"kind: {kind}"))
+                self.assertEqual(code, 0)
+                self.assertNotIn("KIND", out)
+
+    def test_missing_kind_fails_the_build(self):
+        out, code = self.check(ONE_EVENT.replace("  kind: news\n", ""))
+        self.assertEqual(code, 1)
+        self.assertIn("NO KIND", out)
+
+    def test_unknown_kind_fails_the_build(self):
+        out, code = self.check(ONE_EVENT.replace("kind: news", "kind: conference"))
+        self.assertEqual(code, 1)
+        self.assertIn("BAD KIND", out)
 
 
 if __name__ == "__main__":

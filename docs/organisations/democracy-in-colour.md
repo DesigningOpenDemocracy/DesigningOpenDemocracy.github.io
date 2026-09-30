@@ -35,6 +35,7 @@ events:
   url_checked: '2026-08-22'
   notable: true
   notable_reason: Platform/product launch
+  kind: news
 - date: '2026-07-29'
   title: Welcomed the Federal Court's dismissal of Pauline Hanson's appeal against
     a racial discrimination finding
@@ -50,6 +51,7 @@ events:
   url_checked: '2026-08-29'
   notable: medium
   notable_reason: Advocacy response to a significant court ruling
+  kind: news
   type: other
 activity:
   dod:

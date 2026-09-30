@@ -38,6 +38,7 @@ events:
     Ethelo Democracy.
   proof_level: high
   url_checked: '2026-08-14'
+  kind: news
 - date: '2019-05-15'
   title: Acquired Citizen Budget, Canada's leading municipal budget consultation tool
   url: https://opennorth.ca/resources/citizen-budget/
@@ -48,6 +49,7 @@ events:
     with its participatory decision-making platform.
   proof_level: high
   url_checked: '2026-08-14'
+  kind: news
 - date: '2025-03-01'
   title: Selected to power California's Engaged California digital democracy initiative
   url: https://ethelo.com/case-study/engaged-california-program/
@@ -59,6 +61,7 @@ events:
     ran from March to May 2025.
   proof_level: high
   url_checked: '2026-08-14'
+  kind: news
 activity:
   dod:
     date: 2026-09-28

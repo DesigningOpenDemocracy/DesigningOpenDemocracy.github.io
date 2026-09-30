@@ -33,6 +33,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Founding of the NZ chapter
+  kind: news
 - date: '2001-01-01'
   title: Became an incorporated society and registered charity
   url: https://www.transparency.org.nz/our-story
@@ -40,6 +41,7 @@ events:
   proof_level: high
   url_checked: '2026-08-10'
   notable: false
+  kind: news
 - date: '2026-09-28'
   title: 'Report launch and online talanoa: "Who has access? Environmental information
     in the Pacific" (Fiji, Solomon Islands)'
@@ -52,6 +54,7 @@ events:
   url_checked: '2026-09-19'
   notable: medium
   notable_reason: Research launch marking International Access to Information Day
+  kind: launch
   type: launch
   location: Online (Fiji / Aotearoa New Zealand)
 activity:

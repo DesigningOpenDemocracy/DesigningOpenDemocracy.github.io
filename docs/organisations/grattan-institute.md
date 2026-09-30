@@ -42,6 +42,7 @@ events:
   url_checked: '2026-08-12'
   notable: true
   notable_reason: Founding of the organisation
+  kind: news
 - date: '2019-12-10'
   title: Danielle Wood announced as incoming CEO, succeeding founding CEO John Daley
   url: https://grattan.edu.au/appointment-of-danielle-wood-as-new-ceo-of-grattan-institute/
@@ -52,6 +53,7 @@ events:
   url_checked: '2026-08-15'
   notable: true
   notable_reason: Leadership transition
+  kind: news
 - date: '2024-01-08'
   title: Dr Aruna Sathanapally appointed CEO, following Danielle Wood's move to chair
     the Productivity Commission
@@ -62,6 +64,7 @@ events:
   url_checked: '2026-08-15'
   notable: true
   notable_reason: Leadership transition
+  kind: news
 activity:
   dod:
     date: 2026-09-19

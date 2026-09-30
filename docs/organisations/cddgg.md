@@ -35,6 +35,7 @@ events:
   url_checked: '2026-08-28'
   notable: true
   notable_reason: Founding of the organisation
+  kind: news
 - date: '2008-01-01'
   title: Designed and delivered the first Australian Citizens' Parliament at Old Parliament
     House
@@ -53,6 +54,7 @@ events:
   notable: true
   notable_reason: Landmark deliberative-democracy citizens' assembly, jointly delivered
     with newDemocracy
+  kind: news
   type: milestone
 - date: '2014-01-01'
   title: Relocated to the University of Canberra
@@ -63,6 +65,7 @@ events:
   url_checked: '2026-08-20'
   notable: medium
   notable_reason: Relocation to its long-term host university
+  kind: news
 activity:
   dod:
     date: 2026-09-26

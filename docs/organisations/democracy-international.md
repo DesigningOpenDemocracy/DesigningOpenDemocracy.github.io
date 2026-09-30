@@ -35,6 +35,7 @@ events:
   url_checked: '2026-08-10'
   end_date: '2026-08-30'
   notable: false
+  kind: gathering
   type: workshop
   location: Sofia/Veliko Tarnovo, Bulgaria
   proof_warning: true
@@ -49,6 +50,7 @@ events:
   url_checked: '2026-09-28'
   end_date: '2026-10-18'
   notable: false
+  kind: gathering
   type: workshop
   location: Vic, Spain
   country: ES
@@ -62,6 +64,7 @@ events:
   end_date: '2026-10-10'
   notable: true
   notable_reason: Flagship conference/summit
+  kind: gathering
   type: conference
   location: Gaborone, Botswana
   country: BW
@@ -77,6 +80,7 @@ events:
   end_date: '2026-11-21'
   notable: medium
   notable_reason: Flagship-style public conference
+  kind: gathering
   type: conference
   location: Cologne, Germany
   country: DE
@@ -90,6 +94,7 @@ events:
   url_checked: '2026-09-28'
   notable: medium
   notable_reason: Annual General Assembly, 15th anniversary
+  kind: gathering
   type: meeting
   location: Cologne, Germany
   country: DE
@@ -104,6 +109,7 @@ events:
   url_checked: '2026-09-28'
   end_date: '2026-12-11'
   notable: false
+  kind: gathering
   type: workshop
   location: Ljubljana, Slovenia
   country: SI
@@ -116,6 +122,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Founding of the organisation
+  kind: news
 activity:
   dod:
     date: 2026-09-28

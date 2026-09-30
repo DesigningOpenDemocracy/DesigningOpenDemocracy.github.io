@@ -36,6 +36,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Platform/product launch
+  kind: news
 - date: '2016-01-10'
   title: Executive Yuan mandated agencies post proposed regulations to Join for a
     60-day public comment period
@@ -54,6 +55,7 @@ events:
   url_checked: '2026-08-29'
   notable: medium
   notable_reason: Formal government mandate extending the platform's remit
+  kind: news
   type: other
 activity:
   manual:

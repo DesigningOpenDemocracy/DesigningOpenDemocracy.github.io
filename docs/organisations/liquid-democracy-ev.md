@@ -33,6 +33,7 @@ events:
     ein gemeinnütziger Verein.
   proof_level: high
   url_checked: '2026-08-14'
+  kind: news
 - date: '2014-01-01'
   title: Commissioned by the Berlin Senate Chancellery to build meinBerlin, Berlin's
     central participation platform
@@ -46,6 +47,7 @@ events:
   url_checked: '2026-08-14'
   notable: true
   notable_reason: Commissioned to build Berlin's flagship participation platform
+  kind: news
 activity:
   manual:
     date: 2026-05-28

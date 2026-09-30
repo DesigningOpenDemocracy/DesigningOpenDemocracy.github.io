@@ -32,6 +32,7 @@ events:
     by then-Chief Executive Carrie Lam.
   proof_level: high
   url_checked: '2026-08-17'
+  kind: news
 - date: '2020-01-01'
   title: Helps secure US congressional passage of the Hong Kong Human Rights and Democracy,
     PROTECT Hong Kong, and Autonomy Acts
@@ -43,6 +44,7 @@ events:
     Rights and Democracy Act became law in November 2019.
   proof_level: high
   url_checked: '2026-08-17'
+  kind: news
 - date: '2021-01-01'
   title: Sponsors the first humanitarian parole visas for Hong Kong protesters
   url: https://en.wikipedia.org/wiki/Hong_Kong_Democracy_Council
@@ -52,6 +54,7 @@ events:
     US.
   proof_level: high
   url_checked: '2026-08-17'
+  kind: news
 activity:
   manual:
     checked: 2026-06-07

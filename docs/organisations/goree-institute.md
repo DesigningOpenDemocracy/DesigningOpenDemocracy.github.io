@@ -33,6 +33,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Founding of the organisation
+  kind: news
 - date: '2026-04-02'
   title: Hosted its 9th Annual Symposium, refocusing its strategic priorities on youth
     and women
@@ -50,6 +51,7 @@ events:
   url_checked: '2026-08-29'
   notable: medium
   notable_reason: Strategic pivot of the Institute's flagship annual symposium
+  kind: gathering
   type: conference
 activity:
   dod:

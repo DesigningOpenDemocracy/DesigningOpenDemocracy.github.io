@@ -34,6 +34,7 @@ events:
   url_checked: '2026-08-10'
   notable: true
   notable_reason: Platform/product launch
+  kind: news
 - date: '2024-11-25'
   title: Gave $1 million to the European AI & Society Fund to drive democratic accountability
     of AI deployment
@@ -49,6 +50,7 @@ events:
   url_checked: '2026-08-29'
   notable: medium
   notable_reason: Major grant advancing the organisation's tech-accountability focus
+  kind: news
   type: other
 activity:
   manual:
