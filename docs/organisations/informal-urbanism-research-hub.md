@@ -50,7 +50,7 @@ InfUr- is a research counterpart to the Landscape's practitioners of participato
 
 It also studies participation mechanisms directly. Its September 2026 roundtable on participatory design set out to "examine co-design as a process of listening, learning, negotiating and sharing authority", moving "beyond consultation".[^roundtable] Sharing authority rather than consulting is the same idea behind the Landscape's deliberative practitioners, such as [MosaicLab](mosaiclab.md) and the [newDemocracy Foundation](newdemocracy.md).
 
-**Its fit is narrower than most entries.** It is primarily an urban-studies group, and most of its seminars are about cities first and governance second: housing, infrastructure, streets and planning. It was first assessed as a weak fit and added once its co-design work made the governance angle explicit. Readers looking for democratic reform itself will find more at the Landscape's governance-focused research groups, such as the [Centre for Deliberative Democracy and Global Governance](cddgg.md).
+**Its fit is narrower than most entries.** It is primarily an urban-studies group, and most of its seminars are about cities first and governance second: housing, infrastructure, streets and planning. It was first assessed as a weak fit and added once that co-design roundtable made the governance angle explicit. Readers looking for democratic reform itself will find more at the Landscape's governance-focused research groups, such as the [Centre for Deliberative Democracy and Global Governance](cddgg.md).
 
 ## Connection to DOD
 
