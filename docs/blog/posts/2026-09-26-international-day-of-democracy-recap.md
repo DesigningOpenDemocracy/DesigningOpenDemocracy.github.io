@@ -106,7 +106,7 @@ Godfrey made the evening's key historical point almost in passing:
 
 Nicholas built on it. Elections "separate the governed from the governing". [Selection by lot](../../concepts/sortition.md) means "people taking turns in governing and being governed, which is exactly what happens in juries". His central distinction is "representation by sampling rather than representation by elections".
 
-Several speakers also insisted that shared power needs structure. Antony raised Jo Freeman's [*The Tyranny of Structurelessness*](https://www.jofreeman.com/joreen/tyranny.htm), on how "flat" collectives still had hidden decision-makers. Anitra agreed: "Anarchy is really self-governance. And you have to have processes and they have to be transparent and everything has to be accountable." Godfrey argued that "authority shouldn't be dependent on hierarchy".
+Several speakers also insisted that shared power needs structure. Antony raised Jo Freeman's [*The Tyranny of Structurelessness*](https://www.jofreeman.com/joreen/tyranny.htm), on how "flat" collectives still had hidden decision-makers.[^tyranny] Anitra agreed: "Anarchy is really self-governance. And you have to have processes and they have to be transparent and everything has to be accountable." Godfrey argued that "authority shouldn't be dependent on hierarchy".
 
 ## A standing citizens' assembly, no permission needed
 
@@ -238,6 +238,11 @@ The recording was transcribed automatically. The event's recorder then checked t
 - [Citizens' Assembly](../../concepts/citizens-assembly.md), [Sortition](../../concepts/sortition.md), [Deliberative Democracy](../../concepts/deliberative-democracy.md), [Cooperative](../../concepts/cooperative.md), [Economic Democracy](../../concepts/economic-democracy.md), [Cognitive Division of Labour](../../concepts/cognitive-division-of-labour.md), [Collective Intelligence](../../concepts/collective-intelligence.md) — concept pages
 - From DOD's archive: [Citizens' Democracy with Nicholas Gruen and Hubertus Hofkirchner (2017)](2017-10-21-podcast.md), [Isegoria with Nicholas Gruen (2020)](2020-03-20-podcast.md), [the 2020 Primer, with Kimbra White of MosaicLab](2022-02-24-podcast.md), [Beyond Corporate Social Responsibility, on co-operatives (2020)](2020-06-20-podcast.md), [Basil's Table (2022)](2023-01-21-podcast.md)
 - [newDemocracy Foundation](../../organisations/newdemocracy.md), [Flux Party](../../organisations/flux-party.md), [MiVote](../../organisations/mivote.md) — Democracy Landscape entries
+- Further reading on structurelessness (not raised on the night): Jo Freeman's [*The Tyranny of Structurelessness*](https://www.jofreeman.com/joreen/tyranny.htm) and its [Wikipedia summary](https://en.wikipedia.org/wiki/The_Tyranny_of_Structurelessness); and a workplace version of the same problem, games company Valve's "flat" management, which former employee Jeri Ellsworth told [*WIRED*](https://www.wired.com/story/valve-management-jeri-ellsworth/) in 2013 "felt a lot like high school"[^valve]
+
+[^tyranny]: "This lack of structure, Freeman writes, disguised an informal, unacknowledged, and unaccountable leadership, and in this way ensured its malefaction by denying its existence." [The Tyranny of Structurelessness](https://en.wikipedia.org/wiki/The_Tyranny_of_Structurelessness), Wikipedia.
+
+[^valve]: "But the one thing I found out the hard way is that there is actually a hidden layer of powerful management structure in the company and it felt a lot like high school." Jeri Ellsworth, quoted in ["Valve's flat management structure 'like high school'"](https://www.wired.com/story/valve-management-jeri-ellsworth/), Philippa Warr, WIRED, 9 July 2013.
 
 [^unday]: "In 2007 the United Nations General Assembly resolved to observe 15 September as the International Day of Democracy — with the purpose of promoting and upholding the principles of democracy — and invited all member states and organizations to commemorate the day in an appropriate manner that contributes to raising public awareness." [International Day of Democracy](https://en.wikipedia.org/wiki/International_Day_of_Democracy), Wikipedia.
 
