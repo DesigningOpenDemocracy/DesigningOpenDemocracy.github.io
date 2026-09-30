@@ -349,6 +349,24 @@ short; thin is fine.
   founding is history, not news). The window was a year until 2026-09,
   which put items eleven months old on a page called News; the org's own
   timeline is where older events live.
+- **DOD's own blog posts opt in with `news:`** (`true` for notable,
+  `"major"` for major), in the post's own frontmatter, and appear as
+  "From the DOD blog" items attributed to DOD (its logo, country and
+  concepts), with the post's `summary:` as the lede and a link to the post.
+  They are **not** `events:` entries: when the recap of DOD's International
+  Day of Democracy panel was first added to News as an event on DOD's page,
+  the maintainer's call (2026-09-30) was that a writeup is something DOD
+  published, not something that happened, and belongs on News only. The
+  event it covers stays a `gathering` on the calendar, linked to the post by
+  `coverage_url:`. Built by `collect_blog_news()`; drafts and posts outside
+  `NEWS_WINDOW_DAYS` are skipped, and posts are never in the Archive (the
+  blog has its own). The post's URL is worked out by `post_url()`, which
+  mirrors the Material blog plugin's defaults (`/blog/yyyy/MM/dd/<slug>/`,
+  slug from `slug:` or pymdownx's `slugify(case="lower")` of the title),
+  because the feeds are written in `on_pre_build`, before the plugin has
+  assigned any URL. If `mkdocs.yml` ever sets `post_url_format` or
+  `post_slugify`, change `post_url()` with it; `tests/test_news_export.py`
+  pins it against real post URLs.
 - **Deliberately not an aggregation of org RSS feeds** (`rss_feed:`). Those
   are every post an org publishes, the firehose this page exists to spare
   readers from. No feed carries a signal for which of its posts matter, so
@@ -749,6 +767,13 @@ In blog posts, ordinary links into `/organisations/` and `/concepts/` also get
 a small "Landscape" / "Concept" tag (CSS `::after`, scoped to post pages via
 `:has(.md-post__back)`), so readers can tell DOD's own wiki pages from
 external citations.
+
+**Convention — news (optional):**
+
+Set `news: true` (or `news: major`) on a post that is news in its own right,
+such as a writeup of an event DOD hosted, to list it on Landscape News as a
+"From the DOD blog" item. Don't add a DOD `events:` entry for the post
+instead: see the Landscape News section.
 
 **Convention — main lesson (optional):**
 

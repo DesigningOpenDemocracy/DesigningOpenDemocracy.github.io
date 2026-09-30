@@ -119,7 +119,10 @@
     </div>
 
     <h3 class="news-story-title">
-      {%- if i.href %}<a href="{{ i.href }}" target="_blank" rel="noopener">{{ i.title }}</a>{% else %}{{ i.title }}{% endif %}
+      {#- A DOD blog post (kind "post", hooks/news_export.py collect_blog_news)
+          is on this site, so it opens in place like any other internal link. -#}
+      {%- if i.kind == 'post' %}<a href="{{ i.href }}">{{ i.title }}</a>
+      {%- elif i.href %}<a href="{{ i.href }}" target="_blank" rel="noopener">{{ i.title }}</a>{% else %}{{ i.title }}{% endif %}
     </h3>
 
     {%- if i.note %}
@@ -140,7 +143,8 @@
       <span class="news-story-links">
         {%- if i.upcoming %}<a href="/calendar/">On the calendar →</a>{% endif %}
         {%- if i.coverage_url %}<a class="calendar-event-coverage" href="{{ i.coverage_url }}">DOD coverage →</a>{% endif %}
-        {%- if i.href %}<a href="{{ i.href }}" target="_blank" rel="noopener">{{ 'Archived copy →' if i.url_status in ('dead', 'unfit') else 'Source →' }}</a>
+        {%- if i.kind == 'post' %}<a href="{{ i.href }}">Read the post →</a>
+        {%- elif i.href %}<a href="{{ i.href }}" target="_blank" rel="noopener">{{ 'Archived copy →' if i.url_status in ('dead', 'unfit') else 'Source →' }}</a>
         {%- elif i.source %}<span class="news-item-cited">Cited: {{ i.source | e }}</span>{% endif %}
       </span>
     </div>

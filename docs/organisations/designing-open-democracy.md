@@ -72,20 +72,6 @@ events:
   notable_reason: Public panel co-hosted for International Day of Democracy
   kind: gathering
   coverage_url: /blog/2026/09/26/democracy-beyond-the-ballot-box-recap-of-our-international-day-of-democracy-panel/
-- date: '2026-09-26'
-  title: Published a recap of its International Day of Democracy panel with 888 Co-operative
-    Causeway
-  short_title: 'Recap: democracy beyond the ballot box'
-  url: https://www.designingopendemocracy.com/blog/2026/09/26/democracy-beyond-the-ballot-box-recap-of-our-international-day-of-democracy-panel/
-  quote: 'The panel agreed on the diagnosis but not on where power actually sits:
-    in parliament, in workplaces and unions, or with capital.'
-  note: 'DOD''s writeup of the 15 September panel with Nicholas Gruen, Nicole Hunter,
-    Anitra Nelson and Godfrey Moase: the case for selection by lot and slow, well-structured
-    deliberation, and where the panel disagreed.'
-  proof_level: high
-  notable: medium
-  notable_reason: Event writeup published
-  kind: news
 activity:
   manual:
     checked: 2026-08-07

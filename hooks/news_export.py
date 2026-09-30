@@ -72,6 +72,11 @@ HOOKS_DIR = os.path.dirname(os.path.abspath(__file__))
 DOCS_DIR = os.path.join(HOOKS_DIR, "..", "docs")
 ORGS_DIR = os.path.join(DOCS_DIR, "organisations")
 CONCEPTS_DIR = os.path.join(DOCS_DIR, "concepts")
+POSTS_DIR = os.path.join(DOCS_DIR, "blog", "posts")
+
+# The org a DOD blog post is attributed to on News (its logo, country and
+# topics), since a post isn't any org's events: entry. See collect_blog_news.
+DOD_SLUG = "designing-open-democracy"
 SKIP_FILES = {"index.md"}
 
 # How far back an item stays news. Three months keeps the page reading as
@@ -337,10 +342,99 @@ def collect_news(orgs, today, window_days=NEWS_WINDOW_DAYS, archive_info=None, n
             items.append(item)
             if key:
                 by_key[key] = item
-    # Announcements first, soonest first; then what has happened, newest first.
+    return sort_items(items)
+
+
+def sort_items(items):
+    """Announcements first, soonest first; then what has happened, newest
+    first, majors ahead of notables on the same day."""
     items.sort(key=lambda i: (not i["upcoming"],
                               i["date"].toordinal() if i["upcoming"] else -i["date"].toordinal(),
                               i["notable"] is not True, i["org_title"].lower()))
+    return items
+
+
+try:
+    from pymdownx.slugs import slugify as _pymdownx_slugify
+    _post_slugify = _pymdownx_slugify(case="lower")
+except ImportError:  # pragma: no cover - pymdownx ships with mkdocs-material
+    _post_slugify = None
+
+
+def post_url(meta):
+    """The path the Material blog plugin publishes a post at, with its
+    defaults as this site uses them: post_url_format "{date}/{slug}", date
+    as yyyy/MM/dd, and the slug from `slug:` or else the title through
+    pymdownx's slugify(case="lower") with "-" (material/plugins/blog/
+    config.py). Worked out here rather than read off the built page because
+    News writes its feeds in on_pre_build, before the plugin has assigned
+    any URLs. tests/test_news_export.py pins it against real post URLs; if
+    mkdocs.yml ever sets post_url_format or post_slugify, change this too."""
+    d = _post_date(meta)
+    title = str(meta.get("title") or "")
+    if not d or not (meta.get("slug") or (title and _post_slugify)):
+        return None
+    slug = meta.get("slug") or _post_slugify(title, "-")
+    return f"/blog/{d.year:04d}/{d.month:02d}/{d.day:02d}/{slug}/"
+
+
+def _post_date(meta):
+    d = meta.get("date")
+    if isinstance(d, dict):  # the blog plugin's `date: {created: ...}` form
+        d = d.get("created")
+    if isinstance(d, datetime):
+        d = d.date()
+    return _parse_date(d)
+
+
+# `news:` on a blog post: true for a notable item, "major" for a major one.
+POST_NEWS_TIERS = {True: "medium", "major": True}
+
+
+def collect_blog_news(orgs, today, posts_dir=POSTS_DIR, window_days=NEWS_WINDOW_DAYS):
+    """DOD's own blog posts that opted into News with `news:` in their
+    frontmatter, as News items attributed to DOD.
+
+    A post isn't an org's events: entry: the maintainer's call (2026-09-30)
+    when the recap of DOD's International Day of Democracy panel was first
+    written up as a DOD event to get it onto News. A writeup isn't something
+    that happened to DOD; it's something DOD published. So the post opts in
+    itself, and the item comes from the post: its title, its `summary:` as
+    the lede, and a link to it. Drafts never appear, and the same window
+    applies as for org news. Blog posts have no notable: tier of their own,
+    so `news: true` reads as notable and `news: major` as major."""
+    if frontmatter is None or not os.path.isdir(posts_dir):
+        return []
+    dod = dict(orgs).get(DOD_SLUG, {})
+    org_title = dod.get("title", "Designing Open Democracy")
+    country = dod.get("country")
+    concepts = [c for c in (dod.get("concepts") or []) if isinstance(c, str)]
+    items = []
+    for path in sorted(glob.glob(os.path.join(posts_dir, "*.md"))):
+        meta = frontmatter.load(path).metadata
+        flag = meta.get("news")
+        if meta.get("draft") or flag not in POST_NEWS_TIERS:
+            continue
+        d = _post_date(meta)
+        url = post_url(meta)
+        if not d or not url or d > today or (window_days is not None and (today - d).days > window_days):
+            continue
+        title = str(meta.get("title"))
+        items.append({
+            "id": news_guid(d, url, DOD_SLUG, title),
+            "date": d, "upcoming": False, "ongoing": False, "announced": d, "end_date": None,
+            "title": title, "url": url, "href": url,
+            "archive_url": None, "url_status": None, "source": None,
+            "note": meta.get("summary"), "quote": None,
+            "notable": POST_NEWS_TIERS[flag], "notable_reason": "From the DOD blog",
+            "kind": "post", "type": None, "location": None, "coverage_url": None,
+            "proof_warning": False,
+            "org_slug": DOD_SLUG, "org_title": org_title,
+            "logo": dod.get("logo"), "logo_bg": dod.get("logo_bg"),
+            "orgs": [{"slug": DOD_SLUG, "title": org_title}],
+            "country": country, "countries": [country] if country else [],
+            "concepts": list(concepts),
+        })
     return items
 
 
@@ -384,7 +478,8 @@ def _item_link(item, site_url):
     """Where a feed item points: the source itself, falling back to the org's
     Landscape profile for an event cited by `source:` (a book, testimony)
     with no URL to open."""
-    return item["href"] or _abs(site_url, f"/organisations/{item['org_slug']}/")
+    # A DOD blog post's href is site-relative, so it goes through _abs too.
+    return _abs(site_url, item["href"]) if item["href"] else _abs(site_url, f"/organisations/{item['org_slug']}/")
 
 
 def _item_title(item):
@@ -434,7 +529,7 @@ def item_html(item, site_url, concept_titles):
         links.append(f'<a href="{esc(profile)}">{esc(org["title"])}</a>')
     tail = "Landscape profile: " + ", ".join(links)
     if item.get("href"):
-        tail += f' · <a href="{esc(item["href"])}">Source</a>'
+        tail += f' · <a href="{esc(_abs(site_url, item["href"]))}">{"Read the post" if item.get("kind") == "post" else "Source"}</a>'
     elif item.get("source"):
         tail += f" · Cited: {esc(str(item['source']))}"
     parts.append(f"<p>{tail}</p>")
@@ -505,7 +600,7 @@ def render_json_feed(items, *, page_url, feed_url, site_url, concept_titles):
                 "countries": item["countries"],
                 "concepts": item["concepts"],
                 "type": item.get("type"),
-                "source_url": item["url"] or None,
+                "source_url": _abs(site_url, item["url"]) if item["url"] else None,
                 "source": item.get("source"),
                 "note": item.get("note"),
                 "quote": item.get("quote"),
@@ -594,7 +689,8 @@ def on_pre_build(config):
     orgs = load_orgs()
     concept_titles = load_concept_titles()
     archive_info = _tf.load_archive_info()
-    items = collect_news(orgs, date.today(), archive_info=archive_info)
+    items = sort_items(collect_news(orgs, date.today(), archive_info=archive_info)
+                       + collect_blog_news(orgs, date.today()))
     # No feed for the archive: it's for browsing and search, and every
     # notable item in it already went out on /news.xml in its time.
     _archive[:] = collect_news(orgs, date.today(), window_days=None,
