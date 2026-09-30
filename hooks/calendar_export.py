@@ -197,8 +197,7 @@ def _notable_tier(entry):
 # with the other's items.
 #   gathering — something people attend: a conference, AGM, forum, meetup,
 #               workshop, webinar. Calendar while upcoming, then the
-#               calendar's past list. Never News, except a major one's
-#               heads-up before it starts (news_export.ANNOUNCE_DAYS).
+#               calendar's past list. Never News.
 #   news      — something that happened: a publication, a platform or
 #               campaign launch, an appointment, a ruling, a result, a
 #               founding. News (when notable), never the calendar.

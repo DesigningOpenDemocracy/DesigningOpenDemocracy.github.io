@@ -122,13 +122,13 @@ The invariants recorded there are not immutable. Any document in this repo — i
 - `rss_feed: <url>` — optional; the org's RSS or Atom feed URL. Written by `util/check_rss.py --update-activity` when its discovery probe finds a feed (and by `scrape_news.py --update-rss`), so a feed is found once rather than rediscovered every run; the probe also saves the feed's recent posts to `docs/data/feeds/<slug>.json` for the news checkup (see the Landscape News section).
 - `news_page: <url>` — optional; URL of the org's news or blog index page. Opt-in for `util/scrape_news.py`.
 - `ics_feed: <url>` — optional; URL of an iCal/ICS calendar feed. Opt-in for `util/check_rss.py --update-activity` (writes `activity.ical`) **and** for `util/sync_events.py`, which caches the org's upcoming events into `docs/data/events/<slug>.json` for the site-wide calendar (see Calendar section below).
-- `events: [{date, title, short_title, url, source, note, quote, proof_level, proof_level_locked, proof_warning, url_checked, end_date, time, end_time, notable, notable_reason, announce_days, kind}]` — optional (`announce_days:` is major-events-only; see the Landscape News section); a manually curated, editorial list of an org's significant milestones — **not** derived from `ics_feed:` and not meant to mirror it. `hooks/org_events.py` splits entries at build time into `page.meta.upcoming_events` (date >= today) and `page.meta.history_events` (date < today), rendered by `organisation.html` as two timeline sections. Keep each entry to one line — a terse `title`, no prose paragraph; if a milestone needs real narrative, put that in the page body instead (same judgment call as the optional "Key people" section). Future-dated entries here are also picked up by the site-wide calendar (see below) as a `manual`-source candidate alongside `ics_feed`-synced ones — no separate declaration needed. `end_date:` is optional, for events spanning more than one day (inclusive last day — same convention `util/sync_events.py` uses for iCal `DTEND`). `notable:` is optional and three-valued — absent/`false` (the default), `"medium"`, or `true` (major) — controlling the calendar's highlight tier:
+- `events: [{date, title, short_title, url, source, note, quote, proof_level, proof_level_locked, proof_warning, url_checked, end_date, time, end_time, notable, notable_reason, kind}]` — optional; a manually curated, editorial list of an org's significant milestones — **not** derived from `ics_feed:` and not meant to mirror it. `hooks/org_events.py` splits entries at build time into `page.meta.upcoming_events` (date >= today) and `page.meta.history_events` (date < today), rendered by `organisation.html` as two timeline sections. Keep each entry to one line — a terse `title`, no prose paragraph; if a milestone needs real narrative, put that in the page body instead (same judgment call as the optional "Key people" section). Future-dated entries here are also picked up by the site-wide calendar (see below) as a `manual`-source candidate alongside `ics_feed`-synced ones — no separate declaration needed. `end_date:` is optional, for events spanning more than one day (inclusive last day — same convention `util/sync_events.py` uses for iCal `DTEND`). `notable:` is optional and three-valued — absent/`false` (the default), `"medium"`, or `true` (major) — controlling the calendar's highlight tier:
   - **`notable: true` ("major")** — reserved for events that are both rare (happen only occasionally per year, typically annual at most) *and* genuinely flagship-scale for the landscape — an international/national conference, a major summit, a landmark launch, or an AGM where something structurally significant is actually being decided (e.g. PRSA's 2026 AGM votes on a 17-motion package to rename to the Australian Electoral Reform Society and broaden its remit — that vote is a major action, not routine governance). Rarity alone doesn't qualify something — an ordinary AGM is exactly as annual as a flagship conference is — so weigh both: is this rare *and* is something big actually happening at it. `notable: true` is for the small number of events per org, if any, worth interrupting a reader's scan of the whole calendar for. Renders the amber "★ Major event" badge/dot and the strongest highlight; also the only tier that can appear in the "Next DOD event" banner (`next_notable_event()` in `hooks/calendar_export.py` — see the Calendar section below).
   - **`notable: "medium"`** — for a real, worth-flagging event that doesn't clear the major bar — a specific named public talk or forum session, a one-off local event with actual content as opposed to a routine recurring meeting, or an org's own AGM in the ordinary case where nothing exceptional is on the agenda. An AGM is the organisation's central annual governance event even when it's procedurally routine, so it's "semi-major" by default — reach for `false` only for a genuinely minor/secondary recurring meeting, not for AGMs generally. Renders a distinct, deliberately quieter blue "● Notable" badge/dot, so it doesn't compete visually with true major events on the same page.
   - **absent or `false`** — the default; no badge, no highlight. Routine/secondary recurring meetings (a regular working-group check-in, a follow-up session) belong here.
   Use both non-`false` tiers sparingly — the point of either is to stand out against the rest of the calendar, which stops working if too many events claim one. Both tiers render consistently in two places: the site-wide calendar (`docs/overrides/calendar.html`, a full card treatment) and the org's own history/upcoming timeline (`docs/overrides/organisation.html`, a smaller coloured-dot marker) — the same `e.notable is true` / `e.notable == 'medium'` branching appears in both templates, so a change to the tier logic needs updating both.
   - **`kind:` is required: `gathering` | `news` | `launch`** — what the entry *is*, which decides whether it goes on the calendar or in Landscape News. The two are kept apart on purpose (maintainer's call, 2026-09-30): a conference goes in a diary, a handbook's release is something to hear about, and neither page should be padded with the other's items.
-    - `gathering` — something people attend: conference, AGM, forum, meetup, workshop, webinar, rally. Calendar while upcoming, then the calendar's Recent past list and the Archive. **Never News**, except a major one's heads-up before it starts (see the Landscape News section).
+    - `gathering` — something people attend: conference, AGM, forum, meetup, workshop, webinar, rally. Calendar while upcoming, then the calendar's Recent past list and the Archive. **Never News**, before, during or after.
     - `news` — something that happened: a publication, a platform/campaign launch, an appointment, a ruling, an election result, a founding, an award, a deliberative process run. News (when notable), the Archive and the org's timeline; **never the calendar**, even when future-dated (a report due next month is news the day it's out).
     - `launch` — an attendable event that releases something, like a report-launch webinar or a book launch at a venue: on the calendar until it happens, in News afterwards.
     - The test is "would a reader put this in their diary to attend?" If a launch event and the thing launched both matter, `launch` covers it; if it was the release that mattered and the venue is incidental (newDemocracy's handbook launched at UN HQ), it's `news`.
@@ -390,34 +390,18 @@ short; thin is fine.
   the worklist in its job summary, and the heartbeat run works through it
   (HEARTBEAT.md, "News intake"). See the script's entry under Utility
   scripts.
-- **Major events are announced ahead; nothing else overlaps the calendar.**
-  A `gathering` is only ever on the calendar, a `news` item only in News,
-  and a `launch` on the calendar until it has ended
-  (`calendar_export._is_current()`, on `end_date:` where set) and in News
-  afterwards, moving across on the first build after it ends.
-  The exception is `ANNOUNCE_DAYS` in `hooks/news_export.py` (lead time by
-  tier, currently `{True: 30}`): a **major** event enters News that many days
-  before it starts, under a "Coming up" heading at the top of the page
-  (soonest first, "On now" while it runs), and is on both pages until it
-  ends. A major **gathering** then leaves News (kept at the maintainer's
-  request as the one way a conference reaches News: a heads-up, not a
-  report); a `news` item is never announced ahead. Notable (`"medium"`) events aren't announced; adding a `"medium"`
-  key would change that. **A major event can set its own notice** with an
-  `announce_days:` field (a whole number, 1 to `MAX_ANNOUNCE_DAYS`, 365),
-  e.g. `announce_days: 90` for an international conference people need to
-  book travel for; it replaces the tier default for that event only. It's
-  ignored on a notable event (`check_event_sourcing.py` prints `ANNOUNCE
-  IGNORED`), so it can't be used to opt one in, and a value out of range
-  fails the linter (`BAD ANNOUNCE`) rather than silently falling back to 30.
-  The rule lives in the hook (`valid_announce_days()`), and the linter loads
-  it from there. Chosen by the maintainer in 2026-09: News is what
-  happened, and a heads-up belongs there only for the rare flagship event a
-  reader plans around. An announced item keeps one `guid` from announcement
-  to record, so a subscriber gets it once, when it's announced; feeds publish
-  it under the announcement date (event date minus the lead), and its title
-  carries "(coming up 7 October 2026)" while it's upcoming. The archive
-  passes `announce_days={}` and `kinds=None`, since it's a record of
-  everything that happened, gatherings included. Both pages are built only on push, so an event that
+- **Nothing overlaps the calendar.** A `gathering` is only ever on the
+  calendar, a `news` item only in News, and a `launch` on the calendar
+  until it has ended (`calendar_export._is_current()`, on `end_date:` where
+  set) and in News afterwards, moving across on the first build after it
+  ends. Nothing upcoming or running is ever in News, whatever its tier.
+  Until 2026-09-30 major events were announced 30 days ahead under a
+  "Coming up" heading (`ANNOUNCE_DAYS`, with a per-event `announce_days:`
+  override); the maintainer dropped it as a copy of the calendar, for a
+  clean split: News is what happened, the calendar is what's coming.
+  `tests/test_news_export.py`'s `NoAnnouncementTests` pins it. The archive
+  passes `kinds=None`, since it's a record of everything that happened,
+  gatherings included. Both pages are built only on push, so an event that
   happened since the last build is still on the calendar (collapsed as past
   by its client-side JS) until the next one.
 - **Co-hosted events merge.** Two entries with the same date and `url:` (the
