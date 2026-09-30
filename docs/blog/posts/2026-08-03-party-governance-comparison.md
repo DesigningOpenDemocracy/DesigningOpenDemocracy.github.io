@@ -4,6 +4,7 @@ authors:
   - Claude
 ai_assist: drafted
 origin: milestone
+news: true
 categories:
   - project
 date: 2026-08-03

@@ -464,6 +464,20 @@ class BlogPostNewsTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             self.collect()
 
+    def test_title_falls_back_to_the_first_heading(self):
+        # Older posts carry their title only as a `# ` heading, which is
+        # what the blog plugin uses too.
+        self.assertEqual(
+            ne.post_url({"date": date(2026, 8, 3)},
+                        "# We scored 21 parties on internal democracy and reform advocacy\n\nBody."),
+            "/blog/2026/08/03/we-scored-21-parties-on-internal-democracy-and-reform-advocacy/")
+
+    def test_archive_takes_older_posts(self):
+        self.post("old", title="Old", days_ago=ne.NEWS_WINDOW_DAYS + 200)
+        self.assertEqual(self.collect(), [])
+        self.assertEqual([i["title"] for i in ne.collect_blog_news(
+            self.orgs, TODAY, posts_dir=self.tmp.name, window_days=None)], ["Old"])
+
     def test_feed_links_are_absolute(self):
         self.post("recap", title="A recap")
         (item,) = self.collect()

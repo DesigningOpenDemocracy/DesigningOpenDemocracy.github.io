@@ -361,7 +361,18 @@ except ImportError:  # pragma: no cover - pymdownx ships with mkdocs-material
     _post_slugify = None
 
 
-def post_url(meta):
+def post_title(meta, content=""):
+    """A post's title as the blog plugin reads it: `title:`, else the
+    first `# ` heading in the body (several older posts carry only that)."""
+    if meta.get("title"):
+        return str(meta["title"])
+    for line in (content or "").splitlines():
+        if line.startswith("# "):
+            return line[2:].strip()
+    return ""
+
+
+def post_url(meta, content=""):
     """The path the Material blog plugin publishes a post at, with its
     defaults as this site uses them: post_url_format "{date}/{slug}", date
     as yyyy/MM/dd, and the slug from `slug:` or else the title through
@@ -371,7 +382,7 @@ def post_url(meta):
     any URLs. tests/test_news_export.py pins it against real post URLs; if
     mkdocs.yml ever sets post_url_format or post_slugify, change this too."""
     d = _post_date(meta)
-    title = str(meta.get("title") or "")
+    title = post_title(meta, content)
     if not d or not (meta.get("slug") or (title and _post_slugify)):
         return None
     slug = meta.get("slug") or _post_slugify(title, "-")
@@ -424,7 +435,7 @@ def collect_blog_news(orgs, today, posts_dir=POSTS_DIR, window_days=NEWS_WINDOW_
     that happened to DOD; it's something DOD published. So the post opts in
     itself, and the item comes from the post: its title, its `summary:` as
     the lede, and a link to it. Drafts never appear, and the same window
-    applies as for org news. Blog posts have no notable: tier of their own,
+    applies as for org news (window_days=None for the Archive). Blog posts have no notable: tier of their own,
     so `news: true` reads as notable and `news: major` as major, and are
     filed under DOD's country unless `news_countries:` says otherwise (see
     post_countries)."""
@@ -436,15 +447,16 @@ def collect_blog_news(orgs, today, posts_dir=POSTS_DIR, window_days=NEWS_WINDOW_
     concepts = [c for c in (dod.get("concepts") or []) if isinstance(c, str)]
     items = []
     for path in sorted(glob.glob(os.path.join(posts_dir, "*.md"))):
-        meta = frontmatter.load(path).metadata
+        post = frontmatter.load(path)
+        meta = post.metadata
         flag = meta.get("news")
         if meta.get("draft") or flag not in POST_NEWS_TIERS:
             continue
         d = _post_date(meta)
-        url = post_url(meta)
+        url = post_url(meta, post.content)
         if not d or not url or d > today or (window_days is not None and (today - d).days > window_days):
             continue
-        title = str(meta.get("title"))
+        title = post_title(meta, post.content)
         countries = post_countries(meta, country)
         items.append({
             "id": news_guid(d, url, DOD_SLUG, title),
@@ -722,6 +734,9 @@ def on_pre_build(config):
     _archive[:] = collect_news(orgs, date.today(), window_days=None,
                                archive_info=archive_info, notable_only=False,
                                announce_days={}, kinds=None)
+    # DOD's own flagged posts belong in the record too, so an older one
+    # (outside News' window) still has a place in the cross-org views.
+    _archive[:] = sort_items(_archive + collect_blog_news(orgs, date.today(), window_days=None))
     slices = feed_slices(orgs, items, concept_titles)
     site_url = (config.get("site_url") or "").rstrip("/")
     write_feeds(items, slices, DOCS_DIR, site_url, concept_titles)

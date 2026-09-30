@@ -5,6 +5,7 @@ categories:
   - Projects
   - Resources
 date: 2026-05-20 00:00:00
+news: true
 tags:
   - civics
   - cooperative

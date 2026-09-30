@@ -363,8 +363,13 @@ short; thin is fine.
   per-country feeds; it replaces the default (DOD's own country, AU) rather
   than adding to it, so list AU too when it still applies. An unknown code
   fails the build. Built by `collect_blog_news()`; drafts and posts outside
-  `NEWS_WINDOW_DAYS` are skipped, and posts are never in the Archive (the
-  blog has its own). The post's URL is worked out by `post_url()`, which
+  `NEWS_WINDOW_DAYS` are skipped on News; the Archive takes flagged posts
+  of any age, so an older one still has a place in the cross-org record.
+  The post's title is `title:`, else its first `# ` heading, as the blog
+  plugin reads it. Flagged so far: the panel recap, the party governance
+  comparison and the Civics Ecosystem Toolkit v1.2 release. Two older posts
+  (the inaugural meetup writeup and the 2018 strategy) are already DOD
+  `events:` entries, so they aren't flagged, to avoid listing them twice. The post's URL is worked out by `post_url()`, which
   mirrors the Material blog plugin's defaults (`/blog/yyyy/MM/dd/<slug>/`,
   slug from `slug:` or pymdownx's `slugify(case="lower")` of the title),
   because the feeds are written in `on_pre_build`, before the plugin has

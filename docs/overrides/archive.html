@@ -55,7 +55,8 @@
     <span class="archive-tier" {% if tier == 'major' %}title="Major event"{% elif tier == 'medium' %}title="Notable"{% endif %}>{% if tier == 'major' %}★{% elif tier == 'medium' %}●{% endif %}</span>
     <span class="archive-main">
       <span class="archive-title">
-        {%- if i.href %}<a href="{{ i.href }}" target="_blank" rel="noopener">{{ i.title }}</a>{% else %}{{ i.title }}{% endif %}
+        {%- if i.kind == 'post' %}<a href="{{ i.href }}">{{ i.title }}</a>
+        {%- elif i.href %}<a href="{{ i.href }}" target="_blank" rel="noopener">{{ i.title }}</a>{% else %}{{ i.title }}{% endif %}
         {%- if i.url_status in ('dead', 'unfit') %} <span class="archive-note" title="The original is gone; this links to an archived copy">(archived copy)</span>{% endif %}
       </span>
       <span class="archive-orgs">
