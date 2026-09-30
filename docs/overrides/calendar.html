@@ -160,6 +160,7 @@
 <p><em>No upcoming events are currently known. Orgs with an <code>ics_feed:</code> or manually curated <code>events:</code> entries will appear here once synced — see <a href="/organisations/">Democracy Landscape</a>.</em></p>
 {%- else %}
 
+<div id="country-suggest" class="country-suggest" hidden></div>
 <div class="calendar-filter-bar">
   <label class="calendar-filter-label" for="calendar-country-filter">Filter by country:</label>
   <select id="calendar-country-filter" class="org-filter-select" aria-label="Filter events by country">
@@ -247,6 +248,8 @@
 {% endblock %}
 {% block scripts %}
 {{ super() }}
+<script src="/assets/js/tz-country.js"></script>
+<script src="/assets/js/country-suggest.js"></script>
 <script type="application/ld+json">
 [
 {%- for e in calendar_events %}
@@ -725,6 +728,21 @@
   applyFilter();
   populateFeedsTable();
   scheduleCountdown();
+
+  // Past events (moved into the collapsed list above) don't count: the
+  // suggestion is about what's coming up in the reader's country.
+  if (window.DODCountrySuggest) {
+    DODCountrySuggest({
+      select: filter,
+      slot: document.getElementById('country-suggest'),
+      noun: 'event',
+      count: function (code) {
+        return Array.prototype.filter.call(events, function (el) {
+          return el.getAttribute('data-country') === code && !el.closest('.calendar-past-events-details');
+        }).length;
+      }
+    });
+  }
 })();
 </script>
 {% endblock %}

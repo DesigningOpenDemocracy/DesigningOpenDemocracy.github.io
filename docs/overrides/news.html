@@ -55,6 +55,7 @@
   {%- endfor %}
 {%- endfor %}
 
+<div id="country-suggest" class="country-suggest" hidden></div>
 <div class="calendar-filter-bar news-filter-bar">
   <label class="calendar-filter-label" for="news-country-filter">Country:</label>
   <select id="news-country-filter" class="org-filter-select" aria-label="Filter news by country">
@@ -182,6 +183,8 @@
 {% endblock %}
 {% block scripts %}
 {{ super() }}
+<script src="/assets/js/tz-country.js"></script>
+<script src="/assets/js/country-suggest.js"></script>
 <script>
 (function () {
   var countrySel = document.getElementById('news-country-filter');
@@ -275,6 +278,19 @@
     apply();
   });
   apply();
+
+  if (window.DODCountrySuggest) {
+    DODCountrySuggest({
+      select: countrySel,
+      slot: document.getElementById('country-suggest'),
+      noun: 'item',
+      count: function (code) {
+        return Array.prototype.filter.call(items, function (el) {
+          return (' ' + el.getAttribute('data-countries') + ' ').indexOf(' ' + code + ' ') !== -1;
+        }).length;
+      }
+    });
+  }
 })();
 </script>
 {% endblock %}

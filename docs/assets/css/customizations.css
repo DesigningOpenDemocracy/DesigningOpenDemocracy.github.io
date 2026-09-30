@@ -2969,6 +2969,51 @@ html .md-typeset details.plain-details > :last-child {
   font-size: 0.9em;
 }
 
+/* "Just Australia?" country-filter suggestion on News and the Calendar
+   (docs/assets/js/country-suggest.js). A quiet chip row above the filter
+   bar, not a banner: it's a guess from the reader's time zone, so it should
+   read as an offer that's easy to ignore. */
+.country-suggest {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4em 0.6em;
+  margin: 0.4em 0 0.6em;
+  font-size: 0.8em;
+}
+.country-suggest[hidden] {
+  display: none;
+}
+.country-suggest-text {
+  color: var(--md-default-fg-color--light);
+}
+.country-suggest-apply {
+  font: inherit;
+  font-weight: 600;
+  color: var(--md-accent-fg-color);
+  background: var(--md-accent-fg-color--transparent);
+  border: 1px solid var(--md-accent-fg-color);
+  border-radius: 999px;
+  padding: 0.2em 0.8em;
+  cursor: pointer;
+}
+.country-suggest-apply:hover,
+.country-suggest-apply:focus-visible {
+  background: var(--md-accent-fg-color);
+  color: var(--md-accent-bg-color);
+}
+.country-suggest-dismiss {
+  font: inherit;
+  color: var(--md-default-fg-color--light);
+  background: none;
+  border: none;
+  padding: 0.2em 0.4em;
+  cursor: pointer;
+}
+.country-suggest-dismiss:hover {
+  color: var(--md-default-fg-color);
+}
+
 /* "Seen something we missed?" (partials/suggest-box.html), on News and the
    Calendar. Visible rather than tucked into the About disclosure, since
    suggestions are how these pages grow. */
