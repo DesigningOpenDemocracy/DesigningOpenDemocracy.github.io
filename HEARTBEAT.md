@@ -190,7 +190,10 @@ there, but read the rest of the list too: the tags are keyword hints, not a
 verdict, and a post with no tag can still be News. For each item you do add:
 - open the post itself and take the `quote:`/`note:` from its text, not
   from the feed title (a feed title is a lead, not a source);
-- set a `notable:` tier and a `notable_reason:`;
+- set a `notable:` tier and a `notable_reason:`, and `kind: news` (or
+  `kind: launch` for a launch event people can attend; see CLAUDE.md's
+  `kind:`). A post announcing a conference or meetup is `kind: gathering`,
+  which goes on the calendar, not News;
 - date it the day it was published or announced — except a post announcing
   a future event, which goes in as the event itself, on its own date (so it
   lands on the calendar).

@@ -215,7 +215,7 @@
     things to attend, so the history stays one click away rather than in
     the way. Limited to calendar_past_window_days and capped at
     calendar_past_max (hooks/calendar_export.py); anything older is on each
-    organisation's own timeline, and the notable ones are in /news/.
+    organisation's own timeline and in /archive/.
     Events that pass after the build are moved in here by
     collapsePastAndHighlightNear(). -#}
 <details class="plain-details calendar-past-events-details">
@@ -225,7 +225,7 @@
   {{- event_card(e, past=true) }}
   {%- endfor %}
   </ul>
-  <p class="calendar-past-events-more">Older events are in the <a href="/archive/">Landscape Archive</a>, and the recent major and notable ones in <a href="/news/">Landscape News</a>.</p>
+  <p class="calendar-past-events-more">Older events are in the <a href="/archive/">Landscape Archive</a>. What organisations have published or announced is in <a href="/news/">Landscape News</a>.</p>
 </details>
 {%- endif %}
 </div>
@@ -239,6 +239,9 @@
 </ul>
 {%- endfor %}
 {%- endif %}
+
+{%- set suggest_kind = 'event' %}
+{% include "partials/suggest-box.html" %}
 
 </div>
 {% endblock %}
