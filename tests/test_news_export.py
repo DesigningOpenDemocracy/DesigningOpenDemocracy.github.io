@@ -385,6 +385,131 @@ class KindTests(unittest.TestCase):
                          ["conference", "handbook"])
 
 
+POST = """---
+title: "{title}"
+date: {date}
+summary: A summary of the post.
+{extra}---
+
+Body.
+"""
+
+
+class BlogPostNewsTests(unittest.TestCase):
+    """DOD blog posts reach News by opting in with `news:` in their own
+    frontmatter (collect_blog_news), not as an events: entry on DOD's page:
+    a writeup is something DOD published, not something that happened."""
+
+    def setUp(self):
+        if ne.frontmatter is None or ne._post_slugify is None:
+            self.skipTest("python-frontmatter / pymdownx not installed")
+        self.tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(self.tmp.cleanup)
+        self.orgs = [(ne.DOD_SLUG, org("Designing Open Democracy", concepts=["sortition"]))]
+
+    def post(self, name, days_ago=3, title="A recap", extra="news: true\n"):
+        with open(os.path.join(self.tmp.name, name + ".md"), "w", encoding="utf-8") as f:
+            f.write(POST.format(title=title, date=TODAY - timedelta(days=days_ago), extra=extra))
+
+    def collect(self):
+        return ne.collect_blog_news(self.orgs, TODAY, posts_dir=self.tmp.name)
+
+    def test_only_opted_in_published_posts_in_the_window(self):
+        self.post("in", title="In")
+        self.post("major", title="Major", extra="news: major\n")
+        self.post("not-flagged", title="Not flagged", extra="")
+        self.post("draft", title="Draft", extra="news: true\ndraft: true\n")
+        self.post("old", title="Old", days_ago=ne.NEWS_WINDOW_DAYS + 1)
+        self.post("future", title="Future", days_ago=-2)
+        items = {i["title"]: i for i in self.collect()}
+        self.assertEqual(set(items), {"In", "Major"})
+        self.assertEqual(items["In"]["notable"], "medium")
+        self.assertIs(items["Major"]["notable"], True)
+
+    def test_attributed_to_dod_and_linked_to_the_post(self):
+        self.post("recap", title="Democracy beyond the ballot box: recap of our International Day of Democracy panel")
+        (item,) = self.collect()
+        self.assertEqual(item["kind"], "post")
+        self.assertEqual(item["org_slug"], ne.DOD_SLUG)
+        self.assertEqual(item["concepts"], ["sortition"])
+        self.assertEqual(item["note"], "A summary of the post.")
+        d = TODAY - timedelta(days=3)
+        self.assertEqual(item["href"], f"/blog/{d:%Y/%m/%d}/democracy-beyond-the-ballot-box-recap-of-our-international-day-of-democracy-panel/")
+
+    def test_post_url_matches_the_blog_plugin(self):
+        # Real published URLs, including the em dash that slugifies to a
+        # double hyphen: if these drift, News links to 404s.
+        for title, d, url in [
+            ("Democracy beyond the ballot box: recap of our International Day of Democracy panel",
+             date(2026, 9, 26),
+             "/blog/2026/09/26/democracy-beyond-the-ballot-box-recap-of-our-international-day-of-democracy-panel/"),
+            ("RadicalxChange is launching a Melbourne chapter — here's what it is", date(2026, 8, 7),
+             "/blog/2026/08/07/radicalxchange-is-launching-a-melbourne-chapter--heres-what-it-is/"),
+        ]:
+            with self.subTest(title=title):
+                self.assertEqual(ne.post_url({"title": title, "date": d}), url)
+        self.assertEqual(ne.post_url({"title": "X", "slug": "custom", "date": {"created": date(2026, 1, 2)}}),
+                         "/blog/2026/01/02/custom/")
+
+    def test_countries_default_to_dods_and_can_be_set(self):
+        self.orgs = [(ne.DOD_SLUG, org("Designing Open Democracy", country="AU"))]
+        self.post("default", title="Default")
+        self.post("taiwan", title="Taiwan", extra="news: true\nnews_countries: tw\n")
+        self.post("both", title="Both", extra="news: true\nnews_countries: [AU, NZ, AU]\n")
+        items = {i["title"]: i["countries"] for i in self.collect()}
+        self.assertEqual(items, {"Default": ["AU"], "Taiwan": ["TW"], "Both": ["AU", "NZ"]})
+
+    def test_unknown_country_fails_loudly(self):
+        self.post("typo", title="Typo", extra="news: true\nnews_countries: [XQ]\n")
+        with self.assertRaises(ValueError):
+            self.collect()
+
+    def test_title_falls_back_to_the_first_heading(self):
+        # Older posts carry their title only as a `# ` heading, which is
+        # what the blog plugin uses too.
+        self.assertEqual(
+            ne.post_url({"date": date(2026, 8, 3)},
+                        "# We scored 21 parties on internal democracy and reform advocacy\n\nBody."),
+            "/blog/2026/08/03/we-scored-21-parties-on-internal-democracy-and-reform-advocacy/")
+
+    def test_archive_takes_older_posts(self):
+        self.post("old", title="Old", days_ago=ne.NEWS_WINDOW_DAYS + 200)
+        self.assertEqual(self.collect(), [])
+        self.assertEqual([i["title"] for i in ne.collect_blog_news(
+            self.orgs, TODAY, posts_dir=self.tmp.name, window_days=None)], ["Old"])
+
+    def test_feed_links_are_absolute(self):
+        self.post("recap", title="A recap")
+        (item,) = self.collect()
+        self.assertTrue(ne._item_link(item, SITE).startswith(SITE + "/blog/"))
+        self.assertIn(f'href="{SITE}/blog/', ne.item_html(item, SITE, {}))
+
+
+class CoverageUrlCorpusTests(unittest.TestCase):
+    """Every event's coverage_url into the blog points at a real post.
+
+    The link is typed by hand and runs to ~120 characters of slugified
+    title, and a wrong one renders a "DOD coverage →" link to a 404 with
+    nothing failing. Checked against post_url(), which is pinned to the blog
+    plugin's real URLs above."""
+
+    def test_blog_coverage_links_resolve(self):
+        if ne.frontmatter is None or ne._post_slugify is None:
+            self.skipTest("python-frontmatter / pymdownx not installed")
+        import glob
+        posts = set()
+        for path in glob.glob(os.path.join(ne.POSTS_DIR, "*.md")):
+            post = ne.frontmatter.load(path)
+            if not post.metadata.get("draft"):
+                posts.add(ne.post_url(post.metadata, post.content))
+        bad = [(slug, str(e.get("date")), e["coverage_url"])
+               for slug, m in ne.load_orgs()
+               for e in m.get("events") or []
+               if isinstance(e, dict) and str(e.get("coverage_url", "")).startswith("/blog/")
+               and e["coverage_url"] not in posts]
+        self.assertEqual(bad, [])
+
+
 class ArchiveTabTests(unittest.TestCase):
     """The archive is outside the nav, so the hook lights the News tab while
     it renders, and must switch it off again after."""

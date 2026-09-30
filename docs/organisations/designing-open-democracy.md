@@ -71,6 +71,7 @@ events:
   notable: true
   notable_reason: Public panel co-hosted for International Day of Democracy
   kind: gathering
+  coverage_url: /blog/2026/09/26/democracy-beyond-the-ballot-box-recap-of-our-international-day-of-democracy-panel/
 activity:
   manual:
     checked: 2026-08-07

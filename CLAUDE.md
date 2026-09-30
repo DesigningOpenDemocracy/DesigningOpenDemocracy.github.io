@@ -349,6 +349,33 @@ short; thin is fine.
   founding is history, not news). The window was a year until 2026-09,
   which put items eleven months old on a page called News; the org's own
   timeline is where older events live.
+- **DOD's own blog posts opt in with `news:`** (`true` for notable,
+  `"major"` for major), in the post's own frontmatter, and appear as
+  "From the DOD blog" items attributed to DOD (its logo, country and
+  concepts), with the post's `summary:` as the lede and a link to the post.
+  They are **not** `events:` entries: when the recap of DOD's International
+  Day of Democracy panel was first added to News as an event on DOD's page,
+  the maintainer's call (2026-09-30) was that a writeup is something DOD
+  published, not something that happened, and belongs on News only. The
+  event it covers stays a `gathering` on the calendar, linked to the post by
+  `coverage_url:`. **`news_countries:`** (one ISO code or a list) files the
+  item under the countries the post is about, for the country filter and
+  per-country feeds; it replaces the default (DOD's own country, AU) rather
+  than adding to it, so list AU too when it still applies. An unknown code
+  fails the build. Built by `collect_blog_news()`; drafts and posts outside
+  `NEWS_WINDOW_DAYS` are skipped on News; the Archive takes flagged posts
+  of any age, so an older one still has a place in the cross-org record.
+  The post's title is `title:`, else its first `# ` heading, as the blog
+  plugin reads it. Flagged so far: the panel recap, the party governance
+  comparison and the Civics Ecosystem Toolkit v1.2 release. Two older posts
+  (the inaugural meetup writeup and the 2018 strategy) are already DOD
+  `events:` entries, so they aren't flagged, to avoid listing them twice. The post's URL is worked out by `post_url()`, which
+  mirrors the Material blog plugin's defaults (`/blog/yyyy/MM/dd/<slug>/`,
+  slug from `slug:` or pymdownx's `slugify(case="lower")` of the title),
+  because the feeds are written in `on_pre_build`, before the plugin has
+  assigned any URL. If `mkdocs.yml` ever sets `post_url_format` or
+  `post_slugify`, change `post_url()` with it; `tests/test_news_export.py`
+  pins it against real post URLs.
 - **Deliberately not an aggregation of org RSS feeds** (`rss_feed:`). Those
   are every post an org publishes, the firehose this page exists to spare
   readers from. No feed carries a signal for which of its posts matter, so
@@ -505,7 +532,7 @@ org's own timeline.
 - Claude may assist with drafting, editing, or structuring a post, but should not create and publish a blog post autonomously — especially for factual or politically sensitive content (legislation, election results, organisational positions).
 - When a topic warrants a blog post but no human has written one, note the gap rather than filling it unilaterally. Do not let "the information exists" be sufficient reason to publish.
 - Concept and organisation pages are appropriate for AI-assisted content (with sourcing discipline); blog posts are not.
-- A post covering an org's event does not get its own calendar entry — that would duplicate the org's own `events:` entry for the same date (see Calendar section above for why the `event_date:` field that used to do this was removed). If the org's page doesn't have that event listed yet, add it there instead.
+- A post covering an org's event does not get its own calendar entry — that would duplicate the org's own `events:` entry for the same date (see Calendar section above for why the `event_date:` field that used to do this was removed). If the org's page doesn't have that event listed yet, add it there instead. Link the two with `coverage_url:` on that event (the post's site path, e.g. `/blog/2026/07/31/<slug>/`), which renders "DOD coverage →" on the calendar, its past list and News. It's the only connection an event-coverage post needs: not `news:` (it's another org's event, not DOD news) and not a DOD `events:` entry. `tests/test_news_export.py`'s `CoverageUrlCorpusTests` fails on a `/blog/` link that matches no post, since these are long, hand-typed and 404 silently. A post whose event's host isn't in the Landscape (the 2026-05-29 People Powered Democracy Forum, run by Beyond Billionaires) has nothing to link to, and that's fine.
 
 **Exception — AI-assisted research posts:**
 
@@ -749,6 +776,15 @@ In blog posts, ordinary links into `/organisations/` and `/concepts/` also get
 a small "Landscape" / "Concept" tag (CSS `::after`, scoped to post pages via
 `:has(.md-post__back)`), so readers can tell DOD's own wiki pages from
 external citations.
+
+**Convention — news (optional):**
+
+Set `news: true` (or `news: major`) on a post that is news in its own right,
+such as a writeup of an event DOD hosted, to list it on Landscape News as a
+"From the DOD blog" item. Add `news_countries: [TW]` (ISO codes) when the post
+is about somewhere other than Australia, so it lands in the right country
+feed. Don't add a DOD `events:` entry for the post
+instead: see the Landscape News section.
 
 **Convention — main lesson (optional):**
 

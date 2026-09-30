@@ -7,6 +7,7 @@ authors:
   - Claude
 ai_assist: drafted
 origin: milestone
+news: true
 categories:
   - event
 tags:
