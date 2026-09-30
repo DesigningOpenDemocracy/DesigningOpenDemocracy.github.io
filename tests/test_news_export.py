@@ -485,6 +485,31 @@ class BlogPostNewsTests(unittest.TestCase):
         self.assertIn(f'href="{SITE}/blog/', ne.item_html(item, SITE, {}))
 
 
+class CoverageUrlCorpusTests(unittest.TestCase):
+    """Every event's coverage_url into the blog points at a real post.
+
+    The link is typed by hand and runs to ~120 characters of slugified
+    title, and a wrong one renders a "DOD coverage →" link to a 404 with
+    nothing failing. Checked against post_url(), which is pinned to the blog
+    plugin's real URLs above."""
+
+    def test_blog_coverage_links_resolve(self):
+        if ne.frontmatter is None or ne._post_slugify is None:
+            self.skipTest("python-frontmatter / pymdownx not installed")
+        import glob
+        posts = set()
+        for path in glob.glob(os.path.join(ne.POSTS_DIR, "*.md")):
+            post = ne.frontmatter.load(path)
+            if not post.metadata.get("draft"):
+                posts.add(ne.post_url(post.metadata, post.content))
+        bad = [(slug, str(e.get("date")), e["coverage_url"])
+               for slug, m in ne.load_orgs()
+               for e in m.get("events") or []
+               if isinstance(e, dict) and str(e.get("coverage_url", "")).startswith("/blog/")
+               and e["coverage_url"] not in posts]
+        self.assertEqual(bad, [])
+
+
 class ArchiveTabTests(unittest.TestCase):
     """The archive is outside the nav, so the hook lights the News tab while
     it renders, and must switch it off again after."""

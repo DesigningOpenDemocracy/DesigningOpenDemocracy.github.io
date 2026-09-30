@@ -70,6 +70,7 @@ events:
   kind: gathering
   type: meeting
   proof_warning: true
+  coverage_url: /blog/2026/07/31/prsa-members-to-vote-on-rebrand-to-australian-electoral-reform-society--agm-12-november-2026/
 activity:
   manual:
     checked: 2026-06-07
