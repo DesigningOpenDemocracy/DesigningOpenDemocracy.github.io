@@ -56,8 +56,8 @@ _news_export_module = None
 
 
 def _news_export():
-    """hooks/news_export.py, loaded by path for its announce_days rule and
-    (through it, calendar_export.py) the kind: vocabulary, so the linter and
+    """hooks/news_export.py, loaded by path for (through it,
+    calendar_export.py) the kind: vocabulary, so the linter and
     the hooks can't disagree on what a valid value is (the same reason
     check_elections.py loads calendar_export.py)."""
     global _news_export_module
@@ -242,7 +242,6 @@ def main():
     vague_source = 0
     weak_url = 0
     no_proof = 0
-    bad_announce = 0
     bad_kind = 0
     notable_soft = 0
     mismatched_proof_level = 0
@@ -340,23 +339,6 @@ def main():
                 notable_soft += 1
                 print(f"  NOTABLE NO PROOF {p['title']}  [{e.get('date','?')}]  {e.get('title','?')}")
 
-            # announce_days: how early a major event enters Landscape News
-            # (hooks/news_export.py). A bad value fails the build, since the
-            # hook would otherwise quietly fall back to the default notice.
-            # On a non-major event it's ignored, which is worth saying but
-            # not failing on.
-            if "announce_days" in e:
-                ne = _news_export()
-                if not ne.valid_announce_days(e["announce_days"]):
-                    bad_announce += 1
-                    has_issues = True
-                    print(f"  BAD ANNOUNCE    {p['title']}  [{e.get('date','?')}]  {e.get('title','?')}")
-                    print(f"                   announce_days: {e['announce_days']!r} — needs a whole number"
-                          f" of days from 1 to {ne.MAX_ANNOUNCE_DAYS}")
-                elif e.get("notable") is not True:
-                    print(f"  ANNOUNCE IGNORED {p['title']}  [{e.get('date','?')}]  {e.get('title','?')}")
-                    print("                   announce_days only applies to major (notable: true) events")
-
             # kind: decides calendar vs Landscape News (see EVENT_KINDS in
             # hooks/calendar_export.py). Required, because the hook reads a
             # missing one as "gathering": a publication without it would sit
@@ -412,8 +394,6 @@ def main():
     if has_issues:
         if no_proof:
             print(f"\n{no_proof} event(s) need evidence (quote, note, or proof_warning). Add one to each.")
-        if bad_announce:
-            print(f"\n{bad_announce} event(s) have an invalid announce_days (see BAD ANNOUNCE above).")
         if bad_kind:
             print(f"\n{bad_kind} event(s) have a missing or unknown kind: — gathering (something to attend),"
                   " news (something that happened) or launch (an event that releases something).")

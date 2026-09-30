@@ -37,7 +37,7 @@ CANONICAL_TOP = [
 # Per-event canonical field order
 EVENT_FIELD_ORDER = [
     "date", "title", "short_title", "url", "source", "quote", "note", "proof_level",
-    "url_checked", "end_date", "time", "end_time", "notable", "notable_reason", "announce_days", "kind", "type",
+    "url_checked", "end_date", "time", "end_time", "notable", "notable_reason", "kind", "type",
     "location", "proof_warning", "coverage_url",
 ]
 

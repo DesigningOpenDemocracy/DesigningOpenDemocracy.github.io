@@ -2,8 +2,8 @@
 {#- Landscape News: the past three months' major and notable news from across
     the Democracy Landscape, newest first. The data is hooks/news_export.py's
     `news_items` — a view of org `events:` entries with kind: news or
-    launch, never a source of its own. Gatherings are the calendar's; the
-    only ones here are major ones' heads-up under "Coming up".
+    launch, never a source of its own. Only things that have happened:
+    anything to attend, before or during, is the calendar's.
 
     Laid out as stories (headline, lede, source), not as the calendar's
     date-block cards: it used to reuse those, and read as a second calendar.
@@ -100,14 +100,11 @@
   <p class="news-feed-note">Counts are items in the current window; a feed without one is quiet, not missing. Topics are the concepts each organisation works on, so a topic feed follows organisations in that field rather than individual stories about it.</p>
 </details>
 
-{#- One news story, shared by the "Coming up" heads-up and the month groups
-    below it. -#}
+{#- One news story, as listed under its month. -#}
 {%- macro news_card(i) %}
-  <li class="news-item news-story{% if i.upcoming %} news-story--upcoming{% endif %}{% if i.notable is true %} news-story--major{% endif %}" data-countries="{{ i.countries | join(' ') }}" data-topics="{{ i.concepts | join(' ') }}" data-tier="{{ 'major' if i.notable is true else 'medium' }}">
+  <li class="news-item news-story{% if i.notable is true %} news-story--major{% endif %}" data-countries="{{ i.countries | join(' ') }}" data-topics="{{ i.concepts | join(' ') }}" data-tier="{{ 'major' if i.notable is true else 'medium' }}">
     <div class="news-story-meta">
-      <time datetime="{{ i.date.isoformat() }}">{{ i.date.day }} {{ i.date.strftime('%B %Y') if i.upcoming else i.date.strftime('%b') }}</time>
-      {%- if i.ongoing %}<span class="calendar-event-badge calendar-event-badge--now">On now</span>
-      {%- elif i.upcoming %}<span class="calendar-event-badge calendar-event-badge--week">Coming up</span>{% endif %}
+      <time datetime="{{ i.date.isoformat() }}">{{ i.date.day }} {{ i.date.strftime('%b') }}</time>
       {%- if i.notable is true %}<span class="calendar-event-badge">★ Major</span>{% endif %}
       <span class="news-story-orgs">
         {%- for o in i.orgs %}
@@ -141,7 +138,6 @@
       {%- if i.url_status == 'dead' %}<span class="org-event-warning" title="The original URL no longer resolves; the link is an archived copy">⚠ Original link dead</span>
       {%- elif i.url_status == 'unfit' %}<span class="org-event-warning" title="The original domain no longer hosts this content; the link is an archived copy">⚠ Original domain parked</span>{% endif %}
       <span class="news-story-links">
-        {%- if i.upcoming %}<a href="/calendar/">On the calendar →</a>{% endif %}
         {%- if i.coverage_url %}<a class="calendar-event-coverage" href="{{ i.coverage_url }}">DOD coverage →</a>{% endif %}
         {%- if i.kind == 'post' %}<a href="{{ i.href }}">Read the post →</a>
         {%- elif i.href %}<a href="{{ i.href }}" target="_blank" rel="noopener">{{ 'Archived copy →' if i.url_status in ('dead', 'unfit') else 'Source →' }}</a>
@@ -151,22 +147,8 @@
   </li>
 {%- endmacro %}
 
-{#- Announcements: major gatherings and launches inside
-    hooks/news_export.py's ANNOUNCE_DAYS lead time, soonest first. They're
-    on the calendar too; this is the heads-up, not a second listing of
-    everything coming, and a gathering leaves News when it ends. -#}
-{%- set upcoming = news_items | selectattr('upcoming') | list %}
-{%- if upcoming %}
-<h2 class="calendar-month-heading news-upcoming-heading">Coming up</h2>
-<ul class="news-story-list">
-  {%- for i in upcoming %}
-  {{- news_card(i) }}
-  {%- endfor %}
-</ul>
-{%- endif %}
-
 {%- set grouped = {} %}
-{%- for i in news_items | rejectattr('upcoming') %}
+{%- for i in news_items %}
   {%- set month_key = i.date.strftime('%B %Y') %}
   {%- if month_key not in grouped %}{% set _ = grouped.update({month_key: []}) %}{% endif %}
   {%- set _ = grouped[month_key].append(i) %}

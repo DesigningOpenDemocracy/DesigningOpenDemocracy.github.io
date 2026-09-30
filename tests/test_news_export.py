@@ -44,9 +44,8 @@ def org(title, country="AU", concepts=None, events=None, **extra):
 
 
 def ev(days_ago, title="Something happened", notable=True, url=None, kind="launch", **extra):
-    # "launch" by default: the one kind that is both announced ahead and
-    # news once it's happened, so the tests below that aren't about kind
-    # exercise the rest of the selection rule on its own. KindTests pins
+    # "launch" by default: news once it's happened, so the tests below that
+    # aren't about kind exercise the rest of the selection rule on its own. KindTests pins
     # what each kind does.
     e = {"date": TODAY - timedelta(days=days_ago), "title": title, "notable": notable,
          "kind": kind}
@@ -72,9 +71,8 @@ class SelectionTests(unittest.TestCase):
 
     def test_today_belongs_to_the_calendar_not_the_news(self):
         # calendar_export.py takes date >= today, so news must take < today.
-        # Notable, not major: major events are announced ahead (below).
-        self.assertEqual(self.titles([ev(0, "today", "medium"), ev(1, "yesterday", "medium"),
-                                      ev(-3, "future", "medium")]), ["yesterday"])
+        self.assertEqual(self.titles([ev(0, "today"), ev(1, "yesterday"),
+                                      ev(-3, "future")]), ["yesterday"])
 
     def test_a_running_event_stays_on_the_calendar_until_it_ends(self):
         # calendar_export keeps an event while it's under way, so news must
@@ -276,62 +274,20 @@ class WriteFeedsTests(unittest.TestCase):
         self.assertEqual(os.stat(path).st_mtime, 1)
 
 
-class AnnouncementTests(unittest.TestCase):
-    """Major events enter News ANNOUNCE_DAYS before they start."""
+class NoAnnouncementTests(unittest.TestCase):
+    """Nothing upcoming or running is News, whatever its tier or kind: that
+    is the calendar's. Major events used to be announced 30 days ahead
+    under "Coming up"; removed 2026-09-30 as a copy of the calendar."""
 
-    def collect(self, events, **kw):
-        return ne.collect_news([("a", org("A", events=events))], TODAY, **kw)
+    def test_upcoming_major_events_are_not_news(self):
+        for kind in ("gathering", "launch", "news"):
+            with self.subTest(kind=kind):
+                self.assertEqual(ne.collect_news(
+                    [("a", org("A", events=[ev(-3, "soon", kind=kind)]))], TODAY), [])
 
-    def test_major_event_is_announced_inside_its_lead_time(self):
-        lead = ne.ANNOUNCE_DAYS[True]
-        items = self.collect([ev(-lead, "on the edge"), ev(-(lead + 1), "too far out")])
-        self.assertEqual([i["title"] for i in items], ["on the edge"])
-        self.assertTrue(items[0]["upcoming"])
-        self.assertEqual(items[0]["announced"], TODAY)
-
-    def test_notable_events_are_not_announced(self):
-        self.assertEqual(self.collect([ev(-3, "soon", "medium")]), [])
-
-    def test_a_running_major_event_stays_as_on_now(self):
-        items = self.collect([ev(2, "running", end_date=TODAY + timedelta(days=2))])
-        self.assertTrue(items[0]["upcoming"] and items[0]["ongoing"])
-
-    def test_announcements_lead_soonest_first_then_past_newest_first(self):
-        items = self.collect([ev(5, "past older"), ev(-20, "later"), ev(1, "past newer"),
-                              ev(-2, "sooner")])
-        self.assertEqual([i["title"] for i in items],
-                         ["sooner", "later", "past newer", "past older"])
-
-    def test_feeds_publish_it_under_the_announcement_date(self):
-        items = self.collect([ev(-10, "Summit")])
-        rss = ne.render_rss(items, title="t", description="d", page_url="p",
-                            feed_url="f", site_url="https://x", concept_titles={})
-        self.assertIn(ne._pub_date(TODAY - timedelta(days=ne.ANNOUNCE_DAYS[True] - 10)), rss)
-        self.assertIn("(coming up", rss)
-
-    def test_the_archive_takes_no_announcements(self):
-        self.assertEqual(self.collect([ev(-3, "soon")], window_days=None,
-                                      notable_only=False, announce_days={}), [])
-
-    def test_a_major_event_can_ask_for_more_notice(self):
-        items = self.collect([ev(-80, "summit", announce_days=90),
-                              ev(-80, "default notice")])
-        self.assertEqual([i["title"] for i in items], ["summit"])
-        self.assertEqual(items[0]["announced"], TODAY - timedelta(days=10))
-
-    def test_or_less(self):
-        self.assertEqual(self.collect([ev(-20, "late", announce_days=7)]), [])
-
-    def test_a_notable_event_cannot_opt_itself_in(self):
-        self.assertEqual(self.collect([ev(-3, "soon", "medium", announce_days=30)]), [])
-
-    def test_an_invalid_value_falls_back_to_the_default(self):
-        # check_event_sourcing.py fails the build on these; the hook just
-        # doesn't let them change anything.
-        for bad in (0, 400, "90", True):
-            with self.subTest(value=bad):
-                items = self.collect([ev(-80, "summit", announce_days=bad)])
-                self.assertEqual(items, [])
+    def test_a_running_major_event_is_not_news(self):
+        running = ev(2, "running", end_date=TODAY + timedelta(days=2))
+        self.assertEqual(ne.collect_news([("a", org("A", events=[running]))], TODAY), [])
 
 
 class ArchiveTests(unittest.TestCase):
@@ -341,8 +297,7 @@ class ArchiveTests(unittest.TestCase):
         events = [ev(2, "recent major", True), ev(5, "untiered", False),
                   ev(4000, "long ago", "medium"), ev(-3, "upcoming", True)]
         items = ne.collect_news([("a", org("A", events=events))], TODAY,
-                                window_days=None, notable_only=False, announce_days={},
-                                kinds=None)
+                                window_days=None, notable_only=False, kinds=None)
         self.assertEqual([i["title"] for i in items], ["recent major", "untiered", "long ago"])
 
     def test_news_itself_still_skips_untiered(self):
@@ -352,9 +307,8 @@ class ArchiveTests(unittest.TestCase):
 
 class KindTests(unittest.TestCase):
     """kind: keeps News and the calendar apart. A gathering (something to
-    attend) is the calendar's: News carries only a major one's heads-up,
-    and drops it once it's over. A news item (something that happened) is
-    never announced ahead. A launch is both, in turn."""
+    attend) is only ever the calendar's. A news item (something that
+    happened) is only ever News'. A launch is both, in turn."""
 
     def titles(self, events, **kw):
         return [i["title"] for i in ne.collect_news([("a", org("A", events=events))], TODAY, **kw)]
@@ -365,14 +319,6 @@ class KindTests(unittest.TestCase):
                          ev(3, "report launch", kind="launch")]),
             ["handbook", "report launch"])
 
-    def test_major_gathering_keeps_its_heads_up_until_it_ends(self):
-        running = ev(1, "running", kind="gathering", end_date=TODAY + timedelta(days=1))
-        self.assertEqual(self.titles([ev(-10, "summit", kind="gathering"), running]),
-                         ["running", "summit"])
-
-    def test_news_is_not_announced_ahead(self):
-        self.assertEqual(self.titles([ev(-10, "report due", kind="news")]), [])
-
     def test_missing_kind_reads_as_a_gathering(self):
         e = ev(3, "untagged")
         del e["kind"]
@@ -381,7 +327,7 @@ class KindTests(unittest.TestCase):
     def test_archive_keeps_every_kind(self):
         events = [ev(3, "conference", kind="gathering"), ev(4, "handbook", kind="news")]
         self.assertEqual(self.titles(events, window_days=None, notable_only=False,
-                                     announce_days={}, kinds=None),
+                                     kinds=None),
                          ["conference", "handbook"])
 
 
