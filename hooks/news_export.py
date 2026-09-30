@@ -391,6 +391,29 @@ def _post_date(meta):
 POST_NEWS_TIERS = {True: "medium", "major": True}
 
 
+def post_countries(meta, default):
+    """The countries a News-flagged post is filed under: its
+    `news_countries:` (one ISO 3166-1 alpha-2 code or a list), else DOD's
+    own country. They drive the country filter and the per-country feeds,
+    so a post about Taiwan belongs in Taiwan's feed, not Australia's just
+    because DOD is Australian. An unknown code fails the build, since the
+    item would otherwise vanish from the feed its author meant it for."""
+    raw = meta.get("news_countries")
+    if raw is None:
+        return [default] if default else []
+    codes = [raw] if isinstance(raw, str) else list(raw or [])
+    out = []
+    for c in codes:
+        code = str(c).strip().upper()
+        if code not in COUNTRY_NAMES:
+            raise ValueError(
+                f"news_countries: {c!r} on blog post {meta.get('title')!r} is not a country "
+                f"code hooks/calendar_export.py knows (ISO 3166-1 alpha-2, e.g. AU, TW)")
+        if code not in out:
+            out.append(code)
+    return out
+
+
 def collect_blog_news(orgs, today, posts_dir=POSTS_DIR, window_days=NEWS_WINDOW_DAYS):
     """DOD's own blog posts that opted into News with `news:` in their
     frontmatter, as News items attributed to DOD.
@@ -402,7 +425,9 @@ def collect_blog_news(orgs, today, posts_dir=POSTS_DIR, window_days=NEWS_WINDOW_
     itself, and the item comes from the post: its title, its `summary:` as
     the lede, and a link to it. Drafts never appear, and the same window
     applies as for org news. Blog posts have no notable: tier of their own,
-    so `news: true` reads as notable and `news: major` as major."""
+    so `news: true` reads as notable and `news: major` as major, and are
+    filed under DOD's country unless `news_countries:` says otherwise (see
+    post_countries)."""
     if frontmatter is None or not os.path.isdir(posts_dir):
         return []
     dod = dict(orgs).get(DOD_SLUG, {})
@@ -420,6 +445,7 @@ def collect_blog_news(orgs, today, posts_dir=POSTS_DIR, window_days=NEWS_WINDOW_
         if not d or not url or d > today or (window_days is not None and (today - d).days > window_days):
             continue
         title = str(meta.get("title"))
+        countries = post_countries(meta, country)
         items.append({
             "id": news_guid(d, url, DOD_SLUG, title),
             "date": d, "upcoming": False, "ongoing": False, "announced": d, "end_date": None,
@@ -432,7 +458,7 @@ def collect_blog_news(orgs, today, posts_dir=POSTS_DIR, window_days=NEWS_WINDOW_
             "org_slug": DOD_SLUG, "org_title": org_title,
             "logo": dod.get("logo"), "logo_bg": dod.get("logo_bg"),
             "orgs": [{"slug": DOD_SLUG, "title": org_title}],
-            "country": country, "countries": [country] if country else [],
+            "country": countries[0] if countries else None, "countries": countries,
             "concepts": list(concepts),
         })
     return items

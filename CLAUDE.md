@@ -358,7 +358,11 @@ short; thin is fine.
   the maintainer's call (2026-09-30) was that a writeup is something DOD
   published, not something that happened, and belongs on News only. The
   event it covers stays a `gathering` on the calendar, linked to the post by
-  `coverage_url:`. Built by `collect_blog_news()`; drafts and posts outside
+  `coverage_url:`. **`news_countries:`** (one ISO code or a list) files the
+  item under the countries the post is about, for the country filter and
+  per-country feeds; it replaces the default (DOD's own country, AU) rather
+  than adding to it, so list AU too when it still applies. An unknown code
+  fails the build. Built by `collect_blog_news()`; drafts and posts outside
   `NEWS_WINDOW_DAYS` are skipped, and posts are never in the Archive (the
   blog has its own). The post's URL is worked out by `post_url()`, which
   mirrors the Material blog plugin's defaults (`/blog/yyyy/MM/dd/<slug>/`,
@@ -772,7 +776,9 @@ external citations.
 
 Set `news: true` (or `news: major`) on a post that is news in its own right,
 such as a writeup of an event DOD hosted, to list it on Landscape News as a
-"From the DOD blog" item. Don't add a DOD `events:` entry for the post
+"From the DOD blog" item. Add `news_countries: [TW]` (ISO codes) when the post
+is about somewhere other than Australia, so it lands in the right country
+feed. Don't add a DOD `events:` entry for the post
 instead: see the Landscape News section.
 
 **Convention — main lesson (optional):**

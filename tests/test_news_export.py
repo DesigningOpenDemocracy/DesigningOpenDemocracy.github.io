@@ -451,6 +451,19 @@ class BlogPostNewsTests(unittest.TestCase):
         self.assertEqual(ne.post_url({"title": "X", "slug": "custom", "date": {"created": date(2026, 1, 2)}}),
                          "/blog/2026/01/02/custom/")
 
+    def test_countries_default_to_dods_and_can_be_set(self):
+        self.orgs = [(ne.DOD_SLUG, org("Designing Open Democracy", country="AU"))]
+        self.post("default", title="Default")
+        self.post("taiwan", title="Taiwan", extra="news: true\nnews_countries: tw\n")
+        self.post("both", title="Both", extra="news: true\nnews_countries: [AU, NZ, AU]\n")
+        items = {i["title"]: i["countries"] for i in self.collect()}
+        self.assertEqual(items, {"Default": ["AU"], "Taiwan": ["TW"], "Both": ["AU", "NZ"]})
+
+    def test_unknown_country_fails_loudly(self):
+        self.post("typo", title="Typo", extra="news: true\nnews_countries: [XQ]\n")
+        with self.assertRaises(ValueError):
+            self.collect()
+
     def test_feed_links_are_absolute(self):
         self.post("recap", title="A recap")
         (item,) = self.collect()
