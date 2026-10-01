@@ -193,7 +193,7 @@ Nicole's account of recruiting the Yarra Valley Water jury has an earlier versio
 
 ### An old argument about where power sits
 
-The panel's unresolved split, between parliament, the workplace and capital, is one Antony has chaired before. At DOD's [2020 talk on co-operatives](2020-06-20-podcast.md), audience member Andrew Downing challenged the room to stop framing it as "cooperatives versus capitalism" and look for "a cooperative, augmented capitalism". Antony's answer then was that the co-operative movement has always held two wings: one that steps in "where there are market failures", and "a broader, more transformative movement" that "used to be called the cooperative commonwealth". "Personally, I wouldn't be able to resolve that tension," he said. This year's panel didn't resolve it either.
+The panel's unresolved split, between parliament, the workplace and capital, is one Antony has chaired before. At DOD's [2020 talk on co-operatives](2020-06-20-podcast.md), an audience member challenged the room to stop framing it as "cooperatives versus capitalism" and look for "a cooperative, augmented capitalism". Antony's answer then was that the co-operative movement has always held two wings: one that steps in "where there are market failures", and "a broader, more transformative movement" that "used to be called the cooperative commonwealth". "Personally, I wouldn't be able to resolve that tension," he said. This year's panel didn't resolve it either.
 
 ### Technology, then and now
 
