@@ -71,7 +71,7 @@ events:
   proof_warning: true
 - date: '2020-01-01'
   title: Pioneers Australia's first standing citizens' panels (Mornington Peninsula
-    Shire & City of Kingston)
+    Shire & City of Kingston); Kimbra White presents at DOD 2020 Primer
   url: https://mosaiclab.com.au/about-us
   proof_level: medium
   url_checked: '2026-08-10'
@@ -154,7 +154,7 @@ MosaicLab's pro-bono arm provides each recipient project **$5,000** toward costs
 
 ## Key people
 
-- **Kimbra White, Nicole Hunter, and Keith Greaves** — co-founders. All three bring backgrounds spanning community engagement, public policy, and deliberative process design.[^mosaiclab]
+- **Kimbra White, Nicole Hunter, and Keith Greaves** — co-founders. All three bring backgrounds spanning community engagement, public policy, and deliberative process design. Kimbra White has presented to DOD on deliberative democracy practice.[^mosaiclab]
 
 ## Links
 
@@ -167,7 +167,7 @@ MosaicLab's pro-bono arm provides each recipient project **$5,000** toward costs
 - [Deliberative Democracy](../concepts/deliberative-democracy.md)
 - [Consensus Mapping](../concepts/consensus-mapping.md)
 - [DemocracyCo](democracyco.md)
-- [Designing Open Democracy 2020 Primer](../../blog/posts/2022-02-24-podcast.md) — MosaicLab members attended this DOD meetup
+- [Designing Open Democracy 2020 Primer](../../blog/posts/2022-02-24-podcast.md) — Kimbra White from MosaicLab appeared at this DOD meetup
 - [Democracy beyond the ballot box: recap of our International Day of Democracy panel](../../blog/posts/2026-09-26-international-day-of-democracy-recap.md) — Nicole Hunter on how a citizens' jury is run, from random invitation to the group writing its own report, 2026
 
 [^mosaiclab]: "Kimbra co-founded MosaicLab in 2013 and sees the group as a platform for continuous learning about participation." [Kimbra White](https://mosaiclab.com.au/news-all-posts/2016/8/16/meet-a-co-founder-kimbra-white) co-founder bio. See also Nicole Hunter and Keith Greaves bios.

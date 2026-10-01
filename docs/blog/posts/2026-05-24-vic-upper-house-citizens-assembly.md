@@ -32,7 +32,7 @@ What's notable here is the *process* question as much as the *outcome* question:
 
 **From DOD's archive:**
 - [Citizens' Democracy (2017)](2017-10-21-podcast.md) — Nicholas Gruen's proposal for a citizens' chamber alongside the Senate, and Hubertus Hofkirchner on how the City of Melbourne recruited its 2014 citizens' jury.
-- [DOD 2020 Primer](2022-02-24-podcast.md) — a MosaicLab member, speaking from the floor, on how citizens' jury members are recruited in practice.
+- [DOD 2020 Primer](2022-02-24-podcast.md) — MosaicLab's Kimbra White on how citizens' jury members are recruited in practice.
 - [Isegoria (2020)](2020-03-20-podcast.md) — Gruen on why a standing citizens' assembly doesn't need Parliament's permission.
 - [International Day of Democracy recap (2026)](2026-09-26-international-day-of-democracy-recap.md) — Gruen and MosaicLab's Nicole Hunter, ahead of the Victorian election.
 
