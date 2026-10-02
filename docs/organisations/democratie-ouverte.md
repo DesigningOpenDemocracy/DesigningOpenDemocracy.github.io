@@ -78,7 +78,7 @@ activity:
     url: https://www.democratieouverte.org
     checked: 2026-09-28
   rss:
-    checked: 2026-09-25
+    checked: 2026-10-02
     note: No feed found
   scrape:
     hint: no_markup

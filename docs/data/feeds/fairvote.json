@@ -1,0 +1,70 @@
+{
+  "feed": "https://fairvote.org/feed",
+  "latest": "2026-09-29",
+  "span_days": 49,
+  "items": [
+    {
+      "date": "2026-09-29",
+      "title": "Where will ranked choice voting be used in the 2026 elections?",
+      "url": "https://fairvote.org/where-will-ranked-choice-voting-be-used-in-the-2026-elections/"
+    },
+    {
+      "date": "2026-09-21",
+      "title": "The future of Black political representation and power",
+      "url": "https://fairvote.org/the-future-of-black-political-representation-and-power/",
+      "signals": [
+        "legal or legislative"
+      ]
+    },
+    {
+      "date": "2026-09-21",
+      "title": "FairVote news update: Sep. 21, 2026",
+      "url": "https://fairvote.org/fairvote-news-update-sep-21-2026/",
+      "routine": [
+        "newsletter or roundup"
+      ]
+    },
+    {
+      "date": "2026-09-08",
+      "title": "Three cities to vote on ranked choice voting this November",
+      "url": "https://fairvote.org/three-cities-to-vote-on-ranked-choice-voting-this-november/"
+    },
+    {
+      "date": "2026-08-28",
+      "title": "Dan Sullivan faces Dan Sullivan for Alaska Senate seat",
+      "url": "https://fairvote.org/dan-sullivan-faces-dan-sullivan-for-alaska-senate-seat/"
+    },
+    {
+      "date": "2026-08-24",
+      "title": "FairVote news update: Aug 24, 2026",
+      "url": "https://fairvote.org/fairvote-news-update-aug-24-2026/",
+      "routine": [
+        "newsletter or roundup"
+      ]
+    },
+    {
+      "date": "2026-08-21",
+      "title": "South Carolina runoff to replace Lindsey Graham is state’s 4th election in 11 weeks",
+      "url": "https://fairvote.org/south-carolina-runoff-to-replace-lindsey-graham-is-states-4th-election-in-11-weeks/"
+    },
+    {
+      "date": "2026-08-13",
+      "title": "Alaska to see highly competitive primaries and general elections",
+      "url": "https://fairvote.org/alaska-to-see-highly-competitive-primaries-and-general-elections/"
+    },
+    {
+      "date": "2026-08-12",
+      "title": "68,000 “zombie votes” decide Wisconsin governor primary",
+      "url": "https://fairvote.org/68000-zombie-votes-decide-wisconsin-governor-primary/"
+    },
+    {
+      "date": "2026-08-11",
+      "title": "“Zombie votes” shape Michigan and Wisconsin primary elections",
+      "url": "https://fairvote.org/zombie-votes-shape-michigan-and-wisconsin-primary-elections/"
+    }
+  ],
+  "fetch": {
+    "etag": "W/\"53aa66947b9d255e003c584822f6824e\"",
+    "last_modified": "Thu, 01 Oct 2026 20:27:25 GMT"
+  }
+}

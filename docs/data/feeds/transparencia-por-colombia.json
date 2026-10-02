@@ -1,0 +1,64 @@
+{
+  "feed": "https://transparenciacolombia.org.co/feed",
+  "latest": "2026-10-01",
+  "span_days": 92,
+  "items": [
+    {
+      "date": "2026-10-01",
+      "title": "Opinión de Transparencia por Colombia sobre el proceso de revisión de constitucionalidaddel Decreto Legislativo 1420 del 17 de septiembre de 2026",
+      "url": "https://transparenciacolombia.org.co/opinion-sobre-revision-constitucionalidad-decreto-legislativo-1420-17-septiembre-2026/"
+    },
+    {
+      "date": "2026-08-19",
+      "title": "Recomendaciones en materia de transparencia y lucha contra la corrupción para atender la situación de desastre nacional ocasionada por el terremoto del 10 de agosto de 2026",
+      "url": "https://transparenciacolombia.org.co/recomendaciones-atender-emergencia-terremoto-agosto-2026/"
+    },
+    {
+      "date": "2026-08-18",
+      "title": "Empresas de servicios públicos alcanzan un nivel óptimo en la Medición de Transparencia Empresarial (MTE) 2026",
+      "url": "https://transparenciacolombia.org.co/empresas-servicios-publicos-alcanzan-nivel-optimo-mte-2026/"
+    },
+    {
+      "date": "2026-08-03",
+      "title": "Transparencia por Colombia presenta el balance de la acción anticorrupción del Gobierno de Gustavo Petro",
+      "url": "https://transparenciacolombia.org.co/transparencia-por-colombia-presenta-balance-accion-anticorrupcion-gobierno-gustavo-petro/"
+    },
+    {
+      "date": "2026-08-03",
+      "title": "Balance de cierre de la acción pública anticorrupción del Gobierno Nacional 2022-2026",
+      "url": "https://transparenciacolombia.org.co/balance-cierre-accion-publica-anticorrupcion-gobierno-nacional-2022-2026/"
+    },
+    {
+      "date": "2026-07-18",
+      "title": "Análisis de la contratación del gobierno nacional posterior a la ley de garantías",
+      "url": "https://transparenciacolombia.org.co/analisis-contratacion-gobierno-nacional-posterior-ley-de-garantias/"
+    },
+    {
+      "date": "2026-07-17",
+      "title": "Recomendaciones para el proyecto de Ley 476 de 2025 de Cámara de representantes. «Por la cual se adoptan medidas de protección para personas frente al reporte o denuncia de presuntos actos y/o hechos de corrupción».",
+      "url": "https://transparenciacolombia.org.co/recomendaciones-para-proyecto-de-ley-476-2025-camara-representantes/"
+    },
+    {
+      "date": "2026-07-17",
+      "title": "Convocatoria para videógrafo(a)",
+      "url": "https://transparenciacolombia.org.co/convocatoria-para-videografoa/",
+      "routine": [
+        "job ad"
+      ]
+    },
+    {
+      "date": "2026-07-06",
+      "title": "Actualizaciones en el caso UNGRD",
+      "url": "https://transparenciacolombia.org.co/actualizaciones-en-el-caso-ungrd/"
+    },
+    {
+      "date": "2026-07-01",
+      "title": "La lucha contra la corrupción como una alta prioridad del nuevo gobierno",
+      "url": "https://transparenciacolombia.org.co/la-lucha-contra-la-corrupcion-como-una-alta-prioridad-del-nuevo-gobierno/"
+    }
+  ],
+  "fetch": {
+    "etag": "\"9e4ede36db91fb8ae4a87f4e0a0a8418\"",
+    "last_modified": "Thu, 01 Oct 2026 22:48:15 GMT"
+  }
+}

@@ -21,6 +21,7 @@ location:
   longitude: -74.0721
   name: Bogotá, Colombia
   precision: city
+rss_feed: https://www.movilizatorio.org/feed
 events:
 - date: '2016-01-01'
   title: Founded in Bogotá as a citizen participation and social innovation laboratory
@@ -63,10 +64,11 @@ activity:
     url: https://www.movilizatorio.org
     checked: 2026-09-19
   rss:
-    date: 2026-09-21
-    note: 'Latest post: Movilizatorio es parte de los 100 Nuevos Líderes de Colombia'
-    url: https://www.movilizatorio.org/movilizatorio-es-parte-de-los-100-nuevos-lideres-de-colombia/
-    checked: 2026-09-25
+    date: 2026-09-30
+    note: 'Latest post: Un mensaje desde el corazón del mundo: sobre la inteligencia
+      artificial'
+    url: https://www.movilizatorio.org/un-mensaje-desde-el-corazon-del-mundo-sobre-la-inteligencia-artificial/
+    checked: 2026-10-02
 last_checked: '2026-09-19'
 ---
 

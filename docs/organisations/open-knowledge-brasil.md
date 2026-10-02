@@ -22,6 +22,7 @@ location:
   longitude: -46.6333
   name: São Paulo, Brazil
   precision: city
+rss_feed: https://ok.org.br/feed
 events:
 - date: '2013-01-01'
   title: Founded as the Brazilian chapter of Open Knowledge, promoting open data and
@@ -59,11 +60,11 @@ activity:
     url: https://ok.org.br
     checked: 2026-09-19
   rss:
-    date: 2026-09-24
-    note: 'Latest post: Restrição de acesso a microdados do Censo 2022 é inadequada
-      e excessiva'
-    url: https://ok.org.br/noticia/restricao-de-acesso-a-microdados-do-censo-2022-e-inadequada-e-excessiva/
-    checked: 2026-09-25
+    date: 2026-10-01
+    note: 'Latest post: 8º Prêmio Cláudio Weber Abramo de Jornalismo de Dados divulga
+      projetos finalista'
+    url: https://ok.org.br/noticia/8o-premio-claudio-weber-abramo-de-jornalismo-de-dados-divulga-projetos-finalistas/
+    checked: 2026-10-02
 last_checked: '2026-09-19'
 ---
 

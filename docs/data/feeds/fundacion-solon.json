@@ -16,7 +16,10 @@
     {
       "date": "2026-09-02",
       "title": "Pueblo Indígena Mosetén exige a la AJAM cumplir con la Constitución y respetar las decisiones de la Jurisdicción Indígena Mosetén",
-      "url": "https://fundacionsolon.org/pueblo-indigena-moseten-exige-a-la-ajam-cumplir-con-la-constitucion-y-respetar-las-decisiones-de-la-jurisdiccion-indigena-moseten/"
+      "url": "https://fundacionsolon.org/pueblo-indigena-moseten-exige-a-la-ajam-cumplir-con-la-constitucion-y-respetar-las-decisiones-de-la-jurisdiccion-indigena-moseten/",
+      "signals": [
+        "flagship event"
+      ]
     },
     {
       "date": "2026-09-01",
@@ -53,5 +56,9 @@
       "title": "Cultura es lo que queda cuando ya no queda nada",
       "url": "https://fundacionsolon.org/cultura-es-lo-que-queda-cuando-ya-no-queda-nada/"
     }
-  ]
+  ],
+  "fetch": {
+    "etag": "\"5fb29ede26fcafa1bfa63e11a027cb64\"",
+    "last_modified": "Tue, 29 Sep 2026 17:09:53 GMT"
+  }
 }

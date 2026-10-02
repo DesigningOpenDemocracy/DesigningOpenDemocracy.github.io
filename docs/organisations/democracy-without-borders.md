@@ -19,6 +19,7 @@ location:
   longitude: 13.405
   name: Berlin, Germany
   precision: city
+rss_feed: https://www.democracywithoutborders.org/feed
 related_orgs:
 - democracy-international
 events:

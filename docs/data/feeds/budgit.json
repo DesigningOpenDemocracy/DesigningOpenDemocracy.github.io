@@ -1,0 +1,61 @@
+{
+  "feed": "https://budgit.org/feed",
+  "latest": "2026-10-01",
+  "span_days": 78,
+  "items": [
+    {
+      "date": "2026-10-01",
+      "title": "The Nigeria We Envision",
+      "url": "https://budgit.org/the-nigeria-we-envision/"
+    },
+    {
+      "date": "2026-09-21",
+      "title": "Perhaps Frustration is not Apathy: my reflection from monitoring the 2026 Osun State Governorship Elections.",
+      "url": "https://budgit.org/perhaps-frustration-is-not-apathy-my-reflection-from-monitoring-the-2026-osun-state-governorship-elections/"
+    },
+    {
+      "date": "2026-08-19",
+      "title": "Outside The Grid: Solutions To Electrification Challenges In Underserved And Unserved Communities",
+      "url": "https://budgit.org/outside-the-grid-solutions-to-electrification-challenges-in-underserved-and-unserved-communities/"
+    },
+    {
+      "date": "2026-08-19",
+      "title": "How Digital Tools Like the PHC Accountability Tracka Are Closing the Gap Between Government Commitments and Community-Level Healthcare Realities",
+      "url": "https://budgit.org/role-of-technology-in-improving-phc-service-delivery-how-digital-tools-like-the-phc-accountability-tracka-are-closing-the-gap-between-government-commitments-and-community-level-healthcare-re/"
+    },
+    {
+      "date": "2026-08-19",
+      "title": "Health Insurance in Nigeria: Progress, Gaps and the Path to Universal Coverage",
+      "url": "https://budgit.org/health-insurance-in-nigeria-progress-gaps-and-the-path-to-universal-coverage/"
+    },
+    {
+      "date": "2026-08-19",
+      "title": "Five Years of the Host Community Development Trust: Progress, Perils and the Path Forward",
+      "url": "https://budgit.org/five-years-of-the-host-community-development-trust-progress-perils-and-the-path-forward/"
+    },
+    {
+      "date": "2026-08-19",
+      "title": "Bigger Budgets, Slower Delivery: What Early 2026 State Spending Reveals",
+      "url": "https://budgit.org/bigger-budgets-slower-delivery-what-early-2026-state-spending-reveals/"
+    },
+    {
+      "date": "2026-08-19",
+      "title": "Beyond Transparency: How Nigeria’s States Are Slowly Opening Up",
+      "url": "https://budgit.org/beyond-transparency-how-nigerias-states-are-slowly-opening-up/"
+    },
+    {
+      "date": "2026-07-24",
+      "title": "Empowering the Future of Girls through Stakeholder and Community Engagement",
+      "url": "https://budgit.org/empowering-the-future-of-girls-through-stakeholder-and-community-engagement/"
+    },
+    {
+      "date": "2026-07-15",
+      "title": "A Disengaged Citizen Is Also an Olodo",
+      "url": "https://budgit.org/a-disengaged-citizen-is-also-an-olodo/"
+    }
+  ],
+  "fetch": {
+    "etag": "\"af9d5db4809ad22454f0ab19288e48f3-gzip\"",
+    "last_modified": "Thu, 01 Oct 2026 10:36:31 GMT"
+  }
+}

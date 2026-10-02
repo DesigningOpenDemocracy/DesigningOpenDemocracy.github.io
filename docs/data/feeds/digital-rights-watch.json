@@ -1,0 +1,163 @@
+{
+  "feed": "https://digitalrightswatch.org.au/index.xml",
+  "latest": "2026-10-02",
+  "span_days": 9405,
+  "items": [
+    {
+      "date": "2026-10-02",
+      "title": "Submission on the National AI Standards paper",
+      "url": "/2026/10/02/submission-on-the-national-ai-standards-paper/"
+    },
+    {
+      "date": "2026-09-29",
+      "title": "Big Tech vs. your data & your democracy",
+      "url": "/2026/09/29/big-tech-vs.-your-data-your-democracy/"
+    },
+    {
+      "date": "2026-09-22",
+      "title": "Submission on the Online Safety Amendment (Digital Duty of Care) Bill 2026",
+      "url": "/2026/09/22/submission-on-the-online-safety-amendment-digital-duty-of-care-bill-2026/"
+    },
+    {
+      "date": "2026-09-18",
+      "title": "Submission on the Privacy Amendment (Personal Data Protection) Bill 2026",
+      "url": "/2026/09/18/submission-on-the-privacy-amendment-personal-data-protection-bill-2026/"
+    },
+    {
+      "date": "2026-09-17",
+      "title": "AI Forum - Community of Practice",
+      "url": "/ai-forum-community-of-practice/"
+    },
+    {
+      "date": "2026-09-15",
+      "title": "Digital Duty of Care Submission Guide",
+      "url": "/2026/09/15/digital-duty-of-care-submission-guide/"
+    },
+    {
+      "date": "2026-09-10",
+      "title": "Submission to AUKUS Inquiry",
+      "url": "/2026/09/10/submission-to-aukus-inquiry/",
+      "signals": [
+        "legal or legislative"
+      ]
+    },
+    {
+      "date": "2026-09-08",
+      "title": "Submission to Joint Select Committee on Artificial Intelligence",
+      "url": "/2026/09/08/submission-to-joint-select-committee-on-artificial-intelligence/"
+    },
+    {
+      "date": "2026-09-04",
+      "title": "Submission to Inquiry into artificial intelligence and data centres",
+      "url": "/2026/09/04/submission-to-inquiry-into-artificial-intelligence-and-data-centres/",
+      "signals": [
+        "legal or legislative"
+      ]
+    },
+    {
+      "date": "2026-09-02",
+      "title": "Media Release: Questions to be answered on AUKUS Pillar II",
+      "url": "/2026/09/02/media-release-questions-to-be-answered-on-aukus-pillar-ii/"
+    },
+    {
+      "date": "2026-08-04",
+      "title": "Smart glasses are a covert surveillance regime in a wearable disguise",
+      "url": "/2026/08/04/smart-glasses-are-a-covert-surveillance-regime-in-a-wearable-disguise/"
+    },
+    {
+      "date": "2026-07-28",
+      "title": "Petition: Right to Refuse AI Scribes in Healthcare",
+      "url": "/campaigns/right-to-refuse/",
+      "routine": [
+        "petition"
+      ]
+    },
+    {
+      "date": "2026-07-28",
+      "title": "Off the Record - AI Scribes in Australian Healthcare",
+      "url": "/AI-scribe-report/"
+    },
+    {
+      "date": "2026-07-28",
+      "title": "Media Release: New report finds AI scribe industry operating with no meaningful oversight. Patients locked out of care for refusing AI scribes.",
+      "url": "/2026/07/28/media-release-new-report-finds-ai-scribe-industry-operating-with-no-meaningful-oversight.-patients-locked-out-of-care-for-refusing-ai-scribes./",
+      "signals": [
+        "publication"
+      ]
+    },
+    {
+      "date": "2026-07-28",
+      "title": "Guide for Using AI Scribes in the Medical Sector",
+      "url": "/guide-for-AI-scribes/",
+      "signals": [
+        "publication"
+      ]
+    },
+    {
+      "date": "2026-07-28",
+      "title": "AI Transcription in Healthcare",
+      "url": "/campaigns/ai-transcription-in-healthcare/"
+    },
+    {
+      "date": "2026-06-15",
+      "title": "Military-grade AI: the future of civilian surveillance?",
+      "url": "/2026/06/15/military-grade-ai-the-future-of-civilian-surveillance/"
+    },
+    {
+      "date": "2026-06-11",
+      "title": "No datacentres for hyperscalers",
+      "url": "/campaigns/datacentres/"
+    },
+    {
+      "date": "2026-06-05",
+      "title": "Submission to the Office of the Australian Information Commissioner regarding the Children’s Online Privacy Code",
+      "url": "/2026/06/05/submission-to-the-office-of-the-australian-information-commissioner-regarding-the-childrens-online-privacy-code/"
+    },
+    {
+      "date": "2026-05-22",
+      "title": "Media Release: Amid Repro Uncensored and Dutch Queer Groups’ Landmark Legal Action Against Meta, Australian Organisations Warn Similar Cases Could Build Toward Future Legal Action",
+      "url": "/2026/05/22/media-release-amid-repro-uncensored-and-dutch-queer-groups-landmark-legal-action-against-meta-australian-organisations-warn-similar-cases-could-build-toward-future-legal-action/"
+    },
+    {
+      "date": "2026-05-18",
+      "title": "Media Release: Regulators must step in to protect patients from AI Scribes",
+      "url": "/2026/05/18/media-release-regulators-must-step-in-to-protect-patients-from-ai-scribes/"
+    },
+    {
+      "date": "2026-05-13",
+      "title": "Too Much Information: Dating Apps and AI",
+      "url": "/2026/05/13/too-much-information-dating-apps-and-ai/"
+    },
+    {
+      "date": "2026-05-11",
+      "title": "Stop Tech Facilitated Gender Based Violence",
+      "url": "/campaigns/tfgbv/"
+    },
+    {
+      "date": "2026-05-11",
+      "title": "State interference and censorship at RightsCon 2026",
+      "url": "/2026/05/11/state-interference-and-censorship-at-rightscon-2026/"
+    },
+    {
+      "date": "2026-04-27",
+      "title": "Submission to the Standing Committee on Petitions Regarding the Inquiry into the Standing Orders Relating to Petitions",
+      "url": "/2026/04/27/submission-to-the-standing-committee-on-petitions-regarding-the-inquiry-into-the-standing-orders-relating-to-petitions/",
+      "signals": [
+        "legal or legislative"
+      ]
+    },
+    {
+      "date": "2026-04-23",
+      "title": "Media Release: RentTech platforms must stop unfair and excessive personal information collection",
+      "url": "/2026/04/23/media-release-renttech-platforms-must-stop-unfair-and-excessive-personal-information-collection/"
+    },
+    {
+      "date": "2026-04-20",
+      "title": "Response to the Online Safety Act Review",
+      "url": "/2026/04/20/response-to-the-online-safety-act-review/"
+    }
+  ],
+  "fetch": {
+    "etag": "\"ed511de03a264ef73e11831bf9518776-ssl-df\""
+  }
+}

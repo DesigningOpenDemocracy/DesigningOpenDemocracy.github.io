@@ -1,0 +1,79 @@
+{
+  "feed": "https://perludem.or.id/feed",
+  "latest": "2026-09-15",
+  "span_days": 50,
+  "items": [
+    {
+      "date": "2026-09-15",
+      "title": "Assessing the Constitutionality of E-Voting, Perludem Calls for a Needs-Based Approach",
+      "url": "https://perludem.or.id/assessing-the-constitutionality-of-e-voting-perludem-calls-for-a-needs-based-approach/",
+      "signals": [
+        "flagship event"
+      ]
+    },
+    {
+      "date": "2026-09-01",
+      "title": "Safeguarding The Rule Of The Democratic Game",
+      "url": "https://perludem.or.id/safeguarding-the-rule-of-the-democratic-game/"
+    },
+    {
+      "date": "2026-09-01",
+      "title": "Perludem Launches Research, Calls for Stronger AI Regulations in Election Campaigns",
+      "url": "https://perludem.or.id/perludem-launches-research-calls-for-stronger-ai-regulations-in-election-campaigns/",
+      "signals": [
+        "launch"
+      ]
+    },
+    {
+      "date": "2026-09-01",
+      "title": "Perludem Calls for Digital Public Infrastructure to Strengthen Democracy",
+      "url": "https://perludem.or.id/perludem-calls-for-digital-public-infrastructure-to-strengthen-democracy/",
+      "signals": [
+        "launch"
+      ]
+    },
+    {
+      "date": "2026-09-01",
+      "title": "Democratizing Digital Public Infrastructure",
+      "url": "https://perludem.or.id/democratizing-digital-public-infrastructure/",
+      "signals": [
+        "publication"
+      ]
+    },
+    {
+      "date": "2026-09-01",
+      "title": "Bridging the Regulatory Gaps in Election Campaigns in the Age of Artificial Intelligence",
+      "url": "https://perludem.or.id/bridging-the-regulatory-gaps-in-election-campaigns-in-the-age-of-artificial-intelligence/"
+    },
+    {
+      "date": "2026-08-06",
+      "title": "Democracy Academy Anthology: Nurturing Reason, Fostering Democracy",
+      "url": "https://perludem.or.id/democracy-academy-anthology-nurturing-reason-fostering-democracy/"
+    },
+    {
+      "date": "2026-08-03",
+      "title": "Perludem Examines Legal Framework for the Use of AI in Election Campaigns",
+      "url": "https://perludem.or.id/perludem-examines-legal-framework-for-the-use-of-ai-in-election-campaigns/"
+    },
+    {
+      "date": "2026-07-30",
+      "title": "Perludem and PSI Jakarta Finalize Guidelines on Eliminating Sexual Violence within Political Parties",
+      "url": "https://perludem.or.id/perludem-and-psi-jakarta-finalize-guidelines-on-eliminating-sexual-violence-within-political-parties/"
+    },
+    {
+      "date": "2026-07-27",
+      "title": "Presentation Materials: “Understanding the Mixed Electoral System and Simulation Results in Indonesia”",
+      "url": "https://perludem.or.id/presentation-materials-understanding-the-mixed-electoral-system-and-simulation-results-in-indonesia/",
+      "signals": [
+        "publication"
+      ],
+      "mentions": [
+        "International IDEA"
+      ]
+    }
+  ],
+  "fetch": {
+    "etag": "W/\"bf573040f0cf342bdfc5fcd6e7861f8d\"",
+    "last_modified": "Thu, 17 Sep 2026 04:50:36 GMT"
+  }
+}

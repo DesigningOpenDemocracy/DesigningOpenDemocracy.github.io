@@ -1,0 +1,64 @@
+{
+  "feed": "https://chinademocrats.org/?feed=rss2",
+  "latest": "2026-10-02",
+  "span_days": 6,
+  "items": [
+    {
+      "date": "2026-10-02",
+      "title": "金发女郎谬误：韩国核武角色未定边界",
+      "url": "https://chinademocrats.org/?p=7275"
+    },
+    {
+      "date": "2026-10-01",
+      "title": "人民币国际化是不是踢到铁板了？",
+      "url": "https://chinademocrats.org/?p=7268"
+    },
+    {
+      "date": "2026-09-29",
+      "title": "共产党从旧习俗死敌，摇身一变成了旧习俗拥护者",
+      "url": "https://chinademocrats.org/?p=7233"
+    },
+    {
+      "date": "2026-09-29",
+      "title": "全球每年约9000亿美元慈善，为何几乎不用来支持民主自由？",
+      "url": "https://chinademocrats.org/?p=7241",
+      "mentions": [
+        "Economist Intelligence Unit"
+      ]
+    },
+    {
+      "date": "2026-09-28",
+      "title": "不是崩溃，而是慢慢下沉：中国经济模式为何失灵",
+      "url": "https://chinademocrats.org/?p=7217"
+    },
+    {
+      "date": "2026-09-28",
+      "title": "《大西洋月刊》：台湾会就此放弃吗？",
+      "url": "https://chinademocrats.org/?p=7214"
+    },
+    {
+      "date": "2026-09-27",
+      "title": "贿选真的有用吗？——政治学者格林谈竞争、秘密投票与“特朗普红利”",
+      "url": "https://chinademocrats.org/?p=7192"
+    },
+    {
+      "date": "2026-09-27",
+      "title": "廉价弹药改写战争规则",
+      "url": "https://chinademocrats.org/?p=7181"
+    },
+    {
+      "date": "2026-09-27",
+      "title": "书评：持不同政见是一种能力，而非使命",
+      "url": "https://chinademocrats.org/?p=7201"
+    },
+    {
+      "date": "2026-09-26",
+      "title": "王天成：走向战略性非暴力对抗",
+      "url": "https://chinademocrats.org/?p=7167"
+    }
+  ],
+  "fetch": {
+    "etag": "\"e1e276f5b1aa5ca2d065751ef813c638\"",
+    "last_modified": "Fri, 02 Oct 2026 04:33:21 GMT"
+  }
+}

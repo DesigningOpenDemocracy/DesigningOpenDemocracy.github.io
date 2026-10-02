@@ -1,0 +1,9 @@
+{
+  "feed": "https://folio.org.au/events/RSS",
+  "failing": {
+    "error": "NETWORK_ERROR",
+    "since": "2026-10-02",
+    "count": 1,
+    "last": "2026-10-02"
+  }
+}

@@ -85,10 +85,10 @@ activity:
     url: https://www.designingopendemocracy.com
     checked: 2026-09-17
   sitemap:
-    date: 2026-09-25
+    date: 2026-10-01
     note: Page last modified (from sitemap)
     url: https://designingopendemocracy.com/sitemap.xml
-    checked: 2026-09-25
+    checked: 2026-10-02
 last_checked: '2026-09-17'
 ---
 

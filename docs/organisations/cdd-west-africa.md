@@ -60,7 +60,7 @@ activity:
     checked: 2026-09-25
     note: News page found, no machine-readable date
   sitemap:
-    checked: 2026-09-25
+    checked: 2026-10-02
     date: 2026-06-05
     note: Server still up (sitemap detected)
   url: https://www.cddwestafrica.org/blog/

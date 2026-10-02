@@ -76,7 +76,7 @@ activity:
       Recorded contact still current.
     url: https://helenclark.foundation
   sitemap:
-    checked: 2026-09-25
+    checked: 2026-10-02
     note: Sitemap found, no lastmod
 last_checked: '2026-09-17'
 ---

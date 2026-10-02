@@ -47,7 +47,7 @@ activity:
     date: 2026-09-23
     note: Page last modified (from sitemap)
     url: https://itsrio.org/sitemap.xml
-    checked: 2026-09-25
+    checked: 2026-10-02
 last_checked: '2026-09-19'
 ---
 

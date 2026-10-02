@@ -69,7 +69,7 @@ activity:
     url: https://www.prediki.com
     checked: 2026-09-15
   rss:
-    checked: 2026-09-25
+    checked: 2026-10-02
     note: No feed found
   scrape:
     hint: unreachable

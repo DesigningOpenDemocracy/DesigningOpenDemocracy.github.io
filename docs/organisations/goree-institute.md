@@ -23,6 +23,7 @@ location:
   longitude: -17.4677
   name: Dakar, Senegal
   precision: city
+rss_feed: https://goreeinstitut.org/feed
 events:
 - date: '1992-01-01'
   title: Founded on Gorée Island, Senegal, as a Centre for Democracy, Development
@@ -64,11 +65,11 @@ activity:
     url: https://goreeinstitut.org
     checked: 2026-09-17
   rss:
-    date: 2026-09-07
-    note: 'Latest post: Renforcement du dialogue stratégique entre le Sénégal et l’Allemagne
-      autour des '
-    url: https://goreeinstitut.org/renforcement-du-dialogue-strategique-entre-le-senegal-et-lallemagne-autour-des-enjeux-de-paix-de-securite-et-de-gouvernance/
-    checked: 2026-09-25
+    date: 2026-09-28
+    note: 'Latest post: Phase 3 du programme Investir dans les jeunes chercheurs au
+      Sahel : de la recher'
+    url: https://goreeinstitut.org/phase-3-du-programme-investir-dans-les-jeunes-chercheurs-au-sahel-de-la-recherche-a-laction/
+    checked: 2026-10-02
 last_checked: '2026-09-17'
 ---
 

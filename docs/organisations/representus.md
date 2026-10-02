@@ -21,6 +21,7 @@ location:
   longitude: -72.6666
   name: Florence, Massachusetts, USA
   precision: city
+rss_feed: https://represent.us/feed
 related_orgs:
 - fairvote
 events:
@@ -52,10 +53,10 @@ activity:
     url: https://represent.us
     checked: 2026-09-20
   rss:
-    date: 2026-09-23
-    note: RSS feed active
-    url: https://represent.us/news/50398/
-    checked: 2026-09-25
+    date: 2026-09-30
+    note: 'Latest post: Senate Rejects “Stop Insider Trading Act” as a Sham'
+    url: https://represent.us/news/50419/
+    checked: 2026-10-02
 last_checked: '2026-09-20'
 ---
 

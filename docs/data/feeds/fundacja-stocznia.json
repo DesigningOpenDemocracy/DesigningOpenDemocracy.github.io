@@ -1,0 +1,46 @@
+{
+  "feed": "https://stocznia.org.pl/feed",
+  "latest": "2026-06-25",
+  "span_days": 129,
+  "items": [
+    {
+      "date": "2026-06-25",
+      "title": "Wspólne oświadczenie polskich i ukraińskich organizacji, działaczy i działaczek społecznych",
+      "url": "https://stocznia.org.pl/2026/06/25/wspolne-oswiadczenie-polskich-i-ukrainskich-organizacji-dzialaczy-i-dzialaczek-spolecznych/"
+    },
+    {
+      "date": "2026-06-18",
+      "title": "List do Premiera o budowaniu społecznej odporności",
+      "url": "https://stocznia.org.pl/2026/06/18/list-do-premiera-o-budowaniu-spolecznej-odpornosci/"
+    },
+    {
+      "date": "2026-06-18",
+      "title": "13. Forum Praktyków Partycypacji: ponad 300 osób, 40 sesji i wspólne pytanie o miejsce partycypacji w demokracji",
+      "url": "https://stocznia.org.pl/2026/06/18/13-forum-praktykow-partycypacji-ponad-300-osob-40-sesji-i-wspolne-pytanie-o-miejsce-partycypacji-w-demokracji/"
+    },
+    {
+      "date": "2026-06-01",
+      "title": "Konkurs dotacyjny dla organizacji społecznych na wsparcie demokracji, praworządności i praw człowieka",
+      "url": "https://stocznia.org.pl/2026/06/01/konkurs-dotacyjny-dla-organizacji-spolecznych-na-wsparcie-demokracji-praworzadnosci-i-praw-czlowieka/"
+    },
+    {
+      "date": "2026-05-21",
+      "title": "Apel organizacji społecznych w sprawie standardów wyboru Rzecznika Praw Obywatelskich",
+      "url": "https://stocznia.org.pl/2026/05/21/apel-organizacji-spolecznych-w-sprawie-standardow-wyboru-rzecznika-praw-obywatelskich/"
+    },
+    {
+      "date": "2026-05-20",
+      "title": "Szukamy dostarczyciela usług hotelarskich – zapytanie ofertowe",
+      "url": "https://stocznia.org.pl/2026/05/20/szukamy-dostarczyciela-uslug-hotelarskich-zapytanie-ofertowe-2/"
+    },
+    {
+      "date": "2026-04-14",
+      "title": "Mapa przepływów 1,5% pokazuje, skąd trafiają środki do OPP",
+      "url": "https://stocznia.org.pl/2026/04/14/mapa-przeplywow-15-pokazuje-skad-trafiaja-srodki-do-opp/"
+    }
+  ],
+  "fetch": {
+    "etag": "W/\"84e857af4dfd9749c7267edc5c663720\"",
+    "last_modified": "Mon, 28 Sep 2026 11:51:40 GMT"
+  }
+}

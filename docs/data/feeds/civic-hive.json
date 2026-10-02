@@ -1,0 +1,69 @@
+{
+  "feed": "https://civichive.org/feed",
+  "latest": "2026-09-23",
+  "span_days": 103,
+  "items": [
+    {
+      "date": "2026-09-23",
+      "title": "Unlearning the Past to Propel a New Future",
+      "url": "https://civichive.org/unlearning-the-past-to-propel-a-new-future/"
+    },
+    {
+      "date": "2026-08-25",
+      "title": "APPLY: Creative Changemakers Fellowship 2026",
+      "url": "https://civichive.org/ccmf2026/"
+    },
+    {
+      "date": "2026-08-21",
+      "title": "Observing the 2026 Osun Gubernatorial Election: A First-Hand Experience",
+      "url": "https://civichive.org/2026-osun-gubernatorial-election/"
+    },
+    {
+      "date": "2026-08-10",
+      "title": "Navigating Technology and Inclusion in Nigeria’s Electoral Future",
+      "url": "https://civichive.org/navigating-technology-and-inclusion-in-nigerias-electoral-future/"
+    },
+    {
+      "date": "2026-08-06",
+      "title": "2026 Osun State Governorship Election: Another Test for Democratic Participation",
+      "url": "https://civichive.org/2026-osun-state-governorship-election/"
+    },
+    {
+      "date": "2026-07-26",
+      "title": "West Africa CivicTech Conference 2026: Shaping the Future of Governance Through Youth and Technology",
+      "url": "https://civichive.org/west-africa-civictech-conference-2026-shaping-the-future-of-governance-through-youth-and-technology/",
+      "signals": [
+        "flagship event"
+      ]
+    },
+    {
+      "date": "2026-07-25",
+      "title": "Active Citizens Awards 2026 Honours Nigeria’s Changemakers",
+      "url": "https://civichive.org/active-citizens-awards-2026-honours-nigerias-changemakers/",
+      "signals": [
+        "award or recognition"
+      ]
+    },
+    {
+      "date": "2026-07-06",
+      "title": "Strengthening Advocacy for Impact: Insights from the Freedom Advocacy Workshop 2026",
+      "url": "https://civichive.org/strengthening-advocacy-for-impact/"
+    },
+    {
+      "date": "2026-07-02",
+      "title": "Youth, Technology, and the Future of Governance in West Africa",
+      "url": "https://civichive.org/youth-technology-and-the-future-of-governance/",
+      "signals": [
+        "flagship event"
+      ]
+    },
+    {
+      "date": "2026-06-12",
+      "title": "Fix The Future Today",
+      "url": "https://civichive.org/fix-the-future-today/"
+    }
+  ],
+  "fetch": {
+    "last_modified": "Sat, 26 Sep 2026 00:31:34 GMT"
+  }
+}

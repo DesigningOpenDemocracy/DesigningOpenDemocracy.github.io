@@ -22,6 +22,7 @@ location:
   longitude: 126.978
   name: Seoul, South Korea
   precision: city
+rss_feed: https://www.peoplepower21.org/feed
 events:
 - date: '1994-09-10'
   title: Founded with ~200 members in Seoul as People's Solidarity for Participatory
@@ -57,10 +58,10 @@ activity:
     url: https://www.peoplepower21.org
     checked: 2026-09-19
   rss:
-    date: 2026-09-23
-    note: 'Latest post: [논평] 재제청 거부 조희대 대법원장 헌법 위에 서려하나'
-    url: https://peoplepower21.org/judiciary/2029874
-    checked: 2026-09-25
+    date: 2026-10-02
+    note: 'Latest post: 한 눈에 보는 참여연대의 한 달'
+    url: https://peoplepower21.org/%5B%EB%A9%94%EC%9D%B8%ED%8E%B8%EC%A7%91%5D-Main%2A%2ADisplay/2028802
+    checked: 2026-10-02
 last_checked: '2026-09-19'
 ---
 

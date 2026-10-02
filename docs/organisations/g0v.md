@@ -56,7 +56,7 @@ activity:
     url: https://g0v.tw
     checked: 2026-09-20
   rss:
-    checked: 2026-09-25
+    checked: 2026-10-02
     note: No feed found
   ical:
     date: 2026-08-08

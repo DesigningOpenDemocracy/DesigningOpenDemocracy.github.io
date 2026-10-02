@@ -1,0 +1,41 @@
+{
+  "feed": "https://goreeinstitut.org/feed",
+  "latest": "2026-09-28",
+  "span_days": 238,
+  "items": [
+    {
+      "date": "2026-09-28",
+      "title": "Phase 3 du programme Investir dans les jeunes chercheurs au Sahel : de la recherche à l’action",
+      "url": "https://goreeinstitut.org/phase-3-du-programme-investir-dans-les-jeunes-chercheurs-au-sahel-de-la-recherche-a-laction/"
+    },
+    {
+      "date": "2026-09-25",
+      "title": "JEUNESSE ET CITOYENNETÉ",
+      "url": "https://goreeinstitut.org/jeunesse-et-citoyennete/",
+      "signals": [
+        "legal or legislative"
+      ]
+    },
+    {
+      "date": "2026-09-07",
+      "title": "Renforcement du dialogue stratégique entre le Sénégal et l’Allemagne autour des enjeux de paix, de sécurité et de gouvernance",
+      "url": "https://goreeinstitut.org/renforcement-du-dialogue-strategique-entre-le-senegal-et-lallemagne-autour-des-enjeux-de-paix-de-securite-et-de-gouvernance/"
+    },
+    {
+      "date": "2026-06-01",
+      "title": "Lancement de l’étude sur la mise en œuvre de l’Agenda 1325 : après 25 ans de la Résolution, quel futur féministe pour la paix en Afrique de l’Ouest et au Sahel ?",
+      "url": "https://goreeinstitut.org/lancement-de-letude-sur-la-mise-en-oeuvre-de-lagenda-1325-apres-25-ans-de-la-resolution-quel-futur-feministe-pour-la-paix-en-afrique-de-louest-et-au-sahel/",
+      "signals": [
+        "launch"
+      ]
+    },
+    {
+      "date": "2026-04-21",
+      "title": "Coopération internationale: Gorée Institute reçoit une délégation néerlandaise autour des enjeux de paix, de jeunesse et de gouvernance",
+      "url": "https://goreeinstitut.org/cooperation-internationale/"
+    }
+  ],
+  "fetch": {
+    "last_modified": "Mon, 28 Sep 2026 15:31:48 GMT"
+  }
+}

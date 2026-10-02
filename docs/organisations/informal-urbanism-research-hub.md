@@ -35,6 +35,12 @@ activity:
     date: 2026-09-27
     note: 'Latest post: Co-design across the Global South and North roundtable writeup'
     url: https://infur.msd.unimelb.edu.au/
+  rss:
+    date: 2026-09-27
+    note: 'Latest post: Co-design across the Global South and North: Participatory
+      Design within and bey'
+    url: https://infur.msd.unimelb.edu.au/2026/09/27/co-design-across-the-global-south-and-north-participatory-design-within-and-beyond-australia-infur-roundtable/
+    checked: 2026-10-02
 last_checked: 2026-09-30
 ---
 

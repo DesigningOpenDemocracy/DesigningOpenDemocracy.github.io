@@ -14,6 +14,7 @@ location:
   latitude: 16.737
   longitude: -92.6376
   name: San Cristóbal de las Casas, Chiapas, Mexico
+rss_feed: https://seminarioscideci.org/feed
 events:
 - date: '1989-08-24'
   title: CIDECI founded in San Cristóbal de las Casas, Chiapas
@@ -58,7 +59,7 @@ activity:
     date: 2019-06-03
     note: 'Latest post: Conversatorio con Rita Segato y Raúl Zibechi'
     url: https://seminarioscideci.org/conversatorio-con-rita-segato-y-raul-zibechi/
-    checked: 2026-09-25
+    checked: 2026-10-02
   sitemap:
     checked: 2026-08-09
     date: 2024-05-21

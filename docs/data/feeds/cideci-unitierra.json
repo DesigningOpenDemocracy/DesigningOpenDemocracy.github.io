@@ -1,0 +1,10 @@
+{
+  "feed": "https://seminarioscideci.org/feed",
+  "latest": "2019-06-03",
+  "span_days": 520,
+  "items": [],
+  "fetch": {
+    "etag": "\"56fa553a700181afc647ef122a153156\"",
+    "last_modified": "Mon, 05 Aug 2019 23:06:33 GMT"
+  }
+}

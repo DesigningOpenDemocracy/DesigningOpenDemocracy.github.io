@@ -22,6 +22,7 @@ location:
   longitude: -70.6693
   name: Santiago, Chile
   precision: city
+rss_feed: https://www.espaciopublico.cl/feed
 events:
 - date: '2025-10-29'
   title: Named among the "100 Think Tanks to Watch 2025" by On Think Tanks — the only
@@ -61,11 +62,10 @@ activity:
     url: https://www.espaciopublico.cl
     checked: 2026-09-17
   rss:
-    date: 2026-09-10
-    note: 'Latest post: Fondos generacionales: expertos abordan desafíos de su implementación
-      en Espacio'
-    url: https://espaciopublico.cl/fondos-generacionales-expertos-abordan-desafios-de-su-implementacion-en-espacio-publico/
-    checked: 2026-09-25
+    date: 2026-09-28
+    note: 'Latest post: Más valor desde el cobre'
+    url: https://espaciopublico.cl/mas-valor-desde-el-cobre/
+    checked: 2026-10-02
 last_checked: '2026-09-17'
 ---
 

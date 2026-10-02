@@ -30,6 +30,7 @@ location:
   longitude: 144.9631
   name: Melbourne, Australia
   precision: city
+rss_feed: https://digitalrightswatch.org.au/index.xml
 related_orgs:
 - electronic-frontiers-australia
 events:
@@ -82,11 +83,10 @@ activity:
     url: https://digitalrightswatch.org.au
     checked: 2026-09-19
   rss:
-    date: 2026-09-22
-    note: 'Latest post: Submission on the Online Safety Amendment (Digital Duty of
-      Care) Bill 2026'
-    url: /2026/09/22/submission-on-the-online-safety-amendment-digital-duty-of-care-bill-2026/
-    checked: 2026-09-25
+    date: 2026-10-02
+    note: 'Latest post: Submission on the National AI Standards paper'
+    url: /2026/10/02/submission-on-the-national-ai-standards-paper/
+    checked: 2026-10-02
 last_checked: '2026-09-19'
 ---
 

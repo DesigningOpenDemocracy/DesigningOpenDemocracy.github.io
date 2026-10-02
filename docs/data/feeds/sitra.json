@@ -1,0 +1,71 @@
+{
+  "feed": "https://www.sitra.fi/feed",
+  "latest": "2026-09-30",
+  "span_days": 14,
+  "items": [
+    {
+      "date": "2026-09-30",
+      "title": "5+1 vinkkiä kokemuksellisen ennakoinnin hyödyntämiseen",
+      "url": "https://www.sitra.fi/blogit/51-vinkkia-kokemuksellisen-ennakoinnin-hyodyntamiseen/"
+    },
+    {
+      "date": "2026-09-29",
+      "title": "Sitra vauhdittaa tekoälyn käyttöönottoa sotessa yhdessä STM:n, DigiFinlandin ja hyvinvointialueiden kanssa",
+      "url": "https://www.sitra.fi/uutiset/sitra-vauhdittaa-tekoalyn-kayttoonottoa-sotessa-yhdessa-stmn-digifinlandin-ja-hyvinvointialueiden-kanssa/"
+    },
+    {
+      "date": "2026-09-29",
+      "title": "Sitra luotsaa uutta eurooppalaista hanketta – tavoitteena kehittää digitaalisia ratkaisuja sääntelyn noudattamisen helpottamiseksi",
+      "url": "https://www.sitra.fi/uutiset/sitra-luotsaa-uutta-eurooppalaista-hanketta-tavoitteena-kehittaa-digitaalisia-ratkaisuja-saantelynmukaisuuden-helpottamiseksi/"
+    },
+    {
+      "date": "2026-09-28",
+      "title": "Voiko tekoäly tappaa meidät kaikki?",
+      "url": "https://www.sitra.fi/blogit/voiko-tekoaly-tappaa-meidat-kaikki/"
+    },
+    {
+      "date": "2026-09-28",
+      "title": "Sitra kokoaa tilannekuvan digitaalisen hoidon tarpeen arvioinnin toimintamalleista",
+      "url": "https://www.sitra.fi/uutiset/sitra-kokoaa-tilannekuvan-digitaalisen-hoidon-tarpeen-arvioinnin-toimintamalleista/"
+    },
+    {
+      "date": "2026-09-24",
+      "title": "Sitran toimintakatsaus 2/2026",
+      "url": "https://www.sitra.fi/artikkelit/sitran-toimintakatsaus-2-2026/"
+    },
+    {
+      "date": "2026-09-24",
+      "title": "Fyysinen tekoäly avaa uusia mahdollisuuksia Suomen teollisuudelle – kansalliset toimijat yhdistävät voimansa",
+      "url": "https://www.sitra.fi/uutiset/fyysinen-tekoaly-avaa-uusia-mahdollisuuksia-suomen-teollisuudelle-kansalliset-toimijat-yhdistavat-voimansa/"
+    },
+    {
+      "date": "2026-09-23",
+      "title": "Tekoäly siirtyy koneisiin ja tehtaille – mitä se tarkoittaa Suomelle?",
+      "url": "https://www.sitra.fi/blogit/tekoaly-siirtyy-koneisiin-ja-tehtaille-mita-se-tarkoittaa-suomelle/"
+    },
+    {
+      "date": "2026-09-23",
+      "title": "Sitra järjestää keväällä 2027 kaksi tulevaisuuskoulutusta nuorille – haku on auki 1.10.–26.10.",
+      "url": "https://www.sitra.fi/uutiset/sitra-jarjestaa-kevaalla-2027-kaksi-tulevaisuuskoulutusta-nuorille-haku-on-auki-1-10-26-10/"
+    },
+    {
+      "date": "2026-09-18",
+      "title": "Sitran lausunto tulevaisuusvaliokunnan mietintöjen ponsista ja niiden tukemisesta",
+      "url": "https://www.sitra.fi/artikkelit/sitran-lausunto-tulevaisuusvaliokunnan-ponsista/"
+    },
+    {
+      "date": "2026-09-17",
+      "title": "Poikkeuksellinen kartoitus osoittaa: Julkisen sektorin tekoälyuudistukset kannattaa suunnata laajasti toistuviin toimintoihin",
+      "url": "https://www.sitra.fi/uutiset/poikkeuksellinen-kartoitus-osoittaa-julkisen-sektorin-tekoalyuudistukset-kannattaa-suunnata-laajasti-toistuviin-toimintoihin/"
+    },
+    {
+      "date": "2026-09-16",
+      "title": "Mitä mieltä suomalaiset ovat Ursula von der Leyenin viitoittamasta suunnasta? Tässä neljä nostoa",
+      "url": "https://www.sitra.fi/blogit/mita-mielta-suomalaiset-ovat-ursula-von-der-leyenin-viitoittamasta-suunnasta-tassa-nelja-nostoa/"
+    }
+  ],
+  "fetch": {
+    "etag": "\"967038df33d3c511e10ab29b08026789\"",
+    "last_modified": "Fri, 02 Oct 2026 09:07:46 GMT"
+  }
+}

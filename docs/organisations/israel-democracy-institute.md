@@ -66,10 +66,10 @@ activity:
     url: https://en.idi.org.il
     checked: 2026-09-28
   sitemap:
-    date: 2026-09-25
+    date: 2026-10-02
     note: Page last modified (from sitemap)
     url: https://www.idi.org.il/sitemap.xml
-    checked: 2026-09-25
+    checked: 2026-10-02
 last_checked: '2026-09-28'
 ---
 

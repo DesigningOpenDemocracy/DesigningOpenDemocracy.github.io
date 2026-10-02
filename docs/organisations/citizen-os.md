@@ -70,7 +70,7 @@ activity:
     url: https://citizenos.com/feed
     checked: 2026-09-25
   scrape:
-    checked: 2026-09-25
+    checked: 2026-10-02
     date: 2023-06-19
     note: Latest news page scraped
     url: https://citizenos.com/news/

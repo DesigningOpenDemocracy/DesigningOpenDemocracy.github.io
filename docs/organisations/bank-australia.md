@@ -22,6 +22,7 @@ location:
   longitude: 144.9868
   name: Collingwood, Victoria, Australia
   precision: city
+rss_feed: https://www.bankaust.com.au/blog/rss.xml
 events:
 - date: '1957-09-19'
   title: Founded as the CSIRO Co-operative Credit Society, its earliest predecessor
@@ -57,11 +58,10 @@ activity:
       all current.
     url: https://www.bankaust.com.au/about-us/customer-owned
   rss:
-    date: 2026-09-25
-    note: 'Latest post: Bank Australia and P&N Group to explore merger to create a
-      leading national cust'
-    url: https://www.bankaust.com.au/blog/pn-merger
-    checked: 2026-09-27
+    date: 2026-10-02
+    note: 'Latest post: Why becoming a B Corp means so much'
+    url: https://www.bankaust.com.au/blog/why-becoming-a-b-corp-means-so-much-to-us
+    checked: 2026-10-02
 last_checked: '2026-09-26'
 ---
 

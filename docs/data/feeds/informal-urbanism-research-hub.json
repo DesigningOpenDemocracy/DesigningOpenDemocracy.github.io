@@ -1,0 +1,47 @@
+{
+  "feed": "https://infur.msd.unimelb.edu.au/feed/",
+  "latest": "2026-09-27",
+  "span_days": 316,
+  "items": [
+    {
+      "date": "2026-09-27",
+      "title": "Co-design across the Global South and North: Participatory Design within and beyond Australia| InfUr- Roundtable",
+      "url": "https://infur.msd.unimelb.edu.au/2026/09/27/co-design-across-the-global-south-and-north-participatory-design-within-and-beyond-australia-infur-roundtable/"
+    },
+    {
+      "date": "2026-09-27",
+      "title": "Can the grassroots scale? Coalitions and Contradictions in kampung upgrading in Indonesia | InfUr- seminar with Kamil Muhammad",
+      "url": "https://infur.msd.unimelb.edu.au/2026/09/27/can-the-grassroots-scale-coalitions-and-contradictions-in-kampung-upgrading-in-indonesia-infur-seminar-with-kamil-muhammad/"
+    },
+    {
+      "date": "2026-07-21",
+      "title": "Informal Infrastructuring at the Heart of Sustainable Development—InfUr seminar with Brandon Marc Finn",
+      "url": "https://infur.msd.unimelb.edu.au/2026/07/21/informal-infrastructuring-at-the-heart-of-sustainable-development-infur-seminar-with-brandon-marc-finn/",
+      "signals": [
+        "organisational change"
+      ]
+    },
+    {
+      "date": "2026-07-21",
+      "title": "Digital Platforms, Informal Housing and Urban Inequality in Australian Cities—InfUr seminar with Zahra Nasreen",
+      "url": "https://infur.msd.unimelb.edu.au/2026/07/21/digital-platforms-informal-housing-and-urban-inequality-in-australian-cities-infur-seminar-with-zahra-nasreen/"
+    },
+    {
+      "date": "2026-05-25",
+      "title": "Justice in the Streets?—InfUr seminar with Alison Young",
+      "url": "https://infur.msd.unimelb.edu.au/2026/05/25/justice-in-the-streets-infur-seminar-with-alison-young/",
+      "signals": [
+        "mobilisation"
+      ]
+    },
+    {
+      "date": "2026-05-18",
+      "title": "The Well-Assembled Parklet—InfUr seminar with Quentin Stevens",
+      "url": "https://infur.msd.unimelb.edu.au/2026/05/18/the-well-assembled-parklet-infur-seminar-with-quentin-stevens/"
+    }
+  ],
+  "fetch": {
+    "etag": "\"9ed2c6c75765936864646f43ef48f4ac\"",
+    "last_modified": "Sun, 27 Sep 2026 13:05:51 GMT"
+  }
+}

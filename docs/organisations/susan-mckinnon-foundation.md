@@ -108,15 +108,15 @@ activity:
     url: https://mckinnon.co
     checked: 2026-09-19
   scrape:
-    date: 2026-09-17
+    date: 2026-09-29
     note: 'Latest post: News & Insights | McKinnon'
     url: https://mckinnon.co/insights
-    checked: 2026-09-25
+    checked: 2026-10-02
   sitemap:
-    date: 2026-09-24
+    date: 2026-09-30
     note: Page last modified (from sitemap)
     url: https://mckinnon.co/sitemap.xml
-    checked: 2026-09-25
+    checked: 2026-10-02
 last_checked: '2026-09-19'
 ---
 

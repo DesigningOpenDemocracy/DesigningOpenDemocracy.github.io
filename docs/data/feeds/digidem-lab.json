@@ -1,0 +1,64 @@
+{
+  "feed": "https://digidemlab.org/feed",
+  "latest": "2026-09-29",
+  "span_days": 174,
+  "items": [
+    {
+      "date": "2026-09-29",
+      "title": "Capacity Building Upgraded",
+      "url": "https://digidemlab.org/news/capacity-building-upgraded/"
+    },
+    {
+      "date": "2026-09-01",
+      "title": "Collective Tools",
+      "url": "https://digidemlab.org/news/collective-tools/"
+    },
+    {
+      "date": "2026-08-13",
+      "title": "Ungas Hälsa 2040",
+      "url": "https://digidemlab.org/news/ungas-halsa-2040/"
+    },
+    {
+      "date": "2026-06-02",
+      "title": "Panelsamtal med Audrey Tang",
+      "url": "https://digidemlab.org/news/panelsamtal-kan-deltagandedemokrati-bli-en-motkraft-i-en-orolig-tid/"
+    },
+    {
+      "date": "2026-05-24",
+      "title": "EU-kommissionens medborgarråd om beredskap",
+      "url": "https://digidemlab.org/news/eu-kommissionens-medborgarrad-om-beredskap/"
+    },
+    {
+      "date": "2026-05-04",
+      "title": "Ansök till YH-Kursen i Community Organising HT26",
+      "url": "https://digidemlab.org/news/ansok-till-yh-kursen-i-community-organising-ht26/"
+    },
+    {
+      "date": "2026-04-24",
+      "title": "People Powered: Digitalisering av deltagardemokrati",
+      "url": "https://digidemlab.org/news/people-powered-digitalt-deltagande-i-globala-uppdrag/",
+      "mentions": [
+        "People Powered"
+      ]
+    },
+    {
+      "date": "2026-04-15",
+      "title": "Forskningsprojekt: Demokrati Bakom Kulisserna",
+      "url": "https://digidemlab.org/news/demokrati-bakom-kulisserna/"
+    },
+    {
+      "date": "2026-04-09",
+      "title": "Konsortiet stöttar EU-medborgarråd om beredskap",
+      "url": "https://digidemlab.org/news/konsortiet-stottar-eu-medborgarrad-om-beredskap/"
+    },
+    {
+      "date": "2026-04-08",
+      "title": "Konsortium för EUs medborgarråd",
+      "url": "https://digidemlab.org/news/konsortium-for-eus-medborgarrad/"
+    }
+  ],
+  "fetch": {
+    "etag": "\"b4a5e71340458a4aeec5c1ce4a23067c-gzip\"",
+    "last_modified": "Wed, 30 Sep 2026 09:33:03 GMT"
+  }
+}

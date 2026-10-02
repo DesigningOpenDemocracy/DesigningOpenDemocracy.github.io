@@ -21,6 +21,7 @@ location:
   latitude: -0.2295
   longitude: -78.5243
   name: Quito, Ecuador
+rss_feed: https://conaie.org/?feed=rss2
 events:
 - date: '1986-01-01'
   title: Founded to represent Ecuador's Indigenous nationalities, becoming the country's
@@ -60,7 +61,7 @@ activity:
     date: 2025-04-04
     note: 'Latest post: Esmeraldas derramada: una historia de Las Piedras'
     url: https://radiojatarikichwa.com/?p=7656
-    checked: 2026-09-11
+    checked: 2026-10-02
   sitemap:
     date: 2026-08-22
     note: Page last modified (from sitemap)

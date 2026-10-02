@@ -64,7 +64,7 @@ activity:
     url: https://www.lateraleconomics.com.au
     checked: 2026-09-14
   sitemap:
-    checked: 2026-09-25
+    checked: 2026-10-02
     date: 2026-06-09
     note: Page last modified (from sitemap)
     url: https://www.lateraleconomics.com.au/sitemap.xml

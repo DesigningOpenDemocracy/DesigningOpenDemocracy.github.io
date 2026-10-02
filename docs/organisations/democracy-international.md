@@ -138,7 +138,7 @@ activity:
     note: RSS feed active
     url: https://www.democracy-international.org/rss.xml
   scrape:
-    checked: 2026-09-25
+    checked: 2026-10-02
     date: 2026-09-24
     note: Latest news page scraped
     url: https://www.democracy-international.org/news

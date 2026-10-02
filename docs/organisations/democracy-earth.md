@@ -59,7 +59,7 @@ activity:
     url: https://democracy.earth
     checked: 2026-09-27
   rss:
-    checked: 2026-09-25
+    checked: 2026-10-02
     note: No feed found
 last_checked: '2026-09-27'
 ---

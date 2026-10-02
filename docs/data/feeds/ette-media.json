@@ -1,0 +1,97 @@
+{
+  "feed": "https://www.ettemedia.com/feed",
+  "latest": "2026-10-01",
+  "span_days": 24,
+  "items": [
+    {
+      "date": "2026-10-01",
+      "title": "\"Orange Brick Wall”: The regional journalists getting shut out by One Nation",
+      "url": "https://www.ettemedia.com/orange-brick-wall-the-regional-journalists-getting-shut-out-by-one-nation/"
+    },
+    {
+      "date": "2026-09-29",
+      "title": "War of words: How ABC 7.30’s interview approach differs widely by conflict",
+      "url": "https://www.ettemedia.com/war-of-words-how-abc-7-30s-interview-approach-differs-widely-by-conflict/"
+    },
+    {
+      "date": "2026-09-26",
+      "title": "Ettention Please: the stories you might have missed this week",
+      "url": "https://www.ettemedia.com/ettention-please-the-stories-you-might-have-missed-this-week-26-september/",
+      "signals": [
+        "legal or legislative"
+      ]
+    },
+    {
+      "date": "2026-09-24",
+      "title": "The so-called ‘bot swarms’ descending on Victoria’s state election candidates",
+      "url": "https://www.ettemedia.com/the-so-called-bot-swarms-descending-on-victorias-state-election-candidates/"
+    },
+    {
+      "date": "2026-09-24",
+      "title": "The Monthly Booklette: September edition",
+      "url": "https://www.ettemedia.com/the-monthly-booklette-september-edition/"
+    },
+    {
+      "date": "2026-09-22",
+      "title": "Quarterly Essay calls itself Australia's leading journal of politics and culture. Whose politics? Whose culture?",
+      "url": "https://www.ettemedia.com/who-writes-for-quarterly-essay/",
+      "signals": [
+        "publication"
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "title": "Ettention Please: the stories you might have missed this week",
+      "url": "https://www.ettemedia.com/ettention-please-the-stories-you-might-have-missed-this-week-september-19/"
+    },
+    {
+      "date": "2026-09-16",
+      "title": "‘Pay-for-play’: The hidden deals putting News24/Sky News first on your smart TV",
+      "url": "https://www.ettemedia.com/pay-for-play-the-hidden-deals-putting-news24-sky-news-first-on-your-smart-tv/"
+    },
+    {
+      "date": "2026-09-14",
+      "title": "Welcome to the world of hyperlocal news",
+      "url": "https://www.ettemedia.com/welcome-to-the-world-of-hyperlocal-news/"
+    },
+    {
+      "date": "2026-09-12",
+      "title": "Ettention Please: the stories you might have missed this week",
+      "url": "https://www.ettemedia.com/ettention-please-the-stories-you-might-have-missed-this-week-sep-12/"
+    },
+    {
+      "date": "2026-09-10",
+      "title": "UN climate reporting falls short | Meta glasses stealth ads | Huckabee tries to rename West Bank",
+      "url": "https://www.ettemedia.com/yt-video-8vpt5q62com/",
+      "signals": [
+        "organisational change"
+      ]
+    },
+    {
+      "date": "2026-09-10",
+      "title": "Meta glasses stealth advertising, UN climate reporting falls short + Murdoch’s smart TV deal",
+      "url": "https://www.ettemedia.com/podcast-podcast-title-tbc-6a9fe29f0abd8785fa320b78/",
+      "routine": [
+        "podcast or video episode"
+      ]
+    },
+    {
+      "date": "2026-09-10",
+      "title": "A timeline of media reports Netanyahu knew about October 7 before it happened",
+      "url": "https://www.ettemedia.com/a-timeline-of-media-reports-netanyahu-knew-about-october-7-before-it-happened/"
+    },
+    {
+      "date": "2026-09-09",
+      "title": "How journalists can stop letting Pauline Hanson write the news agenda",
+      "url": "https://www.ettemedia.com/how-journalists-can-stop-letting-pauline-hanson-write-the-news-agenda/"
+    },
+    {
+      "date": "2026-09-07",
+      "title": "Milo Yiannopoulos DEPORTED by ICE, turns on Trump",
+      "url": "https://www.ettemedia.com/yt-video-xdd-rjthgq/"
+    }
+  ],
+  "fetch": {
+    "etag": "W/\"15248-Wj/5bib7+Akq6tETkzDsEQmBn/I\""
+  }
+}

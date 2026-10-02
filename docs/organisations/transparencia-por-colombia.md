@@ -23,6 +23,7 @@ location:
   longitude: -74.0721
   name: Bogotá, Colombia
   precision: city
+rss_feed: https://transparenciacolombia.org.co/feed
 events:
 - date: '1998-01-01'
   title: Founded as the Colombian chapter of Transparency International, working across
@@ -60,11 +61,11 @@ activity:
     url: https://transparenciacolombia.org.co
     checked: 2026-09-19
   rss:
-    date: 2026-08-19
-    note: 'Latest post: Recomendaciones en materia de transparencia y lucha contra
-      la corrupción para at'
-    url: https://transparenciacolombia.org.co/recomendaciones-atender-emergencia-terremoto-agosto-2026/
-    checked: 2026-09-25
+    date: 2026-10-01
+    note: 'Latest post: Opinión de Transparencia por Colombia sobre el proceso de
+      revisión de constituci'
+    url: https://transparenciacolombia.org.co/opinion-sobre-revision-constitucionalidad-decreto-legislativo-1420-17-septiembre-2026/
+    checked: 2026-10-02
 last_checked: '2026-09-19'
 ---
 

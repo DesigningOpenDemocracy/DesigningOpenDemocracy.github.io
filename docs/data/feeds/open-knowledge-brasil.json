@@ -1,0 +1,64 @@
+{
+  "feed": "https://ok.org.br/feed",
+  "latest": "2026-10-01",
+  "span_days": 48,
+  "items": [
+    {
+      "date": "2026-10-01",
+      "title": "8º Prêmio Cláudio Weber Abramo de Jornalismo de Dados divulga projetos finalistas",
+      "url": "https://ok.org.br/noticia/8o-premio-claudio-weber-abramo-de-jornalismo-de-dados-divulga-projetos-finalistas/"
+    },
+    {
+      "date": "2026-09-24",
+      "title": "Restrição de acesso a microdados do Censo 2022 é inadequada e excessiva",
+      "url": "https://ok.org.br/noticia/restricao-de-acesso-a-microdados-do-censo-2022-e-inadequada-e-excessiva/"
+    },
+    {
+      "date": "2026-09-18",
+      "title": "LAI está regulamentada em todos os estados brasileiros, revela levantamento da OKBR",
+      "url": "https://ok.org.br/noticia/lai-esta-regulamentada-em-todos-os-estados-brasileiros/"
+    },
+    {
+      "date": "2026-09-11",
+      "title": "Semana Dados BR promove debates sobre o universo dos dados e da inteligência artificial",
+      "url": "https://ok.org.br/noticia/semana-dados-br-promove-debates-sobre-o-universo-dos-dados-e-da-inteligencia-artificial/"
+    },
+    {
+      "date": "2026-09-10",
+      "title": "OKBR assina relatório que analisa o papel das plataformas na proteção da integridade eleitoral",
+      "url": "https://ok.org.br/noticia/okbr-assina-relatorio-que-analisa-o-papel-das-plataformas-na-protecao-da-integridade-eleitoral/",
+      "signals": [
+        "publication"
+      ]
+    },
+    {
+      "date": "2026-08-31",
+      "title": "Inscrições abertas para a 11ª edição da Conferência Brasileira de Jornalismo de Dados e Métodos Digitais (Coda.Br)",
+      "url": "https://ok.org.br/noticia/inscricoes-abertas-para-a-11a-edicao-da-conferencia-brasileira-de-jornalismo-de-dados-e-metodos-digitais-coda-br/"
+    },
+    {
+      "date": "2026-08-28",
+      "title": "Plataforma Vote pelo Clima conecta eleitorado às candidaturas comprometidas com a pauta climática",
+      "url": "https://ok.org.br/noticia/plataforma-vote-pelo-clima-conecta-eleitorado-as-candidaturas-comprometidas-com-a-pauta-climatica/"
+    },
+    {
+      "date": "2026-08-20",
+      "title": "Participe da campanha #CartaPorUmGovernoEstadualAberto",
+      "url": "https://ok.org.br/noticia/okbr-lanca-campanha-por-comprometimento-de-candidaturas-com-cidades-mais-abertas-2/"
+    },
+    {
+      "date": "2026-08-18",
+      "title": "OKBR contribui com consulta pública de aperfeiçoamento do Painel de Remuneração dos Magistrados",
+      "url": "https://ok.org.br/noticia/okbr-contribui-com-consulta-publica-de-aperfeicoamento-do-painel-de-remuneracao-dos-magistrados/"
+    },
+    {
+      "date": "2026-08-14",
+      "title": "Como a OKBR tem atuado pela conciliação da LAI e da LGPD",
+      "url": "https://ok.org.br/noticia/como-a-okbr-tem-atuado-pela-conciliacao-da-lai-e-da-lgpd/"
+    }
+  ],
+  "fetch": {
+    "etag": "\"83863d6da735e8fbffa5f16fced53805-gzip\"",
+    "last_modified": "Thu, 01 Oct 2026 22:56:38 GMT"
+  }
+}

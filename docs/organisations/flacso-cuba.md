@@ -18,6 +18,7 @@ location:
   latitude: 23.1136
   longitude: -82.3666
   name: Havana, Cuba
+rss_feed: https://flacso.org/feed
 events:
 - date: '1988-01-01'
   title: FLACSO's Cuban academic unit (Sede Cuba) created
@@ -54,8 +55,10 @@ activity:
     url: https://flacso.org/pa%C3%ADs/cuba
     checked: 2026-09-21
   rss:
-    checked: 2026-06-07
-    note: No feed found
+    date: 2026-08-05
+    note: 'Latest post: Arbitraje y Mediación «Saberes y conocimientos'
+    url: https://www.flacso.org/2026/08/04/arbitraje-y-mediacion-saberes-y-conocimientos/
+    checked: 2026-10-02
   sitemap:
     checked: 2026-09-25
     note: Sitemap found, no lastmod

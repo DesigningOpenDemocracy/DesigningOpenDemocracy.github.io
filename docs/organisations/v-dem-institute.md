@@ -55,7 +55,7 @@ activity:
     url: https://www.v-dem.net/publications/democracy-reports/
   rss:
     note: No feed found
-    checked: 2026-09-27
+    checked: 2026-10-02
 last_checked: '2026-09-16'
 ---
 

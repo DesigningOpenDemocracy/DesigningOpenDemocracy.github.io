@@ -20,6 +20,7 @@ location:
   latitude: 38.9942
   longitude: -77.0272
   name: Silver Spring, Maryland, USA
+rss_feed: https://fairvote.org/feed
 related_orgs:
 - representus
 events:
@@ -49,10 +50,10 @@ activity:
     url: https://fairvote.org
     checked: 2026-09-19
   rss:
-    date: 2026-09-21
-    note: 'Latest post: FairVote news update: Sep. 21, 2026'
-    url: https://fairvote.org/fairvote-news-update-sep-21-2026/
-    checked: 2026-09-25
+    date: 2026-09-29
+    note: 'Latest post: Where will ranked choice voting be used in the 2026 elections?'
+    url: https://fairvote.org/where-will-ranked-choice-voting-be-used-in-the-2026-elections/
+    checked: 2026-10-02
 last_checked: '2026-09-19'
 ---
 

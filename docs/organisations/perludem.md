@@ -22,6 +22,7 @@ location:
   longitude: 106.8456
   name: Jakarta, Indonesia
   precision: city
+rss_feed: https://perludem.or.id/feed
 events:
 - date: '2005-01-01'
   title: Founded by former Indonesian election supervisors to strengthen electoral
@@ -63,7 +64,7 @@ activity:
     note: 'Latest post: Assessing the Constitutionality of E-Voting, Perludem Calls
       for a Needs-Based Ap'
     url: https://perludem.or.id/assessing-the-constitutionality-of-e-voting-perludem-calls-for-a-needs-based-approach/
-    checked: 2026-09-25
+    checked: 2026-10-02
 last_checked: '2026-09-19'
 ---
 

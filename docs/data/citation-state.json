@@ -349,7 +349,7 @@
     "last_modified": "Tue, 25 Nov 2025 21:34:43 GMT"
   },
   "https://bethnoveck.medium.com/was-vtaiwan-such-a-big-flop-after-all-d6b365f916dc": {
-    "archive_checked": "2026-09-25",
+    "archive_checked": "2026-10-02",
     "archive_url": "http://web.archive.org/web/20260904075928/https://bethnoveck.medium.com/was-vtaiwan-such-a-big-flop-after-all-d6b365f916dc",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-20",
@@ -624,6 +624,29 @@
     ],
     "last_modified": "Wed, 26 Aug 2026 11:13:06 GMT"
   },
+  "https://canberra-alliance.org.au/event/festival-of-act-democracy-2027/": {
+    "archive_checked": "2026-10-02",
+    "archive_sha256": "c7e20af483d6eaebc9c0c56bf0e7419dbe7433099cad29020ac9608ee98b9bee",
+    "archive_url": "http://web.archive.org/web/20261002094900/https://canberra-alliance.org.au/event/festival-of-act-democracy-2027/",
+    "checked": "2026-10-02",
+    "document_sha256": "c7e20af483d6eaebc9c0c56bf0e7419dbe7433099cad29020ac9608ee98b9bee",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-10-02",
+        "context": {
+          "prefix": "0 - 21 June 2027 @ 19:30 AEST \u00ab Community Assembly \u2013 following up our MP asks for 2026 The purpose is to",
+          "sha256": "23e4ac7822054a9dd515fe78109110de7eb868885818a6ed9b98773f4b512234",
+          "suffix": ". Dates: Saturday 19th June, afternoon, Sunday 20 June all day and conclusion at the Active Democracy Bean Local Politics in the Pub on Monday 2",
+          "text": "The purpose is to bring together, sort and prioritise all the ideas that have come up during the 2026 Re-imagining Governance for the ACT event series."
+        },
+        "id": "2573f4ff0a9aa21d26a46bab87d8c7ab437a70bfa1f85ad6ba700ec6ea9eb105",
+        "quote": "bring together, sort and prioritise all the ideas that have come up during the 2026 Re-imagining Governance for the ACT event series",
+        "verified": true
+      }
+    ],
+    "last_modified": "Fri, 02 Oct 2026 20:48:54 GMT"
+  },
   "https://chinademocrats.org/en": {
     "checked": "2026-08-26",
     "etag": null,
@@ -875,7 +898,8 @@
     "last_modified": null
   },
   "https://commonslibrary.parliament.uk/research-briefings/cbp-10876/": {
-    "archive_checked": "2026-09-25",
+    "archive_checked": "2026-10-02",
+    "archive_sha256": "76db44b3577f3dd4b1f4868fef425341b45d64132694e314cdcb54dec2e65dab",
     "archive_url": "http://web.archive.org/web/20260914150106/https://commonslibrary.parliament.uk/research-briefings/cbp-10876/",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-20",
@@ -2257,6 +2281,62 @@
     ],
     "last_modified": null
   },
+  "https://en.wikipedia.org/wiki/Bank_Australia": {
+    "archive_checked": "2026-10-02",
+    "archive_sha256": "446f2c4b84ff2dbd594deccd76e3bddb18cfc0bee781b05104ac8264a4dc0c7f",
+    "archive_url": "http://web.archive.org/web/20261002094800/https://en.wikipedia.org/wiki/Bank_Australia",
+    "checked": "2026-10-02",
+    "document_sha256": "64b1bea419e2cda1357b7e560d3846526b7c2e48a5663c61fa6a5778c024b517",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-10-02",
+        "context": {
+          "prefix": "ganisation of the Global Alliance for Banking on Values and is a certified B Corporation. As of 2024 it had 192,261 customer-members. == History ==",
+          "sha256": "dc3a1da69cc23643407dfa5dac391c671c257e603776e2282f5266cf29634cd9",
+          "suffix": "Walter Ives was appointed as chairman, and the first 40 members, limited to officers and employees of CSIRO aged over 18, were admitted on 15 October"
+        },
+        "id": "a88baaf9308cc46219e0f4ad1c7f79e11b659b35ae186083f69a51224cbec402",
+        "quote": "The bank has its origins in the 19 September 1957 incorporation of the CSIRO (Commonwealth Scientific and Industrial Research Organisation) Co-operative Credit Society.",
+        "verified": true
+      },
+      {
+        "checked": "2026-10-02",
+        "context": {
+          "prefix": "03, Members Australia Credit Union merged with the Education Credit Union (Ed Credit) to form the Members and Education Credit Union, styled as mecu.",
+          "sha256": "5c9a5737096155e3edc3d62f42acf2bd0d8f3b091798ef4ccaeb32b4bbda4a30",
+          "suffix": "In 2019 Bank Australia switched to purchasing 100% renewable energy from its suppliers. It was the first bank in Australia to do so. In June 2020, Ba"
+        },
+        "id": "8ab3e30bd40eb8315cfa99a7be00e41cc916510303b3b66f166992199e11837d",
+        "quote": "In 2011, mecu began trading as Bankmecu, Australia's first customer-owned bank and, in 2015, it commenced trading as Bank Australia.",
+        "verified": true
+      },
+      {
+        "checked": "2026-10-02",
+        "context": {
+          "prefix": "nks eventually led to the creation of the Members & Education Credit Union (mecu) in 2003, which became Bankmecu in 2011, and Bank Australia in 2015.",
+          "sha256": "f1973507da8ea48e42c6b95571ee985ee9f0a9b87f6c675c10a3d4605ccfb83a",
+          "suffix": "As of 2024 it had 192,261 customer-members. == History == The bank has its origins in the 19 September 1957 incorporation of the CSIRO (Commonwealt",
+          "text": "Bank Australia is an Australian customer-owned bank based in Collingwood, Victoria. The organisation can trace its origins back to 1957, when the CSIRO Co-operative Credit Society was formed. Over succeeding years, mergers among 72 other credit unions and co-operative banks eventually led to the creation of the Members & Education Credit Union (mecu) in 2003, which became Bankmecu in 2011, and Bank Australia in 2015. Bank Australia is a member organisation of the Global Alliance for Banking on Values and is a certified B Corporation. As of 2024 it had 192,261 customer-members."
+        },
+        "id": "fe604cf6b4926a79078d3b15c4cbeb10c17149f8d507d762313d5c7b0b0d5691",
+        "quote": "Bank Australia is a member organisation of the Global Alliance for Banking on Values and is a certified B Corporation.",
+        "verified": true
+      },
+      {
+        "checked": "2026-10-02",
+        "context": {
+          "prefix": "ncluded plans for reductions of their scope 3 emissions, and working with customers to help them reduce their emissions from electricity and gas use.",
+          "sha256": "5a3b2ce342f4fe08f136cdb9174c18ea5b15601adc6337dff895704cf8a3b0f5",
+          "suffix": "In November 2024, Australian Unity signed an agreement to sell its banking business to Bank Australia, with the deal completed in November 2025. In M"
+        },
+        "id": "26e31e8db8154c2efecb256de51bcc1d5d9cb6c52e664ec133fe4d0e3145d7ad",
+        "quote": "In 2024, Bank Australia announced plans to merge with Qudos Bank, claiming the new entity would be one of the largest customer-owned banks in the country, with 300,000 customers, total assets approaching $20 billion, and almost 900 employees. The merger was completed in mid-2025, with Bank Australia retaining the Qudos brand.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
   "https://en.wikipedia.org/wiki/Bersih": {
     "checked": "2026-08-26",
     "document_sha256": "21ebf7abdfe9dab710eb9edc51c453a6bf98c0ce24458d42353211af7daa6207",
@@ -3155,6 +3235,28 @@
         },
         "id": "966cf44f3e6f2640c0a708a402a81e954be306d6cc2306a8378b1050211b6f3d",
         "quote": "Founded in 2001 by Ramesh Ramanathan and Swati Ramanathan",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://en.wikipedia.org/wiki/Katie_Fahey": {
+    "archive_checked": "2026-10-02",
+    "archive_sha256": "2866e7c429848903b4a22383bee4cb35648ae4d779a5d5877b8064a7f3b631ce",
+    "archive_url": "http://web.archive.org/web/20260923011647/https://en.wikipedia.org/wiki/Katie_Fahey",
+    "checked": "2026-10-02",
+    "document_sha256": "8ac5248b75a5664be323e62f69ff997cd99208df4d8ab5d6f67220092f05f8e6",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-10-02",
+        "context": {
+          "prefix": "how they thought a fair redistricting system should work. Volunteers also studied other states' systems and sought advice from election law experts.",
+          "sha256": "a2efc32c8837a20030edc82ac14dc7646e3cf766b699346dd81258dcc44f026e",
+          "suffix": "The proposal barred anyone from serving on the commission who had held a politically affiliated position within the past six years, including elected"
+        },
+        "id": "defd2e67d24bfe9d18877e1b52ddadd4e4b90487f23387c61bb53d5ef6441ee7",
+        "quote": "They wrote a proposal for a ballot initiative which would create a 13-member redistricting commission consisting of four Republicans, four Democrats, and five voters with no party affiliation, all to be selected through a random drawing of registered voters, supervised by the Michigan Secretary of State.",
         "verified": true
       }
     ],
@@ -4180,6 +4282,28 @@
     ],
     "last_modified": null
   },
+  "https://en.wikipedia.org/wiki/The_Tyranny_of_Structurelessness": {
+    "archive_checked": "2026-10-02",
+    "archive_sha256": "ab3f54748d5fd69a93fbba05ad52d2586e91c25cbd0eaf7bce8249c48fb04167",
+    "archive_url": "http://web.archive.org/web/20261002095943/https://en.wikipedia.org/wiki/The_Tyranny_of_Structurelessness",
+    "checked": "2026-10-02",
+    "document_sha256": "32d1d7c45ab89fc748c1796e44c6cf03699071bc76e820d9f64aedf8901667be",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-10-02",
+        "context": {
+          "prefix": "1960s women's liberation group, reflected on the feminist movement's experiments in resisting leadership hierarchy and structured division of labor.",
+          "sha256": "c472ef4607b1d401183780134050510933a3d05ae17333b93712cd20aa98b89b",
+          "suffix": "As a solution, Freeman suggests formalizing the existing hierarchies in the group and subjecting them to democratic control. The phrase has been used"
+        },
+        "id": "9524ad877600ce76b76752b5a901d75c125f132e460a325f5a71443cd6c9ac5d",
+        "quote": "This lack of structure, Freeman writes, disguised an informal, unacknowledged, and unaccountable leadership, and in this way ensured its malefaction by denying its existence.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
   "https://en.wikipedia.org/wiki/Three-fifths_Compromise": {
     "checked": "2026-08-26",
     "document_sha256": "238557dd8d7d79e3a1372547bc12bc7377cfcf519f790c0ed74b615307bcd2fb",
@@ -4401,8 +4525,9 @@
     "last_modified": null
   },
   "https://events.humanitix.com/citizen-assemblies-policy-without-politics-national-conference": {
-    "archive_checked": "2026-09-18",
-    "archive_url": "http://web.archive.org/web/20260911081444/https://events.humanitix.com/citizen-assemblies-policy-without-politics-national-conference",
+    "archive_checked": "2026-10-02",
+    "archive_sha256": "d42d2147c53e458aaf29a26ac5fad13890338cf81de02fb22b7454c3e9162c0d",
+    "archive_url": "http://web.archive.org/web/20261002094833/https://events.humanitix.com/citizen-assemblies-policy-without-politics-national-conference",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-28"
   },
@@ -4415,13 +4540,21 @@
     "blocked": "HTTP_403",
     "blocked_since": "2026-09-04"
   },
+  "https://events.humanitix.com/from-campaigns-to-community-power": {
+    "blocked": "HTTP_403",
+    "blocked_since": "2026-10-02"
+  },
   "https://events.humanitix.com/international-day-of-democracy": {
-    "archive_checked": "2026-09-25",
-    "archive_url": "http://web.archive.org/web/20260918080358/https://events.humanitix.com/international-day-of-democracy",
+    "archive_checked": "2026-10-02",
+    "archive_sha256": "62d71590ef98eb4a28dfa88081eda32d4174f45f26500f0dfe96c26e1a10fff2",
+    "archive_url": "http://web.archive.org/web/20261002094739/https://events.humanitix.com/international-day-of-democracy",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-25"
   },
   "https://events.humanitix.com/protecting-victoria-s-democracy-ahead-of-state-s-largest-ever-election": {
+    "archive_checked": "2026-10-02",
+    "archive_sha256": "6fce6852f495ece7d5093dfb757541900dc08219310c8938abe53408919dde0f",
+    "archive_url": "http://web.archive.org/web/20261002095749/https://events.humanitix.com/protecting-victoria-s-democracy-ahead-of-state-s-largest-ever-election",
     "blocked": "HTTP_403",
     "blocked_since": "2026-09-17"
   },
@@ -4626,6 +4759,23 @@
     ],
     "last_modified": null
   },
+  "https://fijisun.com.fj/news/nation/crc-report-tabled-in-parliament-now-public": {
+    "archive_checked": "2026-10-02",
+    "archive_sha256": "713cdff290aaa826aed752d7d08bfccbbcb1aa9a81000295542e2bef522176b2",
+    "archive_url": "http://web.archive.org/web/20260923052401/https://fijisun.com.fj/news/nation/crc-report-tabled-in-parliament-now-public",
+    "checked": "2026-10-02",
+    "document_sha256": "36b1452f12c2fc56f5baa1a44e29e840a8030a156de85d445c5fab30c7e29252",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-10-02",
+        "id": "7d689ae75ce5e4e3e5ce000e6abeaa1f8d1fdb59c63743b1f466633ea8cc4b40",
+        "quote": "The report was presented to Parliament today by Prime Minister Sitiveni Rabuka.",
+        "verified": false
+      }
+    ],
+    "last_modified": null
+  },
   "https://fijisun.com.fj/news/nation/csos-warn-against-rushed-constitution-reform": {
     "archive_checked": "2026-09-25",
     "archive_url": "http://web.archive.org/web/20260920065914/https://fijisun.com.fj/news/nation/csos-warn-against-rushed-constitution-reform",
@@ -4692,6 +4842,12 @@
   "https://flacso.org/quem-somos/nuestra-historia/historia-flacso/": {
     "checked": "2026-08-17",
     "etag": "W/\"6928a9c1-143fb\"",
+    "failing": {
+      "count": 1,
+      "error": "HTTP_404",
+      "last": "2026-10-02",
+      "since": "2026-10-02"
+    },
     "last_modified": "Thu, 27 Nov 2025 19:42:57 GMT"
   },
   "https://focusweb.org/press-statement-social-movements-united-in-defiance-of-false-solutions-being-negotiated-at-paris-cop/": {
@@ -4720,7 +4876,8 @@
     "blocked_since": "2026-08-29"
   },
   "https://foro.org.co/quienes-somos/": {
-    "archive_checked": "2026-09-25",
+    "archive_checked": "2026-10-02",
+    "archive_sha256": "788f956e08755fcc769919707b228029f07a622c51c0be616ea662eabd5e4d34",
     "archive_url": "http://web.archive.org/web/20260925085948/https://foro.org.co/quienes-somos/",
     "blocked": "ROBOTS_DISALLOWED",
     "blocked_since": "2026-08-20",
@@ -5259,13 +5416,108 @@
     ],
     "last_modified": null
   },
+  "https://infur.msd.unimelb.edu.au/": {
+    "archive_checked": "2026-10-02",
+    "archive_sha256": "136ea55b51d9fad8ab7111c8ed8e82efcfafc993c0cd9fb0bed33e1ea3e64f23",
+    "archive_url": "http://web.archive.org/web/20261002100848/https://infur.msd.unimelb.edu.au/",
+    "checked": "2026-10-02",
+    "document_sha256": "136ea55b51d9fad8ab7111c8ed8e82efcfafc993c0cd9fb0bed33e1ea3e64f23",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-10-02",
+        "context": {
+          "prefix": "Hub InfUr- The Informal Urbanism Research Hub at the Melbourne School of Design",
+          "sha256": "e4b473320a988c0447f7751e99ef3a417397b8c004eef1577aee8aacb75cc7d3",
+          "suffix": "This includes the many ways urban informality intersects with formal urban systems, and a better understanding of the logic and resilient capac",
+          "text": "InfUr- is an assemblage of researchers and projects focused on the role of urban informality in the creative production of cities of both the Global South and North."
+        },
+        "id": "e4b473320a988c0447f7751e99ef3a417397b8c004eef1577aee8aacb75cc7d3",
+        "quote": "InfUr- is an assemblage of researchers and projects focused on the role of urban informality in the creative production of cities of both the Global South and North.",
+        "verified": true
+      },
+      {
+        "checked": "2026-10-02",
+        "context": {
+          "prefix": "formality intersects with formal urban systems, and a better understanding of the logic and resilient capacities embodied in self-organised urbanism.",
+          "sha256": "f36b083b3ec0318d18af3fd075167c37602b720b809ed296227530fdcae41821",
+          "suffix": "The built environment disciplines and professions have traditionally focused on the formally authorised frameworks through which the city is pl",
+          "text": "This includes the many ways urban informality intersects with formal urban systems, and a better understanding of the logic and resilient capacities embodied in self-organised urbanism. The Hub embodies a shared interest in how power is practised as a form of self-organisation, and in the struggles of marginalised populations to assert their right to the city."
+        },
+        "id": "5dc22b42b552fe0a31759aeda5e886a50789218488091973701b0d368689b933",
+        "quote": "The Hub embodies a shared interest in how power is practised as a form of self-organisation, and in the struggles of marginalised populations to assert their right to the city.",
+        "verified": true
+      },
+      {
+        "checked": "2026-10-02",
+        "context": {
+          "prefix": "verned. Yet all cities are produced by both formal and informal practices. Informal urbanism is not necessarily illegal, rather it is self-organised.",
+          "sha256": "7e507a106a756b4e7f3e55468a31349d42e48fbc948adcd1d9bceca6c8db5867",
+          "suffix": ", often in reaction to practices of displacement, marginalisation and exclusion. The InfUr- acronym evokes the ways informal urbanism infuses th",
+          "text": "The built environment disciplines and professions have traditionally focused on the formally authorised frameworks through which the city is planned, designed, constructed and governed. Yet all cities are produced by both formal and informal practices. Informal urbanism is not necessarily illegal, rather it is self-organised. It is not separate from but intersects with the formal structures of state regulation and control, often in reaction to practices of displacement, marginalisation and exclusion."
+        },
+        "id": "372d5bc344cb6617556cfffb67b3e8ef10e87bd0bed4de811958b298d6a9fde6",
+        "quote": "It is not separate from but intersects with the formal structures of state regulation and control",
+        "verified": true
+      },
+      {
+        "checked": "2026-10-02",
+        "context": {
+          "prefix": "nd often infuriates the state. Informal urbanism is the original or Ur-form of the city and of citizenship \u2013 it puts the Ur back into urbanism.",
+          "sha256": "2bd55944a164bbff60c88bd5d716c2c0c646ff71366c631db42f07240509396e",
+          "suffix": "",
+          "text": "Co-Directors: Kim Dovey, Crystal Legacy, Patrick Cobbinah, and Ashraful Alam"
+        },
+        "id": "2bd55944a164bbff60c88bd5d716c2c0c646ff71366c631db42f07240509396e",
+        "quote": "Co-Directors: Kim Dovey, Crystal Legacy, Patrick Cobbinah, and Ashraful Alam",
+        "verified": true
+      }
+    ],
+    "last_modified": "Fri, 02 Oct 2026 09:41:08 GMT"
+  },
+  "https://infur.msd.unimelb.edu.au/2026/09/27/co-design-across-the-global-south-and-north-participatory-design-within-and-beyond-australia-infur-roundtable/": {
+    "archive_checked": "2026-10-02",
+    "archive_sha256": "6a28f6525d93eb556a5eff8ef5e9bcadd0e3cc196b0048a7a7d81e6c50c376f5",
+    "archive_url": "http://web.archive.org/web/20261002095314/https://infur.msd.unimelb.edu.au/2026/09/27/co-design-across-the-global-south-and-north-participatory-design-within-and-beyond-australia-infur-roundtable/",
+    "checked": "2026-10-02",
+    "document_sha256": "6a28f6525d93eb556a5eff8ef5e9bcadd0e3cc196b0048a7a7d81e6c50c376f5",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-10-02",
+        "context": {
+          "prefix": "in and beyond Australia explores how participatory design unfolds across diverse social, cultural and political contexts. Moving beyond consultation,",
+          "sha256": "48bfe12b54dd580dadf573e26e29b69356f334e686b8d3e3436929c497d7a82a",
+          "suffix": ". The session offers postgraduate students and the wider InfUr- community practical insights into how community-engaged approaches can shape more resp",
+          "text": "This InfUr- Roundtable brings together three MSD colleagues whose work within and beyond Australia explores how participatory design unfolds across diverse social, cultural and political contexts. Moving beyond consultation, the presentations will examine co-design as a process of listening, learning, negotiating and sharing authority. The session offers postgraduate students and the wider InfUr- community practical insights into how community-engaged approaches can shape more responsive research, teaching and design practice."
+        },
+        "id": "6d89dfa68f1d9eb32acb6abf709b3eb7f33810c66bb2e61d07be8c6dfc82c387",
+        "quote": "the presentations will examine co-design as a process of listening, learning, negotiating and sharing authority",
+        "verified": true
+      },
+      {
+        "checked": "2026-10-02",
+        "context": {
+          "prefix": "D colleagues whose work within and beyond Australia explores how participatory design unfolds across diverse social, cultural and political contexts.",
+          "sha256": "48bfe12b54dd580dadf573e26e29b69356f334e686b8d3e3436929c497d7a82a",
+          "suffix": "The session offers postgraduate students and the wider InfUr- community practical insights into how community-engaged approaches can shape more respo",
+          "text": "This InfUr- Roundtable brings together three MSD colleagues whose work within and beyond Australia explores how participatory design unfolds across diverse social, cultural and political contexts. Moving beyond consultation, the presentations will examine co-design as a process of listening, learning, negotiating and sharing authority. The session offers postgraduate students and the wider InfUr- community practical insights into how community-engaged approaches can shape more responsive research, teaching and design practice."
+        },
+        "id": "9aaf92f3b79db1cf670679d0391572edf434e0b32c7fd9655868ce71a661b6db",
+        "quote": "Moving beyond consultation, the presentations will examine co-design as a process of listening, learning, negotiating and sharing authority.",
+        "verified": true
+      }
+    ],
+    "last_modified": "Fri, 02 Oct 2026 09:52:50 GMT"
+  },
   "https://itsrio.org/pt/institucional/": {
     "checked": "2026-08-20",
     "etag": null,
     "last_modified": "Thu, 20 Aug 2026 11:47:41 GMT"
   },
   "https://journals.sagepub.com/doi/10.1177/20539517241296038": {
-    "archive_checked": "2026-09-25",
+    "archive_checked": "2026-10-02",
+    "archive_sha256": "42b45756c204a481e2aad9ba107e8749e6b8c9283dc26571083d9b3123a4c2a7",
     "archive_url": "http://web.archive.org/web/20260904075947/https://journals.sagepub.com/doi/10.1177/20539517241296038",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-20",
@@ -5591,6 +5843,26 @@
         },
         "id": "6d0107d03961bf9c85d61a0729b7654f779e719eda72bd637b6b275890a3d592",
         "quote": "Kimbra co-founded MosaicLab in 2013 and sees the group as a platform for continuous learning about participation.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://mosaiclab.com.au/news-all-posts/vic-gov-inquiry": {
+    "checked": "2026-10-02",
+    "document_sha256": "7394235874ccdf6dd3a8ceac976e6d3c8ea8819b4888080bdf2f22c67f86d414",
+    "etag": "W/\"c61d3677a5fd0400c85f66ac55b1e77a\"",
+    "evidence": [
+      {
+        "checked": "2026-10-02",
+        "context": {
+          "prefix": "26, Victoria's Legislative Council Environment and Planning Committee tabled its report from the Inquiry into Community Consultation Practices.",
+          "sha256": "71b63a40a91a2a19ba5c29e786995e2ca651df7d2f68f0ef516b08697a31d2e7",
+          "suffix": ": The standard of engagement in Victoria isn't consistently good enough, and the existing frameworks to guide better practice are often not foll",
+          "text": "The report contains 28 recommendations and a clear message:"
+        },
+        "id": "a351f0e9e74950c68cbe59b1e12860631b9589b54eaad339e58da1e8192305e8",
+        "quote": "The report contains 28 recommendations and a clear message",
         "verified": true
       }
     ],
@@ -6068,6 +6340,14 @@
       }
     ],
     "last_modified": "Wed, 19 Aug 2026 08:53:25 GMT"
+  },
+  "https://pina.com.fj/2026/09/22/fiji-constitution-review-report-tabled-major-reforms-proposed/": {
+    "failing": {
+      "count": 1,
+      "error": "HTTP_500",
+      "last": "2026-10-02",
+      "since": "2026-10-02"
+    }
   },
   "https://pmc.ncbi.nlm.nih.gov/articles/PMC8416191/": {
     "checked": "2026-08-29",
@@ -6625,7 +6905,8 @@
     "last_modified": null
   },
   "https://theyvoteforyou.org.au/about": {
-    "archive_checked": "2026-09-25",
+    "archive_checked": "2026-10-02",
+    "archive_sha256": "e4b11ff813b693d775739bbe8b8c51fe92a6296dc8c1931c30ffa03906cf7635",
     "archive_url": "http://web.archive.org/web/20260812053340/https://theyvoteforyou.org.au/about",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-20",
@@ -7148,7 +7429,8 @@
     "last_modified": null
   },
   "https://www.ag.gov.au/integrity/australias-open-government-partnership": {
-    "archive_checked": "2026-09-25",
+    "archive_checked": "2026-10-02",
+    "archive_sha256": "303ce265fc556dc2c1ac696bc1c241d57d1fed61032d3b6784f9515e098ecd06",
     "archive_url": "http://web.archive.org/web/20260828153433/https://www.ag.gov.au/integrity/australias-open-government-partnership",
     "blocked": "HTTP_403",
     "blocked_since": "2026-09-16",
@@ -7168,8 +7450,9 @@
     "manual_checked": "2026-08-22"
   },
   "https://www.ag.gov.au/rights-and-protections/australias-open-government-partnership/open-government-forum": {
-    "archive_checked": "2026-09-18",
-    "archive_url": "http://web.archive.org/web/20260911082148/https://www.ag.gov.au/rights-and-protections/australias-open-government-partnership/open-government-forum",
+    "archive_checked": "2026-10-02",
+    "archive_sha256": "1002745e36c49b572d8f478e9a271cd51f0413c43e751f5c5026f701d2628bce",
+    "archive_url": "http://web.archive.org/web/20261002095719/https://www.ag.gov.au/rights-and-protections/australias-open-government-partnership/open-government-forum",
     "blocked": "HTTP_403",
     "blocked_since": "2026-09-16",
     "evidence": [
@@ -7282,6 +7565,29 @@
     ],
     "last_modified": null
   },
+  "https://www.bankaust.com.au/about-us/customer-owned": {
+    "archive_checked": "2026-10-02",
+    "archive_sha256": "85dca8c3d37bfb98f673a1a050dd34d985e9261f650ba0b78aa880b1f0da6077",
+    "archive_url": "http://web.archive.org/web/20261002100823/https://www.bankaust.com.au/about-us/customer-owned",
+    "checked": "2026-10-02",
+    "document_sha256": "85dca8c3d37bfb98f673a1a050dd34d985e9261f650ba0b78aa880b1f0da6077",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-10-02",
+        "context": {
+          "prefix": "tralia needs. adwdwada What is a customer-owned bank?",
+          "sha256": "3978ee7ce9d6f56d78fa762080e1489de52554d73ed84fe153f4107c33dad823",
+          "suffix": "And the issues we take action on. We are committed to customer ownership and to operating in accordance with the international principles for c",
+          "text": "Being customer owned means our customers have a voice and a vote on how the bank is run. And the issues we take action on."
+        },
+        "id": "edab09020eb2f770037fdbb4c9af403370a4a4a410828f6d1b7d63ed06c73fb7",
+        "quote": "Being customer owned means our customers have a voice and a vote on how the bank is run.",
+        "verified": true
+      }
+    ],
+    "last_modified": "Fri, 02 Oct 2026 07:29:32 GMT"
+  },
   "https://www.bbc.com/news/articles/cm2lgnze013o": {
     "checked": "2026-08-26",
     "document_sha256": "d13da28063c1ee178e0000e727a20c39937b2cf47977bd9fd3e885157643686d",
@@ -7383,7 +7689,8 @@
     "last_modified": null
   },
   "https://www.britannica.com/topic/slavery-sociology/Slave-societies": {
-    "archive_checked": "2026-09-25",
+    "archive_checked": "2026-10-02",
+    "archive_sha256": "eedecbbd55796b0e3515520b3e38858ba7d2972514bffb2775ea761b8fa70e74",
     "archive_url": "http://web.archive.org/web/20260921202834/https://www.britannica.com/topic/slavery-sociology/Slave-societies",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-20",
@@ -7604,8 +7911,9 @@
     "last_modified": null
   },
   "https://www.coe.int/en/web/congress/-/deliberative-democracy-in-ukraine-congress-to-support-three-citizens-assemblies-in-2025-2026": {
-    "archive_checked": "2026-09-25",
-    "archive_url": "http://web.archive.org/web/20260918080901/https://www.coe.int/en/web/congress/-/deliberative-democracy-in-ukraine-congress-to-support-three-citizens-assemblies-in-2025-2026",
+    "archive_checked": "2026-10-02",
+    "archive_sha256": "b45694dd5381ae2bbd177647d3450fbc27a70d5d8e72f3c277b9a195b56e1630",
+    "archive_url": "http://web.archive.org/web/20261002100417/https://www.coe.int/en/web/congress/-/deliberative-democracy-in-ukraine-congress-to-support-three-citizens-assemblies-in-2025-2026",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-20",
     "evidence": [
@@ -7624,8 +7932,9 @@
     "manual_checked": "2026-08-22"
   },
   "https://www.coe.int/en/web/congress/-/ukraine-s-first-metropolitan-citizens-assembly-launched-in-lviv": {
-    "archive_checked": "2026-09-25",
-    "archive_url": "http://web.archive.org/web/20260918080920/https://www.coe.int/en/web/congress/-/ukraine-s-first-metropolitan-citizens-assembly-launched-in-lviv",
+    "archive_checked": "2026-10-02",
+    "archive_sha256": "f9fc1a70610aeb914a674f0088b0eafd54c39462668f02db4cc25024ae44e9fa",
+    "archive_url": "http://web.archive.org/web/20261002100513/https://www.coe.int/en/web/congress/-/ukraine-s-first-metropolitan-citizens-assembly-launched-in-lviv",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-20",
     "evidence": [
@@ -7678,6 +7987,20 @@
         "id": "89337ac58de02c64d93e3143f400a0852eb2a0efe126e3b22e7136a91a4011fb",
         "quote": "The \u201cEmpowered Communities: Next Steps\u201d Convention marks 10 years since Cathy McGowan called together of group of people to talk about what could be done about the parlous state of democracy in the electorate of Indi.",
         "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://www.congo-press.com/politique/assemblee-nationale-apres-les-observations-de-la-cour-constitutionnelle-la-loi-sur-le-referendum-renvoyee-en-commission/": {
+    "checked": "2026-10-02",
+    "document_sha256": "afe06c6fe58fff38847c7070568843d3c17b530ab7dbfd16bc5901e11e09e631",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-10-02",
+        "id": "5965027de9fe246d31972779b5ba0cfdc0a62b8c81b3462a59ebcb16254188e5",
+        "quote": "La proposition de loi fixant les r\u00e8gles d'organisation du r\u00e9f\u00e9rendum en R\u00e9publique d\u00e9mocratique du Congo a \u00e9t\u00e9 renvoy\u00e9e \u00e0 la commission politique, administrative et juridique (PAJ) de l'Assembl\u00e9e nationale, \u00e0 la suite des observations formul\u00e9es par la Cour constitutionnelle.",
+        "verified": false
       }
     ],
     "last_modified": null
@@ -7735,6 +8058,26 @@
         },
         "id": "d1d1b78f78c9b9ace3a7b0fb33c89fd88296e13afdd970f307078e08de38b9d4",
         "quote": "Hundreds of soldiers attacked several positions in Niamey early the morning of August 29, including the presidential palace, Air Base 101, the national TV station, and Bravia Hotel.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://www.crossroadsconversation.com.au/events/human-rights-at-the-breaking-point": {
+    "checked": "2026-10-02",
+    "document_sha256": "f62383c76c9d4472f79a03b9f37c7a471efc01e6d69d99e1068731b30a4a45dd",
+    "etag": "W/\"cbbf3e06dceb91767566758fce172db1\"",
+    "evidence": [
+      {
+        "checked": "2026-10-02",
+        "context": {
+          "prefix": "Meeting link: https://us06web.zoom.us/j/86807934880?pwd=P1gXQA6oGLZpTS72SmlLOyyiatkDY8.1 Meeting ID: 868 0793 4880 Passcode: 936869",
+          "sha256": "9048dc12312dfe0ab4f33aad6a6dac41890214566a3346dfb9c4659f60a99dcc",
+          "suffix": "Fuelled by great power rivalries, these conflicts have severely weakened the effectiveness of the international human rights system and international",
+          "text": "Presently, our world is beset by conflicts more serious than at any time since World War II. Fuelled by great power rivalries, these conflicts have severely weakened the effectiveness of the international human rights system and international law. Governments and armed groups are increasingly emboldened to act with impunity, while humanitarian emergencies and mass displacement reach unprecedented levels."
+        },
+        "id": "a267cdfdb3d23ffd786cc898d4109267e5df3affbedef5102113cffb7a7a8bb1",
+        "quote": "Presently, our world is beset by conflicts more serious than at any time since World War II.",
         "verified": true
       }
     ],
@@ -7815,6 +8158,83 @@
       }
     ],
     "last_modified": "Wed, 26 Aug 2026 08:55:16 GMT"
+  },
+  "https://www.democracy-international.org/events/democracy-camp-2026-vic": {
+    "checked": "2026-10-02",
+    "document_sha256": "5459f5212ea522097a3112519533f926c506a9f021e85209d8df6325eccfaff1",
+    "etag": "\"1790878180-gzip\"",
+    "evidence": [
+      {
+        "checked": "2026-10-02",
+        "context": {
+          "prefix": "0 - 18.10.2026 13:00 Location Alberg Vic Xanascat Avinguda d'Ol\u00edmpia, 4 08500 Vic Spain In a nutshell",
+          "sha256": "632f521e1949d8457b090a3df1a89d8399ed32f0551528b0d45925ac1572a482",
+          "suffix": "Join our community of 60 young people aged 16 to 26 years, residing in the European Union. What does that mean exactly? From 14 to 18 Oct",
+          "text": "The Democracy Camp is your five-day intercultural exchange on youth participation, rights, inclusion, and Europe \u2013 and the interconnections between them. Join our community of 60 young people aged 16 to 26 years, residing in the European Union."
+        },
+        "id": "4d0dc4bc3b7cc7e1b76fcaad214116ffe5b601de6c0c5cf90d1074008d288f13",
+        "quote": "The Democracy Camp is your five-day intercultural exchange on youth participation, rights, inclusion, and Europe \u2013 and the interconnections between them.",
+        "verified": true
+      }
+    ],
+    "last_modified": "Thu, 01 Oct 2026 18:09:40 GMT"
+  },
+  "https://www.democracy-international.org/events/democracy-explorers-study-trip-ljubljana": {
+    "archive_checked": "2026-10-02",
+    "archive_sha256": "e77ea32d36028cbd167c67acd427252c9e68d4934413a3b7a19bb4f23a840b71",
+    "archive_url": "http://web.archive.org/web/20261002095219/https://www.democracy-international.org/events/democracy-explorers-study-trip-ljubljana",
+    "checked": "2026-10-02",
+    "document_sha256": "e77ea32d36028cbd167c67acd427252c9e68d4934413a3b7a19bb4f23a840b71",
+    "etag": "\"1790877629-gzip\"",
+    "evidence": [
+      {
+        "checked": "2026-10-02",
+        "context": {
+          "prefix": "play in challenging the legislation? And what can we learn from the Slovenian experience about citizen participation and democratic safeguards?",
+          "sha256": "72eaed00c7ce92fa5c28e2f1335b57066b94e1c03d4ba2b8636247ec50d8b023",
+          "suffix": "We will be hosted by the Peace Institute (Mirovni in\u0161titut) and are planning exchanges with organisations involved in the referendum campaign as well",
+          "text": "During our stay, we will meet with Slovenian civil society organisations, researchers and other local actors working on direct democracy, participation and democratic rights. We will be hosted by the Peace Institute (Mirovni in\u0161titut) and are planning exchanges with organisations involved in the referendum campaign as well as other local initiatives and experts."
+        },
+        "id": "f3e31d853b39a3c10ff0a08a75fde95a3b9508c290e7e285deafc082ed7e9e44",
+        "quote": "During our stay, we will meet with Slovenian civil society organisations, researchers and other local actors working on direct democracy, participation and democratic rights.",
+        "verified": true
+      }
+    ],
+    "last_modified": "Thu, 01 Oct 2026 18:00:29 GMT"
+  },
+  "https://www.democracy-international.org/events/general-assembly-DI": {
+    "checked": "2026-10-02",
+    "document_sha256": "5f4dbed23b8ea6f75f5ebfac6b30ac5efe5fb5c3132179da901abe818d41f6a3",
+    "etag": "\"1790907733-gzip\"",
+    "evidence": [
+      {
+        "checked": "2026-10-02",
+        "id": "b1c52336aa1785e419394fa277b8f5f8aac3b9abfe83df3a0d00e230fbb00240",
+        "quote": "We warmly invite you to Democracy International's General Assembly on Saturday, 21 November 2026, at 13:30 CET.",
+        "verified": false
+      }
+    ],
+    "last_modified": "Fri, 02 Oct 2026 02:22:13 GMT"
+  },
+  "https://www.democracy-international.org/events/shaping-democracy-2026": {
+    "checked": "2026-10-02",
+    "document_sha256": "c675bb6e0ee0ef1bb26246f06d4ef343cc6df80cfe96a8f7e5460bc788dd1aa4",
+    "etag": "\"1790888480-gzip\"",
+    "evidence": [
+      {
+        "checked": "2026-10-02",
+        "context": {
+          "prefix": "hallenges such as climate change. But too often, these conversations happen within national borders. Shaping Democracy 2026 changes that.",
+          "sha256": "37f1141827fb016bf9ab264e0b8698ba1c607215651d4d056dd88a4f223f4f43",
+          "suffix": "Conversations focus on democracy, the EU Charter of Fundamental Rights, climate participation, and democratic innovation. Along the way, you will exc",
+          "text": "Through interactive workshops, discussions, exhibitions, and public events, Shaping Democracy 2026 brings together citizens, activists, researchers, local government representatives, and participation practitioners to share and connect. Conversations focus on democracy, the EU Charter of Fundamental Rights, climate participation, and democratic innovation. Along the way, you will exchange experiences, discover inspiring practices from across Europe, and build new connections that extend beyond the event."
+        },
+        "id": "010b6b2f349e9cae63ae17d86cbc1df01303fac7e2f35649728a8e47907ac064",
+        "quote": "Through interactive workshops, discussions, exhibitions, and public events, Shaping Democracy 2026 brings together citizens, activists, researchers, local government representatives, and participation practitioners to share and connect.",
+        "verified": true
+      }
+    ],
+    "last_modified": "Thu, 01 Oct 2026 21:01:20 GMT"
   },
   "https://www.democracyco.com.au/about/": {
     "checked": "2026-08-26",
@@ -8114,6 +8534,14 @@
       }
     ],
     "last_modified": "Sat, 29 Aug 2026 02:07:05 GMT"
+  },
+  "https://www.financeminister.gov.au/media-release/2018/09/21/release-second-open-government-national-action-plan": {
+    "failing": {
+      "count": 1,
+      "error": "NETWORK_ERROR",
+      "last": "2026-10-02",
+      "since": "2026-10-02"
+    }
   },
   "https://www.folio.org.au/event-4941291": {
     "checked": "2026-09-16",
@@ -8542,7 +8970,7 @@
     "last_modified": null
   },
   "https://www.involve.org.uk/about/about-involve": {
-    "archive_checked": "2026-09-25",
+    "archive_checked": "2026-10-02",
     "archive_url": "http://web.archive.org/web/20260816153423/https://www.involve.org.uk/about/about-involve",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-20",
@@ -8562,7 +8990,8 @@
     "manual_checked": "2026-08-22"
   },
   "https://www.ipc.nsw.gov.au/news/open-government-partnership-final-public-consultation-draft-commitments-australias-third-national-action-plan": {
-    "archive_checked": "2026-09-25",
+    "archive_checked": "2026-10-02",
+    "archive_sha256": "3f299a35884033faa4da79f8cb841f7312309978b1bb704d4640bb57edb2390d",
     "archive_url": "http://web.archive.org/web/20250524182833/https://www.ipc.nsw.gov.au/news/open-government-partnership-final-public-consultation-draft-commitments-australias-third-national-action-plan",
     "blocked": "HTTP_403",
     "blocked_since": "2026-09-16"
@@ -8743,8 +9172,9 @@
     "last_modified": null
   },
   "https://www.lesswrong.com/posts/oqvsR2LmHWamyKDcj/large-language-models-will-be-great-for-censorship": {
-    "archive_checked": "2026-09-18",
-    "archive_url": "http://web.archive.org/web/20260520051548/https://www.lesswrong.com/posts/oqvsR2LmHWamyKDcj/large-language-models-will-be-great-for-censorship",
+    "archive_checked": "2026-10-02",
+    "archive_sha256": "be3315c67167e4c7c36556706a6fc8376f5b3e0a988579b884ff8f160a68fa87",
+    "archive_url": "http://web.archive.org/web/20261002100356/https://www.lesswrong.com/posts/oqvsR2LmHWamyKDcj/large-language-models-will-be-great-for-censorship",
     "blocked": "HTTP_429",
     "blocked_since": "2026-08-25"
   },
@@ -8828,7 +9258,8 @@
     "last_modified": null
   },
   "https://www.localgovernment.vic.gov.au/__data/assets/word_doc/0027/167913/Local-Government-Act-2020-Principles-Community-Engagement.docx": {
-    "archive_checked": "2026-09-25",
+    "archive_checked": "2026-10-02",
+    "archive_sha256": "e99a0cb931275931d2dc0c849b7cf26c1fa705559c1b80486e14ce24bf8bff98",
     "archive_url": "http://web.archive.org/web/20260727123829/https://www.localgovernment.vic.gov.au/__data/assets/word_doc/0027/167913/Local-Government-Act-2020-Principles-Community-Engagement.docx",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-20",
@@ -8935,8 +9366,9 @@
     "last_modified": null
   },
   "https://www.mcguinnessinstitute.org/events/upcoming-events/": {
-    "archive_checked": "2026-09-25",
-    "archive_url": "http://web.archive.org/web/20260918080556/https://www.mcguinnessinstitute.org/events/upcoming-events/",
+    "archive_checked": "2026-10-02",
+    "archive_sha256": "c424d3fde7f79a49c78aa40cc358084ed1fd723df098e5cb20b769898e4fa2bd",
+    "archive_url": "http://web.archive.org/web/20260925090119/https://www.mcguinnessinstitute.org/events/upcoming-events/",
     "blocked": "HTTP_403",
     "blocked_since": "2026-09-18"
   },
@@ -9273,6 +9705,28 @@
     ],
     "last_modified": null
   },
+  "https://www.newdemocracy.com.au/wp-content/uploads/2026/09/UNDEF_Handbook-2nd-Edition-Sept-2026.pdf": {
+    "archive_checked": "2026-10-02",
+    "archive_sha256": "77f796a3608d7c3b57d6320e63f6ebff722e219f18b841cd5d128774cd0c1e89",
+    "archive_url": "http://web.archive.org/web/20260917141043/https://www.newdemocracy.com.au/wp-content/uploads/2026/09/UNDEF_Handbook-2nd-Edition-Sept-2026.pdf",
+    "checked": "2026-10-02",
+    "document_sha256": "77f796a3608d7c3b57d6320e63f6ebff722e219f18b841cd5d128774cd0c1e89",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-10-02",
+        "context": {
+          "prefix": "ivil society, the public service, and elected representatives. Without these two major developments, there would be little interest in this Handbook.",
+          "sha256": "88c47d1af0d724a67e1062996427aef9400b0d8b2a7d2dd7a0659ea657d5625e",
+          "suffix": "Most commentary on democracy focuses on the negative. We would do better to focus on the opportunity. Significant thanks are given to the practitione"
+        },
+        "id": "cce7cd54978830d493d36de5ea81abcff84cd7e72dfe60d3f30f3f465ed8b652",
+        "quote": "The newDemocracy Foundation would like to thank the United Nations Democracy Fund (UNDEF) and United Nations Development Programme (UNDP) for taking a leadership role and helping to champion a focus on innovation.",
+        "verified": true
+      }
+    ],
+    "last_modified": "Thu, 10 Sep 2026 02:44:01 GMT"
+  },
   "https://www.npr.org/2021/01/12/956020789/israeli-human-rights-group-says-the-country-pursues-nondemocratic-apartheid-regi": {
     "archive_checked": "2026-09-18",
     "archive_url": "http://web.archive.org/web/20260911082536/https://www.npr.org/2021/01/12/956020789/israeli-human-rights-group-says-the-country-pursues-nondemocratic-apartheid-regi",
@@ -9289,6 +9743,12 @@
         "quote": "One organizing principle lies at the base of a wide array of Israeli policies: advancing and perpetuating the supremacy of one group \u2013 Jews \u2013 over another \u2013 Palestinians,"
       }
     ],
+    "failing": {
+      "count": 1,
+      "error": "NETWORK_ERROR",
+      "last": "2026-10-02",
+      "since": "2026-10-02"
+    },
     "manual_checked": "2026-08-22"
   },
   "https://www.oaf.org.au/2022/03/23/senator-for-nsw-andrew-bragg-threatens-openaustralia-foundation-with-legal-action/": {
@@ -9331,7 +9791,8 @@
     "last_modified": null
   },
   "https://www.opengovpartnership.org/documents/australia-letter-of-intent-to-join-ogp/": {
-    "archive_checked": "2026-09-25",
+    "archive_checked": "2026-10-02",
+    "archive_sha256": "5c965a29ca39bd96002b3de108757fd7cc598d701426ff5fa8d1153aa9016526",
     "archive_url": "http://web.archive.org/web/20250718135710/https://www.opengovpartnership.org/documents/australia-letter-of-intent-to-join-ogp/",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-20",
@@ -9650,6 +10111,12 @@
         "verified": true
       }
     ],
+    "failing": {
+      "count": 1,
+      "error": "NETWORK_ERROR",
+      "last": "2026-10-02",
+      "since": "2026-10-02"
+    },
     "last_modified": null
   },
   "https://www.prediki.com/meta/en/Prediction-Markets-A-Better-Alternative/": {
@@ -9669,6 +10136,12 @@
         "verified": true
       }
     ],
+    "failing": {
+      "count": 1,
+      "error": "NETWORK_ERROR",
+      "last": "2026-10-02",
+      "since": "2026-10-02"
+    },
     "last_modified": null
   },
   "https://www.pressenza.com/de/2017/12/demokratie-echtzeit-neue-app-democracy-erfolgreich-crowdfinanziert/": {
@@ -9895,6 +10368,28 @@
     ],
     "last_modified": "Fri, 25 Sep 2026 09:11:21 GMT"
   },
+  "https://www.radiookapi.net/2026/09/23/emissions/dialogue-entre-congolais/marche-de-ludps-et-allies-pour-soutenir-le-referendum": {
+    "archive_checked": "2026-10-02",
+    "archive_sha256": "9878590fc45d51e00ccb563f85bf98e5944b21e06631763286e8f68937db262d",
+    "archive_url": "http://web.archive.org/web/20260927080640/https://www.radiookapi.net/2026/09/23/emissions/dialogue-entre-congolais/marche-de-ludps-et-allies-pour-soutenir-le-referendum",
+    "checked": "2026-10-02",
+    "document_sha256": "fe2fdbc7c88698562d0b912fc20d3ea1eb69688fda6a846f9837a7b09a707318",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-10-02",
+        "context": {
+          "prefix": "endus \u00e0 leur tour dans les rues ce mardi 22 septembre \u00e0 Kinshasa et dans plusieurs provinces. Le parti pr\u00e9sidentiel avait appel\u00e9 \u00e0 cette mobilisation",
+          "sha256": "e6be883a65c0524c6889361a6c24d2a77bb13b2cc0a2d9efbc05241e49f45ed6",
+          "suffix": "annonc\u00e9 par le pr\u00e9sident F\u00e9lix Tshisekedi. A Kinshasa, la marche, autoris\u00e9e par l\u2019H\u00f4tel de ville, est partie de la 11\u1d49 Rue Limete et s\u2019est dirig\u00e9e ve"
+        },
+        "id": "1d89b00041d3d479127d5ed23978d0cda9537a27fc189ad43271d88a3024bddc",
+        "quote": "pour soutenir les institutions de la R\u00e9publique, la loi portant organisation du r\u00e9f\u00e9rendum et le dialogue national",
+        "verified": true
+      }
+    ],
+    "last_modified": "Fri, 02 Oct 2026 10:06:49 GMT"
+  },
   "https://www.rgb.rw/1/about-rgb": {
     "checked": "2026-08-29",
     "document_sha256": "601c32c4f6b523fd0b523d828233381d8b913c868c67bba7e3a9916a2f561908",
@@ -9916,8 +10411,9 @@
     "last_modified": null
   },
   "https://www.science.org/doi/10.1126/science.adq2852": {
-    "archive_checked": "2026-09-18",
-    "archive_url": "http://web.archive.org/web/20251212073459/https://www.science.org/doi/10.1126/science.adq2852",
+    "archive_checked": "2026-10-02",
+    "archive_sha256": "d6d227b4f7282e187add081885e329f63be362f9a0523af1d9671943e5dbcc09",
+    "archive_url": "http://web.archive.org/web/20260513112925/https://www.science.org/doi/10.1126/science.adq2852",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-20",
     "evidence": [
@@ -9928,6 +10424,23 @@
       }
     ],
     "manual_checked": "2026-08-22"
+  },
+  "https://www.scribd.com/document/695148676/08-03-04-L-Kallistos-Ware-How-Study-Theology": {
+    "archive_checked": "2026-10-02",
+    "archive_sha256": "9eaea92a6d6b73081af106d99e8ca806ad09d62b2371e616ae56a39208d1fb24",
+    "archive_url": "http://web.archive.org/web/20260801001925/https://www.scribd.com/document/695148676/08-03-04-L-Kallistos-Ware-How-Study-Theology",
+    "checked": "2026-10-02",
+    "document_sha256": "9bea91852a8e2b14d164dd41891f7116774ef97c5de10a48c3a4768081a79577",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-10-02",
+        "id": "b8c44b8b15cf22ccf1d10f5a2142e5f4f1c5013b3f21e7160f36bcf7b458968f",
+        "quote": "We want you to learn to be free.",
+        "verified": false
+      }
+    ],
+    "last_modified": null
   },
   "https://www.sitra.fi/en/articles/sitras-statement-on-the-european-democracy-shield-initiative-of-the-european-commission/": {
     "checked": "2026-08-29",
@@ -10252,6 +10765,29 @@
     ],
     "last_modified": null
   },
+  "https://www.thesharedcentre.com/": {
+    "archive_checked": "2026-10-02",
+    "archive_sha256": "eb3ec43dc9b905e352fd2843cddd80d8fc8c2cb73777434dcea3a0f962176b17",
+    "archive_url": "http://web.archive.org/web/20260921124304/https://www.thesharedcentre.com/",
+    "checked": "2026-10-02",
+    "document_sha256": "79639b52978f8cdc792eca0826cc0d3c275b816d62c4bd6e96d658e21ac85bb0",
+    "etag": "W/\"fc1ae20b84758dfa20f0592d4fea601a\"",
+    "evidence": [
+      {
+        "checked": "2026-10-02",
+        "context": {
+          "prefix": "Close The Shared Centre",
+          "sha256": "452e360bca67b4724444c65367c14d727842458f197e17afa8db5d544c3403bf",
+          "suffix": "The vast advances in freedom and prosperity of recent centuries were built by choosing leaders \u2013 in business, bureaucracy and government \u2013 and",
+          "text": "It's time to reawaken the better angels of our nature"
+        },
+        "id": "452e360bca67b4724444c65367c14d727842458f197e17afa8db5d544c3403bf",
+        "quote": "It's time to reawaken the better angels of our nature",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
   "https://www.transparency.org.nz/blog/event-who-has-access-environmental-information-in-the-pacific": {
     "checked": "2026-09-25",
     "document_sha256": "2646c3a32f524c90ab8b92c3097d6d7295633410eed98cc8ae34e4b118801032",
@@ -10338,7 +10874,8 @@
     "last_modified": null
   },
   "https://www.unimelb.edu.au/newsroom/news/2017/november/susan-mckinnon-foundation-and-university-of-melbourne-establish-prestigious-award-for-political-leadership": {
-    "archive_checked": "2026-09-18",
+    "archive_checked": "2026-10-02",
+    "archive_sha256": "ca8641c666590ecb850d3557793924270d0d2727a271e82fbb7ebacb8226d6e3",
     "archive_url": "http://web.archive.org/web/20250103063217/https://www.unimelb.edu.au/newsroom/news/2017/november/susan-mckinnon-foundation-and-university-of-melbourne-establish-prestigious-award-for-political-leadership",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-20",
@@ -10584,7 +11121,8 @@
     "last_modified": "Wed, 26 Aug 2026 03:10:53 GMT"
   },
   "https://www.weforum.org/organizations/movilizatorio/": {
-    "archive_checked": "2026-09-18",
+    "archive_checked": "2026-10-02",
+    "archive_sha256": "ee74b9a04ce5eed7d5a6c1f04499a31ed092f26af83812232bb73a36b532330d",
     "archive_url": "http://web.archive.org/web/20260513195149/https://www.weforum.org/organizations/movilizatorio/",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-20",
@@ -10604,7 +11142,8 @@
     "manual_checked": "2026-08-22"
   },
   "https://www.whitehouse.senate.gov/news/release/whitehouse-grassley-issue-statement-on-treasury-departments-final-rule-dismantling-key-element-of-corporate-transparency-act/": {
-    "archive_checked": "2026-09-25",
+    "archive_checked": "2026-10-02",
+    "archive_sha256": "ac6c116bb017734fdecb69e9a1fca5c4545c3f99c589e753d6cf49f0a660dcc9",
     "archive_url": "http://web.archive.org/web/20260918081002/https://www.whitehouse.senate.gov/news/release/whitehouse-grassley-issue-statement-on-treasury-departments-final-rule-dismantling-key-element-of-corporate-transparency-act/",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-20",
@@ -10622,6 +11161,29 @@
       }
     ],
     "manual_checked": "2026-08-22"
+  },
+  "https://www.wired.com/story/valve-management-jeri-ellsworth/": {
+    "archive_checked": "2026-10-02",
+    "archive_sha256": "023433737f5287347bcf56af180194f0b9f54edb6c0458ca7f1da6475c2dff8b",
+    "archive_url": "http://web.archive.org/web/20261002100039/https://www.wired.com/story/valve-management-jeri-ellsworth/",
+    "checked": "2026-10-02",
+    "document_sha256": "023433737f5287347bcf56af180194f0b9f54edb6c0458ca7f1da6475c2dff8b",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-10-02",
+        "context": {
+          "prefix": "ote source=\"Jeri Ellsworth] \"It is a pseudo-flat structure where, at least in small groups, you're all peers and make decisions together,\" she said. \"",
+          "sha256": "b340b0f6a69d671a8b5b5540df7b41a76d9c244ed58f97b0f0ee820a70c0cf7b",
+          "suffix": "There are popular kids that have acquired power in the company, then there's the trouble makers, and everyone in between.\" One of t",
+          "text": "[pullquote source=\"Jeri Ellsworth] \"It is a pseudo-flat structure where, at least in small groups, you're all peers and make decisions together,\" she said. \"But the one thing I found out the hard way is that there is actually a hidden layer of powerful management structure in the company and it felt a lot like high school. There are popular kids that have acquired power in the company, then there's the trouble makers, and everyone in between.\""
+        },
+        "id": "efd002248b2bd500e9a9e4234b2500ae38a6956f65d2d85c47f309502d8d25b4",
+        "quote": "But the one thing I found out the hard way is that there is actually a hidden layer of powerful management structure in the company and it felt a lot like high school.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
   },
   "https://www.wisdomandaction.com.au/": {
     "checked": "2026-08-26",

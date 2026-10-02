@@ -58,7 +58,7 @@ activity:
     url: https://congresovisible.uniandes.edu.co
     checked: 2026-09-16
   rss:
-    checked: 2026-09-25
+    checked: 2026-10-02
     note: No feed found
 last_checked: '2026-09-16'
 ---

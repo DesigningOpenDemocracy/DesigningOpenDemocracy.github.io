@@ -1,0 +1,9 @@
+{
+  "feed": "https://www.democracywithoutborders.org/feed",
+  "failing": {
+    "error": "UNPARSEABLE",
+    "since": "2026-10-02",
+    "count": 1,
+    "last": "2026-10-02"
+  }
+}

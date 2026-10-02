@@ -24,6 +24,7 @@ location:
   longitude: 3.3699982
   name: Yaba, Lagos, Nigeria
   precision: city
+rss_feed: https://budgit.org/feed
 related_orgs:
 - civic-hive
 events:
@@ -69,11 +70,10 @@ activity:
     url: https://budgit.org
     checked: 2026-09-20
   rss:
-    date: 2026-09-21
-    note: 'Latest post: Perhaps Frustration is not Apathy: my reflection from monitoring
-      the 2026 Osun S'
-    url: https://budgit.org/perhaps-frustration-is-not-apathy-my-reflection-from-monitoring-the-2026-osun-state-governorship-elections/
-    checked: 2026-09-25
+    date: 2026-10-01
+    note: 'Latest post: The Nigeria We Envision'
+    url: https://budgit.org/the-nigeria-we-envision/
+    checked: 2026-10-02
 last_checked: '2026-09-20'
 ---
 

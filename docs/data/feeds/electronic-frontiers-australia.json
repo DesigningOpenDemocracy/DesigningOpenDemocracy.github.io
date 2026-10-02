@@ -1,0 +1,39 @@
+{
+  "feed": "https://efa.org.au/feed/",
+  "latest": "2026-09-22",
+  "span_days": 35,
+  "items": [
+    {
+      "date": "2026-09-22",
+      "title": "Privacy Act Reform – Public Consultation on Exposure Draft Legislation",
+      "url": "https://efa.org.au/privacy-act-reform-public-consultation-on-exposure-draft-legislation/",
+      "signals": [
+        "legal or legislative"
+      ]
+    },
+    {
+      "date": "2026-09-10",
+      "title": "International Day of Democracy 2026 and the Business of Outrage: How Social Media Monetizes Political Discord",
+      "url": "https://efa.org.au/international-day-of-democracy-2026/"
+    },
+    {
+      "date": "2026-09-03",
+      "title": "Invisible by Design: The Privacy Costs of Meta’s Smart Glasses",
+      "url": "https://efa.org.au/invisible-by-design-the-privacy-costs-of-metas-smart-glasses/"
+    },
+    {
+      "date": "2026-08-27",
+      "title": "Feeding the Machine: How Copyright Became a Weapon Against AI Training",
+      "url": "https://efa.org.au/copyright-ai-training/"
+    },
+    {
+      "date": "2026-08-18",
+      "title": "EFA Demands Immediate Ban on Meta RayBan and  Kmart Smart Glasses",
+      "url": "https://efa.org.au/meta-rayban-wesfarmers/"
+    }
+  ],
+  "fetch": {
+    "etag": "W/\"160ddcd665414dd78dba16c95e178858\"",
+    "last_modified": "Tue, 22 Sep 2026 14:13:46 GMT"
+  }
+}

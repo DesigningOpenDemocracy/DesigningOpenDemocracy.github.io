@@ -29,6 +29,7 @@ location:
   longitude: 116.4074
   name: Beijing, China (origin; operates in diaspora)
   precision: city
+rss_feed: https://chinademocrats.org/?feed=rss2
 events:
 - date: '2016-09-01'
   title: Incorporated in New Jersey, USA
@@ -71,10 +72,10 @@ activity:
     url: https://chinademocrats.org/en
     checked: 2026-09-28
   rss:
-    date: 2026-09-22
-    note: 'Latest post: 美国政治暴力为何越来越难看清'
-    url: https://chinademocrats.org/?p=7123
-    checked: 2026-09-25
+    date: 2026-10-02
+    note: 'Latest post: 金发女郎谬误：韩国核武角色未定边界'
+    url: https://chinademocrats.org/?p=7275
+    checked: 2026-10-02
 last_checked: '2026-09-28'
 ---
 

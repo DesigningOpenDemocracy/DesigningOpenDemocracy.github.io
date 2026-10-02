@@ -23,6 +23,7 @@ location:
   longitude: 11.9746
   name: Gothenburg, Sweden
   precision: city
+rss_feed: https://digidemlab.org/feed
 events:
 - date: '2017-01-01'
   title: Founded in Gothenburg to design and implement digital participatory democracy
@@ -65,10 +66,10 @@ activity:
     url: https://digidemlab.org/en/about/
     checked: 2026-09-17
   rss:
-    checked: 2026-09-25
-    date: 2026-06-02
-    note: 'Latest post: Panelsamtal med Audrey Tang'
-    url: https://digidemlab.org/news/panelsamtal-kan-deltagandedemokrati-bli-en-motkraft-i-en-orolig-tid/
+    date: 2026-09-29
+    note: 'Latest post: Capacity Building Upgraded'
+    url: https://digidemlab.org/news/capacity-building-upgraded/
+    checked: 2026-10-02
 last_checked: '2026-09-17'
 ---
 

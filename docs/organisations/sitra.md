@@ -22,6 +22,7 @@ location:
   longitude: 24.9384
   name: Helsinki, Finland
   precision: city
+rss_feed: https://www.sitra.fi/feed
 events:
 - date: '1967-01-01'
   title: Established by the Finnish Parliament as the Finnish Innovation Fund, under
@@ -56,10 +57,10 @@ activity:
     url: https://www.sitra.fi/en/
     checked: 2026-09-19
   rss:
-    date: 2026-09-24
-    note: 'Latest post: Sitran toimintakatsaus 2/2026'
-    url: https://www.sitra.fi/artikkelit/sitran-toimintakatsaus-2-2026/
-    checked: 2026-09-25
+    date: 2026-09-30
+    note: 'Latest post: 5+1 vinkkiä kokemuksellisen ennakoinnin hyödyntämiseen'
+    url: https://www.sitra.fi/blogit/51-vinkkia-kokemuksellisen-ennakoinnin-hyodyntamiseen/
+    checked: 2026-10-02
 last_checked: '2026-09-19'
 ---
 

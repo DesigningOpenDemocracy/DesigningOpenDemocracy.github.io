@@ -21,6 +21,7 @@ location:
   longitude: 121.5654
   name: Taipei, Taiwan
   precision: city
+rss_feed: https://join.gov.tw/?feed=rss2
 related_orgs:
 - vtaiwan
 - g0v

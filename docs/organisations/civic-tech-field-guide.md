@@ -67,7 +67,7 @@ activity:
     date: 2026-08-10
     note: Page last modified (from sitemap)
     url: https://civictech.guide/sitemap.xml
-    checked: 2026-09-25
+    checked: 2026-10-02
 last_checked: '2026-09-16'
 ---
 

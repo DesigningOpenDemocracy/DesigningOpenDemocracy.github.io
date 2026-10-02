@@ -28,6 +28,7 @@ location:
   longitude: 149.133
   name: Gungahlin, Canberra, Australia
   precision: city
+rss_feed: https://greens.org.au/rss.xml
 related_orgs:
 - pirate-party-australia
 - australian-democrats
@@ -85,10 +86,10 @@ activity:
     url: https://greens.org.au
     checked: 2026-09-19
   rss:
-    date: 2026-09-25
-    note: 'Latest post: Regent Station Stall'
-    url: https://greens.org.au/node/3040227
-    checked: 2026-09-25
+    date: 2026-10-02
+    note: 'Latest post: Ruthven Station Stall'
+    url: https://greens.org.au/node/3041121
+    checked: 2026-10-02
 last_checked: '2026-09-19'
 ---
 

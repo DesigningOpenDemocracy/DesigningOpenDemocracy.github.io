@@ -21,6 +21,7 @@ location:
   longitude: 12.4964
   name: Rome, Italy
   precision: city
+rss_feed: https://www.labsus.org/feed
 events:
 - date: '2005-01-01'
   title: Founded in Rome as the Laboratory for Subsidiarity, pioneering shared administration
@@ -66,7 +67,7 @@ activity:
     date: 2026-09-16
     note: 'Latest post: Elogio dei tre saperi di Marianella Sclavi'
     url: https://www.labsus.org/2026/09/elogio-dei-tre-saperi-di-marianella-sclavi/
-    checked: 2026-09-25
+    checked: 2026-10-02
 last_checked: '2026-09-17'
 ---
 

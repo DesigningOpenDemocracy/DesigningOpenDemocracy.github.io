@@ -22,6 +22,7 @@ location:
   longitude: 3.3792
   name: Lagos, Nigeria
   precision: city
+rss_feed: https://civichive.org/feed
 events:
 - date: '2017-01-01'
   title: Founded in Lagos as a civic-tech fellowship and innovation hub for West Africa
@@ -63,7 +64,7 @@ activity:
     date: 2026-09-23
     note: 'Latest post: Unlearning the Past to Propel a New Future'
     url: https://civichive.org/unlearning-the-past-to-propel-a-new-future/?utm_source=rss&utm_medium=rss&utm_campaign=unlearning-the-past-to-propel-a-new-future
-    checked: 2026-09-25
+    checked: 2026-10-02
   url: https://civichive.org/2026-osun-state-governorship-election/?utm_source=rss&utm_medium=rss&utm_campaign=2026-osun-state-governorship-election
 last_checked: '2026-09-16'
 ---

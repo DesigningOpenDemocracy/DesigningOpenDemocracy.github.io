@@ -55,7 +55,7 @@ activity:
     url: https://pol.is
     checked: 2026-09-21
   rss:
-    checked: 2026-09-25
+    checked: 2026-10-02
     note: No feed found
 last_checked: '2026-09-21'
 ---

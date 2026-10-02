@@ -1,0 +1,26 @@
+{
+  "feed": "https://www.movilizatorio.org/feed",
+  "latest": "2026-09-30",
+  "span_days": 365,
+  "items": [
+    {
+      "date": "2026-09-30",
+      "title": "Un mensaje desde el corazón del mundo: sobre la inteligencia artificial",
+      "url": "https://www.movilizatorio.org/un-mensaje-desde-el-corazon-del-mundo-sobre-la-inteligencia-artificial/"
+    },
+    {
+      "date": "2026-09-21",
+      "title": "Movilizatorio es parte de los 100 Nuevos Líderes de Colombia",
+      "url": "https://www.movilizatorio.org/movilizatorio-es-parte-de-los-100-nuevos-lideres-de-colombia/"
+    },
+    {
+      "date": "2026-05-11",
+      "title": "La conferencia para el abandono de los combustibles fósiles: más allá del discurso, una hoja de ruta colectiva",
+      "url": "https://www.movilizatorio.org/conferencia-combustibles-fosiles-hoja-ruta/"
+    }
+  ],
+  "fetch": {
+    "etag": "\"f733715fdfc40976fe5b25b0276de2cf-gzip\"",
+    "last_modified": "Wed, 30 Sep 2026 19:03:59 GMT"
+  }
+}

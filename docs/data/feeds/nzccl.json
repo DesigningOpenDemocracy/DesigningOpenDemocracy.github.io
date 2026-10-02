@@ -1,0 +1,72 @@
+{
+  "feed": "https://nzccl.org.nz/feed",
+  "latest": "2026-09-20",
+  "span_days": 152,
+  "items": [
+    {
+      "date": "2026-09-20",
+      "title": "New website features: Your Rights and Laws limiting the OIA",
+      "url": "https://nzccl.org.nz/new-website-features-your-rights-and-laws-limiting-the-oia/"
+    },
+    {
+      "date": "2026-09-02",
+      "title": "Submission: Concealment of Location of Victim Remains Bill",
+      "url": "https://nzccl.org.nz/submission-concealment-of-location-of-victim-remains-bill/",
+      "signals": [
+        "publication"
+      ]
+    },
+    {
+      "date": "2026-08-24",
+      "title": "Media Release: NZCCL opposes social media ban for the under 16s",
+      "url": "https://nzccl.org.nz/media-release-nzccl-opposes-social-media-ban-for-the-under-16s/"
+    },
+    {
+      "date": "2026-06-29",
+      "title": "Submission: Summary Offences (Move-on Orders) Amendment Bill",
+      "url": "https://nzccl.org.nz/submission-summary-offences-move-on-orders-amendment-bill/"
+    },
+    {
+      "date": "2026-06-28",
+      "title": "Submission: Legislation (Definition of Woman and Man) Amendment Bill",
+      "url": "https://nzccl.org.nz/submission-legislation-definition-of-woman-and-man-amendment-bill/",
+      "signals": [
+        "legal or legislative"
+      ]
+    },
+    {
+      "date": "2026-06-20",
+      "title": "Essay prize webinar now online",
+      "url": "https://nzccl.org.nz/essay-prize-webinar-now-online/",
+      "signals": [
+        "award or recognition"
+      ],
+      "routine": [
+        "event reminder"
+      ]
+    },
+    {
+      "date": "2026-06-10",
+      "title": "Submission: Corrections (Management of Prisoners, and Prisoners’ Property) Amendment Bill",
+      "url": "https://nzccl.org.nz/submission-corrections-management-of-prisoners-and-prisoners-property-amendment-bill/"
+    },
+    {
+      "date": "2026-05-23",
+      "title": "Right to Know Act – A replacement for the OIA?",
+      "url": "https://nzccl.org.nz/right-to-know-act-a-replacement-for-the-oia/"
+    },
+    {
+      "date": "2026-05-01",
+      "title": "Submission: Immigration (Enhanced Risk Management) Amendment Bill",
+      "url": "https://nzccl.org.nz/submission-immigration-enhanced-risk-management-amendment-bill/"
+    },
+    {
+      "date": "2026-04-21",
+      "title": "Submission: Policing Amendment Bill",
+      "url": "https://nzccl.org.nz/submission-policing-amendment-bill/"
+    }
+  ],
+  "fetch": {
+    "etag": "\"f7020954138750e5fc8966aedb5c07a8-gzip\""
+  }
+}

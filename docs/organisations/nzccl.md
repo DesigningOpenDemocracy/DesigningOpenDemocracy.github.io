@@ -21,6 +21,7 @@ location:
   longitude: 174.7762
   name: Wellington, New Zealand
   precision: city
+rss_feed: https://nzccl.org.nz/feed
 events:
 - date: '1952-08-18'
   title: Founded at a public meeting in Wellington
@@ -61,7 +62,7 @@ activity:
     date: 2026-09-20
     note: 'Latest post: New website features: Your Rights and Laws limiting the OIA'
     url: https://nzccl.org.nz/new-website-features-your-rights-and-laws-limiting-the-oia/
-    checked: 2026-09-25
+    checked: 2026-10-02
 last_checked: '2026-09-19'
 ---
 

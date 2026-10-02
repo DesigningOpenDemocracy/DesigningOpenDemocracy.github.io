@@ -1,0 +1,294 @@
+{
+  "feed": "https://www.bankaust.com.au/blog/rss.xml",
+  "latest": "2026-10-02",
+  "span_days": 141,
+  "items": [
+    {
+      "date": "2026-10-02",
+      "title": "Why becoming a B Corp means so much",
+      "url": "https://www.bankaust.com.au/blog/why-becoming-a-b-corp-means-so-much-to-us"
+    },
+    {
+      "date": "2026-10-02",
+      "title": "Good chats: In conversation with Ttobie from 4 Pines",
+      "url": "https://www.bankaust.com.au/blog/good-chats-in-conversation-with-ttobie-from-4-pines"
+    },
+    {
+      "date": "2026-10-02",
+      "title": "B Corp Month is here! And it’s kind of a big deal | Blog",
+      "url": "https://www.bankaust.com.au/blog/b-corp-month-is-here-and-its-kind-of-a-big-deal"
+    },
+    {
+      "date": "2026-09-30",
+      "title": "Why does a bank have a climate action strategy manager?",
+      "url": "https://www.bankaust.com.au/blog/why-does-a-bank-have-a-climate-action-strategy-manager"
+    },
+    {
+      "date": "2026-09-30",
+      "title": "Change your bank. Change the world.",
+      "url": "https://www.bankaust.com.au/blog/future"
+    },
+    {
+      "date": "2026-09-30",
+      "title": "5 New Year’s resolutions for the finance industry | Blog",
+      "url": "https://www.bankaust.com.au/blog/5-new-years-resolutions-for-the-finance-industry"
+    },
+    {
+      "date": "2026-09-25",
+      "title": "Bank Australia and P&N Group to explore merger to create a leading national customer-owned bank",
+      "url": "https://www.bankaust.com.au/blog/pn-merger",
+      "signals": [
+        "organisational change"
+      ]
+    },
+    {
+      "date": "2026-09-24",
+      "title": "Why do interest rates go up and down? | Bank Australia",
+      "url": "https://www.bankaust.com.au/blog/what-is-the-rba-and-the-cash-rate-and-why-should-i-care"
+    },
+    {
+      "date": "2026-09-24",
+      "title": "Why can't we just print more money?",
+      "url": "https://www.bankaust.com.au/blog/why-cant-we-just-print-more-money"
+    },
+    {
+      "date": "2026-09-24",
+      "title": "What is refinancing?",
+      "url": "https://www.bankaust.com.au/blog/what-is-refinancing"
+    },
+    {
+      "date": "2026-09-24",
+      "title": "What is impact lending and why does Bank Australia do it?",
+      "url": "https://www.bankaust.com.au/blog/what-is-impact-lending-and-why-does-bank-australia-do-it"
+    },
+    {
+      "date": "2026-09-24",
+      "title": "Using equity to buy an investment property",
+      "url": "https://www.bankaust.com.au/blog/using-equity-to-buy-an-investment-property"
+    },
+    {
+      "date": "2026-09-24",
+      "title": "Understanding home loan types and rates",
+      "url": "https://www.bankaust.com.au/blog/understanding-home-loan-types"
+    },
+    {
+      "date": "2026-09-24",
+      "title": "Questions you might have about term deposits",
+      "url": "https://www.bankaust.com.au/blog/five-burning-questions-you-might-have-about-term-deposits"
+    },
+    {
+      "date": "2026-09-24",
+      "title": "Questions to ask your lender",
+      "url": "https://www.bankaust.com.au/blog/questions-to-ask-your-lender"
+    },
+    {
+      "date": "2026-09-24",
+      "title": "Plan smart. Travel safe and secure",
+      "url": "https://www.bankaust.com.au/blog/plan-smart-travel-safe-and-secure"
+    },
+    {
+      "date": "2026-09-24",
+      "title": "Home loan features worth knowing about",
+      "url": "https://www.bankaust.com.au/blog/home-loan-features-worth-knowing-about"
+    },
+    {
+      "date": "2026-09-24",
+      "title": "From plastic pollution to payment solution: The story behind our new bank cards",
+      "url": "https://www.bankaust.com.au/blog/the-story-behind-our-new-bank-cards"
+    },
+    {
+      "date": "2026-09-24",
+      "title": "Facebook Marketplace & Gumtree scams are rising in Australia | Bank Australia",
+      "url": "https://www.bankaust.com.au/blog/facebook-marketplace-gumtree-scams-rising"
+    },
+    {
+      "date": "2026-09-24",
+      "title": "Could you be unknowingly breaking the law by gambling online?",
+      "url": "https://www.bankaust.com.au/blog/could-you-be-unknowingly-breaking-the-law-by-gambling-online"
+    },
+    {
+      "date": "2026-09-24",
+      "title": "7 easy spring cleaning jobs that won’t take all weekend",
+      "url": "https://www.bankaust.com.au/blog/7-small-jobs-for-a-calmer-home"
+    },
+    {
+      "date": "2026-09-24",
+      "title": "5 schemes and grants for first home buyers in Australia | Blog",
+      "url": "https://www.bankaust.com.au/blog/5-schemes-that-can-make-buying-your-first-home-easier"
+    },
+    {
+      "date": "2026-09-22",
+      "title": "Help to Buy: How Jasper Bought His First Home in North Melbourne",
+      "url": "https://www.bankaust.com.au/blog/help-to-buy-how-the-australian-government-scheme-helped-jasper-buy-his-first-home"
+    },
+    {
+      "date": "2026-09-21",
+      "title": "Working with a global network for change this Banking on Values D",
+      "url": "https://www.bankaust.com.au/blog/working-with-a-global-network-for-change-this-banking-on-values-day"
+    },
+    {
+      "date": "2026-09-21",
+      "title": "We’re partnering with Australian Birth Stories for a podcast",
+      "url": "https://www.bankaust.com.au/blog/were-partnering-with-australian-birth-stories-for-a-podcast-miniseries",
+      "signals": [
+        "launch"
+      ],
+      "routine": [
+        "podcast or video episode"
+      ]
+    },
+    {
+      "date": "2026-09-21",
+      "title": "We’re Finder’s Green Bank of the Year (again!)",
+      "url": "https://www.bankaust.com.au/blog/were-finders-green-bank-of-the-year-again",
+      "signals": [
+        "award or recognition"
+      ]
+    },
+    {
+      "date": "2026-09-21",
+      "title": "Results from our Electrify Your Home pilot: supporting customers",
+      "url": "https://www.bankaust.com.au/blog/results-from-our-electrify-your-home-pilot"
+    },
+    {
+      "date": "2026-09-21",
+      "title": "Positive change for people and the planet: our 2024 Impact Report",
+      "url": "https://www.bankaust.com.au/blog/positive-change-for-people-and-the-planet-our-2024-impact-report",
+      "signals": [
+        "publication"
+      ]
+    },
+    {
+      "date": "2026-09-21",
+      "title": "Piloting a way for customers to go electric at home",
+      "url": "https://www.bankaust.com.au/blog/piloting-a-way-for-customers-to-go-electric-at-home",
+      "signals": [
+        "launch"
+      ],
+      "routine": [
+        "fundraising"
+      ]
+    },
+    {
+      "date": "2026-09-21",
+      "title": "Our 2023 Impact Report: another year of clean money",
+      "url": "https://www.bankaust.com.au/blog/our-2023-impact-report-another-year-of-clean-money",
+      "signals": [
+        "publication"
+      ]
+    },
+    {
+      "date": "2026-09-21",
+      "title": "Local climate solutions together with Cities Power Partnership",
+      "url": "https://www.bankaust.com.au/blog/driving-local-climate-solutions-together-with-cities-power-partnership"
+    },
+    {
+      "date": "2026-09-21",
+      "title": "COP27: How banking and finance are key to meaningful action",
+      "url": "https://www.bankaust.com.au/blog/cop27-how-banking-and-finance-are-key-to-meaningful-climate-action",
+      "signals": [
+        "flagship event"
+      ]
+    },
+    {
+      "date": "2026-09-21",
+      "title": "Bank Australia to cease loans for new fossil fuel cars from 2025 | Blog",
+      "url": "https://www.bankaust.com.au/blog/bank-australia-to-cease-loans-for-new-fossil-fuel-cars-from-2025"
+    },
+    {
+      "date": "2026-09-21",
+      "title": "Bank Australia delivers strong customer growth in FY22",
+      "url": "https://www.bankaust.com.au/blog/bank-australia-delivers-strong-customer-and-asset-growth-in-fy22"
+    },
+    {
+      "date": "2026-09-21",
+      "title": "A year of creating positive impact with our customers: Bank Australia’s 2025 Impact Report",
+      "url": "https://www.bankaust.com.au/blog/a-year-of-creating-positive-impact-with-our-customers-bank-australias-2025-impact-report",
+      "signals": [
+        "publication"
+      ]
+    },
+    {
+      "date": "2026-09-21",
+      "title": "A year of creating change together: our 2022 impact report | Blog",
+      "url": "https://www.bankaust.com.au/blog/a-year-of-creating-change-together-our-2022-impact-report",
+      "signals": [
+        "launch",
+        "publication"
+      ]
+    },
+    {
+      "date": "2026-09-16",
+      "title": "Password security tips: how to protect your online accounts this spring",
+      "url": "https://www.bankaust.com.au/blog/could-your-password-already-be-exposed-a-quick-spring-clean-can-help-protect-your-accounts"
+    },
+    {
+      "date": "2026-09-14",
+      "title": "Updates to our Terms and Conditions",
+      "url": "https://www.bankaust.com.au/blog/updates-to-click-to-pay-terms-and-conditions"
+    },
+    {
+      "date": "2026-09-03",
+      "title": "How wetland restoration is bringing nature back to south-east Australia",
+      "url": "https://www.bankaust.com.au/blog/how-nature-glenelg-trust-is-restoring-wetlands-helping-brolgas-frogs-and-other-native-species"
+    },
+    {
+      "date": "2026-08-31",
+      "title": "Why bushfire recovery after fires is critical for wildlife and local landscapes",
+      "url": "https://www.bankaust.com.au/blog/why-bushfire-recovery-after-fires-is-critical-for-wildlife-and-local-landscapes"
+    },
+    {
+      "date": "2026-08-31",
+      "title": "Why being customer owned matters",
+      "url": "https://www.bankaust.com.au/blog/why-being-customer-owned-matters"
+    },
+    {
+      "date": "2026-08-31",
+      "title": "The clean energy transition is underway. Here are 3 ways we're he",
+      "url": "https://www.bankaust.com.au/blog/the-clean-energy-transition-is-underway-here-are-3-ways-bank-australia-is-helping"
+    },
+    {
+      "date": "2026-08-31",
+      "title": "March is B Corp Month: Celebrating businesses creating change",
+      "url": "https://www.bankaust.com.au/blog/march-is-b-corp-month-celebrating-businesses-creating-change"
+    },
+    {
+      "date": "2026-08-31",
+      "title": "How to switch to a green energy provider",
+      "url": "https://www.bankaust.com.au/blog/how-to-switch-to-a-green-energy-provider"
+    },
+    {
+      "date": "2026-08-31",
+      "title": "Energy efficiency tips for rental properties",
+      "url": "https://www.bankaust.com.au/blog/energy-efficiency-and-going-electric-while-renting-top-tips"
+    },
+    {
+      "date": "2026-08-31",
+      "title": "Empowering Australian Communities to Slash Climate Pollution",
+      "url": "https://www.bankaust.com.au/blog/empowering-australian-communities-to-slash-climate-pollution"
+    },
+    {
+      "date": "2026-08-31",
+      "title": "B Corps coming together for good: Behind the scenes of our latest",
+      "url": "https://www.bankaust.com.au/blog/b-corps-coming-together-for-good-behind-the-scenes-of-our-latest-campaign"
+    },
+    {
+      "date": "2026-08-25",
+      "title": "Yule love these tips for a super sustainable holiday season",
+      "url": "https://www.bankaust.com.au/blog/tips-for-a-super-sustainable-holiday-season"
+    },
+    {
+      "date": "2026-08-25",
+      "title": "Working with more purpose",
+      "url": "https://www.bankaust.com.au/blog/5-purpose-driven-new-years-resolutions-for-your-business"
+    },
+    {
+      "date": "2026-08-25",
+      "title": "Sustainable change: 5 new B Corps to get excited about in 2022",
+      "url": "https://www.bankaust.com.au/blog/sustainable-change-5-new-b-corps-to-get-excited-about-in-2022"
+    }
+  ],
+  "fetch": {
+    "last_modified": "Fri, 02 Oct 2026 07:41:21 GMT"
+  }
+}

@@ -23,6 +23,7 @@ location:
   longitude: 12.5683
   name: Copenhagen, Denmark
   precision: city
+rss_feed: https://www.wedodemocracy.dk/feed
 events:
 - date: '2026-09-09'
   title: Democracy Fitness Trainer camp — Copenhagen
@@ -57,7 +58,7 @@ activity:
     note: 'Latest post: Ny Skole for Fremtidens Demokrati samler borgernes demokratiske
       dannelse i et ny'
     url: https://www.wedodemocracy.dk/ny-skole-for-fremtidens-demokrati-samler-borgernes-demokratiske-dannelse-i-et-nyt-laeringsrum/
-    checked: 2026-09-25
+    checked: 2026-10-02
 last_checked: '2026-09-19'
 ---
 

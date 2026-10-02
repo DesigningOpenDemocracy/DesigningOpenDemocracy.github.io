@@ -22,6 +22,7 @@ location:
   longitude: 21.0122
   name: Warsaw, Poland
   precision: city
+rss_feed: https://stocznia.org.pl/feed
 events:
 - date: '2009-01-01'
   title: Founded in Warsaw with a mission bridging citizen participation, social innovation,
@@ -63,7 +64,7 @@ activity:
     url: https://stocznia.org.pl
     checked: 2026-09-17
   rss:
-    checked: 2026-09-25
+    checked: 2026-10-02
     date: 2026-06-25
     note: 'Latest post: Wspólne oświadczenie polskich i ukraińskich organizacji, działaczy
       i działaczek '

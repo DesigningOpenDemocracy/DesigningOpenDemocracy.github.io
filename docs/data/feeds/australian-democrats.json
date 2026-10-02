@@ -1,0 +1,9 @@
+{
+  "feed": "https://democrats.org.au/rss.xml",
+  "failing": {
+    "error": "HTTP_404",
+    "since": "2026-10-02",
+    "count": 1,
+    "last": "2026-10-02"
+  }
+}

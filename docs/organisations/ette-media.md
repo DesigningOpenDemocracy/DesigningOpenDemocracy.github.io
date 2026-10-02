@@ -20,6 +20,7 @@ location:
   longitude: 151.2093
   name: Sydney, Australia
   precision: city
+rss_feed: https://www.ettemedia.com/feed
 events:
 - date: '2025-06-01'
   title: Launched by journalists Antoinette Lattouf and Jan Fran, with flagship podcast
@@ -55,10 +56,11 @@ activity:
     url: https://www.ettemedia.com/
     checked: 2026-09-16
   rss:
-    date: 2026-09-24
-    note: 'Latest post: The Monthly Booklette: September edition'
-    url: https://www.ettemedia.com/the-monthly-booklette-september-edition/
-    checked: 2026-09-25
+    date: 2026-10-01
+    note: 'Latest post: "Orange Brick Wall”: The regional journalists getting shut
+      out by One Nation'
+    url: https://www.ettemedia.com/orange-brick-wall-the-regional-journalists-getting-shut-out-by-one-nation/
+    checked: 2026-10-02
 last_checked: '2026-09-16'
 contributors:
 - BrianKhuu

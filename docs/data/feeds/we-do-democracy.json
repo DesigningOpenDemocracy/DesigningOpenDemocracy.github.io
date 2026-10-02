@@ -1,0 +1,35 @@
+{
+  "feed": "https://www.wedodemocracy.dk/feed",
+  "latest": "2026-09-17",
+  "span_days": 252,
+  "items": [
+    {
+      "date": "2026-09-17",
+      "title": "Ny Skole for Fremtidens Demokrati samler borgernes demokratiske dannelse i et nyt læringsrum",
+      "url": "https://www.wedodemocracy.dk/ny-skole-for-fremtidens-demokrati-samler-borgernes-demokratiske-dannelse-i-et-nyt-laeringsrum/"
+    },
+    {
+      "date": "2026-09-02",
+      "title": "Borgerpanel afleverer otte gennembearbejdede anbefalinger til Folketinget",
+      "url": "https://www.wedodemocracy.dk/nationalt-borgerpanel-kommer-med-anbefalinger-til-fremtidens-dyrevelfaerd/"
+    },
+    {
+      "date": "2026-06-17",
+      "title": "Hvordan bygger man stærk frivillighed i klimaorganisationer?",
+      "url": "https://www.wedodemocracy.dk/hvordan-bygger-man-staerk-frivillighed-i-klimaorganisationer/"
+    },
+    {
+      "date": "2026-05-06",
+      "title": "We Do Democracy søger dygtige kandidater til flere ledige stillinger",
+      "url": "https://www.wedodemocracy.dk/we-do-democracy-soeger-dygtige-kandidater-til-flere-ledige-stillinger/"
+    },
+    {
+      "date": "2026-04-30",
+      "title": "We Do Democracy er nordisk partner i Democracy Fitness Global",
+      "url": "https://www.wedodemocracy.dk/we-do-democracy-er-nordisk-partner-i-democracy-fitness-global/"
+    }
+  ],
+  "fetch": {
+    "etag": "\"f290f46d588d9957dfdde046f852aa6a\""
+  }
+}

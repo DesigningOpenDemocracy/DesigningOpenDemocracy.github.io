@@ -1,0 +1,65 @@
+{
+  "feed": "https://greens.org.au/rss.xml",
+  "latest": "2026-10-02",
+  "span_days": 3088,
+  "items": [
+    {
+      "date": "2026-10-02",
+      "title": "Week of Action: Wednesday Knock",
+      "url": "https://greens.org.au/node/3041118"
+    },
+    {
+      "date": "2026-10-02",
+      "title": "State26 Campaign Updates Webinars",
+      "url": "https://greens.org.au/node/3041117"
+    },
+    {
+      "date": "2026-10-02",
+      "title": "Ruthven Station Stall",
+      "url": "https://greens.org.au/node/3041121"
+    },
+    {
+      "date": "2026-10-02",
+      "title": "Rockbank Train Station Stall",
+      "url": "https://greens.org.au/node/3041120"
+    },
+    {
+      "date": "2026-10-02",
+      "title": "Ringwood Calling Party - Sunday November 1st",
+      "url": "https://greens.org.au/node/3041113",
+      "routine": [
+        "job ad"
+      ]
+    },
+    {
+      "date": "2026-10-02",
+      "title": "Ringwood Calling Party - Sunday November 15th",
+      "url": "https://greens.org.au/node/3041114",
+      "routine": [
+        "job ad"
+      ]
+    },
+    {
+      "date": "2026-10-02",
+      "title": "Pascoe Vale Commuter Chats",
+      "url": "https://greens.org.au/node/3041116",
+      "signals": [
+        "death"
+      ]
+    },
+    {
+      "date": "2026-10-02",
+      "title": "Kew",
+      "url": "https://greens.org.au/node/3041119"
+    },
+    {
+      "date": "2026-10-02",
+      "title": "Brunswick Tram Stop Chats",
+      "url": "https://greens.org.au/node/3041115"
+    }
+  ],
+  "fetch": {
+    "etag": "\"1790932580\"",
+    "last_modified": "Fri, 02 Oct 2026 09:16:20 GMT"
+  }
+}

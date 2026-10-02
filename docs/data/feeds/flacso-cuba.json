@@ -1,0 +1,66 @@
+{
+  "feed": "https://flacso.org/feed",
+  "latest": "2026-08-05",
+  "span_days": 0,
+  "items": [
+    {
+      "date": "2026-08-05",
+      "title": "Revista especial China-Flacso",
+      "url": "https://www.flacso.org/2026/08/04/revista-especial-china-flacso/"
+    },
+    {
+      "date": "2026-08-05",
+      "title": "Nuevas Miradas para el Desarrollo de América Látina y el Caribe",
+      "url": "https://www.flacso.org/2026/08/04/nuevas-miradas-para-el-desarrollo-de-america-latina-y-el-caribe/"
+    },
+    {
+      "date": "2026-08-05",
+      "title": "IV Informe Regional del Sistema Flacso",
+      "url": "https://www.flacso.org/2026/08/04/iv-informe-regional-del-sistema-flacso/",
+      "signals": [
+        "publication"
+      ]
+    },
+    {
+      "date": "2026-08-05",
+      "title": "III Informe Regional del Sistema Flacso",
+      "url": "https://www.flacso.org/2026/08/04/iii-informe-regional-del-sistema-flacso/",
+      "signals": [
+        "publication"
+      ]
+    },
+    {
+      "date": "2026-08-05",
+      "title": "Gestión de Riesgo y Prevención de Desastres Naturales",
+      "url": "https://www.flacso.org/2026/08/04/gestion-de-riesgo-y-prevencion-de-desastres-naturales/"
+    },
+    {
+      "date": "2026-08-05",
+      "title": "Diplomacia, Ciencia e Innovación en las Relaciones Sino-Latinoamericanas y Caribeñas",
+      "url": "https://www.flacso.org/2026/08/04/diplomacia-ciencia-e-innovacion-en-las-relaciones-sino-latinoamericanas-y-caribenas/"
+    },
+    {
+      "date": "2026-08-05",
+      "title": "Diplomacia Económica de China En América Latina y el Caribe",
+      "url": "https://www.flacso.org/2026/08/04/diplomacia-economica-de-china-en-america-latina-y-el-caribe/"
+    },
+    {
+      "date": "2026-08-05",
+      "title": "Cultura y Paz",
+      "url": "https://www.flacso.org/2026/08/04/cultura-y-paz/"
+    },
+    {
+      "date": "2026-08-05",
+      "title": "Arbitraje y Mediación «Saberes y conocimientos",
+      "url": "https://www.flacso.org/2026/08/04/arbitraje-y-mediacion-saberes-y-conocimientos/"
+    },
+    {
+      "date": "2026-08-05",
+      "title": "Aportes de la Flacso a las Ciencias Sociales en América Latina y el Caribe",
+      "url": "https://www.flacso.org/2026/08/04/aportes-de-la-flacso-a-las-ciencias-sociales-en-america-latina-y-el-caribe/"
+    }
+  ],
+  "fetch": {
+    "last_modified": "Mon, 28 Sep 2026 21:12:09 GMT"
+  }
+}

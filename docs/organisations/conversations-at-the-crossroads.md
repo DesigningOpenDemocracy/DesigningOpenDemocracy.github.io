@@ -77,15 +77,15 @@ activity:
       contact info unchanged.
     url: https://www.crossroadsconversation.com.au
   scrape:
-    checked: 2026-09-25
-    date: 2026-09-01
+    date: 2026-09-30
     note: Latest news page scraped
     url: https://www.crossroadsconversation.com.au/events
+    checked: 2026-10-02
   sitemap:
-    checked: 2026-09-25
-    date: 2026-08-30
+    date: 2026-09-30
     note: Page last modified (from sitemap)
     url: https://www.crossroadsconversation.com.au/sitemap.xml
+    checked: 2026-10-02
 last_checked: '2026-09-27'
 ---
 

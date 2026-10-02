@@ -25,6 +25,7 @@ concepts:
 - accountability-sink
 - radical-transparency
 - e-government
+rss_feed: https://efa.org.au/feed/
 events:
 - date: '1994-01-01'
   title: Established, inspired by (but not affiliated with) the US Electronic Frontier
@@ -92,7 +93,7 @@ activity:
     note: 'Latest post: Privacy Act Reform – Public Consultation on Exposure Draft
       Legislation'
     url: https://efa.org.au/privacy-act-reform-public-consultation-on-exposure-draft-legislation/
-    checked: 2026-09-25
+    checked: 2026-10-02
 last_checked: '2026-09-19'
 ---
 

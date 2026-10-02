@@ -1,0 +1,60 @@
+{
+  "feed": "https://www.peoplepower21.org/feed",
+  "latest": "2026-10-02",
+  "span_days": 1,
+  "items": [
+    {
+      "date": "2026-10-02",
+      "title": "한 눈에 보는 참여연대의 한 달",
+      "url": "https://peoplepower21.org/%5B%EB%A9%94%EC%9D%B8%ED%8E%B8%EC%A7%91%5D-Main%2A%2ADisplay/2028802"
+    },
+    {
+      "date": "2026-10-02",
+      "title": "[종합] 10.29 이태원 참사 4주기 추모행사",
+      "url": "https://peoplepower21.org/solidarity/2030320"
+    },
+    {
+      "date": "2026-10-02",
+      "title": "[이슈리포트] 공익제보자 10명 중 7명, 2건 이상 보복 소송 경험해",
+      "url": "https://peoplepower21.org/whistleblower/2030304"
+    },
+    {
+      "date": "2026-10-02",
+      "title": "[논평] 결국 엘리엇 ISDS도 배상, 정부는 삼성 불법합병 관련자들에 책임 물어라",
+      "url": "https://peoplepower21.org/economy/2030295"
+    },
+    {
+      "date": "2026-10-02",
+      "title": "[기자회견] 책임성·투명성 강화 위한 선거관리위원회법 개정안 입법청원",
+      "url": "https://peoplepower21.org/politics/2030200"
+    },
+    {
+      "date": "2026-10-02",
+      "title": "[4주기] 유가족과 함께하는 도심걷기(10/17)",
+      "url": "https://peoplepower21.org/solidarity/2030317"
+    },
+    {
+      "date": "2026-10-02",
+      "title": "[4주기] 시민들과 함께하는 보라기억물품 공작소(10/7, 21)",
+      "url": "https://peoplepower21.org/solidarity/2030298"
+    },
+    {
+      "date": "2026-10-01",
+      "title": "막아내자✊",
+      "url": "https://peoplepower21.org/%5B%EB%A9%94%EC%9D%B8%ED%8E%B8%EC%A7%91%5D-Main%2A%2ADisplay/2030270"
+    },
+    {
+      "date": "2026-10-01",
+      "title": "[논평] 공소청·중수청 개청, 개혁의 출발점으로 삼아야",
+      "url": "https://peoplepower21.org/judiciary/2030292"
+    },
+    {
+      "date": "2026-10-01",
+      "title": "[K-피스칼럼] 한반도 평화는 어떻게 만들까",
+      "url": "https://peoplepower21.org/peace/2030262"
+    }
+  ],
+  "fetch": {
+    "etag": "\"3c2b6c15d5f48b6dff6a3b10d16a363a\""
+  }
+}
