@@ -1,6 +1,6 @@
 # Frostpunk 2 Is a Political Philosophy Simulator (Contemplative)
 
-Status: open
+Status: promoted — added as Further reading on [Stable Totalitarianism](../../docs/concepts/stable-totalitarianism.md) and [Liberal Democracy](../../docs/concepts/liberal-democracy.md) (2026-10-02). Social share still open.
 
 - **Link:** https://www.youtube.com/watch?v=xhfNDGvxmQE
 - **Creator:** Contemplative (YouTube channel)

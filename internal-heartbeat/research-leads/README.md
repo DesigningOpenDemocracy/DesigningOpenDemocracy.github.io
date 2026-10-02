@@ -14,6 +14,20 @@ publish it unreviewed, or lose the link in a chat log, it's parked here.
 Same visibility rules as the rest of `internal-heartbeat/`: unpublished, not
 private. The repo is public, so nothing goes here that would matter if read.
 
+## Public first, internal only if there's no spot
+
+Before parking a link here, check whether a wiki page already has a place
+for it. A concept page's **Further reading** list is a public home that
+needs no blog post and no reviewer byline (concept pages are discovery aids
+that point outward — see CLAUDE.md), so a good source that fits an existing
+concept goes there directly. Precedent: `docs/concepts/stable-totalitarianism.md`
+lists a video essay that way. Write the bullet as a short description of
+what the source covers, attributing its claims to it rather than to DOD.
+
+This folder is for the leftovers: links with no fitting page yet (a lead
+here can be the prompt to write that page), or that need more checking
+before going anywhere public.
+
 ## What a lead is for
 
 A lead is a pointer plus enough context that someone picking it up later
@@ -48,4 +62,4 @@ they need:
 
 | Logged | Lead | Format | Status | Possible use |
 |---|---|---|---|---|
-| 2026-10-02 | [Frostpunk 2 Is a Political Philosophy Simulator](2026-10-02-frostpunk-2-political-philosophy.md) — Contemplative | YouTube video essay, ~21 min | open | Social share; concept link-outs (agonism, emergency powers) |
+| 2026-10-02 | [Frostpunk 2 Is a Political Philosophy Simulator](2026-10-02-frostpunk-2-political-philosophy.md) — Contemplative | YouTube video essay, ~21 min | promoted (Further reading on Stable Totalitarianism, Liberal Democracy) | Social share still open |
