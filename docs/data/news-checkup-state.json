@@ -9,7 +9,16 @@
     "reviewed": "2026-09-25"
   },
   "afrobarometer": {
-    "reviewed": "2026-09-25"
+    "reviewed": "2026-10-02"
+  },
+  "australian-greens": {
+    "reviewed": "2026-10-02"
+  },
+  "bank-australia": {
+    "reviewed": "2026-10-02"
+  },
+  "budgit": {
+    "reviewed": "2026-10-02"
   },
   "cafsa": {
     "reviewed": "2026-09-25"
@@ -20,14 +29,23 @@
   "centro-gumilla": {
     "reviewed": "2026-09-25"
   },
+  "cideci-unitierra": {
+    "reviewed": "2026-10-02"
+  },
+  "civic-hive": {
+    "reviewed": "2026-10-02"
+  },
   "community-independents-project": {
     "reviewed": "2026-09-25"
+  },
+  "conaie": {
+    "reviewed": "2026-10-02"
   },
   "consul-democracy": {
     "reviewed": "2026-09-25"
   },
   "conversations-at-the-crossroads": {
-    "reviewed": "2026-09-25"
+    "reviewed": "2026-10-02"
   },
   "decidim": {
     "reviewed": "2026-09-25"
@@ -41,6 +59,12 @@
   "democracyco": {
     "reviewed": "2026-09-25"
   },
+  "digidem-lab": {
+    "reviewed": "2026-10-02"
+  },
+  "digital-rights-watch": {
+    "reviewed": "2026-10-02"
+  },
   "earthworker-cooperative": {
     "reviewed": "2026-09-25"
   },
@@ -50,17 +74,44 @@
   "electoral-reform-society": {
     "reviewed": "2026-09-25"
   },
+  "electronic-frontiers-australia": {
+    "reviewed": "2026-10-02"
+  },
+  "espacio-publico": {
+    "reviewed": "2026-10-02"
+  },
   "ethelo": {
     "reviewed": "2026-09-25"
   },
+  "ette-media": {
+    "reviewed": "2026-10-02"
+  },
+  "fairvote": {
+    "reviewed": "2026-10-02"
+  },
+  "flacso-cuba": {
+    "reviewed": "2026-10-02"
+  },
   "fundacion-solon": {
-    "reviewed": "2026-09-25"
+    "reviewed": "2026-10-02"
+  },
+  "fundacja-stocznia": {
+    "reviewed": "2026-10-02"
   },
   "g1000": {
     "reviewed": "2026-09-25"
   },
+  "goree-institute": {
+    "reviewed": "2026-10-02"
+  },
   "healthy-democracy": {
     "reviewed": "2026-09-25"
+  },
+  "icdt": {
+    "reviewed": "2026-10-02"
+  },
+  "informal-urbanism-research-hub": {
+    "reviewed": "2026-10-02"
   },
   "international-idea": {
     "reviewed": "2026-09-25"
@@ -71,6 +122,9 @@
   "kongreya-star": {
     "reviewed": "2026-09-27"
   },
+  "labsus": {
+    "reviewed": "2026-10-02"
+  },
   "lismore-peoples-assembly": {
     "reviewed": "2026-09-25"
   },
@@ -78,7 +132,10 @@
     "reviewed": "2026-09-25"
   },
   "memorial": {
-    "reviewed": "2026-09-25"
+    "reviewed": "2026-10-02"
+  },
+  "movilizatorio": {
+    "reviewed": "2026-10-02"
   },
   "mqg": {
     "reviewed": "2026-09-25"
@@ -95,8 +152,14 @@
   "nota-canada": {
     "reviewed": "2026-09-25"
   },
+  "nzccl": {
+    "reviewed": "2026-10-02"
+  },
   "open-australia-foundation": {
     "reviewed": "2026-09-25"
+  },
+  "open-knowledge-brasil": {
+    "reviewed": "2026-10-02"
   },
   "open-society-foundations": {
     "reviewed": "2026-09-25"
@@ -110,11 +173,23 @@
   "participedia": {
     "reviewed": "2026-09-25"
   },
+  "perludem": {
+    "reviewed": "2026-10-02"
+  },
   "pmg": {
-    "reviewed": "2026-09-25"
+    "reviewed": "2026-10-02"
   },
   "prsa": {
     "reviewed": "2026-09-25"
+  },
+  "pspd": {
+    "reviewed": "2026-10-02"
+  },
+  "representus": {
+    "reviewed": "2026-10-02"
+  },
+  "sitra": {
+    "reviewed": "2026-10-02"
   },
   "sortition-foundation": {
     "reviewed": "2026-09-25"
@@ -123,6 +198,12 @@
     "reviewed": "2026-09-25"
   },
   "susan-mckinnon-foundation": {
-    "reviewed": "2026-09-25"
+    "reviewed": "2026-10-02"
+  },
+  "transparencia-por-colombia": {
+    "reviewed": "2026-10-02"
+  },
+  "we-do-democracy": {
+    "reviewed": "2026-10-02"
   }
 }
