@@ -44,6 +44,7 @@ suffrage and political equality. These characteristics are:
 ## Further reading
 
 - Wikipedia: [Liberal democracy](https://en.wikipedia.org/wiki/Liberal_democracy)
+- ["Frostpunk 2 Is a Political Philosophy Simulator"](https://www.youtube.com/watch?v=xhfNDGvxmQE), Contemplative (YouTube video essay) — an accessible introduction to Carl Schmitt's critique of liberal democracy (that political conflict can't be managed away by neutral procedure) and Chantal Mouffe's answer to it (agonism: opponents treated as legitimate adversaries rather than enemies), told through the factions and council votes of a city-builder game.
 
 
 ## See also

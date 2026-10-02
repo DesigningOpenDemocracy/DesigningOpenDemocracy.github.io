@@ -47,6 +47,11 @@ whose fit is weak-not-zero rather than a settled no — logged rather than
 dropped, on a strength-of-weak-ties bet that a real tie is worth keeping
 even when it doesn't clear the bar yet.
 
+**Shared links not yet ready for any public use go in `research-leads/`** —
+a video, paper or article worth DOD's attention that nobody has review
+capacity to turn into a post yet. See `research-leads/README.md` for the
+index and conventions.
+
 ## Who writes here
 
 Interactive Claude Code sessions, and — per `HEARTBEAT.md`'s Push
