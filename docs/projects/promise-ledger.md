@@ -18,6 +18,12 @@ Possible sources:
 - Manifestos and policy platforms published by parties themselves
 - Existing fact-checking and promise-tracking projects, aggregated rather than duplicated
 
+## Existing trackers
+
+Trackers this idea would aggregate rather than duplicate, as they're found:
+
+- **Victorian Parliamentary Budget Office — [2026 Election Commitment Tracker](https://pbo.vic.gov.au/2026_election_commitment_tracker).** The PBO's own assessment of the parties' commitments ahead of the November 2026 Victorian election, browsable by funding, budget impact, party, policy area and electorate, and updated weekly during the campaign.[^vic-pbo-tracker] A [2022 edition](https://pbo.vic.gov.au/2022_election_commitment_tracker) covered the previous election. As of October 2026 it is published only as an embedded Power BI report, with no CSV, JSON or API, so the data can be viewed but not reused or archived. That's the gap this idea runs into: an official tracker can be public without being open data.
+
 ## Why it could matter
 
 Voting-advice tools — including the [Federated Voting Guide](federated-voting-guide.md) idea — only cover half the loop. Informed voting also depends on being able to look back and see whether promises translated into action. Without that feedback, election promises carry little cost when broken, which is itself a structural [accountability sink](../concepts/accountability-sink.md).
@@ -55,3 +61,5 @@ This is an idea-stage proposal with no committed owner. If you want to develop i
 - [Representative Democracy](../concepts/representative-democracy.md)
 - [Democracy Club](../organisations/democracy-club.md)
 - [Federated Voting Guide](federated-voting-guide.md)
+
+[^vic-pbo-tracker]: [2026 Election Commitment Tracker](https://pbo.vic.gov.au/2026_election_commitment_tracker), Parliamentary Budget Office (Victoria). <!-- unquoted: js-rendered: the intro text is rendered client-side from page-data JSON, so the fetched HTML has no sentence to verify against; the embedded report is Power BI, and the page's CMS data fields for CSV/JSON were empty when checked 2026-10-04 -->
