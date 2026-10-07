@@ -184,15 +184,15 @@ elections:
     quote: "Parliamentary elections are scheduled to be held in Latvia on 3 October 2026, following the end of the term of the fourteenth Saeima elected in 2022."
     url_checked: 2026-09-02
 
-  - date: 2026-10-04
+  - date: 2026-10-25
     country: BR
     level: national
-    title: Brazilian general election
+    title: Brazilian presidential run-off
     date_status: fixed
-    date_note: "A runoff for president or governor follows on 25 October where no candidate wins a majority in the first round."
+    date_note: "Second round between the two leading candidates after the 4 October first round."
     url: https://en.wikipedia.org/wiki/2026_Brazilian_general_election
-    quote: "General elections will be held in Brazil on 4 October 2026 to elect the president, vice president, members of the National Congress, the governors, vice governors and legislative assemblies of all federative units, and the district council of Fernando de Noronha."
-    url_checked: 2026-09-02
+    quote: "They will face each other in a run-off on 25 October 2026."
+    url_checked: 2026-10-07
 
   - date: 2026-10-04
     country: BA

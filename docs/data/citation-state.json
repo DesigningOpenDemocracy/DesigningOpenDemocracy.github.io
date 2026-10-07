@@ -1630,6 +1630,8 @@
   "https://en.wikipedia.org/wiki/2024_Northern_Territory_general_election": {
     "archive_checked": "2026-09-04",
     "archive_url": "http://web.archive.org/web/20260830025406/https://en.wikipedia.org/wiki/2024_Northern_Territory_general_election",
+    "blocked": "HTTP_429",
+    "blocked_since": "2026-10-07",
     "checked": "2026-09-04",
     "document_sha256": "e0f15f08204dee968de16dfeae12c1ffd19595d5d3c22e7351f54a0947ba6737",
     "etag": null,
@@ -1668,6 +1670,8 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/2026_Bosnian_general_election": {
+    "blocked": "HTTP_429",
+    "blocked_since": "2026-10-07",
     "checked": "2026-09-02",
     "document_sha256": "3c660f297d52117352a62852e6592fd3d673be172d99992a2e449f61973e4faa",
     "etag": null,
@@ -1762,6 +1766,8 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/2026_Latvian_parliamentary_election": {
+    "blocked": "HTTP_429",
+    "blocked_since": "2026-10-07",
     "checked": "2026-09-02",
     "document_sha256": "71f7e5c64672fb1dec37cc2673b335283c5c2f5bd1e083536cd86e65167ca6ad",
     "etag": null,
@@ -1875,6 +1881,8 @@
   "https://en.wikipedia.org/wiki/2026_Taiwanese_local_elections": {
     "archive_checked": "2026-09-04",
     "archive_url": "http://web.archive.org/web/20260824203633/https://en.wikipedia.org/wiki/2026_Taiwanese_local_elections",
+    "blocked": "HTTP_429",
+    "blocked_since": "2026-10-07",
     "checked": "2026-09-04",
     "document_sha256": "ec080fcd72df74a8f05e57fe3bcab2dde82ebb865bf74d147db189ff8b90e845",
     "etag": null,
@@ -2045,6 +2053,8 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/2027_New_South_Wales_state_election": {
+    "blocked": "HTTP_429",
+    "blocked_since": "2026-10-07",
     "checked": "2026-09-02",
     "document_sha256": "c5ea06956cfd37f40d3ff884ad416b75f900a12e16ecd7b70ee3fda3c0932468",
     "etag": null,
@@ -2067,17 +2077,17 @@
   "https://en.wikipedia.org/wiki/2027_Nigerian_general_election": {
     "archive_checked": "2026-09-04",
     "archive_url": "http://web.archive.org/web/20260829150925/https://en.wikipedia.org/wiki/2027_Nigerian_general_election",
-    "checked": "2026-09-04",
-    "document_sha256": "d27e940c4e40d4625631eb263380362578e41327658fb938bf3b77e8982350c9",
+    "checked": "2026-10-07",
+    "document_sha256": "4ce9a039882b8dedac5eb07f39fa56ffcbbf90f10198e81be817caeeee7c64c4",
     "etag": null,
     "evidence": [
       {
-        "checked": "2026-09-04",
+        "checked": "2026-10-07",
         "context": {
           "prefix": "",
-          "sha256": "31b3aa9b2661b38c5c98085055b7b72dd0a2acfe64424105c43ede6f6f8dd0a5",
+          "sha256": "fcca9c8b92f4b391b9ef74cbac3724c66688fbc64c0c9a4c9774662e025c03d6",
           "suffix": "Elections to elect state governors, and members of the house of assembly will be held on 6 February 2027. The Incumbent president Bola Tinubu has mad",
-          "text": "General elections will be held in Nigeria on 16 January 2027 to elect the president and vice president, members of the Senate and House of Representatives. Elections to elect state governors, and members of the house of assembly will be held on 6 February 2027. The Incumbent president Bola Tinubu has made his intentions known to run for a 2nd term under the All Progressives Congress."
+          "text": "General elections will be held in Nigeria on 16 January 2027 to elect the president and vice president, members of the Senate and House of Representatives. Elections to elect state governors, and members of the house of assembly will be held on 6 February 2027. The Incumbent president Bola Tinubu has made his intentions known to run for a 2nd term under the All Progressives Congress. The election will be in alignment the Electoral Act 2026. Ban has been lifted on the campaign since Wednesday, August 19, 2026 ahead of the election and different political parties has started their campaigns already."
         },
         "id": "a08bc6aa90c4d382e9bd8c87e733253e58aada06c64ce655c47b36aa5497cb67",
         "quote": "General elections will be held in Nigeria on 16 January 2027 to elect the president and vice president, members of the Senate and House of Representatives.",
@@ -2107,6 +2117,8 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/2028_Queensland_state_election": {
+    "blocked": "HTTP_429",
+    "blocked_since": "2026-10-07",
     "checked": "2026-09-02",
     "document_sha256": "a26ceeb3cf6d2747398b1b854ddabb03ddd6a0bda0ba81b279a7af677d1e6f6a",
     "etag": null,
@@ -2127,6 +2139,8 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/2029_Western_Australian_state_election": {
+    "blocked": "HTTP_429",
+    "blocked_since": "2026-10-07",
     "checked": "2026-09-02",
     "document_sha256": "1055c2aeb47f8ddf90b30f9bd822ed9f511729336bf80eb4f31cd45578db36d0",
     "etag": null,
@@ -2147,6 +2161,8 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/2030_South_Australian_state_election": {
+    "blocked": "HTTP_429",
+    "blocked_since": "2026-10-07",
     "checked": "2026-09-02",
     "document_sha256": "d444f80e66b8d95488da89e418127e41a9e094c48196f7684058a01dd98467c6",
     "etag": null,
@@ -3717,6 +3733,8 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/Next_Australian_federal_election": {
+    "blocked": "HTTP_429",
+    "blocked_since": "2026-10-07",
     "checked": "2026-09-02",
     "document_sha256": "4cf6b858971bedb85c28ca97aaef4eed39ceb82d9f4e085cef829752bcbe0efb",
     "etag": null,
