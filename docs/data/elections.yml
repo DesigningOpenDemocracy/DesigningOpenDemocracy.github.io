@@ -212,14 +212,15 @@ elections:
     quote: "Legislative elections are scheduled to be held in Israel on 27 October 2026, to elect all 120 members of the 26th Knesset"
     url_checked: 2026-09-02
 
-  - date: 2026-11-02
+  - date: 2028-11-01
     country: PH
     level: local
     title: Barangay and Sangguniang Kabataan elections
-    date_status: fixed
+    date_status: month
+    date_note: "Postponed from 2 November 2026 by Republic Act 12326, signed in late September 2026; only the month is published. NAMFREL has said it will join a constitutional challenge."
     url: https://en.wikipedia.org/wiki/2026_Philippine_barangay_and_Sangguniang_Kabataan_elections
-    quote: "elections (BSKE) in the Philippines will be held on November 2, 2026. The elections will determine the barangay captain, SK chairperson, and the composition of the Sangguniang Barangay"
-    url_checked: 2026-09-02
+    quote: "postponing the elections to November 2028"
+    url_checked: 2026-10-07
 
   - date: 2026-11-03
     country: US

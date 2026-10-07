@@ -1802,8 +1802,8 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/2026_Philippine_barangay_and_Sangguniang_Kabataan_elections": {
-    "checked": "2026-09-02",
-    "document_sha256": "7a394903956b48fdee4844d8524d515feb06d5e5df398ede631bc99c72467e3f",
+    "checked": "2026-10-07",
+    "document_sha256": "31a36108a27586af9a49d842e90094a2698c2a231c18038ddb7fd1a0b2feca84",
     "etag": null,
     "evidence": [
       {
@@ -1816,6 +1816,17 @@
         },
         "id": "fbd7ae3fbcfb83dd19780ba5cfaaf8561d0cd7269e33e085b7b6f3454389ffcc",
         "quote": "elections (BSKE) in the Philippines will be held on November 2, 2026. The elections will determine the barangay captain, SK chairperson, and the composition of the Sangguniang Barangay",
+        "verified": true
+      },
+      {
+        "checked": "2026-10-07",
+        "context": {
+          "prefix": "o veto the bill postponing the election. President Marcos signed Republic Act No. 12326 into law on September 24, amending Republic Act No. 12232 and",
+          "sha256": "10aba56929acde1ba9b5e4e0be781084e3f8552c51a5b44bfd6715ee41bbd2f5",
+          "suffix": "while extending the terms of barangay and SK officials from four years to five years. Macalintal then petitioned the Supreme Court to have them issue"
+        },
+        "id": "e2a72e16c6a1d02956996e1259010498705a55a57177242178f02624ce57cd2b",
+        "quote": "postponing the elections to November 2028",
         "verified": true
       }
     ],
@@ -1886,8 +1897,8 @@
   "https://en.wikipedia.org/wiki/2026_Tasmanian_local_elections": {
     "archive_checked": "2026-09-04",
     "archive_url": "http://web.archive.org/web/20260904080024/https://en.wikipedia.org/wiki/2026_Tasmanian_local_elections",
-    "checked": "2026-09-04",
-    "document_sha256": "17261bb1af619af99910d34feff7cc55eccf3701eb028c2355d1f459b5a42dae",
+    "checked": "2026-10-07",
+    "document_sha256": "770709f7d3d717a992f826827063428b605987ce42d78ebd39475fd06ebb47ae",
     "etag": null,
     "evidence": [
       {
@@ -1900,6 +1911,12 @@
         },
         "id": "1d44f235c344841fb58efc62b45e7e52afb145118b06fef14c6d855f347694a5",
         "quote": "The 2026 Tasmanian local elections will be held in October 2026 to elect the councils, mayors and deputy mayors of the 29 local government areas (LGAs) in Tasmania.",
+        "verified": true
+      },
+      {
+        "checked": "2026-10-07",
+        "id": "166727c2744563c2be0573579c281ef4da73002098ccb4fc9ae7792b7c95c9f2",
+        "quote": "5 October \u2014 Voting begins ... 27 October \u2014 Voting closes",
         "verified": true
       }
     ],
