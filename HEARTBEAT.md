@@ -15,6 +15,20 @@ For a full run the agent needs:
 | Outbound network access | `check_urls.py` (org website reachability), web search for world commentary |
 | Python deps installed | `pip install -r util/requirements.txt` |
 
+**First thing in every fresh container (added 2026-10-07).** Scheduled runs start
+in a clean clone, and neither `.git/hooks/` nor the Python deps survive between
+runs. Without these two lines the scripts die with "Missing dependency: pip
+install python-frontmatter", and a commit skips the pre-commit hook's frontmatter
+reordering, `proof_level` recalculation and footnote-quote gate (CI would catch
+it only after the push):
+```
+ln -sf ../../.githooks/pre-commit .git/hooks/pre-commit
+python -m pip install -q -r util/requirements.txt
+```
+Sessions may also start on a `claude/...` working branch rather than `main`;
+when this brief says to push to `main`, merge/push the work there (the run's
+prompt grants it).
+
 **Without network access:** skip step 2 (URL verification) and step 5 (commentary research). Run the maintenance scripts and produce a stats-only post. Note the limitation in the post.
 
 **If `pip install -r requirements.txt` fails building `mkdocs-ezlinks-plugin`** with
