@@ -138,6 +138,39 @@ Same discipline as every other optional section: skip it entirely if
 nothing's changed, rather than restating what's already on the calendar
 or already covered in a prior sync post.
 
+**Also check what's coming up (added 2026-10-07).** The calendar is the one
+part of this brief with a date attached to it, so look at it every run, not
+only when something happens to surface. `make check-links` (or any `mkdocs
+build`) writes `docs/data/events.json`; list the next 45 days from it:
+```bash
+python - <<'PY'
+import json, datetime as d
+t = d.date.today(); end = t + d.timedelta(days=45)
+for e in json.load(open("docs/data/events.json")):
+    last = d.date.fromisoformat(e.get("end_date") or e["date"])
+    if t <= last and d.date.fromisoformat(e["date"]) <= end:
+        print(e["date"], e.get("end_date") or "", e["source"], e.get("country"), e["title"], f"[{e.get('date_status') or ''}]")
+PY
+python util/check_elections.py
+```
+Act on what it shows:
+- **Elections** (`docs/data/elections.yml`): DOD is Australian-based, so
+  Australian elections matter most (see CLAUDE.md, Election dates). Re-read
+  the cited page for any AU election inside the window or just past it: is
+  the date still right, has a writ been issued (`expected`/`deadline` ->
+  `fixed`), and has the entry just been held (replace it with that
+  jurisdiction's next one)? Multi-day polls (a postal ballot) need
+  `end_date:`, or the calendar treats them as over on day one. The linter's
+  `PAST` warning keys off `date`, not `end_date`, so it can fire on a poll
+  that is still open. Run `python util/discover_elections.py` for anything
+  we don't list yet.
+- **Events**: anything notable in the window is worth a line under "DOD
+  itself" or "In the world" if it ties to the landscape, and an AU election
+  in the window is worth a line in its own right.
+- Search for Australian news on any election inside the window as part of
+  Step 5, since that is where the live developments (a writ, a date change,
+  a change to the electoral rules) will show up first.
+
 ### 2. Work the staleness queue
 
 ```bash
