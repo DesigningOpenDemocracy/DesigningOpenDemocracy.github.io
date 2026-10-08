@@ -6,6 +6,8 @@ An approach to large-scale public deliberation that surfaces areas of agreement 
 
 The main implementation is **[Pol.is](../organisations/polis.md)**, used extensively in Taiwan's [vTaiwan](../organisations/vtaiwan.md) process. The [Taiwan digital democracy post](../blog/posts/2026-05-25-taiwan-digital-democracy.md) covers how it worked in practice, including the Uber regulation case.
 
+Consensus mapping is one example of what Aviv Ovadya and Luke Thorburn call [bridging systems](bridging-systems.md): systems designed to build understanding across divides, including ranking that rewards content with support across groups.
+
 ## Further reading
 
 - [Pol.is documentation](https://pol.is/home)
@@ -14,6 +16,7 @@ The main implementation is **[Pol.is](../organisations/polis.md)**, used extensi
 
 ## See also
 
+- [Bridging Systems](bridging-systems.md)
 - [Pol.is](../organisations/polis.md)
 - [vTaiwan](../organisations/vtaiwan.md)
 - [Citizens' Assembly](citizens-assembly.md)
