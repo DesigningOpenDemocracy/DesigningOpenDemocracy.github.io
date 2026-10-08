@@ -175,15 +175,6 @@ elections:
   #
   # A selection, not an index — see this file's header. Ordered by date.
 
-  - date: 2026-10-03
-    country: LV
-    level: national
-    title: Latvian parliamentary election
-    date_status: fixed
-    url: https://en.wikipedia.org/wiki/2026_Latvian_parliamentary_election
-    quote: "Parliamentary elections are scheduled to be held in Latvia on 3 October 2026, following the end of the term of the fourteenth Saeima elected in 2022."
-    url_checked: 2026-09-02
-
   - date: 2026-10-25
     country: BR
     level: national
@@ -193,15 +184,6 @@ elections:
     url: https://en.wikipedia.org/wiki/2026_Brazilian_general_election
     quote: "They will face each other in a run-off on 25 October 2026."
     url_checked: 2026-10-07
-
-  - date: 2026-10-04
-    country: BA
-    level: national
-    title: Bosnian general election
-    date_status: fixed
-    url: https://en.wikipedia.org/wiki/2026_Bosnian_general_election
-    quote: "General elections are scheduled to be held in Bosnia and Herzegovina on 4 October 2026."
-    url_checked: 2026-09-02
 
   - date: 2026-10-27
     country: IL
