@@ -25,6 +25,9 @@ it only after the push):
 ln -sf ../../.githooks/pre-commit .git/hooks/pre-commit
 python -m pip install -q -r util/requirements.txt
 ```
+If the second line fails building `mkdocs-ezlinks-plugin` (a sandbox quirk, see
+below), use that workaround, writing the filtered requirements file to the
+session scratchpad rather than `/tmp`. Then `make check-links` works.
 Sessions may also start on a `claude/...` working branch rather than `main`;
 when this brief says to push to `main`, merge/push the work there (the run's
 prompt grants it).
@@ -291,6 +294,14 @@ updates. Search for recent news (past 30–180 days depending on run cadence) on
 - Major academic or policy publications directly relevant to the landscape
 - Broader geopolitical shifts with structural governance implications, even
   outside that list, if you can source them properly
+
+**Load the search tools first.** `WebSearch`/`WebFetch` are deferred tools in
+these sessions: fetch their schemas with `ToolSearch` before concluding that
+research isn't possible. Skip this step only if the tools genuinely fail, and
+say which in Working notes. When calling the Wikipedia API with `curl`, send a
+`User-Agent` header (e.g. `-A "DODHeartbeat/1.0 (designingopendemocracy.com)"`);
+without one it can return a non-JSON error page. (CLAUDE.md's "Sourcing from
+Wikipedia" section should gain the same note; it is PR-gated.)
 
 **Sources to check, not just generic search terms.** A run that only fires
 generic phrase searches ("citizens' assembly announced 2026", "democratic
@@ -574,7 +585,9 @@ landed on `main` with a broken link neither `make build` nor
 fact. Run `make check-links` before pushing, not just `make build`, and
 confirm the run on `main` (`mcp__github__actions_list` /
 `actions_get`, or the Actions tab) actually completed green rather than
-trusting the local check alone. One known trap this catches: a doc-relative
+trusting the local check alone. `sleep` is blocked in these sessions, so poll
+with `actions_get` (`get_workflow_run`) on the run `actions_list` shows for your
+head SHA; the build takes about 1-2 minutes. One known trap this catches: a doc-relative
 link inside a heartbeat post that's correct for `docs/heartbeat/posts/`
 breaks once `hooks/heartbeat_current.py` mirrors the same markdown into
 `docs/heartbeat/current.md`, a shallower path — link to the production URL
