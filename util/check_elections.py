@@ -113,15 +113,21 @@ def check_entry(entry, index, levels, statuses, countries, today):
     d, err = _parse_date(entry.get("date"), "date")
     if err:
         errors.append((label, "BAD DATE", err))
-    elif d < today:
-        warnings.append((label, "PAST", f"held on {d.isoformat()} — replace with the next one for this jurisdiction"))
 
+    last = d
     if entry.get("end_date") is not None:
         end, err = _parse_date(entry.get("end_date"), "end_date")
         if err:
             errors.append((label, "BAD DATE", err))
         elif d and end < d:
             errors.append((label, "BAD END DATE", f"{end.isoformat()} is before date: {d.isoformat()}"))
+        else:
+            last = end
+
+    # A multi-day poll (postal ballot) is still open until end_date, so PAST
+    # keys off the last day, not the first.
+    if d and last < today:
+        warnings.append((label, "PAST", f"held on {last.isoformat()} — replace with the next one for this jurisdiction"))
 
     if not entry.get("url") and not entry.get("source"):
         errors.append((label, "NOT SOURCED", "needs a url: or a source:"))
