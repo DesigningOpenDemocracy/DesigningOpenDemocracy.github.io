@@ -20,7 +20,7 @@ Majority Judgment is used in formal electoral experiments as well as everyday gr
 
 Ways Majority Judgment can be combined with other mechanisms to cover cases it doesn't handle on its own:
 
-- **Weighted lottery for repeated decisions.** Like most voting methods, Majority Judgment is winner-take-all, so in decisions a group makes again and again, a consistent minority can lose every time (think of friends who pick a restaurant together every week, where the one vegetarian is always outvoted). A [random ballot](random-ballot.md), which draws the winner by lot weighted by support, is one proposed remedy, with Majority Judgment's grades still available to rule out options most voters reject.
+- **Weighted lottery for repeated decisions.** Like most voting methods, Majority Judgment is winner-take-all, so in decisions a group makes again and again, a consistent minority can lose every time (think of friends who pick a restaurant together every week, where the one vegetarian is always outvoted). A [random ballot](random-ballot.md), which draws the winner by lot weighted by support, is one proposed remedy, with Majority Judgment's grades still used to rule out options most voters reject (see [Random Ballot: Extensions](random-ballot.md#extensions)).
 
 ## Further reading
 
