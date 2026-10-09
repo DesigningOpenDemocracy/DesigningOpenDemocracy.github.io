@@ -1,8 +1,13 @@
 {
   "feed": "https://flacso.org/feed",
-  "latest": "2026-08-05",
-  "span_days": 0,
+  "latest": "2026-10-07",
+  "span_days": 63,
   "items": [
+    {
+      "date": "2026-10-07",
+      "title": "Escuchar a la ciudadanía en tiempos de malestar democrático – opinion-",
+      "url": "https://www.flacso.org/2026/10/07/escuchar-a-la-ciudadania-en-tiempos-de-malestar-democratico/"
+    },
     {
       "date": "2026-08-05",
       "title": "Revista especial China-Flacso",
@@ -61,6 +66,6 @@
     }
   ],
   "fetch": {
-    "last_modified": "Mon, 28 Sep 2026 21:12:09 GMT"
+    "last_modified": "Fri, 09 Oct 2026 04:19:29 GMT"
   }
 }

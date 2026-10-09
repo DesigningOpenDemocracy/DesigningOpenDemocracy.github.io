@@ -72,10 +72,10 @@ activity:
     url: https://chinademocrats.org/en
     checked: 2026-09-28
   rss:
-    date: 2026-10-02
-    note: 'Latest post: 金发女郎谬误：韩国核武角色未定边界'
-    url: https://chinademocrats.org/?p=7275
-    checked: 2026-10-02
+    date: 2026-10-09
+    note: 'Latest post: Edward Goldring《清洗：独裁者如何为生存而战》'
+    url: https://chinademocrats.org/?p=7406
+    checked: 2026-10-09
 last_checked: '2026-09-28'
 ---
 

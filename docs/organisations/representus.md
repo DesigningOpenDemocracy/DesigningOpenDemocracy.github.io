@@ -53,10 +53,10 @@ activity:
     url: https://represent.us
     checked: 2026-09-20
   rss:
-    date: 2026-09-30
-    note: 'Latest post: Senate Rejects “Stop Insider Trading Act” as a Sham'
-    url: https://represent.us/news/50419/
-    checked: 2026-10-02
+    date: 2026-10-06
+    note: 'Latest post: What is Truth API and why does it matter?'
+    url: https://represent.us/news/what-is-truth-api-and-why-does-it-matter/
+    checked: 2026-10-09
 last_checked: '2026-09-20'
 ---
 

@@ -54,10 +54,10 @@ activity:
     url: https://fundacionsolon.org
     checked: 2026-09-28
   rss:
-    date: 2026-09-07
-    note: 'Latest post: 40% de Bolivia para los mineros'
-    url: https://fundacionsolon.org/40-de-bolivia-para-los-mineros/
-    checked: 2026-10-02
+    date: 2026-10-08
+    note: 'Latest post: Vigilancia contra la minería ilegal en el Pilón Lajas'
+    url: https://fundacionsolon.org/vigilancia-contra-la-mineria-ilegal-en-el-pilon-lajas/
+    checked: 2026-10-09
 last_checked: '2026-09-28'
 ---
 

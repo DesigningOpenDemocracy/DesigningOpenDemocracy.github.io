@@ -1,8 +1,13 @@
 {
   "feed": "https://fundacionsolon.org/feed",
-  "latest": "2026-09-07",
-  "span_days": 33,
+  "latest": "2026-10-08",
+  "span_days": 45,
   "items": [
+    {
+      "date": "2026-10-08",
+      "title": "Vigilancia contra la minería ilegal en el Pilón Lajas",
+      "url": "https://fundacionsolon.org/vigilancia-contra-la-mineria-ilegal-en-el-pilon-lajas/"
+    },
     {
       "date": "2026-09-07",
       "title": "40% de Bolivia para los mineros",
@@ -58,7 +63,7 @@
     }
   ],
   "fetch": {
-    "etag": "\"5fb29ede26fcafa1bfa63e11a027cb64\"",
-    "last_modified": "Tue, 29 Sep 2026 17:09:53 GMT"
+    "etag": "\"899f2c1044759b6e4cc3bdc279ca39e8\"",
+    "last_modified": "Thu, 08 Oct 2026 18:42:17 GMT"
   }
 }

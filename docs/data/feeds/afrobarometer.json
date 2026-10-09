@@ -1,8 +1,18 @@
 {
   "feed": "https://www.afrobarometer.org/feed",
-  "latest": "2026-09-25",
-  "span_days": 10,
+  "latest": "2026-10-07",
+  "span_days": 15,
   "items": [
+    {
+      "date": "2026-10-07",
+      "title": "The Gaborone Democracy Lab in partnership with the FES Democracy Hub Africa",
+      "url": "https://www.afrobarometer.org/articles/the-gaborone-democracy-lab-in-partnership-with-the-fes-democracy-hub-africa/"
+    },
+    {
+      "date": "2026-10-07",
+      "title": "AB Update September 2026",
+      "url": "https://www.afrobarometer.org/articles/ab-update-september-2026/"
+    },
     {
       "date": "2026-09-25",
       "title": "Southern Africans endorse women’s marital and reproductive autonomy, but are divided on abortion",
@@ -76,6 +86,6 @@
     }
   ],
   "fetch": {
-    "last_modified": "Thu, 01 Oct 2026 13:23:20 GMT"
+    "last_modified": "Wed, 07 Oct 2026 14:33:42 GMT"
   }
 }

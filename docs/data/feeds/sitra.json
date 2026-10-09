@@ -1,8 +1,58 @@
 {
   "feed": "https://www.sitra.fi/feed",
-  "latest": "2026-09-30",
-  "span_days": 14,
+  "latest": "2026-10-08",
+  "span_days": 9,
   "items": [
+    {
+      "date": "2026-10-08",
+      "title": "Uusi rahoitushaku kunnille: Tukea vihreiden investointien vuorovaikutukseen",
+      "url": "https://www.sitra.fi/artikkelit/uusi-rahoitushaku-kunnille-tukea-vihreiden-investointien-vuorovaikutukseen/"
+    },
+    {
+      "date": "2026-10-08",
+      "title": "Sitra rahoittaa luottamusta, osallisuutta ja henkistä kriisinkestävyyttä vahvistavia ratkaisuja",
+      "url": "https://www.sitra.fi/uutiset/sitra-rahoittaa-luottamusta-osallisuutta-ja-henkista-kriisinkestavyytta-vahvistavia-ratkaisuja/"
+    },
+    {
+      "date": "2026-10-08",
+      "title": "Miten megatrendit kirittävät EU:ta uudistumaan?",
+      "url": "https://www.sitra.fi/blogit/miten-megatrendit-kirittavat-euta-uudistumaan/"
+    },
+    {
+      "date": "2026-10-07",
+      "title": "Puolustusinnovaatioiden uusi toimintamalli rakentuu Suomessa",
+      "url": "https://www.sitra.fi/blogit/puolustusinnovaatioiden-uusi-toimintamalli-rakentuu-suomessa/"
+    },
+    {
+      "date": "2026-10-07",
+      "title": "Miten kuntien palvelut turvataan muutosten ajassa? Sitra avaa rahoitushaun uusille ratkaisuille",
+      "url": "https://www.sitra.fi/artikkelit/miten-kuntien-palvelut-turvataan-muutosten-ajassa-sitra-avaa-rahoitushaun-uusille-ratkaisuille/"
+    },
+    {
+      "date": "2026-10-07",
+      "title": "Kysymyksiä ja vastauksia rahoitushausta: Ratkaisut kuntien ja kaupunkien tuottavuuden edistämiseen",
+      "url": "https://www.sitra.fi/artikkelit/kysymyksia-ja-vastauksia-rahoitushausta-ratkaisut-kuntien-ja-kaupunkien-tuottavuuden-edistamiseen/"
+    },
+    {
+      "date": "2026-10-06",
+      "title": "Sitra vauhdittaa sotealan uudistumista: Kaksi uutta avausta syventää hyvinvointialueiden ja yritysten yhteistyötä",
+      "url": "https://www.sitra.fi/uutiset/sitra-vauhdittaa-sotealan-uudistumista-kaksi-uutta-avausta-syventaa-hyvinvointialueiden-ja-yritysten-yhteistyota/"
+    },
+    {
+      "date": "2026-10-06",
+      "title": "Ilmasto ja luonto muuttuvat – onnistuuko Suomi sopeutumaan ja uudistumaan ajoissa?",
+      "url": "https://www.sitra.fi/artikkelit/ilmasto-ja-luonto-muuttuvat-onnistuuko-suomi-sopeutumaan-ja-uudistumaan-ajoissa/"
+    },
+    {
+      "date": "2026-10-02",
+      "title": "Kysymyksiä ja vastauksia rahoitushausta: Ennakoiva sote osaksi hyvinvointialueiden arkea",
+      "url": "https://www.sitra.fi/artikkelit/kysymyksia-ja-vastauksia-rahoitushausta-ennakoiva-sote-osaksi-hyvinvointialueiden-arkea/"
+    },
+    {
+      "date": "2026-10-02",
+      "title": "Kuuluuko kansalaisjärjestöjen ääni? Mahdollisuudet vaikuttaa valtioneuvoston valmisteluun jakautuvat epätasaisesti",
+      "url": "https://www.sitra.fi/uutiset/kuuluuko-kansalaisjarjestojen-aani-mahdollisuudet-vaikuttaa-valtioneuvoston-valmisteluun-jakautuvat-epatasaisesti/"
+    },
     {
       "date": "2026-09-30",
       "title": "5+1 vinkkiä kokemuksellisen ennakoinnin hyödyntämiseen",
@@ -65,7 +115,7 @@
     }
   ],
   "fetch": {
-    "etag": "\"967038df33d3c511e10ab29b08026789\"",
-    "last_modified": "Fri, 02 Oct 2026 09:07:46 GMT"
+    "etag": "\"651af8e6e6bb091c1a929bb8fc21e097\"",
+    "last_modified": "Fri, 09 Oct 2026 08:56:52 GMT"
   }
 }

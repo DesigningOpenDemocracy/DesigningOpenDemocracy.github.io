@@ -66,7 +66,7 @@ activity:
     date: 2026-06-24
     note: Latest news page scraped
     url: https://www.demnext.org/news
-    checked: 2026-10-02
+    checked: 2026-10-09
   sitemap:
     date: 2026-08-27
     note: Page last modified (from sitemap)

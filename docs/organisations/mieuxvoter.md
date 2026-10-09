@@ -61,7 +61,7 @@ activity:
     checked: 2026-10-02
     note: No feed found
   scrape:
-    checked: 2026-10-02
+    checked: 2026-10-09
     date: 2022-04-06
     note: Scraper only finds URL-embedded dates; page shows 2025 items
     url: https://mieuxvoter.fr/presse

@@ -56,11 +56,11 @@ activity:
     url: https://www.ettemedia.com/
     checked: 2026-09-16
   rss:
-    date: 2026-10-01
-    note: 'Latest post: "Orange Brick Wall”: The regional journalists getting shut
-      out by One Nation'
-    url: https://www.ettemedia.com/orange-brick-wall-the-regional-journalists-getting-shut-out-by-one-nation/
-    checked: 2026-10-02
+    date: 2026-10-05
+    note: 'Latest post: The Internette: this month’s online dramas and the deeper
+      issues behind them'
+    url: https://www.ettemedia.com/internette-cornell-7-lesbian-bar-mamamia-outloud-podcast-drama/
+    checked: 2026-10-09
 last_checked: '2026-09-16'
 contributors:
 - BrianKhuu

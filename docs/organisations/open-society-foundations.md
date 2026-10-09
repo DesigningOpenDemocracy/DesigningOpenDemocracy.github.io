@@ -65,7 +65,7 @@ activity:
     date: 2026-09-18
     note: Latest news page scraped
     url: https://www.opensocietyfoundations.org/newsroom
-    checked: 2026-10-02
+    checked: 2026-10-09
 last_checked: '2026-09-20'
 ---
 

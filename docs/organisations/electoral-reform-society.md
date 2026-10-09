@@ -73,10 +73,10 @@ activity:
     url: https://electoral-reform.org.uk/first-past-the-post-would-have-given-the-afd-nearly-every-seat-in-saxony-anhalt/
     checked: 2026-09-25
   scrape:
-    date: 2026-09-30
+    date: 2026-10-08
     note: Latest news page scraped
     url: https://www.electoral-reform.org.uk/latest-news-and-research/blog/
-    checked: 2026-10-02
+    checked: 2026-10-09
 last_checked: '2026-09-21'
 ---
 

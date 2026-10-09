@@ -59,10 +59,10 @@ activity:
     url: https://democracyclub.org.uk/blog/2026/09/21/why-are-uk-elections-so-different-each-year/
     checked: 2026-09-25
   scrape:
-    date: 2026-09-21
+    date: 2026-10-06
     note: Latest news page scraped
     url: https://democracyclub.org.uk/blog/
-    checked: 2026-10-02
+    checked: 2026-10-09
 last_checked: '2026-09-21'
 ---
 

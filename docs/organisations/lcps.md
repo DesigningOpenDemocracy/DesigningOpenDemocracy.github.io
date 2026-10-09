@@ -56,7 +56,7 @@ activity:
     checked: 2026-10-02
     note: No feed found
   scrape:
-    checked: 2026-10-02
+    checked: 2026-10-09
     date: 2026-03-05
     note: Latest news page scraped
     url: https://www.lcps-lebanon.org/en/press

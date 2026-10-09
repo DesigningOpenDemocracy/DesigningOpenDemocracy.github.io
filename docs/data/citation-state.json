@@ -349,7 +349,7 @@
     "last_modified": "Tue, 25 Nov 2025 21:34:43 GMT"
   },
   "https://bethnoveck.medium.com/was-vtaiwan-such-a-big-flop-after-all-d6b365f916dc": {
-    "archive_checked": "2026-10-02",
+    "archive_checked": "2026-10-09",
     "archive_url": "http://web.archive.org/web/20260904075928/https://bethnoveck.medium.com/was-vtaiwan-such-a-big-flop-after-all-d6b365f916dc",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-20",
@@ -449,6 +449,75 @@
       }
     ],
     "last_modified": "Sat, 29 Aug 2026 01:28:34 GMT"
+  },
+  "https://bridging.systems/": {
+    "archive_checked": "2026-10-09",
+    "archive_sha256": "dfd834e44e8be0954c457c5275895fad907e30b52fed784f2009a2d573bfaf44",
+    "archive_url": "http://web.archive.org/web/20260611125017/https://bridging.systems/",
+    "checked": "2026-10-09",
+    "document_sha256": "dfd834e44e8be0954c457c5275895fad907e30b52fed784f2009a2d573bfaf44",
+    "etag": "\"e4af267291d64166c1eef5f9f07ee02e-ssl-df\"",
+    "evidence": [
+      {
+        "checked": "2026-10-09",
+        "context": {
+          "prefix": "ems Home Papers Concept Notes Paper Press Who? Contact us Bridging Systems",
+          "sha256": "6c096b3b9f92031884d36cfa631db277a709d5fe74bbcc6844e21c7eac6e40bd",
+          "suffix": "Read the paper Signals & metrics Subscribe for updates Paper Our goal in this paper is to articulate a rese",
+          "text": "Bridging systems increase mutual understanding and trust across divides, creating space for productive conflict, deliberation, or cooperation."
+        },
+        "id": "6c096b3b9f92031884d36cfa631db277a709d5fe74bbcc6844e21c7eac6e40bd",
+        "quote": "Bridging systems increase mutual understanding and trust across divides, creating space for productive conflict, deliberation, or cooperation.",
+        "verified": true
+      },
+      {
+        "checked": "2026-10-09",
+        "context": {
+          "prefix": "systems: systems which increase mutual understanding and trust across divides, creating space for productive conflict, deliberation, or cooperation.",
+          "sha256": "c44a1a0fa9608d8fd04d2a74248f29b73837471982c09379fbc0b4af0cb62c50",
+          "suffix": "We argue that these examples can be more meaningfully understood as processes for attention-allocation (as opposed to \u201ccontent distribution\u201d or \u201campl"
+        },
+        "id": "9dc97420677cecf66c0025a157633df75c2003cb16ec6f63cdedd4302ec992e1",
+        "quote": "We give examples of bridging systems across three domains: recommender systems on social media, software for conducting civic forums, and human-facilitated group deliberation.",
+        "verified": true
+      },
+      {
+        "checked": "2026-10-09",
+        "context": {
+          "prefix": "ication\u201d), and develop a corresponding framework to explore similarities \u2014 and opportunities for bridging \u2014 across these seemingly disparate domains.",
+          "sha256": "b778f8c95cef728ee656f1740129db69b64d843a02331e27ae34feabe0a04fb9",
+          "suffix": "Throughout, we suggest research directions that could improve our capacity to incorporate bridging into a world increasingly mediated by algorithms a"
+        },
+        "id": "4f8cb50350c30e3277e4801828ee108112644307761c1e941c88a6ae6b6427ef",
+        "quote": "We focus particularly on the potential of bridging-based ranking to bring the benefits of offline bridging into spaces which are already governed by algorithms.",
+        "verified": true
+      },
+      {
+        "checked": "2026-10-09",
+        "context": {
+          "prefix": "iries related to this work should be directed to the authors, whose email addresses are listed in the preprint. Acknowledgements",
+          "sha256": "369255f8bc2793e7b0617e9e0bbce74f4fcc2c313d3b6a17ba954b875ea16a51",
+          "suffix": ", and members of the GETTING-Plurality Research Network at Harvard University (gettingplurality.org) for their ongoing feedback and support. We would",
+          "text": "We thank Tim van Gelder and Colin Megill for sharing information and insights from their work on YourView and Polis, respectively, and members of the GETTING-Plurality Research Network at Harvard University (gettingplurality.org) for their ongoing feedback and support. We would additionally like to thank Danielle Allen, Natania Antler, Katy Glenn Bass, Priyanjana Bengani, Leisel Bogan, Joaquin Qui\u00f1onero Candela, Alan Chan, Austin Clyde, Joe Edelman, Thomas Gilbert, Sam Hinds, Ravi Iyer, Amritha Jayanti, Julia Kamin, Emillie v. de Keulenaar, Andrew Konya, David Krueger, Stephen Larrick, Jesse McCrosky, James Mickens, Arvind Narayanan, Kathy Pham, Maria Polukarov, Richard Reisman, Afsaneh Rigot, Bruce Schneier, Jonathan Stray, Ted Suzman, Carmine Ventre, Jessica Yu, Glen Weyl and Cathy Wu, among others, for helpful discussions and feedback. Any errors or limitations of this work remain those of the authors."
+        },
+        "id": "466ad6466776ec0c2ce89c819895c7be524fa4017efe7ee4f04633093822cbb5",
+        "quote": "We thank Tim van Gelder and Colin Megill for sharing information and insights from their work on YourView and Polis, respectively",
+        "verified": true
+      },
+      {
+        "checked": "2026-10-09",
+        "context": {
+          "prefix": "ondon. He also co-authors the Understanding Recommenders project for the Center for Human-Compatible AI at the University of California, Berkeley and",
+          "sha256": "6db1705e9ae8169d524cf6d4bc303317fcb33bf8b275f1f8250670322839d3e3",
+          "suffix": ". He can be found at his website, as @LukeThorburn_ on Twitter, and on Mastodon. Our work on bridging systems is conducted in partnership with t",
+          "text": "Luke Thorburn is a researcher in the UKRI Centre for Doctoral Training in Safe and Trusted AI at King\u2019s College London. He also co-authors the Understanding Recommenders project for the Center for Human-Compatible AI at the University of California, Berkeley and has worked with the newDemocracy Foundation on technology for convening deliberative mini-publics. He can be found at his website, as @LukeThorburn_ on Twitter, and on Mastodon."
+        },
+        "id": "7b479ebb33e96b39d69862afd22bf5a380cf0a5a59f7416c8e92651fd80ccf0e",
+        "quote": "has worked with the newDemocracy Foundation on technology for convening deliberative mini-publics",
+        "verified": true
+      }
+    ],
+    "last_modified": null
   },
   "https://budgit.org/about-us/": {
     "checked": "2026-08-25",
@@ -898,7 +967,7 @@
     "last_modified": null
   },
   "https://commonslibrary.parliament.uk/research-briefings/cbp-10876/": {
-    "archive_checked": "2026-10-02",
+    "archive_checked": "2026-10-09",
     "archive_sha256": "76db44b3577f3dd4b1f4868fef425341b45d64132694e314cdcb54dec2e65dab",
     "archive_url": "http://web.archive.org/web/20260914150106/https://commonslibrary.parliament.uk/research-briefings/cbp-10876/",
     "blocked": "HTTP_403",
@@ -4076,6 +4145,89 @@
     ],
     "last_modified": null
   },
+  "https://en.wikipedia.org/wiki/Random_ballot": {
+    "archive_checked": "2026-10-09",
+    "archive_sha256": "0106c0e683e428091bc94c47989ce4b447920575999d08f4102918504bb5faee",
+    "archive_url": "http://web.archive.org/web/20260921194649/https://en.wikipedia.org/wiki/Random_ballot",
+    "checked": "2026-10-09",
+    "document_sha256": "3b062aac1f9e1e79fcd0ceba28cd1cba3db91a83e98851ed0612b4a0b10a5050",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-10-09",
+        "context": {
+          "prefix": "A random ballot, or random dictatorship,",
+          "sha256": "2057a402d8a7c24ce54211cce01ed1cc05c5a1e4f0ca29c92328b98061cb79fc",
+          "suffix": ". A closely related variant is called random serial (or sequential) dictatorship, which repeats the procedure and draws another ballot if multiple can",
+          "text": "A random ballot, or random dictatorship, is a randomized electoral system where the election is decided on the basis of a single randomly selected ballot. A closely related variant is called random serial (or sequential) dictatorship, which repeats the procedure and draws another ballot if multiple candidates are tied on the first ballot. Random dictatorship was first described in 1977 by Allan Gibbard, who showed it to be the unique social choice rule that treats all voters equally while still being strategyproof in all situations. Its application to elections was first described in 1984 by Akhil Reed Amar. The rule is rarely, if ever, proposed as a genuine electoral system, as such a method (in Gibbard's words) \"leaves too much to chance\". However, the rule is often used as a tiebreaker to encourage voters to cast honest ballots, and is sometimes discussed as a thought experiment."
+        },
+        "id": "3366a7154384eb709b31e51e1b05be91c7f7ce5b7d6eb9dfbd7660b561ab9765",
+        "quote": "is a randomized electoral system where the election is decided on the basis of a single randomly selected ballot",
+        "verified": true
+      },
+      {
+        "checked": "2026-10-09",
+        "context": {
+          "prefix": "random serial (or sequential) dictatorship, which repeats the procedure and draws another ballot if multiple candidates are tied on the first ballot.",
+          "sha256": "2057a402d8a7c24ce54211cce01ed1cc05c5a1e4f0ca29c92328b98061cb79fc",
+          "suffix": "Its application to elections was first described in 1984 by Akhil Reed Amar. The rule is rarely, if ever, proposed as a genuine electoral system, as",
+          "text": "A random ballot, or random dictatorship, is a randomized electoral system where the election is decided on the basis of a single randomly selected ballot. A closely related variant is called random serial (or sequential) dictatorship, which repeats the procedure and draws another ballot if multiple candidates are tied on the first ballot. Random dictatorship was first described in 1977 by Allan Gibbard, who showed it to be the unique social choice rule that treats all voters equally while still being strategyproof in all situations. Its application to elections was first described in 1984 by Akhil Reed Amar. The rule is rarely, if ever, proposed as a genuine electoral system, as such a method (in Gibbard's words) \"leaves too much to chance\". However, the rule is often used as a tiebreaker to encourage voters to cast honest ballots, and is sometimes discussed as a thought experiment."
+        },
+        "id": "ca2dfc9385e3c205b7baff8ebc14d62a7aca5d27b865a167c7133ce97a6b4862",
+        "quote": "Random dictatorship was first described in 1977 by Allan Gibbard, who showed it to be the unique social choice rule that treats all voters equally while still being strategyproof in all situations.",
+        "verified": true
+      },
+      {
+        "checked": "2026-10-09",
+        "context": {
+          "prefix": "rst described in 1984 by Akhil Reed Amar. The rule is rarely, if ever, proposed as a genuine electoral system, as such a method (in Gibbard's words) \"",
+          "sha256": "2057a402d8a7c24ce54211cce01ed1cc05c5a1e4f0ca29c92328b98061cb79fc",
+          "suffix": "\". However, the rule is often used as a tiebreaker to encourage voters to cast honest ballots, and is sometimes discussed as a thought experiment. =",
+          "text": "A random ballot, or random dictatorship, is a randomized electoral system where the election is decided on the basis of a single randomly selected ballot. A closely related variant is called random serial (or sequential) dictatorship, which repeats the procedure and draws another ballot if multiple candidates are tied on the first ballot. Random dictatorship was first described in 1977 by Allan Gibbard, who showed it to be the unique social choice rule that treats all voters equally while still being strategyproof in all situations. Its application to elections was first described in 1984 by Akhil Reed Amar. The rule is rarely, if ever, proposed as a genuine electoral system, as such a method (in Gibbard's words) \"leaves too much to chance\". However, the rule is often used as a tiebreaker to encourage voters to cast honest ballots, and is sometimes discussed as a thought experiment."
+        },
+        "id": "bc31605488311f0d316b830efe8c491fb4c627a5702d556b74544913feaa7f41",
+        "quote": "leaves too much to chance",
+        "verified": true
+      },
+      {
+        "checked": "2026-10-09",
+        "context": {
+          "prefix": "ts all voters equally while still being strategyproof in all situations. Its application to elections was first described in 1984 by Akhil Reed Amar.",
+          "sha256": "2057a402d8a7c24ce54211cce01ed1cc05c5a1e4f0ca29c92328b98061cb79fc",
+          "suffix": ", as such a method (in Gibbard's words) \"leaves too much to chance\". However, the rule is often used as a tiebreaker to encourage voters to cast hones",
+          "text": "A random ballot, or random dictatorship, is a randomized electoral system where the election is decided on the basis of a single randomly selected ballot. A closely related variant is called random serial (or sequential) dictatorship, which repeats the procedure and draws another ballot if multiple candidates are tied on the first ballot. Random dictatorship was first described in 1977 by Allan Gibbard, who showed it to be the unique social choice rule that treats all voters equally while still being strategyproof in all situations. Its application to elections was first described in 1984 by Akhil Reed Amar. The rule is rarely, if ever, proposed as a genuine electoral system, as such a method (in Gibbard's words) \"leaves too much to chance\". However, the rule is often used as a tiebreaker to encourage voters to cast honest ballots, and is sometimes discussed as a thought experiment."
+        },
+        "id": "014cd97bc942ef2ebb46b2800d09d435478c509a7a67709f3a241e8fb64f0131",
+        "quote": "The rule is rarely, if ever, proposed as a genuine electoral system",
+        "verified": true
+      },
+      {
+        "checked": "2026-10-09",
+        "context": {
+          "prefix": "mar. The rule is rarely, if ever, proposed as a genuine electoral system, as such a method (in Gibbard's words) \"leaves too much to chance\". However,",
+          "sha256": "2057a402d8a7c24ce54211cce01ed1cc05c5a1e4f0ca29c92328b98061cb79fc",
+          "suffix": ", and is sometimes discussed as a thought experiment. == Random dictatorship and random serial dictatorship == The dictatorship rule is obviously un",
+          "text": "A random ballot, or random dictatorship, is a randomized electoral system where the election is decided on the basis of a single randomly selected ballot. A closely related variant is called random serial (or sequential) dictatorship, which repeats the procedure and draws another ballot if multiple candidates are tied on the first ballot. Random dictatorship was first described in 1977 by Allan Gibbard, who showed it to be the unique social choice rule that treats all voters equally while still being strategyproof in all situations. Its application to elections was first described in 1984 by Akhil Reed Amar. The rule is rarely, if ever, proposed as a genuine electoral system, as such a method (in Gibbard's words) \"leaves too much to chance\". However, the rule is often used as a tiebreaker to encourage voters to cast honest ballots, and is sometimes discussed as a thought experiment."
+        },
+        "id": "b43add5eb95c6336af2846954f3c0c879c52b9721dd924d508e4838377c19758",
+        "quote": "the rule is often used as a tiebreaker to encourage voters to cast honest ballots",
+        "verified": true
+      },
+      {
+        "checked": "2026-10-09",
+        "context": {
+          "prefix": "by Allan Gibbard, who showed it to be the unique social choice rule that treats all voters equally while still being strategyproof in all situations.",
+          "sha256": "2057a402d8a7c24ce54211cce01ed1cc05c5a1e4f0ca29c92328b98061cb79fc",
+          "suffix": "The rule is rarely, if ever, proposed as a genuine electoral system, as such a method (in Gibbard's words) \"leaves too much to chance\". However, the",
+          "text": "A random ballot, or random dictatorship, is a randomized electoral system where the election is decided on the basis of a single randomly selected ballot. A closely related variant is called random serial (or sequential) dictatorship, which repeats the procedure and draws another ballot if multiple candidates are tied on the first ballot. Random dictatorship was first described in 1977 by Allan Gibbard, who showed it to be the unique social choice rule that treats all voters equally while still being strategyproof in all situations. Its application to elections was first described in 1984 by Akhil Reed Amar. The rule is rarely, if ever, proposed as a genuine electoral system, as such a method (in Gibbard's words) \"leaves too much to chance\". However, the rule is often used as a tiebreaker to encourage voters to cast honest ballots, and is sometimes discussed as a thought experiment."
+        },
+        "id": "ba5471050ed0e77b3ca2b3340ff743e4db93dff4901a3fffdd19dba8cbcd5ef4",
+        "quote": "Its application to elections was first described in 1984 by Akhil Reed Amar.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
   "https://en.wikipedia.org/wiki/Referendum_Council": {
     "checked": "2026-08-26",
     "document_sha256": "4a6e782b507de936b5dce989d56b99358065432c6d22afd9499ace5e11c89f5e",
@@ -4560,9 +4712,9 @@
     "last_modified": null
   },
   "https://events.humanitix.com/citizen-assemblies-policy-without-politics-national-conference": {
-    "archive_checked": "2026-10-02",
+    "archive_checked": "2026-10-09",
     "archive_sha256": "d42d2147c53e458aaf29a26ac5fad13890338cf81de02fb22b7454c3e9162c0d",
-    "archive_url": "http://web.archive.org/web/20261002094833/https://events.humanitix.com/citizen-assemblies-policy-without-politics-national-conference",
+    "archive_url": "http://web.archive.org/web/20261009101435/https://events.humanitix.com/citizen-assemblies-policy-without-politics-national-conference",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-28"
   },
@@ -4580,9 +4732,9 @@
     "blocked_since": "2026-10-02"
   },
   "https://events.humanitix.com/international-day-of-democracy": {
-    "archive_checked": "2026-10-02",
-    "archive_sha256": "62d71590ef98eb4a28dfa88081eda32d4174f45f26500f0dfe96c26e1a10fff2",
-    "archive_url": "http://web.archive.org/web/20261002094739/https://events.humanitix.com/international-day-of-democracy",
+    "archive_checked": "2026-10-09",
+    "archive_sha256": "f532862b83bd02526e51af9e7278f52ef02f3a99a90e47a7e81b0948aaf26e23",
+    "archive_url": "http://web.archive.org/web/20261009101357/https://events.humanitix.com/international-day-of-democracy",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-25"
   },
@@ -4878,9 +5030,9 @@
     "checked": "2026-08-17",
     "etag": "W/\"6928a9c1-143fb\"",
     "failing": {
-      "count": 1,
+      "count": 2,
       "error": "HTTP_404",
-      "last": "2026-10-02",
+      "last": "2026-10-09",
       "since": "2026-10-02"
     },
     "last_modified": "Thu, 27 Nov 2025 19:42:57 GMT"
@@ -4911,7 +5063,7 @@
     "blocked_since": "2026-08-29"
   },
   "https://foro.org.co/quienes-somos/": {
-    "archive_checked": "2026-10-02",
+    "archive_checked": "2026-10-09",
     "archive_sha256": "788f956e08755fcc769919707b228029f07a622c51c0be616ea662eabd5e4d34",
     "archive_url": "http://web.archive.org/web/20260925085948/https://foro.org.co/quienes-somos/",
     "blocked": "ROBOTS_DISALLOWED",
@@ -5551,7 +5703,7 @@
     "last_modified": "Thu, 20 Aug 2026 11:47:41 GMT"
   },
   "https://journals.sagepub.com/doi/10.1177/20539517241296038": {
-    "archive_checked": "2026-10-02",
+    "archive_checked": "2026-10-09",
     "archive_sha256": "42b45756c204a481e2aad9ba107e8749e6b8c9283dc26571083d9b3123a4c2a7",
     "archive_url": "http://web.archive.org/web/20260904075947/https://journals.sagepub.com/doi/10.1177/20539517241296038",
     "blocked": "HTTP_403",
@@ -6377,12 +6529,27 @@
     "last_modified": "Wed, 19 Aug 2026 08:53:25 GMT"
   },
   "https://pina.com.fj/2026/09/22/fiji-constitution-review-report-tabled-major-reforms-proposed/": {
-    "failing": {
-      "count": 1,
-      "error": "HTTP_500",
-      "last": "2026-10-02",
-      "since": "2026-10-02"
-    }
+    "archive_checked": "2026-10-09",
+    "archive_sha256": "d6d80599686952a590cc8d06cede3e5dd0fad0441ec957a0432edd18292d7c8d",
+    "archive_url": "http://web.archive.org/web/20261009102623/https://pina.com.fj/2026/09/22/fiji-constitution-review-report-tabled-major-reforms-proposed/",
+    "checked": "2026-10-09",
+    "document_sha256": "9200a6c69c4c4e7123c5c10b6f511540f30d0e50bdffb49c9faa1795e61f23eb",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-10-09",
+        "context": {
+          "prefix": "Government has previously stressed that tabling the report does not mean it has accepted or adopted all of the Commission\u2019s recommendations.",
+          "sha256": "b7c564d5ad58f7ef51614f4950d9b40ce41aea2faddda2b650be5c07ec710e78",
+          "suffix": "Among its major proposals is the replacement of Fiji\u2019s current unicameral Parliament with a 60-member bicameral legislature. The proposed",
+          "text": "The Commission received 1,220 submissions and 3,873 people participated in face-to-face consultations at 105 venues across Fiji."
+        },
+        "id": "b7c564d5ad58f7ef51614f4950d9b40ce41aea2faddda2b650be5c07ec710e78",
+        "quote": "The Commission received 1,220 submissions and 3,873 people participated in face-to-face consultations at 105 venues across Fiji.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
   },
   "https://pmc.ncbi.nlm.nih.gov/articles/PMC8416191/": {
     "checked": "2026-08-29",
@@ -6940,7 +7107,7 @@
     "last_modified": null
   },
   "https://theyvoteforyou.org.au/about": {
-    "archive_checked": "2026-10-02",
+    "archive_checked": "2026-10-09",
     "archive_sha256": "e4b11ff813b693d775739bbe8b8c51fe92a6296dc8c1931c30ffa03906cf7635",
     "archive_url": "http://web.archive.org/web/20260812053340/https://theyvoteforyou.org.au/about",
     "blocked": "HTTP_403",
@@ -7014,6 +7181,9 @@
     "last_modified": null
   },
   "https://vic.democrats.org.au/policies/make-victoria-s-upper-house-the-citizens-house-of-review/": {
+    "archive_checked": "2026-10-09",
+    "archive_sha256": "f861e3e2f3eb01b574e02611e234b3b3ba5177883e661b7b01200f0103fc472b",
+    "archive_url": "http://web.archive.org/web/20261009102122/https://vic.democrats.org.au/policies/make-victoria-s-upper-house-the-citizens-house-of-review/",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-20",
     "evidence": [
@@ -7136,6 +7306,12 @@
         "verified": true
       }
     ],
+    "failing": {
+      "count": 1,
+      "error": "NETWORK_ERROR",
+      "last": "2026-10-09",
+      "since": "2026-10-09"
+    },
     "last_modified": null
   },
   "https://web.archive.org/web/20250531195416/https://mckinnon.co/": {
@@ -7464,7 +7640,7 @@
     "last_modified": null
   },
   "https://www.ag.gov.au/integrity/australias-open-government-partnership": {
-    "archive_checked": "2026-10-02",
+    "archive_checked": "2026-10-09",
     "archive_sha256": "303ce265fc556dc2c1ac696bc1c241d57d1fed61032d3b6784f9515e098ecd06",
     "archive_url": "http://web.archive.org/web/20260828153433/https://www.ag.gov.au/integrity/australias-open-government-partnership",
     "blocked": "HTTP_403",
@@ -7485,9 +7661,9 @@
     "manual_checked": "2026-08-22"
   },
   "https://www.ag.gov.au/rights-and-protections/australias-open-government-partnership/open-government-forum": {
-    "archive_checked": "2026-10-02",
+    "archive_checked": "2026-10-09",
     "archive_sha256": "1002745e36c49b572d8f478e9a271cd51f0413c43e751f5c5026f701d2628bce",
-    "archive_url": "http://web.archive.org/web/20261002095719/https://www.ag.gov.au/rights-and-protections/australias-open-government-partnership/open-government-forum",
+    "archive_url": "http://web.archive.org/web/20261009101901/https://www.ag.gov.au/rights-and-protections/australias-open-government-partnership/open-government-forum",
     "blocked": "HTTP_403",
     "blocked_since": "2026-09-16",
     "evidence": [
@@ -7967,7 +8143,7 @@
     "manual_checked": "2026-08-22"
   },
   "https://www.coe.int/en/web/congress/-/ukraine-s-first-metropolitan-citizens-assembly-launched-in-lviv": {
-    "archive_checked": "2026-10-02",
+    "archive_checked": "2026-10-09",
     "archive_sha256": "f9fc1a70610aeb914a674f0088b0eafd54c39462668f02db4cc25024ae44e9fa",
     "archive_url": "http://web.archive.org/web/20261002100513/https://www.coe.int/en/web/congress/-/ukraine-s-first-metropolitan-citizens-assembly-launched-in-lviv",
     "blocked": "HTTP_403",
@@ -8572,9 +8748,9 @@
   },
   "https://www.financeminister.gov.au/media-release/2018/09/21/release-second-open-government-national-action-plan": {
     "failing": {
-      "count": 1,
+      "count": 2,
       "error": "NETWORK_ERROR",
-      "last": "2026-10-02",
+      "last": "2026-10-09",
       "since": "2026-10-02"
     }
   },
@@ -9005,8 +9181,9 @@
     "last_modified": null
   },
   "https://www.involve.org.uk/about/about-involve": {
-    "archive_checked": "2026-10-02",
-    "archive_url": "http://web.archive.org/web/20260816153423/https://www.involve.org.uk/about/about-involve",
+    "archive_checked": "2026-10-09",
+    "archive_sha256": "06eb7d07bab4b0b1f409346b9cc2cf50501e391f170b28c3358d96d99cc70108",
+    "archive_url": "http://web.archive.org/web/20261003153604/https://www.involve.org.uk/about/about-involve",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-20",
     "evidence": [
@@ -9025,7 +9202,7 @@
     "manual_checked": "2026-08-22"
   },
   "https://www.ipc.nsw.gov.au/news/open-government-partnership-final-public-consultation-draft-commitments-australias-third-national-action-plan": {
-    "archive_checked": "2026-10-02",
+    "archive_checked": "2026-10-09",
     "archive_sha256": "3f299a35884033faa4da79f8cb841f7312309978b1bb704d4640bb57edb2390d",
     "archive_url": "http://web.archive.org/web/20250524182833/https://www.ipc.nsw.gov.au/news/open-government-partnership-final-public-consultation-draft-commitments-australias-third-national-action-plan",
     "blocked": "HTTP_403",
@@ -9207,7 +9384,7 @@
     "last_modified": null
   },
   "https://www.lesswrong.com/posts/oqvsR2LmHWamyKDcj/large-language-models-will-be-great-for-censorship": {
-    "archive_checked": "2026-10-02",
+    "archive_checked": "2026-10-09",
     "archive_sha256": "be3315c67167e4c7c36556706a6fc8376f5b3e0a988579b884ff8f160a68fa87",
     "archive_url": "http://web.archive.org/web/20261002100356/https://www.lesswrong.com/posts/oqvsR2LmHWamyKDcj/large-language-models-will-be-great-for-censorship",
     "blocked": "HTTP_429",
@@ -9293,7 +9470,7 @@
     "last_modified": null
   },
   "https://www.localgovernment.vic.gov.au/__data/assets/word_doc/0027/167913/Local-Government-Act-2020-Principles-Community-Engagement.docx": {
-    "archive_checked": "2026-10-02",
+    "archive_checked": "2026-10-09",
     "archive_sha256": "e99a0cb931275931d2dc0c849b7cf26c1fa705559c1b80486e14ce24bf8bff98",
     "archive_url": "http://web.archive.org/web/20260727123829/https://www.localgovernment.vic.gov.au/__data/assets/word_doc/0027/167913/Local-Government-Act-2020-Principles-Community-Engagement.docx",
     "blocked": "HTTP_403",
@@ -9401,7 +9578,7 @@
     "last_modified": null
   },
   "https://www.mcguinnessinstitute.org/events/upcoming-events/": {
-    "archive_checked": "2026-10-02",
+    "archive_checked": "2026-10-09",
     "archive_sha256": "c424d3fde7f79a49c78aa40cc358084ed1fd723df098e5cb20b769898e4fa2bd",
     "archive_url": "http://web.archive.org/web/20260925090119/https://www.mcguinnessinstitute.org/events/upcoming-events/",
     "blocked": "HTTP_403",
@@ -9779,9 +9956,9 @@
       }
     ],
     "failing": {
-      "count": 1,
+      "count": 2,
       "error": "NETWORK_ERROR",
-      "last": "2026-10-02",
+      "last": "2026-10-09",
       "since": "2026-10-02"
     },
     "manual_checked": "2026-08-22"
@@ -9826,7 +10003,7 @@
     "last_modified": null
   },
   "https://www.opengovpartnership.org/documents/australia-letter-of-intent-to-join-ogp/": {
-    "archive_checked": "2026-10-02",
+    "archive_checked": "2026-10-09",
     "archive_sha256": "5c965a29ca39bd96002b3de108757fd7cc598d701426ff5fa8d1153aa9016526",
     "archive_url": "http://web.archive.org/web/20250718135710/https://www.opengovpartnership.org/documents/australia-letter-of-intent-to-join-ogp/",
     "blocked": "HTTP_403",
@@ -10146,12 +10323,6 @@
         "verified": true
       }
     ],
-    "failing": {
-      "count": 1,
-      "error": "NETWORK_ERROR",
-      "last": "2026-10-02",
-      "since": "2026-10-02"
-    },
     "last_modified": null
   },
   "https://www.prediki.com/meta/en/Prediction-Markets-A-Better-Alternative/": {
@@ -10171,12 +10342,6 @@
         "verified": true
       }
     ],
-    "failing": {
-      "count": 1,
-      "error": "NETWORK_ERROR",
-      "last": "2026-10-02",
-      "since": "2026-10-02"
-    },
     "last_modified": null
   },
   "https://www.pressenza.com/de/2017/12/demokratie-echtzeit-neue-app-democracy-erfolgreich-crowdfinanziert/": {
@@ -10446,7 +10611,7 @@
     "last_modified": null
   },
   "https://www.science.org/doi/10.1126/science.adq2852": {
-    "archive_checked": "2026-10-02",
+    "archive_checked": "2026-10-09",
     "archive_sha256": "d6d227b4f7282e187add081885e329f63be362f9a0523af1d9671943e5dbcc09",
     "archive_url": "http://web.archive.org/web/20260513112925/https://www.science.org/doi/10.1126/science.adq2852",
     "blocked": "HTTP_403",
@@ -10909,7 +11074,7 @@
     "last_modified": null
   },
   "https://www.unimelb.edu.au/newsroom/news/2017/november/susan-mckinnon-foundation-and-university-of-melbourne-establish-prestigious-award-for-political-leadership": {
-    "archive_checked": "2026-10-02",
+    "archive_checked": "2026-10-09",
     "archive_sha256": "ca8641c666590ecb850d3557793924270d0d2727a271e82fbb7ebacb8226d6e3",
     "archive_url": "http://web.archive.org/web/20250103063217/https://www.unimelb.edu.au/newsroom/news/2017/november/susan-mckinnon-foundation-and-university-of-melbourne-establish-prestigious-award-for-political-leadership",
     "blocked": "HTTP_403",
@@ -11177,7 +11342,7 @@
     "manual_checked": "2026-08-22"
   },
   "https://www.whitehouse.senate.gov/news/release/whitehouse-grassley-issue-statement-on-treasury-departments-final-rule-dismantling-key-element-of-corporate-transparency-act/": {
-    "archive_checked": "2026-10-02",
+    "archive_checked": "2026-10-09",
     "archive_sha256": "ac6c116bb017734fdecb69e9a1fca5c4545c3f99c589e753d6cf49f0a660dcc9",
     "archive_url": "http://web.archive.org/web/20260918081002/https://www.whitehouse.senate.gov/news/release/whitehouse-grassley-issue-statement-on-treasury-departments-final-rule-dismantling-key-element-of-corporate-transparency-act/",
     "blocked": "HTTP_403",

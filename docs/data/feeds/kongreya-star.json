@@ -1,8 +1,33 @@
 {
   "feed": "https://kongra-star.org/?feed=rss2",
-  "latest": "2026-09-28",
-  "span_days": 14,
+  "latest": "2026-10-09",
+  "span_days": 23,
   "items": [
+    {
+      "date": "2026-10-09",
+      "title": "Şandeya jinan ya DEM partiyê serdana navenda Kongra Star kir",
+      "url": "https://kongra-star.org/?p=33777"
+    },
+    {
+      "date": "2026-10-08",
+      "title": "‘28 salên komployê vîna gelê Kurd neşikand, têkoşîn mezintir bû’",
+      "url": "https://kongra-star.org/?p=33771"
+    },
+    {
+      "date": "2026-10-08",
+      "title": "Komîteya Koçberên Serêkaniyê mizgîniya amadekariya vegera navenda Bajêr da",
+      "url": "https://kongra-star.org/?p=33756"
+    },
+    {
+      "date": "2026-10-01",
+      "title": "Li Til Temir û Qibûr El Qeracinê daxwaza perwerdeya zimanê kurdî hat kirin",
+      "url": "https://kongra-star.org/?p=33743"
+    },
+    {
+      "date": "2026-09-29",
+      "title": "Rêber Abdullah Ocalan ji Konferansa Aştî û Entegrasyona Demokratîk re peyamek şand",
+      "url": "https://kongra-star.org/?p=33739"
+    },
     {
       "date": "2026-09-28",
       "title": "Xwendekarên li bajarê Qamişloyê daxwaz kirin ku zimanê kurdî wekî zimanekî fermî were naskirin",
@@ -53,5 +78,9 @@
       "title": "Kongra Star ragihand ku parastina zimanê Kurdî parastina mafekî bingehîn ê gelê Kurd e",
       "url": "https://kongra-star.org/?p=33600"
     }
-  ]
+  ],
+  "fetch": {
+    "etag": "W/\"5d39444cc6357880e9fa2aa44d58c3c6\"",
+    "last_modified": "Fri, 09 Oct 2026 08:26:41 GMT"
+  }
 }

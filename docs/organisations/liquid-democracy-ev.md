@@ -60,10 +60,10 @@ activity:
     url: https://liqd.net/en/
     checked: 2026-09-14
   scrape:
-    date: 2026-08-26
+    date: 2026-10-08
     note: Latest news page scraped
     url: https://liqd.net/en/blog/
-    checked: 2026-10-02
+    checked: 2026-10-09
   sitemap:
     date: 2026-10-01
     note: Page last modified (from sitemap)

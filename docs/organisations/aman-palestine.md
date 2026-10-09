@@ -66,7 +66,7 @@ activity:
     date: 2026-09-26
     note: Latest news page scraped
     url: https://www.aman-palestine.org/en/activities/
-    checked: 2026-10-02
+    checked: 2026-10-09
 last_checked: '2026-09-26'
 ---
 

@@ -62,11 +62,11 @@ activity:
     url: https://www.afrobarometer.org
     checked: 2026-09-19
   rss:
-    date: 2026-09-25
-    note: 'Latest post: Southern Africans endorse women’s marital and reproductive
-      autonomy, but are div'
-    url: https://www.afrobarometer.org/articles/southern-africans-endorse-womens-marital-and-reproductive-autonomy-but-are-divided-on-abortion/
-    checked: 2026-10-02
+    date: 2026-10-07
+    note: 'Latest post: The Gaborone Democracy Lab in partnership with the FES Democracy
+      Hub Africa'
+    url: https://www.afrobarometer.org/articles/the-gaborone-democracy-lab-in-partnership-with-the-fes-democracy-hub-africa/
+    checked: 2026-10-09
 last_checked: '2026-09-19'
 ---
 

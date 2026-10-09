@@ -1,8 +1,58 @@
 {
   "feed": "https://www.peoplepower21.org/feed",
-  "latest": "2026-10-02",
+  "latest": "2026-10-09",
   "span_days": 1,
   "items": [
+    {
+      "date": "2026-10-09",
+      "title": "[공동성명] 24회 세계 사형폐지의 날 🕊️ 더 이상 미루지 말고사형제도 폐지라는 시대적 과제를 해결합시다!",
+      "url": "https://peoplepower21.org/judiciary/2030700"
+    },
+    {
+      "date": "2026-10-08",
+      "title": "응원❤️",
+      "url": "https://peoplepower21.org/%5B%EB%A9%94%EC%9D%B8%ED%8E%B8%EC%A7%91%5D-Main%2A%2ADisplay/1957737"
+    },
+    {
+      "date": "2026-10-08",
+      "title": "[편집인의 글] 금융화와 복지 : 복지의 금융화는 당연하지 않고, 금융자본을 위한 복지는 안된다",
+      "url": "https://peoplepower21.org/welfarenow/2030596"
+    },
+    {
+      "date": "2026-10-08",
+      "title": "[성명] 중기부 국정감사에서 드러난 대형마트 새벽배송 규제완화 논의에 우려를 표한다",
+      "url": "https://peoplepower21.org/stablelife/2030600"
+    },
+    {
+      "date": "2026-10-08",
+      "title": "[목차] 복지동향 2026년 10월호(제336호) : 금융화와 복지",
+      "url": "https://peoplepower21.org/welfarenow/2030598"
+    },
+    {
+      "date": "2026-10-08",
+      "title": "[동향1] 법정 유급병가 도입이 필요하다",
+      "url": "https://peoplepower21.org/welfarenow/2030586"
+    },
+    {
+      "date": "2026-10-08",
+      "title": "[기획4] 주택의 금융화와 주거복지정책의 제로섬 게임",
+      "url": "https://peoplepower21.org/welfarenow/2030588"
+    },
+    {
+      "date": "2026-10-08",
+      "title": "[기획3] 의료의 언어로 쓰인 금융정책 : 실손보험, 국가가 매개한 금융화",
+      "url": "https://peoplepower21.org/welfarenow/2030590"
+    },
+    {
+      "date": "2026-10-08",
+      "title": "[기획2] 시장화 이후의 돌봄 : 금융은 한국의 노인돌봄을 어떻게 바꾸는가?",
+      "url": "https://peoplepower21.org/welfarenow/2030592"
+    },
+    {
+      "date": "2026-10-08",
+      "title": "[기획1] 신자유주의 시대 국가가 설계하는 금융화 : 한국의 연금체계와 연기금의 진화",
+      "url": "https://peoplepower21.org/welfarenow/2030594"
+    },
     {
       "date": "2026-10-02",
       "title": "한 눈에 보는 참여연대의 한 달",
@@ -55,6 +105,6 @@
     }
   ],
   "fetch": {
-    "etag": "\"3c2b6c15d5f48b6dff6a3b10d16a363a\""
+    "etag": "\"98376300d3bffea8e87aaa34107283f6\""
   }
 }

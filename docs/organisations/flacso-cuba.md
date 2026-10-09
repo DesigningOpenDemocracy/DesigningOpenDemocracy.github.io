@@ -55,10 +55,11 @@ activity:
     url: https://flacso.org/pa%C3%ADs/cuba
     checked: 2026-09-21
   rss:
-    date: 2026-08-05
-    note: 'Latest post: Arbitraje y Mediación «Saberes y conocimientos'
-    url: https://www.flacso.org/2026/08/04/arbitraje-y-mediacion-saberes-y-conocimientos/
-    checked: 2026-10-02
+    date: 2026-10-07
+    note: 'Latest post: Escuchar a la ciudadanía en tiempos de malestar democrático
+      – opinion-'
+    url: https://www.flacso.org/2026/10/07/escuchar-a-la-ciudadania-en-tiempos-de-malestar-democratico/
+    checked: 2026-10-09
   sitemap:
     checked: 2026-09-25
     note: Sitemap found, no lastmod

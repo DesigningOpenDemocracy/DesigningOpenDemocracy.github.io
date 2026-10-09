@@ -56,10 +56,10 @@ activity:
     url: https://kongra-star.org/eng/
     checked: 2026-09-21
   rss:
-    date: 2026-09-22
-    note: 'Latest post: Gelê Herêma Cizîrê ,Zimanê me Hebûna meye daketin qadan'
-    url: https://kongra-star.org/?p=33688
-    checked: 2026-09-27
+    date: 2026-10-09
+    note: 'Latest post: Şandeya jinan ya DEM partiyê serdana navenda Kongra Star kir'
+    url: https://kongra-star.org/?p=33777
+    checked: 2026-10-09
 last_checked: '2026-09-21'
 ---
 

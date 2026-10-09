@@ -1,8 +1,18 @@
 {
   "feed": "https://www.ettemedia.com/feed",
-  "latest": "2026-10-01",
-  "span_days": 24,
+  "latest": "2026-10-05",
+  "span_days": 25,
   "items": [
+    {
+      "date": "2026-10-05",
+      "title": "The Internette: this month’s online dramas and the deeper issues behind them",
+      "url": "https://www.ettemedia.com/internette-cornell-7-lesbian-bar-mamamia-outloud-podcast-drama/"
+    },
+    {
+      "date": "2026-10-03",
+      "title": "Ettention Please: the stories you might have missed this week",
+      "url": "https://www.ettemedia.com/ettention-please-the-stories-you-might-have-missed-this-week-oct-3/"
+    },
     {
       "date": "2026-10-01",
       "title": "\"Orange Brick Wall”: The regional journalists getting shut out by One Nation",
@@ -92,6 +102,6 @@
     }
   ],
   "fetch": {
-    "etag": "W/\"15248-Wj/5bib7+Akq6tETkzDsEQmBn/I\""
+    "etag": "W/\"15267-EntQ6w811XZjvSSlD3Y7LHMfsKY\""
   }
 }

@@ -1,12 +1,52 @@
 {
   "feed": "https://chinademocrats.org/?feed=rss2",
-  "latest": "2026-10-02",
-  "span_days": 6,
+  "latest": "2026-10-09",
+  "span_days": 8,
   "items": [
+    {
+      "date": "2026-10-09",
+      "title": "Edward Goldring《清洗：独裁者如何为生存而战》",
+      "url": "https://chinademocrats.org/?p=7406"
+    },
+    {
+      "date": "2026-10-08",
+      "title": "谁决定什么是真的？“事实之争”背后的政治权力",
+      "url": "https://chinademocrats.org/?p=7356"
+    },
+    {
+      "date": "2026-10-08",
+      "title": "政治性抑郁与神经衰弱的历史回响",
+      "url": "https://chinademocrats.org/?p=7397"
+    },
+    {
+      "date": "2026-10-06",
+      "title": "《外交政策》发文：马基雅维利会如何评价特朗普？",
+      "url": "https://chinademocrats.org/?p=7350"
+    },
+    {
+      "date": "2026-10-05",
+      "title": "世界正滑向“黑帮天堂”，怀旧越来越不现实",
+      "url": "https://chinademocrats.org/?p=7334"
+    },
+    {
+      "date": "2026-10-04",
+      "title": "福山重读《历史的终结》：被误读的不是胜利，而是“最后的人”",
+      "url": "https://chinademocrats.org/?p=7317"
+    },
+    {
+      "date": "2026-10-03",
+      "title": "美国的竞争性威权主义 — 《民主季刊》",
+      "url": "https://chinademocrats.org/?p=7308"
+    },
     {
       "date": "2026-10-02",
       "title": "金发女郎谬误：韩国核武角色未定边界",
       "url": "https://chinademocrats.org/?p=7275"
+    },
+    {
+      "date": "2026-10-02",
+      "title": "《外交事务》发文：为什么伊朗战争该继续打下去？",
+      "url": "https://chinademocrats.org/?p=7294"
     },
     {
       "date": "2026-10-01",
@@ -58,7 +98,7 @@
     }
   ],
   "fetch": {
-    "etag": "\"e1e276f5b1aa5ca2d065751ef813c638\"",
-    "last_modified": "Fri, 02 Oct 2026 04:33:21 GMT"
+    "etag": "\"17fec2a664b2d80eeb352288143833c9\"",
+    "last_modified": "Fri, 09 Oct 2026 01:00:00 GMT"
   }
 }

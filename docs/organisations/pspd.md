@@ -58,10 +58,10 @@ activity:
     url: https://www.peoplepower21.org
     checked: 2026-09-19
   rss:
-    date: 2026-10-02
-    note: 'Latest post: 한 눈에 보는 참여연대의 한 달'
-    url: https://peoplepower21.org/%5B%EB%A9%94%EC%9D%B8%ED%8E%B8%EC%A7%91%5D-Main%2A%2ADisplay/2028802
-    checked: 2026-10-02
+    date: 2026-10-09
+    note: 'Latest post: [공동성명] 24회 세계 사형폐지의 날 🕊️ 더 이상 미루지 말고사형제도 폐지라는 시대적 과제를 해결합시다!'
+    url: https://peoplepower21.org/judiciary/2030700
+    checked: 2026-10-09
 last_checked: '2026-09-19'
 ---
 
