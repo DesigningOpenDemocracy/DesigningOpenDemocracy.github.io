@@ -49,6 +49,8 @@ These pages are discovery aids — brief orientations to help you find better so
 | [Sortition](sortition.md) | Selection of officials or jurors by random lot |
 | [Mixed-Member Proportional Representation](mixed-member-proportional-representation.md) | Electoral system combining constituency seats with proportional top-up seats |
 | [Preferential Voting](preferential-voting.md) | Ranked-choice / instant-runoff voting used to elect Australia's House of Representatives |
+| [Majority Judgment](majority-judgment.md) | Voters grade every option; the highest median grade wins |
+| [Random Ballot](random-ballot.md) | Deciding a vote by drawing one ballot at random, so each option wins in proportion to its support |
 | [End-to-End Verifiable Voting System](end-to-end-verifiable-voting-system.md) | Voting systems where voters can verify their vote was counted correctly |
 | [E-Government](e-government.md) | Digital delivery of government services and participation |
 | [Organisations of World Citizens](organizations-of-world-citizens.md) | Global civic organisations and world citizenship concepts |

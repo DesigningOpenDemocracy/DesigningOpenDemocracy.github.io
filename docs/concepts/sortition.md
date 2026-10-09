@@ -28,6 +28,7 @@ title: Sortition
 
 - [Citizens' Assembly](citizens-assembly.md)
 - [Isegoria](isegoria.md)
+- [Random Ballot](random-ballot.md) — a lottery that draws an outcome from cast votes, rather than drawing people
 - [Cognitive Division of Labour](cognitive-division-of-labour.md)
 - [Sortition Foundation](../organisations/sortition-foundation.md)
 - [newDemocracy Foundation](../organisations/newdemocracy.md)

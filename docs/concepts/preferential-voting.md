@@ -26,5 +26,6 @@ title: Preferential Voting
 
 - [Representative Democracy](representative-democracy.md)
 - [Mixed-Member Proportional Representation](mixed-member-proportional-representation.md)
+- [Random Ballot](random-ballot.md) — drawing the winner by lot, weighted by support; can follow a ranked vote that screens out options a majority ranks last
 - [PRSA — Proportional Representation Society of Australia](../organisations/prsa.md)
 - [Electoral Royal Commission (Australia)](../organisations/electoral-royal-commission.md)
