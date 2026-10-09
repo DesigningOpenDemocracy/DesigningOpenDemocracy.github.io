@@ -23,7 +23,7 @@ The same video gives the case against, and it applies directly to elections: the
 
 Ways a random ballot can be combined with other mechanisms:
 
-- **With [Majority Judgment](majority-judgment.md) as an acceptability filter.** Voters grade every option as usual, any option whose median grade is "Reject" is struck off, and the winner is drawn by lot from what remains, weighted by support. The minority keeps a fair chance, but only among options the group as a whole can live with, which answers much of the "clearly worse outcome" objection above.
+- **After another voting method, as an acceptability filter.** Any method that can tell which options most voters reject can screen the field first, with the winner then drawn by lot from what's left, weighted by support. With [Majority Judgment](majority-judgment.md), strike off any option whose median grade is "Reject"; with approval voting, any option fewer than half the voters approve; with ranked ballots such as [preferential voting](preferential-voting.md), any option a majority ranks last. The minority keeps a fair chance, but only among options the group as a whole can live with, which answers much of the "clearly worse outcome" objection above.
 - **As a tiebreaker.** A common real-world role: another method decides, and a random ballot settles only a tie.[^rb-tiebreak]
 
 ## Further reading
