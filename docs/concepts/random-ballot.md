@@ -11,11 +11,13 @@ A **random ballot** (also called *random dictatorship*) decides a vote by drawin
 
 The case for it is fairness. Allan Gibbard showed in 1977 that it is "the unique social choice rule that treats all voters equally while still being strategyproof in all situations"[^rb-gibbard]: nobody gains by voting for anything other than their true favourite. The case against is just as plain: in Gibbard's own words, such a method "leaves too much to chance",[^rb-chance] and it is "rarely, if ever, proposed as a genuine electoral system".[^rb-rarely] Its usual roles are as a tiebreaker and as a thought experiment, notably Akhil Reed Amar's 1984 *Yale Law Journal* article "Choosing representatives by lottery voting".[^rb-amar]
 
-## The same idea in ethics: the weighted lottery
+## Majority rule versus a fair chance for the minority
 
-Moral philosophy has a version of the same idea, the **weighted lottery**, offered as an answer to a standard objection to utilitarianism: that "the greatest good for the greatest number" always sides with the majority and gives the minority no weight at all. Philosophy Vibe's short explainer walks through it.[^rb-pv-lottery] Five people are stranded on one island and one on another, and the rescue helicopter can reach only one. Rather than going straight to the five, the rescuers draw from a bag of five red balls and one blue, so the lone person has a one-in-six chance instead of none. The video applies it to everyday choices too: ten people picking dinner, seven wanting burgers and three sushi, draw from seven balls and three.
+Majority rule gives the losing side nothing, however large it is and however often it loses. A random ballot gives every side a chance of winning in proportion to its support: 30% of the vote means winning 30% of the time, not never.
 
-It then gives the objection, which is the one that matters for voting: the lottery leaves a real chance of the clearly worse outcome (letting five die to save one), and it can make an indefensible act look "fair" just because the victim was given odds.[^rb-pv-objection] Mathieu Doucet's "Playing Dice with Morality" (below) is a fuller academic critique.
+Philosophers have argued about the same trade-off under the name **weighted lottery**, as a fix for the objection that "the greatest good for the greatest number" ignores the minority entirely. Philosophy Vibe's short explainer puts it in voting terms with a group of ten choosing dinner: seven want burgers and three want sushi, so instead of a show of hands, draw from a bag of seven red balls and three blue.[^rb-pv-lottery]
+
+The same video gives the case against, and it applies directly to elections: the lottery leaves a real chance of an outcome nearly everyone agrees is worse. Its example is a rescue where the draw sends the helicopter to save one person instead of five.[^rb-pv-objection] That is why a random ballot is easier to defend for small, repeated group choices, where an unlucky draw is cheap and the minority's turn comes round, than for one-off, high-stakes decisions. Mathieu Doucet's "Playing Dice with Morality" (below) is a fuller academic critique of the weighted lottery.
 
 ## Further reading
 
@@ -29,8 +31,8 @@ It then gives the objection, which is the one that matters for voting: the lotte
 [^rb-chance]: "leaves too much to chance" [Random ballot](https://en.wikipedia.org/wiki/Random_ballot), Wikipedia.
 [^rb-rarely]: "The rule is rarely, if ever, proposed as a genuine electoral system" [Random ballot](https://en.wikipedia.org/wiki/Random_ballot), Wikipedia.
 [^rb-amar]: "Its application to elections was first described in 1984 by Akhil Reed Amar." [Random ballot](https://en.wikipedia.org/wiki/Random_ballot), Wikipedia.
-[^rb-pv-lottery]: [The Weighted Lottery - A Fair Solution to Utilitarianism](https://www.youtube.com/watch?v=rVkrXo5_vJw), Philosophy Vibe, YouTube, 10 March 2022: island rescue lottery from 3:57, dinner example from 6:33. <!-- unquoted: non-web-source: spoken video; its transcript is not in the YouTube page text, so a quote could not be verified mechanically -->
-[^rb-pv-objection]: [The Weighted Lottery - A Fair Solution to Utilitarianism](https://www.youtube.com/watch?v=rVkrXo5_vJw), Philosophy Vibe, YouTube, 10 March 2022: objections from 7:22, organ-harvesting example from 9:13. <!-- unquoted: non-web-source: spoken video; its transcript is not in the YouTube page text, so a quote could not be verified mechanically -->
+[^rb-pv-lottery]: [The Weighted Lottery - A Fair Solution to Utilitarianism](https://www.youtube.com/watch?v=rVkrXo5_vJw), Philosophy Vibe, YouTube, 10 March 2022: dinner example from 6:33. <!-- unquoted: non-web-source: spoken video; its transcript is not in the YouTube page text, so a quote could not be verified mechanically -->
+[^rb-pv-objection]: [The Weighted Lottery - A Fair Solution to Utilitarianism](https://www.youtube.com/watch?v=rVkrXo5_vJw), Philosophy Vibe, YouTube, 10 March 2022: island rescue lottery from 3:57, objections from 7:22. <!-- unquoted: non-web-source: spoken video; its transcript is not in the YouTube page text, so a quote could not be verified mechanically -->
 
 ## See also
 
