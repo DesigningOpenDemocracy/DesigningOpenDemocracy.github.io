@@ -16,6 +16,8 @@ This sidesteps two well-known problems with plurality voting:
 
 Majority Judgment is used in formal electoral experiments as well as everyday group decisions — choosing a restaurant, a meeting time, or a film — where the same "what does the group actually think?" question applies at a much smaller scale.
 
+Like most voting methods it is winner-take-all, so in decisions a group makes again and again, a consistent minority can lose every time. A [random ballot](random-ballot.md), which draws the winner by lot weighted by support, is one proposed remedy for that setting.
+
 ## Further reading
 
 - [Majority Judgment — Wikipedia](https://en.wikipedia.org/wiki/Majority_judgment)
@@ -27,4 +29,5 @@ Majority Judgment is used in formal electoral experiments as well as everyday gr
 
 - [Direct Democracy](direct-democracy.md)
 - [Sortition](sortition.md)
+- [Random Ballot](random-ballot.md)
 - [MieuxVoter](../organisations/mieuxvoter.md)

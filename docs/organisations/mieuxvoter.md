@@ -44,7 +44,7 @@ events:
   proof_level: high
   url_checked: '2026-08-14'
   notable: true
-  notable_reason: Landmark legal/court win
+  notable_reason: Largest election run under the method
   kind: news
 activity:
   manual:
