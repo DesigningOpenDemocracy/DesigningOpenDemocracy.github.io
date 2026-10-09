@@ -37,7 +37,7 @@
     <option value="major">Major only</option>
   </select>
   <button type="button" id="archive-filter-reset" class="calendar-reset-btn" aria-label="Reset filters">✕ Reset</button>
-  <span id="archive-filter-count" class="calendar-filter-count">{{ archive_items | length }} events</span>
+  <span id="archive-filter-count" class="calendar-filter-count" aria-live="polite">{{ archive_items | length }} events</span>
 </div>
 
 <nav class="archive-years" aria-label="Jump to year">
