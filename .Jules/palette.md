@@ -13,3 +13,7 @@
 ## 2026-09-21 - [Focus Visible and Explicit Button Types on Custom Controls]
 **Learning:** Custom interactive `<button>` elements lacking a `type` attribute default to `type="submit"`, which can cause unexpected form submissions or browser quirks. Furthermore, buttons rendered without explicit CSS `:focus-visible` styles inherit browser-default focus indicators that can be faint or suppressed, leaving keyboard users without visual focus feedback.
 **Action:** Always specify `type="button"` on non-submitting action buttons and provide `:focus-visible` outline styles (`outline: 2px solid ...; outline-offset: 2px;`) to ensure clear keyboard navigation.
+
+## 2026-10-13 - [Empty State Placement in Filtered Content Lists]
+**Learning:** In client-side filtered lists/feeds, placing the dynamic empty state container after content iteration loops can push the message off-screen or below the fold when zero items match. Positioning the empty state element directly below filter controls ensures immediate visibility within the viewport upon filter application.
+**Action:** Place dynamic empty state elements directly adjacent to/below filter bars or control bars rather than after list iteration containers.

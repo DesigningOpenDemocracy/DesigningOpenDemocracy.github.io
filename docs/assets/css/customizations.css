@@ -3084,6 +3084,13 @@ html .md-typeset details.plain-details > :last-child {
   margin-left: 0.3em;
 }
 
+.news-empty {
+  text-align: center;
+  padding: 2.5rem 1rem;
+  color: var(--md-default-fg-color--light);
+  font-size: 0.9em;
+}
+
 /* Landscape Archive (docs/overrides/archive.html): one compact row per
    event, since the list runs to hundreds. Tier colours follow the
    calendar's (amber major, blue notable). */
