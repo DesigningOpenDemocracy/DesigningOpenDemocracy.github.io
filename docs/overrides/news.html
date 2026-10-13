@@ -100,6 +100,11 @@
   <p class="news-feed-note">Counts are items in the current window; a feed without one is quiet, not missing. Topics are the concepts each organisation works on, so a topic feed follows organisations in that field rather than individual stories about it.</p>
 </details>
 
+<p id="news-empty" class="news-empty" hidden>
+  No news items match your filter criteria.
+  <button type="button" id="news-empty-clear" class="org-empty-clear-btn">Clear filters</button>
+</p>
+
 {#- One news story, as listed under its month. -#}
 {%- macro news_card(i) %}
   <li class="news-item news-story{% if i.notable is true %} news-story--major{% endif %}" data-countries="{{ i.countries | join(' ') }}" data-topics="{{ i.concepts | join(' ') }}" data-tier="{{ 'major' if i.notable is true else 'medium' }}">
@@ -183,6 +188,8 @@
   var topicLink = document.getElementById('news-subscribe-topic');
   var items = document.querySelectorAll('.news-item');
   var headings = document.querySelectorAll('.calendar-month-heading');
+  var emptyEl = document.getElementById('news-empty');
+  var emptyClearBtn = document.getElementById('news-empty-clear');
 
   // Same per-concept hue the org pages give their concept chips.
   document.querySelectorAll('.news-item .concept-tag').forEach(function (el) {
@@ -226,6 +233,7 @@
     });
     countEl.textContent = shown + ' item' + (shown !== 1 ? 's' : '');
     resetBtn.classList.toggle('visible', country !== 'all' || topic !== 'all' || tier !== 'all');
+    if (emptyEl) emptyEl.hidden = (shown > 0);
 
     // There is one feed per country and one per topic, not one per
     // combination, so each active filter gets its own button. The major-only
@@ -263,6 +271,11 @@
     tierSel.value = 'all';
     apply();
   });
+  if (emptyClearBtn) {
+    emptyClearBtn.addEventListener('click', function () {
+      resetBtn.click();
+    });
+  }
   apply();
 
   if (window.DODCountrySuggest) {
