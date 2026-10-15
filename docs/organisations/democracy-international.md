@@ -88,7 +88,7 @@ events:
   title: General Assembly of Democracy International e.V. — coinciding with the organisation's
     15th anniversary
   url: https://www.democracy-international.org/events/general-assembly-DI
-  quote: We warmly invite you to Democracy International's General Assembly on Saturday,
+  quote: We warmly invite you to Democracy International’s General Assembly on Saturday,
     21 November 2026, at 13:30 CET.
   proof_level: high
   url_checked: '2026-09-28'

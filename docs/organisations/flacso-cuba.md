@@ -22,12 +22,14 @@ rss_feed: https://flacso.org/feed
 events:
 - date: '1988-01-01'
   title: FLACSO's Cuban academic unit (Sede Cuba) created
-  url: https://flacso.org/quem-somos/nuestra-historia/historia-flacso/
+  url: https://www.flacso.org/sobre-la-flacso/
+  quote: 1988 Creación de la Sede Cuba
   note: FLACSO's official institutional timeline lists "1988 Creación de la Sede Cuba.
     Creación de la Unidad Académica en Cuba." ("1988 Creation of the Cuba seat. Creation
-    of the academic unit in Cuba.")
-  proof_level: medium
-  url_checked: '2026-08-17'
+    of the academic unit in Cuba.") The timeline moved here from the old /quem-somos/nuestra-historia/historia-flacso/
+    page, which 404s since the 2026 site redesign.
+  proof_level: high
+  url_checked: '2026-10-15'
   kind: news
 - date: '1994-01-01'
   title: Begins teaching the Master's in Social Development (Maestría en Desarrollo
@@ -48,18 +50,18 @@ activity:
     note: website loaded. news in main page. Latest is 4 Jun 2026 'Communiqué for
       the death of Dr. Raúl Vega-Pacheco Researcher and teacher of FLACSO Mexico'
   dod:
+    checked: 2026-09-21
     date: 2026-09-21
     note: FLACSO network site loads fine (flacso.org, 200) after a site redesign;
       no Cuba-specific content differentiated on the fetched page, confirmed parent
       network active
     url: https://flacso.org/pa%C3%ADs/cuba
-    checked: 2026-09-21
   rss:
+    checked: 2026-10-09
     date: 2026-10-07
     note: 'Latest post: Escuchar a la ciudadanía en tiempos de malestar democrático
       – opinion-'
     url: https://www.flacso.org/2026/10/07/escuchar-a-la-ciudadania-en-tiempos-de-malestar-democratico/
-    checked: 2026-10-09
   sitemap:
     checked: 2026-09-25
     note: Sitemap found, no lastmod

@@ -2,8 +2,8 @@
   "https://actualite.cd/2026/08/13/rdc-tshisekedi-demande-une-nouvelle-deliberation-de-la-loi-sur-lorganisation-du": {
     "archive_checked": "2026-09-25",
     "archive_url": "http://web.archive.org/web/20260816045341/https://actualite.cd/2026/08/13/rdc-tshisekedi-demande-une-nouvelle-deliberation-de-la-loi-sur-lorganisation-du",
-    "checked": "2026-09-25",
-    "document_sha256": "87bc04dda3324e37f5d02537f6b1e900bb8c528712048c74ddfc63fb98f4cb4b",
+    "checked": "2026-10-15",
+    "document_sha256": "d4522a51e32d5fc330b4ab577a238cbf95a739462a43f66214c704f9d926d47b",
     "etag": null,
     "evidence": [
       {
@@ -11,15 +11,27 @@
         "id": "178e48c31b943d42b7339bd619c99761493148c1fbbeb84b3cf4a34ca283ef64",
         "quote": "[F\u00e9lix Tshisekedi] a demand\u00e9 au Parlement une nouvelle d\u00e9lib\u00e9ration de la loi fixant les conditions d\u2019organisation du r\u00e9f\u00e9rendum, apr\u00e8s sa validation sous r\u00e9serves par la Cour constitutionnelle.",
         "verified": false
+      },
+      {
+        "checked": "2026-10-15",
+        "context": {
+          "prefix": "le d\u00e9lib\u00e9ration de la loi sur l\u2019organisation du r\u00e9f\u00e9rendum jeu 13/08/2026 - 22:07 F\u00e9lix Tshisekedi",
+          "sha256": "c435dc2b565e2d8e498eb3e167ff5f26038d5a4d02748ca348890714e5b6b7f5",
+          "suffix": ", a annonc\u00e9 jeudi l\u2019Assembl\u00e9e nationale. Dans un communiqu\u00e9 dat\u00e9 du 13 ao\u00fbt, le Bureau de l\u2019Assembl\u00e9e nationale indique que le chef de l\u2019\u00c9tat a",
+          "text": "F\u00e9lix Tshisekedi a demand\u00e9 au Parlement une nouvelle d\u00e9lib\u00e9ration de la loi fixant les conditions d\u2019organisation du r\u00e9f\u00e9rendum, apr\u00e8s sa validation sous r\u00e9serves par la Cour constitutionnelle, a annonc\u00e9 jeudi l\u2019Assembl\u00e9e nationale."
+        },
+        "id": "1bb94f0b5d2d16b29054da519a87414df1e291cf5947f901372c2fecbbcf278b",
+        "quote": "a demand\u00e9 au Parlement une nouvelle d\u00e9lib\u00e9ration de la loi fixant les conditions d\u2019organisation du r\u00e9f\u00e9rendum, apr\u00e8s sa validation sous r\u00e9serves par la Cour constitutionnelle",
+        "verified": true
       }
     ],
-    "last_modified": "Fri, 25 Sep 2026 09:10:48 GMT"
+    "last_modified": "Thu, 15 Oct 2026 13:08:41 GMT"
   },
   "https://actualite.cd/2026/09/18/ludpstshisekedi-qualifie-d-echec-la-manifestation-de-la-c64-et-annonce-son-tour-une": {
     "archive_checked": "2026-09-25",
     "archive_url": "http://web.archive.org/web/20260919044415/https://actualite.cd/2026/09/18/ludpstshisekedi-qualifie-d-echec-la-manifestation-de-la-c64-et-annonce-son-tour-une",
-    "checked": "2026-09-25",
-    "document_sha256": "3de894f93dc021fbfc27b5d96f35b7caa0103647cee232572d70b0bc52e7cef6",
+    "checked": "2026-10-15",
+    "document_sha256": "b4a26e09ed622202f01260cdcc1fdc42404372d1b3f8140f9d3bc5c46940061f",
     "etag": null,
     "evidence": [
       {
@@ -27,9 +39,15 @@
         "id": "a8e60838ce677295a00fcdc524ec5f112213b0806322dfe1684536cc6cc9f1a6",
         "quote": "Ces gens-l\u00e0 (NDLR: Coalition C64) repr\u00e9sentent une poign\u00e9e d\u2019individus qui fonctionnent uniquement sur la base des r\u00e9seaux sociaux et des manipulations... Il s\u2019agit d\u2019une opposition affaiblie qui n\u2019existe que sur les r\u00e9seaux sociaux.",
         "verified": false
+      },
+      {
+        "checked": "2026-10-15",
+        "id": "f6fcde78ee75894c58c7b6f34123bbc7d9388c0466ccc62bd2672e75cb65c1e9",
+        "quote": "Ces gens-l\u00e0 (NDLR: Coalition C64) repr\u00e9sentent une poign\u00e9e d\u2019individus qui fonctionnent uniquement sur la base des r\u00e9seaux sociaux et des manipulations... Il s\u2019agit d\u2019une opposition affaiblie qui n\u2019existe que sur les r\u00e9seaux sociaux",
+        "verified": true
       }
     ],
-    "last_modified": "Fri, 25 Sep 2026 09:11:45 GMT"
+    "last_modified": "Thu, 15 Oct 2026 13:08:45 GMT"
   },
   "https://adrindia.org/about-adr/mission-and-vision": {
     "checked": "2026-08-26",
@@ -199,8 +217,8 @@
   "https://asiapacificreport.nz/2026/09/18/fiji-targets-new-constitution-by-christmas-eve-as-watchdog-warns-of-self-coup-risk/": {
     "archive_checked": "2026-09-25",
     "archive_url": "http://web.archive.org/web/20260919201148/https://asiapacificreport.nz/2026/09/18/fiji-targets-new-constitution-by-christmas-eve-as-watchdog-warns-of-self-coup-risk/",
-    "checked": "2026-09-25",
-    "document_sha256": "1a9e6962f92999d2565c12e8b8fb91a0cf5b959e69ac1c53d380595439444b8c",
+    "checked": "2026-10-15",
+    "document_sha256": "7d9425d57eaa577fd15cc0b59c494c4997ed260b458cd48e0983591b0deab4d2",
     "etag": null,
     "evidence": [
       {
@@ -208,9 +226,21 @@
         "id": "1114c3289887921fd43fdf507413139521acbb5e7e19e4078e74735c32769933",
         "quote": "between November and mid-December 2026,",
         "verified": false
+      },
+      {
+        "checked": "2026-10-15",
+        "context": {
+          "prefix": "its sitting from September 28. \u201cSubject to the passage of the Bill and subsequent parliamentary processes, a referendum is proposed to be held",
+          "sha256": "b9c8e00ad05b39fb26a0342863d6cf3b2fd26ace06814a9ae5188168adfc7dcf",
+          "suffix": ". \u201cIf approved through the required processes, the new Constitution is proposed to come into effect by 24 December 2026.\u201d However, the Cen",
+          "text": "\u201cSubject to the passage of the Bill and subsequent parliamentary processes, a referendum is proposed to be held between November and mid-December 2026."
+        },
+        "id": "b415776bb692a45058b94d56fc5beaab5f6d637513e056697bec93ba4f4cfaef",
+        "quote": "between November and mid-December 2026",
+        "verified": true
       }
     ],
-    "last_modified": "Fri, 25 Sep 2026 00:27:01 GMT"
+    "last_modified": "Thu, 15 Oct 2026 09:46:58 GMT"
   },
   "https://astanatimes.com/2026/07/kazakhstans-new-constitution-takes-effect-heres-what-changes/": {
     "checked": "2026-08-26",
@@ -1761,8 +1791,8 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/2026_Brazilian_general_election": {
-    "checked": "2026-09-02",
-    "document_sha256": "c823e5532af0c025ea38c6566204311ae31600108b68f92ba3f52a462d6f6e84",
+    "checked": "2026-10-15",
+    "document_sha256": "03b1b393fd2f20139e4f93b0444def7ff852eeca4cb82bf5c9a48dc862c9ad63",
     "etag": null,
     "evidence": [
       {
@@ -1776,6 +1806,12 @@
         "id": "aef147cb8f6b500792db55dfdbfc09b883847c573dbe8e86218a35ac43ae6424",
         "quote": "General elections will be held in Brazil on 4 October 2026 to elect the president, vice president, members of the National Congress, the governors, vice governors and legislative assemblies of all federative units, and the district council of Fernando de Noronha.",
         "verified": true
+      },
+      {
+        "checked": "2026-10-15",
+        "id": "59abb11a7f212dd795806d0faf2146bcb5d66edf2cf02380d433a76e3d8a8db4",
+        "quote": "They will face each other in a run-off on 25 October 2026.",
+        "verified": false
       }
     ],
     "last_modified": null
@@ -4950,8 +4986,8 @@
     "archive_checked": "2026-10-02",
     "archive_sha256": "713cdff290aaa826aed752d7d08bfccbbcb1aa9a81000295542e2bef522176b2",
     "archive_url": "http://web.archive.org/web/20260923052401/https://fijisun.com.fj/news/nation/crc-report-tabled-in-parliament-now-public",
-    "checked": "2026-10-02",
-    "document_sha256": "36b1452f12c2fc56f5baa1a44e29e840a8030a156de85d445c5fab30c7e29252",
+    "checked": "2026-10-15",
+    "document_sha256": "04b03542d739163cdbccda5c0b47cf14fdac4493bacf2ea8725a5c9cf103fce0",
     "etag": null,
     "evidence": [
       {
@@ -4959,6 +4995,18 @@
         "id": "7d689ae75ce5e4e3e5ce000e6abeaa1f8d1fdb59c63743b1f466633ea8cc4b40",
         "quote": "The report was presented to Parliament today by Prime Minister Sitiveni Rabuka.",
         "verified": false
+      },
+      {
+        "checked": "2026-10-15",
+        "context": {
+          "prefix": "Review Commission (CRC) has been tabled in Parliament, marking a significant milestone in the country's ongoing constitutional review process.",
+          "sha256": "205150c831bd446f7bdc565e4af11a658418f49fd660ed307c4642ba27930226",
+          "suffix": "and contains the Commission's findings and recommendations following months of nationwide consultations and stakeholder engagement. According t",
+          "text": "The report was presented to Parliament today by Prime Minister Sitiveni Rabuka and contains the Commission's findings and recommendations following months of nationwide consultations and stakeholder engagement."
+        },
+        "id": "d7db0aaf50f762eb213f82b5f4e0e1750b10153e0475147e7f6bf0e66cc77f1c",
+        "quote": "The report was presented to Parliament today by Prime Minister Sitiveni Rabuka",
+        "verified": true
       }
     ],
     "last_modified": null
@@ -6075,9 +6123,9 @@
     "last_modified": null
   },
   "https://mosaiclab.com.au/the-big-book": {
-    "checked": "2026-08-26",
+    "checked": "2026-10-15",
     "document_sha256": "309ad0e69443b5f05700f102c8d653f595b6d8221b15177797f7a16383bfde2b",
-    "etag": "W/\"6012df5915a1bf873144e75d49c8d70a--gzip\"",
+    "etag": "W/\"339831c73861cf48481a9079d07cacc7--gzip\"",
     "evidence": [
       {
         "context": {
@@ -6088,6 +6136,18 @@
         },
         "id": "db84e2207fad582f7b14ddd8b2089764efe415a4478ed5c9b63266800412e00f",
         "quote": "Drawn from the authors\u2019 experience delivering 39 deliberative engagement processes, the book is full of insider secrets, authentic lessons learned",
+        "verified": true
+      },
+      {
+        "checked": "2026-10-15",
+        "context": {
+          "prefix": "your all-access pass to the specialised world of facilitating deliberations Go on a journey with MosaicLab directors Kimbra White,",
+          "sha256": "7ef4c9b5e9fc0c385c731217932c1fe6483389547d44b5ba9d232083a814b522",
+          "suffix": "in this comprehensive, practical guide. Drawn from the authors\u2019 experience delivering 39 deliberative engagement processes, the book is full of",
+          "text": "Go on a journey with MosaicLab directors Kimbra White, Nicole Hunter and Keith Greaves as they take you behind the scenes of a public deliberation in this comprehensive, practical guide."
+        },
+        "id": "7ef1b303917c2f08ab729ffb615e6a50ed02aa563760b0666f14017b547d2de6",
+        "quote": "Nicole Hunter and Keith Greaves as they take you behind the scenes of a public deliberation",
         "verified": true
       }
     ],
@@ -7723,15 +7783,27 @@
   "https://www.aljazeera.com/news/2026/9/15/police-crack-down-on-protests-against-constitutional-change-in-dr-congo": {
     "archive_checked": "2026-09-18",
     "archive_url": "http://web.archive.org/web/20260916140414/https://www.aljazeera.com/news/2026/9/15/police-crack-down-on-protests-against-constitutional-change-in-dr-congo",
-    "checked": "2026-09-18",
-    "document_sha256": "90d12c038351a25e9116aeac1253fb1cfbf565b60e06ec733bbd6fe813a5c501",
-    "etag": "W/\"313e3-5yLuCipKf8tmIfvfWa09IQK9eWU\"",
+    "checked": "2026-10-15",
+    "document_sha256": "3067246cd30abfd369cd3760ee29ed42acc6978857963eacf1f9559020912a58",
+    "etag": "W/\"3110e-v8zqFwYvvG7vfOkT7cgWCBLj3zI\"",
     "evidence": [
       {
         "checked": "2026-09-18",
         "id": "e9bd8f4655d7336a8e0214e7e1c7b884f72844219b73f08f01a723ae8acfa8c8",
         "quote": "Many of our activists were unfortunately and arbitrarily arrested.",
         "verified": false
+      },
+      {
+        "checked": "2026-10-15",
+        "context": {
+          "prefix": "ction called by the \u201cC64\u201d coalition, which was forged by opposition forces in a bid to defeat Tshisekedi\u2019s attempt to change the constitution. \u201c",
+          "sha256": "2be9c033b4a4066dfb40d73c2e5892329791ff3cd75b42124d460917d8ede701",
+          "suffix": "\u201d said Mohamed Eyenga of the Envol opposition party, a senior figure in the C64 coalition, according to the AFP news agency. \u201cWe were taken abac",
+          "text": "\u201cMany of our activists were unfortunately and arbitrarily arrested,\u201d said Mohamed Eyenga of the Envol opposition party, a senior figure in the C64 coalition, according to the AFP news agency."
+        },
+        "id": "89d488f0846d344c729800d6444002bf4a777cb9ef5fa4b0f567ad91d04aa28f",
+        "quote": "Many of our activists were unfortunately and arbitrarily arrested,",
+        "verified": true
       }
     ],
     "last_modified": null
@@ -8203,8 +8275,8 @@
     "last_modified": null
   },
   "https://www.congo-press.com/politique/assemblee-nationale-apres-les-observations-de-la-cour-constitutionnelle-la-loi-sur-le-referendum-renvoyee-en-commission/": {
-    "checked": "2026-10-02",
-    "document_sha256": "afe06c6fe58fff38847c7070568843d3c17b530ab7dbfd16bc5901e11e09e631",
+    "checked": "2026-10-15",
+    "document_sha256": "c9f3d6957cc9b5d2f9a3c7c05b46aaa700d27770a81343b3ee0f265bb48ac837",
     "etag": null,
     "evidence": [
       {
@@ -8212,6 +8284,18 @@
         "id": "5965027de9fe246d31972779b5ba0cfdc0a62b8c81b3462a59ebcb16254188e5",
         "quote": "La proposition de loi fixant les r\u00e8gles d'organisation du r\u00e9f\u00e9rendum en R\u00e9publique d\u00e9mocratique du Congo a \u00e9t\u00e9 renvoy\u00e9e \u00e0 la commission politique, administrative et juridique (PAJ) de l'Assembl\u00e9e nationale, \u00e0 la suite des observations formul\u00e9es par la Cour constitutionnelle.",
         "verified": false
+      },
+      {
+        "checked": "2026-10-15",
+        "context": {
+          "prefix": "comment Post\u00e9 sur Sep. 21, 2026 \u00e0 9:51 pm 0 Share 141 Views",
+          "sha256": "f5b22458bb7e45407c6d7a6e4a7c6eb5ad7369f668bae15abe902c971fca0024",
+          "suffix": "L\u2019annonce a \u00e9t\u00e9 faite ce lundi 21 septembre par le pr\u00e9sident de la Chambre basse du Parlement, Aim\u00e9 Boji Sangara, lors de la pl\u00e9ni\u00e8re consacr\u00e9e",
+          "text": "La proposition de loi fixant les r\u00e8gles d\u2019organisation du r\u00e9f\u00e9rendum en R\u00e9publique d\u00e9mocratique du Congo a \u00e9t\u00e9 renvoy\u00e9e \u00e0 la commission politique, administrative et juridique (PAJ) de l\u2019Assembl\u00e9e nationale, \u00e0 la suite des observations formul\u00e9es par la Cour constitutionnelle."
+        },
+        "id": "f5b22458bb7e45407c6d7a6e4a7c6eb5ad7369f668bae15abe902c971fca0024",
+        "quote": "La proposition de loi fixant les r\u00e8gles d\u2019organisation du r\u00e9f\u00e9rendum en R\u00e9publique d\u00e9mocratique du Congo a \u00e9t\u00e9 renvoy\u00e9e \u00e0 la commission politique, administrative et juridique (PAJ) de l\u2019Assembl\u00e9e nationale, \u00e0 la suite des observations formul\u00e9es par la Cour constitutionnelle.",
+        "verified": true
       }
     ],
     "last_modified": null
@@ -8414,18 +8498,30 @@
     "last_modified": "Thu, 01 Oct 2026 18:00:29 GMT"
   },
   "https://www.democracy-international.org/events/general-assembly-DI": {
-    "checked": "2026-10-02",
-    "document_sha256": "5f4dbed23b8ea6f75f5ebfac6b30ac5efe5fb5c3132179da901abe818d41f6a3",
-    "etag": "\"1790907733-gzip\"",
+    "checked": "2026-10-15",
+    "document_sha256": "d8347d773cd553c1df07052740d5deb09f3f3ac727abcd808b15f671aa29a031",
+    "etag": "\"1792069605-gzip\"",
     "evidence": [
       {
         "checked": "2026-10-02",
         "id": "b1c52336aa1785e419394fa277b8f5f8aac3b9abfe83df3a0d00e230fbb00240",
         "quote": "We warmly invite you to Democracy International's General Assembly on Saturday, 21 November 2026, at 13:30 CET.",
         "verified": false
+      },
+      {
+        "checked": "2026-10-15",
+        "context": {
+          "prefix": "Germany Invitation to the General Assembly 2026 21 November 2026 at 13:30 CET \u00b7 Cologne and online Dear members,",
+          "sha256": "02a19eb435de74d32b8ece007c3dc58c12cb021ec0feae5f3dd92f3d35790843",
+          "suffix": "You can join us in person at B\u00fcrgerzentrum M\u00fclheim in Cologne or online via Zoom. This year, we have a special reason to come together: D",
+          "text": "We warmly invite you to Democracy International\u2019s General Assembly on Saturday, 21 November 2026, at 13:30 CET. You can join us in person at B\u00fcrgerzentrum M\u00fclheim in Cologne or online via Zoom."
+        },
+        "id": "7a692962276ac84ae1ecf863342a95fc28ca45f389805ea9c9b6e4d781362ea4",
+        "quote": "We warmly invite you to Democracy International\u2019s General Assembly on Saturday, 21 November 2026, at 13:30 CET.",
+        "verified": true
       }
     ],
-    "last_modified": "Fri, 02 Oct 2026 02:22:13 GMT"
+    "last_modified": "Thu, 15 Oct 2026 13:06:45 GMT"
   },
   "https://www.democracy-international.org/events/shaping-democracy-2026": {
     "checked": "2026-10-02",
@@ -8754,6 +8850,26 @@
       "since": "2026-10-02"
     }
   },
+  "https://www.flacso.org/sobre-la-flacso/": {
+    "checked": "2026-10-15",
+    "document_sha256": "24efdca70960797b9041dcc7877ad44fb49d4968f970f71042ddd36fd8f3bbc1",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-10-15",
+        "context": {
+          "prefix": "Ingreso de Guatemala Ingreso de Guatemala Ingreso de Guatemala como pa\u00eds miembro.",
+          "sha256": "269dfbc7dcae4a7a1d0c791704391ae3abbeafba617960c02af841d093d3bd5d",
+          "suffix": "Creaci\u00f3n de la Sede Cuba Creaci\u00f3n de la Unidad Acad\u00e9mica en Cuba. 1992 Exp",
+          "text": "1988 Creaci\u00f3n de la Sede Cuba"
+        },
+        "id": "269dfbc7dcae4a7a1d0c791704391ae3abbeafba617960c02af841d093d3bd5d",
+        "quote": "1988 Creaci\u00f3n de la Sede Cuba",
+        "verified": true
+      }
+    ],
+    "last_modified": "Thu, 15 Oct 2026 08:46:34 GMT"
+  },
   "https://www.folio.org.au/event-4941291": {
     "checked": "2026-09-16",
     "document_sha256": "d5597fc74b49abbd5925d93ebcb56dd97d62762c50c3e579f3573558db0f46b8",
@@ -8795,8 +8911,8 @@
     "last_modified": null
   },
   "https://www.folio.org.au/event-6840311": {
-    "checked": "2026-09-16",
-    "document_sha256": "6ae3806cfe90ad594d493ad881b4621ae36e7b25a4491ae27ba76d81036b6f8f",
+    "checked": "2026-10-15",
+    "document_sha256": "cf122bc7263ca851aa49d2ea5f37ce7e37273e2d8662772b2189c186fd58eb42",
     "etag": null,
     "evidence": [
       {
@@ -8893,6 +9009,18 @@
         },
         "id": "46daf9224b0ba4d02a968b6ceafdf9c4823772462cf52dc263426e48335f0ccf",
         "quote": "She is the co-founder and Executive Chair of the Better Politics Foundation (formerly the Apolitical Foundation), a global, non-partisan initiative dedicated to renewing leadership, reimagining politics, and rebuilding trust, which has helped spark 178 Political Leadership Incubators across 60 countries.",
+        "verified": true
+      },
+      {
+        "checked": "2026-10-15",
+        "context": {
+          "prefix": "e room. Should we be celebrating democracy today \u2014 flaws and all \u2014 or reimagining it for tomorrow? Or both? To help us explore these questions,",
+          "sha256": "7878ac352a94997ec5c96c4d4bfff79593e1b83e78a62e62d1a40eb77fa7ebb7",
+          "suffix": "whose work traverses continents and the democratic ecosystem, from communities to public servants and elected representatives. What better way",
+          "text": "To help us explore these questions, we\u2019re joined by Lisa Witter and Josh Lerner, two leading democratic innovators whose work traverses continents and the democratic ecosystem, from communities to public servants and elected representatives."
+        },
+        "id": "19faf3c5730ec747107c623d09aa7db35a5fd2cf1e8b263abe683dcb9819a27e",
+        "quote": "we\u2019re joined by Lisa Witter and Josh Lerner, two leading democratic innovators",
         "verified": true
       }
     ],
@@ -10904,8 +11032,7 @@
         "verified": true
       }
     ],
-    "last_modified": "Fri, 28 Aug 2026 14:43:43 GMT",
-    "url_status": "dead"
+    "last_modified": "Fri, 28 Aug 2026 14:43:43 GMT"
   },
   "https://www.strongercharities.org.au/2025/02/11/media-release-charities-call-for-critical-amendments-to-the-electoral-reform-bill/": {
     "checked": "2026-08-26",

@@ -182,8 +182,8 @@ elections:
     date_status: fixed
     date_note: "Second round between the two leading candidates after the 4 October first round."
     url: https://en.wikipedia.org/wiki/2026_Brazilian_general_election
-    quote: "They will face each other in a run-off on 25 October 2026."
-    url_checked: 2026-10-07
+    quote: "They will face each other in a runoff on 25 October 2026"
+    url_checked: 2026-10-15
 
   - date: 2026-10-27
     country: IL
