@@ -1,8 +1,58 @@
 {
   "feed": "https://kongra-star.org/?feed=rss2",
-  "latest": "2026-10-09",
-  "span_days": 23,
+  "latest": "2026-10-15",
+  "span_days": 5,
   "items": [
+    {
+      "date": "2026-10-15",
+      "title": "Rêber Apo: Hûn jî dikarin gelek tiştan bikin",
+      "url": "https://kongra-star.org/?p=33870"
+    },
+    {
+      "date": "2026-10-15",
+      "title": "Merasîma bîranînê ya ji bo 26 şehîdan di roja duyemîn de ye",
+      "url": "https://kongra-star.org/?p=33878"
+    },
+    {
+      "date": "2026-10-15",
+      "title": "Kongra Star: Êrîşa Li Ser Wêne û Sembolên Şehîdên Jin Êrîşa li Ser Destkeftiyên Şoreşa Jine",
+      "url": "https://kongra-star.org/?p=33862"
+    },
+    {
+      "date": "2026-10-14",
+      "title": "Meclisa Jinê ya PYD: Êrîş li ser wêneyên şehîdan êrîş li ser îradeya jina azad e",
+      "url": "https://kongra-star.org/?p=33856"
+    },
+    {
+      "date": "2026-10-14",
+      "title": "Kongra Star a Hesekê: Êrîşkirina li ser wêneyên şehîdan, êrîş e li ser dîroka têkoşîna jinê û îradeya wê ya azad",
+      "url": "https://kongra-star.org/?p=33859"
+    },
+    {
+      "date": "2026-10-14",
+      "title": "Armancgirtina sembolên jinê, armancgirtina îradeya wê ya azad e",
+      "url": "https://kongra-star.org/?p=33854"
+    },
+    {
+      "date": "2026-10-13",
+      "title": "Kezîya jinê sembola yekîtî, Hevgirtin û tekoşîna hevpar a jinan e",
+      "url": "https://kongra-star.org/?p=33843"
+    },
+    {
+      "date": "2026-10-13",
+      "title": "Karwana pêncem a bi 382 malbatan ber bi gundên SerêKaniyê ve çû",
+      "url": "https://kongra-star.org/?p=33831"
+    },
+    {
+      "date": "2026-10-11",
+      "title": "Kongra Star li bajarê Kobanê êrîşên li ser Bajarê Hesekê bi tûndî şermezar kir",
+      "url": "https://kongra-star.org/?p=33827"
+    },
+    {
+      "date": "2026-10-10",
+      "title": "Êrîş li ser keziya jinê li Hesekê, hewldana derxistina fitneyê",
+      "url": "https://kongra-star.org/?p=33819"
+    },
     {
       "date": "2026-10-09",
       "title": "Şandeya jinan ya DEM partiyê serdana navenda Kongra Star kir",
@@ -80,7 +130,7 @@
     }
   ],
   "fetch": {
-    "etag": "W/\"5d39444cc6357880e9fa2aa44d58c3c6\"",
-    "last_modified": "Fri, 09 Oct 2026 08:26:41 GMT"
+    "etag": "W/\"2f6c3de18a2688d7db183139d3670bb9\"",
+    "last_modified": "Thu, 15 Oct 2026 12:46:40 GMT"
   }
 }

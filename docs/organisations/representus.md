@@ -53,10 +53,10 @@ activity:
     url: https://represent.us
     checked: 2026-09-20
   rss:
-    date: 2026-10-06
-    note: 'Latest post: What is Truth API and why does it matter?'
-    url: https://represent.us/news/what-is-truth-api-and-why-does-it-matter/
-    checked: 2026-10-09
+    date: 2026-10-15
+    note: 'Latest post: The New Era of Corruption in America'
+    url: https://represent.us/news/the-new-era-of-corruption-in-america/
+    checked: 2026-10-16
 last_checked: '2026-09-20'
 ---
 

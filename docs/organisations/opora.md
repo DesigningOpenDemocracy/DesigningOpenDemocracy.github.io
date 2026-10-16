@@ -62,7 +62,7 @@ activity:
     date: 2026-09-03
     note: Latest news page scraped
     url: https://oporaua.org/en/announce
-    checked: 2026-10-09
+    checked: 2026-10-16
 last_checked: '2026-09-28'
 ---
 

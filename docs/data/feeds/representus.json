@@ -1,8 +1,18 @@
 {
   "feed": "https://represent.us/feed",
-  "latest": "2026-10-06",
-  "span_days": 22,
+  "latest": "2026-10-15",
+  "span_days": 28,
   "items": [
+    {
+      "date": "2026-10-15",
+      "title": "The New Era of Corruption in America",
+      "url": "https://represent.us/news/the-new-era-of-corruption-in-america/"
+    },
+    {
+      "date": "2026-10-13",
+      "title": "Trump Administration Ramps Up Efforts at Political Intimidation",
+      "url": "https://represent.us/news/trump-administration-ramps-up-efforts-at-political-intimidation/"
+    },
     {
       "date": "2026-10-06",
       "title": "What is Truth API and why does it matter?",
@@ -69,7 +79,7 @@
     }
   ],
   "fetch": {
-    "etag": "W/\"e7b90df437c1433976779d61e84ae330\"",
-    "last_modified": "Wed, 07 Oct 2026 18:04:45 GMT"
+    "etag": "W/\"97034242b6f85ae011007b8ab4f848d1\"",
+    "last_modified": "Thu, 15 Oct 2026 21:25:12 GMT"
   }
 }

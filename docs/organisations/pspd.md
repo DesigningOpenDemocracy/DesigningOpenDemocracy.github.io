@@ -58,10 +58,10 @@ activity:
     url: https://www.peoplepower21.org
     checked: 2026-09-19
   rss:
-    date: 2026-10-09
-    note: 'Latest post: [공동성명] 24회 세계 사형폐지의 날 🕊️ 더 이상 미루지 말고사형제도 폐지라는 시대적 과제를 해결합시다!'
-    url: https://peoplepower21.org/judiciary/2030700
-    checked: 2026-10-09
+    date: 2026-10-16
+    note: 'Latest post: [공지] 2027 공공임대주택 예산안 분석 토론회(11/4)'
+    url: https://peoplepower21.org/stablelife/2054759
+    checked: 2026-10-16
 last_checked: '2026-09-19'
 ---
 

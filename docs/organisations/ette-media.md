@@ -56,11 +56,11 @@ activity:
     url: https://www.ettemedia.com/
     checked: 2026-09-16
   rss:
-    date: 2026-10-05
-    note: 'Latest post: The Internette: this month’s online dramas and the deeper
-      issues behind them'
-    url: https://www.ettemedia.com/internette-cornell-7-lesbian-bar-mamamia-outloud-podcast-drama/
-    checked: 2026-10-09
+    date: 2026-10-15
+    note: 'Latest post: Editors beware: your latest pitch might be coming from an
+      AI agent'
+    url: https://www.ettemedia.com/editors-beware-your-latest-pitch-might-be-coming-from-an-ai-agent/
+    checked: 2026-10-16
 last_checked: '2026-09-16'
 contributors:
 - BrianKhuu

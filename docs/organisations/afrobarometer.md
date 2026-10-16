@@ -62,11 +62,11 @@ activity:
     url: https://www.afrobarometer.org
     checked: 2026-09-19
   rss:
-    date: 2026-10-07
-    note: 'Latest post: The Gaborone Democracy Lab in partnership with the FES Democracy
-      Hub Africa'
-    url: https://www.afrobarometer.org/articles/the-gaborone-democracy-lab-in-partnership-with-the-fes-democracy-hub-africa/
-    checked: 2026-10-09
+    date: 2026-10-13
+    note: 'Latest post: Saúde, água e desemprego são as principais prioridades  na
+      agenda política dos M'
+    url: https://www.afrobarometer.org/articles/saude-agua-e-desemprego-sao-as-principais-prioridades-na-agenda-politica-dos-mocambicanos-comuns/
+    checked: 2026-10-16
 last_checked: '2026-09-19'
 ---
 

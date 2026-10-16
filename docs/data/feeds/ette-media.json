@@ -1,12 +1,54 @@
 {
   "feed": "https://www.ettemedia.com/feed",
-  "latest": "2026-10-05",
-  "span_days": 25,
+  "latest": "2026-10-15",
+  "span_days": 23,
   "items": [
+    {
+      "date": "2026-10-15",
+      "title": "Editors beware: your latest pitch might be coming from an AI agent",
+      "url": "https://www.ettemedia.com/editors-beware-your-latest-pitch-might-be-coming-from-an-ai-agent/"
+    },
+    {
+      "date": "2026-10-14",
+      "title": "Our Gen Z employee doesn’t believe in objectivity",
+      "url": "https://www.ettemedia.com/podcast-our-gen-z-employee-doesnt-believe-in-objectivity-6acdd2bbb9c817c77c8789b8/",
+      "routine": [
+        "podcast or video episode"
+      ]
+    },
+    {
+      "date": "2026-10-11",
+      "title": "Meet the man who paved the way for independent media",
+      "url": "https://www.ettemedia.com/meet-the-man-who-paved-the-way-for-independent-media/"
+    },
+    {
+      "date": "2026-10-09",
+      "title": "Ettention Please: the stories you might have missed this week",
+      "url": "https://www.ettemedia.com/ettention-please-the-stories-you-might-have-missed-this-week/",
+      "signals": [
+        "legal or legislative"
+      ]
+    },
+    {
+      "date": "2026-10-07",
+      "title": "The Ette x Lamestream collab you've been waiting for",
+      "url": "https://www.ettemedia.com/podcast-finally-the-ette-x-lamestream-collab-is-here-6ac4abd443e4f10ff2beab3e/",
+      "routine": [
+        "podcast or video episode"
+      ]
+    },
     {
       "date": "2026-10-05",
       "title": "The Internette: this month’s online dramas and the deeper issues behind them",
       "url": "https://www.ettemedia.com/internette-cornell-7-lesbian-bar-mamamia-outloud-podcast-drama/"
+    },
+    {
+      "date": "2026-10-03",
+      "title": "ONLY FRAN: The USA v The ICC explained",
+      "url": "https://www.ettemedia.com/podcast-only-fran-the-usa-v-the-icc-explained-6abf480499c0dcb8c5933553/",
+      "signals": [
+        "legal or legislative"
+      ]
     },
     {
       "date": "2026-10-03",
@@ -17,6 +59,14 @@
       "date": "2026-10-01",
       "title": "\"Orange Brick Wall”: The regional journalists getting shut out by One Nation",
       "url": "https://www.ettemedia.com/orange-brick-wall-the-regional-journalists-getting-shut-out-by-one-nation/"
+    },
+    {
+      "date": "2026-09-30",
+      "title": "EXCLUSIVE: ABC 7.30’s interview bias unpacked",
+      "url": "https://www.ettemedia.com/podcast-exclusive-abc-730s-interview-bias-exposed-and-explained-6abb22aacaf81e3c24e45a9c/",
+      "routine": [
+        "podcast or video episode"
+      ]
     },
     {
       "date": "2026-09-29",
@@ -102,6 +152,6 @@
     }
   ],
   "fetch": {
-    "etag": "W/\"15267-EntQ6w811XZjvSSlD3Y7LHMfsKY\""
+    "etag": "W/\"133ea-Zj12kfB6Yq//2YjqhW2i2Y5LicM\""
   }
 }
