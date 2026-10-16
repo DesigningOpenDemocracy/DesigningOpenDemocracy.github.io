@@ -28,12 +28,12 @@ events:
     Romero Gonzales para fomentar la creatividad y la mirada crítica de los espíritus
     rebeldes. Con el paso de los años, y tras la partida del maestro en 1999, la Fundación
     Solón se convirtió en un centro de interpelación y búsqueda de alternativas a
-    partir del arte, la investigación y el activismo para intentar cambiar el sistema
+    partir del arte, la investigación y el activismo
   note: '"The Solón Foundation was born in 1994 on the initiative of the artist Walter
     Solón Romero Gonzales to foster creativity and the critical gaze of rebellious
     spirits."'
   proof_level: high
-  url_checked: '2026-08-17'
+  url_checked: '2026-10-16'
   kind: news
 - date: '2015-12-11'
   title: Executive director Pablo Solón speaks at COP21 against the Paris agreement

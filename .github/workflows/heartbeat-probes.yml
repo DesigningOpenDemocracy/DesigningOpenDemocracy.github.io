@@ -145,10 +145,16 @@ jobs:
             git push
           }
 
-      - name: Surface verification failures
-        # Runs after the push, so a failing citation check is visible in the
-        # Actions UI without ever costing the run its committed data. Before
-        # this, continue-on-error meant a red verification step looked green.
+      - name: Surface verification findings
+        # Runs after the push, so findings never cost the run its committed
+        # data. A dead or reworded third-party page is content to fix, not a
+        # broken heartbeat, so this warns rather than failing the job: it
+        # used to `exit 1`, which turned the weekly run red over one 404'd
+        # citation (2026-10-02, 2026-10-09) while every probe had worked.
+        # The findings go on the run's summary page instead, where the
+        # heartbeat run and a human look; the log's last 25 lines, which is
+        # all the old step printed, were mostly STILL BLOCKED noise that hid
+        # the actual DEAD/MISMATCH lines.
         if: always()
         run: |
           # if/fi rather than `[ ... ] && VAR=...`: these run blocks execute
@@ -161,10 +167,30 @@ jobs:
           if [ "${{ steps.urls.outcome }}" = "failure" ]; then
             FAILED="$FAILED check_event_urls.py"
           fi
-          if [ -n "$FAILED" ]; then
-            echo "::error::Citation verification reported problems in:$FAILED"
-            echo "--- check_fragments.py ---"; tail -n 25 /tmp/fragments.log 2>/dev/null || true
-            echo "--- check_event_urls.py ---"; tail -n 25 /tmp/urls.log 2>/dev/null || true
-            exit 1
+          if [ -z "$FAILED" ]; then
+            echo "Citation verification clean."
+            exit 0
           fi
-          echo "Citation verification clean."
+          echo "::warning::Citation verification found problems in:$FAILED (see the run summary)"
+          # Keep only the finding blocks that need someone to act: a header
+          # line (two-space indent, upper case) plus its deeper-indented
+          # detail lines. STILL BLOCKED / REDIRECT / robots lines are left out.
+          findings() {
+            awk '/^  [A-Z]/ { show = ($0 ~ /^  (MISMATCH|FETCH ERROR|DEAD|STILL DEAD|ERROR|STILL FAILING|ANSWERING AGAIN|AMBIGUOUS)/) }
+                 /^  [A-Z]/ || /^   / { if (show) print; next }
+                 { show = 0 }' "$1" 2>/dev/null || true
+          }
+          {
+            echo "## Citation findings"
+            echo
+            echo "Problems in:$FAILED. These need a citation fix (new URL, reworded quote,"
+            echo "or \`check_fragments.py --set-url-status <url> dead\`); they don't fail the run."
+            for f in fragments urls; do
+              echo
+              echo "### $( [ $f = fragments ] && echo check_fragments.py || echo check_event_urls.py )"
+              echo '```'
+              findings /tmp/$f.log
+              tail -n 8 /tmp/$f.log 2>/dev/null || true
+              echo '```'
+            done
+          } | tee -a "$GITHUB_STEP_SUMMARY"
