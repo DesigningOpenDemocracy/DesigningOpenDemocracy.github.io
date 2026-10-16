@@ -56,10 +56,10 @@ activity:
     url: https://kongra-star.org/eng/
     checked: 2026-09-21
   rss:
-    date: 2026-10-09
-    note: 'Latest post: Şandeya jinan ya DEM partiyê serdana navenda Kongra Star kir'
-    url: https://kongra-star.org/?p=33777
-    checked: 2026-10-09
+    date: 2026-10-15
+    note: 'Latest post: Merasîma bîranînê ya ji bo 26 şehîdan di roja duyemîn de ye'
+    url: https://kongra-star.org/?p=33878
+    checked: 2026-10-16
 last_checked: '2026-09-21'
 ---
 

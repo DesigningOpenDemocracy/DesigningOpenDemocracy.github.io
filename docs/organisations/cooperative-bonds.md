@@ -71,10 +71,10 @@ activity:
     url: https://bonds.coop/feed
     checked: 2026-09-25
   scrape:
-    date: 2026-07-30
+    date: 2026-10-14
     note: Latest news page scraped
     url: https://bonds.coop/resources/co-op-news/
-    checked: 2026-10-09
+    checked: 2026-10-16
 last_checked: '2026-09-27'
 ---
 

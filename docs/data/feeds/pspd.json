@@ -1,8 +1,61 @@
 {
   "feed": "https://www.peoplepower21.org/feed",
-  "latest": "2026-10-09",
+  "latest": "2026-10-16",
   "span_days": 1,
   "items": [
+    {
+      "date": "2026-10-16",
+      "title": "[논평] 전시작전통제권은 조건 없이 환수해야 한다",
+      "url": "https://peoplepower21.org/peace/2054749"
+    },
+    {
+      "date": "2026-10-16",
+      "title": "[공지] 2027 공공임대주택 예산안 분석 토론회(11/4)",
+      "url": "https://peoplepower21.org/stablelife/2054759"
+    },
+    {
+      "date": "2026-10-16",
+      "title": "[Statement] The ROK Government’s Silence on Unjust U.S. Sanctions Against the ICC",
+      "url": "https://peoplepower21.org/english/2054754",
+      "signals": [
+        "legal or legislative"
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "title": "10.29 이태원 참사",
+      "url": "https://peoplepower21.org/%5B%EB%A9%94%EC%9D%B8%ED%8E%B8%EC%A7%91%5D-Main%2A%2ADisplay/2054741"
+    },
+    {
+      "date": "2026-10-15",
+      "title": "[집회] 🇵🇸 가자지구 집단학살 규탄 한국 시민사회 78차 긴급행동 (10/17)",
+      "url": "https://peoplepower21.org/peace/2054730"
+    },
+    {
+      "date": "2026-10-15",
+      "title": "[논평] 초대 중수청장, 과거 검찰과의 차별성 입증해야",
+      "url": "https://peoplepower21.org/judiciary/2054733"
+    },
+    {
+      "date": "2026-10-15",
+      "title": "[논평] 미국의 부당한 ICC 제재에도 침묵하는 한국 정부",
+      "url": "https://peoplepower21.org/peace/2054685"
+    },
+    {
+      "date": "2026-10-15",
+      "title": "[논평] ‘공정성의 외관’ 훼손을 우려한다",
+      "url": "https://peoplepower21.org/judiciary/2054710"
+    },
+    {
+      "date": "2026-10-15",
+      "title": "[기자회견] 공익제보자 김현석 씨 무혐의 촉구 시민 8,702명의 탄원서 및 책임감면 의견서 제출",
+      "url": "https://peoplepower21.org/whistleblower/2054591"
+    },
+    {
+      "date": "2026-10-15",
+      "title": "[경찰개혁네트워크] 경찰 개혁, 민주적 통제 강화와 권한 분산 이루어져야",
+      "url": "https://peoplepower21.org/government/2054705"
+    },
     {
       "date": "2026-10-09",
       "title": "[공동성명] 24회 세계 사형폐지의 날 🕊️ 더 이상 미루지 말고사형제도 폐지라는 시대적 과제를 해결합시다!",
@@ -105,6 +158,6 @@
     }
   ],
   "fetch": {
-    "etag": "\"98376300d3bffea8e87aaa34107283f6\""
+    "etag": "\"a0dff7ef4edc4d8982829d8ab05f6347\""
   }
 }

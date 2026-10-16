@@ -1,8 +1,58 @@
 {
   "feed": "https://chinademocrats.org/?feed=rss2",
-  "latest": "2026-10-09",
-  "span_days": 8,
+  "latest": "2026-10-14",
+  "span_days": 4,
   "items": [
+    {
+      "date": "2026-10-14",
+      "title": "汉娜 · 西贝里、钟伟锋 | “捂嘴”、“洗脑”：中国人工智能审查能否拆解",
+      "url": "https://chinademocrats.org/?p=7533"
+    },
+    {
+      "date": "2026-10-14",
+      "title": "民主倒退国家反对派如何结盟？",
+      "url": "https://chinademocrats.org/?p=7477"
+    },
+    {
+      "date": "2026-10-14",
+      "title": "柯珍雅、萧强、亚历克斯 · 格莱德斯坦等 | 人工智能时代的民主机遇",
+      "url": "https://chinademocrats.org/?p=7517"
+    },
+    {
+      "date": "2026-10-14",
+      "title": "吕频、艾欣 | 十年间，专制政治背景下中国女权运动的发展",
+      "url": "https://chinademocrats.org/?p=7559"
+    },
+    {
+      "date": "2026-10-14",
+      "title": "区倬僖、季志强 | 审查进了流水线：看清中国人工智能模型里的政治控制",
+      "url": "https://chinademocrats.org/?p=7550"
+    },
+    {
+      "date": "2026-10-14",
+      "title": "下载《中国民主季刊》2026年第四季完整版",
+      "url": "https://chinademocrats.org/?p=7493"
+    },
+    {
+      "date": "2026-10-14",
+      "title": "《中国民主季刊》2026年第四季目录",
+      "url": "https://chinademocrats.org/?p=7502"
+    },
+    {
+      "date": "2026-10-12",
+      "title": "预告：《中国民主季刊》今年第四期即将出版❗",
+      "url": "https://chinademocrats.org/?p=7450"
+    },
+    {
+      "date": "2026-10-12",
+      "title": "最新研究 | 专制国家的 AI 困境：“最后一英里”难题",
+      "url": "https://chinademocrats.org/?p=7459"
+    },
+    {
+      "date": "2026-10-10",
+      "title": "不只摧毁军队，更要瓦解抵抗意志：中国如何构想针对台认知战",
+      "url": "https://chinademocrats.org/?p=7430"
+    },
     {
       "date": "2026-10-09",
       "title": "Edward Goldring《清洗：独裁者如何为生存而战》",
@@ -98,7 +148,7 @@
     }
   ],
   "fetch": {
-    "etag": "\"17fec2a664b2d80eeb352288143833c9\"",
-    "last_modified": "Fri, 09 Oct 2026 01:00:00 GMT"
+    "etag": "\"94e6aa3abf5da690f3ce90b254ae99fb\"",
+    "last_modified": "Thu, 15 Oct 2026 22:19:39 GMT"
   }
 }

@@ -1,8 +1,13 @@
 {
   "feed": "https://www.sitra.fi/feed",
-  "latest": "2026-10-08",
-  "span_days": 9,
+  "latest": "2026-10-15",
+  "span_days": 15,
   "items": [
+    {
+      "date": "2026-10-15",
+      "title": "Ennustemarkkinat – tulevaisuustiedon lähde vai vedonlyöntiä yhteiskunnallisista aiheista?",
+      "url": "https://www.sitra.fi/artikkelit/ennustemarkkinat-tulevaisuustiedon-lahde-vai-vedonlyontia-yhteiskunnallisista-aiheista/"
+    },
     {
       "date": "2026-10-08",
       "title": "Uusi rahoitushaku kunnille: Tukea vihreiden investointien vuorovaikutukseen",
@@ -115,7 +120,7 @@
     }
   ],
   "fetch": {
-    "etag": "\"651af8e6e6bb091c1a929bb8fc21e097\"",
-    "last_modified": "Fri, 09 Oct 2026 08:56:52 GMT"
+    "etag": "\"c797963f3b6af95af170e0aae57a47f9\"",
+    "last_modified": "Fri, 16 Oct 2026 01:01:47 GMT"
   }
 }

@@ -72,10 +72,10 @@ activity:
     url: https://chinademocrats.org/en
     checked: 2026-09-28
   rss:
-    date: 2026-10-09
-    note: 'Latest post: Edward Goldring《清洗：独裁者如何为生存而战》'
-    url: https://chinademocrats.org/?p=7406
-    checked: 2026-10-09
+    date: 2026-10-14
+    note: 'Latest post: 吕频、艾欣 | 十年间，专制政治背景下中国女权运动的发展'
+    url: https://chinademocrats.org/?p=7559
+    checked: 2026-10-16
 last_checked: '2026-09-28'
 ---
 
