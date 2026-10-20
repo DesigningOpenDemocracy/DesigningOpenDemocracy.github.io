@@ -17,3 +17,7 @@
 ## 2026-10-13 - [Empty State Placement in Filtered Content Lists]
 **Learning:** In client-side filtered lists/feeds, placing the dynamic empty state container after content iteration loops can push the message off-screen or below the fold when zero items match. Positioning the empty state element directly below filter controls ensures immediate visibility within the viewport upon filter application.
 **Action:** Place dynamic empty state elements directly adjacent to/below filter bars or control bars rather than after list iteration containers.
+
+## 2026-10-24 - [Consistent Clear-Filter Action in Empty States Across Directory Views]
+**Learning:** In multi-view directory applications (e.g. Directory, News, Archive), maintaining consistent empty-state patterns — including centered padding, distinct text color, and a direct `<button type="button" class="org-empty-clear-btn">Clear filters</button>` action — ensures users can instantly recover from empty filter/search results on any list page without hunting for the top reset button.
+**Action:** When creating or updating client-side filtered lists, ensure empty state containers include an inline "Clear filters" action button hooked directly to the main filter reset function alongside consistent empty state CSS styling.
