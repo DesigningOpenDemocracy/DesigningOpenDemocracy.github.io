@@ -86,7 +86,6 @@ elections:
 
   - date: 2026-10-05
     end_date: 2026-10-27
-    end_date: 2026-10-27
     country: AU
     jurisdiction: Tasmania
     level: local
