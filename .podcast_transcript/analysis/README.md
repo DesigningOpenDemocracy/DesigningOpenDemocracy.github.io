@@ -193,9 +193,13 @@ has the detail.
 1. **Nicholas Gruen, 2017 → 2020 → 2026.** The same spine throughout
    (Schumpeter's division of labour, elections as aristocratic, the jury as
    model, the carbon-price repeal as worked example, "we're part of the
-   problem"), with the standing assembly moving from a designed chamber *in*
-   Parliament (2017) to a crowdfunded body that needs no permission (2020) to
-   "don't ask for any permission. Just run it" (2026). His carbon-repeal cost
+   problem"). The plan is the same throughout too: a chamber *in* Parliament
+   as the destination (2017), reached by running juries "as a form of
+   political activism" (his 2017 words) rather than waiting to be asked. In
+   2020 that was a crowdfunded standing chamber run "as a form of activism"
+   to show people the model; in 2026, "don't ask for any permission. Just run
+   it", with a price attached. One route to one destination, not three
+   successive proposals (the 2026 recap's first draft read it the second way). His carbon-repeal cost
    rises from $10bn a year (2017) to "$12… may be $15 billion" (2026). See the
    [2017 notes](2017-10-21_citizens-democracy.md#gruen-across-the-archive).
 2. **Specialisation vs representativeness.** Gruen samples; Hofkirchner
