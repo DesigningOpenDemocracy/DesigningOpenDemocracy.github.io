@@ -763,7 +763,17 @@ podcast:
   plays still count in the podcast's stats. Deliberately a native `<audio controls
   preload="none">`, not Spotify's iframe embed: no third-party script on the page, and nothing
   downloaded (episodes run to 100 MB) until the reader presses play.
-- `title:` only renders when a post has more than one episode; `duration:`/`url:` are optional.
+- `title:` only renders when a post has more than one episode or the entry is a clip;
+  `duration:`/`url:` are optional.
+- **Clips**: `start:`/`end:` (`"2:53"`, `"1:02:10"` or seconds; quote them) play just that span,
+  via a `#t=start,end` media fragment on the audio URL, which survives Anchor's redirect to the
+  CDN (checked in Chromium). The download link stays the whole file. Times come from the
+  `.podcast_transcript/*.srt` files, which match the feed's audio. Used to restore the 2019 Apple
+  Podcasts post's highlight of Francisco, first shared as a Whooshkaa clip.
+- **Placement**: a `<!-- podcast-player -->` line in the post puts the card there instead.
+- **Whooshkaa**, the podcast's host until about 2021, has shut down (Spotify bought it), so its
+  `player.whooshkaa.com` links are dead. They were replaced by notes pointing to the player in
+  2026-10; don't add new ones.
 - Rendered by `hooks/podcast_player.py`, styled by `.podcast-card*` in `customizations.css`
   (violet, beside `shared_link:`'s blue and `event:`'s amber). Every card also carries the
   podcast's subscribe links. `tests/test_podcast_player.py` covers it.

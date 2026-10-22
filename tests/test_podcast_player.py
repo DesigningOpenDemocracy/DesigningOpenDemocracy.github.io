@@ -58,6 +58,23 @@ class PlayerTests(unittest.TestCase):
         self.assertEqual(render("Body.", {"podcast": [{"title": "no audio"}]}), "Body.")
         self.assertEqual(render("Body.", {}), "Body.")
 
+    def test_clip_plays_a_span_and_download_stays_whole(self):
+        out = render("Body.", {"podcast": [dict(EP, start="2:53", end=322)]})
+        self.assertIn('a.mp3?x=1&amp;y=2#t=173,322"', out)
+        self.assertIn('<a href="https://example.org/a.mp3?x=1&amp;y=2">Download MP3', out)
+        self.assertIn("Clip: 2:53–5:22", out)
+        self.assertIn("podcast-card-title", out)  # a clip names itself even alone
+
+    def test_unreadable_start_plays_whole_episode(self):
+        out = render("Body.", {"podcast": [dict(EP, start="soon")]})
+        self.assertNotIn("#t=", out)
+
+    def test_marker_places_card(self):
+        out = render("Intro.\n\n<!-- more -->\n\nA\n\n<!-- podcast-player -->\n\nB", {"podcast": [EP]})
+        self.assertLess(out.index("\nA\n"), out.index("<audio"))
+        self.assertLess(out.index("<audio"), out.index("\nB"))
+        self.assertNotIn("podcast-player -->", out)
+
 
 FEED = b"""<?xml version="1.0"?>
 <rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><channel>
