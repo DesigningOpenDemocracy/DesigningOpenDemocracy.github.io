@@ -45,6 +45,13 @@ def _load_org(docs_dir, slug):
     return _cache[key]
 
 
+def is_safe_url(url):
+    if not url or not isinstance(url, str):
+        return False
+    u = url.strip().lower()
+    return u.startswith(('http://', 'https://', 'mailto:', '/', '#', './'))
+
+
 def _trim(text, limit=SUMMARY_CHARS):
     text = ' '.join(str(text).split())
     if len(text) <= limit:
@@ -80,7 +87,7 @@ def render_card(slug, meta):
     parts.append('<div class="org-card-links">')
     parts.append(f'<a href="{profile}">Landscape profile →</a>')
     website = meta.get('website')
-    if website:
+    if website and is_safe_url(str(website)):
         label = 'Website (archived) ↗' if 'web.archive.org' in str(website) else 'Website ↗'
         parts.append(
             f'<a href="{html.escape(str(website))}" target="_blank" rel="noopener">{label}</a>'
