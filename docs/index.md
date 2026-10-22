@@ -8,17 +8,13 @@ template: home.html
 
 ## About Us
 
-Designing Open Democracy is an Australian operated forum of process engineers, social architects and philosophers aiming to explore the ways that technology, engineering and design of social systems can be applied to every levels of society.
+Designing Open Democracy is an Australian-operated forum of process engineers, social architects, and philosophers exploring how technology, engineering, and the design of social systems can be applied to strengthen democracy at every level of society.
 
-We are nonpartisan and also agnostic to any particular democratic innovative approach, aiming to help foster tighter consensus and collaboration between all political parties and organisation towards a stronger and healthier democracy.
-
-In our podcast you will find detailed discussions in potential opportunities for reforming of existing democratic institutions; from local organisations to national governments around the world through technology or other practices. Our aim is to improve democracy: we think this can best be done by providing a forum for discussing democracy proposals, ideas, and to foster collaboration between people who would like to participate in democracy reform.
-
-Designing Open Democracy will not presume any form of democratic system to be superior, but is a forum for discussion and practical planning on how such system may be implemented. In addition, this meetup will not be exclusive to any political party, but be a forum for members of various parties, groups and individuals to come together to trade ideas related to open democracy and evaluate their strengths and weaknesses.
-
-TL;DR: We are an nonpartisan and agnostic democracy advocacy group for promoting greater interaction between relevant stakeholders involved in developing a more unified and stronger democracy.
+We are nonpartisan and do not presume any single democratic model or approach to be superior. We are agnostic about *which system or approach*, but not about *whether it is genuinely trying to serve its people*. See [About](about.md) for more, and the [Accountability Framework](projects/accountability-framework/index.md) for what that means in practice.
 
 ## Podcast
+
+Our podcast covers opportunities for reforming existing democratic institutions, from local organisations to national governments around the world, through technology and other practices.
 
 **To subscribe to our podcast just search for "Designing Open Democracy" in your local podcast App or [Anchor.fm](https://anchor.fm/designingopendemocracy) or [Apple Podcast](https://podcasts.apple.com/au/podcast/designing-open-democracy/id1492656241).**
 

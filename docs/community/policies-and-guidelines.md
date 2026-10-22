@@ -20,6 +20,9 @@ partly derived from Wikipedia's own pages on the topic.
 1.  The DOD wiki aims to be an encyclopedia of information related to
     democracy
 2.  Information should be unbiased and from a neutral point of view
+    in how it is presented. This is about fairness in writing, not an
+    absence of values: DOD is nonpartisan but not neutral (see
+    [Non-partisan is not the same as neutral](../projects/accountability-framework/index.md#non-partisan-is-not-the-same-as-neutral))
 3.  Content should be non-promotional in nature
 4.  Avoid conflict of interest (See [Wikipedia's
     policy](https://en.wikipedia.org/wiki/Wikipedia:Conflict_of_interest)

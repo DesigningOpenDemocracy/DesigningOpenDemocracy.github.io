@@ -5,7 +5,7 @@ template: community.html
 
 Designing Open Democracy is a community of process engineers, social architects, technologists, and engaged citizens working on how democracy can be better designed. We are based in Melbourne but operate globally online.
 
-We are nonpartisan and agnostic to any particular democratic approach — the goal is to understand, build, and improve democratic systems, not to advocate for any party or ideology.
+We are nonpartisan and agnostic to any particular democratic approach — the goal is to understand, build, and improve democratic systems, not to advocate for any party or any single democratic model. Nonpartisan is not the same as neutral, though: see the [Accountability Framework](../projects/accountability-framework/index.md#non-partisan-is-not-the-same-as-neutral).
 
 ## Join the conversation
 
