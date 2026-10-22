@@ -35,6 +35,16 @@ On 15 September, International Day of Democracy,[^unday] DOD and [888 Co-operati
 - Deliberation works because of its structure: random invitation, paid time, slow learning, and the group making its own choices. Automate the choosing and you remove the part that changes people.
 - The panel agreed on the diagnosis but not on where power actually sits: in parliament, in workplaces and unions, or with capital. That's the argument worth continuing.
 
+## Listen to the full recording
+
+The whole evening (1 hour 43 minutes) is now an episode of the Designing Open Democracy podcast.
+
+<audio class="podcast-player" controls preload="none" src="https://anchor.fm/s/39cd9860/podcast/play/127771194/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-20%2Fdc0b912b-fb9e-ed0d-ce4e-c9a466347876.mp3">
+  Your browser can't play this audio inline. <a href="https://anchor.fm/s/39cd9860/podcast/play/127771194/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-20%2Fdc0b912b-fb9e-ed0d-ce4e-c9a466347876.mp3">Download the MP3</a> instead.
+</audio>
+
+[Listen on Spotify](https://open.spotify.com/episode/4CmIpcHOAYxMXWJb4aMSqT) · [Download the MP3](https://anchor.fm/s/39cd9860/podcast/play/127771194/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-20%2Fdc0b912b-fb9e-ed0d-ce4e-c9a466347876.mp3) · Subscribe in your podcast app with [AntennaPod](https://antennapod.org/deeplink/subscribe/?url=https%3A%2F%2Fanchor.fm%2Fs%2F39cd9860%2Fpodcast%2Frss&title=Designing+Open+Democracy) or the [RSS feed](https://anchor.fm/s/39cd9860/podcast/rss)
+
 ## The panel
 
 Antony McMullen, 888's chair, moderated a panel of four.

@@ -3746,3 +3746,10 @@ html .md-typeset details.plain-details > :last-child {
 .md-main:has(.md-post__back) .md-content a[href*="/organisations/"]:not([href$="/organisations/"])::after { content: "Landscape"; }
 .md-main:has(.md-post__back) .md-content a[href*="/concepts/"]:not([href$="/concepts/"])::after { content: "Concept"; }
 .md-main:has(.md-post__back) .md-content .org-card a::after { content: none !important; }
+
+/* Inline podcast player in blog posts (native <audio>, no third-party embed). */
+.md-typeset audio.podcast-player {
+  display: block;
+  width: 100%;
+  margin: 0.5em 0 0.8em;
+}
