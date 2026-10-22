@@ -23,6 +23,11 @@ location:
   longitude: 144.9688835
   name: The Kelvin Club, Melbourne, Australia
   address: "14-30 Melbourne Place, Melbourne VIC 3000"
+podcast:
+  - title: "International Day Of Democracy: Democracy Beyond The Ballot Box"
+    audio: "https://anchor.fm/s/39cd9860/podcast/play/127771194/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-20%2Fdc0b912b-fb9e-ed0d-ce4e-c9a466347876.mp3"
+    duration: "1 hr 43 min"
+    url: "https://podcasters.spotify.com/pod/show/designingopendemocracy/episodes/International-Day-Of-Democracy-Democracy-Beyond-The-Ballot-Box-e3qpp3q"
 ---
 
 On 15 September, International Day of Democracy,[^unday] DOD and [888 Co-operative Causeway](../../organisations/888-cooperative-causeway.md) filled a room at The Kelvin Club in Melbourne for ["democracy beyond the ballot box"](2026-08-25-international-day-of-democracy-event.md), timed for the run-up to Victoria's 28 November election.[^vicelection] Four speakers took part: an economist, a facilitator, a degrowth scholar and a co-op founder.
@@ -34,16 +39,6 @@ On 15 September, International Day of Democracy,[^unday] DOD and [888 Co-operati
 - "Representative" doesn't have to mean "elected". Choosing people by lot, the way juries already work, is another way to represent the public, and the practitioners on the panel say it works when it's tried.
 - Deliberation works because of its structure: random invitation, paid time, slow learning, and the group making its own choices. Automate the choosing and you remove the part that changes people.
 - The panel agreed on the diagnosis but not on where power actually sits: in parliament, in workplaces and unions, or with capital. That's the argument worth continuing.
-
-## Listen to the full recording
-
-The whole evening (1 hour 43 minutes) is now an episode of the Designing Open Democracy podcast.
-
-<audio class="podcast-player" controls preload="none" src="https://anchor.fm/s/39cd9860/podcast/play/127771194/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-20%2Fdc0b912b-fb9e-ed0d-ce4e-c9a466347876.mp3">
-  Your browser can't play this audio inline. <a href="https://anchor.fm/s/39cd9860/podcast/play/127771194/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-20%2Fdc0b912b-fb9e-ed0d-ce4e-c9a466347876.mp3">Download the MP3</a> instead.
-</audio>
-
-[Listen on Spotify](https://open.spotify.com/episode/4CmIpcHOAYxMXWJb4aMSqT) · [Download the MP3](https://anchor.fm/s/39cd9860/podcast/play/127771194/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-20%2Fdc0b912b-fb9e-ed0d-ce4e-c9a466347876.mp3) · Subscribe in your podcast app with [AntennaPod](https://antennapod.org/deeplink/subscribe/?url=https%3A%2F%2Fanchor.fm%2Fs%2F39cd9860%2Fpodcast%2Frss&title=Designing+Open+Democracy) or the [RSS feed](https://anchor.fm/s/39cd9860/podcast/rss)
 
 ## The panel
 

@@ -740,6 +740,34 @@ event:
   same event** — migrate the post onto `event:` instead, same spirit as `shared_link:`'s
   equivalent rule above.
 
+**Convention — podcast (optional, for posts with a recording on the DOD podcast):**
+
+Set `podcast:` to a list of the post's episodes and an audio player card is rendered straight
+after `<!-- more -->` (so it stays out of the blog index's excerpt), or at the top of a post
+without that marker. A list because some talks went out in parts (the 2017 Citizens' Democracy
+post has three).
+
+```yaml
+podcast:
+  - title: "Isegoria: The Way Citizens' Juries Deliver It, How Elections Destroy It"
+    audio: "https://anchor.fm/s/39cd9860/podcast/play/..."   # the feed's <enclosure> URL
+    duration: "1 hr 4 min"
+    url: "https://podcasters.spotify.com/pod/show/designingopendemocracy/episodes/..."
+```
+
+- Don't write it by hand: `python util/sync_podcast.py --post <post> --episode "<title text>"`
+  copies the entry from the Anchor feed. With no arguments the script lists every episode and
+  the post that plays it, so an episode showing `NOT LINKED` is a new release waiting for its
+  post. All 15 episodes in the feed were linked when the field was added (2026-10-22).
+- `audio:` is the feed's own enclosure URL, which plays through Anchor's tracking redirect so
+  plays still count in the podcast's stats. Deliberately a native `<audio controls
+  preload="none">`, not Spotify's iframe embed: no third-party script on the page, and nothing
+  downloaded (episodes run to 100 MB) until the reader presses play.
+- `title:` only renders when a post has more than one episode; `duration:`/`url:` are optional.
+- Rendered by `hooks/podcast_player.py`, styled by `.podcast-card*` in `customizations.css`
+  (violet, beside `shared_link:`'s blue and `event:`'s amber). Every card also carries the
+  podcast's subscribe links. `tests/test_podcast_player.py` covers it.
+
 **Convention — inline Democracy Landscape cards (optional):**
 
 Put `<!-- org-card: <slug> -->` on its own line in a blog post (e.g. under a
@@ -1008,6 +1036,7 @@ more than a bare link.
 - `hooks/shared_link_card.py` — fires on `on_page_markdown`; injects a reader-facing card at the top of a blog post's body from `shared_link:` frontmatter. See "Convention — shared_link" above.
 - `hooks/org_cards.py` — fires on `on_page_markdown`; expands `<!-- org-card: <slug> -->` markers in blog posts into inline Democracy Landscape cards. See "Convention — inline Democracy Landscape cards" above.
 - `hooks/event_card.py` — fires on `on_page_markdown`; injects a reader-facing card at the top of a blog post's body from `event:` frontmatter, reusing the page's own `location:` for an embedded map. Presentational only — deliberately never read by `hooks/calendar_export.py`. See "Convention — event" above.
+- `hooks/podcast_player.py` — fires on `on_page_markdown`; renders an audio player card from a blog post's `podcast:` frontmatter. Network-free; `util/sync_podcast.py` fills the field from the feed. See "Convention — podcast" above.
 - `hooks/normalize_tags.py` — fires on `on_page_markdown` at `event_priority(100)`, i.e. before mkdocs-material's tags plugin collects `page.meta["tags"]` in its own `on_page_markdown` (priority -50); folds every tag to the lowercase-hyphen slug the plugin anchors on, deduplicating. **Tags are matched case-insensitively because of this hook, not by the plugin.** The plugin treats each distinct tag *string* as its own tag while slugifying them all into one anchor id, so `Deliberative Democracy` and `deliberative-democracy` emitted two `<h2>` sections sharing `id="tag:deliberative-democracy"` — and because the plugin sorts case-sensitively, every Title Case tag sorted above every lowercase one, putting the halves ~45 KB apart on the page. A browser jumps to the first of two duplicate ids, so `/tags/#tag:deliberative-democracy` showed one 2021 podcast while the five pages actually carrying that tag were unreachable by the link. 18 slugs were split this way (`#democracy` 5 vs 13 pages, `#podcast` 7 vs 5, `#sortition` 1 vs 6). The source frontmatter was normalised to slug form in the same pass, so the hook is a guard against re-drift rather than a live crutch — but it is what makes a future `Citizens Assembly` fold in rather than split the tag again. It shares `hooks/tag_links.py`'s import of the plugin's own `pymdownx.slugs.slugify`; keep those two in step, since folding on a different rule than the plugin anchors on would put the duplicate sections straight back. `tags_allowed:` (fails the build on any tag outside a listed vocabulary) was considered and rejected — new topics get tagged here all the time, and blocking them is the wrong trade for what is really a spelling problem. `tests/test_normalize_tags.py` covers it.
   - **Blog `categories:` do not have this problem** — checked while fixing it: four category slugs are also written two ways (`Podcast`/`podcast`, `Deliberative Democracy`/`deliberative democracy`, …), but the blog plugin merges spellings into a single generated category page (confirmed: `/blog/category/deliberative-democracy/` lists all six posts across both spellings), picking one spelling for the heading. Cosmetic, no posts lost, so categories were deliberately left alone.
 
@@ -1311,6 +1340,13 @@ These are linked from the row under the org index table for researcher download 
   ```
   python util/merge_citation_state.py OURS.json THEIRS.json --out MERGED.json
   python util/merge_citation_state.py OURS.json THEIRS.json --check   # report only, write nothing
+  ```
+
+- `util/sync_podcast.py` — reads the DOD podcast's Anchor feed and links episodes to blog posts by writing `podcast:` frontmatter (see "Convention — podcast"). Report-only by default; `--post`/`--episode` writes, inserting the field as raw text before the closing `---` so the rest of the frontmatter is untouched, and refusing an ambiguous `--episode` or a post that already has the field. `--feed <file>` reads a saved copy.
+  ```
+  python util/sync_podcast.py                                          # every episode and the post that plays it
+  python util/sync_podcast.py --post 2020-03-20-podcast --episode Isegoria
+  python util/sync_podcast.py --post 2017-10-21-podcast --episode "part 1" --episode "part 2" --episode "part 3"
   ```
 
 - `util/sync_events.py` — fetches every org's `ics_feed:` and caches *upcoming* events (not just the latest, unlike `check_rss.py`'s activity check above) to `docs/data/events/<slug>.json`, which is committed to the repo and consumed by `hooks/calendar_export.py` at build time. This is the only place the calendar's iCal data touches the network — the build itself never fetches anything, matching the rest of this repo's fetch-then-cache convention.
