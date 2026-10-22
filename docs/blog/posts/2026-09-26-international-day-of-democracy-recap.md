@@ -23,6 +23,11 @@ location:
   longitude: 144.9688835
   name: The Kelvin Club, Melbourne, Australia
   address: "14-30 Melbourne Place, Melbourne VIC 3000"
+podcast:
+  - title: "International Day Of Democracy: Democracy Beyond The Ballot Box"
+    audio: "https://anchor.fm/s/39cd9860/podcast/play/127771194/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-20%2Fdc0b912b-fb9e-ed0d-ce4e-c9a466347876.mp3"
+    duration: "1 hr 43 min"
+    url: "https://podcasters.spotify.com/pod/show/designingopendemocracy/episodes/International-Day-Of-Democracy-Democracy-Beyond-The-Ballot-Box-e3qpp3q"
 ---
 
 On 15 September, International Day of Democracy,[^unday] DOD and [888 Co-operative Causeway](../../organisations/888-cooperative-causeway.md) filled a room at The Kelvin Club in Melbourne for ["democracy beyond the ballot box"](2026-08-25-international-day-of-democracy-event.md), timed for the run-up to Victoria's 28 November election.[^vicelection] Four speakers took part: an economist, a facilitator, a degrowth scholar and a co-op founder.
@@ -65,11 +70,11 @@ Godfrey is co-founder of the energy co-op [CoPower](https://cooperativepower.org
 
 ### What drew them to democracy
 
-Antony opened by asking each panellist "what drew you personally to democratic ways of living and being?" Godfrey's answer was cheese pizza, from a night at the Cheese Board Collective, a Berkeley workers' co-op: "I thought, you know what, this is a pretty good way of running the world… sometimes bread can be very persuasive." Anitra's was living in a commune, "and finding that direct democracy can actually work in practice". Nicole's came from years of government engagement work that was "to be really honest… really boring", until she saw what a deeper process could do: "this has got possibility everywhere". Nicholas started from a warning: "if by democracy you mean the system we have today, this is the system that brought you Donald Trump and Adolf Hitler. So it matters what kind of democracy we have."
+Antony opened by asking each panellist "what drew you personally to democratic ways of living and being?" Godfrey's answer was cheese pizza, from a night at the Cheese Board Collective, a Berkeley workers' co-op: "I thought, you know what, this is a pretty good way of running the world… sometimes bread can be very persuasive." Anitra's was living in a commune, "and finding that direct democracy can actually work in practice". Nicole's came from years of government engagement work that was "to be really honest… really boring", until she saw what a deeper process could do: "this has got possibility everywhere". Nicholas started with a deliberate jolt ("perhaps I'll shock you a little"): "if by democracy you mean the system we have today, this is the system that brought you Donald Trump and Adolf Hitler. So it matters what kind of democracy we have." His worry was who's losing faith in it: he put the share of younger people "openly wondering whether democracy is such a good thing" at something like 25–30%.
 
 ## "Is tech gonna save us?"
 
-None of the panellists thought technology was the answer. Nicole has watched a fully automated global "deliberation" run by Meta: "you get a time, you fill out a thing, you move on… it is terrifying in my eyes. Because there is no meeting of the minds." Godfrey said technology "displaces social cooperation". The real shortage, he said, is time, and the fix is shorter working hours "so that participation is not bounded by privilege". Nicholas questioned the premise that everyone should be involved in everything. As he pointed out, we already trust an institution most of us never sit on, the jury: "There needs to be a division of labor."
+None of the panellists thought technology was the answer, though Nicole's "no" came with a "but": it will "help and hinder". Talking in real time across the seas without flying everyone around the world is a gain, she said, and every method, "be it a method in a room", leaves some people out. What worries her is automation. She has watched a fully automated global "deliberation" run by Meta: "you get a time, you fill out a thing, you move on… it is terrifying in my eyes. Because there is no meeting of the minds." Godfrey said technology "displaces social cooperation". The real shortage, he said, is time, and the fix is shorter working hours "so that participation is not bounded by privilege". Nicholas questioned the premise that everyone should be involved in everything. As he pointed out, we already trust an institution most of us never sit on, the jury: "There needs to be a division of labor."
 
 ## Inside a citizens' jury
 
@@ -89,7 +94,7 @@ That's a practitioner's counterpoint to tools like the [Habermas Machine](2026-0
 
 ## Elections, lotteries and structure
 
-Godfrey made the evening's key historical point almost in passing:
+Godfrey made the evening's key historical point:
 
 > "If you read Aristotle's politics, elections weren't in the section on democracy. Elections were in the section on oligarchy."
 > — Godfrey Moase
@@ -173,7 +178,7 @@ Basil Varghese, 888's patron, closed with a childhood memory from Kerala. His gr
 
 It isn't the first DOD recording Basil has closed with something an elder once told him. At [Basil's Table in 2022](2023-01-21-podcast.md) it was a Pitjantjatjara elder: "Yes, we are human, but we have to practice to become human."
 
-This was the third time Nicholas has made the case for citizens' juries at a DOD event, and this time he went a step further: stop asking and run one. With a Victorian election two months away, the open question is who pays for the first one.
+This was the third time Nicholas has made the case for citizens' juries at a DOD event, and this time he put a price on running one without asking. With a Victorian election two months away, the open question is who pays for the first one.
 
 ## From DOD's archive
 
@@ -181,11 +186,13 @@ Several of the evening's threads run back through DOD's older recordings. Quotes
 
 ### Nicholas Gruen's assembly, 2017 to now
 
-- **2017**, at [Citizens' Democracy](2017-10-21-podcast.md), he proposed a citizens' chamber alongside the Senate, "some kind of citizen oversight of the Parliament", able to force a secret ballot in the other chamber. He also set out where he parted company with the [newDemocracy Foundation](../../organisations/newdemocracy.md), then managed by Iain Walker: "the difference between me and Iain Walker is… you're the good cop, I'm the bad cop… I want to use Citizens juries as a form of political activism." newDemocracy, he said, "goes to one government after another and says, could we run a Citizens Jury for you to solve a little problem that you've got? Now, good on them. I'm not critical of them."
-- **2020**, on [DOD's podcast](2020-03-20-podcast.md), the chamber had moved outside Parliament: "we don't have to go to the political system and ask for permission to do any of this", with crowdfunding or philanthropy paying for a standing chamber run "as a form of activism. So it's not a pilot project or a demonstration project, it is a form of activism." He cited Aristotle then too, on democracy as "a system in which people take turns in governing and being governed."
+Nicholas has made the same case at DOD for nine years. What changed is how far along the plan is, not the plan.
+
+- **2017**, at [Citizens' Democracy](2017-10-21-podcast.md), he set out the destination: a citizens' chamber in Parliament alongside the Senate, "some kind of citizen oversight of the Parliament", able to force a secret ballot in the other chamber. He also set out the route: "I want to use Citizens juries as a form of political activism", rather than waiting for governments to commission them. He contrasted that with the [newDemocracy Foundation](../../organisations/newdemocracy.md), which runs juries on problems governments bring it: "good cop" to his "bad cop", he said. "Now, good on them. I'm not critical of them. I think they're great."
+- **2020**, on [DOD's podcast](2020-03-20-podcast.md), he spelled out the first step: "we don't have to go to the political system and ask for permission to do any of this". Crowdfunding or philanthropy could pay for a standing chamber run "as a form of activism. So it's not a pilot project or a demonstration project". The point was the same destination: "over time, as people saw this, they would say, hey, that's a good way for our democracy to work." He cited Aristotle then too, on democracy as "a system in which people take turns in governing and being governed."
 - **2026**: "don't ask for any permission. Just run it", now with a price attached, and the same courtesy to people working at a smaller scale ("I don't want to be critical of those people").
 
-Over nine years the proposal went from a chamber designed into Parliament, to a body set up outside it, to one with a budget. The position underneath hasn't moved.
+A chamber in Parliament is where he wants to end up; an independent assembly that shows people what one looks like is how he proposes to get there. What's new this year is the budget.
 
 ### How a jury gets its members
 
@@ -197,7 +204,7 @@ The panel's unresolved split, between parliament, the workplace and capital, is 
 
 ### Technology, then and now
 
-"Is tech gonna save us?" got a unanimous no this year. DOD's earlier guests were more hopeful. [Flux Party](../../organisations/flux-party.md)'s Ben Ballingall made the case for [blockchain-backed issue voting](2020-02-13-podcast.md) in 2020 ("you can't prove us wrong", he said of its security in the [bonus episode](2020-02-29-podcast.md)). [MiVote](../../organisations/mivote.md)'s Adam Jacoby described [app-based voting that reached 60% consensus](2021-08-07-podcast.md) in 2021. At [Basil's Table in 2022](2023-01-21-podcast.md), DOD's Alexar Pendashteh argued that tapping [collective intelligence](../../concepts/collective-intelligence.md) over the internet was "100% feasible". Nicole's objection is aimed at something narrower: handing a group's choosing to a machine. But it's a useful test for all of them: does the tool help people meet minds, or replace the meeting?
+"Is tech gonna save us?" got a unanimous no this year. DOD's earlier guests were more hopeful. [Flux Party](../../organisations/flux-party.md)'s Ben Ballingall made the case for [blockchain-backed issue voting](2020-02-13-podcast.md) in 2020 (on its security, he said in the [bonus episode](2020-02-29-podcast.md): "you can't prove us wrong. And the people that can prove us wrong agree with us"). [MiVote](../../organisations/mivote.md)'s Adam Jacoby described [app-based voting that reached 60% consensus](2021-08-07-podcast.md) in 2021. At [Basil's Table in 2022](2023-01-21-podcast.md), DOD's Alexar Pendashteh argued that tapping [collective intelligence](../../concepts/collective-intelligence.md) over the internet was "100% feasible". Nicole's objection is aimed at something narrower: handing a group's choosing to a machine. But it's a useful test for all of them: does the tool help people meet minds, or replace the meeting?
 
 ## What you can do
 

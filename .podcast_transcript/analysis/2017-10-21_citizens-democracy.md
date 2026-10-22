@@ -469,8 +469,10 @@ and the [2026-09-15 IDoD panel](2026-09-15_international-day-of-democracy.md).
 What's stable across nine years: Schumpeter's division of labour; elections
 as aristocratic/oligarchic (Aristotle); the jury as the model; the carbon-price
 repeal as the worked example; the "magic trick"/"we're part of the problem"
-line; a standing chamber that needs no permission. What moves: in 2017 the
-chamber sits *in* Parliament with designed powers (secret ballots, delaying
-power, s.57); by 2026 it's a philanthropically funded shadow assembly that
-just runs ("don't ask for any permission"), and he has stopped arguing for
-starting small.
+line; using juries "as a form of political activism" rather than waiting to
+be asked. What moves is where the plan has got to, not the plan: in 2017 he
+describes the destination, a chamber *in* Parliament with designed powers
+(secret ballots, delaying power, s.57); in 2020 and 2026 he describes the
+route, a philanthropically funded standing assembly that just runs ("don't
+ask for any permission") and shows people the model, and by 2026 it has a
+budget. Don't present this as him changing position.

@@ -32,6 +32,8 @@ location:
 
 This one's ours: on Tuesday 15 September, DOD is co-hosting a Melbourne panel with [888 Co-operative Causeway](../../organisations/888-cooperative-causeway.md) on democratic practices that go beyond voting.
 
+**Update:** the event has been held. Read [our recap](2026-09-26-international-day-of-democracy-recap.md), or listen to the full recording there or on [Spotify](https://open.spotify.com/episode/4CmIpcHOAYxMXWJb4aMSqT).
+
 <!-- more -->
 
 - International Day of Democracy is a UN-designated day, and this event is DOD's contribution to it.[^unday]
