@@ -1708,6 +1708,26 @@
     ],
     "last_modified": null
   },
+  "https://electoral-reform.org.uk/prime-minister-announces-manifesto-pledge-and-historic-national-commission-at-labour-conference/": {
+    "checked": "2026-10-23",
+    "document_sha256": "4aeeb4a5c512d5cfca48d3243600420fe985408c2a2cd8d80c4f1f9b05673894",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-10-23",
+        "context": {
+          "prefix": "ion with a manifesto commitment to change the electoral system, so that everyone\u2019s vote counts and everyone\u2019s voice is heard.\u201d He went further,",
+          "sha256": "4b34e4f039034c0c92d2155f2e25bde6a3a42908dafe13fcf40db3c65e7b1f74",
+          "suffix": ". For a prime minister to make that commitment from the conference stage is a remarkable moment. It is also an acknowledgement of reality. Labou",
+          "text": "He went further, announcing a new National Commission on Electoral Reform and inviting all the political parties to be part of its work."
+        },
+        "id": "e0c288ed239049a5ae03f65af7b3b9a918d42df1ca0887fec2dc7755438ef9a3",
+        "quote": "announcing a new National Commission on Electoral Reform and inviting all the political parties to be part of its work",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
   "https://en.idi.org.il/articles/47344": {
     "checked": "2026-08-26",
     "document_sha256": "3275b1154b0a4afc34fd93b763b33202b326b05f81da2a25279a990aac1e78ce",
@@ -2898,6 +2918,8 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/Electoral_Reform_Society": {
+    "blocked": "HTTP_429",
+    "blocked_since": "2026-10-23",
     "checked": "2026-08-26",
     "document_sha256": "2aa7a97c138a0ff4702dabf692e45a5073c4e7cc93c4d9bd150c490d092d73a6",
     "etag": null,

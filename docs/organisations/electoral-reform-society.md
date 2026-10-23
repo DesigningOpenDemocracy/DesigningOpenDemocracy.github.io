@@ -60,23 +60,34 @@ events:
   notable: true
   notable_reason: Referendum campaign/result
   kind: news
+- date: '2026-09-29'
+  title: UK Prime Minister pledges electoral system change in manifesto and announces
+    a National Commission on Electoral Reform
+  short_title: UK PM announces National Commission on Electoral Reform
+  url: https://electoral-reform.org.uk/prime-minister-announces-manifesto-pledge-and-historic-national-commission-at-labour-conference/
+  quote: announcing a new National Commission on Electoral Reform and inviting all
+    the political parties to be part of its work
+  proof_level: high
+  notable: medium
+  notable_reason: National electoral reform commission announced
+  kind: news
 activity:
   dod:
+    checked: 2026-09-21
     date: 2026-09-21
     note: Site loads fine (electoral-reform.org.uk, 200), confirmed active
     url: https://www.electoral-reform.org.uk
-    checked: 2026-09-21
   rss:
+    checked: 2026-10-23
     date: 2026-10-22
     note: 'Latest post: The Israeli Electoral System Is Not Representative Of Proportional
       Representatio'
     url: https://electoral-reform.org.uk/the-israeli-electoral-system-is-not-representative-of-proportional-representation/
-    checked: 2026-10-23
   scrape:
+    checked: 2026-10-23
     date: 2026-10-22
     note: Latest news page scraped
     url: https://www.electoral-reform.org.uk/latest-news-and-research/blog/
-    checked: 2026-10-23
 last_checked: '2026-09-21'
 ---
 
