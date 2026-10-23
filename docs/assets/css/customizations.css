@@ -3084,7 +3084,8 @@ html .md-typeset details.plain-details > :last-child {
   margin-left: 0.3em;
 }
 
-.news-empty {
+.news-empty,
+.archive-empty {
   text-align: center;
   padding: 2.5rem 1rem;
   color: var(--md-default-fg-color--light);
