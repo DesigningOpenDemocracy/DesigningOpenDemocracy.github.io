@@ -1,0 +1,9 @@
+{
+  "feed": "https://grattan.edu.au/feed",
+  "failing": {
+    "error": "HTTP_500",
+    "since": "2026-10-23",
+    "count": 1,
+    "last": "2026-10-23"
+  }
+}

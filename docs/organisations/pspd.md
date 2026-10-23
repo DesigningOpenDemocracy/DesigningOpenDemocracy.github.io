@@ -58,10 +58,10 @@ activity:
     url: https://www.peoplepower21.org
     checked: 2026-09-19
   rss:
-    date: 2026-10-16
-    note: 'Latest post: [공지] 2027 공공임대주택 예산안 분석 토론회(11/4)'
-    url: https://peoplepower21.org/stablelife/2054759
-    checked: 2026-10-16
+    date: 2026-10-23
+    note: 'Latest post: [성명] 오세훈 정치자금법 2심 무죄 선고 규탄한다'
+    url: https://peoplepower21.org/politics/2055045
+    checked: 2026-10-23
 last_checked: '2026-09-19'
 ---
 

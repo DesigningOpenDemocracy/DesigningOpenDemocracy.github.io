@@ -1,8 +1,13 @@
 {
   "feed": "https://www.ettemedia.com/feed",
-  "latest": "2026-10-15",
-  "span_days": 23,
+  "latest": "2026-10-16",
+  "span_days": 22,
   "items": [
+    {
+      "date": "2026-10-16",
+      "title": "Ettention Please: the stories you might have missed this week",
+      "url": "https://www.ettemedia.com/ettention-please-the-stories-you-might-have-missed-this-week-17-october/"
+    },
     {
       "date": "2026-10-15",
       "title": "Editors beware: your latest pitch might be coming from an AI agent",
@@ -152,6 +157,6 @@
     }
   ],
   "fetch": {
-    "etag": "W/\"133ea-Zj12kfB6Yq//2YjqhW2i2Y5LicM\""
+    "etag": "W/\"13070-S9tsJMxhd9f7CrZ6Dtd5i3UCEqE\""
   }
 }

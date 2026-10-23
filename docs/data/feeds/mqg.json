@@ -6,7 +6,10 @@
     {
       "date": "2026-09-22",
       "title": "עצומה – גרוניס הציבור מחכה לתשובות!",
-      "url": "https://petition.mqg.org.il/subs_invest/"
+      "url": "https://petition.mqg.org.il/subs_invest/",
+      "routine": [
+        "petition"
+      ]
     },
     {
       "date": "2026-09-22",
@@ -16,12 +19,18 @@
     {
       "date": "2026-09-16",
       "title": "עצומה – מוציאים אותם מלשכת ראש הממשלה!",
-      "url": "https://petition.mqg.org.il/%d7%a2%d7%a6%d7%95%d7%9e%d7%94-%d7%9e%d7%95%d7%a6%d7%99%d7%90%d7%99%d7%9d-%d7%90%d7%95%d7%aa%d7%9d-%d7%9e%d7%9c%d7%a9%d7%9b%d7%aa-%d7%a8%d7%90%d7%a9-%d7%94%d7%9e%d7%9e%d7%a9%d7%9c%d7%94/"
+      "url": "https://petition.mqg.org.il/%d7%a2%d7%a6%d7%95%d7%9e%d7%94-%d7%9e%d7%95%d7%a6%d7%99%d7%90%d7%99%d7%9d-%d7%90%d7%95%d7%aa%d7%9d-%d7%9e%d7%9c%d7%a9%d7%9b%d7%aa-%d7%a8%d7%90%d7%a9-%d7%94%d7%9e%d7%9e%d7%a9%d7%9c%d7%94/",
+      "routine": [
+        "petition"
+      ]
     },
     {
       "date": "2026-09-07",
       "title": "עצומה – מוציאים אותם מלשכת ראש הממשלה!",
-      "url": "https://petition.mqg.org.il/qatargate_pm_office/"
+      "url": "https://petition.mqg.org.il/qatargate_pm_office/",
+      "routine": [
+        "petition"
+      ]
     },
     {
       "date": "2026-08-27",
@@ -53,5 +62,8 @@
       "title": "התנועה לאיכות השלטון בתגובה לאישור חוק התקשורת: עתרנו לבג\"ץ – לא ניתן לממשלה יוצאת להשתלט על התקשורת בדרכה החוצה",
       "url": "https://mqg.org.il/%d7%94%d7%aa%d7%a0%d7%95%d7%a2%d7%94-%d7%9c%d7%90%d7%99%d7%9b%d7%95%d7%aa-%d7%94%d7%a9%d7%9c%d7%98%d7%95%d7%9f-%d7%91%d7%aa%d7%92%d7%95%d7%91%d7%94-%d7%9c%d7%90%d7%99%d7%a9%d7%95%d7%a8-%d7%97%d7%95/"
     }
-  ]
+  ],
+  "fetch": {
+    "last_modified": "Wed, 21 Oct 2026 18:06:08 GMT"
+  }
 }

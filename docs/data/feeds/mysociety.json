@@ -1,12 +1,31 @@
 {
   "feed": "https://www.mysociety.org/feed",
-  "latest": "2026-09-14",
-  "span_days": 47,
+  "latest": "2026-10-14",
+  "span_days": 58,
   "items": [
+    {
+      "date": "2026-10-14",
+      "title": "Digital Democracy Edinburgh: call for proposals and registration now open",
+      "url": "https://www.mysociety.org/2026/10/14/digital-democracy-edinburgh-call-for-proposals-and-registration-now-open/",
+      "signals": [
+        "flagship event"
+      ]
+    },
+    {
+      "date": "2026-09-28",
+      "title": "From volunteer to town councillor, with the Council Climate Action Scorecards",
+      "url": "https://www.mysociety.org/2026/09/28/from-volunteer-to-town-councillor-with-the-council-climate-action-scorecards/",
+      "signals": [
+        "election or referendum"
+      ]
+    },
     {
       "date": "2026-09-14",
       "title": "TICTeC Presents: Digital Democracy Edinburgh (11 & 12 March 2027)",
-      "url": "https://www.mysociety.org/2026/09/14/tictec-presents-digital-democracy-edinburgh-11-12-march-2027/"
+      "url": "https://www.mysociety.org/2026/09/14/tictec-presents-digital-democracy-edinburgh-11-12-march-2027/",
+      "routine": [
+        "event reminder"
+      ]
     },
     {
       "date": "2026-09-09",
@@ -53,5 +72,9 @@
       "title": "Improvements to WriteToThem",
       "url": "https://www.mysociety.org/2026/07/29/improvements-to-writetothem/"
     }
-  ]
+  ],
+  "fetch": {
+    "etag": "\"0688219df2d3831c3ddf5fde12c415f9\"",
+    "last_modified": "Wed, 14 Oct 2026 08:06:54 GMT"
+  }
 }

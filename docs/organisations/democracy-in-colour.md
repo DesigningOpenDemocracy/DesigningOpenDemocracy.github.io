@@ -61,11 +61,11 @@ activity:
     url: https://democracyincolour.org
     checked: 2026-09-27
   rss:
-    date: 2026-09-15
-    note: 'Latest post: Democracy in Colour, GetUp and anti-racist groups call for
-      unity and hope, not h'
-    url: https://democracyincolour.org/democracy-in-colour-getup-and-anti-racist-groups-call-for-unity-and-hope-not-hate/
-    checked: 2026-09-25
+    date: 2026-10-20
+    note: 'Latest post: Democracy in Colour stands with Helen Haines MP, calls for
+      unity against violenc'
+    url: https://democracyincolour.org/democracy-in-colour-stands-with-helen-haines-mp-calls-for-unity-against-violence/
+    checked: 2026-10-23
 last_checked: '2026-09-27'
 ---
 

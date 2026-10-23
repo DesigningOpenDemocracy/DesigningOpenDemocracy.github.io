@@ -1,8 +1,13 @@
 {
   "feed": "https://www.openaustraliafoundation.org.au/feed",
-  "latest": "2026-08-13",
-  "span_days": 51,
+  "latest": "2026-10-13",
+  "span_days": 400,
   "items": [
+    {
+      "date": "2026-10-13",
+      "title": "This library is running out of money. Here is how to keep it open.",
+      "url": "https://oaf.org.au/2026/10/13/this-library-is-running-out-of-money-here-is-how-to-keep-it-open/"
+    },
     {
       "date": "2026-08-13",
       "title": "This is what our library is for",
@@ -11,7 +16,10 @@
     {
       "date": "2026-08-10",
       "title": "Why does democracy need a library?",
-      "url": "https://oaf.org.au/2026/08/10/why-does-democracy-need-a-library/"
+      "url": "https://oaf.org.au/2026/08/10/why-does-democracy-need-a-library/",
+      "mentions": [
+        "They Vote For You"
+      ]
     },
     {
       "date": "2026-07-30",
@@ -26,7 +34,14 @@
     {
       "date": "2026-06-23",
       "title": "Seven in ten decisions in Parliament happen without a recorded vote",
-      "url": "https://oaf.org.au/2026/06/24/seven-in-ten-decisions-in-parliament-happen-without-a-recorded-vote/"
+      "url": "https://oaf.org.au/2026/06/24/seven-in-ten-decisions-in-parliament-happen-without-a-recorded-vote/",
+      "mentions": [
+        "They Vote For You"
+      ]
     }
-  ]
+  ],
+  "fetch": {
+    "etag": "W/\"3c58fbc4e512e11298d7c68f653c89fc\"",
+    "last_modified": "Thu, 15 Oct 2026 06:54:14 GMT"
+  }
 }

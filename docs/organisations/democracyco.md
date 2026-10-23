@@ -62,7 +62,7 @@ activity:
     url: https://www.democracyco.com.au
     checked: 2026-09-28
   rss:
-    checked: 2026-09-25
+    checked: 2026-10-23
     date: 2026-05-02
     note: 'Latest post: Housing Amplifcation'
     url: https://www.democracyco.com.au/housing-amplifcation/?utm_source=rss&utm_medium=rss&utm_campaign=housing-amplifcation

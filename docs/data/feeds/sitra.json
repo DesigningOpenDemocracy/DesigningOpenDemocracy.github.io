@@ -1,8 +1,33 @@
 {
   "feed": "https://www.sitra.fi/feed",
-  "latest": "2026-10-15",
-  "span_days": 15,
+  "latest": "2026-10-21",
+  "span_days": 14,
   "items": [
+    {
+      "date": "2026-10-21",
+      "title": "Viimeiset mustikat",
+      "url": "https://www.sitra.fi/blogit/viimeiset-mustikat/"
+    },
+    {
+      "date": "2026-10-21",
+      "title": "Kysymyksiä ja vastauksia rahoitushausta: Tukea kunnille vihreiden investointien vuorovaikutukseen",
+      "url": "https://www.sitra.fi/artikkelit/kysymyksia-ja-vastauksia-rahoitushausta-tukea-kunnille-vihreiden-investointien-vuorovaikutukseen/"
+    },
+    {
+      "date": "2026-10-19",
+      "title": "Vihreä siirtymä tienhaarassa",
+      "url": "https://www.sitra.fi/artikkelit/vihrea-siirtyma-tienhaarassa/"
+    },
+    {
+      "date": "2026-10-19",
+      "title": "Sitran lausunto hallituksen talousarviosta seurannan ja päätöksenteon työkaluna",
+      "url": "https://www.sitra.fi/artikkelit/sitran-lausunto-hallituksen-talousarviosta-seurannan-ja-paatoksenteon-tyokaluna/"
+    },
+    {
+      "date": "2026-10-19",
+      "title": "Kysely: Suomalaiset näkevät vihreässä siirtymässä kasvumahdollisuuden – Suomelta kaivataan selkeämpää suuntaa",
+      "url": "https://www.sitra.fi/uutiset/kysely-suomalaiset-nakevat-vihreassa-siirtymassa-kasvumahdollisuuden-suomelta-kaivataan-selkeampaa-suuntaa/"
+    },
     {
       "date": "2026-10-15",
       "title": "Ennustemarkkinat – tulevaisuustiedon lähde vai vedonlyöntiä yhteiskunnallisista aiheista?",
@@ -120,7 +145,7 @@
     }
   ],
   "fetch": {
-    "etag": "\"c797963f3b6af95af170e0aae57a47f9\"",
-    "last_modified": "Fri, 16 Oct 2026 01:01:47 GMT"
+    "etag": "\"ec80fd55ff9cf4208dcc1f77c553a1ed\"",
+    "last_modified": "Fri, 23 Oct 2026 08:20:59 GMT"
   }
 }

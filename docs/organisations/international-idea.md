@@ -52,11 +52,10 @@ activity:
     url: https://www.idea.int
     checked: 2026-09-20
   rss:
-    date: 2026-09-24
-    note: 'Latest post: The Role of Youth in Climate Litigation in the Republic of
-      Korea'
-    url: https://www.idea.int/publications/catalogue/html/role-youth-climate-litigation-republic-korea
-    checked: 2026-09-25
+    date: 2026-10-22
+    note: 'Latest post: ans_9347_1915762581'
+    url: https://www.idea.int/node/162029
+    checked: 2026-10-23
 last_checked: '2026-09-20'
 ---
 

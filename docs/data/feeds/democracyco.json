@@ -1,11 +1,16 @@
 {
   "feed": "https://www.democracyco.com.au/feed/",
   "latest": "2026-05-02",
+  "span_days": 1015,
   "items": [
     {
       "date": "2026-05-02",
       "title": "Housing Amplifcation",
       "url": "https://www.democracyco.com.au/housing-amplifcation/"
     }
-  ]
+  ],
+  "fetch": {
+    "etag": "W/\"50f15719a0be4aba3a1721e36f2aaf13\"",
+    "last_modified": "Fri, 18 Sep 2026 22:42:06 GMT"
+  }
 }

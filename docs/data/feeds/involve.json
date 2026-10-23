@@ -1,0 +1,55 @@
+{
+  "feed": "https://www.involve.org.uk/rss.xml",
+  "latest": "2026-10-07",
+  "span_days": 308,
+  "items": [
+    {
+      "date": "2026-10-07",
+      "title": "UK public invited to send ideas to improve daily life",
+      "url": "https://www.involve.org.uk/news-opinion/news/uk-public-invited-send-ideas-improve-daily-life",
+      "signals": [
+        "launch"
+      ]
+    },
+    {
+      "date": "2026-10-07",
+      "title": "Primer: How can the Government start the move from consultation to participation?",
+      "url": "https://www.involve.org.uk/news-opinion/opinion/primer-how-can-government-start-move-consultation-participation"
+    },
+    {
+      "date": "2026-10-06",
+      "title": "What if people came together to decide how money is distributed for their National Park?",
+      "url": "https://www.involve.org.uk/our-work/our-projects/what-if-people-came-together-decide-how-money-distributed-their-national-park"
+    },
+    {
+      "date": "2026-08-07",
+      "title": "What can we all do as a community to stop Violence Against Women and Girls before it starts and ensure their ongoing safety?",
+      "url": "https://www.involve.org.uk/our-work/our-projects/what-can-we-all-do-community-stop-violence-against-women-and-girls-it-starts"
+    },
+    {
+      "date": "2026-07-20",
+      "title": "A Three-Point Plan for our new PM to deliver his power-sharing agenda",
+      "url": "https://www.involve.org.uk/news-opinion/opinion/three-point-plan-our-new-pm-deliver-his-power-sharing-agenda",
+      "mentions": [
+        "Open Government Partnership"
+      ]
+    },
+    {
+      "date": "2026-07-15",
+      "title": "Stop Talking About Climate. Start Talking About People’s Lives: How Place-Based Participation Delivers Better Decarbonisation",
+      "url": "https://www.involve.org.uk/news-opinion/opinion/stop-talking-about-climate-start-talking-about-peoples-lives-how-place-based"
+    },
+    {
+      "date": "2026-05-12",
+      "title": "After the May elections: governing on thin mandates",
+      "url": "https://www.involve.org.uk/news-opinion/opinion/after-may-elections-governing-thin-mandates",
+      "routine": [
+        "event reminder"
+      ]
+    }
+  ],
+  "fetch": {
+    "etag": "W/\"1792743661\"",
+    "last_modified": "Fri, 23 Oct 2026 08:21:01 GMT"
+  }
+}

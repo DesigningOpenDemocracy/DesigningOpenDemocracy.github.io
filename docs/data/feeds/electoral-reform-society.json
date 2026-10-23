@@ -1,8 +1,69 @@
 {
   "feed": "https://www.electoral-reform.org.uk/feed/",
-  "latest": "2026-09-10",
-  "span_days": 52,
+  "latest": "2026-10-22",
+  "span_days": 42,
   "items": [
+    {
+      "date": "2026-10-22",
+      "title": "The Israeli Electoral System Is Not Representative Of Proportional Representation",
+      "url": "https://electoral-reform.org.uk/the-israeli-electoral-system-is-not-representative-of-proportional-representation/",
+      "mentions": [
+        "Israel Democracy Institute"
+      ]
+    },
+    {
+      "date": "2026-10-15",
+      "title": "Former Conservative Mayor Andy Street urges party to embrace electoral reform",
+      "url": "https://electoral-reform.org.uk/former-conservative-mayor-andy-street-urges-party-to-embrace-electoral-reform/",
+      "signals": [
+        "election or referendum",
+        "flagship event"
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "title": "Quarter of a century of fair elections with proportional representation in Britain",
+      "url": "https://electoral-reform.org.uk/quarter-of-a-century-of-fair-elections-with-proportional-representation-in-britain/",
+      "signals": [
+        "death",
+        "publication"
+      ]
+    },
+    {
+      "date": "2026-10-08",
+      "title": "The Scottish Government’s reforms offers a promising path to stronger local democracy",
+      "url": "https://electoral-reform.org.uk/the-scottish-governments-reforms-offers-a-promising-path-to-stronger-local-democracy/"
+    },
+    {
+      "date": "2026-10-07",
+      "title": "What is a National Commission on Electoral Reform?",
+      "url": "https://electoral-reform.org.uk/what-is-a-national-commission-on-electoral-reform/",
+      "signals": [
+        "election or referendum"
+      ]
+    },
+    {
+      "date": "2026-09-30",
+      "title": "Looking back on the last 20 months of UK political polls",
+      "url": "https://electoral-reform.org.uk/looking-back-on-the-last-20-months-of-uk-political-polls/",
+      "signals": [
+        "election or referendum",
+        "flagship event"
+      ]
+    },
+    {
+      "date": "2026-09-29",
+      "title": "Prime Minister announces manifesto pledge and historic National Commission at Labour Conference",
+      "url": "https://electoral-reform.org.uk/prime-minister-announces-manifesto-pledge-and-historic-national-commission-at-labour-conference/",
+      "signals": [
+        "flagship event"
+      ]
+    },
+    {
+      "date": "2026-09-28",
+      "title": "In Mecklenburg-Vorpommern, First Past the Post would have turned a slight lead into a huge majority for the AFD",
+      "url": "https://electoral-reform.org.uk/in-mecklenburg-vorpommern-first-past-the-post-would-have-turned-a-slight-lead-into-a-huge-majority-for-the-afd/"
+    },
     {
       "date": "2026-09-10",
       "title": "First Past the Post would have given the AfD nearly every seat in Saxony-Anhalt",
@@ -11,7 +72,10 @@
     {
       "date": "2026-09-10",
       "title": "August 2026 in the polls: The latest UK monthly political polling averages",
-      "url": "https://electoral-reform.org.uk/august-2026-in-the-polls-the-latest-uk-monthly-political-polling-averages/"
+      "url": "https://electoral-reform.org.uk/august-2026-in-the-polls-the-latest-uk-monthly-political-polling-averages/",
+      "routine": [
+        "newsletter or roundup"
+      ]
     },
     {
       "date": "2026-08-12",
@@ -53,5 +117,9 @@
       "title": "In Andy Burnham we have the first prime minister who openly backs proportional representation",
       "url": "https://electoral-reform.org.uk/in-andy-burnham-we-have-the-first-prime-minister-who-openly-backs-proportional-representation/"
     }
-  ]
+  ],
+  "fetch": {
+    "etag": "W/\"ab9eb5ff4893d595b3725ece895ab38e\"",
+    "last_modified": "Thu, 22 Oct 2026 13:29:48 GMT"
+  }
 }

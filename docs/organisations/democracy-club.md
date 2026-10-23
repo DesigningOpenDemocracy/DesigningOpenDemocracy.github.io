@@ -54,15 +54,15 @@ activity:
     url: https://democracyclub.org.uk
     checked: 2026-09-21
   rss:
-    date: 2026-09-21
-    note: 'Latest post: Why are UK elections so different each year?'
-    url: https://democracyclub.org.uk/blog/2026/09/21/why-are-uk-elections-so-different-each-year/
-    checked: 2026-09-25
+    date: 2026-10-16
+    note: 'Latest post: English council boundary reviews on WhoCanIVoteFor'
+    url: https://democracyclub.org.uk/blog/2026/10/15/english-council-boundary-reviews-on-whocanivotefor/
+    checked: 2026-10-23
   scrape:
-    date: 2026-10-06
+    date: 2026-10-19
     note: Latest news page scraped
     url: https://democracyclub.org.uk/blog/
-    checked: 2026-10-16
+    checked: 2026-10-23
 last_checked: '2026-09-21'
 ---
 

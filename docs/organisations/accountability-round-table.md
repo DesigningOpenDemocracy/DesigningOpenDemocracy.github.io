@@ -51,10 +51,10 @@ activity:
     url: http://accountabilityrt.org
     checked: 2026-09-21
   rss:
-    checked: 2026-09-25
-    date: 2026-07-28
-    note: 'Latest post: Enhancing government accountability'
-    url: https://www.accountabilityrt.org/enhancing-government-accountability/
+    date: 2026-10-23
+    note: 'Latest post: Newsletter: Integrity is required before the ballots are cast.'
+    url: https://www.accountabilityrt.org/newsletter-integrity-is-required-before-the-ballots-are-cast/
+    checked: 2026-10-23
 last_checked: '2026-09-21'
 ---
 

@@ -1,16 +1,25 @@
 {
   "feed": "https://www.eisa.org/feed",
   "latest": "2026-08-26",
+  "span_days": 343,
   "items": [
     {
       "date": "2026-08-26",
       "title": "From Coalition Chaos to Democratic Stability: Reforming South Africa’s Local Government",
-      "url": "https://www.eisa.org/from-coalition-chaos-to-democratic-stability-reforming-south-africas-local-government/"
+      "url": "https://www.eisa.org/from-coalition-chaos-to-democratic-stability-reforming-south-africas-local-government/",
+      "signals": [
+        "election or referendum",
+        "flagship event"
+      ]
     },
     {
       "date": "2026-06-23",
       "title": "The Complaint She Never Files",
       "url": "https://www.eisa.org/the-complaint-she-never-files/"
     }
-  ]
+  ],
+  "fetch": {
+    "etag": "\"a02e1da0dab1bfa47f2259f75a497389-gzip\"",
+    "last_modified": "Tue, 22 Sep 2026 10:03:30 GMT"
+  }
 }

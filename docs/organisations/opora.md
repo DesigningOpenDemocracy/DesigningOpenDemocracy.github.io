@@ -59,10 +59,10 @@ activity:
     checked: 2026-10-02
     note: No feed found
   scrape:
-    date: 2026-09-03
+    date: 2026-10-15
     note: Latest news page scraped
     url: https://oporaua.org/en/announce
-    checked: 2026-10-16
+    checked: 2026-10-23
 last_checked: '2026-09-28'
 ---
 

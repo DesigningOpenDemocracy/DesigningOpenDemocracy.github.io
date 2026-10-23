@@ -1,8 +1,58 @@
 {
   "feed": "https://kongra-star.org/?feed=rss2",
-  "latest": "2026-10-15",
-  "span_days": 5,
+  "latest": "2026-10-22",
+  "span_days": 6,
   "items": [
+    {
+      "date": "2026-10-22",
+      "title": "Saziya Xizmetên Civakî û Pêşxistina Jinan “Na ji fişeka bêserûber re” amadekariya kampanya",
+      "url": "https://kongra-star.org/?p=34006"
+    },
+    {
+      "date": "2026-10-22",
+      "title": "Nazdar Derwê:ji bo bi serxistina pêvajoya aşitiyê, divê herkes bi baldarî tevbigere",
+      "url": "https://kongra-star.org/?p=34009"
+    },
+    {
+      "date": "2026-10-21",
+      "title": "Li bajarê Kobanê 69 şehîdên HPG Û YJA STARê hatin bi bîranîn",
+      "url": "https://kongra-star.org/?p=34004"
+    },
+    {
+      "date": "2026-10-20",
+      "title": "Kongra Star 34emîn salvegera şehadeta fermandare Bêrîtan bi bîr anî",
+      "url": "https://kongra-star.org/?p=33975"
+    },
+    {
+      "date": "2026-10-19",
+      "title": "Kongra Star daxwaza avakirina komîteyek serbixwe ya ji bo Werîşe Muradî kir",
+      "url": "https://kongra-star.org/?p=33971"
+    },
+    {
+      "date": "2026-10-18",
+      "title": "Kongra Star li bajarê Amûdê destdirêjî li goristana Şehîdan hatiye kirin şermezar kir.",
+      "url": "https://kongra-star.org/?p=33930"
+    },
+    {
+      "date": "2026-10-18",
+      "title": "Jinên bajarê Kobanê hunera xwe di çalakiya Lêvegra Çanda Dayikê pêşkêş kirin",
+      "url": "https://kongra-star.org/?p=33937"
+    },
+    {
+      "date": "2026-10-18",
+      "title": "Hişmendî û Ziman Divê Bi Hev Re Biguherin",
+      "url": "https://kongra-star.org/?p=33962"
+    },
+    {
+      "date": "2026-10-16",
+      "title": "Rêber Apo: Bila ev konferans zanîna jiyana azad mezin bike",
+      "url": "https://kongra-star.org/?p=33917"
+    },
+    {
+      "date": "2026-10-16",
+      "title": "Kongra Star di komcivînekê de nirxandinên Rêber Abdullah Ocalan gotûbêjkirin",
+      "url": "https://kongra-star.org/?p=33921"
+    },
     {
       "date": "2026-10-15",
       "title": "Rêber Apo: Hûn jî dikarin gelek tiştan bikin",
@@ -130,7 +180,7 @@
     }
   ],
   "fetch": {
-    "etag": "W/\"2f6c3de18a2688d7db183139d3670bb9\"",
-    "last_modified": "Thu, 15 Oct 2026 12:46:40 GMT"
+    "etag": "W/\"13b4e8b3079edf01cf4f884bb8fc2d65\"",
+    "last_modified": "Thu, 22 Oct 2026 09:37:27 GMT"
   }
 }

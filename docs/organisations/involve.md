@@ -72,10 +72,10 @@ activity:
     url: https://www.involve.org.uk
     checked: 2026-09-19
   rss:
-    date: 2026-08-13
-    note: 'Latest post: We''re hiring! Digital Communication Officer'
-    url: https://www.involve.org.uk/news-opinion/jobs/were-hiring-digital-communication-officer
-    checked: 2026-09-25
+    date: 2026-10-07
+    note: 'Latest post: UK public invited to send ideas to improve daily life'
+    url: https://www.involve.org.uk/news-opinion/news/uk-public-invited-send-ideas-improve-daily-life
+    checked: 2026-10-23
 last_checked: '2026-09-19'
 ---
 

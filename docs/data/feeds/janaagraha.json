@@ -1,11 +1,19 @@
 {
   "feed": "https://www.janaagraha.org/feed",
   "latest": "2026-05-14",
+  "span_days": 646,
   "items": [
     {
       "date": "2026-05-14",
       "title": "Too Many Cooks in the Urban Services Kitchen",
-      "url": "https://www.janaagraha.org/too-many-cooks-in-the-urban-services-kitchen/"
+      "url": "https://www.janaagraha.org/too-many-cooks-in-the-urban-services-kitchen/",
+      "signals": [
+        "publication"
+      ]
     }
-  ]
+  ],
+  "fetch": {
+    "etag": "\"7b8c8273f35cea27ef82024bc22e4bc0-gzip\"",
+    "last_modified": "Thu, 22 Oct 2026 07:17:07 GMT"
+  }
 }

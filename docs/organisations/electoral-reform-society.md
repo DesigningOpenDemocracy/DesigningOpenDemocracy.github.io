@@ -67,16 +67,16 @@ activity:
     url: https://www.electoral-reform.org.uk
     checked: 2026-09-21
   rss:
-    date: 2026-09-10
-    note: 'Latest post: First Past the Post would have given the AfD nearly every
-      seat in Saxony-Anhalt'
-    url: https://electoral-reform.org.uk/first-past-the-post-would-have-given-the-afd-nearly-every-seat-in-saxony-anhalt/
-    checked: 2026-09-25
+    date: 2026-10-22
+    note: 'Latest post: The Israeli Electoral System Is Not Representative Of Proportional
+      Representatio'
+    url: https://electoral-reform.org.uk/the-israeli-electoral-system-is-not-representative-of-proportional-representation/
+    checked: 2026-10-23
   scrape:
-    date: 2026-10-15
+    date: 2026-10-22
     note: Latest news page scraped
     url: https://www.electoral-reform.org.uk/latest-news-and-research/blog/
-    checked: 2026-10-16
+    checked: 2026-10-23
 last_checked: '2026-09-21'
 ---
 

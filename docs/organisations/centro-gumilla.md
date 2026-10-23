@@ -50,11 +50,11 @@ activity:
     url: https://gumilla.org
     checked: 2026-09-26
   rss:
-    date: 2026-08-21
-    note: 'Latest post: 80 educadores del Zulia fortalecieron sus competencias en
-      participación ciudadan'
-    url: https://gumilla.org/80-educadores-del-zulia-se-forman-en-participacion-ciudadana/
-    checked: 2026-09-25
+    date: 2026-10-17
+    note: 'Latest post: Mariela Ramírez, una vida dedicada a construir puentes para
+      el encuentro en Vene'
+    url: https://gumilla.org/mariela-ramirez-una-vida-dedicada-a-construir-puentes/
+    checked: 2026-10-23
 last_checked: '2026-09-26'
 ---
 

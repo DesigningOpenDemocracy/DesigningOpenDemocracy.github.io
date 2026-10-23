@@ -61,10 +61,11 @@ activity:
     url: https://oaf.org.au
     checked: 2026-09-26
   rss:
-    date: 2026-08-13
-    note: 'Latest post: This is what our library is for'
-    url: https://oaf.org.au/2026/08/13/this-is-what-our-library-is-for/
-    checked: 2026-09-25
+    date: 2026-10-13
+    note: 'Latest post: This library is running out of money. Here is how to keep
+      it open.'
+    url: https://oaf.org.au/2026/10/13/this-library-is-running-out-of-money-here-is-how-to-keep-it-open/
+    checked: 2026-10-23
 last_checked: '2026-09-26'
 ---
 

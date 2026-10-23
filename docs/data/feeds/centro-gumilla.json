@@ -1,8 +1,38 @@
 {
   "feed": "https://gumilla.org/feed",
-  "latest": "2026-08-21",
-  "span_days": 98,
+  "latest": "2026-10-17",
+  "span_days": 110,
   "items": [
+    {
+      "date": "2026-10-17",
+      "title": "Mariela Ramírez, una vida dedicada a construir puentes para el encuentro en Venezuela",
+      "url": "https://gumilla.org/mariela-ramirez-una-vida-dedicada-a-construir-puentes/"
+    },
+    {
+      "date": "2026-10-08",
+      "title": "Una guía para orar y reflexionar por la justicia climática",
+      "url": "https://gumilla.org/guia-para-orar-y-reflexionar-por-la-justicia-climatica/"
+    },
+    {
+      "date": "2026-10-08",
+      "title": "Campaña Jesuitas por la Justicia Climática – Declaración y Documento de Políticas",
+      "url": "https://gumilla.org/campana-jesuitas-por-la-justicia-climatica-declaracion-y-documento-de-politicas/"
+    },
+    {
+      "date": "2026-09-28",
+      "title": "Expo Feria de Emprendimiento Femenino en el Centro Gumilla Lara",
+      "url": "https://gumilla.org/feria-emprendimiento-femenino-gumilla-lara/"
+    },
+    {
+      "date": "2026-09-28",
+      "title": "Centro Gumilla realizó taller de primeros auxilios psicológicos en Maturín",
+      "url": "https://gumilla.org/centro-gumilla-realizo-taller-de-primeros-auxilios-psicologicos-en-maturin/"
+    },
+    {
+      "date": "2026-09-25",
+      "title": "Formación y acompañamiento para 160 líderes de Zulia, Mérida, Táchira y Apure",
+      "url": "https://gumilla.org/formacion-y-acompanamiento-para-160-lideres/"
+    },
     {
       "date": "2026-08-21",
       "title": "80 educadores del Zulia fortalecieron sus competencias en participación ciudadana",
@@ -11,7 +41,10 @@
     {
       "date": "2026-08-04",
       "title": "Centro Gumilla, FUNDACEDEAP y Excuela consolidan alianza estratégica para formar a 200 mujeres emprendedoras",
-      "url": "https://gumilla.org/alianza-gumilla-formacion-mujeres-emprendedoras/"
+      "url": "https://gumilla.org/alianza-gumilla-formacion-mujeres-emprendedoras/",
+      "signals": [
+        "launch"
+      ]
     },
     {
       "date": "2026-08-03",

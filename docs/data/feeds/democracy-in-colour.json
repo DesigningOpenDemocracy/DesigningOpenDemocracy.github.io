@@ -1,17 +1,28 @@
 {
   "feed": "https://democracyincolour.org/feed",
-  "latest": "2026-09-15",
-  "span_days": 153,
+  "latest": "2026-10-20",
+  "span_days": 225,
   "items": [
+    {
+      "date": "2026-10-20",
+      "title": "Democracy in Colour stands with Helen Haines MP, calls for unity against violence",
+      "url": "https://democracyincolour.org/democracy-in-colour-stands-with-helen-haines-mp-calls-for-unity-against-violence/"
+    },
     {
       "date": "2026-09-15",
       "title": "Democracy in Colour, GetUp and anti-racist groups call for unity and hope, not hate",
-      "url": "https://democracyincolour.org/democracy-in-colour-getup-and-anti-racist-groups-call-for-unity-and-hope-not-hate/"
+      "url": "https://democracyincolour.org/democracy-in-colour-getup-and-anti-racist-groups-call-for-unity-and-hope-not-hate/",
+      "signals": [
+        "launch"
+      ]
     },
     {
       "date": "2026-07-29",
       "title": "Democracy in Colour welcomes court ruling upholding racial discrimination finding against Pauline Hanson",
-      "url": "https://democracyincolour.org/democracy-in-colour-welcomes-court-ruling-upholding-racial-discrimination-finding-against-pauline-hanson/"
+      "url": "https://democracyincolour.org/democracy-in-colour-welcomes-court-ruling-upholding-racial-discrimination-finding-against-pauline-hanson/",
+      "signals": [
+        "legal or legislative"
+      ]
     },
     {
       "date": "2026-07-22",
@@ -21,7 +32,10 @@
     {
       "date": "2026-07-20",
       "title": "Half-measures will not keep us safe: DeCo responds to the federal government’s anti-Muslim report package",
-      "url": "https://democracyincolour.org/half-measures-will-not-keep-us-safe-deco-responds-to-the-federal-governments-anti-muslim-report-package/"
+      "url": "https://democracyincolour.org/half-measures-will-not-keep-us-safe-deco-responds-to-the-federal-governments-anti-muslim-report-package/",
+      "signals": [
+        "publication"
+      ]
     },
     {
       "date": "2026-06-22",
@@ -32,11 +46,10 @@
       "date": "2026-04-30",
       "title": "Government must act immediately to release all Australian citizens abducted by Israel",
       "url": "https://democracyincolour.org/government-must-act-immediately-to-release-all-australian-citizens-abducted-by-israel/"
-    },
-    {
-      "date": "2026-04-15",
-      "title": "Coalition immigration plan is an attack on multicultural Australia",
-      "url": "https://democracyincolour.org/coalition-immigration-plan-is-an-attack-on-multicultural-australia/"
     }
-  ]
+  ],
+  "fetch": {
+    "etag": "\"7aa6e266df679498294404c4b162dffb\"",
+    "last_modified": "Tue, 20 Oct 2026 03:15:04 GMT"
+  }
 }

@@ -1,8 +1,44 @@
 {
   "feed": "https://www.idea.int/rss.xml",
-  "latest": "2026-09-24",
-  "span_days": 164,
+  "latest": "2026-10-22",
+  "span_days": 520,
   "items": [
+    {
+      "date": "2026-10-22",
+      "title": "ans_9379_647345682",
+      "url": "https://www.idea.int/node/162027"
+    },
+    {
+      "date": "2026-10-22",
+      "title": "ans_9378_1587438320",
+      "url": "https://www.idea.int/node/162026",
+      "signals": [
+        "publication"
+      ]
+    },
+    {
+      "date": "2026-10-22",
+      "title": "ans_9347_1915762581",
+      "url": "https://www.idea.int/node/162029"
+    },
+    {
+      "date": "2026-10-22",
+      "title": "ans_9346_221967227",
+      "url": "https://www.idea.int/node/162028"
+    },
+    {
+      "date": "2026-10-22",
+      "title": "Review of the 2025 Year of Elections: Inclusivity, Transparency and Trust",
+      "url": "https://www.idea.int/publications/catalogue/html/review-2025-year-elections-inclusivity-transparency-and-trust",
+      "mentions": [
+        "V-Dem Institute"
+      ]
+    },
+    {
+      "date": "2026-10-21",
+      "title": "ans_9377_697929261",
+      "url": "https://www.idea.int/node/162024"
+    },
     {
       "date": "2026-09-24",
       "title": "The Role of Youth in Climate Litigation in the Republic of Korea",
@@ -36,17 +72,10 @@
     {
       "date": "2026-04-28",
       "title": "Do-Hyun Kim et al v South Korea (Constitutional Court, 2024)",
-      "url": "https://www.idea.int/climate-rulings-implementation-tracker/do-hyun-kim-et-al-v-south-korea-constitutional-court-2024"
-    },
-    {
-      "date": "2026-04-24",
-      "title": "Neubauer et al. v Germany (Federal Constitutional Court, 2021)",
-      "url": "https://www.idea.int/climate-rulings-implementation-tracker/neubauer-et-al-v-germany-federal-constitutional-court-2021"
-    },
-    {
-      "date": "2026-04-13",
-      "title": "Urgenda Foundation v State of the Netherlands (Supreme Court, 2019)",
-      "url": "https://www.idea.int/climate-rulings-implementation-tracker/urgenda-foundation-v-state-netherlands-supreme-court-2019"
+      "url": "https://www.idea.int/climate-rulings-implementation-tracker/do-hyun-kim-et-al-v-south-korea-constitutional-court-2024",
+      "signals": [
+        "legal or legislative"
+      ]
     }
   ]
 }

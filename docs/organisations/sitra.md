@@ -57,11 +57,11 @@ activity:
     url: https://www.sitra.fi/en/
     checked: 2026-09-19
   rss:
-    date: 2026-10-15
-    note: 'Latest post: Ennustemarkkinat – tulevaisuustiedon lähde vai vedonlyöntiä
-      yhteiskunnallisista '
-    url: https://www.sitra.fi/artikkelit/ennustemarkkinat-tulevaisuustiedon-lahde-vai-vedonlyontia-yhteiskunnallisista-aiheista/
-    checked: 2026-10-16
+    date: 2026-10-21
+    note: 'Latest post: Kysymyksiä ja vastauksia rahoitushausta: Tukea kunnille vihreiden
+      investointien '
+    url: https://www.sitra.fi/artikkelit/kysymyksia-ja-vastauksia-rahoitushausta-tukea-kunnille-vihreiden-investointien-vuorovaikutukseen/
+    checked: 2026-10-23
 last_checked: '2026-09-19'
 ---
 

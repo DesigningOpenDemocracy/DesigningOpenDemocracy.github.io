@@ -1,8 +1,13 @@
 {
   "feed": "https://democracyclub.org.uk/blog/feed/",
-  "latest": "2026-09-21",
-  "span_days": 136,
+  "latest": "2026-10-15",
+  "span_days": 134,
   "items": [
+    {
+      "date": "2026-10-15",
+      "title": "English council boundary reviews on WhoCanIVoteFor",
+      "url": "https://democracyclub.org.uk/blog/2026/10/15/english-council-boundary-reviews-on-whocanivotefor/"
+    },
     {
       "date": "2026-09-21",
       "title": "Why are UK elections so different each year?",
@@ -11,12 +16,18 @@
     {
       "date": "2026-07-31",
       "title": "Mapping Northern Ireland's proposed polling places",
-      "url": "https://democracyclub.org.uk/blog/2026/07/31/mapping-northern-irelands-proposed-polling-places/"
+      "url": "https://democracyclub.org.uk/blog/2026/07/31/mapping-northern-irelands-proposed-polling-places/",
+      "signals": [
+        "launch"
+      ]
     },
     {
       "date": "2026-06-23",
       "title": "Case study: Vote.Wales and polling place accessibility",
-      "url": "https://democracyclub.org.uk/blog/2026/06/23/case-study-votewales-and-polling-place-accessibility/"
+      "url": "https://democracyclub.org.uk/blog/2026/06/23/case-study-votewales-and-polling-place-accessibility/",
+      "signals": [
+        "publication"
+      ]
     },
     {
       "date": "2026-06-03",
@@ -30,6 +41,6 @@
     }
   ],
   "fetch": {
-    "last_modified": "Mon, 21 Sep 2026 15:19:38 GMT"
+    "last_modified": "Fri, 16 Oct 2026 09:34:43 GMT"
   }
 }

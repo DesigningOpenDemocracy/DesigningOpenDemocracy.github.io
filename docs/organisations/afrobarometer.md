@@ -66,7 +66,7 @@ activity:
     note: 'Latest post: Saúde, água e desemprego são as principais prioridades  na
       agenda política dos M'
     url: https://www.afrobarometer.org/articles/saude-agua-e-desemprego-sao-as-principais-prioridades-na-agenda-politica-dos-mocambicanos-comuns/
-    checked: 2026-10-16
+    checked: 2026-10-23
 last_checked: '2026-09-19'
 ---
 

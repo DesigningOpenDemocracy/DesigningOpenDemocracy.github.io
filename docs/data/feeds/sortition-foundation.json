@@ -1,11 +1,41 @@
 {
   "feed": "https://www.sortitionfoundation.org/updates.rss",
-  "latest": "2026-09-17",
+  "latest": "2026-10-18",
+  "span_days": 620,
   "items": [
+    {
+      "date": "2026-10-18",
+      "title": "A Just World Requires Just Us: a review of Delia Smith’s new book, “Us”",
+      "url": "http://www.sortitionfoundation.org/review_delia_smith_new_book_us",
+      "signals": [
+        "deliberative process",
+        "publication"
+      ]
+    },
+    {
+      "date": "2026-09-30",
+      "title": "Burnham wants electoral reform? Let a citizens’ assembly decide",
+      "url": "http://www.sortitionfoundation.org/burnham_reform_democracy_greater_manchester",
+      "signals": [
+        "deliberative process",
+        "election or referendum"
+      ]
+    },
+    {
+      "date": "2026-09-30",
+      "title": "A Democratic Lottery for Europe’s Democratic Resilience",
+      "url": "http://www.sortitionfoundation.org/democratic_lottery_for_europes_democratic_resilience"
+    },
     {
       "date": "2026-09-17",
       "title": "We're looking for a Director of International Democratic Lottery Services",
-      "url": "http://www.sortitionfoundation.org/director-international-democratic-lottery-services"
+      "url": "http://www.sortitionfoundation.org/director-international-democratic-lottery-services",
+      "signals": [
+        "deliberative process"
+      ],
+      "routine": [
+        "job ad"
+      ]
     },
     {
       "date": "2026-09-16",
@@ -15,12 +45,24 @@
     {
       "date": "2026-06-18",
       "title": "We're looking for a new Independent Director",
-      "url": "http://www.sortitionfoundation.org/new_independent_director_2026"
+      "url": "http://www.sortitionfoundation.org/new_independent_director_2026",
+      "signals": [
+        "deliberative process"
+      ],
+      "routine": [
+        "job ad"
+      ],
+      "mentions": [
+        "Electoral Reform Society"
+      ]
     },
     {
       "date": "2026-05-06",
       "title": "Nearly 60% of Mancunians want a citizens' assembly to bring decision making closer to people",
       "url": "http://www.sortitionfoundation.org/gm_polling_may_2026"
     }
-  ]
+  ],
+  "fetch": {
+    "etag": "W/\"6c6c13abb1759ffb3a3c4e8d9022ddd1\""
+  }
 }

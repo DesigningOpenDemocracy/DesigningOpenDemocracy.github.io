@@ -56,11 +56,10 @@ activity:
     url: https://www.ettemedia.com/
     checked: 2026-09-16
   rss:
-    date: 2026-10-15
-    note: 'Latest post: Editors beware: your latest pitch might be coming from an
-      AI agent'
-    url: https://www.ettemedia.com/editors-beware-your-latest-pitch-might-be-coming-from-an-ai-agent/
-    checked: 2026-10-16
+    date: 2026-10-16
+    note: 'Latest post: Ettention Please: the stories you might have missed this week'
+    url: https://www.ettemedia.com/ettention-please-the-stories-you-might-have-missed-this-week-17-october/
+    checked: 2026-10-23
 last_checked: '2026-09-16'
 contributors:
 - BrianKhuu

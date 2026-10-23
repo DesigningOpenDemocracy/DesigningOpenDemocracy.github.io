@@ -56,10 +56,11 @@ activity:
     url: https://kongra-star.org/eng/
     checked: 2026-09-21
   rss:
-    date: 2026-10-15
-    note: 'Latest post: Merasîma bîranînê ya ji bo 26 şehîdan di roja duyemîn de ye'
-    url: https://kongra-star.org/?p=33878
-    checked: 2026-10-16
+    date: 2026-10-22
+    note: 'Latest post: Nazdar Derwê:ji bo bi serxistina pêvajoya aşitiyê, divê herkes
+      bi baldarî tevbig'
+    url: https://kongra-star.org/?p=34009
+    checked: 2026-10-23
 last_checked: '2026-09-21'
 ---
 

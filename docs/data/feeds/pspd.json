@@ -1,8 +1,58 @@
 {
   "feed": "https://www.peoplepower21.org/feed",
-  "latest": "2026-10-16",
+  "latest": "2026-10-23",
   "span_days": 1,
   "items": [
+    {
+      "date": "2026-10-23",
+      "title": "[종합] 10.29 이태원 참사 4주기 추모행사",
+      "url": "https://peoplepower21.org/solidarity/2030320"
+    },
+    {
+      "date": "2026-10-23",
+      "title": "[시민평화포럼] 남북관계기본법 제정을 위한 시민사회 간담회 (11/2)",
+      "url": "https://peoplepower21.org/peace/2055041"
+    },
+    {
+      "date": "2026-10-23",
+      "title": "[성명] 오세훈 정치자금법 2심 무죄 선고 규탄한다",
+      "url": "https://peoplepower21.org/politics/2055045"
+    },
+    {
+      "date": "2026-10-23",
+      "title": "[논평] 최길수 특별감찰관, 대통령 측근 감시에 빈틈 없어야",
+      "url": "https://peoplepower21.org/government/2055039"
+    },
+    {
+      "date": "2026-10-23",
+      "title": "[논평] 금융당국, 전세대출 실태 전면 조사하고 전세대출 제도 개선방안 마련해야",
+      "url": "https://peoplepower21.org/stablelife/2055035"
+    },
+    {
+      "date": "2026-10-23",
+      "title": "[공지] 무분별한 규제완화의 종합판, 초광역특구법 철회 촉구 노동·시민사회 기자회견 개최(10/26)",
+      "url": "https://peoplepower21.org/economy/2055028"
+    },
+    {
+      "date": "2026-10-23",
+      "title": "[4주기] 외국인 유가족 방한 일정 안내(10/23~30)",
+      "url": "https://peoplepower21.org/solidarity/2055021"
+    },
+    {
+      "date": "2026-10-22",
+      "title": "[성명] 쿠팡 블랙리스트 공익제보자 송치결정 규탄한다",
+      "url": "https://peoplepower21.org/whistleblower/2054993"
+    },
+    {
+      "date": "2026-10-22",
+      "title": "[성명] 다시 영리병원 설립 불을 지피는 이재명 정부 규탄한다",
+      "url": "https://peoplepower21.org/welfare/2055003"
+    },
+    {
+      "date": "2026-10-22",
+      "title": "[공동 기자회견] 대한민국 주권 무시! 전작권 환수 방해! 브런슨 주한미군사령관 당장 해임하라!",
+      "url": "https://peoplepower21.org/peace/2054967"
+    },
     {
       "date": "2026-10-16",
       "title": "[논평] 전시작전통제권은 조건 없이 환수해야 한다",
@@ -113,11 +163,6 @@
     },
     {
       "date": "2026-10-02",
-      "title": "[종합] 10.29 이태원 참사 4주기 추모행사",
-      "url": "https://peoplepower21.org/solidarity/2030320"
-    },
-    {
-      "date": "2026-10-02",
       "title": "[이슈리포트] 공익제보자 10명 중 7명, 2건 이상 보복 소송 경험해",
       "url": "https://peoplepower21.org/whistleblower/2030304"
     },
@@ -158,6 +203,6 @@
     }
   ],
   "fetch": {
-    "etag": "\"a0dff7ef4edc4d8982829d8ab05f6347\""
+    "etag": "\"95a005a8a6b48b339a40fe8d07cda9cf\""
   }
 }

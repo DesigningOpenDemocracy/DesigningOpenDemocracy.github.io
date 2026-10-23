@@ -65,7 +65,7 @@ activity:
     date: 2026-09-22
     note: 'Latest post: עצומה – גרוניס הציבור מחכה לתשובות!'
     url: https://petition.mqg.org.il/subs_invest/
-    checked: 2026-09-25
+    checked: 2026-10-23
 last_checked: '2026-09-15'
 ---
 

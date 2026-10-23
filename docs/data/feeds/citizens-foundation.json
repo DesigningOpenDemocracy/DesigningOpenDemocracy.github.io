@@ -3,7 +3,7 @@
   "failing": {
     "error": "HTTP_404",
     "since": "2026-09-28",
-    "count": 2,
-    "last": "2026-10-09"
+    "count": 3,
+    "last": "2026-10-23"
   }
 }

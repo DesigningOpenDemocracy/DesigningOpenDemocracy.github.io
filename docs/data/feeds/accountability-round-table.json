@@ -1,8 +1,39 @@
 {
   "feed": "http://accountabilityrt.org/feed",
-  "latest": "2026-07-28",
-  "span_days": 109,
+  "latest": "2026-10-23",
+  "span_days": 349,
   "items": [
+    {
+      "date": "2026-10-23",
+      "title": "Newsletter: Integrity is required before the ballots are cast.",
+      "url": "https://www.accountabilityrt.org/newsletter-integrity-is-required-before-the-ballots-are-cast/",
+      "routine": [
+        "newsletter or roundup"
+      ]
+    },
+    {
+      "date": "2026-10-20",
+      "title": "Integrity, respect and safety in public life: ART statement regarding Dr Helen Haines.",
+      "url": "https://www.accountabilityrt.org/integrity-respect-and-safety-in-public-life-art-statement-regarding-dr-helen-haines/"
+    },
+    {
+      "date": "2026-09-30",
+      "title": "SHINING A SPOTLIGHT ON VICTORIA’S HIDDEN CHAIN OF INFLUENCE.",
+      "url": "https://www.accountabilityrt.org/media-release-shining-a-spotlight-on-victorias-hidden-chain-of-influence/",
+      "signals": [
+        "legal or legislative"
+      ]
+    },
+    {
+      "date": "2026-09-30",
+      "title": "IBAC REFORM UPDATE: A WIN FOR INTEGRITY AS REFORMS PASS PARLIAMENT",
+      "url": "https://www.accountabilityrt.org/ibac-reform-update-a-win-for-integrity-as-reforms-pass-parliament/"
+    },
+    {
+      "date": "2026-09-29",
+      "title": "ROYAL COMMISSION UPDATE: LASTING REFORM IS THE KOURIS ROYAL COMMISSION’S MOST IMPORTANT ASSIGNMENT.",
+      "url": "https://www.accountabilityrt.org/lasting-reform-is-the-kouris-royal-commissions-most-important-assignment/"
+    },
     {
       "date": "2026-07-28",
       "title": "Enhancing government accountability",
@@ -11,7 +42,11 @@
     {
       "date": "2026-06-29",
       "title": "Zero tolerance for corruption. But zero interest in investigating it.",
-      "url": "https://www.accountabilityrt.org/zero-tolerance-for-corruption-but-zero-interest-in-investigating-it/"
+      "url": "https://www.accountabilityrt.org/zero-tolerance-for-corruption-but-zero-interest-in-investigating-it/",
+      "signals": [
+        "legal or legislative",
+        "publication"
+      ]
     },
     {
       "date": "2026-06-29",
@@ -26,22 +61,14 @@
     {
       "date": "2026-04-28",
       "title": "Victoria’s board appointment system lacks independent oversight",
-      "url": "https://www.accountabilityrt.org/victorias-board-appointment-system-lacks-independent-oversight/"
-    },
-    {
-      "date": "2026-04-16",
-      "title": "High Court finds political donation caps unconstitutional",
-      "url": "https://www.accountabilityrt.org/high-court-finds-political-donation-caps-unconstitutional/"
-    },
-    {
-      "date": "2026-04-16",
-      "title": "Civil society orgs. unite for democracy",
-      "url": "https://www.accountabilityrt.org/civil-society-orgs-committed-to-democracy-unite/"
-    },
-    {
-      "date": "2026-04-10",
-      "title": "Disclosure of donors to ART",
-      "url": "https://www.accountabilityrt.org/disclosure-of-donors-to-art/"
+      "url": "https://www.accountabilityrt.org/victorias-board-appointment-system-lacks-independent-oversight/",
+      "signals": [
+        "leadership change"
+      ]
     }
-  ]
+  ],
+  "fetch": {
+    "etag": "\"485cb952054e71ad9fd593dcb53904f8\"",
+    "last_modified": "Fri, 23 Oct 2026 02:12:22 GMT"
+  }
 }

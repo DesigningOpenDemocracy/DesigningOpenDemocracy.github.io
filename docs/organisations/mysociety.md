@@ -95,11 +95,11 @@ activity:
     url: https://www.mysociety.org
     checked: 2026-09-20
   rss:
-    date: 2026-09-14
-    note: 'Latest post: TICTeC Presents: Digital Democracy Edinburgh (11 & 12 March
-      2027)'
-    url: https://www.mysociety.org/2026/09/14/tictec-presents-digital-democracy-edinburgh-11-12-march-2027/
-    checked: 2026-09-25
+    date: 2026-10-14
+    note: 'Latest post: Digital Democracy Edinburgh: call for proposals and registration
+      now open'
+    url: https://www.mysociety.org/2026/10/14/digital-democracy-edinburgh-call-for-proposals-and-registration-now-open/
+    checked: 2026-10-23
 last_checked: '2026-09-20'
 ---
 
