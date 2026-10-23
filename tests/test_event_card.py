@@ -35,6 +35,20 @@ class EventCardTests(unittest.TestCase):
         self.assertIn("&lt;script&gt;alert(1)&lt;/script&gt;", result)
         self.assertNotIn("<script>alert(1)</script>", result)
 
+    def test_event_card_ignores_unsafe_url(self):
+        page = FakePage(
+            "blog/posts/test.md",
+            {
+                "event": {
+                    "url": "javascript:alert(1)",
+                    "title": "Unsafe Event",
+                }
+            },
+        )
+        result = ec.on_page_markdown("Some content", page=page, config={}, files=[])
+        self.assertEqual(result, "Some content")
+        self.assertNotIn("javascript:alert", result)
+
 
 if __name__ == "__main__":
     unittest.main()

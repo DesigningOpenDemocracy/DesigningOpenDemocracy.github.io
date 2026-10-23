@@ -13,6 +13,13 @@ _VIDEO_HOSTS = {
 }
 
 
+def is_safe_url(url):
+    if not url or not isinstance(url, str):
+        return False
+    u = url.strip().lower()
+    return u.startswith(('http://', 'https://', 'mailto:', '/', '#', './'))
+
+
 def on_page_markdown(markdown, *, page, config, files):
     """Auto-inject a prominent shared-link card on blog posts that set
     shared_link: frontmatter — the specific external resource (article,
@@ -25,7 +32,7 @@ def on_page_markdown(markdown, *, page, config, files):
         return markdown
 
     link = page.meta.get('shared_link')
-    if not link or not link.get('url'):
+    if not link or not link.get('url') or not is_safe_url(link.get('url')):
         return markdown
 
     is_video = urlparse(link['url']).netloc.lower() in _VIDEO_HOSTS
@@ -43,6 +50,8 @@ def on_page_markdown(markdown, *, page, config, files):
     note = html.escape(link.get('note', ''))
     paywalled = link.get('paywalled', False)
     image = link.get('image', '')
+    if image and not is_safe_url(image if image.startswith('http') else f'/{image}'):
+        image = ''
     description = html.escape(link.get('description', ''))
 
     eyebrow = 'Shared link' + (f' · {source}' if source else '')

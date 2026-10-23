@@ -35,6 +35,13 @@ def _format_date(value):
     return d.strftime("%A, ") + str(d.day) + d.strftime(" %B %Y")
 
 
+def is_safe_url(url):
+    if not url or not isinstance(url, str):
+        return False
+    u = url.strip().lower()
+    return u.startswith(('http://', 'https://', 'mailto:', '/', '#', './'))
+
+
 def _format_time(value):
     """'18:00' -> '6:00 PM'. Same strict HH:MM shape hooks/calendar_export.py
     requires for time:/end_time: — deliberately not attempting to parse
@@ -67,7 +74,7 @@ def on_page_markdown(markdown, *, page, config, files):
         return markdown
 
     event = page.meta.get('event')
-    if not event or not event.get('url'):
+    if not event or not event.get('url') or not is_safe_url(event.get('url')):
         return markdown
 
     # Escaped once, up front — an unescaped '&' in a URL (a real case:
@@ -79,6 +86,8 @@ def on_page_markdown(markdown, *, page, config, files):
     note = html.escape(event.get('note', ''))
     cta = html.escape(event.get('cta') or 'RSVP →')
     image = event.get('image', '')
+    if image and not is_safe_url(image if image.startswith('http') else f'/{image}'):
+        image = ''
 
     when_parts = []
     if event.get('date'):

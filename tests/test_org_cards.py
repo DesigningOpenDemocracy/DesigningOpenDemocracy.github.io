@@ -68,6 +68,12 @@ class OrgCardTests(unittest.TestCase):
         text = 'See <!-- org-card: example --> inline.'
         self.assertEqual(org_cards.expand_markers(text, self.tmp.name), text)
 
+    def test_unsafe_website_url_suppressed(self):
+        self.write_org('unsafe', website='javascript:alert(1)')
+        out = org_cards.expand_markers('<!-- org-card: unsafe -->', self.tmp.name)
+        self.assertNotIn('javascript:', out)
+        self.assertNotIn('Website ↗', out)
+
 
 if __name__ == '__main__':
     unittest.main()
