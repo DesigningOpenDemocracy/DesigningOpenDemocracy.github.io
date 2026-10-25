@@ -35,6 +35,23 @@ events:
   notable: true
   notable_reason: Platform/product launch
   kind: news
+- date: '2023-11-22'
+  title: Launched the Declaration of Our Right to Protest with the Human Rights Law
+    Centre
+  url: https://www.hrlc.org.au/news/2023-11-22-declaration-protest/
+  quote: Endorsed by 60 civil society organisations, including the Australian Council
+    of Social Services, Greenpeace Australia, and Amnesty International Australia,
+    the Declaration sets out the minimum standards governments must meet to protect
+    our fundamental right to protest and offers ten practical steps to safeguard the
+    right from further erosion.
+  note: HRLC media release (date from its URL; the page says "today") announcing the
+    Declaration jointly with ADN. ADN's own campaign page (australiandemocracy.org.au/declaration)
+    reported over 170 endorsing organisations as of 2026-10-25.
+  proof_level: high
+  url_checked: '2026-10-25'
+  notable: medium
+  notable_reason: Cross-sector protest-rights declaration launch
+  kind: news
 - date: '2024-06-26'
   title: Stronger Charities Alliance launched a private member's Bill at Parliament
     House to protect charity advocacy rights
@@ -58,17 +75,18 @@ activity:
       Organisations call on Victorian Political Parties to Commit Now to Donation
       Transparency'
   dod:
-    date: 2026-09-26
-    note: 'Confirmed active via web search (homepage is JS-rendered, a plain fetch
-      returns an empty shell) — #OurDemocracy campaign finance reform push and a Declaration
-      of the Right to Protest with the Human Rights Law Centre both current in 2026.'
-    url: https://australiandemocracy.org.au
-    checked: 2026-09-26
+    checked: 2026-10-25
+    date: 2026-10-25
+    note: New "Join the campaign to protect protest" landing page (created 2026-10-21
+      per the page's embedded data, edited 2026-10-25) promoting the 2023 Declaration
+      of Our Right to Protest, now citing 170+ endorsing organisations (up from 60
+      at launch).
+    url: https://australiandemocracy.org.au/declaration
   sitemap:
     checked: 2026-10-02
     date: 2026-06-05
     note: Server still up (sitemap detected)
-last_checked: '2026-09-26'
+last_checked: '2026-10-25'
 ---
 
 The Australian Democracy Network (ADN) is a registered charity and coalition infrastructure body for the Australian democracy reform sector. Founded in 2020 by the Human Rights Law Centre, Australian Conservation Foundation, and Australian Council of Social Service (ACOSS), it operates as a connector and convener — sharing resources, strategy, and campaigns across member organisations rather than acting primarily as a direct-action group.
@@ -79,7 +97,7 @@ As of 2024, it has over 200 member civil society organisations and more than 14,
 
 - **#OurDemocracy** — flagship campaign (run jointly with ACF and HRLC) focused on campaign finance reform: donation disclosure, donation caps, spending limits, and reducing corporate influence in politics
 - **Stronger Charities Alliance** — coalition of 100+ charities focused on protecting the right of civil society organisations to advocate; successfully blocked proposed ACNC legislation that would have restricted charity advocacy
-- **Protest Rights** — cross-sector response to anti-protest laws proliferating across Australian states
+- **Protest Rights** — cross-sector response to anti-protest laws proliferating across Australian states, including the [Declaration of Our Right to Protest](https://australiandemocracy.org.au/declaration) (launched with the Human Rights Law Centre in November 2023)
 - **Disinformation** — building digital campaigning capacity across civil society
 
 ## Links

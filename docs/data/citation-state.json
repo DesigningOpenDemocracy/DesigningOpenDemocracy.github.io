@@ -7090,12 +7090,12 @@
   "https://raisely-images.imgix.net/australian-democracy-network/uploads/adn-annual-report-23-pdf-531f03.pdf": {
     "archive_checked": "2026-09-27",
     "archive_url": "http://web.archive.org/web/20260821040404/https://raisely-images.imgix.net/australian-democracy-network/uploads/adn-annual-report-23-pdf-531f03.pdf",
-    "checked": "2026-09-27",
+    "checked": "2026-10-25",
     "document_sha256": "ba7946c361b12c574734c0542f8efe428014a0c250fc0a091d765da6d428a3e9",
     "etag": null,
     "evidence": [
       {
-        "checked": "2026-09-27",
+        "checked": "2026-10-25",
         "context": {
           "prefix": "es that can shift a whole system, we need collective power, strategically directed. Australian Democracy Network (ADN) was created to meet that need.",
           "sha256": "57abd28a13bfbae5988e0b6885591cc4cb61c5e36ccbe60470607f5f3b9c8970",
@@ -9555,6 +9555,26 @@
         },
         "id": "c0b61fc73822398c5fdadb27e28ca1ba7a4d8b7ef857942ddad70bb761452bb5",
         "quote": "The Human Rights Law Centre and the #OurDemocracy campaign both made submissions supporting three key reforms: To improve transparency of political donations and election spending through lowering the disclosure threshold, requiring real time disclosure, and closing loopholes that allow millions in financial contributions to go undisclosed;",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
+  "https://www.hrlc.org.au/news/2023-11-22-declaration-protest/": {
+    "checked": "2026-10-25",
+    "document_sha256": "47d2b436fdf63337b8a97e1e1fe1c204ec0b9bae0f0f355af51b280421d4eed0",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-10-25",
+        "context": {
+          "prefix": "ia to adhere to international standards and human rights law to ensure protest rights are protected in the Declaration of Our Right to Protest.",
+          "sha256": "607672ba8b3a32c135792a4714aafb02735f967d4dc23320b52b31122e824d40",
+          "suffix": "In recent years across the country, governments have enacted a worrying proliferation of anti-protest laws, which often expressly target or dis",
+          "text": "Endorsed by 60 civil society organisations, including the Australian Council of Social Services, Greenpeace Australia, and Amnesty International Australia, the Declaration sets out the minimum standards governments must meet to protect our fundamental right to protest and offers ten practical steps to safeguard the right from further erosion."
+        },
+        "id": "607672ba8b3a32c135792a4714aafb02735f967d4dc23320b52b31122e824d40",
+        "quote": "Endorsed by 60 civil society organisations, including the Australian Council of Social Services, Greenpeace Australia, and Amnesty International Australia, the Declaration sets out the minimum standards governments must meet to protect our fundamental right to protest and offers ten practical steps to safeguard the right from further erosion.",
         "verified": true
       }
     ],
