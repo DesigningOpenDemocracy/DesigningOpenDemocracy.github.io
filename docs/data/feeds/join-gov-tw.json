@@ -1,9 +1,3 @@
 {
-  "feed": "https://join.gov.tw/?feed=rss2",
-  "failing": {
-    "error": "UNPARSEABLE",
-    "since": "2026-10-02",
-    "count": 3,
-    "last": "2026-10-23"
-  }
+  "probed": "2026-10-25"
 }

@@ -23,7 +23,6 @@ location:
   longitude: 35.2034
   name: Ramallah, Palestine
 news_page: https://www.aman-palestine.org/en/activities/
-rss_feed: https://www.aman-palestine.org/rss
 events:
 - date: '2000-01-01'
   title: Established as a Palestinian anti-corruption coalition
@@ -61,7 +60,7 @@ activity:
     date: 2026-09-25
     note: RSS feed active
     url: https://www.aman-palestine.org/rss
-    checked: 2026-09-25
+    checked: 2026-10-25
   scrape:
     date: 2026-10-17
     note: Latest news page scraped

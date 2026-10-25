@@ -1,5 +1,10 @@
 {
-  "feed": "https://citizenos.com/feed",
-  "latest": null,
-  "items": []
+  "feed": "https://citizenos.com/feed/?post_type=news",
+  "latest": "2025-07-23",
+  "span_days": 161,
+  "items": [],
+  "fetch": {
+    "etag": "\"9ef22833c007efb15dc052b67ccc0339-gzip\"",
+    "last_modified": "Tue, 12 May 2026 06:53:19 GMT"
+  }
 }

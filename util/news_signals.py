@@ -99,8 +99,11 @@ WORTH_A_LOOK = {
     "death": [
         r"passed away", r"obituary", r"in memoriam", r"remembering",
         # The Australian obituary form, "Vale Jane Smith". Case-sensitive,
-        # since "vale" is an everyday word in Spanish.
-        r"(?-i:Vale [A-Z]\w*)",
+        # since "vale" is an everyday word in Spanish, and only where "Vale"
+        # opens the line or follows punctuation, since it's also the second
+        # word of Melbourne suburbs: every Greens "Pascoe Vale Commuter
+        # Chats" listing was tagged as a death.
+        r"(?-i:(?:^|(?<=[:\-–—|,(\"']\s)|(?<=[:\-–—|,(\"']))Vale [A-Z]\w*)",
         r"has died", r"dies at",
     ],
     "funding": [
@@ -139,7 +142,7 @@ LIKELY_ROUTINE = {
 
 
 def _compile(table):
-    return {label: re.compile(r"(?<!\w)(?:" + "|".join(pats) + r")(?!\w)", re.IGNORECASE)
+    return {label: re.compile(r"(?<!\w)(?:" + "|".join(pats) + r")(?!\w)", re.IGNORECASE | re.MULTILINE)
             for label, pats in table.items()}
 
 

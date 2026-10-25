@@ -53,10 +53,11 @@ activity:
     url: https://internetfreedom.in
     checked: 2026-09-28
   rss:
-    date: 2026-09-25
-    note: RSS feed active
-    url: https://internetfreedom.in/rss
-    checked: 2026-09-25
+    date: 2026-10-23
+    note: 'Latest post: Instagram restores four protest reporters’ accounts after
+      legal notices, but won'
+    url: https://internetfreedom.in/instagram-restores-four-protest-reporters-accounts-after-legal-notices-but-wont-name-the-legal-requirements-it-cited/
+    checked: 2026-10-25
 last_checked: '2026-09-28'
 ---
 

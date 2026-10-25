@@ -70,6 +70,8 @@ class SignalTests(unittest.TestCase):
         self.assertNotIn("fundraising", self.routine("Court appeal lodged over electoral boundaries"))
         self.assertIn("fundraising", self.routine("Our winter appeal"))
         self.assertNotIn("death", self.worth("¿Vale la pena votar?"))
+        self.assertNotIn("death", self.worth("Pascoe Vale Commuter Chats"))
+        self.assertNotIn("death", self.worth("Moonee Ponds and Strathmore: Mount Alexander Vale Stall"))
         self.assertEqual(self.worth("Reporters gather"), [])  # whole words only
 
     def test_lede_counts_but_only_its_opening(self):

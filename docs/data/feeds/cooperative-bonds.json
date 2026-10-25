@@ -1,5 +1,47 @@
 {
-  "feed": "https://bonds.coop/feed",
-  "latest": null,
-  "items": []
+  "feed": "https://bonds.coop/news/feed/",
+  "latest": "2026-10-13",
+  "span_days": 576,
+  "items": [
+    {
+      "date": "2026-10-13",
+      "title": "Raising community investment: building the co-operative before raising the money",
+      "url": "https://bonds.coop/news/raising-community-investment-building-the-co-operative-before-raising-the-money/",
+      "signals": [
+        "publication"
+      ]
+    },
+    {
+      "date": "2026-10-13",
+      "title": "Planning across the year",
+      "url": "https://bonds.coop/news/planning-across-the-year/"
+    },
+    {
+      "date": "2026-10-13",
+      "title": "How to govern taking co-operative principles into account",
+      "url": "https://bonds.coop/news/how-to-govern-taking-co-operative-principles-into-account/"
+    },
+    {
+      "date": "2026-07-29",
+      "title": "The Castlemaine Hub: Community debentures in action",
+      "url": "https://bonds.coop/news/the-castlemaine-hub-community-debentures-in-action/"
+    },
+    {
+      "date": "2026-07-29",
+      "title": "Co-ops in the New Economy: Antony interviewed by Dr Tiyana Jovanovic on NENA podcast",
+      "url": "https://bonds.coop/news/co-ops-in-the-new-economy-antony-interviewed-by-dr-tiyana-jovanovic-on-nena-podcast/",
+      "routine": [
+        "podcast or video episode"
+      ]
+    },
+    {
+      "date": "2026-05-19",
+      "title": "Good intentions don’t build great co-ops – a clear strategy does",
+      "url": "https://bonds.coop/news/good-intentions-dont-build-great-co-ops-a-clear-strategy-does/"
+    }
+  ],
+  "fetch": {
+    "etag": "W/\"858fde8ca42f8ac51474086b7e223a8d\"",
+    "last_modified": "Tue, 13 Oct 2026 19:08:59 GMT"
+  }
 }

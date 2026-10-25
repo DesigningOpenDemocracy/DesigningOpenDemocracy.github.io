@@ -25,7 +25,6 @@ location:
   longitude: 6.95
   name: Cologne, Germany
 news_page: https://www.democracy-international.org/news
-rss_feed: https://www.democracy-international.org/rss.xml
 events:
 - date: '2026-08-26'
   title: Democracy Camp 2026 Bulgaria — Erasmus+ youth exchange for 70+ young Europeans
@@ -133,7 +132,7 @@ activity:
     url: https://www.democracy-international.org
     checked: 2026-09-28
   rss:
-    checked: 2026-09-25
+    checked: 2026-10-25
     date: 2026-09-25
     note: RSS feed active
     url: https://www.democracy-international.org/rss.xml

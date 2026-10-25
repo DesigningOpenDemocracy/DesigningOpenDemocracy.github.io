@@ -25,7 +25,7 @@ location:
   name: Melbourne, Australia
   precision: city
 news_page: https://bonds.coop/resources/co-op-news/
-rss_feed: https://bonds.coop/feed
+rss_feed: https://bonds.coop/news/feed/
 events:
 - date: '2018-01-01'
   title: Founded by Antony McMullen, Clare Fountain, and Paul Saeki
@@ -66,10 +66,11 @@ activity:
     url: https://bonds.coop
     checked: 2026-09-27
   rss:
-    date: 2026-09-25
-    note: RSS feed active
-    url: https://bonds.coop/feed
-    checked: 2026-09-25
+    date: 2026-10-13
+    note: 'Latest post: Raising community investment: building the co-operative before
+      raising the money'
+    url: https://bonds.coop/news/raising-community-investment-building-the-co-operative-before-raising-the-money/
+    checked: 2026-10-25
   scrape:
     date: 2026-10-14
     note: Latest news page scraped

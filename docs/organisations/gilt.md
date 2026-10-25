@@ -21,7 +21,6 @@ location:
   longitude: 16.3738
   name: Vienna, Austria
   precision: city
-rss_feed: https://www.gilt.at/feed
 events:
 - date: '2016-09-21'
   title: Party "Liste Roland Düringer – Meine Stimme gilt" founded by actor Roland
@@ -69,6 +68,11 @@ activity:
     note: RSS feed active
     url: https://www.gilt.at/feed
     checked: 2026-09-25
+  sitemap:
+    date: 2024-09-30
+    note: Page last modified (from sitemap)
+    url: https://www.gilt.at/wp-sitemap.xml
+    checked: 2026-10-25
 last_checked: '2026-09-28'
 ---
 

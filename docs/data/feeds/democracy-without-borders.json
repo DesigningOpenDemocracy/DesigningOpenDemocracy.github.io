@@ -1,9 +1,110 @@
 {
   "feed": "https://www.democracywithoutborders.org/feed",
-  "failing": {
-    "error": "UNPARSEABLE",
-    "since": "2026-10-02",
-    "count": 3,
-    "last": "2026-10-23"
+  "latest": "2026-10-22",
+  "span_days": 35,
+  "items": [
+    {
+      "date": "2026-10-22",
+      "title": "Global 2025 election review outlines challenges and innovations",
+      "url": "https://www.democracywithoutborders.org/45728/global-2025-election-review-outlines-challenges-and-innovations/",
+      "signals": [
+        "publication"
+      ],
+      "mentions": [
+        "International IDEA"
+      ]
+    },
+    {
+      "date": "2026-10-20",
+      "title": "An ethical framework for global citizenship education",
+      "url": "https://www.democracywithoutborders.org/45660/an-ethical-framework-for-global-citizenship-education/",
+      "signals": [
+        "publication"
+      ]
+    },
+    {
+      "date": "2026-10-15",
+      "title": "Output and openness of international organizations stagnate, for now",
+      "url": "https://www.democracywithoutborders.org/45626/output-and-openness-of-international-organizations-stagnate-for-now/",
+      "signals": [
+        "publication"
+      ],
+      "mentions": [
+        "V-Dem Institute"
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "title": "The UN’s Human Rights Council depends on civil society participation",
+      "url": "https://www.democracywithoutborders.org/45571/the-uns-human-rights-council-depends-on-civil-society-participation/",
+      "signals": [
+        "publication"
+      ]
+    },
+    {
+      "date": "2026-10-02",
+      "title": "Does democracy matter in global governance reform?",
+      "url": "https://www.democracywithoutborders.org/45509/does-democracy-matter-in-global-governance-reform/",
+      "signals": [
+        "publication"
+      ]
+    },
+    {
+      "date": "2026-09-24",
+      "title": "Commission proposes “revitalized inter­national agenda” for democracy",
+      "url": "https://www.democracywithoutborders.org/45318/commission-proposes-revitalized-international-agenda-for-democracy/",
+      "signals": [
+        "publication"
+      ],
+      "mentions": [
+        "International IDEA",
+        "Open Government Partnership"
+      ]
+    },
+    {
+      "date": "2026-09-22",
+      "title": "Ongoing democratic decline heightens conflict risk: IDEA report",
+      "url": "https://www.democracywithoutborders.org/45247/ongoing-democratic-decline-heightens-conflict-risk-idea-report/",
+      "signals": [
+        "publication"
+      ],
+      "mentions": [
+        "International IDEA"
+      ]
+    },
+    {
+      "date": "2026-09-22",
+      "title": "Democratic decline and international conflict: are they linked?",
+      "url": "https://www.democracywithoutborders.org/45255/democratic-decline-and-international-conflict-are-they-linked/",
+      "signals": [
+        "publication"
+      ],
+      "mentions": [
+        "International IDEA"
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "title": "Democracy and human rights needed in the UN’s post-2030 agenda",
+      "url": "https://www.democracywithoutborders.org/45205/democracy-and-human-rights-needed-in-the-uns-post-2030-agenda/",
+      "signals": [
+        "publication"
+      ],
+      "mentions": [
+        "International IDEA"
+      ]
+    },
+    {
+      "date": "2026-09-17",
+      "title": "Poll finds support for cooperation, conflict prevention top priority",
+      "url": "https://www.democracywithoutborders.org/44974/poll-finds-support-for-cooperation-conflict-prevention-top-priority/",
+      "signals": [
+        "publication"
+      ]
+    }
+  ],
+  "fetch": {
+    "etag": "\"7667e4b70ad57f97c9bedb4c5209af9a-gzip\"",
+    "last_modified": "Sun, 25 Oct 2026 06:09:50 GMT"
   }
 }

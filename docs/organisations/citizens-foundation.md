@@ -22,7 +22,6 @@ location:
   latitude: 64.1355
   longitude: -21.8954
   name: Reykjavík, Iceland
-rss_feed: https://citizens.is/feed
 events:
 - date: '2008-01-01'
   title: Founded by Robert Bjarnason and Gunnar Grimsson
@@ -72,6 +71,11 @@ activity:
     note: 'Latest post: The Power of Citizen Engagement: Why “Your Priorities” is
       the World’s Leading Pl'
     url: https://citizens.is/2023/10/01/the-power-of-citizen-engagement-why-your-priorities-is-the-worlds-leading-platform/
+  sitemap:
+    date: 2026-06-13
+    note: Page last modified (from sitemap)
+    url: https://citizens.is/sitemap.xml
+    checked: 2026-10-25
 last_checked: '2026-09-21'
 ---
 

@@ -65,10 +65,10 @@ activity:
     url: https://www.democracywithoutborders.org
     checked: 2026-09-19
   rss:
-    date: 2026-09-25
-    note: RSS feed active
-    url: https://www.democracywithoutborders.org/feed
-    checked: 2026-09-25
+    date: 2026-10-22
+    note: 'Latest post: Global 2025 election review outlines challenges and innovations'
+    url: https://www.democracywithoutborders.org/45728/global-2025-election-review-outlines-challenges-and-innovations/
+    checked: 2026-10-25
 last_checked: '2026-09-19'
 ---
 

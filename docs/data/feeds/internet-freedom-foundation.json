@@ -1,5 +1,364 @@
 {
   "feed": "https://internetfreedom.in/rss",
-  "latest": null,
-  "items": []
+  "latest": "2026-10-23",
+  "span_days": 725,
+  "items": [
+    {
+      "date": "2026-10-23",
+      "title": "Instagram restores four protest reporters’ accounts after legal notices, but won’t name the “legal requirements” it cited",
+      "url": "https://internetfreedom.in/instagram-restores-four-protest-reporters-accounts-after-legal-notices-but-wont-name-the-legal-requirements-it-cited/",
+      "signals": [
+        "mobilisation"
+      ]
+    },
+    {
+      "date": "2026-10-22",
+      "title": "A private key with the value 4: IFF writes to eMudhra, CERT-In and MeitY on the compromise of eMudhra’s certificate authority keys",
+      "url": "https://internetfreedom.in/a-private-key-with-the-value-4-iff-writes-to-emudhra-cert-in-and-meity-on-the-compromise-of-emudhras-certificate-authority-keys/",
+      "signals": [
+        "legal or legislative",
+        "publication"
+      ]
+    },
+    {
+      "date": "2026-10-21",
+      "title": "SBI told investors its data breach doesn’t matter. What about the 3,897 customers it affected?",
+      "url": "https://internetfreedom.in/sbi-told-investors-its-data-breach-doesnt-matter-what-about-the-3-897-customers-it-affected/"
+    },
+    {
+      "date": "2026-10-20",
+      "title": "Who reads your vehicle record? NIC gave us numbers. MoRTH gave us a generic webpage.",
+      "url": "https://internetfreedom.in/who-reads-your-vehicle-record-nic-gave-us-numbers-morth-gave-us-a-generic-webpage/"
+    },
+    {
+      "date": "2026-10-19",
+      "title": "Delhi Police’s to get new Vajra vans have six 4K cameras, 1 TB of storage, a GPU and a drone deck, under no written procedure",
+      "url": "https://internetfreedom.in/delhi-polices-to-get-new-vajra-vans-have-six-4k-cameras-1-tb-of-storage-a-gpu-and-a-drone-deck-under-no-written-procedure/",
+      "signals": [
+        "launch"
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "title": "No notice, no reasons, no hearing, Delhi High Court seeks NIXI’s reply on chalosansad.in suspension",
+      "url": "https://internetfreedom.in/no-notice-no-reasons-no-hearing-delhi-high-court-seeks-nixis-reply-on-chalosansad-in-suspension/",
+      "signals": [
+        "legal or legislative",
+        "mobilisation"
+      ]
+    },
+    {
+      "date": "2026-10-15",
+      "title": "Delhi Police Spent ₹161 Crore on Signal Jammers. How It Uses Them Is 'Highly Confidential'",
+      "url": "https://internetfreedom.in/delhi-police-spent-161-crore-on-signal-jammers-how-it-uses-them-is-highly-confidential/"
+    },
+    {
+      "date": "2026-10-14",
+      "title": "A face-recognition camera ring was ordered around Ramlila Maidan. Ten weeks later it became the protest site.",
+      "url": "https://internetfreedom.in/a-face-recognition-camera-ring-was-ordered-around-ramlila-maidan-ten-weeks-later-it-became-the-protest-site/",
+      "signals": [
+        "leadership change",
+        "mobilisation"
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "title": "Where Are the Journalists’ Phones? IFF Demands Seizure Memos and Answers from Delhi Police",
+      "url": "https://internetfreedom.in/where-are-the-journalists-phones-iff-demands-seizure-memos-and-answers-from-delhi-police/",
+      "signals": [
+        "legal or legislative"
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "title": "SFI Delhi’s Instagram appeal sat “under process” for six weeks. The Delhi HC has set a three-week window.",
+      "url": "https://internetfreedom.in/delhi-high-court-expects-gac-to-decide-the-sfi-delhi-instagram-appeal-within-three-weeks/",
+      "signals": [
+        "legal or legislative"
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "title": "Delhi HC orders production of secret Sahyog takedown orders behind journalist Ila Kazmi’s Instagram block",
+      "url": "https://internetfreedom.in/delhi-hc-orders-production-of-secret-sahyog-takedown-orders-behind-journalist-ila-kazmis-instagram-block/",
+      "signals": [
+        "mobilisation"
+      ]
+    },
+    {
+      "date": "2026-10-11",
+      "title": "No Qualifications, No Exceptions: Supreme Court Orders Delhi’s Internet to Stay On",
+      "url": "https://internetfreedom.in/no-qualifications-no-exceptions-supreme-court-orders-delhis-internet-to-stay-on/",
+      "signals": [
+        "legal or legislative"
+      ]
+    },
+    {
+      "date": "2026-10-10",
+      "title": "Built for 'Women’s safety', cleared for 'Riot Control', inside the Delhi Police drone SOP",
+      "url": "https://internetfreedom.in/built-for-womens-safety-cleared-for-riot-control-inside-the-delhi-police-drone-sop/",
+      "signals": [
+        "launch",
+        "publication"
+      ]
+    },
+    {
+      "date": "2026-10-09",
+      "title": "MeitY’s “enhanced diligence” advisory pressures platforms to police protest speech. It must be withdrawn.",
+      "url": "https://internetfreedom.in/meitys-enhanced-diligence-advisory-pressures-platforms-to-police-protest-speech-it-must-be-withdrawn/",
+      "signals": [
+        "mobilisation"
+      ]
+    },
+    {
+      "date": "2026-10-09",
+      "title": "Delhi Learned of Its Internet Shutdown from a Leaked “Top Secret” Police Letter, Not the Government",
+      "url": "https://internetfreedom.in/delhi-learned-of-its-internet-shutdown-from-a-leaked-top-secret-police-letter-not-the-government/",
+      "signals": [
+        "mobilisation"
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "title": "IFF Filed RTI Applications Seeking What the Election Commission Has Not Disclosed About the SIR",
+      "url": "https://internetfreedom.in/iff-filed-rti-applications-seeking-what-the-election-commission-has-not-disclosed-about-the-sir/",
+      "signals": [
+        "publication"
+      ]
+    },
+    {
+      "date": "2026-10-03",
+      "title": "Blocking BitChat is unconstitutional: MeitY must publish and withdraw its secret order",
+      "url": "https://internetfreedom.in/blocking-bitchat-is-unconstitutional-meity-must-publish-and-withdraw-its-secret-order/"
+    },
+    {
+      "date": "2026-10-02",
+      "title": "Shutdown before the first protester arrived: IFF condemns the internet suspension in Connaught Place",
+      "url": "https://internetfreedom.in/shutdown-before-the-first-protester-arrived-iff-condemns-the-internet-suspension-in-connaught-place/",
+      "signals": [
+        "mobilisation",
+        "publication"
+      ]
+    },
+    {
+      "date": "2026-10-02",
+      "title": "IFF makes public the Delhi Police Order cited for Facial Recognition as it continues evasion.",
+      "url": "https://internetfreedom.in/iff-makes-public-the-delhi-police-order-cited-for-facial-recognition-as-it-continues-evasion-we-will-file-appeals/"
+    },
+    {
+      "date": "2026-10-01",
+      "title": "Analysis and Explainer on How the SIR Excluded Voters at Scale",
+      "url": "https://internetfreedom.in/analysis-and-explainer-on-how-the-sir-excluded-voters-at-scale/"
+    },
+    {
+      "date": "2026-09-26",
+      "title": "Analysis and Explainer on the Data Collection of the SIR That Shifts the Burden to Electors",
+      "url": "https://internetfreedom.in/analysis-and-explainer-on-the-data-collection-of-the-sir-that-shifts-the-burden-to-electors/"
+    },
+    {
+      "date": "2026-09-25",
+      "title": "Analysis and Explainer on the Software of the SIR That Runs Without Transparency",
+      "url": "https://internetfreedom.in/analysis-and-explainer-on-the-software-of-the-sir-that-runs-without-transparency/",
+      "mentions": [
+        "Association for Democratic Reforms"
+      ]
+    },
+    {
+      "date": "2026-09-23",
+      "title": "Less Than ₹2 for Your Name and Home Address: How VAHAN and SARATHI Data Is Being Sold Online",
+      "url": "https://internetfreedom.in/less-than-2-for-your-name-and-home-address-how-vahan-and-sarathi-data-is-being-sold-online/"
+    },
+    {
+      "date": "2026-09-19",
+      "title": "IFF statement on Delhi Police notices to Meta seeking the identities of creators, and the continuing removal of CJP protest content from Instagram",
+      "url": "https://internetfreedom.in/iff-statement-on-delhi-police-notices-to-meta-seeking-the-identities-of-creators-and-the-continuing-removal-of-cjp-protest-content-from-instagram/",
+      "signals": [
+        "legal or legislative",
+        "mobilisation"
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "title": "Delhi High Court Issues Notice in Fraudulent Copyright Strike Case filed by Stand Up Comic Pulkit Mani",
+      "url": "https://internetfreedom.in/delhi-high-court-issues-notice-in-fraudulent-copyright-strike-case-filed-by-stand-up-comic-pulkit-mani/",
+      "signals": [
+        "legal or legislative"
+      ]
+    },
+    {
+      "date": "2026-09-16",
+      "title": "No Law Lets the Police Jam Your Phone: IFF Files RTIs on Delhi Police's Signal Jammers",
+      "url": "https://internetfreedom.in/no-law-lets-the-police-jam-your-phone-iff-files-rtis-on-delhi-polices-signal-jammers/",
+      "signals": [
+        "publication"
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "title": "IFF supports second challenge to covert Ray-Ban Meta recording, stalking and commercial exploitation",
+      "url": "https://internetfreedom.in/iff-supports-second-challenge-to-covert-ray-ban-meta-recording-stalking-and-commercial-exploitation/"
+    },
+    {
+      "date": "2026-09-11",
+      "title": "Supreme Court Settles India's Got Latent Cases, But Doesn't Rule Out an \"Influencer Code\"",
+      "url": "https://internetfreedom.in/supreme-court-settles-indias-got-latent-cases-but-doesnt-rule-out-an-influencer-code/",
+      "signals": [
+        "legal or legislative"
+      ]
+    },
+    {
+      "date": "2026-09-11",
+      "title": "NIXI Drops Its \"Critical Keyword,\" Reaches for the Emblems Act Instead",
+      "url": "https://internetfreedom.in/nixi-drops-its-critical-keyword-reaches-for-the-emblems-act-instead/"
+    },
+    {
+      "date": "2026-09-10",
+      "title": "'Dirty Data' Reel on Google's Vizag Data Centre Back Online in India After 111-Day Takedown",
+      "url": "https://internetfreedom.in/dirty-data-reel-on-googles-vizag-data-centre-back-online-in-india-after-111-day-takedown/",
+      "signals": [
+        "legal or legislative"
+      ],
+      "routine": [
+        "petition"
+      ]
+    },
+    {
+      "date": "2026-09-04",
+      "title": "Delhi Police's facial recognition sweep at Jantar Mantar is unreliable and unlawful: the list of 2,873 must be withdrawn",
+      "url": "https://internetfreedom.in/delhi-polices-facial-recognition-sweep-at-jantar-mantar-is-unreliable-and-unlawful-the-list-of-2-873-must-be-withdrawn/"
+    },
+    {
+      "date": "2026-09-04",
+      "title": "Delhi Police's Facial Recognition Flagged 25 Jailed People at Jantar Mantar, This Dragnet Must End",
+      "url": "https://internetfreedom.in/delhi-polices-facial-recognition-flagged-25-jailed-people-at-jantar-mantar-this-dragnet-must-end/",
+      "signals": [
+        "legal or legislative",
+        "mobilisation"
+      ]
+    },
+    {
+      "date": "2026-09-03",
+      "title": "IFF Supports Shrishti Khanna's Challenge to Sahyog-Ordered Instagram Block",
+      "url": "https://internetfreedom.in/iff-supports-shrishti-khannas-challenge-to-sahyog-ordered-instagram-block/",
+      "signals": [
+        "legal or legislative"
+      ]
+    },
+    {
+      "date": "2026-09-02",
+      "title": "IFF sends Representation to the to the DGP regarding the Maharashtra State panel’s suggestions to police social media posts",
+      "url": "https://internetfreedom.in/iff-sends-representation-to-the-to-the-dgp-regarding-the-maharashtra-state-panels-suggestions-to-police-social-media-posts/",
+      "mentions": [
+        "V-Dem Institute"
+      ]
+    },
+    {
+      "date": "2026-08-31",
+      "title": "IFF Demands Review After Viral Reel on Google Data Centre Displacement Blocked in India",
+      "url": "https://internetfreedom.in/iff-demands-review-after-viral-reel-on-google-data-centre-displacement-blocked-in-india/"
+    },
+    {
+      "date": "2026-08-27",
+      "title": "HC Directs GAC to decide an appeal in 30 days. Is there a Capacity issue?",
+      "url": "https://internetfreedom.in/hc-directs-gac-to-decide-an-appeal-in-30-days-is-there-a-capacity-issue/",
+      "signals": [
+        "legal or legislative"
+      ],
+      "routine": [
+        "petition"
+      ]
+    },
+    {
+      "date": "2026-08-25",
+      "title": "IFF supports challenge to covert Ray-Ban Meta recording and disparagement",
+      "url": "https://internetfreedom.in/iff-supports-challenge-to-covert-ray-ban-meta-recording-and-disparagement/"
+    },
+    {
+      "date": "2026-08-24",
+      "title": "A face scan for a SIM? New biometric telecom rules raise serious privacy and exclusion concerns",
+      "url": "https://internetfreedom.in/a-face-scan-for-a-sim-new-biometric-telecom-rules-raise-serious-privacy-and-exclusion-concerns/"
+    },
+    {
+      "date": "2026-08-21",
+      "title": "Illegal Breach of Protesters’ Rights to Privacy and Peaceful Assembly at Jantar Mantar",
+      "url": "https://internetfreedom.in/illegal-breach-of-protesters-rights-to-privacy-and-peaceful-assembly-at-jantar-mantar/",
+      "signals": [
+        "leadership change",
+        "mobilisation"
+      ]
+    },
+    {
+      "date": "2026-08-21",
+      "title": "IFF Sends Suggestions on Draft Central Motor Vehicles (Amendment) Rules, 2026",
+      "url": "https://internetfreedom.in/iff-sends-objects-and-suggestions-on-draft-central-motor-vehicles-amendment-rules-2026/"
+    },
+    {
+      "date": "2026-08-20",
+      "title": "First “Invalid WHOIS”, then a “Critical Keyword”, now a “Reserved Name”: IFF assists with a rejoinder as chalosansad.in remains suspended",
+      "url": "https://internetfreedom.in/first-invalid-whois-then-a-critical-keyword-now-a-reserved-name-iff-assists-with-a-rejoinder-as-chalosansad-in-remains-suspended/"
+    },
+    {
+      "date": "2026-08-18",
+      "title": "IFF sends representation to MHA on the Census 2027 Household Schedule",
+      "url": "https://internetfreedom.in/iff-sends-representation-to-mha-on-the-census-2027-household-schedule/"
+    },
+    {
+      "date": "2026-08-14",
+      "title": "Flagging data protection violations in Har Ghar Tiranga 5.0",
+      "url": "https://internetfreedom.in/flagging-data-protection-violations-in-har-ghar-tiranga-5-0/"
+    },
+    {
+      "date": "2026-08-12",
+      "title": "First “Invalid WHOIS”, then a “Critical Keyword”: IFF gives legal assistance over NIXI’s suspension of chalosansad.in",
+      "url": "https://internetfreedom.in/first-invalid-whois-then-a-critical-keyword-iff-gives-legal-assistance-over-nixis-suspension-of-chalosansad-in/"
+    },
+    {
+      "date": "2026-08-07",
+      "title": "IFF files complaints with the NCW and NCPCR on the doxxing of and violent threats against women protesters at Jantar Mantar",
+      "url": "https://internetfreedom.in/iff-files-complaints-with-the-ncw-and-ncpcr-on-the-doxxing-of-and-violent-threats-against-women-protesters-at-jantar-mantar/",
+      "signals": [
+        "mobilisation"
+      ]
+    },
+    {
+      "date": "2026-08-06",
+      "title": "IFF Publishes Factsheet on Children's Use of Social Media",
+      "url": "https://internetfreedom.in/iff-publishes-factsheet-on-childrens-use-of-social-media/",
+      "signals": [
+        "publication"
+      ]
+    },
+    {
+      "date": "2026-07-30",
+      "title": "IFF challenged the blocking of the viral ‘Dirty Data’ reel on Instagram on a proposed data centre in Vizag",
+      "url": "https://internetfreedom.in/iff-challenged-the-blocking-of-the-viral-dirty-data-reel-on-instagram-on-a-proposed-data-centre-in-vizag/",
+      "signals": [
+        "legal or legislative"
+      ]
+    },
+    {
+      "date": "2026-07-27",
+      "title": "The Delhi Police's takedown drive against posts critical of the Prime Minister is unconstitutional",
+      "url": "https://internetfreedom.in/the-delhi-polices-takedown-drive-against-posts-critical-of-the-prime-minister-is-unconstitutional/"
+    },
+    {
+      "date": "2026-07-27",
+      "title": "Supreme Court Orders Pan-India Implementation of Odisha High Court's Ruling on APAAR ID's Consent Form",
+      "url": "https://internetfreedom.in/supreme-court-orders-pan-india-implementation-of-odisha-high-courts-ruling-on-apaar-ids-consent-form/",
+      "signals": [
+        "legal or legislative"
+      ]
+    },
+    {
+      "date": "2026-07-24",
+      "title": "IFF Writes to the Commissioner of Police and files RTIs on live facial recognition at Jantar Mantar",
+      "url": "https://internetfreedom.in/iff-writes-to-the-commissioner-of-police-and-files-rtis-on-live-facial-recognition-at-jantar-mantar/",
+      "signals": [
+        "mobilisation"
+      ]
+    }
+  ],
+  "fetch": {
+    "etag": "W/\"52c6c597541b7ead0575441c77f14710\""
+  }
 }

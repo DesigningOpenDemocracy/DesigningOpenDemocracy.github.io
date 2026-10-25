@@ -21,7 +21,6 @@ location:
   longitude: -0.1278
   name: London, United Kingdom
   precision: city
-rss_feed: https://www.yourparty.uk/feed
 events:
 - date: '2025-07-24'
   title: Announced by Jeremy Corbyn and Zarah Sultana, registered with the Electoral
@@ -69,6 +68,11 @@ activity:
     note: RSS feed active
     url: https://www.yourparty.uk/feed
     checked: 2026-09-27
+  sitemap:
+    date: 2026-10-22
+    note: Page last modified (from sitemap)
+    url: https://www.yourparty.uk/sitemap_index.xml
+    checked: 2026-10-25
 last_checked: '2026-09-16'
 ---
 

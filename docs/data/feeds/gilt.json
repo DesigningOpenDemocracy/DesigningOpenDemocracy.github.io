@@ -1,5 +1,15 @@
 {
-  "feed": "https://www.gilt.at/feed",
-  "latest": null,
-  "items": []
+  "probed": "2026-10-25",
+  "sitemap": "https://www.gilt.at/wp-sitemap.xml",
+  "seen": [
+    "3993d46ef048",
+    "40c90c859aa4",
+    "6a3f8b49205d",
+    "82cfc39ade84",
+    "bca988d06309",
+    "c63711ac0455",
+    "cf112f9f2420",
+    "e714c008ab27",
+    "ed82f71d5c13"
+  ]
 }

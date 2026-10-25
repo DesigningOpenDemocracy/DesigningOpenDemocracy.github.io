@@ -207,6 +207,20 @@ def looks_like_feed(response):
     return body.startswith(FEED_BODY_PREFIXES)
 
 
+def _lists_posts(body):
+    """Whether a discovery candidate is a feed worth recording: an XML body
+    has to list at least one dated post. Without this, join.gov.tw's
+    homepage (HTML that opens with an XML declaration) and WordPress feeds
+    that list nothing because the site's news is a custom post type were
+    recorded as `rss_feed:`, and the org was then never given the sitemap
+    tracking that would have seen its new pages. JSON bodies pass, since
+    this parser doesn't read JSON Feed."""
+    head = (body or b"")[:64].lstrip(b"\xef\xbb\xbf \t\r\n")
+    if head.startswith((b"{", b"[")):
+        return True
+    return bool(parse_feed_entries(body))
+
+
 def is_sitemap_url(url):
     """True if url looks like a sitemap rather than an RSS/Atom feed."""
     return "sitemap" in urlparse(url).path.lower()
@@ -288,7 +302,7 @@ def probe_feeds(base_url, timeout=8, session=None):
             continue
         try:
             r = session.get(url, timeout=timeout, allow_redirects=True)
-            if r.status_code == 200 and looks_like_feed(r):
+            if r.status_code == 200 and looks_like_feed(r) and _lists_posts(r.content):
                 return url
         except RequestException:
             pass
@@ -450,23 +464,48 @@ def latest_from_ical(url, timeout=10, session=None):
 
 
 def _read_feed_body(r):
-    """A streamed response's body, or None past FEED_MAX_BYTES. A declared
-    Content-Length over the cap skips the download outright; the running
-    total catches a missing or wrong header (same approach as
-    check_fragments.py's _read_capped())."""
+    """(body, truncated) for a streamed response, or (None, False) when a
+    declared Content-Length is over FEED_MAX_BYTES, which skips the download
+    outright. Without a declared length, reading stops at the cap and
+    `truncated` says it did; the caller keeps whatever complete posts the
+    part read so far holds (see _parse_partial_feed), since the newest posts
+    come first in a feed."""
     declared = r.headers.get("Content-Length")
     if declared is not None:
         try:
             if int(declared) > FEED_MAX_BYTES:
-                return None
+                return None, False
         except ValueError:
             pass
     body = bytearray()
     for chunk in r.iter_content(chunk_size=65536):
         body.extend(chunk)
         if len(body) > FEED_MAX_BYTES:
-            return None
-    return bytes(body)
+            return bytes(body[:FEED_MAX_BYTES]), True
+    return bytes(body), False
+
+
+def _parse_partial_feed(content):
+    """The complete posts in the opening of a feed cut off mid-document, or
+    None if not even one parses. Internet Freedom Foundation's feed carries
+    every post's full text and runs past FEED_MAX_BYTES, so until 2026-10-25
+    it was abandoned as TOO_LARGE on every read and none of its posts
+    reached the checkup."""
+    parser = ET.XMLPullParser(events=("start", "end"))
+    root, closed = None, set()
+    try:
+        parser.feed(_strip_xml_preamble(content))
+        for event, el in parser.read_events():
+            if event == "start" and root is None:
+                root = el
+            elif event == "end":
+                closed.add(el)
+    except ET.ParseError:
+        pass  # the cut-off tail; whatever closed before it is usable
+    if root is None:
+        return None
+    entries = _entries_from_root(root, closed)  # the post cut off mid-way is left out
+    return entries or None
 
 
 def fetch_feed(url, timeout=10, session=None, validators=None):
@@ -498,14 +537,19 @@ def fetch_feed(url, timeout=10, session=None, validators=None):
                 return {"status": "not_modified"}
             if r.status_code >= 400:
                 return {"status": "error", "error": f"HTTP_{r.status_code}"}
-            body = _read_feed_body(r)
+            body, truncated = _read_feed_body(r)
         finally:
             r.close()
     except RequestException:
         return {"status": "error", "error": "NETWORK_ERROR"}
     if body is None:
         return {"status": "error", "error": "TOO_LARGE"}
-    entries = _parse_feed(body)
+    if truncated:
+        entries = _parse_partial_feed(body)
+        if entries is None:
+            return {"status": "error", "error": "TOO_LARGE"}
+    else:
+        entries = _parse_feed(body)
     if entries is None:
         return {"status": "error", "error": "UNPARSEABLE"}
     sent = {key: r.headers.get(header)
@@ -833,20 +877,36 @@ def parse_feed_entries(content):
     return _parse_feed(content) or []
 
 
+def _strip_xml_preamble(content):
+    """Drop a byte-order mark and whitespace before the XML declaration,
+    which the parser rejects: Democracy Without Borders' WordPress feed
+    opens with blank lines (a stray newline in a theme file), and was
+    reported UNPARSEABLE on every read until 2026-10-25."""
+    content = content or b""
+    if isinstance(content, str):
+        return content.lstrip("\ufeff \t\r\n")
+    return content.lstrip(b" \t\r\n").removeprefix(b"\xef\xbb\xbf").lstrip(b" \t\r\n")
+
+
 def _parse_feed(content):
     """parse_feed_entries(), but None rather than [] when the document isn't
     XML at all, so fetch_feed() can tell a broken feed from an empty one."""
     try:
-        root = ET.fromstring(content)
+        root = ET.fromstring(_strip_xml_preamble(content))
     except ET.ParseError:
         return None
+    return _entries_from_root(root)
 
+
+def _entries_from_root(root, closed=None):
     local = re.sub(r"\{[^}]*\}", "", root.tag).lower()
     ns = root.tag.split("}")[0] + "}" if root.tag.startswith("{") else ""
     entries = []
 
     if local == "rss":
         for item in root.findall(".//item"):
+            if closed is not None and item not in closed:
+                continue
             title = (item.findtext("title") or "").strip()
             d = parse_date(item.findtext("pubDate") or item.findtext(_DC_DATE))
             link = (item.findtext("link") or "").strip()
@@ -860,6 +920,8 @@ def _parse_feed(content):
                                 "body_html": item.findtext(_CONTENT_ENCODED) or ""})
     elif local == "feed":
         for entry in root.findall(f"{ns}entry"):
+            if closed is not None and entry not in closed:
+                continue
             title_el = entry.find(f"{ns}title")
             title = (title_el.text or "").strip() if title_el is not None else ""
             published = parse_date(entry.findtext(f"{ns}published"))

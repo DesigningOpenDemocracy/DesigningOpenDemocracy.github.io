@@ -22,7 +22,7 @@ location:
   longitude: 24.7536
   name: Tallinn, Estonia
 news_page: https://citizenos.com/news/
-rss_feed: https://citizenos.com/feed
+rss_feed: https://citizenos.com/feed/?post_type=news
 events:
 - date: '2015-01-01'
   title: Founded by Ahti Heinla, Margo Loor and the Let’s Do It! Foundation
@@ -65,10 +65,11 @@ activity:
     url: https://citizenos.com
     checked: 2026-09-26
   rss:
-    date: 2026-09-25
-    note: RSS feed active
-    url: https://citizenos.com/feed
-    checked: 2026-09-25
+    date: 2025-07-23
+    note: 'Latest post: Big Tech & Small Tech: Is Profit Over People Shrinking Civic
+      Space for Good?'
+    url: https://citizenos.com/news/big-tech-small-tech-civic-space/
+    checked: 2026-10-25
   scrape:
     checked: 2026-10-23
     date: 2023-06-19

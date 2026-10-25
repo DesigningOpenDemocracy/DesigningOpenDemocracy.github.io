@@ -24,7 +24,6 @@ location:
   longitude: -46.6333
   name: São Paulo, Brazil
   precision: city
-rss_feed: https://deliberabrasil.org/feed
 events:
 - date: '2020-01-01'
   title: Organisation established — begins running deliberative minipublics in Brazil
@@ -70,6 +69,9 @@ activity:
     note: RSS feed active
     url: https://deliberabrasil.org/feed
     checked: 2026-10-02
+  sitemap:
+    note: Sitemap found, no lastmod
+    checked: 2026-10-25
 last_checked: '2026-09-17'
 ---
 

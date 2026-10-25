@@ -50,6 +50,7 @@ import argparse
 import glob
 import json
 import os
+import re
 import sys
 from datetime import date, datetime, timedelta
 from urllib.parse import urlsplit
@@ -88,6 +89,12 @@ STALE_READ_DAYS = 45
 # saved for the feed (up to 180 days), which needs this many posts to mean
 # anything.
 USUAL_MIN_POSTS = 5
+
+# A "title" that's a CMS's internal id rather than words, such as the
+# "ans_9378_1587438320" entries International IDEA's feed carries alongside
+# its real posts (five of its thirteen saved in October 2026). They link to
+# bare /node/<n> pages and say nothing, so they're hidden and only counted.
+MACHINE_TITLE = re.compile(r"^[A-Za-z]{0,12}[_-]?\d+(?:[_-]\d+)+$")
 
 # A feed whose newest post is older than this is listed as dormant, which is
 # worth a look at the org's status: it may have moved its posts elsewhere,
@@ -197,7 +204,7 @@ def checkup(orgs, recorded, state, today, load_items=load_feed_items,
             groups.setdefault(org["rss_feed"], []).append(org)
 
     report = {"today": today, "feeds": [], "quiet": [], "empty": [], "failing": [],
-              "uncollected": [], "pages": [], "recorded": 0, "uncovered": 0}
+              "uncollected": [], "pages": [], "recorded": 0, "untitled": 0, "uncovered": 0}
 
     for feed, members in groups.items():
         since = min(since_for(o["slug"], state, default_since, since_override) for o in members)
@@ -225,6 +232,9 @@ def checkup(orgs, recorded, state, today, load_items=load_feed_items,
                 continue
             if item.get("url") and norm_url(item["url"]) in recorded:
                 recorded_here += 1
+                continue
+            if MACHINE_TITLE.match(str(item.get("title") or "").strip()):
+                report["untitled"] += 1
                 continue
             new.append({**item, "date": d})
         new.sort(key=lambda i: (i["date"], i.get("title") or ""), reverse=True)
@@ -391,7 +401,8 @@ def render_markdown(report):
         + "** · "
         f"{len(report['pages'])} news page{'s' if len(report['pages']) != 1 else ''} with a newer post · "
         f"{report['recorded']} already in `events:` (hidden) · "
-        f"{len(report['quiet'])} quiet",
+        + (f"{report['untitled']} with an id for a title (hidden) · " if report["untitled"] else "")
+        + f"{len(report['quiet'])} quiet",
         "",
     ]
 

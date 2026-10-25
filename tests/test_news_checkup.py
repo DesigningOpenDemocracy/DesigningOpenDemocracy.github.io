@@ -195,6 +195,17 @@ class CheckupTests(unittest.TestCase):
         self.assertEqual([i["title"] for i in r["feeds"][0]["items"]], ["New"])
         self.assertEqual(r["recorded"], 1)
 
+    def test_machine_id_titles_are_hidden_and_counted(self):
+        r = self.run_checkup([org("a", "https://a.org/feed")], {"a": cache(
+            post("2026-09-20", "ans_9378_1587438320", "https://a.org/node/1"),
+            post("2026-09-21", "Review of the 2025 Year of Elections", "https://a.org/2"),
+            post("2026-09-22", "Report 2026-27", "https://a.org/3"),
+        )})
+        self.assertEqual([i["title"] for i in r["feeds"][0]["items"]],
+                         ["Report 2026-27", "Review of the 2025 Year of Elections"])
+        self.assertEqual(r["untitled"], 1)
+        self.assertIn("1 with an id for a title (hidden)", nc.render_markdown(r))
+
     def test_shared_feed_is_one_section(self):
         feed = "https://parent.org/feed"
         items = cache(post("2026-09-20", "P", "https://parent.org/p"))

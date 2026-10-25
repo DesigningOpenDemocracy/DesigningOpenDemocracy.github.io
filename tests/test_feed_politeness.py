@@ -123,12 +123,35 @@ class FetchFeedTests(unittest.TestCase):
         self.assertEqual(cr.fetch_feed("https://ex.org/feed", session=s)["error"], "TOO_LARGE")
         self.assertEqual(s.response.read_bytes, 0)
 
-    def test_undeclared_oversize_body_is_abandoned(self):
+    def test_undeclared_oversize_body_with_no_complete_post_is_abandoned(self):
         big = b"<rss>" + b"x" * (cr.FEED_MAX_BYTES + 200000)
         s = FakeSession(FakeResponse(200, big))
         self.assertEqual(cr.fetch_feed("https://ex.org/feed", session=s)["error"], "TOO_LARGE")
         self.assertLess(s.response.read_bytes, len(big))
         self.assertTrue(s.response.closed)
+
+    def test_oversize_body_keeps_the_complete_posts_it_read(self):
+        item = (b"<item><title>Post %d</title><link>https://ex.org/%d</link>"
+                b"<pubDate>Mon, 21 Sep 2026 09:00:00 +0000</pubDate><description>%s</description></item>")
+        filler = b"x" * 400000
+        head = b"<?xml version='1.0'?><rss><channel>"
+        items = [item % (i, i, filler) for i in range(20)]
+        big = head + b"".join(items) + b"</channel></rss>"
+        complete, end = 0, len(head)
+        for it in items:  # posts that close before the cap
+            end += len(it)
+            if end > cr.FEED_MAX_BYTES:
+                break
+            complete += 1
+        s = FakeSession(FakeResponse(200, big))
+        got = cr.fetch_feed("https://ex.org/feed", session=s)
+        self.assertEqual(got["status"], "ok")
+        self.assertEqual([e["title"] for e in got["entries"]], [f"Post {i}" for i in range(complete)])
+        self.assertLess(s.response.read_bytes, len(big))
+
+    def test_whitespace_before_the_xml_declaration_parses(self):
+        got = cr.fetch_feed("u", session=FakeSession(FakeResponse(200, b"\r\n\r\n" + RSS)))
+        self.assertEqual([e["title"] for e in got["entries"]], ["A post"])
 
     def test_broken_and_empty_are_different(self):
         broken = cr.fetch_feed("u", session=FakeSession(FakeResponse(200, b"<html>not a feed")))
@@ -244,6 +267,25 @@ class ScheduleTests(unittest.TestCase):
         self.assertEqual(cr.discovery_action("ex", state, "2026-09-28", TODAY + timedelta(days=28)),
                          ("sitemap", "https://ex.org/sitemap.xml"))
 
+
+
+class DiscoveryAcceptsOnlyFeedsWithPostsTests(unittest.TestCase):
+    """Discovery records a candidate as `rss_feed:` only if it lists posts:
+    join.gov.tw's homepage opens with an XML declaration, and several
+    WordPress sites' /feed lists nothing because their news is a custom post
+    type. Recorded as feeds, those orgs never got sitemap tracking."""
+
+    def test_feed_with_posts(self):
+        self.assertTrue(cr._lists_posts(RSS))
+
+    def test_empty_feed(self):
+        self.assertFalse(cr._lists_posts(EMPTY_RSS))
+
+    def test_html_with_an_xml_declaration(self):
+        self.assertFalse(cr._lists_posts(b'<?xml version="1.0"?>\r\n<!DOCTYPE html><html><head></head></html>'))
+
+    def test_json_feed_passes(self):
+        self.assertTrue(cr._lists_posts(b'{"version":"https://jsonfeed.org/version/1.1","items":[]}'))
 
 if __name__ == "__main__":
     unittest.main()
