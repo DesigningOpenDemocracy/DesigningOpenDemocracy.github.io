@@ -1,4 +1,14 @@
 {
   "probed": "2026-10-02",
-  "sitemap": "https://itsrio.org/sitemap.xml"
+  "sitemap": "https://itsrio.org/sitemap.xml",
+  "seen": [
+    "1aa343a026d9",
+    "24b72ea3568c",
+    "343fbb937edb",
+    "496f195f23f2",
+    "50b5750924ae",
+    "58b8ab8dffd2",
+    "cd06f3d6b9e4",
+    "ecd48406b221"
+  ]
 }

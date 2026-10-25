@@ -114,6 +114,35 @@ FEEDS_DIR = os.path.join(DOCS_DIR, "data", "feeds")
 FEED_ITEMS_KEEP_DAYS = 180
 FEED_ITEMS_MAX = 50
 
+# An org with no feed often still publishes a sitemap, and a page that wasn't
+# in it last time is usually something new: a campaign, an event, a report.
+# Australian Democracy Network's site is a JavaScript app with no feed, so
+# nothing it published reached the news checkup, though its sitemap listed
+# its new Declaration campaign page and two event pages within days of them
+# going up (2026-10-25). So when the probe reads a sitemap it also keeps the
+# list of page URLs (`seen`) and records any URL not seen on the last read
+# as a new page (`pages`), titled from its URL, for news_checkup.py. The
+# first read is a baseline and lists nothing. A sitemap listing more than
+# SITEMAP_SEEN_MAX pages isn't tracked (a large CMS or a platform's own
+# sitemap, like YouTube's, would bloat the state file and say little), and
+# archive-style paths (tags, categories, authors, pagination) are ignored,
+# since a CMS adds those as a side effect of a post rather than as news.
+# A sitemap index is followed to one child sitemap: the one with the newest
+# <lastmod>, or the first post/page/news/event one when none carry a date,
+# skipping author/tag/category children (Democracy Technologies' newest was
+# its author sitemap, every URL of which the archive-path filter drops).
+# `seen` holds a 12-hex-digit hash of each URL rather than the URL: it only
+# has to answer "was this here last time?", and the URLs themselves made the
+# baseline ~11,000 lines across 40 orgs (Memorial's alone 125 KB).
+SITEMAP_SEEN_MAX = 2000
+SITEMAP_PAGES_KEEP_DAYS = FEED_ITEMS_KEEP_DAYS
+SITEMAP_PAGES_MAX = FEED_ITEMS_MAX
+_SITEMAP_ARCHIVE_PATH = re.compile(
+    r"/(tag|tags|category|categories|author|authors|page|feed|wp-content|search|"
+    r"login|account|cart|checkout)(/|$)", re.IGNORECASE)
+_SITEMAP_CHILD_HINT = re.compile(r"post|page|news|event|article|blog", re.IGNORECASE)
+_SITEMAP_ARCHIVE_CHILD = re.compile(r"author|tag|categor|attachment", re.IGNORECASE)
+
 # Common feed URL paths to probe (tried in order, stop at first hit)
 FEED_PATHS = [
     "/feed",
@@ -268,38 +297,75 @@ def probe_feeds(base_url, timeout=8, session=None):
     return probe_sitemap(root, timeout=timeout, session=session)
 
 
-def latest_sitemap_lastmod(sitemap_url, timeout=10, session=None):
-    """Return the most recent <lastmod> date from a sitemap, or None."""
-    if session is None:
-        session = requests.Session()
-        session.headers["User-Agent"] = DOD_USER_AGENT
+def _get_xml(url, timeout, session):
     try:
-        r = session.get(sitemap_url, timeout=timeout)
+        r = session.get(url, timeout=timeout)
         r.raise_for_status()
-        root = ET.fromstring(r.content)
+        return ET.fromstring(r.content)
     except Exception:
         return None
 
+
+def _sitemap_entries(root, tag):
+    """[(loc, lastmod date or None)] for each <tag> (url or sitemap) in a
+    parsed sitemap."""
     ns = root.tag.split("}")[0] + "}" if root.tag.startswith("{") else ""
+    out = []
+    for el in root.findall(f"{ns}{tag}"):
+        loc = (el.findtext(f"{ns}loc") or "").strip()
+        lm = (el.findtext(f"{ns}lastmod") or "").strip()
+        if loc:
+            out.append((loc, parse_date(lm) if lm else None))
+    return out
+
+
+def _pick_child_sitemap(children):
+    """The one child of a sitemap index most likely to hold new pages (see
+    SITEMAP_SEEN_MAX's comment), or None."""
+    children = [c for c in children if not _SITEMAP_ARCHIVE_CHILD.search(urlparse(c[0]).path)]
+    dated = [c for c in children if c[1]]
+    if dated:
+        return max(dated, key=lambda c: c[1])[0]
+    hinted = [c for c in children if _SITEMAP_CHILD_HINT.search(urlparse(c[0]).path)]
+    return (hinted or children or [(None, None)])[0][0]
+
+
+def read_sitemap(sitemap_url, timeout=10, session=None):
+    """{"lastmod": newest <lastmod> date or None, "pages": [page URLs] or
+    None} for a sitemap, or None if it can't be read. `pages` is None for a
+    sitemap index whose chosen child can't be read, so a failed read never
+    looks like every page vanishing."""
+    if session is None:
+        session = requests.Session()
+        session.headers["User-Agent"] = DOD_USER_AGENT
+    root = _get_xml(sitemap_url, timeout, session)
+    if root is None:
+        return None
     local = re.sub(r"\{[^}]*\}", "", root.tag).lower()
-    dates = []
-
     if local == "sitemapindex":
-        for sitemap in root.findall(f"{ns}sitemap")[:5]:
-            lm = sitemap.findtext(f"{ns}lastmod")
-            if lm:
-                d = parse_date(lm.strip())
-                if d:
-                    dates.append(d)
-    elif local == "urlset":
-        for url in root.findall(f"{ns}url"):
-            lm = url.findtext(f"{ns}lastmod")
-            if lm:
-                d = parse_date(lm.strip())
-                if d:
-                    dates.append(d)
+        children = _sitemap_entries(root, "sitemap")
+        dates = [d for _, d in children[:5] if d]
+        result = {"lastmod": max(dates) if dates else None, "pages": None}
+        child = _pick_child_sitemap(children)
+        child_root = _get_xml(child, timeout, session) if child else None
+        if child_root is not None:
+            urls = _sitemap_entries(child_root, "url")
+            result["pages"] = [u for u, _ in urls]
+            child_dates = [d for _, d in urls if d]
+            if child_dates and (result["lastmod"] is None or max(child_dates) > result["lastmod"]):
+                result["lastmod"] = max(child_dates)
+        return result
+    if local == "urlset":
+        urls = _sitemap_entries(root, "url")
+        dates = [d for _, d in urls if d]
+        return {"lastmod": max(dates) if dates else None, "pages": [u for u, _ in urls]}
+    return {"lastmod": None, "pages": None}
 
-    return max(dates) if dates else None
+
+def latest_sitemap_lastmod(sitemap_url, timeout=10, session=None):
+    """Return the most recent <lastmod> date from a sitemap, or None."""
+    res = read_sitemap(sitemap_url, timeout=timeout, session=session)
+    return res["lastmod"] if res else None
 
 
 def parse_date(s):
@@ -520,6 +586,11 @@ def merge_feed_items(existing, entries, today, keep_days=None, max_items=None):
 #   failing  a backoff.py failure record while reads are failing
 #   probed   (org with no feed) the date discovery last ran
 #   sitemap  (org with no feed) the sitemap discovery found, read monthly
+#   seen     (org with no feed) the page URLs that sitemap listed on its
+#            last read, as sorted short hashes (see _seen_key)
+#   pages    (org with no feed) pages that first appeared in the sitemap,
+#            [{date, title, url}] like `items`, `date` being the read that
+#            first saw them (see record_sitemap_pages)
 #
 # Dates, titles and links only: no summaries or post text, the same reason
 # citation-state.json holds hashes rather than page bodies. There's no
@@ -528,7 +599,8 @@ def merge_feed_items(existing, entries, today, keep_days=None, max_items=None):
 # pass. One file per org rather than one shared file, so a local run and the
 # cron rarely touch the same file.
 
-_STATE_KEYS = ("feed", "latest", "span_days", "items", "fetch", "failing", "probed", "sitemap")
+_STATE_KEYS = ("feed", "latest", "span_days", "items", "fetch", "failing", "probed", "sitemap",
+               "seen", "pages")
 
 
 def _as_date(value):
@@ -585,7 +657,7 @@ def save_feed_items(slug, feed_url, entries, today=None, feeds_dir=None, validat
     else:
         state.pop("fetch", None)
     state.pop("failing", None)
-    for key in ("probed", "sitemap"):  # discovery bookkeeping; it has a feed now
+    for key in ("probed", "sitemap", "seen", "pages"):  # discovery bookkeeping; it has a feed now
         state.pop(key, None)
     return write_feed_state(slug, state, feeds_dir)
 
@@ -613,10 +685,75 @@ def record_discovery(slug, sitemap_url, today=None, feeds_dir=None):
     state = load_feed_state(slug, feeds_dir)
     state["probed"] = (today or date.today()).isoformat()
     if sitemap_url:
+        if state.get("sitemap") not in (None, sitemap_url):
+            state.pop("seen", None)  # a different sitemap: start a new baseline
         state["sitemap"] = sitemap_url
     else:
         state.pop("sitemap", None)
+        state.pop("seen", None)
     write_feed_state(slug, state, feeds_dir)
+
+
+def _seen_key(url):
+    """How a page URL is stored in `seen`: the first 12 hex digits of a
+    SHA-256 of the URL, scheme, a leading www. and a trailing slash
+    ignored, so the same page isn't new again when a site switches to
+    https or drops a slash."""
+    import hashlib
+    parts = urlsplit(url.strip())
+    host = parts.netloc.lower()
+    host = host[4:] if host.startswith("www.") else host
+    norm = host + parts.path.rstrip("/") + (f"?{parts.query}" if parts.query else "")
+    return hashlib.sha256(norm.encode("utf-8")).hexdigest()[:12]
+
+
+def page_title_from_url(url):
+    """A readable stand-in title for a page known only by its URL: the last
+    path segment, extension dropped, hyphens and underscores as spaces
+    ("/unlocking-better-politics-melbourne" -> "unlocking better politics
+    melbourne"). The host when the path is empty."""
+    from urllib.parse import unquote
+    parts = urlsplit(url)
+    segments = [s for s in parts.path.split("/") if s]
+    if not segments:
+        return parts.netloc
+    last = re.sub(r"\.(html?|php|aspx?)$", "", unquote(segments[-1]), flags=re.IGNORECASE)
+    return " ".join(re.sub(r"[-_+]+", " ", last).split()) or parts.netloc
+
+
+def record_sitemap_pages(slug, sitemap_url, pages, today=None, feeds_dir=None):
+    """Compare a sitemap's page list with the last read's and record the new
+    ones (see SITEMAP_SEEN_MAX's comment). Returns the new pages, [] on a
+    baseline read, or None when the sitemap isn't tracked (too large)."""
+    today = today or date.today()
+    state = load_feed_state(slug, feeds_dir)
+    pages = [u for u in dict.fromkeys(pages or []) if not _SITEMAP_ARCHIVE_PATH.search(urlsplit(u).path)]
+    if len(pages) > SITEMAP_SEEN_MAX:
+        if state.pop("seen", None) is not None:
+            write_feed_state(slug, state, feeds_dir)
+        return None
+    keys = {_seen_key(u): u for u in pages}
+    previous = state.get("seen")
+    new = []
+    if isinstance(previous, list):
+        known = set(previous)
+        for key, url in keys.items():
+            if key not in known:
+                title = page_title_from_url(url)
+                worth, routine = news_signals.signals(title)
+                new.append({"date": today.isoformat(), "title": title, "url": url,
+                            "signals": worth, "routine": routine})
+    state["seen"] = sorted(keys)
+    if new:
+        merged = {i["url"]: i for i in state.get("pages") or []}
+        for item in new:
+            merged.setdefault(item["url"], item)
+        cutoff = (today - timedelta(days=SITEMAP_PAGES_KEEP_DAYS)).isoformat()
+        kept = sorted((i for i in merged.values() if str(i.get("date", "")) >= cutoff),
+                      key=lambda i: (str(i["date"]), i["url"]), reverse=True)
+        state["pages"] = kept[:SITEMAP_PAGES_MAX]
+    write_feed_state(slug, state, feeds_dir)
+    return new
 
 
 def feed_due(state, rss_checked, today):
@@ -1101,7 +1238,12 @@ def main():
             continue
 
         if sitemap_url:
-            d = latest_sitemap_lastmod(sitemap_url, timeout=args.timeout, session=session)
+            sm = read_sitemap(sitemap_url, timeout=args.timeout, session=session)
+            d = sm["lastmod"] if sm else None
+            if sm and sm["pages"]:
+                new_pages = record_sitemap_pages(slug, sitemap_url, sm["pages"], today)
+                if new_pages:
+                    print(f"NEW PAGES ({len(new_pages)})  ", end="")
             if d:
                 if not update_activity_source(org["path"], d.isoformat(),
                                               "Page last modified (from sitemap)", sitemap_url,

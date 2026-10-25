@@ -24,7 +24,10 @@ What it lists, per org, is every saved post published on or after that
 org's last review, minus anything already cited as an event `url:` or
 `coverage_url:` on any org page (a post recorded on a co-host's page counts
 too). Orgs with a `news_page:` but no feed get a line from the last
-scrape_news.py run instead; only that page's newest post is known.
+scrape_news.py run instead; only that page's newest post is known. Orgs
+with no feed whose sitemap the probe reads get a section of pages that
+first appeared in it (check_rss.py's record_sitemap_pages), titled from
+their URLs, since that's all a sitemap says about them.
 
 --mark-reviewed records each org as reviewed through the date its feed was
 last read (activity.rss.checked; activity.scrape.checked for news pages),
@@ -140,6 +143,7 @@ def load_orgs(orgs_dir=ORGS_DIR):
             "rss_feed": m.get("rss_feed") or "",
             "news_page": m.get("news_page") or "",
             "rss_read": parse_date((activity.get("rss") or {}).get("checked")),
+            "sitemap_read": parse_date((activity.get("sitemap") or {}).get("checked")),
             "scrape": activity.get("scrape") or {},
         })
     return orgs, recorded
@@ -156,7 +160,9 @@ def load_feed_items(slug, feeds_dir=FEEDS_DIR):
     with open(path, encoding="utf-8") as f:
         data = json.load(f)
     return {"latest": data.get("latest"), "items": data.get("items") or [],
-            "failing": data.get("failing"), "read": "latest" in data}
+            "failing": data.get("failing"), "read": "latest" in data,
+            "sitemap": data.get("sitemap"), "tracked": "seen" in data,
+            "pages": data.get("pages") or []}
 
 
 def load_state(path=STATE_FILE):
@@ -238,8 +244,28 @@ def checkup(orgs, recorded, state, today, load_items=load_feed_items,
     for org in orgs:
         if org["rss_feed"]:
             continue
+        cache = load_items(org["slug"]) or {}
+        tracked = bool(cache.get("tracked"))
+        if tracked:
+            since = since_for(org["slug"], state, default_since, since_override)
+            new = []
+            for item in cache.get("pages") or []:
+                d = parse_date(item.get("date"))
+                if not d or d < since:
+                    continue
+                if item.get("url") and norm_url(item["url"]) in recorded:
+                    report["recorded"] += 1
+                    continue
+                new.append({**item, "date": d})
+            if new:
+                new.sort(key=lambda i: (i["date"], i.get("title") or ""), reverse=True)
+                report["feeds"].append({
+                    "orgs": [org], "feed": cache.get("sitemap"), "sitemap": True,
+                    "since": since, "read": org.get("sitemap_read"), "latest": new[0]["date"],
+                    "stale": False, "usual": set(), "items": new})
         if not org["news_page"]:
-            report["uncovered"] += 1
+            if not tracked:
+                report["uncovered"] += 1
             continue
         scrape = org["scrape"]
         d = parse_date(scrape.get("date"))
@@ -346,6 +372,8 @@ def render_markdown(report):
     n_items = sum(len(s["items"]) for s in report["feeds"])
     picks = start_here(report)
     n_routine = sum(1 for s in report["feeds"] for i in s["items"] if triage(i)[1])
+    n_sitemaps = sum(1 for s in report["feeds"] if s.get("sitemap"))
+    n_feeds = len(report["feeds"]) - n_sitemaps
     out = [
         f"# Landscape news checkup — {today.isoformat()}",
         "",
@@ -357,8 +385,10 @@ def render_markdown(report):
         "not a source. Then run `python util/news_checkup.py --mark-reviewed` and commit "
         "`docs/data/news-checkup-state.json`.",
         "",
-        f"**{n_items} new post{'s' if n_items != 1 else ''} from {len(report['feeds'])} "
-        f"feed{'s' if len(report['feeds']) != 1 else ''}** · "
+        f"**{n_items} new post{'s' if n_items != 1 else ''} from {n_feeds} "
+        f"feed{'s' if n_feeds != 1 else ''}"
+        + (f" and {n_sitemaps} sitemap{'s' if n_sitemaps != 1 else ''}" if n_sitemaps else "")
+        + "** · "
         f"{len(report['pages'])} news page{'s' if len(report['pages']) != 1 else ''} with a newer post · "
         f"{report['recorded']} already in `events:` (hidden) · "
         f"{len(report['quiet'])} quiet",
@@ -386,8 +416,14 @@ def render_markdown(report):
         pages = ", ".join(f"`docs/organisations/{o['slug']}.md`" for o in s["orgs"])
         read = s["read"].isoformat() if s["read"] else "never"
         warn = f" · ⚠ feed not read for {(today - s['read']).days} days" if s["stale"] and s["read"] else ""
-        out += [f"## {_md_text(_org_names(s['orgs']))} — {len(s['items'])} since {s['since'].isoformat()}",
-                "", f"{pages} · feed read {read}{warn}", ""]
+        if s.get("sitemap"):
+            out += [f"## {_md_text(_org_names(s['orgs']))} — {len(s['items'])} new "
+                    f"page{'s' if len(s['items']) != 1 else ''} since {s['since'].isoformat()}",
+                    "", f"{pages} · no feed; pages new in its [sitemap]({s['feed']}) "
+                    f"(read {read}), titled from their URLs, so open each to see what it is", ""]
+        else:
+            out += [f"## {_md_text(_org_names(s['orgs']))} — {len(s['items'])} since {s['since'].isoformat()}",
+                    "", f"{pages} · feed read {read}{warn}", ""]
         if s.get("usual"):
             out += [f"Most of this feed's posts are tagged {', '.join(sorted(s['usual']))}: that's "
                     "its usual output, so the tag alone doesn't put a post in Start here.", ""]
@@ -453,9 +489,9 @@ def render_markdown(report):
                     f"`{o['slug']}`" for s in report["uncollected"] for o in s["orgs"]) + ".", ""]
 
     if report["uncovered"]:
-        out += [f"{report['uncovered']} active orgs have neither `rss_feed:` nor `news_page:`, "
-                "so this checkup can't see them. Their news reaches `events:` only through "
-                "the heartbeat's staleness queue.", ""]
+        out += [f"{report['uncovered']} active orgs have no `rss_feed:`, no `news_page:` and no "
+                "sitemap the probe tracks, so this checkup can't see them. Their news reaches "
+                "`events:` only through the heartbeat's staleness queue.", ""]
     return "\n".join(out)
 
 

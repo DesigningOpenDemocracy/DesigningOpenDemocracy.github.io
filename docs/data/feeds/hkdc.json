@@ -1,4 +1,10 @@
 {
   "probed": "2026-10-02",
-  "sitemap": "https://www.hkdc.us/sitemap.xml"
+  "sitemap": "https://www.hkdc.us/sitemap.xml",
+  "seen": [
+    "6662785a6bc1",
+    "6efd972b8e1b",
+    "8e15efb866b0",
+    "ccfd424228b8"
+  ]
 }
