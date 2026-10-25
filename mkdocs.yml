@@ -136,6 +136,7 @@ hooks:
 exclude_docs: |
   overrides/sitemap.xml
   data/feeds/
+  data/world-news.json
 
 not_in_nav: |
   llms.txt

@@ -1,0 +1,59 @@
+# World news sources for util/world_news.py (the heartbeat's "Read the room"
+# step). Each is a publisher's own RSS/Atom/RDF feed, read directly: no
+# aggregator re-ranks what reaches us, which is the point of having many
+# sources rather than one search. Google News was considered and is
+# unavailable anyway: news.google.com/robots.txt disallows /rss for every
+# crawler (and names Anthropic's specifically), and robots.txt is honoured.
+#
+# Picked for spread rather than size: wires and broadcasters from several
+# countries, regional outlets in Africa, Asia, the Pacific, Latin America and
+# Eurasia, a few non-English feeds, and trackers that cover governance on
+# purpose. Every feed below answered with dated items on 2026-10-25. Add to
+# it when a good source turns up; a source that keeps failing shows in the
+# worklist's "Failing sources" line and can be dropped or replaced.
+#
+# Fields: name (unique), url, region, lang (ISO 639-1), kind
+# (wire | regional | specialist).
+
+# Global wires and international broadcasters
+- {name: BBC World, url: "https://feeds.bbci.co.uk/news/world/rss.xml", region: global, lang: en, kind: wire}
+- {name: Al Jazeera, url: "https://www.aljazeera.com/xml/rss/all.xml", region: global, lang: en, kind: wire}
+- {name: The Guardian World, url: "https://www.theguardian.com/world/rss", region: global, lang: en, kind: wire}
+- {name: France 24, url: "https://www.france24.com/en/rss", region: global, lang: en, kind: wire}
+- {name: RFI English, url: "https://www.rfi.fr/en/rss", region: global, lang: en, kind: wire}
+- {name: DW, url: "https://rss.dw.com/rdf/rss-en-all", region: global, lang: en, kind: wire}
+
+# Trackers and analysis that cover governance on purpose
+- {name: ConstitutionNet, url: "https://constitutionnet.org/rss.xml", region: global, lang: en, kind: specialist}
+- {name: Freedom House, url: "https://freedomhouse.org/rss.xml", region: global, lang: en, kind: specialist}
+- {name: Global Voices, url: "https://globalvoices.org/feed/", region: global, lang: en, kind: specialist}
+- {name: The Conversation (global), url: "https://theconversation.com/global/articles.atom", region: global, lang: en, kind: specialist}
+
+# Australia, New Zealand and the Pacific
+- {name: ABC News politics, url: "https://www.abc.net.au/news/feed/2942460/rss.xml", region: AU, lang: en, kind: regional}
+- {name: The Conversation AU politics, url: "https://theconversation.com/au/politics/articles.atom", region: AU, lang: en, kind: regional}
+- {name: RNZ political, url: "https://www.rnz.co.nz/rss/political.xml", region: NZ, lang: en, kind: regional}
+- {name: Asia Pacific Report, url: "https://asiapacificreport.nz/feed/", region: Pacific, lang: en, kind: regional}
+
+# Asia
+- {name: The Diplomat, url: "https://thediplomat.com/feed/", region: Asia, lang: en, kind: regional}
+- {name: Hong Kong Free Press, url: "https://hongkongfp.com/feed/", region: HK, lang: en, kind: regional}
+- {name: Taipei Times, url: "https://www.taipeitimes.com/xml/index.rss", region: TW, lang: en, kind: regional}
+- {name: The Japan Times, url: "https://www.japantimes.co.jp/feed/", region: JP, lang: en, kind: regional}
+- {name: Rappler, url: "https://www.rappler.com/nation/feed/", region: PH, lang: en, kind: regional}
+- {name: Scroll, url: "https://feeds.feedburner.com/ScrollinArticles.rss", region: IN, lang: en, kind: regional}
+- {name: Dawn, url: "https://www.dawn.com/feeds/home", region: PK, lang: en, kind: regional}
+
+# Africa
+- {name: Premium Times, url: "https://www.premiumtimesng.com/feed", region: NG, lang: en, kind: regional}
+- {name: Daily Maverick, url: "https://www.dailymaverick.co.za/dmrss/", region: ZA, lang: en, kind: regional}
+- {name: The Elephant, url: "https://www.theelephant.info/feed/", region: KE, lang: en, kind: regional}
+- {name: Le Monde Afrique, url: "https://www.lemonde.fr/afrique/rss_full.xml", region: Africa, lang: fr, kind: regional}
+
+# Europe and Eurasia
+- {name: Eurasianet, url: "https://eurasianet.org/rss", region: Eurasia, lang: en, kind: regional}
+
+# Latin America
+- {name: MercoPress, url: "https://en.mercopress.com/rss/", region: LatAm, lang: en, kind: regional}
+- {name: El País América, url: "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/america/portada", region: LatAm, lang: es, kind: regional}
+- {name: Agência Brasil, url: "https://agenciabrasil.ebc.com.br/rss/ultimasnoticias/feed.xml", region: BR, lang: pt, kind: regional}

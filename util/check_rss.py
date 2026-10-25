@@ -408,6 +408,12 @@ def parse_date(s):
         return datetime.strptime(s[:8], "%Y%m%d").date()
     except ValueError:
         pass
+    # "Oct 23, 2026" / "October 23, 2026", as Eurasianet's <pubDate> has it
+    for fmt in ("%b %d, %Y", "%B %d, %Y"):
+        try:
+            return datetime.strptime(s, fmt).date()
+        except ValueError:
+            pass
     return None
 
 
@@ -844,6 +850,7 @@ def discovery_action(slug, state, sitemap_checked, today):
 
 
 _DC_DATE = "{http://purl.org/dc/elements/1.1/}date"
+_RSS1 = "{http://purl.org/rss/1.0/}"
 _CONTENT_ENCODED = "{http://purl.org/rss/1.0/modules/content/}encoded"
 
 
@@ -917,6 +924,19 @@ def _entries_from_root(root, closed=None):
             if d:
                 entries.append({"date": d, "published": d, "title": title, "link": link,
                                 "summary_html": item.findtext("description") or "",
+                                "body_html": item.findtext(_CONTENT_ENCODED) or ""})
+    elif local == "rdf":
+        # RSS 1.0 (RDF), as DW and Taipei Times publish it: items are
+        # siblings of <channel> in the RSS 1.0 namespace, dated by dc:date.
+        for item in root.findall(f"{_RSS1}item"):
+            if closed is not None and item not in closed:
+                continue
+            d = parse_date(item.findtext(_DC_DATE))
+            if d:
+                entries.append({"date": d, "published": d,
+                                "title": (item.findtext(f"{_RSS1}title") or "").strip(),
+                                "link": (item.findtext(f"{_RSS1}link") or "").strip(),
+                                "summary_html": item.findtext(f"{_RSS1}description") or "",
                                 "body_html": item.findtext(_CONTENT_ENCODED) or ""})
     elif local == "feed":
         for entry in root.findall(f"{ns}entry"):

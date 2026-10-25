@@ -94,6 +94,23 @@ class ParseFeedEntriesTests(unittest.TestCase):
         self.assertEqual(cr.latest_entry([]), (None, None, None))
 
 
+class OtherFeedFormatTests(unittest.TestCase):
+    def test_rss1_rdf(self):
+        doc = b"""<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://purl.org/rss/1.0/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel><title>T</title></channel>
+  <item><title>A story</title><link>https://ex.org/a</link><dc:date>2026-10-25T08:00:00+08:00</dc:date></item>
+</rdf:RDF>"""
+        got = cr.parse_feed_entries(doc)
+        self.assertEqual([(e["title"], e["link"], e["date"]) for e in got],
+                         [("A story", "https://ex.org/a", date(2026, 10, 25))])
+
+    def test_month_name_dates(self):
+        self.assertEqual(cr.parse_date("Oct 23, 2026"), date(2026, 10, 23))
+        self.assertEqual(cr.parse_date("October 3, 2026"), date(2026, 10, 3))
+
+
 class FeedItemCacheTests(unittest.TestCase):
     def test_merge_keeps_posts_that_fell_off_the_feed(self):
         stored = [{"date": "2026-09-01", "title": "Earlier", "url": "https://ex.org/a"}]
