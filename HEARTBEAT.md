@@ -32,7 +32,7 @@ Sessions may also start on a `claude/...` working branch rather than `main`;
 when this brief says to push to `main`, merge/push the work there (the run's
 prompt grants it).
 
-**Without network access:** skip step 2 (URL verification) and step 5 (commentary research). Run the maintenance scripts and produce a stats-only post. Note the limitation in the post.
+**Without network access:** skip step 2 (URL verification) and step 5's follow-up research, but still read what's stored with `python util/world_news.py --offline`. Run the maintenance scripts and produce a stats-only post. Note the limitation in the post.
 
 **If `pip install -r requirements.txt` fails building `mkdocs-ezlinks-plugin`** with
 `AttributeError: install_layout` — some ephemeral session containers ship a
@@ -248,8 +248,23 @@ verdict, and a post with no tag can still be News. For each item you do add:
   a future event, which goes in as the event itself, on its own date (so it
   lands on the calendar).
 
-When unsure whether something clears the bar, leave it: a missed item costs
-less than a flooded feed, and a human can still add it. Then run
+When unsure whether something clears the bar, decide by kind (changed
+2026-10-25). An org's own flagship output goes in at `notable: medium` when
+in doubt: a named report, index or handbook it publishes, a launch, a
+leadership change, a ruling or law it worked toward. Landscape News carried
+eight items in the three months to 2026-10-25, so it is nowhere near
+flooded, and a thin page costs more than one borderline item (the
+2026-10-23 run passed over International IDEA's *Review of the 2025 Year of
+Elections*). Everything else stays out when unsure: commentary, statements,
+event reminders, newsletters and routine output, where a missed item costs
+less than a flooded feed and a human can still add it.
+
+The worklist also lists pages that are new in the sitemaps of orgs with no
+feed (added 2026-10-25), titled from their URLs. A URL says little, so open
+each one: Australian Democracy Network's `/declaration` was a new campaign
+page and two others were events, none of which any feed carried. A new
+page announcing a future event goes in as `kind: gathering` on the event's
+own date, like any other. Then run
 `python util/news_checkup.py --mark-reviewed` and commit
 `docs/data/news-checkup-state.json` with the run's other changes. Put the
 tally in the post's Working notes, e.g. "News intake: 49 posts reviewed,
@@ -295,10 +310,41 @@ updates. Search for recent news (past 30–180 days depending on run cadence) on
 - Broader geopolitical shifts with structural governance implications, even
   outside that list, if you can source them properly
 
-**Load the search tools first.** `WebSearch`/`WebFetch` are deferred tools in
-these sessions: fetch their schemas with `ToolSearch` before concluding that
-research isn't possible. Skip this step only if the tools genuinely fail, and
-say which in Working notes. When calling the Wikipedia API with `curl`, send a
+**Start with the world-news worklist, every run** (added 2026-10-25):
+
+```bash
+python util/world_news.py --out /tmp/world-news.md
+```
+
+It reads a fixed, deliberately mixed list of publishers' own feeds
+(`util/world_news_sources.yml`: wires and broadcasters from several
+countries, regional outlets on every continent, some non-English, and
+trackers like ConstitutionNet and Freedom House), keeps only headlines that
+name a governance mechanism or event, and groups the same story across
+outlets, listing those first. It takes seconds and comes out at a few dozen
+lines, so "automated pass, commentary research not run" is no longer an
+outcome: every run reads it. Every scheduled run in October 2026 skipped
+this step, and the heartbeat reported no world news that month as a result.
+A line is a lead, not a source: open the article, and find the primary
+source behind it before writing anything. Then run
+`python util/world_news.py --mark-reviewed` and commit
+`docs/data/world-news.json` with the run's other changes. Put the tally in
+Working notes, e.g. "World news: 28 stories reviewed, 1 written up".
+
+**A world story about a Landscape org's own work belongs on Landscape News
+too.** Lines naming a Landscape org are flagged. When the story is
+something that org did or achieved (it ran the assembly, published the
+report, won the ruling), add it to the org's `events:` the way a news-intake
+item goes in (see step 2): `kind: news`, a `notable:` tier and
+`notable_reason:`, and a `quote:`/`note:` from the org's own page where it
+has one. Commentary in this post and an `events:` entry aren't either/or.
+
+**Load the search tools for follow-up.** `WebSearch`/`WebFetch` are deferred
+tools in these sessions: fetch their schemas with `ToolSearch` before
+concluding that research isn't possible. Use them to follow a worklist lead
+to its primary source, its local-language coverage or its date, and for the
+trackers below that have no feed. If they genuinely fail, the worklist is
+still read; say in Working notes that follow-up was skipped. When calling the Wikipedia API with `curl`, send a
 `User-Agent` header (e.g. `-A "DODHeartbeat/1.0 (designingopendemocracy.com)"`);
 without one it can return a non-JSON error page. (CLAUDE.md's "Sourcing from
 Wikipedia" section should gain the same note; it is PR-gated.)
@@ -318,7 +364,9 @@ latest-items page beats guessing phrasing:
 - A general wire/regional scan (Reuters, AP, AllAfrica, RFI) for the
   specific topics listed above, rather than the topics alone
 Add to this list as new good sources are found; the point is a stable set
-of places to check every run, not a closed or exhaustive one.
+of places to check every run, not a closed or exhaustive one. A source with
+a working RSS/Atom feed belongs in `util/world_news_sources.yml` instead,
+where the script reads it every run at no cost in searches.
 
 **Recency and language are real blind spots, not just a search-phrasing
 problem.** WebSearch here is US-backed and English-only by default, so a
