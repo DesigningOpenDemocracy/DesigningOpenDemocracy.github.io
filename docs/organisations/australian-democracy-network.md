@@ -67,6 +67,41 @@ events:
   notable_reason: Coalition-led federal advocacy Bill launch
   kind: news
   type: milestone
+- date: '2026-09-23'
+  title: Hosted "Unlocking Better Politics" lobbying-reform briefing in Sydney with
+    the Australian Ethical Foundation
+  short_title: Unlocking Better Politics Sydney
+  url: https://australiandemocracy.org.au/unlocking_better_politics_sydney
+  note: Event page (JS-rendered; text read from the page's embedded data, 2026-10-25)
+    lists Wednesday September 23, 4-6PM at the Australian Ethical Foundation, Level
+    7, 130 Pitt St, Sydney, with CEO Saffron Zomer and Senior Campaigner Christian
+    Slattery speaking on building momentum for a national Lobbying Act after the Four
+    Corners investigation into lobbying.
+  proof_level: medium
+  time: '16:00'
+  end_time: '18:00'
+  kind: gathering
+  type: meeting
+  location: Australian Ethical Foundation, 130 Pitt St, Sydney
+- date: '2026-10-29'
+  title: 'Online talk: "Unlocking Better Politics: Laying the path for a national
+    Lobbying Act"'
+  short_title: Unlocking Better Politics (online)
+  url: https://australiandemocracy.org.au/unlocking-better-politics-melbourne
+  note: Event page (JS-rendered; text read from the page's embedded data, 2026-10-25)
+    lists Thursday October 29, 6:30-7:30PM, an online presentation plus Q+A with RSVP
+    for the link, in which CEO Saffron Zomer and Senior Campaigner Christian Slattery
+    discuss ADN's role in seeding the Four Corners lobbying investigation and the
+    push for a national Lobbying Act. Page URL says Melbourne; times are presumably
+    Melbourne time (AEDT).
+  proof_level: medium
+  time: '18:30'
+  end_time: '19:30'
+  notable: medium
+  notable_reason: Public talk on national Lobbying Act campaign
+  kind: gathering
+  type: webinar
+  location: Online
 activity:
   manual:
     checked: 2026-06-07
