@@ -19,7 +19,7 @@
 <div class="org-toolbar">
   <input type="search" id="org-search" placeholder="Search organisations…" class="org-search-input" aria-label="Search organisations">
 
-  <div class="org-facet-bar" aria-label="Filter organisations">
+  <div class="org-facet-bar" role="group" aria-label="Filter organisations">
     <details class="org-facet-dd" data-facet="status">
       <summary>Status <span class="org-facet-badge" data-facet-badge="status"></span></summary>
       <div class="org-facet-panel" data-facet-list="status"></div>
@@ -693,7 +693,18 @@
     suppressHoverUntilMove = false;
   }, { passive: true });
   document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape' && !infoCard.hidden) closeInfo(true);
+    if (e.key === 'Escape') {
+      if (!infoCard.hidden) {
+        closeInfo(true);
+      } else {
+        var openDd = facetDropdowns.find(function (dd) { return dd.open; });
+        if (openDd) {
+          openDd.open = false;
+          var summary = openDd.querySelector('summary');
+          if (summary) summary.focus();
+        }
+      }
+    }
   });
   document.addEventListener('click', function (e) {
     if (infoCard.hidden) return;

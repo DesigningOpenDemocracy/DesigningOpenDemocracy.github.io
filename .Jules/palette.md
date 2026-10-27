@@ -21,3 +21,7 @@
 ## 2026-10-24 - [Consistent Clear-Filter Action in Empty States Across Directory Views]
 **Learning:** In multi-view directory applications (e.g. Directory, News, Archive), maintaining consistent empty-state patterns — including centered padding, distinct text color, and a direct `<button type="button" class="org-empty-clear-btn">Clear filters</button>` action — ensures users can instantly recover from empty filter/search results on any list page without hunting for the top reset button.
 **Action:** When creating or updating client-side filtered lists, ensure empty state containers include an inline "Clear filters" action button hooked directly to the main filter reset function alongside consistent empty state CSS styling.
+
+## 2026-11-05 - [Escape Key Dismissal for Custom Details Dropdowns]
+**Learning:** HTML `<details>` elements used as custom filter dropdown panels do not natively close when the user presses the `Escape` key. Adding a global `Escape` key listener that identifies open `<details>` dropdowns, sets `open = false`, and restores focus to the corresponding `<summary>` element ensures full keyboard accessibility parity with standard popup components.
+**Action:** When using `<details>` for dropdown/popover menus, always include an `Escape` keydown handler that closes open `<details>` panels and explicitly returns focus to the `<summary>` toggle element.
