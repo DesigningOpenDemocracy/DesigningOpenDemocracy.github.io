@@ -59,9 +59,9 @@ activity:
     date: 2026-09-05
     note: Latest news page scraped
     url: https://memo98.sk/articles/blog
-    checked: 2026-10-23
+    checked: 2026-10-30
   sitemap:
-    checked: 2026-10-02
+    checked: 2026-10-30
     date: 2025-12-15
     note: Page last modified (from sitemap)
 last_checked: '2026-09-14'

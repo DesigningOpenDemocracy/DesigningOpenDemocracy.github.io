@@ -56,11 +56,11 @@ activity:
     url: https://kongra-star.org/eng/
     checked: 2026-09-21
   rss:
-    date: 2026-10-22
-    note: 'Latest post: Nazdar Derwê:ji bo bi serxistina pêvajoya aşitiyê, divê herkes
-      bi baldarî tevbig'
-    url: https://kongra-star.org/?p=34009
-    checked: 2026-10-23
+    date: 2026-10-29
+    note: 'Latest post: Jı Kongra Star ya bajarê Qamişlo li dijî madeyên hişbirê banga
+      hişyariyê li civa'
+    url: https://kongra-star.org/?p=34222
+    checked: 2026-10-30
 last_checked: '2026-09-21'
 ---
 

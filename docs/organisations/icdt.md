@@ -72,10 +72,10 @@ activity:
     url: https://chinademocrats.org/en
     checked: 2026-09-28
   rss:
-    date: 2026-10-14
-    note: 'Latest post: 吕频、艾欣 | 十年间，专制政治背景下中国女权运动的发展'
-    url: https://chinademocrats.org/?p=7559
-    checked: 2026-10-16
+    date: 2026-10-29
+    note: 'Latest post: 民主迎来新的一天'
+    url: https://chinademocrats.org/?p=7748
+    checked: 2026-10-30
 last_checked: '2026-09-28'
 ---
 

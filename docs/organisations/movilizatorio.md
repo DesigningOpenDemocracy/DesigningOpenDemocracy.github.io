@@ -68,7 +68,7 @@ activity:
     note: 'Latest post: Un mensaje desde el corazón del mundo: sobre la inteligencia
       artificial'
     url: https://www.movilizatorio.org/un-mensaje-desde-el-corazon-del-mundo-sobre-la-inteligencia-artificial/
-    checked: 2026-10-02
+    checked: 2026-10-30
 last_checked: '2026-09-19'
 ---
 

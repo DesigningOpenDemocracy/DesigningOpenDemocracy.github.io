@@ -1,8 +1,23 @@
 {
   "feed": "https://www.sitra.fi/feed",
-  "latest": "2026-10-21",
-  "span_days": 14,
+  "latest": "2026-10-28",
+  "span_days": 20,
   "items": [
+    {
+      "date": "2026-10-28",
+      "title": "Miten tehdä parempia päätöksiä epävarmuuden ajassa",
+      "url": "https://www.sitra.fi/blogit/miten-tehda-parempia-paatoksia-epavarmuuden-ajassa/"
+    },
+    {
+      "date": "2026-10-28",
+      "title": "Kokeilu rakentaa pohjaa vaikuttavien digihoitojen käyttöönotolle",
+      "url": "https://www.sitra.fi/uutiset/kokeilu-rakentaa-pohjaa-vaikuttavien-digihoitojen-kayttoonotolle/"
+    },
+    {
+      "date": "2026-10-27",
+      "title": "Kaksi tuoretta julkaisua: Tietoa ja käytännön tukea laadukkaaseen vuorovaikutukseen vihreissä investoineissa",
+      "url": "https://www.sitra.fi/artikkelit/kaksi-tuoretta-julkaisua-tietoa-ja-kaytannon-tukea-laadukkaaseen-vuorovaikutukseen-vihreissa-investoineissa/"
+    },
     {
       "date": "2026-10-21",
       "title": "Viimeiset mustikat",
@@ -145,7 +160,7 @@
     }
   ],
   "fetch": {
-    "etag": "\"ec80fd55ff9cf4208dcc1f77c553a1ed\"",
-    "last_modified": "Fri, 23 Oct 2026 08:20:59 GMT"
+    "etag": "\"be2acf51e4050dec4a2c205f38ff4792\"",
+    "last_modified": "Fri, 30 Oct 2026 08:23:34 GMT"
   }
 }

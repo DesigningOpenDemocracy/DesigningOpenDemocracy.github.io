@@ -64,10 +64,11 @@ activity:
     url: https://www.labsus.org
     checked: 2026-09-17
   rss:
-    date: 2026-09-16
-    note: 'Latest post: Elogio dei tre saperi di Marianella Sclavi'
-    url: https://www.labsus.org/2026/09/elogio-dei-tre-saperi-di-marianella-sclavi/
-    checked: 2026-10-02
+    date: 2026-10-20
+    note: 'Latest post: Un patto contro lo spopolamento delle aree montane: una foresteria
+      come bene com'
+    url: https://www.labsus.org/2026/10/un-patto-contro-lo-spopolamento-delle-aree-montane-una-foresteria-come-bene-comune/
+    checked: 2026-10-30
 last_checked: '2026-09-17'
 ---
 

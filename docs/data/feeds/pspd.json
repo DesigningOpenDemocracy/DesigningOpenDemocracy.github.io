@@ -1,8 +1,58 @@
 {
   "feed": "https://www.peoplepower21.org/feed",
-  "latest": "2026-10-23",
+  "latest": "2026-10-30",
   "span_days": 1,
   "items": [
+    {
+      "date": "2026-10-30",
+      "title": "[논평] 형사소송법 개정해 내란 판결문 실명본 공개해야",
+      "url": "https://peoplepower21.org/government/2055441"
+    },
+    {
+      "date": "2026-10-29",
+      "title": "정기국회에서 보복소송 금지, 책임감면 의무화 등 공익신고자 보호법 개정안 처리돼야",
+      "url": "https://peoplepower21.org/whistleblower/2055397"
+    },
+    {
+      "date": "2026-10-29",
+      "title": "[함께해요]월간 평화산책 : 수요시위에 함께해요🦋 (11/11)",
+      "url": "https://peoplepower21.org/peace/2055311"
+    },
+    {
+      "date": "2026-10-29",
+      "title": "[월간 브리핑] 10월의 참여연대 총정리 ⚡️",
+      "url": "https://peoplepower21.org/pspd/2055438"
+    },
+    {
+      "date": "2026-10-29",
+      "title": "[성명] 예술 창작물에 대한 저열한 정치공세를 멈춰라",
+      "url": "https://peoplepower21.org/publiclaw/2055391"
+    },
+    {
+      "date": "2026-10-29",
+      "title": "[기자회견] 공짜노동 강요하는 쿠팡 택배 계약서, 공정위에 불공정약관 심사 청구!",
+      "url": "https://peoplepower21.org/stablelife/2055352"
+    },
+    {
+      "date": "2026-10-29",
+      "title": "[기자간담회] 개인정보 피해 회복 절차의 문제점 및 개선방향 제안",
+      "url": "https://peoplepower21.org/economy/2055277"
+    },
+    {
+      "date": "2026-10-29",
+      "title": "[공지] ‘금지AI’ 규제 마련 위한 인공지능기본법 개정 토론회",
+      "url": "https://peoplepower21.org/publiclaw/2055319"
+    },
+    {
+      "date": "2026-10-29",
+      "title": "[4주기] 10.29 이태원 참사 4주기 기억식 개최",
+      "url": "https://peoplepower21.org/solidarity/2055395"
+    },
+    {
+      "date": "2026-10-29",
+      "title": "2027년 보건복지 예산안 총정리 : 8개 분야 한눈에 보기",
+      "url": "https://peoplepower21.org/welfare/2055342"
+    },
     {
       "date": "2026-10-23",
       "title": "[종합] 10.29 이태원 참사 4주기 추모행사",
@@ -203,6 +253,6 @@
     }
   ],
   "fetch": {
-    "etag": "\"95a005a8a6b48b339a40fe8d07cda9cf\""
+    "etag": "\"4379ea9ef09f8df4400213d05b1f993b\""
   }
 }

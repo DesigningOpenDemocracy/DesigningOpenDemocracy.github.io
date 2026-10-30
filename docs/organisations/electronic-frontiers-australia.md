@@ -89,11 +89,10 @@ activity:
     url: https://efa.org.au
     checked: 2026-09-19
   rss:
-    date: 2026-09-22
-    note: 'Latest post: Privacy Act Reform – Public Consultation on Exposure Draft
-      Legislation'
-    url: https://efa.org.au/privacy-act-reform-public-consultation-on-exposure-draft-legislation/
-    checked: 2026-10-02
+    date: 2026-10-27
+    note: 'Latest post: Who Wants to Be a Neo-Luddite? I Do.'
+    url: https://efa.org.au/neo-luddite-efa-essay/
+    checked: 2026-10-30
 last_checked: '2026-09-19'
 ---
 

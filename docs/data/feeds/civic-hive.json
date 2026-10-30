@@ -1,8 +1,18 @@
 {
   "feed": "https://civichive.org/feed",
-  "latest": "2026-09-23",
-  "span_days": 103,
+  "latest": "2026-10-28",
+  "span_days": 94,
   "items": [
+    {
+      "date": "2026-10-28",
+      "title": "Demanding Accountability: The 2027 Costed Manifesto Challenge for Creators",
+      "url": "https://civichive.org/the-2027-costed-manifesto-challenge-for-creators/"
+    },
+    {
+      "date": "2026-10-26",
+      "title": "Nigeria’s 2027 Elections: Advancing Political Inclusion for Women and Youth",
+      "url": "https://civichive.org/nigerias-2027-elections-advancing-political-inclusion-for-women-and-youth/"
+    },
     {
       "date": "2026-09-23",
       "title": "Unlearning the Past to Propel a New Future",
@@ -29,12 +39,25 @@
       "url": "https://civichive.org/2026-osun-state-governorship-election/"
     },
     {
+      "date": "2026-08-01",
+      "title": "Bridging Digital Rights, Democratic Trust, and Citizen Action in West Africa",
+      "url": "https://civichive.org/bridging-digital-rights-democratic-trust-and-citizen-action-in-west-africa/",
+      "signals": [
+        "flagship event"
+      ]
+    },
+    {
       "date": "2026-07-26",
       "title": "West Africa CivicTech Conference 2026: Shaping the Future of Governance Through Youth and Technology",
       "url": "https://civichive.org/west-africa-civictech-conference-2026-shaping-the-future-of-governance-through-youth-and-technology/",
       "signals": [
         "flagship event"
       ]
+    },
+    {
+      "date": "2026-07-26",
+      "title": "Inside the CivicHive Climate Fellowship 2026: From Learning to Leadership",
+      "url": "https://civichive.org/inside-the-civichive-climate-fellowship-2026-from-learning-to-leadership/"
     },
     {
       "date": "2026-07-25",
@@ -64,6 +87,6 @@
     }
   ],
   "fetch": {
-    "last_modified": "Sat, 26 Sep 2026 00:31:34 GMT"
+    "last_modified": "Wed, 28 Oct 2026 11:46:55 GMT"
   }
 }

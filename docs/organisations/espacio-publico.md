@@ -62,10 +62,11 @@ activity:
     url: https://www.espaciopublico.cl
     checked: 2026-09-17
   rss:
-    date: 2026-09-28
-    note: 'Latest post: Más valor desde el cobre'
-    url: https://espaciopublico.cl/mas-valor-desde-el-cobre/
-    checked: 2026-10-02
+    date: 2026-10-26
+    note: 'Latest post: Nueva propuesta de reforma constitucional en seguridad: menos
+      de lo mismo'
+    url: https://espaciopublico.cl/nueva-propuesta-de-reforma-constitucional-en-seguridad-menos-de-lo-mismo/
+    checked: 2026-10-30
 last_checked: '2026-09-17'
 ---
 

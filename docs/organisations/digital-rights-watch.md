@@ -83,10 +83,10 @@ activity:
     url: https://digitalrightswatch.org.au
     checked: 2026-09-19
   rss:
-    date: 2026-10-02
-    note: 'Latest post: Submission on the National AI Standards paper'
-    url: /2026/10/02/submission-on-the-national-ai-standards-paper/
-    checked: 2026-10-02
+    date: 2026-10-22
+    note: 'Latest post: Digital Duty of Care Submission Guide'
+    url: /2026/10/22/digital-duty-of-care-submission-guide/
+    checked: 2026-10-30
 last_checked: '2026-09-19'
 ---
 

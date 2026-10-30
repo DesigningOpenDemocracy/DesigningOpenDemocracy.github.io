@@ -60,11 +60,11 @@ activity:
     url: https://perludem.or.id
     checked: 2026-09-19
   rss:
-    date: 2026-09-15
-    note: 'Latest post: Assessing the Constitutionality of E-Voting, Perludem Calls
-      for a Needs-Based Ap'
-    url: https://perludem.or.id/assessing-the-constitutionality-of-e-voting-perludem-calls-for-a-needs-based-approach/
-    checked: 2026-10-02
+    date: 2026-10-10
+    note: 'Latest post: EDF 2026: Perludem Calls on Young People to Champion Electoral
+      Reform'
+    url: https://perludem.or.id/edf-2026-perludem-calls-on-young-people-to-champion-electoral-reform/
+    checked: 2026-10-30
 last_checked: '2026-09-19'
 ---
 

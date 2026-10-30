@@ -73,8 +73,10 @@ activity:
     checked: 2026-10-23
     note: News page found, no machine-readable date
   sitemap:
-    note: Sitemap found, no lastmod
-    checked: 2026-10-02
+    date: 2026-10-26
+    note: Page last modified (from sitemap)
+    url: https://www.luminategroup.com/sitemap.xml
+    checked: 2026-10-30
 last_checked: '2026-09-20'
 ---
 

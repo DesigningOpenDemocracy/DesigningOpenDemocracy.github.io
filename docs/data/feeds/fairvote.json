@@ -1,8 +1,64 @@
 {
   "feed": "https://fairvote.org/feed",
-  "latest": "2026-09-29",
-  "span_days": 49,
+  "latest": "2026-10-27",
+  "span_days": 12,
   "items": [
+    {
+      "date": "2026-10-27",
+      "title": "What to know about ranked choice voting in the midterms",
+      "url": "https://fairvote.org/what-to-know-about-ranked-choice-voting-in-the-midterms/"
+    },
+    {
+      "date": "2026-10-27",
+      "title": "Ranked choice voting elections & collaborative campaigning in 2026",
+      "url": "https://fairvote.org/ranked-choice-voting-elections-collaborative-campaigning-in-2026/"
+    },
+    {
+      "date": "2026-10-26",
+      "title": "Trump administration sues to block Alaska Senate election result",
+      "url": "https://fairvote.org/trump-administration-sues-to-block-alaska-senate-election-result/",
+      "signals": [
+        "election or referendum"
+      ]
+    },
+    {
+      "date": "2026-10-23",
+      "title": "Who supports Honolulu Question 5?",
+      "url": "https://fairvote.org/who-supports-honolulu-question-5/"
+    },
+    {
+      "date": "2026-10-22",
+      "title": "Most midterm elections are already decided. Here’s how to fix the problem.",
+      "url": "https://fairvote.org/most-midterm-elections-are-already-decided-heres-how-to-fix-the-problem/"
+    },
+    {
+      "date": "2026-10-21",
+      "title": "What to expect in Washington, DC’s ranked choice voting elections",
+      "url": "https://fairvote.org/what-to-expect-in-washington-dcs-ranked-choice-voting-elections/"
+    },
+    {
+      "date": "2026-10-20",
+      "title": "Which Maine elections will use ranked choice voting this November?",
+      "url": "https://fairvote.org/which-maine-elections-will-use-ranked-choice-voting-this-november/"
+    },
+    {
+      "date": "2026-10-19",
+      "title": "Who supports Longmont Questions 3C and 3D?",
+      "url": "https://fairvote.org/who-supports-longmont-questions-3c-and-3d/"
+    },
+    {
+      "date": "2026-10-19",
+      "title": "Who supports Irvine Measure D?",
+      "url": "https://fairvote.org/who-supports-irvine-measure-d/"
+    },
+    {
+      "date": "2026-10-15",
+      "title": "New survey: Americans want ranked choice voting in congressional elections",
+      "url": "https://fairvote.org/survey-americans-want-ranked-choice-voting-in-congressional-elections/",
+      "signals": [
+        "publication"
+      ]
+    },
     {
       "date": "2026-09-29",
       "title": "Where will ranked choice voting be used in the 2026 elections?",
@@ -64,7 +120,7 @@
     }
   ],
   "fetch": {
-    "etag": "W/\"53aa66947b9d255e003c584822f6824e\"",
-    "last_modified": "Thu, 01 Oct 2026 20:27:25 GMT"
+    "etag": "W/\"6e8b04751529d9646ff7658a72e64ebc\"",
+    "last_modified": "Thu, 29 Oct 2026 13:53:33 GMT"
   }
 }

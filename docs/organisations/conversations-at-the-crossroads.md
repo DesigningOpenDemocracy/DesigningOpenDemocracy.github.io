@@ -80,12 +80,12 @@ activity:
     date: 2026-09-30
     note: Latest news page scraped
     url: https://www.crossroadsconversation.com.au/events
-    checked: 2026-10-23
+    checked: 2026-10-30
   sitemap:
-    date: 2026-09-30
+    date: 2026-10-19
     note: Page last modified (from sitemap)
     url: https://www.crossroadsconversation.com.au/sitemap.xml
-    checked: 2026-10-02
+    checked: 2026-10-30
 last_checked: '2026-09-27'
 ---
 

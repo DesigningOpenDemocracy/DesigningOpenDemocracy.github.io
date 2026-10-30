@@ -1,8 +1,35 @@
 {
   "feed": "https://efa.org.au/feed/",
-  "latest": "2026-09-22",
-  "span_days": 35,
+  "latest": "2026-10-27",
+  "span_days": 47,
   "items": [
+    {
+      "date": "2026-10-27",
+      "title": "Who Wants to Be a Neo-Luddite? I Do.",
+      "url": "https://efa.org.au/neo-luddite-efa-essay/",
+      "signals": [
+        "publication"
+      ]
+    },
+    {
+      "date": "2026-10-15",
+      "title": "Save the Date: EFA 2026 Annual General Meeting on 28 November 2026",
+      "url": "https://efa.org.au/save-the-date-efa-2026/",
+      "signals": [
+        "flagship event"
+      ],
+      "routine": [
+        "event reminder"
+      ]
+    },
+    {
+      "date": "2026-10-08",
+      "title": "EFA Advocacy Updates",
+      "url": "https://efa.org.au/efa-advocacy-updates/",
+      "mentions": [
+        "Digital Rights Watch"
+      ]
+    },
     {
       "date": "2026-09-22",
       "title": "Privacy Act Reform – Public Consultation on Exposure Draft Legislation",
@@ -33,7 +60,7 @@
     }
   ],
   "fetch": {
-    "etag": "W/\"160ddcd665414dd78dba16c95e178858\"",
-    "last_modified": "Tue, 22 Sep 2026 14:13:46 GMT"
+    "etag": "W/\"f02c7cf5870ae2d9be9df582806956b6\"",
+    "last_modified": "Tue, 27 Oct 2026 19:00:34 GMT"
   }
 }

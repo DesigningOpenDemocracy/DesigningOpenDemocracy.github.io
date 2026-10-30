@@ -61,10 +61,11 @@ activity:
     url: https://civichive.org
     checked: 2026-09-16
   rss:
-    date: 2026-09-23
-    note: 'Latest post: Unlearning the Past to Propel a New Future'
-    url: https://civichive.org/unlearning-the-past-to-propel-a-new-future/?utm_source=rss&utm_medium=rss&utm_campaign=unlearning-the-past-to-propel-a-new-future
-    checked: 2026-10-02
+    date: 2026-10-28
+    note: 'Latest post: Demanding Accountability: The 2027 Costed Manifesto Challenge
+      for Creators'
+    url: https://civichive.org/the-2027-costed-manifesto-challenge-for-creators/?utm_source=rss&utm_medium=rss&utm_campaign=the-2027-costed-manifesto-challenge-for-creators
+    checked: 2026-10-30
   url: https://civichive.org/2026-osun-state-governorship-election/?utm_source=rss&utm_medium=rss&utm_campaign=2026-osun-state-governorship-election
 last_checked: '2026-09-16'
 ---

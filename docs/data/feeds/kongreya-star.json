@@ -1,8 +1,58 @@
 {
   "feed": "https://kongra-star.org/?feed=rss2",
-  "latest": "2026-10-22",
-  "span_days": 6,
+  "latest": "2026-10-29",
+  "span_days": 4,
   "items": [
+    {
+      "date": "2026-10-29",
+      "title": "Jı Kongra Star ya bajarê Qamişlo li dijî madeyên hişbirê banga hişyariyê li civakê kir",
+      "url": "https://kongra-star.org/?p=34222"
+    },
+    {
+      "date": "2026-10-29",
+      "title": "Bi pêşengiya jinan wê qonaxeke ji nû ve avakirinê pêkan be",
+      "url": "https://kongra-star.org/?p=34215"
+    },
+    {
+      "date": "2026-10-28",
+      "title": "Kongra Star a bajarê Qamişlo Konferansa xwe li darxist",
+      "url": "https://kongra-star.org/?p=34138"
+    },
+    {
+      "date": "2026-10-28",
+      "title": "Kongra Star a bajarê Dirbêsiyê xebatên 2 salan nirxandin",
+      "url": "https://kongra-star.org/?p=34174"
+    },
+    {
+      "date": "2026-10-27",
+      "title": "​Kongra Star êrişên li ser vegeriyayên Girê Spî şermezar kir",
+      "url": "https://kongra-star.org/?p=34134"
+    },
+    {
+      "date": "2026-10-27",
+      "title": "​Kongra Star êrişên li ser vegeriyayên Girê Spî şermezar kir",
+      "url": "https://kongra-star.org/?p=34132"
+    },
+    {
+      "date": "2026-10-26",
+      "title": "“Bi vîna jina azad em ê kar bikin û bi serkevin”",
+      "url": "https://kongra-star.org/?p=34105"
+    },
+    {
+      "date": "2026-10-25",
+      "title": "Li bajarê Kobanê şehîd Bêrîtan hat bibîranîn",
+      "url": "https://kongra-star.org/?p=34084"
+    },
+    {
+      "date": "2026-10-25",
+      "title": "Kongra Star şehîd Bêrîtan bibîranîn",
+      "url": "https://kongra-star.org/?p=34066"
+    },
+    {
+      "date": "2026-10-25",
+      "title": "Bêrîtan di dîroka têkoşîna jinên Kurd de bû  sembola îradeya azad a jinê",
+      "url": "https://kongra-star.org/?p=34054"
+    },
     {
       "date": "2026-10-22",
       "title": "Saziya Xizmetên Civakî û Pêşxistina Jinan “Na ji fişeka bêserûber re” amadekariya kampanya",
@@ -180,7 +230,7 @@
     }
   ],
   "fetch": {
-    "etag": "W/\"13b4e8b3079edf01cf4f884bb8fc2d65\"",
-    "last_modified": "Thu, 22 Oct 2026 09:37:27 GMT"
+    "etag": "W/\"e98dae788f0d8787b78964fe2e795077\"",
+    "last_modified": "Thu, 29 Oct 2026 15:39:35 GMT"
   }
 }

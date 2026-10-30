@@ -118,7 +118,7 @@ activity:
       at launch).
     url: https://australiandemocracy.org.au/declaration
   sitemap:
-    checked: 2026-10-02
+    checked: 2026-10-30
     date: 2026-06-05
     note: Server still up (sitemap detected)
 last_checked: '2026-10-25'

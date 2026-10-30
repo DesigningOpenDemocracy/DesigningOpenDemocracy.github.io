@@ -61,11 +61,11 @@ activity:
     url: https://transparenciacolombia.org.co
     checked: 2026-09-19
   rss:
-    date: 2026-10-01
-    note: 'Latest post: Opinión de Transparencia por Colombia sobre el proceso de
-      revisión de constituci'
-    url: https://transparenciacolombia.org.co/opinion-sobre-revision-constitucionalidad-decreto-legislativo-1420-17-septiembre-2026/
-    checked: 2026-10-02
+    date: 2026-10-17
+    note: 'Latest post: Financiamiento criminal de la política en Colombia: ¿cómo
+      se captura y transform'
+    url: https://transparenciacolombia.org.co/financiamiento-criminal-politica-colombia-como-se-captura-transforma-el-estado/
+    checked: 2026-10-30
 last_checked: '2026-09-19'
 ---
 

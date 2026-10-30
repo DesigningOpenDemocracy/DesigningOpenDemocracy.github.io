@@ -56,7 +56,7 @@ activity:
     date: 2026-10-15
     note: 'Latest post: The New Era of Corruption in America'
     url: https://represent.us/news/the-new-era-of-corruption-in-america/
-    checked: 2026-10-23
+    checked: 2026-10-30
 last_checked: '2026-09-20'
 ---
 

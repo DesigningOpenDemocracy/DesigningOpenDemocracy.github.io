@@ -1,8 +1,23 @@
 {
   "feed": "https://www.labsus.org/feed",
-  "latest": "2026-09-16",
-  "span_days": 71,
+  "latest": "2026-10-20",
+  "span_days": 83,
   "items": [
+    {
+      "date": "2026-10-20",
+      "title": "Un patto contro lo spopolamento delle aree montane: una foresteria come bene comune",
+      "url": "https://www.labsus.org/2026/10/un-patto-contro-lo-spopolamento-delle-aree-montane-una-foresteria-come-bene-comune/"
+    },
+    {
+      "date": "2026-10-06",
+      "title": "La città è di tutti",
+      "url": "https://www.labsus.org/2026/10/la-citta-e-di-tutti/"
+    },
+    {
+      "date": "2026-10-06",
+      "title": "Diritto alla riparazione: da tutela del consumatore a motore di cambiamento?",
+      "url": "https://www.labsus.org/2026/10/diritto_alla_riparazione/"
+    },
     {
       "date": "2026-09-16",
       "title": "Elogio dei tre saperi di Marianella Sclavi",

@@ -1,9 +1,44 @@
 {
   "feed": "https://grattan.edu.au/feed",
-  "failing": {
-    "error": "HTTP_500",
-    "since": "2026-10-23",
-    "count": 1,
-    "last": "2026-10-23"
+  "latest": "2026-10-18",
+  "span_days": 1673,
+  "items": [
+    {
+      "date": "2026-10-18",
+      "title": "Raise the GST to fund Australia’s future",
+      "url": "https://grattan.edu.au/raise-the-gst-to-fund-australias-future/"
+    },
+    {
+      "date": "2026-09-22",
+      "title": "Reduce money in politics to strengthen our democracy",
+      "url": "https://grattan.edu.au/reduce-money-in-politics-to-strengthen-our-democracy/"
+    },
+    {
+      "date": "2026-07-26",
+      "title": "Reform the system so disabled Australians can have better jobs and fairer wages",
+      "url": "https://grattan.edu.au/reform-the-system-so-disabled-australians-can-have-better-jobs-and-fairer-wages/"
+    },
+    {
+      "date": "2026-07-12",
+      "title": "Shake up pharmacy policy to give patients a better deal",
+      "url": "https://grattan.edu.au/shake-up-pharmacy-policy-to-give-patients-a-better-deal/"
+    },
+    {
+      "date": "2026-05-31",
+      "title": "Tough decisions needed on gas",
+      "url": "https://grattan.edu.au/tough-decisions-needed-on-gas/",
+      "signals": [
+        "publication"
+      ]
+    },
+    {
+      "date": "2026-05-19",
+      "title": "Axe car-parking rules to cut the cost of housing",
+      "url": "https://grattan.edu.au/axe-car-parking-rules-to-cut-the-cost-of-housing/"
+    }
+  ],
+  "fetch": {
+    "etag": "W/\"b5a84df17963867f7d80ac2b904681a8\"",
+    "last_modified": "Mon, 26 Oct 2026 22:52:16 GMT"
   }
 }

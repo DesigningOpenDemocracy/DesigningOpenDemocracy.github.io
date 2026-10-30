@@ -58,7 +58,7 @@ activity:
       misinformation section'
   sitemap:
     note: Sitemap found, no lastmod
-    checked: 2026-10-02
+    checked: 2026-10-30
 last_checked: '2026-09-17'
 ---
 

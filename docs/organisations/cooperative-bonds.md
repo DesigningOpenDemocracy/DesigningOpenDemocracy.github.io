@@ -74,7 +74,7 @@ activity:
     date: 2026-10-14
     note: Latest news page scraped
     url: https://bonds.coop/resources/co-op-news/
-    checked: 2026-10-23
+    checked: 2026-10-30
 last_checked: '2026-09-27'
 ---
 

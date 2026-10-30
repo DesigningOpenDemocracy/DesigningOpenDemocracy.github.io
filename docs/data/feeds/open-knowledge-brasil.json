@@ -1,8 +1,13 @@
 {
   "feed": "https://ok.org.br/feed",
-  "latest": "2026-10-01",
-  "span_days": 48,
+  "latest": "2026-10-23",
+  "span_days": 66,
   "items": [
+    {
+      "date": "2026-10-23",
+      "title": "Eleições 2026: políticas e mecanismos democráticos para defender no Brasil",
+      "url": "https://ok.org.br/noticia/eleicoes-2026-politicas-e-mecanismos-democraticos-para-defender-no-brasil/"
+    },
     {
       "date": "2026-10-01",
       "title": "8º Prêmio Cláudio Weber Abramo de Jornalismo de Dados divulga projetos finalistas",
@@ -58,7 +63,7 @@
     }
   ],
   "fetch": {
-    "etag": "\"83863d6da735e8fbffa5f16fced53805-gzip\"",
-    "last_modified": "Thu, 01 Oct 2026 22:56:38 GMT"
+    "etag": "\"bc39fd892c315ecb3c82ff3a9c5f4be4-gzip\"",
+    "last_modified": "Thu, 29 Oct 2026 21:51:21 GMT"
   }
 }

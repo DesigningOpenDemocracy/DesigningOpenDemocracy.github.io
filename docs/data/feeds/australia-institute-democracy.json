@@ -1,0 +1,9 @@
+{
+  "feed": "https://australiainstitute.org.au/feed",
+  "failing": {
+    "error": "HTTP_403",
+    "since": "2026-10-30",
+    "count": 1,
+    "last": "2026-10-30"
+  }
+}

@@ -57,11 +57,10 @@ activity:
     url: https://www.sitra.fi/en/
     checked: 2026-09-19
   rss:
-    date: 2026-10-21
-    note: 'Latest post: Kysymyksiä ja vastauksia rahoitushausta: Tukea kunnille vihreiden
-      investointien '
-    url: https://www.sitra.fi/artikkelit/kysymyksia-ja-vastauksia-rahoitushausta-tukea-kunnille-vihreiden-investointien-vuorovaikutukseen/
-    checked: 2026-10-23
+    date: 2026-10-28
+    note: 'Latest post: Miten tehdä parempia päätöksiä epävarmuuden ajassa'
+    url: https://www.sitra.fi/blogit/miten-tehda-parempia-paatoksia-epavarmuuden-ajassa/
+    checked: 2026-10-30
 last_checked: '2026-09-19'
 ---
 

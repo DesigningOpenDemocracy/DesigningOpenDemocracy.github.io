@@ -62,11 +62,11 @@ activity:
     url: https://www.afrobarometer.org
     checked: 2026-09-19
   rss:
-    date: 2026-10-13
-    note: 'Latest post: Saúde, água e desemprego são as principais prioridades  na
-      agenda política dos M'
-    url: https://www.afrobarometer.org/articles/saude-agua-e-desemprego-sao-as-principais-prioridades-na-agenda-politica-dos-mocambicanos-comuns/
-    checked: 2026-10-23
+    date: 2026-10-27
+    note: 'Latest post: Should I stay or should I go? What Africa’s young people are
+      telling us about mi'
+    url: https://www.afrobarometer.org/articles/should-i-stay-or-should-i-go-what-africas-young-people-are-telling-us-about-migration/
+    checked: 2026-10-30
 last_checked: '2026-09-19'
 ---
 

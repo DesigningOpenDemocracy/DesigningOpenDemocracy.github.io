@@ -76,10 +76,10 @@ activity:
     checked: 2026-10-02
     note: No feed found
   scrape:
-    date: 2026-08-26
+    date: 2026-10-23
     note: Latest news page scraped
     url: https://www.rgb.rw/updates/news
-    checked: 2026-10-23
+    checked: 2026-10-30
 last_checked: '2026-09-15'
 ---
 

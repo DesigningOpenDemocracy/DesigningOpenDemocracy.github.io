@@ -1,8 +1,17 @@
 {
   "feed": "https://perludem.or.id/feed",
-  "latest": "2026-09-15",
-  "span_days": 50,
+  "latest": "2026-10-10",
+  "span_days": 72,
   "items": [
+    {
+      "date": "2026-10-10",
+      "title": "EDF 2026: Perludem Calls on Young People to Champion Electoral Reform",
+      "url": "https://perludem.or.id/edf-2026-perludem-calls-on-young-people-to-champion-electoral-reform/",
+      "signals": [
+        "election or referendum",
+        "flagship event"
+      ]
+    },
     {
       "date": "2026-09-15",
       "title": "Assessing the Constitutionality of E-Voting, Perludem Calls for a Needs-Based Approach",
@@ -73,7 +82,7 @@
     }
   ],
   "fetch": {
-    "etag": "W/\"bf573040f0cf342bdfc5fcd6e7861f8d\"",
-    "last_modified": "Thu, 17 Sep 2026 04:50:36 GMT"
+    "etag": "W/\"ffc8632ffc542fb55c30f40122f76699\"",
+    "last_modified": "Thu, 29 Oct 2026 08:57:20 GMT"
   }
 }

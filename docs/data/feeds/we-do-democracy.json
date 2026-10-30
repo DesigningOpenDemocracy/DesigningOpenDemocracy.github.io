@@ -1,8 +1,26 @@
 {
   "feed": "https://www.wedodemocracy.dk/feed",
-  "latest": "2026-09-17",
-  "span_days": 252,
+  "latest": "2026-10-29",
+  "span_days": 247,
   "items": [
+    {
+      "date": "2026-10-29",
+      "title": "We Do Democracy er udpeget til at gennemføre inddragelsen i Den Grønne Trepart",
+      "url": "https://www.wedodemocracy.dk/historisk-stort-inddragelsesproces-i-den-groenne-trepart/"
+    },
+    {
+      "date": "2026-10-23",
+      "title": "Over 60 organisationer samlet om at styrke den mangfoldige deltagelse",
+      "url": "https://www.wedodemocracy.dk/over-60-organisationer-samlet-om-at-styrke-den-mangfoldige-deltagelse/"
+    },
+    {
+      "date": "2026-10-15",
+      "title": "Hvad virker, når borgere og unge skal inddrages? Nyt nordisk projekt kortlægger og afprøver deltagelsesmetoder i hele Norden",
+      "url": "https://www.wedodemocracy.dk/hvad-virker-naar-borgere-og-unge-skal-inddrages-nyt-nordisk-projekt-kortlaegger-og-afproever-deltagelsesmetoder-i-hele-norden/",
+      "mentions": [
+        "Digidem Lab"
+      ]
+    },
     {
       "date": "2026-09-17",
       "title": "Ny Skole for Fremtidens Demokrati samler borgernes demokratiske dannelse i et nyt læringsrum",
@@ -22,14 +40,9 @@
       "date": "2026-05-06",
       "title": "We Do Democracy søger dygtige kandidater til flere ledige stillinger",
       "url": "https://www.wedodemocracy.dk/we-do-democracy-soeger-dygtige-kandidater-til-flere-ledige-stillinger/"
-    },
-    {
-      "date": "2026-04-30",
-      "title": "We Do Democracy er nordisk partner i Democracy Fitness Global",
-      "url": "https://www.wedodemocracy.dk/we-do-democracy-er-nordisk-partner-i-democracy-fitness-global/"
     }
   ],
   "fetch": {
-    "etag": "\"f290f46d588d9957dfdde046f852aa6a\""
+    "etag": "\"c1c34c938d37a72f1ef0bb1068cfd313\""
   }
 }

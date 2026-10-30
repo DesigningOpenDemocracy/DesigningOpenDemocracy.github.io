@@ -58,10 +58,10 @@ activity:
     url: https://www.peoplepower21.org
     checked: 2026-09-19
   rss:
-    date: 2026-10-23
-    note: 'Latest post: [성명] 오세훈 정치자금법 2심 무죄 선고 규탄한다'
-    url: https://peoplepower21.org/politics/2055045
-    checked: 2026-10-23
+    date: 2026-10-30
+    note: 'Latest post: [논평] 형사소송법 개정해 내란 판결문 실명본 공개해야'
+    url: https://peoplepower21.org/government/2055441
+    checked: 2026-10-30
 last_checked: '2026-09-19'
 ---
 

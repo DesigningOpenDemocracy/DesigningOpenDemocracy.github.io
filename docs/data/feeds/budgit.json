@@ -1,8 +1,13 @@
 {
   "feed": "https://budgit.org/feed",
-  "latest": "2026-10-01",
-  "span_days": 78,
+  "latest": "2026-10-22",
+  "span_days": 90,
   "items": [
+    {
+      "date": "2026-10-22",
+      "title": "The 15-Year Movement Turning Complex Public Finance Data into Citizen Power",
+      "url": "https://budgit.org/the-15-year-movement-turning-complex-public-finance-data-into-citizen-power/"
+    },
     {
       "date": "2026-10-01",
       "title": "The Nigeria We Envision",
@@ -55,7 +60,7 @@
     }
   ],
   "fetch": {
-    "etag": "\"af9d5db4809ad22454f0ab19288e48f3-gzip\"",
-    "last_modified": "Thu, 01 Oct 2026 10:36:31 GMT"
+    "etag": "\"c6538fb6d480ec352d6e1cb2c9ff0c9b-gzip\"",
+    "last_modified": "Thu, 29 Oct 2026 23:13:09 GMT"
   }
 }

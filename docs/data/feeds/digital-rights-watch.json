@@ -1,8 +1,29 @@
 {
   "feed": "https://digitalrightswatch.org.au/index.xml",
-  "latest": "2026-10-02",
-  "span_days": 9405,
+  "latest": "2026-10-22",
+  "span_days": 9425,
   "items": [
+    {
+      "date": "2026-10-22",
+      "title": "Digital Duty of Care Submission Guide",
+      "url": "/2026/10/22/digital-duty-of-care-submission-guide/"
+    },
+    {
+      "date": "2026-10-20",
+      "title": "Misogyny in Online Social Spaces",
+      "url": "/misogyny-in-online-social-spaces/"
+    },
+    {
+      "date": "2026-10-13",
+      "title": "Protecting democracy in an increasingly digital world",
+      "url": "/2026/10/13/protecting-democracy-in-an-increasingly-digital-world/",
+      "signals": [
+        "award or recognition"
+      ],
+      "routine": [
+        "fundraising"
+      ]
+    },
     {
       "date": "2026-10-02",
       "title": "Submission on the National AI Standards paper",
@@ -137,27 +158,9 @@
       "date": "2026-05-11",
       "title": "State interference and censorship at RightsCon 2026",
       "url": "/2026/05/11/state-interference-and-censorship-at-rightscon-2026/"
-    },
-    {
-      "date": "2026-04-27",
-      "title": "Submission to the Standing Committee on Petitions Regarding the Inquiry into the Standing Orders Relating to Petitions",
-      "url": "/2026/04/27/submission-to-the-standing-committee-on-petitions-regarding-the-inquiry-into-the-standing-orders-relating-to-petitions/",
-      "signals": [
-        "legal or legislative"
-      ]
-    },
-    {
-      "date": "2026-04-23",
-      "title": "Media Release: RentTech platforms must stop unfair and excessive personal information collection",
-      "url": "/2026/04/23/media-release-renttech-platforms-must-stop-unfair-and-excessive-personal-information-collection/"
-    },
-    {
-      "date": "2026-04-20",
-      "title": "Response to the Online Safety Act Review",
-      "url": "/2026/04/20/response-to-the-online-safety-act-review/"
     }
   ],
   "fetch": {
-    "etag": "\"ed511de03a264ef73e11831bf9518776-ssl-df\""
+    "etag": "\"9b91bb3c4ab79d17e59332937fc9e817-ssl-df\""
   }
 }

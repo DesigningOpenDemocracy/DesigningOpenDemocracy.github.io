@@ -1,8 +1,13 @@
 {
   "feed": "https://www.afrobarometer.org/feed",
-  "latest": "2026-10-13",
-  "span_days": 21,
+  "latest": "2026-10-27",
+  "span_days": 33,
   "items": [
+    {
+      "date": "2026-10-27",
+      "title": "Should I stay or should I go? What Africa’s young people are telling us about migration",
+      "url": "https://www.afrobarometer.org/articles/should-i-stay-or-should-i-go-what-africas-young-people-are-telling-us-about-migration/"
+    },
     {
       "date": "2026-10-13",
       "title": "Saúde, água e desemprego são as principais prioridades  na agenda política dos Moçambicanos comuns",
@@ -107,6 +112,6 @@
     }
   ],
   "fetch": {
-    "last_modified": "Thu, 22 Oct 2026 15:52:23 GMT"
+    "last_modified": "Tue, 27 Oct 2026 17:25:46 GMT"
   }
 }

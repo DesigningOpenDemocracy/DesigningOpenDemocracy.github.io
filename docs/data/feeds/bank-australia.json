@@ -1,8 +1,120 @@
 {
   "feed": "https://www.bankaust.com.au/blog/rss.xml",
-  "latest": "2026-10-02",
-  "span_days": 141,
+  "latest": "2026-10-29",
+  "span_days": 137,
   "items": [
+    {
+      "date": "2026-10-29",
+      "title": "How Hervey Bay's Urraween Village is redefining disability housing in regional Australia",
+      "url": "https://www.bankaust.com.au/blog/these-hervey-bay-villas-are-helping-redefine-disability-housing-in-regional-australia"
+    },
+    {
+      "date": "2026-10-29",
+      "title": "Everything you need to know about Sustainable House Day 2024",
+      "url": "https://www.bankaust.com.au/blog/everything-you-need-to-know-about-sustainable-house-day-2024"
+    },
+    {
+      "date": "2026-10-27",
+      "title": "How does credit card interest work?",
+      "url": "https://www.bankaust.com.au/blog/how-does-credit-card-interest-work"
+    },
+    {
+      "date": "2026-10-15",
+      "title": "How to electrify your home: free expert support | Bank Australia",
+      "url": "https://www.bankaust.com.au/blog/how-to-electrify-your-home-with-free-expert-support"
+    },
+    {
+      "date": "2026-10-09",
+      "title": "How Bank Australia is helping Meg and Pat get their house off gas",
+      "url": "https://www.bankaust.com.au/blog/how-bank-australia-is-helping-meg-and-pat-get-their-house-off-gas"
+    },
+    {
+      "date": "2026-10-08",
+      "title": "EV car loan Australia: what it is and how it works | Bank Australia",
+      "url": "https://www.bankaust.com.au/blog/what-is-an-ev-car-loan-australia"
+    },
+    {
+      "date": "2026-10-08",
+      "title": "4 ways to help Heal Country this NAIDOC Week | Blog",
+      "url": "https://www.bankaust.com.au/blog/4-ways-to-help-heal-country-this-naidoc-week"
+    },
+    {
+      "date": "2026-10-05",
+      "title": "You can watch ‘The Dreamlife of Georgie Stone’ on Netflix",
+      "url": "https://www.bankaust.com.au/blog/you-can-watch-the-dreamlife-of-georgie-stone-on-netflix"
+    },
+    {
+      "date": "2026-10-05",
+      "title": "Yass farmers lead by example",
+      "url": "https://www.bankaust.com.au/blog/yass-farmers-leading-the-charge-for-project-drawdown"
+    },
+    {
+      "date": "2026-10-05",
+      "title": "Why does a bank have a climate action strategy manager?",
+      "url": "https://www.bankaust.com.au/blog/why-does-a-bank-have-a-climate-action-strategy-manager"
+    },
+    {
+      "date": "2026-10-05",
+      "title": "What is Passive House (Passivhaus) design?",
+      "url": "https://www.bankaust.com.au/blog/what-is-passive-house-passivhaus-design-bank-australia"
+    },
+    {
+      "date": "2026-10-05",
+      "title": "Voice to Parliament",
+      "url": "https://www.bankaust.com.au/blog/voice-to-parliament",
+      "signals": [
+        "award or recognition",
+        "flagship event"
+      ]
+    },
+    {
+      "date": "2026-10-05",
+      "title": "The Big Sell 2022: supporting The Big Issue’s hardworking vendors",
+      "url": "https://www.bankaust.com.au/blog/the-big-sell-2022-supporting-the-big-issues-hardworking-vendors"
+    },
+    {
+      "date": "2026-10-05",
+      "title": "Meet the creative agency tackling systemic racism",
+      "url": "https://www.bankaust.com.au/blog/meet-the-creative-agency-tackling-systemic-racism"
+    },
+    {
+      "date": "2026-10-05",
+      "title": "Hold on, what does banking have to do with biodiversity?",
+      "url": "https://www.bankaust.com.au/blog/hold-on-what-does-banking-have-to-do-with-biodiversity"
+    },
+    {
+      "date": "2026-10-05",
+      "title": "Handy tips from electrification expert Tim Forcey",
+      "url": "https://www.bankaust.com.au/blog/tips-from-home-electrification-expert-tim-forcey"
+    },
+    {
+      "date": "2026-10-05",
+      "title": "H5 bird flu has arrived in Australia: what to do if you see a sick animal and what it means for nature",
+      "url": "https://www.bankaust.com.au/blog/h5-bird-flu-has-arrived-in-australia-what-to-do-if-you-see-a-sick-animal-and-what-it-means-for-nature"
+    },
+    {
+      "date": "2026-10-05",
+      "title": "First Nations Recognition and Respect: Strategy update",
+      "url": "https://www.bankaust.com.au/blog/first-nations-recognition-and-respect-an-update-one-year-on-from-our-strategy-launch",
+      "signals": [
+        "launch"
+      ]
+    },
+    {
+      "date": "2026-10-05",
+      "title": "Ethical game changing subscriptions",
+      "url": "https://www.bankaust.com.au/blog/set-and-forget-these-ethical-subscriptions-are-game-changing"
+    },
+    {
+      "date": "2026-10-05",
+      "title": "7 Animals Who Make Our Conservation Reserve So Unique | Blog",
+      "url": "https://www.bankaust.com.au/blog/7-animals-who-make-our-conservation-reserve-so-unique"
+    },
+    {
+      "date": "2026-10-05",
+      "title": "12 ethical new year’s resolutions for 2025 | Blog",
+      "url": "https://www.bankaust.com.au/blog/12-ethical-new-years-resolutions-for-2025"
+    },
     {
       "date": "2026-10-02",
       "title": "Why becoming a B Corp means so much",
@@ -17,11 +129,6 @@
       "date": "2026-10-02",
       "title": "B Corp Month is here! And it’s kind of a big deal | Blog",
       "url": "https://www.bankaust.com.au/blog/b-corp-month-is-here-and-its-kind-of-a-big-deal"
-    },
-    {
-      "date": "2026-09-30",
-      "title": "Why does a bank have a climate action strategy manager?",
-      "url": "https://www.bankaust.com.au/blog/why-does-a-bank-have-a-climate-action-strategy-manager"
     },
     {
       "date": "2026-09-30",
@@ -176,119 +283,9 @@
       "signals": [
         "publication"
       ]
-    },
-    {
-      "date": "2026-09-21",
-      "title": "Local climate solutions together with Cities Power Partnership",
-      "url": "https://www.bankaust.com.au/blog/driving-local-climate-solutions-together-with-cities-power-partnership"
-    },
-    {
-      "date": "2026-09-21",
-      "title": "COP27: How banking and finance are key to meaningful action",
-      "url": "https://www.bankaust.com.au/blog/cop27-how-banking-and-finance-are-key-to-meaningful-climate-action",
-      "signals": [
-        "flagship event"
-      ]
-    },
-    {
-      "date": "2026-09-21",
-      "title": "Bank Australia to cease loans for new fossil fuel cars from 2025 | Blog",
-      "url": "https://www.bankaust.com.au/blog/bank-australia-to-cease-loans-for-new-fossil-fuel-cars-from-2025"
-    },
-    {
-      "date": "2026-09-21",
-      "title": "Bank Australia delivers strong customer growth in FY22",
-      "url": "https://www.bankaust.com.au/blog/bank-australia-delivers-strong-customer-and-asset-growth-in-fy22"
-    },
-    {
-      "date": "2026-09-21",
-      "title": "A year of creating positive impact with our customers: Bank Australia’s 2025 Impact Report",
-      "url": "https://www.bankaust.com.au/blog/a-year-of-creating-positive-impact-with-our-customers-bank-australias-2025-impact-report",
-      "signals": [
-        "publication"
-      ]
-    },
-    {
-      "date": "2026-09-21",
-      "title": "A year of creating change together: our 2022 impact report | Blog",
-      "url": "https://www.bankaust.com.au/blog/a-year-of-creating-change-together-our-2022-impact-report",
-      "signals": [
-        "launch",
-        "publication"
-      ]
-    },
-    {
-      "date": "2026-09-16",
-      "title": "Password security tips: how to protect your online accounts this spring",
-      "url": "https://www.bankaust.com.au/blog/could-your-password-already-be-exposed-a-quick-spring-clean-can-help-protect-your-accounts"
-    },
-    {
-      "date": "2026-09-14",
-      "title": "Updates to our Terms and Conditions",
-      "url": "https://www.bankaust.com.au/blog/updates-to-click-to-pay-terms-and-conditions"
-    },
-    {
-      "date": "2026-09-03",
-      "title": "How wetland restoration is bringing nature back to south-east Australia",
-      "url": "https://www.bankaust.com.au/blog/how-nature-glenelg-trust-is-restoring-wetlands-helping-brolgas-frogs-and-other-native-species"
-    },
-    {
-      "date": "2026-08-31",
-      "title": "Why bushfire recovery after fires is critical for wildlife and local landscapes",
-      "url": "https://www.bankaust.com.au/blog/why-bushfire-recovery-after-fires-is-critical-for-wildlife-and-local-landscapes"
-    },
-    {
-      "date": "2026-08-31",
-      "title": "Why being customer owned matters",
-      "url": "https://www.bankaust.com.au/blog/why-being-customer-owned-matters"
-    },
-    {
-      "date": "2026-08-31",
-      "title": "The clean energy transition is underway. Here are 3 ways we're he",
-      "url": "https://www.bankaust.com.au/blog/the-clean-energy-transition-is-underway-here-are-3-ways-bank-australia-is-helping"
-    },
-    {
-      "date": "2026-08-31",
-      "title": "March is B Corp Month: Celebrating businesses creating change",
-      "url": "https://www.bankaust.com.au/blog/march-is-b-corp-month-celebrating-businesses-creating-change"
-    },
-    {
-      "date": "2026-08-31",
-      "title": "How to switch to a green energy provider",
-      "url": "https://www.bankaust.com.au/blog/how-to-switch-to-a-green-energy-provider"
-    },
-    {
-      "date": "2026-08-31",
-      "title": "Energy efficiency tips for rental properties",
-      "url": "https://www.bankaust.com.au/blog/energy-efficiency-and-going-electric-while-renting-top-tips"
-    },
-    {
-      "date": "2026-08-31",
-      "title": "Empowering Australian Communities to Slash Climate Pollution",
-      "url": "https://www.bankaust.com.au/blog/empowering-australian-communities-to-slash-climate-pollution"
-    },
-    {
-      "date": "2026-08-31",
-      "title": "B Corps coming together for good: Behind the scenes of our latest",
-      "url": "https://www.bankaust.com.au/blog/b-corps-coming-together-for-good-behind-the-scenes-of-our-latest-campaign"
-    },
-    {
-      "date": "2026-08-25",
-      "title": "Yule love these tips for a super sustainable holiday season",
-      "url": "https://www.bankaust.com.au/blog/tips-for-a-super-sustainable-holiday-season"
-    },
-    {
-      "date": "2026-08-25",
-      "title": "Working with more purpose",
-      "url": "https://www.bankaust.com.au/blog/5-purpose-driven-new-years-resolutions-for-your-business"
-    },
-    {
-      "date": "2026-08-25",
-      "title": "Sustainable change: 5 new B Corps to get excited about in 2022",
-      "url": "https://www.bankaust.com.au/blog/sustainable-change-5-new-b-corps-to-get-excited-about-in-2022"
     }
   ],
   "fetch": {
-    "last_modified": "Fri, 02 Oct 2026 07:41:21 GMT"
+    "last_modified": "Fri, 30 Oct 2026 09:43:12 GMT"
   }
 }

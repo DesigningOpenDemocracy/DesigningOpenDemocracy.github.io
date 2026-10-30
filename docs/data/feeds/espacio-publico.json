@@ -1,8 +1,48 @@
 {
   "feed": "https://www.espaciopublico.cl/feed",
-  "latest": "2026-09-28",
-  "span_days": 73,
+  "latest": "2026-10-26",
+  "span_days": 67,
   "items": [
+    {
+      "date": "2026-10-26",
+      "title": "Nueva propuesta de reforma constitucional en seguridad: menos de lo mismo",
+      "url": "https://espaciopublico.cl/nueva-propuesta-de-reforma-constitucional-en-seguridad-menos-de-lo-mismo/"
+    },
+    {
+      "date": "2026-10-25",
+      "title": "¿Quién pagará la rebaja del TAG?",
+      "url": "https://espaciopublico.cl/quien-pagara-la-rebaja-del-tag/"
+    },
+    {
+      "date": "2026-10-15",
+      "title": "Índice Global de Innovación 2026: Chile retrocede en resultados",
+      "url": "https://espaciopublico.cl/indice-global-de-innovacion-2026-chile-retrocede-en-resultados/"
+    },
+    {
+      "date": "2026-10-15",
+      "title": "La gratuidad no cabe en el presupuesto",
+      "url": "https://espaciopublico.cl/la-gratuidad-no-cabe-en-el-presupuesto/"
+    },
+    {
+      "date": "2026-10-15",
+      "title": "La dimensión social del desarrollo",
+      "url": "https://espaciopublico.cl/la-dimension-social-del-desarrollo/"
+    },
+    {
+      "date": "2026-10-07",
+      "title": "Espacio Público dio inicio a ciclo de conversaciones sobre el futuro de la socialdemocracia",
+      "url": "https://espaciopublico.cl/espacio-publico-dio-inicio-a-ciclo-de-conversaciones-sobre-el-futuro-de-la-socialdemocracia/"
+    },
+    {
+      "date": "2026-10-05",
+      "title": "¿Quién elige mi PC?",
+      "url": "https://espaciopublico.cl/quien-elige-mi-pc/"
+    },
+    {
+      "date": "2026-10-01",
+      "title": "Ciclistas en el Parquemet",
+      "url": "https://espaciopublico.cl/ciclistas-en-el-parquemet/"
+    },
     {
       "date": "2026-09-28",
       "title": "Más valor desde el cobre",
@@ -108,7 +148,7 @@
     }
   ],
   "fetch": {
-    "etag": "W/\"18556796b150ea7e2bfb7f9c4371373b\"",
-    "last_modified": "Tue, 29 Sep 2026 13:54:15 GMT"
+    "etag": "W/\"55fd24ed07b79592e20d48f215568151\"",
+    "last_modified": "Thu, 29 Oct 2026 16:04:14 GMT"
   }
 }

@@ -66,10 +66,10 @@ activity:
     url: https://mzalendo.com
     checked: 2026-09-20
   sitemap:
-    date: 2026-09-26
+    date: 2026-10-27
     note: Page last modified (from sitemap)
     url: https://mzalendo.com/sitemap.xml
-    checked: 2026-10-02
+    checked: 2026-10-30
 last_checked: '2026-09-20'
 ---
 

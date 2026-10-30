@@ -111,12 +111,12 @@ activity:
     date: 2026-09-29
     note: 'Latest post: News & Insights | McKinnon'
     url: https://mckinnon.co/insights
-    checked: 2026-10-23
+    checked: 2026-10-30
   sitemap:
-    date: 2026-09-30
+    date: 2026-10-30
     note: Page last modified (from sitemap)
     url: https://mckinnon.co/sitemap.xml
-    checked: 2026-10-02
+    checked: 2026-10-30
 last_checked: '2026-09-19'
 ---
 

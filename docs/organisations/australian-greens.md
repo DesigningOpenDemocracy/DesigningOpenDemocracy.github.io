@@ -86,10 +86,10 @@ activity:
     url: https://greens.org.au
     checked: 2026-09-19
   rss:
-    date: 2026-10-02
-    note: 'Latest post: Ruthven Station Stall'
-    url: https://greens.org.au/node/3041121
-    checked: 2026-10-02
+    date: 2026-10-30
+    note: 'Latest post: Playing for Keeps'
+    url: https://greens.org.au/node/3045366
+    checked: 2026-10-30
 last_checked: '2026-09-19'
 ---
 

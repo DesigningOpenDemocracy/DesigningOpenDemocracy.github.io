@@ -1,8 +1,18 @@
 {
   "feed": "https://www.ettemedia.com/feed",
-  "latest": "2026-10-16",
-  "span_days": 22,
+  "latest": "2026-10-30",
+  "span_days": 34,
   "items": [
+    {
+      "date": "2026-10-30",
+      "title": "The Monthly Booklette: October edition",
+      "url": "https://www.ettemedia.com/the-monthly-booklette-october-edition/"
+    },
+    {
+      "date": "2026-10-23",
+      "title": "Ettention Please: the stories you might have missed this week",
+      "url": "https://www.ettemedia.com/ettention-please-the-stories-you-might-have-missed-this-week-24-october/"
+    },
     {
       "date": "2026-10-16",
       "title": "Ettention Please: the stories you might have missed this week",
@@ -157,6 +167,6 @@
     }
   ],
   "fetch": {
-    "etag": "W/\"13070-S9tsJMxhd9f7CrZ6Dtd5i3UCEqE\""
+    "etag": "W/\"12588-l7061lzrJ973nhMoMF6Yp+gGHrU\""
   }
 }

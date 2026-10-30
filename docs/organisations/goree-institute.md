@@ -69,7 +69,7 @@ activity:
     note: 'Latest post: Phase 3 du programme Investir dans les jeunes chercheurs au
       Sahel : de la recher'
     url: https://goreeinstitut.org/phase-3-du-programme-investir-dans-les-jeunes-chercheurs-au-sahel-de-la-recherche-a-laction/
-    checked: 2026-10-02
+    checked: 2026-10-30
 last_checked: '2026-09-17'
 ---
 

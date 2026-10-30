@@ -1,8 +1,56 @@
 {
   "feed": "https://greens.org.au/rss.xml",
-  "latest": "2026-10-02",
-  "span_days": 3088,
+  "latest": "2026-10-30",
+  "span_days": 3116,
   "items": [
+    {
+      "date": "2026-10-30",
+      "title": "WM26 - Western  Metro Day-of-Action: Call-athon",
+      "url": "https://greens.org.au/node/3045356"
+    },
+    {
+      "date": "2026-10-30",
+      "title": "WM26 - Western  Metro Day-of-Action: Call-athon",
+      "url": "https://greens.org.au/node/3045355"
+    },
+    {
+      "date": "2026-10-30",
+      "title": "Preston Call Party!",
+      "url": "https://greens.org.au/node/3045365"
+    },
+    {
+      "date": "2026-10-30",
+      "title": "Preston Call Party!",
+      "url": "https://greens.org.au/node/3045364"
+    },
+    {
+      "date": "2026-10-30",
+      "title": "Preston Call Party!",
+      "url": "https://greens.org.au/node/3045363"
+    },
+    {
+      "date": "2026-10-30",
+      "title": "Preston Call Party!",
+      "url": "https://greens.org.au/node/3045362"
+    },
+    {
+      "date": "2026-10-30",
+      "title": "Playing for Keeps",
+      "url": "https://greens.org.au/node/3045366"
+    },
+    {
+      "date": "2026-10-30",
+      "title": "Greens Letterbox for Lane Cove Campaign",
+      "url": "https://greens.org.au/node/3045354"
+    },
+    {
+      "date": "2026-10-30",
+      "title": "Casey Greens Candidates Community BBQ",
+      "url": "https://greens.org.au/node/3045353",
+      "routine": [
+        "petition"
+      ]
+    },
     {
       "date": "2026-10-02",
       "title": "Week of Action: Wednesday Knock",
@@ -59,7 +107,7 @@
     }
   ],
   "fetch": {
-    "etag": "\"1790932580\"",
-    "last_modified": "Fri, 02 Oct 2026 09:16:20 GMT"
+    "etag": "\"1793352657\"",
+    "last_modified": "Fri, 30 Oct 2026 09:30:57 GMT"
   }
 }

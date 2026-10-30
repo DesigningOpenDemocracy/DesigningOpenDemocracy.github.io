@@ -54,11 +54,11 @@ activity:
     url: https://www.wedodemocracy.dk
     checked: 2026-09-19
   rss:
-    date: 2026-09-17
-    note: 'Latest post: Ny Skole for Fremtidens Demokrati samler borgernes demokratiske
-      dannelse i et ny'
-    url: https://www.wedodemocracy.dk/ny-skole-for-fremtidens-demokrati-samler-borgernes-demokratiske-dannelse-i-et-nyt-laeringsrum/
-    checked: 2026-10-02
+    date: 2026-10-29
+    note: 'Latest post: We Do Democracy er udpeget til at gennemføre inddragelsen
+      i Den Grønne Trepart'
+    url: https://www.wedodemocracy.dk/historisk-stort-inddragelsesproces-i-den-groenne-trepart/
+    checked: 2026-10-30
 last_checked: '2026-09-19'
 ---
 

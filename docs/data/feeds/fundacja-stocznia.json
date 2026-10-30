@@ -1,8 +1,13 @@
 {
   "feed": "https://stocznia.org.pl/feed",
-  "latest": "2026-06-25",
-  "span_days": 129,
+  "latest": "2026-10-29",
+  "span_days": 247,
   "items": [
+    {
+      "date": "2026-10-29",
+      "title": "Szkoła Nawigacji Społecznej – lepiej mądrze stać niż głupio biegać!",
+      "url": "https://stocznia.org.pl/2026/10/29/szkola-nawigacji-spolecznej-lepiej-madrze-stac-niz-glupio-biegac/"
+    },
     {
       "date": "2026-06-25",
       "title": "Wspólne oświadczenie polskich i ukraińskich organizacji, działaczy i działaczek społecznych",
@@ -32,15 +37,10 @@
       "date": "2026-05-20",
       "title": "Szukamy dostarczyciela usług hotelarskich – zapytanie ofertowe",
       "url": "https://stocznia.org.pl/2026/05/20/szukamy-dostarczyciela-uslug-hotelarskich-zapytanie-ofertowe-2/"
-    },
-    {
-      "date": "2026-04-14",
-      "title": "Mapa przepływów 1,5% pokazuje, skąd trafiają środki do OPP",
-      "url": "https://stocznia.org.pl/2026/04/14/mapa-przeplywow-15-pokazuje-skad-trafiaja-srodki-do-opp/"
     }
   ],
   "fetch": {
-    "etag": "W/\"84e857af4dfd9749c7267edc5c663720\"",
-    "last_modified": "Mon, 28 Sep 2026 11:51:40 GMT"
+    "etag": "W/\"e3bc71c4d29f3a8c5636a7fc936ab84e\"",
+    "last_modified": "Thu, 29 Oct 2026 14:20:01 GMT"
   }
 }

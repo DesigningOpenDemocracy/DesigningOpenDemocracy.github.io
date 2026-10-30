@@ -1,8 +1,58 @@
 {
   "feed": "https://chinademocrats.org/?feed=rss2",
-  "latest": "2026-10-14",
-  "span_days": 4,
+  "latest": "2026-10-29",
+  "span_days": 13,
   "items": [
+    {
+      "date": "2026-10-29",
+      "title": "汉娜 · 西贝里、钟伟锋 | “捂嘴”、“洗脑”：中国人工智能审查能否拆解",
+      "url": "https://chinademocrats.org/?p=7735"
+    },
+    {
+      "date": "2026-10-29",
+      "title": "民主迎来新的一天",
+      "url": "https://chinademocrats.org/?p=7748"
+    },
+    {
+      "date": "2026-10-29",
+      "title": "区倬僖、季志强 | 审查进了流水线：看清中国人工智能模型里的政治控制",
+      "url": "https://chinademocrats.org/?p=7729"
+    },
+    {
+      "date": "2026-10-26",
+      "title": "被丘吉尔嘲笑“沉闷”的人，曾主张对苏联动用核武",
+      "url": "https://chinademocrats.org/?p=7709"
+    },
+    {
+      "date": "2026-10-24",
+      "title": "独裁者的联盟并非铁板一块：民主力量如何撬动权力同盟？",
+      "url": "https://chinademocrats.org/?p=7690"
+    },
+    {
+      "date": "2026-10-24",
+      "title": "两个世界交互观察：一位加拿大青年政治学者的思考",
+      "url": "https://chinademocrats.org/?p=7376"
+    },
+    {
+      "date": "2026-10-22",
+      "title": "从迫使部长辞职到挑战选举制度：印度青年抗议运动的困境",
+      "url": "https://chinademocrats.org/?p=7660"
+    },
+    {
+      "date": "2026-10-20",
+      "title": "真正的解放技术，不是社交媒体，而是数字金融",
+      "url": "https://chinademocrats.org/?p=7626"
+    },
+    {
+      "date": "2026-10-19",
+      "title": "古巴公民社会正在积蓄改变，但距离真正的变革还有多远？",
+      "url": "https://chinademocrats.org/?p=7616"
+    },
+    {
+      "date": "2026-10-16",
+      "title": "中国在老挝建空军“据点”，东南亚要倒向北京？美学者：没那么简单",
+      "url": "https://chinademocrats.org/?p=7588"
+    },
     {
       "date": "2026-10-14",
       "title": "汉娜 · 西贝里、钟伟锋 | “捂嘴”、“洗脑”：中国人工智能审查能否拆解",
@@ -148,13 +198,7 @@
     }
   ],
   "fetch": {
-    "etag": "\"94e6aa3abf5da690f3ce90b254ae99fb\"",
-    "last_modified": "Thu, 15 Oct 2026 22:19:39 GMT"
-  },
-  "failing": {
-    "error": "NETWORK_ERROR",
-    "since": "2026-10-23",
-    "count": 1,
-    "last": "2026-10-23"
+    "etag": "\"bb92c04f74ebde6a2b25c6e0065dac09\"",
+    "last_modified": "Fri, 30 Oct 2026 02:00:00 GMT"
   }
 }

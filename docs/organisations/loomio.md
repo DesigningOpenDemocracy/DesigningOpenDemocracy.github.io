@@ -64,10 +64,10 @@ activity:
     url: https://www.loomio.com
     checked: 2026-09-21
   sitemap:
-    date: 2026-09-07
+    date: 2026-10-27
     note: Page last modified (from sitemap)
     url: https://www.loomio.com/marketing-sitemap.xml
-    checked: 2026-10-02
+    checked: 2026-10-30
 last_checked: '2026-09-21'
 ---
 

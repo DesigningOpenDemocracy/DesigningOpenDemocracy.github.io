@@ -26,10 +26,10 @@ activity:
       current as of September 2026
     url: https://www.betterpolitics.foundation/
   sitemap:
-    date: 2026-08-21
+    date: 2026-10-08
     note: Page last modified (from sitemap)
     url: https://www.betterpolitics.foundation/sitemap.xml
-    checked: 2026-10-02
+    checked: 2026-10-30
 last_checked: '2026-09-16'
 ---
 

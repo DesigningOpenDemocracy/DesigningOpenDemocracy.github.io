@@ -1,8 +1,18 @@
 {
   "feed": "https://transparenciacolombia.org.co/feed",
-  "latest": "2026-10-01",
+  "latest": "2026-10-17",
   "span_days": 92,
   "items": [
+    {
+      "date": "2026-10-17",
+      "title": "Financiamiento criminal de la política en Colombia: ¿cómo se captura y transforma el Estado?",
+      "url": "https://transparenciacolombia.org.co/financiamiento-criminal-politica-colombia-como-se-captura-transforma-el-estado/"
+    },
+    {
+      "date": "2026-10-15",
+      "title": "Se necesitan más garantías de transparencia en la reconstrucción",
+      "url": "https://transparenciacolombia.org.co/se-necesitan-mas-garantias-de-transparencia-en-la-reconstruccion/"
+    },
     {
       "date": "2026-10-01",
       "title": "Opinión de Transparencia por Colombia sobre el proceso de revisión de constitucionalidaddel Decreto Legislativo 1420 del 17 de septiembre de 2026",
@@ -58,7 +68,7 @@
     }
   ],
   "fetch": {
-    "etag": "\"9e4ede36db91fb8ae4a87f4e0a0a8418\"",
-    "last_modified": "Thu, 01 Oct 2026 22:48:15 GMT"
+    "etag": "\"71080cfbaae6cb47430d0402a8f5e958\"",
+    "last_modified": "Thu, 29 Oct 2026 19:57:59 GMT"
   }
 }

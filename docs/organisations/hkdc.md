@@ -72,7 +72,7 @@ activity:
     url: https://www.hkdc.us
     checked: 2026-09-28
   scrape:
-    checked: 2026-10-23
+    checked: 2026-10-30
     date: 2026-02-09
     note: Latest news page scraped
     url: https://www.hkdc.us/news
@@ -80,7 +80,7 @@ activity:
     date: 2026-09-16
     note: Page last modified (from sitemap)
     url: https://www.hkdc.us/sitemap.xml
-    checked: 2026-10-02
+    checked: 2026-10-30
 last_checked: '2026-09-28'
 ---
 

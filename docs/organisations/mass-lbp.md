@@ -58,9 +58,10 @@ activity:
     note: 'Latest video: What is MASS LBP?'
     url: https://www.youtube.com/watch?v=x-WbnLvrBBc
   sitemap:
-    checked: 2026-10-02
-    date: 2026-05-22
+    date: 2026-10-20
     note: Page last modified (from sitemap)
+    url: https://www.masslbp.com/sitemap.xml
+    checked: 2026-10-30
 last_checked: '2026-09-20'
 ---
 

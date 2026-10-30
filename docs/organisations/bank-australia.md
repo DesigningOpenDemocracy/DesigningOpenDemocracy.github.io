@@ -58,10 +58,10 @@ activity:
       all current.
     url: https://www.bankaust.com.au/about-us/customer-owned
   rss:
-    date: 2026-10-02
-    note: 'Latest post: Why becoming a B Corp means so much'
-    url: https://www.bankaust.com.au/blog/why-becoming-a-b-corp-means-so-much-to-us
-    checked: 2026-10-02
+    date: 2026-10-29
+    note: 'Latest post: Everything you need to know about Sustainable House Day 2024'
+    url: https://www.bankaust.com.au/blog/everything-you-need-to-know-about-sustainable-house-day-2024
+    checked: 2026-10-30
 last_checked: '2026-09-26'
 ---
 

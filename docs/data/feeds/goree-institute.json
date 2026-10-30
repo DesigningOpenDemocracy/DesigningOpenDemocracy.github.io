@@ -1,7 +1,7 @@
 {
   "feed": "https://goreeinstitut.org/feed",
-  "latest": "2026-09-28",
-  "span_days": 238,
+  "latest": "2026-09-25",
+  "span_days": 295,
   "items": [
     {
       "date": "2026-09-28",
@@ -28,14 +28,9 @@
       "signals": [
         "launch"
       ]
-    },
-    {
-      "date": "2026-04-21",
-      "title": "Coopération internationale: Gorée Institute reçoit une délégation néerlandaise autour des enjeux de paix, de jeunesse et de gouvernance",
-      "url": "https://goreeinstitut.org/cooperation-internationale/"
     }
   ],
   "fetch": {
-    "last_modified": "Mon, 28 Sep 2026 15:31:48 GMT"
+    "last_modified": "Sat, 10 Oct 2026 21:41:15 GMT"
   }
 }

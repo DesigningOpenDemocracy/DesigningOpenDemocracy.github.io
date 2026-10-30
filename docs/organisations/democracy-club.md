@@ -62,7 +62,7 @@ activity:
     date: 2026-10-19
     note: Latest news page scraped
     url: https://democracyclub.org.uk/blog/
-    checked: 2026-10-23
+    checked: 2026-10-30
 last_checked: '2026-09-21'
 ---
 

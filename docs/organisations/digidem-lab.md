@@ -66,10 +66,10 @@ activity:
     url: https://digidemlab.org/en/about/
     checked: 2026-09-17
   rss:
-    date: 2026-09-29
-    note: 'Latest post: Capacity Building Upgraded'
-    url: https://digidemlab.org/news/capacity-building-upgraded/
-    checked: 2026-10-02
+    date: 2026-10-20
+    note: 'Latest post: Anmälan till webinarium om Collective Tools'
+    url: https://digidemlab.org/news/anmalan-till-webinarium-om-collective-tools/
+    checked: 2026-10-30
 last_checked: '2026-09-17'
 ---
 

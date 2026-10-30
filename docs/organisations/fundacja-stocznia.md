@@ -64,11 +64,11 @@ activity:
     url: https://stocznia.org.pl
     checked: 2026-09-17
   rss:
-    checked: 2026-10-02
-    date: 2026-06-25
-    note: 'Latest post: Wspólne oświadczenie polskich i ukraińskich organizacji, działaczy
-      i działaczek '
-    url: https://stocznia.org.pl/2026/06/25/wspolne-oswiadczenie-polskich-i-ukrainskich-organizacji-dzialaczy-i-dzialaczek-spolecznych/
+    date: 2026-10-29
+    note: 'Latest post: Szkoła Nawigacji Społecznej – lepiej mądrze stać niż głupio
+      biegać!'
+    url: https://stocznia.org.pl/2026/10/29/szkola-nawigacji-spolecznej-lepiej-madrze-stac-niz-glupio-biegac/
+    checked: 2026-10-30
 last_checked: '2026-09-17'
 ---
 

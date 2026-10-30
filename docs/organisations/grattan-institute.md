@@ -74,10 +74,10 @@ activity:
     url: https://grattan.edu.au
     checked: 2026-09-19
   rss:
-    date: 2026-09-22
-    note: 'Latest post: Reduce money in politics to strengthen our democracy'
-    url: https://grattan.edu.au/reduce-money-in-politics-to-strengthen-our-democracy/
-    checked: 2026-09-25
+    date: 2026-10-18
+    note: 'Latest post: Raise the GST to fund Australia’s future'
+    url: https://grattan.edu.au/raise-the-gst-to-fund-australias-future/
+    checked: 2026-10-30
 last_checked: '2026-09-19'
 ---
 

@@ -63,10 +63,10 @@ activity:
     url: https://www.aman-palestine.org/rss
     checked: 2026-09-25
   scrape:
-    date: 2026-10-17
+    date: 2026-10-29
     note: Latest news page scraped
     url: https://www.aman-palestine.org/en/activities/
-    checked: 2026-10-23
+    checked: 2026-10-30
 last_checked: '2026-09-26'
 ---
 

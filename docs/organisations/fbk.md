@@ -75,7 +75,7 @@ activity:
     checked: 2026-10-23
     note: News page found, no machine-readable date
   sitemap:
-    checked: 2026-10-02
+    checked: 2026-10-30
     note: Sitemap found, no lastmod
 last_checked: '2026-09-16'
 ---

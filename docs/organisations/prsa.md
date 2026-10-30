@@ -93,7 +93,7 @@ activity:
     date: 2026-06-01
     note: Latest news page scraped
     url: https://www.prsa.org.au/qn/indexqn.htm
-    checked: 2026-10-23
+    checked: 2026-10-30
 last_checked: '2026-09-15'
 ---
 
