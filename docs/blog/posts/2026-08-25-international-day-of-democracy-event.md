@@ -36,6 +36,8 @@ This one's ours: on Tuesday 15 September, DOD is co-hosting a Melbourne panel wi
 
 <!-- more -->
 
+![The panel and audience at The Kelvin Club, Melbourne, on the night](2026-09-15-idod-panel-room.jpg)
+
 - International Day of Democracy is a UN-designated day, and this event is DOD's contribution to it.[^unday]
 - It's timed ahead of Victoria's 28 November state election[^vicelection] to ask what democracy looks like between elections.
 
@@ -50,6 +52,8 @@ Together, the panel will explore citizens' juries, deliberative democracy, co-op
 ## Who's on the panel
 
 Four speakers are confirmed, each working on a different facet of participation beyond voting:
+
+<p style="display:flex;gap:.75rem;justify-content:center;flex-wrap:wrap;margin:1rem 0"><img src="/blog/2026-09-15-idod-panel-nicholas-gruen.jpg" alt="Portrait of Nicholas Gruen" title="Nicholas Gruen" width="110" height="110" loading="lazy" style="border-radius:50%;object-fit:cover"><img src="/blog/2026-09-15-idod-panel-anitra-nelson.jpg" alt="Portrait of Anitra Nelson" title="Anitra Nelson" width="110" height="110" loading="lazy" style="border-radius:50%;object-fit:cover"><img src="/blog/2026-09-15-idod-panel-godfrey-moase.jpg" alt="Portrait of Godfrey Moase" title="Godfrey Moase" width="110" height="110" loading="lazy" style="border-radius:50%;object-fit:cover"><img src="/blog/2026-09-15-idod-panel-nicole-hunter.jpg" alt="Portrait of Nicole Hunter" title="Nicole Hunter" width="110" height="110" loading="lazy" style="border-radius:50%;object-fit:cover"></p>
 
 - **[Nicholas Gruen](../../organisations/lateral-economics.md)** — policy economist and leading advocate for citizens' juries and deliberative reform; CEO of Lateral Economics.[^panel-gruen]
 - **Anitra Nelson** — University of Melbourne scholar and writer on housing, degrowth, and democratic alternatives.[^panel-nelson]
