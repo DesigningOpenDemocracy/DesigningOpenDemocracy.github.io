@@ -42,11 +42,15 @@ On 15 September, International Day of Democracy,[^unday] DOD and [888 Co-operati
 
 ## The panel
 
+![The panel and audience at The Kelvin Club, Melbourne, on International Day of Democracy 2026](2026-09-15-idod-panel-room.jpg)
+
 Antony McMullen, 888's chair, moderated a panel of four.
 
 <!-- org-card: 888-cooperative-causeway -->
 
 ### Nicholas Gruen
+
+<img src="/blog/2026-09-15-idod-panel-nicholas-gruen.jpg" alt="Portrait of Nicholas Gruen" width="150" height="150" loading="lazy" style="float:right;margin:0 0 .5rem 1rem;border-radius:50%;object-fit:cover">
 
 Nicholas is CEO of [Lateral Economics](../../organisations/lateral-economics.md) and a long-time advocate of assemblies chosen by lot. His current project is [The Shared Centre](https://www.thesharedcentre.com/),[^sharedcentre] and he writes on [Substack](https://nicholasgruen.substack.com/).
 
@@ -54,17 +58,23 @@ Nicholas is CEO of [Lateral Economics](../../organisations/lateral-economics.md)
 
 ### Nicole Hunter
 
+<img src="/blog/2026-09-15-idod-panel-nicole-hunter.jpg" alt="Portrait of Nicole Hunter" width="150" height="150" loading="lazy" style="float:right;margin:0 0 .5rem 1rem;border-radius:50%;object-fit:cover">
+
 Nicole is co-founder of [MosaicLab](../../organisations/mosaiclab.md). She led the Yarra Valley Water citizens' jury and co-wrote [*Facilitating Deliberation: A Practical Guide*](https://mosaiclab.com.au/the-big-book) with fellow MosaicLab directors Kimbra White and Keith Greaves.[^mosaicbook]
 
 <!-- org-card: mosaiclab -->
 
 ### Anitra Nelson
 
+<img src="/blog/2026-09-15-idod-panel-anitra-nelson.jpg" alt="Portrait of Anitra Nelson" width="150" height="150" loading="lazy" style="float:right;margin:0 0 .5rem 1rem;border-radius:50%;object-fit:cover">
+
 Anitra is an activist scholar with the University of Melbourne's [Informal Urbanism Research Hub](../../organisations/informal-urbanism-research-hub.md). She writes on degrowth, housing and [post-money economies](https://anitranelson.info/beyond-money/). With Vincent Liegey she co-edited the [*Routledge Handbook of Degrowth*](https://anitranelson.info/routledge-handbook-of-degrowth/) (2025). Her other work is at [anitranelson.info](https://anitranelson.info/).
 
 <!-- org-card: informal-urbanism-research-hub -->
 
 ### Godfrey Moase
+
+<img src="/blog/2026-09-15-idod-panel-godfrey-moase.jpg" alt="Portrait of Godfrey Moase" width="150" height="150" loading="lazy" style="float:right;margin:0 0 .5rem 1rem;border-radius:50%;object-fit:cover">
 
 Godfrey is co-founder of the energy co-op [CoPower](https://cooperativepower.org.au/) and a former Executive Director of the United Workers Union. He writes [The Solidarity Wedge](https://godfreymoase.substack.com/) on Substack.
 
