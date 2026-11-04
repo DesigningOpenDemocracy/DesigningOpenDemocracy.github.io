@@ -25,3 +25,7 @@
 ## 2026-11-05 - [Escape Key Dismissal for Custom Details Dropdowns]
 **Learning:** HTML `<details>` elements used as custom filter dropdown panels do not natively close when the user presses the `Escape` key. Adding a global `Escape` key listener that identifies open `<details>` dropdowns, sets `open = false`, and restores focus to the corresponding `<summary>` element ensures full keyboard accessibility parity with standard popup components.
 **Action:** When using `<details>` for dropdown/popover menus, always include an `Escape` keydown handler that closes open `<details>` panels and explicitly returns focus to the `<summary>` toggle element.
+
+## 2026-11-10 - [Excluding Collapsed Secondary Sections from Empty State Visibility]
+**Learning:** In timeline/calendar interfaces where filtered elements are partitioned between primary upcoming lists and secondary collapsed sections (such as `<details class="calendar-past-events-details">`), counting visible items using general selector queries (`el.style.display !== 'none'`) produces false negatives for empty states when hidden/past items exist. The empty state check must specifically count upcoming items (`!el.closest('.calendar-past-events-details')`) so that selecting a filter with zero upcoming events reliably triggers the empty state message and recovery action.
+**Action:** In views with secondary/collapsed item buckets, scope the empty-state visibility check strictly to the primary visible content area so collapsed historical items don't mask empty search/filter results.

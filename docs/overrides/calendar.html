@@ -210,6 +210,11 @@
   </table>
 </details>
 
+<p id="calendar-empty" class="calendar-empty" hidden>
+  No upcoming events match your filter criteria.
+  <button type="button" id="calendar-empty-clear" class="org-empty-clear-btn">Clear filter</button>
+</p>
+
 <div id="calendar-past-events-slot">
 {%- if calendar_past_events %}
 {#- Recent past events, newest first, collapsed: this page is for finding
@@ -281,6 +286,8 @@
   var events = document.querySelectorAll('.calendar-event');
   var headings = document.querySelectorAll('.calendar-month-heading');
   var countEl = document.getElementById('calendar-filter-count');
+  var emptyEl = document.getElementById('calendar-empty');
+  var emptyClearBtn = document.getElementById('calendar-empty-clear');
 
   var DAY_MS = 86400000;
 
@@ -616,10 +623,12 @@
 
   function applyFilter() {
     var selected = filter.value;
+    var visibleCount = 0;
     events.forEach(function (el) {
       var c = el.getAttribute('data-country');
       if (selected === 'all' || c === selected) {
         el.style.display = '';
+        if (!el.closest('.calendar-past-events-details')) visibleCount++;
       } else {
         el.style.display = 'none';
       }
@@ -635,6 +644,7 @@
     });
 
     document.getElementById('calendar-country-reset').classList.toggle('visible', filter.value !== 'all');
+    if (emptyEl) emptyEl.hidden = (visibleCount > 0);
     updateCount();
     updateSubscribeLink();
   }
@@ -705,6 +715,12 @@
     window.history.replaceState({}, '', url);
     applyFilter();
   });
+
+  if (emptyClearBtn) {
+    emptyClearBtn.addEventListener('click', function () {
+      document.getElementById('calendar-country-reset').click();
+    });
+  }
 
   document.getElementById('calendar-country-reset').addEventListener('click', function() {
     filter.value = 'all';
