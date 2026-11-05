@@ -172,23 +172,14 @@ elections:
     quote: "postponing the elections to November 2028"
     url_checked: 2026-10-07
 
-  - date: 2026-11-03
+  - date: 2028-11-07
     country: US
     level: national
-    title: United States midterm elections
+    title: United States presidential election
     date_status: fixed
-    url: https://en.wikipedia.org/wiki/2026_United_States_elections
-    quote: "Elections are scheduled to be held, in large part, on November 3, 2026, in the United States."
-    url_checked: 2026-09-02
-
-  - date: 2026-11-04
-    country: ZA
-    level: local
-    title: South African municipal elections
-    date_status: fixed
-    url: https://en.wikipedia.org/wiki/2026_South_African_municipal_elections
-    quote: "The 2026 South African municipal elections will be held on 4 November 2026 across South Africa, to elect councils for all district, metropolitan and local municipalities in each of the country's nine provinces."
-    url_checked: 2026-09-02
+    url: https://en.wikipedia.org/wiki/2028_United_States_presidential_election
+    quote: "Presidential elections are scheduled to be held in the United States on November 7, 2028"
+    url_checked: 2026-11-05
 
   - date: 2026-11-07
     country: NZ
