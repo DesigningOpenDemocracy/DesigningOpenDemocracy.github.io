@@ -54,10 +54,10 @@ activity:
     url: https://fundacionsolon.org
     checked: 2026-09-28
   rss:
-    date: 2026-10-08
-    note: 'Latest post: Vigilancia contra la minería ilegal en el Pilón Lajas'
-    url: https://fundacionsolon.org/vigilancia-contra-la-mineria-ilegal-en-el-pilon-lajas/
-    checked: 2026-10-09
+    date: 2026-11-05
+    note: 'Latest post: ¿Puede un municipio declararse libre de minería?'
+    url: https://fundacionsolon.org/puede-un-municipio-declararse-libre-de-mineria/
+    checked: 2026-11-06
 last_checked: '2026-09-28'
 ---
 

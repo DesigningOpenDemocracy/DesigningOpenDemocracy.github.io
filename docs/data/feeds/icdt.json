@@ -1,8 +1,13 @@
 {
   "feed": "https://chinademocrats.org/?feed=rss2",
-  "latest": "2026-10-29",
+  "latest": "2026-11-01",
   "span_days": 13,
   "items": [
+    {
+      "date": "2026-11-01",
+      "title": "不靠推土机，靠选票：塞尔维亚学生运动胜选后的法治难题",
+      "url": "https://chinademocrats.org/?p=7767"
+    },
     {
       "date": "2026-10-29",
       "title": "汉娜 · 西贝里、钟伟锋 | “捂嘴”、“洗脑”：中国人工智能审查能否拆解",
@@ -198,7 +203,7 @@
     }
   ],
   "fetch": {
-    "etag": "\"bb92c04f74ebde6a2b25c6e0065dac09\"",
-    "last_modified": "Fri, 30 Oct 2026 02:00:00 GMT"
+    "etag": "\"a85c20b9c214aa8b6e9608ad605c9adc\"",
+    "last_modified": "Fri, 06 Nov 2026 02:00:00 GMT"
   }
 }

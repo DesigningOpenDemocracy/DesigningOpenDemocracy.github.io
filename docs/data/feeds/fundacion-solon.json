@@ -1,8 +1,33 @@
 {
   "feed": "https://fundacionsolon.org/feed",
-  "latest": "2026-10-08",
-  "span_days": 45,
+  "latest": "2026-11-05",
+  "span_days": 65,
   "items": [
+    {
+      "date": "2026-11-05",
+      "title": "¿Puede un municipio declararse libre de minería?",
+      "url": "https://fundacionsolon.org/puede-un-municipio-declararse-libre-de-mineria/"
+    },
+    {
+      "date": "2026-10-22",
+      "title": "San Buenaventura pide a la AJAM restringir la actividad minera en su municipio",
+      "url": "https://fundacionsolon.org/san-buenaventura-pide-a-la-ajam-restringir-la-actividad-minera-en-su-municipio/"
+    },
+    {
+      "date": "2026-10-20",
+      "title": "Las licencias ambientales mineras: desmontando el mito de la legalidad minera",
+      "url": "https://fundacionsolon.org/las-licencias-ambientales-mineras-desmontando-el-mito-de-la-legalidad-minera/"
+    },
+    {
+      "date": "2026-10-16",
+      "title": "Diputados aprueban proyecto de ley que declara a Palos Blancos y Alto Beni, municipios agroecológicos libres de actividad y contaminación minera",
+      "url": "https://fundacionsolon.org/diputados-aprueban-proyecto-de-ley-que-declara-a-palos-blancos-y-alto-beni-municipios-agroecologicos-libres-de-actividad-y-contaminacion-minera/"
+    },
+    {
+      "date": "2026-10-12",
+      "title": "San Buenaventura se declara libre de minería",
+      "url": "https://fundacionsolon.org/san-buenaventura-se-declara-libre-de-mineria/"
+    },
     {
       "date": "2026-10-08",
       "title": "Vigilancia contra la minería ilegal en el Pilón Lajas",
@@ -63,7 +88,7 @@
     }
   ],
   "fetch": {
-    "etag": "\"899f2c1044759b6e4cc3bdc279ca39e8\"",
-    "last_modified": "Thu, 08 Oct 2026 18:42:17 GMT"
+    "etag": "\"79873aa1a5167b8945e7827c6459688c\"",
+    "last_modified": "Thu, 05 Nov 2026 17:00:18 GMT"
   }
 }

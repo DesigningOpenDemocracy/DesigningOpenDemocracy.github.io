@@ -56,10 +56,11 @@ activity:
     url: https://www.ettemedia.com/
     checked: 2026-09-16
   rss:
-    date: 2026-10-30
-    note: 'Latest post: The Monthly Booklette: October edition'
-    url: https://www.ettemedia.com/the-monthly-booklette-october-edition/
-    checked: 2026-10-30
+    date: 2026-11-05
+    note: 'Latest post: Indie media analysis of Jillian Segal’s antisemitism report
+      that you need to rea'
+    url: https://www.ettemedia.com/independent-media-coverage-jillian-segal-antisemitism-report-update/
+    checked: 2026-11-06
 last_checked: '2026-09-16'
 contributors:
 - BrianKhuu

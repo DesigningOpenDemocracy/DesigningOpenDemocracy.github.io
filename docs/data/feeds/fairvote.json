@@ -1,8 +1,41 @@
 {
   "feed": "https://fairvote.org/feed",
-  "latest": "2026-10-27",
-  "span_days": 12,
+  "latest": "2026-11-05",
+  "span_days": 13,
   "items": [
+    {
+      "date": "2026-11-05",
+      "title": "Initial results from Maine’s November 2026 ranked choice voting elections",
+      "url": "https://fairvote.org/initial-results-from-maines-november-2026-rcv-elections/",
+      "signals": [
+        "election or referendum"
+      ]
+    },
+    {
+      "date": "2026-11-04",
+      "title": "Preliminary ranked choice voting results in Alaska’s 2026 elections",
+      "url": "https://fairvote.org/results-and-analysis-from-alaskas-2026-elections/"
+    },
+    {
+      "date": "2026-11-04",
+      "title": "Longmont, CO votes to adopt ranked choice voting",
+      "url": "https://fairvote.org/longmont-co-votes-to-adopt-ranked-choice-voting/"
+    },
+    {
+      "date": "2026-11-04",
+      "title": "Analysis: Ranked choice voting delivers better city elections",
+      "url": "https://fairvote.org/analysis-ranked-choice-voting-delivers-better-city-elections/"
+    },
+    {
+      "date": "2026-11-04",
+      "title": "A big night for ranked choice voting",
+      "url": "https://fairvote.org/a-big-night-for-ranked-choice-voting/"
+    },
+    {
+      "date": "2026-11-02",
+      "title": "What they’re saying: Ranked choice voting solves the “Dan Sullivans” problem",
+      "url": "https://fairvote.org/what-theyre-saying-ranked-choice-voting-solves-the-dan-sullivans-problem/"
+    },
     {
       "date": "2026-10-27",
       "title": "What to know about ranked choice voting in the midterms",
@@ -18,7 +51,8 @@
       "title": "Trump administration sues to block Alaska Senate election result",
       "url": "https://fairvote.org/trump-administration-sues-to-block-alaska-senate-election-result/",
       "signals": [
-        "election or referendum"
+        "election or referendum",
+        "legal or legislative"
       ]
     },
     {
@@ -120,7 +154,7 @@
     }
   ],
   "fetch": {
-    "etag": "W/\"6e8b04751529d9646ff7658a72e64ebc\"",
-    "last_modified": "Thu, 29 Oct 2026 13:53:33 GMT"
+    "etag": "W/\"b5ef146da57bb9ca6f2223efa673a3ac\"",
+    "last_modified": "Thu, 05 Nov 2026 22:24:24 GMT"
   }
 }

@@ -1,12 +1,72 @@
 {
   "feed": "https://www.ettemedia.com/feed",
-  "latest": "2026-10-30",
-  "span_days": 34,
+  "latest": "2026-11-05",
+  "span_days": 25,
   "items": [
+    {
+      "date": "2026-11-05",
+      "title": "Indie media analysis of Jillian Segal’s antisemitism report that you need to read",
+      "url": "https://www.ettemedia.com/independent-media-coverage-jillian-segal-antisemitism-report-update/",
+      "signals": [
+        "publication"
+      ]
+    },
+    {
+      "date": "2026-11-04",
+      "title": "When Trump tried to clamp down on press freedom, US journalists sued: here’s why that won't work here",
+      "url": "https://www.ettemedia.com/when-trump-tried-to-clamp-down-on-press-freedom-us-journalists-sued-heres-why-that-wont-work-here/",
+      "signals": [
+        "legal or legislative"
+      ]
+    },
+    {
+      "date": "2026-11-02",
+      "title": "The Internette: October’s online dramas and the deeper issues behind them",
+      "url": "https://www.ettemedia.com/the-internette-octobers-macklin-celebrini-jennifer-lawrence-wattpad-ao3-ethan-klein-malfoid/"
+    },
+    {
+      "date": "2026-11-01",
+      "title": "Yes there are Arabs in Israel and yes they VOTE",
+      "url": "https://www.ettemedia.com/yt-video-ezvpdhywbww/"
+    },
+    {
+      "date": "2026-11-01",
+      "title": "Cartoonist Cathy Wilcox’s first interview about THAT cartoon and why she walked away from a job she once loved: “I absolutely don’t regret the cartoon”",
+      "url": "https://www.ettemedia.com/cartoonist-cathy-wilcoxs-first-interview-about-that-cartoon-and-why-she-walked-away-from-a-job-she-once-loved-i-absolutely-dont-regret-the-cartoon/",
+      "routine": [
+        "job ad"
+      ]
+    },
+    {
+      "date": "2026-11-01",
+      "title": "CATHY WILCOX: \"I don't regret the cartoon\" + being at the Herald since Oct 7",
+      "url": "https://www.ettemedia.com/yt-video-zlmcqt9wdkk/",
+      "routine": [
+        "podcast or video episode"
+      ]
+    },
+    {
+      "date": "2026-11-01",
+      "title": "CATHY WILCOX: \"I don't regret the cartoon\" + being at the Herald since Oct 7",
+      "url": "https://www.ettemedia.com/podcast-cathy-wilcox-i-dont-regret-the-cartoon-being-at-the-herald-s-6ae425a131367db63a75bfd3/",
+      "routine": [
+        "podcast or video episode"
+      ]
+    },
+    {
+      "date": "2026-11-01",
+      "title": "Ben Roberts-Smith PR blitz, Meta’s Brazilian meddling, digging into the Haines ‘dirt sheet’ + Tas Premier cancels Christmas",
+      "url": "https://www.ettemedia.com/podcast-ben-roberts-smith-pr-blitz-brazilians-beat-meta-influence-he-6ae021c7d837bd28a3f4ddba/"
+    },
     {
       "date": "2026-10-30",
       "title": "The Monthly Booklette: October edition",
       "url": "https://www.ettemedia.com/the-monthly-booklette-october-edition/"
+    },
+    {
+      "date": "2026-10-30",
+      "title": "Ettention Please: the stories you might have missed this week",
+      "url": "https://www.ettemedia.com/ettention-please-the-stories-you-might-have-missed-this-week-october-31/"
     },
     {
       "date": "2026-10-23",
@@ -167,6 +227,6 @@
     }
   ],
   "fetch": {
-    "etag": "W/\"12588-l7061lzrJ973nhMoMF6Yp+gGHrU\""
+    "etag": "W/\"a48d-loEVvJeSt+k+mb6thiy/2BkR0eI\""
   }
 }

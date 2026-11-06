@@ -50,11 +50,15 @@
     "last_modified": "Thu, 15 Oct 2026 13:08:45 GMT"
   },
   "https://adrindia.org/about-adr/mission-and-vision": {
-    "checked": "2026-08-26",
-    "document_sha256": "ff62602758e2414fe8052c2d6948da21628891e6f1bc4d13e7e90d384dbea7c9",
+    "archive_checked": "2026-11-06",
+    "archive_sha256": "61f20667340c2a9ae3684929c816d2b5f52c0ab2adba1e2bba9d854e5ca2f2e9",
+    "archive_url": "http://web.archive.org/web/20261106103203/https://adrindia.org/about-adr/mission-and-vision",
+    "checked": "2026-11-06",
+    "document_sha256": "61f20667340c2a9ae3684929c816d2b5f52c0ab2adba1e2bba9d854e5ca2f2e9",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-11-06",
         "context": {
           "prefix": "\u092a\u094d\u0930\u091c\u093e \u0939\u0940 \u092a\u094d\u0930\u092d\u0941 \u0939\u0948! Citizens are the masters in a democracy! History",
           "sha256": "1195054c565b3a283f960f328e7da223d254826e922c017cd0ef4a16e2eaa4f2",
@@ -340,6 +344,11 @@
     "last_modified": "Thu, 20 Aug 2026 04:39:23 GMT"
   },
   "https://australiainstitute.org.au/post/legislation-requiring-real-time-disclosure-of-political-donations-could-pass-this-week/": {
+    "archive_checked": "2026-11-06",
+    "archive_sha256": "836ae11191a9e7068c37c2143588a6c3abdbf539e6735464e9576d11e85ee472",
+    "archive_url": "http://web.archive.org/web/20260821055946/https://australiainstitute.org.au/post/legislation-requiring-real-time-disclosure-of-political-donations-could-pass-this-week/",
+    "blocked": "HTTP_403",
+    "blocked_since": "2026-11-06",
     "checked": "2026-08-26",
     "etag": null,
     "evidence": [
@@ -387,7 +396,7 @@
     "last_modified": "Tue, 25 Nov 2025 21:34:43 GMT"
   },
   "https://bethnoveck.medium.com/was-vtaiwan-such-a-big-flop-after-all-d6b365f916dc": {
-    "archive_checked": "2026-10-30",
+    "archive_checked": "2026-11-06",
     "archive_url": "http://web.archive.org/web/20260904075928/https://bethnoveck.medium.com/was-vtaiwan-such-a-big-flop-after-all-d6b365f916dc",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-20",
@@ -407,11 +416,15 @@
     "manual_checked": "2026-08-22"
   },
   "https://blog.democracylab.org/10-000-volunteers-and-counting/": {
-    "checked": "2026-08-26",
+    "archive_checked": "2026-11-06",
+    "archive_sha256": "f1dbdfc86a17236c163e4fd344209b5d28ed9db5a339a0241eff2dba2f22212f",
+    "archive_url": "http://web.archive.org/web/20260420144122/https://blog.democracylab.org/10-000-volunteers-and-counting/",
+    "checked": "2026-11-06",
     "document_sha256": "f1dbdfc86a17236c163e4fd344209b5d28ed9db5a339a0241eff2dba2f22212f",
-    "etag": "W/\"55ba-W1cQASzVxbT5e0pnTwoBzp+r7Co\"",
+    "etag": "W/\"55ba-Z1+Q5sCX9r8cT6XABALrUG2vHQA\"",
     "evidence": [
       {
+        "checked": "2026-11-06",
         "context": {
           "prefix": "by this author. DemocracyLab 10 Sep 2025 \u2022 3 min read Important Milestone Reached!",
           "sha256": "85dcc5dd764a9de7d00b72bb42939fc5413c746c2e99843950b58f854525bfba",
@@ -639,9 +652,9 @@
     "last_modified": null
   },
   "https://cafsa.org.au/cafsa/": {
-    "archive_checked": "2026-10-30",
-    "archive_sha256": "938c71c61cb749a3d7740205f1ae3c71d9b966a95cb114cab8811ddfd73a7d5c",
-    "archive_url": "http://web.archive.org/web/20260821041124/https://cafsa.org.au/cafsa/",
+    "archive_checked": "2026-11-06",
+    "archive_sha256": "6c652d3975a92e5ae74cc4fada9235af50045abeaf9d07f250c630d960853289",
+    "archive_url": "http://web.archive.org/web/20261106103231/https://cafsa.org.au/cafsa/",
     "blocked": "HTTP_403",
     "blocked_since": "2026-09-04",
     "checked": "2026-08-28",
@@ -684,20 +697,18 @@
         "verified": true
       }
     ],
-    "failing": {
-      "count": 1,
-      "error": "NETWORK_ERROR",
-      "last": "2026-10-30",
-      "since": "2026-10-30"
-    },
     "last_modified": "Fri, 23 Oct 2026 04:32:05 GMT"
   },
   "https://canberra-alliance.org.au/event/a-citizens-assembly-for-the-act/": {
-    "checked": "2026-08-26",
-    "document_sha256": "375ae732ba22d00fa8a5a84ff9b7f398bf49adc8339acacca4c9226e41a28592",
+    "archive_checked": "2026-11-06",
+    "archive_sha256": "25f411a36c4b41c3d46272f4d798df0cfa1a7b9dc618ead97335a17e8a691bb0",
+    "archive_url": "http://web.archive.org/web/20261106103337/https://canberra-alliance.org.au/event/a-citizens-assembly-for-the-act/",
+    "checked": "2026-11-06",
+    "document_sha256": "25f411a36c4b41c3d46272f4d798df0cfa1a7b9dc618ead97335a17e8a691bb0",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-11-06",
         "context": {
           "prefix": "AEDT \u00ab Do more MLAs make for better government? Community Assembly \u2013 following up our MP asks for 2026 \u00bb",
           "sha256": "deb147d674adaebd0b6e9291f63f3dbffee5d45fdad6147fb0bc2a556773550e",
@@ -706,16 +717,10 @@
         },
         "id": "8b93a12bae23870d853747831ad995f05f5f45631a27987161de034eaaa5a444",
         "quote": "The ACT Standing Citizens\u2019 Assembly (SCA) is a three-year project to build momentum for a trial of well facilitated input from Canberrans to government in the ACT.",
-        "verified": true
+        "verified": false
       }
     ],
-    "failing": {
-      "count": 1,
-      "error": "NETWORK_ERROR",
-      "last": "2026-10-30",
-      "since": "2026-10-30"
-    },
-    "last_modified": "Wed, 26 Aug 2026 11:13:07 GMT"
+    "last_modified": "Thu, 05 Nov 2026 23:16:28 GMT"
   },
   "https://canberra-alliance.org.au/event/community-assembly-following-up-our-mp-asks-for-2026/": {
     "checked": "2026-08-26",
@@ -734,20 +739,18 @@
         "verified": true
       }
     ],
-    "failing": {
-      "count": 1,
-      "error": "NETWORK_ERROR",
-      "last": "2026-10-30",
-      "since": "2026-10-30"
-    },
     "last_modified": "Wed, 26 Aug 2026 11:13:09 GMT"
   },
   "https://canberra-alliance.org.au/event/expanding-the-act-assembly-is-it-time/": {
-    "checked": "2026-08-26",
-    "document_sha256": "f302ec55116408f40a506308a8a3b66b4d2a609fa5015c9d2d9bc3f739a2ac85",
+    "archive_checked": "2026-11-06",
+    "archive_sha256": "e86608d66160165ef597fd5b5d5599280ba8b19418d43d6fb39a8fb404189d5a",
+    "archive_url": "http://web.archive.org/web/20261106103305/https://canberra-alliance.org.au/event/expanding-the-act-assembly-is-it-time/",
+    "checked": "2026-11-06",
+    "document_sha256": "e86608d66160165ef597fd5b5d5599280ba8b19418d43d6fb39a8fb404189d5a",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-11-06",
         "context": {
           "prefix": "AEDT \u00ab 2026 CAPaD AGM (click here to open the Event to access links) A Citizens\u2019 Assembly for the ACT \u00bb",
           "sha256": "afb1e1080fe732db4825bb8f8be50a341e4949dc4750b55911ece1ead81430ff",
@@ -756,16 +759,10 @@
         },
         "id": "afb1e1080fe732db4825bb8f8be50a341e4949dc4750b55911ece1ead81430ff",
         "quote": "Event 3 Re-imagining Governance for the ACT: A Public Event Series Expanding the ACT Assembly for better government \u2013 is it time? Hosted by CAPaD & Active Democracy Bean",
-        "verified": true
+        "verified": false
       }
     ],
-    "failing": {
-      "count": 1,
-      "error": "NETWORK_ERROR",
-      "last": "2026-10-30",
-      "since": "2026-10-30"
-    },
-    "last_modified": "Wed, 26 Aug 2026 11:13:06 GMT"
+    "last_modified": "Fri, 06 Nov 2026 21:32:59 GMT"
   },
   "https://canberra-alliance.org.au/event/festival-of-act-democracy-2027/": {
     "archive_checked": "2026-10-02",
@@ -788,19 +785,17 @@
         "verified": true
       }
     ],
-    "failing": {
-      "count": 1,
-      "error": "NETWORK_ERROR",
-      "last": "2026-10-30",
-      "since": "2026-10-30"
-    },
     "last_modified": "Fri, 02 Oct 2026 20:48:54 GMT"
   },
   "https://chinademocrats.org/en": {
-    "checked": "2026-08-26",
+    "archive_checked": "2026-11-06",
+    "archive_sha256": "067fb62ae8191082c7038c3e4ff637ed0892be5b3a8c5433252318b929cf3a50",
+    "archive_url": "http://web.archive.org/web/20261005090408/https://chinademocrats.org/en/",
+    "checked": "2026-11-06",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-11-06",
         "context": {
           "prefix": "e electronic version of the journal is delivered by email to readers in mainland China. Readers can also access the journal by visiting this website.",
           "sha256": "11e2d10d2345cfd8e7ceb107b559b7db66c67740704847c4670fc96995fdab9d",
@@ -853,11 +848,14 @@
     "last_modified": null
   },
   "https://citizenos.com/platform/": {
-    "checked": "2026-08-26",
-    "document_sha256": "8f1eef00186f25c8b543831b1bffbf0634de01d5bc5c8dc31093782a53115c6e",
+    "archive_checked": "2026-11-06",
+    "archive_url": "http://web.archive.org/web/20260712120730/https://www.citizenos.com/platform/",
+    "checked": "2026-11-06",
+    "document_sha256": "c3abe93bfb1a640ebfa7766805b14f2f9ee9bc56e679465418e24faca46c6195",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-11-06",
         "context": {
           "prefix": "nt funds. We do not sell any of your data to third parties to raise funds. Who are the creators of Citizen OS platform?",
           "sha256": "2b629341c8682c09d2eedaca29d90e98eb4d2ce4ad9dfb37b3ea60790a71e1f2",
@@ -895,7 +893,9 @@
     "last_modified": null
   },
   "https://civichive.org/about-us/": {
-    "checked": "2026-08-28",
+    "archive_checked": "2026-11-06",
+    "archive_url": "http://web.archive.org/web/20261106112450/https://civichive.org/about-us/",
+    "checked": "2026-11-06",
     "document_sha256": "5c14942f4be70fe7c181da81a2eb562d1bc6f367a4e9ec482092637c6b65d014",
     "etag": null,
     "evidence": [
@@ -912,7 +912,7 @@
         "verified": true
       },
       {
-        "checked": "2026-08-25",
+        "checked": "2026-11-06",
         "context": {
           "prefix": "push solutions that connect citizens to the government, foster institutional efficiency, and raise citizens\u2019 awareness of social issues around them.",
           "sha256": "6cc7a740a4429449d277ef3730f1b98b7abdb03cd86fcf99730b4bc4a740ff4f",
@@ -947,7 +947,7 @@
     "last_modified": null
   },
   "https://civictech.africa/about-ctin": {
-    "archive_checked": "2026-10-30",
+    "archive_checked": "2026-11-06",
     "archive_sha256": "a1ea3d023725607b5e9b544ce244ec52af65a37ba2ce98176a1c568e465610c8",
     "archive_url": "http://web.archive.org/web/20261013232803/https://civictech.africa/about-ctin/",
     "blocked": "HTTP_403",
@@ -972,7 +972,7 @@
     "last_modified": "Thu, 27 Aug 2026 10:49:55 GMT"
   },
   "https://civictech.africa/ctif/underthehood/": {
-    "archive_checked": "2026-10-30",
+    "archive_checked": "2026-11-06",
     "archive_sha256": "1c7afc9ba080c3d34ac53d4181046b732dc4c6e4600bc77dd085f2611c5de942",
     "archive_url": "http://web.archive.org/web/20251115145046/https://civictech.africa/ctif/underthehood/",
     "blocked": "HTTP_403",
@@ -1061,7 +1061,7 @@
     "last_modified": null
   },
   "https://commonslibrary.parliament.uk/research-briefings/cbp-10876/": {
-    "archive_checked": "2026-10-30",
+    "archive_checked": "2026-11-06",
     "archive_sha256": "76db44b3577f3dd4b1f4868fef425341b45d64132694e314cdcb54dec2e65dab",
     "archive_url": "http://web.archive.org/web/20260914150106/https://commonslibrary.parliament.uk/research-briefings/cbp-10876/",
     "blocked": "HTTP_403",
@@ -1301,11 +1301,15 @@
     "last_modified": "Fri, 30 Oct 2026 09:52:57 GMT"
   },
   "https://consuldemocracy.org/about-us/": {
-    "checked": "2026-08-26",
-    "document_sha256": "84bdb126af9a99673667b5405efcd60099061d8cc445711a64ae0bedf102b81c",
+    "archive_checked": "2026-11-06",
+    "archive_sha256": "8f82174c2dc69b0449e2861856f8a965efe900f68fe006bf56cc84e62031521c",
+    "archive_url": "http://web.archive.org/web/20261106103824/https://consuldemocracy.org/about-us/",
+    "checked": "2026-11-06",
+    "document_sha256": "8f82174c2dc69b0449e2861856f8a965efe900f68fe006bf56cc84e62031521c",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-11-06",
         "context": {
           "prefix": "\u2013 The Foundation The CONSUL DEMOCRACY Foundation is at the heart of the international community and of the entire software project.",
           "sha256": "dbd6a76161ecd2d7381ac86ec492668cfa2df87448a328eb14f0f6dc0dc5307c",
@@ -1317,7 +1321,7 @@
         "verified": true
       }
     ],
-    "last_modified": "Wed, 26 Aug 2026 11:14:23 GMT"
+    "last_modified": "Fri, 06 Nov 2026 08:42:47 GMT"
   },
   "https://cpj.org/2026/08/kazakhstan-sentences-journalist-gulnara-bazhkenova-to-eight-years-in-prison-as-pre-election-press-crackdown-intensifies/": {
     "archive_checked": "2026-10-30",
@@ -1343,8 +1347,11 @@
     "last_modified": null
   },
   "https://ct-citizens-assembly.org/": {
-    "checked": "2026-08-26",
-    "document_sha256": "bfa948eb79148ac215a15f4344f9da08ede61d2b0576c6a0d4b83ae71102ffb3",
+    "archive_checked": "2026-11-06",
+    "archive_sha256": "4e181d782c4501eaa101f8189bec213ff2a0aea21fa0323a0d0faff8767ab42a",
+    "archive_url": "http://web.archive.org/web/20261006193010/https://ct-citizens-assembly.org/",
+    "checked": "2026-11-06",
+    "document_sha256": "bade3e2ed9c56933c319ba08dcc0805d3a73cc9b36334779f089bfd249491117",
     "etag": null,
     "evidence": [
       {
@@ -1359,8 +1366,9 @@
         "verified": true
       },
       {
+        "checked": "2026-11-06",
         "context": {
-          "prefix": "30 In-Person New Haven Sep 19 Virtual Online Sep 26 In-Person New Haven",
+          "prefix": "g 29 \u2013 30 In-Person New Haven Sep 19 Virtual Online Oct 10 Virtual Online",
           "sha256": "4f2eda2a89bc13065e7990490aae6459a18abca24ca84a08c93318c4d8904e09",
           "suffix": "July 25 1-Day In-Person Session New Haven \u2014 Yale Campus August 8 1-Day",
           "text": "July 11 \u2013 12 2-Day In-Person Session New Haven \u2014 Yale Campus"
@@ -1411,11 +1419,15 @@
     "last_modified": "Wed, 26 Aug 2026 11:25:18 GMT"
   },
   "https://de.wikipedia.org/wiki/Jede_Stimme_GILT": {
-    "checked": "2026-08-26",
+    "archive_checked": "2026-11-06",
+    "archive_sha256": "108ace46ca5798080e1850481f95b1da7341ff0d8cd85bf7455b6ca585bf1c60",
+    "archive_url": "http://web.archive.org/web/20261106104723/https://de.wikipedia.org/wiki/Jede_Stimme_GILT",
+    "checked": "2026-11-06",
     "document_sha256": "0e388bb7488ac9b529ebbb525a5ca0922d2f5bb365864582e41f79c231d5fe25",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-11-06",
         "context": {
           "prefix": "ca. 4.500 wurden erreicht) sammelten, wurde die Partei am Ende dieser Abgabefrist am 18. August 2017 zur Nationalratswahl im Oktober 2017 zugelassen.",
           "sha256": "378ef8684a95a6b82aa543c4421387beaddbad7a2ede2e44457be359c577aa8b",
@@ -1427,6 +1439,7 @@
         "verified": true
       },
       {
+        "checked": "2026-11-06",
         "context": {
           "prefix": "er 2016 vom \u00f6sterreichischen Schauspieler, Kabarettisten, Schriftsteller und politischen Aktivisten Roland D\u00fcringer gegr\u00fcndet. == Parteigr\u00fcndung ==",
           "sha256": "1f319c9a0d20da1f16019a6c51d9fc44096bdbc2ca88d02239acd05a4e2713a3",
@@ -1438,6 +1451,7 @@
         "verified": true
       },
       {
+        "checked": "2026-11-06",
         "context": {
           "prefix": "krise von M\u00e4rz auf September verschobenen Gemeindevertretungs- und B\u00fcrgermeisterwahlen 2020 brachte G!LT einen Wahlvorschlag in der Gemeinde Koblach.",
           "sha256": "e913c5a4bc11bf769fa3d77b5e1aa6186b14f4f03c5e326eeeddc3c76bd6596e",
@@ -1470,11 +1484,12 @@
     "last_modified": null
   },
   "https://deliberabrasil.org/projetos/primeira-assembleia-cidada-sobre-o-clima-em-cidades-amazonicas/": {
-    "checked": "2026-08-26",
-    "document_sha256": "ad2359f180ab733cef208f011e4da9fd29b490de9aba61bf79b86134f004169c",
+    "checked": "2026-11-06",
+    "document_sha256": "ba929be882e772a409a03e6f220248200b0efbcba3fc7c1fe1cda492ed1dcbab",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-11-06",
         "context": {
           "prefix": "com o apoio de especialistas e organiza\u00e7\u00f5es reconhecidas pelo trabalho na regi\u00e3o, entre as cidades de Macap\u00e1 (AM), Bujaru (PA) e Salvaterra (PA).",
           "sha256": "362cd234bc2114bd0af6c8c801b8bd851a79a6c251d1bf8f6b423e7aa04c14a3",
@@ -1614,11 +1629,14 @@
     "last_modified": "Tue, 25 Aug 2026 18:52:08 GMT"
   },
   "https://democracyincolour.org/about/": {
-    "checked": "2026-08-26",
+    "archive_checked": "2026-11-06",
+    "archive_url": "http://web.archive.org/web/20261106112555/https://democracyincolour.org/about/",
+    "checked": "2026-11-06",
     "document_sha256": "47d2acee326c848062c376fdf75f3f5b9ab1d8ccaffad620613e026065a362e7",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-11-06",
         "context": {
           "prefix": "About Us Who We Are",
           "sha256": "32dadf29e415818d14066f068f18e7f2bb2443683fdac35fbd9372223bd7f932",
@@ -1644,12 +1662,6 @@
         "verified": true
       }
     ],
-    "failing": {
-      "count": 1,
-      "error": "NETWORK_ERROR",
-      "last": "2026-10-30",
-      "since": "2026-10-30"
-    },
     "last_modified": null
   },
   "https://digidemlab.org/en/about/": {
@@ -1819,11 +1831,15 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/1967_Australian_referendum_(Aboriginals)": {
-    "checked": "2026-08-26",
+    "archive_checked": "2026-11-06",
+    "archive_sha256": "1e163a94c3ef008d5dee37c9ac238d1dd21f4c9b50ebc6b96b3372e7accce983",
+    "archive_url": "http://web.archive.org/web/20260907163848/https://en.wikipedia.org/wiki/1967_Australian_referendum_(Aboriginals)",
+    "checked": "2026-11-06",
     "document_sha256": "0031967cb9a7dbc6ae29c30b9588305f39e5cf63bd16737ce6d8c6afcd28a7f7",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-11-06",
         "context": {
           "prefix": "under section 122 of the Constitution. Section 127 was wholly removed. Headed \"Aborigines not to be counted in reckoning population\", it had read:",
           "sha256": "8bf53c7d59c79b0df8724200f2cdeb8357210c70030a33ed21debf1bc02a494d",
@@ -1855,9 +1871,9 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/2024_Northern_Territory_general_election": {
-    "archive_checked": "2026-10-30",
-    "archive_sha256": "8021053db65557995fad71c513c11a8ea5f63b5863ecb22b92d2c1561898d99d",
-    "archive_url": "http://web.archive.org/web/20261029135533/https://en.wikipedia.org/wiki/2024_Northern_Territory_general_election",
+    "archive_checked": "2026-11-06",
+    "archive_sha256": "91e20feac9c769112405554c70abf75bb72c3500438dcd560d80999809354429",
+    "archive_url": "http://web.archive.org/web/20260830025406/https://en.wikipedia.org/wiki/2024_Northern_Territory_general_election",
     "blocked": "HTTP_429",
     "blocked_since": "2026-10-07",
     "checked": "2026-09-04",
@@ -2297,6 +2313,9 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/2027_New_South_Wales_state_election": {
+    "archive_checked": "2026-11-06",
+    "archive_sha256": "89b0ccfd3e86c236e8b3f0dd73005fc29371b6ad200187edc80c38f68a19c696",
+    "archive_url": "http://web.archive.org/web/20260508215646/https://en.wikipedia.org/wiki/2027_New_South_Wales_state_election",
     "blocked": "HTTP_429",
     "blocked_since": "2026-10-07",
     "checked": "2026-09-02",
@@ -2382,9 +2401,32 @@
     ],
     "last_modified": null
   },
+  "https://en.wikipedia.org/wiki/2028_United_States_presidential_election": {
+    "archive_checked": "2026-11-06",
+    "archive_sha256": "b9f9a64b1f3c7f618f9ad88f7e92592161a0909764f61bd344ac5530a043e6f5",
+    "archive_url": "http://web.archive.org/web/20261106113551/https://en.wikipedia.org/wiki/2028_United_States_presidential_election",
+    "checked": "2026-11-06",
+    "document_sha256": "980698767d87351e8674ae39502153a1becda4a1bd1b42176422941234880532",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-11-06",
+        "context": {
+          "prefix": "",
+          "sha256": "46ecad0f996af2e3925db039f781f2a6e313f3ab7d1e3ccc81b22d1d97c4cdea",
+          "suffix": ", to elect the president and vice president to a four-year term, with the winners scheduled to be inaugurated on January 20, 2029. Incumbent Republic",
+          "text": "Presidential elections are scheduled to be held in the United States on November 7, 2028, to elect the president and vice president to a four-year term, with the winners scheduled to be inaugurated on January 20, 2029. Incumbent Republican president Donald Trump is ineligible to run for a third term due to the term limits established by the 22nd Amendment to the United States Constitution. As a result, this is the first election since 2012 where Trump is not the Republican nominee, and the first election since 1884 where an incumbent president is not on the ballot for two consecutive elections, following incumbent president Joe Biden\u2019s absence from the ballot in 2024."
+        },
+        "id": "ee73336448a77beedce26bc7b4d05de3b6a2d71208c729a7e42e35fca57dc078",
+        "quote": "Presidential elections are scheduled to be held in the United States on November 7, 2028",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
   "https://en.wikipedia.org/wiki/2029_Western_Australian_state_election": {
-    "archive_checked": "2026-10-30",
-    "archive_sha256": "4e7c75b215339c0dc34748424ec4c6980cf7e51f7ce2c4d2a965b3820fb31fef",
+    "archive_checked": "2026-11-06",
+    "archive_sha256": "59bcf75f81ae03c478b0cec8466a497438cb591606eb02400dbae9932f36a4df",
     "archive_url": "http://web.archive.org/web/20261010233945/https://en.wikipedia.org/wiki/2029_Western_Australian_state_election",
     "blocked": "HTTP_429",
     "blocked_since": "2026-10-07",
@@ -2408,9 +2450,9 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/2030_South_Australian_state_election": {
-    "archive_checked": "2026-10-30",
-    "archive_sha256": "97243f3a7e94fdc3c945e3cc2eae646e172761d94ddc88df5275d49c30499dfd",
-    "archive_url": "http://web.archive.org/web/20261021120231/https://en.wikipedia.org/wiki/2030_South_Australian_state_election",
+    "archive_checked": "2026-11-06",
+    "archive_sha256": "7efff7fbbbfcfc1d08b60461f9bad1567dc0a2eb3a9e31a1ab1850d39d959195",
+    "archive_url": "http://web.archive.org/web/20261106113514/https://en.wikipedia.org/wiki/2030_South_Australian_state_election",
     "blocked": "HTTP_429",
     "blocked_since": "2026-10-07",
     "checked": "2026-09-02",
@@ -2454,9 +2496,9 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/Anti-Corruption_Foundation": {
-    "archive_checked": "2026-10-30",
-    "archive_sha256": "9c3bfdcf172ef2c837958f7d6ef673ef74238427e08b61f649b38bae85ff0fa3",
-    "archive_url": "http://web.archive.org/web/20261023083237/https://en.wikipedia.org/wiki/Anti-Corruption_Foundation",
+    "archive_checked": "2026-11-06",
+    "archive_sha256": "f1792a8d6b5efb81ce3b6c7c74bdf2f220a6a075edeb4b76177f617521dbb703",
+    "archive_url": "http://web.archive.org/web/20261026192906/https://en.wikipedia.org/wiki/Anti-Corruption_Foundation",
     "blocked": "HTTP_429",
     "blocked_since": "2026-08-29",
     "checked": "2026-08-29",
@@ -2515,6 +2557,8 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/Athenian_democracy": {
+    "archive_checked": "2026-11-06",
+    "archive_url": "http://web.archive.org/web/20261103080706/https://en.wikipedia.org/wiki/Athenian_democracy",
     "blocked": "HTTP_429",
     "blocked_since": "2026-08-22",
     "checked": "2026-08-22",
@@ -2666,12 +2710,14 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/China_Democratic_League": {
-    "checked": "2026-08-28",
-    "document_sha256": "e139b468a2ce4f43c62bef74220d1a44bbd4097ddc845219921a2ba7ceadfa06",
+    "archive_checked": "2026-11-06",
+    "archive_url": "http://web.archive.org/web/20261020211900/https://en.wikipedia.org/wiki/China_Democratic_League",
+    "checked": "2026-11-06",
+    "document_sha256": "7875ea05496e23c28edfdfc7127769e1662f8eab8cf0ba5baf5cef1ec46ea070",
     "etag": null,
     "evidence": [
       {
-        "checked": "2026-08-28",
+        "checked": "2026-11-06",
         "context": {
           "prefix": "gainst it. In November 1947, elections were held nationwide for delegates to the National Assembly, which were boycotted by both the CCP and the CDL.",
           "sha256": "8b7284f470386ca6ea9d6762bf19eeeaeaabb76a4ffd84678d855f97a31d65bb",
@@ -2705,11 +2751,12 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/Citizens_Foundation": {
-    "checked": "2026-08-26",
+    "checked": "2026-11-06",
     "document_sha256": "b05f4f03c811ce9f1bd5d71d72e91d976235422ebf2672e676e7d7df7b7df1a5",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-11-06",
         "context": {
           "prefix": "",
           "sha256": "e416bda328d630703683690b840876ee532dcdc18c472cd290a6eb320bafe7aa",
@@ -2721,6 +2768,7 @@
         "verified": true
       },
       {
+        "checked": "2026-11-06",
         "context": {
           "prefix": "e Icelandic blogosphere and over 2,000 citizens took part in using the system, including by individual members of the Parliament. A few months later,",
           "sha256": "7a0ebab510481d798b83f6e060f77e4906a9a8cf4daf4e4ff11e76f8f2d0ee54",
@@ -2731,6 +2779,7 @@
         "verified": true
       },
       {
+        "checked": "2026-11-06",
         "context": {
           "prefix": "cracy building projects which are: Better Reykjav\u00edk, Shadow Parliament (Iceland only) and the international project Your Priorities. == Projects ==",
           "sha256": "9807ba2ff1e6ca71625e480d5df2519107c48d131a6ded17d6dbec3d8b97db36",
@@ -2744,9 +2793,9 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/Confederation_of_Indigenous_Nationalities_of_Ecuador": {
-    "archive_checked": "2026-10-23",
+    "archive_checked": "2026-11-06",
     "archive_sha256": "f353bdb1de46fd1a0a6ff66fc63b8fd0f2e071fe2c0daf09de60ea7550d5c945",
-    "archive_url": "http://web.archive.org/web/20260928170201/https://en.wikipedia.org/wiki/Confederation_of_Indigenous_Nationalities_of_Ecuador",
+    "archive_url": "http://web.archive.org/web/20261106103641/https://en.wikipedia.org/wiki/Confederation_of_Indigenous_Nationalities_of_Ecuador",
     "blocked": "HTTP_429",
     "blocked_since": "2026-08-29",
     "checked": "2026-08-26",
@@ -2962,12 +3011,12 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/Elections_in_Sweden": {
-    "checked": "2026-09-16",
+    "checked": "2026-11-06",
     "document_sha256": "c78282cbbedd6b9122d0248be5e5ab78b6846084a88745ec0992294681447013",
     "etag": null,
     "evidence": [
       {
-        "checked": "2026-09-16",
+        "checked": "2026-11-06",
         "context": {
           "prefix": "d on 13 September 2026. The most recent Swedish election to the European Parliament was held on 9 June 2024. == Electoral system == === Dates ===",
           "sha256": "6e83d8781dacddd10ba9b15687259010a1e9f8cd91e06f4f670b38708449d05b",
@@ -2982,6 +3031,9 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/Electoral_Institute_for_Sustainable_Democracy_in_Africa": {
+    "archive_checked": "2026-11-06",
+    "archive_sha256": "d029c7e47e9bded12f6043369ae7ee2f04e302872f82258ceeada384613fc562",
+    "archive_url": "http://web.archive.org/web/20260816152203/https://en.wikipedia.org/wiki/Electoral_Institute_for_Sustainable_Democracy_in_Africa",
     "blocked": "HTTP_429",
     "blocked_since": "2026-08-29",
     "checked": "2026-08-26",
@@ -3280,11 +3332,15 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/Golos_(election_monitor)": {
-    "checked": "2026-08-26",
+    "archive_checked": "2026-11-06",
+    "archive_sha256": "02455af397e32b478969ffc7da6bb07e19efae53b7a4849e486c3ea50cb89c19",
+    "archive_url": "http://web.archive.org/web/20261106104747/https://en.wikipedia.org/wiki/Golos_(election_monitor)",
+    "checked": "2026-11-06",
     "document_sha256": "be9dd24013ea711084873c9b00f30e4a1366c18bdf4c9acf5dbd1236d627d13b",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-11-06",
         "context": {
           "prefix": "lection watchdog active in Russia that was independent of the Russian government, until it announced it would close on July 8, 2025. == Founding ==",
           "sha256": "a8bf09b8195dc71e5e8118f50ce1db1a032fa81451b074c7585e18a2e38a1785",
@@ -3299,12 +3355,15 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/Goree_Institute": {
-    "checked": "2026-08-29",
+    "archive_checked": "2026-11-06",
+    "archive_sha256": "519ac6652c87a5d3a634379f4a6de8530bf76275dcd9c971f1735a9e19999f1a",
+    "archive_url": "http://web.archive.org/web/20261006142044/https://en.wikipedia.org/wiki/Goree_Institute",
+    "checked": "2026-11-06",
     "document_sha256": "7fb96f7dbd6db04f4a6e95cb3ac170e85867d3c9ddeea86dbbc64ba59ddecffd",
     "etag": null,
     "evidence": [
       {
-        "checked": "2026-08-29",
+        "checked": "2026-11-06",
         "context": {
           "prefix": "nization located on Gor\u00e9e Island in Dakar, Senegal. == History == The institute, born from an idea formulated by Senegalese president Abdou Diouf,",
           "sha256": "982e6de61abdcaf25a2bd8560c21aae638ae0e08a2b1753e7076edf94e950b6f",
@@ -3563,16 +3622,20 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/Jan_Fran": {
-    "checked": "2026-08-29",
-    "document_sha256": "08aefbba23ff4851588f3b085380539ba1a37f3c73a2638d065190e3b4ce0da7",
+    "archive_checked": "2026-11-06",
+    "archive_sha256": "76c49b8f40e5d399794db7cfebf570817e519d4e422568d69b700b0d10a26eb6",
+    "archive_url": "http://web.archive.org/web/20260105220604/https://en.wikipedia.org/wiki/Jan_Fran",
+    "checked": "2026-11-06",
+    "document_sha256": "bbf8a6b6dde93305d5c63e23ca5c992918ad9c11d2e6f564a264720bd7344f44",
     "etag": null,
     "evidence": [
       {
-        "checked": "2026-08-29",
+        "checked": "2026-11-06",
         "context": {
-          "prefix": "emoir, Of Middle Eastern Appearance, to be published by Hachette Australia. In 2021, Fran began hosting Question Everything with Wil Anderson on ABC.",
-          "sha256": "98d9add825a41e270bc271089adad0ff0e3783e1221a0f986c7d47263afbe2b1",
-          "suffix": "== Personal life == In 2015, Fran married Al Morrow, an advertising director. == References =="
+          "prefix": "ern Appearance, to be published by Hachette Australia. In 2021, Fran began hosting Question Everything with Wil Anderson on ABC. === Ette Media ===",
+          "sha256": "17edcb83fcb9de04b9438cc72482a20d7d8390c854a73955d5b076148d529809",
+          "suffix": "== Personal life == In 2015, Fran married Al Morrow, an advertising director. == References ==",
+          "text": "=== Ette Media === In 2025, Fran started a company with Antoinette Lattouf \"Ette Media\". The pair launched a podcast \"We used to be Journos\"."
         },
         "id": "31239065b6d0144b7e37c39da67f0356bff63d413cb27307586ce088b688fca0",
         "quote": "In 2025, Fran started a company with Antoinette Lattouf \"Ette Media\". The pair launched a podcast \"We used to be Journos\".",
@@ -3683,11 +3746,15 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/LiquidFeedback": {
-    "checked": "2026-08-26",
+    "archive_checked": "2026-11-06",
+    "archive_sha256": "a080bda6998ee46dfa752950fc91aa06c154a31c2d1527490f71b4e31331f7f8",
+    "archive_url": "http://web.archive.org/web/20261106105339/https://en.wikipedia.org/wiki/LiquidFeedback",
+    "checked": "2026-11-06",
     "document_sha256": "955e6b0ced7b70e0a100b63c3e297c364805af42a87beb249f3192bc813e0aa9",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-11-06",
         "context": {
           "prefix": "mercial offers with regard to LiquidFeedback. Software \"editions\" can be tailored to meet the needs of different organizations and business settings.",
           "sha256": "f74747664116a6b93f6478ea1259e711b3db6841c761c56954e02620ee35f784",
@@ -3698,6 +3765,7 @@
         "verified": true
       },
       {
+        "checked": "2026-11-06",
         "context": {
           "prefix": "Democracy, Proposition development process, Preferential voting or the Schulze method, and Interactive Democracy into the operation of the software.",
           "sha256": "530f0b510e6a63c4eb57ad273d0c3d3af105d45e875886855db969a6ebc4b03d",
@@ -3708,6 +3776,7 @@
         "verified": true
       },
       {
+        "checked": "2026-11-06",
         "context": {
           "prefix": "software and they allow the software's usage by other parties and organizations. The first stable version of its back end was released in April 2010.",
           "sha256": "3ccdddf6e117d4adf0b16f25881041f941d8696c08a377bbd238d9d215ae51d0",
@@ -3718,6 +3787,7 @@
         "verified": true
       },
       {
+        "checked": "2026-11-06",
         "context": {
           "prefix": "egate votes. The countries mentioned in the paragraph above all have similar forms of Liquid Democracy that stem from the software of LiquidFeedback.",
           "sha256": "2798857c629f8465921d614c57ca5256c36de8239853b5c18f309f472c77a799",
@@ -3750,6 +3820,8 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/Local_government_in_Victoria": {
+    "archive_checked": "2026-11-06",
+    "archive_url": "http://web.archive.org/web/20261106113138/https://en.wikipedia.org/wiki/Local_government_in_Victoria",
     "blocked": "HTTP_429",
     "blocked_since": "2026-08-22",
     "checked": "2026-08-22",
@@ -4098,12 +4170,15 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/Nicholas_Gruen": {
-    "checked": "2026-08-29",
+    "archive_checked": "2026-11-06",
+    "archive_sha256": "98528399c53be89c8807304842aea8f408fe46d2f2fda0232b0afec6cbdb2a86",
+    "archive_url": "http://web.archive.org/web/20261106105319/https://en.wikipedia.org/wiki/Nicholas_Gruen",
+    "checked": "2026-11-06",
     "document_sha256": "c6cc3560787fdc68d42cf67a2d703d47d4c1d2e2564d28f4c294e6d224d1f38c",
     "etag": null,
     "evidence": [
       {
-        "checked": "2026-08-29",
+        "checked": "2026-11-06",
         "context": {
           "prefix": "roductivity Commission on which he served until the late 1990s when he joined the Business Council of Australia directing its New Directions project.",
           "sha256": "66b2c89a7be6ee16e3b0cba45b03a15412d3376812fec63ec6bed29e65b54a7e",
@@ -4117,21 +4192,26 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/None_of_the_Above_Direct_Democracy_Party": {
-    "checked": "2026-08-26",
-    "document_sha256": "38c0bece8138274b8a2e35ee43e7d4eb25509dc619bb68772f0c64c3b538d66f",
+    "archive_checked": "2026-11-06",
+    "archive_sha256": "9e8499e526ed48560805451d2c6f7662f012f0049ee17e42520ccb4b3185adc6",
+    "archive_url": "http://web.archive.org/web/20261017065555/https://en.wikipedia.org/wiki/None_of_the_Above_Direct_Democracy_Party",
+    "checked": "2026-11-06",
+    "document_sha256": "4356fbd721b03f971aa68e32cddf8e047105a8e851c68eeacebaf908a0f80158",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-11-06",
         "context": {
           "prefix": "t bound by party control and who truly can represent their constituents first\". It supports the use of referendums, term limits and recall elections.",
-          "sha256": "5b8e3a0f9a5b10c12a0fc1a8cf0a3845b5b9eedaa8f0cb7ae88e869168f5738d",
-          "suffix": ": Vezina ran in Mississauga\u2014Erindale, Vezina's wife Kathleen ran in Mississauga\u2014Brampton South, Vezina's son Alexander ran in Mississauga\u2014Streetsville"
+          "sha256": "41828241f4ca48dc33c54123d017ddb82f2a4035036d5ff7b362d777ea0fc1ec",
+          "suffix": ": Vezina ran in Mississauga \u2014 Erindale, Vezina's wife Kathleen ran in Mississauga \u2014 Brampton South, Vezina's son Alexander ran in Mississauga \u2014 Streetsville"
         },
         "id": "16a8b351783ca878593324112687fbf9b85400977cf9cf965926ec24d3b43553",
         "quote": "NOTA nominated candidates in eight ridings in the 2014 provincial election",
         "verified": true
       },
       {
+        "checked": "2026-11-06",
         "context": {
           "prefix": "nofficially called the None of the Above Party (French: Parti Aucune de ces r\u00e9ponses), is a minor political party in the province of Ontario, Canada.",
           "sha256": "c23aecc6baa69c7f8b6fff2cafc1759569342c2703b245e3f113bab63c5c184c",
@@ -4212,7 +4292,7 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/OpenAustralia_Foundation": {
-    "archive_checked": "2026-10-30",
+    "archive_checked": "2026-11-06",
     "archive_sha256": "90aaa593f3ea107c34fbaec4f46220e8276705985c9fabd504559ac8787a1897",
     "archive_url": "http://web.archive.org/web/20260821064652/https://en.wikipedia.org/wiki/OpenAustralia_Foundation",
     "blocked": "HTTP_429",
@@ -4300,12 +4380,15 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/PRS_Legislative_Research": {
-    "checked": "2026-08-29",
+    "archive_checked": "2026-11-06",
+    "archive_sha256": "291d375f28e6893499ec7e3b6be19bee652a097a052017d94f18f6aa0890c69c",
+    "archive_url": "http://web.archive.org/web/20260907181538/https://en.wikipedia.org/wiki/PRS_Legislative_Research",
+    "checked": "2026-11-06",
     "document_sha256": "7ebd72733e454ec445768bbc069d9e62547ae01963060f1dc482ed7da53ea1eb",
     "etag": null,
     "evidence": [
       {
-        "checked": "2026-08-29",
+        "checked": "2026-11-06",
         "context": {
           "prefix": "PRS Legislative Research, commonly referred to as PRS, is an Indian non-profit organisation that",
           "sha256": "825d531a7973ed01a163dfe6cbd15b4342dca1d6b1e803a33b1e65710970624f",
@@ -4317,7 +4400,7 @@
         "verified": true
       },
       {
-        "checked": "2026-08-29",
+        "checked": "2026-11-06",
         "context": {
           "prefix": "0-11 LAMP Fellows 2011-12 LAMP Fellows 2012-13 LAMP Fellows 2014-15 == Recognition == Business Standard's Social Entrepreneur of the Year 2019.",
           "sha256": "b9759ac6c64c3c16b320b486250a6975b369869cd024835b485cc48fc1e26ba2",
@@ -4761,9 +4844,9 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/The_Helen_Clark_Foundation": {
-    "archive_checked": "2026-10-30",
-    "archive_sha256": "e4d36f783d8629f799f79922cff0a9e25cab9bc9d858fba31be303d594e843fa",
-    "archive_url": "http://web.archive.org/web/20251117183042/https://en.wikipedia.org/wiki/The_Helen_Clark_Foundation",
+    "archive_checked": "2026-11-06",
+    "archive_sha256": "8fb6d6b360a07a6b1d3914129bbb2194511741087f3b73202390bf9b617930aa",
+    "archive_url": "http://web.archive.org/web/20261106104906/https://en.wikipedia.org/wiki/The_Helen_Clark_Foundation",
     "blocked": "HTTP_429",
     "blocked_since": "2026-08-29",
     "checked": "2026-08-26",
@@ -4807,11 +4890,15 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/Three-fifths_Compromise": {
-    "checked": "2026-08-26",
+    "archive_checked": "2026-11-06",
+    "archive_sha256": "d1921db9c5579a09e320b78c48366b856d67c5ce712c6a618f4a1130bcd1e7e2",
+    "archive_url": "http://web.archive.org/web/20261106111700/https://en.wikipedia.org/wiki/Three-fifths_Compromise",
+    "checked": "2026-11-06",
     "document_sha256": "238557dd8d7d79e3a1372547bc12bc7377cfcf519f790c0ed74b615307bcd2fb",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-11-06",
         "context": {
           "prefix": ". Slave states wanted their entire population to be counted to determine the number of Representatives those states could elect and send to Congress.",
           "sha256": "fe84a80a521c54338c473b3880d4565c8275de77d4cb89db940cd553bba1e6c6",
@@ -4873,7 +4960,7 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/Vietnam_Fatherland_Front": {
-    "archive_checked": "2026-10-30",
+    "archive_checked": "2026-11-06",
     "archive_sha256": "58cc4488b75ae9136fb95a5e3abf3f1f00580629a494e3247777fb8b2897995d",
     "archive_url": "http://web.archive.org/web/20261023085317/https://en.wikipedia.org/wiki/Vietnam_Fatherland_Front",
     "blocked": "HTTP_429",
@@ -4914,12 +5001,14 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/Your_Party_(UK)": {
-    "checked": "2026-08-29",
-    "document_sha256": "69008816b3a0deb9e41fe203a014b7d0c863ab93676dc1165781fdad9843ab5b",
+    "archive_checked": "2026-11-06",
+    "archive_url": "http://web.archive.org/web/20261020065157/https://en.wikipedia.org/wiki/Your_Party_(UK)",
+    "checked": "2026-11-06",
+    "document_sha256": "158fffb332aac45abc041990d9e149859e19a95ac29a78908fa4837bb2734682",
     "etag": null,
     "evidence": [
       {
-        "checked": "2026-08-29",
+        "checked": "2026-11-06",
         "context": {
           "prefix": "",
           "sha256": "496795b4df499f35177b4f850a82e744e66fc400d1084115fd46ecf2cce49f66",
@@ -5033,7 +5122,7 @@
     "last_modified": null
   },
   "https://events.humanitix.com/citizen-assemblies-policy-without-politics-national-conference": {
-    "archive_checked": "2026-10-30",
+    "archive_checked": "2026-11-06",
     "archive_sha256": "d42d2147c53e458aaf29a26ac5fad13890338cf81de02fb22b7454c3e9162c0d",
     "archive_url": "http://web.archive.org/web/20261023082505/https://events.humanitix.com/citizen-assemblies-policy-without-politics-national-conference",
     "blocked": "HTTP_403",
@@ -5053,16 +5142,16 @@
     "blocked_since": "2026-10-02"
   },
   "https://events.humanitix.com/international-day-of-democracy": {
-    "archive_checked": "2026-10-30",
-    "archive_sha256": "f532862b83bd02526e51af9e7278f52ef02f3a99a90e47a7e81b0948aaf26e23",
-    "archive_url": "http://web.archive.org/web/20261023082319/https://events.humanitix.com/international-day-of-democracy",
+    "archive_checked": "2026-11-06",
+    "archive_sha256": "323e738d569099965f320d177b9e4bab20add10d4f53fff246b4401c95445bd2",
+    "archive_url": "http://web.archive.org/web/20261106103138/https://events.humanitix.com/international-day-of-democracy",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-25"
   },
   "https://events.humanitix.com/protecting-victoria-s-democracy-ahead-of-state-s-largest-ever-election": {
-    "archive_checked": "2026-10-30",
-    "archive_sha256": "52634b3f394e0e351dd4e83a4266db3b5da94a6cafedbf516436d45f0ce20572",
-    "archive_url": "http://web.archive.org/web/20261023085258/https://events.humanitix.com/protecting-victoria-s-democracy-ahead-of-state-s-largest-ever-election",
+    "archive_checked": "2026-11-06",
+    "archive_sha256": "cca6b2ff197c43bc28a330c0ea6fa8af26857fd66b71173709f7f2397991fb69",
+    "archive_url": "http://web.archive.org/web/20261106110815/https://events.humanitix.com/protecting-victoria-s-democracy-ahead-of-state-s-largest-ever-election",
     "blocked": "HTTP_403",
     "blocked_since": "2026-09-17"
   },
@@ -5129,11 +5218,15 @@
     "last_modified": null
   },
   "https://fairvote.org/who-we-are/our-impact/": {
-    "checked": "2026-08-26",
-    "document_sha256": "378c641296d5c373735fb1672cdf3c0c7232e74730a6547a5796a956006480e3",
+    "archive_checked": "2026-11-06",
+    "archive_sha256": "86b59e0e7f651b31f72df975422cd952ec839256a7eccb3ca8f796433335f425",
+    "archive_url": "http://web.archive.org/web/20261014235025/https://fairvote.org/who-we-are/our-impact/",
+    "checked": "2026-11-06",
+    "document_sha256": "9116aa087ed8afb746b18b9ed31a3b6bc2077bc379e995c2ec4ce746a459fcd1",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-11-06",
         "context": {
           "prefix": "lthy democracy for all. Their enthusiasm was met with skepticism by many who believed the idea of changing winner-take-all elections was unrealistic.",
           "sha256": "24cf4fe8b56205568291d2f901a46a9fff6e4595d849e3e8b18d443787b59ce5",
@@ -5145,7 +5238,7 @@
         "verified": true
       }
     ],
-    "last_modified": "Wed, 26 Aug 2026 11:26:57 GMT"
+    "last_modified": null
   },
   "https://fathomjournal.org/darkenu-keeping-the-dream-of-israel-alive/": {
     "blocked": "HTTP_403",
@@ -5224,15 +5317,18 @@
     "last_modified": null
   },
   "https://fidemocracy.org/europe-forum-2026-from-novel-to-normal": {
-    "checked": "2026-08-26",
-    "document_sha256": "f1b5d44558c47a031362b60ccf4f231ec21e9678f59e316af0dd8e49463a2ad4",
-    "etag": "W/\"141fc41917ed0aa7500051efc08d4668\"",
+    "archive_checked": "2026-11-06",
+    "archive_url": "http://web.archive.org/web/20260918080503/https://fidemocracy.org/europe-forum-2026-from-novel-to-normal",
+    "checked": "2026-11-06",
+    "document_sha256": "658f6c09eb3f526126dec24a69a74027b5ee57913141e845ea44bc3fa3506bea",
+    "etag": "W/\"e5f58f7d47f71d7382a9e3e08faa073f\"",
     "evidence": [
       {
+        "checked": "2026-11-06",
         "context": {
           "prefix": "Where deliberative practice meets.",
           "sha256": "f3343c6735e33cdc41a2a0185b525177b24ab00900a6483d46160fded5167b80",
-          "suffix": "FIDE FORUM 2026 Program Overview",
+          "suffix": "REGISTER FIDE FORUM 2026 Intro Program Speakers Regis",
           "text": "A conference for practitioners, public officials, political parties, NGOs, and funders to move this field from the margins to the mainstream. To build the infrastructure, lift the standards, and create the political will to make it permanent."
         },
         "id": "f3343c6735e33cdc41a2a0185b525177b24ab00900a6483d46160fded5167b80",
@@ -5371,9 +5467,9 @@
     "last_modified": "Thu, 27 Nov 2025 19:42:57 GMT"
   },
   "https://focusweb.org/press-statement-social-movements-united-in-defiance-of-false-solutions-being-negotiated-at-paris-cop/": {
-    "archive_checked": "2026-10-30",
+    "archive_checked": "2026-11-06",
     "archive_sha256": "e99a27d832e5b8ef087def91799d7b6b29c05e6e204ff5e16d36b1c02a280006",
-    "archive_url": "http://web.archive.org/web/20261023083432/https://focusweb.org/press-statement-social-movements-united-in-defiance-of-false-solutions-being-negotiated-at-paris-cop/",
+    "archive_url": "http://web.archive.org/web/20261106104629/https://focusweb.org/press-statement-social-movements-united-in-defiance-of-false-solutions-being-negotiated-at-paris-cop/",
     "blocked": "HTTP_403",
     "blocked_since": "2026-09-04",
     "checked": "2026-08-26",
@@ -5399,7 +5495,7 @@
     "blocked_since": "2026-08-29"
   },
   "https://foro.org.co/quienes-somos/": {
-    "archive_checked": "2026-10-30",
+    "archive_checked": "2026-11-06",
     "archive_sha256": "788f956e08755fcc769919707b228029f07a622c51c0be616ea662eabd5e4d34",
     "archive_url": "http://web.archive.org/web/20261023083420/https://foro.org.co/quienes-somos/",
     "blocked": "ROBOTS_DISALLOWED",
@@ -5420,6 +5516,9 @@
     "manual_checked": "2026-08-22"
   },
   "https://forum.effectivealtruism.org/posts/qfDeCGxBTFhJANAWm/a-new-x-risk-factor-brain-computer-interfaces-1": {
+    "archive_checked": "2026-11-06",
+    "archive_sha256": "7ecadc17c78070f339f3456b4fcadabc33d9fc82b30939f0f361288fb5bba234",
+    "archive_url": "http://web.archive.org/web/20260711083630/https://forum.effectivealtruism.org/posts/qfDeCGxBTFhJANAWm/a-new-x-risk-factor-brain-computer-interfaces-1",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-26",
     "checked": "2026-08-26",
@@ -5581,6 +5680,9 @@
     "last_modified": null
   },
   "https://governancehubafrica.org/about": {
+    "archive_checked": "2026-11-06",
+    "archive_sha256": "edc89330b44559a4420e2f73c682cbb0c2347ff8eebb08d527c11cb8894df32b",
+    "archive_url": "http://web.archive.org/web/20261106104848/https://governancehubafrica.org/about",
     "checked": "2026-08-21",
     "etag": null,
     "evidence": [
@@ -5682,11 +5784,15 @@
     "last_modified": null
   },
   "https://grattan.edu.au/democracy-and-public-integrity/": {
-    "checked": "2026-08-26",
-    "document_sha256": "12ac6a27d19da133036fa935533d94ac9d106e477d57905a86f2cb3df1760d73",
+    "archive_checked": "2026-11-06",
+    "archive_sha256": "1c7968d7010d4b59694280d2668fbf377f07731abd183baaac12c4c4e885785c",
+    "archive_url": "http://web.archive.org/web/20261106112720/https://grattan.edu.au/democracy-and-public-integrity/",
+    "checked": "2026-11-06",
+    "document_sha256": "1c7968d7010d4b59694280d2668fbf377f07731abd183baaac12c4c4e885785c",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-11-06",
         "context": {
           "prefix": "Our Experts Aruna Sathanapally",
           "sha256": "9c2f0e547564db62e453758d34eb48f4656032245da9f74c56a81f13157e3a34",
@@ -5698,12 +5804,6 @@
         "verified": true
       }
     ],
-    "failing": {
-      "count": 2,
-      "error": "HTTP_500",
-      "last": "2026-10-23",
-      "since": "2026-10-16"
-    },
     "last_modified": null
   },
   "https://grattan.edu.au/grattan-institute-new-ceo/": {
@@ -5894,6 +5994,9 @@
     "last_modified": null
   },
   "https://home.treasury.gov/news/press-releases/sb0603": {
+    "archive_checked": "2026-11-06",
+    "archive_sha256": "145895584f98606a46a0fd88ecde0760a631e7003e5ee638727962b714995a92",
+    "archive_url": "http://web.archive.org/web/20261101233104/https://home.treasury.gov/news/press-releases/sb0603",
     "blocked": "ROBOTS_DISALLOWED",
     "blocked_since": "2026-08-22",
     "checked": "2026-08-20",
@@ -6101,7 +6204,7 @@
     "last_modified": "Thu, 20 Aug 2026 11:47:41 GMT"
   },
   "https://journals.sagepub.com/doi/10.1177/20539517241296038": {
-    "archive_checked": "2026-10-30",
+    "archive_checked": "2026-11-06",
     "archive_sha256": "42b45756c204a481e2aad9ba107e8749e6b8c9283dc26571083d9b3123a4c2a7",
     "archive_url": "http://web.archive.org/web/20260904075947/https://journals.sagepub.com/doi/10.1177/20539517241296038",
     "blocked": "HTTP_403",
@@ -6163,9 +6266,9 @@
     "last_modified": null
   },
   "https://leftfootforward.org/2025/11/everything-you-need-to-know-about-your-partys-founding-conference/": {
-    "archive_checked": "2026-10-30",
-    "archive_sha256": "8eb1336cd6346fffeae972ec1eb2be895200361e0c6a74539d94759f94eedeb3",
-    "archive_url": "http://web.archive.org/web/20251214072444/https://leftfootforward.org/2025/11/everything-you-need-to-know-about-your-partys-founding-conference/",
+    "archive_checked": "2026-11-06",
+    "archive_sha256": "194fe402b51901df005259aa864f2c89b266e2777de7b591c9f225869013de5c",
+    "archive_url": "http://web.archive.org/web/20261106111025/https://leftfootforward.org/2025/11/everything-you-need-to-know-about-your-partys-founding-conference/",
     "blocked": "HTTP_403",
     "blocked_since": "2026-09-04",
     "checked": "2026-08-29",
@@ -6338,11 +6441,15 @@
     "manual_checked": "2026-08-22"
   },
   "https://memo98.sk/about-us": {
-    "checked": "2026-08-26",
+    "archive_checked": "2026-11-06",
+    "archive_sha256": "da42efa6fe7d74a2507775a383a44e4e520d9989c1a169bd5a0e3e5a3d123fc5",
+    "archive_url": "http://web.archive.org/web/20261012160522/https://www.memo98.sk/about-us",
+    "checked": "2026-11-06",
     "document_sha256": "da42efa6fe7d74a2507775a383a44e4e520d9989c1a169bd5a0e3e5a3d123fc5",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-11-06",
         "context": {
           "prefix": "raditional and social media) and on professional assessments of the media environment and its challenges (such as disinformation). In addition,",
           "sha256": "9ae71de58d33f30dbd3c5e1e9bfdbb3b7d159d98c14b143a55e5b1cf14bb3c38",
@@ -6354,6 +6461,7 @@
         "verified": true
       },
       {
+        "checked": "2026-11-06",
         "context": {
           "prefix": "ing media analyses on behalf of international institutions and providing technical assistance to both official institutions and civil society groups.",
           "sha256": "3d4a05ed3f6d1806db46572ddc083810f0e99cf0816616ddf4e98e8fab15d139",
@@ -6784,11 +6892,15 @@
     "last_modified": null
   },
   "https://oaf.org.au/2009/07/07/announcing-the-openaustralia-foundation/": {
-    "checked": "2026-08-26",
-    "document_sha256": "f1a68dadd6cca9d9d8dca23cc2ce9d6bd55db789ca5eec97b7577a273c082c30",
+    "archive_checked": "2026-11-06",
+    "archive_sha256": "ca6a64f19a251764ecc1755d5140c06ab224db02d7b14479ffae8a273a20cd5f",
+    "archive_url": "http://web.archive.org/web/20260924143155/https://oaf.org.au/2009/07/07/announcing-the-openaustralia-foundation/",
+    "checked": "2026-11-06",
+    "document_sha256": "ac6a3cd2dbae5439c082d36dec08a7c962d23c3d6a8e9d10bb148d9be0cf2480",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-11-06",
         "context": {
           "prefix": "an expected. But finally\u2026 Today is a happy day Because today we heard from our lawyer (the ever helpful Stephanie Barnes at Deacons) that",
           "sha256": "b9356b9568741260b2367c820d6d7d5ac795e307d5112ba520398618194656df",
@@ -6800,7 +6912,7 @@
         "verified": true
       }
     ],
-    "last_modified": "Wed, 26 Aug 2026 11:20:18 GMT"
+    "last_modified": null
   },
   "https://oaf.org.au/2009/12/21/launching-our-new-website-planning-alerts/": {
     "checked": "2026-08-26",
@@ -6822,12 +6934,14 @@
     "last_modified": null
   },
   "https://oaf.org.au/2014/10/21/they-vote-for-you/": {
-    "checked": "2026-08-29",
-    "document_sha256": "e7cafbb369cb0740279b5143e4c9a34d5038e6d810b4e9a9845ac52512eacb9b",
+    "archive_checked": "2026-11-06",
+    "archive_url": "http://web.archive.org/web/20260924142818/https://oaf.org.au/2014/10/21/they-vote-for-you/",
+    "checked": "2026-11-06",
+    "document_sha256": "228c0ed911622afd753d23cdafe48716201891298ceb9deb8166d0a94f209483",
     "etag": null,
     "evidence": [
       {
-        "checked": "2026-08-29",
+        "checked": "2026-11-06",
         "context": {
           "prefix": "the Senate and try to make sense of it all. This is not something anyone can do easily. Parliament should be easy, and accessible. That is why",
           "sha256": "4b1e7122c01530f06f8fb4fef9bf4fc5cca13534c4972e185d4ec8aab6a19b7c",
@@ -7022,15 +7136,19 @@
     "last_modified": null
   },
   "https://pmg.org.za/blog/": {
-    "checked": "2026-08-25",
-    "document_sha256": "e6e3847dd83a071aa0214a13184cca41d577268b52b314bebd23da8e6782f6db",
+    "archive_checked": "2026-11-06",
+    "archive_sha256": "c3f45101b1029f55e34b0da75edb3b0465931e8acb538892675e65cf63cfcb79",
+    "archive_url": "http://web.archive.org/web/20261009204343/https://pmg.org.za/blog/",
+    "checked": "2026-11-06",
+    "document_sha256": "46fa76ccf0917153f1ef338c71047f9ca7c495d9227cd7dd9ae2fe39ba0f86f4",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-11-06",
         "context": {
           "prefix": "ills Petitions Questions and Replies Calls for Comments Attendance Blog Provincial Legislatures",
           "sha256": "ede77b1399e4ff72d52f98b6bd7c4ad6151d1b7835a499715ff57642d1f16603",
-          "suffix": "Share this page: Blog 23 August 2026 From the Government Gazette and Media Statements (24 August 2026",
+          "suffix": "Share this page: Blog 02 November 2026 From the Government Gazette and Media Statements (2 November 2",
           "text": "Premium content from before 2025 is now available for everyone!"
         },
         "id": "ede77b1399e4ff72d52f98b6bd7c4ad6151d1b7835a499715ff57642d1f16603",
@@ -7041,11 +7159,15 @@
     "last_modified": null
   },
   "https://pmg.org.za/page/what-is-pmg": {
-    "checked": "2026-08-25",
-    "document_sha256": "af96e7ccf0574964b2239c41e4d1237f6687fcb9d8cb9fa591f1f2e4db9cd542",
+    "archive_checked": "2026-11-06",
+    "archive_sha256": "dbb525ee5a7dfb6cd20700073f9b780c37779f7b3f25574d75f284efcf9ec601",
+    "archive_url": "http://web.archive.org/web/20261106110237/https://pmg.org.za/page/what-is-pmg",
+    "checked": "2026-11-06",
+    "document_sha256": "2f273cf08c71dff4c7b032bd968a1b1446b333358bab5ddb4a5770051a10a8be",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-11-06",
         "context": {
           "prefix": "deo on \"Youth Monitoring Parliament\": PMG enables youth to be at the rockface of government and three of our alumni have gone on to become MPs!",
           "sha256": "af0f6649c8b7242321a1102ac0b60636e14d091f68ddac7a3378c99a7fdfade2",
@@ -7057,6 +7179,7 @@
         "verified": true
       },
       {
+        "checked": "2026-11-06",
         "context": {
           "prefix": "to lobby the Parliament of South Africa on pieces of legislation, matters of democratic processes and parliamentary oversight of the executive.",
           "sha256": "e21f208818966c85c7b910d8a9bbb6abf64b041abbb6e6c9015eb4951e0abe73",
@@ -7068,6 +7191,7 @@
         "verified": true
       },
       {
+        "checked": "2026-11-06",
         "context": {
           "prefix": "arliamentary monitoring organisations globally. Read: 25 Years of PMG How to navigate the PMG website: What We Do",
           "sha256": "3bc9ae463c1728997cd3cd9f71f068732fe9c12ff4d74cf450417c6fd614990a",
@@ -7079,6 +7203,7 @@
         "verified": true
       },
       {
+        "checked": "2026-11-06",
         "context": {
           "prefix": "t provides a window into the performance of each government department and public entity over which each parliamentary committee has oversight.",
           "sha256": "38090afcb09a99294b59668126422e606e9dc3306ab0150d33a157a7f5febdbf",
@@ -7090,6 +7215,7 @@
         "verified": true
       },
       {
+        "checked": "2026-11-06",
         "context": {
           "prefix": "ding of all Parliamentary Committee meetings, where a monitor will tape and minute the proceedings and obtain all documents tabled in the committees.",
           "sha256": "631daa24a78c636ac3b3ed909b11e5aa71dd382548839edab339c123e03cf237",
@@ -7101,6 +7227,7 @@
         "verified": true
       },
       {
+        "checked": "2026-11-06",
         "context": {
           "prefix": "interested in. We email you committee meeting reports and documents, new bills, request for submissions, ministry media briefings and speeches.",
           "sha256": "7bbe5390015e6af55ff55b36e0fb93cf29badea990ef497017deed51021e832d",
@@ -7112,6 +7239,7 @@
         "verified": true
       },
       {
+        "checked": "2026-11-06",
         "context": {
           "prefix": "currently funded by the: Claude Leon Foundation Millennium Trust European Union Standard Bank In addition,",
           "sha256": "c299e8f6fdf8174bfab10deca1dc06207311bc068c5e841c40268d887b2cb2b4",
@@ -7123,6 +7251,7 @@
         "verified": true
       },
       {
+        "checked": "2026-11-06",
         "context": {
           "prefix": "mmittees were not covered prior to 2000. If you cannot find what you are looking for, please contact [email protected]. Work Opportunities -",
           "sha256": "a126defc7f40348574be729ec911b19f34718f828846e7c1a3818b58e3facce4",
@@ -7268,7 +7397,9 @@
     "last_modified": null
   },
   "https://reclaim.org.au/inaugural-lismore-peoples-assembly/": {
-    "checked": "2026-10-23",
+    "archive_checked": "2026-11-06",
+    "archive_url": "http://web.archive.org/web/20261106105409/https://reclaim.org.au/inaugural-lismore-peoples-assembly/",
+    "checked": "2026-11-06",
     "document_sha256": "b5a2ba91b9e9443a253acc4659c00e59e38792d2f78c6248bdeac7cc3587c1c6",
     "etag": null,
     "evidence": [
@@ -7285,7 +7416,7 @@
         "verified": true
       },
       {
-        "checked": "2026-08-29",
+        "checked": "2026-11-06",
         "context": {
           "prefix": "Reclaim our Recovery (ROR) say they have been pushing for robust, democratic, community involvement in the flood recovery since the start of 2022.",
           "sha256": "373bb0e4d16734a171c543938e80826235ca1a271cdef7b41f66582a057d6190",
@@ -7297,12 +7428,6 @@
         "verified": true
       }
     ],
-    "failing": {
-      "count": 1,
-      "error": "NETWORK_ERROR",
-      "last": "2026-10-30",
-      "since": "2026-10-30"
-    },
     "last_modified": null
   },
   "https://reclaim.org.au/lismore-peoples-assembly-on-housing/": {
@@ -7329,12 +7454,12 @@
     "last_modified": null
   },
   "https://reclaim.org.au/the-year-ahead-for-the-lismore-peoples-assembly/": {
-    "checked": "2026-08-29",
+    "checked": "2026-11-06",
     "document_sha256": "1e8257f69ee04eadf902cf0f7bdd03e0f5d9d005f1e3e0e2acc3b4f45ed5c6d1",
     "etag": null,
     "evidence": [
       {
-        "checked": "2026-08-26",
+        "checked": "2026-11-06",
         "context": {
           "prefix": "ended by 17 humans and 2 Canines (with plenty of Turkeys and ducks out in the yard!) we came up with a few priority projects we are keen on:",
           "sha256": "20e6e6902c0a0287a487e72910cf53a6f385b53c10413bfe63c121e7dee87b21",
@@ -7346,7 +7471,7 @@
         "verified": true
       },
       {
-        "checked": "2026-08-29",
+        "checked": "2026-11-06",
         "context": {
           "prefix": "been important conversations for the community and we believe coming together and talking with strangers is a critical step to getting action.",
           "sha256": "2ad4813b3a4c5103b5d3553f9934a2a282d405f200358e6bc20fd84219d21421",
@@ -7358,12 +7483,6 @@
         "verified": true
       }
     ],
-    "failing": {
-      "count": 1,
-      "error": "NETWORK_ERROR",
-      "last": "2026-10-30",
-      "since": "2026-10-30"
-    },
     "last_modified": null
   },
   "https://regional.chinadaily.com.cn/cppcc/2026-03/04/c_1164300.htm": {
@@ -7467,12 +7586,15 @@
     "last_modified": "Sat, 22 Aug 2026 08:21:33 GMT"
   },
   "https://stocznia.org.pl/en/about-shipyard/": {
-    "checked": "2026-08-29",
+    "archive_checked": "2026-11-06",
+    "archive_sha256": "a4394af85b8ecdfb48dc44af0b899239c95177470504735dd0a5c536f5d8715a",
+    "archive_url": "http://web.archive.org/web/20260816152657/https://stocznia.org.pl/en/about-shipyard/",
+    "checked": "2026-11-06",
     "document_sha256": "3adf37635408bd7855b93870332381f55fb1f945e9b1e4eda981a2049839b29b",
     "etag": null,
     "evidence": [
       {
-        "checked": "2026-08-29",
+        "checked": "2026-11-06",
         "context": {
           "prefix": "About Shipyard Share Close Facebook facebook LinkedIn linkedin mail Copy link",
           "sha256": "6686a58250e335ed90f716edfd4130f33a471e120ffbc9a84a32a69da589567a",
@@ -7522,11 +7644,15 @@
     "last_modified": "Fri, 16 Oct 2026 08:16:18 GMT"
   },
   "https://theconversation.com/as-the-latrobe-valley-moves-away-from-coal-jobs-could-a-green-workers-cooperative-offer-a-solution-245850": {
-    "checked": "2026-08-26",
-    "document_sha256": "dda03e316ffc7e86d3f9ea70ca21b9ad4393522bdb0c1ad73877fbcdf1747bae",
+    "archive_checked": "2026-11-06",
+    "archive_sha256": "1a55b544df25746d12d90964470e14f5e00b84e7cbd2ea6130ae968663daf790",
+    "archive_url": "http://web.archive.org/web/20260821044125/https://theconversation.com/as-the-latrobe-valley-moves-away-from-coal-jobs-could-a-green-workers-cooperative-offer-a-solution-245850",
+    "checked": "2026-11-06",
+    "document_sha256": "d955224a540a7db45b996434a0a06b068e5b295276f072da58a23d2e5a3eb48d",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-11-06",
         "context": {
           "prefix": "development and fair labour practices. Earthworker only formally became a cooperative in 2011, though discussions date back to the late 1990s.",
           "sha256": "a306ccc6487edaac0cde189a7b4786539f159ed5ec8514b4e05fd24214af099e",
@@ -7538,6 +7664,7 @@
         "verified": true
       },
       {
+        "checked": "2026-11-06",
         "context": {
           "prefix": "much in common with the Cleveland Model in the United States, which links green business, local economic development and fair labour practices.",
           "sha256": "a306ccc6487edaac0cde189a7b4786539f159ed5ec8514b4e05fd24214af099e",
@@ -7594,7 +7721,7 @@
     "last_modified": null
   },
   "https://theyvoteforyou.org.au/about": {
-    "archive_checked": "2026-10-30",
+    "archive_checked": "2026-11-06",
     "archive_sha256": "e4b11ff813b693d775739bbe8b8c51fe92a6296dc8c1931c30ffa03906cf7635",
     "archive_url": "http://web.archive.org/web/20260812053340/https://theyvoteforyou.org.au/about",
     "blocked": "HTTP_403",
@@ -7615,6 +7742,9 @@
     "manual_checked": "2026-08-22"
   },
   "https://topics.amcham.com.tw/2017/02/make-full-use-of-join-gov-tw/": {
+    "archive_checked": "2026-11-06",
+    "archive_sha256": "09d5177b31b3807a59fe824b66e0d054e37071873c25b2ac62859f86675472c7",
+    "archive_url": "http://web.archive.org/web/20261106105258/https://topics.amcham.com.tw/2017/02/make-full-use-of-join-gov-tw/",
     "blocked": "HTTP_403",
     "blocked_since": "2026-09-04",
     "checked": "2026-08-29",
@@ -7668,9 +7798,9 @@
     "last_modified": null
   },
   "https://vic.democrats.org.au/policies/make-victoria-s-upper-house-the-citizens-house-of-review/": {
-    "archive_checked": "2026-10-30",
-    "archive_sha256": "a8cfad045431f7a07a49883871e58e6da7c259acef9c2c4307f62d10f4e06e5a",
-    "archive_url": "http://web.archive.org/web/20261023085711/https://vic.democrats.org.au/policies/make-victoria-s-upper-house-the-citizens-house-of-review/",
+    "archive_checked": "2026-11-06",
+    "archive_sha256": "76b47559a4aa35e3adf484ed1190db9fa44c17eafc13e51e3d251b95c4df19f0",
+    "archive_url": "http://web.archive.org/web/20261106111154/https://vic.democrats.org.au/policies/make-victoria-s-upper-house-the-citizens-house-of-review/",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-20",
     "evidence": [
@@ -7755,12 +7885,6 @@
         "verified": true
       }
     ],
-    "failing": {
-      "count": 1,
-      "error": "NETWORK_ERROR",
-      "last": "2026-10-30",
-      "since": "2026-10-30"
-    },
     "last_modified": null
   },
   "https://web.archive.org/web/20201025042342/https://www.coalitionofeveryone.com/": {
@@ -7799,14 +7923,21 @@
         "verified": true
       }
     ],
+    "failing": {
+      "count": 1,
+      "error": "NETWORK_ERROR",
+      "last": "2026-11-06",
+      "since": "2026-11-06"
+    },
     "last_modified": null
   },
   "https://web.archive.org/web/20250531195416/https://mckinnon.co/": {
-    "checked": "2026-08-26",
+    "checked": "2026-11-06",
     "document_sha256": "a19f9ea7137ff638c4624607b458e6e89fd599b80d065a92f1ffe884e8a8555b",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-11-06",
         "context": {
           "prefix": "Careers MCKINNON enters a bold new era",
           "sha256": "bbc2be338642fdaaae0210c06966ae53d90b7bfd0f3b2662e76ece0b67562530",
@@ -7818,12 +7949,6 @@
         "verified": true
       }
     ],
-    "failing": {
-      "count": 1,
-      "error": "NETWORK_ERROR",
-      "last": "2026-10-30",
-      "since": "2026-10-30"
-    },
     "last_modified": null
   },
   "https://web.archive.org/web/20260419134339/https://horizonstate.com/hst-faq/": {
@@ -7868,6 +7993,12 @@
         "verified": true
       }
     ],
+    "failing": {
+      "count": 1,
+      "error": "NETWORK_ERROR",
+      "last": "2026-11-06",
+      "since": "2026-11-06"
+    },
     "last_modified": null
   },
   "https://wecollect.ch/ueber-uns/": {
@@ -7979,12 +8110,15 @@
     "last_modified": null
   },
   "https://www.acast.com/en/blog/meet-the-podcasters-antoinette-lattouf-jan-fran": {
-    "checked": "2026-08-29",
-    "document_sha256": "298c4dba0c5f6ff1cf7292417f4d3f2b66be952e63deb2bcda447a59c48deb22",
+    "archive_checked": "2026-11-06",
+    "archive_sha256": "dfab43301c54ecd791e73693c21a31201ba3adb0981e870eebeb782bc859f5f8",
+    "archive_url": "http://web.archive.org/web/20260508111508/https://www.acast.com/en/blog/meet-the-podcasters-antoinette-lattouf-jan-fran",
+    "checked": "2026-11-06",
+    "document_sha256": "470ccb30d0d0c3673219adf7cf13eaa219cacbdc4e1a781a6c4a6bb9d6f28a3f",
     "etag": null,
     "evidence": [
       {
-        "checked": "2026-08-29",
+        "checked": "2026-11-06",
         "context": {
           "prefix": "e Journos, award-winning journalists Antoinette Lattouf and Jan Fran are part of a new wave of independent journalism on the rise in Australia.",
           "sha256": "80eb641118be655598359a0c2c6baf482ff035151d0492e7feed4d595c315e1e",
@@ -7996,7 +8130,7 @@
         "verified": true
       }
     ],
-    "last_modified": "Sat, 29 Aug 2026 01:41:27 GMT"
+    "last_modified": "Fri, 06 Nov 2026 10:44:10 GMT"
   },
   "https://www.accountabilityrt.org/fiona-mcleod-sc-to-head-up-art/": {
     "archive_checked": "2026-10-23",
@@ -8022,13 +8156,17 @@
     "last_modified": null
   },
   "https://www.aec.gov.au/FADReform/factsheets/changes-explained.htm": {
-    "checked": "2026-08-26",
-    "document_sha256": "05dca78dc22c48998d0589f7ce5c5f15e04c8992804b23bc6b51cf978f2bddc6",
+    "archive_checked": "2026-11-06",
+    "archive_sha256": "05dca78dc22c48998d0589f7ce5c5f15e04c8992804b23bc6b51cf978f2bddc6",
+    "archive_url": "http://web.archive.org/web/20260821055838/https://www.aec.gov.au/FADReform/factsheets/changes-explained.htm",
+    "checked": "2026-11-06",
+    "document_sha256": "6bba76381dba2cec82647692078478092f1cce487dd57f97c130c3583a6e8ca7",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-11-06",
         "context": {
-          "prefix": "anges to funding and disclosure Introduction to the Reform Explaining the changes to funding and disclosure",
+          "prefix": "Disclosure overview Introduction to the Reform Explaining the changes to funding and disclosure",
           "sha256": "34923ee574a62aba255b9ed9e82d940b2d7fba6c7ce70d626ee72e89c1276700",
           "suffix": "From 1 January 2027, major changes to political funding and disclosure take effect. These changes impact political parties, parliamentari",
           "text": "The Electoral Legislation Amendment (Electoral Reform) Act 2025 is the biggest update to the Commonwealth Electoral Act 1918 in 40 years."
@@ -8038,6 +8176,7 @@
         "verified": true
       },
       {
+        "checked": "2026-11-06",
         "context": {
           "prefix": "e than $5,000 must be disclosed. Gift and electoral expenditure caps Limits on how much can be donated and spent. Faster disclosure",
           "sha256": "941b9aab4ba4838e3c8fb4c83e52569dbdbf2acb59e3e790cc47e88bd33560b0",
@@ -8052,11 +8191,14 @@
     "last_modified": null
   },
   "https://www.aec.gov.au/media/2025/02-21.htm": {
-    "checked": "2026-08-26",
-    "document_sha256": "8a7495e6ade8e2235eaa3834ab9b7699ea1b131b5f04b0da196cb47a0cdaafde",
+    "archive_checked": "2026-11-06",
+    "archive_url": "http://web.archive.org/web/20260821062316/https://www.aec.gov.au/media/2025/02-21.htm",
+    "checked": "2026-11-06",
+    "document_sha256": "4976cc12d867f78a214d5883cd34a4884ce1cd792fffd2fd7b24301c1bea720d",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-11-06",
         "context": {
           "prefix": "ll commence on 1 July 2026, meaning they will not be in effect for the 2025 federal election. Acting Electoral Commissioner Jeff Pope said that",
           "sha256": "2beb20ec2ae5cf1a0dc25b692b98abf1d84290a99bbcf086d25a268cc81d4b81",
@@ -8068,6 +8210,7 @@
         "verified": true
       },
       {
+        "checked": "2026-11-06",
         "context": {
           "prefix": "Changes to electoral laws Updated: 21 February 2025 New electoral reforms have recently been passed by the Australian Parliament.",
           "sha256": "ad52b261744d4c6702d476de53efa94cab92bd4b4e5ba82c917d16ba4922734a",
@@ -8160,7 +8303,7 @@
     "last_modified": null
   },
   "https://www.ag.gov.au/integrity/australias-open-government-partnership": {
-    "archive_checked": "2026-10-30",
+    "archive_checked": "2026-11-06",
     "archive_sha256": "aa3e14c0f52247d8516685e115501611ed88dcbefeaa03a3d8145432c299f452",
     "archive_url": "http://web.archive.org/web/20261023084800/https://www.ag.gov.au/integrity/australias-open-government-partnership",
     "blocked": "HTTP_403",
@@ -8181,7 +8324,7 @@
     "manual_checked": "2026-08-22"
   },
   "https://www.ag.gov.au/rights-and-protections/australias-open-government-partnership/open-government-forum": {
-    "archive_checked": "2026-10-30",
+    "archive_checked": "2026-11-06",
     "archive_sha256": "1002745e36c49b572d8f478e9a271cd51f0413c43e751f5c5026f701d2628bce",
     "archive_url": "http://web.archive.org/web/20261009101901/https://www.ag.gov.au/rights-and-protections/australias-open-government-partnership/open-government-forum",
     "blocked": "HTTP_403",
@@ -8225,12 +8368,15 @@
     "last_modified": null
   },
   "https://www.aljazeera.com/news/2026/7/29/nicaraguas-daniel-ortega-aims-to-bar-traitors-from-future-elections": {
-    "checked": "2026-08-26",
-    "document_sha256": "94580db0922fae7e36ee94b650caf7508c6662344af62dc6de8bf708a0068ef7",
-    "etag": "W/\"2d9ab-+GcGhG3nIOOZ4wvYR4r4wSA/aSs\"",
+    "archive_checked": "2026-11-06",
+    "archive_sha256": "0962e954e0cbc3193d57b947069bb59edecb402a5c0f7799d81efbf1b63377f3",
+    "archive_url": "http://web.archive.org/web/20261009232542/https://www.aljazeera.com/news/2026/7/29/nicaraguas-daniel-ortega-aims-to-bar-traitors-from-future-elections",
+    "checked": "2026-11-06",
+    "document_sha256": "6d0ff8a7df993971256bc7810fdf0be696bd2eded569ad59c1440855347f876e",
+    "etag": "W/\"32f9a-NjNevOmKTkXLjTGtGZC5jqSoRWY\"",
     "evidence": [
       {
-        "checked": "2026-08-26",
+        "checked": "2026-11-06",
         "context": {
           "prefix": "sident that there would be no elections in the Central American nation, as a means of preventing the opposition from \u201cseizing the government\u201d. \u201c",
           "sha256": "cf8192070c436692741a3acfff1d5b4e7fc8671cf57e468fbc942f3679e8ded1",
@@ -8421,11 +8567,15 @@
     "last_modified": null
   },
   "https://www.bienpublic.com/elections/2022/01/27/primaire-populaire-qu-est-ce-que-le-jugement-majoritaire": {
-    "checked": "2026-08-26",
-    "document_sha256": "a6ec53623f0f07dfa7eca0a2d5ba15c301b883cb82b8e028b1ea9285e1dc46eb",
+    "archive_checked": "2026-11-06",
+    "archive_sha256": "af84864f74cc2e57a86e201c179c39af2fad415a3d2e4af0a77a05531b4b4d22",
+    "archive_url": "http://web.archive.org/web/20260816154530/https://www.bienpublic.com/elections/2022/01/27/primaire-populaire-qu-est-ce-que-le-jugement-majoritaire",
+    "checked": "2026-11-06",
+    "document_sha256": "2ca4c3ff5fe2d5e857e621d23345086dc1335df5d4ea4ee7001cdd7718f3530f",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-11-06",
         "context": {
           "prefix": "r\u00e9cap de ce jeudi Le parti de la majorit\u00e9 pr\u00e9sidentielle LREM l\u2019a adopt\u00e9 depuis 2019. \u00ab Des universit\u00e9s l\u2019utilisent tous les jours. Mais",
           "sha256": "2b2514d83d6cd36d4f195be66942a027242a26636797fc813736699c75e44a12",
@@ -8440,7 +8590,7 @@
     "last_modified": null
   },
   "https://www.britannica.com/topic/slavery-sociology/Slave-societies": {
-    "archive_checked": "2026-10-30",
+    "archive_checked": "2026-11-06",
     "archive_sha256": "eedecbbd55796b0e3515520b3e38858ba7d2972514bffb2775ea761b8fa70e74",
     "archive_url": "http://web.archive.org/web/20260921202834/https://www.britannica.com/topic/slavery-sociology/Slave-societies",
     "blocked": "HTTP_403",
@@ -8673,9 +8823,9 @@
     "last_modified": null
   },
   "https://www.coe.int/en/web/congress/-/deliberative-democracy-in-ukraine-congress-to-support-three-citizens-assemblies-in-2025-2026": {
-    "archive_checked": "2026-10-23",
-    "archive_sha256": "b45694dd5381ae2bbd177647d3450fbc27a70d5d8e72f3c277b9a195b56e1630",
-    "archive_url": "http://web.archive.org/web/20261023085936/https://www.coe.int/en/web/congress/-/deliberative-democracy-in-ukraine-congress-to-support-three-citizens-assemblies-in-2025-2026",
+    "archive_checked": "2026-11-06",
+    "archive_sha256": "36ca755204945ef45ea1d1ca0b5c3bc18b9a93327e50e849f03fe157c8acf4cf",
+    "archive_url": "http://web.archive.org/web/20261030101757/https://www.coe.int/en/web/congress/-/deliberative-democracy-in-ukraine-congress-to-support-three-citizens-assemblies-in-2025-2026",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-20",
     "evidence": [
@@ -8694,7 +8844,7 @@
     "manual_checked": "2026-08-22"
   },
   "https://www.coe.int/en/web/congress/-/ukraine-s-first-metropolitan-citizens-assembly-launched-in-lviv": {
-    "archive_checked": "2026-10-30",
+    "archive_checked": "2026-11-06",
     "archive_sha256": "c4b86d2b10ff137b61e435819d0d8f607563bf467f7da7ee3b73f8afb03e7093",
     "archive_url": "http://web.archive.org/web/20261023090253/https://www.coe.int/en/web/congress/-/ukraine-s-first-metropolitan-citizens-assembly-launched-in-lviv",
     "blocked": "HTTP_403",
@@ -8715,11 +8865,15 @@
     "manual_checked": "2026-08-22"
   },
   "https://www.columbusnavigator.com/columbus-participatory-budgeting-program/": {
-    "checked": "2026-08-26",
-    "document_sha256": "b8ccc3354458c091208551d527071e8aa5d4cd96f827fece305d18c5a6341dce",
+    "archive_checked": "2026-11-06",
+    "archive_sha256": "d7f57125c65d220feef49c24622fedee796089981c8bb64ce51b891877b3d399",
+    "archive_url": "http://web.archive.org/web/20260817142400/https://www.columbusnavigator.com/columbus-participatory-budgeting-program/",
+    "checked": "2026-11-06",
+    "document_sha256": "09502e33c7076873fcf8dfb2aa9827e07a95fc7f6da6d58c810ccab0978e53d4",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-11-06",
         "context": {
           "prefix": "ory budgeting program that gives residents the opportunity to propose neighborhood improvement projects and vote on which ones receive funding.",
           "sha256": "b793b2e7e595240550e5e0027f6396743d963448660ec2c96fe4c59440698404",
@@ -8731,7 +8885,7 @@
         "verified": true
       }
     ],
-    "last_modified": "Wed, 26 Aug 2026 10:38:28 GMT"
+    "last_modified": "Fri, 06 Nov 2026 11:23:26 GMT"
   },
   "https://www.communityindependentsproject.org/blog/the-second-national-community-independents-convention-august-2022": {
     "checked": "2026-10-23",
@@ -8799,14 +8953,17 @@
     "last_modified": null
   },
   "https://www.councilwatch.com.au/post/national-council-census-blows-the-doors-off-town-hall": {
-    "checked": "2026-08-29",
-    "document_sha256": "409cd4d3fc1dfe4ef8b097a650017febf89bcf384a5bb58fa058403b72a1a248",
-    "etag": "W/\"a4202a2ebdffe02183888f29f991b9ed\"",
+    "archive_checked": "2026-11-06",
+    "archive_sha256": "920195774222428d7d98292d440d0428a0eea6b50135965430bed163f462d0a7",
+    "archive_url": "http://web.archive.org/web/20260920020007/https://www.councilwatch.com.au/post/national-council-census-blows-the-doors-off-town-hall",
+    "checked": "2026-11-06",
+    "document_sha256": "06dd3cfbb7002c49f113008e50816b161ae9c7b852d7372b81ef04690a02af04",
+    "etag": "W/\"a38e26e8b74aaf030fe609ef42a64bb8\"",
     "evidence": [
       {
-        "checked": "2026-08-29",
+        "checked": "2026-11-06",
         "context": {
-          "prefix": "Rated NaN out of 5 stars.",
+          "prefix": "2 min read",
           "sha256": "6beea1c020c257fb7578761d930d2f7ec5e628cec3a2a07bc1f2b91bdac2dd41",
           "suffix": "Around 5,000 participants nationwide have had your say. This is not a m",
           "text": "The first results from the National Council Census 2026 are in - and they are savage."
@@ -8877,11 +9034,15 @@
     "last_modified": null
   },
   "https://www.crossroadsconversation.com.au/events/reclaiming-democracy-together": {
-    "checked": "2026-08-26",
-    "document_sha256": "fedd27ed7b0c0cb2d76b6a1543684b993114412aec5dba1533ec07dd24c80f17",
-    "etag": "W/\"1b876913ba783df63e31428852738413--gzip\"",
+    "archive_checked": "2026-11-06",
+    "archive_sha256": "fedd27ed7b0c0cb2d76b6a1543684b993114412aec5dba1533ec07dd24c80f17",
+    "archive_url": "http://web.archive.org/web/20260821042723/https://www.crossroadsconversation.com.au/events/reclaiming-democracy-together",
+    "checked": "2026-11-06",
+    "document_sha256": "a5ac7e47efb158015312a8930fbd6723b3b2de10a5d0804f19026d87768dcb8c",
+    "etag": "W/\"c490746705edba6de6fa172993679c7d--gzip\"",
     "evidence": [
       {
+        "checked": "2026-11-06",
         "context": {
           "prefix": "g. Public discourse is coarsening. Yet Australia is well placed to meet this moment not as spectator, but as participant in democratic renewal.",
           "sha256": "3c9d693eac7a7ebab9abd72bbd1448dab4c3333d4fc1528436e6eda7c072948a",
@@ -8915,11 +9076,15 @@
     "last_modified": null
   },
   "https://www.democracy-international.org/events/2026-global-forum-modern-direct-democracy": {
-    "checked": "2026-08-26",
-    "document_sha256": "fd6deed49a58492fc196c2fe6590e7a4015bc721c76eaef06dd7c1a7f9559175",
-    "etag": "\"1787734516-gzip\"",
+    "archive_checked": "2026-11-06",
+    "archive_sha256": "5e04b764f25dbfadfc3ad29d842ef8af2d906660ac4d8531a14584f772c5cabc",
+    "archive_url": "http://web.archive.org/web/20260714182932/https://www.democracy-international.org/events/2026-global-forum-modern-direct-democracy",
+    "checked": "2026-11-06",
+    "document_sha256": "3a0ed1c042015ec9badcb69a631292e003d5600492aaeca80710951f6724a2cd",
+    "etag": "\"1793906513-gzip\"",
     "evidence": [
       {
+        "checked": "2026-11-06",
         "context": {
           "prefix": "Africa 07.10.2026 17:00 - 10.10.2026 15:00 Location University of Botswana Gaborone Botswana",
           "sha256": "cf2c23156ed8eb4d38665bdc204005a7dc4a85f72e6a5fafaece085a06b1b086",
@@ -8931,7 +9096,7 @@
         "verified": true
       }
     ],
-    "last_modified": "Wed, 26 Aug 2026 08:55:16 GMT"
+    "last_modified": "Thu, 05 Nov 2026 19:21:53 GMT"
   },
   "https://www.democracy-international.org/events/democracy-camp-2026-vic": {
     "checked": "2026-10-02",
@@ -9169,12 +9334,15 @@
     "last_modified": "Mon, 07 Sep 2026 14:10:50 GMT"
   },
   "https://www.designingopendemocracy.com/blog/2018/02/10/proposed-initial-strategy-of-designing-open-democracy/": {
-    "checked": "2026-09-11",
-    "document_sha256": "9895fd0d7e92cee9446115bebe11f6dd3fda77cd18564b8670c21bc7a6359b13",
-    "etag": "W/\"6a9ec5ea-386ba\"",
+    "archive_checked": "2026-11-06",
+    "archive_sha256": "113dc27f006f9aee4657d0358436d354610b9cefa37444fa923ee3dc78c8e94c",
+    "archive_url": "http://web.archive.org/web/20260821043921/https://www.designingopendemocracy.com/blog/2018/02/10/proposed-initial-strategy-of-designing-open-democracy/",
+    "checked": "2026-11-06",
+    "document_sha256": "5b64f2aa8b18ce8c352239f04bb5e3de0aaaf5b41cec6451fc18f09374121c8a",
+    "etag": "W/\"6aec9074-29979\"",
     "evidence": [
       {
-        "checked": "2026-09-11",
+        "checked": "2026-11-06",
         "context": {
           "prefix": "tical-alliances political-discourse public-awareness workshops Proposed (Initial) Strategy of Designing Open Democracy Rationale & Vision",
           "sha256": "d61364727cdb81b6061a95993507e41502ef3dcbe47b4bc1fff372b8f5e158be",
@@ -9186,7 +9354,7 @@
         "verified": true
       }
     ],
-    "last_modified": "Mon, 07 Sep 2026 14:10:50 GMT"
+    "last_modified": "Thu, 05 Nov 2026 14:19:32 GMT"
   },
   "https://www.designingopendemocracy.com/blog/2018/12/18/designing-open-democracy-state-of-democracy-in-australia-in-2018/": {
     "checked": "2026-08-26",
@@ -9298,9 +9466,9 @@
     "last_modified": null
   },
   "https://www.elcomercio.com/actualidad/politica/marlon-vargas-gana-la-presidencia-de-la-conaie-tras-imponerse-a-leonidas-iza/": {
-    "archive_checked": "2026-10-30",
-    "archive_sha256": "4452e7538224b4fdeb8ae3b874c2a60c7ffb36f377c1b507ec95af2040aceda2",
-    "archive_url": "http://web.archive.org/web/20250721062820/https://www.elcomercio.com/actualidad/politica/marlon-vargas-gana-la-presidencia-de-la-conaie-tras-imponerse-a-leonidas-iza/",
+    "archive_checked": "2026-11-06",
+    "archive_sha256": "39bf79084f856cf8dea8e7bed68a59ae974979ce0b4086e898fccb5fadfca451",
+    "archive_url": "http://web.archive.org/web/20261106103757/https://www.elcomercio.com/actualidad/politica/marlon-vargas-gana-la-presidencia-de-la-conaie-tras-imponerse-a-leonidas-iza/",
     "blocked": "HTTP_403",
     "blocked_since": "2026-09-25",
     "checked": "2026-08-29",
@@ -9643,12 +9811,14 @@
     "last_modified": null
   },
   "https://www.helenclark.foundation/facing-up-to-our-future": {
-    "checked": "2026-08-29",
-    "document_sha256": "6758b437b62c2761fa1ebf97397302e976b20e12cf0456d72c239b99907cf400",
-    "etag": "W/\"inn306w2hk5a0h\"",
+    "archive_checked": "2026-11-06",
+    "archive_url": "http://web.archive.org/web/20260716213818/https://www.helenclark.foundation/facing-up-to-our-future",
+    "checked": "2026-11-06",
+    "document_sha256": "4465630076b5a6cf0519ba6d4ca0030f07890b6b5a9b02d2f21ada2a8fc0ac38",
+    "etag": "W/\"zqlnqfkznl6e8f\"",
     "evidence": [
       {
-        "checked": "2026-08-29",
+        "checked": "2026-11-06",
         "context": {
           "prefix": "Emeritus Professor Peter Davis Forewords by Rt Hon Helen Clark and Professor Toeolesulusulu Damon Salesa",
           "sha256": "a3ea4d40d3f92b51289a17288ce943e3dda81dd7a37ecc01258e3d9f6861181e",
@@ -9833,7 +10003,7 @@
     "last_modified": null
   },
   "https://www.institutoupdate.org.br/quem-somos/": {
-    "archive_checked": "2026-10-30",
+    "archive_checked": "2026-11-06",
     "archive_sha256": "551dc30d4903b8fc82176d17ff5bb81b5825e2e15d31699662b4f6489112dab2",
     "archive_url": "http://web.archive.org/web/20260307024855/https://www.institutoupdate.org.br/quem-somos/",
     "blocked": "HTTP_403",
@@ -9858,9 +10028,9 @@
     "last_modified": null
   },
   "https://www.involve.org.uk/about/about-involve": {
-    "archive_checked": "2026-10-23",
-    "archive_sha256": "ae4568eafb775c5214a292d77746582415ce18dd6ca5c3a16ea14ee949cd3b55",
-    "archive_url": "http://web.archive.org/web/20261016080817/https://www.involve.org.uk/about/about-involve",
+    "archive_checked": "2026-11-06",
+    "archive_sha256": "c019301deb77717def1091d4c6fdd6d2d47762dd1d27b8f0453cebf0eb49e4de",
+    "archive_url": "http://web.archive.org/web/20261106105237/https://www.involve.org.uk/about/about-involve",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-20",
     "evidence": [
@@ -9879,7 +10049,7 @@
     "manual_checked": "2026-08-22"
   },
   "https://www.ipc.nsw.gov.au/news/open-government-partnership-final-public-consultation-draft-commitments-australias-third-national-action-plan": {
-    "archive_checked": "2026-10-30",
+    "archive_checked": "2026-11-06",
     "archive_sha256": "3f299a35884033faa4da79f8cb841f7312309978b1bb704d4640bb57edb2390d",
     "archive_url": "http://web.archive.org/web/20250524182833/https://www.ipc.nsw.gov.au/news/open-government-partnership-final-public-consultation-draft-commitments-australias-third-national-action-plan",
     "blocked": "HTTP_403",
@@ -10068,9 +10238,9 @@
     "last_modified": null
   },
   "https://www.lesswrong.com/posts/oqvsR2LmHWamyKDcj/large-language-models-will-be-great-for-censorship": {
-    "archive_checked": "2026-10-30",
+    "archive_checked": "2026-11-06",
     "archive_sha256": "ecf03b5d463d017db48ac536b8fd875f44dd4e93636c4d020284f191f1906c9a",
-    "archive_url": "http://web.archive.org/web/20261023085916/https://www.lesswrong.com/posts/oqvsR2LmHWamyKDcj/large-language-models-will-be-great-for-censorship",
+    "archive_url": "http://web.archive.org/web/20261106112030/https://www.lesswrong.com/posts/oqvsR2LmHWamyKDcj/large-language-models-will-be-great-for-censorship",
     "blocked": "HTTP_429",
     "blocked_since": "2026-08-25"
   },
@@ -10168,7 +10338,7 @@
     "last_modified": null
   },
   "https://www.localgovernment.vic.gov.au/__data/assets/word_doc/0027/167913/Local-Government-Act-2020-Principles-Community-Engagement.docx": {
-    "archive_checked": "2026-10-30",
+    "archive_checked": "2026-11-06",
     "archive_sha256": "e99a0cb931275931d2dc0c849b7cf26c1fa705559c1b80486e14ce24bf8bff98",
     "archive_url": "http://web.archive.org/web/20260727123829/https://www.localgovernment.vic.gov.au/__data/assets/word_doc/0027/167913/Local-Government-Act-2020-Principles-Community-Engagement.docx",
     "blocked": "HTTP_403",
@@ -10247,7 +10417,7 @@
     "last_modified": null
   },
   "https://www.mcguinnessinstitute.org/about-us/history/": {
-    "archive_checked": "2026-10-30",
+    "archive_checked": "2026-11-06",
     "archive_sha256": "7960b18d343da344b9b67ebca07b803ab37df6f83713f363475fee391dc979a7",
     "archive_url": "http://web.archive.org/web/20260925090133/https://www.mcguinnessinstitute.org/about-us/history/",
     "blocked": "HTTP_403",
@@ -10282,13 +10452,15 @@
     "last_modified": null
   },
   "https://www.mcguinnessinstitute.org/events/upcoming-events/": {
-    "archive_checked": "2026-10-23",
+    "archive_checked": "2026-11-06",
     "archive_sha256": "548c497927109b2bb56103d99954bbd16d2364c4eeb95b4c03b3449316ca73da",
-    "archive_url": "http://web.archive.org/web/20261023084320/https://www.mcguinnessinstitute.org/events/upcoming-events/",
+    "archive_url": "http://web.archive.org/web/20261106105703/https://www.mcguinnessinstitute.org/events/upcoming-events/",
     "blocked": "HTTP_403",
     "blocked_since": "2026-09-18"
   },
   "https://www.mcguinnessinstitute.org/research-projects/civics-nz/": {
+    "archive_checked": "2026-11-06",
+    "archive_url": "http://web.archive.org/web/20260925090134/https://www.mcguinnessinstitute.org/research-projects/civics-nz/",
     "blocked": "HTTP_403",
     "blocked_since": "2026-09-04",
     "checked": "2026-08-26",
@@ -10393,11 +10565,14 @@
     "last_modified": null
   },
   "https://www.nature.com/articles/s41593-023-01304-9": {
-    "checked": "2026-08-26",
-    "document_sha256": "3ad07e9310c2b1e274acec2bf51bfbfe7ff66cf69d564255addc7a9598ba19d5",
+    "archive_checked": "2026-11-06",
+    "archive_url": "http://web.archive.org/web/20261009192609/https://www.nature.com/articles/s41593-023-01304-9",
+    "checked": "2026-11-06",
+    "document_sha256": "97525d3b5ef0c49d2472b5b4efad8bd1f8c459a5c8e36cbbe0368480843ca375",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-11-06",
         "context": {
           "prefix": "and practical applications. Currently, however, non-invasive language decoders can only identify stimuli from among a small set of words or phrases.",
           "sha256": "162a85097074d152c4a054daefda5cb5d9dad4d4ca041e303c3aa05eb2a18ed5",
@@ -10719,7 +10894,7 @@
     "last_modified": null
   },
   "https://www.opengovpartnership.org/documents/australia-letter-of-intent-to-join-ogp/": {
-    "archive_checked": "2026-10-30",
+    "archive_checked": "2026-11-06",
     "archive_sha256": "5c965a29ca39bd96002b3de108757fd7cc598d701426ff5fa8d1153aa9016526",
     "archive_url": "http://web.archive.org/web/20250718135710/https://www.opengovpartnership.org/documents/australia-letter-of-intent-to-join-ogp/",
     "blocked": "HTTP_403",
@@ -10943,11 +11118,15 @@
     "last_modified": null
   },
   "https://www.peoplepowered.org/news-content/digital-participation-case-study-taiwan": {
-    "checked": "2026-08-26",
+    "archive_checked": "2026-11-06",
+    "archive_sha256": "d86d8e3006b3e0b2a656649eebfc735ea9466ebf67cee3360fb76eb210e17c0e",
+    "archive_url": "http://web.archive.org/web/20261106111445/https://www.peoplepowered.org/news-content/digital-participation-case-study-taiwan",
+    "checked": "2026-11-06",
     "document_sha256": "d86d8e3006b3e0b2a656649eebfc735ea9466ebf67cee3360fb76eb210e17c0e",
-    "etag": "W/\"9442e43e005ff2663e1dfa3b0648fe41\"",
+    "etag": "W/\"42ed4ac880c5a347022e6e53cdb4c4c8--gzip\"",
     "evidence": [
       {
+        "checked": "2026-11-06",
         "context": {
           "prefix": "ntribute online. The deliberation discussions were conducted primarily in Mandarin, with limited English interpretation provided by volunteers.",
           "sha256": "34e8a1d166f1a9d019993b36380a00c1b548d28fe52f0cf0b30429c4c54d80a5",
@@ -10959,6 +11138,7 @@
         "verified": true
       },
       {
+        "checked": "2026-11-06",
         "context": {
           "prefix": "policymaking. Today, vTaiwan is still dedicated to experimenting with new methods of public deliberation. However, unlike in its earlier years,",
           "sha256": "9312c163b9913f557b6a11bcf507f0927762f65e8ec69481f18aaa9920f9a291",
@@ -11046,11 +11226,15 @@
     "last_modified": null
   },
   "https://www.prediki.com/meta/en/Prediction-Markets-A-Better-Alternative/": {
-    "checked": "2026-08-26",
+    "archive_checked": "2026-11-06",
+    "archive_sha256": "f42adba46469f98ccdf3ffa97a92fa7f4378245612fecd52ef9802b74365c2df",
+    "archive_url": "http://web.archive.org/web/20260821053624/https://www.prediki.com/meta/en/Prediction-Markets-A-Better-Alternative/",
+    "checked": "2026-11-06",
     "document_sha256": "f42adba46469f98ccdf3ffa97a92fa7f4378245612fecd52ef9802b74365c2df",
-    "etag": "W/\"10de8187ff36cdedd7fdbd3d78452725\"",
+    "etag": "W/\"a86c3a35da07b8548e6598df3da178e8\"",
     "evidence": [
       {
+        "checked": "2026-11-06",
         "context": {
           "prefix": "theoretical confidence intervals. Once more the virtual political stock markets fared significantly better than their traditional competitors.",
           "sha256": "4b462959e312a0f8c36d4e0681721d4defe29ba246cda68592d992613d5b7452",
@@ -11180,10 +11364,14 @@
     "last_modified": "Tue, 07 Nov 2017 08:46:11 GMT"
   },
   "https://www.prsa.org.au/qn/2018b_.html": {
-    "checked": "2026-08-26",
+    "archive_checked": "2026-11-06",
+    "archive_sha256": "776395eaea14582e03bccd383e27e174a64638b1aab27b9f440da09d57c17c89",
+    "archive_url": "http://web.archive.org/web/20260512164923/http://www.prsa.org.au/qn/2018b_.html",
+    "checked": "2026-11-06",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-11-06",
         "context": {
           "prefix": "k by Dr Stephen Morey, PRSA National Secretary This re-launched Quota Notes begins with my tribute to the Society\u0092s long-term",
           "sha256": "737fcb085cdb24f6ebd9c51a0d698878adf765f286f5f9d9431f8e7849c9295e",
@@ -11257,11 +11445,14 @@
     "last_modified": null
   },
   "https://www.radicalxchange.org/team/jess-scully/": {
-    "checked": "2026-08-26",
+    "archive_checked": "2026-11-06",
+    "archive_url": "http://web.archive.org/web/20260817141451/https://www.radicalxchange.org/team/jess-scully/",
+    "checked": "2026-11-06",
     "document_sha256": "6ee3f4871903f47f4ce7c0894051f9823d341bba7555ab576320a32e3694e6fc",
-    "etag": "\"a7e6498012b17c4235ed21fe661c6bc1-ssl-df\"",
+    "etag": "W/\"a352117ddcaa78c934131ae1221cc06e-ssl\"",
     "evidence": [
       {
+        "checked": "2026-11-06",
         "context": {
           "prefix": "Team - RadicalxChange Close Jess Scully Executive Director",
           "sha256": "d3a3d62f5a46a4d90930a332cc63859711e441182f58754d2c62e0211868ade6",
@@ -11338,7 +11529,7 @@
     "last_modified": null
   },
   "https://www.science.org/doi/10.1126/science.adq2852": {
-    "archive_checked": "2026-10-30",
+    "archive_checked": "2026-11-06",
     "archive_sha256": "d6d227b4f7282e187add081885e329f63be362f9a0523af1d9671943e5dbcc09",
     "archive_url": "http://web.archive.org/web/20260513112925/https://www.science.org/doi/10.1126/science.adq2852",
     "blocked": "HTTP_403",
@@ -11370,12 +11561,14 @@
     "last_modified": null
   },
   "https://www.sitra.fi/en/articles/sitras-statement-on-the-european-democracy-shield-initiative-of-the-european-commission/": {
-    "checked": "2026-08-29",
-    "document_sha256": "3a675b49c40fe5d1c700c5d1435a9639a5321a67acdb53af3e9e9d36681664b5",
+    "archive_checked": "2026-11-06",
+    "archive_url": "http://web.archive.org/web/20260613062939/https://www.sitra.fi/en/articles/sitras-statement-on-the-european-democracy-shield-initiative-of-the-european-commission/",
+    "checked": "2026-11-06",
+    "document_sha256": "e4e394a776ddc7ac4de21b9f5765e3516a645ab0a8dc5ec85cd9536ab8c6f45d",
     "etag": null,
     "evidence": [
       {
-        "checked": "2026-08-29",
+        "checked": "2026-11-06",
         "context": {
           "prefix": "ean\u2026 Article Sitra\u2019s statement on the European Democracy Shield initiative of the European Commission",
           "sha256": "0e3b296adc942db9d09b6470918d771d90200b2f413fff37bc0a96b9e4b81fff",
@@ -11433,7 +11626,7 @@
     "last_modified": "Wed, 26 Aug 2026 11:22:17 GMT"
   },
   "https://www.sortitionfoundation.org/amplifying_voices_on_housing": {
-    "archive_checked": "2026-10-30",
+    "archive_checked": "2026-11-06",
     "archive_sha256": "be61c7ce9a6f986cfadda655fc56893c20630fba9fbb863a07a2d921434c98d8",
     "archive_url": "http://web.archive.org/web/20260821054630/https://www.sortitionfoundation.org/amplifying_voices_on_housing",
     "blocked": "HTTP_403",
@@ -11457,9 +11650,9 @@
     "last_modified": null
   },
   "https://www.sortitionfoundation.org/australia_update": {
-    "archive_checked": "2026-10-30",
+    "archive_checked": "2026-11-06",
     "archive_sha256": "44a44ea0c091d5953396f33527f7cfff4e0e4aa6f95c318ac93a90d53af397cd",
-    "archive_url": "http://web.archive.org/web/20260821054604/https://www.sortitionfoundation.org/australia_update",
+    "archive_url": "http://web.archive.org/web/20261106110538/https://www.sortitionfoundation.org/australia_update",
     "blocked": "HTTP_403",
     "blocked_since": "2026-09-04",
     "checked": "2026-08-26",
@@ -11481,7 +11674,7 @@
     "last_modified": null
   },
   "https://www.sortitionfoundation.org/become_a_member_australia": {
-    "archive_checked": "2026-10-30",
+    "archive_checked": "2026-11-06",
     "archive_sha256": "fbed18f19ae69d7b2613ce628eac9e4a81b765fa42db7ff05688e6df05de7ec8",
     "archive_url": "http://web.archive.org/web/20260828153434/https://www.sortitionfoundation.org/become_a_member_australia",
     "blocked": "HTTP_403",
@@ -11505,9 +11698,9 @@
     "last_modified": null
   },
   "https://www.sortitionfoundation.org/ecps_2025": {
-    "archive_checked": "2026-10-30",
+    "archive_checked": "2026-11-06",
     "archive_sha256": "bb1ffaab0b11fe74646bd73be56163378b87417595bac51eb92818e83c0b2bc4",
-    "archive_url": "http://web.archive.org/web/20260821064533/https://www.sortitionfoundation.org/ecps_2025",
+    "archive_url": "http://web.archive.org/web/20261106112948/https://www.sortitionfoundation.org/ecps_2025",
     "blocked": "HTTP_403",
     "blocked_since": "2026-09-16",
     "checked": "2026-08-26",
@@ -11569,7 +11762,7 @@
     "last_modified": null
   },
   "https://www.sortitionfoundation.org/introducing_the_open_democratic_lottery_platform": {
-    "archive_checked": "2026-10-30",
+    "archive_checked": "2026-11-06",
     "archive_sha256": "4cddadad19235562e678585807f188027a87a138fa840aa6828f1e1739c352fb",
     "archive_url": "http://web.archive.org/web/20260611072100/https://www.sortitionfoundation.org/introducing_the_open_democratic_lottery_platform",
     "blocked": "HTTP_403",
@@ -11593,7 +11786,7 @@
     "last_modified": null
   },
   "https://www.sortitionfoundation.org/uk_poll_may_2025": {
-    "archive_checked": "2026-10-30",
+    "archive_checked": "2026-11-06",
     "archive_sha256": "fb387e539b9578af9c761d338804817d6e58395cb18c347c01fbd4893a6cf932",
     "archive_url": "http://web.archive.org/web/20260821064426/https://www.sortitionfoundation.org/uk_poll_may_2025",
     "blocked": "HTTP_403",
@@ -11617,7 +11810,7 @@
     "last_modified": null
   },
   "https://www.sortitionfoundation.org/updates": {
-    "archive_checked": "2026-10-30",
+    "archive_checked": "2026-11-06",
     "archive_sha256": "0dd60377411c15e694f9ed6f18b7aae4a16824bfaf6d4c2edadfbb0508f735ad",
     "archive_url": "http://web.archive.org/web/20261011154746/https://www.sortitionfoundation.org/updates",
     "blocked": "HTTP_403",
@@ -11816,14 +12009,15 @@
     "last_modified": "Fri, 23 Oct 2026 08:32:31 GMT"
   },
   "https://www.uniandes.edu.co/es/noticias/gobierno-y-politica/juegue-y-encuentre-su-candidato-de-afinidad": {
-    "archive_checked": "2026-09-04",
-    "archive_url": "http://web.archive.org/web/20260904074834/https://www.uniandes.edu.co/es/noticias/gobierno-y-politica/juegue-y-encuentre-su-candidato-de-afinidad",
-    "checked": "2026-09-04",
-    "document_sha256": "1a6cd37d1984646c5837aa7f00c586ef73c7524aad0e29909f311fec0c7fb885",
+    "archive_checked": "2026-11-06",
+    "archive_sha256": "80ed45f2fe1ec238fb4cc7aae52d67f3dca5923c6a13dd60fdb0d89e2d4e542f",
+    "archive_url": "http://web.archive.org/web/20261106103805/https://www.uniandes.edu.co/es/noticias/gobierno-y-politica/juegue-y-encuentre-su-candidato-de-afinidad",
+    "checked": "2026-11-06",
+    "document_sha256": "80ed45f2fe1ec238fb4cc7aae52d67f3dca5923c6a13dd60fdb0d89e2d4e542f",
     "etag": null,
     "evidence": [
       {
-        "checked": "2026-09-04",
+        "checked": "2026-11-06",
         "context": {
           "prefix": "anorama, una alianza entre academia y tecnolog\u00eda cre\u00f3 una herramienta para simplificar la decisi\u00f3n en pocos minutos: Populus Senado 2026.",
           "sha256": "05495b30c737ff07e0e63341b25b82c0a4068c533c3ced65c98f4bc92680f679",
@@ -11835,10 +12029,10 @@
         "verified": true
       }
     ],
-    "last_modified": null
+    "last_modified": "Fri, 06 Nov 2026 10:37:59 GMT"
   },
   "https://www.unimelb.edu.au/newsroom/news/2017/november/susan-mckinnon-foundation-and-university-of-melbourne-establish-prestigious-award-for-political-leadership": {
-    "archive_checked": "2026-10-30",
+    "archive_checked": "2026-11-06",
     "archive_sha256": "ca8641c666590ecb850d3557793924270d0d2727a271e82fbb7ebacb8226d6e3",
     "archive_url": "http://web.archive.org/web/20250103063217/https://www.unimelb.edu.au/newsroom/news/2017/november/susan-mckinnon-foundation-and-university-of-melbourne-establish-prestigious-award-for-political-leadership",
     "blocked": "HTTP_403",
@@ -12112,7 +12306,7 @@
     "manual_checked": "2026-08-22"
   },
   "https://www.whitehouse.senate.gov/news/release/whitehouse-grassley-issue-statement-on-treasury-departments-final-rule-dismantling-key-element-of-corporate-transparency-act/": {
-    "archive_checked": "2026-10-30",
+    "archive_checked": "2026-11-06",
     "archive_sha256": "ac6c116bb017734fdecb69e9a1fca5c4545c3f99c589e753d6cf49f0a660dcc9",
     "archive_url": "http://web.archive.org/web/20261023090607/https://www.whitehouse.senate.gov/news/release/whitehouse-grassley-issue-statement-on-treasury-departments-final-rule-dismantling-key-element-of-corporate-transparency-act/",
     "blocked": "HTTP_403",
@@ -12232,11 +12426,12 @@
     "last_modified": null
   },
   "https://www.youtube.com/watch?v=2Wv3p9WCs6M": {
-    "checked": "2026-08-26",
-    "document_sha256": "c6c839f1c4dd09cf8e0dd323f6b6c5ed88131e18b92ff99a661052cc461c5c52",
+    "checked": "2026-11-06",
+    "document_sha256": "99f4b0b384d03faf42c2f957dc307ccc59cd5392e6aae106eca1a453d9744462",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-11-06",
         "id": "561c8729a3b025b6c0a550d209b90dc1af47259d60066e78a456415e5a206cfa",
         "quote": "Could a totalitarian regime conquer the entire world and lock in its power forever? This is a particular type of unrecoverable dystopia: a future in which humanity survives, but forever loses its potential to grow and flourish. In this video, we explore which technologies might make this possibility more likely, but also how we might shape technological development in order to prevent it, without giving up the global coordination we need against threats like misaligned AI and engineered pandemics.",
         "verified": false

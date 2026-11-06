@@ -1,8 +1,58 @@
 {
   "feed": "https://kongra-star.org/?feed=rss2",
-  "latest": "2026-10-29",
-  "span_days": 4,
+  "latest": "2026-11-05",
+  "span_days": 5,
   "items": [
+    {
+      "date": "2026-11-05",
+      "title": "​Konfransa Til Temirê tekezî li ser yekîtiya jınan di rûbirûbûna astengiyan kir",
+      "url": "https://kongra-star.org/?p=34516"
+    },
+    {
+      "date": "2026-11-05",
+      "title": "Kongra star a Til Temir êrîşên li ser xwendekarên kurd şermezar kir",
+      "url": "https://kongra-star.org/?p=34538"
+    },
+    {
+      "date": "2026-11-05",
+      "title": "Kongra Star li bajarê Dêrikê konferansa xwe ya ji nû ve ava kirinê li dar xist",
+      "url": "https://kongra-star.org/?p=34462"
+    },
+    {
+      "date": "2026-11-04",
+      "title": "Wê jin bibin tamînata avakirina qonaxa nû û ji nûve ava kirinê",
+      "url": "https://kongra-star.org/?p=34406"
+    },
+    {
+      "date": "2026-11-04",
+      "title": "Kongra Star: Mafê perwerdehiya bi zimanê zikmakî xêzeke sor e",
+      "url": "https://kongra-star.org/?p=34457"
+    },
+    {
+      "date": "2026-11-01",
+      "title": "Kongra Star:Parastina Kobanê parastina hafizaya dîrokî, îradeya civakî û wateya azadiyê ye",
+      "url": "https://kongra-star.org/?p=34302"
+    },
+    {
+      "date": "2026-11-01",
+      "title": "Kongra Star a bajarê Amûdê konferansa  xwe ji nû ve avakirinê destpêkirina qonaxeke nû lidarxist",
+      "url": "https://kongra-star.org/?p=34312"
+    },
+    {
+      "date": "2026-11-01",
+      "title": "Kongra Star Bajarê Amûdê :Kobanê bi berxwedaniya xwe ya dîrokî bû sembola azadî û rûmetê",
+      "url": "https://kongra-star.org/?p=34308"
+    },
+    {
+      "date": "2026-11-01",
+      "title": "Berxwedana Kobanê bû Keleha Berxwedana Giştî Rojava",
+      "url": "https://kongra-star.org/?p=34398"
+    },
+    {
+      "date": "2026-10-31",
+      "title": "Kongra Star a Hesekê Roja Cîhanî ya Berxwedana Kobanê pîroz kir",
+      "url": "https://kongra-star.org/?p=34293"
+    },
     {
       "date": "2026-10-29",
       "title": "Jı Kongra Star ya bajarê Qamişlo li dijî madeyên hişbirê banga hişyariyê li civakê kir",
@@ -202,35 +252,10 @@
       "date": "2026-09-16",
       "title": "Rêber Abdullah Ocalan: Divê provakasyona li Rojava demildest bê rawestandin",
       "url": "https://kongra-star.org/?p=33642"
-    },
-    {
-      "date": "2026-09-16",
-      "title": "Mamosteyên branşên zanistî daxwaza garantîkirina mafê perwerdeyê zimanê kurdî kirin",
-      "url": "https://kongra-star.org/?p=33654"
-    },
-    {
-      "date": "2026-09-15",
-      "title": "Xendekarên Dibistanan Ji Bo Zimanê Dayikê  Xewepêşandanek li darxistin",
-      "url": "https://kongra-star.org/?p=33615"
-    },
-    {
-      "date": "2026-09-15",
-      "title": "Kongra Star: Daxwaza perwerdehiyê bi zimanê kurdî kir",
-      "url": "https://kongra-star.org/?p=33611"
-    },
-    {
-      "date": "2026-09-14",
-      "title": "Rêber Apo: Armanca pêvajoyê jiyana wekhev û azad a gel e",
-      "url": "https://kongra-star.org/?p=33603"
-    },
-    {
-      "date": "2026-09-14",
-      "title": "Kongra Star ragihand ku parastina zimanê Kurdî parastina mafekî bingehîn ê gelê Kurd e",
-      "url": "https://kongra-star.org/?p=33600"
     }
   ],
   "fetch": {
-    "etag": "W/\"e98dae788f0d8787b78964fe2e795077\"",
-    "last_modified": "Thu, 29 Oct 2026 15:39:35 GMT"
+    "etag": "W/\"14d7270b5e635b91abd68782bbade8bc\"",
+    "last_modified": "Thu, 05 Nov 2026 14:29:42 GMT"
   }
 }

@@ -57,11 +57,10 @@ activity:
       network active
     url: https://flacso.org/pa%C3%ADs/cuba
   rss:
-    checked: 2026-10-09
-    date: 2026-10-07
-    note: 'Latest post: Escuchar a la ciudadanía en tiempos de malestar democrático
-      – opinion-'
-    url: https://www.flacso.org/2026/10/07/escuchar-a-la-ciudadania-en-tiempos-de-malestar-democratico/
+    date: 2026-10-28
+    note: 'Latest post: Comunicado fallecimiento de la Dra. Anny Ocoró Loango'
+    url: https://www.flacso.org/2026/10/28/comunicado-fallecimiento-de-la-dra-anny-ocoro-loango/
+    checked: 2026-11-06
   sitemap:
     checked: 2026-09-25
     note: Sitemap found, no lastmod

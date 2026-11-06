@@ -1,8 +1,55 @@
 {
   "feed": "https://www.afrobarometer.org/feed",
-  "latest": "2026-10-27",
-  "span_days": 33,
+  "latest": "2026-11-06",
+  "span_days": 24,
   "items": [
+    {
+      "date": "2026-11-06",
+      "title": "Zimbabweans see China’s influence as substantial but are divided on its benefits, Afrobarometer study indicates",
+      "url": "https://www.afrobarometer.org/articles/zimbabweans-see-chinas-influence-as-substantial-but-are-divided-on-its-benefits-afrobarometer-study-indicates/",
+      "signals": [
+        "publication"
+      ]
+    },
+    {
+      "date": "2026-11-05",
+      "title": "Malawians strongly support parliamentary inquiries, consider them  fair and impartial, new Afrobarometer study shows",
+      "url": "https://www.afrobarometer.org/articles/malawians-strongly-support-parliamentary-inquiries-consider-them-fair-and-impartial-new-afrobarometer-study-shows/",
+      "signals": [
+        "publication"
+      ]
+    },
+    {
+      "date": "2026-11-05",
+      "title": "Despite better perceived government economic performance,  Malawians still think the country is on the wrong track",
+      "url": "https://www.afrobarometer.org/articles/despite-better-perceived-government-economic-performance-malawians-still-think-the-country-is-on-the-wrong-track/"
+    },
+    {
+      "date": "2026-11-05",
+      "title": "Afrobarometer picked as a ‘Think Tank to Watch’ for second consecutive year",
+      "url": "https://www.afrobarometer.org/articles/afrobarometer-picked-as-a-think-tank-to-watch-for-second-consecutive-year/"
+    },
+    {
+      "date": "2026-11-05",
+      "title": "Afrobarometer désigné comme un « Think Tank to Watch »  pour la deuxième année consécutive",
+      "url": "https://www.afrobarometer.org/articles/afrobarometer-designe-comme-un-think-tank-to-watch-pour-la-deuxieme-annee-consecutive/"
+    },
+    {
+      "date": "2026-11-03",
+      "title": "Lived poverty remains stubbornly high in Africa, new Afrobarometer report shows",
+      "url": "https://www.afrobarometer.org/articles/lived-poverty-remains-stubbornly-high-in-africa-new-afrobarometer-report-shows/",
+      "signals": [
+        "publication"
+      ]
+    },
+    {
+      "date": "2026-11-03",
+      "title": "La pauvreté vécue demeure obstinément élevée en Afrique, révèle un nouveau rapport d’Afrobarometer",
+      "url": "https://www.afrobarometer.org/articles/la-pauvrete-vecue-demeure-obstinement-elevee-en-afrique-revele-un-nouveau-rapport-dafrobarometer/",
+      "signals": [
+        "publication"
+      ]
+    },
     {
       "date": "2026-10-27",
       "title": "Should I stay or should I go? What Africa’s young people are telling us about migration",
@@ -112,6 +159,6 @@
     }
   ],
   "fetch": {
-    "last_modified": "Tue, 27 Oct 2026 17:25:46 GMT"
+    "last_modified": "Fri, 06 Nov 2026 08:38:07 GMT"
   }
 }

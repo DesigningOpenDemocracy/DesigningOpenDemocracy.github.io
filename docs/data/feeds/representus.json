@@ -1,8 +1,16 @@
 {
   "feed": "https://represent.us/feed",
-  "latest": "2026-10-15",
-  "span_days": 28,
+  "latest": "2026-11-04",
+  "span_days": 42,
   "items": [
+    {
+      "date": "2026-11-04",
+      "title": "Congress Must Make 2027 America’s Anti-Corruption Year",
+      "url": "https://represent.us/news/congress-must-make-2027-americas-anti-corruption-year/",
+      "signals": [
+        "flagship event"
+      ]
+    },
     {
       "date": "2026-10-15",
       "title": "The New Era of Corruption in America",
@@ -17,6 +25,14 @@
       "date": "2026-10-06",
       "title": "What is Truth API and why does it matter?",
       "url": "https://represent.us/news/what-is-truth-api-and-why-does-it-matter/"
+    },
+    {
+      "date": "2026-10-01",
+      "title": "The Hill: Americans don’t trust Congress to fight corruption — here’s how to change that",
+      "url": "https://represent.us/news/the-hill-americans-dont-trust-congress-to-fight-corruption-heres-how-to-change-that/",
+      "signals": [
+        "flagship event"
+      ]
     },
     {
       "date": "2026-09-30",
@@ -79,7 +95,7 @@
     }
   ],
   "fetch": {
-    "etag": "W/\"8a5c7bfea4b0a551d19691318e0a5cbd\"",
-    "last_modified": "Mon, 26 Oct 2026 18:41:22 GMT"
+    "etag": "W/\"cd67cde910e01f3a31abef8bcfaafaec\"",
+    "last_modified": "Fri, 06 Nov 2026 01:08:52 GMT"
   }
 }

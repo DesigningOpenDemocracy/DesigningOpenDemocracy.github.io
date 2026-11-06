@@ -53,10 +53,10 @@ activity:
     url: https://represent.us
     checked: 2026-09-20
   rss:
-    date: 2026-10-15
-    note: 'Latest post: The New Era of Corruption in America'
-    url: https://represent.us/news/the-new-era-of-corruption-in-america/
-    checked: 2026-10-30
+    date: 2026-11-04
+    note: 'Latest post: Congress Must Make 2027 America’s Anti-Corruption Year'
+    url: https://represent.us/news/congress-must-make-2027-americas-anti-corruption-year/
+    checked: 2026-11-06
 last_checked: '2026-09-20'
 ---
 

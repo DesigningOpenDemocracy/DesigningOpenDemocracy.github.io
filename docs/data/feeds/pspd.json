@@ -254,5 +254,11 @@
   ],
   "fetch": {
     "etag": "\"4379ea9ef09f8df4400213d05b1f993b\""
+  },
+  "failing": {
+    "error": "UNPARSEABLE",
+    "since": "2026-11-06",
+    "count": 1,
+    "last": "2026-11-06"
   }
 }

@@ -57,10 +57,10 @@ activity:
     url: https://www.sitra.fi/en/
     checked: 2026-09-19
   rss:
-    date: 2026-10-28
-    note: 'Latest post: Miten tehdä parempia päätöksiä epävarmuuden ajassa'
-    url: https://www.sitra.fi/blogit/miten-tehda-parempia-paatoksia-epavarmuuden-ajassa/
-    checked: 2026-10-30
+    date: 2026-11-04
+    note: 'Latest post: Petetty tulevaisuuslupaus – miksi nuoret protestoivat?'
+    url: https://www.sitra.fi/blogit/petetty-tulevaisuuslupaus-miksi-nuoret-protestoivat/
+    checked: 2026-11-06
 last_checked: '2026-09-19'
 ---
 

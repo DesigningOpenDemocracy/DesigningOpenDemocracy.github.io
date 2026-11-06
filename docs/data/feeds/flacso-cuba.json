@@ -1,12 +1,37 @@
 {
   "feed": "https://flacso.org/feed",
-  "latest": "2026-10-07",
-  "span_days": 63,
+  "latest": "2026-10-28",
+  "span_days": 84,
   "items": [
+    {
+      "date": "2026-10-28",
+      "title": "Comunicado fallecimiento de la Dra. Anny Ocoró Loango",
+      "url": "https://www.flacso.org/2026/10/28/comunicado-fallecimiento-de-la-dra-anny-ocoro-loango/"
+    },
+    {
+      "date": "2026-10-23",
+      "title": "RESISTENCIA (NO RESILIENCIA) DEMOCRÁTICA – Opinión",
+      "url": "https://www.flacso.org/2026/10/23/resistencia-no-resiliencia-democratica-opinion/"
+    },
+    {
+      "date": "2026-10-22",
+      "title": "FLACSO abre un espacio de reflexión sobre los 75 años de la integración centroamericana y sus desafíos futuros",
+      "url": "https://www.flacso.org/2026/10/22/flacso-abre-un-espacio-de-reflexion-sobre-los-75-anos-de-la-integracion-centroamericana-y-sus-desafios-futuros/"
+    },
+    {
+      "date": "2026-10-17",
+      "title": "FLACSO y la UCR inauguran el III Seminario Internacional de Estudios de China Contemporánea",
+      "url": "https://www.flacso.org/2026/10/17/flacso-y-la-ucr-inauguran-el-iii-seminario-internacional-de-estudios-de-china-contemporanea/"
+    },
     {
       "date": "2026-10-07",
       "title": "Escuchar a la ciudadanía en tiempos de malestar democrático – opinion-",
       "url": "https://www.flacso.org/2026/10/07/escuchar-a-la-ciudadania-en-tiempos-de-malestar-democratico/"
+    },
+    {
+      "date": "2026-09-16",
+      "title": "FLACSO y la Universidad Renmin de China exploran nuevas líneas de investigación y movilidad académica",
+      "url": "https://www.flacso.org/2026/09/16/flacso-y-la-universidad-renmin-de-china-exploran-nuevas-lineas-de-investigacion-y-movilidad-academica/"
     },
     {
       "date": "2026-08-05",
@@ -66,6 +91,6 @@
     }
   ],
   "fetch": {
-    "last_modified": "Fri, 09 Oct 2026 04:19:29 GMT"
+    "last_modified": "Thu, 05 Nov 2026 21:34:19 GMT"
   }
 }

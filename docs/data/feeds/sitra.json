@@ -1,8 +1,28 @@
 {
   "feed": "https://www.sitra.fi/feed",
-  "latest": "2026-10-28",
-  "span_days": 20,
+  "latest": "2026-11-04",
+  "span_days": 16,
   "items": [
+    {
+      "date": "2026-11-04",
+      "title": "Petetty tulevaisuuslupaus – miksi nuoret protestoivat?",
+      "url": "https://www.sitra.fi/blogit/petetty-tulevaisuuslupaus-miksi-nuoret-protestoivat/"
+    },
+    {
+      "date": "2026-11-03",
+      "title": "Viestintä rakentaa luottamusta pirstoutuvassa maailmassa – 3+1 nostoa viestinnän tulevaisuuksista",
+      "url": "https://www.sitra.fi/blogit/viestinta-rakentaa-luottamusta-pirstoutuvassa-maailmassa-31-nostoa-viestinnan-tulevaisuuksista/"
+    },
+    {
+      "date": "2026-11-03",
+      "title": "Pohjoismainen yhteistyö raivaa tietä rajat ylittävälle terveystutkimukselle",
+      "url": "https://www.sitra.fi/uutiset/pohjoismainen-yhteistyo-raivaa-tieta-rajat-ylittavalle-terveystutkimukselle/"
+    },
+    {
+      "date": "2026-10-30",
+      "title": "Sitran ja Viesti ry:n tulevaisuustyö: Väärä tieto on suurin uhka viestinnän työlle",
+      "url": "https://www.sitra.fi/uutiset/sitra-ja-viesti-ry-selvittivat-viestinnan-tulevaisuuksia-vaara-tieto-on-suurin-uhka-viestinnan-tyolle/"
+    },
     {
       "date": "2026-10-28",
       "title": "Miten tehdä parempia päätöksiä epävarmuuden ajassa",
@@ -160,7 +180,7 @@
     }
   ],
   "fetch": {
-    "etag": "\"be2acf51e4050dec4a2c205f38ff4792\"",
-    "last_modified": "Fri, 30 Oct 2026 08:23:34 GMT"
+    "etag": "\"5d28370f96c645a20017e58bad96fd8d\"",
+    "last_modified": "Fri, 06 Nov 2026 09:53:30 GMT"
   }
 }

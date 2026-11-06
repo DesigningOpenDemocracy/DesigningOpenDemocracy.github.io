@@ -62,11 +62,11 @@ activity:
     url: https://www.afrobarometer.org
     checked: 2026-09-19
   rss:
-    date: 2026-10-27
-    note: 'Latest post: Should I stay or should I go? What Africa’s young people are
-      telling us about mi'
-    url: https://www.afrobarometer.org/articles/should-i-stay-or-should-i-go-what-africas-young-people-are-telling-us-about-migration/
-    checked: 2026-10-30
+    date: 2026-11-06
+    note: 'Latest post: Zimbabweans see China’s influence as substantial but are divided
+      on its benefits'
+    url: https://www.afrobarometer.org/articles/zimbabweans-see-chinas-influence-as-substantial-but-are-divided-on-its-benefits-afrobarometer-study-indicates/
+    checked: 2026-11-06
 last_checked: '2026-09-19'
 ---
 

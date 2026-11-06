@@ -72,10 +72,10 @@ activity:
     url: https://chinademocrats.org/en
     checked: 2026-09-28
   rss:
-    date: 2026-10-29
-    note: 'Latest post: 民主迎来新的一天'
-    url: https://chinademocrats.org/?p=7748
-    checked: 2026-10-30
+    date: 2026-11-01
+    note: 'Latest post: 不靠推土机，靠选票：塞尔维亚学生运动胜选后的法治难题'
+    url: https://chinademocrats.org/?p=7767
+    checked: 2026-11-06
 last_checked: '2026-09-28'
 ---
 

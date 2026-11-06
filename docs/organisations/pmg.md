@@ -76,10 +76,10 @@ activity:
     note: No feed found
     checked: 2026-10-02
   scrape:
-    date: 2026-10-26
+    date: 2026-11-04
     note: Latest news page scraped
     url: https://pmg.org.za/blog/
-    checked: 2026-10-30
+    checked: 2026-11-06
 last_checked: '2026-09-20'
 ---
 
