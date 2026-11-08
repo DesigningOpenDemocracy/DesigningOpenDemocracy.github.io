@@ -181,15 +181,6 @@ elections:
     quote: "Presidential elections are scheduled to be held in the United States on November 7, 2028"
     url_checked: 2026-11-05
 
-  - date: 2026-11-07
-    country: NZ
-    level: national
-    title: New Zealand general election
-    date_status: fixed
-    url: https://en.wikipedia.org/wiki/2026_New_Zealand_general_election
-    quote: "The 2026 New Zealand general election is scheduled to be held on 7 November 2026."
-    url_checked: 2026-09-02
-
   - date: 2026-11-28
     country: TW
     level: local
