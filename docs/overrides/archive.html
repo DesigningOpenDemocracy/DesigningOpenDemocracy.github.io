@@ -44,6 +44,11 @@
   {%- for y in years %}<a href="#y{{ y }}" data-year="{{ y }}">{{ y }}</a>{% endfor %}
 </nav>
 
+<p id="archive-empty" class="archive-empty" hidden>
+  Nothing matches these filters.
+  <button type="button" id="archive-empty-clear" class="org-empty-clear-btn">Clear filters</button>
+</p>
+
 {%- for y in years %}
 <section class="archive-year" data-year="{{ y }}">
 <h2 class="archive-year-heading" id="y{{ y }}">{{ y }}</h2>
@@ -70,10 +75,6 @@
 </ul>
 </section>
 {%- endfor %}
-<p id="archive-empty" class="archive-empty" hidden>
-  Nothing matches these filters.
-  <button type="button" id="archive-empty-clear" class="org-empty-clear-btn">Clear filters</button>
-</p>
 {%- endif %}
 
 </div>
@@ -136,6 +137,12 @@
   }
 
   search.addEventListener('input', apply);
+  search.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && search.value) {
+      search.value = '';
+      apply();
+    }
+  });
   countrySel.addEventListener('change', apply);
   tierSel.addEventListener('change', apply);
   resetBtn.addEventListener('click', function () {
