@@ -72,14 +72,14 @@ events:
   notable_reason: Public panel co-hosted for International Day of Democracy
   kind: gathering
   coverage_url: /blog/2026/09/26/democracy-beyond-the-ballot-box-recap-of-our-international-day-of-democracy-panel/
-- date: '2026-11-27'
+- date: '2026-11-28'
   title: Cross-party watch party for the 2026 Victorian state election
   short_title: Victorian election cross-party watch party
   source: Calendar invitation for the watch party being planned by Nick Merange, received
     2026-11-13 (no public event page yet)
   note: Nick Merange is planning a cross-party gathering to watch the Victorian state
-    election together, at Inspire9, Richmond VIC. Invitation lists Friday 27 November
-    2026, 7pm–10pm (Sydney/Melbourne time).
+    election together, at Inspire9, Richmond VIC. Invitation lists Saturday 28 November
+    2026, 7pm–10pm (Sydney/Melbourne time), election night.
   proof_level: medium
   time: '19:00'
   end_time: '22:00'
