@@ -83,6 +83,8 @@ events:
   proof_level: medium
   time: '19:00'
   end_time: '22:00'
+  notable: medium
+  notable_reason: Cross-party election-night gathering
   kind: gathering
   location: Inspire9, Level 1/41-43 Stewart St, Richmond VIC 3121
 activity:
