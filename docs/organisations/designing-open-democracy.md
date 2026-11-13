@@ -72,23 +72,36 @@ events:
   notable_reason: Public panel co-hosted for International Day of Democracy
   kind: gathering
   coverage_url: /blog/2026/09/26/democracy-beyond-the-ballot-box-recap-of-our-international-day-of-democracy-panel/
+- date: '2026-11-27'
+  title: Cross-party watch party for the 2026 Victorian state election
+  short_title: Victorian election cross-party watch party
+  source: Calendar invitation for the watch party being planned by Nick Merange, received
+    2026-11-13 (no public event page yet)
+  note: Nick Merange is planning a cross-party gathering to watch the Victorian state
+    election together, at Inspire9, Richmond VIC. Invitation lists Friday 27 November
+    2026, 7pm–10pm (Sydney/Melbourne time).
+  proof_level: medium
+  time: '19:00'
+  end_time: '22:00'
+  kind: gathering
+  location: Inspire9, Level 1/41-43 Stewart St, Richmond VIC 3121
 activity:
   manual:
     checked: 2026-08-07
     date: 2026-08-07
     note: This entry, and everything else on this site, is evidence of its own activity.
   dod:
+    checked: 2026-09-17
     date: 2026-09-17
     note: Self-authored entry; site confirmed live, latest blog post is the 25 Aug
       2026 International Day of Democracy panel announcement (event already recorded).
       Mission description and links unchanged.
     url: https://www.designingopendemocracy.com
-    checked: 2026-09-17
   sitemap:
+    checked: 2026-10-30
     date: 2026-10-29
     note: Page last modified (from sitemap)
     url: https://designingopendemocracy.com/sitemap.xml
-    checked: 2026-10-30
 last_checked: '2026-09-17'
 ---
 
