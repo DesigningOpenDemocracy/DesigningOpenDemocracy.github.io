@@ -59,10 +59,10 @@ activity:
     url: https://democracyclub.org.uk/blog/2026/10/15/english-council-boundary-reviews-on-whocanivotefor/
     checked: 2026-10-23
   scrape:
-    date: 2026-10-19
+    date: 2026-11-12
     note: Latest news page scraped
     url: https://democracyclub.org.uk/blog/
-    checked: 2026-11-06
+    checked: 2026-11-13
 last_checked: '2026-09-21'
 ---
 

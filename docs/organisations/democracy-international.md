@@ -141,7 +141,7 @@ activity:
     date: 2026-11-05
     note: Latest news page scraped
     url: https://www.democracy-international.org/news
-    checked: 2026-11-06
+    checked: 2026-11-13
 last_checked: '2026-09-28'
 ---
 

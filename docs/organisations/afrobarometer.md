@@ -62,11 +62,11 @@ activity:
     url: https://www.afrobarometer.org
     checked: 2026-09-19
   rss:
-    date: 2026-11-06
-    note: 'Latest post: Zimbabweans see China’s influence as substantial but are divided
-      on its benefits'
-    url: https://www.afrobarometer.org/articles/zimbabweans-see-chinas-influence-as-substantial-but-are-divided-on-its-benefits-afrobarometer-study-indicates/
-    checked: 2026-11-06
+    date: 2026-11-11
+    note: 'Latest post: La plupart des Camerounais déplorent la situation économique  de
+      leur pays'
+    url: https://www.afrobarometer.org/articles/la-plupart-des-camerounais-deplorent-la-situation-economique-de-leur-pays/
+    checked: 2026-11-13
 last_checked: '2026-09-19'
 ---
 

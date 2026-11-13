@@ -50,11 +50,10 @@ activity:
     url: https://fairvote.org
     checked: 2026-09-19
   rss:
-    date: 2026-11-05
-    note: 'Latest post: Initial results from Maine’s November 2026 ranked choice voting
-      elections'
-    url: https://fairvote.org/initial-results-from-maines-november-2026-rcv-elections/
-    checked: 2026-11-06
+    date: 2026-11-12
+    note: 'Latest post: How will remaining ballots affect Alaska’s statewide elections?'
+    url: https://fairvote.org/how-will-remaining-ballots-affect-alaskas-statewide-elections/
+    checked: 2026-11-13
 last_checked: '2026-09-19'
 ---
 

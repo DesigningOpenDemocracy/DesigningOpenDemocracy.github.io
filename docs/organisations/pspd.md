@@ -58,10 +58,10 @@ activity:
     url: https://www.peoplepower21.org
     checked: 2026-09-19
   rss:
-    date: 2026-10-30
-    note: 'Latest post: [논평] 형사소송법 개정해 내란 판결문 실명본 공개해야'
-    url: https://peoplepower21.org/government/2055441
-    checked: 2026-10-30
+    date: 2026-11-13
+    note: 'Latest post: [논평] 우촌초 공익제보자 항소심 무죄 선고 환영한다'
+    url: https://peoplepower21.org/whistleblower/2056456
+    checked: 2026-11-13
 last_checked: '2026-09-19'
 ---
 

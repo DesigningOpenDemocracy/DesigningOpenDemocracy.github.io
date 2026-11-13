@@ -73,11 +73,15 @@
     "last_modified": null
   },
   "https://adrindia.org/legal-advocacy/judgements-and-orders": {
-    "checked": "2026-08-26",
-    "document_sha256": "a9a4d4a8e4306686941393d73cafff495e567b414f1e8e3fc27b4ac25ce5bb1a",
+    "archive_checked": "2026-11-13",
+    "archive_sha256": "06515b55b145c6e6296635359d677bb8e60e4615b85c984137c881898e316bff",
+    "archive_url": "http://web.archive.org/web/20261113104241/https://adrindia.org/legal-advocacy/judgements-and-orders",
+    "checked": "2026-11-13",
+    "document_sha256": "06515b55b145c6e6296635359d677bb8e60e4615b85c984137c881898e316bff",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-11-13",
         "context": {
           "prefix": "ent, requiring disclosure of criminal background, but not of financial and educational background. ADR and two other petitioners challenged this Act.",
           "sha256": "512fb105e6e25b4ec2650abc596444f3c38bd7d83316ebeaa3d311aa3bc57444",
@@ -89,6 +93,7 @@
         "verified": true
       },
       {
+        "checked": "2026-11-13",
         "context": {
           "prefix": "upreme Court/High Court Orders 1) Disclosure of Candidate Background (Criminal, Educational & Financial) to Election Commission.",
           "sha256": "512fb105e6e25b4ec2650abc596444f3c38bd7d83316ebeaa3d311aa3bc57444",
@@ -100,6 +105,7 @@
         "verified": true
       },
       {
+        "checked": "2026-11-13",
         "context": {
           "prefix": "for having a separate button on the Electronic Voting Machine (EVM) with the option of \u2018None of the Above\u2019 (NOTA) and in which ADR later intervened,",
           "sha256": "fe1f879dec7401286a289b5a6f69c98b0c197ed413bc39159b9dcccad00f7552",
@@ -180,11 +186,15 @@
     "last_modified": null
   },
   "https://anouslademocratie.fr/municipales-2020/": {
-    "checked": "2026-08-26",
-    "document_sha256": "4ffc89ba08d0f784fe455e08f895d1845b06f41c6bab4cd4e234a1bf69d8cc42",
+    "archive_checked": "2026-11-13",
+    "archive_sha256": "4a58c2e16610134f132dd5fc944e101c1765f5365f1361701672627957fcd9dc",
+    "archive_url": "http://web.archive.org/web/20261113104215/https://anouslademocratie.fr/municipales-2020/",
+    "checked": "2026-11-13",
+    "document_sha256": "4a58c2e16610134f132dd5fc944e101c1765f5365f1361701672627957fcd9dc",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-11-13",
         "context": {
           "prefix": "Municipales 2020 Formation au porte-\u00e0-porte Notre strat\u00e9gie pour les municipales L\u2019int\u00e9gralit\u00e9 des propositions",
           "sha256": "1645108a292b9a76524544b2f0552f90299245bcdfacb60088f0a672d107bf3c",
@@ -199,8 +209,10 @@
     "last_modified": null
   },
   "https://apolitical.co/": {
-    "checked": "2026-09-16",
-    "document_sha256": "aa1cc8091617088cca4dad6db9a6df5511ba8c761552826b39d131ba96141b53",
+    "archive_checked": "2026-11-13",
+    "archive_url": "http://web.archive.org/web/20220801223214/https://apolitical.co/",
+    "checked": "2026-11-13",
+    "document_sha256": "4362d0eadae2e6697f0a4a03fc99212c425616e3fe4e78bd42aba15915fd25df",
     "etag": null,
     "evidence": [
       {
@@ -210,11 +222,11 @@
         "verified": false
       },
       {
-        "checked": "2026-09-16",
+        "checked": "2026-11-13",
         "context": {
           "prefix": "te at their own pace. Book a demo AI-powered tools, community and insight for the public sector",
           "sha256": "07b22230a53882767b6814fdd34b452894b6ceb4ecae639d9c725e3cf003e67c",
-          "suffix": "Join the Apolitical network Making governments around the world smarter globe-icon 500k+ member",
+          "suffix": "Join the Apolitical network Making governments around the world smarter 500k+ members from 170+",
           "text": "From purpose-built tools that fix real government pain points to a global community of 500,000+ public servants sharing what works \u2014 Apolitical combines cutting-edge AI with deep public sector expertise to drive measurable impact."
         },
         "id": "07b22230a53882767b6814fdd34b452894b6ceb4ecae639d9c725e3cf003e67c",
@@ -311,6 +323,9 @@
     "last_modified": "Thu, 20 Aug 2026 15:45:45 GMT"
   },
   "https://australiainstitute.org.au/events/climate-integrity-summit/": {
+    "archive_checked": "2026-11-13",
+    "archive_sha256": "74f890d72dc2a1e63279158ae5b963078babaeaeda0a28507056e8aa5f950146",
+    "archive_url": "http://web.archive.org/web/20260821040332/https://australiainstitute.org.au/events/climate-integrity-summit/",
     "blocked": "HTTP_403",
     "blocked_since": "2026-09-04",
     "checked": "2026-08-26",
@@ -344,7 +359,7 @@
     "last_modified": "Thu, 20 Aug 2026 04:39:23 GMT"
   },
   "https://australiainstitute.org.au/post/legislation-requiring-real-time-disclosure-of-political-donations-could-pass-this-week/": {
-    "archive_checked": "2026-11-06",
+    "archive_checked": "2026-11-13",
     "archive_sha256": "836ae11191a9e7068c37c2143588a6c3abdbf539e6735464e9576d11e85ee472",
     "archive_url": "http://web.archive.org/web/20260821055946/https://australiainstitute.org.au/post/legislation-requiring-real-time-disclosure-of-political-donations-could-pass-this-week/",
     "blocked": "HTTP_403",
@@ -396,7 +411,7 @@
     "last_modified": "Tue, 25 Nov 2025 21:34:43 GMT"
   },
   "https://bethnoveck.medium.com/was-vtaiwan-such-a-big-flop-after-all-d6b365f916dc": {
-    "archive_checked": "2026-11-06",
+    "archive_checked": "2026-11-13",
     "archive_url": "http://web.archive.org/web/20260904075928/https://bethnoveck.medium.com/was-vtaiwan-such-a-big-flop-after-all-d6b365f916dc",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-20",
@@ -652,9 +667,9 @@
     "last_modified": null
   },
   "https://cafsa.org.au/cafsa/": {
-    "archive_checked": "2026-11-06",
+    "archive_checked": "2026-11-13",
     "archive_sha256": "6c652d3975a92e5ae74cc4fada9235af50045abeaf9d07f250c630d960853289",
-    "archive_url": "http://web.archive.org/web/20261106103231/https://cafsa.org.au/cafsa/",
+    "archive_url": "http://web.archive.org/web/20261113104413/https://cafsa.org.au/cafsa/",
     "blocked": "HTTP_403",
     "blocked_since": "2026-09-04",
     "checked": "2026-08-28",
@@ -893,14 +908,15 @@
     "last_modified": null
   },
   "https://civichive.org/about-us/": {
-    "archive_checked": "2026-11-06",
-    "archive_url": "http://web.archive.org/web/20261106112450/https://civichive.org/about-us/",
-    "checked": "2026-11-06",
+    "archive_checked": "2026-11-13",
+    "archive_sha256": "5c14942f4be70fe7c181da81a2eb562d1bc6f367a4e9ec482092637c6b65d014",
+    "archive_url": "http://web.archive.org/web/20261113104742/https://civichive.org/about-us/",
+    "checked": "2026-11-13",
     "document_sha256": "5c14942f4be70fe7c181da81a2eb562d1bc6f367a4e9ec482092637c6b65d014",
     "etag": null,
     "evidence": [
       {
-        "checked": "2026-08-28",
+        "checked": "2026-11-13",
         "context": {
           "prefix": "Donate Election Result Portal About us",
           "sha256": "aee7e1dc3880e8ec6b1c12e3c9c5fe4c6c50ef9e9673b5c2a409de2b9ebfafa1",
@@ -947,9 +963,9 @@
     "last_modified": null
   },
   "https://civictech.africa/about-ctin": {
-    "archive_checked": "2026-11-06",
+    "archive_checked": "2026-11-13",
     "archive_sha256": "a1ea3d023725607b5e9b544ce244ec52af65a37ba2ce98176a1c568e465610c8",
-    "archive_url": "http://web.archive.org/web/20261013232803/https://civictech.africa/about-ctin/",
+    "archive_url": "http://web.archive.org/web/20261113105249/https://civictech.africa/about-ctin",
     "blocked": "HTTP_403",
     "blocked_since": "2026-09-18",
     "checked": "2026-08-29",
@@ -972,9 +988,9 @@
     "last_modified": "Thu, 27 Aug 2026 10:49:55 GMT"
   },
   "https://civictech.africa/ctif/underthehood/": {
-    "archive_checked": "2026-11-06",
-    "archive_sha256": "1c7afc9ba080c3d34ac53d4181046b732dc4c6e4600bc77dd085f2611c5de942",
-    "archive_url": "http://web.archive.org/web/20251115145046/https://civictech.africa/ctif/underthehood/",
+    "archive_checked": "2026-11-13",
+    "archive_sha256": "2d9c02b639fd443e52ffb1625986e222a57448b06b138733058391a9dcd7937e",
+    "archive_url": "http://web.archive.org/web/20261113105319/https://civictech.africa/ctif/underthehood/",
     "blocked": "HTTP_403",
     "blocked_since": "2026-09-18",
     "checked": "2026-08-29",
@@ -1061,7 +1077,7 @@
     "last_modified": null
   },
   "https://commonslibrary.parliament.uk/research-briefings/cbp-10876/": {
-    "archive_checked": "2026-11-06",
+    "archive_checked": "2026-11-13",
     "archive_sha256": "76db44b3577f3dd4b1f4868fef425341b45d64132694e314cdcb54dec2e65dab",
     "archive_url": "http://web.archive.org/web/20260914150106/https://commonslibrary.parliament.uk/research-briefings/cbp-10876/",
     "blocked": "HTTP_403",
@@ -1105,12 +1121,14 @@
     "last_modified": null
   },
   "https://congresovisible.uniandes.edu.co/quesomos": {
-    "checked": "2026-08-29",
+    "archive_checked": "2026-11-13",
+    "archive_url": "http://web.archive.org/web/20261016132124/https://congresovisible.uniandes.edu.co/quesomos/",
+    "checked": "2026-11-13",
     "document_sha256": "4ed870e60a69f4aa64d27e25930abe1d328953fb76b1a767b4250d40bd787ff4",
     "etag": null,
     "evidence": [
       {
-        "checked": "2026-08-29",
+        "checked": "2026-11-13",
         "context": {
           "prefix": "Qu\u00e9 es Congreso Visible",
           "sha256": "dda0e7cca4c21947259bb3b665c62bf3b375cea3f13dfe688cec218b5281df0c",
@@ -1465,11 +1483,14 @@
     "last_modified": null
   },
   "https://deliberabrasil.org/projetos/assembleias-cidadas-de-mocambique-sobre-as-mudancas-climaticas/": {
-    "checked": "2026-08-26",
-    "document_sha256": "1b5c0daf12cbe339a86f59230caef1518a2c47a41b15d839fb472b11da608f18",
+    "archive_checked": "2026-11-13",
+    "archive_url": "http://web.archive.org/web/20261106104220/https://deliberabrasil.org/projetos/assembleias-cidadas-de-mocambique-sobre-as-mudancas-climaticas/",
+    "checked": "2026-11-13",
+    "document_sha256": "27338b0466f73b94bbc5e9783bc9a6866b5490d99ddfd13d092a3effb6eb2612",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-11-13",
         "context": {
           "prefix": "ica\u00e7\u00f5es Gloss\u00e1rio Nosso trabalho Assembleias Cidad\u00e3s de Mo\u00e7ambique sobre as mudan\u00e7as clim\u00e1ticas",
           "sha256": "c43016d6dd7a4d33c03f2818c4b80d16abf00ed4209bdf2f901fc6f24d8d5e03",
@@ -1478,7 +1499,7 @@
         },
         "id": "c43016d6dd7a4d33c03f2818c4b80d16abf00ed4209bdf2f901fc6f24d8d5e03",
         "quote": "Di\u00e1logo p\u00fablico sobre resili\u00eancia clim\u00e1tica e uso de recursos naturais",
-        "verified": true
+        "verified": false
       }
     ],
     "last_modified": null
@@ -1504,11 +1525,15 @@
     "last_modified": null
   },
   "https://deliberabrasil.org/sobre/": {
-    "checked": "2026-08-26",
+    "archive_checked": "2026-11-13",
+    "archive_sha256": "84ce355b99e17f390af681a4d28faedf5355b2698c58dd2d9b9dd9ce68062c35",
+    "archive_url": "http://web.archive.org/web/20261011040726/https://deliberabrasil.org/sobre/",
+    "checked": "2026-11-13",
     "document_sha256": "84ce355b99e17f390af681a4d28faedf5355b2698c58dd2d9b9dd9ce68062c35",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-11-13",
         "context": {
           "prefix": "elibera Brasil Como funciona? Nosso trabalho M\u00eddia e Publica\u00e7\u00f5es Gloss\u00e1rio O Delibera Brasil",
           "sha256": "7463aa298a7d3703f3c2e36ccc8e12b0f02ea4f7ebb2edd03e9c640eadb73f66",
@@ -1523,6 +1548,9 @@
     "last_modified": null
   },
   "https://demnext.substack.com/p/looking-back-moving-forward-democracynexts": {
+    "archive_checked": "2026-11-13",
+    "archive_sha256": "12a44e29b4d9691d455000ea2b5b2f62c10d6564a5a10280a28496c38cf83d8c",
+    "archive_url": "http://web.archive.org/web/20261113105758/https://demnext.substack.com/p/looking-back-moving-forward-democracynexts",
     "blocked": "HTTP_403",
     "blocked_since": "2026-09-04",
     "checked": "2026-08-26",
@@ -1651,12 +1679,15 @@
     "last_modified": null
   },
   "https://democracyincolour.org/democracy-in-colour-welcomes-court-ruling-upholding-racial-discrimination-finding-against-pauline-hanson/": {
-    "checked": "2026-08-29",
+    "archive_checked": "2026-11-13",
+    "archive_sha256": "baa0c9ae85f284d36f3ad5cba3a1559ef02b4e70f845bf2de0ede60bd50aaf95",
+    "archive_url": "http://web.archive.org/web/20261113105739/https://democracyincolour.org/democracy-in-colour-welcomes-court-ruling-upholding-racial-discrimination-finding-against-pauline-hanson/",
+    "checked": "2026-11-13",
     "document_sha256": "baa0c9ae85f284d36f3ad5cba3a1559ef02b4e70f845bf2de0ede60bd50aaf95",
     "etag": null,
     "evidence": [
       {
-        "checked": "2026-08-29",
+        "checked": "2026-11-13",
         "id": "d1357d9fe8039b617f39bfd51b2b5df9ef61105770137234c2ae5bcbe0fbcead",
         "quote": "Democracy in Colour welcomes the Federal Court\u2019s decision to uphold the racial discrimination finding against One Nation leader Pauline Hanson. ... The court dismissed Hanson\u2019s appeal on the ruling that found she breached the racial discrimination act against Greens Senator Mehreen Faruqi on social media in September 2022.",
         "verified": true
@@ -1853,15 +1884,19 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/2023_Israeli_judicial_reform_protests": {
-    "checked": "2026-08-26",
+    "archive_checked": "2026-11-13",
+    "archive_sha256": "771fdb230116762b3f6a6d3c638fc897c67e692469425e091bf2564d992f58c8",
+    "archive_url": "http://web.archive.org/web/20261104135048/https://en.wikipedia.org/wiki/2023_Israeli_judicial_reform_protests",
+    "checked": "2026-11-13",
     "document_sha256": "1d0b5d2379db7f96b9d27e898470ebbfb52a028b4e74425e7a4eb04df7cef9c2",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-11-13",
         "context": {
           "prefix": "re held on a weekly basis in Kaplan Street, alongside smaller protests in Jerusalem, Haifa, Beersheba, and other cities like Ness Ziona and Herzliya.",
-          "sha256": "9909cfdea0b2e969e6d4db5d6b7428d8493eb6dfa663b4e2a04ec8da6de4edc5",
-          "suffix": "Protests in other cities regularly attracted smaller numbers. === 13\u201325 February === On 8 February, the Chairman of the Knesset's Constitution, Law"
+          "sha256": "5b508744fb8c5a6df062c858f88292619dae66ad194c063d9c8349b3f8c205d2",
+          "suffix": "Protests in other cities regularly attracted smaller numbers. === 13 \u2013 25 February === On 8 February, the Chairman of the Knesset's Constitution, Law"
         },
         "id": "c0d189a42147cc187057e760addf8b55ccef6c9d6ec2135607ab3417dbf8fd17",
         "quote": "The Kaplan protests were regularly attended by numbers ranging from 60,000 to 150,000 people.",
@@ -1871,9 +1906,9 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/2024_Northern_Territory_general_election": {
-    "archive_checked": "2026-11-06",
-    "archive_sha256": "91e20feac9c769112405554c70abf75bb72c3500438dcd560d80999809354429",
-    "archive_url": "http://web.archive.org/web/20260830025406/https://en.wikipedia.org/wiki/2024_Northern_Territory_general_election",
+    "archive_checked": "2026-11-13",
+    "archive_sha256": "8021053db65557995fad71c513c11a8ea5f63b5863ecb22b92d2c1561898d99d",
+    "archive_url": "http://web.archive.org/web/20261030102717/https://en.wikipedia.org/wiki/2024_Northern_Territory_general_election",
     "blocked": "HTTP_429",
     "blocked_since": "2026-10-07",
     "checked": "2026-09-04",
@@ -2129,8 +2164,9 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/2026_Taiwanese_local_elections": {
-    "archive_checked": "2026-09-04",
-    "archive_url": "http://web.archive.org/web/20260824203633/https://en.wikipedia.org/wiki/2026_Taiwanese_local_elections",
+    "archive_checked": "2026-11-13",
+    "archive_sha256": "4a83807e659184f8d1e3c40ec88f6eebf90250820cb6f1f3d929d9a074d7ebcd",
+    "archive_url": "http://web.archive.org/web/20261107133530/https://en.wikipedia.org/wiki/2026_Taiwanese_local_elections",
     "blocked": "HTTP_429",
     "blocked_since": "2026-10-07",
     "checked": "2026-09-04",
@@ -2248,19 +2284,19 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/2027_French_presidential_election": {
-    "archive_checked": "2026-09-04",
-    "archive_url": "http://web.archive.org/web/20260825043542/https://en.wikipedia.org/wiki/2027_French_presidential_election",
-    "checked": "2026-09-04",
-    "document_sha256": "cf7ff33986fa509c6fae816f2fe79435b7f584a66d5a8598dd31b8e1e199a9b9",
+    "archive_checked": "2026-11-13",
+    "archive_url": "http://web.archive.org/web/20261113115820/https://en.wikipedia.org/wiki/2027_French_presidential_election",
+    "checked": "2026-11-13",
+    "document_sha256": "48895b259301635eefc0a9f91e6c30ddbf7d30722bac6ef260abd85b077d0d15",
     "etag": null,
     "evidence": [
       {
-        "checked": "2026-09-04",
+        "checked": "2026-11-13",
         "context": {
           "prefix": "",
-          "sha256": "01448f87c63901344aa12ca8a5c9f8133e489cff7149d739c03e01b11fcf7428",
-          "suffix": "The election may be held earlier under exceptional circumstances if the presidency falls vacant before then. Incumbent president Emmanuel Macron is",
-          "text": "Presidential elections are scheduled to be held in France on 18 April 2027, with a second round on 2 May if no candidate secures a majority vote. The election may be held earlier under exceptional circumstances if the presidency falls vacant before then. Incumbent president Emmanuel Macron is ineligible to stand, as the French constitution limits presidents to two consecutive terms, after which he may not serve again."
+          "sha256": "e2bac1b578263225b8d0cf496339c4d79a52dd52461fc49dc8a5849e553eff04",
+          "suffix": "The election may be held earlier under exceptional circumstances if the presidency falls vacant before then. Incumbent president Emmanuel Macron is i",
+          "text": "Presidential elections are scheduled to be held in France on 18 April 2027, with a second round on 2 May if no candidate secures a majority vote. The election may be held earlier under exceptional circumstances if the presidency falls vacant before then. Incumbent president Emmanuel Macron is ineligible to run, as the French constitution limits presidents to two consecutive terms."
         },
         "id": "dd50d5605a7987b7f05048749f5cea485e990f472ffcbb7514ec79a0d1eb7628",
         "quote": "Presidential elections are scheduled to be held in France on 18 April 2027, with a second round on 2 May if no candidate secures a majority vote.",
@@ -2313,7 +2349,7 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/2027_New_South_Wales_state_election": {
-    "archive_checked": "2026-11-06",
+    "archive_checked": "2026-11-13",
     "archive_sha256": "89b0ccfd3e86c236e8b3f0dd73005fc29371b6ad200187edc80c38f68a19c696",
     "archive_url": "http://web.archive.org/web/20260508215646/https://en.wikipedia.org/wiki/2027_New_South_Wales_state_election",
     "blocked": "HTTP_429",
@@ -2380,6 +2416,9 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/2028_Queensland_state_election": {
+    "archive_checked": "2026-11-13",
+    "archive_sha256": "219da7934e9ad16b9575f35262be4c5184eb020625195305e070349172357e02",
+    "archive_url": "http://web.archive.org/web/20260617071212/https://en.wikipedia.org/wiki/2028_Queensland_state_election",
     "blocked": "HTTP_429",
     "blocked_since": "2026-10-07",
     "checked": "2026-09-02",
@@ -2425,9 +2464,9 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/2029_Western_Australian_state_election": {
-    "archive_checked": "2026-11-06",
+    "archive_checked": "2026-11-13",
     "archive_sha256": "59bcf75f81ae03c478b0cec8466a497438cb591606eb02400dbae9932f36a4df",
-    "archive_url": "http://web.archive.org/web/20261010233945/https://en.wikipedia.org/wiki/2029_Western_Australian_state_election",
+    "archive_url": "http://web.archive.org/web/20261113115559/https://en.wikipedia.org/wiki/2029_Western_Australian_state_election",
     "blocked": "HTTP_429",
     "blocked_since": "2026-10-07",
     "checked": "2026-09-02",
@@ -2450,9 +2489,9 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/2030_South_Australian_state_election": {
-    "archive_checked": "2026-11-06",
+    "archive_checked": "2026-11-13",
     "archive_sha256": "7efff7fbbbfcfc1d08b60461f9bad1567dc0a2eb3a9e31a1ab1850d39d959195",
-    "archive_url": "http://web.archive.org/web/20261106113514/https://en.wikipedia.org/wiki/2030_South_Australian_state_election",
+    "archive_url": "http://web.archive.org/web/20261106113538/https://en.wikipedia.org/wiki/2030_South_Australian_state_election",
     "blocked": "HTTP_429",
     "blocked_since": "2026-10-07",
     "checked": "2026-09-02",
@@ -2496,9 +2535,9 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/Anti-Corruption_Foundation": {
-    "archive_checked": "2026-11-06",
+    "archive_checked": "2026-11-13",
     "archive_sha256": "f1792a8d6b5efb81ce3b6c7c74bdf2f220a6a075edeb4b76177f617521dbb703",
-    "archive_url": "http://web.archive.org/web/20261026192906/https://en.wikipedia.org/wiki/Anti-Corruption_Foundation",
+    "archive_url": "http://web.archive.org/web/20261031210856/https://en.wikipedia.org/wiki/Anti-Corruption_Foundation",
     "blocked": "HTTP_429",
     "blocked_since": "2026-08-29",
     "checked": "2026-08-29",
@@ -2557,8 +2596,9 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/Athenian_democracy": {
-    "archive_checked": "2026-11-06",
-    "archive_url": "http://web.archive.org/web/20261103080706/https://en.wikipedia.org/wiki/Athenian_democracy",
+    "archive_checked": "2026-11-13",
+    "archive_sha256": "c19f706b688d954714d9804a5f15c14e2692d4600396823c4424c5233cf0d072",
+    "archive_url": "http://web.archive.org/web/20261103080718/https://en.wikipedia.org/wiki/Athenian_democracy",
     "blocked": "HTTP_429",
     "blocked_since": "2026-08-22",
     "checked": "2026-08-22",
@@ -2731,6 +2771,9 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/Chinese_People%27s_Political_Consultative_Conference": {
+    "archive_checked": "2026-11-13",
+    "archive_sha256": "2d98b74519e76fbde7f53d5fb2d755c4686ab656ae51015911c80606a1b16462",
+    "archive_url": "http://web.archive.org/web/20261113105211/https://en.wikipedia.org/wiki/Chinese_People%27s_Political_Consultative_Conference",
     "blocked": "HTTP_429",
     "blocked_since": "2026-08-29",
     "checked": "2026-08-26",
@@ -2793,9 +2836,9 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/Confederation_of_Indigenous_Nationalities_of_Ecuador": {
-    "archive_checked": "2026-11-06",
+    "archive_checked": "2026-11-13",
     "archive_sha256": "f353bdb1de46fd1a0a6ff66fc63b8fd0f2e071fe2c0daf09de60ea7550d5c945",
-    "archive_url": "http://web.archive.org/web/20261106103641/https://en.wikipedia.org/wiki/Confederation_of_Indigenous_Nationalities_of_Ecuador",
+    "archive_url": "http://web.archive.org/web/20261106105420/https://en.wikipedia.org/wiki/Confederation_of_Indigenous_Nationalities_of_Ecuador",
     "blocked": "HTTP_429",
     "blocked_since": "2026-08-29",
     "checked": "2026-08-26",
@@ -2908,11 +2951,15 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/Democracy_Without_Borders": {
-    "checked": "2026-08-26",
+    "archive_checked": "2026-11-13",
+    "archive_sha256": "d13aaa888b17eeb44d9713fbd706ce39f686082b814486513c9b08b3419a8430",
+    "archive_url": "http://web.archive.org/web/20261113105819/https://en.wikipedia.org/wiki/Democracy_Without_Borders",
+    "checked": "2026-11-13",
     "document_sha256": "90c723bd05490b46952de0d505b503b3c49f5f5281b08e48e0cb8c2b3fcca8a6",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-11-13",
         "context": {
           "prefix": "rom around the world. In 2019, a Campaign for a UN World Citizens' Initiative was launched in collaboration with CIVICUS and Democracy International.",
           "sha256": "20484a6a663b7fb27343c34568273c3455145b78104461f4aaf7e4f8b8f8e779",
@@ -2924,6 +2971,7 @@
         "verified": true
       },
       {
+        "checked": "2026-11-13",
         "context": {
           "prefix": "omotion that spans across all levels, from the local to the global and includes the dimensions of representation and participation.\" The organisation",
           "sha256": "96d0de7205a91dd3637555edf1cf138a7361a8ca3be75ed00aa246fe82f97017",
@@ -2935,6 +2983,7 @@
         "verified": true
       },
       {
+        "checked": "2026-11-13",
         "context": {
           "prefix": "",
           "sha256": "96d0de7205a91dd3637555edf1cf138a7361a8ca3be75ed00aa246fe82f97017",
@@ -3031,7 +3080,7 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/Electoral_Institute_for_Sustainable_Democracy_in_Africa": {
-    "archive_checked": "2026-11-06",
+    "archive_checked": "2026-11-13",
     "archive_sha256": "d029c7e47e9bded12f6043369ae7ee2f04e302872f82258ceeada384613fc562",
     "archive_url": "http://web.archive.org/web/20260816152203/https://en.wikipedia.org/wiki/Electoral_Institute_for_Sustainable_Democracy_in_Africa",
     "blocked": "HTTP_429",
@@ -3277,6 +3326,9 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/G0v_movement": {
+    "archive_checked": "2026-11-13",
+    "archive_sha256": "5eabd4968bdd6c1482bbb7b6105ff9321646758d150957323180c6fe372addf0",
+    "archive_url": "http://web.archive.org/web/20260724141241/https://en.wikipedia.org/wiki/G0v_movement",
     "blocked": "HTTP_429",
     "blocked_since": "2026-08-22",
     "checked": "2026-08-22",
@@ -3297,11 +3349,14 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/Glen_Weyl": {
-    "checked": "2026-08-26",
+    "archive_checked": "2026-11-13",
+    "archive_url": "http://web.archive.org/web/20260821064239/https://en.wikipedia.org/wiki/Glen_Weyl",
+    "checked": "2026-11-13",
     "document_sha256": "cb9d9567efbcfc4bf5c5701a8e41138767300cb996ee846cb569b2acc34da649",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-11-13",
         "context": {
           "prefix": "\" that blends economics and computer science in much the way that digital economists blend them at tech companies. == Selected bibliography == \u2ffb \u6578\u4f4d",
           "sha256": "e30a7df50bb9d845fb9b2ec2ec30bcf228765789048ad46bc2823114e9708aed",
@@ -3313,11 +3368,13 @@
         "verified": true
       },
       {
+        "checked": "2026-11-13",
         "id": "380a3016f7cfcdcaa42eb30d881988d9ccb5fb5daad7fef3e92c231e0a683d71",
         "quote": "Eric Glen Weyl (born May 6, 1985)... is an American economist at Microsoft Research",
         "verified": true
       },
       {
+        "checked": "2026-11-13",
         "context": {
           "prefix": "Eric Glen Weyl (born May 6, 1985) is an American economist at Microsoft Research, and a",
           "sha256": "e1b6a96a2114c8bc26cb7db1d8a5480058ba9573e9279a02977c3fd5c53868c7",
@@ -3609,11 +3666,15 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/Israeli_occupation_of_the_West_Bank": {
-    "checked": "2026-08-26",
-    "document_sha256": "f41988163b5b7eac196a41081aca732b5471d8b54df15229e7adcb43cf2d8230",
+    "archive_checked": "2026-11-13",
+    "archive_sha256": "933c664f9ec12bf1ea6e738978107f18dfa7727eeaee531dfabc5484199a4d09",
+    "archive_url": "http://web.archive.org/web/20261104135045/https://en.wikipedia.org/wiki/Israeli_occupation_of_the_West_Bank",
+    "checked": "2026-11-13",
+    "document_sha256": "af4e4815e993f2788bba128c83bc12afcce2814afd3bef6a301f250f65320bbd",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-11-13",
         "id": "d5203641c47a34809071bda9524a2d1e401190d1f75588d639c19031b6da1b0d",
         "quote": "The West Bank, including East Jerusalem, has been under military occupation by Israel since 7 June 1967... Israel's occupation is now the longest in modern history.",
         "verified": true
@@ -3645,12 +3706,15 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/Janaagraha": {
-    "checked": "2026-08-29",
+    "archive_checked": "2026-11-13",
+    "archive_sha256": "57e10ec40f97b1f5fdde2123a698117ccfd9e3b938e0ef9ffabf2e943e1673f5",
+    "archive_url": "http://web.archive.org/web/20261113110725/https://en.wikipedia.org/wiki/Janaagraha",
+    "checked": "2026-11-13",
     "document_sha256": "aa91fca253f585210311e6256b178c2df823d05e5c9289b145c49847bb6ecc76",
     "etag": null,
     "evidence": [
       {
-        "checked": "2026-08-29",
+        "checked": "2026-11-13",
         "context": {
           "prefix": "Janaagraha Centre for Citizenship and Democracy is a Bengaluru-based non-profit working to improve the quality of life in India's cities and towns.",
           "sha256": "d6aa70e91fde60faa7f3e974b647221689066de26eb3d828feefd793518fd9a9",
@@ -3728,15 +3792,19 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/Legal_Consequences_arising_from_the_Policies_and_Practices_of_Israel_in_the_Occupied_Palestinian_Territory,_including_East_Jerusalem": {
-    "checked": "2026-08-26",
-    "document_sha256": "1d60358d149f4d3bc06e16693d9d7e4b08c9ecd09bf01614447b866ff19f2a2e",
+    "archive_checked": "2026-11-13",
+    "archive_sha256": "4e7cea1493d7e59a4f8ecddd2e875746b7a715d8a2096a78be359f4772fa0264",
+    "archive_url": "http://web.archive.org/web/20261105224628/https://en.wikipedia.org/wiki/Legal_Consequences_arising_from_the_Policies_and_Practices_of_Israel_in_the_Occupied_Palestinian_Territory,_including_East_Jerusalem",
+    "checked": "2026-11-13",
+    "document_sha256": "f43cde7b59b3a22bbdef7c1e990edfab547a174a5fa4a15706cb48f5b3e94702",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-11-13",
         "context": {
           "prefix": "determination have a direct impact on the legality of the continued presence of Israel, as an occupying Power, in the Occupied Palestinian Territory.",
-          "sha256": "a7c6f2b73f6f6e92c1d1d630aa63cc6397d2a1e9d02442700eed57a311854959",
-          "suffix": "The Court found that the Israeli\u2013Palestinian peace process did not prevent international law from applying to the situation. It declared that the Gen"
+          "sha256": "975dc1d440f2b85579b78124fedea67acc6e6f2f77780ca65988f3b6d20b176c",
+          "suffix": "The Court found that the Israeli \u2013 Palestinian peace process did not prevent international law from applying to the situation. It declared that the Gen"
         },
         "id": "e2f129d1b68d2a8c0f80e84927e0a4b5fbcc18ed5f905b97f3fede8f49464411",
         "quote": "The sustained abuse by Israel of its position as an occupying Power, through annexation and an assertion of permanent control over the Occupied Palestinian Territory and continued frustration of the right of the Palestinian people to self-determination, violates fundamental principles of international law and renders Israel's presence in the Occupied Palestinian Territory unlawful.",
@@ -3801,12 +3869,14 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/Lisa_Witter": {
-    "checked": "2026-09-16",
+    "archive_checked": "2026-11-13",
+    "archive_url": "http://web.archive.org/web/20251028002334/https://en.wikipedia.org/wiki/Lisa_Witter",
+    "checked": "2026-11-13",
     "document_sha256": "182cc9be4668758dfb19a06382242c367f787385ea46c483565134feefbb5c4d",
     "etag": null,
     "evidence": [
       {
-        "checked": "2026-09-16",
+        "checked": "2026-11-13",
         "context": {
           "prefix": "national advisory board for MomsRising.org, the Op-Ed Project, Vittana.org and the communications advisory council for Women for Women International.",
           "sha256": "4f9bcae8086380b4c25be63284c1aae115e36fa4db6803d0660000efbbe37318",
@@ -4040,12 +4110,14 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/Movement_for_a_Democratic_Society": {
-    "checked": "2026-08-29",
+    "archive_checked": "2026-11-13",
+    "archive_url": "http://web.archive.org/web/20260910193445/https://en.wikipedia.org/wiki/Movement_for_a_Democratic_Society",
+    "checked": "2026-11-13",
     "document_sha256": "6782844aa5036eb1e0983fae8038b5f46acd43a231b0308d7b35ec16cd4560e1",
     "etag": null,
     "evidence": [
       {
-        "checked": "2026-08-29",
+        "checked": "2026-11-13",
         "context": {
           "prefix": ": Tevgera Civaka Demokrat\u00eek, TEV-DEM; Arabic: \u062d\u0631\u0643\u0629 \u0627\u0644\u0645\u062c\u062a\u0645\u0639 \u0627\u0644\u062f\u064a\u0645\u0642\u0631\u0627\u0637\u064a; Classical Syriac: \u0719\u0718\u0725\u0710 \u0715\u071f\u0722\u072b\u0710 \u0715\u071d\u0721\u0729\u072a\u0710\u071b\u071d\u0710, romanized: Zaw'o d'Kensho Demoqra\u1e6doyo)",
           "sha256": "723407162fd857fad45f78285f40182125f7e4062780cce6fb8f02477a411989",
@@ -4242,6 +4314,9 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/OneVoice_Movement": {
+    "archive_checked": "2026-11-13",
+    "archive_sha256": "be362a2f76ecaffbb76156b2b58cb7fd31e30e5daf46616ad533b17f4df9c10f",
+    "archive_url": "http://web.archive.org/web/20261017031839/https://en.wikipedia.org/wiki/OneVoice_Movement",
     "blocked": "HTTP_429",
     "blocked_since": "2026-08-29",
     "checked": "2026-08-26",
@@ -4292,7 +4367,7 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/OpenAustralia_Foundation": {
-    "archive_checked": "2026-11-06",
+    "archive_checked": "2026-11-13",
     "archive_sha256": "90aaa593f3ea107c34fbaec4f46220e8276705985c9fabd504559ac8787a1897",
     "archive_url": "http://web.archive.org/web/20260821064652/https://en.wikipedia.org/wiki/OpenAustralia_Foundation",
     "blocked": "HTTP_429",
@@ -4415,11 +4490,15 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/People%27s_Solidarity_for_Participatory_Democracy": {
-    "checked": "2026-08-26",
+    "archive_checked": "2026-11-13",
+    "archive_sha256": "db409dc7a8ceb0ce8f3ed9d32de2197b85c73cf3839a1fd00c8098dc65bf52d8",
+    "archive_url": "http://web.archive.org/web/20260816160026/https://en.wikipedia.org/wiki/People%27s_Solidarity_for_Participatory_Democracy",
+    "checked": "2026-11-13",
     "document_sha256": "5629df9bf7f39983779fffe34213d18228ed454efd176260451608801cba00bd",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-11-13",
         "context": {
           "prefix": "People's Solidarity for Participatory Democracy (PSPD; Korean: \ucc38\uc5ec\uc5f0\ub300) is a South Korean non-governmental organization that",
           "sha256": "0ff2d8f901b699518ba73f0520217f13bc6f62013b9e829e074ba2acf779b10d",
@@ -4431,6 +4510,7 @@
         "verified": true
       },
       {
+        "checked": "2026-11-13",
         "context": {
           "prefix": "racy (PSPD; Korean: \ucc38\uc5ec\uc5f0\ub300) is a South Korean non-governmental organization that was established on 10 September 1994 with around 200 members. In 2004,",
           "sha256": "0ff2d8f901b699518ba73f0520217f13bc6f62013b9e829e074ba2acf779b10d",
@@ -4656,11 +4736,14 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/Reform_Act_1832": {
-    "checked": "2026-08-26",
-    "document_sha256": "3fe98d0049b591adbbf66aa36d3796bd5e384b1f181b2cb60984812e2b627d0f",
+    "archive_checked": "2026-11-13",
+    "archive_url": "http://web.archive.org/web/20261029053318/https://en.wikipedia.org/wiki/Reform_Act_1832",
+    "checked": "2026-11-13",
+    "document_sha256": "a4b0ce60d3065668e4ba381409307977bca2a941eddc7e44df4120c1d32ec656",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-11-13",
         "context": {
           "prefix": "England and Wales and to expand the franchise. The measure was brought forward by the Whig government of Prime Minister Charles Grey, 2nd Earl Grey.",
           "sha256": "4cc34da75b31107efa863f135646fdb6f3ccf0b01228ab98849703141d6e4795",
@@ -4668,7 +4751,7 @@
         },
         "id": "6c2f35db54c1c339960fee2796583cbaf44eae16600b2d03358c610f8b5df65d",
         "quote": "The legislation granted the right to vote to a broader segment of the male population by standardizing property qualifications, extending the franchise to small landowners, tenant farmers, shopkeepers, and all householders who paid a yearly rental of \u00a310 or more.",
-        "verified": true
+        "verified": false
       }
     ],
     "last_modified": null
@@ -4704,11 +4787,15 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/Ronaldo_Lemos": {
-    "checked": "2026-08-26",
+    "archive_checked": "2026-11-13",
+    "archive_sha256": "8178ce730d869b5ddc3ee21d1d4f3cd55d5f99cd38f2e25deb546514f9c65360",
+    "archive_url": "http://web.archive.org/web/20261113110648/https://en.wikipedia.org/wiki/Ronaldo_Lemos",
+    "checked": "2026-11-13",
     "document_sha256": "1e40e250c4b6fc49fed1367955383e922d17dce8bd95ffef47c25d53c5d7d2c6",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-11-13",
         "context": {
           "prefix": "vermundo, in partnership with Hermano Vianna, Al\u00ea Youssef, and Jos\u00e9 Marcelo Zacchi, a project for which he received the Prix Ars Electronica in 2007.",
           "sha256": "164c850003ed7f3b32be587f7c9ed9994ea0ecf5aa273781b4977d3e12764662",
@@ -4767,11 +4854,15 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/Team_Mirai": {
-    "checked": "2026-08-26",
-    "document_sha256": "f508680428669cc4f5c49622f7685f5c5ca00703d22b25279ffa8fb1a8c278ed",
+    "archive_checked": "2026-11-13",
+    "archive_sha256": "04e81c744984917a55fa18adadca2f316c6a6bb40be2139722acf2dfaa4b67f5",
+    "archive_url": "http://web.archive.org/web/20261113112311/https://en.wikipedia.org/wiki/Team_Mirai",
+    "checked": "2026-11-13",
+    "document_sha256": "8d2e0edfb99ededd86c96f7855b2976f2894ac4ccd3d517da0ab16690d15bb38",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-11-13",
         "context": {
           "prefix": "\"Digital Democracy\" and aims to implement technology to ensure \"no one is left behind.\" In the 2025 Japanese House of Councillors election, the party",
           "sha256": "67a18f5836f67fbc7e86591f9c4c8cc03ddf4502dda630f7d4a53364b38d1527",
@@ -4783,6 +4874,7 @@
         "verified": true
       },
       {
+        "checked": "2026-11-13",
         "context": {
           "prefix": "is a political party in Japan founded by AI engineer Takahiro Anno. The party supports E-democracy and has been described as technocratic. The party",
           "sha256": "67a18f5836f67fbc7e86591f9c4c8cc03ddf4502dda630f7d4a53364b38d1527",
@@ -4794,6 +4886,7 @@
         "verified": true
       },
       {
+        "checked": "2026-11-13",
         "context": {
           "prefix": "House of Councillors election, the party won its first seat in the Diet. In the subsequent 2026 Japanese general election, it made significant gains,",
           "sha256": "67a18f5836f67fbc7e86591f9c4c8cc03ddf4502dda630f7d4a53364b38d1527",
@@ -4808,12 +4901,15 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/The_Economist_Democracy_Index": {
-    "checked": "2026-09-16",
-    "document_sha256": "fc2b41eb436ceb3e837de3dd36da5daaee4f2b9486052ef2ddc2becf17dcf9a9",
+    "archive_checked": "2026-11-13",
+    "archive_sha256": "c16316be843bf4a0c40114e1c4696a85e745cc65010408736fd0fee4818fa042",
+    "archive_url": "http://web.archive.org/web/20261113105842/https://en.wikipedia.org/wiki/The_Economist_Democracy_Index",
+    "checked": "2026-11-13",
+    "document_sha256": "c875f1234cdda2ad56b34308b3926471bcd013e3efd8c64478c436503f50738c",
     "etag": null,
     "evidence": [
       {
-        "checked": "2026-09-16",
+        "checked": "2026-11-13",
         "context": {
           "prefix": "g, the index categorizes each country into one of four regime types: full democracies, flawed democracies, hybrid regimes, and authoritarian regimes.",
           "sha256": "9dce1b567f1ea419562796d24e90cee34b114377548a61bafd6c6a0ad6d1c66a",
@@ -4830,7 +4926,7 @@
         "verified": false
       },
       {
-        "checked": "2026-09-16",
+        "checked": "2026-11-13",
         "context": {
           "prefix": "",
           "sha256": "2cc7bac4966fe9de2f556b751c599b3b3761fa16eb163fae7d2a2ced217ade17",
@@ -4844,7 +4940,7 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/The_Helen_Clark_Foundation": {
-    "archive_checked": "2026-11-06",
+    "archive_checked": "2026-11-13",
     "archive_sha256": "8fb6d6b360a07a6b1d3914129bbb2194511741087f3b73202390bf9b617930aa",
     "archive_url": "http://web.archive.org/web/20261106104906/https://en.wikipedia.org/wiki/The_Helen_Clark_Foundation",
     "blocked": "HTTP_429",
@@ -4940,17 +5036,20 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/V-Dem_Institute": {
-    "checked": "2026-09-16",
-    "document_sha256": "118b0a442d1b35c6f62985655c796c7680ac4539c56fcafb46c56d96e8463106",
+    "archive_checked": "2026-11-13",
+    "archive_sha256": "1ae63c6270086a3d45694e162ce771ef8f384e9102b53e8de4746a9c524b29a5",
+    "archive_url": "http://web.archive.org/web/20261113112555/https://en.wikipedia.org/wiki/V-Dem_Institute",
+    "checked": "2026-11-13",
+    "document_sha256": "7dcc241d81feecc5afeae7181f18c0609e2055349059860faffe45b2df70b45c",
     "etag": null,
     "evidence": [
       {
-        "checked": "2026-09-16",
+        "checked": "2026-11-13",
         "context": {
           "prefix": "",
-          "sha256": "1c127e8985ec482edcb79a27d04f6acc766fd5ad0df2d1f99af1e70132d1f13b",
-          "suffix": "V-Dem defines democracy using seven key principles (electoral, liberal, participatory, deliberative, egalitarian, majoritarian, and consensual) that",
-          "text": "The V-Dem Institute (an abbreviation of Varieties of Democracy Institute), founded by Staffan I. Lindberg in 2014, is an independent research institute that serves as the headquarters of the V-Dem Project, a database that seeks to conceptualize and measure democracy. V-Dem defines democracy using seven key principles (electoral, liberal, participatory, deliberative, egalitarian, majoritarian, and consensual) that emphasize the concept of \"rule of the people\". As part of its work, it publishes a dataset known as the V-Dem Democracy Indices that is based on its key principles. The headquarters of the project is based at the department of political science, University of Gothenburg, Sweden."
+          "sha256": "b8345fbd25306f6a8133d858499a4b0105569102dadfb0d9de81554de1b83ac9",
+          "suffix": "V-Dem defines \"democracy\" using seven key principles (electoral, liberal, participatory, deliberative, egalitarian, majoritarian, and consensual) whi",
+          "text": "The V-Dem Institute (an abbreviation of Varieties of Democracy Institute), founded by Staffan I. Lindberg in 2014, is an independent research institute that serves as the headquarters of the V-Dem Project, a database that seeks to conceptualize and measure democracy. V-Dem defines \"democracy\" using seven key principles (electoral, liberal, participatory, deliberative, egalitarian, majoritarian, and consensual) which emphasize the concept of \"rule by the people\". As part of its work, it publishes a dataset known as the V-Dem Democracy Indices that is based on its key principles. The headquarters of the project is based at the department of political science, University of Gothenburg, Sweden."
         },
         "id": "3516065ed74a6274a8104ad91bbce597a4cb7ab15b9896b4ea6d48742dfd99f0",
         "quote": "The V-Dem Institute (an abbreviation of Varieties of Democracy Institute), founded by Staffan I. Lindberg in 2014, is an independent research institute that serves as the headquarters of the V-Dem Project, a database that seeks to conceptualize and measure democracy.",
@@ -4960,9 +5059,9 @@
     "last_modified": null
   },
   "https://en.wikipedia.org/wiki/Vietnam_Fatherland_Front": {
-    "archive_checked": "2026-11-06",
+    "archive_checked": "2026-11-13",
     "archive_sha256": "58cc4488b75ae9136fb95a5e3abf3f1f00580629a494e3247777fb8b2897995d",
-    "archive_url": "http://web.archive.org/web/20261023085317/https://en.wikipedia.org/wiki/Vietnam_Fatherland_Front",
+    "archive_url": "http://web.archive.org/web/20261113112705/https://en.wikipedia.org/wiki/Vietnam_Fatherland_Front",
     "blocked": "HTTP_429",
     "blocked_since": "2026-08-29",
     "checked": "2026-08-26",
@@ -5022,11 +5121,14 @@
     "last_modified": null
   },
   "https://enlacezapatista.ezln.org.mx/2013/07/18/nuevas-fechas-para-la-escuelita-informacion-de-videoconferencias-y-de-otras-cosas/": {
-    "checked": "2026-08-26",
-    "document_sha256": "3fa0f792e39069abfbad70b629a8a3a474de3b14203deb337e509e5430bea7bc",
+    "archive_checked": "2026-11-13",
+    "archive_url": "http://web.archive.org/web/20261113104706/https://enlacezapatista.ezln.org.mx/2013/07/18/nuevas-fechas-para-la-escuelita-informacion-de-videoconferencias-y-de-otras-cosas/",
+    "checked": "2026-11-13",
+    "document_sha256": "21e25dd706e4c83f567be286e53efdd389c54927e3d7302b28c538c8044484de",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-11-13",
         "context": {
           "prefix": "stro. Luego les pasamos el programa. Tercero.- Queremos recordarles que, para la primera vuelta de la escuelita, en agosto de este a\u00f1o: .-",
           "sha256": "d8f4d8a58e58232ab06a247cc2f32aff747c6280665e4b18f3b1da88124b2336",
@@ -5041,12 +5143,15 @@
     "last_modified": null
   },
   "https://es.wikipedia.org/wiki/Transparencia_Internacional#Transparencia_por_Colombia:~:text=Transparencia%20por%20Colombia%2C%20la%20Delegaci%C3%B3n%20Nacional%20de%20Transparencia%20Internacional%20en%20Colombia%2C%20surge%20en%201998": {
-    "checked": "2026-08-29",
+    "archive_checked": "2026-11-13",
+    "archive_sha256": "5895ec73f3610969b255374fe36066b0dc5e299eaeeefaf7119f5d898ce1516b",
+    "archive_url": "http://web.archive.org/web/20261113112522/https://es.wikipedia.org/wiki/Transparencia_Internacional",
+    "checked": "2026-11-13",
     "document_sha256": "8d0794ce4e58a153a04991ac5cc3725f216805fa1c4d57bd4411f9c300651a59",
     "etag": null,
     "evidence": [
       {
-        "checked": "2026-08-29",
+        "checked": "2026-11-13",
         "context": {
           "prefix": "idad de los Programas Sociales, a trav\u00e9s del cual las dependencias federales y estatales rinden cuentas de sus programas sociales. === Colombia ===",
           "sha256": "68b301d6f8259e0aadf888ae3ca1146e4a93d73682dd868ce3f0ae8314758f69",
@@ -5122,7 +5227,7 @@
     "last_modified": null
   },
   "https://events.humanitix.com/citizen-assemblies-policy-without-politics-national-conference": {
-    "archive_checked": "2026-11-06",
+    "archive_checked": "2026-11-13",
     "archive_sha256": "d42d2147c53e458aaf29a26ac5fad13890338cf81de02fb22b7454c3e9162c0d",
     "archive_url": "http://web.archive.org/web/20261023082505/https://events.humanitix.com/citizen-assemblies-policy-without-politics-national-conference",
     "blocked": "HTTP_403",
@@ -5142,16 +5247,16 @@
     "blocked_since": "2026-10-02"
   },
   "https://events.humanitix.com/international-day-of-democracy": {
-    "archive_checked": "2026-11-06",
+    "archive_checked": "2026-11-13",
     "archive_sha256": "323e738d569099965f320d177b9e4bab20add10d4f53fff246b4401c95445bd2",
-    "archive_url": "http://web.archive.org/web/20261106103138/https://events.humanitix.com/international-day-of-democracy",
+    "archive_url": "http://web.archive.org/web/20261113104151/https://events.humanitix.com/international-day-of-democracy",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-25"
   },
   "https://events.humanitix.com/protecting-victoria-s-democracy-ahead-of-state-s-largest-ever-election": {
-    "archive_checked": "2026-11-06",
-    "archive_sha256": "cca6b2ff197c43bc28a330c0ea6fa8af26857fd66b71173709f7f2397991fb69",
-    "archive_url": "http://web.archive.org/web/20261106110815/https://events.humanitix.com/protecting-victoria-s-democracy-ahead-of-state-s-largest-ever-election",
+    "archive_checked": "2026-11-13",
+    "archive_sha256": "40b3c617f6135dad393de77991518139cc0464b6b41ef9e16c9e0b6ff208690c",
+    "archive_url": "http://web.archive.org/web/20261113112630/https://events.humanitix.com/protecting-victoria-s-democracy-ahead-of-state-s-largest-ever-election",
     "blocked": "HTTP_403",
     "blocked_since": "2026-09-17"
   },
@@ -5241,6 +5346,9 @@
     "last_modified": null
   },
   "https://fathomjournal.org/darkenu-keeping-the-dream-of-israel-alive/": {
+    "archive_checked": "2026-11-13",
+    "archive_sha256": "103cb592ae0bc4ad96d9660cff7dea74e94d419a666d11a447cbf1d59f58e92d",
+    "archive_url": "http://web.archive.org/web/20260410171149/https://fathomjournal.org/darkenu-keeping-the-dream-of-israel-alive/",
     "blocked": "HTTP_403",
     "blocked_since": "2026-09-04",
     "checked": "2026-08-29",
@@ -5415,33 +5523,39 @@
     "last_modified": null
   },
   "https://finance.yahoo.com/news/blockchain-voting-platform-horizon-state-140552054.html": {
-    "checked": "2026-08-26",
-    "document_sha256": "0d95abd1c4da713ac574dccaa269df31dc1e3a3a8ed3671c0b949bd3b53d58ba",
-    "etag": "\"1lh8h1b\"",
+    "archive_checked": "2026-11-13",
+    "archive_sha256": "15b5dc18f3e61b77fd1b9bbfba72752497071581bf8ffd1e4d189223cfc632ef",
+    "archive_url": "http://web.archive.org/web/20260821045806/https://finance.yahoo.com/news/blockchain-voting-platform-horizon-state-140552054.html",
+    "checked": "2026-11-13",
+    "document_sha256": "bf0fa8de85e21a417882d68b3679c8b45d8956099793e6050d276dead28903ad",
+    "etag": "\"1f0pkah\"",
     "evidence": [
       {
+        "checked": "2026-11-13",
         "context": {
           "prefix": "to reach a settlement would involve \"an eye-watering expense [that] will see the business become insolvent, and ultimately force its closure.\"",
-          "sha256": "80e1ce96c5e662c909a53d706b6342ea8229a87f62c92ff8bb1f063cb55c0ed8",
-          "suffix": "\u2013and it appeared to be making steady progress. In February 2019, the South Australian government used Horizon State to run a public election for the r",
-          "text": "Co-founded in 2017 by Jamie Skella and Nimo Naamani, Horizon State attempted to transform the voting process in Australia and New Zealand using blockchain\u2013and it appeared to be making steady progress. In February 2019, the South Australian government used Horizon State to run a public election for the recreational fishing advisory council."
+          "sha256": "c98e3c6865047f8d2e789bc4393b0ebbe193c6ba1cea5b59c9c71b9d54f34f60",
+          "suffix": "\u2013 and it appeared to be making steady progress. In February 2019, the South Australian government used Horizon State to run a public election for the r",
+          "text": "Co-founded in 2017 by Jamie Skella and Nimo Naamani, Horizon State attempted to transform the voting process in Australia and New Zealand using blockchain \u2013 and it appeared to be making steady progress. In February 2019, the South Australian government used Horizon State to run a public election for the recreational fishing advisory council."
         },
         "id": "22b1e02513c292360803ac5655c367bc33603a705b0f1f39c0132e880d22803b",
         "quote": "Co-founded in 2017 by Jamie Skella and Nimo Naamani, Horizon State attempted to transform the voting process in Australia and New Zealand using blockchain",
         "verified": true
       },
       {
+        "checked": "2026-11-13",
         "context": {
-          "prefix": ", Horizon State attempted to transform the voting process in Australia and New Zealand using blockchain\u2013and it appeared to be making steady progress.",
-          "sha256": "80e1ce96c5e662c909a53d706b6342ea8229a87f62c92ff8bb1f063cb55c0ed8",
+          "prefix": ", Horizon State attempted to transform the voting process in Australia and New Zealand using blockchain \u2013 and it appeared to be making steady progress.",
+          "sha256": "c98e3c6865047f8d2e789bc4393b0ebbe193c6ba1cea5b59c9c71b9d54f34f60",
           "suffix": "However, the project had grown quiet over the past twelve months, leading one Redditor to criticize the company for, \"the lack of p",
-          "text": "Co-founded in 2017 by Jamie Skella and Nimo Naamani, Horizon State attempted to transform the voting process in Australia and New Zealand using blockchain\u2013and it appeared to be making steady progress. In February 2019, the South Australian government used Horizon State to run a public election for the recreational fishing advisory council."
+          "text": "Co-founded in 2017 by Jamie Skella and Nimo Naamani, Horizon State attempted to transform the voting process in Australia and New Zealand using blockchain \u2013 and it appeared to be making steady progress. In February 2019, the South Australian government used Horizon State to run a public election for the recreational fishing advisory council."
         },
         "id": "62372c547988d3ef264c216577151b7037be59ec6aa677e02729f7f2150a382e",
         "quote": "In February 2019, the South Australian government used Horizon State to run a public election for the recreational fishing advisory council.",
         "verified": true
       },
       {
+        "checked": "2026-11-13",
         "context": {
           "prefix": "statement reads. The statement adds that the costs to challenge the case and a potential mediation process to reach a settlement would involve \"",
           "sha256": "d725a235edf5624ac75fe73fd63a5c3b77ca8ff9f4d45bda693544d7b8380af4",
@@ -5467,9 +5581,9 @@
     "last_modified": "Thu, 27 Nov 2025 19:42:57 GMT"
   },
   "https://focusweb.org/press-statement-social-movements-united-in-defiance-of-false-solutions-being-negotiated-at-paris-cop/": {
-    "archive_checked": "2026-11-06",
+    "archive_checked": "2026-11-13",
     "archive_sha256": "e99a27d832e5b8ef087def91799d7b6b29c05e6e204ff5e16d36b1c02a280006",
-    "archive_url": "http://web.archive.org/web/20261106104629/https://focusweb.org/press-statement-social-movements-united-in-defiance-of-false-solutions-being-negotiated-at-paris-cop/",
+    "archive_url": "http://web.archive.org/web/20261113110221/https://focusweb.org/press-statement-social-movements-united-in-defiance-of-false-solutions-being-negotiated-at-paris-cop/",
     "blocked": "HTTP_403",
     "blocked_since": "2026-09-04",
     "checked": "2026-08-26",
@@ -5495,9 +5609,9 @@
     "blocked_since": "2026-08-29"
   },
   "https://foro.org.co/quienes-somos/": {
-    "archive_checked": "2026-11-06",
+    "archive_checked": "2026-11-13",
     "archive_sha256": "788f956e08755fcc769919707b228029f07a622c51c0be616ea662eabd5e4d34",
-    "archive_url": "http://web.archive.org/web/20261023083420/https://foro.org.co/quienes-somos/",
+    "archive_url": "http://web.archive.org/web/20261113110144/https://foro.org.co/quienes-somos/",
     "blocked": "ROBOTS_DISALLOWED",
     "blocked_since": "2026-08-20",
     "evidence": [
@@ -5516,7 +5630,7 @@
     "manual_checked": "2026-08-22"
   },
   "https://forum.effectivealtruism.org/posts/qfDeCGxBTFhJANAWm/a-new-x-risk-factor-brain-computer-interfaces-1": {
-    "archive_checked": "2026-11-06",
+    "archive_checked": "2026-11-13",
     "archive_sha256": "7ecadc17c78070f339f3456b4fcadabc33d9fc82b30939f0f361288fb5bba234",
     "archive_url": "http://web.archive.org/web/20260711083630/https://forum.effectivealtruism.org/posts/qfDeCGxBTFhJANAWm/a-new-x-risk-factor-brain-computer-interfaces-1",
     "blocked": "HTTP_403",
@@ -5641,11 +5755,15 @@
     "last_modified": null
   },
   "https://glenweyl.com/radicalxchange/": {
-    "checked": "2026-08-26",
+    "archive_checked": "2026-11-13",
+    "archive_sha256": "ff6ad7427d6c213b4c8e6c28e44f4011b095d93080e7d8f859db1e39ee84fe0d",
+    "archive_url": "http://web.archive.org/web/20260817141324/https://glenweyl.com/radicalxchange/",
+    "checked": "2026-11-13",
     "document_sha256": "ff6ad7427d6c213b4c8e6c28e44f4011b095d93080e7d8f859db1e39ee84fe0d",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-11-13",
         "context": {
           "prefix": "Foundation (RxC) is a global movement for next-generation political economies",
           "sha256": "a010f2e8072c84a697d2cd73667f7a7b9d4436b8e6a29df63775be7e70d14445",
@@ -5680,7 +5798,7 @@
     "last_modified": null
   },
   "https://governancehubafrica.org/about": {
-    "archive_checked": "2026-11-06",
+    "archive_checked": "2026-11-13",
     "archive_sha256": "edc89330b44559a4420e2f73c682cbb0c2347ff8eebb08d527c11cb8894df32b",
     "archive_url": "http://web.archive.org/web/20261106104848/https://governancehubafrica.org/about",
     "checked": "2026-08-21",
@@ -5930,11 +6048,15 @@
     "last_modified": "Fri, 16 Oct 2026 05:07:27 GMT"
   },
   "https://greens.org.au/news/media-release/nacc-bill-passes-senate-historic-vote-critical-greens-amends-integrity": {
-    "checked": "2026-08-26",
-    "document_sha256": "ae2a91272ae39fedb66bc3aa4054ff25220461dff5f71b92d0e736117a7f2713",
-    "etag": "W/\"1787742744\"",
+    "archive_checked": "2026-11-13",
+    "archive_sha256": "7c86473f88581baeec7c19e71ccbe3227b5f81399325d203d723d3cf0859fd9e",
+    "archive_url": "http://web.archive.org/web/20261113104322/https://greens.org.au/news/media-release/nacc-bill-passes-senate-historic-vote-critical-greens-amends-integrity",
+    "checked": "2026-11-13",
+    "document_sha256": "7c86473f88581baeec7c19e71ccbe3227b5f81399325d203d723d3cf0859fd9e",
+    "etag": "W/\"1794423632\"",
     "evidence": [
       {
+        "checked": "2026-11-13",
         "context": {
           "prefix": "e National Anti-Corruption Bill has passed the Senate with broad cross party support and critical Greens amendments that protect its integrity.",
           "sha256": "951a88c3c586ea7896ba19abf94b4c93d104ebca58566ef33dc93d6ef775f6f8",
@@ -5946,7 +6068,7 @@
         "verified": true
       }
     ],
-    "last_modified": "Wed, 26 Aug 2026 11:12:24 GMT"
+    "last_modified": "Wed, 11 Nov 2026 19:00:32 GMT"
   },
   "https://gumilla.org/tenemos-historia/": {
     "checked": "2026-08-17",
@@ -5994,7 +6116,7 @@
     "last_modified": null
   },
   "https://home.treasury.gov/news/press-releases/sb0603": {
-    "archive_checked": "2026-11-06",
+    "archive_checked": "2026-11-13",
     "archive_sha256": "145895584f98606a46a0fd88ecde0760a631e7003e5ee638727962b714995a92",
     "archive_url": "http://web.archive.org/web/20261101233104/https://home.treasury.gov/news/press-releases/sb0603",
     "blocked": "ROBOTS_DISALLOWED",
@@ -6204,7 +6326,7 @@
     "last_modified": "Thu, 20 Aug 2026 11:47:41 GMT"
   },
   "https://journals.sagepub.com/doi/10.1177/20539517241296038": {
-    "archive_checked": "2026-11-06",
+    "archive_checked": "2026-11-13",
     "archive_sha256": "42b45756c204a481e2aad9ba107e8749e6b8c9283dc26571083d9b3123a4c2a7",
     "archive_url": "http://web.archive.org/web/20260904075947/https://journals.sagepub.com/doi/10.1177/20539517241296038",
     "blocked": "HTTP_403",
@@ -6266,7 +6388,7 @@
     "last_modified": null
   },
   "https://leftfootforward.org/2025/11/everything-you-need-to-know-about-your-partys-founding-conference/": {
-    "archive_checked": "2026-11-06",
+    "archive_checked": "2026-11-13",
     "archive_sha256": "194fe402b51901df005259aa864f2c89b266e2777de7b591c9f225869013de5c",
     "archive_url": "http://web.archive.org/web/20261106111025/https://leftfootforward.org/2025/11/everything-you-need-to-know-about-your-partys-founding-conference/",
     "blocked": "HTTP_403",
@@ -6291,11 +6413,14 @@
     "last_modified": "Sat, 29 Aug 2026 02:21:46 GMT"
   },
   "https://liqd.net/en/projects/meinberlin/": {
-    "checked": "2026-08-26",
-    "document_sha256": "5d3233ee8e4a3136a388b6b8561db16a247f07ebbe157cc5a58ef28b2e6405b9",
+    "archive_checked": "2026-11-13",
+    "archive_url": "http://web.archive.org/web/20260821050722/https://liqd.net/en/projects/meinberlin/",
+    "checked": "2026-11-13",
+    "document_sha256": "108ca88c007a4d83cf88c71da437f8d571e3b816a515a0204d180aeafb7ee0c5",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-11-13",
         "context": {
           "prefix": "year: since 2014 users: ca. 45.000 partners: Regierender B\u00fcrgermeister von Berlin - Senatskanzlei",
           "sha256": "b5fd40a2d4d8c76c1d10484b84b69769d4c016b3e95c3bc2849e358c46f05efb",
@@ -6310,11 +6435,14 @@
     "last_modified": null
   },
   "https://liqd.net/en/transparenz/": {
-    "checked": "2026-08-26",
-    "document_sha256": "20105c98d90b97352c70cc6c5b2ab45785361a3ac2a46ce2c9c04f5cd833b82a",
+    "archive_checked": "2026-11-13",
+    "archive_url": "http://web.archive.org/web/20260816153931/https://liqd.net/en/transparenz/",
+    "checked": "2026-11-13",
+    "document_sha256": "c534edf6d72e691b3ba588774cedb992eb9f72149722607e863b6dcef8f60b95",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-11-13",
         "context": {
           "prefix": "Anfragen zum Thema Transparenz und Finanzen zust\u00e4ndige Person: Moritz Ritter m.ritter@liqd.net Tel.: +49 30-62933553-7",
           "sha256": "d57608b88e2c6d9b5e113c0a7fc1b6873cd230617a0f64c41e7251c0f114ae0f",
@@ -6404,13 +6532,17 @@
     "last_modified": null
   },
   "https://mecouncil.org/blog_posts/syria-sdf-integration-agreement-2026-analysis/": {
-    "checked": "2026-08-26",
-    "document_sha256": "1d2826b64cec2c38a21b9ce957d44cbda69ee1994393910a29cc4bfc198c916c",
+    "archive_checked": "2026-11-13",
+    "archive_sha256": "6c893cd630ab7ba70b7fba6293ab4733040b1203eb0f78978ddceeaaa6fb2579",
+    "archive_url": "http://web.archive.org/web/20260821062148/https://mecouncil.org/blog_posts/syria-sdf-integration-agreement-2026-analysis/",
+    "checked": "2026-11-13",
+    "document_sha256": "b9d8c256c31b0a3ac95874c4308ba751e07f3b3be5f3c962d5a41e5302131886",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-11-13",
         "context": {
-          "prefix": "nities globally through protests and mobilization\u2014reinforced collective visibility and bargaining resilience. Against this precarious backdrop,",
+          "prefix": "nities globally through protests and mobilization \u2014 reinforced collective visibility and bargaining resilience. Against this precarious backdrop,",
           "sha256": "1f0c876667953d74ec4331430cf82fd4c39185692e748cff87c98d6acf34f633",
           "suffix": "The latest deal halts hostilities, withdraws forces from frontlines, and deploys Interior Ministry security units to Hasakah and Qamishli, with local",
           "text": "Against this precarious backdrop, the two sides announced a comprehensive agreement on January 30 to stabilize the ceasefire and launch phased integration. The latest deal halts hostilities, withdraws forces from frontlines, and deploys Interior Ministry security units to Hasakah and Qamishli, with local Asayish forces integrated into state structures. Militarily, select SDF units are reorganized under Syrian command, while heavy weapons, borders, crossings, oil fields and main roads transfer to state control. Administratively, autonomous institutions are to merge into state bodies, with civilian staff retained. The agreement also commits to settling Kurdish civil and educational rights, facilitating returns, and jointly managing crossings and airports. This deal represents a negotiated resolution to the deadlock, incorporating concessions from both sides while prioritizing Syrian sovereignty."
@@ -6476,11 +6608,15 @@
     "last_modified": null
   },
   "https://mieuxvoter.fr/en/qui-sommes-nous": {
-    "checked": "2026-08-26",
-    "document_sha256": "600a788ecfc8c60487027ad119087113ff3474daeef8a7f434c776a784aa3abe",
-    "etag": "\"33bee88ec134c9c3338c0a1bb210d432-ssl-df\"",
+    "archive_checked": "2026-11-13",
+    "archive_sha256": "600a788ecfc8c60487027ad119087113ff3474daeef8a7f434c776a784aa3abe",
+    "archive_url": "http://web.archive.org/web/20260816154437/https://mieuxvoter.fr/en/qui-sommes-nous",
+    "checked": "2026-11-13",
+    "document_sha256": "574e673f4fa4a2f769f28d0b63863db0b3576bf45962637248854c8efacad5c3",
+    "etag": "W/\"47b999ddc41c9e9a60711e09bd075bcd-ssl\"",
     "evidence": [
       {
+        "checked": "2026-11-13",
         "context": {
           "prefix": "Suscribe to our newsletter Donate The majority judgement Who are we? News Contact us",
           "sha256": "c4ba1bd2dd8a0e35775b88bb7f4b583e8ef3b519046c4e1974ed4bb8932c6c6a",
@@ -6495,11 +6631,15 @@
     "last_modified": null
   },
   "https://mosaiclab.com.au/case-study-1-participatory-budgeting": {
-    "checked": "2026-08-26",
+    "archive_checked": "2026-11-13",
+    "archive_sha256": "727db2ce2c974962c6396baf12e48bb88c03b81f3ecbe7ba12290fd9c8a7f308",
+    "archive_url": "http://web.archive.org/web/20261113111238/https://mosaiclab.com.au/case-study-1-participatory-budgeting",
+    "checked": "2026-11-13",
     "document_sha256": "727db2ce2c974962c6396baf12e48bb88c03b81f3ecbe7ba12290fd9c8a7f308",
-    "etag": "W/\"d370490a774e03e6642bf6a6e1490f26\"",
+    "etag": "W/\"011699b1fe7afebc5f50cd59bf469467\"",
     "evidence": [
       {
+        "checked": "2026-11-13",
         "context": {
           "prefix": "n preparing its first 10-year financial plan, the City of Melbourne decided to seek the advice of its community by way of a 43 member People\u2019s Panel.",
           "sha256": "b490089bd0b75e5027d5f1aeae3abb6318135582df1c72878b7c5e3710959b3c",
@@ -6678,11 +6818,12 @@
     "last_modified": null
   },
   "https://mzalendo.com/about/our-work/": {
-    "checked": "2026-08-25",
-    "document_sha256": "9497b0128605f93df0db146d2d13fe8a1f92d6ad4816ff556da4525a53854c44",
+    "checked": "2026-11-13",
+    "document_sha256": "53ac0676e4972556b036161b254663275c0371c7b59ac14f3a6f04605ab59694",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-11-13",
         "context": {
           "prefix": "of virtual and physical platforms. 6. Social media amplification + of public hearings or key debates in Parliament. 7.",
           "sha256": "c268e48efdc5d52aa800b3ed3f67b9dcfa95643cedd8180e43da97a46711a6cd",
@@ -6697,15 +6838,19 @@
     "last_modified": null
   },
   "https://mzalendo.com/democracy-tools/bonga/": {
-    "checked": "2026-08-25",
-    "document_sha256": "a8fabfba4957bd258f788a5a30a7d0230df793948aa8a6bd3ca116474457d072",
+    "archive_checked": "2026-11-13",
+    "archive_sha256": "897ce1fa59b3e536228645a44403b50975209db482c5364dc5d15087abe843b0",
+    "archive_url": "http://web.archive.org/web/20260516113103/https://mzalendo.com/democracy-tools/bonga/",
+    "checked": "2026-11-13",
+    "document_sha256": "3cca83dd5a12e734dd054225a17b9f1e8fc5a052b79826df9937bf42bb3fe9c4",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-11-13",
         "context": {
-          "prefix": "Home \u00bb Democracy Tools \u00bb Bonga Bonga na Mzalendo Speaking Patriotically",
+          "prefix": "enu Promise Tracker Bonga na Mzalendo Hansard Ask Mzalendo Bot AI Search Speaking Patriotically",
           "sha256": "7165cc4ac6943bc1eaf5d685f9f8b35b8224a020fed8c1f3fe4bf6a2edd8ec9d",
-          "suffix": "Have your say on the Bills and decisions that affect you. Submit your views on a Bill 14 submissions received so far What happens to y",
+          "suffix": "Have your say on the Bills and decisions that affect you. Submit your views on a Bill 29 submissions received so far What happens to y",
           "text": "Bonga na Mzalendo is how citizens and Parliament talk to each other \u2014 safely and securely. Have your say on the Bills and decisions that affect you."
         },
         "id": "7de37bd516576bafe53a0f9468317def7d2f65fe20fd37332c7f3cd66e31d162",
@@ -6761,6 +6906,9 @@
     "last_modified": null
   },
   "https://newdemocracyfoundation.substack.com/p/a-new-chapter-for-newdemocracy": {
+    "archive_checked": "2026-11-13",
+    "archive_sha256": "5955c46e9c285858ca85b9e80f1780027c714bc15add7753ca298059fadf5382",
+    "archive_url": "http://web.archive.org/web/20261113111306/https://newdemocracyfoundation.substack.com/p/a-new-chapter-for-newdemocracy",
     "blocked": "HTTP_403",
     "blocked_since": "2026-09-18",
     "checked": "2026-09-17",
@@ -6795,11 +6943,15 @@
     "last_modified": null
   },
   "https://newvote.org/the-institute": {
-    "checked": "2026-08-26",
-    "document_sha256": "ec64c0d32eff492f351e1c76d75e90d0ecff301ff550e2bbc6f787812bb1b436",
-    "etag": "W/\"a7524821382eb64881709a2d9180f214\"",
+    "archive_checked": "2026-11-13",
+    "archive_sha256": "a1a235324bdc10a3188f951bf1bc80d21ceb40719787617f17fdbd5628defff4",
+    "archive_url": "http://web.archive.org/web/20261113111328/https://newvote.org/the-institute",
+    "checked": "2026-11-13",
+    "document_sha256": "a1a235324bdc10a3188f951bf1bc80d21ceb40719787617f17fdbd5628defff4",
+    "etag": "W/\"62fabae06658372dc6cd1c336f19f874--gzip\"",
     "evidence": [
       {
+        "checked": "2026-11-13",
         "context": {
           "prefix": "rizon State and Adam Jacoby of MiVote. Milestones.The Institute 10 November 2016",
           "sha256": "41de34d51814cde39f45696142e803023c7a62a397acac993a107c99cd8ca769",
@@ -6811,6 +6963,7 @@
         "verified": true
       },
       {
+        "checked": "2026-11-13",
         "context": {
           "prefix": ", we can help you. Our vision is to see communities and governments address issues, implement solutions and take actions in an agile way.",
           "sha256": "a338ad43ab969dd62edbc78cb4034fbdc6706567697c2e5f33fd1b717514b0dd",
@@ -6915,11 +7068,14 @@
     "last_modified": null
   },
   "https://oaf.org.au/2009/12/21/launching-our-new-website-planning-alerts/": {
-    "checked": "2026-08-26",
-    "document_sha256": "ecac843b4acbf074020a17df041805d1c36622bb8427e4f77ba1122e61d5272e",
+    "archive_checked": "2026-11-13",
+    "archive_url": "http://web.archive.org/web/20261113111351/https://oaf.org.au/2009/12/21/launching-our-new-website-planning-alerts/",
+    "checked": "2026-11-13",
+    "document_sha256": "58da74d5ee161464c1983674af2d52c476a40cf752a14da3118d96c88f201950",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-11-13",
         "context": {
           "prefix": "Blog People Contact Donate Announcement, PlanningAlerts.org.au",
           "sha256": "23b301288596e31a592686706ca160feed6746546b7a670afa1789a38657fd7b",
@@ -6931,7 +7087,7 @@
         "verified": true
       }
     ],
-    "last_modified": null
+    "last_modified": "Fri, 06 Nov 2026 11:42:39 GMT"
   },
   "https://oaf.org.au/2014/10/21/they-vote-for-you/": {
     "archive_checked": "2026-11-06",
@@ -7040,13 +7196,16 @@
     "last_modified": null
   },
   "https://peoplepower21.org/English": {
-    "checked": "2026-08-26",
-    "document_sha256": "e25b591c32628725c49c6920680dd3b01559cabca3c01dd32f55bc7154c94079",
+    "archive_checked": "2026-11-13",
+    "archive_url": "http://web.archive.org/web/20260821053922/https://peoplepower21.org/English",
+    "checked": "2026-11-13",
+    "document_sha256": "de4e3df1e7ca8ab0766abaf72a6d00d90cf8e0401971376435534c514619bc84",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-11-13",
         "context": {
-          "prefix": "10) Peace/Disarmament (464) Sewol Ferry Tragedy (13) Socio-Economic (78) UN Advocacy (58) \uc81c\ubaa9 \ub0a0\uc9dc Civil-Political --> -->",
+          "prefix": "Int. Solidarity --> --> [Statement] The ROK Government\u2019s Silence on Unjust U.S. Sanctions Against the ICC 2026-10-16 Civil-Political --> -->",
           "sha256": "9afc82947e6b49ab53c90b7ec3f8898c72764700dab0bc961722a5e9d9023501",
           "suffix": "2026-08-07 Peace/Disarmament --> --> [2026 NPT Review Conf.] Civil Society Joint Statement on the Denuclearization of the Korean Peninsula 2026",
           "text": "Civil-Political --> --> Launch of \u2018Civil Society Joint Action for Strengthening Accountability and Public Interest in AI\u2019 2026-08-07"
@@ -7059,12 +7218,12 @@
     "last_modified": null
   },
   "https://perludem.or.id/id/profil/": {
-    "checked": "2026-08-29",
-    "document_sha256": "1860af1fc7cdf5c8c3d228b3fd0600ccb6bcdee52be91de19c7c0f479121febb",
+    "checked": "2026-11-13",
+    "document_sha256": "d61feea544b2634d3b7a689da8f054337ff1528f49d18ccbf7ab9630d50733a4",
     "etag": null,
     "evidence": [
       {
-        "checked": "2026-08-29",
+        "checked": "2026-11-13",
         "context": {
           "prefix": "hgunakan kedaulatan rakyat yang diberikan kepadanya. Menyadari bahwa kondisi-kondisi tersebut membutuhkan partisipasi setiap warga negara, maka",
           "sha256": "fbbd297c5e6d02e1747f9fc502388d5db50117034a2bf610e391a19959d24d6b",
@@ -7076,7 +7235,7 @@
         "verified": true
       }
     ],
-    "last_modified": "Wed, 19 Aug 2026 06:37:41 GMT"
+    "last_modified": "Wed, 04 Nov 2026 07:59:35 GMT"
   },
   "https://perludem.or.id/perludem-and-international-idea-discuss-mixed-member-proportional-electoral-system-simulation-with-journalists-and-civil-society/": {
     "checked": "2026-10-30",
@@ -7122,12 +7281,14 @@
     "last_modified": null
   },
   "https://pmc.ncbi.nlm.nih.gov/articles/PMC8416191/": {
-    "checked": "2026-08-29",
+    "archive_checked": "2026-11-13",
+    "archive_url": "http://web.archive.org/web/20261113104858/https://pmc.ncbi.nlm.nih.gov/articles/PMC8416191/",
+    "checked": "2026-11-13",
     "document_sha256": "27e1ecdd798010c13bccda83cef9d693019690081283cb21b3a191275da2b54a",
     "etag": null,
     "evidence": [
       {
-        "checked": "2026-08-29",
+        "checked": "2026-11-13",
         "id": "08807a74eeae5df8bb84b16ccd0e4866a413e0e2206c682a5eb7ea7710cbc866",
         "quote": "the Tokyo Metropolitan Government commissioned a non-government organization, Code for Japan (CfJ), to build a website to display their open-data ... on COVID-19 on February 26. CfJ developed and launched the website ... on March 3 after only five days.",
         "verified": true
@@ -7286,14 +7447,17 @@
     "last_modified": "Sun, 27 Apr 2025 23:33:05 GMT"
   },
   "https://portable.com.au/articles/code-for-australia-announcement/": {
-    "checked": "2026-08-28",
-    "document_sha256": "957258e2cda32cd145cd5296040eb521aa930803d50486c9bc4616d06cca08b1",
-    "etag": "W/\"66e7a82878c5e3dd214637a915c8dde6\"",
+    "archive_checked": "2026-11-13",
+    "archive_sha256": "9d117c8f694f78a3b145ccfc5fa97516c981bb869996f2299aec078661f6bbd0",
+    "archive_url": "http://web.archive.org/web/20261113104823/https://portable.com.au/articles/code-for-australia-announcement/",
+    "checked": "2026-11-13",
+    "document_sha256": "9d117c8f694f78a3b145ccfc5fa97516c981bb869996f2299aec078661f6bbd0",
+    "etag": "W/\"e170e64ae14cbb1016e559785c36c657\"",
     "evidence": [
       {
-        "checked": "2026-08-28",
+        "checked": "2026-11-13",
         "context": {
-          "prefix": "rtable is proud to announce that it will be supporting the operation and management of Code for Australia going into 2025.",
+          "prefix": "proud to announce that it will be supporting the operation and management of Code for Australia going into 2025.",
           "sha256": "9efc0084145068a0afe0766f0a8c4130bac1e82cfe113386ca9402b275921d96",
           "suffix": "They partner with government and not-for-profit organisations to support them with expert technical advice, digital capability, and the development o",
           "text": "Code for Australia is a nationwide civic technology organisation founded in 2014 by Alvaro Maz, Jacob Lindsay and Daniel Groch. They partner with government and not-for-profit organisations to support them with expert technical advice, digital capability, and the development of digital solutions that are accessible, inclusive, sustainable and effective. Code for Australia began as part of a global network of like-minded organisations called \u201cCode for All\u201d and is well known for its Fellowship program for early-mid career technologists."
@@ -7303,11 +7467,11 @@
         "verified": true
       },
       {
-        "checked": "2026-08-28",
+        "checked": "2026-11-13",
         "context": {
-          "prefix": "o Ngunnawal Country 1/33 Allara Street, Canberra Code for Australia Finds a New Home with Portable",
+          "prefix": "Let's talk Home Articles Code for Australia finds a new home with Portable",
           "sha256": "3d3c333c086ff168ada9293dbc8ac674b6085baeade5f78a7c5e2d36f3112961",
-          "suffix": "Code for Australia is a nationwide civic technology organisation founded in 2014 by Alvaro Maz, Jacob Lindsay and Daniel G",
+          "suffix": "Code for Australia is a nationwide civic technology organisation founded in 2014 by Alvaro Maz, Jacob Lindsay and",
           "text": "Portable is proud to announce that it will be supporting the operation and management of Code for Australia going into 2025."
         },
         "id": "3d3c333c086ff168ada9293dbc8ac674b6085baeade5f78a7c5e2d36f3112961",
@@ -7315,7 +7479,7 @@
         "verified": true
       }
     ],
-    "last_modified": "Fri, 28 Aug 2026 04:40:26 GMT"
+    "last_modified": "Tue, 10 Nov 2026 15:08:05 GMT"
   },
   "https://projects.propublica.org/nonprofits/organizations/832183139": {
     "checked": "2026-08-26",
@@ -7533,12 +7697,15 @@
     "last_modified": null
   },
   "https://rollcall.com/2026/09/10/republicans-scotus-bid-new-missouri-map/": {
-    "checked": "2026-09-16",
-    "document_sha256": "536571b22a17515cc4b7edc2bc2170baf56e54bb7ad79b6d5ffcbeb62ab16119",
+    "archive_checked": "2026-11-13",
+    "archive_sha256": "b5b9dc4b0fa28b9c2b9cfbb500fc15293a9ae73f59b4c9d002c18bab05d19929",
+    "archive_url": "http://web.archive.org/web/20260911072715/https://rollcall.com/2026/09/10/republicans-scotus-bid-new-missouri-map/",
+    "checked": "2026-11-13",
+    "document_sha256": "e66702ace909732e5e418610c7eab1ed7aa1ed4aa0c9644761c52dcaeaecb440",
     "etag": null,
     "evidence": [
       {
-        "checked": "2026-09-16",
+        "checked": "2026-11-13",
         "id": "ae9509dd992aebfcc69c7bc985907144fbd237ceff45710da4ba2fb60fdf4887",
         "quote": "This latest development likely means the state will use lines adopted in 2022 for this fall's election.",
         "verified": false
@@ -7721,7 +7888,7 @@
     "last_modified": null
   },
   "https://theyvoteforyou.org.au/about": {
-    "archive_checked": "2026-11-06",
+    "archive_checked": "2026-11-13",
     "archive_sha256": "e4b11ff813b693d775739bbe8b8c51fe92a6296dc8c1931c30ffa03906cf7635",
     "archive_url": "http://web.archive.org/web/20260812053340/https://theyvoteforyou.org.au/about",
     "blocked": "HTTP_403",
@@ -7742,9 +7909,9 @@
     "manual_checked": "2026-08-22"
   },
   "https://topics.amcham.com.tw/2017/02/make-full-use-of-join-gov-tw/": {
-    "archive_checked": "2026-11-06",
-    "archive_sha256": "09d5177b31b3807a59fe824b66e0d054e37071873c25b2ac62859f86675472c7",
-    "archive_url": "http://web.archive.org/web/20261106105258/https://topics.amcham.com.tw/2017/02/make-full-use-of-join-gov-tw/",
+    "archive_checked": "2026-11-13",
+    "archive_sha256": "1e0fc89bdf6ac670a32c1fe20d7bedbb36a77fa2eadbb93eaa4756ef5d19101f",
+    "archive_url": "http://web.archive.org/web/20261113110741/https://topics.amcham.com.tw/2017/02/make-full-use-of-join-gov-tw/",
     "blocked": "HTTP_403",
     "blocked_since": "2026-09-04",
     "checked": "2026-08-29",
@@ -7798,7 +7965,7 @@
     "last_modified": null
   },
   "https://vic.democrats.org.au/policies/make-victoria-s-upper-house-the-citizens-house-of-review/": {
-    "archive_checked": "2026-11-06",
+    "archive_checked": "2026-11-13",
     "archive_sha256": "76b47559a4aa35e3adf484ed1190db9fa44c17eafc13e51e3d251b95c4df19f0",
     "archive_url": "http://web.archive.org/web/20261106111154/https://vic.democrats.org.au/policies/make-victoria-s-upper-house-the-citizens-house-of-review/",
     "blocked": "HTTP_403",
@@ -7819,12 +7986,14 @@
     "manual_checked": "2026-08-22"
   },
   "https://vietnamnet.vn/en/bui-thi-minh-hoai-appointed-to-lead-vietnam-fatherland-front-2459124.html": {
-    "checked": "2026-08-29",
+    "archive_checked": "2026-11-13",
+    "archive_url": "http://web.archive.org/web/20261113112807/https://vietnamnet.vn/en/bui-thi-minh-hoai-appointed-to-lead-vietnam-fatherland-front-2459124.html",
+    "checked": "2026-11-13",
     "document_sha256": "96950657e851a0189592a4269eacd7d17b5ff374a5f371563f2c6fdb9458b5f5",
-    "etag": "W/\"134324438039325970\"",
+    "etag": "W/\"134390428603763216\"",
     "evidence": [
       {
-        "checked": "2026-08-29",
+        "checked": "2026-11-13",
         "context": {
           "prefix": "GMT+07:00) Bui Thi Minh Hoai appointed to lead Vietnam Fatherland Front Copy link 04/11/2025 09:43 (GMT+07:00)",
           "sha256": "a21dd7361e792f173d5c38f6f13cc5b4211ce31240c47bb171ade9bb7bc8d359",
@@ -7923,12 +8092,6 @@
         "verified": true
       }
     ],
-    "failing": {
-      "count": 1,
-      "error": "NETWORK_ERROR",
-      "last": "2026-11-06",
-      "since": "2026-11-06"
-    },
     "last_modified": null
   },
   "https://web.archive.org/web/20250531195416/https://mckinnon.co/": {
@@ -7969,9 +8132,9 @@
       }
     ],
     "failing": {
-      "count": 2,
+      "count": 3,
       "error": "NETWORK_ERROR",
-      "last": "2026-10-30",
+      "last": "2026-11-13",
       "since": "2026-10-23"
     },
     "last_modified": null
@@ -7994,9 +8157,9 @@
       }
     ],
     "failing": {
-      "count": 1,
+      "count": 2,
       "error": "NETWORK_ERROR",
-      "last": "2026-11-06",
+      "last": "2026-11-13",
       "since": "2026-11-06"
     },
     "last_modified": null
@@ -8303,9 +8466,9 @@
     "last_modified": null
   },
   "https://www.ag.gov.au/integrity/australias-open-government-partnership": {
-    "archive_checked": "2026-11-06",
-    "archive_sha256": "aa3e14c0f52247d8516685e115501611ed88dcbefeaa03a3d8145432c299f452",
-    "archive_url": "http://web.archive.org/web/20261023084800/https://www.ag.gov.au/integrity/australias-open-government-partnership",
+    "archive_checked": "2026-11-13",
+    "archive_sha256": "6b71d5cb7ec257a0da6b03be75b1cffcfdbc4dba37eaa057563ae94b14ccb581",
+    "archive_url": "http://web.archive.org/web/20261113111639/https://www.ag.gov.au/integrity/australias-open-government-partnership",
     "blocked": "HTTP_403",
     "blocked_since": "2026-09-16",
     "evidence": [
@@ -8324,7 +8487,7 @@
     "manual_checked": "2026-08-22"
   },
   "https://www.ag.gov.au/rights-and-protections/australias-open-government-partnership/open-government-forum": {
-    "archive_checked": "2026-11-06",
+    "archive_checked": "2026-11-13",
     "archive_sha256": "1002745e36c49b572d8f478e9a271cd51f0413c43e751f5c5026f701d2628bce",
     "archive_url": "http://web.archive.org/web/20261009101901/https://www.ag.gov.au/rights-and-protections/australias-open-government-partnership/open-government-forum",
     "blocked": "HTTP_403",
@@ -8505,10 +8668,15 @@
     "last_modified": null
   },
   "https://www.bertelsmann-stiftung.de/en/our-projects/democracy-and-participation-in-europe/shortcut-archive/shortcut-8-trailblazers-of-digital-participation-taiwans-join-platform-and-vtaiwan": {
-    "checked": "2026-08-26",
-    "etag": "W/\"163657e8c9adddc98f1f63b35e471385\"",
+    "archive_checked": "2026-11-13",
+    "archive_sha256": "eb95279f48b9da1b01fb93f87242d0b0ef13e0a828ce4bb8f14ac637551d8c61",
+    "archive_url": "http://web.archive.org/web/20260817142830/https://www.bertelsmann-stiftung.de/en/our-projects/democracy-and-participation-in-europe/shortcut-archive/shortcut-8-trailblazers-of-digital-participation-taiwans-join-platform-and-vtaiwan",
+    "checked": "2026-11-13",
+    "document_sha256": "eaafb4ccda96a90cdeab167f060f03ecafc2fed786a858064205b5302210c1bb",
+    "etag": "W/\"915854050968be63a78011541e161562\"",
     "evidence": [
       {
+        "checked": "2026-11-13",
         "context": {
           "prefix": "(\u201cgov-zero\u201d). It is designed to enable open, in-depth, and lengthy consultation processes between the government, citizens, and policy stakeholders.",
           "sha256": "05c110afc92fb278b8ab2ca88cb1ae818a26074bf9d9d549880c39af9a005686",
@@ -8590,7 +8758,7 @@
     "last_modified": null
   },
   "https://www.britannica.com/topic/slavery-sociology/Slave-societies": {
-    "archive_checked": "2026-11-06",
+    "archive_checked": "2026-11-13",
     "archive_sha256": "eedecbbd55796b0e3515520b3e38858ba7d2972514bffb2775ea761b8fa70e74",
     "archive_url": "http://web.archive.org/web/20260921202834/https://www.britannica.com/topic/slavery-sociology/Slave-societies",
     "blocked": "HTTP_403",
@@ -8610,11 +8778,15 @@
     "manual_checked": "2026-08-22"
   },
   "https://www.buildaballot.org.au/about": {
-    "checked": "2026-08-26",
-    "document_sha256": "2e1df1837bb7f033d677640ff5015df2d4c8dda43cfbbb5ac25a00418e7adbb0",
+    "archive_checked": "2026-11-13",
+    "archive_sha256": "2bb8e0a6b25da5385698b989b64fd1b3b97073713dab14e376bf48b5d7208f4c",
+    "archive_url": "http://web.archive.org/web/20261113104350/https://www.buildaballot.org.au/about",
+    "checked": "2026-11-13",
+    "document_sha256": "2bb8e0a6b25da5385698b989b64fd1b3b97073713dab14e376bf48b5d7208f4c",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-11-13",
         "context": {
           "prefix": "nd weekends, funding the organisation through freelance work and supported by an incredible network of volunteers, advisors and policy experts.",
           "sha256": "d490851d64f7c54c59090e13185f2435c54d2325b0fd234691cf774f8e28b680",
@@ -8623,9 +8795,10 @@
         },
         "id": "3acfc065fa53a73ec635207eca31e4f03339ee5e329af5b34851591a64f5306e",
         "quote": "In the lead-up to the 2025 federal election, thousands of Australians \u2014 most contributing donations under $50 \u2014 helped bring Build a Ballot to life at scale.",
-        "verified": true
+        "verified": false
       },
       {
+        "checked": "2026-11-13",
         "context": {
           "prefix": "accounts sharing climate news quickly evolved into a shared mission: helping everyday Australians engage with action to build a better future.",
           "sha256": "ccbbebed0599fa18e81bf1f1517a4509fbcdfeae62dd7c0efb8ee6d86a9fdf4b",
@@ -8634,7 +8807,7 @@
         },
         "id": "71b92c86dd1807fa7949a2ab48dc0776d02a91e3c244f054f3495ec01c38e298",
         "quote": "Ahead of the 2022 federal election, we built our first voting tool, Vote 1 Climate.",
-        "verified": true
+        "verified": false
       },
       {
         "context": {
@@ -8648,16 +8821,19 @@
         "verified": true
       },
       {
+        "checked": "2026-11-13",
         "id": "b8295bea41147e830f73c7f46c5755c8350c378b133e26aea8fbab35173619bc",
         "quote": "Over the next three years, we\u2019re expanding Build a Ballot to state elections in:...South Australia and Victoria in 2026",
         "verified": true
       },
       {
+        "checked": "2026-11-13",
         "id": "bca897fecd269434703d2f7e9b62d73411bb837f4b3b4ba0d4999695b6ecf137",
         "quote": "Over the next three years, we\u2019re expanding Build a Ballot to state elections in:...New South Wales in 2027",
         "verified": true
       },
       {
+        "checked": "2026-11-13",
         "context": {
           "prefix": ", or harder to navigate than it should be. We created Build a Ballot to make it clearer. How it began",
           "sha256": "72bea5c8fe5d71647fe872812a2995cae021eabd635ce8eba84c40c567301112",
@@ -8666,10 +8842,10 @@
         },
         "id": "47750700a7bebaf2b21d166c8937b8ca119af77c3ee2bb97a7b448817aed2279",
         "quote": "Project Planet was co-founded by Lizzie Hedding and Tegan Lerm after connecting online during the 2019\u201320 bushfires.",
-        "verified": true
+        "verified": false
       }
     ],
-    "last_modified": "Wed, 26 Aug 2026 08:50:13 GMT"
+    "last_modified": "Fri, 13 Nov 2026 04:40:37 GMT"
   },
   "https://www.buildaballot.org.au/transparency/candidate-and-party-assessments": {
     "archive_checked": "2026-10-23",
@@ -8780,10 +8956,14 @@
     "last_modified": null
   },
   "https://www.climateassembly.uk/about/": {
-    "checked": "2026-08-26",
+    "archive_checked": "2026-11-13",
+    "archive_sha256": "26250ecf8647e23cb9a57c6659329cec27a82f5677922058f51b7a364163f98f",
+    "archive_url": "http://web.archive.org/web/20261113110615/https://www.climateassembly.uk/about/",
+    "checked": "2026-11-13",
     "etag": "W/\"6d9daccb2a78d91:0\"",
     "evidence": [
       {
+        "checked": "2026-11-13",
         "context": {
           "prefix": "arget. Parliament will use the report to support its work on scrutinising the Government\u2019s climate change policy and progress on the target.",
           "sha256": "0f09c9f38d33a1fc69c06979a52303ba841fd893d15749df8f88a2e39c4a1e3e",
@@ -8823,7 +9003,7 @@
     "last_modified": null
   },
   "https://www.coe.int/en/web/congress/-/deliberative-democracy-in-ukraine-congress-to-support-three-citizens-assemblies-in-2025-2026": {
-    "archive_checked": "2026-11-06",
+    "archive_checked": "2026-11-13",
     "archive_sha256": "36ca755204945ef45ea1d1ca0b5c3bc18b9a93327e50e849f03fe157c8acf4cf",
     "archive_url": "http://web.archive.org/web/20261030101757/https://www.coe.int/en/web/congress/-/deliberative-democracy-in-ukraine-congress-to-support-three-citizens-assemblies-in-2025-2026",
     "blocked": "HTTP_403",
@@ -8844,7 +9024,7 @@
     "manual_checked": "2026-08-22"
   },
   "https://www.coe.int/en/web/congress/-/ukraine-s-first-metropolitan-citizens-assembly-launched-in-lviv": {
-    "archive_checked": "2026-11-06",
+    "archive_checked": "2026-11-13",
     "archive_sha256": "c4b86d2b10ff137b61e435819d0d8f607563bf467f7da7ee3b73f8afb03e7093",
     "archive_url": "http://web.archive.org/web/20261023090253/https://www.coe.int/en/web/congress/-/ukraine-s-first-metropolitan-citizens-assembly-launched-in-lviv",
     "blocked": "HTTP_403",
@@ -8934,11 +9114,15 @@
     "last_modified": null
   },
   "https://www.councilwatch.com.au": {
-    "checked": "2026-08-26",
-    "document_sha256": "11fd3db63d2eef89fc031a0379b41e09044ccbdbb9e27a16feb244fb7cf0d61b",
-    "etag": "W/\"f54cd148c47f3cf521bd6b299bbcae21\"",
+    "archive_checked": "2026-11-13",
+    "archive_sha256": "fc8e6b100a89a190671d10fdeb162708d29a16634be9dd9c0e7831799ec4e127",
+    "archive_url": "http://web.archive.org/web/20261013101412/https://www.councilwatch.com.au/",
+    "checked": "2026-11-13",
+    "document_sha256": "ddb7fd26dc75063a2a691ca662468d2a5f8cb0efe0272ac812ed0e14787425d8",
+    "etag": "W/\"c81bdffb1270a8d1694169372d261151\"",
     "evidence": [
       {
+        "checked": "2026-11-13",
         "context": {
           "prefix": "com.au Media Enquiries ONLY: Dean Hurlston President 0427 862 103 2026 Council Watch Inc A0040924M",
           "sha256": "f7cdf9d106d78051f754ba20069af51f09bfe1a7276a473f5c5b246b51a4a53f",
@@ -9057,11 +9241,15 @@
     "last_modified": null
   },
   "https://www.demnext.org/about": {
-    "checked": "2026-08-26",
-    "document_sha256": "e5aa54a6e9f7ba90870fe81ba8b3605e7139ab277b49071190f94128ae01b665",
+    "archive_checked": "2026-11-13",
+    "archive_sha256": "e5aa54a6e9f7ba90870fe81ba8b3605e7139ab277b49071190f94128ae01b665",
+    "archive_url": "http://web.archive.org/web/20261020164333/https://www.demnext.org/about",
+    "checked": "2026-11-13",
+    "document_sha256": "90ac6c1563b67ae42f3bad7880a9c4f0c6fffec2d41166cb572ccbf98ef377e9",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-11-13",
         "context": {
           "prefix": "We believe in a more just, joyful, and collaborative future, where everyone has meaningful power to shape their societies.",
           "sha256": "31b35e733ed03b9b4e9d03ec4028349a9d92aa6532dabeec34b3a5fc9e73b1c9",
@@ -9357,11 +9545,15 @@
     "last_modified": "Thu, 05 Nov 2026 14:19:32 GMT"
   },
   "https://www.designingopendemocracy.com/blog/2018/12/18/designing-open-democracy-state-of-democracy-in-australia-in-2018/": {
-    "checked": "2026-08-26",
-    "document_sha256": "798deb96a08bde5f3f272bdce43fd31d6e64820681ac93c3e636c19f4b7f3edc",
-    "etag": "W/\"6a8ecf1a-3d9f6\"",
+    "archive_checked": "2026-11-13",
+    "archive_sha256": "4be141548772872bb05f0bad17da736bca4272103f7925179097884062bde4b4",
+    "archive_url": "http://web.archive.org/web/20260714104007/https://www.designingopendemocracy.com/blog/2018/12/18/designing-open-democracy-state-of-democracy-in-australia-in-2018/",
+    "checked": "2026-11-13",
+    "document_sha256": "06b0058fc43ce23621a3eab788ec2e0e945bb017c241425ebbbccf80764584b0",
+    "etag": "W/\"6af5c95b-2ed05\"",
     "evidence": [
       {
+        "checked": "2026-11-13",
         "context": {
           "prefix": "rnetics the Meta-Grammar of Legislation. It is based to a very large degree on Stafford Beer's books Brain of the Firm and Heart of Enterprise.",
           "sha256": "5661eb95731baf8bc8b220f39a8c37c1e2f4f661f1d723a83fdf1ca002ca7933",
@@ -9373,7 +9565,7 @@
         "verified": true
       }
     ],
-    "last_modified": "Wed, 26 Aug 2026 11:33:46 GMT"
+    "last_modified": "Thu, 12 Nov 2026 14:12:43 GMT"
   },
   "https://www.designingopendemocracy.com/blog/2021/08/07/podcast-catching-up-with-adam-jacoby-founder-of-mivote/": {
     "archive_checked": "2026-10-16",
@@ -9438,9 +9630,9 @@
       }
     ],
     "failing": {
-      "count": 2,
+      "count": 3,
       "error": "HTTP_500",
-      "last": "2026-10-30",
+      "last": "2026-11-13",
       "since": "2026-10-23"
     },
     "last_modified": null
@@ -9466,7 +9658,7 @@
     "last_modified": null
   },
   "https://www.elcomercio.com/actualidad/politica/marlon-vargas-gana-la-presidencia-de-la-conaie-tras-imponerse-a-leonidas-iza/": {
-    "archive_checked": "2026-11-06",
+    "archive_checked": "2026-11-13",
     "archive_sha256": "39bf79084f856cf8dea8e7bed68a59ae974979ce0b4086e898fccb5fadfca451",
     "archive_url": "http://web.archive.org/web/20261106103757/https://www.elcomercio.com/actualidad/politica/marlon-vargas-gana-la-presidencia-de-la-conaie-tras-imponerse-a-leonidas-iza/",
     "blocked": "HTTP_403",
@@ -9872,11 +10064,15 @@
     "blocked_since": "2026-08-21"
   },
   "https://www.hrlc.org.au/news/2023-1-31-election-data-a-reminder-that-albanese-government-must-regulate-money-in-politics/": {
-    "checked": "2026-08-26",
-    "document_sha256": "09b32189212ea1b9705e29e4e8d6fe615d8ec4a1a31660a9ccf83a15a0d7ad4f",
+    "archive_checked": "2026-11-13",
+    "archive_sha256": "2fcdd5f57aaec3ba3532da1e4323e5e15ab29446c710c1702739974fe80d5dd8",
+    "archive_url": "http://web.archive.org/web/20260821055923/https://www.hrlc.org.au/news/2023-1-31-election-data-a-reminder-that-albanese-government-must-regulate-money-in-politics/",
+    "checked": "2026-11-13",
+    "document_sha256": "35bf02da737a089a90307b2cce2eae03fbea87e8cbca343827ff18e50f02779a",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-11-13",
         "context": {
           "prefix": "lude another key feature of electoral law regulation that is becoming commonplace at state level: bans on large political donations altogether.",
           "sha256": "c0b61fc73822398c5fdadb27e28ca1ba7a4d8b7ef857942ddad70bb761452bb5",
@@ -9980,10 +10176,13 @@
     "last_modified": "Fri, 23 Oct 2026 04:57:49 GMT"
   },
   "https://www.inmotionmagazine.com/global/rsb_int_esp.html": {
-    "checked": "2026-08-26",
+    "archive_checked": "2026-11-13",
+    "archive_url": "http://web.archive.org/web/20261015003045/https://inmotionmagazine.com/global/rsb_int_esp.html",
+    "checked": "2026-11-13",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-11-13",
         "context": {
           "prefix": "tambi\u00e9n por los ind\u00edgenas. Es un centro ind\u00edgena, en su hacer, en su definici\u00f3n, en su modo de trabajar, en sus componentes, en quienes lo integran.",
           "sha256": "f794cbc96f53ad28f16518c4db95664f4a54eacfe470aabe2343312d2d32f50e",
@@ -10003,9 +10202,9 @@
     "last_modified": null
   },
   "https://www.institutoupdate.org.br/quem-somos/": {
-    "archive_checked": "2026-11-06",
-    "archive_sha256": "551dc30d4903b8fc82176d17ff5bb81b5825e2e15d31699662b4f6489112dab2",
-    "archive_url": "http://web.archive.org/web/20260307024855/https://www.institutoupdate.org.br/quem-somos/",
+    "archive_checked": "2026-11-13",
+    "archive_sha256": "8330ce7e28af83c9b565800e6aa4c917e3bdf0b23487c694a6f2958c844d9d04",
+    "archive_url": "http://web.archive.org/web/20261030100114/https://www.institutoupdate.org.br/quem-somos/",
     "blocked": "HTTP_403",
     "blocked_since": "2026-09-04",
     "checked": "2026-08-29",
@@ -10028,7 +10227,7 @@
     "last_modified": null
   },
   "https://www.involve.org.uk/about/about-involve": {
-    "archive_checked": "2026-11-06",
+    "archive_checked": "2026-11-13",
     "archive_sha256": "c019301deb77717def1091d4c6fdd6d2d47762dd1d27b8f0453cebf0eb49e4de",
     "archive_url": "http://web.archive.org/web/20261106105237/https://www.involve.org.uk/about/about-involve",
     "blocked": "HTTP_403",
@@ -10049,7 +10248,7 @@
     "manual_checked": "2026-08-22"
   },
   "https://www.ipc.nsw.gov.au/news/open-government-partnership-final-public-consultation-draft-commitments-australias-third-national-action-plan": {
-    "archive_checked": "2026-11-06",
+    "archive_checked": "2026-11-13",
     "archive_sha256": "3f299a35884033faa4da79f8cb841f7312309978b1bb704d4640bb57edb2390d",
     "archive_url": "http://web.archive.org/web/20250524182833/https://www.ipc.nsw.gov.au/news/open-government-partnership-final-public-consultation-draft-commitments-australias-third-national-action-plan",
     "blocked": "HTTP_403",
@@ -10099,6 +10298,9 @@
     "last_modified": null
   },
   "https://www.jornada.com.mx/2006/01/03/index.php?article=003n1pol&section=politica": {
+    "archive_checked": "2026-11-13",
+    "archive_sha256": "35451413dd98f92e350f7fa2132f11697ab3e4567e60a0bb52ef10096d9e2601",
+    "archive_url": "http://web.archive.org/web/20261113104643/https://www.jornada.com.mx/2006/01/03/index.php?article=003n1pol&section=politica",
     "blocked": "HTTP_403",
     "blocked_since": "2026-09-04",
     "checked": "2026-08-26",
@@ -10145,12 +10347,15 @@
     "last_modified": "Tue, 25 Aug 2026 16:41:12 GMT"
   },
   "https://www.labsus.org/chi-siamo/": {
-    "checked": "2026-08-29",
+    "archive_checked": "2026-11-13",
+    "archive_sha256": "041e714816932802e02786ab83492a53a491e31c04ed717f12c0d85ec5f3b075",
+    "archive_url": "http://web.archive.org/web/20261113110804/https://www.labsus.org/chi-siamo/",
+    "checked": "2026-11-13",
     "document_sha256": "041e714816932802e02786ab83492a53a491e31c04ed717f12c0d85ec5f3b075",
     "etag": null,
     "evidence": [
       {
-        "checked": "2026-08-29",
+        "checked": "2026-11-13",
         "context": {
           "prefix": "Chi siamo",
           "sha256": "e1fde2cce5c1c2c169de201bbc72f56013fc9be23a1a46259023f63de009ca0d",
@@ -10162,7 +10367,7 @@
         "verified": true
       }
     ],
-    "last_modified": "Tue, 07 Jul 2026 09:28:55 GMT"
+    "last_modified": "Thu, 05 Nov 2026 10:26:42 GMT"
   },
   "https://www.lamestream.com.au/exclusive-how-israel-weapons-and-greed-drove-jeffrey-epsteins-mongolia-obsession/": {
     "archive_checked": "2026-10-23",
@@ -10238,7 +10443,7 @@
     "last_modified": null
   },
   "https://www.lesswrong.com/posts/oqvsR2LmHWamyKDcj/large-language-models-will-be-great-for-censorship": {
-    "archive_checked": "2026-11-06",
+    "archive_checked": "2026-11-13",
     "archive_sha256": "ecf03b5d463d017db48ac536b8fd875f44dd4e93636c4d020284f191f1906c9a",
     "archive_url": "http://web.archive.org/web/20261106112030/https://www.lesswrong.com/posts/oqvsR2LmHWamyKDcj/large-language-models-will-be-great-for-censorship",
     "blocked": "HTTP_429",
@@ -10338,7 +10543,7 @@
     "last_modified": null
   },
   "https://www.localgovernment.vic.gov.au/__data/assets/word_doc/0027/167913/Local-Government-Act-2020-Principles-Community-Engagement.docx": {
-    "archive_checked": "2026-11-06",
+    "archive_checked": "2026-11-13",
     "archive_sha256": "e99a0cb931275931d2dc0c849b7cf26c1fa705559c1b80486e14ce24bf8bff98",
     "archive_url": "http://web.archive.org/web/20260727123829/https://www.localgovernment.vic.gov.au/__data/assets/word_doc/0027/167913/Local-Government-Act-2020-Principles-Community-Engagement.docx",
     "blocked": "HTTP_403",
@@ -10417,7 +10622,7 @@
     "last_modified": null
   },
   "https://www.mcguinnessinstitute.org/about-us/history/": {
-    "archive_checked": "2026-11-06",
+    "archive_checked": "2026-11-13",
     "archive_sha256": "7960b18d343da344b9b67ebca07b803ab37df6f83713f363475fee391dc979a7",
     "archive_url": "http://web.archive.org/web/20260925090133/https://www.mcguinnessinstitute.org/about-us/history/",
     "blocked": "HTTP_403",
@@ -10452,15 +10657,16 @@
     "last_modified": null
   },
   "https://www.mcguinnessinstitute.org/events/upcoming-events/": {
-    "archive_checked": "2026-11-06",
+    "archive_checked": "2026-11-13",
     "archive_sha256": "548c497927109b2bb56103d99954bbd16d2364c4eeb95b4c03b3449316ca73da",
     "archive_url": "http://web.archive.org/web/20261106105703/https://www.mcguinnessinstitute.org/events/upcoming-events/",
     "blocked": "HTTP_403",
     "blocked_since": "2026-09-18"
   },
   "https://www.mcguinnessinstitute.org/research-projects/civics-nz/": {
-    "archive_checked": "2026-11-06",
-    "archive_url": "http://web.archive.org/web/20260925090134/https://www.mcguinnessinstitute.org/research-projects/civics-nz/",
+    "archive_checked": "2026-11-13",
+    "archive_sha256": "d44355cc96dc3ce6c46950858ffd9be409b5fef1280c75ef8ea2b1a239227dd7",
+    "archive_url": "http://web.archive.org/web/20261106105716/https://www.mcguinnessinstitute.org/research-projects/civics-nz/",
     "blocked": "HTTP_403",
     "blocked_since": "2026-09-04",
     "checked": "2026-08-26",
@@ -10586,11 +10792,14 @@
     "last_modified": null
   },
   "https://www.ndi.org/declaration-parliamentary-openness": {
-    "checked": "2026-08-25",
-    "document_sha256": "e37448c530390d606a3802446cf4eb4397f6a1d182a632dbc785a10344fc0adb",
+    "archive_checked": "2026-11-13",
+    "archive_url": "http://web.archive.org/web/20250325021133/https://www.ndi.org/Declaration-parliamentary-openness",
+    "checked": "2026-11-13",
+    "document_sha256": "7b2c222ae380cf36f6d49e2c3ca6997bb21f2509b38ad518b9a6de00a172248c",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-11-13",
         "context": {
           "prefix": "worldwide for stronger collaboration to improve openness, transparency and citizen participation in the legislative process.",
           "sha256": "b67d63a56d7cd2ec9a0c10150e77b7ac2081e935b4be0f453ca98ac12b6da2c5",
@@ -10602,6 +10811,7 @@
         "verified": true
       },
       {
+        "checked": "2026-11-13",
         "context": {
           "prefix": "aris, hosted by the French PMO Regards Citoyens, and the Center for European Studies of Sciences Po and M\u00e9dialab Sciences Po.",
           "sha256": "4116766dc3163f3e35953045ead2b320d6cf98a8cad6b80ffc388fd5a340366e",
@@ -10613,7 +10823,7 @@
         "verified": true
       }
     ],
-    "last_modified": "Tue, 25 Aug 2026 15:58:07 GMT"
+    "last_modified": "Fri, 13 Nov 2026 11:39:40 GMT"
   },
   "https://www.ndi.org/sites/default/files/2025-04/No-6-Lessons-from-Namfrel-and-Gong---NDI-Sustaining-the-Fight-for-Democracy-Lessons-from-Citizen-Election-Monitoring-Organizations-Around-the-World.pdf": {
     "archive_checked": "2026-10-30",
@@ -10672,12 +10882,15 @@
     "last_modified": null
   },
   "https://www.newamerica.org/political-reform/reports/rebuilding-democratic-infrastructure/i-democratic-infrastructure-a-theoretical-framework/": {
-    "checked": "2026-09-16",
-    "document_sha256": "42d1567fc4c25ae5972d22e6e632fe939b5e3fba9be0ffd31ac32cddad4dda01",
+    "archive_checked": "2026-11-13",
+    "archive_sha256": "2ed0498bf3f27337bfd396f749786ee2e7cd22fc55ee784ecbcb0a184427c582",
+    "archive_url": "http://web.archive.org/web/20251012013631/https://www.newamerica.org/political-reform/reports/rebuilding-democratic-infrastructure/i-democratic-infrastructure-a-theoretical-framework/",
+    "checked": "2026-11-13",
+    "document_sha256": "e6057ea3099c7ce4859cc0984556e65f5449cd8decbc6fe9424e68a43cbc2620",
     "etag": null,
     "evidence": [
       {
-        "checked": "2026-09-16",
+        "checked": "2026-11-13",
         "context": {
           "prefix": "nfrastructures \u2014 political, economic, and social \u2014 needed to facilitate democratic functioning. Sociologist Charles Tilly offers a useful starting point.",
           "sha256": "48c47b2bd464d43ec77ab52f38a6b1ca0965eb5c781b7deff2c3bc9eb9aa5278",
@@ -10855,12 +11068,14 @@
     "manual_checked": "2026-08-22"
   },
   "https://www.oaf.org.au/2022/03/23/senator-for-nsw-andrew-bragg-threatens-openaustralia-foundation-with-legal-action/": {
-    "checked": "2026-08-29",
-    "document_sha256": "896464ad95de397d8a71073c47f810b2e68decccc6b1cf7dc23fac27c1f1360d",
+    "archive_checked": "2026-11-13",
+    "archive_url": "http://web.archive.org/web/20260924141323/https://oaf.org.au/2022/03/23/senator-for-nsw-andrew-bragg-threatens-openaustralia-foundation-with-legal-action/",
+    "checked": "2026-11-13",
+    "document_sha256": "eb815026b03be5a049a1e90941c658fcee33d3418de360b57b1c013042ed8dfc",
     "etag": null,
     "evidence": [
       {
-        "checked": "2026-08-29",
+        "checked": "2026-11-13",
         "context": {
           "prefix": "rs. The legal threat Now back to where they are threatening to sue us under Australian Consumer Law. For this we defer to the letter that",
           "sha256": "d29f03044da8e598f3eeb34d7ac6f647fe999c30fb763f295c66e4d61773149a",
@@ -10875,11 +11090,15 @@
     "last_modified": null
   },
   "https://www.opendemocracy.net/en/can-europe-make-it/agora-votingnvotes/": {
-    "checked": "2026-08-26",
-    "document_sha256": "0749c8911e9a28c9532d9ae250ea934baf6a8e177deae8bfbd57051117309af5",
-    "etag": "W/\"246b5-y1JI95xNpefnLfAxLcdpuRqnjm0\"",
+    "archive_checked": "2026-11-13",
+    "archive_sha256": "78fafb4d9af5f2cb918ac2c762e8b5b0a58139643cd5fa3825b141f9bc3e0008",
+    "archive_url": "http://web.archive.org/web/20240520061254/https://www.opendemocracy.net/en/can-europe-make-it/agora-votingnvotes/",
+    "checked": "2026-11-13",
+    "document_sha256": "f21acbae819e77a9e970b1001c104377d796b5b9591c3149c7b42c1dbda23640",
+    "etag": "W/\"250b2-jngpeVDwT7IAj7T6uONqZYyKP7o\"",
     "evidence": [
       {
+        "checked": "2026-11-13",
         "context": {
           "prefix": ", and leadership. Over the past two weeks, two large Internet-based consultations have been held in Spain. From February 4 through February 11,",
           "sha256": "2163a9505a9748fa9ae73784644b172a1534517250c04cc554c92c1cc55c9e82",
@@ -10894,9 +11113,9 @@
     "last_modified": null
   },
   "https://www.opengovpartnership.org/documents/australia-letter-of-intent-to-join-ogp/": {
-    "archive_checked": "2026-11-06",
+    "archive_checked": "2026-11-13",
     "archive_sha256": "5c965a29ca39bd96002b3de108757fd7cc598d701426ff5fa8d1153aa9016526",
-    "archive_url": "http://web.archive.org/web/20250718135710/https://www.opengovpartnership.org/documents/australia-letter-of-intent-to-join-ogp/",
+    "archive_url": "http://web.archive.org/web/20261113111443/https://www.opengovpartnership.org/documents/australia-letter-of-intent-to-join-ogp/",
     "blocked": "HTTP_403",
     "blocked_since": "2026-08-20",
     "evidence": [
@@ -11249,11 +11468,14 @@
     "last_modified": null
   },
   "https://www.pressenza.com/de/2017/12/demokratie-echtzeit-neue-app-democracy-erfolgreich-crowdfinanziert/": {
-    "checked": "2026-08-26",
-    "document_sha256": "9c6cb3376ac1fa102144ba7205a3d628894e8bfed13b8cab22616d258d76a92f",
+    "archive_checked": "2026-11-13",
+    "archive_url": "http://web.archive.org/web/20260821043213/https://www.pressenza.com/de/2017/12/demokratie-echtzeit-neue-app-democracy-erfolgreich-crowdfinanziert/",
+    "checked": "2026-11-13",
+    "document_sha256": "52eeb8b339e8c4b352e899c80c21b7a44aee414257ea7cd2376716f774699661",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-11-13",
         "context": {
           "prefix": "Y entstand im August 2016 in einer Gespr\u00e4chsrunde \u00fcber die Frage, ob Demokratie nicht mehr bedeutet als alle vier Jahre einen Wahlzettel auszuf\u00fcllen.",
           "sha256": "3711ece573c267375eb841470b9291dd05246ac7066f9f3420558758c35e6d1a",
@@ -11265,6 +11487,7 @@
         "verified": true
       },
       {
+        "checked": "2026-11-13",
         "context": {
           "prefix": "ches Crowdfunding Vergangenen Sonntag (26.11.) konnte das sich mittlerweile formierte Team um Kr\u00fcger einen ersten gro\u00dfen Meilenstein verbuchen:",
           "sha256": "3d04f5dc226d4bc4a2f4b08d8af4e4101599838e34f9dc65741e240f6713b5f1",
@@ -11305,11 +11528,14 @@
     "last_modified": "Wed, 16 Sep 2026 07:52:38 GMT"
   },
   "https://www.prnewswire.com/news-releases/eiu-democracy-index-2025-democracy-stabilises-after-eight-years-of-decline-302734863.html": {
-    "checked": "2026-09-16",
-    "document_sha256": "8f611ac19d34368db530ea1b83b93c7a10231626d4f57ad0442a8ebdb20b3892",
+    "archive_checked": "2026-11-13",
+    "archive_url": "http://web.archive.org/web/20261113105921/https://www.prnewswire.com/news-releases/eiu-democracy-index-2025-democracy-stabilises-after-eight-years-of-decline-302734863.html",
+    "checked": "2026-11-13",
+    "document_sha256": "5d0494d10e6ad432d927e6fc1034523b9e1d0d4a8739c0974fdbfcfa52fcec12",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-11-13",
         "context": {
           "prefix": "ing exception is the United States (ranked 34th), where democracy has deteriorated since Donald Trump's inauguration in January 2025. Globally,",
           "sha256": "3d3d143432a45a9e57b0b55d1b17df424670d18170ec6c8bc58994302830ae42",
@@ -11321,9 +11547,9 @@
         "verified": true
       },
       {
-        "checked": "2026-09-16",
+        "checked": "2026-11-13",
         "context": {
-          "prefix": "Share to X LONDON, April 7, 2026 /PRNewswire/ --",
+          "prefix": "cle LONDON, April 7, 2026 /PRNewswire/ --",
           "sha256": "f9b9b42e2f6ccc6fd99f6f286d8df47c1c52da445a106bf70df9768efe94e022",
           "suffix": "The index shows remarkable stability in the higher-ranked \"full democracies\" and the lower-ranked \"authoritarian regimes\". Movement in the lowe",
           "text": "Following eight years of decline, 2025 marks a stabilisation of democracy scores that suggests an end to the global democratic recession."
@@ -11339,7 +11565,7 @@
         "verified": false
       }
     ],
-    "last_modified": "Wed, 09 Sep 2026 09:33:12 GMT"
+    "last_modified": "Wed, 11 Nov 2026 08:11:02 GMT"
   },
   "https://www.prsa.org.au/qn/2011a_.html": {
     "archive_checked": "2026-10-16",
@@ -11386,10 +11612,14 @@
     "last_modified": "Fri, 29 Oct 2021 05:32:51 GMT"
   },
   "https://www.prsa.org.au/qn/50.html": {
-    "checked": "2026-08-26",
+    "archive_checked": "2026-11-13",
+    "archive_sha256": "992f32a14d63ea5cf45b5e4fd442a0868fc38c6c58a496186c19a57f710e84cc",
+    "archive_url": "http://web.archive.org/web/20260816155858/https://www.prsa.org.au/qn/50.html",
+    "checked": "2026-11-13",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-11-13",
         "context": {
           "prefix": "ns) Bill 1988 Past issues of Quota Notes Death of PRSA Founding President (1982-85)",
           "sha256": "ce1168e2bc40800294529f13952aeb5557b4389b17fae9fc4a6d7b9b2f8ed196",
@@ -11529,7 +11759,7 @@
     "last_modified": null
   },
   "https://www.science.org/doi/10.1126/science.adq2852": {
-    "archive_checked": "2026-11-06",
+    "archive_checked": "2026-11-13",
     "archive_sha256": "d6d227b4f7282e187add081885e329f63be362f9a0523af1d9671943e5dbcc09",
     "archive_url": "http://web.archive.org/web/20260513112925/https://www.science.org/doi/10.1126/science.adq2852",
     "blocked": "HTTP_403",
@@ -11607,11 +11837,15 @@
     "last_modified": "Tue, 11 Aug 2026 22:15:52 GMT"
   },
   "https://www.socentral.no/english": {
-    "checked": "2026-08-26",
-    "document_sha256": "9ee49de21fa2d3862ba976f172ca820cfdf48e4058d70d1e41eb18edb7e37f7b",
+    "archive_checked": "2026-11-13",
+    "archive_sha256": "9ee49de21fa2d3862ba976f172ca820cfdf48e4058d70d1e41eb18edb7e37f7b",
+    "archive_url": "http://web.archive.org/web/20260816160556/https://www.socentral.no/english",
+    "checked": "2026-11-13",
+    "document_sha256": "393e5c5cb946f00ae1b78ee10010af4fa7251dc39d64ee30cbf6f3d6ddac7e3b",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-11-13",
         "context": {
           "prefix": "skills, working every day to bring out the best in each other. Together, we have developed a culture and way of working that we are proud of. \u200d",
           "sha256": "20cf27b55a5d0dc70a935747f9b0a909c29e8b43df1c4253bb71633200a764d2",
@@ -11623,12 +11857,12 @@
         "verified": true
       }
     ],
-    "last_modified": "Wed, 26 Aug 2026 11:22:17 GMT"
+    "last_modified": "Sun, 08 Nov 2026 22:15:05 GMT"
   },
   "https://www.sortitionfoundation.org/amplifying_voices_on_housing": {
-    "archive_checked": "2026-11-06",
-    "archive_sha256": "be61c7ce9a6f986cfadda655fc56893c20630fba9fbb863a07a2d921434c98d8",
-    "archive_url": "http://web.archive.org/web/20260821054630/https://www.sortitionfoundation.org/amplifying_voices_on_housing",
+    "archive_checked": "2026-11-13",
+    "archive_sha256": "45431fa758b507aafab3e69d70e8553fbc710045e2e51a83977dfa7a131bfaa4",
+    "archive_url": "http://web.archive.org/web/20261113112137/https://www.sortitionfoundation.org/amplifying_voices_on_housing",
     "blocked": "HTTP_403",
     "blocked_since": "2026-09-04",
     "checked": "2026-08-26",
@@ -11650,9 +11884,9 @@
     "last_modified": null
   },
   "https://www.sortitionfoundation.org/australia_update": {
-    "archive_checked": "2026-11-06",
-    "archive_sha256": "44a44ea0c091d5953396f33527f7cfff4e0e4aa6f95c318ac93a90d53af397cd",
-    "archive_url": "http://web.archive.org/web/20261106110538/https://www.sortitionfoundation.org/australia_update",
+    "archive_checked": "2026-11-13",
+    "archive_sha256": "db3bb3cb5203eb962fff8b9f18b9891c31054fec2ed66e0e9542e882007db57a",
+    "archive_url": "http://web.archive.org/web/20261113112102/https://www.sortitionfoundation.org/australia_update",
     "blocked": "HTTP_403",
     "blocked_since": "2026-09-04",
     "checked": "2026-08-26",
@@ -11674,7 +11908,7 @@
     "last_modified": null
   },
   "https://www.sortitionfoundation.org/become_a_member_australia": {
-    "archive_checked": "2026-11-06",
+    "archive_checked": "2026-11-13",
     "archive_sha256": "fbed18f19ae69d7b2613ce628eac9e4a81b765fa42db7ff05688e6df05de7ec8",
     "archive_url": "http://web.archive.org/web/20260828153434/https://www.sortitionfoundation.org/become_a_member_australia",
     "blocked": "HTTP_403",
@@ -11698,7 +11932,7 @@
     "last_modified": null
   },
   "https://www.sortitionfoundation.org/ecps_2025": {
-    "archive_checked": "2026-11-06",
+    "archive_checked": "2026-11-13",
     "archive_sha256": "bb1ffaab0b11fe74646bd73be56163378b87417595bac51eb92818e83c0b2bc4",
     "archive_url": "http://web.archive.org/web/20261106112948/https://www.sortitionfoundation.org/ecps_2025",
     "blocked": "HTTP_403",
@@ -11741,6 +11975,8 @@
     "last_modified": null
   },
   "https://www.sortitionfoundation.org/history": {
+    "archive_checked": "2026-11-13",
+    "archive_url": "http://web.archive.org/web/20261113112157/https://www.sortitionfoundation.org/history",
     "blocked": "HTTP_403",
     "blocked_since": "2026-09-04",
     "checked": "2026-08-26",
@@ -11762,7 +11998,7 @@
     "last_modified": null
   },
   "https://www.sortitionfoundation.org/introducing_the_open_democratic_lottery_platform": {
-    "archive_checked": "2026-11-06",
+    "archive_checked": "2026-11-13",
     "archive_sha256": "4cddadad19235562e678585807f188027a87a138fa840aa6828f1e1739c352fb",
     "archive_url": "http://web.archive.org/web/20260611072100/https://www.sortitionfoundation.org/introducing_the_open_democratic_lottery_platform",
     "blocked": "HTTP_403",
@@ -11786,7 +12022,7 @@
     "last_modified": null
   },
   "https://www.sortitionfoundation.org/uk_poll_may_2025": {
-    "archive_checked": "2026-11-06",
+    "archive_checked": "2026-11-13",
     "archive_sha256": "fb387e539b9578af9c761d338804817d6e58395cb18c347c01fbd4893a6cf932",
     "archive_url": "http://web.archive.org/web/20260821064426/https://www.sortitionfoundation.org/uk_poll_may_2025",
     "blocked": "HTTP_403",
@@ -11810,9 +12046,9 @@
     "last_modified": null
   },
   "https://www.sortitionfoundation.org/updates": {
-    "archive_checked": "2026-11-06",
-    "archive_sha256": "0dd60377411c15e694f9ed6f18b7aae4a16824bfaf6d4c2edadfbb0508f735ad",
-    "archive_url": "http://web.archive.org/web/20261011154746/https://www.sortitionfoundation.org/updates",
+    "archive_checked": "2026-11-13",
+    "archive_sha256": "ebbfbd80929eb119488b54f4e393cf41b63cdfa6413295eeba085331577344d9",
+    "archive_url": "http://web.archive.org/web/20261030102404/https://www.sortitionfoundation.org/updates",
     "blocked": "HTTP_403",
     "blocked_since": "2026-10-30",
     "checked": "2026-08-26",
@@ -11857,11 +12093,15 @@
     "url_status": "dead"
   },
   "https://www.strongercharities.org.au/2025/02/11/media-release-charities-call-for-critical-amendments-to-the-electoral-reform-bill/": {
-    "checked": "2026-08-26",
+    "archive_checked": "2026-11-13",
+    "archive_sha256": "fff175ae940f24007d214b18846979074f59e93115af213d310ec860c2802f67",
+    "archive_url": "http://web.archive.org/web/20260821060050/https://www.strongercharities.org.au/2025/02/11/media-release-charities-call-for-critical-amendments-to-the-electoral-reform-bill/",
+    "checked": "2026-11-13",
     "document_sha256": "fff175ae940f24007d214b18846979074f59e93115af213d310ec860c2802f67",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-11-13",
         "context": {
           "prefix": "d under electoral laws across different Australian jurisdictions. Saffron Zomer, Executive Director of the Australian Democracy Network: \u201c",
           "sha256": "59e5e6596b61408992db0c6beaa9cff12d7f4d7813d54159865b88d2ce57e02c",
@@ -11873,14 +12113,18 @@
         "verified": true
       }
     ],
-    "last_modified": "Wed, 26 Aug 2026 11:52:48 GMT"
+    "last_modified": "Fri, 13 Nov 2026 11:32:27 GMT"
   },
   "https://www.taipeitimes.com/News/feat/archives/2024/10/19/2003825522": {
-    "checked": "2026-08-26",
-    "document_sha256": "453f91c6f507206b92b66554cc901156fe81fcdd5e8d8f440e1dd09645009577",
+    "archive_checked": "2026-11-13",
+    "archive_sha256": "ab0314ffde437d913caf69bd2745785c09961a055f7f1e0c425b9aad325fb879",
+    "archive_url": "http://web.archive.org/web/20260821061223/https://www.taipeitimes.com/News/feat/archives/2024/10/19/2003825522",
+    "checked": "2026-11-13",
+    "document_sha256": "598188e813f91a7b53101fd6b56e34bfbfeacc51672ce3eafadb838f40304f9d",
     "etag": null,
     "evidence": [
       {
+        "checked": "2026-11-13",
         "context": {
           "prefix": "e minorities might be too small to influence such group statements, yet could be disproportionately affected by the result. She also noted that",
           "sha256": "13429b28b808a37178bbcb73466c6cc98719396495afe40e3f6a38e09f4603df",
@@ -12032,7 +12276,7 @@
     "last_modified": "Fri, 06 Nov 2026 10:37:59 GMT"
   },
   "https://www.unimelb.edu.au/newsroom/news/2017/november/susan-mckinnon-foundation-and-university-of-melbourne-establish-prestigious-award-for-political-leadership": {
-    "archive_checked": "2026-11-06",
+    "archive_checked": "2026-11-13",
     "archive_sha256": "ca8641c666590ecb850d3557793924270d0d2727a271e82fbb7ebacb8226d6e3",
     "archive_url": "http://web.archive.org/web/20250103063217/https://www.unimelb.edu.au/newsroom/news/2017/november/susan-mckinnon-foundation-and-university-of-melbourne-establish-prestigious-award-for-political-leadership",
     "blocked": "HTTP_403",
@@ -12285,7 +12529,7 @@
     "last_modified": null
   },
   "https://www.weforum.org/organizations/movilizatorio/": {
-    "archive_checked": "2026-10-30",
+    "archive_checked": "2026-11-13",
     "archive_sha256": "ee74b9a04ce5eed7d5a6c1f04499a31ed092f26af83812232bb73a36b532330d",
     "archive_url": "http://web.archive.org/web/20260513195149/https://www.weforum.org/organizations/movilizatorio/",
     "blocked": "HTTP_403",
@@ -12306,7 +12550,7 @@
     "manual_checked": "2026-08-22"
   },
   "https://www.whitehouse.senate.gov/news/release/whitehouse-grassley-issue-statement-on-treasury-departments-final-rule-dismantling-key-element-of-corporate-transparency-act/": {
-    "archive_checked": "2026-11-06",
+    "archive_checked": "2026-11-13",
     "archive_sha256": "ac6c116bb017734fdecb69e9a1fca5c4545c3f99c589e753d6cf49f0a660dcc9",
     "archive_url": "http://web.archive.org/web/20261023090607/https://www.whitehouse.senate.gov/news/release/whitehouse-grassley-issue-statement-on-treasury-departments-final-rule-dismantling-key-element-of-corporate-transparency-act/",
     "blocked": "HTTP_403",
@@ -12363,16 +12607,19 @@
     "last_modified": "Wed, 26 Aug 2026 11:24:40 GMT"
   },
   "https://www.ycombinator.com/companies/democracy-earth": {
-    "checked": "2026-08-29",
-    "document_sha256": "64104d8daab13cb2523f85696563b81f169bea7bbbbbc8fe39ad09edc004fb64",
-    "etag": "W/\"62d096e4722e7a7ad565ce346d0daca5\"",
+    "archive_checked": "2026-11-13",
+    "archive_sha256": "c5f5c5b85f9b0bde3f8d07e4f49c472f7fbf9a68656e74af6a52ea86204e6709",
+    "archive_url": "http://web.archive.org/web/20260614140347/https://www.ycombinator.com/companies/democracy-earth",
+    "checked": "2026-11-13",
+    "document_sha256": "10e2ab51731a9ad4d65ffe3f1c865c572fa362eab946f4dae617c7da77ff3b4c",
+    "etag": "W/\"20b298ecc15a368c26e11f05865a4d1c\"",
     "evidence": [
       {
-        "checked": "2026-08-29",
+        "checked": "2026-11-13",
         "context": {
           "prefix": "nd Singularity University (2016). We did research for Alphabet, World Economic Forum and the University of Berkeley.",
           "sha256": "c90ae5009c68609175d2ffdf4bbd2a6e9e059cbef1a72cfb6e371fb42fc70d88",
-          "suffix": "Guido Vilari\u00f1o Founder Footer Y Combinator",
+          "suffix": "Guido Vilari\u00f1o Founder Footer Y Combinator Make something people",
           "text": "Democracy Earth Founded: 2015 Batch: Winter 2015 Team Size: 2 Status: Active Location: Madrid, Spain Founders Pia Mancini Founder Pia Mancini Founder Santiago Siri Founder/President Santiago Siri Founder/President Guido Vilari\u00f1o Founder"
         },
         "id": "c90ae5009c68609175d2ffdf4bbd2a6e9e059cbef1a72cfb6e371fb42fc70d88",

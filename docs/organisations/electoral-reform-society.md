@@ -84,10 +84,10 @@ activity:
       Representatio'
     url: https://electoral-reform.org.uk/the-israeli-electoral-system-is-not-representative-of-proportional-representation/
   scrape:
-    date: 2026-10-29
+    date: 2026-11-09
     note: Latest news page scraped
     url: https://www.electoral-reform.org.uk/latest-news-and-research/blog/
-    checked: 2026-11-06
+    checked: 2026-11-13
 last_checked: '2026-09-21'
 ---
 

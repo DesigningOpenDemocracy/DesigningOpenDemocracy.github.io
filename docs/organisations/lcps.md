@@ -59,7 +59,7 @@ activity:
     date: 2026-10-12
     note: Latest news page scraped
     url: https://www.lcps-lebanon.org/en/press
-    checked: 2026-11-06
+    checked: 2026-11-13
 last_checked: '2026-09-14'
 ---
 

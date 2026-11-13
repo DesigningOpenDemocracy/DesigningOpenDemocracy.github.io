@@ -1,8 +1,28 @@
 {
   "feed": "https://kongra-star.org/?feed=rss2",
-  "latest": "2026-11-05",
-  "span_days": 5,
+  "latest": "2026-11-12",
+  "span_days": 11,
   "items": [
+    {
+      "date": "2026-11-12",
+      "title": "Munteha Mahmûd: Jina zana û birêxistinkirî dikare xwe ji her cure tudiyê rizgar bike",
+      "url": "https://kongra-star.org/?p=34562"
+    },
+    {
+      "date": "2026-11-11",
+      "title": "Kongra Star: Tundiya li dijî jinan pirsgirêkeke mirovî û civakî ye,pêdivî bi têkoşîneke hevpar heye",
+      "url": "https://kongra-star.org/?p=34556"
+    },
+    {
+      "date": "2026-11-10",
+      "title": "Remziye Mihemed: Yekîtiya jinan û misogerkirina mafên wan di destûra Sûriyê de bingeha têkoşîna li dijî tundiyê ye",
+      "url": "https://kongra-star.org/?p=34553"
+    },
+    {
+      "date": "2026-11-08",
+      "title": "Platforma Çalakiyên Hevbeş a Tevger û Rêxistina Jinan starta çalakiyên 25`ê Mijdarê ragihand",
+      "url": "https://kongra-star.org/?p=34550"
+    },
     {
       "date": "2026-11-05",
       "title": "​Konfransa Til Temirê tekezî li ser yekîtiya jınan di rûbirûbûna astengiyan kir",
@@ -232,30 +252,10 @@
       "date": "2026-09-28",
       "title": "Xwendekarên li bajarê Qamişloyê daxwaz kirin ku zimanê kurdî wekî zimanekî fermî were naskirin",
       "url": "https://kongra-star.org/?p=33723"
-    },
-    {
-      "date": "2026-09-22",
-      "title": "Gelê Herêma Cizîrê ,Zimanê me Hebûna meye daketin qadan",
-      "url": "https://kongra-star.org/?p=33688"
-    },
-    {
-      "date": "2026-09-17",
-      "title": "Li Qamişlo çalakiya konvedanê bi dawî bû",
-      "url": "https://kongra-star.org/?p=33663"
-    },
-    {
-      "date": "2026-09-16",
-      "title": "Xwendekarên dibistana Şehîd Mistefa Gulo doza mafê perwerdeya bi zimanê kurdî kir",
-      "url": "https://kongra-star.org/?p=33645"
-    },
-    {
-      "date": "2026-09-16",
-      "title": "Rêber Abdullah Ocalan: Divê provakasyona li Rojava demildest bê rawestandin",
-      "url": "https://kongra-star.org/?p=33642"
     }
   ],
   "fetch": {
-    "etag": "W/\"14d7270b5e635b91abd68782bbade8bc\"",
-    "last_modified": "Thu, 05 Nov 2026 14:29:42 GMT"
+    "etag": "W/\"c88025636f86738613d0d4f08cc7af6d\"",
+    "last_modified": "Thu, 12 Nov 2026 14:56:10 GMT"
   }
 }

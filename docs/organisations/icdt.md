@@ -72,10 +72,10 @@ activity:
     url: https://chinademocrats.org/en
     checked: 2026-09-28
   rss:
-    date: 2026-11-01
-    note: 'Latest post: 不靠推土机，靠选票：塞尔维亚学生运动胜选后的法治难题'
-    url: https://chinademocrats.org/?p=7767
-    checked: 2026-11-06
+    date: 2026-11-12
+    note: 'Latest post: 习近平为何清洗自己的人？——托里吉安谈恐惧、党性与接班政治'
+    url: https://chinademocrats.org/?p=7868
+    checked: 2026-11-13
 last_checked: '2026-09-28'
 ---
 

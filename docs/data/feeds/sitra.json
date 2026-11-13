@@ -1,8 +1,33 @@
 {
   "feed": "https://www.sitra.fi/feed",
-  "latest": "2026-11-04",
+  "latest": "2026-11-12",
   "span_days": 16,
   "items": [
+    {
+      "date": "2026-11-12",
+      "title": "Hyvinvointialueen hackathon oli menestys – miten opit saadaan leviämään laajasti sote-palveluiden arkeen?",
+      "url": "https://www.sitra.fi/blogit/hyvinvointialueen-hackathon-oli-menestys-miten-opit-saadaan-leviamaan-laajasti-sote-palveluiden-arkeen/"
+    },
+    {
+      "date": "2026-11-12",
+      "title": "12 000 osallistujan verkkokeskustelu toi esiin meitä yhdistävät ja jakavat työperäisen maahanmuuton kysymykset",
+      "url": "https://www.sitra.fi/artikkelit/12-000-osallistujan-verkkokeskustelu-toi-esiin-meita-yhdistavat-ja-jakavat-tyoperaisen-maahanmuuton-kysymykset/"
+    },
+    {
+      "date": "2026-11-09",
+      "title": "Kasvuyrityksille lisää kotimaista pääomaa ja omistajia – koko Suomi hyötyy",
+      "url": "https://www.sitra.fi/artikkelit/kasvuyrityksille-lisaa-kotimaista-paaomaa-ja-omistajia-koko-suomi-hyotyy/"
+    },
+    {
+      "date": "2026-11-06",
+      "title": "Sitran lausunto EHDS-asetuksen terveystietojen toisiokäyttöä koskevasta hallituksen esityksestä",
+      "url": "https://www.sitra.fi/artikkelit/sitran-lausunto-ehds-asetuksen-terveystietojen-toisiokayttoa-koskevasta-hallituksen-esityksesta/"
+    },
+    {
+      "date": "2026-11-06",
+      "title": "Sitra hakee Pohjoismaista kasvua ja investointeja – Nordic Compass vie yhteistyön käytäntöön",
+      "url": "https://www.sitra.fi/uutiset/nordic-compass-vie-pohjoismaista-yhteistyota-kaytantoon-sitra-hakee-teknologiayhteistyosta-kasvua/"
+    },
     {
       "date": "2026-11-04",
       "title": "Petetty tulevaisuuslupaus – miksi nuoret protestoivat?",
@@ -180,7 +205,7 @@
     }
   ],
   "fetch": {
-    "etag": "\"5d28370f96c645a20017e58bad96fd8d\"",
-    "last_modified": "Fri, 06 Nov 2026 09:53:30 GMT"
+    "etag": "\"15695a8bb3729a5569e0712c013f935f\"",
+    "last_modified": "Fri, 13 Nov 2026 10:14:15 GMT"
   }
 }

@@ -90,10 +90,10 @@ activity:
       taken effect'
     url: https://prsa.org.au/news/2020/#2020-07b
   scrape:
-    date: 2026-06-01
+    date: 2026-09-01
     note: Latest news page scraped
     url: https://www.prsa.org.au/qn/indexqn.htm
-    checked: 2026-11-06
+    checked: 2026-11-13
 last_checked: '2026-09-15'
 ---
 

@@ -56,11 +56,11 @@ activity:
     url: https://www.ettemedia.com/
     checked: 2026-09-16
   rss:
-    date: 2026-11-05
-    note: 'Latest post: Indie media analysis of Jillian Segal’s antisemitism report
-      that you need to rea'
-    url: https://www.ettemedia.com/independent-media-coverage-jillian-segal-antisemitism-report-update/
-    checked: 2026-11-06
+    date: 2026-11-08
+    note: 'Latest post: ''Public still unaware of Google’s complicity'': Former Google
+      AI engineer speaks '
+    url: https://www.ettemedia.com/google-whistleblower-sofia-liguori/
+    checked: 2026-11-13
 last_checked: '2026-09-16'
 contributors:
 - BrianKhuu

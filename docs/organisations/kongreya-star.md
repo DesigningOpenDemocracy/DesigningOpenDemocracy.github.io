@@ -56,11 +56,11 @@ activity:
     url: https://kongra-star.org/eng/
     checked: 2026-09-21
   rss:
-    date: 2026-11-05
-    note: 'Latest post: Kongra star a Til Temir êrîşên li ser xwendekarên kurd şermezar
-      kir'
-    url: https://kongra-star.org/?p=34538
-    checked: 2026-11-06
+    date: 2026-11-12
+    note: 'Latest post: Munteha Mahmûd: Jina zana û birêxistinkirî dikare xwe ji her
+      cure tudiyê rizgar '
+    url: https://kongra-star.org/?p=34562
+    checked: 2026-11-13
 last_checked: '2026-09-21'
 ---
 

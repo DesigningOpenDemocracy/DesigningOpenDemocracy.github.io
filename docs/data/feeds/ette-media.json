@@ -1,8 +1,21 @@
 {
   "feed": "https://www.ettemedia.com/feed",
-  "latest": "2026-11-05",
-  "span_days": 25,
+  "latest": "2026-11-08",
+  "span_days": 24,
   "items": [
+    {
+      "date": "2026-11-08",
+      "title": "'Public still unaware of Google’s complicity': Former Google AI engineer speaks out, inspiring other employees to fight gag clause",
+      "url": "https://www.ettemedia.com/google-whistleblower-sofia-liguori/"
+    },
+    {
+      "date": "2026-11-06",
+      "title": "Ettention Please: Stories you might have missed this week",
+      "url": "https://www.ettemedia.com/ettention-please-stories-you-might-have-missed-this-week-nov-7/",
+      "signals": [
+        "mobilisation"
+      ]
+    },
     {
       "date": "2026-11-05",
       "title": "Indie media analysis of Jillian Segal’s antisemitism report that you need to read",
@@ -227,6 +240,6 @@
     }
   ],
   "fetch": {
-    "etag": "W/\"a48d-loEVvJeSt+k+mb6thiy/2BkR0eI\""
+    "etag": "W/\"b5a4-ZGQjQc6+yf61Ay782wtecPF344o\""
   }
 }

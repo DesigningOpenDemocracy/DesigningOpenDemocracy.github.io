@@ -1,8 +1,21 @@
 {
   "feed": "https://www.afrobarometer.org/feed",
-  "latest": "2026-11-06",
-  "span_days": 24,
+  "latest": "2026-11-11",
+  "span_days": 8,
   "items": [
+    {
+      "date": "2026-11-11",
+      "title": "Nigerians doubt electoral fairness ahead of 2027 polls, expect widespread abuses, latest Afrobarometer survey shows",
+      "url": "https://www.afrobarometer.org/articles/nigerians-doubt-electoral-fairness-ahead-of-2027-polls-expect-widespread-abuses-latest-afrobarometer-survey-shows/",
+      "signals": [
+        "publication"
+      ]
+    },
+    {
+      "date": "2026-11-11",
+      "title": "La plupart des Camerounais déplorent la situation économique  de leur pays",
+      "url": "https://www.afrobarometer.org/articles/la-plupart-des-camerounais-deplorent-la-situation-economique-de-leur-pays/"
+    },
     {
       "date": "2026-11-06",
       "title": "Zimbabweans see China’s influence as substantial but are divided on its benefits, Afrobarometer study indicates",
@@ -10,6 +23,16 @@
       "signals": [
         "publication"
       ]
+    },
+    {
+      "date": "2026-11-06",
+      "title": "Près de la moitié des Gabonais estiment que l’égalité de voix  dans le ménage affaiblit l’autorité des hommes",
+      "url": "https://www.afrobarometer.org/articles/pres-de-la-moitie-des-gabonais-estiment-que-legalite-de-voix-dans-le-menage-affaiblit-lautorite-des-hommes/"
+    },
+    {
+      "date": "2026-11-06",
+      "title": "AB Update October 2026",
+      "url": "https://www.afrobarometer.org/articles/ab-update-october-2026/"
     },
     {
       "date": "2026-11-05",
@@ -159,6 +182,6 @@
     }
   ],
   "fetch": {
-    "last_modified": "Fri, 06 Nov 2026 08:38:07 GMT"
+    "last_modified": "Thu, 12 Nov 2026 13:24:30 GMT"
   }
 }

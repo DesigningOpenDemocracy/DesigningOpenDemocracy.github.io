@@ -1,8 +1,33 @@
 {
   "feed": "https://fairvote.org/feed",
-  "latest": "2026-11-05",
-  "span_days": 13,
+  "latest": "2026-11-12",
+  "span_days": 16,
   "items": [
+    {
+      "date": "2026-11-12",
+      "title": "How will remaining ballots affect Alaska’s statewide elections?",
+      "url": "https://fairvote.org/how-will-remaining-ballots-affect-alaskas-statewide-elections/"
+    },
+    {
+      "date": "2026-11-11",
+      "title": "Preliminary ranked choice voting results in Alaska’s 2026 elections",
+      "url": "https://fairvote.org/results-and-analysis-from-alaskas-2026-elections/"
+    },
+    {
+      "date": "2026-11-10",
+      "title": "Results from Washington, DC’s ranked choice voting general election",
+      "url": "https://fairvote.org/results-from-washington-dcs-ranked-choice-voting-general-election/"
+    },
+    {
+      "date": "2026-11-09",
+      "title": "Analysis: Ranked choice voting delivers better city elections",
+      "url": "https://fairvote.org/analysis-ranked-choice-voting-delivers-better-city-elections/"
+    },
+    {
+      "date": "2026-11-06",
+      "title": "Irvine, CA approves ranked choice voting",
+      "url": "https://fairvote.org/irvine-ca-approves-ranked-choice-voting/"
+    },
     {
       "date": "2026-11-05",
       "title": "Initial results from Maine’s November 2026 ranked choice voting elections",
@@ -13,18 +38,8 @@
     },
     {
       "date": "2026-11-04",
-      "title": "Preliminary ranked choice voting results in Alaska’s 2026 elections",
-      "url": "https://fairvote.org/results-and-analysis-from-alaskas-2026-elections/"
-    },
-    {
-      "date": "2026-11-04",
       "title": "Longmont, CO votes to adopt ranked choice voting",
       "url": "https://fairvote.org/longmont-co-votes-to-adopt-ranked-choice-voting/"
-    },
-    {
-      "date": "2026-11-04",
-      "title": "Analysis: Ranked choice voting delivers better city elections",
-      "url": "https://fairvote.org/analysis-ranked-choice-voting-delivers-better-city-elections/"
     },
     {
       "date": "2026-11-04",
@@ -154,7 +169,7 @@
     }
   ],
   "fetch": {
-    "etag": "W/\"b5ef146da57bb9ca6f2223efa673a3ac\"",
-    "last_modified": "Thu, 05 Nov 2026 22:24:24 GMT"
+    "etag": "W/\"f7bf0909145362f63a213603f92d0880\"",
+    "last_modified": "Fri, 13 Nov 2026 06:59:07 GMT"
   }
 }

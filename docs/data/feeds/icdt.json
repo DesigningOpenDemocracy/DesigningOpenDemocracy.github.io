@@ -1,8 +1,23 @@
 {
   "feed": "https://chinademocrats.org/?feed=rss2",
-  "latest": "2026-11-01",
-  "span_days": 13,
+  "latest": "2026-11-12",
+  "span_days": 19,
   "items": [
+    {
+      "date": "2026-11-12",
+      "title": "习近平为何清洗自己的人？——托里吉安谈恐惧、党性与接班政治",
+      "url": "https://chinademocrats.org/?p=7868"
+    },
+    {
+      "date": "2026-11-08",
+      "title": "布鲁金斯学会：民主党为何大胜，2028年为何仍未可知",
+      "url": "https://chinademocrats.org/?p=7833"
+    },
+    {
+      "date": "2026-11-06",
+      "title": "明克胜：漫长的黄昏——人口衰退与政治僵化下的中国",
+      "url": "https://chinademocrats.org/?p=7812"
+    },
     {
       "date": "2026-11-01",
       "title": "不靠推土机，靠选票：塞尔维亚学生运动胜选后的法治难题",
@@ -203,7 +218,7 @@
     }
   ],
   "fetch": {
-    "etag": "\"a85c20b9c214aa8b6e9608ad605c9adc\"",
-    "last_modified": "Fri, 06 Nov 2026 02:00:00 GMT"
+    "etag": "\"af4d26b27c5ff4cd3eed5ca3abaf8401\"",
+    "last_modified": "Thu, 12 Nov 2026 23:23:02 GMT"
   }
 }

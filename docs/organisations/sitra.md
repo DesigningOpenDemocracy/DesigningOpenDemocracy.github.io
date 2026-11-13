@@ -57,10 +57,11 @@ activity:
     url: https://www.sitra.fi/en/
     checked: 2026-09-19
   rss:
-    date: 2026-11-04
-    note: 'Latest post: Petetty tulevaisuuslupaus – miksi nuoret protestoivat?'
-    url: https://www.sitra.fi/blogit/petetty-tulevaisuuslupaus-miksi-nuoret-protestoivat/
-    checked: 2026-11-06
+    date: 2026-11-12
+    note: 'Latest post: 12 000 osallistujan verkkokeskustelu toi esiin meitä yhdistävät
+      ja jakavat työpe'
+    url: https://www.sitra.fi/artikkelit/12-000-osallistujan-verkkokeskustelu-toi-esiin-meita-yhdistavat-ja-jakavat-tyoperaisen-maahanmuuton-kysymykset/
+    checked: 2026-11-13
 last_checked: '2026-09-19'
 ---
 

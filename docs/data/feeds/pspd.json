@@ -1,8 +1,58 @@
 {
   "feed": "https://www.peoplepower21.org/feed",
-  "latest": "2026-10-30",
+  "latest": "2026-11-13",
   "span_days": 1,
   "items": [
+    {
+      "date": "2026-11-13",
+      "title": "돌봄 숙의토론 참여 안내 💚",
+      "url": "https://peoplepower21.org/welfare/2056429"
+    },
+    {
+      "date": "2026-11-13",
+      "title": "[논평] 우촌초 공익제보자 항소심 무죄 선고 환영한다",
+      "url": "https://peoplepower21.org/whistleblower/2056456"
+    },
+    {
+      "date": "2026-11-12",
+      "title": "한국인원폭피해자지원특별법 2세지원 개정 정부동의 촉구 기자회견",
+      "url": "https://peoplepower21.org/peace/2056415"
+    },
+    {
+      "date": "2026-11-12",
+      "title": "우촌초 공익제보자 형사고소는 명백한 보복성 불이익조치",
+      "url": "https://peoplepower21.org/whistleblower/2056330"
+    },
+    {
+      "date": "2026-11-12",
+      "title": "[후기] 월간 평화산책 : 수요시위에 함께해요🦋",
+      "url": "https://peoplepower21.org/peace/2055311"
+    },
+    {
+      "date": "2026-11-12",
+      "title": "[초대] 바람직한 연금개혁을 위한 시민설명회(12/4, 참여연대 아름드리홀)",
+      "url": "https://peoplepower21.org/welfare/2056372"
+    },
+    {
+      "date": "2026-11-12",
+      "title": "[중꺾정79화] 2028년 위성정당을 또 보지 않으려면 무엇을 해야 할까?",
+      "url": "https://peoplepower21.org/politics/2056311"
+    },
+    {
+      "date": "2026-11-12",
+      "title": "[연속기고①] “걱정하지 마십시오. 법이 지켜줍니다”라고 말할 수 없었다",
+      "url": "https://peoplepower21.org/whistleblower/2056336"
+    },
+    {
+      "date": "2026-11-12",
+      "title": "[성명] 22대 국회와 제정당은 차별금지법/평등법 제정하라",
+      "url": "https://peoplepower21.org/solidarity/2056352"
+    },
+    {
+      "date": "2026-11-12",
+      "title": "[기자회견] 22대 국회는 차별금지/평등법 조속히 제정하라",
+      "url": "https://peoplepower21.org/solidarity/2056393"
+    },
     {
       "date": "2026-10-30",
       "title": "[논평] 형사소송법 개정해 내란 판결문 실명본 공개해야",
@@ -12,11 +62,6 @@
       "date": "2026-10-29",
       "title": "정기국회에서 보복소송 금지, 책임감면 의무화 등 공익신고자 보호법 개정안 처리돼야",
       "url": "https://peoplepower21.org/whistleblower/2055397"
-    },
-    {
-      "date": "2026-10-29",
-      "title": "[함께해요]월간 평화산책 : 수요시위에 함께해요🦋 (11/11)",
-      "url": "https://peoplepower21.org/peace/2055311"
     },
     {
       "date": "2026-10-29",
@@ -210,55 +255,9 @@
       "date": "2026-10-02",
       "title": "한 눈에 보는 참여연대의 한 달",
       "url": "https://peoplepower21.org/%5B%EB%A9%94%EC%9D%B8%ED%8E%B8%EC%A7%91%5D-Main%2A%2ADisplay/2028802"
-    },
-    {
-      "date": "2026-10-02",
-      "title": "[이슈리포트] 공익제보자 10명 중 7명, 2건 이상 보복 소송 경험해",
-      "url": "https://peoplepower21.org/whistleblower/2030304"
-    },
-    {
-      "date": "2026-10-02",
-      "title": "[논평] 결국 엘리엇 ISDS도 배상, 정부는 삼성 불법합병 관련자들에 책임 물어라",
-      "url": "https://peoplepower21.org/economy/2030295"
-    },
-    {
-      "date": "2026-10-02",
-      "title": "[기자회견] 책임성·투명성 강화 위한 선거관리위원회법 개정안 입법청원",
-      "url": "https://peoplepower21.org/politics/2030200"
-    },
-    {
-      "date": "2026-10-02",
-      "title": "[4주기] 유가족과 함께하는 도심걷기(10/17)",
-      "url": "https://peoplepower21.org/solidarity/2030317"
-    },
-    {
-      "date": "2026-10-02",
-      "title": "[4주기] 시민들과 함께하는 보라기억물품 공작소(10/7, 21)",
-      "url": "https://peoplepower21.org/solidarity/2030298"
-    },
-    {
-      "date": "2026-10-01",
-      "title": "막아내자✊",
-      "url": "https://peoplepower21.org/%5B%EB%A9%94%EC%9D%B8%ED%8E%B8%EC%A7%91%5D-Main%2A%2ADisplay/2030270"
-    },
-    {
-      "date": "2026-10-01",
-      "title": "[논평] 공소청·중수청 개청, 개혁의 출발점으로 삼아야",
-      "url": "https://peoplepower21.org/judiciary/2030292"
-    },
-    {
-      "date": "2026-10-01",
-      "title": "[K-피스칼럼] 한반도 평화는 어떻게 만들까",
-      "url": "https://peoplepower21.org/peace/2030262"
     }
   ],
   "fetch": {
-    "etag": "\"4379ea9ef09f8df4400213d05b1f993b\""
-  },
-  "failing": {
-    "error": "UNPARSEABLE",
-    "since": "2026-11-06",
-    "count": 1,
-    "last": "2026-11-06"
+    "etag": "\"bebffbb2ee94fcc8ef256961c5131b73\""
   }
 }
