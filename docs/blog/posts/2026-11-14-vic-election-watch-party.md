@@ -29,30 +29,40 @@ location:
   address: "Level 1, 41-43 Stewart St, Richmond VIC 3121"
 ---
 
-# Election night, together: a cross-party watch party in Richmond
-
 <!-- DRAFT SCAFFOLD for Nick Merange to rewrite in his own words. Delete this comment and `draft: true` when ready. -->
 
-Election night is usually spent in separate rooms. On Saturday 28 November, from 7 pm to 10 pm, Designing Open Democracy is hosting a casual get-together at Inspire9 in Richmond where it isn't: results on the big screen, and people from every party in the room.[^humanitix]
+This one's ours: on Saturday 28 November, DOD is hosting a casual cross-party watch party for the Victorian state election at Inspire9 in Richmond.[^humanitix] Results on the big screen, people from every party in the room.
 
 <!-- more -->
 
-**Main lesson** —
+- Election night is usually spent in separate rooms; this one isn't.[^humanitix]
+- TODO (Nick): one line on why you proposed it, e.g. what sharing the count across party lines is for.
 
-- TODO (Nick): what should a reader take away? e.g. why sharing the count across party lines matters for a healthy democracy.
+## What it is
 
-## Why we're doing it
+The ["Cross-party watch party for the 2026 Victorian state election"](https://events.humanitix.com/cross-party-watch-party-for-the-2026-victorian-state-election) runs 7–10pm on Saturday 28 November 2026 at Inspire9, Level 1, 41-43 Stewart Street, Richmond.
 
-TODO (Nick): the idea behind the night, in your own words.
+TODO (Nick): a paragraph in your own words on the idea behind the night.
 
-## What to expect
+What to expect:
 
 - Live results on the big screen
 - Bring your own snack and drink
-- No speeches, no panels, no campaigning
+- A friendly room: no speeches, no panels, no campaigning
 
-Members and volunteers of any party, independents and the unaffiliated are all welcome. It's free, but RSVP is required as places are limited: [RSVP on Humanitix](https://events.humanitix.com/cross-party-watch-party-for-the-2026-victorian-state-election).
+Members and volunteers of any party, independents and the unaffiliated are all welcome.[^welcome] It's free, but RSVP is required as places are limited.[^cost] DOD is nonpartisan and endorses no party or candidate.
 
-DOD is nonpartisan and endorses no party or candidate.
+<p style="text-align:center; margin: 1.5rem 0;">
+  <a class="hero-cta-btn hero-cta-primary" href="https://events.humanitix.com/cross-party-watch-party-for-the-2026-victorian-state-election" target="_blank" rel="noopener">RSVP for 28 November →</a>
+</p>
 
-[^humanitix]: "Designing Open Democracy is hosting a casual cross-party watch party for the 2026 Victorian state election." [Cross-party watch party for the 2026 Victorian state election](https://events.humanitix.com/cross-party-watch-party-for-the-2026-victorian-state-election), Humanitix.
+## Sources & further reading
+
+- ["Cross-party watch party for the 2026 Victorian state election"](https://events.humanitix.com/cross-party-watch-party-for-the-2026-victorian-state-election) — Humanitix event listing
+- [2026 Victorian state election](https://en.wikipedia.org/wiki/2026_Victorian_state_election) — Wikipedia
+
+[^humanitix]: "Election night is usually spent in separate rooms. This one isn’t." [Cross-party watch party for the 2026 Victorian state election](https://events.humanitix.com/cross-party-watch-party-for-the-2026-victorian-state-election), Humanitix.
+
+[^welcome]: "Members and volunteers of any party, independents and the unaffiliated are all welcome." [Cross-party watch party for the 2026 Victorian state election](https://events.humanitix.com/cross-party-watch-party-for-the-2026-victorian-state-election), Humanitix.
+
+[^cost]: "Cost: Free, RSVP required as places are limited" [Cross-party watch party for the 2026 Victorian state election](https://events.humanitix.com/cross-party-watch-party-for-the-2026-victorian-state-election), Humanitix.
