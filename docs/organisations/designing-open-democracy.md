@@ -90,6 +90,7 @@ events:
   notable_reason: Cross-party election-night gathering
   kind: gathering
   location: Inspire9, Level 1/41-43 Stewart St, Richmond VIC 3121
+  coverage_url: /blog/2026/11/14/election-night-together-a-cross-party-watch-party-in-richmond/
 activity:
   manual:
     checked: 2026-08-07

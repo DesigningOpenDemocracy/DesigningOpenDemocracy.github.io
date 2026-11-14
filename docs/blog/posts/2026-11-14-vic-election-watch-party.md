@@ -1,7 +1,6 @@
 ---
 title: "Election night, together: a cross-party watch party in Richmond"
 date: 2026-11-14
-draft: true
 summary: "DOD is hosting a free, casual cross-party watch party for the 2026 Victorian state election at Inspire9 in Richmond on Saturday 28 November."
 authors:
   - Nick Merange
@@ -29,20 +28,16 @@ location:
   address: "Level 1, 41-43 Stewart St, Richmond VIC 3121"
 ---
 
-<!-- DRAFT SCAFFOLD for Nick Merange to rewrite in his own words. Delete this comment and `draft: true` when ready. -->
-
 This one's ours: on Saturday 28 November, DOD is hosting a casual cross-party watch party for the Victorian state election at Inspire9 in Richmond.[^humanitix] Results on the big screen, people from every party in the room.
 
 <!-- more -->
 
 - Election night is usually spent in separate rooms; this one isn't.[^humanitix]
-- TODO (Nick): one line on why you proposed it, e.g. what sharing the count across party lines is for.
+- It's a relaxed get-together with the count on in the background, not a campaign event.
 
 ## What it is
 
 The ["Cross-party watch party for the 2026 Victorian state election"](https://events.humanitix.com/cross-party-watch-party-for-the-2026-victorian-state-election) runs 7–10pm on Saturday 28 November 2026 at Inspire9, Level 1, 41-43 Stewart Street, Richmond.
-
-TODO (Nick): a paragraph in your own words on the idea behind the night.
 
 What to expect:
 
