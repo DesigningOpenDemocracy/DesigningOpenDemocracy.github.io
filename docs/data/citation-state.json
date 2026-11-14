@@ -5238,6 +5238,26 @@
     "blocked_since": "2026-08-18",
     "url_status": "dead"
   },
+  "https://events.humanitix.com/cross-party-watch-party-for-the-2026-victorian-state-election": {
+    "checked": "2026-11-14",
+    "document_sha256": "da8b0fcd7b660164a8337384b1a278bc85d327253056f72e4f3257938cac9966",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-11-14",
+        "context": {
+          "prefix": "ether. Results on the big screen, people from every party in the room. Election night is usually spent in separate rooms. This one isn\u2019t.",
+          "sha256": "980bfa83e88be4a81ca5bc5ab6d2bddd82f1f3bf91f1ce45e129529dd28c9d2b",
+          "suffix": "Think of it as an early end-of-year get-together that happens to have the count on in the background. Members and volunteers of any party, independen",
+          "text": "Designing Open Democracy is hosting a casual cross-party watch party for the 2026 Victorian state election. Think of it as an early end-of-year get-together that happens to have the count on in the background. Members and volunteers of any party, independents and the unaffiliated are all welcome."
+        },
+        "id": "0128ca7aaf406dbc2e1236a400f23a7633b7b00585390889ba52e91aee8be4e0",
+        "quote": "Designing Open Democracy is hosting a casual cross-party watch party for the 2026 Victorian state election.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
   "https://events.humanitix.com/finding-common-ground-with-democracyco-improving-the-legitimacy-of-public-policy": {
     "blocked": "HTTP_403",
     "blocked_since": "2026-09-04"
@@ -9502,12 +9522,12 @@
     "last_modified": null
   },
   "https://www.designingopendemocracy.com/blog/2016/12/19/inaugural-designing-open-democracy-meeting/": {
-    "checked": "2026-09-11",
-    "document_sha256": "835cf1675c29262df0ef764e30628352c28926de51e94e4555ea42f571240dab",
-    "etag": "W/\"6a9ec5ea-4cda7\"",
+    "checked": "2026-11-14",
+    "document_sha256": "d201617e8cdb49004d939cb60815917737046dbb03b84b729acd6394049fa5a4",
+    "etag": "W/\"6af86c6b-3e075\"",
     "evidence": [
       {
-        "checked": "2026-09-11",
+        "checked": "2026-11-14",
         "context": {
           "prefix": "This is a historical post from meetup.com where we sent the first message after our very first meeting at 19/12/2016 Hello Everyone!",
           "sha256": "596d09e225107816bbb960ce2d396ba03012597f3e3c7239777d350befe04331",
@@ -9519,18 +9539,18 @@
         "verified": true
       }
     ],
-    "last_modified": "Mon, 07 Sep 2026 14:10:50 GMT"
+    "last_modified": "Sat, 14 Nov 2026 14:12:59 GMT"
   },
   "https://www.designingopendemocracy.com/blog/2018/02/10/proposed-initial-strategy-of-designing-open-democracy/": {
     "archive_checked": "2026-11-06",
     "archive_sha256": "113dc27f006f9aee4657d0358436d354610b9cefa37444fa923ee3dc78c8e94c",
     "archive_url": "http://web.archive.org/web/20260821043921/https://www.designingopendemocracy.com/blog/2018/02/10/proposed-initial-strategy-of-designing-open-democracy/",
-    "checked": "2026-11-06",
+    "checked": "2026-11-14",
     "document_sha256": "5b64f2aa8b18ce8c352239f04bb5e3de0aaaf5b41cec6451fc18f09374121c8a",
-    "etag": "W/\"6aec9074-29979\"",
+    "etag": "W/\"6af86c6b-29979\"",
     "evidence": [
       {
-        "checked": "2026-11-06",
+        "checked": "2026-11-14",
         "context": {
           "prefix": "tical-alliances political-discourse public-awareness workshops Proposed (Initial) Strategy of Designing Open Democracy Rationale & Vision",
           "sha256": "d61364727cdb81b6061a95993507e41502ef3dcbe47b4bc1fff372b8f5e158be",
@@ -9542,7 +9562,7 @@
         "verified": true
       }
     ],
-    "last_modified": "Thu, 05 Nov 2026 14:19:32 GMT"
+    "last_modified": "Sat, 14 Nov 2026 14:12:59 GMT"
   },
   "https://www.designingopendemocracy.com/blog/2018/12/18/designing-open-democracy-state-of-democracy-in-australia-in-2018/": {
     "archive_checked": "2026-11-13",

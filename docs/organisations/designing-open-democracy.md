@@ -75,12 +75,15 @@ events:
 - date: '2026-11-28'
   title: Cross-party watch party for the 2026 Victorian state election
   short_title: Victorian election cross-party watch party
-  source: Calendar invitation for the watch party being planned by Nick Merange, received
-    2026-11-13 (no public event page yet)
-  note: Nick Merange is planning a cross-party gathering to watch the Victorian state
-    election together, at Inspire9, Richmond VIC. Invitation lists Saturday 28 November
-    2026, 7pm–10pm (Sydney/Melbourne time), election night.
-  proof_level: medium
+  url: https://events.humanitix.com/cross-party-watch-party-for-the-2026-victorian-state-election
+  quote: Designing Open Democracy is hosting a casual cross-party watch party for
+    the 2026 Victorian state election.
+  note: Free, RSVP-required election-night get-together at Inspire9, Richmond, organised
+    by Nick Merange. Results on the big screen, bring your own snack and drink, and
+    members of any party, independents and the unaffiliated are welcome. No speeches,
+    panels or campaigning.
+  proof_level: high
+  url_checked: '2026-11-14'
   time: '19:00'
   end_time: '22:00'
   notable: medium
