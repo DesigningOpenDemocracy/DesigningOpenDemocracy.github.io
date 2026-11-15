@@ -1,7 +1,7 @@
 ---
-title: Victorian Election Watch Party
+title: Election Count Watch Party
 template: event-landing.html
-summary: "A free, casual cross-party watch party for the 2026 Victorian state election, hosted by Designing Open Democracy at Inspire9, Richmond, on Saturday 28 November 2026."
+summary: "A free, casual election count watch party for the 2026 Victorian state election, hosted by Designing Open Democracy at Inspire9, Richmond, on Saturday 28 November 2026."
 hide:
   - navigation
   - toc
@@ -9,7 +9,7 @@ event:
   image: blog/2026-11-14-vic-election-watch-party-banner.jpg
 landing:
   eyebrow: Designing Open Democracy presents
-  title: Cross-Party Watch Party
+  title: Election Count Watch Party
   kicker: 2026 Victorian State Election
   tagline: "Election night is usually spent in separate rooms. This one isn't."
   starts: "2026-11-28T19:00:00+11:00"
@@ -25,11 +25,11 @@ landing:
   lat: -37.8196
   lon: 144.993
   cost: Free · RSVP required, places are limited
-  rsvp_url: https://events.humanitix.com/cross-party-watch-party-for-the-2026-victorian-state-election
+  rsvp_url: https://events.humanitix.com/2026-vic-state-election-count-watch-party
   rsvp_cta: "RSVP for 28 November →"
   # After the event: add  recap_url: /blog/YYYY/MM/DD/<recap-post>/  and the page flips.
   poster: blog/2026-11-14-vic-election-watch-party-banner.jpg
-  poster_alt: "Banner. Designing Open Democracy presents the 2026 Victorian State Election Cross-Party Watch Party. Watch the count together. Any party or none, everyone is welcome. Saturday 28 November 2026, 7 to 10 pm, Inspire9, Richmond. Short link: designingopendemocracy.com/watchparty, with a QR code. Election night: number the boxes in order of preference. One, live results on the big screen. Two, good company, whoever you voted for. Three, a relaxed social night, no speeches. Venue: Inspire9. Facilitator: Electron Workshop."
+  poster_alt: "Banner. Designing Open Democracy presents the 2026 Victorian State Election Count Watch Party. See the results come in together. Any party or none, everyone is welcome. Saturday 28 November 2026, 7 to 10 pm, Inspire9, Richmond. Short link: designingopendemocracy.com/watchparty, with a QR code. Election night: number the boxes in order of preference. One, live results on the big screen. Two, good company, whoever you voted for. Three, a relaxed social night, no speeches. Venue: Inspire9. Facilitator: Electron Workshop."
   expect:
     - Live results on the big screen
     - Good company, whoever you voted for. Bring your own snack and drink.

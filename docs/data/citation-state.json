@@ -5226,6 +5226,26 @@
     ],
     "last_modified": null
   },
+  "https://events.humanitix.com/2026-vic-state-election-count-watch-party": {
+    "checked": "2026-11-15",
+    "document_sha256": "26b0f09bdb10dbadc96935ba523497faa5bcd75b3905da1d4f372c1b4ff3bb08",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-11-15",
+        "context": {
+          "prefix": "he big screen, people from every walk in life in the room. Election night is usually spent in separate rooms. This one isn\u2019t.",
+          "sha256": "2ba88fac5cfce2727490581ebc864c2f823f419aa4d62f417913264185cde432",
+          "suffix": "Think of it as an early end-of-year get-together that happens to have the count on in the background. Members and volunteers of any party, independen",
+          "text": "Designing Open Democracy is hosting a casual election watch party for the 2026 Victorian state election. Think of it as an early end-of-year get-together that happens to have the count on in the background. Members and volunteers of any party, independents and the unaffiliated are all welcome."
+        },
+        "id": "f844b5255d5b992b2b05535091906fb7aa38605b70f6d0989c20ae231cf79a4a",
+        "quote": "Designing Open Democracy is hosting a casual election watch party for the 2026 Victorian state election.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
   "https://events.humanitix.com/citizen-assemblies-policy-without-politics-national-conference": {
     "archive_checked": "2026-11-13",
     "archive_sha256": "d42d2147c53e458aaf29a26ac5fad13890338cf81de02fb22b7454c3e9162c0d",
@@ -9522,12 +9542,12 @@
     "last_modified": null
   },
   "https://www.designingopendemocracy.com/blog/2016/12/19/inaugural-designing-open-democracy-meeting/": {
-    "checked": "2026-11-14",
-    "document_sha256": "d201617e8cdb49004d939cb60815917737046dbb03b84b729acd6394049fa5a4",
-    "etag": "W/\"6af86c6b-3e075\"",
+    "checked": "2026-11-15",
+    "document_sha256": "e06d0386d7062c59a305afea9a265e98215330efddaf588009d0c8f4a9652121",
+    "etag": "W/\"6af95ca7-3e202\"",
     "evidence": [
       {
-        "checked": "2026-11-14",
+        "checked": "2026-11-15",
         "context": {
           "prefix": "This is a historical post from meetup.com where we sent the first message after our very first meeting at 19/12/2016 Hello Everyone!",
           "sha256": "596d09e225107816bbb960ce2d396ba03012597f3e3c7239777d350befe04331",
@@ -9539,18 +9559,18 @@
         "verified": true
       }
     ],
-    "last_modified": "Sat, 14 Nov 2026 14:12:59 GMT"
+    "last_modified": "Sun, 15 Nov 2026 07:17:59 GMT"
   },
   "https://www.designingopendemocracy.com/blog/2018/02/10/proposed-initial-strategy-of-designing-open-democracy/": {
     "archive_checked": "2026-11-06",
     "archive_sha256": "113dc27f006f9aee4657d0358436d354610b9cefa37444fa923ee3dc78c8e94c",
     "archive_url": "http://web.archive.org/web/20260821043921/https://www.designingopendemocracy.com/blog/2018/02/10/proposed-initial-strategy-of-designing-open-democracy/",
-    "checked": "2026-11-14",
-    "document_sha256": "5b64f2aa8b18ce8c352239f04bb5e3de0aaaf5b41cec6451fc18f09374121c8a",
-    "etag": "W/\"6af86c6b-29979\"",
+    "checked": "2026-11-15",
+    "document_sha256": "12757f8db5840ae5adefc93f1869688de1e177f585ae8878b9bc2d952584ee0a",
+    "etag": "W/\"6af95ca7-29b06\"",
     "evidence": [
       {
-        "checked": "2026-11-14",
+        "checked": "2026-11-15",
         "context": {
           "prefix": "tical-alliances political-discourse public-awareness workshops Proposed (Initial) Strategy of Designing Open Democracy Rationale & Vision",
           "sha256": "d61364727cdb81b6061a95993507e41502ef3dcbe47b4bc1fff372b8f5e158be",
@@ -9562,7 +9582,7 @@
         "verified": true
       }
     ],
-    "last_modified": "Sat, 14 Nov 2026 14:12:59 GMT"
+    "last_modified": "Sun, 15 Nov 2026 07:17:59 GMT"
   },
   "https://www.designingopendemocracy.com/blog/2018/12/18/designing-open-democracy-state-of-democracy-in-australia-in-2018/": {
     "archive_checked": "2026-11-13",

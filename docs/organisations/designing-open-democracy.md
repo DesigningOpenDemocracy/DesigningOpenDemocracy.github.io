@@ -73,11 +73,11 @@ events:
   kind: gathering
   coverage_url: /blog/2026/09/26/democracy-beyond-the-ballot-box-recap-of-our-international-day-of-democracy-panel/
 - date: '2026-11-28'
-  title: Cross-party watch party for the 2026 Victorian state election
-  short_title: Victorian election cross-party watch party
-  url: https://events.humanitix.com/cross-party-watch-party-for-the-2026-victorian-state-election
-  quote: Designing Open Democracy is hosting a casual cross-party watch party for
-    the 2026 Victorian state election.
+  title: Election Count Watch Party for the 2026 Victorian state election
+  short_title: Victorian election count watch party
+  url: https://events.humanitix.com/2026-vic-state-election-count-watch-party
+  quote: Designing Open Democracy is hosting a casual election watch party for the
+    2026 Victorian state election.
   note: Free, RSVP-required election-night get-together at Inspire9, Richmond, organised
     by Nick Merange, facilitated by Electron Workshop. Results on the big screen,
     bring your own snack and drink, and members of any party, independents and the
