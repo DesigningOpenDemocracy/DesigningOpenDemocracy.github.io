@@ -1,5 +1,5 @@
 ---
-title: "Election night, together: a cross-party watch party in Richmond"
+title: "Election night, together: a watch party in Richmond"
 date: 2026-11-14
 summary: "DOD is hosting a free, casual election count watch party for the 2026 Victorian state election at Inspire9 in Richmond on Saturday 28 November."
 authors:

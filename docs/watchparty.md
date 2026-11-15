@@ -40,7 +40,7 @@ landing:
     logo: assets/event-logos/electron-workshop.png
   host: "Hosted by Designing Open Democracy, a nonpartisan forum that endorses no party or candidate."
   links:
-    - {label: Read the announcement, url: /blog/2026/11/14/election-night-together-a-cross-party-watch-party-in-richmond/}
+    - {label: Read the announcement, url: /blog/2026/11/14/election-night-together-a-watch-party-in-richmond/}
     - {label: Upcoming events, url: /calendar/}
 ---
 
