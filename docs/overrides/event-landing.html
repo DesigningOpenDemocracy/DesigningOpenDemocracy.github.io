@@ -1,0 +1,111 @@
+{% extends "main.html" %}
+{#- Short-URL event landing page (/watchparty/, /dayofdemocracy/). Everything
+    comes from the page's `landing:` frontmatter; the markdown body, if any,
+    becomes the "About" section. Setting `landing.recap_url` flips the page
+    to its after-the-event state at build time (recap button, no RSVP), and
+    the script below also flips it in the browser the moment `ends` passes,
+    since a static page has no server-side "now". Presentational only: never
+    read by hooks/calendar_export.py (the event's calendar entry lives on the
+    host org's `events:`). Styled by .event-landing* in customizations.css. -#}
+{% set L = page.meta.landing %}
+{% block extrahead %}
+{{ super() }}
+<style>.md-sidebar--primary, .md-sidebar--secondary { display: none; }</style>
+{% endblock %}
+{% block content %}
+<div class="event-landing" data-starts="{{ L.starts }}" data-ends="{{ L.ends }}"{% if L.recap_url %} data-held="1"{% endif %}>
+
+  <section class="event-landing-hero">
+    <div class="event-landing-hero-text">
+      <div class="event-landing-eyebrow">{{ L.eyebrow }}</div>
+      <h1>{{ L.title }}</h1>
+      <div class="event-landing-kicker">{{ L.kicker }}</div>
+      <p class="event-landing-tagline">{{ L.tagline }}</p>
+
+      <div class="event-landing-when">
+        <div class="event-landing-datetile" aria-hidden="true"><span>{{ L.month }}</span><strong>{{ L.day }}</strong></div>
+        <div>
+          <div class="event-landing-when-main">{{ L.date_label }}</div>
+          <div class="event-landing-when-sub">{{ L.time_label }} · {{ L.venue }}</div>
+          <div class="event-landing-countdown" id="event-landing-countdown" aria-live="polite"></div>
+        </div>
+      </div>
+
+      <div class="event-landing-actions" id="event-landing-actions">
+        {% if L.recap_url %}
+        <a class="event-landing-btn" href="{{ L.recap_url }}">{{ L.recap_cta or 'Read the recap →' }}</a>
+        {% else %}
+        <a class="event-landing-btn" id="event-landing-rsvp" href="{{ L.rsvp_url }}" target="_blank" rel="noopener">{{ L.rsvp_cta or 'RSVP →' }}</a>
+        <span class="event-landing-soon" id="event-landing-soon" hidden>This event has finished. A recap is coming soon.</span>
+        {% endif %}
+        {% if L.cost %}<span class="event-landing-cost">{{ L.cost }}</span>{% endif %}
+      </div>
+    </div>
+
+    <a class="event-landing-poster" href="{{ L.recap_url or L.rsvp_url }}"{% if not L.recap_url %} target="_blank" rel="noopener"{% endif %}>
+      <img src="/{{ L.poster }}" alt="{{ L.poster_alt or L.title }}">
+    </a>
+  </section>
+
+  {% if L.expect %}
+  <section class="event-landing-expect">
+    <h2>{{ L.expect_heading or 'What to expect' }}</h2>
+    <ol>
+      {% for item in L.expect %}
+      <li><span class="event-landing-box" aria-hidden="true">{{ loop.index }}</span><span>{{ item }}</span></li>
+      {% endfor %}
+    </ol>
+  </section>
+  {% endif %}
+
+  {% if page.content %}
+  <section class="event-landing-about md-typeset">{{ page.content }}</section>
+  {% endif %}
+
+  <section class="event-landing-where">
+    <div class="event-landing-where-text">
+      <h2>Where</h2>
+      <p><strong>{{ L.venue }}</strong><br>{{ L.address }}</p>
+      {% if L.lat is defined %}<p><a href="https://www.openstreetmap.org/?mlat={{ L.lat }}&amp;mlon={{ L.lon }}#map=17/{{ L.lat }}/{{ L.lon }}" target="_blank" rel="noopener">View larger map / directions →</a></p>{% endif %}
+      {% if L.host %}<p class="event-landing-host">{{ L.host }}</p>{% endif %}
+    </div>
+    {% if L.lat is defined %}
+    <iframe title="Map of {{ L.venue }}" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox={{ L.lon - 0.008 }}%2C{{ L.lat - 0.008 }}%2C{{ L.lon + 0.008 }}%2C{{ L.lat + 0.008 }}&amp;layer=mapnik&amp;marker={{ L.lat }}%2C{{ L.lon }}"></iframe>
+    {% endif %}
+  </section>
+
+  {% if L.links %}
+  <p class="event-landing-links">{% for l in L.links %}<a href="{{ l.url }}">{{ l.label }}</a>{% if not loop.last %} · {% endif %}{% endfor %}</p>
+  {% endif %}
+</div>
+
+<script>
+(function () {
+  var root = document.querySelector('.event-landing');
+  if (!root) return;
+  var starts = new Date(root.dataset.starts), ends = new Date(root.dataset.ends);
+  var out = document.getElementById('event-landing-countdown');
+  var rsvp = document.getElementById('event-landing-rsvp');
+  var soon = document.getElementById('event-landing-soon');
+  if (isNaN(starts) || isNaN(ends)) return;
+  function pad(n) { return n < 10 ? '0' + n : '' + n; }
+  function tick() {
+    var now = new Date(), held = root.dataset.held === '1';
+    if (held) { out.textContent = 'Event held'; return false; }
+    if (now >= ends) {
+      out.textContent = 'This event has finished';
+      if (rsvp) rsvp.hidden = true;
+      if (soon) soon.hidden = false;
+      return false;
+    }
+    if (now >= starts) { out.textContent = 'Happening now'; return true; }
+    var s = Math.floor((starts - now) / 1000);
+    var d = Math.floor(s / 86400), h = Math.floor(s % 86400 / 3600),
+        m = Math.floor(s % 3600 / 60), sec = s % 60;
+    out.textContent = 'Starts in ' + (d ? d + 'd ' : '') + pad(h) + 'h ' + pad(m) + 'm' + (d ? '' : ' ' + pad(sec) + 's');
+    return true;
+  }
+  if (tick()) setInterval(tick, 1000);
+})();
+</script>
+{% endblock %}
