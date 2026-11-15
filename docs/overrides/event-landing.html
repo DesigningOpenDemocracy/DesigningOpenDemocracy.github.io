@@ -15,13 +15,17 @@
 {% block content %}
 <div class="event-landing" data-starts="{{ L.starts }}" data-ends="{{ L.ends }}"{% if L.recap_url %} data-held="1"{% endif %}>
 
-  <section class="event-landing-hero">
-    <div class="event-landing-hero-text">
-      <div class="event-landing-eyebrow">{{ L.eyebrow }}</div>
-      <h1>{{ L.title }}</h1>
-      <div class="event-landing-kicker">{{ L.kicker }}</div>
-      <p class="event-landing-tagline">{{ L.tagline }}</p>
+  <a class="event-landing-poster" href="{{ L.recap_url or L.rsvp_url }}"{% if not L.recap_url %} target="_blank" rel="noopener"{% endif %}>
+    <img src="/{{ L.poster }}" alt="{{ L.poster_alt or L.title }}">
+  </a>
 
+  <section class="event-landing-summary">
+    <div class="event-landing-eyebrow">{{ L.eyebrow }}</div>
+    <h1>{{ L.title }}</h1>
+    <div class="event-landing-kicker">{{ L.kicker }}</div>
+    <p class="event-landing-tagline">{{ L.tagline }}</p>
+
+    <div class="event-landing-row">
       <div class="event-landing-when">
         <div class="event-landing-datetile" aria-hidden="true"><span>{{ L.month }}</span><strong>{{ L.day }}</strong></div>
         <div>
@@ -41,10 +45,6 @@
         {% if L.cost %}<span class="event-landing-cost">{{ L.cost }}</span>{% endif %}
       </div>
     </div>
-
-    <a class="event-landing-poster" href="{{ L.recap_url or L.rsvp_url }}"{% if not L.recap_url %} target="_blank" rel="noopener"{% endif %}>
-      <img src="/{{ L.poster }}" alt="{{ L.poster_alt or L.title }}">
-    </a>
   </section>
 
   {% if L.expect %}

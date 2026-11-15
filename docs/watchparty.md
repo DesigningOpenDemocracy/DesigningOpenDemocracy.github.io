@@ -27,7 +27,7 @@ landing:
   rsvp_cta: "RSVP for 28 November →"
   # After the event: add  recap_url: /blog/YYYY/MM/DD/<recap-post>/  and the page flips.
   poster: blog/2026-11-14-vic-election-watch-party-banner.jpg
-  poster_alt: "Cross-party watch party for the 2026 Victorian state election, Saturday 28 November, Inspire9, Richmond"
+  poster_alt: "Banner. Designing Open Democracy presents the 2026 Victorian State Election Cross-Party Watch Party. Watch the count together; every party, independents and the unaffiliated welcome. Saturday 28 November 2026, 7 to 10 pm, Inspire9, Richmond. Election night: number the boxes in order of your preference. One, live results on the big screen. Two, good company, whoever you voted for. Three, a relaxed social night, no speeches."
   expect:
     - Live results on the big screen
     - Good company, whoever you voted for. Bring your own snack and drink.
