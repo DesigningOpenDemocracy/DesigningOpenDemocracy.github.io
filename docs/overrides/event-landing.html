@@ -67,6 +67,13 @@
       <h2>Where</h2>
       <p><strong>{{ L.venue }}</strong><br>{{ L.address }}</p>
       {% if L.lat is defined %}<p><a href="https://www.openstreetmap.org/?mlat={{ L.lat }}&amp;mlon={{ L.lon }}#map=17/{{ L.lat }}/{{ L.lon }}" target="_blank" rel="noopener">View larger map / directions →</a></p>{% endif %}
+      {% if L.venue_logo or (L.facilitator and L.facilitator.logo) %}
+      <div class="event-landing-logos">
+        {% if L.venue_logo %}<figure><a href="{{ L.venue_url }}" target="_blank" rel="noopener"><img src="/{{ L.venue_logo }}" alt="{{ L.venue }} logo"></a><figcaption>Venue</figcaption></figure>{% endif %}
+        {% if L.facilitator and L.facilitator.logo %}<figure><a href="{{ L.facilitator.url }}" target="_blank" rel="noopener"><img src="/{{ L.facilitator.logo }}" alt="{{ L.facilitator.name }} logo"></a><figcaption>Facilitator</figcaption></figure>{% endif %}
+      </div>
+      {% endif %}
+      {% if L.facilitator %}<p><strong>Facilitator:</strong> <a href="{{ L.facilitator.url }}" target="_blank" rel="noopener">{{ L.facilitator.name }}</a></p>{% endif %}
       {% if L.host %}<p class="event-landing-host">{{ L.host }}</p>{% endif %}
     </div>
     {% if L.lat is defined %}

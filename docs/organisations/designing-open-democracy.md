@@ -79,9 +79,9 @@ events:
   quote: Designing Open Democracy is hosting a casual cross-party watch party for
     the 2026 Victorian state election.
   note: Free, RSVP-required election-night get-together at Inspire9, Richmond, organised
-    by Nick Merange. Results on the big screen, bring your own snack and drink, and
-    members of any party, independents and the unaffiliated are welcome. No speeches,
-    panels or campaigning.
+    by Nick Merange, facilitated by Electron Workshop. Results on the big screen,
+    bring your own snack and drink, and members of any party, independents and the
+    unaffiliated are welcome. No speeches, panels or campaigning.
   proof_level: high
   url_checked: '2026-11-14'
   time: '19:00'

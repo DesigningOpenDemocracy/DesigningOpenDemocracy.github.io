@@ -45,7 +45,7 @@ What to expect:
 - Bring your own snack and drink
 - A friendly room: no speeches, no panels, no campaigning
 
-Members and volunteers of any party, independents and the unaffiliated are all welcome.[^welcome] It's free, but RSVP is required as places are limited.[^cost] DOD is nonpartisan and endorses no party or candidate.
+The night is facilitated by [Electron Workshop](https://electronworkshop.org), with Inspire9 as the venue. Members and volunteers of any party, independents and the unaffiliated are all welcome.[^welcome] It's free, but RSVP is required as places are limited.[^cost] DOD is nonpartisan and endorses no party or candidate.
 
 <p style="text-align:center; margin: 1.5rem 0;">
   <a class="hero-cta-btn hero-cta-primary" href="https://events.humanitix.com/cross-party-watch-party-for-the-2026-victorian-state-election" target="_blank" rel="noopener">RSVP for 28 November →</a>

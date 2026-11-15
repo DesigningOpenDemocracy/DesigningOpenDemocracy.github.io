@@ -19,6 +19,8 @@ landing:
   date_label: Saturday 28 November 2026
   time_label: 7:00–10:00 pm
   venue: Inspire9
+  venue_url: https://inspire9.com.au
+  venue_logo: assets/event-logos/inspire9.png
   address: Level 1, 41-43 Stewart St, Richmond VIC 3121
   lat: -37.8196
   lon: 144.993
@@ -27,11 +29,15 @@ landing:
   rsvp_cta: "RSVP for 28 November →"
   # After the event: add  recap_url: /blog/YYYY/MM/DD/<recap-post>/  and the page flips.
   poster: blog/2026-11-14-vic-election-watch-party-banner.jpg
-  poster_alt: "Banner. Designing Open Democracy presents the 2026 Victorian State Election Cross-Party Watch Party. Watch the count together; every party, independents and the unaffiliated welcome. Saturday 28 November 2026, 7 to 10 pm, Inspire9, Richmond. Election night: number the boxes in order of your preference. One, live results on the big screen. Two, good company, whoever you voted for. Three, a relaxed social night, no speeches."
+  poster_alt: "Banner. Designing Open Democracy presents the 2026 Victorian State Election Cross-Party Watch Party. Watch the count together. Any party or none, everyone is welcome. Saturday 28 November 2026, 7 to 10 pm, Inspire9, Richmond. Short link: designingopendemocracy.com/watchparty, with a QR code. Election night: number the boxes in order of preference. One, live results on the big screen. Two, good company, whoever you voted for. Three, a relaxed social night, no speeches. Venue: Inspire9. Facilitator: Electron Workshop."
   expect:
     - Live results on the big screen
     - Good company, whoever you voted for. Bring your own snack and drink.
     - A relaxed social night. No speeches, no panels, no campaigning.
+  facilitator:
+    name: Electron Workshop
+    url: https://electronworkshop.org
+    logo: assets/event-logos/electron-workshop.png
   host: "Hosted by Designing Open Democracy, a nonpartisan forum that endorses no party or candidate."
   links:
     - {label: Read the announcement, url: /blog/2026/11/14/election-night-together-a-cross-party-watch-party-in-richmond/}
