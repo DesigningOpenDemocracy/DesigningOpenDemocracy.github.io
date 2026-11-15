@@ -143,6 +143,8 @@ not_in_nav: |
   bot.md
   tags.md
   archive.md
+  watchparty.md
+  dayofdemocracy.md
 
 extra_javascript:
   - https://unpkg.com/leaflet@1.9.4/dist/leaflet.js
