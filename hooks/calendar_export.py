@@ -296,6 +296,7 @@ def _load_manual_events(today, past_days=None):
                     "time": entry.get("time"),
                     "end_time": entry.get("end_time"),
                     "coverage_url": entry.get("coverage_url"),
+                    "share_url": entry.get("share_url"),
                 }
                 _maybe_add_translation(evt, evt["title"], evt["org_title"])
                 out.append(evt)

@@ -2691,6 +2691,19 @@ html .md-typeset details.plain-details > :last-child {
 .calendar-event-coverage:hover {
   opacity: 1;
 }
+.calendar-event-share {
+  font: inherit;
+  font-size: 0.85em;
+  margin-left: 0.3em;
+  padding: 0.15em 0.5em;
+  border: 1px solid var(--md-default-fg-color--lighter);
+  border-radius: 3px;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  opacity: 0.8;
+}
+.calendar-event-share:hover { opacity: 1; }
 .calendar-event-action {
   font-size: 0.85em;
   font-weight: 700;

@@ -134,12 +134,13 @@
           date-block gained its own org.logo/name anchor above, which
           replaces it rather than duplicating it. This line now carries
           only the two secondary links that don't fit up there. -#}
-      {%- if e.coverage_url or (e.url and e.url.startswith('http')) %}
+      {%- if e.coverage_url or e.share_url or (e.url and e.url.startswith('http')) %}
       <div class="calendar-event-orgline">
         {#- An election's electorate is already named in the date block
             above, so only a non-election orgless entry needs it here. -#}
         {%- if not e.org_slug and e.org_title and e.source != 'election' %}{{ e.org_title }}{% endif %}
         {%- if e.coverage_url %}<a class="calendar-event-coverage" href="{{ e.coverage_url }}">DOD coverage →</a>{% endif %}
+        {%- if e.share_url and not past %}<button type="button" class="calendar-event-share" data-share-url="{{ e.share_url }}" data-share-title="{{ e.title | e }}" aria-label="Share link to {{ e.title | e }}">🔗 Share</button>{% endif %}
         {%- if e.url and e.url.startswith('http') %}
         <a class="calendar-event-action" href="{{ e.url }}" target="_blank" rel="noopener">{{ 'Event page →' if past else 'RSVP →' if 'humanitix' in e.url or 'eventbrite' in e.url or 'lu.ma' in e.url or 'ticket' in e.url else 'More info →' }}</a>
         {%- endif %}
@@ -255,6 +256,28 @@
 {{ super() }}
 <script src="/assets/js/tz-country.js"></script>
 <script src="/assets/js/country-suggest.js"></script>
+<script>
+/* "Share" button on events that carry a share_url (a short landing-page link).
+   Uses the phone/desktop share sheet when there is one, else copies the link. */
+document.addEventListener('click', function (ev) {
+  var btn = ev.target.closest('.calendar-event-share');
+  if (!btn) return;
+  var url = new URL(btn.dataset.shareUrl, location.origin).href;
+  function done(msg) {
+    var old = btn.dataset.label || (btn.dataset.label = btn.textContent);
+    btn.textContent = msg;
+    setTimeout(function () { btn.textContent = old; }, 2000);
+  }
+  if (navigator.share) {
+    navigator.share({ title: btn.dataset.shareTitle, url: url }).catch(function () {});
+  } else if (navigator.clipboard) {
+    navigator.clipboard.writeText(url).then(function () { done('✓ Link copied'); },
+                                            function () { window.prompt('Copy this link', url); });
+  } else {
+    window.prompt('Copy this link', url);
+  }
+});
+</script>
 <script type="application/ld+json">
 [
 {%- for e in calendar_events %}

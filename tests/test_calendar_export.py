@@ -37,6 +37,7 @@ events:
   url: https://example.org/event
   note: An editorial paraphrase of what the event is.
   quote: Verbatim sentence from the source page.
+  share_url: /shortlink/
 - date: '{date}'
   title: An event with no description at all
   url: https://example.org/bare
@@ -72,6 +73,14 @@ class ManualEventDescriptionTests(unittest.TestCase):
                          "An editorial paraphrase of what the event is.")
         self.assertEqual(described["quote"],
                          "Verbatim sentence from the source page.")
+
+    def test_share_url_reaches_the_calendar(self):
+        shared = next(e for e in self._events()
+                      if e["title"] == "A panel on something")
+        bare = next(e for e in self._events()
+                    if e["title"] == "An event with no description at all")
+        self.assertEqual(shared["share_url"], "/shortlink/")
+        self.assertFalse(bare["share_url"])
 
     def test_event_without_them_carries_no_description(self):
         """calendar.html gates the <details> on these being falsy, so an
