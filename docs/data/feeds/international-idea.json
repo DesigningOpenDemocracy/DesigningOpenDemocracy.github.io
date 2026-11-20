@@ -1,8 +1,38 @@
 {
   "feed": "https://www.idea.int/rss.xml",
-  "latest": "2026-10-22",
-  "span_days": 520,
+  "latest": "2026-11-19",
+  "span_days": 548,
   "items": [
+    {
+      "date": "2026-11-19",
+      "title": "%AutoEntityLabel: f6d88456-dea9-4019-af62-592a3e91f8ff%",
+      "url": "https://www.idea.int/node/162292"
+    },
+    {
+      "date": "2026-11-19",
+      "title": "%AutoEntityLabel: c014cd24-bb12-4415-ba39-fd32a060f557%",
+      "url": "https://www.idea.int/node/162289"
+    },
+    {
+      "date": "2026-11-19",
+      "title": "%AutoEntityLabel: a2db321f-9a3e-40d4-994c-3d12e1fd69dd%",
+      "url": "https://www.idea.int/node/162288"
+    },
+    {
+      "date": "2026-11-19",
+      "title": "%AutoEntityLabel: 75b84460-a55b-44a6-9628-eae1027bc4b3%",
+      "url": "https://www.idea.int/node/162291"
+    },
+    {
+      "date": "2026-11-19",
+      "title": "%AutoEntityLabel: 1676da86-b4ac-4b2e-bebd-f3d668bf4dfd%",
+      "url": "https://www.idea.int/node/162290"
+    },
+    {
+      "date": "2026-11-19",
+      "title": "%AutoEntityLabel: 14f825ef-f4fa-4633-a7ff-90a720f6e2c7%",
+      "url": "https://www.idea.int/node/162293"
+    },
     {
       "date": "2026-10-22",
       "title": "ans_9379_647345682",
@@ -68,14 +98,6 @@
       "date": "2026-09-10",
       "title": "Brazil - General Elections, 4 and 25 October 2026",
       "url": "https://www.idea.int/node/161838"
-    },
-    {
-      "date": "2026-04-28",
-      "title": "Do-Hyun Kim et al v South Korea (Constitutional Court, 2024)",
-      "url": "https://www.idea.int/climate-rulings-implementation-tracker/do-hyun-kim-et-al-v-south-korea-constitutional-court-2024",
-      "signals": [
-        "legal or legislative"
-      ]
     }
   ]
 }

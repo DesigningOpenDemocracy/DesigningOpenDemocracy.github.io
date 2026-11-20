@@ -1,8 +1,22 @@
 {
   "feed": "https://www.sortitionfoundation.org/updates.rss",
-  "latest": "2026-10-18",
-  "span_days": 620,
+  "latest": "2026-11-09",
+  "span_days": 705,
   "items": [
+    {
+      "date": "2026-11-09",
+      "title": "Who Should Decide Which Civil Society Organisations Receive Public Funding? This Time, in Hungary, Civil Society Developed Its Own Proposals",
+      "url": "http://www.sortitionfoundation.org/hungary_civil_society_developed_its_own_proposals"
+    },
+    {
+      "date": "2026-11-04",
+      "title": "OpenDLP goes to Vienna, for the Federation for Innovation in Democracy (FIDE) forum",
+      "url": "http://www.sortitionfoundation.org/opendlp_federation_for_innovation_in_democracy_fide_forum",
+      "signals": [
+        "deliberative process",
+        "launch"
+      ]
+    },
     {
       "date": "2026-10-18",
       "title": "A Just World Requires Just Us: a review of Delia Smith’s new book, “Us”",
@@ -55,14 +69,9 @@
       "mentions": [
         "Electoral Reform Society"
       ]
-    },
-    {
-      "date": "2026-05-06",
-      "title": "Nearly 60% of Mancunians want a citizens' assembly to bring decision making closer to people",
-      "url": "http://www.sortitionfoundation.org/gm_polling_may_2026"
     }
   ],
   "fetch": {
-    "etag": "W/\"6c6c13abb1759ffb3a3c4e8d9022ddd1\""
+    "etag": "W/\"774669eca831d8172c06c615e4cf714f\""
   }
 }

@@ -1,8 +1,36 @@
 {
   "feed": "https://www.mysociety.org/feed",
-  "latest": "2026-10-14",
-  "span_days": 58,
+  "latest": "2026-11-19",
+  "span_days": 72,
   "items": [
+    {
+      "date": "2026-11-19",
+      "title": "This FixMyStreet report really got things changed",
+      "url": "https://www.mysociety.org/2026/11/19/this-fixmystreet-report-really-got-things-changed/",
+      "signals": [
+        "publication"
+      ]
+    },
+    {
+      "date": "2026-11-18",
+      "title": "Bioregional use the Scorecards framework to guide councils on their climate action",
+      "url": "https://www.mysociety.org/2026/11/18/bioregional-use-the-scorecards-framework-to-guide-councils-on-their-climate-action/"
+    },
+    {
+      "date": "2026-11-03",
+      "title": "So you’ve vibe coded a website and you’d like us to take a look",
+      "url": "https://www.mysociety.org/2026/11/03/so-youve-vibe-coded-a-website-and-youd-like-us-to-take-a-look/"
+    },
+    {
+      "date": "2026-11-03",
+      "title": "AI-authored contributions to our codebases",
+      "url": "https://www.mysociety.org/2026/11/03/ai-authored-contributions-to-our-codebases/"
+    },
+    {
+      "date": "2026-10-29",
+      "title": "Developed for the public sector and kept public: explaining open source licensing",
+      "url": "https://www.mysociety.org/2026/10/29/developed-for-the-public-sector-and-kept-public-explaining-open-source-licensing/"
+    },
     {
       "date": "2026-10-14",
       "title": "Digital Democracy Edinburgh: call for proposals and registration now open",
@@ -31,6 +59,11 @@
       "date": "2026-09-09",
       "title": "They work for you (and we do too)",
       "url": "https://www.mysociety.org/2026/09/09/they-work-for-you-and-we-do-too/"
+    },
+    {
+      "date": "2026-09-08",
+      "title": "Why open source software is a strength, not a vulnerability",
+      "url": "https://www.mysociety.org/2026/09/08/why-open-source-software-is-a-strength-not-a-vulnerability/"
     },
     {
       "date": "2026-09-03",
@@ -74,7 +107,7 @@
     }
   ],
   "fetch": {
-    "etag": "\"0688219df2d3831c3ddf5fde12c415f9\"",
-    "last_modified": "Wed, 14 Oct 2026 08:06:54 GMT"
+    "etag": "\"d16596c52b0182a5df2ed7957cbabe09\"",
+    "last_modified": "Thu, 19 Nov 2026 10:01:16 GMT"
   }
 }

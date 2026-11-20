@@ -58,10 +58,10 @@ activity:
     url: https://cafsa.org.au
     checked: 2026-09-26
   rss:
-    checked: 2026-10-23
-    date: 2026-07-09
-    note: 'Latest post: CAfSA News Bulletin no. 8'
-    url: https://cafsa.org.au/news-bulletin-no-8/?utm_source=rss&utm_medium=rss&utm_campaign=news-bulletin-no-8
+    date: 2026-10-27
+    note: 'Latest post: CAfSA News no. 9  November 2026'
+    url: https://cafsa.org.au/cafsa-news-no-9-november-2026/?utm_source=rss&utm_medium=rss&utm_campaign=cafsa-news-no-9-november-2026
+    checked: 2026-11-20
 last_checked: '2026-09-26'
 ---
 

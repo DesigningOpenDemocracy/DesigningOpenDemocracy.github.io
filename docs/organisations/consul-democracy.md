@@ -66,10 +66,10 @@ activity:
     url: https://consuldemocracy.org
     checked: 2026-09-19
   rss:
-    date: 2026-10-21
-    note: 'Latest post: CONSULCON26 Munich: Afterglow Report'
-    url: https://consuldemocracy.org/2026/10/consulcon26-afterglow/
-    checked: 2026-10-23
+    date: 2026-11-18
+    note: 'Latest post: Consul Meet-up: São Paulo'
+    url: https://consuldemocracy.org/2026/11/consul-meet-up-sao-paulo/
+    checked: 2026-11-20
 last_checked: '2026-09-19'
 ---
 

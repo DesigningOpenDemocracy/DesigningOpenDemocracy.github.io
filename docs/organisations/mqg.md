@@ -62,10 +62,11 @@ activity:
     url: https://mqg.org.il/en
     checked: 2026-09-15
   rss:
-    date: 2026-09-22
-    note: 'Latest post: עצומה – גרוניס הציבור מחכה לתשובות!'
-    url: https://petition.mqg.org.il/subs_invest/
-    checked: 2026-10-23
+    date: 2026-11-19
+    note: 'Latest post: התנועה לאיכות השלטון הגישה תביעה לביטול מינויו של אבישי מועלם
+      למנכ"ל עיריית טברי'
+    url: https://mqg.org.il/%d7%94%d7%aa%d7%a0%d7%95%d7%a2%d7%94-%d7%9c%d7%90%d7%99%d7%9b%d7%95%d7%aa-%d7%94%d7%a9%d7%9c%d7%98%d7%95%d7%9f-%d7%94%d7%92%d7%99%d7%a9%d7%94-%d7%aa%d7%91%d7%99%d7%a2%d7%94-%d7%9c%d7%91%d7%99%d7%98/
+    checked: 2026-11-20
 last_checked: '2026-09-15'
 ---
 

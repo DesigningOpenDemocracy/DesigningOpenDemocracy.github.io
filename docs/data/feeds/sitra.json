@@ -1,8 +1,28 @@
 {
   "feed": "https://www.sitra.fi/feed",
-  "latest": "2026-11-12",
+  "latest": "2026-11-19",
   "span_days": 16,
   "items": [
+    {
+      "date": "2026-11-19",
+      "title": "Vaikeiden valintojen vaalikausi häämöttää – kykeneekö Suomi tekemään pitkäjänteisiä päätöksiä?",
+      "url": "https://www.sitra.fi/artikkelit/vaikeiden-valintojen-vaalikausi-haamottaa-kykeneeko-suomi-tekemaan-pitkajanteisia-paatoksia/"
+    },
+    {
+      "date": "2026-11-17",
+      "title": "Poikkeuksellisen suuri kansalaiskokous laatii suosituksia työperäisestä maahanmuutosta",
+      "url": "https://www.sitra.fi/uutiset/poikkeuksellisen-suuri-kansalaiskokous-laatii-suosituksia-tyoperaisesta-maahanmuutosta/"
+    },
+    {
+      "date": "2026-11-15",
+      "title": "Lapset ja nuoret perivät päätösten seuraukset – näin päätöksenteon oikeudenmukaisuutta pitäisi vahvistaa",
+      "url": "https://www.sitra.fi/artikkelit/lapset-ja-nuoret-perivat-paatosten-seuraukset-nain-paatoksenteon-oikeudenmukaisuutta-pitaisi-vahvistaa/"
+    },
+    {
+      "date": "2026-11-15",
+      "title": "5 kysymystä: Mistä sukupolvien välisessä oikeudenmukaisuudessa päätöksenteossa on oikein kyse?",
+      "url": "https://www.sitra.fi/artikkelit/5-kysymysta-mista-sukupolvien-valisessa-oikeudenmukaisuudessa-paatoksenteossa-on-oikein-kyse/"
+    },
     {
       "date": "2026-11-12",
       "title": "Hyvinvointialueen hackathon oli menestys – miten opit saadaan leviämään laajasti sote-palveluiden arkeen?",
@@ -205,7 +225,7 @@
     }
   ],
   "fetch": {
-    "etag": "\"15695a8bb3729a5569e0712c013f935f\"",
-    "last_modified": "Fri, 13 Nov 2026 10:14:15 GMT"
+    "etag": "\"fceac64ae2a200f66e4cfd404597283f\"",
+    "last_modified": "Fri, 20 Nov 2026 10:35:59 GMT"
   }
 }

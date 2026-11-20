@@ -57,11 +57,11 @@ activity:
     url: https://www.sitra.fi/en/
     checked: 2026-09-19
   rss:
-    date: 2026-11-12
-    note: 'Latest post: 12 000 osallistujan verkkokeskustelu toi esiin meitä yhdistävät
-      ja jakavat työpe'
-    url: https://www.sitra.fi/artikkelit/12-000-osallistujan-verkkokeskustelu-toi-esiin-meita-yhdistavat-ja-jakavat-tyoperaisen-maahanmuuton-kysymykset/
-    checked: 2026-11-13
+    date: 2026-11-19
+    note: 'Latest post: Vaikeiden valintojen vaalikausi häämöttää – kykeneekö Suomi
+      tekemään pitkäjäntei'
+    url: https://www.sitra.fi/artikkelit/vaikeiden-valintojen-vaalikausi-haamottaa-kykeneeko-suomi-tekemaan-pitkajanteisia-paatoksia/
+    checked: 2026-11-20
 last_checked: '2026-09-19'
 ---
 

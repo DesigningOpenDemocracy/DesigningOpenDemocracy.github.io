@@ -65,7 +65,7 @@ activity:
     checked: 2026-08-17
   scrape:
     hint: no_markup
-    checked: 2026-10-23
+    checked: 2026-11-20
     note: News page found, no machine-readable date
 last_checked: '2026-09-20'
 ---

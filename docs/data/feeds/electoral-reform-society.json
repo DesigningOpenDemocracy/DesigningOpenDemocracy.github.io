@@ -1,11 +1,21 @@
 {
   "feed": "https://www.electoral-reform.org.uk/feed/",
-  "latest": "2026-10-22",
+  "latest": "2026-11-09",
   "span_days": 42,
   "items": [
     {
+      "date": "2026-11-09",
+      "title": "How did the political parties do in October’s polls?",
+      "url": "https://electoral-reform.org.uk/how-did-the-political-parties-do-in-octobers-polls/"
+    },
+    {
+      "date": "2026-10-29",
+      "title": "The youngest peer has pushed for the public to have say on whether chamber should stay unelected",
+      "url": "https://electoral-reform.org.uk/youngest-peer-pushed-for-public-to-have-say-on-whether-chamber-should-stay-unelected/"
+    },
+    {
       "date": "2026-10-22",
-      "title": "The Israeli Electoral System Is Not Representative Of Proportional Representation",
+      "title": "The Israeli electoral system is not representative of proportional pepresentation",
       "url": "https://electoral-reform.org.uk/the-israeli-electoral-system-is-not-representative-of-proportional-representation/",
       "mentions": [
         "Israel Democracy Institute"
@@ -119,7 +129,7 @@
     }
   ],
   "fetch": {
-    "etag": "W/\"ab9eb5ff4893d595b3725ece895ab38e\"",
-    "last_modified": "Thu, 22 Oct 2026 13:29:48 GMT"
+    "etag": "W/\"93fdb4dda04bb463803949c53040dbc7\"",
+    "last_modified": "Thu, 19 Nov 2026 17:19:55 GMT"
   }
 }

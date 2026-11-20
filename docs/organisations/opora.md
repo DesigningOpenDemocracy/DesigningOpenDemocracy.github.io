@@ -56,13 +56,13 @@ activity:
     url: https://oporaua.org/en
     checked: 2026-09-28
   rss:
-    checked: 2026-10-02
+    checked: 2026-11-20
     note: No feed found
   scrape:
-    date: 2026-11-13
+    date: 2026-11-20
     note: Latest news page scraped
     url: https://oporaua.org/en/announce
-    checked: 2026-11-13
+    checked: 2026-11-20
 last_checked: '2026-09-28'
 ---
 

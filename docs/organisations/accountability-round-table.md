@@ -54,7 +54,7 @@ activity:
     date: 2026-10-23
     note: 'Latest post: Newsletter: Integrity is required before the ballots are cast.'
     url: https://www.accountabilityrt.org/newsletter-integrity-is-required-before-the-ballots-are-cast/
-    checked: 2026-10-23
+    checked: 2026-11-20
 last_checked: '2026-09-21'
 ---
 

@@ -78,16 +78,15 @@ activity:
     note: Site loads fine (electoral-reform.org.uk, 200), confirmed active
     url: https://www.electoral-reform.org.uk
   rss:
-    checked: 2026-10-23
-    date: 2026-10-22
-    note: 'Latest post: The Israeli Electoral System Is Not Representative Of Proportional
-      Representatio'
-    url: https://electoral-reform.org.uk/the-israeli-electoral-system-is-not-representative-of-proportional-representation/
+    date: 2026-11-09
+    note: 'Latest post: How did the political parties do in October’s polls?'
+    url: https://electoral-reform.org.uk/how-did-the-political-parties-do-in-octobers-polls/
+    checked: 2026-11-20
   scrape:
     date: 2026-11-09
     note: Latest news page scraped
     url: https://www.electoral-reform.org.uk/latest-news-and-research/blog/
-    checked: 2026-11-13
+    checked: 2026-11-20
 last_checked: '2026-09-21'
 ---
 

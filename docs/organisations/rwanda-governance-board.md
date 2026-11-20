@@ -79,7 +79,7 @@ activity:
     date: 2026-11-12
     note: Latest news page scraped
     url: https://www.rgb.rw/updates/news
-    checked: 2026-11-13
+    checked: 2026-11-20
 last_checked: '2026-09-15'
 ---
 

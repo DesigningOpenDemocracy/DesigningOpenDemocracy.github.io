@@ -1,18 +1,27 @@
 {
   "feed": "https://cafsa.org.au/feed",
-  "latest": "2026-07-09",
-  "span_days": 568,
+  "latest": "2026-10-27",
+  "span_days": 678,
   "items": [
     {
+      "date": "2026-10-27",
+      "title": "CAfSA News no. 9  November 2026",
+      "url": "https://cafsa.org.au/cafsa-news-no-9-november-2026/",
+      "signals": [
+        "launch"
+      ],
+      "mentions": [
+        "We Do Democracy",
+        "newDemocracy Foundation"
+      ]
+    },
+    {
       "date": "2026-07-09",
-      "title": "CAfSA News Bulletin no. 8",
+      "title": "CAfSA News no. 8 July 2026",
       "url": "https://cafsa.org.au/news-bulletin-no-8/",
       "signals": [
         "deliberative process",
         "publication"
-      ],
-      "routine": [
-        "newsletter or roundup"
       ],
       "mentions": [
         "Australian Democracy Network",
@@ -23,7 +32,7 @@
     }
   ],
   "fetch": {
-    "etag": "\"7833da2614bd03cfab7f5f46ebbc0d71\"",
-    "last_modified": "Wed, 22 Jul 2026 05:36:19 GMT"
+    "etag": "\"c26d81aadf88d42c7f04007dd355668e\"",
+    "last_modified": "Sun, 01 Nov 2026 01:20:32 GMT"
   }
 }

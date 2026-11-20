@@ -62,11 +62,11 @@ activity:
     url: https://www.afrobarometer.org
     checked: 2026-09-19
   rss:
-    date: 2026-11-11
-    note: 'Latest post: La plupart des Camerounais déplorent la situation économique  de
-      leur pays'
-    url: https://www.afrobarometer.org/articles/la-plupart-des-camerounais-deplorent-la-situation-economique-de-leur-pays/
-    checked: 2026-11-13
+    date: 2026-11-16
+    note: 'Latest post: Amid widespread youth unemployment, young Basotho identify
+      joblessness as most u'
+    url: https://www.afrobarometer.org/articles/amid-widespread-youth-unemployment-young-basotho-identify-joblessness-as-most-urgent-problem-for-government-to-address-latest-afrobarometer-survey-shows/
+    checked: 2026-11-20
 last_checked: '2026-09-19'
 ---
 

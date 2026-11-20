@@ -65,7 +65,7 @@ activity:
     note: 'Latest post: This library is running out of money. Here is how to keep
       it open.'
     url: https://oaf.org.au/2026/10/13/this-library-is-running-out-of-money-here-is-how-to-keep-it-open/
-    checked: 2026-10-23
+    checked: 2026-11-20
 last_checked: '2026-09-26'
 ---
 

@@ -1,8 +1,28 @@
 {
   "feed": "https://chinademocrats.org/?feed=rss2",
-  "latest": "2026-11-12",
-  "span_days": 19,
+  "latest": "2026-11-20",
+  "span_days": 22,
   "items": [
+    {
+      "date": "2026-11-20",
+      "title": "王维洛 | 雅鲁藏布江下游水电工程：目标、政治意图与环境问题分析",
+      "url": "https://chinademocrats.org/?p=7945"
+    },
+    {
+      "date": "2026-11-17",
+      "title": "裴毅然  |  中共“大外宣”历史考察（下）",
+      "url": "https://chinademocrats.org/?p=7908"
+    },
+    {
+      "date": "2026-11-16",
+      "title": "王天成：受专制中国拖累的企业家——黄仁勋",
+      "url": "https://chinademocrats.org/?p=7904"
+    },
+    {
+      "date": "2026-11-14",
+      "title": "中期选举之后：美国民主”乐观得还不够”？",
+      "url": "https://chinademocrats.org/?p=7888"
+    },
     {
       "date": "2026-11-12",
       "title": "习近平为何清洗自己的人？——托里吉安谈恐惧、党性与接班政治",
@@ -218,7 +238,7 @@
     }
   ],
   "fetch": {
-    "etag": "\"af4d26b27c5ff4cd3eed5ca3abaf8401\"",
-    "last_modified": "Thu, 12 Nov 2026 23:23:02 GMT"
+    "etag": "\"19a22243280f1e08b1ab0a63a4f51cce\"",
+    "last_modified": "Fri, 20 Nov 2026 05:20:57 GMT"
   }
 }

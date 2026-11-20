@@ -54,15 +54,15 @@ activity:
     url: https://democracyclub.org.uk
     checked: 2026-09-21
   rss:
-    date: 2026-10-16
-    note: 'Latest post: English council boundary reviews on WhoCanIVoteFor'
-    url: https://democracyclub.org.uk/blog/2026/10/15/english-council-boundary-reviews-on-whocanivotefor/
-    checked: 2026-10-23
-  scrape:
     date: 2026-11-12
+    note: 'Latest post: 2026 elections user feedback'
+    url: https://democracyclub.org.uk/blog/2026/06/03/2026-elections-user-feedback/
+    checked: 2026-11-20
+  scrape:
+    date: 2026-11-20
     note: Latest news page scraped
     url: https://democracyclub.org.uk/blog/
-    checked: 2026-11-13
+    checked: 2026-11-20
 last_checked: '2026-09-21'
 ---
 

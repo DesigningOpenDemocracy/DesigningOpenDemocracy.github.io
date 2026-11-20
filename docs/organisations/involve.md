@@ -75,7 +75,7 @@ activity:
     date: 2026-10-07
     note: 'Latest post: UK public invited to send ideas to improve daily life'
     url: https://www.involve.org.uk/news-opinion/news/uk-public-invited-send-ideas-improve-daily-life
-    checked: 2026-10-23
+    checked: 2026-11-20
 last_checked: '2026-09-19'
 ---
 

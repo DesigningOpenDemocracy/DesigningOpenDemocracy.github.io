@@ -95,11 +95,10 @@ activity:
     url: https://www.mysociety.org
     checked: 2026-09-20
   rss:
-    date: 2026-10-14
-    note: 'Latest post: Digital Democracy Edinburgh: call for proposals and registration
-      now open'
-    url: https://www.mysociety.org/2026/10/14/digital-democracy-edinburgh-call-for-proposals-and-registration-now-open/
-    checked: 2026-10-23
+    date: 2026-11-19
+    note: 'Latest post: This FixMyStreet report really got things changed'
+    url: https://www.mysociety.org/2026/11/19/this-fixmystreet-report-really-got-things-changed/
+    checked: 2026-11-20
 last_checked: '2026-09-20'
 ---
 

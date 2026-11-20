@@ -67,11 +67,11 @@ activity:
     url: https://www.sortitionfoundation.org/become_a_member_australia
     checked: 2026-09-15
   rss:
-    date: 2026-10-18
-    note: 'Latest post: A Just World Requires Just Us: a review of Delia Smith’s new
-      book, “Us”'
-    url: http://www.sortitionfoundation.org/review_delia_smith_new_book_us
-    checked: 2026-10-23
+    date: 2026-11-09
+    note: 'Latest post: Who Should Decide Which Civil Society Organisations Receive
+      Public Funding? This'
+    url: http://www.sortitionfoundation.org/hungary_civil_society_developed_its_own_proposals
+    checked: 2026-11-20
   scrape:
     checked: 2026-06-08
     hint: bot_blocked

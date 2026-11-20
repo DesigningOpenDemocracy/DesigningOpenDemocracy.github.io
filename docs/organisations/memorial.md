@@ -56,10 +56,10 @@ activity:
     url: https://www.memorial.de
     checked: 2026-09-21
   scrape:
-    date: 2026-11-09
+    date: 2026-11-15
     note: Latest news page scraped
     url: https://www.memorial.de/nachrichten
-    checked: 2026-11-13
+    checked: 2026-11-20
   sitemap:
     checked: 2026-10-30
     date: 2026-06-05

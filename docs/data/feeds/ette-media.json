@@ -1,8 +1,67 @@
 {
   "feed": "https://www.ettemedia.com/feed",
-  "latest": "2026-11-08",
-  "span_days": 24,
+  "latest": "2026-11-20",
+  "span_days": 19,
   "items": [
+    {
+      "date": "2026-11-20",
+      "title": "Excessive 'sandpapergate’ stories |  Cop31: PM v facts |  Nine’s glaring omission goes global",
+      "url": "https://www.ettemedia.com/yt-video-xvxbvvsjwui/"
+    },
+    {
+      "date": "2026-11-19",
+      "title": "The Fourth Estate, or state mouthpiece? Israel’s attacks on Gaza hospitals",
+      "url": "https://www.ettemedia.com/israel-attack-gaza-hospitals-media-coverage/"
+    },
+    {
+      "date": "2026-11-18",
+      "title": "'Kind of CRAAAZYYYYY’: Meta’s AI dubbing and accent feature cops backlash from presenters for cloning their voice",
+      "url": "https://www.ettemedia.com/kind-of-craaazyyyyy-metas-ai-dubbing-and-accent-feature-cops-backlash-from-presenters-for-cloning-their-voice/"
+    },
+    {
+      "date": "2026-11-16",
+      "title": "‘You should be grateful’: Usman Khawaja on racist double standards, standing your ground and Sandpapergate",
+      "url": "https://www.ettemedia.com/you-should-be-grateful-usman-khawaja-on-racist-double-standards-standing-your-ground-and-sandpapergate/"
+    },
+    {
+      "date": "2026-11-16",
+      "title": "Why - after DECADES - are we hearing about Brand and Walliams now?",
+      "url": "https://www.ettemedia.com/yt-video-61ay9ofomdg/",
+      "routine": [
+        "podcast or video episode"
+      ]
+    },
+    {
+      "date": "2026-11-16",
+      "title": "LEAKED audio reveals NEW detials on the Gina Rinehart x One Nation collab",
+      "url": "https://www.ettemedia.com/yt-video-dwv5uspc0_a/"
+    },
+    {
+      "date": "2026-11-16",
+      "title": "Jan (almost) gets WhatsApp scammed, ex-minister unleashes on first home buyers, Rinehart’s One Nation influence unveiled + Pentagon ‘podaganda’",
+      "url": "https://www.ettemedia.com/podcast-jan-almost-gets-scammed-ex-minister-unleashes-on-first-home-6af2b70c3cc716fc951de606/",
+      "signals": [
+        "launch"
+      ],
+      "routine": [
+        "podcast or video episode"
+      ]
+    },
+    {
+      "date": "2026-11-16",
+      "title": "'The End of the West is not the End of the World'",
+      "url": "https://www.ettemedia.com/the-end-of-the-west-is-not-the-end-of-the-world/"
+    },
+    {
+      "date": "2026-11-13",
+      "title": "Ettention Please: Stories you might have missed this week",
+      "url": "https://www.ettemedia.com/ettention-please-stories-you-might-have-missed-this-week-14-nov/",
+      "signals": [
+        "legal or legislative",
+        "mobilisation",
+        "publication"
+      ]
+    },
     {
       "date": "2026-11-08",
       "title": "'Public still unaware of Google’s complicity': Former Google AI engineer speaks out, inspiring other employees to fight gag clause",
@@ -240,6 +299,6 @@
     }
   ],
   "fetch": {
-    "etag": "W/\"b5a4-ZGQjQc6+yf61Ay782wtecPF344o\""
+    "etag": "W/\"d926-vRd6gSWL5sZgRcyJ4KpLJ/JGNQ0\""
   }
 }

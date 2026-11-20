@@ -1,8 +1,13 @@
 {
   "feed": "https://consuldemocracy.org/feed",
-  "latest": "2026-10-21",
-  "span_days": 198,
+  "latest": "2026-11-18",
+  "span_days": 223,
   "items": [
+    {
+      "date": "2026-11-18",
+      "title": "Consul Meet-up: São Paulo",
+      "url": "https://consuldemocracy.org/2026/11/consul-meet-up-sao-paulo/"
+    },
     {
       "date": "2026-10-21",
       "title": "CONSULCON26 Munich: Afterglow Report",
@@ -52,7 +57,7 @@
     }
   ],
   "fetch": {
-    "etag": "W/\"4f638855217298477f4092acf337102d\"",
-    "last_modified": "Thu, 22 Oct 2026 15:49:42 GMT"
+    "etag": "W/\"1a7633bbe01671c19c547c5432a7b2e4\"",
+    "last_modified": "Wed, 18 Nov 2026 11:51:25 GMT"
   }
 }

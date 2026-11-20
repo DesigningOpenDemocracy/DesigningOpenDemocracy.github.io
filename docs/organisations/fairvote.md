@@ -50,10 +50,10 @@ activity:
     url: https://fairvote.org
     checked: 2026-09-19
   rss:
-    date: 2026-11-12
-    note: 'Latest post: How will remaining ballots affect Alaska’s statewide elections?'
-    url: https://fairvote.org/how-will-remaining-ballots-affect-alaskas-statewide-elections/
-    checked: 2026-11-13
+    date: 2026-11-20
+    note: 'Latest post: Results in the 2026 Alaska State Senate and House elections'
+    url: https://fairvote.org/results-in-the-2026-alaska-state-senate-and-house-elections/
+    checked: 2026-11-20
 last_checked: '2026-09-19'
 ---
 

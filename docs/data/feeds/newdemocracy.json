@@ -1,8 +1,13 @@
 {
   "feed": "https://www.newdemocracy.com.au/feed",
-  "latest": "2026-09-15",
-  "span_days": 285,
+  "latest": "2026-10-27",
+  "span_days": 322,
   "items": [
+    {
+      "date": "2026-10-27",
+      "title": "France has a radical idea for fixing its debt crisis",
+      "url": "https://www.newdemocracy.com.au/2026/10/27/france-has-a-radical-idea-for-fixing-its-debt-crisis/"
+    },
     {
       "date": "2026-09-15",
       "title": "Democracy Can Do Better Than Political Parties",
@@ -32,6 +37,6 @@
     }
   ],
   "fetch": {
-    "last_modified": "Thu, 22 Oct 2026 05:05:21 GMT"
+    "last_modified": "Thu, 19 Nov 2026 14:44:18 GMT"
   }
 }

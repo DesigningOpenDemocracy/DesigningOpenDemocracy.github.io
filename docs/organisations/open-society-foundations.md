@@ -62,10 +62,10 @@ activity:
     checked: 2026-10-02
     note: No feed found
   scrape:
-    date: 2026-10-09
+    date: 2026-11-19
     note: Latest news page scraped
     url: https://www.opensocietyfoundations.org/newsroom
-    checked: 2026-11-13
+    checked: 2026-11-20
 last_checked: '2026-09-20'
 ---
 

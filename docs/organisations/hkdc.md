@@ -75,7 +75,7 @@ activity:
     date: 2026-11-04
     note: Latest news page scraped
     url: https://www.hkdc.us/news
-    checked: 2026-11-13
+    checked: 2026-11-20
   sitemap:
     date: 2026-09-16
     note: Page last modified (from sitemap)

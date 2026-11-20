@@ -52,10 +52,10 @@ activity:
     url: https://www.idea.int
     checked: 2026-09-20
   rss:
-    date: 2026-10-22
-    note: 'Latest post: ans_9347_1915762581'
-    url: https://www.idea.int/node/162029
-    checked: 2026-10-23
+    date: 2026-11-19
+    note: 'Latest post: %AutoEntityLabel: 14f825ef-f4fa-4633-a7ff-90a720f6e2c7%'
+    url: https://www.idea.int/node/162293
+    checked: 2026-11-20
 last_checked: '2026-09-20'
 ---
 

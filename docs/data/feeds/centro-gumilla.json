@@ -1,8 +1,68 @@
 {
   "feed": "https://gumilla.org/feed",
-  "latest": "2026-10-17",
-  "span_days": 110,
+  "latest": "2026-11-18",
+  "span_days": 26,
   "items": [
+    {
+      "date": "2026-11-18",
+      "title": "El Papa: Es mi ministerio sanar, unir a las personas y superar las polarizaciones",
+      "url": "https://gumilla.org/el-papa-es-mi-ministerio-sanar-unir-a-las-personas-y-superar-las-polarizaciones/"
+    },
+    {
+      "date": "2026-11-16",
+      "title": "Reconstruir la confianza: de los desafíos de la reconciliación a la experiencia comunitaria en La Vega",
+      "url": "https://gumilla.org/reconstruir-la-confianza-de-los-desafios-de-la-reconciliacion-a-la-experiencia-comunitaria-en-la-vega/"
+    },
+    {
+      "date": "2026-11-13",
+      "title": "Centro Gumilla y Fundacedeap impulsan la formación de pequeños emprendedores para acceder a mercados internacionales",
+      "url": "https://gumilla.org/centro-gumilla-y-fundacedeap-impulsan-la-formacion-de-pequenos-emprendedores-para-acceder-a-mercados-internacionales/"
+    },
+    {
+      "date": "2026-11-10",
+      "title": "Memoria histórica y derechos humanos: organizaciones comparten herramientas para avanzar hacia la justicia en Venezuela",
+      "url": "https://gumilla.org/memoria-historica-y-derechos-humanos-organizaciones-comparten-herramientas-para-avanzar-hacia-la-justicia-en-venezuela/"
+    },
+    {
+      "date": "2026-11-04",
+      "title": "La fábrica de empresas y empresarios",
+      "url": "https://gumilla.org/la-fabrica-de-empresas-y-empresarios/"
+    },
+    {
+      "date": "2026-11-03",
+      "title": "«Tenemos que trabajar juntos católicos, evangélicos, todas las religiones que creemos en Cristo, para que podamos con un solo corazón, que Venezuela resucite»",
+      "url": "https://gumilla.org/tenemos-que-trabajar-juntos-catolicos-evangelicos-todas-las-religiones-que-creemos-en-cristo-para-que-podamos-con-un-solo-corazon-que-venezuela-resucite-2/"
+    },
+    {
+      "date": "2026-11-03",
+      "title": "Obras del sector social de la Compañía de Jesús se reunieron para analizar los desafíos del país y fortalecer el trabajo en red",
+      "url": "https://gumilla.org/obras-del-sector-social-de-la-compania-de-jesus-se-reunieron-para-analizar-los-desafios-del-pais-y-fortalecer-el-trabajo-en-red/"
+    },
+    {
+      "date": "2026-11-02",
+      "title": "¿Qué tan verde es la tecnología? Inteligencia artificial, energía y límites planetarios: una perspectiva desde el África subsahariana.",
+      "url": "https://gumilla.org/que-tan-verde-es-la-tecnologia-inteligencia-artificial-energia-y-limites-planetarios-una-perspectiva-desde-el-africa-subsahariana/"
+    },
+    {
+      "date": "2026-10-27",
+      "title": "Centro Gumilla agradece la gestión de Juan Salvador Pérez y da la bienvenida a Raúl González Fabré, S. J., como director de Revista SIC",
+      "url": "https://gumilla.org/centro-gumilla-agradece-la-gestion-de-juan-salvador-perez-y-da-la-bienvenida-a-raul-gonzalez/"
+    },
+    {
+      "date": "2026-10-26",
+      "title": "La IA y la ciudadanía democrática",
+      "url": "https://gumilla.org/la-ia-y-la-ciudadania-democratica/"
+    },
+    {
+      "date": "2026-10-26",
+      "title": "Episcopado Venezolano presenta Exhortación Pastoral: «Señor, en tu luz vemos la luz (Sal 36, 10)»",
+      "url": "https://gumilla.org/episcopado-venezolano-presenta-exhortacion-pastoral-senor-en-tu-luz-vemos-la-luz-sal-36-10/"
+    },
+    {
+      "date": "2026-10-23",
+      "title": "¿Está la democracia en crisis? Hacia una democracia sustancial",
+      "url": "https://gumilla.org/esta-la-democracia-en-crisis-hacia-una-democracia-sustancial/"
+    },
     {
       "date": "2026-10-17",
       "title": "Mariela Ramírez, una vida dedicada a construir puentes para el encuentro en Venezuela",
@@ -90,11 +150,6 @@
       "date": "2026-05-26",
       "title": "Eduardo Soto, S.J.: la reconciliación nacional exige memoria, justicia y reinstitucionalización",
       "url": "https://gumilla.org/reconciliacion-exige-memoria-y-justicia/"
-    },
-    {
-      "date": "2026-05-15",
-      "title": "Eduardo Soto Parra, SJ: reconciliación en Venezuela requiere voluntad política y presión ciudadana",
-      "url": "https://gumilla.org/reconciliacion-en-venezuela-requiere-voluntad-politica/"
     }
   ]
 }

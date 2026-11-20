@@ -50,11 +50,11 @@ activity:
     url: https://gumilla.org
     checked: 2026-09-26
   rss:
-    date: 2026-10-17
-    note: 'Latest post: Mariela Ramírez, una vida dedicada a construir puentes para
-      el encuentro en Vene'
-    url: https://gumilla.org/mariela-ramirez-una-vida-dedicada-a-construir-puentes/
-    checked: 2026-10-23
+    date: 2026-11-18
+    note: 'Latest post: El Papa: Es mi ministerio sanar, unir a las personas y superar
+      las polarizacione'
+    url: https://gumilla.org/el-papa-es-mi-ministerio-sanar-unir-a-las-personas-y-superar-las-polarizaciones/
+    checked: 2026-11-20
 last_checked: '2026-09-26'
 ---
 

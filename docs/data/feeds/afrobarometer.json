@@ -1,8 +1,16 @@
 {
   "feed": "https://www.afrobarometer.org/feed",
-  "latest": "2026-11-11",
-  "span_days": 8,
+  "latest": "2026-11-16",
+  "span_days": 11,
   "items": [
+    {
+      "date": "2026-11-16",
+      "title": "Amid widespread youth unemployment, young Basotho identify joblessness as most urgent problem for government to address,  latest Afrobarometer survey shows",
+      "url": "https://www.afrobarometer.org/articles/amid-widespread-youth-unemployment-young-basotho-identify-joblessness-as-most-urgent-problem-for-government-to-address-latest-afrobarometer-survey-shows/",
+      "signals": [
+        "publication"
+      ]
+    },
     {
       "date": "2026-11-11",
       "title": "Nigerians doubt electoral fairness ahead of 2027 polls, expect widespread abuses, latest Afrobarometer survey shows",
@@ -182,6 +190,6 @@
     }
   ],
   "fetch": {
-    "last_modified": "Thu, 12 Nov 2026 13:24:30 GMT"
+    "last_modified": "Fri, 20 Nov 2026 08:00:23 GMT"
   }
 }

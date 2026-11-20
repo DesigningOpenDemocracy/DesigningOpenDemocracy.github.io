@@ -1,8 +1,58 @@
 {
   "feed": "https://kongra-star.org/?feed=rss2",
-  "latest": "2026-11-12",
-  "span_days": 11,
+  "latest": "2026-11-19",
+  "span_days": 2,
   "items": [
+    {
+      "date": "2026-11-19",
+      "title": "“Du meşên xwendekaran li Qamişlo û Dêrikê ji bo zimanê kurdî û Zanîngeha Rojava meşiyan”",
+      "url": "https://kongra-star.org/?p=34828"
+    },
+    {
+      "date": "2026-11-19",
+      "title": "Li bajarên Girkê Legê û Tirbespiyê çalakiyên 25’ê Mijdarê",
+      "url": "https://kongra-star.org/?p=34789"
+    },
+    {
+      "date": "2026-11-19",
+      "title": "Li Til Temirê jin ji bo 25`ê Mijdarê jinan çalakî li darxistin",
+      "url": "https://kongra-star.org/?p=34754"
+    },
+    {
+      "date": "2026-11-19",
+      "title": "Li Dirbêsiyê bi boneya 25’ê Mijdarê meş hate lidarxistin",
+      "url": "https://kongra-star.org/?p=34807"
+    },
+    {
+      "date": "2026-11-19",
+      "title": "Kongra Star li ser esasê manîfestoya aştî û civaka demokratîk konferansa xwe lidarxist",
+      "url": "https://kongra-star.org/?p=34860"
+    },
+    {
+      "date": "2026-11-19",
+      "title": "Gulîstan Gulo: Yekîtiya jinan rê li ber siyaseta dûrxistina jinan ji qadên biryardariyê digire",
+      "url": "https://kongra-star.org/?p=34781"
+    },
+    {
+      "date": "2026-11-18",
+      "title": "Platforma Çalakiyên Hevbeş a Tevger û Rêxistinên Jinan komxebatek lidarxist",
+      "url": "https://kongra-star.org/?p=34713"
+    },
+    {
+      "date": "2026-11-18",
+      "title": "Kongra Star piştgirî  da zarokên xwe yên şagirt li zanîngeha Rojava",
+      "url": "https://kongra-star.org/?p=34708"
+    },
+    {
+      "date": "2026-11-17",
+      "title": "Kongra Star a bajarê Dêrikê: ji bo mafê zimanê xwe dengê xwe bilind bikin ne sûc e!",
+      "url": "https://kongra-star.org/?p=34687"
+    },
+    {
+      "date": "2026-11-17",
+      "title": "Kongra Star a bajarê Dirbêsiyê giringiya têkoşîna li dij tundiyê kir mijara civînê",
+      "url": "https://kongra-star.org/?p=34693"
+    },
     {
       "date": "2026-11-12",
       "title": "Munteha Mahmûd: Jina zana û birêxistinkirî dikare xwe ji her cure tudiyê rizgar bike",
@@ -202,60 +252,10 @@
       "date": "2026-10-14",
       "title": "Armancgirtina sembolên jinê, armancgirtina îradeya wê ya azad e",
       "url": "https://kongra-star.org/?p=33854"
-    },
-    {
-      "date": "2026-10-13",
-      "title": "Kezîya jinê sembola yekîtî, Hevgirtin û tekoşîna hevpar a jinan e",
-      "url": "https://kongra-star.org/?p=33843"
-    },
-    {
-      "date": "2026-10-13",
-      "title": "Karwana pêncem a bi 382 malbatan ber bi gundên SerêKaniyê ve çû",
-      "url": "https://kongra-star.org/?p=33831"
-    },
-    {
-      "date": "2026-10-11",
-      "title": "Kongra Star li bajarê Kobanê êrîşên li ser Bajarê Hesekê bi tûndî şermezar kir",
-      "url": "https://kongra-star.org/?p=33827"
-    },
-    {
-      "date": "2026-10-10",
-      "title": "Êrîş li ser keziya jinê li Hesekê, hewldana derxistina fitneyê",
-      "url": "https://kongra-star.org/?p=33819"
-    },
-    {
-      "date": "2026-10-09",
-      "title": "Şandeya jinan ya DEM partiyê serdana navenda Kongra Star kir",
-      "url": "https://kongra-star.org/?p=33777"
-    },
-    {
-      "date": "2026-10-08",
-      "title": "‘28 salên komployê vîna gelê Kurd neşikand, têkoşîn mezintir bû’",
-      "url": "https://kongra-star.org/?p=33771"
-    },
-    {
-      "date": "2026-10-08",
-      "title": "Komîteya Koçberên Serêkaniyê mizgîniya amadekariya vegera navenda Bajêr da",
-      "url": "https://kongra-star.org/?p=33756"
-    },
-    {
-      "date": "2026-10-01",
-      "title": "Li Til Temir û Qibûr El Qeracinê daxwaza perwerdeya zimanê kurdî hat kirin",
-      "url": "https://kongra-star.org/?p=33743"
-    },
-    {
-      "date": "2026-09-29",
-      "title": "Rêber Abdullah Ocalan ji Konferansa Aştî û Entegrasyona Demokratîk re peyamek şand",
-      "url": "https://kongra-star.org/?p=33739"
-    },
-    {
-      "date": "2026-09-28",
-      "title": "Xwendekarên li bajarê Qamişloyê daxwaz kirin ku zimanê kurdî wekî zimanekî fermî were naskirin",
-      "url": "https://kongra-star.org/?p=33723"
     }
   ],
   "fetch": {
-    "etag": "W/\"c88025636f86738613d0d4f08cc7af6d\"",
-    "last_modified": "Thu, 12 Nov 2026 14:56:10 GMT"
+    "etag": "W/\"fb65b852a46cf3dc1fdfca2dd603743d\"",
+    "last_modified": "Thu, 19 Nov 2026 17:34:08 GMT"
   }
 }

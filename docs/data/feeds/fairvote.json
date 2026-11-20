@@ -1,25 +1,61 @@
 {
   "feed": "https://fairvote.org/feed",
-  "latest": "2026-11-12",
-  "span_days": 16,
+  "latest": "2026-11-20",
+  "span_days": 7,
   "items": [
     {
-      "date": "2026-11-12",
-      "title": "How will remaining ballots affect Alaska’s statewide elections?",
-      "url": "https://fairvote.org/how-will-remaining-ballots-affect-alaskas-statewide-elections/"
+      "date": "2026-11-20",
+      "title": "Results in the 2026 Alaska State Senate and House elections",
+      "url": "https://fairvote.org/results-in-the-2026-alaska-state-senate-and-house-elections/",
+      "signals": [
+        "flagship event"
+      ]
     },
     {
-      "date": "2026-11-11",
+      "date": "2026-11-19",
+      "title": "Results in Alaska’s 2026 ranked choice voting elections",
+      "url": "https://fairvote.org/results-in-alaskas-2026-ranked-choice-voting-elections/"
+    },
+    {
+      "date": "2026-11-19",
+      "title": "Did the “second Dan Sullivan” affect Alaska’s U.S. Senate election?",
+      "url": "https://fairvote.org/did-the-second-dan-sullivan-affect-alaskas-u-s-senate-election/"
+    },
+    {
+      "date": "2026-11-18",
+      "title": "Rockville, Maryland moves toward ranked choice voting",
+      "url": "https://fairvote.org/rockville-maryland-moves-toward-ranked-choice-voting/"
+    },
+    {
+      "date": "2026-11-18",
       "title": "Preliminary ranked choice voting results in Alaska’s 2026 elections",
       "url": "https://fairvote.org/results-and-analysis-from-alaskas-2026-elections/"
     },
     {
-      "date": "2026-11-10",
+      "date": "2026-11-18",
+      "title": "How will remaining ballots affect Alaska’s statewide elections?",
+      "url": "https://fairvote.org/how-will-remaining-ballots-affect-alaskas-statewide-elections/",
+      "signals": [
+        "publication"
+      ]
+    },
+    {
+      "date": "2026-11-17",
       "title": "Results from Washington, DC’s ranked choice voting general election",
       "url": "https://fairvote.org/results-from-washington-dcs-ranked-choice-voting-general-election/"
     },
     {
-      "date": "2026-11-09",
+      "date": "2026-11-16",
+      "title": "Analysis: Ranked choice voting fosters more voter voice in Multnomah County and Portland, OR",
+      "url": "https://fairvote.org/analysis-rcv-fosters-more-voter-voice-in-multnomah-county-and-portland-or/"
+    },
+    {
+      "date": "2026-11-14",
+      "title": "Alaska approves ranked choice voting for third time in a row",
+      "url": "https://fairvote.org/alaska-approves-ranked-choice-voting-for-third-time-in-a-row/"
+    },
+    {
+      "date": "2026-11-13",
       "title": "Analysis: Ranked choice voting delivers better city elections",
       "url": "https://fairvote.org/analysis-ranked-choice-voting-delivers-better-city-elections/"
     },
@@ -169,7 +205,7 @@
     }
   ],
   "fetch": {
-    "etag": "W/\"f7bf0909145362f63a213603f92d0880\"",
-    "last_modified": "Fri, 13 Nov 2026 06:59:07 GMT"
+    "etag": "W/\"e9b9b793477a511db7a29c7fe8b3c870\"",
+    "last_modified": "Fri, 20 Nov 2026 00:30:24 GMT"
   }
 }

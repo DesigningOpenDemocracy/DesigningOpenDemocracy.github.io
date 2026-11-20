@@ -56,11 +56,11 @@ activity:
     url: https://www.ettemedia.com/
     checked: 2026-09-16
   rss:
-    date: 2026-11-08
-    note: 'Latest post: ''Public still unaware of Google’s complicity'': Former Google
-      AI engineer speaks '
-    url: https://www.ettemedia.com/google-whistleblower-sofia-liguori/
-    checked: 2026-11-13
+    date: 2026-11-20
+    note: 'Latest post: Excessive ''sandpapergate’ stories |  Cop31: PM v facts |  Nine’s
+      glaring omissio'
+    url: https://www.ettemedia.com/yt-video-xvxbvvsjwui/
+    checked: 2026-11-20
 last_checked: '2026-09-16'
 contributors:
 - BrianKhuu

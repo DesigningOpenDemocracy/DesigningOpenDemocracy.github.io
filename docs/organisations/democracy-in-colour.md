@@ -65,7 +65,7 @@ activity:
     note: 'Latest post: Democracy in Colour stands with Helen Haines MP, calls for
       unity against violenc'
     url: https://democracyincolour.org/democracy-in-colour-stands-with-helen-haines-mp-calls-for-unity-against-violence/
-    checked: 2026-10-23
+    checked: 2026-11-20
 last_checked: '2026-09-27'
 ---
 

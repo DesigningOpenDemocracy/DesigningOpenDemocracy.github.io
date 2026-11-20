@@ -56,11 +56,11 @@ activity:
     url: https://kongra-star.org/eng/
     checked: 2026-09-21
   rss:
-    date: 2026-11-12
-    note: 'Latest post: Munteha Mahmûd: Jina zana û birêxistinkirî dikare xwe ji her
-      cure tudiyê rizgar '
-    url: https://kongra-star.org/?p=34562
-    checked: 2026-11-13
+    date: 2026-11-19
+    note: 'Latest post: Kongra Star li ser esasê manîfestoya aştî û civaka demokratîk
+      konferansa xwe lid'
+    url: https://kongra-star.org/?p=34860
+    checked: 2026-11-20
 last_checked: '2026-09-21'
 ---
 
