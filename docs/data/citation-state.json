@@ -3299,6 +3299,8 @@
     "archive_checked": "2026-10-16",
     "archive_sha256": "639f249a2d6b10cd47b501d79e53d62aaecb42a5d098dc67395c7d358504c088",
     "archive_url": "http://web.archive.org/web/20260912231657/https://en.wikipedia.org/wiki/FairVote",
+    "blocked": "HTTP_429",
+    "blocked_since": "2026-11-20",
     "checked": "2026-10-16",
     "document_sha256": "6c5d667c4883ab7a45d732cf32a5969ad5cb3e2394091e717c370f68b6ca93df",
     "etag": null,
@@ -5450,12 +5452,32 @@
     ],
     "last_modified": null
   },
+  "https://fairvote.org/alaska-approves-ranked-choice-voting-for-third-time-in-a-row/": {
+    "checked": "2026-11-20",
+    "document_sha256": "198a1f668c269224888c06804aab19e99348dcef089b9e381cf587b66842ca2e",
+    "etag": null,
+    "evidence": [
+      {
+        "checked": "2026-11-20",
+        "context": {
+          "prefix": "Matthew Oberstaedt, Marina Buskey | November 14, 2026 Share Facebook Twitter Linkedin Email",
+          "sha256": "02443b64bea7dac58c9ff680b19c648c2cc9f2590ebe58436e136cfdf2c9c429",
+          "suffix": "This is the third ballot measure in a row where Alaskans have supported RCV \u2013 voters first approved RCV in 2020, and narrowly rejected an attempted r",
+          "text": "Alaska has voted to continue using ranked choice voting (RCV) and open primaries. This is the third ballot measure in a row where Alaskans have supported RCV \u2013 voters first approved RCV in 2020, and narrowly rejected an attempted repeal in 2024. Alaskans have voted to keep RCV by their largest margin ever this year."
+        },
+        "id": "eb805b483d908d2481f5e6773ff4fb7ca1ac1d06e1218c61374048e6d4b7591b",
+        "quote": "Alaska has voted to continue using ranked choice voting (RCV) and open primaries.",
+        "verified": true
+      }
+    ],
+    "last_modified": null
+  },
   "https://fairvote.org/the_history_of_fairvote_the_founding_years/": {
     "archive_checked": "2026-11-20",
     "archive_sha256": "8601a61145023dbbd00c51b15ca0187eccac8af1c85edf8a4441864d4f05eaeb",
     "archive_url": "http://web.archive.org/web/20261115203210/https://fairvote.org/the_history_of_fairvote_the_founding_years/",
     "checked": "2026-11-20",
-    "document_sha256": "777ea5d4424172f2f98edc1929585da5740ceecef254213030598f47ffa05a5e",
+    "document_sha256": "1d87e73e5a39b3806826e23701b137b3f8f5fa2f617f4cd8733332958d1c92eb",
     "etag": null,
     "evidence": [
       {

@@ -42,19 +42,28 @@ events:
   url_checked: '2026-08-21'
   notable: false
   kind: news
+- date: '2026-11-14'
+  title: Alaska voters keep ranked choice voting and open primaries for a third ballot-measure
+    win
+  url: https://fairvote.org/alaska-approves-ranked-choice-voting-for-third-time-in-a-row/
+  quote: Alaska has voted to continue using ranked choice voting (RCV) and open primaries.
+  proof_level: high
+  url_checked: '2026-11-20'
+  notable: medium
+  notable_reason: Electoral system retained at the ballot box
+  kind: news
 activity:
   dod:
-    date: 2026-09-19
-    note: Site live; news update 24 Aug 2026 covering ranked choice voting ballot
-      measures and 2026 election cycle
-    url: https://fairvote.org
-    checked: 2026-09-19
+    date: 2026-11-14
+    note: Reviewed feed; added Alaska RCV retention (14 Nov 2026)
+    url: https://fairvote.org/alaska-approves-ranked-choice-voting-for-third-time-in-a-row/
+    checked: 2026-11-20
   rss:
     date: 2026-11-20
     note: 'Latest post: Results in the 2026 Alaska State Senate and House elections'
     url: https://fairvote.org/results-in-the-2026-alaska-state-senate-and-house-elections/
     checked: 2026-11-20
-last_checked: '2026-09-19'
+last_checked: '2026-11-20'
 ---
 
 FairVote is a US 501(c)(3) nonprofit that campaigns to reform American elections through ranked-choice voting (RCV) and proportional representation. It was founded in June 1992 in Cincinnati as Citizens for Proportional Representation, became the Center for Voting and Democracy in 1993, and took its current name in 2004.[^founding]
