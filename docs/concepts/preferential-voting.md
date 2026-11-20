@@ -22,6 +22,8 @@ title: Preferential Voting
 - [Instant-runoff voting — Wikipedia](https://en.wikipedia.org/wiki/Instant-runoff_voting)
 - [Antony Green](https://antonygreen.com.au/) — Australia's leading election analyst and psephologist, ABC's chief election analyst from 1989 to 2025; his site covers how preferential voting plays out in practice across Australian elections, including seat counts, redistributions, and results analysis.
 
+- [You Can't 'Waste' Your Vote!](https://www.chickennation.com/voting/) — Patrick Alexander's freely shareable four-page comic explaining preferential voting, written to counter the "wasted vote" and "spoiler candidate" talk Australians absorb from first-past-the-post countries; also available in Cantonese. Part 2, [What's the Go with Voting for the Senate?](https://www.chickennation.com/voting/senate/), covers Senate voting.
+
 ## See also
 
 - [Representative Democracy](representative-democracy.md)
