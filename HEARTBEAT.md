@@ -279,6 +279,23 @@ prose, including this one.
 
 ### 5. Read the room (commentary research)
 
+**Do not skip this step (added 2026-11-25).** From 2026-11-02 to 2026-11-21
+every run logged "Step 5 not done" and the November post had no "In the world"
+section, while real items (Lexington's permanent civic assemblies, Victoria
+abolishing group voting tickets) went unreported. Causes found: the scheduled
+prompt only says "read the heartbeat file and service the repo", so the run
+stopped once maintenance came up clean; `WebSearch` is a deferred tool and
+needed loading, which made skipping easy; each run copied the previous run's
+"Step 5 not done" line, so the omission became a habit; and "say nothing rather
+than force it" was being read as permission not to look. That rule is about
+what you *publish*, not whether you *search*. So: every run must load
+`WebSearch` (`ToolSearch select:WebSearch`) and run at least three searches
+across the topics below, plus one source check from the list. If a run truly
+cannot (tools fail), say which tool failed in Working notes. Record the
+searches run in Working notes even when nothing clears the bar, so "looked,
+found nothing" is distinguishable from "didn't look". Never write a bare
+"Step 5 not done".
+
 Before writing: read `docs/projects/accountability-framework/index.md` and
 `docs/projects/accountability-framework/soul.md` to ground yourself in DOD's
 values and framing.
