@@ -64,10 +64,10 @@ activity:
     url: https://civictech.guide
     checked: 2026-09-16
   sitemap:
-    date: 2026-10-23
+    date: 2026-11-15
     note: Page last modified (from sitemap)
     url: https://civictech.guide/sitemap.xml
-    checked: 2026-10-30
+    checked: 2026-11-27
 last_checked: '2026-09-16'
 ---
 

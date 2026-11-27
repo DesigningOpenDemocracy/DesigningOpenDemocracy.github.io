@@ -22,6 +22,7 @@ location:
   longitude: 28.0473
   name: Johannesburg, South Africa
   precision: city
+rss_feed: https://civictech.africa/feed
 events:
 - date: '2018-01-01'
   title: Launched at Wits University's Tshimologong Precinct as Africa's civic tech
@@ -61,7 +62,7 @@ activity:
     url: https://civictech.africa
     checked: 2026-09-16
   rss:
-    checked: 2026-10-02
+    checked: 2026-11-27
     date: 2025-04-30
     note: 'Latest post: Civic Tech Innovation Network Annual Report: 2024/25'
     url: https://civictech.africa/civic-tech-innovation-network-annual-report-2024-25/

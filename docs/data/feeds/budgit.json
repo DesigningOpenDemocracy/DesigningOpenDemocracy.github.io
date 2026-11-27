@@ -1,8 +1,43 @@
 {
   "feed": "https://budgit.org/feed",
-  "latest": "2026-10-22",
-  "span_days": 90,
+  "latest": "2026-11-24",
+  "span_days": 64,
   "items": [
+    {
+      "date": "2026-11-24",
+      "title": "What five south-east states’ budgets taught me about priorities",
+      "url": "https://budgit.org/what-five-south-east-states-budgets-taught-me-about-priorities/"
+    },
+    {
+      "date": "2026-11-24",
+      "title": "Nigeria’s State Health Budgets: From Budgetary Promises to Healthcare Delivery",
+      "url": "https://budgit.org/nigerias-state-health-budgets-from-budgetary-promises-to-healthcare-delivery/"
+    },
+    {
+      "date": "2026-11-23",
+      "title": "Nigeria’s Fiscal Crossroads: Reclaiming a Developmental Future from the Trap of Debt",
+      "url": "https://budgit.org/nigerias-fiscal-crossroads-reclaiming-a-developmental-future-from-the-trap-of-debt/"
+    },
+    {
+      "date": "2026-11-23",
+      "title": "Nigeria Cannot Build Its Future While Millions of Girls Remain Out of School",
+      "url": "https://budgit.org/nigeria-cannot-build-its-future-while-millions-of-girls-remain-out-of-school/"
+    },
+    {
+      "date": "2026-11-23",
+      "title": "Health Systems Strengthening: Building Resilient Foundations for Better Health Outcomes, Using the Bottom-to-Top Approach",
+      "url": "https://budgit.org/health-systems-strengthening-building-resilient-foundations-for-better-health-outcomes-using-the-bottom-to-top-approach/"
+    },
+    {
+      "date": "2026-11-23",
+      "title": "Harnessing Nigeria’s Youth for the Energy Transition",
+      "url": "https://budgit.org/harnessing-nigerias-youth-for-the-energy-transition/"
+    },
+    {
+      "date": "2026-11-23",
+      "title": "E-Procurement In Nigeria: From Digital Adoption To Real Accountability",
+      "url": "https://budgit.org/e-procurement-in-nigeria-from-digital-adoption-to-real-accountability/"
+    },
     {
       "date": "2026-10-22",
       "title": "The 15-Year Movement Turning Complex Public Finance Data into Citizen Power",
@@ -60,7 +95,7 @@
     }
   ],
   "fetch": {
-    "etag": "\"c6538fb6d480ec352d6e1cb2c9ff0c9b-gzip\"",
-    "last_modified": "Thu, 29 Oct 2026 23:13:09 GMT"
+    "etag": "\"107de553630bef8ca1d736800ab8e93a-gzip\"",
+    "last_modified": "Fri, 27 Nov 2026 11:42:14 GMT"
   }
 }

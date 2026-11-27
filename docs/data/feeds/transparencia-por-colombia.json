@@ -1,8 +1,41 @@
 {
   "feed": "https://transparenciacolombia.org.co/feed",
-  "latest": "2026-10-17",
-  "span_days": 92,
+  "latest": "2026-11-25",
+  "span_days": 98,
   "items": [
+    {
+      "date": "2026-11-25",
+      "title": "Balance del financiamiento de las campañas al Congreso de la República 2026",
+      "url": "https://transparenciacolombia.org.co/balance-financiamiento-campanas-al-congreso-de-la-republica-2026/",
+      "signals": [
+        "flagship event"
+      ]
+    },
+    {
+      "date": "2026-11-25",
+      "title": "Balance del financiamiento de las campañas a la Presidencia de la República 2026",
+      "url": "https://transparenciacolombia.org.co/balance-financiamiento-campanas-presidencia-de-la-republica-2026/"
+    },
+    {
+      "date": "2026-11-20",
+      "title": "Caso de estudio El multimillonario show de Castaño y sus «marionetas»",
+      "url": "https://transparenciacolombia.org.co/caso-de-estudio-castano-y-sus-marionetas/"
+    },
+    {
+      "date": "2026-11-06",
+      "title": "Transparencia por Colombia pide investigar con rigor y urgencia  posible corrupción sexual vinculada con Gustavo Petro",
+      "url": "https://transparenciacolombia.org.co/transparencia-por-colombia-pide-investigar-posible-corrupcion-sexual-vinculado-gustavo-petro/"
+    },
+    {
+      "date": "2026-11-04",
+      "title": "Monitoreo parcial del espacio cívico en Colombia 2022-2025",
+      "url": "https://transparenciacolombia.org.co/monitoreo-parcial-del-espacio-civico-en-colombia-2022-2025/"
+    },
+    {
+      "date": "2026-11-04",
+      "title": "Metodología del Monitoreo parcial e ilustrativo  del espacio cívico en Colombia",
+      "url": "https://transparenciacolombia.org.co/metodologia-monitoreo-parcial-ilustrativo-espacio-civico-colombia/"
+    },
     {
       "date": "2026-10-17",
       "title": "Financiamiento criminal de la política en Colombia: ¿cómo se captura y transforma el Estado?",
@@ -68,7 +101,7 @@
     }
   ],
   "fetch": {
-    "etag": "\"71080cfbaae6cb47430d0402a8f5e958\"",
-    "last_modified": "Thu, 29 Oct 2026 19:57:59 GMT"
+    "etag": "\"b6b56a4d2f5fecb1941b00589ca966b1\"",
+    "last_modified": "Thu, 26 Nov 2026 18:23:35 GMT"
   }
 }

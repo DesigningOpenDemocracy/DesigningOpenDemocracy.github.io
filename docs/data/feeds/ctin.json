@@ -1,3 +1,9 @@
 {
-  "probed": "2026-10-02"
+  "feed": "https://civictech.africa/feed",
+  "latest": "2025-04-30",
+  "span_days": 348,
+  "items": [],
+  "fetch": {
+    "last_modified": "Tue, 28 Oct 2025 09:40:52 GMT"
+  }
 }

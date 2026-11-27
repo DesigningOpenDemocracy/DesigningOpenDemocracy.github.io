@@ -69,7 +69,7 @@ activity:
     date: 2026-10-20
     note: 'Latest post: Anmälan till webinarium om Collective Tools'
     url: https://digidemlab.org/news/anmalan-till-webinarium-om-collective-tools/
-    checked: 2026-10-30
+    checked: 2026-11-27
 last_checked: '2026-09-17'
 ---
 

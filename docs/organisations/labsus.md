@@ -64,11 +64,10 @@ activity:
     url: https://www.labsus.org
     checked: 2026-09-17
   rss:
-    date: 2026-10-20
-    note: 'Latest post: Un patto contro lo spopolamento delle aree montane: una foresteria
-      come bene com'
-    url: https://www.labsus.org/2026/10/un-patto-contro-lo-spopolamento-delle-aree-montane-una-foresteria-come-bene-comune/
-    checked: 2026-10-30
+    date: 2026-11-17
+    note: 'Latest post: Tessere alleanze. Insieme per i beni comuni'
+    url: https://www.labsus.org/2026/11/tessere-alleanze-insieme-per-i-beni-comuni/
+    checked: 2026-11-27
 last_checked: '2026-09-17'
 ---
 

@@ -105,10 +105,10 @@ activity:
       Mission description and links unchanged.
     url: https://www.designingopendemocracy.com
   sitemap:
-    checked: 2026-10-30
-    date: 2026-10-29
+    date: 2026-11-25
     note: Page last modified (from sitemap)
     url: https://designingopendemocracy.com/sitemap.xml
+    checked: 2026-11-27
 last_checked: '2026-09-17'
 ---
 

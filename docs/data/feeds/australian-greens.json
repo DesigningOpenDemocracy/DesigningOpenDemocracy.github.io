@@ -1,8 +1,59 @@
 {
   "feed": "https://greens.org.au/rss.xml",
-  "latest": "2026-10-30",
-  "span_days": 3116,
+  "latest": "2026-11-26",
+  "span_days": 3143,
   "items": [
+    {
+      "date": "2026-11-26",
+      "title": "top end branch meeting - december",
+      "url": "https://greens.org.au/node/3046082"
+    },
+    {
+      "date": "2026-11-26",
+      "title": "Wendouree, Ripon and Eureka Election Night Watch Party",
+      "url": "https://greens.org.au/node/3046087"
+    },
+    {
+      "date": "2026-11-26",
+      "title": "State26 Central Online Debrief #2",
+      "url": "https://greens.org.au/node/3046083"
+    },
+    {
+      "date": "2026-11-26",
+      "title": "Northcote Debrief",
+      "url": "https://greens.org.au/node/3046086"
+    },
+    {
+      "date": "2026-11-26",
+      "title": "Northcote Campaign Debrief!",
+      "url": "https://greens.org.au/node/3046085"
+    },
+    {
+      "date": "2026-11-26",
+      "title": "New Members Welcome Session",
+      "url": "https://greens.org.au/node/3046078"
+    },
+    {
+      "date": "2026-11-26",
+      "title": "Greens of the Tarneit District – Election Night Party!",
+      "url": "https://greens.org.au/node/3046088",
+      "signals": [
+        "election or referendum"
+      ]
+    },
+    {
+      "date": "2026-11-26",
+      "title": "Doorknock Kit Packing party",
+      "url": "https://greens.org.au/node/3046077"
+    },
+    {
+      "date": "2026-11-25",
+      "title": "Port Macquarie 2027 State Election Campaign Launch",
+      "url": "https://greens.org.au/node/3046073",
+      "signals": [
+        "launch"
+      ]
+    },
     {
       "date": "2026-10-30",
       "title": "WM26 - Western  Metro Day-of-Action: Call-athon",
@@ -107,7 +158,7 @@
     }
   ],
   "fetch": {
-    "etag": "\"1793352657\"",
-    "last_modified": "Fri, 30 Oct 2026 09:30:57 GMT"
+    "etag": "\"1795779927\"",
+    "last_modified": "Fri, 27 Nov 2026 11:45:27 GMT"
   }
 }

@@ -1,8 +1,23 @@
 {
   "feed": "https://stocznia.org.pl/feed",
-  "latest": "2026-10-29",
-  "span_days": 247,
+  "latest": "2026-11-19",
+  "span_days": 183,
   "items": [
+    {
+      "date": "2026-11-19",
+      "title": "Jak naprawić internet? Rusza Ogólnopolska narada obywatelska",
+      "url": "https://stocznia.org.pl/2026/11/19/jak-naprawic-internet-rusza-ogolnopolska-narada-obywatelska/"
+    },
+    {
+      "date": "2026-11-18",
+      "title": "Jak strażacy z mieszkańcami zwiększają gotowość na kryzysy w gminie?",
+      "url": "https://stocznia.org.pl/2026/11/18/jak-strazacy-z-mieszkancami-zwiekszaja-gotowosc-na-kryzysy-w-gminie/"
+    },
+    {
+      "date": "2026-11-04",
+      "title": "Zapraszamy na dialog o stracie i żałobie",
+      "url": "https://stocznia.org.pl/2026/11/04/zapraszamy-na-dialog-o-smierci-i-zalobie/"
+    },
     {
       "date": "2026-10-29",
       "title": "Szkoła Nawigacji Społecznej – lepiej mądrze stać niż głupio biegać!",
@@ -27,20 +42,10 @@
       "date": "2026-06-01",
       "title": "Konkurs dotacyjny dla organizacji społecznych na wsparcie demokracji, praworządności i praw człowieka",
       "url": "https://stocznia.org.pl/2026/06/01/konkurs-dotacyjny-dla-organizacji-spolecznych-na-wsparcie-demokracji-praworzadnosci-i-praw-czlowieka/"
-    },
-    {
-      "date": "2026-05-21",
-      "title": "Apel organizacji społecznych w sprawie standardów wyboru Rzecznika Praw Obywatelskich",
-      "url": "https://stocznia.org.pl/2026/05/21/apel-organizacji-spolecznych-w-sprawie-standardow-wyboru-rzecznika-praw-obywatelskich/"
-    },
-    {
-      "date": "2026-05-20",
-      "title": "Szukamy dostarczyciela usług hotelarskich – zapytanie ofertowe",
-      "url": "https://stocznia.org.pl/2026/05/20/szukamy-dostarczyciela-uslug-hotelarskich-zapytanie-ofertowe-2/"
     }
   ],
   "fetch": {
-    "etag": "W/\"e3bc71c4d29f3a8c5636a7fc936ab84e\"",
-    "last_modified": "Thu, 29 Oct 2026 14:20:01 GMT"
+    "etag": "W/\"cb530fd343ee87dcb2eee15f421bbb21\"",
+    "last_modified": "Wed, 25 Nov 2026 13:00:02 GMT"
   }
 }

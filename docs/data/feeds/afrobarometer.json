@@ -191,5 +191,11 @@
   ],
   "fetch": {
     "last_modified": "Fri, 20 Nov 2026 08:00:23 GMT"
+  },
+  "failing": {
+    "error": "UNPARSEABLE",
+    "since": "2026-11-27",
+    "count": 1,
+    "last": "2026-11-27"
   }
 }

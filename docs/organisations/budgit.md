@@ -70,11 +70,10 @@ activity:
     url: https://budgit.org
     checked: 2026-09-20
   rss:
-    date: 2026-10-22
-    note: 'Latest post: The 15-Year Movement Turning Complex Public Finance Data into
-      Citizen Power'
-    url: https://budgit.org/the-15-year-movement-turning-complex-public-finance-data-into-citizen-power/
-    checked: 2026-10-30
+    date: 2026-11-24
+    note: 'Latest post: What five south-east states’ budgets taught me about priorities'
+    url: https://budgit.org/what-five-south-east-states-budgets-taught-me-about-priorities/
+    checked: 2026-11-27
 last_checked: '2026-09-20'
 ---
 

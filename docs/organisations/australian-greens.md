@@ -86,10 +86,10 @@ activity:
     url: https://greens.org.au
     checked: 2026-09-19
   rss:
-    date: 2026-10-30
-    note: 'Latest post: Playing for Keeps'
-    url: https://greens.org.au/node/3045366
-    checked: 2026-10-30
+    date: 2026-11-26
+    note: 'Latest post: Greens of the Tarneit District – Election Night Party!'
+    url: https://greens.org.au/node/3046088
+    checked: 2026-11-27
 last_checked: '2026-09-19'
 ---
 

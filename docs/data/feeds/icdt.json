@@ -1,8 +1,31 @@
 {
   "feed": "https://chinademocrats.org/?feed=rss2",
-  "latest": "2026-11-20",
-  "span_days": 22,
+  "latest": "2026-11-27",
+  "span_days": 19,
   "items": [
+    {
+      "date": "2026-11-27",
+      "title": "“我们所说的民主到底是什么？”——人权观察报告：莫迪的威权手册",
+      "url": "https://chinademocrats.org/?p=8041",
+      "mentions": [
+        "PRS Legislative Research"
+      ]
+    },
+    {
+      "date": "2026-11-23",
+      "title": "肖潇 | 矢志不渝的研究：文革 60 周年北美研讨会述评",
+      "url": "https://chinademocrats.org/?p=7947"
+    },
+    {
+      "date": "2026-11-21",
+      "title": "外包出来的监控国家：中国数字警务是如何“拼装”起来的",
+      "url": "https://chinademocrats.org/?p=7986"
+    },
+    {
+      "date": "2026-11-21",
+      "title": "习近平治下延迟退休改革的政治",
+      "url": "https://chinademocrats.org/?p=7989"
+    },
     {
       "date": "2026-11-20",
       "title": "王维洛 | 雅鲁藏布江下游水电工程：目标、政治意图与环境问题分析",
@@ -238,7 +261,7 @@
     }
   ],
   "fetch": {
-    "etag": "\"19a22243280f1e08b1ab0a63a4f51cce\"",
-    "last_modified": "Fri, 20 Nov 2026 05:20:57 GMT"
+    "etag": "\"9ef75c55ed1e6cfce0b3e91f1aa2e346\"",
+    "last_modified": "Fri, 27 Nov 2026 01:37:52 GMT"
   }
 }

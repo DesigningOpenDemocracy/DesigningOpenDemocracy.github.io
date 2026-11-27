@@ -57,11 +57,11 @@ activity:
     url: https://www.sitra.fi/en/
     checked: 2026-09-19
   rss:
-    date: 2026-11-19
-    note: 'Latest post: Vaikeiden valintojen vaalikausi häämöttää – kykeneekö Suomi
-      tekemään pitkäjäntei'
-    url: https://www.sitra.fi/artikkelit/vaikeiden-valintojen-vaalikausi-haamottaa-kykeneeko-suomi-tekemaan-pitkajanteisia-paatoksia/
-    checked: 2026-11-20
+    date: 2026-11-26
+    note: 'Latest post: Uutistoimistot murroksessa – miten luotettavan tiedon edellytykset
+      turvataan tul'
+    url: https://www.sitra.fi/blogit/uutistoimistot-murroksessa-miten-luotettavan-tiedon-edellytykset-turvataan-tulevaisuudessa/
+    checked: 2026-11-27
 last_checked: '2026-09-19'
 ---
 

@@ -60,11 +60,10 @@ activity:
     url: https://perludem.or.id
     checked: 2026-09-19
   rss:
-    date: 2026-10-10
-    note: 'Latest post: EDF 2026: Perludem Calls on Young People to Champion Electoral
-      Reform'
-    url: https://perludem.or.id/edf-2026-perludem-calls-on-young-people-to-champion-electoral-reform/
-    checked: 2026-10-30
+    date: 2026-11-03
+    note: 'Latest post: Shaping Technology, Safeguarding Democracy'
+    url: https://perludem.or.id/shaping-technology-safeguarding-democracy/
+    checked: 2026-11-27
 last_checked: '2026-09-19'
 ---
 

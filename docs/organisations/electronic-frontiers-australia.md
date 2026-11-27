@@ -89,10 +89,10 @@ activity:
     url: https://efa.org.au
     checked: 2026-09-19
   rss:
-    date: 2026-10-27
-    note: 'Latest post: Who Wants to Be a Neo-Luddite? I Do.'
-    url: https://efa.org.au/neo-luddite-efa-essay/
-    checked: 2026-10-30
+    date: 2026-11-24
+    note: 'Latest post: 2026 Victorian Election Digital Rights Scorecard'
+    url: https://efa.org.au/2026-victorian-election-digital-rights-scorecard/
+    checked: 2026-11-27
 last_checked: '2026-09-19'
 ---
 

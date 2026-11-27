@@ -119,10 +119,10 @@ activity:
     url: https://mosaiclab.com.au
     checked: 2026-09-15
   sitemap:
-    date: 2026-10-28
+    date: 2026-11-26
     note: Page last modified (from sitemap)
     url: https://mosaiclab.com.au/sitemap.xml
-    checked: 2026-10-30
+    checked: 2026-11-27
 last_checked: '2026-09-15'
 ---
 

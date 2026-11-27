@@ -61,11 +61,11 @@ activity:
     url: https://transparenciacolombia.org.co
     checked: 2026-09-19
   rss:
-    date: 2026-10-17
-    note: 'Latest post: Financiamiento criminal de la política en Colombia: ¿cómo
-      se captura y transform'
-    url: https://transparenciacolombia.org.co/financiamiento-criminal-politica-colombia-como-se-captura-transforma-el-estado/
-    checked: 2026-10-30
+    date: 2026-11-25
+    note: 'Latest post: Balance del financiamiento de las campañas al Congreso de
+      la República 2026'
+    url: https://transparenciacolombia.org.co/balance-financiamiento-campanas-al-congreso-de-la-republica-2026/
+    checked: 2026-11-27
 last_checked: '2026-09-19'
 ---
 

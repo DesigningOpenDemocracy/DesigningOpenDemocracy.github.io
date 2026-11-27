@@ -1,15 +1,31 @@
 {
   "feed": "https://fairvote.org/feed",
-  "latest": "2026-11-20",
-  "span_days": 7,
+  "latest": "2026-11-24",
+  "span_days": 8,
   "items": [
+    {
+      "date": "2026-11-24",
+      "title": "Results from Washington, DC’s ranked choice voting general election",
+      "url": "https://fairvote.org/results-from-washington-dcs-ranked-choice-voting-general-election/"
+    },
     {
       "date": "2026-11-20",
       "title": "Results in the 2026 Alaska State Senate and House elections",
-      "url": "https://fairvote.org/results-in-the-2026-alaska-state-senate-and-house-elections/",
-      "signals": [
-        "flagship event"
+      "url": "https://fairvote.org/results-in-the-2026-alaska-state-senate-and-house-elections/"
+    },
+    {
+      "date": "2026-11-20",
+      "title": "FairVote news update: Nov. 20, 2026",
+      "url": "https://fairvote.org/fairvote-news-update-nov-20-2026/",
+      "routine": [
+        "event reminder",
+        "newsletter or roundup"
       ]
+    },
+    {
+      "date": "2026-11-20",
+      "title": "Analysis: Ranked choice voting delivers better city elections",
+      "url": "https://fairvote.org/analysis-ranked-choice-voting-delivers-better-city-elections/"
     },
     {
       "date": "2026-11-19",
@@ -40,11 +56,6 @@
       ]
     },
     {
-      "date": "2026-11-17",
-      "title": "Results from Washington, DC’s ranked choice voting general election",
-      "url": "https://fairvote.org/results-from-washington-dcs-ranked-choice-voting-general-election/"
-    },
-    {
       "date": "2026-11-16",
       "title": "Analysis: Ranked choice voting fosters more voter voice in Multnomah County and Portland, OR",
       "url": "https://fairvote.org/analysis-rcv-fosters-more-voter-voice-in-multnomah-county-and-portland-or/"
@@ -53,11 +64,6 @@
       "date": "2026-11-14",
       "title": "Alaska approves ranked choice voting for third time in a row",
       "url": "https://fairvote.org/alaska-approves-ranked-choice-voting-for-third-time-in-a-row/"
-    },
-    {
-      "date": "2026-11-13",
-      "title": "Analysis: Ranked choice voting delivers better city elections",
-      "url": "https://fairvote.org/analysis-ranked-choice-voting-delivers-better-city-elections/"
     },
     {
       "date": "2026-11-06",
@@ -205,7 +211,7 @@
     }
   ],
   "fetch": {
-    "etag": "W/\"e9b9b793477a511db7a29c7fe8b3c870\"",
-    "last_modified": "Fri, 20 Nov 2026 00:30:24 GMT"
+    "etag": "W/\"2bccd4e6f40b91c17819c50f172eed9b\"",
+    "last_modified": "Thu, 26 Nov 2026 13:41:51 GMT"
   }
 }

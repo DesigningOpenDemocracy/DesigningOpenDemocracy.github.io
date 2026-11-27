@@ -60,11 +60,11 @@ activity:
     url: https://ok.org.br
     checked: 2026-09-19
   rss:
-    date: 2026-10-23
-    note: 'Latest post: Eleições 2026: políticas e mecanismos democráticos para defender
-      no Brasil'
-    url: https://ok.org.br/noticia/eleicoes-2026-politicas-e-mecanismos-democraticos-para-defender-no-brasil/
-    checked: 2026-10-30
+    date: 2026-11-12
+    note: 'Latest post: Confira os vencedores do 8º Prêmio Cláudio Weber Abramo de
+      Jornalismo de Dados'
+    url: https://ok.org.br/noticia/confira-os-vencedores-do-8o-premio-claudio-weber-abramo-de-jornalismo-de-dados/
+    checked: 2026-11-27
 last_checked: '2026-09-19'
 ---
 

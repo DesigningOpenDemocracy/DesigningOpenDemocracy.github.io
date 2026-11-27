@@ -56,11 +56,10 @@ activity:
     url: https://www.ettemedia.com/
     checked: 2026-09-16
   rss:
-    date: 2026-11-20
-    note: 'Latest post: Excessive ''sandpapergate’ stories |  Cop31: PM v facts |  Nine’s
-      glaring omissio'
-    url: https://www.ettemedia.com/yt-video-xvxbvvsjwui/
-    checked: 2026-11-20
+    date: 2026-11-27
+    note: 'Latest post: A quick note about your ETTE membership'
+    url: https://www.ettemedia.com/a-quick-note-about-your-ette-membership-4/
+    checked: 2026-11-27
 last_checked: '2026-09-16'
 contributors:
 - BrianKhuu

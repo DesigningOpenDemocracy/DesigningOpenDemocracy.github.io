@@ -65,10 +65,10 @@ activity:
       event
     url: https://www.transparency.org.nz
   sitemap:
-    date: 2026-10-28
+    date: 2026-11-11
     note: Page last modified (from sitemap)
     url: https://www.transparency.org.nz/sitemap.xml
-    checked: 2026-10-30
+    checked: 2026-11-27
 last_checked: '2026-09-19'
 ---
 

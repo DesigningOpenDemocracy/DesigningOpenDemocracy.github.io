@@ -83,10 +83,10 @@ activity:
     url: https://digitalrightswatch.org.au
     checked: 2026-09-19
   rss:
-    date: 2026-10-22
-    note: 'Latest post: Digital Duty of Care Submission Guide'
-    url: /2026/10/22/digital-duty-of-care-submission-guide/
-    checked: 2026-10-30
+    date: 2026-11-24
+    note: 'Latest post: How Can Democracy Survive AI?'
+    url: /democracy-and-AI/
+    checked: 2026-11-27
 last_checked: '2026-09-19'
 ---
 

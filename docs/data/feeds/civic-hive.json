@@ -1,8 +1,46 @@
 {
   "feed": "https://civichive.org/feed",
-  "latest": "2026-10-28",
-  "span_days": 94,
+  "latest": "2026-11-26",
+  "span_days": 97,
   "items": [
+    {
+      "date": "2026-11-26",
+      "title": "The Price of Free and Fair Elections in Nigeria",
+      "url": "https://civichive.org/the-price-of-free-and-fair-elections-in-nigeria/"
+    },
+    {
+      "date": "2026-11-23",
+      "title": "Building Rights-Respecting Digital Futures in West Africa: My WACSI Convening 2026 Experience",
+      "url": "https://civichive.org/building-rights-respecting-digital-futures-in-west-africa/"
+    },
+    {
+      "date": "2026-11-16",
+      "title": "Women And Youth Remain Underrepresented On 2027 Election Ballots: Civichive Report Reveals",
+      "url": "https://civichive.org/women-and-youth-remain-underrepresented-on-2027-election-ballots-civichive-report-reveals/",
+      "signals": [
+        "publication"
+      ]
+    },
+    {
+      "date": "2026-11-12",
+      "title": "Civichive Condemns Daniel Ojukwu’s Unjust Remand, Demands Release",
+      "url": "https://civichive.org/civichive-condemns-daniel-ojukwus-unjust-remand-demands-release/",
+      "signals": [
+        "legal or legislative"
+      ]
+    },
+    {
+      "date": "2026-11-05",
+      "title": "Be Part of Our 2027 Election Observation!",
+      "url": "https://civichive.org/2027-election-observers/",
+      "signals": [
+        "election or referendum",
+        "publication"
+      ],
+      "routine": [
+        "job ad"
+      ]
+    },
     {
       "date": "2026-10-28",
       "title": "Demanding Accountability: The 2027 Costed Manifesto Challenge for Creators",
@@ -87,6 +125,6 @@
     }
   ],
   "fetch": {
-    "last_modified": "Wed, 28 Oct 2026 11:46:55 GMT"
+    "last_modified": "Thu, 26 Nov 2026 19:41:30 GMT"
   }
 }

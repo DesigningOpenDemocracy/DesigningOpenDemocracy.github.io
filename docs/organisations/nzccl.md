@@ -59,10 +59,10 @@ activity:
     url: https://nzccl.org.nz
     checked: 2026-09-19
   rss:
-    date: 2026-09-20
-    note: 'Latest post: New website features: Your Rights and Laws limiting the OIA'
-    url: https://nzccl.org.nz/new-website-features-your-rights-and-laws-limiting-the-oia/
-    checked: 2026-10-30
+    date: 2026-11-26
+    note: 'Latest post: Meeting dates for 2027'
+    url: https://nzccl.org.nz/meeting-dates-for-2027/
+    checked: 2026-11-27
 last_checked: '2026-09-19'
 ---
 

@@ -58,10 +58,10 @@ activity:
     url: https://www.peoplepower21.org
     checked: 2026-09-19
   rss:
-    date: 2026-11-20
-    note: 'Latest post: [함께해요] 📢2026 K-DEX 반대 평화행동'
-    url: https://peoplepower21.org/peace/2056667
-    checked: 2026-11-20
+    date: 2026-11-27
+    note: 'Latest post: [논평] 계획보다 7년 늦은 5G 단독모드, 이제라도 통신요금 낮춰라'
+    url: https://peoplepower21.org/stablelife/2057085
+    checked: 2026-11-27
 last_checked: '2026-09-19'
 ---
 

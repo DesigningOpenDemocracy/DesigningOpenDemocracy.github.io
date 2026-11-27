@@ -54,7 +54,7 @@ activity:
     note: 'Latest post: El Papa: Es mi ministerio sanar, unir a las personas y superar
       las polarizacione'
     url: https://gumilla.org/el-papa-es-mi-ministerio-sanar-unir-a-las-personas-y-superar-las-polarizaciones/
-    checked: 2026-11-20
+    checked: 2026-11-27
 last_checked: '2026-09-26'
 ---
 

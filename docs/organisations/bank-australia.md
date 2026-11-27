@@ -58,10 +58,10 @@ activity:
       all current.
     url: https://www.bankaust.com.au/about-us/customer-owned
   rss:
-    date: 2026-10-29
-    note: 'Latest post: Everything you need to know about Sustainable House Day 2024'
-    url: https://www.bankaust.com.au/blog/everything-you-need-to-know-about-sustainable-house-day-2024
-    checked: 2026-10-30
+    date: 2026-11-27
+    note: 'Latest post: How best to avoid festive season scams, according to the experts'
+    url: https://www.bankaust.com.au/blog/how-best-to-avoid-festive-season-scams-according-to-the-experts
+    checked: 2026-11-27
 last_checked: '2026-09-26'
 ---
 

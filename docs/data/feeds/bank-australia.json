@@ -1,8 +1,48 @@
 {
   "feed": "https://www.bankaust.com.au/blog/rss.xml",
-  "latest": "2026-10-29",
-  "span_days": 137,
+  "latest": "2026-11-27",
+  "span_days": 150,
   "items": [
+    {
+      "date": "2026-11-27",
+      "title": "How best to avoid festive season scams, according to the experts",
+      "url": "https://www.bankaust.com.au/blog/how-best-to-avoid-festive-season-scams-according-to-the-experts"
+    },
+    {
+      "date": "2026-11-26",
+      "title": "How to electrify your home: free expert support | Bank Australia",
+      "url": "https://www.bankaust.com.au/blog/how-to-electrify-your-home-with-free-expert-support"
+    },
+    {
+      "date": "2026-11-16",
+      "title": "The Housing Project Designed Around Neighbours, Not Just Homes | Bank Australia",
+      "url": "https://www.bankaust.com.au/blog/how-41-people-came-together-to-build-their-own-community"
+    },
+    {
+      "date": "2026-11-11",
+      "title": "Meet Matt: bringing a customer voice to our 2026 community customer grants evaluation committee",
+      "url": "https://www.bankaust.com.au/blog/meet-the-customer-who-helped-choose-this-years-community-grant-recipients"
+    },
+    {
+      "date": "2026-11-06",
+      "title": "Meet our trainee Guilain",
+      "url": "https://www.bankaust.com.au/blog/meet-our-trainee-guilain"
+    },
+    {
+      "date": "2026-11-06",
+      "title": "How the Help to Buy Scheme helped one renter stay in the home she loved",
+      "url": "https://www.bankaust.com.au/blog/how-the-help-to-buy-scheme-helped-one-renter-stay-in-the-home-she-loved"
+    },
+    {
+      "date": "2026-11-06",
+      "title": "How our Clean Energy Home Loan helped build a dream home",
+      "url": "https://www.bankaust.com.au/blog/how-our-clean-energy-home-loan-helped-build-a-dream-home"
+    },
+    {
+      "date": "2026-11-04",
+      "title": "How a Culturally Safe Birth Program Is Reshaping Maternity Care for Aboriginal Mums",
+      "url": "https://www.bankaust.com.au/blog/how-this-culturally-safe-birth-program-is-reshaping-maternity-care-for-aboriginal-mums-and-our-next-generation"
+    },
     {
       "date": "2026-10-29",
       "title": "How Hervey Bay's Urraween Village is redefining disability housing in regional Australia",
@@ -17,11 +57,6 @@
       "date": "2026-10-27",
       "title": "How does credit card interest work?",
       "url": "https://www.bankaust.com.au/blog/how-does-credit-card-interest-work"
-    },
-    {
-      "date": "2026-10-15",
-      "title": "How to electrify your home: free expert support | Bank Australia",
-      "url": "https://www.bankaust.com.au/blog/how-to-electrify-your-home-with-free-expert-support"
     },
     {
       "date": "2026-10-09",
@@ -227,65 +262,9 @@
       "date": "2026-09-22",
       "title": "Help to Buy: How Jasper Bought His First Home in North Melbourne",
       "url": "https://www.bankaust.com.au/blog/help-to-buy-how-the-australian-government-scheme-helped-jasper-buy-his-first-home"
-    },
-    {
-      "date": "2026-09-21",
-      "title": "Working with a global network for change this Banking on Values D",
-      "url": "https://www.bankaust.com.au/blog/working-with-a-global-network-for-change-this-banking-on-values-day"
-    },
-    {
-      "date": "2026-09-21",
-      "title": "We’re partnering with Australian Birth Stories for a podcast",
-      "url": "https://www.bankaust.com.au/blog/were-partnering-with-australian-birth-stories-for-a-podcast-miniseries",
-      "signals": [
-        "launch"
-      ],
-      "routine": [
-        "podcast or video episode"
-      ]
-    },
-    {
-      "date": "2026-09-21",
-      "title": "We’re Finder’s Green Bank of the Year (again!)",
-      "url": "https://www.bankaust.com.au/blog/were-finders-green-bank-of-the-year-again",
-      "signals": [
-        "award or recognition"
-      ]
-    },
-    {
-      "date": "2026-09-21",
-      "title": "Results from our Electrify Your Home pilot: supporting customers",
-      "url": "https://www.bankaust.com.au/blog/results-from-our-electrify-your-home-pilot"
-    },
-    {
-      "date": "2026-09-21",
-      "title": "Positive change for people and the planet: our 2024 Impact Report",
-      "url": "https://www.bankaust.com.au/blog/positive-change-for-people-and-the-planet-our-2024-impact-report",
-      "signals": [
-        "publication"
-      ]
-    },
-    {
-      "date": "2026-09-21",
-      "title": "Piloting a way for customers to go electric at home",
-      "url": "https://www.bankaust.com.au/blog/piloting-a-way-for-customers-to-go-electric-at-home",
-      "signals": [
-        "launch"
-      ],
-      "routine": [
-        "fundraising"
-      ]
-    },
-    {
-      "date": "2026-09-21",
-      "title": "Our 2023 Impact Report: another year of clean money",
-      "url": "https://www.bankaust.com.au/blog/our-2023-impact-report-another-year-of-clean-money",
-      "signals": [
-        "publication"
-      ]
     }
   ],
   "fetch": {
-    "last_modified": "Fri, 30 Oct 2026 09:43:12 GMT"
+    "last_modified": "Fri, 27 Nov 2026 11:52:06 GMT"
   }
 }

@@ -59,10 +59,10 @@ activity:
     url: https://democracyclub.org.uk/blog/2026/06/03/2026-elections-user-feedback/
     checked: 2026-11-20
   scrape:
-    date: 2026-11-20
+    date: 2026-11-23
     note: Latest news page scraped
     url: https://democracyclub.org.uk/blog/
-    checked: 2026-11-20
+    checked: 2026-11-27
 last_checked: '2026-09-21'
 ---
 

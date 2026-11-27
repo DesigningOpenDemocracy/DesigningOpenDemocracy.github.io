@@ -89,7 +89,7 @@ activity:
     checked: 2026-09-19
   rss:
     note: No feed found
-    checked: 2026-10-02
+    checked: 2026-11-27
 last_checked: '2026-09-19'
 ---
 

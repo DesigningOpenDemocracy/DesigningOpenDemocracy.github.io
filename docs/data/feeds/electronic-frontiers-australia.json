@@ -1,8 +1,27 @@
 {
   "feed": "https://efa.org.au/feed/",
-  "latest": "2026-10-27",
+  "latest": "2026-11-24",
   "span_days": 47,
   "items": [
+    {
+      "date": "2026-11-24",
+      "title": "2026 Victorian Election Digital Rights Scorecard",
+      "url": "https://efa.org.au/2026-victorian-election-digital-rights-scorecard/",
+      "mentions": [
+        "Victorian Electoral Commission"
+      ]
+    },
+    {
+      "date": "2026-11-06",
+      "title": "Electronic Frontiers Australia Inc – Notice of Annual General Meeting",
+      "url": "https://efa.org.au/electronic-frontiers-australia-inc-notice-of-annual-general-meeting/",
+      "signals": [
+        "flagship event"
+      ],
+      "routine": [
+        "event reminder"
+      ]
+    },
     {
       "date": "2026-10-27",
       "title": "Who Wants to Be a Neo-Luddite? I Do.",
@@ -60,7 +79,7 @@
     }
   ],
   "fetch": {
-    "etag": "W/\"f02c7cf5870ae2d9be9df582806956b6\"",
-    "last_modified": "Tue, 27 Oct 2026 19:00:34 GMT"
+    "etag": "W/\"7b851e902d279402019fdf034890ef93\"",
+    "last_modified": "Wed, 25 Nov 2026 06:27:06 GMT"
   }
 }

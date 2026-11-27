@@ -103,10 +103,10 @@ activity:
       address also exists but a general channel is already on file.
     url: https://fidemocracy.org
   sitemap:
-    date: 2026-10-22
+    date: 2026-11-12
     note: Page last modified (from sitemap)
     url: https://fidemocracy.org/sitemap.xml
-    checked: 2026-10-30
+    checked: 2026-11-27
 last_checked: '2026-09-17'
 ---
 

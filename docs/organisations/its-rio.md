@@ -44,10 +44,10 @@ activity:
     url: https://itsrio.org
     checked: 2026-09-19
   sitemap:
-    date: 2026-10-28
+    date: 2026-11-18
     note: Page last modified (from sitemap)
     url: https://itsrio.org/sitemap.xml
-    checked: 2026-10-30
+    checked: 2026-11-27
 last_checked: '2026-09-19'
 ---
 

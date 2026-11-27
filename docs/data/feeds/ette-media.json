@@ -1,12 +1,63 @@
 {
   "feed": "https://www.ettemedia.com/feed",
-  "latest": "2026-11-20",
-  "span_days": 19,
+  "latest": "2026-11-27",
+  "span_days": 11,
   "items": [
+    {
+      "date": "2026-11-27",
+      "title": "A quick note about your ETTE membership",
+      "url": "https://www.ettemedia.com/a-quick-note-about-your-ette-membership-4/"
+    },
+    {
+      "date": "2026-11-26",
+      "title": "The Monthly Booklette: November edition",
+      "url": "https://www.ettemedia.com/the-monthly-booklette-november-edition/",
+      "signals": [
+        "legal or legislative"
+      ]
+    },
+    {
+      "date": "2026-11-25",
+      "title": "How the media normalised VIOLENCE against women, and whats changed in recent years",
+      "url": "https://www.ettemedia.com/yt-video-jm_bwfnicas/"
+    },
+    {
+      "date": "2026-11-25",
+      "title": "Can’t keep up with One Nation’s candidate controversies? Here’s a list",
+      "url": "https://www.ettemedia.com/one-nations-candidate-controversies/"
+    },
+    {
+      "date": "2026-11-23",
+      "title": "'Breathtaking attack on the rule of law': Defence Bill's muted media coverage",
+      "url": "https://www.ettemedia.com/breathtaking-attack-on-the-rule-of-law-defence-bills-muted-media-coverage/"
+    },
+    {
+      "date": "2026-11-22",
+      "title": "Victoria's election where all major parties want to lock kids up to appear \"tough on crime\"",
+      "url": "https://www.ettemedia.com/yt-video-li1sxtiuh5g/"
+    },
+    {
+      "date": "2026-11-22",
+      "title": "Grand theft democracy? More explainers about a game than new authoritarian defence laws",
+      "url": "https://www.ettemedia.com/grand-theft-democracy-more-explainers-about-a-game-than-new-authoritarian-defence-laws/"
+    },
+    {
+      "date": "2026-11-22",
+      "title": "Ed Husic: Why he’d expel the Israeli ambassador, supports a Royal Commission into Murdoch and thinks Labor isn’t ambitious enough",
+      "url": "https://www.ettemedia.com/ed-husic-why-hed-expel-the-israeli-ambassador-supports-a-royal-commission-into-murdoch-and-thinks-labor-isnt-ambitious-enough/"
+    },
     {
       "date": "2026-11-20",
       "title": "Excessive 'sandpapergate’ stories |  Cop31: PM v facts |  Nine’s glaring omission goes global",
       "url": "https://www.ettemedia.com/yt-video-xvxbvvsjwui/"
+    },
+    {
+      "date": "2026-11-20",
+      "title": "Ettention Please: Stories you might have missed this week",
+      "url": "https://www.ettemedia.com/ettention-please-stories-you-might-have-missed-this-week-nov-21/",
+      "signals": [
+        "legal or legislative"
+      ]
     },
     {
       "date": "2026-11-19",
@@ -260,45 +311,9 @@
       "date": "2026-09-14",
       "title": "Welcome to the world of hyperlocal news",
       "url": "https://www.ettemedia.com/welcome-to-the-world-of-hyperlocal-news/"
-    },
-    {
-      "date": "2026-09-12",
-      "title": "Ettention Please: the stories you might have missed this week",
-      "url": "https://www.ettemedia.com/ettention-please-the-stories-you-might-have-missed-this-week-sep-12/"
-    },
-    {
-      "date": "2026-09-10",
-      "title": "UN climate reporting falls short | Meta glasses stealth ads | Huckabee tries to rename West Bank",
-      "url": "https://www.ettemedia.com/yt-video-8vpt5q62com/",
-      "signals": [
-        "organisational change"
-      ]
-    },
-    {
-      "date": "2026-09-10",
-      "title": "Meta glasses stealth advertising, UN climate reporting falls short + Murdoch’s smart TV deal",
-      "url": "https://www.ettemedia.com/podcast-podcast-title-tbc-6a9fe29f0abd8785fa320b78/",
-      "routine": [
-        "podcast or video episode"
-      ]
-    },
-    {
-      "date": "2026-09-10",
-      "title": "A timeline of media reports Netanyahu knew about October 7 before it happened",
-      "url": "https://www.ettemedia.com/a-timeline-of-media-reports-netanyahu-knew-about-october-7-before-it-happened/"
-    },
-    {
-      "date": "2026-09-09",
-      "title": "How journalists can stop letting Pauline Hanson write the news agenda",
-      "url": "https://www.ettemedia.com/how-journalists-can-stop-letting-pauline-hanson-write-the-news-agenda/"
-    },
-    {
-      "date": "2026-09-07",
-      "title": "Milo Yiannopoulos DEPORTED by ICE, turns on Trump",
-      "url": "https://www.ettemedia.com/yt-video-xdd-rjthgq/"
     }
   ],
   "fetch": {
-    "etag": "W/\"d926-vRd6gSWL5sZgRcyJ4KpLJ/JGNQ0\""
+    "etag": "W/\"f617-NnTdMYLsRGipc4Z+rVfs+dsHycQ\""
   }
 }

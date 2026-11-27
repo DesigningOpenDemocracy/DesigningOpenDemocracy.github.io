@@ -257,5 +257,11 @@
   "fetch": {
     "etag": "W/\"fb65b852a46cf3dc1fdfca2dd603743d\"",
     "last_modified": "Thu, 19 Nov 2026 17:34:08 GMT"
+  },
+  "failing": {
+    "error": "UNPARSEABLE",
+    "since": "2026-11-27",
+    "count": 1,
+    "last": "2026-11-27"
   }
 }

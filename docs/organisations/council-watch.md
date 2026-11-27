@@ -47,10 +47,10 @@ activity:
     url: https://www.councilwatch.com.au
     checked: 2026-09-19
   sitemap:
-    date: 2026-10-09
+    date: 2026-11-05
     note: Page last modified (from sitemap)
     url: https://www.councilwatch.com.au/el_el-sitemap.xml
-    checked: 2026-10-30
+    checked: 2026-11-27
 last_checked: '2026-09-19'
 ---
 

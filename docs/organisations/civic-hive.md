@@ -61,11 +61,10 @@ activity:
     url: https://civichive.org
     checked: 2026-09-16
   rss:
-    date: 2026-10-28
-    note: 'Latest post: Demanding Accountability: The 2027 Costed Manifesto Challenge
-      for Creators'
-    url: https://civichive.org/the-2027-costed-manifesto-challenge-for-creators/?utm_source=rss&utm_medium=rss&utm_campaign=the-2027-costed-manifesto-challenge-for-creators
-    checked: 2026-10-30
+    date: 2026-11-26
+    note: 'Latest post: The Price of Free and Fair Elections in Nigeria'
+    url: https://civichive.org/the-price-of-free-and-fair-elections-in-nigeria/?utm_source=rss&utm_medium=rss&utm_campaign=the-price-of-free-and-fair-elections-in-nigeria
+    checked: 2026-11-27
   url: https://civichive.org/2026-osun-state-governorship-election/?utm_source=rss&utm_medium=rss&utm_campaign=2026-osun-state-governorship-election
 last_checked: '2026-09-16'
 ---

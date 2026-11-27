@@ -1,8 +1,13 @@
 {
   "feed": "https://www.wedodemocracy.dk/feed",
-  "latest": "2026-10-29",
-  "span_days": 247,
+  "latest": "2026-11-06",
+  "span_days": 227,
   "items": [
+    {
+      "date": "2026-11-06",
+      "title": "National borgersamling om museer rådgiver om, hvordan fremtidens museer kan blive for de mange",
+      "url": "https://www.wedodemocracy.dk/national-borgersamling-om-museer-raadgiver-om-hvordan-fremtidens-museer-kan-blive-for-de-mange/"
+    },
     {
       "date": "2026-10-29",
       "title": "We Do Democracy er udpeget til at gennemføre inddragelsen i Den Grønne Trepart",
@@ -35,14 +40,10 @@
       "date": "2026-06-17",
       "title": "Hvordan bygger man stærk frivillighed i klimaorganisationer?",
       "url": "https://www.wedodemocracy.dk/hvordan-bygger-man-staerk-frivillighed-i-klimaorganisationer/"
-    },
-    {
-      "date": "2026-05-06",
-      "title": "We Do Democracy søger dygtige kandidater til flere ledige stillinger",
-      "url": "https://www.wedodemocracy.dk/we-do-democracy-soeger-dygtige-kandidater-til-flere-ledige-stillinger/"
     }
   ],
   "fetch": {
-    "etag": "\"c1c34c938d37a72f1ef0bb1068cfd313\""
+    "etag": "\"f0000fc37a7218862d134e8c821b6ea5\"",
+    "last_modified": "Thu, 26 Nov 2026 14:19:24 GMT"
   }
 }

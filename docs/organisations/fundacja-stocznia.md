@@ -64,11 +64,10 @@ activity:
     url: https://stocznia.org.pl
     checked: 2026-09-17
   rss:
-    date: 2026-10-29
-    note: 'Latest post: Szkoła Nawigacji Społecznej – lepiej mądrze stać niż głupio
-      biegać!'
-    url: https://stocznia.org.pl/2026/10/29/szkola-nawigacji-spolecznej-lepiej-madrze-stac-niz-glupio-biegac/
-    checked: 2026-10-30
+    date: 2026-11-19
+    note: 'Latest post: Jak naprawić internet? Rusza Ogólnopolska narada obywatelska'
+    url: https://stocznia.org.pl/2026/11/19/jak-naprawic-internet-rusza-ogolnopolska-narada-obywatelska/
+    checked: 2026-11-27
 last_checked: '2026-09-17'
 ---
 

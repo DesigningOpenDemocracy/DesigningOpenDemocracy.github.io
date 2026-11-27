@@ -83,10 +83,10 @@ activity:
     url: https://electoral-reform.org.uk/how-did-the-political-parties-do-in-octobers-polls/
     checked: 2026-11-20
   scrape:
-    date: 2026-11-09
+    date: 2026-11-26
     note: Latest news page scraped
     url: https://www.electoral-reform.org.uk/latest-news-and-research/blog/
-    checked: 2026-11-20
+    checked: 2026-11-27
 last_checked: '2026-09-21'
 ---
 

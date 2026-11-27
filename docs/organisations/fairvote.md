@@ -59,10 +59,11 @@ activity:
     url: https://fairvote.org/alaska-approves-ranked-choice-voting-for-third-time-in-a-row/
     checked: 2026-11-20
   rss:
-    date: 2026-11-20
-    note: 'Latest post: Results in the 2026 Alaska State Senate and House elections'
-    url: https://fairvote.org/results-in-the-2026-alaska-state-senate-and-house-elections/
-    checked: 2026-11-20
+    date: 2026-11-24
+    note: 'Latest post: Results from Washington, DC’s ranked choice voting general
+      election'
+    url: https://fairvote.org/results-from-washington-dcs-ranked-choice-voting-general-election/
+    checked: 2026-11-27
 last_checked: '2026-11-20'
 ---
 

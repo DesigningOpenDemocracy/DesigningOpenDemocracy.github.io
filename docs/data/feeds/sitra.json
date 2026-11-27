@@ -1,8 +1,13 @@
 {
   "feed": "https://www.sitra.fi/feed",
-  "latest": "2026-11-19",
-  "span_days": 16,
+  "latest": "2026-11-26",
+  "span_days": 23,
   "items": [
+    {
+      "date": "2026-11-26",
+      "title": "Uutistoimistot murroksessa – miten luotettavan tiedon edellytykset turvataan tulevaisuudessa?",
+      "url": "https://www.sitra.fi/blogit/uutistoimistot-murroksessa-miten-luotettavan-tiedon-edellytykset-turvataan-tulevaisuudessa/"
+    },
     {
       "date": "2026-11-19",
       "title": "Vaikeiden valintojen vaalikausi häämöttää – kykeneekö Suomi tekemään pitkäjänteisiä päätöksiä?",
@@ -32,6 +37,11 @@
       "date": "2026-11-12",
       "title": "12 000 osallistujan verkkokeskustelu toi esiin meitä yhdistävät ja jakavat työperäisen maahanmuuton kysymykset",
       "url": "https://www.sitra.fi/artikkelit/12-000-osallistujan-verkkokeskustelu-toi-esiin-meita-yhdistavat-ja-jakavat-tyoperaisen-maahanmuuton-kysymykset/"
+    },
+    {
+      "date": "2026-11-09",
+      "title": "Kasvuyrityksille lisää kotimaista pääomaa ja omistajia – koko Suomi hyötyy",
+      "url": "https://www.sitra.fi/uutiset/kasvuyrityksille-lisaa-kotimaista-paaomaa-ja-omistajia-koko-suomi-hyotyy/"
     },
     {
       "date": "2026-11-09",
@@ -225,7 +235,7 @@
     }
   ],
   "fetch": {
-    "etag": "\"fceac64ae2a200f66e4cfd404597283f\"",
-    "last_modified": "Fri, 20 Nov 2026 10:35:59 GMT"
+    "etag": "\"3bea9e85e7a7edc8c04a1a8a9cf631c4\"",
+    "last_modified": "Fri, 27 Nov 2026 08:38:54 GMT"
   }
 }

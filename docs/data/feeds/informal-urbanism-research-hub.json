@@ -1,8 +1,16 @@
 {
   "feed": "https://infur.msd.unimelb.edu.au/feed/",
-  "latest": "2026-09-27",
-  "span_days": 316,
+  "latest": "2026-11-03",
+  "span_days": 353,
   "items": [
+    {
+      "date": "2026-11-03",
+      "title": "InfUr Seminar | Catalina Ortiz —Southern Urbanism(s) and Urban Informality in Conversation",
+      "url": "https://infur.msd.unimelb.edu.au/2026/11/03/infur-seminar-catalina-ortiz-southern-urbanisms-and-urban-informality-in-conversation/",
+      "signals": [
+        "publication"
+      ]
+    },
     {
       "date": "2026-09-27",
       "title": "Co-design across the Global South and North: Participatory Design within and beyond Australia| InfUr- Roundtable",
@@ -25,23 +33,10 @@
       "date": "2026-07-21",
       "title": "Digital Platforms, Informal Housing and Urban Inequality in Australian Cities—InfUr seminar with Zahra Nasreen",
       "url": "https://infur.msd.unimelb.edu.au/2026/07/21/digital-platforms-informal-housing-and-urban-inequality-in-australian-cities-infur-seminar-with-zahra-nasreen/"
-    },
-    {
-      "date": "2026-05-25",
-      "title": "Justice in the Streets?—InfUr seminar with Alison Young",
-      "url": "https://infur.msd.unimelb.edu.au/2026/05/25/justice-in-the-streets-infur-seminar-with-alison-young/",
-      "signals": [
-        "mobilisation"
-      ]
-    },
-    {
-      "date": "2026-05-18",
-      "title": "The Well-Assembled Parklet—InfUr seminar with Quentin Stevens",
-      "url": "https://infur.msd.unimelb.edu.au/2026/05/18/the-well-assembled-parklet-infur-seminar-with-quentin-stevens/"
     }
   ],
   "fetch": {
-    "etag": "\"9ed2c6c75765936864646f43ef48f4ac\"",
-    "last_modified": "Sun, 27 Sep 2026 13:05:51 GMT"
+    "etag": "\"a1f2e6525b0dc1de3358d36f9457cbeb\"",
+    "last_modified": "Mon, 09 Nov 2026 06:54:26 GMT"
   }
 }

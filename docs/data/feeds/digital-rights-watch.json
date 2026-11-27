@@ -1,8 +1,47 @@
 {
   "feed": "https://digitalrightswatch.org.au/index.xml",
-  "latest": "2026-10-22",
-  "span_days": 9425,
+  "latest": "2026-11-24",
+  "span_days": 9458,
   "items": [
+    {
+      "date": "2026-11-24",
+      "title": "How Can Democracy Survive AI?",
+      "url": "/democracy-and-AI/",
+      "signals": [
+        "publication"
+      ]
+    },
+    {
+      "date": "2026-11-23",
+      "title": "Robodebt 2.0? Automated Decision-Making in Government Services",
+      "url": "/campaigns/automated-decision-making/"
+    },
+    {
+      "date": "2026-11-09",
+      "title": "Submission regarding the Inquiry into the nature and drivers of radicalisation in Australia",
+      "url": "/2026/11/09/submission-regarding-the-inquiry-into-the-nature-and-drivers-of-radicalisation-in-australia/",
+      "signals": [
+        "legal or legislative"
+      ]
+    },
+    {
+      "date": "2026-11-09",
+      "title": "Submission on the Final Online Safety Amendment (Digital Duty of Care) Bill 2026",
+      "url": "/2026/11/09/submission-on-the-final-online-safety-amendment-digital-duty-of-care-bill-2026/"
+    },
+    {
+      "date": "2026-11-09",
+      "title": "Submission on the Defence Legislation Amendment (Accelerating Capability and Protecting Bases) Bill 2026",
+      "url": "/2026/11/09/submission-on-the-defence-legislation-amendment-accelerating-capability-and-protecting-bases-bill-2026/",
+      "signals": [
+        "legal or legislative"
+      ]
+    },
+    {
+      "date": "2026-11-03",
+      "title": "Online Gender-Based Violence Against Women Media Workers",
+      "url": "/online-gender-based-violence-against-women-media-workers/"
+    },
     {
       "date": "2026-10-22",
       "title": "Digital Duty of Care Submission Guide",
@@ -133,34 +172,9 @@
       "date": "2026-06-05",
       "title": "Submission to the Office of the Australian Information Commissioner regarding the Children’s Online Privacy Code",
       "url": "/2026/06/05/submission-to-the-office-of-the-australian-information-commissioner-regarding-the-childrens-online-privacy-code/"
-    },
-    {
-      "date": "2026-05-22",
-      "title": "Media Release: Amid Repro Uncensored and Dutch Queer Groups’ Landmark Legal Action Against Meta, Australian Organisations Warn Similar Cases Could Build Toward Future Legal Action",
-      "url": "/2026/05/22/media-release-amid-repro-uncensored-and-dutch-queer-groups-landmark-legal-action-against-meta-australian-organisations-warn-similar-cases-could-build-toward-future-legal-action/"
-    },
-    {
-      "date": "2026-05-18",
-      "title": "Media Release: Regulators must step in to protect patients from AI Scribes",
-      "url": "/2026/05/18/media-release-regulators-must-step-in-to-protect-patients-from-ai-scribes/"
-    },
-    {
-      "date": "2026-05-13",
-      "title": "Too Much Information: Dating Apps and AI",
-      "url": "/2026/05/13/too-much-information-dating-apps-and-ai/"
-    },
-    {
-      "date": "2026-05-11",
-      "title": "Stop Tech Facilitated Gender Based Violence",
-      "url": "/campaigns/tfgbv/"
-    },
-    {
-      "date": "2026-05-11",
-      "title": "State interference and censorship at RightsCon 2026",
-      "url": "/2026/05/11/state-interference-and-censorship-at-rightscon-2026/"
     }
   ],
   "fetch": {
-    "etag": "\"9b91bb3c4ab79d17e59332937fc9e817-ssl-df\""
+    "etag": "W/\"15410cd2de942ffdb87237c37f416513-ssl\""
   }
 }

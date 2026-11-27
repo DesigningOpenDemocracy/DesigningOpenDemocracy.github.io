@@ -74,10 +74,10 @@ activity:
     url: https://www.makeit16.org.nz
     checked: 2026-09-17
   sitemap:
-    date: 2026-10-28
+    date: 2026-11-13
     note: Page last modified (from sitemap)
     url: https://www.makeit16.org.nz/sitemap.xml
-    checked: 2026-10-30
+    checked: 2026-11-27
 last_checked: '2026-09-17'
 ---
 

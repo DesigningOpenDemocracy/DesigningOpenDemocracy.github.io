@@ -72,10 +72,10 @@ activity:
     url: https://chinademocrats.org/en
     checked: 2026-09-28
   rss:
-    date: 2026-11-20
-    note: 'Latest post: 王维洛 | 雅鲁藏布江下游水电工程：目标、政治意图与环境问题分析'
-    url: https://chinademocrats.org/?p=7945
-    checked: 2026-11-20
+    date: 2026-11-27
+    note: 'Latest post: “我们所说的民主到底是什么？”——人权观察报告：莫迪的威权手册'
+    url: https://chinademocrats.org/?p=8041
+    checked: 2026-11-27
 last_checked: '2026-09-28'
 ---
 

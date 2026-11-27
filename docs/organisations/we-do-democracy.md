@@ -54,11 +54,11 @@ activity:
     url: https://www.wedodemocracy.dk
     checked: 2026-09-19
   rss:
-    date: 2026-10-29
-    note: 'Latest post: We Do Democracy er udpeget til at gennemføre inddragelsen
-      i Den Grønne Trepart'
-    url: https://www.wedodemocracy.dk/historisk-stort-inddragelsesproces-i-den-groenne-trepart/
-    checked: 2026-10-30
+    date: 2026-11-06
+    note: 'Latest post: National borgersamling om museer rådgiver om, hvordan fremtidens
+      museer kan bliv'
+    url: https://www.wedodemocracy.dk/national-borgersamling-om-museer-raadgiver-om-hvordan-fremtidens-museer-kan-blive-for-de-mange/
+    checked: 2026-11-27
 last_checked: '2026-09-19'
 ---
 

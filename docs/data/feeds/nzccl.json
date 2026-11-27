@@ -1,8 +1,16 @@
 {
   "feed": "https://nzccl.org.nz/feed",
-  "latest": "2026-09-20",
-  "span_days": 152,
+  "latest": "2026-11-26",
+  "span_days": 209,
   "items": [
+    {
+      "date": "2026-11-26",
+      "title": "Meeting dates for 2027",
+      "url": "https://nzccl.org.nz/meeting-dates-for-2027/",
+      "signals": [
+        "flagship event"
+      ]
+    },
     {
       "date": "2026-09-20",
       "title": "New website features: Your Rights and Laws limiting the OIA",
@@ -49,14 +57,9 @@
       "date": "2026-06-10",
       "title": "Submission: Corrections (Management of Prisoners, and Prisoners’ Property) Amendment Bill",
       "url": "https://nzccl.org.nz/submission-corrections-management-of-prisoners-and-prisoners-property-amendment-bill/"
-    },
-    {
-      "date": "2026-05-23",
-      "title": "Right to Know Act – A replacement for the OIA?",
-      "url": "https://nzccl.org.nz/right-to-know-act-a-replacement-for-the-oia/"
     }
   ],
   "fetch": {
-    "etag": "\"f7020954138750e5fc8966aedb5c07a8-gzip\""
+    "etag": "\"8b7523ec3fd67b8cf688fc9af2ced80d-gzip\""
   }
 }

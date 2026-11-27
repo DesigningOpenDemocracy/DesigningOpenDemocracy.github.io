@@ -150,5 +150,11 @@
   "fetch": {
     "etag": "W/\"55fd24ed07b79592e20d48f215568151\"",
     "last_modified": "Thu, 29 Oct 2026 16:04:14 GMT"
+  },
+  "failing": {
+    "error": "UNPARSEABLE",
+    "since": "2026-11-27",
+    "count": 1,
+    "last": "2026-11-27"
   }
 }
